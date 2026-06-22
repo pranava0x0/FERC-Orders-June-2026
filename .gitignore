@@ -1,0 +1,26 @@
+# Secrets — never commit
+.env
+.env.local
+credentials.json
+secrets/
+
+# Dependencies / build
+node_modules/
+dist/
+__pycache__/
+*.pyc
+
+# Source PDFs and raw HTML snapshots are large / re-derivable — keep extracted text only
+sources/pdf/
+sources/archived/
+*.pdf
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Local preview config (machine-specific)
+.claude/launch.json
