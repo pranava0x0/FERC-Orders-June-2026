@@ -1,0 +1,80 @@
+{
+  "captured_at": "2026-06-22",
+  "note": "Provenance manifest. PDFs and raw HTML snapshots are gitignored (large / re-derivable); extracted text is kept in sources/text/.",
+  "sources": [
+    {
+      "id": "doe403",
+      "title": "Secretary of Energy §403 letter + enclosed ANOPR (Ensuring the Timely and Orderly Interconnection of Large Loads)",
+      "org": "U.S. Department of Energy",
+      "issued": "2025-10-23",
+      "url": "https://www.energy.gov/sites/default/files/2025-10/403%20Large%20Loads%20Letter.pdf",
+      "tier": "primary",
+      "retrieval": "downloaded",
+      "format": "pdf",
+      "pages": 16,
+      "bytes": 2475623,
+      "text": "sources/text/doe-403-key-extract.txt"
+    },
+    {
+      "id": "fercPR",
+      "title": "FERC Launches Aggressive Targeted Action to Speed Large Load Integration (news release)",
+      "org": "FERC",
+      "issued": "2026-06-18",
+      "url": "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
+      "tier": "primary",
+      "retrieval": "internet-archive",
+      "archive_url": "http://web.archive.org/web/20260618211730/https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
+      "text": "sources/text/press-release.txt"
+    },
+    {
+      "id": "fercFS",
+      "title": "Fact Sheet | FERC Takes Action to Supercharge America's Grid…",
+      "org": "FERC",
+      "issued": "2026-06-18",
+      "url": "https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and",
+      "tier": "primary",
+      "retrieval": "internet-archive",
+      "archive_url": "http://web.archive.org/web/20260620020229/https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and",
+      "text": "sources/text/fact-sheet.txt"
+    },
+    {
+      "id": "fercSum",
+      "title": "Summaries | June 2026 Commission Meeting",
+      "org": "FERC",
+      "issued": "2026-06-18",
+      "url": "https://www.ferc.gov/news-events/news/summaries-june-2026-commission-meeting",
+      "tier": "primary",
+      "retrieval": "internet-archive",
+      "archive_url": "http://web.archive.org/web/20260618204955/https://www.ferc.gov/news-events/news/summaries-june-2026-commission-meeting",
+      "text": "sources/text/summaries.txt"
+    },
+    {
+      "id": "fercRM264",
+      "title": "Interconnection of Large Loads to the Interstate Transmission System (Docket RM26-4-000)",
+      "org": "FERC",
+      "issued": "2026-01-13",
+      "url": "https://www.ferc.gov/rm26-4",
+      "tier": "primary",
+      "retrieval": "internet-archive",
+      "archive_url": "http://web.archive.org/web/20260619085932/https://www.ferc.gov/rm26-4",
+      "text": "sources/text/rm26-4.txt"
+    },
+    {
+      "id": "orders",
+      "title": "Items E-7 through E-12 order PDFs (EL26-67-000 – EL26-72-000)",
+      "org": "FERC",
+      "issued": "2026-06-18",
+      "urls": {
+        "E-7 PJM EL26-67-000": "https://www.ferc.gov/media/e-7-el26-67-000",
+        "E-8 MISO EL26-70-000": "https://www.ferc.gov/media/e-8-el26-70-000",
+        "E-9 SPP EL26-68-000": "https://www.ferc.gov/media/e-9-el26-68-000",
+        "E-10 CAISO EL26-71-000": "https://www.ferc.gov/media/e-10-el26-71-000",
+        "E-11 ISO-NE EL26-72-000": "https://www.ferc.gov/media/e11-el26-72-000",
+        "E-12 NYISO EL26-69-000": "https://www.ferc.gov/media/e12-el26-69-000"
+      },
+      "tier": "primary",
+      "retrieval": "FAILED",
+      "retrieval_note": "Cloudflare 'Just a moment' JS challenge returns HTTP 403 to curl/WebFetch/PDF-fetch; Wayback Save-Page-Now returned HTTP 520; no browser connected to solve the challenge. Not yet in the Internet Archive. Tracked in issues.md."
+    }
+  ]
+}
