@@ -91,8 +91,22 @@
         esc(so.url) + '" title="' + esc(so.label + " — downloaded & OCR'd 2026-06-22") + '">Order PDF ↗</a>';
       var directives = '<div class="dir"><span class="label">Directs the respondent to address</span>' +
         d.dir.map(function (x) {
+          var cite;
+          if (x.pg) {
+            // Link the cite to the exact PDF page that carries this directive's quoted text.
+            // FERC PDFs don't keep paragraph numbers in their text layer, so the page is anchored
+            // to the page where the quoted language appears (verified by tests). #page= jumps the
+            // browser's PDF viewer; it degrades gracefully if the file downloads instead.
+            cite = '<a class="dir-para mono" href="' + esc(so.url) + "#page=" + x.pg +
+              '" target="_blank" rel="noopener noreferrer" aria-label="Open the ' + esc(d.item) +
+              " order PDF at page " + x.pg + '" title="' + esc(d.item) + " order PDF — opens to p. " + x.pg +
+              " (the page carrying this quoted directive)\">" + esc(x.p) +
+              '<span class="ext" aria-hidden="true">↗</span></a>';
+          } else {
+            cite = '<span class="dir-para mono">' + esc(x.p) + "</span>";
+          }
           return '<div class="dir-item"><div class="dir-head"><span class="dir-topic">' + esc(x.t) +
-            '</span><span class="dir-para mono">' + esc(x.p) + '</span></div>' +
+            "</span>" + cite + "</div>" +
             '<span class="dir-quote">“' + esc(x.q) + '”</span></div>';
         }).join("") + "</div>";
       var region = '<details class="dreg"><summary>Region-specific findings (' + d.reg.length + ")</summary><ul>" +
@@ -183,7 +197,7 @@
       "<h4>What is primary</h4>" +
       "<p>The <strong>DOE §403 letter</strong> (16 pp.) was downloaded from energy.gov and text-extracted directly. FERC's <strong>news release, fact sheet, meeting summaries, and the RM26-4 docket page</strong> are official FERC text, posted at the June 18, 2026 open meeting and live on ferc.gov; quoted here against Internet Archive snapshots dated June 18–20, 2026 so the citations stay fixed to a specific capture even as the live pages change.</p>" +
       "<h4>The six order PDFs — retrieved &amp; OCR’d</h4>" +
-      "<p>Automated clients (curl, server-side fetch, the PDF-fetch tool, the Wayback crawler) are all blocked by Cloudflare on <span class='mono'>ferc.gov/media/e-7…e-12</span>. The six orders were therefore opened in a real browser that passes the challenge, downloaded, and text-extracted (OCR) on 2026-06-22. Each one's <strong>page-1 caption was verified</strong> — FERC reporter cite, respondent RTO, docket number, the title “Order Instituting Proceeding Under Section 206,” and the issued date — before any of its text was used. The per-order directives in Tab 2 are quoted from those PDFs with paragraph cites (e.g. “P 77”); the structured extract is committed at <span class='mono'>sources/orders-extract.json</span>. All six orders are 195 FERC ¶ 61,211–61,216, 92–119 pp, issued June 18, 2026.</p>" +
+      "<p>Automated clients (curl, server-side fetch, the PDF-fetch tool, the Wayback crawler) are all blocked by Cloudflare on <span class='mono'>ferc.gov/media/e-7…e-12</span>. The six orders were therefore opened in a real browser that passes the challenge, downloaded, and text-extracted (OCR) on 2026-06-22. Each one's <strong>page-1 caption was verified</strong> — FERC reporter cite, respondent RTO, docket number, the title “Order Instituting Proceeding Under Section 206,” and the issued date — before any of its text was used. The per-order directives in Tab 2 are quoted from those PDFs with paragraph cites (e.g. “P 77”); the structured extract is committed at <span class='mono'>sources/orders-extract.json</span>. Each cite is a link that opens the order PDF to the page carrying that quoted text. FERC's published PDFs drop paragraph numbers from their text layer, so a link is anchored to the page where the quoted language appears, not to a paragraph index — a test checks every link lands on a page that carries its quote. All six orders are 195 FERC ¶ 61,211–61,216, 92–119 pp, issued June 18, 2026.</p>" +
       "<h4>Derived dates</h4>" +
       "<p>The 30-day and 60-day periods are stated by FERC. The specific calendar due-dates are derived from the June 18, 2026 issuance (business-day-adjusted figures attributed to the National Law Review analysis).</p>" +
       "<h4>All sources</h4>" + srcList +
