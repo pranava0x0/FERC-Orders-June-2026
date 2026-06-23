@@ -13,7 +13,9 @@
       "format": "pdf",
       "pages": 16,
       "bytes": 2475623,
-      "text": "sources/text/doe-403-key-extract.txt"
+      "text_full": "sources/text/doe-403-full.txt",
+      "text_key_extract": "sources/text/doe-403-key-extract.txt",
+      "text_note": "doe-403-full.txt is the complete 16-page verbatim OCR extraction (27,128 chars; OCR artifacts preserved). doe-403-key-extract.txt is a condensed, paraphrased index of the 14 principles for quick reference — the full text is the authority."
     },
     {
       "id": "fercPR",
@@ -80,5 +82,23 @@
       "extract": "sources/orders-extract.json",
       "pdf_dir": "sources/pdf/orders/ (gitignored)"
     }
-  ]
+  ],
+  "secondary_sources": {
+    "note": "Secondary analysis and trade-press, fetched 2026-06-22. These back ONLY Tab 3 (reception & discourse) and clearly-attributed analysis chips — never a primary regulatory finding. Not snapshotted (third-party sites); each is rendered with its live URL and a source chip. Primary facts in Tabs 1-2 trace to the DOE letter, the FERC pages, or the order PDFs above.",
+    "captured_at": "2026-06-22",
+    "items": [
+      { "id": "akin", "org": "Akin Gump", "tier": "secondary", "url": "https://www.akingump.com/en/insights/blogs/speaking-energy/ferc-issues-landmark-show-cause-orders-on-large-load-interconnection" },
+      { "id": "sheppard", "org": "Sheppard Mullin", "tier": "secondary", "url": "https://www.sheppard.com/insights/blogs/ferc-orders-six-rtos-to-address-specific-reforms-to-effectuate-speed-to-power-that-will-facilitate-the-integration-of-large-loads" },
+      { "id": "whitecase", "org": "White & Case", "tier": "secondary", "url": "https://www.whitecase.com/insight-alert/pjm-proposes-carve-out-new-services-co-located-data-centers" },
+      { "id": "natlaw", "org": "National Law Review", "tier": "secondary", "url": "https://natlawreview.com/article/ferc-acts-large-load-integration-key-issues-addressed", "supports": "derived business-day calendar dates only" },
+      { "id": "aaf", "org": "American Action Forum", "tier": "secondary", "url": "https://www.americanactionforum.org/insight/ferc-data-center-orders-accelerate-grid-connection/" },
+      { "id": "utilitydive", "org": "Utility Dive", "tier": "secondary", "url": "https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/", "supports": "cost-recovery-agreement framing; generator-owner (Capstone) reaction" },
+      { "id": "rtoinsider", "org": "RTO Insider", "tier": "secondary", "url": "https://www.rtoinsider.com/134751-ferc-issues-show-cause-orders-iso-rtos-large-load/" },
+      { "id": "latitude", "org": "Latitude Media", "tier": "secondary", "url": "https://www.latitudemedia.com/news/ferc-to-grid-operators-connect-large-loads-to-transmission-faster/" },
+      { "id": "tdworld", "org": "T&D World", "tier": "secondary", "url": "https://www.tdworld.com/transmission-reliability/article/55385369/ferc-orders-aggressive-targeted-action-to-speed-power-to-support-data-centers" },
+      { "id": "powermag", "org": "POWER Magazine", "tier": "secondary", "url": "https://www.powermag.com/ferc-orders-all-six-regional-grid-operators-to-justify-or-rewrite-large-load-tariffs/" },
+      { "id": "rew", "org": "Renewable Energy World", "tier": "secondary", "url": "https://www.renewableenergyworld.com/energy-business/policy-and-regulation/ferc-takes-historic-action-orders-us-grid-operators-to-defend-or-revise-large-load-interconnection-tariffs/" },
+      { "id": "substack", "org": "Arushi Sharma Frank (Substack)", "tier": "secondary", "url": "https://arushisharmafrank.substack.com/p/ferc-kicks-off-a-transparency-wave", "supports": "coverage-gap observation; transparency-wave framing (abeyance mechanics now also cited to NYISO order P 42)" }
+    ]
+  }
 }

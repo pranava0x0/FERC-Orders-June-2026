@@ -22,32 +22,36 @@ window.FERC_DATA = (function () {
       org: "FERC, Office of External Affairs",
       tier: "ferc",
       url: "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
+      archiveUrl: "http://web.archive.org/web/20260618211730/https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
       captured: "2026-06-18 (Internet Archive)",
-      note: "Live page is Cloudflare-gated; text captured from the June 18, 2026 Wayback snapshot.",
+      note: "Live page is Cloudflare-gated; chip opens the fixed June 18, 2026 Wayback snapshot the text was checked against.",
     },
     fercFS: {
       label: "Fact Sheet — “FERC Takes Action to Supercharge America’s Grid…”",
       org: "FERC",
       tier: "ferc",
       url: "https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and",
+      archiveUrl: "http://web.archive.org/web/20260620020229/https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and",
       captured: "2026-06-20 (Internet Archive)",
-      note: "Enumerates the five categories, the 30/60-day deadlines, the jurisdictional boundary and the regional distinctions verbatim.",
+      note: "Enumerates the five categories, the 30/60-day deadlines, the jurisdictional boundary and the regional distinctions verbatim. Chip opens the fixed snapshot.",
     },
     fercSum: {
       label: "Summaries — June 2026 Commission Meeting",
       org: "FERC, Office of External Affairs",
       tier: "ferc",
       url: "https://www.ferc.gov/news-events/news/summaries-june-2026-commission-meeting",
+      archiveUrl: "http://web.archive.org/web/20260618204955/https://www.ferc.gov/news-events/news/summaries-june-2026-commission-meeting",
       captured: "2026-06-18 (Internet Archive)",
-      note: "Confirms the item→RTO→docket mapping and the related E-2 / E-6 agenda items.",
+      note: "Confirms the item→RTO→docket mapping and the related E-2 / E-6 agenda items. Chip opens the fixed snapshot.",
     },
     fercRM264: {
       label: "Docket RM26-4-000 landing page — “Interconnection of Large Loads…”",
       org: "FERC",
       tier: "ferc",
       url: "https://www.ferc.gov/rm26-4",
+      archiveUrl: "http://web.archive.org/web/20260619085932/https://www.ferc.gov/rm26-4",
       captured: "2026-06-19 (Internet Archive)",
-      note: "DOE Oct. 23, 2025 §403 directive; >20 MW definition; four summarized ANOPR questions; comment period extended (page last updated Jan 13, 2026).",
+      note: "DOE Oct. 23, 2025 §403 directive; >20 MW definition; four summarized ANOPR questions; comment period extended (page last updated Jan 13, 2026). Chip opens the fixed snapshot.",
     },
     // The six order PDFs — downloaded via browser (past Cloudflare) and OCR'd; page-1 captions verified.
     e7: { label: "Order E-7 (PJM) — EL26-67-000 · 195 FERC ¶ 61,211", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-7-el26-67-000", captured: "2026-06-22", note: "Downloaded & OCR'd — 114 pp; §206 order, issued June 18, 2026; caption verified." },
@@ -56,18 +60,18 @@ window.FERC_DATA = (function () {
     e10: { label: "Order E-10 (CAISO) — EL26-71-000 · 195 FERC ¶ 61,214", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-10-el26-71-000", captured: "2026-06-22", note: "Downloaded & OCR'd — 118 pp; §206 order, issued June 18, 2026; caption verified." },
     e11: { label: "Order E-11 (ISO-NE) — EL26-72-000 · 195 FERC ¶ 61,215", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e11-el26-72-000", captured: "2026-06-22", note: "Downloaded & OCR'd — 115 pp; §206 order, issued June 18, 2026; caption verified." },
     e12: { label: "Order E-12 (NYISO) — EL26-69-000 · 195 FERC ¶ 61,216", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e12-el26-69-000", captured: "2026-06-22", note: "Downloaded & OCR'd — 119 pp; §206 order, issued June 18, 2026; caption verified." },
-    akin: { label: "“FERC Issues Landmark Show Cause Orders on Large Load Interconnection”", org: "Akin Gump (Speaking Energy)", tier: "secondary", url: "https://www.akingump.com/en/insights/blogs/speaking-energy/ferc-issues-landmark-show-cause-orders-on-large-load-interconnection", captured: "2026-06", note: "Law-firm client alert." },
-    sheppard: { label: "“FERC Orders Six RTOs to Address Specific Reforms… Speed to Power”", org: "Sheppard Mullin", tier: "secondary", url: "https://www.sheppard.com/insights/blogs/ferc-orders-six-rtos-to-address-specific-reforms-to-effectuate-speed-to-power-that-will-facilitate-the-integration-of-large-loads", captured: "2026-06", note: "Law-firm client alert." },
-    whitecase: { label: "“PJM proposes to carve out new services for co-located data centers”", org: "White & Case", tier: "secondary", url: "https://www.whitecase.com/insight-alert/pjm-proposes-carve-out-new-services-co-located-data-centers", captured: "2026", note: "Co-location context (PJM EL25-49 line)." },
-    natlaw: { label: "“FERC Acts on Large Load Integration — Key Issues Addressed”", org: "National Law Review", tier: "secondary", url: "https://natlawreview.com/article/ferc-acts-large-load-integration-key-issues-addressed", captured: "2026-06", note: "Source of the derived procedural calendar dates." },
-    aaf: { label: "“FERC Data Center Orders Accelerate Grid Connection”", org: "American Action Forum", tier: "secondary", url: "https://www.americanactionforum.org/insight/ferc-data-center-orders-accelerate-grid-connection/", captured: "2026-06", note: "Policy analysis; §206-vs-NOPR timeline framing." },
-    utilitydive: { label: "Utility Dive — large-load / co-location coverage", org: "Utility Dive", tier: "secondary", url: "https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/", captured: "2026-06", note: "Trade press; cost-recovery-agreement and generator-reaction reporting." },
-    rtoinsider: { label: "“FERC Directs RTOs to Fix Large Load Interconnections as Answer to DOE ANOPR”", org: "RTO Insider", tier: "secondary", url: "https://www.rtoinsider.com/134751-ferc-issues-show-cause-orders-iso-rtos-large-load/", captured: "2026-06", note: "Trade press." },
-    latitude: { label: "“FERC to grid operators: Connect large loads to transmission faster”", org: "Latitude Media", tier: "secondary", url: "https://www.latitudemedia.com/news/ferc-to-grid-operators-connect-large-loads-to-transmission-faster/", captured: "2026-06", note: "Trade press." },
-    tdworld: { label: "“FERC Orders ‘Aggressive Targeted Action’ to Speed Power…”", org: "T&D World", tier: "secondary", url: "https://www.tdworld.com/transmission-reliability/article/55385369/ferc-orders-aggressive-targeted-action-to-speed-power-to-support-data-centers", captured: "2026-06", note: "Trade press." },
-    powermag: { label: "“FERC Orders All Six Regional Grid Operators to Justify or Rewrite Large-Load Tariffs”", org: "POWER Magazine", tier: "secondary", url: "https://www.powermag.com/ferc-orders-all-six-regional-grid-operators-to-justify-or-rewrite-large-load-tariffs/", captured: "2026-06", note: "Trade press; 200M Americans / 31+ states framing." },
-    rew: { label: "“FERC takes historic action… ‘defend or revise’ large load interconnection tariffs”", org: "Renewable Energy World", tier: "secondary", url: "https://www.renewableenergyworld.com/energy-business/policy-and-regulation/ferc-takes-historic-action-orders-us-grid-operators-to-defend-or-revise-large-load-interconnection-tariffs/", captured: "2026-06", note: "Trade press." },
-    substack: { label: "“FERC Kicks off a Transparency Wave on Large Load Interconnection”", org: "Arushi Sharma Frank (Substack)", tier: "secondary", url: "https://arushisharmafrank.substack.com/p/ferc-kicks-off-a-transparency-wave", captured: "2026-06", note: "Independent policy commentary; abeyance/pause mechanics, no-show/stranded-cost framing, coverage-gap observations." },
+    akin: { label: "“FERC Issues Landmark Show Cause Orders on Large Load Interconnection”", org: "Akin Gump (Speaking Energy)", tier: "secondary", url: "https://www.akingump.com/en/insights/blogs/speaking-energy/ferc-issues-landmark-show-cause-orders-on-large-load-interconnection", captured: "2026-06-22", note: "Law-firm client alert." },
+    sheppard: { label: "“FERC Orders Six RTOs to Address Specific Reforms… Speed to Power”", org: "Sheppard Mullin", tier: "secondary", url: "https://www.sheppard.com/insights/blogs/ferc-orders-six-rtos-to-address-specific-reforms-to-effectuate-speed-to-power-that-will-facilitate-the-integration-of-large-loads", captured: "2026-06-22", note: "Law-firm client alert." },
+    whitecase: { label: "“PJM proposes to carve out new services for co-located data centers”", org: "White & Case", tier: "secondary", url: "https://www.whitecase.com/insight-alert/pjm-proposes-carve-out-new-services-co-located-data-centers", captured: "2026-06-22", note: "Co-location context (PJM EL25-49 line)." },
+    natlaw: { label: "“FERC Acts on Large Load Integration — Key Issues Addressed”", org: "National Law Review", tier: "secondary", url: "https://natlawreview.com/article/ferc-acts-large-load-integration-key-issues-addressed", captured: "2026-06-22", note: "Source of the derived procedural calendar dates." },
+    aaf: { label: "“FERC Data Center Orders Accelerate Grid Connection”", org: "American Action Forum", tier: "secondary", url: "https://www.americanactionforum.org/insight/ferc-data-center-orders-accelerate-grid-connection/", captured: "2026-06-22", note: "Policy analysis; §206-vs-NOPR timeline framing." },
+    utilitydive: { label: "Utility Dive — large-load / co-location coverage", org: "Utility Dive", tier: "secondary", url: "https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/", captured: "2026-06-22", note: "Trade press; cost-recovery-agreement and generator-reaction reporting." },
+    rtoinsider: { label: "“FERC Directs RTOs to Fix Large Load Interconnections as Answer to DOE ANOPR”", org: "RTO Insider", tier: "secondary", url: "https://www.rtoinsider.com/134751-ferc-issues-show-cause-orders-iso-rtos-large-load/", captured: "2026-06-22", note: "Trade press." },
+    latitude: { label: "“FERC to grid operators: Connect large loads to transmission faster”", org: "Latitude Media", tier: "secondary", url: "https://www.latitudemedia.com/news/ferc-to-grid-operators-connect-large-loads-to-transmission-faster/", captured: "2026-06-22", note: "Trade press." },
+    tdworld: { label: "“FERC Orders ‘Aggressive Targeted Action’ to Speed Power…”", org: "T&D World", tier: "secondary", url: "https://www.tdworld.com/transmission-reliability/article/55385369/ferc-orders-aggressive-targeted-action-to-speed-power-to-support-data-centers", captured: "2026-06-22", note: "Trade press." },
+    powermag: { label: "“FERC Orders All Six Regional Grid Operators to Justify or Rewrite Large-Load Tariffs”", org: "POWER Magazine", tier: "secondary", url: "https://www.powermag.com/ferc-orders-all-six-regional-grid-operators-to-justify-or-rewrite-large-load-tariffs/", captured: "2026-06-22", note: "Trade press; 200M Americans / 31+ states framing." },
+    rew: { label: "“FERC takes historic action… ‘defend or revise’ large load interconnection tariffs”", org: "Renewable Energy World", tier: "secondary", url: "https://www.renewableenergyworld.com/energy-business/policy-and-regulation/ferc-takes-historic-action-orders-us-grid-operators-to-defend-or-revise-large-load-interconnection-tariffs/", captured: "2026-06-22", note: "Trade press." },
+    substack: { label: "“FERC Kicks off a Transparency Wave on Large Load Interconnection”", org: "Arushi Sharma Frank (Substack)", tier: "secondary", url: "https://arushisharmafrank.substack.com/p/ferc-kicks-off-a-transparency-wave", captured: "2026-06-22", note: "Independent policy commentary; abeyance/pause mechanics, no-show/stranded-cost framing, coverage-gap observations." },
   };
 
   const meta = {
@@ -217,7 +221,7 @@ window.FERC_DATA = (function () {
       item: "E-7", rto: "PJM", rtoFull: "PJM Interconnection, L.L.C.", docket: "EL26-67-000", url: "e7",
       region: "Mid-Atlantic / 13 states + DC", cite: "195 FERC ¶ 61,211", pages: 114,
       respondents: "PJM + 45 named transmission owners",
-      status: "Builds on the PJM co-location record",
+      status: "Co-location rules already in place",
       dir: [
         { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 6(a)" },
         { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies … to accurately account for advanced transmission technologies", p: "P 70" },
@@ -236,7 +240,7 @@ window.FERC_DATA = (function () {
       item: "E-8", rto: "MISO", rtoFull: "Midcontinent Independent System Operator, Inc.", docket: "EL26-70-000", url: "e8",
       region: "15 states, Midwest + South", cite: "195 FERC ¶ 61,212", pages: 115,
       respondents: "MISO + ~31 named transmission owners",
-      status: "Imports PJM/SPP findings, regional variation",
+      status: "Early-stage large-load rules",
       dir: [
         { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system", p: "P 119" },
         { t: "Cost-recovery agreement", q: "a pro forma cost recovery agreement between MISO, the relevant transmission owner, and Eligible Customer taking transmission service on behalf of the large load to mitigate the risk of cost shifting", p: "P 6(b)" },
@@ -255,7 +259,7 @@ window.FERC_DATA = (function () {
       item: "E-9", rto: "SPP", rtoFull: "Southwest Power Pool, Inc.", docket: "EL26-68-000", url: "e9",
       region: "Central U.S., 14+ states", cite: "195 FERC ¶ 61,213", pages: 92,
       respondents: "SPP + 23 named transmission owners",
-      status: "Furthest along — HILL / HILLGA in place",
+      status: "Most mature — HILL / HILLGA",
       dir: [
         { t: "Alternative tech + operational terms", q: "require the evaluation of alternative transmission technologies, and memorialize ongoing operational requirements in a transmission service agreement", p: "Ordering (B)(1)(a)" },
         { t: "Evaluate alt tech by default", q: "in all instances, without the need for a request from the Eligible Customer seeking transmission service on behalf of large load", p: "P 46" },
@@ -274,7 +278,7 @@ window.FERC_DATA = (function () {
       item: "E-10", rto: "CAISO", rtoFull: "California Independent System Operator Corp.", docket: "EL26-71-000", url: "e10",
       region: "California (+ WEIM footprint)", cite: "195 FERC ¶ 61,214", pages: 118,
       respondents: "CAISO + 24 Participating Transmission Owners",
-      status: "Distinct — no Order No. 888 service",
+      status: "No Order No. 888 service",
       dir: [
         { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 5" },
         { t: "Alternative transmission technologies", q: "they lack clear and consistent provisions requiring the evaluation of alternative transmission technologies as potential solutions to accommodate an Eligible Customer’s request", p: "PP 152-153" },
@@ -293,7 +297,7 @@ window.FERC_DATA = (function () {
       item: "E-11", rto: "ISO-NE", rtoFull: "ISO New England Inc.", docket: "EL26-72-000", url: "e11",
       region: "Six New England states", cite: "195 FERC ¶ 61,215", pages: 115,
       respondents: "ISO-NE + 16 Participating Transmission Owners",
-      status: "Constrained grid — risks called acute",
+      status: "Transmission-constrained grid",
       dir: [
         { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 5" },
         { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system", p: "P 75" },
@@ -312,7 +316,7 @@ window.FERC_DATA = (function () {
       item: "E-12", rto: "NYISO", rtoFull: "New York Independent System Operator, Inc.", docket: "EL26-69-000", url: "e12",
       region: "New York State", cite: "195 FERC ¶ 61,216", pages: 119,
       respondents: "NYISO + 9 named New York transmission owners",
-      status: "Reform needed ahead of NYISO’s 2027 plan",
+      status: "Largely outside the tariff today",
       dir: [
         { t: "Timely study window", q: "how NYISO and/or the Transmission Owners will timely study (i.e., within 60-90 days of receiving the request) the provision of transmission service … on behalf of large loads", p: "P 44" },
         { t: "Define ‘large load’", q: "it lacks a definition of large load, as a new category of load", p: "P 64" },
@@ -399,14 +403,11 @@ window.FERC_DATA = (function () {
     friction: [
       { t: "Cost allocation is the central fight: how aggressively must large loads pre-fund and backstop upgrades, and over what crediting term? The ANOPR explicitly left crediting open.", src: ["utilitydive", "doe403"] },
       { t: "Co-location / BTM remains contested — one commentator reads the orders as reopening BTM access a December PJM ruling had narrowed; PJM’s separate E-2 track shows the issue isn’t settled.", src: ["substack", "whitecase"] },
-      { t: "Speed vs. rigor: the ~45-day abeyance window and ~90-day pause cap prevent indefinite stalling but compress stakeholder process; mandatory grid-enhancing-tech evaluation could itself add study time.", src: ["substack"] },
+      { t: "Speed vs. rigor: the orders set a 45-day window to request abeyance of up to 90 days (NYISO P 42), which prevents indefinite stalling but compresses stakeholder process; the mandatory alternative-transmission-technology evaluation could itself add study time.", src: ["e12", "substack"] },
       { t: "Coverage-gap questions: commenters flag that some transmission owners (e.g., Nebraska Public Power District, Great River Energy) appear absent from the published respondent lists — a completeness question to watch.", src: ["substack"] },
     ],
-    outlets: [
-      "Utility Dive", "RTO Insider", "Latitude Media", "T&D World", "POWER Magazine",
-      "Renewable Energy World", "Power Engineering", "Akin Gump", "Sheppard Mullin",
-      "White & Case", "National Law Review", "American Action Forum", "#EnergyTwitter",
-    ],
+    // outlet chips render from cited source records (each links to its SOURCES entry) — no uncited names.
+    outlets: ["utilitydive", "rtoinsider", "latitude", "tdworld", "powermag", "rew", "akin", "sheppard", "whitecase", "natlaw", "aaf", "substack"],
   };
 
   /* ------------------------------------------------ file / follow the dockets */

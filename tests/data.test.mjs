@@ -14,6 +14,27 @@ vm.createContext(ctx);
 vm.runInContext(code, ctx);
 const D = ctx.window.FERC_DATA;
 
+// the OCR audit trail the docket cards must trace back to
+const EXTRACT = JSON.parse(readFileSync(join(here, "..", "sources", "orders-extract.json"), "utf8")).orders;
+const EXTRACT_BY_ITEM = Object.fromEntries(EXTRACT.map((o) => [o.item, o]));
+const norm = (s) => String(s).replace(/\s+/g, " ").trim();
+const firstNum = (s) => (String(s).match(/\d+/) || [null])[0];
+function longestCommonSubstr(a, b) {
+  a = norm(a); b = norm(b);
+  let best = 0;
+  const dp = new Array(b.length + 1).fill(0);
+  for (let i = 1; i <= a.length; i++) {
+    let prev = 0;
+    for (let j = 1; j <= b.length; j++) {
+      const tmp = dp[j];
+      dp[j] = a[i - 1] === b[j - 1] ? prev + 1 : 0;
+      if (dp[j] > best) best = dp[j];
+      prev = tmp;
+    }
+  }
+  return best;
+}
+
 // expected, authoritative item -> RTO -> docket mapping (from FERC summaries/news release)
 const EXPECT = {
   "E-7": { rto: "PJM", docket: "EL26-67-000" },
@@ -119,5 +140,42 @@ test("each of the five categories is referenced by at least one docket OR region
   const blob = (JSON.stringify(D.dockets) + JSON.stringify(D.regional)).toLowerCase();
   ["hill", "co-locat", "order no. 888", "planning"].forEach((token) => {
     assert.ok(blob.includes(token), `regional distinctions mention "${token}"`);
+  });
+});
+
+test("rendered docket content traces back to sources/orders-extract.json (no drift)", () => {
+  assert.equal(EXTRACT.length, 6, "extract has six orders");
+  D.dockets.forEach((d) => {
+    const x = EXTRACT_BY_ITEM[d.item];
+    assert.ok(x, `extract for ${d.item}`);
+    assert.equal(x.captionVerified, true, `${d.item} caption was verified`);
+    // hard facts must match the extract exactly
+    assert.equal(d.cite, x.fercCite, `${d.item} cite matches extract`);
+    assert.equal(d.pages, x.pages, `${d.item} page count matches extract`);
+    assert.equal(firstNum(d.respondents), firstNum(x.respondents), `${d.item} respondent count matches extract`);
+    // every displayed directive must trace to a directive in the extract
+    const exParas = x.directives.map((e) => norm(e.para)).join(" | ");
+    d.dir.forEach((rd, i) => {
+      const fn = firstNum(rd.p);
+      if (fn) assert.ok(exParas.includes(fn), `${d.item} directive ${i} para ${rd.p} maps to extract`);
+      // the quote must share a long verbatim run with some extract directive quote (catches edited/fabricated text)
+      const bestLcs = Math.max(...x.directives.map((e) => longestCommonSubstr(rd.q, e.quote)));
+      assert.ok(bestLcs >= 25, `${d.item} directive ${i} quote traces to extract (LCS ${bestLcs} >= 25)`);
+    });
+  });
+});
+
+test("every 'where it's covered' outlet maps to a cited secondary source", () => {
+  const ids = D.SOURCES;
+  assert.ok(D.media.outlets.length >= 8, "outlet count floor");
+  D.media.outlets.forEach((id) => {
+    assert.ok(ids[id], `outlet id ${id} exists in SOURCES`);
+    assert.equal(ids[id].tier, "secondary", `outlet ${id} is a secondary source`);
+  });
+});
+
+test("archived FERC sources carry a citationUrl chips can prefer", () => {
+  ["fercPR", "fercFS", "fercSum", "fercRM264"].forEach((id) => {
+    assert.match(D.SOURCES[id].archiveUrl || "", /web\.archive\.org/, `${id} has an archive snapshot URL`);
   });
 });

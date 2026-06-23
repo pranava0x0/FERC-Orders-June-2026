@@ -26,10 +26,12 @@
     var chips = ids.map(function (id) {
       var s = D.SOURCES[id];
       if (!s) return "";
-      var title = esc(s.label + " — " + s.org + (s.note ? " · " + s.note : ""));
-      var rel = "noopener noreferrer";
-      var dashed = s.tier === "order" ? ' aria-label="order PDF (not machine-retrieved; opens FERC source)"' : "";
-      return '<a class="src-chip" data-tier="' + s.tier + '" href="' + esc(s.url) + '" target="_blank" rel="' + rel + '" title="' + title + '"' + dashed + ">" + esc(shortName(id)) + "</a>";
+      // Prefer the fixed archive snapshot for FERC pages (the live ferc.gov page is Cloudflare-gated / 403).
+      var href = s.archiveUrl || s.url;
+      var titleBits = s.label + " — " + s.org + (s.note ? " · " + s.note : "");
+      if (s.archiveUrl) titleBits += " · Opens the archived snapshot; live page: " + s.url;
+      var title = esc(titleBits);
+      return '<a class="src-chip" data-tier="' + s.tier + '" href="' + esc(href) + '" target="_blank" rel="noopener noreferrer" title="' + title + '">' + esc(shortName(id)) + "</a>";
     }).join("");
     return '<div class="srcs"><span class="label">Sources</span>' + chips + "</div>";
   }
@@ -84,24 +86,25 @@
     }).join("");
 
     var docs = '<div class="dockets">' + D.dockets.map(function (d) {
+      var so = D.SOURCES[d.url];
+      var orderLink = '<a class="order-link" data-tier="order" target="_blank" rel="noopener noreferrer" href="' +
+        esc(so.url) + '" title="' + esc(so.label + " — downloaded & OCR'd 2026-06-22") + '">Order PDF ↗</a>';
       var directives = '<div class="dir"><span class="label">Directs the respondent to address</span>' +
         d.dir.map(function (x) {
-          return '<div class="dir-item"><span class="dir-topic">' + esc(x.t) + '</span>' +
-            '<span class="dir-quote">“' + esc(x.q) + '”</span>' +
-            '<span class="dir-para mono">' + esc(x.p) + "</span></div>";
+          return '<div class="dir-item"><div class="dir-head"><span class="dir-topic">' + esc(x.t) +
+            '</span><span class="dir-para mono">' + esc(x.p) + '</span></div>' +
+            '<span class="dir-quote">“' + esc(x.q) + '”</span></div>';
         }).join("") + "</div>";
-      var region = '<div class="dreg"><span class="label">Region-specific findings</span><ul>' +
-        d.reg.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></div>";
+      var region = '<details class="dreg"><summary>Region-specific findings (' + d.reg.length + ")</summary><ul>" +
+        d.reg.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></details>";
       return '<div class="docket"><div class="docket-spine"><span class="item">' + esc(d.item) +
         '</span><span class="docket-no">' + esc(d.docket) + "</span></div>" +
-        '<div class="docket-main"><div class="docket-id"><div class="rto">' + esc(d.rto) +
-        '</div><div class="rto-full">' + esc(d.rtoFull) + "</div></div>" +
+        '<div class="docket-main">' +
+        '<div class="docket-head"><div class="docket-id"><span class="rto">' + esc(d.rto) +
+        '</span> <span class="rto-full">' + esc(d.rtoFull) + "</span></div>" + orderLink + "</div>" +
         '<div class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</div>" +
-        '<div class="region">' + esc(d.region) + '</div>' +
-        '<span class="docket-status">' + esc(d.status) + "</span>" +
+        '<div class="docket-tags"><span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span></div>" +
         directives + region +
-        '<div class="srcs"><span class="label">Order PDF</span><a class="src-chip" data-tier="order" target="_blank" rel="noopener noreferrer" href="' +
-        esc(D.SOURCES[d.url].url) + '" title="' + esc(D.SOURCES[d.url].label + " — downloaded & OCR'd 2026-06-22") + '">' + esc(d.cite) + "</a></div>" +
         "</div></div>";
     }).join("") + "</div>";
 
@@ -149,8 +152,11 @@
       D.media.friction.map(function (c) { return '<div class="disc-item">' + esc(c.t) + srcChips(c.src) + "</div>"; }).join("") +
       "</div></div></div>";
 
-    var outlets = '<div class="section-head"><h2>Where it’s being covered</h2></div><div class="outlets">' +
-      D.media.outlets.map(function (o) { return '<span class="outlet">' + esc(o) + "</span>"; }).join("") + "</div>";
+    var outlets = '<div class="section-head"><h2>Where it’s being covered</h2><p class="lede">Each links to the cited source.</p></div><div class="outlets">' +
+      D.media.outlets.map(function (id) {
+        var s = D.SOURCES[id]; if (!s) return "";
+        return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + " — " + s.org) + '">' + esc(shortName(id)) + "</a>";
+      }).join("") + "</div>";
 
     return head("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.") + rec +
