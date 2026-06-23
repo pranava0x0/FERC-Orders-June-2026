@@ -82,6 +82,10 @@ window.FERC_DATA = (function () {
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
+    summary: [
+      "On October 23, 2025, the Department of Energy used its rarely invoked § 403 authority to direct FERC to open a rulemaking on the interconnection of large loads such as data centers (Docket RM26-4-000).",
+      "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO, putting all six markets on a 30/60-day clock to defend or revise their large-load tariffs.",
+    ],
   };
 
   const kpis = [
