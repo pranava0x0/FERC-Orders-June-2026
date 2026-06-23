@@ -4,6 +4,7 @@ import { dirname, join } from "node:path";
 import { test } from "node:test";
 import { fileURLToPath } from "node:url";
 import vm from "node:vm";
+import { buildLlmsTxt } from "../tools/build-llms.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -359,6 +360,41 @@ test("each directive citation links to a PDF page that carries its quoted text",
       assert.ok(
         pageCarriesQuote(directive.q, pages.get(directive.pg) ?? ""),
         `${docket.item} "${directive.p}" links to page ${directive.pg}, which does not carry the quote: ${directive.q}`,
+      );
+    }
+  }
+});
+
+test("docs/llms.txt is generated from data.js and in sync", () => {
+  const committed = textFile("docs", "llms.txt");
+  const generated = buildLlmsTxt(D);
+  assert.equal(committed, generated, "docs/llms.txt is stale; regenerate with: node tools/build-llms.mjs");
+});
+
+test("Discourse commentary quotes are backed by captured evidence", () => {
+  const evidence = jsonFile("sources", "voices-evidence.json");
+  const byName = new Map(Object.entries(evidence.voices));
+
+  for (const voice of D.voices) {
+    const ev = byName.get(voice.name);
+    assert.ok(ev, `voice "${voice.name}" must have an entry in sources/voices-evidence.json`);
+    assert.ok(D.SOURCES[ev.src], `evidence for "${voice.name}" cites unknown source "${ev.src}"`);
+    assert.ok(
+      voice.src.includes(ev.src),
+      `voice "${voice.name}" must cite its evidence source "${ev.src}" (cites ${voice.src.join(", ")})`,
+    );
+
+    // Every directly-quoted phrase in the take must appear in the captured evidence. The opening
+    // curly quote (U+2018) marks a quote start; the closing (U+2019) is the one not followed by a
+    // letter, so inner apostrophes (also U+2019) don't end the match early.
+    const evidenceText = looseText(ev.evidence);
+    const quotes = [...voice.take.matchAll(/‘(.+?)’(?![A-Za-z])/g)]
+      .map((match) => match[1])
+      .filter((quote) => looseText(quote).length >= 6);
+    for (const quote of quotes) {
+      assert.ok(
+        evidenceText.includes(looseText(quote)),
+        `voice "${voice.name}" quotes text not found in its captured evidence: ${quote}`,
       );
     }
   }
