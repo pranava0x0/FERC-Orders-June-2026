@@ -1,0 +1,498 @@
+{
+  "captured_at": "2026-06-22",
+  "source": "OCR/text-extraction of the six order PDFs (ferc.gov/media), downloaded via browser 2026-06-22",
+  "orders": [
+    {
+      "item": "E-7",
+      "rto": "PJM",
+      "docket": "EL26-67-000",
+      "fercCite": "195 FERC ¶ 61,211",
+      "issued": "June 18, 2026",
+      "pages": 114,
+      "captionVerified": true,
+      "commissioners": [
+        "Laura V. Swett (Chairman)",
+        "David Rosner",
+        "Lindsay S. See",
+        "Judy W. Chang",
+        "David LaCerte"
+      ],
+      "respondents": "PJM + 45 named transmission owners",
+      "sections": [
+        "I. Background",
+        "II. PJM's Existing Processes",
+        "III. Discussion",
+        "IV. Briefing Questions"
+      ],
+      "directives": [
+        {
+          "topic": "Transmission-service application/study process for large loads",
+          "quote": "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads",
+          "para": "P 6(a) / Ordering Para (B)"
+        },
+        {
+          "topic": "Evaluation of alternative transmission technologies in service studies",
+          "quote": "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system to accurately account for advanced transmission technologies",
+          "para": "P 70 (also P 43)"
+        },
+        {
+          "topic": "Cost transparency + pro forma cost recovery agreement (cost shifting)",
+          "quote": "additional transparency concerning the Network Upgrade costs ... a pro forma cost recovery agreement between PJM, the relevant transmission owner, and Eligible Customer ... to mitigate the risk of cost shifting among transmission customers",
+          "para": "P 6(b) / P 77"
+        },
+        {
+          "topic": "Public posting of large-load additions and Network Upgrade cost data",
+          "quote": "publicly post and regularly update data that details: (1) the aggregate amounts of proposed large load additions in PJM's footprint ... (2) the planned Network Upgrades ... and (3) cost estimates for those Network Upgrades",
+          "para": "P 71"
+        },
+        {
+          "topic": "New transmission services for flexible large loads",
+          "quote": "transmission services that reflect Eligible Customers taking transmission service on behalf of flexible large loads that are willing and able to limit their use of the transmission system under certain conditions",
+          "para": "P 6(c) / P 85"
+        },
+        {
+          "topic": "Generator interconnection service for electrically proximate / co-located load",
+          "quote": "it does not contain provisions allowing an interconnection customer to seek the generator interconnection service(s) that reflects the operational dynamics of serving either: (1) an electrically proximate large load; or (2) a co-located load",
+          "para": "P 62 (Tariff Provisions)"
+        },
+        {
+          "topic": "Show-cause or remedy election on the Tariff",
+          "quote": "either: (1) to show cause as to why the Tariff remains just and reasonable ...; or (2) to explain what changes to the Tariff they believe would remedy the identified concerns",
+          "para": "Ordering Para (B)"
+        },
+        {
+          "topic": "Informational report on adequate generation to serve large loads",
+          "quote": "an informational report on how PJM intends to ensure that adequate generation will be available to serve existing and new large loads",
+          "para": "P 8 / Ordering Para (C)"
+        }
+      ],
+      "regionSpecific": [
+        "PJM co-location and behind-the-meter generation were already addressed in the separate, completed PJM Co-Location Order, 193 FERC ¶ 61,217 (Dec. 18, 2025) and PJM Co-Location Rehearing Order, 195 FERC ¶ 61,209; this §206 order builds on that record rather than re-litigating co-location.",
+        "Order directs PJM to extend the new transmission services the Commission already created for co-located loads in the PJM Co-Location Order — interim NITS, firm contract demand, and non-firm contract demand — to flexible large loads (P 85, P 57).",
+        "Defines 'electrically proximate large load' as a large load no more than two substations away from the generating facility, and invites PJM to propose revisions tailored to PJM's transmission system (P 62).",
+        "Targets large co-located loads of 50 MW or greater for new generator interconnection study procedures, tied to the co-located load definition in the PJM Co-Location Order (P 62).",
+        "Excludes named PJM non-public-utility transmission owners (e.g., AMP Transmission, Cleveland Public Power, City of Hamilton OH, East Kentucky Power Cooperative, Southern Maryland Electric Cooperative) from the show-cause directive under FPA section 201(f), but PJM must still respond as to their Tariff provisions (note 13, P 7)."
+      ],
+      "deadlines": [
+        "30 days from issuance: PJM must submit an informational report on how it will ensure adequate generation is available to serve existing and new large loads (Ordering Para (C); P 8).",
+        "60 days from issuance: PJM and the Transmission Owners must either show cause why the Tariff remains just and reasonable, or explain remedial Tariff changes (Ordering Para (B); P 6).",
+        "21 days from issuance: notices of intervention / motions to intervene due under Rule 214 (Ordering Para (D)).",
+        "30 days after PJM's and the Transmission Owners' filing: interested entities may respond on whether the Tariff remains just and reasonable and, if not, what replacement-rate changes should be implemented (Ordering Para (E)).",
+        "Refund effective date: the date of Federal Register publication of the notice instituting the proceeding (Ordering Para (G))."
+      ]
+    },
+    {
+      "item": "E-8",
+      "rto": "MISO",
+      "docket": "EL26-70-000",
+      "fercCite": "195 FERC ¶ 61,212",
+      "issued": "June 18, 2026",
+      "pages": 115,
+      "captionVerified": true,
+      "commissioners": [
+        "Laura V. Swett, Chairman",
+        "David Rosner",
+        "Lindsay S. See",
+        "Judy W. Chang",
+        "David LaCerte"
+      ],
+      "respondents": "MISO + ~31 named transmission owners",
+      "sections": [
+        "I. Background",
+        "II. MISO's Existing Processes",
+        "III. Discussion",
+        "IV. Briefing Questions"
+      ],
+      "directives": [
+        {
+          "topic": "Transmission-service application/study + alternative transmission technologies",
+          "quote": "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system",
+          "para": "P 119"
+        },
+        {
+          "topic": "Application process, study procedures, and operational requirements for large loads",
+          "quote": "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads",
+          "para": "Ordering P (B); P 6(a)"
+        },
+        {
+          "topic": "Cost-shifting transparency + pro forma cost recovery agreement",
+          "quote": "a pro forma cost recovery agreement between MISO, the relevant transmission owner, and Eligible Customer taking transmission service on behalf of the large load to mitigate the risk of cost shifting",
+          "para": "P 6(b)"
+        },
+        {
+          "topic": "Minimum cost recovery and financial security under such agreements",
+          "quote": "please include information on what an appropriate minimum level of cost recovery and financial security from an Eligible Customer would be under any such agreements",
+          "para": "P 119"
+        },
+        {
+          "topic": "Co-location arrangements rates, terms, and conditions of service",
+          "quote": "the rates, terms, and conditions of service that apply to co-location arrangements",
+          "para": "P 6(c)"
+        },
+        {
+          "topic": "Co-location / BTMG ancillary-service charges (regulation and black start)",
+          "quote": "whether and how Eligible Customers taking one of the new transmission services on behalf of Eligible Loads will be charged for their use of regulation and black start services",
+          "para": "P 99"
+        },
+        {
+          "topic": "New transmission services for flexible large loads",
+          "quote": "transmission services that reflect Eligible Customers taking transmission service on behalf of co-located loads, load with behind the meter generation, and flexible large loads that are willing and able to limit their use of the transmission system",
+          "para": "P 6(d)"
+        },
+        {
+          "topic": "Generator interconnection serving electrically proximate / co-located load",
+          "quote": "the rates, terms, and conditions of service applicable to interconnection customers serving electrically proximate large load or co-located load",
+          "para": "P 6(e)"
+        }
+      ],
+      "regionSpecific": [
+        "MISO is developing a zero-injection generator interconnection agreement process for co-located generation, but its Tariff currently does not include standard interconnection procedures for these zero-injection arrangements nor specify how MISO studies their reliability impacts (PP 32, 57).",
+        "Existing MISO transmission services available to Eligible Customers on behalf of large loads are limited to NITS and firm and non-firm Point-To-Point Transmission Service; the Tariff lacks the new interim NITS and firm/non-firm contract demand services found just and reasonable in the PJM Co-Location Order (P 104).",
+        "MISO uses its Expedited Project Review (EPR) process under Attachment FF for streamlined, outside-MTEP-cycle approval of local transmission projects supporting large load additions, and has seen rising EPR applications driven by data center growth (PP 21-22).",
+        "MISO has convened a Large Load Working Group and a stakeholder workshop, and itself recognized that its Tariff does 'not provide a consistent or transparent framework to evaluate' large loads (PP 29-32).",
+        "The order applies findings from the parallel PJM Co-Location proceeding (193 FERC ¶ 61,217; rehearing 195 FERC ¶ 61,209) and the SPP HILL/HILLGA orders (194 FERC ¶ 61,031) to MISO, with 'regional variation as appropriate' (PP 14-20, 104, 109)."
+      ],
+      "deadlines": [
+        "Within 60 days of the order: MISO and the Transmission Owners must either (1) show cause why the Tariff remains just and reasonable, or (2) explain remedial Tariff changes (Ordering P (B); PP 5, 38).",
+        "Within 30 days of issuance: MISO must submit an informational report on how it intends to ensure adequate generation is available to serve existing and new large loads (Ordering P (C); PP 14, 120).",
+        "Within 21 days of issuance: any interested person must file a notice of intervention or motion to intervene under Rule 214 (Ordering P (D)).",
+        "Within 30 days of MISO's and the Transmission Owners' filing: interested entities may respond addressing whether the Tariff remains just and reasonable and, if not, what replacement changes to implement (Ordering P (E))."
+      ]
+    },
+    {
+      "item": "E-9",
+      "rto": "SPP",
+      "docket": "EL26-68-000",
+      "fercCite": "195 FERC ¶ 61,213",
+      "issued": "June 18, 2026",
+      "pages": 92,
+      "captionVerified": true,
+      "commissioners": [
+        "Laura V. Swett, Chairman",
+        "David Rosner",
+        "Lindsay S. See",
+        "Judy W. Chang",
+        "David LaCerte"
+      ],
+      "respondents": "SPP + 23 named transmission owners",
+      "sections": [
+        "I. Background",
+        "A. Growth of Large and Co-Located Loads and ANOPR",
+        "B. Recent Proceedings Addressing Large and Co-Located Loads",
+        "II. SPP's Existing Processes",
+        "A. Existing Tariff Processes",
+        "B. Recent Stakeholder Proceedings in SPP",
+        "III. Discussion",
+        "A. Transmission Service to Eligible Customers on Behalf of Large Loads",
+        "B. Cost Shifting Risk Among Transmission Customers",
+        "C. Co-Location Arrangements and Load with Behind the Meter Generation",
+        "D. Extending New Transmission Services to Eligible Customers Taking Service on Behalf of Flexible Large Loads",
+        "E. Informational Report",
+        "IV. Briefing Questions"
+      ],
+      "directives": [
+        {
+          "topic": "Evaluate alternative transmission technologies in study process",
+          "quote": "require the evaluation of alternative transmission technologies, and memorialize ongoing operational requirements in a transmission service agreement",
+          "para": "P 35 / Ordering (B)(1)(a)"
+        },
+        {
+          "topic": "Alternative-tech evaluation without customer request; justify if traditional upgrades chosen",
+          "quote": "in all instances, without the need for a request from the Eligible Customer seeking transmission service on behalf of large load",
+          "para": "P 46"
+        },
+        {
+          "topic": "Cost transparency on Network Upgrade costs",
+          "quote": "address additional transparency concerning the Network Upgrade costs to provide transmission service to Eligible Customers on behalf of large loads",
+          "para": "Ordering (B)(1)(b)"
+        },
+        {
+          "topic": "Pro forma cost recovery agreement to mitigate cost shifting",
+          "quote": "establish a pro forma cost recovery agreement between SPP, the relevant transmission owner, and Eligible Customer taking transmission service on behalf of the large load to mitigate the risk of cost shifting",
+          "para": "Ordering (B)(1)(b)"
+        },
+        {
+          "topic": "Credit cost-recovery payments to transmission revenue requirements",
+          "quote": "establish a mechanism to ensure such payments are appropriately credited toward transmission owners' transmission revenue requirements",
+          "para": "Ordering (B)(1)(b)"
+        },
+        {
+          "topic": "Rates, terms, and conditions for co-location arrangements",
+          "quote": "address the rates, terms, and conditions of service that apply to co-location arrangements",
+          "para": "Ordering (B)(1)(c)"
+        },
+        {
+          "topic": "New transmission services for co-located, behind-the-meter, and flexible large loads",
+          "quote": "address transmission services that reflect Eligible Customers taking transmission service on behalf of co-located loads, load with behind the meter generation, and flexible large loads",
+          "para": "Ordering (B)(1)(d)"
+        },
+        {
+          "topic": "Informational report on adequate generation to serve large loads",
+          "quote": "an informational report on how SPP intends to ensure that adequate generation will be available to serve existing and new large loads",
+          "para": "P 7 / Ordering (C)"
+        }
+      ],
+      "regionSpecific": [
+        "Order adopts SPP's own HILL (high impact large load) definition as its definition of 'large load,' and treats 'flexible' large loads as a subset of HILLs not co-located with generation that are willing to limit withdrawals (PP 4, 6 n.16).",
+        "Commission commends SPP's already-approved HILL study process and High Impact Large Load Generation Assessment (HILLGA) process (accepted Jan. 14, 2026), which expedites interconnection of generation serving an electrically proximate HILL in the same local area (PP 15-16, 18).",
+        "SPP's conditional high impact large load service (CHILLS), accepted June 5, 2026, is an as-available non-firm service with a seven-year maximum term that transfers energy to HILLs subject to curtailment until firm service is available (P 17).",
+        "Two gaps found in SPP's HILL process: it lacks provisions requiring evaluation of alternative transmission technologies and lacks pro forma provisions memorializing ongoing operational requirements in a transmission service agreement (P 27).",
+        "Commission points SPP to its under-development Price Adaptive Load Service (PALS) — a non-firm option for price-sensitive flexible loads — and its Attachment AQ/AX/Z1 study and Highway/Byway (Attachment J) cost-allocation processes as the existing baseline (PP 19-21, 46)."
+      ],
+      "deadlines": [
+        "30 days from issuance: SPP must submit an informational report on ensuring adequate generation / resource adequacy to serve existing and new large loads (P 7; P 50; Ordering (C)).",
+        "60 days from the date of the order: SPP and the Transmission Owners must either show cause why the Tariff remains just and reasonable, or explain what changes would remedy the identified concerns (P 5; Ordering (B)).",
+        "21 days from issuance: notices of intervention or motions to intervene must be filed under Rule 214 (Ordering (D)).",
+        "30 days after SPP's and the Transmission Owners' filing: interested entities may respond on whether the Tariff remains just and reasonable and, if not, what replacement changes should be implemented (Ordering (E))."
+      ]
+    },
+    {
+      "item": "E-10",
+      "rto": "CAISO",
+      "docket": "EL26-71-000",
+      "fercCite": "195 FERC ¶ 61,214",
+      "issued": "June 18, 2026",
+      "pages": 118,
+      "captionVerified": true,
+      "commissioners": [
+        "Laura V. Swett (Chairman)",
+        "David Rosner",
+        "Lindsay S. See",
+        "Judy W. Chang",
+        "David LaCerte"
+      ],
+      "respondents": "CAISO + 24 named Participating Transmission Owners",
+      "sections": [
+        "I. Background",
+        "II. CAISO's Existing Processes",
+        "III. Discussion",
+        "IV. Briefing Questions"
+      ],
+      "directives": [
+        {
+          "topic": "Transmission-service application, study procedures, and ongoing operational requirements for large loads",
+          "quote": "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads",
+          "para": "P 5 (summary); ordering para (B)"
+        },
+        {
+          "topic": "Evaluation of alternative transmission technologies in transmission-service studies",
+          "quote": "they lack clear and consistent provisions requiring the evaluation of alternative transmission technologies as potential solutions to accommodate an Eligible Customer's request for transmission service on behalf of a large load",
+          "para": "P 152-153 (pp. 39)"
+        },
+        {
+          "topic": "Cost transparency on network upgrade costs for large loads",
+          "quote": "additional transparency concerning the network upgrade costs to provide transmission service to Eligible Customers on behalf of large loads",
+          "para": "P 6 (summary, sub-(b)); Section III.B.2"
+        },
+        {
+          "topic": "Pro forma cost recovery agreement to mitigate cost-shifting risk",
+          "quote": "a pro forma cost recovery agreement between CAISO, the relevant transmission owner, and Eligible Customer taking transmission service on behalf of the large load to mitigate the risk of cost shifting among transmission customers",
+          "para": "P 6 (sub-(b)); Section III.B.3"
+        },
+        {
+          "topic": "Rates, terms, and conditions of service for co-location arrangements / interconnection customers serving co-located load",
+          "quote": "it does not contain provisions addressing with sufficient clarity and consistency the rates, terms, and conditions of service that apply to interconnection customers serving co-located load",
+          "para": "P (Section III.C.3, pp. 56-58)"
+        },
+        {
+          "topic": "Behind-the-meter generation netting in Regional Access Charges",
+          "quote": "it allows load with BTMG to net its BTMG against its load for purposes of calculating Regional Access Charges",
+          "para": "P (pp. 60-61)"
+        },
+        {
+          "topic": "New transmission services for flexible large loads willing to limit withdrawals",
+          "quote": "it does not include transmission services that reflect Eligible Customers taking transmission service on behalf of flexible large loads that are willing and able to limit their use of the transmission system under certain conditions",
+          "para": "P (Section III.D, pp. 62)"
+        },
+        {
+          "topic": "Interconnection service for generation serving electrically proximate / co-located load",
+          "quote": "it does not contain provisions allowing an interconnection customer serving electrically proximate large load or large co-located load to seek generator interconnection service(s) that reflects the operational dynamics of serving such loads",
+          "para": "P (Section III.E, pp. 76)"
+        }
+      ],
+      "regionSpecific": [
+        "CAISO is unique among the regions in that it 'does not offer traditional Order No. 888 network and point-to-point transmission services, offers no firm, long-term transmission reservations of capacity, and does not provide a formal application process for transmission service' (P 19, pp. 17).",
+        "CAISO offers only a single 'daily' transmission service available day-to-day, with all non-historical/non-wheeling energy treated as 'new firm use'; customers cannot reserve capacity beyond the day-ahead timeframe and CAISO curtails on Tariff-defined scheduling priorities (pp. 17-18).",
+        "Load-addition study processes are not in CAISO's Tariff; the Participating Transmission Owners 'play the lead role in managing the interconnection of load,' while CAISO's primary role is accounting for state-projected load in its Transmission Planning Process (TPP) (pp. 18).",
+        "The TPP is highly integrated with California state processes — the California Energy Commission's statewide demand forecast and the CPUC's integrated resource plans (pp. 18).",
+        "As an alternative compliance path, CAISO may explain whether, 'given that CAISO does not offer the transmission services required by Order No. 888,' its existing framework already addresses the concerns or what changes would provide equivalent service options for flexible large loads (pp. 60)."
+      ],
+      "deadlines": [
+        "Within 60 days of the date of the order: CAISO and the Participating Transmission Owners must either (1) show cause why the Tariff remains just and reasonable and not unduly discriminatory or preferential, or (2) explain what changes would remedy the identified concerns (ordering para (B); PP 5, 31).",
+        "Within 30 days of issuance: CAISO must submit an informational report on how it intends to ensure adequate generation will be available to serve existing and new large loads (ordering para (C); P 7).",
+        "Within 21 days of issuance: any interested person desiring to be heard must file a notice of intervention or motion to intervene under Rule 214 (ordering para (D)).",
+        "Within 30 days of CAISO's and the Participating Transmission Owners' filing: interested entities may respond on whether the Tariff remains just and reasonable and, if not, what replacement changes should be implemented (ordering para (E)).",
+        "Refund effective date: the date of Federal Register publication of the Section 206 notice (ordering paras (F)-(G))."
+      ]
+    },
+    {
+      "item": "E-11",
+      "rto": "ISO-NE",
+      "docket": "EL26-72-000",
+      "fercCite": "195 FERC ¶ 61,215",
+      "issued": "June 18, 2026",
+      "pages": 115,
+      "captionVerified": true,
+      "commissioners": [
+        "Laura V. Swett (Chairman)",
+        "David Rosner",
+        "Lindsay S. See",
+        "Judy W. Chang",
+        "David LaCerte"
+      ],
+      "respondents": "ISO New England Inc. + 16 named Participating Transmission Owners",
+      "sections": [
+        "I. Background",
+        "II. ISO-NE's Existing Processes",
+        "III. Discussion",
+        "III.A. Transmission Service to Eligible Customers on Behalf of Large Loads",
+        "III.B. Cost Shifting Risk Among Transmission Customers",
+        "III.C. Co-Location Arrangements and Load with Behind the Meter Generation",
+        "III.D. Extending New Transmission Services to Eligible Customers Taking Service on Behalf of Flexible Large Loads",
+        "III.E. Interconnection Customers Serving Electrically Proximate Large Load and Co-Located Load",
+        "III.F. Informational Report",
+        "IV. Briefing Questions"
+      ],
+      "directives": [
+        {
+          "topic": "Transmission-service application/study procedures for large loads",
+          "quote": "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads",
+          "para": "Ordering Para (B); P 5"
+        },
+        {
+          "topic": "Alternative transmission technologies in study reports",
+          "quote": "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system",
+          "para": "P 75"
+        },
+        {
+          "topic": "Cost transparency on network upgrade costs",
+          "quote": "additional transparency concerning the network upgrade costs to provide transmission service to Eligible Customers on behalf of large loads",
+          "para": "P 6"
+        },
+        {
+          "topic": "Pro forma cost recovery agreement to mitigate cost shifting",
+          "quote": "a pro forma cost recovery agreement between ISO-NE, the relevant transmission owner, and Eligible Customer taking transmission service on behalf of the large load to mitigate the risk of cost shifting",
+          "para": "P 6"
+        },
+        {
+          "topic": "Co-location arrangements rates, terms, and conditions",
+          "quote": "the rates, terms, and conditions of service that apply to co-location arrangements",
+          "para": "P 6"
+        },
+        {
+          "topic": "Behind-the-meter generation netting against Regional Network Service charges",
+          "quote": "it allows load with BTMG to net its BTMG against its load for purposes of calculating Regional Network Service charges",
+          "para": "P 60"
+        },
+        {
+          "topic": "New transmission services for flexible large loads",
+          "quote": "transmission services that reflect Eligible Customers taking transmission service on behalf of co-located loads, load with behind the meter generation, and flexible large loads",
+          "para": "P 6"
+        },
+        {
+          "topic": "Interconnection service for generation serving electrically proximate load",
+          "quote": "the rates, terms, and conditions of service applicable to interconnection customers serving electrically proximate large load or co-located load",
+          "para": "P 7"
+        }
+      ],
+      "regionSpecific": [
+        "Risks are framed as particularly acute in New England because ISO-NE has significant transmission constraints and a system peak of only approximately 30,000 MW (P 11 n.31).",
+        "ISO-NE currently allocates network-upgrade costs for Regional Network Service to the Eligible Customer in the same manner as generator interconnection costs under Schedule 11 of the Tariff (P 20).",
+        "ISO-NE's Tariff lets Network Customers net BTMG via the 'Monthly Regional Network Load' definition, which excludes load offset by a Generator Asset behind the same retail meter; the order imports the PJM MW-threshold remedy (P 60).",
+        "ISO-NE relies on the CELT Report/load forecast as its primary planning assumption, and large proposed loads such as data centers are not generally included in the CELT load forecast (P 22).",
+        "The order extends the Interim NITS, Firm Contract Demand, and Non-Firm Contract Demand services from the PJM Co-Location proceeding (compliance accepted April 16, 2026, 195 FERC ¶ 61,030) to ISO-NE, with regional variation as appropriate (PP 57, 59)."
+      ],
+      "deadlines": [
+        "60 days from the date of the order: ISO-NE and the Participating Transmission Owners must either show cause why the Tariff remains just and reasonable or explain what Tariff changes would remedy the identified concerns (Ordering Para (B)).",
+        "30 days from issuance: ISO-NE must submit an informational report (Ordering Para (C)).",
+        "21 days from issuance: any interested person must file a notice of intervention or motion to intervene under Rule 214 (Ordering Para (D)).",
+        "30 days after ISO-NE's and the Participating Transmission Owners' filing: interested entities may respond addressing whether the Tariff remains just and reasonable and, if not, what replacement-rate changes should be implemented (Ordering Para (E))."
+      ]
+    },
+    {
+      "item": "E-12",
+      "rto": "NYISO",
+      "docket": "EL26-69-000",
+      "fercCite": "195 FERC ¶ 61,216",
+      "issued": "June 18, 2026",
+      "pages": 119,
+      "captionVerified": true,
+      "commissioners": [
+        "Laura V. Swett, Chairman",
+        "David Rosner",
+        "Lindsay S. See",
+        "Judy W. Chang",
+        "David LaCerte"
+      ],
+      "respondents": "NYISO + 9 named New York transmission owners",
+      "sections": [
+        "I. Background",
+        "II. NYISO's Existing Processes",
+        "III. Discussion",
+        "III.A. Transmission Service to Eligible Customers on Behalf of Large Loads",
+        "III.B. Cost Shifting Risk Among Transmission Customers",
+        "III.C. Co-Location Arrangements and Load with Behind the Meter Generation",
+        "III.D. Extending New Transmission Services to Eligible Customers Taking Service on Behalf of Flexible Large Loads",
+        "III.E. Interconnection Customers Serving Electrically Proximate Large Load and Co-Located Load",
+        "III.F. Informational Report",
+        "IV. Briefing Questions"
+      ],
+      "directives": [
+        {
+          "topic": "Transmission service application and study process for large loads",
+          "quote": "it lacks provisions that address, with sufficient clarity and consistency, how NYISO and/or the Transmission Owners will timely study (i.e., within 60-90 days of receiving the request) the provision of transmission service to Eligible Customers on behalf of large loads",
+          "para": "P 44"
+        },
+        {
+          "topic": "Definition of large load and readiness requirements to deter speculative requests",
+          "quote": "it lacks a definition of large load, as a new category of load",
+          "para": "P 64"
+        },
+        {
+          "topic": "Evaluation of alternative transmission technologies in study reports",
+          "quote": "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system to accurately account for advanced transmission technologies, in all instances",
+          "para": "P 68"
+        },
+        {
+          "topic": "Cost transparency on Network Upgrade costs to prevent cost shifting",
+          "quote": "robust, accurate, and systematic provision of data on NYISO's website in a single location, and in an easily accessible format that is searchable and allows users to filter the data, regarding the cost for Network Upgrades",
+          "para": "P 73"
+        },
+        {
+          "topic": "Pro forma cost recovery agreement with minimum contribution and credit support",
+          "quote": "NYISO should explain why such a pro forma cost recovery agreement is not necessary to ensure just and reasonable rates, or propose such a pro forma cost recovery agreement",
+          "para": "P 89"
+        },
+        {
+          "topic": "Co-location arrangements and load with behind-the-meter generation tariff provisions",
+          "quote": "it does not contain provisions addressing with sufficient clarity and consistency the rates, terms, and conditions of service that apply to interconnection customers serving co-located load",
+          "para": "P 101"
+        },
+        {
+          "topic": "New transmission services for flexible large loads willing to limit withdrawals",
+          "quote": "an Eligible Customer taking transmission service on behalf of Eligible Load is willing and able to limit its energy withdrawals from the transmission system under certain conditions",
+          "para": "P 101"
+        },
+        {
+          "topic": "Generator interconnection service for generation serving electrically proximate large load",
+          "quote": "it lacks a generator interconnection study process and/or generator interconnection service to reflect an interconnection customer's commitment in an interconnection agreement to limit the generating facility's output",
+          "para": "P 121"
+        }
+      ],
+      "regionSpecific": [
+        "NYISO currently has load interconnection procedures for projects greater than 10 MW connecting at 115 kV or above (or 80 MW or more below 115 kV), but the order finds these procedures are only partially in NYISO's Tariff (P 64); SIS and Transmission Service Study details, deposits, and study assumptions sit in non-Tariff documents (P 32, P 46).",
+        "The order recognizes NYISO's existing wholesale load interconnection process and that Eligible Customers may request optional studies, but finds key portions (transmission owners' Facilities Study for Network Upgrades, the interconnection agreement memorializing final costs) are outside the Tariff, so cost shifting may still occur (P 90).",
+        "NYISO already defines Behind-the-Meter Net Generation Resource (BTM:NG Resource) and Host Load in its tariff; the Commission relies on the existing definitions but ties new co-location/behind-the-meter directives to them, noting NYISO's current model is premised on a firm Host Load that does not participate in wholesale markets (P 96-97, P 36).",
+        "NYISO is already considering co-location reforms in its stakeholder process but does not expect to file co-located-load tariff revisions until 2027, which the Commission cites as a reason the section 206 proceeding is needed to ensure timely, comprehensive reform (P 36-37).",
+        "Unlike SPP, the Commission does not direct NYISO to adopt SPP's HILLGA process or mirror SPP's tariff, but finds NYISO's Tariff may still be unjust and unreasonable without any uniquely tailored interconnection study process for generation serving electrically proximate or large co-located load (P 123)."
+      ],
+      "deadlines": [
+        "60 days from the date of the order: NYISO and the Transmission Owners must show cause why the Tariff remains just and reasonable, or explain what changes would remedy the identified concerns (Ordering Paragraph (B), P 38).",
+        "30 days from issuance: NYISO must submit an informational report on resource adequacy / generation availability and stakeholder proposals to serve new large loads (Ordering Paragraph (C); P 129, P 39).",
+        "21 days from issuance: deadline to file a notice of intervention or motion to intervene under Rule 214 (Ordering Paragraph (D)).",
+        "30 days after NYISO's and the Transmission Owners' filing: interested entities may respond on whether the Tariff remains just and reasonable and, if not, what replacement-rate changes should be made (Ordering Paragraph (E); P 40).",
+        "45 days from issuance: deadline to submit any request for full or partial abeyance (up to 90 days) of the proceeding, including the response deadline (P 42)."
+      ]
+    }
+  ]
+}
