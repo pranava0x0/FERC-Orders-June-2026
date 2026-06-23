@@ -28,7 +28,7 @@
       if (!s) return "";
       // Prefer the fixed archive snapshot for FERC pages (the live ferc.gov page is Cloudflare-gated / 403).
       var href = s.archiveUrl || s.url;
-      var titleBits = s.label + " — " + s.org + (s.note ? " · " + s.note : "");
+      var titleBits = s.label + ", " + s.org + (s.note ? " · " + s.note : "");
       if (s.archiveUrl) titleBits += " · Opens the archived snapshot; live page: " + s.url;
       var title = esc(titleBits);
       return '<a class="src-chip" data-tier="' + s.tier + '" href="' + esc(href) + '" target="_blank" rel="noopener noreferrer" title="' + title + '">' + esc(shortName(id)) + "</a>";
@@ -58,15 +58,15 @@
     }).join("") + "</div>";
 
     var top = '<div class="cards cols-3">' + D.toplines.map(function (c) {
-      return '<div class="card analysis"><div class="tier-flag t-analysis">Analysis — synthesis</div>' +
+      return '<div class="card analysis"><div class="tier-flag t-analysis">Analysis: synthesis</div>' +
         "<h3>" + esc(c.h) + "</h3>" + paras(c.body) + srcChips(c.src) + "</div>";
     }).join("") + "</div>";
 
-    return head("Timeline — DOE §403 directive to FERC §206 orders",
+    return head("Timeline: DOE §403 directive to FERC §206 orders",
       "How an Oct. 2025 DOE directive became six near-simultaneous show cause orders on a 30/60-day clock.") +
       tl +
-      head("Toplines — the strategic shift",
-      "Why tailored §206 show cause orders instead of a generic NOPR — and what it signals.") +
+      head("Toplines: the strategic shift",
+      "Why tailored §206 show cause orders instead of a generic NOPR, and what it signals.") +
       top;
   }
 
@@ -78,7 +78,7 @@
         '<span class="cat-title">' + esc(c.title) + "</span>" +
         '<span class="cat-chev">›</span></summary>' +
         '<div class="cat-body">' +
-        '<div class="cat-ferc"><span class="label">FERC — mandate text</span>“' + esc(c.ferc) + "”</div>" +
+        '<div class="cat-ferc"><span class="label">FERC mandate text</span>“' + esc(c.ferc) + "”</div>" +
         '<p class="cat-detail">' + esc(c.detail) + "</p>" +
         '<div class="cat-doe"><span class="label">Underlying DOE ANOPR principles</span><ul>' +
         c.doe.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></div>" +
@@ -88,7 +88,7 @@
     var docs = '<div class="dockets">' + D.dockets.map(function (d) {
       var so = D.SOURCES[d.url];
       var orderLink = '<a class="order-link" data-tier="order" target="_blank" rel="noopener noreferrer" href="' +
-        esc(so.url) + '" title="' + esc(so.label + " — downloaded & OCR'd 2026-06-22") + '">Order PDF ↗</a>';
+        esc(so.url) + '" title="' + esc(so.label + ", downloaded & OCR'd 2026-06-22") + '">Order PDF ↗</a>';
       var directives = '<div class="dir"><span class="label">Directs the respondent to address</span>' +
         d.dir.map(function (x) {
           var cite;
@@ -99,7 +99,7 @@
             // browser's PDF viewer; it degrades gracefully if the file downloads instead.
             cite = '<a class="dir-para mono" href="' + esc(so.url) + "#page=" + x.pg +
               '" target="_blank" rel="noopener noreferrer" aria-label="Open the ' + esc(d.item) +
-              " order PDF at page " + x.pg + '" title="' + esc(d.item) + " order PDF — opens to p. " + x.pg +
+              " order PDF at page " + x.pg + '" title="' + esc(d.item) + " order PDF, opens to p. " + x.pg +
               " (the page carrying this quoted directive)\">" + esc(x.p) +
               '<span class="ext" aria-hidden="true">↗</span></a>';
           } else {
@@ -144,7 +144,7 @@
 
     return head("The five reform categories",
       "Each tailored order tees up the same five categories. FERC's mandate text is quoted; the underlying DOE ANOPR principles show the mechanics.") + cats +
-      head("The six dockets — E-7 through E-12",
+      head("The six dockets: E-7 through E-12",
       "Same §206 spine, region-specific application. Directives and findings below are quoted from each order PDF (downloaded & OCR'd, captions verified) with paragraph cites; the order's FERC reporter cite, length, and named respondents head each card.") + docs +
       head("Jurisdictional & contractual protections",
       "Where FERC draws the federal/state line, and how it shields existing deals.") + jur +
@@ -169,7 +169,7 @@
     var outlets = '<div class="section-head"><h2>Where it’s being covered</h2><p class="lede">Each links to the cited source.</p></div><div class="outlets">' +
       D.media.outlets.map(function (id) {
         var s = D.SOURCES[id]; if (!s) return "";
-        return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + " — " + s.org) + '">' + esc(shortName(id)) + "</a>";
+        return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
       }).join("") + "</div>";
 
     return head("Industry reception",
@@ -183,21 +183,21 @@
       '<span><i style="background:#0b2545"></i> FERC primary (issuance text)</span>' +
       '<span><i style="background:#5b3a8a"></i> DOE primary (§403 letter)</span>' +
       '<span><i style="background:#1a4480"></i> Secondary analysis</span>' +
-      '<span><i style="background:#6b7280;border:1px dashed #6b7280"></i> Order PDF — downloaded &amp; OCR’d</span></div>';
+      '<span><i style="background:#6b7280;border:1px dashed #6b7280"></i> Order PDF, downloaded &amp; OCR’d</span></div>';
 
     var srcList = "<ul>" + Object.keys(D.SOURCES).map(function (id) {
       var s = D.SOURCES[id];
       return "<li><strong>" + esc(shortName(id)) + ":</strong> " +
-        '<a href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.label) + "</a> — " +
+        '<a href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.label) + "</a>, " +
         esc(s.org) + " · <em>" + esc(s.captured) + "</em>" + (s.note ? " · " + esc(s.note) : "") + "</li>";
     }).join("") + "</ul>";
 
     document.getElementById("provenance-body").innerHTML =
       "<p>Three evidence tiers are kept visibly distinct so a confident-sounding synthesis never reads as quoted order text:</p>" + legend +
       "<h4>What is primary</h4>" +
-      "<p>The <strong>DOE §403 letter</strong> (16 pp.) was downloaded from energy.gov and text-extracted directly. FERC's <strong>news release, fact sheet, meeting summaries, and the RM26-4 docket page</strong> are official FERC text, posted at the June 18, 2026 open meeting and live on ferc.gov; quoted here against Internet Archive snapshots dated June 18–20, 2026 so the citations stay fixed to a specific capture even as the live pages change.</p>" +
-      "<h4>The six order PDFs — retrieved &amp; OCR’d</h4>" +
-      "<p>Automated clients (curl, server-side fetch, the PDF-fetch tool, the Wayback crawler) are all blocked by Cloudflare on <span class='mono'>ferc.gov/media/e-7…e-12</span>. The six orders were therefore opened in a real browser that passes the challenge, downloaded, and text-extracted (OCR) on 2026-06-22. Each one's <strong>page-1 caption was verified</strong> — FERC reporter cite, respondent RTO, docket number, the title “Order Instituting Proceeding Under Section 206,” and the issued date — before any of its text was used. The per-order directives in Tab 2 are quoted from those PDFs with paragraph cites (e.g. “P 77”); the structured extract is committed at <span class='mono'>sources/orders-extract.json</span>. Each cite is a link that opens the order PDF to the page carrying that quoted text. FERC's published PDFs drop paragraph numbers from their text layer, so a link is anchored to the page where the quoted language appears, not to a paragraph index — a test checks every link lands on a page that carries its quote. All six orders are 195 FERC ¶ 61,211–61,216, 92–119 pp, issued June 18, 2026.</p>" +
+      "<p>The <strong>DOE §403 letter</strong> (16 pp.) was downloaded from energy.gov and text-extracted directly. FERC's <strong>news release, fact sheet, meeting summaries, and the RM26-4 docket page</strong> are official FERC text, posted at the June 18, 2026 open meeting and live on ferc.gov; quoted here against Internet Archive snapshots dated June 18 to 20, 2026 so the citations stay fixed to a specific capture even as the live pages change.</p>" +
+      "<h4>The six order PDFs, retrieved &amp; OCR’d</h4>" +
+      "<p>Automated clients (curl, server-side fetch, the PDF-fetch tool, the Wayback crawler) are all blocked by Cloudflare on <span class='mono'>ferc.gov/media/e-7…e-12</span>. The six orders were therefore opened in a real browser that passes the challenge, downloaded, and text-extracted (OCR) on 2026-06-22. Each one's <strong>page-1 caption was verified</strong> (FERC reporter cite, respondent RTO, docket number, the title “Order Instituting Proceeding Under Section 206,” and the issued date) before any of its text was used. The per-order directives in Tab 2 are quoted from those PDFs with paragraph cites (e.g. “P 77”); the structured extract is committed at <span class='mono'>sources/orders-extract.json</span>. Each cite is a link that opens the order PDF to the page carrying that quoted text. FERC's published PDFs drop paragraph numbers from their text layer, so a link is anchored to the page where the quoted language appears, not to a paragraph index. A test checks every link lands on a page that carries its quote. All six orders are 195 FERC ¶ 61,211 to 61,216, 92 to 119 pp, issued June 18, 2026.</p>" +
       "<h4>Derived dates</h4>" +
       "<p>The 30-day and 60-day periods are stated by FERC. The specific calendar due-dates are derived from the June 18, 2026 issuance (business-day-adjusted figures attributed to the National Law Review analysis).</p>" +
       "<h4>All sources</h4>" + srcList +
