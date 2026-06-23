@@ -48,6 +48,40 @@ const ORDER_PDF_BY_ITEM = {
   "E-12": ["sources", "pdf", "orders", "e-12-nyiso-el26-69-000.pdf"],
 };
 
+const ORDER_TXT_BY_ITEM = {
+  "E-7": ["sources", "text", "orders", "e-7-pjm-el26-67-000.txt"],
+  "E-8": ["sources", "text", "orders", "e-8-miso-el26-70-000.txt"],
+  "E-9": ["sources", "text", "orders", "e-9-spp-el26-68-000.txt"],
+  "E-10": ["sources", "text", "orders", "e-10-caiso-el26-71-000.txt"],
+  "E-11": ["sources", "text", "orders", "e-11-isone-el26-72-000.txt"],
+  "E-12": ["sources", "text", "orders", "e-12-nyiso-el26-69-000.txt"],
+};
+
+// Split an extracted order into a Map of physical page number -> page text, using the
+// `--- PAGE N ---` markers the PyMuPDF extraction writes. The physical page number is what
+// a `#page=N` PDF link jumps to.
+function loadOrderPages(item) {
+  const raw = textFile(...ORDER_TXT_BY_ITEM[item]);
+  const pages = new Map();
+  const parts = raw.split(/--- PAGE (\d+) ---/);
+  for (let i = 1; i < parts.length; i += 2) {
+    pages.set(Number(parts[i]), parts[i + 1] ?? "");
+  }
+  return pages;
+}
+
+// The cited page "carries" the directive when the longest segment of the displayed quote
+// appears there (verbatim, or with OCR-level slack measured by longest common substring).
+function pageCarriesQuote(quote, pageText) {
+  const longest = quoteSegments(quote).sort((a, b) => b.length - a.length)[0] ?? looseText(quote);
+  const normalizedPage = looseText(pageText);
+  if (normalizedPage.includes(longest)) return true;
+  // Cap the bar at 60 contiguous chars: inline footnote markers (e.g. "technologies154 as")
+  // break a long verbatim run, and 60 specific legal-text chars already prove the page carries it.
+  const threshold = Math.min(longest.length, 60, Math.max(24, Math.floor(longest.length * 0.6)));
+  return longestCommonSubstringLength(longest, normalizedPage) >= threshold;
+}
+
 function looseText(value) {
   return String(value)
     .replace(/[\u2018\u2019]/g, "'")
@@ -297,6 +331,29 @@ test("displayed region-specific order claims are supported by extracted PDF text
     ];
     for (const finding of docket.reg) {
       assertAnySourceSupports(`${docket.item} regional finding`, finding, extractedOrderClaims);
+    }
+  }
+});
+
+test("each directive citation links to a PDF page that carries its quoted text", () => {
+  for (const docket of D.dockets) {
+    const pages = loadOrderPages(docket.item);
+    const maxPage = Math.max(...pages.keys());
+    assert.equal(maxPage, docket.pages, `${docket.item} extracted page count must match displayed length`);
+
+    for (const directive of docket.dir) {
+      assert.ok(
+        Number.isInteger(directive.pg),
+        `${docket.item} directive "${directive.p}" is missing an integer pg (PDF page) for its citation link`,
+      );
+      assert.ok(
+        directive.pg >= 1 && directive.pg <= maxPage,
+        `${docket.item} directive "${directive.p}" links to page ${directive.pg}, outside 1..${maxPage}`,
+      );
+      assert.ok(
+        pageCarriesQuote(directive.q, pages.get(directive.pg) ?? ""),
+        `${docket.item} "${directive.p}" links to page ${directive.pg}, which does not carry the quote: ${directive.q}`,
+      );
     }
   }
 });
