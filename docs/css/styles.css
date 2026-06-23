@@ -235,8 +235,12 @@ a:hover { color: var(--accent-ink); }
 .docket-id { min-width: 0; }
 .docket-main .rto { font-weight: 700; font-size: 17px; color: var(--masthead); }
 .docket-main .rto-full { font-size: 12.5px; color: var(--text-muted); }
+.order-links { flex: none; display: inline-flex; align-items: center; gap: 10px; }
 .order-link { flex: none; font-size: 11.5px; font-weight: 700; text-decoration: none; color: #fff; background: var(--accent); border-radius: 5px; padding: 4px 11px; white-space: nowrap; }
 .order-link:hover { background: var(--accent-ink); color: #fff; }
+.order-src { flex: none; font-size: 10.5px; font-weight: 600; text-decoration: none; color: var(--accent); white-space: nowrap; border-bottom: 1px dotted var(--accent); }
+.order-src:hover { color: var(--accent-ink); border-bottom-style: solid; }
+.order-src:focus-visible, .order-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 .docket-cite { font-size: 11px; color: var(--accent-ink); margin-top: 5px; }
 .docket-tags { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
 .docket-status { display: inline-block; font-size: 11px; font-weight: 700; color: var(--status-reform); background: #f6efdf; border: 1px solid #e6d8b0; border-radius: 999px; padding: 2px 9px; }

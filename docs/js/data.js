@@ -218,7 +218,7 @@ window.FERC_DATA = (function () {
   // `reg` = region-specific findings stated in the order.
   const dockets = [
     {
-      item: "E-7", rto: "PJM", rtoFull: "PJM Interconnection, L.L.C.", docket: "EL26-67-000", url: "e7",
+      item: "E-7", rto: "PJM", rtoFull: "PJM Interconnection, L.L.C.", docket: "EL26-67-000", url: "e7", pdf: "orders/e-7-pjm-el26-67-000.pdf",
       region: "Mid-Atlantic / 13 states + DC", cite: "195 FERC ¶ 61,211", pages: 114,
       respondents: "PJM + 45 named transmission owners",
       status: "Co-location rules already in place",
@@ -237,7 +237,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
-      item: "E-8", rto: "MISO", rtoFull: "Midcontinent Independent System Operator, Inc.", docket: "EL26-70-000", url: "e8",
+      item: "E-8", rto: "MISO", rtoFull: "Midcontinent Independent System Operator, Inc.", docket: "EL26-70-000", url: "e8", pdf: "orders/e-8-miso-el26-70-000.pdf",
       region: "15 states, Midwest + South", cite: "195 FERC ¶ 61,212", pages: 115,
       respondents: "MISO + ~31 named transmission owners",
       status: "Early-stage large-load rules",
@@ -256,7 +256,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
-      item: "E-9", rto: "SPP", rtoFull: "Southwest Power Pool, Inc.", docket: "EL26-68-000", url: "e9",
+      item: "E-9", rto: "SPP", rtoFull: "Southwest Power Pool, Inc.", docket: "EL26-68-000", url: "e9", pdf: "orders/e-9-spp-el26-68-000.pdf",
       region: "Central U.S., 14+ states", cite: "195 FERC ¶ 61,213", pages: 92,
       respondents: "SPP + 23 named transmission owners",
       status: "Most mature: HILL / HILLGA",
@@ -275,7 +275,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
-      item: "E-10", rto: "CAISO", rtoFull: "California Independent System Operator Corp.", docket: "EL26-71-000", url: "e10",
+      item: "E-10", rto: "CAISO", rtoFull: "California Independent System Operator Corp.", docket: "EL26-71-000", url: "e10", pdf: "orders/e-10-caiso-el26-71-000.pdf",
       region: "California (+ WEIM footprint)", cite: "195 FERC ¶ 61,214", pages: 118,
       respondents: "CAISO + 24 Participating Transmission Owners",
       status: "No Order No. 888 service",
@@ -294,7 +294,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
-      item: "E-11", rto: "ISO-NE", rtoFull: "ISO New England Inc.", docket: "EL26-72-000", url: "e11",
+      item: "E-11", rto: "ISO-NE", rtoFull: "ISO New England Inc.", docket: "EL26-72-000", url: "e11", pdf: "orders/e-11-isone-el26-72-000.pdf",
       region: "Six New England states", cite: "195 FERC ¶ 61,215", pages: 115,
       respondents: "ISO-NE + 16 Participating Transmission Owners",
       status: "Transmission-constrained grid",
@@ -313,7 +313,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
-      item: "E-12", rto: "NYISO", rtoFull: "New York Independent System Operator, Inc.", docket: "EL26-69-000", url: "e12",
+      item: "E-12", rto: "NYISO", rtoFull: "New York Independent System Operator, Inc.", docket: "EL26-69-000", url: "e12", pdf: "orders/e-12-nyiso-el26-69-000.pdf",
       region: "New York State", cite: "195 FERC ¶ 61,216", pages: 119,
       respondents: "NYISO + 9 named New York transmission owners",
       status: "Largely outside the tariff today",

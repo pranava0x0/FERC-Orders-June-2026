@@ -39,13 +39,15 @@ const ORDER_EXTRACT = jsonFile("sources", "orders-extract.json");
 const MANIFEST_BY_ID = new Map(MANIFEST.sources.map((source) => [source.id, source]));
 const EXTRACT_BY_ITEM = new Map(ORDER_EXTRACT.orders.map((order) => [order.item, order]));
 
+// The six order PDFs are committed under docs/orders/ so GitHub Pages serves them and the
+// page-citation links open inline (same-origin); each docket's `pdf` field is that served path.
 const ORDER_PDF_BY_ITEM = {
-  "E-7": ["sources", "pdf", "orders", "e-7-pjm-el26-67-000.pdf"],
-  "E-8": ["sources", "pdf", "orders", "e-8-miso-el26-70-000.pdf"],
-  "E-9": ["sources", "pdf", "orders", "e-9-spp-el26-68-000.pdf"],
-  "E-10": ["sources", "pdf", "orders", "e-10-caiso-el26-71-000.pdf"],
-  "E-11": ["sources", "pdf", "orders", "e-11-isone-el26-72-000.pdf"],
-  "E-12": ["sources", "pdf", "orders", "e-12-nyiso-el26-69-000.pdf"],
+  "E-7": ["docs", "orders", "e-7-pjm-el26-67-000.pdf"],
+  "E-8": ["docs", "orders", "e-8-miso-el26-70-000.pdf"],
+  "E-9": ["docs", "orders", "e-9-spp-el26-68-000.pdf"],
+  "E-10": ["docs", "orders", "e-10-caiso-el26-71-000.pdf"],
+  "E-11": ["docs", "orders", "e-11-isone-el26-72-000.pdf"],
+  "E-12": ["docs", "orders", "e-12-nyiso-el26-69-000.pdf"],
 };
 
 const ORDER_TXT_BY_ITEM = {
@@ -289,6 +291,10 @@ test("source PDFs and extracted order text exist for every displayed order", () 
     const pdfPath = rootPath(...pdfParts);
     assert.ok(existsSync(pdfPath), `${docket.item} PDF must be committed`);
     assert.ok(statSync(pdfPath).size > 100_000, `${docket.item} PDF is unexpectedly small`);
+
+    // The docket's `pdf` field is the page-served path; it must match the committed file under docs/.
+    assert.equal(docket.pdf, pdfParts.slice(1).join("/"), `${docket.item} pdf path must point at the served copy`);
+    assert.ok(existsSync(rootPath("docs", docket.pdf)), `${docket.item} served PDF (docs/${docket.pdf}) must exist`);
   }
 });
 
