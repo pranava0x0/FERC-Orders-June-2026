@@ -8,6 +8,15 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-06-22 · efficiency · Saving the six orders' full text via LLM subagents failed and wasted
+  ~974K tokens.** Root cause: **wrong tool** — a `save-order-fulltext` workflow had 6 Opus agents read
+  ~100-page PDFs page-by-page (with truncation re-reads); they hit the session token limit and wrote
+  nothing (412 tool calls, 0 output). **Fix:** the PDFs have an embedded text layer, so extraction is
+  deterministic — re-did it with a ~30-line PyMuPDF (`fitz`) script in ~2 s for 0 tokens, producing
+  `sources/text/orders/*.txt` (1.73M chars). A regression test confirms all 53 extracted directive
+  quotes appear verbatim in those files. Lesson in `agent-runs.md`: never LLM-transcribe a text-layer
+  PDF — use a library; spend tokens only on judgement.
+
 - **2026-06-22 · source retrieval · The six order PDFs (`ferc.gov/media/e-7…e-12`, EL26-67…72)
   were not machine-retrievable.** Root cause: **source-side** — ferc.gov sits behind a Cloudflare
   "Just a moment" JS challenge that returns HTTP 403 to curl, WebFetch, the PDF-fetch tool, and the

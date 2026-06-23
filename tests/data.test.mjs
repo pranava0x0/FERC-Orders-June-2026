@@ -179,3 +179,32 @@ test("archived FERC sources carry a citationUrl chips can prefer", () => {
     assert.match(D.SOURCES[id].archiveUrl || "", /web\.archive\.org/, `${id} has an archive snapshot URL`);
   });
 });
+
+test("every extracted directive quote appears verbatim in the saved full order text", () => {
+  // The strongest audit guard: each quote in orders-extract.json must be present in the locally
+  // extracted full text (sources/text/orders/*.txt) — independent of the agent that first read it.
+  const STEM = {
+    "E-7": "e-7-pjm-el26-67-000", "E-8": "e-8-miso-el26-70-000", "E-9": "e-9-spp-el26-68-000",
+    "E-10": "e-10-caiso-el26-71-000", "E-11": "e-11-isone-el26-72-000", "E-12": "e-12-nyiso-el26-69-000",
+  };
+  const normTxt = (s) => s
+    .replace(/[’‘]/g, "'").replace(/[“”]/g, '"')
+    .replace(/([A-Za-z])\d{1,3}\b/g, "$1") // strip inline OCR footnote markers like "technologies154"
+    .replace(/\s+/g, " ").toLowerCase().trim();
+  let hits = 0, total = 0;
+  for (const o of EXTRACT) {
+    const file = join(here, "..", "sources", "text", "orders", STEM[o.item] + ".txt");
+    const txt = normTxt(readFileSync(file, "utf8"));
+    for (const d of o.directives) {
+      for (const seg of d.quote.split(/…|\.\.\./)) {
+        const s = normTxt(seg);
+        if (s.length < 12) continue;
+        total++;
+        if (txt.includes(s)) hits++;
+        else assert.fail(`${o.item} ${d.para}: quote segment not found verbatim in ${STEM[o.item]}.txt — "${s.slice(0, 60)}…"`);
+      }
+    }
+  }
+  assert.ok(total >= 40, `enough quote segments checked (${total})`);
+  assert.equal(hits, total, `all ${total} directive-quote segments are verbatim in the full text`);
+});
