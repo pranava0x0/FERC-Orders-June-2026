@@ -6,6 +6,9 @@
 - **done (2026-06-23)** — Page-citation links: each Tab 2 directive cite opens the committed order PDF
   (`docs/orders/`) at the page carrying its quoted text. Five-tab restructure (Overview/Timeline/
   Reforms/Dockets/Discourse) with a sticky tablist. Balanced commentary section in Discourse.
+- **done (2026-06-23)** — Each directive cite now offers both options on click: a **PDF** link (the
+  committed copy, opens inline to the page) and a **gov** link (the official ferc.gov source at the same
+  page). Wanted both PDF and URL paths per citation.
 - **high** — Summarize the RM26-4 public comments (staff reviewed 3,500+ pp). Scrape the eLibrary
   docket sheet for RM26-4-000 (browser bridge past Cloudflare), download each comment PDF, extract
   with fitz, then classify and summarize by stakeholder and position per reform category. Surface as
