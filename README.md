@@ -42,14 +42,15 @@ The site is fully static; no Actions required.
 
 - **DOE §403 letter** (16 pp.) — downloaded and OCR/text-extracted from the primary PDF on energy.gov.
 - **FERC press release, fact sheet, meeting summaries, and the RM26-4 docket page** — official FERC
-  text, captured from Internet Archive snapshots dated June 18–20, 2026 (the live FERC pages sit
-  behind a Cloudflare challenge that blocks automated retrieval).
-- **The six individual order PDFs** (`ferc.gov/media/e-7…e-12`) are **not** machine-retrievable
-  (same Cloudflare gate, and not yet in the Wayback Machine). Per-order specifics are therefore drawn
-  from FERC's own cross-order materials (press release + fact sheet, which enumerate the regional
-  distinctions verbatim), the DOE ANOPR principles, and named legal/industry analyses — **not** from
-  the order text itself. Every such item is tagged `Analysis` and links to the underlying order PDF
-  so a reader can verify against the primary source.
+  text, quoted against Internet Archive snapshots dated June 18–20, 2026 for stable citation (the live
+  FERC pages are posted but sit behind a Cloudflare challenge that blocks automated retrieval).
+- **The six order PDFs** (`ferc.gov/media/e-7…e-12`, **195 FERC ¶ 61,211–61,216**, 92–119 pp each) —
+  downloaded through a real browser that passes Cloudflare, then OCR'd. Each one's **page-1 caption was
+  verified** (FERC cite, respondent RTO, docket, "Order Instituting Proceeding Under Section 206,"
+  issued date) before its text was used. The per-order directives in Tab 2 are quoted from these PDFs
+  with paragraph cites; the structured extract is committed at
+  [`sources/orders-extract.json`](sources/orders-extract.json). The PDFs themselves live in
+  `sources/pdf/orders/` (gitignored — large binaries; re-downloadable from the linked URLs).
 
 Capture date: **2026-06-22**. Sources and extracted text live in [`sources/`](sources/).
 

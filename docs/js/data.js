@@ -49,13 +49,13 @@ window.FERC_DATA = (function () {
       captured: "2026-06-19 (Internet Archive)",
       note: "DOE Oct. 23, 2025 §403 directive; >20 MW definition; four summarized ANOPR questions; comment period extended (page last updated Jan 13, 2026).",
     },
-    // The six order PDFs — linked for reader verification; NOT machine-retrievable (see Methodology).
-    e7: { label: "Order E-7 (PJM) — Docket EL26-67-000", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-7-el26-67-000", captured: "—", note: "Cloudflare-gated; not retrieved." },
-    e8: { label: "Order E-8 (MISO) — Docket EL26-70-000", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-8-el26-70-000", captured: "—", note: "Cloudflare-gated; not retrieved." },
-    e9: { label: "Order E-9 (SPP) — Docket EL26-68-000", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-9-el26-68-000", captured: "—", note: "Cloudflare-gated; not retrieved." },
-    e10: { label: "Order E-10 (CAISO) — Docket EL26-71-000", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-10-el26-71-000", captured: "—", note: "Cloudflare-gated; not retrieved." },
-    e11: { label: "Order E-11 (ISO-NE) — Docket EL26-72-000", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e11-el26-72-000", captured: "—", note: "Cloudflare-gated; not retrieved." },
-    e12: { label: "Order E-12 (NYISO) — Docket EL26-69-000", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e12-el26-69-000", captured: "—", note: "Cloudflare-gated; not retrieved." },
+    // The six order PDFs — downloaded via browser (past Cloudflare) and OCR'd; page-1 captions verified.
+    e7: { label: "Order E-7 (PJM) — EL26-67-000 · 195 FERC ¶ 61,211", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-7-el26-67-000", captured: "2026-06-22", note: "Downloaded & OCR'd — 114 pp; §206 order, issued June 18, 2026; caption verified." },
+    e8: { label: "Order E-8 (MISO) — EL26-70-000 · 195 FERC ¶ 61,212", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-8-el26-70-000", captured: "2026-06-22", note: "Downloaded & OCR'd — 115 pp; §206 order, issued June 18, 2026; caption verified." },
+    e9: { label: "Order E-9 (SPP) — EL26-68-000 · 195 FERC ¶ 61,213", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-9-el26-68-000", captured: "2026-06-22", note: "Downloaded & OCR'd — 92 pp; §206 order, issued June 18, 2026; caption verified." },
+    e10: { label: "Order E-10 (CAISO) — EL26-71-000 · 195 FERC ¶ 61,214", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-10-el26-71-000", captured: "2026-06-22", note: "Downloaded & OCR'd — 118 pp; §206 order, issued June 18, 2026; caption verified." },
+    e11: { label: "Order E-11 (ISO-NE) — EL26-72-000 · 195 FERC ¶ 61,215", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e11-el26-72-000", captured: "2026-06-22", note: "Downloaded & OCR'd — 115 pp; §206 order, issued June 18, 2026; caption verified." },
+    e12: { label: "Order E-12 (NYISO) — EL26-69-000 · 195 FERC ¶ 61,216", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e12-el26-69-000", captured: "2026-06-22", note: "Downloaded & OCR'd — 119 pp; §206 order, issued June 18, 2026; caption verified." },
     akin: { label: "“FERC Issues Landmark Show Cause Orders on Large Load Interconnection”", org: "Akin Gump (Speaking Energy)", tier: "secondary", url: "https://www.akingump.com/en/insights/blogs/speaking-energy/ferc-issues-landmark-show-cause-orders-on-large-load-interconnection", captured: "2026-06", note: "Law-firm client alert." },
     sheppard: { label: "“FERC Orders Six RTOs to Address Specific Reforms… Speed to Power”", org: "Sheppard Mullin", tier: "secondary", url: "https://www.sheppard.com/insights/blogs/ferc-orders-six-rtos-to-address-specific-reforms-to-effectuate-speed-to-power-that-will-facilitate-the-integration-of-large-loads", captured: "2026-06", note: "Law-firm client alert." },
     whitecase: { label: "“PJM proposes to carve out new services for co-located data centers”", org: "White & Case", tier: "secondary", url: "https://www.whitecase.com/insight-alert/pjm-proposes-carve-out-new-services-co-located-data-centers", captured: "2026", note: "Co-location context (PJM EL25-49 line)." },
@@ -76,6 +76,8 @@ window.FERC_DATA = (function () {
     items: "Items E-7 – E-12 · Dockets EL26-67-000 – EL26-72-000",
     capture: "2026-06-22",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
+    citeRange: "195 FERC ¶ 61,211 – 61,216",
+    commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
   };
 
   const kpis = [
@@ -108,16 +110,16 @@ window.FERC_DATA = (function () {
       src: ["fercRM264", "fercPR"],
     },
     {
-      date: "Dec 2025", iso: "2025-12-15", kind: "milestone",
-      title: "Track record builds: PJM co-location order + SPP HILL approval",
-      body: "FERC directs PJM to adopt transparent tariff rules for loads co-located with generation (the December 2025 order, addressed further at this meeting’s Item E-2, Docket EL25-49), and approves SPP’s High Impact Large Load (HILL) initiative establishing new study processes for large loads and electrically proximate generation. These become the templates the show cause orders build on.",
-      src: ["fercPR", "fercFS", "fercSum"],
+      date: "Dec 2025 – Jun 2026", iso: "2025-12-18", kind: "milestone",
+      title: "Track record builds: PJM co-location order + SPP HILL/HILLGA",
+      body: "The show cause orders build on a live record. FERC’s PJM Co-Location Order (193 FERC ¶ 61,217, Dec. 18, 2025; rehearing 195 FERC ¶ 61,209; compliance accepted Apr. 16, 2026, 195 FERC ¶ 61,030) created three new services — Interim NITS, Firm and Non-Firm Contract Demand — that the §206 orders now extend to the other regions. SPP’s HILL study process, its HILLGA generation assessment (accepted Jan. 14, 2026, 194 FERC ¶ 61,031), and its Conditional HILL Service (accepted June 5, 2026) become the working template for categories 1 and 5.",
+      src: ["e7", "e9", "fercPR"],
     },
     {
       date: "Jun 18, 2026", iso: "2026-06-18", kind: "ferc",
       title: "FERC issues six tailored § 206 show cause orders (E-7 – E-12)",
-      body: "At its open meeting, FERC unanimously issues tailored show cause orders under FPA § 206 to all six RTOs/ISOs and their transmission owners — PJM (E-7/EL26-67-000), MISO (E-8/EL26-70-000), SPP (E-9/EL26-68-000), CAISO (E-10/EL26-71-000), ISO-NE (E-11/EL26-72-000), NYISO (E-12/EL26-69-000) — directing each to defend or revise its large-load tariff. Each order tees up the same five reform categories but respects region-specific market design.",
-      src: ["fercPR", "fercFS", "fercSum"],
+      body: "At its open meeting, FERC unanimously issues six tailored §206 show cause orders — PJM (195 FERC ¶ 61,211), MISO (¶ 61,212), SPP (¶ 61,213), CAISO (¶ 61,214), ISO-NE (¶ 61,215), NYISO (¶ 61,216), 92–119 pages each, Commissioners Swett, Rosner, See, Chang, LaCerte. Each ‘Order Instituting Proceeding Under Section 206’ runs the same spine — III.A transmission service for large loads · III.B cost-shifting risk · III.C co-location & behind-the-meter generation · III.D services for flexible loads · III.E interconnection for electrically proximate / co-located load · III.F informational report · IV briefing questions — applied to each region’s own tariff.",
+      src: ["e7", "e8", "e9", "e10", "e11", "e12"],
     },
     {
       date: "≈ Jul 18, 2026", iso: "2026-07-18", kind: "deadline",
@@ -128,8 +130,8 @@ window.FERC_DATA = (function () {
     {
       date: "≈ Aug 17, 2026", iso: "2026-08-17", kind: "deadline",
       title: "60-day justification or tariff filing due",
-      body: "Within 60 days, each grid operator and its TOs must either justify why its current tariff stays just and reasonable absent clear, consistent large-load provisions, or file § 206 tariff changes addressing the five categories. One commentator notes a ~45-day window to request abeyance and a ~90-day cap on RTO/ISO-led pause periods to develop tariff language. (Calendar dates derived from issuance; see analyses.)",
-      src: ["fercFS", "fercPR", "natlaw", "substack"],
+      body: "Within 60 days, each grid operator and its TOs must either show cause why its current tariff stays just and reasonable absent clear, consistent large-load provisions, or explain the §206 tariff changes that would remedy the concerns (Ordering Para (B)). The orders also set a 21-day intervention deadline (Rule 214), a 30-day window for responses after the operators file, and — in the NYISO order — a 45-day deadline to request abeyance of up to 90 days (NYISO P 42). The refund effective date is the order’s Federal Register publication date.",
+      src: ["e7", "e12", "natlaw"],
     },
   ];
 
@@ -207,59 +209,122 @@ window.FERC_DATA = (function () {
     },
   ];
 
+  // Per-order content below is quoted/cited directly from the OCR'd order PDFs (caption-verified).
+  // `cite` = official FERC reporter cite; `pages` = order length; `dir` = quoted directives (p = paragraph);
+  // `reg` = region-specific findings stated in the order.
   const dockets = [
     {
       item: "E-7", rto: "PJM", rtoFull: "PJM Interconnection, L.L.C.", docket: "EL26-67-000", url: "e7",
-      region: "Mid-Atlantic / 13 states + DC",
-      status: "Justify or reform (60d) · report (30d)",
-      notes: [
-        { t: "Largest footprint and the epicenter of data-center growth (Northern Virginia ‘Data Center Alley’). FERC handles PJM’s co-located loads in a separate proceeding — this morning’s Item E-2 (Docket EL25-49) — so the show cause order works alongside that co-location track.", src: ["fercFS", "fercSum"] },
-        { t: "Builds on the December 2025 order directing PJM to adopt transparent tariff rules for loads co-located with generation.", src: ["fercPR", "whitecase"] },
+      region: "Mid-Atlantic / 13 states + DC", cite: "195 FERC ¶ 61,211", pages: 114,
+      respondents: "PJM + 45 named transmission owners",
+      status: "Builds on the PJM co-location record",
+      dir: [
+        { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 6(a)" },
+        { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies … to accurately account for advanced transmission technologies", p: "P 70" },
+        { t: "Cost-recovery agreement", q: "a pro forma cost recovery agreement between PJM, the relevant transmission owner, and Eligible Customer … to mitigate the risk of cost shifting among transmission customers", p: "P 77" },
+        { t: "Cost transparency", q: "publicly post and regularly update data that details … proposed large load additions … the planned Network Upgrades … and cost estimates for those Network Upgrades", p: "P 71" },
+        { t: "Service for flexible loads", q: "transmission services that reflect Eligible Customers taking transmission service on behalf of flexible large loads that are willing and able to limit their use of the transmission system", p: "P 85" },
+      ],
+      reg: [
+        "Co-location and behind-the-meter generation were already settled in the separate PJM Co-Location Order (193 FERC ¶ 61,217, Dec. 18, 2025; reh’g 195 FERC ¶ 61,209) — this §206 order builds on that record rather than re-litigating it.",
+        "Directs PJM to extend the services created there — Interim NITS, Firm and Non-Firm Contract Demand — to flexible large loads (P 85).",
+        "Defines an ‘electrically proximate large load’ as one no more than two substations from the generating facility, and targets co-located loads ≥ 50 MW for new generator-interconnection study (P 62).",
+        "Excludes named non-public-utility TOs from the show-cause directive under FPA § 201(f), but PJM must still answer for their Tariff provisions (P 7 n.13).",
       ],
     },
     {
       item: "E-8", rto: "MISO", rtoFull: "Midcontinent Independent System Operator, Inc.", docket: "EL26-70-000", url: "e8",
-      region: "15 states, Midwest + South (Manitoba)",
-      status: "Justify or reform (60d) · report (30d)",
-      notes: [
-        { t: "Same five-category mandate. Resource adequacy is the live MISO theme — Item E-6 at the same meeting accepted (subject to condition) MISO tariff revisions to improve real-time visibility and procurement of demand-side and certain supply-side resources during emergencies, beginning Planning Year 2028/2029.", src: ["fercSum"] },
-        { t: "FERC named each RTO’s transmission owners as respondents alongside the RTO; planning roles are split differently across MISO than in the ISOs.", src: ["fercFS"] },
+      region: "15 states, Midwest + South", cite: "195 FERC ¶ 61,212", pages: 115,
+      respondents: "MISO + ~31 named transmission owners",
+      status: "Imports PJM/SPP findings, regional variation",
+      dir: [
+        { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system", p: "P 119" },
+        { t: "Cost-recovery agreement", q: "a pro forma cost recovery agreement between MISO, the relevant transmission owner, and Eligible Customer taking transmission service on behalf of the large load to mitigate the risk of cost shifting", p: "P 6(b)" },
+        { t: "Minimum cost recovery / security", q: "what an appropriate minimum level of cost recovery and financial security from an Eligible Customer would be under any such agreements", p: "P 119" },
+        { t: "Co-location ancillary charges", q: "whether and how Eligible Customers taking one of the new transmission services on behalf of Eligible Loads will be charged for their use of regulation and black start services", p: "P 99" },
+        { t: "Services for flexible / co-located loads", q: "transmission services that reflect Eligible Customers taking transmission service on behalf of co-located loads, load with behind the meter generation, and flexible large loads", p: "P 6(d)" },
+      ],
+      reg: [
+        "MISO is developing a zero-injection generator-interconnection-agreement process for co-located generation, but its Tariff has no standard procedures for it and doesn’t specify how MISO studies the reliability impacts (PP 32, 57).",
+        "Existing services are limited to NITS and firm/non-firm Point-To-Point; the Tariff lacks the Interim NITS and Contract Demand services found just and reasonable in the PJM Co-Location Order (P 104).",
+        "MISO leans on its Expedited Project Review (Attachment FF) for out-of-cycle approval of local projects, with applications rising on data-center growth (PP 21-22).",
+        "MISO itself told its Large Load Working Group the Tariff does ‘not provide a consistent or transparent framework to evaluate’ large loads (PP 29-32).",
       ],
     },
     {
       item: "E-9", rto: "SPP", rtoFull: "Southwest Power Pool, Inc.", docket: "EL26-68-000", url: "e9",
-      region: "Central U.S., 14+ states",
+      region: "Central U.S., 14+ states", cite: "195 FERC ¶ 61,213", pages: 92,
+      respondents: "SPP + 23 named transmission owners",
       status: "Furthest along — HILL / HILLGA in place",
-      notes: [
-        { t: "Singled out as the front-runner: SPP’s High Impact Large Load (HILL) and High Impact Large Load Generation Assessment (HILLGA) are expedited frameworks already built to reliably serve massive new demand and to study electrically proximate generation. FERC’s prior approval of HILL is cited as a template for categories 1 and 5.", src: ["fercFS", "fercPR"] },
-        { t: "Implication: SPP’s 60-day response may lean on ‘justify’ — pointing to HILL/HILLGA as already-just-and-reasonable — more than the others.", src: ["fercFS"] },
+      dir: [
+        { t: "Alternative tech + operational terms", q: "require the evaluation of alternative transmission technologies, and memorialize ongoing operational requirements in a transmission service agreement", p: "Ordering (B)(1)(a)" },
+        { t: "Evaluate alt tech by default", q: "in all instances, without the need for a request from the Eligible Customer seeking transmission service on behalf of large load", p: "P 46" },
+        { t: "Cost-recovery + crediting", q: "establish a mechanism to ensure such payments are appropriately credited toward transmission owners’ transmission revenue requirements", p: "Ordering (B)(1)(b)" },
+        { t: "Co-location service", q: "address the rates, terms, and conditions of service that apply to co-location arrangements", p: "Ordering (B)(1)(c)" },
+        { t: "New services for flexible loads", q: "transmission services that reflect Eligible Customers taking transmission service on behalf of co-located loads, load with behind the meter generation, and flexible large loads", p: "Ordering (B)(1)(d)" },
+      ],
+      reg: [
+        "The order adopts SPP’s own HILL (High Impact Large Load) definition as its definition of ‘large load,’ and treats ‘flexible’ loads as the HILL subset not co-located with generation and willing to limit withdrawals (PP 4, 6 n.16).",
+        "FERC commends SPP’s already-approved HILL study process and HILLGA (High Impact Large Load Generation Assessment, accepted Jan. 14, 2026, 194 FERC ¶ 61,031), which expedites generation serving an electrically proximate HILL (PP 15-18).",
+        "SPP’s Conditional HILL Service (accepted June 5, 2026) is an as-available, non-firm, 7-year-max service, curtailable until firm service is available (P 17).",
+        "Two gaps found even in SPP’s leading framework: no requirement to evaluate alternative transmission technologies, and no pro forma terms memorializing operational requirements in a transmission service agreement (P 27).",
       ],
     },
     {
       item: "E-10", rto: "CAISO", rtoFull: "California Independent System Operator Corp.", docket: "EL26-71-000", url: "e10",
-      region: "California (+ EIM/WEIM footprint)",
-      status: "Distinct transmission-service model",
-      notes: [
-        { t: "Structurally different: CAISO does not offer traditional Order No. 888 transmission service, so the ‘transmission-service application/study’ category has to be mapped onto CAISO’s own access model rather than a standard OATT. The order leaves room for that translation.", src: ["fercFS"] },
-        { t: "State overlay is heaviest here — California retains authority over generation siting/permitting and retail rates, the exact line FERC says it does not cross.", src: ["fercFS"] },
+      region: "California (+ WEIM footprint)", cite: "195 FERC ¶ 61,214", pages: 118,
+      respondents: "CAISO + 24 Participating Transmission Owners",
+      status: "Distinct — no Order No. 888 service",
+      dir: [
+        { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 5" },
+        { t: "Alternative transmission technologies", q: "they lack clear and consistent provisions requiring the evaluation of alternative transmission technologies as potential solutions to accommodate an Eligible Customer’s request", p: "PP 152-153" },
+        { t: "Cost-recovery agreement", q: "a pro forma cost recovery agreement between CAISO, the relevant transmission owner, and Eligible Customer … to mitigate the risk of cost shifting among transmission customers", p: "§ III.B.3" },
+        { t: "BTMG netting", q: "it allows load with BTMG to net its BTMG against its load for purposes of calculating Regional Access Charges", p: "pp. 60-61" },
+        { t: "Service for flexible loads", q: "it does not include transmission services that reflect … flexible large loads that are willing and able to limit their use of the transmission system under certain conditions", p: "§ III.D" },
+      ],
+      reg: [
+        "CAISO is the structural outlier: it ‘does not offer traditional Order No. 888 network and point-to-point transmission services, offers no firm, long-term transmission reservations of capacity, and does not provide a formal application process for transmission service’ (P 19).",
+        "It offers only a single ‘daily’ service; all non-historical, non-wheeling energy is treated as ‘new firm use,’ and CAISO curtails on Tariff-defined scheduling priorities (pp. 17-18).",
+        "The Participating TOs ‘play the lead role in managing the interconnection of load’; CAISO’s role is accounting for state-projected load in its Transmission Planning Process, which is tied to the CEC demand forecast and CPUC integrated resource plans (p. 18).",
+        "Alternative compliance path: CAISO may explain whether, ‘given that CAISO does not offer the transmission services required by Order No. 888,’ its framework already addresses the concerns (p. 60).",
       ],
     },
     {
       item: "E-11", rto: "ISO-NE", rtoFull: "ISO New England Inc.", docket: "EL26-72-000", url: "e11",
-      region: "Six New England states",
-      status: "Justify or reform (60d) · report (30d)",
-      notes: [
-        { t: "Same five-category mandate, with the TO-vs-RTO planning split especially pronounced in New England (the transmission owners own and plan local transmission). FERC included the New England TOs as respondents.", src: ["fercFS"] },
-        { t: "FERC’s summaries list this docket as ‘26-72-000’ (apparent typo for EL26-72-000); the item/RTO/docket mapping is otherwise consistent across the news release and fact sheet.", src: ["fercSum"] },
+      region: "Six New England states", cite: "195 FERC ¶ 61,215", pages: 115,
+      respondents: "ISO-NE + 16 Participating Transmission Owners",
+      status: "Constrained grid — risks called acute",
+      dir: [
+        { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 5" },
+        { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system", p: "P 75" },
+        { t: "Cost-recovery agreement", q: "a pro forma cost recovery agreement between ISO-NE, the relevant transmission owner, and Eligible Customer … to mitigate the risk of cost shifting", p: "P 6" },
+        { t: "BTMG netting", q: "it allows load with BTMG to net its BTMG against its load for purposes of calculating Regional Network Service charges", p: "P 60" },
+        { t: "Proximate-generation service", q: "the rates, terms, and conditions of service applicable to interconnection customers serving electrically proximate large load or co-located load", p: "P 7" },
+      ],
+      reg: [
+        "FERC frames the risk as particularly acute in New England, citing significant transmission constraints and a system peak of only ~30,000 MW (P 11 n.31).",
+        "ISO-NE allocates Regional Network Service network-upgrade costs to the Eligible Customer the same way as generator-interconnection costs under Schedule 11 (P 20).",
+        "Its Tariff lets Network Customers net BTMG via the ‘Monthly Regional Network Load’ definition; the order imports the PJM MW-threshold remedy (P 60).",
+        "ISO-NE plans off the CELT load forecast, which does not generally include large proposed loads such as data centers (P 22). The order extends the PJM co-location services (compliance accepted Apr. 16, 2026, 195 FERC ¶ 61,030) here, with regional variation (PP 57-59).",
       ],
     },
     {
       item: "E-12", rto: "NYISO", rtoFull: "New York Independent System Operator, Inc.", docket: "EL26-69-000", url: "e12",
-      region: "New York State",
-      status: "Justify or reform (60d) · report (30d)",
-      notes: [
-        { t: "Same five-category mandate. NYISO’s single-state footprint puts it closest to the FERC/state seam — transmission cost-shifting is FERC’s lane, retail cost-shifting and generation siting stay with New York.", src: ["fercFS"] },
-        { t: "Each RTO, NYISO included, may define ‘large load’ for itself and set region-specific operational requirements.", src: ["fercFS"] },
+      region: "New York State", cite: "195 FERC ¶ 61,216", pages: 119,
+      respondents: "NYISO + 9 named New York transmission owners",
+      status: "Reform needed ahead of NYISO’s 2027 plan",
+      dir: [
+        { t: "Timely study window", q: "how NYISO and/or the Transmission Owners will timely study (i.e., within 60-90 days of receiving the request) the provision of transmission service … on behalf of large loads", p: "P 44" },
+        { t: "Define ‘large load’", q: "it lacks a definition of large load, as a new category of load", p: "P 64" },
+        { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies … in all instances", p: "P 68" },
+        { t: "Cost transparency", q: "robust, accurate, and systematic provision of data on NYISO’s website in a single location … searchable and allows users to filter the data, regarding the cost for Network Upgrades", p: "P 73" },
+        { t: "Proximate-generation service", q: "it lacks a generator interconnection study process and/or generator interconnection service to reflect an interconnection customer’s commitment … to limit the generating facility’s output", p: "P 121" },
+      ],
+      reg: [
+        "NYISO has load-interconnection procedures for projects > 10 MW at 115 kV+ (or ≥ 80 MW below 115 kV), but the order finds them only partially in the Tariff — study details, deposits, and assumptions sit in non-Tariff documents (PP 32, 46, 64).",
+        "NYISO already defines ‘BTM:NG Resource’ and ‘Host Load,’ but its model presumes a firm Host Load that does not participate in wholesale markets; the new directives attach to those definitions (PP 36, 96-97).",
+        "NYISO is weighing co-location reforms but doesn’t expect to file tariff revisions until 2027 — which FERC cites as why the § 206 proceeding is needed now (PP 36-37).",
+        "Unlike SPP, NYISO is not told to adopt HILLGA; but its Tariff may still be unjust and unreasonable without any tailored study process for generation serving electrically proximate or large co-located load (P 123).",
       ],
     },
   ];

@@ -221,22 +221,32 @@ a:hover { color: var(--accent-ink); }
 .cat-doe li::before { content: "§"; position: absolute; left: 0; color: var(--tier-doe); font-family: var(--font-serif); font-weight: 700; }
 
 /* docket cards */
-.dockets { display: grid; gap: 12px; }
-@media (min-width: 760px) { .dockets { grid-template-columns: 1fr 1fr; } }
-.docket { display: grid; grid-template-columns: 64px 1fr; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.dockets { display: grid; gap: 14px; }
+@media (min-width: 1080px) { .dockets { grid-template-columns: 1fr 1fr; } }
+.docket { display: grid; grid-template-columns: 56px 1fr; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
 .docket-spine {
-  background: var(--masthead); color: #fff; padding: 14px 8px; text-align: center;
+  background: var(--masthead); color: #fff; padding: 14px 6px; text-align: center;
   display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 8px;
 }
-.docket-spine .item { font-family: var(--font-serif); font-weight: 700; font-size: 22px; line-height: 1; }
-.docket-spine .docket-no { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.02em; writing-mode: vertical-rl; transform: rotate(180deg); color: #b9cbe4; margin-top: 4px; }
-.docket-main { padding: 13px 15px; }
+.docket-spine .item { font-family: var(--font-serif); font-weight: 700; font-size: 20px; line-height: 1; }
+.docket-spine .docket-no { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.02em; writing-mode: vertical-rl; transform: rotate(180deg); color: #b9cbe4; margin-top: 4px; }
+.docket-main { padding: 13px 15px; min-width: 0; }
+.docket-id { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
 .docket-main .rto { font-weight: 700; font-size: 17px; color: var(--masthead); }
 .docket-main .rto-full { font-size: 12.5px; color: var(--text-muted); }
-.docket-main .region { font-family: var(--font-mono); font-size: 11px; color: var(--accent-ink); margin-top: 6px; }
+.docket-cite { font-size: 11px; color: var(--accent-ink); margin-top: 4px; }
+.docket-main .region { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); margin-top: 4px; }
 .docket-status { display: inline-block; margin-top: 8px; font-size: 11px; font-weight: 700; color: var(--status-reform); background: #f6efdf; border: 1px solid #e6d8b0; border-radius: 999px; padding: 2px 9px; }
-.docket-notes { margin-top: 10px; display: grid; gap: 9px; }
-.docket-notes p { font-size: 13.5px; color: #2b3744; }
+.dir { margin-top: 12px; }
+.dir .label, .dreg .label { display: block; margin-bottom: 7px; }
+.dir-item { display: grid; gap: 1px; padding: 7px 0 7px 11px; border-left: 2px solid var(--rule-strong); margin-bottom: 8px; }
+.dir-topic { font-weight: 700; font-size: 12px; color: var(--masthead); }
+.dir-quote { font-family: var(--font-serif); font-style: italic; font-size: 13.5px; color: #2b3744; line-height: 1.4; }
+.dir-para { font-size: 10.5px; color: var(--accent); margin-top: 1px; }
+.dreg { margin-top: 6px; }
+.dreg ul { list-style: none; display: grid; gap: 6px; }
+.dreg li { font-size: 13px; color: #2b3744; padding-left: 14px; position: relative; line-height: 1.4; }
+.dreg li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); font-size: 10px; top: 2px; }
 
 /* generic two-col blocks (jurisdiction / regional) */
 .blocks { display: grid; gap: 12px; }

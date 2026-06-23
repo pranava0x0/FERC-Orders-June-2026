@@ -73,8 +73,12 @@
         "E-12 NYISO EL26-69-000": "https://www.ferc.gov/media/e12-el26-69-000"
       },
       "tier": "primary",
-      "retrieval": "FAILED",
-      "retrieval_note": "Cloudflare 'Just a moment' JS challenge returns HTTP 403 to curl/WebFetch/PDF-fetch; Wayback Save-Page-Now returned HTTP 520; no browser connected to solve the challenge. Not yet in the Internet Archive. Tracked in issues.md."
+      "retrieval": "downloaded-via-browser",
+      "fercCites": "195 FERC ¶ 61,211 – 61,216",
+      "pages": "92–119 each",
+      "retrieval_note": "Automated clients hit Cloudflare 403; the six PDFs were downloaded through a real browser that passes the challenge, then OCR'd 2026-06-22. Page-1 captions verified. Structured extract: sources/orders-extract.json. PDFs saved to sources/pdf/orders/ (gitignored).",
+      "extract": "sources/orders-extract.json",
+      "pdf_dir": "sources/pdf/orders/ (gitignored)"
     }
   ]
 }

@@ -58,7 +58,7 @@ test("all referenced source ids resolve", () => {
   check(D.media.friction, "friction");
   D.dockets.forEach((d) => {
     assert.ok(ids.has(d.url), `docket ${d.item} url-source ${d.url}`);
-    (d.notes || []).forEach((n) => (n.src || []).forEach((id) => { if (!ids.has(id)) bad.push(`docket ${d.item}:${id}`); }));
+    assert.equal(D.SOURCES[d.url].tier, "order", `docket ${d.item} source is an order PDF`);
   });
   assert.deepEqual(bad, [], `unresolved source ids: ${bad.join(", ")}`);
 });
@@ -71,8 +71,19 @@ test("six dockets, correct item -> RTO -> docket mapping", () => {
     assert.ok(d, `missing ${item}`);
     assert.equal(d.rto, exp.rto, `${item} RTO`);
     assert.equal(d.docket, exp.docket, `${item} docket`);
-    assert.ok(d.notes.length >= 1, `${item} has notes`);
+    assert.match(d.cite, /^195 FERC ¶ 61,21[1-6]$/, `${item} FERC cite`);
+    assert.ok(d.pages >= 90 && d.pages <= 130, `${item} page count plausible`);
+    assert.ok(d.respondents && /\d/.test(d.respondents), `${item} respondents`);
+    assert.ok(Array.isArray(d.dir) && d.dir.length >= 4, `${item} has ≥4 quoted directives`);
+    d.dir.forEach((x, i) => {
+      assert.ok(x.t && x.q && x.p, `${item} directive ${i} fields`);
+      assert.ok(x.q.length >= 20, `${item} directive ${i} quote is substantive`);
+    });
+    assert.ok(Array.isArray(d.reg) && d.reg.length >= 3, `${item} has ≥3 region-specific findings`);
   }
+  // the six cites are distinct and consecutive
+  const cites = new Set(D.dockets.map((d) => d.cite));
+  assert.equal(cites.size, 6, "six distinct FERC cites");
 });
 
 test("five reform categories, numbered 1..5, each fully populated", () => {
