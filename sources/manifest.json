@@ -100,7 +100,11 @@
       { "id": "tdworld", "org": "T&D World", "tier": "secondary", "url": "https://www.tdworld.com/transmission-reliability/article/55385369/ferc-orders-aggressive-targeted-action-to-speed-power-to-support-data-centers" },
       { "id": "powermag", "org": "POWER Magazine", "tier": "secondary", "url": "https://www.powermag.com/ferc-orders-all-six-regional-grid-operators-to-justify-or-rewrite-large-load-tariffs/" },
       { "id": "rew", "org": "Renewable Energy World", "tier": "secondary", "url": "https://www.renewableenergyworld.com/energy-business/policy-and-regulation/ferc-takes-historic-action-orders-us-grid-operators-to-defend-or-revise-large-load-interconnection-tariffs/" },
-      { "id": "substack", "org": "Arushi Sharma Frank (Substack)", "tier": "secondary", "url": "https://arushisharmafrank.substack.com/p/ferc-kicks-off-a-transparency-wave", "supports": "coverage-gap observation; transparency-wave framing (abeyance mechanics now also cited to NYISO order P 42)" }
+      { "id": "substack", "org": "Arushi Sharma Frank (Substack)", "tier": "secondary", "url": "https://arushisharmafrank.substack.com/p/ferc-kicks-off-a-transparency-wave", "supports": "coverage-gap observation; transparency-wave framing (abeyance mechanics now also cited to NYISO order P 42)" },
+      { "id": "norris", "org": "Tyler Norris et al., Duke Nicholas Institute", "tier": "secondary", "captured_at": "2026-06-23", "url": "https://www.powermag.com/duke-researchers-grid-flexibility-key-to-accommodate-load-growth/", "supports": "load-flexibility research case for the flexible-load reform category" },
+      { "id": "kavulla", "org": "Travis Kavulla (American Affairs)", "tier": "secondary", "captured_at": "2026-06-23", "url": "https://www.texasenergyandpower.com/p/price-the-grid-or-keep-rationing", "supports": "right-of-center market-design critique (open-season pricing for grid access)" },
+      { "id": "insideclimate", "org": "Inside Climate News", "tier": "secondary", "captured_at": "2026-06-23", "url": "https://insideclimatenews.org/news/18062026/federal-energy-regulatory-commission-data-center-orders/", "supports": "Sierra Club and Southern Environmental Law Center reactions" },
+      { "id": "publiccitizen", "org": "Public Citizen", "tier": "secondary", "captured_at": "2026-06-23", "url": "https://www.citizen.org/news/ferc-must-reconsider-risks-posed-by-data-centers-to-power-grids/", "supports": "consumer-watchdog reliability/moratorium stance" }
     ]
   }
 }

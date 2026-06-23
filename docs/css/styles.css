@@ -288,6 +288,21 @@ details.dreg li::before { content: "▸"; position: absolute; left: 0; color: va
 .stance-pill.negative { color: var(--stance-negative); background: var(--deadline-bg); }
 .recep p { font-size: 14px; color: #2b3744; }
 
+/* commentary across the spectrum */
+.voices { display: grid; gap: 11px; }
+.voice { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--rule-strong); border-radius: 0 6px 6px 0; padding: 13px 16px; }
+.voice.right { border-left-color: var(--status-reform); }
+.voice.left { border-left-color: var(--stance-positive); }
+.voice.nonpartisan { border-left-color: var(--tier-order); }
+.voice-head { display: flex; align-items: baseline; gap: 6px 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.voice-name { font-weight: 700; font-size: 15px; color: var(--masthead); }
+.voice-affil { font-size: 12px; color: var(--text-muted); }
+.lean-pill { margin-left: auto; font-family: var(--font-mono); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--rule-strong); color: var(--text-muted); white-space: nowrap; }
+.lean-pill.right { color: #7a5a12; background: #f6efdb; border-color: #e6d8b0; }
+.lean-pill.left { color: var(--stance-positive); background: #e9f3ec; border-color: #c5dccb; }
+.lean-pill.nonpartisan { color: var(--text-muted); background: var(--surface-2); }
+.voice p { font-size: 14px; color: #2b3744; line-height: 1.45; }
+
 /* consensus / friction columns */
 .discourse { display: grid; gap: 16px; }
 @media (min-width: 820px) { .discourse { grid-template-columns: 1fr 1fr; } }

@@ -193,8 +193,18 @@
         return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
       }).join("") + "</div>";
 
+    var LEAN = { right: "Right of center", left: "Left of center", nonpartisan: "Nonpartisan" };
+    var voices = '<div class="voices">' + D.voices.map(function (v) {
+      return '<div class="voice ' + v.lean + '"><div class="voice-head"><span class="voice-name">' + esc(v.name) +
+        '</span><span class="voice-affil">' + esc(v.affil) + '</span>' +
+        '<span class="lean-pill ' + v.lean + '">' + esc(LEAN[v.lean]) + "</span></div>" +
+        "<p>" + esc(v.take) + "</p>" + srcChips(v.src) + "</div>";
+    }).join("") + "</div>";
+
     return head("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.") + rec +
+      head("Commentary across the spectrum",
+      "Named voices from right of center to left of center, plus the research case for load flexibility. Each is the source's own position, not a FERC determination.") + voices +
       head("Media & discourse", "The dominant narratives in energy trade press and policy circles.") + disc + outlets;
   }
 

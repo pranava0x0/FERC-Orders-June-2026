@@ -72,6 +72,11 @@ window.FERC_DATA = (function () {
     powermag: { label: "“FERC Orders All Six Regional Grid Operators to Justify or Rewrite Large-Load Tariffs”", org: "POWER Magazine", tier: "secondary", url: "https://www.powermag.com/ferc-orders-all-six-regional-grid-operators-to-justify-or-rewrite-large-load-tariffs/", captured: "2026-06-22", note: "Trade press; 200M Americans / 31+ states framing." },
     rew: { label: "“FERC takes historic action… ‘defend or revise’ large load interconnection tariffs”", org: "Renewable Energy World", tier: "secondary", url: "https://www.renewableenergyworld.com/energy-business/policy-and-regulation/ferc-takes-historic-action-orders-us-grid-operators-to-defend-or-revise-large-load-interconnection-tariffs/", captured: "2026-06-22", note: "Trade press." },
     substack: { label: "“FERC Kicks off a Transparency Wave on Large Load Interconnection”", org: "Arushi Sharma Frank (Substack)", tier: "secondary", url: "https://arushisharmafrank.substack.com/p/ferc-kicks-off-a-transparency-wave", captured: "2026-06-22", note: "Independent policy commentary; abeyance/pause mechanics, no-show/stranded-cost framing, coverage-gap observations." },
+    // Named-voice commentary (added 2026-06-23) backing the spectrum section in Tab 3 only.
+    norris: { label: "“Rethinking Load Growth” — integrating large flexible loads", org: "Tyler Norris et al., Duke Nicholas Institute", tier: "secondary", url: "https://www.powermag.com/duke-researchers-grid-flexibility-key-to-accommodate-load-growth/", captured: "2026-06-23", note: "Research case that curtailing a small share of a large load’s annual peak frees existing grid capacity; the basis for the flexible-load reform." },
+    kavulla: { label: "“How Will Data Centers Pay for Power?” — the open-season argument", org: "Travis Kavulla (American Affairs)", tier: "secondary", url: "https://www.texasenergyandpower.com/p/price-the-grid-or-keep-rationing", captured: "2026-06-23", note: "Originally in American Affairs; discussed here. Argues for pricing grid access via a gas-pipeline-style ‘open season’ with transferable rights." },
+    insideclimate: { label: "“Federal Regulators Tell Grid Operators to Fix Their Rules on Data Centers”", org: "Inside Climate News", tier: "secondary", url: "https://insideclimatenews.org/news/18062026/federal-energy-regulatory-commission-data-center-orders/", captured: "2026-06-23", note: "June 18, 2026 coverage carrying Sierra Club and Southern Environmental Law Center reactions." },
+    publiccitizen: { label: "“FERC Must Reconsider Risks Posed by Data Centers to Power Grids”", org: "Public Citizen", tier: "secondary", url: "https://www.citizen.org/news/ferc-must-reconsider-risks-posed-by-data-centers-to-power-grids/", captured: "2026-06-23", note: "Consumer-watchdog stance; pressed for a temporary moratorium on new data-center interconnections pending NERC reliability alerts." },
   };
 
   const meta = {
@@ -414,6 +419,41 @@ window.FERC_DATA = (function () {
     outlets: ["utilitydive", "rtoinsider", "latitude", "tdworld", "powermag", "rew", "akin", "sheppard", "whitecase", "natlaw", "aaf", "substack"],
   };
 
+  // Named commentary spanning the political spectrum (Tab 3). Each is the source's own
+  // position, attributed and linked; lean is the commentator's general orientation on energy policy.
+  const voices = [
+    {
+      name: "Tyler Norris", affil: "Duke Nicholas Institute", lean: "nonpartisan",
+      take: "The research case behind the flexible-load category: curtailing roughly 0.25% to 1% of a large load’s annual peak lets the existing grid absorb tens of gigawatts of new demand, so a curtailable data center can connect years sooner than a firm-load study would allow.",
+      src: ["norris"],
+    },
+    {
+      name: "Travis Kavulla", affil: "American Affairs · NRG", lean: "right",
+      take: "Wants grid access priced, not rationed: borrow the natural-gas ‘open season’ so large loads bid for transferable interconnection rights instead of queuing first-come, first-served. Reads the orders’ cost-causation push as a step toward that, but short of market pricing.",
+      src: ["kavulla"],
+    },
+    {
+      name: "Devin Hartman", affil: "R Street Institute", lean: "right",
+      take: "Supportive of the design: calls the action ‘far more substantively ambitious than the ANOPR,’ with region-specific §206 pathways more effective than a uniform rule. Faults it mainly for leaving out non-RTO areas, which he says have the worst interconnection practices.",
+      src: ["utilitydive"],
+    },
+    {
+      name: "Sierra Club", affil: "environmental advocacy", lean: "left",
+      take: "Cautiously positive: the announcement is ‘responsive to Sierra Club’s requests on several fronts, including protecting consumers from costs incurred by large loads,’ with the full orders still to be reviewed.",
+      src: ["insideclimate"],
+    },
+    {
+      name: "Southern Environmental Law Center", affil: "Nick Guidi, senior attorney", lean: "left",
+      take: "Unconvinced by the cost guardrail: ‘There’s no real quarantining of the cost caused by data centers to those data centers,’ so it gets ‘spread throughout the whole customer base.’ Wanted more federal standardization than the orders deliver.",
+      src: ["insideclimate"],
+    },
+    {
+      name: "Public Citizen", affil: "consumer watchdog", lean: "left",
+      take: "The most skeptical: pressed FERC for a temporary moratorium on new data-center interconnections until NERC reliability alerts are resolved, and warns against weakening state authority over data centers.",
+      src: ["publiccitizen"],
+    },
+  ];
+
   /* ------------------------------------------------ file / follow the dockets */
   const participate = {
     intro: "Each proceeding is open on the public record. Interventions, comments, and protests are filed in the relevant docket via FERC Online; anyone can follow filings in eLibrary or eSubscription. Reference the exact docket number on every submission.",
@@ -438,5 +478,5 @@ window.FERC_DATA = (function () {
     ],
   };
 
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, participate };
+  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, participate };
 })();
