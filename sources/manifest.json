@@ -78,11 +78,11 @@
       "retrieval": "downloaded-via-browser",
       "fercCites": "195 FERC ¶ 61,211 – 61,216",
       "pages": "92–119 each",
-      "retrieval_note": "Automated clients hit Cloudflare 403; the six PDFs were downloaded through a real browser that passes the challenge, then text-extracted 2026-06-22. Page-1 captions verified. Structured extract: sources/orders-extract.json. PDFs saved to sources/pdf/orders/ (gitignored).",
+      "retrieval_note": "Automated clients hit Cloudflare 403; the six PDFs were downloaded through a real browser that passes the challenge, then text-extracted 2026-06-22. Page-1 captions verified. Structured extract: sources/orders-extract.json. PDFs committed to docs/orders/ so GitHub Pages serves them and the page-citation links open inline.",
       "extract": "sources/orders-extract.json",
       "text_full_dir": "sources/text/orders/",
       "text_full_note": "Complete machine-readable text of all six orders (~1.73M chars, 92-119 pp each) extracted locally with PyMuPDF (fitz). A regression test asserts every directive quote in orders-extract.json appears verbatim in these files (53/53), independently confirming the extraction.",
-      "pdf_dir": "sources/pdf/orders/ (gitignored)"
+      "pdf_dir": "docs/orders/ (committed; served by GitHub Pages)"
     }
   ],
   "secondary_sources": {
