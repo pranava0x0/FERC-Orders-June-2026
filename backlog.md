@@ -13,10 +13,12 @@
   docket sheet for RM26-4-000 (browser bridge past Cloudflare), download each comment PDF, extract
   with fitz, then classify and summarize by stakeholder and position per reform category. Surface as
   a "What commenters said" section. Treat LLM summaries as provisional and cite accession numbers.
-  Method is written up in `comments-scrape-plan.md`.
-- **medium** — Parse the June 18, 2026 open-meeting record: pull each commissioner's statement (Swett,
-  Rosner, See, Chang, LaCerte) and the meeting transcript/webcast for items E-7 to E-12, and surface a
-  short "what each commissioner said" block. Source is Cloudflare-gated; use the browser bridge.
+  Method in `summaries-plan.md` (Part A); shared Cloudflare access strategy at the top of that file.
+- **medium** — Summarize the June 18, 2026 open meeting into a "what each commissioner said" block
+  (Swett, Rosner, See, Chang, LaCerte) for items E-7 to E-12. The meeting is on FERC's **YouTube**
+  channel, which is not Cloudflare-gated, so the auto-caption transcript is the primary source
+  (`yt-dlp --write-auto-sub`, no key); verify quotes against the written statement PDFs (those are
+  gated, use the browser bridge). Method in `summaries-plan.md` (Part B).
 - **low** — Mine the orders' Section IV "Briefing Questions" for a per-docket "what FERC is asking"
   sub-list; capture the named transmission-owner respondent lists in full.
 - **medium** — Add the FERC "Items E-7–E-12: RTO/ISO Show Cause Orders" presentation deck and the
