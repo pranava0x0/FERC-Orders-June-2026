@@ -207,7 +207,7 @@
     return head("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.") + rec +
       head("Commentary across the spectrum",
-      "Named voices from right of center to left of center, plus the research case for load flexibility. Each is the source's own position, not a FERC determination.") + voices +
+      "Named voices from right of center to left of center, plus the research case for load flexibility. Each is the source's own position, not a FERC determination. Commentary gathered " + D.meta.discourseCapture + " (the order record is as of " + D.meta.capture + ").") + voices +
       head("Media & discourse", "The dominant narratives in energy trade press and policy circles.") + disc + outlets;
   }
 
@@ -235,7 +235,7 @@
       "<h4>Derived dates</h4>" +
       "<p>The 30-day and 60-day periods are stated by FERC. The specific calendar due-dates are derived from the June 18, 2026 issuance (business-day-adjusted figures attributed to the National Law Review analysis).</p>" +
       "<h4>All sources</h4>" + srcList +
-      "<p style='margin-top:10px'><em>Capture date 2026-06-22. Independent analysis; not affiliated with FERC or DOE.</em></p>";
+      "<p style='margin-top:10px'><em>Primary capture date " + esc(D.meta.capture) + "; the secondary commentary in the Discourse tab was gathered " + esc(D.meta.discourseCapture) + ". Independent analysis; not affiliated with FERC or DOE.</em></p>";
   }
 
   /* ---- tablist ---- */
