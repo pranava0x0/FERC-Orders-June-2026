@@ -1,0 +1,106 @@
+{
+  "captured_at": "2026-06-22",
+  "note": "Provenance manifest. PDFs and raw HTML snapshots are gitignored (large / re-derivable); extracted text is kept in sources/text/.",
+  "sources": [
+    {
+      "id": "doe403",
+      "title": "Secretary of Energy §403 letter + enclosed ANOPR (Ensuring the Timely and Orderly Interconnection of Large Loads)",
+      "org": "U.S. Department of Energy",
+      "issued": "2025-10-23",
+      "url": "https://www.energy.gov/sites/default/files/2025-10/403%20Large%20Loads%20Letter.pdf",
+      "tier": "primary",
+      "retrieval": "downloaded",
+      "format": "pdf",
+      "pages": 16,
+      "bytes": 2475623,
+      "text_full": "sources/text/doe-403-full.txt",
+      "text_key_extract": "sources/text/doe-403-key-extract.txt",
+      "text_note": "doe-403-full.txt is the complete 16-page verbatim OCR extraction (27,128 chars; OCR artifacts preserved). doe-403-key-extract.txt is a condensed, paraphrased index of the 14 principles for quick reference — the full text is the authority."
+    },
+    {
+      "id": "fercPR",
+      "title": "FERC Launches Aggressive Targeted Action to Speed Large Load Integration (news release)",
+      "org": "FERC",
+      "issued": "2026-06-18",
+      "url": "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
+      "tier": "primary",
+      "retrieval": "internet-archive",
+      "archive_url": "http://web.archive.org/web/20260618211730/https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
+      "text": "sources/text/press-release.txt"
+    },
+    {
+      "id": "fercFS",
+      "title": "Fact Sheet | FERC Takes Action to Supercharge America's Grid…",
+      "org": "FERC",
+      "issued": "2026-06-18",
+      "url": "https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and",
+      "tier": "primary",
+      "retrieval": "internet-archive",
+      "archive_url": "http://web.archive.org/web/20260620020229/https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and",
+      "text": "sources/text/fact-sheet.txt"
+    },
+    {
+      "id": "fercSum",
+      "title": "Summaries | June 2026 Commission Meeting",
+      "org": "FERC",
+      "issued": "2026-06-18",
+      "url": "https://www.ferc.gov/news-events/news/summaries-june-2026-commission-meeting",
+      "tier": "primary",
+      "retrieval": "internet-archive",
+      "archive_url": "http://web.archive.org/web/20260618204955/https://www.ferc.gov/news-events/news/summaries-june-2026-commission-meeting",
+      "text": "sources/text/summaries.txt"
+    },
+    {
+      "id": "fercRM264",
+      "title": "Interconnection of Large Loads to the Interstate Transmission System (Docket RM26-4-000)",
+      "org": "FERC",
+      "issued": "2026-01-13",
+      "url": "https://www.ferc.gov/rm26-4",
+      "tier": "primary",
+      "retrieval": "internet-archive",
+      "archive_url": "http://web.archive.org/web/20260619085932/https://www.ferc.gov/rm26-4",
+      "text": "sources/text/rm26-4.txt"
+    },
+    {
+      "id": "orders",
+      "title": "Items E-7 through E-12 order PDFs (EL26-67-000 to EL26-72-000)",
+      "org": "FERC",
+      "issued": "2026-06-18",
+      "urls": {
+        "E-7 PJM EL26-67-000": "https://www.ferc.gov/media/e-7-el26-67-000",
+        "E-8 MISO EL26-70-000": "https://www.ferc.gov/media/e-8-el26-70-000",
+        "E-9 SPP EL26-68-000": "https://www.ferc.gov/media/e-9-el26-68-000",
+        "E-10 CAISO EL26-71-000": "https://www.ferc.gov/media/e-10-el26-71-000",
+        "E-11 ISO-NE EL26-72-000": "https://www.ferc.gov/media/e11-el26-72-000",
+        "E-12 NYISO EL26-69-000": "https://www.ferc.gov/media/e12-el26-69-000"
+      },
+      "tier": "primary",
+      "retrieval": "downloaded-via-browser",
+      "fercCites": "195 FERC ¶ 61,211 – 61,216",
+      "pages": "92–119 each",
+      "retrieval_note": "Automated clients hit Cloudflare 403; the six PDFs were downloaded through a real browser that passes the challenge, then text-extracted 2026-06-22. Page-1 captions verified. Structured extract: sources/orders-extract.json. PDFs saved to sources/pdf/orders/ (gitignored).",
+      "extract": "sources/orders-extract.json",
+      "text_full_dir": "sources/text/orders/",
+      "text_full_note": "Complete machine-readable text of all six orders (~1.73M chars, 92-119 pp each) extracted locally with PyMuPDF (fitz). A regression test asserts every directive quote in orders-extract.json appears verbatim in these files (53/53), independently confirming the extraction.",
+      "pdf_dir": "sources/pdf/orders/ (gitignored)"
+    }
+  ],
+  "secondary_sources": {
+    "note": "Secondary analysis and trade-press, fetched 2026-06-22. These back ONLY Tab 3 (reception & discourse) and clearly-attributed analysis chips — never a primary regulatory finding. Not snapshotted (third-party sites); each is rendered with its live URL and a source chip. Primary facts in Tabs 1-2 trace to the DOE letter, the FERC pages, or the order PDFs above.",
+    "captured_at": "2026-06-22",
+    "items": [
+      { "id": "akin", "org": "Akin Gump", "tier": "secondary", "url": "https://www.akingump.com/en/insights/blogs/speaking-energy/ferc-issues-landmark-show-cause-orders-on-large-load-interconnection" },
+      { "id": "sheppard", "org": "Sheppard Mullin", "tier": "secondary", "url": "https://www.sheppard.com/insights/blogs/ferc-orders-six-rtos-to-address-specific-reforms-to-effectuate-speed-to-power-that-will-facilitate-the-integration-of-large-loads" },
+      { "id": "whitecase", "org": "White & Case", "tier": "secondary", "url": "https://www.whitecase.com/insight-alert/pjm-proposes-carve-out-new-services-co-located-data-centers" },
+      { "id": "natlaw", "org": "National Law Review", "tier": "secondary", "url": "https://natlawreview.com/article/ferc-acts-large-load-integration-key-issues-addressed", "supports": "derived business-day calendar dates only" },
+      { "id": "aaf", "org": "American Action Forum", "tier": "secondary", "url": "https://www.americanactionforum.org/insight/ferc-data-center-orders-accelerate-grid-connection/" },
+      { "id": "utilitydive", "org": "Utility Dive", "tier": "secondary", "url": "https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/", "supports": "cost-recovery-agreement framing; generator-owner (Capstone) reaction" },
+      { "id": "rtoinsider", "org": "RTO Insider", "tier": "secondary", "url": "https://www.rtoinsider.com/134751-ferc-issues-show-cause-orders-iso-rtos-large-load/" },
+      { "id": "latitude", "org": "Latitude Media", "tier": "secondary", "url": "https://www.latitudemedia.com/news/ferc-to-grid-operators-connect-large-loads-to-transmission-faster/" },
+      { "id": "tdworld", "org": "T&D World", "tier": "secondary", "url": "https://www.tdworld.com/transmission-reliability/article/55385369/ferc-orders-aggressive-targeted-action-to-speed-power-to-support-data-centers" },
+      { "id": "powermag", "org": "POWER Magazine", "tier": "secondary", "url": "https://www.powermag.com/ferc-orders-all-six-regional-grid-operators-to-justify-or-rewrite-large-load-tariffs/" },
+      { "id": "rew", "org": "Renewable Energy World", "tier": "secondary", "url": "https://www.renewableenergyworld.com/energy-business/policy-and-regulation/ferc-takes-historic-action-orders-us-grid-operators-to-defend-or-revise-large-load-interconnection-tariffs/" },
+      { "id": "substack", "org": "Arushi Sharma Frank (Substack)", "tier": "secondary", "url": "https://arushisharmafrank.substack.com/p/ferc-kicks-off-a-transparency-wave", "supports": "coverage-gap observation; transparency-wave framing (abeyance mechanics now also cited to NYISO order P 42)" }
+    ]
+  }
+}
