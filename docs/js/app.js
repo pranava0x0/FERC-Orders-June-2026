@@ -28,7 +28,7 @@
       if (!s) return "";
       // Prefer the fixed archive snapshot for FERC pages (the live ferc.gov page is Cloudflare-gated / 403).
       var href = s.archiveUrl || s.url;
-      var titleBits = s.label + " — " + s.org + (s.note ? " · " + s.note : "");
+      var titleBits = s.label + ", " + s.org + (s.note ? " · " + s.note : "");
       if (s.archiveUrl) titleBits += " · Opens the archived snapshot; live page: " + s.url;
       var title = esc(titleBits);
       return '<a class="src-chip" data-tier="' + s.tier + '" href="' + esc(href) + '" target="_blank" rel="noopener noreferrer" title="' + title + '">' + esc(shortName(id)) + "</a>";
@@ -40,12 +40,25 @@
   }
   function paras(arr) { return arr.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join(""); }
 
-  /* ---- KPIs ---- */
-  function renderKpis() {
-    document.getElementById("kpis").innerHTML = D.kpis.map(function (k) {
+  /* ---- TAB: Overview (stats + at-a-glance + background) ---- */
+  function renderOverview() {
+    var stats = '<div class="kpis">' + D.kpis.map(function (k) {
       return '<div class="kpi' + (k.deadline ? " deadline" : "") + '"><div class="v">' + esc(k.value) +
         '</div><div class="l">' + esc(k.label) + '</div><div class="s">' + esc(k.sub) + "</div></div>";
-    }).join("");
+    }).join("") + "</div>";
+
+    var m = D.meta;
+    var glance = '<dl class="glance">' +
+      "<div><dt>Authority</dt><dd>" + esc(m.authority) + "</dd></div>" +
+      '<div><dt>Items &amp; dockets</dt><dd class="mono">' + esc(m.items) + "</dd></div>" +
+      '<div><dt>Reporter cite</dt><dd class="mono">' + esc(m.citeRange) + "</dd></div>" +
+      "<div><dt>Commission</dt><dd>" + esc(m.commissioners) + "</dd></div>" +
+      '<div><dt>As of</dt><dd class="mono">' + esc(m.capture) + "</dd></div>" +
+      "</dl>";
+
+    return head("Overview", m.subtitle) +
+      '<div class="overview-bg">' + paras(m.summary) + "</div>" +
+      stats + glance;
   }
 
   /* ---- TAB 1 ---- */
@@ -58,41 +71,79 @@
     }).join("") + "</div>";
 
     var top = '<div class="cards cols-3">' + D.toplines.map(function (c) {
-      return '<div class="card analysis"><div class="tier-flag t-analysis">Analysis — synthesis</div>' +
+      return '<div class="card analysis"><div class="tier-flag t-analysis">Analysis: synthesis</div>' +
         "<h3>" + esc(c.h) + "</h3>" + paras(c.body) + srcChips(c.src) + "</div>";
     }).join("") + "</div>";
 
-    return head("Timeline — DOE §403 directive to FERC §206 orders",
+    return head("Timeline: DOE §403 directive to FERC §206 orders",
       "How an Oct. 2025 DOE directive became six near-simultaneous show cause orders on a 30/60-day clock.") +
       tl +
-      head("Toplines — the strategic shift",
-      "Why tailored §206 show cause orders instead of a generic NOPR — and what it signals.") +
+      head("Toplines: the strategic shift",
+      "Why tailored §206 show cause orders instead of a generic NOPR, and what it signals.") +
       top;
   }
 
-  /* ---- TAB 2 ---- */
-  function renderDockets() {
+  /* ---- TAB: Reforms (the five categories + jurisdiction + regional) ---- */
+  function renderReforms() {
     var cats = D.categories.map(function (c, i) {
       return '<details class="cat"' + (i === 0 ? " open" : "") + '><summary>' +
         '<span class="cat-no">' + c.n + "</span>" +
         '<span class="cat-title">' + esc(c.title) + "</span>" +
         '<span class="cat-chev">›</span></summary>' +
         '<div class="cat-body">' +
-        '<div class="cat-ferc"><span class="label">FERC — mandate text</span>“' + esc(c.ferc) + "”</div>" +
+        '<div class="cat-ferc"><span class="label">FERC mandate text</span>“' + esc(c.ferc) + "”</div>" +
         '<p class="cat-detail">' + esc(c.detail) + "</p>" +
         '<div class="cat-doe"><span class="label">Underlying DOE ANOPR principles</span><ul>' +
         c.doe.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></div>" +
         srcChips(c.src) + "</div></details>";
     }).join("");
 
+    var jur = '<div class="blocks two">' + D.jurisdiction.map(function (b) {
+      return '<div class="block' + (/30-day/.test(b.h) ? " warn" : "") + '"><h4>' + esc(b.h) + "</h4><p>" + esc(b.body) + "</p>" + srcChips(b.src) + "</div>";
+    }).join("") + "</div>";
+
+    var reg = '<div class="blocks two">' + D.regional.map(function (b) {
+      return '<div class="block"><h4>' + esc(b.h) + "</h4><p>" + esc(b.body) + "</p>" + srcChips(b.src) + "</div>";
+    }).join("") + "</div>";
+
+    return head("The five reform categories",
+      "Each tailored order tees up the same five categories. FERC's mandate text is quoted; the underlying DOE ANOPR principles show the mechanics.") + cats +
+      head("Jurisdictional & contractual protections",
+      "Where FERC draws the federal/state line, and how it shields existing deals.") + jur +
+      head("Regional distinctions at a glance", "The variations FERC says the orders were designed to reflect.") + reg;
+  }
+
+  /* ---- TAB: Dockets (the six order cards + how to participate) ---- */
+  function renderDockets() {
     var docs = '<div class="dockets">' + D.dockets.map(function (d) {
       var so = D.SOURCES[d.url];
-      var orderLink = '<a class="order-link" data-tier="order" target="_blank" rel="noopener noreferrer" href="' +
-        esc(so.url) + '" title="' + esc(so.label + " — downloaded & OCR'd 2026-06-22") + '">Order PDF ↗</a>';
+      // Link to the committed copy under docs/orders/ (served by GitHub Pages, same-origin) so the
+      // PDF opens inline and #page= works; the official ferc.gov source sits behind Cloudflare.
+      var orderLink = '<span class="order-links"><a class="order-link" data-tier="order" target="_blank" rel="noopener noreferrer" href="' +
+        esc(d.pdf) + '" title="Open the ' + esc(d.item) + " order PDF (committed copy of the ferc.gov original)\">Order PDF ↗</a>" +
+        '<a class="order-src" target="_blank" rel="noopener noreferrer" href="' + esc(so.url) +
+        '" title="Official source on ferc.gov (Cloudflare-gated; the committed copy mirrors it)">ferc.gov ↗</a></span>';
       var directives = '<div class="dir"><span class="label">Directs the respondent to address</span>' +
         d.dir.map(function (x) {
+          var cite;
+          if (x.pg) {
+            // Two ways to reach the cited page: the committed PDF under docs/orders/ (same-origin, so
+            // #page= opens inline and jumps reliably) and the official ferc.gov source (#page= lands
+            // when the browser opens it inline past Cloudflare). FERC PDFs drop paragraph numbers from
+            // their text layer, so the page is anchored to where the quoted text appears (tested).
+            cite = '<span class="dir-cite"><span class="dir-para mono">' + esc(x.p) + "</span>" +
+              '<a class="cite-link" href="' + esc(d.pdf) + "#page=" + x.pg +
+              '" target="_blank" rel="noopener noreferrer" aria-label="Open the committed ' + esc(d.item) +
+              " order PDF at page " + x.pg + '" title="Committed PDF, opens inline to p. ' + x.pg +
+              '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
+              '<a class="cite-link" href="' + esc(so.url) + "#page=" + x.pg +
+              '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov ' + esc(d.item) +
+              " order at page " + x.pg + '" title="Official ferc.gov source, page-precise when it opens inline">gov <span class="ext" aria-hidden="true">↗</span></a></span>';
+          } else {
+            cite = '<span class="dir-para mono">' + esc(x.p) + "</span>";
+          }
           return '<div class="dir-item"><div class="dir-head"><span class="dir-topic">' + esc(x.t) +
-            '</span><span class="dir-para mono">' + esc(x.p) + '</span></div>' +
+            "</span>" + cite + "</div>" +
             '<span class="dir-quote">“' + esc(x.q) + '”</span></div>';
         }).join("") + "</div>";
       var region = '<details class="dreg"><summary>Region-specific findings (' + d.reg.length + ")</summary><ul>" +
@@ -108,14 +159,6 @@
         "</div></div>";
     }).join("") + "</div>";
 
-    var jur = '<div class="blocks two">' + D.jurisdiction.map(function (b) {
-      return '<div class="block' + (/30-day/.test(b.h) ? " warn" : "") + '"><h4>' + esc(b.h) + "</h4><p>" + esc(b.body) + "</p>" + srcChips(b.src) + "</div>";
-    }).join("") + "</div>";
-
-    var reg = '<div class="blocks two">' + D.regional.map(function (b) {
-      return '<div class="block"><h4>' + esc(b.h) + "</h4><p>" + esc(b.body) + "</p>" + srcChips(b.src) + "</div>";
-    }).join("") + "</div>";
-
     var p = D.participate;
     var partRows = '<div class="docket-links">' + p.dockets.map(function (d) {
       return '<a class="docket-link" target="_blank" rel="noopener noreferrer" href="' + esc(p.docketSheet(d.docket)) +
@@ -128,13 +171,8 @@
     }).join("") + "</div>";
     var participate = '<p class="lede" style="margin-bottom:14px">' + esc(p.intro) + "</p>" + partRows + partLinks;
 
-    return head("The five reform categories",
-      "Each tailored order tees up the same five categories. FERC's mandate text is quoted; the underlying DOE ANOPR principles show the mechanics.") + cats +
-      head("The six dockets — E-7 through E-12",
+    return head("The six dockets: E-7 through E-12",
       "Same §206 spine, region-specific application. Directives and findings below are quoted from each order PDF (downloaded & OCR'd, captions verified) with paragraph cites; the order's FERC reporter cite, length, and named respondents head each card.") + docs +
-      head("Jurisdictional & contractual protections",
-      "Where FERC draws the federal/state line, and how it shields existing deals.") + jur +
-      head("Regional distinctions at a glance", "The variations FERC says the orders were designed to reflect.") + reg +
       head("File or follow the dockets", "Every proceeding is open on the public record. Use the exact docket number on any submission.") + participate;
   }
 
@@ -155,11 +193,21 @@
     var outlets = '<div class="section-head"><h2>Where it’s being covered</h2><p class="lede">Each links to the cited source.</p></div><div class="outlets">' +
       D.media.outlets.map(function (id) {
         var s = D.SOURCES[id]; if (!s) return "";
-        return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + " — " + s.org) + '">' + esc(shortName(id)) + "</a>";
+        return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
       }).join("") + "</div>";
+
+    var LEAN = { right: "Right of center", left: "Left of center", nonpartisan: "Nonpartisan" };
+    var voices = '<div class="voices">' + D.voices.map(function (v) {
+      return '<div class="voice ' + v.lean + '"><div class="voice-head"><span class="voice-name">' + esc(v.name) +
+        '</span><span class="voice-affil">' + esc(v.affil) + '</span>' +
+        '<span class="lean-pill ' + v.lean + '">' + esc(LEAN[v.lean]) + "</span></div>" +
+        "<p>" + esc(v.take) + "</p>" + srcChips(v.src) + "</div>";
+    }).join("") + "</div>";
 
     return head("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.") + rec +
+      head("Commentary across the spectrum",
+      "Named voices from right of center to left of center, plus the research case for load flexibility. Each is the source's own position, not a FERC determination. Commentary gathered " + D.meta.discourseCapture + " (the order record is as of " + D.meta.capture + ").") + voices +
       head("Media & discourse", "The dominant narratives in energy trade press and policy circles.") + disc + outlets;
   }
 
@@ -169,34 +217,41 @@
       '<span><i style="background:#0b2545"></i> FERC primary (issuance text)</span>' +
       '<span><i style="background:#5b3a8a"></i> DOE primary (§403 letter)</span>' +
       '<span><i style="background:#1a4480"></i> Secondary analysis</span>' +
-      '<span><i style="background:#6b7280;border:1px dashed #6b7280"></i> Order PDF — downloaded &amp; OCR’d</span></div>';
+      '<span><i style="background:#6b7280;border:1px dashed #6b7280"></i> Order PDF, downloaded &amp; OCR’d</span></div>';
 
     var srcList = "<ul>" + Object.keys(D.SOURCES).map(function (id) {
       var s = D.SOURCES[id];
       return "<li><strong>" + esc(shortName(id)) + ":</strong> " +
-        '<a href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.label) + "</a> — " +
+        '<a href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer">' + esc(s.label) + "</a>, " +
         esc(s.org) + " · <em>" + esc(s.captured) + "</em>" + (s.note ? " · " + esc(s.note) : "") + "</li>";
     }).join("") + "</ul>";
 
     document.getElementById("provenance-body").innerHTML =
       "<p>Three evidence tiers are kept visibly distinct so a confident-sounding synthesis never reads as quoted order text:</p>" + legend +
       "<h4>What is primary</h4>" +
-      "<p>The <strong>DOE §403 letter</strong> (16 pp.) was downloaded from energy.gov and text-extracted directly. FERC's <strong>news release, fact sheet, meeting summaries, and the RM26-4 docket page</strong> are official FERC text, posted at the June 18, 2026 open meeting and live on ferc.gov; quoted here against Internet Archive snapshots dated June 18–20, 2026 so the citations stay fixed to a specific capture even as the live pages change.</p>" +
-      "<h4>The six order PDFs — retrieved &amp; OCR’d</h4>" +
-      "<p>Automated clients (curl, server-side fetch, the PDF-fetch tool, the Wayback crawler) are all blocked by Cloudflare on <span class='mono'>ferc.gov/media/e-7…e-12</span>. The six orders were therefore opened in a real browser that passes the challenge, downloaded, and text-extracted (OCR) on 2026-06-22. Each one's <strong>page-1 caption was verified</strong> — FERC reporter cite, respondent RTO, docket number, the title “Order Instituting Proceeding Under Section 206,” and the issued date — before any of its text was used. The per-order directives in Tab 2 are quoted from those PDFs with paragraph cites (e.g. “P 77”); the structured extract is committed at <span class='mono'>sources/orders-extract.json</span>. All six orders are 195 FERC ¶ 61,211–61,216, 92–119 pp, issued June 18, 2026.</p>" +
+      "<p>The <strong>DOE §403 letter</strong> (16 pp.) was downloaded from energy.gov and text-extracted directly. FERC's <strong>news release, fact sheet, meeting summaries, and the RM26-4 docket page</strong> are official FERC text, posted at the June 18, 2026 open meeting and live on ferc.gov; quoted here against Internet Archive snapshots dated June 18 to 20, 2026 so the citations stay fixed to a specific capture even as the live pages change.</p>" +
+      "<h4>The six order PDFs, retrieved &amp; OCR’d</h4>" +
+      "<p>Automated clients (curl, server-side fetch, the PDF-fetch tool, the Wayback crawler) are all blocked by Cloudflare on <span class='mono'>ferc.gov/media/e-7…e-12</span>. The six orders were therefore opened in a real browser that passes the challenge, downloaded, and text-extracted (OCR) on 2026-06-22. Each one's <strong>page-1 caption was verified</strong> (FERC reporter cite, respondent RTO, docket number, the title “Order Instituting Proceeding Under Section 206,” and the issued date) before any of its text was used. The per-order directives in Tab 2 are quoted from those PDFs with paragraph cites (e.g. “P 77”); the structured extract is committed at <span class='mono'>sources/orders-extract.json</span>. Each cite offers two links to that page: <strong>PDF</strong> (the committed copy under <span class='mono'>docs/orders/</span>, served with the site so it opens inline and jumps reliably) and <strong>gov</strong> (the official ferc.gov source, page-precise when the browser opens it inline past Cloudflare). FERC's published PDFs drop paragraph numbers from their text layer, so a link is anchored to the page where the quoted language appears, not to a paragraph index. A test checks every link lands on a page that carries its quote. All six orders are 195 FERC ¶ 61,211 to 61,216, 92 to 119 pp, issued June 18, 2026.</p>" +
       "<h4>Derived dates</h4>" +
       "<p>The 30-day and 60-day periods are stated by FERC. The specific calendar due-dates are derived from the June 18, 2026 issuance (business-day-adjusted figures attributed to the National Law Review analysis).</p>" +
       "<h4>All sources</h4>" + srcList +
-      "<p style='margin-top:10px'><em>Capture date 2026-06-22. Independent analysis; not affiliated with FERC or DOE.</em></p>";
+      "<p style='margin-top:10px'><em>Primary capture date " + esc(D.meta.capture) + "; the secondary commentary in the Discourse tab was gathered " + esc(D.meta.discourseCapture) + ". Independent analysis; not affiliated with FERC or DOE.</em></p>";
   }
 
   /* ---- tablist ---- */
-  var TABS = ["timeline", "dockets", "news"];
-  var renderers = { timeline: renderTimeline, dockets: renderDockets, news: renderNews };
+  var TABS = ["overview", "timeline", "reforms", "dockets", "news"];
+  var renderers = { overview: renderOverview, timeline: renderTimeline, reforms: renderReforms, dockets: renderDockets, news: renderNews };
   var rendered = {};
 
   function panelFor(name) { return document.getElementById("panel-" + name); }
   function tabFor(name) { return document.getElementById("tab-" + name); }
+
+  // Tabs are sticky; on a user-initiated switch, scroll back up to the tablist so the new
+  // (often shorter) panel starts at the top instead of leaving the viewport stranded mid-page.
+  function scrollToTabsTop() {
+    var main = document.getElementById("main");
+    if (main && window.pageYOffset > main.offsetTop) window.scrollTo(0, main.offsetTop);
+  }
 
   function activate(name, focus) {
     TABS.forEach(function (t) {
@@ -222,19 +277,18 @@
     else if (e.key === "ArrowLeft" || e.key === "ArrowUp") next = (i - 1 + TABS.length) % TABS.length;
     else if (e.key === "Home") next = 0;
     else if (e.key === "End") next = TABS.length - 1;
-    if (next !== null) { e.preventDefault(); activate(TABS[next], true); }
+    if (next !== null) { e.preventDefault(); activate(TABS[next], true); scrollToTabsTop(); }
   }
 
   function init() {
-    renderKpis();
     renderProvenance();
     TABS.forEach(function (t) {
       var tab = tabFor(t);
-      tab.addEventListener("click", function () { activate(t, false); });
+      tab.addEventListener("click", function () { activate(t, false); scrollToTabsTop(); });
       tab.addEventListener("keydown", onKey);
     });
     var initial = (location.hash || "").replace("#", "");
-    activate(TABS.indexOf(initial) >= 0 ? initial : "timeline", false);
+    activate(TABS.indexOf(initial) >= 0 ? initial : "overview", false);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

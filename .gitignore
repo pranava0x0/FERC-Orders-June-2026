@@ -10,10 +10,13 @@ dist/
 __pycache__/
 *.pyc
 
-# Source PDFs and raw HTML snapshots are large / re-derivable — keep extracted text only
-sources/pdf/
+# Source PDFs and raw HTML snapshots are large / re-derivable — keep extracted text only.
+# Exceptions (committed): the six order PDFs served by GitHub Pages for the page-citation
+# links, and the DOE §403 letter the accuracy tests pin.
 sources/archived/
 *.pdf
+!docs/orders/*.pdf
+!sources/pdf/doe-403-large-loads-letter.pdf
 
 # OS / editor cruft
 .DS_Store
