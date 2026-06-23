@@ -26,11 +26,16 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node tests/data.test.mjs
+node --test tests/*.test.mjs   # 19 tests across both suites
 ```
 
-Validates the data layer: all six dockets present and correctly mapped, all five reform categories,
-every record carries ≥1 source, and append-only count floors hold.
+Two suites, no dependencies:
+
+- `tests/data.test.mjs` — data-layer integrity: all six dockets present and correctly mapped, all five
+  reform categories, every source id resolves, count floors, archive URLs present, and every displayed
+  directive quote appears verbatim in `sources/text/orders/*.txt`.
+- `tests/source-accuracy.test.mjs` — accuracy: displayed order metadata, directives, region-specific
+  claims, and FERC/DOE summary claims are each supported by the extracted source text.
 
 ## Deploy (GitHub Pages)
 
