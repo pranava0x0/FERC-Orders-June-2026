@@ -3,13 +3,13 @@
 A static, dependency-free microsite that traces the regulatory arc from the Department of Energy's
 **October 23, 2025 Section 403 directive / ANOPR** (FERC Docket No. **RM26-4-000**) to FERC's
 **June 18, 2026 tailored Section 206 show cause orders** (Items **E-7 through E-12**,
-Docket Nos. **EL26-67-000 – EL26-72-000**) directed at all six RTOs/ISOs.
+Docket Nos. **EL26-67-000 to EL26-72-000**) directed at all six RTOs/ISOs.
 
 Built for an energy-regulatory audience. Three tabs:
 
 1. **Timeline & Toplines** — the chronology (Oct 2025 → Jun 2026) and why FERC chose tailored §206
    show cause orders over a generic NOPR.
-2. **The Dockets (E-7–E-12)** — the five reform categories, per-RTO distinctions, and the
+2. **The Dockets (E-7 to E-12)** — the five reform categories, per-RTO distinctions, and the
    transmission-vs-retail jurisdictional boundary, grounded in the orders' published framing.
 3. **News & Discourse** — stakeholder reception and trade-press / policy narratives.
 

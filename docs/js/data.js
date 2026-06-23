@@ -77,7 +77,7 @@ window.FERC_DATA = (function () {
   const meta = {
     title: "Large Load Interconnection",
     subtitle: "From the DOE §403 ANOPR (Docket RM26-4-000) to FERC’s June 18, 2026 tailored §206 show cause orders",
-    items: "Items E-7 – E-12 · Dockets EL26-67-000 – EL26-72-000",
+    items: "Items E-7 to E-12 · Dockets EL26-67-000 to EL26-72-000",
     capture: "2026-06-22",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 – 61,216",
@@ -121,7 +121,7 @@ window.FERC_DATA = (function () {
     },
     {
       date: "Jun 18, 2026", iso: "2026-06-18", kind: "ferc",
-      title: "FERC issues six tailored § 206 show cause orders (E-7 – E-12)",
+      title: "FERC issues six tailored § 206 show cause orders (E-7 to E-12)",
       body: "At its open meeting, FERC unanimously issues six tailored §206 show cause orders — PJM (195 FERC ¶ 61,211), MISO (¶ 61,212), SPP (¶ 61,213), CAISO (¶ 61,214), ISO-NE (¶ 61,215), NYISO (¶ 61,216), 92–119 pages each, Commissioners Swett, Rosner, See, Chang, LaCerte. Each ‘Order Instituting Proceeding Under Section 206’ runs the same spine — III.A transmission service for large loads · III.B cost-shifting risk · III.C co-location & behind-the-meter generation · III.D services for flexible loads · III.E interconnection for electrically proximate / co-located load · III.F informational report · IV briefing questions — applied to each region’s own tariff.",
       src: ["e7", "e8", "e9", "e10", "e11", "e12"],
     },
