@@ -29,30 +29,31 @@
         <h1>Large Load Interconnection</h1>
         <p class="masthead-sub">From the DOE §403 ANOPR (Docket RM26-4-000) to FERC’s tailored §206 show cause orders, Items E-7 to E-12</p>
       </div>
-      <dl class="masthead-meta" aria-label="At a glance">
-        <div><dt>Authority</dt><dd>FPA §206 · DOE Act §403</dd></div>
-        <div><dt>Dockets</dt><dd class="mono">EL26-67-000 to EL26-72-000</dd></div>
-        <div><dt>As of</dt><dd class="mono">2026-06-22</dd></div>
-      </dl>
     </div>
   </header>
 
-  <section class="kpis wrap" aria-label="Key figures" id="kpis"></section>
-
   <main id="main" role="main" class="wrap">
     <nav class="tabs" role="tablist" aria-label="Sections">
-      <button class="tab" role="tab" id="tab-timeline" aria-controls="panel-timeline" aria-selected="true" tabindex="0" data-tab="timeline">
-        <span class="tab-no">01</span> Timeline &amp; Toplines
+      <button class="tab" role="tab" id="tab-overview" aria-controls="panel-overview" aria-selected="true" tabindex="0" data-tab="overview">
+        <span class="tab-no">01</span> Overview
+      </button>
+      <button class="tab" role="tab" id="tab-timeline" aria-controls="panel-timeline" aria-selected="false" tabindex="-1" data-tab="timeline">
+        <span class="tab-no">02</span> Timeline
+      </button>
+      <button class="tab" role="tab" id="tab-reforms" aria-controls="panel-reforms" aria-selected="false" tabindex="-1" data-tab="reforms">
+        <span class="tab-no">03</span> Reforms
       </button>
       <button class="tab" role="tab" id="tab-dockets" aria-controls="panel-dockets" aria-selected="false" tabindex="-1" data-tab="dockets">
-        <span class="tab-no">02</span> The Dockets <span class="tab-aside">E-7 to E-12</span>
+        <span class="tab-no">04</span> Dockets <span class="tab-aside">E-7 to E-12</span>
       </button>
       <button class="tab" role="tab" id="tab-news" aria-controls="panel-news" aria-selected="false" tabindex="-1" data-tab="news">
-        <span class="tab-no">03</span> News &amp; Discourse
+        <span class="tab-no">05</span> Discourse
       </button>
     </nav>
 
-    <section class="panel" role="tabpanel" id="panel-timeline" aria-labelledby="tab-timeline" tabindex="0"></section>
+    <section class="panel" role="tabpanel" id="panel-overview" aria-labelledby="tab-overview" tabindex="0"></section>
+    <section class="panel" role="tabpanel" id="panel-timeline" aria-labelledby="tab-timeline" tabindex="0" hidden></section>
+    <section class="panel" role="tabpanel" id="panel-reforms" aria-labelledby="tab-reforms" tabindex="0" hidden></section>
     <section class="panel" role="tabpanel" id="panel-dockets" aria-labelledby="tab-dockets" tabindex="0" hidden></section>
     <section class="panel" role="tabpanel" id="panel-news" aria-labelledby="tab-news" tabindex="0" hidden></section>
 

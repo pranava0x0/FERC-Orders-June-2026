@@ -40,12 +40,25 @@
   }
   function paras(arr) { return arr.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join(""); }
 
-  /* ---- KPIs ---- */
-  function renderKpis() {
-    document.getElementById("kpis").innerHTML = D.kpis.map(function (k) {
+  /* ---- TAB: Overview (stats + at-a-glance + background) ---- */
+  function renderOverview() {
+    var stats = '<div class="kpis">' + D.kpis.map(function (k) {
       return '<div class="kpi' + (k.deadline ? " deadline" : "") + '"><div class="v">' + esc(k.value) +
         '</div><div class="l">' + esc(k.label) + '</div><div class="s">' + esc(k.sub) + "</div></div>";
-    }).join("");
+    }).join("") + "</div>";
+
+    var m = D.meta;
+    var glance = '<dl class="glance">' +
+      "<div><dt>Authority</dt><dd>" + esc(m.authority) + "</dd></div>" +
+      '<div><dt>Items &amp; dockets</dt><dd class="mono">' + esc(m.items) + "</dd></div>" +
+      '<div><dt>Reporter cite</dt><dd class="mono">' + esc(m.citeRange) + "</dd></div>" +
+      "<div><dt>Commission</dt><dd>" + esc(m.commissioners) + "</dd></div>" +
+      '<div><dt>As of</dt><dd class="mono">' + esc(m.capture) + "</dd></div>" +
+      "</dl>";
+
+    return head("Overview", m.subtitle) +
+      '<div class="overview-bg">' + paras(m.summary) + "</div>" +
+      stats + glance;
   }
 
   /* ---- TAB 1 ---- */
@@ -70,8 +83,8 @@
       top;
   }
 
-  /* ---- TAB 2 ---- */
-  function renderDockets() {
+  /* ---- TAB: Reforms (the five categories + jurisdiction + regional) ---- */
+  function renderReforms() {
     var cats = D.categories.map(function (c, i) {
       return '<details class="cat"' + (i === 0 ? " open" : "") + '><summary>' +
         '<span class="cat-no">' + c.n + "</span>" +
@@ -85,6 +98,23 @@
         srcChips(c.src) + "</div></details>";
     }).join("");
 
+    var jur = '<div class="blocks two">' + D.jurisdiction.map(function (b) {
+      return '<div class="block' + (/30-day/.test(b.h) ? " warn" : "") + '"><h4>' + esc(b.h) + "</h4><p>" + esc(b.body) + "</p>" + srcChips(b.src) + "</div>";
+    }).join("") + "</div>";
+
+    var reg = '<div class="blocks two">' + D.regional.map(function (b) {
+      return '<div class="block"><h4>' + esc(b.h) + "</h4><p>" + esc(b.body) + "</p>" + srcChips(b.src) + "</div>";
+    }).join("") + "</div>";
+
+    return head("The five reform categories",
+      "Each tailored order tees up the same five categories. FERC's mandate text is quoted; the underlying DOE ANOPR principles show the mechanics.") + cats +
+      head("Jurisdictional & contractual protections",
+      "Where FERC draws the federal/state line, and how it shields existing deals.") + jur +
+      head("Regional distinctions at a glance", "The variations FERC says the orders were designed to reflect.") + reg;
+  }
+
+  /* ---- TAB: Dockets (the six order cards + how to participate) ---- */
+  function renderDockets() {
     var docs = '<div class="dockets">' + D.dockets.map(function (d) {
       var so = D.SOURCES[d.url];
       // Link to the committed copy under docs/orders/ (served by GitHub Pages, same-origin) so the
@@ -126,14 +156,6 @@
         "</div></div>";
     }).join("") + "</div>";
 
-    var jur = '<div class="blocks two">' + D.jurisdiction.map(function (b) {
-      return '<div class="block' + (/30-day/.test(b.h) ? " warn" : "") + '"><h4>' + esc(b.h) + "</h4><p>" + esc(b.body) + "</p>" + srcChips(b.src) + "</div>";
-    }).join("") + "</div>";
-
-    var reg = '<div class="blocks two">' + D.regional.map(function (b) {
-      return '<div class="block"><h4>' + esc(b.h) + "</h4><p>" + esc(b.body) + "</p>" + srcChips(b.src) + "</div>";
-    }).join("") + "</div>";
-
     var p = D.participate;
     var partRows = '<div class="docket-links">' + p.dockets.map(function (d) {
       return '<a class="docket-link" target="_blank" rel="noopener noreferrer" href="' + esc(p.docketSheet(d.docket)) +
@@ -146,13 +168,8 @@
     }).join("") + "</div>";
     var participate = '<p class="lede" style="margin-bottom:14px">' + esc(p.intro) + "</p>" + partRows + partLinks;
 
-    return head("The five reform categories",
-      "Each tailored order tees up the same five categories. FERC's mandate text is quoted; the underlying DOE ANOPR principles show the mechanics.") + cats +
-      head("The six dockets: E-7 through E-12",
+    return head("The six dockets: E-7 through E-12",
       "Same §206 spine, region-specific application. Directives and findings below are quoted from each order PDF (downloaded & OCR'd, captions verified) with paragraph cites; the order's FERC reporter cite, length, and named respondents head each card.") + docs +
-      head("Jurisdictional & contractual protections",
-      "Where FERC draws the federal/state line, and how it shields existing deals.") + jur +
-      head("Regional distinctions at a glance", "The variations FERC says the orders were designed to reflect.") + reg +
       head("File or follow the dockets", "Every proceeding is open on the public record. Use the exact docket number on any submission.") + participate;
   }
 
@@ -209,12 +226,19 @@
   }
 
   /* ---- tablist ---- */
-  var TABS = ["timeline", "dockets", "news"];
-  var renderers = { timeline: renderTimeline, dockets: renderDockets, news: renderNews };
+  var TABS = ["overview", "timeline", "reforms", "dockets", "news"];
+  var renderers = { overview: renderOverview, timeline: renderTimeline, reforms: renderReforms, dockets: renderDockets, news: renderNews };
   var rendered = {};
 
   function panelFor(name) { return document.getElementById("panel-" + name); }
   function tabFor(name) { return document.getElementById("tab-" + name); }
+
+  // Tabs are sticky; on a user-initiated switch, scroll back up to the tablist so the new
+  // (often shorter) panel starts at the top instead of leaving the viewport stranded mid-page.
+  function scrollToTabsTop() {
+    var main = document.getElementById("main");
+    if (main && window.pageYOffset > main.offsetTop) window.scrollTo(0, main.offsetTop);
+  }
 
   function activate(name, focus) {
     TABS.forEach(function (t) {
@@ -240,19 +264,18 @@
     else if (e.key === "ArrowLeft" || e.key === "ArrowUp") next = (i - 1 + TABS.length) % TABS.length;
     else if (e.key === "Home") next = 0;
     else if (e.key === "End") next = TABS.length - 1;
-    if (next !== null) { e.preventDefault(); activate(TABS[next], true); }
+    if (next !== null) { e.preventDefault(); activate(TABS[next], true); scrollToTabsTop(); }
   }
 
   function init() {
-    renderKpis();
     renderProvenance();
     TABS.forEach(function (t) {
       var tab = tabFor(t);
-      tab.addEventListener("click", function () { activate(t, false); });
+      tab.addEventListener("click", function () { activate(t, false); scrollToTabsTop(); });
       tab.addEventListener("keydown", onKey);
     });
     var initial = (location.hash || "").replace("#", "");
-    activate(TABS.indexOf(initial) >= 0 ? initial : "timeline", false);
+    activate(TABS.indexOf(initial) >= 0 ? initial : "overview", false);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
