@@ -52,7 +52,10 @@ The site is fully static; no Actions required.
   [`sources/orders-extract.json`](sources/orders-extract.json). The PDFs themselves live in
   `sources/pdf/orders/` (gitignored — large binaries; re-downloadable from the linked URLs).
 
-Capture date: **2026-06-22**. Sources and extracted text live in [`sources/`](sources/).
+Capture date: **2026-06-22**. Sources and extracted text live in [`sources/`](sources/) — including the
+complete machine-readable text of all six orders in [`sources/text/orders/`](sources/text/orders/)
+(1.73M chars; a test asserts every quoted directive appears verbatim there).
 
-See [`design-notes.md`](design-notes.md) for the visual identity and [`issues.md`](issues.md) for the
-audit trail.
+See also: [`design-notes.md`](design-notes.md) (visual identity) · [`LEARNINGS.md`](LEARNINGS.md)
+(what this build taught) · [`agent-runs.md`](agent-runs.md) (subagent run stats + evaluation) ·
+[`issues.md`](issues.md) (audit trail).
