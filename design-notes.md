@@ -53,10 +53,20 @@ drop shadows. Radii 4–6px (authoritative, document-like).
 
 ## Tabs
 
-Three document tabs (base §9 tablist a11y): **Timeline & Toplines · The Dockets (E-7–E-12) · News & Discourse.**
-Keyboard arrow navigation, `aria-selected`, deep-linkable via `#hash`.
+Five document tabs (base §9 tablist a11y): **Overview · Timeline · Reforms · Dockets (E-7 to E-12) ·
+Discourse.** Overview carries the six stats, an at-a-glance block, and a short background; Reforms holds
+the five reform categories plus the jurisdictional and regional reads; Dockets holds the six order
+cards and how to participate. Keyboard arrow navigation, `aria-selected`, deep-linkable via `#hash`.
+The tablist is sticky and horizontally scrollable on narrow screens; switching a tab scrolls back up to
+it so a short panel starts at the top, not stranded mid-page.
 
 ## Voice
 
 Plain, specific, declarative. Lead with the number/date/docket. No "delve/robust/seamless," no
 rule-of-three padding. Labels uppercase-tracked; prose sentence case.
+
+**No AI-isms in any displayed prose.** No em-dashes (reach for a comma, colon, period, or
+parentheses), no "it's not X, it's Y" parallelism, no marketing register. Ranges read "X to Y," not
+"X–Y." Leave verbatim FERC/DOE quotes, reporter cites, and source titles exactly as quoted; the dash
+rule is for our editorial prose, not for quoted text. A regression-style habit: after editing copy,
+grep the rendered tabs for em-dashes and expect zero.

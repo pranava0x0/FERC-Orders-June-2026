@@ -1,0 +1,30 @@
+{
+  "captured_at": "2026-06-23",
+  "note": "Verified source snippets backing the directly-quoted phrases in D.voices (Discourse 'Commentary across the spectrum'). A test in tests/source-accuracy.test.mjs asserts every single-quoted phrase in a voice's take appears in its evidence here, so a future edit to a quote fails loudly until the evidence is re-verified against the cited source.",
+  "voices": {
+    "Tyler Norris": {
+      "src": "norris",
+      "evidence": "By curtailing just 0.25% to 1% of a data center's annual load, primarily during the most stressed hours, the existing U.S. grid can accommodate roughly 76 to 98 gigawatts of new large flexible load; in ERCOT about 15 gigawatts of new data center load without adding new capacity. The vast majority of loads in existing demand response were planned as firm loads."
+    },
+    "Travis Kavulla": {
+      "src": "kavulla",
+      "evidence": "Kavulla proposes borrowing an open season mechanism from interstate natural gas pipeline regulation to replace the current first-come, first-served interconnection process. Winners receive transferable property rights to grid access, not merely revocable regulatory permission."
+    },
+    "Devin Hartman": {
+      "src": "utilitydive",
+      "evidence": "Devin Hartman, a senior fellow at the R Street Institute, said FERC's action is far more substantively ambitious than the ANOPR, and it enables region-specific investigation pathways that should be more effective than a uniform rulemaking. Hartman also wished FERC had included non-RTO areas, which typically suffer from the worst transmission and interconnection practices."
+    },
+    "Sierra Club": {
+      "src": "insideclimate",
+      "evidence": "Sierra Club said in a prepared statement that while the full orders have not yet been released, FERC's announcement at today's meeting is responsive to Sierra Club's requests on several fronts, including protecting consumers from costs incurred by large loads."
+    },
+    "Southern Environmental Law Center": {
+      "src": "insideclimate",
+      "evidence": "There's no real quarantining of the cost caused by data centers to those data centers, and really just kind of spread throughout the whole customer base, said Nick Guidi, a senior attorney for the Southern Environmental Law Center. I think we were hoping to see a little bit of federal standardization of that process."
+    },
+    "Public Citizen": {
+      "src": "publiccitizen",
+      "evidence": "Public Citizen filed comments supporting a temporary moratorium on new data center interconnections until the issues raised in the NERC Level 3 Alert are resolved, and noted concerns about state authority over the energy aspects of data centers."
+    }
+  }
+}

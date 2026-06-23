@@ -1,0 +1,62 @@
+# Large Load Interconnection
+
+> From the DOE §403 ANOPR (Docket RM26-4-000) to FERC’s June 18, 2026 tailored §206 show cause orders
+
+On October 23, 2025, the Department of Energy used its rarely invoked § 403 authority to direct FERC to open a rulemaking on the interconnection of large loads such as data centers (Docket RM26-4-000).
+Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO, putting all six markets on a 30/60-day clock to defend or revise their large-load tariffs.
+
+A static, independent analysis microsite (not affiliated with FERC or DOE). Source of truth: docs/js/data.js. Evidence is kept in three visibly distinct tiers: FERC primary, DOE primary, and secondary analysis.
+
+## Key facts
+
+- Authority: Federal Power Act § 206 · DOE Organization Act § 403
+- Items and dockets: Items E-7 to E-12 · Dockets EL26-67-000 to EL26-72-000
+- Reporter cites: 195 FERC ¶ 61,211 to 61,216
+- Commission: Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte
+- Order record as of 2026-06-22; Discourse commentary gathered 2026-06-23
+- RTOs / ISOs: 6, all FERC-jurisdictional grid operators + their TOs
+- Reform categories: 5, teed up in each tailored order
+- Informational report: 30 days, resource-adequacy plan to serve large loads
+- Justify or file: 60 days, defend tariffs or propose §206 revisions
+- “Large load”: > 20 MW, DOE threshold (per Order No. 2003)
+- Pages reviewed: 3,500+, public comments in the RM26-4 docket
+
+## The six show cause orders (E-7 to E-12)
+
+Each order PDF is committed and served at the page-precise link below; the official FERC source (Cloudflare-gated) is noted after it.
+
+- [E-7 PJM, EL26-67-000, 195 FERC ¶ 61,211, 114 pp](https://pranava0x0.github.io/FERC-Orders-June-2026/orders/e-7-pjm-el26-67-000.pdf): Co-location rules already in place. Region: Mid-Atlantic / 13 states + DC. Official: https://www.ferc.gov/media/e-7-el26-67-000
+- [E-8 MISO, EL26-70-000, 195 FERC ¶ 61,212, 115 pp](https://pranava0x0.github.io/FERC-Orders-June-2026/orders/e-8-miso-el26-70-000.pdf): Early-stage large-load rules. Region: 15 states, Midwest + South. Official: https://www.ferc.gov/media/e-8-el26-70-000
+- [E-9 SPP, EL26-68-000, 195 FERC ¶ 61,213, 92 pp](https://pranava0x0.github.io/FERC-Orders-June-2026/orders/e-9-spp-el26-68-000.pdf): Most mature: HILL / HILLGA. Region: Central U.S., 14+ states. Official: https://www.ferc.gov/media/e-9-el26-68-000
+- [E-10 CAISO, EL26-71-000, 195 FERC ¶ 61,214, 118 pp](https://pranava0x0.github.io/FERC-Orders-June-2026/orders/e-10-caiso-el26-71-000.pdf): No Order No. 888 service. Region: California (+ WEIM footprint). Official: https://www.ferc.gov/media/e-10-el26-71-000
+- [E-11 ISO-NE, EL26-72-000, 195 FERC ¶ 61,215, 115 pp](https://pranava0x0.github.io/FERC-Orders-June-2026/orders/e-11-isone-el26-72-000.pdf): Transmission-constrained grid. Region: Six New England states. Official: https://www.ferc.gov/media/e11-el26-72-000
+- [E-12 NYISO, EL26-69-000, 195 FERC ¶ 61,216, 119 pp](https://pranava0x0.github.io/FERC-Orders-June-2026/orders/e-12-nyiso-el26-69-000.pdf): Largely outside the tariff today. Region: New York State. Official: https://www.ferc.gov/media/e12-el26-69-000
+
+## The five reform categories
+
+- 1. Application & study processes (incl. alternative transmission technologies): Developing efficient transmission-service application and study processes, including consideration of alternative transmission technologies.
+- 2. Cost-shifting prevention & transmission-cost transparency: Preventing cost shifting and requiring transparency into transmission costs.
+- 3. Co-location arrangements & behind-the-meter (BTM) generation: Accommodating co-location agreements and behind-the-meter generation.
+- 4. New transmission services for flexible large loads: Providing new transmission services for flexible large loads.
+- 5. Studying generation serving electrically proximate / co-located loads: Developing a process to study generating facilities that serve electrically proximate large loads and co-located loads.
+
+## Primary sources
+
+- [DOE §403 Letter & enclosed ANOPR](https://www.energy.gov/sites/default/files/2025-10/403%20Large%20Loads%20Letter.pdf): U.S. Dept. of Energy (Sec. Chris Wright), captured 2026-06-22
+- [News Release: “FERC Launches Aggressive Targeted Action to Speed Large Load Integration”](http://web.archive.org/web/20260618211730/https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration): FERC, Office of External Affairs, captured 2026-06-18 (Internet Archive)
+- [Fact Sheet: “FERC Takes Action to Supercharge America’s Grid…”](http://web.archive.org/web/20260620020229/https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and): FERC, captured 2026-06-20 (Internet Archive)
+- [Summaries: June 2026 Commission Meeting](http://web.archive.org/web/20260618204955/https://www.ferc.gov/news-events/news/summaries-june-2026-commission-meeting): FERC, Office of External Affairs, captured 2026-06-18 (Internet Archive)
+- [Docket RM26-4-000 landing page: “Interconnection of Large Loads…”](http://web.archive.org/web/20260619085932/https://www.ferc.gov/rm26-4): FERC, captured 2026-06-19 (Internet Archive)
+
+## Commentary across the spectrum (secondary, gathered 2026-06-23)
+
+- Tyler Norris (nonpartisan, Duke Nicholas Institute): The research case behind the flexible-load category: curtailing roughly 0.25% to 1% of a large load’s annual peak lets the existing grid absorb tens of gigawatts of new demand, so a curtailable data center can connect years sooner than a firm-load study would allow. Source: https://www.powermag.com/duke-researchers-grid-flexibility-key-to-accommodate-load-growth/
+- Travis Kavulla (right of center, American Affairs · NRG): Wants grid access priced, not rationed: borrow the natural-gas ‘open season’ so large loads bid for transferable interconnection rights instead of queuing first-come, first-served. Reads the orders’ cost-causation push as a step toward that, but short of market pricing. Source: https://www.texasenergyandpower.com/p/price-the-grid-or-keep-rationing
+- Devin Hartman (right of center, R Street Institute): Supportive of the design: calls the action ‘far more substantively ambitious than the ANOPR,’ with region-specific §206 pathways more effective than a uniform rule. Faults it mainly for leaving out non-RTO areas, which he says have the worst interconnection practices. Source: https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/
+- Sierra Club (left of center, environmental advocacy): Cautiously positive: the announcement is ‘responsive to Sierra Club’s requests on several fronts, including protecting consumers from costs incurred by large loads,’ with the full orders still to be reviewed. Source: https://insideclimatenews.org/news/18062026/federal-energy-regulatory-commission-data-center-orders/
+- Southern Environmental Law Center (left of center, Nick Guidi, senior attorney): Unconvinced by the cost guardrail: ‘There’s no real quarantining of the cost caused by data centers to those data centers,’ so it gets ‘spread throughout the whole customer base.’ Wanted more federal standardization than the orders deliver. Source: https://insideclimatenews.org/news/18062026/federal-energy-regulatory-commission-data-center-orders/
+- Public Citizen (left of center, consumer watchdog): The most skeptical: pressed FERC for a temporary moratorium on new data-center interconnections until NERC reliability alerts are resolved, and warns against weakening state authority over data centers. Source: https://www.citizen.org/news/ferc-must-reconsider-risks-posed-by-data-centers-to-power-grids/
+
+## Read the site
+
+- [Large Load Interconnection](https://pranava0x0.github.io/FERC-Orders-June-2026/): five tabs (Overview, Timeline, Reforms, Dockets, Discourse).

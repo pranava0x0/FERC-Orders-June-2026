@@ -4,6 +4,7 @@ import { dirname, join } from "node:path";
 import { test } from "node:test";
 import { fileURLToPath } from "node:url";
 import vm from "node:vm";
+import { buildLlmsTxt } from "../tools/build-llms.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -39,14 +40,50 @@ const ORDER_EXTRACT = jsonFile("sources", "orders-extract.json");
 const MANIFEST_BY_ID = new Map(MANIFEST.sources.map((source) => [source.id, source]));
 const EXTRACT_BY_ITEM = new Map(ORDER_EXTRACT.orders.map((order) => [order.item, order]));
 
+// The six order PDFs are committed under docs/orders/ so GitHub Pages serves them and the
+// page-citation links open inline (same-origin); each docket's `pdf` field is that served path.
 const ORDER_PDF_BY_ITEM = {
-  "E-7": ["sources", "pdf", "orders", "e-7-pjm-el26-67-000.pdf"],
-  "E-8": ["sources", "pdf", "orders", "e-8-miso-el26-70-000.pdf"],
-  "E-9": ["sources", "pdf", "orders", "e-9-spp-el26-68-000.pdf"],
-  "E-10": ["sources", "pdf", "orders", "e-10-caiso-el26-71-000.pdf"],
-  "E-11": ["sources", "pdf", "orders", "e-11-isone-el26-72-000.pdf"],
-  "E-12": ["sources", "pdf", "orders", "e-12-nyiso-el26-69-000.pdf"],
+  "E-7": ["docs", "orders", "e-7-pjm-el26-67-000.pdf"],
+  "E-8": ["docs", "orders", "e-8-miso-el26-70-000.pdf"],
+  "E-9": ["docs", "orders", "e-9-spp-el26-68-000.pdf"],
+  "E-10": ["docs", "orders", "e-10-caiso-el26-71-000.pdf"],
+  "E-11": ["docs", "orders", "e-11-isone-el26-72-000.pdf"],
+  "E-12": ["docs", "orders", "e-12-nyiso-el26-69-000.pdf"],
 };
+
+const ORDER_TXT_BY_ITEM = {
+  "E-7": ["sources", "text", "orders", "e-7-pjm-el26-67-000.txt"],
+  "E-8": ["sources", "text", "orders", "e-8-miso-el26-70-000.txt"],
+  "E-9": ["sources", "text", "orders", "e-9-spp-el26-68-000.txt"],
+  "E-10": ["sources", "text", "orders", "e-10-caiso-el26-71-000.txt"],
+  "E-11": ["sources", "text", "orders", "e-11-isone-el26-72-000.txt"],
+  "E-12": ["sources", "text", "orders", "e-12-nyiso-el26-69-000.txt"],
+};
+
+// Split an extracted order into a Map of physical page number -> page text, using the
+// `--- PAGE N ---` markers the PyMuPDF extraction writes. The physical page number is what
+// a `#page=N` PDF link jumps to.
+function loadOrderPages(item) {
+  const raw = textFile(...ORDER_TXT_BY_ITEM[item]);
+  const pages = new Map();
+  const parts = raw.split(/--- PAGE (\d+) ---/);
+  for (let i = 1; i < parts.length; i += 2) {
+    pages.set(Number(parts[i]), parts[i + 1] ?? "");
+  }
+  return pages;
+}
+
+// The cited page "carries" the directive when the longest segment of the displayed quote
+// appears there (verbatim, or with OCR-level slack measured by longest common substring).
+function pageCarriesQuote(quote, pageText) {
+  const longest = quoteSegments(quote).sort((a, b) => b.length - a.length)[0] ?? looseText(quote);
+  const normalizedPage = looseText(pageText);
+  if (normalizedPage.includes(longest)) return true;
+  // Cap the bar at 60 contiguous chars: inline footnote markers (e.g. "technologies154 as")
+  // break a long verbatim run, and 60 specific legal-text chars already prove the page carries it.
+  const threshold = Math.min(longest.length, 60, Math.max(24, Math.floor(longest.length * 0.6)));
+  return longestCommonSubstringLength(longest, normalizedPage) >= threshold;
+}
 
 function looseText(value) {
   return String(value)
@@ -255,6 +292,10 @@ test("source PDFs and extracted order text exist for every displayed order", () 
     const pdfPath = rootPath(...pdfParts);
     assert.ok(existsSync(pdfPath), `${docket.item} PDF must be committed`);
     assert.ok(statSync(pdfPath).size > 100_000, `${docket.item} PDF is unexpectedly small`);
+
+    // The docket's `pdf` field is the page-served path; it must match the committed file under docs/.
+    assert.equal(docket.pdf, pdfParts.slice(1).join("/"), `${docket.item} pdf path must point at the served copy`);
+    assert.ok(existsSync(rootPath("docs", docket.pdf)), `${docket.item} served PDF (docs/${docket.pdf}) must exist`);
   }
 });
 
@@ -297,6 +338,64 @@ test("displayed region-specific order claims are supported by extracted PDF text
     ];
     for (const finding of docket.reg) {
       assertAnySourceSupports(`${docket.item} regional finding`, finding, extractedOrderClaims);
+    }
+  }
+});
+
+test("each directive citation links to a PDF page that carries its quoted text", () => {
+  for (const docket of D.dockets) {
+    const pages = loadOrderPages(docket.item);
+    const maxPage = Math.max(...pages.keys());
+    assert.equal(maxPage, docket.pages, `${docket.item} extracted page count must match displayed length`);
+
+    for (const directive of docket.dir) {
+      assert.ok(
+        Number.isInteger(directive.pg),
+        `${docket.item} directive "${directive.p}" is missing an integer pg (PDF page) for its citation link`,
+      );
+      assert.ok(
+        directive.pg >= 1 && directive.pg <= maxPage,
+        `${docket.item} directive "${directive.p}" links to page ${directive.pg}, outside 1..${maxPage}`,
+      );
+      assert.ok(
+        pageCarriesQuote(directive.q, pages.get(directive.pg) ?? ""),
+        `${docket.item} "${directive.p}" links to page ${directive.pg}, which does not carry the quote: ${directive.q}`,
+      );
+    }
+  }
+});
+
+test("docs/llms.txt is generated from data.js and in sync", () => {
+  const committed = textFile("docs", "llms.txt");
+  const generated = buildLlmsTxt(D);
+  assert.equal(committed, generated, "docs/llms.txt is stale; regenerate with: node tools/build-llms.mjs");
+});
+
+test("Discourse commentary quotes are backed by captured evidence", () => {
+  const evidence = jsonFile("sources", "voices-evidence.json");
+  const byName = new Map(Object.entries(evidence.voices));
+
+  for (const voice of D.voices) {
+    const ev = byName.get(voice.name);
+    assert.ok(ev, `voice "${voice.name}" must have an entry in sources/voices-evidence.json`);
+    assert.ok(D.SOURCES[ev.src], `evidence for "${voice.name}" cites unknown source "${ev.src}"`);
+    assert.ok(
+      voice.src.includes(ev.src),
+      `voice "${voice.name}" must cite its evidence source "${ev.src}" (cites ${voice.src.join(", ")})`,
+    );
+
+    // Every directly-quoted phrase in the take must appear in the captured evidence. The opening
+    // curly quote (U+2018) marks a quote start; the closing (U+2019) is the one not followed by a
+    // letter, so inner apostrophes (also U+2019) don't end the match early.
+    const evidenceText = looseText(ev.evidence);
+    const quotes = [...voice.take.matchAll(/‘(.+?)’(?![A-Za-z])/g)]
+      .map((match) => match[1])
+      .filter((quote) => looseText(quote).length >= 6);
+    for (const quote of quotes) {
+      assert.ok(
+        evidenceText.includes(looseText(quote)),
+        `voice "${voice.name}" quotes text not found in its captured evidence: ${quote}`,
+      );
     }
   }
 });
