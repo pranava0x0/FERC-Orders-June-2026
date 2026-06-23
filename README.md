@@ -31,7 +31,7 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 19 tests across both suites
+node --test tests/*.test.mjs   # 22 tests across both suites
 ```
 
 Two suites, no dependencies:
@@ -40,7 +40,10 @@ Two suites, no dependencies:
   reform categories, every source id resolves, count floors, archive URLs present, and every displayed
   directive quote appears verbatim in `sources/text/orders/*.txt`.
 - `tests/source-accuracy.test.mjs`: accuracy. Displayed order metadata, directives, region-specific
-  claims, and FERC/DOE summary claims are each supported by the extracted source text.
+  claims, and FERC/DOE summary claims are each supported by the extracted source text. Also checks that
+  each directive cite links to a PDF page that carries its quote, that every Discourse commentary quote
+  matches captured evidence in `sources/voices-evidence.json`, and that `docs/llms.txt` is in sync with
+  `data.js` (regenerate with `node tools/build-llms.mjs`).
 
 ## Deploy (GitHub Pages)
 
@@ -58,13 +61,18 @@ The site is fully static; no Actions required.
   downloaded through a real browser that passes Cloudflare, then OCR'd. Each one's **page-1 caption was
   verified** (FERC cite, respondent RTO, docket, "Order Instituting Proceeding Under Section 206,"
   issued date) before its text was used. The per-order directives in Tab 2 are quoted from these PDFs
-  with paragraph cites; the structured extract is committed at
-  [`sources/orders-extract.json`](sources/orders-extract.json). The PDFs themselves live in
-  `sources/pdf/orders/` (gitignored, large binaries; re-downloadable from the linked URLs).
+  with paragraph cites, and each cite links to the exact page; the structured extract is committed at
+  [`sources/orders-extract.json`](sources/orders-extract.json). The six PDFs are committed under
+  [`docs/orders/`](docs/orders/) and served by GitHub Pages (so `#page=` opens inline at the cited
+  page); they remain re-downloadable from the linked ferc.gov URLs.
 
-Capture date: **2026-06-22**. Sources and extracted text live in [`sources/`](sources/), including the
-complete machine-readable text of all six orders in [`sources/text/orders/`](sources/text/orders/)
-(1.73M chars; a test asserts every quoted directive appears verbatim there).
+Capture date: **2026-06-22** (the secondary commentary in the Discourse tab was gathered **2026-06-23**).
+Sources and extracted text live in [`sources/`](sources/), including the complete machine-readable text
+of all six orders in [`sources/text/orders/`](sources/text/orders/) (1.73M chars; a test asserts every
+quoted directive appears verbatim there).
+
+For LLM and agent consumers, [`docs/llms.txt`](docs/llms.txt) (llmstxt.org) is generated from `data.js`
+via `node tools/build-llms.mjs` and served at the site root; a test keeps it in sync with the data.
 
 See also: [`design-notes.md`](design-notes.md) (visual identity) · [`LEARNINGS.md`](LEARNINGS.md)
 (what this build taught) · [`agent-runs.md`](agent-runs.md) (subagent run stats + evaluation) ·
