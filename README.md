@@ -17,8 +17,8 @@ Built for an energy-regulatory audience. Five tabs:
 4. **Dockets (E-7 to E-12)**: six collapsible per-RTO accordions — open one for what's unique to that
    system, the quoted directives (page-linked to the committed PDF and ferc.gov), the system-specific
    Section IV asks, what each commissioner said about that order (quote + page cite, both links), a
-   variable-length distinct-findings list, and the full named-respondent roster — plus how to file or
-   follow each docket.
+   variable-length distinct-findings list (each finding page-cited to the PDF + ferc.gov), and the full
+   named-respondent roster — plus how to file or follow each docket.
 5. **Discourse**: stakeholder reception, named commentary across the political spectrum, and
    trade-press narratives.
 

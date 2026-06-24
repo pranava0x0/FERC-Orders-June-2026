@@ -102,6 +102,10 @@ test("six dockets, correct item -> RTO -> docket mapping", () => {
       assert.ok(x.q.length >= 20, `${item} directive ${i} quote is substantive`);
     });
     assert.ok(Array.isArray(d.reg) && d.reg.length >= 3, `${item} has ≥3 region-specific findings`);
+    d.reg.forEach((r, i) => {
+      assert.ok(r && typeof r.t === "string" && r.t.length >= 20, `${item} reg ${i} has substantive text`);
+      if (r.pg != null) assert.ok(r.p && typeof r.a === "string" && Number.isInteger(r.pg), `${item} reg ${i} page cite has p/pg/a`);
+    });
     // what's-unique-per-system enrichment
     assert.ok(typeof d.unique === "string" && d.unique.length >= 40, `${item} has a 'what's unique' summary`);
     assert.ok(Array.isArray(d.asks) && d.asks.length >= 1, `${item} has ≥1 system-specific ask`);
@@ -150,6 +154,31 @@ test("commissioner statements: five, with per-order page cites that carry the qu
       assert.ok(loose(pages.get(pg) || "").includes(q), `${d.item} ${key} p.${pg} carries the quote "${byKey[key].quote}"`);
     }
   }
+});
+
+test("distinct findings: every page cite lands on a page carrying the finding's anchor text", () => {
+  const STEM = {
+    "E-7": "e-7-pjm-el26-67-000", "E-8": "e-8-miso-el26-70-000", "E-9": "e-9-spp-el26-68-000",
+    "E-10": "e-10-caiso-el26-71-000", "E-11": "e-11-isone-el26-72-000", "E-12": "e-12-nyiso-el26-69-000",
+  };
+  const loose = (s) => s.replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ").toLowerCase();
+  const pagesOf = (item) => {
+    const parts = readFileSync(join(here, "..", "sources", "text", "orders", STEM[item] + ".txt"), "utf8").split(/--- PAGE (\d+) ---/);
+    const map = new Map([[1, parts[0]]]);
+    for (let i = 1; i < parts.length; i += 2) map.set(Number(parts[i]), parts[i + 1] || "");
+    return map;
+  };
+  let checked = 0;
+  for (const d of D.dockets) {
+    const pages = pagesOf(d.item);
+    for (const r of d.reg) {
+      if (r.pg == null) continue;
+      assert.ok(r.pg >= 1 && r.pg <= d.pages, `${d.item} finding p.${r.pg} within 1..${d.pages}`);
+      assert.ok(loose(pages.get(r.pg) || "").includes(loose(r.a)), `${d.item} finding p.${r.pg} carries anchor "${r.a}"`);
+      checked++;
+    }
+  }
+  assert.ok(checked >= 20, `enough page-anchored findings checked (${checked})`);
 });
 
 test("five reform categories, numbered 1..5, each fully populated", () => {

@@ -178,7 +178,21 @@
             '<div class="commish-quote">“…' + esc(c.quote) + '…”</div></div>';
         }).join("") + "</div></details>" : "";
       var region = '<details class="dreg"><summary>What’s distinct about ' + esc(d.rto) + " (" + d.reg.length + ")</summary><ul>" +
-        d.reg.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></details>";
+        d.reg.map(function (r) {
+          var rc = "";
+          if (r.p && r.pg) {
+            // Same convention as the directive cites: link to the PDF page where the finding's text
+            // appears (FERC PDFs drop paragraph numbers from their text layer); both PDF + gov paths.
+            rc = ' <span class="reg-cite"><span class="dir-para mono">' + esc(r.p) + "</span>" +
+              '<a class="cite-link" href="' + esc(d.pdf) + "#page=" + r.pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the committed ' + esc(d.item) +
+              " order PDF at page " + r.pg + '" title="Committed PDF, opens inline to p. ' + r.pg + '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
+              '<a class="cite-link" href="' + esc(so.url) + "#page=" + r.pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov ' + esc(d.item) +
+              " order at page " + r.pg + '" title="Official ferc.gov source, page ' + r.pg + '">gov <span class="ext" aria-hidden="true">↗</span></a></span>';
+          } else if (r.p) {
+            rc = ' <span class="dir-para mono">' + esc(r.p) + "</span>";
+          }
+          return "<li>" + esc(r.t) + rc + "</li>";
+        }).join("") + "</ul></details>";
       var roster = (d.respondentList && d.respondentList.length) ?
         '<details class="dreg dros"><summary>All ' + d.respondentList.length + " named respondents</summary><ul class=\"roster\">" +
         d.respondentList.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></details>" : "";
