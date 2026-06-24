@@ -2,7 +2,7 @@
  * No dependencies (node: built-ins only). Guards the facts the UI renders. */
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
@@ -168,6 +168,29 @@ test("RM26-4 comment corpus: stats present and stakeholder buckets sum to the co
   });
   assert.ok(c.interventions >= 1 && c.orgs >= 1 && c.peakN >= 1, "secondary stats present");
   assert.match(c.url, /elibrary\.ferc\.gov/, "links to the eLibrary docket sheet");
+  // flagship comments read in full
+  assert.ok(Array.isArray(c.flagships) && c.flagships.length >= 5, "flagship summaries present");
+  const CATS = ["study", "cost", "colo", "flex", "proximate"];
+  c.flagships.forEach((f, i) => {
+    assert.ok(f.acc && f.filer && f.bucketLabel && f.summary && f.summary.length >= 40, `flagship ${i} fields`);
+    assert.match(f.elibrary, /elibrary\.ferc\.gov.*accession_Number=20\d{6}-\d{4}/, `flagship ${i} eLibrary link`);
+    CATS.forEach((k) => assert.ok(f.stances && f.stances[k], `flagship ${i} stance ${k}`));
+  });
+});
+
+test("comment audit trail: every flagship threads website -> summary JSON -> downloaded file", () => {
+  for (const f of D.comments.flagships) {
+    const sumPath = join(here, "..", "sources", "comments", "summaries", `${f.acc}.json`);
+    assert.ok(existsSync(sumPath), `summary JSON exists for ${f.filer} (${f.acc})`);
+    const s = JSON.parse(readFileSync(sumPath, "utf8"));
+    assert.equal(s.accession, f.acc, `${f.acc} summary accession matches`);
+    assert.ok(Array.isArray(s.files) && s.files.length >= 1, `${f.acc} summary lists a file`);
+    // the committed audit artifact is the extracted text (the source binary is gitignored, re-derivable)
+    assert.ok(s.files[0].text && existsSync(join(here, "..", s.files[0].text)), `${f.acc} extracted text exists in the repo`);
+  }
+  // the per-accession file inventory covers all comments
+  const files = JSON.parse(readFileSync(join(here, "..", "sources", "comments", "rm26-4-files.json"), "utf8"));
+  assert.ok(files.stats.accessions >= 270 && files.stats.with_files >= 260, "file inventory covers the comment set");
 });
 
 test("distinct findings: every page cite lands on a page carrying the finding's anchor text", () => {

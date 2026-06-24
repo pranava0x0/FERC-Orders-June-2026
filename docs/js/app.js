@@ -268,10 +268,33 @@
       }).join("") + "</div>";
       var cmsrc = '<div class="srcs"><span class="label">Source</span>' +
         '<a class="src-chip" data-tier="ferc" href="' + esc(cm.url) + '" target="_blank" rel="noopener noreferrer" title="FERC eLibrary docket sheet for RM26-4-000">eLibrary · RM26-4 docket sheet</a></div>';
+      // Flagship comments read in full: audit chain (eLibrary filing -> downloaded file -> summary) + stance per reform category.
+      var flag = "";
+      if (cm.flagships && cm.flagships.length) {
+        var CL = { study: "Study", cost: "Cost", colo: "Co-loc", flex: "Flex", proximate: "Prox-gen" };
+        var cards = cm.flagships.map(function (fl) {
+          var stances = Object.keys(CL).map(function (k) {
+            var v = (fl.stances || {})[k] || "silent";
+            var cls = /oppose/.test(v) ? "oppose" : /mixed/.test(v) ? "mixed" : /support/.test(v) ? "support" : "silent";
+            return '<span class="cm-stance ' + cls + '" title="' + esc(CL[k] + ": " + v) + '">' + esc(CL[k]) + "</span>";
+          }).join("");
+          var links = '<span class="cm-links"><a class="cite-link" href="' + esc(fl.elibrary) +
+            '" target="_blank" rel="noopener noreferrer" title="Open the eLibrary filing ' + esc(fl.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a>' +
+            (fl.file ? '<span class="cm-file mono" title="downloaded &amp; text-extracted in sources/comments/">' + esc(fl.file) + "</span>" : "") + "</span>";
+          return '<div class="cm-flag"><div class="cm-flag-head"><span class="cm-flag-name">' + esc(fl.filer) +
+            '</span><span class="cm-eg">' + esc(fl.bucketLabel || fl.bucket) + "</span>" + links + "</div>" +
+            '<p class="cm-flag-sum">' + esc(fl.summary) + "</p>" +
+            (fl.quote ? '<div class="cm-flag-quote">“' + esc(fl.quote) + '”</div>' : "") +
+            '<div class="cm-stances">' + stances + "</div></div>";
+        }).join("");
+        flag = head("Read in depth: flagship comments",
+          "A representative comment from each major camp, downloaded and read in full. Stance per reform category (Study · Cost · Co-loc · Flex · Prox-gen). Each links to its eLibrary filing; the downloaded file, extracted text, and a structured summary are committed under sources/comments/.") +
+          '<div class="cm-flagships">' + cards + "</div>";
+      }
       commentsBlock = head("What the RM26-4 commenters said",
         "All " + cm.filings + " filings in the ANOPR docket (RM26-4-000), scraped from FERC eLibrary on " + cm.captured +
-        " and grouped by stakeholder. The counts are exact; the per-camp positions are a provisional read pending review of the filing PDFs. Full manifest saved in the repo.") +
-        stats + '<p class="cm-meta">' + esc(cm.note) + "</p>" + bars + cmsrc;
+        " and grouped by stakeholder. The counts are exact; the all-camp position notes are a provisional read, while the flagship comments below were downloaded and read in full. Full manifest + summaries saved in the repo.") +
+        stats + '<p class="cm-meta">' + esc(cm.note) + "</p>" + bars + cmsrc + flag;
     }
 
     return head("Industry reception",

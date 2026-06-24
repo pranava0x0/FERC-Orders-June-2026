@@ -1,0 +1,155 @@
+[
+  {
+    "acc": "20251113-4000",
+    "filer": "U.S. Senator Edward J. Markey et al.",
+    "bucket": "elected",
+    "bucketLabel": "Elected officials",
+    "summary": "A senators' letter urging FERC to act so households are not forced to bear data-center-driven costs, citing record PJM capacity prices and tens of billions in rate increases.",
+    "quote": "We write to urge the Federal Energy Regulatory Commission (FERC) to take immediate action to ensure that U.S. households are not forced to bear the costs of the growing nationwide demand for energy by data centers.",
+    "stances": {
+      "study": "silent",
+      "cost": "strong support",
+      "colo": "silent",
+      "flex": "silent",
+      "proximate": "silent"
+    },
+    "file": "2026-00005 Sen. Markey+ (incoming).pdf",
+    "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251113-4000"
+  },
+  {
+    "acc": "20251119-5170",
+    "filer": "NRG Energy, Inc.",
+    "bucket": "generator_ipp",
+    "bucketLabel": "Generators / IPPs / developers",
+    "summary": "Supports the ANOPR's principles but proposes five discrete changes — most notably pricing interconnection capacity through gas-pipeline-style 'open seasons' rather than first-come queues.",
+    "quote": "NRG proposes that the final rule ... provide for the use of open seasons to expedite large load interconnections and to efficiently allocate interconnection capacity to such interconnections.",
+    "stances": {
+      "study": "support",
+      "cost": "strong support",
+      "colo": "support",
+      "flex": "support",
+      "proximate": "support"
+    },
+    "file": "Comments of NRG Energy ... signed Travis Kavulla.docx",
+    "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251119-5170"
+  },
+  {
+    "acc": "20251121-5212",
+    "filer": "Maryland Public Service Commission",
+    "bucket": "state_commission",
+    "bucketLabel": "State commissions",
+    "summary": "Treats large-load interconnection as critically important amid unprecedented growth, baseload retirements, and slow new generation; backs reform while preserving state authority over retail rates and siting and protecting Maryland ratepayers.",
+    "quote": "this large load expansion unequivocally places significant new demand on the electric grid in Maryland, in the broader PJM region, and beyond—presenting unique hurdles for demand forecasting and system planning.",
+    "stances": {
+      "study": "support",
+      "cost": "support",
+      "colo": "support",
+      "flex": "support",
+      "proximate": "support"
+    },
+    "file": "RM26-4 Large Load ANOPR - MDPSC Comments.pdf",
+    "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5212"
+  },
+  {
+    "acc": "20251121-5227",
+    "filer": "Industrial Customer Organizations (IECA, AF&PA, PJM ICC, Coalition of MISO Transmission Customers)",
+    "bucket": "industrial",
+    "bucketLabel": "Industrial & large customers",
+    "summary": "A coalition of large industrial customers presses hardest on cost causation: large loads must bear the network-upgrade costs they trigger so existing industrial and other customers are not saddled with data-center-driven costs.",
+    "quote": null,
+    "stances": {
+      "study": "support",
+      "cost": "strong support",
+      "colo": "support",
+      "flex": "mixed",
+      "proximate": "support"
+    },
+    "file": "Industrial Joint Comments RM26-4.pdf",
+    "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5227"
+  },
+  {
+    "acc": "20251121-5242",
+    "filer": "Pennsylvania Office of Consumer Advocate & Delaware Division of the Public Advocate",
+    "bucket": "consumer_advocate",
+    "bucketLabel": "Consumer advocates",
+    "summary": "Speaking for utility consumers, the joint advocates back the reform but center residential ratepayers: data-center load should pay its own way through strong cost causation and transparency, not be subsidized by households.",
+    "quote": null,
+    "stances": {
+      "study": "support",
+      "cost": "strong support",
+      "colo": "support",
+      "flex": "support",
+      "proximate": "mixed"
+    },
+    "file": "Joint Consumer Advocates (PA, DE) Comments - Large Loads ANOPR RM26-4.pdf",
+    "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5242"
+  },
+  {
+    "acc": "20251121-5301",
+    "filer": "Edison Electric Institute",
+    "bucket": "trade_assoc",
+    "bucketLabel": "Trade associations & power groups",
+    "summary": "The investor-owned utilities' association supports standardizing large-load interconnection while keeping reliability and affordability central and recognizing utilities' front-line role in integrating large loads.",
+    "quote": "EEI member companies serve nearly 250 million Americans and operate in all fifty states and the District of Columbia. EEI members own and operate our nation's most critical infrastructure.",
+    "stances": {
+      "study": "support",
+      "cost": "support",
+      "colo": "support",
+      "flex": "support",
+      "proximate": "support"
+    },
+    "file": "RM26-4-000 - EEI Comments on DOE Large Load ANOPR (FINAL 11.21.25).pdf",
+    "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5301"
+  },
+  {
+    "acc": "20251121-5506",
+    "filer": "American Clean Power Association",
+    "bucket": "clean_energy",
+    "bucketLabel": "Clean energy & storage",
+    "summary": "The clean-energy and storage trade group backs timely, reliable, cost-effective large-load interconnection paired with the supply-side resources to serve it, and urges record development (including jurisdictional determinations) before any rule.",
+    "quote": "Ensuring the timely, reliable, and cost-effective interconnection of large loads – along with the supply-side resources that will provide power to them – is an issue of utmost importance.",
+    "stances": {
+      "study": "support",
+      "cost": "support",
+      "colo": "support",
+      "flex": "strong support",
+      "proximate": "support"
+    },
+    "file": "2025-11-21 - RM26-4 - ACP Large load comments FINAL.pdf",
+    "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5506"
+  },
+  {
+    "acc": "20251121-5511",
+    "filer": "PJM Interconnection, L.L.C.",
+    "bucket": "rto_iso",
+    "bucketLabel": "RTOs / ISOs",
+    "summary": "Supports a nationwide 'level playing field' for large-load interconnection based on physical principles, but urges FERC to respect the outcomes of PJM's own ongoing, expedited stakeholder processes rather than override regional design.",
+    "quote": "By creating a level playing field across the country, FERC and the Department of Energy can promote large load infrastructure decisions that are made based on physical principles as opposed to uneven regulatory frameworks.",
+    "stances": {
+      "study": "support",
+      "cost": "support",
+      "colo": "mixed",
+      "flex": "support",
+      "proximate": "support"
+    },
+    "file": "20251121-rm26-4-000.pdf",
+    "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5511"
+  },
+  {
+    "acc": "20251121-5539",
+    "filer": "Google LLC",
+    "bucket": "data_center",
+    "bucketLabel": "Data centers, hyperscalers & tech",
+    "summary": "Frames timely large-load interconnection as central to the AI race and national security, and urges FERC to prioritize the reforms it can implement fastest — ones that maximize existing infrastructure and reward flexibility to minimize grid strain.",
+    "quote": "Google urges the Commission to promptly and pragmatically prioritize the reforms that can be implemented most quickly and that will incentivize digital and energy infrastructure development in a manner that maximizes use of the existing infrastructure and minimizes strain on the grid.",
+    "stances": {
+      "study": "support",
+      "cost": "support",
+      "colo": "support",
+      "flex": "strong support",
+      "proximate": "support"
+    },
+    "file": "Comments of Google LLC.pdf",
+    "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5539"
+  }
+]

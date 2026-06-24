@@ -322,6 +322,21 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-bar > span { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
 .cm-note { font-size: 12.5px; color: #2b3744; line-height: 1.45; }
 .cm-eg { display: inline-block; font-size: 10.5px; color: var(--text-muted); background: var(--surface-2); border-radius: 999px; padding: 1px 8px; margin: 0 3px 2px 0; white-space: nowrap; }
+/* flagship comment cards (read in full) */
+.cm-flagships { display: grid; gap: 11px; }
+.cm-flag { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 0 6px 6px 0; padding: 11px 14px; }
+.cm-flag-head { display: flex; align-items: baseline; gap: 6px 9px; flex-wrap: wrap; margin-bottom: 5px; }
+.cm-flag-name { font-weight: 700; font-size: 14px; color: var(--masthead); }
+.cm-links { margin-left: auto; display: inline-flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.cm-file { font-size: 10px; color: var(--text-muted); }
+.cm-flag-sum { font-size: 13px; color: #2b3744; line-height: 1.45; }
+.cm-flag-quote { font-family: var(--font-serif); font-style: italic; font-size: 12.5px; color: var(--accent-ink); margin-top: 5px; }
+.cm-stances { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 7px; }
+.cm-stance { font-size: 10px; font-weight: 700; border-radius: 999px; padding: 1px 8px; border: 1px solid; }
+.cm-stance.support { color: var(--stance-positive); border-color: var(--stance-positive); background: #eef5ef; }
+.cm-stance.oppose { color: var(--stance-negative); border-color: var(--stance-negative); background: var(--deadline-bg); }
+.cm-stance.mixed { color: var(--stance-mixed); border-color: var(--stance-mixed); background: #f6efdf; }
+.cm-stance.silent { color: var(--text-muted); border-color: var(--rule-strong); background: var(--surface-2); }
 
 /* generic two-col blocks (jurisdiction / regional) */
 .blocks { display: grid; gap: 12px; }

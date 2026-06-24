@@ -1,0 +1,1675 @@
+{
+  "docket": "RM26-4-000",
+  "source": "FERC eLibrary GetFileListFromP8 API per accession, via the browser past Cloudflare",
+  "captured_at": "2026-06-24",
+  "note": "Per-accession document/attachment inventory for all 273 comment filings (file names + types). Multi-file filings carry sub-documents (cover letters, exhibits, testimony). Document bodies for flagship comments are downloaded under files/<accession>/; the rest are inventory-only.",
+  "stats": {
+    "accessions": 273,
+    "with_files": 271,
+    "file_less": 2,
+    "multi_file": 7,
+    "total_files": 279
+  },
+  "files": {
+    "20251104-5015": [
+      {
+        "name": "Terraflux Comment Letter - RM-26-4-000.docx",
+        "type": "DOCX"
+      }
+    ],
+    "20251110-5121": [
+      {
+        "name": "136684.txt",
+        "type": "TXT"
+      }
+    ],
+    "20251112-5194": [
+      {
+        "name": "Demand Reduction - McKinley (1).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251113-5121": [
+      {
+        "name": "DigitalEnergyCouncil_Comments_RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251113-4000": [
+      {
+        "name": "2026-00005 Sen. Markey+ (incoming).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251113-5158": [
+      {
+        "name": "RM26-4 Comments of the South Dakota PUC.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251114-5180": [
+      {
+        "name": "Docket No. RM26-4-000 Comments of Critical Loop.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251114-5063": [
+      {
+        "name": "136982.txt",
+        "type": "TXT"
+      }
+    ],
+    "20251117-5092": [
+      {
+        "name": "RM26-4-000 - ANOPR - Paces AI INC Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251119-5149": [
+      {
+        "name": "FERC RM 26-4 Comments of GPSC.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251119-5170": [
+      {
+        "name": "Comments of NRG Energy Interconnection of Large Loads signed Travis Kavulla .docx",
+        "type": "DOCX"
+      }
+    ],
+    "20251120-5176": [
+      {
+        "name": "DOE FERC ANOPR Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251120-5056": [
+      {
+        "name": "FERC RM26-4-0000 - APGA - Nov 20 2025.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251120-5059": [
+      {
+        "name": "FERC ANOPR - SMA Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251120-5188": [
+      {
+        "name": "20251120_RM26-4 ANOPR Comments by NCUC.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5174": [
+      {
+        "name": "ACC Comments on FERC ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5224": [
+      {
+        "name": "OCC and OAG Initial Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5225": [
+      {
+        "name": "ETI Comments - ANOPR DOE RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5234": [
+      {
+        "name": "Comments of Land Trust Alliance FERC Docket No RM26_4_000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5237": [
+      {
+        "name": "FINAL Duke Energy RM26-4 LL ANOPR Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5238": [
+      {
+        "name": "FCE ANOPR Comments (11.21.2025).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5278": [
+      {
+        "name": "Emerald AI_large load ANOPR Comments VF.pdf",
+        "type": "PDF"
+      },
+      {
+        "name": "Emerald AI_large load ANOPR Cover Letter.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5242": [
+      {
+        "name": "Joint Consumer Advocates (PA, DE) Comments - Large Loads ANOPR RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5182": [
+      {
+        "name": "RM26-4 Comments of WIRES - 20251121.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5183": [
+      {
+        "name": "RM26-4 COMMENTS OF THE LOUISIANA AND MISSISSIPPI COMMISSIONS.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5185": [
+      {
+        "name": "2025-11-21_Maine OPA Comments_RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5186": [
+      {
+        "name": "RM-26-4-000_PGE Initial Large Load ANOPR Comments_11-21-25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5188": [
+      {
+        "name": "RM26-4 ANOPR Eversource Energy Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5212": [
+      {
+        "name": "RM26-4 Large Load ANOPR - MDPSC Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5227": [
+      {
+        "name": "Industrial Joint Comments RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5253": [
+      {
+        "name": "RM 26-4-000 - Fervo Initial Comments on ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5493": [
+      {
+        "name": "RM26-4 Comment of GridStor on ANOPR re ESRs and Large Loads.docx",
+        "type": "DOCX"
+      }
+    ],
+    "20251121-5477": [
+      {
+        "name": "NREMC Comments RM26-4 ANOPR .pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5479": [
+      {
+        "name": "Alliance for Tribal Clean Energy Comments on Large Load Interconnection ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5496": [
+      {
+        "name": "ITI Comment_FERC Docket RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5506": [
+      {
+        "name": "2025-11-21 - RM26-4 - ACP Large load comments FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5511": [
+      {
+        "name": "20251121-rm26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5513": [
+      {
+        "name": "ETX Upstream LLC Comments on RM26-4.docx",
+        "type": "DOCX"
+      }
+    ],
+    "20251121-5520": [
+      {
+        "name": "Arevia_Power_ANOPR Comments_11.21.2025.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5523": [
+      {
+        "name": "Advanced Energy United - Comments in RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5531": [
+      {
+        "name": "IECA Comments to FERC ANOPR - Interconnection of Large Loads (RM26-4-000) (FINAL).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5533": [
+      {
+        "name": "Comments of the AES Corporation (RM26-4) 11.21.25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5534": [
+      {
+        "name": "LS POWER Comments on DOE Proposed ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5539": [
+      {
+        "name": "Comments of Google LLC.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5540": [
+      {
+        "name": "2025-11-21 PSEG Comments ANOPR Docket No. RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5541": [
+      {
+        "name": "2025.11.21 RM26-4 Comments of Eolian, L.P. - final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5546": [
+      {
+        "name": "SMA FERC Large Load NOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5510": [
+      {
+        "name": "2025 1121 Tract Comments Re Large Loads Interconnection ANOPR_ RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5514": [
+      {
+        "name": "ChevronANOPRInitialComments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5517": [
+      {
+        "name": "RM26-4 (Large Load ANOPR Comments).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5519": [
+      {
+        "name": "Fluence Comments on FERC Large Loads ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5521": [
+      {
+        "name": "DCC_LLI ANOPR Comments_RM26-4_11.21.25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5522": [
+      {
+        "name": "20251121 AI SCA Comments on DOE Rule 403 ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5526": [
+      {
+        "name": "2025-11-21_RM26-4_CAISO_Comments-ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5527": [
+      {
+        "name": "20251121 - RM26-4 - APPA Comments on Large Load Interconnection ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5530": [
+      {
+        "name": "RM26-4 Comments of Distributed Capacity Parties.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5538": [
+      {
+        "name": "2025-11-21 Comment on ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5542": [
+      {
+        "name": "Comments of Vistra.pdf",
+        "type": "PDF"
+      },
+      {
+        "name": "Exhibit A.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5545": [
+      {
+        "name": "ACEG Comments_Docket No. RM26-4-000_Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5547": [
+      {
+        "name": "MEA FINAL Comments RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5548": [
+      {
+        "name": "DGA Initial Comments on RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5203": [
+      {
+        "name": "FERC Comments Large Load Interconnection RM26-4 11.21.25 c.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5259": [
+      {
+        "name": "OpenAI FERC ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5261": [
+      {
+        "name": "Comments of Enchanted Rock, LLC (RM26-4-000) (11.21.25).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5262": [
+      {
+        "name": "RM26-4 PA PUC Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5284": [
+      {
+        "name": "RM26-4 - OPSI Initial Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5126": [
+      {
+        "name": "RM26-4 Comments FNL 11-21-25 4915-0031-3467.1.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5168": [
+      {
+        "name": "Large_Load_ANOPR_Comments_final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5175": [
+      {
+        "name": "Cover Letter - UIU Comments on RM26-4-000 ANOPR.pdf",
+        "type": "PDF"
+      },
+      {
+        "name": "UIU Comments on RM26-4-000 ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5178": [
+      {
+        "name": "2025.11.20 New Mexico Public Regulation Commission Comment -- RM 26-4 .pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5107": [
+      {
+        "name": "Rewiring America Comments to FERC Docket RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5148": [
+      {
+        "name": "UCS comments RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5132": [
+      {
+        "name": "RM26-4 2025 Comments FERC ANOPR 112125 (002).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5141": [
+      {
+        "name": "RM26-4 Comments of ITC Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5140": [
+      {
+        "name": "YN letter to FERC.RM26-4-000.PDF",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5142": [
+      {
+        "name": "NCSL Comments on FERC Docket RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5031": [
+      {
+        "name": "Verrus ANOPR Comments.docx",
+        "type": "DOCX"
+      }
+    ],
+    "20251121-5033": [
+      {
+        "name": "FERC RM26-4-000.apsc.initial comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5034": [
+      {
+        "name": "Final_DOE ANOPR Comments.docx",
+        "type": "DOCX"
+      }
+    ],
+    "20251121-5064": [
+      {
+        "name": "RM26-4 SEIA Comments.Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5044": [
+      {
+        "name": "FINAL USCC Comments to FERC on DOE Large Load Interconnection ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5112": [
+      {
+        "name": "EPSA ANOPR Initial Comments RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5374": [
+      {
+        "name": "AEMA_large load ANOPR Comments-VF2 11.21.25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5377": [
+      {
+        "name": "Buckeye Power, Inc. ANOPR Comments -- FINAL (RM26-4).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5393": [
+      {
+        "name": "Comments of AECS under Docket No. RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5394": [
+      {
+        "name": "Southern_LargeLoadANOPR_Comments_11.21.25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5395": [
+      {
+        "name": "SMECO RM26-4 DOE ANOPR Comments 112125-Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5400": [
+      {
+        "name": "RM26-4 - Meta ANOPR Comments_Final (1).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5404": [
+      {
+        "name": "FEA Large Load Interconnection Final Comments - RM26-4 11.21.25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5498": [
+      {
+        "name": "FERC Comments for Iron Mountain.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5499": [
+      {
+        "name": "ACORE ANOPR Comments RM26-4 11 21 25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5500": [
+      {
+        "name": "ANOPR FE Comments 11.21PM FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5382": [
+      {
+        "name": "RM26-4-000 IL OAG Comments 11.21.25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5383": [
+      {
+        "name": "Splight Comments on DOE ANOPR 26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5392": [
+      {
+        "name": "RM26-4 - EOC Comments - 11-21-25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5386": [
+      {
+        "name": "DRAFT PIO RM26-4 Large Load Comment to FERC FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5396": [
+      {
+        "name": "Southeast PIOs Initial Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5414": [
+      {
+        "name": "2025 1121 Invenergy DOE LLI ANOPR Comments RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5415": [
+      {
+        "name": "FREC _ RM26-4-000 _ Motion to Extend Deadlines and Initiate Tribal Consultation.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5425": [
+      {
+        "name": "CEBA comments on Large Load ANOPR FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5427": [
+      {
+        "name": "RM26-4 VSCC Comments_Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5446": [
+      {
+        "name": "Load Flexibility Parties_Comments_RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5440": [
+      {
+        "name": "Microsoft ANOPR Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5448": [
+      {
+        "name": "RM26-4 20251121 ANOPR Comments of SPP TO Group - Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5451": [
+      {
+        "name": "RM26-4-000 Electricity Customer Alliance Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5453": [
+      {
+        "name": "RM26-4 NDPSC Comments Large Load ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5419": [
+      {
+        "name": "FERC RM26-4-000 (ANOPR on Interconnection of Large Loads) Nebraska Power Review Board Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5422": [
+      {
+        "name": "Geronimo Power - ANOPR Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5424": [
+      {
+        "name": "20251121 RM26-4 Consumers Energy Initial Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5431": [
+      {
+        "name": "NC Public Staff - RM26-4 ANOPR Comments FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5455": [
+      {
+        "name": "RM26-4 ELCON Large Load Interconnection ANOPR Comments - FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5458": [
+      {
+        "name": "Consolidated PJM TOs Comments LL ANOPR FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5459": [
+      {
+        "name": "FERC ANOPR comments - Institute for Progress.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5460": [
+      {
+        "name": "WEC Companies Initial Comments on FERC Large Load ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5462": [
+      {
+        "name": "RM26-4 - LPPC 11-21-25 Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5469": [
+      {
+        "name": "20251121_SPP Comments to ANOPR_RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5470": [
+      {
+        "name": "2025-11-21 PPL Comments on DOE ANOPR, RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5474": [
+      {
+        "name": "EQIX - RM26-400 - Large Load Interconnections - FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5443": [
+      {
+        "name": "Pew Comments to FERC Large Load Interconnection ANOPR Docket RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5444": [
+      {
+        "name": "Energy Storage Coalition Comments - FERC ANOPR Docket No. RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5449": [
+      {
+        "name": "FINAL Longroad RM26-4 Comments (11.21.25).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5461": [
+      {
+        "name": "FERC ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5466": [
+      {
+        "name": "RM26-4 Large Loads FINAL.pdf",
+        "type": "PDF"
+      },
+      {
+        "name": "Ex A Kyle Thomas Testimony.pdf",
+        "type": "PDF"
+      },
+      {
+        "name": "Ex B Mike Jacobs.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5472": [
+      {
+        "name": "2025-11-21_Docket No. RM26-4-000 MISO Comments to DOE proposed ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5501": [
+      {
+        "name": "WATT_AMP_initial comments_large load anopr _11-21-25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5502": [
+      {
+        "name": "2025-11-21 Calibrant Comments on RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5503": [
+      {
+        "name": "FERC Docket No. RM26-4-000 Initial Comments of the CPUC.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5504": [
+      {
+        "name": "RM26-4 Amazon Energy's Initial Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5483": [
+      {
+        "name": "ClearPath_Interconnection_of_Large_Loads_ANOPR_Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5484": [
+      {
+        "name": "Constellation ANOPR Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5486": [
+      {
+        "name": "RM26-4-000 Consumer Energy Alliance.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5488": [
+      {
+        "name": "APS Motion to Intervene and Comment under Docket No. RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5476": [
+      {
+        "name": "RM26-4_Bloom Energy Corp. Comments_11-21-25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5480": [
+      {
+        "name": "NG Initial Comments on Large Loads ANOPR - RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5266": [
+      {
+        "name": "NYSRC ANOPR Comments RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5243": [
+      {
+        "name": "AEP Comments on ANOPR - 11.21.25 (Final for Filing)(3582307).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5244": [
+      {
+        "name": "American Transmission Company Comments RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5267": [
+      {
+        "name": "FERC Large Load Transmission Letter (11.21.25).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5289": [
+      {
+        "name": "RM26-4-000 ANOPR - NRECA Comments 20251121.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5295": [
+      {
+        "name": "RM26-4 DWR Comments Large Load ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5319": [
+      {
+        "name": "Thermal Battery Alliance Comments RM26-4-000 11.21.25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5323": [
+      {
+        "name": "Oracle Comments on FERC DOE ANOPR (11-21-2025).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5301": [
+      {
+        "name": "RM26-4-000 - EEI Comments on DOE Large Load ANOPR (FINAL 11.21.25).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5302": [
+      {
+        "name": "RM26-4 NESCOE Initial Comments 11-21-25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5375": [
+      {
+        "name": "America's Power Initial Comments RM26-4-Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5346": [
+      {
+        "name": "TAPS ANOPR Comments (RM26-4).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5350": [
+      {
+        "name": "ETI Comments - ANOPR DOE RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5333": [
+      {
+        "name": "FINAL PFT FERC DOE ANOPR Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5335": [
+      {
+        "name": "2025.11.21 -- RM26-4-000 -- Comments of State Entities.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5343": [
+      {
+        "name": "ODEC Comments RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5364": [
+      {
+        "name": "20251121_NYISO Cmmnts_Large Loads prpsd ANOPR-cmplt.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5368": [
+      {
+        "name": "New York Transmission Owners' Comments RM26-4 11.21.24.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5338": [
+      {
+        "name": "MoPSC Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5341": [
+      {
+        "name": "RM26-4 Vantage Data Center Comments_FINAL_11212025.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5344": [
+      {
+        "name": "RM26-4 OMS Initial Comments (Large Load ANOPR).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5347": [
+      {
+        "name": "RM26-4_Initial Comments of Exelon Corporation.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5348": [
+      {
+        "name": "FINAL Large Load ANOPR Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5353": [
+      {
+        "name": "Oncor Comments on Large Load Interconnection ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5355": [
+      {
+        "name": "RM26-4 MISO Transmission Owners Initial Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5358": [
+      {
+        "name": "Tesla_FERC_ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251121-5492": [
+      {
+        "name": "138422.txt",
+        "type": "TXT"
+      }
+    ],
+    "20251124-5114": [
+      {
+        "name": "RM26-4 DOE FERC ANOPR large loads SENA comments v6.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251124-5113": [
+      {
+        "name": "EsVolta LP Comments in RM26-4 FERC Large Load ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251124-5116": [
+      {
+        "name": "Kiesling FERC DOE ANOPR comment November 2025.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251124-5117": [
+      {
+        "name": "25.11.21 CTC Global Comments Large Load ANOPR .pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251124-5118": [
+      {
+        "name": "Indiana Energy Association Comments on FERC Docket No. RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251124-5126": [
+      {
+        "name": "Helion Comment Re Docket RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251124-5127": [
+      {
+        "name": "FERC LLI Comments COM-AG-UTC.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251124-5130": [
+      {
+        "name": "RM26-4 ENGIE ANOPR Initial Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251124-5131": [
+      {
+        "name": "Fisher Comments RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251125-5263": [
+      {
+        "name": "KCC Motion and Initial Comments RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251125-5255": [
+      {
+        "name": "2025-11-25 IMM Letter Response-AS FILED.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251125-4001": [
+      {
+        "name": "RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251128-5114": [
+      {
+        "name": "ATW_FERC_ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251128-5003": [
+      {
+        "name": "138759.txt",
+        "type": "TXT"
+      }
+    ],
+    "20251204-5181": [
+      {
+        "name": "Center Reply Comments FERC RM26-4-000.12.4.25 FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251204-4000": [
+      {
+        "name": "25.12.02 - Mannion Comment on FERC ANOPR-4 (002).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251204-5048": [
+      {
+        "name": "Comments of Herb Schrayshuen in DOE Large Load ANOPR 12-4-2025.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5264": [
+      {
+        "name": "Reply Comments of Enchanted Rock, LLC (RM26-4) (12.5.25).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5306": [
+      {
+        "name": "Supporting Reply Comments of Constellation Energy.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5307": [
+      {
+        "name": "FINAL Reply Comments of LEAN Energy US in RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5143": [
+      {
+        "name": "RM26-4 NARUC Reply Comments 120525.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5149": [
+      {
+        "name": "EPSA Reply Comments - ANOPR 12.5.25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5158": [
+      {
+        "name": "NASUCA Reply Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5164": [
+      {
+        "name": "RM26-4 - EOC Reply Comments 2025-12-05.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5166": [
+      {
+        "name": "Southern_Large Load ANOPR_Reply Comments (12-5).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5178": [
+      {
+        "name": "2025-12-05 - LIPA Reply Comments on Large Load ANOPR FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5171": [
+      {
+        "name": "Industrial Joint ANOPR Reply Comments (RM26-4-000).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-4001": [
+      {
+        "name": "FERC.2025.12.5 Letter re Large Loads to Interstate Transmission System.ENG.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5176": [
+      {
+        "name": "Reply Comments of Verrus LLC on Large Load ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5179": [
+      {
+        "name": "Buckeye Power, Inc. Reply Comments -- RM 26-4 FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5203": [
+      {
+        "name": "CEI CRE Reply Comment.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5225": [
+      {
+        "name": "RM26-4-000 Southern California Edison Company Reply Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5226": [
+      {
+        "name": "Rewiring America Reply Comments to FERC Docket RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5227": [
+      {
+        "name": "RM26-4 VSCC Reply Comments_Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5204": [
+      {
+        "name": "AEMA_large load ANOPR Reply Comments 12.5.25 VF.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5206": [
+      {
+        "name": "Reply Comments of Infrastructure Masons, Inc. (RM26-4) (12.5.25).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5211": [
+      {
+        "name": "DCC_LLI ANOPR Reply Comments_RM26-4_12.5.25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5222": [
+      {
+        "name": "Emerald AI_large load ANOPR Reply Comments 12.5.25 VF.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5219": [
+      {
+        "name": "2025-12-05 IMM Reply Comments re ANOPR (RM26-4)-AS FILED.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5223": [
+      {
+        "name": "EEI ANOPR Reply Comments - (final 12.5.25).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5238": [
+      {
+        "name": "RM26-4 ODEC Reply Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5239": [
+      {
+        "name": "AEP RM26-4 ANOPR Reply Comments 2025.12.05 (Final)(3587930.2).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5247": [
+      {
+        "name": "Oncor Reply Comments on Large Load Interconnection ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5243": [
+      {
+        "name": "MISO TOs Reply Comments on Large Load Interconnection ANOPR (RM26-4).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5244": [
+      {
+        "name": "OpenAI FERC ANOPR Reply.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5253": [
+      {
+        "name": "Indicated PJM TOs Reply Comments (12.5.2025 final).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5260": [
+      {
+        "name": "RM26-4-000 Electricity Customer Alliance Reply Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5270": [
+      {
+        "name": "Joint Consumer Advocates (PA, DE, IL) Reply Comments - Large Loads ANOPR RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5276": [
+      {
+        "name": "Talen ANOPR Reply Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5257": [
+      {
+        "name": "SPIOs ANOPR Reply Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5261": [
+      {
+        "name": "RM26-4 - LPPC Reply Comments [final].docx",
+        "type": "DOCX"
+      }
+    ],
+    "20251205-5262": [
+      {
+        "name": "FERC RM26-4-000 GridCARE Reply Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5281": [
+      {
+        "name": "Pew Reply Comments to FERC Large Load Interconnection ANOPR Docket RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5283": [
+      {
+        "name": "RM26-4 ANOPR Reply Comments of RWECE 12.5.2025.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5277": [
+      {
+        "name": "Reply Comments of American Transmission Company.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5287": [
+      {
+        "name": "RM26-4 20251205 Consumers Energy Reply Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5289": [
+      {
+        "name": "Reply Comments of Eolian L.P. on Large Load ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5292": [
+      {
+        "name": "RM26-4-000 Michigan AG Reply Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5295": [
+      {
+        "name": "Reply Comments of Vistra Corp.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5303": [
+      {
+        "name": "FERC Docket NO. RM26-4-000 Reply Comments of the CPUC.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5325": [
+      {
+        "name": "ACEG ANOPR Reply Comments_RM26-4-000_Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5330": [
+      {
+        "name": "Reply Comments of the Distributed Capacity Parties.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5297": [
+      {
+        "name": "FE Reply Comments ANOPR (12.5.2025) Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5309": [
+      {
+        "name": "Switch Reply Comments on FERC Large Load Interconnection ANOPR (Final 12.5.2025).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5317": [
+      {
+        "name": "Reply Comments of Google LLC.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5319": [
+      {
+        "name": "Crusoe_RM26-4 Reply Comments 12-5-25.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5327": [
+      {
+        "name": "IECA Reply Comments (RM26-4-000) (Final).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5012": [
+      {
+        "name": "20251129 FERC Interconnection ANOPR Reply Comments as Submitted.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5005": [
+      {
+        "name": "RM26-4-000_Reply Comments Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251205-5014": [
+      {
+        "name": "FINAL CL REPLY TO FERC RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251208-5087": [
+      {
+        "name": "RM26-4 ENGIE ANOPR Reply Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251208-5077": [
+      {
+        "name": "Oklo Reply Comment - Interconnection of Large Loads.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251210-5035": [
+      {
+        "name": "Thermal Battery Alliance_RM26-4-000_Reply_Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251210-5191": [
+      {
+        "name": "Prime Mover Comment - FERC Large Load Docket RM26-4-000 - FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20251211-5176": [
+      {
+        "name": "PJM Reply Comments in RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260203-5043": [
+      {
+        "name": "FERC_RM26-4_000_Cover_Letter.md.pdf",
+        "type": "PDF"
+      },
+      {
+        "name": "FERC_RM26-4_000_FrontDoorTechnologies2.3.26.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260224-5108": [
+      {
+        "name": "Powering Digital Megaloads - Barriers and Solutions... in the AI Era.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260312-5096": [
+      {
+        "name": "RM26-4-000-LettertoFERCwithAttach_031226.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260316-5144": [
+      {
+        "name": "Entergy Supplemental Comments, Docket No RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260320-5091": [
+      {
+        "name": "NERC_Accelerated LL Action Plan_RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260327-5004": [
+      {
+        "name": "145302.txt",
+        "type": "TXT"
+      }
+    ],
+    "20260330-5308": [
+      {
+        "name": "WIRES Supplemental Comments (RM26-4) 20260330 Final-combined.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260403-5122": [
+      {
+        "name": "RM26-4 MISO Transmission Owners Supplemental Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260406-5178": [
+      {
+        "name": "RM26-4 20260406 Supplemental Comments of SPP TO Group.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260407-5007": [
+      {
+        "name": "Level3Alert.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260410-5101": [
+      {
+        "name": "Supplemental Comments of ITC RM26-4.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260413-5278": [
+      {
+        "name": "NARUC Letter to FERC RM26-4 FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260415-5094": [
+      {
+        "name": "Harvard ELI RM26-4 Reply to WIRES.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260423-4000": [
+      {
+        "name": "26.04.20 Letter to FERC from Senator Ossoff.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260501-5026": [
+      {
+        "name": "Oracle FERC Large Load ANOPR Supplemental Comments (4.30.2026).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260505-5137": [
+      {
+        "name": "RM26-4 -- Buckeye Supplemental Comments -- ANOPR.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260512-5143": [
+      {
+        "name": "RM26-4 TAPS Supplemental ANOPR Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260518-5155": [
+      {
+        "name": "RM26-4-000; Antora Supplemental Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260518-5039": [
+      {
+        "name": "ON.energy_RM26-4-000_Comment.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260519-5158": [],
+    "20260520-5100": [
+      {
+        "name": "Southern Companies' Supplemental ANOPR Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260520-5102": [],
+    "20260520-5115": [
+      {
+        "name": "Cover_Letter_FERC_RM26-4-000.pdf",
+        "type": "PDF"
+      },
+      {
+        "name": "Maven_Solutions_Research_Brief_FERC_RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260526-5028": [
+      {
+        "name": "Section 106.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260526-5022": [
+      {
+        "name": "LPPC Comments RM26-4 _Final_(243510249.2).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260526-5014": [
+      {
+        "name": "147743.txt",
+        "type": "TXT"
+      }
+    ],
+    "20260529-5358": [
+      {
+        "name": "147776.txt",
+        "type": "TXT"
+      }
+    ],
+    "20260605-5169": [
+      {
+        "name": "FirstEnergy Supplemental Comments (RM26-4)__(20260605).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260605-5050": [
+      {
+        "name": "Constellation Supplemental Comments.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260608-5025": [
+      {
+        "name": "Maven_Response_Constellation_LCEP_FINAL.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260608-5026": [
+      {
+        "name": "Maven_Response_FirstEnergy.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260608-5030": [
+      {
+        "name": "Heron Power _ FERC Comments _ RM26-4-000 _ Final.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260611-5015": [
+      {
+        "name": "WATT Supplemental Comments Large Load Interconnection Submitted 6.10.26.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260615-5141": [
+      {
+        "name": "Supplemental Comments of Joint Consumer Advocates (PA, DE, NJ).pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260615-5164": [
+      {
+        "name": "RM26-4-000 Supplemental Comments 6.15.26 w Exhibit A.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260622-5122": [
+      {
+        "name": "Cover_Letter_RM26-4-000.pdf",
+        "type": "PDF"
+      },
+      {
+        "name": "Comments_of_Annesha_Chowdhury_RM26-4-000.pdf",
+        "type": "PDF"
+      }
+    ],
+    "20260624-5020": [
+      {
+        "name": "Cunningham_Interconnection_Governance_FERC_Format231 (3).pdf",
+        "type": "PDF"
+      }
+    ]
+  }
+}

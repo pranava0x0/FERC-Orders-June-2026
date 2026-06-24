@@ -1,0 +1,204 @@
+{
+  "captured_at": "2026-06-24",
+  "note": "Stances per reform category, aggregated across the per-comment summaries (not the whole 273 — only summarized filings). support/oppose/mixed/silent.",
+  "category_labels": {
+    "study": "Study process + alt-tech",
+    "cost": "Cost-shifting + transparency",
+    "colo": "Co-location / BTM",
+    "flex": "Flexible-load services",
+    "proximate": "Proximate-generation interconnection"
+  },
+  "summarized": 9,
+  "by_category": {
+    "study": {
+      "support": 8,
+      "oppose": 0,
+      "mixed": 0,
+      "silent": 1,
+      "other": 0
+    },
+    "cost": {
+      "support": 9,
+      "oppose": 0,
+      "mixed": 0,
+      "silent": 0,
+      "other": 0
+    },
+    "colo": {
+      "support": 7,
+      "oppose": 0,
+      "mixed": 1,
+      "silent": 1,
+      "other": 0
+    },
+    "flex": {
+      "support": 7,
+      "oppose": 0,
+      "mixed": 1,
+      "silent": 1,
+      "other": 0
+    },
+    "proximate": {
+      "support": 7,
+      "oppose": 0,
+      "mixed": 1,
+      "silent": 1,
+      "other": 0
+    }
+  },
+  "by_bucket_category": {
+    "elected": {
+      "study": {
+        "silent": 1
+      },
+      "cost": {
+        "support": 1
+      },
+      "colo": {
+        "silent": 1
+      },
+      "flex": {
+        "silent": 1
+      },
+      "proximate": {
+        "silent": 1
+      }
+    },
+    "generator_ipp": {
+      "study": {
+        "support": 1
+      },
+      "cost": {
+        "support": 1
+      },
+      "colo": {
+        "support": 1
+      },
+      "flex": {
+        "support": 1
+      },
+      "proximate": {
+        "support": 1
+      }
+    },
+    "state_commission": {
+      "study": {
+        "support": 1
+      },
+      "cost": {
+        "support": 1
+      },
+      "colo": {
+        "support": 1
+      },
+      "flex": {
+        "support": 1
+      },
+      "proximate": {
+        "support": 1
+      }
+    },
+    "industrial": {
+      "study": {
+        "support": 1
+      },
+      "cost": {
+        "support": 1
+      },
+      "colo": {
+        "support": 1
+      },
+      "flex": {
+        "mixed": 1
+      },
+      "proximate": {
+        "support": 1
+      }
+    },
+    "consumer_advocate": {
+      "study": {
+        "support": 1
+      },
+      "cost": {
+        "support": 1
+      },
+      "colo": {
+        "support": 1
+      },
+      "flex": {
+        "support": 1
+      },
+      "proximate": {
+        "mixed": 1
+      }
+    },
+    "trade_assoc": {
+      "study": {
+        "support": 1
+      },
+      "cost": {
+        "support": 1
+      },
+      "colo": {
+        "support": 1
+      },
+      "flex": {
+        "support": 1
+      },
+      "proximate": {
+        "support": 1
+      }
+    },
+    "clean_energy": {
+      "study": {
+        "support": 1
+      },
+      "cost": {
+        "support": 1
+      },
+      "colo": {
+        "support": 1
+      },
+      "flex": {
+        "support": 1
+      },
+      "proximate": {
+        "support": 1
+      }
+    },
+    "rto_iso": {
+      "study": {
+        "support": 1
+      },
+      "cost": {
+        "support": 1
+      },
+      "colo": {
+        "mixed": 1
+      },
+      "flex": {
+        "support": 1
+      },
+      "proximate": {
+        "support": 1
+      }
+    },
+    "data_center": {
+      "study": {
+        "support": 1
+      },
+      "cost": {
+        "support": 1
+      },
+      "colo": {
+        "support": 1
+      },
+      "flex": {
+        "support": 1
+      },
+      "proximate": {
+        "support": 1
+      }
+    }
+  }
+}
