@@ -221,6 +221,16 @@ a:hover { color: var(--accent-ink); }
 .cat-doe li { font-size: 13.5px; color: #2b3744; padding-left: 18px; position: relative; }
 .cat-doe li::before { content: "§"; position: absolute; left: 0; color: var(--tier-doe); font-family: var(--font-serif); font-weight: 700; }
 
+/* common spine (what's general across all six orders) */
+details.spine { background: var(--surface-2); border: 1px solid var(--rule-strong); border-radius: 6px; padding: 11px 15px; margin-bottom: 14px; }
+details.spine > summary { cursor: pointer; list-style: none; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--masthead); }
+details.spine > summary::-webkit-details-marker { display: none; }
+details.spine > summary::before { content: "▸ "; color: var(--accent); }
+details.spine[open] > summary::before { content: "▾ "; }
+details.spine ul { list-style: none; display: grid; gap: 7px; margin-top: 10px; }
+details.spine li { font-size: 13px; color: #2b3744; line-height: 1.45; padding-left: 16px; position: relative; }
+details.spine li::before { content: "="; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+
 /* docket accordion */
 .dockets { display: grid; gap: 10px; }
 .docket { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }

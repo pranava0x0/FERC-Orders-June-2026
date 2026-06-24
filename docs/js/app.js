@@ -218,8 +218,13 @@
     }).join("") + "</div>";
     var participate = '<p class="lede" style="margin-bottom:14px">' + esc(p.intro) + "</p>" + partRows + partLinks;
 
+    var spineBlock = (D.spine && D.spine.items) ?
+      '<details class="spine" open><summary>What every order shares — the common §206 spine (' + D.spine.items.length + ")</summary><ul>" +
+      D.spine.items.map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("") + "</ul>" + srcChips(D.spine.src) + "</details>" : "";
+
     return head("The six dockets: E-7 through E-12",
-      "Same §206 spine, region-specific application. Each docket is collapsible — open one for what’s unique to that system, the quoted directives (page-linked to the committed PDF and ferc.gov), the Section IV asks, what each commissioner said about that order, the distinct-findings list, and every named respondent.") + docs +
+      "Every order runs the same §206 spine (below); each docket card is the region-specific variation on it. Open a card for what’s unique to that system, the page-cited directives and distinct findings, the Section IV asks, what each commissioner said about that order, and every named respondent.") +
+      spineBlock + docs +
       head("File or follow the dockets", "Every proceeding is open on the public record. Use the exact docket number on any submission.") + participate;
   }
 
