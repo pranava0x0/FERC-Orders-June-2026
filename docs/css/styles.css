@@ -221,21 +221,25 @@ a:hover { color: var(--accent-ink); }
 .cat-doe li { font-size: 13.5px; color: #2b3744; padding-left: 18px; position: relative; }
 .cat-doe li::before { content: "§"; position: absolute; left: 0; color: var(--tier-doe); font-family: var(--font-serif); font-weight: 700; }
 
-/* docket cards */
-.dockets { display: grid; gap: 14px; }
-@media (min-width: 1080px) { .dockets { grid-template-columns: 1fr 1fr; } }
-.docket { display: grid; grid-template-columns: 56px 1fr; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
-.docket-spine {
-  background: var(--masthead); color: #fff; padding: 14px 6px; text-align: center;
-  display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 8px;
-}
-.docket-spine .item { font-family: var(--font-serif); font-weight: 700; font-size: 20px; line-height: 1; }
-.docket-spine .docket-no { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.02em; writing-mode: vertical-rl; transform: rotate(180deg); color: #b9cbe4; margin-top: 4px; }
-.docket-main { padding: 13px 15px; min-width: 0; }
-.docket-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
-.docket-id { min-width: 0; }
-.docket-main .rto { font-weight: 700; font-size: 17px; color: var(--masthead); }
-.docket-main .rto-full { font-size: 12.5px; color: var(--text-muted); }
+/* docket accordion */
+.dockets { display: grid; gap: 10px; }
+.docket { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.docket[open] { border-color: var(--rule-strong); }
+.docket-sum { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 7px 12px; flex-wrap: wrap; padding: 11px 14px; }
+.docket-sum::-webkit-details-marker { display: none; }
+.docket-sum:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.docket-sum .item { flex: none; font-family: var(--font-serif); font-weight: 700; font-size: 15px; line-height: 1; color: #fff; background: var(--masthead); border-radius: 5px; padding: 4px 9px; }
+.docket-sum-id { min-width: 0; margin-right: auto; display: flex; flex-direction: column; gap: 1px; }
+.docket-sum .rto { font-weight: 700; font-size: 16px; color: var(--masthead); }
+.docket-sum:hover .rto { color: var(--accent-ink); }
+.docket-sum .rto-full { font-size: 12px; color: var(--text-muted); }
+.docket-cite { font-size: 11px; color: var(--accent-ink); }
+.docket-status { flex: none; display: inline-block; font-size: 11px; font-weight: 700; color: var(--status-reform); background: #f6efdf; border: 1px solid #e6d8b0; border-radius: 999px; padding: 2px 9px; }
+.docket-sum .region { flex: none; font-size: 11px; color: var(--text-muted); }
+.docket-sum .chev { flex: none; color: var(--accent); font-size: 17px; line-height: 1; transition: transform 0.15s ease; }
+.docket[open] .docket-sum .chev { transform: rotate(90deg); }
+.docket-body { padding: 4px 15px 15px; }
+.docket-body .order-links { margin: 10px 0 2px; }
 .order-links { flex: none; display: inline-flex; align-items: center; gap: 10px; }
 .order-link { flex: none; font-size: 11.5px; font-weight: 700; text-decoration: none; color: #fff; background: var(--accent); border-radius: 5px; padding: 4px 11px; white-space: nowrap; }
 .order-link:hover { background: var(--accent-ink); color: #fff; }
@@ -292,6 +296,15 @@ ul.roster li::before { content: "·"; }
 .commish-cite { margin-left: auto; display: inline-flex; gap: 6px; white-space: nowrap; }
 .commish-gist { font-size: 13.5px; color: #2b3744; line-height: 1.45; }
 .commish-quote { font-family: var(--font-serif); font-style: italic; font-size: 12.5px; color: var(--accent-ink); margin-top: 6px; }
+.commish-head .commish-tag { margin-left: auto; }
+.commish-tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--status-reform); background: #f6efdf; border: 1px solid #e6d8b0; border-radius: 999px; padding: 1px 8px; }
+/* per-order commissioner statements (nested in each docket accordion) */
+details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
+.commish-row { padding-left: 11px; border-left: 2px solid var(--rule-strong); }
+.commish-row-head { display: flex; align-items: baseline; gap: 5px 8px; flex-wrap: wrap; }
+.commish-row .commish-name { font-size: 13px; }
+.commish-row .commish-cite { margin-left: auto; align-items: baseline; }
+.commish-row .commish-quote { margin-top: 2px; }
 
 /* generic two-col blocks (jurisdiction / regional) */
 .blocks { display: grid; gap: 12px; }
