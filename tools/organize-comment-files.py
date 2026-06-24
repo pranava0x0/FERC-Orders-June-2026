@@ -1,15 +1,44 @@
 #!/usr/bin/env python3
-"""Move RM26-4 comment downloads from ~/Downloads into sources/comments/files/<accession>/
-and extract text: PDF via PyMuPDF (fitz), DOC/DOCX via macOS `textutil`. Idempotent; safe to
-re-run. Files are named '<accession>_<original name>' by the eLibrary downloader."""
-import re, shutil, subprocess
+"""Move RM26-4 comment downloads from ~/Downloads into sources/comments/files/<accession>__<org-slug>/
+and extract text: PDF via PyMuPDF (fitz), DOC/DOCX via macOS `textutil`. The directory is named with
+the submitter (from the manifest) so a file's path names who filed it. Idempotent; safe to re-run —
+it also migrates any older bare "<accession>" directory to the submitter-named form."""
+import re, shutil, subprocess, json
 from pathlib import Path
 import fitz  # PyMuPDF
 
 DL = Path.home() / "Downloads"
 ROOT = Path(__file__).resolve().parent.parent
-DEST = ROOT / "sources" / "comments" / "files"
+COMMENTS = ROOT / "sources" / "comments"
+DEST = COMMENTS / "files"
 ACC = re.compile(r"^(20\d{6}-\d{4})_(.+)$")
+ORG = {c["acc"]: c.get("org", "") for c in json.loads((COMMENTS / "rm26-4-comments.json").read_text())["comments"]}
+
+def slug(s):
+    s = re.sub(r"[^A-Za-z0-9 -]", "", (s or "").replace("&", " and ")).strip()
+    s = re.sub(r"-+", "-", re.sub(r"\s+", "-", s)).strip("-")
+    return s[:50].rstrip("-") or "unknown"
+
+def dir_name(acc):
+    org = ORG.get(acc)
+    return f"{acc}__{slug(org)}" if org else acc
+
+def dir_for(acc):
+    """On-disk dir for an accession — an existing one (bare or submitter-suffixed), else the canonical name."""
+    if DEST.exists():
+        for d in DEST.iterdir():
+            if d.is_dir() and (d.name == acc or d.name.startswith(acc + "__")):
+                return d
+    return DEST / dir_name(acc)
+
+# migrate any older bare "<accession>" directory to "<accession>__<org-slug>" so the path names the submitter
+renamed = 0
+if DEST.exists():
+    for d in sorted(list(DEST.iterdir())):
+        if d.is_dir() and re.fullmatch(r"20\d{6}-\d{4}", d.name):
+            new = DEST / dir_name(d.name)
+            if new != d and not new.exists():
+                d.rename(new); renamed += 1
 
 moved, extracted, skipped = 0, 0, 0
 for p in sorted(DL.iterdir()):
@@ -32,7 +61,7 @@ for p in sorted(DL.iterdir()):
                     rest += ".pdf"
         except Exception:
             pass
-    d = DEST / acc
+    d = dir_for(acc)
     d.mkdir(parents=True, exist_ok=True)
     target = d / rest
     if target.exists():
@@ -61,5 +90,5 @@ for p in sorted(DL.iterdir()):
                 extracted += 1
             except Exception as e:
                 print(f"  ! docx extract failed {acc}/{rest}: {e}")
-print(f"moved={moved} extracted={extracted} skipped(existing)={skipped}")
+print(f"moved={moved} extracted={extracted} skipped(existing)={skipped} renamed_dirs={renamed}")
 print(f"accessions with files: {len(list(DEST.glob('20*')))}")

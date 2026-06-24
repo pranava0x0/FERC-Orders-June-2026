@@ -5,7 +5,13 @@
   "filed": "2025-11-21",
   "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5539",
   "files": [
-    { "name": "Comments of Google LLC.pdf", "type": "PDF", "path": "sources/comments/files/20251121-5539/Comments of Google LLC.pdf", "text": "sources/comments/files/20251121-5539/Comments of Google LLC.txt", "pages": 20 }
+    {
+      "name": "Comments of Google LLC.pdf",
+      "type": "PDF",
+      "path": "sources/comments/files/20251121-5539__Google-LLC/Comments of Google LLC.pdf",
+      "text": "sources/comments/files/20251121-5539__Google-LLC/Comments of Google LLC.txt",
+      "pages": 20
+    }
   ],
   "read_from_pdf": true,
   "summary": "Frames timely large-load interconnection as central to the AI race and national security, and urges FERC to prioritize the reforms it can implement fastest — ones that maximize existing infrastructure and reward flexibility to minimize grid strain.",
@@ -15,9 +21,18 @@
     "Speed to power is a national-security and economic-competitiveness imperative.",
     "Supports large loads bearing the costs they cause, paired with efficient, predictable study processes."
   ],
-  "stances": { "study": "support", "cost": "support", "colo": "support", "flex": "strong support", "proximate": "support" },
+  "stances": {
+    "study": "support",
+    "cost": "support",
+    "colo": "support",
+    "flex": "strong support",
+    "proximate": "support"
+  },
   "quotes": [
-    { "text": "Google urges the Commission to promptly and pragmatically prioritize the reforms that can be implemented most quickly and that will incentivize digital and energy infrastructure development in a manner that maximizes use of the existing infrastructure and minimizes strain on the grid.", "page": 1 }
+    {
+      "text": "Google urges the Commission to promptly and pragmatically prioritize the reforms that can be implemented most quickly and that will incentivize digital and energy infrastructure development in a manner that maximizes use of the existing infrastructure and minimizes strain on the grid.",
+      "page": 1
+    }
   ],
   "captured_at": "2026-06-24"
 }

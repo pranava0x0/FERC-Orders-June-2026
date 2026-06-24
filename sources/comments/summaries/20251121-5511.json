@@ -1,1 +1,36 @@
-{"accession":"20251121-5511","filer":"PJM Interconnection, L.L.C.","bucket":"rto_iso","filed":"2025-11-21","elibrary":"https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5511","files":[{"name":"20251121-rm26-4-000.pdf","type":"PDF","path":"sources/comments/files/20251121-5511/20251121-rm26-4-000.pdf","text":"sources/comments/files/20251121-5511/20251121-rm26-4-000.txt"}],"read_from_pdf":true,"summary":"Supports a nationwide 'level playing field' for large-load interconnection based on physical principles, but urges FERC to respect the outcomes of PJM's own ongoing, expedited stakeholder processes rather than override regional design.","key_points":["A consistent national framework prevents siting decisions driven by uneven regulatory arbitrage.","FERC should defer to PJM's high-priority stakeholder efforts already under way.","Frames the issue around tightening supply and resource-adequacy concerns."],"stances":{"study":"support","cost":"support","colo":"mixed","flex":"support","proximate":"support"},"quotes":[{"text":"By creating a level playing field across the country, FERC and the Department of Energy can promote large load infrastructure decisions that are made based on physical principles as opposed to uneven regulatory frameworks.","page":1}],"captured_at":"2026-06-24"}
+{
+  "accession": "20251121-5511",
+  "filer": "PJM Interconnection, L.L.C.",
+  "bucket": "rto_iso",
+  "filed": "2025-11-21",
+  "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5511",
+  "files": [
+    {
+      "name": "20251121-rm26-4-000.pdf",
+      "type": "PDF",
+      "path": "sources/comments/files/20251121-5511__PJM-Interconnection-LLC/20251121-rm26-4-000.pdf",
+      "text": "sources/comments/files/20251121-5511__PJM-Interconnection-LLC/20251121-rm26-4-000.txt"
+    }
+  ],
+  "read_from_pdf": true,
+  "summary": "Supports a nationwide 'level playing field' for large-load interconnection based on physical principles, but urges FERC to respect the outcomes of PJM's own ongoing, expedited stakeholder processes rather than override regional design.",
+  "key_points": [
+    "A consistent national framework prevents siting decisions driven by uneven regulatory arbitrage.",
+    "FERC should defer to PJM's high-priority stakeholder efforts already under way.",
+    "Frames the issue around tightening supply and resource-adequacy concerns."
+  ],
+  "stances": {
+    "study": "support",
+    "cost": "support",
+    "colo": "mixed",
+    "flex": "support",
+    "proximate": "support"
+  },
+  "quotes": [
+    {
+      "text": "By creating a level playing field across the country, FERC and the Department of Energy can promote large load infrastructure decisions that are made based on physical principles as opposed to uneven regulatory frameworks.",
+      "page": 1
+    }
+  ],
+  "captured_at": "2026-06-24"
+}

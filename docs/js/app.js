@@ -276,6 +276,8 @@
   function renderComments() {
     var CM = window.FERC_COMMENTS;
     if (!CM) return head("The RM26-4 comment period", "Comment data did not load (js/comments-data.js).");
+    var CL = { study: "Study", cost: "Cost", colo: "Co-loc", flex: "Flex", proximate: "Prox-gen" };
+    var RG = { pjm: "PJM", miso: "MISO", spp: "SPP", caiso: "CAISO", isone: "ISO-NE", nyiso: "NYISO" };
 
     var statRow = '<div class="cm-stats">' +
       [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.analyzed, "text-analyzed"], [CM.summarized, "read in full"]]
@@ -304,9 +306,18 @@
         '<p class="cm-note mono">' + t.count + " of " + CM.analyzed + " comments mention it</p></div>";
     }).join("") + "</div>";
 
+    // per-comment reform-principle + order-region tags, aggregated into two bar groups
+    var prRegBar = function (t) {
+      return '<div class="cm-theme"><div class="cm-bhead"><span class="cm-label">' + esc(t.label) + '</span><span class="cm-n mono">' + t.pct + '%</span></div>' +
+        '<div class="cm-bar prin"><span style="width:' + t.pct + '%"></span></div>' +
+        '<p class="cm-note mono">' + t.count + " of " + CM.analyzed + "</p></div>";
+    };
+    var prReg = '<div class="cm-prreg">' +
+      '<div><h3 class="cm-sub">Reform principles engaged</h3><div class="cm-themes one">' + CM.principles.map(prRegBar).join("") + "</div></div>" +
+      '<div><h3 class="cm-sub">Order regions referenced</h3><div class="cm-themes one">' + CM.regions.map(prRegBar).join("") + "</div></div></div>";
+
     var flag = "";
     if (D.comments && D.comments.flagships && D.comments.flagships.length) {
-      var CL = { study: "Study", cost: "Cost", colo: "Co-loc", flex: "Flex", proximate: "Prox-gen" };
       var cards = D.comments.flagships.map(function (fl) {
         var stances = Object.keys(CL).map(function (k) {
           var v = (fl.stances || {})[k] || "silent";
@@ -333,12 +344,16 @@
           : c.dl ? '<span class="cm-badge dl" title="Body downloaded and text-extracted">✓</span>'
           : '<span class="cm-badge no" title="Body not downloaded">–</span>';
         var type = CM.bucketLabels[c.bucket] || c.bucket;
-        return '<li class="cm-row" data-q="' + esc((c.org + " " + c.desc + " " + type).toLowerCase()) + '">' +
+        var prChips = (c.pr || []).map(function (k) { return '<span class="cm-tag pr ' + k + '" title="Engages the ' + esc(CL[k]) + ' reform principle">' + esc(CL[k]) + "</span>"; }).join("");
+        var rgChips = (c.rg || []).map(function (k) { return '<span class="cm-tag rg" title="References the ' + esc(RG[k]) + ' region">' + esc(RG[k]) + "</span>"; }).join("");
+        var tags = (prChips || rgChips) ? '<div class="cm-row-tags">' + prChips + (rgChips ? '<span class="cm-tagsep" aria-hidden="true"></span>' + rgChips : "") + "</div>" : "";
+        var q = (c.org + " " + c.desc + " " + type + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ")).toLowerCase();
+        return '<li class="cm-row" data-q="' + esc(q) + '">' +
           '<div class="cm-row-top"><span class="cm-row-date mono">' + esc(fmtD(c.filed)) + "</span>" + badge +
           '<span class="cm-row-org">' + esc(c.org) + "</span>" +
           '<span class="cm-row-type">' + esc(type) + "</span>" +
           '<a class="cm-row-link" href="' + esc(eli(c.acc)) + '" target="_blank" rel="noopener noreferrer" title="Open eLibrary filing ' + esc(c.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a></div>' +
-          '<p class="cm-row-desc">' + esc(c.desc) + "</p></li>";
+          '<p class="cm-row-desc">' + esc(c.desc) + "</p>" + tags + "</li>";
       }).join("");
       return '<section class="cm-listgroup"><h3 class="cm-listgroup-h">' + esc(r.label) + ' <span class="mono">' + r.count + "</span></h3><ul class=\"cm-list\">" + items + "</ul></section>";
     }).join("");
@@ -351,6 +366,7 @@
       statRow + rounds +
       head("Who commented", "Each filing's stakeholder type, counted across all " + CM.total + " comments. Types are keyword-derived from the filer and filing text.") + types +
       head("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies — a measured keyword prevalence, not a coding of each filer's position.") + themes +
+      head("Reform principles &amp; order regions", "Per-comment tags from each body: which of the five reform principles it engages, and which of the six show-cause-order RTO regions it references (keyword-detected; a comment can carry several). Out of " + CM.analyzed + " text-analyzed bodies.") + prReg +
       flag +
       head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. ★ read in full · ✓ body downloaded. Each links to its eLibrary filing.") +
       filter + '<div class="cm-listwrap">' + listHtml + "</div>" + src;

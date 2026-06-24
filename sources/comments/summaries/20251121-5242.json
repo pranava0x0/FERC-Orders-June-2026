@@ -1,1 +1,31 @@
-{"accession":"20251121-5242","filer":"Pennsylvania Office of Consumer Advocate & Delaware Division of the Public Advocate","bucket":"consumer_advocate","filed":"2025-11-21","elibrary":"https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5242","files":[{"name":"Joint Consumer Advocates (PA, DE) Comments - Large Loads ANOPR RM26-4.pdf","type":"PDF","path":"sources/comments/files/20251121-5242/Joint Consumer Advocates (PA, DE) Comments - Large Loads ANOPR RM26-4.pdf","text":"sources/comments/files/20251121-5242/Joint Consumer Advocates (PA, DE) Comments - Large Loads ANOPR RM26-4.txt"}],"read_from_pdf":true,"summary":"Speaking for utility consumers, the joint advocates back the reform but center residential ratepayers: data-center load should pay its own way through strong cost causation and transparency, not be subsidized by households.","key_points":["Cost causation so large loads bear the costs they impose.","Transparency for states to keep data-center costs off retail customers.","Guard against stranded-cost risk if forecast load does not materialize."],"stances":{"study":"support","cost":"strong support","colo":"support","flex":"support","proximate":"mixed"},"quotes":[],"captured_at":"2026-06-24"}
+{
+  "accession": "20251121-5242",
+  "filer": "Pennsylvania Office of Consumer Advocate & Delaware Division of the Public Advocate",
+  "bucket": "consumer_advocate",
+  "filed": "2025-11-21",
+  "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5242",
+  "files": [
+    {
+      "name": "Joint Consumer Advocates (PA, DE) Comments - Large Loads ANOPR RM26-4.pdf",
+      "type": "PDF",
+      "path": "sources/comments/files/20251121-5242__Pennsylvania-Office-of-Consumer-AdvocateDelaware-D/Joint Consumer Advocates (PA, DE) Comments - Large Loads ANOPR RM26-4.pdf",
+      "text": "sources/comments/files/20251121-5242__Pennsylvania-Office-of-Consumer-AdvocateDelaware-D/Joint Consumer Advocates (PA, DE) Comments - Large Loads ANOPR RM26-4.txt"
+    }
+  ],
+  "read_from_pdf": true,
+  "summary": "Speaking for utility consumers, the joint advocates back the reform but center residential ratepayers: data-center load should pay its own way through strong cost causation and transparency, not be subsidized by households.",
+  "key_points": [
+    "Cost causation so large loads bear the costs they impose.",
+    "Transparency for states to keep data-center costs off retail customers.",
+    "Guard against stranded-cost risk if forecast load does not materialize."
+  ],
+  "stances": {
+    "study": "support",
+    "cost": "strong support",
+    "colo": "support",
+    "flex": "support",
+    "proximate": "mixed"
+  },
+  "quotes": [],
+  "captured_at": "2026-06-24"
+}

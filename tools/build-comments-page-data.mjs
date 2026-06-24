@@ -14,6 +14,9 @@ import { dirname, join } from "node:path";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const C = join(here, "..", "sources", "comments");
+const FILES = join(C, "files");
+// body dir is named "<accession>__<org-slug>"; resolve it (tolerating an older bare name)
+const dirForAcc = (acc) => { if (!existsSync(FILES)) return null; const n = readdirSync(FILES).find((x) => x === acc || x.startsWith(acc + "__")); return n ? join(FILES, n) : null; };
 const cj = JSON.parse(readFileSync(join(C, "rm26-4-comments.json"), "utf8"));
 const audit = JSON.parse(readFileSync(join(C, "rm26-4-audit-index.json"), "utf8"));
 const auditByAcc = Object.fromEntries(audit.index.map((r) => [r.accession, r]));
@@ -46,9 +49,27 @@ const THEMES = [
 ];
 const themeCounts = Object.fromEntries(THEMES.map((t) => [t.key, 0]));
 
+// per-comment tags: which of the five reform principles (the orders' categories) and which of the six
+// show-cause-order RTO regions each comment engages, detected by keyword in its extracted body.
+const PRINCIPLES = [
+  { key: "study", label: "Study process & alt-tech", re: /interconnection study|study process|cluster study|interconnection queue|readiness|withdrawal penalt|study deposit|alternative (transmission )?technolog|grid[- ]enhancing|advanced conductor|dynamic line rating|reconductor/i },
+  { key: "cost", label: "Cost allocation & transparency", re: /cost allocation|cost[- ]shift|cost causation|cost responsibilit|cross[- ]subsidiz|stranded (asset|cost)|cost transparency/i },
+  { key: "colo", label: "Co-location / behind-the-meter", re: /co-?locat|behind[- ]the[- ]meter|\bbtm\b/i },
+  { key: "flex", label: "Flexible-load services", re: /flexible load|load flexibilit|curtailab|curtailment|dispatchable load|demand response|controllable load|interruptible/i },
+  { key: "proximate", label: "Proximate-generation interconnection", re: /bring[- ]your[- ]own[- ]generation|\bbyog\b|proximate generation|co-?located generation|self[- ]supply|on-?site generation|hybrid (facilit|interconnection)/i },
+];
+const REGIONS = [
+  { key: "pjm", label: "PJM", re: /\bpjm\b/i },
+  { key: "miso", label: "MISO", re: /\bmiso\b|midcontinent iso/i },
+  { key: "spp", label: "SPP", re: /\bspp\b|southwest power pool/i },
+  { key: "caiso", label: "CAISO", re: /\bcaiso\b|california iso|california independent system operator/i },
+  { key: "isone", label: "ISO-NE", re: /iso[- ]?ne\b|iso new england|\bnepool\b|new england/i },
+  { key: "nyiso", label: "NYISO", re: /\bnyiso\b|new york iso|new york independent system operator/i },
+];
+
 const bodyText = (acc) => {
-  const d = join(C, "files", acc);
-  if (!existsSync(d)) return "";
+  const d = dirForAcc(acc);
+  if (!d) return "";
   return readdirSync(d).filter((f) => f.endsWith(".txt"))
     .map((f) => { try { return readFileSync(join(d, f), "utf8"); } catch { return ""; } }).join("\n");
 };
@@ -57,13 +78,24 @@ let analyzed = 0;
 const list = cj.comments.map((c) => {
   const a = auditByAcc[c.acc] || {};
   const txt = bodyText(c.acc);
+  let pr = [], rg = [];
   if (txt.length > 200) {
     analyzed++;
     for (const t of THEMES) if (t.re.test(txt)) themeCounts[t.key]++;
+    pr = PRINCIPLES.filter((p) => p.re.test(txt)).map((p) => p.key);
+    rg = REGIONS.filter((r) => r.re.test(txt)).map((r) => r.key);
   }
   return { acc: c.acc, org: c.org, filed: c.filed, bucket: c.bucket, desc: c.desc,
-           dl: a.downloaded ? 1 : 0, sum: a.summarized ? 1 : 0 };
+           dl: a.downloaded ? 1 : 0, sum: a.summarized ? 1 : 0, pr, rg };
 }).sort((x, y) => (sortKey(x.filed) < sortKey(y.filed) ? -1 : sortKey(x.filed) > sortKey(y.filed) ? 1 : x.org.localeCompare(y.org)));
+
+// aggregate the per-comment principle/region tags
+const tagStats = (defs, field) => defs.map((d) => {
+  const count = list.filter((c) => c[field].includes(d.key)).length;
+  return { key: d.key, label: d.label, count, pct: analyzed ? Math.round((count / analyzed) * 100) : 0 };
+});
+const principles = tagStats(PRINCIPLES, "pr");
+const regions = tagStats(REGIONS, "rg");
 
 // respondent types: count per bucket, sorted desc
 const typeCounts = {};
@@ -94,6 +126,8 @@ const out = {
   rounds,
   respondentTypes,
   themes,
+  principles,
+  regions,
   bucketLabels: labels,
   list,
 };
