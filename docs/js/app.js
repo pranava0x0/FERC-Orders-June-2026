@@ -56,9 +56,33 @@
       '<div><dt>As of</dt><dd class="mono">' + esc(m.capture) + "</dd></div>" +
       "</dl>";
 
+    var commish = "";
+    if (D.commissioners && D.commissioners.length) {
+      // Cite the concurrences to the committed PJM order copy (where they run pp. 84–114).
+      var pjm = D.dockets.filter(function (d) { return d.item === "E-7"; })[0];
+      var coPdf = pjm ? pjm.pdf : "orders/e-7-pjm-el26-67-000.pdf";
+      var coSrc = D.SOURCES[pjm ? pjm.url : "e7"];
+      var cards = D.commissioners.map(function (c) {
+        var cite = '<span class="commish-cite"><a class="cite-link" href="' + esc(coPdf) + "#page=" + c.page +
+          '" target="_blank" rel="noopener noreferrer" aria-label="Open ' + esc(c.name) +
+          "’s concurring statement in the committed PJM order PDF at page " + c.page +
+          '" title="Committed PJM order PDF, opens inline to p. ' + c.page + '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
+          '<a class="cite-link" href="' + esc(coSrc.url) + "#page=" + c.page +
+          '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov PJM order at page ' + c.page +
+          '" title="Official ferc.gov source, page ' + c.page + '">gov <span class="ext" aria-hidden="true">↗</span></a></span>';
+        return '<div class="commish"><div class="commish-head"><span class="commish-name">' + esc(c.name) +
+          '</span><span class="commish-role">' + esc(c.role) + "</span>" + cite + "</div>" +
+          '<p class="commish-gist">' + esc(c.gist) + "</p>" +
+          '<div class="commish-quote">“…' + esc(c.quote) + '…”</div></div>';
+      }).join("");
+      commish = head("What each commissioner emphasized",
+        "All five joined every order unanimously; their concurring statements diverge in emphasis. Quoted from the orders’ attached statements; cites open the PJM order copy.") +
+        '<div class="commish-grid">' + cards + "</div>";
+    }
+
     return head("Overview", m.subtitle) +
       '<div class="overview-bg">' + paras(m.summary) + "</div>" +
-      stats + glance;
+      stats + glance + commish;
   }
 
   /* ---- TAB 1 ---- */
@@ -146,8 +170,14 @@
             "</span>" + cite + "</div>" +
             '<span class="dir-quote">“' + esc(x.q) + '”</span></div>';
         }).join("") + "</div>";
-      var region = '<details class="dreg"><summary>Region-specific findings (' + d.reg.length + ")</summary><ul>" +
+      var unique = d.unique ? '<div class="docket-unique"><span class="label">What’s unique to ' + esc(d.rto) + '</span><p>' + esc(d.unique) + "</p></div>" : "";
+      var asks = (d.asks && d.asks.length) ? '<div class="docket-asks"><span class="label">What FERC presses ' + esc(d.rto) + ' on (Section IV)</span><ul>' +
+        d.asks.map(function (a) { return "<li>" + esc(a) + "</li>"; }).join("") + "</ul></div>" : "";
+      var region = '<details class="dreg"><summary>What’s distinct about ' + esc(d.rto) + " (" + d.reg.length + ")</summary><ul>" +
         d.reg.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></details>";
+      var roster = (d.respondentList && d.respondentList.length) ?
+        '<details class="dreg dros"><summary>All ' + d.respondentList.length + " named respondents</summary><ul class=\"roster\">" +
+        d.respondentList.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></details>" : "";
       return '<div class="docket"><div class="docket-spine"><span class="item">' + esc(d.item) +
         '</span><span class="docket-no">' + esc(d.docket) + "</span></div>" +
         '<div class="docket-main">' +
@@ -155,7 +185,7 @@
         '</span> <span class="rto-full">' + esc(d.rtoFull) + "</span></div>" + orderLink + "</div>" +
         '<div class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</div>" +
         '<div class="docket-tags"><span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span></div>" +
-        directives + region +
+        unique + directives + asks + region + roster +
         "</div></div>";
     }).join("") + "</div>";
 
@@ -172,7 +202,7 @@
     var participate = '<p class="lede" style="margin-bottom:14px">' + esc(p.intro) + "</p>" + partRows + partLinks;
 
     return head("The six dockets: E-7 through E-12",
-      "Same §206 spine, region-specific application. Directives and findings below are quoted from each order PDF (downloaded & OCR'd, captions verified) with paragraph cites; the order's FERC reporter cite, length, and named respondents head each card.") + docs +
+      "Same §206 spine, but each card leads with what’s unique to that system. Directives and findings are quoted from each order PDF (downloaded & OCR'd, captions verified) with paragraph cites; expand a card for the full distinct-findings list and every named respondent.") + docs +
       head("File or follow the dockets", "Every proceeding is open on the public record. Use the exact docket number on any submission.") + participate;
   }
 

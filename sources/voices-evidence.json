@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-06-23",
+  "captured_at": "2026-06-24",
   "note": "Verified source snippets backing the directly-quoted phrases in D.voices (Discourse 'Commentary across the spectrum'). A test in tests/source-accuracy.test.mjs asserts every single-quoted phrase in a voice's take appears in its evidence here, so a future edit to a quote fails loudly until the evidence is re-verified against the cited source.",
   "voices": {
     "Tyler Norris": {
@@ -25,6 +25,14 @@
     "Public Citizen": {
       "src": "publiccitizen",
       "evidence": "Public Citizen filed comments supporting a temporary moratorium on new data center interconnections until the issues raised in the NERC Level 3 Alert are resolved, and noted concerns about state authority over the energy aspects of data centers."
+    },
+    "Mona Dajani": {
+      "src": "utilitydive",
+      "evidence": "Mona Dajani, a partner and co-chair of Cooley's infrastructure, energy and real estate practice, said in an email to Utility Dive: The era of one national standard for data center interconnection is over before it began. What replaces it is six regional answers to the same question, decided on six different timelines."
+    },
+    "Neil Chatterjee": {
+      "src": "heatmap",
+      "evidence": "Neil Chatterjee, a former FERC chairman, characterized the commission's region-specific show cause approach as a very FERC-y approach."
     }
   }
 }
