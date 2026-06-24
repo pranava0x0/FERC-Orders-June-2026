@@ -23,6 +23,15 @@ for p in sorted(DL.iterdir()):
     acc, rest = m.group(1), m.group(2)
     # strip Chrome's " (1)" dedupe suffix before the extension
     rest = re.sub(r" \(\d+\)(\.[A-Za-z0-9]+)$", r"\1", rest)
+    # heal Content-Disposition truncation: a filename containing ";" is cut at the ";", losing its
+    # extension (e.g. "RM26-4; Antora ….pdf" arrives as just "RM26-4"). If the bytes are a PDF, restore it.
+    if "." not in rest:
+        try:
+            with open(p, "rb") as fh:
+                if fh.read(5) == b"%PDF-":
+                    rest += ".pdf"
+        except Exception:
+            pass
     d = DEST / acc
     d.mkdir(parents=True, exist_ok=True)
     target = d / rest

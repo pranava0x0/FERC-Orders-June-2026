@@ -11,7 +11,21 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   fires, but it triggers no `window.open`, no navigation, and no download (the other 269 behave
   identically), so eLibrary appears to serve this one file inline rather than as an attachment. Status:
   **Open (known gap)** — the file is inventoried in `rm26-4-files.json` and re-downloadable; the site
-  reads "269 of 270." Not worth further automation for a single document.
+  reads "272 of 273." Not worth further automation for a single document.
+
+- **2026-06-24 · data · four comment PDFs are image-only scans (no text layer).** `20251121-5224`,
+  `20251121-5521` (Data Center Coalition), `20251121-5140` (Yurok Nation letter), `20251205-5005` —
+  downloaded, but `fitz` extracts ~0 text. Root cause: **source-side** (scanned filings). Status: **Open
+  (OCR-pending)** — no OCR tool installed locally; `tools/validate-comments.py` flags them every run.
+
+- **2026-06-24 · data/code · validation recovered 3 bodies + hardened the pipeline. Fixed.** A
+  `validate-comments.py` pass found and fixed: (1) Eolian `20260519-5158` and Sierra Club `20260520-5102`
+  had empty inventory from the initial `GetFileListFromP8` pull — re-queried and backfilled
+  `rm26-4-files.json`, then downloaded both; (2) filenames containing ";" are truncated by Chrome at the
+  Content-Disposition separator (`"RM26-4; Antora….pdf"` arrives as `RM26-4`) — `organize` now restores
+  `.pdf` from the PDF magic bytes (recovered Antora `20260518-5155`); (3) eLibrary appends a " *"
+  availability marker to some link labels, so the grinder's ends-with regex skipped those files — it now
+  strips the marker first.
 
 - **2026-06-24 · test · `source-accuracy` maps `extract.deadlines` as objects
   (`${deadline.para} ${deadline.action} ${deadline.days}`) but the deadlines are plain strings**, so

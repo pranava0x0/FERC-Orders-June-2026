@@ -40,6 +40,9 @@ function grindCommentDownloads(accessions, opts) {
   var waitN = opts.waitN || 50; // link-wait polls × 400ms (50 = 20s) before giving up on an accession
   var pace = opts.pace == null ? 2000 : opts.pace; // ms a worker idles between accessions (host politeness)
   var fileRe = /\.(pdf|docx?|txt)$/i; // some filers submit a plain-text body (eLibrary names it "<id>.txt")
+  // eLibrary appends a " *" availability marker to some link labels ("…Comments.pdf *") — strip it
+  // (and any trailing whitespace) before testing, or those files look like non-matches and get skipped.
+  var labelOf = function (a) { return (a.innerText || "").trim().replace(/\s*\*+\s*$/, ""); };
 
   window.__g = { done: {}, fail: [], total: accessions.length, finished: false };
   var i = 0;
@@ -62,7 +65,7 @@ function grindCommentDownloads(accessions, opts) {
           try { d = f.contentDocument; } catch (e) { break; } // navigated away / detached
           if (d) {
             links = [].slice.call(d.querySelectorAll("a")).filter(function (a) {
-              return fileRe.test((a.innerText || "").trim());
+              return fileRe.test(labelOf(a));
             });
             if (links.length) break;
           }
