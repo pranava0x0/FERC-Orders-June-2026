@@ -405,22 +405,6 @@ window.FERC_DATA = (function () {
     },
   ];
 
-  // What is identical across all six orders (the shared §206 template) — so the per-docket cards below
-  // read as the *specific* variations on this common spine. Drawn from the fact sheet + the order PDFs.
-  const spine = {
-    src: ["fercFS", "e7"],
-    items: [
-      "Same instrument and timing: each is an ‘Order Instituting Proceeding Under Section 206,’ issued June 18, 2026 (195 FERC ¶ 61,211–61,216), to the RTO/ISO and its named transmission owners.",
-      "Same skeleton: I. Background (the DOE ANOPR plus the PJM Co-Location and SPP HILL / HILLGA / CHILLS precedents) · II. the region’s existing processes · III. Discussion (A–F) · IV. Briefing Questions.",
-      "Same five categories in III.A–III.E: study process + alternative transmission technologies; cost-shifting transparency + a pro forma cost-recovery agreement among the RTO, the TO, and the Eligible Customer; co-location / behind-the-meter generation; new services for flexible loads; and interconnection for generation serving electrically proximate or co-located load.",
-      "Same clock: a 30-day informational report on resource adequacy (III.F), 60 days to show cause or file §206 changes, a 21-day intervention deadline, and a 30-day response window; the refund effective date is the Federal Register publication date.",
-      "Same election and invitation: show cause why the Tariff stays just and reasonable, or propose the changes that would fix it — and all six invite §205 filings as the faster path.",
-      "Same guardrails: protect existing and near-complete commercial arrangements, and require evaluation of alternative transmission technologies (justifying conventional upgrades if chosen instead).",
-      "Same jurisdictional line: act on cost-shifting among transmission customers; leave retail cost allocation and generation siting to the states.",
-      "Same Commission: unanimous, with separate concurring statements from all five commissioners.",
-    ],
-  };
-
   const jurisdiction = [
     {
       h: "Transmission cost-shifting → FERC. Retail cost-shifting → states.",
@@ -602,5 +586,5 @@ window.FERC_DATA = (function () {
     ],
   };
 
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, spine, jurisdiction, regional, reception, media, voices, commissioners, participate };
+  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, commissioners, participate };
 })();
