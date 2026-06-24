@@ -14,10 +14,11 @@ Built for an energy-regulatory audience. Five tabs:
    orders over a generic NOPR.
 3. **Reforms**: the five reform categories, the transmission-vs-retail jurisdictional boundary, and the
    per-RTO regional distinctions, grounded in the orders' published framing.
-4. **Dockets (E-7 to E-12)**: the six per-RTO order cards — each leads with what's unique to that
-   system, then the quoted directives (linked to the exact page of the committed order PDF), the
-   system-specific Section IV asks, a variable-length distinct-findings list, and the full
-   named-respondent roster — plus how to file or follow each docket.
+4. **Dockets (E-7 to E-12)**: six collapsible per-RTO accordions — open one for what's unique to that
+   system, the quoted directives (page-linked to the committed PDF and ferc.gov), the system-specific
+   Section IV asks, what each commissioner said about that order (quote + page cite, both links), a
+   variable-length distinct-findings list, and the full named-respondent roster — plus how to file or
+   follow each docket.
 5. **Discourse**: stakeholder reception, named commentary across the political spectrum, and
    trade-press narratives.
 

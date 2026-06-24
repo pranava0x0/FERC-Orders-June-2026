@@ -118,22 +118,37 @@ test("six dockets, correct item -> RTO -> docket mapping", () => {
   assert.ok(new Set(D.dockets.map((d) => d.reg.length)).size >= 2, "distinct-findings counts vary across dockets");
 });
 
-test("commissioner statements: five, distinct, anchor quotes verbatim in the PJM order text", () => {
+test("commissioner statements: five, with per-order page cites that carry the quote", () => {
   assert.ok(Array.isArray(D.commissioners) && D.commissioners.length === 5, "five commissioner statements");
-  const pjmText = readFileSync(join(here, "..", "sources", "text", "orders", "e-7-pjm-el26-67-000.txt"), "utf8")
-    .replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ");
-  const names = new Set();
+  const KEYS = ["swett", "rosner", "see", "chang", "lacerte"];
+  const byKey = Object.fromEntries(D.commissioners.map((c) => [c.key, c]));
+  assert.deepEqual([...D.commissioners.map((c) => c.key)].sort(), [...KEYS].sort(), "keys are the five commissioners");
   for (const c of D.commissioners) {
-    assert.ok(c.name && c.role && c.gist && c.quote, `${c.name} has name/role/gist/quote`);
+    assert.ok(c.name && c.role && c.short && c.gist && c.quote, `${c.name} has name/role/short/gist/quote`);
     assert.ok(c.gist.length >= 80, `${c.name} gist is substantive`);
-    assert.ok(Number.isInteger(c.page) && c.page >= 70 && c.page <= 119, `${c.name} page anchor plausible`);
-    const q = c.quote.replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ");
-    assert.ok(pjmText.includes(q), `${c.name}'s anchor quote "${c.quote}" appears verbatim in the PJM order text`);
-    names.add(c.name);
   }
-  assert.equal(names.size, 5, "five distinct commissioners");
-  for (const n of ["Swett", "Rosner", "See", "Chang", "LaCerte"]) {
-    assert.ok([...names].some((x) => x.includes(n)), `${n} present in the roster`);
+  const STEM = {
+    "E-7": "e-7-pjm-el26-67-000", "E-8": "e-8-miso-el26-70-000", "E-9": "e-9-spp-el26-68-000",
+    "E-10": "e-10-caiso-el26-71-000", "E-11": "e-11-isone-el26-72-000", "E-12": "e-12-nyiso-el26-69-000",
+  };
+  const loose = (s) => s.replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ").toLowerCase();
+  const pagesOf = (item) => {
+    const raw = readFileSync(join(here, "..", "sources", "text", "orders", STEM[item] + ".txt"), "utf8");
+    const parts = raw.split(/--- PAGE (\d+) ---/);
+    const map = new Map([[1, parts[0]]]);
+    for (let i = 1; i < parts.length; i += 2) map.set(Number(parts[i]), parts[i + 1] || "");
+    return map;
+  };
+  // every per-docket commissioner cite must land on a page that actually carries the quote in THAT order
+  for (const d of D.dockets) {
+    assert.ok(d.commishPages, `${d.item} has commishPages`);
+    const pages = pagesOf(d.item);
+    for (const key of KEYS) {
+      const pg = d.commishPages[key];
+      assert.ok(Number.isInteger(pg) && pg >= 1 && pg <= d.pages, `${d.item} ${key} page ${pg} within 1..${d.pages}`);
+      const q = loose(byKey[key].quote);
+      assert.ok(loose(pages.get(pg) || "").includes(q), `${d.item} ${key} p.${pg} carries the quote "${byKey[key].quote}"`);
+    }
   }
 });
 

@@ -235,6 +235,7 @@ window.FERC_DATA = (function () {
       item: "E-7", rto: "PJM", rtoFull: "PJM Interconnection, L.L.C.", docket: "EL26-67-000", url: "e7", pdf: "orders/e-7-pjm-el26-67-000.pdf",
       region: "Mid-Atlantic / 13 states + DC", cite: "195 FERC ¶ 61,211", pages: 114,
       respondents: "PJM + 45 named transmission owners",
+      commishPages: { swett: 87, rosner: 93, see: 99, chang: 104, lacerte: 113 },
       status: "Co-location rules already in place",
       unique: "The only market that has already cleared the co-location question. PJM’s co-located-load rules were settled in a separate proceeding (the Dec. 2025 Co-Location Order), so this §206 builds on that record instead of reopening it — and PJM’s new services become the template the other five orders are told to copy.",
       asks: [
@@ -262,6 +263,7 @@ window.FERC_DATA = (function () {
       item: "E-8", rto: "MISO", rtoFull: "Midcontinent Independent System Operator, Inc.", docket: "EL26-70-000", url: "e8", pdf: "orders/e-8-miso-el26-70-000.pdf",
       region: "15 states, Midwest + South", cite: "195 FERC ¶ 61,212", pages: 115,
       respondents: "MISO + 30 named transmission owners",
+      commishPages: { swett: 91, rosner: 96, see: 102, chang: 106, lacerte: 114 },
       status: "Early-stage large-load rules",
       unique: "The fast-growing middle of the pack. MISO runs a Large Load Working Group and an Expedited Project Review path, and even told its own stakeholders the Tariff lacks a ‘consistent or transparent framework’ for large loads — but it has no co-location procedures in the Tariff yet and only the basic Order No. 888 services, so FERC imports the PJM and SPP templates ‘with regional variation.’",
       asks: [
@@ -287,6 +289,7 @@ window.FERC_DATA = (function () {
       item: "E-9", rto: "SPP", rtoFull: "Southwest Power Pool, Inc.", docket: "EL26-68-000", url: "e9", pdf: "orders/e-9-spp-el26-68-000.pdf",
       region: "Central U.S., 14+ states", cite: "195 FERC ¶ 61,213", pages: 92,
       respondents: "SPP + 22 named transmission owners",
+      commishPages: { swett: 68, rosner: 73, see: 78, chang: 83, lacerte: 92 },
       status: "Most mature: HILL / HILLGA",
       unique: "The acknowledged leader. FERC adopts SPP’s own ‘High Impact Large Load’ (HILL) definition as the order’s definition of large load and commends its HILLGA and Conditional HILL services — so SPP’s is the shortest order (92 pp), finds only two gaps to close, and its frameworks become the model the other regions are told to follow.",
       asks: [
@@ -313,6 +316,7 @@ window.FERC_DATA = (function () {
       item: "E-10", rto: "CAISO", rtoFull: "California Independent System Operator Corp.", docket: "EL26-71-000", url: "e10", pdf: "orders/e-10-caiso-el26-71-000.pdf",
       region: "California (+ WEIM footprint)", cite: "195 FERC ¶ 61,214", pages: 118,
       respondents: "CAISO + 24 Participating Transmission Owners",
+      commishPages: { swett: 93, rosner: 98, see: 104, chang: 109, lacerte: 117 },
       status: "No Order No. 888 service",
       unique: "The structural outlier. CAISO doesn’t offer traditional Order No. 888 transmission service at all — no firm long-term reservations, no formal application process, just a single ‘daily’ service — and its Participating TOs, not CAISO, lead load interconnection. FERC even gives it an escape hatch no other order offers: explain whether its non-888 framework already meets the concerns.",
       asks: [
@@ -339,6 +343,7 @@ window.FERC_DATA = (function () {
       item: "E-11", rto: "ISO-NE", rtoFull: "ISO New England Inc.", docket: "EL26-72-000", url: "e11", pdf: "orders/e-11-isone-el26-72-000.pdf",
       region: "Six New England states", cite: "195 FERC ¶ 61,215", pages: 115,
       respondents: "ISO-NE + 16 Participating Transmission Owners",
+      commishPages: { swett: 92, rosner: 97, see: 102, chang: 107, lacerte: 115 },
       status: "Transmission-constrained grid",
       unique: "The most transmission-constrained. With a system peak of only ~30,000 MW and significant existing constraints, FERC calls the cost-shifting and reliability risks ‘particularly acute’ here — and its planning runs off a CELT forecast that doesn’t even include large proposed data-center loads.",
       asks: [
@@ -364,6 +369,7 @@ window.FERC_DATA = (function () {
       item: "E-12", rto: "NYISO", rtoFull: "New York Independent System Operator, Inc.", docket: "EL26-69-000", url: "e12", pdf: "orders/e-12-nyiso-el26-69-000.pdf",
       region: "New York State", cite: "195 FERC ¶ 61,216", pages: 119,
       respondents: "NYISO + 9 named New York transmission owners",
+      commishPages: { swett: 96, rosner: 100, see: 106, chang: 111, lacerte: 118 },
       status: "Largely outside the tariff today",
       unique: "The least-codified. NYISO’s large-load handling lives largely outside its tariff — study deposits and assumptions sit in non-tariff documents, it has no tariff definition of ‘large load,’ and it doesn’t expect to file co-location reforms until 2027, which FERC cites as exactly why a §206 proceeding is needed now. It is also the only order with a 45-day window to seek up to a 90-day abeyance.",
       asks: [
@@ -515,32 +521,33 @@ window.FERC_DATA = (function () {
   ];
 
   /* ---------------------------------------------------------------- OVERVIEW */
-  // Concurring statements attached to each order (quoted from the OCR'd order text and cited to the
-  // PJM order PDF, where the five run pp. 84–114). All five joined every order; only the emphasis differs.
+  // The five concurring statements are attached to every order and read essentially the same across the
+  // six, so the emphasis (gist) lives here once; each docket cites the quote's page in its OWN order via
+  // docket.commishPages. `quote` is verbatim in all six orders (a test enforces this).
   const commissioners = [
     {
-      name: "Laura V. Swett", role: "Chairman", page: 84,
-      quote: "no longer the sleepy, responsive agency of the past",
+      key: "swett", name: "Laura V. Swett", role: "Chairman", short: "Why §206, not a rulemaking",
+      quote: "FERC is no longer the sleepy, responsive agency of the past",
       gist: "Defends the procedure: six tailored show cause orders instead of one rule, because §206 is faster and more ‘legally durable.’ Points to rulemakings like Order Nos. 2023 and 2222 still not fully implemented years on, and notes the six markets cover nearly two-thirds of FERC-jurisdictional load.",
     },
     {
-      name: "David Rosner", role: "Commissioner", page: 90,
+      key: "rosner", name: "David Rosner", role: "Commissioner", short: "Four pillars",
       quote: "Bring Your Own New Generation",
       gist: "Frames the orders as four pillars — protecting consumers, safeguarding reliability, enhancing transparency, fostering innovation. Stresses Cost Recovery Agreements so a data center that never shows up can’t shift costs onto residential customers, grid-enhancing technologies, and ‘Bring Your Own New Generation’ modeled on SPP’s HILLGA.",
     },
     {
-      name: "Lindsay S. See", role: "Commissioner", page: 98,
-      quote: "affordability must be at the forefront",
+      key: "see", name: "Lindsay S. See", role: "Commissioner", short: "Federalism + affordability",
+      quote: "affordability must be at the forefront as we protect consumers",
       gist: "Two themes: large-load interconnection is a shared federal-State responsibility, so the orders should support state efforts rather than override them; and affordability must stay central. Pushes alternative transmission technologies to hold down network-upgrade costs and asks states what cost data they actually need.",
     },
     {
-      name: "Judy W. Chang", role: "Commissioner", page: 103,
-      quote: "fundamentally a customer protection statute",
+      key: "chang", name: "Judy W. Chang", role: "Commissioner", short: "Records & cost causation",
+      quote: "The FPA is fundamentally a customer protection statute",
       gist: "Focuses on building records that survive review under §206’s ex parte limits, calling the FPA ‘fundamentally a customer protection statute.’ Warns that cost-recovery agreements ‘untethered from any assessment of the actual cost’ of serving a load may not protect other customers, and notes the orders deliberately don’t assert the ANOPR’s broadest jurisdictional theory.",
     },
     {
-      name: "David LaCerte", role: "Commissioner", page: 111,
-      quote: "prepared to play jurisdictional hardball",
+      key: "lacerte", name: "David LaCerte", role: "Commissioner", short: "Jurisdictional hardball",
+      quote: "I am prepared to play jurisdictional hardball, if needed",
       gist: "The sharpest tone. Invites region-specific §205 proposals and offers operators the ‘first pen,’ but says he is ‘prepared to play jurisdictional hardball’ — if they don’t file robust fixes, FERC will ‘dictat[e] the solutions for you.’ Ties the orders to state Ratepayer Protection Pledges.",
     },
   ];

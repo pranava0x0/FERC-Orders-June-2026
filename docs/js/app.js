@@ -58,25 +58,14 @@
 
     var commish = "";
     if (D.commissioners && D.commissioners.length) {
-      // Cite the concurrences to the committed PJM order copy (where they run pp. 84–114).
-      var pjm = D.dockets.filter(function (d) { return d.item === "E-7"; })[0];
-      var coPdf = pjm ? pjm.pdf : "orders/e-7-pjm-el26-67-000.pdf";
-      var coSrc = D.SOURCES[pjm ? pjm.url : "e7"];
       var cards = D.commissioners.map(function (c) {
-        var cite = '<span class="commish-cite"><a class="cite-link" href="' + esc(coPdf) + "#page=" + c.page +
-          '" target="_blank" rel="noopener noreferrer" aria-label="Open ' + esc(c.name) +
-          "’s concurring statement in the committed PJM order PDF at page " + c.page +
-          '" title="Committed PJM order PDF, opens inline to p. ' + c.page + '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
-          '<a class="cite-link" href="' + esc(coSrc.url) + "#page=" + c.page +
-          '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov PJM order at page ' + c.page +
-          '" title="Official ferc.gov source, page ' + c.page + '">gov <span class="ext" aria-hidden="true">↗</span></a></span>';
         return '<div class="commish"><div class="commish-head"><span class="commish-name">' + esc(c.name) +
-          '</span><span class="commish-role">' + esc(c.role) + "</span>" + cite + "</div>" +
+          '</span><span class="commish-role">' + esc(c.role) + '</span><span class="commish-tag">' + esc(c.short) + "</span></div>" +
           '<p class="commish-gist">' + esc(c.gist) + "</p>" +
           '<div class="commish-quote">“…' + esc(c.quote) + '…”</div></div>';
       }).join("");
       commish = head("What each commissioner emphasized",
-        "All five joined every order unanimously; their concurring statements diverge in emphasis. Quoted from the orders’ attached statements; cites open the PJM order copy.") +
+        "All five joined every order unanimously; their concurring statements diverge in emphasis. Each statement is quoted from the orders and cited to the exact page of its own order in the Dockets tab.") +
         '<div class="commish-grid">' + cards + "</div>";
     }
 
@@ -139,7 +128,7 @@
 
   /* ---- TAB: Dockets (the six order cards + how to participate) ---- */
   function renderDockets() {
-    var docs = '<div class="dockets">' + D.dockets.map(function (d) {
+    var docs = '<div class="dockets">' + D.dockets.map(function (d, idx) {
       var so = D.SOURCES[d.url];
       // Link to the committed copy under docs/orders/ (served by GitHub Pages, same-origin) so the
       // PDF opens inline and #page= works; the official ferc.gov source sits behind Cloudflare.
@@ -173,20 +162,34 @@
       var unique = d.unique ? '<div class="docket-unique"><span class="label">What’s unique to ' + esc(d.rto) + '</span><p>' + esc(d.unique) + "</p></div>" : "";
       var asks = (d.asks && d.asks.length) ? '<div class="docket-asks"><span class="label">What FERC presses ' + esc(d.rto) + ' on (Section IV)</span><ul>' +
         d.asks.map(function (a) { return "<li>" + esc(a) + "</li>"; }).join("") + "</ul></div>" : "";
+      // Per-order commissioner statements: the same five concurrences, cited to THIS order's pages.
+      var commish = (d.commishPages && D.commissioners) ?
+        '<details class="dreg dcom"><summary>What the commissioners said in this order (' + D.commissioners.length + ")</summary><div class=\"commish-rows\">" +
+        D.commissioners.map(function (c) {
+          var pg = d.commishPages[c.key];
+          var links = pg ? '<span class="commish-cite"><span class="dir-para mono">p. ' + pg + "</span>" +
+            '<a class="cite-link" href="' + esc(d.pdf) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open ' + esc(c.name) +
+            "’s concurring statement in the committed " + esc(d.item) + " order PDF at page " + pg + '" title="Committed PDF, opens inline to p. ' + pg +
+            '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
+            '<a class="cite-link" href="' + esc(so.url) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov ' + esc(d.item) +
+            " order at page " + pg + '" title="Official ferc.gov source, page ' + pg + '">gov <span class="ext" aria-hidden="true">↗</span></a></span>' : "";
+          return '<div class="commish-row"><div class="commish-row-head"><span class="commish-name">' + esc(c.name) +
+            '</span><span class="commish-tag">' + esc(c.short) + "</span>" + links + "</div>" +
+            '<div class="commish-quote">“…' + esc(c.quote) + '…”</div></div>';
+        }).join("") + "</div></details>" : "";
       var region = '<details class="dreg"><summary>What’s distinct about ' + esc(d.rto) + " (" + d.reg.length + ")</summary><ul>" +
         d.reg.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></details>";
       var roster = (d.respondentList && d.respondentList.length) ?
         '<details class="dreg dros"><summary>All ' + d.respondentList.length + " named respondents</summary><ul class=\"roster\">" +
         d.respondentList.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></details>" : "";
-      return '<div class="docket"><div class="docket-spine"><span class="item">' + esc(d.item) +
-        '</span><span class="docket-no">' + esc(d.docket) + "</span></div>" +
-        '<div class="docket-main">' +
-        '<div class="docket-head"><div class="docket-id"><span class="rto">' + esc(d.rto) +
-        '</span> <span class="rto-full">' + esc(d.rtoFull) + "</span></div>" + orderLink + "</div>" +
-        '<div class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</div>" +
-        '<div class="docket-tags"><span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span></div>" +
-        unique + directives + asks + region + roster +
-        "</div></div>";
+      // Accordion: collapsed by default (first open) so all six fit on one screen; expand for detail.
+      return '<details class="docket"' + (idx === 0 ? " open" : "") + ">" +
+        '<summary class="docket-sum"><span class="item">' + esc(d.item) + "</span>" +
+        '<span class="docket-sum-id"><span class="rto">' + esc(d.rto) + '</span> <span class="rto-full">' + esc(d.rtoFull) + "</span>" +
+        '<span class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</span></span>" +
+        '<span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span>" +
+        '<span class="chev" aria-hidden="true">›</span></summary>' +
+        '<div class="docket-body">' + orderLink + unique + directives + asks + commish + region + roster + "</div></details>";
     }).join("") + "</div>";
 
     var p = D.participate;
@@ -202,7 +205,7 @@
     var participate = '<p class="lede" style="margin-bottom:14px">' + esc(p.intro) + "</p>" + partRows + partLinks;
 
     return head("The six dockets: E-7 through E-12",
-      "Same §206 spine, but each card leads with what’s unique to that system. Directives and findings are quoted from each order PDF (downloaded & OCR'd, captions verified) with paragraph cites; expand a card for the full distinct-findings list and every named respondent.") + docs +
+      "Same §206 spine, region-specific application. Each docket is collapsible — open one for what’s unique to that system, the quoted directives (page-linked to the committed PDF and ferc.gov), the Section IV asks, what each commissioner said about that order, the distinct-findings list, and every named respondent.") + docs +
       head("File or follow the dockets", "Every proceeding is open on the public record. Use the exact docket number on any submission.") + participate;
   }
 
