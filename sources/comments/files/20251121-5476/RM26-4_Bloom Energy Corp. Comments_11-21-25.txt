@@ -1,0 +1,1723 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+Interconnection of Large Loads to the Interstate 
+) 
+ 
+      Docket No. RM26-4-000 
+Transmission System  
+ 
+ 
+ 
+) 
+ 
+ 
+COMMENTS OF BLOOM ENERGY CORPORATION 
+ 
+ 
+Bloom Energy Corporation (“Bloom”) submits these initial comments in response to the 
+U.S. Department of Energy’s (“DOE”) advanced notice of proposed rulemaking (“ANOPR”).  
+Also attached is a report by the Brattle Group (“Brattle”) entitled, “Accelerating Integration of 
+New Co-located Generation and Loads” (“Brattle Report”), which Bloom previously submitted 
+in the PJM Interconnection, L.L.C.’s (“PJM”) co-location proceeding.1  The ANOPR presents a 
+major leap forward for interconnecting on-site generation and load as a composite resource.  The 
+Commission should act expeditiously in adopting interconnection reforms.   
+DOE proposes reforms that aim to meet today’s challenges resulting from surging data 
+center and AI infrastructure demand, while leaving it to the Commission to determine the details.  
+Bloom takes no position on whether the Federal Power Act provides FERC jurisdiction over 
+large load interconnections.  However, if the Commission declines to assert jurisdiction, Bloom 
+urges the Commission to adopt reforms to the large generator interconnection procedures for 
+interconnecting on-site large load – that is, new generation co-located with large load behind the 
+same point of interconnection (“hybrid facilities”).   
+The Commission has increasingly recognized the national security implications of AI 
+data centers.  Both the current and prior administrations explicitly linked the advancement of AI 
+ 
+1  
+“Comments of Bloom Energy Corporation,” Docket No. EL25-49-000, al. (filed Apr. 23, 2025) (attaching 
+Brattle Report). 
+
+--- PAGE 2 ---
+2 
+ 
+infrastructure to national security.2  Accelerating the interconnection of hybrid facilities and other 
+reforms proposed in the ANOPR are actions the Commission can take in support of this national 
+security goal. 
+ 
+Properly structured hybrid facility interconnection procedures will incentivize data 
+centers to deploy on-site generation that meets their peak loads, thereby easing resource 
+adequacy concerns while protecting existing customers from costs.  Bloom is submitting the 
+Brattle Report in support of reform principles three (3), five (5), and seven (7).  Brattle assesses 
+the concept of interconnecting new generation and co-located load as a composite facility called 
+an “Energy Park,” which shares the same characteristics as a hybrid facility with new generation 
+facilities described in the ANOPR.3  As analyzed by Brattle, such a facility includes (i) load 
+designated as Network Load, (ii) co-located generation that provides primary power to load, and 
+(iii) controls and protection mechanisms used to limit physical withdrawals and injections to pre-
+specified amounts.  Like the ANOPR, Brattle finds that an integrated interconnection study 
+approach for new load and new generation based on requested firm withdrawals and injections 
+can significantly reduce the need for transmission upgrades, potentially avoiding billions in 
+transmission expansion costs.4  Moreover, accelerating interconnection timelines will help meet 
+resource adequacy challenges from surging demand.   
+ 
+2  
+See https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-
+in-artificial-intelligence/.  
+3  
+While the term “Energy Park” in other contexts has previously referred to a collection of different supply 
+technologies (often focusing on variable energy resources), the Brattle Report gives it a different meaning.  See, e.g., 
+https://energyinnovation.org/wp-content/uploads/Energy-Parks-Report.pdf 
+4  
+The ANOPR does not use the term “firm” to modify injections and withdrawals. Bloom below seeks 
+clarification, as that appears to be DOE’s intent. 
+
+--- PAGE 3 ---
+3 
+ 
+Bloom also comments on reform principles six (6) and eight (8), recommending revisions 
+that would strengthen the reforms and ensure that hybrid facility generators are not treated in an 
+unduly discriminatory manner.   
+I. 
+INTRODUCTION 
+Bloom designs, manufactures and sells solid oxide fuel cell systems that utilize an 
+electrochemical process to convert the chemical energy in hydrogen directly to electrical energy 
+without combustion.  The fuel cell systems power distributed energy resources that can be 
+located either behind-the-meter or in front-of-the-meter, which are designed in a modular fault-
+tolerant format that provides critical reliability and can be designed to provide three nines 
+(99.9%) and five nines (99.999%) availability.  Bloom has installed over 1.5 GW, of which over 
+400 MW power data centers.  The fuel cell systems are baseload and thereby provide primary 
+power to customers, and also have the ability to quickly ramp up and down to follow load 
+fluctuations, making them an excellent option for data centers.  While Bloom can install 
+hundreds of megawatts of dispatchable generation at a site in as little as 6 to 9 months, grid 
+interconnection studies and long interconnection queues often make it infeasible to meet the time 
+sensitive requests of large load customers. 
+Bloom’s comments focus on the “bring your own generation” model and are limited to 
+improvements to generator interconnection procedures.  Bloom assumes that hybrid facility 
+procedures for interconnecting generators and large load will be separate and, in the case of 
+hybrid facility generators, additive to the existing pro forma large generator interconnection 
+procedures.  Bloom leaves it to others to comment on whether the Commission has jurisdiction 
+over large load interconnections, procedures related to such interconnections, and the 
+interconnection of large load with existing generation.   
+
+--- PAGE 4 ---
+4 
+ 
+In support of three DOE reform principles, Bloom is re-submitting the Brattle Report.  As 
+described in the Brattle Report, a hybrid facility consists of three functional components: (i) 
+generation that serves as primary power for onsite supply and is subject to transmission provider 
+or RTO interconnection studies, (ii) co-located load, and (iii) a physical control or protection 
+mechanism to limit maximum flows in and out of the facility.  By co-locating new primary 
+power (i.e., fuel cells and gas turbines), load can supply all or part of its energy and resource 
+adequacy on-site, thereby minimizing the impact on markets and transmission, while the 
+dispatchable generator can support the interconnected grid.  By reflecting the controllable nature 
+of withdrawals and injections to the grid through one or more control and protection 
+mechanisms, properly structured studies that reflect the integrated nature of these resources are 
+less likely to identify expensive and time-consuming transmission upgrades.  This approach 
+defines a hybrid facility under the ANOPR.  Brattle demonstrates that all of this can be 
+accomplished while meeting reliability requirements.   
+Bloom urges the Commission not only to adopt DOE’s proposal to expedite 
+interconnection studies where hybrid facilities agree to be curtailable and dispatchable, but also 
+to expedite studies where primary power serves large load and can be relied upon by load to 
+meet its demand.  Such a “bring your own generation” model should provide a sufficient basis 
+for expediting interconnection studies where primary power is relied upon by the hybrid facility 
+load to meet its resource adequacy requirement.   
+Finally, the proposal for hybrid facility generators to be responsible for 100% of 
+identified Network Upgrades associated with their requested injections but potentially without 
+cash equivalent refunds should be rejected.  There is no reason to treat cash equivalent refunds 
+for such Network Upgrades differently from other generators that are subject to the 
+
+--- PAGE 5 ---
+5 
+ 
+Commission’s pro forma rules or RTO rules.  In Order No. 2003-A, the Commission explained 
+that while the upfront payment by a generator for Network Upgrades serves as a financing 
+mechanism as well as a strong incentive to make efficient siting decisions, such payments were 
+never intended to become a means for a transmission provider to recover its costs.  Although a 
+hybrid facility generator may cause Network Upgrades depending on its requested firm 
+injections to the grid, those upgrades ultimately will benefit the future transmission system by 
+supporting new load and generation.  Given these benefits, the Commission should decline to 
+adopt rules that could dissuade much needed generation to serve large load by creating unduly 
+discriminatory cash equivalent refund rules. 
+II. 
+COMMENTS 
+Bloom’s comments focus on the interconnection of large load with new generation—
+specifically, the generation portion of a hybrid facility.  The Commission has developed a 
+significant record through its technical conference on Large Loads Co-Located at Generating 
+Facilities in Docket No. AD24-11, and in the PJM show cause proceeding in Docket No. EL25-
+49, et al., and the Commission may choose to incorporate those records in this proceeding.   
+Bloom addresses the following reform principles: Principle 3 (studying hybrid facilities 
+together to minimize Network Upgrade costs); Principle 5 (hybrid facilities should be studied 
+based on the amount of injection and/or withdrawal rights requested); Principle 6 (installation of 
+system protection equipment to prevent unauthorized injections and withdrawals by hybrid 
+facilities and penalties if they occur); Principle 7 (expedited studies should be provided to hybrid 
+facilities that agree to be curtailable and dispatchable); and Principle 8 (hybrid facilities should 
+be responsible for 100% of assigned interconnection studies).  Should the Commission decline 
+the ANOPR’s proposal to extend jurisdiction over large load interconnections, the Commission 
+
+--- PAGE 6 ---
+6 
+ 
+nonetheless should adopt generator interconnection procedure reforms for hybrid facility 
+generators consistent with the reform principles addressed below. 
+A. 
+Reform Principle 3: Hybrid Facilities Should be Studied Together to 
+Minimize the Need for Costly Network Upgrades 
+ 
+The ANOPR proposes that, to the extent practicable, the interconnection of large load 
+greater than 20 MW and a generator sharing the same point of interconnection be studied 
+together.5  As DOE explains, “[s]uch an approach will allow for efficient siting of loads and 
+generating facilities and thereby minimize the need for costly network upgrades.”6  
+This reform is consistent with a principle in the Brattle Report.  As previously 
+highlighted, the Brattle Report assesses the concept of interconnecting new generation and co-
+located load as a composite facility termed an Energy Park, which is a hybrid facility.7  Brattle 
+describes the process it proposes as Energy Park Integration (“EPI”) interconnection, where a 
+hybrid facility would be studied as a composite load and generation facility.  This concept shares 
+similarities with the integration concept for interconnecting “Private Use Networks” in the 
+Electric Reliability Council of Texas, which has interconnected more than 16,000 MW of load 
+and co-located generation over the years.  
+Because a hybrid facility supplies all or part of its load on-site, when studied as an 
+integrated unit both load and generation can be connected to the grid with fewer transmission 
+upgrades, thereby accelerating the overall interconnection process.  In contrast, under current 
+ 
+5  
+ANOPR at P 20.  The ANOPR is not entirely clear here, as DOE states: “load and hybrid facilities should 
+be studied together with generating facilities.”  However, as a hybrid facility includes a generating facility, the only 
+reasonable interpretation is that load and generation comprising hybrid facility be studied together. 
+6  
+Id. 
+7  
+While a hybrid facility could include battery storage or variable resources as its onsite resource, none of 
+these resources can meet the principles enunciated in the ANOPR, as they are not primary power and cannot be 
+combined with the load profile.  Rather, it is much more likely that these resources will be sold into the market on an 
+as-available basis, and receive financial settlements with load. 
+
+--- PAGE 7 ---
+7 
+ 
+practice, where state and federal jurisdiction over interconnection differ, transmission providers 
+may study the new load component of a hybrid facility (without recognizing the co-located 
+generator), while separately studying the interconnection of new generator (without recognizing 
+the hybrid facility’s load).  Put differently, under existing rules, load is studied as if it seeks firm 
+rights to withdraw 100% from the transmission system to meet its requirements, while the 
+generator is studied as if it seeks to inject 100% of its capacity into the transmission grid, with 
+some RTOs, like PJM, requiring that generator capacity also be studied for deliverability to load 
+throughout the system.  These bifurcated, non-integrated processes ignore on-site supply benefits 
+and can improperly identify required Network Upgrades, resulting in slower interconnection and 
+unnecessarily increasing Network Upgrade costs.8  
+Brattle models the composite behavior of load and generation by accounting for three 
+essential components: the generator, load, and a system control mechanism that limits net 
+exchanges with the grid.  Net load impacts would be limited to the firm nominated net grid 
+withdrawals, while net generator impacts would be limited to firm nominated injection levels (no 
+different than the ANOPR proposal, as discussed further below).  
+The Brattle Report demonstrates that procedures studying hybrid facility as a single, 
+integrated facility can lower transmission impacts and interconnection time without sacrificing 
+reliability (and indeed, improving it through accelerated integration of new supply).  The report 
+analyzes the standard contingency studies used for load reliability planning to show that the 
+ 
+8  
+Brattle Report, p. 12-13.  If the Commission declines jurisdiction over large load interconnections, it should 
+nevertheless urge transmission providers, RTOs, and state commissions to adopt interconnection rules to study the 
+load portion of a hybrid facility as a composite resource. 
+
+--- PAGE 8 ---
+8 
+ 
+proposed EPI approach yields lower transmission impacts even considering the contingency 
+cases used in transmission planning, including N-1 and N-1-1 contingency cases.9   
+The Brattle Report concludes that studying such facilities as a single resource can 
+accelerate interconnection by avoiding unnecessary Network Upgrades that would result from a 
+load-only interconnection process.10  As Brattle finds: “By avoiding unnecessary transmission 
+upgrades to accommodate new large loads, the EPI process avoids any costs that would 
+otherwise be allocated broadly to all customers.  By facilitating and accelerating a ‘bring-your-
+own capacity’ approach, the proposal mitigates the resource adequacy impact of load growth, 
+easing price increases in the capacity market and the commensurate bill impacts for all 
+consumers.”11  This approach set forth by Brattle is consistent with ANOPR reforms. 
+B. 
+Reform Principle 5: Hybrid Facilities Should Be Studied Based on Requested 
+Grid Injections and Withdrawals 
+ 
+Expanding on Principle 3, the ANOPR proposes that interconnection studies for hybrid 
+facilities be “based on the amount of injection and/or withdrawal rights requested,” rather than 
+the maximum amount of power that hypothetically can be withdrawn or injected by load or 
+generator, respectively, based on their gross capacity.12   
+DOE’s proposal makes sense, though the Commission should clarify that such rights refer 
+to “firm” withdrawal and injection rights.  A generator seeking Energy Only service would be 
+studied as a “non-firm” resource for injection rights, while load seeking non-firm withdrawal 
+rights (relying on the hybrid facility generator for primary power) would be subject to similar 
+ 
+9  
+Id. at pp. 16-20. 
+10  
+Id. at p. 21. 
+11  
+Id. at p. 31. 
+12  
+ANOPR at P 22. 
+
+--- PAGE 9 ---
+9 
+ 
+modeling assumptions.  Bloom supports DOE’s proposal with the requested clarification, as 
+netting would avoid unnecessary and costly upgrades.   
+The Brattle Report highlights the effect of requesting Energy Only service and non-firm 
+withdrawal rights, which a hybrid facility comprised of a primary power source would make 
+possible.  Brattle’s integrated reliability studies employ contingency studies based on non-firm, 
+net load withdrawals and generator injections, which are modeled on making wholesale sales of 
+energy and withdrawals of energy from the grid on a non-firm, as-feasible basis.  As the Brattle 
+Report concludes: “By allowing non-firm injections only when the grid is available, the system 
+operator can take advantage of the reliability benefit of the Energy Park’s injection capability to 
+the extent the system needs it and can reliably accommodate it, without needing to undertake 
+costly transmission upgrades.”13  Withdrawals from the grid likewise can be modeled on an as-
+available basis because protection systems can be in place to ensure that the maximum non-firm 
+withdrawal level for reliability reasons cannot be exceeded at any time.  Even under contingency 
+conditions, reliability can be ensured assuming a rapid ramp rate from the hybrid facility’s 
+generator (typical of solid oxide fuel cell systems) and control by the system operator via 
+Security Constrained Economic Dispatch in the real-time market.14 
+C. 
+Reform Principle 6: Hybrid Interconnections Must Install System Protection 
+Equipment to Prevent Unauthorized Injections or Withdrawals 
+ 
+This principle requires hybrid facilities to install system protection facilities to prevent 
+unauthorized injections or withdrawals.15  The ANOPR seeks comments on minimum technical 
+ 
+13  
+Brattle Report at p. 13.  The Brattle Report goes on to model and demonstrate how this can be done 
+reliably. 
+14  
+Id. at p. 17. 
+15  
+ANOPR at P 23. 
+
+--- PAGE 10 ---
+10 
+ 
+requirements and whether penalties should be mandated for unauthorized injections or 
+withdrawals.   
+The scope of the term “unauthorized” must be addressed.  Bloom urges the Commission 
+to distinguish between inadvertent or transient injections (authorized injections), and sustained or 
+intentional injections that result in malfunction or non-compliance with transmission provider or 
+RTO directives (unauthorized injections).   
+Inadvertent or transient injections by a hybrid facility generator should be worked out on 
+a bilateral basis with the transmission provider or RTO undertaking the studies.   Bloom, for 
+example, has engineered in front-of-the-meter fuel cell systems (load and generation 
+interconnecting to the same point of interconnection), where Bloom has installed reverse power 
+relays tied to a curtailment protocol to prevent power flows to the grid beyond inadvertent or 
+transient flows.  Because the generating facility is grid following (with the generator following 
+load fluctuations and the amount of load not otherwise served by system power), a certain 
+limited amount of energy may flow onto the grid due to delays in relaying, controls, and 
+curtailment response.  The permissible magnitude and duration of reverse or unauthorized power 
+flows are system-dependent and must be coordinated with the transmission provider or RTO, 
+considering grid strength, local protection settings, and inverter control response times. 
+Among the issues that must be coordinated is how “inadvertent” flows should be 
+addressed if load curtails to zero without notice.  Under such circumstances, the generator will 
+continue to produce and inject energy onto the grid for a number of cycles.  The number of 
+permissible cycles or seconds before the generation facility is taken (or forced) offline must be 
+determined by the transmission provider or RTO based on what the grid can readily absorb at the 
+point of interconnection.  Any minimum technical requirements should be consistent with 
+
+--- PAGE 11 ---
+11 
+ 
+existing standards, such as IEEE 1547-2018 and emerging NERC IBR performance and 
+modeling guidelines to avoid duplicative or conflicting requirements. 
+Regarding penalties, if adopted, they should be limited to intentional injections resulting 
+in malfunction or non-compliance with transmission provider or RTO directives.  Adopting 
+prescriptive requirements with penalties may not accord with differences among transmission 
+providers and the grids they operate.  It would be unreasonable to adopt penalties for inadvertent 
+or transient injections that are unavoidable and which the transmission provider or RTO has 
+concluded are allowable or authorized. 
+D. 
+Reform Principle 7: Expedited Studies Should Be Provided to Hybrid 
+Facilities that Agree to be Curtailable and Dispatchable 
+ 
+The ANOPR would provide for expedited interconnection studies of hybrid facilities so 
+long as they are both curtailable and dispatchable, respectively.16  Bloom urges the Commission 
+to expand expedited studies to include hybrid facilities having primary power sufficient to meet 
+its peak load.  The Commission may also wish to expedite studies more generally where initial 
+studies indicate that no Network Upgrades are needed, consistent with a recent proposal by the 
+Southwest Power Pool, Inc. (“SPP”).17  
+The ANOPR’s underlying theory is sound.  Dispatchable on-site generation, such as fuel 
+cells, can self-supply the hybrid facility’s load when (i) the grid is not available, (ii) the price of 
+grid withdrawals by load is not advantageous, or (iii) under terms of the hybrid facility PPA, load 
+does not need the full output of the on-site generator during off-peak times.  Accordingly, in 
+addition to providing resource adequacy to co-located load, hybrid facility generators can 
+ 
+16  
+Id. at P 24. 
+17  
+See Southwest Power Pool, Inc., Docket No. ER26-247-000 (filed Oct. 24, 2025). 
+
+--- PAGE 12 ---
+12 
+ 
+dispatch power to the grid and provide a valuable reliability contribution based on available net 
+injections.18 
+While hybrid facility generators are readily dispatchable, load may choose to forgo being 
+treated as a curtailable demand resource.  Stakeholder comments in the PJM large load additions 
+process have opposed mandatory curtailment.  The ANOPR seemingly takes the position that 
+agreement by a hybrid facility to be dispatchable and curtailable is the “grand bargain” for 
+expedited interconnection studies, but it should not be the only way to receive expedited studies. 
+It is similarly reasonable to provide for expedited interconnection studies based on the 
+need for Network Upgrades and further studies.  For example, where primary power in a hybrid 
+facility is capable of serving 100% of its load, Network Upgrades likely will be avoided and 
+there is no reason to create a multi-year interconnection queue for such projects, even where load 
+does not agree to be curtailable demand resource.  As Brattle points out, in such cases rather than 
+expansive interconnection studies, it would be appropriate for the transmission provider/RTO to 
+assess non-firm net injections similarly to Surplus Interconnection Service studies.19  These 
+studies are expedited by many transmission providers and RTOs today, and there is no reason 
+they should not similarly be expedited for hybrid facility load seeking non-firm withdrawals, 
+assuming the Commission finds jurisdiction to exist. 
+The ANOPR also seeks comment on the appropriate timeline for conducting studies.  
+Bloom notes that SPP’s recently filed High Impact Large Load plus generation proposal would 
+complete interconnection studies in 90 days, provided the need for additional reliability studies 
+are not identified.20  Consistent with existing reliability study requirements for Surplus 
+ 
+18  
+See Brattle Report at pp. 4-5. 
+19  
+Id. at pp. 12-13. 
+20  
+See Southwest Power Pool, Inc., Docket No. ER26-247-000 (filed Oct. 24, 2025). 
+
+--- PAGE 13 ---
+13 
+ 
+Interconnection Service, a 90-day period to study hybrid facilities seems reasonable, provided 
+requested withdrawal and injection rights do not identify the need for additional reliability 
+studies to determine if Network Upgrades are required.  Additionally, the Commission in a final 
+rule could justify expedited interconnection studies for hybrid facilities based on the identified 
+national security needs regarding data centers and AI infrastructure, as discussed above. 
+E. 
+Reform Principle 8: Hybrid Facilities Should be Responsible for 100% of 
+Network Upgrades Assigned Through Interconnection Studies, Potentially 
+Without Receiving Future Credits 
+ 
+The ANOPR proposes that hybrid facilities be responsible for 100% of identified 
+Network Upgrade costs, and seeks comments on whether there should be any crediting 
+mechanism.  Bloom’s comments focus only on Network Upgrade cost responsibility based on 
+requested generator injections and the appropriateness of retaining “cash equivalent refunds” for 
+such upgrades consistent with Commission precedent.  
+The concept of participant funding for Network Upgrades is not new in the context of 
+generator interconnections.  Bloom urges the Commission to consider the expansive record and 
+orders on participant funding developed more than two decades ago in Docket No. RM02-1.21  
+These policies remain relevant for the interconnection of generation as a hybrid facility.22 
+ 
+21  
+See Standardization of Generator Interconnection Agreements & Procs., Order No. 2003, 68 Fed. Reg. 
+49846 (Aug. 19, 2003), 104 FERC ¶ 61,103 (2003), order on reh'g, Order No. 2003-A, 69 Fed. Reg. 15932 (Mar. 
+26, 2004), 106 FERC ¶ 61,220, order on reh'g, Order No. 2003-B, 70 Fed. Reg. 265 (Jan. 4, 2005), 109 FERC 
+¶ 61,287 (2004), order on reh'g, Order No. 2003-C, 70 Fed. Reg. 37661 (June 30, 2005), 111 FERC ¶ 61,401 (2005), 
+aff'd sub nom. Nat'l Ass'n of Regul. Util. Comm'rs v. FERC, 475 F.3d 1277 (D.C. Cir. 2007). 
+22  
+Bloom acknowledges that some states and public utility commissions have passed laws and tariffs requiring 
+large load to be responsible for paying 100% of Network Upgrade costs resulting from their interconnection.  If the 
+Commission asserts jurisdiction over large load interconnections, as proposed in the ANOPR, the Commission 
+likewise may have to address what level of comity it will grant to these state policies.  While Bloom does not take 
+any position on the interconnection of large load alone, where a FERC-jurisdictional generator is interconnected as 
+part of a hybrid facility, crediting policies initially developed in Order No. 2003 ought to continue.   
+
+--- PAGE 14 ---
+14 
+ 
+ 
+The Commission has long held that non-independent transmission providers do not have 
+leeway on how they handle crediting/repayment of upfront payments by an interconnection 
+customer for Network Upgrades, while RTOs have developed differing policies that apply 
+equally to all generators subject to large generator interconnection procedures.  For generator 
+interconnections subject to the Commission’s pro forma policies, although Network Upgrades 
+are funded by interconnection customers (unless the transmission provider elects to fund them), 
+interconnection customers are thereafter entitled to cash equivalent refunds (i.e., transmission 
+credits or cash refunds) repaid over a period of time equal to the amount paid for downstream 
+Network Upgrades.23  In Order No. 2003-A, the Commission reasoned that crediting for an 
+upfront payment is appropriate because the payment “serves not as a rate for interconnection or 
+transmission service, but simply as a financing mechanism that is designed to facilitate the 
+efficient construction of Network Upgrades.”24  As the Commission explained: 
+The purpose of the upfront financial payment is twofold.  First, by providing the 
+Transmission Provider with a source of funds to construct the Network Upgrades, 
+the upfront payment by the Interconnection Customer alleviates any delay that 
+might result if the Transmission Provider were forced to secure funding 
+elsewhere.  Second, by placing the Interconnection Customer initially at risk for 
+the full cost of the Network Upgrades, the upfront payment provides the 
+Interconnection Customer with a strong incentive to make efficient siting 
+decisions and, in general, to make good faith requests for Interconnection Service.  
+However, the upfront payment is not a rate for service, and thus is not intended to 
+be the means by which the Transmission Provider recovers the cost of the 
+Network Upgrades.  Rather, the Transmission Provider's right to charge for 
+transmission service at the higher of an embedded cost rate, or an incremental rate 
+designed to recover the cost of the Network Upgrades, provides the Transmission 
+Provider with a cost recovery mechanism that ensures that native load and other 
+transmission customers will not subsidize service to the Interconnection 
+Customer.25 
+ 
+ 
+23  
+See Order No. 2003 at P 22 (terms of the facilities subject to crediting were later revised and narrowed, 
+which is not relevant here.) 
+24  
+Order No. 2003-A at P 612. 
+25  
+Id. at P 613. 
+
+--- PAGE 15 ---
+15 
+ 
+The Commission re-affirmed this policy in Order No. 2003-B, stating, “[d]espite the unsupported 
+hypothetical generalizations of some petitioners, we have not been presented with any evidence 
+that native load and other Transmission Customers cannot be held harmless under our existing 
+pricing policy.”26  The Commission concluded that if a transmission provider (or existing 
+transmission customer) believes transmission customers are not held harmless under this policy, 
+a “demonstration in an actual transmission rate filing” can be made.27   
+With respect to hybrid facility generators, Bloom urges the Commission to retain the 
+existing cash equivalent refund policies that apply to other new generation interconnecting with 
+non-independent transmission providers and RTO systems.  Treating a hybrid facility generator 
+differently than other generation subject to FERC jurisdiction would be unduly discriminatory.  
+If the transmission provider or RTO believes that existing customers are not being held harmless 
+through the crediting mechanism, they (or other customers) are free, as the Commission 
+concluded in Order No. 2003-B, to make a case-specific demonstration at FERC. 
+III. 
+CONCLUSION 
+For the foregoing reasons, Bloom urges the Commission to adopt the above-discussed 
+reform principles for hybrid facility generators, together with the modifications discussed herein.  
+If the Commission declines the ANOPR’s proposal to assert jurisdiction over large load 
+interconnections, Bloom nevertheless urges the Commission to adopt large generator 
+interconnection procedure reforms associated with interconnecting hybrid facility 
+ 
+ 
+ 
+26  
+Order No. 2003-B at P 56. 
+27  
+Id. 
+
+--- PAGE 16 ---
+16 
+ 
+generators.  Bloom looks forward to commenting further in a subsequent notice of proposed 
+rulemaking proceeding. 
+ 
+ 
+ 
+ 
+ 
+Respectfully submitted, 
+ 
+ 
+ 
+ 
+ 
+ 
+/s/ Joel D. Newton 
+ 
+ 
+ 
+ 
+ 
+ 
+Joel D. Newton 
+ 
+ 
+ 
+ 
+ 
+ 
+Vice President, Regulatory Law 
+ 
+ 
+ 
+ 
+ 
+ 
+Bloom Energy Corporation 
+4353 North First Street  
+San Jose, CA 95134  
+(202) 329-1119 
+joel.newton@bloomenergy.com 
+ 
+November 21, 2025 
+ 
+
+--- PAGE 17 ---
+17 
+ATTACHMENT 
+
+--- PAGE 18 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com |  
+Accelerating Integration of New 
+Co-located Generation and Loads 
+ 
+PREPARED BY 
+Andrew Levitt 
+Johannes Pfeifenberger 
+Aniruddh Mohan 
+PREPARED FOR 
+Bloom Energy 
+
+--- PAGE 19 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | i 
+NOTICE  
+• This report was prepared for Bloom Energy Corporation, in accordance with The Brattle 
+Group’s engagement terms, and is intended to be read and used as a whole and not in 
+parts.  
+• The report reflects the analyses and opinions of the authors and does not necessarily reflect 
+those of The Brattle Group’s clients or other consultants. 
+• There are no third-party beneficiaries with respect to this report, and The Brattle Group 
+does not accept any liability to any third party in respect of the contents of this report or 
+any actions taken or decisions made, as a consequence of the information set forth herein. 
+ 
+© 2025 The Brattle Group  
+ 
+ 
+ 
+
+--- PAGE 20 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | ii 
+TABLE OF CONTENTS 
+Executive Summary................................................................................................. 1 
+ 
+Introduction ...................................................................................................... 7 
+ Energy Park Integration Is a Practical Way to Quickly Connect Large Loads 
+with Fewer Transmission Upgrades ................................................................ 11 
+A. EPI-Based Contingency Studies Reduce Transmission Impacts and Interconnection 
+Time ................................................................................................................................ 12 
+B. Experience Elsewhere Highlights the Practicality of Energy Park Integration Studies .. 22 
+C. The Benefits of an EPI Approach Are Highest When Energy Parks Can Dependably 
+Transact with the Grid on an As-Available, Non-Firm Basis ........................................... 23 
+ Reforms are Needed to Realize the Speed and Cost-Effectiveness Benefits 
+of Energy Park Integration .............................................................................. 24 
+A. The Status Quo Does not Achieve the Benefits of EPI Studies ....................................... 24 
+B. Reforms Can Achieve Energy Park Integration Benefits ................................................ 27 
+ Energy Park Integration Reform Could Alleviate Resource Adequacy Strain ... 29 
+ Conclusion ...................................................................................................... 31 
+ 
+ 
+
+--- PAGE 21 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 1 
+Executive Summary 
+ _________  
+Faster connection of large loads for artificial intelligence has been identified as a federal 
+priority. Many new large loads such as data centers are applying to connect to the grid in PJM 
+and elsewhere, creating opportunities for economic growth and higher utilization of electrical 
+infrastructure.  
+This load growth is challenging both transmission and resource adequacy. In some cases, new 
+large loads exceed existing transmission capacity, and new customers must wait while 
+(potentially costly) transmission upgrades are made. In other cases, load growth exceeds 
+projected additions of generating capacity. In many areas, concerns have been raised regarding 
+the affordability implications for consumers of these transmission and capacity impacts from 
+growth in large loads. The co-location of such loads with generation has emerged as one 
+solution to address these transmission and resource adequacy challenges.1 PJM 
+Interconnection L.L.C. (PJM) recently validated co-location as a possible solution in its Answer 
+to the Federal Energy Regulatory Commission (FERC) in Docket No. EL25-49-000.2 
+In this report we assess the concept of connecting new generation and co-located load as a 
+composite facility called an “Energy Park.” This approach can significantly reduce the need for 
+new transmission while accelerating integration of new loads together with new generation 
+resources that can ease resource adequacy concerns, reducing costly resource and grid 
+investments and mitigating bill impacts for consumers. We assess current processes in PJM and 
+identify possible reforms necessary to facilitate the interconnection of such Energy Parks.  
+The key findings in our study are as follows: 
+1. Integrated Energy Park interconnection is a practical way to quickly connect large 
+loads with fewer transmission upgrades 
+ 
+1  See for e.g., Large Loads Co-Located at Generating Facilities, Docket No. AD24-11-000 (technical conference 
+held on November 1, 2024); Office of Policy, Department of Energy, Request for Information on Artificial 
+Intelligence on DOE Lands (issued April 3, 2025). 
+2  PJM, Answer of PJM Interconnection L.L.C, FERC Docket No. EL25-49-000, March 24, 2025, hereafter “PJM 
+Answer.” 
+
+--- PAGE 22 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 2 
+Energy Parks connected to the transmission system consist of three components: generation, 
+co-located load, and a mechanism to control flows into or out of the Energy Park at the point of 
+interconnection (POI) with the transmission grid. Following the interconnection approach for 
+Private Use Networks (PUNs) used in the Electric Reliability Council of Texas (ERCOT), we 
+describe an Energy Park Integration (EPI) process that would study the Energy Park as a 
+composite load and generation facility (at smaller scale referred to as a “micro grid”), instead of 
+separately studying the load in one process and the generator in another.3  
+We illustrate stylized contingency cases (such as shown in Figure ES-1 below) that are used in 
+reliability studies to show how an Energy Park studied as a composite facility can be connected 
+to the grid more quickly and less expensively due to lower transmission upgrades relative to a 
+conventional study approach. This is because, in the conventional approach, PJM and the 
+transmission owner separately evaluate generation and load components respectively without 
+consideration of the self-balancing effect of co-located generation on co-located load, and 
+potentially ignore the action of a control system (and system protection mechanism) that limits 
+Energy Park power flows to and from the grid to specified levels.  
+In all cases where the grid connection of the Energy Park itself is smaller than the Energy Park’s 
+load and generation, the park’s embedded generation—such as a combination of fuel cells, 
+natural gas resources, battery storage, and variable resources—would serve as the primary 
+generation source supplying the relevant portion of the Energy Park’s load. For the portion of 
+Energy Park load that can be served from the grid, the embedded generation would both be 
+dispatchable into the regional market and serve as backup generation for the Energy Park load.4 
+ 
+ 
+3  See  ERCOT Update to Texas House of Representatives Committee on State Affairs, March 5, 2025, at p. 6 
+4  We understand from Energy Park developers that installed (backup or primary) generating capacity typically 
+consists of numerous individual generators with surplus total capacity such that the planned or forced outage 
+of individual Energy Park generators would not affect the Energy Park’s ability to serve its load even if the grid 
+connection is unavailable. 
+
+--- PAGE 23 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 3 
+FIGURE ES-1: CONTINGENCY CASE FOR THE PROPOSED ENERGY PARK INTEGRATION APPROACH (LEFT) 
+VS. CONVENTIONAL LOAD-ONLY APPROACH (RIGHT), SHOWING OVERLOADS AND UNNECESSARY 
+UPGRADES IN THE LATTER  
+ 
+Notes: The local grid contains the Energy Park with 500 MW of co-located load and an array of co-located 
+generators, as well as an unaffiliated generator nearby, all of which are connected to the rest of the grid by a pair 
+of transmission lines that together can transfer 340 MW. While the local grid can host the 500 MW load of the 
+data center in a base case by relying on grid imports that include the unaffiliated generator, such a base case 
+would not be deemed secure to the contingency (the outage of the nearby unaffiliated generator) under 
+conventional load-only study criteria as shown on the right, and would therefore require significant transmission 
+upgrades. As shown on the left, these upgrades can be avoided when considering that the Energy Park’s controls 
+of load and generation will be able to limit grid imports to 340 MW (by dispatching at least 160 MW of self-
+generation within the Energy Park). 
+ 
+2. Accelerated interconnection of Energy Parks with co-located data center loads and 
+new generation is in the interest of many stakeholders  
+PJM in its response to FERC stated there is nearly 8.5 GW of proposed large loads waiting to be 
+connected to the transmission system and co-located with existing generation, and highlighted 
+a faster interconnection option for new loads that are co-located with new generation (i.e., 
+Energy Parks).5  
+Meanwhile, there are many more large new loads planned that will not be co-located with 
+existing generation, representing much of the rapid increase in PJM load forecasts—which, in 
+turn, is driving costly transmission upgrades and accelerating resource adequacy concerns. 
+ 
+5  PJM Answer, Exhibit B, and New Option 6, at page 16 
+
+--- PAGE 24 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 4 
+Most of these large consumers, while apparently standalone load, are in fact planning to install 
+co-located backup generation. Because this backup generation typically consists of diesel 
+generators that are only permitted to run for a limited number of hours per year, and are 
+configured to run only while disconnected from the grid, most large load customers have not 
+designed their backup generation to support system-wide transmission and resource adequacy 
+needs (not even as self-supply capacity that seldom runs). However, by planning to co-locate 
+new primary generation that can run at any time (as well as potentially providing backup power 
+if needed), the new customer can supply all or part of its energy and resource adequacy on-site, 
+minimizing the impact on markets and transmission and supporting the interconnected grid.6  
+Because an integrated EPI process as described in this report offers substantial benefits for 
+developers to more quickly connect new loads in an Energy Park configuration, nearly all new 
+large load customers would be incentivized to design their on-site generation plans such that, in 
+addition to meeting backup power needs, it can also serve as primary generation to self-supply 
+energy and resource adequacy and provide valuable grid support (as necessary). By 
+incentivizing new large load customers to bring their own new generation, the proposed 
+integrated Energy Park interconnection process offers a solution that can more quickly 
+integrate large new loads (consistent with federal priorities) while addressing the resource 
+adequacy and transmission challenges and lowering cost impacts on consumers. 
+3. The benefits of an EPI approach are highest when Energy Parks are dispatchable by 
+the transmission operator or regional market to dependably transact with the grid on 
+an “as-needed” basis 
+With dispatchable onsite generation such as fuel cells, gas turbines, or battery storage, an 
+Energy Park can self-supply in full or in part (depending on configuration) its own load when 
+(i) the grid is not available, (ii) purchases from the grid are not advantageous, or (iii) based on 
+bilateral contractual terms (i.e., if during off-peak hours that the co-located generation is more 
+than sufficient to meet the lower power needed by load).  
+At times, an Energy Park would not only be able to self provide the resource adequacy needs of 
+its load, it would also be able to export power to the grid when grid capacity is available and 
+surplus generation exists and is cost effective. This capability of the Energy Park can provide a 
+ 
+6  The on-site provision of energy and resource adequacy to the load could be through self-supply, through an 
+arrangement with an independent generation owner, or with the local utility, depending on state law. 
+Generation ownership is not determinative in applying the integrated EPI arrangement proposed here. 
+
+--- PAGE 25 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 5 
+valuable reliability contribution to the grid to the extent such net injections are possible during 
+times of scarcity or local emergencies. 
+By reflecting the controllable nature of Energy Park withdrawals and injections to the grid, EPI 
+studies are less likely to conclude that expensive and time-consuming transmission upgrades 
+are necessary, and therefore can facilitate the more timely interconnection of new loads. This 
+outcome is premised on the grid operator’s ability to rely on the Energy Park to control net 
+injections or withdrawals depending on what the grid is able to accommodate in real-time 
+operations. The energy market offer, clearing, and dispatch systems already used for other grid-
+connected generators, storage, and demand-response resources can be utilized for Energy 
+Parks, provided that Energy Park operators follow the grid operators dispatch instructions for 
+contingency response and market interactions.7 Transmission planning benefits are maximized 
+when an Energy Park is able to respond automatically to grid contingencies (transmission 
+outages and generator outages) in coordination with PJM and transmission owner operations. 
+* 
+* 
+* 
+In summary, EPI is practical, addresses resource adequacy and grid challenges, and offers 
+significant benefits if the Energy Park resources are dispatchable on as-needed basis. The 
+adoption of an EPI process would greatly accelerate the interconnection of large new loads by 
+replacing or supplementing backup-only generation with primary generation resources that can 
+self-supply all or a portion of Energy Park loads, thereby mitigating the resource adequacy and 
+transmission challenges and consumer cost impacts of rapid load growth. 
+As detailed in Section III below, we find that current practice in PJM would need to be 
+enhanced via the following enabling reforms in order to obtain the benefits of the EPI study 
+process: 
+• PJM and transmission owner: develop and document EPI protocols, applicable for Energy 
+Parks, as an alternative to the currently applicable separate study processes, including the 
+PJM generator interconnection study process, the PJM ‘Do No Harm’ study, transmission 
+owner load integration study, and (in limited cases) the PJM regional transmission 
+expansion process (RTEP).  The EPI protocols would need to include provisions for 
+ 
+7  While the main focus of this report is on Energy Parks with the ability to export to the grid, non-exporting 
+Energy Parks could be similarly dispatched by PJM and transmission owners in real time operations (e.g., 
+through modified demand response frameworks that are incorporated into security constrained economic 
+dispatch).  
+
+--- PAGE 26 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 6 
+coordination between separate study processes (unless the relevant parties integrate them 
+into a single process). 
+• PJM and/or transmission owner: Document technical standards for the Energy Park 
+controls and protection mechanisms used to limit physical withdrawals and injections 
+between the Energy Park and the grid to the pre-specified amounts. Develop provisions to 
+ensure that PJM and transmission operators can rely on the Energy Park to control net 
+injections or withdrawals when grid capacity is limited (during contingencies) in real time 
+operations. 
+• PJM: allow for and study non-firm grid injection requests based on “as available” grid 
+capacity (i.e., less firm than current Energy-only interconnections). Study these non-firm 
+Energy Park injections through an expedited screening process similar to that of PJM’s new 
+Surplus Interconnection Service (SIS) or Capacity Interconnection Rights (CIR) replacement 
+processes, given that non-firm net injections by the Energy Park can be controlled 
+automatically so they will not cause transmission impacts beyond the designated levels.8  
+ 
+ 
+ 
+8  The SIS process is an accelerated path through the generation interconnection queue process that assesses the 
+addition of new supply technologies to existing generators (e.g., adding solar to an existing combustion turbine 
+interconnection point) as long as total injections can be controlled to stay within the limits of the existing 
+interconnection service agreement. This allows for an expedited study process to confirm that the new 
+configuration does not materially impact grid reliability. CIR replacement takes a similar approach to confirm 
+absence of impact when a retiring generator is replaced with a different generation technology type at 
+substantially the same interconnection point. 
+
+--- PAGE 27 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 7 
+ Introduction 
+ _________  
+PJM, the Regional Transmission Organization (RTO) serving 13 states and the District of 
+Columbia, forecasts rapid growth in electricity demand, driven in large part by expansion of 
+planned data centers and other large loads.9 Transmission infrastructure and resource 
+adequacy are being strained to integrate the new loads. In some cases, new large loads must 
+wait years while time-consuming and costly transmission upgrades are made.10 Importantly, 
+PJM has expressed significant concerns over resource adequacy challenges.11 
+Speed to market is a critical motivation for many new large data center customers, as the ability 
+to launch new services and scale operations is critical to competitiveness. There has therefore 
+been interest in co-locating loads with existing generation instead of going through a lengthy 
+load integration process.12 PJM has cited nearly 8.5 GW of large loads (including data centers) 
+that have requested to interconnect in co-location arrangements with existing generators.13 
+Co-locating load with existing generation could avoid the need for time-consuming network 
+upgrades prior to connection, but raises a variety of questions (such as cost allocation) that are 
+beyond the scope of this report. Co-location of new loads with existing generation also 
+exacerbates PJM’s resource adequacy concerns and can cause transmission reliability issues by 
+effectively adding new large load without a corresponding increase in local supply or 
+transmission capability.  
+ 
+9  PJM’s 2025 load forecast report estimates winter peak load to grow at an average of 3.8% annually over the 
+next 10 years. PJM, Long-Term Load Forecast Report, January 24, 2025 
+10  Josh Saul, Data Centers Face Seven-Year Wait for Dominion Power Hookups, Bloomberg News, August 29, 2024 
+11  PJM, 2024 in Review: Maintaining an Adequate Generation Supply, January 9, 2025 
+12  In November 2024, FERC rejected a proposed amendment to an interconnection service agreement for Talen’s 
+Susquehanna power plant in PJM, which sought to increase the transfer capacity to a co-located data center, 
+and to recognize the co-located load as fully behind the meter and not ”network load”. PJM Interconnection, 
+L.L.C., 189 FERC ¶ 61,078 (2024), reh’g denied, 191 FERC ¶ 61,025 (2025). FERC also held a technical conference 
+on co-location on November 1, 2024. See note 1 above; see also e.g., Google, Post-Technical Conference 
+Comments, Large Loads Co-Located at Generating Facilities, FERC Docket No. AD24-11-000, December 10, 
+2024, p2-3. In February 2025, FERC issued a show cause order directing PJM and its transmission owners to 
+demonstrate why the existing tariff provisions are adequate for managing co-location scenarios. PJM 
+Interconnection, L.L.C., et al., 190 FERC ¶ 61,115 (2025). 
+13  Frederick S. Bresler, Statement on Behalf of PJM Interconnection L.L.C, Co-Located Load Technical Conference, 
+FERC Docket No. AD24-11-000, November 1, 2024. 
+
+--- PAGE 28 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 8 
+We focus on a different co-location use case: new large loads that are co-located with new 
+generation.14 By balancing new load with co-located new supply, integration of the large load is 
+facilitated both in terms of the transmission network (for quicker interconnection) and the 
+resource adequacy impact.  
+The idea of new large loads co-locating with new generation is gaining interest, as highlighted 
+by President Trump at the World Economic Forum in Davos, Switzerland in January 2025.15 PJM 
+likewise outlined potential co-location arrangements for this use case that could lead to more 
+timely interconnection while bringing to PJM additional capacity to address resource adequacy 
+challenges.16 In venues across the country, the pros and cons of “bring your own capacity” 
+requirements and incentives have been circulating.17  
+In this report, we describe a cohesive process to study the integration onto the grid of new 
+co-located generation and load at a single facility (including a control mechanism that limits net 
+bi-directional grid flows), and we assess whether the approach can accelerate the connection 
+process. We refer to the composite facility as an “Energy Park,” and propose that PJM 
+implement an Energy Park Integration (EPI) study process to make possible the timely 
+ 
+14  We focus on Energy Parks connected to the transmission system, which have different interconnection 
+considerations relative to systems connected to lower-voltage distribution facilities. Transmission facilities tend 
+to have higher voltages (e.g., above 100 kV) and operate in a networked rather than radial topology, among 
+other differences.  
+15  Argus Media, Trump touts off-grid gas, coal for AI data centers, January 24, 2025; Both the current and former 
+presidential administrations have encouraged co-location of planned data centers with new energy 
+infrastructure in order to rapidly build out AI infrastructure. See e.g., Department of Energy, Request for 
+Information on co-locating data centers on federal sites for rapid construction with in-place energy 
+infrastructure, April 3, 2025; White House Archives, Executive Order on Advancing United States Leadership in 
+Artificial Intelligence Infrastructure, January 14, 2025. 
+16  PJM Answer, “New Option 6” on p 17-18 and in Exhibit B. PJM has said it can explore incentives to offer “faster 
+processing of generation that enters the queue through this option” including through “accelerating 
+interconnection studies of new generation” proposed under this option.  
+17  For example, New Jersey Assembly Bill 5564, introduced on April 10 2025, which requires that new AI data 
+centers arrange for new energy supply; “The addition of large data centers would be easier if the data centers 
+brought new generation to the market in addition to new load.”; Utah Senate Bill 132 allows large loads such as 
+data centers to directly procure power from a co-located generation provider if the local utility and load 
+customer cannot agree a contract within 90 days; Post-Technical Conference Comments of PJM IMM, Co-
+Location Technical Conference, at 3; “Pennsylvania could encourage—or require, if necessary, through carefully 
+drafted and structured legislation—new large loads such as data centers to BYOG rather than draw from 
+existing generation supply,” Exelon, Comments in Technical Conference on Resource Adequacy in Pennsylvania 
+Docket No. M-2024-3051988, January 9, 2025. 
+
+--- PAGE 29 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 9 
+interconnection of the co-located new loads and new generation within such Energy Parks and 
+derive benefits for reliability and other consumers. 18 
+As illustrated in Figure 1 below, we define the Energy Park as new generation and load that is 
+co-located behind the same grid connection, together with controls and protection mechanisms 
+that can limit maximum flows into and out of the Energy Park. 19  
+FIGURE 1: ENERGY PARK CONCEPT 
+ 
+ 
+The EPI study approach shares some traits with the approach PJM labeled “New Option 6” in an 
+Answer to FERC’s recent show cause order regarding load co-location. Of the new potential 
+options described in the PJM Answer, New Option 6 is the only one that applies to co-location 
+with new generation, as opposed to existing generation.20 PJM describes New Option 6 as a 
+“Bring Your Own Generation (BYOG)” approach for interconnecting new co-located generation 
+and load more quickly. However, New Option 6 envisages firm Capacity Interconnection Rights 
+(CIRs) for the full output of Energy Park generation, and Network Load status for all of the load, 
+and utilizes separate processes for load integration vs. generator interconnection. Because 
+ 
+18  The concept of ‘Energy Parks’ has been described in the literature referring to co-located load and generation 
+behind a single Point of Interconnection (POI). Energy Innovation Policy and Technology LLC, Energy Parks: A 
+New Strategy to Meet Rising Electricity Demand, December 2024. 
+19  For example, the physical principles supporting such protection mechanisms have been described in Schedule 
+F, Part E of the amended Interconnection Service Agreement (ISA) between Talen and PJM submitted to FERC 
+in June 2024 [FERC Docket No. ER24-2172-000] and cited by Commissioner Phillips in his dissent on the Talen 
+ISA decision in FERC on November 1, 2024. 
+20  See Exhibit A, PJM Answer. 
+
+--- PAGE 30 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 10 
+PJM’s proposed New Option 6 involves an interconnection queue request for CIRs for the 
+entirety of the energy park generation, the study process will test the network’s ability to 
+deliver the full output of the generation to all PJM load (ignoring the energy park load unless 
+conducting an EPI-style approach), despite the intent of the generation to inject only a non-firm 
+basis, and to self-supply resource adequacy only at the same grid connection point as the load. 
+In the example shown above, the 550 MW fleet of many small energy park generators meets all 
+of the firm resource adequacy needs of the 500 MW energy park load without any PJM 
+transmission; however, as shown below, the generation may not be able to deliver any capacity 
+to the rest of PJM, for example in the case that the transmission network is fully committed to 
+deliverability associated with CIRs of other, unaffiliated generators. In contrast, the proposed 
+EPI process allows for non-firm net injections and non-firm net withdrawals, recognizes the 
+ability of the energy park to self-supply energy and capacity, and studies the energy park in light 
+of the self-balancing effect of co-located generation and load, reducing the estimated network 
+upgrades and time required to connect the Energy Park.  
+Precedent for the practicality of the proposed EPI approach exists in the interconnection 
+process for Private Use Networks (PUNs) in the Electric Reliability Council of Texas (ERCOT), 
+which models the PUN as a composite of both load and generation. It is also reflected in a 
+pending proposal in ERCOT regarding interconnection of other non-PUN co-located large load 
+arrangements.21  
+In the following sections, we describe the EPI studies, show how they accelerate energy park 
+connection time and cost by reducing upgrades, and identify the reforms needed to achieve the 
+benefits of EPI studies. We also highlight how EPI study reform can contribute to addressing the 
+resource adequacy strain faced by PJM and reduce bill impacts for all consumers from growth 
+in large loads.  
+ 
+ 
+ 
+21  ERCOT, NPRR1234 and PGRR115: Overview, Key Concepts, and Impact to the Generation Interconnection 
+Process, June 12, 2024, p10 
+
+--- PAGE 31 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 11 
+ Energy Park Integration Is a Practical Way to 
+Quickly Connect Large Loads with Fewer 
+Transmission Upgrades 
+ _________  
+As shown below, because an Energy Park locally supplies all or part of its load, it can be 
+connected to the grid with fewer transmission upgrades (and thus more quickly) when it is 
+studied as an integrated unit. By contrast, using the existing separated processes to study the 
+new load component of an Energy Park (without recognizing the co-located generation) while 
+studying the new generation (without recognizing the co-located load) will ignore these self-
+supply benefits and overstate the necessary transmission upgrades, slowing down 
+interconnection and unnecessarily increasing costs.  
+The proposed EPI approach models the composite behavior of load and generation in an Energy 
+Park by accounting for its three essential components: generators, load, and a control 
+mechanism that limits net exchanges with the grid. 
+For example, as shown in Figure 1 above, consider an Energy Park with 500 MW of load; on-site 
+primary generation totaling 550 MW of installed capacity (e.g., composed of approximately 
+1,700 individual generation units of 325 kW each to ensure high availability for on-site supply in 
+case of maintenance or other unit outages, such as Bloom Energy’s 325 kW individual Energy 
+Server systems); and a control mechanism that limits net grid withdrawals to less than 340 MW 
+and (non-firm) net grid injections to less than 50 MW. The EPI study approach would model 
+both the Energy Park generation and load online in the base load study case. Studied net load 
+impacts would be limited to just the maximum net grid withdrawal at the Energy Park (340 MW 
+net withdrawal in the example), while assessed net injection impacts from the generation 
+would be limited to the maximum possible injection level (50 MW). 
+By contrast, if today’s studies are performed separately on the generation or load component 
+in isolation, they will analyze reliability needs to accommodate up to 500 MW of withdrawals 
+from the grid and 550 MW of injections into the grid, as highlighted in the New Option 6 
+requirement that a co-located generator have firm CIRs. In other words, the integration study 
+of the Energy Park load would have no mechanism to simultaneously consider the co-located 
+Energy Park generation (which would be represented in a separate process, the PJM generation 
+interconnection queue), leading PJM to model a 550 MW base case injection and the 
+
+--- PAGE 32 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 12 
+transmission owner to model a 500 MW base case withdrawal. The current co-location studies 
+described by PJM (load integration, do no harm, generator interconnection, etc.) are not set up 
+to coordinate outcomes for the separate components they study, this obstructing the ability of 
+any process to study the injections and withdrawals levels on the lower net basis (which relies 
+on successful integration outcomes for all processes), rather than on the gross. 
+The above aptly captures the intuition behind PJM reliability study cases. One needs to 
+recognize, however, that transmission reliability needs are often driven by “contingency” 
+studies, which are less intuitive. In the next section, we therefore step through the standard 
+contingency studies used for load reliability planning to show that the proposed EPI study 
+approach yields lower transmission impacts even considering the contingency cases used in 
+transmission planning. These also show the role of the control mechanism in reducing such 
+transmission impacts. 
+A. EPI-Based Contingency Studies Reduce 
+Transmission Impacts and Interconnection Time 
+To assess the effect of the EPI approach on transmission upgrades, we evaluate several 
+contingency study cases using an expanded example of the Energy Park shown in Figure 1 
+above. The EPI approach is an integrated connection process relying on specified maximum net 
+withdrawals (and, if applicable, net injections). Relying on a set configuration that has been 
+submitted by the EPI customer, and which can only be changed under prescribed protocols, the 
+EPI study process assesses different cases for net withdrawals (as load) and the net injections 
+(as generation). For the net load/withdrawal cases, the EPI process conducts general reliability 
+studies (like those used in the transmission owner load integration studies).22 For the net 
+injection/generation cases, the EPI process assesses non-firm net injections using a process 
+similar to that used to study Surplus Interconnection Service (SIS) or CIR replacement. This non-
+firm injection assessment recognizes the secondary purpose of energy park net injections, 
+ 
+22  PJM planners conduct different categories of studies: general reliability is ensured through test cases including 
+the P0 through P7 events described in the North American Electric Reliability Corporation (NERC) standard 
+TPL-001; congestion is limited through a suite of generator deliverability cases; and zonal adequacy is ensured 
+through load deliverability studies. We use general reliability study cases from TPL-001 to illustrate the effect 
+of the EPI approach on the potential for thermal overloads in contingency cases, including those in the 
+generator and load deliverability studies. In addition to thermal studies, planners study voltage, stability, and 
+short circuit effects of interconnection. Our findings apply to some extent to voltage results, but do not apply 
+to the short circuit or stability studies for Energy Parks, which are not frequent causes of the major 
+transmission upgrades that delay load interconnections.  
+
+--- PAGE 33 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 13 
+which do not need to be deliverable and can be limited operationally to only those intervals in 
+which the grid is available to accommodate them.23 Energy Park customers that wish to request 
+more firm generation interconnection service can make requests for CIRs.  
+The EPI grid injection assessment captures the intent of the Energy Park in this example to 
+inject onto the grid and make wholesale sales of energy on a non-firm, as-feasible basis (i.e., 
+similar to today’s Energy-only interconnections, but even less firm). In our Energy Park example, 
+these injections are illustrated up to 50 MW, as reflected in the EPI injections base case shown 
+in Figure 2 below. 24 By allowing non-firm injections only when the grid is available, the system 
+operator can take advantage of the reliability benefit of the Energy Park’s injection capability to 
+the extent the system needs it and can reliably accommodate it, without needing to undertake 
+costly transmission upgrades. 
+To illustrate the interaction of the Energy Park with the broader grid, the example assumes that 
+the Energy Park and a nearby 170 MW unaffiliated generator form the local grid area, which is 
+connected to the broader PJM grid by two 170 MW transmission lines. The two transmission 
+lines and the nearby unaffiliated generator play an important role in contingency analysis. The 
+transmission lines equally split the net flows between the rest of PJM and the local grid. For 
+example, in the net injection base case shown in Figure 2, the local grid area shows a 50 MW 
+net injection from the Energy Park with the nearby unaffiliated generator offline, together 
+causing a 50 MW total outflow on the interface to the rest of the grid (25 MW over each of the 
+two transmission lines).  
+ 
+23  PJM and the other U.S. RTOs lead the world in the use of the Security Constrained Economic Dispatch (SCED) 
+mechanism to manage congestion in real time, ensuring all generator dispatches are consistent with reliability 
+via N-1 security given the actual operational configuration of the grid, so that dispatched injections cannot be 
+inconsistent with thermal and voltage security on the grid. Therefore, PJM can limit the assessment of the 
+uniquely non-firm net injections of energy parks to studies that do not have any associated deliverability, 
+without introducing concerns about unreliable injections in operations. Such studies would be set to zero MW 
+in the summer peak case (like today’s Energy-only interconnection requests), but also set at zero MW in the 
+winter peak case and the light load case (unlike Energy-only requests). In order to cover reliability needs not 
+secured by SCED, the Energy Park injection assessment should include a short circuit study, a stability study 
+where necessary, and a local connection study for the physical interconnection point and the immediate 
+electrical vicinity. 
+24  Today this would be effectuated with an Energy-only interconnection request to the interconnection queue for 
+50 MW, with zero MW of requested CIRs. The control mechanism described below can be used to prevent any 
+injections above 50 MW if necessary for the purposes of generation injection studies. 
+
+--- PAGE 34 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 14 
+FIGURE 2: EPI INJECTION BASE CASE STUDYING NET GENERATION WITHOUT CONTINGENCIES 
+ 
+Note: To study a net injection, the Energy Park generation is assumed to operate at maximum output. The Energy 
+Park’s generation is competing with the unaffiliated generator for 170 MW of export capability from the local grid; 
+because the RTO is assumed to operate with N-1 security, the local grid can only flow 170 MW to the rest of grid 
+(not the full 340 MW rating of the two transmission lines); the Energy Park therefore cannot inject when the entire 
+170 MW unaffiliated local generator clears and is dispatched in the energy market. This is consistent with the 
+Energy Park’s assumed non-firm injection service. 
+For simplicity, the illustrated Energy Park does not apply for firm CIRs, which would require the 
+full generation deliverability studies PJM undertakes for resources in its interconnection 
+queue.25 Rather, the 50 MW injections are non-firm as illustrated in the case above.  
+For EPI reliability studies of Energy Park withdrawals, the base case example is shown in Figure 
+3, showing a net withdrawal from the grid of 340 MW (despite the Energy Park’s capability to 
+withdraw zero or even net inject 50 MW with its large array of on-site generation).  
+ 
+25  PJM applies a suite of generation deliverability tests even to Energy-only requests, sometimes referred to as 
+“Energy Resources.” E.g., “Deliverability requirements for Capacity and Energy Resources are identical except 
+for summer, single contingency conditions where the deliverability requirement is limited to the CIR MW,” in 
+PJM, Generator Deliverability Test Modifications: Light Load, Summer & Winter, July 12, 2022 at p. 3. 
+
+--- PAGE 35 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 15 
+FIGURE 3: EPI WITHDRAWAL BASE CASE STUDYING NET LOAD WITHOUT CONTINGENCIES 
+ 
+Note: The Energy Park generation in this case is backed down to just 160 MW in order to study a net withdrawal to 
+the Energy Park of 340 MW, reflecting the maximum possible withdrawal. For cases in which RTO operators can 
+depend on the control mechanism to reduce net flows immediately following contingencies, for instance as a 
+Remedial Action Scheme (RAS), the Energy Park could withdraw up to 500 MW, with the control mechanism 
+limiting withdrawals to 170 MW within seconds (or less) of a contingency. 
+ 
+In this case, the Energy Park’s generation supplies the remaining 160 MW to meet the total 
+500 MW of co-located load. This 340 MW modeled withdrawal from the grid could represent a 
+request by the Energy Park customer for a requested level of grid withdrawal capability to serve 
+load (e.g., occasionally, for economic reasons, despite having the ability to fully self-supply). 
+The 340 MW withdrawal limit imposed by the control mechanism effectively represents an “as 
+available” maximum non-firm withdrawal level that, for reliability reasons, cannot be exceeded 
+at any time. 
+Table 1 lists the assumptions underlying the stylized Energy Park interconnection. 
+
+--- PAGE 36 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 16 
+TABLE 1: UNDERLYING ASSUMPTIONS FOR STYLIZED INTERCONNECTION EXAMPLE 
+Item 
+Rated Capacity 
+Base Injection 
+Scenario 
+[Figure 2] 
+Base Withdrawal 
+Scenario 
+[Figure 3] 
+Local Grid Area Transmission 
+Interface to Rest of Grid 
++/- 170 for each 
+line 
++50 
+(to rest of grid) 
+-170 (from rest of 
+grid) 
+Unaffiliated Nearby Generator 
+170 
+0 
+170 
+Energy Park Generation 
+550  
+[composed of 
+many individual 
+units] 
+550 
+160 
+Energy Park Load 
+-500 
+-500 
+-500 
+Energy Park Net Power to Grid 
+- 
++50 
+-340 
+Control Mechanism 
+-340 to +50 
+Inactive 
+Inactive 
+Capacity Interconnection Rights 
+0 
+- 
+- 
+Firm Withdrawal Request 
+170 
+- 
+- 
+Max Non-firm Withdrawals 
+340  
+- 
+- 
+Max Non-firm Injections  
+50 
+- 
+- 
+ 
+Figure 4 below shows the N-1 “contingency case” for the EPI withdrawal study, reflecting 
+conditions immediately following the loss of the unaffiliated generator.26 This EPI withdrawal 
+study case for N-1 shows no contingency overloads for this case in which the local grid area has 
+lost 170 MW of supply. As shown, the joint loading over the two transmission lines interfacing 
+with the rest of the grid immediately changes from an inflow of 170 MW to an inflow of 340 
+MW. All facilities remain within limits while continuing to serve the Energy Park load, so this 
+case would not indicate the need for transmission upgrades. 
+ 
+26  In order to avoid system-wide cascading blackouts, transmission networks are operated and planned to ensure 
+they are reliable even after one contingency (i.e., after any one transmission line or generator suddenly fails 
+and trips offline, referred to as an N-1 condition) or after two sequential contingencies (referred to as N-1-1). 
+The N-1 contingency case is comparable to P1 (single contingency) in TPL-001, as well as the N-1 security that is 
+modeled in the generator deliverability tests and that is ensured in operations via SCED. 
+
+--- PAGE 37 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 17 
+FIGURE 4: EPI WITHDRAWAL CASE WITH N-1 CONTINGENCY AND NO UPGRADES NEEDED 
+ 
+ 
+However, the EPI withdrawal reliability assessment is not yet complete, as PJM would also 
+study grid conditions under second contingency, or so-called N-1-1, conditions. The N-1-1 EPI 
+reliability study example is shown in Figure 5 below. 
+As the example shows, the EPI withdrawal study’s N-1-1 (second contingency) case does not 
+show any overloads either due to the “redispatch” action of the Energy Park’s control 
+mechanism, which limits Energy Park withdrawals when necessary, such as following a 
+contingency. This unlikely case represents failure of one element of the system (the N-1 case) 
+followed by redispatch, followed later by failure of a second element (creating the N-1-1 
+case).27 As before, Figure 5 shows the unaffiliated generator has tripped offline (1st event), but 
+is followed shortly by operator redispatch of the Energy Park to limit grid withdrawals to 170 
+MW (by rapidly ramping up internal generation to 330 MW), while the unaffiliated generator 
+remains offline. This result depends on a rapid ramp rate from the energy park generation 
+(typical of such resources, especially when configured in an array of small units) and a 
+sophisticated control interaction with PJM, such as provided via its Security Constrained 
+Economic Dispatch (SCED) via the real-time energy market. As shown in Figure 5, this result 
+ 
+27  The N-1-1 contingency case shown is comparable to P3 (multiple contingency); a similar scenario in which the 
+first contingency is a trip of one of the local grid interface transmission lines is comparable to P6 (multiple 
+contingencies, two overlapping singles) in NERC’s TPL-001. 
+
+--- PAGE 38 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 18 
+shows that, when one of the two external transmission lines that connect to the local grid trip 
+offline after the unaffiliated generator also trips offline, operations are still reliable, because 
+only 170 MW flows across the remaining transmission line, consistent with its rated in-service 
+capacity.  
+FIGURE 5: EPI GENERAL RELIABILITY CASE WITH N-1-1 CONTINGENCY AND NO UPGRADES NEEDED 
+ 
+ 
+Note that loss of all Energy Park generator units is not shown as a contingency. This is because 
+the Energy Park has configured its on-site generation to use hundreds of individual units, such 
+that there is no single point of failure. In our experience, such a configuration is typical of 
+primary power at data center sites, which use fuel cells (such as Bloom Energy’s 325 kW 
+individual Energy Server systems) or small gas generators.  
+We now contrast the EPI approach illustrated in the previous figures to PJM’s existing process, 
+whereby the Energy Park load is studied separately from the Energy Park generation.28 As 
+explained further in Section III.A below, PJM states that it is responsible for conducting the 
+generator deliverability studies for the Energy Park, while the transmission owner is responsible 
+ 
+28  This appears to be the case in PJM today for new Energy Parks; for example, Option 6 in PJM’s Answer 
+describes new Energy Park generation as being studied in the Queue process while the same Energy Park’s new 
+load would be studied in the transmission owner’s Load Integration study.  
+
+--- PAGE 39 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 19 
+for studying the reliability implications of the load integration. Because of this split in 
+responsibility, and because we are not aware of documented planning case definitions for 
+Energy Parks to the contrary in either of the two processes, we assume the transmission owner 
+load integration studies ignore the Energy Park generation (since the transmission owner could 
+not dependably assume that the on-site generation will be developed and be able to offset grid 
+withdrawals), while the PJM generator interconnection studies ignore the Energy Park Network 
+Load (which would not yet be in the base case). Therefore, the assumed inflows to the local grid 
+area are much higher in the load integration study cases, which use the same type of base case 
+and contingency case definitions as shown above (albeit without the Energy Park generation).  
+For example, while the base load-only case can serve 500 MW of load, the N-1 load-only 
+contingency case already exceeds the transmission limits and would require network upgrades, 
+as illustrated in Figure 6. This is because 500 MW would be assumed to flow into the local zone 
+to serve the load after the unaffiliated generator trips offline (assuming there is no Energy Park 
+generation nor control mechanism that could limit Energy Park withdrawals), exceeding the 
+340 MW joint capacity of the two transmission lines. In contrast to the EPI approach, this study 
+result would trigger at least 170 MW of transmission upgrades, delaying interconnection of the 
+Energy Park and potentially adding significant costs that the Energy Park is designed to avoid. 
+
+--- PAGE 40 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 20 
+FIGURE 6: CASE SHOWING N-1 CONTINGENCY FOR THE LOAD-ONLY INERCONNECTION STUDY; 
+500 MW FLOWS OVER EXTERNAL TRANSMISSION LINES, WHICH IS ABOVE THEIR RATED CAPACITY  
+ 
+Note: If a RAS-type control mechanism limiting post-contingency Energy Park withdrawals to 340 MW were 
+considered in the load-only study, this load-only interconnection process would be secure at 500 MW of Energy 
+Park load, as load could be curtailed automatically and immediately (from 500 MW to 340 MW). However, the 
+system would still show reliability violations at the N-1-1 case (after one of the two transmission line trips) unless 
+the load-only study could assume that the Energy Park controller could further rapidly curtail load to only 170 MW 
+during N-1-1 conditions. 
+ 
+These load-only cases illustrate how the presence of the Energy Park generation in the EPI cases 
+helps avoid transmission upgrades, even when severe contingency cases are considered. In a 
+sense, the load-only N-1-1 study is an unrealistic N-1-1-1 study by implicitly taking three 
+elements out of service—the two grid contingencies (already very unlikely) plus all of the 
+hundreds of Energy Park generator units, thus resulting in an excessively conservative planning 
+case. The proposed EPI approach is instead to follow NERC standards and take only two 
+facilities out of service in the N-1-1 planning cases. 
+A summary table showing the power flows across the different assets and scenarios is provided 
+in Table 2.  
+
+--- PAGE 41 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 21 
+TABLE 2: POWER FLOWS ACROSS THE DESCRIBED SCENARIOS 
+Asset 
+Rated 
+Capacity 
+(MW) 
+EPI Process 
+(Net-Load) 
+Load-only 
+Process (w/o Control 
+Mechanism) 
+ Base 
+Case 
+(MW) 
+N-1 
+(MW) 
+N-1-1 
+(MW) 
+Base Case 
+(MW) 
+N-1 
+(MW) 
+High Voltage 
+Transmission Lines 
++/- 170 MW 
+for each line 
+-170 
+-340 
+-170 
+-330 
+-500 
+Unrelated Nearby 
+Generator 
+170 
+170 
+0 
+0 
+170 
+0 
+On-site Primary 
+Generation 
+550  
+[composed 
+of many 
+individual 
+units] 
+160 
+160 
+330 
+Not 
+Considered 
+Not 
+Considered 
+On-site Load 
+-500 
+-500 
+-500 
+-500 
+-500 
+-500 
+Energy Park Net 
+Power to Grid 
+- 
+-340 
+-340 
+-170 
+-500 
+-500 
+Control mechanism 
+-340 to +50 
+Inactive 
+Inactive 
+-170 
+(Active) 
+Not 
+Considered 
+Not 
+Considered 
+ 
+The stylized scenarios presented show how the proposed EPI process can unlock accelerated 
+interconnection of Energy Parks with co-located load and generation by avoiding unnecessary 
+network upgrades that would be the result of a load-only interconnection process. While we 
+only consider in detail the study process here for contingencies under general reliability studies, 
+the injection study assessment for the Energy Park modeled with the same EPI approach would 
+similarly yield accelerated interconnection compared to PJM’s generator-only interconnection 
+process. 
+Avoiding unnecessary transmission upgrades provides three important benefits: new large load 
+customers can be connected more quickly; such customers can save on the costs of connection; 
+and transmission upgrade costs that would otherwise be socialized to other customers (which 
+already totals billions of dollars in PJM according to some analysis) would be avoided.29  
+ 
+29  David Lapp, Protest and Comments of Maryland Office of People’s Counsel, filed in FERC Docket No. ER24-843, 
+February 9, 2024 
+
+--- PAGE 42 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 22 
+B. Experience Elsewhere Highlights the Practicality of 
+Energy Park Integration Studies 
+Other Independent System Operators (ISOs)/RTOs take an integrated approach to studying 
+Energy Parks, showing that it is a practical option for consideration by PJM and other ISO/RTOs.  
+For example, ERCOT has an integrated process for connecting co-located load and generation 
+behind a single POI, called Private Use Networks or PUNs. Historically associated with large 
+industrial facilities, ERCOT defines a PUN as “an electric network connected to the ERCOT 
+Transmission Grid that contains Load that is not directly metered by ERCOT (i.e., Load that is 
+typically netted with internal generation).”30 PUNs can act as both net load and net generation. 
+Recently, there has been interest in establishing PUNs from new large loads such as data 
+centers. Generators have also begun pursuing the addition of new behind-the-meter loads in 
+transmission constrained areas such as South Texas. For interconnecting PUNs to the ERCOT 
+grid, ERCOT and the interconnecting transmission owner study the PUN in an integrated 
+process as independent load, independent generation, and a composite of both load and 
+generation.31 With over 16,000 MW of PUN capacity in ERCOT, a quarter of which has been 
+added in the last decade, the PUN (i.e., Energy Park) interconnection process has proven to be a 
+practical approach for bringing online co-located load and generation.32  
+In addition, in the most recent planning guide revisions awaiting approval in ERCOT for large 
+load interconnection, ERCOT’s Large Flexible Load Task Force proposes that new large loads 
+co-located with new generation (that are not registered as PUNs) undertake a single process in 
+which load may be studied as part of the generator interconnection study, instead of separate 
+load and generator interconnection processes.33 
+In response to ongoing interest in co-location, stakeholders in the Midcontinent Independent 
+System Operator (MISO) and PJM have expressed support for an EPI approach that studies both 
+load and generation together in order to fast-track connection of new Energy Parks.34  
+ 
+30  ERCOT, Nodal Protocols Section 2: Definitions and Acronyms, April 1, 2025  
+31  ERCOT, ERCOT Update to Texas House of Representatives Committee on State Affairs, March 5, 2025, p6 
+32  ERCOT, PUN Capacity Report, April 14, 2025 
+33  ERCOT, NPRR1234 and PGRR115: Overview, Key Concepts, and Impact to the Generation Interconnection 
+Process, June 12, 2024, p10 
+34  For example, in MISO, NextEra Energy Resources submitted a proposal to study co-located load and generation 
+together to accurately identify the system upgrades required for interconnection. NextEra has proposed that 
+Continued on next page 
+
+--- PAGE 43 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 23 
+C. The Benefits of an EPI Approach Are Highest When 
+Energy Parks Can Dependably Transact with the 
+Grid on an As-Available, Non-Firm Basis 
+The EPI approach avoids transmission upgrades by incorporating the Energy Park’s primary 
+generation and control mechanism to meet on-site load and limit withdrawal and injection 
+exchanges with the grid based on available grid capacity, including during contingencies. 
+Operators can therefore take advantage of dispatchable injection capability during times that 
+the system needs the Energy Park’s surplus power and can accommodate it, and can serve 
+Energy Park load to the extent it is economically advantageous and reliable. To ensure a reliable 
+system, planners must know that operators can depend on the Energy Park controller to 
+restrict “non-firm” purchases when the grid is not available to facilitate them. For example, 
+during times that the Energy Park described above wishes to withdraw 340 MW from the grid, 
+but grid conditions limit reliable withdrawals to only 170 MW, the Energy Park must 
+dependably self-supply any load in excess of 170 MW (or else curtail the load).35 By the same 
+token, energy injections from the Energy Park can only be effectuated when grid conditions 
+allow it.   
+Operational processes and controls are necessary to ensure the ongoing ability of the Energy 
+Park to reduce withdrawals (and injections) when grid capacity is not available. We do not 
+explore these in detail, but they could be achieved through the PJM energy market and SCED 
+dispatch, or through a locally automated response to grid conditions. 
+The controls for PJM-dispatchable energy transactions and contingency responses would be in 
+place without necessarily making the Energy Park generation a PJM “Generation Capacity 
+Resource.” Rather, Energy Park generation would locally supply the load’s resource adequacy 
+need, and its control requirements would support the transmission system interactions of the 
+Energy Park (to avoid unnecessary transmission upgrades). Because the load has its resource 
+adequacy needs met locally, it does not add to PJM’s resource adequacy requirement, and its 
+ 
+MISO should factor in proposed co-located loads in the generator interconnection queue, by assigning new 
+loads to specific generators, with a generator interconnection agreement conditional on the load showing up. 
+On the load side, Google, in its response to the co-location FERC Docket No. AD24-11-49000, expressed support 
+for a fast-tracked study process for co-located loads in PJM by “studying new co-located load and generation 
+together in an effort to consolidate upgrades and reduce timelines.”, p5 
+35  The PJM Answer acknowledges the role of as-available withdrawals. See New Options 7 and 8 in Exhibit A, PJM 
+Answer. 
+
+--- PAGE 44 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 24 
+generation is not necessary to support PJM-wide resource adequacy needs nor does it need to 
+participate in PJM’s capacity market. 
+ Reforms are Needed to Realize the Speed 
+and Cost-Effectiveness Benefits of Energy 
+Park Integration  
+ _________  
+A. The Status Quo Does not Achieve the Benefits of 
+EPI Studies 
+Under current PJM rules, a new generator seeking to connect to the transmission system is 
+studied in the PJM queue. These studies are coordinated with the local transmission owner. At 
+the same time, new load requesting to be integrated in PJM must be studied through a two-
+step process that involves: (1) a transmission owner retail load integration study that identifies 
+local upgrades required to meet load based on the transmission owner’s criteria;36 and (2) a 
+PJM ‘Do No Harm’ study in which PJM evaluates if the new load and any transmission owner-
+identified upgrades will adversely impact the reliability of the transmission system. In some 
+cases, large load additions can also trigger the need for regional transmission expansions, which 
+are handled through PJM’s regional transmission expansion planning (RTEP) process. 
+For co-located generation and load, PJM prescribes separate processes for load and generator 
+interconnection. For example, in PJM’s new Option 6 (offering faster interconnection for 
+Network Load that brings its own generation), PJM describes all 4 steps (transmission owner 
+load integration study, PJM ‘Do No Harm’ study, RTEP, and Generator Interconnection Study) as 
+required for interconnection of the co-located set of facilities (i.e., the Energy Park).37 PJM does 
+note that “incentives would be explored to offer faster processing of generation that enters the 
+queue through this option [6]” including “providing options for accelerating interconnection 
+studies of new generation proposed as part of this option” and allowing that “states could 
+remove a barrier to entry for investment in large load infrastructure by assuming cost 
+responsibility for transmission upgrades in the Regional Transmission Expansion Plan (“RTEP”) 
+ 
+36  These local system needs are typically in the form of Supplemental Projects; PJM Answer 
+37  See New Option 6 in Exhibit A, PJM Answer 
+
+--- PAGE 45 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 25 
+pursuant to the State Agreement Approach.”38 While PJM offers no specifics, the EPI approach 
+we propose achieves the goal of faster and lower-cost Energy Park integration by recognizing 
+the benefits of co-located Energy Park loads and generation that avoids the more expansive 
+network upgrades triggered by studies that independently consider the associated loads and 
+generation, without the need to spur incentives by transferring costs to other customers. 
+An integrated EPI process is also currently not available through the studies a transmission 
+owner must undertake to integrate new loads. As PJM assigns primary responsibility for new 
+load integration to the transmission owners while it is responsible for studying new generators, 
+it is not clear that a transmission owner could use an EPI approach that involves studying the 
+co-located generation, given the risk that the latter might fail to complete the interconnection 
+queue process. If a transmission owner were to undertake an EPI study, it would lack a defined 
+or documented framework given the current division of responsibilities across interconnecting 
+load and generation. 
+The generator studies used in the PJM queue (referred to as “deliverability” studies, even for 
+Energy-only interconnection requests, also referred to as Energy Resources) do not recognize 
+the controllable, non-firm nature of potential injections from Energy Park generation designed 
+to self-supply of the Energy Park’s load. Even Energy-only generator interconnection requests 
+are studied by PJM with stringent reliability criteria, including for light load and winter cases. 
+This may make sense for the injections of today’s Energy-only interconnections (for example 
+wind farms), which are primarily designed to inject energy to the grid, and are offered less-firm 
+Energy-only service in recognition of their lower resource adequacy value, rather than the 
+lower business priority associated with their injections. In contrast, in the case of an Energy 
+Park, co-located generation is designed primarily for on-site supply, and would inject energy to 
+the grid only to the extent grid capacity is available or doing so is beneficial to the system. 
+Therefore, Energy Park net injection assessments should reflect the controllable, as-available, 
+non-firm nature of injections from Energy Parks.  
+For that reason, and because injections would likely be limited (and perhaps infrequent), PJM 
+can limit the assessment injections to those studies that do not have any associated 
+deliverability. Because the Energy Park controller only exchanges power with the grid when it is 
+reliable to do so (for example, by following SCED dispatch), Energy Park injections will not 
+introduce concerns about unreliable operations. Therefore, the EPI injection studies would be 
+set to zero MW in the summer peak case (in the same way as Energy-only MW today) but 
+ 
+38  PJM Answer, p. 17 
+
+--- PAGE 46 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 26 
+would also set output in the winter peak case and the light load case to 0 MW. It follows that, in 
+order to cover reliability needs not secured by the Energy Park controller, the Energy Park 
+injection assessment would include a short circuit study, a stability study where necessary, and 
+a local connection study for the physical interconnection point and the immediate electrical 
+vicinity.39  
+An Energy Park that is controlled only to inject into and withdraw from the grid based on 
+available real-time grid capacity (i.e., with zero firm injection and withdrawal MW) should be 
+presumed in the first instance to have de minimis impact on the grid in most cases. Even with 
+some firm withdrawal MW (as in the case of the above example), an assessment of the impact 
+of zero firm injection MWs would be expected to have no impact. In that respect, the 
+assessment process is analogous to PJM’s recently-revised CIR Replacement process or the SIS 
+process, both of which offer expedited interconnection processing for new resources as long as 
+screening studies confirm that there are no material impacts on the grid.40 The analogy holds 
+because both the CIR replacement process and the SIS process contemplate a zero MW net 
+increase in firm injections. SIS allows generators to quickly add new capacity behind existing 
+interconnection points, and CIR Replacement to change the fuel type at or near existing 
+interconnection points, provided total injections remain limited to the level specified in the 
+existing interconnection agreement. This new capacity is fast-tracked through the 
+interconnection queue, using a screening assessment to ensure that accommodating the 
+projects does not require network upgrades. Such an expedited approach could be reasonably 
+adapted to Energy Parks that only seek to transact with the grid on a non-firm basis based on 
+available grid capacity. 
+The Energy Park control mechanism, which may include physical protection mechanisms to 
+limit maximum flows into or out of the Energy Park, plays an important role in limiting 
+unnecessary transmission upgrades to accelerate interconnection. To achieve these benefits, 
+documentation of technical standards for the control mechanism and physical protection 
+systems is needed so that developers can reasonably anticipate and plan for necessary 
+hardware, and transmission owners can process new connection requests without having to 
+reinvent potentially detailed technical requirements to ensure net withdrawals or injections 
+from the Energy Park remain within the specified range. For example, PJM has acknowledged 
+and allowed the use of such physical protection mechanisms in approving Talen’s amended 
+ 
+39  We note that a co-located generator would have the option to seek a higher level of injection “firmness” by 
+requesting Energy-only or CIR status, leading to more robust interconnection studies 
+40  PJM Inside Lines, FERC Accepts Two PJM Proposals To Expedite Supply Additions, February 12, 2025 
+
+--- PAGE 47 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 27 
+Interconnection Service Agreement for Susquehanna power plant, but has not established 
+specific requirements.  
+As discussed above, operational processes and controls are necessary to ensure the ongoing 
+ability of the Energy Park to reduce withdrawals (and injections) when grid capacity is not 
+available. Such tariff and protocol requirements do not exist today, and would need to be 
+added in order to minimize unnecessary transmission upgrades. With dispatchable onsite self-
+supply resources—such as fuel cells, gas turbines, or battery storage—it is possible to make the 
+Energy Park’s net transactions with the grid dispatchable (up or down) by PJM using the same 
+energy market offer, clearing, and dispatch system already used for other generators. This can 
+be accomplished by allowing Energy Park operators to bid their as-available injections and 
+withdrawals into the PJM market with the requirement to follow PJM resulting dispatches. 
+Transmission planning benefits (i.e., avoiding otherwise necessary transmission upgrades) are 
+maximized through such dispatch because the system operator can rely on the Energy Park to 
+limit injections or withdrawals to the available grid capacity.41  
+Finally, while the focus of this report is on Energy Parks that are able to both withdraw from 
+and inject into the grid, non-injecting Energy Parks that are able to control their net 
+withdrawals offer similar benefits to the grid. We thus propose that load integration studies of 
+such non-injecting Energy Parks should be conducted based on the same EPI framework 
+(without any screening or studies for net injections).42 
+B. Reforms Can Achieve Energy Park Integration 
+Benefits  
+Given the gaps identified in Section III.A above, the following reforms to the PJM and 
+transmission owner interconnection processes would be necessary to achieve the speed and 
+cost benefits of the proposed EPI process: 
+ 
+41  Transmission benefits could be enhanced further if the outage of large individual Energy Park generators (if 
+any) is coordinated with PJM and transmission owner operations. While generators who qualify as Capacity 
+Resources must coordinate their outages with PJM, there are no such provisions for energy-only resources or 
+Energy Parks. 
+42  Energy Parks with zero net injections can be incorporated into real time operations (SCED) in the same way as 
+injecting Energy Parks. Load is considered in demand response and that may be the default for Energy Parks 
+that lacks net injection capability, but demand response is not currently integrated into SCED. Incorporating the 
+dispatchability of Energy Parks even if they do not provide net injections can maximize transmission benefits. 
+ERCOT’s Controllable Load Resources (CLR) framework provides a precedent for how load resources can be 
+dispatched on a 5-minute basis. 
+
+--- PAGE 48 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 28 
+• PJM and transmission owners: develop and document EPI protocols for Energy Parks, as an 
+alternative to the currently applicable separate study processes, including the PJM 
+generator interconnection study process, the PJM ‘Do No Harm’ study, transmission owner 
+load integration study, and (in limited cases) the PJM regional transmission expansion 
+process (RTEP). The EPI protocols would need to include provisions for coordination 
+between separate study processes (unless the relevant parties integrate them into a single 
+process). 
+• PJM: allow for non-firm grid injection requests based on “as available” grid capacity (i.e., 
+less firm than current Energy-only interconnections). Study these non-firm Energy Park 
+injections through an expedited screening process similar to that of PJM’s new Surplus 
+Interconnection Service (SIS) or Capacity Interconnection Rights (CIR) replacement 
+processes, given that non-firm net injections by the Energy Park can be controlled 
+automatically so they will not cause transmission impacts beyond the designated levels. 
+• PJM and/or transmission owners: Document technical standards for the Energy Park 
+controls and protection mechanisms used to limit physical withdrawals and injections 
+between the Energy Park and the grid to the pre-specified amounts. Develop provisions to 
+ensure that PJM and transmission operators can rely on the Energy Park to control net 
+injections or withdrawals when grid capacity is limited (during contingencies) in real time 
+operations. 
+ 
+ 
+
+--- PAGE 49 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 29 
+ Energy Park Integration Reform Could 
+Alleviate Resource Adequacy Strain  
+ _________  
+PJM is experiencing unprecedented resource adequacy challenges in large part due to rapid 
+load growth, largely from new data centers and other large loads requesting to be integrated to 
+the grid.43 PJM’s 2025 load forecast report estimates winter peak load to grow at an average of 
+3.8% per year over the next 10-year period.44 The consumer impact of high capacity prices 
+driven in part by load growth has been a subject of particular concern.45  
+Large load customers are motivated to accelerate the timelines to integrate their new facilities, 
+generally prioritizing speed over reducing the cost of their power supply, given the high 
+profitability and robust demand for these services.46 
+The EPI process proposed in this report is not meant to apply to Energy Parks that are planned 
+to include only backup generation (such as diesel generators) that would operate only in cases 
+where the grid connection is lost. Diesel backup generation, as discussed above, is limited by 
+the number of hours they can operate due to air pollution permitting requirements.47 Instead, 
+the proposed EPI reforms are meant for Energy Parks in which the embedded new generation is 
+designed to be able to serve the embedded new load during normal operations.  
+An accelerated EPI process would provide an appealing mechanism to incentivize developers of 
+new large loads (such as data centers) to serve their loads with new co-located primary 
+generation resources in return for faster online times and reduced grid interconnection costs. 
+To achieve this, these customers could enhance their on-site generation plans from back-up 
+only (typical today) to inclusion of primary generation technologies capable of self-supplying 
+ 
+43  PJM Inside Lines, 2024 in Review: Maintaining an Adequate Generation Supply, January 9, 2025; NERC, 2024 
+Long-Term Reliability Assessment, December 2024; American Public Power Association, PJM CEO Voices 
+Concerns About Resource Adequacy, October 23, 2024. 
+44  PJM, Long Term Load Forecast Report, January 24, 2025. 
+45  Governors of Illinois, Maryland, Delaware, New Jersey, and Pennsylvania, Letter to the PJM Board, dated 
+October 25, 2024 
+46  Center for Strategic & International Studies, The Electricity Supply Bottleneck on U.S. AI Dominance, March 
+2025. 
+47  See for e.g. Northeast States for Coordinated Air Use Management, Air Quality, Electricity, and Back-up 
+Stationary Diesel Engines in the Northeast, January 2014.  
+
+--- PAGE 50 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 30 
+their load on an ongoing basis in normal operations (e.g., through a combination of gas 
+turbines, fuel cells, batteries, and/or renewable resources).  
+New off-site capacity therefore does not have to be planned to meet load at an Energy Park to 
+the extent that co-located generation offsets capacity for co-located load. Given the 
+predominance of large load customers in the load forecast, and the breadth of those customers 
+that could benefit from the EPI study approach, this could have an outsized effect on mitigating 
+PJM’s current resource adequacy challenge. 
+This EPI process would also allow new loads to be added at sites where new generation could 
+be developed from a permitting perspective, but is not possible in a timely or cost-effective 
+fashion due to grid constraints.  
+By incentivizing new customers to largely or fully self-supply their own load, grid expansion and 
+resource adequacy challenges are reduced. The consumer bill impacts of large load growth 
+would likewise be mitigated. New generation resources that are brought online through an EPI 
+process could then also have the option to sell surplus generation to PJM, which would further 
+reduce PJM’s supply challenges. 
+ 
+
+--- PAGE 51 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 31 
+ Conclusion 
+ _________  
+We have described an EPI process that can accelerate the integration of Energy Parks consisting 
+of co-located load, primary generation, and a control mechanism that regulates grid 
+withdrawals and injections. We illustrate with stylized N-1 and N-1-1 contingency scenarios 
+how EPI studies allow grid planners to leverage an Energy Park’s generation and control 
+mechanism that limit net withdrawals to those serviceable by the grid with minimal upgrades. 
+We identify the reforms necessary to enable new large loads and co-located generation to 
+interconnect quickly under the EPI framework. Namely: establishing EPI protocols; clarifying the 
+role of the grid operator and transmission owners; allowing for an expedited study process and 
+assessment protocol that reflects the lower expected grid impact of Energy Parks; and 
+integrating the dispatchability of the Energy Park’s assets in real-time operational frameworks 
+(SCED or otherwise) to maximize their benefits for grid reliability and economic dispatch of 
+available resources. An accelerated interconnection process under the EPI framework offers the 
+opportunity to support federal and state priorities on data centers, manufacturing, and artificial 
+intelligence infrastructure and addresses critical challenges with resource adequacy and grid 
+upgrades. In particular, the benefits of the proposed EPI framework are as follows: 
+ACCELERATES INTERCONNECTION OF NEW LOAD AND NEW GENERATION  
+Eliminating network upgrades through controllable Energy Parks can immediately reduce large 
+load interconnection lead times by eliminating the need to pursue lengthy new transmission 
+builds that need to be brought online prior to energizing the new load. Under the currently 
+available processes, a large new load might wait for years until transmission expansion 
+(planning through a local or regional transmission planning process) is online. Similarly, a new 
+generator meant to serve the new load would be delayed through the existing multi-year 
+generation interconnection queue process. By co-locating new load with new generation and 
+acknowledging their controllable grid interaction (self-balancing with maximum withdrawal or 
+injections) in the study process, time consuming and expensive network upgrades are avoided, 
+expediting the process for bringing these resources online and supporting federal and state 
+priorities at lower cost. 
+
+--- PAGE 52 ---
+Accelerating Integration of New Co-located Generation and Loads 
+Brattle.com | 32 
+SUPPORTS RESOURCE ADEQUACY AND ENSURES MORE EFFICIENT USE OF THE 
+EXISTING NETWORK 
+By offering expedited integration of co-located new loads and new generation through the EPI 
+framework, grid planners incentivize new loads to bring their own generation. This has multiple 
+benefits. First, the dispatchable new Energy Park generation serves the resource adequacy 
+needs of the Energy Park load, mitigating PJM’s resource adequacy challenges. This can be 
+enhanced further for Energy Parks with excess supply that can inject onto the grid during 
+system peaks or emergencies in coordination with the grid operator, potentially serving system 
+load during scarcity events. Second, the EPI framework utilizes existing grid capacity more 
+efficiently because the Energy Park’s generation can be controlled to supply the co-located load 
+whenever doing so is necessary to limit the Energy Park’s withdrawals or injections to the 
+available grid capacity. Thus, the need for network transmission upgrades to serve grid 
+withdrawals by new load or non-firm injections by new generation is greatly reduced or 
+eliminated.  
+REDUCES CONSUMER BILL IMPACTS FROM LARGE LOAD GROWTH 
+By avoiding unnecessary transmission upgrades to accommodate new large loads, the EPI 
+process avoids any costs that would otherwise be allocated broadly to all customers. By 
+facilitating and accelerating a “bring-your-own capacity” approach, the proposal mitigates the 
+resource adequacy impact of load growth, easing price increases in the capacity market and the 
+commensurate bill impacts for all consumers.  

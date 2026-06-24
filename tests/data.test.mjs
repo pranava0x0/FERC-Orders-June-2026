@@ -2,7 +2,7 @@
  * No dependencies (node: built-ins only). Guards the facts the UI renders. */
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
@@ -319,4 +319,31 @@ test("every extracted directive quote appears verbatim in the saved full order t
   }
   assert.ok(total >= 40, `enough quote segments checked (${total})`);
   assert.equal(hits, total, `all ${total} directive-quote segments are verbatim in the full text`);
+});
+
+test("deployed site (docs/) ships only the order PDFs and links comments via eLibrary", () => {
+  // GitHub Pages publishes only docs/. Comment PDFs live in sources/comments/files/ (committed to
+  // the repo, not deployed); the only PDFs allowed under docs/ are the six §206 orders, which are
+  // served because the inline #page= citations open them. Keeps the published payload small and
+  // enforces the "in GitHub, not on Pages unless absolutely needed" policy in code.
+  const walk = (dir) => readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
+    const p = join(dir, e.name);
+    return e.isDirectory() ? walk(p) : [p];
+  });
+  const docsRoot = join(here, "..", "docs");
+  const pdfs = walk(docsRoot).filter((p) => p.toLowerCase().endsWith(".pdf"));
+  const stray = pdfs.filter((p) => !p.includes("/docs/orders/"));
+  assert.equal(stray.length, 0, `no non-order PDFs under docs/ (found: ${stray.map((p) => p.split("/docs/")[1]).join(", ")})`);
+  assert.ok(pdfs.length >= 6, `the six order PDFs are present under docs/orders/ (found ${pdfs.length})`);
+
+  // the deployed JS must not href/src a repo-only comment file (it would 404 on Pages)
+  const badHref = /(?:href|src)\s*[:=]\s*["'`][^"'`]*sources\/comments/i;
+  for (const f of ["data.js", "app.js"]) {
+    assert.ok(!badHref.test(readFileSync(join(docsRoot, "js", f), "utf8")), `${f} links no repo-only sources/comments file`);
+  }
+
+  // every flagship card points at its eLibrary filing, not a local copy
+  for (const fl of D.comments.flagships) {
+    assert.match(fl.elibrary, /^https:\/\/elibrary\.ferc\.gov\//, `${fl.acc} flagship links to eLibrary`);
+  }
 });

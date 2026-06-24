@@ -4,6 +4,15 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
+- **2026-06-24 · data · one comment body (ETI, `20251121-5225`) will not download.** Of the 270 RM26-4
+  comments carrying attachments, 269 bodies were bulk-downloaded via the iframe grinder; ETI Comments
+  (Entergy Texas) is the lone holdout across five attempts (main-frame click ×2, iframe retry, dedicated
+  60s iframe, URL-intercept). Root cause: **source-side** — the filelist link renders and the click
+  fires, but it triggers no `window.open`, no navigation, and no download (the other 269 behave
+  identically), so eLibrary appears to serve this one file inline rather than as an attachment. Status:
+  **Open (known gap)** — the file is inventoried in `rm26-4-files.json` and re-downloadable; the site
+  reads "269 of 270." Not worth further automation for a single document.
+
 - **2026-06-24 · test · `source-accuracy` maps `extract.deadlines` as objects
   (`${deadline.para} ${deadline.action} ${deadline.days}`) but the deadlines are plain strings**, so
   the deadlines contribute `"undefined undefined undefined"` and back no order-claim support. Harmless

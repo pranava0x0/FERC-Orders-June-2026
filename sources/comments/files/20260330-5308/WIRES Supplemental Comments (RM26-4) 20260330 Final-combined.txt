@@ -1,0 +1,1305 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+Interconnection of Large Loads to the Interstate : 
+Docket No. RM26-4-000  
+Transmission System  
+ 
+ 
+ 
+: 
+ 
+ 
+SUPPLEMENTAL COMMENTS OF WIRES 
+ 
+Pursuant to Rule 2121 of the Rules of Practice and Procedure of the Federal Energy 
+Regulatory Commission (“Commission” or “FERC”), WIRES,2 on behalf of its members, 
+respectfully moves for leave to submit the following supplemental comments to the Advance 
+Notice of Proposed Rulemaking (“ANOPR”) in the captioned docket.3  These supplemental 
+comments are for the purpose of placing into the docket the attached Whitepaper titled “The 
+Risks of Cost Shifts in Serving Large Loads Under a Framework with Direct Allocation of 
+Transmission Costs,”4 recently released by Concentric Energy Advisers and undertaken on 
+behalf of Exelon Corporation.  The purpose of this Whitepaper is to provide the Commission 
+with additional information to inform any proposal concerning direct assignment in this docket 
+or related proceedings. 
+ 
+1 18 C.F.R. § 212 (2025). 
+2 WIRES is a non-profit trade association of investor-, publicly-, and cooperatively-owned transmission providers 
+and developers, transmission customers, regional grid managers, and equipment and service companies.  WIRES 
+promotes investment in electric transmission and consumer reliability and additional benefits through development 
+of electric transmission infrastructure.  This filing is supported by the full supporting members of WIRES but does 
+not necessarily reflect the views of the Regional Transmission Organization/Independent System Operator 
+(“RTO/ISO”) members of WIRES.  For more information about WIRES, please visit www.wiresgroup.com. 
+3 Interconnection of Large Loads to the Interstate Transmission System, Notice Inviting Comments, Docket 
+No. RM26-4-000 (Oct. 27, 2025) (the Commission issued the ANOPR following a directive from the Secretary of 
+Energy (“Secretary”) pursuant to section 203 of the Department of Energy Organization Act); see also the full text 
+of the proposed ANOPR, Ensuring the Timely and Orderly Interconnection of Large Loads, Advance Notice of 
+Proposed Rulemaking, Docket No. RM26-4-000 (Oct. 23, 2025). 
+4 See Concentric Energy Advisors, The Risks of Cost Shifts in Serving Large Loads Under a Framework with Direct 
+Allocation of Transmission Costs (March 30, 2026) (“Whitepaper”). 
+
+--- PAGE 2 ---
+2 
+ 
+The Whitepaper sets forth an analysis of the ANOPR’s proposal to allocate 100 percent of 
+network upgrade costs to large load customers and illustrates the potential for unintended cost 
+shifts to retail customers under certain implementation scenarios.  Because the analysis and 
+findings presented in the Whitepaper are directly pertinent to the issues under consideration in 
+this docket, WIRES submits the Whitepaper to inform possible future Commission action in this 
+proceeding, as well as any other proceedings concerning cost responsibility for large load 
+customers.  
+I. 
+GOOD CAUSE EXISTS TO ACCEPT THESE SUPPLEMENTAL COMMENTS 
+These supplemental comments and the attached Whitepaper released on March 30, 2026, 
+offer new analysis developed since WIRES submitted its Initial Comments on November 21, 
+2025, in this docket.5  As described more fully below, the Whitepaper evaluates the ANOPR’s 
+proposal to allocate 100 percent of the network upgrade costs to large load customers and finds, 
+under the scenarios analyzed and assumptions made, that directly assigning network upgrade 
+costs to large load customers can lead to significant transmission cost shifts away from large load 
+customers onto other retail customers.6 
+Thus, these supplemental comments and the attached Whitepaper present new 
+information that is neither repetitive nor duplicative of other information submitted in this 
+proceeding.  This essential and timely information is intended to aid the Commission in any 
+forthcoming rulemaking related to this docket.7  WIRES respectfully requests that the 
+Commission accept these supplemental comments. 
+ 
+5 Interconnection of Large Loads to the Interstate Transmission System, Comments of WIRES, Docket No. RM26-4-
+000 (Nov. 21, 2025) (“WIRES Comments”). 
+6 Whitepaper at 1, 3, and 6. 
+7 See, e.g., New York Indep. Sys. Operator, Inc. 179 FERC ¶ 61,198 at P 16 (June 17, 2022) (accepting motion to file 
+comments out-of-time and comments because they provided information that assisted the Commission in its 
+decision-making process); Algonquin Gas Transmission, LLC, 154 FERC ¶ 61,048 at P 2 n.6 (2016) (accepting 
+
+--- PAGE 3 ---
+3 
+ 
+II. 
+COMMENTS 
+Rapid growth in large loads, especially data centers, has placed unprecedented demands 
+on the transmission system at a time when customer affordability is a chief concern for many,8 
+including WIRES and its members.  In response to these challenges, and under the direction of 
+the Secretary of Energy,9 FERC has issued the ANOPR to propose potential reforms, including a 
+series of principles for the Commission to build upon in initiating a rulemaking proceeding.  
+Among those principles is a proposal that the cost of network upgrades needed to serve new 
+large loads should be directly assigned to such large load customers.10  A similar principle is part 
+of the White House’s Ratepayer Protection Pledge, incorporating the additional concept that 
+costs of delivery infrastructure should not be passed on to other customers.11  This analysis, 
+along with WIRES’ position, supports the goal of ensuring that large load customers contribute 
+their share.  Through this Whitepaper, WIRES seeks to guide the Commission away from rate 
+policies that could unintentionally deviate from this principle.   
+Thus, the Whitepaper examines whether relying solely on the direct assignment 
+allocation method is appropriate.  Specifically, it focuses on the potential financial impact to 
+other customers resulting from this approach.  In performing the analysis, the Whitepaper uses a 
+ 
+unauthorized pleading because it aided in the decision-making process); Dominion Cove Point LNG LP, 118 FERC 
+¶ 61,007 at P 10 (2007) (accepting unauthorized pleading because it assisted in the decision-making process). 
+8 See Presidential Proclamation 11014, Ratepayer Protection Pledge, (Mar. 4, 2026), 91 FR 11439 (Mar. 9, 2026) 
+(stating because America’s economic and technological leadership depends on the development of  reliable, large-
+scale data centers within the United States, the Administration, through this Proclamation, required guarantees from 
+such companies that their energy needs will not increase electricity costs for American households).   
+9 See supra n. 3. 
+10 ANOPR at P 25 (see Principal Eight proposing that load and hybrid facilities should be responsible for 
+100 percent of the network upgrades assigned to them through the interconnection studies). 
+11 Ratepayer Protection Pledge at 11439 (“The hyperscalers and [artificial intelligence] companies that increase 
+electricity demand must pay for the full cost of the energy and infrastructure needed to build and operate data 
+centers and must not pass this cost on to the American people.”). 
+
+--- PAGE 4 ---
+4 
+ 
+representative example of a single 200 MW large load customer located in the PJM region taking 
+service under PJM’s tariffed Network Integration Transmission Service (“NITS”) and compares 
+it with two alternative approaches for the direct assignment and recovery of network upgrade 
+costs (upfront payment or cost-of-service recovery structures).12   
+The analysis was performed under a framework that assumes application of the 
+Commission’s longstanding pricing policy, which prohibits simultaneously charging an 
+interconnection customer both a rolled-in rate and an incremental rate (otherwise known as the 
+prohibition against “and” pricing).13  Under the ANOPR’s proposed direct assignment recovery 
+framework - and hypothesizing that the Commission’s “and” pricing prohibition applies - the 
+analysis presumes that large load customers would be exempt from NITS charges that fund 
+ongoing development, maintenance, and operation of the overall transmission system.14  The 
+analysis is primarily based on conservative assumptions intended to avoid overinflating potential 
+cost shifts15 and assumes that large loads do not receive any future refunds or credits for their 
+payments of network upgrade costs.16 
+The Whitepaper finds that the ANOPR’s proposed approach of solely assigning 
+100 percent of network upgrade costs to large loads and exempting them from NITS charges 
+could unintentionally shift costs to other customers.17  In fact, the analysis finds that such an 
+ 
+12 Whitepaper at 5, Section 2 at 7-11, and Appendix 22-23. 
+13 Id. at 1; see also, Inquiry Concerning the Commission’s Pricing Policy for Transmission Servs. Provided by Pub. 
+Utils. Under the Fed. Power Act; Policy Statement, 59 FR 55031 (Nov. 3, 1994). 
+14 Whitepaper at 5-6, and 7. 
+15 Id. at 2, 7 n. 10, 10, 12, 13, 21, and Appendix at 21, 22 n. 22, and 23. 
+16 Id. at 17. 
+17 Id. at 1-3, 9-11, and 19.  It is noteworthy that the Whitepaper does not explore whether the Commission could 
+modify its policy to assign costs to large load customers (e.g. through NITS charges to pay for ongoing system 
+reliability) beyond the point in time when they have finished paying for their required network upgrades.  
+
+--- PAGE 5 ---
+5 
+ 
+approach could result in significant cost shifts away from large load customers onto other 
+customers’ retail electricity bills, especially over the long term.18  For example, if the 
+Commission were to implement in PJM a sole direct assignment policy for network upgrades 
+associated with large loads interconnecting in the 2025-2030 period, the average PJM customer 
+could experience an approximately 8-11 percent increase in the transmission portion of their 
+retail electricity bill, or about $23-33 more per year in 2026 dollars.19  The Whitepaper further 
+observes that these cost shifts would be much larger on a national level, particularly if large loads 
+connect promptly and continue to use the grid as projected through and beyond 2030.20  Without 
+drawing a conclusion, the Whitepaper suggests that policymakers should carefully review such a 
+pricing policy if they wish to avoid these outcomes.21 
+Although the Whitepaper acknowledges alternative cost allocation approaches, as well as 
+the various rate-related risk management issues associated with large load development, it does 
+not explore them.22  Instead, it shows that when large loads pay only for their required network 
+upgrades and do not contribute to the embedded system costs or the future costs required to 
+maintain system reliability for all customers, including themselves, those costs are shifted onto 
+other customers.   
+Neither the Whitepaper nor these comments advocate for any specific cost allocation 
+methodology.  Rather, the purpose of this Whitepaper is to highlight the issue and provide the 
+Commission with additional information to inform any direct assignment proposals in this docket 
+ 
+18 Id. at 3, and 6. 
+19 Id. at 2-3, 14 and 20; see also Table 3 at 15. 
+20 Id., Appendix at 23. 
+21 Id. at 3-4. 
+22 Id. at 3, 6, and 19 n. 17. 
+
+--- PAGE 6 ---
+6 
+ 
+or related proceedings.  At a time when the Administration and other stakeholders, like the 
+WIRES members, are highly focused on ensuring energy affordability for all American 
+households and businesses, a thorough and objective evaluation of all relevant information is 
+warranted.  In particular, special attention should be given to data that highlights potential 
+unintended consequences that could flow from certain rate structures or cost allocation 
+methodologies which may adversely impact customer affordability.  
+III. 
+CONCLUSION 
+WIRES members remain committed to investing in and developing transmission 
+infrastructure, maintaining system reliability, and safeguarding other retail customers from 
+unwarranted expenses and risks.  As the Whitepaper introduces new information relevant to 
+issues under consideration in the ANOPR, WIRES submits these supplemental comments to 
+include the Whitepaper in the record for this proceeding.  Accordingly, a copy of the Whitepaper 
+is attached for the Commission’s review and consideration. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Respectfully submitted, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/s/  Larry Gasteiger 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Larry Gasteiger 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Executive Director 
+WIRES 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+529 Fourteenth Street, NW 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Suite 1280 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Washington, D.C. 20045 
+Ph:  (703) 980-5750 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lgasteiger@exec.wiresgroup.com 
+ 
+March 30, 2026 
+ 
+
+--- PAGE 7 ---
+7 
+ 
+CERTIFICATE OF SERVICE 
+ 
+ 
+I HEREBY CERTIFY that I have this day had served the foregoing document upon 
+each person designated on the official service list compiled by the Secretary in this proceeding. 
+ 
+Dated at Washington, D.C. this 30th day of March 2026. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/s/  Larry Gasteiger 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Larry Gasteiger 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Executive Director 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+WIRES 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+529 Fourteenth Street, NW, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Suite 1280 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Washington, D.C. 20045 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Ph:  (703) 980-5750 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lgasteiger@exec.wiresgroup.com 
+ 
+ 
+ 
+
+--- PAGE 8 ---
+WIRES Supplemental Comments 
+Docket No. RM26-4-000 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+APPENDIX 
+WHITEPAPER  
+
+--- PAGE 9 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+THE RISKS OF COST SHIFTS IN SERVING LARGE 
+LOADS UNDER A FRAMEWORK WITH DIRECT 
+ALLOCATION OF TRANSMISSION COSTS 
+ 
+ 
+PREPARED FOR: 
+EXELON CORPORATION 
+MARCH 30, 2026 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CEADVISORS.COM 
+©2026 CONCENTRIC ENERGY ADVISORS, INC. All rights reserved. 
+
+--- PAGE 10 ---
+ 
+ 
+ 
+ 
+TABLE OF CONTENTS 
+Executive Summary 
+1 
+Section 1: Background and Introduction 
+4 
+Section 2: Understanding Cost Shift Mechanics 
+7 
+Section 3: Analysis Results 
+12 
+Section 4: Co-Located Load Case and Additional Considerations 
+17 
+Section 5: Key Findings 
+19 
+Appendix: Analysis Methodology 
+21 
+ 
+ 
+ 
+
+--- PAGE 11 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 1 
+EXECUTIVE SUMMARY 
+Rapid growth in large loads—particularly data centers—is placing unprecedented demands on the 
+U.S. electric system. This dynamic is unfolding at a time when affordability is at the forefront and 
+there are concerns that the investment needed to serve these large loads will exacerbate financial 
+strains on other customers. Policymakers are considering alternative approaches to timely and 
+efficiently serving these loads, including framework principles presented in the Federal Enegry 
+Regulatory Commission/Department of Energy (“FERC”/”DOE”) Advance Notice of Proposed 
+Rulemaking (“ANOPR”) on interconnection of large loads. Among these principles is the suggestion 
+that the cost of certain transmission projects needed to serve new large load customers – referred to 
+as “network upgrades” – should be directly assigned to the large load customers.  
+While there is a surface-level appeal to directly assigning the cost of network upgrades to large load 
+customers, deeper examination is warranted.  FERC's transmission pricing policy allows the 
+transmission owner to charge the higher of an incremental or “rolled-in” (a.k.a. “embedded” or 
+“average”) rate. It also generally prohibits what is called “and” pricing, representing the notion that 
+a customer may not be charged both the rolled-in and incremental rate.  A prohibition on “and” 
+pricing might allow the same large load customers, having paid for their network upgrades, to argue 
+that they should be exempt from the rates that fund the ongoing development, maintenance, and 
+operation of the broader transmission system, called Network Integration Transmission Service 
+(“NITS”) charges. This could result in cost shifts between large load customers and other customers. 
+This report seeks first to explain the mechanics of the cost shift associated with direct assignment of 
+network upgrades to large load customers when there is no other contribution to the costs of owning, 
+operating and maintaining the transmission system. It then evaluates whether direct assignment of 
+network upgrade costs as the means of paying for transmission service costs leads to a material shift 
+of transmission costs from new large load customers to other customers, and the extent of that shift.  
+Our core finding is that direct assignment of network upgrade costs, with accompanying excusal from 
+paying NITS charges, results in significant transmission cost shifts away from the large load 
+customers and onto other customers. This outcome holds under two direct assignment approaches 
+studied: upfront payment structures (Scenario A) or cost‑of‑service recovery structures (Scenario 
+B).  Table 1 shows that, over time, these cost shifts could amount to $33-47 billion in present value 
+terms for just the volume of large loads expected to be developed in PJM from 2025-2030. 
+
+--- PAGE 12 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 2 
+Table 1: Magnitude of Transmission Cost Shifts over a 30-Year Period (2026$) 
+ 
+Scenario A 
+Scenario B 
+Cost Shift per MW Large Load 
+$2.3 million  
+$1.7 million  
+Single 200 MW Large Load Customer 
+$0.5 billion  
+$0.3 billion 
+PJM Large Loads (20 GW, 2025 -30) 
+$47 billion 
+$33 billion  
+Nationwide Large Loads (73 GW, 2025-30) 
+$169 billion  
+$120 billion  
+ 
+The intuition behind the cost shift in either scenario is that, if payments made by the large load 
+customers were set based only on the costs of “but for” network upgrades, those payments would 
+eventually fall below what they would contribute to system costs by paying NITS over time. The 
+specific magnitude and timing of the cost shift depend on various assumptions, but, in nearly all cases, 
+other customers are disadvantaged relative to a case in which new large load customers are treated 
+like all other customers and charged for transmission service accordingly. This dynamic is illustrated 
+in Figure 1, which compares the cases in which a large load customer pays NITS over time as 
+compared to direct assignment of costs under Scenario B.  
+Figure 1: Annotated Representation of Cumulative Transmission Payments Comparing NITS 
+Payments and Direct Assignment of Network Upgrades Under Scenario B (2026$) 
+ 
+Transmission cost shifts of this scale translate into very meaningful customer impacts, even when 
+employing assumptions selected to lead to a more conservative result. For a typical PJM residential 
+customer, the analysis indicates an increase of approximately 8–11% in the transmission portion of 
+
+--- PAGE 13 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 3 
+the electric bill, equivalent to customers paying roughly an additional $23–$33 per year in 2026 
+dollars. The magnitude of the cost shifts resulting from reliance on payment for “but for” upgrades 
+as the means of recovering transmission service costs would be much greater when extrapolated 
+nationwide, and/or when extrapolated to large load development expected beyond 2030.  
+We conclude that policies that rely solely on direct assignment transmission network upgrades to 
+large load customers, with accompanying excusal from paying NITS charges, are likely to shift 
+significant costs onto other customers. Thus, defining transmission cost responsibility through direct 
+assignment should be approached cautiously. 
+It bears emphasizing that this report focuses only on the implications of transmission pricing policies 
+that rely solely on direct assignment and does not explore the implications of other possible 
+approaches.   
+ 
+ 
+
+--- PAGE 14 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 4 
+SECTION 1: BACKGROUND AND INTRODUCTION 
+The United States is facing a range of challenges associated with efforts to rapidly integrate significant 
+volumes of new large load customers – especially data centers – into the electric grid. Implicated 
+issues extend to transmission planning, generation resource adequacy, and reliable operations. 
+Especially in light of acute affordability concerns, considerable attention is owed to the equitable 
+allocation of the ensuing costs and the potential for cost shifts between new large load customers and 
+all other customers, new and existing.  
+The issue of transmission development cost assignment arises, among other places, in the ANOPR on 
+Interconnection of Large Loads to the Interstate Transmission System being advanced by the U.S. 
+DOE’s and FERC.1 This docket seeks to address a range of issues associated with the rapid expansion 
+of large load customers. Certain concepts discussed in the proposal represent a departure from long-
+standing transmission rate design and cost allocation principles. Accordingly, the alternative 
+approaches to network upgrade funding and transmission service rate treatment for large loads 
+warrant careful examination to understand their potential impact on transmission customers and 
+retail rates. For the purposes of this report, we use the term “network upgrades” to refer to 
+transmission projects necessary to reliably serve new large loads. These network upgrades are 
+integrated parts of the transmission system and include both local enhancements necessary to 
+integrate the large load and regional development needed to maintain broader system reliability.  
+FERC has generally viewed such assets as benefitting all users of the transmission system.2  
+The ANOPR introduces rate design concepts that could materially shift transmission costs among 
+customer types in response to new large load customers connecting to the electric grid on a 
+standalone basis as well as when they connect in configurations co-located with generators. 
+Specifically, the ANOPR advances the principle that such customers “should be responsible for 100% 
+of the network upgrades that they are assigned.”3 This principle, paired with the Commission’s 
+prohibition on “and” pricing would have the distinct potential to relieve such customers from paying 
+for ongoing costs of reliance on the integrated network.4  Put another way, if large load customers 
+are only responsible for network upgrades required for their reliable integration into the 
+transmission system, they may then be relieved from paying for the cost of other transmission 
+infrastructure, the use of which also benefits them.  If large load customers are not responsible for 
+ 
+1  
+FERC Docket No. RM26-4.  
+2  
+These may be distinguished from “interconnection facilities,” which are facilities found downstream of the point at 
+which the customer connects to the integrated transmission system.  
+3  
+ANOPR Principle eight.  
+4  
+Direct assignment of network upgrade costs to load that also pays for transmission service could be interpreted as 
+running afoul of the Commission’s “and” pricing policy precedent. Generally, this policy holds that it is discriminatory 
+and duplicative to charge a customer for both its network upgrade costs (cost responsibility for specific assets that 
+are part of the integrated transmission network) and a rolled-in transmission rate (reflecting the costs of the rest of 
+the integrated system). The Commission’s policy has been that all customers use the integrated transmission system 
+and all should contribute to the costs of developing, owning, operating, and maintaining that system.  
+
+--- PAGE 15 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 5 
+paying ongoing transmission service charges, the fixed costs of the transmission system, including 
+both capital costs (embedded and prospective) and ongoing operation and maintenance (“O&M”) 
+expenses, would necessarily be recovered from other customers.5  
+This report first illustrates the mechanics of this cost shift using a representative example of a single 
+200 MW large load customer located in the PJM region taking service under standard NITS.6 This 
+example is compared to two alternatives for the direct assignment and recovery of network upgrade 
+costs: 
+• 
+Alternative Scenario A – Upfront Payment for Network Upgrades: 
+Large loads pay the full upfront capital cost of any network upgrades identified in the 
+interconnection study. This scenario is akin to a Contribution in Aid of Construction (“CIAC”) 
+framework.7 Once connected, however, the large loads are not assessed NITS charges nor are 
+they responsible for any further charges associated with owning or maintaining the network 
+upgrade assets. 
+• 
+Alternative Scenario B – Cost-of-Service Network Upgrades: 
+Large loads pay for utility‑funded network upgrades over time on a cost-of-service basis 
+through a customer-specific formula rate for network upgrade charges. Such a formula rate 
+would be designed to recover, from a large load customer, the costs of the asset over time 
+(i.e., depreciation), plus a rate of return, the cost of maintaining the facilities, etc. This 
+scenario is akin to the Network Upgrade Funding Agreement (“NUFA”) approach proposed 
+by the PJM Transmission Owners for generator interconnection customers. As in Scenario A, 
+once the large loads are connected, they are not assessed NITS charges. 
+Having established these two alternatives, the report then analyzes and presents estimates of the 
+potential magnitude of transmission cost shifts that would result from exempting large load 
+ 
+5  
+We note that this is distinct from other parts of the Commission’s transmission pricing policy, which allows the 
+transmission owner to charge the higher of an incremental or embedded – or “rolled-in” – rate. Underlying the higher 
+of policy was the notion that existing customers (e.g., native load and other customers) should be held harmless from 
+new requests for service and the costs associated with providing that incremental service.     
+6  
+NITS service is one of two primary types of transmission service offered by transmission providers in the US. NITS service 
+– as compared to point-to-point service – is comprehensive service that allows load serving entities to use the entire 
+transmission network to deliver power to load that it serves. For our purposes, we recognize that transmission cost 
+recovery from customers may, depending on the region, be done through NITS as well as other charge categories. 
+Here, we use “NITS” as a catch-all to cover all charge categories for customers taking comprehensive transmission 
+service. Excluding any such charges from cost allocations to large load customers would, absent other mechanisms, 
+result in potential further cost shifts.  
+7  
+CIAC refers to money paid to a utility by a customer or project to directly cover the cost of utility infrastructure 
+needed to serve that customer or project. CIACs are generally paid up front during the construction period to cover 
+construction expenses. They are generally employed when the assets in questions do not benefit the broader electric 
+system and are therefore not appropriately paid for by other ratepayers. By definition, network upgrades benefit the 
+broader electric system. 
+
+--- PAGE 16 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 6 
+customers from NITS charges at the PJM regional as well as the national levels. Finally, the report 
+presents estimates of the resulting impacts of these cost shifts on residential electric bills. 
+On the general topic of the cost implications of integration of large loads into the electric system, 
+there are numerous issues and forms of risks to existing customers. These include cost allocation risk 
+(i.e., cost shifts between customer classes and types), stranded asset risk (i.e., possibility that assets 
+are developed for customers that do not materialize or demand less than expected), and risk with 
+respect to the proper alignment of incentives related to site selection. Here, while acknowledging the 
+importance of addressing stranded asset risk8 and other concerns, we focus solely on the cost 
+allocation risk associated with a framework that would solely direct-assign the cost of network 
+upgrades to large load customers. Our attention here is not on other pricing solutions or a fuller suite 
+of solutions related to cost and risk allocation for large load customers.  
+Ultimately, the analysis finds that, under the specific pricing approaches analyzed, a significant 
+portion of costs may be shifted away from large load customers and borne by other customers.  
+ 
+ 
+ 
+8  
+There are, of course, approaches available to address stranded asset risk, which may be achieved through rate 
+design or contract structures like the Transmission Security Agreement framework being employed by the Exelon 
+Utilities. 
+https://www.exeloncorp.com/grid/setting-a-national-standard--how-Exelon-is-protecting-customers-and-
+powering-growth 
+
+--- PAGE 17 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 7 
+SECTION 2: UNDERSTANDING COST SHIFT MECHANICS 
+Under the status quo, network upgrade costs incurred to serve end-use customers are included in a 
+transmission owner’s rate base and recovered from all transmission customers, including large load 
+customers, through standard transmission service charges such as rates for NITS. NITS charges 
+reflect the full costs of developing, owning, operating, and maintaining the transmission system and 
+are generally assessed based on each customer’s contribution to system peak load. Supported by 
+longstanding precedent, this approach of rolling the cost of upgrades into broader system costs, while 
+charging all customers for the use of the full system, has ensured that customers pay a proportionate 
+share of transmission costs consistent with their use of the transmission system and the facilities 
+built to serve them. 
+This report shows that a cost shift occurs under the two alternative scenarios – described above – in 
+which the large loads are exempt from NITS charges and instead bear only the network upgrade costs 
+assigned to them through an envisioned large load  study process. 9In either scenario, the cost shift – 
+to the advantage of large load customers that are directly assigned costs – takes place when the total 
+cumulative payment by the large load customer, regardless of how they are charged, eventually fall 
+below what they would contribute to the cost of owning and operating the system by paying NITS 
+over time. The specific magnitude and the timing of the cost shift depend on various assumptions, 
+but in the scenarios studied, other customers are disadvantaged relative to a case where new large 
+load customers are charged for their use of the transmission grid like all other customers.   
+To illustrate how the cost shift occurs under these scenarios, we calculated the costs to a hypothetical 
+200 MW large load customer under three scenarios with an in-service date of 2030. The full 
+quantitative cost shift analysis is conducted over a 30‑year horizon; however, for ease of 
+presentation, some of the charts in this section focuses on the 2027–2050 period.  
+• 
+Status Quo – Standard NITS Charges: Customer pays NITS charges based on its peak load, 
+which here is set equal to its maximum demand of 200 MW. NITS charges are based on the 
+PJM weighted-average NITS rate and are assumed to grow in perpetuity at the estimated 
+growth rate for the 2025-2030 period.10  
+• 
+Scenario A - Upfront Payment for Network Upgrades: Customer pays upfront for 
+necessary network upgrade facilities, assumed to be developed over a 4-year period before 
+the in-service date and costs are spread evenly over the construction period for simplicity. 
+ 
+9  
+See, e.g., FERC ANOPR at PP 20-21.  
+10  
+We roughly estimate a NITS growth rate based on the 2025 PJM Transmission Owner revenue requirements plus the 
+revenue requirement impact of transmission projects expected to enter service before 2030. For this value, we 
+calculate an approximately 5% CAGR. This is conservative relative to the CAGR for PJM Transmission Owner NITS 
+rates, which have experienced a weighted average CAGR of approximately 7% in the 2021-2026 period. With the 
+structure of our analysis, the more the NITS rate is expected to increase, the higher the calculated cost shift.  
+
+--- PAGE 18 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 8 
+The size of the network upgrade costs is assumed to be approximately $1.16 million per each 
+MW of load, with the reasoning for this number described later in this report.  
+• 
+Scenario B - Cost of Service Network Upgrades: Customer pays directly for network 
+upgrades over time, assuming a 20-year asset life and standard treatment of depreciation, 
+taxes, and return for transmission assets (approximately aligned with the PJM NUFA 
+structure). Annual O&M is assumed to be 1% annually of initial capital cost. The capital cost 
+of the network upgrade costs is treated the same as in Scenario A.  
+We compared the scenario where the customer pays status quo NITS to the alternative direct 
+assignment Scenarios A and B. This is done on both an annual and cumulative basis. The methodology 
+and numerical results are described in greater detail in the following section and the appendix. 
+As shown in Figure 2, when the customer pays NITS, its contribution to the overall transmission 
+revenue requirement is generally consistent across time and rises with the expected increase in the 
+NITS charge less present-value adjustments. In the upfront charge case, the customer pays for a 
+quarter of the cost of the network upgrades during each of the four years of the construction period 
+and then pays nothing thereafter. In the cost-of-service case, the customer will make payments 
+aligned with the formula to calculate the revenue requirement for the network upgrades. As the asset 
+depreciates and is eventually fully amortized, the associated payment amounts would decline over 
+time and then cease entirely. At that point, the customer would not pay any additional charge for use 
+of the system (e.g., NITS) nor would it incur any meaningful transmission service charges related to 
+the network upgrade assets.  
+Figure 2: Annual Charges for Hypothetical Customer for Three Scenarios (2027-2059) 
+ 
+ $-
+ $10
+ $20
+ $30
+ $40
+ $50
+ $60
+Millions ($2026)
+Upfront Upgrade Charge
+Cost of Service Upgrade Charge
+NITS Charge
+
+--- PAGE 19 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 9 
+With the understanding of how these various payment scenarios evolve across time, Figure 3 
+illustrates how the cost shift evolves over time between existing and large load customers depending 
+on the rate structure applicable to the large load customers. The figure depicts the cumulative 
+financial contributions to the transmission system over time for each scenario. In the NITS case, 
+cumulative payments for the transmission system accumulate steadily across time without 
+abatement. For the upfront payment case, contributions accumulate in each of the construction years 
+and then plateau as no further transmission charges are levied. For the cost-of-service case, the 
+cumulative network upgrade charge contribution increases with each annual payment and plateaus 
+after year 20 when the network upgrades are fully amortized. 
+Figure 3: Cumulative Cost Contributions for Hypothetical Customer for Three Scenarios 
+(2027-2050) 
+ 
+The cost shift can be conceptualized as the difference in cumulative payments to the transmission 
+system, as all costs ultimately need to be recovered by transmission owners from customers. While 
+in early years large load customers under the direct assignment scenarios studied here have 
+contributed relatively more, over time and in each case the total contribution to the system falls 
+below what they would have paid if treated as a regular customer paying the equivalent of NITS 
+charges, assuming that the large loads remain a customer over the expected life of the assets. In the 
+upfront charge case, by approximately year seven of operation the large load customer will have paid 
+less than it would otherwise have as a NITS customer.  Over time the cost shift onto other customers 
+will grow. For the cost-of-service upgrade charge case, by approximately year fifteen of operation the 
+large load customer will have paid less than the customer would otherwise have as a NITS customer, 
+with the gap widening over time from there.  
+ $-
+ $50
+ $100
+ $150
+ $200
+ $250
+ $300
+ $350
+ $400
+ $450
+ $500
+2027
+2032
+2037
+2042
+2047
+Millions ($2026)
+NITS Charge
+Upfront Upgrade Charge
+Cost of Service Upgrade Charge
+
+--- PAGE 20 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 10 
+In both scenarios, the large load customer’s contribution to network upgrade costs as described 
+above, whether paid upfront or over time, does not fully offset the share of transmission system costs 
+that the customer would otherwise pay under the status quo. As a result, absent other pricing 
+structures, a portion of these transmission costs must be recovered from other transmission 
+customers, resulting in a cost shift. 
+It is noteworthy that this example is intentionally conservative as it assumes a relatively high level 
+of network upgrade capital costs per MW of large load demand. This conservative example has two 
+advantages: it produces graphics that clearly illustrate the cost shift dynamics, and it mitigates 
+concerns that the results are driven by aggressive or overstated assumptions. Importantly, higher 
+assumed network upgrade costs reduce the magnitude of the calculated cost shift, making this 
+example a lower-bound illustration rather than a worse-case outcome.  
+To demonstrate how these dynamics change under less conservative assumptions, Figure 4 and 5 
+present results for a case in which network upgrade charges are reduced by half, to approximately 
+$575K per MW. As shown in Figure 4, under this assumption, customer payment in Scenario B (Cost 
+of Service Upgrade Charge) are lower in every in-service year than the contribution the customer 
+would make to system costs if charged solely under NITS.  Figure 5 further illustrates cost shifts not 
+only become more pronounced over time but also begin significantly earlier. Specifically, in this 
+example, costs are shifted towards other customers by approximately 2035 under Scenario A 
+(Upfront Upgrade Charge), and almost immediately upon the commencement of service under 
+Scenario B (Cost of Service Upgrade Charge).  
+Figure 4: Annual Charges for Hypothetical Customer for Three Scenarios with Lower Level of 
+Network Upgrade Costs (2027-2059) 
+ 
+ $-
+ $5
+ $10
+ $15
+ $20
+ $25
+ $30
+ $35
+Millions ($2026)
+Upfront Upgrade Charge
+Cost of Service Upgrade Charge
+NITS Charge
+
+--- PAGE 21 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 11 
+Figure 5: Cumulative Cost Contributions for Hypothetical Customer for Three Scenarios with 
+Lower Level of Network Upgrade Costs (2027-2050) 
+ 
+As illustrated in the graphics, in either case – high or low network upgrade costs, over the long run, 
+the direct assignment of network upgrade costs eventually leads large load cost responsibility to fall 
+below what they would otherwise contribute to the transmission system if they were charged NITS 
+like all other customers and take service over the same expected term as other customers. The lower 
+the network upgrade costs paid by a large load customer, the earlier the cost shift occurs and the 
+greater the magnitude of that cost shift over time. This approach creates a problematic cost shift from 
+an equity and policy standpoint. Furthermore, such rate treatment ignores the reality that the 
+transmission system is an evolving investment. As customers take service from the integrated grid, 
+the system requires ongoing maintenance to ensure reliability, resilience, and quality of service, all 
+of which incur continuous costs. Allowing a cost allocation framework where the contribution only 
+to a certain portion of the system, and only for a certain period of time, can absolve large load 
+customers from the financial contributions associated with the on-going use of the system and leave 
+other customers to bear an outsize burden over time. 
+ 
+ $-
+ $50
+ $100
+ $150
+ $200
+ $250
+ $300
+ $350
+ $400
+ $450
+ $500
+2027
+2032
+2037
+2042
+2047
+Millions ($2026)
+NITS Charge
+Upfront Upgrade Charge
+Cost of Service Upgrade Charge
+
+--- PAGE 22 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 12 
+SECTION 3: ANALYSIS RESULTS 
+The analysis forecasts future NITS payments and payments under alternative transmission cost 
+responsibility frameworks for a hypothetical large load customer. The analysis then compares 
+payments between the status quo cost responsibility structure and the direct-assign cost 
+responsibility structure to quantify the resulting cost shifts over a 30-year period. This result is then 
+scaled up to the PJM region and nationally to the projected levels of large load development. 
+Importantly, as discussed in the Appendix, we make conservative assumptions where appropriate to 
+avoid overstatement of cost shifts, by assuming network upgrade costs of $1.16 million per MW of 
+large load customer interconnection. The details of the cost shift calculation methodology and the 
+input assumptions are discussed more fully in the Appendix. 
+The cost shift analysis is limited to the expected large load customer development over the 2025-
+2030 period and evaluates the resulting cost shift attributable to that vintage of customers over the 
+2030-2059 study period. Future data center development is not quantified in this analysis; any 
+associated cost shifts would be incremental to those reported here. However, the analysis does 
+present cost shifts on a dollar-per-MW basis, which may be used to extrapolate potential cost shifts 
+associated with future large load development.  Furthermore, for illustrative purposes, the analysis 
+assumes that the direct-assign rate structures under consideration in certain policy initiatives are 
+implemented beginning in 2026 and remain in effect thereafter. 
+Cost Shift Magnitude 
+Our analysis finds that the magnitude of the transmission cost shift associated with a representative 
+200 MW large load customer is approximately $1.1 billion over a 30-year period under Scenario A, 
+and approximately $0.8 billion under Scenario B, all in nominal terms.  On a per‑MW basis, each 
+incremental large load addition results in an estimated cost shift of $5.4 million under Scenario A and 
+$4.1 million under Scenario B over the 30‑year study period.  
+The lower cost shift magnitude observed under Scenario B reflects the fact that large load customers 
+in this scenario pay the full cost‑of‑service for network upgrades over time, including ongoing O&M 
+and other related expenses. By contrast, under Scenario A, customers pay only the capital‑related 
+costs of the network upgrades, resulting in a larger portion of remaining costs being shifted to other 
+customers. 
+We apply these per‑MW cost shift estimates to: (1) the projected 20 GW of PJM large load additions 
+over the 2025–2030 period and (2) an aggregate 73 GW of nationwide large load additions, as 
+
+--- PAGE 23 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 13 
+forecasted by S&P Global,11 over the same period. This scaling yields the aggregate cost shift results 
+presented in Table 2. 
+Table 2: Magnitude of Transmission Cost Shifts over a 30-Year Period 
+ 
+Scenario A 
+Scenario B 
+Cost Shift per MW Large Load 
+$5.4 million (nominal) 
+$2.3 million (2026$) 
+$4.1 million (nominal) 
+$1.7 million (2026$) 
+Single 200 MW Customer 
+$1.1 billion (nominal) 
+$0.5 billion (2026$) 
+$0.8 billion (nominal) 
+$0.3 billion (2026$) 
+PJM Large Loads  
+(20 GW, 2025-30) 
+$109 billion (nominal) 
+$47 billion (2026$) 
+$82 billion (nominal) 
+$33 billion (2026$) 
+Nationwide Large Loads 
+(73 GW, 2025-30) 
+$395 billion (nominal) 
+$169 billion (2026$) 
+$297 billion (nominal) 
+$120 billion (2026$) 
+ 
+For the single customer case, the cumulative cash flows are shown graphically in Figure 6 for the full 
+study period of 2030-2059. This reflects the network upgrade construction period (4 years) for 
+transmission prior to the large load in-service date of 2030. When the customer is charged NITS rates 
+(red line), it steadily contributes to the cost of the transmission system over time after it enters 
+service. In Scenario A (gold line), the large load customer only pays for the network upgrades during 
+construction, and then its cumulative contribution to transmission halts, reflected in a flat line after 
+in-service. By approximately 2040, this contribution falls below what it would have contributed had 
+it been responsible for NITS charges. In Scenario B (blue line), the customer begins to pay for its 
+network upgrades through the cost-of-service rate in 2030 when it takes service, and thereafter the 
+amount it contributes annually declines as the network upgrades are depreciated across time. 
+Eventually, payments drop to (or near) zero as the assets are fully amortized. By approximately 2045, 
+this contribution falls below what it would have contributed had it been responsible for NITS charges. 
+The total cost shift over the 30-year study period is the distance between cumulative cost 
+contribution lines at the end of the period. Again, we emphasize that our primary analysis case likely 
+understates cost shifts by the selection of a network upgrade cost assumption ($1.16 million per MW 
+of load) that is likely on the high end of what may be expected. 
+ 
+11  
+According to S&P Global, large load demand nationwide was approximately 61.8 GW in 2025 and is forecast to 
+increase to 134.4 GW by 2030. This represents a nationwide large load addition of 72.6 GW over the 2025–2030 period. 
+ 
+(Source: S&P Global, https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/101425-
+data-center-grid-power-demand-to-rise-22-in-2025-nearly-triple-by-2030) 
+
+--- PAGE 24 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 14 
+Figure 6: Cumulative Cost Contributions for Hypothetical Customer for Three Scenarios 
+Across Full Study Period (2027-2059) 
+ 
+Bill Impact 
+Our analysis also estimates the cost shift impact on an average PJM residential customer’s monthly 
+electricity bill. We assume an average residential bill of $200 per month in 2026, with transmission 
+charges accounting for approximately 12% of the total bill. 
+We convert the 30‑year transmission cost shift associated with PJM’s projected 20GW large load 
+additions into net present value (NPV) 2026 dollars and allocate the residential portion of this 
+amount across the residential customer base. Based on this approach, as shown in Table 3, the 
+estimated bill impact for a typical residential customer is approximately $2.73 per month or $33 per 
+year (an 11% increase in the transmission portion of the bill) under Scenario A. The estimated bill 
+impact for a typical residential customer is approximately $1.94 per month or $23 per year (an 8% 
+increase in the transmission portion of the bill) under Scenario B. 
+ $-
+ $100
+ $200
+ $300
+ $400
+ $500
+ $600
+ $700
+ $800
+Millions ($2026)
+NITS Charge
+Upfront Upgrade Charge
+Cost of Service Upgrade Charge
+
+--- PAGE 25 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 15 
+Table 3: Estimated Annual Bill Impact on an Average Residential Customer from PJM Large 
+Load Cost Shifts for Loads Developed 2025-2030 
+ 
+Scenario A 
+Scenario B 
+Annual Customer Bill Impact from PJM 
+Large Load Cost Shifts (2026 $) 
+$33 
+$23 
+Residential Transmission Bill Impact (%) 
+11% 
+8% 
+Network Upgrade Costs Sensitivity 
+Network upgrade costs vary significantly by project and region, reflecting differences in location, 
+interconnection voltage, the status of other service requests, and the resulting extent of required 
+network reinforcements. For purposes of the cost shift analysis, we assume a large load’s network 
+upgrade cost contribution of approximately $1.16 million per MW,12 based on calculations derived 
+from PJM large load growth projections and the estimated costs of planned transmission projects to 
+reliably serve that load growth, as described in the Appendix.  
+To illustrate sensitivity to this assumption, and to analyze the impacts of less conservative inputs, we 
+also estimate cost shifts under cases in which network upgrade cost contributions are materially 
+lower.13 Specifically we perform one case that is half of the reference case, or approximately $578,000 
+per MW, and another case that is aligned with recent costs of new generator interconnection network 
+upgrades, or  approximately $220,000 per MW.14 Under these scenarios, the cost shift per MW of 
+large load addition increases substantially, as large load customers are responsible for a smaller 
+amount of transmission system costs (i.e., their network upgrade costs) and a greater portion of costs 
+they otherwise would be responsible for – were they responsible for full NITS charges –are socialized 
+to the broader customer base. As large load network upgrade cost contributions decline, per‑MW 
+cost shifts increase, reinforcing the idea that the base assumption of $1.16 million per MW likely 
+understates the magnitude of cost shifts that may arise in many future interconnection scenarios. 
+ 
+12  
+The estimated network upgrade cost of $1.16 million per MW is derived by dividing approximately $23.3 billion of 
+network upgrades identified on the PJM website as supporting large load interconnections by an estimated 20 GW 
+of projected large load additions from 2025 to 2030. 
+13     Network upgrade costs for large load interconnections are generally not publicly available. As a point of reference, 
+a 2024 report indicates that the average estimated network upgrade cost for generation interconnection projects 
+submitted between 2012 and 2020 was approximately $184,500 per MW. (Source: AEI 2024 Generator 
+Interconnection Scorecard) 
+14  
+https://gridstrategiesllc.com/wp-content/uploads/2024/03/AEI-2024-Generation-Interconnection-Scorecard.pdf 
+(Table 5, page 33)  
+
+--- PAGE 26 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 16 
+Table 4: Per MW Cost Shift Comparison for High, Medium, and Low Network Upgrade Cost 
+Contributions 
+Network Upgrade Costs 
+Scenario A 
+Per-MW Cost Shift 
+Scenario B 
+Per MW Cost Shift 
+High: $1.16 million/MW 
+$5.4 million (nominal) 
+$4.1 million (nominal) 
+Medium: $578,000/MW 
+$6.0 million (nominal) 
+$5.3 million (nominal) 
+Low: $220,000/MW 
+$6.4 million (nominal) 
+$6.1 million (nominal) 
+ 
+ 
+
+--- PAGE 27 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 17 
+SECTION 4: CO-LOCATED LOAD CASE AND ADDITIONAL 
+CONSIDERATIONS 
+Co-located Large Loads 
+Although not separately called out in the analysis, cost responsibilities for co-located load 
+arrangements bear similarities to the scenarios discussed above, with similar cost shift concerns. 
+Given the direction that FERC appears to be heading regarding co-located load rates,15 a large load 
+customer in a co-location arrangement (1) may not be responsible for the allocation of transmission 
+charges owing to arguments that, after paying for network upgrades to facilitate the co-location 
+arrangement, such charges would violate the Commission’s prohibition on “and” pricing and (2) may 
+not be responsible for NITS charges regardless of network upgrade cost responsibility due to the 
+netting of  generation from load.  Under such conditions, consistent with the load cost responsibility 
+issues modeled in this report, the customer’s only contribution toward embedded transmission 
+system costs would be through the payment of any required network upgrade costs. As a result, we 
+would expect the cost shifts to be similar in magnitude to those modeled for standalone loads.  
+Some stakeholders have suggested that a co-located load configurations may reduce the need for 
+network upgrades associated with interconnection and, all else being equal, lower the cost of 
+expanding the transmission system to reliably serve load.  This outcome may occur under certain 
+system conditions. However, the details about how the co-located load arrangements would be 
+studied, would operate, and would impose demand on the system, remain under active discussion 
+among stakeholders.  Given the evolving discussion, we cannot conclude that co-located load 
+configuration results in lower network upgrades requirements.  Co-located load cost shift effects are 
+examined in more detail in the Concentric analysis submitted to FERC in the co-located load 
+dockets.16   
+Crediting Mechanism 
+In estimating large load contributions to network upgrade costs, the analysis assumes that large 
+loads pay the full network upgrade costs and do not receive any refunds of, or credit for, those 
+payments in the future regardless of the rate design. The ANOPR raises the question of whether large 
+loads should initially fund network upgrades and subsequently receive reimbursement. However, 
+establishing a crediting mechanism for large load customers would effectively reimburse them for 
+any network upgrade costs that they were responsible for. Once they have been fully reimbursed, 
+ 
+15  
+See FERC Docket Number EL25-49. 
+16 
+See, e.g., Reed/Powers Declaration, submitted as attachment to Protest of Exelon Corporation and American 
+Electric Power Service Corporation in Docket No. ER24-2172. 
+ 
+ 
+
+--- PAGE 28 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 18 
+they would presumably then be responsible for NITS obligations like any other customers. 
+Practically, at least in nominal terms, this setup would probably be designed to leave the customer 
+financially no worse off than if it has paid NITS all along. As such, this would likely eliminate any cost 
+shift, but it would also not achieve any intended policy-driven objective of directly assigning network 
+costs to the large load customers in a durable way to prevent cost shifts to other customers. Such an 
+approach could amount to a logistically intensive pathway back to something approximating the 
+status quo.  Accordingly, while we offer this observation about such a policy, we did not perform any 
+additional modeling of such a case.  
+Discount Rate 
+Given the long time series of cash flows underlying the cost shift analysis and the efforts to evaluate 
+impacts over a 30-year horizon, the choice of discount rate can materially affect the conversion of 
+future cash flows to present-value terms.  For this analysis, the discount rate is set equal to the 
+historical average rate of inflation (i.e., 3.22%) in order to avoid unduly constraining the treatment 
+of intergenerational equity.  Importantly, the overall conclusions and directional findings regarding 
+cost shifts under direct-assignment approaches remain unchanged even when discount rates are 
+increased to 10% or higher.  
+NITS Rate Changes  
+To avoid introducing additional variability unrelated to the core comparison of cost responsibility, 
+the NITS rate is assumed to grow at a fixed rate across all modeled scenarios. In practice, the NITS 
+growth rate may be affected by a wide range of factors. For example, the interconnection of a large 
+quantity of large loads could, if they significantly grow the pool of payers for the transmission 
+network, put downward pressure on transmission rates by effectively “increasing the denominator.”  
+Alternatively, under certain direct assignment structure, certain network upgrades could be netted 
+or credited against the revenue requirement, thereby “reducing the numerator.” These dynamics are 
+more complex and inherently uncertain to model and were therefore excluded from the analysis for 
+simplicity.  Instead, the analysis assumes that historical trends of rising NITS rates continue, at least 
+approximately. Importantly, we tested the sensitivity of the results to this assumption. Even when 
+the NITS growth rate is reduced to 0%, the cost shift results hold directionally, although the 
+magnitude of the cost shift naturally declines as the NITS growth rate declines.  
+
+--- PAGE 29 ---
+ 
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 19 
+SECTION 5: KEY FINDINGS 
+Our analysis of a transmission cost allocation policy requiring sole use of direct assignment yields 
+the following key findings: 
+1. When direct assigned to large load customers, network upgrade cost contributions do not 
+offset avoided NITS charges. 
+When large loads are exempted from paying NITS charges and are responsible only for 
+network upgrade costs, their contributions to transmission system cost recovery are, over 
+time, insufficient to replace the NITS payments they would otherwise make if treated like all 
+other customers.17 This conclusion holds whether the large loads pay network upgrade costs 
+upfront or are charged on a cost-of-service basis.  
+2. A policy that requires direct assignment of network upgrades to large loads as the sole means 
+of recovering transmission costs creates substantial long‑term transmission cost shifts. 
+We estimate that, on a per‑MW basis, each incremental large load addition subject to direct 
+assignment results in a transmission cost shift of approximately $4.1 million to $5.4 million 
+over a 30‑year period in nominal dollars, and approximately $1.7 million to $2.3 million in 
+2026 dollars. Applying this result: 
+a. A single 200 MW large load would shift approximately $1.1 billion in nominal dollars 
+($0.5 billion in 2026 dollars) in transmission costs to other customers over a 30-year 
+period when network upgrade costs are paid upfront. When network upgrades are 
+recovered through cost-of-service charges, the same load would shift approximately 
+$0.8 billion in nominal dollars ($0.3 billion in 2026 dollars) in transmission costs to 
+other customers over the same period. 
+b. Near‑term large load growth projected in PJM is approximately 20 GW. If this 
+incremental load is exempt from NITS charges and instead pays only network 
+upgrade costs, our analysis indicates that roughly $109 billion in nominal dollars ($47 
+billion in 2026 dollars) in transmission costs would be shifted to other customers 
+over the next 30 years when network upgrade costs are paid upfront. When network 
+upgrades are recovered through cost-of-service charges, the same load would shift 
+ 
+17  
+As noted earlier, this report is limited to assessing the potential for cost shifts under a requirement to solely use direct 
+assignment.   
+
+--- PAGE 30 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 20 
+approximately $82 billion in nominal dollars ($33 billion in 2026 dollars) in 
+transmission costs to other customers over the same period. 
+c. At the national level, one estimate puts near-term large load additions at 
+approximately 73 GW. Scaling the analysis accordingly suggests a potential 
+transmission cost shift of roughly $395 billion in nominal dollars ($169 billion in 
+2026 dollars) to other transmission customers over a 30‑year period when network 
+upgrade costs are paid upfront. When network upgrades are recovered through cost-
+of-service charges, the same load would shift approximately $297 billion in nominal 
+dollars ($120 billion in 2026 dollars) in transmission costs to other customers over 
+the same period. 
+d. The magnitude of total transmission cost shifts to other customers would increase as 
+the assumptions and results of this analysis are extended to large load additions 
+occurring beyond 2030 
+3. Residential customers experience meaningful bill impacts. 
+These near‑term transmission cost shifts translate into an increase of approximately 8 to 
+11% in the transmission portion of the average residential customer’s electricity bill, 
+representing a non‑trivial customer impact. 
+4. Cost shift magnitude is sensitive to network upgrade cost levels. 
+Network upgrade costs vary significantly by project. Sensitivity analysis demonstrates that, 
+transmission cost shifts increase materially as per MW large load network upgrade cost 
+contributions decline, underscoring the importance of cost allocation frameworks that reflect 
+long‑term system use. 
+
+--- PAGE 31 ---
+ 
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |PG. 21 
+APPENDIX: ANALYSIS METHODOLOGY  
+Modeling Approach 
+Our analysis evaluates potential cost shifts that stem from transmission network upgrade cost 
+recovery frameworks that exempt large loads from paying NITS charges that they currently pay 
+under the status quo transmission cost recovery framework. In these scenarios, policies change to 
+require large load customers to instead pay for transmission costs under the two direct assignment 
+scenarios described. As a result, the respective cost recovery frameworks lead to shifts in the amount 
+of the transmission costs currently borne by large loads to other transmission customers. The 
+analysis is designed to quantify these costs at the level of a single customer first, then scaled to the 
+PJM region as a whole, and then extrapolated to nationwide levels of expected large load (i.e., data 
+center) development. Cost shifts are defined as the difference between each direct-assign scenario as 
+compared to the status quo case.  
+Our cost shift modeling followed four steps: 
+1. Forecast “Status Quo” PJM NITS Rates for the 30-Year Study Period 
+Our 30‑year study period begins in 2030. We first estimated the 2030 NITS rate in PJM using 
+(1) the 2026 PJM load forecast18 and (2) expected transmission capital additions expected in 
+service by 2030, based on publicly available PJM planning process documents.19 
+Using the projected 2030 NITS rate and the actual 2025 NITS rate, we calculated an average 
+annual growth rate over the 2025–2030 period. This annual growth rate of 5% is then applied 
+as an escalation factor to estimate future NITS rates for the years 2031 through 2059, based 
+on the rough assumption that current trends are likely to persist prospectively. 
+It is worth noting that this growth rate is conservative relative to historical NITS rate growth. 
+For example, in the 2021-2026 period, weighted average NITS rates in PJM grew 
+approximately 6.6% annually.20  
+2. Calculate A Single Large Load Customer’s Contribution Under the Status Quo 
+Under the status quo, the contribution of a single large load customer to the recovery of 
+transmission costs is its payments for NITS. These payments are calculated as the large load’s 
+contribution to system peak load as measured in megawatts multiplied by the dollar-per-MW 
+NITS rate. 
+ 
+ 
+18  
+https://www.pjm.com/planning/resource-adequacy-planning/load-forecast-dev-process.aspx 
+19  
+https://www.pjm.com/planning/m/project-construction 
+20  
+https://www.pjm.com/markets-and-operations/billing-settlements-and-credit 
+
+--- PAGE 32 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |APPENDIX PG. 22 
+ 
+3. Estimate A Single Large Load Customer’s Contribution Under Two Scenarios 
+For each scenario, we assume that a large load’s contribution to transmission cost is equal to 
+the payments it makes for the network upgrades required to serve that load consistent with 
+the rate structure of that scenario. We derive a network upgrade cost on a per‑MW basis using 
+PJM data, which is done by assessing the amount of transmission investment planned to serve 
+new large loads in the 2026-2030 period21 divided by the amount of new large load over the 
+same period.22 We then multiply this unit cost by the large load’s MW to determine the 
+network upgrade costs for which a customer would be responsible.  
+Under Scenario A, network upgrade costs are paid upfront. Accordingly, the full network 
+upgrade cost payment associated with the large load is assumed to occur ahead of a 2030 in-
+service date, the first year of the study period, with a four-year construction period and the 
+assumption of equal payments during the construction period. 
+Under Scenario B, network upgrade costs are recovered over time. We calculate the annual 
+revenue requirement associated with the transmission upgrades supporting the large load 
+and treat this amount as the large load’s annual transmission contribution for a 20‑year 
+contract term. We assume annual O&M equal to 1% of the initial capital costs of the project 
+and an 8% weighted average cost of capital. Payments cease after year 20, reflecting the 
+typical term of network upgrade cost recovery agreements. 
+4. Measure the Cost Shift for a Single Large Load Customer 
+Finally, we compared the amount paid by the single large load customer towards the recovery 
+of transmission costs in each scenario against the corresponding amount paid by the large 
+load under the status quo rate framework. The difference over time between what the large 
+load would contribute under the status quo and what it contributes under each scenario 
+represents the cost shift. This is calculated on both nominal terms and in 2026 time- adjusted 
+dollars (i.e., real 2026 dollars) using historical average inflation rates as the discount rate.  
+5. Estimate Cost Shift in PJM and Nationwide 
+Based on the 30-year cost shift estimated for a representative 200 MW large load customer, 
+we calculated a per MW cost-shift metric. This per MW value was then applied to projected 
+large load additions in PJM—approximately 20 GW from 2025 through 2030—to extrapolate 
+ 
+21  
+We rely on the PJM database of “Project Status & Cost Allocation” and sum all costs for projects estimated in service 
+by 2030 under the categories of Baseline with load growth as a driver and Supplemental under the customer service 
+driver.  
+22  
+We start with the 2026 PJM load forecast, look at all peak load growth expected by 2030, and conservatively assume 
+that 90% of that load growth is a result of new large load customers.  
+
+--- PAGE 33 ---
+ 
+ 
+CONCENTRIC ENERGY ADVISORS |APPENDIX PG. 23 
+ 
+the potential magnitude of cost shifts associated with near-term large load growth in the 
+region. 
+Using the same per MW extrapolation approach, we also estimated the magnitude of cost 
+shifts associated with projected nationwide large load growth of approximately 73 GW over 
+the 2025–2030 period. 
+Conservative Modeling Assumptions 
+The analysis adopts a deliberately conservative approach in selecting inputs for the cost shift 
+calculation. The objective is to avoid overstating the magnitude of any potential cost shift and to 
+ensure that resulting estimates err on the side of understatement rather than overstatement. 
+First, in forecasting the status quo NITS rate, the analysis relies on the estimated costs of announced 
+transmission projects published on the PJM website. It is expected, however, that additional 
+Supplemental Projects will be added towards the latter end of the 2026-2030 period as needs dictate 
+for projects with faster execution periods. Using only currently published project costs therefore 
+results in a lower projected NITS growth rate and, in turn, a lower estimate of cost shifts than would 
+likely occur in practice. 
+Second, in projecting the NITS rate used in the model, the analysis applies the NITS growth rate from 
+2025 through 2030 as a constant escalation factor over the subsequent 30‑year analysis period. This 
+assumption is likely also conservative. Future NITS rate growth could reasonably be expected to 
+exceed historical trends due to accelerating load growth, particularly from AI‑driven data center 
+development and associated transmission expansion needs, as well as resulting from trends in 
+increasing equipment costs. 
+Finally, the large load forecast underlying the analysis includes only near‑term large load additions 
+projected between 2025 and 2030 - approximately 20 GW within PJM and 73 GW nationwide. Over 
+a 30‑year time horizon, it is a near certainty that substantially greater levels of large load additions 
+will materialize. To the extent such future loads are exempted from paying NITS charges, excluding 
+them from the cost shift analysis purposefully excludes any cost shifts resulting from post-2030 large 
+load development and associated transmission costs.  Thus, the full long-term implications of any 
+policy that would drive a cost shift would need to be extrapolated to future load growth levels to get 
+a more complete picture of the impact on existing customers over time.  
+ 

@@ -1,0 +1,685 @@
+--- PAGE 1 ---
+FINAL (11/21/2025) 
+UNITED STATES OF AMERICA 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+Interconnection of Large Loads to the Interstate 
+Transmission System 
+Docket No. RM26-4-000 
+ 
+INITIAL COMMENTS OF INTERNATIONAL ENERGY CREDIT ASSOCIATION 
+ 
+The International Energy Credit Association (“IECA”) submits these comments in 
+response to the Federal Energy Regulatory Commission’s (“Commission”) Notice Inviting 
+Comments issued on October 27, 2025, in above captioned docket. In its Notice, the Commission 
+referenced a proposed advance notice of proposed rulemaking (proposed “ANOPR”) issued on 
+October 23, 2025, by the Secretary of Energy (“Secretary”) pursuant to Section 403 of the 
+Department of Energy Organization Act,1 which authorizes the Secretary to propose rules for 
+consideration by the Commission. The Secretary’s transmittal letter of October 23, 2025, called 
+for the Commission to take “final action (no later than April 30, 2026)” on the Secretary’s proposed 
+ANOPR.  
+Fundamentally, the Secretary’s proposed ANOPR is intended to expedite the process of 
+interconnecting large loads in excess of 20 MW to the interstate transmission system, focusing 
+primarily on the interconnection of Data Centers to the grid. The Secretary’s proposed  
+ANOPR is consistent with President Trump’s issuance on July 23, 2025, of Winning the Race: 
+America’s AI Action Plan.  Recognizing the significance and the urgency of the public interest 
+served by expediting the interconnection of Data Centers to the interstate transmission system, the 
+IECA appreciates the opportunity to submit these initial comments on the Secretary’s proposed 
+ANOPR for the Commission’s consideration. 
+I. 
+IDENTITY AND INTEREST 
+The IECA is an association of over 800 credit, risk management, legal and finance 
+professionals that is dedicated to promoting the education and understanding of credit and other 
+risk management-related issues in the energy industry. For the last 100 years, IECA members have 
+actively promoted the development of best practices that reflect the unique needs and concerns of 
+the energy industry. The IECA seeks to protect the rights and advance the interests of a broad 
+range of domestic and foreign energy market participants, representatives of which make up the 
+IECA’s membership. These entities finance, produce, sell, purchase for resale, and hedge their 
+exposure to risk related to, substantial quantities of various physical energy commodities, 
+including electricity, natural gas, oil, refined petroleum products, hydrogen, ammonia, renewable 
+energy certificates, voluntary carbon credits, and numerous other energy-related physical 
+commodities (both tangible and intangible) necessary for the healthy functioning of the energy 
+markets and the “real economy.” 
+ 
+1 42 U.S.C. § 7173.  
+
+--- PAGE 2 ---
+ 
+- 2 - 
+ 
+As market participants in physical and financial energy markets in the U.S. and globally, 
+IECA members are directly affected by the enormousness of the impact on physical and financial 
+energy markets of Data Center development, artificial intelligence (“AI”) implementation, new 
+power plant construction needed to serve the Data Centers that will implement AI and other 
+advanced computing functions, and the formation of Federal and State policies to encourage that 
+development. 
+ 
+IECA members welcome these developments and seek to ensure that such policies and 
+regulations are just and reasonable to all constituencies. On that basis, we submit these comments. 
+ 
+II. 
+PLEADINGS AND COMMUNICATIONS 
+Pleadings and other communications concerning this proceeding should be directed to the 
+following persons: 
+Phil Lookadoo, Esq. 
+Haynes and Boone, LLP 
+800 17th Street, NW, Suite 500 
+Washington, DC 20006 
+Phone: 202-654-4510 
+Email: phil.lookadoo@haynesboone.com 
+ 
+Jeremy Weinstein, Esq. 
+Law Offices of Jeremy Weinstein, PC 
+1512 Bonanza Street 
+Walnut Creek, CA 94596 
+Phone: 925-943-2708 
+Email: jweinstein@jweinsteinlaw.com 
+ 
+III. 
+COMMENTS 
+The IECA respectfully offers the following comments. We believe the public interest is 
+best served by creating a regulatory framework in which large loads, focusing primarily on large 
+Data Centers, can be developed expeditiously in the U.S. to ensure that: (A) Data Center 
+development does not move offshore to other countries with a more Data Center-friendly 
+regulatory environment; and (B) the U.S. continues to be a leader in the global race to both develop 
+and implement AI and other advanced computing capabilities. 
+A. BASIC DATA CENTER AND AI TERMINOLOGY 
+A good starting point for this discussion is establishing a common understanding of the 
+certain terms that are used to define and describe Data Centers and AI. 
+Compute. Data Centers produce and sell a service, which is also referred to as a commodity, 
+called “compute.” “Compute” is the processing power of hardware (i.e., chips, such as graphic 
+processing units (“GPUs”)) that runs applications, organizes, processes and retrieves data, and 
+analyzes data, which is often measured in floating-point operations per second (“FLOPS”); 
+“Storage” is the repository where data is saved. A “Stack” is the hardware (i.e., chips or GPUs), 
+the software (i.e., programming languages), and the infrastructure (i.e., the Data Centers and the 
+resources required to run the Data Centers such as cooling equipment, servers, and cables). 
+GPUs/Chips. The GPUs (i.e., computer chips) in Data Centers perform an incredibly large 
+number of calculations (i.e., FLOPS) each second. For example, a MacBook Air laptop computer 
+with an M1 chip has a peak speed of 2.6 trillion calculations per second, which is a speed of 2.6 
+
+--- PAGE 3 ---
+ 
+- 3 - 
+ 
+teraflops. In contrast, the Frontier super-computer at Oak Ridge National Laboratory has a peak 
+speed of 1,679 quadrillion calculations per second, which is a speed of 1,679.82 petaflops. 
+Asynchronous Computing. The GPUs also perform “asynchronous” computing, which 
+means that while the main program is performing one task it can send a thread to perform another 
+task in parallel (i.e., at the same time) and the main program is “not blocked,” i.e., the main 
+program is not required to wait for that task to be completed before resuming its original task. 
+Asynchronous essentially means “not blocking” or not having to wait for an operation to complete 
+before or while performing a different or parallel operation. So-called “threads” are one way of 
+consuming compute asynchronously, which allows a web server to handle multiple user requests 
+simultaneously or a GPU to run a compute-heavy task in parallel with a less compute-intense task. 
+AI. An AI model is a computer program that uses one or more algorithms to learn from 
+data and make predictions or decisions. AI is then a model that consumes compute produced in a 
+Data Center for two primary functions, “training” compute and “inference” compute: 
+“Training compute” is the learning phase where an AI model processes and stores large 
+volumes of data from a dataset to optimize performance by altering its parameters; and 
+“Inference compute” is the thinking phase where a trained AI model is put to 
+application, generating responses from inputs.  
+When a “trained” AI model uses its learned knowledge to analyze new data and produce a 
+prediction or a decision, that prediction or decision is an “inference.” 
+Inference. The “inference” or “operational” phase of AI is the stage where an AI model 
+becomes functional in real-world applications. Consuming “Inference compute” is the process that 
+a trained AI model uses to draw conclusions from data the model has not previously seen. An 
+example would be a self-driving car that recognizes a stop sign on a road it has not previously seen 
+or driven. An “inference” is an AI model viewing new data, performing quadrillions of calculations 
+in a second comparing that new data to the data in its database, and instantly drawing one or more 
+conclusions or making one or more predictions (i.e., inferences) about that new data. 
+Hyperscalers. “Hyperscalers” are large cloud service providers, which can provide services 
+such as computing and storage at the scale required by large enterprises. Hyperscalers operate 
+massive global Data Centers to offer highly scalable and on-demand computing, storage, and 
+networking services, which allow businesses to quickly scale resources up or down and manage 
+large applications. Hyperscalers invest heavily in redundant infrastructure, disaster recovery, and 
+advanced security measures to ensure high availability and protect data. 
+Transient Loads. “Transient Loads” in Data Centers are short-term, high-intensity power 
+fluctuations that can be caused by tasks like intensive computation (e.g., GPU use in AI training) 
+and rapid server load changes. These unpredictable spikes and dips stress the power grid and can 
+cause equipment damage, voltage instability, and safety concerns. To manage them, Data Centers 
+must accurately plan for peak power demand, use advanced grid protection, maintain robust 
+grounding, and consider systems like microgrids and battery storage. 
+
+--- PAGE 4 ---
+ 
+- 4 - 
+ 
+Controllable Dispatch. “Controllable Dispatch,” when used with Data Centers, refers to the 
+ability to remotely control and manage a Data Center's power consumption and operations, often 
+in coordination with the electric grid, to optimize energy usage and costs. This is typically achieved 
+through Data Center automation, smart grid technologies, and demand response programs, 
+allowing a Data Center to shift or reduce its load during peak demand or when electricity prices 
+are high. 
+ 
+B. “COMPUTE” IS BECOMING A COMMODITY, SOLD IN COMMODITY 
+MARKETS, AND SUBJECT TO COMMODITY MARKET RISKS 
+Physical “compute” services produced and sold by Data Centers (or by those renting space 
+in the Data Centers to house their computers) are rapidly becoming somewhat fungible 
+commodities, which can be bought, sold, and traded as physical forward transactions (i.e., no 
+futures, swaps, commodity options, or other derivatives yet) on the Compute Exchange (see 
+https://compute.exchange/).  
+Perhaps in the near future we will also see one or more financial markets form to allow 
+trading of a “futures contract” based on the bid and ask price for such physical market sales of 
+“compute.” Financially-settled swaps and other financial derivatives could then be negotiated with 
+the floating market price for “compute” being set by the markets for futures contracts or physical 
+contracts for “compute.” By buying and selling futures and swaps based on “compute” market 
+prices, both producers and users of “compute” could hedge their exposure to the commercial risks 
+of volatility in the price of “compute” and volatility in the available supply of “compute.”  
+As a result, the rapidly growing number of Data Centers producing largely fungible 
+“compute” services for AI users and other applications could soon be experiencing many of the 
+same market forces faced by other commodity markets, including shortages and surpluses in the 
+available supplies of “compute,” and market price volatility for those buying and selling 
+“compute;” 
+To date, investment in Data Centers and AI has been moving generally in an upward 
+trajectory. However, according to an article on page 10 of the Financial Times (USA edition), 
+dated November 19, 2025: 
+“A majority of global fund managers think companies are overinvesting as market anxiety 
+grows about the sustainability of the artificial intelligence spending boom.” 
+The commoditization of “compute” as the primary product offered for sale by Data Centers 
+is already beginning to influence the economic investment strategies of Data Center developers 
+and users. 
+Initially, Data Center developers pursued power purchase agreements (“PPAs”) or 
+ownership of co-located electric generating facilities that would provide access to reliable firm 
+electric energy supplies that would deliver 100% of each Data Center’s peak electric requirements 
+with an availability of no less than 99.999% (often referred to as “five nines”) during every hour 
+of every day. This extremely high availability was thought to be “essential” to enable a Data Center 
+
+--- PAGE 5 ---
+ 
+- 5 - 
+ 
+to deliver the “compute” service required by Data Center customers purchasing “compute” for AI 
+and other applications. 
+Achieving this “five nines” availability, however, required 100% redundancy of every 
+element of the supply chain that generated and delivered electric energy to the Data Center. Any 
+and every component in that energy supply chain, which could fail and lead to a disruption in 
+deliveries of electric energy to the Data Center had to be duplicated and redundant, so that the 
+duplicate component could be called-on instantly if and when its twin component failed. This 
+meant building two 100 MW electric generators, perhaps each comprised of multiple 20 MW or 
+30 MW generator sets, with two separate natural gas pipelines feeding into the generators, when, 
+in fact, 100 MWh of electric energy was the maximum quantity of electric energy the Data Center 
+would ever consume in any hour. 
+Installing, or entering into a PPA to purchase, 200 MW of electric generating capacity, 
+when only 100 MW is required to operate a Data Center is economically prudent as long as the 
+sales price from selling “compute” generates more in revenues for the Data Center owner than is 
+spent on electric generating capacity. 
+Initially, a proposed Data Center would pay $50 to $75 per MW for installing, constructing, 
+or purchasing electric energy generating capacity, which was less than 1/3 of the cost per MW to 
+be paid by the Data Center’s customers who were buying “compute” for their AI applications. That 
+large “spread” allowed Data Center developers to conclude that requiring redundant components 
+for 100% of the components in any electric energy supply chain was prudent and readily 
+affordable. 
+However, as the number of Data Centers built and brought online begins to approach and 
+exceed the level of demand of Data Center customers seeking to purchase “compute,” that spread 
+will quickly narrow in the commodity markets for “compute.” Eventually the cost of installing 
+100% redundant electricity supply resources will no longer be economic for Data Center owners 
+or tenants. 
+At the same time, greater use and application of AI will likely result in greater efficiencies 
+for GPU/chip operations, which could reduce the net MWh of electric energy required by 
+GPUs/chips to produce the quantities of “compute” required today by Data Center customers. 
+Collectively, these influences are causing some Data Center developers, Data Center users, 
+and power project developers to shift their focus away from 100% redundancy to focus on: (i) 
+improving and implementing Data Center infrastructure management (“DCIM”) software to 
+manage “controllable dispatch,” and (ii) pursuing battery energy storage systems (“BESS”) and 
+other technological means to accommodate the “transient load” swings in the consumption of 
+electric energy by chips/GPUs as and when they are called on by Data Center customers to perform 
+training or inference functions. 
+As a result, while almost unthinkable just a short time ago, Data Centers and their tenants 
+renting space in each Data Center for their computer facilities are now beginning to consider 
+“controllable dispatch” management and more traditional demand-side management tools to 
+reduce the levels of electric energy generating capacity each Data Center feels it must maintain to 
+
+--- PAGE 6 ---
+ 
+- 6 - 
+ 
+meet the needs of its customers buying “compute” produced by its Data Center, rather than simply 
+duplicating 100% of the electric generating capacity supply chain required by each Data Center’s 
+peak usage. 
+In certain select applications, demand-side management and other reductions of Data 
+Center consumption of electric energy during times of stress on the transmission grid, once thought 
+to be unachievable with Data Center loads, appear to be increasing in availability.  We 
+acknowledge, however, that Hyperscalers who maintain cloud storage and disaster recovery 
+systems may still require substantial redundancy. 
+ 
+C. SIMULTANEOUS CONSIDERATION OF THE IMPACTS ON THE 
+TRANSMISSION GRID OF INTERCONNECTING NEW GENERATION 
+AND NEW LARGE LOADS CROSSES TRADITIONAL JURISDICTIONAL 
+LINES, WHICH CAN LEAD TO EITHER “COMBAT” OR 
+“COLLABORATION” AMONG BOTH REGULATORS AND THOSE 
+REGULATED; WE RECOMMEND COLLABORATION 
+Recognition of the jurisdictional intersection between the Commission’s existing rules and 
+regulations that apply to the interconnection of large generators to the nation’s transmission grid 
+in all but the ERCOT region of Texas, and the existing rules and regulations of States and the 
+existing tariffs of State-regulated utilities that traditionally apply to the interconnection of large 
+loads to the nation’s grid is absolutely necessary. Similarly, appreciation of the ongoing efforts of, 
+and collaboration with, State governments and public utility commissions, which have in many 
+States already begun implementing a regulatory framework that has enabled the rapid development 
+of Data Centers in such States, is equally necessary. 
+Similarly, recognition of the Commission’s traditional regulation of sales for resale (i.e., 
+wholesale sales) in interstate commerce of electric energy under Section 205 of the Federal Power 
+Act (FPA) and State regulation of retail sales of electric energy under the laws of each State must 
+be appreciated as the Commission considers establishing rules for the interconnection of large 
+loads to the interstate transmission system. 
+Rather than spending valuable time fighting between the Commission and State regulators 
+over jurisdictional boundaries, we urge all sides to work together to recognize and remedy those 
+circumstances in which the process of interconnecting large loads to the interstate transmission 
+system under State laws is taking an inordinate amount of time and seek ways to expedite the 
+process for interconnecting large loads to the grid. We also urge the Commission to recognize 
+regional differences and not impose a new mandatory interconnection process on those regions 
+experiencing rapid load growth from large loads, which are not experiencing interconnection 
+challenges or delays. Because “speed to market” is critical, we support targeted efforts that 
+minimize jurisdictional conflicts and preserve existing processes in any State where its 
+interconnection processes are effectively avoiding the delays being experienced in other States. 
+In the grid administered by the PJM Interconnection LLC (“PJM”), for example, 
+interconnections of large loads are experiencing significant delays. We understand that PJM and 
+its stakeholders are considering various proposals that are intended to remedy such interconnection 
+
+--- PAGE 7 ---
+ 
+- 7 - 
+ 
+delays. We are aware of one such proposal that has been proposed by the Data Center Coalition 
+(“DCC”), which is called the DCC’s Voluntary, Limited Large Customer Bring Your Own 
+Generation Pathway, as described in the DCC’s slide presentation dated October 24, 2025 
+(“BYOG Pathway”). The DCC brought together both State representatives (i.e., the Governors of 
+Maryland, New Jersey, Pennsylvania, and Virginia regulating the interconnection of loads in each 
+State) and PJM (as the Federal representative regulating the interconnection of generators in those 
+same States) to develop a cross-jurisdictional process for encouraging the simultaneous study of 
+the grid impacts of Data Centers and associated generators for interconnection purposes. 
+Under the DCC’s proposed BYOG Pathway, Data Center applicants will be given an 
+expedited review and approval of their interconnection of both a large load (e.g., a Data Center) 
+and a new electric generator, if both are brought together to the local utility in the “same Locational 
+Deliverability Area,” provided that: 
+(i) 
+large load customers electing BYOG provide “upfront funding for network 
+upgrades” determined to be necessary to access accelerated interconnection; 
+(ii) 
+large load customer brings by PPA or other agreement: (i) a new electric generation 
+resource, (ii) any uprated or expanded existing generation resource, (iii) a 
+generation resource that didn’t clear the previous capacity auction, (iv) a generation 
+resource that undergoes fuel-switching for economic reasons to a more efficient 
+fuel type, or (v) a generating resource with an independent audit finding a 
+compelling economic basis for retirement and approval by the State where it is 
+located; and 
+(iii) 
+the “generation must be one-for-one accredited capacity tied to the large load 
+customer’s ramp schedule.”  
+We submit that a collaborative approach between States and the Commission can produce 
+a process that can simultaneously study both a Data Center and a contractually-associated electric 
+generation resource by joining both (i) the Federal approval of interconnection of the generation 
+resource (through the Commission-regulated LGIP and LGIA process) and (ii) the State approval 
+(through a State-regulated utility) of the interconnection of a new large load. We recommend that 
+the Commission work collaboratively with the States in those markets where the interconnection 
+of Data Centers is experiencing delays. 
+Conversely, we also recognize that in the Southeast and some areas in the West a significant 
+amount of Data Center load growth is occurring without the same large load interconnection delays 
+facing other areas.  In those States, there is no compelling reason to alter the already successful 
+large load interconnection processes for Data Centers in those States. Forcing a mandatory large 
+load interconnection process on those States could lead to unintended consequences, and a less 
+efficient outcome than exists today. Such outcomes could frustrate the goals of “speed to market.” 
+Therefore, we do not believe a one-size-fits-all approach would be appropriate. 
+We support the ANOPR’s proposal to require Data Center applicants and associated 
+electric generation facilities to bear the expense of their related interconnections with the interstate 
+transmission system, so that such costs are not passed on to, and not socialized among, the other 
+
+--- PAGE 8 ---
+ 
+- 8 - 
+ 
+customers served by that portion of the transmission system. This same concept has been applied 
+by the Commission to interconnections of electricity generators for many years and has worked 
+well. This approach also avoids having other users of the transmission system pay for network 
+upgrades and other interconnection costs for generator projects that are speculative and fail to be 
+constructed. The same should be true for Data Center interconnection costs when coupled with a 
+co-located electric generation facility. 
+We fully support the proposal in the ANOPR of simultaneously studying the impacts on 
+the network of one or more large loads (i.e., Data Centers) and one or more associated electric 
+generating facilities as offsetting loads and resources and therefore worthy of expedited 
+consideration and approval as a reasonable approach to addressing the interconnection of Data 
+Centers that co-locate with existing or new electric generation facilities. 
+There are, however, certain additional questions that should be addressed with any such 
+grid-connected Data Center and electric generation facility combination. Under normal operating 
+conditions, the load (i.e., the Data Center) and the accredited capacity of the resource (i.e., the 
+electric generation facility) offset each other and the network impact is negligible. However, some 
+provision should be made for what will happen when the resource (i.e., generator) or the load (i.e., 
+the Data Center) experiences a full or partial outage, whether scheduled or unscheduled.  
+Such a provision should answer the following questions: 
+• If a Data Center with a load profile that consumes, for example, 200 MWh of 
+electric energy during many or most hours of the day suddenly comes on the grid 
+when its co-located electric generator experiences a full or partial outage, how will 
+that additional load be met? 
+• Should the Data Center be required to cease operating (which defeats the purpose 
+of interconnecting with the grid as a backstop)? 
+• Should the Data Center be required to reduce its consumption of electric energy for 
+applications other than the levels necessary to continue producing “compute”? 
+• Should the Data Center be required to use reasonable efforts to direct part or all of 
+its customers’ purchases of “compute” to other Data Centers? 
+• Should any such rules contain an exception or some type of prioritization for Data 
+Centers providing cloud storage and disaster recovery services to its customers? 
+• If a large generator that generates, for example, 200 MWh of electric energy 
+suddenly is delivering its output to the grid when its co-located Data Center 
+experiences a full or partial outage, how will the transmission system be protected 
+from the surge of additional electric energy? 
+• Should the grid’s response to such circumstances be automated? Who should 
+control such automated systems and who should bear the costs of such systems? 
+
+--- PAGE 9 ---
+ 
+- 9 - 
+ 
+We look forward to the discussion and resolution of these questions and other issues as the 
+Commission and other stakeholders contemplate the rules and regulations that the Commission 
+should implement in any proceeding related to the Secretary’s proposed ANOPR. 
+ 
+D. COMMENTS ON SPECIFIC PRINCIPLES FOR REFORM SET FORTH IN 
+THE PROPOSED ANOPR 
+Following the outline set forth in the Secretary’s proposed ANOPR now under 
+consideration by the Commission,2 the IECA offers comments on several, but not all, of the 
+Principles for Reform set forth in the ANOPR. 
+(i) Principles for Reform 
+As set forth in the ANOPR: 
+18. First, to avoid even arguably affecting the States’ jurisdiction over generation 
+facilities, facilities used in local distribution or only for the transmission of electric 
+energy in intrastate commerce, or transmissions consumed by the transmitter, the 
+Commission’s jurisdiction should be limited to interconnections directly to 
+transmission facilities, consistent with the Commission’s seven-factor test.3 
+ 
+IECA Comments on 1st Principle for Reform. 
+ 
+The IECA offers no initial comments on this 1st Principle for Reform, but we reserve the 
+right to submit a response in any Reply Comments the IECA may submit in this proceeding, 
+which are due on or before December 5, 2025. 
+ 
+19. Second, consistent with the Commission’s pro forma LGIP and LGIA, the 
+reforms should only apply to new loads greater than 20 MW and, for hybrid 
+facilities, where the load is greater than 20 MW. We seek comment on alternative 
+thresholds, including whether such a threshold is necessary at all. 
+ 
+IECA Comments on 2nd Principle for Reform. 
+ 
+As noted in our comments above, we do not think this approach should be mandatory in 
+areas of the U.S. where Data Center interconnections are not experiencing delays that may be 
+perceived as excessive. 
+ 
+ 
+2 
+The 
+full 
+text 
+of 
+the 
+proposed 
+ANOPR 
+can 
+be 
+found 
+at: 
+https://www.energy.gov/sites/default/files/2025-10/403%20Large%20Loads%20Letter.pdf and, 
+as noted above, also is posted on the Commission’s eLibrary in this Docket. 
+3 “The seven-factor test enables [the Commission] to identify the “primary function” of a 
+facility. This primary function determines whether the facility is under [the Commission's] 
+jurisdiction.” Cal. Pac. Elec. Co., 133 FERC ¶ 61,018, at P 45 (2010). 
+
+--- PAGE 10 ---
+ 
+- 10 - 
+ 
+In addition, for purposes of expediting interconnection to the transmissions system (i.e., 
+enhancing “speed to market”), we submit that expedited review and approval should be available 
+to all loads (i.e., all Data Centers), not just large Data Centers in excess of any particular size. 
+ 
+Finally, for purposes of protecting the reliability of the transmission system, we note that 
+a load of 20 MW may be perceived as inconsequential and need not require special consideration. 
+Reliability and resource adequacy issues are affected much more by loads of 100 MW or larger, 
+so setting an artificially low threshold could be problematic for purposes of addressing grid 
+reliability. See also our discussion of the 14th Principle for Reform shown below in these 
+Comments.  
+ 
+20. Third, to the extent practicable, load and hybrid facilities should be studied 
+together with generating facilities. Such an approach will allow for efficient siting 
+of loads and generating facilities and thereby minimize the need for costly network 
+upgrades. For example, siting a large load near or at the same point of 
+interconnection as a new generating facility could reduce the network upgrades 
+needed to interconnect only the load or only the generating facility. 
+ 
+IECA Comments on 3rd Principle for Reform. 
+ 
+We support studying load and hybrid facilities together with generating facilities for all the 
+reasons noted above in our comments and as discussed in the Secretary’s proposed ANOPR. We 
+also suggest that such a study could also address “Controllable Dispatch” issues and other 
+questions we noted above in our comments, effectively addressing what happens when one side 
+drops, while the other remains on the grid, and developing a plan for addressing the grid impacts 
+of the generator or Data Center experiencing a scheduled or unscheduled outage. 
+ 
+ 
+21. Fourth, like generating facilities, load and hybrid facilities should be subject to 
+standardized study deposits, readiness requirements, and withdrawal penalties. 
+These provisions deter speculative projects and provide transmission providers 
+with more useful information to more accurately forecast demand on their systems. 
+We seek comment on the extent to which the existing study deposits, readiness 
+requirements, and withdrawal penalties can be adopted. We also seek comment on 
+whether additional commitments or financial penalties would be appropriate. 
+ 
+IECA Comments on 4th Principle for Reform. 
+ 
+The IECA offers no initial comments on this 4th Principle for Reform, but we reserve the 
+right to submit a response in any Reply Comments the IECA may submit in this proceeding, which 
+are due on or before December 5, 2025. 
+ 
+22. Fifth, hybrid facilities should be studied based on the amount of injection and/or 
+withdrawal rights requested. For example, a hybrid facility consisting of a 500 MW 
+load and a 600 MW generating facility may seek no withdrawal rights and 100 MW 
+
+--- PAGE 11 ---
+ 
+- 11 - 
+ 
+of injection rights. This provides incentives for co-location with new generation 
+facilities and ensures efficient buildout of the transmission system. 
+ 
+IECA Comments on 5th Principle for Reform. 
+ 
+The IECA offers no initial comments on this 5th Principle for Reform, but we reserve the 
+right to submit a response in any Reply Comments the IECA may submit in this proceeding, which 
+are due on or before December 5, 2025. 
+ 
+23. Sixth, any hybrid interconnection shall be required to install the system 
+protection facilities necessary to prevent unauthorized injections or withdrawals 
+that exceed the respective rights. We seek comment on whether other operational 
+limitations should be considered. We also seek comment on the minimum technical 
+requirements for such system protection facilities, whether a hybrid interconnection 
+customer should be subject to penalties for unauthorized injections or withdrawals, 
+how any such penalties should be designed, and how such penalties should be 
+allocated to other transmission customers. 
+ 
+IECA Comments on 6th Principle for Reform. 
+ 
+We support requirements to install system protection facilities to prevent unauthorized 
+injections or withdrawals, but we also recognize and support the ability of Data Centers relying on 
+the grid as a backstop source of electric energy when a co-located generator experiences a full or 
+partial outage. If a Data Center is unable to rely on the grid for back-up supply, then these policies 
+would encourage Data Centers to operate as an “island” or micro-grid totally disconnected from 
+the grid, which is probably not the best result for the Data Center or other users of the grid. To 
+further manage these issues, Data Centers could enter into a PPA or other agreement with the local 
+utility or another grid participant for back-up supplies of electric energy whenever their co-located 
+generation facility experiences a scheduled or unscheduled outage. 
+ 
+24. Seventh, the interconnection study of large loads that agree to be curtailable and 
+hybrid facilities that agree to be curtailable and dispatchable should be expedited. 
+The system operator’s ability to control such facilities through curtailment and/or 
+dispatch must be sufficient for the system operator to integrate the facility into both 
+operations and system planning. This ensures the timely and orderly addition of 
+large loads to the transmission system in a safe, reliable, and non-discriminatory 
+manner. We seek comment on whether this should be accomplished through a serial 
+interconnection study process or by some other means. We also seek comment on 
+appropriate deadlines for such an expedited study process, including whether such 
+studies can be completed in 60 days. 
+ 
+IECA Comments on 7th Principle for Reform. 
+ 
+We support the use of “Controllable Dispatch” and other technological means of managing 
+outages or derates of either a Data Center or its associated generation facility. Commission 
+consideration in this or another proceeding of policy guidelines for applications of “Controllable 
+
+--- PAGE 12 ---
+ 
+- 12 - 
+ 
+Dispatch” to Data Centers and co-located generation facilities could be beneficial, which would 
+give Data Center developers, owners, and customers an opportunity to discuss how and to what 
+extent the Data Center’s “Controllable Dispatch” system could be connected to, and utilized to 
+notify, the local utility or other grid operator in real-time if and when such outages or derates occur. 
+ 
+25. Eighth, load and hybrid facilities should be responsible for 100% of the network 
+upgrades that they are assigned through the interconnection studies. We seek 
+comment on whether such costs should be offset through a crediting mechanism 
+and, if so, over how many years. 
+ 
+IECA Comments on 8th Principle for Reform. 
+ 
+As noted above in our comments, we support requiring load and hybrid facilities, including 
+any associated electric generating facilities not sharing an interconnection point with its associated 
+Data Center, to bear all the costs of network upgrades required for their interconnection(s) and we 
+support offsetting such costs through a crediting mechanism as is applicable under the 
+Commissions interconnection rules applicable to generators. 
+ 
+In addition, we submit that to the extent that any new, expanded, or upgraded generation 
+facility is brought to the grid by or with a Data Center, if that generation facility provides benefits 
+to the grid, those benefits could be financially recognized as offsets to other interconnection costs. 
+ 
+26. Ninth, to the extent the interconnection customer is not the transmission owner, 
+the interconnection customer shall be afforded the same (or equivalent) option to 
+build as currently provided to generator interconnection customers. 
+ 
+IECA Comments on 9th Principle for Reform. 
+ 
+We do not object to this concept. 
+ 
+27. Tenth, an existing generating facility that seeks to enter a partial suspension to 
+serve a new load at the same location must go through a system support resource 
+(SSR)/reliability must run (RMR) type study. The study must consider system 
+conditions, including forecasted load growth, at least three years after the proposed 
+suspension date. The partial suspension can only proceed after any network 
+upgrades needed to ensure reliability are placed into service. Any such network 
+upgrades shall be the responsibility of the generating facility. We invite comments 
+on whether and how resource adequacy should be considered in the SSR/RMR type 
+study. 
+ 
+IECA Comments on 10th Principle for Reform. 
+ 
+The IECA offers no initial comments on this 10th Principle for Reform, but we reserve the 
+right to submit a response in any Reply Comments the IECA may submit in this proceeding, which 
+are due on or before December 5, 2025. 
+ 
+
+--- PAGE 13 ---
+ 
+- 13 - 
+ 
+28. Eleventh, utilities serving large loads, including those at hybrid facilities, 
+should be responsible for transmission service based on their withdrawal rights, as 
+that value amount reflects the quantity of capacity and energy that is being 
+transmitted across the transmission system to the load. 
+ 
+IECA Comments on 11th Principle for Reform. 
+ 
+The IECA offers no initial comments on this 11th Principle for Reform, but we reserve the 
+right to submit a response in any Reply Comments the IECA may submit in this proceeding, which 
+are due on or before December 5, 2025. 
+ 
+29. Twelfth, utilities serving large loads, including those at hybrid facilities, should 
+be responsible for ancillary services based on peak demand, without consideration 
+of any co-located generation. Any co-located generating facilities will similarly be 
+fully compensated for the provision of ancillary services. 
+ 
+IECA Comments on 12th Principle for Reform. 
+ 
+The IECA offers no initial comments on this 12th Principle for Reform, but we reserve the 
+right to submit a response in any Reply Comments the IECA may submit in this proceeding, which 
+are due on or before December 5, 2025. 
+ 
+30. Thirteenth, there must be a plan to implement these proposed reforms. We seek 
+comment on appropriate transition plans, including the treatment of large load 
+interconnections that are already being studied for interconnection. 
+ 
+IECA Comments on 13th Principle for Reform. 
+ 
+Regarding “the treatment of large load interconnections that are already being studied for 
+interconnection,” we acknowledge that application of any new Commission rules for such an 
+interconnection could be challenging.  
+ 
+Perhaps the applicant seeking authorization could be offered the choice of whether to 
+proceed under its existing process or under the Commission’s new interconnection process for 
+large loads interconnecting to the interstate transmission system. Recognizing that the 
+interconnection procedures work well in some areas of the U.S. and not so well in other regions, 
+we suggest that any load interconnection program that the Commission may introduce should not 
+be mandatory across the entirety of the U.S., i.e., a one-size-fits-all approach is not the best way 
+forward. 
+ 
+31. Fourteenth, utilities serving large loads must meet all applicable NERC 
+reliability standards and OATT provisions. Utilities and we must be prepared to 
+revise large load interconnection procedures and agreements, as necessary. NERC 
+should review its reliability standards to determine if new registration categories or 
+new or modified reliability standards are required to ensure reliability of the BES. 
+ 
+
+--- PAGE 14 ---
+ 
+- 14 - 
+ 
+IECA Comments on 14th Principle for Reform. 
+We fully support NERC in its efforts to protect the bulk electric system and we suggest 
+that this inquiry relates to our comments on the 2nd Principle for Reform noted above. The grid 
+impacts of a 20 MW load and an associated 20 MW generator (i.e., whether hybrid, co-located, or 
+contractually associated by a PPA or other agreement) are not likely to have much of an impact on 
+the grid reliability issues addressed by NERC. We defer to NERC on issues regarding the reliability 
+of the bulk electric system and look forward to its comments, if any, in this proceeding regarding 
+the size of a Data Center and any associated generator that would lead to reliability concerns, 
+particularly with respect to circumstances in which an outage of either the Data Center or the 
+generator could have significant reliability effects on the rest of the grid. 
+IV. 
+CONCLUSION 
+ 
+The IECA appreciates the opportunity to submit these comments to the Commission. We 
+welcome the opportunity to review initial comments filed by others in this proceeding and look 
+forward to submitting reply comments to the Commission on December 5, 2025.  
+ 
+Please do not hesitate to contact the undersigned with any questions regarding this filing. 
+ 
+Respectfully submitted, 
+ 
+INTERNATIONAL ENERGY CREDIT 
+ASSOCIATION 
+ 
+/s/ Phillip G. Lookadoo__  
+ 
+Jeremy Weinstein, Esq. 
+ 
+ 
+Phillip G. Lookadoo, Esq. 
+Law Offices of Jeremy Weinstein, PC 
+Christian A. Nunez, Esq. 
+1512 Bonanza Street  
+ 
+ 
+Haynes and Boone, LLP 
+Walnut Creek, CA 94596 
+ 
+ 
+888 16th Street, NW, Ste 300 
+925-943-2708  
+ 
+ 
+ 
+Washington, DC 20006 
+jweinstein@jweinsteinlaw.com 
+ 
+(202) 654-4510 
+Phil.lookadoo@haynesboone.com 
+ 
+Its Attorneys 
+ 
+ 
+November 21, 2025 

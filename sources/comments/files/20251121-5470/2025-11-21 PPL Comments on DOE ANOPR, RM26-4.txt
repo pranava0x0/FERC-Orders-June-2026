@@ -1,0 +1,677 @@
+--- PAGE 1 ---
+ 
+1 
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+Interconnection of Large Loads to the 
+Interstate Transmission System 
+Docket No. RM26-4 
+ 
+Initial Comments of the PPL Companies re Advanced Notice of Proposed Rulemaking on 
+the Interconnection of Large Loads to the Interstate Transmission System 
+The transmission-owning subsidiaries of PPL Corporation (“PPL”) (collectively the “PPL 
+Companies”) hereby submit these initial comments in response to the Advanced Notice of Pro-
+posed Rulemaking regarding the Interconnection of Large Loads to the Interstate Transmission 
+System (the “ANOPR”) submitted by the Honorable Chris Wright, Secretary of Energy, and 
+published by the Federal Energy Regulatory Commission (“FERC” or the “Commission”).1 The 
+PPL Companies are PPL Electric Utilities Corporation (“PPL Electric”), Louisville Gas & Elec-
+tric Company (“LG&E”) and Kentucky Utilities (“KU”) (collectively, “LG&E/KU”), and The 
+Narragansett Electric Company d/b/a Rhode Island Energy (“RIE”).  
+I. 
+INTRODUCTION 
+ 
+New large loads, specifically data centers connecting directly to the bulk electric system, 
+present a series of new challenges for the electric industry. In this docket, the Department of En-
+ergy (“DOE”) directs the Commission to consider a new angle on the problem. Rather than focus 
+on resource adequacy challenges, transmission planning, or load forecasting, the Commission is 
+instead directed to assert jurisdiction directly over the interconnection of these large loads, previ-
+ously a matter left to the states by the Federal Power Act and FERC regulations. This is a 
+ 
+1 Interconnection of Large Loads to the Interstate Transmission System, Notice Inviting Comments, 
+Docket No. RM26-4-000 (Oct. 27, 2025).  
+
+--- PAGE 2 ---
+ 
+2 
+ 
+significant request. By asserting federal jurisdiction, FERC would displace not just longstanding 
+state jurisdiction, but the detailed processes, practices, agreements, and precedents developed 
+over decades in each state to answer the myriad and intricate questions of retail load interconnec-
+tion. In some parts of the country, this assertion of jurisdiction may be necessary to accelerate the 
+interconnection of these crucial loads. In others, it may instead slow them significantly. Regard-
+less, if the Commission decides to proceed, it should do so deliberately and with care.  
+ 
+Specific proposals made in the ANOPR warrant a closer look. Some of these proposals 
+will lead to needed changes. For example, in FERC-regulated RTO tariffs that do not provide 
+guidance for how to treat generators with so-called co-located load behind their meters, the Com-
+mission has allowed a gap in regulation with potential reliability risks. The ANOPR proposes 
+changes that will likely improve physical protections for the transmission system and network 
+customers currently at risk. This alone would be a valuable change. The Commission should go 
+further though, looking for ways to discourage netting, which frequently leads to cost subsidiza-
+tion by network customers. It should also encourage an existing shift in practice to more benefi-
+cial co-location arrangements where generators and load locate near each other (or even share a 
+point of interconnection) without shared metering.  
+ 
+Other proposals in the ANOPR may need more development. For example, the proposal 
+to assert jurisdiction to all loads down to 20 MW risks overshooting the mark. This low threshold 
+would bring in not just large data centers connecting to the high voltage bulk electric system, but 
+also snare many longstanding commercial and industrial loads connected to lower voltage trans-
+mission lines. A higher voltage threshold can still meet the Administration’s goals in the 
+ANOPR while minimizing impact on state jurisdiction over existing loads. While the ANOPR 
+attempts to avoid affecting state jurisdiction by limiting the Commission’s jurisdiction to 
+
+--- PAGE 3 ---
+ 
+3 
+ 
+connections to facilities meeting FERC’s seven-factor test for transmission, this may not be 
+enough to avoid jurisdiction conflicts with a load threshold as low as 20 MW.  
+ 
+Finally, some ANOPR proposals—or at least some broad interpretations of them—may 
+warrant further consideration. For example, a proposal that large loads fund 100% of network 
+upgrades related to their interconnection appears on the surface to shield network customers 
+from paying the costs of the new loads. However, adopting such a proposal would transfer sig-
+nificant costs onto the data centers, years before they would be able to recoup them through busi-
+ness operations. This will significantly raise their upfront costs and slow, rather than speed, their 
+interconnection. Further, this change is not necessary to protect network customers from subsi-
+dizing large loads, an important and worthwhile goal. Regular utility ratemaking already pro-
+vides sufficient protections. Unlike upfront charging to customers, utilities recoup costs over 
+decades. As transmission facilities gradually depreciate, they are paid for by the customers actu-
+ally using them—a group that changes over time. Further, new ideas like load guarantees ensure 
+that data centers pay their fair share of costs (easily covering the costs of the required network 
+upgrades), even if nominally charged to all network customers. This is simply a better way to 
+charge for network upgrades than a blunt upfront charge. Similarly, ideas like option to build 
+seem useful on paper to speed load connections, but utility experience with this idea on the gen-
+eration side counsels caution before expanding it. Shifting from well-established utility construc-
+tion to lowest-cost developers eager to offload sites after meeting minimal requirements often 
+raises costs in the long term. And those costs flow to network customers once the utility takes 
+ownership and control of the facility.  
+ 
+Despite these challenges, the ANOPR is a bold vision for a streamlined federal process to 
+speed development of data centers while maintaining affordable, reliable and secure electrical 
+
+--- PAGE 4 ---
+ 
+4 
+ 
+service. Data centers are of geostrategic importance to the United States. They will play an im-
+portant role in both national security and economic development. The Administration should be 
+applauded for continuing to push these ideas to the forefront of the agenda. The PPL Companies 
+encourage the Commission to move forward with the rulemaking process, keeping the Admin-
+istration’s goals firmly in mind. Where we differ with the ANOPR’s language, it is in the spirit 
+of improving the final product rather than opposing a worthwhile effort. PPL thanks Secretary 
+Wright and the Trump Administration for opening this process and we are eager to participate.  
+II. 
+BACKGROUND 
+A. 
+The PPL Companies 
+PPL, headquartered in Allentown, Pennsylvania, is a utility holding company incorpo-
+rated in 1994 in connection with the deregulation of the electricity generation markets in Penn-
+sylvania. PPL was founded to serve as the parent company for PPL Electric, a regulated utility, 
+and to its then affiliates.  
+PPL Electric was founded in 1920 as the Pennsylvania Power & Light Company. PPL 
+Electric is a Pennsylvania corporation and wholly owned indirect subsidiary of PPL. It owns and 
+operates transmission and distribution facilities in 29 counties in eastern and central Pennsylva-
+nia, where it serves approximately 1.4 million customers. PPL Electric was a founding member 
+of PJM Interconnection, L.L.C. (“PJM”). Its transmission system consists of approximately 
+5,000 miles of electric transmission lines, which are integrated into the PJM transmission system. 
+PPL Electric operates and maintains its transmission facilities under the direction of PJM; and 
+PJM provides transmission service over PPL Electric’s transmission facilities under the PJM 
+Open Access Transmission Tariff (“PJM OATT”).  
+PPL Electric is home to one of the most promising areas for data center development in 
+the United States. In addition to the naturally occurring land and water resources in central and 
+
+--- PAGE 5 ---
+ 
+5 
+ 
+eastern Pennsylvania, key fiber optic corridors in the greater Susquehanna Valley make PPL 
+Electric’s territory the perfect location for data centers serving major population centers in the 
+Northeast United States. PPL Electric’s transmission system is also ready for large load intercon-
+nections. PPL Electric has invested billions of dollars in its transmission grid over the last 12 
+years, providing top-quartile reliability for existing customers and industry-leading speed-to-
+market for large loads. This is translating to rapid data center load growth. PPL has publicly re-
+ported over 20 GW of data center development in advanced stages (projects with signed develop-
+ment agreements) in Pennsylvania. Of these, over 5 GW have signed electric service agreements 
+(“ESAs”), the final stage in the process, and are under active construction. PPL Electric’s pro-
+cess provides maximum protection for network customers. Its preliminary agreements ensure 
+that costs are fully reimbursable by data center developers if they do not move forward with the 
+projects. They also include additional customer protections like pre-payments to cover customer 
+costs prior to work being performed and credit support to cover all project upgrade costs charged 
+to network load. The final ESAs include minimum load demand obligations, ensuring that data 
+center customers cover their peak demand on the system, paying the costs of required network 
+upgrades through regular utility rates.  
+LG&E and KU are public utilities and wholly owned indirect subsidiaries of PPL. LG&E 
+is an electric and natural gas utility based in Louisville, Kentucky, and currently serves around 
+436,000 electric customers and 335,000 natural gas customers in the City of Louisville and in 
+sixteen surrounding counties. KU is an electric-only utility based in Lexington, Kentucky, serv-
+ing approximately 545,000 customers in seventy-seven counties in Kentucky and 28,000 custom-
+ers in five counties in Virginia (under the name Old Dominion Power Company). Together, 
+LG&E and KU provide open access transmission service pursuant to the terms and conditions of 
+
+--- PAGE 6 ---
+ 
+6 
+ 
+the LG&E/KU Joint Pro Forma Open Access Transmission Tariff currently on file with the 
+Commission. LG&E and KU are also founding members of the Southeast Energy Exchange 
+Market (“SEEM”). 
+While the extensive growth of large data center loads is a relatively new development in 
+the industry, LG&E/KU has considerable experience in the interconnection of large loads into 
+the LG&E/KU service territory and the integration of large loads into reliable system operations. 
+LG&E and KU are vertically integrated and so this experience extends from the provision of 
+bundled retail load service to the provision of transmission service. In fact, LG&E/KU perform 
+nearly all NERC Registered Entity functions with the exception of Reliability Coordinator for 
+the LG&E and KU service territories. This experience includes designing and operating the 
+LG&E/KU transmission system to integrate large arc furnaces (~150 MWs) that are very dy-
+namic and fluctuate load quickly and often, as well as other large manufacturing plants that are 
+sensitive to system events and potentially impactful to transmission system reliability.  
+RIE is an indirect wholly owned subsidiary of PPL. It is a major natural gas and electric 
+utility serving over 770,000 customers throughout the State of Rhode Island. RIE is a participat-
+ing transmission owner in ISO New England (“ISO-NE”). Its transmission system consists of ap-
+proximately 336 miles of transmission lines, which are under the operational control of ISO-NE 
+and are made available under the terms of the ISO-NE Tariff. Data center development has been 
+slower in New England but RIE’s system is also being studied closely for potential sites.  
+B. 
+The ANOPR 
+ 
+On October 23, 2025, Secretary Wright submitted a letter on behalf of the DOE to the 
+Commission directing it to initiate the attached ANOPR aimed at ensuring the timely intercon-
+nection of large loads. The Secretary reported that the initiative reflected the Trump 
+
+--- PAGE 7 ---
+ 
+7 
+ 
+Administration’s broader effort to reduce regulatory barriers for large loads and generation pro-
+jects seeking to come online. 
+ 
+The ANOPR defined large loads as those exceeding 20 MW and instructed FERC to as-
+sert jurisdiction and “to standardize interconnection procedures and agreements” governing the 
+interconnection of large loads to the transmission system.2 It also included several specific pro-
+posals, including: 
+• 
+Assigning 100% of network upgrade costs to the new loads rather than network 
+customers, 
+• 
+Allowing option to build for large load interconnections, 
+• 
+Standardizing study deposits, readiness requirements, and withdrawal penalties 
+under a federal tariff for load facilities, 
+• 
+Allowing customers to submit joint load and generation interconnection requests 
+for a single point of interconnection (co-location), 
+• 
+Requiring installation of system protection facilities to prevent unauthorized in-
+jections or withdrawals, and 
+• 
+Expediting interconnection studies for large loads that agree to be curtailable and 
+dispatchable. 
+ 
+FERC opened the instant rulemaking docket to solicit comments on the ANOPR.  
+III. 
+COMMENTS 
+ 
+The PPL Companies applaud Secretary Wright and the DOE for their strong support of 
+data center and other large loads. The ongoing discussions in the energy regulatory space about 
+how to serve these new loads commonly miss their criticality to national security and economic 
+development. Perhaps no other form of physical infrastructure is as important for the United 
+States to develop in the 21st Century. Efforts to lower barriers to large loads interconnecting with 
+ 
+2 ANOPR at P 12.  
+
+--- PAGE 8 ---
+ 
+8 
+ 
+the transmission system are timely and welcome. The Commission should take up the call issued 
+by the DOE.  
+ 
+Fully embracing the goals of the ANOPR, the PPL Companies offer the following limited 
+comments based on their experience interconnecting large loads:  
+A. 
+Jurisdiction  
+ 
+At its core, the ANOPR instructs FERC to assert jurisdiction over interconnection proce-
+dures and agreements for large retail loads with the explicit goal of standardizing that process 
+across the country.3 Whether the Commission can go beyond its traditional limitations, where it 
+has clear jurisdiction over transmission in interstate commerce and states retain jurisdiction over 
+the distribution of electricity to end users, is a complex legal question that will likely be decided 
+by the federal courts.  
+ 
+At this early juncture, PPL would only add that an aggressive assertion of federal juris-
+diction over all retail interconnections above a certain voltage threshold may not be necessary to 
+meet the Administration’s goals. Specifically, PPL’s experience is that our states are not slowing 
+data center interconnections down in any measurable way. Instead, the opposite is often true. For 
+example, PPL Electric’s retail interconnection process, as regulated by the Pennsylvania Public 
+Utilities Commission, has worked extremely well. PPL Electric is currently working to intercon-
+nect over 20 GW of data center load under a flexible process where we utilize agreements that 
+incorporate many of the same terms envisioned by the ANOPR.4 PPL Electric’s preliminary 
+agreements ensure that any costs to connect data centers, including engineering and design, real 
+estate acquisition and permitting, and construction, are fully reimbursable by the data center 
+ 
+3 ANOPR at P 12.  
+4 See ANOPR at P 21 (requiring “standardized study deposits, readiness requirements, and withdrawal 
+penalties” for new large loads).  
+
+--- PAGE 9 ---
+ 
+9 
+ 
+developer should it cancel the project. Any work subject to cost in aid of construction (“CIAC”) 
+payments by the customer must be prepaid. Any costs incurred to network upgrades require 
+credit support. Final agreements include load demand obligations protecting network customers 
+should the data center shut down prematurely. Each of these meets or exceeds the proposed 
+terms of the FERC interconnection agreement envisioned by the ANOPR. Pennsylvania’s effi-
+cient oversight has not added a single day to any data center development timeline. Each site is 
+proceeding as quickly as possible given broader issues such as land acquisition/permitting and 
+global supply chains for necessary components. Even if a standard, federalized process makes 
+sense elsewhere, it is simply not able to speed things up in Pennsylvania.  
+ 
+Similarly, in Kentucky, the Public Service Commission (“KPSC”) has not impeded the 
+interconnection of large loads in the LG&E and KU service territories. Recent orders from the 
+KPSC reflect a measured approach that supports the potential development of large loads pro-
+jects in the LG&E and KU service territories without sacrificing protections for retail ratepayers 
+if the projected load does not manifest.5 LG&E and KU are proactively working to enhance their 
+ability to address large load integration at the state level through the filing of a new rate schedule 
+for extremely high load factor service. This filing is currently pending before the KPSC in Case 
+Nos. 2025-00113 and 2025-00114. 
+ 
+To the extent state-regulated interconnections are slowing or preventing data centers from 
+coming online elsewhere in the country, PPL believes there is a more limited solution to address 
+this issue without requiring a one-size-fits-all policy that may be difficult to develop and imple-
+ment. FERC could create a federal backstop for large load interconnections that the utility, or 
+ 
+5 For example, the KPSC issued an Order on October 28, 2025, in Case No. 2025-00045 issuing a certifi-
+cate of public convenience and necessity to construct new generation related to a large load interconnec-
+tion.  
+
+--- PAGE 10 ---
+ 
+10 
+ 
+potentially the customer, could trigger when a state process bogs down. This model already ex-
+ists elsewhere in the FPA structure: the expanded federal siting permitted by the FPA amend-
+ments in the Infrastructure Investment and Jobs Act of 2021 (“IIJA”)6 and the subsequent FERC 
+action in Order No. 1977.7 Moving to a similar process where utilities could utilize a new federal 
+interconnection process if the state slows or rejects data center development would meet the Ad-
+ministration’s goal of facilitating data center interconnection, without unnecessarily interfering 
+in existing utility processes that are working well under state regulation.  
+B. 
+Customer Funding of Network Upgrades 
+ 
+The ANOPR suggests that under federal interconnection rules, “load and hybrid facilities 
+should be responsible for 100% of the network upgrades that they are assigned through intercon-
+nection studies.”8 Should the Commission adopt the ANOPR and assume control over large load 
+interconnection, it should interpret this language consistent with its longstanding policy that net-
+work customers pay for network upgrades.9 It should likewise retain the norm in state-level retail 
+connections that interconnection facilities serving a single customer should be paid for by that 
+customer.10 Drawing instead on its own generator interconnection precedents for direction is 
+more fraught. Cost allocation rules for new generators were developed to reflect a different 
+ 
+6 Pub. L. 117-58, 135 Stat. 429 (2021). 
+7 Applications for Permits to Site Interstate Electric Transmission Facilities, Order No. 1977, 187 FERC 
+¶ 61,069, RM22-7 (May 13, 2024).  
+8 ANOPR at P 25.  
+9 See, e.g., Standardization of Generator Interconnection Agreements and Procedures, Order No. 2003-A, 
+106 FERC ¶ 61,220, RM02-1 (Mar. 5, 2004) at P 424 (charging all transmission customers, rather than 
+merely the interconnection customer, for network upgrades because they “provide a system-wide bene-
+fit”).  
+10 The Commission should broadly be aware that it has no set of precedent for how to adjudicate disputes 
+over retail interconnection. It should generally look to long-established state law for inspiration, rather 
+than the younger, and less-applicable body of generator interconnection precedent FERC has developed 
+since deregulation.  
+
+--- PAGE 11 ---
+ 
+11 
+ 
+paradigm. There, the deregulation of generation markets meant that new independent power pro-
+ducers were joining an existing grid, paid for by network customers, and were charged their costs 
+for doing so.11 
+ 
+More specifically, the Commission should be cautious about ordering this major change 
+to funding for large-load-related network upgrades for two reasons:  
+ 
+First, moving to customer funding of network upgrades would fly in the face of the very 
+Administration policy underlying the ANOPR. Charging large retail loads 100% of the network 
+upgrade costs required to interconnect them to the transmission system would dramatically in-
+crease the Day 1 costs of data center interconnections. This will inevitably lead to slower pro-
+cess, higher costs, and fewer data centers being constructed. This is the exact opposite of the Ad-
+ministration’s laudable policy to revitalize domestic manufacturing and drive American AI inno-
+vation.12 
+ 
+Second, such a change is not necessary. Utilities have cost allocation policies for new 
+load connections developed over decades of experience. These balance the interests of new cus-
+tomers with those of longstanding customers, each with different needs and demands on the sys-
+tem. For example, in Pennsylvania, PPL Electric charges new large load customers directly, 
+through a CIAC, for transmission and distribution costs to directly serve their facilities. This 
+electrical infrastructure provides limited benefits to the larger system, but significant benefits for 
+ 
+11 Even for generator interconnections, there is significant doubt about the appropriateness of charging 
+network upgrades to anyone other than network customers. See Ameren Services Co. v. FERC, 880 F.3d 
+571, 582 (D.C. Cir. 2018) (requiring FERC to explain why generator funding of network upgrades did not 
+run afoul of capital attraction standard); Fed. Power Comm’n v. Hope Nat. Gas Co., 320 U.S. 591, 603, 
+64 S. Ct. 281, 288, 88 L. Ed. 333 (1944) (“the return to the equity owner should be commensurate with 
+returns on investments in other enterprises having corresponding risks. That return, moreover, should be 
+sufficient to assure confidence in the financial integrity of the enterprise, so as to maintain its credit and to 
+attract capital.”).  
+12 See Ltr. Of Hon. Chris Wright Attaching ANOPR (Oct. 23, 2025) at 2.  
+
+--- PAGE 12 ---
+ 
+12 
+ 
+new load using it to come online. It is thus appropriate to charge directly. By contrast, upgrades 
+to the broader transmission network necessary to ensure continued reliability following the inter-
+connection of the new load are funded by the utility and charged to all network customers 
+through normal utility ratemaking. These network upgrades become part of the broader transmis-
+sion network and will be utilized by all network customers for the entire lifetime of the transmis-
+sion asset, likely decades. It has long been considered appropriate for the utility to fund such up-
+grades, slowly depreciate the assets over time, and charge network customers for use of the line 
+through normal ratemaking. Of course, these network customers themselves change over time 
+and include not only “native” load already on the system, but also the large loads that “drive” the 
+need for the upgrade and other loads that come online thereafter.  
+ 
+A quick example shows how this works. When PPL Electric connected a new data center 
+customer in New Kingston, PA, in early 2024, it broke a 500 kV line with a new substation and 
+constructed radial lines from that new substation to the 
+customer’s facility. The work on the 500 kV line and the 
+new substation were charged to network customers, 
+while the radial lines serving the customer were charged 
+directly.13 This allowed the customer to come online 
+quickly and efficiently. PPL Electric funded upgrades 
+that benefitted its network customers. These costs will 
+be paid gradually over decades as the line depreciates, 
+rather than all at once by the data center. Future 
+ 
+13 See Transmission Expansion Advisory Committee – PPL Supplemental Projects (Apr. 2, 2024) at 4, 
+available at https://www.pjm.com/-/media/DotCom/committees-groups/commit-
+tees/teac/2024/20240402/20240402-item-08---ppl-supplemental-projects.ashx.  
+
+--- PAGE 13 ---
+ 
+13 
+ 
+customers will also benefit from the network upgrades, and will pay a small share of their costs. 
+The facilities built specifically to interconnect the new load customer, by contrast, were paid for 
+directly by that customer. They have only nominal benefits for the larger set of network 
+customers interconnected elsewhere on the transmission system and it would be inappropriate to 
+charge for them more broadly.  
+ 
+Even this equitable splitting of costs is not the end of the story, however. Utilities like 
+PPL Electric have developed ways to ensure “native” load benefits even more from new large 
+load connections than it would in the normal course of utility ratemaking. Specifically, before 
+serving them, PPL Electric requires interconnecting large load customers like data centers to en-
+ter into ESAs with provisions guaranteeing they will purchase at least 80% of the aggregate load 
+requested over an initial term of five years. This electric service commitment ensures that the 
+new load pays aggregate transmission service charges that are at least equal to the total expenses 
+incurred by PPL Electric for construction work included in the rate base. In other words, the new 
+large loads pays for the costs of the network upgrades through normal utility rates, even though 
+they are technically being charged to all network customers. This ensures existing customers are 
+held harmless against cost increases: the contract essentially acts as insurance against the new 
+load creating significant costs, then dropping off the system leaving those costs to network cus-
+tomers. Unlike upfront payment by large loads, this process does not disincentivize new load 
+connections and does not violate longstanding ratemaking principles.  
+ 
+While PPL Electric believes its large load cost allocation regime is best for its system 
+(and that it is in the majority among utilities), there is not unanimity in the industry as to how to 
+allocate these costs. Indeed, the practice of PPL’s Kentucky utilities, LG&E and KU, differs 
+from that of PPL Electric. LG&E and KU are in a traditionally regulated retail jurisdiction, in 
+
+--- PAGE 14 ---
+ 
+14 
+ 
+which there is no retail choice and utilities are obligated to provide bundled retail service to end-
+use customers that locate within the utility’s defined service territory. As such, arrangements for 
+interconnections to the transmission system are between LG&E/KU and the applicable load serv-
+ing entity, who is responsible for submitting a transmission service request. Network upgrades 
+are undertaken in accordance with the LG&E/KU Joint Pro Forma Open Access Transmission 
+Tariff through the processing of requests for transmission service submitted by the load serving 
+entities based on their projected load growth.  
+Where LG&E or KU are the load serving entity, the approach taken with respect to sub-
+mitting incremental transmission service requests depends on whether a large load end use cus-
+tomer or a developer is seeking electric service. For entities who have not yet entered into a retail 
+service agreement with either LG&E or KU, the practice is to enter into a reimbursement agree-
+ment in which LG&E or KU move forward with transmission service requests under an agree-
+ment in which the proposed customer or developer is responsible for reimbursing LG&E or KU 
+for the cost of any network upgrades completed in the event the load fails to appear. This struc-
+ture allows for the efficient development of transmission based on customer projected needs, 
+without risk to other ratepayers and in a manner that reflects the primacy of state jurisdiction. 
+C. 
+Option to Build 
+ 
+The ANOPR proposes to afford the new load “the same (or equivalent) option to build as 
+currently provided to generator interconnection customers.”14 This appears to refer FERC’s pol-
+icy, most recently clarified under Order No. 845, that interconnecting generators can construct 
+their own interconnection facilities and certain network upgrades, rather than having the 
+ 
+14 ANOPR at P 26.  
+
+--- PAGE 15 ---
+ 
+15 
+ 
+transmission provider perform the construction.15 The PPL Companies caution that expanding 
+option to build to retail load customers is likely to increase costs and risks of interconnection, 
+again frustrating, rather than furthering, the Administration’s goals.  
+ 
+Utility experience with generator option to build has largely been negative. At best, utili-
+ties needed new and complex processes and carefully negotiated contracts regarding site acquisi-
+tion, environmental permitting, equipment standards, insurance/indemnity, and numerous other 
+provisions to protect themselves and their customers from poor-quality, expensive, and in some 
+cases dangerous, customer-built facilities. In bad cases, utilities have had to take substandard 
+land or equipment with known issues, requiring expensive fixes with unclear avenues for cost 
+recovery. Utility customers have been left to pay for the operations and maintenance costs of fa-
+cilities built on the cheap, rather than to utility standards designed to ensure equipment operates 
+safely and reliably for decades. These issues have grown less common and less severe as the in-
+dustry has grown used to option to build and developed adequate ex ante procedures, but the im-
+position of option to build should not be looked back on as a success story. Adding option to 
+build to the concerns raised around customer funding of network upgrades16 makes the proposed 
+process even more fraught.  
+D. 
+Threshold for Large Loads 
+ 
+The ANOPR proposes that the new process for retail interconnection should apply to 
+large loads of 20 MW or more.17 This relatively low threshold will ensure that FERC regulation 
+reaches not just hyperscalers and other large data centers, but many longstanding industrial and 
+ 
+15 Reform of Generator Interconnection Procedures and Agreements, Order No. 845, 163 FERC ¶ 61,043, 
+RM17-8 (Apr. 19, 2018) at P 85.  
+16 See Section III.B, supra.  
+17 ANOPR at P 19.  
+
+--- PAGE 16 ---
+ 
+16 
+ 
+commercial customers, including many connected at transmission voltages below 100 kV. If the 
+Commission is seeking a lighter touch that only impacts the new class of loads connecting to the 
+bulk electric system, it could consider a higher threshold such as 100 MW, or even 500 MW 
+(thresholds that would still catch many data centers).  
+E. 
+Co-Located Loads 
+ 
+Significant portions of the ANOPR address (and encourage) the prospect of co-locating 
+new generation with large loads.18 FERC action here promises to close the gap in regulation of 
+co-located load arrangements that has persisted since the first large loads were interconnected 
+behind the meter of large wholesale generators several years ago.19 It has been more than a year 
+since the Commission held a Technical Conference on Large Loads Co-Located at Generating 
+Facilities and received testimony from numerous parties and post-technical conference com-
+ments from many more.20 More recently, FERC also opened a Show Cause docket specifically 
+for PJM’s consideration of co-located loads, examining whether the PJM Tariff remains just and 
+reasonable for not providing sufficient guidance as to their treatment.21 These dockets remain 
+open. Commission action to provide guidance on this subject would be welcome.  
+ 
+18 See ANOPR at P 20 (“to the extent practicable, load and hybrid facilities should be studied together 
+with generating facilities”); P 23 (“any hybrid interconnection shall be required to install the system pro-
+tection facilities necessary to prevent unauthorized injections or withdrawals …”); P 29 (“utilities serving 
+large loads … should be responsible for ancillary services based on peak demand, without consideration 
+of any co-located generation”).  
+19 See Large Loads Co-Located at Generating Facilities, Post-Technical Conference Comments of PPL 
+Electric Utilities Corporation, Docket No. AD24-11 (Dec. 9, 2024) (“PPL Electric Post-Technical Confer-
+ence Comments”) at 2 (“We encourage the Commission to act quickly to close these gaps and provide the 
+direction necessary for utilities, generators, and other relevant actors to interconnect these data centers as 
+quickly and efficiently as possible.”).  
+20 See generally, Docket No. AD24-11.  
+21 PJM Interconnection, L.L.C., 190 FERC ¶ 61,115, Docket No. EL25-49 (Feb. 20, 2025) (“Order to 
+Show Cause”).  
+
+--- PAGE 17 ---
+ 
+17 
+ 
+ 
+The PPL Companies will not repeat all the points they made (individually or collectively) 
+in earlier dockets, but wish to reiterate that any Commission action on co-located load should 
+follow two “North Star” principles:  
+(1) 
+Protect the safety and reliability of the bulk electric system; and 
+(2) 
+Prevent subsidization of new loads by network customers.22  
+The PPL Companies also respond to some specific questions in the ANOPR related to co-located 
+loads: 
+ 
+First, the ANOPR expects that co-location will lead to efficient siting and reduced trans-
+mission costs.23 This is often true: Co-location of load with generation can be beneficial for the 
+electric system, especially when new large loads such as data centers—which would be coming 
+online anyway—bring new incremental generation resources in close proximity.24 The ANOPR 
+adopts two options for co-located load: those sited “near … a new generation facility” and those 
+“at the same point of interconnection as a new generation facility,” the latter of which it defines 
+as “hybrid facilities.”25 These two options exactly match two of the “eight potential options for 
+additional large load co-location” presented by PJM in its response to the Order to Show 
+Cause.26 Specifically, the ANOPR describes Option 1, where load becomes traditional network 
+load but is located at the same site as generation, and Option 2, where new load is at the same 
+ 
+22 PJM Interconnection, L.L.C., et al., Answer of PPL Electric Utilities Corporation, Docket No. EL25-
+49, et al. (Apr. 23, 2025) (“PPL Electric Show Cause Answer”) at 1.  
+23 ANOPR at P 20.  
+24 PPL Electric Post-Technical Conference Comments at 2 (“By co-locating on existing generation sites, 
+large data center loads avoid the need for large transmission system upgrades that increase both the costs 
+of the projects and the operational complexity of the grid.”).  
+25 ANOPR at PP 12, 20.  
+26 PJM Interconnection, L.L.C., et al., Answer of PJM Interconnection, L.L.C., Docket No. EL25-49, et 
+al. (Mar. 24, 2025) (“PJM Show Cause Answer”) at 5, 9–11.  
+
+--- PAGE 18 ---
+ 
+18 
+ 
+point of interconnection, but is separately metered.27 Both of these options maximize the benefits 
+of co-location, while minimizing or eliminating the drawbacks. They are clearly the preferred 
+options of all the potential treatments for co-located load.28 Should co-location follow this pat-
+tern, the ANOPR is right to predict it will be beneficial.  
+ 
+Second, the ANOPR suggests hybrid facilities “shall be required to install the system pro-
+tection facilities necessary to prevent unauthorized injections or withdrawals that exceed the re-
+spective rights.”29 Here again, the ANOPR hits the mark exactly. Ever since load was added be-
+hind the meter of the Susquehanna Nuclear generator, interconnected to the PPL Electric system, 
+starting in 2023, the PPL Companies have advocated for improvements to visibility, prevention 
+of inadvertent swings in power, and protections for the transmission system.30 The best way to 
+do this is to ensure that co-located load does not share a point of interconnection with genera-
+tion—or if it does, that it has a separate utility meter and adequate system protections and opera-
+tional parameters.31 Should the Commission use this docket to establish parameters for co-lo-
+cated load, it should look to the records in earlier dockets for examples of operational limitations, 
+minimum technical requirements, and penalties for unauthorized injections or withdrawals nec-
+essary to safely and reliably interconnect co-located resources.32  
+ 
+27 See id. 
+28 See PPL Electric Show Cause Answer at 8 (noting these options “do not impact safety or reliability and 
+do not create any subsidization concerns).  
+29 ANOPR at P 23.  
+30 See PJM Interconnection, L.L.C., Motion for Leave to Answer Protest and Answer of PPL Electric 
+Utilities Corporation, Docket No. ER24-2172 (Jul. 12, 2024) at 2 (defending amendments to Susquehanna 
+interconnection agreement intended to increase protection for transmission system).  
+31 See PPL Electric Show Cause Answer at 10–11 (pointing out that the Commission’s denial of the Sus-
+quehanna interconnection agreement left the PJM Tariff without sufficient protections for behind-the-me-
+ter load).  
+32 See ANOPR at P 23.  
+
+--- PAGE 19 ---
+ 
+19 
+ 
+ 
+Third, the ANOPR addresses transmission service and ancillary services at hybrid facili-
+ties. Specifically, it proposes to require that “utilities serving large loads … should be responsi-
+ble for transmission service based on their withdrawal rights, as that value amount reflects the 
+quantity of capacity and energy that is being transmitted across the transmission system to the 
+load.”33 And it likewise proposes to make “utilities serving large loads … responsible for ancil-
+lary services based on peak demand, without consideration of any co-located generation.”34 The 
+Commission should confirm each of these statements to mean that co-located load must pay its 
+full share of the costs of the transmission system and for ancillary services, without subsidization 
+by network load.  
+ 
+Specifically, charging load for transmission service based on “withdrawal rights” should 
+mean that each load be metered separately from any co-located generator and charged a normal 
+utility rate, which will include transmission service (with details varying based on state law, 
+RTO/ISO status, etc.). Transmission service should not be based on a netted value with the gen-
+erator, as this risks undercharging for use based on the characteristics of the generator and the 
+load. As the PJM Transmission Owners explained in the Show Cause docket:  
+If co-located load is interconnected to the transmission system, it is 
+using the transmission system and must pay for its share of whole-
+sale transmission service. For wholesale transmission service in 
+PJM, the allocation of these wholesale charges should continue to 
+be based on the FERC-approved cost allocation methodologies em-
+ployed today. Specifically, if a customer has the option, capability, 
+or is requesting such capability to serve their full load from the 
+PJM Transmission System, then the full load amount should be in-
+cluded in the LSE’s total load used to determine its share of total 
+system costs, even if they choose not to use that full suite of ser-
+vices at times. No free ridership should be enabled for grid-con-
+nected customers. They are paying to use the transmission system 
+and for the transmission system to be available to them when 
+ 
+33 Id. at P 28.  
+34 Id. at P 29.  
+
+--- PAGE 20 ---
+ 
+20 
+ 
+needed. The fact that their load may not be constant does not re-
+duce the possible need for investment in the transmission system or 
+operation and maintenance costs that transmission owners incur to 
+ensure that the system is available to them and that they receive re-
+liable service.35 
+Likewise, as the ANOPR suggests, ancillary services should be charged to the load based on its 
+peak demand, without netting with the co-located generation.36 Taken together, these treatments 
+of co-located load allow optimal interconnection near generators with minimal subsidization by 
+network customers.  
+ 
+35 PJM Interconnection, L.L.C., et al., Answer of the Indicated PJM Transmission Owners to the Order 
+Instituting the Proceeding Under Section 206 of the Federal Power Act and Consolidating with Other Pro-
+ceedings, Docket No. EL25-49 et al. (Mar. 24, 2025) at 16-17; see also PJM Show Cause Answer at 36 
+(“simple netting may not capture the costs ‘caused’ by co-located data center arrangements”) (cleaned 
+up).  
+36 See PJM TO Comments at 13 (“Assignment of ancillary services to co-located load should be treated 
+like any other load.”).  
+
+--- PAGE 21 ---
+ 
+21 
+ 
+IV. 
+CONCLUSION 
+ 
+The PPL Companies thank Secretary Wright for raising these important issues and the 
+Commission for soliciting comment. FERC should conduct a full rulemaking process, including 
+issuing a more specific notice of proposed rulemaking following up on the high-level issues 
+raised in the ANOPR. The PPL Companies look forward to continuing to participate in this 
+docket and request that these comments be considered as part of the record.  
+ 
+Respectfully submitted,  
+ 
+Steven M. Nadel 
+Senior Counsel 
+PPL Services Corp.  
+645 Hamilton Street, Suite 601 
+Allentown, PA 18101 
+Tel. 610.774.4775  
+SMNadel@pplweb.com 
+ 
+Counsel for the PPL Companies. 
+November 21, 2025 

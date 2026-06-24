@@ -1,0 +1,637 @@
+--- PAGE 1 ---
+4601 Fairfax Drive N, Suite 600 | Arlington, VA 22203 
++1 833 358 3623 
+           fluenceenergy.com 
+1 
+ 
+Docket No. RM26-4-000 
+Filed: November 21, 2025 
+ 
+Debbie-Anne A. Reese 
+ 
+ 
+ 
+Submitted by: 
+Secretary 
+ 
+ 
+ 
+ 
+ 
+Suzanne Leta 
+Federal Energy Regulatory Commission 
+ 
+Vice President, Policy and Advocacy 
+ 
+888 First Street, NE, Room 1A 
+ 
+ 
+Fluence 
+Washington, DC 20426 
+ 
+ 
+ 
+suzanne.leta@fluenceenergy.com  
+ 
+RE: 
+Comments on Advance Notice of Proposed Rulemaking Regarding the 
+Interconnection of Large Loads Pursuant to the Secretary’s Authority Under Section 
+403 of the Department of Energy Organization Act 
+ 
+Fluence appreciates the opportunity to comment on the Advance Notice of Proposed 
+Rulemaking (ANOPR) and is supportive of the Federal Energy Regulatory Commission’s 
+(“FERC” or the “the Commission”) efforts to ensure the timely and orderly interconnection of 
+large loads to the transmission system.  
+ 
+Established in 2018, Fluence is an American company and global market leader in utility-scale 
+energy storage products and services, as well as optimization software for storage.  Fluence 
+provides an ecosystem of offerings, including modular, scalable energy storage products, 
+comprehensive service offerings, and AI-enabled optimization software.  Projects with 
+Fluence’s integrated battery energy storage systems provide power to utilities, companies, 
+and consumers across eight of the 10 U.S. ISO power markets, where 278 million Americans 
+live, and the portfolio of over 80 energy storage projects utilizing our systems in the United 
+States represents more than 1 million operating hours (or 41,667 days).  The company is 
+transforming the way we power our world by helping system operators, utilities, and power 
+producers create more resilient and reliable electric grids.   
+ 
+Fluence is a leader in the onshoring of the grid-scale lithium iron phosphate (LFP) battery 
+energy storage system (BESS) supply chain, and we pride ourselves on best-in-class quality, 
+cybersecurity, and safety: 
+ 
+➢ Fluence can now deliver a domestic content system to customers with every major 
+product and component of the system (including LFP cells) sourced from a U.S. 
+manufacturing facility. 
+
+--- PAGE 2 ---
+ 
+2 
+ 
+➢ Fluence actively manages its supply chain to prevent the use of controls hardware or 
+software sourced from foreign adversary countries, reducing cybersecurity and 
+regulatory risks. 
+➢ Fluence products are designed to meet or exceed relevant industry safety standards.  
+ 
+Utility-scale BESS has arrived and is already playing a key role in the electric grid.  In 2017, the 
+then-Energy Storage Alliance claimed that energy storage could reach 35 gigawatts (GW) of 
+deployment by the end of 2025.1  At the end of 2024, BESS had already reached an operating 
+capacity of 26 GW2 in the United States and was projected to add an additional 18.4 GW in 
+2025.3  It is clear that BESS is proven and available, at scale. 
+ 
+Large loads like data centers often require capacity in the hundreds of megawatts to 
+gigawatt scale and, importantly, require flexible operating characteristics that traditional 
+generation cannot achieve on its own.  BESS is ready to play a critical role in the all-of-the-
+above solution set that is required to meet this demand.   
+ 
+Below, please find comments from Fluence that further illustrate this key role. 
+ 
+FLUENCE COMMENTS ON ANOPR PRINCIPLES 
+ 
+Fluence supports the objectives of the ANOPR to standardize interconnection procedures 
+for large loads and urges the Commission to adopt the following principles in any final action: 
+ 
+The definition of hybrid facilities should include energy storage.  In the ANOPR, “hybrid 
+facility” refers to large loads that intend to connect at the same point as new or existing 
+generation resources. Since the Commission’s procedures for large generator 
+interconnection already recognize energy storage, the definition of “hybrid facility” for large 
+loads should also explicitly include energy storage systems. 
+ 
+Curtailable or flexible loads should have an expedited pathway to interconnection. BESS 
+is uniquely positioned to make large loads curtailable and flexible.  BESS allows large loads to 
+avoid drawing from the grid during peak demand periods by charging during off-peak periods 
+ 
+1 Utility Dive. (n.d.). Energy storage could hit 35 GW by 2025, new white paper says. Retrieved from 
+https://www.utilitydive.com  
+2 U.S. Energy Information Administration. (2025, March 12). U.S. battery capacity increased 66% in 
+2024. Retrieved from https://www.eia.gov/todayinenergy/detail.php?id=64705 
+3 U.S. Energy Information Administration. (2025, February 24). Solar, battery storage to lead new U.S. 
+generating capacity additions in 2025. Retrieved from 
+https://www.eia.gov/todayinenergy/detail.php?id=64586  
+
+--- PAGE 3 ---
+ 
+3 
+ 
+and dispatching during times of peak demand, all while maintaining the characteristics of a 
+dispatchable resource.  This minimizes the system impact from interconnection and can 
+minimize the need for expensive and time-consuming network upgrades.  Given these highly 
+desired attributes, the interconnection of hybrid facilities that include BESS should be 
+expedited.   
+ 
+One example of an RTO/ISO that is easing pathways to interconnection is SPP through its 
+Large Load Interconnection Tariff Revisions, which require High Impact Large Load 
+Generator Assessment requests to be assessed outside the existing interconnection 
+process. 
+ 
+Flexibility commitments should be met by large loads located adjacent to storage 
+resources. The Commission should ensure that load commitments to flexibility can be met 
+by resources physically and/or electrically adjacent to load.  
+ 
+Storage resources should be permitted to charge when they do not trigger the need for 
+an upgrade.  The Commission should strive to facilitate timely interconnection for hybrid 
+facilities that do not require or at least defer network upgrades that delay interconnection.  
+As such, the Commission should ensure any final action allows storage resources to charge  
+will not trigger the need for upgrades.  If unreasonable assumptions are applied to BESS that 
+result in unnecessary and lengthy study processes, it will limit large loads from benefiting 
+from the optionality that BESS can provide, which will ultimately exacerbate interconnection 
+delays as opposed to quickening the pace of interconnection.    
+ 
+MARKET DESIGN PRINCIPLES TO SUPPORT BATTERY STORAGE DEPLOYMENT 
+ 
+All products should be biddable.  BESS must have the ability to submit bids for all market 
+products, including ramping and uncertainty products that are currently priced using loss of 
+opportunity cost (LOO) calculations.  The current LOO framework was designed for fuel-
+based generators with relatively static marginal costs and works adequately in that context.  
+However, applying this same framework to energy storage creates fundamental market 
+design flaws.  
+ 
+Unlike conventional generators where the opportunity cost can be calculated based on fuel 
+costs and relatively straightforward dispatch alternatives, energy storage opportunity costs 
+are inherently multi-interval and state dependent.  The value of energy stored in a battery 
+depends on future market clearing prices, forecast uncertainty, state of charge constraints, 
+cycling limitations, and complex inter-temporal optimization across multiple settlement 
+intervals and potentially multiple days.  When an RTO/ISO forces energy storage to clear 
+
+--- PAGE 4 ---
+ 
+4 
+ 
+ramping or uncertainty products based on administratively determined LOO prices, rather 
+than competitive bids, it systematically undervalues the flexibility these resources provide.  
+ 
+This forced clearing at sub-optimal prices creates several problems.  First, it results in 
+inefficient market outcomes where BESS resources may be committed to lower-value 
+services when they could provide greater system benefit elsewhere.  Second, it suppresses 
+revenue streams that are essential for storage project economics, creating barriers to entry 
+and reducing the incentive to deploy storage where it is most needed.  Third, it prevents 
+price formation that accurately reflects the true opportunity cost of the service being 
+provided, potentially leading to inadequate compensation for flexibility that is increasingly 
+critical to grid reliability.  
+ 
+The Commission should require all market products to be biddable by BESS resources, 
+allowing market-based price formation to reveal the true value of the services being 
+provided.  This approach is consistent with Order 841's requirement for storage to 
+participate in RTO/ISO markets on a comparable basis to other resources and with 
+fundamental competitive market principles.  
+ 
+Multi-segment bids for all biddable products.  BESS resources require multi-segment 
+bidding capability for all market products, not just energy.  While most RTOs/ISOs have 
+implemented multi-segment bidding for energy products, few extend this capability to 
+ancillary services, despite the fact that the economic rationale is even stronger for BESS in 
+these markets.  
+ 
+For fuel-based generators, the marginal cost curve for providing ancillary services is 
+relatively flat – providing 15 MW versus 20 MW of regulation has minimal impact on 
+opportunity costs.  However, for BESS, the opportunity cost can change dramatically with 
+small changes in cleared capacity.  Clearing an additional 5 MW of regulation may cross 
+critical state-of-charge thresholds that materially impact the resource's ability to optimize 
+across subsequent intervals, potentially foreclosing more valuable dispatch opportunities or 
+requiring sub-optimal cycling.  
+ 
+Without multi-segment bidding, BESS resources face a binary choice. They can either bid at 
+prices that reflect their maximum opportunity cost (resulting in frequent non-clearing and 
+inefficient resource utilization) or bid at average opportunity costs (resulting in economic 
+losses when the higher-cost segments clear).  Neither outcome serves the market most 
+efficiently.   
+ 
+Multi-segment bids would allow BESS resources to express their true supply curve, enabling 
+economically efficient dispatch where the resource clears for the quantity where its 
+
+--- PAGE 5 ---
+ 
+5 
+ 
+marginal cost equals the market price.  This would improve both resource economics and 
+system efficiency by ensuring BESS is dispatched to the level where it provides the greatest 
+net benefit.  
+ 
+The Commission should direct RTOs/ISOs to extend multi-segment bidding functionality to 
+all products for which BESS resources are eligible to participate, recognizing that the state-
+dependent opportunity costs of BESS require more granular bidding capability than 
+conventional resources.  
+ 
+BESS resources should have unrestricted ability to operate within battery parameters.  
+RTOs/ISOs are, at times, imposing overly conservative operational restrictions on BESS 
+resources that prevent these assets from providing their full technical capability to the grid.  
+These restrictions take multiple forms, but all share the common characteristic of limiting 
+storage operation below its actual technical parameters due to administrative constraints 
+rather than physical limitations.  
+ 
+One example is CAISO's restriction preventing energy storage from carrying regulation 
+capacity that exceeds the inverter capacity in a single direction.  A 100 MW battery storage 
+facility with bidirectional capability should be able to provide 200 MW of regulation capacity - 
+200 MW upward (discharge) when operating at the lower limit and 200 MW downward 
+(charge) when  operating at the upper limit.  The inverter capacity constraint only applies to 
+net power flow at any given instant, not to the capacity available for regulation over an 
+operating range.  By artificially restricting regulation capacity to equal the inverter rating, 
+CAISO is leaving 50% of the BESS resource's regulation capability unutilized, harming both 
+resource economics and system efficiency.  
+ 
+More broadly, RTOs/ISOs are implementing increasingly aggressive state-of-charge 
+management algorithms that require large State of Charge (SOC) holdbacks to ensure 
+resources can provide awarded capacity.  While prudent SOC management has merit, 
+current implementations are overly conservative and fail to account for the sophisticated 
+optimization and forecasting capabilities that BESS operators employ.  These holdback 
+requirements effectively sterilize significant portions of the battery's capacity, reducing the 
+resource's economic viability and the services available to the grid.  
+ 
+Adding to this challenge, each RTO/ISO has developed its own unique set of operational 
+constraints, clearing algorithms, and SOC management approaches.  This lack of 
+standardization creates substantial barriers for storage developers who must navigate 
+different rule sets across regions, making it difficult to accurately model forward revenue 
+projections, develop consistent operating strategies, or achieve economies of scale in fleet 
+management.  
+
+--- PAGE 6 ---
+ 
+6 
+ 
+ 
+The Commission should direct RTOs/ISOs to eliminate artificial operational limitations and 
+instead focus on three principles: 
+ 
+1. Allow BESS resources to operate across their full technical envelope as defined by 
+manufacturer specifications and resource adequacy commitments; 
+2. Implement performance-based mechanisms that hold resources accountable for 
+delivery rather than imposing operational restrictions; and, 
+3. Provide clear transparency regarding system needs – both in day-ahead and forward 
+markets – with clear pathways for resources to demonstrate their ability to meet 
+those needs.  
+ 
+Award restriction is preferred over SOC management.  Some RTOs/ISOs have 
+implemented systems that directly manage SOC for BESS resources participating in certain 
+markets or products.  While this approach may appear to provide operational certainty, it 
+creates significant problems in practice and represents a fundamental departure from how 
+other market resources are treated.  
+ 
+RTO/ISO SOC management typically occurs at the worst possible time from a financial 
+standpoint, often forcing charging during high-price periods or discharging during low-price 
+periods to maintain SOC targets that may or may not be necessary for reliability.  These 
+management actions are based on system forecasts and assumptions that may not align 
+with individual resource characteristics, capabilities, or the operator's own forecasting and 
+optimization.  The result is forced economic losses for the resource owner while 
+simultaneously reducing overall system efficiency.  
+ 
+This approach also creates moral hazard by socializing the consequences of poor 
+operational decisions.  When the RTO/ISO manages SOC, resources are effectively relieved 
+of responsibility for their own operational optimization.  This can lead to less efficient 
+operators succeeding in the market while more sophisticated operators find their 
+capabilities underutilized, ultimately harming the competitive development of the storage 
+sector.  
+ 
+A more prudent approach is to hold resources accountable for their commitments through 
+performance-based mechanisms and award restrictions.  If a resource commits to provide a 
+service, it should be responsible for managing its own SOC to ensure delivery, with clear 
+consequences for non-performance.  Award restrictions that prevent economically or 
+physically infeasible commitments protect system reliability without unnecessarily 
+intervening in resource operations.  
+ 
+
+--- PAGE 7 ---
+ 
+7 
+ 
+This approach aligns with how conventional resources are treated.  A gas generator is not 
+guaranteed fuel delivery by the RTO/ISO, but it is held accountable for showing up when 
+committed.  The same principle should apply to BESS.  The resource operator is best 
+positioned to manage its "fuel" (state of charge), and market rules should trust operators to 
+do so while maintaining clear penalties for failure to deliver.  
+ 
+The Commission should establish a clear principle that RTOs/ISOs should not directly 
+manage SOC for BESS resources except in emergency conditions.  Instead, market rules 
+should focus on appropriate award restrictions, performance requirements, and penalties 
+that hold resources accountable while allowing them to manage their operations to 
+maximize both private value and system benefit.  
+ 
+New technologies should not be penalized for shortcomings in regulatory structure, 
+operations, and/or modeling.  The integration of energy storage into wholesale markets 
+has followed a troubling pattern repeated across multiple RTOs/ISOs: 
+ 
+1. New technology emerges;  
+2. Existing market rules and systems are applied with minimal adaptation; 
+3. Resources operate under these loose frameworks; 
+4. Operational or market issues emerge; 
+5. The RTO/ISO attributes problems to the technology rather than the market design; 
+and, 
+6. Artificial limitations are imposed that suppress the technology's development and 
+deployment.  
+ 
+This pattern is particularly concerning for BESS because it is not an incremental technology 
+evolution but, rather, it represents a fundamentally different resource type that directly 
+addresses the grid's need for flexibility, fast response, zero-emission energy arbitrage, and 
+the ability to provide multiple services simultaneously or in rapid succession. When market 
+design inadequacies create operational problems, the response should not be to limit the 
+technology but to fix the market design.  
+ 
+The current reactive approach imposes real costs on the energy transition.  Artificial 
+limitations imposed after projects are operational can destroy carefully underwritten 
+business cases, leading to financial distress for early adopters and creating significant 
+regulatory risk that deters future investment.  This directly contradicts the Commission's 
+objectives in Order 841 and subsequent proceedings to remove barriers to storage 
+participation.  
+ 
+
+--- PAGE 8 ---
+ 
+8 
+ 
+RTOs/ISOs must become more proactive and sophisticated in their integration planning for 
+new technologies. This includes conducting thorough ex-ante analysis of how new resource 
+types will interact with existing market rules, developing implementation plans that address 
+known gaps before they create operational problems, maintaining flexibility to adapt quickly 
+when unanticipated issues arise, and defaulting toward market-based solutions and 
+performance requirements rather than administrative limitations when problems do 
+emerge.  
+ 
+The Commission should require RTOs/ISOs to develop and submit technology integration 
+frameworks that demonstrate how they will proactively adapt market rules and systems to 
+accommodate energy storage and other emerging technologies.  These frameworks should 
+be subject to stakeholder review and should include commitments to avoid reflexive 
+limitation of new technologies when market design inadequacies are the root cause of 
+observed problems.  
+ 
+Transmission service charges for energy storage charging.  MISO's practice of charging 
+transmission service for energy storage withdrawals represents a significant barrier to 
+storage development and is potentially in conflict with Order 841's (specifically 841a)  
+directive regarding comparable treatment of energy storage.  
+ 
+When energy storage withdraws energy from the grid, it is providing a valuable service to the 
+system.  This withdrawal may be smoothing net demand, relieving transmission congestion 
+by reducing demand in constrained areas, providing downward energy or regulation service 
+in response to RTO/ISO dispatch, or positioning energy for later dispatch when the system 
+needs it.  This is fundamentally different from serving firm load.  
+ 
+Energy storage charging is dispatchable load responding to market price signals and 
+RTO/ISO dispatch instructions.  It is not firm load that must be served at all times.  The 
+energy withdrawn in one interval may be converted directly into an upward ancillary service 
+in the next interval, providing critical flexibility that enhances grid reliability.  Charging 
+transmission service for these withdrawals creates a substantial economic penalty that 
+discourages exactly the kind of flexible, grid-responsive operation that storage is uniquely 
+positioned to provide.  
+ 
+Order 841 explicitly addresses this issue, stating that when an energy storage resource is 
+providing a service to the market and is dispatched to withdraw energy, it should not be 
+charged transmission service.  While the Commission approved MISO's initial compliance 
+filing, the fundamental tension with Order 841's principles remains.  
+ 
+
+--- PAGE 9 ---
+ 
+9 
+ 
+No other RTO/ISO applies transmission charges to storage charging in the manner MISO 
+does, creating a significant competitive disadvantage for MISO and a barrier to IPP-based 
+storage development in the region.  This is particularly problematic as MISO faces significant 
+reliability challenges that storage could help address, and the region is attempting to 
+integrate large amounts of renewable generation that would benefit from co-located or 
+regional storage deployment.  
+ 
+The Commission should revisit this issue and provide clear guidance that energy storage 
+resources participating in RTO/ISO markets and responding to dispatch instructions should 
+not be assessed transmission charges for withdrawals, consistent with the principles 
+articulated in Order 841.  
+  
+ADDITIONAL COMMENTS ON THE VALUE OF BATTERY STORAGE TO SUPPORT LARGE 
+LOAD INTERCONNECTION 
+ 
+Reliability.  BESS is a reliable capacity resource that can serve loads with far greater 
+flexibility and response speeds than traditional capacity resources.  Energy storage projects 
+can ramp up from 0% to 100% output in milliseconds, have forced outage rates below 1%, are 
+not impacted by fuel logistics or price volatility, and can be sited wherever they are needed.  
+Each of these attributes align with needs posed by data centers that require power supply at 
+higher reliability standards than typical utility customers.  Grid planners and operators must 
+ensure these needs are met through capacity resources like BESS. 
+ 
+BESS also complements traditional generating resources to ensure system reliability during 
+peak conditions, when energy demand surges, or when supply is reduced due to outages.  
+Storage also makes every generating resource – thermal or renewable – more efficient and, 
+therefore, more affordable.  Storage makes thermal plants more efficient by smoothing their 
+output and avoiding frequent start-ups and shutdowns, while it can also firm output from 
+renewable generation. 
+ 
+Affordability.  Battery energy storage enhances affordability by firming intermittent 
+renewable generation, maximizing the efficient use of baseload power, and reducing the 
+need for expensive transmission upgrades, ultimately delivering reliable and cost-effective 
+electricity for large-scale consumers. 
+ 
+• 
+Firming Intermittent Generation.  BESS charges during off-peak hours, when cheap 
+renewable energy is abundant, and discharges during peak demand periods when 
+electricity is at its most expensive.  In addition to firming intermittent renewable 
+generation, BESS deployment necessarily means that fewer peaking plant hours are 
+
+--- PAGE 10 ---
+ 
+10 
+ 
+required, which in turn reduces peaking plant maintenance costs and capital 
+expenditures. 
+• 
+Extending Use of Baseload Power.  Frequent cycling of gas plants leads to increased 
+wear and tear, higher maintenance costs, and reduced operational efficiency. BESS 
+mitigates these issues by absorbing excess generation, allowing gas plants to run 
+steadily and minimizing the need for costly and inefficient start-ups and shutdowns. 
+• 
+Mitigating Need for Transmission Upgrades.  BESS can discharge during peak 
+demand periods, shaving the net load seen by the upstream transmission network 
+and mitigating the need for transmission upgrades; 
+ 
+Storage as a Transmission Asset. As noted above, the Commission considers BESS as 
+equivalent to a generating asset within the context of its Large Generator Interconnection 
+Procedures, and it should do the same within this large loads context to preempt the need to 
+create a new regulatory procedures specific to storage.  Additionally, it is critical for the 
+Commission to recognize the attributes of storage when deployed as a transmission asset. 
+ 
+Large loads, including those associated with data centers, can face multi-year 
+interconnection delays driven by transmission-related constraints.  When strategically 
+deployed, BESS can provide a faster, more flexible, and lower cost alternative to traditional 
+transmission upgrades.  
+ 
+• 
+BESS located near data center loads can discharge during peak demand periods, 
+shaving the net load seen by the upstream transmission network and mitigating the 
+need for transmission upgrades; 
+• 
+BESS can absorb excess power during high-generation periods, lowering real-time 
+flows on a constrained path; 
+• 
+BESS can serve as a fast-response asset capable of absorbing instantaneous 
+oversupply when large loads trip offline, which would otherwise cause voltage 
+disturbances; 
+ 
+BESS as transmission can help to support data centers that increase load when built out 
+over multiple phases, allowing that load growth to occur much faster than new transmission 
+line buildout.   
+ 
+In short, BESS can accelerate large load interconnection by solving many of the transmission 
+constraints that are currently causing interconnection delays.  Strategically sited storage 
+can enable large loads to interconnect years earlier while fully maintaining system reliability. 
+Encourage storage as more than a transmission-only asset.  Most RTOs/ISOs that have 
+addressed energy storage as a transmission asset have imposed restrictions requiring 
+
+--- PAGE 11 ---
+ 
+11 
+ 
+these resources to participate exclusively as transmission assets, commonly referred to as 
+Storage as Transmission-Only Assets (SATOA) in some markets.  While we recognize there 
+are legitimate considerations in designing a framework for dual-use storage, the current 
+transmission-only participation model significantly undervalues these resources and 
+creates barriers to efficient grid solutions. 
+Energy storage is particularly well-suited to solving economic congestion relief and load 
+pocket supply issues.  These transmission challenges share several critical characteristics 
+that make them ideal for storage solutions.  
+1. They are predictable.  The conditions that trigger these constraints are known and 
+can be forecasted with reasonable accuracy based on load patterns, generation 
+dispatch, and weather conditions.   
+2. They are controllable.  The solution involves generation movement in a specific 
+direction (injection or withdrawal) at specific locations.   
+3. They are temporal.  These constraints typically occur during specific hours of the day 
+or seasons of the year, not continuously. 
+The temporal nature of transmission constraints is crucial to understanding the inefficiency 
+of transmission-only participation models. A storage facility sized to address a transmission 
+constraint may only be needed for that purpose during a few hundred hours per year, or in 
+some cases only a few dozen hours.  For a load pocket issue that manifests during summer 
+peak periods, the SATOA may be critical for 3-4 hours per day for 60-90 days per year, 
+totaling perhaps 300 hours annually.  For the remaining 8,460 hours of the year, that asset 
+sits idle under current rules, despite being capable of providing valuable energy, ancillary 
+services, and ramping products to the grid. 
+Because transmission needs are forecastable and the grid operator can pre-plan for these 
+events, there is no operational reason why a storage asset cannot participate in wholesale 
+markets during non-constraint periods while maintaining the capability to perform its 
+transmission function when needed.  The RTO/ISO can establish clear requirements for 
+state-of-charge management and availability during anticipated constraint periods, while 
+allowing the resource to optimize its operations during all other hours.  This is directly 
+analogous to how conventional generation providing transmission support services (such as 
+RMR units) can participate in energy markets when not needed for reliability. 
+The current transmission-only restriction creates several problems that harm both 
+economic efficiency and grid reliability: 
+1. Stranded Capacity.  Hundreds or thousands of megawatt-hours of energy storage 
+capacity sit unused during non-constraint periods when they could be providing 
+
+--- PAGE 12 ---
+ 
+12 
+ 
+critical flexibility to address renewable integration, provide frequency regulation, 
+offer ramping capability, and support voltage control. At a time when system 
+operators consistently emphasize the need for flexible resources, artificially 
+sterilizing storage capacity makes no policy sense. 
+2. Suppressed Investment.  The transmission-only participation model makes storage 
+solutions to transmission problems more expensive than they need to be.  If a 
+developer can only recover costs through transmission rates or contracted capacity 
+payments for transmission service, the project economics require higher payments 
+than if the resource could earn additional revenue from wholesale market 
+participation.  This either makes storage solutions appear less competitive relative to 
+traditional transmission upgrades, or requires ratepayers to pay more than necessary 
+for the same transmission solution. 
+3. Suboptimal Sizing.  Current rules create an incentive to build storage facilities sized 
+exactly to the transmission need and no larger.  However, a more efficient outcome 
+might involve building a larger facility where a portion serves the transmission 
+function while the remainder provides wholesale market services.  For example, if 100 
+MW of storage can solve a transmission constraint, it might be economically optimal 
+to build a 200 MW facility at the same location, reserving 100 MW (plus necessary 
+energy capacity) for the transmission function while allowing the remaining 100 MW 
+to participate fully in wholesale markets.  The incremental cost of additional capacity 
+at an existing site is often relatively low, but current rules provide no pathway for this 
+hybrid model. 
+4. Barrier to Transmission Solutions.  By making storage-based transmission solutions 
+less economic than they could be, the current framework may cause system planners 
+to default to traditional transmission upgrades even when storage would provide a 
+lower-cost or more flexible solution.  This is particularly problematic for transmission 
+constraints that may be temporary (such as those that will be resolved by planned 
+generation retirements or transmission upgrades in future years), where a storage 
+solution could provide a lower-cost bridge than accelerating permanent transmission 
+infrastructure. 
+A superior framework would allow energy storage serving transmission functions to 
+participate in wholesale markets subject to appropriate restrictions that ensure 
+transmission reliability is not compromised. Key elements of such a framework would 
+include: 
+• 
+Availability Requirements.  The storage resource must maintain sufficient state 
+of charge and availability to meet anticipated transmission needs, with 
+requirements established based on historical constraint patterns and forecasted 
+system conditions. 
+
+--- PAGE 13 ---
+ 
+13 
+ 
+• 
+Dispatch Priority.  When the transmission constraint is binding or forecasted to 
+bind within a defined look-ahead period, the transmission function takes priority 
+over wholesale market participation, with the resource obligated to maintain the 
+required state of charge and respond to transmission-related dispatch 
+instructions. 
+• 
+Performance Accountability.  Clear consequences for failure to perform the 
+transmission function when needed, with penalties sufficient to ensure the 
+resource maintains appropriate availability. 
+• 
+Market Participation Parameters.  Outside of constraint periods and look-ahead 
+windows, the resource can submit bids and offers for energy and ancillary 
+services consistent with its available capacity after reserving what is needed for 
+transmission obligations. 
+• 
+Transparent Forecasting.  The RTO/ISO provides clear information about 
+anticipated constraint periods, allowing the resource operator to optimize market 
+participation while maintaining transmission availability. 
+This approach is consistent with how other dual-function resources are treated in wholesale 
+markets and would unlock significant value from storage investments without compromising 
+transmission reliability. It would also better align with Order 841's directive to remove barriers 
+to storage participation and ensure that storage resources can provide all services they are 
+technically capable of providing. 
+The Commission should direct RTOs/ISOs to allow transmission-only participation 
+requirements for energy storage serving transmission functions and, additionally, develop 
+frameworks that allow these resources to provide wholesale market services when not 
+needed for transmission purposes, subject to appropriate availability and performance 
+requirements. 
+In short, unless the Commission directs RTOs/ISOs to allow for energy storage resources to 
+provide both whole market and transmission services, we will be limited in how much value 
+we are able to derive from storage as a transmission asset. 
+ 
+ELECTRIC GRID INFRASTRUCTURE SUPPORTING LARGE LOADS MUST BE DESIGNED TO 
+MAXIMIZE GRID SECURITY 
+ 
+The security of electric grid infrastructure – and especially the portions of that 
+infrastructure that support large loads like data centers and manufacturing – are critical to 
+national security.  As the grid becomes more interconnected, the Commission should 
+consider taking action to address the threat posed by global proliferation of potentially 
+compromised controls hardware and software that is designed or manufactured by entities 
+
+--- PAGE 14 ---
+ 
+14 
+ 
+connected with foreign adversaries.  This is especially true for BESS, which is highly digital, 
+interconnected, and relies on software-based controls.   
+ 
+BESS introduces significant advantages — enabling faster response times, more efficient 
+system management, and better integration of new technologies – as described above.  It is 
+imperative that these assets are secure and protected from cyberattacks as they become a 
+more critical component of the nation’s power infrastructure.  Sabotage of critical 
+components in a single asset via pre-installation or remote deployment of malicious 
+firmware, for example, could have cascading effects on grid reliability.  Systems can and 
+should be designed from the outset to maximize security by eliminating these upstream 
+vulnerabilities in the supply chain.4  
+ 
+Cybersecurity should be embedded into every stage of project development and 
+procurement given the sensitivity of large electric loads.  Fluence encourages FERC to take 
+action to ensure that supply chains supporting the infrastructure powering large loads does 
+not include hardware and software controls from foreign adversaries.  
+ 
+CONCLUSION 
+ 
+BESS must play a critical role if we are to ensure the reliable and efficient interconnection of 
+large loads.  To maximize the value of energy storage, regulatory frameworks must be 
+created that recognize the unique operational aspects of BESS, promote market designs 
+that fully value is flexibility, and move barriers to its deployment as both a generation asset 
+and a transmission asset.  Fluence encourages the Commission to create expedited 
+interconnection pathways for hybrid facilities, eliminate artificial operational and market 
+limitations, and adopt policies that enable dual-use storage to maximize system benefits.  
+Commission action can unlock the full potential of energy storage to meet the evolving 
+demands of the electric grid and large load customers. 
+ 
+ 
+4 Hutton, Katherine, and Weiner, Michael. Cybersecurity in Battery Energy Storage: Mitigating Risks in a 
+Changing Policy Landscape. Fluence, 2025. https://blog.fluenceenergy.com/cybersecurity-battery-
+energy-storage-mitigating-risks-changing-policy-landscape. 

@@ -1,0 +1,1534 @@
+--- PAGE 1 ---
+Page 1 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+Powering Digital Mega-loads: Barriers and 
+Solutions to Accelerate Grid Efficiency, Investment 
+and GDP Growth in the AI Era
+Rodrigo Malheiros Remor 
+MCC Economics & Finance 
+rodrigo@mcceconomics.co.uk
+PJ McCloskey 
+MCC Economics & Finance 
+pj@mcceconomics.co.uk 
+Abstract – This paper examines how rapid growth in data 
+centre demand interacts with electricity systems that are 
+already facing capacity constraints, decarbonisation pressures 
+and heightened political scrutiny. Focusing on data centres as 
+large-load customers, we distinguish them from both small loads 
+and generation assets to highlight the relevant issues 
+accordingly. Drawing on international literature and case 
+studies from Europe and North America, we identify five 
+systemic barriers to timely and efficient data centre integration: 
+long times to connect; cost uncertainty for both developers and 
+utilities; contested grid cost allocation; capacity constraints; and 
+local political and community opposition. For each barrier, we 
+evaluate emerging regulatory and contractual responses, 
+including deep versus shallow charging regimes, upfront fees 
+and contractual safeguards, flexible and non-firm connections, 
+bespoke large-load tariffs, bring-your-own-generation (BYOG) 
+requirements, location incentives, and socio-environmental and 
+economic-impact criteria. We show that these instruments 
+operate through a limited set of underlying channels and that 
+many can address multiple barriers simultaneously. We argue 
+that fairness concepts in connection policy may need to evolve 
+from strict procedural equality towards outcomes that also 
+reflect 
+net-zero, 
+reliability 
+and 
+economic-development 
+objectives. The paper concludes by outlining how regulators, 
+system operators, planners and data centre developers can use 
+the proposed framework as a diagnostic and design tool, and 
+highlights priorities for future empirical research on policy 
+effectiveness, 
+load-flexibility 
+behaviour 
+and 
+long-term 
+community and system impacts. 
+Keywords – large load connection, data centre, grid 
+connection policy, energy regulation, connection charges, 
+interconnection, access, shallow or deep connection charges, 
+utilities 
+I. INTRODUCTION 
+Energy regulators and system operators globally are 
+confronting the consequences of rapid growth in data centre 
+demand on networks already facing capacity constraints and 
+decarbonisation pressures. Long connection queues, disputes 
+over reinforcement cost allocation, and the growing political 
+sensitivity of new large-load projects have exposed structural 
+weaknesses in existing connection regimes. Governments, 
+regulators and utilities have begun to respond, but policy 
+frameworks remain fragmented and underdeveloped. This 
+paper identifies five recurrent barriers to efficient data centre 
+integration and evaluates policy responses observed across 
+multiple jurisdictions. 
+A central distinction for this analysis is between load and 
+generation connections. Load connections refer to demand-
+side connections to the grid, such as households, office 
+buildings 
+and 
+data 
+centres. 
+Meanwhile, 
+generation 
+connections refer to supply-side connections to the grid, 
+mainly power plants. While both have recently undergone 
+regulatory reform in several jurisdictions, this paper focuses 
+on demand-side connection policies, particularly those 
+regulating large-load customers such as demand centres. The 
+economic and system implications of large-load connections 
+differ fundamentally from those of generation projects, 
+particularly in relation to cost allocation, network 
+reinforcement, and system risk.  
+We further distinguish between small and large loads. 
+Small loads refer to users that consume little energy and 
+individually have no meaningful impact on the grid, such as 
+households or small businesses. Conversely, large loads refer 
+to users that consume large amounts of energy, such as 
+industrial complexes and data centres. Large load users have 
+a big impact on the grid, sometimes requiring significant 
+network upgrades to be connected. Due to this larger impact, 
+large loads are inherently riskier to the grid and costlier. Our 
+article therefore focuses on large load policies, and the 
+connection of data centres to electricity grids. 
+Within the category of data centres, important 
+heterogeneity exists. Cloud centres typically operate stable 
+workloads; AI training centres often run at very high 
+utilisation for sustained periods; inference workloads 
+fluctuate with user demand; and crypto-mining operations are 
+highly price-sensitive and capable of rapid ramping. These 
+behaviours translate into different risks for the network, 
+particularly regarding predictability, peak demand, and 
+flexibility potential. Their specialised infrastructure also 
+translates into different levels of stranded-asset risks, with AI 
+and crypto-mining centres presenting higher costs for 
+repurposing and larger risk of obsolescence. Some data 
+centres may contain a mix of these services, but generally all 
+data centres will fall within these three high-level categories. 
+While we acknowledge their differences, the issues and 
+solutions presented in this paper can apply, to a higher or 
+lower degree, to all three types of data centres. 
+Regarding energy networks, we also distinguish between 
+transmission and distribution networks. Transmission 
+networks move bulk power over long distances at high 
+voltages, while distribution networks deliver electricity at 
+lower voltages to final consumers, such as homes, businesses, 
+and most industrial consumers. For electricity to move from 
+generators to final customers, it usually moves through both 
+network levels, although data centres may connect directly to 
+the transmission network. This means that sometimes the 
+energy bottleneck for large load connections to the grid can 
+come from one level or both. Unless otherwise specified, we 
+use “energy networks” in this paper as a generic term which 
+may refer to the individual network level that the data centre 
+is connecting to or the set of distribution and transmission 
+networks.  
+Energy generation also requires some key distinctions in 
+our paper: renewable and non-renewable energy sources; and 
+dispatchable and non-dispatchable generation. Renewable 
+
+--- PAGE 2 ---
+Page 2 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+sources such as wind and solar are low-emission but are 
+variable, and at times produce surplus electricity that would 
+otherwise be curtailed. Non-renewable sources, such as 
+fossil-fuel plants, can provide reliability but conflict with net-
+zero objectives. 
+Dispatchable generation can increase or decrease output 
+on command, providing stable and controllable power. Non-
+dispatchable resources depend on variable conditions and 
+cannot be directed to meet instantaneous demand. Renewable 
+sources such as wind and solar energy are heavily weather-
+dependent and therefore are generally non-dispatchable. 
+Meanwhile, most non-renewable sources such as coal and gas 
+are dispatchable. This creates a natural trade-off between 
+cleanliness and reliability on energy generation. Further, 
+adding batteries can, to some degree, support both clean and 
+reliability objectives, although batteries add further 
+complexity in terms of commercials, policies and 
+engineering. 
+This paper analyses five principal barriers we identified 
+which hinder the efficient implementation of data centres in 
+places that would otherwise be ready to receive them. We 
+acknowledge, however, that other barriers may exist which 
+may or may not be addressed by the solutions we provide. It 
+is also important to note that the prevalence of these barriers 
+varies between countries and regions, and our goal is to 
+present an initial assessment of the current practices and 
+conditions internationally, providing a framework against 
+which local ones can be examined. 
+While the existing literature provides valuable insights 
+into individual aspects of large-load integration (such as tariff 
+design, queue management, flexibility provision, or cost 
+allocation) these issues are often analysed in isolation. This 
+paper contributes by presenting an integrated framework that 
+treats these challenges as interconnected manifestations of 
+underlying structural constraints in electricity systems. We 
+argue that many policy instruments operate through a limited 
+set of economic channels, and therefore reforms should be 
+designed as coherent packages rather than isolated 
+interventions. Mapping barriers and solutions onto shared 
+structural drivers, we provide a diagnostic tool for regulators 
+and policymakers confronting rapid growth in large-load 
+demand. 
+In section II, we examine the current literature on issues 
+faced by data centres, utility companies and utility regulators. 
+Section III explores barriers we have identified and proposes 
+solutions, based on practices observed worldwide. Section IV 
+identifies common themes between the barriers and solutions, 
+identifying common issues between the barriers, how one 
+barrier impacts another, and how the solutions presented can 
+address multiple barriers at once. Finally, in section V we 
+present 
+recommendations 
+for 
+further 
+research 
+and 
+conclusions from our analysis. 
+II. LITERATURE REVIEW 
+The literature on data centre integration into electricity 
+systems has expanded rapidly in recent years, reflecting the 
+acceleration of AI-driven investment and its implications for 
+energy demand. Existing work spans macroeconomic 
+assessments of digital infrastructure investment, analyses of 
+stranded-asset risk, studies of connection charging and cost 
+allocation, 
+and 
+examinations 
+of 
+flexibility, 
+queue 
+management and tariff design for large loads. This section 
+reviews the strands most relevant to large-load connection 
+policy. 
+The Deutsche Bank Research Institute published a report 
+in 2025[1] which identifies AI-related capital expenditure 
+(capex) in data centres as a significant contributor to recent 
+US GDP growth. The report claims that technology-driven 
+investment has played a stabilising macroeconomic role and 
+is likely to remain an important growth channel in the near 
+term. This framing positions data centre development as both 
+an infrastructure issue and a strategic economic priority. For 
+regulators with mandates extending to economic growth and 
+competitiveness, such macroeconomic considerations may 
+influence the willingness to accommodate large-load projects 
+despite associated system risks. 
+On the other hand, Arun[40] presents stranded-asset risk as 
+a systemic vulnerability of the current AI and data centre 
+investment boom. The paper argues that rapid capital 
+expenditure, accelerated GPU depreciation, and uncertain 
+revenue streams from AI inference services may generate 
+cascading financial stress across tenants, data centre 
+operators, and lenders. Highly specialised AI facilities are 
+particularly exposed due to limited repurposing options and 
+rapid technological obsolescence. Crucially, this dynamic 
+may extend beyond digital assets: grid reinforcements, 
+generation capacity and transmission investments undertaken 
+to serve large data centre loads could also become stranded. 
+This financial risk perspective is central to evaluating 
+connection safeguards, contract design and cost-allocation 
+mechanisms. 
+The allocation of connection costs has also been shaped by 
+European regulatory reforms. A 2019 report[2] by the UK 
+Department of Business, Energy and Industrial Strategy 
+(BEIS) summarised European Commission directives 
+encouraging more cost-reflective connection charging, 
+including the recovery of customer-specific reinforcement 
+costs and differentiated treatment of small users. These 
+reforms reflected growing demand from large-load customers 
+and clarified the distinction between shallow and deep 
+charging regimes. Norway subsequently implemented a deep-
+charging framework for larger connections[26], providing an 
+important case study for the cost-allocation mechanisms 
+analysed in Section III. 
+Takci et al highlight the increasing need for flexibility in 
+power systems[3], and argue that data centres, as large but 
+technologically controllable loads, can function as flexibility 
+assets. Through workload shifting, utilisation of backup and 
+storage systems, and participation in ancillary-service 
+markets, data centres can provide demand response, 
+frequency support and congestion relief. Empirical examples 
+from major operators suggest that such capabilities have 
+already been deployed in certain jurisdictions. This literature 
+reframes large-load connections as more than mere sources 
+of demand pressure; they can also be seen as potential 
+contributors to system balancing and decarbonisation, 
+contingent on appropriate regulatory incentives. 
+Cremona and Czyzak[4] argue that grid availability and 
+planning have become decisive determinants of data centre 
+siting in Europe. They document prolonged connection 
+delays in traditional markets such as Frankfurt, London, and 
+Dublin, contrasted with jurisdictions adopting more 
+anticipatory grid investment strategies. The report links AI 
+
+--- PAGE 3 ---
+Page 3 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+infrastructure expansion to grid readiness, emphasising 
+phased or non-firm connection agreements, flexible load 
+management, and siting of facilities near renewable 
+generation or available capacity as critical measures for 
+enabling growth while supporting net-zero objectives. 
+One of the constraints to the establishment of data centres 
+in the UK is the long queue to connect to the grid. Ostler et 
+al[6] document severe backlogs and criticise the traditional 
+“first come, first served” (FCFS) allocation rule for delaying 
+projects with high system value. They propose milestone-
+based 
+accountability, 
+improved 
+transparency 
+and 
+prioritisation mechanisms to accelerate integration of low-
+carbon and flexible resources. Although their analysis centres 
+on generation, the institutional insights regarding queue 
+design and incentive compatibility are directly relevant to 
+large-load connections.  
+A 2025 report for the Department for Energy Security and 
+Net Zero (DESNZ)[9] aimed to measure the impact that 
+growth in data centres would have on energy consumption 
+(not wider issues such as grid connections) in the UK. The 
+study develops a methodology to compare electricity 
+consumption in digital and physical service delivery chains 
+to estimate the net energy impact of digitalisation. It finds that 
+while data centres increase overall electricity demand, they 
+can displace more energy-intensive physical processes, 
+generating a net impact that may be beneficial in terms of 
+reducing 
+overall 
+energy 
+demand. 
+For 
+instance, 
+it 
+demonstrates that digital delivery of books and translations 
+consumes a fraction of the energy used by their physical 
+equivalents, while video streaming and Blu-ray viewing are 
+broadly comparable when manufacturing occurs in the UK.  
+The report also distinguishes between centralised and 
+decentralised energy use, noting that around a quarter of 
+digital energy demand is concentrated in data centres, 
+compared with much higher centralisation in physical 
+manufacturing. Overall, digitalisation is found to improve 
+decarbonisation readiness, since data-driven activities are 
+already fully electrified and therefore well-positioned to align 
+with the UK’s decarbonisation of the power system. 
+The report shows that the energy efficiency of UK data 
+centres has improved markedly over the past decade, with 
+Power Usage Effectiveness (PUE) values converging toward 
+an industry average of 1.3–1.6. Newer hyperscale facilities 
+achieve even lower ratios due to advances in cooling and 
+server optimisation, supported by a moderate UK climate and 
+industry commitments such as the Carbon Neutral Data 
+Centre Pact. However, the report also recognises that 
+efficiency gains are slowing as technical limits are 
+approached, and that emerging high-intensity computing 
+applications, especially Generative AI, could increase both 
+localised power demand and the complexity of grid 
+connections.  
+Pollitt et al[5] explored the possibility of a more market-
+based approach to manage the connection queue in the UK 
+(note that work was funded and supported by one of the UK 
+network companies, UKPN). They focused on the limitations 
+of the current first come first served (FCFS) approach, noting 
+that it does not account for the feasibility, progress, or wider 
+system value of projects seeking connection. The paper 
+explored potential changes to the initial allocation of 
+connection rights, such as establishing auctions or “beauty 
+contest” criteria, and the possibility of introducing a 
+secondary market in which projects could voluntarily trade 
+queue positions.  
+The authors analysed the connection queue by examining 
+how the current FCFS allocation rule operated in practice, 
+comparing its properties against established results in auction 
+theory, mechanism design, and queuing theory. They used 
+available queue data and internal UKPN documents to map 
+the sequence of steps needed to enter the connection queue. 
+This description was then used to assess whether the FCFS 
+process satisfied conditions such as incentive-compatibility, 
+strategy-proofness, and efficient allocation as defined in the 
+literature.  
+To evaluate alternatives, they applied formal models from 
+the auction and queuing theory literature directly to the 
+distribution-level 
+connection 
+characteristics, 
+assessing 
+incentive compatibility, truthfulness, and the feasibility of 
+secondary trading given substation and reinforcement 
+constraints. 
+The paper concluded that the FCFS system is not 
+incentive-compatible 
+and 
+contributes 
+to 
+speculative 
+applications and inefficient queue outcomes. It identified 
+several 
+potential 
+improvements, 
+such 
+as 
+reviewing 
+connection fees, requesting certain connection costs to be 
+paid upfront or certain costly milestones to be met before 
+getting placed in the queue, considering non-price criteria for 
+prioritisation in the connection queue; and enabling voluntary 
+trading of queue positions between customers, subject to 
+restrictions designed to avoid impacts on third parties and to 
+manage risks such as scalping, asymmetric information, and 
+behavioural biases.  
+After updating its connection policy in April 2025[7], 
+Ofgem noted that the demand queue for connections in the 
+UK increased more than its highest projections[8], driven 
+mostly by data centre projects. Ofgem evaluated that this 
+increase needed to be swiftly addressed and planned a series 
+of actions to determine which projects to prioritise and 
+possible ways to speed up the queue without hurting its 
+regulatory duties. 
+In the USA, data centres are posed as one of the main 
+drivers for future increases in energy demand. A 2024 report 
+by the North American Electric Reliability Corporation 
+(NERC) noted[10] that demand growth in Canada and the USA 
+was higher than at any point in the previous twenty years, and 
+that projections of energy growth over the next ten years were 
+still steadily rising. According to the report, in most areas of 
+North America the projected demand growth is mostly driven 
+by data centres and other large commercial and industrial 
+loads, such as hydrogen fuel plants, smelters, manufacturing 
+centres and electric vehicle infrastructure. 
+Satchwell et al[11] built on this assessment by identifying 
+practices in tariff design that could help governments and 
+regulators to achieve their desired policy and financial 
+outcomes. The paper cites policies on: 
+• Eligibility and applicability, such as minimum load 
+requirements and monthly demand charges; 
+• Contract size, pertaining to contracted capacity and 
+load factors; 
+• Contract duration and exit fee; 
+• Generation requirements, mostly focused on 
+renewable sources; 
+
+--- PAGE 4 ---
+Page 4 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+• Other practices such as marginal pricing and 
+economic development payments. 
+The authors assert that these elements can help 
+governments and regulators to reach their goals regarding 
+ensuring resource adequacy and affordability and promoting 
+reductions in pollutant emissions. At the same time, they 
+argue that some of these policies may also help attract new 
+data centre projects, which is desired by some local 
+governments to promote economic growth in their region. 
+III. BARRIERS AND SOLUTIONS 
+The identified barriers and our evaluated solutions are 
+listed below. While their underlying conditions are common, 
+their manifestation varies across countries and regions. 
+Before turning to the specific barriers and solutions, we 
+highlight the broader trade-offs regarding electricity 
+connection policies.  
+Firstly, policies could work in opposing – not 
+complementary – directions. For example, subsidies (from 
+governments or other grid users) that benefit data centre loads 
+could inefficiently increase grid demand for low-value loads 
+at the expense of high-value loads. This reflects the tension 
+between attracting investment and ensuring that new demand 
+generates net system value. While electricity is a standardised 
+product, generation costs (e.g. carbon), and consumption 
+benefits, vary greatly.  
+Secondly, standardised charges – rather than cost-
+reflective pricing – tend to dominate. For example, 
+socialising connection charges (“shallow charges”) means 
+that the connecting party (i.e. a data centre) does not pay the 
+full cost of the network upgrades, so these are instead borne 
+by other grid users (e.g. residential users). 
+Thirdly, regulation – not competition – dominates the 
+policy landscape. As a result, procedural rules and legal 
+precedent can outweigh economic efficiency considerations. 
+By extension, process, precedents, laws and rules can 
+dominate economics, growth, efficiency and business logic. 
+Fourthly, fairness – not efficiency – dominates regulatory 
+rules, as noted by Biggar[36]. Thus, even if a data centre 
+offered higher payments for connection and use of the 
+electricity system, an earlier applicant could challenge 
+preferential treatment on fairness grounds. Relatedly, 
+Khezr[37] suggests auctioning capacity to connecting parties 
+could be more efficient than uniform access pricing (and the 
+related connection queues). 
+Using the UK (specifically Great Britain, GB) as an 
+example, connection policy has historically treated fairness 
+as synonymous with equal treatment and non-discrimination, 
+which in practice has meant allocating queue positions on a 
+FCFS basis. These fairness duties were established long 
+before regulators were given explicit legal obligations to 
+support net zero and economic growth. Ofgem only recently 
+received a statutory net zero duty, along with the powers to 
+enforce it, in the Energy Act 2023[38]. Likewise, the duty to 
+support GDP growth did not apply to Ofgem until 2024[39]. 
+This sequencing means that Ofgem and regulated network 
+companies are expected to prioritise net-zero and growth-
+positive projects, while still avoiding “undue discrimination” 
+between customers, making it legally and conceptually 
+difficult to favour projects that better serve wider policy 
+goals. 
+These tensions help explain why legacy FCFS around the 
+world are being increasingly questioned in the literature. 
+Fairness as strict procedural equality becomes hard to justify 
+when the underlying system is increasingly constrained and 
+when delays impose social and economic costs. In this 
+context, fairness assessments would also consider outcomes, 
+such as reduction of system risk, decarbonisation support, or 
+economic and social benefits. Different jurisdictions have 
+responded 
+differently, 
+reflecting 
+variations 
+in 
+legal 
+frameworks and market design. 
+However, some regions rely more on market-based 
+approaches than others. For example, in the US, competitive 
+processes are reflected in bespoke bilateral contracts. By 
+contrast, most jurisdictions, including the UK, have not 
+generally used auctions to allocate connection capacity, 
+although competitive mechanisms are used elsewhere in the 
+energy sector to allocate scarce rights, suggesting a possible 
+future role if designed carefully. We explore how an auction 
+mechanism would interact with our proposed solutions in 
+section IV. 
+The solutions we present in this paper sit along this 
+spectrum: from heavily regulated rule-based tools to more 
+flexible market-driven mechanisms.  
+A. Time to connect 
+Long connection times typically arise from queue 
+congestion or legal challenges by local opposition. 
+In many instances, local energy grids do not have 
+sufficient capacity to accommodate all connection requests, 
+leading to network assessments and improvements being 
+necessary before new projects are connected. Prolonged 
+waiting times may prompt developers to relocate or abandon 
+projects. 
+In a special report on energy and AI[17], the International 
+Energy Agency (IEA) presents estimates of average time to 
+connect to the grid in some countries. In the UK, the estimates 
+ranged from 5 to 7 years. Meanwhile, in the US, the average 
+time was between 1-3 years, with places like North Virginia 
+presenting an average waiting time of up to 7 years. 
+Proposed solutions 
+a) Requiring data centres to pay upfront  
+Requiring data centres to bear upfront costs could help 
+minimise speculative data centre connection requests. 
+Speculative requests for connections are either not backed by 
+a finalised project but serve as a way to hold a place in queue 
+as the project is developed, or an existing project that applies 
+for connections in multiple locations with the intent of 
+building in only the one that gives them the lowest cost[24]. 
+Speculative applications can inflate connection queues and 
+drive away value-adding projects. Advance charges may 
+create a reasonable and simple barrier and reduce the number 
+of speculative requests although there could be downsides 
+(lack of visibility and rent extraction by monopolies). 
+As part of its new regulator-approved Schedule Data 
+Center Tariff (DCT), the power company AEP Ohio, in the 
+USA, adopted such an approach[25]. For a data centre project 
+to be allowed to remain in the connection queue, it must 
+submit a study request and pay a fee that can go from US$ 
+10,000 to US$ 100,000, depending on the size of the capacity 
+request. The fee must be paid within 45 days, or the applicant 
+forfeits its queue position. Following the load study, 
+
+--- PAGE 5 ---
+Page 5 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+applicants must also commit to reimbursing 100% of buildout 
+costs if the project is cancelled or delayed by more than 12 
+months. 
+These 
+provisions 
+discourage 
+speculative 
+applications and protect existing consumers from stranded 
+upgrade costs. 
+Additionally, charges could reflect the type of data 
+centre, given their expected benefit (or risk) to the local 
+economy and other grid users. For example, Crypto-mining 
+loads may pose higher stranding risk. This could help attract 
+projects that offer more benefits (net zero, economic growth, 
+reducing grid charges for others, etc) at the expense of loads 
+that bring higher risks or costs.  
+b) Flexible Connections 
+As suggested in the paper by Takci et al[3], data centres 
+can be a source of flexibility for the energy grid in the UK. 
+Knittel et al make a similar argument[19] for the USA. The 
+papers mention that data centres can contribute to grid 
+flexibility in the following ways: 
+• Workload shifting: data centres can reschedule 
+computational tasks from peak to off-peak periods, 
+reducing demand during system stress and increasing 
+it when spare capacity exists. Shifting load away 
+from peak periods reduces reliance on peaking 
+generation and allows greater utilisation of baseload 
+and renewable resources, lowering system costs and 
+supporting reliability. In addition, workloads can also 
+be shifted to periods of high renewable output or low 
+market prices, improving the utilisation of zero-
+carbon generation and reducing renewable 
+curtailment. 
+• Leveraging delay-tolerant workloads: many 
+workloads, such as batch processing, analytics, or 
+backups, can tolerate delays without affecting user 
+experience. These tasks can be rescheduled 
+strategically to adjust power demand in line with grid 
+conditions. 
+• Participation in demand-side response schemes: 
+through smart energy management algorithms, data 
+centres can reduce or increase their demand in 
+response to system needs, alleviating congestion, 
+reducing peak loads and supporting real-time 
+balancing requirements. 
+• Spatial workload migration: computational tasks 
+can be moved between geographically distributed 
+data centres, allowing operators to align load with 
+regions where renewable generation is abundant or 
+where the local grid requires additional flexibility. 
+• Bidirectional power flow: modern data centres have 
+the capability not only to draw electricity but also to 
+export surplus power back to the grid, enabling them 
+to function as either flexible demand or auxiliary 
+supply depending on system conditions. 
+• Use of UPS systems for ancillary services and as 
+virtual energy storage: the high-capacity UPS 
+batteries installed for reliability purposes can provide 
+fast frequency response and other ancillary services, 
+contributing rapid stabilising energy to the grid 
+without the need for dedicated storage infrastructure. 
+Data centres can also use their battery capacity as a 
+virtual energy storage resource, displacing the need 
+for standalone grid batteries and contributing to 
+reserve requirements. 
+• Thermal energy storage and thermal inertia: 
+cooling systems and thermal storage tanks can shift 
+cooling demand by storing excess cooling when 
+renewable energy is plentiful or during off-peak 
+periods and discharging it during peaks. This reduces 
+grid stress and supports demand-side flexibility. 
+• Reducing transmission losses and congestion: 
+geographically distributed data centres can provide 
+decentralised flexibility, alleviating power flows on 
+constrained transmission corridors, reducing losses 
+and helping maintain system stability. 
+The authors recognise, however, that government 
+incentives and clear legislation might be needed to push data 
+centres towards reaching their potential on this matter. Takci 
+et al mention that data centre operators can be cautious about 
+participating in demand response or ancillary service markets 
+due to Quality of Service (QoS) and Service Level 
+Agreement (SLA) requirements. Lack of legislation 
+permitting data centre participation in energy markets or 
+ancillary services can also be a deterrent to the 
+implementation of certain features in some countries. 
+To ensure data centres deliver on this potential when the 
+necessary regulatory and grid conditions are met, their 
+connection contracts can include requirements on fulfilment 
+of certain capabilities. Companies that did not want to 
+commit to these duties could be required to only connect on 
+a flexible basis, such as under interruptible provision. 
+However, both Data Centres and Supplier companies in the 
+USA have opposed a proposed imposition of flexible 
+connections by the PJM[20] citing legality, fairness and grid 
+reliability. 
+c) Network company incentives 
+The UK regulator, Ofgem, uses many different types of 
+financial incentive to encourage network companies to 
+provide better connection services.  
+Connection incentives change between price controls 
+(RIIO-2 differs from RIIO-1) and between sectors 
+(distribution companies have different incentives than 
+transmission companies).  
+For example, distribution companies have “connection 
+engagement” and “Time to Connect” incentives across both 
+RIIO-1 and RIIO-2. By contrast, the transmission companies 
+had an incentive regarding “Offers of timely connection” 
+during RIIO-1 which was replaced by two incentives for the 
+RIIO-2 period: “Timely connections” and “Quality of 
+connections satisfaction survey”. Notably, the “Timely 
+connections” incentive was designed to be penalty-only and 
+Ofgem said that a material penalty would apply only if there 
+was significant deterioration or a systematic failing. 
+Further, Ofgem applies guaranteed standards, although 
+currently these apply only to distribution not transmission 
+networks[43]. 
+B. Cost uncertainty 
+The two primary cost uncertainties are construction and 
+connection.  
+Regarding construction uncertainty, there are many 
+costs associated with building a data centre. In addition to 
+regulatory 
+and 
+connection 
+costs, 
+companies 
+face 
+
+--- PAGE 6 ---
+Page 6 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+construction, material and labour costs. According to the 
+Turner & Townsend Data Centre Construction Index Report 
+of 2025[18], most stakeholders expect data centre construction 
+costs to increase by more than 6% in 2026.  
+Crucially construction costs vary greatly by region to 
+such an extent that attracting data centre loads (by offering 
+favourable connection terms, grid subsidies or tax breaks) 
+may be ineffective. Turner & Townsend’s report mentions 
+that due to Tokyo being one of the most expensive places to 
+build data centres in the world, companies are deciding to 
+establish their facilities in other regions of the country, such 
+as Osaka. 
+While location can be a major source for cost 
+differences, the approach to connection charges by the local 
+energy company can also have a large influence on cost 
+uncertainty. In regions where the data centres are required to 
+pay for grid reinforcements (“deep connection charges”), the 
+connection costs are likely to be higher than other regions.  
+In terms of uncertainties to the grid, data centres bring 
+a large risk to the network given their characteristic as large 
+energy users. The possibility of these facilities becoming 
+stranded assets require network companies to consider steps 
+to prevent this risk from affecting their network upgrade 
+investment recovery, preferably without burdening other 
+consumers. This issue is one that affects both cost uncertainty 
+from a utility company point of view and cost allocation from 
+the side of local communities. 
+Proposed Solutions 
+a) Safeguards in connection contracts 
+Data centre tariffs and special contracts could include 
+safeguards[28] regarding contract length, minimum demand, 
+minimum load factors, power factor range, investment bonds, 
+cost 
+reflectivity, 
+planned 
+load-shedding, 
+unplanned 
+interruptible load value, and stated times or durations for 
+interruptions. 
+The utility company in Ohio, AEP, established 
+minimum demand charges within its Data Center Tariff[25], 
+where the monthly billing payment will be a percentage of 
+the contract capacity, or 85% of the customer’s highest 
+previously established monthly billing demand during the 
+previous 11 months, whichever is higher. The power 
+company also implemented a minimum contract length that 
+equals the Load Ramp Period plus eight years, to a maximum 
+of 12 years. 
+These types of measures reduce the risk that data centres 
+pose for local networks, while also providing more accurate 
+load profiles. This reduces cost uncertainties for utility 
+companies, which in turn can provide a lower variability in 
+prices, increasing predictability for data centres’ cost 
+projections. 
+b) Permission for bespoke contracts 
+Data centres could negotiate bespoke contracts with 
+network owners and/or operators, under regulatory approval. 
+These contracts could be used to get the data centres to 
+contribute to the local network to the best of its ability and 
+could result in lower costs for the energy company and lower 
+risks for other grid users. Upon the bilateral arrangement, 
+requesting companies could be prioritised in the connection 
+queue, leading to a more efficient management of the queue 
+as well. 
+ In 2025, Indiana Michigan Power (I&M) and Google 
+filed a special contract[31] with the Indiana Utility Regulatory 
+Commission (IURC) to support the tech company’s new Fort 
+Wayne data centre. The main mechanisms introduced in the 
+contract were a Clean Capacity Arrangement (CCA), which 
+mostly benefits I&M by helping it meet its annual capacity 
+obligations within PJM, and demand response participation, 
+which should benefit other grid users. 
+Under these demand response arrangements, Google 
+agreed to reduce a set amount of its electricity use when 
+requested by I&M during times of high demand, within limits 
+in terms of how often, how long, and how many times per day 
+these interruptions can occur. Additionally, Google has 
+agreed to follow PJM’s emergency demand response rules, 
+which can protect small consumers during certain emergency 
+events from having problems with energy supply.  
+Through these agreements, Google’s participation 
+reduces I&M’s peak load and associated capacity and 
+transmission costs, with resulting credits recovered through 
+I&M’s existing cost-recovery mechanisms. 
+Bespoke contracts could not only lead to better 
+outcomes for the energy system but also reduce cost 
+uncertainty for the data companies. This could be 
+accomplished by pre-emptively negotiating connection 
+conditions, so that bespoke conditions are reflected in grid 
+plans and connection studies.  
+By contrast, whilst counter-productive and counter-
+intuitive, it is entirely possible under a FCFS policy that a 
+data centre that would easily offer substantial benefits to 
+other grid users could be delayed (or lose out entirely) in 
+favour of another connecting party that increases risks and 
+costs for other grid users. 
+C. Grid cost allocation 
+One of the main concerns raised by local communities 
+is how the costs and risks are distributed among grid users.  
+Data centre developers argue that it would be unfair for 
+them to have to cover all the costs for the network upgrade, 
+given that upgrades should ultimately benefit the local grid. 
+By contrast, consumers argue that they should not pay 
+without there being an immediate benefit and that network 
+upgrades are only necessary because of the data centre. 
+In the USA, several states have a shallow connection 
+charge policy. It has been estimated that customers from 
+Illinois, Maryland, New Jersey, Ohio, Pennsylvania, Virginia 
+and West Virginia, collectively paid over US$ 4.3 billion[27] 
+in 2024 for grid investments that were only necessary to 
+accommodate new data centres. This figure demonstrates 
+how cost allocation can affect local communities where 
+companies decide to establish their data centres. 
+While shallow connection charges can help attract new 
+data centre projects, they can have a negative impact in the 
+local community’s cost of living, which could then fuel 
+counter-productive opposition. 
+In 2022, Ofgem moved towards “fully shallow” 
+demand-side connection charges[13], such that “100% of 
+reinforcement costs” are funded by other customers. In 2025 
+the Northern Irish Department for the Economy moved in a 
+similar direction[41]. However, if demand is going up, it may 
+appear odd that the price is going down.  
+Nonetheless, it is not a free lunch for connecting parties 
+– the benefits are capped: Ofgem added a high-cost cap of 
+
+--- PAGE 7 ---
+Page 7 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+£1720/kVA for demand connections[42], while the Utility 
+Regulator in Northern Ireland was less generous, proposing a 
+high-cost cap of £1000/kVA for demand connections. 
+Going in the opposite direction, Norway established in 
+their latest policy update that a deep connection charge would 
+be used for projects with capacity above 1 MW[26]. Under this 
+framework, data centres that have a required capacity above 
+the specified level must cover the costs of any network 
+upgrade that is necessary for their connection to the grid for 
+1st (same capacity level) and 2nd order (one level above) 
+connection costs. 
+Proposed Solutions 
+a) Negotiate or mandate grid connection costs 
+Sometimes, the establishment of a data centre, 
+especially a large one, may require grid improvements or 
+reinforcements. Under shallow connection charges, this cost 
+is likely to be distributed among all consumers, and existing 
+customers will end up indirectly subsidising the new data 
+centre connections, even if those data centre developers are 
+willing to pay for grid improvements and reinforcements in 
+exchange for an earlier connection. 
+There are several ways that deep connection charges 
+can be implemented. They can be mandated by regulators, 
+such as in Norway, or other policy makers. Alternatively, 
+energy companies can make their own connection guidelines 
+establishing deep charges, with the support or authorisation 
+from the regulator.  
+Alternatively, data centre developers could negotiate 
+with network companies and/or seek derogations from 
+standard rules, in exchange for prioritisation in the 
+connection queue. This option would allow negotiations to 
+reflect date-specific and location-specific factors. 
+b) Differentiated rates for data centres 
+Data centres could pay bespoke (e.g. higher) use of 
+system costs. According to a Berkeley report from 2024, data 
+centre loads in the USA are not necessarily flat and may 
+fluctuate over time[30], with different types of servers and 
+tasks leading to different levels of variation in load usage over 
+time. AI data centres, for example, were estimated to operate 
+on average at a relatively stable 80% capacity when 
+performing model training, while operating with a much 
+larger variability, averaging 40% total capacity usage, when 
+doing inference tasks. 
+To compensate for the higher risk to the grid that this 
+variability represents, data centres could voluntarily offer 
+higher grid-use charges, or it could be mandated by regulators 
+or policymakers. Alternatively, these higher rates could be 
+negotiated between respective parties, subject to agreement 
+with the regulator or policy maker. Again, this option could 
+allow negotiations to reflect date-specific and location-
+specific factors.  
+In the USA, Idaho Power Company[29] applies a special 
+tariff to customers whose metered usage exceeds 2 MWh for 
+at least three billing periods and who have a minimum 
+demand of 1 MW. This allows the company to differentiate 
+between smaller, less risky consumers and bigger, riskier 
+ones. 
+Rate differentiation works similarly to deep connection 
+charges in terms of allocating costs, both monetary and in 
+terms of risks, to the originator (data centres) rather than the 
+larger customer base, which is likely to comprise mostly, if 
+not completely, of small energy users. 
+D. Capacity constraints  
+In the UK, the Energy Networks Association (ENA)[14] 
+reported that the queue for demand connections increased to 
+125 GW as of June 2025. This is approximately 18.6% higher 
+than the total generation capacity of the UK grid, according 
+to the most recent data from the Digest of UK Energy 
+Statistics (DUKES)[15], which encompasses the year of 2024. 
+Total installed capacity and total de-rated generation capacity 
+in the UK are 105.4 GW and 71.7 GW, respectively. 
+The situation becomes even more difficult when 
+accounting for capacity differences between transmission and 
+distribution. The queue demands were 97 GW from 
+transmission and 29 GW from distribution. In contrast, total 
+installed capacity is 66.8 GW for transmission and 38.6 GW 
+for distribution. 
+Proposed Solutions 
+a) Bring Your Own Generation (BYOG)  
+Initially, it may seem that the most straightforward 
+solution to capacity constraints is for data centres to bring 
+their own generation or enter into Power Purchase 
+Agreements (PPAs) with generators.   
+However, the American network operator, PJM, reveals 
+several complications in its May 2025 publication, showing 
+8 options for large load co-location, identifying unique grid 
+impacts of each[21]. 
+The Irish regulator, CRU, applies size-specific rules to 
+data centres[12].  
+Small data centres (<1 MVA) follow the standard 
+connection process. No additional policy requirements apply, 
+but the System Operator (SO) must assess whether the 
+connection is in a constrained or unconstrained location. 
+Medium-size data centres (≥1 MVA and <10 MVA) 
+must provide an “autoproducer unit”[44] with de-rated 
+capacity equal to 100% of the site’s maximum import 
+capacity (MIC), operational for the duration of the connection 
+and participating in the wholesale electricity market. They 
+must also meet at least 80% of annual demand with additional 
+renewable electricity generated in Ireland within six years of 
+energisation. Where compliant, no separate Mandatory 
+Demand Curtailment (MDC) requirement applies. 
+Large data centres (≥10 MVA) are subject to the same 
+renewable requirement but must instead provide dispatchable 
+onsite or proximate generation and/or storage, on a de-rated 
+basis, equal to their MIC. This capacity must be separately 
+connected and metered, participate in the wholesale 
+electricity market, and be delivered before the site may 
+operate or ramp to full MIC. Where compliant, no separate 
+MDC requirement applies. 
+Specifically, CRU does not allow a data centre to meet 
+its capacity obligation using remote generation elsewhere in 
+Ireland. However, it does allow remote renewable generation 
+to count toward the 80% renewable requirement. 
+Over time, these arrangements are expected to facilitate 
+timely data centre connections without breaching system 
+security standards, provide a revenue stream that can offset 
+investment costs, and encourage the deployment of future-
+proofed low- or zero-emission technologies, supporting both 
+
+--- PAGE 8 ---
+Page 8 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+operational reliability and the long-term decarbonisation of 
+the electricity system. 
+Overall, the CRU provides a model for regulation-
+driven BYOG, where data centres contribute to net zero 
+targets. However, emissions could still increase rather than 
+decrease on a marginal and peak-period basis because the 
+80% renewable requirement: 1) permits 20% non-renewable 
+generation, 2) does not require temporal matching, 3) does 
+not require locational matching, and 4) is softened by a 6-year 
+glide path. 
+As of July 2025, the Irish government is working on a 
+Private Wires Policy[22] which would facilitate PPAs between 
+data centres and renewable energy generators. This step is 
+considered highly beneficial towards decreasing time to 
+connect, as well as reducing reliance on network supply. 
+b) Location incentives  
+Complementing BYOG initiatives, governments and 
+regulators can also provide incentives for data centres to 
+establish themselves in locations where there is excess, 
+constrained off, renewable energy. This would focus on areas 
+where due to some factor such as low demand or constraints, 
+the energy generated by these renewable sources would be 
+wasted (curtailed or constrained off). 
+Additionally, data centres could be incentivised to settle 
+in areas of high renewable energy potential. Stimulating data 
+centres to be set up in such areas and building alongside them 
+renewable generators with sufficient de-rated capacity in line 
+with their MIC would not only help speed up the connection 
+queue and circumvent capacity constraints but also promote 
+renewable energy and reduce risks for the larger network. 
+E. Local opposition 
+The establishment of data centres can also be met with 
+political resistance from the local population and politicians. 
+This creates an additional constraint to the installation of 
+these facilities, possibly leading to delays or abandoned 
+projects. 
+The Data Center Watch organisation reported[16] that, in 
+the USA, US$ 64 billion worth of investments in data centres 
+have been blocked or delayed by local opposition between 
+May 2024 and March 2025. According to the report, US$ 18 
+billion worth of projects has been completely blocked, while 
+US$ 46 billion have been delayed, due to resistance from 
+residents and activist groups. 
+The report states that the main concerns from local 
+communities go beyond resource allocation, and encompass 
+issues such as visual impact, noise pollution, and effects on 
+property values, as well as negative environmental impacts 
+locally. In Prince William, Virginia, the local community also 
+raised concerns over potential damage to nearby historic 
+sites, and a US$ 24.7 billion project remained, as of March 
+2025, still delayed due to ongoing legal challenges by local 
+groups. 
+While opposing politicians usually mirror the concerns of 
+the local opposition groups, some also cite proposed tax 
+incentives as a reason to dispute data centre projects. 
+This local opposition both reflects and adds to other 
+constraints mentioned in this section, which are more 
+economic in nature. While economic measures can address 
+some concerns, such as strains on energy provision and cost 
+allocation issues, others might need more nuanced solutions, 
+which can add complexity and uncertainty to data centre 
+projects.  
+Proposed Solutions 
+a) Socio-environmental criteria for authorisation and or 
+prioritisation of projects 
+Data centres compliant with net zero initiatives and with 
+the best-performing Economic Impact Assessment (EIA) or 
+highest in-country-value could be prioritised. Compliance 
+with net zero could reflect energy efficiency and emission 
+impact, which would likely be lower for those with renewable 
+energy generators. Additionally, such criteria could be 
+included as requirements for data centres to be allowed to 
+connect to the grid. BYOG could also be used as a criterion 
+for prioritisation in areas where making it a requirement 
+might be unfeasible due to space or infrastructure constraints. 
+The 2023 Energy Efficiency Directive published by the 
+European Parliament[35] provides an example of how a data 
+centre energy efficiency assessment can be made. The 
+document requires data centres to communicate their levels 
+of energy consumption, power utilisation, temperature set 
+points, waste heat utilisation, water usage and use of 
+renewable energy. 
+The goal is to initially use the provided information to 
+set a baseline against which other data centres can be 
+compared and evaluated. Once set, this baseline could also be 
+used to evaluate future data centre projects and establish a 
+minimum efficiency threshold for construction authorisation. 
+In terms of queue management, authorised projects could be 
+prioritised based on expected energy efficiency, incentivising 
+companies to invest low-energy consumption technology, as 
+well as good quality on-site renewable generation. 
+On economic impact, the projects with the highest in-
+country benefits, such as supporting domestic supply chains, 
+manufacturing, labour and local communities, could be 
+prioritised. This would benefit local communities and would 
+align with the mandates that some regulators have on 
+supporting GDP growth. EIA-based criteria would also 
+ensure that the expected benefits to GDP growth of allowed 
+projects would go beyond the direct contributions from the 
+data centre profits and the increased profits from the utility 
+providers. 
+In Indiana, USA, the Indiana Michigan Power (I&M) 
+offers a billing credit[32] to large load users that comply with 
+some conditions. Among them, new customers are required 
+to create at least 20 full time equivalent jobs or invest at least 
+US$ 2 million at the service location. While these are not 
+conditions for connection eligibility or prioritisation in the 
+connection queue, they provide a good example of the type 
+of conditions that could be used for that. 
+Through its Gate 2 methodology[33], UK’s NESO 
+established readiness and strategic alignment criteria for a 
+data centre project to be prioritised in the connection queue. 
+In 
+summary, 
+projects 
+which 
+meet 
+minimum 
+size 
+requirements, have the size boundaries properly set, have 
+secured land rights, and submitted a proper application for 
+planning consent are considered to have met the readiness 
+criteria.  
+For the strategic alignment, one of the following criteria 
+must be met: 
+• 
+The project is eligible for relevant protections; 
+
+--- PAGE 9 ---
+Page 9 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+• 
+The project is aligned to the capacities within 
+the Clean Power 2030 (CP30) Action Plan; 
+• 
+The project is designated as described in the 
+Project Designation Methodology; or 
+• 
+The project is not within scope of the CP30 
+Action Plan and of a specified technology type. 
+While some projects may be exempt from having to 
+comply with environmental guidelines, as determined by the 
+strategic alignment criteria, NESO’s policy showcases how 
+net zero alignment can be used to prioritise projects in the 
+connection queue. 
+In Ontario, Canada, a bill[35] is being discussed which 
+would allow the Ontario Energy Board to establish 
+requirements on economic development and job creation for 
+large energy users to be approved for connection to the 
+network. This initiative promotes benefits for the local 
+community, while mitigating the number of applicants for 
+network connections, thus reducing the size of the connection 
+queue and the pressure on the local grid.  
+ Having projects that align with environmental goals 
+and that support the local economy beyond the data and utility 
+companies would address some of the main concerns of local 
+communities. These measures would also likely improve the 
+perception of fairness by the general population, reducing 
+local opposition to the establishment of data centres in certain 
+regions. 
+IV. COMMON THEMES AND SYSTEMIC INTERACTIONS 
+As we mentioned in the previous section, some barriers 
+may originate from the same underlying issues, which means 
+that solutions that address the issue will likely reduce both 
+barriers at the same time. Whether this is the case in any 
+specific application is highly dependent on the local 
+conditions of the region or country being examined. We 
+present below the most likely overlaps and expected 
+interactions among barriers and proposed solutions. 
+The main issue that affects all five barriers is the structural 
+limitations in the energy network and the fast-paced growth 
+of demand for connections by data centres. Long connection 
+times often arise because local grids are not fit for the number 
+of data centre requests, which in turn increases the need for 
+network upgrades and heightens uncertainty over both timing 
+and cost. This same need for network reinforcement also fuels 
+disputes about grid cost allocation, as communities question 
+whether they should bear the cost of upgrades required 
+primarily for data centre development. Where these cost-
+allocation concerns translate into higher bills or visible 
+system pressures, they can reinforce local opposition, 
+creating further delays through political resistance or legal 
+challenges. In this way, bottlenecks in one part of the system 
+tend to amplify constraints in others. 
+Several proposed solutions therefore interact in mutually 
+reinforcing ways. Measures such as flexible connections, 
+workload shifting, demand-side response, and BYOG can all 
+ease the pressure on grid capacity. By reducing peak demand, 
+supporting balancing requirements, improving utilisation of 
+existing infrastructure and contributing to energy generation, 
+these solutions can help shorten connection queues and 
+reduce the scale of network upgrades required. This in turn 
+can reduce both construction and connection cost uncertainty, 
+while also lowering the perceived burden on local 
+communities, indirectly helping to mitigate opposition. 
+Other solutions operate by targeting the same underlying 
+issue of speculative or poorly sequenced project requests. 
+Requiring data centres to pay fees upfront discourages 
+speculative queue entries and helps ensure that projects 
+progressing through the queue are backed by firm 
+commitments. Similarly, safeguards in connection contracts, 
+such as minimum demand levels, minimum contract lengths 
+and power-factor requirements, reduce risks for energy 
+providers and improve forecasting. These mechanisms make 
+it easier for network companies to plan investments and 
+reduce the risk of stranded upgrades, thereby lowering cost 
+uncertainty and making the grid more resilient to rapid 
+growth in data centre demand. 
+Several solutions work through reducing the scale or 
+location-specific impact of demand. BYOG requirements, for 
+example, can offset part or all the data centre’s demand on 
+the grid. This reduces pressure on constrained networks and 
+can help accelerate connections in areas where capacity is 
+already tight. Location incentives that direct data centres 
+towards regions with surplus renewable generation or 
+previously underutilised energy resources also help alleviate 
+network constraints while supporting renewable-energy 
+utilisation. Both approaches reduce localised grid stress and 
+can limit the number of upgrades required, thereby 
+diminishing conflicts over cost allocation and reducing 
+grounds for local resistance. 
+There are also solutions whose interactions arise through 
+cost allocation and fairness considerations. Deep connection 
+charges ensure that data centres bear the cost of necessary 
+network upgrades, preventing existing consumers from 
+indirectly subsidising new connections. Differentiated rates 
+and bespoke contract structures can align ongoing charges 
+with the system risks and benefits associated with each 
+project. These mechanisms can reduce conflict between 
+developers and communities and may also help manage 
+uncertainty for both sides by clarifying cost responsibilities 
+early in the project lifecycle. 
+Finally, solutions that incorporate socio-environmental 
+criteria for authorisation or prioritisation connect the 
+economic, environmental and social dimensions underlying 
+multiple barriers. Prioritising projects that demonstrate strong 
+energy-efficiency performance, renewable-energy usage, or 
+high economic-impact potential can reduce local resistance 
+by ensuring that the projects most beneficial to communities 
+and national objectives move forward more quickly. Such 
+criteria also support more efficient queue management by 
+reducing the number of applicants and by aligning project 
+selection with broader policy goals, including net-zero 
+commitments and local economic development. Including 
+BYOG as a prioritisation criteria can also add grid capacity 
+benefits to this list. 
+One way to enforce many of the solutions proposed here 
+without a large increase in regulatory burden is by allowing 
+regulator-supervised auctions of connection rights. In such a 
+system, network companies would be able to auction their 
+available capacity to the highest bidders (these being the 
+companies willing to pay the most for new connections or the 
+ones willing to provide the most safeguards), ensuring that 
+the companies that would be allowed to connect are the ones 
+that have the highest projected economic outcome, likely 
+
+--- PAGE 10 ---
+Page 10 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+translating into larger GDP impact. By itself, this would 
+already greatly reduce the number of speculative projects 
+asking to connect to the grid, increasing the efficiency of the 
+connection allocation. Coupled with socio-environmental 
+requirements for participation in the auctions and deep 
+connection charges, this solution can address many barriers 
+while promoting GDP growth and requiring little additional 
+regulation.  
+Overall, many of the solutions proposed address more 
+than one barrier simultaneously because the barriers 
+themselves arise from shared structural issues: insufficient 
+grid capacity, inefficient queue management, uncertainty 
+over costs, and community concerns about fairness and local 
+impact. Understanding these interactions is essential for 
+designing policies that maximise system-wide efficiency and 
+ensure that data centre growth contributes positively to 
+energy security, economic development and environmental 
+goals. 
+V. CONCLUSION AND RECOMMENDATIONS 
+This paper has examined five key barriers to the timely 
+and efficient integration of data centres into electricity 
+systems: 
+long 
+times 
+to 
+connect, 
+cost 
+uncertainty, 
+controversial grid cost allocation, capacity constraints, and 
+local opposition. Drawing on international evidence and 
+emerging regulatory practice, we have outlined relevant 
+policy and contractual tools that can mitigate these barriers, 
+and we have shown that many of them operate through 
+common underlying channels. Structural constraints in 
+network capacity, rapid and concentrated growth in large-
+load demand, and outdated queue management and cost 
+allocation create reinforcing pressures that manifest 
+simultaneously and create these observed barriers. 
+Regulators, system operators and policymakers can use 
+this framework as a diagnostic and design tool. Rather than 
+treating each barrier in isolation, they can start by mapping 
+local conditions against the five barriers, identifying which 
+structural issues are most pronounced (for example, 
+transmission bottlenecks versus distribution constraints, or 
+speculative queues versus genuine capacity shortfalls). From 
+there, the solutions presented can be combined and sequenced 
+in ways that reflect the local technical, regulatory and 
+political constraints. Our key recommendation is that reforms 
+should be designed as a coherent package: queue 
+management, cost allocation, flexibility incentives and socio-
+environmental screening work best cohesively, rather than 
+introduced separately. 
+For regulators and network companies, one practical way 
+to use this work is as a structured checklist when revising 
+large load connections and tariff policies. When assessing a 
+proposed reform, regulators could ask: which of the five 
+barriers is this primarily addressing; which others will it 
+indirectly affect; and what complementary measures are 
+needed to avoid simply shifting the constraint elsewhere in 
+the system? Likewise, case studies such as Norway’s deep 
+charging 
+regime, 
+Ireland’s 
+BYOG-based 
+connection 
+framework, and US bespoke contracts for large data centre 
+customers can be used as reference points but should not be 
+copied wholesale without adapting to local institutional and 
+system conditions. Where bespoke agreements are permitted, 
+regulators may wish to articulate clear principles on 
+transparency, non-discrimination and consumer protection so 
+that individual deals contribute to, rather than undermine, the 
+wider policy objectives. 
+For governments and planning authorities, the findings 
+underline the importance of aligning data centre strategy with 
+energy, industrial and regional development policy. Location 
+incentives, socio-environmental criteria and economic-
+impact requirements can all help steer investment toward 
+areas where data centres can relieve rather than exacerbate 
+network constraints, make better use of surplus or stranded 
+renewable resources, and deliver visible benefits to local 
+communities. However, these instruments should be 
+designed with an explicit awareness of trade-offs: for 
+example, stronger BYOG and net-zero requirements may 
+improve long-term system resilience and decarbonisation 
+outcomes but may also raise short-term costs, discouraging 
+immediate projects. In practice, it may be preferable to 
+provide alternative compliance options, rather than a single 
+prescriptive model, so that companies can more easily 
+comply with the regulation without compromising the 
+benefits to the grid. 
+For data centre developers and operators, the paper 
+highlights both risks and opportunities. Stricter queue 
+management, deep connection charges and enhanced socio-
+environmental criteria will likely increase the burden of due 
+diligence and raise the cost of speculative behaviour. At the 
+same time, developers that can credibly demonstrate flexible 
+load management, voluntarily participate in demand-side 
+response, invest in local generation or storage, and provide 
+consistent local economic benefits may be able to secure 
+faster connections, more favourable contractual terms, and 
+greater political support. The recommendations therefore 
+point toward a more partnership-based model in which large 
+users are not merely grid customers but system resources that 
+actively contribute to reliability and decarbonisation. 
+The analysis also exposes several limitations and gaps in 
+the current evidence base, which shape our recommendations 
+for future research. First, much of the literature and many of 
+the case studies remain descriptive or conceptual. There is a 
+need for quantitative evaluations of the policy instruments 
+using robust counterfactual methods. Future work could, for 
+example, compare regions that have implemented different 
+combinations of these tools, examining impacts on 
+connection times, grid investment costs, consumer tariffs, 
+and the pace and composition of data centre deployment. 
+Second, some of the papers we analysed have shown the 
+importance of load profiles and flexibility potential, but 
+empirical evidence on how different types of data centres 
+(data centres, AI facilities, crypto-mining and mixed-use 
+facilities) behave under different tariff and regulatory 
+regimes remains limited. Further research could examine 
+these load profiles in more detail, quantify their contribution 
+to system flexibility under realistic operational constraints, 
+and assess the risks to the grid that each type poses.  
+Additionally, we note there is relatively little systematic 
+evidence on how different types of data centres affect 
+community welfare and long-term regional development. 
+Future research could focus on the impact of each type of data 
+centre and quantitative tariff-impact assessments under 
+different regulatory models. This would help policymakers to 
+better estimate the advantages of attracting data centres and 
+regulators to calibrate contract safeguards, flexibility 
+obligations and incentive schemes more precisely. 
+
+--- PAGE 11 ---
+Page 11 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+Finally, future work could explore the impact on net zero 
+goals of data centre integration under different energy 
+transition pathways. Scenario analyses that jointly model data 
+centre 
+growth, 
+renewable 
+deployment, 
+network 
+reinforcement, and connection policies would allow decision-
+makers to understand long-term trade-offs and path 
+dependencies. Such analyses could also incorporate 
+uncertainty around technology costs, AI demand growth and 
+regulatory responses, helping to evaluate the robustness of 
+policy packages. 
+In summary, the rapid growth of data centre demand is 
+not inherently incompatible with grid reliability, affordability 
+or net-zero objectives, but it does require a deliberate and 
+integrated policy response. By viewing the barriers identified 
+in this paper as interconnected results of underlying structural 
+issues, regulators and policymakers can design more coherent 
+interventions that not only solve issues brought up by data 
+centre connection demands but can also leverage these 
+facilities to support grid reliability and environmental goals. 
+The framework and examples presented here are intended as 
+a starting point for that process. With better data, more 
+rigorous evaluation and closer collaboration between energy 
+and digital-infrastructure stakeholders, future regulatory 
+designs can ensure that data centre expansion supports, rather 
+than 
+undermines, 
+the 
+long-term 
+resilience 
+and 
+decarbonisation of energy network systems. 
+VI. REFERENCES 
+[1] https://www.dbresearch.com/PROD/RI-
+PROD/PDFVIEWER.calias?pdfViewerPdfUrl=PROD000000
+0000610225  
+[2] BEIS. Allocation of Electricity Network Charges to Different 
+Consumer Groups in Selected Countries. BEIS (2019). 
+Available from: 
+https://assets.publishing.service.gov.uk/media/62e3bc16d3bf7
+f75b50d4f5e/CEPA_BEISNetworkChargesAllocation_FinalR
+eport_20190322.pdf 
+[3] TAKCI, Mehmet Türker, QADRDAN, Meysam, SUMMERS, 
+Jon, GUSTAFSSON, Jonas. Data centres as a source of 
+flexibility for power systems. Energy Reports (2025), Vol. 13, 
+Pages 3661-3671, ISSN 2352-4847. Available from: 
+https://doi.org/10.1016/j.egyr.2025.03.020 
+[4] CREMONA, Elisabeth, CZYZAK, Pawel. Grids for data 
+centres: ambitious grid planning can win Europe’s AI race. 
+Ember Energy (2025). Available from: https://ember-
+energy.org/app/uploads/2025/06/Grids-for-data-centres-in-
+Europe.pdf 
+[5] https://www.jbs.cam.ac.uk/wp-content/uploads/2025/06/eprg-
+wp2512.pdf  
+[6] https://ietresearch.onlinelibrary.wiley.com/doi/epdf/10.1049/s
+tg2.12200 
+[7] OFGEM. Updates to Connections Methodologies. Ofgem 
+(2025). Available from: 
+https://www.ofgem.gov.uk/sites/default/files/2025-
+05/Updates%20to%20Connections%20Methodologies%20de
+cision.pdf 
+[8] OFGEM. Published response to recent surge in demand. 
+Ofgem (2025). Available from: 
+https://www.ofgem.gov.uk/sites/default/files/2025-
+11/Demand%20connections%20update.pdf 
+[9] EUROPE ECONOMICS. Impact of Growth of Data Centres 
+on Energy Consumption. DESNZ (2025). Available from: 
+https://assets.publishing.service.gov.uk/media/689d9dc487bf4
+75940723f6c/impact-of-growth-of-data-centres.pdf 
+[10] NERC. 2024 Long-Term Reliability Assessment. NERC 
+(2024). Available from: 
+https://www.nerc.com/globalassets/our-
+work/assessments/2024-ltra_corrected_july_2025.pdf 
+[11] SATCHWELL, Andrew et al. Electricity Rate Designs for 
+Large Loads: Evolving Practices and Opportunities. Berkeley 
+Lab, Technical Brief (2025). Available from: https://eta-
+publications.lbl.gov/sites/default/files/2025-
+01/electricity_rate_designs_for_large_loads_evolving_practic
+es_and_opportunities_final.pdf 
+[12] https://www.cru.ie/publications/28573/ 
+[13] https://www.ofgem.gov.uk/decision/access-and-forward-
+looking-charges-significant-code-review-decision-and-
+direction 
+[14] https://www.energynetworks.org/work/industry/connecting-
+to-the-networks/connections-data 
+[15] https://www.gov.uk/government/statistics/electricity-chapter-
+5-digest-of-united-kingdom-energy-statistics-dukes 
+[16] https://static1.squarespace.com/static/67819031da098341c45a
+c84a/t/6849bcfe640a951f79e00715/1749662975141/Data+Ce
+nter+Watch+Report+.pdf 
+[17] https://iea.blob.core.windows.net/assets/601eaec9-ba91-4623-
+819b-4ded331ec9e8/EnergyandAI.pdf 
+[18] https://reports.turnerandtownsend.com/data-centre-
+construction-cost-index-2025/ 
+[19] https://ceepr.mit.edu/workingpaper/flexible-data-centers-and-
+the-grid-lower-costs-higher-emissions/ 
+[20] PJM 2025 https://www.pjm.com/-
+/media/DotCom/committees-groups/cifp-
+lla/postings/20250828-stakeholder-comments-cifp-lla.pdf  
+[21] PJM May 2025 https://www.pjm.com/-
+/media/DotCom/committees-
+groups/workshops/llaw/2025/20250509/20250509-item-02---
+large-load-additions-workshop---presentation.pdf#page=12  
+[22] https://assets.gov.ie/static/documents/Private_Wires_Policy_S
+tatement.pdf 
+[23] https://energyfuturesgroup.com/wp-
+content/uploads/2025/01/Review-of-Large-Load-Tariffs-to-
+Identify-Safeguards-and-Protections-for-Existing-Ratepayers-
+Report-Final.pdf 
+[24] https://gridlab.org/wp-content/uploads/2025/03/GridLab-
+Report-Large-Loads-Interim-Report.pdf 
+[25] https://www.aepohio.com/company/about/rates/data-center-
+tariff/ 
+[26] https://www.nve.no/norwegian-energy-regulatory-
+authority/network-regulation/network-connection/ 
+
+--- PAGE 12 ---
+Page 12 of 12 
+Strictly Private and confidential © MCC Economics and Finance 
+www.mcceconomics.co.uk pj@mcceconomics.co.uk +447402255584 
+[27] https://www.ucs.org/sites/default/files/2025-
+09/PJM%20Data%20Center%20Issue%20Brief%20-
+%20Sep%202025.pdf 
+[28] https://energyfuturesgroup.com/wp-
+content/uploads/2025/01/Review-of-Large-Load-Tariffs-to-
+Identify-Safeguards-and-Protections-for-Existing-Ratepayers-
+Report-Final.pdf 
+[29] https://docs.idahopower.com/pdfs/AboutUs/RatesRegulatory/
+Tariffs/20.pdf 
+[30] https://dx.doi.org/10.71468/P1WC7Q 
+[31] https://www.powermag.com/google-im-strike-landmark-deal-
+to-share-clean-capacity-and-flex-ai-load/  
+[32] https://docs.aep.com/docs/economic-development/IN-EDR-
+2023-App.pdf 
+[33] Gate 2 Criteria Methodology 
+https://www.neso.energy/document/350236/download 
+[34] Project Designation Methodology 
+https://www.neso.energy/document/350246/download 
+[35] https://www.ola.org/sites/default/files/node-
+files/bill/document/pdf/2025/2025-06/b040_e.pdf 
+[36] BIGGAR, Darryl. Fairness in Public-utility Regulation: A 
+Theory. Agenda, A Journal of Policy Analysis and Reform 
+(2010), Vol. 17, No. 1, pp. 5-32. Available from: https://press-
+files.anu.edu.au/downloads/press/p89091/pdf/fairness.pdf 
+[37] KHEZR, Peyman, MENEZES, Flavio M. Funding natural-
+monopoly infrastructure expansion: auctions versus regulated 
+uniform access prices. Journal of Regulatory Economics 
+(2019), Vol. 55, Pages 193-213. Available from: 
+https://doi.org/10.1007/s11149-019-09382-z 
+[38] https://www.legislation.gov.uk/ukpga/2023/52 
+[39] https://www.ofgem.gov.uk/sites/default/files/2025-
+11/Consumer%20outcomes%20CFI%20final.pdf 
+[40] https://publicenterprise.org/wp-content/uploads/Bubble-or-
+Nothing.pdf 
+[41] https://www.uregni.gov.uk/news-centre/decision-fairer-grid-
+connection-costs-published-by-department-economy 
+[42] https://www.ofgem.gov.uk/sites/default/files/2022-
+05/Access%20SCR%20-%20Final%20Decision.pdf#page=48  
+[43] https://www.ofgem.gov.uk/sites/default/files/2025-
+12/connections-end-to-end-review-next-steps-
+final.pdf#page=55  
+[44] https://cruie-live-96ca64acab2247eca8a850a7e54b-
+5b34f62.divio-media.com/documents/cer01179-1.pdf#page=2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

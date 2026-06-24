@@ -1,0 +1,305 @@
+--- PAGE 1 ---
+ 
+UNITED STATES OF AMERICA  
+BEFORE THE FEDERAL ENERGY REGULATORY COMMISSION  
+ 
+Fast- Tracking Power for American AI, 
+Keeping Rates Low, and Modernizing the 
+Grid 
+)​
+)​
+) 
+Docket No. RM26-4-000 
+ 
+COMMENTS OF AMERICAN TERAWATT, INC 
+American Terawatt, Inc. (“American Terawatt”) submits these opening comments in 
+response to the Secretary of Energy’s letter on the interconnection of large electrical loads and 
+the associated Advanced Notice of Proposed Rulemaking (“DOE ANOPR Proposal”), as invited 
+by the Commission’s notice issued on October 27, 2025, in the above-referenced docket.1 The 
+matters raised in this proceeding are highly consequential, with direct implications for the 
+Commission’s obligations under the Federal Power Act and for the nation’s broader economic 
+and security interests. In light of these considerations, American Terawatt urges the Commission 
+to focus swiftly and pragmatically on reforms that can be adopted without delay and that will 
+encourage the timely expansion of digital and energy infrastructure. Such reforms should be 
+designed to make the most effective use of existing transmission and distribution assets while 
+avoiding unnecessary burdens on the electric grid. 
+I. Introduction  
+ 
+On October 23, 2025, the secretary of energy Chris Wright, in recognition of the crisis 
+faced by the US electric grid, issued an advance notice of rulemaking to the Federal Electricity 
+Regulatory Authority (FERC): 
+ 
+
+--- PAGE 2 ---
+ 
+“To usher in a new era of American prosperity, we must ensure all Americans and 
+domestic industries have access to affordable, reliable, and secure electricity. To do this, 
+large loads, including AI data centers, served by public utilities must be able to connect to 
+the transmission system in a timely, orderly, and non-discriminatory manner. This is an 
+urgent issue that requires prompt attention.” 
+This position paper explains how targeted technical and policy interventions can unlock 
+the electricity needed to power American AI while keeping rates low and modernizing the grid 
+by correcting the misaligned incentives between the operators of the American electrical grid, 
+and data-center developers.  
+ 
+II. Problem 
+Growth in electricity demand from AI data centers is outpacing the capacity of the U.S. 
+electric grid. By some estimates, electricity generating capacity will fall short of projected 
+demand by double-digit gigawatts (GW) through at least 2028, and possibly beyond even if the 
+planned retirement of coal-fired power plants is delayed or halted.  
+
+--- PAGE 3 ---
+ 
+ 
+Based on predicted AI revenue. Source: SemiAnalysis 
+ 
+Even when power is available, actually getting data centers connected to the grid takes 
+years. Traditional interconnection of large loads averages five years, and often up to eight years 
+throughout the country. Our ability to bring compute for AI online is severely constrained by the 
+availability of power. 
+If it continues to take this long to bring new compute capacity online, the United States 
+will lose its competitive edge in AI. The competition is stiff: China’s ability to rapidly build 
+power generation and transmission infrastructure allows it to offset the inefficiency of its 
+
+--- PAGE 4 ---
+ 
+domestic AI chips—it doesn’t matter if China’s GPUs are four times less efficient1 if it can build 
+four times as many power plants as the United States has. 
+To secure power more quickly, data-center developers are increasingly resorting to 
+expensive, risky solutions such as building and operating their own behind-the-meter natural gas 
+power plants colocated with large datacenter campuses.2 
+This strategy has clear limits. It’s hard enough to build and run a gigawatt-scale data 
+center, let alone one with its own attached gigawatt-scale power plant. Instead of distributing 
+redundancy, risk, and capital expenditure across many generators and loads, off-grid generation 
+plants like these concentrate it at each new site. As data-center developers themselves have come 
+to recognize, this is untenable in the long term.  
+How did we get here? Why can’t the American electric grid bring the necessary gigawatts 
+online fast enough to remain ahead of the United States’s adversaries in AI?  
+The core issue is not capital. The real constraint is incentives. Utilities operate under 
+cost-of-service regulation, where capital expenditures must be approved by regulators and then 
+added to “rate base” to earn a regulated return.  
+ 
+2 “GE Vernova and Crusoe Announce Major 29-Unit Aeroderivative Gas Turbine Deal to Deliver Power to 
+AI Data Centers,” Crusoe, July 22, 2025, 
+https://www.crusoe.ai/resources/newsroom/ge-vernova-and-crusoe-announce-major-29-unit-gas-turbine-d
+eal; Jeremie Eliahou Ontiveros et al., “xAI’s Colossus 2—First Gigawatt Datacenter in the World, Unique 
+RL Methodology, Capital Raise,” SemiAnalysis, September 16, 2025, 
+https://newsletter.semianalysis.com/p/xais-colossus-2-first-gigawatt-datacenter.  
+1 Dylan Patel et al., “Huawei AI CloudMatrix 384—China’s Answer to Nvidia GB200 NVL72,” 
+SemiAnalysis, April 15, 2025, 
+https://newsletter.semianalysis.com/p/huawei-ai-cloudmatrix-384-chinas-answer-to-nvidia-gb200-nvl72. 
+
+--- PAGE 5 ---
+ 
+This structure rewards utilities for undertaking larger, slower, and more capital-intensive 
+projects, because those projects expand rate base, even when smaller or faster solutions would 
+deliver usable grid capacity sooner. 
+At the same time, many upgrade costs are ultimately recovered through rates paid by 
+existing customers. Ratepayers are highly sensitive3 to near-term increases in their bills, even 
+when improvements would lower system costs over time. Regulators and elected officials 
+respond to that pressure, which pushes planning toward minimizing visible, short-term rate 
+impacts rather than optimizing for long-term efficiency and speed. 
+Grid operators and legislatures have begun to respond to the rapidly increasing demand 
+for power by imposing specialized, data-center-specific power tariffs,4 and mandating that new 
+data-center loads must be curtailable during grid peak times.5 
+This solves part of the problem. Because the grid is built for peak load, new loads that 
+can reduce load (curtail) during peak times considerably reduce the need for expensive grid 
+upgrades, keeping rates stable for other customers.  
+ 
+5 Relating to the Planning for, Interconnection and Operation of, and Costs Related to Providing Service 
+for Certain Electrical Loads and to the Generation of Electric Power by a Water Supply or Sewer Service 
+Corporation, S. 6, 89th Texas State Legislature (2025–2026), 
+https://legiscan.com/TX/text/SB6/id/3248460; Stu Bresler and Tim Horger, “Large Load Additions PJM 
+Conceptual Proposal and Request for Member Feedback,” PJM, August 18, 2025, 
+https://www.pjm.com/-/media/DotCom/committees-groups/cifp-lla/2025/20250818/20250818-item-03---pj
+m-conceptual-proposal-and-request-for-member-feedback---presentation.pdf.   
+4 Electricity: Data Centers: Rate Schedule and Requirements, H.B. 900, Maryland General Assembly 
+(2025), https://mgaleg.maryland.gov/2025RS/fnotes/bil_0000/hb0900.pdf; Relating to Large Energy Use 
+Facilities; and Declaring an Emergency, H.B. 3546, 83rd Oregon Legislative Assembly (2025), 
+https://olis.oregonlegislature.gov/liz/2025R1/Downloads/MeasureDocument/HB3546/Enrolled.  
+3 Marc Levy, “As Electric Bills Rise, Evidence Mounts That Data Centers Share Blame. States Feel 
+Pressure to Act,” Associated Press, August 8, 2025, 
+https://apnews.com/article/electricity-prices-data-centers-artificial-intelligence-fbf213a915fb574a4f3e5baa
+a7041c3a. 
+
+--- PAGE 6 ---
+ 
+Industrial load flexibility is not new. Many large electricity consumers voluntarily enroll in 
+“demand response” programs,6 which provide incentives to loads that curtail their operation 
+during peak times. The bitcoin mining industry, where margins depend directly on electricity 
+prices, has also long practiced “economic curtailment,” reducing usage when prices spike.  
+Roughly half of the United States’ electric infrastructure is idle at any given time. 
+Existing off-peak grid capacity could accommodate an additional 100 GW of flexible loads, 
+more than enough to cover data-center growth and other demand through 2028 and beyond, 
+without needing new power plants.7 
+ 
+Load Duration Curve for US RTO/ISOs, 2016–2024 
+ 
+7 Tyler H. Norris, Tim Profeta, Dalia Patino-Echeverri, and Adam Cowie-Haskell, Rethinking Load Growth: 
+Assessing the Potential for Integration of Large Flexible Loads in US Power Systems, Nicholas Institute 
+for Energy, Environment, and Sustainability, February 2025, 
+https://dukespace.lib.duke.edu/items/bb350296-d7a1-4d8f-acb0-2fba9b1f03de.  
+6 “Demand Response,” Electric Reliability Council of Texas, accessed October 25, 2025, 
+https://www.ercot.com/services/programs/load. 
+
+--- PAGE 7 ---
+ 
+Source: Norris et al., “Rethinking Load 
+Growth.” 
+However, flexibility mandates have received significant pushback from the AI 
+data-center industry.8 Alone, they do nothing to reduce interconnection delays, and because of 
+the economics of AI compute and uptime service-level agreements (SLAs), which require 
+upwards of 99.999 percent availability as demanded by customers, curtailment strategies that 
+shut down GPUs are nonstarters.   
+Moreover, flexibility mandates and differential tariffs are being implemented haphazardly 
+by utilities, grid operators, and state legislatures, creating a regulatory snarl that threatens to 
+further delay data-center projects in the United States.  
+ 
+III. Solutions  
+These problems can be solved in a way that benefits all parties. The proposed solutions 
+come in two forms: technical measures that allow for AI data-center load flexibility and policy 
+that aligns incentives between grid operators and data-center developers.   
+A.​ Technology: Grid Responsive AI Datacenters (GRAIDs) 
+Uptime SLAs are critical to compute customers such as frontier AI labs because 
+checkpointing and restarting large-scale AI workloads such as training runs introduces 
+significant engineering complexity, increasing costs and reducing reliability. However, by 
+throttling GPU power and slowing computations rather than switching devices off entirely, 
+8 Critical Issue Fast Path—Large Load Additions Stakeholder Comments, PJM, August 28, 2025, 
+https://www.pjm.com/-/media/DotCom/committees-groups/cifp-lla/postings/20250828-stakeholder-comme
+nts-cifp-lla.pdf. 
+
+--- PAGE 8 ---
+ 
+grid-responsive AI data centers (GRAIDs) can maintain uptime SLAs without ever stopping 
+workloads.  
+Modern GPUs have a wide operating power envelope, allowing for a large degree of 
+throttling. For example, the Nvidia H100 SXM5 has a peak power consumption of 700 watts (W) 
+but can be throttled to 200 W on demand—a reduction of 71 percent—without interrupting 
+computation.  
+In this way, GRAIDs can respond to peak grid load by throttling GPUs as required to 
+reduce power while maintaining uptime in response to demand response (DR) signals from the 
+grid operator.  
+Long-running workloads such as large-scale pretraining would continue uninterrupted. 
+Time-insensitive inference jobs may also be throttled, and latency-critical jobs could either be 
+routed to unthrottled facilities or assigned to a pool of “hot,” unthrottled compute kept in reserve.  
+ 
+Here’s how it would work in practice at the level of a data center:  
+●​ The data-center operator would coordinate with the utility to curtail an agreed-upon 
+fraction of load on demand in response to grid conditions as part of a DR program.  
+●​ An automated software controller at the data center would monitor for DR events from 
+the grid operator. This could be accomplished using the open protocol OpenADR9 over 
+an HTTPS connection, with redundant backups. 
+9 “Connecting Smart Energy to the Grid,” OpenADR Alliance, accessed October 25, 2025, 
+https://www.openadr.org/.  
+
+--- PAGE 9 ---
+ 
+●​ After the signaling of a DR event, the data-center power controller would automatically 
+throttle GPUs according to the agreed-upon policy by setting power caps at the level of 
+the baseboard management controller (BMC) (e.g., via Redfish).10 
+ 
+This method would integrate seamlessly with current infrastructure and would not require 
+any new hardware or software from compute customers. Since power throttling would be 
+executed at the BMC, data-center operators would never access the host environment and would 
+not be able to view customer workloads or data. 
+The trade-off would be in throughput. Computations would be slowed as power was 
+reduced, with the degree of slowdown depending on the specific device and workload.  
+ 
+10 “Redfish APIs Support,” Nvidia, last updated September 10, 2025, 
+https://docs.nvidia.com/dgx/dgxb200-user-guide/redfish-api-supp.html#power-capping. 
+
+--- PAGE 10 ---
+ 
+Approximate throughput envelope, H100 SXM5. Real throughput lies between 
+the linear and cube root bounds.  
+ 
+Throttling is nonlinear with respect to power, partly because semiconductors are 
+themselves nonlinear devices and partly because GPUs have other power-consuming 
+components beyond the core chip. In theory, the true degree of throttling lies between a best-case 
+cube-root curve and a worst-case linear curve. In practice, the throughput curve can be measured 
+empirically per device and workload.  
+Because grid peak events are rare and typically last about an hour, the impact to overall 
+throughput is small even under worst-case throttling. Consider the ERCOT grid in Texas, where 
+emergency response curtailment can occur for up to 60 hours per year and where Four 
+Coincident Peak (4CP) or near-CP events occurred for 41 hours in 2024.11  
+This number represents at worst an annual throughput reduction of only 1.1 percent, or, in 
+other words, access to 98.9 percent more capacity than if those chips sat idle awaiting grid 
+upgrades and interconnection.  
+Including facility overhead, a 100-megawatt (MW) GRAIDs facility could curtail 
+approximately 50 MW on demand, all while keeping workloads continuously running. For 
+compute customers, the marginal loss in throughput would be tolerable, especially when 
+compared to the substantial increase in available capacity that this approach would make 
+possible. A typical 100-day training run would take one day longer, but many more such runs 
+could take place.  
+11 ​2024 Annual Report on Demand Response in the ERCOT Region, Electric Reliability Council of Texas, 
+updated February 2025, 
+https://www.ercot.com/misdownload/servlets/mirDownload?doclookupId=1080511461. 
+
+--- PAGE 11 ---
+ 
+B.​ Policy: Aligning Incentives at the Federal Level 
+Through their behind-the-meter and off-grid projects, data-center developers have 
+demonstrated their willingness to pay for faster time-to-power. Simultaneously, utilities and grid 
+operators have recognized the virtues of flexible loads as a way to keep rates low and 
+acknowledge that revenue from these loads can be used to modernize the grid. The right policy 
+intervention would align these interests. 
+Data-center developers willing to build flexible AI factories or retrofit existing sites with 
+flexible load capabilities should have access to a significantly accelerated grid interconnection 
+process. By charging a predetermined up-front premium for this form of accelerated 
+interconnection, utilities need not incur increased rates for consumers in the short term.  
+In the long term, thanks to significant revenue from new large flexible loads and capped 
+returns for utilities, electricity costs might actually be reduced for other ratepayers.  
+Looking to the future, a reindustrializing America will need power for other large loads. 
+Industrial projects such as chip fabs, rare earth mineral refineries, and highly automated factories 
+draw hundreds of megawatts and may not have the flexibility of AI data centers. Revenues from 
+flexible data-center loads that are interconnected today will pay for the grid upgrades necessary 
+for the loads of tomorrow, again without raising rates for ordinary Americans.  
+The Federal Energy Regulatory Commission (FERC) has so far explicitly chosen not to 
+regulate flexible loads, leaving them to individual grid operators. It’s time for that to change.  
+ 
+We propose the following: 
+ 
+
+--- PAGE 12 ---
+ 
+●​ FERC should direct independent system operators (ISOs) to develop expedited 
+interconnection processes for defined large flexible loads, with transparent criteria. ​
+FERC should direct regional transmission organizations and ISOs to propose enabling, 
+nondiscriminatory tariffs for participation in expedited interconnection processes for 
+defined large flexible loads.  
+●​ To ensure clarity for both developers and grid operators and prevent a national patchwork 
+of regulations, FERC should define qualifying flexible loads for the purposes of 
+transmission-level interconnection and wholesale market participation.​
+ 
+Regulatory action of this magnitude from FERC, targeting specific types of loads and 
+grid operations, is not unprecedented. In 2011, FERC issued Order 1000, which required 
+transmission providers to participate in regional transmission planning processes, not just local 
+or utility-specific planning. Similarly, in 2018, FERC issued Order 841, requiring grid operators 
+to open their wholesale markets to energy storage. FERC Order 2222, issued in 2021, ensured 
+aggregators of distributed energy resources could participate in wholesale energy, capacity, and 
+ancillary markets such as DR programs.  
+And, perhaps most relevant, FERC Order 2023, issued in 2023, directed grid operators to 
+simplify interconnection procedures for new generating assets. Now, FERC can do the same for 
+loads.  
+Indeed, Secretary Wright’s directive includes directives related to expedited 
+interconnection for curtailable large loads (section 24), and transmission network upgrades paid 
+for by facilities developers (section 25), are great steps toward these goals.  
+ 
+
+--- PAGE 13 ---
+ 
+We believe these policy interventions will not only rapidly expand the availability of power for 
+American AI but keep rates low for consumers and rapidly modernize the whole electric grid for 
+future American industrial load.  
+ 
+Respectfully Submitted, 
+ /s/ Anton Troynikov ​
+Chief Executive Officer ​
+American Terawatt ​
+901 20th Street 
+San Francisco, CA 94107 
+(650) 880-9628​
+anton@americanterawatt.com 
+ 
+Dated: November 21, 2025 
+ 

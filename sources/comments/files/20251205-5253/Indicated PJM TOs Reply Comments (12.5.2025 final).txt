@@ -1,0 +1,896 @@
+--- PAGE 1 ---
+ 
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION  
+ 
+ 
+Interconnection of Large Loads to the Interstate   
+ 
+) 
+Docket No. RM26-4-000 
+Transmission System  
+ 
+ 
+ 
+ 
+) 
+ 
+REPLY COMMENTS OF THE INDICATED PJM TRANSMISSION OWNERS 
+ 
+The Indicated PJM Transmission Owners1 respectfully submit the following reply 
+comments in response to initial comments filed in the above-captioned proceeding, pursuant to the 
+Notice Inviting Comments issued by the Federal Energy Regulatory Commission (“Commission”) 
+on October 27, 2025 regarding the Secretary of Energy’s proposed advance notice of proposed 
+rulemaking (“ANOPR”) requested under Section 403 of the Department of Energy Reorganization 
+Act.2  
+I. 
+EXECUTIVE SUMMARY  
+ 
+Over 150 sets of comments were filed in response to the ANOPR, with commenters 
+representing a wide variety of interests, including data center operators, state regulators and other 
+government officials, federal legislators, transmission owners, generators, RTOs/ISOs, end-use 
+customers other than data centers, consumer and environmental advocates, and interested 
+ 
+1 This filing is prepared on behalf of the following PJM Interconnection, L.L.C. (“PJM”) Transmission 
+Owners: Duke Energy Corporation on behalf of its affiliates Duke Energy Ohio, Inc., Duke Energy 
+Kentucky, Inc., and Duke Energy Business Services LLC; Exelon Corporation on behalf of its affiliates 
+Atlantic City Electric Company, Baltimore Gas and Electric Company, Commonwealth Edison Company, 
+Commonwealth Edison Company of Indiana, Inc., Delmarva Power & Light Company, PECO Energy 
+Company (“PECO”), and Potomac Electric Power Company; FirstEnergy Service Company, on behalf of 
+its affiliates American Transmission Systems, Incorporated, Jersey Central Power & Light Company, Mid-
+Atlantic Interstate Transmission LLC, The Potomac Edison Company, Monongahela Power Company, 
+Keystone Appalachian Transmission Company, and Trans-Allegheny Interstate Line Company; PPL 
+Electric Utilities Corporation; and Rockland Electric Company (together, the “Indicated PJM TOs”).  
+Certain of the Indicated PJM TOs are separately submitting company specific reply comments and 
+participating in other sets of reply comments, thereby, the Commission should consider this submission 
+alongside and in addition to the other comments submitted by the companies participating herein. 
+2 42 U.S.C. § 7173. 
+
+--- PAGE 2 ---
+2 
+ 
+individuals.  Both the scope and degree of interest speak to the importance of this proceeding in 
+addressing the goals articulated by the ANOPR to facilitate interconnecting large load customers, 
+particularly data centers, to the grid in a “timely, orderly, and non-discriminatory manner.”3  This 
+will require the Commission to move not only quickly, but carefully.  Although commenters are 
+largely united in their desire to see the ANOPR’s goals addressed, the comments reflect a wide 
+range of views as to how best to do so.  For instance, many commenters point out that the area of 
+load interconnection implicates matters of both federal and state jurisdiction, and caution the 
+Commission to proceed in a manner that respects state jurisdiction over matters involving retail 
+electric service and the regulation of local distribution facilities.4  Other areas where commenters 
+express divergent views include how best to define what constitutes a large load customer for 
+purposes of any Commission-adopted procedures and how best to allocate the costs of large load-
+driven network transmission upgrades. 
+ 
+All of this suggests that the goals of the ANOPR will best be served by the Commission 
+developing an appropriately targeted rule that does not disturb the significant work already 
+underway in many states and regions to energize large loads, including data centers.  Going beyond 
+this remit is more likely to result in extended litigation and ongoing disputes, to the detriment of 
+speed, efficiency and cost-effectiveness.  In furtherance of this approach, the Indicated PJM TOs 
+offer reply comments on several issues addressed in the initial comments, including: 
+ The Commission should decline to entertain issues that go beyond the scope of the 
+ANOPR. Issues such as the appropriate division between regional and local 
+transmission planning have been thoroughly debated before the Commission in prior 
+orders and other proceedings and should not be revived here.   
+ 
+ To the extent the Commission asserts jurisdiction over large load interconnections, it 
+should adopt a sufficiently narrow definition of “large load customer” limited to large 
+ 
+3 Secretary of Energy’s Letter to the Commissioners of FERC, at 1 (Oct. 23, 2025) (“Secretary’s Letter”). 
+4 As discussed in our initial comments, the Indicated PJM TOs share certain of these jurisdictional concerns. 
+
+--- PAGE 3 ---
+3 
+ 
+(200 MW or greater) data center customers.  It is those customers that are primarily 
+driving load increases.  As discussed below, rationales supporting the proposed 20 MW 
+threshold can be addressed through alternative means without widening the application 
+of this rule to customers that will likely be adversely affected by it.  
+ 
+ Although a number of commenters argue in favor of directly assigning the costs of  
+transmission network upgrades to data center customers, the Commission should 
+continue to apply its policy in favor of rolled-in rate treatment for network transmission 
+upgrades driven by load additions, including large data center loads.  Doing so may 
+best reduce litigation, and is most consistent with cost causation principles.  Such an 
+approach ultimately favors affordability and best ensures long-term cost-effective 
+reliability for all customers.   
+ 
+ The Commission should decline to provide large load customers an option to build.  
+Large load customers are distinguishable from generators, and in any case, the 
+experience with implementing option to build in the context of generator 
+interconnection strongly suggests that there will be no meaningful cost savings or 
+efficiency gains as a result of providing such an option to large load customers. 
+ 
+II. 
+REPLY COMMENTS  
+A. 
+The Commission Should Decline to Entertain Issues Beyond the Scope of the 
+ANOPR. 
+ 
+In the initial comments, a number of parties raised issues that are clearly beyond the scope 
+of the proposed ANOPR.  The Commission, however, must maintain its focus on timing and need 
+to adopt rules within an appropriate scope.  It is critical that the Commission adhere to the scope 
+of the ANOPR (instead of expanding it) so that the Commission can achieve the stated goals of 
+the ANOPR and avoid unintended adverse consequences to other customers.  In particular, if the 
+Commission wishes to promote timely interconnections to advance artificial intelligence (“AI”) 
+innovation, it should limit its inquiry and avoid expanding the scope of this proceeding to address 
+issues and concerns that are not sufficiently related to achieving that goal, such as those discussed 
+below.  Failure to do so will result in a larger, more confused record, a risk of increased litigation, 
+and create more hurdles for both transmission providers and data center customers.5 
+ 
+5 The recent complaint filed by PJM’s Independent Market Monitor (“IMM”), although submitted by the 
+IMM in this docket, is likewise is beyond the scope of the ANOPR and should not be addressed in this 
+
+--- PAGE 4 ---
+4 
+ 
+Among the examples of comments that improperly seek to expand the scope of the 
+ANOPR, LS Power Development, LLC (“LS Power”), argues that transmission upgrades above 
+100kV should be regionally planned and that the Commission should allow and encourage 
+competition for the construction of large load-related infrastructure.6  LS Power also requests that 
+the Commission adopt rules similar to PJM’s provisions concerning transmission-level Designated 
+Entity Agreements (“DEAs”) to govern large load interconnections.7  LS Power’s requests are both 
+well beyond the scope of the ANOPR and without merit.   
+The ANOPR and letter accompanying the ANOPR make no mention of regional planning 
+or competition associated with large load interconnections other than a brief introductory reference 
+to transmission planning under Order Nos. 888, 890, 1000, and 1920.8  Issues regarding the 
+appropriate scope of regional versus local planning and competition have been comprehensively 
+addressed and decided by the Commission in those prior orders.  There is no reason to re-open 
+those issues now, and certainly not in this proceeding, where meeting the goals of the ANOPR will 
+require the Commission to move quickly and in a targeted manner.  In fact, were those issues to 
+be re-opened, the Commission would need to grapple with the growing body of evidence that 
+Order No. 1000 competitive transmission processes are not having the intended result.  
+Competitive solicitations should not be expanded into large load interconnection processes if the 
+interest is in supporting timely, cost-effective, and reliable infrastructure development.9  Not only 
+ 
+proceeding.  See Filing of the Independent Market Monitor for PJM Interconnection, L.L.C., Docket No. 
+RM26-4-000 (Nov. 25, 2025). 
+6 Comments of LS Power, Docket No. RM26-4-000, at 8, 13 (Nov. 21, 2025). 
+7 Id. at 6-7. 
+8 ANOPR at P 6. 
+9 See e.g., Second Supplemental Comments of Developers Advocating Transmission Advancements, 
+Docket Nos. RM21-17 and AD22-8 (Feb. 12, 2025). 
+
+--- PAGE 5 ---
+5 
+ 
+would introducing Order No. 1000 solicitation issues into this docket complicate the proceeding, 
+any resulting planning and infrastructure development process would impose further delays to 
+interconnecting large loads given the time requirement to run solicitation processes and to resolve 
+any ensuing disputes.   
+LS Power’s request also highlights serious jurisdictional issues. Large load 
+interconnections concerning end-use customers will, more often than not, require upgrades to local 
+distribution (not just transmission) facilities.  The regulation of local distribution facilities is 
+reserved to the states,10 and thus, the Commission has no authority to impose federal planning 
+requirements for local distribution upgrades.  Nothing in the ANOPR indicates an intent to regulate 
+local distribution-related upgrades or distribution rates.11  Nevertheless, in order to avoid further 
+concerns, and potential litigation, regarding jurisdictional boundaries, the Commission should 
+decline to accept LS Power’s invitation to reconsider fundamental planning issues in the context 
+of this rulemaking.  Doing so is unnecessary and would be inimical to the ANOPR’s stated goals. 
+Likewise, there is no merit to LS Power’s suggestion that the Commission should 
+incorporate provisions from the PJM DEAs “related to cost and schedule” into the large load 
+interconnection context.12  DEAs are not interconnection agreements.  Rather, in PJM, they are 
+contracts to ensure developers take on binding obligations to construct projects selected for 
+inclusion in the PJM Regional Transmission Expansion Plan (“RTEP”) through a competitive 
+window.  There is no logical overlap between DEAs and potential large load interconnection 
+agreements, and thus no reason for the Commission to complicate the record by considering issues 
+regarding DEAs in this proceeding.   
+ 
+10 16 U.S.C. § 824(b)(1). 
+11 ANOPR at P 18. 
+12 LS Power at 7. 
+
+--- PAGE 6 ---
+6 
+ 
+Additionally, the Office of the Ohio Consumers’ Counsel (“OCC”) asserts that, as part of 
+the ANOPR, the Commission should require that public utilities and RTOs provide public posting 
+of (1) all interconnection requests 20 MW and above; (2) cost responsibility determinations and 
+any resulting upgrades; and (3) annual reporting on consumer cost impacts of large load 
+interconnections, associated transmission expansions, and impact on capacity market rates.13  This 
+request too is beyond the scope of the ANOPR and unnecessary. 
+As open access service providers, transmission owners such as the Indicated PJM TOs have 
+a duty to build transmission upgrades to meet the demands of their customers and to plan such 
+construction in a transparent planning process pursuant to Order Nos. 888, 890, 1000, and 1920.14  
+For stakeholders in PJM, the Commission has consistently found that the PJM and transmission 
+owner planning practices are sufficient to meet the requirements of those orders, including 
+requirements designed to promote transparency.15 Moreover, much of the transmission 
+information that OCC requests (e.g., costs of transmission upgrades) is already provided through 
+ 
+13 Comments of OCC, Docket No. RM26-4-000, at 3-4 (Nov. 21, 2025). 
+14 Promoting Wholesale Competition Through Open Access Non-Discriminatory Transmission Servs. by 
+Pub. Utils.; Recovery of Stranded Costs by Pub. Utils. and Transmitting Utils., Order No. 888, FERC Stats. 
+& Regs. ¶ 31,036 (1996) (cross-referenced at 75 FERC ¶ 61,080), on reh’g, Order No. 888-A, FERC Stats. 
+& Regs. ¶ 31,048 (cross-referenced at 78 FERC ¶ 61,220), on reh’g, Order No. 888-B, 81 FERC ¶ 61,248 
+(1997), on reh’g, Order No. 888-C, 82 FERC ¶ 61,046 (1998), aff’d in relevant part sub nom., Transmission 
+Access Pol’y Study Grp., v. FERC, 225 F.3d 667 (D.C. Cir. 2000), aff’d sub nom., N.Y. v. FERC, 535 U.S. 
+1 (2002).; Preventing Undue Discrimination & Preference in Transmission Serv., Order No. 890, 118 
+FERC ¶ 61,119, order on reh’g, Order No. 890-A, 121 FERC ¶ 61,297 (2007), order on reh’g, Order No. 
+890-B, 123 FERC ¶ 61,299 (2008), order on reh’g, Order No. 890-C, 126 FERC ¶ 61,228, order on 
+clarification, Order No. 890-D, 129 FERC ¶ 61,126 (2009); Transmission Plan. & Cost Allocation by 
+Transmission Owning & Operating Pub. Utils., Order No. 1000, 136 FERC ¶ 61,051 (2011), order on 
+reh’g, Order No. 1000-A, 139 FERC ¶ 61,132, order on reh’g & clarification, Order No. 1000-B, 141 
+FERC ¶ 61,044 (2012), aff’d sub. nom. S.C. Pub. Serv. Auth. v. FERC, 762 F.3d 41 (D.C. Cir. 2014); Bldg.  
+for the Future Through Elec. Reg’l Transmission Planning & Cost Allocation, Order No. 1920, 89 FR 
+49280 (June 11, 2024), 187 FERC ¶ 61,068, order on reh’g, Order No. 1920-A, 89 FR 97174 (Dec. 6, 
+2024), 189 FERC ¶ 61,126 (2024), order on reh’g, Order No. 1920-B, 191 FERC ¶ 61,026 (2025). 
+15 Order No. 890 at PP 207-213; Monongahela Power Co., 164 FERC ¶ 61,217 (2018); PJM 
+Interconnection, L.L.C., 172 FERC ¶ 61,136, order on reh’g, 173 FERC ¶ 61,225 (2020); PJM 
+Interconnection, L.L.C., 176 FERC ¶ 61,053 (2021). 
+
+--- PAGE 7 ---
+7 
+ 
+publicly available sources.  For instance, information regarding project status and cost estimates 
+for transmission upgrades are already posted publicly on PJM’s website.16  There is no good reason 
+to expand the scope of the proposed ANOPR to create yet another forum to address and re-litigate 
+the amount of transmission planning project and cost information provided to stakeholders.   
+Granting OCC’s request could also raise jurisdictional concerns. Large load 
+interconnections invariably involve requests for retail service, which are governed by State rules, 
+including rules governing the type and amount of information that interconnecting utilities can 
+make public.17  The Commission should avoid potential conflicts with state-jurisdictional retail 
+service provisions and the resulting litigation and uncertainty that such conflicts will likely entail.  
+Potential jurisdictional conflicts here are particularly likely if the Commission retains a 20 MW 
+threshold. With a 20 MW threshold, “cost responsibility determinations and any resulting 
+upgrades” will not be limited to interstate transmission facilities—they will almost certainly 
+involve local distribution facilities subject to state jurisdiction. All the more reason the 
+Commission should avoid imposing broad reporting requirements of the sort requested by OCC.  
+The Data Center Coalition (“DCC”) argues that the Commission should require that RTOs 
+and other transmission providers adopt automation and AI tools to align study timelines with 
+needed urgency.18  The Indicated PJM TOs appreciate the need to facilitate data center speed-to-
+power objectives, and to use all available tools to facilitate efficiency while ensuring safety, 
+reliability, and good utility practice.  Where possible, these tools include using automation to speed 
+study processes.  The Indicated PJM TOs also anticipate that AI could eventually play an important 
+ 
+16 PJM, Project Status & Cost Allocation, https://www.pjm.com/planning/m/project-construction (last 
+visited, Dec. 4, 2025). 
+17 See e.g., 52 Pa. Code § 54.8.  Privacy of customer information.  
+18 DCC Comments, Docket No. RM26-4-000, at 11 (Nov. 21, 2025). 
+
+--- PAGE 8 ---
+8 
+ 
+role in interconnection studies as well, but at present it is not sufficiently advanced to meaningfully 
+accelerate planning and load analyses.  Regardless, the Commission should decline to mandate 
+study practices of utilities, RTOs, and other transmission providers at the detailed level of dictating 
+the use of particular tools or programs.  Such rules would be difficult to define and enforce and, 
+by prohibiting flexibility for transmission providers to use the right tool for each specific job, this 
+could end up undermining rather than enhancing efficiency.  In prior proceedings, the Commission 
+has declined to adopt similar proposals;19 it should do likewise here. 
+ 
+Similarly, a few parties suggest that the Commission should require that grid-enhancing 
+technologies (“GETs”) and advanced transmission technologies (“ATTs”) be included in building 
+infrastructure associated with large load interconnections.20  As with automation and AI tools, 
+transmission providers already look for opportunities to use GETs and ATTs.  However, such 
+technologies are not always useful or appropriate, and the benefits of such technologies depend on 
+a number of factors, including the specific technology employed and its electrical location.21  
+ 
+19 Improvements to Generator Interconnection Procs. and Agreements, Order No. 2023, 184 FERC ¶ 
+61,054, at P 9 (2023) (“[W]e decline to adopt the NOPR proposals pertaining to informational 
+interconnection studies, shared network upgrades, the optional resource solicitation study, and the 
+alternative transmission technologies annual report.”). 
+20 See Joint Comments of the Industrial Energy Consumers of America, the American Forest & Paper 
+Association, the PJM Industrial Customer Coalition, and the Coalition of MISO Transmission Customers, 
+Docket No. RM26-4-000, at 27-28 (Nov. 21, 2025) (“Industrial Customer Organizations”); Joint Comments 
+of Clean Air Task Force, Inc., Coalition for Affordable Utility Services and Energy Efficiency in 
+Pennsylvania; Earthjustice; Environmental Defense Fund; Montana Environmental Information Center; 
+Natural Resources Defense Council, Sustainable FERC Project; Sierra Club; and Southern Environmental 
+Law Center, at 6-7 & n.54 (Nov. 21, 2025) (“Public Interest Organizations”); The Working for Advanced 
+Transmission Technologies Coalition and the Advancing Modern Powerlines Coalition, Docket No. RM26-
+4-000, at 5-9 (Nov. 21, 2025). 
+21 See, e.g., North American Electric Reliability Corporation, Grid-Enhancing Technologies, Dynamic Line 
+Ratings: 
+Enhancing 
+Reliability 
+in 
+the 
+Modern 
+Grid, 
+at 
+2 
+(Oct. 
+15, 
+2024), 
+https://www.nerc.com/contentassets/6517cd1003684551a8f3150b05148d7a/reliability-insights_grid-
+enhancing-technologies-15oct24.pdf (“TOs must consider stability limitations rather than just thermal 
+limitations.  Simply increasing a facility rating may not provide the desired benefits, and the implementation 
+of [Dynamic Line Ratings] will not provide any reliability benefits.”).  
+
+--- PAGE 9 ---
+9 
+ 
+Transmission owners with relevant knowledge of their system conditions should be permitted to 
+decide whether and where these technologies are employed.  And their utility and purpose are 
+remote from the primary goals of the ANOPR.  Thus, the Commission should decline requests to 
+mandate the evaluation and use of GETs and ATTs.  The Commission should not layer such 
+specific requirements on transmission providers in this proceeding, as doing so will increase the 
+burdens and complexity of compliance with any final rule and likely delay its implementation.   
+Finally, a number of parties ask the Commission to consider other issues that are beyond 
+the scope of the ANOPR, such as Order No. 1920 and long-term transmission planning,22 and the 
+need to improve load forecasting practices.23  These parties offer no evidence to suggest their 
+concerns are even casually related to the goals of the ANOPR.  Accordingly, the Commission 
+should not let such issues distract it from the task at hand.  Expanding this proceeding to include 
+these requests will jeopardize any attempt to adopt meaningful and appropriately targeted rules in 
+a reasonable timeframe in order to promote the speed-to-power needs of data centers. 
+B. 
+The Commission Should Limit the Definition of Large Load Customers to 
+Data Centers at Least 200 MW in Size. 
+The Indicated PJM TOs continue to have reservations regarding the Commission’s 
+jurisdiction over large load interconnections and whether rules adopted by the Commission would 
+intrude on state authority over retail service to end-use customers, regardless of how the 
+ 
+22 Joint Comments of Southern Environmental Law Center, Appalachian Voices, North Carolina 
+Sustainable Energy Association, South Carolina Coastal Conservation League, and Southern Alliance for 
+Clean Energy, at 55-56 (Nov. 21, 2025) (“Southeast Public Interest Organizations”) (indicating that the 
+Commission should also ensure rigorous compliance with Order No. 1920). 
+23 See, e.g., Southeast Public Interest Organizations at 56-57 (“While a standardized large load 
+interconnection process that involves strict financial commitments may help to discipline large load 
+speculation, the Commission should also establish load forecasting requirements that allow transmission 
+providers to mitigate the uncertainty in large load demand forecasting for large loads to ensure just and 
+reasonable rates.”). 
+
+--- PAGE 10 ---
+10 
+ 
+Commission ultimately defines large-load customers.  Nevertheless, if the Commission decides to 
+assert jurisdiction over large load interconnections and to adopt standardized large load 
+interconnection procedures, it is in the best interest of the Commission and all stakeholders to 
+adopt a reasonably narrow definition that confines the application of the rules to the types of 
+customers driving the ANOPR:  large data center loads.  Many other commenters agree that a 
+minimum threshold of 20 MW is too low, arbitrary, vague, or could sweep in large load customers 
+not intended to be within the scope of the ANOPR.24  These commenters propose alternative 
+thresholds ranging from 30 MW to 300 MW,25 and/or argue that any MW-based threshold should 
+account not only for the large load’s size but also its function.26   
+As the Indicated PJM TOs explained in their initial comments, the Commission should 
+focus this rulemaking on data center customers that are driving the largest load additions and 
+contributing to network upgrades, and not adopt a threshold so low that it undermines efficiency 
+ 
+24 See, e.g., Comments of American Transmission Company LLC, Docket No. RM26-4-000, at 8-10 (Nov. 
+21, 2025); Comments of New York Transmission Owners, Docket No. RM26-4-000, at 12-14 (Nov. 21, 
+2025) (“New York TOs”); Comments of Midcontinent Independent System Operator, Inc. Transmission 
+Owners, Docket No. RM26-4-000, at 20-22 (Nov. 21, 2025) (“MISO TOs”); Comments of American Clean 
+Power Association, Docket No. RM26-4-000, at 3-4 (Nov. 21, 2025); Industrial Customer Organizations at 
+6, 25; Comments of Meta Platforms, Inc., Docket No. RM26-4-000, at 4 (Nov. 21, 2025). 
+25 See, e.g., Comments of Public Service and Gas Company, PSEG Power LLC, and PSEG Energy 
+Resources & Trade LLC, Docket No. RM26-4-000, at 25-26 (Nov. 21, 2025); Comments of Old Dominion 
+Electric Cooperative, Docket No. RM26-4-000, at 4-5 (Nov. 21, 2025); Comments of Clean Energy Buyers 
+Association, Docket No. RM26-4-000, at 5 (Nov. 21, 2025); Comments of Edison Electric Institute, Docket 
+No. RM26-4-000, at 5-8 (Nov. 21, 2025); Comments of Wisconsin Electric Power Company and Wisconsin 
+Public Service Corporation, Docket No. RM26-4-000, at 15-16 (Nov. 21, 2025) (“WEC Companies”); 
+Comments of The Public Staff – North Carolina Public Utilities Commission, Docket No. RM26-4-000, at 
+6-7 (Nov. 21, 2025) (“NC Public Staff”). 
+26 See Industrial Customer Organizations at 26-27 (explaining that a 20 MW limit would capture a 
+significant number of manufacturing entities and other industrial and institutional organization that do not 
+have speed-to-market and scale demands); Comments of Steel Manufacturers Association, Docket No. 
+RM26-4-000, at 2 (Nov. 21, 2025) (explaining that electric arc furnace steelmaking required a significant, 
+high-demand load, averaging between 40-100 MW, on the electrical grid); see also Comments of the 
+Electricity Consumers Resource Council, Docket No. RM26-4-000, at 5 (Nov. 21, 2025) (“ELCON”) 
+(contending that establishing a brightline MW threshold to determine eligibility of certain large load 
+customers fails to capture the unique characteristics of new large loads). 
+
+--- PAGE 11 ---
+11 
+ 
+and adversely impacts traditional industrial and commercial load customers.27  Adopting a MW 
+threshold significantly higher than 20 MW, as proposed by the Indicated PJM TOs and a number 
+of other commenters, will also help keep any final rule reasonably targeted and may help reduce 
+litigation. 
+Some commenters, however, support the ANOPR’s tentative proposal to apply 
+standardized interconnection procedures and agreements to loads of 20 MW or more.28  The 
+Indicated PJM TOs submit that the reasons presented by these commenters for adopting a 20 MW 
+threshold can be sufficiently addressed while also preserving a reasonably narrow definition (at a 
+substantially higher level than 20 MW) of large load customers.  First, certain commenters indicate 
+that a 20 MW or similarly low threshold should be tied to existing state or retail mechanisms.29  
+While a lower threshold may be appropriate for certain state retail tariffs or customer-specific 
+agreements, this does not mean that any rules adopted by the Commission need to be as expansive.  
+Retail customer protections and related provisions may be appropriate for a broader range of 
+customers depending on specific state or customer characteristics.  But if the Commission decides 
+to assert jurisdiction over large load interconnections, any generic rules adopted by the 
+Commission should focus on the large load data center customers primarily driving the load 
+increases.  Applying generic rules to a broad swathe of large load customers will likely end up 
+making load interconnections more inefficient, both for data center customers as well as traditional 
+ 
+27 Comments of the Indicated PJM TOs, Docket No. RM26-4-000, at 2-4 (Nov. 21, 2025). 
+28 See, e.g., OCC at 8; Comments of the California Independent System Operator Corporation at 5-6 (Nov. 
+21, 2025) (“CAISO”); Joint Comments of the Pennsylvania Office of Consumer Advocate and Delaware 
+Division of the Public Advocate at 16-17 (Nov. 21, 2025) (“PA and DE Advocates”); Electricity Customer 
+Alliance at 18 (Nov. 21, 2025) (“ECA”). 
+29 OCC at 4 (indicating that FERC’s rule must not undercut or preempt state efforts to manage load growth 
+through retail tariffs and rate design); Public Interest Organizations at 16 (explaining that many state utility 
+commissions have either already approved or are in the process of establishing large load tariffs intended 
+to insulate other customers from inappropriately bearing the costs utilities incur to interconnect large loads). 
+
+--- PAGE 12 ---
+12 
+ 
+industrial and commercial customers that often have very different technical, financial, and 
+regulatory needs.   
+Other commenters argue that a higher threshold could lead to gamesmanship, where loads 
+are encouraged to develop projects just above or just below the threshold to qualify for a state-run 
+or federally-run interconnection queue, depending on which is viewed as preferable, or to create 
+multiple smaller facilities so that each is below the applicable threshold.30  While the Indicated 
+PJM TOs agree the Commission should structure any applicability threshold associated with a 
+final rule in such a way to prevent gamesmanship, this does not mean that the adopted threshold 
+needs to be relaxed to do so.  For instance, provisions to prevent gaming should be crafted to 
+constrain a strategy that would entail large load customers splitting a larger facility into multiple, 
+smaller facilities simply to avoid being subject to the large load interconnection queue 
+requirements (but without inhibiting natural development behaviors at geographically proximate 
+sites). 
+NRG Energy, Inc. (“NRG Energy”) proposes that the Commission avoid adopting an 
+arbitrary MW-based jurisdictional threshold.31 NRG Energy suggests that the Commission 
+alternatively adopt a rebuttable presumption that any load interconnection at 230 kV or above is a 
+large load interconnection subject to standardized procedures.32  Although load served at 230 kV 
+or above is likely to be relatively large in size, this proposal is still overly expansive because it 
+would encompass traditional industrial and commercial loads and cooperatives and result in the 
+ 
+30 See, e.g., Comments of Virginia Corporation Commission, Docket No. RM26-4-000, at 3, 8 (Nov. 25, 
+2025). 
+31 Comments of NRG Energy, Docket No. RM26-4-000, at 3, 14-15 (Nov. 20, 2025). 
+32 Id. at 9-10. 
+
+--- PAGE 13 ---
+13 
+ 
+adverse consequences highlighted in the Indicated PJM TOs’ and other parties’ initial comments, 
+to the detriment of other key Administration priorities such as re-shoring manufacturing.    
+C. 
+The Commission Should Retain Rolled-In Rate Treatment for Network 
+Transmission Upgrades. 
+ 
+ 
+A number of commenters indicate support for direct assignment of network transmission 
+upgrade costs to large load customers, claiming that doing so best comports with cost causation 
+principles.33 Their assertions are wrong and contrary to decades of Commission precedent 
+governing transmission pricing policy.34  “[I]n determining permissible prices for transmission 
+services, the Commission treats each transmission customer not as using a single transmission path 
+but rather as using the entire . . . system[,]” which it refers to as “rolled-in” pricing.35  The 
+Commission, through its findings, has sustained applicability of its rolled-in rate treatment policy 
+and avoided shortsighted attempts to balkanize the electric system into circuit-by-circuit cost 
+allocation classes.36  Dividing up the network, particularly between individual load customers of 
+ 
+33 See, e.g., Comments of Maryland Public Service Commission, Docket No. RM26-4-000, at 11 (Nov. 21, 
+2025); Comments of Buckeye Power, Inc., Docket No. RM26-4-000, at 18-20 (Nov. 21, 2025) (“Buckeye 
+Power”); Comments of the Office of the Illinois Attorney General, Docket No. RM26-4-000, at 11-12 (Nov. 
+21, 2025); ELCON at 8; PA and DE Advocates at 24-27; ECA at 22. 
+34 See Otter Tail Power Co., Opinion No. 93, 12 FERC ¶ 61,169, at 61,420 (1980); see also Idaho Power 
+Co., Opinion No. 13, 3 FERC ¶ 61,108 (1978); Utah Power & Light Co., Opinion No. 220, 27 FERC ¶ 
+61,258, reh’g denied, 28 FERC ¶ 61,088 (1984), aff’d sub nom. Sierra Pac. Power Co. v. FERC, 793 F.2d 
+1086 (9th Cir. 1986); Niagara Mohawk Power Corp., Opinion No. 296, 42 FERC ¶ 61,143 (1988); 
+Mansfield Mun.  Elec. Dep’t v. New England Power Co., 94 FERC ¶ 63,023, aff’d, Opinion No. 454, 97 
+FERC ¶ 61,134 (2001), reh’g denied, Opinion No. 454-A, 98 FERC ¶ 61,115 (2002). S. Cal. Edison Co., 
+100 FERC ¶ 61,219, at P 18 (2002); Am. Elec. Power Serv. Corp., 101 FERC ¶ 61211, 61910 (2002) 
+(affirming earlier decision to roll in costs associated with transmission facilities, without discussing Order 
+No. 888, and noting that “historically, the rolled-in method of transmission cost allocation has been 
+favored”); Allegheny Power, 122 FERC ¶ 61,160 at P 29 (2008); Pinnacle West Capital Corp., 131 FERC 
+¶ 61,143, at P 42 (2010); Buckeye Power, Inc. v. Am. Transmission Sys. Inc., Opinion No. 533, 148 FERC 
+¶ 61,174 (2014); Duke Energy Carolinas, LLC, 168 FERC ¶ 61,190, at P 18 (2019) (citing Ne. Tex. Elec. 
+Coop., 108 FERC ¶ 61,084 (2004). 
+35 Northern States Power Co. v. FERC, 30 F.3d 177, 179 (D.C. Cir. 1994). 
+36 See The Potomac Edison Co., 20 FERC ¶ 63,060 (1982), aff’d, Opinion No. 163, 23 FERC ¶ 61,106 
+(1983); Utah Power & Light Co., Opinion No. 220, 27 FERC ¶ 61,258, reh’g denied, 28 FERC ¶ 61,088 
+(1984), aff’d sub nom. Sierra Pac. Power Co. v. FERC, 793 F.2d 1086 (9th Cir. 1986) (“FERC favors 
+
+--- PAGE 14 ---
+14 
+ 
+different use types and sizes, risks creating a patchwork of individual cost allocation assignments 
+that obscures37 the cumulative and individual benefits of an integrated transmission system.38  
+The notion that smaller load customers will not benefit from the network upgrades driven 
+by large load data center customers is presumptive and illogical.  Existing networks were 
+constructed to serve the needs and long-term load growth of all classes of customers.39  Also, 
+arguments in favor of direct assignment seem often to assume that most of the transmission 
+upgrades triggered by data centers are relatively near to and solely committed to serve data center 
+loads.  But this is not the case, as transmission upgrades, even when prompted in whole or part by 
+data center interconnections can, and often do, involve significant work on integrated facilities that 
+serve customers across wide geographic areas.  Taking a forensic-like approach to cost allocation 
+where transmission providers are compelled to quantify benefits at the level of the end user’s 
+meter, where neighboring circuits obtain vastly different outcomes would be, at best, challenging, 
+and at worst (and more likely), entirely unworkable.  Employment of such a granular level of cost 
+ 
+rolled-in cost allocation”); Buckeye Power, 148 FERC ¶ 61,174 (refusing to balkanize the grid for cost 
+allocation purposes by voltage level). 
+37 Many of the commenters seem confused as to the appropriate approach and take ambiguous positions.  
+For example, Advanced Energy United states: “it is logical that both load and hybrid facilities should be 
+responsible for 100% of the network upgrades” that are attributed to serve the load.  But Advanced Energy 
+United later purports that “Large loads should not be saddled with the full cost of the network upgrades that 
+benefit load generally . . . Fair and equitable cost distribution and consistent processes help to maintain a 
+reliable network and efficient queue, supporting just and reasonable rates for all customers.”).  Comments 
+of Advanced Energy United, Docket No. RM26-4-000, at 24-25 (Nov. 21, 2025).   
+38 See Nevada Power Co. v. FPC, 589 F.2d 1002, 1005 (9th Cir. 1979) (affirming the Commission’s 
+decision to allocate a portion of the costs of the Mojave Substation to California-Pacific Utilities Company, 
+a system served by Nevada Power, on basis that “Nevada Power operates an integrated transmission that 
+serves all customers, [and as] such transmission costs should be rolled-in with all other system-wide costs”). 
+39 Industrial Customer Organizations at 9 (“mandating 100% cost responsibility for all network upgrades 
+triggered by a new large load interconnection would bring an unjust and unreasonable results in some cases, 
+particularly where growth is methodical, planned, and fits within the existing framework, and where 
+existing customers in the impacted utility zone are generally allocated costs of new network upgrades that 
+benefit them.”). 
+
+--- PAGE 15 ---
+15 
+ 
+allocation would also fail to account for system use and topology changes that may occur during 
+a transmission asset’s decades of useful life.40  Mandatory direct assignment cost allocation may 
+sound good using an overly narrow time perspective,41 but in reality and in many circumstances, 
+it will unintentionally promote free ridership on circuits serving customers who pay little for their 
+use of the grid, resulting in avoidable cost allocation battles that may not be easily resolved.42  
+Direct assignment of network upgrade costs dramatically increases the costs to the data center and 
+will likely reduce the number of data centers that interconnect and slow others that are sufficiently 
+brave to weather the process.  Direct assignment is a tool appropriately utilized at the state level 
+on discrete portions of facilities that solely benefit a particular retail customer.  Direct assignment, 
+however, is not an across the board solution to large load interconnections and should neither be 
+required nor serve as a mandate for the costs associated with network upgrades.43  
+Direct assignment is also unlikely to address affordability, even if it seems appealing on its 
+face.  Allowing large load data center customers to exclusively fund network upgrades, and no 
+ 
+40 See, e.g., id. (“Several manufacturers are seeking to onshore and expand facilities; however, their growth 
+trajectory and planning tends to have a longer time horizon, without the same exact speed-to-power 
+requirements of data centers responding to the nation’s ambitious Artificial Intelligence objectives.”). 
+41 See e.g., Comments of the Land Trust Alliance, Docket No. RM26-4-000, at 9 (Nov. 21, 2025) (“Placing 
+the costs of upgrading transmission infrastructure on new large load users, such as data centers, and not on 
+pre-existing customers, will likely reduce strain on the grid, as large load facilities would be incentivized 
+to minimize their energy consumption.  Less strain on the grid reduces the need for new transmission 
+infrastructure, in turn protecting conserved lands from future condemnation actions.  This also protects pre-
+existing ratepayers who are already struggling with rapidly increasing utility bills.”).    
+42 See e.g., Pub. Serv. Co. of Indiana v. FERC, 575 F.2d 1204 (7th Circ. 1978) (resolving a four year cost 
+allocation dispute and affirming FERC’s finding that the transmission lines represent an integrated system 
+and that the costs should be rolled-in with the backbone grid because they benefit all customers); see also 
+Industrial Customer Organizations at 9-10 (“In evaluating where to make long-term investments in 
+communities, manufacturers have relied on [the rolled-in ratemaking] approach to cost allocation for years, 
+as it is supported by cost causation principles.”). 
+43 Id. (“the ANOPR overlooks the practical and financial consequences of potentially subjecting 
+manufacturers (who are trade-exposed, labor intensive, and price sensitive) to a mandatory large load 
+interconnection rule in which they pay 100% of upgrade costs, even if the ensuing network upgrades benefit 
+other customers”). 
+
+--- PAGE 16 ---
+16 
+ 
+other transmission upgrades, similar to generation interconnection customers, would result in an 
+underfunded system.  Under such a construct, large load data center customers would not pay their 
+fair share for the benefits they receive, resulting in an unlawful cost shift to other customers who 
+have to shoulder a greater share of the costs that would otherwise be shouldered by large load 
+customers under the Commission’s rolled-in rate policy.    
+ 
+The better approach, and one that avoids protracted cost allocation disputes, as well as 
+better respects jurisdictional boundaries, is to continue to apply the Commission’s longstanding 
+preference for rolled-in rate treatment as the default cost allocation methodology for large load 
+driven network upgrades.44  By contrast, other mechanisms, such as state retail tariffs and 
+agreements and Commission jurisdictional obligations imposed on the wholesale transmission 
+customer (the load-serving entity that stands between the transmission grid and the large load data 
+center customer) are more appropriate to address concerns that large load customers pay their fair 
+share of the associated costs.45  To aid in this effort, transmission providers throughout the country, 
+including some of the Indicated PJM TOs, are establishing service agreements and large load 
+ 
+44 In addition to the Commission finding it just and reasonable to continue to use its rolled-in rate policy 
+and encouraging development of service agreements that contain comprehensive consumer protection 
+mechanisms, the Commission should clarify that just and reasonable transmission rates must, and do, 
+include the ability of transmission owners to earn a reasonable rate of return on facilities integrated with 
+the transmission system.  The scope of such investments need not matter.  No commenters argue in 
+opposition to this approach.  Therefore, any final rule should uphold these regulatory principles that are 
+firmly grounded in the protections provided under the United States Constitution. See FPC v. Hope Nat. 
+Gas Co., 320 U.S. 591, 603 (1944); Bluefield Waterworks & Imp. Co. v. Pub. Serv. Comm’n of W. Va., 262 
+U.S. 679, 690 (1923). 
+45 The Commission may permit exceptions to its rolled-in rate policy, which it has permitted under other 
+circumstances over time.  Exceptions to the rolled-in rate policy may be reviewed on a case-by-basis and 
+could include instances of direct assignment where such arrangements can be shown to be just and 
+reasonable. 
+
+--- PAGE 17 ---
+17 
+ 
+tariffs that provide consumer protection terms to ensure other customers are not saddled with 
+stranded costs.46 
+  
+In their comments, Public Interest Organizations (“PIOs”) claim that recent transmission 
+upgrades constructed to help accommodate data center load in PJM show little to no system 
+benefit.47  The PIOs have cherry-picked a small subset of five projects, some of which are in-
+service and some are not, in an attempt to establish that going-forward network upgrades driven 
+by large load interconnections should be cost allocated as direct assignment facilities.  This is not 
+a sound basis to adopt a nationwide cost allocation policy, particularly one that involves significant 
+risks of triggering economic regression in the manufacturing sector and stunting capital investment 
+in the transmission grid.48  Even within this small subset, however, PIOs’ claims regarding lack of 
+wider system benefits are rife with errors and unsupported assertions.  For example, the PIOs’ 
+assertion that the Beaumeade STATCOM does not benefit the whole system because it is a voltage-
+only fix and does not improve bulk power flow or transfer capability ignores the fact that 
+STATCOMs dynamically adjust reactive power to help maintain voltage stability across the 
+network.49  By regulating voltage levels, STATCOMs improve the overall power transfer 
+capability through existing transmission lines.  Additionally, the precise control of voltage and 
+reactive power that a STATCOM offers minimizes the risk of voltage fluctuations and improves 
+ 
+46 See e.g., PECO Energy Co., 193 FERC ¶ 61,148, at P 32 (2025) (accepting for filing a “Transmission 
+Security Agreement [that] includes ‘safeguards to protect consumers’ that otherwise would not exist by 
+providing that Amazon pays PECO a sum reflecting Amazon’s minimum contribution to the transmission 
+revenue requirement, regardless of whether the Data Center operates as anticipated or is ever built.”).  
+47 See Public Interest Organizations at 32-34. 
+48 See Industrial Customer Organizations at 10 (“While certain large loads may be able to commit to pay 
+for all network system upgrades [in a direct assignment construct], such an approach would be financially 
+devastating to manufacturers and discourage manufacturers from onshoring, engaging in redevelopment, 
+and expanding new facilities or lines of production.”). 
+49 Public Interest Organizations at 33. 
+
+--- PAGE 18 ---
+18 
+ 
+overall system reliability.  The PIOs also cite the Commission’s order in Docket No. ER24-2172, 
+claiming that “PJM confirmed upgrades would be triggered [relating to an increase in co-located 
+load at the Susquehanna Nuclear facility] above 480 MW, with no broader system benefit.”50  In 
+addition to the fact there is no current upgrade project here, nothing in the Commission’s order,51 
+nor the PJM transmittal letter,52 indicates that any such project would provide no system 
+benefits.  Further, with respect to the Kraken 500 kV loop and substation project, PJM explicitly 
+found broader system benefits, stating that this upgrade “alleviates stability and operational 
+constraints in the area.”53  
+Moreover, PIOs’ presentation fundamentally misunderstands the transmission planning 
+process in PJM, which looks at system conditions holistically, rather than planning around the 
+incremental impacts of individual load customers.  For instance, in its Reliability Analysis Report 
+for its 2024 RTEP Window 1 solicitation process, PJM explained that its underlying analysis 
+identified over 1,000 thermal and voltage violations, and that this large number of violations was 
+driven by a number of factors, including both changes in load patterns as well as the impact of 
+incoming large generation projects.54  Thus, the resulting projects selected by PJM were driven 
+collectively by generation and load changes throughout the PJM footprint, and not individual data 
+centers or other customers.  Also, the infrastructure expansions being driven in part by data center 
+ 
+50 Id. at 33 (emphasis added). 
+51 PJM Interconnection, L.L.C., 189 FERC ¶ 61,078, at P 10 (2024) (“PJM states that it has determined that 
+any load addition in excess of 480 MW would result in generation deliverability violations and require 
+installation of system upgrades.”). 
+52 PJM Transmittal, Docket No. ER24-2172 (filed June 3, 2024).  
+53 PJM, Reliability Analysis Report 2024 RTEP Window 1, at 56 (Feb. 10, 2025), https://www.pjm.com/-
+/media/DotCom/committees-groups/committees/teac/2025/20250304/20250304-2024-rtep-window-1-
+reliability-analysis-report.pdf#page7. 
+54 See id. 
+
+--- PAGE 19 ---
+19 
+ 
+load have resulted in enhanced reliability and resilience system-wide to the benefit of customers.55  
+Moreover, even when discrete network upgrades can be identified as facilities that would not have 
+been necessary at this particular moment “but for” the interconnection of specific data center 
+customers, such upgrades still often provide grid-wide benefits, such as addressing end-of-life or 
+operational performance issues that would ultimately need to be addressed, and paid for by all 
+network customers, absent the data center interconnection. 
+ 
+Some commenters raise concerns that existing retail rate protections are insufficient to 
+protect wholesale customers from large load interconnections.  For instance, Buckeye Power states 
+that “[a]lthough these large loads may be retail customers, they have significant impacts on 
+Commission jurisdictional transmission rates and risk significant cost shifts to other wholesale 
+transmission customers.”56  However, as Buckeye Power acknowledges, these concerns are being 
+addressed by transmission providers, including the Indicated PJM TOs, in the terms and conditions 
+of recent large load service agreements.  These include minimum charges, early termination fees 
+and other mechanisms that will, if triggered, act to offset wholesale transmission revenue 
+requirements.57  These mechanisms serve to protect both retail and wholesale customers from cost 
+shifts and stranded costs, and can comfortably co-exist with the Commission’s longstanding policy 
+of rolled-in rate treatment for integrated transmission upgrades.  As such, the Commission should 
+instead consider encouraging transmission providers to develop and submit for filing large load 
+service agreements that contain comprehensive customer protection mechanisms like those 
+ 
+55 See supra Section II.C (discussing PJM’s RTEP process and the Indicated PJM TOs’ response to the 
+PIOs’ claims). 
+56 Buckeye Power at 2. 
+57 See id. at 26-27; see also PECO Energy Co., 193 FERC ¶ 61,148. 
+
+--- PAGE 20 ---
+20 
+ 
+mentioned in Buckeye Power’s comments, rather than adopt a general rule requiring the direct 
+assignment of network upgrades.58   
+The Indicated PJM TOs do not, however, agree with the alternative proposal to hold the 
+“wholesale transmission entity responsible for the network upgrade costs caused by the large load 
+it has a direct relationship with.”59  This proposal has the same flaws as direct assignment, insofar 
+as it ignores the fact that integrated transmission upgrades provide system-wide benefits to other 
+wholesale transmission customers (and in turn their end-use customers), not just to the wholesale 
+transmission customer that will serve the new large load data center customer.    
+D. 
+No Commenters Provide a Compelling Rationale for Providing Load 
+Customers an Option to Build. 
+ 
+Some commenters support the ANOPR’s proposal to provide large load customers the 
+same or equivalent option to build as is currently provided to generator interconnection 
+customers.60  Certain of the commenters that support the option to build frame their support on the 
+basis that providing an option to build would promote data center speed-to-power goals and be 
+more efficient and cost-effective.61  However, as explained by the Indicated PJM TOs and other 
+transmission-owning entities, experience with generator interconnections, as well as a recognition 
+of the differences between generators and load customers, demonstrates otherwise.62   
+ 
+58 Buckeye Power at 26-28. 
+59 Id. at 22-23. 
+60 See, e.g., Comments of RWE Clean Energy, Inc., Docket No. RM26-4-000 at 9 (Nov. 21, 2025), 
+Comments of FuelCell Energy, Inc., Docket No. RM26-5-000, at 6 (Nov. 21, 2025); Comments of 
+Constellation Energy Generation, LLC, Docket No. RM26-4-000, at 26-27 (Nov. 21, 2025); CAISO at 14; 
+Public Interest Organizations at 35; PA and DE Advocates at 27.  
+61 See e.g., Advanced Energy United at 25. 
+62 See MISO TOs at 28; New York TOs at 17-18; Comments of ITC Holdings Corp., Docket No. RM26-4-
+000, at 5 (Nov. 21, 2025); Comments of PPL Corporation, Docket No. RM26-4-000, at 14-15 (Nov. 21, 
+2025); Comments of Southwest Power Pool Transmission Owner Group, Docket No. RM26-4-000, at 8-9 
+(Nov. 21, 2025); Comments of the Midcontinent Independent System Operator, Inc., Docket No. RM26-4-
+000, at 26 (Nov. 21, 2025). 
+
+--- PAGE 21 ---
+21 
+ 
+Constructing transmission upgrades—including direct connect facilities and stand alone 
+upgrades, the facilities subject to option to build today—requires significant expertise to ensure 
+that such facilities will operate safely and reliably.  Implementing an option to build, even in the 
+context of generators that are electric utilities, has required transmission owners to develop robust 
+safeguards and other supervisory procedures to ensure that these objectives are achieved.  When 
+factoring in these additional requirements, any potential efficiencies or cost savings are rendered 
+de minimis or non-existent.  Indeed, when taking into account the magnitude of infrastructure 
+upgrades that could be driven by data center load additions over the next several years, requiring 
+transmission owners to expend significant resources to supervise the design, engineering, and 
+construction of customer-built facilities could end up working at odds with the goals of efficiency 
+and cost-effectiveness.  This is because the activities necessary to safely and reliably implement 
+an option to build may require more time and effort from these personnel than would be the case 
+if they were tasked with designing and constructing these facilities themselves, as they are trained 
+to do.  
+ 
+Given the significant expertise needed to ensure these facilities can be operated safely and 
+reliably, providing an option to build for large load customers is also particularly problematic 
+because it is the transmission owners and their affiliates who bear the responsibility, and associated 
+liability, to operate and maintain network transmission facilities.63  This is the case both in terms 
+of compliance with NERC standards as well as the fact that utilities have state-mandated 
+obligations to serve all retail loads.  This raises issues of basic equity and fairness.  It also risks 
+ 
+63 Again, this principle appears to assume that most of the work required to interconnect large load 
+customers will be transmission-related, when in fact in most cases distribution-level work will also be 
+required.  So another risk of permitting large load customers an option to build is that it could create 
+inconsistency with state-jurisdictional procedures relating to local distribution upgrades.  
+
+--- PAGE 22 ---
+22 
+ 
+creating unnecessary complexity and confusion if an issue arises regarding the reliability of a 
+facility constructed by a load customer.   
+ 
+A few commenters also argue that affording an option to build to large load customers 
+would avoid discriminating against large load customers relative to generation customers.64  This 
+is incorrect.  Load is not competing with generation for access to the system and is therefore not 
+similarly situated to generation.  Load, on the other hand, wishes for more generation to connect 
+to the system, therefore, there is no prospect for unduly discriminatory conduct or treatment 
+between load and generation.  As the Indicated PJM TOs and other commenters point out, there 
+are good, non-discriminatory reasons for distinguishing between generators and load customers, 
+not the least of which is the fact that, at a minimum generators are governed by NERC reliability 
+standards while at least at present, load customers are not. 
+ 
+E. 
+Netting On-Site Load and Generation Risks Shifting Significant Costs to  
+ 
+ 
+Other Retail Customers 
+ 
+ 
+ 
+ 
+A number of commenters express support for Principle 5 in the ANOPR, which proposes 
+studying load and generation from hybrid large load facilities together based on a facility’s 
+requested injection and withdrawal rights, i.e., on a “net” basis.65  Many of these commenters also 
+agree that there should not be undue impacts, particularly cost impacts, on other customers.  
+However, as the Indicated PJM TOs and other commenters with experience planning transmission 
+point out, on-site load and generation need to be studied at their full amounts to ensure reliable 
+interconnection.66  In addition to reliability concerns, the failure to fully study load and generation 
+ 
+64 Public Interest Organizations at 35. 
+65 See, e.g., Comments of ENGIE North America, Inc., Docket No. RM26-4-000, at 8 (Nov. 21, 2025); 
+Comments of Tesla, Inc., Docket No. RM26-4-000, at 2 (Nov. 21, 2025); Public Interest Organizations at 
+24. 
+66 See, e.g., Indicated PJM TOs at 36-37. 
+
+--- PAGE 23 ---
+23 
+ 
+from hybrid facilities could lead to substantial adverse cost consequences to other retail and 
+wholesale customers.  For instance, if a hybrid facility with 500 MW load and 600 MW of 
+generation is only studied as a 100 MW generator, and the generator goes offline, the facility will 
+need to rely on 500 MW of load served by generation and transmission from the system.  This, of 
+course, raises substantial reliability concerns, but it also threatens cost shifts to other customers 
+relating to the facilities and services needed to ensure the hybrid customer’s full on-site load can 
+be served without threatening system stability.  This concern will be even more acute if the 
+Commission elects to require direct assignment of network upgrade costs, and limits the “but for” 
+upgrade costs for which the customer is responsible to those necessary to accommodate only the 
+“net” amount of requested withdrawal or injection rights.  
+III.  
+CONCLUSION 
+The Indicated PJM TOs appreciate the opportunity to submit reply comments on the  
+ANOPR, and respectfully request that the Commission act in accordance with these reply 
+comments, as well as the Indicated PJM TOs’ initial comments. 
+ 
+Respectfully submitted, 
+ 
+ 
+/s/ Michael Kunselman  
+ 
+Michael Kunselman  
+Richard P. Sparling  
+Nicholas J. Cicale 
+Jonathan A. Namazi 
+Davis Wright Tremaine LLP  
+1301 K Street NW  
+Suite 500 East  
+ 
+Washington, DC 20005  
+ 
+Counsel for the FirstEnergy Companies  
+On behalf of the Indicated PJM 
+Transmission Owners 
+ 
+/s/ Molly Suda 
+ 
+  
+Molly Suda 
+Associate General Counsel 
+Annelise Rickert  
+Federal Government Affairs Director 
+Duke Energy Corporation 
+1301 Pennsylvania Ave NW, Suite 200 
+Washington, DC 20004 
+Telephone: 202-824-8011 
+Email: molly.suda@duke-energy.com  
+Annelise.rickert@duke-energy.com  
+  
+On behalf of Duke Energy 
+ 
+
+--- PAGE 24 ---
+24 
+ 
+/s/ Morgan Parke 
+ 
+Morgan Parke  
+Associate General Counsel 
+Amanda P. Parker 
+Corporate Counsel 
+FirstEnergy Service Company 
+341 White Pond Drive  
+FEHQ-B3  
+Akron, Ohio 44320  
+(330) 620-9585  
+(330) 384-4592 
+mparke@firstenergycorp.com  
+aparker@firstenergycorp.com  
+ 
+ 
+Counsel for the FirstEnergy Companies 
+/s/ Steve Nadel 
+ 
+Steven M. Nadel 
+Senior Counsel 
+PPL Services Corp.  
+645 Hamilton Street, Suite 601 
+Allentown, PA 18101 
+Telephone: 610-774-4775 
+Email: SMNadel@pplweb.com 
+ 
+On behalf of PPL Electric Utilities Corp 
+ 
+December 5, 2025 
+/s/ Joshua A. Kirstein  
+  
+Joshua A. Kirstein  
+Senior Attorney  
+Law Department 
+Consolidated Edison Company of New York,  
+Inc.  
+4 Irving Place, 18th Floor  
+New York, NY 10003  
+Telephone: 929-656-5971 
+Email: kirsteinj@coned.com 
+ 
+ 
+On behalf of Rockland Electric Company 
+/s/ Alejandro Bautista             
+Alejandro Bautista 
+Assistant General Counsel 
+Cynthia L.M. Holland 
+Associate General Counsel 
+Exelon Corporation 
+2301 Market Street 
+Philadelphia, PA 19101 
+Telephone: 267-533-0120 
+Email: Alejandro.Bautista@exeloncorp.com 
+Cynthia.Holland@exeloncorp.com 
+  
+ 
+On behalf of Exelon Corporation 
+ 
+ 

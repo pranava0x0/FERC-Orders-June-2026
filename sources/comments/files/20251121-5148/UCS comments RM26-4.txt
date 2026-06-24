@@ -1,0 +1,400 @@
+--- PAGE 1 ---
+ 
+UNITED STATES OF AMERICA 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+  
+ 
+Interconnection of Large Loads to the Interstate 
+Transmission System 
+Docket No. RM26-4-000 
+ 
+COMMENTS OF THE UNION OF CONCERNED SCIENTISTS 
+ 
+The Union of Concerned Scientists (“UCS”) appreciates the opportunity to 
+submit comments on Secretary of Energy’s advanced notice of proposed rulemaking (“proposed 
+ANOPR”).  UCS supports the Commission’s effort and offers these comments in Docket No. 
+RM26-4-000 noticed October 27, 2025 regarding Interconnection of Large Loads to the Interstate 
+Transmission System. 
+  
+The Union of Concerned Scientists is a national nonprofit organization representing our 
+members and the public interest in advancing responsible public policies in areas where science 
+and technologies play a critical role. Established in 1969, UCS has created a unique alliance 
+between many of the nation’s leading scientists and thousands of committed citizens. The UCS 
+Climate & Energy Program focuses on developing a sustainable energy system—one that is 
+affordable and nondepletable, and that does not degrade natural systems or public health. UCS is 
+headquartered in Cambridge, Massachusetts and has offices in Oakland, Chicago and 
+Washington, D.C. 
+We encourage the Commission to address the issues identified in the ANOPR and 
+gather support and perspective for possible reforms that will provide the industry and 
+consumers with increased reliability under changing conditions and protection from 
+excessive costs. UCS submitted comments in a proceeding earlier this year related to 
+
+--- PAGE 2 ---
+interconnection of large loads1 as well as interconnection-related rulemakings over the 
+past 12 years.2 
+I. 
+Comments 
+UCS offers comments on Principles Five through Eight included in the proposed 
+ANOPR.  
+A. Principle 5: Studies of large loads with on-site, grid connected generation 
+must account for both the net and gross amounts of both load and 
+generation because power limiting controls are not instantaneous 
+The fifth principle in the ANOPR suggests that “hybrid facilities” (defined as “large loads […] 
+seeking to share a point of interconnection with new or existing generation facilities”3) should be 
+studied at their net capacity: 
+Fifth, hybrid facilities should be studied based on the amount of injection and/or 
+withdrawal rights requested. For example, a hybrid facility consisting of a 500 MW load 
+and a 600 MW generating facility may seek no withdrawal rights and 100 MW of 
+injection rights. This provides incentives for co-location with new generation facilities 
+and ensures efficient buildout of the transmission system.4 
+The example implies that rather than undergoing two separate study processes—one as a 
+500 MW load and one as a 600 MW generating facility—the project should only be studied as a 
+100 MW generating facility. While the intent to simplify the process and avoid the need to 
+ 
+1 Order Instituting Proceeding Under Section 206 of the Federal Power Act and Consolidating With Other 
+Proceedings  Docket Nos. EL25-49-000, AD24-11-000, EL25-20-000 (Consolidated). 
+2 See e.g. Small Generator Interconnection Agreements and Procedures  RM13-2-000, Document Accession No, 
+20130531-5220; Essential Reliability Services and the Evolving Bulk-Power System - Primary Frequency Response 
+RM16-6-000 Ascension No. 20170123-5154; Building for the Future Through Electric Regional Transmission 
+Planning and Cost Allocation and Generator Interconnection RM21-17-000, Ascencion Number 20211012-5493; 
+Improvements to Generator Interconnection Procedures and Agreements RM22-14-000 Ascension No. 20221209-
+5169; Reliability Standards for Frequency and Voltage Protection Settings and Ride-Through For Inverter-Based 
+Resources RM25-3-000,  Ascension No. 20250207-5022. 
+3 Chris Wright, “Ensuring the Timely and Orderly Interconnection of Large Loads: Advance Notice of Proposed 
+Rulemaking,” October 23, 2025, 9, https://www.energy.gov/sites/default/files/2025-
+10/403%20Large%20Loads%20Letter.pdf. 
+4 Ibid., 11. 
+
+--- PAGE 3 ---
+perform two separate studies is reasonable, even a combined process must still consider both the 
+full generation and full load amounts separately at specific points in the study process. 
+Considering only the net injection ignores the potential impacts of the project to the grid during 
+normal operations as the moment-by-moment injection could vary widely, from -500 MW when 
+the generator is offline up to +600 MW when the load is offline. While the sixth principle 
+(discussed below) addresses controls and protections that will help mitigate unauthorized 
+withdrawals and injections, technical limitations of the equipment in question (generators, load, 
+and system protection facilities), still necessitate that the study process consider both the full 
+withdrawal and the full injection of which the hybrid facility is capable. To put a finer point on it: 
+capabilities to limit injections or withdrawals are not instantaneous and are not error-proof.  
+The challenge of meeting demand from new large loads requires the industry to recognize 
+lessons learned from the widespread deployment of new generators on existing, often capacity-
+constrained distribution systems.  Principles 5, 6, and 7 rely on concepts of controlling 
+generation to abide by pre-determined limits regardless of variability in loads or inabilities of 
+generator flexibility. Thermal generation operating on the bulk power system have generally not 
+been required to adhere to such exacting performance expectations in the past because the size of 
+most balancing areas and the scale of system operations was more forgiving of conventional 
+plant inflexibility. The drafting and adoption of rules that presume tight control and a narrow 
+range of performance from conventional generation with co-located loads will need to be based 
+on clearly stated and explicitly measured standards or limits.     
+ Similar considerations for inverter-based resources (“IBRs”) connected to the 
+distribution system are instructive here. In many cases, the ability of multiple customers to 
+connect distributed energy resources (“DERs”) to the same segment of the distribution system is 
+
+--- PAGE 4 ---
+limited by the capacity of distribution equipment on that segment. To address this, many 
+distribution utilities now allow the use of export-limiting systems. While this can be 
+implemented in several ways, in recent years IBR manufacturers have begun offering inverters 
+with built-in power control systems (“PCS”) that can limit export below specified kW limits. 
+These inverters are now covered by several relevant standards, such as IEEE 1547-2018, UL 
+1741, and UL 3141. 
+However, there are two key caveats with this capability. First, power limiting is not 
+instantaneous. When power output exceeds specified limits, a few moments are required for the 
+PCS to measure this, then a few moments more to reduce the output. This phenomenon, known 
+as inadvertent export, is an issue for both transmission and distribution systems, as discussed in a 
+recent Department of Energy report on DER interconnection:: 
+Inadvertent exports are minimal, short-duration power outputs from DERs, which occur 
+during rapid changes in generation or load due to response delays from the plant’s PCS. 
+For example, the interconnection agreement for a 750-kW PV system might allow the 
+system to export no more than 500 kW to the grid, so any export above 500 kW would be 
+inadvertent. Inadvertent export could have adverse voltage, thermal, protection, or power-
+quality impacts on the system.5 
+The report notes that inadvertent export events can be triggered by changes in generation 
+or load. This is because just like the “hybrid facilities” discussed in the ANOPR, distribution-
+connected inverters almost universally share a point of common coupling with a load, and the 
+export limit is net of load and generation—if either changes suddenly (for example, due to an air 
+ 
+5 Diane Baldwin et al., Distributed Energy Resource Interconnection Roadmap; Transforming Interconnection by 
+2035, Interconnection Innovation E-Xchange (I2x) (U.S. Department of Energy, January 16, 2025), 108, 
+https://www.energy.gov/eere/i2x/doe-distributed-energy-resource-interconnection-roadmap. 
+
+--- PAGE 5 ---
+conditioner cycling off, or clouds parting above a solar array) a spike in the net output power can 
+be expected, and the PCS will not be able to respond instantly. 
+By default, UL 3141, the standard for PCS, requires that detecting and eliminating 
+inadvertent export take 30 seconds or less in clause 8.2.3, while allowing utilities to require 
+faster response times.6 While this response period is typically short enough to avoid equipment 
+damage due to overloading (i.e. thermal damage to equipment), power quality impacts may be 
+observed, particularly related to rapid voltage changes. To address this impact, a group of 
+industry experts has proposed (and several states have adopted) a power quality screen which 
+accounts for both the nameplate and export-limited capacity of proposed DER projects.7 
+The second caveat with export limited systems is noted in a footnote to the DOE report: 
+In general, PCSs are not considered under fault scenarios. Thus, screens for export-
+limited resources with PCSs would consider the nameplate rather than export capacity, 
+and any impacts of inadvertent export should be captured in existing screens.8 
+That is, while export-limited capacity can and should be used when evaluating whether a 
+given segment of the grid has capacity to accept a new generation resource, the full nameplate 
+capacity of the resource must still be used when studying fault conditions to identify power 
+quality impacts.   
+Notably, this caveat applies to more than just PCS-limited IBRs. No means of export 
+limiting is instantaneous, regardless of the source of generation.9 Therefore, this also applies to 
+ 
+6 Underwriters Laboratories, “UL 3141 Outline of Investigation for Power Control Systems,” October 9, 2024, 
+https://www.shopulstandards.com/ProductDetail.aspx?UniqueKey=47260. 
+7 IREC et al., BATRIES: Toolkit and Guidance for the Interconnection of Energy Storage and Solar-Plus-Storage 
+(IREC, March 2022), 63–65, https://energystorageinterconnection.org/wp-content/uploads/2022/03/BATRIES-
+TOOLKIT-FINAL-3.28.22.pdf. 
+8 Baldwin et al., Distributed Energy Resource Interconnection Roadmap; Transforming Interconnection by 2035, 
+109. 
+9 PCS reply slower than traditional systems utilizing relays, which have been the subject of more recent and detailed 
+discussion. 
+
+--- PAGE 6 ---
+transmission-connected systems: the full nameplate capacity must be used when studying fault 
+conditions. 
+Currently, we are not aware of studies or research on inadvertent export from 
+transmission-connected generators. However, clause 4.6 of IEEE 2800-2022, the standard for 
+such systems, does allow transmission system (“TS”) operators to specify external control inputs 
+that IBRs must be capable of responding to, including “Capability to limit active power at a 
+value below IBR continuous rating (ICR) within a time as specified by the TS operator.”10 (The 
+forthcoming test and verification standard for IEEE 2800 will likely include more detailed 
+criteria for verifying performance.11) Notably, while allowing for this capability, IEEE 2800 
+makes no allowance for systems to be evaluated at anything less than nameplate capacity. 
+Despite the lack of information specifically related to inadvertent export on the 
+transmission system, the available research for distribution-connected IBRs paints a compelling 
+parallel: while so-called hybrid facilities certainly can connect to the transmission system, there 
+are challenges that arise from the technical implementation of export limits that must be studied 
+and understood, and the full nameplate capacity must still be used when studying fault 
+conditions. We encourage further consideration of tools and techniques to address pragmatic 
+protection requirements for protection from inadvertent exports or rapidly changing loads. The 
+ANOPR includes additional expectations, such as in the following Principle 6. A future set of 
+proposed rules forthcoming from the Commission should be informed by technical 
+considerations and not be limited to a financial penalty framework.  
+ 
+10 The Institute of Electrical and Electronics Engineers, Inc., “IEEE Std 2800-2022: For Interconnection and 
+Interoperability of Inverter-Based Resources (IBRs) Interconnecting with Associated Transmission Electric Power 
+Systems” (IEEE, February 9, 2022), doi:10.1109/IEEESTD.2022.9762253. 
+11 The Institute of Electrical and Electronics Engineers, Inc., “IEEE Std P2800.2: Draft Recommended Practice for 
+Test and Verification Procedures for Inverter-Based Resources Interconnecting with Bulk Power Systems” (IEEE, 
+October 23, 2025), https://ieeexplore.ieee.org/document/11217395. 
+
+--- PAGE 7 ---
+B. Principle 6: System protection facilities for large loads with on-site, grid 
+connected generation must include capacity, voltage, and duration limits 
+The sixth principle in the ANOPR seeks comment on operational limitations of hybrid 
+facilities: 
+Sixth, any hybrid interconnection shall be required to install the system protection 
+facilities necessary to prevent unauthorized injections or withdrawals that exceed the 
+respective rights. We seek comment on whether other operational limitations should be 
+considered. We also seek comment on the minimum technical requirements for such 
+system protection facilities, whether a hybrid interconnection customer should be subject 
+to penalties for unauthorized injections or withdrawals, how any such penalties should be 
+designed, and how such penalties should be allocated to other transmission customers.12 
+We provide comment below on other operational limits and minimum technical 
+requirements. We leave questions of penalties and allocation thereof to others. 
+Following and complimenting the discussion of inadvertent export above in discussion of 
+Principle 5, operational limits for hybrid systems should include limits on duration of inadvertent 
+export (or import) and the voltage change resulting from any inadvertent export or import (in 
+addition to capacity limits). That is, system protection facilities must:  
+1. Ensure that if the facility exceeds the allowed limits, its import or export is returned 
+to the allowed limits within a fixed time period, defined by the TSO.  
+2. During the inadvertent export or import event, maintain the voltage at the point of 
+interconnection within limits defined by the TSO.  
+Regarding minimal technical requirements, while we cannot respond specifically, we 
+recommend that the Commission convene a workgroup of technical experts to develop such 
+ 
+12 Chris Wright, “Ensuring the Timely and Orderly Interconnection of Large Loads: Advance Notice of Proposed 
+Rulemaking,” 12. 
+
+--- PAGE 8 ---
+requirements. These requirements should be responsive to available technical capability and 
+should prioritize reliability while avoiding excessive costs to developers and consumers. 
+ 
+C. Principle 7: Clear rules are required to enable this principle to be 
+useable and non-discriminatory 
+The ANOPR set for consideration the following principle: 
+The interconnection study of large loads that agree to be curtailable and hybrid facilities 
+that agree to be curtailable and dispatchable should be expedited. The system operator's 
+ability to control such facilities through curtailment and/or dispatch must be sufficient for 
+the system operator to integrate the facility into both operations and system planning. 
+ 
+The seventh principle recognizes the size and potential impact of many proposed 
+large loads will require adjustments to conventional planning and operations to allow safe 
+and reliable integration. To reflect this principle in a useful rule, the industry will look to 
+the Commission for guidance on setting the basic terms of curtailment and/or dispatch. To 
+implement this principle, the Commission should propose rules that both supply (in the 
+case of a hybrid interconnection) and the load will need to commit to respond to operator 
+dispatch instructions. That commitment should indicate both the duration and the quantity 
+of the response, in either megawatts or percentage of the injection and withdrawal rights.  
+The Commission should also recognize that the large load will have an economic 
+incentive to minimize the amount of capacity and the number of hours that are required to 
+be curtailed and/or dispatched. Any forthcoming rule from the Commission must include 
+criteria for determining the amount and the duration of curtailment and/or dispatch to 
+avoid controversy and delay in the adoption of this principle. The most direct approach 
+compatible with existing grid operator dispatch is to have both the supply and demand 
+from such interconnection customers be designated as non-firm and subject to economic 
+
+--- PAGE 9 ---
+dispatch. Existing practices and rules for both generation interconnection and types of 
+transmission service recognize this level of service.13   
+In addition to the interconnection customer agreement to provide non-firm and 
+dispatchable interconnection study and status, system operator tariffs must include 
+provisions for planning and operation of such loads to be curtailable. Clear and simple 
+designation of such resources throughout study, planning and operations protocols should 
+be established for unambiguous and non-discriminatory application of this principle.  Any 
+rulemaking to establish this sort of treatment for large loads should anticipate or preferably 
+include the reforms to planning and operations that will establish the full suite of practices 
+needed to implement this principle in a nondiscriminatory manner. 
+ 
+ 
+D. Principle 8: Applying cost causation for interconnection costs will 
+address a regulatory gap 
+The ANOPR set for consideration the following principle: 
+Load and hybrid facilities should be responsible for 100% of the network 
+upgrades that they are assigned through the interconnection studies.  
+ 
+This principle should be adopted by the Commission in any future rulemaking regarding 
+the interconnection of large loads. Without action by the Commission to address cost causation 
+ 
+13 See discussions of non-firm transmission service in the Order 888 adoption of the pro-forma Open Access 
+Transmission Tariff. Promoting Wholesale Competition Through Open Access Non-Discriminatory 
+Transmission Servs. by Pub. Utils.; Recovery of Stranded Costs by Pub. Uti/so& 
+Transmitting Uti/s., Order No. 888, FERC Stats. &Regs. ~ 31,036 (1996) (crossreferenced 
+at 75 FERC ~ 61,080), order on reh 'g, Order No. 888-A, FERC Stats. & Regs. 
+~ 31,048 (cross-referenced at 78 FERC ~ 61,220), order on reh 'g, Order No. 888-B, 
+81 FERC ~ 61,248 (1997), order on reh 'g, Order No. 888-C, 82 FERC ~ 61,046 (1998), 
+aff'd in relevant part sub nom. Transmission Access Poly Study Grp. v. FERC, 225 F.3d 
+667 (D.C. Cir. 2000), aff'd sub nom. New York v. FERC, 535 U.S. 1 (2002). For a broader context for customer 
+service that is not assured for every hour of the year, see Alexandra B. Klass & Dave Owen, Allocating Electricity, 
+94 Geo. Wash. L. Rev. (forthcoming 2026), https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5399325. 
+
+--- PAGE 10 ---
+in transmission expansion for large loads, consumers will be burdened with billions of dollars in 
+new costs added to rates. Costs for transmission connections and network extensions required by 
+new large loads have already added over $4 billion to the ratebase of utilities in 2024 from 
+construction in just seven states.14 
+i. 
+How large load connection costs are included in customer rates 
+ 
+The extraordinary size of individual new large load facilities generally obligate the use of 
+higher voltage equipment to safely connect the loads to the grid. Most often this leads to large 
+loads being directly connected to the transmission (high voltage), rather than the distribution 
+(low voltage) system. As such, necessary system upgrades to connect these large loads also 
+happen at the transmission rather than the distribution level. The cost-causation principle of 
+allocating network upgrade costs breaks down, however, because current practices and protocols 
+typically dictate that transmission costs are passed on to the load-serving entities as wholesale 
+costs that are socialized across all retail customers in that utility’s service territory. 
+ 
+ The existing rules and practices allow the worst outcome: the rapidly rising costs for data 
+centers’ needs are spread across all the utilities' customers. Without reforms, existing rules will 
+continue to allow the costs for connecting large data centers to the existing transmission system 
+to raise electricity bills for all customers served by the same utilities. 
+ii. 
+Transmission costs for large load customers fall through a regulatory gap  
+Utility retail rate filings are made at state utility commissions with the transmission costs 
+set by FERC-formula rates. The annual revenue requirements for transmission are provided to 
+ 
+14 M. Jacobs. Connection Costs. Union of Concerned Scientists. September 29, 2025. 
+https://www.ucs.org/sites/default/files/2025-09/PJM%20Data%20Center%20Issue%20Brief%20-
+%20Sep%202025.pdf  
+
+--- PAGE 11 ---
+state regulators, but utilities do not typically distinguish or separate data center connection costs 
+from other transmission costs spread across all the utilities’ customers.  
+Transmission-level connections for a large load create costs that are often amalgamated 
+with typical transmission costs that are driven by reliability needs, equipment replacements and 
+collective customers’ use and passed through to retail customers via state PUC approved rate 
+cases. Any tracking of cost causation for the new large loads‘ transmission-level connection are 
+obscured in the current process.   
+In a retail rate case, state regulators set different rates for classes of customers to reflect the 
+costs to serve classes of similar customers and the revenues from those customers.15 Retail rate 
+cases normally include an important step to do this: the Cost of Service Study, which sorts which 
+customers rates should include which costs.16 With the lack of information in these proceedings 
+about large customers causing transmission costs, there is little opportunity in the retail rate-
+setting process for costs to be assigned to a customer class of very large users, (i.e. users that 
+connect at the transmission level).   
+To address the question of whether the transmission costs are somehow addressed by the 
+revenues from new large load customers through existing ratemaking practices, the allocation of 
+revenues is also critical to Principle 8. Without some reform, existing practices will continue 
+where costs caused by large customers are generally only partially offset by revenues from the 
+large customers. In a recent state inquiry regarding interconnection and tariffs of large loads, one 
+Pennsylvania utility explained that in a retail rate-setting process, this incomplete information 
+regarding costs prevents the regulator from offsetting the increased transmission costs with 
+ 
+15 Lazar, Jim, Paul Chernick, William Marcus, and Mark LeBel, eds. 2020. Electric Cost Allocation for a New Era: 
+A Manual. Montpelier, VT: Regulatory Assistance Project. Pages 29-30. 
+16 Lazar, et al. at 15. 
+
+--- PAGE 12 ---
+increased revenues from new large customers.17 Specifically, the revenues from a class of 
+customers are collected and applied to meet the revenue requirements of that class of 
+customers.18 Thus, the revenues from new large load customers are allocated only to the largest 
+customer class and are not benefiting all customers.19 Under existing practices the revenues from 
+new large load customers are recognized for the largest customer class, but the costs caused by 
+those customers are allocated to all customers. This is not the application of the “Bonbright” 
+cost-causation principle that is so often cited in utility cost allocation debates.20 
+iii. 
+Tracking transmission costs for large loads to rate base and revenue 
+requirements  
+Utilities currently perform engineering studies for the interconnection of large 
+loads in response to a request to the retail utility by the potential new customer. When the 
+large size exceeds the capacity of existing distribution facilities, the study is performed by 
+the Transmission Owner. In RTO regions, this customer-driven need is classified as a local 
+project and, therefore, the costs of any required transmission upgrades are allocated to the 
+local utility.   
+Transmission Owners in PJM provide enough information about their local 
+planning21 that UCS was able to identify 150 examples of electric utilities connecting new 
+customers with projected loads of 20 MW or greater at a cost to consumers of more than 
+$5 billion.22 These are costs the Transmission Owner identified through interconnection 
+ 
+17 Before The Pennsylvania Public Utility Commission En Banc Hearing on Interconnection and Tariffs for Large 
+Load Customers. Docket No. M-2025-3054271. Comments of Duquesne Light Company. June 6, 2025. page 7. 
+https://www.puc.pa.gov/pcdocs/1882372.pdf  
+18 Lazar et al. at 29-30. 
+19 Before The Pennsylvania Public Utility Commission En Banc Hearing on Interconnection and Tariffs for Large 
+Load Customers. Docket No. M-2025-3054271. Comments of Duquesne Light Company. June 6, 2025. page 7. 
+20 James C. Bonbright. Principles of Public Utility Rates. Columbia University Press. New York. 1961. 
+21 PJM M-3 process described  in PJM Interconnection Operating Agreement. Schedule 6 § 1.3. 
+22 M. Jacobs. September 2025. 
+
+--- PAGE 13 ---
+studies as necessary for connecting the new customers, often including new transformers 
+and substation gear on the property of the new customer. The information provided in the 
+PJM process includes the need identified by the utility, and a tracking number that follows 
+from the utility’s locally planned transmission into the PJM Regional Transmission 
+Expansion Plan (“RTEP”).23 Once included in the RTEP, that tracking number is then 
+used to include the costs for these investments in the Annual Transmission Revenue 
+Requirement for the calculation of the transmission component of retail rates.24  
+ 
+In summary, this proposed Principle of assigning costs for all upgrades identified 
+in the interconnection studies for large loads will address a regulatory gap and correctly 
+apply the widely cited principle of cost causation to significant costs presently 
+misallocated to all consumers. The ANOPR proposes a solution that encompasses 
+network upgrades. By defining the problem to include network upgrades, the ANOPR 
+addresses the particular problem of more extensive, and expensive transmission 
+expansion frequently designed to connect large loads in recent years. 
+ 
+II. 
+Conclusion 
+The Commission has initiated a rulemaking process that is both needed and broad. 
+The challenges of rapid growth in demand from large loads are significant. The need to 
+mobilize capital without discrimination or unjust rates remains pressing. We look forward 
+to any Notice of Proposed Rulemaking that may follow the Commission consideration of 
+this ANOPR. 
+ 
+ 
+23 M. Jacobs. September 2025. 
+24 See e.g. PJM Open Access Transmission Tariff Attachments H-1 through H-34. 
+
+--- PAGE 14 ---
+ 
+ 
+Respectfully submitted on this 21st day of November 2025.  
+ 
+Michael Jacobs  
+Michael Jacobs  
+Union of Concerned Scientists  
+2 Brattle Square, Suite 600  
+Cambridge, MA 02138  
+(617) 301-8057  
+mjacobs@ucsusa.org 

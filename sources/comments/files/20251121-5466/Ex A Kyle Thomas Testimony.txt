@@ -1,0 +1,1038 @@
+--- PAGE 1 ---
+ 
+ 
+ 
+ 
+Exhibit A 
+
+--- PAGE 2 ---
+ 
+ 
+ 
+STATE OF ILLINOIS 
+ILLINOIS COMMERCE COMMISSION 
+ 
+ 
+Commonwealth Edison Company 
+ 
+Filing proposing changes to new service requests 
+for large demand project applicants or customers. 
+(tariffs filed June 23, 2025) 
+ 
+Filing proposing revisions to Rider Distributed 
+System Extensions. (tariffs filed June 23, 2025) 
+ 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+ 
+ 
+Docket No. 25-0677 
+ 
+(consolidated) 
+ 
+ 
+Docket No. 25-0679 
+ 
+ 
+DIRECT TESTIMONY OF 
+ 
+ 
+KYLE THOMAS 
+ 
+ 
+ 
+ON BEHALF OF 
+ 
+ 
+THE ENVIRONMENTAL LAW & POLICY CENTER, NATURAL RESOURCES 
+DEFENSE COUNCIL, UNION OF CONCERNED SCIENTISTS, AND VOTE SOLAR 
+(“JOINT NGOs”) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+September 26, 2025 
+
+--- PAGE 3 ---
+ 
+ 
+ 
+TABLE OF CONTENTS 
+I. 
+WITNESS IDENTIFICATION .............................................................................................. 1 
+II. 
+COMED’S PROPOSED TARIFF REVISIONS .................................................................... 4 
+III. COMED'S 50 MW THRESHOLD FOR LARGE LOAD PROVISIONS ............................. 5 
+IV. TECHNICAL CONCERNS WITH LARGE LOAD INTERCONNECTIONS ..................... 6 
+V. CONCLUSION AND OVERALL RECOMMENDATIONS .............................................. 16 
+ 
+ 
+ 
+
+--- PAGE 4 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 1 of 17 
+ 
+ 
+ 
+I. 
+WITNESS IDENTIFICATION 
+1 
+Q:  
+Please state your name, title, and position.  
+2 
+A:  
+My name is Kyle Thomas, Vice President of Engineering and Compliance Services at 
+3 
+Elevate Energy Consulting, Inc. 
+4 
+Q: 
+For whom are you testifying in this matter?  
+5 
+A: 
+I am testifying on behalf of the Environmental Law & Policy Center (“ELPC”), Natural 
+6 
+Resources Defense Council (“NRDC”), Union of Concerned Scientists (“UCS”), and Vote 
+7 
+Solar, together the Joint Non-Governmental Organizations (“Joint NGOs”). 
+8 
+Q: 
+Please describe your formal education and professional experience.  
+9 
+A: 
+I earned a Bachelor of Science and Master of Science in Electrical Engineering from 
+10 
+Virginia Tech. Before assuming my current role at Elevate Energy Consulting, I served as 
+11 
+Director of Product at VEIR from 2022 to 2024, a startup company developing high-
+12 
+temperature superconducting transmission and distribution lines with innovative new 
+13 
+cooling systems. Prior to that, I served as Manager of Electric Transmission Planning and 
+14 
+Strategic Initiatives at Dominion Energy Virginia, where I was responsible for the team 
+15 
+doing long-term transmission planning for Dominion’s electric transmission system 
+16 
+covering most of the state of Virginia and northeast North Carolina, with goals of 
+17 
+interconnecting a rapidly growing queue of generation resources, including inverter-based 
+18 
+resources, and data centers—primarily located up in the Northern Virginia region of the 
+19 
+state. I began my career at Dominion Energy Virginia in 2009, and throughout my career 
+20 
+there I held many engineering and leadership roles in the electric transmission business 
+21 
+unit. I am also a Licensed Professional Engineer in the Commonwealth of Virginia. My 
+22 
+resume is attached as JNGO Ex. 2.01. 
+ 
+23 
+
+--- PAGE 5 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 2 of 17 
+ 
+ 
+ 
+Q: 
+Have you previously testified before the Illinois Commerce Commission?  
+24 
+A: 
+No, I have not previously testified before the Illinois Commerce Commission. 
+25 
+Q: 
+Have you previously testified before other state regulatory bodies? 
+26 
+A: 
+Yes, I have previously testified before the Commonwealth of Virginia State Corporation 
+27 
+Commission.1 
+28 
+Q: 
+Are you sponsoring any exhibits? 
+29 
+A: 
+Yes, I am sponsoring the following exhibits: 
+30 
+• 
+JNGO Ex. 2.01: Resume of Kyle Thomas 
+31 
+• 
+JNGO Ex. 2.02: Ryan Quint et al., Practical Guidance and Considerations for Large 
+32 
+Load Interconnections, Elevate, Gridlab (May 2025) 
+33 
+• 
+JNGO Ex. 2.03: Exelon Utility Companies’ Transmission Facility Interconnection 
+34 
+Requirements (Jan. 1, 2024), 
+35 
+• 
+JNGO Ex. 2.04: Kyle Thomas, Ryan Quint, & Jiecheng Zhao, An Assessment of 
+36 
+Large Load Interconnection Risks in the Western Interconnection, Elevate Energy 
+37 
+Consulting, (Feb. 2025) 
+38 
+• 
+JNGO Ex. 2.05: North American Electric Reliability Corporation (NERC), 
+39 
+Characteristics and Risks of Emerging Large Loads (July 2025) 
+40 
+• 
+JNGO Ex. 2.06: North American Electric Reliability Council (NERC), Incident 
+41 
+Review: Considering Simultaneous Voltage-Sensitive Load Reductions (Jan. 
+42 
+2025) 
+43 
+• 
+JNGO Ex. 2.07: NERC, Project 2020-06 Verifications of Models and Data for 
+44 
+Generators – Modeling Definitions (June 2025) 
+45 
+• 
+JNGO Ex. 2.08: Norris, T., Profeta, T., Patino-Echeverri, D., Cowie-Haskell, A., 
+46 
+Rethinking Load Growth: Assessing the Potential for Integration of Large 
+47 
+                                                 
+1 Virginia State Corporation Commission Case No. PUR-2020-00035. 
+
+--- PAGE 6 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 3 of 17 
+ 
+ 
+ 
+Flexible Loads in U.S. Power Systems, Nicholas Institute for Energy, 
+48 
+Environment, and Sustainability (2025) 
+49 
+• 
+JNGO Ex. 2.09: Cox, C., Schwartz, A., Stencik, D., Bringing Data Center 
+50 
+Flexibility into Resource Adequacy Planning: A Case Study of NV Energy (Sept 
+51 
+2025) 
+52 
+Q: 
+What is the purpose of your testimony? 
+53 
+A: 
+The purpose of my testimony is to evaluate ComEd’s proposed tariff revisions for large 
+54 
+demand projects and highlight areas where the proposed tariff appropriately addresses large 
+55 
+load interconnection risks, and to identify gaps where the tariff is inconsistent with best 
+56 
+practices or does not sufficiently mitigate risks regarding large load interconnections. 
+57 
+Q:  
+What is your background with the interconnection of large loads? 
+58 
+A: 
+In my various roles at Dominion Energy Virginia, I was involved with the planning, 
+59 
+modeling, and studying of large load interconnections. At Elevate Energy Consulting, I am 
+60 
+involved in many industry working groups and tasks forces involving the interconnection 
+61 
+of large loads, including the NERC Large Load Task Force and the ESIG Large Load Task 
+62 
+Force, while also providing large load interconnection consulting support for various 
+63 
+clients. In partnership with GridLab, I was one of the co-authors of a recent report we 
+64 
+published in May 2025 called “Practical Guidance and Considerations for Large Load 
+65 
+Interconnections.”2 
+ 
+66 
+                                                 
+2 JNGO Ex. 2.02, Ryan Quint et al., Practical Guidance and Considerations for Large Load Interconnections (May 
+2025), Elevate, Gridlab, available at https://gridlab.org/portfolio-item/practical-guidance-and-considerations-for-
+large-load-interconnections/.  
+
+--- PAGE 7 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 4 of 17 
+ 
+ 
+ 
+II. 
+COMED’S PROPOSED TARIFF REVISIONS 
+67 
+Q: 
+What are the main items of the ComEd filing? 
+68 
+A:  
+ComEd’s filing includes the following core proposed tariff changes: (1) defines a “Large 
+69 
+Demand Project Applicant or Customer” as a customer expecting greater than or equal to 
+70 
+50 MW within ten years; (2) formalizes a cluster study approach for large load 
+71 
+interconnection requests; (3) enhances and increases initial engineering deposits; (4) 
+72 
+proposes changes to Rider DE (distribution extension deposits and rules); and (5) proposes 
+73 
+transmission revenue security mechanisms via a new Transmission Security Agreement 
+74 
+(TSA) to ensure recovery of transmission costs tied to large loads. 
+75 
+Q: 
+What are your takeaways of the ComEd filing? 
+76 
+A:  
+ComEd recognizes the volume and systemic nature of recent and forecasted large-load 
+77 
+requests and is moving to a cluster study practice for large load interconnections, which is 
+78 
+consistent with industry best practices, as demonstrated in the generation interconnection 
+79 
+context by FERC Order 2023. ComEd’s proposal to require deposits and financial security 
+80 
+for large load interconnection studies and long-lead time items are steps in the right 
+81 
+direction to raising the barrier to the large load interconnection process. However, there are 
+82 
+a few gaps that I have identified, and I recommend improvements/updates to address them 
+83 
+throughout this testimony. It is important to note that some of the technical information 
+84 
+and requirements detailed in my testimony may not be applicable to be added to the tariff 
+85 
+itself, but may need to be added to ComEd’s Facility Interconnection Requirements (FIR).3 
+86 
+                                                 
+3 JNGO Ex. 2.03, Exelon Utility Companies’ Transmission Facility Interconnection Requirements (Jan. 1, 2024), 
+available at https://www.pjm.com/-/media/DotCom/planning/plan-standards/private-ace/eu-trans-fac-
+interconnection-requirements.pdf.  
+
+--- PAGE 8 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 5 of 17 
+ 
+ 
+ 
+That FIR document should be referenced and required by the tariff so that any large load 
+87 
+customer is required to follow the interconnection requirements defined in the document.  
+88 
+ 
+I do commend ComEd for proposing these tariff revisions, as it is a good start to improving 
+89 
+the interconnections of large loads on their system. However, the additional technical 
+90 
+improvements and recommendations provided below, I believe, are critical to holistically 
+91 
+addressing significant bulk power system risks caused by large load interconnections. The 
+92 
+industry has started to see early warning signs of these risks through recent data center load 
+93 
+loss events in Virginia and Texas. While ComEd may not have seen these same issues yet 
+94 
+as the large load growth is just beginning, getting ahead of these issues now while tariff 
+95 
+updates and the overall large load interconnection process is being updated will help ensure 
+96 
+better reliability for all of ComEd’s customers and help ensure that risk mitigations are put 
+97 
+in place during the interconnection process. This will reduce the risks on the system and 
+98 
+allow ComEd to sort out costs with the large load customers during the interconnection 
+99 
+process, rather than after the facilities are already operational and risk mitigation costs are 
+100 
+spread to all customers. 
+101 
+III. 
+COMED'S 50 MW THRESHOLD FOR LARGE LOAD PROVISIONS 
+102 
+Q: 
+What are your concerns with ComEd’s 50 MW threshold for large load provisions? 
+103 
+A: 
+ComEd uses a fixed threshold of 50 MW within ten years to trigger the “Large Demand” 
+104 
+provisions. Material bulk power system reliability impacts can occur from large load 
+105 
+facilities that fall below this 50 MW threshold depending on a variety of factors, including 
+106 
+system strength at specific locations, congestion on the system, and the type of large load 
+107 
+facility and operational characteristics. A single MW threshold could risk missing high-
+108 
+impact projects that are below 50 MW in size but located in a weak, stressed, or congested 
+109 
+
+--- PAGE 9 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 6 of 17 
+ 
+ 
+ 
+part of the transmission system. I would recommend that ComEd keep the 50 MW 
+110 
+threshold as a primary trigger mechanism for large load provisions, but add a supplemental 
+111 
+trigger that would invoke the large load provision/processes under a set of defined 
+112 
+conditions, including but not limited to: (a) any project whose interconnection point is 
+113 
+identified as “weak” or constrained in ComEd’s studies; (b) any project that requests 
+114 
+voltage levels or in-service profiles that indicate high ramp rates, both in the MW size of 
+115 
+ramps and the speed of the MW (fast switching of load at the second or sub-second level); 
+116 
+or (c) any single developer proposing cumulative capacity in a geographic cluster that 
+117 
+exceeds a defined MW threshold but within a short timeframe (months, for example). This 
+118 
+additional supplemental trigger language when added to the tariff language would provide 
+119 
+ComEd flexibility for unique and difficult interconnection projects. 
+120 
+IV. 
+TECHNICAL CONCERNS WITH LARGE LOAD INTERCONNECTIONS 
+121 
+Q:    
+What are the emerging reliability concerns associated with large loads?  
+122 
+A: 
+Across the country, the electric system is experiencing unprecedented growth in large 
+123 
+loads, including hyperscale data centers, manufacturing facilities, and industrial processes 
+124 
+such as electrolyzers. This large load growth is dominated by one type of large load facility 
+125 
+in particular, data centers.4 Unlike historical patterns of minimal to negative load growth, 
+126 
+these new projects often involve hundreds, or even thousands, of megawatts of load seeking 
+127 
+to interconnect within just a few years. The pace and scale of development of these large 
+128 
+                                                 
+4 See JNGO Ex. 2.04, Kyle Thomas, Ryan Quint, & Jiecheng Zhao, An Assessment of Large Load Interconnection 
+Risks in the Western Interconnection, Elevate Energy Consulting, (Feb. 2025) (available at 
+https://www.wecc.org/sites/default/files/documents/products/2025/Report_WECC%20Large%20Loads%20Risk%2
+0Assessment%204.pdf).   
+
+--- PAGE 10 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 7 of 17 
+ 
+ 
+ 
+load facilities is now far faster than the timelines for traditional transmission and 
+129 
+distribution upgrades. In addition, the unique complex nature of these new large load 
+130 
+facilities, especially data centers focused on the training of Artificial Intelligence systems, 
+131 
+such as the new Large Language Models, is introducing new operational characteristics of 
+132 
+load facilities not previously seen at this scale. These challenges are creating novel and 
+133 
+expanding reliability risks to the bulk power system at a pace that the industry has not seen 
+134 
+before. The NERC Large Load Task Force (LLTF) White Paper “Characteristics and Risks 
+135 
+of Emerging Large Loads”5 highlights many of these risks to the bulk power system. 
+136 
+Among the most significant include: (1) sudden, high-magnitude loss of load, which can 
+137 
+destabilize system frequency; (2) sensitivity to voltage and frequency excursions, where 
+138 
+large load facilities disconnect during normal protection and control functions during a 
+139 
+fault on the bulk power system; (3) high inrush currents and fast-ramping behavior during 
+140 
+startup or cycling that can exceed local system capabilities and drive unexpected 
+141 
+transmission upgrades; (4) power quality impacts, including harmonic distortions, voltage 
+142 
+flicker, and potential adverse interactions with inverter-based resources and other power 
+143 
+electronic equipment connected to the grid. The NERC “Incident Review: Considering 
+144 
+Simultaneous Voltage-Sensitive Load Reductions”6 provides concrete examples of these 
+145 
+risks. As detailed in the report, a recent event in Virginia involved large load facilities 
+146 
+                                                 
+5 JNGO Ex. 2.05, North American Electric Reliability Corporation (NERC), Characteristics and Risks of Emerging 
+Large Loads (July 2025) (available at 
+https://www.nerc.com/comm/RSTCReviewItems/3_Doc_White%20Paper%20Characteristics%20and%20Risks%20
+of%20Emerging%20Large%20Loads.pdf).   
+6 JNGO Ex. 2.06, North American Electric Reliability Council (NERC), Incident Review: Considering Simultaneous 
+Voltage-Sensitive Load Reductions (Jan. 2025) (available at 
+https://www.nerc.com/pa/rrm/ea/Documents/Incident_Review_Large_Load_Loss.pdf).   
+
+--- PAGE 11 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 8 of 17 
+ 
+ 
+ 
+tripping offline in large quantities (dozens of facilities), totaling approximately 1,500 MW, 
+147 
+during a fault event that occurred on a transmission line due to a failed piece of equipment. 
+148 
+Critically important to this event was the unexpected nature of this large load loss; the 
+149 
+utility and grid operator were not aware that this large load loss could occur for such a fault 
+150 
+event, as it was not modeled or captured in any studies. While this specific event did not 
+151 
+lead to any major system disruption or outage, it is an early warning indicator that the rapid 
+152 
+interconnection of large loads is introducing new risks to the bulk power system that must 
+153 
+be appropriately modeled and studied during the interconnection process.  
+154 
+Q:   What are the potential grid reliability risks when large loads connect without 
+155 
+corresponding electricity supply commitments?  
+156 
+In addition to the above-mentioned reliability impacts, rapid large load growth poses a 
+157 
+generation resource adequacy challenge. Unlike incremental demand increases that can be 
+158 
+forecast and planned for years in advance, the sudden addition of hundreds, or even 
+159 
+thousands, of MW of new load can create a step-change in local and regional generation 
+160 
+capacity needs. If generation resources are not procured or available to serve these new 
+161 
+loads, the system may face shortages during peak conditions, requiring increased reliance 
+162 
+on imports or emergency procedures. The NERC LLTF White Paper notes that such 
+163 
+concentrated demand can strain capacity margins and accelerate the need for new 
+164 
+generation, which challenges the industry’s existing resource planning and market 
+165 
+activities to adequately procure the sufficient amount of generation resources. Without 
+166 
+close coordination between utilities, who are both managing the large load growth and 
+167 
+procuring generation resources, and ISO/RTO grid operators who are performing capacity 
+168 
+planning and auctions, there are likely to be system-wide reliability risks in the form of 
+169 
+
+--- PAGE 12 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 9 of 17 
+ 
+ 
+ 
+insufficient generation resource adequacy that will extend beyond the utilities’ electric 
+170 
+service and potentially impact an entire region or interconnection. I strongly recommend 
+171 
+that ComEd work closely with PJM and other stakeholders to share large load growth and 
+172 
+forecasts, discuss generation resource plans to meet this new load with existing or new 
+173 
+resources, and improve generation resource adequacy studies to adequately account for a 
+174 
+range of large load forecasts. 
+175 
+Q:  
+What do you recommend that utilities and commissions do to mitigate these risks? 
+176 
+A: 
+Overall, NERC has made clear that large load interconnections present emerging reliability 
+177 
+concerns that require substantial technical considerations during the large load 
+178 
+interconnection process. The Elevate/GridLab report provides a series of recommendations 
+179 
+to utilities and commissions to help mitigate these bulk power system reliability risks. 
+180 
+These recommendations include: (1) perform the full suite of models and studies of large 
+181 
+loads during the interconnection process, including steady state, dynamics, short circuit, 
+182 
+and electromagnetic transient studies; (2) update interconnection requirements for large 
+183 
+loads to include mandatory ride-through capabilities, performance requirements during 
+184 
+power system disturbances, power quality requirements, model and information sharing, 
+185 
+and protection and control coordination activities; (3) create standardized, uniform 
+186 
+interconnection processes for large loads with defined milestones, adequate fees for 
+187 
+interconnections, material modification rules, and cluster study arrangements; and (4) 
+188 
+adopt flexible interconnection arrangements for large loads. Across the country, 
+189 
+interconnection requirements, processes, and tariffs for large loads should be updated to 
+190 
+reflect these new requirements in order to ensure bulk power system reliability while 
+191 
+supporting the safe, reliable, and cost-effective integration of large loads. 
+192 
+
+--- PAGE 13 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 10 of 17 
+ 
+ 
+ 
+Q: 
+What are the issues with the technical data submittals required by ComEd? 
+193 
+A: 
+ComEd’s testimony emphasizes detailed monthly ramp forecasts and financial 
+194 
+commitments, but it does not require the full, standardized technical data set that we 
+195 
+recommend in our report, which includes detailed load compositions of the facility, motor 
+196 
+and power-electronic details, startup profiles, operational characteristics, UPS and backup 
+197 
+generation configurations and settings, harmonic emission and other power quality 
+198 
+expectations and mitigations, protection and control settings, expected power factor, and 
+199 
+more as identified in the Elevate/GridLab report.7 Without this information being provided 
+200 
+to ComEd throughout the large load interconnection process, from initial application all 
+201 
+the way to commissioning and commercial operation, ComEd will be challenged with 
+202 
+adequately assessing the system reliability impacts from these large load interconnections 
+203 
+and requiring mitigating solutions to be put in place by the interconnecting customer during 
+204 
+the interconnection process. I recommend that ComEd create a tariff appendix that includes 
+205 
+a standardized data checklist, modeled after Appendix A in the Elevate/GridLab report, 
+206 
+which must accompany any large demand application. ComEd should refuse to start cluster 
+207 
+studies and system impact studies until large load applicants provide the standardized 
+208 
+technical dataset or demonstrate why certain items are not applicable. In addition, ComEd 
+209 
+should require interconnection customers to provide verified and validated models of their 
+210 
+facility to ComEd. Model Verification is defined by NERC as “the process of confirming 
+211 
+that model structure and parameter values are representative of the equipment or facility 
+212 
+                                                 
+7 https://gridlab.org/wp-content/uploads/2025/07/GridLab-Report-Large-Loads-Interim-Report.pdf.zip  
+ 
+
+--- PAGE 14 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 11 of 17 
+ 
+ 
+ 
+design and settings by reviewing equipment or facility design and settings 
+213 
+documentation.”8 Model Validation is defined by NERC as “the process of comparing 
+214 
+simulation results with measurements to assess how closely a model’s behavior matches 
+215 
+the measured behavior.”9 As detailed in the Elevate/GridLab report, creating these model 
+216 
+verification and validation requirements for large load facilities is a complex process due 
+217 
+the complexity of the facilities themselves. Without having accurate models that truly 
+218 
+represent the detailed, complex dynamic characteristics of these facilities, large load 
+219 
+interconnection studies performed by ComEd will not fully capture the steady state and 
+220 
+dynamic nature of these facilities during grid disturbances and contingencies, potentially 
+221 
+leading to unidentified grid reliability risks. In addition, ComEd staff have limited time and 
+222 
+information to accurately develop models for these interconnecting facilities due to limited 
+223 
+technical knowledge of the facilities and limited access to data regarding the specific 
+224 
+equipment and configurations of the facilities. It is up to the interconnection customers 
+225 
+themselves, who know more about the facilities than anyone else could, to develop verified 
+226 
+and validated models of their large load facilities, just as is required from the developers, 
+227 
+owners, and operators of generation facilities today that interconnect into the bulk power 
+228 
+system.10 This will reduce the time and cost of the interconnection process for ComEd, and 
+229 
+                                                 
+8 JNGO Ex. 2.07, NERC, Project 2020-06 Verifications of Models and Data for Generators – Modeling Definitions 
+(June 2025) (available at 
+https://www.nerc.com/pa/Stand/Project_2020_06_Verifications_of_Models_and_Data_f/2020-
+06%20Model%20Definitions%20Posting_Clean%20Final_June_30_2025.pdf).  
+9 Id. 
+10 NERC Modeling, Data, and Analysis Reliability Standards for Generators 
+(https://www.nerc.com/pa/Stand/Reliability%20Standards/MOD-025-2.pdf, 
+https://www.nerc.com/pa/Stand/Reliability%20Standards/MOD-026-1.pdf, 
+https://www.nerc.com/pa/Stand/Reliability%20Standards/MOD-027-1.pdf, 
+https://www.nerc.com/pa/Stand/Reliability%20Standards/MOD-032-1.pdf) 
+
+--- PAGE 15 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 12 of 17 
+ 
+ 
+ 
+will improve the accuracy of the interconnection studies in identifying bulk power system 
+230 
+risks and reliability issues so that solutions can be properly identified before the facilities 
+231 
+go into commercial operation on the grid. 
+232 
+Q: 
+What models and studies should be required during the large load interconnection 
+233 
+process? 
+234 
+A: 
+ComEd’s filing memorializes cluster studies and initial engineering analyses but leaves out 
+235 
+the specific scope details of these models and studies, such as what models to require, what 
+236 
+studies will be performed, when are electromagnetic transient (EMT) models and studies 
+237 
+required, and what detailed protection and control information must the interconnection 
+238 
+customer provide to ComEd for adequate protection coordination studies. For these large 
+239 
+load interconnections, it is essential to do the full suite of studies to adequately address 
+240 
+bulk power system reliability issues and risks, as the industry has learned with the 
+241 
+interconnection of generation facilities onto the system.11 The complex nature of these new 
+242 
+large load facilities, driven by incredibly fast power electronic components and 
+243 
+protection/control systems, demand that more detailed studies are performed as a standard 
+244 
+for each interconnection facility. Large load facilities can introduce risks that are different 
+245 
+from what the industry has historically seen,12 and therefore a full suite of studies is critical, 
+246 
+including load flow, dynamic stability, protection coordination studies (including circuit 
+247 
+breaker duty studies), and EMT studies. I recommend that ComEd update its tariff to 
+248 
+require these specific models and studies to identify potential bulk power system reliability 
+249 
+                                                 
+11 See, e.g., FERC Order 2023, Improvements to Generator Interconnection Procedures and Agreements (July 2023) 
+(available at https://www.ferc.gov/media/order-no-2023).   
+12 JNGO Ex. 2.06.  
+
+--- PAGE 16 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 13 of 17 
+ 
+ 
+ 
+risks during the interconnection process, so that mitigations can be put in place prior to the 
+250 
+facilities going into operations on the grid. 
+251 
+Q: 
+What should be considered regarding disturbance ride-through and power quality 
+252 
+risks from large load interconnections? 
+253 
+A 
+ComEd’s testimony focuses on process, deposits, and a transmission security agreement 
+254 
+(TSA), but does not explicitly require ride-through performance metrics, harmonics limits, 
+255 
+power factor/VAR capability, or explicit protection coordination requirements. Those 
+256 
+technical requirements and responsibilities are captured to some extent in ComEd’s Facility 
+257 
+Interconnection Requirements document; however, that document does not expressly 
+258 
+define what the requirements should be for large-load customers. I recommend that the 
+259 
+tariff explicitly adopt appropriate technical requirements for large loads given the system-
+260 
+wide consequences of large load loss. Detailed settings and specifics of these requirements 
+261 
+can be further defined in ComEd’s FIR, but the tariff can be an overarching requirement to 
+262 
+ensure that large load interconnecting customers provide a sufficient level of technical 
+263 
+detail in the interconnection process. The tariff should make clear that failure to adhere to 
+264 
+these technical requirements could result in curtailments or other types of electric service 
+265 
+interruptions in the event risks and problems to the bulk power system are caused by an 
+266 
+interconnecting customer. The tariff should further require that large load applicants meet 
+267 
+the ComEd FIR document, which should be updated to include requirements for 
+268 
+disturbance ride-through, IEEE-519 harmonic and power quality limits, VAR capability 
+269 
+and power factor ranges, protection coordination, monitoring equipment installations, and 
+270 
+require documented pre-commissioning ride-through tests and post-commissioning 
+271 
+performance validation. Post-commissioning performance validation is a critical 
+272 
+
+--- PAGE 17 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 14 of 17 
+ 
+ 
+ 
+component to include following the interconnection process. Once a large load facility 
+273 
+becomes commercially operational, it will be interacting with the bulk power system for 
+274 
+decades to come. Failure to require adequate monitoring of the facility could result in 
+275 
+unmitigated bulk power system risks that impact existing customers both in terms of 
+276 
+reliability and cost. 
+277 
+Q: 
+What does it mean to have a flexible interconnection for a large load facility? 
+278 
+A: 
+A flexible interconnection for a large load facility refers to an interconnection arrangement 
+279 
+under which the facility does not receive firm, unconstrained transmission service at all 
+280 
+times, but instead agrees to provide the utility with defined operating flexibility of the 
+281 
+facility’s loads under certain agreed upon stressed grid conditions. This flexibility can take 
+282 
+the form of temporary curtailment of load at the facility or reliance on on-site generation 
+283 
+resources during periods of grid stress or constraint. Various industry research, studies, and 
+284 
+references have shown that flexibility of large load interconnections can significantly 
+285 
+expand the amount of large load that can be interconnected without triggering immediate 
+286 
+and costly system upgrades. 13, 14  In practical terms, a flexible interconnection means that 
+287 
+the large load facility contracts with the utility or grid operator to reduce or defer load when 
+288 
+called upon by the utility/grid operator, thereby lowering system peak stress, accelerating 
+289 
+the interconnection timeline, and reducing costs borne by all customers. 
+290 
+                                                 
+13 JNGO Ex. 2.08, Norris, T., Profeta, T., Patino-Echeverri, D., Cowie-Haskell, A., Rethinking Load Growth: 
+Assessing the Potential for Integration of Large Flexible Loads in U.S. Power Systems, Nicholas Institute for 
+Energy, Environment, and Sustainability (2025) (available at 
+https://nicholasinstitute.duke.edu/sites/default/files/publications/rethinking-load-growth.pdf).   
+14 JNGO Ex. 2.09, Cox, C., Schwartz, A., Stencik, D., Bringing Data Center Flexibility into Resource Adequacy 
+Planning: A Case Study of NV Energy (Sept 2025) (available at https://gridlab.org/portfolio-item/data-center-
+flexibility-nv-energy-case-study-report/).   
+
+--- PAGE 18 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 15 of 17 
+ 
+ 
+ 
+Q: 
+Are there any considerations for a flexible interconnection framework in the 
+291 
+proposed tariff revisions? 
+292 
+A: 
+No, ComEd’s filing does not create explicit tariff pathways or incentives (e.g., reduced 
+293 
+upgrade cost responsibility, expedited study priority, or contracted curtailment 
+294 
+compensation) for applicants willing to accept operational flexibility, which could include 
+295 
+interruptible service, demand response, or a customer reducing their own load and using 
+296 
+on-site customer-owned generation resources during times of peak grid stress. In our 
+297 
+report, we highlight that flexible interconnection options (firm vs. interruptible, peak 
+298 
+curtailment, flexible interconnection frameworks) can be a core tool to (a) reduce 
+299 
+immediate network upgrade needs, (b) accelerate service, and (c) lower overall costs to the 
+300 
+system when implemented with enforceable commitments. Existing processes, like the 
+301 
+Facility Interconnection Requirements document, do not address these opportunities 
+302 
+(reduced interconnection costs, increased interconnection speed, etc.) — so ComEd’s tariff 
+303 
+appears to be the right vehicle to add these incentives and agreements between ComEd and 
+304 
+the large load interconnection customers. I recommend that ComEd add a new tariff section 
+305 
+to create a Flexible Interconnection Option (FIO) where an applicant may elect to take 
+306 
+service as Flexible, which defines curtailment capability, speed, dispatch rules, verified 
+307 
+performance, monitoring equipment requirements, and penalty clauses for not performing 
+308 
+flexibility rules when required, in exchange for expedited study timelines or other 
+309 
+financial/time incentives. Critically important with any FIO are two key items: (1) ensuring 
+310 
+that interconnection customers install high-resolution monitoring equipment to enable 
+311 
+performance tracking of the FIO; and (2) as part of the interconnection process, the 
+312 
+interconnecting customer must provide a detailed design of the FIO control systems and 
+313 
+
+--- PAGE 19 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 16 of 17 
+ 
+ 
+ 
+equipment that will facilitate the actual curtailment functions of the facility—with 
+314 
+appropriate redundancy and reliability of the system. The interconnection customer must 
+315 
+coordinate any protection, controls, and monitoring equipment systems with the utility and 
+316 
+grid operator to ensure appropriate visibility and overnight monitoring are possible by the 
+317 
+utility and grid operator. Projects that choose the FIO may be prioritized, or accelerated, in 
+318 
+the queue due to the reduced system impact under the grid’s peak stress conditions that are 
+319 
+identified during the interconnection process by the utility and grid operator. This Flexible 
+320 
+Interconnection Option would also enable a “Connect and Manage” approach coupled with 
+321 
+a requirement for interconnection applicants to provide clean energy supply plans as part 
+322 
+of their interconnection application, as recommended by JNGO Witness Saad Siddique.  
+323 
+V. 
+CONCLUSION AND OVERALL RECOMMENDATIONS 
+324 
+Q:  
+What should the Commission direct ComEd to do in the approved tariff changes? 
+325 
+A:  
+The Commission should: (1) approve the changes to the tariff proposed by ComEd, and (2) 
+326 
+direct ComEd to file additional tariff changes to update ComEd’s large-load 
+327 
+interconnection study process, including at least the following elements: (a) retain the 50 
+328 
+MW threshold but add supplemental triggers for facilities less than 50 MW but with 
+329 
+unique/risky interconnection locations and situations; (b) require a standardized data 
+330 
+submittal checklist as a condition to apply to the interconnection process, including a 
+331 
+requirement for interconnecting customers to submit validated and verified models of their 
+332 
+facility; (c) have ComEd perform load flow, dynamic stability, EMT, and protection/short 
+333 
+circuit studies during the new large load interconnection cluster studies; (d) explicitly 
+334 
+require specific categories of interconnection requirements (ride-through, power quality, 
+335 
+voltage support, power factor, protection, monitoring equipment, etc.) in the tariff as 
+336 
+
+--- PAGE 20 ---
+ICC Docket Nos. 25-0677/25-0679 (consol.) 
+JNGO Ex. 2.0 
+Page 17 of 17 
+ 
+ 
+ 
+binding obligations for large demand projects; (e) allow ComEd to add the specific details 
+337 
+of these studies and settings in ComEd’s Facility Interconnection Requirements document; 
+338 
+(f) mandate post-commissioning monitoring and model validation with enforcement rules 
+339 
+and penalties; and (g) create a Flexible Interconnection Option with clear incentives and 
+340 
+enforceable commitments. 
+341 
+Q: 
+Is this necessary right now for ComEd and Illinois? 
+342 
+A: 
+Yes. While ComEd has yet to see some of the early warning signs of large load 
+343 
+interconnection risks that have emerged in other parts of the country, it is critical to be 
+344 
+proactive about these problems to reduce bulk power system risks and negative impacts to 
+345 
+customer rates and electric service reliability. ComEd’s own testimony documents 
+346 
+unprecedented pipeline volume—more than 28,000 MW of demand applications, and 
+347 
+average new project sizes far exceeding historical norms—and acknowledges cluster 
+348 
+interactions and stranded cost risks. All of this heightens the need for more explicit 
+349 
+technical, modeling, monitoring, and flexibility provisions. The tariff should codify the 
+350 
+necessary technical and process guards before new interconnections proceed at scale. 
+351 
+Q: 
+Does this complete your testimony. 
+352 
+A: 
+Yes.  
+353 

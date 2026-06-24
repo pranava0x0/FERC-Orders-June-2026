@@ -1,0 +1,740 @@
+--- PAGE 1 ---
+1 
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+  
+Interconnection of Large Loads to the Interstate 
+Transmission System 
+Docket No. RM26-4-000 
+ 
+COMMENTS OF THE SOLAR ENERGY INDUSTRIES ASSOCIATION 
+ 
+The United States is in a critical race to achieve global dominance in artificial 
+intelligence (AI). Sustaining and enhancing America’s global AI dominance will promote 
+“human flourishing, economic competitiveness, and national security.”1 But we need the power 
+to achieve these goals. Rapid innovations in AI and data center infrastructure have created 
+significant, and often unexpected, increases in electricity demand.2 After years of flat power 
+demand, the grid is now seeing significant increases in load growth. The advanced computing 
+industry is poised for rapid expansion, yet the energy sector and the regulatory frameworks 
+governing it have struggled to keep pace. The interconnection of these new large loads to the 
+grid is governed by a patchwork of regulations and business practices that fail to deliver accurate 
+load projections or encourage the development of generation to provide energy to those new 
+loads.  
+As Department of Energy Secretary Wright recognized in his October 27, 2025 letter to 
+the Federal Energy Regulatory Commission (the Commission), AI infrastructure must be able to 
+ 
+1 Executive Order 14179, “Removing Barriers to American Leadership in Artificial Intelligence” (Jan. 23, 2025). 
+2 PJM Interconnection, L.L.C., Data Center Planning & Need Assessment Update (Jan. 10, 2023), 
+https://www.pjm.com/-/media/committees-groups/committees/teac/2023/20230110/item-04---data-center-load-
+planning.ashx Strategic Industries Surging: Driving US Power Demand, Grid Strategies, (2024), 
+https://gridstrategiesllc.com/wp-content/uploads/National-Load-Growth-Report-2024.pdf. Chairman Rosner’s Letter 
+to the RTOs/ISOs on Large Load Forecasting, (Sept. 18, 2025) https://www.ferc.gov/news-events/news/chairman-
+rosners-letter-rtosisos-large-load-forecasting. See, e.g., post-Technical Conference comments submitted in FERC 
+Docket No. AD24-11-000, including CEBA December 9 Post-Technical Conference Comments at 12-13; DCC 
+December 9 Post-Technical Comments at 12; Google December 9 Post-Technical Conference Comments at 7-8; 
+Wilson Energy Economics December 9 Post-Technical Conference Comments at 2, 7. 
+
+--- PAGE 2 ---
+2 
+ 
+interconnect to the grid efficiently, fairly, and expeditiously.3 Developers of AI infrastructure 
+need clear and flexible rules to ensure the orderly interconnection of those loads while 
+maintaining the reliability of the grid. Without clear rules, the United States risks ceding its 
+global AI dominance. 
+Pursuant to the October 27, 2025 Notice Inviting Comments,4 the Solar Energy Industries 
+Association (SEIA) submits these comments on Secretary Wright’s proposed advanced notice of 
+proposed rulemaking regarding the Interconnection of Large Loads to the Interstate 
+Transmission System.5 The comments and recommendations below represent the experiences of 
+a wide range of member companies who are working with hyperscalers to develop and build the 
+resources that will serve this new demand. SEIA’s members are working with hyperscalers to 
+develop the generation that will be able to serve these new loads and appreciate the opportunity 
+to provide comments that will assist the Commission in establishing clear procedures on how the 
+new load and generation can interconnect to the transmission system.  
+ 
+I. 
+NEED FOR REFORM: ADDRESSING INACCURATE LOAD PROJECTIONS 
+SEIA urges the Commission to issue a rulemaking that would standardize the 
+interconnection procedures and agreements for new large loads, including loads that seek to 
+locate with, or near, new generation. As explained above, energy-intensive AI infrastructure is 
+developing at a much faster pace than the development of the generation needed to serve it.6 
+ 
+3 Secretary of Energy’s letter re the Interconnection of Large Loads Pursuant to the Secretary's Authority under 
+Section 403 of the Department of Energy Organization Act, Docket No. RM26-4 (Oct. 27, 2025). 
+4 Notice Inviting Comments, Docket No. RM26-4 (Oct. 27, 2025). 
+5 Interconnection of Large Loads to the Interstate Transmission System, Notice Inviting Comments, Docket No. 
+RM26-4 (Oct. 27, 2025) (“Proposed ANOPR”). 
+6 See Long-Term Load and DER Forecasting, Energy Systems Integration Group, at 29 (2025) 
+https://www.esig.energy/long-term-load-and-der-forecasting/. (“Data center load growth is the single largest 
+component of growth in utility load forecasts and is expanding at an unprecedented rate, with forecasts ranging 
+between 65 GW and 90 GW of new load by 2029”); Grid Strategies, supra note 2 at 6 (“It may take only one or two 
+
+--- PAGE 3 ---
+3 
+ 
+However, the extent to which AI infrastructure development is outpacing new generation is 
+unclear. 
+Grid operators today face a fundamental challenge: The impacts of new data center loads 
+are difficult to understand, and existing forecasting practices are ill-equipped to capture them 
+accurately. Data centers often submit multiple interconnection requests for the same project,7 and 
+some hyperscalers have acknowledged engaging with multiple utilities simultaneously for a 
+single facility.8 Vertically integrated utilities lack incentives to scrutinize load requests, since 
+they stand to benefit financially from capital investments that expand their rate base.9 These 
+duplicative load requests are then used to develop utility load forecasts, which in turn inform 
+wholesale rates and transmission planning, raising questions about the transparency and accuracy 
+of those processes.10  
+Compounding these challenges is the fact that data center loads are not uniform. The 
+energy needs of a new data center depend heavily on its operational profile and proximity to, or 
+even co-location with, generation.11 Some large loads can operate islanded from the grid and 
+ 
+years to connect new load to the grid, while it may take over four years to bring new generation online and even 
+longer to build new transmission.”). 
+7 Uncertainty and Upward Bias are Inherent in Data Center Electricity Demand Projections, London Economics 
+Inc., at 8 (July 7, 2025), available at https://www.selc.org/wp-content/uploads/2025/07/LEI-DataCenter-Final-
+Report-07072025-2.pdf.  
+8 Chairman Doug Scott, Illinois Commerce Commission at 5, (May 27, 2025), available at 
+https://www.ferc.gov/media/chairman-doug-scott-illinois-commerce-commission (“[W]e need to have a better 
+understanding of what load growth is real…The RTOs get their load forecasts from the utilities; however, every 
+utility is different in how they establish their load forecast. Some of the hyperscalers admit to talking to multiple 
+utilities at any given time. It is quite possible that there is double-counting in forward-looking load forecasts, 
+especially given that these data center projects are developed under non-disclosure agreements. Recently, certain 
+data center projects have been cancelled, undermining previous load projections.”). 
+9 Uncertainty and Upward Bias are Inherent in Data Center Electricity Demand Projections, London Economics 
+Inc., at 8 (July 7, 2025), available at https://www.selc.org/wp-content/uploads/2025/07/LEI-DataCenter-Final-
+Report-07072025-2.pdf. 
+10 Electricity Customer Alliance, et al., Joint Letter to FERC re Load Forecasting, at 1 (May 30, 2025), 
+https://static1.squarespace.com/static/61cb4ad27eb866577fe066fe/t/683dad0998acf67ccdbb63e2/1748872457167/Jo
+int+Customer+Letter+to+FERC+re+Load+Forecasting+5.30.25.pdf.  
+11 Clean Energy Buyers Association Pre-filed comments at 5, Docket No. AD24-11; Talen Energy Pre-Filed 
+Comments at 1-3, Docket No. AD24-11 (“Talen has been . . . safely operating co-located loads for over 18 
+months.”).  
+
+--- PAGE 4 ---
+4 
+ 
+accept the risk of outages, while others require firm backup service. Certain loads are flexible 
+and can respond to price signals or participate in demand response programs. Each arrangement 
+“is going to be a snowflake…they are going to have their own design, their own concerns, their 
+own issues, their own configurations that they would like to meet.”12 
+A standardized interconnection process can help solve that. By establishing uniform 
+procedures that include readiness requirements, such as deposits and site control, transmission 
+providers can better identify viable large-load projects and reduce speculative requests.13 Further, 
+requiring more information regarding load profile will allow utilities with load serving 
+obligations to make more accurate load projections. Improving the accuracy of load projections 
+will, in turn, support more effective transmission planning and generation development. Load 
+forecasts are a critical input into Commission-jurisdictional wholesale market operations and 
+influence how prices are formed. When forecasts reflect realistic expectations of future demand, 
+they help send accurate price signals to both suppliers and consumers, supporting the 
+development of a reliable and cost-effective grid. Accurate load forecasting is essential to ensure 
+that rates remain just and reasonable. 
+ 
+II. 
+ESTABLISHING A LEGALLY DURABLE JURISDICTIONAL STATEMENT OVER THE 
+INTERCONNECTION OF LARGE LOADS 
+The Proposed ANOPR provides four legal theories under which the Commission could 
+assert jurisdiction over large load interconnections.14 As written, each theory either fails to 
+justify, or provides a weak justification for, the Commission’s authority in this area. To be clear, 
+ 
+12 Transcript, Technical Conference Regarding Large Loads Co-Located at Generating Facilities at 61, Docket No. 
+AD-24-11 (Nov. 1, 2024). (statement of Aubrey Johnson, Vice President, System & Resource Planning, 
+Midcontinent Independent System Operator). 
+13 See e.g. Improvements to Generator Interconnection Procs. & Agreements, Order No. 2023, 184 FERC ¶ 61,054, 
+at P 691, order on reh 'g, 185 FERC ¶ 61,063 (2023). 
+14 See Proposed ANOPR PP 13-16. 
+
+--- PAGE 5 ---
+5 
+ 
+SEIA agrees that the Commission has the authority to issue a rulemaking to standardize the 
+process for interconnecting large loads to the transmission system and urges the Commission to 
+do so while recognizing state jurisdictional boundaries. However, the Commission’s exercise of 
+that authority must be grounded in a clear and legally durable jurisdictional foundation.  
+ 
+A. 
+The Jurisdictional Statement Flaws 
+The first jurisdictional theory in the Proposed ANOPR, merely analogizes large load 
+interconnection to generator interconnection, stating that both are “critical component[s] of open 
+access transmission service.”15 The ANOPR provides no further explanation as to why the 
+processes are similar, why large load interconnection is a “critical component of open access 
+transmission service,” or even whether large loads require transmission service. But even 
+assuming the processes are similar, this theory fails to acknowledge a critical difference between 
+a transmission owning utility providing interconnection service to an unaffiliated generator 
+versus providing interconnection service to a large load. Unaffiliated generators are competitors 
+to vertically integrated transmission-owning utilities that also own generation.16 Without 
+standardized interconnection procedures, utilities would have both the incentive and ability to 
+discriminate against their competitors.17 After finding that interconnection is a critical component 
+of open access transmission service, the Commission stated that a standardized interconnection 
+process would limit the opportunities for transmission-owning utilities to discriminate against 
+ 
+15 Proposed ANOPR at P 13. 
+16 Standardization of Generator Interconnection Agreements & Procs., Order No. 2003, 104 FERC ¶ 61,103, at P 5 
+(2003), order on reh'g, Order No. 2003-A, 106 FERC ¶ 61,220, order on reh'g, Order No. 2003-B, 109 FERC ¶ 
+61,287 (2004), order on reh'g, Order No. 2003-C, 111 FERC ¶ 61,401 (2005), aff'd sub nom. Nat'l Ass'n of Regul. 
+Util. Comm'rs v. FERC, 475 F.3d 1277 (D.C. Cir. 2007). 
+17 Order No. 2003 at P 4. See also Order No. 2003 at P 677 (describing the independent entity variation for RTOs, 
+which, as grid operators, are not incentivized to discriminate against unaffiliated generator owners.). 
+
+--- PAGE 6 ---
+6 
+ 
+their competitors in the generation market.18  Large loads, however, are not competitors to 
+transmission-owning utilities; they are customers. Transmission Owners are financially 
+motivated to attract large loads to their service territories and to provide favorable 
+interconnection terms and conditions. The underlying concern about undue discrimination that 
+justified Order No. 2003 does not apply in the same way to the interconnection of large load. 
+Therefore, a mere analogy between large load interconnection and generator interconnection is 
+insufficient to justify Commission jurisdiction. 
+The second jurisdictional theory relies on the argument that interconnections of large 
+loads constitute a “practice directly affecting”19 Commission-jurisdictional wholesale electricity 
+rates under the Federal Power Act, citing FERC v. Electric Power Supply Association (EPSA).20 
+In EPSA, the Supreme Court upheld Order No. 719, which required wholesale market operators 
+to accept demand response bids from aggregators of electricity consumers, except where 
+prohibited by state regulators.21 The Court held that the Commission had the authority to regulate 
+such participation because it directly affected wholesale market prices. The Proposed ANOPR’s 
+reliance on FERC v. EPSA overlooks a key difference between demand response and large load 
+interconnections. Order No. 719 expanded wholesale market participation by allowing a new 
+type of resource—demand response—to bid directly into wholesale markets.22 The Court 
+recognized that wholesale market operators employ demand response bids in competitive 
+auctions that balance wholesale supply and demand and thereby set wholesale prices.23 The 
+ 
+18 Order No. 2003 at P 12. 
+19 Proposed ANOPR at P 14. 
+20 Id.  
+21 FERC v. Elec. Power Supply Ass'n, 577 U.S. 260 (2016).  
+22 Wholesale Competition in Regions with Organized Electric Markets, Order No. 719, FERC Stats. & Regs. ¶ 
+31,281 (2008).  
+23 FERC v. Elec. Power Supply Ass'n, 577 U.S. 260, 277, 136 S. Ct. 760, 774, 193 L. Ed. 2d 661 (2016), as revised 
+(Jan. 28, 2016).  
+
+--- PAGE 7 ---
+7 
+ 
+Court stated that the Commission “has the authority—and, indeed, the duty—to ensure that rules 
+or practices ‘affecting’ wholesale rates are just and reasonable.”24 As the Court made clear, 
+though, the plain language in the Federal Power Act’s grant of authority is broad and “could 
+extend FERC’s power to some surprising places,” as “markets in just about everything—the 
+whole economy, as it were” can influence demand, which could not have been what Congress 
+intended.25 So in making its finding, the Court adopted a “common-sense construction of the 
+FPA's language, limiting FERC's ‘affecting’ jurisdiction to rules or practices that ‘directly affect 
+the [wholesale] rate.’”26 While large loads may interconnect to transmission-level assets under 
+the Commission’s seven factor test,27 the loads themselves are not direct participants in 
+wholesale markets. Rather, they are retail customers whose operations may indirectly influence 
+wholesale prices by contributing to demand. This indirect impact is beyond the scope of the 
+Commission’s jurisdiction under the Federal Power Act.  
+The third jurisdictional theory states that regulating large load interconnections would not 
+impinge on the states’ authority over retail sales of electricity.28 While this statement aligns with 
+the Federal Power Act’s division of jurisdiction between federal and state regulators,29 it does 
+not itself establish a basis for federal authority. The Commission must clearly articulate how 
+exercising jurisdiction over large load interconnections is consistent with, but not derivative of, 
+its authority over wholesale transactions and transmission in interstate commerce. Any legally 
+durable justification must respect the limits of federal authority and avoid infringing on state 
+control over retail sales and generation mix within their borders. 
+ 
+24 FERC v. Elec. Power Supply Ass'n, 577 U.S. 260, 277, 136 S. Ct. 760, 774, 193 L. Ed. 2d 661 (2016), as revised 
+(Jan. 28, 2016).  
+25 Id.  
+26 Id. (citing California Independent System Operator Corp. v. FERC, 372 F.3d 395, 403 (2004)). 
+27 See Proposed ANOPR at 18. 
+28 Proposed ANOPR at P 15. 
+29 FERC v. Elec. Power Supply Ass'n, 577 U.S. 260 at 264. 
+
+--- PAGE 8 ---
+8 
+ 
+B. Potential Jurisdictional Solutions 
+ 
+The fourth jurisdictional theory reiterates the Commission’s exclusive jurisdiction over 
+the transmission of electricity in interstate commerce. This principle provides a more credible 
+path forward, but it must be elaborated upon if the Commission were to use it as a foundation to 
+assert jurisdiction over the interconnection over large loads.  
+In order for the Commission to assert jurisdiction over the large load interconnection, the 
+load must be interconnected to the Commission-jurisdictional transmission system, and not the 
+state-jurisdictional distribution system. Any final rule in this proceeding must clearly limit 
+jurisdiction to the interconnection of large loads to the Commission-jurisdictional transmission 
+system, as defined under the Commission’s seven-factor test.30 This jurisdictional finding should 
+extend to any generation that may be co-located with the large load.  
+For load co-located with generation, if the Commission seeks to extend its jurisdiction 
+over the sale of energy from the co-located generation, the Commission must be mindful of the 
+various configurations of the large loads. As stated earlier, large load configurations can vary 
+significantly in their design and grid-backup needs. In some cases, a large load may include a 
+protection system that prevents it from taking any backup power from the grid. Where such a 
+system exists, the transaction involves only distribution-level facilities between the load and its 
+associated generation. The only sale of energy in that configuration is a retail sale between the 
+load and the generator, placing the transaction outside of the Commission’s jurisdiction. In other 
+cases, however, large loads may remain physically connected to the transmission system in a 
+manner that allows them to draw power during certain operating conditions. In those instances, 
+ 
+30 Order No. 888, FERC Stats. & Regs. ¶ 31,036, 21,620 (1996), order on reh’g, Order No. 888-A, FERC Stats. & 
+Regs. ¶ 31,048, order on reh’g, Order No. 888-B, 81 FERC ¶ 61,248 (1997), order on reh’g, Order No. 888-C, 82 
+FERC ¶ 61,046 (1998).  
+
+--- PAGE 9 ---
+9 
+ 
+the use of the transmission system constitutes interstate transmission service and properly falls 
+within the Commission’s jurisdiction.  
+Any rule asserting jurisdiction over large load interconnections must be carefully tailored 
+and supported by all stakeholders. The jurisdictional boundaries of this rulemaking should be 
+discussed and debated within the FERC-NARUC Joint Federal-State Task Force. 
+ 
+III. 
+GUIDING PRINCIPLES FOR PRO FORMA PROCEDURES AND AGREEMENT 
+A. 
+General Principles – Flexibility and Transparency  
+ 
+In crafting a final rulemaking governing the interconnection of large loads, the 
+Commission must make flexibility a top priority. The Commission should establish a pro forma 
+Large Load Interconnection Service Agreement. A pro forma agreement would provide 
+consistent procedural guidance. However, the pro forma must be flexible enough to 
+accommodate different types of large loads and co-location agreements. These arrangements 
+may include loads receiving firm transmission service as well as loads that agree to be curtailable 
+under certain system conditions. The Commission’s approach must recognize that each 
+configuration has distinct operational needs and system impacts. The November 2024 Technical 
+Conference demonstrated that large loads vary considerably in both design and interconnection 
+characteristics.31 In the Show Cause Order on the rules surrounding co-location in PJM 
+Interconnection, L.L.C., the Commission recognized that different arrangements “are likely to 
+use or benefit from the transmission system in different ways depending on how they are 
+configured and, moreover, that those different configurations will themselves likely have 
+ 
+31 Transcript, Technical Conference Regarding Large Loads Co-Located at Generating Facilities at 61, Docket No. 
+AD-24-11 (Nov. 1, 2024). (statement of Aubrey Johnson, Vice President, System & Resource Planning, 
+Midcontinent Independent System Operator). 
+
+--- PAGE 10 ---
+10 
+ 
+different impacts on the transmission system.”32 These statements demonstrate the need for a 
+framework that is adaptable to multiple configurations and allows transmission providers and 
+interconnection customers the ability to design site-specific configurations while maintaining 
+consistency with Commission policy. 
+Regulatory flexibility should give rise to transparency for, and from, large loads. Large 
+load developers need access to accurate information about available grid capacity in order to 
+make informed siting and investment decisions.33 The heatmap reforms in Order No. 2023 
+provide for a degree of transparency, requiring transmission providers to post a heatmap of 
+available transmission capacity.34 SEIA urges the Commission and stakeholders to continue 
+developing solutions that would improve upon these heatmaps. 
+Large loads must also provide greater transparency to transmission providers and other 
+stakeholders so that transmission providers could improve their load forecasts. In addition to 
+establishing standard procedures for the interconnection of large loads, the Commission should 
+also establish standardized reporting requirements from Commission-jurisdictional utilities to the 
+transmission providers. Transmission providers currently rely on load forecasts produced by 
+utilities, but each utility employs its own methods and assumptions when developing those 
+forecasts.35 Establishing transparent forecasting assumptions and requiring standardized 
+reporting by load-serving entities would improve the accuracy of the load forecasts that feed into 
+transmission planning and market operations.36 Greater transparency will help ensure that new 
+large loads are studied and interconnected efficiently while maintaining system reliability and 
+ 
+32 PJM Interconnection, L.L.C., 190 FERC ¶ 61,115, P 76 (2025) (PJM Show Cause Order). 
+33 Comments of Data Center Coalition under EL25-49, et al. (April 23, 2025). 
+34 Order No. 2023 at P 135. 
+35 Pre-Filed Statement of Chairman Doug Scott, Illinois Commerce Commission, Docket No. AD25-7-000, (May 
+28, 2025) available at https://www.ferc.gov/media/chairman-doug-scott-illinois-commerce-commission. 
+36 Response of Advanced Energy United to PJM Interconnection, L.L.C.’s Answer to the Show Cause Order under 
+EL25-49, et al.; Comments of Data Center Coalition under EL25-49, et al. (April 23, 2025). 
+
+--- PAGE 11 ---
+11 
+ 
+protecting existing customers. 
+ 
+B. 
+Principles for Reform in the Proposed ANOPR  
+1. 
+Jurisdiction should be limited to interconnections directly to transmission 
+facilities. 
+The Proposed ANOPR states that, in issuing a rulemaking on the interconnection of large 
+loads, the Commission’s jurisdiction “should be limited to interconnections directly to 
+transmission facilities.”37 SEIA supports this principle. As discussed above, a final rulemaking 
+must be legally durable and grounded in the Commission’s statutory authority. Limiting 
+jurisdiction to interconnections that occur directly at the transmission level aligns with the 
+Federal Power Act and avoids unnecessary encroachment into areas under state authority. This 
+approach will help ensure that the final rule withstands judicial scrutiny and provides a clear, 
+administrable framework for transmission providers and interconnection customers.  
+ 
+2. 
+The Commission should make an independent determination as to the size 
+of load this rulemaking should apply. 
+The Proposed ANOPR recommends that the rulemaking should only apply to new loads 
+greater than 20 megawatts (MW) and, for co-located facilities,38 where the load is greater than 20 
+MW. As an initial matter, the Commission must make clear that grid-charging energy storage 
+ 
+37 Proposed ANOPR at P 18. 
+38 The Proposed ANOPR uses the term “Hybrid Facilities” to refer to loads that share a point of interconnection with 
+new or existing generation facilities. Proposed ANOPR at P 12. “Hybrid facilities” before FERC refer to two or 
+more resources that share a point of interconnection. See Order No. 2023, P 1509, FN 2856. Throughout 
+proceedings before the Commission that discuss situations where load and generation share a point of 
+interconnection, the Commission and commentors have used the term “Co-located facilities.” PJM Show Cause 
+Order, P 3, FN 4. Consistent with the terminology used before the Commission, these comments will use the phrase 
+“co-located facilities.” 
+
+--- PAGE 12 ---
+12 
+ 
+resources should not be considered load under any potential rulemaking.39 Energy storage 
+resources occupy a unique space on the grid, as they both inject energy onto the grid and 
+sometimes charge from the grid.40 However, energy storage resources are subject to the 
+generator interconnection procedures set forward by each transmission provider. These resources 
+should not be captured by a rule intended to address the interconnection of new demand-side 
+infrastructure. 
+SEIA supports the Commission limiting the application of the rulemaking to net loads 
+over a certain size. While using a 20 MW threshold would make the rule consistent with the pro 
+forma Large Generator Interconnection Procedures and Agreement,41 that threshold may not 
+accurately reflect what constitutes a “large” load. In November 2024, a subgroup of the NERC 
+Large Load Task Force conducted an informal survey to gather feedback from participants on 
+what load size should qualify as “large” under a potential NERC regulatory construct. Most of 
+the survey respondents defined “large” as greater than 50 MW.42 In order to set a legally 
+defensible size for which loads are considered “large,” the Commission should request data on 
+the average size of new large loads, as well as the demand profiles and curtailment abilities, of 
+those loads. 
+In addition to establishing a size threshold, the Commission should also define a voltage 
+threshold for determining whether a load is subject to the rule. Voltage levels dictate the extent 
+ 
+39 Southwest Power Pool, Inc., Revisions to Add the High Impact Large Load Processes and Generation 
+Assessment, at 12, Docket No. ER26-247 (Oct. 24, 2025) (“An Electric Storage Resource is not considered a 
+HILL.”). 
+40 Electric Storage Participation in Markets Operated by Regional Transmission Organizations and Independent 
+System Operators, Order No. 841, 162 FERC ¶ 61,127 (2018), order on reh'g, Order No. 841-A, 167 FERC ¶ 
+61,154 (2019). 
+41 Order No. 2003 at P 52. 
+42 North American Electric Reliability Corporation, Characteristics and Risks of Emerging Large Loads, at 11 (July 
+2025), 
+https://www.nerc.com/comm/RSTCReviewItems/3_Doc_White%20Paper%20Characteristics%20and%20Risks%20
+of%20Emerging%20Large%20Loads.pdf. 
+
+--- PAGE 13 ---
+13 
+ 
+of a load’s impact on the transmission system and can serve as a clear indicator of whether a 
+facility is transmission- or distribution-connected.43 Incorporating both size and voltage criteria 
+would ensure jurisdictional clarity and focus the rule on those facilities with a material effect on 
+the bulk power system. 
+ 
+3. 
+Large loads and associated generation should be studied together. 
+The Proposed ANOPR states that “to the extent practicable, load and hybrid facilities 
+should be studied together with generating facilities.”44 While SEIA supports the Commission 
+requiring load and the associated generation to be studied together, we believe this principle 
+must be clarified.  
+First, the Commission must clarify whether it intends for this rulemaking to create a new 
+queue specifically for large-load interconnections or to incorporate such projects into the existing 
+interconnection queues.45 SEIA recommends that the Commission allow flexibility in how these 
+studies are conducted and prioritized so that they align appropriately with each region’s existing 
+queue and study procedures. Mandating a rigid, standalone queue for large loads could duplicate 
+processes and increase administrative burdens. 
+Second, the language of the principle itself requires clarity. The Proposed ANOPR refers 
+to both “generating facilities” and “hybrid facilities,” although the latter category includes 
+generating facilities.46 This distinction creates ambiguity about whether the Commission 
+envisions that a large load could both co-locate with a generating resource behind a single point 
+ 
+43 Id. (“…the survey also revealed that “large” may be relative to other factors, such as the voltage to which the load 
+is interconnected. For example, a consuming site with a 20 MW peak demand would be considered “large” for 
+distribution service, whereas 20 MW is a relatively small customer if interconnected at transmission voltage.”). 
+44 Proposed ANOPR at P 20. 
+45 E.g. PJM New Services Queue including transmission and interconnection. 
+46 Proposed ANOPR at P 20. 
+
+--- PAGE 14 ---
+14 
+ 
+of interconnection and also contract with another generator elsewhere on the transmission system 
+under a “bring-your-own-generation” (BYOG) arrangement. If the intent is to address both co-
+located facilities and BYOG facilities, the Commission must provide for additional requirements 
+to maintain open access principles and not negatively impact generation projects that are already 
+in the queue. This includes requiring any BYOG arrangements to be electrically close, if not 
+behind the same POI, then at least in the same zone. The Commission should also make explicit 
+that BYOG arrangements may include Distributed Energy Resource Aggregations (sometimes 
+referred to as “Virtual Power Plants” (VPPs)).  
+Third, any study of the large load and associated generation, whether co-located or not, 
+must reflect the actual operational needs of the load. Some arrangements can be completely 
+islanded from the grid and bear the risk of going offline.47 Others cannot take such a risk. Some 
+large loads are flexible and can respond to utility price signals and demand response programs. 
+The associated study procedures need to be flexible enough to account for different transmission 
+system needs. Failing to account for these specific needs in the study may result in 
+underestimation of the necessary network upgrades associated with the interconnection of that 
+new large load. 
+ 
+4. 
+The Commission should establish standardized study deposits, readiness 
+requirements, and withdrawal penalties for the interconnection of large 
+loads.  
+The Proposed ANOPR recommends that load and co-located facilities should be subject 
+to standardized study deposits, readiness requirements, and withdrawal penalties.48 SEIA 
+ 
+47 See Post-Workshop Comments of the Solar Energy Industries Association, at 4, Docket No. AD24-11 (Dec. 9, 
+2024). 
+48 Proposed ANOPR at P 21. 
+
+--- PAGE 15 ---
+15 
+ 
+generally supports instituting standard study deposits, readiness requirements, and withdrawal 
+penalties for the interconnection of large loads, co-located generation and BYOG.  
+The Commission has recognized that study deposits better identify viable projects and 
+reduce the number of multiple interconnection requests made by the same customer for the 
+purpose of evaluating the costs of different project sites.49 SEIA supports study deposits that are 
+based on net withdrawals from and, in the case of co-located facilities, injections to the grid. The 
+Commission should consider the magnitude of requested withdrawal and injection rights of the 
+co-location arrangement as a basis for determining the magnitude of study deposits required. 
+However, as SEIA has stated previously with respect to increased project readiness requirements 
+for generator interconnections, increased site control requirements must also come with 
+increased transparency in how the transmission providers will establish load projections. 
+ 
+5. 
+Transmission providers should study co-located facilities based on the 
+amount of injection or withdrawal rights requested and require large 
+loads and associated generation to install system protection equipment. 
+The Proposed ANOPR recommends that transmission providers should study co-located 
+facilities based on the amount of injection or withdrawal rights requested.50 As a protection 
+measure, the Proposed ANOPR also recommends that the large load and co-located facilities 
+install the system protection facilities necessary to prevent unauthorized injections or 
+withdrawals.51 SEIA generally supports these recommendations but encourages the Commission 
+to clarify two aspects of these principles. 
+First, as part of an interconnection request, the large load should have the option to agree 
+ 
+49 Sw. Power Pool, Inc., 178 FERC ¶ 61,015, at P 45 (2022); Pub. Serv. Co. of New Mexico, 136 FERC ¶ 61,231, P 
+80 (2011); Interconnection Queuing Pracs., 122 FERC ¶ 61,252, P 16 (2008).  
+50 Proposed ANOPR at P 22. 
+51 Proposed ANOPR at P 23. 
+
+--- PAGE 16 ---
+16 
+ 
+to be curtailed during certain system conditions. Agreeing to limit energy use to the actual output 
+of the associated generating facility should limit the amount of network upgrades to 
+accommodate the new load and limit the grid impact during peak load periods. In addition to 
+agreeing to be curtailable, a large load should have the option to include a VPP in its 
+interconnection request, with accreditation and telemetry consistent with market rules or the 
+relevant regulatory authority. For any large loads located in states with large load tariffs that 
+contain curtailment protocols, the curtailment conditions requested by the developer in the large 
+load interconnection request must be consistent with the curtailment provisions in the applicable 
+state tariff.  
+Second, the Commission should clarify that the associated generator (co-located or 
+BYOG) must go through the standard interconnection queue if they seek any injection rights 
+beyond what is necessary to serve just the large load.52 This clarification is necessary because 
+technological advances may allow some data centers to reduce consumption from, or even export 
+energy back to, the grid in the future. The technology is constantly evolving and may result in 
+significant power savings for both new and existing data centers.53 Researchers from the 
+Nicholas Institute at Duke University recently stated that “A variety of recent developments in 
+computational load profiles, operational capabilities, and broader market conditions, however, 
+suggest that a new phase of opportunity and necessity is emerging.”54 The training of the neural 
+networks used to power large language models and other machine learning algorithms is 
+ 
+52 See e.g. Southwest Power Pool, Inc., Revisions to Add the High Impact Large Load Processes and Generation 
+Assessment, at 12, Docket No. ER26-247 (Oct. 24, 2025). 
+53 How liquid cooling can address AI's water crisis in data centers, Data Center Dynamics (Nov. 4, 2024), 
+https://www.datacenterdynamics.com/en/opinions/how-liquid-cooling-can-address-ais-water-crisis-in-data-centers/. 
+(“In addition to reducing water usage, liquid cooling offers a major boost to energy efficiency. … Many existing 
+data centers are also working on liquid cooling retrofits for at least parts of their data centers.”). 
+54 Duke University’s Nicholas Institute for Energy, Environment & Sustainability, Rethinking Load Growth: 
+Assessing the Potential for Integration of Large Flexible Loads at 11, Feb. 2025, 
+www.nicholasinstitute.duke.edu/publications (emphasis added).  
+
+--- PAGE 17 ---
+17 
+ 
+deferrable, meaning that these processes could shift to periods of lower grid demand.55 These 
+processes could also be shifted to other data centers on the grid, to areas where there is less grid 
+demand or more energy available.56 Sending those requests for additional rights through the 
+existing interconnection process will ensure nondiscriminatory treatment of all generation 
+projects and prevent preferential access for co-located facilities. 
+ 
+6. 
+Transmission providers should not expedite large loads that agree to be 
+curtailed. 
+The Proposed ANOPR recommends that transmission providers expedite the study of 
+large loads that agree to be curtailable and co-located facilities that agree to be curtailable and 
+dispatchable.57 SEIA does not support this principle.  
+The Commission should not require load that agrees to be curtailable to be explicitly 
+expedited. Whether a large load is curtailable is something that should be reflected in its 
+requested study assumptions.58 If a large load agrees to be curtailed during certain system 
+conditions, then that should limit the amount of network upgrades to accommodate the new load. 
+This, in turn, should limit the length of time it would take for the new load to come online. There 
+would be no need to expedite the requests, since the overall interconnection process would be 
+faster by design. 
+The Commission should also not permit generation that agrees to be dispatchable to be 
+expedited. As stated above, to maintain open access principles and not negatively impact 
+generation projects that are already in the queue, BYOG arrangements must be electrically close, 
+ 
+55 Id. 
+56 Id. 
+57 Proposed ANOPR at P 24. 
+58 See Section III.B.5 supra. 
+
+--- PAGE 18 ---
+18 
+ 
+if not behind the same POI, then at least in the same zone.59 This requirement would then ensure 
+that network upgrades are kept to a minimum. To further ensure that open access principles are 
+maintained, the Commission should require that a generator must go through the standard 
+interconnection queue if they seek any injection rights beyond what is necessary to serve just the 
+large load.60 Going through the standing interconnection process would allow the transmission 
+provider to identify and build the network upgrades necessary to carry the energy from the new 
+generation facility to points beyond its associated large load. 
+ Studies and project designs that limit the grid impacts of adding new generation and load 
+limit the network upgrades identified in the initial large load interconnection process. Generation 
+that connects through that process cannot agree to be dispatchable because the process constrains 
+the ability of those resources to be deliverable beyond the associated large load in the first place. 
+  
+7. 
+Network upgrade costs should be allocated to the large loads and 
+generation that trigger the need for network upgrades. However, the 
+amount of network upgrades should be limited under a well-designed 
+large load interconnection process. 
+As a general principle, SEIA agrees that if a large load interconnection request triggers a 
+network upgrade, then that large load should pay for the upgrade. This would be consistent with 
+Commission precedent,61 and applying this cost allocation principle here would ensure that the 
+costs of transmission network upgrades are allocated in a fair and nondiscriminatory manner. 
+However, the same concerns SEIA has identified regarding the study of load and 
+ 
+59 See Section III.B.3 supra. 
+60 See Section III.B.6 supra. 
+61 Improvements to Generator Interconnection Procedures and Agreements, Order No. 2023, 184 FERC ¶ 61,054 
+(2023); Building for the Future Through Electric Regional Transmission Planning & Cost Allocation, Order No. 
+1920, 187 FERC ¶ 61,068 (2024), at P 1; Transmission Plan. & Cost Allocation by Transmission Owning & 
+Operating Pub. Utilities, Order No. 1000, 136 FERC ¶ 61,051 (2011), at P 4. 
+
+--- PAGE 19 ---
+19 
+ 
+generation together also apply to the issue of cost allocation.62 When large loads and associated 
+generation are evaluated within a single study framework, transmission providers must clearly 
+define how they will determine which customer—whether the large-load interconnection 
+customer or a separate generation interconnection customer—has triggered the need for a 
+network upgrade. Without clear methodologies, there is a risk that costs will be allocated 
+inconsistently or that one class of interconnection customer (load or generation) will be unfairly 
+disadvantaged. The Commission should therefore require transmission providers to develop 
+transparent, standardized criteria for determining cost responsibility in cases where both large-
+load interconnections and generation projects contribute to the same transmission constraints. 
+ 
+8. 
+Large load interconnection customers should have the option to build 
+network upgrades. 
+The Proposed ANOPR recommends that the interconnection customer shall be afforded 
+the same (or equivalent) option to build as currently provided to generator interconnection 
+customers.63 SEIA supports this proposal.  
+Under the pro forma Large Generator Interconnection Agreement, the interconnection 
+customer has the option to build the network upgrades necessary to facilitate the interconnection 
+request. Originally this option was limited to situations where the transmission provider notified 
+the interconnection customer that it could not complete the construction of the facilities in a 
+timely manner. But in Order No. 845, the Commission expanded the option to build to allow the 
+interconnection customer to exercise the option regardless of whether the transmission provider 
+can complete construction of the network upgrades on-time.64 The Commission should grant 
+ 
+62 See Section III.B.3 supra. 
+63 Proposed ANOPR at P 26. 
+64 Order No. 845 at P 85. 
+
+--- PAGE 20 ---
+20 
+ 
+large load developers the same option. 
+The rationale the Commission applied in Order No. 845 to expand the option to build for 
+generator interconnection customers applies equally to large-load interconnection customers. 
+Allowing interconnection customers to build network upgrades, whether that interconnection 
+customer is a load developer or a generation developer, allows the customer to build network 
+upgrades in an efficient and cost-effective manner.65 The benefits of this option are the same, 
+regardless of whether the interconnection customer is developing generation or new load. 
+Requiring large load interconnection customers to wait for the transmission provider to build the 
+network upgrades may result in higher costs and longer project development timelines.66 To 
+mitigate reliability concerns, the Commission should maintain the same protections for 
+transmission providers, including the transmission provider's right to approve the engineering 
+design, the equipment tests, and the construction of the network upgrades.67 
+ 
+9. 
+The Commission should establish a rule that focuses on bringing new 
+generation online to serve new large loads. 
+The Proposed ANOPR invited comments on the proposed requirement that an existing 
+generating facility that seeks to enter a partial suspension to serve a new load at the same 
+location must go through a system support resource (SSR) or reliability must run (RMR) type 
+study.68 SEIA takes no position on whether the removal of existing generation should be studied 
+as an RMR or SSR. Removing an existing resource from the grid would have the same net 
+impact as adding new load without generation to the grid. While the Commission should remain 
+ 
+65 Order No. 845 at P 85. 
+66 Order No. 845 at P 86. 
+67 Order No. 845 at P 91. 
+68 Proposed ANOPR at P 27. 
+
+--- PAGE 21 ---
+21 
+ 
+vigilant about the grid impacts of co-locating new load with existing generation, SEIA urges the 
+Commission to establish incentives and efficient processes to encourage large loads to bring their 
+own, new generation.  
+ 
+10. 
+Transmission and ancillary service costs must reflect the benefits the large 
+load and co-located generation receive from the grid.  
+The Proposed ANOPR states that “utilities serving large loads, including those at hybrid 
+facilities, should be responsible for ancillary services based on peak demand, without 
+consideration of any co-located generation.”69 SEIA agrees that the transmission and ancillary 
+service costs must reflect the benefits the large load and co-located generation receive from the 
+grid.70 However, the type of benefits received and the corresponding cost responsibility will 
+depend on the specific arrangement.71  
+As explained earlier, some arrangements can be completely islanded from the grid and 
+bear the risk of going offline.72 Others cannot take such a risk. Given this diversity, applying a 
+uniform ancillary service requirement based solely on peak demand would fail to capture the 
+actual benefits provided by the transmission system to different large loads and co-location 
+arrangements. The Commission should instead require transmission providers to develop 
+methodologies that allocate ancillary service and transmission costs in proportion to the level of 
+service and reliability actually used by each customer. 
+ 
+69 Proposed ANOPR at P 29. 
+70 See Show Cause Order at P 77 (questioning whether Network Integration Transmission Service is the appropriate 
+transmission service for all co-location arrangements or that such service would be consistent with cost causation 
+principle.). 
+71 Clean Energy Buyers Association Pre-filed comments at 5, Docket No. AD24-11; Talen Energy Pre-Filed 
+Comments at 1-3, Docket No. AD24-11 (“Talen has been . . . safely operating co-located loads for over 18 
+months.”).   
+72 See Post-Workshop Comments of the Solar Energy Industries Association, at 4, Docket No. AD24-11 (Dec. 9, 
+2024). 
+
+--- PAGE 22 ---
+22 
+ 
+ 
+IV. 
+CONCLUSION  
+The United States is entering a new era of electric demand growth driven by AI, data 
+centers, and other large-load developments. The Commission has a critical opportunity to 
+establish clear and legally durable rules that support the reliable interconnection of these new 
+loads. As these comments explain, the interconnection of large loads presents novel challenges 
+that require flexible procedures, accurate forecasting, and transparent cost allocation. 
+SEIA supports the Commission’s leadership in this area and encourages it to issue a Final 
+Rule that prioritizes flexibility and coordination between load and generation interconnections. 
+Such a rule should provide the regulatory certainty needed to enable the timely development of 
+both the generation and transmission infrastructure required to serve this growing demand. By 
+adopting a standardized yet adaptable framework, the Commission can position the United States 
+to meet the power demands of emerging technologies while strengthening grid reliability and 
+advancing our national energy objectives. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Respectfully submitted, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/s/ Melissa Alfano 
+Melissa Alfano   
+Senior Director of Energy Markets and 
+Counsel    
+Greg Giunta  
+Manager of Regulatory Affairs and Counsel 
+Solar Energy Industries Association   
+1425 K St NW Ste. 1000   
+Washington, DC 20005   
+(202) 566-2873   
+malfano@seia.org 
+ggiunta@seia.org  
+ 

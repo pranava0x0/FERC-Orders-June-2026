@@ -1,0 +1,579 @@
+--- PAGE 1 ---
+(Final) 
+UNITED STATES OF AMERICA 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+Interconnection of Large Loads to the Interstate 
+Transmission System 
+Docket No. RM26-4-000 
+ 
+REPLY COMMENTS OF INTERNATIONAL ENERGY CREDIT ASSOCIATION 
+ 
+The International Energy Credit Association (“IECA”) submits these reply comments 
+(“Reply Comments”) in response to the Federal Energy Regulatory Commission’s (“Commission” 
+or “FERC”) Notice Inviting Comments issued on October 27, 2025 (“Notice”), in the above-
+captioned docket. In its Notice, the Commission referenced a proposed advance notice of proposed 
+rulemaking (proposed “ANOPR”) issued on October 23, 2025, by the Secretary of Energy 
+(“Secretary”) pursuant to Section 403 of the Department of Energy Organization Act,1 which 
+authorizes the Secretary to propose rules for consideration by the Commission. As extended by 
+the Commission, the Notice requests that initial comments be submitted by November 21, 2025, 
+and reply comments be submitted by December 5, 2025. The Secretary’s transmittal letter of 
+October 23, 2025, called for the Commission to take “final action (no later than April 30, 2026)” 
+on the Secretary’s proposed ANOPR.  
+Fundamentally, the Secretary’s proposed ANOPR is intended to expedite the process of 
+interconnecting large loads in excess of 20 MW to the interstate transmission system, focusing 
+primarily on the interconnection of Data Centers to the grid. The Secretary’s proposed ANOPR is 
+consistent with President Trump’s issuance on July 23, 2025, of Winning the Race: America’s AI 
+Action Plan.  The IECA submitted its initial Comments (“Initial Comments”) on November 21, 
+2025, in the above-captioned docket. The IECA appreciates the opportunity to submit these Reply 
+Comments on the Secretary’s proposed ANOPR for the Commission’s consideration. 
+I. 
+IDENTITY AND INTEREST 
+The IECA is an association of over 800 credit, risk management, legal and finance 
+professionals that is dedicated to promoting the education and understanding of credit and other 
+risk management-related issues in the energy industry. For the last 100 years, IECA members have 
+actively promoted the development of best practices that reflect the unique needs and concerns of 
+the energy industry. The IECA seeks to protect the rights and advance the interests of a broad 
+range of domestic and foreign energy market participants, representatives of which make up the 
+IECA’s membership. These entities finance, produce, sell, purchase for resale, and hedge their 
+exposure to risk related to, substantial quantities of various physical energy commodities, 
+including electricity, natural gas, oil, refined petroleum products, hydrogen, ammonia, renewable 
+energy certificates, voluntary carbon credits, and numerous other energy-related physical 
+commodities (both tangible and intangible) necessary for the healthy functioning of the energy 
+markets and the “real economy.” 
+ 
+1 42 U.S.C. § 7173.  
+
+--- PAGE 2 ---
+ 
+- 2 - 
+ 
+As market participants in physical and financial energy markets in the U.S. and globally, 
+IECA members are directly affected by the enormousness of the impact on physical and financial 
+energy markets of new Data Center development, artificial intelligence (“AI”) implementation, 
+new power plant construction needed to serve the Data Centers that will implement AI and other 
+advanced computing functions. We also recognize that new Federal and State policies should 
+encourage and support Data Center and AI development, while simultaneously protecting the 
+provision of plentiful, reliable, and affordable electric energy to the nation’s electricity grid and 
+its existing customers. 
+ 
+IECA members acknowledge the critical role that Data Centers and AI are expected to play 
+in the growing digital economy and we urge the Commission to work collaboratively with States 
+and State commissions to ensure that any new policies and regulations arising from the Secretary’s 
+ANOPR are just and reasonable to all constituencies and serve the public interest. On that basis, 
+we submit these Reply Comments. 
+ 
+II. 
+PLEADINGS AND COMMUNICATIONS 
+Pleadings and other communications concerning this proceeding should be directed to the 
+following persons: 
+Phil Lookadoo, Esq. 
+Haynes and Boone, LLP 
+800 17th Street, NW, Suite 500 
+Washington, DC 20006 
+Phone: 202-654-4510 
+Email: phil.lookadoo@haynesboone.com 
+ 
+Jeremy Weinstein, Esq. 
+Law Offices of Jeremy Weinstein, PC 
+1512 Bonanza Street 
+Walnut Creek, CA 94596 
+Phone: 925-943-2708 
+Email: jweinstein@jweinsteinlaw.com 
+ 
+III. 
+REPLY COMMENTS 
+After reviewing many of the initial comments submitted by others in this proceeding, the 
+IECA respectfully offers the following Reply Comments. We believe the public interest is best 
+served by creating a regulatory framework that supports and encourages the interconnection of 
+large loads, focusing primarily on large Data Centers, but applying also to other large loads such 
+as semiconductor fabrication, high-performance computing, critical minerals facilities, and many 
+other forms of advanced manufacturing that require large quantities of fundamentally baseload 
+electricity generation for daily operation of such large loads. 
+A. BASIC DATA CENTER AND AI TERMINOLOGY. 
+In the IECA’s Initial Comments submitted in this Docket No. RM26-4-000, we attempted 
+to establish a common understanding of several key terms used in most discussions about Data 
+Centers and AI. In these Reply Comments, we are adding the following definition: 
+Data Center. A “Data Center” is a physical room, building, or other facility that 
+houses IT infrastructure (i.e., large racks of computer servers, storage systems, and 
+networking equipment) used to store, process, and manage data. Servers contain 
+“Chips” that work together to process and store data and that ability to process data 
+
+--- PAGE 3 ---
+ 
+- 3 - 
+ 
+is called “Compute.” Data Centers lease their data storage capacity to third-parties 
+seeking access to cloud storage capacity for their data. Data Centers also lease their 
+Compute to third parties who use that Compute to: (i) train their AI models by 
+expanding the model’s database (i.e., “Training Compute”); (ii) process user 
+prompts (i.e., a user’s question, command, or other task-specific instruction) to an 
+AI model or other computer program, such as requests to analyze new data to draw 
+conclusions (i.e., inferences) about that new data (i.e., “Inference Compute”); and 
+(iii) perform other advanced computing applications. 
+Please note that we have not proposed a definition of “Co-Location,” primarily in 
+recognition of the thousands of pages of pleadings the Commission has already received 
+on the issue of “Co-Location” in FERC Docket No. EL25-49-000 (the Commission’s 
+Show-Cause Order proceeding referenced below in these Reply Comments). We do ask 
+that the Commission recognize that a large load which interconnects with the grid at one 
+point of interconnection and is contractually tied to one or more comparably-sized 
+generation resources which interconnect with the same grid at a physically “proximate” 
+location, should be viewed as no less physically co-located than a large load and a 
+comparably-sized generation resource that interconnect with the same grid at a single point 
+of interconnection, whether in front of or behind the meter.  
+Including this additional definition of “Data Center,” we intend to use the following 
+list of defined terms in these Reply Comments as we also did in our Initial Comments, 
+which list refers back to the definitions set forth in our Initial Comments, which are shown 
+below in alphabetical order): 
+AI. 
+Asynchronous Computing. 
+Compute. 
+Inference Compute. 
+Training Compute. 
+Controllable Dispatch. 
+Data Center. 
+FLOPS. 
+GPUs/Chips. 
+Hyperscalers. 
+Inference. 
+Transient Loads. 
+
+--- PAGE 4 ---
+ 
+- 4 - 
+ 
+B. THE COMMISSION SHOULD PROVIDE GUIDANCE REGARDING THE 
+RANGE OF ACCEPTABLE OPERATIONAL REQUIREMENTS THAT 
+COULD ACCOMPANY EACH OF THE FOLLOWING THREE CO-
+LOCATION 
+CONFIGURATIONS 
+— 
+(1) 
+FIRM, 
+(2) 
+CO-LOCATED 
+GENERATOR-CONTINGENT, OR (3) INTERRUPTIBLE — AND THE 
+RANGE OF TRANSMISSION SYSTEM PROTECTIONS THAT COULD 
+ACCOMPANY EACH SUCH CONFIGURATION. 
+In responding to the Secretary’s ANOPR on large load interconnection, we submit that the 
+Commission should propose guidance on the range of acceptable operational requirements and 
+contractual obligations that large loads and co-located generation could choose to put in place to 
+address what happens when and if the co-located generation facility experiences a full or partial, 
+scheduled or unscheduled outage, including whether deliveries to the Co-Located Load from the 
+interstate transmission system are:  
+(i) 
+FIRM - the Co-Located Load is intended to consume capacity and energy 
+from the interconnected interstate transmission system during any outage of 
+the Co-Located Generation;  
+(ii) 
+CO-LOCATED GENERATOR-CONTINGENT - the Co-Located Load is 
+not intended to consume capacity or energy from the interconnected 
+interstate transmission system during an outage of the Co-Located 
+Generation; or  
+(iii) 
+INTERRUPTIBLE - the Co-Located Load is intended to consume energy 
+from the interconnected interstate transmission system only during an 
+outage of the Co-Located Generation, but such deliveries may be 
+interrupted if and to the extent required by other firm customers. 
+Commission guidance should also be provided regarding the range of acceptable 
+transmission system protections that may be applied to each such configuration involving a Co-
+Located Load and a Co-Located Generator and the owner or operator of the interconnected 
+interstate transmission system. 
+During the 1950s, 1960s, and 1970s, different regions of the U.S. provided varying levels 
+of support for the development of large loads and large loads gravitated to regions and different 
+States that welcomed such large loads. Quite often, large baseload coal-fired, natural gas-fired, or 
+nuclear power plants were constructed, typically by investor-owned or municipally-owned electric 
+utilities, to generate the baseload electric energy required by such large loads. Such new baseload 
+generators were not necessarily located at the same point of interconnection with the grid as the 
+new large load. Instead, such new baseload generators were physically interconnected with the 
+same grid at locations that were physically “proximate” to the locations where such new large 
+loads were interconnected with the transmission or distribution grid.  
+In the 50s, 60s, and 70s, such large loads and baseload power plants were not called “co-
+located loads” or “co-located generators,” but the concept was identical, and the new large load 
+
+--- PAGE 5 ---
+ 
+- 5 - 
+ 
+was connected contractually with and relied upon the utility that owned the new coal-fired power 
+plant. 
+Today, however, the regulatory systems and the technical configurations that currently 
+exist in many parts of the country were not designed to address the needs of energizing the 
+enormous number of new large loads requiring large quantities of baseload electric generation that 
+are being developed, in the case of Data Centers, simultaneously in all fifty States.  
+Interconnecting this “tsunami” of new Data Centers and other large loads to the grid faces 
+what appear to be unnecessarily long delays in various regions of the country. These delays in 
+interconnecting new large loads to the grid can be addressed, in part, by simultaneously 
+considering and studying the impacts of adding new baseload generation at locations on the same 
+grid that are physically proximate to the new large loads. However, this simultaneous consideration 
+of new large loads and new generation lies squarely at the intersection of Federal and State 
+regulation of the U.S. electricity grid.  
+For several decades, the Commission has regulated the interconnection of new generation 
+resources to the interstate transmission grid. On August 19, 2003, the Commission issued its Order 
+No. 2003 requiring all public utilities that own, control, or operate facilities used for transmitting 
+electric energy in interstate commerce to have on file standardized generator interconnection 
+procedures and standardized generator interconnection agreements for generating facilities larger 
+than 20 MW. On July 28, 2023, the Commission issued its Order No. 2023, and on March 21, 
+2024, the Commission issued its Order No. 2023-A, which were intended to modernize the 
+interconnection process for new generation facilities seeking to connect to the interstate 
+transmission grid. Reforming the Commission’s generator interconnection process was deemed by 
+the Commission to be necessary to address the backlog of 10,000 active interconnection requests 
+by generators in interconnection queues throughout the U.S. that existed in 2022.2 
+On the other hand, as expressed in the initial comments on the proposed ANOPR submitted 
+by NARUC, VA SCC, PPUC, and other State Commissions, the siting, permitting, and 
+interconnection of loads has historically been regulated by State government agencies. According 
+to the foregoing initial comments, creating a Federal load queue for large loads raises jurisdictional 
+and “major question” concerns. On that basis, those initial comments support guidance and 
+minimum standards, but not prescriptive Federal mandates for interconnecting large loads to the 
+interstate transmission grid. 
+We respectfully request that the Commission get bogged down in a jurisdictional fight over  
+the legal issues associated with State versus Federal jurisdiction and “major questions” concerns 
+regarding whether a particular portion of the grid involves distribution or interstate transmission.3  
+ 
+2 See the response to the first question in the Commission’s “Explainer on the 
+Interconnection Final Rule” available at: https://www.ferc.gov/explainer-interconnection-final-
+rule. 
+3 See the Seven-Factor Test in the Commission’s Order No. 888, which is used to 
+determine whether a facility’s primary function is “transmission” versus “distribution.” 
+
+--- PAGE 6 ---
+ 
+- 6 - 
+ 
+Instead we recommend that the Commission seek collaborative and cooperative approaches with 
+the various States and State Commissions to expedite the interconnection of large loads. Working 
+together is much more likely to lead to the expedited interconnection processes for large loads that 
+the Secretary’s ANOPR is seeking. 
+We also suggest that the Commission avoid prescriptive Federal mandates for 
+interconnecting large loads to the interstate transmission grid. 
+Instead, we submit that the Commission would do the most good by proposing guidance 
+which developers of Data Centers and developers of new power plants could voluntarily pursue as 
+a means of expediting the regulatory approvals required to meet the commercial deadlines of Data 
+Centers and AI developers and users. 
+Such guidance could promote and encourage a range of acceptable operational 
+requirements and contractual obligations that large loads and co-located generation could choose 
+to put in place to address what happens when and if the co-located generation facility experiences 
+a full or partial, scheduled or unscheduled outage. Those operational requirements and contractual 
+obligations should separately address the three co-location configurations we noted above, namely: 
+(i) 
+FIRM - the Co-Located Load is intended to consume capacity and energy 
+from the interconnected interstate transmission system during any outage of 
+the Co-Located Generation;  
+(ii) 
+CO-LOCATED GENERATOR-CONTINGENT - the Co-Located Load is 
+not intended to consume capacity or energy from the interconnected 
+interstate transmission system during an outage of the Co-Located 
+Generation; or  
+(iii) 
+INTERRUPTIBLE - the Co-Located Load is intended to consume energy 
+from the interconnected interstate transmission system only during an 
+outage of the Co-Located Generation, but such deliveries may be 
+interrupted if and to the extent required by other firm customers. 
+Commission guidance could also designate the range of acceptable transmission system 
+protections and contractual arrangements among Co-Located Load, Co-Located Generator, and 
+the transmission grid owner or operator, that could be put into effect to ensure that the impacts of 
+that co-location configuration on the grid and other customers (both generators and loads) served 
+by the grid are adequately and reliably addressed. 
+C. THE COMMISSION SHOULD CONSIDER UTILIZING THE RECORD 
+CREATED IN ITS SHOW-CAUSE ORDER PROCEEDING IN DOCKET NO. 
+EL25-49-000 IN PREPARING ITS RESPONSE TO THE SECRETARY’S 
+PROPOSED ANOPR IN ORDER TO ADDRESS THE CONCERNS WE RAISED 
+IN SECTION III.B. OF THESE REPLY COMMENTS. 
+The issues we raised in Section III.B. of these Reply Comments are essentially the same as 
+the issues that led the Commission to issue its Order Rejecting Amendments to Interconnection 
+Service Agreement in PJM Interconnection, L.L.C., Docket Nos. ER24-2172-000 and 001, on 
+
+--- PAGE 7 ---
+ 
+- 7 - 
+ 
+November 1, 2024 (“Rejection Order”). Therein the Commission explained that the amended 
+interconnection service agreement (“Amended ISA”) would “increase the amount of Co-Located 
+Load from 300 megawatts (MW) to 480 MW.”4 In paragraphs 13 and 14 of its Rejection Order, 
+the Commission describes some of the transmission system protection provisions, included as 
+“non-conforming terms and conditions” in the Amended ISA, as follows:5 
+13. PJM notes that the Amended ISA contains revisions addressing system 
+protection facilities with respect to the separation of the Co-Located Load in the 
+event of a loss of generation output.  Specifically, PJM explains that the Amended 
+ISA states that Susquehanna has installed a protection scheme to ensure the Co-
+Located Load separates if there is a loss of generation output from the Customer 
+Facility to ensure no power flows from the Interconnection Transmission Owner’s 
+facilities to the Co-Located Load.  PJM states that this provision “reflects an 
+important effort to minimize” the potential for an unauthorized taking of power 
+from the PJM transmission system.  PJM explains that the Amended ISA contains 
+other provisions to support reliable operations, including that Susquehanna will 
+provide generator shutdown and automatic tripping data to PPL and PJM upon 
+request. 
+14. PJM states that the Amended ISA also includes other terms and conditions, 
+including language specifying that Co-Located Load is not Station Power Load or 
+Network Load  PJM explains that the Amended ISA states that the Co-Located 
+Load is not intended to consume capacity and/or energy from the PJM transmission 
+system. But, PJM states that the Amended ISA also identifies potential steps if 
+power flows from the PJM transmission system and PPL facilities to the 
+transmission facilities of the Co-Located Load.  PJM states that the Amended ISA 
+is subject to revision, including PJM’s right to assess in a non-discriminatory 
+manner additional rates, terms, or conditions, which may include transmission or 
+ancillary service charges. 
+In rejecting PJM’s Amended ISA with PPL and Susquehanna, the Commission explained 
+in paragraph 85 of its Rejection Order that: 
+… we find that PJM has not demonstrated that the proposed non-conforming 
+provisions in the Amended ISA are necessary deviations from the pro forma ISA 
+due to specific reliability concerns, novel legal issues, or other unique factors. 
+Accordingly, we reject the Amended ISA.6 
+ 
+4 PJM Interconnection, L.L.C., 189 FERC ¶ 61,078, slip op. at page 1 (November 1, 
+2024). 
+5 Id. (slip op. at page 7). 
+6 Id. (slip op. at page 39). 
+
+--- PAGE 8 ---
+ 
+- 8 - 
+ 
+Subsequently, on February 20, 2025, the Commission issued an Order Instituting 
+Proceeding Under Section 206 of the Federal Power Act and Consolidating With Other 
+Proceedings (“Show Cause Order”) in Docket No. EL25-49-000, which consolidated the 
+Commission’s technical conference on “large loads co-located at generating facilities” in Docket 
+No. AD24-11-000 and a complaint against PJM filed by Constellation in Docket No. EL25-20-
+000, with the Commission’s Section 206 Proceeding under the Show Cause Order. 
+The Show Cause Order directed PJM and its Transmission Owners to either (1) show cause 
+as to why PJM’s Tariff remains just and reasonable “without provisions addressing with sufficient 
+clarity or consistency the rates, terms, and conditions of service that apply to co-location 
+arrangements” or “(2) explain what changes to the Tariff would remedy the identified concerns.”7  
+As a result of the Commission’s Show Cause Order and the many responsive pleadings 
+submitted by affected market participants in Docket No. EL25-20-000, the Commission and its 
+Staff should now have a relatively complete record on “co-location” issues in PJM on which to 
+formulate and propose guidance in response to the ANOPR regarding the range of acceptable 
+transmission system protection provisions that counterparties could apply to co-location 
+arrangements involving large loads and co-located generation resources located at the same point 
+of interconnection or at “proximate” points of interconnection with the interstate transmission grid. 
+In addition, the Commission could use the opportunity presented by its response to the 
+Secretary’s proposed ANOPR to provide a practical and useful definition of “Co-Location” that 
+would recognize when large loads and comparably-sized generators were located at the same point 
+of interconnection or at different points of interconnection with the same grid which are reasonably 
+“proximate” to each other. 
+D. IT IS STILL EARLY IN THE DEVELOPMENT OF AI, BUT QUESTIONS 
+HAVE ALREADY BEGUN TO ARISE: WILL THE SUPPLY OF COMPUTE 
+PROVIDED BY DATA CENTERS CONTINUE TO BE LESS THAN THE 
+DEMAND FROM USERS OF COMPUTE FOR AI APPLICATIONS? WILL A 
+BALANCE OF SUPPLY OF AND DEMAND FOR COMPUTE BE ACHIEVED? 
+AND WILL SOME NUMBER OF DATA CENTERS BECOME STRANDED 
+INVESTMENTS? 
+Some investment advisors and economists are already suggesting that capital investment 
+in AI and Data Centers has become a “bubble,” with capital investment exceeding investment 
+levels rationally justified by the level of commercially feasible applications for AI that are known 
+and measurable today. Others contend that their capital-spend on Data Centers and AI is a 
+sustainable investment based on real demand that is already beginning to materialize and even 
+greater demand that will materialize in the not-too-distant future. At this time, the debate is 
+unresolved; Is continuing growth in new Data Centers and AI a sustainable investment trend based 
+on the demand for Compute by users of AI that will continue growing into the foreseeable future, 
+or are Data Centers an investment “bubble” that will eventually burst? 
+ 
+7 Show Cause Order, Slip Op. in paragraph 2 on page 3. 
+
+--- PAGE 9 ---
+ 
+- 9 - 
+ 
+Reportedly, the sales or lease price for a unit of “Compute” (calculated on a per MW basis) 
+today is approximately three times the price per MW of building a power plant to produce the 
+electric energy required to produce that unit of “Compute.” So the current “spread” between the 
+expenditure to build new sources of power generation and the revenue from sales of Compute is 
+sufficient to justify the cost of installing redundant power generation equipment to ensure that an 
+outage of a generator co-located with a Data Center will not result in an outage of the co-located 
+Data Center. 
+Over time, however, if the supply of Compute becomes balanced with or exceeds the 
+demand for Compute, that “spread” could quickly narrow. If and when that happens, the impacts 
+of the “commoditization” of “Compute” could cause the price for leasing or selling “Compute” to 
+fall so far that the cost of achieving 100% redundancy for Data Center infrastructure could become 
+too expensive for Data Center owners to economically justify. 
+We support expediting the process for interconnecting large loads, particularly Data 
+Centers, for all the reasons we noted in our Initial Comments. Just as the developers and customers 
+of new generation facilities currently bear the costs of interconnecting new generators to the 
+interstate transmission system, including the costs of all necessary system impact studies, under 
+the Commission’s existing policies applicable to the interconnection of generators to the grid, we 
+also support having the costs of interconnections of large loads, including the costs of all necessary 
+system impact studies, be borne by the developers and customers of such large loads, which should 
+place the risk of stranded investment on those in the best position to manage such risk, i.e., the 
+developers of such large loads. 
+Similar to the treatment afforded by the Commission to generators, if the interconnection 
+of a large load provides benefits to the transmission grid and to others using that transmission grid, 
+then various means should be made available to compensate the large load owner for providing 
+such benefits to the transmission grid and its users. 
+E. WE SUPPORT THE PROPOSALS IN THE ANOPR TO SIMULTANEOUSLY 
+STUDY AND EXPEDITIOUSLY APPROVE INTERCONNECTION OF DATA 
+CENTERS WITH MATCHING CO-LOCATED POWER GENERATION 
+RESOURCES, BUT ANY SUCH REGULATION MUST ALSO PROVIDE 
+GUIDANCE REGARDING WHAT HAPPENS WHEN THE CO-LOCATED 
+GENERATOR EXPERIENCES A SCHEDULED OR UNSCHEDULED, FULL 
+OR PARTIAL OUTAGE. 
+We support the simultaneous study of system impacts from a Co-Located Load with its 
+Co-Located Generation and the expeditious approval of the interconnection of both at a single 
+point of interconnection or at two or more “proximate” points of interconnection, provided that 
+the impacts on the transmission grid and other users of that transmission grid are addressed as set 
+forth in Section III.B. of these Reply Comments.  
+F. THE HALT TO TRADING ON THE CME ON THANKSGIVING DAY 
+(11/27/2025) DUE TO FAILURE OF THE COOLING SYSTEM AT A DATA 
+CENTER DEMONSTRATES THAT DATA CENTERS NEED IMMEDIATELY 
+
+--- PAGE 10 ---
+ 
+- 10 - 
+ 
+AVAILABLE BACK-UP SUPPLIES OF POWER, COOLING, AND OTHER 
+NECESSARY INFRASTRUCTURE. 
+In Section III.D. of these Reply Comments and in our Initial Comments, we talked about 
+the “commoditization” of Compute and what that might mean for the revenues Data Center owners 
+and users may receive for selling or leasing their Compute to third-party customers. Such 
+commoditization of Compute and the rapid build-out of Data Centers could result in a balance 
+being reached between the supply of Compute and the demand for Compute from users. Going 
+from the shortage in the supply of Compute today to a balance or beyond to a surplus of Compute 
+could produce a steep decline in the price available for selling or leasing Compute to customers 
+using such Compute for AI applications.  
+ 
+As we noted, Data Centers make money by: (i) leasing their data storage capability to cloud 
+storage users; (ii) providing a platform for online services; (iii) leasing their Training Compute to 
+AI model developers to “train” their AI models; (iv) leasing their Inference Compute to process 
+user prompts from third-party users (some knowledgeable AI experts predict that Inference 
+Compute will experience the most AI growth and produce the most revenues for Data Centers and 
+AI model developers); and (v) other advanced computing applications. 
+ 
+While “commoditization” of Compute is a future risk, the risk most on the minds today for 
+Data Center owners and users, particularly Hyperscalers, is the risk of a prolonged outage of any 
+Data Center that a commercial or industrial business relies on for its daily operations. 
+ 
+Such an outage occurred on Thanksgiving Day, November 27, 2025. As reported by 
+Bloomberg.com, “a data center cooling issue halted futures and options trading at the Chicago 
+Mercantile Exchange” (“CME”). As reported, this Data Center located “just outside Chicago in 
+Aurora, Illinois, that belongs to CyrusOne … experienced a chiller plant failure that affected 
+multiple cooling units,” which “triggered an outage that caused hours of disruption to markets 
+across equities, foreign exchange, bonds and commodities, and affected contracts covering trillions 
+of dollars” on CME’s trading platform. 
+ 
+For Data Centers providing similar services that require continuous online access, any 
+outage is unacceptable. For Data Centers providing such services, whether such services are 
+viewed as Compute or simply cloud storage or other advanced online computing capability, 
+innovations in AI may never render the provision of such services into a fungible commodity that 
+can be simply and easily replaced.  If so, then Data Centers providing such advanced computer 
+services may find that continuing to require 99.999% availability of electric generation, cooling 
+systems, and other Data Center infrastructure will continue to be a required cost of doing business. 
+ 
+It is entirely possible that CME, and others relying on Data Centers to provide similarly 
+high-reliability and high-availability online computer services, will find the cost of 100% 
+redundancy for all Data Center infrastructure (i.e., electricity, cooling, etc.) as simply the cost of 
+doing business at the speed and accessibility demanded by their customers and their business. On 
+this basis, there could be some Data Centers for which “commoditization” causes 100% 
+redundancy to be cost-prohibitive, while other Data Centers (depending on the requirements of the 
+customers using each such Data Center) may find the security requirements of their customer to 
+require such redundancy. 
+
+--- PAGE 11 ---
+ 
+- 11 - 
+ 
+ 
+If that is the case, we submit that any guidance, policies, rules, or other regulations issued 
+by the Commission in response to the Secretary’s ANOPR will need to be flexible enough to 
+encourage and accommodate both types of Data Centers. 
+ 
+G. EXPEDITED INTERCONNECTION AUTHORIZATION SHOULD NOT BE 
+BASED ON CURTAILABILITY OF THE DATA CENTER LOAD WHEN AND 
+IF THE TRANSMMISSION GRID EXPERIENCES A SHORTFALL 
+UNRELATED TO THE DATA CENTER OR ITS CO-LOCATED POWER 
+GENERATION RESOURCE. 
+As noted by others in their initial comments in this proceeding, and in order to prevent Data 
+Center outages of the type discussed above in Section III.F. of these Reply Comments, we do not 
+support requiring curtailability of Data Center load as a condition to expedited interconnection of 
+large loads, whether such large loads are Co-Located Loads or stand-alone large loads.  
+ 
+As noted above, many beneficial applications of Data Centers and AI will require 
+continuous operation of the Data Center 24 hours a day and 7 days a week. Excluding such 
+applications of Data Centers and AI from expedited interconnection approval, because such 
+applications are unable to be curtailed, would not benefit the public interest and would be harmful 
+to the public interest, which we believe is served by expediting and encouraging the development 
+and application of such Data Centers, AI, and other similarly high-reliability large loads. 
+ 
+H. WHILE CURTAILABILITY SHOULD NOT BE A CONDITION TO OBTAIN 
+EXPEDITED INTERCONNECTION APPROVAL, DATA CENTERS SHOULD 
+BE ENCOURAGED TO UNDERTAKE ANALYSES OF AUTOMATED DATA 
+CENTER 
+INFRASTRUCTURE 
+MANAGEMENT 
+AND 
+OTHER 
+TECHNOLOGICAL METHODS THAT COULD ENABLE THE CURTAILING 
+OF NON-COMPUTE-RELATED LOAD. 
+While we do not support requiring curtailability of any large load as a condition precedent 
+to receiving expedited approval of interconnections of such large load, whether Co-Located Load 
+or stand-alone load (i.e., not associated with any Co-Located Generator), we do think that demand-
+response reductions of any commercial or industrial load can be extremely beneficial to the 
+transmission grid and its users.  
+Accordingly, Commission guidance should ensure that the owners and operators of the 
+transmission system advise and encourage all large loads, especially Data Centers, of the benefits 
+available to them from demand-response programs. If technologically feasible, the Commission 
+could explore different forms of Data Center Infrastructure Management (“DCIM”) services and 
+assist the vendors of such DCIM services as a means of enabling Data Centers and other large 
+loads to qualify for demand-response programs offered by the owners and/or operators of the 
+interstate transmission system. 
+
+--- PAGE 12 ---
+ 
+- 12 - 
+ 
+I. ANY GUIDANCE, POLICIES, RULES, OR REGULATIONS PROVIDED BY 
+THE COMMISSION IN RESPONSE TO THE SECRETARY’S ANOPR MUST 
+BE SUFFICIENTLY FLEXIBLE TO ENCOURAGE AND ACCOMMODATE 
+INNOVATION IN DATA CENTER DEVELOPMENT, OTHER LARGE 
+LOADS, AND THE ADOPTION OF AI, WHICH INNOVATIONS ARE 
+INEVITABLE IN THIS NASCENT STAGE OF THEIR DEVELOPMENT. 
+The development of AI and Data Centers, and many other large loads, will continue to be 
+in a nascent stage for many years to come. Accordingly, we encourage the Commission to ensure 
+that any guidance, policies, rules, or regulations it may issue in response to the Secretary’s ANOPR 
+will be sufficiently flexible to accommodate the huge range of innovations that are likely to 
+accompany the development of AI and the accelerated time periods for responding to such 
+innovations in AI and Data Center applications, as well as the potential development of other 
+nascent large loads involving chip fabrication, critical minerals processing, and things we have not 
+yet imagined. 
+IV. 
+CONCLUSION 
+ 
+The IECA appreciates the opportunity to submit these Reply Comments to the Commission 
+for your review and consideration. Please do not hesitate to contact the undersigned with any 
+questions regarding this filing. 
+ 
+Respectfully submitted, 
+ 
+INTERNATIONAL ENERGY CREDIT 
+ASSOCIATION 
+ 
+/s/ Phillip G. Lookadoo_____  
+ 
+Jeremy Weinstein, Esq. 
+ 
+ 
+Phillip G. Lookadoo, Esq. 
+Law Offices of Jeremy Weinstein, PC 
+Christian A. Nunez, Esq. 
+1512 Bonanza Street  
+ 
+ 
+Haynes and Boone, LLP 
+Walnut Creek, CA 94596 
+ 
+ 
+888 16th Street, NW, Ste 300 
+925-943-2708  
+ 
+ 
+ 
+Washington, DC 20006 
+jweinstein@jweinsteinlaw.com 
+ 
+(202) 654-4510 
+Phil.lookadoo@haynesboone.com 
+ 
+Its Attorneys 
+ 
+ 
+December 5, 2025 

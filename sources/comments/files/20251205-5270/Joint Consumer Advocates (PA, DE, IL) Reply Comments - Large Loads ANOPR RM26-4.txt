@@ -1,0 +1,1092 @@
+--- PAGE 1 ---
+ 
+ 
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+Interconnection of Large Loads 
+) 
+to the 
+)  
+Docket No.         RM26-4-000 
+Interstate Transmission System 
+) 
+ 
+ 
+REPLY COMMENTS OF THE  
+PENNSYLVANIA OFFICE OF CONSUMER ADVOCATE,  
+DELAWARE DIVISION OF THE PUBLIC ADVOCATE,  
+AND THE PEOPLE OF THE STATE OF ILLINOIS BY THE OFFICE OF THE 
+ILLINOIS ATTORNEY GENERAL 
+ 
+ 
+ 
+
+--- PAGE 2 ---
+ 
+ 
+ 
+Table of Contents 
+I. 
+INTRODUCTION .................................................................................................................. 1 
+II. 
+SUMMARY OF REPLY COMMENTS ................................................................................. 2 
+III. 
+REPLY COMMENTS ......................................................................................................... 4 
+A. 
+FERC should adopt a cooperative federalism model to govern large load 
+interconnections, curtailments, and transmission cost allocations. ............................................ 4 
+1. 
+FERC should adopt a cooperative federalism model that preserves existing state 
+jurisdiction. ............................................................................................................................. 4 
+2. 
+FERC should clarify curtailment protocols within a cooperative federalism 
+paradigm because data center load growth may necessitate curtailments, and 
+curtailments should protect current customers over new large data center load 
+customers that cause resource inadequacy. ............................................................................. 6 
+B. 
+Given the unique issues that large loads create for grid reliability, treating new large 
+loads differently from other load is reasonable and necessary to ensure reliable service 
+and just and reasonable rates for existing consumers, especially residential consumers. .......... 8 
+C. 
+Definition of Large Load and Hybrid Facilities.................................................................11 
+D. 
+Interconnection Studies and Network Upgrade Cost Allocation for Large Loads and 
+Hybrid Facilities ....................................................................................................................... 14 
+1. 
+FERC should build on FERC Order 2023 by continuing to streamline processes 
+that factor hybrid facilities jointly in the interconnection study. .......................................... 14 
+2. 
+FERC should approach injection and withdrawal rights according to grid-
+protective assumptions that prevent free-riding and regulatory evasion. ............................. 15 
+3. 
+FERC and PJM should facilitate expedited interconnection studies of large loads 
+and hybrid facilities that agree to be meaningfully curtailable or dispatchable.................... 16 
+4. 
+FERC should ensure that large loads and hybrid facilities pay fully for their 
+network upgrade costs without unjustly burdening residential ratepayers and all other 
+grid users. .............................................................................................................................. 18 
+IV. 
+CONCLUSION ................................................................................................................. 25 
+ 
+
+--- PAGE 3 ---
+ 
+1 
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+Interconnection of Large Loads 
+) 
+to the 
+)  
+Docket No.         RM26-4-000 
+Interstate Transmission System 
+) 
+ 
+ 
+REPLY COMMENTS OF THE  
+PENNSYLVANIA OFFICE OF CONSUMER ADVOCATE, 
+DELAWARE DIVISION OF THE PUBLIC ADVOCATE,  
+AND THE PEOPLE OF THE STATE OF ILLINOIS BY THE OFFICE OF THE  
+ILLINOIS ATTORNEY GENERAL 
+ 
+I. 
+INTRODUCTION 
+ 
+On November 21, 2025, the Pennsylvania Office of Consumer Advocate (PA OCA) and 
+the Delaware Division of the Public Advocate (DE DPA) submitted Joint Comments to the 
+Advanced Notice of Proposed Rulemaking (ANOPR) established in the above-captioned docket.1 
+The PA OCA represents the interests of Pennsylvania’s residential utility consumers, including 
+before the Federal Energy Regulatory Commission (FERC or Commission).2 The DE DPA 
+represents the interests of Delaware regulated utility consumers, including before FERC.3 The 
+Office of the Illinois Attorney General (IL OAG) represents the People of the State of Illinois on 
+public utility issues in proceedings before state and federal regulatory agencies and in state and 
+federal courts.4  
+ 
+1 See generally, Interconnection of Large Loads to the Interstate Transmission System, Joint Comments of the 
+Pennsylvania Office of Consumer Advocate and Delaware Division of the Public Advocate, Docket No. RM26-4-000 
+(Nov. 21, 2025). The Office of the Illinois Attorney General filed separate comments.  See RM-26-4-000, Comments 
+of the People of the State of Illinois by the Office of the Illinois Attorney General (November 21, 2025). 
+2 See 71 P.S. § 309-4 (outlining powers of Consumer Advocate to represent Pennsylvania’s residential utility 
+consumers in FERC proceedings and federal courts). 
+3 See 29 Del. C. § 8716(e). 
+4 See 15 ILCS 205/6.5(d).   
+
+--- PAGE 4 ---
+ 
+2 
+ 
+The PA OCA, DE DPA, and IL OAG (collectively, the Joint Consumer Advocates) 
+appreciate the opportunity to submit reply comments and further appreciates the DOE’s and 
+FERC’s efforts “to ensure all Americans and domestic industries have access to affordable, 
+reliable, and secure electricity.”5  
+In submitting these reply comments, the Joint Consumer Advocates aim to protect the 
+interests of residential utility consumers by ensuring their access to a reliable and affordable 
+regional electricity grid. Residential ratepayers should not suffer unreliable electricity service or 
+pay unreasonably high rates for inferior, unreliable grid service as a result of the interconnection 
+of large loads that do not offset their demand through the addition of timely, local, and adequate 
+capacity resources.6  
+II. 
+SUMMARY OF REPLY COMMENTS 
+FERC should adopt a cooperative federalism model to govern large load interconnections, 
+curtailments, and transmission cost allocations that preserves existing state jurisdiction. FERC 
+should clarify curtailment protocols within a cooperative federalism paradigm because new large 
+load growth may necessitate curtailments, and curtailments should protect current customers, 
+especially residential consumers, over new large load customers that cause the resource 
+inadequacy. The Joint Consumer Advocates are primarily concerned by the cumulative effect of 
+the undisciplined interconnection of new large loads during a time when market conditions indicate 
+that there may not be adequate generation capacity to serve all customers reliably.  
+ 
+5 See U.S. Sec’y of Energy, Letter Communicating Advanced Notice of Proposed Rulemaking on Large Load 
+Interconnection 
+(Oct. 
+23, 
+2025), 
+[hereinafter 
+ANOPR] 
+https://www.energy.gov/sites/default/files/2025-
+10/403%20Large%20Loads%20Letter.pdf. 
+6 Joint Comments of the Pennsylvania Office of Consumer Advocate and Delaware Division of the Public Advocate, 
+at pp. 2-3.   
+
+--- PAGE 5 ---
+ 
+3 
+ 
+Residential consumers, unlike new large loads, have paid capacity market rates for resource 
+adequacy, have not contributed to the growing grid resource inadequacy, and are not uniformly 
+able to mitigate the impact of curtailments through alternative supply options. To protect 
+residential consumers, FERC can and should recognize that RTOs must depart from pro-rata 
+transmission curtailment in the rare circumstances where (1) the large loads have caused the 
+resource inadequacy; and (2) the RTO (a) has exhausted all of its options for avoiding transmission 
+curtailment of customers, and (b) has established that those transmission customers that would be 
+disproportionately affected by the curtailment – large loads – have options to reduce their need for 
+transmission capacity, including alternative supply options, compensation for demand response, 
+or reduced transmission rates for the interruptible service they are provided. 
+Given the unique issues that large loads create for grid reliability, treating new large loads 
+differently from other load is reasonable and necessary to ensure reliable service and just and 
+reasonable rates for existing consumers, especially residential consumers. FERC can and must 
+appropriately treat new large loads attributable to data centers differently from other kinds of load 
+because: (1) data centers are creating unique difficulties for the grid and impacting a uniquely 
+vulnerable market at a uniquely expensive level; and (2) investments in data centers can be 
+speculative and uncertain in nature, increasing the risk of a severe market correction that would 
+create stranded costs.7 
+FERC should stay the course and adopt the proposed 20 MW threshold to define large loads 
+and hybrid facilities because this MW threshold helps protect against reliability concerns from 
+ 
+7 See ADVAIT ARUN, BUBBLE OR NOTHING: DATA CENTER PROJECT FINANCE 43-48, 57-58, 60 (Ctr. for Pub. Enter. 
+2025), https://publicenterprise.org/report/bubble-or-nothing/ (describing the speculative nature of investment in new 
+large data center loads which creates a risk of stranded costs atypical under current market conditions).  
+
+--- PAGE 6 ---
+ 
+4 
+ 
+large loads or hybrid facilities by requiring proper interconnection studies that will reduce 
+reliability risks for all electricity consumers. 
+Finally, FERC should build on FERC Order 2023 by continuing to streamline processes 
+that factor hybrid facilities jointly in the interconnection study. FERC should approach injection 
+and withdrawal rights according to grid-protective assumptions that prevent free-riding and 
+regulatory evasion. FERC and PJM should facilitate expedited interconnection studies of large 
+loads and hybrid facilities that agree to be meaningfully curtailable or dispatchable. FERC should 
+ensure that large loads and hybrid facilities pay fully for their network upgrade costs without 
+unjustly burdening residential ratepayers and all other grid users. 
+III. 
+REPLY COMMENTS 
+A. 
+FERC should adopt a cooperative federalism model to govern large load 
+interconnections, curtailments, and transmission cost allocations. 
+1. 
+FERC should adopt a cooperative federalism model that preserves 
+existing state jurisdiction. 
+FERC should adopt a cooperative federalism model to facilitate the interconnection of large 
+loads as retail customers directly through state jurisdictional facilities to interstate transmission 
+systems.8 Such an effort must preserve existing state authority according to the Federal Power Act 
+(FPA), as many commenters have emphasized.9 Cooperative federalism plays an important role 
+where state action furthers the objectives of the FPA and FERC, despite indirect effects on matters 
+ 
+8 See, e.g., Comments of the Edison Electric Institute, at p. 2 (“The right outcome of this proceeding is a sure-footed 
+response by the Commission that acts in concert with ongoing efforts by utilities, states, and ISO/RTOs.”). See also 
+Comments of the National Association of Regulatory Utility Commissioners, at p. 6 (“NARUC pledges to engage 
+with regulated entities and other stakeholders to explore consensus solutions for FERC’s consideration that will help 
+meet national goals for large load interconnection, while avoiding disputes over jurisdiction that would impede 
+achieving our shared goals.”). “Working together, under the concept of cooperative federalism, will lead to optimal 
+solutions.” Id. 
+9 Joint Comments of the Pennsylvania Office of Consumer Advocate and Delaware Division of the Public Advocate , 
+at pp. 5-16. See also Comments of the Pennsylvania Public Utility Commission, at pp. 4-5, 7; Comments of the 
+Organization of PJM States, Inc., at pp. 1-5, 9-10; Comments of the National Association of Regulatory Utility 
+Commissioners, at pp. 1-5; Comments of the Edison Electric Institute, at pp. 4, 22-32; Comments of PPL Services 
+Corporation, at pp. 8-9; Comments of Governor Josh Shapiro and Governor Glenn Youngkin, at p. 1. 
+
+--- PAGE 7 ---
+ 
+5 
+ 
+subject to FERC’s jurisdiction, while still expressing an important policy of the state.10 However, 
+the Joint Consumer Advocates submit that further clarification is necessary regarding how 
+cooperative federalism applies to large load additions.  
+Specifically, a regulatory framework of the “floor-not-ceiling” preemption model best suits 
+the careful balancing of interests that will enable FERC to achieve its goals and avoid burdensome 
+litigation.11 This framework is particularly important for setting federal minimum standards to 
+address grid reliability, including resource adequacy.12 These minimum standards must protect 
+residential customers13 by effectuating the FPA’s “‘core purposes’ of ‘curb[ing] prices and 
+enhanc[ing] reliability in the wholesale electricity market,’”14 while fully preserving state 
+regulatory jurisdiction over retail load interconnections and curtailments.15 Such minimum 
+standards should take two primary forms: (1) minimum, consumer-protective (pro forma) tariff 
+standards, terms, and conditions for Regional Transmission Operators (RTOs)/Independent System 
+Operators (ISOs) that will implement large load interconnection queues in coordination with 
+transmission owners (TOs) and interconnecting electric distribution companies (EDCs);16 and (2) 
+ 
+10  Elec. Power Supply Ass’n v. Star, 904 F.3d 518, 524 (7th Cir. 2018) (upholding Illinois legislation creating “zero 
+emission credit” program); Coal. for Competitive Elec. v. Zibelman, 906 F.3d 41, 51 (2d Cir. 2018) (upholding New 
+York legislation creating “zero emission credit” program); Dayton Power & Light Co. v. FERC, 126 F.4th 1107, 
+1129-31 (6th Cir. 2025), cert. denied, Nos. 25-1304, 25-1318 (Nov. 10, 2025) (upholding Ohio legislation requiring 
+state transmission utilities to join a Regional Transmission Operator).   
+11 See Paul S. Weiland, Comment, Federal and State Preemption of Environmental Law: A Critical Analysis, 24 HARV. 
+ENVTL. L. REV. 237, 282-83 (2000) (describing Floor-not-Ceiling preemption model in environmental law context). 
+12 16 U.S.C. § 824o(i)(3); Planning Res. Adequacy Assessment Reliability Std., 134 F.E.R.C. P61,212, PP 20-26 
+(2011).  
+13 Comments of the United States Senate Committee on Energy and Natural Resources, at p. 1 (“[T]he Commission 
+must ensure that residential customers are not forced to bear the costs of these large-load interconnections.”). 
+14 Nat’l Ass’n of Regulatory Util. Comm’rs v. FERC, 964 F.3d 1177, 1186 & n.5 (D.C. Cir. 2020) (quoting FERC v. 
+Elec. Power Supply Ass’n, 577 U.S. 260, 273 (2016)). 
+15 See Matthew R. Christiansen & Joshua C. Macey, Long Live the Federal Power Act’s Bright Line, 134 HARV. L. 
+REV. 1360, 1407-12 (2021) (formulating FPA preemption analysis that includes an objective analysis of “what the 
+regulation does, the problem it is supposed to remedy, and the link between them”). 
+16 See Initial Comments of PJM Interconnection, L.L.C., at pp. 3-4 (noting that an RTO-administered large load queue 
+should not exclude EDCs and TOs from the study and agreement process because they own the necessary facilities 
+and have expert knowledge of those facilities).  
+
+--- PAGE 8 ---
+ 
+6 
+ 
+minimum consumer-protective standards, terms, and conditions for jurisdictional aspects of 
+contractual agreements and cost allocations, such as transmission security agreements (TSAs)17 
+and construction services agreements.18 
+2. 
+FERC should clarify curtailment protocols within a cooperative 
+federalism paradigm because data center load growth may necessitate 
+curtailments, and curtailments should protect current customers over new 
+large data center load customers that cause resource inadequacy. 
+Due to the harmful impact that the undisciplined addition of large loads to regional grids 
+has on resource adequacy and grid reliability, FERC and the states should cooperate to ensure that 
+the manual shedding of load, to the extent required, allocates the risk caused by such additions 
+without unduly discriminating against existing customers or creating unjust and unreasonable 
+capacity market paradigms. This is especially so for residential customers, which, unlike new large 
+loads, have paid capacity market rates for resource adequacy, have not contributed to the growing 
+resource inadequacy, and are not uniformly able to mitigate the impact of curtailments through 
+back-up supply options.19   
+ 
+17 See PECO Energy Co., 193 FERC ¶ 61,148 (2025) [hereinafter PECO TSA Order] (Chang, Comm’r, concurring) 
+(highlighting customer impacts from massive scope of data-center-focused transmission buildout in PJM and resulting 
+need for federal minimum customer protections). “I raise customer protection concerns here because I expect that the 
+Commission will increasingly be asked to review one-off agreements purporting to protect customers against 
+transmission cost shifts, without a substantive framework for assessing the adequacy of those protections.” Id. at P 6. 
+18 See, e.g., Dayton Power & Light,189 FERC ¶ 61,220 at PP 2, 10 (Dec. 20, 2024) (citing Mansfield Mun. Elec. Dep’t 
+v. New England Power Co., 97 FERC ¶ 61,134 (2001), reh’g denied, 98 FERC ¶ 61,115 (2002); Ne. Tex. Elec. Coop., 
+Inc., 108 FERC ¶ 61,084, at P 48 (2004), reh’g denied, 111 FERC ¶ 61,189 (2005)) (accepting the public utility’s 
+assertion that the transmission facilities do not satisfy any of the five criteria under FERC’s Mansfield test to be 
+considered as integrated into the transmission provider’s transmission system now or in the future and thus are properly 
+treated as direct assignment rather than rolled-in for FERC formula ratemaking purposes). 
+19 See Comments of U.S. Congressman Suhas Subramanyam et al., at p. 1 (“[W]e urge FERC to ensure the 
+forthcoming rulemaking process fully considers . . . [a]uthorizing utility-administered curtailment protocols during 
+grid emergencies.”); but cf. Comments of the People of the State of Illinois by the Office of the Illinois Attorney 
+General, at p.11 (raising doubts and questions about this arrangement); see also NERC Reliability Standard EOP-011-
+4, 89 Fed. Reg. 13324 (Feb. 22, 2024) (requirement the establishment of regional emergency procedures, including 
+for curtailment of load, and requiring that state-jurisdictional distribution providers implement such procedures). 
+
+--- PAGE 9 ---
+ 
+7 
+ 
+FERC “has authority to effect orderly curtailment plans involving both direct sales and 
+sales for resale.”20 It also “has authority to curtail [transmission] deliveries to all customers in time 
+of shortage” without such curtailments interfering with the States’ exclusive authority over retail 
+sales.21 Indeed, RTOs have a vital role in allocating and administering curtailments.22  
+But how exactly RTOs should administer large load curtailments within a cooperative 
+federalism paradigm requires the Commission’s clarification.23 To protect residential customers, 
+FERC can and should recognize that RTOs must depart from pro-rata transmission curtailment in 
+the rare circumstances where (1) the large loads have caused the resource inadequacy; and (2) the 
+RTO has (a) exhausted all of its options for avoiding transmission curtailment of customers, and 
+(b) has established that those transmission customers that would be disproportionately affected by 
+the curtailment – new large loads – have options to reduce their need for transmission capacity, 
+including alternative supply options, compensation for demand response, or reduced transmission 
+rates for the interruptible service they are provided.24 
+ 
+20 FPC v. Louisiana Power & Light Co., 406 U.S. 621, 631 (1972). See also Christiansen & Macey, supra note 15, at 
+1382 (“[B]ecause the NGA and the FPA distribute jurisdiction between FERC and states in exactly the same way, 
+courts have always found that NGA cases are binding precedent in FPA cases and vice versa.” (citations omitted)). 
+21 Brief for FERC at 46, New York v. FERC, 535 U.S. 1 (2002) (Nos. 00-568, 00-809). See also Fed. Power Com. v. 
+Hope Nat. Gas Co., 320 U.S. 591, 610 (1944) (“The primary aim of this legislation was to protect consumers against 
+exploitation at the hands of natural gas companies.”). 
+22 Reg’l Transmission Orgs., Order No. 2000, 89 F.E.R.C. P61,285, 61896 (1999), reaff’d, clarified by, in part, 
+reh’g denied by, in part, Reg’l Transmission Orgs., 90 F.E.R.C. P61,201 (2000) (codified at 18 C.F.R. pt. 35); see 
+also N. States Power Co. v. FERC, 176 F.3d 1090 (8th Cir. 1999), cert. denied, 528 U.S. 1182 (2000); Brief for 
+FERC at 48, New York v. FERC, 535 U.S. 1 (2002) (Nos. 00-568, 00-809). 
+23 See, e.g., Comments of the Organization of PJM States, Inc., at p. 8 (citing 16 U.S.C. 824h) (identifying FPA’s 
+explicit authorization of cooperative federalism); see also Comments of U.S. Congressman Suhas Subramanyam et 
+al., at p. 1 (“[W]e urge FERC to ensure the forthcoming rulemaking process fully considers . . . [a]uthorizing utility-
+administered curtailment protocols during grid emergencies.”). The Congressmembers emphasize “affordability, 
+reliability, and fairness.” Id. at p.2. 
+24 Brief for FERC at 48-49 & n.24, New York v. FERC, 535 U.S. 1 (2002) (citing N. States Power Co. (Minn.), 89 
+F.E.R.C. ¶ 61,178, at 61,553 (1999)). 
+
+--- PAGE 10 ---
+ 
+8 
+ 
+B. 
+Given the unique issues that large loads create for grid reliability, treating new 
+large loads differently from other load is reasonable and necessary to ensure 
+reliable service and just and reasonable rates for existing consumers, 
+especially residential consumers. 
+FERC and PJM should, when facilitating large load interconnections according to federal 
+priorities, make reasonable distinctions, meaning “due” discriminations, about data center load 
+because that load has unique characteristics that impact reliability and rates differently from other 
+loads.25 In fact, PJM’s initial Critical Issue Fast Path (CIFP) proposal for Large Load Additions 
+recognized the need to treat new large loads—nearly all of which are data centers26—differently 
+from other loads, by proposing to categorize them as Non-Capacity-Backed Load subject to 
+curtailment if they failed to bring their own generation or demand response.27 Although PJM 
+dropped the proposal,28 PJM’s Board and Staff introduced the initial proposal with differentiated 
+treatment for new large loads because they were looking squarely at the reality that new large data 
+center loads seek to interconnect in a regional grid projected to have insufficient capacity to 
+provide reliable service to its current customers.29 
+ 
+25 See Comments of the Independent Market Monitor for PJM, Attach. B, at p. 4. 
+It has been asserted that requiring large new data center loads to bring their own new generation 
+would be discriminatory. The relevant standard for prohibited discrimination is unduly 
+discriminatory. It is not unduly discriminatory to identify the class of large data centers and impose 
+requirements on that class that match the impact of that class on all other customers. It would be 
+unduly discriminatory to all other customers, from the smallest residential customer to the largest 
+industrial customer, to allow large data centers to add massive amounts of load to the system that 
+cannot be served reliably with resulting price impacts and reliability impacts on those other 
+customers. Id. (citing 16 U.S.C. § 824d(b)). 
+26 Letter from PJM to PJM Stakeholders (Aug. 8, 2025), https://www.pjm.com/-/media/DotCom/about-pjm/who-we-
+are/public-disclosures/2025/20250808-pjm-board-letter-re-implementation-of-critical-issue-fast-path-process-for-
+large-load-additions.pdf. Of the 32 GW of peak load growth that PJM has forecast for 2024 to 2030, 30 GW come 
+from data centers. Id. 
+27 See Comments of the Independent Market Monitor for PJM, Attach. A, at pp. 2-3 & n.9. 
+28 Ethan Howland, PJM Stakeholders Overwhelmingly Pan Proposal for Data Center Interconnection, Util. Dive 
+(Sep. 2, 2025). 
+29 Cf. NERC, Industry Recommendation: Large Load Interconnection, Study, Commissioning, & Operations, at 1 
+(Sep. 9, 2025), https://www.nerc.com/globalassets/programs/bpsa/alerts/2025/nerc-alert-level-2--large-loads.pdf 
+(positing that the “comparatively large size, unique end-use operational characteristics, unique facility design, and 
+unique operational performance of Large Loads necessitate enhancements to interconnection processes, BPS planning 
+studies and models”); Stu Bresler & Tim Horger, Large Load Additions PJM Conceptual Proposal and Request for 
+Member Feedback, PJM (Aug. 18, 2025), https://www.pjm.com/-/media/DotCom/committees-groups/cifp-
+
+--- PAGE 11 ---
+ 
+9 
+ 
+PJM’s Independent Market Monitor (IMM) asserts that “[d]ata center load growth is the 
+primary reason for recent and expected capacity market conditions, including total forecast load 
+growth, the tight supply and demand balance, and high prices.”30 Moreover, in accepting its FERC-
+approved temporary price collar, PJM acknowledged that it currently faces “extraordinary 
+circumstances . . . including rapid load growth, interconnection queue issues, a compressed auction 
+schedule, and significant unhedged load exposure.”31 Despite these unique, worrisome, and 
+potentially tragic conditions, data center load insists that PJM and FERC cannot treat these large 
+loads differently. But new large loads are different,32 and their effects on the market are different.33 
+Google, for example, asserts that “[b]ecause all load is ‘economically marginal’ in the sense 
+that customers impose equivalent costs ‘whether by adding or merely continuing their usage’ 
+regardless of when they first took service, imposing a requirement on only new load to bring its 
+own supply would be unjust and unreasonable and unduly discriminatory.”34 The case that Google 
+cites for this proposition, BNP Paribas Energy Trading GP v. FERC, implicitly assumes standard 
+additions of load in normal market conditions. In that case, the D.C. Circuit Court of Appeals 
+ 
+lla/2025/20250818/20250818-item-03---pjm-conceptual-proposal-and-request-for-member-feedback---
+presentation.pdf.  
+30 Comments of the Independent Market Monitor for PJM, Attach. A, at p. 3. 
+31 PJM Interconnection, L.L.C., 191 FERC ¶ 61,066, at P 15 (2025). 
+32 NERC, Industry Recommendation: Large Load Interconnection, Study, Commissioning, & Operations, at 1 (Sep. 
+9, 2025), https://www.nerc.com/globalassets/programs/bpsa/alerts/2025/nerc-alert-level-2--large-loads.pdf (positing 
+that the “comparatively large size, unique end-use operational characteristics, unique facility design, and unique 
+operational performance of Large Loads necessitate enhancements to interconnection processes, BPS planning 
+studies and models”). 
+33 See PECO TSA Order, 193 FERC ¶ 61,148, at P 4 (2025) (Chang, Comm’r, concurring) (“From a transmission 
+perspective, the new load addition paradigm, in which increasing numbers of large, discrete loads interconnect to the 
+grid, has the potential to fundamentally alter the pace, amount, and size of new transmission investment.”). 
+34 Comments of Google LLC, at p. 11 & n.11 (first citing BNP Paribas Energy Trading GP v. FERC, 743 F.3d 264, 
+268-69 (2014); and then citing 1 ALFRED KAHN, THE ECONOMICS OF REGULATION: PRINCIPLES AND INSTITUTIONS 
+140 (The MIT Press 1998)).  
+
+--- PAGE 12 ---
+ 
+10 
+ 
+writes that “the cost causation principle generally calls for giving the same treatment to new and 
+continuing customers, based on a straightforward economic rationale.”35  
+Google implicitly equates data center loads under current market conditions to normal 
+loads in normal market conditions. With skyrocketing costs in PJM, the introduction of new large 
+loads causes a massive shift in the demand curve, a shift equal to the size of certain RTO markets. 
+The BNP Paribas court writes that “[w]here ‘all customers cause the incurrence of the costs . . . , 
+whether by adding or merely continuing their usage,’ . . . assignment of the costs to all customers 
+(both continuing and new) forces each set ‘to weigh the marginal benefits of the capacity to them 
+against the marginal costs they impose on society by continuing to make demands.’”36 This 
+analysis of cost causation assumes that “all customers cause the incurrence of the costs,” which 
+does not capture the current economic and engineering realities of data centers’ outsized impact 
+on costs.37 Furthermore, the BNP Paribas court focuses on cost assignment’s role in causing 
+customers “to weigh the marginal benefits of the capacity to them against the marginal costs they 
+impose on society by continuing to make demands.”38 This marginal weighing, if it is to account 
+for current market conditions,39 should reflect the vast marginal costs that large new data centers 
+uniquely impose on other customers due to the necessary buildout of capacity to meet the demands 
+ 
+35 BNP Paribas, 743 F.3d at 268 (emphasis added). 
+36 Id. (citations omitted) (citing KAHN, supra note 34, at 140). 
+37 Cf. Comments of the Independent Market Monitor for PJM, Attach. A, at p. 3 (“Data center load growth is the 
+primary reason for recent and expected capacity market conditions, including total forecast load growth, the tight 
+supply and demand balance, and high prices.). 
+38 BNP Paribas, 743 F.3d at 268 (citing KAHN, supra note 34, at 140). 
+39 PJM Interconnection, L.L.C., 191 FERC ¶ 61,066, at P 15 (2025) (PJM currently faces “extraordinary circumstances 
+. . . including rapid load growth, interconnection queue issues, a compressed auction schedule, and significant 
+unhedged load exposure.”). 
+
+--- PAGE 13 ---
+ 
+11 
+ 
+of large loads while providing incumbent customers with adequate, reliable, and affordable 
+service.40 
+Therefore, the Joint Consumer Advocates encourage FERC to reject a marginal view of 
+large load additions. Viewing each large load addition on an individual basis obfuscates the 
+cumulative pressure that undisciplined interconnection of large load customers creates. Instead, 
+FERC should view through a holistic lens the unique resource adequacy constraint which large 
+load additions can create if not properly mitigated. While a single large load addition may not—in 
+and of itself—create resource inadequacy, the totality of large load additions will. As a result, due 
+to the unique circumstances posed by current market conditions and the potential for the 
+undisciplined interconnection of large load customers, the Joint Consumer Advocates urge FERC 
+to view these additions on a cumulative basis.   
+  Further, new investment in large data center loads can be more speculative than that in 
+large loads which have already interconnected to the grid, increasing the risk of a severe market 
+correction that creates stranded costs; as a result, FERC and the states must adapt their regulations 
+to this new type of customer.41   
+C. 
+Definition of Large Load and Hybrid Facilities 
+In the ANOPR, the second principle for reform provides: 
+Second, consistent with the Commission’s pro forma LGIP and LGIA, the reforms 
+should only apply to new loads greater than 20 MW and, for hybrid facilities, where 
+the load is greater than 20 MW. We seek comment on alternative thresholds, 
+including whether such a threshold is necessary at all.42 
+ 
+ 
+40 Comments of the Independent Market Monitor for PJM, Attach. A, at p. 3 (“Data center load growth is the primary 
+reason for recent and expected capacity market conditions, including total forecast load growth, the tight supply and 
+demand balance, and high prices.); see also Joint Comments of the Pennsylvania Office of Consumer Advocate and 
+Delaware Division of the Public Advocate, at pp. 30-31 (discussing cost causation). 
+41 See generally, ARUN, supra note 7, at 43-48, 57-58 (illustrating that investment in new large data center loads can 
+be highly speculative, which creates the risk for an increase in stranded costs). 
+42 ANOPR, supra note 5, at P 19.  
+
+--- PAGE 14 ---
+ 
+12 
+ 
+Several commenters assert that the 20 MW threshold for either new loads or hybrid 
+facilities is too low, arguing that it will clog interconnection queues and reduce opportunities for 
+streamlining the interconnection of these facilities.43 
+The Joint Consumer Advocates disagree.44 The ANOPR definition applies to new large 
+load and hybrid facilities and therefore would not apply to commercial and industrial loads already 
+connected to lower voltage transmission lines.45  
+Other commenters indicate concern with new facilities that are between 20 MW and their 
+proposed threshold (e.g., 100 MW46 or 200 MW47). They provide no evidence, however, that their 
+threshold avoids their concern with “clogging” interconnection queues. The PJM Transmission 
+Owners point out that the trend is towards larger data centers, for which they claim a bottom 
+threshold of at least 200 MW.48 If this is the case, then a lower threshold would not add that many 
+more data centers, and a 200 MW threshold would not substantially reduce the number.  
+Most importantly, as the Joint Consumer Advocates pointed out in their Initial Joint 
+Comments, NERC’s definition of large loads does not include a minimum size.49 If the threshold 
+here must numerically express a minimum quantity of power units, a lower MW threshold helps 
+protect against reliability concerns from large loads or hybrid facilities that are below the threshold, 
+including in the event that entities structure their facilities to attempt to avoid regulatory 
+ 
+43 Comments of FirstEnergy Service Company, p. 4. 
+44 See Joint Comments of the Pennsylvania Office of Consumer Advocate and Delaware Division of the Public 
+Advocate, pp. 16-17; see also Comments of the Ohio Consumers’ Counsel, p. 8. 
+45 “Other proposals in the ANOPR may need more development. For example, the proposal to assert jurisdiction to 
+all loads down to 20 MW risks overshooting the mark. This low threshold would bring in not just large data centers 
+connecting to the high voltage bulk electric system, but also snare many longstanding commercial and industrial 
+loads connected to lower voltage transmission lines.” Comments of PPL Services Corporation, p. 2. 
+46 Comments of the Pennsylvania Public Utility Commission, p. 9. 
+47 Comments of FirstEnergy Service Company, p. 2; Comments of the Indicated PJM Transmission Owners, p. 7. 
+48 Comments of the Indicated PJM Transmission Owners, p. 7. 
+49 Joint Comments of the Pennsylvania Office of Consumer Advocate and Delaware Division of the Public 
+Advocate, pp. 16-17. 
+
+--- PAGE 15 ---
+ 
+13 
+ 
+requirements. On the other hand, quickly interconnecting large loads and hybrid facilities without 
+conducting proper interconnection studies will impose reliability risks on all electricity consumers 
+including existing and prospective large load customers. 
+The PA PUC correctly points out that the ANOPR does not consider an aggregate threshold 
+for defining large loads and hybrid facilities.50 The Joint Consumer Advocates reiterate their 
+position on this issue that the threshold “should apply to the customer’s aggregate power 
+requirement rather than to a single point of interconnection.”51 Studying aggregate power 
+requirements, as well as necessary transmission upgrades for the interconnection of large loads, 
+would be similar to the methodology transmission operators currently employ to study a “cluster” 
+of generation interconnections which was standardized in FERC Order 2023.52  
+The PJM Transmission Owners note that many loads “are significantly lower when they 
+first enter commercial operation, but following expansion and full potential of operation capacity, 
+their demand increase to much higher levels.”53 The definition of large load and hybrid facilities 
+should use the planned full operational capacity, even if the facility is planning to ramp up its 
+operations over time. Otherwise, a new large load or hybrid facility could circumvent the threshold 
+requirement by phasing in its operations.  
+ 
+50 Comments of the Pennsylvania Public Utility Commission, p. 9. 
+51 Joint Comments of the Pennsylvania Office of Consumer Advocate and Delaware Division of the Public 
+Advocate, p. 17. If there is no aggregate limit and the threshold is 200 MW, then, for example, a group of five, 199 
+MW new loads operated by a single entity at the same location, could avoid the large load interconnection 
+requirements. 
+52 See Improvements to Generator Interconnection Proc. & Agreements, Order No. 2023, 184 F.E.R.C. ¶ 61,054, P 
+177 (July 28, 2023) modified by Improvements to Generator Interconnection Proc. & Agreements, Order No. 2023-
+A, 186 F.E.R.C. ¶ 61,199, PP 73-79 (Mar. 21, 2024).  
+53 Comments of the Indicated PJM Transmission Owners, p. 9. 
+
+--- PAGE 16 ---
+ 
+14 
+ 
+D. 
+Interconnection Studies and Network Upgrade Cost Allocation for Large 
+Loads and Hybrid Facilities 
+1. 
+FERC should build on FERC Order 2023 by continuing to streamline 
+processes that factor hybrid facilities jointly in the interconnection study. 
+In the ANOPR, the third principle for reform provides: 
+Third, to the extent practicable, load and hybrid facilities should be studied together 
+with generating facilities. Such an approach will allow for efficient siting of loads 
+and generating facilities and thereby minimize the need for costly network 
+upgrades. For example, siting a large load near or at the same point of 
+interconnection as a new generating facility could reduce the network upgrades 
+needed to interconnect only the load or only the generating facility.54 
+ 
+ 
+In the Initial Joint Comments, the Joint Consumer Advocates supported methods to reduce 
+generation interconnection study times and studying load and hybrid facilities to reduce the need 
+for costly network upgrades, “provided that the interconnection study process is comprehensive 
+and technically sound.”55 
+ 
+Commenters that plan and operate the power system and wholesale electricity markets 
+raised similar concerns as the Joint Consumer Advocates and are cautious regarding the ANOPR’s 
+asserted benefits of joint interconnection studies. PJM states:  
+Further, if PJM understands the ANOPR correctly, the proposed reforms appear to 
+signal an openness to a less-reliable planning paradigm for new generation facilities 
+(see, e.g., Principles 3 and 5) where hybrid facilities involving ‘new generation 
+facilities’ are studied based solely on injection and/or withdrawal rights requested, 
+and large loads and hybrid facilities that agree to be curtailable will have their 
+studies expedited so that such facilities can be put into operation with greater 
+speed.56  
+ 
+54 ANOPR, supra note 5, at P 20.  
+55 Joint Comments of the Pennsylvania Office of Consumer Advocate and Delaware Division of the Public 
+Advocate, p. 18. The need for comprehensive and technically sound studies is supported by actual reliability events 
+involving large loads, unplanned and planned maintenance of co-located generating facilities, and the challenges in 
+ensuring large loads and hybrid facilities operate at all times per the requirements in their interconnection 
+agreements. 
+56 Initial Comments of PJM Interconnection, L.L.C., pp. 9-10. Google asserts: “Indeed, paired load and grid-
+connected generation presents an even more compelling case for consideration of operating parameters because 
+these arrangements can often involve unique operating characteristics that are unlike a standalone load or standalone 
+generator. Moreover, these arrangements are a valuable mechanism to facility the load growth necessary to meet the 
+
+--- PAGE 17 ---
+ 
+15 
+ 
+PJM further observes that the ANOPR’s “connect-and-manage” approach is not as robust 
+and reliable as existing practices and increases operational burdens.57 The NERC Large Load Task 
+Force is well-equipped to continue its work,58 and its results should inform the Commission. 
+ 
+The PJM Transmission Owners raise concerns similar to PJM’s, and state that the 
+interconnection study process needs to ensure that the full amount of the customer’s on-site load 
+and generation can be reliably interconnected,59 which requires studying them separately.  
+2. 
+FERC should approach injection and withdrawal rights according to 
+grid-protective assumptions that prevent free-riding and regulatory evasion. 
+The fifth principle for reform included in the ANOPR provides: 
+ 
+Fifth, hybrid facilities should be studied based on the amount of injection and/or 
+withdrawal rights requested. For example, a hybrid facility consisting of a 500MW 
+load and a 600MW generating facility may seek no withdrawal rights and 100MW 
+of injection rights. This provides incentives for co-location with new generation 
+facilities and ensures efficient buildout of the transmission system.60 
+ 
+ 
+FERC should consider coordinating large load studies while studying load and generation 
+separately in case “the system needs to accommodate the full amount of the on-site load, or on-
+site generation, without the other.”61 Experimental configurations merit close scrutiny, to ensure 
+that the large loads do not engage in “free-riding” or other regulatory manipulation.62 As the Edison 
+Electric Institute stated, “to ensure fairness and avoid implementation complexity, the Commission 
+ 
+AI moment while minimizing strain on the grid.” Comments of Google LLC, p. 10. Numerous, unique operating 
+arrangements may introduce reliability challenges particularly if they are studied in an accelerated and truncated 
+manner and if any associated operating restrictions compliance cannot be guaranteed. 
+57 Initial Comments of PJM Interconnection, L.L.C., p. 10, n.5. 
+58 Id. at p. 12. 
+59 Comments of the Indicated PJM Transmission Owners, pp. 36-37. 
+60 ANOPR, supra note 5, at P 22. 
+61 Comments of the Indicated PJM Transmission Owners, pp. 36-37. 
+62 See Comments of the Edison Electric Institute, at p. 17. 
+
+--- PAGE 18 ---
+ 
+16 
+ 
+should make a gross load approach the default for both ancillary services and transmission, subject 
+to exception only if a utility supports and the state approves a different approach.”63 
+ 
+The Joint Consumer Advocates submit that permitting hybrid facilities to be metered on a 
+gross basis, instead of on a net basis, helps to ensure that hybrid facilities are adequately paying 
+for the costs the transmission utility incurred to serve them. As PPL Electric argued, the use of net 
+metering for hybrid facilities can permit the network customer to evade its fair share of 
+transmission rates and can result in subsidization by other network customers.64 While having large 
+loads bring their own generation and interconnect as hybrid facilities can be beneficial for 
+reliability and resource adequacy, as well as capacity, energy, and transmission costs,65 large loads 
+are still responsible for paying for their share of the existing transmission system based upon their 
+net metered load. As a result, the Joint Consumer Advocates recommend that hybrid facilities have 
+their load and generation components metered separately, to ensure fair and accurate cost 
+allocation of transmission costs.  
+3. 
+FERC and PJM should facilitate expedited interconnection studies of 
+large loads and hybrid facilities that agree to be meaningfully curtailable or 
+dispatchable. 
+The seventh principle for reform included in the ANOPR provides: 
+ 
+Seventh, the interconnection study of large loads that agree to be curtailable and 
+hybrid facilities that agree to be curtailable and dispatchable should be expedited. 
+The system operator’s ability to control such facilities through curtailment and/or 
+dispatch must be sufficient for the system operator to integrate the facility into both 
+operations and system planning. This ensures the timely and orderly addition of 
+large loads to the transmission system in a safe, reliable, and non-discriminatory 
+manner. We seek comment on whether this should be accomplished through a serial 
+interconnection study process or by some other means. We also seek comment on 
+ 
+63 Id. at 16. 
+64 Comments of PPL Services Corporation, p. 2.  
+65 See generally, CARLO BRANCUCCI, DYLAN CUTLER & JESSE JENKINS, FLEXIBLE DATA CENTERS: A FASTER, MORE 
+AFFORDABLE PATH TO POWER (2025), https://www.camus.energy/flexible-data-center-report. 
+
+--- PAGE 19 ---
+ 
+17 
+ 
+appropriate deadlines for such an expedited study process, including whether such 
+studies can be completed in 60 days.66 
+ 
+ 
+In the Initial Joint Comments, the Joint Consumer Advocates raised important reliability 
+concerns regarding the interconnection of large loads and hybrid facilities and reiterate these 
+concerns in response to other comments. 
+ 
+As other commenters noted, if implemented, Principle 7 requires “fully developed 
+processes that ensure reliability”67 and may require the transmission owner “to separately study 
+large loads.”68 The Joint Consumer Advocates also concur with the comments that any curtailable 
+or dispatchable commitments made by large loads and hybrid facilities must be verifiable, 
+enforceable, and subject to penalties for non-performance.69 There should not be limits on the 
+number of curtailable events or the number of times for curtailments as some request.70 Such limits 
+shift the risk of curtailments to other large loads and hybrid facilities which did not receive the 
+benefits of expedited interconnection and to other non-large load customers that are not causing 
+the need for curtailment. 
+ 
+The Initial Joint Comments raised the concern with resource adequacy if large loads are 
+allowed to interconnect without having sufficient capacity (either through generation and reserves 
+or capacity-backed demand response) to offset the additional load.71 The PJM Market Monitor has 
+filed a Complaint on a similar basis, asserting that it is not “just and reasonable for PJM to add 
+ 
+66 ANOPR, supra note 5, at P 24.  
+67 Comments of the Indicated PJM Transmission Owners, p. 38. 
+68 Comments of the Indicated PJM Transmission Owners, p. 38. 
+69 Comments of Emerald AI, p. 4; Comments of the Ohio Consumers’ Counsel, pp. 9-11.  
+70 Comments of Emerald AI, p. 8; Comments of Google LLC, p. 12. 
+71 Joint Comments of the Pennsylvania Office of Consumer Advocate and Delaware Division of the Public 
+Advocate, p. 24.  
+
+--- PAGE 20 ---
+ 
+18 
+ 
+new loads that it cannot serve reliably.”72 If any load is not fully capacity-backed at the time of 
+interconnection, no load is capacity-backed.73  
+ 
+Some commenters oppose considering resource adequacy as part of the large load or hybrid 
+facility interconnection process.74 They argue that such considerations discriminate against new 
+load and existing generators.75 In the PJM context, such arguments do not account for existing 
+agreements that require load serving entities to comply with resource adequacy requirements.76 
+Prior to the surge in large load interconnection requests, as a practical matter, it was not necessary 
+to evaluate whether small, typical loads would cause a resource adequacy problem because there 
+was more than sufficient existing generation capacity and the market signal for new generation 
+had been relatively modest. Now that the PJM market is tight and increasingly short, the addition 
+of large loads, which outpaces the addition of capacity, creates new and unique challenges for the 
+regional grid that will not likely be solved solely through agreements to curtail.   
+4. 
+FERC should ensure that large loads and hybrid facilities pay fully for 
+their network upgrade costs without unjustly burdening residential ratepayers 
+and all other grid users. 
+The eighth principle for reform included in the ANOPR provides: 
+ 
+Eighth, load and hybrid facilities should be responsible for 100% of the network 
+upgrades that they are assigned through the interconnection studies. We seek 
+comment on whether such costs should be offset through a crediting mechanism 
+and, if so, over how many years.77 
+ 
+ 
+ 
+72 Comments of the Independent Market Monitor for PJM, Attach. A, p. 6 (filing Complaint). 
+73 See Comments of the Independent Market Monitor for PJM, Attach. B. 
+74 Comments of the Electric Power Supply Association, p. 18; Comments of Google LLC, p. 11 & n.11. 
+75 See supra Section III.B (explaining basis for reasonable discriminations based on AI data centers’ unique 
+characteristics and effects). 
+76 Comments of the Independent Market Monitor for PJM, Attach. A, pp. 8-9 (filing Complaint). 
+77 ANOPR, supra note 5, at P 25. 
+
+--- PAGE 21 ---
+ 
+19 
+ 
+The Commission should consider Commissioner Chang’s concurring opinion in PECO 
+Energy Company and its focus on the “higher of” method of transmission cost allocation.78 As 
+noted in the Initial Joint Comments, large load and hybrid facilities should be responsible for 100% 
+of the network upgrade assigned to them through the interconnection studies and that these costs 
+should not be offset through a crediting mechanism.79 The Joint Consumer Advocates specifically 
+recommend that FERC revisit a “but-for” test when determining which costs should be paid 100% 
+by the large load customers, similar to the test traditionally used by FERC for cost allocation for 
+the interconnection of generators.80  
+a. 
+FERC should consider revisiting its transmission cost allocation 
+methods for new large loads because Mobile-Sierra review under 
+the existing framework offers insufficient consumer protections 
+from the unique impacts of “discrete large loads.” 
+Commissioner Chang’s concurring opinion correctly addresses cooperative federalism and 
+the need for consumer-protective transmission cost allocation. Individually negotiated 
+transmission security agreements reviewed under a Mobile-Sierra framework using the existing 
+cost allocation paradigm offer insufficient consumer protections.81 These agreements implicate 
+“complicated jurisdictional and policy questions with significant implications for both state and 
+federal regulators,” and therefore “we should exercise our authorities in a complementary fashion 
+to ensure that both retail and wholesale customers are protected against unjustified cost increases 
+associated with large discrete load additions.”82 As a result, FERC should close jurisdictional gaps 
+ 
+78 See PECO TSA Order, 193 FERC ¶ 61,148 (2025) (Chang, Comm’r, concurring) (highlighting customer impacts 
+from massive scope of data-center-focused transmission buildout in PJM and resulting need for federal minimum 
+customer protections). 
+79 Comments of the Ohio Consumers’ Counsel, p. 2. 
+80 Joint Comments of the Pennsylvania Office of Consumer Advocate and Delaware Division of the Public 
+Advocate, pp. 26-27.  
+81 PECO TSA Order, at PP 1-2 (Chang, Comm’r, concurring). 
+82 Id. at PP 2-3 (Chang, Comm’r, concurring). 
+
+--- PAGE 22 ---
+ 
+20 
+ 
+where states cannot act to protect retail customers.83 This gap-closing should continue to 
+“recognize[] and preserve[] states’ essential role in protecting retail customers.”84 
+The new data center load addition paradigm is fundamentally altering “the pace, amount, 
+and size of new transmission investment.”85 This has manifested through hundreds of new 
+transmission projects costing billions of dollars, creating circumstances conducive to the 
+Commission’s application of its “higher of policy.”86 Commissioner Chang explains: 
+If the Commission were to adopt such a “higher of” policy in this situation, the new, 
+discrete large load would pay the “higher of” the rolled-in rate or an incremental 
+rate where the costs of the upgrades to the transmission system are paid for solely 
+by the new loads. Under such a pricing policy, existing consumers would be 
+protected from cost increases associated with the potential significant cost of the 
+upgrades to the transmission system necessary to serve the new incremental 
+customer(s). This “higher of” pricing policy could serve as a useful approach for 
+ensuring that the new, discrete large load’s demand does not significantly and 
+directly increase the cost of transmission for other customers.87 
+The Commission should consider implementing a cooperative federalism approach 
+according to a clear policy with minimum standards, because “the scale and cost implications of 
+discrete large loads are clearly bringing this issue to the fore.”88 While the Joint Consumer 
+Advocates supported the use of a “but-for” test when determining which costs should be paid 
+100% by large load additions in the Initial Joint Comments, the Joint Consumer Advocates 
+encourage FERC to consider the implications of a “higher of” policy in the alternative. Ultimately, 
+however, the most critical consideration is ensuring that new large loads bear at least the full cost 
+ 
+83 Id. at P 3 (Chang, Comm’r, concurring). 
+84 Id. 
+85 See PECO TSA Order, at P 4 (Chang, Comm’r, concurring). 
+86 Id. at P 4 & nn. 5-6 (first citing Union of Concerned Scientists, Connection Costs 4 (Sep. 2025), 
+https://www.ucs.org/sites/default/files/2025- 09/PJM%20Data%20Center%20Issue%20Brief%20-
+%20Sep%202025.pdf; and then citing Inquiry Concerning the Commission’s Pricing Policy for Transmission Servs. 
+Provided by Pub. Utils. Under the Fed. Power Act, 59 Fed. Reg. 55031 (Nov. 3, 1994), FERC Stats. & Regs. ¶ 
+31,005 (1994)). 
+87 Id. at P 5. 
+88 See 193 FERC ¶ 61,148, at P 6 (Chang, Comm’r, concurring). 
+
+--- PAGE 23 ---
+ 
+21 
+ 
+of the network upgrades that their interconnections cause. Without cost allocation reform, existing 
+customers will face mounting transmission costs due to the cumulative effect of a patchwork of 
+individually negotiated interconnection agreements, reviewed under a Mobile-Sierra standard, 
+which comprise a significant portion of current grid usage.   
+b. 
+FERC should consider assigning 100% of network upgrade 
+costs to large loads and hybrid facilities, without a crediting 
+mechanism. 
+The Joint Consumer Advocates recommend that FERC revisit the “but-for” test for 
+determining cost causation for large load customers’ transmission upgrades, and assign 100% of 
+network upgrade costs which would not have been incurred but-for the large load or hybrid 
+facility’s interconnection to that facility.89 FERC should also consider the  “higher-of” policy that 
+Commissioner Chang described, as outlined above, to the extent that it declines to assign 100% of 
+network upgrade costs to large load and hybrid facilities. Importantly, FERC should not permit a 
+crediting mechanism to reimburse large loads or hybrid facilities for the payment of up-front costs 
+and should ensure that large loads and hybrid facilities continue to contribute to all network costs 
+in addition to the direct costs of interconnection.  
+Several commenters disagree with the ANOPR’s proposed 100% network cost allocation 
+to large loads and hybrid facilities.90 One purported reason for socializing or rolling network 
+upgrades into transmission rate base is that to do so is “long maintained” Commission policy.91 
+This policy, however, did not contemplate the size, planning and operating complexities of large 
+new data center load additions, and, in many cases, the combination of large loads with generation, 
+ 
+89 Joint Comments of the Pennsylvania Office of Consumer Advocate and Delaware Division of the Public 
+Advocate, pp. 26-27.  
+90 Comments of FirstEnergy Service Company, p. 3; Comments of the Indicated PJM Transmission Owners, p. 3. 
+91 Comments of FirstEnergy Service Company, p. 7; Comments of the Indicated PJM Transmission Owners, pp. 10-
+15. 
+
+--- PAGE 24 ---
+ 
+22 
+ 
+either co-located or behind the meter. Typical loads did not have interconnection studies that 
+determined the required network upgrades because they were too small to be individually 
+impactful. The very premise of this ANOPR is that large loads and hybrid facilities are 
+fundamentally different from historical loads. New large loads and hybrid facilities require 
+interconnection studies, and those interconnection studies should account for the resource 
+adequacy challenges that require special regulatory treatment different from typical loads. Further, 
+new investment in large data center loads can be more speculative than that in large loads which 
+have already interconnected to the grid, increasing the risk of stranded costs; as a result, it is 
+imperative to create new frameworks which permit FERC and the states to adapt to this new type 
+of customer.92   
+ 
+A second purported reason to socialize costs is that these network upgrades benefit the 
+broader grid or regional reliability.93 Under Principle 8, the network upgrades that are assigned 
+through interconnection studies to large loads and hybrid facilities are attributable to the large load 
+or hybrid facility. The ability of that large load or hybrid facility to interconnect requires associated 
+network upgrades; therefore, the interconnection customer should be assigned the associated 
+costs—not other ratepayers. Using a “but-for” method of cost causation or “higher of” method of 
+cost allocation for the additions of large loads streamlines the interconnection process, reduces the 
+possibility that existing customers would bear stranded costs and ensures that the interconnection 
+of large loads provides greater system benefit than harm. 
+ 
+A third purported reason to socialize the associated network upgrades is that it reduces 
+costs for all ratepayers.94 Socialization increases the costs to non-large load customers because 
+ 
+92 See generally, ARUN, supra note 7 (identifying that investment in new large data center loads can be highly 
+speculative, which creates the risk for an increase in stranded costs). 
+93 Comments of FirstEnergy Service Company, p. 7. 
+94 Comments of the Indicated PJM Transmission Owners, pp. 10-15. 
+
+--- PAGE 25 ---
+ 
+23 
+ 
+they are paying for some of the network upgrade costs that they otherwise would not be paying 
+but-for the addition of the large load customers. Additionally, large load customers should pay for 
+their share of the existing transmission network that enables reliable service in addition to the cost 
+of transmission plant necessary for interconnection.95 Because network rates are often charged on 
+a demand basis, the high demands of large loads have the potential to provide significant benefits 
+to existing customers, but only if the growth in transmission rate base is outpaced by the growth 
+in demand.  
+ 
+A fourth purported reason is that socialization speeds up interconnection by avoiding 
+upgrade disputes.96 Disputes over the cost of network upgrades depend on the need and costs of 
+the upgrade, and whomever is paying for these costs may dispute them. By having large loads and 
+hybrid facilities pay 100% for network upgrades that they are assigned, the Commission will 
+incentivize them to locate, design, and operate their facilities so that these network costs are 
+minimized, thereby reducing the number and amount of cost disputes. Assigning costs caused by 
+one entity to others, which socialization does, is likely to increase, not reduce, the number of 
+disputes. A black-line, but-for test would provide administrative certainty about cost obligations, 
+reduce the risk of disputes, and be markedly more efficient than applying current procedures to the 
+unique circumstances of large load additions.  
+ 
+A fifth purported reason is that socialization may interfere with how a state utility 
+commission wants to assign transmission costs.97 In either case of socialization or 100% 
+assignment, the Commission is assigning costs to some set of transmission customers, and state 
+ 
+95 See, e.g., AMTRAK v. PPL Elec. Utils. Corp., 171 F.E.R.C. ¶ 61,237, PP 36-45 (2020) (providing that a 
+transmission customer relying on both co-located generation as well as network services is appropriately charged the 
+full network rate to prevent the risk of a “split system”).  
+96 Comments of the Indicated PJM Transmission Owners, pp. 10-15. 
+97 Comments of the Indicated PJM Transmission Owners, pp. 29-32. 
+
+--- PAGE 26 ---
+ 
+24 
+ 
+utility commissions are still able to assign transmission costs as part of their retail ratemaking 
+authority. However, before a state commission in a state with unbundled retail transmissions, the 
+methodology which determines the inputs to the FERC-jurisdictional transmission charges are not 
+subject to that state’s review.98 As a result, a FERC determination as to the methodologies 
+appropriate for determining inputs to FERC-jurisdictional transmissions would not affect state-
+jurisdictional allocations of retail transmission charges.  
+ 
+A sixth purported reason is that 100% assignment transfers significant costs to new large 
+load would be burdensome.99 By having large loads and hybrid facilities pay 100% for network 
+upgrades that they are assigned, FERC will incentivize them to locate, design, and operate their 
+facilities such that these network costs are minimized. It also should reduce the number and 
+complexity of these upgrades, which will reduce the time to interconnection, preserving the 
+benefits of new large load additions for existing customers while simultaneously benefitting new 
+large loads’ interconnection. 
+ 
+A seventh purported reason is that ratepayers can be protected from the risk of stranded 
+costs via utility-large load agreements and retail tariffs.100 Socialization risks ratepayers paying for 
+the stranded transmission upgrade costs of large loads and hybrid facilities, which is a real and 
+substantial risk.101 Further, FERC establishing cost allocation methodologies consistent with those 
+employed for generation interconnection would not infringe on the ability of states or utilities to 
+require large loads to establish credit standards to alleviate the risk of stranded investment in the 
+ 
+98 See Commw. Edison Co., 133 F.E.R.C. ¶ 61,118, ¶¶ 11-13 (2010).  
+99 Comments of PPL Services Corporation, pp. 3, 10-12. 
+100 Comments of FirstEnergy Service Company, p. 8; Comments of the Indicated PJM Transmission Owners, pp. 
+10, 16-25. 
+101 See, ARUN, supra note 7, at 43-48, 57-58 (illustrating various financial risks throughout AI data center industry, 
+all predicated on uncertain revenue and consumer demand that have yet to materialize, and culminating in stranded 
+assets). 
+
+--- PAGE 27 ---
+ 
+25 
+ 
+event that the large load would terminate service while the network upgrades its interconnection 
+caused would be fully depreciated from rate base. This is why the Joint Consumer Advocates 
+requested that FERC establish minimum contractual provisions to ensure that costs do not become 
+stranded, a concern which is not mitigated through cost allocation methodologies, alone.102  
+ 
+An eighth purported reason is that socialization of assigned network upgrades is necessary 
+to maintain the financial viability of transmission owners and allowing a return on investment.103 
+Transmission utilities frequently have arrangements, such as through PJM’s regional planning 
+initiatives, in which their transmission system and facilities are planned, maintained, and operated 
+with the transmission systems and facilities of other transmission owners. In addition to those 
+arrangements, traditional cost of service ratemaking is sufficient to permit transmission utilities a 
+reasonable opportunity to earn a return on investment to serve large load customers; cost allocation 
+methodologies appropriately designed to allocate costs to large load additions would not change 
+the adequacy of existing ratemaking tools, which are sufficient for generation interconnection. 
+Furthermore, FERC action on cost allocation methodologies would not infringe on a utility’s 
+ability to contract for assurances of costs, such as through security agreements.     
+IV. 
+CONCLUSION 
+The Pennsylvania Office of Consumer Advocate, the Delaware Division of the Public 
+Advocate, and the Office of the Illinois Attorney General respectfully request that the Commission 
+consider and adopt the concerns and proposals set forth in these reply comments and the Initial 
+Joint Comments submitted in this proceeding.  
+ 
+102Joint Comments of the Pennsylvania Office of Consumer Advocate and Delaware Division of the Public 
+Advocate, pp. 31-35.  
+103 Comments of the Indicated PJM Transmission Owners, pp. 9-10, 21-29. 
+
+--- PAGE 28 ---
+ 
+26 
+ 
+Counsel for: 
+Darryl Lawrence 
+Consumer Advocate 
+ 
+Pennsylvania Office of Consumer Advocate 
+555 Walnut Street 
+5th Floor, Forum Place 
+Harrisburg, PA 17101-1923 
+717-783-5048 
+ 
+Dated: December 5, 2025 
+Respectfully submitted, 
+ 
+ 
+/s/ Melanie Joy El Atieh 
+  
+Melanie Joy El Atieh 
+Deputy Consumer Advocate  
+PA Attorney ID # 209323 
+MElAtieh@paoca.org 
+ 
+Jacob Guthrie 
+Assistant Consumer Advocate 
+PA Attorney ID # 334367 
+JGuthrie@paoca.org 
+ 
+Josiah Harmar 
+Assistant Consumer Advocate 
+PA Attorney ID # 338426 
+JHarmar@paoca.org 
+Counsel for: 
+Delaware Division of the Public Advocate  
+Jameson A.L. Tweedie, Public Advocate 
+ 
+Dated: December 5, 2025 
+ 
+ 
+/s/ David Crumplar 
+  
+David Crumplar (DE Bar ID No. 5876) 
+Deputy Attorney General 
+820 N. French St., 6th Floor 
+Wilmington, DE 19801 
+Phone:  302-577-8400 
+David.Crumplar@delaware.gov 
+Counsel for: 
+Office of the Illinois Attorney General, 
+Kwame Raoul 
+ 
+  
+ 
+ 
+ 
+Dated: December 5, 2025 
+ 
+ 
+/s/ Kimberly B. Janas 
+  
+Susan L. Satter 
+ 
+  
+ 
+Chief, Public Utilities Bureau 
+  
+ 
+Kimberly B. Janas 
+ 
+  
+ 
+Counsel to the Attorney General 
+Scott Metzger 
+Senior Assistant Attorney General 
+ 
+115 South LaSalle Street, 25th Floor 
+Chicago, IL 60603 
+(312) 771-1632 
+ 
+ 
+susan.satter@ilag.gov 
+kimberly.janas@ilag.gov 
+scott.metzger@ilag.gov 
+ 
+ 
+ 
+
+--- PAGE 29 ---
+ 
+27 
+ 
+CERTIFICATE OF SERVICE 
+I hereby certify that I have this day served the foregoing document on those parties on the 
+official Service List compiled by the Secretary in these proceedings.  
+Dated at Harrisburg, Pennsylvania this 5th day of December, 2025. 
+ 
+ 
+/s/ Josiah B. Harmar 
+  
+Josiah Harmar 
+Assistant Consumer Advocate 
+PA Attorney ID # 338426 
+JHarmar@paoca.org 
+ 
+ 
+ 

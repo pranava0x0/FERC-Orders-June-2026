@@ -1,0 +1,361 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+Interconnection of Large Loads  
+)  Docket No. RM26-4-000 
+to the Interstate Transmission System )   
+RESPONSIVE COMMENTS OF MAVEN SOLUTIONS 
+REGARDING THE SUPPLEMENTAL COMMENTS OF 
+CONSTELLATION ENERGY GENERATION, LLC 
+ 
+INTRODUCTION 
+Maven Solutions submits these responsive comments regarding the Supplemental 
+Comments filed by Constellation Energy Generation, LLC on June 5, 2026, proposing 
+Load-Contingent New Capacity at Existing Plants (“LCEP”) Service.1 Maven Solutions 
+previously submitted a community-development scoring framework into this docket.2 
+These comments address what Constellation’s filing actually proposes beneath its 
+public-interest framing: a tariff-enabled mechanism to convert incumbent control of 
+existing generation Points of Interconnection into a gatekeeping product for the nation’s 
+fastest-growing source of electricity demand.3 The proposal does this while externalizing 
+reliability risk through unproven protection assumptions and externalizing community 
+harm by omitting every dimension of host-community impact from its design. 
+The analytical traditions of antitrust law, structural regulation, and environmental 
+justice converge on the same conclusion: LCEP as filed is not a neutral efficiency reform. 
+ 
+1Supplemental Comments of Constellation Energy Generation, LLC, Docket No. RM26-4-000 (June 5, 
+2026) (“Constellation Supplemental Comments”). 
+2Maven Solutions, Community-Development Scoring Framework, Docket No. RM26-4-000, Submission 
+ID 1755084 (May 20, 2026). 
+3Constellation Supplemental Comments at 1. 
+
+--- PAGE 2 ---
+It is a market-structure intervention that creates a new monopoly chokepoint at the 
+physical layer of the nation’s electricity infrastructure.4 The Commission’s obligation 
+under FPA § 206 is to adopt a replacement rate that is just and reasonable—not one that 
+substitutes incumbent preference for open access, or speed for accountability.5 
+I. LCEP CREATES A MONOPOLY CHOKEPOINT AT THE POINT 
+OF INTERCONNECTION 
+A. The Incumbent Generator Becomes the Gatekeeper 
+Constellation proposes that LCEP requests may be made by the existing generator, its 
+affiliates, or by an unaffiliated customer “with the explicit consent of the existing 
+Generating Facility.”6 That sentence is the structural core of the proposal. Everything 
+else—the thermal-envelope analysis, the Surplus Interconnection analogy, the speed-to-
+power narrative—is scaffolding around a single economic fact: the owner of an existing 
+generation Point of Interconnection would control who gets expedited access to the 
+transmission system for large-load interconnection. 
+This is a bottleneck monopoly problem. The Point of Interconnection is a physical 
+facility that cannot be replicated. The studies conducted for the existing generator are 
+sunk investments that benefit the incumbent. The interconnection rights attached to the 
+POI are contractual assets the incumbent controls. When Constellation asks FERC to 
+create LCEP Service, it is asking the Commission to formalize the incumbent’s 
+gatekeeping power over a scarce, non-replicable asset—and to do so through a tariff 
+mechanism that would apply across all Transmission Providers. 
+The pattern is not new. Policymakers from the railroad era to the telecommunications 
+era to the digital platform era have recognized that allowing a dominant intermediary to 
+control bottleneck infrastructure while also competing in adjacent markets creates a 
+structural conflict of interest—incentivizing discrimination, self-preferencing, and the 
+ 
+4See Assistant Attorney General Jonathan Kanter, Remarks at Keystone Conference on Antitrust, 
+Regulation & the Political Economy (Nov. 2023) (“Our enforcement program is laser focused on breaking 
+up existing monopoly chokepoints across the economy, and preventing new ones before they arise.”). 
+516 U.S.C. § 824e(a)–(b). 
+6Constellation Supplemental Comments at 13. 
+
+--- PAGE 3 ---
+extraction of monopoly rents from those who must use the infrastructure.7 The cycle by 
+which open networks are captured and closed by incumbent monopolists is well 
+documented.8 LCEP would inaugurate this cycle in electricity interconnection. 
+B. Consent Is Control 
+The consent requirement is not a procedural formality. It is the mechanism through 
+which the incumbent monetizes its bottleneck position. A data-center developer that 
+needs power within two years—and the record shows interconnection delays of seven to 
+ten years through standard channels—faces a choice: negotiate with the incumbent 
+generator on the incumbent’s terms, or wait in the queue. The incumbent’s consent 
+becomes the price of speed. 
+That gives the incumbent leverage in site deals, power purchase agreements, tolling 
+structures, co-location arrangements, and any other bilateral negotiation. The 
+incumbent is not merely selling electrons. It is selling time—and it controls who gets 
+access to the fast lane. 
+FERC recognized this dynamic in Order No. 845 when it specified that Surplus 
+Interconnection Service does not create a new property right and does not restrict 
+another customer’s ability to seek interconnection service directly from the 
+Transmission Provider.9 LCEP, by contrast, would effectively create a new property 
+right: the right to grant or withhold consent for expedited access at the incumbent’s POI. 
+Unless FERC imposes structural safeguards—open, transparent, independently 
+administered access rules with non-discrimination requirements—LCEP would 
+constitute the kind of tariff-enabled gatekeeping that the Federal Power Act was 
+designed to prevent. 
+ 
+7See Lina M. Khan, The Separation of Platforms and Commerce, 119 Colum. L. Rev. 973 (2019) (analyzing 
+structural separations applied to railroads, telecommunications, and banking where dominant 
+intermediaries integrated into adjacent commerce). 
+8See Tim Wu, The Master Switch: The Rise and Fall of Information Empires (2010) (documenting the 
+recurring pattern by which open networks are captured and closed by incumbent monopolists); Tim Wu, 
+The Curse of Bigness: Antitrust in the New Gilded Age (2018). 
+9Order No. 845, 163 FERC ¶ 61,043, at PP 467, 474, 482, 486–88 (2018). 
+
+--- PAGE 4 ---
+C. The Open-Access Principle Is at Stake 
+The Commission’s open-access transmission policy, grounded in Orders No. 888 and 
+889 and reinforced through every subsequent interconnection reform, rests on a 
+foundational principle: the transmission system is a public good, and access to it must 
+be provided on terms that are just, reasonable, and not unduly discriminatory or 
+preferential. LCEP challenges that principle by converting a subset of the public 
+transmission system—the Points of Interconnection at existing generation sites—into 
+privately gated access points. 
+This is not hypothetical. Constellation is the nation’s largest owner of nuclear generating 
+capacity and among the largest owners of overall generation capacity in organized 
+wholesale markets. LCEP, if adopted as proposed, would give Constellation and other 
+large incumbent generators a competitive advantage that smaller generators, 
+independent developers, and unaffiliated load customers could not replicate—because 
+they do not own the POIs.10 
+II. THE RELIABILITY CLAIM SUBSTITUTES A STATIC NETTING 
+IDENTITY FOR DYNAMIC PROOF 
+A. The Omitted Contingency 
+Constellation’s Attachment A presents four scenarios showing that LCEP’s net power 
+flows stay within studied conditions.11 It omits the decisive fifth scenario: the paired 
+load drops while new generation remains online. Using Constellation’s own numbers—
+1,745 MW existing plus 800 MW new generation minus zero load—the result is 2,545 
+MW pushing through lines studied for 1,745 MW. An 800 MW export excursion above 
+the studied condition. 
+ 
+10See Pac. Gas & Elec. Co., 115 FERC ¶ 61,193, at P 36 (2006) (“[I]nterconnection is part and parcel of 
+transmission of electric energy in interstate commerce.”). 
+11Constellation Supplemental Comments, Att. A at 3 (Scenario Table). 
+
+--- PAGE 5 ---
+Constellation buries this in a footnote: “mechanisms similar to those used in surplus or 
+hybrid interconnection would be in place.”12 That footnote is doing the structural work 
+of the entire reliability argument. It is not a protection design. It is not a clearing-time 
+analysis. It is not a failure-mode study. It is a promise—and the Commission does not 
+set just and reasonable rates on promises. 
+B. NERC’s Record Contradicts Constellation’s Premise 
+The scenario Constellation omits has already occurred. On July 10, 2024, a 230 kV fault 
+caused approximately 1,500 MW of data-center load to drop simultaneously. Operators 
+did not anticipate the magnitude of loss. Approximately 1,260 MW did not return for 
+hours.131415 NERC found that the grid has not historically experienced load losses of this 
+magnitude and that existing planning for large generation losses does not translate to 
+sudden large load losses. 
+Constellation’s filing states that “a load outage is not typically planned for currently and 
+therefore should not need to be a part of the LCEP process studies.”16 That sentence was 
+written one month after NERC issued a Level 3 Essential Action Alert—its highest-
+urgency notification—requiring registered entities to address computational load 
+modeling, studies, instrumentation, commissioning, operations, protection, and 
+control.17 NERC’s March 2026 Gap Assessment concluded that existing Reliability 
+Standards are “inadequate to address the risks posed by emerging large loads.”18 The 
+Reliability Guideline, published May 2026, identifies gaps across interconnection, 
+ 
+12Constellation Supplemental Comments, Att. A at 3 n.* (“To ensure that the total generation does not 
+exceed the studied values, if the new load is reduced or drops, mechanisms similar to those used in 
+surplus or hybrid interconnection would be in place.”). 
+13NERC, Incident Review: Integration of Large Loads that are Sensitive to Voltage Disturbances into the 
+Bulk Electric System (Jan. 8, 2025) (“NERC Incident Review”). 
+14NERC Incident Review at 1–2. 
+15NERC Incident Review at 2–3. 
+16Constellation Supplemental Comments, Att. A at 5. 
+17NERC, Level 3 Essential Action Alert: Computational Load Modeling, Studies, Instrumentation, 
+Commissioning, Operations, Protection, and Control (May 4, 2026) (“NERC Level 3 Alert”). 
+18NERC Large Loads Working Group, Assessment of Gaps in Existing Practices, Requirements, and 
+Reliability Standards for Emerging Large Loads (March 2026) (“NERC Gap Assessment”). 
+
+--- PAGE 6 ---
+planning, resource adequacy, balancing, ride-through, stability, power quality, security, 
+resilience, and load modeling.1920 
+The reliability authority is telling the industry to do more. Constellation is asking the 
+Commission to require less. Those positions cannot be reconciled. 
+C. A Thermal-Flow Table Is Not a Reliability Study 
+Grid interconnection requires analysis of voltage performance, reactive power, short-
+circuit/fault duty, transient stability, dynamic behavior, protection coordination, 
+frequency response, ride-through, relay settings, restoration, and affected-system 
+impacts.21 Constellation’s Attachment A proves, at most, a stylized thermal-envelope 
+argument using a static table with illustrative numbers. It does not prove dynamic 
+reliability. A megawatt netting table cannot substitute for validated dynamic models of 
+computational loads with UPS systems, backup generation, power electronics, vendor-
+specific control logic, and autonomous protective behavior.22 
+III. THE PROPOSAL SHIFTS COSTS AND RISKS ONTO CAPTIVE 
+RATEPAYERS 
+Constellation asserts that LCEP avoids increasing costs to other customers. That 
+assertion is unsupported. The filing does not demonstrate who pays for the protection 
+systems, remedial action schemes, telemetry, metering, dynamic fault recorders, 
+communications, operator training, reserve requirements, voltage and reactive support, 
+harmonics mitigation, restoration support, affected-system studies, network upgrades 
+discovered through dynamic analysis, enforcement administration, or system impacts 
+from protection misoperation.23 
+ 
+19NERC, Reliability Guideline: Risk Mitigation for Emerging Large Loads (approved Apr. 30, 2026; 
+published May 2026) (“NERC Reliability Guideline”). 
+20NERC Gap Assessment at 5–11. 
+21See NERC FAC-002-4; NERC TPL-001-5.1; NERC MOD-032-1. 
+22See NERC Incident Review at 5–6 (recommending ramp-rate requirements and controlled 
+reconnection). 
+23ANOPR at ¶¶ 22–26. 
+
+--- PAGE 7 ---
+This matters because existing ratepayers are captive. They did not choose to host data 
+centers at their local power plant. They cannot switch providers. They bear the costs of 
+grid reinforcement, the environmental burden of continued and expanded industrial 
+operations, and the fiscal impact of tax abatement arrangements negotiated between the 
+generator, the data-center operator, and the local jurisdiction—often without 
+meaningful public participation.24 
+The Commission should apply the principle that large loads must contribute fairly to the 
+costs of maintaining a stable and sustainable grid and that existing ratepayers must be 
+protected from cost shifts.25 “No new thermal upgrade in a stylized case” is not the same 
+as “no cost to other customers.” Every unaccounted cost that LCEP fails to assign to the 
+applicant is a cost that falls on the ratepayer. The Commission should not adopt a 
+replacement rate that treats cost allocation as an afterthought. 
+LCEP’s structural fragility compounds this concern. Constellation acknowledges that 
+LCEP service is “inherently derived from the original existing generator’s 
+Interconnection Service” and would terminate upon the generator’s retirement.26 A 
+service that disappears when the host generator retires is not infrastructure. It is a 
+monetization strategy for a depreciating asset—and the stranded-cost risk, when that 
+asset retires, falls on the communities and ratepayers left behind. 
+IV. THE COMMUNITIES WHO BEAR THE BURDEN ARE 
+ABSENT FROM THE PROPOSAL 
+The word “community” does not appear in the body of Constellation’s filing. That is not 
+an oversight. It is a design choice. LCEP is engineered to move fast by moving past the 
+people who live nearest to the infrastructure. 
+ 
+24See Earthjustice & Energy Futures Group, Report: Electricity Contracts for Data Centers and other 
+Mega-load or Large-load Facilities (2024) (analyzing tariff structures to ensure large loads contribute 
+fairly to grid costs while safeguarding ratepayer and environmental interests). 
+ 
+ 
+26Constellation Supplemental Comments at 12. 
+
+--- PAGE 8 ---
+Existing power plant sites are not abstractions on a transmission map. They are places 
+where people live, work, breathe, drink water, send children to school, and pay taxes. 
+These communities already bear the environmental, health, noise, water, and land-use 
+impacts of hosting generation facilities. LCEP proposes to add industrial-scale data 
+center load—with its own water demands, thermal discharge, noise, traffic, and fiscal 
+dynamics—without any mechanism for those communities to know what is coming, 
+negotiate terms, or hold anyone accountable. 
+Environmental justice principles require that communities disproportionately burdened 
+by industrial infrastructure receive heightened scrutiny, meaningful engagement, and 
+enforceable protections—not an expedited pathway that bypasses the processes through 
+which those protections might surface. Existing power plant sites are disproportionately 
+located in communities with environmental justice concerns. Adding large 
+computational load to these sites without screening, disclosure, or community 
+engagement is not speed to power. It is speed past people. 
+The scale of community resistance to data center siting is itself evidence that the current 
+process is failing. Maven Solutions’ research documents 268 local opposition groups 
+across 37 states, representing over 360,000 members, coordinated through 
+organizations including the Coalition for Responsible Data Center Development.27 These 
+groups did not form because interconnection was too slow. They formed because 
+communities were not included, not informed, and not protected. Creating a faster 
+pathway that replicates this exclusion will not resolve the opposition. It will deepen it. 
+Good-actor precedent proves that speed and accountability are compatible. Applied 
+Digital’s Ellendale Acres development in North Dakota—operating under the R-WISH 
+program with housing construction, water stewardship, and workforce partnerships 
+built into project development—demonstrates that community-development 
+commitments can be delivered concurrent with, not after, project deployment. The 
+question is not whether speed matters. It does. The question is whether the Commission 
+ 
+27Maven Solutions, Polar-Grade Comprehensive Brief v12 (May 2026) (documenting 268 local opposition 
+groups across 37 states, representing over 360,000 members). 
+
+--- PAGE 9 ---
+will embed the lesson of that precedent into the replacement rate, or allow LCEP to 
+create a new class of burden without a new class of obligation. 
+V. STRUCTURAL CONDITIONS FOR ANY EXPEDITED 
+INTERCONNECTION PATHWAY 
+If the Commission includes LCEP or any comparable expedited pathway in its 
+replacement rate, the following structural conditions are necessary to prevent the 
+creation of a monopoly chokepoint, protect reliability, prevent cost-shifting, and ensure 
+community accountability:28 
+1. Open-Access and Non-Discrimination: The Commission must 
+structurally separate the gatekeeping function from the incumbent’s commercial 
+interest. LCEP access rules must be open, transparent, and independently 
+administered by the Transmission Provider. The incumbent generator’s consent 
+cannot function as a veto or a toll. Any entity meeting objective qualification 
+criteria must be eligible on equal terms. 
+2. Full Dynamic Contingency Study: The omitted contingency—load drops 
+while generation remains online—must be studied. All dynamic contingencies 
+including generation loss, simultaneous voltage-sensitive load reduction, breaker 
+failure, remedial-action-scheme failure, and communication-path failure must be 
+modeled with validated dynamic representations of the computational load, UPS 
+systems, and protection controls, consistent with NERC’s Level 3 Alert.2930 
+3. Protection Demonstration, Not Protection Promise: The applicant 
+must provide a protection design basis with specified clearing times, failure-
+mode analysis, tested trip coordination, breaker-failure backup, communication-
+path redundancy, and commissioning test results. “Appropriate system 
+protection will be in place” is a conclusion, not evidence. 
+ 
+28XO Energy Ma, LP v. FERC, 77 F.4th 710, 716 (D.C. Cir. 2023). 
+ 
+ 
+30NERC Level 3 Alert at 3–9. 
+
+--- PAGE 10 ---
+4. Full Cost Allocation to the Applicant: All caused costs—studies, 
+protection systems, remedial action schemes, telemetry, metering, 
+communications, dynamic fault recorders, reserves, voltage and reactive support, 
+harmonics mitigation, operator training, affected-system studies, and 
+enforcement administration—must be borne by the LCEP applicant. Ratepayers 
+must not be left on the hook.31 
+5. Power Quality, Harmonics, and Cyber-Physical Risk: Applicants must 
+conduct power-quality and harmonic studies with mitigation responsibility 
+assigned to the LCEP customer. All protection and control systems enforcing the 
+no-export condition must undergo cyber-physical risk assessment.32 
+6. Community Impact Disclosure and Environmental Justice 
+Screening: LCEP applicants must file a community impact assessment 
+addressing water consumption, thermal discharge, workforce projections, fiscal 
+impact including tax abatement arrangements, noise, traffic, housing, and 
+environmental justice screening prior to processing. Communities must know 
+what is coming before the interconnection studies are complete, not after. 
+7. Community Benefit Framework and Good-Faith Engagement: The 
+pro forma LGIP should require demonstrated good-faith engagement with host-
+community stakeholders, including disclosure of community benefit 
+commitments, as a condition of expedited processing. 
+8. Periodic Compliance Scoring: LCEP arrangements should be subject to 
+periodic review using a standardized community-development scoring 
+framework, such as the Polar-Grade Community-Development Standard 
+submitted in this docket.33 
+ 
+ 
+ 
+32NERC Gap Assessment at 8–11 (security, resilience, power quality gaps). 
+ 
+ 
+
+--- PAGE 11 ---
+CONCLUSION 
+Constellation’s LCEP proposal asks the Commission to solve a real problem—
+interconnection delay—by creating a new one: a tariff-enabled monopoly chokepoint at 
+existing generation Points of Interconnection, with unproven reliability assumptions, 
+unresolved cost allocation, and zero community accountability. 
+The proposal equates static net injection limits with dynamic system reliability—a 
+category error that NERC’s own 2026 record decisively refutes. It converts incumbent 
+control of bottleneck infrastructure into a gatekeeping product for the nation’s fastest-
+growing load class—a competition problem that the traditions of structural regulation 
+were built to prevent. And it does all of this while rendering invisible the communities 
+who will host the infrastructure, bear the burden, and have no seat at the table the 
+proposal does not build. 
+The Commission’s discretion in fashioning replacement rates is at its zenith.34 That 
+discretion should be exercised to ensure that speed to power does not come at the cost of 
+open access, proven reliability, fair cost allocation, and community justice. LCEP should 
+not be adopted as filed. At most, the Commission should consider a narrowly 
+conditioned, independently studied, NERC-aligned pilot that denies expedited 
+treatment unless the applicant proves dynamic reliability, bears all caused costs, 
+submits to non-discriminatory access rules, and demonstrates enforceable community-
+development accountability. 
+Anything less is not a replacement rate. It is a fast lane for the few, paid for by the many. 
+WHEREFORE, Maven Solutions respectfully requests that the Commission condition 
+any LCEP Service or comparable expedited interconnection pathway on the structural, 
+reliability, cost-allocation, and community-development requirements described herein. 
+Respectfully submitted, 
+ 
+ 
+ 
+
+--- PAGE 12 ---
+/s/ Jayne Algermissen 
+Jayne Algermissen 
+Senior Technical Program Manager & CSM 
+Maven Solutions 
+Seattle, Washington 
+MavenSolutions.xyz 
+linkedin.com/in/jaynealgermissen 
+Prior Submission: Submission ID 1755084 (May 20, 2026) 
+Date: June 6, 2026 

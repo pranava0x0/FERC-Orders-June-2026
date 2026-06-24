@@ -1,0 +1,238 @@
+--- PAGE 1 ---
+ 
+ 
+1
+UNITED STATES OF AMERICA 
+BEFORE THE  
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+Interconnection of Large Loads to the 
+ 
+) 
+ 
+Docket No. RM26-4 
+Interstate Transmission System  
+ 
+ 
+)  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+COMMENTS OF SPLIGHT INC. 
+Splight Inc. (“Splight”)1 respectfully submits these comments in response to the Federal 
+Energy Regulatory Commission’s (“Commission”) Notice Inviting Comments (“Notice”) in the 
+above-referenced proceeding. Splight appreciates the Commission’s leadership in addressing the 
+urgent need to streamline and standardize the interconnection of large loads on the transmission 
+system.  We particularly appreciate the agency’s recognition of the potential benefits to be 
+captured through adoption of technological innovation in support of that process, given the rapid 
+growth of demand the Notice attempts to address. 
+I. 
+COMMUNICATIONS 
+Communications and correspondence regarding this filing should be directed to the following:  
+Helen Kemp 
+Director, Regulatory Affairs 
+Splight Inc. 
+201 W 5th Street, Ste. 1600 
+Austin, TX 78701 
+Email: helen.kemp@splight.com  
+ 
+II. 
+INTRODUCTION 
+Founded in 2021, Splight is an international provider of scalable grid technology solutions 
+with operations in North America, Latin America, and Europe. Splight has developed and 
+ 
+1 splight.com/about-us 
+
+--- PAGE 2 ---
+ 
+ 
+2
+deployed a new digital, transmission operating technology that increases transmission capability 
+while also adding reliability and flexibility to the grid’s operation. Splight’s platform uses 
+advanced computing and real-time controls and communications to, among other things, 
+automatically and dynamically modulate demand or injection on a transmission system in order 
+to accommodate actual system capacity in response to (or in anticipation of) a system failure. 
+This feature, Dynamic Congestion Management (“DCM”), is a type of software-forward 
+advanced contingency response tool that can increase the usable capacity of existing grid assets 
+by removing concerns about large load impact on the grid post contingency. DCM can thereby 
+create interconnection capacity temporarily to accommodate new loads or facilitate outage 
+management while new networks are built out. DCM can remain in place as a visualization tool 
+and extra protective layer, ensuring reliability of grid systems as they continually expand in scale 
+and complexity. Alternatively, this technology can also be used by system operators manage 
+contingencies in real-time by interacting directly with inverter-based resources or loads. 
+In the letter dated October 23, 2025, entitled Secretary of Energy’s Direction that the Federal 
+Energy Regulatory Commission Initiate Rulemaking Procedures and Proposal Regarding the 
+Interconnection of Large Loads Pursuant to the Secretary’s Authority Under Section 403 of the 
+Department of Energy Organization Act, which attached a draft Advanced Notice of Propose 
+Rulemaking (“ANOPR”), the Department of Energy (“DOE”) set out fourteen proposed 
+principles for the Commission to adhere to in a subsequent rulemaking process for the regulation 
+of large load interconnection procedures. In the following comments, Splight offers a 
+recommendation related to the seventh of those principles, as well as a suggestion to facilitate its 
+implementation through the North American Electric Reliability Corporation (“NERC”).   
+
+--- PAGE 3 ---
+ 
+ 
+3
+III. 
+RESPONSE TO PROPOSED EXPEDITED INTERCONNECTION STUDY 
+FOR CURTAILABLE LARGE LOADS 
+In Paragraph 24 of the ANOPR, the DOE proposes that the interconnection studies of large 
+loads and hybrid facilities which agree to be curtailable should be expedited (“Seventh 
+Principle”). These loads reduce risks to the grid in a way that warrants such treatment; not only 
+should they receive expedited treatment but should be analyzed for their actual impact on the 
+grid. Splight strongly supports this principle and respectfully urges the Commission to go further 
+by explicitly recognizing the value of large loads that implement advanced, automated 
+contingency response technologies (“Fast-Responding Loads”) as a basis for both (1) expedited 
+interconnection and (2) allocation of increased capacity in proportional to the speed and amount 
+of curtailment a load is able to provide. Splight’s DCM technology exemplifies the type of 
+reliability-enhancing mechanism that can be relied upon by utilities and system operators to 
+address transmission adequacy and system security as they seek to integrate new large loads.  
+Resource Adequacy Benefits of Traditional Flexible Loads Warrant Expedited Study and 
+Additional Non-Firm Capacity 
+Today, there are multiple methods and mechanisms for loads to respond within several 
+seconds or up to several hours to address resource adequacy, or the availability of energy and 
+certain reserve services (generally referred to as “Flexible Loads”). Flexible Loads should indeed 
+be considered for expedited interconnection as non-firm loads, if they are willing and able to 
+respond to the availability of energy and ancillary services for their operation, at least until 
+networks can be built out. This would allow such loads to come online sooner than they would 
+ordinarily. Additional capacity for curtailable load would tie the speed of curtailment to the 
+relevant most limiting transmission line rating (e.g., Flexible Loads with a 10-minute response 
+
+--- PAGE 4 ---
+ 
+ 
+4
+time could receive capacity proportional to the capacity increase allotted with the 15-minute 
+emergency rating). This is already a common practice in some jurisdictions. 
+Transmission Resilience Benefits of Fast-Responding Loads Justify Increased Capacity 
+Allocation  
+Where transmission adequacy is the fundamental limitation, Fast-Responding Loads 
+should be studied based on their ability to modify demand near-instantaneously in the event of a 
+transmission system failure (for example, Splight’s DCM can respond in less than 500 
+milliseconds) and, should be considered for expedited interconnection as firm loads. Fast-
+Responding Loads offer an alternative pathway to maintain adherence to the N-1 or N-1-1 
+planning and operating criteria, while expanding load service. In effect, Fast-Responding Loads 
+have no or reduced impact on an N-1 condition, because of their ability to absent themselves 
+before a system failure impacts remaining system assets post contingency. By incorporating this 
+advanced responsiveness, Fast-Responding Loads allow the system to operate at up to the full 
+physical capacity of the grid, except in the rare event of a system failure, thus freeing enough of 
+the system capacity to serve double the amount of demand interconnected. Accordingly, with 
+agreement of the system operator, ratings on the transmission line system serving one or more 
+Fast-Responding Loads (and/or generation assets with similar capabilities) can be increased. 
+That newly created contingent capacity can be allocated to the Fast-Responding Load(s). 
+Because contingencies are generally infrequent, Fast-Responding Loads are significantly less 
+likely to be interrupted than Flexible Loads. Potentially, never. 
+While the large loads would lead adoption of the needed technical capability required, 
+collaboration between the large load and utility is required to implement this type of solution: the 
+software monitors the status of the wider grid and responds to contingencies if and when they 
+
+--- PAGE 5 ---
+ 
+ 
+5
+occur, while the utility (and ISO if any) can maintain full visibility and access. Because the 
+additional usable capacity is created using software and real-time controls, there is minimal cost, 
+making this option attractive—even if used only temporarily while the system is returned to the 
+level of physical asset redundancy required to achieve N-1 without active asset management. 
+Further, any utility cost for participating in these technology solutions can be paid for by the load 
+as a discretionary service under the existing FERC tariff.  This ensures that other rate payers are 
+not picking up the bill for implementation of this contingent interconnection technology.  Using 
+low-cost, high-tech software solutions such as Splight’s DCM platform, by accelerating the 
+interconnection of Fast-Responding Large Loads, also allow the utility to begin collecting 
+revenues from the load even as the network expansion is underway, again minimizing any 
+concerns about cross subsidies by existing customers.  
+Summary of Splight Recommendations Related to the Seventh Principle 
+The capabilities described above directly align with the goal of the Seventh Principle. By 
+incorporating the fast-responding capabilities of such technologies into interconnection studies, 
+system operators will more accurately model the reliability impacts and contributions of large 
+loads. As such, Splight recommends that the Commission adopt a framework that: 
+1. Recognizes automated contingency response systems as a valid and enforceable basis 
+for limiting their potential impact on the grid and granting Fast-Responding Loads 
+expedited study as firm loads under the Seventh Principle; 
+2. Incorporates performance-based criteria to analyze and allocate additional capacity 
+for Flexible Loads and Fast-Responding Loads; and 
+
+--- PAGE 6 ---
+ 
+ 
+6
+3. Encourages innovation and technology solutions that enhance reliability, increase asset 
+utilization, and reduce interconnection timelines. 
+This approach would not only support the DOE and Commission’s objectives of timely and 
+efficient interconnection but also promote grid modernization and economic development by 
+enabling large loads to come online faster and with more capacity without compromising 
+reliability. 
+IV. 
+RECOMMENDATION FOR MODIFICATION OF FERC OPEN ACCESS 
+TARIFF 
+Additionally, the Commission should explore the potential for embedding a performance 
+incentive in the current transmission tariff that would reward a transmission owner/operator for 
+the adoption of technology and/or practices that increase the useful and usable capacity of 
+existing transmission systems, even as a bridge to completion of new transmission infrastructure, 
+or for participation with a large load and/or ISO adopting technology to achieve those same ends. 
+Developing the capability to manage, enable or participate in the real-time management of Fast-
+Responding Loads—those capable of responding quickly enough to protect the bulk electric 
+system pre-, and even post-contingency—should be rewarded. It allows the utility to accelerate 
+the interconnection of loads while the system is being built out, moves the revenue stream 
+forward years, and thereby assures smaller existing consumers are not paying the burden of 
+system build out. As noted, Fast-Responding Loads can pay for the implementation of the 
+systems required on their own site and for enabling data access by the utility, as a discretionary 
+service under the existing FERC tariff. Unlike transmission protection schemes, the more Fast-
+Responding Loads (and inverter-based resources) that are interconnected and managed by such 
+advanced transmission operating systems, the more reliable the system will become. 
+
+--- PAGE 7 ---
+ 
+ 
+7
+V. 
+RECOMMENDATION FOR ADDITIONAL DIRECTIVE TO NERC  
+To further address barriers to large load integration and the proliferations of advanced 
+contingency management solutions, we urge the Commission to direct NERC to clarify its 
+standards and definitions. First, NERC should interpret that the implementation by large loads of 
+advanced contingency response capability, i.e., those using intelligent algorithms and real-time 
+computing to self-operate without necessitating breaker action, are not considered Remedial 
+Action Schemes (RAS). The software that provides this type of contingency response for 
+qualifying Fast-Responding Loads should simply be viewed as a means of advanced load 
+responsiveness. It does not violate existing protection schemes and is not centrally controlled by 
+the utility. This enabling control technology differs fundamentally from utility implemented, 
+traditional, pre-programmed RAS and should not be constrained by PRC-012-2 compliance 
+requirements as currently written. This interpretation would remove a major obstacle to 
+deploying innovative solutions that enhance transmission capability and system resilience.  
+If NERC does not expeditiously adopt this interpretation, then at the very least, NERC should 
+take measures to allow large load owners to propose, own, and manage RAS directly. Current 
+rules omit large load owners from eligibility as RAS-Entities, forcing reliance on transmission 
+owners to submit application. Allowing qualified large loads to directly manage and implement 
+RAS actions such as dynamic load reduction (in cooperation with their utility), would improve 
+reliability and accelerate infrastructure development without compromising bulk electric system 
+security.  
+VI. 
+CONCLUSION 
+
+--- PAGE 8 ---
+ 
+ 
+8
+Splight commends the Commission for its forward-looking approach in this Notice and urges 
+it to explicitly recognize the role of advanced contingency response technologies in enabling the 
+reliable and efficient interconnection of Fast-Responding Loads. By doing so, the Commission 
+can help unlock significant transmission capacity, reduce interconnection backlogs, relieve 
+consumer cross-subsidies, and support the nation’s growing demand for electricity in a secure 
+and sustainable manner. 
+ 
+Respectfully submitted, 
+ 
+/s/ Helen Kemp 
+Helen Kemp 
+Director, Regulatory Affairs 
+Splight Inc. 
+201 W 5th Street, Ste. 1600 
+Austin, TX 78701 
+Email: helen.kemp@splight.com 
+Dated: November 21, 2025 

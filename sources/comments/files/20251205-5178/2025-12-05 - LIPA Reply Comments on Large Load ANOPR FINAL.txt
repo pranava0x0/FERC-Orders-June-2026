@@ -1,0 +1,215 @@
+--- PAGE 1 ---
+ 
+1 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+) 
+Interconnection of Large Loads to the 
+) 
+ 
+Docket No. RM26-4-000 
+Interstate Transmission System 
+ 
+) 
+) 
+ 
+REPLY COMMENTS OF THE LONG ISLAND POWER AUTHORITY 
+Pursuant to the Federal Energy Regulatory Commission’s (“Commission”) Notice Inviting 
+Comments on the Department of Energy’s proposed advance notice of proposed rulemaking 
+(“Proposed ANOPR”)1 issued on October 27, 20252 and the Order on Notice on Requests for 
+Extension of Time issued on November 7, 2025,3 in the above captioned proceeding, the Long 
+Island Power Authority (“LIPA”) hereby provides reply comments on the Proposed ANOPR. 
+I. 
+BACKGROUND 
+The comments below are technical in nature and reflective of LIPA’s experience operating 
+the Long Island Transmission System. LIPA’s current transmission system is comprised primarily 
+of a 138 kV backbone connecting to 69 kV and lower voltage lines. This system is located in a 
+high population density area and has limited transmission level interconnections to neighboring 
+zones within New York State and external control areas. For this reason, LIPA carefully plans and 
+manages its system to avoid abrupt loss of load scenarios. With potential decommitment and 
+retirement of older, on-island generation plants, LIPA is further emphasizing planning to minimize 
+the risk of system disturbances and adverse interactions between system components, including 
+inverter-based resources and HVDC transmission systems. . Moreover, it is imperative that LIPA, 
+ 
+1 Ensuring the Timely and Orderly Interconnection of Large Loads, Advance Notice of Proposed Rulemaking, 
+Docket No. RM26-4-000 (Oct. 27, 2025). 
+2 Notice Inviting Comments, Docket No. RM26-4-000 (Oct. 27, 2025). 
+3 Notice Granting Extension of Time, Docket No. RM26-4-000 (Nov. 7, 2025). 
+
+--- PAGE 2 ---
+ 
+2 
+as the transmission owner and operator on Long Island, has the flexibility to study technical issues 
+posed by large loads and to set technical interconnection requirements which may not be uniform 
+across the system, or even uniform across the larger New York State bulk transmission system, of 
+which the LIPA system is a part. Simply, there is a critical need for flexibility and adaptation of 
+large load interconnection procedures and standards to ensure the safe and reliable operation of 
+constrained systems, such as the Long Island grid. 
+II. 
+REPLY COMMENTS 
+LIPA is hereby replying to matters addressed in initial Proposed ANOPR comments made 
+by stakeholders in this docketed proceeding.  LIPA requests that the Commission take into account 
+and incorporate the following recommendations in any future rulemaking related to the treatment 
+of large loads. 
+A. 
+Large Load Interconnection Studies and Standards Must Take into Account 
+Oscillation Risk. 
+An area of technical concern that received insufficient attention in the initial comments is 
+the risk posed by the oscillatory behavior of large loads. Certain types of large loads, including 
+data centers, are known to have repeated and large cyclic variations of load demand with periods 
+ranging from a few seconds to a small fraction of a second. For example, artificial intelligence data 
+centers in the training mode of operation are known to exhibit large cyclic load variations. This 
+cyclic stimulus, if it coincides with a “natural frequency” of a grid, can initiate oscillations and 
+cause them to grow to potentially damaging magnitudes. 
+One consequence of oscillatory behavior of large loads is the torsional oscillations of the 
+shaft systems of large turbine-generators. These oscillations typically range in frequency from 10 
+– 30 Hz (oscillations per second), which are atypical for a power system. Continued torsional 
+oscillations reduce the mechanical life of the affected generator and, if large enough, can cause 
+
+--- PAGE 3 ---
+ 
+3 
+immediate fracture of the shaft, placing critical generation resources out of service for years. 
+Another consequence of oscillatory behavior of large load is generator rotor angle swings across 
+a portion of the bulk transmission system. These oscillations tend to have periods of a few seconds. 
+Continued stimulation of such oscillations, injected at an adverse location, can potentially cause 
+system oscillations to build to the point where the transmission system may separate, potentially 
+leading to wide-scale power blackout. 
+Proposed Action: We encourage the Commission to incorporate into a proposed rule the 
+following provisions: 
+(1) Require the large load interconnection study process to screen for, and assess, the 
+potential for adverse oscillatory behaviors that may require physical (i.e., 
+equipment upgrades) or operational measures to avoid, minimize and mitigate 
+potentially adverse impacts upon the grid; and 
+(2) Allow interconnecting transmission owners to adopt general and locationally 
+specific protection measures and equipment standards necessary to limit adverse 
+oscillatory behavior from large loads and co-located loads.   
+B. 
+Ride Through Requirements Are Critical for Grid Reliability and Are Most 
+Effective Where Transmission Owners and Operators Have the Flexibility to 
+Establish Regionally and Locally Appropriate Standards. 
+A critical challenge for interconnection of large loads to the bulk power system is how to 
+manage the response of such loads to a system disturbance. Generation-load balances can be 
+disrupted by the tripping of either generation resources or large loads in response to a system 
+disturbance. These events can result in angular instability, over-voltages, and loss of frequency 
+stability. Moreover, such events can snowball, with the load response to a disturbance substantially 
+aggravating the severity of the initial disturbance, particularly if multiple large load facilities trip 
+simultaneously in response to an initiating grid event such as a fault or system separation. 
+
+--- PAGE 4 ---
+ 
+4 
+In recent action on North American Electric Reliability Corporation (“NERC”) reliability 
+standards, the Commission recognized the risks associated with system disturbances and changing 
+technologies and has requested further NERC action on frequency and voltage protection standards 
+and ride-through capabilities for inverter based resources.4 Recognizing the technological 
+challenges unique to connecting large loads to the transmission system, several initial comments 
+on the Proposed ANOPR included requests for the Commission to adopt threshold applicability 
+requirements based upon specific operating requirements for all loads including, inter alia, ride-
+through capability (i.e., how well the load can remain connected and stable during grid 
+disturbances such as voltage dips, frequency excursions, or short interruptions).5 
+LIPA agrees with the critical need for voltage and frequency protections as well as ride-
+through standards. However, a one-size-fits-all standard for such measures is short-sighted and 
+increases risk to the grid. Transmission owners and operators must have the flexibility to adapt and 
+adopt prevention and mitigation measures within their interconnection procedures and standards, 
+reflective of their own system’s topology. In order to avoid potential large load tripping behavior 
+on their system, transmission system operators will need to devise comprehensive disturbance ride-
+through requirements which balance the security needs of the grid with the practical needs of the 
+load facility. Accordingly, frequency and protection measures as well as ride-through standards for 
+large loads cannot be a static, universal standard or study metric. Rather, the transmission owner 
+and operators must have the ability to adapt these standards in a manner that provides an optimal 
+balance of the objectives across all load facilities within its interconnected grid. Requirements 
+ 
+4 See, e.g., Reliability Standards for Frequency and Voltage Protection Settings and Ride-Through for Inverter-
+Based Resources, 192 FERC ¶ 61,076 (2025). 
+5 See, e.g., Comments of American Transmission Company at 9, Docket No. RM26-4-000 (Nov. 21, 2025); 
+Comments of Southwest Power Pool Inc. at 18, Docket No. RM26-4-000 (Nov. 21, 2025). 
+
+--- PAGE 5 ---
+ 
+5 
+appropriate in one set of circumstances can be too permissive in other circumstances, which 
+compromises grid security.  Conversely, requirements that are too restrictive in other cases 
+potentially make large loads economically infeasible. The best balance between these objectives 
+tends to be specific to a particular location in the transmission system based on specific load size 
+and other characteristics.  Accordingly, the Commission should ensure that any forthcoming rule 
+provides for regional flexibility on ride through standards in order to meet the needs of a particular 
+system. 
+Proposed Action: We encourage the Commission to incorporate into a proposed rule the 
+following measures: 
+(1) If a large load facility is susceptible to rapid disconnection or load change in 
+response to a system disturbance, then the large load interconnection study process 
+should assess the potential system impact resulting from such abrupt changes; and 
+(2) As part of the planning, design and construction of interconnection facilities for 
+large loads, transmission owners should have the right to require load to implement 
+and maintain disturbance ride through capability that is necessary to ensure system 
+stability and security. 
+C. 
+Increasing the Awareness to Closed Loop Control Interactions 
+Emerging large loads, such as data centers, are likely to utilize controllable power-
+electronic devices. The typical control objective, for a receiving load, is to maintain a constant real 
+power load, independent of grid voltage and frequency variations. However, a constant power load 
+inherently provides a negative resistance characteristic. This means that the dampening of 
+oscillations in the bulk system, occurring in the frequency range where the control is responsive, 
+is reduced. If the negative damping characteristic provided by the large load exceeds the natural 
+
+--- PAGE 6 ---
+ 
+6 
+positive damping of the grid, oscillations can self-initiate and grow to a disruptive or destructive 
+magnitude. In locations where the transmission system is weak and there are other power-
+electronic systems such as inverter-based resources (“IBR”), there is potential for the various 
+control systems to interact with each other in an adverse manner across a range of oscillatory 
+frequencies. A modern large load facility connected in the vicinity of IBR, HVDC, FACTS, and 
+other fast-controlled power electronic systems adds further complications and opportunities for 
+adverse interactions. 
+While not fully researched and documented, there is substantial reason to expect that 
+interconnection of large-load facilities dominated by power electronic loads requires specific 
+attention to potential control interactions with other systems on the grid. The relevance of this issue 
+and the necessary interconnection requirements and restrictions are inherently location-specific 
+based on the strength of the grid and the proximity to potentially interacting systems. System 
+interactions with load devices can also occur even for hybrid facilities having no net power 
+exchange with the bulk transmission system. These aspects should be considered as part of any 
+large load impact analysis.  Further, regions should be afforded the flexibility necessary to protect 
+their own systems. 
+Proposed Action: We encourage the Commission to incorporate into a proposed rule the 
+following measures: 
+(1) The large load interconnection study process should assess the potential system 
+impacts resulting from closed loop instability in the system and identify avoidance, 
+minimization and mitigation measures that would reduce the risks of significant 
+adverse impacts to the grid. 
+
+--- PAGE 7 ---
+ 
+7 
+(2) Transmission owners should have the flexibility to identify locationally specific 
+load facility oscillatory dampening characteristics that are necessary for system 
+security and included in the development of the large load’s interconnection 
+facilities. 
+III. 
+CONCLUSION 
+LIPA appreciates the opportunity to provide reply comments on the questions raised in the 
+Proposed ANOPR and urges the Commission to ensure that transmission owners and operators 
+retain the flexibility necessary to safely operate their systems, while also ensuring that the United 
+States is able to meet the increasing demand for electricity growth. 
+Respectfully submitted, 
+/s/ Lisa Zafonte 
+ 
+    
+Lisa Zafonte 
+Assistant General Counsel 
+Long Island Power Authority 
+333 Earl Ovington Boulevard 
+Uniondale, New York 11553 
+516-719-9857  
+lzafonte@lipower.org 
+ 
+Dated: December 5, 2025 
