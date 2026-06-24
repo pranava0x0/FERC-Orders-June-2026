@@ -78,6 +78,7 @@ test("all referenced source ids resolve", () => {
   check(D.media.consensus, "consensus");
   check(D.media.friction, "friction");
   check(D.voices, "voices");
+  check([D.spine], "spine");
   D.dockets.forEach((d) => {
     assert.ok(ids.has(d.url), `docket ${d.item} url-source ${d.url}`);
     assert.equal(D.SOURCES[d.url].tier, "order", `docket ${d.item} source is an order PDF`);
@@ -154,6 +155,12 @@ test("commissioner statements: five, with per-order page cites that carry the qu
       assert.ok(loose(pages.get(pg) || "").includes(q), `${d.item} ${key} p.${pg} carries the quote "${byKey[key].quote}"`);
     }
   }
+});
+
+test("common spine: identical-across-all-six block is populated and sourced", () => {
+  assert.ok(D.spine && Array.isArray(D.spine.items) && D.spine.items.length >= 6, "spine has ≥6 shared elements");
+  D.spine.items.forEach((s, i) => assert.ok(typeof s === "string" && s.length >= 30, `spine item ${i} substantive`));
+  assert.ok(Array.isArray(D.spine.src) && D.spine.src.length >= 1 && D.spine.src.every((id) => D.SOURCES[id]), "spine sources resolve");
 });
 
 test("distinct findings: every page cite lands on a page carrying the finding's anchor text", () => {

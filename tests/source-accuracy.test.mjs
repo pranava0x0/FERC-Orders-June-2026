@@ -336,8 +336,11 @@ test("displayed region-specific order claims are supported by extracted PDF text
       ...extract.directives.map((directive) => `${directive.para} ${directive.topic} ${directive.quote}`),
       ...extract.deadlines.map((deadline) => `${deadline.para} ${deadline.action} ${deadline.days}`),
     ];
+    const pages = loadOrderPages(docket.item);
     for (const finding of docket.reg) {
-      assertAnySourceSupports(`${docket.item} regional finding`, finding.t, extractedOrderClaims);
+      // A finding is supported by the curated extract OR by the very page it cites in the full order text.
+      const sources = finding.pg != null ? [...extractedOrderClaims, pages.get(finding.pg) ?? ""] : extractedOrderClaims;
+      assertAnySourceSupports(`${docket.item} regional finding`, finding.t, sources);
     }
   }
 });
