@@ -371,6 +371,17 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-jump-wrap { margin-top: 6px; }
 .cm-jump { font-weight: 700; font-size: 13.5px; text-decoration: none; color: var(--accent); }
 .cm-jump:hover { color: var(--accent-ink); text-decoration: underline; }
+/* reform-principle + order-region aggregate (two bar groups) and the per-row tags */
+.cm-prreg { display: grid; gap: 16px 28px; margin-bottom: 4px; }
+@media (min-width: 740px) { .cm-prreg { grid-template-columns: 1fr 1fr; } }
+.cm-sub { font-family: var(--font-serif); font-size: 14.5px; color: var(--masthead); margin-bottom: 9px; }
+.cm-themes.one { grid-template-columns: 1fr; gap: 9px; }
+.cm-bar.prin > span { background: var(--accent-ink); }
+.cm-row-tags { display: flex; align-items: stretch; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.cm-tag { font-size: 9.5px; font-weight: 700; border-radius: 3px; padding: 1px 6px; letter-spacing: 0.02em; white-space: nowrap; }
+.cm-tag.pr { color: var(--accent-ink); background: #e9f0f8; }
+.cm-tag.rg { color: #5a4a1a; background: #f6efdb; }
+.cm-tagsep { width: 1px; min-height: 13px; background: var(--rule-strong); margin: 0 3px; }
 
 /* generic two-col blocks (jurisdiction / regional) */
 .blocks { display: grid; gap: 12px; }

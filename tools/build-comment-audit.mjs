@@ -11,12 +11,15 @@
  * Run: node tools/build-comment-audit.mjs
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
-const hasBody = (acc) => { const d = join(here, "..", "sources", "comments", "files", acc); return existsSync(d) && readdirSync(d).some((f) => /\.(pdf|docx?|txt)$/i.test(f)); };
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const C = join(here, "..", "sources", "comments");
+const FILES = join(C, "files");
+// a comment body dir is named "<accession>__<org-slug>"; resolve it (tolerating an older bare name)
+const dirForAcc = (acc) => { if (!existsSync(FILES)) return null; const n = readdirSync(FILES).find((x) => x === acc || x.startsWith(acc + "__")); return n ? join(FILES, n) : null; };
+const hasBody = (acc) => { const d = dirForAcc(acc); return !!d && readdirSync(d).some((f) => /\.(pdf|docx?|txt)$/i.test(f)); };
 const read = (p, d) => (existsSync(p) ? JSON.parse(readFileSync(p, "utf8")) : d);
 
 const comments = read(join(C, "rm26-4-comments.json"), { comments: [] }).comments;

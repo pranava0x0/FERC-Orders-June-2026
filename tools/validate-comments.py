@@ -14,6 +14,14 @@ FILES = C / "files"
 comments = json.loads((C / "rm26-4-comments.json").read_text())["comments"]
 inv = json.loads((C / "rm26-4-files.json").read_text())["files"]
 
+def dir_for(acc):
+    """Body dir for an accession — named "<accession>__<org-slug>" (older runs used a bare accession)."""
+    if FILES.exists():
+        for d in FILES.iterdir():
+            if d.is_dir() and (d.name == acc or d.name.startswith(acc + "__")):
+                return d
+    return FILES / acc
+
 TEXT_MIN = 200          # chars of real text below which we suspect a scanned/empty extraction
 KNOWN_MISSING = {"20251121-5225"}  # ETI: renders but won't download (issues.md)
 
@@ -30,7 +38,7 @@ for c in comments:
     acc = c["acc"]
     if not inv.get(acc):
         fileless.append(acc); continue
-    d = FILES / acc
+    d = dir_for(acc)
     pdfs = list(d.glob("*.pdf")) if d.exists() else []
     docx = (list(d.glob("*.docx")) + list(d.glob("*.doc"))) if d.exists() else []
     txts = list(d.glob("*.txt")) if d.exists() else []

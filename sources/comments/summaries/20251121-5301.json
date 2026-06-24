@@ -1,1 +1,36 @@
-{"accession":"20251121-5301","filer":"Edison Electric Institute","bucket":"trade_assoc","filed":"2025-11-21","elibrary":"https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5301","files":[{"name":"RM26-4-000 - EEI Comments on DOE Large Load ANOPR (FINAL 11.21.25).pdf","type":"PDF","path":"sources/comments/files/20251121-5301/RM26-4-000 - EEI Comments on DOE Large Load ANOPR (FINAL 11.21.25).pdf","text":"sources/comments/files/20251121-5301/RM26-4-000 - EEI Comments on DOE Large Load ANOPR (FINAL 11.21.25).txt"}],"read_from_pdf":true,"summary":"The investor-owned utilities' association supports standardizing large-load interconnection while keeping reliability and affordability central and recognizing utilities' front-line role in integrating large loads.","key_points":["Member utilities serve ~250 million Americans and are central to integrating large loads.","Standardize interconnection procedures and agreements.","Preserve reliability and affordability for everyday customers."],"stances":{"study":"support","cost":"support","colo":"support","flex":"support","proximate":"support"},"quotes":[{"text":"EEI member companies serve nearly 250 million Americans and operate in all fifty states and the District of Columbia. EEI members own and operate our nation's most critical infrastructure.","page":1}],"captured_at":"2026-06-24"}
+{
+  "accession": "20251121-5301",
+  "filer": "Edison Electric Institute",
+  "bucket": "trade_assoc",
+  "filed": "2025-11-21",
+  "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251121-5301",
+  "files": [
+    {
+      "name": "RM26-4-000 - EEI Comments on DOE Large Load ANOPR (FINAL 11.21.25).pdf",
+      "type": "PDF",
+      "path": "sources/comments/files/20251121-5301__Edison-Electric-Institute/RM26-4-000 - EEI Comments on DOE Large Load ANOPR (FINAL 11.21.25).pdf",
+      "text": "sources/comments/files/20251121-5301__Edison-Electric-Institute/RM26-4-000 - EEI Comments on DOE Large Load ANOPR (FINAL 11.21.25).txt"
+    }
+  ],
+  "read_from_pdf": true,
+  "summary": "The investor-owned utilities' association supports standardizing large-load interconnection while keeping reliability and affordability central and recognizing utilities' front-line role in integrating large loads.",
+  "key_points": [
+    "Member utilities serve ~250 million Americans and are central to integrating large loads.",
+    "Standardize interconnection procedures and agreements.",
+    "Preserve reliability and affordability for everyday customers."
+  ],
+  "stances": {
+    "study": "support",
+    "cost": "support",
+    "colo": "support",
+    "flex": "support",
+    "proximate": "support"
+  },
+  "quotes": [
+    {
+      "text": "EEI member companies serve nearly 250 million Americans and operate in all fifty states and the District of Columbia. EEI members own and operate our nation's most critical infrastructure.",
+      "page": 1
+    }
+  ],
+  "captured_at": "2026-06-24"
+}

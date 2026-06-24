@@ -383,4 +383,37 @@ test("comments-data.js (Comments tab) is consistent with the scraped manifest", 
     assert.ok(t.count <= CM.analyzed, `theme ${t.key} count never exceeds the analyzed corpus`);
   }
   assert.ok(CM.downloaded >= 270, `downloaded-body floor (${CM.downloaded} >= 270)`);
+
+  // per-comment reform-principle + order-region tags
+  assert.equal(CM.principles.length, 5, "five reform principles");
+  assert.equal(CM.regions.length, 6, "six order regions");
+  const PKEYS = new Set(CM.principles.map((p) => p.key)), RKEYS = new Set(CM.regions.map((r) => r.key));
+  for (const agg of [...CM.principles, ...CM.regions]) {
+    assert.ok(agg.count <= CM.analyzed && agg.pct >= 0 && agg.pct <= 100, `tag ${agg.key} count/pct in range`);
+  }
+  for (const c of CM.list) {
+    assert.ok(Array.isArray(c.pr) && Array.isArray(c.rg), `row ${c.acc} has principle/region arrays`);
+    for (const k of c.pr) assert.ok(PKEYS.has(k), `row ${c.acc} principle ${k} is a known key`);
+    for (const k of c.rg) assert.ok(RKEYS.has(k), `row ${c.acc} region ${k} is a known key`);
+  }
+  // every aggregate count equals the number of rows carrying that tag (no double-count drift)
+  for (const p of CM.principles) assert.equal(p.count, CM.list.filter((c) => c.pr.includes(p.key)).length, `principle ${p.key} count matches rows`);
+  for (const r of CM.regions) assert.equal(r.count, CM.list.filter((c) => c.rg.includes(r.key)).length, `region ${r.key} count matches rows`);
+});
+
+test("comment body directories are named with the submitter (traceable to filer)", () => {
+  // The path names who filed: files/<accession>__<org-slug>/. Guards the traceability convention.
+  const FILES = join(here, "..", "sources", "comments", "files");
+  const dirs = readdirSync(FILES).filter((d) => /^20\d{6}-\d{4}/.test(d));
+  const orgByAcc = Object.fromEntries(
+    JSON.parse(readFileSync(join(here, "..", "sources", "comments", "rm26-4-comments.json"), "utf8")).comments.map((c) => [c.acc, c.org]));
+  const slug = (s) => (s || "").replace(/&/g, " and ").replace(/[^A-Za-z0-9 -]/g, "").trim()
+    .replace(/\s+/g, "-").replace(/-+/g, "-").replace(/^-+|-+$/g, "").slice(0, 50).replace(/-+$/, "") || "unknown";
+  assert.ok(dirs.length >= 270, `comment body dirs present (${dirs.length})`);
+  for (const d of dirs) {
+    const m = d.match(/^(20\d{6}-\d{4})__(.+)$/);
+    assert.ok(m, `dir "${d}" follows <accession>__<org-slug>`);
+    assert.ok(orgByAcc[m[1]] !== undefined, `dir ${d} maps to a known accession`);
+    assert.equal(m[2], slug(orgByAcc[m[1]]), `dir ${d} suffix is the submitter slug`);
+  }
 });
