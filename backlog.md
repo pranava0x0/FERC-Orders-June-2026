@@ -27,16 +27,14 @@
   a clickable PDF + ferc.gov page link, anchored (like the directives) to the page where its text
   appears; findings that cite only another order stay text-only. 24 tests: every commissioner and
   finding cite is asserted to land on a page that actually carries its quote/anchor.
-- **done (2026-06-24)** — Made the **general-vs-specific** split explicit. Added a "What every order
-  shares — the common §206 spine" block at the top of the Dockets tab (8 elements identical across all
-  six: same instrument/timing, skeleton, five categories, clock, election, guardrails, jurisdictional
-  line, unanimous concurrences). Mined each E-7→E-11 order's **Section II (Existing Processes)** for two
-  more order-specific findings apiece — e.g., PJM's first-ready/first-served New Services Queue and its
+- **done (2026-06-24)** — Sharpened the **general-vs-specific** split. Mined each E-7→E-11 order's
+  **Section II (Existing Processes)** for two more order-specific findings apiece — e.g., PJM's
+  first-ready/first-served New Services Queue and its
   100%-of-minimum-upgrades rule; MISO studying load at max demand regardless of flexibility and rolling
   upgrades into base zonal rates; SPP's Attachment Z1/AQ/AX baseline and Highway/Byway voltage cost
   split; CAISO's Scheduling Coordinators and the postage-stamp Regional Access Charge; ISO-NE's
   Cluster Study with Schedule 22 (>20 MW) / Schedule 23 and PTF ≥ 69 kV. Each new finding is page-cited
-  and verified (the region-support test now also accepts the finding's own cited page). 25 tests.
+  and verified (the region-support test now also accepts the finding's own cited page). 24 tests.
   (E-12/NYISO left as-is per the request scope.)
 - **high** — Summarize the RM26-4 public comments (staff reviewed 3,500+ pp). Scrape the eLibrary
   docket sheet for RM26-4-000 (browser bridge past Cloudflare), download each comment PDF, extract
