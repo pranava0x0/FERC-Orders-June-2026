@@ -19,6 +19,14 @@
   presses this system on." Refreshed Discourse with post-issuance analysis/critiques (Dajani/Cooley,
   Chatterjee, the live Maryland cost-allocation complaint). 23 tests; new guards for the per-system
   fields, roster counts, and commissioner-quote-verbatim.
+- **done (2026-06-24)** — Made each docket a **collapsible accordion** (first open) to cut scrolling,
+  and gave each its own **"What the commissioners said in this order"** subsection: all five
+  concurrences with a verbatim pull-quote and a page cite to *that order's* pages, linked to both the
+  committed PDF and ferc.gov (Swett p.87 in PJM, p.68 in SPP, …). Then extended the same
+  **page-cite treatment to the distinct-findings** — each finding now carries `{ p, pg, a }` and renders
+  a clickable PDF + ferc.gov page link, anchored (like the directives) to the page where its text
+  appears; findings that cite only another order stay text-only. 24 tests: every commissioner and
+  finding cite is asserted to land on a page that actually carries its quote/anchor.
 - **high** — Summarize the RM26-4 public comments (staff reviewed 3,500+ pp). Scrape the eLibrary
   docket sheet for RM26-4-000 (browser bridge past Cloudflare), download each comment PDF, extract
   with fitz, then classify and summarize by stakeholder and position per reform category. Surface as

@@ -337,7 +337,7 @@ test("displayed region-specific order claims are supported by extracted PDF text
       ...extract.deadlines.map((deadline) => `${deadline.para} ${deadline.action} ${deadline.days}`),
     ];
     for (const finding of docket.reg) {
-      assertAnySourceSupports(`${docket.item} regional finding`, finding, extractedOrderClaims);
+      assertAnySourceSupports(`${docket.item} regional finding`, finding.t, extractedOrderClaims);
     }
   }
 });
