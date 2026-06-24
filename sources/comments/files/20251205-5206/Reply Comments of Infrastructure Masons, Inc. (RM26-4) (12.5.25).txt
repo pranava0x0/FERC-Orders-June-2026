@@ -1,0 +1,737 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA  
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+Interconnection of Large Loads to the 
+Interstate Transmission System
+) 
+)
+) 
+Docket No. RM26-4-000
+REPLY COMMENTS OF  
+INFRASTRUCTURE MASONS, INC. 
+Pursuant to the Federal Energy Regulatory Commission (“FERC” or “Commission”)’s 
+October 27, 2025, Notice Inviting Comments in the captioned proceeding,1 Infrastructure 
+Masons, Inc. (“iMasons”) hereby respectfully submits these reply comments (“Reply 
+Comments”) for the Commission’s consideration, in order to address several initial comments 
+submitted in the captioned proceeding related to the Secretary of Energy’s proposed Advance 
+Notice of Proposed Rulemaking.2  iMasons submits these Reply Comments to provide additional 
+input on several key aspects of the ANOPR that will be crucial to safeguarding the country’s 
+economic, national security,3 and scientific interests4 as it looks to “win the Artificial Intelligence 
+(‘AI’) race.”5  The Reply Comments aim to ensure that the infrastructure necessary to meet rapid 
+1 See Interconnection of Large Loads to the Interstate Transmission System, Notice Inviting Comments, Docket No. 
+RM26-4-000 (Oct. 27, 2025). 
+2 See Interconnection of Large Loads to the Interstate Transmission System, Secretary of Energy’s Proposed 
+Advance Notice of Proposed Rulemaking, Docket No. RM26-4-000 (Oct. 23, 2025) (“ANOPR”). 
+3 See, e.g., Executive Order 14179, Removing Barriers to American Leadership in Artificial Intelligence, 90 Fed. 
+Reg. 8741, Sec. 2 (Jan. 20, 2025) (“It is the policy of the United States to sustain and enhance America's global AI 
+dominance in order to promote human flourishing, economic competitiveness, and national security.”); Winning the 
+Race – America’s AI Action Plan, Office of the President of the United States, available at: 
+https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf, at 1 (July 2025) (“Winning 
+the AI race will usher in a new golden age of human flourishing, economic competitiveness, and national security 
+for the American people.”). 
+4 See, e.g., Executive Order 14363, Launching the Genesis Mission, 90 Fed. Reg. 55035. Sec. 2 (Nov. 28, 2025), 
+available at: https://www.federalregister.gov/d/2025-21665/page-55035 (“There is hereby established the Genesis 
+Mission (Mission), a national effort to accelerate the application of AI for transformative scientific discovery 
+focused on pressing national challenges.”).
+5 See Winning the Race – America’s AI Action Plan, Office of the President of the United States, available at: 
+https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf (July 2025).
+
+--- PAGE 2 ---
+2 
+demand growth is built efficiently and cost effectively so that ratepayers are not unduly 
+burdened.       
+I.
+INTRODUCTION 
+A.
+Background on iMasons 
+iMasons is one of the largest professional associations in the digital-infrastructure 
+industry.  Founded in 2016, the organization has scaled globally to more than 6,000 participants, 
+including 4,000 active members, representing projects and infrastructure totaling approximately 
+$1.5 trillion across 130 countries.  iMasons’ membership spans the full digital-infrastructure 
+value chain, including:
+
+Data-center developers and operators;
+
+Engineering, design, and construction firms;
+
+Energy and utility partners;
+
+Fiber and network providers; and
+
+Hyperscale and cloud-platform organizations
+Notably, iMasons’ members employ millions of Americans in the data center industry – 
+an industry that supported 4.7 million jobs in the US in 2023,6 and which continues to grow.  The 
+breadth and depth of iMasons’ membership provides it with a comprehensive industry 
+perspective on the power-system impacts associated with rapid, AI-driven load growth.  Further, 
+in November 2025, iMasons spearheaded the creation of an industry coalition to provide a 
+unified and holistic perspective on the energy-related needs of the digital infrastructure and data 
+center industry, with a particular focus on supporting continued deployment to meet growing 
+energy demands in the United States.  These Reply Comments are one of the initial results of 
+those efforts.   
+6 See Frequently Asked Questions About the Data Center Industry, Data Center Coalition, available at:  
+https://www.datacentercoalition.org/cpages/faq#:~:text=The%20exact%20number%20of%20jobs,in%20the%20U.S.
+%20in%202023 (last visited Dec. 5, 2025).   
+
+--- PAGE 3 ---
+3 
+Further, given that the data center industry is global, and because AI has the potential to 
+transform the global economy in a way unseen since the Industrial Revolution,  iMasons believes 
+that it is imperative for the United States to establish a regulatory framework which allows the 
+data center industry to thrive domestically so that the industry’s economic, national security and 
+scientific benefits are not driven abroad.   
+B.
+The Role of Independent Data Center Developers 
+iMasons’ members include companies responsible for siting, designing, financing, 
+constructing, and operating data centers – the physical infrastructure that enables AI model 
+training and inference, cloud computing, financial market operations, public safety and 
+emergency services systems, and national security and defense-critical applications.  
+Importantly, while the needs of hyperscale end-users often receive the most public attention, it is 
+important to note that the majority of data centers are not directly developed and operated by 
+hyperscale end-users themselves.  As iMasons’ 2025 State of the Digital Infrastructure Industry 
+Report7 notes, “nearly two-thirds of colocation providers host hyperscale tenants,”8 – meaning 
+that hyperscale end-users rely heavily upon independent data center developers and operators for 
+the physical infrastructure that is necessary to meet their eventual needs.
+Independent data center developers, rather than hyperscale end-users, are the entities that 
+are primarily engaged in navigating large load interconnection queues, and undertake tasks such 
+as submitting interconnection requests, procuring long-lead equipment, navigating multi-year 
+transmission upgrade timelines, and bearing up-front operational, execution and financial risks 
+associated with interconnecting large loads to the transmission system.  Independent data center 
+7 State of the Digital Infrastructure Industry, Infrastructure Masons (Annual Report 2025), available at: State-of-the-
+Infrastructure-Industry-2025_compressed.pdf.   
+8 See id. at 17.
+
+--- PAGE 4 ---
+4 
+developers benefit the data center industry by creating “market-ready” projects that can be made 
+available to a broad spectrum of creditworthy end users.  Accordingly, the majority of parties 
+assuming financial, operational and interconnection risks for developing large loads often differ 
+from the ultimate beneficiaries of data center projects that are eventually constructed.  iMasons 
+respectfully submits that this distinction is critical for the Commission to consider as it 
+contemplates issuing a final rule related to interconnecting large loads, and associated issues 
+raised in the captioned proceeding.   
+II.
+REPLY COMMENTS 
+A.
+General Comments on the ANOPR 
+iMasons generally supports the ANOPR and encourages the Commission to promulgate a 
+final rule that will enable large load customers to interconnect in a more efficient manner while 
+safeguarding reliability and ensuring that all customers’ rates are just and reasonable.  The 
+United States’ current large load interconnection landscape consists of a disjointed, state-by-
+state, and in some instances, utility-by-utility, set of rules and processes that are often opaque and 
+routinely in flux.  Indeed, many states and utilities have had to create rules out of whole cloth to 
+address the sudden, and in many instances unprecedented, increased power demands from large 
+load customers, particularly data centers necessary to support the growth of AI.  While some 
+states and utilities have put forward workable, efficient and fair rules for interconnecting large 
+loads, in much of the country, the status quo for interconnecting large loads entails developers 
+navigating a labyrinth of requirements in order to move projects forward, which in turn, slows 
+project development due to inefficiency and a lack of transparency.   
+Simply put, maintaining the status quo with respect to large load interconnections will 
+prevent the United States from building out data centers at the pace and scale needed to win the 
+
+--- PAGE 5 ---
+5 
+AI race and stay competitive globally, which will undermine the country’s short and long-term 
+economic, national security and scientific interests.9  Moreover, the lack of coordination with 
+regard to large load interconnection processes leads to inaccurate load forecasts, resulting in, 
+among other things, the inefficient buildout of generation and transmission to serve load.10  This 
+stands to ultimately burden ratepayers with unnecessary costs and rates that are unjust and 
+unreasonable.11
+To address the foregoing challenges, in addition to more specific recommendations and 
+responses to the ANOPR described below in Sections II.B.i to II.B.vii, iMasons urges the 
+Commission to promulgate a final rule related to large load interconnections that adheres to the 
+following general principles: 
+
+The final rule should establish minimum standards and guidelines for acceptable 
+practices that states and utilities must follow with respect to the interconnection of large 
+loads,12 while fostering state and federal collaboration and allowing for regional 
+9 See, e.g., E. Howland, New FERC commissioners say connecting data centers is key priority, UtilityDive (Nov. 21, 
+2025), available at: https://www.utilitydive.com/news/ferc-data-centers-swett-lacerte-lng/806145/ (quoting 
+Chairman Laura Swett’s statement that “[i]n addition to our core mission of keeping the lights on for all Americans 
+at reasonable costs, my priority as chairman is to ensure that our country can connect and power data centers as 
+quickly and as durably as possible” and describing Commissioner David LaCerte’s statements as echoing Swett’s 
+comments and adding that the AI data race requires “bold action” to protect the economy and national security and 
+that “[t]he risks of inaction or delayed action are simply too great”). 
+10 See, e.g., Comments of the Electric Power Supply Association, Docket No. RM26-4-000, at 6 (Nov. 21, 2025) 
+(“EPSA agrees that interconnection procedures and agreements for large loads require a level of standardization to 
+establish certainty and transparency – both of which are sorely lacking today in the opaque and unfiled individual 
+Transmission Owner processes that exacerbate confusion and delay regarding new load connections while furthering 
+uncertainty by establishing load forecasts inflated by speculative projects. A clearer, standardized process (at least 
+for load interconnections to transmission facilities as contemplated by the ANOPR) will enable innovative suppliers 
+and customers to develop arrangements that can move forward to operation reliably and cost effectively.”)). 
+11 See, e.g., Xcel Energy Servs. Inc. v. FERC, 815 F.3d 947, 952 (D.C. Cir. 2016) (“It is long-established that the 
+‘primary aim [of the Federal Power Act] is the protection of consumers from excessive rates and charges.’”) (citing 
+Mun. Light Bds. of Reading & Wakefield v. FPC, 450 F.2d 1341, 1348 (D.C. Cir. 1971)). 
+12 See, e.g., Comments of Public Interest Organizations, Docket No. RM26-24-000, at 26 (Nov. 21, 2025) (“We 
+agree that FERC could use the standards set in Order No. 2023 and the NERC July 2025 Large Loads Taskforce 
+Whitepaper as a guide to setting load interconnection standards, but reserve comments on this until we see specific 
+proposals. Regions could go above and beyond these minimal standards, but FERC should establish a floor.”) 
+(citation omitted); Building for the Future Through Electric Regional Transmission Planning and Cost Allocation, 
+
+--- PAGE 6 ---
+6 
+variation.  Further, it is particularly important that the final rule respect existing processes 
+that are underway and that are working to effectively interconnect large loads, and that 
+existing projects being interconnected under such processes not be disrupted.13
+
+The final rule should avoid hindering competition among large load developers, 
+including data centers, and eliminate undue discrimination with respect to their 
+interconnection, so that efficiencies and cost savings are achieved in a manner that will 
+ultimately benefit consumers.14
+
+The final rule should promote greater transparency for large load developers.15
+Large load developers should have more information on load interconnection queues, 
+Order No. 1920, 187 FERC ¶ 61,068, at P 240, order on reh’g and clarification, Order No. 1920-A, 189 FERC ¶ 
+61,126 (2024) (“We acknowledge that certain transmission planning regions already conduct some regional 
+transmission planning on a relatively forward-looking, proactive basis.  We do not intend to undermine progress 
+made in these transmission planning regions, and our goal is to set a floor, not a ceiling.”); Applications for Permits 
+to Site Interstate Electric Transmission Facilities, Order No. 1977, 187 FERC ¶ 61,069,  order addressing 
+arguments raised on rehearing, and setting aside prior order, in part, Order 1977-A, 189 FERC ¶ 61,033, at P 37 
+(2024) (“The Commission’s regulations describe the generally applicable information that permit applications must 
+include.  These are minimum filing requirements with which each application must comply.”) (emphasis added). 
+13 See Comments of the National Association of Regulatory Utility Commissioners, Docket No. RM26-4-000, at 6-7 
+(Nov. 21, 2025); Comments of the National Conference of State Legislatures, Docket No. RM26-4-000, at 2-3 (Nov. 
+21, 2025); Comments of Vantage Data Centers, Docket No. RM26-4-000, at 7 (Nov. 21, 2025).  Further, iMasons 
+takes no position on whether the final rule should consist of establishing a pro forma tariff, a principles-based 
+rulemaking, or a combination thereof. 
+14 See, e.g., Promoting Wholesale Competition Through Open Access Non-discriminatory Transmission Service by 
+Public Utilities, Order No. 888, 61 Fed. Reg. 21540, 21541 (May 10, 1996) (“The legal and policy cornerstone of 
+these rules is to remedy undue discrimination in access to the monopoly owned transmission wires that control 
+whether and to whom electricity can be transported in interstate commerce”); New York v. FERC, 535 U.S. 1, 35 n.7 
+(2002) (The purpose of the open access requirement was “to remedy undue discrimination in access to the monopoly 
+owned transmission wires that control whether and to whom electricity can be transported in interstate commerce.”) 
+(Thomas, J., concurring) (citation omitted); Policy Statement on Mkt. Monitoring Units in Reg’l Transmission 
+Organizations & Indep. Sys. Operators, 111 FERC ¶ 61,267, 62,205 (2005) (“Good market rules are essential to 
+efficient wholesale markets in which competing suppliers have incentives to meet the customers’ needs for reliable 
+service at the least cost.”); Building for the Future Through Electric Regional Transmission Planning and Cost 
+Allocation, Order No. 2023, at P 1510 (2023) (“Order No. 2023”) (acknowledging that an accurate accounting of the 
+technical capabilities of certain resources “ensur[es] just and reasonable rates by avoiding excessive and 
+unnecessary network upgrades that may hinder the timely development of new generating facilities that stifles 
+competition in the wholesale market”). 
+15 See Comments of Electricity Customer Alliance, Docket No. RM26-4-000, at 2 (Nov. 21, 2025) (“Electric 
+Customer Alliance Comments”) (“Improving the transparency of transmission rates, cost inputs, and investment 
+decisions, and closing gaps in the review of transmission rates and investment decisions, are key to addressing rising 
+affordability concerns. So too is greater rigor and transparency in the load forecasts driving investment decisions and 
+wholesale energy and capacity market prices.”); id. at 4, 13, 19. 
+
+--- PAGE 7 ---
+7 
+should know what rules, timelines and standards govern how load interconnection queues 
+are processed, and should know how their proposed projects are studied.16  Further, 
+interconnecting utilities should be required to provide large load developers with: 1) 
+sufficient information regarding anticipated state-jurisdictional and FERC-jurisdictional 
+costs that they will be expected to bear, including a clear understanding of how FERC-
+jurisdictional costs are expected to be reflected in retail rates;17 and 2) drafts of all 
+relevant agreements that they will need to execute to interconnect their projects.  Large 
+load developers should be provided with this information as soon as practicable so that 
+they can make timely and efficient decisions with respect to whether they wish to proceed 
+with a project.  In turn, the information will provide for the withdrawal of speculative 
+projects earlier in the interconnection study process, which will result in more efficient – 
+and less clogged – load interconnection queues.18
+
+The final rule should clearly define the scopes of federal and state authority with 
+respect to the interconnection of large load customers, both for practical clarity and so 
+16 See, e.g., Related to NPRR1234, Interconnection Requirements for Large Loads and Modeling Standards for 
+Loads 25 MW or Greater, Public Utility Commission of Texas (approved May 15, 2025), available at: 
+https://www.ercot.com/mktrules/issues/PGRR115#keydocs (amendments to market rules in the Electric Reliability 
+Counsel of Texas (ERCOT) creating new process for studying the reliability impacts of all Large Loads seeking to 
+interconnect to the ERCOT system), and requiring, as with the Full Interconnection Study required for proposed 
+Generation Resources, a Large Load Interconnection Study for each new Large Load meeting applicability 
+requirements that is proposed to interconnect to the ERCOT System). 
+17 See also Electric Customer Alliance Comments at 4 (“To be sure, however, the exercise of that jurisdiction may 
+have some impacts on retail rate matters subject to the jurisdiction of the states. ECA believes that the 
+Commission must exercise its jurisdiction to addresses current uncertainties holding back solutions 
+to the challenges of serving large load growth and ensuring reliability and affordability, and it can 
+do so in a way that recognizes the need for safeguards to avoid reaching into retail rate regulation. “) 
+18 See, e.g., Order No. 2023 at P 47 (“We agree with commenters that the withdrawal of speculative interconnection 
+requests that trigger reassessments and possible restudies by the transmission provider can delay the timing and 
+increase the cost to interconnect for lower-queued interconnection requests.”). 
+
+--- PAGE 8 ---
+8 
+that the final rule is legally durable and not subject to prolonged litigation risks, allowing 
+for efficient implementation, as well as business and regulatory certainty.19
+B.
+ Responses to Specific Aspects of ANOPR 
+i.
+Deposits and Withdrawal Penalties Should be Properly Tailored to 
+Address Actual Risks Posed by Planned Large Load Facilities to Avoid 
+Deterring Non-Speculative Projects and Unjustly Enriching Transmission 
+Owners 
+iMasons supports the Commission promulgating a final rule requiring standardized study 
+deposits, readiness requirements, and withdrawal penalties (or a combination thereof), in order to 
+deter speculative projects and provide transmission owners with useful data necessary to 
+accurately forecast load.20  However, the final rule must ensure that such requirements do not 
+pose unduly discriminatory barriers to large load developers.  Deposits and penalties should be 
+fashioned in a manner that mitigates risks and costs that large loads actually pose to transmission 
+owners and other customers.  Requirements that are disproportionate to the risk and costs that 
+large loads actually pose to transmission owners and other customers do not help protect 
+consumers, and instead, overcompensate utilities and risk stifling the market for data centers in 
+the United States.  Further, disproportionate security requirements and penalties for large load 
+19 See, e.g., NARUC Comments at 2; Comments of the Data Center Coalition, Docket No RM26-4-000, at 4 (Nov. 
+21, 2025); Comments of New England States Committee on Electricity, Docket No. RM26-4-000, 11-12, 14 (Nov. 
+21, 2025). 
+20 See ANOPR at P 21; see also, e.g., Comments of Pacific Gas and Electric Company, Docket No. RM26-4-000, at 
+5-6 (Nov. 21, 2025) (“PG&E Comments”); Comments of Critical Loop, Docket No. RM26-4-000 (Nov. 14, 2025).  
+
+--- PAGE 9 ---
+9 
+customers stand in stark contrast to the Commission’s longstanding cost causation principles21
+and precedent against excessive penalties.22
+iMasons notes that in July 2025, Energy + Environmental Economics and the Data Center 
+Coalition published a white paper that presented a modern, principles-based framework for credit 
+and collateral policy, which focused on distinguishing between perceived and actual risk, and 
+promoted a balanced, adaptable approach to manage risk effectively without deterring 
+investment.23  iMasons encourages the Commission to issue a final rule which takes this 
+proposed framework into account when establishing standardized security posting requirements, 
+readiness requirements and withdrawal penalties.   
+Further, iMasons notes that The AES Corporation (“AES”) utilities’ large load 
+construction service agreement (“CSA”) framework is an example of a reasonable and workable 
+utility framework for interconnecting large loads that also appropriately protects the utility and 
+ratepayers from actual risks posed by large loads.24  As described by AES in its initial comments 
+in the above-captioned proceeding, the CSA framework is intended to mitigate the potential risk 
+21 See Coalition of MISO Transmission Customers v. Midcontinent Indep. Sys. Operator, Inc., 172 FERC ¶ 61,099, at 
+P 82 (2020) (The Commission’s “cost causation principle requires that ‘all approved rates reflect to some degree the 
+costs actually caused by the customer [that] must pay them.’”) (citing KN Energy, Inc. v. FERC, 968 F.2d 1295, 1300 
+(D.C. Cir. 1992)); Old Dominion Elec. Coop. v. FERC, 898 F.3d 1254, 1255 (D.C. Cir. 2018) (“For decades, the 
+Commission and the courts have understood this requirement to incorporate a ‘cost-causation principle’—the rates 
+charged for electricity should reflect the costs of providing it. . . . We often frame this principle as one that ensures 
+‘burden is matched with benefit,’ so that FERC ‘generally may not single out a party for the full cost of a project, or 
+even most of it, when the benefits of the project are diffuse.’”) (citations omitted). 
+22 See Mirant Kendall, LLC & Mirant Americas Energy Mktg., L.P., 110 FERC ¶ 61,272, at P 17 (2005) (a penalty 
+must be “narrowly designed to balance the need to deter conduct that is harmful to the system with the need to limit 
+excessive and unnecessary costs.”); Midwest Indep. Transmission Sys. Operator, Inc., 125 FERC ¶ 61,060, at P 100 
+(2008) (a penalty must be “tailored to deter deficiencies without being excessive,”); R&W Technical Services Ltd. v. 
+Commodity Futures Trading Com’n, 205 F.3d 165, 177-78 (5th Cir. 2000) (explaining that a “sanction must be 
+rationally related to the offense” and a “penalty may be determined by focusing on the ‘relative gravity of . . . 
+misconduct’” and that “[f]urthermore, ‘[t]he level of sanctions should reflect the particular mitigating or aggravating 
+circumstances presented by the unique facts of the individual conduct at issue.’”). 
+23 Balancing Risk and Growth: Best Practices for Utility Credit and Collateral Requirements for Large Load 
+Customers, Energy + Environmental Economics (July 2025), available at: https://www.ethree.com/data-center-
+credit-collateral-whitepaper/.
+24 See Comments of The AES Corporation, Docket No. RM26-4-000, at 6, 10-11 (Nov. 21, 2025).   
+
+--- PAGE 10 ---
+10 
+“that a large load customer [takes] less service than requested, resulting in the construction of 
+grid upgrades that are no longer used and useful (due to the customer either lowering their 
+demand or abandoning the project).”25  To address this risk, AES’s utilities require large load 
+customers to execute CSAs as conditions for interconnecting, which “require large load 
+customers to be responsible for the costs incurred if the large load abandons their project.”26
+Further, if a CSA is terminated, “the large load customer will reimburse the utility for the 
+development and construction costs it incurred for the transmission and distribution facilities 
+necessary for interconnection (minus any salvage value) up to a cap that includes a 
+contingency.”27  AES’s CSA requirement offers a just and reasonable framework that ensures 
+that large load customers are responsible for costs actually incurred by the transmission owner in 
+the event that a project is abandoned, and which would otherwise be passed onto other 
+ratepayers, while not erecting unduly burdensome barriers to entry that would prevent a non-
+speculative large load project from being developed. 
+On the other hand, iMasons notes that the Transmission Security Agreement (“TSA”) 
+“revenue guarantee” framework that has been proposed by at least two Exelon utilities28 does not 
+follow best practices for interconnecting large loads, is generally prohibitive and goes far beyond 
+protecting the utility and ratepayers from actual risks posed by large loads.  The TSA framework, 
+which was recently proposed to the Commission in a TSA between PECO and Amazon, does not 
+25 See id. at 10 (emphasis added).   
+26 Id. (emphasis added). 
+27 See id. at 10-11 (emphasis added).   
+28 See PECO Energy Co., Transmission Security Agreement between PECO and Amazon, Docket No. ER25-3492-
+000 (filed Sept. 23, 2025) (the “PECO-Amazon TSA”) (accepted by the Commission in PECO Energy Co. 193 
+FERC ¶ 61,148 (2025) (“PECO-Amazon TSA Order”)); Commonwealth Edison Company, Filing proposing changes 
+to new service requests for large demand project applications or customers, Docket No. 25-0677 (Ill. Comm. 
+Comm’n June 23, 2025), available at: https://www.icc.illinois.gov/docket/P2025-
+0677/documents/368012/files/644808.pdf;  Commonwealth Edison Company, Filing proposing revisions to Rider 
+Distributed System Extensions, Docket No. 25-0679 (Ill. Comm. Comm’n June 23, 2025), available at: 
+https://www.icc.illinois.gov/docket/P2025- 0679/documents/368013/files/644809.pdf. 
+
+--- PAGE 11 ---
+11 
+require a large load customer to compensate a utility for costs that it actually incurs in the event 
+that a project is abandoned, or if a proposed load ramp does not materialize.  Instead, it requires 
+the customer to guarantee 80% of the utility’s estimated transmission revenue requirement over 
+a multi-year period.29  Exelon’s TSA construct would thus require a large load customer to, inter 
+alia, provide “up front credit support to secure its obligations and performance under the TSA . . 
+. equal [to] tens or hundreds of millions of dollars,”30 even if the actual costs incurred by an 
+Exelon utility due to a large load customer’s withdrawal, or reduction to its load ramp, were de 
+minimis.   
+Further, the TSA construct, and any similar “revenue guarantee” proposals that may be 
+proposed by other transmission owners, would clearly run afoul of the Commission’s cost 
+causation principal, which requires “that ‘all approved rates reflect to some degree the costs 
+actually caused by the customer [that] must pay them.’”31  Accordingly, if the TSA construct, or 
+similar revenue guarantee construct, were to be widely permitted by the Commission, it is likely 
+29 See, e.g., PECO-Amazon TSA Order at P 8 (explaining that the large load customer was required to “make a 
+payment to PECO reflecting a minimum contribution to PECO’s transmission revenue requirement (Committed 
+Revenue Contribution)” and that “[p]ursuant to the Transmission Security Agreement, the Committed Revenue 
+Contribution is calculated as . . . ‘The ‘Committed Revenue Contribution’ in each year is calculated using 80% of 
+the sum that would be paid by a Load Serving Entity (as such term is defined in the [PJM] OATT[)] serving an end-
+use customer with 80% of the monthly loads and billing determinants shown for each power on the Load and 
+Phasing Schedule using the [PJM] OATT or any successor tariff and the transmission rates therein in force for 
+service rendered during that year.’”) (citations omitted); id. at P 9 (noting that “PECO states that on an annual basis 
+following the Data Center’s commercial operation date and continuing each calendar year thereafter until the 
+expiration of the Transmission Security Agreement’s term, PECO shall determine whether the sums required to be 
+paid by Amazon or the LSE serving Amazon (Actual Revenue Contribution) equal or exceed the Committed 
+Revenue Contribution for that calendar year.  If it does not, PECO states that the Transmission Security Agreement 
+provides that a ‘Customer Shortfall Event’ is deemed to have occurred for that calendar year and, in addition to the 
+transmission charges billed to Amazon or its LSE for its actual usage, Amazon shall pay PECO an amount equal to 
+the difference between Actual Revenue Contribution and the Committed Revenue Contribution, subject to a 
+customer shortfall event liability cap.”). 
+30 See Comments of Monarch Energy Development LLC, Docket No. ER25-3492-000, at 6 (Oct. 14, 2025). 
+31 Coalition of MISO Transmission Customers v. Midcontinent Indep. Sys. Operator, Inc., 172 FERC ¶ 61,099; see 
+also Old Dominion Elec. Coop. v. FERC, 898 F.3d at 1255 (“For decades, the Commission and the courts have 
+understood this requirement to incorporate a ‘cost-causation principle’—the rates charged for electricity should 
+reflect the costs of providing it. . . . We often frame this principle as one that ensures ‘burden is matched with 
+benefit,’ so that FERC ‘generally may not single out a party for the full cost of a project, or even most of it, when the 
+benefits of the project are diffuse.’”) (citations omitted). 
+
+--- PAGE 12 ---
+12 
+that large numbers of non-speculative data centers being developed by well capitalized and 
+creditworthy companies – particularly independent data center developers and operators – would 
+be unable to meet the associated stringent and unreasonably high standards.  This, in turn, would 
+greatly stifle the data center market nationally, drive investment and development of data centers 
+abroad, and result in adverse consequences for the country’s economic, national security and 
+scientific interests.  Accordingly, iMasons urges the Commission to clarify in any final rule that 
+any standardized security, readiness deposit and withdrawal penalty provisions must be 
+proportionate to the risks actually imposed by large load customers.  Further, iMasons believes 
+that any proposed TSA or “revenue guarantee” construct proposed by transmission owners 
+should be strictly scrutinized by the Commission.32
+Relatedly, the Commission should not permit utilities to “claw back” capacity that has 
+already been secured by a large load developer or hyperscale end-user.  Other mechanisms, such 
+as standardized study deposits, readiness requirements, and withdrawal penalties (as proposed by 
+the ANOPR), should be favored to deter speculative projects and protect utilities and ratepayers 
+from actual risks posed by large load customers.  
+ii.
+The Commission Should Encourage Hybrid Facilities 
+iMasons supports studying hybrid facilities together with generating facilities to the 
+greatest extent practical,33 and studying hybrid facilities based on their requested amount of 
+32 While iMasons acknowledges that the Commission recently accepted the proposed PECO-Amazon TSA, it did so 
+narrowly and only because the PECO-Amazon TSA met the Mobile-Sierra presumption.  See PECO-Amazon TSA 
+Order at PP 28-29.  The Commission further clarified that its “acceptance of the [PECO-Amazon TSA] is based 
+solely on the record before us and that the Transmission Security Agreement applies only to PECO and Amazon 
+rather than embodying generally applicable rates, terms, and conditions.” See id. at P 30.  Accordingly, the 
+Commission’s acceptance of the PECO-Amazon TSA under the narrow facts and circumstances present in that 
+single proceeding, which was issued only after finding that the Mobile-Sierra presumption applied, should not 
+preclude the Commission from promulgating a final rule with the conditions requested by iMasons herein.  
+33 See ANOPR at P 20.   
+
+--- PAGE 13 ---
+13 
+injection and/or withdrawal rights.34  Encouraging hybrid facilities will help solve “speed to 
+power” issues for data centers, enhance reliability by encouraging data centers to bring their own 
+generation when they interconnect35 and can alleviate the need for building excess network 
+upgrades, which will benefit consumers.36  iMasons supports frameworks encouraging hybrid 
+facilities such as Southwest Power Pool, Inc. (“SPP”)’s High Impact Large Load Generation 
+Assessment (“HILLGA”) proposal that is pending before the Commission37 and SPP’s 
+anticipated, voluntary Conditional High Impact Large Load Service proposal.38
+Moreover, while iMasons believes that technology neutral, “bring your own generation” 
+frameworks should be encouraged, but not mandated, any final rule should ensure that such 
+34 See id. at P 22.   
+35 See Comments of Electricity Customer Alliance at 7 (“[L]everaging opportunities for these quickly emerging large 
+loads to utilize flexible arrangements to secure and pay for their own power supply—such as the hybrid (sometimes 
+called ‘co-location’) arrangements described by the Secretary in the ANOPR, ‘bring your own power’ models, 
+utilization of behind the meter generation and microgrids, and the like—is also essential to addressing threats to 
+customer affordability and ensuring that private investors, not captive ratepayers, take on the costs and risks of rapid 
+large load growth.”); Comments of ENGIE North America, Inc., Docket No. RM26-4-000, at 14 (Nov. 21, 2025) 
+(“ENGIE Comments”) (“Large loads that bring their own generation and/or storage are likely to have fewer and less 
+costly needed upgrades, a lower impact on the bulk energy system, and a more rapid interconnection process 
+because the net additional burden to the bulk energy system is likely to be less significant.”); Comments of 
+Microsoft, Inc., Docket No. RM26-4-000, at 8 (Nov. 21, 2025) (“Microsoft Comments”) (“[T]he ANOPR proposes 
+that siting a large ‘baseload’ load near or at the same point of interconnection as a new generating facility (one 
+possible form of bring-your-own generation or ‘BYOG’) could reduce the number and scope of network upgrades 
+necessary for both the load and generator interconnections. Microsoft believes studying load and generation together 
+has the potential to speed up the interconnection process for load and generation by eliminating duplicative, and 
+potentially conflicting, studies and will facilitate more efficient grid planning by more closely aligning generation 
+capacity needs with large loads.”). 
+36 See Vantage Comments at 6-7 (“Proposed ANOPR Principles 3 and 5 describe substantial benefits for hybrid 
+facilities, grid reliability, and utility customer affordability from performance of an integrated study for both the load 
+and generation components. . . .”); Comments of Electricity Customer Alliance at 7 (“Facilitating the ability of these 
+new large customers to pay for their own growth via flexible arrangements in the short-term also serves to protect 
+customers by increasing the capacity available to the entire system and avoiding the need to dedicate existing 
+capacity to new loads, putting downward pressure on capacity prices and energy prices. In the longer-term, large 
+load growth provides a key opportunity to spread the growing fixed costs of the power system over more users, 
+providing further benefits to all customers.”). 
+37 See Southwest Power Pool, Inc., Submission of Tariff Revisions to Add the High Impact Large Load Processes 
+and High Impact Large Load Generation Assessment, Docket No. ER26-247-000 (Oct. 24, 2025) (“HILLGA 
+Proposal”). 
+38 See Southwest Power Pool, Inc., RR720 Conditional High Impact Large Load Revision Request (Sep. 15, 2025), 
+available at: https://spp.org/Documents/74783/RR720.zip. 
+
+--- PAGE 14 ---
+14 
+frameworks do not unduly disrupt established generation interconnection queues.39  While 
+generation built specifically for data centers can help meet their near-term power needs and 
+provide broader benefits to the transmission system and ratepayers, in many instances, data 
+centers will choose to rely solely on grid power and in all but relatively few cases, data centers 
+will continue to require power from the grid in order to be operated reliably over the long term.  
+Accordingly, while “bring your own generation” frameworks should be encouraged (e.g., by 
+accelerating the interconnection of data centers that bring their own generation with them), at the 
+same time, any final rule should not unduly disrupt or disadvantage existing generator 
+interconnection queues, which will continue to provide the “backbone” generation via the 
+transmission system that large load customers, including data centers, will continue to choose 
+and rely upon. 
+iii.
+The Commission Should Accelerate the Interconnection of Curtailable and 
+Dispatchable Loads 
+iMasons supports a final rule that accelerates the interconnection of large loads that 
+voluntarily agree to be curtailable and dispatchable (i.e., flexible),40 provided that existing 
+interconnection queues are not unduly and unjustly disrupted.  Accelerating the interconnection 
+of large, flexible loads helps solve the “speed to power” issue that data centers face, and as noted 
+by a wide range of commenters, flexible loads offer significant benefits to transmission 
+providers, transmission owners and customers.  These potential benefits include, inter alia: (1) 
+faster interconnection times for large loads, (2) avoided or deferred transmission investments and 
+39 See PG&E Comments at 22; Comments of the Edison Electric Institute, Docket No. RM26-4-000, at 7-8 (Nov. 21, 
+2025) (“EEI Comments”); ENGIE Comments at 15. 
+40 See ANOPR at P 24.   
+
+--- PAGE 15 ---
+15 
+(3) avoided generation capacity investments, and/or near-term reliability and affordability for all 
+customers as supply catches up with rising demand.41
+iv.
+Large Loads Should Only Be Assigned the Costs that They Cause 
+iMasons takes no position on whether a final rule should mandate that 100% of network 
+upgrade costs be directly assigned to large load customers42 or rolled into existing rate 
+structures.43  iMasons notes that parties supported both types of approaches, among others, in 
+their initial comments.  That said, iMasons encourages the Commission to promulgate a final 
+rule that would require large load customers to be allocated only costs that they cause, consistent 
+with the Commission’s longstanding cost causation principles.44  Whatever approach, or 
+approaches, are used to allocate network upgrade costs to large load customers, the 
+Commission’s goal should be to ensure that large load customers are allocated their fair share of 
+costs, that consumers are not subject to unfair costs, and that transmission owners and other 
+customer classes are not unjustly enriched.   
+41 See, e.g., Miles Farmer, et al., How DOE’s Proposed Large Load Interconnection Process Could Unlock the 
+Benefits of Load Flexibility – Considerations for Rulemaking, Duke – Nicholas Institute for Energy, Environment & 
+Sustainability (2025), available at: https://nicholasinstitute.duke.edu/sites/default/files/publications/how-does 
+proposed-large-load-interconnection-process-could-unlock-benefits-load-flexibility.pdf; see also Comments of the 
+Thermal Battery Alliance, Docket No. RM26-4-000, at 2 (Nov. 21, 2025) (“Flexible, and particularly hyper-ﬂexible 
+loads such as new technologies like thermal energy storage (TES), represent a signiﬁcant opportunity for enhancing 
+market performance.”); Comments of Enchanted Rock, LLC, Docket No. RM26-4-000, at 4 (Nov. 21, 2025) 
+(“Enchanted Rock Comments”); Comments of Verrus, Docket No. RM26-4-000, at 8-11 (Nov. 21, 2025) (“Verrus 
+Comments”).   
+42 See ANOPR at P 25; see, e.g., Comments of the Digital Power Network, Docket No. RM26-4-000, at 4 (Nov. 20, 
+2025) (“Digital Power Network Comments”); Comments of Buckeye Power, Inc., Docket No. RM26-4-000, at 2, 
+18-20 (Nov. 21, 2025); Comments of Southwest Power Pool, Inc., Docket No. RM26-4-000, at 14-15 (Nov. 21, 
+2025). 
+43 See, e.g., Comments of FirstEnergy Service Company, Docket No. RM26-4-000, at 6 (Nov. 21, 2025); EEI 
+Comments at 8-9; Comments of Duke Energy Corporation, Docket No. RM26-4-000, 22-23 (Nov. 21, 2025). 
+44 See Coalition of MISO Transmission Customers v. Midcontinent Indep. Sys. Operator, Inc., 172 FERC ¶ 61,099 at 
+P 82 (The Commission’s “cost causation principle requires that ‘all approved rates reflect to some degree the costs 
+actually caused by the customer [that] must pay them.’”) (citation omitted); Old Dominion Elec. Coop. v. FERC, 898 
+F.3d at 1255 (“For decades, the Commission and the courts have understood this requirement to incorporate a ‘cost-
+causation principle’—the rates charged for electricity should reflect the costs of providing it. . . . We often frame this 
+principle as one that ensures ‘burden is matched with benefit,’ so that FERC ‘generally may not single out a party 
+for the full cost of a project, or even most of it, when the benefits of the project are diffuse.’”) (citations omitted). 
+
+--- PAGE 16 ---
+16 
+Moreover, iMasons supports proposals that offer expedited treatment or other benefits for 
+large loads, including flexible large loads, that can reduce the need for network upgrades.45
+v.
+The Commission Should Establish a Clear Transition Mechanism to Avoid 
+Disrupting Large Load Projects Already in Development  
+iMasons supports a final rule that establishes a clear transition mechanism,46 and is 
+effective on a prospective basis only, so that any existing large load projects already in 
+development are not disrupted.  Further, iMasons recommends that any large load developers 
+that have incurred substantial costs and/or entered into binding agreements related to the 
+procurement of equipment (including long-lead items) have the option of being grandfathered 
+into any existing processes to avoid their projects’ development being delayed.  Moreover, in the 
+event that the Commission adopts, as part of a final rule, any pro forma tariff provisions, 
+iMasons requests that the Commission allow transmission owners and transmission providers to 
+apply for an independent entity variation47 to the extent necessary to provide for a smooth 
+transition to the potential new rules, and to mitigate any disruptions to large load projects that are 
+under development.     
+45 See, e.g., Verrus Comments at 8-11. 
+46 See ANOPR at P 30; see also, e.g., Vantage Comments at 11-12 (“It is imperative that projects with existing 
+interconnection agreements are permitted to move forward under their current frameworks and grandfathered from 
+any reform that is put in place unless they voluntarily opt in to a new, Commission-approved tariff interconnection 
+program that appropriately implements the guiding principles of the proposed ANOPR.”). 
+47 The independent entity variation standard provides that “the Commission will review the proposed variations 
+[from pro forma agreements] to ensure that they do not provide an unwarranted opportunity for undue 
+discrimination or produce an interconnection process that is unjust and unreasonable.”  See PJM Interconnection, 
+L.L.C., 108 FERC ¶ 61,025, at P 7 (2004); see also Cal. Indep. Sys. Operator Corp., 121 FERC ¶ 61,177, at P 13 
+(2007).  Additionally, Commission precedent indicates that requests for independent entity variations from a broadly 
+applicable rule will be evaluated to determine if they “accomplish the purposes” of that rule.  See Sw. Power Pool, 
+Inc., 128 FERC ¶ 61,114, at P 98 (2009). 
+
+--- PAGE 17 ---
+17 
+vi.
+The Commission Should Work with the North American Electric 
+Reliability Corporation (“NERC”) and Transmission Providers to Require 
+Clear and Consistent Technical Requirements for Interconnecting Large 
+Loads 
+iMasons supports the Commission working to promulgate clear and consistent technical 
+standards for interconnecting large loads to the transmission system.48  It is critically important 
+to assess the reliability impacts of large loads on the bulk electric system.  However, a key 
+challenge for developers of large data centers, particularly those supporting AI applications, is 
+the lack of clarity and predictability in the technical interconnection requirements for large loads.  
+This uncertainty not only can result in significant project delays, but also threatens to undermine 
+the reliability of the bulk electric system if inconsistent technical standards are applied region-to-
+region.  Accordingly, iMasons urges the Commission to work with NERC and transmission 
+providers to expedite the development of clear and consistent technical standards that will 
+govern the interconnection of large loads nationally.   
+vii.
+The Commission Should Consider a Higher Minimum Threshold for Large 
+Load Interconnection Reforms 
+While the ANOPR proposes that any large load interconnection reforms should apply to 
+“new loads greater than 20 MW,”49 iMasons believes that a higher minimum threshold is 
+appropriate.  Given that some data centers are now hundreds of MWs (or over a GW) in size, the 
+ANOPR’s proposed 20 MW threshold does not seem to accurately define “large loads” that its 
+48 See, e.g., ANOPR at P 30; Comments of the California Independent System Operator Corporation on the 
+Advanced Notice of Proposed Rulemaking, Docket No. RM26-4-000, at 17-18 (Nov. 21, 2025) (“NERC should 
+consider developing specific modeling and performance reliability standards for large loads, similar to MOD, PRC, 
+and BAL standards applicable to large generators. This will ensure consistent treatment across balancing authorities, 
+remove regulatory uncertainty for developers and transmission providers, and thus further the timely and orderly 
+interconnection of large loads.”); Enchanted Rock Comments at 5-6.   
+49 See ANOPR at P 19.   
+
+--- PAGE 18 ---
+18 
+proposed reforms are intended to address.  Accordingly, iMasons believes that a minimum 
+threshold of 75 MW (or potentially higher) is appropriate for the Commission to consider.50
+C.
+The Commission Should Continue to Explore Broader Reforms to Serve the 
+Needs of Large Loads and Customers 
+iMasons supports the Commission continuing to explore broader reforms to meet the 
+power needs of large loads and customers.  Notably, iMasons supports: 
+
+The Commission exploring further holistic reforms to transmission planning in order to 
+support the generation buildout necessary to serve large load customers, and to do so in 
+an efficient and cost-effective manner for customers;51
+
+A final rule that encourages the use of grid enhancing technologies to accelerate the 
+interconnection of large loads;52
+
+A final rule that supports integrated studies of load, generation and transmission;53 and  
+
+The development of distributed energy resources and virtual power purchase agreements 
+to help serve large loads and accelerate their interconnection, including reducing barriers 
+that stand in the way of fully implementing Order No. 2222.54
+50 See Comments of Meta Platforms, Inc., Docket No. RM26-4-000, at 4 (Nov. 21, 2025).   
+51 See, e.g., Comments of the American Council on Renewable Energy, Docket No. RM26-4-000, at 6-7 (Nov. 21, 
+2025); Comments of Google LLC, Docket No. RM26-4-000, at 3-4 (Nov. 21, 2025); Comments of Americans for a 
+Clean Energy Grid, Docket No. RM26-4-000, at 7 (Nov. 21, 2025). 
+52 See, e.g., Comments of the Working for Advanced Transmission Technologies and Advancing Modern Powerlines 
+Coalitions, Docket No. RM26-4-000, at 2-3 (Nov. 21, 2025). 
+53 Comments of Invenergy, Docket No. RM26-4-000, at 5 (Nov. 21, 2025); Microsoft Comments at 2, 8-9. 
+54 See Comments of Tesla, Inc., Docket No. RM26-4-000, at 3-4 (Nov. 21, 2025); Comments of Rewiring America, 
+Docket No. RM26-4-000, at 2-3 (Nov. 21, 2025). 
+
+--- PAGE 19 ---
+19 
+III.
+CONCLUSION 
+iMasons respectfully requests that the Commission consider these Reply Comments and 
+looks forward to working with all stakeholders as the Commission considers the ANOPR and 
+other issues related to the interconnection of large loads. 
+Santiago Suinaga 
+Chief Executive Officer 
+Dean Nelson 
+Founder & Chairman 
+Infrastructure Masons 
+3855 SW 153rd Dr 
+Beaverton, Oregon, 97003 
+santiago@imasons.org
+dean@imasons.org
+Respectfully submitted, 
+/s/ Steven Shparber 
+Steven Shparber 
+Omar Bustami 
+Mintz, Levin, Cohn, Ferris, Glovsky and 
+Popeo, P.C. 
+555 12th Street NW, Suite 1100 
+Washington, D.C. 20004 
+(202) 434-7417 
+SShparber@mintz.com
+OBustami@mintz.com
+Counsel to Infrastructure Masons, Inc. 
+Ben Garrard 
+VP Power & Energy Management  
+CoreSite 
+1001 17th St., Denver, CO 80202 
+ben.garrard@coresite.com
+Chris Crosby 
+Chief Executive Officer 
+Compass Datacenters 
+14555 N. Dallas Parkway | Suite 125 
+Dallas, TX 75254 
+ccrosby@compassdatacenters.com
+Kevin Boudreaux 
+Head of Power Supply 
+Monarch Energy 
+101 Cooper St. Santa Cruz, CA 95060 
+kboudreaux@monarch.energy
+Mark Gusakov 
+Chief Executive Officer 
+Data Center Alliance 
+60 Hobby Lane 
+Orchard Park, NY  14127 
+mg@nomadfuturist.org
+Jarrett Appleby 
+Chief Executive Officer 
+ASG LLC (Appleby Strategy Group)  
+22443 Taylor Springs Court 
+Leesburg, VA 20175 
+M: +1-303-886-0279 
+jarrett@asg-team.com
+Mark McComiskey 
+Chief Executive Officer 
+AVAIO Digital Partners 
+Four Stamford Plaza, 107 Elm Street, Suite 
+501 
+Stamford CT 06902 
+mark.mccomiskey@avaiocapital.com
+
+--- PAGE 20 ---
+20 
+Hank Hillebrand 
+President 
+Poe Companies 
+111 W Washington Street - Suite 400 
+Louisville, KY 40202 
+C (847) 977-5331 | O (502) 292-6800 
+hhillebrand@poecompanies.com
+Leon Backes 
+Chief Executive Officer 
+Justin Loth, P.E. 
+Executive Director of Power Development  
+John “Jack" Backes 
+Principal Strategist  
+Provident Realty Advisors, Inc. (a/k/a 
+Provident Data Centers) 
+10210 N Central Expressway  
+Ste 300  
+Dallas, TX 75231  
+lbackes@provident.net
+jloth@provident.net
+jack@provident.net
+Douglas Fleit 
+Chief Executive Officer 
+American Real Estate Partners 
+1660 International Drive, Suite 500 
+Mclean, VA 22102 
+C (703) 708-7500 | (703) 251-3340 
+dfleit@americanrepartners.com
+Igal J. Feibush 
+Chief Executive Officer 
+Pennsylvania Data Center Partners 
+1015 Mumma Road, Second Floor 
+Harrisburg, PA 17043 
+(310) 770-3007 
+Igal@PADataCenters.com
+Robert P. Dugdale 
+Senior Vice President, Sales & Partnerships, 
+North America 
+Kasisto, Inc. HQ NYC 
+37 West 20th Street 
+New York, NY 10011 
+Mobile: 203-253-0538 
+robert.dugdale@kasisto.com
+Dated: December 5, 2025
+
+--- PAGE 21 ---
+CERTIFICATE OF SERVICE
+I hereby certify that I have this day caused the foregoing and its attachments to be served 
+upon each person designated on the official service list compiled by the Secretary in the 
+captioned proceeding.   
+Dated at Washington, D.C., this 5th day of December, 2025. 
+/s/ Steven Shparber 

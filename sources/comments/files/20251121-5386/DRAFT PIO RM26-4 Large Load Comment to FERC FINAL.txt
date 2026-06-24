@@ -1,0 +1,1660 @@
+--- PAGE 1 ---
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+Interconnection of Large Loads to the Interstate  ) 
+ 
+Docket No. RM26-4-000 
+Transmission System 
+ 
+ 
+ 
+) 
+  
+COMMENTS OF PUBLIC INTEREST ORGANIZATIONS 
+ 
+Table of Contents 
+I. 
+Introduction ....................................................................................................... 2 
+II. Background ....................................................................................................... 9 
+III. 
+Comments ...................................................................................................... 9 
+A. 
+FERC has jurisdiction to regulate the interconnection of large loads to the 
+transmission system, but must not overstep the boundaries of its jurisdiction ............... 9 
+1. The FPA provides FERC with multiple relevant sources of jurisdiction. 10 
+2. FERC should continue to be mindful not to overstep its jurisdiction by 
+regulating matters that the FPA reserves to the states. .............................................. 15 
+B. 
+Studying Large Loads .............................................................................. 18 
+1. DOE NOPR: Principles 4 through 6 ........................................................ 19 
+2. Comments ................................................................................................ 20 
+C. 
+Curtailable Loads ..................................................................................... 26 
+1. DOE NOPR: Principle 7 .......................................................................... 26 
+2. Comments ................................................................................................ 26 
+D. 
+Network Upgrades, Transmission Costs, and Ancillary Services ........... 30 
+1. DOE NOPR: Principles 8 through 12 ...................................................... 30 
+2. Comments ................................................................................................ 31 
+E. 
+Reliability Reviews .................................................................................. 41 
+1. DOE NOPR: Principle 14 ........................................................................ 41 
+2. Comments ................................................................................................ 41 
+F. 
+Implementation Plans .................................................................................. 43 
+1. DOE NOPR: Principle 13 ........................................................................ 43 
+2. Comments ................................................................................................ 43 
+G. 
+Other Issues ............................................................................................. 43 
+1. Comments ................................................................................................ 43 
+IV. 
+Conclusion ................................................................................................... 45 
+ 
+ 
+
+--- PAGE 2 ---
+Docket No. RM26-4-000 
+ 
+2 
+ 
+I. 
+Introduction  
+Pursuant to Rule 211 of the Rules of Practice and Procedure of the Federal Energy 
+Regulatory Commission (“FERC” or “Commission”), 18 C.F.R. § 385.211, Clean Air 
+Task Force, Inc., Coalition for Affordable Utility Services and Energy Efficiency in 
+Pennsylvania, Earthjustice, Environmental Defense Fund, Montana Environmental 
+Information Center, Natural Resources Defense Council, Sustainable FERC Project, 
+Sierra Club, and Southern Environmental Law Center  (jointly, the “Public Interest 
+Organizations”) submit these comments in response to the Commission’s request for 
+comments on the Department of Energy (“DOE” or “Department”) October 23, 2025 
+proposal directing FERC to initiate a rulemaking concerning the interconnection of large 
+loads for final action by the Commission under Section 403 of the Department of Energy 
+Organization Act1 (“DOE Proposal” or “Proposal”).2 
+As noted in the ANOPR, data centers are driving an extraordinary growth in 
+electricity demand.  The North American Electric Reliability Corp (NERC) warned that 
+the size and speed with which data centers can be connected to the grid present unique 
+challenges for demand forecasting and system planning.3  The Commission considered 
+ 
+1 42 U.S.C. § 7173 (“DOE Organization Act”). 
+2 Docket No. RM26-4-000, Department of Energy submits letter proposing a Proposal for final action 
+and providing a copy of the Notice of Proposed rulemaking under RM36-6 (Oct. 7, 2025). The full text of the 
+proposed ANOPR can be found at: https://www.energy.gov/sites/default/files/2025-
+10/403%20Large%20Loads%20Letter.pdf 
+3 DOE ANOPR at 1, citing NERC, 2024 Long- Term Reliability Assessment (Dec. 2024, updated July 
+2025), 
+https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/NERC_Long%20Term%20Reliability%20A
+ssessment_2024.pdf at 8. 
+
+--- PAGE 3 ---
+Docket No. RM26-4-000 
+ 
+3 
+ 
+many of these challenges during its November 1, 2024, Commission-led Technical 
+Conference Regarding Large Load Co-Located at Generating Facilities.4 
+During the conference, the Commission hosted three panel discussions with a 
+diverse set of stakeholders, from regional grid operators (RTOs) and Independent Market 
+Monitors to state commissioners.  The conference covered many of the issues relevant to 
+this proceeding including jurisdictional service approaches other than co-location (e.g., 
+flexible options), impacts on reliability and resource adequacy, stability of wholesale 
+electricity market prices, and states’ concerns over affordability and consumer impacts.  
+Subsequently, on February 20, 2025, the Commission determined that PJM 
+Interconnection, LLC’s (PJM) tariff provisions for co-location arrangements appeared to 
+be unjust and unreasonable and initiated a show cause proceeding, which teed up the 
+need to resolve many of the challenges raised during the technical conference and related 
+to this proceeding.5 
+The concerns about large load interconnections all became very real in capacity 
+auctions conducted by PJM, when its 2024 auction (for capacity years 2025/2026) 
+resulted in capacity costs surging to an eye-popping $14.7 billion, mostly because data 
+centers drove prices up.6 PJM’s most recent auction in 2025 (for capacity years 
+ 
+4 Large Loads Co-Located at Generating Facilities, Notice of Commissioner-Led Technical Conference, 
+AD24-11-000 (August 2, 2024).  Following the initial notice, FERC issued three supplemental notices revising the 
+agenda, and it issued a notice requesting comments. 
+5 Order Instituting Proceedings Under Section 206 of the Federal Power Act and Consolidating With Other 
+Proceedings, EL25-49-000 (February 20, 2025). 
+6 See PJM, 2025/2026 Base Residual Auction Report, at 3 (July 2024), https://www.pjm.com/-
+/media/DotCom/markets-ops/rpm/rpm-auction-info/2025-2026/2025-2026-base-residual-auction-report.pdf; see also 
+Monitoring Analytics, State of the Market Report for PJM: January through September, at 1 (Nov. 2025),  (“Data 
+center load growth is the primary reason for recent and expected capacity market conditions, including total forecast 
+load growth, the tight supply and demand balance, and high prices.”). 
+
+--- PAGE 4 ---
+Docket No. RM26-4-000 
+ 
+4 
+ 
+2026/2027) showed similar results, with overall costs of $16.1 billion.7 As PJM’s 
+independent market monitor notes, “[d]ata center load growth is the primary reason for 
+recent and expected capacity market conditions, including total forecast load growth, the 
+tight supply and demand balance, and high prices.”8 These recent price surges in PJM 
+illustrate how the rapid and unregulated interconnection of new large loads can unjustly 
+and unreasonably impose extreme costs and significant reliability risks on other 
+consumers.9   
+Capacity costs are not the only driver. With respect to transmission costs, the 
+Union of Concerned Scientists issued a report finding that during 2024, “utilities in seven 
+PJM states passed more than $4.3 billion in additional costs on to customers, with billions 
+more still . . . from local transmission upgrades made to provide transmission level 
+service directly to data centers.”10 These costs are allocated to load-serving entities as a 
+whole, and state regulators are responsible for allocating transmission costs amongst 
+retail rate classes. This jurisdictional split in the cost allocation process shifts data center 
+costs on to other customers.11 Absent sufficient guardrails and information, this new 
+ 
+7 PJM, 2026/2027 Base Residual Auction Report, at 3, https://www.pjm.com/-/media/DotCom/markets-
+ops/rpm/rpm-auction-info/2026-2027/2026-2027-bra-report.pdf.  
+8 see also Monitoring Analytics, State of the Market Report for PJM: January through September, at 1 
+(Nov. 2025), https://www.monitoringanalytics.com/reports/PJM_State_of_the_Market/2025/2025q3-som-pjm.pdf 
+(“Data center load growth is the primary reason for recent and expected capacity market conditions, including total 
+forecast load growth, the tight supply and demand balance, and high prices.”). 
+9 See, e.g., Monitoring Analytics, State of the Market Report for PJM: January through June (Aug. 2025), 
+at 314, https://www.monitoringanalytics.com/reports/PJM_State_of_the_Market/2025.shtml (noting that “data 
+center load growth is the primary reason for recent and expected capacity market conditions, including total forecast 
+load growth, the tight supply and demand balance, and high prices,” and specifically that “data center load by itself 
+resulted in an increase in the 2025/2026 BRA revenues of $9,332,103,858 or 174.3 percent”). 
+10 Union of Concerned Scientists, Connecting Costs: Loophole Costs Customers Over $4 Billion to 
+Connect Data Centers to Power Grid (September 2025): https://www.ucs.org/sites/default/files/2025-
+09/PJM%20Data%20Center%20Issue%20Brief%20-%20Sep%202025.pdf at 1. 
+11 See https://eelp.law.harvard.edu/wp-content/uploads/2025/03/Harvard-ELI-Extracting-Profits-from-the-
+Public.pdf at 14. 
+
+--- PAGE 5 ---
+Docket No. RM26-4-000 
+ 
+5 
+ 
+demand will raise power bills, increase the risk of blackouts, and create more air 
+pollution.  While PJM and other RTOs, like the Southwest Power Pool, have initiated 
+tariff filings or stakeholder processes to integrate large load customers in the near-term,12 
+DOE’s ANOPR gives the Commission an opportunity to take stock of the record from 
+these proposals and earlier proceedings to devise a comprehensive approach for 
+interconnecting large loads in the near-term, given the widespread desire for interim 
+options. Further, a standardized rule itself could help eliminate incentives for seeking 
+interconnections in multiple regions, helping to create more accurate large load forecasts. 
+These comments present preliminary thoughts on the fourteen principles 
+enunciated in DOE’s Proposal. While DOE’s Proposal articulates numerous important 
+concepts, many of which we support, DOE has done so at a very high level. Because 
+DOE’s ANOPR is much less detailed and specific than prior notices for comparably 
+important issues,13 these comments provide feedback at a similarly high level without 
+specificity. We look forward to reviewing how FERC develops these important concepts 
+in a NOPR in this docket, and we anticipate filing more developed and detailed 
+comments at that time. Our views and comments may evolve as FERC develops its 
+proposals. Generally, we believe that DOE’s Proposal is correct that the rapid 
+proliferation of new large loads presents challenges that FERC must address to maintain 
+ 
+12 See, e.g., PJM Interconnection, LLC, Critical Issue Fast Path for Large Load Additions (September 25, 
+2025): https://www.pjm.com/-/media/DotCom/committees-groups/cifp-lla/2025/20250915/20250915-item-07---
+pjm-initial-proposal-and-alternatives-considered---pjm-presentation.pdf; Tri-State Generation and Transmission 
+Association, Inc., 193 FERC ¶ 61,070 (2025); Southwest Power Pool, Revisions to Add the High Impact Large Load 
+Processes and Generation Assessment, Docket No. ER26-247-000 (October 24, 2025).  
+13 For example, FERC’s ANOPR that ultimately led to the issuance of Orders No. 1920 and 2023 was over 
+100 pages long and included detailed information about the potential need for reform and about specific reforms the 
+agency was contemplating.  
+
+--- PAGE 6 ---
+Docket No. RM26-4-000 
+ 
+6 
+ 
+a reliable and affordable electric grid. In short, new large loads—principally data 
+centers—are seeking to connect to the grid much faster than new generation can currently 
+be interconnected, and the resulting imbalance in demand and supply threatens to 
+radically increase energy prices and challenge the reliability of electric service. Because 
+these threats to affordability and reliability are emerging rapidly, FERC should quickly 
+address how to interconnect large loads under its FPA authority.  
+While FERC should act promptly to address immediate affordability and 
+reliability challenges, FERC must also develop and enhance longer-term transmission 
+planning and interconnection strategies to ensure that stable planning structures are 
+sufficient to ensure reliable electric service at just, reasonable, and not unduly 
+discriminatory rates, and are consistent with longstanding open-access principles. The 
+Commission’s goal should be to ensure that transmission-planning and interconnection 
+procedures – for both large loads and generation – are sufficiently rigorous to realistically 
+assess the growth in demand, anticipate changes in the generation mix, and proactively 
+plan for the resulting transmission needs. The grid is at an inflection point, and we need 
+to increase transmission capacity – both within and between regions – to ensure 
+affordable, reliable electricity while we meet the moment to serve these new loads. New 
+transmission capacity – regional and interregional, whether gained through grid-
+enhancing technologies, advanced conductors, or new transmission build – will bolster 
+reliability and allow large loads to interconnect more quickly and at least cost. 
+Connecting load centers to regions with excess supply power can reduce costs and avoid 
+
+--- PAGE 7 ---
+Docket No. RM26-4-000 
+ 
+7 
+ 
+redundant infrastructure by allowing regions to share their generating resources.14 This 
+infrastructure can also save customers money - $7.8 billion to $10.6 billion annually 
+according to a recent study of interregional transmission expansion recommended by 
+NERC.15 Further, significant capacity gains can be made fairly quickly through the 
+addition of advanced transmission technologies (ATTs) to the system.  ATTs can boost 
+capacity by an additional 20 to 100 GW of peak demand without building new wires.16  
+In this rulemaking and other dockets, FERC should consider ways within its authority to 
+encourage the adoption of these technologies as an additional way to meet growing loads. 
+In developing strategies to address the rapid proliferation of new large loads, 
+whether in the short term or the long term, the Commission should follow the guiding 
+principle that new large loads should not be permitted to harm affordability or reliability 
+for existing consumers. Consistent with the Federal Power Act’s (FPA) fundamental cost-
+causation principles, new large loads should be responsible for the costs they cause, and it 
+would be unjust and unreasonable for the costs caused by new large loads to be shifted to 
+existing consumers who did not cause those costs and who receive no, or trivial, benefits 
+from the infrastructure developed to serve new large loads. Similarly, new large loads 
+should not imperil reliability for other consumers; for example, it would not be just and 
+ 
+14 Audun Botterud et al., Bridging the Gaps: The Impact of Interregional Transmission on Emissions and 
+Reliability, MIT Center for Energy and Environmental Policy Research, August 2024, 
+https://ceepr.mit.edu/workingpaper/bridging-the-gaps-the-impact-of-interregional-transmission-on-emissions-and-
+reliability/. 
+15 Michael Goggin, Zach Zimmerman, and Dana Ammann, NERC’s Recommended Grid Expansion Would 
+Save Consumers Billions, Grid Strategies and NRDC, February 2025, https://gridstrategiesllc.com/wp-
+content/uploads/GS_NRDC_NERCs-Recommended-Grid-Expansion-Report54.pdf. 
+16 See ESIG, Grid-Enhancing Technologies: Priorities for a Modern, Efficient, and Flexible Grid 8–9 (July 
+2025), available at https://www.esig.energy/wp-content/uploads/2025/07/ESIG-Grid-Enhancing-Technologies-
+report-2025.pdf; 
+
+--- PAGE 8 ---
+Docket No. RM26-4-000 
+ 
+8 
+ 
+reasonable for a data-center boom to cause residential or industrial ratepayers to 
+experience increased risks of blackouts. Finally, any new rules adopted by FERC cannot 
+unduly preference large load customers over other types of customers.   
+Under the DOE Organization Act, FERC has exclusive jurisdiction over the DOE 
+Proposal.17  After reviewing the comments it receives in response to its notice, FERC 
+may:  
+(1) concur in adoption of the rule or statement as proposed by the Secretary; 
+(2) concur in adoption of the rule or statement only with such changes as it may 
+recommend; or 
+(3) recommend that the rule or statement not be adopted.[18] 
+ 
+The Secretary’s letter specifically anticipates that “[the Commissioners] and the 
+Commission's dedicated staff will build upon these principles and work expeditiously to 
+initiate a rulemaking proceeding and ultimately issue a final rule.” If FERC adopts DOE's 
+proposal, FERC must provide clear regulations to implement large load interconnection, 
+consistent with its statutory obligation under the FPA that the rates, terms, and conditions 
+of service must be just, reasonable, and not unduly discriminatory.  We look forward to 
+seeing how FERC develops these ideas into a more comprehensive proposal.   
+Importantly, large load interconnection affects a variety of energy users and 
+providers, including Tribes. We recommend that FERC consult Tribes pursuant to the 
+federal government's trust responsibilities.19 
+ 
+17 42 U.S.C. § 7173 (“DOE Organization Act”). 
+18 42 U.S.C. § 7174 (“DOE Organization Act”). 
+19 See Alliance for Tribal Clean Energy Initial Comments in Docket No. RM26-4-000; See also Seminole 
+Nation v. United States, 316 U.S. 286, 296–97 (1942); Eric v. Sec’y of U. S. Dep’t of Hous. & Urban Dev., 464 F. 
+Supp. 44 (D. Alaska 1978). 
+
+--- PAGE 9 ---
+Docket No. RM26-4-000 
+ 
+9 
+ 
+II. 
+Background 
+On October 23, 2025, the Secretary of Energy signed an advance notice of 
+proposed rulemaking entitled Ensuring the Timely and Orderly Interconnection of Large 
+Loads.  The Secretary proposed the rule under Section 403 of the DOE Organization Act, 
+which allows the Department to propose rules, and reasonable timelines for final action 
+on those rules, for consideration by FERC. The Proposal states that in light of 
+unprecedented growth of large loads, FERC should standardize interconnection 
+procedures and agreements for such loads, including those seeking to share a point of 
+interconnection with new or existing generation facilities (co-located loads).20 DOE 
+includes a set of fourteen principles it believes should inform FERC’s rulemaking on this 
+issue. 
+III. 
+Comments 
+A. FERC has jurisdiction to regulate the interconnection of large loads to the 
+transmission system, but must not overstep the boundaries of its jurisdiction  
+DOE asserts that the FPA allows the Commission to exercise jurisdiction over the 
+interconnection of large loads. First, DOE states that large load interconnections are a 
+"critical component of open access transmission service” akin to generator 
+interconnections that require minimum terms and conditions to ensure non-discriminatory 
+ 
+20 PIOs note that the DOE ANOPR called these loads “hybrid facilities”.  However, in our comments, we 
+use the term co-located loads as used in previous FERC orders.  FERC recently adopted PJM’s definition of co-
+located loads “as a configuration through which end-use customer load is physically connected to the facilities of an 
+existing or planned generation unit on the interconnection customer’s side of the point of interconnection to the … 
+transmission system.” See PJM Interconnection, LLC, 190 FERC ¶ 61,115 (2025) at P3.  We do not necessarily 
+advocate that FERC must continue to use this definition, but use it for continuity in these comments.  
+
+--- PAGE 10 ---
+Docket No. RM26-4-000 
+ 
+10 
+ 
+transmission service.21  Second, DOE states that the interconnection of large loads is a 
+practice directly affecting FERC-jurisdictional wholesale electricity rates.  Finally, DOE 
+states that its proposal does not impinge on States' authority over retail electricity sales 
+because it does not exert jurisdiction over any retail sales to the large load. Principle 1 of 
+the ANOPR explicitly provides that to avoid even arguably affecting the States' 
+jurisdiction, the Commission's jurisdiction over large load interconnections should be 
+limited to interconnections directly to transmission facilities, consistent with the 
+Commission's seven-factor test.22 
+1. 
+The FPA provides FERC with multiple relevant sources of 
+jurisdiction. 
+The FPA grants the Commission several sources of jurisdiction that are relevant to 
+the regulation of new large load interconnection, including authority over interstate 
+transmission, the responsibility to ensure just and reasonable and not unduly 
+discriminatory wholesale rates by regulating practices that directly affect rates in 
+wholesale energy markets, and responsibility to ensure electric reliability. As the 
+Commission works to develop the principles DOE has suggested, it should ground its 
+proposed rule in these several sources of authority.   
+Large loads exist at the intersection of state and federal jurisdiction.  DOE’s 
+ANOPR makes clear that FERC should avoid even arguably affecting the States' 
+jurisdiction.  Thus, as the Commission considers how to proceed on regulating the 
+interconnection of large loads, it must consider whether its authority presents a sufficient 
+ 
+21 DOE ANOPR at P 13, citing Order No. 2003 at P 9, 11. 
+22 DOE ANOPR at P 18. 
+
+--- PAGE 11 ---
+Docket No. RM26-4-000 
+ 
+11 
+ 
+jurisdictional foundation to adopt each of the principles that DOE suggests. We urge 
+FERC to work cooperatively with its state colleagues to ensure that federal and state rules 
+work seamlessly to interconnect these loads in a manner that prioritizes the protection of 
+other consumers from unjust, unreasonable, and unduly discriminatory rates and 
+reliability issues.  
+Section 206 of the FPA provides FERC with the authority and responsibility to 
+ensure that the rates and practices within its jurisdiction are just and reasonable.23  As 
+discussed throughout our comments, the interconnection of large loads can shift costs to 
+other consumers in an unjust and unreasonable manner. It is incumbent upon FERC to 
+adopt rules sufficient to ensure that rates subject to FERC’s jurisdiction will be just and 
+reasonable moving forward. Here, this statutory responsibility means that the 
+Commission must ensure that the interconnection of new large loads will no longer 
+impose unjust and unreasonable expenses on other ratepayers. 
+ 
+23 16 U.S.C. 824e. 
+
+--- PAGE 12 ---
+Docket No. RM26-4-000 
+ 
+12 
+ 
+a. FERC’s jurisdiction over interstate transmission  
+The FPA authorizes the Commission to regulate “the transmission of electric 
+energy in interstate commerce.”24 The FPA prohibits “unreasonable rates and undue 
+discrimination ‘with respect to any transmission or sale subject to the jurisdiction of the 
+Commission’” and gives FERC the authority and responsibility to remedy the unlawful 
+rates and discriminatory practices.25 The FPA’s grant of jurisdiction over interstate 
+transmission provides clear authority for the Commission to regulate interconnections to 
+the interstate transmission system.26 DOE’s Proposal suggests that the Commission 
+should limit any rule in this docket to regulating solely connections to the interstate 
+transmission system, as defined by FERC’s seven-factor test for distinguishing 
+transmission infrastructure from distribution infrastructure. PIOs agree that regulating 
+interconnection to the transmission grid, as opposed to interconnection to the distribution 
+grid, falls within the Commission’s jurisdiction. Accordingly, we support DOE’s 
+identification of the Commission’s jurisdiction over transmission as one foundation for 
+this rulemaking.  
+b. FERC’s jurisdiction over practices directly affecting 
+wholesale electricity rates  
+In addition to FERC’s jurisdiction over the transmission of electric energy in 
+interstate commerce, the FPA also authorizes FERC to regulate “the sale of electric 
+energy at wholesale in interstate commerce,” which includes the authority to regulate 
+ 
+24 FERC v. EPSA, 577 U.S. 260, 266, 277 (2016). 
+25 New York v. FERC, 535 U.S. 1, 7 (2002). 
+26 See Nat’l Ass’n of Reg. Util. Comm’rs v. FERC, 475 F. 3d 1227, 1279-80 (D.C. Cir. 2007). 
+
+--- PAGE 13 ---
+Docket No. RM26-4-000 
+ 
+13 
+ 
+wholesale electricity rates and any rule or practice directly affecting such rates.27 FERC 
+must ensure that “[a]ll rates and charges made, demanded, or received by any public 
+utility for or in connection with the transmission or sale of electric energy subject to the 
+jurisdiction of the Commission shall be just and reasonable,”28 and FERC has the 
+authority to remedy any unreasonable or unduly discriminatory practices.29 This 
+jurisdiction gives FERC the authority to correct unjust and unreasonable rates or unduly 
+discriminatory or preferential practices that may arise with the interconnection of large 
+loads.  
+The rapid interconnection of new large loads to the transmission system—and the 
+terms on which those new large loads are incorporated into FERC-jurisdictional 
+markets—are practices directly affecting wholesale rates, terms and conditions for 
+energy, ancillary services, and capacity market prices. For example, the incorporation of 
+new large loads as demand in PJM’s capacity market is one of the principal drivers of 
+recent dramatic increases in capacity market clearing prices. PJM identified a “3,243 MW 
+increase in forecasted load” as one of the drivers of skyrocketing prices in the 2025/2026 
+Base Residual Auction (“BRA”).30 Likewise, PJM identified a “5,446.1 MW increase in 
+forecasted load” as one of the “[k]ey planning parameter changes” that led the capacity 
+market to clear at its cap in the 2026/2027 BRA.31  And PJM expects this trend to 
+ 
+27 EPSA, 577 U.S. at 277. 
+28 16 U.S. Code § 824d(a). 
+29 New York, 535 U.S. at 7. 
+30 PJM, 2025/2026 Base Residual Auction Report, at 3, (July 30, 2024), https://www.pjm.com/-
+/media/DotCom/markets-ops/rpm/rpm-auction-info/2025-2026/2025-2026-base-residual-auction-report.pdf.   
+31 PJM, 2026/2027 Base Residual Auction Report, at 3 (July 22, 2025), https://www.pjm.com/-
+/media/DotCom/markets-ops/rpm/rpm-auction-info/2026-2027/2026-2027-bra-report.pdf. 
+
+--- PAGE 14 ---
+Docket No. RM26-4-000 
+ 
+14 
+ 
+continue at least through the 2030s. PJM’s Independent Market Monitor (“IMM”) 
+similarly explains that “the failure to recognize and address the role of large data center 
+loads is a direct cause of higher prices and will continue to result in even higher prices 
+unless the related issues are addressed.”32 Because the rules for how to incorporate new 
+large loads into FERC-jurisdictional markets such as PJM’s capacity market are practices 
+directly affecting wholesale rates, the Commission “has the authority—and, indeed, the 
+duty—to ensure that rules or practices ‘affecting’ wholesale rates are just and 
+reasonable.”33 As the Commission develops DOE’s Proposal into a regulation, it should 
+take care to ensure that new large loads do not cause unjust and unreasonable costs for 
+other ratepayers.  
+c. FERC’s authority under section 215 of the FPA   
+FERC also has jurisdiction to regulate the interconnection of large loads under 
+FPA section 215. Section 215 of the FPA outlines FERC’s reliability jurisdiction, which 
+could serve as an avenue for FERC to address the reliability concerns associated with the 
+interconnection of incoming large loads. Section 215 of the FPA gives FERC jurisdiction 
+over “all users, owners and operators of the bulk-power system,” and mandates that “[a]ll 
+users, owners and operators of the bulk-power system shall comply with reliability 
+standards.”34  A large load interconnected to the transmission system would clearly be a 
+user of the bulk-power system.  Section 215(d)(5) also allows FERC to direct the North 
+ 
+32 Monitoring Analytics, State of the Market Report for PJM, at 1, 306 (Aug. 14, 2025), 
+https://www.monitoringanalytics.com/reports/PJM_State_of_the_Market/2025.shtml 
+33 EPSA, 577 U.S. at 266, 277. 
+34 16 U.S.C. § 824o(b)(1).  
+
+--- PAGE 15 ---
+Docket No. RM26-4-000 
+ 
+15 
+ 
+American Electric Reliability Corp, which develops reliability standards subject to FERC 
+oversight, to develop or modify standards to address a specific matter.35  NERC is 
+currently evaluating the effects of large loads on the reliability of the bulk-power system and 
+whether it needs to act to set standards for large loads. If necessary, FERC could order NERC to 
+submit new or modified reliability standards to FERC to address the reliability of large loads. 
+  
+2. 
+FERC should continue to be mindful not to overstep its 
+jurisdiction by regulating matters that the FPA reserves to the states.  
+  
+While it is important for FERC to exercise its jurisdiction over some issues 
+affecting the interconnection of large loads and their imposition of costs on other 
+consumers—especially to regulate issues like wholesale market practices where states 
+lack authority—it is also important for FERC to recognize that the states have authority 
+here as well. As noted in the DOE ANOPR, FERC must take care not to “even arguably 
+affect[] the [s]tates' jurisdiction over generation facilities, facilities used in local 
+distribution or only for the transmission of electric energy in intrastate commerce, or 
+transmissions consumed by the transmitter.”36 While FERC has the authority to regulate 
+wholesale sales of electricity in interstate commerce and the transmission of electric 
+energy in interstate commerce, the law “leaves to the States alone the regulation of ‘any 
+other sale,” maintaining “a zone of exclusive state jurisdiction,”37 
+ 
+35 16 U.S.C. § 824o(d)(5). 
+36 DOE ANOPR at P 18. 
+37 EPSA  at 280. 
+
+--- PAGE 16 ---
+Docket No. RM26-4-000 
+ 
+16 
+ 
+States have an interest in ensuring resource adequacy and protecting consumers 
+from cost shifts.  Many states have adopted policies that can make it easier to connect 
+new large loads while also addressing the affordability and reliability of electricity to 
+other customers.38 Some include measures like requiring a new large load to subsidize 
+energy efficiency efforts in the local area to free up capacity for the large load while 
+benefiting local residents and businesses or providing rate relief to certain retail 
+customers. For example, a recently approved settlement requires three large data center 
+customers to contribute $500,000 annually for five years towards the Indiana Community 
+Action Association to be used for low-income assistance, weatherization, and other 
+programs.39 Other policies seek to grant queue priority for large customers who benefit 
+state economic development priorities or communities, including the recently approved 
+Evergy Kansas settlement and the proposed changes to ComEd’s GT&C tariff in 
+Illinois.40  Importantly, many state utility commissions have either already approved or 
+are in the process of establishing large load tariffs intended to insulate other customers 
+from inappropriately bearing the costs utilities incur to interconnect large loads. FERC 
+must ensure that any rules it adopts do not impede these programs. 
+ 
+38 See generally, Andrew Satchwell et al., Lawrence Berkeley Laboratory, Electricity Rate Designs for 
+Large Loads: Evolving Practices and Opportunities (January 2025) at 3-4, 10-11 (describing the types of controls 
+that states are implementing). 
+39 See Indiana Utility Regulatory Commission Cause No. 46097 (https://iurc.portal.in.gov/docketed-case-
+details/?id=b8cd5780-0546-ef11-8409-001dd803817e). 
+40 See Kansas Corporation Commission Docket No. 25-EKME-315-TAR 
+(https://estar.kcc.ks.gov/estar/portal/kscc/PSC/DocketDetails.aspx?DocketId=af2fbd6a-5ee7-4ad1-a3ae-
+4dfff1afcb87), and Illinois Commerce Commission Docket No. 25-0680 (https://icc.illinois.gov/docket/P2025-
+0680/documents). 
+
+--- PAGE 17 ---
+Docket No. RM26-4-000 
+ 
+17 
+ 
+FERC recently recognized that its jurisdiction over large loads is limited. On 
+October 27, 2025, FERC rejected Tri-State Generation and Transmission Association 
+(Tri-State)’s proposed High Impact Load (HIL) Tariff.41 Tri-State, a nonprofit wholesale 
+generation and transmission cooperative, filed a proposed tariff on August 28, 2025, 
+which included a comprehensive study process to evaluate High Impact Load requests 
+(the “HIL program”).42  
+FERC correctly decided that that Tri-State’s proposal presented “an impermissible 
+intrusion on retail rate regulation and thus [was] not subject to the Commission’s 
+authority pursuant to section 205 of the FPA.”43 FERC found that Tri-State’s HIL Tariff 
+dictated specific terms and conditions of the retail sale of electricity, specifically by 
+setting requirements for certain minimum load and energy amounts and maximum 
+monthly retail energy or demand caps.44  
+FERC also reasonably declined to address other jurisdictional issues raised by the 
+protesters, particularly questions regarding the extent of FERC’s jurisdiction over 
+transmission-level interconnections of large loads, as that issue was not properly 
+presented in that docket. However, DOE’s Proposal may now require FERC to grapple 
+with broader questions about the extent of its jurisdiction over the interconnections of 
+large loads to the transmission system.  
+ 
+41 193 FERC ¶ 61,070, at P 1 (2025). 
+42 Id. 
+43 Id. at 19. 
+44 Id. at 21. 
+
+--- PAGE 18 ---
+Docket No. RM26-4-000 
+ 
+18 
+ 
+The electric system is complex and sits at the confluence of state and federal 
+jurisdiction, and FERC and the states have had to work cooperatively on many issues.  As 
+the Supreme Court has noted, the FPA incorporates principles of “cooperative 
+federalism” with respect to the roles of state and federal regulators in energy regulation.45 
+For example, the Court has acknowledged the interconnectedness of wholesale and retail 
+ratemaking, holding in Hughes v. Talen Energy Marketing, that “[s]tates, of course, may 
+regulate within the domain Congress assigned to them even when their laws incidentally 
+affect areas within FERC’s domain,”46 while holding in FERC v. Electric Power Supply 
+Association that “a FERC regulation does not run afoul of [the FPA]  just because it 
+affects—even substantially—the quantity or terms of retail sales.”47  The Court further 
+established that the FPA “makes federal and state powers ‘complementary’ and 
+‘comprehensive,’ so that ‘there [will] be no “gaps” for private interests to subvert the 
+public welfare.”48 
+Following with the spirit of the cooperative federalism principles outlined in EPSA 
+and Hughes, we encourage FERC to set minimum standards governing the 
+interconnection of new large loads—floors, not ceilings—to allow for more rigorous state 
+regulation and encourage RTO/ISOs and utilities to work closely with state regulators to 
+address the incoming large load demands.  
+  
+B. Studying Large Loads 
+ 
+45 EPSA, 577 U.S. at 288. 
+46 Hughes, 578 U.S. at 164. 
+47 EPSA, 577 U.S. at 281. 
+48 Id. at 289. 
+
+--- PAGE 19 ---
+Docket No. RM26-4-000 
+ 
+19 
+ 
+1. 
+DOE NOPR: Principles 4 through 6 
+DOE set out several principles that concern how the FERC rule should address 
+studying large loads.  Principle 3 provides that, “to the extent practicable, load and [co-
+located loads] should be studied together with generating facilities.”49 DOE states that 
+this will allow for efficient siting of loads and generating facilities, minimizing the need 
+for costly network upgrades. The ANOPR provides an example of siting a large load near 
+or at the same point of interconnection as a new generating facility, which could reduce 
+the network upgrades needed to interconnect only the load or only the generating facility. 
+Principle 4 would also require large loads and co-located loads to be subject to 
+standardized study deposits, readiness requirements, and withdrawal penalties.50 
+According to DOE, “[t]hese provisions deter speculative projects and provide 
+transmission providers with more useful information to more accurately forecast demand 
+on their systems.” DOE also explicitly seeks comment on whether additional 
+commitments or financial penalties would be appropriate. 
+Principle 5 provides that co-located loads should be studied based on the amount 
+of injection and/or withdrawal rights requested as an incentive for large loads to co-locate 
+with new generation. DOE provides an example of a co-located load consisting of a 500 
+MW load and a 600 MW generating facility seeking no withdrawal rights and 100MW of 
+injection rights.  
+ 
+49 DOE ANOPR at P 20.  
+50 DOE ANOPR at P21.  
+
+--- PAGE 20 ---
+Docket No. RM26-4-000 
+ 
+20 
+ 
+Principle 6 provides that “any [co-located load] interconnection shall be required 
+to install the system protection facilities necessary to prevent unauthorized injections or 
+withdrawals that exceed the respective rights.” 
+2. 
+Comments 
+We agree with the principles in the DOE proposal that seek to maintain reliability 
+and minimize cost while interconnecting large loads.  However, this must be paired with 
+a principle that new large loads cannot disadvantage existing customers – either from a 
+reliability or cost perspective. Further, as discussed above, we believe that FERC should 
+look at this as a near-term issue, while also looking for a long-term solution that will 
+create transmission planning, interconnection, and market processes that can successfully 
+plan for the integration of these large loads as a regular course of business.  We 
+understand that we are in a period of rapid integration of large loads to the grid while it 
+takes time to plan and build new generation and transmission resources, and FERC may 
+need to address this near-term need with specialized tools.  If we can get transmission 
+planning and interconnection rules right, together with proper forecasting, grid operators 
+can mitigate the issues in the long-term. This must include consideration of the 
+interregional transmission capacity that is needed to ensure reliability, which will also 
+help integrate new loads.51 Importantly, in the long term, building out the system in 
+response to discrete, emergent needs rather than through proactive, forward-looking, 
+system-wide planning fails to identify the most cost-effective infrastructure investments, 
+ 
+51 See generally NERC Interregional Transfer Capability Study, available at 
+https://www.nerc.com/initiatives/additional-initiatives/interregional-transfer-capability-study-itcs. 
+
+--- PAGE 21 ---
+Docket No. RM26-4-000 
+ 
+21 
+ 
+which would solve the reliability issues associated with new large loads and provide 
+broader system benefits.52 The magnitude of estimated load growth necessitates a more 
+systematic approach to addressing these needs in the long term to ensure a reliable and 
+affordable grid.  
+To that end, Principle 3 is a step in the right direction. Studying system needs 
+holistically is essential to ensuring least-regrets system planning.  FERC should set a 
+long-term course where utilities plan for their system needs - transmission, generator 
+interconnection, and the needs of loads – by either more closely coordinating existing 
+transmission planning and generator interconnection processes or in a single 
+comprehensive process.  Accounting for all system needs by considering transmission 
+planning, generator interconnection, and the need to serve all loads will ultimately 
+increase transparency, reduce costs, and cut inefficiencies.53 That said, we recognize the 
+need for processes to quickly interconnect new loads in a just and reasonable and not 
+unduly discriminatory way while the Commission and states work on a long-term 
+solution.   
+ 
+52 See Order No. 1920 at P 136 (“By expanding the transmission planning horizon and considering factors 
+affecting Long Term Transmission Needs, as well as considering a broader list of benefits, transmission providers 
+will be able to identify, evaluate, and select more efficient or cost-effective transmission solutions to address Long-
+Term Transmission Needs. Such Long-Term Regional Transmission Planning will: (1) reduce reliance on 
+transmission solutions that are relatively inefficient or less cost-effective because they address only short-term 
+transmission needs; (2) unlock the benefits of economies of scale in transmission investment;(3) enable 
+opportunities to “right size” replacement transmission facilities; (4) facilitate the selection of regional transmission 
+facilities that could address multiple transmission needs over different time horizons; and (5) provide states, utilities, 
+customers, and other stakeholders with greater insight and transparency into the costs and benefits of particular 
+transmission solutions to address Long-Term Transmission Needs. We conclude that these regional transmission 
+planning and cost allocation reforms will benefit customers by leading to more efficient or cost-effective 
+transmission investment, thereby helping to ensure just and reasonable rates”). See also PIO Comments (Docket No. 
+EL25-49-000) at 13-14. 
+53 See SPP’s CPP https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20251103-
+5149&optimized=false&sid=7c8ec448-abb4-495d-b95e-f5d1266d32e4  
+
+--- PAGE 22 ---
+Docket No. RM26-4-000 
+ 
+22 
+ 
+In setting up a short-term solution structure, FERC must ensure that any new 
+processes do not disadvantage current market participants or interconnection customers. 
+There are at least three ways a large load can acquire its own generation: (1) enter into an 
+agreement with existing generation for all or most of its energy production, (2) enter into 
+an agreement with a generator in the current interconnection queue, or (3) develop its 
+own new generation. In addition, FERC should make clear that these studies can and 
+should include studying battery storage – either co-located with the large load or as an 
+addition to existing generation - as an option for integrating large loads.54 Battery storage 
+can be deployed quickly—on average within 1.7 years—making them an ideal part of the 
+solution to the short-term concerns about interconnecting new large loads.55  Moreover, 
+during much of the year, there is sufficient capacity to serve this new demand. It is only 
+during a few hours and days when demand would exceed supply that additional 
+generation would be needed. Battery storage is a good solution to meet this short-term 
+need. The Nicholas institute found that the grid could integrate 98 GW of new load at an 
+average annual load curtailment rate of 0.5%, and 126 GW at a rate of 1.0%56 - some of 
+that capacity could be addressed by the addition of battery storage.  
+ 
+54 While outside the scope of this rulemaking proceeding, PIOs also note that significant capacity gains can 
+be made through the addition of Advanced Transmission Technologies (ATTs) to the system.  ATTs can boost 
+capacity by an additional 20 to 100 GW of peak demand without building new wires.  FERC should consider ways 
+within its authority to encourage the adoption of these technologies as an additional way to meet growing loads. See 
+ESIG, Grid-Enhancing Technologies: Priorities for a Modern, Efficient, and Flexible Grid 8–9 (July 2025), 
+available at https://www.esig.energy/wp-content/uploads/2025/07/ESIG-Grid-Enhancing-Technologies-report-
+2025.pdf;  
+55 See Solar Energy Industries Association, Why Batteries Are the Electric Grid’s Most Powerful Asset, 
+(Apr. 2025), https://seia.org/blog/why-batteries-are-the-electric-grids-most-powerful-asset/ (" a new battery 
+project takes approximately 20 months on average”).  
+56 Rethinking Load Growth: Assessing the Potential for Integration of Large Flexible Loads in US Power 
+Systems at 2, available at https://nicholasinstitute.duke.edu/sites/default/files/publications/rethinking-load-
+growth.pdf 
+
+--- PAGE 23 ---
+Docket No. RM26-4-000 
+ 
+23 
+ 
+As discussed below with respect to Principle 10, FERC should not allow any 
+single customer to claim either full or partial rights to the generation from an existing 
+generator because it can cause reliability and resource adequacy concerns for the rest of 
+the system. 
+Still, we support the concept of studying load with generation to minimize the 
+need for network upgrades.  Notably, any FERC rule must ensure that studying 
+generation with only these large loads does not disadvantage current market participants 
+or interconnection customers. It already takes far too long to interconnect a generator to 
+the grid.  Adding one-off processes can add administrative and modeling complexity to 
+utility processes that may delay the utility’s timely processing of existing queue requests, 
+reduce transparency, and further erode stakeholder confidence in the interconnection 
+process.  FERC should emphasize accelerating interconnection processes generally over 
+adopting separate fast-tracks, and must at least implement safeguards to prevent fast-
+tracks from causing harm to the existing generator interconnection process. 
+Moreover, FERC must ensure that any decision to study generation with large 
+loads does not create unintended consequences. Using DOE’s example of siting a large 
+load near or at the same point of interconnection as a new generating facility – FERC 
+must ensure that such a choice does not force network upgrade costs that would otherwise 
+be shared onto other customers or degrade reliability or resource adequacy for others. For 
+example, if that generator is already in the queue, it may have been planned to address a 
+resource adequacy concern in the region. FERC should not allow the new large load to 
+automatically assume that the generator will serve only that load without assessing its 
+
+--- PAGE 24 ---
+Docket No. RM26-4-000 
+ 
+24 
+ 
+effects on the region. In addition, removing a generator from the queue could have 
+negative impacts on the rest of the queue – particularly if it has already been assigned to a 
+cluster or been partially studied.  This could lead to re-studies or impose costs on other 
+generators in the queue in an unjust and unreasonable way that is inconsistent with Order 
+No. 2023. In creating new rules, FERC should set out safeguards that ensure that any 
+decision to pair a large load with new generation does not impact existing customers or 
+other generators in the queue.  
+We generally agree with Principle 5 that co-located loads should be studied based 
+on the amount of injection and/or withdrawal rights requested. That said, such a study 
+must be paired with a commitment not to take service from the grid that exceeds that 
+which was studied. In DOE’s example of a co-located loads consisting of a 500 MW load 
+and a 600 MW generating facility seeking no withdrawal rights and 100MW of injection 
+rights, that means that the load should not be allowed to take transmission above that 100 
+MW unless it is available after all other customers have taken service. We discuss 
+curtailment principles below.   
+Moreover, DOE's Principle 5 does not address what happens if the generator is on 
+outage or operating below 500 MW output.  In that case, the large load’s right to take 
+transmission service should be reduced in parallel. In sum, unless appropriate control 
+technologies are included, as DOE’s Principle 6 contemplates, or the load is willing to 
+completely curtail, it should have to be studied at whatever minimum level it wants to be 
+guaranteed to operate at, and also have withdrawal rights for that amount. 
+
+--- PAGE 25 ---
+Docket No. RM26-4-000 
+ 
+25 
+ 
+Principle 6 in DOE’s proposal offers a common-sense way to ensure that co-
+located loads remain within the limits of their agreed-upon terms of service. Principle 6—
+that “any hybrid interconnection shall be required to install the system protection 
+facilities necessary to prevent unauthorized injections or withdrawals that exceed the 
+respective rights”—appropriately focuses on control technologies as a primary approach 
+rather than on financial incentives. Control technologies are a better approach because 
+they can allow direct control of injections or withdrawals and thus prevent any harm 
+associated with unauthorized actions, such as distortions in market prices or threats to 
+reliability. While penalties for unauthorized injections or withdrawals may also be 
+helpful, they will not prevent unauthorized actions or their harmful consequences in the 
+first instance. Moreover, unless penalties are set high enough, an entity that stands to gain 
+more from an unauthorized withdrawal or injection than it would lose from the penalty 
+may simply view the penalty as the cost of doing business—and may unjustly and 
+unreasonably impose excess costs or reliability risks on other consumers. Control 
+technologies are a superior approach, and we encourage FERC to consider requiring the 
+use of appropriate control technologies to control withdrawals for all new large loads 
+rather than only for co-located facilities. 
+Finally, FERC should consider whether the rules should provide a pathway to firm 
+service by either requiring the curtailable interconnection to be some form of temporary 
+authorization, with an obligation to study what would be necessary to fully serve the load 
+at some defined point in the future, or allow a large load to request a study on what would 
+be necessary for full service in the future. 
+
+--- PAGE 26 ---
+Docket No. RM26-4-000 
+ 
+26 
+ 
+With respect to Principle 4, we agree that FERC should set minimum standards to 
+promote accurate load forecasting and guard against the risk of speculative or duplicative 
+large load interconnection requests. We agree that FERC could use the standards set in 
+Order No. 2023 and the NERC July 2025 Large Loads Taskforce Whitepaper57 as a guide 
+to setting load interconnection standards, but reserve comments on this until we see 
+specific proposals. Regions could go above and beyond these minimal standards, but 
+FERC should establish a floor.  
+C. Curtailable Loads 
+1. 
+DOE NOPR: Principle 7 
+Principle 7 states that large loads and/or co-located loads that agree to be 
+“curtailable and dispatchable” should be eligible for expedited interconnection. The 
+ANOPR specifically seeks comment on details of any such expedited interconnection 
+process. 
+2. 
+Comments 
+We agree with the overarching reality that demand from new large loads threatens 
+to outstrip supply, especially during grid emergencies and extreme weather events. This 
+threat increases the risk of blackouts, mandatory curtailments, and high scarcity prices 
+across the United States for all customers. As such, it is important that both FERC and 
+states grapple with questions of curtailment priority and flexibility requirements for new 
+large loads to ensure that this risk is appropriately allocated, while respecting 
+ 
+57 https://www.nerc.com/globalassets/who-we-are/standing-committees/rstc/whitepaper-characteristics-and-risks-of-
+emerging-large-loads.pdf   
+
+--- PAGE 27 ---
+Docket No. RM26-4-000 
+ 
+27 
+ 
+jurisdictional boundaries. Significant gains can be made with fairly minor curtailment. 
+According to the Nicholas Institute, “76 GW of new load—equivalent to 10% of the 
+nation’s current aggregate peak demand—could be integrated with an average annual 
+load curtailment rate of 0.25%.”58  Increasing that to 0.5% could yield 98 GW of new 
+load and 1% would lead to 126 GW of new loads. Moreover, Duke and the Nicholas 
+Institute recently noted that large load flexibility can achieve three key achieve three key 
+benefits:  
+(1) faster interconnection times for large loads,  
+(2) avoided or deferred transmission investments, and  
+(3) avoided generation capacity investments, and/or near-term reliability and 
+affordability for all customers as supply catches up with rising demand.59 
+ 
+Duke/Nicholas recognize that DOE stated its curtailment principle at a high level 
+and leaves to FERC the question of how to implement a large load interconnection rule 
+that realizes the benefits of flexibility.  They lay out four issues that FERC would need to 
+address, which we endorse:  
+1. Enable large load flexibility commitments to avoid or defer transmission 
+upgrades 
+2. Enable large load flexibility commitments to reduce capacity procurements 
+3. Enable flexible large loads to access non-firm withdrawal and, as applicable, 
+injection rights 
+4. Clarify study timelines, queue priority, and interconnection process for large load 
+customers, as well as load-supply [co-located loads] facilities and pairings.60 
+ 
+ 
+58 Rethinking Load Growth: Assessing the Potential for Integration of Large Flexible Loads in US Power 
+Systems at 2, available at https://nicholasinstitute.duke.edu/sites/default/files/publications/rethinking-load-
+growth.pdf 
+59 Duke/Nicholas Institute, How DOE’s Proposed Large Load Interconnection Process Could Unlock the 
+Benefits of Load Flexibility Considerations for Rulemaking at 3, available at 
+https://nicholasinstitute.duke.edu/sites/default/files/publications/how-does-proposed-large-load-interconnection-
+process-could-unlock-benefits-load-flexibility.pdf.  
+60 Id. 
+
+--- PAGE 28 ---
+Docket No. RM26-4-000 
+ 
+28 
+ 
+Large load interconnection can and should be managed via curtailment until new 
+generation not already in the queue is added. Before speaking to the details of any 
+expedited interconnection priority for large loads that “agree to be curtailable and 
+dispatchable,” we believe it is crucial to first establish four principles that should guide 
+any decision regarding the curtailment or expedited interconnection of large loads. This 
+has been a key issue in a recent PJM “Critical Issue Fast Path” (CIFP) process on the 
+integration of large loads, and we will use examples from the PJM CIFP process where 
+appropriate. 
+First, FERC must not infringe upon state retail authority. Second, FERC must 
+establish guidelines to limit unfair allocation of reliability risks at the wholesale level. 
+Third, FERC should establish guidelines that balance two competing risks: the risk of 
+curtailment on large loads, and the risk of high energy prices or scarcity prices on all 
+customers. Curtailed too early, and large loads face potentially long and frequent outage 
+periods, during which they may need to rely on backup generation. Curtailed too late, and 
+all other customers will be forced to shoulder high energy prices and even scarcity prices 
+that can reach millions of dollars per minute. Striking the right balance to ensure fair 
+service is provided to large loads while protecting other customer classes is crucial. 
+Fourth, FERC should endeavor to utilize existing programs and market products 
+that may achieve the same goals set out by the DOE to enhance flexibility of large loads, 
+including demand response. These programs sit squarely within wholesale jurisdiction 
+and may bring about the same benefits as “curtailment.”  These existing programs may be 
+
+--- PAGE 29 ---
+Docket No. RM26-4-000 
+ 
+29 
+ 
+used to both provide a large load with firm service, as well as to hedge against 
+curtailment risk during grid emergencies, as explained in the third principle. 
+Several RTOs have been considering how to address the curtailment of large loads.  
+There are many ways FERC could navigate the need for curtailiability. NRDC proposed 
+one potential simple solution to curtailment in the PJM CIFP process: curtailments for 
+any non-capacity backed large loads (i.e., large loads that have not paid for firm service) 
+would be determined by PJM at the zonal level. For example, if a 500 MW new large 
+load connects to PJM with 300 MW of new capacity (in the form of new supply or 
+demand response deliverable to the new large load), the remaining 200 MW of non-firm 
+load could be subject to curtailment. During an emergency, PJM would allocate this 
+curtailment at the wholesale level, by telling the relevant Locational Deliverability Area 
+that it needs to curtail load by 200 MW. It would be up to the state regulators to further 
+allocate this curtailment between retail customers. This separation of responsibilities 
+could help avoid jurisdictional disputes.  
+In the PJM CIFP, NRDC attempted to balance the risk of curtailment of large loads 
+and the risk of high prices to other customers by proposing to curtail any large loads that 
+have not secured firm service with other demand response resources on the early side, but 
+always prior to scarcity pricing intervals. Additionally, any curtailment requirements must 
+not allow a backup generator to be in violation of state or federal air quality laws or 
+maximum backup generation run-time requirements. FERC could also provide guidance 
+on pathways for large loads to hedge against curtailment risks, for example by utilizing 
+energy-only resources to net against demand response.  
+
+--- PAGE 30 ---
+Docket No. RM26-4-000 
+ 
+30 
+ 
+Overall, large loads can pose serious risks to the public if guaranteed firm service 
+without a plan for flexibility or to bring on new supply – indeed, “firm service” may not 
+be a guarantee that RTOs can make for any customer based on current projections. We 
+agree with the intent of encouraging flexibility in order to minimize reliability risks, but 
+believe that the four principles outlined here must be respected while developing any 
+curtailment or wholesale interconnection guidelines. To provide FERC with further 
+information about the practicalities of curtailment , we recommend FERC host a 
+technical conference and invite data center developers, NERC, and others to discuss these 
+practicalities.  
+D. Network Upgrades, Transmission Costs, and Ancillary Services 
+1. 
+DOE NOPR: Principles 8 through 12 
+Principles 8 through 12 generally aim to ensure that new large loads and co-
+located loads remain responsible for costs associated with their interconnection to the 
+grid, and that they receive comparable treatment to other resources connecting to the 
+grid.61   
+Principle 8 is that load and co-located loads should be fully responsible for the 
+network upgrades associated with their interconnection, and FERC and DOE specifically 
+seek comment on whether network upgrade costs can be offset through a crediting 
+mechanism over time.  
+ 
+61 DOE ANOPR at PP 25-29. 
+
+--- PAGE 31 ---
+Docket No. RM26-4-000 
+ 
+31 
+ 
+Principle 9 is that load and co-located loads should have an equivalent option to 
+build network upgrades as interconnecting generators.  
+Principle 10 requires that when generating facilities seek to serve new large loads 
+rather than meet existing demand, a study must evaluate any network upgrades necessary 
+to maintain reliability. Principle 10 requires that the generator fund network upgrades that 
+the study finds necessary, and that the generator may suspend service to existing demand 
+only after the upgrades are complete. The ANOPR seeks comment on whether the study 
+should address resource adequacy.  
+Principle 11 requires utilities serving load and co-located loads to be responsible 
+for transmission service based on the facilities’ withdrawal rights.  
+Principle 12 requires utilities serving large load and co-located loads to be 
+responsible for ancillary services based on peak demand. 
+2. 
+Comments   
+These principles are generally consistent with the rule that costs must be allocated 
+roughly commensurate with benefits and will help to protect against unreasonably 
+shifting costs. As such, PIOs broadly support these principles, subject to the comments 
+below.  
+As FERC crafts a rule regarding the interconnection of large or co-located loads, 
+the FPA’s fundamental cost-allocation precepts should be the guiding star. Under those 
+precepts, “all rates must reflect to some degree the costs actually caused by the customer 
+
+--- PAGE 32 ---
+Docket No. RM26-4-000 
+ 
+32 
+ 
+who must pay them.”62 Where an entity “benefits from the costs of new facilities, it may 
+be said to have ‘caused’ a part of the facilities.”63 This principle prevents shifting costs to 
+ratepayers who “derive no benefits, or benefits that are trivial in relation to the costs 
+sought to be shifted.”64 
+Under these fundamental cost-allocation principles, FERC’s rule must ensure the 
+just and reasonable allocation of the costs of network upgrades and transmission costs. 
+Any rule that FERC issues in this docket must ensure that new large loads or co-located 
+loads bear responsibility for the costs they cause by interconnecting to the grid. Similarly, 
+the rule must prevent the shifting of costs caused by large load interconnections onto 
+other consumers who receive no benefits, or trivial benefits, from the network upgrades 
+required to serve the interconnecting large loads. To the extent that current tariffs lack 
+mechanisms to identify the beneficiaries of network upgrades, FERC should require 
+updates to existing tariffs to guarantee that costs can be allocated in a just and reasonable 
+manner.  
+a. Comments on Principle 8  
+Principle 8—that “load and [co-located loads] should be responsible for 100% of 
+the network upgrades that they are assigned through the interconnection studies”—is 
+generally consistent with the FPA’s cost-allocation principles. Where large load 
+interconnections require network upgrades, the large loads actually cause the costs to be 
+incurred and must be responsible for those costs. Moreover, new large loads or co-located 
+ 
+62 Ill. Com. Comm’n v. FERC, 576 F.3d 470, 476 (7th Cir. 2009). 
+63 Id. 
+64 Id. 
+
+--- PAGE 33 ---
+Docket No. RM26-4-000 
+ 
+33 
+ 
+loads are the sole beneficiaries of the network upgrades required for their 
+interconnection; neither the new large loads nor the network upgrades required to serve 
+them provide significant benefits to the broader grid or other ratepayers. For example, 
+data from the PJM region show that transmission upgrades driven by data center loads 
+have not led to system benefits, but rather only provide the benefit of allowing the large 
+load to operate:65  
+Project / Location 
+Scope / Cost 
+Purpose / 
+Trigger 
+Why It Doesn’t 
+Benefit the Whole 
+System 
+Planning Process 
+Who Pays 
+Source 
+Wishing Star 
+Substation – 
+Loudoun County, 
+VA 
+$627.6M – New 
+500/230 kV 
+substation with tie-
+ins to Mosby and 
+Brambleton lines 
+7.5 GW of 
+projected load 
+growth in 'Data 
+Center Alley' 
+Tailored to serve 
+hyperscaler 
+reliability needs; no 
+evidence of CETL 
+or transfer capacity 
+benefit 
+RTEP – 2022 
+Window 3 
+Dominion 
+Zone 
+2022 PJM RTEP 
+Report, p. 61  
+Marley Neck 115 
+kV Substation – 
+BGE Zone 
+$107.6M – 
+Substation upgrade 
+with 230/115 kV 
+transformers 
+Overloads at 
+seven 
+Baltimore-area 
+facilities 
+PJM explicitly 
+states 'no broader 
+system benefits' 
+RTEP – 2024 
+Window 1 
+(Baseline Project 
+b3906) 
+BGE Zone 
+(Baseline) 
+2024 RTEP Window 
+1 Report, Proposal 
+295 
+Beaumeade 
+STATCOM – 
+Northern Virginia 
+300 MVAR Static 
+Synchronous 
+Compensator at 
+Beaumeade 
+Substation 
+Reactive power 
+support for 
+clustered 
+datacenter load 
+Voltage-only fix; 
+does not improve 
+bulk power flow or 
+transfer capability 
+RTEP – 2023 
+Baseline 
+Dominion 
+Zone 
+2023 PJM TEAC 
+Whitepaper, p. 12 
+Kraken Loop – 
+Fredericksburg 
+Corridor 
+$704M – 500 kV 
+loop and new 
+Kraken substation; 
+230 kV upgrades 
+deferred 
+Local overloads 
+and data center-
+driven load 
+growth near 
+North Anna 
+Local components 
+are deferred to M-3 
+process; no broader 
+regional impact 
+RTEP – 2024 
+Window 3 
+(Revised Proposal 
+967) 
+Dominion (for 
+now); 230 kV 
+deferred to M-
+3 
+2024 RTEP Window 
+3 Summary, Proposal 
+967 
+Talen–Amazon Co-
+Located Load – 
+Susquehanna 
+Nuclear 
+Up to 960 MW 
+behind-the-meter 
+load; capped at 480 
+MW to avoid 
+violations 
+Co-located load 
+increase at 
+nuclear plant 
+PJM confirmed 
+upgrades would be 
+triggered above 480 
+MW, with no 
+broader system 
+benefit 
+FERC 
+Interconnection 
+Filing – ER24-
+2172 
+Unknown (but 
+customer 
+would trigger 
+upgrades >480 
+MW) 
+FERC Order ER24-
+2172 
+ 
+Because other ratepayers receive no benefits, or trivial benefits, from the network 
+upgrades required to interconnect new large loads or co-located loads, it would be 
+ 
+65 See Comments of Public Interest Organizations, Docket No. EL25-49, at 13 (Apr. 23, 2025), Accession 
+No. 20250423-5243. 
+
+--- PAGE 34 ---
+Docket No. RM26-4-000 
+ 
+34 
+ 
+inconsistent with cost-allocation principles to allow the costs of those network upgrades 
+to be shifted to other ratepayers. Hence, it is appropriate for the new large loads or co-
+located loads to bear 100% of the cost of the network upgrades required for their 
+interconnection.  
+To effectuate this principle, FERC must ensure that load interconnection studies 
+are sufficiently rigorous and transparent to identify the beneficiaries of network upgrades 
+and enable cost-allocation that is roughly commensurate with the benefits. For example, 
+current processes in the PJM region fail to rigorously assess the costs and beneficiaries of 
+network upgrades to serve new large loads.66 FERC needs to ensure that such processes 
+are sufficiently rigorous and transparent. 
+FERC should not adopt a default crediting mechanism to offset the costs of 
+network upgrades required for large load interconnection. Again, because large loads are 
+the sole or primary beneficiaries of the network upgrades required for their 
+interconnection, it is appropriate for them to bear 100% of the costs of those upgrades. To 
+the extent that particular network upgrades could theoretically provide broader benefits to 
+other ratepayers, the relevant transmission-owning utility should bear the burden of 
+proposing a specific cost-allocation variation for that particular facility. To make such an 
+individualized proposal, the relevant transmission-owning utility should be required to 
+prove the degree to which the network upgrade would provide benefits to other 
+ratepayers, and to specify what group of ratepayers would receive those benefits. In such 
+ 
+66 See Comments of Public Interest Organizations, Docket No. EL25-49, at 7–24 (Apr. 23, 2025), 
+Accession No. 20250423-5243 (explaining how PJM’s “necessary study process” and “do-no-harm” studies fail to 
+gather sufficient information to enable a just and reasonable allocation of costs). 
+
+--- PAGE 35 ---
+Docket No. RM26-4-000 
+ 
+35 
+ 
+limited circumstances, a crediting mechanism might be a just and reasonable component 
+of a facility-specific cost-allocation proposal.  
+b. Comments on Principle 9 
+Principle 9, which would provide large loads and co-located loads an option to 
+build network upgrades equivalent to the option held by interconnecting generators, 
+appears just and reasonable and consistent with cost-allocation principles to the same 
+degree as equivalent provisions governing generator interconnection. Extending an 
+equivalent option to build for interconnecting large loads and co-located loads could also 
+help avoid arguments that FERC’s rule treats loads in an unduly discriminatory manner.67 
+Ultimately, this principle does not appear to shift costs of large load interconnections in a 
+manner inconsistent with cost-allocation principles.  
+c. Comments on Principle 10  
+PIOs do not believe that the Commission should adopt Principle 10.  Many regions 
+of the country are currently experiencing resource adequacy or reliability challenges. 
+Generation that has been on the system and serving existing load should not be allowed 
+to be essentially removed from the grid to serve a single customer.  In many cases, costs 
+of these facilities – or the network upgrades needed to interconnect them initially – have 
+been paid for by existing customers.  FERC should not allow any single customer to then 
+claim either full or partial rights to the existing generation. Principle 10 considers the 
+ 
+67 Such arguments may lack merit, because interconnecting large loads are not entirely similarly situated to 
+interconnecting generators. Interconnecting generators provide significant benefits to the grid, including by 
+providing resource adequacy and competition in the wholesale markets, whereas interconnecting large loads do not. 
+Nevertheless, there may be value to avoiding disputes about purportedly undue discrimination. 
+
+--- PAGE 36 ---
+Docket No. RM26-4-000 
+ 
+36 
+ 
+circumstance in which “an existing generation facility seeks to enter a partial suspension 
+to serve a new load at the same location.”68 However, the suspension of existing 
+generation to serve new large loads is inconsistent with cost-causation principles and 
+unjust and unreasonable because this practice shifts costs associated with maintaining 
+resource adequacy onto other consumers, as well as increasing reliability risks for 
+existing ratepayers.  
+When an existing generator suspends its service to existing load in order to instead 
+serve a new load, that suspension will increase costs associated with maintaining resource 
+adequacy for other consumers. In regions without an organized capacity market, such a 
+suspension may increase the frequency or intensity of scarcity pricing in energy markets. 
+In regions with organized capacity markets, such a suspension reduces the available 
+supply of capacity, which will in turn increase capacity costs. In either case, the effects of 
+shifting these costs to existing consumers may be profound. For example, in PJM, where 
+the capacity market is currently experiencing tight conditions, even seemingly small 
+reductions in the supply of capacity can impose billions of dollars in increased costs.69 
+While suspending service to the broader market to serve an interconnecting large load 
+may be economically attractive for the particular generator and the new large load, the 
+ 
+68 DOE ANOPR at P 27. 
+69  See  Md. Office of People’s Counsel, Bill and Rate Impacts of PJM’s 2025/2026 Capacity Market 
+Results & Reliability Must-Run Units in Maryland, at 8 (Aug. 2024) (“Synapse Report”), 
+https://opc.maryland.gov/Portals/0/Files/Publications/RMR%20Bill%20and%20Rates%20Impact%20Report_2024-
+08-14%20Final.pdf?ver=V9hZfyTmjLeNVt2Dg3cTgw%3d%3d; Monitoring Analytics, Analysis of the 2025/2026 
+RPM Base Residual Auction Part A, at 2 (Sept. 20, 2024) (“IMM Analysis of 2025/2026 Auction”), 
+https://www.monitoringanalytics.com/reports/Reports/2024/IMM_Analysis_of_the_20252026_RPM_Base_Residua
+l_Auction_Part_A_20240920.pdf (documenting how the exclusion of only roughly 500 MW of generation from the 
+capacity market inflated capacity market clearing prices by between $4 billion and $5 billion).  
+
+--- PAGE 37 ---
+Docket No. RM26-4-000 
+ 
+37 
+ 
+resulting cost shifts to other consumers are unjust and unreasonable and inconsistent with 
+cost-causation principles because other consumers receive no benefits from the 
+generator’s suspension or the large load’s interconnection.  
+These problems may be especially acute in states where traditional utilities own 
+generation. In those states, the inclusion of generation in the utilities’ rate base means that 
+other consumers have already paid for the construction and maintenance of the existing 
+generation; hence, the removal of the benefits for which those consumers have already 
+paid exacerbates the problem of increased costs of paying for resource adequacy moving 
+forward.  
+Suspending an existing generator to serve new loads also unjustly and 
+unreasonably imposes reliability risks on other consumers. Where existing generation is 
+necessary to maintain resource adequacy, its suspension increases the possibility that 
+supply will be insufficient to meet demand, potentially resulting in disruptions of electric 
+service. It is unjust and unreasonable to force ordinary ratepayers to bear an increased 
+risk of blackouts simply to facilitate new large loads buying up existing capacity.  
+Principle 10 only partially mitigates these concerns by requiring “a system support 
+resource (SSR)/reliability must run (RMR) type study.” Although allowing the 
+suspension of existing generation to serve new large loads would not be just and 
+reasonable, Principle 10 works to mitigate the reliability harms from that approach by: (1) 
+requiring a study to assess a suspension’s reliability impacts, (2) requiring the suspending 
+generator to pay the full cost of any network upgrades needed to maintain reliability, and 
+(3) allowing suspension only after those network upgrades are in place. That approach 
+
+--- PAGE 38 ---
+Docket No. RM26-4-000 
+ 
+38 
+ 
+mitigates the risk that a sudden suspension of existing generation could cause immediate 
+reliability risks. However, that approach does not protect existing consumers against the 
+increased costs associated with the existing generator’s suspension.  
+Ultimately, Principle 10 could allow the suspension of generators in a manner that 
+unjustly and unreasonably imposes additional costs and risks on existing consumers, and 
+Principle 10 would only partially mitigate those adverse impacts. For these reasons, 
+FERC should instead establish a default rule that does not permit the suspension of 
+existing generation to serve new large loads. However, to the extent that FERC does 
+permit the suspension of existing generation to serve new large loads, Principle 10 offers 
+a good first step to mitigate adverse reliability impacts from this approach. FERC should 
+also supplement Principle 10 by adopting additional measures to safeguard existing 
+consumers against increased costs caused by the suspension of existing generation.  
+d. Comments on Principle 11 
+FERC should clarify Principle 11 to avoid ambiguity. As drafted, Principle 11 does 
+not make entirely clear whether it intends to describe the responsibility of transmission-
+owning utilities, interconnecting large loads, or both. The intent appears to be to limit the 
+amount of transmission service that transmission-owning utilities must provide, and that 
+interconnecting large loads must purchase, based on the interconnecting large load or co-
+located loads’ withdrawal rights. Hence, the principle appears to apply to both 
+transmission-owning utilities and interconnecting large loads.  
+Under Principle 11, FERC can reasonably limit the transmission service that 
+transmission-owning utilities must provide, and that interconnecting large loads or co-
+
+--- PAGE 39 ---
+Docket No. RM26-4-000 
+ 
+39 
+ 
+located loads must purchase, only in concert with the ideas expressed in Principle 6. 
+Principle 6 requires co-located loads to “install the system protection facilities necessary 
+to prevent unauthorized injections or withdrawals that exceed the respective rights.”70 
+Similar system protection facilities should be required in order to limit the physical 
+ability of new large loads or co-located loads to utilize more transmission service than 
+their withdrawal or injection rights allow. Without such controls, Principle 11 could 
+unreasonably limit the study and buildout of the transmission grid and risk reliability 
+problems that could result if new large loads or co-located loads withdraw or inject more 
+energy than their rights allow. However, if new large loads and co-located loads are 
+properly controlled, then limiting the responsibility of transmission-owning utilities to 
+provide transmission service, and limiting the responsibility of new large loads or co-
+located loads to purchase transmission service, based on the new large load or co-located 
+loads’ withdrawal rights may be appropriate.  
+e. Comments on Principle 12  
+FERC should also clarify Principle 12. As currently drafted, Principle 12 states 
+that “utilities serving large loads, including those at [co-located loads], should be 
+responsible for ancillary services.”71 FERC should make clear that this principle governs 
+utilities’ responsibility to procure ancillary services. In particular, this principle should 
+clarify that utilities’ procurement of ancillary services should be based on peak demand 
+ 
+70 DOE ANOPR at P 23. 
+71 DOE ANOPR at P 29. 
+
+--- PAGE 40 ---
+Docket No. RM26-4-000 
+ 
+40 
+ 
+rather than being reduced by the degree to which co-located generation may reduce net 
+peak demand by offsetting some of the demand of a new large load.   
+We tentatively agree with the principle that utilities’ procurement of ancillary 
+services should be based on total peak demand, and not reduced by expected 
+contributions from generation co-located with large loads. In general, we believe that 
+calculating utilities’ needs for ancillary services based on peak demand should be more 
+accurate than reducing the need for ancillary services based on the expected performance 
+of co-located generation. Similarly, to the extent co-located generation does not reduce 
+the overall need for utilities to procure ancillary services (meaning that co-located 
+generation’s potential contributions of ancillary services are not accounted for through 
+such a reduction), it appears reasonable to allow those co-located generation resources to 
+offer ancillary services into the relevant markets.  
+However, our support for Principle 12 is tentative for two reasons. First, co-
+located generation may have limited ability to provide ancillary services, due to limits 
+imposed by control technologies that limit energy withdrawals or injections, or due to 
+contractual limits on withdrawals or injections.  
+More fundamentally, calculating utilities’ requirements to procure ancillary 
+services based on peak demand could result in shifting the costs of ancillary services 
+caused by the addition of large loads to existing consumers. To the extent that new large 
+loads increase the overall demand for ancillary services, it is essential that the new large 
+loads pay their fair share for such services. Ancillary services, including blackstart 
+services and others, are crucial to the reliable operation of new large loads. And because 
+
+--- PAGE 41 ---
+Docket No. RM26-4-000 
+ 
+41 
+ 
+even co-located loads will rely on such ancillary services, it is essential that they pay their 
+fair share.72 FERC should evaluate what mechanisms within its jurisdiction can ensure 
+that new large loads pay their fair share for ancillary services commensurate with the 
+degree to which new large loads cause the need for such services. To the extent FERC 
+concludes that the allocation of the increased cost of ancillary services is not within its 
+jurisdiction, but is instead a matter that states must regulate as part of retail rates, FERC 
+should at least ensure that the rules within FERC’s jurisdiction provide as much 
+transparency as possible regarding the degree to which different types of load contribute 
+to the need for ancillary services, so that states will be well-equipped with the necessary 
+information to ensure just and reasonable cost allocation at the retail level. 
+E. Reliability Reviews  
+1. 
+DOE NOPR: Principle 14 
+Principle 14 would require utilities serving large loads to meet all applicable 
+NERC reliability standards and Open Access Transmission Tariff (OATT) provisions.  It 
+also states that NERC should review its reliability standards to determine if new 
+registration categories or new or modified reliability standards are required to ensure 
+reliability of the bulk-power system. 
+2. 
+Comments  
+ 
+72 See, e.g., Comments of the Union of Concerned Scientists, Docket No. EL25-49-000, (Apr. 10, 2025), 
+Accession No. 20250411-5520. 
+
+--- PAGE 42 ---
+Docket No. RM26-4-000 
+ 
+42 
+ 
+Jim Robb, President and Chief Executive Officer of NERC, said it best: “There is 
+existing evidence that large loads impact BPS reliability.”73 Any FERC rulemaking on 
+this issue must ensure reliability.  Thus, we agree with the principle that utilities must 
+continue to meet mandatory reliability standards. We also agree that NERC should take a 
+look at its reliability standards and registration to determine if changes are warranted. 
+However, we note that the DOE Proposal missed one critical principle on reliability – it 
+does not make clear that large loads must also meet any applicable reliability standards 
+that may apply to them in the future.  FERC should be sure to remedy this oversight. 
+As noted above, section 215 of the FPA gives FERC jurisdiction over large loads 
+as users of the bulk-power system.74  NERC has set up a Large Load Task Force “to 
+better understand the reliability impact(s) of emerging large loads … and their impact on 
+the bulk power system.”75 Mr. Robb has indicated that in the first quarter of 2026, NERC 
+will develop additional findings, guidance, and steps forward to account for the BPS 
+reliability related needs associated with large load.   
+While NERC has indicated that it may need to “enhance” its existing reliability 
+standards, it should also assess whether it should register large loads as users of the bulk-
+power system and develop new reliability standards.  NERC and its Large Load Task 
+Force are a useful forum to do this work, but it should ensure that it moves swiftly. If 
+ 
+73 Pre-Conference Comments of the North American Electric Reliability Corporation, 2025 Reliability 
+Technical Conference, Docket No. AD25-8-000 at 15 (October 21, 2025). 
+74 See infra section c. See also 16 U.S.C. § 824o(b)(1).  
+75 NERC Large Loads Task Force (LLTF), https://www.nerc.com/comm/RSTC/Pages/LLTF.aspx.  
+
+--- PAGE 43 ---
+Docket No. RM26-4-000 
+ 
+43 
+ 
+necessary, FERC could order NERC to submit new or modified reliability standards to 
+FERC to address large loads.76  
+F. Implementation Plans  
+1. 
+DOE NOPR: Principle 13 
+Under Principle 13 there must be a plan to implement any reforms that FERC 
+adopts. DOE seeks comment on appropriate transition plans, including the treatment of 
+large load interconnections that are already being studied for interconnection. 
+2. 
+Comments 
+FERC should take care to adopt rules that do not disrupt existing processes – 
+either generator or large load interconnections.  We agree that FERC must create clear 
+guidance for large load interconnections already under interconnection assessment and 
+those that will soon join the study queue. FERC needs to clarify how far along in the 
+interconnection study process a new large load must be in order to be exempt from 
+FERC’s new standards, and/or if existing projects will need to be restudied to comply 
+with FERC’s new standards. FERC also needs to clarify in its transition plans how long 
+of a runway utilities will have for compliance so that they can anticipate which portfolio 
+of interconnection requests will need to apply any new FERC standards. Finally, FERC 
+should clarify in its transition plans whether and how FERC will require clusters to be 
+formed for interconnection study.  
+G. Other Issues  
+1. 
+Comments 
+ 
+76 16 U.S.C. § 824o(d)(5). 
+
+--- PAGE 44 ---
+Docket No. RM26-4-000 
+ 
+44 
+ 
+FERC may need to consider issues not addressed on the DOE ANOPR.  For 
+example, the DOE Proposal does not discuss how FERC’s anti-market manipulation 
+authority related to the purchase or sale or transmission of electricity under Section 222 
+of the FPA might apply to large loads.  For example, co-location arrangements involving 
+existing generators can heighten the concern with deficiencies in market power 
+mitigation rules by exacerbating certain market participants’ incentives to abuse market 
+power and engage in market manipulation. A market participant can exercise market 
+power or engage in market manipulation by withholding supply.77 The incentive to 
+withhold supply in energy markets grows as the portions of the supply curve used to meet 
+demand are more inelastic.78 This is because a given amount of withheld supply will tend 
+to have a greater impact on price as that portion of the supply curve becomes more 
+inelastic. Co-location arrangements that allow load to co-locate with existing generators 
+have the potential to exacerbate the incentive to withhold supply by changing the 
+generators on which the market relies to meet demand. If existing generators’ co-location 
+causes the market operator to more frequently rely on more inelastic portions of the 
+supply curve to meet demand, then market participants’ incentive to withhold supply is 
+greater.79 
+ Indeed, FERC has already had to exercise elements of this authority in various 
+proceedings involving large load customers.80 In particular, large loads have access to 
+ 
+77 See, e.g., Pub. Citizen v. FERC, 7 F.4th 1177, 1198 (D.C. Cir. 2021); FPA Section 203 Suppl. Pol’y 
+Statement, 120 FERC ¶ 61,060, at PP 60, 65 (2007). 
+78 See, e.g., Commonwealth Edison Co., 91 FERC ¶ 61,036, at 61,133 & 61,133 n.42 (2000). 
+79 See also PIOs Comments PIO Comments (Docket No. EL25-49-000) at 32-33. 
+80 See FERC Docket Nos. ER24-2172-000 / ER24-2172-001.  
+
+--- PAGE 45 ---
+Docket No. RM26-4-000 
+ 
+45 
+ 
+behind-the-meter generation, which they may be able to use to manipulate market pricing 
+to their advantage. FERC must determine whether changes to its market power and/or 
+market manipulation rules – or the tariff provisions dealing with market power – are 
+necessary to provide the guardrails needed to prevent abuses of market power or market 
+manipulation.81 
+IV. 
+Conclusion 
+We appreciate the opportunity to comment on the principles outlined in the DOE 
+ANOPR.  The DOE Proposal is a good start at setting principles for how FERC can 
+regulate the interconnection of large loads, but there are many details to be worked out. In 
+doing so, FERC must follow the guiding principle that new large loads should not be 
+permitted to harm affordability or reliability for existing consumers. New large loads 
+should be responsible for the costs they cause, they should not be allowed to imperil 
+reliability for other consumers, and FERC cannot allow utilities to unduly preference 
+large load customers over other types of customers. We look forward to seeing FERC’s 
+proposal on these matters.  
+ 
+ 
+ 
+ 
+ 
+ 
+81 See Practical Guidance and Considerations for Large Load Interconnections at 31 Gridlab (May 2025). 
+
+--- PAGE 46 ---
+Docket No. RM26-4-000 
+ 
+46 
+ 
+Respectfully submitted this 21st day of November, 2025,  
+/s/ Christy Walsh 
+Christy Walsh 
+Senior Attorney and Director of Federal 
+Energy Markets 
+Sustainable FERC Project  
+1152 15th St NW #300 
+Washington, DC 20005 
+202-909-6842 
+cwalsh@nrdc.org  
+ 
+ 
+/s/ Jackson Morris 
+Jackson Morris  
+Director, State Power Sector 
+Natural Resources Defense Council  
+40 W 20th St 11th Floor 
+New York, NY 10011 
+212-727-4468 
+jmorris@nrdc.org 
+ 
+ 
+ 
+/s/ Danielle C. Fidler  
+Danielle Fidler, Senior Attorney  
+Clean Air Task Force, Inc.  
+114 State Street, 6th Floor  
+Boston MA 02109  
+Dfidler@catf.us  
+ 
+/s/ Elizabeth R. Marx, Esquire 
+/s/Patrick M. Cicero 
+Elizabeth R. Marx, Esquire 
+Patrick M. Cicero, Esquire 
+Counsel for Coalition for Affordable 
+Utility Services and Energy Efficiency in 
+Pennsylvania 
+Pennsylvania Utility Law Project 
+118 Locust Street 
+Harrisburg, PA 17101 
+717-236-9486, Ext. 204 
+emarx@pautilitylawproject.org 
+pcicero@pautilitylawproject.org 
+ 
+ 
+/s/ Nick Lawton 
+Nick Lawton, Senior Attorney, Clean 
+Energy Program 
+Christine Powell, Deputy Managing 
+Attorney, Clean Energy Program (FERC)  
+Aaliyah Adkins, Associate Attorney, Clean 
+Energy Program 
+Earthjustice 
+1001 G Street, NW Suite 1000 
+Washington, DC 20001 
+202-780-4835 
+nlawton@earthjustice.org 
+cpowell@earthjustice.org 
+aadkins@earthjustice.org 
+ 
+ 
+/s/ Ted Kelly  
+Ted Kelly 
+Director and Lead Counsel, US Clean 
+Energy  
+Veronica Ung-Kono Fellow, US Clean 
+Energy  
+Environmental Defense Fund  
+555 12th Street NW, Ste 400 Washington, 
+DC 20004  
+tekelly@edf.org  
+vungkono@edf.org  
+  
+ 
+ 
+
+--- PAGE 47 ---
+Docket No. RM26-4-000 
+ 
+47 
+ 
+ 
+/s/Nick Fitzmaurice 
+Nick Fitzmaurice 
+Energy Transition Engineer 
+Montana Environmental Information 
+Center 
+PO Box 1184, Helena, MT 59624 
+406-443-2520 x 007 
+nfitzmaurice@meic.org 
+ 
+/s/Gregory E. Wannier 
+Gregory E. Wannier, Senior Attorney 
+Justin Vickers, Senior Attorney 
+Sierra Club Environmental Law Program 
+2101 Webster St., Suite 1300 
+Oakland, CA 94612 
+415-977-5646  
+greg.wannier@sierraclub.org 
+justin.vickers@sierraclub.org  
+ 
+ 
+ 
+/s/Nick Guidi 
+Nick Guidi 
+Senior Attorney 
+Southern Environmental Law Center 
+122 C Street NW, Suite 325 
+Washington, DC 20001 
+202-573-8136 
+nguidi@selc.org  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CERTIFICATE OF SERVICE 
+I hereby certify that the foregoing has been served in accordance with 18 C.F.R. § 
+385.2010 upon each party designated in the official service list compiled by the Secretary 
+in this proceeding, by email. 
+/s/ Christy Walsh  
+Senior Attorney and Director of Federal  
+Energy Markets 
+Natural Resources Defense Council, 
+Sustainable FERC Project 
+1152 15th St NW #300 
+Washington, DC 20005 
+202-909-6842 
+cwalsh@nrdc.org 

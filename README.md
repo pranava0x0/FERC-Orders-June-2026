@@ -39,14 +39,16 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 26 tests across both suites
+node --test tests/*.test.mjs   # 27 tests across both suites
 ```
 
 Two suites, no dependencies:
 
 - `tests/data.test.mjs`: data-layer integrity. All six dockets present and correctly mapped, all five
-  reform categories, every source id resolves, count floors, archive URLs present, and every displayed
-  directive quote appears verbatim in `sources/text/orders/*.txt`.
+  reform categories, every source id resolves, count floors, archive URLs present, every displayed
+  directive quote appears verbatim in `sources/text/orders/*.txt`, the comment audit trail resolves
+  (each flagship's downloaded body + extracted text is committed), and the deployed `docs/` ships only
+  the order PDFs (comment PDFs stay in `sources/`, off the Pages site).
 - `tests/source-accuracy.test.mjs`: accuracy. Displayed order metadata, directives, region-specific
   claims, and FERC/DOE summary claims are each supported by the extracted source text. Also checks that
   each directive cite links to a PDF page that carries its quote, that every Discourse commentary quote
@@ -73,6 +75,16 @@ The site is fully static; no Actions required.
   [`sources/orders-extract.json`](sources/orders-extract.json). The six PDFs are committed under
   [`docs/orders/`](docs/orders/) and served by GitHub Pages (so `#page=` opens inline at the cited
   page); they remain re-downloadable from the linked ferc.gov URLs.
+- **RM26-4 public comments** (Docket No. RM26-4-000): all 423 docket filings scraped from FERC eLibrary,
+  273 classified as comments with a per-accession file/attachment inventory, and the comment bodies
+  downloaded and text-extracted under [`sources/comments/files/`](sources/comments/files/). The
+  capture pipeline (scrape → grind-download → organize → audit) and the audit-trail layout are
+  documented in [`sources/comments/README.md`](sources/comments/README.md); the bulk download runs
+  through a real Chrome tab via [`tools/grind-comment-downloads.js`](tools/grind-comment-downloads.js)
+  (eLibrary is Cloudflare-gated). **PDF storage policy:** comment PDFs/DOCX are committed to the repo
+  but live **outside `docs/`**, so GitHub Pages (which publishes only `/docs`) never serves them — the
+  site links each comment to its eLibrary filing instead. The six order PDFs under `docs/orders/` are
+  the only deployed PDFs (they back the inline citations); a test enforces this split.
 
 Capture date: **2026-06-22** (the secondary commentary in the Discourse tab was gathered **2026-06-23**,
 with a **2026-06-24** refresh adding post-issuance analysis and critiques).

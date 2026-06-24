@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Move RM26-4 comment downloads from ~/Downloads into sources/comments/files/<accession>/
-and extract PDF text with PyMuPDF (fitz). Idempotent; safe to re-run.
-Files are named '<accession>_<original name>' by the eLibrary downloader."""
-import re, shutil
+and extract text: PDF via PyMuPDF (fitz), DOC/DOCX via macOS `textutil`. Idempotent; safe to
+re-run. Files are named '<accession>_<original name>' by the eLibrary downloader."""
+import re, shutil, subprocess
 from pathlib import Path
 import fitz  # PyMuPDF
 
@@ -15,6 +15,8 @@ moved, extracted, skipped = 0, 0, 0
 for p in sorted(DL.iterdir()):
     if not p.is_file():
         continue
+    if p.suffix.lower() in (".crdownload", ".part", ".tmp"):
+        continue  # in-progress download; leave it until Chrome finishes
     m = ACC.match(p.name)
     if not m:
         continue
@@ -29,7 +31,8 @@ for p in sorted(DL.iterdir()):
     else:
         shutil.move(str(p), str(target))
         moved += 1
-    if target.suffix.lower() == ".pdf":
+    suf = target.suffix.lower()
+    if suf == ".pdf":
         txt = target.with_suffix(".txt")
         if not txt.exists():
             try:
@@ -39,5 +42,15 @@ for p in sorted(DL.iterdir()):
                 extracted += 1
             except Exception as e:
                 print(f"  ! extract failed {acc}/{rest}: {e}")
+    elif suf in (".docx", ".doc"):
+        txt = target.with_suffix(".txt")
+        if not txt.exists():
+            try:
+                out = subprocess.run(["textutil", "-convert", "txt", "-stdout", str(target)],
+                                     capture_output=True, text=True, check=True)
+                txt.write_text(out.stdout, encoding="utf-8")
+                extracted += 1
+            except Exception as e:
+                print(f"  ! docx extract failed {acc}/{rest}: {e}")
 print(f"moved={moved} extracted={extracted} skipped(existing)={skipped}")
 print(f"accessions with files: {len(list(DEST.glob('20*')))}")

@@ -1,0 +1,324 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+Ensuring the Timely and Orderly 
+Interconnection of Large Loads 
+ 
+Docket No. RM26-4-000 
+COMMENTS OF EMERALD AI 
+Filed: November 21, 2025 
+I. 
+INTRODUCTION 
+Emerald AI strongly supports the Federal Energy Regulatory Commission’s (Commission) 
+initiative to establish standardized, transparent, and efficient procedures for interconnecting large 
+loads. As an AI-native company that provides an intelligent flexibility management software 
+platform for AI data centers, an “operating system for AI and power,” Emerald AI’s mission is to 
+enable data centers to flexibly consume energy and serve as valuable grid partners while assuring 
+stringent performance for advanced computing workloads. We aim to enable faster and larger 
+power interconnections for data centers while avoiding and deferring energy infrastructure 
+upgrades, advancing affordability, and bolstering grid reliability. 
+We are particularly supportive of Principle 7 and urge the Commission to create a “Flexible 
+Load Fast Track” (FLFT) that rewards verifiable flexibility with what large loads value most: 
+faster and larger interconnections for new facilities seeking swift access and existing facilities 
+seeking larger and speedy capacity to upgrade to latest-generation computing technology. The 
+greatest opportunity in this rulemaking is not merely streamlining the administrative study 
+process, but enabling large loads to actively avoid or defer massive grid and energy 
+infrastructure upgrades. 
+To ensure this fast track is successful, the Commission should adopt a technology-neutral, 
+performance-based definition of flexibility that includes software-defined flexibility as a valid 
+for of “curtailable and dispatchable” load and a substitute for capital-intensive energy 
+infrastructure upgrades that can take years or more. Emerald AI and partners have demonstrated 
+through peer-reviewed scientific results that software-defined data center flexibility is 
+achievable, and along with leading AI and energy partners is on track to deploy these capabilities 
+at commercial scale in the coming months. 
+
+--- PAGE 2 ---
+II. 
+SUMMARY 
+Emerald AI respectfully submits these comments in response to the Advance Notice of Proposed 
+Rulemaking (ANOPR) on ensuring the timely and orderly interconnection of large loads.1 
+The convergence of artificial intelligence (AI) and the electric grid represents the defining 
+industrial and infrastructure challenge of the coming decade. As the Federal Energy Regulatory 
+Commission (FERC) initiates rulemaking under Docket No. RM26-4-000 regarding the 
+interconnection of large loads, the energy sector stands at a critical juncture. The traditional 
+“connect and forget” model—where large industrial loads are treated as static, inflexible 
+withdrawals requiring massive firm transmission capacity and peaking generation capacity sized 
+to rare peaks—is fundamentally incompatible with the exponential growth and unique physical 
+characteristics of AI data center demand 
+Emerald AI provides the intelligent interface between these critical infrastructure networks: the 
+electric grid and AI data centers. Emerald AI was founded in 2024 to solve the exact challenge 
+this ANOPR addresses: the collision between explosive AI-driven load growth and grid capacity 
+limits. This challenge is also the single greatest grid resource opportunity in a generation. 
+Emerald AI’s technology makes AI’s power demand flexible, enabling AI data centers to 
+orchestrate their computational workloads and on-site energy resources in response to grid 
+conditions. We agree with the ANOPR's core premise that new rules are needed to manage this 
+growth. Emerald AI’s comments focus particularly on Principle 7, as we believe its successful 
+implementation of speeding time-to-power for flexible data centers is the key to unlocking AI 
+innovation, enhancing U.S. competitiveness, and ensuring grid reliability. 
+The economic stakes of this rulemaking are exceptionally high. Analysis indicates that 
+investment in AI infrastructure and data centers is currently a primary driver of U.S. economic 
+expansion, contributing significantly to GDP growth in the first half of 2025. Delays in 
+interconnection, driven by study processes that do not allow for flexibility–including software-
+defined flexibility–threaten to stall this economic engine. By adopting a technology-neutral, 
+performance-based definition of flexibility and curtailable load, the Commission can unlock tens 
+of gigawatts of capacity, ensuring that the U.S. maintains its competitive edge in AI while 
+protecting ratepayers from the costs of unnecessary transmission buildout. 
+The traditional approach to interconnecting large loads involves studying the facility at its peak 
+potential withdrawal under severe grid stress conditions. If this analysis reveals a violation of 
+thermal or voltage limits, the interconnecting customer may trigger grid upgrades—new 
+transmission lines, substation expansions, or capacitor banks. These upgrades are capital 
+ 
+1 U.S. Department of Energy, Office of the Secretary, Secretary of Energy’s Direction that the Federal 
+Energy Regulatory Commission Initiate Rulemaking Procedures Regarding the Interconnection of Large 
+Loads Pursuant to Section 403 of the Department of Energy Organization Act, October 23, 2025. 
+
+--- PAGE 3 ---
+intensive and slow to deploy. A new high-voltage transmission line can take 7–10 years to permit 
+and build, while a data center can be constructed in 18–24 months. Furthermore, if the costs of 
+these upgrades are deemed prohibitive by the developer, the project may be cancelled, or the 
+costs may be socialized across the rate base if the upgrades provide incidental system benefits.    
+The “Flexible Load Fast Track” (FLFT) proposal offers a mechanism to break this deadlock. By 
+utilizing software to “shave” the peaks of AI data center demand through computational 
+flexibility and onsite energy resources, or shift that computational demand spatially, grid 
+operators can defer these heavy infrastructure investments. The economic logic is compelling: 
+the marginal cost of software-based flexibility is near-zero (operating expense), whereas the 
+marginal cost of new transmission capacity is extremely high (capital expense). 
+III. 
+DEFINING FLEXIBILITY 
+Principle 7 calls for expediting studies for “curtailable and dispatchable” loads. The 
+Commission's definition of this term will determine the success or failure of the FLFT. 
+Historically, utilities and NERC standards have often implicitly or explicitly defined “curtailable 
+load” as a load that can be physically disconnected via a utility-controlled relay or circuit 
+breaker. While highly reliable, this is a blunt instrument unsuitable for modern digital 
+infrastructure. For a data center, a total power cut is catastrophic—it risks damaging millions of 
+dollars of hardware, corrupting data, and violating customer Service Level Agreements (SLAs). 
+Consequently, data centers typically reject “interruptible” tariffs that rely on breaker trips. The 
+Commission should instead adopt a performance-based definition of flexibility, consistent with 
+the shift toward performance-based standards seen in other areas of grid regulation. If a facility 
+can demonstrate, through telemetry and secure software interfaces, that it will reduce its 
+withdrawal from 100 MW to 75 MW within the required timeframe of a signal, it effectively 
+provides the same reliability value as a physical breaker, but with vastly higher economic 
+efficiency. Modern AI data centers possess sophisticated, inherent flexibility that is controllable 
+through software.  
+The final rule should be technology-neutral and performance-based, recognizing the full 
+spectrum of on-site flexibility. Emerald AI recommends the Commission explicitly recognize the 
+following forms of data center flexibility as valid methods of curtailment, all of which can be 
+orchestrated by a facility's flexibility management platform: 
+1. Temporal Flexibility: The ability of software to intelligently and briefly slow, pause, or 
+reschedule batchable, non-time-sensitive AI workloads (such as fine-tuning or batch 
+inference such as synthetic data generation) in response to a grid signal, all while 
+assuring stringent AI performance requirements. 
+
+--- PAGE 4 ---
+2. Spatial Flexibility: The ability of software to shift workloads to alternate facilities in 
+regions connected by high-speed fiber networks to follow the availability of power and 
+avoid local grid constraints. 
+3. Resource Flexibility: The ability of software to co-optimize the two methods above 
+alongside the dispatch of on-site resources, such as batteries, generators, thermal storage, 
+cooling operations, fuel cells, or other on-site resources and DERs, for a maximum, 
+reliable, and unified response. 
+ 
+In addition, a fourth type: adjacent or offsite flexibility, deserves further study to complement the 
+other three types of data center flexibility to complement and augment the total flexibility a 
+facility can offer. Such adjacent flexibility refers to the ability to coordinate with nearby or 
+aggregated resources (e.g., a local VPP) via a software interface, so that the net effect reduces 
+withdrawals on constrained parts of the grid. 
+By focusing on measurable, verifiable performance, the Commission will enable innovation in 
+AI infrastructure rather than prescribing how data centers must provide flexibility. Software-
+enabled flexibility, such as Emerald’s platform, can unlock gigawatts of capacity on today’s grid 
+by controlling when and where power is consumed, rather than relying solely on “steel-in-the-
+ground” upgrades. Under such a technology-neutral framework, a data center may use a 
+software-only solution, a hardware-only solution, or a hybrid of the two to meet its FLFT 
+commitment. 
+A technology-neutral framework is so important because of the fundamentally transformative 
+potential of AI data centers to be flexible power consumers. AI data centers are unique compared 
+with other energy users. They can be massive point sources of load that can materially provide 
+relief through flexibility; they respond swiftly and are virtually controllable; and they are 
+connected at the speed of light to other data centers. Unlike a factory that must consume power 
+where it is physically located, AI workloads can be migrated between data centers connected by 
+high-speed fiber optics. If the PJM interconnection is thermally constrained but the MISO region 
+has excess wind generation, an orchestrator can route new inference requests to the MISO 
+facility, for example. This capability acts as a “virtual transmission line.” Instead of moving 
+megawatts of electrons across a congested wire to meet a static demand, the system moves the 
+demand for those electrons to a location where power is abundant. This alleviates local 
+congestion without the need to break ground on new transmission towers, offering a powerful 
+“Non-Wires Alternative” (NWA) consistent with FERC Order 2023 objectives. 
+Emerald AI’s platform operationalizes this model. It sits between grid signals and AI workload 
+schedulers, translates system conditions into power targets, and orchestrates AI workloads and 
+on-site resources to deliver a pre-committed flexibility response. In practice, an Emerald AI 
+demonstration with partners reduced AI workload power consumption by 25% over three hours 
+
+--- PAGE 5 ---
+during a grid stress event while fully preserving compute service quality.2 The results of this 
+collaboration have been peer-reviewed and accepted for publication in one of the world’s top 
+scientific journals. This real-world performance illustrates the type of “curtailable” behavior the 
+Commission should recognize under Principle 7. In addition, Emerald AI and its partners have 
+announced the Aurora project in Virginia as the “first power-flexible AI Factory” operating at 
+commercial scale, 96MW, as a scaled proof point of the capabilities of software-defined 
+flexibility.3 
+With respect to process design, Emerald AI recommends that transmission providers establish a 
+dedicated Flexible Load Fast Track process, parallel to the existing serial queue. The FLFT 
+would allow facilities meeting defined flexibility thresholds to receive interconnection approval 
+within 60 to 90 days, based on verification of available firm capacity and demonstration of 
+control and telemetry systems. 
+IV. 
+SECURE SOFTWARE INTERFACE 
+Principle 7 rightly requires that the system operator’s “ability to control” a flexible facility must 
+be sufficient. Emerald AI strongly recommends this be defined as a secure, standardized, and 
+auditable software interface, not direct, physical utility control. 
+This model provides the proper balance of reliability and security: 
+1. Signal: The system operator sends a high-level dispatch signal (e.g., “Curtail by this 
+many MW”) to the facility’s registered flexibility management platform. 
+2. Orchestration: The facility flexibility management software orchestrates computational 
+flexibility and energy resources such as batteries, cooling, generators, and fuel cells to 
+meet the MW target without compromising its mission-critical operations. 
+3. Verification: The platform provides real-time, auditable Measurement & Verification 
+(M&V) data back to the operator to confirm compliance. 
+This “intelligent interface” model is a robust approach that provides system operators with the 
+verifiable, fast-acting resource they need, while giving data centers the operational autonomy and 
+cybersecurity they require to manage mission-critical, complex AI workloads. 
+V. 
+ALIGNMENT WITH OTHER ANOPR PRINCIPLES 
+Emerald AI’s recommendation for a performance-based Flexible Load Fast Track (FLFT) can be 
+a key mechanism for implementing several of the Commission's other principles in a cohesive, 
+market-based manner. 
+ 
+2 NVIDIA, AI Factories Flex Their Power Use to Help Balance the Grid, October 2025. 
+3 Axios, NVIDIA’s Aurora AI Center Shows How Flexible Power Use Could Reshape Electric Bills, 
+October 29, 2025. 
+
+--- PAGE 6 ---
+● Principle 5 (Hybrid Facilities): AI data centers increasingly pair large loads with on-site 
+generation or storage. Emerald AI’s platform treats these as a single hybrid system, co-
+optimizing computational flexibility and on-site assets to produce a predictable net 
+withdrawal profile. A facility that commits a MW-capacity of verifiable flexibility 
+through these various options can be studied and interconnected based on that net firm 
+withdrawal, directly advancing Principle 5’s goal of appropriately treating hybrid large-
+load projects. 
+ 
+● Principle 8 (Cost Allocation): The FLFT, enabled by verifiable software-defined 
+flexibility, creates a clear economic choice: projects that remain inflexible proceed 
+through the standard process and may bear upgrade-related costs, whereas projects that 
+commit to and deliver flexibility can avoid or reduce those upgrades and connect sooner. 
+Emerald’s platform makes this choice feasible by turning flexibility into a controllable, 
+measurable product. This ensures that upgrade costs are not unjustly socialized onto other 
+ratepayers when a load can mitigate its own impact through performance. 
+VI. 
+CRITICAL GAPS IN EXISTING TRANSMISSION SERVICE AND PLANNING 
+FOR LARGE FLEXIBLE LOADS 
+Despite growing interest in large flexible loads–including AI data centers capable of providing 
+verifiable, performance-based curtailment–no transmission service framework currently exists in 
+the United States that allows such loads to avoid or mitigate network upgrades through 
+demonstrated flexibility.  
+This gap means that even highly flexible loads—capable of reliably reducing or shifting 
+hundreds of megawatts—are studied as if they were inflexible, static, worst-case withdrawals. As 
+recent analysis by Nicholas Institute and Roselle explains: “Transmission service frameworks do 
+not yet exist to allow for load flexibility to avoid network upgrades. Network Integration 
+Transmission Service at the wholesale level is non-interruptible under FERC’s pro forma tariff. 
+And, while non-firm point-to-point service does exist, there is no non-firm network option for a 
+load to access and draw upon the full network during times it is not curtailed. Nor do utilities 
+studying large load interconnection generally provide a pathway through which a curtailable 
+customer can be studied to avoid network upgrades.” 4 The result is an overestimation of 
+required network upgrades, longer study timelines, and significant cost assignments that do not 
+reflect the resource’s actual operational profile. 
+Principle 7 is the Commission’s opportunity to correct this structural deficiency. By establishing 
+a Flexible Load Fast Track (FLFT) that recognizes verifiable, software-enabled curtailment as a 
+serviceable substitute for firm transmission, the Commission can provide a pathway for flexible 
+ 
+4 Nicholas Institute for Energy, Environment & Sustainability, How DOE’s Proposed Large Load 
+Interconnection Process Could Unlock the Benefits of Load Flexibility, October 2025 
+
+--- PAGE 7 ---
+loads to interconnect without triggering unnecessary upgrades, thereby enhancing grid reliability 
+and reducing ratepayer costs. 
+Today, transmission providers conduct generator interconnection planning and large-load 
+interconnection planning in parallel but largely disconnected processes. This separation is 
+increasingly incompatible with the realities of modern grid operations, where large AI loads may 
+be capable of providing fast, measurable, dispatchable flexibility on par with many supply-side 
+resources. 
+Absent a unified planning framework: 
+● Transmission providers evaluate large loads as rigid, “always-on” withdrawals. 
+● They do not evaluate whether flexible load behavior could mitigate or eliminate the need 
+for upgrades. 
+● They do not co-optimize load flexibility and generation additions within a shared regional 
+planning model. 
+This siloed approach can lead to suboptimal upgrade decisions, causing transmission providers to 
+pursue unnecessarily expensive network upgrades that could be avoided with a more integrated 
+planning architecture. In some regions, this fragmentation has led to upgrade determinations that 
+are larger and more costly than needed, raising potential concerns about whether such costs are 
+“just and reasonable” under the Federal Power Act. 
+A performance-based FLFT directly addresses this issue. By incorporating verifiable load 
+flexibility into interconnection studies, transmission providers can evaluate net impacts rather 
+than worst-case, inflexible scenarios. This results in: 
+● More accurate assessments of needed upgrades 
+● More efficient regional planning 
+● Lower cost burdens for all transmission customers 
+● Greater utilization of existing grid capacity 
+In short, integrating flexible-load capabilities into planning processes is essential to preventing 
+overbuilding, accelerating interconnections, and ensuring that rates remain just and reasonable. 
+VII. 
+CATEGORIES OF PERFORMANCE ATTRIBUTES FOR FLEXIBLE LOADS 
+To implement a flexible-load participation framework in a manner that is both fair and durable, 
+the Commission may wish to articulate clear categories of performance standards that 
+transmission providers should consider when evaluating flexible-load commitments. These 
+standards help ensure that flexibility is credited appropriately, integrated consistently across 
+regions, and protected from misuse, while still allowing technology-neutral innovation. 
+
+--- PAGE 8 ---
+Emerald AI respectfully suggests the following six categories of performance criteria the 
+Commission could reference as reasonable guardrails for flexible-load participation: 
+1. Event Duration Standards: Facilities should specify the maximum duration for which they 
+can sustain curtailment during a flexibility event. Establishing predictable duration parameters 
+enables transmission providers to rely on the resource in planning and operational studies and 
+bound the commitment from large loads to provide curtailment in exchange for faster and larger 
+power connections. 
+2. Advance Notice Requirements: Reasonable notice parameters (e.g., minimum dispatch 
+windows) ensure that flexible loads can prepare their workloads and internal systems to deliver a 
+reliable response without compromising mission-critical operations. 
+3. Recovery Period Protection: Following a curtailment event, flexible facilities may require a 
+defined recovery period to return to normal operations without creating secondary load spikes. 
+Clear standards prevent operators from over-calling events in ways that undermine reliability 
+benefits. 
+4. Annual Event Limits: Setting a reasonable ceiling on annual curtailment events prevents 
+excessive dispatch and ensures that flexible loads are used strategically, during genuine system 
+stress, rather than as routine operational tools. AI data centers and next-generation AI Factories 
+engage in the most economically critical workloads of the entire economy, so their curtailment 
+should be extremely judicious. 
+5. Response Time and Tolerance Limits: A performance-based framework should include 
+measurable expectations regarding the speed and accuracy with which a facility must reduce load 
+after receiving a dispatch signal. These limits provide operators with clarity and ensure that 
+flexible loads deliver consistent, verifiable value. 
+6. Testing and Compliance Rules: Periodic testing and ongoing monitoring are essential to 
+ensure the reliability of flexible-load commitments over time. Testing frameworks should be 
+technology-neutral and recognize software-based workload orchestration as a valid and auditable 
+means of demonstrating performance. 
+Together, these categories offer a balanced structure: they ensure that flexible loads are 
+appropriately credited for the real reliability value they provide, while also establishing 
+safeguards that maintain system integrity and prevent over-reliance or misuse. Importantly, these 
+standards can be implemented without prescribing any specific technology or operating model, 
+allowing innovation to continue while giving the Commission and transmission providers the 
+certainty they require. 
+ 
+
+--- PAGE 9 ---
+VIII. CONCLUSION 
+Emerald AI recognizes the Commission for this timely and critical proceeding. By establishing a 
+Flexible Load Fast Track anchored in a technology-neutral and performance-based definition of 
+flexibility, the Commission can turn AI's new power demand into the grid’s newest and most 
+valuable resource. Emerald AI respectfully urges the Commission to finalize a rule that ensures 
+software-defined flexibility is a valid pathway to achieve faster and larger interconnections, 
+thereby accelerating AI innovation, strengthening the grid, and protecting affordability for all 
+consumers. We look forward to working with the Commission as it moves through this 
+rulemaking process. 
+Respectfully submitted, 
+Dr. Varun Sivaram 
+Chief Executive Officer 
+Phone: +1(408)-656-0083 
+Email: varun@emeraldai.co 
+ 
+ 
+Emerald AI 
+Washington, DC 
+November 21, 2025 
+ 

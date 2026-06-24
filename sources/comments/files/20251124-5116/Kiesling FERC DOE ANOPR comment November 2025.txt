@@ -1,0 +1,747 @@
+--- PAGE 1 ---
+ 
+UNITED STATES OF AMERICA  
+BEFORE THE  
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+ 
+ Interconnection of Large Loads to the Interstate Transmission 
+System  
+ 
+ 
+)  
+)  
+ 
+ 
+Docket No. 
+RM26-4-000  
+ 
+ 
+Initial Comments of L. Lynne Kiesling, Ph.D. 
+November 21, 2025 
+Executive Summary 
+This comment evaluates the Department of Energy’s Advance Notice of Proposed Rulemaking 
+(ANOPR) regarding large-load interconnection through the lens of transaction-cost economics, 
+regulatory economics, and technological change. The rapid growth of AI data center load 
+presents a critical coordination challenge due to the temporal mismatch between rapid data 
+center deployment (18–24 months) and slow grid infrastructure expansion (7–10 years). 
+To address this pacing mismatch and ensure nondiscriminatory access, the Commission 
+should adopt a modular, principles-based framework grounded in three economic propositions: 
+●​ Flexibility as a System Value: Modern data centers possess significant latent flexibility 
+through workload shifting, UPS-based frequency response, and hybrid on-site 
+generation. Current interconnection rules treat these loads as static and inflexible, 
+ignoring capabilities that could significantly reduce system stress and upgrade costs. 
+●​ Reducing Transaction Costs: Legacy interconnection rules create high asset specificity 
+and hold-up risks, driving developers toward inefficient bypass strategies. Co-location 
+and hybrid configurations are rational economic responses to these high transaction 
+costs ("make vs. buy" decisions) and should be facilitated rather than penalized by 
+extending generator-style interconnection regimes to loads. 
+●​ Foundational Cost Allocation Reform: The ANOPR’s suggestion of 100% participant 
+funding for upgrades relies on flawed embedded-cost methodologies that ignore 
+marginal impacts. Efficient cost recovery should instead follow Ramsey-Boiteux 
+principles, allocating fixed costs inversely to elasticity. Because large loads are highly 
+elastic and can relocate or self-supply, assigning them full upgrade costs encourages 
+inefficient grid defection. 
+ 
+
+--- PAGE 2 ---
+Recommendations: The Commission should establish a federal framework that lowers barriers 
+to flexible resources, modernizes market participation rules for technologies like thermal energy 
+storage (TES), and reforms cost allocation to reflect marginal impacts. This approach will 
+encourage the integration of grid-supportive flexibility, reducing the need for costly 
+infrastructure while ensuring reliability and competitive neutrality. 
+ 
+I. Introduction and Interest of the Commenter 
+The accelerating growth of data center and artificial intelligence (AI) electricity demand is 
+reshaping the U.S. power system. Forecasts suggest that U.S. data center load, roughly 25 
+gigawatts (GW) in 2024, may exceed 80 GW by 2030. Annual electricity consumption 
+attributable to these facilities could rise by approximately 400 terawatt-hours (TWh) over the 
+decade.1 Globally, the International Energy Agency projects data center electricity use to more 
+than double, increasing from an estimated 415 TWh in 2024 to roughly 945 TWh by 2030.2 
+These estimates remain uncertain because of rapid evolution in AI chip efficiency, model 
+architectures, inference patterns, cooling requirements, and data center design. Several recent 
+analyses describe these rapid forecast revisions as “forecast whiplash,” reflecting the difficulty 
+of relying on planning institutions built for a world of slow, predictable demand growth.3 
+I am the Director of the Institute for Regulatory Law & Economics at Northwestern University, 
+as well as a Nonresident Senior Fellow at the American Enterprise Institute and a member of 
+the External Faculty of the Santa Fe Institute; my comments represent my own analysis and do 
+not reflect the opinions of any of those organizations. I submit this comment as an economist 
+whose research sits at the intersection of electricity market design, utility regulation, 
+institutional economics, and technological change. My published work examines how modern 
+grid technologies interact with legacy regulatory structures, how regulatory pacing failures 
+impede innovation, and how transaction costs shape investment decisions. I also write 
+translational research on current issues in utility regulation and technological change, including 
+data center energy use. My comments rely on a selection of my relevant publications, 
+including: 
+●​ Lee, Yoon-Ho Alex Lee and L. Lynne Kiesling. 2026. “Epistemic Humility and Adaptive 
+Regulation.” New York University Journal of Law and Liberty, forthcoming. 
+3 Ian Goldsmith and Zach Byrum, “Powering the US Data Center Boom: Why Forecasting Can Be So 
+Tricky,” World Resources Institute, September 17, 2025. Accessed November 21, 2025. 
+2 International Energy Agency. 2025. “Energy and AI,” 2025. Accessed November 21, 2025. 
+1 Energy Information Administration, “Annual Energy Outlook 2025”; Alastair Green, Humayun Tai, Jesse 
+Noffsinger, Pankaj Sachdeva, Arjita Bhan, and Raman Sharma, “How Data Centers and the Energy 
+Sector Can Sate AI’s Hunger for Power,” McKinsey & Company, 2024; OnLocation Incorporated, “AEO 
+2025 Trends: Growing Electricity Demand from Data Centers,” 2025. All accessed November 21, 2025. 
+2 
+
+--- PAGE 3 ---
+●​ Microgrids, Nukes, and Novel Tariffs: How Hyperscale Data Centers are Redefining the 
+Electricity Make-or-Buy Decision, Knowledge Problem, 2025. 
+●​ Data Center Energy Use Series I-V, Knowledge Problem, 2024. 
+●​ Kiesling, L. Lynne. 2024. “The Pacing Problem: Using the IAD Framework to Model 
+Technological and Institutional Change in a Regulated Industry.” Journal of Political 
+Institutions and Political Economy 5(4): 523-554. 
+●​ Mays, Jacob, Michael T. Craig, L. Lynne Kiesling, Joshua Macey, Blake Shaffer, and 
+Han Shu. 2022. “Private Risk and Social Resilience in Liberalized Electricity Markets.” 
+Joule. 
+●​ Kiesling, Lynne. 2021. The Essential Ronald Coase. Vancouver: Fraser Institute. 
+●​ Kiesling, Lynne. 2016. “Implications of Smart Grid Innovation for Organizational Models 
+in Electricity Distribution,” in Chen-Ching Liu, Stephen McArthur, and Seung-Jae Lee, 
+eds., Wiley Smart Grid Handbook. London: Wiley. 
+●​ Kiesling, Lynne, and Andrew Kleit, editors. 2009. Electricity Restructuring: The Texas 
+Story. AEI Press. 
+●​ Kiesling, Lynne. 2009. Deregulation, Innovation, and Market Liberalization: Electricity 
+Restructuring in a Constantly Evolving Environment. Routledge Studies in Business 
+Organizations and Networks. London: Routledge. 
+ 
+This comment evaluates the Department of Energy’s ANOPR on large-load interconnection 
+through three related economic propositions. First, flexibility has become the highest-value 
+attribute in modern power systems, largely because it a novel, technology-enabled 
+manifestation of the price elasticity that power systems have lacked historically. Second, 
+legacy interconnection rules create substantial market barriers for new 
+technologies—particularly digital demand controls, hybrid on-site generation, flexible and hyper 
+flexible loads, and microgrid-ready designs—that could otherwise mitigate system stress. 
+Third, cost allocation reform is foundational: embedded-cost and fully distributed cost (FDC) 
+methodologies conflict with marginal-cost principles, Ramsey-Boiteux efficiency conditions, 
+and Bonbright’s criteria for sound regulation. Together, these three propositions support a 
+federal approach that lowers system-wide transaction costs and encourages flexible 
+technologies and business models through modular and principles-based methods. 
+II. Clarifying the Problem the ANOPR Is Trying to Solve 
+The ANOPR responds to a sharp shift in electricity demand dynamics driven by the rapid 
+expansion of AI-centric data centers. After more than a decade of flat or marginal load 
+growth—from 2008 to 2021, U.S. electricity demand rose by only 0.1 percent 
+annually—forecasts have shifted dramatically upward.4 This reversal reflects the rise of a new 
+4 John D. Wilson, Sophie Meyer, Zach Zimmerman, and Rob Gramlich, Power Demand Forecasts 
+Revised Up for Third Year Running, Led By Data Centers, Grid Strategies, November 2025. Accessed 
+November 21, 2025. 
+3 
+
+--- PAGE 4 ---
+class of large, concentrated, and time-sensitive loads whose operational profiles differ 
+substantially from historic industrial and commercial consumption. 
+1. Large-load demand and the intertemporal coordination challenge 
+Data centers can be built in eighteen to twenty-four months, enabled by modular construction 
+and rapid IT deployment cycles.5 In contrast, major power system infrastructure upgrades often 
+require seven to ten years to site, permit, and build. This temporal mismatch forces utilities and 
+developers to make high-stakes decisions under deep uncertainty about future load 
+trajectories. 
+The core policy challenge is therefore not simply the magnitude of new demand. It is a 
+coordination problem under uncertainty in which actors with heterogeneous expectations and 
+incomplete information must align investment, infrastructure, and operational decisions across 
+very different time scales. 
+2. Cross-border impacts and interstate relevance 
+Because many hyperscale facilities seek to interconnect directly to the high-voltage 
+transmission system, their effects propagate across regional networks. A single campus 
+requesting 500 to 1,000 MW, comparable to the load of a mid-sized city, can influence 
+congestion patterns, thermal limits, and power flows across an entire regional transmission 
+organization (RTO) footprint. 
+Multiple authorities have highlighted these interstate implications. NERC has identified new 
+data centers as a primary driver of rising peak-load forecasts and as an emerging reliability 
+concern.6 PJM and other RTOs have documented significant upward revisions to multi-year 
+load forecasts driven largely by data center development, alongside billions of dollars in 
+transmission expansion required to serve these loads. 
+Because the impacts spill across state boundaries, allocating upgrade costs has already 
+become contentious. This interstate character creates a legitimate federal interest in ensuring 
+that processes governing transmission access for large loads are nondiscriminatory and 
+account properly for cross-border consequences. 
+3. Current institutional fragmentation 
+Large-load interconnection and cost recovery are now shaped by a patchwork of state policies 
+and utility practices. States such as Ohio, Michigan, and Georgia have adopted large-load 
+tariffs and new cost-recovery mechanisms designed to shield retail ratepayers from the risks of 
+large, uncertain industrial loads. Several counties in Georgia and Virginia have enacted 
+restrictive zoning rules or moratoria on data center development, complicating siting decisions. 
+6 North American Electric Reliability Corporation, 2025 State of Reliability: Overview, June 2025. 
+Accessed November 21, 2025. 
+5 Jones Lang LaSalle. “2025 Global Data Center Outlook,” 2025. Accessed November 21, 2025. 
+4 
+
+--- PAGE 5 ---
+Utilities employ bespoke approaches to evaluating load additions, negotiating service 
+agreements, and allocating upgrade costs. For developers, this fragmentation means timelines, 
+processes, required studies, and cost responsibility vary widely across jurisdictions. The result 
+is high search and negotiation costs, significant uncertainty about project viability, and wide 
+variation in the effective “entry fee” for interconnecting to a transmission grid. In this context, 
+interconnection standardization makes sense. 
+4. The policy question before FERC 
+The ANOPR explores whether FERC should establish a standardized national framework for 
+interconnecting large loads to the bulk transmission system. One central question is whether 
+such a framework would reduce barriers to efficient load integration, strengthen reliability, and 
+promote nondiscriminatory access, or whether extending the existing generator-style 
+interconnection regime to large loads would add complexity, reinforce outdated assumptions, 
+and discourage the flexible, grid-supportive behaviors modern power systems require. 
+This comment evaluates that question through the lenses of transaction-cost economics, 
+regulatory economics, and the operational realities facing utilities, grid operators, and 
+large-load developers. 
+III. Proposition 1: Flexibility as the Central System Value 
+The ANOPR proposes expedited interconnection queue access for flexible large loads 
+(Principle 7). Flexibility has become the binding constraint and the highest-value capability in 
+modern power systems. Historically, both supply and demand have been price-inelastic. 
+Supply is inelastic because new generation, transmission, and distribution infrastructure require 
+long lead times, substantial capital, and multiple regulatory approvals. Demand for electricity is 
+inelastic because electricity is an input with very few substitutes in nearly all economic activity, 
+and because for data centers, the opportunity cost of curtailment is high due to the expected 
+value of the computation. Demand for transmission is similarly inelastic due to the strict 
+complementarity of the electricity transaction and the transmission transaction. AI inference 
+and training workloads create large economic value per kilowatt-hour and cannot easily be 
+deferred without eroding that value. When both sides of the market respond weakly to price, 
+the outcome of demand growth is price increases. 
+In this environment, we should think of the opportunity for flexibility as the system’s “shadow 
+price.” In constrained optimization, the shadow price measures the marginal value of relaxing a 
+binding constraint. Here, the binding constraint is the inability of either supply or demand to 
+adjust rapidly to other changes. Because supply cannot expand quickly and because demand 
+cannot curtail without foregoing valuable activity, any resource or behavior that provides 
+operational flexibility relaxes this constraint and thus has high marginal value. Flexibility 
+restores the ability to adjust and to improve coordination. 
+5 
+
+--- PAGE 6 ---
+1. Large load flexibility 
+Modern data centers possess far greater latent flexibility than legacy regulatory categories 
+typically recognize, due in large part to recent and ongoing innovation. Advances in digital 
+control systems, workload orchestration, and power‐electronics architectures now permit these 
+facilities to modulate demand across multiple time scales. Norris et al. (2025) quantifies this 
+potential: it finds that, with modest curtailment of just 0.25 %–0.5 % of annual uptime, U.S. 
+balancing authorities could integrate nearly 76 GW–98 GW of new large loads using existing 
+capacity without disruptive grid upgrades.7 
+Four categories illustrate these emerging capabilities: 
+●​ Operational flexibility through workload shifting. Modern AI inference and training 
+shapes are increasingly schedulable: inference tasks can shift across clusters and 
+geographies, and training jobs can be staged to avoid peak‐stress intervals. As 
+distributed compute architectures and global traffic‐balancing systems mature, the 
+economic feasibility of temporal and spatial work shifting improves markedly, a finding 
+echoed in the Norris et al.’s concept of “spatial flexibility” and “temporal flexibility”. 
+●​ UPS- and storage-based fast response. Uninterruptible power supply (UPS) systems 
+originally designed for IT equipment protection can now function as fast 
+frequency-response assets by modulating inverter-battery power flows on sub-second 
+time scales. Norris et al. frames such on-site storage and generation as elements of 
+“on-site power and storage” flexibility—capabilities that lower the incremental burden a 
+new load places on the system. 
+●​ Hyper flexible loads. Flexible, and particularly hyper-flexible loads such as new 
+technologies like thermal energy storage (TES), represent a significant opportunity for 
+enhancing market performance.  Long duration, highly flexible storage technologies with 
+high charge to discharge ratios can provide continuous energy output over multi-day 
+periods while only charging during periods of low energy demand and prices, when 
+there is typically minimal stress on the grid. This operational profile allows these hyper 
+flexible loads to avoid periods of peak scarcity while absorbing energy during low-value 
+hours. In doing so, these hyper flexible and price sensitive loads improve price 
+formation, mitigate congestion, reduce wasted energy from existing generators, and 
+improve utilization of existing infrastructure. Hyper flexible loads like TES are being 
+installed now with the operational capability and business model incentive to make 
+robust, enforceable and dependable flexibility commitments.  These loads have load 
+factors of approximately 33% and can ramp up and down within milliseconds based on 
+7 Tyler H. Norris, Tim Profeta, Dalia Patino-Echeverri, and Adam Cowie-Haskell, Rethinking Load Growth: 
+Assessing the Potential for Integration of Large Flexible Loads in the U.S. Power System. NIcholas 
+Institute for Energy, Environment, and Sustainability, Duke University, 2025. Accessed November 21, 
+2025. 
+6 
+
+--- PAGE 7 ---
+price or grid operator signals. Such commitments are fundamentally different in nature 
+from commitments to curtail during emergencies made by high load factor customers 
+with a high value of lost load, where such commitments are financial in nature and not 
+directly enforceable by the grid operator. 
+●​ Hybrid configurations with on-site generation. Many developers are exploring on-site 
+natural‐gas generation, advanced fuel cells, and prospective small modular reactor 
+(SMR) designs. Microgrid‐ready architectures that incorporate a grid switch that enables 
+islanded operation pending full interconnection offer dispatchable power, voltage 
+support, and black-start capability. Norris et al. (2025) explicitly distinguishes loads with 
+co-located generation as more flexible and therefore less likely to trigger transmission or 
+generation capacity expansions. 
+Together, these capabilities transform large loads from passive grid takers into potential active 
+system participants—able to provide ancillary services, reduce net peak demand, and mitigate 
+the stability risks that reliability authorities increasingly identify. Notably, the Duke study defines 
+“curtailment‐enabled headroom” as a measure of how much additional load the system can 
+absorb if flexible loads are available, and its results provide empirical weight for the argument 
+that this capability is available now. 
+2. Current rules treat large loads as inflexible “problems” 
+Despite these emerging capabilities, the regulatory treatment of demand continues to assume 
+that large loads are static, inflexible, and uncontrollable. This assumption permeates the 
+interconnection and cost-recovery framework. Interconnection studies still model demand as a 
+fixed block, ignoring the very types of flexibility that Norris et al. (2025) shows can reduce a 
+load’s marginal impact on the system to a meaningful degree. Tariff structures often reinforce 
+this static view, applying demand charges and cost-recovery riders that make no distinction 
+between a load capable of sub-second frequency response and one that simply draws at its 
+maximum nameplate level. The regulatory response to rising load forecasts has followed the 
+same logic: delaying retirements of legacy fossil generators or extending the operating life of 
+aging units, even where flexible loads could provide stability services that reduce these 
+perceived needs. 
+This persistent mismatch between growing technological capability and backward-looking 
+institutional assumptions weakens the alignment between private incentives and system needs. 
+When flexibility is neither recognized nor rewarded, firms naturally invest in self-contained 
+microgrids, behind-the-meter generation, and resilience-enhancing infrastructure that provide 
+private reliability but contribute little to system-wide efficiency or stability. The result is a pattern 
+of rational bypass driven not by a lack of technical solutions, but by regulatory structures that 
+continue to treat demand as an inert quantity rather than a grid-supportive resource. 
+7 
+
+--- PAGE 8 ---
+Flexibility also reduces the marginal cost of integrating large loads. A flexible load that can shift 
+or reduce demand during peak conditions lowers the system’s incremental capacity needs. 
+When it co-locates with dispatchable on-site generation, it moderates congestion and reduces 
+required network upgrades. Flexibility, therefore, improves reliability and helps bridge the 
+pacing mismatch between data center speed-to-power and slower infrastructure expansion. 
+3. Implications for the ANOPR 
+The ANOPR rightly focuses on nondiscriminatory access and timely interconnection, but this 
+framing risks overlooking the economic and reliability benefits of flexible demand. Its expedited 
+queue access proposal is one step in the direction of valuing flexibility as a capability. In 
+addition, a well-designed federal framework should: 
+●​ Incorporate load-provided system services into interconnection options and 
+cost-allocation structures. 
+●​ Enable partial rights, curtailable service, and hybrid configurations that recognize 
+the full range of flexible behaviors. 
+●​ Acknowledge that flexibility affects both the magnitude and marginal cost of 
+network upgrades. 
+If implemented well, a federal framework could harness latent flexibility to improve system 
+stability, reduce upgrade costs, and moderate the pacing mismatch between load development 
+and infrastructure expansion. 
+If the regulatory regime treats all loads as inflexible and relies on embedded-cost allocation 
+methods disconnected from marginal impacts, developers will rationally shift toward 
+behind-the-meter solutions. That pattern is already visible in response to unreliable 
+interconnection timelines and unpredictable upgrade costs. When grid rules fail to reward 
+system-beneficial flexibility, investment flows toward private resilience that does little to 
+strengthen the wider grid. 
+In a system marked by rapid load growth, variable renewable generation, and increasing 
+dependence on power electronics, flexibility is economically and operationally indispensable. 
+The regulatory framework must reflect that reality rather than rely on legacy assumptions that 
+treat large loads as rigid and must-serve. The ANOPR’s framework acknowledges the potential 
+role of flexible loads, but could recognize the unique operational capabilities of various 
+manifestations of flexible and hyper-flexible loads more explicitly as valuable resources for 
+modernizing load interconnection. A federal regime that fails to integrate flexibility into 
+interconnection and cost allocation will undervalue the very capabilities that matter most for 
+system stability. 
+8 
+
+--- PAGE 9 ---
+IV. Proposition 2: Legacy Interconnection Rules Create Significant Market Barriers 
+The second proposition is that the current interconnection framework is misaligned with the 
+economic characteristics of modern large loads. It creates significant market barriers and raises 
+transaction costs. These frictions are best understood through transaction-cost economics, 
+especially Williamson’s emphasis on asset specificity.8 Large-load interconnection requires grid 
+infrastructure that is sunk, location-dependent, and ill-suited to alternative uses. At the same 
+time, data center developers make their own site-specific investments—land, cooling systems, 
+fiber connectivity, and construction—long before the grid is prepared to serve the facility. Both 
+parties therefore face the classic hold-up risk: once one side commits irreversible capital, the 
+other may act opportunistically. 
+From a competition perspective, interconnection rules play a central role in market entry 
+conditions. When tariffs treat all loads as inflexible peak contributors, they distort competition, 
+raise barriers to entry, and suppress innovation in flexible industrial technologies. The ANOPR’s 
+call for a modernized, consistent load-interconnection structure is therefore essential not only 
+for reliability but for strengthening competition. By enabling flexible loads to compete on the 
+basis of their actual operational profiles, the Commission would reduce regulatory frictions, 
+support entrepreneurial risk-taking, and improve market efficiency. ERCOT has demonstrated 
+the value of establishing rules that allow for integrated market participation of loads and hybrid 
+facilities. Texas’ Private Use Network rules, enabling participation of “energy parks” that may 
+integrate load, storage, and generation components, has contributed to the region being one of 
+the most competitive locations for new load and hybrid facilities 
+A durable standardized large load interconnection framework must begin with a clear 
+understanding of the frictions that impede coordination among large-load developers, utilities, 
+and grid operators. Transaction-cost economics offers a useful lens because it focuses on the 
+features of the transaction—asset specificity, uncertainty, and frequency—and identifies the 
+institutional arrangements most capable of reducing those costs. Large-load interconnection 
+displays all three characteristics. It involves highly specific assets with limited alternative uses, 
+it must navigate deep uncertainty surrounding load development and upgrade timelines, and it 
+requires repeated interactions among parties with imperfectly aligned incentives. 
+1. Large-load interconnection as a high-asset-specificity transaction 
+Transmission upgrades needed to serve large loads are sunk investments that exist primarily, 
+but often not exclusively, to serve the requesting facility. Similarly, the load itself often reflects 
+investments tailored to a specific site that cannot easily relocate without forfeiting substantial 
+value. This symmetry of sunk, site-specific investment generates two forms of hold-up risk. 
+Utilities worry that if a developer cancels or delays a project, ratepayers will be saddled with 
+8 Oliver E. Williamson, "Transaction Cost Economics," Handbook of Industrial Organization. Elsevier, 
+1989, pp. 135-182. 
+9 
+
+--- PAGE 10 ---
+stranded assets. Developers, having acquired land and begun construction, fear that an 
+incumbent transmission owner may delay studies, escalate costs, or impose onerous 
+conditions. 
+The hybrid or co-location contracts that large loads and generators are entering are 
+system-enhancing examples of the “make or buy” decision in institutional economics.9 The 
+decision to interconnect (Buy) or co-locate/build on-site generation (Make) is determined by the 
+relative transaction costs of each path. Long-term contracting through co-location is often a 
+rational economic response to high transaction costs and reliability risks in the market, given 
+asset specificity and the opportunity for bilateral hold-up. Co-location is a market response to 
+the pacing mismatch between data center speed-to-power and infrastructure construction 
+timeframes.  
+The risks of asset specificity and holdout are magnified by the sheer scale of today’s loads. A 
+facility that once required 20 MW may now request 500 to 1,000 MW at a single location, 
+raising the stakes of interconnection negotiations and amplifying the value of credible 
+commitments, transparent processes, and predictable cost-allocation rules. Where these 
+features are absent, both utilities and developers hedge against risk, creating a self-reinforcing 
+cycle of caution and delay. Ronald Coase’s insight that scarcity is rationed through non-price 
+mechanisms when prices fail to reflect marginal cost is directly relevant: the interconnection 
+queue becomes a rationing device rather than a coordination tool.10 
+2. Legacy interconnection rules intensify these frictions 
+The existing interconnection framework rests on assumptions about load behavior that no 
+longer reflect technological reality. It treats loads as passive and uncontrollable, despite the 
+flexibility described earlier. Studies model load at its maximum nameplate demand, discounting 
+the ability of flexible facilities to maintain power quality through on-site generation, UPS 
+response, or automated load controls. Cost-allocation methods presume that upgrades are 
+fully attributable to the requesting load, even when they also relieve preexisting constraints or 
+support future growth. 
+Applying a generator-style interconnection regime to large loads risks entrenching these 
+problems further. The generator process is designed for resources that inject power, not for 
+large, flexible loads whose operational behaviors differ fundamentally from generators. 
+Importing this regime without careful consideration of the other market rules and study 
+procedures involved risks embedding outdated assumptions about load rigidity and peak 
+coincidence, and fails to recognize the operational capabilities large loads can bring to system 
+stability. 
+10 Ronald H. Coase, “The Marginal Cost Controversy,” Economica 13(51) (1946): 169-182. 
+9 Peter G. Klein, “The Make-or-Buy Decision: Lessons from Empirical Studies,” in Claude Menard and 
+Mary Shirley, eds., Handbook of New Institutional Economics, Springer, Boston, MA 2005. 
+10 
+
+--- PAGE 11 ---
+3. Beyond interconnection: Market rules as barriers to flexibility 
+Interconnection is not the only institutional bottleneck confronting large flexible loads. Even 
+when a resource can technically interconnect and is willing to provide grid services, legacy RTO 
+and ISO participation rules can prevent it from doing so. The market categories, performance 
+requirements, telemetry obligations, and settlement structures embedded in wholesale power 
+markets were developed for a system dominated by conventional generators and static loads. 
+As a result, many flexible resources, particularly those capable of fast response, hybrid 
+operation, or multi-service functionality, struggle to participate on equal terms with incumbent 
+technologies. 
+The experience of thermal energy storage (TES) illustrates the problem. FERC’s current 
+jurisdictional framework treats TES inconsistently depending on which energy vector it 
+dispatches. A TES resource that charges with electricity and discharges only electricity is 
+treated as a wholesale participant. But a TES resource that charges with electricity and 
+discharges thermal energy to an industrial host becomes simultaneously a wholesale and retail 
+customer, even though its grid-facing behavior is indistinguishable from a purely electrical TES 
+asset. If the TES resource dispatches only thermal output, it is treated exclusively as a retail 
+customer. These three configurations impose similar net loads and provide the same 
+demand-valley-filling services, yet the regulatory treatment diverges sharply. The resulting 
+complexity raises transaction costs, introduces legal risk, and inhibits investment in a 
+technology that could improve system flexibility materially. Clarifying that wholesale purchases 
+of electricity for conversion into thermal energy qualify as wholesale transactions would reduce 
+barriers to TES participation, improve competitive neutrality, and support innovation in 
+industrial energy management. 
+This regulatory fragmentation is not limited to TES. Many innovative load-side and hybrid 
+technologies face similar structural barriers rooted in outdated market definitions. Hybrid 
+resources as defined in the ANOPR often do not fit neatly into either generator or load 
+categories, pushing developers into duplicative or incompatible participation pathways. 
+Demand-side flexibility resources that can respond with granular, automated precision 
+encounter telemetry, metering, and aggregation requirements designed for large generators 
+rather than for distributed or fast-acting loads. Fast frequency response and inverter-based 
+services, including those provided by UPS systems and behind-the-meter batteries, frequently 
+cannot qualify for compensation because existing product definitions overlook the temporal 
+precision and performance characteristics modern power-electronics technologies can deliver. 
+Even aggregated flexible loads, from industrial process controls to AI workload shifting, remain 
+ineligible to participate as unified market entities despite offering aggregate capabilities that 
+rival or exceed those of utility-scale assets. In each of these cases, the barrier is institutional 
+rather than technical. Market rules built to maintain reliability within a twentieth-century 
+generation mix now constrain the participation of twenty-first-century flexible resources, 
+11 
+
+--- PAGE 12 ---
+creating a growing misalignment between the system’s emerging needs and the regulatory 
+structures designed to procure the services that flexibility can provide. 
+From the perspective of institutional and transaction-cost economics, these market barriers 
+resemble the same pattern observed in interconnection: when legacy rules impose high 
+administrative burdens, misclassify flexible behaviors, or treat new technologies as edge cases, 
+the system increases the cost of innovation. Flexible resources that could contribute to 
+frequency control, peak reduction, congestion relief, or ramping support are instead assigned 
+to categories that view them as deviations from normal operations. The outcome is predictable: 
+firms invest in privately beneficial but system-inefficient solutions because the wholesale 
+market rules do not provide a viable channel for monetizing their flexibility. 
+Lowering these barriers requires modernizing market participation categories, redefining 
+ancillary service products to reflect high-resolution flexibility, and explicitly integrating 
+load-modulation technologies into wholesale markets. Doing so would align market design with 
+the system’s evolving physical characteristics and enable flexible demand-side resources to 
+participate on equal footing with traditional supply-side assets. 
+V. Proposition 3: Cost Allocation Reform Is Foundational 
+The third proposition is that cost allocation reform is foundational to efficient large-load 
+integration. The ANOPR suggests that large loads and hybrids should bear the full cost of any 
+network upgrades identified in the interconnection study process. The implicit reasoning is 
+straightforward: if the load triggers the need for upgrades, the load should pay. At first glance, 
+this approach appears consistent with the principle of cost causation. While framed as a 
+neutral application of cost causation, it rests on an economically fragile premise: that the 
+method producing upgrade assignments accurately reflects long-run marginal cost. 
+But this logic holds only if the assigned costs reflect the marginal cost of serving the load. In 
+practice, most upgrade assignments do not. Embedded-cost and fully distributed cost (FDC) 
+methods routinely generate distorted outcomes that shape siting choices, suppress flexibility, 
+and push developers toward bypass strategies that undermine reliability. 
+Transmission upgrade cost assignment remains one of the least transparent components of the 
+interconnection process. Because most jurisdictions rely on embedded-cost or FDC methods, 
+the relationship between a project’s marginal impact and its assigned upgrade cost is weak. 
+Two similarly sized projects can face orders-of-magnitude differences in upgrade charges due 
+to queue position or earlier network investments. These inconsistencies are incompatible with 
+the “just and reasonable” standard, create substantial barriers to rational siting, and encourage 
+developers to hedge through speculative queue entries, parallel site evaluations, and 
+behind-the-meter self-generation. 
+12 
+
+--- PAGE 13 ---
+The economic analysis of joint product cost allocation is grounded in the regulatory economics 
+literature. Coase’s analysis of the marginal-cost controversy showed that marginal-cost pricing 
+is essential for allocative efficiency but insufficient to recover the fixed costs characteristic of 
+capital-intensive networks.11 Ramsey’s inverse-elasticity rule and Boiteux’s formulation of 
+peak-load pricing and multi-part tariffs clarified how to recover fixed costs with minimal 
+distortion and how to reflect marginal system conditions in periods of scarcity.12 These 
+concepts underpin the cost-causation and beneficiary-pays principles of efficient rate design 
+codified by Bonbright.13 
+1. The limits of embedded-cost and FDC methods 
+Embedded-cost and FDC methods allocate fixed and sunk transmission costs using historical 
+accounting data and administrative formulas about contribution to peak load, usage shares, or 
+historical averages, rather than actual marginal impacts. This disconnect produces several 
+predictable distortions: 
+●​ Non-linearity: Costs change discontinuously depending on queue position or the 
+triggering of discrete investments. 
+●​ Lumpiness: A single entrant may be assigned the full cost of an upgrade sized to serve 
+future growth. 
+●​ Backward-looking allocation: Assignments embed historical planning decisions 
+unrelated to current marginal needs. 
+●​ Elasticity blindness: All megawatts are treated alike even when some are highly flexible 
+or deferrable. 
+Under conditions of rapid load growth, these weaknesses become more consequential. A 
+500–1,000 MW request can trigger substation expansions or major transmission additions, 
+many of which are joint, lumpy investments intended to serve long-term development with 
+multiple beneficiaries. Assigning the entire cost to the final entrant is not marginal cost 
+causation; it is an artifact of administrative allocation. 
+Moreover, small differences in modeling assumptions—dispatch patterns, contingencies, 
+topology—can yield substantially different upgrade requirements. A load may be assigned a 
+major upgrade not because it caused the need but because it happened to be evaluated last. 
+That outcome highlights why upgrade cost “stickiness” persists even after Order No. 2023 
+reforms. 
+13 James C. Bonbright, Principles of Public Utility Rates. Columbia University Press, 1961. 
+12 Frank P. Ramsey, "A Contribution to the Theory of Taxation," Economic Journal 37(145) (1927): 47-61; 
+Marcel Boiteux, “Peak-Load Pricing,” Journal of Business 33(2) (1960): 157–79; Marcel Boiteux, "On the 
+Management of Public Monopolies Subject to Budgetary Constraints," Journal of Economic Theory 3(3) 
+(1971): 219-240. See also Ronald R. Braeutigam, "Optimal Policies for Natural Monopolies," Handbook 
+of Industrial Organization Volume 2. Amsterdam: Elsevier, 1989, pp. 1289-1346. 
+11 Ronald H. Coase, “The Marginal Cost Controversy,” Economica 13(51) (1946): 169-182. 
+13 
+
+--- PAGE 14 ---
+FDC methods are inherently arbitrary and detach cost allocation from marginal impact.14 As 
+Bonbright emphasized, these approaches rely on accounting conventions rather than 
+economic causation, producing allocations that bear little relationship to the incremental costs 
+imposed by individual users. Braeutigam further showed that such methods suppress efficient 
+price signals in network industries by forcing fixed costs into volumetric or peak-based charges 
+that distort behavior. The result is a framework that obscures the economic rationale for 
+efficient network use and encourages siting, consumption, and investment decisions at odds 
+with system needs. 
+The “100 percent upgrade cost” principle is only sound if the underlying methodology is 
+economically sound. It is not. 
+2. Ramsey-Boiteux as the correct benchmark 
+Rather than relying on embedded-cost or fully distributed cost formulas, the Ramsey–Boiteux 
+framework offers the standard economic approach for recovering fixed network costs with 
+minimal distortion.15 In natural monopoly settings, where marginal-cost pricing cannot cover 
+the full cost of lumpy, capital-intensive infrastructure, the Ramsey–Boiteux solution identifies 
+how prices should deviate from marginal cost to preserve efficient behavior. Its central insight 
+is simple: when fixed costs must be recovered through markups, those markups should be 
+inversely related to each customer class’s elasticity of demand. Customers with inelastic 
+demand can bear somewhat higher markups without inefficiently reducing use, while 
+customers with elastic demand will cut consumption, relocate, or bypass the system if charged 
+too much. 
+In transmission planning, most upgrades create joint, shared benefits across multiple customer 
+types—retail customers, generators, flexible loads, and hybrid resources—each with different 
+elasticities. The Ramsey–Boiteux logic applies directly in this multi-beneficiary context: the 
+fixed cost of a lumpy upgrade should be allocated in proportion to each beneficiary’s elasticity, 
+not according to the timing of queue entry or arbitrary embedded-cost rules. Doing so 
+minimizes the aggregate distortion created by fixed-cost recovery. Highly elastic users—those 
+capable of relocating, deploying on-site generation, or strategically managing load—should 
+face lower markups because pushing them away imposes a large welfare cost. More inelastic 
+beneficiaries, whose consumption is less sensitive to price, can bear a larger share of 
+fixed-cost recovery with fewer adverse system effects. The result is a cost-allocation structure 
+that better reflects actual marginal impacts and preserves efficient usage and siting decisions 
+among all parties. 
+15 Egbert Dierker, “The Optimality of Boiteux-Ramsey Pricing,” Econometrica 59 (1) (1991): 99–121. 
+14 James C. Bonbright, Principles of Public Utility Rates. Columbia University Press, 1961, Chapter XVIII; 
+Ronald R. Braeutigam, "Optimal Policies for Natural Monopolies," Handbook of Industrial Organization 
+Volume 2. Amsterdam: Elsevier, 1989, pp. 1313-1315. 
+14 
+
+--- PAGE 15 ---
+Applied to large-load interconnection, this principle has clear implications. Modern data centers 
+and other flexible loads are among the most elastic customers on the system. They can shift 
+locations, adopt hybrid on-site generation, or build microgrids if confronted with high upgrade 
+charges. Assigning them the full cost of lumpy network upgrades—many of which provide 
+long-run benefits to multiple users—maximizes distortion and encourages inefficient bypass, 
+behaviors that the ANOPR seeks to avoid. 
+A Ramsey-aligned allocation would instead assign lower markups to highly elastic loads, 
+especially those that provide measurable flexibility or operational benefits, while allocating a 
+greater share of fixed-cost recovery to inelastic beneficiaries. This approach is forward-looking, 
+efficiency-oriented, and well suited to a system experiencing rapid demand growth and 
+substantial technological change. 
+3. Why excessive upgrade charges are counterproductive 
+When cost-allocation methods ignore elasticity and flexibility, predictable patterns emerge: 
+●​ Developers avoid high-cost jurisdictions regardless of system need. 
+●​ Projects migrate to regions with lower allocators, distorting regional development. 
+●​ Firms invest in behind-the-fence microgrids, often relying on natural gas or fuel cells, to 
+secure faster time-to-power. 
+●​ Loads that could provide UPS-based frequency response or controllable demand 
+instead isolate themselves electrically. 
+These responses work directly against nondiscriminatory access, reliability, and efficient 
+integration of new load. 
+As load grows rapidly, the economics of these distortions become more visible. Many 
+upgrades triggered in interconnection studies are joint, forward-looking investments. Assigning 
+their full cost to a single entrant is economically unsound and ignores the shared nature of 
+transmission infrastructure. 
+The ANOPR’s suggestion of 100% participant funding (Principle 8) assumes that a new load is 
+a static addition to a fixed system. In a dynamic grid, a flexible load provides system-wide 
+benefits by increasing asset utilization. Assigning 100% of costs to an entrant who creates 
+positive spillover effects violates the beneficiary-pays principle and discourages the very 
+dynamic, decentralized participation that modern digital technologies enable. 
+4. Toward economically sound cost allocation 
+FERC should not adopt a blanket rule obligating large loads to bear 100 percent of assigned 
+upgrade costs without first reforming the allocation methodology to reflect marginal cost 
+principles. A coherent federal framework would: 
+15 
+
+--- PAGE 16 ---
+●​ Use two-part tariffs separating marginal operating costs from fixed network cost 
+recovery. 
+●​ Rely on long-run marginal cost (LRMC) for forward-looking upgrade assessments 
+rather than historical accounting. 
+●​ Incorporate locational differentiation so signals reflect true incremental cost rather 
+than arbitrary allocations. 
+●​ Provide reduced upgrade burdens for loads with verifiable flexibility, including 
+UPS-based fast response, curtailable service, and hybrid on-site generation. 
+●​ Minimize bypass incentives, ensuring flexible, grid-supportive loads face a rational 
+economic case for interconnection rather than isolation. 
+Cost allocation should reflect the principle that customers pay the costs they impose on the 
+system, minus any benefits they provide. Flexible loads that avoid peak demand (including 
+based on grid operator signals) do not cause peak-driven upgrades or capacity additions and 
+should not be assigned such costs. When modeling assumptions reflect enforceable 
+commitments and hybrid facility strategies, cost assignments become more accurate and more 
+consistent with competitive neutrality. This change in methods, alongside a move away from 
+FDC and toward Ramsey-Boiteux allocation methods, improves the efficiency of investment 
+decisions and ensures that tariff design does not favor legacy technologies over innovative 
+ones. 
+Aligning cost allocation with marginal impacts ensures that flexible loads remain part of the 
+bulk system rather than retreating into private microgrids. It allows large loads to integrate as 
+reliability-enhancing resources rather than becoming disconnected pockets of generation and 
+demand. Most importantly, it supports the ANOPR’s objective of enabling timely, efficient, and 
+nondiscriminatory access to the transmission system. 
+VI. Design Principles Derived from Propositions 1–3 
+The analysis in Sections I–V points toward a coherent set of design principles for a modern 
+federal approach to large-load interconnection. These principles flow directly from the 
+economics of flexibility, the transaction-cost burdens of legacy rules, and the need for 
+marginal-cost-aligned cost allocation and fixed cost recovery. 
+A sensible framework begins by treating flexibility as a system value rather than an operational 
+irregularity. Modern large loads can supply flexibility that substitutes for missing supply 
+elasticity and reduces marginal system costs. Regulatory structures must therefore embed their 
+capabilities into interconnection studies, market-participation pathways, and cost allocation. 
+The federal role should also focus on reducing transaction costs. Many of the barriers 
+examined earlier arise because interconnection and market rules treat loads as passive, 
+uncontrollable entities, which increases uncertainty and magnifies hold-up risk. A 
+16 
+
+--- PAGE 17 ---
+well-designed framework lowers these frictions and supports credible commitments that reflect 
+the operational realities of flexible loads. 
+Finally, cost allocation must be anchored in marginal-cost principles and informed by the 
+Ramsey–Boiteux logic for recovering fixed network costs. Transmission expansion is lumpy and 
+jointly beneficial; allocating those fixed costs through embedded-cost formulas is economically 
+incoherent and distorts investment and siting decisions. A modern approach must instead align 
+charges with beneficiaries’ elasticities and marginal impacts. 
+Together, these principles outline a federal role that is modular and adaptive, one that 
+encourages innovation rather than constraining it. 
+VII. Recommendations for a Federal Framework for Large-Load Interconnection 
+The design principles translate into a set of recommendations that modernize the federal 
+framework in a way that aligns interconnection processes with the operational capabilities of 
+large, flexible loads. 
+A modern framework requires interconnection options that explicitly recognize and value 
+flexibility. Curtailable or limited-service arrangements give developers access to the grid at 
+lower cost and faster timelines when they can accept conditional service. Loads capable of 
+demonstrating enforceable flexibility—whether through UPS-based response, TES operation, 
+hybrid generation, or workload shifting—should be eligible for accelerated study treatment. 
+Interconnection analyses should reflect these capabilities by evaluating the actual operational 
+profile of the load rather than assuming peak nameplate demand during scarcity events. 
+Market-participation pathways must be modernized as well. Participation categories, 
+performance requirements, and telemetry obligations within RTOs and ISOs were designed for 
+a system dominated by large generators and static loads. To enable modern demand-side 
+flexibility, these rules must evolve. Flexible loads and hybrid resources need pathways that 
+treat them as legitimate grid participants capable of supplying ancillary services, stability 
+support, and demand response. Clarifying the jurisdictional status of technologies such as TES 
+would resolve inconsistencies that currently prevent these resources from accessing wholesale 
+markets on competitive terms. 
+The framework should also support competitive and transparent mechanisms that reduce 
+strategic behavior and ease siting. Merchant and independent transmission projects can 
+provide alternatives when incumbent processes lag. Tradable queue positions and upgrade 
+rights can improve project sequencing and reduce incentives for speculative delay. Transparent 
+hosting-capacity information and standardized modeling assumptions can lower search costs 
+and provide developers with visibility into where their flexibility is most valuable and where it 
+least strains the system. 
+17 
+
+--- PAGE 18 ---
+VIII. Economically Sound Cost Allocation Framework 
+The analysis in Section V demonstrates that cost allocation is a pivotal element of an efficient 
+interconnection regime. The inadequacies of embedded-cost and FDC methodologies are by 
+now well understood. These approaches rely on historical accounting rather than economic 
+causation, producing non-linear, backward-looking, and elasticity-blind assignments that 
+distort siting decisions and create inconsistent outcomes across similar projects. 
+Embedded-cost allocation obscures marginal impacts, embeds sunk costs into pricing 
+structures, and encourages consumption and investment patterns inconsistent with efficient 
+network use. 
+Moving toward an economically coherent framework requires adopting the logic of 
+Ramsey–Boiteux pricing for joint, lumpy transmission investments. The central insight is that 
+fixed network costs should be recovered in a way that minimizes distortions, which means 
+allocating the burden based on beneficiaries’ relative elasticities. In transmission planning, 
+upgrades almost always benefit multiple user classes with differing degrees of elasticity, 
+including retail customers, generators, flexible loads, and hybrid resources. A 
+Ramsey-consistent approach allocates fixed costs across these classes in a way that imposes 
+lower markups on elastic users—those capable of relocating, self-supplying, or modulating 
+consumption—and higher markups on inelastic ones. This logic applies directly to modern 
+large loads, which tend to be among the most elastic participants in the system. Charging them 
+the full cost of lumpy upgrades predictably induces bypass, undermining both efficiency and 
+reliability. 
+A forward-looking, marginal-cost-based approach therefore requires more than abandoning 
+FDC. It calls for LRMC-based upgrade assessments, cost reductions for loads that provide 
+verifiable flexibility or hybrid on-site generation, and tariff designs that separate marginal 
+operating costs from fixed network recovery. These elements create a cost-allocation 
+framework that reflects actual system impacts, minimizes bypass incentives, and encourages 
+the integration of grid-supportive flexibility into the bulk system. 
+IX. How the Recommended Framework Advances the Objectives in the ANOPR 
+A federal framework built on these principles directly advances the ANOPR’s goals of timely, 
+orderly, and nondiscriminatory interconnection. Flexibility-centered interconnection options and 
+transparent study processes shorten timelines, reduce queue congestion, and improve 
+alignment between load development and grid expansion. By standardizing modeling 
+assumptions and requiring clearer documentation of study practices, the framework also 
+increases predictability, reduces disputes, and improves coordination across regions. 
+Modernizing market rules and integrating flexible loads into ancillary service products promotes 
+nondiscriminatory access. Treating flexible loads on equal terms with traditional resources 
+recognizes their ability to contribute to frequency response, peak reduction, and congestion 
+18 
+
+--- PAGE 19 ---
+management. These capabilities strengthen reliability at a time when the system is increasingly 
+dependent on inverter-based resources and facing rapid load growth. 
+Finally, economically coherent cost allocation supports efficient siting, reduces unnecessary 
+infrastructure investment, and minimizes the incentives that drive developers toward 
+behind-the-fence microgrids. By aligning fixed-cost recovery with beneficiaries’ elasticities and 
+marginal impacts, the framework supports innovation in demand-modulating and hybrid 
+resources while ensuring that cost responsibility remains consistent with economic principles. 
+X. Conclusion 
+The structural load growth associated with AI and data center expansion presents a real 
+challenge, but one well within the capability of a modernized regulatory framework designed to 
+recognize and reward flexibility. Legacy interconnection rules, market categories, and 
+cost-allocation methodologies were developed for a system with very different characteristics. 
+Left unchanged, they will suppress flexibility, slow innovation, and encourage inefficient 
+bypass. 
+The analysis in this comment shows that a principles-based, modular federal approach—one 
+that integrates flexibility into interconnection and market design, reduces transaction costs, and 
+aligns cost allocation with marginal impacts—offers a more effective path forward. Such a 
+framework will allow FERC and DOE to meet the moment: enabling timely, orderly, and 
+nondiscriminatory integration of large loads while strengthening system reliability, improving 
+market performance, and supporting the evolution of a flexible, resilient, and innovation-ready 
+electricity system. 
+I respectfully request that the Commission take these initial comments into account as it 
+considers the ANOPR and the development of a notice of proposed rulemaking in this 
+proceeding. 
+ 
+ 
+ 
+19 

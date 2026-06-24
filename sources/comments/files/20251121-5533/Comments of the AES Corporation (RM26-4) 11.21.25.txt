@@ -1,0 +1,463 @@
+--- PAGE 1 ---
+  UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+Interconnection of Large Loads to the Interstate 
+Transmission System 
+) 
+) 
+Docket No. RM26-4-000 
+ 
+COMMENTS OF THE AES CORPORATION 
+ 
+ 
+Pursuant to the Notice Inviting Comments issued on October 27, 2025 by the Federal 
+Energy Regulatory Commission (“FERC” or “Commission”),1 The AES Corporation (“AES”) 
+hereby submits these comments in response to the advance notice of proposed rulemaking 
+(“ANOPR”) released by the Secretary of Energy pursuant to section 403 of the Department of 
+Energy (“DOE”) Organization Act.2   
+I. 
+BACKGROUND 
+  
+AES is a publicly-traded, diversified global energy company that indirectly owns electric 
+generation, transmission, and distribution facilities, including approximately 17.7 gigawatts 
+(“GW”) of generating capacity of thermal, battery energy storage, and renewable energy 
+generating facilities located across the United States and two transmission-owning utilities.  In 
+the United States, AES subsidiaries maintain an approximately 7.5 GW backlog of contracted 
+projects under development, and an approximately 46 GW pipeline. AES’s generation-owning 
+subsidiaries are top suppliers of energy to data center customers, having signed approximately 
+10.5 GW worth of long-term wholesale power purchase agreements across business lines since 
+2018.    
+ 
+1 Interconnection of Large Loads to the Interstate Transmission System, Notice Inviting Comments, 
+Docket No. RM26-4-000 (Oct. 27, 2025).   
+2 Interconnection of Large Loads to the Interstate Transmission System, Advance Notice of Proposed 
+Rulemaking, Docket No. RM26-4-000 (Oct. 27, 2025) (“ANOPR”). 
+
+--- PAGE 2 ---
+2 
+ 
+In Ohio, AES is the majority owner of the Dayton Power and Light Company d/b/a AES 
+Ohio (“AES Ohio”), a transmission and distribution public utility serving approximately 539,000 
+retail customers in West-Central Ohio.  AES Ohio’s transmission facilities are under the 
+operational control of PJM Interconnection, L.L.C. (“PJM”) and transmission service over those 
+facilities is provided under the PJM Open Access Transmission Tariff (“PJM OATT”).  AES 
+Ohio provides retail electric service to its customers under tariffs regulated by the Public Utilities 
+Commission of Ohio (“PUCO”).  AES Ohio serves certain customers at retail via high voltage 
+delivery points under its PUCO-jurisdictional Tariff D22—Electric Distribution Service—High 
+Voltage and may enter into unique arrangements with customers for such service, subject to 
+PUCO approval.3    AES Ohio also purchases power for resale to its retail customers who have 
+not chosen a competitive supplier (Standard Service Offer electric service) through a competitive 
+auction process regulated by the PUCO.4 
+In Indiana, AES is the majority owner of the Indianapolis Power and Light d/b/a AES 
+Indiana (“AES Indiana”), a vertically integrated public utility that provides electric utility service 
+to over 520,000 retail customers located principally in and near the City of Indianapolis.  AES 
+Indiana’s transmission facilities are subject to operational control of the Midcontinent 
+Independent System Operator, Inc. (“MISO OATT”) and transmission service over those 
+ 
+3 AES Ohio has retired or divested all of its generation assets except a 4.9% indirect ownership interest 
+in the Ohio Valley Electric Corporation (resulting in indirect control of 117 MW). 
+4 Electric customers within Ohio are permitted to purchase power under contract from a Competitive 
+Retail Electric Service ("CRES") provider or from their local utility under SSO rates. The SSO 
+generation supply is provided by third parties through a competitive bid process. Ohio utilities have the 
+exclusive right to provide transmission and distribution services in their state-certified territories. While 
+Ohio allows customers to choose retail generation providers, AES Ohio is required to provide retail 
+generation service at SSO rates to any customer that has not signed a contract with a CRES provider or 
+as a provider of last resort in the event of a CRES provider default. SSO rates are subject to rules and 
+regulations of the PUCO and are established through a competitive bid process for the supply of power 
+to SSO customers. 
+
+--- PAGE 3 ---
+3 
+ 
+facilities is provided under the MISO Open Access Transmission Tariff.  AES Indiana provides 
+retail electric service to its customers under tariffs regulated by the Indiana Utility Regulatory 
+Commission (“IURC”).  AES Indiana serves certain customers at retail via high voltage delivery 
+points under its IURC-jurisdictional Rate HL: High Load Factor -- Primary Distribution, Sub-
+Transmission and Transmission Voltages.  AES Indiana also may enter into Customer Specific 
+Contracts for such service subject to IURC approval.  In addition to its transmission and 
+distribution assets, AES Indiana owns over 3.9 GW of generation and battery capacity. 
+Both AES Ohio and AES Indiana’s (AES Ohio and AES Indiana together, the “AES 
+Utilities”) wholesale transmission rates are developed annually through formula rates filed with 
+and approved by the Commission.5  However, the AES Utilities provide limited transmission 
+service to entities other than on behalf of their retail customers. The vast majority of each utility’s 
+transmission service is provided to themselves to facilitate each utility’s obligations as load 
+serving entities for their retail customers.  In general, when developing its bundled retail rates, 
+AES Indiana includes transmission plant and expenses and credits transmission revenues 
+received from its FERC formula rate to its cost of service.  AES Ohio recovers the transmission-
+related costs imposed on, or charged to, it by PJM (including the Network Integration 
+Transmission Service rate developed through its FERC formula rate) through its retail 
+Transmission Cost Recovery Rider included in its PUCO-jurisdictional retail rates. 
+II. 
+INTRODUCTION 
+AES appreciates the Commission’s focus on the interconnection of large loads and the 
+interplay between these loads and co-located generation resources.  AES believes that the 
+ 
+5 PJM OATT Attachment H-15, H-15A PT. 1 – 4, H-15B (providing AES Ohio’s Formula Rate); MISO 
+OATT Attachments O-AESI and GG-AESI (providing AES Indiana’s Formula Rate). 
+
+--- PAGE 4 ---
+4 
+ 
+ANOPR raises important questions about large load interconnections and associated issues, 
+including co-location of generation and protections for existing customers.     
+The AES Utilities are experiencing unprecedented load growth driven by data center 
+additions in their respective service territories.  As provided to PJM, AES Ohio currently 
+forecasts over 6.3 gigawatts of new load by 2032, which will nearly triple AES Ohio’s current 
+peak.  AES Indiana forecasted to MISO nearly 1.9 gigawatts of new load by 2029, representing 
+a seventy-five percent increase to its existing peak.  The AES Utilities are committed to fulfilling 
+their obligation to serve these large loads in an efficient and cost-effective manner, while 
+protecting existing customers from the risk if such customers do not reach their requested level 
+of service.  To date, the AES Utilities have entered into agreements with data center customers 
+representing over 2.8 GW of load additions (and are currently studying interconnections and 
+negotiating agreements for over 5.4 GW of load additions), and thus have direct experience with 
+many of the issues raised by the ANOPR.  Similarly, AES’s generation-owning subsidiaries 
+outside of Ohio and Indiana are some of the largest suppliers of clean energy to data center 
+customers, and AES sees co-location as a tool to be deployed where needed to accelerate the 
+deployment of generation to meet growing wholesale power demand.  
+III. 
+COMMENTS ON CERTAIN DOE PRINCIPLES FOR REFORM 
+ 
+The ANOPR states that due to the unprecedented current and expected growth of large 
+loads seeking to interconnect, and to provide open and non-discriminatory access to the 
+transmission system, it has become necessary to standardize interconnection procedures and 
+agreements for such loads.6   AES shares the view that transparency and regulatory certainty are 
+ 
+6 ANOPR at P 12. 
+
+--- PAGE 5 ---
+5 
+ 
+necessary elements for effective market participation and investment, whether such investment 
+involves generation, transmission and distribution, or load.   However, AES also recognizes that 
+each large load addition presents unique circumstances depending on the region in which the 
+load is located and any state jurisdictional issues.  AES recommends that any Commission action 
+taken on the principles proposed in the ANOPR be done in a manner that preserves contractual 
+flexibility between parties and recognizes the technical and operational nuances of the load and 
+generation applications within the regions in which they are located.  AES also believes that the 
+Commission should exercise caution to avoid potential jurisdictional pitfalls that could 
+ultimately frustrate the ANOPR’s goal of speed to power and the industry’s need for certainty on 
+approach.  AES addresses certain of the ANOPR’s principles below.  
+A. 
+Jurisdictional Considerations (Principle 1) 
+The interconnection of large loads to utility systems presents nuanced jurisdictional 
+questions that are not easily resolved. If the Commission asserts jurisdiction over load 
+interconnection processes that have historically been state-jurisdictional or issues a standalone 
+rulemaking without considering existing stakeholder efforts, then the ANOPR’s objective of 
+expediting large load interconnections in a non-discriminatory manner may be delayed.  In order 
+to interconnect new large loads as quickly and efficiently as possible, market participants need 
+regulatory certainty, and the potential for protracted disputes concerning jurisdiction would 
+thwart such certainty.  Accordingly, AES respectfully recommends that the Commission develop 
+a robust record and consider existing stakeholder and state initiatives before seeking to 
+standardize large load interconnection.7   
+ 
+7 AES is concerned that establishing standardized readiness requirements and withdrawal penalties (i.e. 
+ANOPR Principle 4) may not properly address challenges associated with speculative large load 
+ 
+
+--- PAGE 6 ---
+6 
+ 
+However, there are areas that are squarely within the Commission’s jurisdiction where 
+Commission guidance could support the existing efforts to interconnect large loads to the 
+transmission system.  For example, Section 205 of the Federal Power Act authorizes FERC to 
+require a public utility to file any contracts that could significantly affect transmission rates.   
+AES has, and continues to file, its large load construction service agreements (“CSA”) for 
+Commission approval under Section 205 when such agreements include provisions requiring the 
+customer to pay for significant transmission network upgrades if a CSA is terminated.8  There is 
+a clear role for the Commission in ensuring that certain cost-recovery mechanisms are just and 
+reasonable (such as cost recovery related to the construction of network upgrades if a large load 
+abandons the interconnection prior to taking retail service).9  AES details its current process for 
+interconnecting large loads, and potential Commission enhancements, in Part B, below.  In 
+contrast, agreements to provide retail electric service (regardless of whether such agreements 
+involve service under a high voltage tariff) are state jurisdictional because (among other reasons) 
+such service necessarily involves service over distribution facilities to the end user.  
+The Commission also has jurisdiction over the interconnection of the generation and 
+storage capacity necessary to serve large loads.  Significant additions to existing generation and 
+storage capacity are required to reliably serve the expected large load additions over the next 
+decade and certain regions are already facing capacity constraints.  The Commission should 
+ 
+projects. Standardized penalties may also fail to consider the different financial positions that large 
+loads may have relative to each other. In AES’s experience, these challenges can vary from region to 
+region and are best resolved by power providers and transmission owners, in partnership with their state 
+commissions or other relevant retail authorities.  For example, the PUCO recently approved an AEP 
+Ohio tariff that imposes certain financial and usage requirements intended to ensure that only data 
+center projects that have achieved a certain degree of certainty are considered for interconnection.   
+8 16 U.S.C. § 824d(c); See Cleveland v. FERC, 773 F.2d 1368, 1376 (D.C. Cir. 1985) 
+9  E.g., Dayton Power and Light Company d/b/a AES Ohio, CSA Filing, Docket No. ER25-192-000 
+(filed Oct. 23, 2024). 
+
+--- PAGE 7 ---
+7 
+ 
+continue to utilize its clear jurisdiction over the generator interconnection process to address 
+existing barriers to new generation and storage capacity entry, as these barriers continue to hinder 
+AES’s and other developers’ ability to deliver much needed energy capacity to meet rising 
+wholesale demand.  Failing to address these issues will jeopardize the ability to serve large loads 
+(regardless of the speed at which they interconnect) or could lead to significant volatility in the 
+energy and capacity markets.  To meet the unprecedented demand growth over the next decade, 
+AES believes that Commission focus is needed on expediting all possible solutions (including 
+generation and battery capacity, demand response, targeted curtailment, and grid enhancing 
+technologies). 
+B. 
+Load Interconnection Standardization and Cost Assignment for Network 
+Upgrades (Principles 4 and 8) 
+As described in the ANOPR, U.S. electricity demand is expected to grow at an 
+extraordinary pace, most notably from large loads associated with data centers.10  In AES’s 
+experience, data center customers are primarily concerned with (1) the speed at which they can 
+receive the first MW of service, (2) the total amount of MWs that can be served at a given site, 
+and (3) the cost of providing service.  In AES’s view, significant one-size-fits-all changes to the 
+existing cost assignment paradigm for required network upgrades (i.e. 100% costs borne by the 
+customer) are not needed to achieve the above considerations.  Utilities such as AES Ohio and 
+AES Indiana are tasked with building, maintaining, and operating the grid infrastructure 
+necessary to provide service to all customers and are compensated for the risks associated with 
+such by earning a reasonable return on their investments.  These utilities are also incentivized to 
+meet new load customer goals so that they can continue to upgrade their networks and spread 
+ 
+10 ANOPR at Section II.A. 
+
+--- PAGE 8 ---
+8 
+ 
+network costs over a larger load base, which in turn benefits existing customers.  If a utility 
+cannot meet customer needs, data centers and other large loads are likely to relocate to different 
+utility service territories.  Thus, speed of interconnection is already an important consideration 
+for utilities and service providers.   
+AES recognizes that there are multiple just and reasonable approaches to processing 
+interconnection requests from large loads. However, to date, the AES Utilities have experienced 
+success interconnecting large loads to the grid within such customers’ requested timeframes in a 
+manner that is tailored to also protect existing customers.  To assist the Commission with 
+developing a robust record in this proceeding, AES provides detail on its current approach, along 
+with suggestions for Commission enhancement, below.  
+1. 
+AES Utilities Approach to Large Load Interconnection 
+ 
+ As utilities providing large load interconnections, AES Ohio and AES Indiana have 
+several guiding principles: (1) all interconnections should be performed in a safe and reliable 
+manner, (2) to the extent possible, existing customers should be protected from cost-shifting risks 
+associated with large load additions, and (3) where possible, new additions should be designed 
+to reinforce any weaknesses in the network.  During the interconnection process, large load 
+customers’ requests for service change frequently, including for matters related to the 
+configuration of their sites and the ramping period.  While the customer is refining their project, 
+the interconnecting transmission owner is actively studying its system to determine the system 
+upgrades necessary to serve such load.  In AES’s experience, large load interconnection is a 
+dynamic process between multiple parties to identify the best site, configuration and size to meet 
+
+--- PAGE 9 ---
+9 
+ 
+each party’s goals, needs, and capabilities.11  Notably, each interconnection is unique depending 
+on the site, cost of facilities necessary to provide service, and load type.  The risks for the utility, 
+developer, new large load customer, and existing customers reflect such uniqueness.    
+For the AES Utilities, a key part of the interconnection process is the negotiation of (1) 
+the CSA and (2) retail electric service agreement.  The CSA provides the terms and conditions 
+pursuant to which the utility will construct the grid facilities necessary to serve the large load.  
+Because the interconnection processes are dynamic and flexible, in many cases, AES Ohio and 
+AES Indiana can work with a large load customer to site their project in a location that provides 
+reliability benefits for the system, supports growth for the economies of the service territories, 
+and maintains or potentially lowers what existing customer rates would have been absent the 
+project.   
+Concurrent with negotiation of a CSA, AES Ohio and AES Indiana and their large load 
+customers negotiate the terms of the applicable state-jurisdictional electric service agreement.  
+These agreements provide the terms and conditions pursuant to which the utility will provide 
+retail service to the large load.  Typically, these agreements are executed while the large load 
+customer’s facility is still in development and in advance of other important milestones.  Thus, 
+the utility and existing customers are exposed to the risk that the customer will fail to take the 
+level of service requested or will abandon the project.  In order to protect existing customers and 
+the financial integrity of the utility, AES Ohio and AES Indiana require such agreements to 
+ 
+11 The AES Utilities have been successful partnering with data center customers to locate data centers in 
+areas that are both beneficial for needed system reinforcements for the zone and existing customers, in 
+addition to the data center customer.  The AES Utilities are able to do so because, in their respective 
+service territories, they are well positioned to understand the nuances of their respective systems, along 
+with their customers’ needs, and have a flexible, dynamic process in place. 
+
+--- PAGE 10 ---
+10 
+ 
+include minimum load requirements and exit or termination fees.  AES Ohio and AES Indiana 
+balance the projected cost of providing service to the customer with the minimum load 
+requirement to develop an appropriate contract term and termination fee (In Indiana, there are 
+also state statutory rules regarding customer responsibility for utility costs).      
+2. Interconnection Risks and Potential Commission Enhancement 
+ 
+From the AES Utilities’ perspective, the primary risk that needs to be addressed prior to 
+the commencement of service, is the potential for a large load customer to take less service than 
+requested, resulting in the construction of grid upgrades that are no longer used and useful (due 
+to the customer either lowering their demand or abandoning the project).  As described above, 
+for large load customers, the terms of interconnection to the utility system are typically one of 
+the key initial milestones for their project ahead of other key development needs (including 
+securing separate energy supply when needed).12  Thus, for the utility, there is a significant risk 
+that the large load customer is unable to meet its requested ramp and load schedule due to the 
+customer failing to meet other development needs that occur later (water rights, zoning 
+approvals, energy supply procurement, among others).  Considering this risk, AES Ohio and 
+AES Indiana require large load customers to be responsible for the costs incurred if the large 
+load abandons their project.  Thus, under AES Ohio and AES Indiana’s current practices, if a 
+CSA is terminated, the large load customer will reimburse the utility for the development and 
+ 
+12 In AES’ experience, even at vertically-integrated utilities, large load customers are willing to enter 
+into CSAs for necessary grid enhancements prior to securing the terms of an electric service agreement 
+associated with providing energy and capacity necessary to serve them.  As noted above, for large load 
+customers, a key priority is the first MW of service.  To secure that first MW as quickly as possible (and 
+start construction of the grid facilities as quickly as possible), many large loads are willing to pay for 
+such grid enhancements prior to having certainty regarding their energy supply needs. 
+
+--- PAGE 11 ---
+11 
+ 
+construction costs it incurred for the transmission and distribution facilities necessary for 
+interconnection (minus any salvage value) up to a cap that includes a contingency. 
+As discussed above, the CSA is a critical component to establishing large load 
+interconnection and to protecting existing customers, and the AES has filed these CSAs with the 
+Commission when necessary.  However, AES recognizes that other utilities have taken different 
+approaches from the AES Utilities,13 and that questions remain as to how certain customer 
+protections (i.e. termination or load shortfall payments made by the large load customer) would 
+be accounted for and reflected in transmission rates.  Accordingly, AES believes that the 
+Commission could provide certainty to the market by issuing guidance, whether in the form of a 
+policy statement or otherwise, regarding how termination fees from construction service 
+agreements associated with transmission network upgrades should be accounted for in 
+transmission rates.  The Commission could also provide certainty by expeditiously acting in 
+dockets involving construction service agreements (or similar agreements) with open questions 
+currently before the Commission.  In addition, many utilities include minimum load provisions 
+in their retail electric service agreements with large loads, with associated penalties if minimum 
+load thresholds are not met.  To the extent these provisions trigger, the Commission should 
+provide guidance regarding whether such load should be reflected in the derivation of 
+transmission rates.  
+C. 
+Co-location Incentives and Operational Limitations (Principles 3, 5 and 6) 
+Several of the ANOPR principles address co-location through the inclusion of “hybrid 
+facilities,” which the ANOPR defines as loads “that share a point of interconnection with new or 
+ 
+13 See, e.g., PECO Energy Company, TSA Filing, Docket No. ER25-3492-000 (filed Sept. 23, 2025). 
+
+--- PAGE 12 ---
+12 
+ 
+existing generation facilities.”14  AES believes that there can be both system and time-to-power 
+benefits associated with co-location, and AES supports the ANOPR’s goal of incentivizing the 
+co-location of generation and load, where appropriate.  However, AES believes that any 
+incentives should adhere to two guiding principles: First, any incentives should be technology 
+neutral and should not disincentivize other activities that support the grid, such as the 
+development of energy storage or the adoption of innovative technologies.  Second, these 
+incentives should not unduly harm other customers on the system, whether through cost-shifting, 
+or otherwise.15   
+AES believes that the Commission should take a holistic approach to ensure that any 
+rules surrounding co-location are developed to allow for flexibility in configuration and 
+contractual arrangements.  In this regard, the Commission should first clarify the definitions it 
+proposes to adopt and ensure that such definitions capture and respect regional and operational 
+nuances.  Any proposed rule should therefore seek further comment on what constitutes co-
+location for the purposes of the reforms proposed in this proceeding, as the definition of “hybrid 
+project” proposed by the ANOPR may not reflect the range of potential configurations.  For 
+example, in some regions, generation and load may seek to share a common point of 
+interconnection but may be separately metered and interact independently of one another vis a 
+vis the transmission grid, therefore arguably both co-located and not co-located.  In other 
+instances, the generation could be physically islanded, without any grid interconnection. As 
+ 
+14 ANOPR at P 12; See id. at PP 15, 22, 23.  
+15 While both important, generation and load interconnection are separate issues that do not necessarily 
+need to be addressed together.  For example, AES believes that customer protection mechanisms to 
+address the risk of cost-shifting must be in place regardless of whether large loads are co-located with 
+generating facilities.   See Part III.B. 
+
+--- PAGE 13 ---
+13 
+ 
+discussed above, regulatory certainty is paramount, and AES believes that the Commission 
+should avoid adopting a strict definition of “hybrid” or “co-located” facilities without first 
+considering the issues raised around collocation in other ongoing Commission proceedings and 
+within the RTO/ISO stakeholder processes.16   
+The Commission should also take a flexible approach to establishing any potential 
+incentives designed to unlock the benefits of co-location arrangements.  In ANOPR Principal 5, 
+the Commission highlights one potential incentive mechanism in the form of faster time to power 
+through physical limitations on injection and withdrawal rights.  Effectively, the ANOPR 
+proposes that the generation and the load install system protection facilities and treat injection 
+and withdrawal rights on a “net” basis.   AES believes that the Commission should develop a 
+more fulsome record to evaluate with this approach, and ensure that constituency between any 
+proposed rules.17  Physical limitations may make sense in some instances, and it is true that a 
+critical factor in determining the need for network upgrades is whether the load will require grid 
+support (i.e. withdrawal rights) during periods when any collocated generation is unavailable.  
+However, there are other circumstances where alternative approaches to incentivize co-location 
+may also be reasonable, and Commission should explore other incentives without the need for 
+physical limitations that effectively island large quantities of new generation.18  Financial 
+mechanisms to encourage certain behavior or account for deviations, without the need for 
+ 
+16 See, e.g., Large Loads Co-Located at Generating Facilities, Notice of Commissioner-Led Technical 
+Conference, Docket No. AD24-11-000 (issued Aug. 2, 2024) (“Large Load Technical Conference”).  
+17 AES notes that, elsewhere in the ANOPR, the Commission suggests that certain services should be 
+based on “peak,” rather than “net” demand.  See ANOPR at P 29 (Principle 12).  
+18 Although the ANOPR suggests that collocated generation would be fully compensated by the market 
+for ancillary services, more clarity is required as to how this compensation would work if the generator 
+were limited to reduced, or no, injection rights. 
+
+--- PAGE 14 ---
+14 
+ 
+potentially costly additional system protection equipment, should also be considered.19  AES 
+notes that some of these issues are already before the Commission in existing proceedings, 
+including the Commission’s FPA Section 206 Proceeding addressing co-location of large loads 
+within PJM.20   To promote regulatory certainty, the Commission should ensure that any rules 
+developed through this proceeding related to collocated generation and transmission service 
+address and take into account the records as well.  
+D. 
+Expedited Studies for Certain Facilities (Principle 7) 
+AES believes that both load and generation should be subject to the curtailment rules 
+outlined in the relevant reliability standards. AES also believes that an “all of the above” 
+approach is needed to satisfy the grid’s growing need for supply. Accordingly, the Commission 
+should continue to develop a robust record to understand the operational and technical 
+capabilities of large loads and collocated facilities both in the short term and over time. 
+E. 
+Co-location with Existing Generation (Principle 10) 
+AES believes that the Commission should distinguish between co-location of loads with 
+new versus existing generation, as the impacts to existing customers will differ.   With respect to 
+existing generation, AES believes that the system operator should be required to study that 
+generation as a retirement if it is going to be effectively taken behind-the-meter in a manner that 
+removes the energy and capacity benefits from the market.  AES believes that this is consistent 
+ 
+19 AES Ohio highlighted some of the potential benefits in its response to the PJM Show Cause 
+Proceeding. See Answer of the Dayton Power and Light Company d/b/a AES Ohio, Docket Nos. EL25-
+49-000, et. al. (filed March 24, 2025).  AES urges the Commission to develop a comprehensive record, 
+incorporating the testimony from the Large Load Technical Conference. As evidenced by the Large 
+Load Technical Conference, and in responses to the PJM Show Cause Proceeding, there is a clear desire 
+throughout the industry for clear rules around cost allocation and the assessment of transmission 
+charges on large loads. 
+20 PJM Interconnection, L.L.C., et. al., 190 FERC ¶ 61,115 (2025) (“PJM Show Cause Proceeding”). 
+
+--- PAGE 15 ---
+15 
+ 
+with the Commission goal of ensuring reliability, particularly in light of the generation supply 
+shortages forecasted in certain regions for the next few years.  Where at all possible, the 
+Commission should encourage the entry of new generation into the market to ensure that supply 
+catches up with demand.  
+IV. 
+CONCLUSION 
+AES appreciates the opportunity to comment on this important proceeding and 
+respectfully requests that the Commission act in accordance with AES’s Comments.  AES 
+looks forward to working with the Commission and other stakeholders to ensure that the 
+industry is able to accelerate the interconnection of large loads and needed generation in a 
+manner that promotes investment, ensures regulatory certainty and, above all, provides for the 
+safe, reliable, and affordable delivery of energy. 
+ 
+Respectfully submitted, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/s/ Ben L. Tejblum        
+Ben L. Tejblum 
+Angela Amos 
+William M. Rappolt 
+The AES Corporation 
+4300 Wilson Blvd 
+Arlington, VA 22203 
+ben.tejblum@aes.com 
+angela.amos@aes.com 
+william.rappolt@aes.com 
+ 
+ 
+ 
+Dated: November 21, 2025 

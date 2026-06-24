@@ -1,0 +1,365 @@
+--- PAGE 1 ---
+1 
+ 
+Public Comment 
+Federal Energy Regulatory Commission (FERC) ANOPR on Connecting Large Loads 
+Docket No. RM26-4-000 
+ 
+Qualifications and Introduction 
+I am Herbert (Herb) Schrayshuen, a licensed professional engineer in the State of New York and a power 
+industry consultant. I offer this technical guidance to the FERC regarding a subset of the matters 
+presented in the ANOPR related to power system resilience and reliability. My resume is appended to 
+these comments for reference. My comments are my own and do not reflect the positions of any of the 
+clients served by my company, Power Advisors LLC. 
+I respectfully submit these technical comments in response to FERC’s ANOPR on the interconnection of 
+large loads to the transmission system related to paragraph 31 principle #14 of the ANOPR. The rapid 
+growth of data centers, cryptocurrency mining, and industrial electrification present substantial resilience 
+and reliability risk to the power system. These risks are best addressed through the augmentation of  
+NERC’s existing mandatory Reliability Standards (some of which are Regional Standards)  or the 
+addition of new standards applicable to large load analysis and connection facility design to ensure the 
+continued resilience and reliability of the power system. 
+ 
+Reliability Risks of Large Load Integration 
+There have been many comments submitted in the ANOPR proceeding regarding 
+federal/state jurisdiction, ratemaking, retail rate payer cost protection and general equity. 
+While the NERC standards were mentioned in a few cases and many comments call for large 
+load entity adherence to applicable NERC mandatory requirements, there is relatively little 
+comment on the need for augmentation of specific NERC standards. NERC’s own comments 
+focus largely on its large load initiative in the technical areas and on setting the stage for 
+registration of large loads, which I also believe is essential to preserve the reliable operation 
+of the power system. Large load entities will likely be transmission owners and will be UFLS 
+entities as currently defined in the NERC PRC-006-5 standard.  
+NERC mentions the FAC-001 and FAC-002 standards related to establishing interconnection 
+technical requirements and conducting interconnection studies which examine reliability 
+needs of the transmission systems to which the large load will connect. I strongly support 
+modification of all currently applicable and potentially applicable standards to specifically 
+reference interconnection resilience and reliability risks emanating from large load entity 
+connections to the transmission system.  
+
+--- PAGE 2 ---
+2 
+ 
+Here is a list of key resilience and reliability concerns which are best addressed via NERC’s 
+and the Region’s standards processes through augmentation of their respective mandatory 
+requirements and regional criteria. 
+• 
+Resilience Concerns: Inflexible large loads have been demonstrated to reduce the Bulk Electric 
+Systems (BES)  ability to withstand disturbances, increasing risks of cascading outages during 
+extreme events  
+• 
+Sudden Concentrated Demand: Large loads can materialize quickly. These loads can 
+materialize in less than the five year annual review cycle for automatic underfrequency load 
+shedding program functional verification under PRC-006-5. 
+• 
+Geographic Clustering: As has already been documented in the Northern Virgina disturbances, 
+concentrated siting of large loads stresses local transmission infrastructure, creating congestion 
+and voltage stability risks. 
+• 
+Operational Uncertainty: Demand profiles of large loads while often characterized by large 
+load advocates as having beneficially high load factors, have also been shown to be volatile over 
+short time intervals and therefore have the ability to significantly complicate balancing authority 
+operations and generating resource reserve adequacy. 
+ 
+Needed Improvements in NERC Reliability Standards 
+What follows is a list of suggested policy actions for the FERC to consider when it issues the 
+Notice of Proposed Rulemaking which will emanate from the ANOPR comments. 
+1. Automatic Underfrequency Load Shedding (PRC-006-5) 
+o The presently approved PRC-006-5 requirements focus on ensuring that the Planning 
+Coordinators design automatic UFLS programs to arrest frequency decline after 
+disturbances. In its purpose statement the standard characterizes its requirements as the 
+last resort system preservation measure. 
+o The standard (at R4) unfortunately only requires verification of the functionality of the  
+automatic underfrequency load shedding program every five years. This functionality 
+review is typically performed on the basis of the installed load, not projected load. 
+Although in some areas these studies are performed on a specific forward looking “study 
+year” basis. This is a good approach, but not universally required or implemented. It 
+should be. The current requirement is: 
+“R4 Each Planning Coordinator shall conduct and document a UFLS design 
+assessment at least once every five years that determines through dynamic 
+simulation whether the UFLS program design meets the performance 
+characteristics in Requirement R3 for each island identified in Requirement R2.” 
+ 
+o Some regions have more prescriptive automatic UFLS supporting requirements. In 
+particular note:  
+• PRC-006-NPCC-2 which builds on the NERC PRC-006-5 standard and 
+incorporates compensatory load shedding concepts for situations where certain 
+
+--- PAGE 3 ---
+3 
+ 
+generators are non-conforming from a ride-through perspective. See R13 and R15. 
+In NPCC this type of requirement may impact large loads connecting in the NPCC 
+Region that propose to also bring generation to their large load installation.  
+ 
+NERC should be encouraged to explore this concept as an addition to 
+PRC-006-5. 
+ 
+• PRC-006-SERC - 3 which builds on NERC-PRC-006-5 and provides in its R4 the 
+obligations of UFLS Entities (100 MW or greater)  
+ 
+“R4 Each UFLS entity that has a total load of 100 MW or greater in a Planning 
+Coordinator area in the SERC Region shall implement the UFLS scheme 
+developed by their Planning Coordinator. UFLS entities may implement the UFLS 
+scheme developed by the Planning Coordinator by coordinating with other UFLS 
+entities…” 
+. 
+o I recommend that the FERC offer policy guidance in its NOPR to promote NERC 
+augmentation of  PRC-006-5 as follows: 
+• The FERC should direct NERC to make PRC-006 universally forward looking by 
+requiring review and analysis of automatic UFLS program functionality through 
+simulation studies prior to the interconnection and energization of large loads. 
+Taking this step would ensure that automatic UFLS schemes are not compromised 
+by the addition of large concentrated electric demand and that sufficient identified 
+load is available for inclusion in automatic load shedding programs to stabilize 
+frequency in response to system disturbances. 
+• Alternatively, the FERC can direct that automatic underfrequency load shedding 
+programs be evaluated on an interval more frequently than the present five-year 
+interval. 
+• Review the two regional standards and possibly other less formal regional 
+processes being used to manage automatic underfrequency load shedding 
+programs. Identify opportunities to coordinate and bring the best automatic 
+underfrequency program management practice features into a future version of  
+PRC-006-5. 
+• Consider as a matter of policy that large loads do to their size should become 
+UFLS Entities as the term in used within the PRC-006-5 standard because of their 
+tremendous impact on the load situation for the connecting Transmission Owner. 
+UFLS entities shall mean all entities that are responsible for the 
+ownership, operation, or control of UFLS equipment as required by the 
+UFLS program established by the Planning Coordinators. Such entities 
+may include one or more of the following: 4.2.1 Transmission Owners 
+4.2.2 Distribution Providers 4.2.3 UFLS-Only Distribution Providers 
+o No matter which policy path is pursued,  automatic underfrequency load shedding 
+programs must be analyzed on a forward looking basis, taking into account the presence 
+
+--- PAGE 4 ---
+4 
+ 
+of large loads, rather than on an “as connected basis” after electric service facilities are 
+designed, committed and energized to service the large load.  
+o While recognizing that not all large load projects are certain to be built, and to facilitate 
+the forward looking analysis, uniform inclusion rules must be developed by planning 
+coordinators so that large load projects and their impact on automatic underfrequency load 
+shedding programs can be analyzed with confidence. It is best also, to the extent possible, 
+to conduct the analysis in clusters when large load projects are concentrated in portions of 
+the transmission system.  
+FERC proposals or directives for action of this kind in its NOPR will ensure that automatic UFLS 
+programs are fully analyzed and most importantly are not compromised by the unstudied addition 
+of concentrated demand. The studies will set the stage to assure that sufficient load is placed 
+under automatic UFLS program control to achieve the resilience goal of stabilizing frequency and 
+arresting frequency decline after a system disturbance. 
+2. Transmission Planning (TPL-001-5.1) 
+A fundamental principle of prudent power system engineering is that the power system should 
+not be placed into an unstudied state. There are a number of mandatory NERC standards that 
+embody this principle, but TPL-001-5.1 is at the core of implementing this approach from a 
+system planning perspective.  
+I recommend that the FERC take action in its NOPR to: 
+• Explore the need for augmentation of the TPL-001-5.1 to require explicit 
+modeling of large, concentrated loads in both near term and long term planning 
+assessments even if those projects are offering to take non-firm “flexible” electric 
+service. 
+• While recognizing that not all large load projects are certain to be built, uniform 
+inclusion rules must be developed so that the large load project’s impact on power 
+deliverability can be analyzed with confidence regarding their likely 
+materialization and in clusters if concentrated on portions of the transmission 
+system, rather than individually.  
+• Mandate sensitivity studies that stress-test transmission system planning scenarios 
+involving simultaneous large load growth and sudden large load loss under the 
+appropriate transmission and generation contingencies identified in Table 1 of the 
+standard. 
+• Direct NERC to modify Table 1 contingencies if they are not adequate to the 
+purpose of testing the transmission system for large load operating behavior. 
+• Direct NERC to consider whether amendments to footnote 12 and to Attachment 1 
+of Table 1 of  TPL-001-5.1 are needed to accommodate large load projects willing 
+to be “flexible”, i.e., willing to take non-firm electricity service. This will allow 
+utility planning processes to adapt and provide service flexible large loads willing 
+to take non-firm service in a way that complies with the standard. As it stands, 
+offering non-firm transmission service may not meet the requirements in TPL-001. 
+Under the current requirements, it is not permitted to plan the transmission system 
+to provide electric service under TPL-001-5.1 on a non-firm basis (i.e., permitting 
+non-consequential load loss).  
+
+--- PAGE 5 ---
+5 
+ 
+ 
+3. Interconnection Process and Operational Requirements 
+The interconnection process is where resilience and reliability risks should be identified as early 
+as possible for the benefit of the existing electricity customers and for the benefit of the new large 
+load customers. To make sure that the risks are surfaced early enough to take prudent engineering 
+and design action, the following actions by the FERC are recommended for consideration: 
+o The FERC should consider taking action to:  
+• Require all regional transmission organizations, planning coordinators and 
+transmission owners to establish minimum technical interconnection requirements 
+for connecting large loads, similar but not identical to generator requirements 
+(unless the new large load bringing its own generation to the process), including 
+voltage support, frequency ride-through, and demand response capability. These 
+directives would be best applied in future versions of NERC Standards FAC-001 - 
+4 and FAC-002-4 as also noted in NERC’s ANOPR comments at page 4. 
+• Authorize NERC to register large load entities as Transmission Owners and 
+Transmission Operators if the new large load interconnecting facilities qualify as 
+BES Elements and are not turned over to the incumbent connecting Transmission 
+Owners and Transmission Operators for operation and maintenance after 
+commissioning.  
+• For situations where new large load entities are proposing to implement Remedial 
+Action Schemes (RAS) to possibly avoid FERC jurisdiction, to require that such  
+large load sponsored RAS based solutions be designed (or at least reviewed 
+subject to approval) owned and operated by existing connecting Transmission 
+Owner to bring such RAS within the scope of PRC-012-2 for RAS design and 
+PRC-017-1 for RAS maintenance. 
+ 
+Alignment with NERC Large Load Task Force Findings 
+Since the FERC is aware of NERC’s Large Load Initiative as described in NERC’s ANOPR filing, take 
+note of NERC’s characterization of the significant risk to resilience and reliability the may result from 
+large loads.  
+For reference and at a high level the NERC Large Load Task Force (LLTF), in its April 2025 report, 
+highlighted several critical points: 
+• 
+“UFLS program adequacy must be reassessed in light of large load interconnections, as existing 
+schemes may not provide sufficient frequency stabilization.” 
+• 
+“Large loads are materializing faster than traditional planning processes can adapt.” 
+• 
+“Existing Reliability Standards do not explicitly address the unique risks posed by concentrated 
+demand growth.” 
+• 
+“Enhanced coordination between load developers, transmission planners, and balancing 
+authorities is essential to mitigate reliability risks.” 
+
+--- PAGE 6 ---
+6 
+ 
+These findings by NERC reinforce the need for the FERC to direct NERC to revise PRC 006, TPL-001, 
+and other standards as appropriate to explicitly incorporate power system resilience and reliability 
+preservation considerations in utility planning. There is an urgent need for large load integration and 
+operations process modification. At a minimum changes and augmentation of the processes governed by 
+PRC-006 and TPL-001 are necessary. Other standards which support these standards will also require 
+attention as necessary1. 
+ 
+Recommendations for FERC Oversight of Large Load Interconnection Processes 
+Ongoing FERC oversight of large load resilience and reliability risks to the transmission system will be 
+needed to monitor the significant risk to resilience and reliability posed by incorrectly planned large load 
+additions. 
+To ensure timely action to stay “ahead of the curve” with respect to the forgoing resilience and reliability 
+risks, I recommend that the FERC consider: 
+• 
+Directing that NERC report annually (or at an interval suitable to the FERC and NERC) to the 
+FERC on the adequacy2 of manual and automatic UFLS programs and resilience planning in each 
+US Interconnection. 
+• 
+Direct NERC to initiate a process to develop standards authorization requests and file modified or 
+new standards responsive to the resilience and reliability concerns identified above within a time 
+frame of FERC’s choosing (suggested to be two years or less) to assure reliable and resilient large 
+load integration that does not compromise the reliable operation of the BES.   
+ 
+Conclusion 
+The integration of large loads represents a transformative challenge to the resilience and reliability of the 
+power system. Without augmented and strengthened NERC Reliability Standards, particularly PRC-006, 
+and TPL-001, the resilience and reliability of the power delivery system will be compromised with the 
+addition of unprecedented numbers of large load projects.  
+FERC should act decisively in its NOPR to ensure that mandatory reliability standards evolve ahead of 
+these emerging risks, safeguarding power system resilience and reliability. FERC through its nationwide 
+responsibility under Section 215 of the Federal Power Act, must at a minimum deliver continued 
+resilience and reliability of the power system for all users to meet the expectations outlined on NERC’s 
+2013 informational filing with the FERC regarding the planning and operational outcomes that are 
+expected in order to deliver an “adequate level of reliability”3.  
+ 
+1 Additional standard families which may be impacted include MOD, FAC, EOP, TPL  and other PRC 
+standards besides PRC-006. 
+2 See NERC Informational filing regarding on the Definition of "Adequate Level of Reliability” NERC 
+Informational Filing in RR06-1-000 May 10, 2013. 
+3 See filing referenced in footnote 2, in particular performance objective #4. 
+
+--- PAGE 7 ---
+7 
+ 
+The power system will quickly reveal if the FERC, NERC, registered entities get it wrong through 
+outages that are more extensive, exhibit more lengthy recovery times, and are more damaging to hard to 
+replace power delivery equipment. Such outages run the risk of additional loss of life, way beyond what 
+was experienced in Texas during Winter Storm Uri.4 Such unacceptable outcomes can be mitigated with 
+proper engineering foresight, planning foresight and by requiring thoughtful forward looking technical 
+review and analysis of the connection of the proposed large loads prior to design, construction and 
+energization.  
+The FERC should consider the forgoing comments in the interest of public health and safety when 
+crafting the Notice of Proposed Rulemaking addressing large load interconnection. While the above 
+comments may seem like an expansion of NERC rules into the load sector which has been primarily the 
+province of the US States, the fact remains that large city size loads connected to the transmission system 
+have a direct impact on the resilience and reliability of the interconnected North American power 
+systems.  
+Thank you in advance for your attention and thoughtful consideration to the forgoing comments in the 
+development of the Large Load NOPR. 
+ 
+Respectfully submitted, 
+Herb Schrayshuen, P.E. 
+December 4, 2025 
+ 
+ 
+4 Winter Storm Uri official death toll report-Texas 
+
+--- PAGE 8 ---
+Resume: Herbert (Herb) Schrayshuen 
+4408 Jack-in-the-Pulpit Circle 
+Manlius, N.Y. 13140 
+315-439-1390 
+herb@poweradvisorsllc.com 
+ 
+Current Title 
+& Activity: 
+Since February 2013, Principal, Power Advisors, LLC providing consulting services to the 
+electric utility industry with experience in: 
+ 
+Utility asset management 
+ 
+Utility power system planning and reliability 
+ 
+Utility reliability regulation including NERC standards compliance related matters 
+ 
+Regulatory matters and dispute resolution   
+Prior 
+Titles and 
+Activities: 
+VP & Director Reliability Assessment and Performance Analysis (2012-2013) - North 
+American Electric Reliability Corporation (NERC)  
+VP & Director Standards & Training (2010-2012) – NERC 
+Director Reliability Assessment – SERC (2008-2010), 
+VP Reliability Compliance – National Grid (2006-2007), 
+VP Transmission Commercial Services – National Grid (2002-2006) 
+Director System Electric Assets – Niagara Mohawk Power Corporation (1999-2002) 
+Previous – numerous roles of increasing accountability within the managerial, technical, and 
+engineering functions of Niagara Mohawk Power Corporation and American Electric Power. 
+Relevant 
+Experience: 
+Over 40 years’ experience in the electric power industry including engineering and regulatory 
+roles for the industry including reliability regulation under NERC mandates. Managed technical 
+groups in disciplines including, engineering, reliability regulations, asset management, 
+transmission and distribution engineering, transmission planning, project management, 
+transmission account management, and transmission siting.  Provided expert testimony in 
+regulatory and civil legal forums, settlements and transaction design. Extensive experience in 
+generation, transmission and distribution system operations, power transactions, planning and 
+asset health issues.  Leadership roles in many FERC and state regulatory proceedings, 
+disputes resolution and policy making activities. Two examples are coordination of National 
+Grid’s interrogatory responses to the Eastern Interconnection Blackout of 2003 and 
+participation in the development and implementation of the Energy Policy Act of 2005 with 
+respect to electric industry reliability regulation leading to the formation of the Electric 
+Reliability Organization (ERO) as NERC.   
+ 
+Education & 
+Training: 
+Masters Business Administration – Rensselaer Polytechnic Institute  
+ME-Electric Power Engineering – Rensselaer Polytechnic Institute  
+BE-Stevens Institute of Technology  
+General Electric Power System Engineering Course  
+Numerous professional and executive development programs 
+ 
+Professional  
+Affiliations: 
+Life Member, Institute of Electrical and Electronic Engineers  
+Member, North American Electric Reliability Corporation  
+ 
+Member Representatives Committee (2017-2018) 
+ 
+Member Reliability Issues Steering Committee (2017-2018) 
+ 
+Licensed Professional Engineer-New York # 58441 
+ 
+Secretary – New York State Reliability Council Executive Committee  
+ 

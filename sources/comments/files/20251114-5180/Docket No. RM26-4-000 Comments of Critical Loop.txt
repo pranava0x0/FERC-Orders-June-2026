@@ -1,0 +1,287 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+Interconnection of Large Loads to the  
+) 
+Docket No. RM26-4-000 
+Interstate Transmission System 
+) 
+ 
+ 
+COMMENTS OF CRITICAL LOOP 
+Critical Loop respectfully submits these comments in response to the Commission’s 
+proceeding on interconnection of large loads to the interstate transmission system. We appreciate the 
+Commission’s focus on creating a timely, orderly, and non‑discriminatory path to power for new 
+industrial and digital loads.  
+ 
+I. About Critical Loop and Summary of Recommendations 
+Critical Loop is a system integrator and developer of time‑to‑power solutions. We help 
+industrial and digital customers such as manufacturers, fleet depots, logistics hubs, and datacenters 
+connect rapidly and reliably. We integrate flexible interconnection with on‑site resources such as 
+battery energy storage (BESS) to bridge capacity constraints. In multiple jurisdictions, we have urged 
+regulators to scale flexible service connections and pair them with transparent planning tools (e.g., 
+hosting‑capacity or ICA‑style information) so customers can commit to predictable limited‑load 
+profiles from day one. By providing a realistic, low-cost, timely option, these same frameworks can 
+reduce the proliferation of ‘phantom’ large‑load projects, speculative or oversized requests that sit in 
+queues and distort transmission planning and investment signals. 
+Over the past year, large‑load customers have increasingly sought flexible pathways at both 
+distribution and transmission levels. Utilities are beginning to acknowledge that curtailment‑ready 
+loads and co‑located supply can unlock faster time‑to‑power without compromising reliability. The 
+technology to operate large loads flexibly exists today; the bottleneck is the commercial and 
+procedural pathway.  
+1 
+
+--- PAGE 2 ---
+To deliver timely connections while safeguarding reliability and affordability, Critical Loop 
+recommends that FERC: 
+1.​ Establish a Large‑Load Flexibility Commitment (LLFC) in the pro forma tariff; an opt‑in 
+construct under which a load accepts specified curtailment and/or relies on on‑site or adjacent 
+supply under defined conditions and require transmission providers to model LLFC 
+parameters explicitly in interconnection studies.  
+2.​ Direct studies to model enforceable flexibility, not a static maximum‑withdrawal assumption. 
+Where an LLFC sets binding net‑withdrawal and curtailment limits with operator‑enforceable 
+controls, transmission providers should evaluate interconnections against those limits with 
+explicit 
+non‑performance 
+contingencies 
+rather 
+than 
+defaulting 
+to 
+a 
+static, 
+all‑resources‑unavailable maximum‑withdrawal assumption that obscures the value of on‑site 
+batteries.  
+3.​ Define and use operating envelopes. Under an LLFC, the transmission provider should issue 
+time‑varying operating envelopes that cap a site’s net withdrawals (and, if applicable, net 
+injections). The customer’s certified control system must enforce the envelope autonomously 
+and provide real‑time telemetry confirming compliance 
+4.​ Make the LLFC resource‑agnostic inside the fence (co‑located BESS/generation/controllable 
+station load) and adjacent behind the same POI. Transmission providers should credit such 
+flexibility when the customer’s power control system enforces non‑export and import‑limit 
+setpoints at the POI and the onsite resource meets the study screens in Section IV. 
+5.​ Systematize 
+and 
+automate flexible interconnections by requiring publication of 
+hosting‑capacity‑style data for load (hourly and seasonal headroom, constraints, expected 
+curtailment windows) and by offering standardized flexible options (limited‑load profiles, 
+non‑firm service, and joint‑study paths for hybrid or adjacent resources).  
+6.​ Create a non‑firm network service (withdrawal) option and allow non‑firm injection for 
+hybrid or adjacent resources participating in LLFCs, with joint study for load and supply at or 
+near a common point of interconnection.  
+2 
+
+--- PAGE 3 ---
+7.​ Recognize LLFCs for capacity/resource adequacy (capacity accreditation or reduced 
+procurement obligations), enabling faster energization when capacity constraints would 
+otherwise delay interconnection.  
+8.​ Stand up a transparent load‑interconnection queue with expedited timelines and standardized 
+telemetry/verification, and adopt a 60‑day initial determination requirement to provide a 
+limited‑load capacity profile, identified constraints and telemetry, and a provisional queue 
+position while full studies proceed.  
+9.​ Recognize BESS‑enabled bridge operation as a low‑impact, fast‑permitting path that 
+accelerates time‑to‑power and reduces reliance on long‑lead export interconnections. ​
+ 
+II. Large Loads Are Technically Flexible Today 
+High‑performance datacenter clusters and modern industrial loads require power‑quality 
+stabilization and fast ramping support. Industry practice now routinely deploys BESS‑based 
+stabilization that measures and controls instantaneous load, provides ride‑through, follows rapid rise 
+and drop profiles, and switches between charge and discharge quickly. These battery buffers are 
+essential when new loads must energize on constrained or provisional grid connections, and they can 
+be orchestrated with grid supply through certified power‑control systems and grid‑interactive 
+switchgear.  
+II‑A. Why the Static Maximum‑Withdrawal Assumption Masks Battery Value 
+Today, the default large load study focuses on a static, all‑resources‑unavailable 
+maximum‑withdrawal assumption (“worst‑case”), treating co‑located flexibility as absent or charging 
+and the load as non‑curtailable. That deterministic extreme answers the question ‘what if everything 
+fails at once,’ but it does not represent how an LLFC site operates under enforceable controls. The 
+result is overstated upgrades, delayed time‑to‑power, and the loss of the measurable reliability 
+contribution of BESS operated to cap net withdrawals during stressed conditions. 
+In practical operation, properly configured BESS can deliver fast ramping, ride‑through, and 
+power‑quality stabilization. These benefits disappear under the static assumption but properly reduce 
+peak withdrawal and upgrade scope when modeled against LLFC limits. On-site BESS can be 
+3 
+
+--- PAGE 4 ---
+credited without compromising safety or protection of the common binding constraints, including 
+voltage and thermal loading that necessitate upgrades. 
+II-B Accurate Scenario Construction and Planning for Large Load Flexibility 
+A rights‑based, controllability‑based approach is more accurate and transparent for large, 
+flexible loads. Transmission providers and RTOs/ISOs should certify this method of LLFC flexibility 
+for use in base interconnection and planning cases, not solely as sensitivities. The resulting scenario 
+planning and scheduling must be evidence‑based, defining the operating envelope limits at the POI, 
+the ramp and duration capability, the telemetry latency and visibility, and providing periodic test 
+results.  
+This screening method can be resource agnostic for onsite and adjacent resources behind the 
+same point of interconnection. Non‑performance (e.g. storage offline) can be modeled as a 
+contingency with associated operating procedures and financial consequences, but base upgrade 
+requirements should not be set by those sensitivities when enforceable LLFC controls materially 
+bound risk. 
+We suggest that the LLFC define and prescribe operating envelopes for load operation in the 
+study. For example, if a customer commits to a tariff‑backed LLFC with firm net‑withdrawal limits 
+(for example, seasonal N‑0 and N‑1 limits), defined curtailment triggers, and verified battery 
+response, then studies should use those limits for normal and contingency cases. The operating 
+envelope is the control primitive that the studies, operators, and customers can all respect in real time.  
+ 
+III. DOE’s Advanced Notice Identifies Flexibility as the Path to Expedited Interconnection 
+Curtailable loads and dispatchable hybrids should receive expedited treatment through a 
+tariffed LLFC option with standardized terms such as triggers, notice, limits, and telemetry, which 
+transmission providers must incorporate into studies to determine whether flexibility can avoid or 
+defer network upgrades and shorten time‑to‑power.  
+ 
+ 
+ 
+4 
+
+--- PAGE 5 ---
+IV. Proposed Tariff Construct: Large‑Load Flexibility Commitment 
+An LLFC is a contractual, tariff‑backed commitment by a transmission‑connected load to 
+curtail to pre‑specified levels when directed under defined system conditions and/or rely on co‑located 
+or adjacent supply (generation or storage) to meet a site’s net profile. LLFCs specify curtailment 
+triggers, maximum hours or MWh per year, notice windows, telemetry and verification, and financial 
+consequences for non‑performance. Transmission providers should model LLFC terms explicitly in 
+interconnection and network‑upgrade studies rather than assuming non‑coincident peak at all hours, 
+revealing least‑cost paths to interconnect safely. LLFC participants should also be eligible for 
+non‑firm network withdrawal rights and non‑firm injection rights for co‑located or adjacent supply, 
+with joint study of load and supply at or near a common point of interconnection.  
+Study instructions for LLFC projects: 
+1.​ Set the operating envelope based on normal and contingency capabilities by season and by 
+hour, instead of by peak load.  
+2.​ Determine whether the site’s operation within the envelope can resolve the identified 
+constraints.  
+3.​ Evaluate explicit non‑performance sensitivities (for example, storage unavailable or control 
+failure) but do not set base upgrade requirements on those sensitivities when enforceable 
+LLFC controls materially bound risk. 
+4.​ Publish a side‑by‑side upgrade table showing which facilities are driven by the LLFC 
+envelope versus non‑performance sensitivities, and the expected frequency or conditions 
+under which each would bind.  
+Minimum controls and telemetry for LLFC participants: 
+1.​ Import‑limit enforcement and non‑export protection, with charge‑inhibit windows aligned to 
+identified stress periods. 
+2.​ State‑of‑charge floors and defined ramp‑rate commitments sized to the LLFC envelope. 
+3.​ Real‑time, SCADA‑grade net‑withdrawal telemetry and operator dispatch confirmation. 
+4.​ Event performance verification with financial consequences for violations. 
+5 
+
+--- PAGE 6 ---
+5.​ Use of certified power‑control systems and open standards‑based communications (for 
+example, UL 3141‑class PCS; IEEE 2030.5/OpenADR) as available, while keeping tariff 
+requirements technology‑neutral.  
+6.​ Acceptance screens for LLFC participation. 
+Onsite LLFC credit shall be granted when: 
+1.​  The onsite resource is co‑located or adjacent behind the same POI.  
+2.​ The UL‑3141‑class PCS enforces import‑limit and non‑export at the POI such that physics 
+based binding constraints (thermal, voltage, and/or protection) are met for every time step of 
+operation without requiring a system upgrade 
+ 
+V. Capacity and Reliability Benefits 
+Small, predictable curtailment rates translate to large system value. Loads that cap peak 
+withdrawals via LLFCs reduce incremental capacity needs and avoid or defer upgrades, enabling 
+faster energization without sacrificing reliability. RTOs/ISOs should recognize LLFCs in capacity 
+accreditation or allow appropriate adjustments to procurement obligations when loads accept 
+enforceable limits and provide verifiable response. To ensure these resources are countable, both 
+performance penalties and event testing should be aligned to times of peak grid stress, such as heat 
+waves, winter peaks, and renewable production dips.  
+ 
+VI. Queue Design, Timelines, and the 60‑Day Initial Determination 
+FERC 
+should 
+require 
+each 
+transmission 
+provider 
+to 
+establish 
+a 
+transparent 
+load‑interconnection queue, publish standardized timelines and datasets, and prioritize LLFC projects 
+for expedited study. A 60‑day requirement for all large‑load requests should provide a binding initial 
+determination that includes a limited‑load capacity profile, identified constraints and telemetry, and a 
+provisional queue position so developers can plan and finance while full engineering studies continue.  
+ 
+ 
+ 
+6 
+
+--- PAGE 7 ---
+VII. Telemetry, Measurement, and Verification 
+FERC should direct transmission providers to file uniform data interfaces and 
+performance‑verification protocols, including real‑time net‑load telemetry, dispatch confirmation, and, 
+where applicable, state‑of‑charge for site storage, all interoperable with utility SCADA systems. 
+Done correctly, this structure will also reduce so‑called ‘phantom’ data centres and other speculative 
+large‑load requests. When developers must anchor a queue position in transparent hosting‑capacity 
+data, tariff‑backed LLFC commitments, and enforceable telemetry and non‑performance provisions, it 
+becomes far less attractive to hold multiple oversized, purely optional positions that inflate apparent 
+load growth.  
+Verification should at minimum cover (1) envelope compliance (no exceedances), (2) 
+response time to dispatch, (3) power‑quality conformance during transitions, and (4) event summaries 
+(MWh supplied by on‑site resources and any non‑performance). Performance test history should be 
+referenced in interconnection and planning cases to support continued base‑case use of the LLFC 
+envelope. 
+Each transmission provider should be directed to publish a constraint‑to‑flexibility mapping 
+template that specifies, for each constraint, the available headroom, ramp requirements, expected 
+duration windows, acceptable telemetry latency, and test history fields. LLFC participants shall 
+submit this template so planners can study flexibility mitigations in a standardized manner. 
+ 
+VIII. Data Transparency and Automation 
+To systematize and automate flexible interconnections, FERC should require publication of 
+hosting‑capacity‑style information for load at candidate points of interconnection, including hourly 
+and seasonal headroom, expected curtailment windows, identification of binding constraints, and clear 
+eligibility and process for flexible options such as LLFCs and hybrid joint‑study paths. This 
+transparency will reduce soft costs, direct requests to viable locations, and make LLFCs practical and 
+scalable.  
+ 
+ 
+7 
+
+--- PAGE 8 ---
+IX. Alignment with State Programs 
+States are creating flexible service‑connection options to relieve distribution constraints using 
+predictable limited‑load profiles and site controls. FERC’s transmission‑level LLFC framework 
+should be complementary so a project can take a partial distribution connection quickly and transition 
+seamlessly as transmission capacity comes online.  
+ 
+X. Environmental and Permitting 
+Recognize BESS‑enabled bridge operation as a low‑impact path that can permit faster than 
+new combustion generation, improves power quality and ride‑through for large loads, and buys time 
+while export or transmission upgrades for new generation proceed. This approach accelerates 
+time‑to‑power and reduces pressure on near‑term export interconnections.  
+ 
+XI. Implementation Roadmap 
+FERC should: 
+1.​ Issue a policy statement and NOPR establishing LLFCs, non‑firm network service, and joint 
+load‑supply studies for hybrids and adjacent resources, with clear telemetry requirements. 
+2.​ Require compliance filings within 12 months that include LLFC tariff sheets, a 
+load‑interconnection queue with LLFC prioritization, non‑firm withdrawal and injection 
+rights for LLFC participants, and capacity‑market coordination proposals to credit LLFCs. 
+3.​ Convene technical conferences with DOE national labs, utilities, large‑load customers, and 
+integrators to finalize telemetry and hosting‑capacity‑for‑load specifications and align LLFCs 
+with state‑level flexible service connection programs.  
+4.​ Encourage DOE to provide worked examples and anonymized case studies of flexible large 
+loads in interconnection, transmission planning, and resource‑adequacy models, and to 
+prioritize in Grid Resilience and Innovation Partnership solicitations those projects that pair 
+upgrades with contracted LLFC commitments. 
+ 
+ 
+8 
+
+--- PAGE 9 ---
+XII. Conclusion 
+Large loads already have the flexibility the grid needs through battery‑based stabilization, 
+controllable demand, and co‑located or adjacent supply. By adopting an LLFC framework, publishing 
+hosting‑capacity‑style data for load, enabling non‑firm service and joint studies, crediting capacity 
+value, and standardizing telemetry and verification, FERC can deliver timely, orderly, and 
+non‑discriminatory interconnections to connect new industrial and digital load at scale. 
+Speed‑to‑power is a core reliability metric for U.S. industry and AI infrastructure; policy should meet 
+the moment.  
+ 
+Respectfully submitted, 
+/s/ Andrew Grinalds 
+Chief Operating Officer 
+Critical Loop, Inc.  
+criticalloop.com 
+andrew@criticalloop.com 
+ 
+November 14, 2025 
+9 

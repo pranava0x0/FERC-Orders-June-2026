@@ -1,0 +1,943 @@
+--- PAGE 1 ---
+1 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+Interconnection of Large Loads to the        )   
+Interstate Transmission System                  ) 
+Docket No. RM26-4-000 
+ 
+ 
+ 
+ 
+ 
+        ) 
+ 
+ 
+TRANSMITTAL LETTER AND PUBLIC COMMENTS 
+OF J. VANN CUNNINGHAM 
+ 
+June 23, 2026 
+ 
+To the Honorable Secretary: 
+ 
+Pursuant to the Commission’s ongoing regulatory proceedings and the landmark June 18, 
+2026 orders directing regional transmission networks to reform large-load 
+interconnection processes, I respectfully submit this Transmittal Letter and 
+accompanying Technical White Paper for formal inclusion in the public record of Docket 
+No. RM26-4-000. 
+ 
+The attached white paper, titled "Interconnection Governance: Stiff-Point Qualification 
+Standards and Demand Caps as the Policy Response to Data Center Grid Stress," 
+provides actionable, technically grounded frameworks designed to accelerate data center 
+integration. Crucially, these frameworks prevent the externalization of localized network 
+upgrade costs onto residential ratepayers and safeguard regional grid reliability. 
+ 
+As an IEDC Fellow with a fifty-year career spanning nuclear facility power siting, linear 
+nodal network operations, and corporate industrial location, my analysis bridges grid 
+engineering physics and macroeconomic development. Specifically, this paper outlines a 
+path to deploy fault-level qualification standards, derived from the established IEEE 519-
+2022 standards and historical electric arc furnace interconnection precedents, alongside 
+node-level demand caps to optimize existing grid infrastructure.  
+ 
+Respectfully submitted, 
+/s/ J. Vann Cunningham 
+J. Vann Cunningham, IEDC Fellow 
+Principal Director, Global Facility Location Consulting, Lockwood Greene Consulting 
+(Ret.) 
+AVP Economic Development, BNSF Railway Co. (Ret.) 
+Assistant Director for Power Marketing, Tennessee Valley Authority (Ret.) 
+1309 Lyra Lane, Arlington, Texas 76013 
+B155549@gmail.com 
+817-371-9834 
+ 
+Enclosure: Technical White Paper and Comments of J. Vann Cunningham 
+ 
+
+--- PAGE 2 ---
+2 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+ 
+Interconnection of Large Loads to the        )   
+Interstate Transmission System                  ) 
+Docket No. RM26-4-000 
+ 
+ 
+ 
+ 
+ 
+        ) 
+ 
+ 
+ 
+ 
+TECHNICAL WHITE PAPER AND COMMENTS OF J. VANN CUNNINGHAM, 
+IEDC FELLOW, ON GRID STIFF-POINT CRITERIA AND DEMAND CAPS 
+ 
+Submitted by:  
+ 
+J. Vann Cunningham, IEDC Fellow  
+Principal Director, Global Facility Location Consulting, Lockwood Greene Consulting 
+(Ret.)  
+AVP Economic Development, BNSF Railway Co. (Ret.)  
+Assistant Director for Power Marketing, Tennessee Valley Authority (Ret.)  
+1309 Lyra Lane, Arlington, Texas 76013 B155549@gmail.com 817-371-9834 
+ 
+ 
+
+--- PAGE 3 ---
+3 
+TABLE OF CONTENTS 
+ 
+Executive Summary .............................................................................................................4 
+Section I: The Governance Failure and Its Historical Parallel ............................................7 
+   The Nuclear Retrenchment as Governing Precedent ........................................................7 
+   The Demand Forecasting Problem....................................................................................8 
+   The Transparency Deficit .................................................................................................9 
+   The Cost Externalization Pattern ......................................................................................9 
+   The Jobs Gap as a Structural Grievance .........................................................................10 
+Section II: The Technical Framework ...............................................................................12 
+   Stiff-Point Grid Siting: Definition and Rationale ...........................................................12 
+   The Arc Furnace Interconnection Precedent...................................................................13 
+   Network Optimization Outperforms New Generation ....................................................14 
+   Demand Caps: Mechanism and Rationale ......................................................................14 
+   Anticipated Objection: Barrier to Entry and Incumbent Protection ...............................15 
+Section III: Geographic Application Across Three Infrastructure Tiers ...........................18 
+   Tier One: Northern Virginia Exchange Ecosystem ........................................................18 
+   Tier Two: The Rust Belt Industrial Corridor ..................................................................19 
+   Tier Three: The Southwestern Markets ..........................................................................20 
+Section IV: The RTO and ISO Reform Pathway ...............................................................22 
+   FERC's Existing Authority .............................................................................................22 
+   The Queue Reform Dimension .......................................................................................22 
+   The ERCOT Jurisdictional Boundary .............................................................................23 
+   The Transparency Requirement as a Complement .........................................................24 
+Section V: Policy Recommendations and Long-Range Framework .................................26 
+Conclusion .........................................................................................................................31 
+About the Author ...............................................................................................................33 
+References ..........................................................................................................................35 
+ 
+ 
+
+--- PAGE 4 ---
+4 
+EXECUTIVE SUMMARY 
+The United States data center industry is approaching an inflection point that 
+closely parallels the nuclear power retrenchment of the early 1980s. Demand forecasts 
+projecting a near-doubling of data center power consumption by 2028 rest on assumptions 
+that do not adequately account for the transition from training to inference workloads, for 
+semiconductor-level efficiency improvements, or for the hard ceiling imposed by grid 
+transmission capacity. A governance framework characterized by non-disclosure 
+agreement opacity, cost externalization onto residential ratepayers, and an interconnection 
+queue that rewards position over siting quality is generating community and regulatory 
+resistance that has already resulted in an estimated $100 billion in delayed or canceled 
+investment nationally.1 
+ 
+The administrative remedy is available, technically grounded, and does not require 
+new legislation. Regional Transmission Organizations and Independent System Operators, 
+operating under existing Federal Energy Regulatory Commission authority, administer the 
+interconnection queue through which every large-load developer must pass. Extending the 
+fault-level qualification standards that utilities applied to electric arc furnace operators 
+beginning in the 1970s to data center interconnection, combined with node-level demand 
+caps embedded in interconnection agreements, would implement a stiff-point siting 
+standard that directs large digital infrastructure loads toward the transmission nodes 
+capable of absorbing them without cascading grid stress or ratepayer cost socialization. 
+ 
+1 Data Center Watch (10a Labs), Q2 2025 Update (April–June 2025), 
+https://www.datacenterwatch.org/q22025. The report documents that at least 20 data center projects worth 
+approximately $98 billion were blocked or delayed by local opposition in the second quarter of 2025 alone, 
+a pace that continued to accelerate, reaching $156 billion for all of 2025 and approximately $130 billion in 
+the first quarter of 2026 alone. 
+
+--- PAGE 5 ---
+5 
+ 
+This paper develops that argument across five sections. Section I establishes the 
+governance failure and its historical parallel. Section II presents the technical framework: 
+stiff-point qualification, network optimization as the cost-effective alternative to new 
+generation, and the arc furnace interconnection precedent. Section III applies the 
+framework geographically across three distinct infrastructure tiers: the Northern Virginia 
+exchange ecosystem, the Rust Belt industrial corridor, and the Southwestern markets. 
+Section IV presents the RTO and ISO reform pathway. Section V presents consolidated 
+policy recommendations. 
+ 
+The author brings direct practitioner experience to each dimension of this argument. 
+Nuclear facility siting at TVA, manufacturing and industrial facility location across 
+hundreds of projects including mini steel mills requiring arc furnace interconnection 
+review, railroad economic development at BNSF, and international advisory work with the 
+IMF, World Bank, and UNDP inform an analysis that integrates grid engineering, 
+economic development practice, regulatory history, and infrastructure finance in a manner 
+that disciplinary boundaries would otherwise prevent. 
+ 
+Summary of Policy Recommendations 
+1. FERC rulemaking establishing fault-level adequacy as a condition of large-
+load interconnection eligibility, with technical specifications based on IEEE 
+standards. 
+2. RTO and ISO tariff amendments implementing node-level demand caps, set at 
+available fault-level capacity net of existing committed load. 
+3. State-level or federally-baseline disclosure requirements mandating public 
+documentation of projected resource consumption, emissions profiles, and 
+employment commitments. 
+
+--- PAGE 6 ---
+6 
+4. Priority queue treatment for interconnection applications at nodes with 
+demonstrated stiff-point characteristics, particularly legacy heavy industrial 
+sites in the Rust Belt corridor. 
+5. Long-term planning framework recognizing small modular reactor co-location 
+as the firm power resolution for both Rust Belt distributed inference 
+infrastructure and Southwestern closed-loop facility models. 
+ 
+ 
+
+--- PAGE 7 ---
+7 
+SECTION I: THE GOVERNANCE FAILURE AND ITS HISTORICAL PARALLEL 
+The Nuclear Retrenchment as Governing Precedent 
+The nuclear retrenchment of the early 1980s was not caused primarily by the Three 
+Mile Island incident, which was a technically containable event with limited radiological 
+consequences. It was caused by the convergence of three conditions whose combination 
+proved insurmountable: demand forecasts built on assumptions that had ceased to hold, a 
+planning process insulated from public scrutiny by institutional opacity, and a regulatory 
+framework that, once public legitimacy collapsed, had no mechanism to distinguish sound 
+projects from unsound ones. All projects became politically vulnerable because the 
+institutional framework for evaluating them had lost credibility. 
+ 
+The Tennessee Valley Authority's experience is instructive in the specific way this 
+paper requires. TVA's multi-unit construction program was premised on a one-to-one 
+relationship between economic growth and electrical demand. The energy crises of the 
+1970s broke that relationship permanently through structural decoupling: conservation and 
+efficiency gains allowed industrial and commercial output to grow without proportional 
+increases in kilowatt-hour consumption. The baseline forecasting assumption that had 
+justified the entire construction program vanished. By 1982, the formal cancellation and 
+suspension of the remaining units was the institutional acknowledgment that long-range 
+planning models had been fundamentally upended by a changed economic reality.2 
+ 
+ 
+2 Tennessee Valley Authority, TVA Annual Report and Strategic Power Program Review (Knoxville, TN: 
+TVA, 1982). This institutional record documents TVA's formal cancellation or suspension of multiple 
+nuclear construction projects, including Phipps Bend Units 1-2, Hartsville Units A1-A2 and B1-B2, and 
+Yellow Creek Units 1-2, following the collapse of regional load-growth forecasts and the resulting 
+reassessment of the Strategic Power Program. 
+
+--- PAGE 8 ---
+8 
+The data center industry in 2026 exhibits all three conditions of the nuclear 
+retrenchment in recognizable form. This is not a rhetorical analogy. It is a structural 
+diagnosis. 
+The Demand Forecasting Problem 
+Current projections indicate that U.S. data center power demand will nearly double 
+by 2028, rising from approximately eighty gigawatts to approximately one hundred fifty 
+gigawatts, an increase of roughly seventy gigawatts.3 This trajectory is consistent with a 
+broader national pattern: five-year electricity load growth forecasts across strategic 
+industries, including data centers, advanced manufacturing, and electrification, increased 
+from approximately twenty-three gigawatts to approximately one hundred twenty-eight 
+gigawatts between 2022 and 2024.4 
+ 
+Technology-driven resource demand historically follows a logistic growth curve: 
+increasing at a decreasing rate until an equilibrium is reached, not the exponential or 
+geometric trajectory that current projections imply. Several moderating forces are already 
+visible. The data center boom has been driven primarily by the training phase of artificial 
+intelligence, the extraordinarily power-intensive process of building and refining large 
+foundational models. As the technology matures, the economics shift toward inference: 
+running established models to serve user queries. Inference requires significantly less 
+ 
+3 Bloom Energy, 2026 Data Center Power Report: When Power Defines Growth (San Jose, CA: Bloom 
+Energy, January 2026). The report projects that U.S. data center IT load capacity will rise from 
+approximately 80 gigawatts in 2025 to approximately 150 gigawatts in 2028, an increase of roughly 70 
+gigawatts over three years. 
+4 Grid Strategies LLC, Strategic Industries Surging: Driving U.S. Power Demand (National Load Growth 
+Report, December 2024). The report finds that national five-year electricity load growth forecasts increased 
+from approximately 23 gigawatts to approximately 128 gigawatts between 2022 and 2024, driven primarily 
+by data centers, advanced manufacturing, and electrification. 
+
+--- PAGE 9 ---
+9 
+energy per transaction than training. Simultaneously, semiconductor economics are 
+producing neuromorphic architectures and algorithmic efficiency gains that execute 
+complex computations on a fraction of the energy that earlier generations required.5 
+ 
+The structural risk is not that demand will collapse. It is that siting decisions made 
+on peak-trajectory assumptions will be exposed by a demand moderation that arrives faster 
+than the infrastructure committed to serve it. 
+The Transparency Deficit 
+A review of thirty-one Virginia municipalities with existing or proposed data 
+centers found that approximately eighty percent had non-disclosure agreements in place 
+with developers, limiting public access to information about project scale, resource needs, 
+and potential impacts.6 
+ 
+This is a governance and regulatory failure, not simply a corporate communications 
+failure. The NDA culture that produced eighty percent opacity in Virginia localities is not 
+a legitimate business practice in the context of infrastructure that depends on public 
+transmission systems. It is an information asymmetry that systematically prevents 
+communities from quantifying and negotiating the costs they are being asked to absorb. 
+The Environmental Impact Statement requirement under NEPA did not stop nuclear 
+ 
+5 International Energy Agency, Energy and AI (Paris: IEA, April 2025). The report documents that AI 
+inference now accounts for a substantial and growing majority of data center computing energy use relative 
+to training, and that efficiency gains in accelerator hardware, model architecture, and algorithmic 
+optimization have meaningfully reduced the energy required per computation even as aggregate demand 
+continues to grow. 
+ 
+6 The statistical metrics regarding municipal non-disclosure agreements cited herein are derived from the 
+investigative findings published by Bonds, E., & Newby, V. (2025, April 30), “Data centers, non-disclosure 
+agreements and democracy,” Virginia Mercury. The author relies on the factual reporting of this 
+established journalistic entity, as a matter of public record, and has not independently audited the 
+proprietary FOIA tracking logs of the underlying 31 municipalities. 
+
+--- PAGE 10 ---
+10 
+development. It imposed a transparency standard that forced utilities to defend their siting 
+decisions against public scrutiny, separating the defensible projects from the indefensible 
+ones. The data center industry requires an equivalent mechanism. 
+The Cost Externalization Pattern 
+The deepest structural problem is the systematic externalization of infrastructure 
+costs onto parties who had no role in the siting decision. Residential ratepayers fund grid 
+upgrades they did not request and from which they derive no direct benefit. Communities 
+absorb impacts from industrial land use, diesel particulate emissions from backup 
+generators, noise, and water consumption without the information necessary to negotiate 
+mitigation. The interconnection queue, which nationally had grown to over two thousand 
+gigawatts of pending requests by 2024, with PJM accounting for a substantial share of that 
+backlog, functions on a first-come, first-served allocation mechanism that rewards queue 
+position rather than siting quality.7 
+ 
+The consequence of this cost externalization, measured in concrete terms, is an 
+estimated one hundred billion dollars in delayed or canceled projects nationally between 
+mid-2025 and 2026. That figure is the measurable output of a planning model that generates 
+systematic opposition wherever it is applied. The institutional constraint amplifies grid and 
+resource constraints by converting manageable discrete delays into compounding schedule 
+and cost failures. 
+ 
+7 Center on Global Energy Policy at Columbia University, Outlook for Pending Generation in the PJM 
+Interconnection Queue (2024). This analysis documents PJM's severe interconnection backlog and the 
+resulting multi-year study freezes and restructuring of its interconnection process. U.S. Department of 
+Energy, Transmission Interconnection Roadmap (2024). DOE reports that more than 2,600 gigawatts of 
+clean-energy and storage projects were sitting in interconnection queues nationwide by 2024, of which PJM 
+accounted for a substantial share. 
+
+--- PAGE 11 ---
+11 
+The Jobs Gap as a Structural Grievance 
+Community resistance to data center development is not irrational opposition to 
+infrastructure. It reflects a reasonable assessment of the cost-benefit distribution. A 
+hyperscale facility drawing hundreds of megawatts typically employs twenty-five to one 
+hundred fifty permanent workers. The nuclear plants, steel mills, and manufacturing 
+operations that anchor comparative expectations employed thousands. Communities are 
+being asked to absorb the cost profile of heavy industrial infrastructure while receiving a 
+fraction of the employment return. This paper's geographic recommendations for Rust Belt 
+brownfield development and its long-range framework for small modular reactor co-
+location address this structural grievance directly. 
+ 
+ 
+
+--- PAGE 12 ---
+12 
+SECTION II: THE TECHNICAL FRAMEWORK 
+Stiff-Point Grid Siting: Definition and Rationale 
+A stiff point, in transmission network engineering, is a node on the grid where fault-
+level capacity is sufficient to absorb large, variable industrial loads without propagating 
+voltage instability, harmonic distortion, or power quality degradation through the 
+surrounding network. The concept is not theoretical. It is an established engineering 
+parameter embedded in large industrial interconnection protocols administered by utilities 
+and regional grid authorities for decades. 
+ 
+Data centers are among the most power-demanding and operationally sensitive 
+industrial loads in the modern economy. A hyperscale facility drawing two hundred 
+megawatts requires continuous, firm power at voltage and frequency standards that 
+computing equipment can tolerate within narrow deviation bands, with redundancy 
+sufficient to maintain operations through grid stress events. This demand profile is not 
+meaningfully different, from a network engineering perspective, from the demand profile 
+of an electric arc furnace installation. Both impose large, variable, power-quality-sensitive 
+loads on the transmission network. Both require adequate fault-level capacity at the 
+interconnection node to contain the disturbance locally rather than allowing it to cascade 
+through interconnected systems. 
+ 
+The critical difference is that the electric arc furnace interconnection standard 
+required demonstration of fault-level adequacy and installation of reactive power 
+compensation equipment as conditions of interconnection approval. No equivalent 
+standard currently governs data center interconnection. The result is a systematic mismatch 
+
+--- PAGE 13 ---
+13 
+between the locations where data center demand is concentrated and the locations where 
+the grid can actually absorb it. 
+The Arc Furnace Interconnection Precedent 
+The arc furnace interconnection standard is the direct technical and regulatory 
+precedent for the framework this paper proposes. When mini steel mills deploying electric 
+arc furnaces began proliferating in the 1970s and 1980s, utilities and regional grid operators 
+confronted a specific engineering problem: arc furnaces produce severe voltage 
+fluctuations and harmonic distortions that can propagate across interconnected networks if 
+the host node lacks sufficient fault-level strength to contain them. The response was to 
+condition interconnection approval on two requirements. The prospective customer had to 
+demonstrate that the proposed site carried sufficient fault-level capacity to absorb the load. 
+The prospective customer also had to install reactive power compensation equipment, 
+including static VAR compensators and related apparatus, to contain power quality 
+disturbances within the local interconnection boundary. 
+ 
+This framework was applied across hundreds of mini steel mill siting decisions 
+throughout the industrial expansion of that period. It did not stop mini steel mill 
+development. It shaped where that development went and who bore the cost of network 
+adequacy. The author sited a substantial number of mini steel mill facilities during this 
+period, working through this interconnection qualification process from the developer's 
+side. That direct experience with the arc furnace standard is not incidental to this analysis. 
+It is the practical foundation for the claim that stiff-point qualification, as an 
+interconnection condition, is administratively workable, technically defensible, and does 
+not suppress development of facilities at genuinely qualified sites. 
+
+--- PAGE 14 ---
+14 
+Network Optimization Outperforms New Generation 
+When evaluating how to resolve a regional infrastructure deficit created by large-
+load additions, the comparison between new baseload generation and transmission network 
+optimization reveals a clear practical hierarchy. Bringing new baseload capacity online 
+requires multi-year regulatory processes, large upfront capital commitments with long 
+amortization periods, and supply chain dependencies that further extend timelines. 
+ 
+Increasing the stiffness of an existing transmission node operates on a 
+fundamentally different timescale and at a fraction of the capital cost. The relevant 
+upgrades, replacing aging switchgear, installing static synchronous compensators and 
+reactive power compensation equipment, and reconductoring transmission lines within 
+existing rights-of-way, occur within established utility operating footprints under existing 
+regulatory frameworks. The requirement that large-load interconnection applicants 
+demonstrate node adequacy, or fund the specific localized upgrades required to achieve it, 
+places network optimization costs on the party whose siting decision creates them. It also 
+creates a market signal that favors sites where the foundational engineering is already in 
+place. 
+Demand Caps: Mechanism and Rationale 
+A demand cap, as used here, is a ceiling on the aggregate load that can be attached 
+to a specific interconnection node or substation before the regional system requires material 
+investment to maintain stability and power quality. Caps of this kind are administratively 
+familiar: utilities set analogous limits on the aggregate load served from individual 
+distribution feeders, and RTOs impose comparable constraints on the aggregate generation 
+
+--- PAGE 15 ---
+15 
+that can interconnect at specific transmission nodes. The extension of this logic to large-
+load interconnection is analytically straightforward. 
+ 
+The demand cap mechanism directly addresses the cost externalization problem. 
+Under the current framework, a developer who saturates a node's available fault-level 
+capacity imposes upgrade costs on the regional system, which are then socialized across 
+all ratepayers. A demand cap that halts new interconnection approvals at a node once its 
+available capacity has been committed forces the next developer to either identify a 
+different node, fund the upgrade required to expand capacity at the chosen node, or wait 
+until existing load is reduced. In each case, the cost of the siting decision is borne by the 
+party making it. 
+ 
+The combination of stiff-point qualification and demand caps produces a 
+geographic distribution of large-load development that aligns naturally with grid topology: 
+high fault-level nodes receive queue priority, while nodes lacking adequate fault-level 
+capacity are effectively disqualified unless the developer funds the necessary upgrades. 
+This converts grid physics into market signals without prescriptive land use regulation. 
+Anticipated Objection: Barrier to Entry and Incumbent Protection 
+A predictable objection to the stiff-point qualification standard is that it functions 
+as a barrier to entry protecting incumbent operators in established high-capacity clusters, 
+particularly Northern Virginia, from competition by making it structurally difficult to 
+develop at nodes in markets where grid investment has historically been deferred. The 
+objection deserves direct engagement because it is technically sophisticated and will be 
+raised by parties with genuine standing in any comment proceeding. 
+
+--- PAGE 16 ---
+16 
+ 
+The objection fails on both the historical record and the logical structure of the 
+proposed framework. The arc furnace interconnection standard did not protect incumbent 
+steel producers. It shaped where new entrants sited their facilities by directing them toward 
+nodes with adequate fault-level capacity. The standard was competitively neutral: it applied 
+equally to all prospective customers regardless of their relationship to existing operators. 
+New mini steel mill development proceeded efficiently at qualified sites throughout the 
+industrial expansion of the 1970s and 1980s. 
+ 
+The logical structure of the stiff-point framework produces the same result. 
+Northern Virginia carries high fault-level capacity at its major data center interconnection 
+nodes precisely because decades of utility investment have built infrastructure to serve 
+concentrated industrial load. A developer proposing a new facility at a Loudoun County 
+node faces the same stiff-point qualification requirement as a developer proposing a facility 
+at a legacy steel corridor node in Ohio. If the Loudoun County node has available fault-
+level capacity net of existing committed load, the qualification is met. If it does not, because 
+existing load has saturated node capacity, the demand cap operates as intended: it directs 
+the next increment of development to a node that can absorb it without ratepayer cost 
+socialization. 
+ 
+The framework is pro-competitive in a specific and important sense: it creates 
+market conditions under which new development geographies, the Rust Belt corridor in 
+particular, can compete for investment on the merits of their grid topology. The priority 
+queue treatment proposed for legacy heavy industrial sites in Recommendation 4 makes 
+this pro-competitive intent explicit. Far from protecting incumbents, the stiff-point 
+
+--- PAGE 17 ---
+17 
+standard is the mechanism through which the current incumbent concentration in Northern 
+Virginia is most likely to be redistributed toward markets that the existing governance 
+framework has not been able to reach. 
+ 
+ 
+
+--- PAGE 18 ---
+18 
+SECTION III: GEOGRAPHIC APPLICATION ACROSS THREE INFRASTRUCTURE 
+TIERS 
+The stiff-point framework is not a uniform national standard that applies identically 
+across all geographies. The transmission network is not uniform, and the data center 
+workload is not monolithic. Three distinct infrastructure tiers have emerged from the 
+development history of the industry, each with distinct grid characteristics, workload 
+profiles, and structural vulnerabilities. 
+Tier One: The Northern Virginia Exchange Ecosystem 
+Northern Virginia's dominance in data center development began with MAE-East, 
+one of the first major Internet Exchange Points in the United States, established in the 
+Ashburn submarket in the mid-1990s. The agglomeration dynamic that followed is 
+technically precise: latency-sensitive applications cannot be relocated away from the 
+exchange hub without accepting a measurable performance penalty, and each operator's 
+presence makes the hub more valuable to the next. Dominion Energy invested in ultra-
+high-capacity transmission infrastructure tailored to the data center load profile 
+concentrating in its service territory, creating utility infrastructure unavailable elsewhere. 
+ 
+A parallel and non-negotiable demand source reinforced this concentration. The 
+federal intelligence and defense infrastructure surrounding Washington created a category 
+of data center investment with no geographic flexibility. Classified and sensitive 
+compartmented information workloads cannot be relocated based on land economics or 
+power costs. The workforce dimension compounds this lock-in: Northern Virginia has the 
+largest concentration of security-cleared personnel in the United States. 
+ 
+
+--- PAGE 19 ---
+19 
+The structural lock-in of Northern Virginia is now generating the constraints that 
+are redistributing investment. New facilities face power hookup delays. Land prices have 
+risen to levels that compress development economics. The cluster has approached the 
+carrying capacity of its local infrastructure. The stiff-point framework's application to this 
+tier does not seek to redirect demand that genuinely requires co-location with the exchange 
+ecosystem or carries federal security requirements. It governs the category of demand 
+created by AI inference deployment at regional scale, which is geographically distributable 
+and does not require co-location with Ashburn. 
+Tier Two: The Rust Belt Industrial Corridor 
+Legacy Rust Belt industrial districts carry precisely the grid characteristics that the 
+stiff-point framework rewards. The industrial districts that supported heavy manufacturing, 
+integrated steel production, and automotive assembly during the postwar decades required, 
+and received, high-capacity transmission lines and substations engineered to absorb the 
+kind of volatile, nonlinear loads that are exceptionally difficult to manage on a regional 
+network. Electric arc furnaces, in particular, required fault-level capacity sufficient to 
+contain their characteristic voltage fluctuations and harmonic distortions locally. That 
+engineering legacy persists even where the industrial activity that justified it has long since 
+ceased. A substation built to serve a now-idle steel facility still carries the fault-level 
+capacity it was designed for. 
+ 
+The permitting advantages compound the grid argument. Legacy industrial zones 
+are already zoned for heavy industrial use. Brownfield redevelopment under the established 
+CERCLA framework operates within a defined regulatory structure rather than the open-
+ended NEPA review that governs greenfield development. Rights-of-way are already 
+
+--- PAGE 20 ---
+20 
+platted and legally established. Data centers can be sited on capped industrial slabs where 
+the soil must remain undisturbed, converting long-standing environmental liabilities into 
+revenue-generating digital assets. 
+ 
+As the AI industry transitions from training, which requires tightly coupled GPU 
+clusters that resist geographic distribution, toward inference, the operational requirements 
+shift in ways that favor the Rust Belt model. Inference workloads require substantially less 
+power per transaction, benefit from proximity to end users rather than to other data centers, 
+and tolerate geographic distribution across regional markets. The Rust Belt corridor's dense 
+network of mid-sized metropolitan areas delivers sub-fifteen-millisecond latency to major 
+Midwestern and Eastern population centers, well within the threshold for commercial 
+enterprise AI execution. The investment flows confirm the transition is underway: 
+Columbus and New Albany in Ohio have attracted multi-billion-dollar campus 
+commitments from Amazon, Google, and Meta. 
+Tier Three: The Southwestern Markets 
+Texas and Arizona were chosen deliberately based on deregulated power 
+economics, abundant land, renewable energy procurement advantages, and favorable tax 
+regimes. Those advantages were real during the build-out phase. The Southwestern model 
+also carried structural vulnerabilities that were underpriced at the time of the initial 
+investment decisions. 
+ 
+Texas operates its primary electrical grid, ERCOT, as an island with minimal 
+external interconnection. February 2021 demonstrated the consequence: a sustained cold-
+weather event simultaneously increased heating demand and caused widespread generator 
+
+--- PAGE 21 ---
+21 
+failures, producing rotating outages that affected millions of customers and caused deaths 
+and economic losses estimated in the hundreds of billions of dollars. Data center operators 
+responded with aggressive on-site generation and battery storage investment, which 
+addresses the symptom rather than the structural cause. 
+ 
+Arizona built data center capacity on evaporative cooling in a desert supplied by 
+the Colorado River via the Central Arizona Project. Lake Mead has been at historically low 
+levels for most of the past decade. The federal government has imposed mandatory 
+cutbacks on Colorado River deliveries, and municipalities in the Phoenix metropolitan area 
+have restricted or conditioned new data center water hookups.8 
+ 
+The stiff-point framework's application to the Southwestern tier addresses a pattern 
+that the Texas and Arizona experience illustrates: siting frameworks built on single-
+variable optimization tend to produce attendant vulnerabilities. Texas optimized for power 
+costs without adequately pricing grid-isolation risk. Arizona optimized for cooling 
+efficiency without adequately pricing water constraint. The long-term resolution for the 
+Southwestern market is addressed in Section V's discussion of small modular reactors. 
+ 
+ 
+ 
+8 Gerlak, A. K., et al., Scenario Planning: Embracing the Potential for Extreme Events in the Colorado 
+River Basin, Climatic Change, 165(1), 27 (2021). U.S. Bureau of Reclamation, Colorado River Basin 
+Lower Basin Shortage Guidelines and Water Management Alternatives (2023). This federal record outlines 
+the tier-level shortage determinations for Arizona and the Lower Basin, including restrictions that have led 
+metropolitan water authorities in the Phoenix region to condition, limit, or defer high-volume industrial 
+cooling hookups for data-center development. 
+
+--- PAGE 22 ---
+22 
+SECTION IV: THE RTO AND ISO REFORM PATHWAY 
+FERC's Existing Authority 
+The Federal Energy Regulatory Commission has existing authority under the 
+Federal Power Act to require that interconnection studies account for power quality 
+impacts, voltage stability, and fault-level adequacy at proposed interconnection nodes. 
+FERC has used that authority in the generator interconnection context to impose technical 
+requirements that effectively qualify and disqualify sites on engineering grounds. 
+Extending that framework to large-load interconnection, with explicit stiff-point 
+qualification criteria analogous to the fault-level standards that utilities applied to arc 
+furnace operators, would implement the core siting argument through the regulatory 
+mechanism that data center developers must engage regardless of their preferences. 
+ 
+RTOs and ISOs, operating under FERC oversight, administer the interconnection 
+queue through tariff provisions that FERC approves. Tariff amendments implementing 
+node-level demand caps can be implemented through the standard tariff filing process with 
+stakeholder comment opportunities. This is the same mechanism through which FERC has 
+historically implemented major interconnection reforms, including Order 888, Order 2000, 
+and Order 2023. The institutional pathway is established and does not require new 
+legislation. 
+The Queue Reform Dimension 
+As noted previously, the national interconnection queue, which grew to over 2,000 
+gigawatts of pending requests by 2024, operates on a first-come, first-served allocation 
+mechanism that rewards queue position rather than siting quality. The vast majority of 
+these requests will never result in operating facilities. They represent speculative queue 
+
+--- PAGE 23 ---
+23 
+positions held by developers who have not yet secured financing, permitting, or confirmed 
+load commitments. The cost of processing these applications and the delay they impose on 
+legitimate projects with confirmed load and sound siting is borne by the entire system. 
+ 
+FERC's Order 2023 addressed queue congestion by imposing more rigorous 
+readiness requirements, including financial deposits and milestone demonstrations to filter 
+speculative applications.9 
+ 
+Queue readiness reform and siting quality reform are complementary instruments. 
+A developer with confirmed financing and committed load can still secure a queue position 
+at a node with inadequate fault-level capacity, imposing upgrade costs on the system that 
+a stiff-point qualification requirement would have prevented. A stiff-point qualification 
+standard implemented as a condition for initiating an interconnection study would filter the 
+queue at the point of entry, reducing study costs and shortening processing times for 
+qualified applications. 
+The ERCOT Jurisdictional Boundary 
+The stiff-point qualification framework proposed in this paper operates within 
+FERC's jurisdictional reach: PJM, MISO, SPP, WECC, and the other RTOs and ISOs 
+subject to the Commission's oversight under the Federal Power Act. ERCOT, which 
+operates as an intrastate system with minimal external interconnection, falls outside that 
+ 
+9 Improvements to Generator Interconnection Procedures and Agreements, Order No. 2023, 184 FERC 
+para. 61,054 (2023), order on reh'g and clarification, Order No. 2023-A, 186 FERC para. 61,199 (2024). 
+These companion orders establish the Commission's first-ready, first-served cluster-study framework and 
+impose heightened readiness and financial-security requirements on interconnection customers. 
+
+--- PAGE 24 ---
+24 
+jurisdictional boundary by design. The Commission is aware of this structural limitation 
+and this paper does not ask the Commission to act beyond its statutory authority. 
+ 
+The ERCOT boundary is nonetheless analytically relevant to this submission for a 
+specific reason. The structural vulnerabilities documented in Section III, particularly the 
+grid isolation that prevented import of surplus capacity during the February 2021 weather 
+event and the water constraint affecting evaporative cooling systems in the Phoenix 
+metropolitan area, illustrate what the governance framework proposed here is designed to 
+prevent within FERC's jurisdiction. They are cautionary evidence, not a proposed remedial 
+target. The Commission may wish to note, in any order or inquiry that results from this 
+proceeding, that the data center industry's concentration in the ERCOT footprint represents 
+a grid reliability exposure that falls outside federal oversight and that Congress may wish 
+to consider in the context of broader energy infrastructure legislation. That observation is 
+offered for the Commission's consideration rather than as a request for Commission action. 
+The Transparency Requirement as a Complement 
+The interconnection reform argument does not stand alone as a governance remedy. 
+The NDA opacity documented across Virginia localities operates at the local level, outside 
+FERC's direct jurisdiction, and cannot be resolved through interconnection queue reform 
+alone. The stiff-point and demand cap framework addresses cost externalization through 
+the transmission system. It does not address the information asymmetry that prevents 
+communities from evaluating what a proposed facility will demand from local water 
+systems, generate in diesel particulate emissions during backup generator activations, or 
+contribute in permanent employment relative to the infrastructure burden it imposes. 
+ 
+
+--- PAGE 25 ---
+25 
+A transparency requirement for large data center interconnection applications, 
+mandating public disclosure of projected demand, water consumption, backup generation 
+capacity and emissions profile, and expected permanent employment as part of the 
+interconnection study process, would serve the function that NEPA's EIS requirement 
+served in the nuclear era. It would not prevent sound projects from proceeding. It would 
+prevent the information asymmetry that currently allows developers to externalize 
+community costs while suppressing the information that would allow communities to 
+quantify and negotiate those costs. 
+ 
+Several states have begun moving toward mandatory disclosure in response to 
+community resistance and the documented NDA opacity. A federal baseline standard, 
+whether through FERC guidance or conditions attached to transmission system access, 
+would prevent the race-to-the-bottom dynamic in which developers migrate to the least 
+transparent jurisdictions while the underlying grid stress follows them. 
+ 
+ 
+
+--- PAGE 26 ---
+26 
+SECTION V: POLICY RECOMMENDATIONS AND LONG-RANGE FRAMEWORK 
+Near-Term Recommendations 
+Recommendation 1: FERC Rulemaking on Fault-Level Qualification 
+FERC should initiate a rulemaking establishing fault-level adequacy as a condition 
+of large-load interconnection eligibility, with technical specifications derived from IEEE 
+standards long applied by utilities to large industrial load interconnections.10 
+ 
+The rulemaking should define a minimum fault-level capacity threshold for data 
+center interconnection applications above a specified megawatt threshold, require 
+preliminary fault-level screening prior to initiation of full interconnection studies, and 
+provide a pathway for developers to proceed at disqualified nodes by committing to fund 
+required upgrades as a condition of interconnection. This rulemaking does not require new 
+legislation. FERC's authority over transmission access and interconnection terms under the 
+Federal Power Act is sufficient, and the agency has direct precedent for imposing technical 
+qualification requirements on interconnection applicants in the generator interconnection 
+context. 
+Recommendation 2: RTO and ISO Tariff Amendments for Node-Level Demand Caps 
+PJM, MISO, SPP, and other RTOs and ISOs operating under FERC jurisdiction 
+should file tariff amendments implementing node-level demand caps for large-load 
+interconnection. Caps should be set at the fault-level capacity available at each 
+interconnection point, net of existing committed load. 
+ 
+ 
+10 IEEE, IEEE Standard for Harmonic Control in Electric Power Systems, IEEE Std 519-2022 (Piscataway, 
+NJ: Institute of Electrical and Electronics Engineers, 2022). This standard establishes the technical basis for 
+fault-level and stiff-point qualification by defining allowable voltage-distortion limits, current-harmonic 
+injection thresholds, and system-performance criteria for large nonlinear industrial loads. 
+
+--- PAGE 27 ---
+27 
+The amendments should require developers who seek to attach load at a node whose 
+available capacity has been committed to either demonstrate that proposed load falls within 
+remaining capacity, fund upgrades required to expand node capacity in advance, or identify 
+an alternative qualifying node. These amendments should be developed through the 
+standard stakeholder process, providing the comment opportunity that also serves the 
+transparency function the governance analysis identifies as necessary. 
+Recommendation 3: Mandatory Disclosure for Large-Load Interconnection Applications 
+FERC should establish, either through rulemaking or as a condition of RTO and 
+ISO tariff approval, a mandatory disclosure requirement for large-load interconnection 
+applications above a specified megawatt threshold. Required disclosures should include 
+projected peak and average power demand over a ten-year facility horizon, projected water 
+consumption by cooling technology type, backup generation capacity and type with 
+associated emissions profiles under modeled activation scenarios, and expected permanent 
+employment at the facility. 
+ 
+Disclosures should be filed as part of the public interconnection study record and 
+made available to affected municipalities and state public utility commissions. This 
+requirement does not prevent development. It prevents the information asymmetry that 
+generates the community opposition that has produced one hundred billion dollars in 
+project delays. 
+Recommendation 4: Priority Queue Treatment for Stiff-Point Qualified Sites 
+RTOs and ISOs should establish a priority processing track for large-load 
+interconnection applications at nodes with demonstrated stiff-point characteristics. Legacy 
+heavy industrial sites in the Rust Belt corridor that carried industrial loads of comparable 
+
+--- PAGE 28 ---
+28 
+or greater magnitude within the past thirty years should be eligible for expedited 
+preliminary qualification based on documented interconnection history. 
+ 
+This recommendation addresses both the queue congestion problem and the 
+geographic distribution objective simultaneously: it moves the highest-quality applications 
+through the queue most efficiently while creating a market signal that favors development 
+at sites the network can actually support. 
+Long-Range Framework: Small Modular Reactors and the Firm Power Resolution 
+The near-term recommendations address the governance and cost externalization 
+problems through the interconnection framework. They do not address the firm power 
+supply problem that the transition away from fossil fuel baseload generation creates for an 
+infrastructure category that requires continuous, dispatchable power around the clock, in 
+all seasons, regardless of weather or grid conditions. 
+ 
+Intermittent renewable generation cannot meet the firm power requirement directly. 
+Solar generation is unavailable at night and reduced under cloud cover. Wind generation 
+varies with atmospheric conditions on timescales that cannot be predicted or controlled. 
+Battery storage addresses short-duration backup at acceptable cost for a single cycle, but 
+the lifecycle cost incorporating two to three replacement cycles over a thirty-year facility 
+life materially narrows the economic advantage over alternative firm power sources. 
+Natural gas backup reintroduces carbon emissions and fuel supply chain exposure that 
+large technology companies have publicly committed to eliminating from their operational 
+footprints. 
+ 
+
+--- PAGE 29 ---
+29 
+Small modular reactor technology, with units targeting fifty to three hundred 
+megawatts of output, factory-fabricated modular components, passive safety systems, and 
+siting footprints compatible with brownfield industrial parcels, is the most technically 
+coherent long-range resolution to the firm power problem. Several SMR designs are in 
+active NRC licensing review. Data centers need firm baseload power at the scale that SMR 
+units deliver, in geographies where grid capacity is constrained, on a timeline that matches 
+the ten-to-fifteen-year infrastructure planning horizon that serious data center operators 
+apply to long-term strategic capacity requirements. 
+Recommendation 5: Federal SMR Co-Location Planning Framework 
+The Department of Energy, in coordination with FERC and the NRC, should 
+develop a planning framework specifically addressing SMR co-location with data center 
+infrastructure across two distinct deployment models. 
+ 
+In the Rust Belt corridor, the proximate co-location model, where an SMR sited on 
+an adjacent industrial parcel connects to one or more data center campuses through a short 
+dedicated transmission segment, represents the most commercially practical near-term 
+configuration. The stiff-point transmission infrastructure at legacy heavy industrial sites 
+provides grid connection in both directions: as a load demand center and as a generation 
+source. Water availability in the Ohio River and Great Lakes watersheds is a baseline 
+condition rather than an engineering challenge. The brownfield industrial land use history 
+provides the separation from residential density that the NRC siting review process values. 
+ 
+In the Southwestern markets, the closed-loop infrastructure model, integrating on-
+site SMR generation with waste-heat absorption cooling and zero-liquid-discharge water 
+
+--- PAGE 30 ---
+30 
+remediation within the facility boundary, converts the extractive demand pattern of the 
+initial build-out into a self-contained resource loop that addresses the grid isolation and 
+water constraint problems simultaneously. Public power utilities in the TVA region and 
+the Nebraska public power system, with their legally binding economic development 
+mandates and long-term power purchase agreement financing structures, represent the 
+most appropriate institutional partners for early SMR co-location deployment. 
+ 
+ 
+
+--- PAGE 31 ---
+31 
+CONCLUSION 
+The data center industry is not facing a technology problem. The computing 
+hardware is capable, the fiber topology is established, and the economic demand for digital 
+infrastructure is real and growing. The constraint is governance, and the governance 
+remedy is available, administratively grounded, and ready for use. 
+ 
+The nuclear retrenchment that opened this paper's historical analysis ended when 
+the institutional framework governing the technology lost public legitimacy faster than it 
+could be reformed. The technology itself survived, migrating offshore and into deferred 
+domestic capacity that took four decades to reconsider. The data center industry is 
+approaching the same inflection point. The estimated one hundred billion dollars in delayed 
+and canceled projects is not a temporary political friction that improved public relations 
+will resolve. It is the measurable output of a governance model that systematically 
+externalizes costs, suppresses information, and treats the regulatory signal of community 
+resistance as a public relations problem rather than an infrastructure planning failure. 
+ 
+Stiff-point qualification standards and node-level demand caps, implemented 
+through the RTO and ISO interconnection framework that every large-load developer must 
+engage, address the core governance failure: they direct development toward the 
+geographies the network can support, impose the costs of unsuitable siting on the parties 
+making those decisions, and provide the transparent technical record that communities and 
+regulators need to evaluate proposed infrastructure on its actual merits. Mandatory 
+disclosure requirements extend the transparency standard to the community impact 
+dimensions that the interconnection framework alone does not reach. 
+ 
+
+--- PAGE 32 ---
+32 
+The geographic application of this framework produces a distribution of data center 
+development that the market is already moving toward independently, as Northern 
+Virginia's structural constraints push inference workloads toward the Rust Belt industrial 
+corridor and the Southwestern markets face the consequences of underpriced resource 
+dependencies. The stiff-point framework does not redirect the market. It converts the 
+direction the market is already moving into enforceable policy that protects ratepayers and 
+communities in the process. 
+ 
+The long-range firm power resolution, through small modular reactor co-location 
+at Rust Belt brownfield industrial sites and within the closed-loop infrastructure model in 
+the Southwest, addresses the employment gap that data centers alone cannot close and the 
+carbon-free baseload requirement that renewable generation with battery backup has not 
+yet demonstrated at the scale and duration AI inference infrastructure requires. It is a ten-
+to-fifteen-year proposition, not a near-term fix. The near-term recommendations in this 
+paper create the governance conditions under which that longer-range development 
+becomes economically rational and politically legitimate. 
+ 
+The data center challenge is not technological. The constraint is governance, and 
+the governance remedy is available. 
+ 
+ 
+
+--- PAGE 33 ---
+33 
+ABOUT THE AUTHOR 
+J. Vann Cunningham is an IEDC Fellow with a fifty-year career spanning nuclear facility 
+siting, manufacturing and industrial site selection, railroad economic development, and 
+international advisory work. 
+ 
+At the Tennessee Valley Authority, Cunningham served as Chief of Regional Planning and 
+Assistant Director of Industrial Development for Power Marketing. His work at TVA 
+included direct involvement in nuclear facility siting during the 1970s construction 
+program, providing the practitioner foundation for this paper's analysis of the nuclear 
+retrenchment precedent and the NRC siting framework. During this period he also 
+developed the SES Differentials Index at Oak Ridge National Laboratory, a theory-driven 
+predictive framework for social conflict around energy facility siting grounded in Weber's 
+class-status concepts and Smelser's structural strain theory, and the Bundle of Goods 
+residential location model derived from analysis of over thirty-six thousand workers across 
+seven TVA nuclear construction sites, which received the American Planning Association's 
+student research award in 1981. 
+ 
+At Lockwood Greene, Cunningham served as Global Director of Economic Development 
+and Corporate Facility Location. In this role, he directed hundreds of manufacturing and 
+industrial facility-location engagements, including mini-steel mill siting projects requiring 
+arc-furnace interconnection qualification. This direct experience with the stiff-point 
+interconnection process from both the utility and developer sides is the practical foundation 
+for the arc furnace precedent argument developed in Section II of this paper. 
+ 
+
+--- PAGE 34 ---
+34 
+At BNSF Railway Company, Cunningham served as Assistant Vice President of Economic 
+Development (retired), directing the railroad's economic development program across its 
+network. Rail and electrical transmission share the fundamental structure of linear nodal 
+networks, and the economic development work at BNSF reinforced the analytical 
+framework applied here to data center siting and grid governance. 
+ 
+Cunningham's international advisory work has included engagements with the United 
+Nations Development Programme on infrastructure development and economic 
+development planning. His academic foundation is undergraduate social anthropology with 
+minors in geology and epistemology, and graduate study in urban and regional planning at 
+the University of Tennessee, Knoxville. 
+ 
+ 
+
+--- PAGE 35 ---
+35 
+REFERENCES 
+ 
+Bloom Energy. 2026 Data Center Power Report: When Power Defines Growth. San Jose, 
+CA: Bloom Energy, January 2026. 
+Bonds, E., & Newby, V. Data centers, non-disclosure agreements and democracy. Virginia 
+Mercury (Apr. 30, 2025). 
+Center on Global Energy Policy at Columbia University. Outlook for Pending Generation 
+in the PJM Interconnection Queue (2024). 
+Data 
+Center 
+Watch 
+(10a 
+Labs). 
+Q2 
+2025 
+Update. 
+April–June 
+2025. 
+https://www.datacenterwatch.org/q22025. 
+Gerlak, A. K., et al. Scenario Planning: Embracing the Potential for Extreme Events in the 
+Colorado River Basin. Climatic Change, 165(1), 27 (2021). 
+Grid Strategies LLC. Strategic Industries Surging: Driving U.S. Power Demand (National 
+Load Growth Report, 2024). 
+IEEE. IEEE Standard for Harmonic Control in Electric Power Systems, IEEE Std 519-
+2022. Piscataway, NJ: Institute of Electrical and Electronics Engineers, 2022. 
+Improvements to Generator Interconnection Procedures and Agreements, Order No. 2023, 
+184 FERC para. 61,054 (2023), order on reh'g and clarification, Order No. 2023-
+A, 186 FERC para. 61,199 (2024). 
+International Energy Agency. Energy and AI. Paris: IEA, April 2025. 
+Tennessee Valley Authority. TVA Annual Report and Strategic Power Program Review. 
+Knoxville, TN: TVA, 1982. 
+U.S. Bureau of Reclamation. Colorado River Basin Lower Basin Shortage Guidelines and 
+Water Management Alternatives (2023). 
+U.S. Department of Energy. Transmission Interconnection Roadmap (2024). 

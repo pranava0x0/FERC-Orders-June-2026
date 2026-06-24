@@ -1,0 +1,655 @@
+--- PAGE 1 ---
+1 
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+ 
+Interconnection of Large Loads to the Interstate 
+ 
+) 
+Transmission System   
+ 
+ 
+ 
+ 
+) 
+Docket No. RM26-4-000 
+ 
+ 
+COMMENTS OF AMERICAN TRANSMISSION COMPANY LLC  
+ 
+Pursuant to the Notice Inviting Comments on the proposed advance notice of proposed 
+rulemaking (“proposed ANOPR”) issued by the Federal Energy Regulatory Commission 
+(“FERC” or “Commission”) in the above captioned docket,1 American Transmission Company 
+LLC, along with its corporate manager ATC Management Inc. (collectively, “ATC”), 
+respectfully submits the following comments.   
+I. 
+Introduction and Executive Summary 
+ATC is a Wisconsin limited liability company created as a single-purpose, for-profit 
+transmission company.2  ATC’s uniquely diverse ownership structure — comprising of four 
+investor-owned utilities and twenty-three municipalities and/or cooperatives — actively fosters 
+public power participation in transmission development.  ATC began operations under the terms 
+of its own open access transmission tariff on January 1, 2001, and currently owns and operates 
+ 
+1  
+Notice Inviting Comments, Docket No. RM26-4-000 (Oct. 27, 2025); Proposed ANOPR, No. RM26-4-000 
+(Oct. 27, 2025).  
+2  
+WIS. STAT. § 196.485(3m) established the framework for the formation of ATC as a single-purpose 
+transmission company to own and operate the electric transmission facilities as a single transmission grid in 
+the areas in which facilities were contributed, and authorized ATC to plan, construct, operate, maintain, and 
+expand the transmission facilities to provide adequate and reliable transmission service. 
+
+--- PAGE 2 ---
+2 
+ 
+over 10,000 miles of jurisdictional transmission facilities in the states of Wisconsin, Illinois, 
+Minnesota, and Michigan.3  Since its inception, the Midcontinent Independent System Operator 
+(MISO) has provided transmission service over ATC’s transmission facilities pursuant to the 
+terms of the MISO Tariff,4 with ATC operating its transmission facilities in accordance with the 
+direction of the MISO.  ATC also has its own Commission-approved local planning process set 
+forth in the MISO Tariff at Attachment FF-ATCLLC.   
+ATC is well-positioned to comment on the impact of data center loads on the electric 
+transmission grid.  Data center developments announced in our service territory will require 
+several gigawatts of electric power once fully online, and we have been fielding requests for 
+analysis of new data center proposals on a monthly basis for the past two years.  
+For the United States to achieve energy and AI dominance, ATC agrees that affordable, 
+reliable, secure, and diversified energy is necessary to enable the integration of these significant 
+new data center loads, which will continue to deliver advancements in AI and computing.  The 
+electric grid is the key to success. 
+Several comments about these new, large loads are in order.  AI load is different.  This is 
+not just an expansion of the baseline data center loads that exist today.  Some considerations: 
+ 
+3  
+Initially, many of ATC’s facilities were acquired, with Commission approval, from a number of previously 
+vertically-integrated companies, municipalities, and electric cooperatives.  Transfer of operational control 
+authorized in Am. Transmission Co. LLC, 97 FERC ¶ 62,182 (2001).  
+4  
+The term “Tariff” or “MISO Tariff” means MISO’s Open Access Transmission, Energy and Operating 
+Reserve Markets Tariff.   
+
+--- PAGE 3 ---
+3 
+ 
+• Size:  Many of these new AI data centers represent gigawatts of load and are 
+electrically equivalent in size to adding a substantial city to the grid in a 
+comparatively small geographic area.  
+• Variability:  While these mega-point loads require detailed study to understand 
+how grid providers can best serve them, their operating characteristics make them 
+even more challenging to analyze and serve.  The “new breed” of data centers 
+designed to facilitate the capabilities of AI do not operate like traditional data 
+centers.  AI data centers often have extreme operating variability.  For example, 
+we are familiar with proposals where the load seeks to ramp up and ramp down 
+by hundreds of megawatts on a second-to-second basis.  This is equivalent to 
+turning Wisconsin’s capital city of Madison on and off, repeatedly.  These rapid, 
+significant swings are unlike anything our industry has seen before and 
+incomparable to any other load on today’s grid.  In addition to new transmission 
+lines, new specialty power electronics devices, such as static synchronous 
+compensators (“STATCOMs”) or enhanced static synchronous compensators (“E-
+STATCOMs”), also at mega-scale, are necessary to safely integrate this kind of 
+load.   
+• Co-located Generation:  New generation located near new load will help to 
+serve that new load.  However, for maximum value, both the generation and load 
+need to be integrated into the bulk grid.  No large US city is “off-grid.”  Likewise, 
+it is hard to fathom a situation where an AI datacenter will also be “off-grid.”  The 
+grid exists to provide reliability, economic, and stability benefits that cannot be 
+
+--- PAGE 4 ---
+4 
+ 
+provided in a closed system.  Unless new co-located generation will never inject 
+power into the grid and new co-located data center load will never be served from 
+the grid, and the data center finds it acceptable to be offline when the co-located 
+generation is offline, the grid must be expanded to integrate the facilities so that it 
+can serve that load on a moment’s notice.   
+ATC has the expertise and the technology to meet the challenge of serving these loads.  
+We respectfully offer the following modifications and enhancements to existing policies to 
+ensure stability and resiliency during this period of growth. 
+• Need for margin.  Increased grid capacity is necessary to meet new demand.  
+Currently, there is no margin to quickly integrate new large loads or 
+accommodate the uncertainty of their emerging operational characteristics.  
+Traditional regulation permits only “just in time” grid expansion to meet new 
+demand.  Thus, grid development is in a constant state of catch-up.  Regulators 
+and policymakers should look at ways to plan and build the system to anticipate 
+new loads and provide more flexibility.  
+• Need for speed.  Accelerating the expansion of the grid will require other 
+regulatory changes.  Most everyone agrees that the NEPA process needs 
+substantial overhaul.  Likewise, FERC Order No. 1000 was issued during a vastly 
+different time in the development of the grid.  We now have more than ten years 
+of operating experience under the provisions of Order 1000, and its flaws are 
+clear.  The competitive bidding requirements of Order 1000 add a minimum of 
+18-24 months to the process of new construction.  This was an inconvenience in 
+
+--- PAGE 5 ---
+5 
+ 
+the past, but it is a catastrophe in the race for AI dominance.  These delays are 
+incompatible with developer timelines for bringing new data centers online.   
+• Need for cohesive planning, operations, and emergency response.  The delays 
+resulting from Order 1000’s competitive bidding process provide sufficient 
+justification for its amendment. Considering the lack of evidence that competitive 
+bidding reduces consumer rates, the fragmentation and inefficiency introduced by 
+additional transmission providers, and the loss of local grid expertise, the case for 
+strengthening state and local control to accelerate and improve data center growth 
+is compelling. 
+The United States needs a robust, dependable, and sustainable grid to win the AI race.  
+State and local grid providers with successful and long histories of operation reliability, 
+outstanding customer service, and a deep understanding of local conditions and communities 
+provide the best value for consumers and the highest capability to build the grid out as fast as 
+possible.  New policies adopted by the Commission to speed up the build out of the grid to meet 
+the opportunity and needs of the AI revolution should recognize this reality.   
+With this background and our analysis of the policy directives contemplated by the 
+proposed ANOPR, ATC offers the following initial comments and recommendations, including 
+specific feedback on Principles 1-9 and 14.  
+II. 
+Comments 
+Generally, ATC recommends that the Commission carefully consider how any proposed 
+reforms will impact existing processes to interconnect loads and whether any mandated process 
+could inadvertently hinder progress.  To avoid unintended consequences, the Commission should 
+
+--- PAGE 6 ---
+6 
+ 
+focus its efforts on targeted issues, rather than implement sweeping reform.  One area that the 
+Commission could focus its efforts on is co-location of load and generation, or hybrid facilities, 
+especially those associated with large data center loads.  When a large load is co-located with 
+generation, the interconnection study assumes a certain balance between the load and the 
+generation.  If the load needs more than what was studied — for example, because the generation 
+is offline, underperforming, or seasonal — the transmission system must immediately supply that 
+shortfall.  For example, if a hybrid facility with a 250 MW data center load and its companion 
+180 MW on-site generator loses its generation, the transmission system must instantly supply the 
+full 250 MW, potentially overloading lines and forcing emergency actions.5  The extra demand is 
+effectively served by the transmission system without corresponding network upgrades to 
+support the load, causing reliability and operational challenges.  Moreover, to the degree the load 
+is not paying for the transmission service that it receives, other transmission customers will 
+subsidize the excess load because they share the cost of the grid and reliability services.    
+In the event that the Commission determines load interconnection procedures are 
+necessary, the requirements should be narrowly focused and permit regional flexibility to the 
+greatest extent possible.  ATC, along with other similarly situated transmission owners, has 
+curated processes to successfully interconnect new load safely, reliably, expeditiously, and in a 
+cost-effective manner.  ATC has the tools and expertise to adapt to unprecedented development 
+with data center loads.  Therefore, if the Commission implements any new requirements 
+ 
+5  
+Large data center loads typically require nearly 100% reliability and are unable to entertain any service 
+interruptions.  Therefore, the transmission system must be built to support 100% of the load’s capacity.  
+See, e.g., Flexible Power Use by US Data Centers Is Fiction, Report Says, Bloomberg, (November 13, 
+2025), available at https://www.bloomberg.com/news/articles/2025-11-13/flexible-power-use-by-us-data-
+centers-is-fiction-report-says.   
+
+--- PAGE 7 ---
+7 
+ 
+associated with load interconnections, the requirements should only impact large loads that do 
+not conform to specific operating requirements, and the Commission should enhance or 
+strengthen, rather than disturb, existing cost allocation principles and individual company 
+business practices already established associated with load interconnections.  
+A. First Principle:   
+“[T]o avoid even arguably affecting the States’ jurisdiction over generation facilities, 
+facilities used in local distribution or only for the transmission of electric energy in 
+intrastate commerce, or transmissions consumed by the transmitter, the Commission’s 
+jurisdiction should be limited to interconnections directly to transmission facilities, 
+consistent with the Commission's seven-factor test.”6 
+ATC supports the assertion that the Commission’s jurisdiction must be limited to 
+interconnections directly to transmission facilities, consistent with the seven-factor test.7  As a 
+transmission-only company, ATC is restricted by Wisconsin law from serving retail load.  ATC 
+presently maintains more than 700 load interconnections with municipalities, cooperatives, and 
+investor-owned utilities (Customers).  Generally, ATC accommodates a Customer’s distribution-
+transmission interconnection requests or load interconnection requests pursuant to the terms of a 
+Distribution – Transmission Interconnection Agreement (D-TIA) between ATC and the 
+Customer.8  Upon receiving a load interconnection request, ATC collaborates with the Customer 
+to develop and implement the appropriate interconnection solution to support the new or 
+ 
+6  
+Proposed ANOPR at P 18. 
+7  
+See Cal. Pac. Elec. Co., 133 FERC ¶ 61,018 (2010). 
+8  
+See, e.g., Midcontinent Indep. Sys. Operator, Inc., First Amended & Restated Distribution-Transmission 
+Interconnection Agreements, Docket No. ER15-193 (December 31, 2014) (delegated letter order) 
+(accepting twenty-six executed First Amended and Restated Distribution-Transmission Interconnection 
+Agreements between ATC and certain local distribution system companies). 
+
+--- PAGE 8 ---
+8 
+ 
+modified load in a fair and non-discriminatory manner, as prescribed in Attachment FF-ATCLLC 
+of MISO’s Tariff.  Specifically, in Attachment FF-ATCLLC, ATC established the “Best Value 
+Planning” method, which involves partnering with the Customer to conduct an alternatives 
+analysis on all possible solutions, considering cost, reliability, capability, integrity of the system, 
+environmental impacts, necessary regulatory approvals, and schedule constraints.9  Through 
+thoughtful analysis and meaningful collaboration with Customers, ATC ensures that each project 
+satisfies our criteria and provides the best possible value for consumers while ensuring the 
+system is safe and reliable.  As ATC provides no retail services, the direct interconnection of 
+retail customers to ATC’s transmission facilities is governed in part by the requirements of the 
+local distribution company or Customer in whose service territory the interconnection is 
+requested.   
+B. Second Principle    
+“[C]onsistent with the Commission’s pro forma LGIP and LGIA, the reforms should 
+only apply to new loads greater than 20 MW and, for hybrid facilities, where the load is 
+greater than 20 MW.  We seek comment on alternative thresholds, including whether such 
+a threshold is necessary at all.”10 
+Although a 20 MW threshold would be consistent with the LGIP and LGIA, a 20 MW 
+threshold would be too low and too vague for implementing load interconnection procedures.  A 
+20 MW threshold would include many existing and future non-data center loads.  This over-
+inclusivity would lead to unwieldy procedures and unintended consequences, including 
+ 
+9  
+See MISO Tariff, Attachment FF-ATCLLC Local Planning Process.  
+10  
+Proposed ANOPR at P 19. 
+
+--- PAGE 9 ---
+9 
+ 
+overwhelming study resources and likely delaying interconnecting the very loads that the 
+Commission is seeking to expedite.  At ATC, we have defined large loads as 200 MWs or greater 
+to avoid imposing burdensome requirements on smaller loads.  While the Commission retains the 
+exclusive jurisdiction over the transmission of electric energy in interstate commerce, the 
+Commission should assert its jurisdiction in load interconnections in a manner that is carefully 
+developed and narrowly tailored to promote timely development and support a reliable grid.  
+Therefore, ATC recommends that the Commission consider adopting an applicability 
+threshold based upon load behavior.  The operating characteristics of the “new breed” of data 
+center loads are challenging to study and to integrate into the system.  Repetitive oscillatory 
+behavior of AI data centers due to unpredictable processes imposes intense strain on equipment, 
+including nearby generation facilities, and could lead to catastrophic failure without appropriate 
+system protections in place.  If not properly addressed, the rapid swings can add to generator 
+cycling and strain, damage generator shafts, affect rotor windings, impact generator frequency 
+response, and cause power quality issues such as flicker and voltage regulation problems for 
+other Customers, potentially impacting wide regions.  Due to the unique and specific challenges 
+of interconnecting these new loads, especially at an unprecedented pace, the Commission should 
+consider adopting threshold applicability requirements based upon specific operating 
+requirements for all loads in terms of ramp rates (i.e., how quickly they can increase or decrease 
+electricity usage), active power oscillatory behavior (i.e., how much and how fast active power 
+can swing once they are online), and ride-through capability (i.e., how well the load can remain 
+connected and stable during grid disturbances such as voltage dips, frequency excursions, or 
+short interruptions).  As explained below, narrowly tailoring the threshold of applicability to non-
+conforming loads could provide the Commission with adequate controls, certainty of reliability, 
+
+--- PAGE 10 ---
+10 
+ 
+and appropriate cost containment, while maintaining the flexibility for transmission owners, such 
+as ATC, to continue to interconnect traditional, conforming loads based upon our existing 
+interconnection processes.   
+C. Third Principle  
+“[T]o the extent practicable, load and hybrid facilities should be studied together with 
+generating facilities.  Such an approach will allow for efficient siting of loads and 
+generating facilities and thereby minimize the need for costly network upgrades.  For 
+example, siting a large load near or at the same point of interconnection as a new 
+generating facility could reduce the network upgrades needed to interconnect only the 
+load or only the generating facility.”11 
+Today, load integration and generator interconnections are studied separately in MISO’s 
+footprint.  However, through its stakeholder-driven planning process, MISO coordinates bottom-
+up and top-down projects to avoid duplicative facilities and ensure only necessary facilities move 
+to construction.  Therefore, MISO’s existing processes, and by extension, ATC’s existing 
+practices, support efficient siting of load and already minimize the need for costly network 
+upgrades.   
+As discussed above, traditional studies of hybrid facilities would assume balance between 
+the load and generation.  Thus, network upgrades built to support the hybrid facility would 
+account for the net impact of the hybrid facility, not for the full load without the companion 
+generation.  If the load exceeds the studied, net amount, the excess demand must be served by 
+the transmission system.  However, because the full load was not studied and planned for, the 
+network upgrades to support that transmission service would not exist and costs could 
+ 
+11  
+Proposed ANOPR at P 20. 
+
+--- PAGE 11 ---
+11 
+ 
+inappropriately shift to other ratepayers that share in the cost of the grid.  In ATC’s footprint, all 
+Customers (and their end-use customers) pay for transmission service through network service 
+charges based upon peak demand.  If co-located load draws more than contemplated in the 
+studies, ATC must deliver that extra power using shared transmission assets.  The cost of 
+maintaining reliability (i.e., redispatch, congestion management, emergency upgrades) is spread 
+across all network service customers, even though the excess demand comes from one facility.  
+Therefore, co-located large loads could benefit from transmission capacity and reliability 
+services that were not studied, and other customers would absorb the costs and associated 
+reliability risks.   
+To address this concern, ATC recommends that the Commission require “process-
+matching” when considering how to study hybrid facilities.  ATC serves a number of paper mills, 
+which have a prominent presence in ATC’s footprint.  Paper mills often use on-site, behind the 
+meter hydropower to support papermaking.  Typically, the paper mills provide ATC with load 
+forecasts of the net amount of usage, in other words, the total load the paper mill necessitates to 
+operate and function, minus the amount they rely on from their hydropower generation.  These 
+co-located generators and loads are “process-matching,” meaning that if the co-located 
+hydropower generation failed, the paper mill would cease operations.  This failsafe allows ATC 
+to minimize reliability risks associated with the paper mills providing “net” amounts of load in 
+forecasts.  In ATC’s experience, it is essential to incorporate process-matching requirements, 
+because without it, if the load and generation profiles don’t align in real time, reliability risks and 
+NERC planning violations loom.  If hybrid facilities are not process-matched and the load 
+exceeds studied levels, the transmission system becomes the “backstop,” and other customers 
+subsidize that excess use through shared costs and reliability impacts.  For a transmission-only 
+
+--- PAGE 12 ---
+12 
+ 
+utility such as ATC, this is especially problematic because it undermines cost causation principles 
+and creates compliance and fairness challenges.   
+D. Fourth Principle  
+“[L]ike generating facilities, load and hybrid facilities should be subject to 
+standardized study deposits, readiness requirements, and withdrawal penalties.  These 
+provisions deter speculative projects and provide transmission providers with more useful 
+information to more accurately forecast demand on their systems. We seek comment on 
+the extent to which the existing study deposits, readiness requirements, and withdrawal 
+penalties can be adopted. We also seek comment on whether additional commitments or 
+financial penalties would be appropriate.”12 
+ATC generally supports subjecting loads that meet the threshold applicability 
+requirements to standardized study deposits, readiness requirements, and withdrawal penalties, 
+analogous to the LGIP.  Eliminating speculative requests for significant load growth from 
+consideration by implementing these stringent requirements would help focus time, costs, and 
+resources to expeditiously interconnect serious customers.  Large loads requiring a significant 
+amount of network upgrades can be speculative — which results in transmission owners, such as 
+ATC, engaging in work for loads that do not materialize, wasting money and resources.   
+To encourage lasting commitment from prospective new loads, ATC has adopted a 
+practice of conducting indicative studies for our LDCs/Customers to support their end-use 
+customers’ ability to explore various concepts in a relatively short time period (approximately 4-
+6 weeks), and inexpensively (approximately $12,000).  These indicative studies help our 
+Customers and their customer understand the amount of transmission facilities needed to 
+interconnect a new load at a range of load levels and multiple locations.  This process provides 
+ 
+12  
+Proposed ANOPR at P 21. 
+
+--- PAGE 13 ---
+13 
+ 
+our Customers and the prospective end-use customer with information to make business 
+decisions much more quickly than waiting for a more comprehensive system impact study that 
+can take upwards of nine months. 
+Additionally, ATC has adopted the approach of requiring our Customers that have end-
+use customers proposing loads driven by economic development to enter into a Project 
+Commitment Agreement (PCA).13  The PCA protects all ATC Customers, and by extension ATC 
+Customers’ ratepayers, if the end-use customer cancels the project before the ATC facilities are 
+completed and placed into service.  If the project is canceled, the costs are recovered from the 
+ATC Customer, who typically recovers directly from its end-use customer, except for those costs 
+that can be re-purposed.  Therefore, ATC respectfully requests that the Commission refrain from 
+disturbing existing processes already in place to address the risk of speculative load and consider 
+the risk of duplicating existing processes that could result in unintended consequences.  As 
+described, ATC has successfully developed processes to minimize the risk of speculative load.  
+E. Fifth and Sixth Principles  
+“[H]ybrid facilities should be studied based on the amount of injection and/or 
+withdrawal rights requested.  For example, a hybrid facility consisting of a 500MW load 
+and a 600MW generating facility may seek no withdrawal rights and 100MW of injection 
+rights.  This provides incentives for co-location with new generation facilities and ensures 
+efficient buildout of the transmission system.”14 
+“[A]ny hybrid interconnection shall be required to install the system protection 
+facilities necessary to prevent unauthorized injections or withdrawals that exceed the 
+respective rights.  We seek comment on whether other operational limitations should be 
+considered.  We also seek comment on the minimum technical requirements for such 
+ 
+13  
+Typically, ATC’s Customers will enter into a similar “backing” agreement with its end-use customer.  
+14  
+Proposed ANOPR at P 22. 
+
+--- PAGE 14 ---
+14 
+ 
+system protection facilities, whether a hybrid interconnection customer should be subject 
+to penalties for unauthorized injections or withdrawals, how any such penalties should be 
+designed, and how such penalties should be allocated to other transmission customers.”15 
+Conceptually, incentivizing co-location by evaluating requested injection and/or 
+withdrawal rights may facilitate efficient buildout.  However, implementation of operational 
+limitations is essential.  These criteria should include process-matching, as outlined under 
+Principle 3.  If process-matching cannot be achieved, the co-located load should be studied at its 
+full load amount.  This ensures that, in the event of co-located generation failure, the load can 
+take network service to avoid service interruption without reliability and operational risks.  
+Likewise, the load should bear the cost of network service for its full load amount, regardless of 
+the presence of co-located generation.   
+As previously discussed, load that doesn’t conform to planning criteria regarding 
+characteristics such as oscillation, ramp, and low voltage ride-through poses significant risks if 
+not properly managed.  Therefore, strict operational limitations must be enforced, as 
+unauthorized injections or withdrawals, particularly with oscillating data center loads, cannot be 
+tolerated.  Establishing minimum operating requirements and limitations for new large data 
+center loads will safeguard system reliability and streamline study processes.  These 
+requirements should be enforced through system protection facilities designed to prevent 
+unauthorized injections or withdrawals and ensure compliance.  At a minimum, the system 
+protection facilities must be capable of disconnecting the hybrid interconnection from the grid if 
+co-located facilities operate outside prescribed parameters. 
+ 
+15  
+Proposed ANOPR at P 23. 
+
+--- PAGE 15 ---
+15 
+ 
+ATC strongly supports principles that uphold cost responsibility and maintain reliability, 
+including proposed penalties for unauthorized injections or withdrawals.  However, any 
+implementation plan must avoid unintended cost shifts and ensure transparency for transmission 
+customers.  As the entity responsible for maintaining a reliable network, ATC requests that any 
+penalty provisions be paired with strict operating requirements for non-conforming load.  
+F. Seventh Principle  
+“[T]he interconnection study of large loads that agree to be curtailable and hybrid 
+facilities that agree to be curtailable and dispatchable should be expedited.  The system 
+operator’s ability to control such facilities through curtailment and/or dispatch must be 
+sufficient for the system operator to integrate the facility into both operations and system 
+planning.  This ensures the timely and orderly addition of large loads to the transmission 
+system in a safe, reliable, and non-discriminatory manner.  We seek comment on whether 
+this should be accomplished through a serial interconnection study process or by some 
+other means.  We also seek comment on appropriate deadlines for such an expedited 
+study process, including whether such studies can be completed in 60 days.”16 
+Implementing requirements and processes for loads that agree to be curtailable, as well as 
+hybrid facilities that agree to be curtailable and dispatchable, presents significant challenges.  As 
+outlined above, in ATC’s experience, these large load customers require 24/7, uninterrupted, 
+guaranteed, reliable service.  From ATC’s perspective, these customers will have network 
+service, and pursuant to MISO’s Tariff, all network load is generally treated as firm service.  
+Introducing curtailment of network load complicates system management and could create 
+scenarios where other customers’ firm load is shed before the “curtailable” large load.  Because 
+ATC treats all network load as firm, even if a hybrid facility volunteers to be curtailable, ATC 
+ 
+16  
+Proposed ANOPR at P 24. 
+
+--- PAGE 16 ---
+16 
+ 
+operators may not be able to selectively curtail that facility ahead of other network load.  As a 
+result, other network customers may need to be curtailed first to maintain system reliability.  
+These compliance and fairness risks arise because transmission owners lack direct tools to 
+selectively shed curtailable load outside of emergency operating instructions, creating a situation 
+where priority service is disrupted before flexible service.  Additionally, curtailing load can 
+trigger NERC reportable events and compliance risks.  These operational complexities 
+underscore the need for clear processes and close coordination with RTOs/ISOs to prevent 
+unrealistic expectations and mitigate reliability risks. 
+Generally, a “serial” interconnection study process, similar to the generation 
+interconnection queue, would encounter the same efficiency challenges faced by generation 
+interconnections.  If serial studies are adopted, strict requirements to eliminate speculative work 
+and enforce minimum operating limitations for large loads will be essential to keep studies 
+moving efficiently.  Each time the queue changes (i.e., a load drops out), re-studies must be 
+conducted — adding  timeline risk.  Moreover, analyzing the detailed and complex interactions 
+of large loads with the broader system, particularly when they do not perform as expected, poses 
+significant risks to study timelines.  As outlined above, speed to market is absolutely critical for 
+large data center loads and any delays caused by interconnection processes could significantly 
+impact project viability.   
+Additionally, group study processes introduce additional complications.  Timelines for 
+group studies rarely align with customer expectations, as new customers may wait months for the 
+next cycle to begin.  Evaluating multiple requests within shared models is inherently complex 
+and can lead to delays.  Furthermore, combining new generation and new loads in the same study 
+models adds substantial complexity to cost allocation for network upgrades.  For example, if new 
+
+--- PAGE 17 ---
+17 
+ 
+loads have drastically different timelines than proposed new generation, but require the same 
+network upgrades, determining fair cost allocation is extremely difficult.   
+ATC encourages the Commission to continue to recognize that local planning knowledge 
+embedded in transmission owner study processes allows for more precise model updates and 
+greater flexibility in study start dates.  This results in better outcomes and more efficient 
+timelines for customers.  Therefore, the Commission should consider and preserve flexibility for 
+transmission owners to study and plan projects to ensure optimization of transmission projects 
+from a cost and reliability perspective.  
+ATC’s experience demonstrates that load interconnection studies for non-conforming 
+loads require substantial time and resources — far beyond the proposed 60-day timeframe.  
+These studies demand extensive engineering effort and can last several months.  For example, 
+ATC recently completed an 18-month study costing approximately $400,000 in contracted 
+engineering services, primarily due to the novelty and complexity of the work.  To streamline 
+studies, establishing new requirements for reporting detailed AI load models and generator 
+torsional models through NERC standards would be beneficial.  Implementing stringent system 
+performance and operating requirements for large loads, along with protection equipment to 
+disconnect problematic loads, could further reduce System Impact Study durations.  Notably, 
+despite significant efforts to shorten timelines for generator interconnection studies involving 
+inverter-based resources, those studies still exceed 60 days.  Large, variable load studies will be 
+similarly complex.  Therefore, ATC recommends setting a more realistic expectation of 120 days 
+for study completion. 
+
+--- PAGE 18 ---
+18 
+ 
+G. Eighth Principle  
+“[L]oad and hybrid facilities should be responsible for 100% of the network upgrades 
+that they are assigned through the interconnection studies.  We seek comment on whether 
+such costs should be offset through a crediting mechanism and, if so, over how many 
+years.”17 
+ATC recognizes and appreciates the Commission’s intent to identify and direct assign 
+certain network upgrades to a specific load or hybrid facility.  However, ATC believes that this 
+approach could lead to disputes, confusion, and delays in interconnecting new load.  As outlined 
+below, ATC recommends that the Commission adopt an alternative framework for direct 
+assigning certain costs, consistent with ATC’s established practices.  
+Under any process that assigns all network upgrade costs directly to one load, the method 
+to determine which load should bear which expense becomes highly complex.  Through the 
+generator queue studies, ATC consistently finds that network upgrades identified for generator 
+interconnections are also required for large loads.  Determining which entity should pay for each 
+upgrade — the generator or the load — will almost certainly lead to disputes.  Tight timelines for 
+interconnecting large data center loads further complicate matters.  For example, generators may 
+have been studied first and identified as the cost causer, but what happens if loads require those 
+projects two years earlier?  ATC is already navigating these challenges as we work to serve new 
+large data center loads.  ATC maintains that such costs should be socialized because these 
+network upgrades ultimately benefit all customers. 
+Given these inherent challenges associated with direct assignment of all network 
+upgrades, ATC recommends that the Commission narrowly tailor direct assignment of 
+ 
+17  
+Proposed ANOPR at P 25. 
+
+--- PAGE 19 ---
+19 
+ 
+interconnection facility costs to those that can be directly attributed to and likely exclusively 
+used by the new load.  For instance, the interconnection facilities specifically associated with the 
+load interconnection, analogous to the transmission owner interconnection facilities (TOIF) in 
+the generator process,18 could be directly attributable to the end-use customer.  As the 
+unambiguous cost-causer for those facilities, the load should bear that cost.  Additionally, the 
+Commission should consider requiring new loads to bear 100% of the costs for facilities 
+necessitated by their characteristics that do not conform with planning and interconnection 
+criteria addressing behavior such as oscillation, ramp, and low-voltage ride-through.  For 
+example, ATC faces challenges with load interconnections exhibiting significant power 
+oscillations, and additional, specialty equipment may be required to address the oscillatory 
+behavior.  These specialty facilities, such as E-STATCOMs, are easily identifiable.  Therefore, 
+the costs of these facilities, including costs for the ongoing operation and maintenance of these 
+facilities, would be appropriately directly assigned to the load without creating confusion or 
+disputes.  ATC is already engaging with these issues to interconnect large data center loads and 
+standard load interconnections.  As outlined above, ATC has developed Best Value Planning, 
+defined in Attachment FF-ATCLLC.  If an end-use customer requests or requires ATC to build 
+facilities above and beyond the Best Value Plan, that end-use customer is directly responsible for 
+those costs, and therefore that end-use customer is directly assigned those costs.  End-use 
+customers’ requests to build facilities above and beyond the Best Value Plan include, for 
+ 
+18  
+Attachment X of MISO’s Tariff defines TOIF as facilities and equipment owned by the transmission owner 
+that are between the “Point of Change of Ownership” and the “Point of Interconnection.”  TOIF does not 
+include network upgrades and are typically limited in nature.  See MISO Tariff, Attachment X, Generator 
+Interconnection Procedures, Section 1 (defining TOIF, Point of Change of Ownership, and Point of 
+Interconnection).  
+
+--- PAGE 20 ---
+20 
+ 
+instance, burying transmission lines for aesthetic purposes and installing equipment such as E-
+STATCOMs needed to address situations where a load cannot meet ATC’s interconnection 
+criteria, including oscillation limits.     
+Generally, ATC recommends that the Commission avoid drastic reforms that could result 
+in untenable consequences.  Transmission owners, such as ATC, should continue to be 
+compensated for the risks of owning, operating, and maintaining network upgrades through 
+mechanisms such as transmission owner initial-funding in any future scheme that permits direct 
+assignment of costs of network upgrades.  
+H. Ninth Principle  
+“[T]o the extent the interconnection customer is not the transmission owner, the 
+interconnection customer shall be afforded the same (or equivalent) option to build as 
+currently provided to generator interconnection customers.”19  
+ATC encourages the Commission to incorporate transmission owner initial-funding in 
+any future requirements related to load interconnection procedures.  Without the option to self-
+fund load interconnection projects, a customer’s option to build would present several concerns 
+to ATC.  As the transmission owner, ATC would be responsible for operating and maintaining 
+assets it did not construct.  This creates ongoing operation, maintenance, and compliance costs 
+for our customers, and ongoing operation, maintenance, and compliance risks for our business.  
+Therefore, the option to self-fund, ensuring that transmission owners such as ATC earn a return 
+ 
+19  
+Proposed ANOPR at P 26. 
+
+--- PAGE 21 ---
+21 
+ 
+on and of transmission investment to support ongoing costs of maintaining a reliable system, 
+should be included in the option to build for large load interconnections. 
+I. Fourteenth Principle 
+“[U]tilities serving large loads must meet all applicable NERC reliability standards and 
+OATT provisions.  Utilities and we must be prepared to revise large load interconnection 
+procedures and agreements, as necessary.  NERC should review its reliability standards to 
+determine if new registration categories or new or modified reliability standards are 
+required to ensure reliability of the BES.”20 
+As noted above, ATC strongly supports the implementation of robust operational 
+standards for large load interconnections, particularly those exhibiting significant oscillatory 
+behavior, because such behavior can cause voltage and frequency instability if not properly 
+managed.  ATC supports efforts by the Commission and NERC to establish standards that ensure 
+these interconnections are safe and reliable.  Furthermore, ATC encourages the Commission to 
+limit any new reliability standards to loads that meet the threshold applicability requirements 
+recommended above — specifically, large loads with pronounced oscillatory characteristics — 
+so that requirements are targeted to where they are most needed. 
+III. 
+Conclusion  
+ATC respectfully requests that the Commission consider these comments in any future 
+rulemaking in this proceeding.  Further, ATC appreciates the willingness of the Commission to 
+ 
+20  
+Proposed ANOPR at P 31. 
+
+--- PAGE 22 ---
+22 
+ 
+continue to consider individual public utilities’ FPA section 205 filings to address these and 
+similar issues during the pendency of this proceeding.21 
+ 
+Respectfully submitted, 
+/s/ William Marsan 
+William Marsan 
+     Executive Vice President, General Counsel 
+Stephanie Neitzel 
+     Senior Counsel 
+ATC Management Inc., corporate manager of 
+American Transmission Company LLC 
+W234 N2000 Ridgeview Parkway Court, 
+Waukesha, WI 53188 
+(262) 506-6704 
+(262) 506-6170 
+bmarsan@atcllc.com 
+sneitzel@atcllc.com 
+ 
+ 
+21  
+Proposed ANOPR at P 32. 
+
+--- PAGE 23 ---
+CERTIFICATE OF SERVICE  
+ 
+I hereby certify that I have on this day served the foregoing document upon each person 
+designated on the official service list compiled by the Secretary in this proceeding. 
+ 
+ 
+Dated at Pewaukee, WI, this 21st day of November 2025. 
+ 
+/s/ Stephanie Neitzel    
+Stephanie Neitzel  
+ATC Management Inc., corporate manager of 
+American Transmission Company LLC 
+W234 N2000 Ridgeview Parkway Court, 
+Waukesha, WI 53188 
+(262) 506-6170 
+sneitzel@atcllc.com 
+ 
+ 

@@ -540,8 +540,8 @@ window.FERC_DATA = (function () {
     captured: "2026-06-24",
     filings: 423, total: 273, orgs: 201, interventions: 128, individuals: 15,
     peak: "Nov 21, 2025", peakN: 183, lastFiled: "2026",
-    docsInventoried: 273, filesTotal: 279, attachments: 7, downloaded: 24, summarized: 9,
-    note: "All 423 docket filings scraped from FERC eLibrary on 2026-06-24, with the document/attachment inventory pulled for all 273 comments (279 files, 7 with sub-documents). 24 comment bodies are downloaded and text-extracted; the 9 flagships below are read in full. Stakeholder buckets are keyword-derived and the per-camp notes are a provisional read. Audit trail saved under sources/comments/.",
+    docsInventoried: 273, filesTotal: 279, attachments: 7, downloaded: 269, summarized: 9,
+    note: "All 423 docket filings scraped from FERC eLibrary on 2026-06-24, with the document/attachment inventory pulled for all 273 comments (279 files, 7 with sub-documents). 269 of the 270 comment bodies that carry attachments are downloaded and text-extracted (PDFs via fitz, DOCX via textutil); the 9 flagships below are read in full. Stakeholder buckets are keyword-derived and the per-camp notes are a provisional read. Audit trail saved under sources/comments/.",
     buckets: [
       { label: "Transmission owners & utilities", n: 42, egs: ["Duke", "PG&E", "Eversource", "PSEG", "AEP", "Exelon"], note: "The largest camp; they back clearer large-load rules but want cost-recovery certainty and to keep load-interconnection authority with the transmission owners." },
       { label: "Generators, IPPs & developers", n: 37, egs: ["NRG", "Vistra", "LS Power", "AES", "Fervo", "Oklo"], note: "Favor co-location and proximate-generation pathways that lift the value of dispatchable and new generation (the ‘bring your own generation’ case)." },

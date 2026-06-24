@@ -1,0 +1,866 @@
+--- PAGE 1 ---
+ 
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+Ensuring the Timely and Orderly 
+Interconnection of Large Loads
+) 
+)
+Docket No. RM26-4-000
+ 
+COMMENTS OF 
+AMERICAN ELECTRIC POWER SERVICE CORPORATION 
+ 
+American Electric Power Service Corporation (“AEP”), on behalf of its affiliates,1 submits 
+the following comments in response to the Advance Notice of Proposed Rulemaking (“ANOPR”) 
+pursuant to the Notice of Request for Comments (“Notice”) issued by the Federal Energy 
+Regulatory Commission (“FERC” or the “Commission”) on October 27, 2025.  We commend the 
+Department of Energy (“DOE”) and the Commission for initiating this timely proceeding to 
+address the interconnection of large loads and cut red tape.  Establishing a clear pathway to connect 
+data centers and other large load customers to the grid at the speed required by large load 
+developers requires priority action necessary to cement energy dominance.  AEP has taken steps 
+within its service territory to proactively address the interconnection challenges outlined in the 
+ANOPR, while ensuring that affordability for our customers remains a key focus.  AEP is 
+committed to working with the DOE, the Commission, and state and regional partners to identify 
+and implement further actions to ensure that our nation has the energy resources and infrastructure 
+to support America’s next generation of innovation and industrial growth.   
+ 
+1 Appalachian Power Company, Indiana Michigan Power Company, Kentucky Power Company, Kingsport Power 
+Company, Ohio Power Company, Wheeling Power Company, Public Service Company of Oklahoma, Southwestern 
+Electric Power Company, AEP Appalachian Transmission Company, Inc., AEP Indiana Michigan Transmission 
+Company, Inc., AEP Kentucky Transmission Company, Inc., AEP Ohio Transmission Company, Inc., AEP West 
+Virginia Transmission Company, Inc., AEP Oklahoma Transmission Company, Inc., and AEP Southwestern 
+Transmission Company, Inc. 
+
+--- PAGE 2 ---
+ 
+2 
+I. 
+Executive Summary 
+The nation’s electric grid is currently facing challenges from rapidly increasing electric 
+demand, largely driven by the expansion of large loads, particularly data centers.2  To address this 
+challenge, DOE, as articulated in the ANOPR, proposes to standardize interconnection procedures 
+and agreements for large loads, particularly those intending to co-locate with new or existing 
+generation facilities at the same point of interconnection, leveraging the Commission's legal 
+authority over interstate transmission.3  However, an approach which focuses solely on 
+interconnecting large loads to the electric grid will not fully support rapid data center and industrial 
+load growth.  The Commission must also make the necessary changes to ensure that the generation 
+needed to serve that load is able to come online in a timely and efficient fashion.  It is essential for 
+the Commission to use this opportunity to address the fundamental issues in generation 
+interconnection, transmission planning, and cost allocation that hinder the rapid connection of 
+large loads.  
+First, additional generation is urgently needed to serve large loads.4  The Commission 
+should quickly address generation’s inability to interconnect and inject energy into the grid in a 
+timely manner with a solution that directly breaks queue backlogs.  Usually, generation must wait 
+until all the upgrades necessary to accommodate its interconnection are constructed through 
+ 
+2 In an analysis of U.S. load growth trends issued earlier this year, ICF International (“ICF”) reported that “U.S. 
+electricity demand is now expected to grow 25% by 2030 and 78% by 2050 from 2023 levels” and that “peak electricity 
+demand is now expected to grow 14% by 2030 and 54% through 2050”.  See Latit Batra et al., Rising Current: 
+America’s Growing Electricity Demand, ICF, at 4 (2025), https://www.icf.com/insights/energy/impact-rapid-demand-
+growth-us.  Data centers alone may account for as much as 12% of all U.S. electricity consumption by 2028 (up from 
+4.4% in 2023).  See Arman Shehabi et al., 2024 United States Data Center Energy Usage Report, Lawrence Berkeley 
+National Laboratory, at 5 (Dec. 2024), https://escholarship.org/uc/item/32d6m0d1. 
+3 In Re Interconnection of Large Loads to the Transmission System, Advanced Notice of Proposed Rulemaking, Docket 
+No. RM26-4-000, at P 12 (filed Oct. 27, 2025) (“ANOPR”). 
+4 Data center demand in the U.S. and internationally is expected to increase by over 160% by 2030 as a result of AI 
+demand, and approximately 60% of data center demand growth will need to be met with new generating capacity. 
+Powering the AI Era, Goldman Sachs, at 3, 15 (2025), https://www.goldmansachs.com/what-we-do/investment-
+banking/insights/articles/powering-the-ai-era/report.pdf. 
+
+--- PAGE 3 ---
+ 
+3 
+redundant study processes which take years to complete.  This adds expense and significant delay 
+and limits the amount of energy available to serve large loads when every available generation 
+resource should be utilized.  AEP supports the application of a “connect and manage” approach (in 
+tandem with other reforms, such as the entry fee model for generator interconnection described 
+below) as a practical solution for the timely interconnection of generation.  Under this approach, 
+all generators pay an entry fee and can rapidly connect to the grid subject to curtailment until 
+supporting network transmission is planned and constructed.  Generators may start as energy 
+resources for some portion of their capacity, but are on a pathway to full recognition as capacity 
+resources until supporting network transmission is built.  By decoupling interconnection from 
+network expansion in the near term, the grid will benefit from faster interconnection for generation, 
+reduced delays from waiting for large-scale upgrades, and a flexible framework for managing grid 
+reliability in real-time until the broader processes recommended in these Comments can take 
+effect. 
+Second, the Commission should decisively address the current generation interconnection 
+models which are hindering sufficient generation from coming online quickly enough to meet 
+today’s generation resource adequacy and reliability needs.  This failure is reflected in the 
+significant queue backlogs and the repeated efforts by transmission providers to solve the problems 
+through interconnection reforms.5  While AEP supports RTO reforms to improve the 
+ 
+5 See e.g., PJM Interconnection, L.L.C., 184 FERC ¶ 61,006 (2023), pet. for review dismissed, 126 F.4th 660 (D.C. 
+Cir. 2025) (order sustaining result of order accepting subject to condition, interconnection process reform transitioning 
+from a serial first-come, first-served queue process to a first-ready, first served cluster cycle approach); PJM 
+Interconnection, L.L.C., 190 FERC ¶ 61,084 (2025), modified on den. of reh’g, 192 FERC ¶ 61,085 (accepting a one-
+time reliability-based expansion of the eligibility criteria for Transition Cycle #2 of PJM’s existing interconnection 
+queue); PJM Interconnection, L.L.C., 190 FERC ¶ 61,083 (accepting tariff revisions governing surplus 
+interconnection service, to facilitate the rapid expansion of existing and planned generation facilities on the PJM’s 
+system);  PJM Interconnection, L.L.C., Proposed Tariff Amendments for Replacement Generations, Docket No. ER26-
+403-000 (filed Oct. 31, 2025); Sw. Power Pool, Inc., Submission of Revisions to the SPP Open Access Transmission 
+Tarriff to Implement Consolidated Planning Process, Docket No. ER26-414-000 (filed Nov. 3, 2025); Sw. Power Pool, 
+Inc., Submission of Tariff Revisions to Add the High Impact Large Load Processes and High Impact Large Load 
+
+--- PAGE 4 ---
+ 
+4 
+interconnection process, more is required.  New and different approaches need to be considered 
+and implemented to ensure that severely needed generation is interconnected and available swiftly 
+and efficiently.6  This is why AEP supports the widespread adoption of an entry fee model for 
+generator interconnections, which integrates generator interconnection and transmission planning 
+into a single streamlined process, reducing duplicative studies and expediting transmission 
+upgrade identification.  It incorporates a predictable, transparent, and easy to calculate fee for 
+generators to pay to connect to the grid, minimizing delays from cost disputes and preventing 
+restudies as generators drop out of the queue due to unexpected and growing interconnection costs.  
+This model will address the significant cost and schedule uncertainties faced by generators, which 
+have resulted in delays and backlogged queues for large industrial and data center developments.   
+Third, the prevalent siloed approach to transmission planning—in which there are separate, 
+reactive planning processes for generation interconnection and grid expansion—will not deliver 
+infrastructure fast enough to ensure the United States continues to be a leader in artificial 
+intelligence and is able to grow its manufacturing base.  Widespread adoption of proactive 
+transmission planning will better anticipate and plan for load and generation in an efficient and 
+ 
+Generation Assessment, Docket No. ER26-247-000 (filed Oct. 24, 2025);  Sw. Power Pool, Inc., Submission of Tariff 
+Revisions to Implement Generator Interconnection Priority Process, Docket No. 3570-000 (filed Sept. 30, 2025); 
+Midcontinent Indep. Sys. Operator, Inc., 191 FERC ¶ 61,231 (2025) (order sustaining result of previous order 
+accepting filing by Midcontinent Indep. Sys. Operator, Inc., and Southwest Power Pool implementing the Joint 
+Targeted Interconnection Queue framework); Midcontinent Indep. Sys. Operator, Inc., 191 FERC ¶ 61,154 (2025) 
+(order accepting revisions to generation interconnection procedures to allow interconnection customers to use a 
+different point of interconnection for a Replacement Generating Facility than the point of interconnection used by an 
+Existing Generating Facility); Midcontinent Indep. Sys. Operator, Inc., Revisions to Open Access Transmission, 
+Energy and Operating Reserve Tariff ERAS Quarterly Study Cycle Expansion Filing, Docket No. ER25-3543 (filed 
+Sept. 26, 2025) (proposed revisions to increase the number of Expedited Resource Addition Studies from ten to fifteen 
+per quarter); Midcontinent Indep. Sys. Operator, Inc., 191 FERC ¶ 61,157 (2025) (order sustaining acceptance of prior 
+order accepting modifications to generator interconnection study process to implement a queue cap and exemptions 
+to that cap).   
+6 Sw. Power Pool, Inc., 192 FERC ¶ 61,131, at P 3 (2025) (Rosner, Comm’r, concurring) (“It is critically important 
+that grid operators continually look for ways to refine the efficiency and speed with which new generation can connect 
+to the grid, especially as our country faces growing power needs to win the global AI race, re-shore manufacturing, 
+and keep electricity affordable for everyday consumers.”). 
+
+--- PAGE 5 ---
+ 
+5 
+cost-effective manner, allowing both generation and data centers to be connected more swiftly. 
+Consistent with the ANOPR’s third Principle for Reform—which encourages studying the 
+interconnection of load and generation together7—such proactive planning will necessarily 
+integrate the consideration of both.   
+Lastly, delays and uncertainty over who must pay for transmission can prevent investment 
+in new transmission needed to serve data centers and expanding load on the grid.  Disputes over 
+cost allocation slow our nation’s progress and impede the connection of these loads to the system.  
+To avoid time-consuming disputes and smooth the path for transmission investment, the 
+Commission should establish a uniform national charge for all “backbone” transmission projects—
+including, for example, high voltage transmission at 345 kV and above.  This change would be 
+applicable to all customers across the United States and fund a comprehensive national expansion 
+of the transmission system to interconnect new generation and serve large loads.  
+These reforms to generation interconnection, transmission planning, and cost allocation, 
+when implemented together, will expedite the interconnection of large loads by facilitating the 
+modernization of the grid and addressing the root causes of delays.   
+II. 
+AEP Has Leading Experience Interconnecting and Serving Large Load Customers 
+AEP is one of the largest electric utilities in the United States, serving over five million 
+customers across 11 states and operates an extensive transmission network spanning more than 
+40,000 miles.  AEP is experiencing a welcome and historic surge in large load activity across its 
+service territory, with direct implications for transmission planning, cost allocation, and reliability 
+oversight.  AEP expects over 28 GW of contracted new load by 2030, supported by binding retail 
+customer financial agreements.  This figure is part of a broader pipeline of 190 GW of load 
+ 
+7 ANOPR, at P 20. 
+
+--- PAGE 6 ---
+ 
+6 
+requests.  AEP’s system peak demand is projected to increase from 37 GW to 65 GW by the end 
+of the decade. 
+This growth is concentrated in Ohio, Texas, and Indiana, with Ohio alone hosting over 13 
+GW of data center load in its interconnection queue.  AEP expects to energize 4.7 GW of new data 
+center capacity in 2025 alone, a 25% increase over 2024.  To support this expansion, AEP is 
+executing a $72 billion capital investment plan, including $30 billion for transmission 
+infrastructure, with a focus on expanding its 765-kV transmission backbone—the largest in the 
+United States.  This robust transmission system has made AEP a preferred interconnection partner 
+for hyperscale customers such as Amazon Web Services, Meta, and Google, while also positioning 
+the company as a key enabler of domestic manufacturing and economic growth across its service 
+territory. 
+AEP was the first utility in the country to implement state-level tariff reforms to ensure 
+cost recovery and preserve affordability to protect existing customers.  These reforms include 
+minimum monthly usage thresholds (e.g., 85% in Ohio), long-term contract requirements (12 years 
+and greater), and provisions to ensure co-located loads contribute equitably to transmission and 
+reliability service costs.  These terms mitigate financial and credit risk to existing customers by 
+ensuring that new data centers and large industrial loads pay their fair share of the utility’s cost of 
+service and stand behind their commitments to take service.  These tariffs are tailored to the needs 
+of each state with large load thresholds ranging from 25 MW to 150 MW, reflecting the sizes of 
+interested large load customers in each state.  AEP has implemented these tariffs in Ohio, Indiana, 
+West Virginia, and Kentucky8 and has filed similar tariff structures for state commission approval 
+in Virginia, Texas, and Michigan.   
+ 
+8 See In re Ohio Power Co. for New Tariffs Related to Data Centers and Mobile Data Centers, Docket No. 24-508-
+EL-ATA (Pub. Utilities Comm’n of Ohio, June 23, 2025); Inre the Verified Pet. of Ind. Mich. Power Co. for Approval 
+
+--- PAGE 7 ---
+ 
+7 
+  AEP’s tariff reforms are a product of the current generation interconnection and 
+transmission planning dynamics affecting the speed with which data centers and large industrial 
+customers can connect to and be served by the grid.  These tariffs allow AEP’s utilities to manage 
+the process of connecting and serving the electricity needs of large loads within the transmission 
+and generation capacity constraints of the wholesale electric grid.  These tariffs manifest the 
+necessity and urgency of modernizing generation interconnection and transmission planning 
+frameworks to more rapidly provide service to large, non-traditional customers. 
+III. 
+The Commission Should Reform Generation Interconnection Processes, 
+Promote Proactive Transmission Planning, and Adapt Transmission Cost 
+Allocation to Support America’s Shared Interest in Rapidly Interconnecting 
+Data Centers and Other Large Loads 
+ 
+A. A “Connect and Manage” Approach Will Accelerate Generation 
+Interconnection 
+A flaw in most interconnection processes is the inability of new generation to interconnect 
+and inject energy into the grid until all the upgrades necessary to accommodate the interconnection 
+are constructed.  Under the prevailing model, most generators seek network service, which ensures 
+full deliverability, even under stressed grid conditions.  This requirement often triggers extensive 
+network upgrades, costing hundreds of millions of dollars and delaying projects for years.  The 
+process also may lack transparency into the actual frequency or magnitude of the congestion or 
+curtailment experienced by the new generator, resulting in additional cost for what may be added 
+reliability for only a few hours of the year or a small MW of curtailment.  This “invest and connect” 
+approach creates a missed opportunity for new generation to interconnect and be able to provide 
+energy at some level to support load even when the transmission system may be constrained.   
+ 
+of Modifications to its Indus. Power Tariff – Tariff I.P., Cause No. 46097 (Ind. Utility Regul. Comm’n, Feb. 19, 2025); 
+Appalachian Power Co. and Wheeling Power Co. Appl. for Approval for Revisions to Schedules LCP and IP,  Docket 
+No. 24-0611-E-T-PW (Pub. Serv. Comm’n of W. Va., March 25, 2025); and Elec. Tariff Failing of Ky. Power Co. to 
+Revise its Indus. Gen. Serv. Tariff, Docket No. 2024-00305 (Ky. Pub. Serv. Comm’n, March 18, 2025). 
+
+--- PAGE 8 ---
+ 
+8 
+“Connect and manage” takes a different approach.  Generators interconnect under an 
+energy-only model, accepting curtailment risk and foregoing capacity accreditation until upgrades 
+are completed.  Reliability is maintained through redispatch and curtailment rather than waiting 
+for the construction of transmission facilities.  Accordingly, “connect and manage” can be a 
+practical solution for the timely interconnection of generation until broader process improvements 
+to generator interconnection, proactive transmission system planning, and cost allocation can take 
+effect to solve the generator interconnection problem on a long-term basis. 
+The Electric Reliability Council of Texas’s (“ERCOT”) approach to “connect and manage” 
+is a good starting point.  In ERCOT, this approach facilitates the efficient interconnection of new 
+generation units by requiring only minimal upfront consideration of a new generator 
+interconnection’s impact on the transmission network.  Generators may interconnect to the 
+transmission grid once they satisfy technical criteria—such as power-flow studies, telemetry 
+readiness, and performance compliance—even when network constraints remain or transmission 
+system upgrades are incomplete.  ERCOT manages network constraints through market dispatch 
+which imposes congestion and curtailment risks on interconnecting generators.  Generators are 
+able to interconnect more quickly with fewer network upgrades in exchange for bearing this risk.  
+ERCOT uses market price signals to identify higher-value grid upgrades via proactive transmission 
+planning.  Any grid bottlenecks caused by a new generator are managed by ERCOT through market 
+redispatch and curtailment, until they are later addressed through broader transmission planning 
+processes.   
+This model decouples interconnection from network expansion.  Deep upgrades can be 
+identified and funded through proactive transmission planning, informed by congestion data and 
+resource forecasts rather than reactive generator interconnection studies.  The ERCOT “connect 
+
+--- PAGE 9 ---
+ 
+9 
+and manage” system has demonstrated success in ERCOT where it has significantly reduced 
+interconnection lead times.9  This market-centric congestion approach has enabled ERCOT to 
+interconnect generation at a pace unmatched by other U.S. operators.  For example, in 2021 and 
+2022, ERCOT interconnected 2.5 times more total capacity than PJM despite the fact that PJM is 
+approximately twice as large as ERCOT in terms of peak load.10  The fundamental tradeoff is 
+faster, cheaper interconnection in exchange for higher curtailment risk and no capacity 
+compensation.   
+In markets which are not energy-only like ERCOT, “connect and manage” complements 
+the “entry fee” model (described below) by serving as an additional solution to breaking the current 
+generation queue backlog and fully utilizing all generation resources available, which can provide 
+energy to serve load.  More generation resources can get online at greater speed while other reforms 
+to the generation interconnection process (and transmission planning) are implemented that 
+enhance the efficiency and speed of getting generators fully connected with firm service without 
+curtailments.11  
+AEP also proposes that all generators that interconnect to the electric grid through “connect 
+and manage” should be on an incremental pathway to full recognition as network resources as 
+supporting network transmission is built proactively through other reformed processes, including 
+ 
+9 See Rob Gramlich et al., Unlocking America’s Energy:  How to Efficiently Connect New Generation to the Grid, at 
+110 (2024), https://www.brattle.com/wp-content/uploads/2024/08/Unlocking-Americas-Energy-How-to-Efficiently-
+Connect-New-Generation-to-the-Grid.pdf. 
+10 Tyler Norris, Beyond FERC Order 2023: Considerations on Deep Interconnection Reform, at 2 (2023), 
+https://nicholasinstitute.duke.edu/publications/beyond-ferc-order-2023-considerations-deep-interconnection-reform 
+(“Norris 2023”). 
+11 Id. at p. 14 (“To make connect and manage an improvement over status quo, proactive, holistic transmission planning 
+is equally important as improved ERIS-based standards. The basic bargain is to avoid reliance on the GI process to 
+support deep network upgrades and instead pursue deep upgrades through a separate planning process.”); The Brattle 
+Group, Generation Interconnection and Transmission Planning, at 15 (2022), https://www.brattle.com/wp-
+content/uploads/2022/08/Generation-Interconnection-and-Transmission-Planning.pdf 
+(“Integrating 
+generation 
+interconnection into more pro-active transmission planning processes offers substantial advantages;” “The costs and 
+time required to interconnect the large number of resources … can be reduced dramatically.”). 
+
+--- PAGE 10 ---
+ 
+10 
+the entry fee model described below.  In other words, there is no Energy Resource Interconnection 
+Service (“ERIS”)-only option for “connect and manage” under AEP’s approach, as there is in 
+ERCOT and certain other areas of the electric grid, where generators may upgrade to capacity-
+supporting network status later at additional expense and with further time-consuming 
+transmission planning studies.  All generators who pay the entry fee should be on equal footing 
+(i.e., all generators will become network resources) and the grid should be planned to enable them 
+to be capacity resources.  Generators who are currently taking ERIS service should be able to pay 
+the applicable entry fee and transition to the Network Resource Interconnection Service (“NRIS”) 
+pathway, and the ERIS-only option for generator interconnection should be phased out.   
+B. An Entry Fee Model Will Enable a More Efficient Interconnection 
+Process and Facilitate Timely Interconnection of New Generation 
+ 
+Another significant stumbling block to efficient interconnection of generation needed to 
+provide service to loads is the traditional “but-for” cost allocation methodology used to determine 
+generator cost responsibility.  Under this paradigm, generator developers pay 100% of the costs of 
+the incremental network upgrades necessary to connect to the grid—those that would not be built 
+but for the generation interconnection.12  To identify necessary upgrades and the associated costs, 
+transmission providers conduct studies based on the generation interconnection requests they 
+receive in a particular queue.13  Often these studies are done on a cluster basis that involves 
+multiple generator requests.  Generators dropping from the queue (and thus the cluster study), 
+often trigger restudies to update the necessary network upgrades and cost allocations of the 
+ 
+12 Standardization of Generator Interconnection Agreements and Procedures, Order No. 2003, 104 FERC ¶ 61,103, 
+at P 694 (July 24, 2003) (“[I]t is appropriate for the Interconnection Customer to pay initially the full cost of 
+Interconnection Facilities and Network Upgrades that would not be needed but for the interconnection[.]”), aff’d sub 
+nom. Nat’l Ass’n of Regul. Util. Comm’rs v. FERC, 475 F.3d 1277 (D.C. Cir. 2007) (“NARUC”).    
+13 See, e.g., PJM OATT § IV.A Interconnection Feasibility Study (36.2); MISO OATT, Attach. X; ISO-NE OATT, 
+Schedule 22 (Large Generator Interconnection Procs.), Schedule 23 (Small Generator Interconnection Procs.), SPP 
+OATT, Attach. V (Generator Interconnection Procs.). 
+
+--- PAGE 11 ---
+ 
+11 
+remaining generators in the cluster.  This iterative process slows down the interconnection process, 
+results in significant queue backlogs, creates cost uncertainty for new generators seeking to 
+interconnect, and engenders disputes.  One way to avoid these pitfalls is to provide upfront cost 
+certainty for generators before they enter the interconnection queue.  
+1. An Entry Fee Model Will Enhance Certainty and Transparency for 
+Generation Developers 
+The Commission should adopt an “entry fee” model where generation developers pay a 
+standardized or formulaic fee or charge to cover their interconnection costs.  This fee should be 
+known at the time the developer submits its request.  Because the developer will have certainty 
+regarding cost responsibility upfront, this model minimizes many of the obstacles that impede the 
+interconnection process and inhibit the timely interconnection of new generation.  
+First, generation developers will know their interconnection cost responsibility before they 
+enter the interconnection queue.  They no longer will be relying on the iterative study process or a 
+queue position to define their interconnection costs.  Under the current study process, 
+interconnection requests generally are studied in clusters based on queue position and cost 
+allocation is based on those studies.  This makes it difficult for a generation developer to predict 
+or have any certainty about the cost of its interconnection before it submits an interconnection 
+request.  This uncertainty creates an incentive for developers to submit one or more speculative 
+interconnection requests in the hopes of obtaining a better queue position or being included in a 
+more advantageous cluster study that will result in lower interconnection costs.14  Speculative 
+requests are often withdrawn when the cost allocation for the project increases beyond an 
+ 
+14 Sw. Power Pool, Inc., Submission of Revisions to the SPP Open Access Transmission Tariff to Implement the 
+Consolidated Planning Process, Docket No. ER26-414-000, at 25 (filed Nov. 3, 2025) (“SPP CPP Filing”) (“The 
+GRID-C will also provide developers with greater cost certainty prior to entering the interconnection queue, which 
+mitigates the incentive to submit speculative interconnection requests to test cost-optimal interconnection locations 
+and fosters a more efficient interconnection study process.”). 
+
+--- PAGE 12 ---
+ 
+12 
+interconnection customer’s expectations or a generator submits multiple requests looking for the 
+most cost effective point to interconnect. Such withdrawals trigger restudies that may result in 
+modified interconnection costs, increasing the uncertainty even more and potentially leading to 
+disputes and delays in the interconnection process.  
+In contrast, under an entry fee approach, the generation developer will be able to predict 
+with a high degree of certainty its interconnection cost risk, thus eliminating the need to hedge its 
+bets by submitting speculative requests.  Upfront interconnection costs also provide the generator 
+with certainty as it seeks financing and right-of-way arrangements, increasing the likelihood that 
+the project will progress. 
+Second, how the entry fee is determined and calculated will be transparent and available to 
+generation developers.  Cost allocation will no longer be determined based on the perceived 
+“winners” of the interconnection studies and restudies where the results could be challenged or 
+disagreed with, but rather on a known basis that is easily calculated.  The transparency and 
+certainty derived from the use of an entry fee model will greatly reduce interconnection customers’ 
+concerns relating to the unpredictability or level of their interconnection cost responsibility, 
+thereby beneficially increasing project certainty.  
+2. Structure of the Entry Fee  
+ 
+As the entry fee model is a fairly new concept,15 there are several plausible ways the fee 
+could be structured.  Guiding principles to consider in developing the entry fee include 
+ 
+15 While the entry fee model is a relatively new concept, a form of it has been embraced by Southwest Power Pool 
+Inc., (“SPP”) in its recent Consolidated Planning Process filing.  In that filing, SPP noted “[b]ecause the GRID-C will 
+be determined by SPP each CPP Planning Cycle before interconnection requests are submitted, it will provide 
+interconnection customers with upfront certainty regarding the costs of System Network Upgrades they will be 
+required to pay to interconnect, which reduces significantly the cost uncertainty present in the interconnection process 
+today.” SPP CPP Filing, at 25.  In addition, in its order approving the MISO-SPP Joint Targeted Interconnection Queue 
+(JTIQ), the Commission noted, “In essence, the RTOs are using forward-looking planning, historically used for 
+transmission planning, to anticipate the need for transmission facilities to accommodate the interconnection of future 
+
+--- PAGE 13 ---
+ 
+13 
+transparency, ability to easily calculate the fee, a reasonable level of cost certainty for generators 
+before they submit significant financial deposits, and consistency with the “beneficiary pays” 
+principle.  Entry fees could be based on one or more of several factors: (i) the size of the generator 
+(e.g., a certain dollar amount per MW of the generator’s name plate rating); (ii) the location of the 
+proposed project (e.g., costs may be lower in areas where sufficient existing or planned 
+transmission is available to accommodate the interconnection);16 (iii) the type of service being 
+requested (which, under AEP’s proposal, would NRIS);17 or (iv) the type of generation facility 
+(e.g., wind, combustion turbine, and hydro generators may have different interconnection 
+requirements).  The fee could be formulaic or stated.  It also could be standardized and applied on 
+a local, regional, or even more broadly on a national basis.  The key is that it is applied in a non-
+preferential and non-discriminatory way.   
+ 
+The entry fee also should be easily understandable and calculable.  This will ward off 
+disputes and reassure interconnection customers they are being treated fairly and non-
+discriminatorily.  Whatever the chosen structure, the entry fee needs to be consistent with the 
+“beneficiary pays” principle and thus be roughly commensurate with benefits the generator 
+receives from the transmission grid. 
+3. Payment of the Entry Fee 
+ 
+While the amount of the entry fee will be known at the time the interconnection customer 
+enters the queue, payment terms of the fee could be structured either to require remittance of the 
+full amount at the time the developer submits its request, a partial upfront payment with the 
+remainder over time, or payment in monthly installments.  If the entry fee is to be collected over 
+ 
+generation capacity and facilitate the development of those facilities.” Midcontinent Indep. System Operator, 189 
+FERC ¶ 61,108, at P 197 (2024), modified on den. of reh’g, 191 FERC ¶ 61,231 (2025). 
+16 See e.g., SPP CPP Filing at 26. 
+17 See, e.g., SPP CPP Filing at 24. 
+
+--- PAGE 14 ---
+ 
+14 
+time, there should be limitations on the period over which the payments are made.  For example, 
+SPP in its CPP filing proposed that the payment of the entry fee for ERIS would “begin within 
+thirty days of the effective date of the CPP Generator Interconnection Agreements (“GIA”) and 
+will terminate thirty days prior to the expected Commercial Operation Date (“COD”) of the 
+facility;” and for NRIS “payments will begin no later than the expected COD and will be paid over 
+a minimum of twelve monthly installments, such that the NRIS GRID-C will be paid in full no 
+later than twelve months after the COD.”18  SPP explained that these payment terms were to 
+balance the interests of both generation and load.  Generation developers needed to complete 
+financial transactions for transmission facilities close to the facility commercial operation date, 
+while load wanted to avoid rate volatility resulting from the payments being credited on their bills 
+in a single lump sum amount.19  This is just one example of a possible payment structure.  Payment 
+terms can be dependent on several factors and take different forms, but they must not diminish 
+transparency, certainty, and predictability of the entry fee on which generator developers will 
+depend. 
+ 
+Similarly to payment terms, there are options for handling the revenues received from the 
+entry fees.  AEP supports the concept that revenues be credited to load.  This could be 
+accomplished through a mechanism akin to “Contribution in Aid of Construction” used by utilities 
+to offset the costs of new infrastructure necessary to serve load.  The portion of the entry fee that 
+covers the costs of the “driveway” facilities (facilities solely required to interconnect the generator) 
+would be directly assigned to the generator and contributions from the generator would not be 
+credited to load as they would benefit only the generation customer.  The portion of the entry fee 
+ 
+18 SPP CPP Filing at 35; id. (“Thus, the GRID-C payments are being spread over time – typically three to five 
+years for ERIS GRID-C and at least a year for NRIS GRID-C —with the goal of balancing the interests of generation 
+and load.”). 
+19 SPP CPP Filing at 35. 
+
+--- PAGE 15 ---
+ 
+15 
+cost associated with the network upgrades built in conjunction with the interconnection request 
+would be credited to load by using it as an offset to transmission costs charged to load.    
+ 
+Implementation of an entry fee model will benefit both new generation and load.  
+Generation developers will have cost certainty going into an interconnection process, which will 
+facilitate a more efficient and expedient interconnection process enabling them to come online 
+much faster.  Load will benefit because more generation will be available to serve its increasing 
+demand, and it will receive a rate benefit through the entry fee offset to the revenue requirement it 
+is charged.  Finally, a faster more efficient interconnection process will benefit all customers, 
+including large loads, such as data centers and industry vital to the nation’s economy, as well as 
+residential customers by ensuring access to needed generation to keep the lights on.     
+C. Transmission Planning and Investment Should Be Proactive for the 
+Benefit of the Nation   
+Transmission planning traditionally has been done on a reactive basis.  Under the siloed 
+approach used in almost every region of the country, transmission planners study new load or 
+generation interconnection requests individually and identify incremental transmission upgrades 
+necessary to support those requests.  Each interconnection is treated as a one-off planning project 
+or, at best, with a generation cluster study as a group of interconnections.  This results in a 
+hodgepodge development of the transmission system with little thought as to how the system as a 
+whole should be developed to serve overall system needs.   
+The current approach will not deliver infrastructure on the timeline needed to ensure the 
+United States continues to be a leader in artificial intelligence and is able to grow its manufacturing 
+base.  Large load additions are increasing too quickly and in too many locations.  Left unchanged, 
+a siloed reactive approach to transmission planning will result in a transmission system that is 
+unable to address the needs of the modern economy and best serve the customers using that system.  
+
+--- PAGE 16 ---
+ 
+16 
+Instead, transmission planning must become proactive.20  Planners must be able to take a 
+comprehensive view of the system focusing on existing needs and areas of expected growth.  They 
+must plan projects that will address all those needs in a holistic manner.  Taking a forward-looking, 
+“least regrets” approach to transmission planning allows planners to plan and develop projects 
+based on future needs and identify projects that will cost-effectively address those needs.   
+1. 
+Proactive Transmission Planning Is Necessary to Support Large 
+Load Additions 
+ 
+Proactive transmission planning incorporates realistic projections of the anticipated 
+generation mix and locations, load levels, and load profiles over the lifespan of the transmission 
+investment.21  To do this, proactive transmission planning utilizes scenario-based planning, a 
+multi-step process that allows planners to incorporate significant uncertainties into the planning 
+process. First, planners must define multiple plausible scenarios of what the future could 
+realistically look like based on existing and future generation resources, accounting for additions 
+and retirements and potential locations.  Planners must also account for load levels and load 
+profiles over the anticipated life of the proposed transmission project or portfolio of projects under 
+consideration.   
+Next, planners must develop transmission plans that could work for multiple, or all, of the 
+identified scenarios.  The plan should focus on the multiple benefits that transmission projects 
+provide and their ability to cost-effectively address multiple needs, not just one aspect of 
+transmission needs such as generation interconnections or new large load additions.   
+ 
+20 The Brattle Group, Proactive Transmission Planning for a Clean Energy Transition, at 2-3 (2024) (citing Joe 
+DeLosa III, Johannes Pfeifenberger & Paul Joskow, Regulation of Access, Pricing, and Planning of High Voltage 
+Transmission in the US (2024), https://www.brattle.com/wp-content/uploads/2024/03/Proactive-Transmission-
+Planning-for-a-Clean-Energy-Transition.pdf; The Brattle Group and Grid Strategies, Transmission Planning for the 
+21st Century: Proven Practices that Increase Value and Reduce Costs (2021), https://www.brattle.com/wp-
+content/uploads/2021/10/Transmission-Planning-for-the-21st-Century-Proven-Practices-that-Increase-Value-and-
+Reduce-Costs.pdf. 
+21 See id. 
+
+--- PAGE 17 ---
+ 
+17 
+Finally, planners select a preferred plan.  This plan should incorporate defined indicators 
+for planners to monitor—the outcome of an indicator will alert planners that a certain future is 
+likely to occur, giving them an opportunity to change course.  Furthermore, scenario-based 
+planning can be combined with multi-driver planning, a network portfolio approach, and 
+interregional planning to maximize efficient planning for future needs.22  
+Widespread proactive transmission planning is the solution to address the concerns 
+surrounding the increasing number of large load additions because it will anticipate and plan for 
+load changes based on these load interconnections and ensure that transmission capacity exists to 
+accommodate those load interconnections in an efficient and cost-effective manner.23  Proactive 
+transmission planning will also eliminate or reduce the need for resource intensive, reactive 
+transmission network upgrade studies.  In proactive transmission planning, future interconnection 
+point locations are informed by projected load growth that accounts for large load additions and 
+future generator interconnection queue requests.  Therefore, when new resources and loads are 
+ready to come online, there are more practicably accessible interconnection points available to 
+them.  It also encourages both generator and large load customers to interconnect in places that are 
+most efficient for the existing and planned transmission to accommodate their interconnection 
+because the transmission capacity will be available for their use.  They will be able to interconnect 
+faster and more cost-effectively.  Proactive planning will result in millions more dollars of benefits 
+to consumers.  At present, under reactive planning, “for every $1 billion investment in well-
+ 
+22 Proactive Transmission Planning for a Clean Energy Transition, at 3. 
+23 See, e.g., Midcontinent Independent System Operator, Inc., MTEP21 Report Addendum: Long Range Transmission 
+Planning Tranche 1: Executive Summary, at 21-46, https://cdn.misoenergy.org/MTEP21%20Addendum-
+LRTP%20Tranche%201%20Report%20with%20Executive%20Summary625790.pdf (last visited on Nov. 20, 2025) 
+(describing how MISO created its Tranche 1 portfolio of transmission projects based via proactive planning to address 
+projected interconnection and reliability needs) (MTEP21 Report Executive Summary); Southwest Power Pool, Inc., 
+2025 
+Integrated 
+Transmission 
+Planning 
+Assessment 
+Report, 
+at 
+170-215 
+(2025), 
+https://spp.org/documents/75192/2025%20integrated%20transmission%20plan%20report.pdf. 
+
+--- PAGE 18 ---
+ 
+18 
+planned, large-scale transmission that is delayed, it costs consumers approximately $150 million 
+to $370 million in lost net benefits for each year of delay.”24   
+Proactive planning will likewise reduce the need for transmission network upgrade studies, 
+which are currently relied on because most transmission planning is reactive.  Under reactive 
+planning, transmission plans are only responding to present—or even past—reliability needs, and 
+the transmission system is not ready for new interconnections.  Thus, a network upgrade study is 
+necessary to address the needs of a new interconnection.  Under proactive planning, network 
+upgrade studies are far less likely to be necessary for any given project, because the proactive plan 
+has already considered and prepared for the needs of future projects.  Thus, by looking ahead rather 
+than behind, proactive transmission planning removes barriers to interconnection and reduces costs 
+to all customers by efficiently and cost effectively identifying the transmission projects that will 
+benefit the entire system.  Accordingly, the Commission should adopt reforms necessary to support 
+proactive transmission planning to address the growing issues created by the increase in large load 
+interconnections.25  
+ 
+ 
+ 
+24 Zach Zimmerman, Rob Gramlich & Michael Goggin, Delaying transmission increases costs and reduced benefits 
+for consumers, at II (2025), https://wiresgroup.com/wp-content/uploads/2025/11/Cost-of-Delayed-Transmission-
+Report-by-Grid-Strategies-for-WIRES.pdf. 
+25 The Commission may also want to request feedback on the potential benefits to proactive transmission planning 
+which could be offered from registration of large loads with NERC.  In July of this year, NERC’s Large Loads Task 
+Force issued a whitepaper in which NERC notes the unique characteristics associated with those loads necessary to 
+accurately model and analyze their individual and collective impact on the electric grid.  See NERC, Characteristics 
+and Risks of Emerging Large Loads, at 15 (2025), https://www.nerc.com/globalassets/who-we-are/standing-
+committees/rstc/whitepaper-characteristics-and-risks-of-emerging-large-loads.pdf. 
+
+--- PAGE 19 ---
+ 
+19 
+D. A Nationwide Cost Allocation for High Voltage Transmission Will Address 
+a Critical Obstacle to the Necessary Transmission Development to Support 
+Interconnection of Large Loads that Benefits the National and Economic 
+Interest of All Americans 
+ 
+Cost allocation can be the biggest obstacle to getting necessary transmission built.26  The 
+delays caused by the uncertainty over who must pay for necessary transmission can prevent 
+investment in such transmission.  For example, co-location can present cost allocation concerns if 
+it co-located loads receive service in a manner that deviates from FERC’s core transmission cost 
+allocation principles27 or if bundled retail services are misunderstood or ignored.  However, the 
+thoughtful consideration of cost allocation issues need not delay the interconnection of large 
+loads.28 
+Given the significant national interest in ensuring that large loads can come online to 
+support data centers and other industries, the Commission cannot allow parochial fights over cost 
+allocation to slow our nation’s progress and impede the connection of these loads to the system.  
+As the Administration has recognized, data centers are critical for national security and provide 
+economic benefit to all Americans.29  To avoid these fights and smooth the path for transmission 
+ 
+26 See, e.g., Midwest Indep. Transmission Sys. Operator, Inc., 133 FERC ¶ 61,221 (2010) (initial Commission order 
+on MISO’s MVP cost allocation methodology; litigation remained active into 2018), order on clarification, 137 
+¶ 61,074 (2011), aff’d in part, vacated in part sub nom., Ill. Com. Comm’n v. FERC, 721 F.3d 764 (7th Cir. 2013); 
+order on remand, 156 FERC ¶ 61,034 (2016), order on reh’g and clarification, 164 FERC ¶ 61,191 (2018) Del. Pub. 
+Serv. Comm'n v. PJM Interconnection, L.L.C., 155 FERC ¶ 61,090 (2016) (initial Commission order on complaint 
+against solution-based distribution factor cost allocation methodology for the Artificial Island Project; litigation 
+remained active into 2020), order on reh’g, 164 FERC ¶ 61,035 (2018), reh’g denied, 164 FERC ¶ 61,035, order 
+granting reh’g, 169 FERC ¶ 61,234 (2019), order on reh’g, 171 FERC 61,024 (2020); PJM Interconnection, L.L.C., 
+119 FERC ¶ 61,063 (2007) (initial Commission order on PJM’s 2005 license plate transmission rate design dispute; 
+litigation continued into 2014), reh’g denied, 122 FERC ¶61,082 (2008), aff’d sub nom., Ill. Com. Comm’n v. FERC, 
+576 F.3d 470 (7th Cir. 2009), order on remand, 138 FERC ¶ 61,230 (2012), reh’g denied, 142 FERC ¶ 61,216 (2013), 
+aff’d sub nom., Ill. Com. Comm’n v. FERC, 756 F.3d 556 (2014). 
+27 See PJM Interconnection, L.L.C., 189 FERC ¶ 61,078 (2024), modified on den. of reh’g, 191 FERC ¶ 61.025 (2025).   
+28 As discussed by panelists at FERC’s technical conference regarding Large Loads Co-Located at Generating 
+Facilities, the driver for co-location is the need for generation – not the allocation (or avoidance of allocation) of 
+transmission and distribution infrastructure costs.  See Large Loads Co-Located at Generating Facilities, Post-
+Technical Conference Comments of American Electric Power Service Corporation, Docket No. AD24-11-000, at 3 
+(filed Dec. 9, 2024). 
+29  ANOPR Cover Letter (Oct. 23, 2025). 
+
+--- PAGE 20 ---
+ 
+20 
+investment, AEP proposes that the Commission adopt a national cost allocation for all “backbone” 
+transmission projects—that is, transmission lines that are extra high voltage, for example 345 kV 
+and above (EHV transmission).  Transmission investments that are 345 kV and above provide 
+benefits nationwide because they create a more robust, readily accessible transmission system for 
+everyone.  They also benefit all Americans by providing the energy infrastructure needed to 
+support the growing demand for energy by data centers and other infrastructure critical to the 
+national economy.  
+AEP has already demonstrated to the Commission that EHV transmission provides broad 
+reliability benefits,30 noting in testimony that EHV transmission is “better suited for the transfer 
+of large blocks of power over substantial distances” and the EHV system provides “broad regional 
+benefits in terms of enabling long distance transmission activity.”31  EHV systems are essential for 
+regional transactions and emergency transactions.32 
+SPP’s Highway/Byway cost allocation methodology, which was adopted and approved by 
+the Commission in 2011, also recognizes the broad benefits of EHV transmission.33  Under SPP’s 
+Highway/Byway, the costs of facilities operating at 300 kV and above are allocated 100% across 
+the SPP region on a postage stamp basis.34  One of the Commission’s key reasons for accepting 
+this proposal was the fact that, in 2011, “evolving circumstances in the SPP region require 
+significant expansion of its transmission system,” which included the region’s transition to “larger, 
+centralized transmission system operations and regional power markets.”35   
+ 
+30 PJM Interconnection, L.L.C., Initial Brief of American Electric Power Service Corp. and Allegheny Power, Docket 
+No. EL05-121, at 39 (filed May 17, 2006). 
+31 See id. 
+32 Id. at 42. 
+33 Southwest Power Pool, Inc., 131 FERC ¶ 61,252 (2010). 
+34 Id. at P 10. 
+35 Id. at P 65. 
+
+--- PAGE 21 ---
+ 
+21 
+The current and projected boom in large load additions present analogous circumstances 
+nationwide.  At present, as the ANOPR acknowledges, “electricity demand is expected to grow at 
+an extraordinary pace” and “demand growth is now higher than at any point in the past two 
+decades.”36  The nation’s transmission system is at the crux of this issue.  Like the circumstances 
+in the SPP region fifteen years ago, the present circumstances require a significant expansion of 
+the transmission system.  Interconnecting large loads effectively and efficiently at higher levels 
+than ever before will require a more reliable and more robust transmission system.  Thus, as the 
+Commission acknowledged regarding SPP, transmission system expansion with broad benefits 
+over a vast region requires a cost allocation methodology that recognizes these broad benefits.  A 
+national cost allocation for EHV transmission investment to enable the interconnection of large 
+load customers is an extension of the Commission’s policies and precedent, necessitated by 
+changed system conditions and grounded in the Federal Power Act’s requirement that rates are 
+just and reasonable.   
+The Commission’s implementation of a nationwide cost allocation to fund NERC provides 
+a model in applying this approach to backbone transmission investments.  In Order No. 672,37 the 
+Commission set forth the regulations, 18 C.F.R. § 39, to incorporate the requirements of section 
+215 of the Federal Power Act, which required the selection of an electric reliability organization 
+(“ERO”) to maintain and enforce reliability standards.  Under these regulations, the ERO submits, 
+and the Commission approves, an annual budget.38  The costs to fund this budget are allocated 
+based on “net energy for load,”39 that is, solely based on energy consumption.  Then, “all entities 
+ 
+36 ANOPR at P 1.  
+37 Rules Concerning Certification of the Electric Reliability Organization; and Procedures for the Establishment, 
+Approval, and Enforcement of Electric Reliability Standards, Order No. 672, 114 FERC ¶ 61,104 (2006). 
+38 18 C.F.R. § 39.4(b).  
+39 N. Am. Elec. Reliability Corp., 116 FERC ¶ 61,062, at P 8 (2006) (“NERC proposes to allocate its annual reliability 
+program costs among load serving entities on the basis of net energy for load.  It further proposes that each Regional 
+Entity bill and collect fees from the load serving entities within its geographic boundaries.  NERC intends to submit 
+
+--- PAGE 22 ---
+ 
+22 
+within the Commission’s jurisdiction as set forth in section 215(b) of the Federal Power Act shall 
+pay any Electric Reliability Organization assessment of dues, fees, and charges as approved by the 
+Commission.”40  This is because the reliability standards benefit all Americans and thus they 
+should all appropriately pay for the administration and enforcement of such standards.41   
+The Commission should likewise implement a national cost allocation for EHV 
+transmission investment because it provides benefits to all Americans by providing the 
+infrastructure necessary to win the AI race.42  Cost-causation is not an exact science.43  
+Accordingly, courts and the Commission have acknowledged that adherence to cost causation 
+principles does not require that cost allocation methodologies balance costs and benefits with 
+“exacting precision.”44  Ultimately, the requirement is met so long as “all approved rates reflect to 
+some degree the costs actually caused by the customer who must pay them[,]”45 and this is done 
+by ensuring that costs are “allocated in a manner that is at least roughly commensurate with 
+benefits.”46 
+ 
+its annual budget for Commission approval, including funding for delegated activities it has assigned to each Regional 
+Entity.”); Alcoa Inc. v. FERC, 564 F.3d 1342 (D.C. Cir. 2009). 
+40 18 C.F.R. § 39.4(b). 
+41 Kentucky Public Service Commission v. American Electric Power Service Corporation, 193 FERC ¶ 61,110, at P 
+59 (FERC Nov. 7, 2025) ("Furthermore, we note the Commission has long recognized that the transmission network 
+provides benefits to all transmission customers.") 
+42 While the approach that the Commission implemented in the case of NERC funding—a charge based on net energy 
+for load—could be the starting point in a proposed rule to adopt a national cost allocation method, the proposal would 
+benefit from investigation of alternative approaches to cost recovery. 
+43 See Ill. Com. Comm’n v. FERC, 576 F.3d 470, 477 (7th Cir. 2009) (holding that transmission customer's benefits 
+must be “at least roughly commensurate” with the costs allocated to them). 
+44 Coalition of MISO Transmission Customers Indus. Energy Consumers of Am. LS Power Midcontinent, LLC v. 
+Midcontinent Indep. System Operator, Inc., 172 FERC ¶ 61,099, at P 83 n.228 (quoting Midwest ISO Transmission 
+Owners v. FERC, 373 F.3d 1361, 1369 (D.C. Cir. 2004)). 
+45 Id. at P 82 (quoting KN Energy Inc. v. FERC, 968 F.2d 1295, 1300 (D.C. Cir. 1992). 
+46 Mun. Energy Agency of Neb. v. Pub. Serv. Co. of Colo., 189 FERC ¶ 61,099, at PP 41, 46 (2024) (citation omitted) 
+(subsequent history omitted); see also Pub. Serv. Elec. & Gas Co. v. FERC, 989 F.3d 10, 13 (D.C. Cir. 2021) 
+(explaining that “although the Commission need not ‘allocate costs with exacting precision,’ the costs assessed against 
+a party must bear some resemblance ‘to the burdens imposed or benefits drawn by that party’” (quoting Midwest ISO 
+Transmission Owners, 373 F.3d at 1368-69). 
+
+--- PAGE 23 ---
+ 
+23 
+Here, as described above, the EHV system provides broad benefits to users of the 
+transmission grid.  It creates a backbone system that allows the entire grid to function more 
+efficiently and cost effectively and provides a mechanism to move large amounts of power to the 
+areas where such power is needed.  As the D.C. Circuit has recognized, “regional benefits [] accrue 
+throughout the grid,”47 and “[i]mprovements to an integrated grid that ‘enhance[ ] transmission 
+security and reliability’ are ‘presumed to benefit the entire system.’”48  The Commission also 
+consistently finds that that an integrated transmission system “is a cohesive network whose 
+expansion benefits all users of the grid[.]”49  In a 2020 report prepared for Congress, Commission 
+staff also recognized that high voltage transmission provides benefits on an extremely broad scale, 
+and these broad benefits include “sharing of resources across regions by improving interregional 
+power transfer capability; [] aiding with restoration and recovery after an event; [] improving 
+frequency response; and [] enhancing the stability of the interconnected transmission system.”50  
+Also, academic analysis of wholesale energy market prices in the U.S. between 2012 and 2022 has 
+demonstrated that, in many cases, cross-interconnection and interregional transmission 
+investments have balanced, bi-directional benefits.51  
+Thus, while new transmission is necessary infrastructure to support the AI arms race, the 
+benefits do not end with the users of any one of part of the system.  In the case of data centers, the 
+ 
+47 Long Island Power Auth. v. FERC, 27 F.4th 705, 709 (D.C. Cir. 2022) (emphasis added). 
+48 Paragould Light & Water Comm'n v. FERC, 144 F.4th 287, 292–93 (D.C. Cir. 2025) (emphasis added) (citing 
+Midwest ISO Transmission Owners v. FERC, 373 F.3d 1361, 1369, 1371 (D.C. Cir. 2004)). 
+49 Am. Elec. Power Serv. Corp., 101 FERC ¶ 61,211, at P 14 (2002).  
+50 Staff of the Federal Energy Regulatory Commission, Report on Barriers and Opportunities for High Voltage 
+Transmission, at 6-10 (2020), https://www.congress.gov/116/meeting/house/111020/documents/HHRG-116-II06-
+20200922-SD003.pdf; see also Southwest Power Pool, The Benefits of a Transmission Superhighway, 
+https://www.spp.org/documents/10047/benefits_of_robust_transmission_grid.pdf (last visited on Nov. 20, 2025) 
+(describing how a “robust transmission grid benefits everyone” and how benefits includes improved access to lower-
+cost generation, more cost-effective projects to meet minimum reliability requirements, and more diverse fuels). 
+51 Julie Kemp et al., Electric transmission value and its drivers in United States power markets (2025) 
+https://www.nature.com/articles/s41467-025-63143-5#citeas. 
+
+--- PAGE 24 ---
+ 
+24 
+benefits expand beyond those who actually make use of the facilities in question and flow to the 
+entire nation via improved reliability to the bulk power system.  Furthermore, as the President’s 
+AI Action Plan states, we are “in a race to achieve global dominance in artificial intelligence 
+(AI).”52  And winning this race “will reap broad economic and military benefits” which will flow 
+to all Americans.53  Accordingly, it is consistent with the principles of cost causation that the costs 
+of the infrastructure should be borne equally across the nation.54  A national cost allocation would 
+provide an avenue for the Commission to address the urgent issues obstructing large load additions 
+within the bounds of its jurisdiction.   
+IV. 
+Conclusion 
+The United States is at a pivotal point in time where it can support the growth of new large 
+loads such as data centers and domestic manufacturing—but only if new generation is efficiently 
+and quickly interconnected to the Nation’s electric grid, the transmission infrastructure those 
+industries rely upon is available when needed, and costs are fairly allocated. AEP appreciates the 
+Commission’s consideration of its proposed reforms to accelerate generator interconnection,  
+ 
+ 
+ 
+52 
+The 
+White 
+House, 
+America’s 
+AI 
+Action 
+Plan, 
+at 
+1 
+(2025), 
+https://www.whitehouse.gov/wp-
+content/uploads/2025/07/Americas-AI-Action-Plan.pdf. 
+53 Id. 
+54 Transmission cost allocation is well within the Commission’s jurisdiction.  See, e.g., S.C. Pub. Serv. Auth. v. FERC, 
+762 F.3d 41, 84 (D.C. Cir. 2014) (noting it was undisputed that cost allocation of transmission facilities falls under 
+FERC’s jurisdiction as a practice affecting rates) (citing La. Pub. Serv. Comm'n v. FERC, 522 F.3d 378, 389–90 
+(D.C.Cir.2008); Miss. Indus. v. FERC, 808 F.2d 1525, 1540 (D.C.Cir.1987); FirstEnergy Serv. Co. v. FERC, 758 F.3d 
+346, 354–55 (D.C. Cir. July 18, 2014)). 
+
+--- PAGE 25 ---
+ 
+25 
+promote proactive transmission planning, and implement nationwide cost allocation for America’s 
+high voltage transmission backbone.   
+ 
+Respectfully Submitted, 
+ 
+ 
+/s/ John C. Crespo____________ 
+John C. Crespo 
+Carrie L. Bumgarner 
+Jessica A. Cano 
+American Electric Power Service Corporation 
+1 Riverside Plaza 
+Columbus, OH  43215 
+Telephone: (614) 716-3727 
+ 
+E-mail: jccrespo@aep.com 
+Telephone: (614) 716-2921 
+Email: jacano@aep.com 
+Telephone: (614) 716-2941 
+Email: clbumgarner@aep.com 
+ 
+ 
+ 
+Counsel for American Electric Power Service 
+Corporation  
+ 
+ 
+ 
+November 21, 2025
+
+--- PAGE 26 ---
+ 
+26 
+ 
+ 
+CERTIFICATE OF SERVICE 
+ 
+I hereby certify that on this 21st day of November 2025, I have served a copy of the 
+foregoing document on the official service list compiled by the Office of the Secretary for the 
+above-referenced proceeding. 
+ 
+/s/ LaChon Turner 
+LaChon Turner 
+Paralegal 
+American Electric Power Service Corporation 
+801 Pennsylvania Ave NW 
+Suite 735 
+Washington, DC 20004 
+(202) 383-3465 
+lturner@aep.com 
+ 
+ 

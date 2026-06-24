@@ -1,0 +1,207 @@
+--- PAGE 1 ---
+1 
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+Ensuring the Timely and Orderly 
+Interconnection of Large Loads 
+ 
+Docket No. RM26-4-000 
+REPLY COMMENTS OF EMERALD AI, INC. 
+ 
+I. 
+INTRODUCTION 
+Emerald AI respectfully submits these Reply Comments in response to the Notice Inviting Comments 
+issued to the Federal Energy Regulatory Commission’s ("Commission") October 27, 2025 Notice Inviting 
+Comments regarding the interconnection of large loads. Emerald AI submits these comments to 
+supplement our initial filing, address the extensive record developed by diverse stakeholders, and to 
+strongly support rewarding verifiable, software-driven flexibility with expedited interconnection. 
+We align ourselves with the broad coalition of commenters—including the Advanced Energy 
+Management Alliance (AEMA)1, utilities, transmission owners, and technology companies—in 
+supporting a Flexible Load Fast Track (FLFT). This FLFT would assess load flexibility in a 
+technology-neutral and performance-based manner, rewarding flexibility from a range of 
+different technologies with larger and faster power connections. In addition, Emerald AI writes 
+separately to emphasize that software-defined flexibility of data centers should be eligible as one 
+of many qualifying technologies to provide load flexibility to the power system. 
+The record demonstrates a tension between two visions for interconnecting large loads. One 
+vision, advocated by a small minority of commenters, views large loads as static liabilities that 
+must "bring their own generation" to neutralize their impact. The second vision, supported by the 
+majority of the record, recognizes that modern AI data centers are dynamic, flexible assets. 
+Emerald AI provides the "operating system" that makes the second vision possible. Our platform 
+harnesses computational flexibility (both temporally and spatially) and co-orchestrates that 
+compute flexibility with on-site resources like batteries, generators, and cooling systems. 
+Because software-defined flexibility can render data centers responsive to grid conditions 
+without the need for massive, capital-intensive generation buildouts, we strongly push back 
+against any precondition that equates expedited interconnection solely with matching generation. 
+A broad coalition of stakeholders supports a technology-neutral approach that recognizes 
+software-defined flexibility as a legitimate, credible, and valuable grid asset. The fastest way to 
+ 
+1 Advanced Energy Management Alliance, Comments on Interconnection of Large Loads to the Interstate 
+Transmission System, Docket No. RM26-4-000 (filed Nov 21, 
+2025). https://elibrary.ferc.gov/eLibrary/docinfo?accession_number=20251121-5374 
+
+--- PAGE 2 ---
+2 
+ 
+connect new loads that advances affordability, rapidly drives investment into U.S. 
+competitiveness and AI infrastructure, and bolsters grid reliability is to harness the full suite of 
+flexibility technologies in a technology-neutral and performance-based way.2 
+II. 
+INDUSTRY CONSENSUS FOR FLEXIBILITY AS A “BRIDGE” TO 
+INTERCONNECTION 
+The record reflects a convergence of opinion that flexible load capabilities should be leveraged 
+as a "bridge" to interconnection. Crucially, transmission owners and industry bodies have 
+validated that this flexibility need not come solely from physical hardware, but can also come 
+from advanced software orchestration. Emerald AI’s software solution is uniquely positioned to 
+build this bridge by converting static load into a dynamic resource immediately, without the 
+multi-year permitting delays associated with building backup power plants.  
+● Direct Utility Validation: In a significant endorsement of software-defined flexibility, 
+National Grid provides direct transmission owner support for this approach, stating they 
+are "actively working to implement solutions to make this possible, including through our 
+engagements with companies such as Emerald AI which focus on advanced analytics and 
+flexible demand management" (page 2). National Grid affirms that large loads, "if 
+integrated with flexibility... can help contribute to overall cost efficiency" (page 2). 
+● Google similarly recommends that the Commission "prioritize reforms that will expedite 
+the interconnection of facilities that maximize the use of existing infrastructure," 
+specifically for loads that "agree to be curtailable" (page 11). 
+● AEMA, in its initial comments, identifies that flexibility includes “Temporal flexibility... 
+Spatial flexibility... [and] Resource flexibility,” and it further explains that by utilizing 
+software to shave the peaks of AI data center demand through computational flexibility 
+and on-site energy resources, or shift that computational demand spatially, grid operators 
+can defer these heavy infrastructure investments (page 4). 
+● The Industrial Consumer Organizations also propose the XL Connect framework— 
+"an optional federal, fast-lane interconnection process…to enable rapid, transmission-
+level interconnection of large electricity loads for customers for whom speed-to-market 
+and/or interconnection certainty is critical, and who can make adequate financial and 
+contractual assurances to the grid" (page 17). 
+● Various commenters proposed specific mechanisms to operationalize this bridge. 
+OpenAI advocates for an "optional curtailable-load pathway" where curtailment 
+obligations allow the transmission provider to "expedite the interconnection request" (page 
+2). 
+ 
+2 Luminary Strategies (Arushi Sharma Frank), Comments on Accelerating Speed to Power / Winning the Artificial 
+Intelligence Race RFI, 90 Fed. Reg. 45,032. https://app.halcyon.io/documents/eb341529-2c12-4dd4-baab-
+f297c6b4e403/attachment 
+ 
+
+--- PAGE 3 ---
+3 
+ 
+ 
+● Rejecting Hardware Mandates: The American Conservation Coalition urges the 
+Commission to “maintain technology-neutral rules” and “allow a variety of approaches... 
+rather than prescribing specific solutions.” This supports Emerald AI’s position that 
+requiring physical generation (as suggested by the PJM IMM, Monitoring Analytics) 
+erodes the value of software-defined curtailment and unnecessarily increases costs. 
+Emerald AI submits that the Final Rule must be technology-neutral, defining flexibility to 
+include auditable software control systems that deliver performance cited by National Grid, 
+either with or without physical co-location of generation assets. Taken together, these comments 
+confirm the core proposition that underlies Emerald AI’s technology and the FLFT: interruptible, 
+verifiably flexible load is not merely a theoretical concept but a practical, near-term bridge that 
+can accelerate large-load interconnections, support AI-driven economic growth, and reduce the 
+need for immediate “steel-in-the-ground” upgrades. 
+III. 
+THE DEFINITION OF FLEXIBILITY MUST BE TECHNOLOGY-NEUTRAL 
+AND PERFORMANCE-BASED 
+To operationalize Principle 7 of the ANOPR, the Commission must adopt a definition of load 
+flexibility that is strictly technology-neutral and performance-based. The Commission should 
+reject any definition that conflates "reliability" with "physical generation." 
+If a facility can verifiably reduce its net load at the Point of Interconnection (POI) within a 
+specified timeframe, the method used to achieve that reduction should be irrelevant to the 
+transmission provider. Emerald AI specifically urges the Commission to recognize Software-
+Defined Flexibility as a valid form of dispatchability and curtailment, equivalent to generation. 
+The comments filed in this proceeding overwhelmingly support a definition of flexibility that is 
+performance-based rather than asset-specific. A performance-based construct ensures that the 
+Commission adopts a technology-neutral approach, empowering an all-of-the-above portfolio of 
+solutions—software, storage, thermal resources, on-site generation, and other controllable 
+assets—so long as they can verifiably deliver specified flexibility attributes. 
+Emerald AI has already demonstrated through recent peer-reviewed research (Colangelo et al., 
+Nature Energy, 2025) 3 that AI data centers can provide grid-interactive value reliably. Emerald 
+AI’s platform harnesses software to deliver load flexibility in three ways: 
+1. Temporal Computational Flexibility: Software intelligently pauses or reschedules non-
+time-sensitive AI workloads (such as model fine-tuning) instantly upon receipt of a grid 
+signal. 
+ 
+3  Colangelo et al., "AI Data Centres As Grid-Interactive Assets," Nature Energy, 2025. 
+https://www.nature.com/articles/s41560-025-01927-1 
+
+--- PAGE 4 ---
+4 
+ 
+2. Spatial Computational Flexibility: Software shifts workloads to alternate facilities in 
+unconstrained regions via high-speed fiber, effectively acting as a "virtual transmission 
+line." 
+3. Resource Flexibility: The software co-orchestrates the dispatch of on-site physical 
+assets—such as Battery Energy Storage Systems (BESS), generation, and 
+thermal/cooling management—to deepen the response alongside computational 
+flexibility.  
+Fluence underscores how BESS can make large loads curtailable and flexible, minimizing the 
+need for expensive and time-consuming network upgrades. The Thermal Battery Alliance 
+shows that hyper-flexible thermal loads can avoid periods of peak scarcity while absorbing 
+energy during low-value hours. Taken together with Emerald AI’s own demonstrations, the peer-
+reviewed work in Nature Energy on grid-interactive AI data centers shows that these facilities 
+can provide flexible power consumption and relieve grid stress in real time, delivering credible, 
+enforceable, and verifiable curtailment.4 
+IV. 
+THE COMMISSION MUST REJECT PROPOSALS THAT IGNORE DEMAND 
+FLEXIBILITY OR REQUIRE GENERATION PAIRINGS 
+Emerald AI respectfully urges the Commission to reject arguments in the record that either (1) 
+dismiss demand-side flexibility as “illusory” or (2) require large loads to “bring their own 
+generation” as a precondition for timely interconnection. These positions are inconsistent with 
+the technical evidence in the record and would foreclose cost-effective, software-defined 
+solutions that can provide reliability services equivalent to additional supply. 
+As Emerald AI explained in its initial comments, the traditional “connect and forget” approach—
+under which large loads are studied at maximum theoretical withdrawal and assumed to be 
+inflexible—is incompatible with the physical characteristics of modern AI data centers. These 
+facilities are inherently virtual, interconnected, and controllable through software. When paired 
+with an intelligent flexibility platform and enforceable operating envelopes, they can reduce or 
+shift hundreds of megawatts of demand in response to grid conditions, acting as a non-wires 
+alternative to some network upgrades. 
+Mandating that data centers build matching generation to receive expedited interconnection is 
+economically inefficient and technologically regressive. It ignores the core innovation of the AI 
+era: we can now move the demand to match the supply, rather than building supply to 
+match static demand. 
+● Cost & Speed: Building new generation is capital-intensive and delay projects by several 
+years. Software-defined flexibility can be deployed immediately. 
+ 
+4 Colangelo et al., "AI Data Centres As Grid-Interactive Assets," Nature Energy, 2025. 
+https://www.nature.com/articles/s41560-025-01927-1 
+
+--- PAGE 5 ---
+5 
+ 
+● Asset Utilization: Forcing generation buildout results in redundant assets. Software-
+defined flexibility maximizes the utilization of existing grid infrastructure by shaving 
+peaks and filling valleys. 
+● Equivalency: A reduction in demand (megawatts off) is physically equivalent to an 
+increase in supply (megawatts on) for the purposes of balancing the system. 
+We agree with AEMA’s rebuttal that matching load with generation should be "just one of 
+multiple pathways... not a mandatory precondition." The Commission must ensure that software-
+defined flexibility is treated equivalently and on a technology-neutral basis compared with all 
+other forms of flexibility, dispatchability, and generation. 
+V. 
+CONCLUSION 
+The record established in this proceeding demonstrates widespread industry agreement that 
+flexible load is essential to resolving interconnection backlogs. Stakeholders from across 
+multiple sectors—spanning National Grid, Constellation, Google, and Microsoft—have 
+identified that expediting interconnection for flexible resources reduces the need for immediate 
+physical infrastructure and aligns with efficient grid planning.  
+The path to "Ensuring the Timely and Orderly Interconnection of Large Loads" lies in unlocking 
+the inherent flexibility of the loads themselves. Emerald AI’s software platform makes AI data 
+centers flexible assets that bolster grid reliability. 
+Accordingly, Emerald AI respectfully requests that the Commission establish a Flexible Load 
+Fast Track (FLFT) and adopt a technology-neutral and performance-based definition of 
+flexibility in its proposed large load interconnection rules. In particular, we urge the Commission 
+to explicitly recognize software-defined flexibility as a valid, performance-based resource for 
+expedited interconnection. 
+Respectfully submitted, 
+Dr. Varun Sivaram 
+Chief Executive Officer 
+Phone: +1(408)-656-0083 
+Email: varun@emeraldai.co 
+ 
+Emerald AI 
+Washington, DC 
+December 5, 2025 
+ 

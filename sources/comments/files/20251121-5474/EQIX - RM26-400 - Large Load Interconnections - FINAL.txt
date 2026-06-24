@@ -1,0 +1,473 @@
+--- PAGE 1 ---
+ 
+  
+ 
+1
+ 
+United States of America 
+Before The  
+Federal Energy Regulatory Commission 
+ 
+ 
+ 
+Interconnection of Large Loads to the  
+Interstate Transmission System 
+}       
+}      Docket No. RM26-4-000 
+} 
+} 
+ 
+ 
+Comments of Equinix, Inc. 
+ 
+I.  
+Introduction 
+ 
+ 
+Equinix, Inc. (“Equinix”) is pleased to have this opportunity to offer its preliminary 
+comments on the important topics at issue in this docket. We anticipate this proceeding will raise 
+urgent and critical questions central not only to our nation’s energy system and the interaction of 
+federal, state and local jurisdictions over it, but to our overall economy, quality of life and global 
+competitiveness.  
+ 
+II.  
+Background 
+ 
+A. Procedural Background 
+ 
+On October 23, 2025, the Secretary of Energy issued a letter including a proposal for an 
+Advance Notice of Proposed Rulemaking (the “Proposed ANOPR”), pursuant to Section 403 of 
+the Department of Energy Organization Act, 42 U.S.C. § 7173(a). On October 27, 2025, the 
+Federal Energy Regulatory Commission (“Commission” or “FERC”) issued a Notice Inviting 
+Comments in this docket (the “Notice”). On November 7, 2025, the Commission issued a Notice 
+Granting Extension of Time, providing until November 21, 2025, for submission of initial 
+comments on the proposed ANOPR (the “Extension of Time Notice”). Equinix hereby submits 
+these initial comments pursuant to the Notice and the Extension of Time Notice. 
+ 
+B. Background on Equinix 
+ 
+Equinix, headquartered in Redwood City, California, is the world’s digital infrastructure 
+company. We operate over 270 data centers across six continents, 37 countries and 76 
+metropolitan areas around the globe. We provide roughly 500,000 data interconnections to over 
+10,000 customers, including the world’s largest cloud platforms, financial institutions, artificial 
+intelligence (“AI”) developers, and public sector bodies. Equinix is the global leader in data 
+center colocation services, which grows increasingly central to the way the modern economy 
+works by ensuring secure, low-latency, and highly resilient data exchange. Equinix is excited and 
+proud to deliver infrastructure that advances the nation’s AI leadership, economic development, 
+and strategic competitiveness.  
+
+--- PAGE 2 ---
+ 
+  
+ 
+2
+ 
+III.  
+Communications 
+ 
+Notices and communications with respect to this filing may be addressed to: 
+ 
+ 
+ 
+Cy McGeady 
+ 
+ 
+Head of Energy Policy 
+ 
+ 
+Equinix, Inc. 
+700 K St NW, Suite 600 
+Washington, DC 20001 
+1.585.747.7411 
+cmcgeady@equinix.com 
+ 
+IV.  
+Comments 
+ 
+The Proposed ANOPR is founded on the importance to the nation of AI and the broader 
+digital economy that flow through data centers, as well as other large loads such as the return of 
+domestic manufacturing.1 If data centers in this country face severe headwinds to energization, 
+especially relative to competing nations, it is no exaggeration to say growth and innovation in all 
+sectors of the economy may be hobbled, and our global competitiveness diminished. We applaud 
+the Department of Energy and the Commission for taking the initiative on these issues, and for 
+commencing this proceeding. 
+ 
+At this juncture, we are pleased to offer some background for the Commission’s 
+consideration on the considerable diversity of data center types and business models, as well as a 
+suggested organizing principle and initial threshold questions. We hope these contributions are 
+helpful to the Commission in identifying priorities and developing non-discriminatory solutions 
+that promote a more reliable, adequate and affordable energy system while also supporting the 
+national priorities that the Secretary of Energy identified in his letter to the Commission.2 
+Equinix otherwise reserves further comment at this time and looks forward to participating as 
+this proceeding progresses. 
+ 
+A. Non-Discriminatory Large Load Interconnection Rules Should Reflect the 
+Diversity of Large Loads and of Their Interaction with the Energy System  
+ 
+As part of its commitment to the nation’s leading position in AI and the digital economy, 
+Equinix is rapidly scaling its data center capacity and will be bringing multiple new data centers 
+online, including some of the largest in our history, in the coming years. As such, Equinix has a 
+clear interest in the timely and adequate energy interconnection3 of those projects to the grid. 
+ 
+1 Letter from Secretary of Energy Chris Wright at 2 (Oct. 23, 2025), available at 
+https://www.energy.gov/sites/default/files/2025-10/403%20Large%20Loads%20Letter.pdf. 
+2 Id. 
+3 One note on terminology that may be helpful as this proceeding progresses. Many terms, including 
+“colocation” and “interconnection,” are used extensively in the data and energy sectors, but have very different 
+meanings for each sector. The terms “energy interconnection” and “energy colocation” and “data 
+interconnection” and “data colocation” may be helpful to differentiate these terms, although they are not in 
+common usage in the energy or data sectors. 
+
+--- PAGE 3 ---
+ 
+  
+ 
+3
+Equinix’ interest is not limited to its own behalf, but on behalf of the clients it serves in those 
+data centers, which, as noted above, range from including the world’s largest cloud platforms, 
+financial institutions, AI developers, communications companies, entertainment companies, and 
+public sector bodies.  
+ 
+The range of data center clients, as broad as they are, does not begin to explain how 
+important data centers have become to our economy, way of life and national security. Virtually 
+every financial transaction other than cash; key aspects of our education, medical, and other 
+social services; the communications and entertainment we enjoy; and, of greatest relevance to the 
+Commission’s domain, a significant and growing proportion of the regulation and operations of 
+the grid itself flow through data centers (including, we might add, comments filed in this docket). 
+Data centers are increasingly the medium through which our economy, including much of the 
+energy sector, and much of our daily lives occurs.  
+ 
+Data centers are extremely diverse, in terms of physical plant configurations, business 
+models, geographical location, and relative proximity to load centers. Much of the recent press 
+on data centers has focused on one type, the “hyperscale” dedicated AI training facilities that are 
+increasingly planned in terms of gigawatts of energy need rather than megawatts. As those types 
+of data centers are designed to develop AI models, rather than enabling provision of services to 
+customers with demanding needs, they have greater flexibility in terms of location and may be 
+located relatively far from energy load centers where land and often energy may be more 
+accessible. However, the vast majority of data centers, such as colocation and edge data centers, 
+must be located as close to the businesses and public entities that they serve as possible. 
+Unsurprisingly, those locations are generally in the heart of load centers. 
+ 
+It may serve the Commission’s interests and the issues central to this docket to more 
+deeply explore the broad and diverse taxonomy of data centers and their business models as this 
+proceeding progresses. Since colocation data centers are so central to the economy but are much 
+less well-known outside of the data sector itself, we offer a brief explanation.  
+ 
+Colocation facilities allow a diverse range of entities, from smaller firms and public 
+entities to Fortune 500 companies, to house their own IT infrastructure within a single energy-
+efficient, secure, professionally and neutrally managed environment. The most densely 
+connected colocation data centers house hundreds of customers and thousands of data 
+interconnections. Physical proximity of the colocation facilities to customer locations, and of the 
+customers’ own IT infrastructure to each other, allows the swift and secure interchange of data 
+essential to the operation of modern economies. Within data colocation facilities, customers can 
+“peer” or directly interconnect enterprise-to-enterprise using physical cross connects (fiber optic 
+cables) to facilitate private data transfer from one entity to another. This capability is highly 
+valuable because it avoids the security, resiliency, bandwidth, and latency challenges posed by 
+the broader internet, issues that make the broader internet incompatible with the needs of many 
+mission-critical enterprise services, and even where potentially compatible often otherwise 
+unfavorable. 
+ 
+At this juncture of the proceeding, the most salient consideration for the Commission is 
+that within the broad class of large load customers, which itself is extremely diverse, data centers 
+
+--- PAGE 4 ---
+ 
+  
+ 
+4
+and their business models are highly heterogenous, serve different roles in our economy and 
+national welfare, and have differing needs and capabilities with respect to their interactions with 
+the energy system. We urge the Commission to exercise caution to avoid instituting inadvertent 
+discrimination between data center types and business models as it considers large load 
+interconnection rules. Fortunately, the Commission’s long-held prioritization of advancing 
+nondiscriminatory competition to deliver higher performance at least cost, including its efforts to 
+unbundle energy products, will serve the Commission extremely well with the issues presented 
+before it in this docket. 
+ 
+ 
+B. Coordination Across Jurisdictions is Key to Both Efficient & Timely Energy System 
+Investments and Large Load Interconnection 
+ 
+ 
+We recognize that long-standing jurisdictional issues between the federal, state and local 
+governments are implicated by the Proposed ANOPR. While we do not opine as to appropriate 
+jurisdictions to address energy interconnections of large loads, as an organizing principle we 
+suggest that these issues are too important, too urgent and too interrelated for jurisdictions to act 
+in an uncoordinated fashion.  
+ 
+At a time when our energy system faces its greatest need for investment in decades, 
+efficiently integrating large loads to provide maximum benefit at optimal cost for all grid users is 
+imperative. Study after study has recognized substantially increased investment in our energy 
+system will be required to meet substantially increasing needs.4  While large loads are not the 
+sole driver of sharply increased load growth forecasts, it is clear the increases in demand they 
+represent will be very significant.5  
+ 
+The impact of large load growth is, at the very least, highly likely be transformative to 
+our energy system. If large load growth is recognized as an integral part of our future energy 
+system, rather than as a separate and independent consideration, that transformation could be 
+harnessed to contribute to a more reliable, resilient and affordable energy system. A recent study 
+by Lawrence Livermore National Labs underlines the potential for load growth to dampen, rather 
+than accelerate, rate increases, finding: 
+ 
+ “[G]rowth in recent years (through 2024) has tended to reduce average retail electricity 
+prices. … states with the highest load growth experienced reductions in real prices, 
+whereas states with contracting loads generally saw prices rise.”6  
+ 
+This empirical result should not be surprising and matches the long understood theoretical 
+relationship between load factor and system costs. Adding new large loads with higher load 
+ 
+4 See, e.g., Wilson, Zimmerman & Gramlich, “Strategic Industries Surging: Driving US Power Demand” at 9 – 15 
+(Grid Strategies, Dec. 2024). 
+5 Id. at 3 (concluding, with respect to load growth, that “[t]he main drivers are investment in data centers and 
+manufacturing”). 
+6 Wiser, O’Shaughnessy, Barbose, Cappers & Gorman, “Factors Influencing Recent Trends in Retail Electricity 
+Prices in the United States,”38 The Electricity Journal 107516 at 5-6 (Oct. 2025), available at 
+https://pdf.sciencedirectassets.com/272016/1-s2.0-S1040619025X0004X/1-s2.0-S1040619025000612/main.pdf   
+ 
+
+--- PAGE 5 ---
+ 
+  
+ 
+5
+factors than the system as a whole will incrementally increase system load factor and drive down 
+system cost. Load growth from large high load factor loads places strong downward pressure on 
+rates that can offset other factors like inflation, policy, and shifting fuel costs that often push in 
+the opposite direction. Moreover, as energy system investment needs grow separate and apart 
+from large load growth, overall rate pressures would be relieved to the extent large loads can 
+help amortize the cost of those investments. 
+ 
+With the need for energy investments rising and energy affordability concerns rising, if 
+anything, at an even faster pace, it seems obvious the energy system and national interests at 
+issue would be best served if relevant governmental entities worked in concert to develop more 
+uniform approaches to optimally integrating large loads. The pace of integrating large loads 
+needed to serve the national interests identified in the Proposed ANOPR cannot wait for 
+jurisdictional debates to be settled or for lengthy, uncoordinated procedural processes to work 
+their way to conclusion. In light of the stakes at hand, the collective insights and coordinated 
+approaches of all jurisdictions is needed to achieve national, state and local priorities.  
+ 
+Questions:  
+ 
+1. How Can This Proceeding Maximize Potential Benefits of Large Loads to the 
+Broader Energy System and its Customers? 
+ 
+A recent trend towards rules and policies seeking to isolate large loads apart from the 
+existing system undermine the basic network effects and returns to scale that have increased 
+system efficiency and reliability and reduced individual customer rates for over a hundred years. 
+At this time, with an energy system under unprecedented stress, it would be particularly perverse 
+to miss opportunities for symbiotic benefit of large load customers and the broader grid.  
+ 
+At a minimum, rather than incentivizing data centers to make investments in energy 
+equipment that focus only on their needs, it seems most prudent to encourage efficient 
+investments that meet large load needs and, where possible, broader electricity customer needs as 
+well. The basic value proposition of interconnected grids is the shared use of infrastructure and 
+services to drive down costs and increase reliability. Stated simply: a generation or storage 
+resource designed solely to serve one specific load behind the meter may miss investment 
+opportunities in resources sufficient to serve that specific load’s need as well as the broader grid, 
+at only incremental (or potential no) additional cost. To achieve these important efficiencies, cost 
+allocation for large load interconnections must follow suit: where costs incurred to interconnect a 
+large load serve only to benefit that load, of course the new large load should bear those costs. 
+Where costs incurred provide broader benefit, however, cost allocation should follow the 
+beneficiary pays principle, creating an economic signal that maximizes benefits and minimizes 
+costs for all customers. 
+ 
+With this in mind, one of the most important questions before the Commission is how 
+any interconnection rules it may adopt could promote economically optimal outcomes, while at 
+the same time avoiding complexities and delays that could deter the important national 
+objectives outlined in the Proposed ANOPR and the Secretary’s letter to the Commission. We 
+again suggest the best course would be for the Commission to work in concordance with state 
+
+--- PAGE 6 ---
+ 
+  
+ 
+6
+and local counterparts on interconnection approaches that incentivize optimal economic 
+outcomes, while minimizing the time and complexity of energy interconnections.  
+ 
+ 
+2. Flexibility is Critically Important, but Why Adopt Out-of-Market Preferences 
+Solely for Curtailable, Colocated or Hybrid Facilities? 
+ 
+ 
+A recent paper, entitled “How DOE’s Proposed Large Load Interconnection Process 
+Could Unlock the Benefits of Load Flexibility,” does an outstanding job of outlining how 
+flexible demand can reduce transmission, distribution and capacity needs, all of which otherwise 
+tend to contribute to the time and cost of energy interconnections for large loads.7  Without a 
+doubt, demand flexibility has an important role to play in accelerating energy interconnection of 
+large loads at reduced cost, as Principle Seven of the Proposed ANOPR suggests in promoting 
+flexibility by the large load itself or its colocated or hybrid energy resources.8  However, as the 
+ANOPR also notes, the Commission has advanced unbundling products for many decades.9  
+ 
+The purpose of unbundling, of course, is to enable market-driven solutions utilizing 
+competition to spark innovation, reduce costs, and deliver greater efficiencies. It is not clear to us 
+why the flexibility that could clearly offer our energy system such great benefit must, or even 
+should, be either incorporated into the large load itself or necessarily located behind the same 
+interconnection. In fact, artificially constraining flexibility options to the those produced by large 
+load itself could clearly create uneconomic outcomes by as much as orders of magnitude, as the 
+Nicholas Institute paper observes.10   
+ 
+The universe of flexible resources that large load energy interconnection rules should 
+encompass, and the nature of any incentives granted for inclusion of flexibility within large load 
+energy interconnection requests, are both worthy of serious consideration. 
+ 
+a) The Commission Should Enable Optimal Economic Outcomes, Including All 
+Flexibility Options that Mitigate Interconnection Timelines and Costs 
+ 
+From a grid operations, transmission upgrade, or incremental energy need perspective, it 
+is irrelevant whether a large load is curtailed, backup or other co-located generation reduces the 
+customer’s draw from the grid, or other load, generation or storage in sufficient proximity 
+ 
+7 Farmer et al, “How DOE’s Proposed Large Load Interconnection Process Could Unlock the Benefits of Load 
+Flexibility Considerations for Rulemaking” at Table 1 and associated text (Duke Nicholas Institute for Energy, 
+Environment & Sustainability (Nov. 2025)(“Nicholas Institute”), available at 
+https://nicholasinstitute.duke.edu/sites/default/files/publications/how-does-proposed-large-load-interconnection-
+process-could-unlock-benefits-load-flexibility.pdf  
+8 Proposed ANOPR at ¶ 24. 
+9 Id. at ¶ 3. 
+10 Nicholson Institute at n. 11, citing Luminary Strategies’ finding that “AI data centers’ value of lost load could be 
+roughly $250,000/MWh, compared to $20,000/MWh for large industrials, $10,000/MWh for midsized commercial 
+and industrials; and $5,000/MWh for residential customers,” and Glen Spry for the proposition that “the value of 
+compute commonly exceeds $750 to $2000/MWh, while compensation for grid services might range from $155 to 
+$340/MWh.” 
+ 
+
+--- PAGE 7 ---
+ 
+  
+ 
+7
+reduces draws from the grid. Enabling the most economic solutions capable of addressing the 
+violations or constraints that would otherwise drive the need for incremental transmission, 
+storage, generation or curtailment would be most consistent with the Commission’s long-held 
+economic and market-driven approach. Enabling a wide range of flexible resources to be paired 
+with large load interconnection requests would not only spark competition and innovation; it 
+would enable lower overall costs and potentially broader benefits. 
+ 
+For example, while some data centers may be located in areas that are amenable to on-
+site generation and/or storage, others, such as those that must be located in very close proximity 
+to financial sector, national security, or other critical uses that demand the absolute minimum 
+security risk and data latency, may not. Those data centers located in dense metropolitan areas 
+should be able to tap into the wealth of flexibility opportunities that surround them, creating a 
+mutual benefit for those commercial, industrial or even residential users that could receive 
+enhanced energy equipment or could easily absorb curtailment at a much lower economic and 
+performance cost.  
+ 
+Failure to enable interconnection customers to avail themselves of the least expensive 
+effective options would not only be contrary to the Commission’s economic precepts: it would 
+inadvertently introduce discrimination between large load interconnection customers. Penalizing 
+those large loads that, for national security, financial sector or other reasons must maintain 
+extremely high up-time, and for those same reasons are geographically constrained to areas that 
+have limited ability to incorporate backup or co-located generation, would be contrary to national 
+interests. 
+ 
+To enable the most economic solutions to issues that might otherwise require timely and 
+expensive incremental energy system investments, we suggest that large load interconnection 
+customers should be allowed to include what could be termed “aggregated resource” proposals in 
+their interconnection requests. So long as a large load is contracted with and can deliver a 
+solution that resolves or mitigates the constraints and violations that would otherwise trigger 
+incremental energy system costs, that aggregated proposal should be studied as part of the large 
+load interconnection request. This approach would necessitate study transparency requirements 
+that allow large load interconnection customers to understand the specific constraints and 
+resulting incremental energy system investments their energy interconnection might cause. 
+Interconnection processes should give large load interconnection customers an opportunity to 
+respond to study results and bring forth solutions that could avoid, defer, or mitigate the need to 
+build upgrades or make other incremental investments.  
+ 
+b) Flexibility is Its Own Reward: Advancing Timelines and Reducing Costs Are 
+Appropriate Market-Driven Incentives, While Processing Priorities Are Not. 
+ 
+Flexibility, including demand response, co-located or hybrid generation and storage, or 
+other measures incorporated “aggregated resource” packages, all have much to offer in reducing 
+costs and accelerating interconnection timelines, and should be encouraged. Providing that study 
+frameworks accurately model and value the relevant operational characteristics of the proposed 
+large load along with its aggregated flexibility resources, it is not clear to us why study queue 
+prioritization or any other exogenous benefit is necessary or appropriate.  
+
+--- PAGE 8 ---
+ 
+  
+ 
+8
+ 
+The incentives of reduced interconnection time and expense resulting from deferred, 
+avoided or minimized system upgrades are powerful incentives that should drive technological 
+and commercial innovation. Ultimately, flexibility, hybrid pairings, or any other aggregated 
+interconnection proposal can and should provide their own reward. By collectively presenting a 
+lower burden (or even a valuable asset) to the energy system, the interconnection customer 
+should reduce its costs and benefit from faster interconnection, without need for an out-of-market 
+administrative processing priority. Non-market advantages of one type of flexibility over 
+another, in contrast, bears great risk of unintended discrimination. 
+ 
+We recommend against introducing study prioritization frameworks. In our experience, 
+operating in 37 countries around the world—including many markets where such frameworks are 
+in place—such approaches introduce considerable room for fluctuating policy objectives to 
+muddy economic signals, and to increase uncertainty, associated financing costs, and 
+interconnection timing. Consistent with the Commission’s precedent, load and supply 
+interconnection queue processes are best grounded in specific technical and financial criteria that 
+enable competition and drive innovation, efficiencies and reduced cost. 
+ 
+ 
+V. 
+Conclusion 
+ 
+ 
+Equinix again applauds the Department of Energy and the Commission for their initiative 
+in launching this proceeding, and appreciates this opportunity to address such urgent and 
+important issues for our energy system and our economy. We ask that the Commission keeps the 
+following considerations in mind as it weighs potential large load interconnection processes. 
+ 
+• Given the transformative impact large loads are certain to have on our energy system, as 
+well as the rapidly growing needs for energy system investments, large load 
+interconnection processes should enable system optimal investments consistent with 
+minimizing interconnection timelines and costs. 
+• Given the urgency of these issues, the Commission and all relevant jurisdictions should 
+strive to work together, adopting more uniform approaches that maximize benefits. 
+• Given the great value of increasing flexibility, the heterogenous nature of large loads and 
+the risk of introducing inadvertently discriminatory measures, as well as the benefits of 
+enabling a broad array of customers and resources to contribute flexibility, large load 
+interconnection processes should allow interconnection customers to offer aggregate 
+resource packages that hold reasonable potential to minimize interconnection costs and 
+timelines. 
+• Given that flexibility is its own reward, by avoiding or minimizing costs and time of 
+building incremental upgrades, no administrative study prioritization or other exogenous 
+incentives are warranted, and risk inadvertent discrimination. 
+ 
+
+--- PAGE 9 ---
+ 
+  
+ 
+9
+We thank the Commission for its consideration of these comments. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Respectfully submitted, 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   /s/ Cy McGeady   
+Cy McGeady 
+Head of Energy Policy 
+ 
+ 
+Equinix, Inc. 
+700 K St NW, Suite 600 
+Washington, DC 20001 
+1.585.747.7411 
+cmcgeady@equinix.com 
+ 
+ 
+ 
+ 
+ 

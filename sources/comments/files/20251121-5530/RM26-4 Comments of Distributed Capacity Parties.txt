@@ -1,0 +1,328 @@
+--- PAGE 1 ---
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+ 
+Interconnection of Large Loads to the 
+Interstate Transmission System 
+ 
+ 
+Docket No. RM26-4-000 
+  
+ 
+JOINT COMMENTS OF THE DISTRIBUTED CAPACITY PARTIES 
+ 
+In response to the above captioned Advanced Notice of Proposed Rulemaking (“Large 
+Load Interconnection ANOPR”), Cloverleaf Infrastructure (“Cloverleaf”), Spark Community 
+Investment Company d/b/a Sparkfund (“Sparkfund”), and Voltus, Inc., (“Voltus”)1 (collectively, 
+the “Distributed Capacity Parties”) submit the following comments highlighting the capabilities 
+of demand-side and advanced technologies to support the rapid interconnection of large loads. In 
+light of this historic moment, the Distributed Capacity Parties respectfully urge the Federal 
+Energy Regulatory Commission (“FERC” or “Commission”) in any subsequent rulemaking2 to 
+direct the Regional Transmission Organizations/Independent System Operators (“RTO/ISOs”) to 
+develop mechanisms for granting expedited interconnection studies to large loads that provide 
+2 The Distributed Capacity Parties acknowledge that parties may contest FERC’s jurisdiction to issue a Notice of 
+Proposed Rulemaking (“NOPR”) on large load interconnection.  The Distributed Capacity Parties do not take a 
+position on FERC’s jurisdiction. 
+1 Voltus is a leading distributed energy resource (“DER”) aggregator that provides a platform to enable consumers to 
+connect their distributed energy resources including demand response to energy markets. Voltus identifies 
+distributed energy resources, develops the aggregations, bids into wholesale markets, dispatches DERs, and 
+performs the settling and reporting. Voltus operates aggregations of DERs on behalf of consumers in every ISO/RTO 
+market in the United States. 
+Page 1 of 8 
+ 
+
+--- PAGE 2 ---
+ 
+curtailable and/or dispatchable distributed assets (aka Distributed Capacity3) capable of 
+mitigating potential system constraints attributable to the new large loads. The ANOPR Seventh 
+Principle4 should include incremental Distributed Capacity in the form of load flexibility, 
+storage, and/or generation capacity whose location can address capacity and transmission 
+constraints projected to be caused by the new large loads, even if such capacity is located on the 
+distribution system.  
+Distributed capacity technologies include dispatchable resources such as load flexibility, 
+storage (e.g., 1-5 MW distribution-connected batteries), and distributed generation, as well as 
+advanced technologies like grid enhancing technologies. Distributed capacity technologies may 
+be located on the distribution system,5 whether behind the meter, in front of the meter, or 
+“around” the meter. Distributed capacity assets currently provide critical grid services at 
+wholesale,6 making them a critical tool today to accelerate large load interconnections. 
+I.​
+INTRODUCTION 
+Recognizing the impacts of large load additions on the transmission system and 
+wholesale rates, and responding to the observable step-change in the volumes and types of 
+6 See, e.g., Stephanie Bieler, Cara Goldenberg, Avery McEvoy, Katerina Stephan, Alex Walmsley, Aggregated 
+Distributed Energy Resources in 2024: The Fundamentals, NARUC/NASEO/RMI p. 30 (July 2024), available at 
+https://pubs.naruc.org/pub/98FBE453-02C0-1FE3-0249-3A456BA1E3E7 (indicating a minimum set of bulk power 
+system grid services that aggregated distributed energy resources provide today).  
+5 FERC has defined a DER as “any resource located on the distribution system, any subsystem thereof or behind a 
+customer meter. These resources may include, but are not limited to, electric storage resources, distributed 
+generation, demand response, energy efficiency, thermal storage, and electric vehicles and their supply equipment.” 
+Order No. 2222, 172 FERC   61,247, P 1 n.1 (2020). In the same order, FERC further noted, “The revised definition 
+of distributed energy resource that we adopt in this final rule is technology-neutral, thereby ensuring that any 
+resource that is technically capable of providing wholesale services through aggregation is eligible to do so, which 
+enhances competition in the RTO/ISO markets and, in turn, helps to ensure that these markets produce just and 
+reasonable rates.” Id. at P 114. 
+4 The Seventh Principle in the Large Load Interconnection ANOPR is: “Seventh, the interconnection study of large 
+loads that agree to be curtailable and hybrid facilities that agree to be curtailable and dispatchable should be 
+expedited. The system operator's ability to control such facilities through curtailment and/or dispatch must be 
+sufficient for the system operator to integrate the facility into both operations and system planning.”). 
+3 
+See, 
+e.g., 
+Andy 
+Lubershane, 
+“The 
+price 
+of 
+power 
+grids” 
+(Apr. 
+7, 
+2025), 
+https://steelforfuel.substack.com/p/the-price-of-power-grids.  
+Page 2 of 8 
+ 
+
+--- PAGE 3 ---
+ 
+planned new loads, the instant ANOPR seeks to standardize the large load interconnection 
+process to ensure “timely and orderly” interconnection. Several of the fourteen outlined ANOPR 
+principles deal with the study of hybrid or co-located load and generation arrangements. But 
+traditional generators will take years to build, even with massive capital investments by 
+hyperscalers and others seeking to connect new large loads.7  
+Distributed capacity assets are installed today across critical footprints, are readily 
+installable en masse, and may be aggregated into utility-scale assets on a timeline of months 
+rather than years.8 Wholesale market demand response—which is primarily commercial and 
+industrial load—has been contributing to affordability and reliability for over a decade and can 
+scale rapidly. In 2023 alone, the Southwest Power Pool (“SPP”) added approximately 431 MW 
+new demand response resource capability, equivalent to a large power plant.9 Another 500 MW 
+power plant could be added by interconnecting to the distribution system a mere 200 batteries of 
+1-5 MW size. Residential resources can also be mobilized: a recent report by Rewiring America 
+identifies an additional 93 GW of needed data center capacity through 202910 but also finds that 
+“hyperscalers could more than meet their total planned capacity needs by paying for battery 
+storage as well as rooftop solar for homes well suited for it.”11 Proving that distributed residential 
+11 Wyent et al. at 5. 
+10 Wyent et al. at 2. 
+9 FERC, 2024 Assessment of Demand Response and Net Metering, at 14 (Dec. 2024), available at 
+https://www.ferc.gov/news-events/news/ferc-staff-issues-2024-assessment-demand-response-and-advanced-meterin
+g.  
+8 See Cora Wyent, Miki Verma, and Wael Kanj, Homegrown energy: How household upgrades can meet 100 
+percent 
+of 
+data 
+center 
+demand 
+growth, 
+Rewiring 
+America 
+(2025), 
+available 
+at 
+https://www.rewiringamerica.org/research/homegrown-energy-report-ai-data-center-demand; see also Jesse Cohen, 
+Lauren Shwisberg, Mark Dyson, How Virtual Power Plants Can Help the United States Win the AI Race (Nov. 6, 
+2025), available at https://rmi.org/how-virtual-power-plants-can-help-the-united-states-win-the-ai-race.  
+7 See, e.g., Tom Rutigliano and Claire Lang-Ree, Large Load CIFP: NRDC Solution Components, Natural 
+Resources 
+Defense 
+Council 
+p. 
+2 
+(Oct. 
+14, 
+2025), 
+https://www.pjm.com/-/media/DotCom/committees-groups/cifp-lla/2025/20251014/20251014-item-03c---nrdc-prop
+osed-options.pdf (presentation given, as part of PJM Interconnection LLC’s recent Large Load Addition Critical 
+Issue Fast Path process, highlighting time-lags for new generation projects and associated price relief, and noting 
+that “a new project that was ready to go the day after the 2025/26 BRA results will not realistically lower 
+capacity prices until 2033/34.”). 
+Page 3 of 8 
+ 
+
+--- PAGE 4 ---
+ 
+assets can add capacity fast, Arizona Public Service’s Cool Rewards thermostat program has 
+brought 40 MW of capacity annually in recent years, and Ontario tapped 90 MW of household 
+flexibility in just six months.12 If the Commission truly wants to bring all American resources to 
+bear in service of interconnecting large loads, Distributed Capacity is one of the only resource 
+types that can be enlisted on a timeline that matches the urgency of the challenge at a scale that 
+counts.   
+To fully realize these benefits at wholesale and meet the intent of the ANOPR—and 
+consistent with FERC’s non-discriminatory treatment of such resources as developed in Order 
+Nos. 719, 745, 841, and 222213—any subsequent rulemaking should promulgate guidelines on 
+how distributed resources can be leveraged to reduce grid constraints in key regions, thereby 
+freeing headroom for appropriately sited new large loads. The following section of these 
+comments offers guidelines within the framework of the ANOPR’s fourteen principles.  
+II.​
+GUIDELINES 
+TO 
+ENABLE 
+EFFICIENT 
+UTILIZATION 
+OF 
+DISTRIBUTED CAPACITY  
+A.​
+Interconnection Reform Should Be Defined to Solve System 
+Constraints at the Level at Which They Arise. 
+​
+Large loads face interconnection delays for several reasons, including insufficient 
+capacity to supply new load reliably, the need for costly network upgrades to bring incremental 
+peak power to the location of new loads, and the additional time required for Transmission 
+Owners (“TOs”) to study the foregoing system impacts. The current ANOPR targets these 
+mechanisms under the basic premise that load and generation configurations that add less strain 
+13 Order No. 719, 125 FERC   61,071 (2008); Order No. 745, 134 FERC   61,187 (2011); Order No. 841, 162 FERC 
+  61,127 (2018); Order No. 2222, 172 FERC   61,247 (2020).  
+12 Cohen et al., supra note 8. 
+Page 4 of 8 
+ 
+
+--- PAGE 5 ---
+ 
+to the transmission system should be prioritized for interconnection. To achieve this 
+prioritization, the ANOPR states that load and generation should be studied for interconnection 
+holistically (ANOPR Principle Three), that interconnecting load bringing generation should be 
+studied based on the actual volume of its net withdrawal or injection needs (ANOPR Principle 
+Five), and that configurations imposing less system stress should be incentivized with the 
+“carrot” of expedited interconnection (ANOPR Principle Seven). 
+​
+These comments endorse the above principles while expanding on them to ensure that 
+“electrically proximate” or “adjacent” grid assets—assets that can mitigate the constraints 
+imposed by new loads where those constraints actually occur—are also considered in study 
+prioritization, netted against load withdrawals for study purposes, and included in 
+speed-to-power incentive structures.14 
+B.​
+New Large Loads Should Be Studied Together With Distributed 
+Capacity in the Relevant Footprint. 
+New large loads that bring their own capacity—in whatever form—should be studied 
+together with that capacity. Data center developers, hungry for solutions, have already proposed 
+Bring-Your-Own Capacity constructs.15 To this end, the existing ANOPR Principle Three, “load 
+and hybrid facilities should be studied together with generating facilities,” should explicitly 
+15  See Jeff St. John, Can crowdsourcing help solve the data-center power crunch? (last accessed Nov. 21, 2025), 
+available 
+at 
+https://www.canarymedia.com/articles/virtual-power-plants/voltus-supply-data-center-energy-needs-cloverleaf 
+(“The right way to serve data center load quickly, at scale, and less expensively and more sustainably, is to leverage 
+the existing resources on the grid as efficiently as possible,” said Brian Janous, Cloverleaf’s chief commercial 
+officer.”). 
+14 The effective use of distributed capacity to support large-load interconnections depends on close coordination with 
+the distribution utilities that own and operate the underlying systems. Because processes to integrate distributed 
+capacity are fundamentally state-jurisdictional, utilities retain responsibility for ensuring that any distributed 
+resource deployed to mitigate local or transmission constraints can be safely integrated into the distribution system. 
+For this reason, FERC could direct the RTOs/ISOs to consider distributed capacity in connecting large loads, while 
+specifics would likely involve contractual arrangements between a distribution utility, the large load, and the 
+distributed capacity provider. 
+Page 5 of 8 
+ 
+
+--- PAGE 6 ---
+ 
+include study of incremental resources in the relevant grid area,16 whether or not those resources 
+look like traditional utility-scale power plants. The ANOPR notes the rationale that “siting a 
+large load near or at the same point of interconnection as a new generating facility could reduce 
+the network upgrades needed to interconnect only the load or only the generating facility.” 
+Similarly, siting a new large load while considering the location of installed but underutilized 
+grid resources and proposed aggregations of the same can save on network upgrades. For 
+instance, “latent” demand flexibility can meet incremental capacity needs by reducing power 
+draw from the grid, thereby freeing up network capacity. Operationally, a hyperscaler could 
+contract with a battery installer to develop new batteries in the area of a relevant transmission 
+and/or capacity constraint. Studying this contracted project together with the load’s 
+interconnection could be within the purview of ANOPR Principle Three.  
+C.​
+Large Loads That Bring Locationally Relevant New Capacity Should 
+Receive Expedited Interconnection. 
+The existing ANOPR Principle Seven asserts that “the interconnection study of large 
+loads that agree to be curtailable and hybrid facilities that agree to be curtailable and 
+dispatchable should be expedited.”17 This Principle recognizes the mitigated transmission and 
+capacity impacts of sites whose withdrawal or injection to the grid is responsive to a signal from 
+the system operator during transmission-constrained periods and system peaks, and finds that 
+load that is willing today to interconnect under these curtailment/dispatchability conditions 
+should be given expedited treatment.  
+However, to realize these benefits, new capacity supporting large loads need not be 
+physically co-located at the facility, but can be distributed across the geographic area within 
+17 Large Load Interconnection ANOPR at P. 24.  
+16 The “relevant footprint” would vary by RTO/ISO. 
+Page 6 of 8 
+ 
+
+--- PAGE 7 ---
+ 
+which the new load will impact system constraints, provided that the system operator has the 
+requisite level of control to integrate the facility into operations and system planning.18  
+ANOPR Principle Seven should be broadened to leverage all available resources.  The 
+Principle as written does not recognize the reduced impact of an interconnecting load that brings 
+on (contracts for) demand-side flexibility or capacity not physically “within the fence-line” of 
+the facility19 but still appropriately located to relieve constraints. Such capacity can be considered 
+in tranches: a new load may have local impacts that require some amount of flexibility or 
+capacity near or at the same point of interconnection, while it is sufficient to meet additional 
+constraints with resource(s) within the load’s delivery zone or wholesale market region. Subject 
+to these constraints, capacity—including batteries, generation, and demand response 
+(DR)—should be geographically transferable in the form of capacity credits as defined by the 
+wholesale market, or within the TOs system planning paradigm. 
+D.​
+Existing Barriers to Distributed Capacity Must Be Addressed 
+To unlock the capabilities of existing distributed capacity, barriers to participation by 
+aggregated resources in capacity, energy, and ancillary service markets should be rectified. 
+Delays in Order No. 2222 implementation, utility data access issues, and other challenges 
+significantly limit the development of latent flexibility today. As this ANOPR demonstrates, the 
+need to unlock latent load flexibility and distributed generation that can rapidly alleviate 
+transmission and capacity scarcity is more urgent than ever. In today’s unprecedented load 
+growth environment, and with new utility scale generation and network upgrades often years 
+19 See, e.g., Elizabeth K. Whitney, “This Week in Hyperscaling: Deep Dive on Data Center Flexibility,” (Nov. 5, 
+2025),  https://elizabethkwhitney.substack.com/p/this-week-in-hyperscaling-deep-dive. 
+18 Such capacity configurations may be termed “electrically proximate” or “adjacent” and should be understood as 
+an extension of co-location. 
+Page 7 of 8 
+ 
+
+--- PAGE 8 ---
+ 
+away, every kilowatt-hour of “bridge” capacity counts. The industry is ready and willing to 
+provide this distributed capacity as policy choices allow.  
+III.​
+CONCLUSION 
+ A wide variety of distributed capacity technologies can support the expedited 
+interconnection of new loads without the need for physical co-location. Interconnection reform 
+should seek to take advantage of this opportunity. The Distributed Capacity Parties thank the 
+Commission for its consideration of these comments and its recognition of the criticality of an 
+all-of-the-above approach that incentivizes not only new generation but also latent and quickly 
+deployed Distributed Capacity to support the interconnection of new large loads.  
+ 
+ 
+ 
+ 
+Respectfully submitted, 
+ 
+ 
+/s/ David Berry 
+David Berry 
+Chief Executive Officer 
+Cloverleaf Infrastructure 
+712 Main Street 
+Houston, TX 77002 
+713.578.0148 
+Dberry@cloverleafinfra.com   
+/s/ Allison Wannop 
+Allison Wannop 
+Vice President, 
+Regulatory Affairs & Wholesale 
+Markets 
+Sparkfund 
+617.548.6221 
+allison.wannop@sparkfund.co  
+/s/ Kimaya Abreu 
+Kimaya Abreu 
+Sr. Manager, Regulatory 
+Affairs 
+Voltus, Inc. 
+2443 Fillmore St. 
+San Francisco, CA 94115 
+609.994.7686 
+kabreu@voltus.co  
+ 
+Dated: Nov. 21, 2025 
+ 
+ 
+Page 8 of 8 
+ 

@@ -1,0 +1,29 @@
+
+
+Nathan Peterson, Champaign, IL.
+Hello, I work for the Department of Defense as an electrical engineer protecting critical infrastructure. I'm considering the scenario of a malicious actor controlling large loads with the specific intent to cause disruption to the US electrical grid in a war-like scenario (where market-based fines are not effective deterrents to malicious actors). With that perspective: 
+
+1) “…should only apply to new loads greater than 20 MW and, for hybrid facilities, where the load is greater than 20 MW.”
+   a) Is there a loophole for a malicious actor to meet these requirements but have an outsized threat to the grid? For example, if a hybrid facility has 100MW of load and 80MW of generation (to have a sum total of 20MW), they can provide an outsized threat to the grid if one day they simply turn off their on-site generators to slam the full 100MW load onto the grid.
+   b) Can you clarify whether modular loads (e.g., phased data centers with multiple 10–15 MW modules) that individually fall below 20 MW but share a POI will be aggregated? Recommend anti‑fragmentation rules that aggregate affiliated requests within a time and facility/geographic window.
+
+2) “…the Commission's jurisdiction should be limited to interconnections directly to transmission facilities…”
+   a) Is there a loophole for malicious actors to get past these requirements if data centers are connected to “distribution” wiring?
+      1) I understand FERC typically has jurisdiction only over transmission lines, but if there is a loophole for dangerous connection of large loads to distribution wiring, is there an possibility to make a formal recommendation to those agencies who do have the jurisdiction?
+
+3) “Sixth, any hybrid interconnection shall be required to install the system protection facilities necessary to prevent unauthorized injections or withdrawals that exceed the respective rights. We seek comment on whether other operational limitations should be considered. We also seek comment on the minimum technical requirements for such system protection facilities…”
+   a) While I am ok having the facilities pay for it, I have significant concern that allotting the installation and operation of protection devices to the load facility would not protect against malicious actors since they could simply bypass these protections on their facility. I would recommend at least the local grid operator, install, maintain, and operate the protection.
+   b) Studies would need to be done, but I suspect minimum protection response times and transient voltage/current/power/"rate of change of X" capacities will be required.
+
+4) I recommend that large‑load interconnection procedures mandate probabilistic and scenario‑based studies that include coordinated cyber‑physical attack cases, not just independent customer behavior cases, and that these scenarios be developed in consultation with agencies like NERC, Department of Defense, E‑ISAC, and RTO/ISO planners.
+
+5) Where the ANOPR calls for “system protection facilities” to prevent unauthorized injections or withdrawals at hybrid facilities, I propose that a hybrid interconnection customer should be subject to penalties for unauthorized injections or withdrawals (outside of a certain reasonable minimum threshold).
+
+6) Recommend the possibility that curtailment may be mandatory at the system operator’s instruction (for emergency situations) and request clarity on how curtailment priority will be established relative to other resources.
+
+7) If a large load sites near a generator solely to reduce network upgrades, require demonstration of credible commercial arrangements and aligned in‑service dates (to avoid que piggybacking).
+
+8) From a civilian perspective, are you considering incentive strategies to encourage less abrupt load changes for large loads like data centers?
+
+Thank you for your time and consideration.
+

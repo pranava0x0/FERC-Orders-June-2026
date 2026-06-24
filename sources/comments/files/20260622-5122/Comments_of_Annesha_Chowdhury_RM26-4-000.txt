@@ -1,0 +1,96 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA
+BEFORE THE FEDERAL ENERGY REGULATORY COMMISSION
+Interconnection of Large Loads to the
+Interstate Transmission System
+Docket No. RM26-4-000
+COMMENTS OF ANNESHA CHOWDHURY
+I. Introduction and Statement of Interest
+I respectfully submit these comments in Docket No. RM26-4-000 concerning the interconnection 
+of large loads to the interstate transmission system. I am an artificial intelligence and data engineer 
+specializing in AI systems for electric grid resilience and interconnection. I hold a Master of 
+Science in Computer Science (Intelligent Systems) from the University of Texas at Dallas, am a 
+Senior Member of the IEEE, and have approximately seven years of production engineering 
+experience building large-scale data and AI systems at U.S. enterprises. I am the founder of 
+Crisisense, an AI platform in development that applies physics-constrained machine learning to 
+grid and critical-infrastructure decision support.
+I file these comments in my individual capacity as a technologist working directly on the problem 
+this proceeding addresses: how to integrate large new loads, including AI data centers, onto a 
+constrained  transmission  system  in  a  manner  that  is  timely,  orderly,  reliable,  and  non-
+discriminatory.  My  comments  focus  on  a  specific,  implementable  opportunity  that  the 
+Commission's record has not yet fully developed: the use of AI-assisted dynamic line rating and 
+physics-constrained  study  automation  to  accelerate  large-load  interconnection  without 
+compromising reliability.
+II. Summary of Recommendations
+1. The Commission should recognize AI-assisted dynamic transmission line rating, built on the 
+ambient-adjusted and dynamic rating foundation of Order No. 881, as a near-term tool for 
+surfacing latent transmission headroom that can accommodate large loads without waiting for new 
+line construction.
+2. Any acceleration of interconnection or System Impact Study timelines toward the proposed 60-
+day target should be paired with a requirement that automated or AI-assisted study tools be 
+validated against deterministic, physics-based engineering models, so that speed does not come at 
+the cost of reliability.
+
+--- PAGE 2 ---
+3. The Commission should encourage standardized telemetry and data-exchange practices that 
+make AI-assisted rating and study acceleration auditable and reproducible across transmission 
+providers.
+4. Flexible and curtailable large loads should be evaluated using real-time, consequence-aware 
+analytics, which can quantify the reliability value of their flexibility and support the faster study 
+track the ANOPR contemplates.
+III. Discussion
+A. AI-assisted dynamic line rating can surface existing headroom and reduce the need to 
+defer large loads pending new construction.
+A significant share of the interconnection delay facing large loads is not a physical absence of 
+capacity but an inability to see and use capacity that already exists. Transmission lines are 
+conventionally rated conservatively using static assumptions. Order No. 881's move toward 
+ambient-adjusted ratings established that ratings can and should reflect actual conditions. Building 
+on that foundation, AI methods that fuse real-time weather data with the IEEE 738 heat-balance 
+model can identify dynamic headroom on existing lines, which can meaningfully exceed static 
+ratings under favorable conditions. Where that latent headroom can be safely used, large loads can 
+be integrated faster and at lower cost than approaches that assume new construction is always 
+required. I recommend that the Commission expressly acknowledge AI-assisted dynamic line 
+rating as an eligible tool in the large-load integration toolkit.
+B. Faster study timelines must be coupled with physics-based validation to protect reliability.
+The  ANOPR  asks  whether  interconnection  studies  could  be  completed  within  60  days. 
+Compressing study timelines is achievable with software and machine learning, but pure data-
+driven models can produce results that are statistically plausible yet physically invalid, which in 
+grid operations can translate into reliability risk. The sound path is a hybrid, physics-constrained 
+approach: machine-learning components accelerate data ingestion and scenario generation, while a 
+deterministic engineering layer, such as power-flow and thermal models, validates every result 
+against physical law before it is relied upon. I recommend that, to the extent the Commission 
+encourages automated or AI-assisted study acceleration, it also direct that such tools incorporate a 
+physics-based validation layer and remain auditable, so that faster studies remain trustworthy 
+studies.
+C. Flexibility and curtailment commitments should be evaluated with real-time, consequence-
+aware analytics.
+
+--- PAGE 3 ---
+The ANOPR contemplates a faster track for large loads that agree to be flexible and curtail usage. 
+Determining how much reliability value a given flexibility commitment actually provides is itself 
+an analytical problem well suited to real-time modeling. Consequence-aware analytics can 
+quantify, for a specific location and system state, the headroom that a curtailable load frees up and 
+the reliability margin its flexibility preserves. Embedding this kind of analysis in the faster study 
+track would let the Commission and transmission providers extend expedited treatment on a 
+principled, measurable basis rather than a categorical one.
+D. Standardized, auditable data practices will make these tools usable across providers.
+The benefits described above depend on consistent access to the underlying telemetry, including 
+line conditions, weather inputs, and topology data. I recommend that the Commission encourage 
+standardized data-exchange and documentation practices for any AI-assisted rating or study tools, 
+so that their inputs and outputs are reproducible and auditable by transmission providers, 
+regulators, and affected stakeholders. Standardization also lowers the barrier for smaller providers 
+to adopt these methods.
+IV. Conclusion
+The need to integrate large loads, including AI data centers, in a timely and orderly manner is 
+urgent, and tools to do so reliably are largely available today. AI-assisted dynamic line rating and 
+physics-constrained study automation can help the Commission meet its timeliness goals while 
+preserving the reliability and non-discrimination principles at the center of this proceeding. I 
+appreciate the opportunity to comment and am available to provide further technical detail at the 
+Commission's request.
+Respectfully submitted,
+/s/ Annesha Chowdhury
+Annesha Chowdhury, M.S.
+Founder, Crisisense
+Irving, Texas
+anneshachowdhury71@gmail.com
+Dated: June 20, 2026

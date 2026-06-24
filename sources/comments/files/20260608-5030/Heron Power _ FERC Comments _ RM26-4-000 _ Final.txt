@@ -1,0 +1,264 @@
+--- PAGE 1 ---
+Heron Power Electronics — Comments, Docket No. RM26-4-000 — Page 1 
+UNITED STATES OF AMERICA 
+BEFORE THE FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+Interconnection of Large Loads 
+to the Interstate Transmission System 
+ 
+Docket No. RM26-4-000 
+ 
+ 
+COMMENTS OF HERON POWER ELECTRONICS COMPANY 
+ 
+ 
+I.  Introduction 
+Heron Power Electronics Company ("Heron") respectfully submits these comments in response to 
+the Commission's Notice Inviting Comments on the Secretary of Energy's Advance Notice of 
+Proposed Rulemaking ("ANOPR") regarding the interconnection of large loads to the interstate 
+transmission system. 
+Heron is a U.S. power electronics company developing solid-state transformer and grid-forming 
+inverter technology well-suited to large load AI data center interconnections. Our primary product, 
+the Heron Link, is a 5.5MVA medium voltage (34.5 kVAC) solid-state transformer that delivers 
+800 VDC output with integrated battery buffering to support grid ride-through, hold-up energy 
+reserve, and resolve flicker concerns for datacenters. Heron has also developed OpenVSM, an 
+open-source virtual synchronous machine software stack for grid-interactive inverters, enabling 
+inverter-based resources and large power electronics loads to provide the same stabilizing grid 
+services historically delivered by synchronous generators. The Heron Link will be manufactured 
+domestically at scale, in a California facility producing 40GW of units annually. 
+Heron's comments focus on five themes that the Commission's current ANOPR framework does 
+not fully address: (1) how the network risk of large datacenter loads can be mitigated by better 
+power delivery architectures; (2) why energy-integrated power conversion, not only co-located 
+generation, should be recognized as a valid compliance pathway for large load reliability 
+requirements; (3) that grid-forming large loads differ fundamentally from passive loads and should 
+be treated differently in interconnection and reliability rules; (4) how open, verifiable inverter 
+control architectures reduce interconnection study burdens and build the operator trust that the 
+interconnection queue currently lacks; and (5) how the Commission's technical standards directly 
+shape the domestic power electronics manufacturing base that the Department of Energy is seeking 
+to develop. 
+
+--- PAGE 2 ---
+Heron Power Electronics — Comments, Docket No. RM26-4-000 — Page 2 
+The stakes in this proceeding extend beyond interconnection procedure. Overly prescriptive rules 
+with generation mandates or lengthy interconnection studies that fail to recognize the capabilities 
+of modern power electronics to support the grid will produce longer queue timelines, higher costs, 
+and more network upgrades. These outcomes would negatively impact ratepayers and slow the 
+pace of AI infrastructure development that this administration has identified as a national priority. 
+The Commission's rules in this proceeding will either advance that goal or constrain it. The 
+technical pathway to interconnecting large AI loads quickly, affordably, and reliably exists today 
+— but only if the Commission's framework is designed to accommodate it. 
+ 
+II.  The Network Risk of Large Datacenter Loads Can be Mitigated by Better Power 
+Delivery Architectures 
+The Commission's ANOPR, NERC's Accelerated Large Load Action Plan, and NERC's Level 3 
+Alert issued May 4, 2026 converge on a common concern: AI data center loads introduce a 
+category of grid risk not contemplated by existing interconnection standards.  
+First, datacenter loads don’t ride through network disturbances. When grid voltage or frequency 
+deviates beyond tight thresholds, data hall UPS systems immediately and completely disconnect 
+compute load. In a grid with tens or hundreds of megawatts of co-located data center load, this 
+behavior is self-reinforcing, and a minor grid disturbance can trigger simultaneous disconnection 
+across multiple facilities, producing a sudden loss of load that exacerbates the very instability that 
+triggered the disconnection. NERC’s Level 3 Alert addresses this failure mode directly. Essential 
+Action #1(e) further requires planners to model the voltage and frequency relay parameters that 
+could isolate computational load from the bulk power system, reflecting NERC’s recognition that 
+the hair trigger protection settings embedded in existing data center electrical designs are 
+themselves a reliability risk. The July 2024 Northern Virginia event, in which 1.5 GW of data 
+center load disconnected simultaneously following a single upstream protection event, and 
+multiple analogous incidents in ERCOT illustrate the system-wide consequences when datacenter 
+UPS behavior at scale is left unmanaged. 
+Second, unlike traditional large loads, which draw power at relatively stable levels, unmitigated 
+AI training workloads cause facility-wide load swings of 30 to 150 percent of rated power within 
+milliseconds. Because all GPUs in a training cluster step through identical computational iterations 
+in lockstep, these swings are synchronized across tens of megawatts simultaneously.  
+The Commission should understand, however, that these problems are not inherent to AI data 
+centers. They are an artifact of legacy datacenter power delivery architectures. Conventional UPS 
+systems instantaneously take datacenter load off-grid in the presence of minor voltage or frequency 
+disturbances rather than ride-through, as power electronics-interconnected solar and batteries do. 
+In the traditional 480 VAC power chain — medium-voltage transformer, low-voltage switchgear, 
+UPS, and power distribution unit — AI training load transients pass through each conversion stage 
+and propagate to the point of interconnection point largely unattenuated.  
+
+--- PAGE 3 ---
+Heron Power Electronics — Comments, Docket No. RM26-4-000 — Page 3 
+A different architecture can eliminate these problems at the source. Heron's SuperBBU is a high 
+C-rate battery that couples directly to the data hall 800 VDC distribution power bus without an 
+additional conversion stage, enabling ride-through support and sub-millisecond response to 
+individual GPU-level load changes. Facility-wide training load swings that would otherwise 
+propagate as severe flicker or medium-voltage current oscillations are absorbed within the 800 
+VDC bus before they reach the network point of interconnection. The facility's power draw can be 
+smooth and ramp-controlled by the Heron Link solid-state transformer regardless of the AI 
+workload power dynamics, supporting the objectives embodied in NERC’s Level 3 Alert Essential 
+Action #1. Additionally, the architecture directly addresses customer-side ride-through 
+improvements that NERC’s Level 3 Alert Essential Action #5 calls for, through hardware that 
+makes destabilizing grid interactions physically impossible rather than behavioral commitments 
+or operational coordination. 
+The Commission's evolving reliability framework should distinguish between data centers 
+designed with integrated ride-through and load-smoothing capability and those without. Facilities 
+that can demonstrate, at the point of interconnection, that their power draw remains within defined 
+voltage & frequency ride-through, ramp-rate and ripple thresholds should be recognized as 
+meeting the AI training load stability requirements the Commission and NERC are developing, 
+without additional prescriptive equipment mandates. 
+ 
+III.  Energy-Integrated Power Electronics Should Be a Recognized Compliance Pathway 
+The ANOPR's framework for hybrid and co-located configurations (Principle 3) contemplates 
+generation assets co-located with large loads as the primary mechanism for fault ride-through and 
+load stability compliance. This is a valuable framework, but it describes only one of several 
+technically sound compliance architectures. 
+Energy-integrated power electronics achieve the same reliability outcomes through a different 
+mechanism: energy storage coupled directly to the datacenter 800 V DC distribution system 
+tethered via grid-forming controls to the medium-voltage interconnection. A Heron Link-equipped 
+facility illustrates this: the integrated SuperBBU storage provides 30 seconds of full-load hold-up; 
+IEEE 2800 and ERCOT NOGRR 282 ride-through requirements are satisfied natively by the 
+Heron Link hardware capability and grid-forming controls, without a separate generation asset on 
+site. 
+The Commission should update its reliability compliance framework to explicitly recognize 
+integrated power electronics solutions as a valid pathway alongside co-located generation. The 
+relevant test should be performance-based: does the facility meet specified ride-through duration, 
+ramp-rate, fault current, and voltage stability requirements at the point of interconnection? How it 
+achieves those outcomes — through co-located generation, integrated storage, solid-state controls, 
+or some combination — should be left to the developer's judgment. A prescriptive equipment-
+
+--- PAGE 4 ---
+Heron Power Electronics — Comments, Docket No. RM26-4-000 — Page 4 
+based framework would unfairly disadvantage solutions that achieve equivalent or superior 
+reliability outcomes through advanced power electronics rather than conventional generation 
+assets. 
+Performance-based standards also reduce costs. Co-located synchronous generation assets such as 
+gas peakers, microturbines, or diesel generators carry significant capital cost, permitting 
+complexity, fuel supply requirements, and ongoing maintenance obligations. Where energy-
+integrated power electronics can satisfy the same performance requirements at lower cost, 
+ratepayers benefit. FERC should write rules that allow the market to find that outcome. 
+ 
+IV.  Grid-Forming Large Loads Are a Grid Asset, Not Just a Reduced Liability 
+Most commentary in this docket frames large loads as a problem to be managed: they stress the 
+grid, shift costs to ratepayers, and require network upgrades to accommodate. The Commission's 
+framework correctly seeks to mitigate these effects through readiness requirements, curtailability 
+standards, and cost assignment principles. But this framing is incomplete. 
+A large load equipped with grid-forming controls is not merely a less-harmful version of a passive 
+load but can be a positive grid asset. At the point of interconnection, a grid-forming inverter-based 
+load behaves like a well-damped voltage-forming source — establishing a stable voltage and 
+frequency reference, providing inertial response, delivering harmonic damping, and generating 
+fault currents consistent with established protection relay coordination. These are the exact 
+services the grid is losing as synchronous machines are retired and replaced by grid-following 
+inverter-based resources and rectifier loads. NERC’s own reliability assessments have identified 
+declining synchronous inertia and the proliferation of grid-following IBRs as among the most 
+significant near-term risks to bulk power system reliability. A large load that actively replenishes 
+these services is not a burden on the grid, but a partial solution to the problem the Commission and 
+NERC are spending considerable resources trying to solve through other means. 
+NERC's Accelerated Large Load Action Plan targets the reliability risks of grid-following loads. 
+The Commission should recognize the inverse: grid-forming loads actively contribute to the 
+reliability services that NERC's plan seeks to preserve. Grid-forming control architectures capable 
+of delivering these services at the load interconnection point have been demonstrated on the 
+generation side at utility scale, and are now being implemented in load-side power electronics like 
+the Heron Link. The Commission need not wait for further technology development; it need only 
+create the regulatory framework to recognize and reward performance that the market is already 
+producing. 
+Two specific reforms would capture this value. 
+First, the Commission should create a distinct interconnection treatment pathway for large loads 
+that demonstrate grid-forming capability — including extended ride-through, voltage support, 
+
+--- PAGE 5 ---
+Heron Power Electronics — Comments, Docket No. RM26-4-000 — Page 5 
+inertial response, and harmonic damping — at the point of interconnection. Such loads impose 
+lower study burdens, require fewer network upgrades, and contribute to system reliability. The 
+expedited study pathway the Commission is considering for flexible and curtailable loads is a 
+natural starting point; grid-forming loads should qualify for comparable treatment.  
+Second, the Commission should direct RTOs and transmission owners to credit the grid services 
+provided by grid-forming large loads against any direct-assignment network upgrade costs. The 
+cost-causation principle underlying ANOPR Principle 8 should apply symmetrically to benefits as 
+well as costs. A facility whose grid-forming controls demonstrably eliminate the need for a 
+synchronous condenser, flicker mitigation device, or static VAR compensator provides a 
+quantifiable benefit to the transmission system. Existing ratepayers benefit from that avoided 
+investment. The Commission's rules should ensure that benefit is recognized in the interconnection 
+cost allocation process. 
+ 
+V.  Open, Verifiable Software Controls Reduce Interconnection Study Friction 
+A significant driver of interconnection study cost and delay is the trust gap between inverter 
+software control models and in-field behavior. Proprietary, nonlinear inverter controls are shared 
+with system operators only as black-box models — opaque representations that may diverge from 
+deployed firmware, and that must be re-evaluated whenever firmware is updated, plant design 
+evolves, or the surrounding power system changes. This forces system operators into a 
+conservative approach: extensive, bespoke electromagnetic transient (EMT) studies that cannot be 
+reused across projects or updated without additional custom work. The resulting bottleneck is a 
+structural contributor to the interconnection queue backlog across multiple RTOs. 
+Heron's OpenVSM initiative directly addresses this problem. OpenVSM is an open-source grid-
+forming controller whose architecture, tuning parameters, and embedded firmware code are 
+publicly available. The open-source library includes reference models in Simulink, validated 
+PSCAD model compatible with standard interconnection study workflows, embedded C code 
+ready for direct compilation into inverter firmware by any manufacturer, and comprehensive 
+technical documentation. Any developer, utility engineer, grid planner, or independent researcher 
+can inspect, replicate, and validate its behavior. The controller's tuning parameters — inertial 
+constant (H), damping coefficient (D), stator impedance (R+jX), and fault current capability — 
+are standard power system quantities that grid planners already use in synchronous machine 
+studies. 
+OpenVSM is aligned with IEEE 2800 and the UNIFI consortium's ongoing grid-forming 
+performance requirements. This means that a facility implementing OpenVSM-based controls can 
+be studied using standardized templates rather than custom EMT models, and that those templates 
+remain valid across firmware versions because the control algorithm is publicly documented, third-
+party verifiable, and its parameters and variables are field observable. 
+
+--- PAGE 6 ---
+Heron Power Electronics — Comments, Docket No. RM26-4-000 — Page 6 
+The Commission should incorporate principles into its final rule that help capture these benefits. 
+RTOs and transmission providers should be directed to develop streamlined interconnection study 
+procedures for loads implementing open, publicly documented control architectures, reducing the 
+study depth required for facilities whose control behavior is fully verifiable. The Commission 
+should further signal that technologies demonstrated to be compliant with open, validated control 
+frameworks such as Open VSM are eligible to proceed through a streamlined interconnection study 
+process. The Commission should also explore preferential queue treatment or reduced study 
+deposit requirements for such facilities, recognizing that the study burden those facilities impose 
+on operators is materially lower. 
+The trust gap between inverter model and field behavior is not a technical inevitability. It is a 
+consequence of regulatory frameworks that do not reward openness. The Commission has the 
+opportunity to restructure those incentives. 
+ 
+VI.  FERC's Technical Standards Shape the Domestic Power Electronics Manufacturing 
+Base 
+The technical requirements the Commission establishes in this proceeding will define, for years to 
+come, what equipment is necessary to interconnect a large load, what performance levels must be 
+demonstrated, and which compliance pathways are available. In doing so, those rules will directly 
+determine which equipment categories are purchased, and where from. This is not incidental to the 
+Commission's mandate; it is a foreseeable and significant consequence of the Commission's 
+regulatory choices. 
+The Department of Energy has identified advanced power electronics — including solid-state 
+transformers, high-voltage DC distribution systems, and grid-forming inverters — as a 
+manufacturing priority for the United States. Heron is developing U.S.-based manufacturing 
+capability for the Heron Link and associated systems. The viability of that investment depends 
+significantly on whether FERC's rules create demand for advanced solid-state power conversion 
+technology, or whether rules are written around legacy equipment categories that have established 
+global supply chains centered overseas. 
+The Commission should write performance-based standards that specify what grid behaviors large 
+loads must exhibit — ride-through duration and depth, ramp-rate limits, fault current 
+characteristics, voltage stability contributions — without specifying which equipment categories 
+must be deployed to achieve them. This approach rewards innovation; any technology that meets 
+performance requirements qualifies, creating a competitive market that drives cost reduction and 
+capability improvement over time. It avoids locking in legacy equipment, and it creates the stable, 
+technology-neutral demand signal that domestic manufacturers need to justify the capital 
+investment required to build factory capacity at scale. 
+
+--- PAGE 7 ---
+Heron Power Electronics — Comments, Docket No. RM26-4-000 — Page 7 
+The Commission does not need to favor any particular manufacturer or technology. It need only 
+ensure that its rules do not inadvertently foreclose advanced alternatives by writing requirements 
+around conventional equipment categories. Performance-based standards aligned with IEEE 2800 
+and NERC's emerging computational load reliability criteria will achieve that outcome and create 
+the demand pull that the U.S. advanced power electronics supply chain requires. 
+ 
+VII.  Conclusion 
+AI data centers need not be the grid stability problem that NERC's Level 3 Alert describes. With 
+an appropriate energy-integrated power electronics architecture — grid-forming controls, 
+integrated DC-bus storage, solid-state protection, and open, verifiable software — a large AI 
+campus can be designed to absorb its own load volatility, provide inertial response and voltage 
+support to the grid, ride through disturbances without burdening the system, and do all of this in a 
+package that can be manufactured domestically at scale. 
+The Commission has an opportunity to write rules that make America’s AI infrastructure buildout 
+a source of grid strength rather than grid stress. Heron Power's technology is designed for exactly 
+that outcome, and we look forward to supporting the Commission's work in this proceeding. 
+ 
+Respectfully submitted, 
+ 
+Heron Power Electronics Company 
+product@heronpower.com 
+www.heronpower.com 
+ 
+June 2026 
