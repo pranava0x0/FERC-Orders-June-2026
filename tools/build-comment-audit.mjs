@@ -11,6 +11,7 @@
  * Run: node tools/build-comment-audit.mjs
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
+const hasBody = (acc) => { const d = join(here, "..", "sources", "comments", "files", acc); return existsSync(d) && readdirSync(d).some((f) => f.endsWith(".txt")); };
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -42,7 +43,8 @@ const index = comments.map((c) => {
     files: filesMeta[c.acc] || (s && s.files ? s.files.map((f) => ({ name: f.name, type: f.type })) : []),
     summary: s ? `sources/comments/summaries/${c.acc}.json` : null,
     summarized: !!s,
-    downloaded: !!filesMeta[c.acc] || !!(s && s.read_from_pdf),
+    inventoried: !!filesMeta[c.acc],
+    downloaded: hasBody(c.acc),
   };
 });
 

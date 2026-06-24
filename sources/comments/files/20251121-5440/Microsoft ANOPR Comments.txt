@@ -1,0 +1,391 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+Interconnection of Large Loads to the 
+Interstate Transmission System 
+) 
+) 
+) 
+) 
+ 
+Docket No. RM26-4 
+INITIAL COMMENTS OF MICROSOFT, INC. 
+ 
+ 
+Pursuant to the October 27, 2025 Notice Inviting Comments of the Federal Energy 
+Regulatory Commission (“Commission”) and the November 7, 2025 Notice Granting 
+Extension of Time, Microsoft Corporation (“Microsoft”) comments on the Advanced Notice 
+of Proposed Rulemaking (“ANOPR”). The ANOPR invites comment on 14 framework 
+principles proposed to inform the Commission’s rulemaking deliberations regarding the 
+interconnection of large loads and hybrid facilities to jurisdictional transmission facilities.   
+The U.S. economy relies on an electric grid that, at present, cannot meet the rapidly 
+increasing electricity requirements of the digital economy and datacenters, reshoring of 
+manufacturing and heavy industry, and electrification.1 Microsoft recognizes that the 
+expansion of data centers performing cloud computing and artificial intelligence (“AI”) 
+operations necessitates significant investment in electric transmission and generation 
+capacity, support for domestic supply chains, and new tools and technologies that optimize 
+grid operations. Microsoft is investing heavily in the electric power sector and appreciates the 
+initiative of the U.S. Department of Energy (“DOE”) and the Commission to streamline, 
+standardize, modernize, and speed up access to the electric grid for datacenters and other 
+ 
+1 See Brad Smith, Winning the AI race: Strengthening U.S. capabilities in computing 
+and innovation, MICROSOFT ON THE ISSUES (May 8, 2025), https://blogs.microsoft.com/on-
+the-issues/2025/05/08/winning-the-ai-race/.  
+
+--- PAGE 2 ---
+ 
+2 
+large loads, and for inviting industry participants to address the pressing challenges of grid 
+interconnection and service to new large loads and hybrid facilities. Together, the 
+administration, industry, customers, and stakeholders can develop policies that speed up 
+access to power to deliver economic growth and ensure energy affordability and reliability 
+for all Americans.  
+Microsoft’s comments focus on five ANOPR principles necessary for the U.S. 
+datacenter industry: integrated studies of large loads, hybrid facilities, and generator-only 
+interconnections to achieve reliable, efficient, and cost-effective interconnection to the 
+electric grid (principle no. 3); standardized study processes that remove uncertainty for 
+customers, utilities, and entities responsible for regional grid operations and planning 
+(principle no. 4); expedited study processes for large loads that agree to voluntarily curtail 
+during system stress and hybrid facilities that likewise agree to be curtailable and 
+dispatchable (principle no. 7); cost allocation rules that fairly and equitably allocate costs 
+among system users (principle no. 8); and transition mechanisms that avoid regulatory 
+uncertainty (principle no. 13). These ANOPR principles present an important opportunity 
+for collaboration among state and federal regulators to develop an open and 
+nondiscriminatory framework for interconnecting large loads and hybrid facilities that 
+facilitates coordination, provides transparency for system users, achieves efficiencies, lowers 
+costs, and enhances regulatory certainty.  
+
+--- PAGE 3 ---
+ 
+3 
+I. 
+BACKGROUND 
+Microsoft’s datacenters deliver world-class data security and privacy, enabling the 
+applications, capabilities, and services that support the rapidly evolving digital economy.2 
+Microsoft operates 24/7 to support critical infrastructure and services—e.g., first responders, 
+hospitals, and emergency services; financial institutions; services across the food and 
+agricultural distribution supply chain; and federal, state, and local government operations 
+essential for public health, transportation, and national security.3 Indeed, the services that 
+Microsoft provides are integral to the U.S. economy—Microsoft Azure is used by 95% of 
+Fortune 500 companies and deployment of generative AI could potentially realize $3.8 
+trillion in productivity savings by 2038.4 Microsoft’s datacenters also make possible 
+everyday activities like paying household bills, remote work, and video calls among family 
+and friends. 
+ 
+2 See Microsoft Datacenters: Illuminating the unseen power of the cloud, MICROSOFT, 
+https://datacenters.microsoft.com/ (last visited Nov. 18, 2025). 
+3 See Understanding Microsoft Datacenters, MICROSOFT, 
+https://news.microsoft.com/datacenters/#:~:text=Microsoft%20datacenters%20play%20a%2
+0crucial,miles%20of%20fiber%20optic%20cables (last visited Nov. 18, 2025); Bill Briggs, 
+‘Critical to our modern society’: How datacenters power everyday necessities, MICROSOFT 
+(Oct. 26, 2022), https://news.microsoft.com/source/emea/features/critical-to-our-modern-
+society-how-datacenters-power-everyday-necessities/. 
+4 See Microsoft Azure: The only consistent, comprehensive hybrid cloud, MICROSOFT 
+AZURE BLOG (Sept. 25, 2018), https://azure.microsoft.com/en-us/blog/microsoft-azure-the-
+only-consistent-comprehensive-hybrid-
+cloud/?msockid=2eef0b747bf0658d126f189d7aa66484; Rima Alaily, The $3.8 trillion 
+opportunity: unlocking the economic potential of the US generative AI ecosystem, 
+MICROSOFT ON THE ISSUES (Nov. 21, 2024), https://blogs.microsoft.com/on-the-
+issues/2024/11/21/the-3-8-trillion-opportunity-unlocking-the-economic-potential-of-the-us-
+generative-ai-ecosystem/.   
+
+--- PAGE 4 ---
+ 
+4 
+Microsoft constructs, owns, and operates more than 400 datacenters in 70 regions 
+across North America and five continents, more than any other cloud provider.5 Microsoft’s 
+investments are guided by the needs of its business and government customers that use its 
+services. Microsoft’s customers can choose the datacenter regions where computing power 
+and services are deployed for them based on needs including network performance and data 
+residency. Many of Microsoft’s customers require that their data be stored in the United 
+States, so it is critical that Microsoft be positioned to expand operations to continuously meet 
+its obligations to its customers and contribute to the United States’ leadership in AI.  
+Microsoft has datacenters operating or under development across the U.S., including 
+in Arizona, California, Georgia, Illinois, Iowa, Texas, Virginia, Washington, Wisconsin, and 
+Wyoming. This year, Microsoft announced two major AI datacenter facilities: the first, in 
+southeastern Wisconsin, is expected to come online in early 2026, and the second, in Atlanta, 
+Georgia, began operation in October 2025.6 These facilities are the first phase of a dedicated 
+network of sites that will operate as an AI superfactory to accelerate AI breakthroughs and 
+train new models on a scale that, until now, has been impossible.7   
+ 
+5 See Azure global infrastructure: Grow with confidence and choice on a trusted, 
+sustainable, and advanced cloud and AI infrastructure, MICROSOFT, 
+https://azure.microsoft.com/en-us/explore/global-
+infrastructure#:~:text=Azure%20global%20infrastructure (last visited Nov. 18, 2025).  
+Microsoft’s latest quarterly earnings report datacenter investments of $24 billion globally and 
+this pace is expected to continue. See Press Release & Webcast: Earnings Release FY26 Q1, 
+Microsoft (Oct. 29, 2025), https://www.microsoft.com/en-us/investor/earnings/FY-2026-
+Q1/press-release-webcast.  
+6 See, e.g., Catherine Bolgar, From Wisconsin to Atlanta: Microsoft connects 
+datacenters to build its first AI superfactory, MICROSOFT (Nov. 12, 2025), 
+https://news.microsoft.com/source/features/ai/from-wisconsin-to-atlanta-microsoft-connects-
+datacenters-to-build-its-first-ai-superfactory/.  
+7 Id.  
+
+--- PAGE 5 ---
+ 
+5 
+Microsoft is actively engaged in discussions with national, state, and local 
+stakeholders on energy infrastructure, permitting, and community partnerships to support the 
+responsible growth of datacenters. Locating datacenters in the United States helps ensure the 
+country remains at the forefront of innovation, strengthens supply chain security, and delivers 
+economic benefits to local communities. Through its Datacenter Community Pledge, 
+Microsoft commits that datacenters will not only serve as the backbone of modern 
+technology but also provide benefits to the communities where they are located.8 As a large 
+electricity consumer, Microsoft pays its share of electric system costs and is committed to 
+working closely with regulators, grid operators, transmission-owning utilities, load serving 
+entities, power producers, and other stakeholders with the objective of ensuring that U.S. 
+electricity infrastructure is reliable, resilient, and affordable to all.  
+Microsoft expects that consumer-driven demand for cloud services and AI 
+applications and technologies will accelerate rapidly over at least the next decade. Timely 
+access to electric power supplies has been and continues to be the biggest obstacle industry-
+wide to the deployment of advanced computing technology in the United States. But it is not 
+only about timely access. Microsoft requires reliable and resilient electric power supplies to 
+assure the reliability of its datacenters because Microsoft’s datacenters support critical 
+infrastructure services essential for the welfare of the United States’ economy and its people.9 
+ 
+8 Noelle Walsh, Microsoft’s Datacenter Community Pledge: To build and operate 
+digital infrastructure that addresses societal challenges and creates benefits for 
+communities, OFFICIAL MICROSOFT BLOG (June 2, 2024), 
+https://blogs.microsoft.com/blog/2024/06/02/microsofts-datacenter-community-pledge-to-
+build-and-operate-digital-infrastructure-that-addresses-societal-challenges-and-creates-
+benefits-for-communities/.  
+9 Microsoft commits to service availability levels of up to 99.99% of the time, and 
+power system reliability and power redundancy play a large part in ensuring Microsoft can 
+ 
+
+--- PAGE 6 ---
+ 
+6 
+Microsoft is already substantially invested in the power sector.  Last year, Microsoft 
+announced a long-term, front-of-the-meter power purchase agreement with Constellation to 
+restart the Unit 1 reactor at the Crane Energy Center in Dauphin County, Pennsylvania.10 
+This restart is expected by 2028, adding more than 800 megawatts of new firm, carbon-free 
+energy and electric capacity to the electric grid operated by PJM Interconnection, L.L.C.11 
+Additionally, Microsoft is investing in projects and companies at the cutting edge of 
+advanced energy system technology. Two years ago, Microsoft executed a power purchase 
+agreement for offtake with the first nuclear fusion generator, Helion Energy.12 Further, 
+through its $1 billion Climate Innovation Fund, Microsoft is providing innovative financing 
+ 
+meet its customer commitments. See Reliability with Microsoft Azure, MICROSOFT AZURE, 
+https://azure.microsoft.com/files/Features/Reliability/AzureResiliencyInfographic.pdf?v=95f
+7f9240e31cb9d723ea0cfdea7864bef338788e9324919e9a93635fb8f64c5&msockid=2eef0b74
+7bf0658d126f189d7aa66484 (last visited Nov. 18, 2025).    
+10 Bobby Hollis, Accelerating the addition of carbon-free energy: An update on 
+progress, MICROSOFT (Sept. 20, 2024), https://www.microsoft.com/en-us/microsoft-
+cloud/blog/2024/09/20/accelerating-the-addition-of-carbon-free-energy-an-update-on-
+progress/ (linking Constellation to Launch Crane Clean Energy Center, Restoring Jobs and 
+Carbon-Free Power to the Grid, CONSTELLATION (Sept. 20, 2024), 
+https://www.constellationenergy.com/newsroom/2024/Constellation-to-Launch-Crane-Clean-
+Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html).    
+11 Constellation to Launch Crane Clean Energy Center, Restoring Jobs and Carbon-
+Free Power to the Grid, CONSTELLATION (Sept. 20, 2024), 
+https://www.constellationenergy.com/newsroom/2024/Constellation-to-Launch-Crane-Clean-
+Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html. 
+12 Michelle Patron, Advocating for decarbonization of the power sector, MICROSOFT 
+ON THE ISSUES (Aug. 16, 2023), https://blogs.microsoft.com/on-the-issues/2023/08/16/apec-
+sustainability-decarbonization-fusion-energy/ (linking Timothy Gardner, Microsoft signs 
+power purchase deal with nuclear fusion company Helion, REUTERS (May 10, 2023), 
+https://www.reuters.com/technology/microsoft-buy-power-nuclear-fusion-company-helion-
+2023-05-10/).  
+
+--- PAGE 7 ---
+ 
+7 
+to companies such as LineVision, AutoGrid, and Utilidata.13 Microsoft expects its 
+investments will contribute to the development of a stronger and more robust electric grid.  
+Microsoft appreciates consideration of policies by DOE, the Commission, public 
+utility commissions, and state and local energy departments that will position grid operators 
+and electric utilities to reliably interconnect and serve datacenters and other large commercial 
+and industrial retail loads.  That need is happening now and is expected to continue at this 
+pace across the United States through at least the next decade.   
+II. 
+COMMENTS 
+On October 23, 2025, Secretary of Energy Chris Wright directed the Commission to 
+initiate proposed rulemaking procedures and to consider the ANOPR’s potential reforms 
+intended to ensure the timely and orderly interconnection of large loads to Commission-
+jurisdictional transmission facilities.14 On October 27, 2025, and as amended by the 
+November 7, 2025 notice granting an extension of time, the Commission issued a notice 
+docketing the ANOPR, inviting comments, and setting the date for initial and reply 
+comments.15 The ANOPR seeks to engage industry stakeholders by proposing 
+interconnection procedures for large loads (greater than 20 MW) and hybrid facilities, which 
+ 
+13 Climate Innovation Fund, MICROSOFT, https://www.microsoft.com/en-
+us/corporate-responsibility/sustainability/climate-innovation-fund (last visited Nov. 18, 
+2025).  
+14 See Secretary of Energy’s Direction that the Federal Energy Regulatory 
+Commission Initiate Rulemaking Procedures and Proposal Regarding the Interconnection of 
+Large Loads Pursuant to the Secretary’s Authority Under Section 403 of the Department of 
+Energy Organization Act (Oct. 23, 2025) (“Secretary Wright’s Letter”). 
+15 See Interconnection of Large Loads to the Interstate Transmission System, Notice 
+Inviting Comments, Docket No. RM26-4-000 (Oct. 27, 2025); Interconnection of Large 
+Loads to the Interstate Transmission System, Notice Granting Extension of Time, Docket No. 
+RM26-4-000 (Nov. 7, 2025). 
+
+--- PAGE 8 ---
+ 
+8 
+are large loads co-located with, electrically adjacent to, or that share a point of 
+interconnection with new or existing generation facilities, and that directly interconnect to 
+interstate transmission facilities subject to the Commission’s jurisdiction.16 The ANOPR asks 
+for comment on framework principles that may inform the Commission’s rulemaking 
+deliberations regarding interconnection of these large loads and hybrid facilities.   
+In consideration of the urgent need for action, the Commission is expected to take 
+final action by no later than April 20, 2026.17 As explained in the ANOPR, electricity 
+demand in the United States is accelerating and load growth is greater than at any point in 
+recent history. Microsoft understands that the interconnection of datacenters and other large 
+loads presents new challenges for state and federal utility regulators, utilities, and grid 
+operators. Microsoft supports collaboration and coordination among state and federal 
+regulators for interconnecting large loads and hybrid facilities and respectfully requests that 
+the Commission take these comments into consideration as it decides its next steps.   
+A. 
+Principle #3: Combined Generation and Load Studies 
+The ANOPR’s third principle proposes, to the extent possible, load and hybrid 
+facilities should be studied together with generating facilities. For example, the ANOPR 
+proposes that siting a large “baseload” load near or at the same point of interconnection as a 
+new generating facility (one possible form of bring-your-own generation or “BYOG”) could 
+reduce the number and scope of network upgrades necessary for both the load and generator 
+interconnections. Microsoft believes studying load and generation together has the potential 
+to speed up the interconnection process for load and generation by eliminating duplicative, 
+ 
+16 See ANOPR at PP 12, 19. 
+17 Secretary Wright’s Letter at 2. 
+
+--- PAGE 9 ---
+ 
+9 
+and potentially conflicting, studies and will facilitate more efficient grid planning by more 
+closely aligning generation capacity needs with large loads. Additionally, studying load and 
+generation together potentially reduces the scale and cost of transmission upgrades by 
+minimizing system impacts and the need for major backbone reinforcements. Eliminating 
+unnecessary regulatory and interconnection delays—while assuring system reliability—is 
+necessary to match the pace of AI innovation in the United States. In Microsoft’s view, the 
+changes ripe for consideration are those that (i) focus on processes that will increase speed-
+to-market for new customers and new generation and (ii) reduce the cost and scope of 
+network upgrades needed for interconnection.        
+B. 
+Principle #4: Standard Study Requirements 
+The ANOPR’s fourth principle proposes that load and hybrid facilities be subject to 
+standardized study deposits, readiness requirements, and withdrawal penalties.18 The 
+ANOPR presents these reforms not only to deter speculative projects, but also to provide 
+entities with more reliable information that they can use with confidence in system planning 
+activities. Microsoft supports standardizing study requirements to provide greater regulatory 
+certainty, deter speculation, and enhance transparency so businesses can plan with more 
+predictability. Interconnection processes should clearly articulate study requirements, 
+financial commitments, timelines, and responsibilities of the utility and the customer. It is 
+important to Microsoft to receive studies that are timely delivered and provide robust results 
+and reasonably reliable cost estimates.   
+ 
+18 ANOPR at P 21. As noted above, Microsoft takes no position on whether the 
+Commission should exercise jurisdiction over load interconnections. 
+
+--- PAGE 10 ---
+ 
+10 
+An additional benefit of interconnection study reform is that it could bring greater 
+consistency to system-level load forecasting for system planners. Such a load forecasting 
+process could provide greater transparency and accuracy by creating a feedback loop that 
+allows large loads to validate the load levels utilities and regional planning entities are 
+incorporating into their forecasts.         
+C. 
+Principle #7: Voluntarily Curtailable Loads 
+The ANOPR proposes an expedited study process for the interconnection of large 
+loads that voluntarily agree to be curtailable and hybrid facilities that agree to be curtailable 
+and dispatchable.19 Microsoft agrees that regulatory frameworks that allow for voluntarily 
+curtailable loads make sense and will be an important tool for accelerating the deployment of 
+critical AI infrastructure. As discussed briefly below, most data centers today have limited 
+curtailment capability. However, a regulatory framework that provides accelerated 
+interconnection processes and clear market signals for curtailable loads should incentivize 
+innovation in datacenter design and operations. Further, flexibility and demand response 
+programs can unlock grid benefits, including relieving system constraints, enabling efficient 
+use of existing capacity, and providing a bridge-to-power while the generation and 
+transmission infrastructure expansion necessary for long-term firm reliable supplies is 
+designed, permitted, and constructed. Microsoft supports consideration of reforms that enable 
+utilities, power companies, and consumers to deploy grid-flexible technologies.  
+Microsoft believes an expedited study process for curtailable loads and dispatchable 
+hybrid facilities would be appropriate and consistent with the interests of the administration, 
+so long as these arrangements do not create operational reliability risks and do not interfere 
+ 
+19 Id. at P 25. 
+
+--- PAGE 11 ---
+ 
+11 
+with the interconnection of critical nonflexible large loads. Technological and new market 
+mechanisms that might be included in an expedited study process could include incremental 
+datacenter operator-funded generation or storage and innovative load management 
+capabilities. Microsoft’s data centers primarily host cloud services for its customers, 
+including government and business customers who require service levels and data residency 
+commitments that are not compatible with curtailing or shifting cloud computing operations 
+from one datacenter to another.  
+Microsoft encourages regulators, utilities, and grid operators—with consultation from 
+datacenter operators—to create program clarity by identifying the type of flexibility that 
+would bring value to the electric system and developing program parameters (such as 
+maximum load curtailment times, frequency, and size) that are critical for datacenters to 
+consider when making decisions about program participation.  
+D. 
+Principle #8: Direct Assignment of Network Costs 
+The ANOPR proposes that large loads and hybrid facilities be responsible for 100% 
+of the upfront costs of assigned network upgrades.20 Whatever the mechanism by which large 
+loads or their load serving entities are directly assigned network upgrade costs, Microsoft 
+recognizes its responsibility as a large retail electricity consumer to ensure the electric grid is 
+reliable, resilient, affordable, and accessible for all. Today, Microsoft is already deploying 
+billions of dollars to support the energy infrastructure build-out necessary to grow its 
+business. That investment will continue as demand for Microsoft’s Azure cloud and AI 
+services grows. More broadly, Microsoft is interested in innovative solutions that help to 
+accelerate much-needed investment in the transmission system.  
+ 
+20 Id. 
+
+--- PAGE 12 ---
+ 
+12 
+Importantly, Microsoft pays for the electricity it consumes and for its share of 
+infrastructure costs to generate and deliver electricity to datacenter sites. Microsoft supports 
+the work of utilities and regulators to make sure these costs are transparently calculated and 
+assigned to it and the other customers who benefit from those capital investments. This work 
+helps ensure that Microsoft’s neighbors and the local community do not pay for Microsoft’s 
+share of the costs.  
+The ANOPR requests comment on whether network upgrade costs paid up-front by a 
+large load should be offset through a crediting mechanism. If the network upgrades (with 
+costs paid for up-front by the interconnecting loads they are assigned to) are providing broad 
+benefits to other system users—for example, if another industrial customer benefits from the 
+same infrastructure —Microsoft believes it would be fair to use a crediting mechanism or 
+other arrangement that would capture the reliability and economic value those network 
+upgrades provide other electricity consumers. One such approach may be similar to the 
+crediting mechanisms used for interconnecting generator-only facilities. 
+E. 
+Principle #13: Transition Plan 
+The ANOPR proposes that transition plans be developed for the treatment of large 
+load interconnections that are already being studied for interconnection. Microsoft is 
+supportive of transition plans that mitigate existing risk and do not create new regulatory risk 
+or uncertainty for projects. A transition plan should provide regulatory stability for large 
+loads that are already under study; large loads for which the study process has already been 
+completed, payments made, and construction commenced; and for facilities that are phasing 
+in or are fully operational.  
+
+--- PAGE 13 ---
+ 
+13 
+III. 
+CONCLUSION 
+Microsoft appreciates DOE’s and the Commission’s leadership in seeking innovative 
+solutions to the challenges of interconnection and providing electric service to new large 
+loads and hybrid facilities. Microsoft respectfully requests that the Commission consider its 
+comments in developing policies to support the availability of reliable, secure energy 
+supplies to meet the needs of its datacenters and all system users. 
+ 
+Respectfully submitted, 
+ 
+/s/ Jeffery Riles  
+Jeffery Riles 
+Director of Energy Markets, Americas  
+Microsoft Corporation 
+One Microsoft Way 
+Redmond, WA 98052 
+Tel. (425) 882-8080 
+Email: Jeffriles@microsoft.com 
+ 
+November 21, 2025 
