@@ -1,0 +1,580 @@
+--- PAGE 1 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+ 
+) 
+Interconnection of Large Loads 
+)   
+ 
+Docket No. RM26-4-000 
+to the Interstate Transmission System 
+) 
+ 
+) 
+ 
+ 
+COMMENTS OF GOOGLE LLC 
+ 
+Google LLC (“Google”) hereby submits these initial comments on the Secretary of 
+Energy’s letter regarding the interconnection of large loads and the accompanying Advanced 
+Notice of Proposed Rulemaking proposal (“DOE ANOPR Proposal”) pursuant to the October 27, 
+2025, notice issued by the Federal Energy Regulatory Commission (“Commission”) in the above-
+captioned proceeding.1  These issues are critically important and bear directly on the 
+Commission’s ability to satisfy its statutory responsibilities under the Federal Power Act as well 
+as our nation’s national security and economic growth.  Given those stakes, Google urges the 
+Commission to promptly and pragmatically prioritize the reforms that can be implemented most 
+quickly and that will incentivize digital and energy infrastructure development in a manner that 
+maximizes use of the existing infrastructure and minimizes strain on the grid.    
+ 
+1 Interconnection of Large Loads to the Interstate Transmission System, Proposed Advanced Notice of Proposed 
+Rulemaking, Docket No. RM26-4-000 (filed Oct. 23, 2025) (“DOE ANOPR Proposal”). 
+
+--- PAGE 2 ---
+ 
+ 
+ 
+ 
+2 
+I. 
+INTRODUCTION  
+Secretary Wright is correct that the “timely, orderly, and non-discriminatory” 
+interconnection of large loads, including data centers, to the transmission system is critical to 
+ensuring American prosperity.2  Artificial intelligence (“AI”), machine learning, and other 
+advanced computing applications are poised to transform the economic landscape and shape 
+American technological and national security.  As President Trump recently observed, there is a 
+“race to achieve global dominance in artificial intelligence,” with the winner securing the ability 
+to “set global AI standards and reap broad economic and military benefits.”3   
+The United States’ prospects for winning the AI race depend on our digital infrastructure, 
+and data centers in particular.  It is that infrastructure that will provide the computing power 
+necessary to develop world-leading AI, machine learning, and other advanced capabilities.  
+Developing that digital infrastructure, in turn, requires access to a reliable, resilient, and secure 
+electric grid.  Without the ability to promptly provide new data centers with access to electricity, 
+we risk ceding American leadership to foreign adversaries.   
+In the balance of this pleading, we present our initial recommendations on how to prioritize 
+the issues presented in this proceeding as well as our comments on specific principles proposed by 
+Secretary Wright.  Before doing so, however, it is necessary to underscore that winning the AI 
+race is as much about the transmission grid itself as it is the interconnection of data centers to that 
+grid.  The transmission grid is the foundation of our electrical system and the basis for our modern, 
+ 
+2 Interconnection of Large Loads to the Interstate Transmission System, Letter of Dep’t of Energy Sec. 
+Christopher Wright, Docket No. RM26-4-000, at 1 (filed Oct. 23, 2025) (“Sec. Wright Ltr.”). 
+3 Executive Office of the President, Winning the Race: America’s AI Action Plan, at 1 (July 2025), 
+https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf.   
+
+--- PAGE 3 ---
+ 
+ 
+ 
+ 
+3 
+digital economy.  Without a world-leading transmission grid, the United States will inevitably face 
+an uphill battle to develop the world-class digital infrastructure needed to win the AI race.    
+But our transmission grid is strained.  The combination of aging infrastructure, decades of 
+underinvestment, and fragmented, highly localized planning practices have resulted in a 
+transmission grid that is struggling to keep up with the demands of this new digital infrastructure.  
+Instead of well-coordinated regional transmission solutions, customers are increasingly paying for 
+piecemeal upgrades that fail to leverage the efficiencies of scale and geographic diversity.  This 
+dynamic negatively affects both sides of the interconnection equation: it slows the “timely, orderly, 
+and non-discriminatory” interconnection of large loads,4 and the generation facilities needed to 
+power those large loads.  Terawatts of new generation capacity are stuck in interconnection queues 
+because of inadequate transmission infrastructure.5  The result is not just delays in advanced 
+computing capabilities, but also burdens on everyday Americans who pay more when new supply 
+cannot reach the market to meet high prices.  Now is the moment to right the ship and build out 
+the transmission grid needed to support our nation’s ambitious AI goals.  And we must do this 
+with a commitment to affordability: the goal is not to spend more, but to plan better in order to 
+develop a transmission grid that can support the nation’s digital infrastructure needs.  Ultimately, 
+a modern, robust transmission grid is the essential platform for delivering affordable, reliable 
+energy to all customers, unlocking transformative dividends across the American economy—from 
+AI leadership to a revitalized domestic manufacturing base. 
+ 
+4 Sec. Wright Ltr. at 1. 
+5 See Joseph Rand et al., Nat’l Renewable Energy Lab’y, Queued Up: 2024 Edition 3, 10 (Apr. 2024), 
+https://emp.lbl.gov/sites/default/files/2024-04/Queued%20Up%202024%20Edition_R2.pdf (finding that nearly 2.6 
+terawatts of capacity was pending in interconnection queues nationwide as of the end of 2023 and that projects that 
+came online in 2023 spent an average of five years in the queue from interconnection request to commercial operation). 
+
+--- PAGE 4 ---
+ 
+ 
+ 
+ 
+4 
+Doing so requires a holistic transmission planning process that harmonizes both new load 
+interconnection with new generation supply.  Given the scale, pace, and volume of large load 
+interconnection requests as well as the corresponding scale, pace, and volume of new generator 
+interconnection requests—both of which drive the need for new transmission infrastructure—
+transmission planners must have a realistic picture of the generators and the large loads planning 
+to interconnect to the transmission grid if they are to plan the grid in an efficient, cost-effective, 
+and reliable manner.  While transmission planners already have visibility into the generation side 
+of the equation through information regarding the Commission-jurisdictional generator 
+interconnection queues, the same is not true on the demand side.  Large load interconnection 
+requests remain, in many respects, a blind spot for regional transmission planners because of the 
+differing utility-specific requirements and approaches for definitively incorporating a load into 
+their planning forecasts.  A correspondingly accurate picture of the large load interconnection 
+process—and the consequences that those additions have for transmission needs—is one of the 
+primary potential benefits of greater involvement in the large load interconnection process by the 
+Commission and, where applicable, regional transmission organizations or independent system 
+operators (“RTOs/ISOs”).   
+Without a comprehensive, coordinated transmission planning process built on a more 
+complete picture of growth in supply and demand, we will be stuck developing transmission 
+infrastructure through piecemeal, reactive processes that are insufficient to secure our position as 
+a global manufacturing and economic powerhouse for decades to come.  In particular, Google 
+urges the Commission to seriously consider whether efforts, such as the Consolidated Planning 
+
+--- PAGE 5 ---
+ 
+ 
+ 
+ 
+5 
+Process proposed by the Southwest Power Pool,6 that coordinate and integrate disparate processes 
+driving transmission development can be expedited and adopted across the country.  While we 
+recognize that improving this process will require meaningful reforms, those reforms are essential 
+if the United States is to realize President Trump’s and Secretary Wright’s vision of a “a new era 
+of American prosperity” based on “all Americans and domestic industries hav[ing] access to 
+affordable, reliable, and secure electricity.”7 
+II. 
+WHO WE ARE 
+Google’s mission is to organize the world’s information and make it universally accessible 
+and useful.  AI is critical to that mission.  Data centers necessary to serve Google’s customers 
+consume a large amount of electricity and require reliable electric service to operate.  As Google’s 
+business grows, so too does its demand for reliable, affordable, and clean electricity. 
+III. 
+COMMENTS 
+Given the stakes described above, Google urges the Commission to take a pragmatic 
+approach to the broad range of issues presented in the ANOPR by focusing on the reforms that can 
+be implemented most quickly and that will have the most significant immediate impact on reducing 
+the time to interconnect new data centers.8  To do so, the Commission should prioritize reforms 
+that will expedite the interconnection of facilities that maximize the use of existing infrastructure 
+ 
+6 Sw. Power Pool, Inc., Transmittal Letter, Docket No. ER26-414-000 (filed Nov. 3, 2025).  
+7 Sec. Wright Ltr. at 1.  
+8 FERC has authority to tailor the scope of its reforms.  Indeed, the Supreme Court in New York v. FERC 
+specifically upheld Order No. 888's rejection of arguments that it had to go further by noting: “Because FERC 
+determined that the remedy it ordered constituted a sufficient response to the problems FERC had identified in the 
+wholesale market, FERC had no § 206 obligation to regulate bundled retail transmissions or to order universal 
+unbundling.”  New York v. FERC, 535 U.S. 1, 26-27 (2002).  So too here, the Commission can reasonably conclude 
+that it is appropriate to tackle these issues in structured terms. 
+
+--- PAGE 6 ---
+ 
+ 
+ 
+ 
+6 
+and minimize strain on the grid.  Although Google’s preference is to primarily take service from 
+the grid, the Commission should focus in the near-term on facilitating the integration of co-located 
+generation, including electric storage resources, and load and electrically proximate load and 
+generation, which unlock planning and siting efficiencies that minimize transmission impact.  
+Consistent with that emphasis on efficiency, we believe that it is important for load interconnection 
+customers to have access to flexible interconnection or transmission service.  The quickest and 
+most effective way to implement measures along these lines is, where possible, to deploy them as 
+incentives, such as expedited interconnection for large loads that can bring their own co-located 
+or electrically proximate generation or offer voluntary, verifiable load flexibility and demand 
+response capabilities.  Incentive-based approaches will do the most to develop the infrastructure 
+we need in the limited time we have.  In addition, the Commission should prioritize resolving long-
+standing dockets where the record is sufficiently developed to provide timely regulatory clarity for 
+the market.9  Google believes that tailoring the scope of this proceeding to focus on those issues 
+first will do the most to support the goals articulated in the Secretary’s letter and advance this 
+critically important initiative.   
+A. The Commission Should Coordinate Studies To Expedite Interconnection of Paired, 
+Electrically Proximate Large Loads and Generation 
+Google has a strong preference to add new generation to serve new load.  However, as a 
+first step in this proceeding to address lingering uncertainty, the Commission should clarify that 
+new large load interconnections with existing generation facilities must be allowed to proceed 
+under existing rules on file, including the existing generator modification process, while the 
+ 
+9 See, e.g., PJM Interconnection, L.L.C., 190 FERC ¶ 61,115 (2025). 
+
+--- PAGE 7 ---
+ 
+ 
+ 
+ 
+7 
+Commission pursues reforms through this proceeding.10  Next, the Commission should establish 
+nationwide rules governing interconnection arrangements involving generation resources paired 
+with new large loads that share either the same or an electrically proximate point of 
+interconnection.11  The DOE ANOPR correctly observed that this approach “will allow for 
+efficient siting of loads and generating facilities and thereby minimize the need for costly network 
+upgrades.”12  This is also an appropriate place for the Commission to begin its reform effort 
+because the Commission’s long history of regulating generator interconnection provides it with a 
+base of experience to draw on to expeditiously craft new regulations.  In addition, focusing on 
+measures to incentivize new loads to bring new, electrically proximate generation capacity will 
+also help address reliability, resource adequacy, and affordability issues that could be associated 
+with rapid demand growth, if not properly managed.   
+The coordinated and expedited study of electrically proximate large loads and grid-
+connected generators will facilitate the development of digital infrastructure while minimizing the 
+strain on, and maximizing the use of, existing power infrastructure.  Accordingly, the Commission 
+should craft procedures to expedite the transmission-level interconnection of new load and 
+electrically proximate generation where a large load developer makes a financial commitment, via 
+ 
+10 See Large Loads Co-Located at Generating Facilities, Post-Technical Conference Comments of Google LLC, 
+Docket No. AD24-11-000, at 2 (Dec. 10, 2024).  
+11 For example, SPP’s proposal to establish such a coordinated study process uses the term “electrically 
+proximate” to mean points of interconnection that are located within two buses of each other.  See Sw. Power Pool, 
+Inc., Open Access Transmission Tariff, attach. BB (High Impact Load Generation Assessment), § 3.1.3 (HILLGA 
+Requirements) (0.0.0), § (5)(a)  (proposing to require load and generating facility points of interconnection to be no 
+more than two substations apart); Sw. Power Pool, Inc., Submission of Tariff Revisions to Add the High Impact Large 
+Load Processes and High Impact Large Load Generation Assessment, Docket No. ER26-247-000, at 26 (filed Oct. 
+24, 2025) (“SPP HILLGA Proposal”). 
+12 DOE ANOPR Proposal at P 20. 
+
+--- PAGE 8 ---
+ 
+ 
+ 
+ 
+8 
+a power purchase agreement (“PPA”) or a similar agreement, to bring online a new generating 
+facility, uprate or expand an existing generating facility, retain a generating facility that would 
+otherwise retire, or enable a resource that would otherwise be uneconomic to undergo fuel-
+switching.  To ensure that the generation is appropriately tailored to the new load, those 
+commitments should match the load’s ramp and utilization schedule on a one-for-one basis with 
+accredited generation, verified load flexibility, or demand response capabilities.   
+As one example, the Commission could look to SPP’s recent High Impact Large Load 
+Generation Assessment (“HILLGA”) proposal, which offers an expedited interconnection process 
+for generation interconnection customers that plan to develop a generating facility to support a 
+physically proximate High Impact Large Load (“HILL”).13  Generators that interconnect via the 
+HILLGA process initially obtain limited interconnection rights solely to support the HILL and can 
+separately obtain traditional generator interconnection service, such as Network Resource 
+Interconnection Service (“NRIS”) or Energy Resource Interconnection Service (“ERIS”), through 
+the existing generator interconnection process.14  While the HILLGA process does not provide 
+transmission service for the generator to serve the HILL, the generator can obtain short-term or 
+non-firm point-to-point transmission service on an as-available basis and transition to firm point-
+to-point or network integration transmission service via existing processes.15  This framework 
+ 
+13 See SPP HILLGA Proposal at 32.  A HILL is defined as “[a] new commercial or industrial load, or increase in 
+commercial or industrial load, at a single site connected through one or more shared Points of Interconnection (POIs) 
+or delivery points, where such load is either (1) 10 MW or more if connected to the Transmission System at a voltage 
+level less than or equal to 69 kV; or (2) 50 MW or more if connected to the Transmission System at a voltage level 
+greater than 69 kV.”  Id. at 12. 
+14 Id. at 29. 
+15 Id. 
+
+--- PAGE 9 ---
+ 
+ 
+ 
+ 
+9 
+provides a useful model of the type of innovation that can be implemented quickly to move the 
+needle and get infrastructure built. 
+As with the rules governing colocation or electrically proximate pairs of load and 
+generation, and as in SPP’s HILL/HILLGA proposal, any new rules governing the interconnection 
+of curtailable load must take the form of an incentive, not a requirement.16  It is also critical that 
+any curtailment options be non-discriminatory and tailored to not interfere with a specific load’s 
+operational needs.   
+The Commission should establish a firm timeline for these and similar interconnection 
+studies.  Google proposes a 90-day study timeline, which is consistent with recent expedited 
+interconnection procedures approved by the Commission.17  In crafting those rules, the 
+Commission can and should apply certain other elements of the generator interconnection process:  
+for instance, the transmission provider should hold scoping meetings and share study results with 
+customers for transparency, among others.  
+In keeping with the principles in Secretary Wright’s letter, paired, electrically proximate 
+load and generation should be studied based on the amount of injection and/or withdrawal rights 
+ 
+16 BNP Paribas Energy Trading GP v. FERC, 743 F.3d 264, 268-69 (D.C. Cir. 2014).  
+17 See Sw. Power Pool, Inc., Open Access Transmission Tariff, attach. AW (Expedited Resource Adequacy Study 
+Procedures), § 8 (Definitive Planning Phase) (0.1.0), § 8.5 (ERAS Procedures) (“The Transmission Provider shall use 
+Reasonable Efforts to complete the ERAS System Impact Study no later than ninety (90) Calendar Days after the 
+close of the ERAS Review Period”); PJM Interconnection, L.L.C., Open Access Transmission Tariff, part VII.C, § 
+306 (Application Rules) (1.0.0), § B.3 (“Transmission Provider will only review an Application during the Application 
+Review Phase following the Application Deadline for which the Application was submitted and deemed complete, 
+which will extend for 90 days or the amount of time it takes to complete all Application review activities for the 
+relevant Cycle, whichever is greater.”); SPP HILLGA Proposal at 15.  The 90-day timeframe is also consistent with 
+the timeline for conducting serial system impact studies before the shift to cluster studies in Order No. 2023. See 
+Improvements to Generator Interconnection Procs. & Agreements, Order No. 2023, 184 FERC ¶ 61,054, at P 13, 
+order on reh’g, 185 FERC ¶ 61,063 (2023), order on reh’g, Order No. 2023-A, 186 FERC ¶ 61,199, errata notice, 
+188 FERC ¶ 61,134 (2024).  
+
+--- PAGE 10 ---
+ 
+ 
+ 
+ 
+10 
+that they request.18  These injection and withdrawal rights represent how the parties will operate,19  
+which is an appropriate consideration in determining how they should be studied, consistent with 
+recent Commission precedent.  Specifically, in Order No. 2023, the Commission found that 
+studying electric storage resources according to their planned operating assumptions “ensures the 
+reliable interconnection of new electric storage resources without overestimating their impact on 
+the transmission system, thereby ensuring just and reasonable rates by avoiding excessive and 
+unnecessary network upgrades that may hinder the timely development of new generating facilities 
+that stifles competition in the wholesale market.”20   
+This conclusion applies equally here.  Although Order No. 2023 dealt specifically with the 
+charging behavior of electric storage resources, it is appropriate to consider both injection and 
+withdrawal operating parameters of paired load and generation.21  Indeed, paired load and grid-
+connected generation presents an even more compelling case for consideration of operating 
+parameters because these arrangements can often involve unique operating characteristics that are 
+unlike a standalone load or a standalone generator.  Moreover, these arrangements are a valuable 
+mechanism to facilitate the load growth necessary to meet the AI moment while minimizing strain 
+on the grid.   
+ 
+18 DOE ANOPR Proposal at P 22.  We assume that, in most cases, electrically proximate, but not co-located load 
+and generation will typically request injection and withdrawal rights corresponding to 100% of their capacity.  
+However, to the extent that assumption is incorrect, this principle should apply.    
+19 Google also supports the corresponding principle that co-located facilities studied in this manner should be 
+required to operate in accordance with the assumptions used in the interconnection studies.  DOE ANOPR Proposal 
+at P 23. 
+20 See Order No. 2023, 184 FERC ¶ 61,054 at P 1510. 
+21 See, e.g., SPP HILLGA Proposal at 32. 
+
+--- PAGE 11 ---
+ 
+ 
+ 
+ 
+11 
+But although this incentive presents a potentially important pathway for facilitating the 
+timely interconnection of new loads paired with new generation, it is necessary that it remain an 
+incentive, not a requirement.  Because all load is “economically marginal” in the sense that 
+customers impose equivalent costs “whether by adding or merely continuing their usage” 
+regardless of when they first took service, imposing a requirement on only new load to bring its 
+own supply would be unjust and unreasonable and unduly discriminatory.22  Accordingly, to avoid 
+creating legal risk and uncertainty that could delay the development of the large load 
+configurations that could most reduce strain on the grid, the Commission must ensure that any use 
+of these configurations is voluntary and not a condition of interconnection.   
+B. The Commission Should Consider Expedited Interconnection Treatment of 
+Voluntarily  Flexible Loads  
+The Commission should also focus its near-term efforts on identifying pathways to 
+expediting other transmission-level load interconnections that benefit the grid, such as loads that 
+voluntarily offer flexibility via demand reduction or agree to take curtailable transmission service.  
+As with co-located or electrically proximate pairs of load and generation, Google believes that the 
+Commission should consider prioritizing reforms to expedite the study of loads that can themselves 
+minimize or help manage the strain on the transmission system.23  One way to achieve this goal is 
+to establish expedited study procedures for transmission-level large loads that agree to be 
+curtailable and for co-located facilities that agree to be both curtailable and dispatchable.    
+ 
+22 BNP Paribas Energy Trading GP v. FERC, 743 F.3d at 268-69 (citations omitted); see also 1 Alfred Kahn, The 
+Economics of Regulation: Principles and Institutions 140 (The MIT Press 1998) (explaining that an existing customer 
+that is “continuing to take service is just as responsible, in proportion to the amount they take, for the need to expand 
+investment” to accommodate another customer’s increasing demand).  
+23 See Midcontinent Indep. Sys. Operator, Inc., 167 FERC ¶ 61,146, at P 62 (2019) (finding that it is appropriate 
+to provide an expedited interconnection study process for replacement generating facilities that “will cause no material 
+impact” on the transmission system).  
+
+--- PAGE 12 ---
+ 
+ 
+ 
+ 
+12 
+And, separately from any transmission-level load interconnection reforms, the 
+Commission should encourage transmission providers to pursue reforms to enable enhanced 
+demand response participation in markets by loads whose flexibility is underutilized but may be 
+limited to certain hours or capped at a certain number of hours based on business requirements.   
+C. Transmission Service Charges Should be Based on Actual Use of the Transmission 
+System 
+Google agrees with the principle that the transmission service used to provide energy to 
+new large loads should be based on the specific use of the transmission system at that point of 
+interconnection.24  This principle is consistent with long-standing Commission cost causation 
+precedent that transmission system charges should be based on actual use of the transmission 
+system.25  For instance, where a generator serves a load located at the same point of 
+interconnection, it may not use the transmission system to transmit the full quantity of capacity 
+and energy matching the load’s peak demand.  To comport with the cost causation principle that 
+undergirds the just and reasonable standard, a load’s transmission service should be measured 
+based on its actual withdrawal rights from the transmission system. 
+D. It is Appropriate to Impose Requirements to Deter Speculative Interconnection 
+Requests and Ensure Customers Pay Their Full Costs of Service 
+All new loads interconnecting to the transmission system—whether paired with co-located 
+or electrically proximate generation or not—should be subject to safeguards to protect other 
+customers and ratepayers.  In keeping with this overarching principle, the DOE ANOPR asserts 
+ 
+24 DOE ANOPR Proposal at P 28. 
+25 See PJM Interconnection, L.L.C., 107 FERC ¶ 61,113, at P 28 (2004) (“[C]harges for the use of PJM's 
+transmission system should be allocated to network customers based on a network customer's actual use of PJM's 
+system, consistent with the principle of cost causation.” (citing Occidental Chem. Corp. v. PJM Interconnection, 
+L.L.C., 102 FERC ¶ 61,275, at P 14 (2003))). 
+
+--- PAGE 13 ---
+ 
+ 
+ 
+ 
+13 
+that facilities should be subject to standardized study deposits, readiness requirements, and 
+withdrawal penalties to deter speculative projects and provide transmission providers with more 
+useful information to more accurately forecast demand on their systems.  Those principles are 
+consistent with Google’s long-standing advocacy at the state level for “Capacity Commitment 
+Frameworks,” which include five elements:  
+1. Non-Discriminatory Applicability:  Terms should apply to all new 
+large loads with an expected peak demand above a certain threshold.  
+Regulators should avoid adoption of mandatory terms for specific end-
+uses of electricity.  
+2. Long-Term Commitment:  New large loads should be required to sign 
+a long-term contract that ensures that the customer commits to 
+providing sufficient revenue to cover the investments made on their 
+behalf.  Regulators should consider flexibility for customers to ramp 
+into their load over time.  
+3. Significant Minimum Charges:  New large loads should be required to 
+pay costs of power capacity (e.g., approximated via demand charges) 
+at a sufficient minimum to guard against potential cost shifting in the 
+event that metered customer demand is significantly lower than 
+planned for.  
+4. Upfront Collateral:  To ensure financial stability of the requesting 
+customer, regulators should consider the appropriate role for upfront 
+collateral to provide financial assurance to the utility that the long-
+term contract minimums can be met.  
+5. Flexible and Transparent Fees for Modifications:  To protect other 
+ratepayers, while also maintaining reasonable flexibility for new large 
+loads, regulators should consider appropriate notice periods and fees 
+for contract cancellation or capacity reduction. 
+ 
+These Capacity Commitment Frameworks are geared to accomplish the same goal 
+expressed in the DOE ANOPR.  That is, they simultaneously deter speculative investment while 
+providing concrete, actionable information to system planners that reflect actual actions taken by 
+
+--- PAGE 14 ---
+ 
+ 
+ 
+ 
+14 
+the large loads in question.  Ensuring that electricity system planning reflects the actual facts on 
+the ground has itself been a longstanding priority of Google’s.26   
+Capacity Commitment Frameworks also ensure that load customers pay their full costs of 
+service.  The long-term energy contracts with minimum demand charges envisioned by the 
+Capacity Commitment Framework are, however, quintessentially retail service terms.  While those 
+retail service contracts are regulated at the state level,27 they are also relevant for FERC-
+jurisdictional load forecasting practices.  When public utilities create load forecasts for wholesale 
+market administration and transmission planning, they should include large loads in the forecast 
+only if the developer has made appropriate and verifiable financial commitments commensurate 
+with their stage in the development process.  Otherwise, the load forecasts will not produce reliable 
+projections of future demand, which will inhibit efforts to plan new transmission and generation 
+infrastructure in a reliable and cost-effective manner.  The Capacity Commitment Framework 
+provides an excellent example of the genre of financial commitments that grid operators should 
+expect a large load developer to make to demonstrate that the load is not speculative such that it 
+should be included in a load forecast. 
+The unifying principle of the Capacity Commitment Frameworks—that new large load 
+customers should make appropriate and meaningful financial commitments and pay their full cost 
+of service—should be applied to any and all FERC transmission-level interconnection processes, 
+including the co-located arrangements discussed above.  Where regulated by FERC, new large 
+ 
+26 Google, Re: Large Load Additions PJM Conceptual Proposal and Request for Member Feedback, at 2-4 (Aug. 
+27, 2025), https://www.pjm.com/-/media/DotCom/committees-groups/cifp-lla/postings/20250828-stakeholder-
+comments-cifp-lla.pdf.  
+27 Utilities in at least eight states have adopted the principles embodied in Google’s Capacity Commitment 
+Frameworks. 
+
+--- PAGE 15 ---
+ 
+ 
+ 
+ 
+15 
+loads interconnecting to the transmission system should pay deposits that cover their study costs, 
+deter the submission of speculative transmission-level interconnection requests, and cover harm 
+to other interconnection customers if a load withdraws from the transmission-level interconnection 
+process.   
+Additionally, as in the Capacity Commitment Frameworks, any Commission action must 
+comply with the Federal Power Act’s prohibition on undue discrimination.  As such, the 
+Commission’s reforms should apply uniformly to all new large loads (above a certain MW-level 
+threshold) that seek to interconnect to the transmission system, regardless of end-use sector.    
+IV. 
+CONCLUSION 
+Secretary Wright’s letter raises several critically important issues.  In response, we urge 
+the Commission to prioritize issues that will facilitate the planning, developing, and operation of 
+digital and power infrastructure in the shortest time possible, including, in particular, incentivizing 
+the integration of co-located or electrically proximate load and generation or load flexibility and 
+demand response capabilities.  Doing so is necessary both to ensure that transmission rates, 
+charges, and practices remain just and reasonable and not unduly discriminatory or preferential, as 
+well as to ensure that the United States continues to play the world-leading role in the development 
+of AI and other advanced computing capabilities.  The global AI race is clearly underway, and it 
+is imperative that the United States seize this moment not just to win that race, but to lay a 
+generational foundation for enduring economic and industrial competitiveness.  Google urges the 
+Commission to do its part to ensure that the United States prevails. 
+[Signatures on next page] 
+ 
+ 
+
+--- PAGE 16 ---
+ 
+ 
+ 
+ 
+16 
+ 
+Respectfully submitted, 
+ 
+ 
+/s/ Brian George 
+Brian George 
+Sr. Lead, US Energy Markets  
+Google LLC 
+655 New York Ave., NW 
+Washington, DC 20001 
+(202) 999-0990 
+briangeorge@google.com  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dated: November 21, 2025 
+ 
+ 
+_______________ 
+Nicholas M. Gladd 
+Sarah Greenberg 
+Rachel Neuburger 
+Katie Mansur 
+Wilson Sonsini Goodrich & Rosati 
+1700 K Street NW 
+Fifth Floor 
+Washington, DC 20006 
+(617) 598-7871 
+ngladd@wsgr.com 
+sgreenberg@wsgr.com 
+rneuburger@wsgr.com 
+cmansur@wsgr.com    
+ 
+Counsel for Google LLC 
+ 
+ 
+ 
+ 
+
+--- PAGE 17 ---
+ 
+ 
+ 
+ 
+17 
+CERTIFICATE OF SERVICE 
+ 
+I hereby certify that I have this day served the foregoing document upon each person 
+designated on the official service lists compiled by the Secretary of the Commission in these 
+proceedings. 
+ 
+Dated: November 21, 2025 
+Washington, D.C. 
+ 
+ 
+/s/ Rachel Neuburger 
+Rachel Neuburger 
+Wilson Sonsini Goodrich & Rosati 
+1700 K Street NW 
+Fifth Floor 
+Washington, DC 20006 
+ 
+  
+ 
+ 
+ 
+ 

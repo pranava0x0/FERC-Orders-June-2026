@@ -21,8 +21,10 @@ Built for an energy-regulatory audience. Five tabs:
    list including each region's existing-tariff mechanics (each finding page-cited to the PDF + ferc.gov),
    and the full named-respondent roster — plus how to file or follow each docket.
 5. **Discourse**: stakeholder reception; a "what the RM26-4 commenters said" breakdown of all 423
-   ANOPR-docket filings (scraped from FERC eLibrary, grouped by stakeholder, with top-level stats); named
-   commentary across the political spectrum; and trade-press narratives.
+   ANOPR-docket filings (scraped from FERC eLibrary, grouped by stakeholder, with top-level stats and a
+   full document/attachment inventory for the 273 comments), plus nine flagship comments downloaded and
+   read in full with a stance-per-reform-category breakdown and an audit trail back to the saved files;
+   named commentary across the political spectrum; and trade-press narratives.
 
 ## Run locally
 
@@ -37,7 +39,7 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 25 tests across both suites
+node --test tests/*.test.mjs   # 26 tests across both suites
 ```
 
 Two suites, no dependencies:

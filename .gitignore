@@ -15,8 +15,11 @@ __pycache__/
 # links, and the DOE §403 letter the accuracy tests pin.
 sources/archived/
 *.pdf
+*.docx
 !docs/orders/*.pdf
 !sources/pdf/doe-403-large-loads-letter.pdf
+# RM26-4 comment bodies are re-derivable from their eLibrary accession links; commit the extracted
+# text (sources/comments/files/<accession>/*.txt) + metadata + summaries, not the source binaries.
 
 # OS / editor cruft
 .DS_Store

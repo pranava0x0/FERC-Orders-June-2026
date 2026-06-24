@@ -1,0 +1,25 @@
+{
+  "accession": "20251119-5170",
+  "filer": "NRG Energy, Inc.",
+  "signed": "Travis Kavulla",
+  "bucket": "generator_ipp",
+  "filed": "2025-11-19",
+  "elibrary": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20251119-5170",
+  "files": [
+    { "name": "Comments of NRG Energy ... signed Travis Kavulla.docx", "type": "DOCX", "path": "sources/comments/files/20251119-5170/Comments of NRG Energy Interconnection of Large Loads signed Travis Kavulla .docx", "text": "sources/comments/files/20251119-5170/Comments of NRG Energy.txt" }
+  ],
+  "read_from_pdf": true,
+  "summary": "Supports the ANOPR's principles but proposes five discrete changes — most notably pricing interconnection capacity through gas-pipeline-style 'open seasons' rather than first-come queues.",
+  "key_points": [
+    "Establish a rebuttable presumption that any load interconnection at 230 kV or above is a 'large load' subject to the standardized process.",
+    "Drop the proposed 20 MW size threshold.",
+    "Use open seasons to expedite interconnection and efficiently allocate scarce interconnection capacity (Kavulla's signature 'price the grid' argument).",
+    "Load and hybrid facilities responsible for 100% of the network-upgrade costs they cause.",
+    "Preserve the rights of large loads that already made commitments under state-prescribed procedures."
+  ],
+  "stances": { "study": "support", "cost": "strong support", "colo": "support", "flex": "support", "proximate": "support" },
+  "quotes": [
+    { "text": "NRG proposes that the final rule ... provide for the use of open seasons to expedite large load interconnections and to efficiently allocate interconnection capacity to such interconnections.", "page": 1 }
+  ],
+  "captured_at": "2026-06-24"
+}
