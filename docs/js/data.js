@@ -77,6 +77,10 @@ window.FERC_DATA = (function () {
     kavulla: { label: "Texas Energy & Power on Travis Kavulla’s “open season” argument", org: "Texas Energy & Power", tier: "secondary", url: "https://www.texasenergyandpower.com/p/price-the-grid-or-keep-rationing", captured: "2026-06-23", note: "Discusses Kavulla’s American Affairs essay arguing for pricing grid access via a gas-pipeline-style ‘open season’ with transferable rights." },
     insideclimate: { label: "“Federal Regulators Tell Grid Operators to Fix Their Rules on Data Centers”", org: "Inside Climate News", tier: "secondary", url: "https://insideclimatenews.org/news/18062026/federal-energy-regulatory-commission-data-center-orders/", captured: "2026-06-23", note: "June 18, 2026 coverage carrying Sierra Club and Southern Environmental Law Center reactions." },
     publiccitizen: { label: "“FERC Must Reconsider Risks Posed by Data Centers to Power Grids”", org: "Public Citizen", tier: "secondary", url: "https://www.citizen.org/news/ferc-must-reconsider-risks-posed-by-data-centers-to-power-grids/", captured: "2026-06-23", note: "Consumer-watchdog stance; pressed for a temporary moratorium on new data-center interconnections pending NERC reliability alerts." },
+    // Post-issuance commentary refresh (gathered 2026-06-24).
+    heatmap: { label: "“FERC Has a New Plan for Data Centers”", org: "Heatmap News (Matthew Zeitlin)", tier: "secondary", url: "https://heatmap.news/energy/ferc-data-center-plan", captured: "2026-06-24", note: "Analysis; carries former FERC chairman Neil Chatterjee’s ‘a very FERC-y approach’ reaction and PJM price-surge context." },
+    duanemorris: { label: "“FERC Acts to Advance Data Center and Large Load Integration in Six RTO Regions”", org: "Duane Morris LLP", tier: "secondary", url: "https://www.duanemorris.com/alerts/ferc_acts_advance_data_center_large_load_integration_six_rto_regions_0626.html", captured: "2026-06-24", note: "Law-firm alert; partner Robert Montejo on flexibility as connection leverage." },
+    mdopc: { label: "“Maryland lawmakers back data center transmission cost complaint at FERC”", org: "Utility Dive", tier: "secondary", url: "https://www.utilitydive.com/news/maryland-ratepayer-advocate-ferc-data-center-complaint-transmission/823244/", captured: "2026-06-24", note: "Maryland Office of People’s Counsel complaint on PJM cost allocation; 80 state lawmakers in support; ~$1.6B ratepayer exposure cited." },
   };
 
   const meta = {
@@ -84,7 +88,7 @@ window.FERC_DATA = (function () {
     subtitle: "From the DOE §403 ANOPR (Docket RM26-4-000) to FERC’s June 18, 2026 tailored §206 show cause orders",
     items: "Items E-7 to E-12 · Dockets EL26-67-000 to EL26-72-000",
     capture: "2026-06-22",
-    discourseCapture: "2026-06-23",
+    discourseCapture: "2026-06-24",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
@@ -232,6 +236,12 @@ window.FERC_DATA = (function () {
       region: "Mid-Atlantic / 13 states + DC", cite: "195 FERC ¶ 61,211", pages: 114,
       respondents: "PJM + 45 named transmission owners",
       status: "Co-location rules already in place",
+      unique: "The only market that has already cleared the co-location question. PJM’s co-located-load rules were settled in a separate proceeding (the Dec. 2025 Co-Location Order), so this §206 builds on that record instead of reopening it — and PJM’s new services become the template the other five orders are told to copy.",
+      asks: [
+        "Protecting existing deals: a reasonable implementation period, and time to finalize agreements nearing completion when the new tariff provisions are filed (Section IV).",
+        "Whether the new flexible-load services would change regional and local transmission planning, given uncertainty in the type, location, and quantity of such loads (Section IV).",
+        "Whether a generating facility serving an electrically proximate or co-located load could join PJM’s energy, ancillary-services, and capacity markets, and how it would be accredited (Section IV).",
+      ],
       dir: [
         { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 6(a)", pg: 7 },
         { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies … to accurately account for advanced transmission technologies", p: "P 70", pg: 70 },
@@ -240,17 +250,24 @@ window.FERC_DATA = (function () {
         { t: "Service for flexible loads", q: "transmission services that reflect Eligible Customers taking transmission service on behalf of flexible large loads that are willing and able to limit their use of the transmission system", p: "P 85", pg: 56 },
       ],
       reg: [
-        "Co-location and behind-the-meter generation were already settled in the separate PJM Co-Location Order (193 FERC ¶ 61,217, Dec. 18, 2025; reh’g 195 FERC ¶ 61,209). This §206 order builds on that record rather than re-litigating it.",
-        "Directs PJM to extend the services created there (Interim NITS, Firm and Non-Firm Contract Demand) to flexible large loads (P 85).",
-        "Defines an ‘electrically proximate large load’ as one no more than two substations from the generating facility, and targets co-located loads ≥ 50 MW for new generator-interconnection study (P 62).",
-        "Excludes named non-public-utility TOs from the show-cause directive under FPA § 201(f), but PJM must still answer for their Tariff provisions (P 7 n.13).",
+        "Co-location and behind-the-meter generation were already settled in the separate PJM Co-Location Order (193 FERC ¶ 61,217, Dec. 18, 2025; reh’g 195 FERC ¶ 61,209); this §206 order builds on that record rather than re-litigating it.",
+        "Directs PJM to extend the services created there — Interim NITS, Firm and Non-Firm Contract Demand — to flexible large loads (P 85).",
+        "The only order to fix a distance test: an ‘electrically proximate large load’ is one no more than two substations from the generating facility (P 62).",
+        "Targets large co-located loads of 50 MW or greater for new generator-interconnection study procedures, tied to the Co-Location Order’s definition (P 62).",
+        "Excludes named non-public-utility TOs (e.g., AMP Transmission, Cleveland Public Power, East Kentucky Power Cooperative) from the show-cause directive under FPA § 201(f), but PJM must still answer for their Tariff provisions (P 7 n.13).",
       ],
+      respondentList: ["AEP Appalachian Transmission Company, Inc.", "AEP Indiana Michigan Transmission Company, Inc.", "AEP Kentucky Transmission Company, Inc.", "AEP Ohio Transmission Company, Inc.", "AEP West Virginia Transmission Company, Inc.", "Allegheny Electric Cooperative, Inc.", "American Transmission Systems, Incorporated", "Appalachian Power Company", "Atlantic City Electric Company", "Baltimore Gas and Electric Company", "Commonwealth Edison Company", "Commonwealth Edison Company of Indiana, Inc.", "Dayton Power and Light Company", "Delmarva Power & Light Company", "Duke Energy Kentucky, Inc.", "Duke Energy Ohio, Inc.", "Duquesne Light Company", "Essential Power Rock Springs, LLC", "Hudson Transmission Partners, LLC", "Indiana Michigan Power Company", "Jersey Central Power & Light Company", "Kentucky Power Company", "Keystone Appalachian Transmission Company", "Kingsport Power Company", "Linden VFT, LLC", "Mid-Atlantic Interstate Transmission, LLC", "Monongahela Power Company", "Neptune Regional Transmission System, LLC", "NextEra Energy Transmission MidAtlantic Indiana, Inc.", "Ohio Power Company", "Ohio Valley Electric Corporation", "Old Dominion Electric Cooperative", "PECO Energy Company", "PPL Electric Utilities Corporation", "The Potomac Edison Company", "Potomac Electric Power Company", "Public Service Electric and Gas Company", "Rockland Electric Company", "Silver Run Electric, LLC", "Trans-Allegheny Interstate Line Company", "Transource West Virginia, LLC", "UGI Utilities, Inc.", "Virginia Electric and Power Company", "Wabash Valley Power Association, Inc.", "Wheeling Power Company"],
     },
     {
       item: "E-8", rto: "MISO", rtoFull: "Midcontinent Independent System Operator, Inc.", docket: "EL26-70-000", url: "e8", pdf: "orders/e-8-miso-el26-70-000.pdf",
       region: "15 states, Midwest + South", cite: "195 FERC ¶ 61,212", pages: 115,
-      respondents: "MISO + ~31 named transmission owners",
+      respondents: "MISO + 30 named transmission owners",
       status: "Early-stage large-load rules",
+      unique: "The fast-growing middle of the pack. MISO runs a Large Load Working Group and an Expedited Project Review path, and even told its own stakeholders the Tariff lacks a ‘consistent or transparent framework’ for large loads — but it has no co-location procedures in the Tariff yet and only the basic Order No. 888 services, so FERC imports the PJM and SPP templates ‘with regional variation.’",
+      asks: [
+        "Whether and how Eligible Customers taking the new services would be charged for regulation and black-start service (P 99).",
+        "An appropriate minimum level of cost recovery and financial security under any cost-recovery agreement (P 119).",
+      ],
       dir: [
         { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system", p: "P 119", pg: 74 },
         { t: "Cost-recovery agreement", q: "a pro forma cost recovery agreement between MISO, the relevant transmission owner, and Eligible Customer taking transmission service on behalf of the large load to mitigate the risk of cost shifting", p: "P 6(b)", pg: 6 },
@@ -264,12 +281,18 @@ window.FERC_DATA = (function () {
         "MISO leans on its Expedited Project Review (Attachment FF) for out-of-cycle approval of local projects, with applications rising on data-center growth (PP 21-22).",
         "MISO itself told its Large Load Working Group the Tariff does ‘not provide a consistent or transparent framework to evaluate’ large loads (PP 29-32).",
       ],
+      respondentList: ["AEP Indiana Michigan Transmission Company, Inc.", "ALLETE, Inc.", "Ameren Illinois Company", "Ameren Transmission Company of Illinois", "American Transmission Company, LLC", "Cleco Power LLC", "Duke Energy Indiana, LLC", "Entergy Arkansas, LLC", "Entergy Louisiana, LLC", "Entergy Mississippi, LLC", "Entergy New Orleans, LLC", "Entergy Texas, Inc.", "GridLiance Heartland LLC", "Indianapolis Power & Light Company", "International Transmission Company", "ITC Midwest LLC", "Michigan Electric Transmission Company, LLC", "MidAmerican Energy Company", "Montana-Dakota Utilities Company", "Northern Indiana Public Service Company LLC", "Northern States Power Company, a Minnesota Corporation", "Northern States Power Company, a Wisconsin Corporation", "Northwestern Wisconsin Electric Company", "Otter Tail Power Company", "Pioneer Transmission, LLC", "Republic Transmission, LLC", "Southern Indiana Gas & Electric Company", "Union Electric Company", "Wabash Valley Power Association, Inc.", "Wolverine Power Supply Cooperative, Inc."],
     },
     {
       item: "E-9", rto: "SPP", rtoFull: "Southwest Power Pool, Inc.", docket: "EL26-68-000", url: "e9", pdf: "orders/e-9-spp-el26-68-000.pdf",
       region: "Central U.S., 14+ states", cite: "195 FERC ¶ 61,213", pages: 92,
-      respondents: "SPP + 23 named transmission owners",
+      respondents: "SPP + 22 named transmission owners",
       status: "Most mature: HILL / HILLGA",
+      unique: "The acknowledged leader. FERC adopts SPP’s own ‘High Impact Large Load’ (HILL) definition as the order’s definition of large load and commends its HILLGA and Conditional HILL services — so SPP’s is the shortest order (92 pp), finds only two gaps to close, and its frameworks become the model the other regions are told to follow.",
+      asks: [
+        "A mechanism to credit large-load cost-recovery payments toward transmission owners’ revenue requirements (Ordering (B)(1)(b)).",
+        "Evaluating alternative transmission technologies in all instances without a customer request — and, if conventional upgrades are chosen instead, justifying why (P 46).",
+      ],
       dir: [
         { t: "Alternative tech + operational terms", q: "require the evaluation of alternative transmission technologies, and memorialize ongoing operational requirements in a transmission service agreement", p: "Ordering (B)(1)(a)", pg: 21 },
         { t: "Evaluate alt tech by default", q: "in all instances, without the need for a request from the Eligible Customer seeking transmission service on behalf of large load", p: "P 46", pg: 52 },
@@ -280,15 +303,22 @@ window.FERC_DATA = (function () {
       reg: [
         "The order adopts SPP’s own HILL (High Impact Large Load) definition as its definition of ‘large load,’ and treats ‘flexible’ loads as the HILL subset not co-located with generation and willing to limit withdrawals (PP 4, 6 n.16).",
         "FERC commends SPP’s already-approved HILL study process and HILLGA (High Impact Large Load Generation Assessment, accepted Jan. 14, 2026, 194 FERC ¶ 61,031), which expedites generation serving an electrically proximate HILL (PP 15-18).",
-        "SPP’s Conditional HILL Service (accepted June 5, 2026) is an as-available, non-firm, 7-year-max service, curtailable until firm service is available (P 17).",
-        "Two gaps found even in SPP’s leading framework: no requirement to evaluate alternative transmission technologies, and no pro forma terms memorializing operational requirements in a transmission service agreement (P 27).",
+        "SPP’s Conditional HILL Service (CHILLS, accepted June 5, 2026) is an as-available, non-firm, 7-year-max service, curtailable until firm service is available (P 17).",
+        "FERC points SPP to its under-development Price Adaptive Load Service (PALS) — a non-firm option for price-sensitive flexible loads — and its Highway/Byway (Attachment J) cost-allocation process as the existing baseline (PP 19-21).",
+        "Even in this leading framework FERC finds only two gaps: no requirement to evaluate alternative transmission technologies, and no pro forma terms memorializing operational requirements in a transmission service agreement (P 27).",
       ],
+      respondentList: ["AEP Oklahoma Transmission Company, Inc.", "AEP Southwestern Transmission Company, Inc.", "Deseret Generation & Transmission Co-operative, Inc.", "Empire District Electric Company", "Evergy Kansas Central, Inc.", "Evergy Kansas South, Inc.", "Evergy Metro, Inc.", "Evergy Missouri West, Inc.", "GridLiance High Plains LLC", "ITC Great Plains, LLC", "Mountrail-Williams Electric Cooperative", "NextEra Energy Transmission Southwest, LLC", "NorthWestern Energy Public Service Corporation", "Oklahoma Gas and Electric Company", "Prairie Wind Transmission, LLC", "Public Service Company of Oklahoma", "Southwestern Electric Power Company", "Southwestern Public Service Company", "Transource Missouri, LLC", "Transource Oklahoma, LLC", "Tri-State Generation and Transmission Association, Inc.", "Upper Missouri G. & T. Electric Cooperative, Inc."],
     },
     {
       item: "E-10", rto: "CAISO", rtoFull: "California Independent System Operator Corp.", docket: "EL26-71-000", url: "e10", pdf: "orders/e-10-caiso-el26-71-000.pdf",
       region: "California (+ WEIM footprint)", cite: "195 FERC ¶ 61,214", pages: 118,
       respondents: "CAISO + 24 Participating Transmission Owners",
       status: "No Order No. 888 service",
+      unique: "The structural outlier. CAISO doesn’t offer traditional Order No. 888 transmission service at all — no firm long-term reservations, no formal application process, just a single ‘daily’ service — and its Participating TOs, not CAISO, lead load interconnection. FERC even gives it an escape hatch no other order offers: explain whether its non-888 framework already meets the concerns.",
+      asks: [
+        "Whether, given that CAISO does not offer Order No. 888 service, its existing framework already addresses the concerns — or what equivalent options it would create (p. 60).",
+        "How load-addition study procedures and operational requirements would work when its Participating TOs, not CAISO, lead load interconnection.",
+      ],
       dir: [
         { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 5", pg: 25 },
         { t: "Alternative transmission technologies", q: "they lack clear and consistent provisions requiring the evaluation of alternative transmission technologies as potential solutions to accommodate an Eligible Customer’s request", p: "PP 152-153", pg: 39 },
@@ -299,15 +329,22 @@ window.FERC_DATA = (function () {
       reg: [
         "CAISO is the structural outlier: it ‘does not offer traditional Order No. 888 network and point-to-point transmission services, offers no firm, long-term transmission reservations of capacity, and does not provide a formal application process for transmission service’ (P 19).",
         "It offers only a single ‘daily’ service; all non-historical, non-wheeling energy is treated as ‘new firm use,’ and CAISO curtails on Tariff-defined scheduling priorities (pp. 17-18).",
-        "The Participating TOs ‘play the lead role in managing the interconnection of load’; CAISO’s role is accounting for state-projected load in its Transmission Planning Process, which is tied to the CEC demand forecast and CPUC integrated resource plans (p. 18).",
-        "Alternative compliance path: CAISO may explain whether, ‘given that CAISO does not offer the transmission services required by Order No. 888,’ its framework already addresses the concerns (p. 60).",
+        "The Participating TOs ‘play the lead role in managing the interconnection of load’; CAISO’s own role is accounting for state-projected load in its Transmission Planning Process (p. 18).",
+        "That planning process is tightly bound to California state processes — the CEC’s statewide demand forecast and the CPUC’s integrated resource plans (p. 18).",
+        "Alternative compliance path no other order offers: CAISO may explain whether, ‘given that CAISO does not offer the transmission services required by Order No. 888,’ its framework already addresses the concerns (p. 60).",
       ],
+      respondentList: ["Citizen S-Line Transmission LLC", "Citizens Sunrise Transmission LLC", "Citizens Sycamore-Penasquitos Transmission LLC", "City of Anaheim, California", "City of Azusa, California", "City of Banning, California", "City of Colton, California", "City of Pasadena, California", "City of Riverside, California", "DCR Transmission, L.L.C.", "DesertLink, LLC", "GridLiance West LLC", "Horizon West Transmission, LLC", "LS Power Grid California, LLC", "Morongo Transmission LLC", "Pacific Gas and Electric Company", "San Diego Gas & Electric Company", "Southern California Edison Company", "Startrans IO, L.L.C.", "SunZia Transmission, LLC", "Trans Bay Cable LLC", "Valley Electric Association, Inc.", "Viridon Path 15, LLC", "Western Area Power Administration"],
     },
     {
       item: "E-11", rto: "ISO-NE", rtoFull: "ISO New England Inc.", docket: "EL26-72-000", url: "e11", pdf: "orders/e-11-isone-el26-72-000.pdf",
       region: "Six New England states", cite: "195 FERC ¶ 61,215", pages: 115,
       respondents: "ISO-NE + 16 Participating Transmission Owners",
       status: "Transmission-constrained grid",
+      unique: "The most transmission-constrained. With a system peak of only ~30,000 MW and significant existing constraints, FERC calls the cost-shifting and reliability risks ‘particularly acute’ here — and its planning runs off a CELT forecast that doesn’t even include large proposed data-center loads.",
+      asks: [
+        "How it would study and serve large loads on a system peaking at only ~30,000 MW with significant transmission constraints (P 11 n.31).",
+        "Applying a PJM-style MW threshold to the ‘Monthly Regional Network Load’ behind-the-meter-netting definition (P 60).",
+      ],
       dir: [
         { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 5", pg: 25 },
         { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system", p: "P 75", pg: 75 },
@@ -321,12 +358,19 @@ window.FERC_DATA = (function () {
         "Its Tariff lets Network Customers net BTMG via the ‘Monthly Regional Network Load’ definition; the order imports the PJM MW-threshold remedy (P 60).",
         "ISO-NE plans off the CELT load forecast, which does not generally include large proposed loads such as data centers (P 22). The order extends the PJM co-location services (compliance accepted Apr. 16, 2026, 195 FERC ¶ 61,030) here, with regional variation (PP 57-59).",
       ],
+      respondentList: ["Central Maine Power Company", "The Connecticut Light and Power Company", "Fitchburg Gas and Electric Light Company", "Green Mountain Power Corporation", "Maine Electric Power Company", "The Narragansett Electric Company", "New England Power Company", "New Hampshire Transmission, LLC", "NSTAR Electric Company", "Public Service Company of New Hampshire", "The United Illuminating Company", "Unitil Energy Systems, Inc.", "Vermont Electric Cooperative, Inc.", "Vermont Electric Power Company, Inc.", "Vermont Transco LLC", "Versant Power"],
     },
     {
       item: "E-12", rto: "NYISO", rtoFull: "New York Independent System Operator, Inc.", docket: "EL26-69-000", url: "e12", pdf: "orders/e-12-nyiso-el26-69-000.pdf",
       region: "New York State", cite: "195 FERC ¶ 61,216", pages: 119,
       respondents: "NYISO + 9 named New York transmission owners",
       status: "Largely outside the tariff today",
+      unique: "The least-codified. NYISO’s large-load handling lives largely outside its tariff — study deposits and assumptions sit in non-tariff documents, it has no tariff definition of ‘large load,’ and it doesn’t expect to file co-location reforms until 2027, which FERC cites as exactly why a §206 proceeding is needed now. It is also the only order with a 45-day window to seek up to a 90-day abeyance.",
+      asks: [
+        "How NYISO and its TOs will timely study transmission service — within 60–90 days of a request (P 44).",
+        "Why a pro forma cost-recovery agreement is not necessary to ensure just and reasonable rates, or else propose one (P 89).",
+        "A definition of ‘large load’ as a new category, with readiness requirements to deter speculative requests (P 64).",
+      ],
       dir: [
         { t: "Timely study window", q: "how NYISO and/or the Transmission Owners will timely study (i.e., within 60-90 days of receiving the request) the provision of transmission service … on behalf of large loads", p: "P 44", pg: 31 },
         { t: "Define ‘large load’", q: "it lacks a definition of large load, as a new category of load", p: "P 64", pg: 41 },
@@ -336,10 +380,12 @@ window.FERC_DATA = (function () {
       ],
       reg: [
         "NYISO has load-interconnection procedures for projects > 10 MW at 115 kV+ (or ≥ 80 MW below 115 kV), but the order finds them only partially in the Tariff: study details, deposits, and assumptions sit in non-Tariff documents (PP 32, 46, 64).",
+        "It has no tariff definition of ‘large load’ as a category (P 64); the order asks it to set one, plus readiness requirements to deter speculative requests.",
         "NYISO already defines ‘BTM:NG Resource’ and ‘Host Load,’ but its model presumes a firm Host Load that does not participate in wholesale markets; the new directives attach to those definitions (PP 36, 96-97).",
         "NYISO is weighing co-location reforms but doesn’t expect to file tariff revisions until 2027, which FERC cites as why the § 206 proceeding is needed now (PP 36-37).",
-        "Unlike SPP, NYISO is not told to adopt HILLGA; but its Tariff may still be unjust and unreasonable without any tailored study process for generation serving electrically proximate or large co-located load (P 123).",
+        "Unlike SPP, NYISO is not told to adopt HILLGA, though its Tariff may still be unjust and unreasonable without a tailored study process for proximate / co-located generation (P 123).",
       ],
+      respondentList: ["Central Hudson Gas & Electric Corporation", "Consolidated Edison Company of New York, Inc.", "LS Power Grid New York Corporation I", "New York State Electric & Gas Corporation", "New York Transco LLC", "NextEra Energy Transmission New York, Inc.", "Niagara Mohawk Power Corp.", "Orange and Rockland Utilities, Inc.", "Rochester Gas and Electric Corporation"],
     },
   ];
 
@@ -409,15 +455,18 @@ window.FERC_DATA = (function () {
       { t: "‘Historic’ / ‘landmark’: the framing is near-universal across trade press and the bar, with FERC asserting itself on load interconnection in an area it historically left alone.", src: ["akin", "rew", "powermag"] },
       { t: "Speed via procedure: § 206 show cause beats a multi-year NOPR; commentators read it as DOE’s April 30 deadline operationalized across all six markets at once.", src: ["aaf", "rtoinsider"] },
       { t: "Regional flexibility reads as a deliberate design choice: SPP and PJM are treated as proactive leaders, others told to catch up without a uniform template.", src: ["powermag", "latitude"] },
+      { t: "Flexibility is becoming the price of speed: practitioners read curtailable / flexible service as the most valuable near-term lever to connect faster, turning a load’s willingness to limit usage into bargaining power.", src: ["duanemorris", "norris"] },
     ],
     friction: [
       { t: "Cost allocation is the central fight: how aggressively must large loads pre-fund and backstop upgrades, and over what crediting term? The ANOPR explicitly left crediting open.", src: ["utilitydive", "doe403"] },
       { t: "Co-location / BTM remains contested: one commentator reads the orders as reopening BTM access a December PJM ruling had narrowed, and PJM’s separate E-2 track shows the issue isn’t settled.", src: ["substack", "whitecase"] },
       { t: "Speed vs. rigor: the orders set a 45-day window to request abeyance of up to 90 days (NYISO P 42), which prevents indefinite stalling but compresses stakeholder process; the mandatory alternative-transmission-technology evaluation could itself add study time.", src: ["e12", "substack"] },
       { t: "Coverage-gap questions: commenters flag that some transmission owners (e.g., Nebraska Public Power District, Great River Energy) appear absent from the published respondent lists, a completeness question to watch.", src: ["substack"] },
+      { t: "The cost-allocation fight is already concrete and pending: Maryland’s ratepayer advocate, backed by 80 state lawmakers (June 17, 2026), says PJM’s tariff lets data-center transmission costs ‘leak’ across zones — ‘an unjust subsidy for that data center load’ — and pegs Maryland’s exposure near $1.6 billion over a decade (FERC comment window extended to July 27, 2026).", src: ["mdopc", "utilitydive"] },
+      { t: "Fragmentation risk: six regional answers on six different timelines give multi-region developers clarity within a market but a patchwork across them, and fresh diligence for near-term deals.", src: ["utilitydive", "duanemorris"] },
     ],
     // outlet chips render from cited source records (each links to its SOURCES entry) — no uncited names.
-    outlets: ["utilitydive", "rtoinsider", "latitude", "tdworld", "powermag", "rew", "akin", "sheppard", "whitecase", "natlaw", "aaf", "substack"],
+    outlets: ["utilitydive", "rtoinsider", "latitude", "tdworld", "powermag", "rew", "akin", "sheppard", "whitecase", "natlaw", "aaf", "substack", "heatmap", "duanemorris"],
   };
 
   // Named commentary spanning the political spectrum (Tab 3). Each is the source's own
@@ -453,6 +502,47 @@ window.FERC_DATA = (function () {
       take: "The most skeptical: pressed FERC for a temporary moratorium on new data-center interconnections until NERC reliability alerts are resolved, and warns against weakening state authority over data centers.",
       src: ["publiccitizen"],
     },
+    {
+      name: "Mona Dajani", affil: "Cooley LLP", lean: "nonpartisan",
+      take: "Reads the six-order route as the end of any national template: ‘The era of one national standard for data center interconnection is over before it began.’ What replaces it, she says, is ‘six regional answers to the same question, decided on six different timelines’ — clarity within each region, fragmentation across them.",
+      src: ["utilitydive"],
+    },
+    {
+      name: "Neil Chatterjee", affil: "former FERC chairman", lean: "right",
+      take: "Calls it ‘a very FERC-y approach’ — approving of the choice to push region-specific reform through §206 show cause orders rather than one national rule, which he reads as both faster to deliver and harder to challenge.",
+      src: ["heatmap"],
+    },
+  ];
+
+  /* ---------------------------------------------------------------- OVERVIEW */
+  // Concurring statements attached to each order (quoted from the OCR'd order text and cited to the
+  // PJM order PDF, where the five run pp. 84–114). All five joined every order; only the emphasis differs.
+  const commissioners = [
+    {
+      name: "Laura V. Swett", role: "Chairman", page: 84,
+      quote: "no longer the sleepy, responsive agency of the past",
+      gist: "Defends the procedure: six tailored show cause orders instead of one rule, because §206 is faster and more ‘legally durable.’ Points to rulemakings like Order Nos. 2023 and 2222 still not fully implemented years on, and notes the six markets cover nearly two-thirds of FERC-jurisdictional load.",
+    },
+    {
+      name: "David Rosner", role: "Commissioner", page: 90,
+      quote: "Bring Your Own New Generation",
+      gist: "Frames the orders as four pillars — protecting consumers, safeguarding reliability, enhancing transparency, fostering innovation. Stresses Cost Recovery Agreements so a data center that never shows up can’t shift costs onto residential customers, grid-enhancing technologies, and ‘Bring Your Own New Generation’ modeled on SPP’s HILLGA.",
+    },
+    {
+      name: "Lindsay S. See", role: "Commissioner", page: 98,
+      quote: "affordability must be at the forefront",
+      gist: "Two themes: large-load interconnection is a shared federal-State responsibility, so the orders should support state efforts rather than override them; and affordability must stay central. Pushes alternative transmission technologies to hold down network-upgrade costs and asks states what cost data they actually need.",
+    },
+    {
+      name: "Judy W. Chang", role: "Commissioner", page: 103,
+      quote: "fundamentally a customer protection statute",
+      gist: "Focuses on building records that survive review under §206’s ex parte limits, calling the FPA ‘fundamentally a customer protection statute.’ Warns that cost-recovery agreements ‘untethered from any assessment of the actual cost’ of serving a load may not protect other customers, and notes the orders deliberately don’t assert the ANOPR’s broadest jurisdictional theory.",
+    },
+    {
+      name: "David LaCerte", role: "Commissioner", page: 111,
+      quote: "prepared to play jurisdictional hardball",
+      gist: "The sharpest tone. Invites region-specific §205 proposals and offers operators the ‘first pen,’ but says he is ‘prepared to play jurisdictional hardball’ — if they don’t file robust fixes, FERC will ‘dictat[e] the solutions for you.’ Ties the orders to state Ratepayer Protection Pledges.",
+    },
   ];
 
   /* ------------------------------------------------ file / follow the dockets */
@@ -479,5 +569,5 @@ window.FERC_DATA = (function () {
     ],
   };
 
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, participate };
+  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, commissioners, participate };
 })();

@@ -47,7 +47,7 @@ const EXPECT = {
 
 test("data object loaded", () => {
   assert.ok(D, "window.FERC_DATA present");
-  for (const k of ["SOURCES", "meta", "kpis", "timeline", "toplines", "categories", "dockets", "jurisdiction", "regional", "reception", "media"]) {
+  for (const k of ["SOURCES", "meta", "kpis", "timeline", "toplines", "categories", "dockets", "jurisdiction", "regional", "reception", "media", "voices", "commissioners"]) {
     assert.ok(D[k], `missing section: ${k}`);
   }
 });
@@ -77,6 +77,7 @@ test("all referenced source ids resolve", () => {
   check(D.reception, "reception");
   check(D.media.consensus, "consensus");
   check(D.media.friction, "friction");
+  check(D.voices, "voices");
   D.dockets.forEach((d) => {
     assert.ok(ids.has(d.url), `docket ${d.item} url-source ${d.url}`);
     assert.equal(D.SOURCES[d.url].tier, "order", `docket ${d.item} source is an order PDF`);
@@ -101,10 +102,39 @@ test("six dockets, correct item -> RTO -> docket mapping", () => {
       assert.ok(x.q.length >= 20, `${item} directive ${i} quote is substantive`);
     });
     assert.ok(Array.isArray(d.reg) && d.reg.length >= 3, `${item} has ≥3 region-specific findings`);
+    // what's-unique-per-system enrichment
+    assert.ok(typeof d.unique === "string" && d.unique.length >= 40, `${item} has a 'what's unique' summary`);
+    assert.ok(Array.isArray(d.asks) && d.asks.length >= 1, `${item} has ≥1 system-specific ask`);
+    // full respondent roster traces to the stated count exactly (OCR caption recount)
+    assert.ok(Array.isArray(d.respondentList) && d.respondentList.length === Number(firstNum(d.respondents)),
+      `${item} respondentList length (${(d.respondentList || []).length}) matches stated count (${firstNum(d.respondents)})`);
+    d.respondentList.forEach((r, i) => assert.ok(typeof r === "string" && r.length >= 3, `${item} respondent ${i} is a real name`));
+    assert.equal(new Set(d.respondentList).size, d.respondentList.length, `${item} respondent list has no duplicates`);
   }
   // the six cites are distinct and consecutive
   const cites = new Set(D.dockets.map((d) => d.cite));
   assert.equal(cites.size, 6, "six distinct FERC cites");
+  // the distinct-findings counts intentionally vary (not a forced uniform list per docket)
+  assert.ok(new Set(D.dockets.map((d) => d.reg.length)).size >= 2, "distinct-findings counts vary across dockets");
+});
+
+test("commissioner statements: five, distinct, anchor quotes verbatim in the PJM order text", () => {
+  assert.ok(Array.isArray(D.commissioners) && D.commissioners.length === 5, "five commissioner statements");
+  const pjmText = readFileSync(join(here, "..", "sources", "text", "orders", "e-7-pjm-el26-67-000.txt"), "utf8")
+    .replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ");
+  const names = new Set();
+  for (const c of D.commissioners) {
+    assert.ok(c.name && c.role && c.gist && c.quote, `${c.name} has name/role/gist/quote`);
+    assert.ok(c.gist.length >= 80, `${c.name} gist is substantive`);
+    assert.ok(Number.isInteger(c.page) && c.page >= 70 && c.page <= 119, `${c.name} page anchor plausible`);
+    const q = c.quote.replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ");
+    assert.ok(pjmText.includes(q), `${c.name}'s anchor quote "${c.quote}" appears verbatim in the PJM order text`);
+    names.add(c.name);
+  }
+  assert.equal(names.size, 5, "five distinct commissioners");
+  for (const n of ["Swett", "Rosner", "See", "Chang", "LaCerte"]) {
+    assert.ok([...names].some((x) => x.includes(n)), `${n} present in the roster`);
+  }
 });
 
 test("five reform categories, numbered 1..5, each fully populated", () => {

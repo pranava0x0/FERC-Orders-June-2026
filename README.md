@@ -8,13 +8,16 @@ Docket Nos. **EL26-67-000 to EL26-72-000**) directed at all six RTOs/ISOs.
 Built for an energy-regulatory audience. Five tabs:
 
 1. **Overview**: the six headline figures, an at-a-glance block (authority, dockets, reporter cite,
-   commissioners), and a short background on the regulatory arc.
+   commissioners), a short background on the regulatory arc, and a "what each commissioner emphasized"
+   block drawn from the five concurring statements.
 2. **Timeline**: the chronology (Oct 2025 → Jun 2026) and why FERC chose tailored §206 show cause
    orders over a generic NOPR.
 3. **Reforms**: the five reform categories, the transmission-vs-retail jurisdictional boundary, and the
    per-RTO regional distinctions, grounded in the orders' published framing.
-4. **Dockets (E-7 to E-12)**: the six per-RTO order cards, with each quoted directive linked to the
-   exact page of the committed order PDF, plus how to file or follow each docket.
+4. **Dockets (E-7 to E-12)**: the six per-RTO order cards — each leads with what's unique to that
+   system, then the quoted directives (linked to the exact page of the committed order PDF), the
+   system-specific Section IV asks, a variable-length distinct-findings list, and the full
+   named-respondent roster — plus how to file or follow each docket.
 5. **Discourse**: stakeholder reception, named commentary across the political spectrum, and
    trade-press narratives.
 
@@ -31,7 +34,7 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 22 tests across both suites
+node --test tests/*.test.mjs   # 23 tests across both suites
 ```
 
 Two suites, no dependencies:
@@ -66,7 +69,8 @@ The site is fully static; no Actions required.
   [`docs/orders/`](docs/orders/) and served by GitHub Pages (so `#page=` opens inline at the cited
   page); they remain re-downloadable from the linked ferc.gov URLs.
 
-Capture date: **2026-06-22** (the secondary commentary in the Discourse tab was gathered **2026-06-23**).
+Capture date: **2026-06-22** (the secondary commentary in the Discourse tab was gathered **2026-06-23**,
+with a **2026-06-24** refresh adding post-issuance analysis and critiques).
 Sources and extracted text live in [`sources/`](sources/), including the complete machine-readable text
 of all six orders in [`sources/text/orders/`](sources/text/orders/) (1.73M chars; a test asserts every
 quoted directive appears verbatim there).

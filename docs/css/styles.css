@@ -267,6 +267,32 @@ details.dreg ul { list-style: none; display: grid; gap: 6px; margin-top: 8px; }
 details.dreg li { font-size: 13px; color: #2b3744; padding-left: 14px; position: relative; line-height: 1.4; }
 details.dreg li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); font-size: 10px; top: 2px; }
 
+/* What's-unique callout + system-specific asks (Dockets tab) */
+.docket-unique { margin-top: 12px; background: var(--surface-2); border-left: 3px solid var(--accent); border-radius: 0 5px 5px 0; padding: 9px 13px; }
+.docket-unique .label { display: block; margin-bottom: 3px; }
+.docket-unique p { font-size: 13.5px; color: var(--ink); line-height: 1.45; }
+.docket-asks { margin-top: 13px; }
+.docket-asks .label { display: block; margin-bottom: 6px; }
+.docket-asks ul { list-style: none; display: grid; gap: 5px; }
+.docket-asks li { font-size: 12.5px; color: #2b3744; line-height: 1.4; padding-left: 16px; position: relative; }
+.docket-asks li::before { content: "?"; position: absolute; left: 0; top: 0; color: var(--accent); font-weight: 700; font-size: 12px; }
+details.dros { margin-top: 9px; }
+details.dros ul.roster { grid-template-columns: 1fr; }
+@media (min-width: 560px) { details.dros ul.roster { grid-template-columns: 1fr 1fr; } }
+ul.roster li { font-size: 12px; color: var(--text-muted); }
+ul.roster li::before { content: "·"; }
+
+/* Commissioner statements (Overview tab) */
+.commish-grid { display: grid; gap: 11px; }
+@media (min-width: 760px) { .commish-grid { grid-template-columns: 1fr 1fr; } }
+.commish { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--masthead); border-radius: 0 6px 6px 0; padding: 12px 15px; }
+.commish-head { display: flex; align-items: baseline; gap: 6px 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.commish-name { font-weight: 700; font-size: 15px; color: var(--masthead); }
+.commish-role { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
+.commish-cite { margin-left: auto; display: inline-flex; gap: 6px; white-space: nowrap; }
+.commish-gist { font-size: 13.5px; color: #2b3744; line-height: 1.45; }
+.commish-quote { font-family: var(--font-serif); font-style: italic; font-size: 12.5px; color: var(--accent-ink); margin-top: 6px; }
+
 /* generic two-col blocks (jurisdiction / regional) */
 .blocks { display: grid; gap: 12px; }
 @media (min-width: 760px) { .blocks.two { grid-template-columns: 1fr 1fr; } }
