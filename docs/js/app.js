@@ -252,50 +252,12 @@
         "<p>" + esc(v.take) + "</p>" + srcChips(v.src) + "</div>";
     }).join("") + "</div>";
 
-    var commentsBlock = "";
-    if (D.comments) {
-      var cm = D.comments;
-      var maxN = cm.buckets.reduce(function (m, b) { return Math.max(m, b.n); }, 1);
-      var stats = '<div class="cm-stats">' +
-        [[cm.filings, "docket filings"], [cm.total, "comments"], [cm.orgs, "organizations"], [cm.interventions, "interventions"], [cm.peakN, "filed on the deadline (" + cm.peak + ")"]]
-          .map(function (s) { return '<div class="cm-stat"><span class="v">' + esc(String(s[0])) + '</span><span class="l">' + esc(s[1]) + "</span></div>"; }).join("") + "</div>";
-      var bars = '<div class="cm-buckets">' + cm.buckets.map(function (b) {
-        var egs = (b.egs || []).map(function (e) { return '<span class="cm-eg">' + esc(e) + "</span>"; }).join("");
-        return '<div class="cm-bucket"><div class="cm-bhead"><span class="cm-label">' + esc(b.label) +
-          '</span><span class="cm-n mono">' + b.n + "</span></div>" +
-          '<div class="cm-bar"><span style="width:' + Math.round((b.n / maxN) * 100) + '%"></span></div>' +
-          '<p class="cm-note">' + esc(b.note) + (egs ? ' <span class="cm-egs">' + egs + "</span>" : "") + "</p></div>";
-      }).join("") + "</div>";
-      var cmsrc = '<div class="srcs"><span class="label">Source</span>' +
-        '<a class="src-chip" data-tier="ferc" href="' + esc(cm.url) + '" target="_blank" rel="noopener noreferrer" title="FERC eLibrary docket sheet for RM26-4-000">eLibrary · RM26-4 docket sheet</a></div>';
-      // Flagship comments read in full: audit chain (eLibrary filing -> downloaded file -> summary) + stance per reform category.
-      var flag = "";
-      if (cm.flagships && cm.flagships.length) {
-        var CL = { study: "Study", cost: "Cost", colo: "Co-loc", flex: "Flex", proximate: "Prox-gen" };
-        var cards = cm.flagships.map(function (fl) {
-          var stances = Object.keys(CL).map(function (k) {
-            var v = (fl.stances || {})[k] || "silent";
-            var cls = /oppose/.test(v) ? "oppose" : /mixed/.test(v) ? "mixed" : /support/.test(v) ? "support" : "silent";
-            return '<span class="cm-stance ' + cls + '" title="' + esc(CL[k] + ": " + v) + '">' + esc(CL[k]) + "</span>";
-          }).join("");
-          var links = '<span class="cm-links"><a class="cite-link" href="' + esc(fl.elibrary) +
-            '" target="_blank" rel="noopener noreferrer" title="Open the eLibrary filing ' + esc(fl.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a>' +
-            (fl.file ? '<span class="cm-file mono" title="downloaded &amp; text-extracted in sources/comments/">' + esc(fl.file) + "</span>" : "") + "</span>";
-          return '<div class="cm-flag"><div class="cm-flag-head"><span class="cm-flag-name">' + esc(fl.filer) +
-            '</span><span class="cm-eg">' + esc(fl.bucketLabel || fl.bucket) + "</span>" + links + "</div>" +
-            '<p class="cm-flag-sum">' + esc(fl.summary) + "</p>" +
-            (fl.quote ? '<div class="cm-flag-quote">“' + esc(fl.quote) + '”</div>' : "") +
-            '<div class="cm-stances">' + stances + "</div></div>";
-        }).join("");
-        flag = head("Read in depth: flagship comments",
-          "A representative comment from each major camp, downloaded and read in full. Stance per reform category (Study · Cost · Co-loc · Flex · Prox-gen). Each links to its eLibrary filing; the downloaded file, extracted text, and a structured summary are committed under sources/comments/.") +
-          '<div class="cm-flagships">' + cards + "</div>";
-      }
-      commentsBlock = head("What the RM26-4 commenters said",
-        "All " + cm.filings + " filings in the ANOPR docket (RM26-4-000), scraped from FERC eLibrary on " + cm.captured +
-        " and grouped by stakeholder. The counts are exact; the all-camp position notes are a provisional read, while the flagship comments below were downloaded and read in full. Full manifest + summaries saved in the repo.") +
-        stats + '<p class="cm-meta">' + esc(cm.note) + "</p>" + bars + cmsrc + flag;
-    }
+    // The RM26-4 comment period (stats, respondent types, themes, the full filing list, and the
+    // read-in-full flagships) lives in its own Comments tab now; Discourse keeps a short pointer.
+    var commentsBlock = D.comments ? (head("Public comments: the RM26-4 ANOPR docket",
+      "All " + D.comments.filings + " filings were scraped from FERC eLibrary; " + (window.FERC_COMMENTS ? window.FERC_COMMENTS.downloaded : "270+") +
+      " comment bodies were downloaded and text-analyzed. The full timeline-ordered list, the top themes, the respondent-type breakdown, and the nine read-in-full flagship comments are in the Comments tab.") +
+      '<p class="cm-jump-wrap"><a class="cm-jump" href="#comments">Open the Comments tab →</a></p>') : "";
 
     return head("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.") + rec +
@@ -303,6 +265,108 @@
       head("Commentary across the spectrum",
       "Named voices from right of center to left of center, plus the research case for load flexibility. Each is the source's own position, not a FERC determination. Commentary gathered " + D.meta.discourseCapture + " (the order record is as of " + D.meta.capture + ").") + voices +
       head("Media & discourse", "The dominant narratives in energy trade press and policy circles.") + disc + outlets;
+  }
+
+  /* ---- TAB: Comments (RM26-4 comment period — list, themes, respondent types) ---- */
+  var MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function fmtD(mdy) { if (!mdy) return ""; var p = String(mdy).split("/"); return MON[+p[0] - 1] + " " + (+p[1]) + ", " + p[2]; }
+  function eli(acc) { return "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=" + acc; }
+  function roundOf(filed) { var p = String(filed).split("/"); if (p[2] === "2025" && +p[0] <= 11) return "initial"; if (p[2] === "2025" && +p[0] === 12) return "reply"; return "supplemental"; }
+
+  function renderComments() {
+    var CM = window.FERC_COMMENTS;
+    if (!CM) return head("The RM26-4 comment period", "Comment data did not load (js/comments-data.js).");
+
+    var statRow = '<div class="cm-stats">' +
+      [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.analyzed, "text-analyzed"], [CM.summarized, "read in full"]]
+        .map(function (s) { return '<div class="cm-stat"><span class="v">' + esc(String(s[0])) + '</span><span class="l">' + esc(s[1]) + "</span></div>"; }).join("") + "</div>";
+
+    var rounds = '<div class="cm-rounds">' + CM.rounds.map(function (r) {
+      return '<div class="cm-round"><span class="cm-round-n mono">' + r.count + '</span><span class="cm-round-l">' + esc(r.label) +
+        '</span><span class="cm-round-d mono">' + esc(fmtD(r.first)) + " – " + esc(fmtD(r.last)) + "</span></div>";
+    }).join("") + "</div>";
+
+    // respondent types: counts across all 273 filings; example orgs from the curated buckets where present
+    var bmeta = {};
+    if (D.comments && D.comments.buckets) D.comments.buckets.forEach(function (b) { bmeta[b.label] = b; });
+    var maxT = CM.respondentTypes.reduce(function (m, t) { return Math.max(m, t.count); }, 1);
+    var types = '<div class="cm-types">' + CM.respondentTypes.map(function (t) {
+      var egs = ((bmeta[t.label] || {}).egs || []).slice(0, 3).map(function (e) { return '<span class="cm-eg">' + esc(e) + "</span>"; }).join("");
+      return '<div class="cm-type"><div class="cm-bhead"><span class="cm-label">' + esc(t.label) + '</span><span class="cm-n mono">' + t.count + "</span></div>" +
+        '<div class="cm-bar"><span style="width:' + Math.round((t.count / maxT) * 100) + '%"></span></div>' +
+        (egs ? '<p class="cm-note"><span class="cm-egs">' + egs + "</span></p>" : "") + "</div>";
+    }).join("") + "</div>";
+
+    // themes: keyword prevalence across the analyzed bodies (a measured signal, not a coded position)
+    var themes = '<div class="cm-themes">' + CM.themes.map(function (t) {
+      return '<div class="cm-theme"><div class="cm-bhead"><span class="cm-label">' + esc(t.label) + '</span><span class="cm-n mono">' + t.pct + '%</span></div>' +
+        '<div class="cm-bar theme"><span style="width:' + t.pct + '%"></span></div>' +
+        '<p class="cm-note mono">' + t.count + " of " + CM.analyzed + " comments mention it</p></div>";
+    }).join("") + "</div>";
+
+    var flag = "";
+    if (D.comments && D.comments.flagships && D.comments.flagships.length) {
+      var CL = { study: "Study", cost: "Cost", colo: "Co-loc", flex: "Flex", proximate: "Prox-gen" };
+      var cards = D.comments.flagships.map(function (fl) {
+        var stances = Object.keys(CL).map(function (k) {
+          var v = (fl.stances || {})[k] || "silent";
+          var cls = /oppose/.test(v) ? "oppose" : /mixed/.test(v) ? "mixed" : /support/.test(v) ? "support" : "silent";
+          return '<span class="cm-stance ' + cls + '" title="' + esc(CL[k] + ": " + v) + '">' + esc(CL[k]) + "</span>";
+        }).join("");
+        return '<div class="cm-flag"><div class="cm-flag-head"><span class="cm-flag-name">' + esc(fl.filer) +
+          '</span><span class="cm-eg">' + esc(fl.bucketLabel || fl.bucket) + "</span>" +
+          '<a class="cite-link" href="' + esc(fl.elibrary) + '" target="_blank" rel="noopener noreferrer" title="Open eLibrary filing ' + esc(fl.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a></div>' +
+          '<p class="cm-flag-sum">' + esc(fl.summary) + "</p>" +
+          (fl.quote ? '<div class="cm-flag-quote">“' + esc(fl.quote) + '”</div>' : "") +
+          '<div class="cm-stances">' + stances + "</div></div>";
+      }).join("");
+      flag = head("Read in depth: flagship comments",
+        "One representative comment per major camp, downloaded and read in full, with its stance on each reform category (Study · Cost · Co-loc · Flex · Prox-gen). Each links to its eLibrary filing; the body, extracted text, and a structured summary are committed under sources/comments/.") +
+        '<div class="cm-flagships">' + cards + "</div>";
+    }
+
+    var rowsByRound = {};
+    CM.list.forEach(function (c) { var k = roundOf(c.filed); (rowsByRound[k] = rowsByRound[k] || []).push(c); });
+    var listHtml = CM.rounds.map(function (r) {
+      var items = (rowsByRound[r.key] || []).map(function (c) {
+        var badge = c.sum ? '<span class="cm-badge sum" title="Read in full (flagship)">★</span>'
+          : c.dl ? '<span class="cm-badge dl" title="Body downloaded and text-extracted">✓</span>'
+          : '<span class="cm-badge no" title="Body not downloaded">–</span>';
+        var type = CM.bucketLabels[c.bucket] || c.bucket;
+        return '<li class="cm-row" data-q="' + esc((c.org + " " + c.desc + " " + type).toLowerCase()) + '">' +
+          '<div class="cm-row-top"><span class="cm-row-date mono">' + esc(fmtD(c.filed)) + "</span>" + badge +
+          '<span class="cm-row-org">' + esc(c.org) + "</span>" +
+          '<span class="cm-row-type">' + esc(type) + "</span>" +
+          '<a class="cm-row-link" href="' + esc(eli(c.acc)) + '" target="_blank" rel="noopener noreferrer" title="Open eLibrary filing ' + esc(c.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a></div>' +
+          '<p class="cm-row-desc">' + esc(c.desc) + "</p></li>";
+      }).join("");
+      return '<section class="cm-listgroup"><h3 class="cm-listgroup-h">' + esc(r.label) + ' <span class="mono">' + r.count + "</span></h3><ul class=\"cm-list\">" + items + "</ul></section>";
+    }).join("");
+    var filter = '<div class="cm-filter"><input type="search" id="cm-search" placeholder="Filter by organization, type, or description…" aria-label="Filter the comment list" autocomplete="off" /><span class="cm-filter-count mono" id="cm-count">' + CM.total + " of " + CM.total + "</span></div>";
+    var src = '<div class="srcs"><span class="label">Source</span><a class="src-chip" data-tier="ferc" href="' + esc(CM.source_url) + '" target="_blank" rel="noopener noreferrer" title="FERC eLibrary docket sheet for RM26-4-000">eLibrary · RM26-4 docket sheet</a></div>';
+
+    return head("The RM26-4 comment period",
+      CM.total + " comments were filed on DOE's large-load ANOPR (Docket RM26-4-000) between " + fmtD(CM.dateRange.first) + " and " + fmtD(CM.dateRange.last) +
+      ", scraped from FERC eLibrary on " + CM.captured + ". " + CM.downloaded + " bodies are downloaded and " + CM.analyzed + " text-analyzed for the themes below.") +
+      statRow + rounds +
+      head("Who commented", "Each filing's stakeholder type, counted across all " + CM.total + " comments. Types are keyword-derived from the filer and filing text.") + types +
+      head("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies — a measured keyword prevalence, not a coding of each filer's position.") + themes +
+      flag +
+      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. ★ read in full · ✓ body downloaded. Each links to its eLibrary filing.") +
+      filter + '<div class="cm-listwrap">' + listHtml + "</div>" + src;
+  }
+
+  function wireCommentsFilter() {
+    var input = document.getElementById("cm-search"), count = document.getElementById("cm-count");
+    if (!input) return;
+    var rows = [].slice.call(document.querySelectorAll("#panel-comments .cm-row"));
+    var groups = [].slice.call(document.querySelectorAll("#panel-comments .cm-listgroup"));
+    input.addEventListener("input", function () {
+      var q = input.value.trim().toLowerCase(), shown = 0;
+      rows.forEach(function (r) { var hit = !q || r.getAttribute("data-q").indexOf(q) >= 0; r.hidden = !hit; if (hit) shown++; });
+      groups.forEach(function (g) { g.hidden = !g.querySelector(".cm-row:not([hidden])"); });
+      count.textContent = shown + " of " + rows.length;
+    });
   }
 
   /* ---- provenance ---- */
@@ -333,8 +397,9 @@
   }
 
   /* ---- tablist ---- */
-  var TABS = ["overview", "timeline", "reforms", "dockets", "news"];
-  var renderers = { overview: renderOverview, timeline: renderTimeline, reforms: renderReforms, dockets: renderDockets, news: renderNews };
+  var TABS = ["overview", "timeline", "reforms", "dockets", "comments", "news"];
+  var renderers = { overview: renderOverview, timeline: renderTimeline, reforms: renderReforms, dockets: renderDockets, comments: renderComments, news: renderNews };
+  var afterRender = { comments: wireCommentsFilter };
   var rendered = {};
 
   function panelFor(name) { return document.getElementById("panel-" + name); }
@@ -355,7 +420,7 @@
       tab.tabIndex = sel ? 0 : -1;
       panel.hidden = !sel;
       if (sel) {
-        if (!rendered[t]) { panel.innerHTML = renderers[t](); rendered[t] = true; }
+        if (!rendered[t]) { panel.innerHTML = renderers[t](); rendered[t] = true; if (afterRender[t]) afterRender[t](); }
         if (focus) tab.focus();
       }
     });
@@ -380,6 +445,11 @@
       var tab = tabFor(t);
       tab.addEventListener("click", function () { activate(t, false); scrollToTabsTop(); });
       tab.addEventListener("keydown", onKey);
+    });
+    // in-page links like the Discourse "Open the Comments tab →" pointer switch tabs via the hash
+    window.addEventListener("hashchange", function () {
+      var h = (location.hash || "").replace("#", "");
+      if (TABS.indexOf(h) >= 0) { activate(h, false); scrollToTabsTop(); }
     });
     var initial = (location.hash || "").replace("#", "");
     activate(TABS.indexOf(initial) >= 0 ? initial : "overview", false);

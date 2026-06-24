@@ -5,7 +5,7 @@ A static, dependency-free microsite that traces the regulatory arc from the Depa
 **June 18, 2026 tailored Section 206 show cause orders** (Items **E-7 through E-12**,
 Docket Nos. **EL26-67-000 to EL26-72-000**) directed at all six RTOs/ISOs.
 
-Built for an energy-regulatory audience. Five tabs:
+Built for an energy-regulatory audience. Six tabs:
 
 1. **Overview**: the six headline figures, an at-a-glance block (authority, dockets, reporter cite,
    commissioners), a short background on the regulatory arc, and a "what each commissioner emphasized"
@@ -20,11 +20,14 @@ Built for an energy-regulatory audience. Five tabs:
    commissioner said about that order (quote + page cite, both links), a variable-length distinct-findings
    list including each region's existing-tariff mechanics (each finding page-cited to the PDF + ferc.gov),
    and the full named-respondent roster — plus how to file or follow each docket.
-5. **Discourse**: stakeholder reception; a "what the RM26-4 commenters said" breakdown of all 423
-   ANOPR-docket filings (scraped from FERC eLibrary, grouped by stakeholder, with top-level stats and a
-   full document/attachment inventory for the 273 comments), plus nine flagship comments downloaded and
-   read in full with a stance-per-reform-category breakdown and an audit trail back to the saved files;
-   named commentary across the political spectrum; and trade-press narratives.
+5. **Comments (RM26-4)**: the comment-period summary — all 273 ANOPR comments in filing order with
+   eLibrary links and a download/read indicator (filterable), the comment rounds (initial / reply /
+   supplemental), a respondent-type breakdown across 19 stakeholder categories, the top themes by
+   keyword prevalence across the text-analyzed bodies, and the nine read-in-full flagship comments with
+   a stance-per-reform-category breakdown. Data is generated from the scraped manifest + extracted texts
+   by `tools/build-comments-page-data.mjs` into `docs/js/comments-data.js`.
+6. **Discourse**: stakeholder reception, named commentary across the political spectrum, and trade-press
+   narratives (with a pointer to the Comments tab for the full filing breakdown).
 
 ## Run locally
 
@@ -39,7 +42,7 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 27 tests across both suites
+node --test tests/*.test.mjs   # 28 tests across both suites
 ```
 
 Two suites, no dependencies:
