@@ -36,11 +36,18 @@
   Cluster Study with Schedule 22 (>20 MW) / Schedule 23 and PTF ≥ 69 kV. Each new finding is page-cited
   and verified (the region-support test now also accepts the finding's own cited page). 24 tests.
   (E-12/NYISO left as-is per the request scope.)
-- **high** — Summarize the RM26-4 public comments (staff reviewed 3,500+ pp). Scrape the eLibrary
-  docket sheet for RM26-4-000 (browser bridge past Cloudflare), download each comment PDF, extract
-  with fitz, then classify and summarize by stakeholder and position per reform category. Surface as
-  a "What commenters said" section. Treat LLM summaries as provisional and cite accession numbers.
-  Method in `summaries-plan.md` (Part A); shared Cloudflare access strategy at the top of that file.
+- **done (2026-06-24)** — Scraped the **RM26-4-000 docket sheet** from FERC eLibrary past Cloudflare
+  (Control_Chrome `execute_javascript` + `get_page_content` now work in the user's Chrome; paged the
+  Angular table, downloaded the manifest via a Blob to `~/Downloads`). Saved all **423 filings**
+  (`sources/comments/rm26-4-manifest.raw.json`), classified type and stakeholder bucket
+  (`tools/analyze-comments.mjs` → `rm26-4-comments.json`), and surfaced a **"What the RM26-4 commenters
+  said"** section in Discourse: 273 comments from ~201 orgs, 128 interventions, the Nov 21 2025 deadline
+  spike (183 filings), and 17 stakeholder buckets with provisional per-camp positions. A test asserts the
+  bucket counts sum to the comment total.
+- **medium** — Deepen the comment summaries to **citation-grade per-comment positions**: download a
+  representative sample of the comment PDFs (the browser scrape path now works — navigate each accession,
+  download, extract with fitz), code each filer's stance per reform category, and replace the provisional
+  camp notes with audited, accession-cited summaries. Method in `summaries-plan.md` (Part A).
 - **partially done / medium** — The **written** "what each commissioner said" block is shipped from the
   five concurring statements appended to the orders (see done 2026-06-24). What remains is the **spoken**
   open-meeting version: Chairman Swett's dais framing and any remarks not in the written statements, from

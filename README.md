@@ -20,8 +20,9 @@ Built for an energy-regulatory audience. Five tabs:
    commissioner said about that order (quote + page cite, both links), a variable-length distinct-findings
    list including each region's existing-tariff mechanics (each finding page-cited to the PDF + ferc.gov),
    and the full named-respondent roster — plus how to file or follow each docket.
-5. **Discourse**: stakeholder reception, named commentary across the political spectrum, and
-   trade-press narratives.
+5. **Discourse**: stakeholder reception; a "what the RM26-4 commenters said" breakdown of all 423
+   ANOPR-docket filings (scraped from FERC eLibrary, grouped by stakeholder, with top-level stats); named
+   commentary across the political spectrum; and trade-press narratives.
 
 ## Run locally
 
@@ -36,7 +37,7 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 24 tests across both suites
+node --test tests/*.test.mjs   # 25 tests across both suites
 ```
 
 Two suites, no dependencies:

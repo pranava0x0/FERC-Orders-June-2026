@@ -47,7 +47,7 @@ const EXPECT = {
 
 test("data object loaded", () => {
   assert.ok(D, "window.FERC_DATA present");
-  for (const k of ["SOURCES", "meta", "kpis", "timeline", "toplines", "categories", "dockets", "jurisdiction", "regional", "reception", "media", "voices", "commissioners"]) {
+  for (const k of ["SOURCES", "meta", "kpis", "timeline", "toplines", "categories", "dockets", "jurisdiction", "regional", "reception", "media", "voices", "commissioners", "comments"]) {
     assert.ok(D[k], `missing section: ${k}`);
   }
 });
@@ -154,6 +154,20 @@ test("commissioner statements: five, with per-order page cites that carry the qu
       assert.ok(loose(pages.get(pg) || "").includes(q), `${d.item} ${key} p.${pg} carries the quote "${byKey[key].quote}"`);
     }
   }
+});
+
+test("RM26-4 comment corpus: stats present and stakeholder buckets sum to the comment total", () => {
+  const c = D.comments;
+  assert.ok(c && c.filings >= 400 && c.total >= 200, "headline comment stats present");
+  assert.ok(Array.isArray(c.buckets) && c.buckets.length >= 10, "stakeholder buckets present");
+  const sum = c.buckets.reduce((s, b) => s + b.n, 0);
+  assert.equal(sum, c.total, `bucket counts (${sum}) sum to the comment total (${c.total})`);
+  c.buckets.forEach((b, i) => {
+    assert.ok(b.label && typeof b.n === "number" && b.n > 0, `bucket ${i} has label + count`);
+    assert.ok(b.note && b.note.length >= 20, `bucket ${i} has a position note`);
+  });
+  assert.ok(c.interventions >= 1 && c.orgs >= 1 && c.peakN >= 1, "secondary stats present");
+  assert.match(c.url, /elibrary\.ferc\.gov/, "links to the eLibrary docket sheet");
 });
 
 test("distinct findings: every page cite lands on a page carrying the finding's anchor text", () => {

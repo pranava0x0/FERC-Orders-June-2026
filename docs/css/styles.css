@@ -307,6 +307,22 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .commish-row .commish-cite { margin-left: auto; align-items: baseline; }
 .commish-row .commish-quote { margin-top: 2px; }
 
+/* RM26-4 comment corpus (Discourse tab) */
+.cm-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 12px; }
+@media (min-width: 640px) { .cm-stats { grid-template-columns: repeat(5, 1fr); } }
+.cm-stat { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 9px 11px; display: flex; flex-direction: column; gap: 2px; }
+.cm-stat .v { font-family: var(--font-serif); font-weight: 700; font-size: 21px; color: var(--masthead); line-height: 1; }
+.cm-stat .l { font-size: 10.5px; color: var(--text-muted); line-height: 1.25; }
+.cm-meta { font-size: 12px; color: var(--text-muted); line-height: 1.45; margin-bottom: 14px; max-width: 82ch; }
+.cm-buckets { display: grid; gap: 12px; }
+.cm-bhead { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.cm-label { font-weight: 700; font-size: 13.5px; color: var(--masthead); }
+.cm-n { font-size: 12px; color: var(--accent-ink); flex: none; }
+.cm-bar { height: 6px; background: var(--surface-2); border-radius: 999px; overflow: hidden; margin: 4px 0 5px; }
+.cm-bar > span { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+.cm-note { font-size: 12.5px; color: #2b3744; line-height: 1.45; }
+.cm-eg { display: inline-block; font-size: 10.5px; color: var(--text-muted); background: var(--surface-2); border-radius: 999px; padding: 1px 8px; margin: 0 3px 2px 0; white-space: nowrap; }
+
 /* generic two-col blocks (jurisdiction / regional) */
 .blocks { display: grid; gap: 12px; }
 @media (min-width: 760px) { .blocks.two { grid-template-columns: 1fr 1fr; } }

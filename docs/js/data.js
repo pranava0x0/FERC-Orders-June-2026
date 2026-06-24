@@ -530,6 +530,38 @@ window.FERC_DATA = (function () {
     },
   ];
 
+  /* ------------------------------------------------ TAB 3: RM26-4 comment corpus */
+  // Scraped from FERC's eLibrary docket sheet (past Cloudflare) on 2026-06-24; full manifest +
+  // categorization saved at sources/comments/. Stats are mechanical; bucket positions are a provisional
+  // read of each camp pending review of the filing PDFs. Bucket counts sum to `total`.
+  const comments = {
+    docket: "RM26-4-000",
+    url: "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=RM26-4-000",
+    captured: "2026-06-24",
+    filings: 423, total: 273, orgs: 201, interventions: 128, individuals: 15,
+    peak: "Nov 21, 2025", peakN: 183, lastFiled: "2026",
+    note: "All 423 docket filings, scraped from FERC eLibrary on 2026-06-24: who filed and what type. Stakeholder buckets are keyword-derived; the position notes are a provisional read of each camp pending review of the filing PDFs. Saved at sources/comments/rm26-4-comments.json.",
+    buckets: [
+      { label: "Transmission owners & utilities", n: 42, egs: ["Duke", "PG&E", "Eversource", "PSEG", "AEP", "Exelon"], note: "The largest camp; they back clearer large-load rules but want cost-recovery certainty and to keep load-interconnection authority with the transmission owners." },
+      { label: "Generators, IPPs & developers", n: 37, egs: ["NRG", "Vistra", "LS Power", "AES", "Fervo", "Oklo"], note: "Favor co-location and proximate-generation pathways that lift the value of dispatchable and new generation (the ‘bring your own generation’ case)." },
+      { label: "Data centers, hyperscalers & tech", n: 29, egs: ["Google", "Data Center Coalition", "Digital Energy Council", "Equinix", "Oracle"], note: "Push speed to power and flexible-load service, willing to curtail in exchange for faster, non-discriminatory interconnection." },
+      { label: "State commissions", n: 27, egs: ["Maryland PSC", "Georgia PSC", "NY PSC", "NARUC", "OMS / OPSI / NESCOE"], note: "Guard state authority over retail rates and siting, and want the transparency to keep data-center costs off other retail customers." },
+      { label: "Trade associations & power groups", n: 25, egs: ["WIRES", "APPA", "Large Public Power Council", "EEI", "co-ops"], note: "Mixed: transmission builders such as WIRES back the push, while public power and cooperatives want firm cost protections for their members." },
+      { label: "Clean energy & storage", n: 16, egs: ["ACP", "SEIA", "Advanced Energy United", "Fluence"], note: "Support flexible-load service and grid-enhancing technologies, and want non-discriminatory access for storage and flexible resources." },
+      { label: "Individuals", n: 15, egs: ["members of the public"], note: "Affordability and demand-reduction concerns from individual filers." },
+      { label: "Consumer advocates", n: 14, egs: ["PA OCA", "Ohio Consumers’ Counsel", "Maryland OPC", "DE Public Advocate"], note: "Center residential ratepayers and press for strong cost causation so data-center load pays its own way." },
+      { label: "Environmental & public interest", n: 13, egs: ["Sierra Club", "Public Citizen", "Center for Biological Diversity", "ELPC"], note: "Cost protection plus reliability; some, such as Public Citizen, press hardest toward pauses pending reliability review." },
+      { label: "Industrial & large customers", n: 9, egs: ["IECA", "PJM Industrial Customer Coalition", "Steel Manufacturers", "U.S. Chamber"], note: "Want existing industrial load shielded from cost-shifting as data centers connect, with cost causation on the new load." },
+      { label: "Think tanks & research", n: 9, egs: ["R Street", "Institute for Progress", "Cato", "ClearPath"], note: "Market-oriented: price grid access, reward flexibility, and avoid a single national rule across six unlike markets." },
+      { label: "RTOs / ISOs", n: 7, egs: ["PJM", "MISO", "SPP", "CAISO", "ISO-NE", "NYISO"], note: "Describe their own existing processes and, for PJM and SPP, reforms already filed; they caution against a uniform rule that overrides regional design." },
+      { label: "Demand response & flexible load", n: 7, egs: ["Voltus", "CPower", "Enchanted Rock", "Enel"], note: "Flexibility is the lever: expedited, curtailable service for loads that agree to limit withdrawals." },
+      { label: "Elected officials", n: 6, egs: ["Sen. Markey et al.", "Senate Energy Cmte.", "Govs. Shapiro & Youngkin"], note: "Bipartisan ratepayer-protection pressure that households should not bear data-center-driven costs." },
+      { label: "Reliability & market monitors", n: 4, egs: ["NERC", "PJM IMM", "SPP MMU"], note: "Large-load registration and reliability standards (NERC); cost-allocation and market-power oversight (the market monitors)." },
+      { label: "Oil, gas & fuels", n: 3, egs: ["American Public Gas Assn.", "Chevron", "API"], note: "Fold natural-gas considerations and gas-fired co-location into the reforms." },
+      { label: "Other / uncategorized", n: 10, egs: ["CTC Global", "Antora Energy", "State Water Project"], note: "A long tail the keyword pass did not slot: vendors, a state water project, and miscellaneous filers." },
+    ],
+  };
+
   /* ---------------------------------------------------------------- OVERVIEW */
   // The five concurring statements are attached to every order and read essentially the same across the
   // six, so the emphasis (gist) lives here once; each docket cites the quote's page in its OWN order via
@@ -586,5 +618,5 @@ window.FERC_DATA = (function () {
     ],
   };
 
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, commissioners, participate };
+  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, comments, commissioners, participate };
 })();

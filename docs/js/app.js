@@ -252,8 +252,31 @@
         "<p>" + esc(v.take) + "</p>" + srcChips(v.src) + "</div>";
     }).join("") + "</div>";
 
+    var commentsBlock = "";
+    if (D.comments) {
+      var cm = D.comments;
+      var maxN = cm.buckets.reduce(function (m, b) { return Math.max(m, b.n); }, 1);
+      var stats = '<div class="cm-stats">' +
+        [[cm.filings, "docket filings"], [cm.total, "comments"], [cm.orgs, "organizations"], [cm.interventions, "interventions"], [cm.peakN, "filed on the deadline (" + cm.peak + ")"]]
+          .map(function (s) { return '<div class="cm-stat"><span class="v">' + esc(String(s[0])) + '</span><span class="l">' + esc(s[1]) + "</span></div>"; }).join("") + "</div>";
+      var bars = '<div class="cm-buckets">' + cm.buckets.map(function (b) {
+        var egs = (b.egs || []).map(function (e) { return '<span class="cm-eg">' + esc(e) + "</span>"; }).join("");
+        return '<div class="cm-bucket"><div class="cm-bhead"><span class="cm-label">' + esc(b.label) +
+          '</span><span class="cm-n mono">' + b.n + "</span></div>" +
+          '<div class="cm-bar"><span style="width:' + Math.round((b.n / maxN) * 100) + '%"></span></div>' +
+          '<p class="cm-note">' + esc(b.note) + (egs ? ' <span class="cm-egs">' + egs + "</span>" : "") + "</p></div>";
+      }).join("") + "</div>";
+      var cmsrc = '<div class="srcs"><span class="label">Source</span>' +
+        '<a class="src-chip" data-tier="ferc" href="' + esc(cm.url) + '" target="_blank" rel="noopener noreferrer" title="FERC eLibrary docket sheet for RM26-4-000">eLibrary · RM26-4 docket sheet</a></div>';
+      commentsBlock = head("What the RM26-4 commenters said",
+        "All " + cm.filings + " filings in the ANOPR docket (RM26-4-000), scraped from FERC eLibrary on " + cm.captured +
+        " and grouped by stakeholder. The counts are exact; the per-camp positions are a provisional read pending review of the filing PDFs. Full manifest saved in the repo.") +
+        stats + '<p class="cm-meta">' + esc(cm.note) + "</p>" + bars + cmsrc;
+    }
+
     return head("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.") + rec +
+      commentsBlock +
       head("Commentary across the spectrum",
       "Named voices from right of center to left of center, plus the research case for load flexibility. Each is the source's own position, not a FERC determination. Commentary gathered " + D.meta.discourseCapture + " (the order record is as of " + D.meta.capture + ").") + voices +
       head("Media & discourse", "The dominant narratives in energy trade press and policy circles.") + disc + outlets;
