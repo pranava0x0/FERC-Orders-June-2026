@@ -185,8 +185,9 @@ test("comment audit trail: every flagship threads website -> summary JSON -> dow
     const s = JSON.parse(readFileSync(sumPath, "utf8"));
     assert.equal(s.accession, f.acc, `${f.acc} summary accession matches`);
     assert.ok(Array.isArray(s.files) && s.files.length >= 1, `${f.acc} summary lists a file`);
-    // the committed audit artifact is the extracted text (the source binary is gitignored, re-derivable)
-    assert.ok(s.files[0].text && existsSync(join(here, "..", s.files[0].text)), `${f.acc} extracted text exists in the repo`);
+    // the committed audit artifacts: both the downloaded document body and its extracted text
+    assert.ok(s.files[0].path && existsSync(join(here, "..", s.files[0].path)), `${f.acc} downloaded document committed`);
+    assert.ok(s.files[0].text && existsSync(join(here, "..", s.files[0].text)), `${f.acc} extracted text committed`);
   }
   // the per-accession file inventory covers all comments
   const files = JSON.parse(readFileSync(join(here, "..", "sources", "comments", "rm26-4-files.json"), "utf8"));
