@@ -382,6 +382,15 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-tag.pr { color: var(--accent-ink); background: #e9f0f8; }
 .cm-tag.rg { color: #5a4a1a; background: #f6efdb; }
 .cm-tagsep { width: 1px; min-height: 13px; background: var(--rule-strong); margin: 0 3px; }
+.cm-tag.aq { color: #2e5d4f; background: #e6f1ec; }
+/* Comments sub-tabs (Overview / Respondent types / Comment summaries) */
+.cm-subtabs { display: flex; gap: 2px; margin-bottom: 18px; border-bottom: 2px solid var(--rule); flex-wrap: wrap; }
+.cm-subtab { font: inherit; font-size: 13.5px; font-weight: 700; color: var(--text-muted); background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -2px; padding: 8px 13px; cursor: pointer; }
+.cm-subtab:hover { color: var(--ink); }
+.cm-subtab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+.cm-subtab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.cm-prreg.three { grid-template-columns: 1fr; }
+@media (min-width: 920px) { .cm-prreg.three { grid-template-columns: 1fr 1fr 1fr; } }
 
 /* generic two-col blocks (jurisdiction / regional) */
 .blocks { display: grid; gap: 12px; }
