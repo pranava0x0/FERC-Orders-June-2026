@@ -604,7 +604,7 @@ window.FERC_DATA = (function () {
     {
       key: "lacerte", name: "David LaCerte", role: "Commissioner", short: "Jurisdictional hardball",
       quote: "I am prepared to play jurisdictional hardball, if needed",
-      gist: "The sharpest tone. Invites region-specific §205 proposals and offers operators the ‘first pen,’ but says he is ‘prepared to play jurisdictional hardball’ — if they don’t file robust fixes, FERC will ‘dictat[e] the solutions for you.’ Ties the orders to state Ratepayer Protection Pledges.",
+      gist: "The sharpest tone. Invites region-specific §205 proposals and offers operators the ‘first pen,’ but says he is ‘prepared to play jurisdictional hardball’ — if they don’t file real fixes, FERC will ‘dictat[e] the solutions for you.’ Ties the orders to state Ratepayer Protection Pledges.",
     },
   ];
 
