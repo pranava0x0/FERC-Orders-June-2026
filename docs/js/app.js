@@ -342,14 +342,15 @@
     CM.list.forEach(function (c) { var k = roundOf(c.filed); (rowsByRound[k] = rowsByRound[k] || []).push(c); });
     var listHtml = CM.rounds.map(function (r) {
       var items = (rowsByRound[r.key] || []).map(function (c) {
-        var badge = c.sum ? '<span class="cm-badge sum" title="Read in full (flagship)">★</span>'
-          : c.dl ? '<span class="cm-badge dl" title="Body downloaded and text-extracted">✓</span>'
-          : '<span class="cm-badge no" title="Body not downloaded">–</span>';
+        var badge = c.sum ? '<span class="cm-badge sum" title="Read in full (flagship)"><span aria-hidden="true">★</span><span class="sr-only">read in full</span></span>'
+          : c.dl ? '<span class="cm-badge dl" title="Body downloaded and text-extracted"><span aria-hidden="true">✓</span><span class="sr-only">body downloaded</span></span>'
+          : '<span class="cm-badge no" title="Body not downloaded"><span aria-hidden="true">–</span><span class="sr-only">not downloaded</span></span>';
         var type = CM.bucketLabels[c.bucket] || c.bucket;
         var aqChips = (c.aq || []).map(function (k) { return '<span class="cm-tag aq" title="Addresses the ANOPR comment-period question: ' + esc(AQ[k]) + '">' + esc(AQ[k]) + "</span>"; }).join("");
         var prChips = (c.pr || []).map(function (k) { return '<span class="cm-tag pr ' + k + '" title="Engages the ' + esc(CL[k]) + ' reform principle">' + esc(CL[k]) + "</span>"; }).join("");
         var rgChips = (c.rg || []).map(function (k) { return '<span class="cm-tag rg" title="References the ' + esc(RG[k]) + ' region">' + esc(RG[k]) + "</span>"; }).join("");
-        var groups = [aqChips, prChips, rgChips].filter(Boolean);
+        var grp = function (label, chips) { return chips ? '<span class="sr-only">' + label + ": </span>" + chips : ""; };
+        var groups = [grp("Comment-period questions", aqChips), grp("Reform principles", prChips), grp("Regions", rgChips)].filter(Boolean);
         var tags = groups.length ? '<div class="cm-row-tags">' + groups.join('<span class="cm-tagsep" aria-hidden="true"></span>') + "</div>" : "";
         var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ")).toLowerCase();
         return '<li class="cm-row" data-q="' + esc(q) + '">' +
