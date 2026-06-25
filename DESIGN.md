@@ -194,6 +194,14 @@ One at a time. Don't grow into a queue — if you need stacked toasts, swap in a
 
 A matrix answers a binary question — "does this entity touch this dimension at all?" Render a single `✓` per populated cell, not a count. Volume belongs in the subsidiary list, not the at-a-glance grid; digits make the matrix harder to scan and over-state precision.
 
+### 8.7 Sub-tabs (a panel that's grown too long)
+
+When one tab's content runs past ~2–3 screens, split it into **sub-tabs** instead of a longer scroll: a second, lighter tablist *inside* the panel (underline style, not the boxed primary tabs), each sub-panel `role="tabpanel"`. Keep the same ARIA contract as the primary tabs (`role="tab"` / `aria-selected` / roving `tabindex` / arrow keys) and a ≥44px touch target. Example: a 273-row comment list split into Overview / Respondent types / Comment summaries — the overall picture, the respondent mix, and the list itself, each one screen instead of one ten-screen scroll.
+
+### 8.8 Metadata chips (multi-lens tags)
+
+When a row carries several orthogonal tag sets (e.g. three classification "lenses"), render each lens as a small tint chip in its own color, the lenses separated by a hairline. Abbreviate the chip label and carry the full meaning in `title` plus an `sr-only` group label so the grouping survives for screen readers. Keep it to ~3 lenses or the row stops scanning — push the rest to the deep-dive. Color is a *cue*, never the only signal (the text is the label).
+
 ---
 
 ## 9. Accessibility (baseline)
@@ -208,7 +216,8 @@ A matrix answers a binary question — "does this entity touch this dimension at
 | Tabs                   | `role="tablist"` / `role="tab"` / `role="tabpanel"` / `aria-controls` / `aria-selected` |
 | Color contrast         | All text/bg pairs ≥ 4.5:1 in both light and dark themes (verify with audit tools) |
 | Reduced motion         | `@media (prefers-reduced-motion: reduce)` kills non-essential transforms      |
-| Touch                  | `touch-action: manipulation` on interactive elements                          |
+| Touch                  | `touch-action: manipulation`; interactive targets ≥ 44px                      |
+| Lossy glyphs           | A glyph standing in for a value (✓/★ status, a count) keeps the value in an `sr-only` span beside an `aria-hidden` glyph; grouped chips carry an `sr-only` group label so the grouping survives for screen readers |
 
 ---
 
@@ -285,6 +294,7 @@ For any public page, get the share card and the dates right — they're how Goog
 - **Social-card OG images: ship JPG, not WebP.** LinkedIn (and some other scrapers) won't render WebP link previews. Use a JPG hero for `og:image` / `twitter:image` (`summary_large_image`); fall back to a default image for pages without a hero.
 - **`datePublished` ≠ "last updated."** Derive each page's `datePublished` from its first commit (clamp to ≤ `dateModified`) and omit it when unknown; use the content's refresh date only for `dateModified`. Feeding the "last updated" value into `datePublished` republishes old pages on every data refresh — misleading to Google and LLM consumers.
 - **Sitemap `<lastmod>` is the real per-page change date, never today's stamp.** And a no-op QA/UAT or "zero regressions" commit is not a content update — date-bump logic that feeds ordering, `lastmod`, or a displayed "updated" date must skip routine non-content commits and keep the last *meaningful* change date.
+- **Ship structured data + a sitemap + `llms.txt`.** A JSON-LD block (`@type` Article / Report / Dataset) with `headline`, `description`, `datePublished`/`dateModified`, `author`, `about`; a `sitemap.xml`; a `robots` meta; and an `llms.txt` for agent consumers (generated from the data, kept in sync by a test). On a GitHub Pages **project** site (`user.github.io/repo/`), a `robots.txt` at the project subpath is **not** read by crawlers that only fetch the domain root — ship it anyway (it states intent and direct-fetch tools honor it), but don't rely on it; submit the sitemap manually and lean on the meta + JSON-LD + canonical.
 
 ---
 

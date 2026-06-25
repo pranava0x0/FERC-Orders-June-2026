@@ -45,7 +45,7 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 30 tests across both suites
+node --test tests/*.test.mjs   # 31 tests across both suites
 ```
 
 Two suites, no dependencies:
