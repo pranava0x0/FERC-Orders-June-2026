@@ -384,19 +384,23 @@ test("comments-data.js (Comments tab) is consistent with the scraped manifest", 
   }
   assert.ok(CM.downloaded >= 270, `downloaded-body floor (${CM.downloaded} >= 270)`);
 
-  // per-comment reform-principle + order-region tags
+  // per-comment metadata lenses: ANOPR comment-period questions (8), reform principles (5), regions (6)
+  assert.equal(CM.anoprQuestions.length, 8, "eight ANOPR comment-period questions");
   assert.equal(CM.principles.length, 5, "five reform principles");
   assert.equal(CM.regions.length, 6, "six order regions");
-  const PKEYS = new Set(CM.principles.map((p) => p.key)), RKEYS = new Set(CM.regions.map((r) => r.key));
-  for (const agg of [...CM.principles, ...CM.regions]) {
+  for (const q of CM.anoprQuestions) assert.ok(q.label && q.desc, `ANOPR question ${q.key} has a label + plain-language description`);
+  const QKEYS = new Set(CM.anoprQuestions.map((q) => q.key)), PKEYS = new Set(CM.principles.map((p) => p.key)), RKEYS = new Set(CM.regions.map((r) => r.key));
+  for (const agg of [...CM.anoprQuestions, ...CM.principles, ...CM.regions]) {
     assert.ok(agg.count <= CM.analyzed && agg.pct >= 0 && agg.pct <= 100, `tag ${agg.key} count/pct in range`);
   }
   for (const c of CM.list) {
-    assert.ok(Array.isArray(c.pr) && Array.isArray(c.rg), `row ${c.acc} has principle/region arrays`);
+    assert.ok(Array.isArray(c.aq) && Array.isArray(c.pr) && Array.isArray(c.rg), `row ${c.acc} has question/principle/region arrays`);
+    for (const k of c.aq) assert.ok(QKEYS.has(k), `row ${c.acc} ANOPR question ${k} is a known key`);
     for (const k of c.pr) assert.ok(PKEYS.has(k), `row ${c.acc} principle ${k} is a known key`);
     for (const k of c.rg) assert.ok(RKEYS.has(k), `row ${c.acc} region ${k} is a known key`);
   }
   // every aggregate count equals the number of rows carrying that tag (no double-count drift)
+  for (const q of CM.anoprQuestions) assert.equal(q.count, CM.list.filter((c) => c.aq.includes(q.key)).length, `question ${q.key} count matches rows`);
   for (const p of CM.principles) assert.equal(p.count, CM.list.filter((c) => c.pr.includes(p.key)).length, `principle ${p.key} count matches rows`);
   for (const r of CM.regions) assert.equal(r.count, CM.list.filter((c) => c.rg.includes(r.key)).length, `region ${r.key} count matches rows`);
 });

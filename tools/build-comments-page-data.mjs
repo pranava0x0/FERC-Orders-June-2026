@@ -66,6 +66,18 @@ const REGIONS = [
   { key: "isone", label: "ISO-NE", re: /iso[- ]?ne\b|iso new england|\bnepool\b|new england/i },
   { key: "nyiso", label: "NYISO", re: /\bnyiso\b|new york iso|new york independent system operator/i },
 ];
+// the DOE §403 ANOPR's eight "Principles for Reform" (¶18–25) — the questions the comment period posed.
+// desc = a plain-language reading of each point (shown in the UI; not a quote).
+const ANOPR_QUESTIONS = [
+  { key: "jurisdiction", label: "Transmission-only jurisdiction", desc: "Limit FERC's reach to interconnections made directly to transmission (the seven-factor test), so state authority over generation and retail is untouched.", re: /seven[- ]factor|directly to (the )?transmission|retail (jurisdiction|authority|sales|service)|state (jurisdiction|authority)|local distribution/i },
+  { key: "threshold", label: "The 20 MW threshold", desc: "Apply the reforms to new loads over 20 MW; DOE asked whether that line is right, or needed at all.", re: /\b20 ?mw\b|megawatt threshold|size threshold|alternative threshold|definition of (a )?large load|whether (such )?a threshold/i },
+  { key: "jointstudy", label: "Study load with generation", desc: "Study large loads and hybrid facilities together with generation, to site them efficiently and cut network upgrades.", re: /studied together|study load and generation|jointly stud|together with generating facilities/i },
+  { key: "deposits", label: "Deposits, readiness, penalties", desc: "Standardize study deposits, readiness requirements, and withdrawal penalties to deter speculative projects.", re: /study deposit|readiness requirement|withdrawal penalt|commercial readiness|deter speculative|financial penalt/i },
+  { key: "hybridrights", label: "Hybrid injection/withdrawal rights", desc: "Study hybrid load-plus-generation facilities by the injection and withdrawal rights they request.", re: /injection.{0,8}(and|or|\/).{0,8}withdrawal|withdrawal right|injection right|hybrid.{0,15}right/i },
+  { key: "protection", label: "System-protection facilities", desc: "Require hybrids to install protection that blocks injections or withdrawals beyond their granted rights.", re: /system protection|unauthorized (injection|withdrawal)|operational limitation|protection facilit/i },
+  { key: "expedited", label: "Expedited curtailable study", desc: "Fast-track the study of loads and hybrids that agree to be curtailable and dispatchable.", re: /expedited stud|curtailab|dispatchable|serial interconnection|60[- ]day|controllable load|interruptib/i },
+  { key: "upgradecost", label: "100% network-upgrade cost", desc: "Make large loads pay 100% of the network upgrades they trigger; DOE asked about a crediting mechanism.", re: /100% of (the )?network upgrade|network upgrade cost|crediting mechanism|cost responsib.{0,15}upgrade/i },
+];
 
 const bodyText = (acc) => {
   const d = dirForAcc(acc);
@@ -78,15 +90,16 @@ let analyzed = 0;
 const list = cj.comments.map((c) => {
   const a = auditByAcc[c.acc] || {};
   const txt = bodyText(c.acc);
-  let pr = [], rg = [];
+  let pr = [], rg = [], aq = [];
   if (txt.length > 200) {
     analyzed++;
     for (const t of THEMES) if (t.re.test(txt)) themeCounts[t.key]++;
     pr = PRINCIPLES.filter((p) => p.re.test(txt)).map((p) => p.key);
     rg = REGIONS.filter((r) => r.re.test(txt)).map((r) => r.key);
+    aq = ANOPR_QUESTIONS.filter((q) => q.re.test(txt)).map((q) => q.key);
   }
   return { acc: c.acc, org: c.org, filed: c.filed, bucket: c.bucket, desc: c.desc,
-           dl: a.downloaded ? 1 : 0, sum: a.summarized ? 1 : 0, pr, rg };
+           dl: a.downloaded ? 1 : 0, sum: a.summarized ? 1 : 0, aq, pr, rg };
 }).sort((x, y) => (sortKey(x.filed) < sortKey(y.filed) ? -1 : sortKey(x.filed) > sortKey(y.filed) ? 1 : x.org.localeCompare(y.org)));
 
 // aggregate the per-comment principle/region tags
@@ -96,6 +109,7 @@ const tagStats = (defs, field) => defs.map((d) => {
 });
 const principles = tagStats(PRINCIPLES, "pr");
 const regions = tagStats(REGIONS, "rg");
+const anoprQuestions = tagStats(ANOPR_QUESTIONS, "aq").map((q) => ({ ...q, desc: ANOPR_QUESTIONS.find((d) => d.key === q.key).desc }));
 
 // respondent types: count per bucket, sorted desc
 const typeCounts = {};
@@ -126,6 +140,7 @@ const out = {
   rounds,
   respondentTypes,
   themes,
+  anoprQuestions,
   principles,
   regions,
   bucketLabels: labels,
