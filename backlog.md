@@ -61,6 +61,26 @@
   that works. What remains is **structured summaries** beyond the 9 flagships (bodies are on disk +
   text-extracted, ready to read), and OCR for the few scanned filings (e.g., Data Center Coalition).
   Re-run `build-comment-audit.mjs` as summaries land; categorization auto-aggregates.
+- **high — agentic LLM comment analysis (PNNL "CommentNEPA" approach).** Extend per-comment analysis from
+  the 9 flagships to all ~269 text-extracted bodies, following PNNL/Battelle's *CommentNEPA: Auditable,
+  Agentic Workflows with Feedback Alignment for Environmental Review* (NAEP 2025, PNNL-SA-210567). Decompose
+  each comment into auditable subtasks — (1) summarize the correspondence, (2) extract concerns + verbatim
+  quotes, (3) assign bins = the five reform principles + six order regions + a per-principle stance — instead
+  of one chat-shot. Add self-evaluation/critique loops (generate → critique → revise; let competing prompts
+  compete) and store the **graph of every LLM input + prompt + output**, so each tag/summary is inspectable
+  and traceable (matches the provenance + "AI-synthesized values are provisional" rules — stamp `verified_at`
+  + a per-row source). Human-in-the-loop *feedback alignment*: a curator's edit to a summary/bin becomes a
+  few-shot example that tunes the prompts, so the curator audits rather than prompt-engineers. Keep the
+  **keyword** principle/region tags as the cheap deterministic prior, the guidance, and a cross-check on the
+  LLM bins — PNNL reports ~78% precision / ~20% recall on raw LLM "bracketing," so never ship the LLM pass
+  unaudited. Cost discipline: keyword pre-filter first, cheapest model that holds quality, cache by content
+  hash. Then surface per-bin summaries with references back to the original filings in the Comments tab.
+- **medium — OCR the 4 image-only scans.** `20251121-5224`, `20251121-5521` (Data Center Coalition),
+  `20251121-5140` (Yurok Nation), `20251205-5005` are downloaded but have no text layer (`validate-comments.py`
+  flags them). Needs an OCR tool (no `ocrmypdf`/`tesseract` installed locally — install one, or use macOS
+  Vision). Once OCR'd, re-run organize/validate; they drop out of the scanned set into the text-analyzed corpus.
+- **low — re-fetch the ETI holdout** (`20251121-5225`, Entergy Texas): renders + clicks but won't download
+  (served inline). Inventoried + re-downloadable; the corpus reads 272/273. See `issues.md`.
 - **partially done / medium** — The **written** "what each commissioner said" block is shipped from the
   five concurring statements appended to the orders (see done 2026-06-24). What remains is the **spoken**
   open-meeting version: Chairman Swett's dais framing and any remarks not in the written statements, from

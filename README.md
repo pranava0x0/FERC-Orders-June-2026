@@ -21,11 +21,14 @@ Built for an energy-regulatory audience. Six tabs:
    list including each region's existing-tariff mechanics (each finding page-cited to the PDF + ferc.gov),
    and the full named-respondent roster — plus how to file or follow each docket.
 5. **Comments (RM26-4)**: the comment-period summary — all 273 ANOPR comments in filing order with
-   eLibrary links and a download/read indicator (filterable), the comment rounds (initial / reply /
-   supplemental), a respondent-type breakdown across 19 stakeholder categories, the top themes by
-   keyword prevalence across the text-analyzed bodies, and the nine read-in-full flagship comments with
-   a stance-per-reform-category breakdown. Data is generated from the scraped manifest + extracted texts
-   by `tools/build-comments-page-data.mjs` into `docs/js/comments-data.js`.
+   eLibrary links and a download/read indicator (filterable by org, type, principle, or region), the
+   comment rounds (initial / reply / supplemental), a respondent-type breakdown across 19 stakeholder
+   categories, the top themes, a per-comment tagging of which of the five reform principles and which of
+   the six show-cause-order RTO regions each engages (keyword-detected, shown per row and in aggregate),
+   and the nine read-in-full flagship comments with a stance-per-reform-category breakdown. Comment bodies
+   are committed under `sources/comments/files/<accession>__<org-slug>/` (the path names the submitter) and
+   validated by `tools/validate-comments.py`; the tab's data is generated from the manifest + extracted
+   texts by `tools/build-comments-page-data.mjs` into `docs/js/comments-data.js`.
 6. **Discourse**: stakeholder reception, named commentary across the political spectrum, and trade-press
    narratives (with a pointer to the Comments tab for the full filing breakdown).
 
@@ -42,7 +45,7 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 28 tests across both suites
+node --test tests/*.test.mjs   # 30 tests across both suites
 ```
 
 Two suites, no dependencies:

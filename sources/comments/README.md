@@ -11,11 +11,17 @@ docket sheet (eLibrary, Angular SPA, Cloudflare-gated)
   └─ 1. scrape ───────────────► rm26-4-manifest.raw.json      (all 423 filings, raw)
   └─ 2. classify ─────────────► rm26-4-comments.json           (273 comments + 17 stakeholder buckets + stats)
   └─ 3. inventory (GetFileListFromP8 JSON API) ► rm26-4-files.json  (per-accession file/attachment list, all 273)
-  └─ 4. download bodies ──────► files/<accession>/<name>.pdf|docx  (+ <name>.txt extracted)
-  └─ 5. summarize (flagships) ► summaries/<accession>.json     (stance per reform category + verbatim quote)
-  └─ 6. aggregate ────────────► rm26-4-audit-index.json         (one row per comment: the whole chain)
+  └─ 4. download bodies ──────► files/<accession>__<org-slug>/<name>.pdf|docx  (+ <name>.txt extracted)
+  └─ 5. validate ─────────────► validate-comments.py (every body on disk, every PDF opens, every body has real text)
+  └─ 6. summarize (flagships) ► summaries/<accession>.json     (stance per reform category + verbatim quote)
+  └─ 7. aggregate ────────────► rm26-4-audit-index.json         (one row per comment: the whole chain)
                                 rm26-4-categorization.json      (stances tallied across summaries)
+                                docs/js/comments-data.js        (Comments tab: list + themes + principle/region tags)
 ```
+
+Body directories are named **`<accession>__<org-slug>`** so a file's path names who filed it
+(`files/20260519-5158__Eolian-LP/RM26-4.pdf`). The accession stays the stable key — every tool resolves
+a dir from its accession, so the human-readable slug can change without breaking anything.
 
 `rm26-4-audit-index.json` is the index of record: for every comment it threads accession →
 eLibrary URL → inventoried files → downloaded? → summary? → bucket. It distinguishes three states:
@@ -32,13 +38,17 @@ For step 4, Chrome also needs **Automatic downloads → Allow** for the site (se
 |------|------|-------|
 | 1–2 scrape + classify | `tools/analyze-comments.mjs` | page the docket table in-browser → manifest → classify type + bucket |
 | 3 inventory | (in-browser `GetFileListFromP8` calls) → `rm26-4-files.json` | open JSON metadata API; covers all 273 |
-| 4 download | **`tools/grind-comment-downloads.js`** (browser) → **`tools/organize-comment-files.py`** (shell) | grinder clicks every PDF/DOCX link via hidden iframes; organize moves `~/Downloads/<acc>_*` → `files/<acc>/` and text-extracts with fitz. Both idempotent. |
-| 5 summarize | hand-authored `summaries/<accession>.json` | read the extracted `.txt`; one structured summary per flagship |
-| 6 aggregate | `tools/build-comment-audit.mjs` | regenerate the audit index + categorization; re-run as bodies/summaries land |
+| 4 download | **`tools/grind-comment-downloads.js`** (browser) → **`tools/organize-comment-files.py`** (shell) | grinder clicks every PDF/DOCX link via hidden iframes; organize moves `~/Downloads/<acc>_*` → `files/<acc>__<org-slug>/`, text-extracts (fitz for PDF, `textutil` for DOCX), heals `;`-truncated names, and migrates older bare-accession dirs. Both idempotent. |
+| 5 validate | **`tools/validate-comments.py`** | every inventoried comment has a body on disk, every PDF opens, every body has substantive text; flags scanned/missing/corrupt. Exits non-zero on an unexpected gap. |
+| 6 summarize | hand-authored `summaries/<accession>.json` | read the extracted `.txt`; one structured summary per flagship |
+| 7 aggregate | `tools/build-comment-audit.mjs` + `tools/build-comments-page-data.mjs` | audit index + categorization; and the Comments-tab data (timeline list, themes, per-comment reform-principle + order-region tags) |
 
-The download step is the slow one: each accession is a navigate-render-click, ~25–30% miss on
-the first pass (Angular slow to render under concurrency), so re-run the grinder over
-`window.__g.fail` at lower concurrency until the fail set stops shrinking.
+The download step is the slow one: each accession is a navigate-render-click, ~25–30% miss on the
+first pass (Angular slow to render under concurrency), so re-run the grinder over `window.__g.fail`
+at lower concurrency until the fail set stops shrinking. Two filename quirks need healing (handled in
+the tools; `validate-comments.py` catches a regression): a `;` in a name is truncated by Chrome at the
+Content-Disposition separator (extension lost → restored from the PDF magic bytes), and eLibrary appends
+a `" *"` availability marker to some link labels (stripped before the extension match).
 
 ## PDF storage policy — committed to the repo, **not** served by GitHub Pages
 
