@@ -174,6 +174,15 @@ Concrete gotchas that aren't obvious until you hit them:
 - **Bulk file downloads via hidden iframes need the host's *automatic downloads* permission** (Chrome: `chrome://settings/content/automaticDownloads`). Without it an iframe `a.click()` finds the link and "succeeds" but nothing lands — Chrome's multiple-download protection blocks it silently. Keep the worker pool small (2–3): concurrent SPA bootstraps starve the renderer and ~25–30% miss the render-wait; retry the failures at lower concurrency, then a 1-worker pass for the tail.
 - **Two gov-portal filename quirks corrupt a download silently:** a `;` in the name is truncated at the Content-Disposition separator (losing the extension — heal from the PDF magic bytes), and some portals append a `" *"` marker to link labels (strip it before an ends-with extension match). Afterwards, validate the corpus against its *inventory* — every inventoried item has a body on disk with real extracted text — not against a count. A clean count is not a clean corpus.
 
+### Running an auditable LLM analysis over a corpus
+
+Decompose, don't one-shot (rationale in [CLAUDE.md](CLAUDE.md) → AI/API). For a corpus of comments / filings / documents:
+
+1. **Cheap deterministic pass first.** Keyword-tag each item against the controlled vocabularies — this is the prior, the cross-check, and the filter that holds the LLM bill down.
+2. **Per item, a subagent:** chunk → extract verbatim quotes → bin the quotes → name + describe + stance each bin. Force strict JSON to a committed schema; write one file per item under the source tree (the audit graph). The quote is the atomic unit.
+3. **Validate.** A verbatim-quote check (normalize whitespace; tolerate footnote / `--- PAGE N ---` splices the PDF text layer interleaves), plus schema + bin/quote-ref integrity. Stamp `verified_at` — the LLM pass is provisional until a human audits it.
+4. **Aggregate** into the site data and regenerate. Scale by fanning out (one subagent per item) **only with explicit opt-in** — it's a large, billable run; build + validate on a gold subset first, then scale.
+
 ---
 
 ## What NOT to do

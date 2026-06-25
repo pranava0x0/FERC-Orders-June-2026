@@ -215,6 +215,7 @@ For a content/static site, default to a **cookieless, privacy-first** tool (no c
 - Cheapest model that meets quality (Haiku before Opus). Keyword pre-filter before expensive calls. Truncate/excerpt input.
 - Cache responses by content hash; never re-classify identical content.
 - Log cost per layer; print a run summary. `--dry-run` and `--fetch-only` work without an API key.
+- **Decompose document/comment analysis into auditable subtasks; the quote is the atomic unit.** Don't one-shot a summary over a corpus (comments, filings, documents): **chunk → extract verbatim quotes → bin the quotes against a controlled vocabulary (+ emergent topics) → synthesize each bin into a short name + a description + a stance, from *its* quotes.** Store the prompt + input + output per item (an audit graph) so every tag and summary is inspectable and traces to a source span; a verbatim-quote test guards fidelity (normalize whitespace + tolerate footnote / page-marker splices the PDF text layer interleaves). Run a cheap **deterministic keyword pass first** as the prior *and* the cross-check — LLM extraction runs ~80% precision / ~20% recall (it under-selects vs. an expert), so never ship the LLM pass unaudited; stamp `verified_at`, and let a human edit become a few-shot example (feedback alignment). (Pattern: PNNL "CommentNEPA.")
 
 ---
 
