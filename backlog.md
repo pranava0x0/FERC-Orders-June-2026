@@ -63,18 +63,28 @@
   Re-run `build-comment-audit.mjs` as summaries land; categorization auto-aggregates.
 - **high — agentic LLM comment analysis (PNNL "CommentNEPA" approach).** Extend per-comment analysis from
   the 9 flagships to all ~269 text-extracted bodies, following PNNL/Battelle's *CommentNEPA: Auditable,
-  Agentic Workflows with Feedback Alignment for Environmental Review* (NAEP 2025, PNNL-SA-210567). Decompose
-  each comment into auditable subtasks — (1) summarize the correspondence, (2) extract concerns + verbatim
-  quotes, (3) assign bins = the five reform principles + six order regions + a per-principle stance — instead
-  of one chat-shot. Add self-evaluation/critique loops (generate → critique → revise; let competing prompts
-  compete) and store the **graph of every LLM input + prompt + output**, so each tag/summary is inspectable
-  and traceable (matches the provenance + "AI-synthesized values are provisional" rules — stamp `verified_at`
-  + a per-row source). Human-in-the-loop *feedback alignment*: a curator's edit to a summary/bin becomes a
-  few-shot example that tunes the prompts, so the curator audits rather than prompt-engineers. Keep the
-  **keyword** principle/region tags as the cheap deterministic prior, the guidance, and a cross-check on the
-  LLM bins — PNNL reports ~78% precision / ~20% recall on raw LLM "bracketing," so never ship the LLM pass
-  unaudited. Cost discipline: keyword pre-filter first, cheapest model that holds quality, cache by content
-  hash. Then surface per-bin summaries with references back to the original filings in the Comments tab.
+  Agentic Workflows with Feedback Alignment for Environmental Review* (NAEP 2025, PNNL-SA-210567). The unit
+  of evidence is the **quote**, and binning is **bottom-up on quotes** — not a single chat-shot. Decompose
+  each correspondence into auditable subtasks:
+  1. **Chunk + bracket** — split the filing into spans and classify each as a substantive comment vs
+     boilerplate / non-comment (PNNL's "bracketing"; this is their eval target — ~78% precision, ~20% recall
+     vs. SMEs, who select more text — so it must be audited, not trusted).
+  2. **Extract substantive quotes + a one-line concern per span** — the quote is the atomic, auditable unit
+     (and passes the repo's "quote appears verbatim in source text" test); only the best concerns advance.
+  3. **Bin the quotes** — map each quote to one or more bins: the five reform principles + six order regions
+     as *pre-specified* bins, plus *emergent* topic bins the model proposes; carry a per-principle stance.
+  4. **Name + summarize each bin** — a short bin **name** + a longer **description** synthesized from the
+     quotes it holds, with references back to the original correspondence (accession + quote); plus a
+     per-filing summary on top.
+  Add self-evaluation/critique loops (generate → critique → revise; let competing prompts compete) and store
+  the **graph of every LLM input + prompt + output**, so each quote, bin, and summary is inspectable and
+  traceable (matches the provenance + "AI-synthesized values are provisional" rules — stamp `verified_at` +
+  a per-row source). Human-in-the-loop *feedback alignment*: a curator's edit to a quote/bin/summary becomes
+  a few-shot example that tunes the prompts, so the curator audits rather than prompt-engineers. Keep the
+  **keyword** principle/region tags as the cheap deterministic prior, the seed for the pre-specified bins,
+  and a cross-check on the LLM's binning — never ship the LLM pass unaudited. Cost discipline: keyword
+  pre-filter first, cheapest model that holds quality, cache by content hash. Surface each bin's name +
+  description with its quote references in the Comments tab.
 - **medium — OCR the 4 image-only scans.** `20251121-5224`, `20251121-5521` (Data Center Coalition),
   `20251121-5140` (Yurok Nation), `20251205-5005` are downloaded but have no text layer (`validate-comments.py`
   flags them). Needs an OCR tool (no `ocrmypdf`/`tesseract` installed locally — install one, or use macOS
