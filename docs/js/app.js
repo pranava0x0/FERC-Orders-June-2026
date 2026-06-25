@@ -278,6 +278,7 @@
     if (!CM) return head("The RM26-4 comment period", "Comment data did not load (js/comments-data.js).");
     var CL = { study: "Study", cost: "Cost", colo: "Co-loc", flex: "Flex", proximate: "Prox-gen" };
     var RG = { pjm: "PJM", miso: "MISO", spp: "SPP", caiso: "CAISO", isone: "ISO-NE", nyiso: "NYISO" };
+    var AQ = { jurisdiction: "Jurisdiction", threshold: "20 MW", jointstudy: "Joint study", deposits: "Deposits", hybridrights: "Hybrid rights", protection: "Protection", expedited: "Expedited", upgradecost: "Upgrade cost" };
 
     var statRow = '<div class="cm-stats">' +
       [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.analyzed, "text-analyzed"], [CM.summarized, "read in full"]]
@@ -312,9 +313,10 @@
         '<div class="cm-bar prin"><span style="width:' + t.pct + '%"></span></div>' +
         '<p class="cm-note mono">' + t.count + " of " + CM.analyzed + "</p></div>";
     };
-    var prReg = '<div class="cm-prreg">' +
-      '<div><h3 class="cm-sub">Reform principles engaged</h3><div class="cm-themes one">' + CM.principles.map(prRegBar).join("") + "</div></div>" +
-      '<div><h3 class="cm-sub">Order regions referenced</h3><div class="cm-themes one">' + CM.regions.map(prRegBar).join("") + "</div></div></div>";
+    var prReg = '<div class="cm-prreg three">' +
+      '<div><h3 class="cm-sub">Comment-period questions</h3><div class="cm-themes one">' + CM.anoprQuestions.map(prRegBar).join("") + "</div></div>" +
+      '<div><h3 class="cm-sub">Reform principles</h3><div class="cm-themes one">' + CM.principles.map(prRegBar).join("") + "</div></div>" +
+      '<div><h3 class="cm-sub">Order regions</h3><div class="cm-themes one">' + CM.regions.map(prRegBar).join("") + "</div></div></div>";
 
     var flag = "";
     if (D.comments && D.comments.flagships && D.comments.flagships.length) {
@@ -344,10 +346,12 @@
           : c.dl ? '<span class="cm-badge dl" title="Body downloaded and text-extracted">✓</span>'
           : '<span class="cm-badge no" title="Body not downloaded">–</span>';
         var type = CM.bucketLabels[c.bucket] || c.bucket;
+        var aqChips = (c.aq || []).map(function (k) { return '<span class="cm-tag aq" title="Addresses the ANOPR comment-period question: ' + esc(AQ[k]) + '">' + esc(AQ[k]) + "</span>"; }).join("");
         var prChips = (c.pr || []).map(function (k) { return '<span class="cm-tag pr ' + k + '" title="Engages the ' + esc(CL[k]) + ' reform principle">' + esc(CL[k]) + "</span>"; }).join("");
         var rgChips = (c.rg || []).map(function (k) { return '<span class="cm-tag rg" title="References the ' + esc(RG[k]) + ' region">' + esc(RG[k]) + "</span>"; }).join("");
-        var tags = (prChips || rgChips) ? '<div class="cm-row-tags">' + prChips + (rgChips ? '<span class="cm-tagsep" aria-hidden="true"></span>' + rgChips : "") + "</div>" : "";
-        var q = (c.org + " " + c.desc + " " + type + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ")).toLowerCase();
+        var groups = [aqChips, prChips, rgChips].filter(Boolean);
+        var tags = groups.length ? '<div class="cm-row-tags">' + groups.join('<span class="cm-tagsep" aria-hidden="true"></span>') + "</div>" : "";
+        var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ")).toLowerCase();
         return '<li class="cm-row" data-q="' + esc(q) + '">' +
           '<div class="cm-row-top"><span class="cm-row-date mono">' + esc(fmtD(c.filed)) + "</span>" + badge +
           '<span class="cm-row-org">' + esc(c.org) + "</span>" +
@@ -360,19 +364,59 @@
     var filter = '<div class="cm-filter"><input type="search" id="cm-search" placeholder="Filter by organization, type, or description…" aria-label="Filter the comment list" autocomplete="off" /><span class="cm-filter-count mono" id="cm-count">' + CM.total + " of " + CM.total + "</span></div>";
     var src = '<div class="srcs"><span class="label">Source</span><a class="src-chip" data-tier="ferc" href="' + esc(CM.source_url) + '" target="_blank" rel="noopener noreferrer" title="FERC eLibrary docket sheet for RM26-4-000">eLibrary · RM26-4 docket sheet</a></div>';
 
-    return head("The RM26-4 comment period",
-      CM.total + " comments were filed on DOE's large-load ANOPR (Docket RM26-4-000) between " + fmtD(CM.dateRange.first) + " and " + fmtD(CM.dateRange.last) +
-      ", scraped from FERC eLibrary on " + CM.captured + ". " + CM.downloaded + " bodies are downloaded and " + CM.analyzed + " text-analyzed for the themes below.") +
+    // three sub-tabs cut the scroll: the overall picture, the respondent mix, and the comment list itself
+    var subtab = function (id, label, sel) {
+      return '<button class="cm-subtab" role="tab" id="cmsub-' + id + '" aria-controls="cmsec-' + id + '" aria-selected="' + (sel ? "true" : "false") + '"' + (sel ? "" : ' tabindex="-1"') + ' data-sub="' + id + '">' + esc(label) + "</button>";
+    };
+    var subnav = '<div class="cm-subtabs" role="tablist" aria-label="Comment-period views">' +
+      subtab("overview", "Overview", true) + subtab("types", "Respondent types", false) + subtab("summaries", "Comment summaries", false) + "</div>";
+
+    var secOverview = '<section class="cm-sec" id="cmsec-overview" role="tabpanel" aria-labelledby="cmsub-overview">' +
+      head("The RM26-4 comment period",
+        CM.total + " comments were filed on DOE's large-load ANOPR (Docket RM26-4-000) between " + fmtD(CM.dateRange.first) + " and " + fmtD(CM.dateRange.last) +
+        ", scraped from FERC eLibrary on " + CM.captured + ". " + CM.downloaded + " bodies are downloaded and " + CM.analyzed + " are text-analyzed.") +
       statRow + rounds +
-      head("Who commented", "Each filing's stakeholder type, counted across all " + CM.total + " comments. Types are keyword-derived from the filer and filing text.") + types +
       head("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies — a measured keyword prevalence, not a coding of each filer's position.") + themes +
-      head("Reform principles &amp; order regions", "Per-comment tags from each body: which of the five reform principles it engages, and which of the six show-cause-order RTO regions it references (keyword-detected; a comment can carry several). Out of " + CM.analyzed + " text-analyzed bodies.") + prReg +
+      head("What the comments engage", "Three lenses, tagged per body by keyword: the DOE ANOPR's eight comment-period questions, the five June-order reform principles, and the six show-cause-order regions. A comment can carry several. Out of " + CM.analyzed + " text-analyzed bodies.") + prReg +
+      "</section>";
+
+    var secTypes = '<section class="cm-sec" id="cmsec-types" role="tabpanel" aria-labelledby="cmsub-types" hidden>' +
+      head("Who commented", "Each filing's stakeholder type, counted across all " + CM.total + " comments. Types are keyword-derived from the filer and the filing text.") + types +
+      "</section>";
+
+    var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
       flag +
-      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. ★ read in full · ✓ body downloaded. Each links to its eLibrary filing.") +
-      filter + '<div class="cm-listwrap">' + listHtml + "</div>" + src;
+      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. Each row carries the three lenses it engages — comment-period questions, reform principles, and regions — plus a ★ read-in-full / ✓ downloaded badge and an eLibrary link. Filter by org, type, question, principle, or region.") +
+      filter + '<div class="cm-listwrap">' + listHtml + "</div>" + src + "</section>";
+
+    return subnav + secOverview + secTypes + secSummaries;
   }
 
-  function wireCommentsFilter() {
+  function wireComments() {
+    // sub-tab switching within the Comments panel
+    var subs = ["overview", "types", "summaries"];
+    var showSub = function (name) {
+      subs.forEach(function (s) {
+        var btn = document.getElementById("cmsub-" + s), sec = document.getElementById("cmsec-" + s);
+        if (!btn || !sec) return;
+        var on = s === name;
+        btn.setAttribute("aria-selected", on ? "true" : "false");
+        btn.tabIndex = on ? 0 : -1;
+        sec.hidden = !on;
+      });
+    };
+    subs.forEach(function (s) {
+      var btn = document.getElementById("cmsub-" + s);
+      if (!btn) return;
+      btn.addEventListener("click", function () { showSub(s); });
+      btn.addEventListener("keydown", function (e) {
+        var i = subs.indexOf(s), n = null;
+        if (e.key === "ArrowRight") n = (i + 1) % subs.length;
+        else if (e.key === "ArrowLeft") n = (i - 1 + subs.length) % subs.length;
+        if (n !== null) { e.preventDefault(); var t = document.getElementById("cmsub-" + subs[n]); showSub(subs[n]); t.focus(); }
+      });
+    });
+    // list filter (within the summaries sub-tab)
     var input = document.getElementById("cm-search"), count = document.getElementById("cm-count");
     if (!input) return;
     var rows = [].slice.call(document.querySelectorAll("#panel-comments .cm-row"));
@@ -415,7 +459,7 @@
   /* ---- tablist ---- */
   var TABS = ["overview", "timeline", "reforms", "dockets", "comments", "news"];
   var renderers = { overview: renderOverview, timeline: renderTimeline, reforms: renderReforms, dockets: renderDockets, comments: renderComments, news: renderNews };
-  var afterRender = { comments: wireCommentsFilter };
+  var afterRender = { comments: wireComments };
   var rendered = {};
 
   function panelFor(name) { return document.getElementById("panel-" + name); }
