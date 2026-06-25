@@ -1,0 +1,8 @@
+# Public regulatory-analysis microsite — search crawlers and LLM agents are welcome.
+# (On a GitHub Pages *project* site this file is served at the project subpath; crawlers that
+# only read the domain-root robots.txt won't see it, but it documents intent and is honored by
+# tools that fetch it directly. The machine-readable index for agents is /llms.txt.)
+User-agent: *
+Allow: /
+
+Sitemap: https://pranava0x0.github.io/FERC-Orders-June-2026/sitemap.xml

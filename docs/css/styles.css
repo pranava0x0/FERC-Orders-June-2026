@@ -42,6 +42,8 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 [hidden] { display: none !important; }
+/* screen-reader-only text: keeps the meaning of glyphs/lossy visuals available to assistive tech */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 html { -webkit-text-size-adjust: 100%; }
 body {
@@ -385,7 +387,7 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-tag.aq { color: #2e5d4f; background: #e6f1ec; }
 /* Comments sub-tabs (Overview / Respondent types / Comment summaries) */
 .cm-subtabs { display: flex; gap: 2px; margin-bottom: 18px; border-bottom: 2px solid var(--rule); flex-wrap: wrap; }
-.cm-subtab { font: inherit; font-size: 13.5px; font-weight: 700; color: var(--text-muted); background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -2px; padding: 8px 13px; cursor: pointer; }
+.cm-subtab { font: inherit; font-size: 13.5px; font-weight: 700; color: var(--text-muted); background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -2px; padding: 12px 14px; min-height: 44px; cursor: pointer; }
 .cm-subtab:hover { color: var(--ink); }
 .cm-subtab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
 .cm-subtab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }

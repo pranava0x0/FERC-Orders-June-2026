@@ -422,6 +422,27 @@ test("comment body directories are named with the submitter (traceable to filer)
   }
 });
 
+test("SEO + accessibility essentials are present in the deployed shell", () => {
+  const docs = join(here, "..", "docs");
+  const html = readFileSync(join(docs, "index.html"), "utf8");
+  // accessibility shell
+  assert.match(html, /<html lang="en">/, "html carries a lang");
+  assert.match(html, /class="skip-link"/, "skip-link present");
+  assert.ok(/role="banner"/.test(html) && /role="main"/.test(html) && /role="contentinfo"/.test(html), "landmark roles present");
+  assert.match(html, /name="viewport"/, "viewport meta present");
+  // SEO
+  assert.match(html, /rel="canonical"/, "canonical link present");
+  assert.match(html, /name="robots"/, "robots meta present");
+  assert.match(html, /property="og:url"/, "og:url present");
+  const ld = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+  assert.ok(ld, "JSON-LD present");
+  assert.doesNotThrow(() => JSON.parse(ld[1]), "JSON-LD is valid JSON");
+  // robots.txt + sitemap.xml
+  assert.ok(existsSync(join(docs, "robots.txt")), "robots.txt present");
+  assert.match(readFileSync(join(docs, "robots.txt"), "utf8"), /Sitemap:/, "robots.txt references the sitemap");
+  assert.match(readFileSync(join(docs, "sitemap.xml"), "utf8"), /pranava0x0\.github\.io\/FERC-Orders-June-2026/, "sitemap uses the canonical host");
+});
+
 test("every inventoried comment has its body on disk (download completeness)", () => {
   // Regression for the bulk pull + the validation/recovery pass: catches a re-broken download,
   // a missing extension-heal, or a broken dir resolver. fitz-free (filesystem only).
