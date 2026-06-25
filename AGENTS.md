@@ -171,6 +171,8 @@ Concrete gotchas that aren't obvious until you hit them:
 - **`window` globals don't survive a cross-domain navigation** — stash state in `localStorage`.
 - **A selector inside a `[hidden]` container needs `state="attached"`**, not the default `state="visible"` — `display:none` removes the element from the box model, so a visibility wait times out.
 - **Auth differs per source** — some need a logged-in browser session first; public APIs don't. Note the requirement per source in the project `AGENTS.md`.
+- **Bulk file downloads via hidden iframes need the host's *automatic downloads* permission** (Chrome: `chrome://settings/content/automaticDownloads`). Without it an iframe `a.click()` finds the link and "succeeds" but nothing lands — Chrome's multiple-download protection blocks it silently. Keep the worker pool small (2–3): concurrent SPA bootstraps starve the renderer and ~25–30% miss the render-wait; retry the failures at lower concurrency, then a 1-worker pass for the tail.
+- **Two gov-portal filename quirks corrupt a download silently:** a `;` in the name is truncated at the Content-Disposition separator (losing the extension — heal from the PDF magic bytes), and some portals append a `" *"` marker to link labels (strip it before an ends-with extension match). Afterwards, validate the corpus against its *inventory* — every inventoried item has a body on disk with real extracted text — not against a count. A clean count is not a clean corpus.
 
 ---
 

@@ -91,3 +91,30 @@ run-by-run numbers are in [`agent-runs.md`](agent-runs.md); per-bug detail is in
   `design-notes.md`.
 - **Static data via `<script>` global, not `fetch`.** For a GitHub Pages *project* site, an in-page
   `window.FERC_DATA` object dodges base-path and CORS/`file://` issues entirely; no build step.
+
+## Bulk comment retrieval + analysis (RM26-4 docket — 272 of 273 bodies)
+
+- **eLibrary bulk download hinges on one Chrome setting.** The docket sheet and file lists render past
+  Cloudflare in the user's logged-in Chrome, but downloading *every* comment body is blocked by Chrome's
+  *multiple automatic downloads* protection. Allow it for the site
+  (`chrome://settings/content/automaticDownloads`), then a hidden-iframe grinder
+  (`tools/grind-comment-downloads.js`) clicks each file link. Without that permission iframe downloads
+  fail silently — the click "succeeds" and finds the link, yet nothing lands in `~/Downloads`.
+- **Concurrency is the failure knob, not a hard wall.** Three Angular file-list bootstraps at once starve
+  the renderer and ~25–30% miss the link-wait on the first pass. Retry the `window.__g.fail` set at lower
+  concurrency + a longer wait; a final 1-worker pass clears the stragglers.
+- **Two filename quirks corrupt the audit trail silently.** A `;` in a name is truncated by Chrome at the
+  Content-Disposition separator (`"RM26-4; Antora….pdf"` → `RM26-4`, no extension) — heal it from the PDF
+  magic bytes. And eLibrary appends a `" *"` availability marker to some link labels, so an *ends-with*
+  `.pdf` regex skips them — strip the marker first. Both hid real comments until validation.
+- **Validate against the inventory, not a count.** `tools/validate-comments.py` checks every inventoried
+  comment has a body on disk, every PDF opens, and every body has real extracted text. It caught three
+  defects a raw count (270/271) had masked: a truncated filename plus two empty-inventory filings (a
+  `GetFileListFromP8` gap). A clean count is not a clean corpus.
+- **Name files by submitter.** `files/<accession>__<org-slug>/` makes a path name who filed it; keep the
+  accession the stable key and resolve a dir from it everywhere (the org slug can change, the accession won't).
+- **Tag cheaply and deterministically before reaching for an LLM.** Per-comment reform-principle (5) and
+  order-region (6) tags are keyword regex over the extracted body — instant, free, fully auditable. Reserve
+  the LLM read for depth (the nine flagships); label the keyword layer "prevalence," not a coded position.
+- **OCR is the remaining gap.** Four filings are image-only scans (0 text layer); flagged OCR-pending — no
+  local OCR tool, so they are surfaced honestly rather than silently counted as extracted.

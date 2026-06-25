@@ -417,3 +417,22 @@ test("comment body directories are named with the submitter (traceable to filer)
     assert.equal(m[2], slug(orgByAcc[m[1]]), `dir ${d} suffix is the submitter slug`);
   }
 });
+
+test("every inventoried comment has its body on disk (download completeness)", () => {
+  // Regression for the bulk pull + the validation/recovery pass: catches a re-broken download,
+  // a missing extension-heal, or a broken dir resolver. fitz-free (filesystem only).
+  const C = join(here, "..", "sources", "comments");
+  const inv = JSON.parse(readFileSync(join(C, "rm26-4-files.json"), "utf8")).files;
+  const FILES = join(C, "files");
+  const dirs = readdirSync(FILES);
+  const dirForAcc = (acc) => dirs.find((d) => d === acc || d.startsWith(acc + "__"));
+  const KNOWN_MISSING = new Set(["20251121-5225"]); // ETI: renders but won't download (issues.md)
+  const missing = [];
+  for (const [acc, files] of Object.entries(inv)) {
+    if (!files || !files.length) continue; // genuinely attachment-less filing
+    const dir = dirForAcc(acc);
+    const ok = dir && readdirSync(join(FILES, dir)).some((f) => /\.(pdf|docx?|txt)$/i.test(f));
+    if (!ok && !KNOWN_MISSING.has(acc)) missing.push(acc);
+  }
+  assert.deepEqual(missing, [], `every inventoried comment body is on disk (missing: ${missing.join(", ")})`);
+});
