@@ -289,15 +289,26 @@
         '</span><span class="cm-round-d mono">' + esc(fmtD(r.first)) + " – " + esc(fmtD(r.last)) + "</span></div>";
     }).join("") + "</div>";
 
-    // respondent types: counts across all 273 filings; example orgs from the curated buckets where present
-    var bmeta = {};
-    if (D.comments && D.comments.buckets) D.comments.buckets.forEach(function (b) { bmeta[b.label] = b; });
+    // respondent types: count + the full distinct-organization roster per camp (collapse past 10)
+    var orgsByBucket = {};
+    CM.list.forEach(function (c) { (orgsByBucket[c.bucket] = orgsByBucket[c.bucket] || []).push(c.org); });
+    Object.keys(orgsByBucket).forEach(function (b) { orgsByBucket[b] = Array.from(new Set(orgsByBucket[b])).sort(function (a, z) { return a.localeCompare(z); }); });
     var maxT = CM.respondentTypes.reduce(function (m, t) { return Math.max(m, t.count); }, 1);
+    var ORG_CAP = 10;
     var types = '<div class="cm-types">' + CM.respondentTypes.map(function (t) {
-      var egs = ((bmeta[t.label] || {}).egs || []).slice(0, 3).map(function (e) { return '<span class="cm-eg">' + esc(e) + "</span>"; }).join("");
+      var orgs = orgsByBucket[t.bucket] || [];
+      var pill = function (o) { return '<span class="cm-eg">' + esc(o) + "</span>"; };
+      var pills;
+      if (orgs.length <= ORG_CAP) {
+        pills = orgs.map(pill).join("");
+      } else {
+        pills = orgs.slice(0, ORG_CAP).map(pill).join("") +
+          '<span class="cm-eg-rest">' + orgs.slice(ORG_CAP).map(pill).join("") + "</span>" +
+          '<button type="button" class="cm-showmore" aria-expanded="false" data-n="' + orgs.length + '">Show all ' + orgs.length + "</button>";
+      }
       return '<div class="cm-type"><div class="cm-bhead"><span class="cm-label">' + esc(t.label) + '</span><span class="cm-n mono">' + t.count + "</span></div>" +
         '<div class="cm-bar"><span style="width:' + Math.round((t.count / maxT) * 100) + '%"></span></div>' +
-        (egs ? '<p class="cm-note"><span class="cm-egs">' + egs + "</span></p>" : "") + "</div>";
+        '<div class="cm-egs">' + pills + "</div></div>";
     }).join("") + "</div>";
 
     // themes: keyword prevalence across the analyzed bodies (a measured signal, not a coded position)
@@ -411,7 +422,7 @@
       "</section>";
 
     var secTypes = '<section class="cm-sec" id="cmsec-types" role="tabpanel" aria-labelledby="cmsub-types" hidden>' +
-      head("Who commented", "Each filing's stakeholder type, counted across all " + CM.total + " comments. Types are keyword-derived from the filer and the filing text.") + types +
+      head("Who commented", "Every organization that filed, grouped by stakeholder type. The number is filings; larger camps list the first 10 — open “Show all” for the full roster. Types are keyword-derived from the filer and the filing text.") + types +
       "</section>";
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
@@ -446,6 +457,16 @@
         if (n !== null) { e.preventDefault(); var t = document.getElementById("cmsub-" + subs[n]); showSub(subs[n]); t.focus(); }
       });
     });
+    // "Show all" toggles for the respondent-type rosters (camps with >10 organizations)
+    [].slice.call(document.querySelectorAll("#panel-comments .cm-showmore")).forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var egs = btn.closest(".cm-egs");
+        var open = egs.classList.toggle("expanded");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+        btn.textContent = open ? "Show fewer" : "Show all " + btn.getAttribute("data-n");
+      });
+    });
+
     // list filter (within the summaries sub-tab)
     var input = document.getElementById("cm-search"), count = document.getElementById("cm-count");
     if (!input) return;
