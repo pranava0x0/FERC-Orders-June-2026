@@ -1,0 +1,260 @@
+{
+  "accession": "20251205-5260",
+  "filer": "Electricity Customer Alliance",
+  "org_type": "industrial",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5260__Electricity-Customer-Alliance/RM26-4-000 Electricity Customer Alliance Reply Comments.txt",
+  "overall_summary": "ECA supports Commission action to reform large load interconnection procedures and agreements, arguing that unclear rules harm both large load customers seeking speed to power and other customers exposed to cost shifts. ECA recommends a guidelines-based compliance approach rather than uniform pro forma reforms, which would allow regional flexibility, encourage innovation, and address the overlap of federal and state jurisdiction. ECA opposes proposals that would narrow the scope of reforms by limiting them to RTOs, applying a 230 kV voltage threshold, or restricting private funding options for network upgrades.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Commission action on large load interconnection to the transmission system is needed to ensure just and reasonable rates and prevent undue discrimination and will open new opportunities to meet the needs of new large loads for \"speed to power\" while protecting other customers from harm.",
+      "concern": "FERC jurisdiction over large load interconnection is necessary to protect all customers",
+      "bins": [
+        "pr:study",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Large load customers like data centers, manufacturers, and industry are seeking opportunities to pay for and accelerate timelines for the generation and transmission infrastructure needed to serve them, but are stymied by inconsistent and unclear rules for large load interconnection to transmission, a lack of clear paths to line up load interconnection with the interconnection and delivery of generation they construct or contract to serve them, and fractured and incomplete transmission planning processes that fail to holistically account for projected new large loads and associated generation",
+      "concern": "Unclear interconnection rules block large load customers from paying to accelerate grid buildout",
+      "bins": [
+        "pr:study",
+        "pr:colo",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Other customers lack sufficient transparency into how costs are incurred and allocated and in forecasts of new large loads to have confidence that investments made to serve new large loads are not being shifted to them or exposing them to stranded cost risk.",
+      "concern": "Existing customers face cost shift and stranded cost risk from large load interconnection",
+      "bins": [
+        "pr:cost",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "ECA suggests a guidelines-based approach, requiring transmission providers across the country to demonstrate that they have in place procedures and agreements for large load interconnection to the transmission system that meet minimum guidelines prescribed by the Commission.",
+      "concern": "ECA recommends guidelines-based compliance rather than uniform pro forma tariff reforms",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "It is entirely reasonable for the Commission to base action here on the unremarkable theory that unprecedented growth in demand from large load customers, combined with unclear and uncertain procedures and agreements for interconnection of such loads to the transmission system that limit the development of new infrastructure to serve them, will lead to unjust and unreasonable rates and the potential for undue discrimination in the provision of transmission service.",
+      "concern": "FERC need not wait for empirical harm before acting on unjust and unreasonable rates",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Commission regulation of the rates, terms, and conditions of interconnection to transmission facilities subject to FERC jurisdiction and related transmission service does not constitute regulation of any retail sale.",
+      "concern": "FERC interconnection regulation does not encroach on state retail authority",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The Commission should reject the suggestion that it limit the scope of its required reforms to only those systems where rates for transmission service are unbundled (which could be interpreted as a request to limit the reach of reforms only to Regional Transmission Organizations and Independent System Operators (RTOs/ISOs)).",
+      "concern": "Reforms should apply to bundled and unbundled transmission providers alike",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "ECA believes continued reliance on the long-standing seven-factor test is appropriate, legally sound, and will not materially increase litigation challenges.",
+      "concern": "Seven-factor jurisdictional test is preferable to a voltage threshold for defining scope",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "A voltage threshold (especially one as high as 230 kV) will be an incomplete remedy to the risks to just and reasonable rates driving the need for Commission action and leave regulatory gaps.",
+      "concern": "230 kV voltage threshold would exclude much of the FERC-jurisdictional system and leave gaps",
+      "bins": [
+        "aq:threshold",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The Commission should, as a general matter, avoid taking options off the table for large customers to fund with private capital rather than ratepayer funds the new transmission and generation infrastructure needed to serve them.",
+      "concern": "Private capital funding options for network upgrades should not be restricted",
+      "bins": [
+        "pr:cost",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Mandating that all transmission upgrades be funded by transmission providers in rate base with a return on investment, or that customers securitize network upgrades that transmission providers are funding through rate base, would lead to increased costs and less options to support speed to power without any demonstrable benefit to other customers.",
+      "concern": "Rate-base-only funding mandates would raise costs without benefiting other customers",
+      "bins": [
+        "pr:cost",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "ECA strongly supports comments emphasizing the value to all customers of greater aggregation and use of behind-the-meter generation resources.",
+      "concern": "Behind-the-meter generation aggregation benefits all customers and should be encouraged",
+      "bins": [
+        "pr:flex",
+        "topic:behind-meter-aggregation"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Fully implementing aggregation models under Order No. 2222, and encouraging their adoption in non-RTO regions, is critical to taking advantage of these resources to the benefit of system reliability and all customers.",
+      "concern": "Order 2222 aggregation should be extended to non-RTO regions for system reliability",
+      "bins": [
+        "pr:flex",
+        "topic:behind-meter-aggregation"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "ECA supports further examination of the potential for open season models to allow customers to express interest in funding new infrastructure or flexibly utilizing off-peak capacity to meet their needs.",
+      "concern": "Open season models could accelerate interconnection by letting customers fund capacity directly",
+      "bins": [
+        "pr:flex",
+        "aq:deposits",
+        "topic:open-season-models"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Reform scope and FERC authority",
+      "stance": "support",
+      "description": "ECA argues that unclear large load interconnection rules harm both large customers seeking speed to power and other customers exposed to cost shift, giving FERC ample basis to act. ECA supports broad reforms covering all transmission providers and opposes narrowing the scope to RTOs or unbundled systems only.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Ratepayer protection and cost transparency",
+      "stance": "support",
+      "description": "ECA emphasizes that other customers face cost shift and stranded cost risk from large load growth, and calls for transparency in how interconnection costs are incurred and allocated. ECA opposes mandates that restrict private capital options, arguing they raise costs without benefit to existing customers.",
+      "quote_ids": [
+        3,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Generation and load interconnection alignment",
+      "stance": "support",
+      "description": "ECA identifies the absence of clear pathways to align load interconnection with the generation and storage resources that large customers build or contract as a core problem requiring FERC action.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility and behind-meter resources",
+      "stance": "support",
+      "description": "ECA supports greater use of behind-the-meter generation aggregation under Order 2222, including in non-RTO regions, and endorses open season models that let customers fund infrastructure or utilize off-peak capacity. ECA views these as tools that can accelerate interconnection while benefiting system reliability and all customers.",
+      "quote_ids": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC jurisdiction and reform scope",
+      "stance": "support",
+      "description": "ECA supports FERC's authority to regulate large load interconnection to transmission facilities without encroaching on state retail jurisdiction. ECA opposes limiting reforms to RTOs or unbundled providers and favors the seven-factor test over a voltage threshold to define jurisdictional scope.",
+      "quote_ids": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Scope threshold for jurisdictional facilities",
+      "stance": "oppose",
+      "description": "ECA opposes using a 230 kV voltage threshold as a jurisdictional cutoff, arguing it would exclude much of the FERC-jurisdictional system, leave regulatory gaps, and could incentivize lower-voltage construction to avoid requirements. ECA prefers the existing seven-factor test.",
+      "quote_ids": [
+        3,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Customer funding and private capital options",
+      "stance": "support",
+      "description": "ECA supports preserving all options for large customers to fund network upgrades with private capital rather than through ratepayer-funded rate base. ECA endorses open season models and opposes mandates that limit private investment pathways.",
+      "quote_ids": [
+        10,
+        11,
+        14
+      ]
+    },
+    {
+      "key": "topic:behind-meter-aggregation",
+      "name": "Behind-meter generation aggregation",
+      "stance": "support",
+      "description": "ECA strongly supports expanding aggregation of behind-the-meter generation under Order 2222, including in non-RTO regions, arguing these resources improve reliability and reduce costs for all customers once large load customers eventually connect to the grid.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "topic:open-season-models",
+      "name": "Open season capacity and funding models",
+      "stance": "support",
+      "description": "ECA endorses open season models as a way for customers to signal willingness to pay for new infrastructure or off-peak capacity, which could accelerate grid buildout and avoid protracted cost allocation disputes.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "deposits"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
