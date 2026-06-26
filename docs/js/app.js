@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260626k";
+  var ASSET_VER = "20260626p";
   var D = window.FERC_DATA;
   if (!D) { document.getElementById("main").innerHTML = "<p class='noscript'>Data failed to load (js/data.js).</p>"; return; }
 
@@ -61,11 +61,33 @@
 
     var commish = "";
     if (D.commissioners && D.commissioners.length) {
+      // expandable themed read of each statement (themes + verbatim quotes), shown when authored.
+      // Written quotes are verbatim from the order text; spoken quotes are from the open-meeting
+      // auto-caption transcript and labeled as such (machine transcription, may be approximate).
+      var themed = function (c) {
+        if (!c.themes || !c.themes.length) return "";
+        var blocks = c.themes.map(function (th) {
+          var qs = (th.quotes || []).map(function (q) {
+            var sp = q.src === "spoken";
+            return '<li class="commish-q ' + (sp ? "spoken" : "written") + '">“' + esc(q.t) + "”" +
+              (sp ? '<span class="commish-q-src">spoken · auto-caption' + (q.at ? " · " + esc(q.at) : "") + "</span>" : "") + "</li>";
+          }).join("");
+          return '<div class="commish-theme"><h5 class="commish-theme-h">' + esc(th.name) + "</h5>" +
+            (th.desc ? '<p class="commish-theme-d">' + esc(th.desc) + "</p>" : "") +
+            (qs ? '<ul class="commish-qs">' + qs + "</ul>" : "") + "</div>";
+        }).join("");
+        var last = c.name.split(" ").pop();
+        var srcs = c.sources ? '<p class="commish-srcs">Sources: ' + esc(c.sources.written) +
+          (c.sources.spoken ? "; " + esc(c.sources.spoken) : "") + "</p>" : "";
+        return '<details class="commish-full"><summary><span class="commish-full-label">Read ' + esc(last) +
+          "’s themes &amp; quotes</span><span class=\"commish-full-n mono\">" + c.themes.length + " themes</span></summary>" +
+          (c.summary ? '<p class="commish-sum">' + esc(c.summary) + "</p>" : "") + blocks + srcs + "</details>";
+      };
       var cards = D.commissioners.map(function (c) {
         return '<div class="commish"><div class="commish-head"><span class="commish-name">' + esc(c.name) +
           '</span><span class="commish-role">' + esc(c.role) + '</span><span class="commish-tag">' + esc(c.short) + "</span></div>" +
           '<p class="commish-gist">' + esc(c.gist) + "</p>" +
-          '<div class="commish-quote">“…' + esc(c.quote) + '…”</div></div>';
+          '<div class="commish-quote">“…' + esc(c.quote) + '…”</div>' + themed(c) + "</div>";
       }).join("");
       commish = head("What each commissioner emphasized",
         "All five joined every order unanimously; their concurring statements diverge in emphasis. Each statement is quoted from the orders and cited to the exact page of its own order in the Dockets tab.") +
@@ -163,8 +185,26 @@
             '<span class="dir-quote">“' + esc(x.q) + '”</span></div>';
         }).join("") + "</div>";
       var unique = d.unique ? '<div class="docket-unique"><span class="label">What’s unique to ' + esc(d.rto) + '</span><p>' + esc(d.unique) + "</p></div>" : "";
-      var asks = (d.asks && d.asks.length) ? '<div class="docket-asks"><span class="label">What FERC presses ' + esc(d.rto) + ' on (Section IV)</span><ul>' +
+      var asks = (d.asks && d.asks.length) ? '<div class="docket-asks"><span class="label">What FERC presses ' + esc(d.rto) + ' on</span><ul>' +
         d.asks.map(function (a) { return "<li>" + esc(a) + "</li>"; }).join("") + "</ul></div>" : "";
+      // Section IV briefing questions: the formal questions the order directs the RTO/ISO to brief.
+      // Templated across orders (data.js `briefing`); page link to where § IV opens in this order's PDF.
+      var briefing = "";
+      if (D.briefing && D.briefing.questions) {
+        var bOmit = (D.briefing.omit && D.briefing.omit[d.item]) || [];
+        var bpg = D.briefing.pages && D.briefing.pages[d.item];
+        var bqs = D.briefing.questions.filter(function (q) { return bOmit.indexOf(q.id) < 0; });
+        var bCite = bpg ? '<span class="brief-cite"><span class="dir-para mono">§ IV, p. ' + bpg + "</span>" +
+          '<a class="cite-link" href="' + esc(d.pdf) + "#page=" + bpg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the committed ' + esc(d.item) + " order PDF at the Section IV page " + bpg + '" title="Committed PDF, opens inline to p. ' + bpg + '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
+          '<a class="cite-link" href="' + esc(so.url) + "#page=" + bpg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov ' + esc(d.item) + " order at page " + bpg + '" title="Official ferc.gov source, page ' + bpg + '">gov <span class="ext" aria-hidden="true">↗</span></a></span>' : "";
+        briefing = '<details class="dreg dbrief"><summary>The Section IV briefing questions (' + bqs.length + ")</summary>" +
+          (bCite ? '<div class="brief-head">' + bCite + "</div>" : "") +
+          '<ol class="brief-list">' + bqs.map(function (q) {
+            return '<li class="brief-item"><span class="brief-topic">' + esc(q.t) + "</span>" +
+              '<p class="brief-desc">' + esc(q.d) + "</p>" +
+              '<span class="brief-quote">“…' + esc(q.v) + '…”</span></li>';
+          }).join("") + "</ol></details>";
+      }
       // Per-order commissioner statements: the same five concurrences, cited to THIS order's pages.
       var commish = (d.commishPages && D.commissioners) ?
         '<details class="dreg dcom"><summary>What the commissioners said in this order (' + D.commissioners.length + ")</summary><div class=\"commish-rows\">" +
@@ -206,7 +246,7 @@
         '<span class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</span></span>" +
         '<span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span>" +
         '<span class="chev" aria-hidden="true">›</span></summary>' +
-        '<div class="docket-body">' + orderLink + unique + directives + asks + commish + region + roster + "</div></details>";
+        '<div class="docket-body">' + orderLink + unique + directives + asks + briefing + commish + region + roster + "</div></details>";
     }).join("") + "</div>";
 
     var p = D.participate;
@@ -354,6 +394,7 @@
 
     var rowsByRound = {};
     CM.list.forEach(function (c) { var k = roundOf(c.filed); (rowsByRound[k] = rowsByRound[k] || []).push(c); });
+    var allQ = []; // every row's search string, collected so the tag bar can show real match counts
     var listHtml = CM.rounds.map(function (r) {
       var items = (rowsByRound[r.key] || []).map(function (c) {
         var badge = c.s2 ? '<span class="cm-badge dl" title="Audited summary available"><span aria-hidden="true">✓</span><span class="sr-only">audited summary</span></span>'
@@ -370,6 +411,7 @@
         // descriptions and verbatim quotes are deliberately left out — they're lazy-loaded per letter,
         // too heavy to fold into every row's up-front index.)
         var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ") + " " + (c.summary || "") + " " + (c.bins || []).map(function (b) { return b.n; }).join(" ")).toLowerCase();
+        allQ.push(q);
         // expandable audited read: the plain summary, the positions as stance-colored chips (loaded
         // up front), and — fetched on open — each position's description + the verbatim quotes it draws on
         var analysis = "";
@@ -397,6 +439,15 @@
     var filter = '<div class="cm-filter"><input type="search" id="cm-search" placeholder="Filter by organization, type, position, or description…" aria-label="Filter the comment list" autocomplete="off" /><span class="cm-filter-count mono" id="cm-count">' + CM.total + " of " + CM.total + "</span></div>";
     var src = '<div class="srcs"><span class="label">Source</span><a class="src-chip" data-tier="ferc" href="' + esc(CM.source_url) + '" target="_blank" rel="noopener noreferrer" title="FERC eLibrary docket sheet for RM26-4-000">eLibrary · RM26-4 docket sheet</a></div>';
 
+    // discoverable filter vocabulary: a collapsible bar of every lens tag with the count of rows each
+    // matches. Count is the text-search count (over the same row strings the filter scans), so it equals
+    // the result you get clicking the chip. Chips reuse .cm-tag and the existing chip-click filter.
+    var tagCount = function (label) { var t = label.toLowerCase(); return allQ.reduce(function (n, s) { return n + (s.indexOf(t) >= 0 ? 1 : 0); }, 0); };
+    var tagChip = function (cls, label) { return '<button type="button" class="cm-tag ' + cls + '" data-f="' + esc(label) + '" title="Filter the list by: ' + esc(label) + '">' + esc(label) + ' <span class="cm-tag-n">' + tagCount(label) + "</span></button>"; };
+    var tagGroup = function (heading, cls, map) { return '<div class="cm-tagbar-group"><span class="cm-tagbar-label">' + esc(heading) + "</span>" + Object.keys(map).map(function (k) { return tagChip(cls, map[k]); }).join("") + "</div>"; };
+    var tagBar = '<details class="cm-tagbar" open><summary><span class="cm-tagbar-sum">Filter by tag</span><span class="cm-tagbar-hint mono">click any tag · counts = comments mentioning it</span></summary>' +
+      '<div class="cm-tagbar-body">' + tagGroup("Comment-period questions", "aq", AQ) + tagGroup("Reform principles", "pr", CL) + tagGroup("Regions", "rg", RG) + "</div></details>";
+
     // three sub-tabs cut the scroll: the overall picture, the respondent mix, and the comment list itself
     var subtab = function (id, label, sel) {
       return '<button class="cm-subtab" role="tab" id="cmsub-' + id + '" aria-controls="cmsec-' + id + '" aria-selected="' + (sel ? "true" : "false") + '"' + (sel ? "" : ' tabindex="-1"') + ' data-sub="' + id + '">' + esc(label) + "</button>";
@@ -420,7 +471,7 @@
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
       head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary — open “Read the audited analysis” on any row for the plain read, then each position grouped by lens with its description and the verbatim quotes behind it. Each row also shows the lenses it engages and links to its eLibrary filing. Filter by org, type, lens, position, or any word in a summary.") +
-      filter + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src + "</section>";
+      filter + tagBar + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src + "</section>";
 
     return subnav + secOverview + secTypes + secSummaries;
   }
@@ -474,9 +525,10 @@
       count.textContent = shown + " of " + rows.length;
       if (empty) empty.hidden = shown !== 0; // explicit empty state — never leave a blank panel
     });
-    // clicking a lens chip pre-fills the search and filters (the search box stays the primary control)
-    var listwrap = document.querySelector("#panel-comments .cm-listwrap");
-    if (listwrap) listwrap.addEventListener("click", function (e) {
+    // clicking a lens chip — in the tag bar or on any row — pre-fills the search and filters
+    // (the search box stays the primary control). Scoped to the summaries section so it covers both.
+    var summariesSec = document.getElementById("cmsec-summaries");
+    if (summariesSec) summariesSec.addEventListener("click", function (e) {
       var chip = e.target.closest(".cm-tag");
       if (!chip || !chip.dataset.f) return;
       input.value = chip.dataset.f;

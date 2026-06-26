@@ -56,6 +56,21 @@ run-by-run numbers are in [`agent-runs.md`](agent-runs.md); per-bug detail is in
 - **Commit the machine-readable text, strip trailing whitespace.** Save extracted text so it's reusable
   and diffable; `rstrip` each line so `git diff --check` stays clean and future source diffs are
   reviewable.
+- **Never claim "identical across N sources" from a spot-check — verify across all N.** The commissioner
+  statements were labeled "identical across all six orders" on the strength of one distinctive sentence
+  appearing once per order. A PR-review-driven test that checked *every* written quote against *all six*
+  order texts found they're **largely common but not identical** (a few sentences are tailored per region).
+  Verify the actual claim you display, then weaken it to what the data supports ("largely common, with
+  per-order tailoring") and cite the specific copy you quoted from. The strengthened test now both guards
+  fidelity and keeps the claim honest.
+- **Auto-caption transcripts are not citation-grade.** `yt-dlp --write-auto-subs` is great for *what was
+  said* but mangles proper nouns (it rendered "Swett"→"Sweatt", "LaCerte"→"LaFleur"). Use spoken quotes to
+  capture emphasis the written record lacks, but label them "spoken · auto-caption," tint them distinctly,
+  and keep them out of the verbatim test — only the written record is verbatim-checkable.
+- **A strengthened test is the best way to "address a review."** Two PR-review findings (the "identical"
+  overclaim; the briefing § IV page cite being range-checked only) were resolved by making the *test*
+  stricter — check all six orders; assert the cited page actually carries the "Briefing Questions" heading.
+  The bug surfaces, the fix is forced, and the guard stays.
 
 ## Page-deep links into the order PDFs
 

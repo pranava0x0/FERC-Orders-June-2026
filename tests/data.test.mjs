@@ -156,6 +156,75 @@ test("commissioner statements: five, with per-order page cites that carry the qu
   }
 });
 
+const ORDER_STEMS = {
+  "E-7": "e-7-pjm-el26-67-000", "E-8": "e-8-miso-el26-70-000", "E-9": "e-9-spp-el26-68-000",
+  "E-10": "e-10-caiso-el26-71-000", "E-11": "e-11-isone-el26-72-000", "E-12": "e-12-nyiso-el26-69-000",
+};
+const normOrder = (s) => String(s)
+  .replace(/---\s*PAGE\s*\d+\s*---/g, " ")
+  .replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, "-")
+  .replace(/\s+/g, " ")
+  .replace(/(\w)-\s(\w)/g, "$1-$2") // rejoin soft hyphens broken across a line ("Commission-\njurisdictional")
+  .toLowerCase().trim();
+const orderText = (item) => normOrder(readFileSync(join(here, "..", "sources", "text", "orders", ORDER_STEMS[item] + ".txt"), "utf8"));
+
+test("commissioner themed summaries: written quotes are verbatim in the cited (PJM) order", () => {
+  // The expandable per-commissioner read (themes + quotes) must trace to source: every WRITTEN quote is
+  // verbatim in the cited canonical copy (the PJM order, 195 FERC ¶ 61,211). NB: an all-six check showed
+  // the concurrences are largely common but NOT identical across orders (a few sentences are tailored per
+  // region), so the displayed claim is "largely common, with per-order tailoring" and quotes cite the PJM
+  // copy. Spoken quotes come from the open-meeting auto-caption transcript: labeled, not verbatim-checked.
+  const pjm = orderText("E-7");
+  const themed = D.commissioners.filter((c) => Array.isArray(c.themes) && c.themes.length);
+  assert.ok(themed.length >= 1, "at least one commissioner has an authored themed summary");
+  let writtenChecked = 0;
+  for (const c of themed) {
+    assert.ok(typeof c.summary === "string" && c.summary.length >= 40, `${c.key} has an overall summary`);
+    assert.ok(c.sources && c.sources.written && /PJM/.test(c.sources.written), `${c.key} cites the PJM copy`);
+    assert.ok(!/identical across all six/i.test(c.sources.written), `${c.key} does not overclaim "identical across all six"`);
+    for (const th of c.themes) {
+      assert.ok(th.name && Array.isArray(th.quotes) && th.quotes.length >= 1, `${c.key} theme "${th.name}" has quotes`);
+      for (const q of th.quotes) {
+        assert.ok(q.t && (q.src === "written" || q.src === "spoken"), `${c.key} quote has text + src (written|spoken)`);
+        if (q.src === "written") {
+          assert.ok(pjm.includes(normOrder(q.t)), `${c.key} written quote not verbatim in the PJM order: "${q.t.slice(0, 50)}…"`);
+          writtenChecked++;
+        }
+      }
+    }
+  }
+  assert.ok(writtenChecked >= 3, `enough written quotes verified (${writtenChecked})`);
+});
+
+test("docket Section IV briefing questions: every shown question is verbatim, and the cited § IV page is right", () => {
+  // raw page map (split on "--- PAGE N ---") so we can confirm the cited page actually carries Section IV
+  const pagesOf = (item) => {
+    const parts = readFileSync(join(here, "..", "sources", "text", "orders", ORDER_STEMS[item] + ".txt"), "utf8").split(/--- PAGE (\d+) ---/);
+    const map = new Map([[1, parts[0]]]);
+    for (let i = 1; i < parts.length; i += 2) map.set(Number(parts[i]), parts[i + 1] || "");
+    return map;
+  };
+  assert.ok(D.briefing && Array.isArray(D.briefing.questions) && D.briefing.questions.length >= 4, "briefing questions present");
+  for (const q of D.briefing.questions) assert.ok(q.id && q.t && q.d && q.v, `briefing question ${q.id} has id/label/desc/quote`);
+  let checked = 0;
+  for (const d of D.dockets) {
+    const txt = orderText(d.item);
+    const omit = (D.briefing.omit && D.briefing.omit[d.item]) || [];
+    const pg = D.briefing.pages[d.item];
+    assert.ok(Number.isInteger(pg) && pg >= 1 && pg <= d.pages, `${d.item} briefing page ${pg} within 1..${d.pages}`);
+    // the cited page must actually be the Section IV "Briefing Questions" page (page-text check, like the directives)
+    assert.ok(normOrder(pagesOf(d.item).get(pg) || "").includes("briefing questions"), `${d.item} § IV page ${pg} carries the "Briefing Questions" heading`);
+    for (const q of D.briefing.questions) {
+      if (omit.includes(q.id)) continue;
+      assert.ok(txt.includes(normOrder(q.v)), `${d.item} briefing "${q.id}" not verbatim in order text: "${q.v.slice(0, 50)}…"`);
+      checked++;
+    }
+  }
+  assert.ok(checked >= 28, `enough briefing quotes verified (${checked})`); // 5 orders x 5 + SPP x 4
+  // join() avoids a cross-realm Array prototype mismatch (D is loaded in a separate vm context)
+  assert.equal((D.briefing.omit["E-9"] || []).join(","), "proximate", "SPP omits the proximate-generation question (it already has HILLGA)");
+});
+
 test("RM26-4 comment corpus: stats present and stakeholder buckets sum to the comment total", () => {
   const c = D.comments;
   assert.ok(c && c.filings >= 400 && c.total >= 200, "headline comment stats present");
