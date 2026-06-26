@@ -21,12 +21,11 @@ Built for an energy-regulatory audience. Six tabs:
    list including each region's existing-tariff mechanics (each finding page-cited to the PDF + ferc.gov),
    and the full named-respondent roster — plus how to file or follow each docket.
 5. **Comments (RM26-4)**: the comment-period summary, split into three sub-tabs to cut the scroll —
-   *Overview* (stats, rounds, top themes, and the three-lens aggregate), *Respondent types* (19 stakeholder
-   categories), and *Comment summaries* (the flagships + all 273 comments in filing order, filterable by
-   org, type, question, principle, or region). Each comment is tagged across **three lenses** — which of the
-   DOE ANOPR's eight comment-period questions, the five June-order reform principles, and the six
-   show-cause-order RTO regions it engages (keyword-detected, shown per row and in aggregate) — plus the nine
-   read-in-full flagship comments with a stance-per-reform-category breakdown. Comment bodies
+   *Themes & categories* (stats, rounds, top themes, the stance-by-reform map, and the three-lens aggregate),
+   *Respondent types* (19 stakeholder categories), and *All comments* (all 273 comments in filing order,
+   filterable by org, type, question, principle, position, or region). Each comment is tagged across **three
+   lenses** — which of the DOE ANOPR's eight comment-period questions, the five June-order reform principles,
+   and the six show-cause-order RTO regions it engages (keyword-detected, shown per row and in aggregate). Comment bodies
    are committed under `sources/comments/files/<accession>__<org-slug>/` (the path names the submitter) and
    validated by `tools/validate-comments.py`; the tab's data is generated from the manifest + extracted
    texts by `tools/build-comments-page-data.mjs` into `docs/js/comments-data.js`, plus one small
