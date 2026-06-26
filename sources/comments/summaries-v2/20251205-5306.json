@@ -1,0 +1,343 @@
+{
+  "accession": "20251205-5306",
+  "filer": "Constellation Energy Generation, LLC",
+  "org_type": "generator_ipp",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5306__Constellation-Energy-Generation-LLC/Supporting Reply Comments of Constellation Energy.txt",
+  "overall_summary": "Constellation supports the ANOPR and urges FERC to issue a merits order in the PJM Show Cause proceedings by year-end and a NOPR as soon as possible, focusing relief where record evidence of undue discrimination already exists. The filing argues that Transmission Owners are leveraging their monopoly over interconnection to block hybrid and behind-the-meter configurations they disfavor, and that BYOG proposals and punitive cost-assignment rules discriminate unlawfully against existing generation resources. Constellation calls for market-based reliability solutions rather than discriminatory conditions on large load interconnection.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the Commission should (i) act quickly, (ii) focus relief in regions where there is evidence of undue discrimination, undue preference or unjust and unreasonable service, (iii) respect regional differences, and (iv) avoid unnecessary jurisdictional fights.",
+      "concern": "Four-part framework for how FERC should proceed on large load interconnection reform",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the Commission should issue an order on the merits in the PJM Show Cause proceedings and thereby: (i) take swift action to kickstart development on several stalled hyperscale data center projects in PJM; (ii) conclude, based on the comprehensive record in those proceedings, that the lack of clear rules allows the PJM Transmission Owners to unduly discriminate by still refusing to process large load behind-the-meter projects",
+      "concern": "Calls for immediate PJM merits order to address stalled data center projects and documented discrimination",
+      "bins": [
+        "rg:pjm",
+        "pr:colo",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the Commission should issue a Notice of Proposed Rulemaking (\"NOPR\") that builds upon the principles in the ANOPR and responds to the four areas of consensus. The NOPR should: (i) establish deadlines to meet the Secretary's timeline for a final rule by April 30, 2026; (ii) solicit specific evidence of unjust and unreasonable service for large loads and/or undue discrimination or preference by Transmission Owners to support the Commission's required Federal Power Act (\"FPA\") section 206 showing in each region and state",
+      "concern": "Requests NOPR with April 2026 deadline and per-region section 206 evidence gathering",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "In PJM, the Commission already has a comprehensive record, including substantial, unrebutted evidence of undue discrimination by PJM Transmission Owners against any behind-the-meter configuration, and any in front-of-the-meter configuration that avoids interconnection through the Transmission Owners' distribution facilities.",
+      "concern": "PJM record is sufficient now; Commission need not wait for more evidence before acting",
+      "bins": [
+        "rg:pjm",
+        "pr:colo",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Some Transmission Owners have blocked behind-the-meter configurations and are extending that discrimination to front-of-the-meter connections to the grid (hybrid facilities), requiring that these facilities take distribution service or adopt configurations that would make net billing impossible.",
+      "concern": "Transmission Owners are broadening discrimination from behind-the-meter to hybrid/front-of-the-meter projects",
+      "bins": [
+        "rg:pjm",
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "they are instead leveraging their monopoly over interconnection to block innovative and efficient configurations that would provide customers with alternatives to the other services (e.g., gross-billed network transmission service and distribution service) these Transmission Owners provide.",
+      "concern": "TOs use interconnection monopoly to protect their own bundled service revenue streams",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights",
+        "topic:monopoly-leveraging"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Commission has jurisdiction over hybrid facilities' shared point of interconnection. This is an easy call since the Commission already exercises jurisdiction over the generator's interconnection, and jurisdiction over the same shared facilities does not bifurcate between state and federal authority depending on the services of the moment.",
+      "concern": "FERC jurisdiction over hybrid shared point of interconnection is straightforward and non-controversial",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "the Commission should reject \"Bring Your Own Generation\" or \"BYOG\" proposals (such as PJM Option 6 in the Show Cause proceeding) that would allow state-favored resources to leapfrog the PJM queue, and should likewise reject proposals discussed in the ANOPR comments or in the IMM's recent complaint that would condition new large load interconnections (or expedited interconnection) upon the load bringing its own new generation.",
+      "concern": "BYOG proposals discriminate against existing generators and distort market incentives; should be rejected",
+      "bins": [
+        "pr:colo",
+        "aq:expedited",
+        "rg:pjm",
+        "topic:byog-discrimination"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Discrimination against existing generation resources will undermine resource adequacy by signaling that existing capacity is less valuable than new capacity in serving load, even when existing capacity can serve load more efficiently.",
+      "concern": "Favoring new generation in BYOG or cost rules harms resource adequacy and market efficiency",
+      "bins": [
+        "pr:cost",
+        "topic:byog-discrimination",
+        "topic:resource-adequacy"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The Commission should let existing market mechanisms work to ensure resource adequacy. If it determines that reform is needed, it should adopt competitive market fixes that preserve market-based incentives for capital investment, such as the Joint Stakeholders' Reliability Backstop Alternative",
+      "concern": "Market-based backstop mechanisms are preferable to discriminatory administrative conditions on interconnection",
+      "bins": [
+        "pr:cost",
+        "topic:resource-adequacy",
+        "topic:reliability-backstop"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "step-down facility is part and parcel of the interconnection between the large load and the interstate grid, and because \"interconnection is part and parcel of transmission of electric energy in interstate commerce,\" it follows that that step-down facility is part and parcel of the transmission system as well.",
+      "concern": "Low-voltage step-down facilities at hybrid interconnections are within FERC transmission jurisdiction",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Constellation agrees with netting charges for hybrid facilities \"as that value amount reflects the quantity of capacity and energy that is being transmitted across the transmission system to the load.\" ... it is not \"fair\" to ignore the fact that a hybrid facility load is being directly served by a generator and thus not relying on \"capacity and energy … being transmitted across the transmission system\" in assessing charges.",
+      "concern": "Net billing for hybrid facilities is the fair and accurate way to assess transmission charges",
+      "bins": [
+        "pr:cost",
+        "aq:hybridrights",
+        "topic:net-billing"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Constellation supports extending the option to build to large-load interconnection customers on terms equivalent to those afforded to generator interconnection customers under Order No. 845. Providing qualified customers the ability to construct interconnection facilities under host-utility standards reduces delay, increases certainty, and mirrors the efficiency benefits the Commission recognized when adopting the generator option to build.",
+      "concern": "Option to build for large load customers reduces delays and matches rules already given to generators",
+      "bins": [
+        "aq:upgradecost",
+        "pr:study",
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Rolling billions of dollars of network upgrades into rate base is not an intuitive way of \"protecting customers.\" Regardless, the Commission's policy should create strong incentives for co-location because co-location minimizes upgrade costs, and that is ultimately what protects consumers.",
+      "concern": "Rate-basing upgrade costs does not protect customers; co-location incentives do",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "No Transmission Owner can expedite service or study processing for projects taking the Transmission Owner's preferred type of service or configuration, or refuse to process a complete large load interconnection request on the ground that the large load has not 'arranged for wholesale transmission or retail distribution service.'",
+      "concern": "TOs must not condition or delay interconnection processing based on preferred service configurations",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights",
+        "rg:pjm",
+        "topic:monopoly-leveraging"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal jurisdiction over large load interconnection",
+      "stance": "support",
+      "description": "Constellation supports FERC asserting jurisdiction over large load interconnections to transmission facilities, arguing the case for hybrid facilities is straightforward because the Commission already regulates the co-located generator's interconnection. The filing contends that section 212(h) does not limit interconnection jurisdiction, and that step-down facilities are part of the transmission system.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        7,
+        11
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid facility interconnection rights",
+      "stance": "support",
+      "description": "Constellation argues that Transmission Owners are blocking hybrid facility interconnections or conditioning them on acceptance of bundled service, and that FERC should establish clear rules allowing net billing and non-discriminatory access for hybrid configurations. The filing calls the jurisdictional case for hybrid shared points of interconnection the easiest and most immediate call for the Commission to make.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        11,
+        12,
+        15
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited interconnection process",
+      "stance": "support",
+      "description": "Constellation urges FERC to act quickly, calling for a PJM merits order by year-end and a NOPR by April 2026. It supports PJM Option 7 for curtailable loads and opposes BYOG proposals that would grant expedited treatment only to loads that bring new generation.",
+      "quote_ids": [
+        3,
+        8
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Network upgrade cost assignment",
+      "stance": "neutral",
+      "description": "Constellation takes no position on direct 100% assignment of upgrade costs to large loads but argues that policy should create strong co-location incentives and that rolling upgrade costs into rate base does not protect customers. The filing also supports extending the option to build to large load customers on generator-equivalent terms.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Standardized interconnection study rules",
+      "stance": "support",
+      "description": "Constellation supports standardized study rules and deposits to deter speculative load requests and prevent undue discrimination, drawing lessons from Order No. 2003 generator interconnection procedures. The filing also calls for load forecasting improvements as part of a reliability package.",
+      "quote_ids": [
+        1,
+        3,
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation and rate fairness",
+      "stance": "support",
+      "description": "Constellation argues that gross billing for hybrid facilities is unfair since co-located generation reduces actual grid use, and supports netting transmission charges. It also opposes rate-basing upgrade costs and calls for market-based reliability backstop mechanisms rather than discriminatory BYOG conditions.",
+      "quote_ids": [
+        9,
+        10,
+        12,
+        14
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location rules for large load",
+      "stance": "support",
+      "description": "Constellation supports clear rules enabling both behind-the-meter and hybrid in-front-of-the-meter co-location, pointing to unrebutted PJM record evidence of Transmission Owner discrimination against these configurations. The filing rejects BYOG proposals that favor new over existing generation and argues existing generators have the right to serve any willing customer.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM-specific action needed now",
+      "stance": "support",
+      "description": "Constellation argues PJM already has a comprehensive, unrebutted record of Transmission Owner discrimination sufficient for a section 206 order this year. Multiple stalled hyperscale data center projects in PJM justify immediate region-specific relief separate from the broader rulemaking.",
+      "quote_ids": [
+        2,
+        4,
+        5,
+        8,
+        15
+      ]
+    },
+    {
+      "key": "topic:byog-discrimination",
+      "name": "BYOG proposals harm existing generators",
+      "stance": "oppose",
+      "description": "Constellation opposes BYOG proposals that reserve expedited interconnection or other favors for loads that bring new generation, arguing these discriminate against existing generators in violation of the FPA's anti-discrimination provisions and the principle against 'vintaging.' The filing urges the Commission to rely on market mechanisms instead.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:monopoly-leveraging",
+      "name": "TOs leveraging interconnection monopoly",
+      "stance": "oppose",
+      "description": "Constellation documents how Transmission Owners use their monopoly control over interconnection processing to force large loads into bundled distribution or transmission services they do not need, and to block configurations that reduce TO revenue. The filing calls this conduct unduly discriminatory and asks FERC to prohibit it explicitly.",
+      "quote_ids": [
+        6,
+        15
+      ]
+    },
+    {
+      "key": "topic:resource-adequacy",
+      "name": "Resource adequacy via market mechanisms",
+      "stance": "support",
+      "description": "Constellation argues that resource adequacy concerns should be addressed through improved load forecasting, voluntary demand response products, and market-based reliability backstop enhancements rather than discriminatory conditions on large load interconnection. The Enhanced Backstop proposal targets incremental capacity under tight market conditions without suppressing price signals.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:reliability-backstop",
+      "name": "Enhanced reliability backstop proposal",
+      "stance": "support",
+      "description": "Constellation and other Joint Stakeholders proposed an Enhanced Backstop to PJM's Reliability Pricing Model that procures additional capacity only when the market falls short, preserving competitive market signals while ensuring reliability. The filing argues this is superior to BYOG or SSR/RMR studies applied to existing generators.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:net-billing",
+      "name": "Net billing for hybrid facilities",
+      "stance": "support",
+      "description": "Constellation supports netting transmission charges to reflect only the power hybrid facilities actually draw from the grid, not gross output. It proposes that the charge be the greater of net usage or a standby subscription level to ensure facilities pay a fair share for grid infrastructure.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:option-to-build",
+      "name": "Customer option to build facilities",
+      "stance": "support",
+      "description": "Constellation supports giving large load interconnection customers the same option to build interconnection facilities that generator customers received under Order No. 845, arguing customer construction reduces cost and delay and that utility reliability objections were already addressed when that order was adopted.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "hybridrights",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-26",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

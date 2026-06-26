@@ -477,15 +477,15 @@
   ],
   "lenses": {
     "aq": [
-      "expedited",
       "jurisdiction",
+      "expedited",
       "threshold"
     ],
     "pr": [
       "cost",
       "flex",
-      "proximate",
-      "study"
+      "study",
+      "proximate"
     ],
     "rg": []
   },
