@@ -1,0 +1,272 @@
+{
+  "accession": "20251121-5394",
+  "filer": "Georgia Power CompanyAlabama Power CompanyMississippi Power Company ,",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5394__Georgia-Power-CompanyAlabama-Power-CompanyMississi/Southern_LargeLoadANOPR_Comments_11.21.25.txt",
+  "overall_summary": "The Southern Companies (Georgia Power, Alabama Power, and Mississippi Power) support the ANOPR's goal of timely large load interconnection but argue that their vertically integrated, state-regulated model already achieves those goals in the Southeast. They urge FERC to avoid one-size-fits-all national rules that could slow working regional processes, and instead target reforms at regions with actual backlogs or issue voluntary best-practice guidance. They also warn that expanding federal jurisdiction into retail ratemaking and transmission cost allocation could face serious legal challenges.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Southern Companies wholeheartedly endorse the ANOPR's stated objective of ensuring \"timely and orderly interconnection of large loads to the transmission system.\"",
+      "concern": "Filer endorses the ANOPR's core interconnection objective",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Doing so in a manner that ensures the reliability of the grid and appropriately allocates costs across customer classes is also crucially important to ensure the fast-moving nature of this demand growth does not create an undue risk that existing retail customers would subsidize a large load that seeks interconnection.",
+      "concern": "Cost allocation must protect existing retail customers from subsidizing new large loads",
+      "bins": [
+        "pr:cost",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "In the Southeast, the vertically-integrated nature of Southern Companies' operations, paired with pre-existing integrated planning procedures, enables Southern Companies to adapt quickly and provide the type of coordinated interconnection operations envisioned in the ANOPR.",
+      "concern": "Existing vertically integrated model already delivers coordinated interconnection in the Southeast",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Southern Companies respectfully urge the Commission to avoid implementing the ANOPR in a manner that would impede these successful existing processes.",
+      "concern": "Filer asks FERC not to disrupt working Southeast interconnection processes",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "if queue backlogs and procedural impediments exist in other parts of the country, the Commission may need to implement reforms of the type proposed in the ANOPR in those regions.",
+      "concern": "Reforms may be warranted in other regions but not the Southeast",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "A combination of minimum bill requirements, termination provisions, and longer contract terms can help to ensure that data centers and other large load customers pay the full cost of serving them and avoid any risk that existing retail customers, particularly working families, seniors and small businesses, will be left to bear the costs.",
+      "concern": "Contract terms like minimum bills and termination clauses prevent cost shifting to retail customers",
+      "bins": [
+        "pr:cost",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "large load customers acknowledge the demands they place on existing infrastructure and are willing to pay their share of generation and transmission costs in exchange for timely service.",
+      "concern": "Large load customers accept paying full costs when offered timely interconnection",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Instead of a one-size-fits-all approach, Southern Companies urge the Commission to focus its reforms where they are most needed to ensure affordability, reliability, and speed to market.",
+      "concern": "FERC should target reforms at problem regions rather than impose uniform national rules",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:regional-exemption"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the Commission should craft rules applicable to specific regions or consider exempting regions that have demonstrated success in this area and do not need to adopt new rules.",
+      "concern": "FERC should exempt well-functioning regions from new interconnection requirements",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:regional-exemption"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "As an alternative to prescriptive federal requirements, the Commission could achieve the objectives of the ANOPR by using lessons learned from this proceeding to establish a list of national best practices for large load interconnections and adopt a policy statement or similar vehicle to encourage the use of these best practices.",
+      "concern": "Voluntary best-practice guidance is preferable to mandatory national rules",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:best-practices-policy"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "An end-use customer has no right to withdraw power from the grid without being subject to applicable state laws on retail energy use and applicable retail franchises, and Congress has unambiguously kept the Commission out of the business of retail regulation, respecting states' police powers.",
+      "concern": "FERC lacks authority to grant withdrawal rights that bypass state retail jurisdiction",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "the eighth reform principle, which suggests a new federal standard for how transmission costs should be allocated to large load retail customers, risks directly intruding on retail ratemaking in jurisdictions that have retained bundled retail service.",
+      "concern": "Federal transmission cost allocation standard for retail customers would intrude on state ratemaking authority",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "A new rule that greatly expands the Commission's jurisdiction—without factual support to support that expansion, especially in regions already achieving stated objectives—may impede rather than advance progress.",
+      "concern": "Broad jurisdictional expansion without factual basis could slow interconnections in successful regions",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:legal-durability"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Southern Companies fully support the ANOPR's stated objectives of timely and orderly interconnection of large loads to the transmission system, while also respectfully urging the Commission to focus on legally durable solutions that would not disrupt the successful outcomes already being achieved in the Southeast.",
+      "concern": "Filer supports ANOPR goals but asks for legally sound rules that preserve Southeast processes",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study",
+        "topic:legal-durability"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Preserve State Retail Jurisdiction",
+      "stance": "mixed",
+      "description": "Southern Companies warn that several ANOPR proposals, including withdrawal rights for retail customers, an option to build transmission, and a federal cost-allocation standard for bundled-service jurisdictions, could intrude on state retail regulatory authority. They argue FERC should stay within established jurisdictional limits and issue rules that will survive legal challenge. They support federal action only where the Commission's authority is clear and where regional processes are not already working.",
+      "quote_ids": [
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Protect Existing Customer Rates",
+      "stance": "support",
+      "description": "The filer supports requiring large loads to cover the full costs of serving them so that existing retail customers do not bear the burden of new interconnections. They cite minimum bill requirements and termination provisions as effective tools already in use in the Southeast.",
+      "quote_ids": [
+        2,
+        6
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Contract Terms as Cost Shield",
+      "stance": "support",
+      "description": "Southern Companies point to minimum bill requirements, longer contract terms, and termination provisions as the mechanism that ensures large loads pay their own way. These tools have not deterred data center development in the Southeast.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Large Load Pays Full Upgrade Cost",
+      "stance": "support",
+      "description": "The filer reports that large load customers in the Southeast accept paying their share of generation and transmission upgrade costs in exchange for timely service. A proposed federal cost allocation standard for retail customers would duplicate, and potentially override, this working state-level approach.",
+      "quote_ids": [
+        7,
+        12
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "No Federal Withdrawal Rights",
+      "stance": "oppose",
+      "description": "Southern Companies argue that granting end-use customers a federal withdrawal right would circumvent state retail franchise laws and the limits Congress placed on FERC's retail jurisdiction. They urge FERC to drop or carefully narrow this concept.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Integrated Planning Already Works",
+      "stance": "mixed",
+      "description": "The filer argues that the Southeast's vertically integrated IRP model performs the coordinated interconnection study function that the ANOPR seeks to create federally. They support the ANOPR's study objectives but oppose applying new study requirements in regions where integrated planning is already delivering timely results. They accept that other regions with backlogs may need reform.",
+      "quote_ids": [
+        1,
+        3,
+        4,
+        5,
+        14
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Allocation Balance Achievable",
+      "stance": "support",
+      "description": "Southern Companies argue that a workable cost allocation balance, where large loads pay full costs and existing customers are protected, is achievable and has already been demonstrated in Georgia, Alabama, and Mississippi. They support this approach as a national model but oppose any federal rule that would override state retail ratemaking to impose a different standard.",
+      "quote_ids": [
+        1,
+        2,
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "key": "topic:regional-exemption",
+      "name": "Exempt Well-Functioning Regions",
+      "stance": "support",
+      "description": "A central ask of this filing is that FERC carve out or exempt regions that have demonstrated success in large load interconnection rather than applying a uniform national rule. The filer argues the Southeast should not be required to overhaul processes that are already meeting the Administration's objectives.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:best-practices-policy",
+      "name": "Voluntary Best Practices Over Mandates",
+      "stance": "support",
+      "description": "As an alternative to prescriptive rulemaking, Southern Companies suggest FERC issue a policy statement or best-practice list drawn from this proceeding. This would allow leadership and consistency without expanding jurisdiction or disrupting functioning state processes.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:legal-durability",
+      "name": "Jurisdictional Overreach Invites Litigation",
+      "stance": "oppose",
+      "description": "The filer warns that rules expanding FERC's jurisdiction into retail ratemaking or bundled-service territories without adequate factual support will face court challenge, creating uncertainty that could delay large load interconnections during the critical AI build-out period.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "deposits",
+      "upgradecost",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
