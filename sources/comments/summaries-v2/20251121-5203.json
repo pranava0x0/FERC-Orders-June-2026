@@ -1,0 +1,410 @@
+{
+  "accession": "20251121-5203",
+  "filer": "Office of the Ohio Consumers' Counsel",
+  "org_type": "consumer_advocate",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5203__Office-of-the-Ohio-Consumers-Counsel/FERC Comments Large Load Interconnection RM26-4 11.21.25 c.txt",
+  "overall_summary": "The Ohio Consumers' Counsel opposes any cost shifting from large load interconnections to residential ratepayers and calls for strict cost causation, full public transparency, and preservation of state regulatory authority. The filing urges FERC to require large loads to bear 100% of interconnection costs unless a net public benefit is demonstrated, to mandate public posting of all interconnection requests and cost determinations, and to coordinate any federal rules with state commissions and consumer advocates.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "this proposal presents substantial risks to residential consumers, who could bear higher costs and diminished oversight as transmission policy shifts to accommodate extraordinary private demand growth from large industrial and data center loads.",
+      "concern": "ANOPR poses cost and oversight risks to residential consumers",
+      "bins": [
+        "pr:cost",
+        "topic:consumer-protection"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "such \"credits\" frequently evolve into generalized cost socialization—resulting in rate impacts borne by retail residential customers who do not benefit from the facilities being built.",
+      "concern": "crediting mechanisms risk socializing large-load upgrade costs onto residential ratepayers",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Prohibit the use of transmission credits, rate-based recovery, or regional cost allocation mechanisms for interstate transmission facilities built primarily to serve large private loads",
+      "concern": "calls for prohibition on cost socialization for large-load facilities",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Ensure that transmission cost recovery aligns with current cost causation and cost allocation principles developed in Illinois Commerce Commission v. FERC, 576 F.3d 470, 476 (7th Cir. 2009) (ICC I) (\"FERC is not authorized to approve a pricing scheme that requires a group of utilities to pay for facilities from which its members derive no benefits, or benefits that are trivial in relation to the costs sought to be shifted to its members.\")",
+      "concern": "cost allocation must follow ICC I/II cost causation precedent",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Consumers, state advocates and state regulatory commissions have a right to know which entities are seeking large-load interconnections, the nature of the requested service, and how related costs could flow through to transmission and distribution rates.",
+      "concern": "public disclosure of interconnection applicants and cost impacts is required",
+      "bins": [
+        "topic:transparency-accountability"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "All interconnection requests above 20 MW, including project type and location",
+      "concern": "public posting of all requests above 20 MW threshold",
+      "bins": [
+        "aq:threshold",
+        "topic:transparency-accountability"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Annual reporting on the consumer cost impacts of large-load interconnections, associated transmission expansions, and the impact on electricity and capacity markets rates for consumers other than large loads.",
+      "concern": "annual public reporting on consumer cost impacts",
+      "bins": [
+        "topic:transparency-accountability",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "A rule that allows direct transmission interconnections for large end-use customers without coordination with state commissions could undermine local reliability and accountability.",
+      "concern": "direct interconnection without state coordination risks local reliability",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-authority"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "FERC's rule must not undercut or preempt state efforts to manage large-load growth through retail tariffs and rate design.",
+      "concern": "federal rule must not preempt state retail tariff authority",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-authority"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Ohio's Large Data Center Tariff was developed through state regulatory proceedings to balance the interests of high-load customers with system costs and reliability for existing retail consumers.",
+      "concern": "state-level tariffs represent careful cost-reliability policy that federal rules must not displace",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-authority",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The ANOPR makes no mention of the prohibitions in FPA sections 212(g) and (h) on federal regulation of retail marketing areas and of federal regulations \"concerning the transmission of electric energy directly to an ultimate consumer.\"",
+      "concern": "ANOPR ignores FPA provisions limiting federal jurisdiction over retail direct-connect",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-authority"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The Commission should affirm that no interconnection right or transmission upgrade will be granted unless the applicant bears 100% of the costs of interconnection-related costs.",
+      "concern": "full cost responsibility on applicant as a precondition for any interconnection right",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "speculative filings- particularly by unconfirmed data center and industrial developers- have contributed to inaccurate demand forecasts and queue congestion, which can lead to unnecessary or premature network upgrades later recovered from consumers.",
+      "concern": "speculative queue entries distort planning and shift upgrade costs to consumers",
+      "bins": [
+        "aq:deposits",
+        "pr:study",
+        "topic:queue-integrity"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "OCC also supports scaling study deposits and readiness milestones to project size, with non-refundable deposits and withdrawal penalties to discourage speculative queue participation.",
+      "concern": "scaled deposits and penalties needed to deter speculative filings",
+      "bins": [
+        "aq:deposits",
+        "topic:queue-integrity"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "OCC supports retaining a defined minimum threshold such as 20 MW for purposes of any federal interconnection standard.",
+      "concern": "20 MW threshold preserves state oversight of smaller loads",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "any expedited connection process must be designed to protect consumers from inequitable queue treatment, hidden reliability costs, or cost shifting.",
+      "concern": "expedited process must include consumer cost protections",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "any expedited processing be contingent on enforceable curtailment and dispatchability commitment verified through telemetry and subject to penalties for non-performance.",
+      "concern": "curtailability privileges require telemetry-verified enforcement",
+      "bins": [
+        "aq:expedited",
+        "aq:hybridrights",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Large load interconnections to any interstate transmission facility, no matter how local in nature from a planning perspective, should not escape Commission review under the ANOPR and any proposed or final rules on this matter.",
+      "concern": "all large-load interconnections including local facilities must fall under FERC review",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "the RTO or regional planning authority should perform a forward-looking resource adequacy assessment- spanning at least three years – to determine whether the suspension would erode reserve margins or necessitate additional capacity procurement.",
+      "concern": "three-year resource adequacy assessment required when generation suspends to serve load",
+      "bins": [
+        "aq:protection",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 20,
+      "text": "The cost of obtaining replacement capacity should not be borne by existing consumers who have relied on and been paying for the suspension resources for many years.",
+      "concern": "replacement capacity costs from generation-to-load conversion must not fall on existing consumers",
+      "bins": [
+        "aq:protection",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Hybrid facilities that both draw and inject energy at a single interconnection point must not be allowed to use the transmission system for arbitrage or unaccounted energy transactions that shift balancing and congestion costs to other customers.",
+      "concern": "hybrid facilities must not shift congestion and balancing costs through arbitrage",
+      "bins": [
+        "aq:hybridrights",
+        "topic:hybrid-operational-limits"
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Consumers should not bear the financial or reliability burdens of speculative industrial growth.",
+      "concern": "overarching principle that consumers must not subsidize speculative large-load development",
+      "bins": [
+        "pr:cost",
+        "topic:consumer-protection"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "No cost shifting to consumers",
+      "stance": "support",
+      "description": "OCC insists that large loads bear 100% of interconnection and upgrade costs. Crediting mechanisms and regional cost allocation must not be used for facilities built primarily to serve private large loads, and any cost shift requires demonstrated net public benefit. This aligns with ICC I and ICC II cost causation precedent.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        12,
+        20,
+        22
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Prohibit credit and cost recovery mechanisms",
+      "stance": "support",
+      "description": "OCC calls for an express prohibition on transmission credits, rate-based recovery, and regional cost allocation for large-load upgrade facilities, citing the risk that credits evolve into broad cost socialization and violate established cost causation case law.",
+      "quote_ids": [
+        2,
+        3,
+        4,
+        12
+      ]
+    },
+    {
+      "key": "topic:transparency-accountability",
+      "name": "Mandatory public disclosure",
+      "stance": "support",
+      "description": "OCC wants all interconnection requests above 20 MW, cost responsibility determinations, and annual consumer cost impact reports posted publicly. Without these disclosures, consumers risk subsidizing projects with little public benefit.",
+      "quote_ids": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Limit federal jurisdictional reach",
+      "stance": "oppose",
+      "description": "OCC argues the ANOPR overstates FERC's jurisdiction and ignores FPA sections 212(g) and (h) that limit federal regulation of direct retail connections. Federal rules must coordinate with state commissions and must not preempt state retail tariff authority.",
+      "quote_ids": [
+        8,
+        9,
+        11,
+        18
+      ]
+    },
+    {
+      "key": "topic:state-authority",
+      "name": "Preserve state regulatory authority",
+      "stance": "support",
+      "description": "OCC urges FERC to expressly confirm that states retain authority over retail tariffs and service conditions for large-load customers, citing Ohio's Large Data Center Tariff as an example of state cost-reliability balancing that a federal rule must not displace or duplicate.",
+      "quote_ids": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM planning gap for local facilities",
+      "stance": "neutral",
+      "description": "OCC notes that in PJM and other RTO regions, local or non-regional facilities fall outside regional planning review even though they represent more than 75% of new transmission investment costs. Large load interconnections to any interstate facility, including local ones, must be subject to FERC review.",
+      "quote_ids": [
+        10,
+        18
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Scaled deposits to deter speculation",
+      "stance": "support",
+      "description": "OCC supports non-refundable, project-size-scaled study deposits and withdrawal penalties to discourage speculative queue entries, which distort demand forecasts and trigger premature network upgrades recovered from consumers.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Clustered study for cumulative impacts",
+      "stance": "support",
+      "description": "OCC opposes purely serial interconnection studies, which fragment planning and overlook cumulative impacts. A coordinated or clustered study framework should evaluate all large-load and hybrid requests together, and all facilities including local ones must be subject to Commission review.",
+      "quote_ids": [
+        13,
+        18,
+        19
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Retain 20 MW federal threshold",
+      "stance": "support",
+      "description": "OCC supports a defined 20 MW minimum threshold to limit federal jurisdiction to the largest transmission-connected loads, preserve state oversight of smaller customers, and require public posting for requests at or above that level.",
+      "quote_ids": [
+        6,
+        15
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited process with firm safeguards",
+      "stance": "mixed",
+      "description": "OCC recognizes potential value in expedited processing for curtailable loads but requires that any such track include consumer cost protections, enforceable curtailment commitments verified through telemetry, and financial penalties for non-performance.",
+      "quote_ids": [
+        16,
+        17
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Curtailability must be enforceable",
+      "stance": "support",
+      "description": "OCC supports flexible interconnection rights for curtailable loads only when backed by telemetry verification and real penalties. Without enforcement, curtailable projects could behave as firm load while receiving preferential queue treatment.",
+      "quote_ids": [
+        16,
+        17
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Operational limits on hybrid facilities",
+      "stance": "support",
+      "description": "OCC calls for automated metering, telemetry caps, and mandatory penalties to prevent hybrid facilities from using the transmission system for arbitrage or unaccounted transactions that shift balancing and congestion costs to other customers.",
+      "quote_ids": [
+        17,
+        21
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Resource adequacy review for suspended generation",
+      "stance": "support",
+      "description": "OCC supports requiring a two-part SSR/RMR analysis plus a three-year forward resource adequacy assessment when generation capacity suspends to serve new load, with replacement capacity costs borne by the interconnecting customer rather than existing consumers.",
+      "quote_ids": [
+        19,
+        20
+      ]
+    },
+    {
+      "key": "topic:queue-integrity",
+      "name": "Deter speculative queue participation",
+      "stance": "support",
+      "description": "OCC supports requiring demonstrated technical and financial viability, including site control and financing commitments, before applicants enter the study process, to prevent inaccurate demand forecasts and queue congestion.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "topic:consumer-protection",
+      "name": "Consumer protection as core FERC duty",
+      "stance": "support",
+      "description": "OCC argues that FERC's primary duty under the FPA is just, reasonable, and non-discriminatory rates, and that the ANOPR's focus on facilitating AI innovation and industrial expansion risks reframing that mission away from consumer protection.",
+      "quote_ids": [
+        1,
+        22
+      ]
+    },
+    {
+      "key": "topic:hybrid-operational-limits",
+      "name": "Prevent hybrid arbitrage cost shifting",
+      "stance": "support",
+      "description": "OCC wants separate metering for inflows and outflows, automated equipment capping injections and withdrawals to approved rights, and public reporting of hybrid facility performance to uphold cost causation and system reliability.",
+      "quote_ids": [
+        21
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost",
+      "jurisdiction",
+      "deposits",
+      "threshold",
+      "expedited",
+      "hybridrights",
+      "protection"
+    ],
+    "pr": [
+      "cost",
+      "study",
+      "flex"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "accession": "20251121-5474",
+  "filer": "EQUINIX, INC.",
+  "org_type": "data_center",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5474__EQUINIX-INC/EQIX - RM26-400 - Large Load Interconnections - FINAL.txt",
+  "overall_summary": "Equinix urges FERC to craft non-discriminatory interconnection rules that recognize the diversity of data center types, especially the locational constraints of colocation facilities that must sit near dense urban load centers. The company supports broad 'aggregated resource' flexibility packages that can include proximate third-party resources, not only behind-the-meter generation, and opposes queue prioritization for flexible or co-located loads on the ground that market incentives from avoided upgrade costs are sufficient. Equinix also calls for coordinated action across federal, state, and local jurisdictions to integrate large loads as beneficial contributors to system cost and reliability.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "data centers and their business models are highly heterogenous, serve different roles in our economy and national welfare, and have differing needs and capabilities with respect to their interactions with the energy system.",
+      "concern": "Data center diversity means one-size-fits-all rules risk inadvertent discrimination",
+      "bins": [
+        "pr:colo",
+        "topic:nondiscrimination"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "We urge the Commission to exercise caution to avoid instituting inadvertent discrimination between data center types and business models as it considers large load interconnection rules.",
+      "concern": "Request for non-discriminatory rules across data center types",
+      "bins": [
+        "topic:nondiscrimination"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the vast majority of data centers, such as colocation and edge data centers, must be located as close to the businesses and public entities that they serve as possible.",
+      "concern": "Colocation and edge DCs are geographically constrained to urban load centers",
+      "bins": [
+        "pr:colo",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the pace of integrating large loads needed to serve the national interests identified in the Proposed ANOPR cannot wait for jurisdictional debates to be settled or for lengthy, uncoordinated procedural processes to work their way to conclusion.",
+      "concern": "Urgency of large-load integration requires coordinated multi-jurisdictional action",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:intergovernmental-coordination"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "[G]rowth in recent years (through 2024) has tended to reduce average retail electricity prices. … states with the highest load growth experienced reductions in real prices, whereas states with contracting loads generally saw prices rise.",
+      "concern": "Empirical evidence that large-load growth can lower retail electricity prices",
+      "bins": [
+        "pr:cost",
+        "topic:load-growth-benefits"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "where costs incurred provide broader benefit, however, cost allocation should follow the beneficiary pays principle, creating an economic signal that maximizes benefits and minimizes costs for all customers.",
+      "concern": "Beneficiary-pays cost allocation for upgrades that serve the broader grid",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "it is not clear to us why the flexibility that could clearly offer our energy system such great benefit must, or even should, be either incorporated into the large load itself or necessarily located behind the same interconnection.",
+      "concern": "Flexibility should not be limited to behind-the-meter or co-located resources",
+      "bins": [
+        "pr:flex",
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "artificially constraining flexibility options to the those produced by large load itself could clearly create uneconomic outcomes by as much as orders of magnitude",
+      "concern": "Restricting flexibility to on-site resources produces large economic inefficiencies",
+      "bins": [
+        "pr:flex",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Those data centers located in dense metropolitan areas should be able to tap into the wealth of flexibility opportunities that surround them, creating a mutual benefit for those commercial, industrial or even residential users that could receive enhanced energy equipment or could easily absorb curtailment at a much lower economic and performance cost.",
+      "concern": "Urban colocation DCs should be allowed to use proximate third-party flexibility resources",
+      "bins": [
+        "pr:flex",
+        "pr:colo",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "large load interconnection customers should be allowed to include what could be termed 'aggregated resource' proposals in their interconnection requests.",
+      "concern": "Allow aggregated resource packages combining the large load with proximate third-party resources",
+      "bins": [
+        "pr:flex",
+        "pr:proximate",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Providing that study frameworks accurately model and value the relevant operational characteristics of the proposed large load along with its aggregated flexibility resources, it is not clear to us why study queue prioritization or any other exogenous benefit is necessary or appropriate.",
+      "concern": "Queue prioritization for flexible loads is unnecessary when cost savings already incentivize flexibility",
+      "bins": [
+        "pr:study",
+        "pr:flex",
+        "topic:queue-priority"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "We recommend against introducing study prioritization frameworks. In our experience, operating in 37 countries around the world—including many markets where such frameworks are in place—such approaches introduce considerable room for fluctuating policy objectives to muddy economic signals, and to increase uncertainty, associated financing costs, and interconnection timing.",
+      "concern": "Queue prioritization frameworks muddy market signals and increase financing costs and delays",
+      "bins": [
+        "pr:study",
+        "topic:queue-priority"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Penalizing those large loads that, for national security, financial sector or other reasons must maintain extremely high up-time, and for those same reasons are geographically constrained to areas that have limited ability to incorporate backup or co-located generation, would be contrary to national interests.",
+      "concern": "Rules that penalize high-uptime urban DCs for lacking on-site generation would harm national interests",
+      "bins": [
+        "pr:colo",
+        "pr:proximate",
+        "topic:nondiscrimination"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Multi-Jurisdictional Coordination Needed",
+      "stance": "support",
+      "description": "Equinix argues that the scale and urgency of large-load integration cannot wait for jurisdictional disputes between federal, state, and local governments to be resolved. Coordinated, more uniform approaches are needed across all relevant jurisdictions.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Broad Flexibility Resource Eligibility",
+      "stance": "support",
+      "description": "Equinix supports allowing large-load interconnection customers to pair their requests with a wide range of resources, including proximate third-party generation, storage, and demand response, not only co-located or behind-the-meter resources. Restricting eligibility to on-site resources could produce economic losses orders of magnitude larger than necessary.",
+      "quote_ids": [
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Transparent Studies, No Queue Priority",
+      "stance": "mixed",
+      "description": "Equinix supports study frameworks that accurately model aggregated flexibility resources and reveal the specific constraints driving upgrade costs. However, the company opposes study queue prioritization for flexible or co-located loads, arguing that cost and timeline savings from avoided upgrades are sufficient market incentives.",
+      "quote_ids": [
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Beneficiary-Pays Cost Allocation",
+      "stance": "support",
+      "description": "Equinix argues that costs benefiting only the large load should be borne by that customer, while costs providing broader grid benefit should follow the beneficiary-pays principle. The company also cites empirical evidence that large-load growth has tended to reduce average retail electricity prices.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Colocation DC Location Constraints",
+      "stance": "neutral",
+      "description": "Equinix emphasizes that colocation and edge data centers, unlike hyperscale AI training facilities, must be located near dense urban load centers and cannot easily incorporate on-site generation. Rules that disadvantage these geographically constrained facilities would harm national security and financial sector interests.",
+      "quote_ids": [
+        1,
+        3,
+        7,
+        9,
+        13
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Expand Flexibility Beyond Behind-the-Meter",
+      "stance": "support",
+      "description": "Equinix supports allowing aggregated resource packages that include proximate third-party flexibility resources, not just generation or storage behind the large load's meter. Urban colocation facilities should be able to contract with surrounding commercial, industrial, or residential resources to satisfy flexibility requirements.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Proximate Resources as Flexibility Option",
+      "stance": "support",
+      "description": "Equinix proposes that large-load interconnection customers be allowed to aggregate nearby resources in sufficient proximity to resolve or mitigate constraints that would otherwise trigger upgrade costs. This approach would reduce costs and timelines without requiring on-site generation.",
+      "quote_ids": [
+        3,
+        9,
+        10,
+        13
+      ]
+    },
+    {
+      "key": "topic:nondiscrimination",
+      "name": "Non-Discriminatory Rules Across DC Types",
+      "stance": "support",
+      "description": "Equinix repeatedly stresses that the Commission must avoid inadvertent discrimination between data center types and business models. Rules calibrated only for hyperscale AI training campuses would disadvantage colocation facilities with high-uptime requirements and urban locations.",
+      "quote_ids": [
+        1,
+        2,
+        13
+      ]
+    },
+    {
+      "key": "topic:intergovernmental-coordination",
+      "name": "Coordinated Federal-State-Local Action",
+      "stance": "support",
+      "description": "Equinix urges federal, state, and local governments to work together toward more uniform approaches rather than acting in an uncoordinated fashion, given the urgency of large-load integration.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:load-growth-benefits",
+      "name": "Load Growth Can Lower System Costs",
+      "stance": "support",
+      "description": "Equinix cites a Lawrence Livermore National Labs study finding that states with high load growth saw reductions in real retail electricity prices. The company argues that large high-load-factor loads increase system load factor and put downward pressure on rates.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:queue-priority",
+      "name": "Oppose Queue Prioritization Frameworks",
+      "stance": "oppose",
+      "description": "Equinix recommends against administrative queue prioritization for flexible or co-located loads, drawing on experience in 37 countries where such frameworks muddied economic signals and increased uncertainty, financing costs, and interconnection delays. The market incentive of avoided upgrade costs is sufficient.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

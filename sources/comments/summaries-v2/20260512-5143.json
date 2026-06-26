@@ -1,0 +1,212 @@
+{
+  "accession": "20260512-5143",
+  "filer": "Transmission Access Policy Study Group",
+  "org_type": "trade_assoc",
+  "filed": "05/12/2026",
+  "source_text": "sources/comments/files/20260512-5143__Transmission-Access-Policy-Study-Group/RM26-4 TAPS Supplemental ANOPR Comments.txt",
+  "overall_summary": "TAPS, representing transmission-dependent utilities, argues that FERC must act on large load interconnection because only the Commission can protect wholesale transmission customers from large load-driven cost shifting through its exclusive jurisdiction over interstate transmission rates. TAPS also rebuts WIRES's claim that the Commission's \"and\" pricing policy requires full exemption from ongoing transmission charges, arguing the Commission can modify that policy or use a crediting mechanism to ensure large loads bear the network upgrade costs they cause without shifting stranded costs to other customers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "action by this Commission is required to address the clear and direct impact that large load interconnections have on transmission rates within the Commission's exclusive jurisdiction.",
+      "concern": "FERC must act on large load interconnections to protect its own jurisdictional transmission rates",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The Commission is statutorily obligated to ensure just, reasonable, and not unduly discriminatory transmission rates; only the Commission can protect other wholesale transmission customers from the risks of significant large load-driven cost shifting and stranded costs that would otherwise occur through Commission-jurisdictional rates.",
+      "concern": "Only FERC can shield wholesale customers from large load cost-shifting via its statutory mandate",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "state authority over retail matters in no way eliminates the need for the Commission to take decisive action on the important issues raised in the ANOPR that fall squarely within the Commission's exclusive jurisdiction.",
+      "concern": "State retail authority does not substitute for FERC jurisdiction over wholesale transmission rates",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "If that large load fails to achieve and sustain demand at the level for which these network upgrades were built, the costs of the upgrades will be allocated based on load ratio shares that do not reflect the addition of a large load (whose demand projections triggered the upgrades) to the peak load of the LSE serving that large load.",
+      "concern": "Large loads that fail to sustain demand strand upgrade costs on other LSEs through load-ratio-share allocation",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Holding large loads responsible for the costs of network upgrades they cause, as contemplated in the ANOPR, is the most protective of other wholesale transmission customers paying Commission-jurisdictional rates.",
+      "concern": "Direct assignment of upgrade costs to large loads best protects wholesale transmission customers",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Consistent large load cost responsibility requirements would also allow the Commission to ensure just and reasonable rates in a manner that is quick and efficient compared to a piecemeal approach.",
+      "concern": "Uniform FERC rules are more efficient than a case-by-case or state-by-state approach",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "At minimum, the Commission must ensure that the results of protective measures adopted at the retail level (e.g., minimum demand charges, minimum contract terms, exit fees, etc.) are properly reflected in transmission rates.",
+      "concern": "Retail-level protections must flow through to FERC-jurisdictional transmission revenue requirements",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost",
+        "topic:retail-to-wholesale-passthrough"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "WIRES uses faulty assumptions in analyzing the narrow cost-shifting issue it does address. WIRES claims are based on the assumption that the Commission's existing \"and\" pricing policy requires an upfront determination that large loads pay only (1) the incremental costs of network upgrades they cause, or (2) rolled-in transmission rates.",
+      "concern": "WIRES incorrectly assumes the \"and\" pricing policy limits FERC to only two pricing options",
+      "bins": [
+        "aq:upgradecost",
+        "topic:and-pricing-policy"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The Commission is not restricted to completely exempting large loads from ongoing transmission charges if it holds large loads initially responsible for the full costs of the network upgrades they cause.",
+      "concern": "FERC has flexibility beyond full exemption when requiring upfront upgrade cost payment",
+      "bins": [
+        "aq:upgradecost",
+        "topic:and-pricing-policy"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The Commission's ability to address this major, new challenge need not be hamstrung by past policy developed to address very different issues.",
+      "concern": "FERC can update its decades-old \"and\" pricing policy to address the new large load context",
+      "bins": [
+        "aq:upgradecost",
+        "topic:and-pricing-policy"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Under that mechanism, the large load would pay the upfront cost of any network upgrades, but it would have the opportunity to be credited back that full amount, so long as its transmission usage over time is sufficient to cover the costs.",
+      "concern": "TAPS crediting mechanism rewards large loads that sustain demand while protecting others from stranded costs",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:crediting-mechanism"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "This ensures that the large load pays the higher of either incremental costs or rolled-in transmission rates, mitigating the stranded cost risks to other wholesale customers if the large load fails to maintain a level of demand sufficient to justify the cost of the network upgrades caused by the large load.",
+      "concern": "Crediting mechanism satisfies the \"higher of\" principle and guards against stranded cost risk",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:crediting-mechanism"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC Exclusive Rate Jurisdiction",
+      "stance": "support",
+      "description": "TAPS argues that FERC's exclusive jurisdiction over interstate transmission rates creates an affirmative duty to act on large load interconnections that state retail regulators cannot discharge. State-level protections, however valuable, do not reach the wholesale revenue requirement or the allocation of costs among wholesale transmission customers.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Direct Assignment of Upgrade Costs",
+      "stance": "support",
+      "description": "TAPS supports holding large loads fully responsible for the network upgrade costs they cause, calling it the most protective approach for other wholesale customers. TAPS also rejects WIRES's narrow two-option reading of the \"and\" pricing policy, arguing FERC can modify that policy or use a crediting mechanism that requires upfront payment while returning credits when demand is sustained.",
+      "quote_ids": [
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Protection for Existing Customers",
+      "stance": "support",
+      "description": "TAPS consistently frames FERC action as necessary to prevent large load-driven stranded costs and cost shifting from falling on other wholesale and retail transmission customers. A uniform federal rule is more effective and efficient than piecemeal state or contract-by-contract arrangements.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:and-pricing-policy",
+      "name": "Modifying \"And\" Pricing Policy",
+      "stance": "support",
+      "description": "TAPS disputes WIRES's claim that the Commission's \"and\" pricing policy forces an all-or-nothing choice between direct assignment and full rolled-in exemption. TAPS argues the policy was developed in the 1990s for different conditions, and that FERC has the legal authority and good reason to update or apply it differently for large loads.",
+      "quote_ids": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:crediting-mechanism",
+      "name": "Usage-Contingent Crediting Mechanism",
+      "stance": "support",
+      "description": "TAPS proposes that large loads pay upgrade costs upfront but receive credits over time if their transmission usage justifies those costs. This satisfies the \"higher of\" principle in existing Commission policy while guarding against stranded cost risk if the large load fails to sustain its projected demand.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:retail-to-wholesale-passthrough",
+      "name": "Retail Protections in Wholesale Rates",
+      "stance": "support",
+      "description": "Where FERC does not require direct cost assignment, TAPS argues the Commission must at minimum ensure that retail-level protections such as minimum demand charges and exit fees are properly reflected in the Commission-jurisdictional transmission revenue requirement to prevent double recovery and protect wholesale customers.",
+      "quote_ids": [
+        7
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "upgradecost"
+    ],
+    "pr": [
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
