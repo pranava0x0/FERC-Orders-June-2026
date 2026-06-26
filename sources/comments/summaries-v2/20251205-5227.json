@@ -1,0 +1,314 @@
+{
+  "accession": "20251205-5227",
+  "filer": "Virginia State Corporation Commission",
+  "org_type": "state_commission",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5227__Virginia-State-Corporation-Commission/RM26-4 VSCC Reply Comments_Final.txt",
+  "overall_summary": "The Virginia State Corporation Commission urges FERC to adopt a cooperative federalism approach: FERC sets minimum standards for large load interconnection and states implement them through their own tariffs, preserving existing state jurisdiction rather than asserting unprecedented federal authority. The VSCC also proposes a voluntary fast-track queue for loads that mitigate system impact through co-location, curtailment, or both, and asks FERC to schedule a technical conference.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the Commission has never asserted jurisdiction over interconnection of load, large or otherwise. Load interconnection has rather been the exclusive province under the Federal Power Act of state regulators, such as the VSCC.",
+      "concern": "FERC lacks precedent to assert jurisdiction over load interconnection",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "asserting jurisdiction over large loads where it has not previously done so",
+      "concern": "expanding FERC jurisdiction into load interconnection is legally untested",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "a range of commenters expressed concern with the Commission's assertion of jurisdiction, which both deprives states of the opportunity to address large load interconnection issues (which more than half the states are already doing), while subjecting any Final Rule in this proceeding to legal challenge under the Federal Power Act.",
+      "concern": "FERC jurisdiction over load interconnection would face legal challenge and block state action",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The approach described by the VSCC in its initial comments would ameliorate these concerns by maintaining existing state jurisdiction over interconnection of load, while allowing the Commission to ensure that the states are exercising this jurisdiction subject to minimum baselines that expedite interconnection as much as possible.",
+      "concern": "VSCC proposes FERC set minimum baselines while states retain jurisdiction",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "merely changing the regulator of such interconnections from state agencies to the Commission and the queue operator from transmission owners to PJM will not accelerate these interconnections if the reason for such delays is structural (i.e. lack of available generation or delayed transmission upgrades).",
+      "concern": "shifting jurisdiction does not address structural causes of interconnection delays",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study",
+        "topic:structural-delays"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "By implementing a minimum set of standards designed to remove bottlenecks in the interconnection queue itself, interconnections can be expedited while not disturbing existing state-federal jurisdictional boundaries.",
+      "concern": "minimum federal standards can expedite queues without upsetting state-federal boundaries",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "States are better equipped than the RTOs to address these matters efficiently. PJM recently conducted an 'expedited' process (the Critical Issue Fast Path process) to attempt to address large load addition issues, only to have its membership reject each of the dozen or so proposals.",
+      "concern": "PJM's own expedited process failed, suggesting RTOs are not better positioned than states",
+      "bins": [
+        "rg:pjm",
+        "topic:rto-limits"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "If the goal of this proceeding is to accelerate interconnection of large loads, the most efficient means to do so would be to empower states to act, subject to a minimum set of standards established by the Commission.",
+      "concern": "empowering states under FERC minimum standards is the most efficient path",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the Commission should act within its existing jurisdiction to accelerate interconnection of generation needed to support load. As the Commission has noted in several PJM proceedings, the generation interconnection process desperately needs to be reformed.",
+      "concern": "FERC should use existing authority to reform generation interconnection for PJM",
+      "bins": [
+        "rg:pjm",
+        "pr:study",
+        "topic:gen-queue-reform"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The Commission should direct PJM to do more, including additional processes like the RRI. Removing the causes of generation interconnection backlogs would go far in accelerating load interconnections.",
+      "concern": "PJM generation queue reform, including the RRI, would reduce load interconnection delays",
+      "bins": [
+        "rg:pjm",
+        "pr:study",
+        "topic:gen-queue-reform"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "FERC should establish the criteria for eligible large load interconnections to voluntarily enter a separate queue when they can demonstrate system impact mitigation through co-location, curtailment, or a combination of both.",
+      "concern": "VSCC proposes a voluntary fast-track queue for loads that mitigate system impact",
+      "bins": [
+        "pr:colo",
+        "pr:flex",
+        "aq:hybridrights",
+        "topic:fast-track-queue"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Commercial readiness payments, such as credit and collateral obligations, should be designed to appropriately balance real, customer-specific risk without deterring investment.",
+      "concern": "deposits should be calibrated to deter speculation without blocking real projects",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "state large load tariffs should also require withdrawal or capacity reduction procedures to ensure that projects that inevitably need to exit the queue or adjust injection/withdrawal from the system can do so with minimal disruption to other projects and the orderly interconnection of loads.",
+      "concern": "tariffs must include queue exit and capacity reduction rules to protect queue order",
+      "bins": [
+        "pr:study",
+        "topic:queue-integrity"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "the VSCC believes that the record in this proceeding would greatly benefit from a technical conference that solicits input from all sectors, including state regulators.",
+      "concern": "VSCC requests a technical conference to develop the record with state regulator input",
+      "bins": [
+        "topic:process"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "State jurisdiction must be preserved",
+      "stance": "oppose",
+      "description": "The VSCC argues FERC has never regulated load interconnection and that asserting such jurisdiction now would violate the Federal Power Act and face legal challenge. It opposes any rule that shifts load interconnection authority from states to FERC or RTOs, and proposes instead that FERC set minimum standards while states retain oversight.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Calibrated deposits deter speculation",
+      "stance": "support",
+      "description": "The VSCC supports commercial readiness requirements, including credit and collateral obligations, but specifies they must balance deterring speculative projects against discouraging real investment.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid loads get fast-track rights",
+      "stance": "support",
+      "description": "The VSCC proposes that large loads demonstrating system impact mitigation through co-location or curtailment should have a voluntary right to enter a separate, expedited interconnection queue managed by the transmission owner.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "State authority protects retail customers",
+      "stance": "support",
+      "description": "The VSCC argues state regulators must retain authority to balance economic development against protection of retail customers, resource adequacy, and reliability, and that FERC jurisdiction would undermine this protection.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Reform queue process not regulator",
+      "stance": "mixed",
+      "description": "The VSCC supports minimum federal standards to remove bottlenecks in load interconnection queues and reform of the generation interconnection process at PJM, but opposes shifting the queue operator role away from transmission owners. It argues structural causes of delay require targeted fixes, not a change in who runs the queue.",
+      "quote_ids": [
+        4,
+        5,
+        6,
+        9,
+        10,
+        13
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location earns expedited pathway",
+      "stance": "support",
+      "description": "The VSCC supports a voluntary fast-track queue for co-located loads, where hybrid facilities pairing load with generation or storage receive a streamlined interconnection study process in exchange for installing system protection facilities.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Curtailment commitments unlock fast track",
+      "stance": "support",
+      "description": "The VSCC proposes that loads willing to commit to reliable, predictable curtailment during critical operating conditions should be eligible for the same voluntary fast-track pathway as co-located loads.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM queue reform is urgent",
+      "stance": "support",
+      "description": "The VSCC points to PJM's failed Critical Issue Fast Path process as evidence that RTOs are not better positioned than states to resolve large load interconnection issues. It urges FERC to direct further PJM generation queue reform, including expansion of the Reliability Resource Initiative, as the most direct way to unblock load interconnections.",
+      "quote_ids": [
+        7,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:cooperative-federalism",
+      "name": "Minimum standards, state implementation",
+      "stance": "support",
+      "description": "The VSCC's central proposal is a cooperative federalism model: FERC establishes a minimum set of standards for large load interconnection and transmission owners implement those standards through state-approved tariffs. This approach preserves legal durability, leaves oversight with state commissions, and sets a consistent national floor.",
+      "quote_ids": [
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "key": "topic:structural-delays",
+      "name": "Structural causes drive delays",
+      "stance": "neutral",
+      "description": "The VSCC explains that interconnection delays stem from structural factors such as lack of available generation and slow transmission upgrade timelines, not from which regulator oversees the queue. Minimum standards addressing queue bottlenecks are more effective than a jurisdictional shift.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:rto-limits",
+      "name": "RTOs less effective than states",
+      "stance": "neutral",
+      "description": "The VSCC cites PJM's failed expedited process and Order No. 1920's slow implementation timeline as evidence that RTOs and federal processes are slower and less effective than states at resolving large load interconnection issues.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:gen-queue-reform",
+      "name": "Generation queue reform unlocks load",
+      "stance": "support",
+      "description": "The VSCC argues that FERC's most effective action within its existing jurisdiction is to require PJM and other RTOs to reform their generation interconnection queues, since generation backlogs are a primary driver of load interconnection delays.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:fast-track-queue",
+      "name": "Voluntary fast-track queue for mitigation",
+      "stance": "support",
+      "description": "The VSCC proposes a voluntary fast-track load interconnection queue for projects that can demonstrate system impact mitigation through co-location, curtailment, or a combination. Participation is voluntary, managed by transmission owners, and paired with a complementary fast-track generator interconnection study.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:queue-integrity",
+      "name": "Withdrawal rules protect queue order",
+      "stance": "support",
+      "description": "The VSCC calls for state tariffs to include clear procedures for project withdrawal and capacity reduction, with financial penalties and capacity reassignment to discourage speculation and protect the orderly processing of remaining queue positions.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:process",
+      "name": "Technical conference requested",
+      "stance": "support",
+      "description": "The VSCC requests that FERC schedule a technical conference to gather input from all sectors, including state regulators, and to develop the minimum standards framework through a fuller record before issuing a NOPR.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "deposits",
+      "hybridrights",
+      "protection"
+    ],
+    "pr": [
+      "study",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "accession": "20251205-5211",
+  "filer": "Data Center Coalition",
+  "org_type": "data_center",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5211__Data-Center-Coalition/DCC_LLI ANOPR Reply Comments_RM26-4_12.5.25.txt",
+  "overall_summary": "DCC supports FERC action to create a clear, nondiscriminatory large load interconnection framework and urges transition protections for projects already in development. DCC calls on FERC to resolve hybrid load-generation interconnection uncertainty using the existing PJM co-location record, while preserving stand-alone load access to competitive wholesale markets. DCC also frames interconnection delays as a symptom of insufficient transmission infrastructure, calling for parallel transmission planning reform.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "interconnection reform is a prerequisite for U.S. leadership in AI, advanced manufacturing, and the digital economy",
+      "concern": "DCC frames interconnection reform as a national strategic necessity",
+      "bins": [
+        "pr:study",
+        "topic:national-imperative"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the goal of this proceeding must be to \"accelerate—not pause—critical load and generation projects already advancing under existing frameworks.\"",
+      "concern": "DCC argues reforms should speed up, not halt, projects already in the queue",
+      "bins": [
+        "pr:study",
+        "topic:transition-protections"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "DCC's Initial Comments strongly advocated for \"clear and legally enforceable transition provisions\" to ensure that reforms aimed at improving future processes do not disrupt projects that have made significant commitments under existing rules.",
+      "concern": "DCC wants binding grandfathering rules for projects with existing commitments",
+      "bins": [
+        "aq:protection",
+        "topic:transition-protections"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The Commission should incorporate explicit grandfathering and transition pathways in any final rule to provide this essential certainty.",
+      "concern": "DCC asks FERC to codify grandfathering in the final rule",
+      "bins": [
+        "aq:protection",
+        "topic:transition-protections"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "DCC urged the Commission to act on the \"complete record on co-location issues in PJM\" to \"deliver immediate clarity.\"",
+      "concern": "DCC asks FERC to use the existing PJM co-location record to resolve hybrid facility uncertainty quickly",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "DCC advocated for studying new load and new generation together to capture system benefits.",
+      "concern": "DCC supports integrated interconnection studies for paired load and generation",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Support exists for creating expedited pathways for configurations that provide demonstrable grid benefits, with many commenters emphasizing the need for such pathways to accommodate the diverse operational profiles of large loads.",
+      "concern": "DCC supports expedited study for hybrid configurations that deliver grid benefits",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "expedited processes should not be limited to curtailable loads, as this may be incompatible with operational requirements, and that coordination of new load and incremental generation alone warrants expedited study.",
+      "concern": "DCC argues expedited treatment should not require load curtailability",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Resolving this issue in the existing dockets, and extending principles nationally through this rulemaking, is the most direct way to unlock the significant system benefits that hybrid configurations offer and to provide the certainty developers require.",
+      "concern": "DCC recommends resolving PJM co-location dockets first, then applying principles nationally",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "a durable framework \"must allow load to interconnect efficiently, whether or not that load is paired with on-site supply.\"",
+      "concern": "DCC insists stand-alone load must retain full market access under any new framework",
+      "bins": [
+        "pr:colo",
+        "topic:standalone-load-access"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "pairing of load with generation must remain a voluntary incentive, not a requirement, to avoid unjust and unreasonable discrimination.",
+      "concern": "DCC opposes mandating co-location as a condition of interconnection",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "topic:standalone-load-access"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Any new interconnection framework must preserve the ability of load to rely on these \"competitive markets whose design the Commission has spent more than two decades refining.\"",
+      "concern": "DCC asks FERC to protect wholesale market access for stand-alone load customers",
+      "bins": [
+        "pr:colo",
+        "topic:standalone-load-access"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "interconnection delays as a \"symptom of a deeper and more structural issue\"—a lack of sufficient transmission infrastructure and forward-looking planning.",
+      "concern": "DCC says interconnection bottlenecks stem from inadequate transmission infrastructure and planning",
+      "bins": [
+        "pr:study",
+        "topic:transmission-planning"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "DCC's call for the Commission to \"focus on the infrastructure challenge through appropriate long-term transmission planning\" and to require deployment of grid-enhancing technologies is a necessary component of any effective interconnection reform effort.",
+      "concern": "DCC urges FERC to require long-term transmission planning and grid-enhancing technology deployment alongside interconnection reform",
+      "bins": [
+        "pr:study",
+        "topic:transmission-planning"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:protection",
+      "name": "Enforceable transition protections",
+      "stance": "support",
+      "description": "DCC calls for explicit grandfathering and legally enforceable transition provisions in the final rule so that projects with existing commitments under current rules are not disrupted by prospective reforms.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid facility rights clarity",
+      "stance": "support",
+      "description": "DCC urges FERC to resolve the inconsistent treatment of hybrid load-plus-generation facilities by using the existing PJM co-location record and extending resulting principles through this rulemaking. DCC also opposes making generation pairing mandatory.",
+      "quote_ids": [
+        5,
+        9,
+        11
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Integrated load-generation studies",
+      "stance": "support",
+      "description": "DCC supports studying new load and new generation together to capture system benefits, reduce duplicative studies, and align net impact with interconnection costs.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited study scope",
+      "stance": "support",
+      "description": "DCC supports expedited interconnection study for configurations that deliver demonstrable grid benefits, and argues that expedited pathways should not be limited to curtailable loads since operational requirements may preclude curtailability.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study process reform",
+      "stance": "support",
+      "description": "DCC supports integrated interconnection studies and broader transmission planning reform, framing interconnection delays as a symptom of insufficient infrastructure rather than a standalone procedural problem.",
+      "quote_ids": [
+        1,
+        2,
+        6,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location and market access balance",
+      "stance": "mixed",
+      "description": "DCC supports streamlined pathways for hybrid co-located facilities while insisting that stand-alone load must retain access to competitive wholesale markets and that generation pairing remain voluntary, not mandatory.",
+      "quote_ids": [
+        5,
+        6,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexible load expedited pathways",
+      "stance": "support",
+      "description": "DCC supports expedited study for flexible or paired configurations but argues the pathway should not exclude non-curtailable loads, since coordination of new load and incremental generation alone justifies expedited treatment.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM co-location record",
+      "stance": "support",
+      "description": "DCC specifically cites the pending PJM co-location proceeding (Docket Nos. EL25-49, EL25-20, AD24-11) as a ready record FERC should resolve quickly, then extend the resulting principles nationally.",
+      "quote_ids": [
+        5,
+        9
+      ]
+    },
+    {
+      "key": "topic:national-imperative",
+      "name": "National strategic need",
+      "stance": "support",
+      "description": "DCC argues that interconnection reform is directly tied to U.S. leadership in AI, advanced manufacturing, and the digital economy, framing timely action as a national security and economic competitiveness priority.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:transition-protections",
+      "name": "Grandfathering in-flight projects",
+      "stance": "support",
+      "description": "DCC calls for binding grandfathering and transition pathways so that new rules apply only prospectively and do not disrupt projects already under study, construction, or with executed interconnection agreements.",
+      "quote_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "topic:standalone-load-access",
+      "name": "Stand-alone load market rights",
+      "stance": "support",
+      "description": "DCC insists that any new framework must preserve stand-alone load access to competitive wholesale markets and that co-location with on-site generation must remain a voluntary choice, not a condition of interconnection.",
+      "quote_ids": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:transmission-planning",
+      "name": "Transmission infrastructure reform",
+      "stance": "support",
+      "description": "DCC frames interconnection bottlenecks as a symptom of inadequate transmission infrastructure and calls on FERC to pursue long-term transmission planning and require deployment of grid-enhancing technologies in parallel with interconnection reform.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "protection",
+      "hybridrights",
+      "jointstudy",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

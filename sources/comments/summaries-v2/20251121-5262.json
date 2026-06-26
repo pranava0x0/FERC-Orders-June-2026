@@ -1,0 +1,314 @@
+{
+  "accession": "20251121-5262",
+  "filer": "Pennsylvania Public Utility Commission",
+  "org_type": "state_commission",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5262__Pennsylvania-Public-Utility-Commission/RM26-4 PA PUC Comments.txt",
+  "overall_summary": "The Pennsylvania Public Utility Commission opposes the ANOPR's assertion of federal jurisdiction over pure load interconnection, arguing it exceeds FERC's authority under the Federal Power Act and violates the major questions doctrine. The PA PUC contends that load interconnection is squarely a state matter, that the 20 MW threshold sweeps in well-functioning industrial interconnections, and that states like Pennsylvania are already addressing large load issues through state proceedings. The PA PUC leaves limited room for discussion on hybrid interconnection guidance that could shorten study timelines without expanding federal authority over pure load.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "jurisdictional lines must be respected, not just for the sake of history and precedents, but because our near century-long bright line of jurisdiction provides major economic development benefits to our nation and individual states through predictability.",
+      "concern": "State-federal jurisdictional boundary must be preserved for economic predictability",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Pure load interconnection is squarely within the realm of local distribution reserved to the states under the Federal Power Act.",
+      "concern": "Load interconnection belongs under state jurisdiction, not FERC",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The ANOPR proposes an unprecedented expansion of Federal jurisdiction and potential intrusion on the states' historic retail regulatory authority under the Federal Power Act, introducing potential confusion, unintended customer consequences, and/or legal uncertainty where none currently exists.",
+      "concern": "ANOPR would create legal uncertainty by displacing established state retail authority",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "FERC-mandated large load interconnections without sufficient available generation capacity could threaten reliable power service to existing retail customers, as grid operators may lack the resources needed to maintain system stability during peak demand or extreme weather events.",
+      "concern": "Mandated interconnections without generation capacity risk reliability for existing customers",
+      "bins": [
+        "aq:protection",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The proposals in the ANOPR could limit a state's ability to implement protective measures, such as large load tariffs and flexibility requirements.",
+      "concern": "ANOPR may preempt state tools for managing large load impacts",
+      "bins": [
+        "aq:protection",
+        "pr:flex",
+        "topic:state-tariff-authority"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The ANOPR exacerbates the issue by targeting reforms to all new loads greater than 20 MW. Even more, the rulemaking does not address aggregate thresholds and probably captures commercial/industrial customers other than data centers.",
+      "concern": "20 MW individual threshold is too low and sweeps in non-data-center industrial load",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The impact of capturing all smaller non-data-center facilities above the 20 MW threshold would have a seismic impact on industrial load interconnections that have been well-functioning for decades.",
+      "concern": "Extending rules to all loads above 20 MW would disrupt established industrial interconnection practice",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The proposed rules conflict with state-approved tariffs for large industrial load that already address large load industrial tariffs with individual and aggregate megawatt load thresholds different from the 20 MW (individual) proposed in this rulemaking.",
+      "concern": "Federal 20 MW threshold conflicts with existing state-approved industrial tariff thresholds",
+      "bins": [
+        "aq:threshold",
+        "topic:state-tariff-authority"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The recommendations that (1) load and hybrid facilities be studied together with generating facilities for efficient siting and be subject to standardized study deposits, readiness requirements, and withdrawal penalties; (2) hybrid facilities be studied based on the amount of injection and/or withdrawal rights requested to provide incentives for co-location with new generation facilities; (3) any hybrid interconnection install the system protection facilities necessary to prevent unauthorized injections or withdrawals that exceed the respective rights; (4) financial penalties for load facilities and hybrid facilities; (5) expedited consideration of interconnection studies of large loads and hybrid facilities that agree to be curtailable and dispatchable; and (6) that load and hybrid facilities should be responsible for 100% of the network upgrades that are assigned through the interconnection studies all have widespread economic and political ramifications.",
+      "concern": "The core ANOPR reforms collectively raise major questions requiring clear Congressional authorization",
+      "bins": [
+        "aq:jointstudy",
+        "aq:deposits",
+        "aq:hybridrights",
+        "aq:protection",
+        "aq:expedited",
+        "aq:upgradecost",
+        "pr:study",
+        "pr:cost",
+        "pr:colo",
+        "topic:major-questions-doctrine"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "There is no clear Congressional authorization to expand FERC jurisdiction to pure load interconnection of any size.",
+      "concern": "FERC lacks statutory authority to regulate pure load interconnection under the major questions doctrine",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:major-questions-doctrine"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "However, if limited to hybrid interconnections of load and generation at the same point-of-interconnection, there may be greater room for discussion.",
+      "concern": "PA PUC signals limited openness to federal guidance on true hybrid interconnections only",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Further guidance on paired interconnection studies could be welcome, subject to a more detailed proposed rule and opportunity for comment, if that guidance minimized the need for transmission buildout and interconnection study timelines due to the nature of that paired interconnection.",
+      "concern": "Hybrid-specific study guidance may be acceptable if it reduces buildout and study timelines",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:colo",
+        "topic:hybrid-study-guidance"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The PA PUC submits that states are in the best position as electric retail service regulators to determine the reasonableness of electric retail rate structures regarding the distribution of service, including service to customers with peak loads over 20 MW.",
+      "concern": "States are better positioned than FERC to regulate large load retail service and rate structures",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "State jurisdiction over load interconnection",
+      "stance": "oppose",
+      "description": "The PA PUC argues that pure load interconnection is local distribution under state jurisdiction per the Federal Power Act and Order 888, and that FERC's proposed assertion of authority over all loads above 20 MW is an unprecedented federal overreach. The PA PUC urges FERC to respect the century-long bright-line division of state and federal authority.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        10,
+        13
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20 MW threshold too broad",
+      "stance": "oppose",
+      "description": "The PA PUC contends that a 20 MW individual threshold without aggregate limits captures well-functioning industrial interconnections beyond data centers and conflicts with existing state-approved tariff thresholds. The breadth of the threshold amplifies the major-questions concern.",
+      "quote_ids": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint load and generation study",
+      "stance": "mixed",
+      "description": "The PA PUC objects to requiring load and hybrid facilities to be studied together with generating facilities as part of a broader set of reforms that collectively exceed FERC authority. However, it leaves open the possibility that limited paired-study guidance for true hybrid interconnections could be acceptable if it shortens timelines.",
+      "quote_ids": [
+        9,
+        12
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Standardized study deposits",
+      "stance": "oppose",
+      "description": "The PA PUC identifies standardized study deposits, readiness requirements, and withdrawal penalties for load facilities as one of the ANOPR reforms that collectively raise major-questions doctrine concerns without clear Congressional authorization.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid facility injection and withdrawal rights",
+      "stance": "mixed",
+      "description": "The PA PUC objects to the ANOPR's hybrid-facility rules as part of an overbroad package, but separately signals that guidance limited to true hybrid interconnections at the same point of interconnection may have room for further discussion.",
+      "quote_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Retail customer and reliability protection",
+      "stance": "oppose",
+      "description": "The PA PUC warns that FERC-mandated interconnections without sufficient generation capacity could threaten reliability for existing retail customers during peak demand or extreme weather. It also argues the ANOPR could preempt state protective tools such as large load tariffs and flexibility requirements.",
+      "quote_ids": [
+        3,
+        4,
+        5,
+        9
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited study for curtailable loads",
+      "stance": "oppose",
+      "description": "The PA PUC lists expedited consideration for curtailable and dispatchable large loads as one of the ANOPR proposals that collectively raise major-questions doctrine concerns, without offering a separate view on this specific mechanism.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "100% network upgrade cost on load",
+      "stance": "oppose",
+      "description": "The PA PUC identifies assigning 100% of network upgrade costs to load and hybrid facilities as one of the economically significant ANOPR reforms that collectively require clear Congressional authorization the PA PUC believes does not exist.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study process and reliability risk",
+      "stance": "oppose",
+      "description": "The PA PUC is concerned that mandated interconnection studies and resulting connections without adequate generation could undermine grid reliability. It leaves open limited acceptance of paired study guidance for hybrids if that guidance reduces transmission buildout and study timelines.",
+      "quote_ids": [
+        4,
+        9,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation and ratepayer protection",
+      "stance": "oppose",
+      "description": "The PA PUC argues that FERC-mandated interconnections and network upgrades may unfairly burden retail ratepayers if not properly allocated, and that states are better positioned to determine reasonable rate structures for large load customers.",
+      "quote_ids": [
+        9,
+        13
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location and hybrid interconnection",
+      "stance": "mixed",
+      "description": "The PA PUC opposes the ANOPR's broad co-location and hybrid rules as part of an overbroad package, but acknowledges that guidance limited strictly to hybrid load-plus-generation at the same point of interconnection may be permissible and beneficial if it shortens study timelines.",
+      "quote_ids": [
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility requirements preemption risk",
+      "stance": "oppose",
+      "description": "The PA PUC warns that ANOPR proposals could preempt state-level flexibility requirements for large loads, limiting state commissions' ability to manage large load impacts on the grid.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:major-questions-doctrine",
+      "name": "Major questions doctrine bar",
+      "stance": "oppose",
+      "description": "The PA PUC invokes West Virginia v. EPA and Loper Bright to argue that the ANOPR's breadth and economic significance require clear Congressional authorization, which does not exist for federal regulation of pure load interconnection. The six enumerated ANOPR reforms are cited together as collectively triggering this doctrine.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:state-tariff-authority",
+      "name": "State tariff tools for large loads",
+      "stance": "oppose",
+      "description": "The PA PUC points to Pennsylvania's own en banc proceeding and tentative model tariff for customers at or above 50 MW as evidence that states are already addressing large load interconnection, and argues federal rules would conflict with existing state-approved tariff thresholds.",
+      "quote_ids": [
+        5,
+        8
+      ]
+    },
+    {
+      "key": "topic:hybrid-study-guidance",
+      "name": "Hybrid paired study guidance",
+      "stance": "support",
+      "description": "The PA PUC notes that further guidance on paired interconnection studies for true hybrid facilities could be welcome if scoped narrowly and subject to a detailed proposed rule with comment opportunity, citing Brattle Group analysis showing paired interconnections could shorten study timelines.",
+      "quote_ids": [
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
