@@ -202,6 +202,19 @@ When one tab's content runs past ~2–3 screens, split it into **sub-tabs** inst
 
 When a row carries several orthogonal tag sets (e.g. three classification "lenses"), render each lens as a small tint chip in its own color, the lenses separated by a hairline. Abbreviate the chip label and carry the full meaning in `title` plus an `sr-only` group label so the grouping survives for screen readers. Keep it to ~3 lenses or the row stops scanning — push the rest to the deep-dive. Color is a *cue*, never the only signal (the text is the label).
 
+### 8.9 Auditable-corpus explorer (lead with the map, deep-dive on demand)
+
+For a large list of analyzed items (the 268 audited comments), three patterns make it navigable for a newcomer:
+
+- **Stance map first.** Before the list, a stacked horizontal bar per category (support / oppose / mixed / no-position) with a color legend gives the lay of the land at a glance — the single most useful entry point. Each bar is `role="img"` with a full `aria-label` ("Cost allocation: 187 support, 33 oppose, …") because the segments are a lossy visual; the number lives in the label so screen readers and tests still get it. Always give a denominator.
+- **Per-row deep-dive is a native `<details>`.** No JS toggle — `details > summary` is accessible for free (keyboard, `aria-expanded` built in). Collapse the heavy synthesis (summary + position chips) behind "Read the audited analysis"; the row stays scannable, the detail is one click away. The summary is a ≥ 44 px tap target.
+- **Positions as stance-colored chips**, each a named bin tinted by the filer's stance (green support / red oppose / amber mixed / gray neutral), with the stance also in `sr-only` text (color is never the only signal). Reuse the existing stance tokens — do not invent a parallel palette.
+- **Show-more past a small N.** A roster (every org per camp) shows the first few, then a real `<button>` (`aria-expanded`, 44 px) reveals the rest via `display: contents` on a wrapper `<span>` (not the `hidden` attr — see § 12.1). Dedupe to distinct entities and state that the count is filings, not orgs.
+
+### 8.10 Stat row — one number per real thing
+
+A stat strip must have exactly as many cells as it has real numbers; if a metric is dropped, drop the grid column too (a `repeat(N)` that outruns the items leaves a dead cell). And never keep a stat whose label has gone stale — "9 read in full" implied only 9 were analyzed once all 268 were; the honest headline is "268 audited summaries."
+
 ---
 
 ## 9. Accessibility (baseline)
