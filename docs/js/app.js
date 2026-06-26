@@ -281,7 +281,7 @@
     var AQ = { jurisdiction: "Jurisdiction", threshold: "20 MW", jointstudy: "Joint study", deposits: "Deposits", hybridrights: "Hybrid rights", protection: "Protection", expedited: "Expedited", upgradecost: "Upgrade cost" };
 
     var statRow = '<div class="cm-stats">' +
-      [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.summarized2, "audited summaries"], [CM.summarized, "read in full"]]
+      [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.summarized2, "audited summaries"]]
         .map(function (s) { return '<div class="cm-stat"><span class="v">' + esc(String(s[0])) + '</span><span class="l">' + esc(s[1]) + "</span></div>"; }).join("") + "</div>";
 
     var rounds = '<div class="cm-rounds">' + CM.rounds.map(function (r) {
@@ -357,9 +357,9 @@
     CM.list.forEach(function (c) { var k = roundOf(c.filed); (rowsByRound[k] = rowsByRound[k] || []).push(c); });
     var listHtml = CM.rounds.map(function (r) {
       var items = (rowsByRound[r.key] || []).map(function (c) {
-        var badge = c.sum ? '<span class="cm-badge sum" title="Read in full (flagship)"><span aria-hidden="true">★</span><span class="sr-only">read in full</span></span>'
-          : c.dl ? '<span class="cm-badge dl" title="Body downloaded and text-extracted"><span aria-hidden="true">✓</span><span class="sr-only">body downloaded</span></span>'
-          : '<span class="cm-badge no" title="Body not downloaded"><span aria-hidden="true">–</span><span class="sr-only">not downloaded</span></span>';
+        var badge = c.s2 ? '<span class="cm-badge dl" title="Audited summary available"><span aria-hidden="true">✓</span><span class="sr-only">audited summary</span></span>'
+          : c.dl ? '<span class="cm-badge sum" title="Downloaded but image-only (no text layer) — not summarized"><span aria-hidden="true">○</span><span class="sr-only">scanned, not summarized</span></span>'
+          : '<span class="cm-badge no" title="Body not downloaded — eLibrary serves it inline"><span aria-hidden="true">–</span><span class="sr-only">not downloaded</span></span>';
         var type = CM.bucketLabels[c.bucket] || c.bucket;
         var aqChips = (c.aq || []).map(function (k) { return '<span class="cm-tag aq" title="Addresses the ANOPR comment-period question: ' + esc(AQ[k]) + '">' + esc(AQ[k]) + "</span>"; }).join("");
         var prChips = (c.pr || []).map(function (k) { return '<span class="cm-tag pr ' + k + '" title="Engages the ' + esc(CL[k]) + ' reform principle">' + esc(CL[k]) + "</span>"; }).join("");
@@ -403,7 +403,7 @@
     var secOverview = '<section class="cm-sec" id="cmsec-overview" role="tabpanel" aria-labelledby="cmsub-overview">' +
       head("The RM26-4 comment period",
         CM.total + " comments were filed on DOE's large-load ANOPR (Docket RM26-4-000) between " + fmtD(CM.dateRange.first) + " and " + fmtD(CM.dateRange.last) +
-        ", scraped from FERC eLibrary on " + CM.captured + ". " + CM.downloaded + " bodies are downloaded and " + CM.analyzed + " are text-analyzed.") +
+        ", scraped from FERC eLibrary on " + CM.captured + ". " + CM.downloaded + " of " + CM.total + " bodies are downloaded; " + CM.summarized2 + " carry an audited summary. The other " + (CM.total - CM.summarized2) + " are four image-only scans (no text layer, awaiting OCR) and one filing eLibrary serves inline rather than releasing for download.") +
       statRow + rounds +
       head("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies — a measured keyword prevalence, not a coding of each filer's position.") + themes +
       head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position — read from the filer's own words. Across " + CM.summarized2 + " audited filings.") + stanceBars +
