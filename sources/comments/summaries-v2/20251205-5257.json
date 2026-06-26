@@ -1,0 +1,262 @@
+{
+  "accession": "20251205-5257",
+  "filer": "Southern Environmental Law CenterNorth Carolina Sustainable Energy AssociationAppalachian Voices ,Coastal Conservation League ,Southern Alliance for Clean Energy ,",
+  "org_type": "enviro",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5257__Southern-Environmental-Law-CenterNorth-Carolina-Su/SPIOs ANOPR Reply Comments.txt",
+  "overall_summary": "A coalition of Southeast public interest organizations supports FERC adopting large load interconnection reforms that directly assign 100 percent of network upgrade costs to the large loads that cause them, shielding existing ratepayers from unjust cost increases. They argue that state retail-level efforts are insufficient on their own because none have required full cost assignment for transmission upgrades, and that a federal interconnection rule would complement rather than displace state authority. They also call for excluding large load network upgrades from rate base to deter piecemeal grid expansion and incentivize proactively planned regional transmission.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the size, speed, and density of this surge threaten to overwhelm the transmission grid and the ability of ratepayers to subsidize its expansion.",
+      "concern": "Large load growth poses an unprecedented threat to the grid and to ratepayer costs.",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The Commission must ensure that any large load interconnection reforms it adopts in this proceeding do not handcuff states' ability to continue doing so.",
+      "concern": "Federal reforms should not limit state authority to regulate large loads.",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Broadly spreading the costs of upgrades meant to integrate and benefit massive loads will overburden existing customers and further incentivize the piecemeal grid expansion that the Commission has found to be unjust and unreasonable.",
+      "concern": "Rolled-in cost allocation for large load upgrades harms existing customers and encourages inefficient piecemeal expansion.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Directly assigning the costs of large load-caused network upgrades and sequestering them from the broader rate base would accomplish this necessary goal.",
+      "concern": "Direct cost assignment and rate base exclusion for large load network upgrades is the necessary fix.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "none of the aforementioned state-level reforms have required large loads to pay the full cost of transmission upgrades they cause or otherwise insulate existing customers from their impact.",
+      "concern": "State reforms have not achieved full cost causation for transmission upgrades, leaving a gap for federal action.",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "A large load interconnection process could require large loads to commit to an interconnection request earlier than when a retail service obligation would otherwise attach.",
+      "concern": "Earlier financial commitment in the interconnection queue would reduce speculative requests.",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Commission could encourage joint state and federal interconnection queues",
+      "concern": "Joint state-federal queues could improve efficiency and avoid duplicative processes.",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Establishing this national floor of ratepayer protection through interconnection process reforms would strike the right balance between respecting cooperative federalism and preventing a race to the bottom.",
+      "concern": "A federal floor of ratepayer protection preserves state flexibility while ensuring baseline safeguards.",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Transmission-owning utilities in the Southeast and their national representatives urge the Commission to retain its longstanding rolled-in rate policy for network upgrades caused by large load interconnections.",
+      "concern": "Utilities are opposing direct cost assignment and defending the status quo rolled-in approach.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "topic:utility-opposition"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "those rate structures may have made sense when relatively linear, organic load growth caused modest incremental upgrades, but they were not designed for enormous and fast-paced infusions of transmission investment dedicated to serving a relatively small number of large customers.",
+      "concern": "Historical rolled-in rate structures are not suited to the current scale of large load-driven investment.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the Commission should directly assign the costs of network upgrades to the large loads that cause them using a similar model to participant funding for generator interconnection.",
+      "concern": "Participant funding extended to large load interconnection would apply cost causation principles equitably.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "excluding the cost of large load-specific network upgrades from rate base . . . would also prevent transmission providers from earning a return on these facilities, thereby incentivizing them to prioritize transmission upgrades planned through the Order No. 1920 processes",
+      "concern": "Rate base exclusion would shift utility incentives toward proactively planned regional transmission.",
+      "bins": [
+        "pr:cost",
+        "pr:study",
+        "topic:proactive-planning"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the Commission can and must find here that directly assigning the costs of network upgrades to large loads is necessary to address the unjust, unreasonable, and unduly discriminatory or preferential cost allocation practices identified in this proceeding.",
+      "concern": "FERC has a statutory obligation to require direct cost assignment to cure unjust and unreasonable cost allocation.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "By treating network upgrade funding as a contractual predicate to interconnection, the Commission would not disturb the state's allocation of costs for all broadly utilized transmission facilities to retail customer classes.",
+      "concern": "Framing cost responsibility as a condition of interconnection avoids intruding on state bundled retail rate authority.",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost",
+        "topic:cooperative-federalism"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Direct Large Load Cost Assignment",
+      "stance": "support",
+      "description": "The filers strongly support requiring large loads to pay 100 percent of the network upgrade costs they cause, and excluding those upgrades from rate base. They argue that rolled-in rate treatment was never designed for the current scale of large load investment and that cost causation principles require direct assignment. They cite participant funding for generator interconnection as the model to follow.",
+      "quote_ids": [
+        1,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Network Upgrade Cost Responsibility",
+      "stance": "support",
+      "description": "The filers support directly assigning 100 percent of large load-caused network upgrade costs to those loads and keeping those costs out of rate base. They argue existing state reforms have not achieved this, and that FERC's cost causation obligations require it to act. They also point to a participant funding model from generator interconnection as a ready template.",
+      "quote_ids": [
+        3,
+        4,
+        5,
+        9,
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal-State Jurisdictional Balance",
+      "stance": "support",
+      "description": "The filers support FERC acting on transmission-level interconnection while leaving state retail rate authority intact. They argue a federal floor of ratepayer protection complements rather than displaces state retail reforms, and that treating cost responsibility as a condition of interconnection avoids intruding on bundled retail rate jurisdiction.",
+      "quote_ids": [
+        2,
+        7,
+        8,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Early Financial Commitments",
+      "stance": "support",
+      "description": "The filers support requiring large loads to commit financially at the interconnection stage, earlier than retail service obligations typically attach. They argue this layered commitment approach is necessary given the enormous cost and price insensitivity of large load interconnections.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Interconnection Process and Forecasting",
+      "stance": "support",
+      "description": "The filers support establishing a formal large load interconnection process that firms up load forecasts and reduces speculative requests. They note Georgia Power's model still overestimates large load materialization even after state reforms, and that earlier interconnection commitments combined with joint state-federal queues would improve forecast accuracy and administrative efficiency.",
+      "quote_ids": [
+        1,
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "key": "topic:cooperative-federalism",
+      "name": "State Flexibility Within Federal Floor",
+      "stance": "support",
+      "description": "The filers argue that a FERC interconnection rule should function as a national floor for ratepayer protection, leaving states free to adopt more stringent retail policies. They point to Duke Energy's joint state-federal generator interconnection queue in the Carolinas as a working model for coordinated processes. They warn that applying different standards inside and outside RTOs would funnel large loads to jurisdictions with weaker protections.",
+      "quote_ids": [
+        2,
+        5,
+        7,
+        8,
+        14
+      ]
+    },
+    {
+      "key": "topic:utility-opposition",
+      "name": "Utility Defense of Status Quo",
+      "stance": "oppose",
+      "description": "The filers summarize and rebut utilities' arguments for retaining rolled-in rate treatment, noting that even utilities acknowledge the unprecedented scale of investment ahead. They treat this as a self-defeating position: utilities cite the very magnitude of large load growth as a reason the current cost allocation approach must change.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:proactive-planning",
+      "name": "Incentivize Regional Transmission Planning",
+      "stance": "support",
+      "description": "The filers argue that excluding large load network upgrades from rate base would shift utility incentives away from piecemeal, reactive grid expansion and toward proactively planned regional transmission consistent with Order No. 1920. They urge FERC to expedite Order No. 1920 compliance filings as a complementary step.",
+      "quote_ids": [
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost",
+      "jurisdiction",
+      "deposits"
+    ],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

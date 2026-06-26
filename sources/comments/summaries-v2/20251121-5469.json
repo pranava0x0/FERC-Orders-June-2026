@@ -1,0 +1,314 @@
+{
+  "accession": "20251121-5469",
+  "filer": "Southwest Power Pool, Inc.",
+  "org_type": "rto_iso",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5469__Southwest-Power-Pool-Inc/20251121_SPP Comments to ANOPR_RM26-4.txt",
+  "overall_summary": "SPP supports the ANOPR goals but urges FERC to give regional flexibility rather than a one-size-fits-all rule, pointing to its own HILL, HILLGA, CHILLS, and PALS processes as regionally tailored solutions already under development. SPP argues that thresholds, study timelines, hybrid facility withdrawal rights, and cost allocation should all be set at the regional level to reflect local grid conditions and state law differences. SPP opposes mandating a 60-day study timeline, requiring study only on net injection/withdrawal rights for hybrid facilities, and any transmission cost regime that shifts costs from large load customers to existing ratepayers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "SPP encourages the Commission to provide flexibility in any rules adopted based on the vast regional differences across the country. Rather than pursuing a \"one-size fits all\" approach, the Commission should consider allowing each Regional Transmission Organization (\"RTO\") and Independent System Operator (\"ISO\") (\"RTO/ISO\") and its stakeholders the latitude to design for these differences.",
+      "concern": "SPP asks FERC to allow regional flexibility rather than uniform national rules",
+      "bins": [
+        "pr:flex",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "SPP requests that any final rules in this matter do not include any specific MW threshold, but instead, the final rules should allow each transmission provider to propose thresholds specific to the needs of their transmission systems.",
+      "concern": "SPP opposes a single federal MW threshold and wants each transmission provider to set its own",
+      "bins": [
+        "aq:threshold",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "SPP proposed the following threshold to qualify as a HILL: \"(1) 10 MW or more if connected to the Transmission System at a voltage level less than or equal to 69 kV; or (2) 50 MW or more if connected to the Transmission System at a voltage level greater than 69 kV.\"",
+      "concern": "SPP uses voltage-differentiated thresholds in its own tariff rather than a single MW cutoff",
+      "bins": [
+        "aq:threshold",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "system protection facilities may not fully protect the grid from stability issues, and as such, the full load at a hybrid facility should be considered when applying a MW threshold.",
+      "concern": "SPP argues hybrid facility thresholds must be based on full load, not net load, due to stability risk",
+      "bins": [
+        "aq:hybridrights",
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "SPP believes that any final rule related to the interconnection of large loads and supporting generation should include a level of financial commitment that ensures that SPP, and other transmission providers, are only studying those projects that fully intend to interconnect to their transmission system.",
+      "concern": "SPP supports financial commitment requirements to filter speculative interconnection requests",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "SPP cannot appropriately study the actual impacts of that load on the Transmission System without studying the full impact of its potential withdrawals from the Transmission System. Although this load may have a generator capable of offsetting the load at most times, in the event that generator goes offline, SPP would have to provide the full MW amount to serve that load, and would, therefore, experience the effects of its full withdrawal even if only temporarily.",
+      "concern": "SPP argues hybrid facilities must be studied on full withdrawal capacity, not net withdrawal rights",
+      "bins": [
+        "aq:hybridrights",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Even with system protections in place, very rapid withdrawals of large amounts of power can adversely affect the transmission grid (e.g., through rapid frequency excursions and unintended protection operations). All generators are susceptible to unexpected tripping, and protection schemes themselves may fail under fast dynamic conditions.",
+      "concern": "SPP warns that net-only study of hybrid facilities creates unacceptable reliability risk from generator trips",
+      "bins": [
+        "aq:hybridrights",
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "If the Commission mandates a transmission cost netting paradigm, which is implied by the hybrid example, consideration should also be given to the converse scenario, where a facility with 600 MW of load and 500 MW of generation has 100 MW of withdrawal rights. In this case, billing for transmission based upon coincident peak usage can be particularly problematic if the hybrid resource requires transmission to be built and maintained, yet the hybrid facility avoids the coincident peak upon which billing is currently calculated.",
+      "concern": "SPP warns coincident-peak billing for hybrid facilities can shift costs unfairly to other ratepayers",
+      "bins": [
+        "pr:cost",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "If the Commission determines in a final rule that large load customers should only be charged for transmission service based on their withdrawal rights, SPP urges the Commission to consider all costs incurred by granting this type of transmission service to ensure that costs are allocated appropriately so that transmission owners are held harmless by the usage.",
+      "concern": "SPP wants any usage-based transmission charge to fully reimburse transmission owners",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "SPP requests that any final rule adopted based on this Proposed ANOPR provide the RSC with the opportunity to provide significant input into how network upgrade costs will be allocated within SPP as it relates to the interconnection of large loads.",
+      "concern": "SPP asks FERC to preserve the SPP Regional State Committee's role in cost allocation decisions",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:state-authority"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "SPP requests that any crediting mechanism allowed under any proposed rule in this docket be consistent with Attachment Z2 and Attachment J of the SPP Tariff.",
+      "concern": "SPP wants federal crediting rules to align with its existing ILTCR tariff provisions",
+      "bins": [
+        "aq:upgradecost",
+        "topic:tariff-compatibility"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Based on SPP's experience, 60 days is not sufficient time to study the reliability impacts of large loads. SPP's new HILL policy in the High Impact Large Load Filing provides for a 90 day study time to allow for the necessary stability studies, such as transient stability analysis, short-circuit ratio analysis, and a critical clearing time screening to determine if further electromagnetic transient stability (EMS) analysis is needed.",
+      "concern": "SPP opposes a 60-day study deadline and supports its own 90-day standard for complex stability analysis",
+      "bins": [
+        "aq:expedited",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Any load connected to the SPP Transmission System, including load that agrees to be curtailed, will require energy to be produced and will take some capacity from the Transmission System; otherwise, they would not need to connect to the grid. Even when agreeing to curtail, a curtailable, or non-firm load, will impact existing and future firm load and should not be prioritized over a load that is willing to bring, or already has Designated Resources.",
+      "concern": "SPP argues curtailable load should not receive queue priority over load backed by Designated Resources",
+      "bins": [
+        "pr:flex",
+        "topic:resource-adequacy"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "SPP suggests allowing each region to determine the best approach to minimize the time of study.",
+      "concern": "SPP asks FERC to let each region choose between serial and cluster study approaches",
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "the Commission should be mindful of state laws that restrict who can build and own transmission. Network Upgrades assigned through SPP's transmission service process can only be assigned to entities that request transmission service.",
+      "concern": "SPP warns that an option-to-build right for load customers may conflict with state transmission ownership laws",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-authority"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:threshold",
+      "name": "Voltage-Based Threshold Flexibility",
+      "stance": "oppose",
+      "description": "SPP opposes a single federal MW threshold and argues that what counts as \"large\" depends on the voltage level of interconnection and local system conditions. SPP's own tariff uses 10 MW at or below 69 kV and 50 MW above 69 kV. SPP wants final rules to let each transmission provider set its own thresholds.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Full-Load Study for Hybrid Facilities",
+      "stance": "oppose",
+      "description": "SPP argues that hybrid facilities must be studied on their full gross withdrawal and injection capacity, not net rights. A generator trip can expose the full load to the grid instantly, and studying only net rights would leave SPP unable to plan for that contingency. Coincident-peak billing on net rights also risks shifting costs to other consumers.",
+      "quote_ids": [
+        4,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Financial Commitment to Deter Speculation",
+      "stance": "support",
+      "description": "SPP supports requiring meaningful study deposits and application fees so that only serious interconnection applicants enter the queue. SPP already applies this approach to its HILL and HILLGA processes.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Grid Protection from Full-Load Contingencies",
+      "stance": "support",
+      "description": "SPP warns that protection systems cannot fully guard against the fast dynamic effects of a large generator trip at a hybrid facility, including rapid frequency excursions and relay misoperations. Full-load study is required to ensure protection coordination.",
+      "quote_ids": [
+        4,
+        7
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "90-Day Minimum Study Timeline",
+      "stance": "oppose",
+      "description": "SPP rejects a 60-day expedited study deadline as insufficient for the transient stability, short-circuit ratio, and critical clearing time analyses that large loads require. SPP's HILL process uses 90 days and SPP views that as the practical floor.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Cost Allocation Aligned with SPP Tariff",
+      "stance": "mixed",
+      "description": "SPP supports requiring large load customers to bear 100% of assigned upgrade costs but asks that any federal crediting mechanism align with its existing ILTCR framework under Attachment Z2 and Attachment J. SPP also asks that cost allocation decisions respect the SPP Regional State Committee's established governance role.",
+      "quote_ids": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "State Law Limits on Option to Build",
+      "stance": "mixed",
+      "description": "SPP cautions that an option-to-build right for large load customers may conflict with state laws restricting who may own transmission. SPP's tariff allows only eligible transmission customers to be assigned network upgrades.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Thorough Study Before Interconnection",
+      "stance": "support",
+      "description": "SPP supports rigorous interconnection study requirements including transient stability analysis, short-circuit ratio analysis, and critical clearing time screening. SPP argues study scope must cover full gross withdrawal and injection, not net figures, and that cluster studies may be needed at high queue volumes.",
+      "quote_ids": [
+        6,
+        12,
+        14
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "No Cost Shift to Existing Ratepayers",
+      "stance": "support",
+      "description": "SPP wants transmission owners held harmless under any new large load cost regime. Usage-based or withdrawal-right-only billing must account for the full cost of transmission built and maintained for large load, and hybrid facility billing must not let customers avoid the coincident peak that drives transmission investment.",
+      "quote_ids": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Regional Flexibility Over Uniform Rules",
+      "stance": "support",
+      "description": "SPP's central ask is that FERC allow each RTO/ISO and its stakeholders to design their own large load interconnection rules rather than impose a single national standard. This applies to thresholds, study timelines, study methods, and curtailment priority.",
+      "quote_ids": [
+        1,
+        2,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP Regional Context",
+      "stance": "neutral",
+      "description": "SPP describes its existing and in-development processes for large load interconnection: the approved HILL and HILLGA processes, the developing CHILLS conditional non-firm service, and the PALS price-adaptive load service. SPP points to 69 kV line prevalence in its eastern footprint and multi-state jurisdictional complexity as reasons regional flexibility matters.",
+      "quote_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "key": "topic:state-authority",
+      "name": "State Roles in Governance and Ownership",
+      "stance": "support",
+      "description": "SPP raises two state-authority concerns: the SPP Regional State Committee's bylaw-assigned role in cost allocation must be preserved in any final rule, and state laws restricting who may build or own transmission may limit the option-to-build right for load customers.",
+      "quote_ids": [
+        10,
+        15
+      ]
+    },
+    {
+      "key": "topic:tariff-compatibility",
+      "name": "Alignment with Existing Tariff Provisions",
+      "stance": "support",
+      "description": "SPP requests that any federal crediting mechanism for upgrade costs be consistent with its existing Attachment Z2 and Attachment J provisions, which provide Incremental Long Term Congestion Rights over a 10-to-20-year term.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:resource-adequacy",
+      "name": "Generation Adequacy Before Load Interconnection",
+      "stance": "support",
+      "description": "SPP argues that any new load, including curtailable load, requires corresponding generation capacity and energy. SPP warns against prioritizing non-firm load over load backed by Designated Resources, and references NERC's energy assurance standards work.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "threshold",
+      "hybridrights",
+      "deposits",
+      "protection",
+      "expedited",
+      "upgradecost",
+      "jurisdiction"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex"
+    ],
+    "rg": [
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

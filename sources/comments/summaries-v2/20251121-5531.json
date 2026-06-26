@@ -1,0 +1,339 @@
+{
+  "accession": "20251121-5531",
+  "filer": "International Energy Credit Association",
+  "org_type": "trade_assoc",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5531__International-Energy-Credit-Association/IECA Comments to FERC ANOPR - Interconnection of Large Loads (RM26-4-000) (FINAL).txt",
+  "overall_summary": "IECA, representing energy credit and risk management professionals, supports expedited Data Center interconnection to keep AI development onshore and competitive. The association backs joint load-and-generation studies, applicant-pays cost allocation, and controllable dispatch policies, but opposes a mandatory one-size-fits-all federal framework where state processes already work well. It also raises unresolved questions about what happens to grid reliability when a co-located generator or Data Center experiences an outage.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "we believe the public interest is best served by creating a regulatory framework in which large loads, focusing primarily on large Data Centers, can be developed expeditiously in the U.S. to ensure that: (A) Data Center development does not move offshore to other countries with a more Data Center-friendly regulatory environment; and (B) the U.S. continues to be a leader in the global race to both develop and implement AI and other advanced computing capabilities.",
+      "concern": "Expedited interconnection framework needed to prevent offshoring of Data Center development and preserve U.S. AI leadership",
+      "bins": [
+        "aq:expedited",
+        "topic:ai-competitiveness"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Rather than spending valuable time fighting between the Commission and State regulators over jurisdictional boundaries, we urge all sides to work together to recognize and remedy those circumstances in which the process of interconnecting large loads to the interstate transmission system under State laws is taking an inordinate amount of time and seek ways to expedite the process for interconnecting large loads to the grid.",
+      "concern": "Commission and states should collaborate rather than fight over jurisdiction to speed up large load interconnection",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:federal-state-collaboration"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "we also urge the Commission to recognize regional differences and not impose a new mandatory interconnection process on those regions experiencing rapid load growth from large loads, which are not experiencing interconnection challenges or delays.",
+      "concern": "Commission should not mandate a uniform process in regions where interconnection is already working well",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:regional-flexibility"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "In the grid administered by the PJM Interconnection LLC (\"PJM\"), for example, interconnections of large loads are experiencing significant delays.",
+      "concern": "PJM is experiencing significant large load interconnection delays",
+      "bins": [
+        "rg:pjm",
+        "topic:interconnection-delays"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "We submit that a collaborative approach between States and the Commission can produce a process that can simultaneously study both a Data Center and a contractually-associated electric generation resource by joining both (i) the Federal approval of interconnection of the generation resource (through the Commission-regulated LGIP and LGIA process) and (ii) the State approval (through a State-regulated utility) of the interconnection of a new large load.",
+      "concern": "Joint federal-state study process for co-located Data Centers and generators could resolve jurisdictional overlap",
+      "bins": [
+        "aq:jointstudy",
+        "aq:jurisdiction",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Conversely, we also recognize that in the Southeast and some areas in the West a significant amount of Data Center load growth is occurring without the same large load interconnection delays facing other areas. In those States, there is no compelling reason to alter the already successful large load interconnection processes for Data Centers in those States.",
+      "concern": "Southeast and parts of the West are succeeding without delays; mandatory reform would be counterproductive there",
+      "bins": [
+        "topic:regional-flexibility"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "we support requiring load and hybrid facilities, including any associated electric generating facilities not sharing an interconnection point with its associated Data Center, to bear all the costs of network upgrades required for their interconnection(s) and we support offsetting such costs through a crediting mechanism as is applicable under the Commissions interconnection rules applicable to generators.",
+      "concern": "Applicants should pay 100% of network upgrade costs, offset by a crediting mechanism matching generator rules",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "We fully support the proposal in the ANOPR of simultaneously studying the impacts on the network of one or more large loads (i.e., Data Centers) and one or more associated electric generating facilities as offsetting loads and resources and therefore worthy of expedited consideration and approval as a reasonable approach to addressing the interconnection of Data Centers that co-locate with existing or new electric generation facilities.",
+      "concern": "Joint study of co-located load and generation as offsetting resources should be expedited",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "some provision should be made for what will happen when the resource (i.e., generator) or the load (i.e., the Data Center) experiences a full or partial outage, whether scheduled or unscheduled.",
+      "concern": "Rules must address grid reliability when either the co-located generator or Data Center goes offline",
+      "bins": [
+        "aq:protection",
+        "topic:outage-contingency"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "we support requirements to install system protection facilities to prevent unauthorized injections or withdrawals, but we also recognize and support the ability of Data Centers relying on the grid as a backstop source of electric energy when a co-located generator experiences a full or partial outage.",
+      "concern": "System protection required, but rules must preserve the grid as a backup for Data Centers during generator outages",
+      "bins": [
+        "aq:protection",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "We support the use of \"Controllable Dispatch\" and other technological means of managing outages or derates of either a Data Center or its associated generation facility. Commission consideration in this or another proceeding of policy guidelines for applications of \"Controllable Dispatch\" to Data Centers and co-located generation facilities could be beneficial.",
+      "concern": "Commission should develop policy guidelines for controllable dispatch applied to co-located Data Center and generation combinations",
+      "bins": [
+        "pr:flex",
+        "topic:controllable-dispatch"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "for purposes of expediting interconnection to the transmissions system (i.e., enhancing \"speed to market\"), we submit that expedited review and approval should be available to all loads (i.e., all Data Centers), not just large Data Centers in excess of any particular size.",
+      "concern": "Expedited review should not be limited to loads above a specific MW threshold",
+      "bins": [
+        "aq:threshold",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Reliability and resource adequacy issues are affected much more by loads of 100 MW or larger, so setting an artificially low threshold could be problematic for purposes of addressing grid reliability.",
+      "concern": "A 20 MW threshold is too low for meaningful reliability analysis; 100 MW or larger is the appropriate focus",
+      "bins": [
+        "aq:threshold",
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "we suggest that any load interconnection program that the Commission may introduce should not be mandatory across the entirety of the U.S., i.e., a one-size-fits-all approach is not the best way forward.",
+      "concern": "A nationwide mandatory program is inappropriate given regional variation in interconnection performance",
+      "bins": [
+        "topic:regional-flexibility",
+        "aq:jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "State-Federal Jurisdictional Balance",
+      "stance": "mixed",
+      "description": "IECA urges collaboration between FERC and state regulators rather than jurisdictional conflict, but strongly opposes any mandatory federal process that overrides states where interconnection is already working. The filing sees joint cross-jurisdictional study as the solution in problem regions, with existing state processes preserved elsewhere.",
+      "quote_ids": [
+        2,
+        3,
+        5,
+        14
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "MW Threshold Too Low",
+      "stance": "oppose",
+      "description": "IECA argues the proposed 20 MW threshold is too low: for speed-to-market, expedited review should apply to all loads regardless of size; for reliability purposes, the 20 MW floor is inconsequential and a 100 MW floor is more meaningful.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Load and Generation Study",
+      "stance": "support",
+      "description": "IECA fully supports simultaneous interconnection studies covering both a Data Center and its associated generation resource as offsetting loads, viewing this as the core mechanism for expedited approvals and efficient grid buildout.",
+      "quote_ids": [
+        5,
+        8
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Grid Backstop Rights for Hybrids",
+      "stance": "support",
+      "description": "IECA supports system protection requirements but insists that hybrid interconnection rules must preserve the Data Center's ability to draw from the grid when its co-located generator goes offline, to avoid forcing Data Centers into fully islanded micro-grid operation.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Outage Contingency and Grid Protection",
+      "stance": "support",
+      "description": "IECA supports system protection facilities and highlights open questions about what happens to grid reliability during full or partial outages of either the Data Center or generator. It defers to NERC on bulk electric system reliability standards and threshold sizing.",
+      "quote_ids": [
+        9,
+        10,
+        13
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Interconnection for Speed to Market",
+      "stance": "support",
+      "description": "IECA frames the entire rulemaking around speed to market and keeping Data Center investment onshore, endorsing expedited review for curtailable and dispatchable facilities and arguing that expedited access should not be restricted by size.",
+      "quote_ids": [
+        1,
+        12
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Applicant-Pays Network Upgrades",
+      "stance": "support",
+      "description": "IECA supports the applicant-pays principle, requiring Data Centers and associated generators to bear 100% of network upgrade costs, with a crediting mechanism mirroring existing generator interconnection rules.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Joint Network Impact Study",
+      "stance": "support",
+      "description": "IECA backs simultaneous network impact studies for co-located load and generation to reduce upgrade costs and enable expedited approval.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Responsibility for Load Interconnection",
+      "stance": "support",
+      "description": "IECA endorses full cost responsibility for interconnecting parties, consistent with the generator cost allocation model, with grid benefits from new generation recognized as offsets.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Study and Incentives",
+      "stance": "support",
+      "description": "IECA supports co-location of Data Centers with generation as the preferred pathway, favoring joint federal-state study processes modeled on the DCC BYOG Pathway for regions experiencing delays.",
+      "quote_ids": [
+        5,
+        8
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Controllable Dispatch Policy Guidelines",
+      "stance": "support",
+      "description": "IECA supports developing Commission policy guidelines for controllable dispatch applied to Data Centers and co-located generators, enabling real-time coordination with grid operators during outage events.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Interconnection Delays",
+      "stance": "neutral",
+      "description": "IECA identifies PJM as the primary region experiencing significant large load interconnection delays, citing the DCC BYOG Pathway as an example of a targeted cross-jurisdictional remedy being developed there.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:ai-competitiveness",
+      "name": "U.S. AI Leadership Rationale",
+      "stance": "support",
+      "description": "IECA frames expedited interconnection as essential to preventing Data Center development from moving offshore and maintaining U.S. leadership in AI and advanced computing, consistent with the Trump administration AI Action Plan.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:federal-state-collaboration",
+      "name": "Collaborative Federal-State Approach",
+      "stance": "support",
+      "description": "IECA urges all parties to stop fighting over jurisdictional boundaries and instead work together on cross-jurisdictional study processes, citing the DCC BYOG Pathway in PJM as a model.",
+      "quote_ids": [
+        2,
+        5
+      ]
+    },
+    {
+      "key": "topic:regional-flexibility",
+      "name": "No Mandatory One-Size-Fits-All Rule",
+      "stance": "oppose",
+      "description": "IECA opposes imposing a mandatory federal interconnection process nationwide, arguing the Southeast and parts of the West are succeeding without delays and that a blanket rule would produce unintended consequences and slow successful markets.",
+      "quote_ids": [
+        3,
+        6,
+        14
+      ]
+    },
+    {
+      "key": "topic:outage-contingency",
+      "name": "Co-location Outage Rules Unresolved",
+      "stance": "neutral",
+      "description": "IECA raises a series of open questions about what rules should govern grid impacts when either a co-located generator or a Data Center experiences a scheduled or unscheduled outage, calling for these to be addressed in the rulemaking.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:controllable-dispatch",
+      "name": "Controllable Dispatch as Grid Tool",
+      "stance": "support",
+      "description": "IECA supports policies enabling controllable dispatch of Data Center loads to manage transient load swings and outage events, viewing it as a shift away from 100% redundancy toward smarter grid integration.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:interconnection-delays",
+      "name": "Targeted Relief for Delayed Regions",
+      "stance": "support",
+      "description": "IECA supports targeted intervention in regions like PJM where delays are documented, while opposing mandatory reform in regions that are functioning well.",
+      "quote_ids": [
+        4
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "hybridrights",
+      "protection",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

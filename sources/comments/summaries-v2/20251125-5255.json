@@ -1,0 +1,288 @@
+{
+  "accession": "20251125-5255",
+  "filer": "Monitoring Analytics, LLC",
+  "org_type": "market_monitor",
+  "filed": "11/25/2025",
+  "source_text": "sources/comments/files/20251125-5255__Monitoring-Analytics-LLC/2025-11-25 IMM Letter Response-AS FILED.txt",
+  "overall_summary": "The PJM Independent Market Monitor argues that PJM already has authority under existing rules to deny interconnection to large data center loads that cannot be served reliably, and asks FERC to confirm that authority and direct PJM to codify it in its tariff. The Monitor's preferred solution is a bring-your-own-new-generation requirement, which it contends is the only market-based approach that avoids imposing reliability costs and price increases on other customers. It filed a companion formal complaint against PJM alongside this comment.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "PJM is currently proposing to allow the interconnection of large new data center loads that it cannot serve reliably and that will require load curtailments (black outs) of the data centers or of other customers at times.",
+      "concern": "PJM proposes to interconnect loads it cannot serve reliably, risking blackouts for data centers or other customers",
+      "bins": [
+        "pr:study",
+        "rg:pjm",
+        "topic:reliability-gate"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The Market Monitor requests that the Commission rule that PJM has the authority to add large new data center loads only when they can be served reliably as defined both by transmission and capacity adequacy.",
+      "concern": "Requests FERC confirm PJM authority to condition interconnection on transmission and capacity adequacy",
+      "bins": [
+        "pr:study",
+        "rg:pjm",
+        "topic:reliability-gate"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Data center load growth is the primary reason for recent and expected capacity market conditions, including total forecast load growth, the tight supply and demand balance, and high prices.",
+      "concern": "Data center growth is the main driver of tight capacity and high prices in PJM",
+      "bins": [
+        "rg:pjm",
+        "topic:cost-impact"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "inclusion of existing and forecast data center load in the peak load forecast for 2026 resulted in a $7,271,197,971 or an 82.1 percent increase in capacity market revenues for the 2026/2027 RPM Base Residual Auction.",
+      "concern": "Data center load drove an 82 percent increase in capacity market revenues for the 2026/2027 auction",
+      "bins": [
+        "rg:pjm",
+        "topic:cost-impact"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The Market Monitor believes that under current rules, PJM does have the authority to require that the loads can be served reliably before allowing the loads to be added to the system.",
+      "concern": "IMM contends PJM already has authority to deny interconnection to loads it cannot serve reliably",
+      "bins": [
+        "pr:study",
+        "rg:pjm",
+        "topic:reliability-gate"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "PJM has the authority to create a load queue.",
+      "concern": "IMM asserts PJM can establish a queue that holds large loads until adequate resources exist",
+      "bins": [
+        "pr:study",
+        "rg:pjm",
+        "topic:reliability-gate"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "None of the proposals have addressed the fact that PJM does not have the authority or the capability to order or enforce curtailments.",
+      "concern": "PJM lacks authority to enforce the curtailment provisions that competing proposals rely on",
+      "bins": [
+        "rg:pjm",
+        "topic:reliability-gate"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "more explicit rules are plainly needed in order to remove confusion and to provide PJM the tools to protect resource adequacy and to ensure just and reasonable capacity prices and to ensure that there is a clear path to provide for the reliable interconnection of large new data center loads.",
+      "concern": "Explicit tariff rules are needed to remove ambiguity about PJM authority and protect resource adequacy",
+      "bins": [
+        "pr:study",
+        "rg:pjm",
+        "topic:tariff-clarity"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The market solution is to require new large data center loads to bring their own new generation with locational and temporal characteristics matched to their load profile.",
+      "concern": "Data centers should be required to procure new generation matched to their load profile",
+      "bins": [
+        "pr:colo",
+        "rg:pjm",
+        "topic:byog-requirement"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "If large new data center loads want an expedited interconnection process, loads should be required to bring their own new generation.",
+      "concern": "Expedited interconnection should be conditioned on bringing own new generation",
+      "bins": [
+        "pr:colo",
+        "pr:flex",
+        "rg:pjm",
+        "topic:byog-requirement"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "It is not unduly discriminatory to identify the class of large data centers and impose requirements on that class that match the impact of that class on all other customers.",
+      "concern": "A BYOG requirement is not unduly discriminatory because it is proportional to the costs data centers impose on others",
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:byog-requirement"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "In their current and proposed forms, demand side solutions offer no viable substitution for generation capacity resources.",
+      "concern": "Demand response and PRD options are inadequate substitutes for actual generation capacity",
+      "bins": [
+        "pr:flex",
+        "rg:pjm",
+        "topic:dr-inadequacy"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "It is not an overstatement to assert that the ongoing addition of large data center loads will put PJM competitive markets at risk unless there is a solution that requires large data center loads to pay for the costs that they would otherwise impose on other customers.",
+      "concern": "Without cost internalization, large load additions threaten PJM's competitive market structure",
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:cost-impact"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "All of the currently identified options require PJM to plan the transmission system to meet large data center loads consistent with the RTEP and require all customers to pay an allocated share of the transmission upgrades required to serve large data center load additions.",
+      "concern": "All current options socialize transmission upgrade costs across all customers",
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:cost-impact"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Reliability-First Study Requirement",
+      "stance": "support",
+      "description": "The Monitor argues that interconnection studies must confirm both transmission and capacity adequacy before any large load is allowed to connect. PJM already has this authority under existing rules, and FERC should confirm it and direct PJM to create a load queue that holds requests until they can be served reliably.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        6,
+        8
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Bring-Your-Own-Generation Mandate",
+      "stance": "support",
+      "description": "The Monitor's preferred solution is a requirement that new large data center loads procure new generation with locational and temporal characteristics matched to their load profile. This approach would avoid imposing reliability and cost burdens on other customers, and an expedited queue option could be offered to loads that comply.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Demand Response Inadequacy",
+      "stance": "oppose",
+      "description": "The Monitor rejects demand-side options including demand response and PRD as viable substitutes for generation capacity, citing weak performance incentives, a high PRD strike price cap, and the absence of non-performance penalties outside PAI events.",
+      "quote_ids": [
+        10,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Internalization for Data Centers",
+      "stance": "support",
+      "description": "The Monitor contends data centers must pay for the full costs they impose, including generation, transmission upgrades, and reserve margin. Socializing those costs onto other customers is unjust, and requiring data centers to bring their own new generation is the mechanism to prevent it.",
+      "quote_ids": [
+        11,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM-Specific Market Impact",
+      "stance": "neutral",
+      "description": "The filing focuses exclusively on PJM, documenting that data center growth has already driven an 82 percent increase in capacity auction revenues and is the primary cause of tight supply conditions. The Monitor filed a companion formal complaint against PJM alongside this ANOPR comment.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "topic:reliability-gate",
+      "name": "Interconnection Reliability Gate",
+      "stance": "support",
+      "description": "The Monitor's central argument is that PJM should not permit interconnection of loads it cannot serve reliably. Competing proposals that assume PJM must accept such loads rely on curtailment mechanisms that PJM has no authority to enforce.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "topic:cost-impact",
+      "name": "Data Center Cost Impact on Other Customers",
+      "stance": "neutral",
+      "description": "The Monitor quantifies the cost impact of data center load growth, including an 82 percent increase in 2026/2027 capacity auction revenues and cumulative additional revenues of over $16 billion across two auctions. Transmission upgrade costs are also being socialized across all customers.",
+      "quote_ids": [
+        3,
+        4,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "topic:byog-requirement",
+      "name": "Bring-Your-Own-Generation Solution",
+      "stance": "support",
+      "description": "The Monitor recommends requiring data centers to contract with developers to build new generation matched to their load profile, offered into the PJM capacity market and subject to market seller offer caps. This eliminates forecast uncertainty impacts, avoids RMR obligations for other customers, and signals long-term market commitment.",
+      "quote_ids": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "topic:tariff-clarity",
+      "name": "Tariff Clarity and Explicit Rules",
+      "stance": "support",
+      "description": "The Monitor argues that whether or not its interpretation of existing PJM authority is correct, explicit tariff language is needed to remove ambiguity and give PJM the tools to protect resource adequacy and ensure just and reasonable capacity prices.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:dr-inadequacy",
+      "name": "Demand Response Not a Substitute",
+      "stance": "oppose",
+      "description": "The Monitor finds that demand-side options including DR and PRD are not viable substitutes for generation capacity in their current form, citing high strike price caps, weak performance requirements, and the absence of meaningful penalties for non-performance outside PAI events.",
+      "quote_ids": [
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "study",
+      "colo",
+      "flex",
+      "cost"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

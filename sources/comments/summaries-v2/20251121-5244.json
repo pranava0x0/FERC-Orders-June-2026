@@ -1,0 +1,420 @@
+{
+  "accession": "20251121-5244",
+  "filer": "American Transmission Company LLC",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5244__American-Transmission-Company-LLC/American Transmission Company Comments RM26-4.txt",
+  "overall_summary": "ATC, a MISO-footprint transmission-only company, supports limited FERC jurisdiction over large load interconnections but urges narrowly tailored, behavior-based thresholds rather than the proposed 20 MW size cutoff. ATC asks the Commission to preserve existing regional and local processes, adopt process-matching requirements for hybrid co-located facilities, socialize most network upgrade costs, and set a realistic 120-day study timeline instead of 60 days. Throughout, ATC argues that sweeping reform risks disrupting proven local practices and slowing the very load interconnections the rules aim to accelerate.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "AI load is different.  This is not just an expansion of the baseline data center loads that exist today.",
+      "concern": "AI data center load is categorically different from prior large loads and demands distinct treatment",
+      "bins": [
+        "topic:ai-load-characteristics"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "we are familiar with proposals where the load seeks to ramp up and ramp down by hundreds of megawatts on a second-to-second basis.  This is equivalent to turning Wisconsin's capital city of Madison on and off, repeatedly.  These rapid, significant swings are unlike anything our industry has seen before and incomparable to any other load on today's grid.",
+      "concern": "Extreme second-to-second variability of AI data centers is unprecedented and poses severe grid stability risks",
+      "bins": [
+        "topic:ai-load-characteristics",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the Commission should focus its efforts on targeted issues, rather than implement sweeping reform.",
+      "concern": "ATC urges narrow, targeted rulemaking rather than broad interconnection reform",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:targeted-reform"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "a 20 MW threshold would be too low and too vague for implementing load interconnection procedures.  A 20 MW threshold would include many existing and future non-data center loads.  This over-inclusivity would lead to unwieldy procedures and unintended consequences, including overwhelming study resources and likely delaying interconnecting the very loads that the Commission is seeking to expedite.",
+      "concern": "The 20 MW threshold is too low and would create burdensome, counterproductive procedures",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "ATC recommends that the Commission consider adopting an applicability threshold based upon load behavior.",
+      "concern": "Threshold should be based on operating behavior (ramp rate, oscillation, ride-through) rather than size alone",
+      "bins": [
+        "aq:threshold",
+        "topic:behavior-based-threshold"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the Commission should consider adopting threshold applicability requirements based upon specific operating requirements for all loads in terms of ramp rates (i.e., how quickly they can increase or decrease electricity usage), active power oscillatory behavior (i.e., how much and how fast active power can swing once they are online), and ride-through capability (i.e., how well the load can remain connected and stable during grid disturbances such as voltage dips, frequency excursions, or short interruptions).",
+      "concern": "ATC proposes ramp rate, oscillatory behavior, and ride-through as the specific criteria for applicability",
+      "bins": [
+        "aq:threshold",
+        "topic:behavior-based-threshold",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "ATC recommends that the Commission require 'process-matching' when considering how to study hybrid facilities.",
+      "concern": "Hybrid co-located facilities should demonstrate that load and generation are operationally coupled so the grid is not the default backstop",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "topic:process-matching"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "If hybrid facilities are not process-matched and the load exceeds studied levels, the transmission system becomes the 'backstop,' and other customers subsidize that excess use through shared costs and reliability impacts.",
+      "concern": "Without process-matching, co-located load imposes uncompensated costs and reliability risks on other customers",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:cost",
+        "topic:process-matching"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "ATC generally supports subjecting loads that meet the threshold applicability requirements to standardized study deposits, readiness requirements, and withdrawal penalties, analogous to the LGIP.  Eliminating speculative requests for significant load growth from consideration by implementing these stringent requirements would help focus time, costs, and resources to expeditiously interconnect serious customers.",
+      "concern": "ATC supports deposits and withdrawal penalties to screen out speculative load requests",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "ATC respectfully requests that the Commission refrain from disturbing existing processes already in place to address the risk of speculative load and consider the risk of duplicating existing processes that could result in unintended consequences.",
+      "concern": "Commission should not duplicate ATC's existing speculative-load safeguards such as the Project Commitment Agreement",
+      "bins": [
+        "aq:deposits",
+        "topic:targeted-reform"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "strict operational limitations must be enforced, as unauthorized injections or withdrawals, particularly with oscillating data center loads, cannot be tolerated.",
+      "concern": "System protection facilities must enforce injection and withdrawal limits for oscillating loads",
+      "bins": [
+        "aq:protection",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "ATC strongly supports principles that uphold cost responsibility and maintain reliability, including proposed penalties for unauthorized injections or withdrawals.  However, any implementation plan must avoid unintended cost shifts and ensure transparency for transmission customers.",
+      "concern": "ATC supports penalties for unauthorized injections/withdrawals but wants safeguards against cost shifts to other customers",
+      "bins": [
+        "aq:protection",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "in ATC's experience, these large load customers require 24/7, uninterrupted, guaranteed, reliable service.  From ATC's perspective, these customers will have network service, and pursuant to MISO's Tariff, all network load is generally treated as firm service.  Introducing curtailment of network load complicates system management and could create scenarios where other customers' firm load is shed before the 'curtailable' large load.",
+      "concern": "Under MISO's firm-service tariff, the curtailability concept conflicts with how network load is actually managed and could harm other firm customers",
+      "bins": [
+        "aq:expedited",
+        "pr:flex",
+        "rg:miso"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "ATC recently completed an 18-month study costing approximately $400,000 in contracted engineering services, primarily due to the novelty and complexity of the work.",
+      "concern": "Real-world study experience shows non-conforming load studies take far longer and cost far more than proposed timelines assume",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "topic:study-timeline"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "ATC recommends setting a more realistic expectation of 120 days for study completion.",
+      "concern": "ATC proposes 120-day study deadline rather than the 60-day proposal",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "topic:study-timeline"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "ATC maintains that such costs should be socialized because these network upgrades ultimately benefit all customers.",
+      "concern": "Most network upgrade costs should be socialized rather than directly assigned to triggering loads",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "ATC recommends that the Commission narrowly tailor direct assignment of interconnection facility costs to those that can be directly attributed to and likely exclusively used by the new load.",
+      "concern": "Direct cost assignment should cover only facilities clearly attributable to and exclusively used by the new load",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "the Commission should consider requiring new loads to bear 100% of the costs for facilities necessitated by their characteristics that do not conform with planning and interconnection criteria addressing behavior such as oscillation, ramp, and low-voltage ride-through.",
+      "concern": "Non-conforming-behavior costs such as E-STATCOMs should be directly assigned to the load that causes them",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:behavior-based-threshold"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "ATC encourages the Commission to incorporate transmission owner initial-funding in any future requirements related to load interconnection procedures.  Without the option to self-fund load interconnection projects, a customer's option to build would present several concerns to ATC.",
+      "concern": "Transmission owner initial-funding should be preserved so ATC retains control over assets it must operate and maintain",
+      "bins": [
+        "aq:upgradecost",
+        "topic:to-funding"
+      ]
+    },
+    {
+      "id": 20,
+      "text": "ATC strongly supports the implementation of robust operational standards for large load interconnections, particularly those exhibiting significant oscillatory behavior, because such behavior can cause voltage and frequency instability if not properly managed.",
+      "concern": "ATC backs NERC reliability standards for large loads with oscillatory characteristics",
+      "bins": [
+        "aq:protection",
+        "topic:nerc-standards"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "topic:ai-load-characteristics",
+      "name": "AI Load Unique Characteristics",
+      "stance": "neutral",
+      "description": "ATC describes AI data center loads as fundamentally different from prior large loads due to extreme second-to-second variability reaching hundreds of megawatts. This variability is unprecedented and requires new analysis tools and specialty power electronics such as STATCOMs.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "topic:targeted-reform",
+      "name": "Targeted Reform Over Broad Rules",
+      "stance": "support",
+      "description": "ATC consistently urges the Commission to pursue narrow, targeted changes rather than sweeping reform. ATC argues that overreaching rules risk disrupting proven local processes and could slow the interconnections the Commission seeks to accelerate.",
+      "quote_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Behavior-Based Applicability Threshold",
+      "stance": "mixed",
+      "description": "ATC opposes the 20 MW size threshold as too broad, arguing it would capture ordinary non-data-center loads and overwhelm study resources. Instead, ATC recommends thresholds tied to operating behavior: ramp rate, active power oscillation, and low-voltage ride-through capability.",
+      "quote_ids": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:behavior-based-threshold",
+      "name": "Ramp, Oscillation, Ride-Through Criteria",
+      "stance": "support",
+      "description": "ATC proposes that applicability turn on whether a load meets specific performance criteria covering ramp rate, oscillatory behavior, and ride-through capability. This approach targets genuinely problematic loads without imposing burdens on conventional customers.",
+      "quote_ids": [
+        5,
+        6,
+        18
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid Facility Rights and Process-Matching",
+      "stance": "mixed",
+      "description": "ATC supports studying hybrid facilities based on requested injection and withdrawal rights in principle, but insists on process-matching requirements: the load and co-located generation must be operationally coupled so that generation failure also curtails the load. Without this, the transmission system becomes an uncompensated backstop.",
+      "quote_ids": [
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Study and Process-Matching",
+      "stance": "mixed",
+      "description": "ATC agrees that co-locating load and generation can reduce upgrade needs, but argues current MISO processes already coordinate joint siting. ATC's key condition is process-matching: if the co-located generation can fail independently, the full load must be studied and the load must bear the cost of full network service.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "topic:process-matching",
+      "name": "Process-Matching for Co-located Facilities",
+      "stance": "support",
+      "description": "ATC recommends a process-matching requirement drawn from its paper mill experience: the co-located generation and load must be operationally linked so that generation failure triggers an automatic load reduction. Without this link, other customers subsidize the excess demand through shared grid costs.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Study Deposits and Withdrawal Penalties",
+      "stance": "support",
+      "description": "ATC supports LGIP-style deposits, readiness requirements, and withdrawal penalties for loads meeting the threshold, arguing these tools focus study resources on committed customers. ATC asks the Commission not to duplicate existing local safeguards such as ATC's Project Commitment Agreement.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "System Protection and Operational Limits",
+      "stance": "support",
+      "description": "ATC supports strict system protection facilities that can disconnect non-conforming loads and enforce injection and withdrawal limits. ATC backs NERC standards for large loads with oscillatory behavior and supports penalties for unauthorized injections or withdrawals, paired with transparency requirements.",
+      "quote_ids": [
+        11,
+        12,
+        20
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Curtailability Under MISO Firm Service",
+      "stance": "oppose",
+      "description": "ATC opposes the curtailability concept for expedited study because MISO treats all network load as firm service, meaning operators cannot selectively shed one customer's load ahead of another's. Introducing curtailable large load could force other firm customers to be shed first, creating compliance and fairness problems.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO Regional Context",
+      "stance": "neutral",
+      "description": "ATC operates exclusively in the MISO footprint and notes that MISO's tariff already treats all network load as firm. ATC argues that MISO's existing stakeholder-driven planning process already coordinates joint siting of load and generation, limiting the need for new federal mandates in this region.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Study Timeline: 120 Days, Not 60",
+      "stance": "oppose",
+      "description": "ATC opposes the 60-day study deadline, citing an actual 18-month study costing roughly $400,000 for a complex AI load. ATC recommends 120 days as a realistic minimum and asks the Commission to preserve transmission owner flexibility in scheduling studies.",
+      "quote_ids": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study Complexity and Local Flexibility",
+      "stance": "mixed",
+      "description": "ATC supports joint study of load and generation in principle but warns that combining new generation and new loads in shared models adds complexity and can make cost allocation extremely difficult. ATC urges the Commission to preserve transmission owner discretion to manage study schedules and model updates.",
+      "quote_ids": [
+        2,
+        6,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Network Upgrade Cost Allocation",
+      "stance": "mixed",
+      "description": "ATC opposes blanket direct assignment of all network upgrade costs, arguing most upgrades benefit all customers and should be socialized. ATC supports direct assignment only for facilities exclusively attributable to the new load (analogous to generator TOIFs) and for specialty equipment required because the load fails to meet performance criteria.",
+      "quote_ids": [
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Causation and Socialization Balance",
+      "stance": "mixed",
+      "description": "ATC supports cost-causation principles and penalties for unauthorized usage but argues that network upgrades serving the shared grid should be socialized. ATC recommends directly assigning only the identifiable, exclusive-use facilities and non-conforming-behavior equipment costs.",
+      "quote_ids": [
+        8,
+        12,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "key": "topic:to-funding",
+      "name": "Transmission Owner Initial-Funding",
+      "stance": "support",
+      "description": "ATC asks the Commission to preserve the transmission owner initial-funding option in any future option-to-build framework so that ATC retains the ability to earn a return on and of assets it must own, operate, and maintain.",
+      "quote_ids": [
+        19
+      ]
+    },
+    {
+      "key": "topic:study-timeline",
+      "name": "Realistic Study Duration",
+      "stance": "oppose",
+      "description": "ATC draws on direct experience to show that complex AI load studies take 18 months or more and cost hundreds of thousands of dollars. The 60-day target is unrealistic; ATC proposes 120 days and asks that NERC develop standard load models to help compress future study durations.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "key": "topic:nerc-standards",
+      "name": "NERC Standards for Oscillating Loads",
+      "stance": "support",
+      "description": "ATC supports new NERC reliability standards and registration categories for large loads with pronounced oscillatory characteristics. ATC asks that any new standards be limited to loads meeting the behavior-based threshold so requirements remain targeted.",
+      "quote_ids": [
+        20
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Commission Jurisdiction Scope",
+      "stance": "support",
+      "description": "ATC supports limiting FERC jurisdiction to direct interconnections to transmission facilities under the seven-factor test, consistent with existing law. ATC stresses that its Wisconsin charter restricts it to transmission-only service and that retail load interconnections flow through local distribution customers.",
+      "quote_ids": [
+        3
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "threshold",
+      "hybridrights",
+      "deposits",
+      "protection",
+      "expedited",
+      "upgradecost",
+      "jurisdiction"
+    ],
+    "pr": [
+      "colo",
+      "flex",
+      "study",
+      "cost"
+    ],
+    "rg": [
+      "miso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
