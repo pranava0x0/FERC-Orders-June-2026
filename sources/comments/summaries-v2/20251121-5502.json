@@ -1,0 +1,250 @@
+{
+  "accession": "20251121-5502",
+  "filer": "Calibrant Energy",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5502__Calibrant-Energy/2025-11-21 Calibrant Comments on RM26-4-000.txt",
+  "overall_summary": "Calibrant Energy supports expedited interconnection for large loads and hybrid facilities by making the study process transparent, incorporating load flexibility as an equal alternative to traditional transmission upgrades, and enabling provisional interconnection for flexible loads while infrastructure is built. The filer advocates for cost-causation-based pricing and clear, fair RTO-level cost allocation that reflects actual system drivers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Calibrant Energy Holdings, LLC (\"Calibrant\") supports the action taken by Secretary Wright to address the interconnection of large loads. The letter appropriately recognizes the benefits of large load flexibility and recommends an expedited interconnection study process for loads that are curtailable or co-located with generation or energy storage.",
+      "concern": "Supports expedited study process for flexible and co-located loads",
+      "bins": [
+        "pr:study",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Ensure a transparent interconnection process for large loads, where the transmission owners and regional system operators (\"RTO/ISOs\") provide customers with the specific constraints, system conditions, and/or the hours that are driving the need for new system upgrades and investment. The clear identification of system needs will allow customers to develop solutions to address those needs.",
+      "concern": "Transmission owners must transparently disclose system constraints and drivers to enable customer solutions",
+      "bins": [
+        "topic:transparency",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Require that the transmission owners and RTO/ISOs study load flexibility (including hybrid configurations of load including generation or energy storage) as part of the load interconnection process and identify the amount of flexibility needed to avoid each system constraint identified in the study.",
+      "concern": "Study process must quantify flexibility requirements to address each constraint",
+      "bins": [
+        "pr:flex",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Provide a pathway for large load customers to propose, develop, and implement load flexibility solutions (including hybrid configurations of load including generation or energy storage) to defer or avoid the need for, some or all, new infrastructure if the customer commits to providing flexibility during the hours or system conditions identified during the study process. Load flexibility solutions should be considered on equal footing to traditional infrastructure solutions in system planning processes.",
+      "concern": "Flexibility solutions must receive equal standing to transmission infrastructure in planning",
+      "bins": [
+        "topic:parity",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Recognize that load flexibility (including hybrid configurations of load including generation or energy storage) may also allow a large load to interconnect provisionally while needed infrastructure is built for firm service to create a path for large loads to come online quickly but reliably in the interim.",
+      "concern": "Flexible loads should be able to secure provisional interconnection rights while infrastructure is constructed",
+      "bins": [
+        "pr:proximate",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Maintain clear, fair RTO-level cost allocation mechanisms that reflect customers' contributions to the drivers of new infrastructure. While states will maintain jurisdiction over retail rates, RTOs can allocate costs to Load Serving Entities in a manner that better aligns cost causation and cost allocation. The grid will be more affordable if price signals encourage behavior that reduces the need for additional infrastructure.",
+      "concern": "RTO cost allocation must reflect cost-causation principles and incentivize grid-positive behavior",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The wholesale markets have offered a place for customers to bring creative solutions to meet the system's needs cost-effectively. While this marketplace for innovation is available for many market services, a similar opportunity for transmission service does not exist for load customers because of the inflexible and opaque way in which load connection studies are conducted.",
+      "concern": "Load interconnection process lacks the flexibility and transparency that characterize wholesale markets",
+      "bins": [
+        "topic:transparency",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Pacific Gas & Electric's (\"PG&E\") \"Flex Connect\" Program offers the Commission a useful model for the transparency they should require of Transmission Owners. In constrained areas of PG&E's grid, PG&E identifies the hours and amount that customers need to curtail (or otherwise provide flexibility from on-site energy generation or storage) if they wish to defer upgrades and interconnect immediately.",
+      "concern": "PG&E Flex Connect demonstrates how transparency about constraint hours enables deferrals and faster interconnection",
+      "bins": [
+        "topic:transparency",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The Commission should require each transmission owner and/or RTO/ISO to publish and maintain a list of transmission facilities which meet the criteria of being a transmission facility for purposes of determining jurisdiction of load interconnection, so that market participants know whether their interconnection request would be subject to the Commission's jurisdiction before submitting an application.",
+      "concern": "Transmission owners must publish facility lists to establish clear jurisdiction rules for load interconnections",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The Commission should ensure that the study process reflects the expected operating characteristics of the generation (or energy storage) and the load. The study process should provide a pathway for load and hybrid facilities to request that flexibility and specific operating characteristics be incorporated into study assumptions. Solutions that incorporate load flexibility (including hybrid configurations of load including generation or energy storage) should be treated on equal footing as traditional transmission infrastructure solutions.",
+      "concern": "Study assumptions must account for load and generation operating characteristics; flexibility solutions must receive equal treatment",
+      "bins": [
+        "topic:parity",
+        "pr:flex",
+        "aq:jointstudy"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Customers should be allowed to use load flexibility (including hybrid configurations of load including generation or energy storage to enable flexibility) to interconnect provisionally to the system while needed infrastructure is being built to achieve a higher level of transmission service.",
+      "concern": "Flexible loads must be able to achieve provisional interconnection rights during infrastructure buildout",
+      "bins": [
+        "pr:proximate",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The Commission should ensure that cost allocation to large load customers for transmission service associated with infrastructure not assigned through the interconnection study process is being allocated to those large load customers in a manner that appropriately reflects cost-causation principles. If new large loads are taking transmission service through a FERC jurisdictional interconnection process, then this process should cover all aspects of transmission service.",
+      "concern": "All transmission service costs must be allocated using cost-causation principles through the interconnection process",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Transmission service should be assessed based on cost-causation principles and not based on maximum withdrawal rights. Transmission service is typically assessed upon customers' contribution to coincident peak demand. The transmission owners and RTO/ISOs should determine which periods or system conditions drive the need for system investment and assess costs based on those periods of time. This creates clear pricing signals to incentivize behavior which will reduce the need for additional investment.",
+      "concern": "Pricing must reflect cost-causation periods and peak-demand contribution, not maximum withdrawal rights",
+      "bins": [
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Expedited transparent study process",
+      "stance": "support",
+      "description": "Transmission owners and RTOs must conduct expedited interconnection studies that transparently disclose the specific constraints, system conditions, and hours driving upgrade needs. This transparency enables customers to develop targeted flexibility solutions that address identified system drivers.",
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Load flexibility as infrastructure alternative",
+      "stance": "support",
+      "description": "Load flexibility, including hybrid facilities with generation or storage, should be studied and treated as a cost-effective alternative to traditional transmission upgrades. Customers must be able to propose flexibility solutions to defer or avoid infrastructure needs if they commit to performance during identified constraint periods.",
+      "quote_ids": [
+        3,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost-causation-based allocation",
+      "stance": "support",
+      "description": "RTO cost allocation must reflect cost-causation principles and be based on customers' actual contributions to peak periods and system drivers, not maximum withdrawal rights. Clear pricing signals tied to constraint periods incentivize grid-positive behavior and reduce the need for additional infrastructure.",
+      "quote_ids": [
+        6,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Provisional interconnection for flexible loads",
+      "stance": "support",
+      "description": "Large loads that commit to flexibility should be able to interconnect provisionally while transmission infrastructure for firm service is being built, enabling faster online operations. Transparent constraint identification from studies enables such arrangements.",
+      "quote_ids": [
+        5,
+        8,
+        11
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited study timeline",
+      "stance": "support",
+      "description": "Interconnection studies for loads and hybrid facilities agreeing to be curtailable or dispatchable should be expedited, potentially to 60 days, enabling timely and orderly system additions.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Co-study of loads with generation",
+      "stance": "support",
+      "description": "Load and hybrid facilities should be studied together with generation, accounting for their operating characteristics and enabling efficient siting that minimizes network upgrades.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Non-firm and variable interconnection rights",
+      "stance": "support",
+      "description": "Interconnection rights should neither be firm nor static across an entire year. Customers should be able to accept non-firm status while infrastructure is built, enabling faster provisional interconnection.",
+      "quote_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Clear FERC jurisdiction definition",
+      "stance": "support",
+      "description": "Transmission owners and RTOs should publish lists of facilities meeting transmission-service criteria to establish clear, advance notice of FERC jurisdiction for load interconnection applications.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:transparency",
+      "name": "Transparent constraint disclosure",
+      "stance": "support",
+      "description": "Transmission operators must transparently identify and disclose the specific constraints, hours, and system conditions driving upgrade needs. This transparency, as demonstrated by PG&E's Flex Connect model, allows customers to develop targeted solutions and accelerates interconnections.",
+      "quote_ids": [
+        2,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "topic:parity",
+      "name": "Equal treatment of flexibility and infrastructure",
+      "stance": "support",
+      "description": "Load flexibility solutions, including hybrid configurations, must be considered on equal footing with traditional transmission infrastructure in system planning and study processes. This requires study processes that account for expected operating characteristics.",
+      "quote_ids": [
+        4,
+        10
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited",
+      "jointstudy",
+      "hybridrights",
+      "jurisdiction"
+    ],
+    "pr": [
+      "study",
+      "flex",
+      "cost",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
