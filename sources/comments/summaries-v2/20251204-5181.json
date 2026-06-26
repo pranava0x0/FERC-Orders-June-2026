@@ -1,0 +1,283 @@
+{
+  "accession": "20251204-5181",
+  "filer": "Center for Biological Diversity",
+  "org_type": "enviro",
+  "filed": "12/04/2025",
+  "source_text": "sources/comments/files/20251204-5181__Center-for-Biological-Diversity/Center Reply Comments FERC RM26-4-000.12.4.25 FINAL.txt",
+  "overall_summary": "The Center for Biological Diversity urges FERC to weigh the climate, environmental, and ratepayer harms of data center growth before fast-tracking large-load interconnection, and calls for full cost responsibility on large-load customers, a 20 MW (or lower) applicability threshold, mandatory disclosure of energy and water use, meaningful tribal consultation, and a deliberate rather than rushed rulemaking timeline.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the Commission must—consistent with its statutory obligations and as further detailed in the Addendum—fully account for the environmental implications of data-center growth, including risks to climate mitigation efforts and other significant environmental impacts, and require maximum transparency.",
+      "concern": "FERC must factor in climate and environmental risks of data center growth",
+      "bins": [
+        "topic:environmental-review"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "between September 2023 and August 2024, nearly 60% of the electricity consumed by U.S. data centers came from fossil fuels, leading to an estimated 105 million metric tons of carbon emissions during that same period.",
+      "concern": "Data centers are heavily fossil-fuel dependent and emit large amounts of carbon",
+      "bins": [
+        "topic:fossil-fuel-dependency"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The rapid expansion of digital infrastructure—propelled by corporate interests rather than public need—is emerging as a major and accelerating driver of climate disruption.",
+      "concern": "Data center expansion driven by corporate interest is worsening climate disruption",
+      "bins": [
+        "topic:fossil-fuel-dependency"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "we support Opening Comments urging the Commission to consider the opportunities for these facilities to help mitigate their demand on the grid, by promoting load flexibility, renewable energy, and distributed energy resources.",
+      "concern": "Support for demand flexibility and renewables to offset grid strain",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "if data centers limited load a mere 0.5 percent (less than 44 hours out of the year), the grid could handle 98 GW of new load---enough to power 70 million homes.",
+      "concern": "Minimal curtailment by data centers could allow large amounts of new load without new generation",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Co-locating data centers with solar and/or wind would protect and promote grid reliability by expanding data center capacity while avoiding further strain on the grid.",
+      "concern": "Renewable co-location as a way to grow data center capacity without fossil generation",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Without facility-level disclosure, grid operators, utilities, and regulators cannot reliably forecast demand, plan infrastructure, or allocate costs fairly, potentially shifting costs to other ratepayers and compromising grid reliability.",
+      "concern": "Lack of data center disclosure harms grid planning and cost allocation",
+      "bins": [
+        "topic:disclosure-transparency"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "FERC should require data centers and utilities to disclose information on monthly and annual basis including: Electricity consumption: total usage, peak load and load profiles; Energy sources and emissions: fuel mix (renewable, fossil, nuclear or other), Scope 1 and 2 greenhouse gas emissions; Water consumption: total use, source (municipal, groundwater, or recycled), and facility activities driving water use",
+      "concern": "Calls for mandatory reporting of electricity, emissions, and water use by data centers",
+      "bins": [
+        "topic:disclosure-transparency"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the Commission should adopt clear rules preventing any cost-shifting of network upgrades or stranded assets attributable to large-load customers.",
+      "concern": "Commission should block cost-shifting of upgrade and stranded-asset costs onto ratepayers",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Because data centers both cause and benefit from these upgrades, the Commission must rigorously enforce Principle 8. This includes conducting transparent load interconnection studies and requiring large-load customers to cover 100% of their network upgrade costs, while also strengthening the principle to ensure ratepayers are protected from any stranded-asset costs.",
+      "concern": "Strict enforcement of 100% cost responsibility and stranded-asset protection for ratepayers",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "utilities are getting away with socializing the costs of the data center boom, and simultaneously keeping rates low to attract data centers, by: (1) entering into special contracts; (2) taking advantage of discrepancies between federal and state regulations over cost allocation; and (3) relying on co-location agreements.",
+      "concern": "Three mechanisms utilities use to shift data center costs onto other ratepayers",
+      "bins": [
+        "pr:cost",
+        "pr:colo",
+        "topic:special-contracts"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "PJM spent $5.1 billion on new transmission, and half of those costs were distributed to member utilities based on their share of power demand... in Maryland for example, residential ratepayers will then pay for two-thirds of the state's overall share in transmission costs, even though PJM is building this new transmission for Virginia data centers and not the average Maryland residential ratepayer.",
+      "concern": "PJM cost allocation example shows residential ratepayers in other states paying for data-center-driven transmission",
+      "bins": [
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The Center generally supports DOE's second Principle, which recommends that any regulatory reforms apply to 'new loads greater than 20 MW,' although even a lower threshold might be appropriate.",
+      "concern": "Supports 20 MW threshold, open to lower, opposes industry proposals for 100 to 200 MW",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Setting a 100 MW threshold would therefore exclude a significant number of new electricity-intensive facilities seeking to connect to the grid.",
+      "concern": "High threshold would leave many data centers and cryptomining facilities unregulated",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Such consultation is not merely a policy preference but a requirement: Executive Order 13175 directs federal agencies to engage Tribes whenever proposed regulations have tribal implications.",
+      "concern": "Tribal consultation before fast-tracking interconnection is a legal requirement, not optional",
+      "bins": [
+        "topic:tribal-consultation"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "it is imperative that the Commission prioritize thoughtful deliberation over meeting the DOE-requested deadline of April 30, 2026 for finalizing reforms to expedite large-load interconnection.",
+      "concern": "Rulemaking should not be rushed to meet DOE's April 2026 deadline",
+      "bins": [
+        "aq:expedited"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "topic:environmental-review",
+      "name": "Environmental Review of Data Centers",
+      "stance": "support",
+      "description": "The Center argues FERC must account for the full range of environmental impacts from data center growth, including climate, air quality, water use, noise, habitat loss, and species harm, before adopting any rules that encourage faster interconnection.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:fossil-fuel-dependency",
+      "name": "Data Centers Drive Fossil Fuel Growth",
+      "stance": "oppose",
+      "description": "The Center documents that U.S. data centers rely heavily on fossil-fuel electricity, with nearly 60% fossil-sourced power in 2023 to 2024, generating 105 million metric tons of carbon. Corporate demand, not public need, is driving expansion that worsens climate disruption.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Load Flexibility Reduces Grid Strain",
+      "stance": "support",
+      "description": "The Center endorses demand response and load flexibility for data centers. Research shows that cutting load by just 0.5 percent (44 hours per year) could accommodate 98 GW of new load without new generation, saving ratepayers from subsidizing fossil plants.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Renewable Co-location Preferred",
+      "stance": "support",
+      "description": "The Center supports co-locating data centers with solar and wind to expand capacity without fossil fuel strain, but opposes co-location arrangements that let data centers avoid paying delivery charges and shift costs to other ratepayers.",
+      "quote_ids": [
+        6,
+        11
+      ]
+    },
+    {
+      "key": "topic:disclosure-transparency",
+      "name": "Mandate Data Center Disclosures",
+      "stance": "support",
+      "description": "The Center calls for mandatory monthly and annual reporting by data centers covering electricity consumption, fuel mix, greenhouse gas emissions, and water use. Without this data, grid operators and regulators cannot plan infrastructure or allocate costs fairly.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Full Cost Responsibility for Large Loads",
+      "stance": "support",
+      "description": "The Center supports strict enforcement of ANOPR Principle 8, requiring large-load customers to cover 100% of network upgrade costs and protecting ratepayers from stranded-asset exposure. Utilities currently shift data center costs through special contracts, mismatched federal-state cost allocation, and co-location loopholes.",
+      "quote_ids": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:special-contracts",
+      "name": "Restrict Special Utility Contracts",
+      "stance": "support",
+      "description": "The Center flags that utilities use opaque special contracts to offer data centers discounted rates while passing shortfalls to other customers, often without adequate public participation or third-party review.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Cost-Shift to Residential Ratepayers",
+      "stance": "neutral",
+      "description": "The Center cites PJM's $5.1 billion transmission buildout for Virginia data centers as a concrete example of how cost allocation rules leave Maryland residential ratepayers covering two-thirds of their state's share for infrastructure that serves data centers in another state.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "100% Network Upgrade Cost Responsibility",
+      "stance": "support",
+      "description": "The Center supports requiring large-load customers to pay 100% of the network upgrade costs they trigger, and wants the Commission to extend that protection to stranded-asset exposure as well.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20 MW Threshold, Not Higher",
+      "stance": "support",
+      "description": "The Center supports the DOE's recommended 20 MW applicability threshold and is open to an even lower figure. Industry proposals of 100 to 200 MW would exclude many data centers and cryptomining operations, undermining the reform's scope.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "topic:tribal-consultation",
+      "name": "Tribal Consultation Before Fast-Tracking",
+      "stance": "support",
+      "description": "The Center argues that Executive Order 13175 requires meaningful tribal consultation before any expedited interconnection reforms take effect, citing data center grid impacts that disproportionately affect tribal communities already facing high energy burdens.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Deliberate Rulemaking, Not Rushed",
+      "stance": "oppose",
+      "description": "The Center opposes meeting the DOE's April 30, 2026 deadline at the expense of thorough deliberation, warning that a rushed process risks incomplete rules and erodes public confidence.",
+      "quote_ids": [
+        16
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost",
+      "threshold",
+      "expedited"
+    ],
+    "pr": [
+      "flex",
+      "colo",
+      "cost"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-26",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
