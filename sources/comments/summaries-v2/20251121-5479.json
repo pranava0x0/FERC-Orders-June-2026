@@ -1,0 +1,286 @@
+{
+  "accession": "20251121-5479",
+  "filer": "Alliance for Tribal Clean Energy",
+  "org_type": "enviro",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5479__Alliance-for-Tribal-Clean-Energy/Alliance for Tribal Clean Energy Comments on Large Load Interconnection ANOPR.txt",
+  "overall_summary": "The Alliance for Tribal Clean Energy, joined by several Tribal Nations and Tribal-serving organizations, asks FERC to conduct formal Government-to-Government Tribal Consultation before finalizing any large-load interconnection rule. The filing argues that uniform financial requirements, queue-priority rules favoring co-located or curtailable facilities, and rapid large-load integration could disproportionately burden sovereign Tribal developers and degrade service reliability for Tribal communities. It urges the Commission to adopt tailored commercial readiness criteria for Tribal entities and to require transmission providers to assess reliability impacts on Tribal lands.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The Alliance calls on the Commission to ensure that this rulemaking upholds, and does not infringe upon, the inherent sovereignty and right to self-determination of Tribal Nations.",
+      "concern": "Overall ask that the rulemaking respect Tribal sovereignty",
+      "bins": [
+        "topic:tribal-sovereignty"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The Alliance requests that the Commission engage in the Tribal Consultation process required under 18 C.F.R. § 2.1c prior to issuing any final rule in this proceeding.",
+      "concern": "Demand for formal pre-rule Tribal Consultation under existing FERC regulation",
+      "bins": [
+        "topic:tribal-consultation"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Without early and meaningful consultation, it could inadvertently diminish Tribal sovereignty by advancing permitting and interconnection decisions that overlook Tribal jurisdiction and energy authority.",
+      "concern": "Risk that fast-tracked interconnection rules will bypass Tribal jurisdiction",
+      "bins": [
+        "topic:tribal-consultation",
+        "topic:tribal-sovereignty"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The Alliance calls on the Commission to ensure that the implementation of the final rule includes comprehensive, formal, and early Government-to-Government Consultation with all affected Tribal Nations.",
+      "concern": "Call for formal, early Government-to-Government Consultation as part of implementation",
+      "bins": [
+        "topic:tribal-consultation"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Tribal Nations are sovereign entities, not similarly situated to other generation developers, and therefore should not be subject to the same commercial readiness and withdrawal penalty requirements of Order No. 2023, which were designed to deter speculative interconnection requests.",
+      "concern": "Argument that uniform commercial readiness rules unjustly burden Tribal developers",
+      "bins": [
+        "aq:deposits",
+        "topic:tribal-equity"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "If left unmodified, the ANOPR's proposal to apply uniform study deposit and penalty requirements to large-load interconnections would perpetuate systemic inequities and further restrict Tribal participation in the energy transition.",
+      "concern": "Uniform deposit rules will block Tribal developers from the interconnection queue",
+      "bins": [
+        "aq:deposits",
+        "pr:cost",
+        "topic:tribal-equity"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "We urge the Commission to clarify that these financial prerequisites will not be used to determine or influence queue position or expedited processing, as doing so would have a disparate impact on Tribally owned projects.",
+      "concern": "Request that financial prerequisites not affect queue position for Tribal projects",
+      "bins": [
+        "aq:deposits",
+        "aq:expedited",
+        "topic:tribal-equity"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Prioritizing large load interconnection applicants in the queue based on whether they are co-located with generation creates a market where hybrid facilities may be more competitive than non-hybrid facilities.",
+      "concern": "Co-location queue preference disadvantages Tribal developers who cannot afford hybrid designs",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "topic:tribal-equity"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "We call on the Commission to clarify that this proposed rule only allows the calculation of net withdrawal/injection rights and does not impact the order of prioritization in the interconnection queue.",
+      "concern": "Net withdrawal/injection rules should not change queue order",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Expediting interconnection applications for curtailable projects has the potential to inadvertently tip the scales in favor of privately-owned or better-capitalized projects.",
+      "concern": "Expedited curtailment pathway gives capital-rich developers a structural advantage",
+      "bins": [
+        "aq:expedited",
+        "pr:flex",
+        "topic:tribal-equity"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The Alliance therefore calls on the Commission to clarify that expediting interconnection studies for curtailable or dispatchable facilities will not alter the established queue order or delay non-curtailable Tribal projects.",
+      "concern": "Expedited curtailment studies must not push Tribal projects back in queue",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The Commission should make clear that transmission providers may not shift operational risks, reliability degradation, or the costs of new load integration onto existing customers - particularly those in Tribal and disadvantaged communities.",
+      "concern": "Transmission providers must not pass large-load integration costs to Tribal ratepayers",
+      "bins": [
+        "pr:cost",
+        "pr:proximate",
+        "topic:tribal-reliability"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The Alliance urges the Commission to require transmission providers to include an analysis of potential reliability, resilience, and service quality impacts on Tribal communities as part of their transmission service planning for large loads.",
+      "concern": "Reliability impact analysis on Tribal communities should be a required part of transmission planning",
+      "bins": [
+        "pr:study",
+        "topic:tribal-reliability"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Tribal Nations have disproportionately borne the negative impacts of an increasingly extreme climate.",
+      "concern": "Tribal communities face compounding climate vulnerability from new large-load development",
+      "bins": [
+        "topic:tribal-sovereignty"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "topic:tribal-sovereignty",
+      "name": "Tribal Sovereignty Must Be Protected",
+      "stance": "support",
+      "description": "The Alliance argues that the rulemaking must affirmatively protect Tribal sovereign authority over siting, permitting, and energy management on Tribal lands. It warns that fast-tracked rules risk overlooking Tribal jurisdiction and compounding existing climate and economic vulnerabilities for Tribal communities.",
+      "quote_ids": [
+        1,
+        3,
+        14
+      ]
+    },
+    {
+      "key": "topic:tribal-consultation",
+      "name": "Require Pre-Rule Tribal Consultation",
+      "stance": "support",
+      "description": "The Alliance requests formal Government-to-Government Consultation under 18 C.F.R. § 2.1c before any final rule issues, and proposes a standing Tribal-FERC Implementation Working Group. Consultation must be substantive and outcome-oriented, not a post-hoc notice step.",
+      "quote_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Tailored Deposit Rules for Tribes",
+      "stance": "oppose",
+      "description": "The Alliance opposes applying Order No. 2023's uniform study deposit and withdrawal penalty requirements to Tribal developers. It argues these requirements were designed to deter speculation by private actors and create a disparate burden on sovereign governments with distinct financing constraints. It calls for alternative commercial readiness criteria for Tribal entities.",
+      "quote_ids": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Co-Location Queue Priority Concerns",
+      "stance": "oppose",
+      "description": "The Alliance opposes any rule that gives queue priority to co-located or hybrid facilities, since the additional design and financing costs of hybrid projects fall more heavily on Tribal developers. It asks the Commission to limit the net withdrawal/injection provision to its technical calculation function without affecting queue order.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Curtailment Path Disadvantages Tribes",
+      "stance": "oppose",
+      "description": "The Alliance opposes expedited interconnection processing for curtailable or dispatchable facilities if that pathway alters queue order, because Tribal developers face structural and financing constraints that limit their ability to incorporate curtailment on tight timelines. It asks the Commission to clarify that non-curtailable Tribal projects will not be delayed.",
+      "quote_ids": [
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-Location Rules Must Not Favor Capital",
+      "stance": "oppose",
+      "description": "The Alliance warns that co-location queue preferences create a market tilted toward well-capitalized private developers and against Tribal sovereign developers. It asks the Commission to confine the net withdrawal/injection rule to a calculation tool, not a queue-priority mechanism.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility Rules Must Stay Queue-Neutral",
+      "stance": "oppose",
+      "description": "The Alliance supports grid reliability goals behind curtailment provisions but opposes any expedited pathway that tips the queue in favor of privately owned or better-capitalized projects. Tribal developers already face structural barriers that limit project redesign within tight timelines.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "No Cost Shifting onto Tribal Ratepayers",
+      "stance": "oppose",
+      "description": "The Alliance argues that transmission providers must not pass the costs of large-load integration onto existing customers in Tribal or disadvantaged communities. Uniform deposit rules and new queue mechanisms that privilege better-capitalized applicants perpetuate systemic inequities.",
+      "quote_ids": [
+        6,
+        12
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Transmission Providers Accountable Near Tribal Lands",
+      "stance": "support",
+      "description": "The Alliance supports a requirement that transmission providers assess reliability, resilience, and service quality impacts on Tribal communities before undertaking major system modifications for large-load integration. It also calls for delegated Consultation with Tribal governments where large-load integration may affect service on or near Tribal lands.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study Process Must Include Tribal Impact Analysis",
+      "stance": "support",
+      "description": "The Alliance asks the Commission to require transmission providers to analyze reliability and service quality impacts on Tribal communities as part of their transmission service planning for large loads, treating this as a mandatory component of the interconnection study process.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:tribal-equity",
+      "name": "Non-Discrimination for Tribal Developers",
+      "stance": "oppose",
+      "description": "The Alliance argues that rules favoring co-located, curtailable, or well-capitalized applicants constitute undue discrimination against sovereign Tribal developers. It calls for tailored commercial readiness criteria, queue-neutral financial prerequisites, and expedited pathways that do not disadvantage Tribal projects.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "key": "topic:tribal-reliability",
+      "name": "Protect Tribal Community Reliability",
+      "stance": "support",
+      "description": "The Alliance warns that rapid large-load integration could reduce service quality and increase outage exposure for Tribal communities, which are often on the periphery of utility service territories. It calls for mandatory reliability impact analysis and direct coordination with Tribal governments before large-load interconnections near Tribal lands are approved.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "deposits",
+      "hybridrights",
+      "expedited"
+    ],
+    "pr": [
+      "colo",
+      "flex",
+      "cost",
+      "proximate",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
