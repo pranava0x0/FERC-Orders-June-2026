@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260626j";
+  var ASSET_VER = "20260626k";
   var D = window.FERC_DATA;
   if (!D) { document.getElementById("main").innerHTML = "<p class='noscript'>Data failed to load (js/data.js).</p>"; return; }
 
@@ -255,11 +255,11 @@
         "<p>" + esc(v.take) + "</p>" + srcChips(v.src) + "</div>";
     }).join("") + "</div>";
 
-    // The RM26-4 comment period (stats, respondent types, themes, the full filing list, and the
-    // read-in-full flagships) lives in its own Comments tab now; Discourse keeps a short pointer.
+    // The RM26-4 comment period (stats, respondent types, themes/categories, and the full searchable
+    // filing list) lives in its own Comments tab now; Discourse keeps a short pointer.
     var commentsBlock = D.comments ? (head("Public comments: the RM26-4 ANOPR docket",
       "All " + D.comments.filings + " filings were scraped from FERC eLibrary; " + (window.FERC_COMMENTS ? window.FERC_COMMENTS.downloaded : "270+") +
-      " comment bodies were downloaded and text-analyzed. The full timeline-ordered list, the top themes, the respondent-type breakdown, and the nine read-in-full flagship comments are in the Comments tab.") +
+      " comment bodies were downloaded and text-analyzed. The full searchable filing list, the top themes and categories, and the respondent-type breakdown are in the Comments tab.") +
       '<p class="cm-jump-wrap"><a class="cm-jump" href="#comments">Open the Comments tab →</a></p>') : "";
 
     return head("Industry reception",
@@ -352,26 +352,6 @@
       stanceBars = stLegend + '<div class="cm-stancebars">' + stRows + "</div>";
     }
 
-    var flag = "";
-    if (D.comments && D.comments.flagships && D.comments.flagships.length) {
-      var cards = D.comments.flagships.map(function (fl) {
-        var stances = Object.keys(CL).map(function (k) {
-          var v = (fl.stances || {})[k] || "silent";
-          var cls = /oppose/.test(v) ? "oppose" : /mixed/.test(v) ? "mixed" : /support/.test(v) ? "support" : "silent";
-          return '<span class="cm-stance ' + cls + '" title="' + esc(CL[k] + ": " + v) + '">' + esc(CL[k]) + "</span>";
-        }).join("");
-        return '<div class="cm-flag"><div class="cm-flag-head"><span class="cm-flag-name">' + esc(fl.filer) +
-          '</span><span class="cm-eg">' + esc(fl.bucketLabel || fl.bucket) + "</span>" +
-          '<a class="cite-link" href="' + esc(fl.elibrary) + '" target="_blank" rel="noopener noreferrer" title="Open eLibrary filing ' + esc(fl.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a></div>' +
-          '<p class="cm-flag-sum">' + esc(fl.summary) + "</p>" +
-          (fl.quote ? '<div class="cm-flag-quote">“' + esc(fl.quote) + '”</div>' : "") +
-          '<div class="cm-stances">' + stances + "</div></div>";
-      }).join("");
-      flag = head("Start here: one filing per camp",
-        "A representative comment from each major stakeholder camp, with its stance on the five reforms at a glance. All " + CM.summarized2 + " audited comments are below — search, or open “Read the audited analysis” on any row.") +
-        '<div class="cm-flagships">' + cards + "</div>";
-    }
-
     var rowsByRound = {};
     CM.list.forEach(function (c) { var k = roundOf(c.filed); (rowsByRound[k] = rowsByRound[k] || []).push(c); });
     var listHtml = CM.rounds.map(function (r) {
@@ -422,7 +402,7 @@
       return '<button class="cm-subtab" role="tab" id="cmsub-' + id + '" aria-controls="cmsec-' + id + '" aria-selected="' + (sel ? "true" : "false") + '"' + (sel ? "" : ' tabindex="-1"') + ' data-sub="' + id + '">' + esc(label) + "</button>";
     };
     var subnav = '<div class="cm-subtabs" role="tablist" aria-label="Comment-period views">' +
-      subtab("overview", "Overview", true) + subtab("types", "Respondent types", false) + subtab("summaries", "Comment summaries", false) + "</div>";
+      subtab("overview", "Themes & categories", true) + subtab("types", "Respondent types", false) + subtab("summaries", "All comments", false) + "</div>";
 
     var secOverview = '<section class="cm-sec" id="cmsec-overview" role="tabpanel" aria-labelledby="cmsub-overview">' +
       head("The RM26-4 comment period",
@@ -439,7 +419,6 @@
       "</section>";
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
-      flag +
       head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary — open “Read the audited analysis” on any row for the plain read, then each position grouped by lens with its description and the verbatim quotes behind it. Each row also shows the lenses it engages and links to its eLibrary filing. Filter by org, type, lens, position, or any word in a summary.") +
       filter + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src + "</section>";
 
