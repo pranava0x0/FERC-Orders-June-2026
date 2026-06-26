@@ -1,7 +1,10 @@
 /* app.js — renders FERC_DATA into the three tab panels and wires the tablist.
-   No dependencies, no network. Data is authored in data.js (single source of truth). */
+   No dependencies. Data is authored in data.js (single source of truth); the Comments tab
+   additionally lazy-loads one small per-letter bin-detail file on demand (docs/data/comments/). */
 (function () {
   "use strict";
+  // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
+  var ASSET_VER = "20260626j";
   var D = window.FERC_DATA;
   if (!D) { document.getElementById("main").innerHTML = "<p class='noscript'>Data failed to load (js/data.js).</p>"; return; }
 
@@ -272,6 +275,11 @@
   function fmtD(mdy) { if (!mdy) return ""; var p = String(mdy).split("/"); return MON[+p[0] - 1] + " " + (+p[1]) + ", " + p[2]; }
   function eli(acc) { return "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=" + acc; }
   function roundOf(filed) { var p = String(filed).split("/"); if (p[2] === "2025" && +p[0] <= 11) return "initial"; if (p[2] === "2025" && +p[0] === 12) return "reply"; return "supplemental"; }
+  function stanceClass(s) { return /support/.test(s) ? "support" : /oppose/.test(s) ? "oppose" : /mixed/.test(s) ? "mixed" : "neutral"; }
+  // bin-detail lens grouping: each bin key is "<ns>:<slug>"; group the positions by namespace, in the
+  // same order the rest of the Comments tab uses (ANOPR questions, reform principles, regions, then emergent topics).
+  var LENS_ORDER = ["aq", "pr", "rg", "topic"];
+  var LENS_LABEL = { aq: "Comment-period questions", pr: "Reform principles", rg: "Order regions", topic: "Other topics raised" };
 
   function renderComments() {
     var CM = window.FERC_COMMENTS;
@@ -378,19 +386,24 @@
         var grp = function (label, chips) { return chips ? '<span class="sr-only">' + label + ": </span>" + chips : ""; };
         var groups = [grp("Comment-period questions", aqChips), grp("Reform principles", prChips), grp("Regions", rgChips)].filter(Boolean);
         var tags = groups.length ? '<div class="cm-row-tags">' + groups.join('<span class="cm-tagsep" aria-hidden="true"></span>') + "</div>" : "";
-        var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ") + " " + (c.summary || "")).toLowerCase();
-        // expandable audited read: the plain summary + each position as a stance-colored chip
+        // search index: org/type/lens labels + the overall summary + each position's name. (The bin
+        // descriptions and verbatim quotes are deliberately left out — they're lazy-loaded per letter,
+        // too heavy to fold into every row's up-front index.)
+        var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ") + " " + (c.summary || "") + " " + (c.bins || []).map(function (b) { return b.n; }).join(" ")).toLowerCase();
+        // expandable audited read: the plain summary, the positions as stance-colored chips (loaded
+        // up front), and — fetched on open — each position's description + the verbatim quotes it draws on
         var analysis = "";
         if (c.s2 && c.summary) {
           var binChips = (c.bins || []).map(function (b) {
-            var st = /support/.test(b.s) ? "support" : /oppose/.test(b.s) ? "oppose" : /mixed/.test(b.s) ? "mixed" : "neutral";
+            var st = stanceClass(b.s);
             return '<span class="cm-bin ' + st + '">' + esc(b.n) + '<span class="sr-only"> (' + esc(b.s) + ")</span></span>";
           }).join("");
-          analysis = '<details class="cm-analysis"><summary><span class="cm-analysis-label">Read the audited analysis</span>' +
+          analysis = '<details class="cm-analysis" data-acc="' + esc(c.acc) + '"><summary><span class="cm-analysis-label">Read the audited analysis</span>' +
             '<span class="cm-analysis-n mono">' + (c.bins ? c.bins.length : 0) + " positions</span></summary>" +
             '<p class="cm-analysis-sum">' + esc(c.summary) + "</p>" +
             (binChips ? '<div class="cm-bins" aria-label="Positions, colored by the filer\'s stance">' + binChips + "</div>" : "") +
-            '<p class="cm-analysis-foot">Each position is synthesized from verbatim quotes in the filing; the quotes are the audit trail (committed in the repository). Stance is the filer’s, not ours.</p></details>';
+            '<div class="cm-bindetail" data-state=""></div>' +
+            '<p class="cm-analysis-foot">Each position below carries the filer’s own stance and the verbatim quotes behind it; those quotes are the audit trail, committed in the repository. The stance shown is the filer’s own, read from its words.</p></details>';
         }
         return '<li class="cm-row" data-q="' + esc(q) + '">' +
           '<div class="cm-row-top"><span class="cm-row-date mono">' + esc(fmtD(c.filed)) + "</span>" + badge +
@@ -401,7 +414,7 @@
       }).join("");
       return '<section class="cm-listgroup"><h3 class="cm-listgroup-h">' + esc(r.label) + ' <span class="mono">' + r.count + "</span></h3><ul class=\"cm-list\">" + items + "</ul></section>";
     }).join("");
-    var filter = '<div class="cm-filter"><input type="search" id="cm-search" placeholder="Filter by organization, type, or description…" aria-label="Filter the comment list" autocomplete="off" /><span class="cm-filter-count mono" id="cm-count">' + CM.total + " of " + CM.total + "</span></div>";
+    var filter = '<div class="cm-filter"><input type="search" id="cm-search" placeholder="Filter by organization, type, position, or description…" aria-label="Filter the comment list" autocomplete="off" /><span class="cm-filter-count mono" id="cm-count">' + CM.total + " of " + CM.total + "</span></div>";
     var src = '<div class="srcs"><span class="label">Source</span><a class="src-chip" data-tier="ferc" href="' + esc(CM.source_url) + '" target="_blank" rel="noopener noreferrer" title="FERC eLibrary docket sheet for RM26-4-000">eLibrary · RM26-4 docket sheet</a></div>';
 
     // three sub-tabs cut the scroll: the overall picture, the respondent mix, and the comment list itself
@@ -427,7 +440,7 @@
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
       flag +
-      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary — open “Read the audited analysis” on any row for the plain read and each position colored by the filer's stance. Each row also shows the lenses it engages and links to its eLibrary filing. Filter by org, type, lens, or any word in a summary.") +
+      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary — open “Read the audited analysis” on any row for the plain read, then each position grouped by lens with its description and the verbatim quotes behind it. Each row also shows the lenses it engages and links to its eLibrary filing. Filter by org, type, lens, position, or any word in a summary.") +
       filter + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src + "</section>";
 
     return subnav + secOverview + secTypes + secSummaries;
@@ -491,6 +504,62 @@
       input.dispatchEvent(new Event("input", { bubbles: true }));
       input.focus();
       input.scrollIntoView({ block: "nearest" });
+    });
+
+    // lazy-load each audited row's bin detail (description + verbatim quotes) the first time its
+    // analysis is opened. The detail is one small file per letter (docs/data/comments/<acc>.json),
+    // too heavy to embed across 268 letters; the chips above render up front from comments-data.js.
+    var detailCache = {};
+    var binItemHtml = function (b) {
+      var st = stanceClass(b.stance);
+      var quotes = (b.quotes || []).map(function (q) { return '<li class="cm-bq">“' + esc(q) + "”</li>"; }).join("");
+      return '<div class="cm-binitem ' + st + '">' +
+        '<div class="cm-binitem-head"><span class="cm-binitem-name">' + esc(b.name) + "</span>" +
+        '<span class="cm-binitem-stance ' + st + '">' + esc(b.stance) + "</span></div>" +
+        (b.desc ? '<p class="cm-binitem-desc">' + esc(b.desc) + "</p>" : "") +
+        (quotes ? '<ul class="cm-bqs">' + quotes + "</ul>" : '<p class="cm-bq-none mono">No verbatim quote is binned to this position.</p>') +
+        "</div>";
+    };
+    var lensGroupHtml = function (label, items) {
+      return '<section class="cm-lensgroup"><h4 class="cm-lensgroup-h">' + esc(label) +
+        '<span class="cm-lensgroup-n mono">' + items.length + "</span></h4>" +
+        items.map(binItemHtml).join("") + "</section>";
+    };
+    var nsOf = function (b) { return String(b.key).split(":")[0]; };
+    var renderBinDetail = function (box, d) {
+      var bins = d.bins || [];
+      var html = LENS_ORDER.map(function (ns) {
+        var items = bins.filter(function (b) { return nsOf(b) === ns; });
+        return items.length ? lensGroupHtml(LENS_LABEL[ns], items) : "";
+      }).join("");
+      // defensive: any bin whose namespace isn't one of the known lenses still gets shown
+      var rest = bins.filter(function (b) { return LENS_ORDER.indexOf(nsOf(b)) < 0; });
+      if (rest.length) html += lensGroupHtml("Other positions", rest);
+      box.innerHTML = html || '<p class="cm-bin-error">No positions found.</p>';
+      box.setAttribute("data-state", "done");
+      box.setAttribute("aria-busy", "false");
+    };
+    var hydrate = function (details) {
+      var box = details.querySelector(".cm-bindetail"), acc = details.getAttribute("data-acc");
+      if (!box || !acc) return;
+      var state = box.getAttribute("data-state");
+      if (state === "loading" || state === "done") return;
+      if (detailCache[acc]) { renderBinDetail(box, detailCache[acc]); return; }
+      box.setAttribute("data-state", "loading");
+      box.setAttribute("aria-busy", "true");
+      box.innerHTML = '<p class="cm-bin-loading mono" role="status">Loading the quotes…</p>';
+      fetch("data/comments/" + acc + ".json?v=" + ASSET_VER)
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (d) { detailCache[acc] = d; renderBinDetail(box, d); })
+        .catch(function () {
+          box.setAttribute("data-state", "error");
+          box.setAttribute("aria-busy", "false");
+          box.innerHTML = '<p class="cm-bin-error" role="status">Couldn’t load the quotes here. They’re committed in the repository under <span class="mono">sources/comments/summaries-v2/</span>.</p>';
+        });
+    };
+    // toggle doesn't bubble, so listen per <details>; only audited rows carry .cm-analysis (~268)
+    [].slice.call(document.querySelectorAll("#panel-comments .cm-analysis")).forEach(function (d) {
+      d.addEventListener("toggle", function () { if (d.open) hydrate(d); });
     });
   }
 
