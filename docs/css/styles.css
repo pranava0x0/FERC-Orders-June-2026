@@ -282,6 +282,16 @@ details.dreg li::before { content: "▸"; position: absolute; left: 0; color: va
 .docket-asks .label { display: block; margin-bottom: 6px; }
 .docket-asks ul { list-style: none; display: grid; gap: 5px; }
 .docket-asks li { font-size: 12.5px; color: #2b3744; line-height: 1.4; padding-left: 16px; position: relative; }
+
+/* Section IV briefing questions (Dockets tab) — numbered list with verbatim excerpts */
+details.dbrief .brief-head { margin: 4px 0 2px; }
+.brief-cite { display: inline-flex; align-items: baseline; gap: 7px; font-size: 11px; }
+details.dbrief .brief-list { list-style: none; display: grid; gap: 12px; margin-top: 9px; padding: 0; counter-reset: brief; }
+details.dbrief .brief-item { padding-left: 27px; position: relative; line-height: 1.4; }
+details.dbrief .brief-item::before { counter-increment: brief; content: counter(brief); position: absolute; left: 0; top: 1px; width: 18px; height: 18px; border-radius: 999px; background: var(--accent); color: #fff; font-size: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.brief-topic { font-size: 13px; font-weight: 700; color: var(--masthead); }
+.brief-desc { font-size: 12.5px; color: #2b3744; line-height: 1.45; margin: 2px 0 4px; }
+.brief-quote { display: block; font-family: var(--font-serif); font-style: italic; font-size: 12.5px; color: var(--accent-ink); line-height: 1.4; }
 .docket-asks li::before { content: "?"; position: absolute; left: 0; top: 0; color: var(--accent); font-weight: 700; font-size: 12px; }
 details.dros { margin-top: 9px; }
 details.dros ul.roster { grid-template-columns: 1fr; }
