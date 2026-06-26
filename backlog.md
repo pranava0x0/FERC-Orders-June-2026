@@ -150,7 +150,8 @@
 - **done (2026-06-26) — per-commissioner themed summaries (themes + quotes, no tags).** All five
   commissioners (Swett, Rosner, See, Chang, LaCerte) summarized the auditable way: an overall read plus
   5 themes each, every theme backed by verbatim quotes, no tag/stance vocabulary. Written quotes are
-  verbatim from the OCR'd order text (statements identical across all six orders; PJM copy canonical) and
+  verbatim from the OCR'd order text (cited to the PJM copy; the concurrences are largely common across the
+  six orders but vary in places — caught by the all-six verbatim check during the 2026-06-26 PR review) and
   guarded by a `data.test.mjs` verbatim check; spoken quotes come from the June 18 open-meeting auto-caption
   transcript (pulled with `uvx yt-dlp --write-auto-subs` from the user's YouTube link) and are labeled
   "spoken" (Rosner ×2, See ×1, Swett ×1; Chang and LaCerte deferred to their written statements at the
