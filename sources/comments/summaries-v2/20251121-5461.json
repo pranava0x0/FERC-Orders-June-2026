@@ -1,0 +1,201 @@
+{
+  "accession": "20251121-5461",
+  "filer": "Base Power Company",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5461__Base-Power-Company/FERC ANOPR.txt",
+  "overall_summary": "Base Power advocates for three interconnection reforms: (1) dispatchable load and hybrid generation should be contractible commodities with defined performance metrics, (2) generation serving new loads should be eligible regardless of siting, as long as electrically proximal and verifiable, and (3) loads demonstrating dispatchability should receive expedited interconnection study. The filer argues that dispatchability, not geography, defines resource adequacy and that hybrid sites combining generation and load provide cost-efficient, reliable alternatives to curtailment-only models.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Dispatchable load must become ubiquitously contractible.",
+      "concern": "Dispatchable load requires codified contractibility",
+      "bins": [
+        "aq:hybridrights",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "for hybrid sites constituting a mix of generation and load resources behind a point of interconnection, the total range of dispatchable capacity should be a measurable and performance-based commodity that can be procured, scheduled, compensated, and held to emergency operating conditions much like traditional generating capacity.",
+      "concern": "Hybrid sites must be treated as a single contractible dispatchable commodity",
+      "bins": [
+        "aq:hybridrights",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "New load-enabling generation siting constraints should allow for electrically proximal resources.",
+      "concern": "Siting rules should permit generation beyond the load's direct point of interconnection",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Siting for dispatchable capacity additions in service of new loads should remain open to both those behind the same and electrically proximal points of interconnection on the bulk transmission system, reflecting the functional reality that location does not diminish reliability value when performance is verifiable.",
+      "concern": "Proximal siting should be allowed when performance is verifiable",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The Commission should encourage mechanisms, such as expedited interconnection, to incentivize voluntary participation by large loads that choose to make their operations available as dispatchable system assets",
+      "concern": "Expedited interconnection should incentivize dispatchability commitments",
+      "bins": [
+        "aq:expedited",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "When the proposed load itself is verifiably dispatchable, system reliability is maintained. When new load is combined with net new generation capacity and/or dispatchable resources that increase the total energy output of the system, resource adequacy is achieved more economically, to the benefit of the rate base.",
+      "concern": "Dispatchable loads achieve resource adequacy more cost-effectively",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Curtailable load and/or dispatchable hybrid facilities...must be implemented as defined, contractible commodities in order to be sufficiently integrated into both operations and system planning, with respect to large load interconnection processes.",
+      "concern": "Hybrid and curtailable loads require defined contractible status for planning",
+      "bins": [
+        "aq:hybridrights",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "dispatchability refers to a defined and enforceable commitment by a load or hybrid facility to modulate its demand to a specific power at a specific rate, or mitigate its system impact through dispatchable hybrid resources, under specific conditions in exchange for recognized system and market value.",
+      "concern": "Dispatchability must be defined with enforceable performance parameters",
+      "bins": [
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The defining feature of resource adequacy is dispatchability, not geography. A resource that can increase or decrease its output or load in response to an operator signal provides the same system benefit whether it is co-located with the facility it serves or operates under a contractual arrangement elsewhere.",
+      "concern": "Dispatchability, not location, determines resource adequacy value",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Under the HILLGA process, supplemental generating facilities procured to serve such loads may be considered in a combined application with the load, expediting interconnection, when located electrically proximal, defined as no more than two bulk-system substations away from the load.",
+      "concern": "SPP's HILLGA model expedites interconnection for generation within two substations",
+      "bins": [
+        "aq:expedited",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "in the course of normal grid operations, it is far less expensive and far more reliable to meet incremental resource adequacy needs with supplemental generation, whether located on-site or electrical proximal, than to compensate a large load for curtailing",
+      "concern": "Proximal generation is more cost-efficient than curtailment compensation",
+      "bins": [
+        "pr:cost",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "large loads…and hybrid facilities that agree to be curtailable and dispatchable should be expedited.",
+      "concern": "Curtailable and dispatchable loads warrant expedited treatment",
+      "bins": [
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "establishing clear incentives for dispatchable performance is an appropriate and effective means of enhancing system reliability",
+      "concern": "Incentives for dispatchability improve reliability",
+      "bins": [
+        "aq:expedited",
+        "pr:study"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid resources as contractible commodities",
+      "stance": "support",
+      "description": "Base Power argues that hybrid sites combining generation and load must be treated as defined, contractible dispatchable commodities. These facilities should have enforceable performance parameters and can be modeled and scheduled like traditional generation. This framework enables integration into operations and system planning.",
+      "quote_ids": [
+        1,
+        2,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited study for dispatchable loads",
+      "stance": "support",
+      "description": "The filer supports expedited interconnection pathways for loads and hybrid facilities that commit to verifiable dispatchability. SPP's HILLGA model is cited as a concrete example where expedited processing pairs with combined generation-load applications when facilities are electrically proximal.",
+      "quote_ids": [
+        5,
+        10,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Electrically proximal generation for new loads",
+      "stance": "support",
+      "description": "Base Power contends that siting rules should permit generation to support new loads regardless of distance from the load's point of interconnection, provided facilities are electrically proximal and performance is verifiable. The core principle is that dispatchability, not geography, defines reliability value.",
+      "quote_ids": [
+        3,
+        4,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost-effective resource adequacy through dispatchability",
+      "stance": "support",
+      "description": "The filer argues that dispatchable generation and hybrid resources deliver resource adequacy more economically than curtailment-only models. Verifiable dispatchable loads combined with generation increase system output cost-effectively while maintaining reliability and benefiting the rate base.",
+      "quote_ids": [
+        2,
+        6,
+        11
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Integration of dispatchability into study and planning",
+      "stance": "support",
+      "description": "Base Power supports frameworks that embed dispatchability into interconnection study procedures and system planning. Contractible, defined performance metrics enable operators to model dispatchable loads accurately and reduce reliance on pessimistic assumptions about firm load.",
+      "quote_ids": [
+        1,
+        5,
+        7,
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "hybridrights",
+      "expedited"
+    ],
+    "pr": [
+      "proximate",
+      "cost",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
