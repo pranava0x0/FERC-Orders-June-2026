@@ -194,6 +194,7 @@ Decompose, don't one-shot (rationale in [CLAUDE.md](CLAUDE.md) → AI/API). For 
 - **Use the lean default workflow subagent, not `general-purpose`** — its heavy system prompt is re-fed every tool turn. (Probe it for Bash/Write/Read/Edit first. The per-agent floor is still ~30K even for trivial work — the floor is system prompt + reasoning — so batch breadth and tight prompts still matter.)
 - **Tight quote spans (one sentence or a clause) validate cleaner** than paragraphs — they dodge the footnote / `--- PAGE N ---` splices that drop verbatim-coverage below threshold and trigger fix-retry loops (one loose-quote extract cost 2×: 75K / 4m37s vs ~37K).
 - **Each worker self-loads its row** from a committed work-list (`node -e "…find(r=>r.acc===…)"`) instead of the orchestrator transcribing 260+ rows into `args` — the script has no fs access, and an LLM re-emitting the list drops rows.
+- **Surfacing the corpus:** source the page's per-item lenses + synthesis from the **audited summaries** (keyword only as a fallback for un-summarized items), and lead a newcomer view with a **stance map** (support/oppose/mixed/none per category) — it's the most navigable entry point. Watch page weight: embedding every item's summary + bins inflated `comments-data.js` ~4× (to ~104 KB gzipped) and it loads on *every* tab — lazy-load the heavy per-item block on the tab that needs it. Provenance held up: Haiku agents recorded their *real* model in `provenance.model` despite a Sonnet default in the prompt template — but don't rely on that; stamp the true model.
 
 ---
 
