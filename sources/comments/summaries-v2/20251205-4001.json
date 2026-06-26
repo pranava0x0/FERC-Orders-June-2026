@@ -1,0 +1,264 @@
+{
+  "accession": "20251205-4001",
+  "filer": "COMMITTEE ON ENERGY AND COMMERCE",
+  "org_type": "elected",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-4001__COMMITTEE-ON-ENERGY-AND-COMMERCE/FERC.2025.12.5 Letter re Large Loads to Interstate Transmission System.ENG.txt",
+  "overall_summary": "House Energy and Commerce Committee urges FERC to prioritize consumer protection by ensuring large data center loads fully bear their grid costs and not pass them to residential ratepayers. The letter advocates five principles: cost responsibility with transparency, non-firm service options, protection of generator interconnection reforms, jurisdictional clarity, and FERC independence from DOE.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "We write to urge you to prioritize holding American families harmless from the costs imposed upon the nation's grid by large loads, including data centers, as you consider the advanced notice of proposed rulemaking (ANOPR) submitted to the Federal Energy Regulatory Commission (FERC) by the Department of Energy (DOE).",
+      "concern": "Consumer cost protection from data center loads",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The affordability of electricity in America is under threat. Residential retail electricity prices have risen 13 percent since the start of the year, tripling the rate of general inflation. And power demand from data centers is set to increase dramatically, potentially further jeopardizing consumer bills.",
+      "concern": "Rising electricity prices threatened by data center demand",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Data centers could represent anywhere between 7 to 12 percent of American electricity demand by 2028, and one aggregate of utility forecasts showed an expected increase in peak demand of 120 gigawatts (GW) by 2029, or nearly 15 percent.",
+      "concern": "Magnitude of data center load growth",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Studies have indicated that residential power bills are already subsidizing data center buildouts.",
+      "concern": "Cost shifting from data centers to residential customers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "They cannot be built out on the backs of the power bills of American families across the country.",
+      "concern": "Data centers must not shift costs to consumers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "FERC should aim to ensure that grid facilities and upgrades are only developed for loads that are certain to be built and ensure that those large load customers fully bear the cost of their interconnection facilities and network upgrades.",
+      "concern": "Large loads must bear full cost of upgrades",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "FERC should also demand transparency mechanisms so it and other appropriate regulators can verify that these conditions are being met.",
+      "concern": "Transparency required for cost verification",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "We strongly support introducing a parallel version of some of these reforms, such as establishing a 'first-ready, first served' process, imposing large study deposits, increasing financial commitments from load interconnection customers, and increasing financial penalties for withdrawn requests.",
+      "concern": "Support for deposits and financial commitments similar to Order 2023",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Given the significant impacts that large data center loads can have on local grids, FERC should consider requiring large loads to sign take-or-pay commitments with transmission providers, with the largest customers being subject to the most stringent requirements.",
+      "concern": "Take-or-pay commitments needed for large loads",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Large load facilities should be responsible for all of the network upgrades assigned to them through the interconnection study process, but do not support offsetting those costs via a crediting mechanism.",
+      "concern": "No cost credits for large loads",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "FERC should require sufficient transparency from grid operators so it can determine which specific large load facilities are responsible for specific grid upgrade needs.",
+      "concern": "Transparency on load-specific upgrade needs",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "FERC should require transmission providers to offer non-firm, curtailable service in exchange for a large load interconnection applicant being given an expedited pathway to connect to the grid.",
+      "concern": "Expedited connection through flexible service",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Allowing large loads to take flexible service and taking a 'connect and manage' type approach to interested customers could allow the grid to serve a substantial amount of demand without needing to construct new transmission or generation facilities.",
+      "concern": "Flexible loads minimize grid upgrades",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "FERC must protect open and non-discriminatory access to the power grid and not undermine the reforms made to generator interconnection queues in Order 2023.",
+      "concern": "Protect Order 2023 generator reforms",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "FERC must not allow transmission providers to discriminate between generators based on resource type or if a generator is supporting a data center.",
+      "concern": "No discrimination based on data center support",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "FERC should provide clarity on jurisdictional boundaries between federal and state regulation of these issues.",
+      "concern": "Jurisdictional clarity between FERC and states",
+      "bins": [
+        "topic:jurisdiction"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "If FERC asserts jurisdiction but declines to institute strong protections, such as requiring transmission providers to collect large security deposits from data center interconnection applicants or increasing other financial commitments from such applicants, it must not preempt states from imposing their own protections under their retail regulatory authorities.",
+      "concern": "States retain right to impose protections if FERC is weak",
+      "bins": [
+        "topic:jurisdiction"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "FERC must protect its independence throughout this proceeding and ensure that any outcome is just and reasonable, and not unduly discriminatory or preferential.",
+      "concern": "FERC must act independently from DOE",
+      "bins": [
+        "topic:ferc-independence"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "While DOE has authority under section 403 of the Department of Energy Organization Act to submit a proposal to FERC, the Commission has 'exclusive jurisdiction with respect to any proposal made...' At the end of the day, FERC, not DOE or the White House, has the ultimate responsibility to ensure that its rules and the rates it approves meet the requirements of the Federal Power Act.",
+      "concern": "FERC retains ultimate authority despite DOE submission",
+      "bins": [
+        "topic:ferc-independence"
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Individual commissioners signing off on any final action must have complete confidence that they have met their statutory burden without undue influence or pressure.",
+      "concern": "Commissioners must have independence from political pressure",
+      "bins": [
+        "topic:ferc-independence"
+      ]
+    },
+    {
+      "id": 21,
+      "text": "We urge FERC to publish a notice of proposed rulemaking (NOPR) with a fully detailed rule and allow stakeholders a chance to comment and offer substantive feedback on that NOPR before any final action.",
+      "concern": "Full NOPR with comment period needed before final action",
+      "bins": [
+        "topic:process"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Full cost responsibility for large loads",
+      "stance": "support",
+      "description": "Committee strongly supports requiring large data center loads to fully bear all interconnection and network upgrade costs, with transparency mechanisms and financial commitments including deposits and take-or-pay contracts. Opposes cost crediting mechanisms that would offset these expenses.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Non-firm flexible service for expedited access",
+      "stance": "support",
+      "description": "Committee supports offering large loads non-firm, curtailable service in exchange for expedited grid connection, as this allows substantial demand to be served without constructing new transmission or generation facilities.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Protect generator interconnection reforms",
+      "stance": "support",
+      "description": "Committee strongly supports protection of Order 2023 generator interconnection reforms and opposes any discrimination between generators based on whether they support data centers.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "key": "topic:jurisdiction",
+      "name": "Jurisdictional clarity and state authority",
+      "stance": "mixed",
+      "description": "Committee seeks clear federal-state boundaries but insists states retain authority to impose retail protections. If FERC fails to institute strong protections like deposit requirements, states must not be preempted from protecting their ratepayers.",
+      "quote_ids": [
+        16,
+        17
+      ]
+    },
+    {
+      "key": "topic:ferc-independence",
+      "name": "FERC independence from DOE influence",
+      "stance": "support",
+      "description": "Committee emphasizes that FERC retains ultimate authority and exclusive jurisdiction regardless of DOE's submission under section 403. Commissioners must have complete independence from political pressure and undue influence to meet their statutory obligations under the Federal Power Act.",
+      "quote_ids": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "key": "topic:process",
+      "name": "Full NOPR process required",
+      "stance": "support",
+      "description": "Committee urges FERC to issue a notice of proposed rulemaking with a fully detailed rule and provide stakeholders a chance to comment before any final action, even while acting expeditiously.",
+      "quote_ids": [
+        21
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "flex",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

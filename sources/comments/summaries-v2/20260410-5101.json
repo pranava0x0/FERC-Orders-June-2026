@@ -1,0 +1,148 @@
+{
+  "accession": "20260410-5101",
+  "filer": "ITC Holdings Corp.",
+  "org_type": "transmission_owner",
+  "filed": "04/10/2026",
+  "source_text": "sources/comments/files/20260410-5101__ITC-Holdings-Corp/Supplemental Comments of ITC RM26-4.txt",
+  "overall_summary": "ITC Holdings supports regulatory reforms that enable large loads to interconnect quickly while maintaining cost protections for existing ratepayers. The filer argues that large loads must be assigned network transmission service charges and highlights how proactive long-range transmission planning through MISO, paired with grid investments, reduces costs for existing customers while enabling rapid large load interconnection.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "ITC supports the Commission's efforts to evaluate and identify potential reforms to ensure large loads can interconnect quickly and reliably while avoiding cost shifts to existing customers.",
+      "concern": "Support for reforms enabling quick interconnection with cost protection",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "current regulatory frameworks, including large loads' obligations to pay for the ongoing development, maintenance, and operation of the overall transmission system through network transmission service charges, accomplish these goals when paired with proactive transmission planning, the knowledge of local Transmission Owners, and other policies that promote optimal long-term solutions over quick or narrowly focused fixes.",
+      "concern": "Large loads should pay transmission charges and support long-term planning",
+      "bins": [
+        "pr:cost",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "large loads is projected to progressively reduce transmission rates for customers by expanding the load base over which fixed network costs are recovered.",
+      "concern": "Large loads reduce rates by spreading fixed costs",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "by the end of the decade, the network transmission rate for ITC Midwest's customers is anticipated to decrease by approximately 20% from the 2026 projected rate.",
+      "concern": "Data center load generates measurable rate reductions",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "a key precondition to capturing these benefits is for large loads to be assigned network transmission service charges. Without including large loads in the network transmission service charge calculation, customers would bear severe cost shifts and not reap the associated rate benefits these loads provide for all customers.",
+      "concern": "Large loads must pay network charges to enable rate benefits",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "ITC Midwest's forward-looking, proactive approach to grid development, reinforced through MISO's Long-Range Transmission Planning (\"LRTP\") portfolios, has enabled faster large-load interconnections by providing available regional capacity and reducing the scope and cost of network upgrades, benefiting both new customers and existing ratepayers.",
+      "concern": "Proactive MISO planning reduces costs and accelerates large load interconnection",
+      "bins": [
+        "rg:miso",
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "A key factor in accommodating the data center growth in Iowa was ITC Midwest's ability to start developing the LRTP projects right after MISO Board approval due to the segments not being eligible for Order No. 1000 competition. If the projects had been subject to the solicitation process, it would have added almost two years of delay before determining who was responsible for construction, irreparably undermining the in-service timeline requirements.",
+      "concern": "Order 1000 exemption for LRTP accelerated project timeline significantly",
+      "bins": [
+        "rg:miso",
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "we believe the enormous new loads already in the pipeline are just the beginning. As LRTP projects come online, we are optimistic Iowa will be positioned to accommodate additional data center investment and other future load growth, improving reliability and increasing rate benefits for customers over time.",
+      "concern": "LRTP pipeline enables sustained large load growth and rate benefits",
+      "bins": [
+        "rg:miso",
+        "pr:study"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation and rate benefits",
+      "stance": "support",
+      "description": "ITC advocates that large loads must bear network transmission service charges to avoid cost shifts to existing ratepayers. The filer argues this approach is essential for enabling rate reductions over time; ITC Midwest projects a 20% transmission rate decrease by decade's end as data center loads expand the customer base sharing fixed network costs.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Proactive transmission planning and coordination",
+      "stance": "support",
+      "description": "ITC emphasizes that proactive long-term transmission planning through MISO's Long-Range Transmission Planning portfolios, paired with grid investments and local transmission owner knowledge, enables efficient large load interconnection. The filer argues this forward-looking approach delivers better outcomes than quick or narrowly focused solutions.",
+      "quote_ids": [
+        1,
+        2,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexible planning exempt from Order 1000 competition",
+      "stance": "support",
+      "description": "ITC contends that LRTP projects not subject to Order 1000 competitive solicitation allowed rapid development timelines critical for large load accommodation. The filer argues that subjecting these projects to solicitation would have added two years of delay, undermining in-service requirements and slowing data center interconnection.",
+      "quote_ids": [
+        2,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO region planning and execution",
+      "stance": "support",
+      "description": "ITC highlights MISO's Long-Range Transmission Planning as instrumental in enabling large load growth in Iowa. The filer points to successful coordination between ITC Midwest and MISO to develop LRTP projects efficiently, demonstrating how regional transmission planning can reduce interconnection timelines and upgrade costs.",
+      "quote_ids": [
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "study",
+      "flex"
+    ],
+    "rg": [
+      "miso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
