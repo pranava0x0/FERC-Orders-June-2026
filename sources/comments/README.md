@@ -9,14 +9,15 @@ ANOPR (FERC Docket **RM26-4-000**), scraped from FERC eLibrary on **2026-06-24**
 ```
 docket sheet (eLibrary, Angular SPA, Cloudflare-gated)
   └─ 1. scrape ───────────────► rm26-4-manifest.raw.json      (all 423 filings, raw)
-  └─ 2. classify ─────────────► rm26-4-comments.json           (273 comments + 17 stakeholder buckets + stats)
+  └─ 2. classify ─────────────► rm26-4-comments.json           (273 comments + 19 stakeholder buckets + stats)
   └─ 3. inventory (GetFileListFromP8 JSON API) ► rm26-4-files.json  (per-accession file/attachment list, all 273)
   └─ 4. download bodies ──────► files/<accession>__<org-slug>/<name>.pdf|docx  (+ <name>.txt extracted)
   └─ 5. validate ─────────────► validate-comments.py (every body on disk, every PDF opens, every body has real text)
-  └─ 6. summarize (flagships) ► summaries/<accession>.json     (stance per reform category + verbatim quote)
+  └─ 6.  summarize (flagships)► summaries/<accession>.json      (9 hand-authored: stance per reform + quote)
+  └─ 6b. summarize (LLM v2) ──► summaries-v2/<accession>.json   (268, all text bodies: quote-centric, audited)
   └─ 7. aggregate ────────────► rm26-4-audit-index.json         (one row per comment: the whole chain)
                                 rm26-4-categorization.json      (stances tallied across summaries)
-                                docs/js/comments-data.js        (Comments tab: list + themes + principle/region tags)
+                                docs/js/comments-data.js        (Comments tab: list + themes + per-comment audited bins/stance)
 ```
 
 Body directories are named **`<accession>__<org-slug>`** so a file's path names who filed it
@@ -40,8 +41,9 @@ For step 4, Chrome also needs **Automatic downloads → Allow** for the site (se
 | 3 inventory | (in-browser `GetFileListFromP8` calls) → `rm26-4-files.json` | open JSON metadata API; covers all 273 |
 | 4 download | **`tools/grind-comment-downloads.js`** (browser) → **`tools/organize-comment-files.py`** (shell) | grinder clicks every PDF/DOCX link via hidden iframes; organize moves `~/Downloads/<acc>_*` → `files/<acc>__<org-slug>/`, text-extracts (fitz for PDF, `textutil` for DOCX), heals `;`-truncated names, and migrates older bare-accession dirs. Both idempotent. |
 | 5 validate | **`tools/validate-comments.py`** | every inventoried comment has a body on disk, every PDF opens, every body has substantive text; flags scanned/missing/corrupt. Exits non-zero on an unexpected gap. |
-| 6 summarize | hand-authored `summaries/<accession>.json` | read the extracted `.txt`; one structured summary per flagship |
-| 7 aggregate | `tools/build-comment-audit.mjs` + `tools/build-comments-page-data.mjs` | audit index + categorization; and the Comments-tab data (timeline list, themes, per-comment reform-principle + order-region tags) |
+| 6 summarize (flagships) | hand-authored `summaries/<accession>.json` | the 9 original flagships; read the extracted `.txt`, one structured summary each |
+| 6b summarize (LLM v2) | **`tools/summarize-comments.workflow.mjs`** + `validate-summaries.mjs` + `flag-summary.mjs` + `fix-lenses.mjs` | quote-centric auditable summary for all 268 text bodies: verbatim quotes → bins (controlled vocab + emergent topics) → stance + description; deterministic validate (verbatim/vocab/lens/lint) + selective independent audit. Run in budget-sized chunks via the `/summarize-comments` skill. Schema in `summarization-spec.md`. |
+| 7 aggregate | `tools/build-comment-audit.mjs` + `tools/build-comments-page-data.mjs` | audit index + categorization; and the Comments-tab data (timeline list, themes, and per-comment audited bins/stance + the principle stance map) |
 
 The download step is the slow one: each accession is a navigate-render-click, ~25–30% miss on the
 first pass (Angular slow to render under concurrency), so re-run the grinder over `window.__g.fail`

@@ -30,7 +30,7 @@ LLM pass unaudited (PNNL report ~78% precision / ~20% recall on raw extraction; 
 
 Labels + plain descriptions for `aq`/`pr`/`rg` live in `tools/build-comments-page-data.mjs`.
 
-## Output schema — `summaries/<accession>.json`
+## Output schema — `summaries-v2/<accession>.json`
 
 ```json
 {
@@ -66,5 +66,5 @@ Labels + plain descriptions for `aq`/`pr`/`rg` live in `tools/build-comments-pag
 ## Run
 
 A subagent per comment reads the body `.txt` and emits the JSON above; the orchestrator writes it to
-`summaries/<accession>.json`, then `build-comment-audit.mjs` + `build-comments-page-data.mjs` regenerate.
+`summaries-v2/<accession>.json`, then `build-comment-audit.mjs` + `build-comments-page-data.mjs` regenerate.
 The 9 hand-authored flagships use an earlier (compatible) shape and are re-emitted into this schema.

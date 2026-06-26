@@ -23,7 +23,7 @@ const RG = new Set(["pjm", "miso", "spp", "caiso", "isone", "nyiso"]);
 const STANCES = new Set(["support", "oppose", "mixed", "neutral"]);
 export const VOCAB = { AQ, PR, RG, STANCES };
 
-const norm = (x) => x.replace(/---\s*PAGE\s*\d+\s*---/g, " ").replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, "-").replace(/\s+/g, " ").trim();
+const norm = (x) => x.replace(/[​‌‍﻿⁠]/g, "").replace(/---\s*PAGE\s*\d+\s*---/g, " ").replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, "-").replace(/\s+/g, " ").trim();
 
 // Deterministic style + quality checks (free; would otherwise need an LLM audit pass).
 // AI-register words and em-dashes are banned in curator prose (not in quotes — those are verbatim).

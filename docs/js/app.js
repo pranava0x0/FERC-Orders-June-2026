@@ -78,7 +78,7 @@
   function renderTimeline() {
     var tl = '<div class="timeline">' + D.timeline.map(function (e) {
       return '<div class="tl-item ' + e.kind + '"><div class="tl-date">' + esc(e.date) +
-        '<span class="kindpill ' + e.kind + '">' + e.kind + "</span></div>" +
+        '<span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span></div>" +
         '<div class="tl-title">' + esc(e.title) + "</div>" +
         '<div class="tl-body">' + esc(e.body) + "</div>" + srcChips(e.src) + "</div>";
     }).join("") + "</div>";
@@ -228,7 +228,7 @@
   function renderNews() {
     var rec = '<div class="reception">' + D.reception.map(function (r) {
       return '<div class="recep ' + r.stance + '"><div class="recep-head"><span class="recep-group">' + esc(r.group) +
-        '</span><span class="stance-pill ' + r.stance + '">' + r.stance + "</span></div>" +
+        '</span><span class="stance-pill ' + r.stance + '">' + esc(r.stance) + "</span></div>" +
         "<p>" + esc(r.body) + "</p>" + srcChips(r.src) + "</div>";
     }).join("") + "</div>";
 

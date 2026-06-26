@@ -26,6 +26,9 @@ function fix(file) {
 
 const arg = process.argv[2];
 const files = arg ? [arg] : (existsSync(DIR) ? readdirSync(DIR).filter((f) => f.endsWith(".json")) : []);
-let n = 0;
-for (const f of files) { const r = fix(f); if (r.changed) n++; if (arg || r.changed) console.log(`${r.changed ? "fixed" : "ok"} ${r.acc}: lenses ${JSON.stringify(r.lenses)}`); }
-console.log(`\n${files.length} checked, ${n} lenses recomputed.`);
+let n = 0, bad = 0;
+for (const f of files) {
+  try { const r = fix(f); if (r.changed) n++; if (arg || r.changed) console.log(`${r.changed ? "fixed" : "ok"} ${r.acc}: lenses ${JSON.stringify(r.lenses)}`); }
+  catch (e) { bad++; console.log(`skip ${f}: ${e.message}`); } // one unreadable file must not abort the batch
+}
+console.log(`\n${files.length} checked, ${n} lenses recomputed${bad ? `, ${bad} skipped` : ""}.`);
