@@ -1,0 +1,254 @@
+{
+  "accession": "20251121-5295",
+  "filer": "California Department of Water Resources State Water Project",
+  "org_type": "other",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5295__California-Department-of-Water-Resources-State-Wat/RM26-4 DWR Comments Large Load ANOPR.txt",
+  "overall_summary": "DWR, a major CAISO load participant operating the State Water Project, opposes expedited interconnection treatment for curtailable loads in favor of market-based demand response, supports requiring large loads to finance 100% of their assigned network upgrade costs paired with a crediting mechanism that keeps other wholesale customers whole, and asks that any final rule respect regional differences through the independent entity variation standard for RTOs and ISOs.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The Commission should not establish expedited study treatment for large loads that agree to be curtailable, due to the potential for discriminatory access and increased costs to ratepayers.",
+      "concern": "Expedited interconnection for curtailable loads risks discrimination and higher ratepayer costs",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Instead, the Commission should adopt market-based approaches to encourage load—both new and existing—to be curtailable, which will mitigate undue discrimination concerns and more fully unlock the benefits of curtailable load.",
+      "concern": "Market-based approaches better incentivize curtailability across all loads without discrimination",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Preferential access to the queue raises the potential for game playing—many generators could conform their projects to include new, curtailable load, thus crowding the queue for other generators and new loads.",
+      "concern": "Preferential queue access invites gaming and could crowd out other interconnection requests",
+      "bins": [
+        "aq:expedited",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Expedited study treatment is a less effective means of unlocking the benefits of curtailable load, because it is a one-time incentive that would only apply to new large load interconnection requests.",
+      "concern": "One-time expedited study incentive ignores existing curtailable load",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "If CAISO implements real-time load bidding, DWR can provide approximately 2,600 MW of available curtailable load, because the State Water Project's water pumping operations are curtailable in response to market signals.",
+      "concern": "DWR can offer large curtailable capacity through CAISO real-time load bidding once enabled",
+      "bins": [
+        "pr:flex",
+        "rg:caiso"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Unlocking the curtailability of existing loads requires no upgrades or increased ratepayer costs—it simply requires new market functionality.",
+      "concern": "Enabling existing load curtailability through market tools costs ratepayers nothing in network upgrades",
+      "bins": [
+        "pr:flex",
+        "rg:caiso",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "New large interconnections should finance 100% of the network upgrades they are assigned through the interconnection study process.",
+      "concern": "Large loads must bear full cost of assigned network upgrades",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "If massive transmission investments are made to serve these loads, yet the expected demand does not materialize, other customers may be left holding the bag.",
+      "concern": "Speculative large load forecasts risk stranding transmission costs on existing customers",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "This assignment of costs should be paired with an appropriate crediting mechanism. This crediting mechanism might vary from region-to-region, but it must be designed to keep wholesale customers whole and disincentivize speculative load that will impose costs on wholesale customers.",
+      "concern": "Crediting mechanism must protect existing wholesale customers and deter speculative load requests",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "aq:deposits",
+        "topic:crediting-mechanism"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Such a guaranteed crediting mechanism should not be adopted for large load interconnections because these credits are not tied to particular levels of usage.",
+      "concern": "Generator-style guaranteed credits are inappropriate for large load interconnections",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:crediting-mechanism"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The Final Rule should adopt principles that guide the RTOs in their treatment of large load interconnections—but each RTO should be given the latitude to adopt a program that works best for its region.",
+      "concern": "RTOs need flexibility to tailor large load interconnection rules to regional conditions",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:regional-variation"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "the Commission should evaluate RTO/ISO implementation of any final rule in light of the independent entity variation for RTOs/ISOs.",
+      "concern": "FERC should apply independent entity variation standard when evaluating RTO compliance",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:regional-variation"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:expedited",
+      "name": "Oppose expedited curtailable load treatment",
+      "stance": "oppose",
+      "description": "DWR argues that giving expedited interconnection study treatment to curtailable loads is discriminatory, invites gaming, and ignores existing loads that could provide the same benefits. Market-based approaches are more equitable and more effective.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Large loads pay full upgrade costs",
+      "stance": "support",
+      "description": "DWR supports assigning 100% of network upgrade costs to the large loads that trigger them, paired with a crediting mechanism different from the generator model. The mechanism must require actual usage to materialize before credits are earned, to deter speculative requests.",
+      "quote_ids": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Crediting tied to actual load usage",
+      "stance": "support",
+      "description": "DWR calls for a crediting mechanism that conditions repayment on a significant portion of requested load showing up over a sustained period, distinguishing it from generator interconnection credits that are not tied to usage levels.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Respect regional RTO variation",
+      "stance": "support",
+      "description": "DWR asks FERC to apply the independent entity variation standard when evaluating RTO and ISO compliance with any final rule, giving each region latitude to design a program suited to its existing procedures and tariffs.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Queue gaming risk from preferential access",
+      "stance": "oppose",
+      "description": "DWR warns that preferential queue access for curtailable loads could cause generators to restructure projects to claim the benefit, crowding the queue for other interconnection customers.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Market-based curtailability over queue priority",
+      "stance": "support",
+      "description": "DWR favors enabling load to bid into real-time markets and participate in demand response rather than offering a one-time queue jump. DWR cites its own 2,600 MW of curtailable SWP pumping load as an example of existing curtailable capacity that market tools could unlock at no additional ratepayer cost.",
+      "quote_ids": [
+        2,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Protect wholesale customers from large load costs",
+      "stance": "support",
+      "description": "DWR supports holding new large loads financially responsible for 100% of triggered network upgrade costs and designing a crediting mechanism that keeps existing wholesale customers whole, preventing speculative interconnection requests from shifting costs onto ratepayers.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "rg:caiso",
+      "name": "CAISO real-time load bidding as model",
+      "stance": "support",
+      "description": "DWR, the largest single load in CAISO markets, describes CAISO's ongoing real-time load bidding initiative as the right tool for unlocking curtailable load capacity, and notes it could offer approximately 2,600 MW of curtailable pumping load if the functionality is restored.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:crediting-mechanism",
+      "name": "Usage-conditioned load credits",
+      "stance": "mixed",
+      "description": "DWR argues that generator-style guaranteed crediting is inappropriate for large load interconnections because credits must be tied to actual load levels over time. Any crediting design should deter over-reservation of transmission capacity.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:regional-variation",
+      "name": "Independent entity variation standard",
+      "stance": "support",
+      "description": "DWR asks FERC to use the independent entity variation standard for evaluating RTO and ISO implementation plans, consistent with how FERC handled generator interconnection reform, to give regions flexibility and recognize ongoing regional efforts.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited",
+      "upgradecost",
+      "deposits",
+      "jurisdiction"
+    ],
+    "pr": [
+      "study",
+      "flex",
+      "cost"
+    ],
+    "rg": [
+      "caiso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

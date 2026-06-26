@@ -1,0 +1,410 @@
+{
+  "accession": "20251121-5455",
+  "filer": "Electricity Consumers Resource Council",
+  "org_type": "industrial",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5455__Electricity-Consumers-Resource-Council/RM26-4  ELCON Large Load Interconnection ANOPR Comments - FINAL.txt",
+  "overall_summary": "ELCON, representing large industrial electricity consumers, broadly supports the DOE ANOPR principles but warns against unintended consequences for existing industrial load arrangements. The filing calls for jurisdiction that tracks the existing seven-factor test, opposes arbitrary MW thresholds in favor of region-specific approaches, endorses cost causation with build-option flexibility, and urges that traditional industrial load owners not be swept into NERC registration or public utility status.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the Commission and the DOE should recognize that industrials and manufacturers have worked with their utilities and regulators for decades to ensure equitable access to generation supply and grid services and nothing in this proposal should impose unintended consequences on load interconnection arrangements that work for those customers.",
+      "concern": "Existing industrial load arrangements must not be disrupted by new large-load rules",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:protect-existing-arrangements"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "ELCON supports the first principle that Commission jurisdiction over large load interconnection be consistent with the existing seven-factor test which takes into consideration a facility's location, voltage, ownership, and operational function.",
+      "concern": "Jurisdiction should follow the existing seven-factor test, not expand beyond it",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "As the Commission is now directed to assert its jurisdiction over customer interconnections normally overseen at the state level, states must be given ample opportunity for review and input as interconnection decisions will have some impact on retail rates.",
+      "concern": "State regulators need meaningful input on federal jurisdictional expansion affecting retail rates",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-federal-coordination"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Rather than instituting an arbitrary MW threshold, the Commission should understand what load interconnection protocols have already been established in certain regions and tailor principles to address the bottlenecks that are specific to new large loads and their electricity needs.",
+      "concern": "A fixed MW threshold is too blunt; rules should be tailored to regional protocols",
+      "bins": [
+        "aq:threshold",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "responsible entities should be provided with an opportunity to demonstrate that its current rules and procedures meet or exceed any Commission guidelines.",
+      "concern": "Regions that already have adequate procedures should be able to satisfy requirements without wholesale replacement",
+      "bins": [
+        "aq:threshold",
+        "pr:study",
+        "topic:regional-deference"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "While ELCON agrees with principle four that the Commission should require implementation of readiness requirements, deposits, and penalties to large load interconnection requests similar to the generator interconnection process, these readiness requirements may already exist in many regions and the Commission should not take any action that would render these established and agreed upon requirements unworkable.",
+      "concern": "Deposits and readiness requirements are supported but must not override existing regional arrangements",
+      "bins": [
+        "aq:deposits",
+        "topic:protect-existing-arrangements"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Requirements that are specifically targeted to remove speculative projects that will never be built (or projects that 'shop' multiple connection points) will effectively reduce the number of studies to be performed and provide a more accurate load forecast.",
+      "concern": "Anti-speculation deposit rules improve queue discipline and load forecasting accuracy",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "ELCON appreciates the flexibility provided by principles five through seven to study load interconnection requests according to their operational needs and allow for expedited study for those customers agreeing to be curtailable and/or dispatchable.",
+      "concern": "Flexible study processes that reflect operational reality are supported",
+      "bins": [
+        "aq:expedited",
+        "pr:flex",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the Commission should implement safeguards that clearly define \"curtailable\" and \"dispatchable\" including details of how much, when, and how in order to enforce those commitments.",
+      "concern": "Curtailability and dispatchability commitments need enforceable definitions",
+      "bins": [
+        "aq:expedited",
+        "pr:flex",
+        "topic:definition-and-enforcement"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "We caution the Commission to be aware that developers with massive amounts of capital can push other projects, that struggle to meet steep readiness obligations, further down the interconnection queue.",
+      "concern": "Steep readiness requirements risk queue access for capital-constrained industrial projects",
+      "bins": [
+        "aq:deposits",
+        "pr:cost",
+        "topic:queue-equity"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "ELCON agrees with principle eight that load be responsible for any necessary network upgrades necessary to connect their facilities to the grid.",
+      "concern": "Cost causation: large loads should pay for the upgrades they require",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "We ask that the Commission provide flexibility in the financial and crediting mechanisms to pay for those upgrade costs as well as provide the option to build those upgrades as set out in principle nine.",
+      "concern": "Large loads should have the option to self-build required upgrades and receive appropriate credits",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:build-option"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the Commission should expand upon Principle 12 to actively encourage large loads to become system solutions. Curtailable and dispatchable large loads provide a demonstrable system benefit akin to essential ancillary services (such as operating and contingency reserves). The final rule must establish clear mechanisms to compensate these customers for the reliability value they provide, creating a critical financial incentive to offer flexible service that ultimately defers costly transmission and generation build-out for the benefit of all ratepayers.",
+      "concern": "Flexible large loads that provide ancillary-service-like benefits should be compensated for that reliability value",
+      "bins": [
+        "pr:flex",
+        "pr:cost",
+        "topic:demand-response-compensation"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "ELCON maintains that the electric system has reliably served industrial load for decades and it remains unnecessary to require owners/operators of traditional large industrial loads to be NERC registered entities and subjected to mandatory reliability standards.",
+      "concern": "Traditional industrial load owners should not be required to register with NERC",
+      "bins": [
+        "aq:protection",
+        "topic:nerc-registration"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "ELCON does not oppose limited registration for data centers and other computational loads as described by NERC's Large Load Task Force in Whitepaper #1 that carry minimal compliance burdens that are commensurate with specifically identified reliability risks posed by the nature of these emerging loads.",
+      "concern": "Limited NERC registration for data centers is acceptable if burdens are minimal and targeted",
+      "bins": [
+        "aq:protection",
+        "topic:nerc-registration"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "ELCON respectfully urges FERC to ensure that these changes do not have the unintended consequence of making new registrants \"public utilities\" under the broad definition of that term in Section 201(e) of the FPA.",
+      "concern": "New reliability registrants must not inadvertently become FERC-jurisdictional public utilities",
+      "bins": [
+        "aq:protection",
+        "aq:jurisdiction",
+        "topic:nerc-registration"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Varying configurations of large loads, sometimes combined with behind-the-meter generation, must be considered in interconnection studies to allow for the most efficient solutions to serving large loads.",
+      "concern": "Studies must accommodate hybrid behind-the-meter generation configurations",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Coordinating the generator interconnection process with the large load interconnection process would, in itself, improve load forecasting as well as siting decisions, as recognized in the ANOPR.",
+      "concern": "Coordinating load and generator queues improves forecasting and siting",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Jurisdiction via seven-factor test",
+      "stance": "support",
+      "description": "ELCON supports FERC jurisdiction over large load interconnection but insists it follow the existing seven-factor test covering location, voltage, ownership, and operational function. The Commission should clarify jurisdictional lines with states, whose retail rate authority is implicated, and must avoid inadvertently converting industrial load owners into FERC-regulated public utilities.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        16
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "No arbitrary MW threshold",
+      "stance": "oppose",
+      "description": "ELCON opposes a bright-line MW threshold as too blunt to capture the varied characteristics of new large loads. The Commission should instead survey existing regional protocols and tailor rules to actual bottlenecks, allowing regions with adequate procedures to demonstrate compliance without wholesale replacement.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Coordinate load and generator queues",
+      "stance": "support",
+      "description": "ELCON supports coordinating the large load interconnection queue with the generator interconnection process to improve load forecasting and siting decisions.",
+      "quote_ids": [
+        18
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Deposits to curb speculation",
+      "stance": "support",
+      "description": "ELCON supports readiness requirements, deposits, and penalties modeled on generator interconnection to remove speculative projects and improve load forecasting accuracy, but cautions that existing regional arrangements must not be rendered unworkable. Steep deposit levels risk disadvantaging capital-constrained industrial applicants relative to well-capitalized developers.",
+      "quote_ids": [
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid configurations in studies",
+      "stance": "support",
+      "description": "ELCON urges that interconnection studies accommodate large loads combined with behind-the-meter generation, reflecting the full range of hybrid configurations needed to serve these customers most efficiently.",
+      "quote_ids": [
+        17
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Protect industrials from NERC overreach",
+      "stance": "support",
+      "description": "Traditional industrial load owners have been reliably served for decades without NERC registration and should not be newly required to register. ELCON accepts limited, targeted registration for data centers where reliability risks are specific and compliance burdens are minimal, but opposes any rule that inadvertently reclassifies industrial owners as public utilities.",
+      "quote_ids": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited study for curtailable loads",
+      "stance": "support",
+      "description": "ELCON supports offering expedited interconnection study to loads that commit to being curtailable or dispatchable. The Commission must define those terms precisely, including how much, when, and how curtailment applies, to make the commitments enforceable.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Cost causation with build option",
+      "stance": "support",
+      "description": "ELCON endorses the cost causation principle: large loads pay for the network upgrades their connections require. The Commission should pair that obligation with flexible crediting mechanisms and an option for the load to self-build required upgrades, easing pressure on utility capital budgets.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study flexibility for new loads",
+      "stance": "support",
+      "description": "ELCON supports interconnection studies tailored to the operational needs of new large loads, including coordination with generator queues for better forecasting. Regions with existing adequate protocols should be able to satisfy requirements without being overridden by one-size-fits-all federal rules.",
+      "quote_ids": [
+        4,
+        5,
+        7,
+        8,
+        17,
+        18
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost causation and ratepayer protection",
+      "stance": "support",
+      "description": "ELCON strongly endorses cost causation so large loads bear upgrade costs rather than spreading them to other customers. It also asks for flexibility in financial mechanisms and self-build options, and raises concern that well-capitalized developers could displace industrial applicants in the queue if readiness obligations are set too high.",
+      "quote_ids": [
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location and hybrid configurations",
+      "stance": "support",
+      "description": "ELCON has advocated for co-location flexibility in prior proceedings and extends that position here, urging that hybrid load-plus-generation configurations be accommodated in interconnection studies.",
+      "quote_ids": [
+        17
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexible service and demand response value",
+      "stance": "support",
+      "description": "ELCON supports flexibility in study processes for curtailable and dispatchable loads and calls for clear definitions to make those commitments enforceable. It also urges compensation mechanisms for the ancillary-service-like reliability value that flexible large loads provide, which would reduce the need for new transmission and generation.",
+      "quote_ids": [
+        8,
+        9,
+        13
+      ]
+    },
+    {
+      "key": "topic:protect-existing-arrangements",
+      "name": "Protect working industrial agreements",
+      "stance": "mixed",
+      "description": "A recurring theme throughout the filing is that existing load interconnection arrangements negotiated by industrials with their utilities and state regulators should not be disrupted. New federal rules should supplement, not override, arrangements that already work.",
+      "quote_ids": [
+        1,
+        6
+      ]
+    },
+    {
+      "key": "topic:state-federal-coordination",
+      "name": "State input on federal expansion",
+      "stance": "neutral",
+      "description": "As FERC assumes jurisdiction over connections traditionally overseen at the state level, ELCON calls for states to have meaningful review and input given the impact interconnection decisions have on retail rates.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "topic:regional-deference",
+      "name": "Deference to regional protocols",
+      "stance": "support",
+      "description": "ELCON urges FERC to survey existing regional large load protocols before imposing new rules and to allow regions that already meet or exceed federal guidelines to demonstrate that compliance.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "topic:definition-and-enforcement",
+      "name": "Define curtailability and dispatchability",
+      "stance": "support",
+      "description": "Any expedited-study benefit tied to curtailability or dispatchability must rest on precise, enforceable definitions specifying the quantity, timing, and mechanism of curtailment.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:queue-equity",
+      "name": "Queue equity for capital-constrained applicants",
+      "stance": "neutral",
+      "description": "ELCON cautions that steep readiness obligations could favor well-capitalized developers and push industrial projects further back in the interconnection queue, reducing equitable access.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:build-option",
+      "name": "Self-build option for upgrades",
+      "stance": "support",
+      "description": "Large customers willing to invest in their own infrastructure should have the option to build required network upgrades themselves, relieving utility budget pressure and accelerating connections.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:demand-response-compensation",
+      "name": "Compensate flexible load system value",
+      "stance": "support",
+      "description": "Curtailable and dispatchable large loads provide reliability benefits comparable to ancillary services. ELCON calls for explicit compensation mechanisms so that these benefits are recognized and incentivized, deferring costly new build-out for all ratepayers.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:nerc-registration",
+      "name": "Limit NERC registration to new loads",
+      "stance": "mixed",
+      "description": "ELCON opposes mandatory NERC registration for traditional industrial loads, accepting only limited registration for data centers with targeted, minimal burdens. Any new registration must not inadvertently reclassify industrial owners as public utilities under FPA Section 201(e).",
+      "quote_ids": [
+        14,
+        15,
+        16
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

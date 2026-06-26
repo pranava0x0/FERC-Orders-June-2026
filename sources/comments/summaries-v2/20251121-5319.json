@@ -1,0 +1,307 @@
+{
+  "accession": "20251121-5319",
+  "filer": "The Thermal Battery Alliance",
+  "org_type": "clean_energy",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5319__The-Thermal-Battery-Alliance/Thermal Battery Alliance Comments RM26-4-000 11.21.25.txt",
+  "overall_summary": "The Thermal Battery Alliance supports FERC's proposed large-load interconnection reforms and urges the Commission to explicitly recognize hyper-flexible loads such as thermal energy storage (TES) as a distinct category warranting expedited queue treatment, accurate peak-avoiding modeling, non-firm transmission service options, and direct wholesale market access. TBA argues that current interconnection rules treat all loads as inflexible peak contributors, distorting competition and raising entry barriers for innovative industrial technologies. The filing calls for cost assignments tied to actual cost causation, enforceable flexibility commitments modeled into studies, and clear transition rules protecting state-process participants.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "When tariffs treat all loads as inflexible peak contributors, they distort competition, raise barriers to entry, and suppress innovation in flexible industrial technologies.",
+      "concern": "Current tariff structure discriminates against flexible loads by assuming peak operations",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "topic:competitive-neutrality"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Allowing large flexible loads the ability to connect expeditiously, manage their wholesale risks and commit to dispatchability will support a more affordable, resilient grid for all customers.",
+      "concern": "Expedited interconnection and dispatchability commitments improve grid affordability",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "TBA strongly recommends that interconnection studies explicitly incorporate enforceable curtailment commitments and multi-day load-shifting capabilities.",
+      "concern": "Studies should model enforceable flexibility rather than assume inflexible peak operations",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Current modeling practices often inaccurately assume flexible loads will operate inflexibly, resulting in assignment of unnecessary network upgrade costs, resource requirements and reserve margin.",
+      "concern": "Inaccurate modeling forces unnecessary upgrade cost assignments on flexible loads",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Such mis-modeling functions as a regulatory barrier to competition, encouraging only high-load factor and low-flexibility loads, resulting in an under-utilized grid and higher costs for consumers.",
+      "concern": "Inflexible modeling biases interconnection toward inflexible loads and raises consumer costs",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "topic:competitive-neutrality"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The Commission should require transmission providers to provide such loads with expedited interconnection treatment by giving them queue priority.",
+      "concern": "Flexible loads should receive queue priority as a recognition of lower system risk",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Queue priority is appropriate because loads that can demonstrate asset-backed flexibility pose substantially lower system risks during periods of grid stress and should therefore be eligible for accelerated review.",
+      "concern": "Asset-backed flexibility justifies accelerated queue review",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Flexible loads that select non-firm service and can avoid peak loads should receive reduced interconnection and transmission upgrade requirements, and should avoid all network resource and resource adequacy/capacity requirements.",
+      "concern": "Non-firm service for flexible loads should eliminate network resource and capacity obligations",
+      "bins": [
+        "pr:cost",
+        "pr:flex",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "TBA strongly encourages the Commission to adopt a clear policy supporting the co-location and adjacent location of generation and flexible loads (forms of dispatchable, curtailable 'hybrid facilities,' as that term is used in the ANOPR).",
+      "concern": "Clear co-location policy for hybrid generation-and-load facilities is needed",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Designation as a hybrid facility should not prevent the generation component of the facility from offering its capacity into the market where the co-located or adjacent load can separately curtail and does not need the capacity.",
+      "concern": "Hybrid facility status should not bar generation from selling capacity independently",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Cost allocation should reflect the principle that customers pay the costs they impose on the system, minus any benefits they provide.",
+      "concern": "Cost causation principle should govern interconnection cost allocation",
+      "bins": [
+        "pr:cost",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "asset-backed flexibility is more predictable, more reliable and more durable because it arises from technological and operational capabilities rather than administrative arrangements.",
+      "concern": "Asset-backed flexibility is more reliable than contractual demand response for reliability planning",
+      "bins": [
+        "pr:study",
+        "topic:enforceable-flexibility"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "TBA recommends clarifying that wholesale purchases of electricity for conversion into resale as thermal energy qualify as wholesale transactions.",
+      "concern": "TES wholesale market access requires clarification of transaction classification",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:wholesale-market-access"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "entities may continue to submit interconnection requests into state-jursidictional interconnection processes. Further, the Commission should specify that entities that have submitted an interconnection request pursuant to a state-jurisdictional process have the option of continuing with that process, and make clear that interconnection agreements obtained through such a process shall remain valid.",
+      "concern": "Transition rules should protect entities already in state interconnection processes",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:transition-rules"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Fix flexible-load modeling",
+      "stance": "support",
+      "description": "TBA argues that interconnection studies must model enforceable curtailment commitments and multi-day load-shifting. Current practice assumes all loads operate at peak, causing unjustified upgrade cost assignments and blocking entry of flexible technologies. Asset-backed flexibility, such as TES, is more reliable than contractual demand response and should be modeled accordingly.",
+      "quote_ids": [
+        1,
+        3,
+        4,
+        5,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost causation for flexible loads",
+      "stance": "support",
+      "description": "TBA supports cost allocation tied to actual system impacts: flexible loads that avoid peak demand should not bear peak-driven upgrade or capacity costs. Inaccurate modeling inflates cost assignments, biases the market toward inflexible loads, and raises costs for consumers. Non-firm service election should reduce both interconnection and capacity requirements.",
+      "quote_ids": [
+        1,
+        4,
+        5,
+        8,
+        11
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Expedited treatment for flexible loads",
+      "stance": "support",
+      "description": "TBA calls for queue priority and streamlined study timelines for loads that commit to peak avoidance and operator-directed curtailment. Asset-backed flexibility lowers system risk during stress periods, justifying accelerated review. Non-firm service should be available so flexible loads can interconnect without securing network resources.",
+      "quote_ids": [
+        2,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Clear co-location policy needed",
+      "stance": "support",
+      "description": "TBA urges a clear policy permitting co-location and adjacent siting of generation and flexible loads as hybrid facilities. Hybrid configurations should be studied on net load, and the generation component should retain the ability to offer capacity into markets when the load can separately curtail.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited queue for asset-backed flex",
+      "stance": "support",
+      "description": "TBA recommends that loads with enforceable, asset-backed flexibility commitments receive expedited interconnection treatment and queue priority, because they pose lower system risk during grid stress than inflexible high-load-factor customers.",
+      "quote_ids": [
+        2,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Studies must reflect flexibility",
+      "stance": "support",
+      "description": "Interconnection studies should incorporate enforceable curtailment commitments and multi-day load-shifting capabilities so that flexible loads are not over-studied relative to their actual grid impact.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20 MW threshold is reasonable",
+      "stance": "support",
+      "description": "TBA agrees the 20 MW threshold for FERC jurisdiction is appropriate given existing large generator interconnection precedent, and supports non-firm service options for flexible loads above that threshold.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Cost causation governs deposits",
+      "stance": "support",
+      "description": "Cost assignments, including deposits, should reflect the costs a load actually imposes on the system, giving credit for benefits such as peak avoidance.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid facility market rights",
+      "stance": "support",
+      "description": "TBA seeks a clear policy that hybrid facilities can be studied on net load and that co-located generation retains capacity market rights when the load curtails independently.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Jurisdictional transition and TES classification",
+      "stance": "support",
+      "description": "TBA asks FERC to protect entities already in state interconnection processes during the transition to federal jurisdiction, and to clarify that wholesale electricity purchases for conversion to thermal energy count as wholesale transactions.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "topic:competitive-neutrality",
+      "name": "Level playing field for flexible loads",
+      "stance": "support",
+      "description": "TBA argues that treating all loads as inflexible peak contributors distorts competition, discourages innovation, and favors legacy high-load-factor technologies. Accurate modeling and fair cost allocation are the structural fixes needed for competitive neutrality.",
+      "quote_ids": [
+        1,
+        5
+      ]
+    },
+    {
+      "key": "topic:enforceable-flexibility",
+      "name": "Enforceable vs. contractual flexibility",
+      "stance": "support",
+      "description": "TBA distinguishes asset-backed enforceable flexibility, where curtailment is inherent to the technology and business model, from contractual demand response that depends on financial penalties. The former is more durable and should be recognized as a distinct reliability contribution.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:wholesale-market-access",
+      "name": "TES wholesale transaction clarity",
+      "stance": "support",
+      "description": "TBA recommends that FERC clarify that wholesale electricity purchases for conversion into resale as thermal energy qualify as wholesale transactions, resolving an uneven playing field among different TES configurations.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:transition-rules",
+      "name": "Protect state-process participants",
+      "stance": "support",
+      "description": "TBA asks for clear rules preserving existing state interconnection agreements and allowing entities in state processes to continue or optionally switch to the new FERC pathway, avoiding market disruption during the jurisdictional transition.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited",
+      "jointstudy",
+      "threshold",
+      "deposits",
+      "hybridrights",
+      "jurisdiction"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex",
+      "colo"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

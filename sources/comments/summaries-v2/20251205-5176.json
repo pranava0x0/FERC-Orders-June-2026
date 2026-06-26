@@ -1,0 +1,286 @@
+{
+  "accession": "20251205-5176",
+  "filer": "Verrus LLC",
+  "org_type": "generator_ipp",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5176__Verrus-LLC/Reply Comments of Verrus LLC on Large Load ANOPR.txt",
+  "overall_summary": "Verrus LLC, a developer of flexible hyperscale data centers with integrated battery storage, urges FERC to adopt four reforms: define a Flexible Load subclass, create a fast-track interconnection lane, recognize flexible loads as reliability resources, and align cost allocation to avoid making flexible loads subsidize inflexible ones. Verrus argues the current one-size-fits-all approach is unjust discrimination and that expedited study for curtailable loads is an engineering efficiency, not queue-jumping.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the current \"one-size-fits-all\" approach to large load interconnection is unjust, unreasonable, and unduly discriminatory.",
+      "concern": "Existing rules treat flexible and inflexible loads identically, constituting undue discrimination",
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Existing rules generally fail to distinguish between loads that strain the grid and loads that possess the physical capability to support it.",
+      "concern": "Current framework does not differentiate grid-supportive loads from grid-stressing ones",
+      "bins": [
+        "pr:flex",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the current framework forces flexible loads to cross-subsidize inflexible ones, requiring customers who can operationally avoid the need for network upgrades to pay for infrastructure that is only necessary for their inflexible peers.",
+      "concern": "Cost cross-subsidization from flexible to inflexible loads under current rules",
+      "bins": [
+        "pr:cost",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "it forces these agile resources to wait in queues behind projects requiring years of costly upgrades, rather than allowing them to connect quickly by leveraging the underutilized non-peak grid capacity already in place.",
+      "concern": "Queue sequencing delays flexible loads that could use existing headroom",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Verrus strongly opposes proposals that would assign network upgrade costs directly to a large load customer if that customer has made commitments to exercise operational flexibility to avoid triggering the upgrade.",
+      "concern": "Opposition to assigning upgrade costs to loads that commit to avoid triggering those upgrades",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Assigning the full cost of a network upgrade to a flexible load that has committed to curtail—and thus does not cause the need for the upgrade—would be unjust and unreasonable.",
+      "concern": "Full cost assignment to curtailing loads is unjust when the load avoids causing the upgrade",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "a load should qualify for the \"Flexible\" subclass (and the associated fast-lane study) if it commits to curtailing the greater of 20 MW or 25% of its total load.",
+      "concern": "Proposes a specific curtailment threshold of 20 MW or 25% of load for flexible subclass eligibility",
+      "bins": [
+        "aq:threshold",
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Insisting on 100% curtailability would strand significant value. A facility that can curtail 50% or even 25% of a massive load could still offer hundreds of megawatts of relief to the system—relief that can avoid upgrades and improve reliability.",
+      "concern": "Rejects ISO-NE's 100% curtailability requirement as too restrictive",
+      "bins": [
+        "aq:threshold",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Verrus agrees with the California Independent System Operator (\"CAISO\") and Transmission Access Policy Study Group (\"TAPS\") that \"strict, unwavering protections\" are necessary to ensure that flexible loads meet their curtailment obligations.",
+      "concern": "Supports strong enforcement mechanisms to back up flexibility commitments",
+      "bins": [
+        "aq:protection",
+        "pr:flex",
+        "rg:caiso"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "an expedited timeline is not discriminatory \"queue jumping\" as some commenters have suggested—it simply reflects the reduced time required to study a simpler project and the efficiency gains realized when faster projects are allowed to move at a faster pace.",
+      "concern": "Defends fast-track as an engineering efficiency, not unfair preference",
+      "bins": [
+        "aq:expedited",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Treating a flexible project that requires zero network upgrades with the same study duration as a massive, inflexible load that requires new transmission lines is, in itself, discriminatory. It delays the efficient project for no technical reason.",
+      "concern": "Uniform study timelines for flexible and inflexible loads are themselves discriminatory",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Southwest Power Pool's (\"SPP\") recent High Impact Large Load Generation Assessment (\"HILLGA\") proposal recognizes that integrating the study of load with electrically proximate generation/resources is more efficient than standalone regulation.",
+      "concern": "Cites SPP HILLGA as precedent for integrated load-generation study and proximate co-location benefits",
+      "bins": [
+        "rg:spp",
+        "pr:proximate",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "When a technical pathway exists to interconnect large loads quickly—because they do not require network upgrades—requiring them to proceed at the pace of the slowest, most complex projects is a policy error the country cannot afford.",
+      "concern": "Slow processing of easy interconnections is a strategic policy error",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "It could create a separate \"Flexible Large Load\" interconnection class with distinct processes and transmission service cost structures, or establish separate classes of transmission service (e.g., conditional firm service) that large loads can select.",
+      "concern": "Offers two structural options for accommodating flexible load cost and study treatment",
+      "bins": [
+        "pr:cost",
+        "pr:flex",
+        "topic:tariff-structure"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Flexible load subclass definition",
+      "stance": "support",
+      "description": "Verrus urges FERC to create a formal Flexible Load subclass for asset-backed loads that commit to material, verifiable curtailment. The filing argues the current one-size-fits-all framework unjustly treats grid-supportive and grid-stressing loads identically, and proposes a threshold of the greater of 20 MW or 25% of total load for qualification. Verrus rejects the 100% curtailability bar some commenters propose as unnecessarily restrictive.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        11,
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation avoids upgrade cross-subsidy",
+      "stance": "support",
+      "description": "Verrus strongly opposes assigning full network upgrade costs to loads that commit to curtailment and therefore do not cause the need for the upgrade. The filing argues that flexible loads currently cross-subsidize inflexible ones and calls on FERC to ensure any tariff structure lets flexible loads avoid upgrade cost assignment through curtailment commitments.",
+      "quote_ids": [
+        3,
+        5,
+        6,
+        14
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Expedited study reflects simpler scope",
+      "stance": "support",
+      "description": "Verrus argues that a fast-track study lane for curtailable loads is not discriminatory queue-jumping but an engineering efficiency: when a load commits to curtail, the study scope shrinks and a shorter timeline is warranted. Treating a no-upgrade project at the same pace as a complex one is itself discriminatory.",
+      "quote_ids": [
+        1,
+        2,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Fast-track lane for flexible loads",
+      "stance": "support",
+      "description": "Verrus urges FERC to implement a standardized expedited interconnection lane for loads with verifiable flexibility commitments. The filing cites CAISO's observation that curtailable facilities are generally easier to study and argues that fast-tracking simple projects clears the queue for everyone and is a strategic imperative for national competitiveness.",
+      "quote_ids": [
+        4,
+        7,
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Curtailment threshold at 20 MW or 25%",
+      "stance": "support",
+      "description": "Verrus proposes that loads qualify for the flexible subclass by committing to curtail the greater of 20 MW or 25% of total load, anchored to Order No. 2003 precedent for defining a large generator. The filing opposes requiring 100% curtailability, arguing partial curtailment of a large load still provides substantial system relief.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "No upgrade costs for curtailing loads",
+      "stance": "oppose",
+      "description": "Verrus directly opposes the ANOPR's 100% cost-to-load principle when applied to loads that commit to avoid triggering the upgrade. The filing calls such assignment unjust and unreasonable and proposes alternative tariff structures so flexible loads can opt out of upgrade cost responsibility.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Strict enforcement of curtailment commitments",
+      "stance": "support",
+      "description": "Verrus agrees with CAISO and TAPS that strict protections, including real-time telemetry and potentially physical circuit protection schemes, are needed to make asset-backed flexibility commitments credible enough for transmission providers to rely on in lieu of network upgrades.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "rg:caiso",
+      "name": "CAISO supports curtailable load study",
+      "stance": "neutral",
+      "description": "Verrus cites CAISO's comments as supporting the position that curtailable loads are easier to study and interconnect, and endorses CAISO's call for strict curtailment protections.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP HILLGA as fast-track precedent",
+      "stance": "neutral",
+      "description": "Verrus points to SPP's HILLGA proposal as an emerging precedent for integrating load and generation study together and recognizing co-location and proximity benefits that reduce upgrade needs.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Proximate load-generation integration",
+      "stance": "support",
+      "description": "Verrus cites the SPP HILLGA approach of studying loads together with electrically proximate generation as a model FERC should adopt nationwide, because the integrated approach can identify co-location opportunities that reduce upgrade needs and speed interconnection.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:tariff-structure",
+      "name": "Tariff options for flexible load class",
+      "stance": "support",
+      "description": "Verrus identifies two structural tariff pathways FERC could use: creating a distinct Flexible Large Load interconnection class with separate cost structures, or establishing separate transmission service classes such as conditional firm service. Both approaches would let flexible loads avoid costs tied to upgrades they do not cause.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited",
+      "threshold",
+      "upgradecost",
+      "protection"
+    ],
+    "pr": [
+      "flex",
+      "cost",
+      "study",
+      "proximate"
+    ],
+    "rg": [
+      "caiso",
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
