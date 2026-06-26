@@ -1,0 +1,243 @@
+{
+  "accession": "20251121-5234",
+  "filer": "Land Trust Alliance",
+  "org_type": "enviro",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5234__Land-Trust-Alliance/Comments of Land Trust Alliance FERC Docket No RM26_4_000.txt",
+  "overall_summary": "The Land Trust Alliance urges FERC to design large-load interconnection rules that protect conserved lands from transmission condemnation by prioritizing co-location, grid optimization, and demand flexibility. The Alliance asks that new large-load facilities bear upgrade costs, disclose actual energy use for accurate planning, and curtail power during grid emergencies until they add sufficient generation. Avoiding conserved and high-value agricultural lands is the organizing principle behind all eight of its recommendations.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "governmental taking of lands, including already conserved lands, for the construction of transmission infrastructure, is the most frequent means of grid expansion, as opposed to co-location or other less impactful but equally effective alternatives.",
+      "concern": "Transmission buildout routinely condemns conserved lands when less harmful alternatives exist.",
+      "bins": [
+        "pr:colo",
+        "topic:conserved-land-protection"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Conserved lands are lands that are owned by a land conservation entity for conservation purposes or by a private landowner, including working lands, and are subject to a conservation easement or conservation deed.",
+      "concern": "Definition of conserved lands covered by the Alliance's advocacy.",
+      "bins": [
+        "topic:conserved-land-protection"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "When a taking of conserved lands for transmission occurs, losses include, but are not limited to, food and fiber production, drinking water quality, carbon dioxide storage and sequestration, and habitat conservation.",
+      "concern": "Transmission takings destroy multiple public benefits of conserved land.",
+      "bins": [
+        "topic:conserved-land-protection"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the waste of the billions of taxpayer dollars that funded the acquisition of these conservation protections.",
+      "concern": "Takings of conserved land destroy public investment funded by taxpayers.",
+      "bins": [
+        "topic:conserved-land-protection",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "FERC should seek to identify and advance transmission projects that avoid conserved lands and yet-to-be-conserved lands of high conservation or agricultural value.",
+      "concern": "FERC should route transmission away from conserved and high-value agricultural land.",
+      "bins": [
+        "topic:conserved-land-protection",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The Alliance encourages FERC to support the re-conductoring of existing transmission lines with higher-performance wires, which can rapidly increase transmission capacity at a low cost.",
+      "concern": "Re-conductoring is a low-cost way to expand capacity without new land disturbance.",
+      "bins": [
+        "pr:study",
+        "topic:grid-optimization"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Alliance recommends the co-location of large energy users, such as data centers, together with existing energy generation sources to minimize the need for new transmission buildout.",
+      "concern": "Co-location with existing generation cuts new transmission and conserved-land harm.",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Where new energy generation sources are needed, the Alliance recommends the co-location of large-scale energy uses, such as data centers, with renewable energy and battery energy storage systems.",
+      "concern": "New large loads should pair with renewables and storage rather than conventional generation.",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "FERC should develop rulemaking on how developers should meaningfully engage with the public on proposed AI data centers and related transmission infrastructure to address community concerns and reduce the costs and timelines for projects to be completed.",
+      "concern": "Mandatory community engagement reduces opposition and project delays.",
+      "bins": [
+        "topic:community-engagement"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "FERC should require or incentivize transmission infrastructure planners and developers to reach out to land trusts serving the communities they identified for development.",
+      "concern": "Land trusts should be consulted early in siting to identify conservation conflicts and offsets.",
+      "bins": [
+        "topic:community-engagement",
+        "topic:conserved-land-protection"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Without data on the actual energy usage of large energy users like data centers, grid planners can't determine what level of grid expansion is needed and where.",
+      "concern": "Missing energy-use data from data centers undermines transmission planning accuracy.",
+      "bins": [
+        "pr:study",
+        "topic:load-forecast-accuracy"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "forecasts of electricity demand stemming from data center growth are beset with uncertainty — the extent and pace of data center demand growth remain highly uncertain, and the specific locations even more difficult to predict.",
+      "concern": "Data center load forecasts are inherently uncertain and likely biased upward.",
+      "bins": [
+        "pr:study",
+        "topic:load-forecast-accuracy"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "if the projected data center load fails to fully materialize, then the cost of these assets — whether power plants or pipeline infrastructure — would be borne by other utility customers.",
+      "concern": "Overbuilt infrastructure from inflated forecasts shifts costs to existing ratepayers.",
+      "bins": [
+        "pr:cost",
+        "topic:load-forecast-accuracy"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Placing the costs of upgrading transmission infrastructure on new large load users, such as data centers, and not on pre-existing customers, will likely reduce strain on the grid, as large load facilities would be incentivized to minimize their energy consumption.",
+      "concern": "Cost causation pricing deters excessive load growth and protects existing ratepayers.",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "FERC should require any new large load facility to reduce power use during peak load grid emergencies until that user has added enough generation capacity to cover its own energy demand.",
+      "concern": "Demand flexibility should be a precondition for interconnection until a facility is self-sufficient in generation.",
+      "bins": [
+        "pr:flex"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:colo",
+      "name": "Co-location to cut transmission need",
+      "stance": "support",
+      "description": "The Alliance strongly favors co-location of large loads with existing or new renewable generation as the primary tool for reducing new transmission buildout and the resulting harm to conserved lands. It recommends pairing data centers with renewables and battery storage where new generation is required.",
+      "quote_ids": [
+        1,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Accurate siting and load forecasting",
+      "stance": "support",
+      "description": "The Alliance urges FERC to base transmission planning on accurate, non-inflated load forecasts from large energy users and to route projects away from conserved and high-value agricultural lands. It also endorses re-conductoring as a near-term capacity tool that avoids new land disturbance.",
+      "quote_ids": [
+        5,
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Causers bear upgrade costs",
+      "stance": "support",
+      "description": "The Alliance recommends that new large-load facilities pay for transmission upgrades they require rather than passing those costs to existing ratepayers. It also warns that overbuilt infrastructure from inflated demand forecasts would saddle ordinary customers with stranded-asset costs.",
+      "quote_ids": [
+        4,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Demand flexibility as interconnection condition",
+      "stance": "support",
+      "description": "The Alliance recommends that FERC require new large loads to curtail power during peak grid emergencies until they add enough generation to cover their own demand. Demand flexibility lets new loads interconnect quickly using existing grid headroom without new transmission.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "topic:conserved-land-protection",
+      "name": "Protect conserved lands from condemnation",
+      "stance": "support",
+      "description": "The Alliance's central concern is that transmission buildout routinely condemns conserved lands, destroying ecosystem services, agricultural livelihoods, and the taxpayer investment in conservation easements. It calls on FERC to require avoidance of conserved lands in siting and, where avoidance is impossible, to mandate mitigation and full compensation.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        10
+      ]
+    },
+    {
+      "key": "topic:grid-optimization",
+      "name": "Maximize existing grid capacity",
+      "stance": "support",
+      "description": "The Alliance urges FERC to support re-conductoring, grid-enhancing technologies, microgrids, and virtual power plants as low-land-impact ways to expand effective transmission capacity before building new lines.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:community-engagement",
+      "name": "Mandatory developer-community outreach",
+      "stance": "support",
+      "description": "The Alliance asks FERC to require or financially incentivize transmission developers to engage meaningfully with local communities and land trusts before siting decisions are made, reducing opposition delays and surfacing conservation conflicts early.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:load-forecast-accuracy",
+      "name": "Require data center load disclosure",
+      "stance": "support",
+      "description": "The Alliance cites research showing data center demand forecasts are likely overestimated due to chip supply constraints and duplicate interconnection requests. It recommends FERC require large users to disclose actual energy consumption so planning rests on realistic rather than inflated projections.",
+      "quote_ids": [
+        11,
+        12,
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "colo",
+      "study",
+      "cost",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

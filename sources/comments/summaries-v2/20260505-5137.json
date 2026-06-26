@@ -1,0 +1,217 @@
+{
+  "accession": "20260505-5137",
+  "filer": "Buckeye Power, Inc.",
+  "org_type": "generator_ipp",
+  "filed": "05/05/2026",
+  "source_text": "sources/comments/files/20260505-5137__Buckeye-Power-Inc/RM26-4 -- Buckeye Supplemental Comments -- ANOPR.txt",
+  "overall_summary": "Buckeye Power, a wholesale transmission customer in PJM, argues that state-only solutions cannot protect all customers from transmission cost shifting caused by large loads like data centers, and that FERC action is both necessary and legally required. Buckeye supports requiring large loads to bear 100% of the network upgrade costs they cause, or alternatively holding the relevant wholesale transmission entity responsible, preserving state authority over retail rates while shielding other wholesale customers. Buckeye warns that ad hoc bilateral agreements are inconsistent and insufficient, and urges FERC to issue a clear directive rather than relying on case-by-case section 205 review.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Contrary to NARUC's assertions, state action alone cannot protect all customers against transmission cost shifting caused by data centers. Federal action is necessary to protect all customers against transmission cost shifting.",
+      "concern": "State action is insufficient to protect wholesale customers from data center cost shifting; FERC must act.",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Without action by the Commission, wholesale transmission customers like Buckeye, and the retail customers of its members, could be left shouldering billions in transmission costs.",
+      "concern": "Wholesale customers face billions in stranded transmission costs without FERC intervention.",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Commission action can be structured to work with state action—not to impede or abrogate the states' role.",
+      "concern": "FERC action and state retail authority can coexist rather than conflict.",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "To best protect other customers, the Commission should require large loads to be responsible for 100% of the network upgrade costs they cause.",
+      "concern": "Large loads should bear full network upgrade costs to protect other customers.",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Retail regulators can address the relationship between the data center, the utility serving that data center at retail, and that utility's other retail customers. But they lack authority to address the impact on other customers affected by data center-driven transmission costs.",
+      "concern": "State regulators cannot protect wholesale customers outside their retail jurisdiction.",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "FERC must have a role to address cost shifting among wholesale transmission customers within a TO's Zone and among various TO Zones. State commissions cannot address this issue because only the Commission has jurisdiction over transmission rates, such as those in PJM.",
+      "concern": "Only FERC has jurisdiction over wholesale transmission rates and can address cross-zone cost shifting.",
+      "bins": [
+        "aq:jurisdiction",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Although the Ohio Commission explicitly acknowledged concerns about cost shifts to other wholesale transmission customers, it declined to take any action to address them. Instead, it found that these issues 'are statutorily outside of [the PUCO's] intrastate purview.'",
+      "concern": "Ohio's utility commission confirmed it lacks authority over wholesale cost shifting, illustrating the gap state action leaves.",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Buckeye supports the ANOPR's proposal to hold large loads 100% responsible for the network upgrade costs they cause, which is the most protective and direct way to ensure that other customers are protected against the unique and significant risks posed by these large loads.",
+      "concern": "Buckeye endorses direct 100% cost assignment to large loads as the most protective approach.",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "FERC could hold the relevant wholesale transmission entity with the direct relationship to the large load responsible for large load-driven network upgrade costs, as that entity would be in a position to pass these costs onto the large load under its retail arrangements.",
+      "concern": "As an alternative, FERC could assign upgrade costs to the serving wholesale entity, which can pass them to the large load at retail.",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Allowing utilities to address data center stranded cost issues through bilateral agreements or retail tariffs is problematic and an inferior solution compared to those discussed above in Part II.B.",
+      "concern": "Ad hoc bilateral agreements are an inferior substitute for a uniform FERC rule.",
+      "bins": [
+        "pr:cost",
+        "topic:ad-hoc-agreements"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Unlike in the context of bilateral agreements to which the Mobile-Sierra presumption is typically applied, there is no reason to assume that an agreement negotiated between one utility and a data center will sufficiently protect other customers from the agreement's significant impact on transmission rates.",
+      "concern": "Mobile-Sierra deference to bilateral deals is inappropriate where third-party wholesale customers bear the impact.",
+      "bins": [
+        "pr:cost",
+        "topic:ad-hoc-agreements"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Data centers have likely caused over $24 billion in RTEP projects so far.",
+      "concern": "Regional transmission costs driven by data centers already exceed $24 billion in PJM.",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "FERC must act and provide a clear directive to TOs and RTOs to protect the other wholesale customers and their retail customers against transmission cost shifting, whether this be through a rule, show cause order, policy statement, or other Commission action.",
+      "concern": "FERC should issue a binding directive rather than wait for ad hoc section 205 filings.",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC jurisdiction over wholesale rates",
+      "stance": "support",
+      "description": "Buckeye argues that FERC has exclusive jurisdiction over wholesale transmission rates and is legally required to act. State commissions, confirmed by the PUCO's own ruling, cannot reach cost shifting among wholesale customers in and across transmission zones. FERC action is not optional; it is mandated by the Federal Power Act.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        13
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "100% upgrade cost assignment to large loads",
+      "stance": "support",
+      "description": "Buckeye supports requiring large loads to pay 100% of the network upgrade costs they cause, calling it the most direct and protective approach. If direct assignment is not adopted, Buckeye proposes holding the serving wholesale entity responsible so it can recover costs through retail arrangements with the large load.",
+      "quote_ids": [
+        4,
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Protect wholesale customers from cost shifting",
+      "stance": "support",
+      "description": "The central concern throughout the filing is that other wholesale transmission customers, including Buckeye, face billions in stranded costs from data center-driven network upgrades if FERC does not act. Buckeye criticizes the AEP Ohio retail tariff and similar state measures as protecting only retail customers of the serving utility, not other wholesale customers. It also warns that bilateral agreements and the Mobile-Sierra presumption are inadequate substitutes for a clear FERC rule.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM cost exposure examples",
+      "stance": "neutral",
+      "description": "Buckeye draws on PJM-specific data throughout, citing $4.3 billion in 2024 local transmission proposals and over $24 billion in RTEP projects likely driven by data centers. The AEP Ohio and AES Ohio situations illustrate how existing state and bilateral mechanisms leave non-serving wholesale customers exposed.",
+      "quote_ids": [
+        2,
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "key": "topic:ad-hoc-agreements",
+      "name": "Bilateral agreements are insufficient",
+      "stance": "oppose",
+      "description": "Buckeye argues that ad hoc bilateral agreements between data centers and utilities are an inferior solution because protections vary contract by contract and individual deals often omit regional transmission costs. The Mobile-Sierra reasonableness presumption is also ill-suited to this context because third-party wholesale customers bear the impact of these agreements without being party to them.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "upgradecost"
+    ],
+    "pr": [
+      "cost"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
