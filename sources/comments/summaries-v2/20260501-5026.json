@@ -1,0 +1,145 @@
+{
+  "accession": "20260501-5026",
+  "filer": "Oracle America, Inc.",
+  "org_type": "data_center",
+  "filed": "05/01/2026",
+  "source_text": "sources/comments/files/20260501-5026__Oracle-America-Inc/Oracle FERC Large Load ANOPR Supplemental Comments (4.30.2026).txt",
+  "overall_summary": "Oracle, a major AI data center investor, supports streamlined regulatory processes and modernization to enable large-load customers to self-generate and integrate power assets into the grid. Oracle emphasizes its commitment to the Ratepayer Protection Pledge, pledging to fund all infrastructure costs, and argues that regulatory modernization would benefit grid reliability and reduce costs for consumers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Oracle strongly supports the White House's commitment to win the 'race to achieve global dominance in artificial intelligence (AI)' and encourages the Commission to bolster U.S. AI dominance by streamlining processes and incentivizing growth for infrastructure deployment both in the United States and in trusted partner/allied nations.",
+      "concern": "Support for streamlined processes to promote AI infrastructure deployment",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Oracle is committed to ensuring that 'the data center boom [is] leveraged to address affordability and benefit all American households and businesses,' including by 'protect[ing] American consumers from price hikes due to data center energy and infrastructure requirements.'",
+      "concern": "Commitment to protect consumers from energy cost increases",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Oracle is a proud original signer to President Trump's Ratepayer Protection Pledge, agreeing to protect Americans from energy price hikes due to data center energy needs and to lower electricity costs for consumers in the long-term.",
+      "concern": "Signed commitment to Ratepayer Protection Pledge",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "By signing the Ratepayer Protection Pledge, Oracle affirmed its commitment to pay the full costs of new generation resources and electricity needed to meet the energy demands of its data centers, pay for upgrades to grid infrastructure, and coordinate with grid operators to fortify the power grid.",
+      "concern": "Oracle will fund all infrastructure costs without burden to ratepayers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Patchwork state regulation, long interconnection queues, and complex dynamics between transmission and generation operators complicates efforts to implement and integrate Oracle's beneficial investments.",
+      "concern": "Current regulatory fragmentation impedes infrastructure investment",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Modernizing the regulatory framework could allow large-load customers that self-generate electricity to more directly partner with utilities, transmission infrastructure owners, and others to make excess capacity available to the grid on commercial reasonable terms.",
+      "concern": "Regulatory modernization needed for self-generation integration",
+      "bins": [
+        "pr:flex",
+        "topic:self-generation"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "These infrastructure upgrades can improve the resiliency and reliability of the power grid for all consumers connected to it, at a time when the nation's electric grid is facing significant needs for systematic repair, replacement, and modernization.",
+      "concern": "Data center investments improve grid resilience",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Oracle remains committed to ensuring that American consumers are protected from shouldering the costs of investments in the power grid and using these investments to benefit the public at large by bolstering the resilience and reliability of the grid.",
+      "concern": "Oracle funds infrastructure for public benefit without ratepayer cost",
+      "bins": [
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation and ratepayer protection",
+      "stance": "support",
+      "description": "Oracle commits to funding all infrastructure costs for its data centers and signing the Ratepayer Protection Pledge to protect consumers from energy price increases. Oracle emphasizes that its investments should benefit the public grid and reduce consumer costs without shifting financial burden to ratepayers.",
+      "quote_ids": [
+        2,
+        3,
+        4,
+        8
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Regulatory flexibility for large loads",
+      "stance": "support",
+      "description": "Oracle supports streamlined regulatory processes and modernization to enable large-load customers to integrate self-generated power into the grid. The company argues that regulatory modernization would facilitate direct partnerships with utilities and transmission operators on commercial terms.",
+      "quote_ids": [
+        1,
+        6
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Grid reliability and infrastructure assessment",
+      "stance": "support",
+      "description": "Oracle argues that data center infrastructure investments improve grid resiliency and reliability at a time of significant grid modernization needs. The company identifies current regulatory fragmentation and interconnection delays as barriers to beneficial investments.",
+      "quote_ids": [
+        5,
+        7
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited regulatory processes",
+      "stance": "support",
+      "description": "Oracle supports streamlining Commission processes to incentivize AI infrastructure growth and deployment.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:self-generation",
+      "name": "Self-generation integration with grid",
+      "stance": "support",
+      "description": "Oracle advocates for regulatory frameworks that allow large-load customers to self-generate power and integrate excess capacity with the grid on commercial terms, benefiting grid reliability.",
+      "quote_ids": [
+        6
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited"
+    ],
+    "pr": [
+      "cost",
+      "flex",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
