@@ -324,6 +324,14 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-bar > span { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
 .cm-note { font-size: 12.5px; color: #2b3744; line-height: 1.45; }
 .cm-eg { display: inline-block; font-size: 10.5px; color: var(--text-muted); background: var(--surface-2); border-radius: 999px; padding: 1px 8px; margin: 0 3px 2px 0; white-space: nowrap; }
+/* respondent-type roster: every organization per camp, collapsed past 10 */
+.cm-egs { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px; align-items: baseline; }
+.cm-egs .cm-eg { margin: 0; white-space: normal; overflow-wrap: anywhere; max-width: 100%; }
+.cm-eg-rest { display: none; }
+.cm-egs.expanded .cm-eg-rest { display: contents; }
+.cm-showmore { font: inherit; font-size: 10.5px; font-weight: 700; color: var(--accent); background: none; border: 1px solid var(--rule-strong); border-radius: 999px; padding: 2px 10px; cursor: pointer; line-height: 1.5; }
+.cm-showmore:hover { background: #eef3f9; border-color: var(--accent); color: var(--accent-ink); }
+.cm-showmore:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 /* flagship comment cards (read in full) */
 .cm-flagships { display: grid; gap: 11px; }
 .cm-flag { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 0 6px 6px 0; padding: 11px 14px; }
