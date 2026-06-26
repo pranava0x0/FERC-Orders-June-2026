@@ -1,0 +1,337 @@
+{
+  "accession": "20251124-5114",
+  "filer": "Shell Energy North America (US) L.P.",
+  "org_type": "generator_ipp",
+  "filed": "11/24/2025",
+  "source_text": "sources/comments/files/20251124-5114__Shell-Energy-North-America-US-LP/RM26-4 DOE FERC ANOPR large loads SENA comments v6.txt",
+  "overall_summary": "Shell Energy supports the ANOPR's direction but urges FERC to prioritize accurate load forecasting through study deposits as the single most important near-term reform. The filer asks that hybrid co-location and expedited interconnection be treated as interim options rather than permanent restrictions, and insists that existing generators and queue participants retain their market rights and cost protections.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "First and highest priority should be for improving accuracy of load projections used in current competitive markets.",
+      "concern": "Load forecast accuracy in capacity markets should be the top reform priority",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Shell Energy views this as the most important principle proposed in the ANOPR. This reform, with proper transparency reporting, significantly improves the credibility of the load forecasts.",
+      "concern": "Study deposits with transparency reporting are the highest-priority reform",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "At the time of entry into load queue, Shell Energy supports study deposits, readiness requirements including application fees, and withdrawal penalties for load interconnection requests similar to existing generator interconnections studies and application fees.",
+      "concern": "Deposits and readiness criteria should mirror generator queue requirements",
+      "bins": [
+        "aq:deposits",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Including large loads that pay study deposits and meet established readiness criteria in capacity market demand curves can be executed efficiently relative to other reforms.",
+      "concern": "Capacity markets should include only load that has met deposit and readiness criteria",
+      "bins": [
+        "aq:deposits",
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The principles should not be requirements for large loads to interconnect under permanent operational restrictions; instead, should be interpreted as options that can expedite initial interconnections and allow for interim operations while full studies and transmission construction activities are completed if large loads need full grid access.",
+      "concern": "Expedited and restricted interconnection should be an option, not a permanent mandate",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Shell Energy believes hybrid/co-located load and generation facilities should retain the right to request future study and full market participation without system protection facilities or system protection schemes limiting injection and withdrawal to low net MW values, where full grid access better suits their long-run operational needs, or after necessary network upgrades enter service.",
+      "concern": "Co-located facilities must be able to exit restricted operation and seek full grid access",
+      "bins": [
+        "aq:hybridrights",
+        "pr:flex",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Shell Energy supports analyzing the net impact of hybrid/co-located load with generation to allow for more efficient siting, faster study processing and shorter transmission infrastructure construction timelines.",
+      "concern": "Net injection/withdrawal approach supports efficient siting and faster study timelines",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "In regions where generators must own firm transmission rights to be eligible to sell resource adequacy, this rulemaking should clarify that generation resources are eligible to sell capacity or resource adequacy products to co-located load without requiring firm transmission rights.",
+      "concern": "Co-located generators should be able to sell capacity to paired load without firm transmission rights",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "topic:resource-adequacy-treatment"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Shell Energy does not support existing generation having discriminatory and punitive provisions that it must pay for network upgrades for engaging in a bilateral capacity sale.",
+      "concern": "Existing generators should not bear network upgrade costs for entering bilateral co-location deals",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Large loads and hybrid/co-located load and generation customers covered by this ANOPR should qualify for either of these existing crediting mechanisms (as load or as generation) for network upgrades they fund; a sufficient record would need to be established on why large loads are differently situated enough to justify discriminatory treatment under tariff provisions applicable to other new generation and new load customers.",
+      "concern": "Large loads should access the same network upgrade crediting mechanisms as generators and load",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:nondiscrimination"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Expedited study processes envisioned under this ANOPR should not cause delays, uncertainty, or allocation of new costs to generator interconnection customers already in queues.",
+      "concern": "New large load processes must not harm existing generator queue participants",
+      "bins": [
+        "aq:protection",
+        "pr:study",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Existing loads under study, and ongoing stakeholder processes to develop expedited large load processes should prioritize how to improve transparency to the market about the volume of load under study and readiness status of the load.",
+      "concern": "Market transparency on load volumes and readiness status should be a priority",
+      "bins": [
+        "aq:deposits",
+        "topic:market-transparency"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The rulemaking process should not impede the ongoing development of regional programs, tariffs, and procedures that support the objectives outlined in the ANOPR.",
+      "concern": "Federal rulemaking should run alongside, not block, regional program development",
+      "bins": [
+        "pr:flex",
+        "topic:regional-variation"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Ensure the new rules do not disrupt market price signals and misalign with established market principles.",
+      "concern": "Rules should preserve competitive price signals and avoid market distortion",
+      "bins": [
+        "pr:flex",
+        "topic:market-transparency"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Shell Energy supports that principle 10 provides a transparency mechanism into bilateral transactions to serve large loads. Competitive markets require transparency so that shifts in underlying market fundamentals can be reflected in prices to signal and incentivize investment where needed.",
+      "concern": "Bilateral co-location sales must be reported to preserve competitive price signals",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "topic:market-transparency"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:deposits",
+      "name": "Deposits as top reform priority",
+      "stance": "support",
+      "description": "Shell Energy calls study deposits and readiness criteria the single most important ANOPR principle. Deposits tied to transparency reporting will improve load forecast credibility, deter speculative applications, and allow capacity markets to reflect realistic demand without waiting for longer-running reforms.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        12
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Threshold calibration needed",
+      "stance": "support",
+      "description": "Shell Energy agrees a minimum MW threshold is necessary and should be set high enough to limit administrative burden while low enough, when combined with deposits, to capture total load additions that affect resource adequacy and wholesale prices. Regional stakeholder processes should determine the exact level.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited access as option not mandate",
+      "stance": "support",
+      "description": "Shell Energy supports expedited interconnection pathways but insists they be framed as options for interim operations while full studies complete, not permanent operational restrictions. Large loads must retain the right to seek full grid access through standard processes.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Co-location rights and exit path",
+      "stance": "mixed",
+      "description": "Shell Energy supports net injection/withdrawal as a study and interim operating approach but opposes making it a permanent cap. Co-located generators should be able to sell capacity to paired load without firm transmission rights, and bilateral transactions must be reported for market transparency.",
+      "quote_ids": [
+        6,
+        7,
+        8,
+        15
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Protect existing queue participants",
+      "stance": "support",
+      "description": "Shell Energy asks FERC to ensure expedited large load study processes do not cause delays, cost shifts, or new uncertainty for generators already in interconnection queues, consistent with the goals of Order No. 2023.",
+      "quote_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Cost causation and non-discrimination",
+      "stance": "support",
+      "description": "Shell Energy argues that large loads should access existing network upgrade crediting mechanisms on the same terms as other customers, and that existing generators entering bilateral co-location deals should not face punitive network upgrade cost assignments.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study process accuracy and speed",
+      "stance": "support",
+      "description": "Shell Energy prioritizes improving load projection accuracy in capacity markets over other study reforms, and supports net injection/withdrawal as a tool to speed study timelines for hybrid facilities. NERC and RTO/ISO input is needed before mandating expedited transient stability studies.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation follows causation",
+      "stance": "support",
+      "description": "Shell Energy supports cost-causation principles for network upgrades and access to existing crediting mechanisms, opposing any rule that shifts costs to parties that do not benefit from the infrastructure.",
+      "quote_ids": [
+        4,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location as interim tool",
+      "stance": "mixed",
+      "description": "Shell Energy supports co-location and hybrid study approaches for faster siting but wants clarity on resource adequacy treatment, transmission rights, and ancillary service obligations. The co-location model should be an option, not a permanent operating requirement.",
+      "quote_ids": [
+        6,
+        7,
+        8,
+        15
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Preserve market flexibility",
+      "stance": "support",
+      "description": "Shell Energy asks that rules avoid mandates or barriers that could suppress price signals, and that ongoing regional program development continue alongside the federal rulemaking. New rules should use existing market tools where possible to speed implementation.",
+      "quote_ids": [
+        5,
+        6,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Protect existing queue from new processes",
+      "stance": "support",
+      "description": "Expedited large load queues must not impose delays or costs on generator interconnection customers already in standard queues, a key concern echoing Order No. 2023 protections.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:resource-adequacy-treatment",
+      "name": "Capacity market treatment of co-location",
+      "stance": "neutral",
+      "description": "Shell Energy highlights unresolved questions about whether co-located generators selling to paired load are treated as retired or as bilateral contract sellers in capacity markets, and whether they retain must-offer obligations and outage reporting duties. These questions affect market transparency and reliability.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:nondiscrimination",
+      "name": "Non-discriminatory access to existing rules",
+      "stance": "support",
+      "description": "Shell Energy argues large loads should receive the same tariff treatment as other load and generation customers, and that any departure requires a clear record justifying differential treatment.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:market-transparency",
+      "name": "Transparency to support price signals",
+      "stance": "support",
+      "description": "Across multiple principles, Shell Energy stresses that market transparency on load volumes, readiness status, and bilateral transactions is necessary for competitive markets to price risk accurately and send reliable investment signals.",
+      "quote_ids": [
+        12,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "topic:regional-variation",
+      "name": "Regional programs should continue",
+      "stance": "support",
+      "description": "Shell Energy asks that the federal rulemaking not block ongoing regional tariff and program development, and that final compliance filings accommodate regional differences in market design.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "deposits",
+      "threshold",
+      "expedited",
+      "hybridrights",
+      "protection",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

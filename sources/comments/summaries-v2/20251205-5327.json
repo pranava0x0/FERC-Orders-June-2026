@@ -1,0 +1,323 @@
+{
+  "accession": "20251205-5327",
+  "filer": "International Energy Credit Association",
+  "org_type": "trade_assoc",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5327__International-Energy-Credit-Association/IECA Reply Comments (RM26-4-000) (Final).txt",
+  "overall_summary": "IECA, a trade association of energy credit and risk professionals, supports expediting large load interconnection but urges the Commission to issue guidance rather than prescriptive federal mandates and to collaborate with states. The association asks FERC to define three co-location configurations (firm, generator-contingent, and interruptible) with matching transmission protections, and opposes making curtailability a condition of expedited interconnection approval.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "a large load which interconnects with the grid at one point of interconnection and is contractually tied to one or more comparably-sized generation resources which interconnect with the same grid at a physically \"proximate\" location, should be viewed as no less physically co-located than a large load and a comparably-sized generation resource that interconnect with the same grid at a single point of interconnection, whether in front of or behind the meter.",
+      "concern": "Requests that proximate-point co-location be treated the same as behind-the-meter co-location",
+      "bins": [
+        "pr:colo",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "We respectfully request that the Commission get bogged down in a jurisdictional fight over the legal issues associated with State versus Federal jurisdiction and \"major questions\" concerns regarding whether a particular portion of the grid involves distribution or interstate transmission.",
+      "concern": "Asks FERC to avoid a state-versus-federal jurisdictional dispute on load interconnection",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-federal-collaboration"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Instead we recommend that the Commission seek collaborative and cooperative approaches with the various States and State Commissions to expedite the interconnection of large loads.",
+      "concern": "Recommends FERC collaborate with state commissions rather than assert federal authority",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-federal-collaboration"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "We also suggest that the Commission avoid prescriptive Federal mandates for interconnecting large loads to the interstate transmission grid.",
+      "concern": "Opposes prescriptive federal mandates for large load interconnection",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:guidance-over-mandates"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Instead, we submit that the Commission would do the most good by proposing guidance which developers of Data Centers and developers of new power plants could voluntarily pursue as a means of expediting the regulatory approvals required to meet the commercial deadlines of Data Centers and AI developers and users.",
+      "concern": "Prefers voluntary guidance over binding rules to accelerate interconnection approvals",
+      "bins": [
+        "aq:expedited",
+        "topic:guidance-over-mandates"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "we also support having the costs of interconnections of large loads, including the costs of all necessary system impact studies, be borne by the developers and customers of such large loads, which should place the risk of stranded investment on those in the best position to manage such risk, i.e., the developers of such large loads.",
+      "concern": "Supports cost causation: large load developers bear interconnection and study costs",
+      "bins": [
+        "pr:cost",
+        "pr:study",
+        "topic:cost-allocation"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "We support the simultaneous study of system impacts from a Co-Located Load with its Co-Located Generation and the expeditious approval of the interconnection of both at a single point of interconnection or at two or more \"proximate\" points of interconnection, provided that the impacts on the transmission grid and other users of that transmission grid are addressed as set forth in Section III.B. of these Reply Comments.",
+      "concern": "Supports joint study and expedited approval of co-located load and generation, conditioned on grid protection",
+      "bins": [
+        "pr:study",
+        "pr:colo",
+        "pr:proximate",
+        "aq:jointstudy",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "we do not support requiring curtailability of Data Center load as a condition to expedited interconnection of large loads, whether such large loads are Co-Located Loads or stand-alone large loads.",
+      "concern": "Opposes curtailability as a prerequisite for expedited interconnection",
+      "bins": [
+        "pr:flex",
+        "aq:expedited",
+        "topic:curtailability"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Excluding such applications of Data Centers and AI from expedited interconnection approval, because such applications are unable to be curtailed, would not benefit the public interest and would be harmful to the public interest, which we believe is served by expediting and encouraging the development and application of such Data Centers, AI, and other similarly high-reliability large loads.",
+      "concern": "Argues that barring non-curtailable loads from expedited approval harms the public interest",
+      "bins": [
+        "pr:flex",
+        "aq:expedited",
+        "topic:curtailability"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Commission guidance should ensure that the owners and operators of the transmission system advise and encourage all large loads, especially Data Centers, of the benefits available to them from demand-response programs.",
+      "concern": "Asks FERC to encourage demand response participation for large loads through guidance",
+      "bins": [
+        "pr:flex",
+        "topic:demand-response"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "any guidance, policies, rules, or other regulations issued by the Commission in response to the Secretary's ANOPR will need to be flexible enough to encourage and accommodate both types of Data Centers.",
+      "concern": "Requests that FERC rules be flexible enough to cover both high-redundancy and lower-redundancy data centers",
+      "bins": [
+        "aq:protection",
+        "topic:guidance-over-mandates"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "the Commission and its Staff should now have a relatively complete record on \"co-location\" issues in PJM on which to formulate and propose guidance in response to the ANOPR regarding the range of acceptable transmission system protection provisions that counterparties could apply to co-location arrangements involving large loads and co-located generation resources located at the same point of interconnection or at \"proximate\" points of interconnection with the interstate transmission grid.",
+      "concern": "Urges FERC to use the EL25-49 show-cause record to inform ANOPR guidance on co-location protections",
+      "bins": [
+        "pr:colo",
+        "pr:proximate",
+        "aq:protection",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "we encourage the Commission to ensure that any guidance, policies, rules, or regulations it may issue in response to the Secretary's ANOPR will be sufficiently flexible to accommodate the huge range of innovations that are likely to accompany the development of AI and the accelerated time periods for responding to such innovations in AI and Data Center applications, as well as the potential development of other nascent large loads involving chip fabrication, critical minerals processing, and things we have not yet imagined.",
+      "concern": "Urges flexibility in FERC rules to keep pace with rapid AI and data center innovation",
+      "bins": [
+        "topic:guidance-over-mandates",
+        "topic:innovation-flexibility"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:colo",
+      "name": "Co-location framework and definition",
+      "stance": "support",
+      "description": "IECA supports FERC issuing guidance on acceptable co-location configurations and asks the Commission to define co-location broadly enough to cover loads and generators at proximate (not just identical) points of interconnection. It also urges FERC to draw on the EL25-49 show-cause record when formulating that guidance.",
+      "quote_ids": [
+        1,
+        7,
+        12
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Proximate-point co-location parity",
+      "stance": "support",
+      "description": "IECA argues that a load contractually tied to generation at a physically proximate point of interconnection should be treated the same as a behind-the-meter co-location arrangement. It supports joint study and expedited approval for both single-point and proximate-point configurations.",
+      "quote_ids": [
+        1,
+        7,
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Joint study and simultaneous review",
+      "stance": "support",
+      "description": "IECA backs simultaneous impact studies for co-located loads and generation, provided grid impacts are addressed. It also supports assigning all study costs to the large load developer.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Developer bears interconnection costs",
+      "stance": "support",
+      "description": "IECA supports placing interconnection and study costs on large load developers, consistent with how generator interconnection costs are allocated today. This approach puts stranded-investment risk on parties best positioned to manage it.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "No curtailability condition; voluntary demand response",
+      "stance": "mixed",
+      "description": "IECA opposes making curtailability a condition of expedited interconnection, arguing that excluding non-curtailable loads would harm the public interest. At the same time, it supports FERC encouraging large loads to voluntarily participate in demand-response programs.",
+      "quote_ids": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Cooperative state-federal approach",
+      "stance": "support",
+      "description": "IECA urges FERC to avoid a jurisdictional fight with states and instead pursue collaborative approaches with state commissions. It explicitly opposes prescriptive federal mandates and favors voluntary guidance.",
+      "quote_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Voluntary guidance to speed approvals",
+      "stance": "support",
+      "description": "IECA supports expediting large load interconnection through voluntary guidance that developers can follow to meet commercial deadlines. It opposes attaching curtailability conditions to expedited approval pathways.",
+      "quote_ids": [
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Flexible transmission protection standards",
+      "stance": "support",
+      "description": "IECA asks FERC to define a range of acceptable transmission system protections for each of three co-location configurations (firm, generator-contingent, and interruptible) and to make those protections flexible enough for both high-redundancy and lower-redundancy data centers.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Simultaneous load and generation study",
+      "stance": "support",
+      "description": "IECA supports the ANOPR proposals to study co-located load and generation impacts simultaneously and to approve both interconnections expeditiously, subject to adequate grid protections.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM show-cause record as input",
+      "stance": "neutral",
+      "description": "IECA notes that the EL25-49 show-cause proceeding has produced a substantial record on PJM co-location issues and asks FERC to use that record when crafting ANOPR guidance on transmission protections.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:state-federal-collaboration",
+      "name": "State-federal collaboration over preemption",
+      "stance": "support",
+      "description": "IECA asks FERC to work with state commissions rather than assert federal authority over load interconnection, which has traditionally been a state function. Cooperative approaches are seen as more likely to achieve expedited results.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "topic:guidance-over-mandates",
+      "name": "Guidance preferred over mandates",
+      "stance": "support",
+      "description": "Across multiple sections, IECA consistently prefers voluntary Commission guidance over binding federal mandates. This applies to co-location configurations, interconnection procedures, and rules governing nascent technologies.",
+      "quote_ids": [
+        4,
+        5,
+        11,
+        13
+      ]
+    },
+    {
+      "key": "topic:cost-allocation",
+      "name": "Cost causation for large load developers",
+      "stance": "support",
+      "description": "IECA supports applying generator-interconnection cost-causation principles to large loads, requiring developers to pay interconnection and study costs and bear stranded-investment risk.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:curtailability",
+      "name": "Curtailability must not gate expedited approval",
+      "stance": "oppose",
+      "description": "IECA opposes any rule that would deny expedited interconnection to non-curtailable loads, arguing that many high-value data center applications require uninterrupted operation and that excluding them harms the public interest.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:demand-response",
+      "name": "Voluntary demand response for large loads",
+      "stance": "support",
+      "description": "While opposing mandatory curtailability, IECA supports FERC directing transmission operators to inform and encourage large loads to participate in demand-response programs on a voluntary basis.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:innovation-flexibility",
+      "name": "Rules must accommodate future innovation",
+      "stance": "support",
+      "description": "IECA asks that any FERC rules be written with enough flexibility to keep pace with rapid changes in AI, data center design, and other nascent large load categories such as chip fabrication and critical minerals processing.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "expedited",
+      "protection",
+      "jointstudy"
+    ],
+    "pr": [
+      "colo",
+      "proximate",
+      "study",
+      "cost",
+      "flex"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

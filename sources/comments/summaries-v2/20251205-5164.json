@@ -1,0 +1,334 @@
+{
+  "accession": "20251205-5164",
+  "filer": "Entergy Services, LLC",
+  "org_type": "transmission_owner",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5164__Entergy-Services-LLC/RM26-4 - EOC Reply Comments 2025-12-05.txt",
+  "overall_summary": "Entergy Services opposes a nationwide standardized rule, arguing the record contains no substantial evidence of unjust or discriminatory large load interconnection practices in MISO or the Entergy Operating Companies' territories, where existing processes are working well. It supports a limited federal backstop role rather than mandatory pro forma procedures, and calls for a threshold of 100 MW, no combined generator-load queue, and grandfathering of in-progress interconnections.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the evidence here does not support Commission action on a nationwide basis",
+      "concern": "no substantial evidence justifies a nationwide rule",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:evidence-standard"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the Commission cannot automatically extrapolate specific claims made about load interconnections in one area to other parts of the country",
+      "concern": "regional differences preclude generalizing complaints from one RTO to all areas",
+      "bins": [
+        "aq:jurisdiction",
+        "rg:pjm",
+        "rg:miso",
+        "topic:evidence-standard"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "there is no evidence that would support a finding that load interconnections in MISO generally, or the service territories of the Entergy Operating Companies specifically, are unjust, unreasonable, or unduly discriminatory or preferential",
+      "concern": "MISO and Entergy territory processes are not shown to be unjust or discriminatory",
+      "bins": [
+        "aq:jurisdiction",
+        "rg:miso",
+        "topic:evidence-standard"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the Commission should not adopt the requests of some Commenters asking the Commission to adopt standardized rules across the country and to require that such rules be included in pro forma procedures that would be filed with the Commission",
+      "concern": "opposes nationwide pro forma interconnection procedures",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study",
+        "topic:evidence-standard"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the Commission should consider establishing a backstop role, so that if load interconnection procedures are stalled for an unreasonable period of time, a large load has clear procedural recourse",
+      "concern": "supports a limited federal backstop when state processes stall",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "topic:backstop-role"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "A backstop rule would also enable transmission providers to exercise necessary flexibility and judgment in formulating the studies and procedures that are best suited to their systems.",
+      "concern": "backstop preserves transmission provider flexibility in study design",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "topic:backstop-role"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Commission should not establish a standard queue for load interconnections",
+      "concern": "opposes a standardized load interconnection queue",
+      "bins": [
+        "pr:study",
+        "topic:queue-design"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "a combined queue likely would lead to delays in processing interconnection requests even beyond those that would arise from a standardized load interconnection queue",
+      "concern": "combined generator-load queue would worsen delays",
+      "bins": [
+        "pr:study",
+        "topic:queue-design"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "any threshold lower than 75-100 MW is more likely to capture speculative projects and could result in a Final Rule so broad that it would render it ineffective and reduce or eliminate any efficiencies that would otherwise be gained",
+      "concern": "20 MW threshold is too low and would capture speculative projects",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "the consensus among commentors is that increasing the threshold above 20 MW, to an amount of 75 MW-100 MW, would suffice",
+      "concern": "broad commenter consensus supports a 75 to 100 MW threshold",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Studying only a hypothetical \"net\" injection or withdrawal, without considering the system effects of the hybrid load demanding up to its full gross level of demand (when, for example, its co-located generating facility is unavailable), would create unreasonable reliability risks.",
+      "concern": "net-injection-only study approach for hybrid facilities creates reliability risks",
+      "bins": [
+        "aq:hybridrights",
+        "pr:study",
+        "topic:reliability"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "it is premature to assume that the breadth of hybrid options proposed by various commenters should all be entitled to expedited interconnection study or that expedited study is feasible",
+      "concern": "broad hybrid facility definitions should not automatically qualify for expedited study",
+      "bins": [
+        "aq:hybridrights",
+        "aq:expedited",
+        "pr:study",
+        "topic:reliability"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the Commission should not use a new load interconnection rule to substitute its judgment for that of state regulators about what constitutes reliable retail supply arrangements",
+      "concern": "demand response and curtailability are state retail jurisdiction matters, not FERC's",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:flex",
+        "topic:state-retail-authority"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "the Commission should affirmatively ensure no retroactive impact on in-process or existing agreements",
+      "concern": "existing and in-progress interconnection agreements must be grandfathered",
+      "bins": [
+        "aq:protection",
+        "topic:grandfathering"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "A significant transition period will be necessary for states, stakeholders and transmission owners to adjust to a new regulatory scheme.",
+      "concern": "adequate implementation time needed for any new rule",
+      "bins": [
+        "aq:protection",
+        "topic:grandfathering"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "No nationwide jurisdiction basis",
+      "stance": "oppose",
+      "description": "Entergy argues FERC lacks the evidentiary basis for a nationwide rule because no substantial evidence shows large load interconnections in MISO or the Entergy Operating Companies' territories are unjust or discriminatory. Regional differences mean complaints from one RTO cannot be generalized nationally. State and retail regulators retain authority over retail supply arrangements.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        13
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "100 MW threshold preferred",
+      "stance": "mixed",
+      "description": "Entergy opposes the proposed 20 MW threshold as too low, arguing it would sweep in speculative projects and dilute any rule's effectiveness. It recommends 100 MW and notes broad commenter consensus that 75 to 100 MW is appropriate. It also rejects voltage-based proxies as introducing unnecessary delay and complexity.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid study must cover full gross load",
+      "stance": "oppose",
+      "description": "Entergy contends that studying hybrid facilities on a net-injection basis alone creates reliability risks by ignoring peak gross demand when co-located generation is unavailable. It also warns that broadening the hybrid definition to include storage or demand response adds complexity requiring more study time before any expedited treatment is appropriate.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Backstop for stalled processes only",
+      "stance": "support",
+      "description": "Entergy supports a limited federal backstop that gives large loads procedural recourse only when state processes stall for an unreasonable time, preserving flexibility for transmission providers to tailor studies to their systems. It opposes extending expedited treatment broadly to hybrid facilities without adequate reliability analysis.",
+      "quote_ids": [
+        5,
+        6,
+        12
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Grandfathering and transition time",
+      "stance": "support",
+      "description": "Entergy calls on FERC to affirmatively confirm that in-progress and existing agreements are grandfathered, noting broad commenter consensus on this point. It also urges a significant transition period before any new rule takes effect, with the length tied to the final rule's scope.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "No standardized study queue",
+      "stance": "oppose",
+      "description": "Entergy opposes both a standard load interconnection queue and a combined generator-load queue, arguing a combined queue would worsen existing generator queue delays and disrupt ongoing reforms. It also opposes mandatory nationwide pro forma study procedures.",
+      "quote_ids": [
+        4,
+        7,
+        8,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "State authority over flexible loads",
+      "stance": "support",
+      "description": "Entergy argues that demand response and curtailability are retail supply matters under state jurisdiction, not federal interconnection issues. FERC should not use a new load interconnection rule to override state decisions on reliable retail supply arrangements.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO processes working well",
+      "stance": "neutral",
+      "description": "Entergy highlights that MISO's existing large load interconnection processes are functioning well and that its own service territories have successfully interconnected major data centers for Google, Meta, and AWS under efficient state regulatory frameworks.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM issues are PJM-specific",
+      "stance": "neutral",
+      "description": "Entergy takes no position on PJM-specific claims but cautions that problems documented for PJM or individual transmission owners there cannot be extrapolated to other regions.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "topic:evidence-standard",
+      "name": "Substantial evidence requirement",
+      "stance": "neutral",
+      "description": "Entergy emphasizes that FERC may only mandate new interconnection rules under FPA Section 206 upon a finding of substantial evidence that existing rates or conditions are unjust, unreasonable, or unduly discriminatory. Unsupported allegations and regional anecdotes from other areas do not meet that standard.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "topic:backstop-role",
+      "name": "Limited federal backstop rule",
+      "stance": "support",
+      "description": "Entergy recommends FERC establish a backstop role providing procedural recourse when state-level processes stall, rather than imposing nationwide standardized procedures. This approach aligns with cooperative federalism principles and the DOE's stated goal of smoothing interconnection paths.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:queue-design",
+      "name": "Separate load and generator queues",
+      "stance": "oppose",
+      "description": "Entergy opposes both a standardized load queue and any combined generator-load queue. A combined queue would add to existing generator queue backlogs and disrupt ongoing interconnection reforms. Load and generation have separate effects on the bulk electric system and should be studied separately.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "topic:reliability",
+      "name": "Reliability first priority",
+      "stance": "support",
+      "description": "Entergy urges FERC to reaffirm that reliability is the first priority for bulk electric system interconnections. Net-injection-only studies for hybrid facilities and premature expedited treatment of broadly defined hybrid resources both pose reliability risks that warrant caution.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:state-retail-authority",
+      "name": "State authority over retail supply",
+      "stance": "support",
+      "description": "Entergy argues that demand response, curtailment, and flexible load arrangements are retail service matters under state jurisdiction. FERC should not use a load interconnection rule to displace state regulatory decisions about reliable retail supply in bundled-service territories.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:grandfathering",
+      "name": "Protect in-progress agreements",
+      "stance": "support",
+      "description": "Entergy cites broad commenter consensus that existing and in-progress interconnection agreements must be grandfathered under any final rule. Projects with significant financial, contractual, and engineering commitments should not be disrupted, and a meaningful transition period is needed.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "hybridrights",
+      "expedited",
+      "protection"
+    ],
+    "pr": [
+      "study",
+      "flex"
+    ],
+    "rg": [
+      "miso",
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
