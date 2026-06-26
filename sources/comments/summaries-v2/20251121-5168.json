@@ -1,0 +1,219 @@
+{
+  "accession": "20251121-5168",
+  "filer": "North American Electric Reliability Corporation",
+  "org_type": "reliability",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5168__North-American-Electric-Reliability-Corporation/Large_Load_ANOPR_Comments_final.txt",
+  "overall_summary": "NERC supports FERC addressing rapid large load growth and appreciates the Secretary's acknowledgment of NERC's reliability role, but requests that any Commission action accurately reflect NERC's statutory authority under Federal Power Act section 215, which applies to the Bulk Power System rather than only the Bulk Electric System. NERC outlines its Large Loads Action Plan activities already underway, including stakeholder workshops, a Level 2 Alert, and ongoing work to evaluate whether registry criteria and Reliability Standards revisions are needed.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "NERC requests that any ensuing Commission action accurately reflects the scope of NERC's reliability authority, which statutorily extends to Reliability Standards that provide for the reliable operation of the BPS and is distinguished from the Commission's jurisdiction regarding the transmission and sale of electric energy.",
+      "concern": "NERC asks that Commission action respect the boundary between NERC's section 215 reliability authority and FERC's transmission/sales jurisdiction",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:nerc-authority-scope"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "NERC declines to comment on matters outside its purview, such as the proposed ANOPR assertions regarding the Commission's jurisdiction under other provisions of the Federal Power Act, including section 205.",
+      "concern": "NERC explicitly limits its comments to section 215 and stays silent on FERC's section 205 authority",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:nerc-authority-scope"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "demand growth is higher than at any point in the last two decades.",
+      "concern": "NERC's own long-term reliability assessment documents unprecedented demand growth",
+      "bins": [
+        "topic:demand-growth-urgency"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Such unique challenges include demand forecasting and planning for system behavior when some large loads, such as data centers for cryptocurrency mining and artificial intelligence, are substantially larger and constructed more quickly than prior large loads using the BPS.",
+      "concern": "Scale and speed of new large load types create novel reliability planning challenges",
+      "bins": [
+        "topic:demand-growth-urgency",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Among the Secretary's proposed principles is a proposal that 'utilities serving large loads must meet all applicable NERC reliability standards….'",
+      "concern": "NERC welcomes the Secretary's recognition that reliability standards apply to large load service",
+      "bins": [
+        "topic:nerc-authority-scope",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "there is opportunity to further clarify NERC's authority as the ERO under section 215, because one of the proposed ANOPR principles suggest that NERC's registration categories and Reliability Standards are to ensure the 'reliability of the BES.'",
+      "concern": "ANOPR incorrectly narrows NERC's authority to the BES subset rather than the full BPS",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:nerc-authority-scope"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "NERC requests out of an abundance of caution that any subsequent Commission action in this proceeding reflects the full scope of NERC's reliability authority as pertaining to the BPS.",
+      "concern": "NERC asks that Commission orders reference BPS, not just BES, to preserve NERC's full statutory reach",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:nerc-authority-scope"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "NERC currently has limited registry criteria applicable to 'users' of the BPS. Nevertheless, FERC precedent and legislative history of the Federal Power Act indicate that users of the BPS mean all those who 'use' the BPS.",
+      "concern": "Current registry criteria do not yet capture large load users, but statutory authority to do so exists",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:large-load-registration"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "FERC stated its concerns that, '[under NERC's proposed definition] a large industrial customer that receives electric energy directly from the [BPS] may not be defined as a user of the BPS, even though it may directly affect the reliability of the [BPS].'",
+      "concern": "FERC precedent supports treating large load customers as BPS users subject to reliability authority",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:large-load-registration"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Although NERC has not developed any criteria that would add large load entities to the NCR at this time, NERC requests that any resulting Commission action reflect NERC's scope of statutory authority as the ERO to ensure the reliability of the BPS.",
+      "concern": "No registry criteria for large loads exist yet, but NERC wants its authority to register them preserved",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:large-load-registration"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "NERC plans to coordinate with stakeholders over the following year to explore potential revisions to the registry criteria and Reliability Standards that would incorporate large loads impacting the reliable operation of the BPS.",
+      "concern": "NERC is beginning a stakeholder process to evaluate whether large loads should be registered and subject to standards",
+      "bins": [
+        "topic:large-load-registration",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "the Large Loads Action Plan includes an action item on registration analysis, which analyzes the legal basis for registration of large users of the BPS and whether there are Reliability Standards requirements that could apply to such users.",
+      "concern": "NERC's action plan is actively analyzing the legal and technical case for registering large load entities",
+      "bins": [
+        "topic:large-load-registration",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "In the first quarter of 2026, NERC will develop additional findings, guidance, and next steps to account for the BPS reliability needs associated with large loads.",
+      "concern": "NERC has a near-term timeline for publishing reliability findings on large load integration",
+      "bins": [
+        "pr:study",
+        "topic:demand-growth-urgency"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "By February 27, 2026, NERC will submit a report to the Commission regarding responses to the Level 2 Alert.",
+      "concern": "NERC will report industry preparedness on large load interconnection risks to FERC by early 2026",
+      "bins": [
+        "pr:study",
+        "topic:demand-growth-urgency"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "NERC BPS authority scope",
+      "stance": "mixed",
+      "description": "NERC supports Commission action on large loads but insists any resulting order reference the full Bulk Power System, not just the Bulk Electric System subset. NERC declines to weigh in on FERC's jurisdiction under sections other than 215 and notes that large load users are potential BPS users under existing precedent. The stance is mixed because NERC supports the proceeding while also correcting what it sees as a jurisdictional misdescription in the ANOPR.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Reliability study and standards review",
+      "stance": "support",
+      "description": "NERC supports studying large load impacts on the BPS and is already conducting that work through the Large Loads Action Plan, white papers, a Level 2 Alert, and a draft Reliability Guideline. NERC expects to deliver findings and next steps to FERC by Q1 2026, including analysis of whether registry criteria or Reliability Standards revisions are warranted.",
+      "quote_ids": [
+        4,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "topic:nerc-authority-scope",
+      "name": "NERC section 215 authority",
+      "stance": "neutral",
+      "description": "NERC explains at length that its authority under Federal Power Act section 215 covers the Bulk Power System and all its users, owners, and operators, but does not extend to local distribution or to compelling construction of new capacity. NERC requests that Commission language reflect this statutory scope rather than narrowing it to the BES.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "topic:large-load-registration",
+      "name": "Registering large loads with NERC",
+      "stance": "neutral",
+      "description": "NERC acknowledges it has no current registry criteria covering large load customers but explains that statutory and regulatory authority to register them as BPS users exists. NERC is conducting legal and technical analysis through its action plan and will engage stakeholders before proposing any criteria revisions.",
+      "quote_ids": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:demand-growth-urgency",
+      "name": "Unprecedented large load demand growth",
+      "stance": "neutral",
+      "description": "NERC's own assessments confirm that demand growth is at a two-decade high and that data centers for AI and cryptocurrency mining are larger and built faster than prior loads. NERC treats this as an urgent reliability challenge requiring prompt action on its own timeline.",
+      "quote_ids": [
+        3,
+        4,
+        13,
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

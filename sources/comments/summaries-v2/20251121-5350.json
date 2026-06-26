@@ -1,0 +1,264 @@
+{
+  "accession": "20251121-5350",
+  "filer": "Energy Trading Institute",
+  "org_type": "trade_assoc",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5350__Energy-Trading-Institute/ETI Comments - ANOPR DOE RM26-4-000.txt",
+  "overall_summary": "ETI argues that the DOE ANOPR's fourteen interconnection principles are incomplete without adding RTO/ISO price formation reform as a core principle. The filing contends that persistent pricing distortions from uplift, opaque demand response, and congestion derivative underfunding undermine investment signals needed for large load interconnection. ETI asks FERC to reopen its price formation proceedings and calls on DOE to formally exercise its statutory authority to compel that action if FERC does not act on its own.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Missing from these principles is a critical core principle that the Commission and the DOE should consider to efficiently shore up large load interconnection: price formation in the Regional Transmission Organization (\"RTO\") and Independent System Operator (\"ISO\") markets.",
+      "concern": "Price formation is absent from the ANOPR's list of interconnection principles",
+      "bins": [
+        "pr:study",
+        "topic:price-formation-gap"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Without proper price formation, market participants and investors are left \"groping about in the dark\" as to what types of interconnection projects would be useful and profitable, regardless of whether and how the jurisdictional considerations are ultimately resolved.",
+      "concern": "Poor price formation obscures which interconnection projects are viable",
+      "bins": [
+        "pr:cost",
+        "topic:price-formation-gap"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "price suppressing events remain a persistent problem in these markets––even as recently as with the PJM uplift that arose out of the January 2025 winter storm in the Northeast––thus undermining the signals that the prices should convey.",
+      "concern": "Recurring uplift events suppress prices and distort investment signals in PJM",
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:uplift-distortion"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "[R]ecent extreme winter weather has once again highlighted critical flaws in PJM's market structure, resulting in over $400 million in uplift costs in 2025 year-to-date—expenses that cannot be hedged by load-serving entities through forward energy purchases and which are often passed directly to consumers.",
+      "concern": "Unhedgeable PJM uplift costs from winter storms are passed to consumers",
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:uplift-distortion"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Such after-the-fact adjustments make it difficult for investors to assess the potential viability of electricity projects.",
+      "concern": "Post-settlement adjustments in PJM capacity markets deter investment",
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:uplift-distortion"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Since these demand response programs are not integrated into the wholesale price formation process, the RTO-ISOs do not have visibility into the demand (load) that takes place in these areas.",
+      "concern": "State demand response programs are invisible to RTO wholesale markets, distorting prices",
+      "bins": [
+        "pr:flex",
+        "topic:demand-response-transparency"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Without explicit FERC direction, ISOs will simply continue to see state-sponsored demand response initiatives as missing load that suppresses prices even in circumstances where true system conditions dictate high spot prices, or even scarcity.",
+      "concern": "FERC must act to require RTO visibility into state demand response to prevent chronic price suppression",
+      "bins": [
+        "pr:flex",
+        "topic:demand-response-transparency"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "underfunding levels approaching and often exceeding 100%",
+      "concern": "CAISO CRR underfunding is severe and chronic, undermining forward price signals",
+      "bins": [
+        "rg:caiso",
+        "topic:crr-underfunding"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "[u]nderfunding uncertainty increases risk and lowers the expected CRR value in the auction, depressing CRR bid prices and reducing the value of ARRs.",
+      "concern": "CRR underfunding depresses forward market prices and harms transmission right holders",
+      "bins": [
+        "rg:caiso",
+        "topic:crr-underfunding"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Developers are using CRRs and the instruments need to function and price appropriately to for developers to properly hedge physical exposure.",
+      "concern": "Malfunctioning CRR markets prevent developers from hedging infrastructure investments",
+      "bins": [
+        "rg:caiso",
+        "topic:crr-underfunding"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Meeting this growing load will require significant new generation, transmission, and flexible resources—all of which depend on clear and durable RTO-ISO price signals.",
+      "concern": "Large load growth cannot be served without reliable market price signals driving investment",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "topic:price-formation-gap"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "ETI recommends that the DOE and the Commission work with the RTO-ISOs to strengthen locational pricing mechanisms to more properly reflect system conditions.",
+      "concern": "ETI asks DOE and FERC to improve locational pricing across RTO/ISO markets",
+      "bins": [
+        "pr:cost",
+        "topic:price-formation-gap"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "ETI recommends that the Commission reopen its price formation inquiry to enact needed RTO-ISO pricing reforms, and absent action initiated by the Commission, for the DOE to formally exercise its statutory authority requesting that the Commission to do so.",
+      "concern": "ETI calls on FERC to reopen price formation proceedings, with DOE compelling action if needed",
+      "bins": [
+        "pr:study",
+        "topic:price-formation-gap"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "ETI recommends that the DOE use its authorities to prioritize market-based reforms as part of DOE's grid modernization and transmission funding programs.",
+      "concern": "DOE funding programs should be conditioned on market-based reform",
+      "bins": [
+        "pr:cost",
+        "topic:price-formation-gap"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Price Formation as Core Principle",
+      "stance": "support",
+      "description": "ETI argues that the ANOPR's study of interconnection principles is incomplete because it omits price formation. The filing calls for FERC to reopen its price formation inquiry and for DOE to use statutory authority to compel that review, treating market pricing reform as integral to any interconnection study.",
+      "quote_ids": [
+        1,
+        11,
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Pricing Distortions Raise Consumer Costs",
+      "stance": "support",
+      "description": "ETI contends that uplift payments, opaque demand response, and congestion derivative underfunding each distort prices and raise costs to consumers and investors. The filing asks FERC and DOE to eliminate these distortions through market-based reforms rather than administrative interventions.",
+      "quote_ids": [
+        2,
+        3,
+        4,
+        5,
+        11,
+        12,
+        14
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Demand Response Transparency Needed",
+      "stance": "support",
+      "description": "State demand response programs that run outside RTO visibility suppress wholesale prices, hiding true scarcity. ETI argues FERC must direct RTOs to account for these programs so that spot prices reflect actual system conditions, particularly as large loads add new demand.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Uplift and Settlement Flaws",
+      "stance": "neutral",
+      "description": "ETI cites recent PJM events, including over $400 million in 2025 uplift costs from a January winter storm and post-settlement penalty reductions from Winter Storm Elliott, as evidence that PJM market design undermines investment signals.",
+      "quote_ids": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "rg:caiso",
+      "name": "CAISO CRR Underfunding Problem",
+      "stance": "neutral",
+      "description": "ETI documents chronic and severe CRR underfunding in CAISO, with underfunding exceeding 100% on dozens of constraints and totaling hundreds of millions of dollars. The filing argues this undermines forward price signals that developers rely on to hedge infrastructure investments.",
+      "quote_ids": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:price-formation-gap",
+      "name": "Price Formation Missing from ANOPR",
+      "stance": "mixed",
+      "description": "ETI's central theme is that the ANOPR's fourteen interconnection principles leave out price formation, which is a prerequisite for efficient interconnection investment decisions. Without clear price signals, investors cannot assess which projects to build or where.",
+      "quote_ids": [
+        1,
+        2,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "topic:uplift-distortion",
+      "name": "Uplift Payments Distort Investment",
+      "stance": "oppose",
+      "description": "ETI opposes the continued use of unhedgeable uplift and after-market adjustments in RTO markets. These payments pass unforeseeable costs to consumers and make it impossible for investors to assess project viability.",
+      "quote_ids": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "topic:demand-response-transparency",
+      "name": "State DR Invisible to Wholesale Markets",
+      "stance": "oppose",
+      "description": "ETI opposes the status quo where state demand response programs operate outside RTO/ISO price formation, causing systematic underreporting of load and price suppression even during genuine scarcity events.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "topic:crr-underfunding",
+      "name": "Congestion Rights Underfunding Persists",
+      "stance": "oppose",
+      "description": "ETI opposes CAISO's persistent CRR underfunding, which it says stems from non-cost-causation allocations and will worsen under EDAM. CRRs are essential hedging tools for infrastructure developers and must be funded correctly for forward markets to provide useful price signals.",
+      "quote_ids": [
+        8,
+        9,
+        10
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "study",
+      "cost",
+      "flex"
+    ],
+    "rg": [
+      "pjm",
+      "caiso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

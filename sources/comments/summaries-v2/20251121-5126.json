@@ -1,0 +1,293 @@
+{
+  "accession": "20251121-5126",
+  "filer": "EDF Power Solutions, Inc.",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5126__EDF-Power-Solutions-Inc/RM26-4 Comments FNL 11-21-25 4915-0031-3467.1.txt",
+  "overall_summary": "EDF Power Solutions, an independent power producer, supports a flexible, rights-based federal framework for large load and hybrid facility interconnection. The filing's central asks are PUHCA reform to allow IPPs to sell directly to large loads without losing EWG exemptions, a tiered study process that expedites grid-light and curtailable loads, and transmission charges calibrated to actual grid use rather than flat network load rates.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "EDF supports the DOE Secretary's request for the Commission to establish a uniform, open access framework for large load and hybrid facilities to interconnect to the transmission system that does not infringe on the jurisdiction of the relevant state regulatory authorities.",
+      "concern": "EDF supports a uniform federal interconnection framework that preserves state authority",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the Commission should adopt a flexible, performance-based framework that (1) recognizes the diversity within the large load industries (e.g., AI, crypto mining, hydrogen, e-fuels, and carbon capture, utilization and storage (CCUS)); (2) encourages \"grid-light\" development structures, such as hybrid facilities that put minimal stress on the grid, and avoids inadvertently penalizing innovative co-located load configuration models; and (3) addresses much needed reforms to the Commission's Public Utility Holding Company Act (PUHCA) regulations to allow independent power producers, such as exempt wholesale generators (EWGs), to make direct sales to large loads (in states where it is allowed) without losing PUHCA exemptions for upstream owners.",
+      "concern": "EDF asks for a flexible framework covering diverse loads, grid-light structures, and PUHCA reform",
+      "bins": [
+        "pr:flex",
+        "pr:colo",
+        "topic:puhca-ewg-reform"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "regulatory limitations on EWGs prevent IPPs from making direct sales to hybrid facility load even if the relevant state jurisdiction would allow such direct sales.  This can be a significant impediment to data center development, causing unnecessary delay and increased costs.",
+      "concern": "EWG rules block direct IPP-to-load sales even where states permit them, causing delay and cost",
+      "bins": [
+        "topic:puhca-ewg-reform",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The sleeve requirement for the generation component of a hybrid facility is an inefficient transaction structure and increases costs – by unnecessarily imposing an REP \"middleman\" requirement in every transaction.",
+      "concern": "Sleeve transactions inflate energy costs by inserting an unnecessary retail provider middleman",
+      "bins": [
+        "topic:puhca-ewg-reform",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "It would be burdensome for every IPP that is currently an EWG, or future IPPs that would otherwise qualify for EWG status, to have to file a petition for declaratory order to maintain an exemption from PUHCA's requirements.  The time for the Commission to act on an individual petition for declaratory order has recently ranged from 82 days to nearly 6 months",
+      "concern": "Case-by-case PUHCA declaratory orders are too slow given anticipated volume of hybrid facility filings",
+      "bins": [
+        "topic:puhca-ewg-reform",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "A bifurcated or tiered review process should be implemented, allowing low-impact loads that are inherently less likely to cause significant transmission system upgrades to be studied and brought online more quickly than higher-impact loads.",
+      "concern": "EDF asks for a tiered study process so lower-impact loads move faster than high-impact ones",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "interconnection studies should better utilize storage assets in interconnection requests.  Currently, interconnection studies do not accurately model real time operating characteristics of storage resources, which limits opportunities for storage resources to be deployed to serve large load needs.",
+      "concern": "Study processes fail to model storage accurately, limiting its use for large load service",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Loads with considerable operating flexibility, such as crypto mining load, should not be treated the same as AI data centers that need \"five-nines\" power reliability.",
+      "concern": "Flexible loads and firm loads differ fundamentally and should face different study requirements",
+      "bins": [
+        "aq:hybridrights",
+        "pr:flex",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The Commission should fast-track curtailable loads and curtailable/dispatchable hybrid facilities with firm expedited timelines.  Given that curtailable load and dispatchable generation at hybrid facilities can be beneficial and useful to day-to-day grid operations, interconnection timelines should be significantly reduced – in some cases to as little as 60 days.",
+      "concern": "EDF requests a 60-day expedited track for curtailable and dispatchable hybrid facilities",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Standardized provisions with deadlines, staged readiness deposits, and withdrawal penalties help deter speculative projects and provide transmission providers with the necessary and timely information to enable more accurate study of a new large load's impact on the transmission system.",
+      "concern": "Deposits and withdrawal penalties filter speculative projects and improve study quality",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "It is appropriate for large loads and hybrid facilities to pay for network upgrades required for their interconnection and transmission service based on their rights-based interconnection obligations.  As noted above, hybrid facilities should be able to benefit from reduced network upgrade costs by studying co-located generation and load together.",
+      "concern": "Large loads should pay 100% of their upgrade costs, but joint study can reduce those costs",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "aq:jointstudy"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Hybrid structures that are dispatchable and/or curtailable and place minimum demands on the transmission system (i.e., \"grid-light\") should pay less in grid costs than co-location structures where the load requires five-nines reliability.  Services provided by curtailable load should be eligible for demand response revenues.  This is required by the Commission's beneficiary pays principle.",
+      "concern": "Grid-light loads should pay lower transmission charges than firm loads under beneficiary pays",
+      "bins": [
+        "aq:hybridrights",
+        "pr:cost",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Only co-location structures with load that regularly and materially use the grid should pay network load transmission charges, consistent with the Commission's beneficiary pays principle.",
+      "concern": "Network load charges should apply only to loads that regularly draw from the grid",
+      "bins": [
+        "aq:hybridrights",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "A blanket exemption from PUHCA's requirements would not determine whether a retail sale is allowed at the state level.  It could only be used in areas where the applicable state regulatory authority authorizes sales by IPPs directly to large loads",
+      "concern": "Proposed PUHCA blanket exemption respects state authority over retail sales",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:puhca-ewg-reform"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "topic:puhca-ewg-reform",
+      "name": "PUHCA Blanket Exemption for IPPs",
+      "stance": "support",
+      "description": "EDF argues that current EWG rules prevent IPPs from selling directly to hybrid facility loads, forcing inefficient sleeve transactions through retail providers that inflate costs and slow development. EDF asks FERC to codify a blanket PUHCA exemption, available only in states that already allow direct sales, so IPPs can skip the case-by-case declaratory order process that currently takes 82 days to 6 months per filing.",
+      "quote_ids": [
+        2,
+        3,
+        4,
+        5,
+        14
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal Framework, State Authority Preserved",
+      "stance": "support",
+      "description": "EDF supports federal jurisdiction over large load interconnection as analogous to generation interconnection, noting that asserting that jurisdiction does not infringe on state authority over retail electricity sales or facility siting. The proposed PUHCA blanket exemption likewise operates only within the bounds of each state's retail access rules.",
+      "quote_ids": [
+        1,
+        14
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Study Reduces Upgrades and Delays",
+      "stance": "support",
+      "description": "EDF supports studying co-located load and generation together because joint studies can reduce the need for costly network upgrades and shorten time to energization. EDF also flags that current study processes do not accurately model storage resources and asks that this gap be fixed.",
+      "quote_ids": [
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Standardized Deposits and Penalties",
+      "stance": "support",
+      "description": "EDF supports adopting the LGIP's staged readiness deposits and withdrawal penalties for large load interconnection queues to deter speculative filings and give transmission providers timely, accurate information for studies.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Rights-Based Study for Hybrid Loads",
+      "stance": "support",
+      "description": "EDF supports a rights-based, tiered approach where study scope and transmission charges reflect actual injection and withdrawal rights. Grid-light and curtailable loads should face lighter study burdens and lower charges than loads requiring firm, five-nines reliability.",
+      "quote_ids": [
+        8,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Protection Facilities for Hybrid Interconnections",
+      "stance": "support",
+      "description": "EDF supports requiring hybrid interconnections to install telemetry and protection facilities that enforce injection and withdrawal rights and prevent unauthorized grid use.",
+      "quote_ids": []
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Track for Curtailable Loads",
+      "stance": "support",
+      "description": "EDF requests a firm expedited interconnection timeline, potentially as short as 60 days, for curtailable loads and dispatchable hybrid facilities, and asks that the backlog of PUHCA declaratory orders be replaced with an automatic exemption process given how long individual filings take.",
+      "quote_ids": [
+        5,
+        9
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Large Loads Pay Their Upgrade Costs",
+      "stance": "support",
+      "description": "EDF agrees large loads should bear 100% of network upgrade costs assigned through interconnection studies, and notes that joint study of co-located generation can reduce what those costs are. EDF also supports a crediting mechanism for loads whose presence reduces overall transmission rates.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Uniform Open-Access Study Process",
+      "stance": "support",
+      "description": "EDF supports a standardized, nondiscriminatory load interconnection queue modeled on the LGIP, with better storage modeling, transparent procedures, and tiered treatment based on grid impact.",
+      "quote_ids": [
+        1,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Allocation Tied to Grid Use",
+      "stance": "support",
+      "description": "EDF supports the beneficiary pays principle applied to hybrid loads: flexible, grid-light loads should pay lower charges than firm loads, sleeve transaction costs should be eliminated through PUHCA reform, and network load charges should fall only on loads that materially rely on the grid.",
+      "quote_ids": [
+        3,
+        4,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Diverse Co-location Structures Protected",
+      "stance": "support",
+      "description": "EDF asks the Commission to avoid one-size-fits-all rules that would penalize innovative co-location models. The framework should recognize the range of hybrid structures, from fully behind-the-meter load to network-connected load requiring firm service.",
+      "quote_ids": [
+        2,
+        8
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility Earns Expedited Treatment",
+      "stance": "support",
+      "description": "EDF argues that operational flexibility is the key differentiator among large loads. Curtailable and dispatchable loads can reduce congestion and provide demand response, so they should face lighter study requirements, lower charges, and faster interconnection timelines than inflexible loads.",
+      "quote_ids": [
+        2,
+        6,
+        8,
+        9,
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
