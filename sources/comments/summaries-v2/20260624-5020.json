@@ -1,0 +1,372 @@
+{
+  "accession": "20260624-5020",
+  "filer": "Individual No Affiliation",
+  "org_type": "individual",
+  "filed": "06/24/2026",
+  "source_text": "sources/comments/files/20260624-5020__Individual-No-Affiliation/Cunningham_Interconnection_Governance_FERC_Format231.txt",
+  "overall_summary": "J. Vann Cunningham, a practitioner with fifty years of experience in nuclear siting and industrial facility location, proposes that FERC require fault-level stiff-point qualification and node-level demand caps as conditions of large-load interconnection, modeled on the arc furnace interconnection standard applied to mini steel mills in the 1970s and 1980s. The framework would direct data center development to transmission nodes that can absorb it without socializing upgrade costs onto ratepayers, while mandatory disclosure requirements would address the NDA opacity that prevents communities from evaluating impacts. The filing also calls for priority queue treatment for Rust Belt brownfield sites and a long-range SMR co-location planning framework to provide firm baseload power.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "A governance framework characterized by non-disclosure agreement opacity, cost externalization onto residential ratepayers, and an interconnection queue that rewards position over siting quality is generating community and regulatory resistance that has already resulted in an estimated $100 billion in delayed or canceled investment nationally.",
+      "concern": "Current governance failures are causing large-scale investment delays",
+      "bins": [
+        "pr:study",
+        "topic:cost-externalization"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Extending the fault-level qualification standards that utilities applied to electric arc furnace operators beginning in the 1970s to data center interconnection, combined with node-level demand caps embedded in interconnection agreements, would implement a stiff-point siting standard that directs large digital infrastructure loads toward the transmission nodes capable of absorbing them without cascading grid stress or ratepayer cost socialization.",
+      "concern": "Arc furnace precedent supports stiff-point qualification and demand caps for data centers",
+      "bins": [
+        "pr:study",
+        "pr:proximate",
+        "topic:stiff-point-qualification"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The structural risk is not that demand will collapse. It is that siting decisions made on peak-trajectory assumptions will be exposed by a demand moderation that arrives faster than the infrastructure committed to serve it.",
+      "concern": "Overbuilt infrastructure risk from demand forecast errors",
+      "bins": [
+        "aq:threshold",
+        "topic:demand-forecasting"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The NDA culture that produced eighty percent opacity in Virginia localities is not a legitimate business practice in the context of infrastructure that depends on public transmission systems. It is an information asymmetry that systematically prevents communities from quantifying and negotiating the costs they are being asked to absorb.",
+      "concern": "NDA opacity prevents communities from evaluating costs imposed on them",
+      "bins": [
+        "topic:transparency-deficit"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The interconnection queue, which nationally had grown to over two thousand gigawatts of pending requests by 2024, with PJM accounting for a substantial share of that backlog, functions on a first-come, first-served allocation mechanism that rewards queue position rather than siting quality.",
+      "concern": "Queue rewards position over siting quality and burdens all ratepayers",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "rg:pjm",
+        "topic:queue-reform"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "A hyperscale facility drawing hundreds of megawatts typically employs twenty-five to one hundred fifty permanent workers. The nuclear plants, steel mills, and manufacturing operations that anchor comparative expectations employed thousands. Communities are being asked to absorb the cost profile of heavy industrial infrastructure while receiving a fraction of the employment return.",
+      "concern": "Data centers impose heavy infrastructure costs while delivering few local jobs",
+      "bins": [
+        "topic:jobs-gap"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The critical difference is that the electric arc furnace interconnection standard required demonstration of fault-level adequacy and installation of reactive power compensation equipment as conditions of interconnection approval. No equivalent standard currently governs data center interconnection. The result is a systematic mismatch between the locations where data center demand is concentrated and the locations where the grid can actually absorb it.",
+      "concern": "Absence of fault-level standard for data centers creates grid mismatch",
+      "bins": [
+        "pr:study",
+        "topic:stiff-point-qualification"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The requirement that large-load interconnection applicants demonstrate node adequacy, or fund the specific localized upgrades required to achieve it, places network optimization costs on the party whose siting decision creates them.",
+      "concern": "Cost responsibility should fall on the developer whose siting choice creates upgrade needs",
+      "bins": [
+        "pr:cost",
+        "pr:proximate",
+        "topic:cost-causation"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "A demand cap that halts new interconnection approvals at a node once its available capacity has been committed forces the next developer to either identify a different node, fund the upgrade required to expand capacity at the chosen node, or wait until existing load is reduced. In each case, the cost of the siting decision is borne by the party making it.",
+      "concern": "Node-level demand caps enforce cost causation and redirect overloaded nodes",
+      "bins": [
+        "pr:cost",
+        "pr:study",
+        "topic:demand-caps"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Legacy Rust Belt industrial districts carry precisely the grid characteristics that the stiff-point framework rewards. The industrial districts that supported heavy manufacturing, integrated steel production, and automotive assembly during the postwar decades required, and received, high-capacity transmission lines and substations engineered to absorb the kind of volatile, nonlinear loads that are exceptionally difficult to manage on a regional network.",
+      "concern": "Rust Belt sites have grid infrastructure suited for large-load data centers",
+      "bins": [
+        "pr:proximate",
+        "rg:miso",
+        "topic:rust-belt-opportunity"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "FERC should initiate a rulemaking establishing fault-level adequacy as a condition of large-load interconnection eligibility, with technical specifications derived from IEEE standards long applied by utilities to large industrial load interconnections.",
+      "concern": "FERC rulemaking should set fault-level eligibility standards for large-load interconnection",
+      "bins": [
+        "aq:threshold",
+        "pr:study",
+        "topic:stiff-point-qualification"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "PJM, MISO, SPP, and other RTOs and ISOs operating under FERC jurisdiction should file tariff amendments implementing node-level demand caps for large-load interconnection. Caps should be set at the fault-level capacity available at each interconnection point, net of existing committed load.",
+      "concern": "RTOs should adopt tariff-level demand caps keyed to available fault-level capacity",
+      "bins": [
+        "pr:cost",
+        "pr:study",
+        "rg:pjm",
+        "rg:miso",
+        "rg:spp",
+        "topic:demand-caps"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "A transparency requirement for large data center interconnection applications, mandating public disclosure of projected demand, water consumption, backup generation capacity and emissions profile, and expected permanent employment as part of the interconnection study process, would serve the function that NEPA's EIS requirement served in the nuclear era.",
+      "concern": "Mandatory disclosure should accompany interconnection applications to inform communities",
+      "bins": [
+        "topic:transparency-deficit"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "RTOs and ISOs should establish a priority processing track for large-load interconnection applications at nodes with demonstrated stiff-point characteristics. Legacy heavy industrial sites in the Rust Belt corridor that carried industrial loads of comparable or greater magnitude within the past thirty years should be eligible for expedited preliminary qualification based on documented interconnection history.",
+      "concern": "Priority queue treatment should go to proven stiff-point sites, especially Rust Belt brownfields",
+      "bins": [
+        "aq:expedited",
+        "pr:proximate",
+        "rg:miso",
+        "topic:rust-belt-opportunity"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Small modular reactor technology, with units targeting fifty to three hundred megawatts of output, factory-fabricated modular components, passive safety systems, and siting footprints compatible with brownfield industrial parcels, is the most technically coherent long-range resolution to the firm power problem.",
+      "concern": "SMRs are the preferred long-range firm power solution for data center co-location",
+      "bins": [
+        "pr:colo",
+        "topic:smr-colocation"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Stiff-point interconnection study reform",
+      "stance": "support",
+      "description": "The filer supports FERC requiring fault-level stiff-point qualification as a condition for initiating large-load interconnection studies, modeled on arc furnace standards. This would filter the queue at entry, reducing study costs and directing development to nodes the grid can absorb. The current first-come, first-served queue rewards position over siting quality and imposes upgrade costs system-wide.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        7,
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Developer bears upgrade cost",
+      "stance": "support",
+      "description": "The filer supports placing localized upgrade costs on the party whose siting decision creates them, through node-level demand caps and stiff-point qualification requirements. Under the current framework, ratepayers absorb upgrade costs from siting decisions they had no role in. Demand caps that halt approvals once node capacity is committed force developers to fund upgrades or choose qualifying sites.",
+      "quote_ids": [
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Proximity to grid capacity drives siting",
+      "stance": "support",
+      "description": "The filer argues that data center siting should be directed toward nodes with demonstrated fault-level capacity, which in practice means legacy heavy industrial sites in the Rust Belt corridor. Stiff-point and demand cap standards convert grid physics into market signals, favoring geographies where the foundational engineering already exists rather than locations that impose cascading costs on the system.",
+      "quote_ids": [
+        2,
+        8,
+        10,
+        14
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "SMR co-location for firm power",
+      "stance": "support",
+      "description": "The filer recommends a federal planning framework for SMR co-location with data centers as the long-range resolution to the firm baseload power problem. SMRs targeting 50 to 300 megawatts are compatible with brownfield industrial parcels and match the scale and timeline of serious data center operators. Rust Belt sites and a closed-loop model for the Southwest are the two proposed deployment paths.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Megawatt threshold for qualification",
+      "stance": "support",
+      "description": "The filer supports establishing a minimum fault-level capacity threshold and a megawatt threshold above which large-load interconnection applications must pass preliminary fault-level screening. This ties eligibility to node characteristics rather than queue position, and provides a pathway for developers to proceed at disqualified nodes by committing to fund required upgrades.",
+      "quote_ids": [
+        3,
+        11
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited treatment for qualified sites",
+      "stance": "support",
+      "description": "The filer supports a priority processing track for interconnection applications at nodes with documented stiff-point characteristics, especially Rust Belt legacy industrial sites. Expedited preliminary qualification based on interconnection history addresses both queue congestion and geographic redistribution simultaneously, moving the highest-quality applications fastest.",
+      "quote_ids": [
+        5,
+        14
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM queue backlog and demand caps",
+      "stance": "neutral",
+      "description": "The filer references PJM as carrying a substantial share of the national interconnection backlog that exceeded 2,000 gigawatts by 2024, and identifies PJM as one of the RTOs that should file tariff amendments for node-level demand caps. The region is cited as evidence of systemic queue dysfunction rather than as a primary reform target.",
+      "quote_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO and Rust Belt stiff-point sites",
+      "stance": "neutral",
+      "description": "The filer identifies MISO-territory Rust Belt industrial districts as carrying grid characteristics well suited to the stiff-point framework, with high fault-level substations engineered for heavy manufacturing loads that persist even after those industries have departed. MISO is named as a jurisdiction that should file tariff amendments for demand caps.",
+      "quote_ids": [
+        10,
+        12,
+        14
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP included in demand cap mandate",
+      "stance": "neutral",
+      "description": "The filer names SPP alongside PJM and MISO as an RTO that should file tariff amendments implementing node-level demand caps for large-load interconnection.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:stiff-point-qualification",
+      "name": "Fault-level stiff-point standard",
+      "stance": "support",
+      "description": "The filer's central proposal is that FERC establish fault-level stiff-point qualification as the entry condition for large-load interconnection, based on IEEE 519-2022 standards and the arc furnace interconnection precedent. The absence of any equivalent standard for data centers produces a systematic mismatch between where demand concentrates and where the grid can absorb it. This is the mechanism that converts grid physics into market signals without prescriptive land use regulation.",
+      "quote_ids": [
+        2,
+        7,
+        11
+      ]
+    },
+    {
+      "key": "topic:demand-caps",
+      "name": "Node-level load caps",
+      "stance": "support",
+      "description": "The filer proposes node-level demand caps set at fault-level capacity net of committed load, requiring developers who seek to attach load at a saturated node to fund upgrades, relocate, or wait. This directly addresses cost externalization by ensuring the party making the siting decision bears the cost of that decision.",
+      "quote_ids": [
+        9,
+        12
+      ]
+    },
+    {
+      "key": "topic:cost-externalization",
+      "name": "Ratepayer cost socialization",
+      "stance": "oppose",
+      "description": "The filer opposes the current pattern in which residential ratepayers fund grid upgrades they did not request from data center siting decisions, while communities also absorb local impacts without adequate information to negotiate mitigation. The estimated $100 billion in delayed and canceled projects is attributed to this governance failure generating systematic community opposition.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:cost-causation",
+      "name": "Cost follows the siting decision",
+      "stance": "support",
+      "description": "The filer argues that the party whose siting decision creates the need for network upgrades should bear those costs. Stiff-point qualification and demand caps both implement this principle, replacing the current model where upgrade costs are socialized across all ratepayers regardless of who caused them.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:transparency-deficit",
+      "name": "Mandatory disclosure requirement",
+      "stance": "support",
+      "description": "The filer documents that roughly 80 percent of Virginia municipalities with data centers have NDAs limiting public access to project information, and argues this is a governance failure rather than a legitimate business practice. A mandatory disclosure requirement covering projected power demand, water consumption, emissions, and employment should accompany large-load interconnection applications, analogous to NEPA's EIS requirement in the nuclear era.",
+      "quote_ids": [
+        4,
+        13
+      ]
+    },
+    {
+      "key": "topic:demand-forecasting",
+      "name": "Overstated demand projections",
+      "stance": "neutral",
+      "description": "The filer cautions that current data center demand projections rest on peak-trajectory assumptions that may not hold as AI shifts from training to inference and semiconductor efficiency improves. The structural risk is not demand collapse but that siting decisions made on overoptimistic assumptions will be overtaken by moderation faster than committed infrastructure can adapt, paralleling the nuclear retrenchment of the 1980s.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "topic:jobs-gap",
+      "name": "Low employment return from data centers",
+      "stance": "neutral",
+      "description": "The filer notes that hyperscale facilities drawing hundreds of megawatts typically employ only 25 to 150 permanent workers, far below the thousands that anchor community expectations from nuclear, steel, and manufacturing facilities. Communities are asked to absorb heavy industrial cost profiles while receiving a fraction of the employment return, which the filer treats as a structural grievance addressed by the Rust Belt brownfield and SMR co-location framework.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:rust-belt-opportunity",
+      "name": "Rust Belt as preferred development site",
+      "stance": "support",
+      "description": "The filer argues that legacy Rust Belt industrial sites carry high fault-level transmission infrastructure suited for data centers, along with heavy industrial zoning, established rights-of-way, and brownfield redevelopment frameworks. As AI inference workloads distribute geographically and require proximity to population centers rather than exchange clusters, the Rust Belt corridor delivers sub-15-millisecond latency to major Midwestern and Eastern markets.",
+      "quote_ids": [
+        10,
+        14
+      ]
+    },
+    {
+      "key": "topic:smr-colocation",
+      "name": "SMR co-location planning framework",
+      "stance": "support",
+      "description": "The filer recommends that DOE, FERC, and NRC develop a planning framework for SMR co-location with data centers, targeting two models: proximate co-location at Rust Belt brownfield sites and a closed-loop infrastructure model in the Southwest that integrates on-site SMR generation with waste-heat cooling and zero-liquid-discharge water treatment. SMRs are presented as the only technically coherent resolution to the firm baseload power requirement that renewable generation with battery backup has not met at the required scale and duration.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "topic:queue-reform",
+      "name": "Queue position over siting quality",
+      "stance": "oppose",
+      "description": "The filer opposes the current first-come, first-served queue mechanism that rewards queue position rather than siting quality and allows developers with confirmed financing to still secure positions at nodes with inadequate fault-level capacity. Stiff-point qualification implemented at queue entry would filter for siting quality and reduce study costs for qualified applications.",
+      "quote_ids": [
+        5
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "threshold",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "proximate",
+      "colo"
+    ],
+    "rg": [
+      "pjm",
+      "miso",
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

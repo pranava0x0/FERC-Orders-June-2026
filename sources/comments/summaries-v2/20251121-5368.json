@@ -1,0 +1,294 @@
+{
+  "accession": "20251121-5368",
+  "filer": "New York Transmission OwnersCentral Hudson Gas & Electric CorporationNew York Power Authority ,New York State Electric & Gas Corp. and Rochester Gas and El ,Niagara Mohawk d/b/a/ National Grid ,Consolidated Edison Company of New York, Inc. and Orange and ,Long Island Power Authority ,",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5368__New-York-Transmission-OwnersCentral-Hudson-Gas-and/New York Transmission Owners' Comments RM26-4 11.21.24.txt",
+  "overall_summary": "The New York Transmission Owners urge FERC to prioritize reliability, respect established federal-state jurisdictional boundaries, and preserve regional flexibility in any large-load interconnection rulemaking. They oppose prescriptive federal mandates on cost allocation, option-to-build rights, and study paths that would disrupt ongoing state and regional processes in New York, and ask FERC to build on existing cooperative federalism frameworks rather than create new structures.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the NYTOs respectfully request that the Federal Energy Regulatory Commission (\"FERC\" or \"the Commission\") prioritize reliability, respect established jurisdictional boundaries, and permit regional flexibility to satisfy regional needs.",
+      "concern": "Overall ask: reliability first, jurisdictional respect, and regional flexibility",
+      "bins": [
+        "pr:flex",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Because the Commission has not previously established a comprehensive framework for large-load interconnections, any new requirements should be developed with care and attention to the existing statutory division of responsibilities between federal and state authorities.",
+      "concern": "No prior federal framework exists; new rules must respect the federal-state division",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "building on NYISO's existing Commission-approved reliability planning processes that coordinate these comprehensive mechanisms—rather than creating an entirely new structure for transmission-level load—will promote continuity and make use of experience already gained.",
+      "concern": "Build on existing NYISO processes rather than creating a new federal structure",
+      "bins": [
+        "pr:study",
+        "rg:nyiso"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The 20 MW screen in Principle 2 should be treated as a planning indicator, not a jurisdictional trigger, so that regions can tailor applicability based on voltage, topology, and reliability considerations.",
+      "concern": "20 MW threshold should not serve as a hard jurisdictional trigger for cost allocation or service classification",
+      "bins": [
+        "aq:threshold",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "States, regions, and each Transmission Owner must retain discretion to set triggers that reflect local system characteristics and each Transmission Owner must have discretion to determine whether each customer is interconnecting at the transmission or distribution level under FERC's seven factor test.",
+      "concern": "Local discretion to set study thresholds and classify interconnections must be preserved",
+      "bins": [
+        "aq:threshold",
+        "aq:jurisdiction",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the Commission should focus any cost allocation and option to build rules on those large load customers likely requiring the most transmission improvements (e.g., at 100 MW).",
+      "concern": "Federal cost allocation and option-to-build rules should target only the largest customers, not all above 20 MW",
+      "bins": [
+        "aq:threshold",
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Reliability is the foundation of every planning and interconnection decision and must remain the top priority.",
+      "concern": "Reliability must be the primary criterion in any large-load interconnection framework",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Large-load customers taking retail delivery service at transmission-level voltages should be subject to enforceable reliability obligations, including compliance with applicable NERC standards.",
+      "concern": "Large loads interconnecting at transmission voltage must face binding NERC reliability obligations",
+      "bins": [
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Shifting NERC accountability from a customer constructing, owning or operating BES-connected equipment to the Transmission Owner would introduce operational risk and blur enforcement lines by making Transmission Owners responsible for the actions of third parties like large load customers.",
+      "concern": "NERC reliability responsibility must stay with the entity that owns or operates BES equipment, not shift to the TO",
+      "bins": [
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "customers that drive new costs should bear the economic weight of the facilities dedicated to their use; Transmission Owners should have the right to recover their costs plus a regulated return when they construct, own, and operate assets upon which the system relies; and federal actions should not upend established allocation frameworks or compel Transmission Owners to operate facilities without full cost-of-service recovery, including an authorized return.",
+      "concern": "Cost allocation must follow the cost-causer, preserve TO cost recovery, and not overturn existing state frameworks",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "A nationwide rule that presumes all upgrade costs must be directly assigned to the interconnecting load customer would not account for these distinctions and could conflict with existing state-jurisdictional approaches to resource adequacy, retail ratemaking, and customer protection.",
+      "concern": "A blanket direct-assignment rule would conflict with state retail ratemaking frameworks",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Option-to-build authority is appropriate only for facilities used exclusively by the requesting customer and only where: (1) the facilities are not used or relied upon for network transmission service; (2) the customer assumes full lifecycle responsibility and NERC obligations if the asset qualifies as a BES facility; (3) the Transmission Owner retains authority over system protection, interconnection criteria, switching, and operational coordination at the point of interconnection; and (4) no ongoing operation and maintenance, modeling, or retrofit obligations shift to the Transmission Owner absent Section 205 cost of service recovery.",
+      "concern": "Option-to-build for large loads must be limited to customer-dedicated radial facilities with strict conditions",
+      "bins": [
+        "aq:hybridrights",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Large-load requests should not be forced into generator cluster studies unless regional circumstances support doing so.",
+      "concern": "Forcing large loads into generator cluster study cycles risks multi-year delays in New York",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Load flexibility through curtailment alone is not sufficient to eliminate reliability impacts and justify interconnection prioritization when accounting for the magnitude of curtailment and that curtailment may not be obligatory or under NYISO dispatch as a demand side resource.",
+      "concern": "Curtailability alone does not justify expedited study or interconnection priority",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "To respect existing agreements, the Commission must apply any changes in this proceeding prospectively.",
+      "concern": "Any new rules must apply prospectively to protect existing interconnection agreements",
+      "bins": [
+        "topic:prospective-application"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Preserve federal-state boundary",
+      "stance": "support",
+      "description": "The NYTOs urge FERC to develop any new requirements with careful attention to the FPA's division of authority between federal transmission jurisdiction and state oversight of retail service, siting, and permitting. They cite Supreme Court and Commission precedent holding that retail regulation belongs to states, and warn that novel assertions of federal jurisdiction will invite litigation that delays interconnections.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        11
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20 MW not a hard trigger",
+      "stance": "oppose",
+      "description": "The NYTOs oppose treating the 20 MW screen as a jurisdictional trigger for cost allocation or service classification. They argue the threshold was set in the generator interconnection context and should not be applied mechanically to large-load interconnections; regions need discretion to set thresholds reflecting voltage, topology, and local system characteristics. For cost allocation and option-to-build purposes, a higher threshold such as 100 MW is more appropriate.",
+      "quote_ids": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "No forced entry into gen queues",
+      "stance": "oppose",
+      "description": "The NYTOs oppose forcing large-load requests into fixed generator interconnection cluster study windows. In New York, missed application windows delay service by up to two years. They favor separate, parallel load cluster processes with cross-checks to the generator queue where needed, with each region maintaining discretion over study design.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "NERC obligations follow facility control",
+      "stance": "support",
+      "description": "The NYTOs support assigning NERC reliability obligations to the entity that owns or operates BES-connected equipment, whether a transmission owner or the large-load customer itself. They oppose shifting NERC accountability to transmission owners for equipment owned by third-party load customers, warning that this would blur enforcement lines and introduce operational risk.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Curtailability alone does not justify fast-track",
+      "stance": "oppose",
+      "description": "The NYTOs argue that curtailability alone does not reduce the scope or speed of reliability studies, because curtailment may not be obligatory or under ISO dispatch. Any expedited pathway for flexible or curtailable loads must remain a regional determination based on technical readiness and system conditions, not a federal mandate.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Cost causers bear costs; TOs recover returns",
+      "stance": "mixed",
+      "description": "The NYTOs support the principle that customers driving new upgrade costs should bear those costs, and that transmission owners must recover a regulated return on assets they build and operate. They oppose a blanket direct-assignment rule that would conflict with state retail ratemaking frameworks, and ask that any federal cost framework preserve regional flexibility and respect state authority over upgrade cost allocation.",
+      "quote_ids": [
+        6,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Option-to-build limited to radial facilities",
+      "stance": "oppose",
+      "description": "The NYTOs oppose extending option-to-build rights to transmission-level network upgrades. They argue such rights are appropriate only for customer-specific radial facilities that are not relied upon for network service, where the customer assumes full NERC lifecycle responsibility and the transmission owner retains protection, switching, and operational authority at the point of interconnection.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Build on existing NYISO processes",
+      "stance": "support",
+      "description": "The NYTOs support building any federal framework on NYISO's existing Commission-approved reliability planning processes rather than creating a new federal structure. Reliability must remain the foundation of every study decision, and NERC, regional, and local reliability structures should remain core to any federally directed process.",
+      "quote_ids": [
+        3,
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Protect TO cost recovery; oppose blanket direct assignment",
+      "stance": "mixed",
+      "description": "The NYTOs support cost frameworks that ensure transmission owners recover prudently incurred costs plus a regulated return, and that cost-causer customers bear the economic weight of dedicated facilities. They oppose any federal rule presuming all upgrade costs must be directly assigned to the interconnecting customer, which would conflict with state retail ratemaking and could undermine transmission owner financial capacity.",
+      "quote_ids": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Regional flexibility in study paths and thresholds",
+      "stance": "support",
+      "description": "The NYTOs consistently ask that any federal requirements allow regions to tailor study paths, thresholds, and cost-allocation frameworks to local system characteristics. They oppose one-size-fits-all federal mandates and argue that preserving regional reform trajectories will accelerate, not slow, safe interconnections.",
+      "quote_ids": [
+        1,
+        4,
+        5,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "rg:nyiso",
+      "name": "NYISO processes as the model",
+      "stance": "neutral",
+      "description": "The NYTOs describe New York's layered federal-regional-state reliability framework in detail, including NYISO's TEI Manual study thresholds, NYSRC and NPCC coordination, and ongoing 2026 stakeholder priority projects on large-load integration. They present these processes as evidence that cooperative federalism already works and should be reinforced, not supplanted.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "topic:prospective-application",
+      "name": "New rules must apply prospectively",
+      "stance": "support",
+      "description": "The NYTOs ask that any final rule apply only to new interconnection agreements going forward, so that existing agreements and ongoing studies are not disrupted. They also request region-specific transition periods to allow tariff, manual, and planning-framework alignment without delaying active projects.",
+      "quote_ids": [
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "protection",
+      "expedited",
+      "upgradecost",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex"
+    ],
+    "rg": [
+      "nyiso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
