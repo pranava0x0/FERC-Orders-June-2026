@@ -1,0 +1,151 @@
+{
+  "accession": "20251121-5486",
+  "filer": "Consumer Energy Alliance",
+  "org_type": "trade_assoc",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5486__Consumer-Energy-Alliance/RM26-4-000 Consumer Energy Alliance.txt",
+  "overall_summary": "Consumer Energy Alliance supports expedited large-load interconnection but opposes uniform national rules, urging FERC to act only as a backstop when states fail to innovate. CEA emphasizes cost causation (large loads pay for upgrades), retention of existing jurisdictional tests, and respect for diverse state regulatory structures already succeeding with major data-center investments.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "CEA enthusiastically supports reforms that improve and expedite the siting of energy infrastructure – whether it be electric and gas transmission, electric generation or large-load interconnection.",
+      "concern": "CEA supports expedited siting reforms",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Given the complexities and differences in these regulatory structures, FERC should avoid implementing rules that treat each jurisdiction the same.",
+      "concern": "FERC should not impose uniform rules across diverse state structures",
+      "bins": [
+        "topic:jurisdictional-flexibility"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Simply put, FERC should not preempt jurisdictions that are expeditiously connecting large loads.",
+      "concern": "FERC should not override state processes that are already working",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "load and hybrid facilities should be Responsible for 100% of the upgrades that they are assigned through interconnection studies.",
+      "concern": "Large loads must bear full cost of assigned upgrades",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "This sentiment aligns with the cost causation principle of utility ratemaking which limits cross subsidies and protects system reliability by requiring that costs be borne by those who cause them.",
+      "concern": "Cost causation prevents cross-subsidy and protects reliability",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "In order to avoid unintentional consequences and creating uncertainty with regards to jurisdiction of large load interconnections FERC should continue utilizing the seven-factor test adopted in FERC Order 888",
+      "concern": "Retain existing seven-factor jurisdictional test",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "FERC should only exert its jurisdiction on large load interconnection when states have failed to act.",
+      "concern": "FERC should act only as backstop when states fail",
+      "bins": [
+        "topic:federalism",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "A one-size-fits-all approach could create regulatory morass and have the unintended consequence of delaying projects and not moving them forward in the manner desired by the Secretary.",
+      "concern": "Uniform national rules risk delaying rather than accelerating projects",
+      "bins": [
+        "topic:jurisdictional-flexibility"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost causation for large loads",
+      "stance": "support",
+      "description": "Large loads and hybrid facilities should bear 100 percent of upgrade costs assigned in interconnection studies. This aligns with cost causation principles in utility ratemaking, prevents cross-subsidy, and protects system reliability by ensuring costs fall on those who cause them.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Expedited siting reforms support",
+      "stance": "support",
+      "description": "CEA supports reforms to improve and expedite siting of energy infrastructure, including electric and gas transmission, generation, and large-load interconnection.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Respect for state leadership",
+      "stance": "support",
+      "description": "FERC should not preempt or override state jurisdictions that are already successfully and expeditiously connecting large loads, as demonstrated by data-center investments in California, New York, Texas, Louisiana, and other regions.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Jurisdictional framework",
+      "stance": "neutral",
+      "description": "FERC should continue using the seven-factor test from FERC Order 888 to determine jurisdiction, and should exert jurisdiction only when states have failed to act, mirroring its role in transmission siting under Section 216 of the Federal Power Act.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "topic:jurisdictional-flexibility",
+      "name": "Regional structure diversity",
+      "stance": "support",
+      "description": "Market and regulatory structures vary significantly by state and region (restructured versus vertically integrated, single-state versus multi-state RTOs), and FERC should avoid imposing uniform rules that treat all jurisdictions identically. A one-size-fits-all approach risks creating regulatory delays rather than expediting projects.",
+      "quote_ids": [
+        2,
+        8
+      ]
+    },
+    {
+      "key": "topic:federalism",
+      "name": "Cooperative federalism approach",
+      "stance": "support",
+      "description": "FERC should honor cooperative federalism principles by using federal jurisdiction only as a backstop when states fail to act, consistent with Congress's intent in granting limited FERC siting authority under Section 216 of the Federal Power Act.",
+      "quote_ids": [
+        7
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "cost",
+      "flex",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

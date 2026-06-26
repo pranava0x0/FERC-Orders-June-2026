@@ -1,0 +1,153 @@
+{
+  "accession": "20251121-5415",
+  "filer": "NATIONAL CONGRESS OF AMERICAN INDIANS",
+  "org_type": "enviro",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5415__NATIONAL-CONGRESS-OF-AMERICAN-INDIANS/FREC _ RM26-4-000 _ Motion to Extend Deadlines and Initiate Tribal Consultation.txt",
+  "overall_summary": "NCAI argues that the ANOPR proceeding has violated federal trust and consultation obligations to Tribal Nations by failing to acknowledge their sovereignty or initiate government-to-government consultation. NCAI contends that the compressed comment period is procedurally insufficient for Tribal governments to conduct required internal review and that the proposed principles will have profound, unexamined impacts on Tribal lands, resources, economic self-determination, and jurisdictional sovereignty. NCAI requests a 120-day extension to February 25, 2026, and formal Tribal consultation prior to further proceedings.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the minimal 7-day extension — granted only in response to state organizations citing \"technical and legal complexity\" — remains profoundly insufficient",
+      "concern": "Comment period is too short for Tribal governments",
+      "bins": [
+        "pr:cost",
+        "topic:tribal-consultation"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Tribal governments must conduct internal governmental review, legal analysis, and leadership deliberation before submitting an official position",
+      "concern": "Tribes need time for sovereign governmental processes",
+      "bins": [
+        "pr:cost",
+        "topic:tribal-consultation"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Compressing this process into a total of 24 days renders meaningful participation effectively impossible and violates the spirit of the Administrative Procedure Act",
+      "concern": "24-day timeline violates APA and meaningful participation",
+      "bins": [
+        "pr:cost",
+        "topic:tribal-consultation"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Neither the Department of Energy's (DOE) proposed ANOPR nor any subsequent Commission notice acknowledges the existence of Tribal Nations, Tribal sovereignty, treaty rights, or the federal trust responsibility",
+      "concern": "ANOPR fails to acknowledge Tribal Nations or their sovereignty",
+      "bins": [
+        "topic:tribal-consultation"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Because this proceeding will have \"substantial direct effects on one or more Tribal nations,\" it triggers explicit consultation duties under Executive Order 13175, \"Consultation and Coordination with Indian Tribal Governments\"",
+      "concern": "EO 13175 requires consultation on matters with direct tribal effects",
+      "bins": [
+        "topic:tribal-consultation"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The ANOPR's proposed principles aim to accelerate infrastructure, such as data centers and expanded transmission corridors (\"network upgrades\"). These linear projects will invariably intersect with Tribal lands, sacred sites, water rights, cultural resources, and federally protected, off-reservation treaty rights",
+      "concern": "Infrastructure acceleration will impact Tribal lands and resources",
+      "bins": [
+        "topic:tribal-impact"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The proposal is silent on how its new, expedited processes will comply with mandatory federal consultation requirements, such as Section 106 of the National Historic Preservation Act (\"NHPA\"), 54 U.S.C. § 306108, or the National Environmental Policy Act (\"NEPA\")",
+      "concern": "ANOPR does not address compliance with NHPA and NEPA consultation",
+      "bins": [
+        "topic:tribal-impact"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The ANOPR's Principle \"Cost Responsibility,\" which allocates 100% of network upgrade costs to the load, effectively privileges large corporate developers while undermining Tribal Nations' ability to pursue energy or industrial projects",
+      "concern": "100% cost allocation to load burdens Tribal economic development",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The ANOPR's Principle \"Option to Build\" on Tribal trust lands requires federal rights-of-way, which are subject to Tribal consent under 25 U.S.C. §§ 323-328. The ANOPR fails to address this fundamental legal requirement",
+      "concern": "Option to Build conflicts with Tribal consent requirement for rights-of-way",
+      "bins": [
+        "topic:tribal-impact"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "By framing the ANOPR's jurisdictional discussion solely around federal and state roles, the proposal disregards Tribal Nations as the third sovereign within the United States",
+      "concern": "Jurisdictional analysis omits Tribal sovereigns",
+      "bins": [
+        "topic:tribal-consultation"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Insufficient timeline for Tribal review",
+      "stance": "oppose",
+      "description": "NCAI opposes the compressed comment period of 24 total days as procedurally insufficient for Tribal governments to conduct internal review, legal analysis, and leadership deliberation required before submitting an official position. The minimal 7-day extension fails to accommodate sovereign governmental processes that are mandated by federal law and the spirit of the APA.",
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "key": "topic:tribal-consultation",
+      "name": "Lack of government-to-government consultation",
+      "stance": "oppose",
+      "description": "NCAI opposes the ANOPR's failure to acknowledge Tribal Nations as sovereigns or initiate mandated government-to-government consultation required by Executive Order 13175 and the Commission's own 2003 Tribal Consultation Policy. The proceeding disregards Tribal Nations in its jurisdictional analysis and treats them as mere stakeholders rather than sovereign governments with direct effects from the rulemaking.",
+      "quote_ids": [
+        4,
+        5,
+        10
+      ]
+    },
+    {
+      "key": "topic:tribal-impact",
+      "name": "Unexamined impacts on Tribal lands and resources",
+      "stance": "oppose",
+      "description": "NCAI opposes the ANOPR's acceleration of infrastructure projects that will invariably intersect with Tribal lands, sacred sites, water rights, and treaty-reserved rights without addressing mandatory consultation under NHPA and NEPA. The Option to Build principle on Tribal trust lands conflicts with the federal legal requirement for Tribal consent on rights-of-way.",
+      "quote_ids": [
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Cost allocation burdens Tribal development",
+      "stance": "oppose",
+      "description": "NCAI opposes the Cost Responsibility principle allocating 100% of network upgrade costs to the load, arguing it privileges large corporate developers while undermining Tribal Nations' ability to pursue energy or industrial projects and violates the federal trust responsibility to promote Tribal self-sufficiency.",
+      "quote_ids": [
+        8
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost"
+    ],
+    "pr": [
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
