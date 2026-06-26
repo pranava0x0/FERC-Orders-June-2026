@@ -1,0 +1,141 @@
+{
+  "accession": "20251205-5307",
+  "filer": "LEAN Energy US",
+  "org_type": "clean_energy",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5307__LEAN-Energy-US/FINAL Reply Comments of LEAN Energy US in RM26-4.txt",
+  "overall_summary": "LEAN Energy US supports FERC establishing best-practice standards for large load interconnections but opposes federal jurisdiction that would override state and local regulatory roles. The organization emphasizes that Community Choice Aggregations can provide flexible resources and capacity outside the facility fence-line, and that cost-shifting protections and visibility mechanisms are necessary to prevent existing consumers from bearing the financial burden of large load accommodation.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "FERC should be careful not to usurp traditional roles in this proceeding.",
+      "concern": "Federal jurisdiction over load interconnection could displace state regulatory authority.",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "forecasting occurs at the state and local levels, so federal standards, if any are established, need to consider how to best and most accurately inform state/local forecasting processes.",
+      "concern": "Federal standards must accommodate existing state and local forecasting structures.",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "significant benefits from FERC's intervention here—such as improving the timeliness and accuracy of load forecasting and predictable interconnection processes—can be accomplished without the Commission asserting jurisdiction over load interconnection.",
+      "concern": "Process improvements can be achieved through best practices without federal jurisdiction.",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Data centers that co-locate storage or generating assets and have the ability to shift load in response to market or grid operating condition signals may be well-positioned to work with their local CCA to integrate their hybrid resources into a flexible load program that can benefit not only the data center as a customer, but all customers served by the CCA, by reducing peak demand through automated load reduction.",
+      "concern": "CCAs can deliver flexibility by integrating hybrid resources into coordinated load programs.",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "these flexibilities can and should be incentivized in ways other than faster interconnection.",
+      "concern": "Flexibility should not be advanced by expedited interconnection timelines.",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Flexibility can be considered a competitive product, and should be available beyond defaulting to utility-run programs.",
+      "concern": "Flexibility offerings should not be restricted to utility programs.",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "fast tracking data center interconnections at the expense of connecting new resources to the grid could lead to reliability issues that outstrip the benefits flexibility can provide.",
+      "concern": "Expedited large load interconnection could compromise grid reliability by delaying resource connections.",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "FERC should consider alternative mechanisms to ensure it retains visibility over the full spectrum of actions that have the effect of raising consumer costs and ensure it adopts policies to mitigate such actions.",
+      "concern": "FERC must maintain oversight of all cost-shifting mechanisms affecting consumers.",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the reliability studies required by Principle #10 are insufficient to protect consumers from the financial impacts of existing generators retiring from the market to instead serve more lucrative large load customers.",
+      "concern": "Reliability studies alone do not prevent cost impacts of generator retirement.",
+      "bins": [
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Preserve state jurisdiction over interconnection oversight",
+      "stance": "oppose",
+      "description": "FERC should not assert jurisdiction over large load interconnection that would displace state and local regulatory authority. Federal standards should support rather than replace existing state forecasting and planning processes. Process improvements in timeliness, accuracy, and predictability can be achieved through coordinated best practices without federal jurisdiction.",
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Enable flexible resources through CCA partnerships and competitive offerings",
+      "stance": "support",
+      "description": "Community Choice Aggregations are well-positioned to deliver flexible resources by integrating hybrid storage and generation assets with coordinated load programs. Flexibility should be incentivized as a competitive product available beyond utility-run programs, not by expediting interconnection timelines.",
+      "quote_ids": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Prevent reliability impacts from accelerated data center interconnection",
+      "stance": "oppose",
+      "description": "Expedited large load interconnection could compromise grid reliability by delaying connections for other resources. The potential reliability gains from data center flexibility should not outweigh the risks of deprioritizing additional grid resources.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Protect existing consumers from cost-shifting",
+      "stance": "oppose",
+      "description": "FERC must maintain comprehensive visibility over all mechanisms that shift costs to existing consumers, including generator retirements induced by large load service. Reliability studies alone are insufficient to protect consumers from these financial impacts; targeted cost-mitigation policies are required.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "study",
+      "flex",
+      "colo",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

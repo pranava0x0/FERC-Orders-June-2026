@@ -1,0 +1,209 @@
+{
+  "accession": "20251205-5244",
+  "filer": "OpenAI Group PBC",
+  "org_type": "data_center",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5244__OpenAI-Group-PBC/OpenAI FERC ANOPR Reply.txt",
+  "overall_summary": "OpenAI supports accelerated large-load interconnection reform to enable AI data centers with integrated flexibility resources to support grid reliability while reducing costs. The filer argues that grid flexibility, co-located generation and storage, aligned cost allocation, and faster timelines are essential to U.S. industrial competitiveness against China and to unlock economic growth.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "OpenAI expects the cost of AI to converge to the cost of energy.",
+      "concern": "Cost of energy drives AI infrastructure location decisions",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The speed, certainty, cost, and scalability with which major new loads can connect to the grid will significantly shape where data centers, semiconductor fabs, advanced manufacturing, and entire new industrial ecosystems are built.",
+      "concern": "Interconnection terms determine regional industrial investment",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Grid Flexibility can unlock substantial capacity currently constrained by outdated peak-demand planning.",
+      "concern": "Grid flexibility unlocks underused capacity",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "if successfully executed, this build-out can underpin a historic revival of U.S. manufacturing, support hundreds of thousands of high-wage jobs, stabilize power prices, reduce grid congestion, modernize the grid, making more electricity available to potentially reduce costs for everyday consumers",
+      "concern": "Grid modernization and load growth reduce consumer power costs",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "state-level load growth in recent years (through 2024) has tended to reduce average retail electricity prices.",
+      "concern": "Recent data center load growth has lowered retail prices",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Data centers already result in lower prices in many areas where they operate.",
+      "concern": "Data centers lower local electricity prices",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "AI data centers, in particular, could function as assets capable of supporting the grid when it is under emergency conditions, such as during times of extreme heat or cold (which typically would put stress on the grid)—when they are paired with generation, load-flexibility, and demand response.",
+      "concern": "Flexible data centers improve grid resilience during stress",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "If these AI data centers can reduce consumption during peak periods, such facilities could trim the need for incremental infrastructure, and improve overall reliability.",
+      "concern": "Demand flexibility reduces peak infrastructure needs",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "A framework that enables Grid Flexibility, integrates co-located generation and storage, aligns cost responsibility with national infrastructure benefits, and enforces consistent timelines will not only protect the grid—it will help unlock the next era of American reindustrialization, technological leadership, and democratic economic growth.",
+      "concern": "Integrated framework of flexibility, colocation, and cost allocation needed",
+      "bins": [
+        "pr:flex",
+        "pr:colo",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Every AI facility can serve not only as a compute hub, but also as a testbed for energy innovation that strengthens the grid and accelerates clean, reliable baseload development.",
+      "concern": "Data centers function as energy innovation testbeds",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "If interconnection timelines for large loads remain measured in many years, America risks surrendering a decisive advantage to systems that can mobilize infrastructure by centralized command.",
+      "concern": "Slow interconnection timelines harm U.S. competitiveness",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "OpenAI urges the Commission to advance reforms that preserve system reliability while materially improving the speed, predictability, and scalability of large-load interconnections.",
+      "concern": "Need faster and more predictable interconnection processes",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "encourages stakeholders to promote simple and actionable steps to expedite the interconnection of ready, high-value large loads, including loads that will help maintain U.S. dominance in AI research.",
+      "concern": "Expedite interconnection of ready large loads",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "we will invest a minimum of $175 million to make critical regional infrastructure upgrades (which benefit not just the hub but the surrounding community).",
+      "concern": "Data center operator investment in regional infrastructure",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "aligns cost responsibility with national infrastructure benefits",
+      "concern": "Cost allocation should reflect national benefits",
+      "bins": [
+        "pr:proximate",
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost reduction and price stability",
+      "stance": "support",
+      "description": "OpenAI argues that interconnection speed and load growth reduce electricity costs for consumers. The filer cites analysis showing data center load growth has lowered retail prices and that grid modernization can stabilize power prices while making more electricity available.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        15
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Grid flexibility from flexible loads",
+      "stance": "support",
+      "description": "OpenAI supports enabling AI data centers with load flexibility and demand response to serve as grid assets during emergencies. The filer argues that flexible facilities reduce peak infrastructure needs, improve reliability, and unlock capacity constrained by outdated planning.",
+      "quote_ids": [
+        3,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-located generation and storage",
+      "stance": "support",
+      "description": "OpenAI endorses integration of co-located generation and storage with large loads as part of a comprehensive framework to protect the grid and enable faster interconnection.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Accelerated interconnection timelines",
+      "stance": "support",
+      "description": "OpenAI urges faster, more predictable interconnection processes for ready large loads to maintain U.S. competitiveness and prevent gridlock that could push infrastructure development to other countries.",
+      "quote_ids": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Cost allocation reflecting regional benefits",
+      "stance": "support",
+      "description": "OpenAI supports aligning cost responsibility with national infrastructure benefits and notes its commitment to invest in regional infrastructure upgrades that benefit surrounding communities.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "flex",
+      "colo",
+      "study",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

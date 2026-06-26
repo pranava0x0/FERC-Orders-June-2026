@@ -1,0 +1,220 @@
+{
+  "accession": "20251113-4000",
+  "filer": "US SENATOR",
+  "org_type": "elected",
+  "filed": "11/13/2025",
+  "source_text": "sources/comments/files/20251113-4000__US-SENATOR/2026-00005 Sen. Markey+ (incoming).txt",
+  "overall_summary": "Multiple U.S. Senators oppose rapid data center expansion without protections for residential ratepayers, arguing that FERC must enforce cost allocation rules, standardize load forecasting, investigate utility practices, and prioritize affordable electricity over corporate interests.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Artificial intelligence (AI) and cryptomining are fueling a rising demand for energy driven by massive, energy-intensive data centers. The resulting surge in electricity use is contributing to skyrocketing residential electric bills.",
+      "concern": "AI and cryptomining data centers are driving rapid electricity demand growth that increases household power bills.",
+      "bins": [
+        "topic:datacenter-demand",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "PJM's 2024 capacity market auction, which aims to secure resources to guarantee that the grid will be able to meet peak demand in the coming months, closed at a record high of $16.6 billion, up from just $2.2 billion in 2023.",
+      "concern": "PJM capacity auction costs tripled in one year due to data center demand.",
+      "bins": [
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "In PJM Interconnection, the regional transmission organization (RTO) that serves thirteen states and the District of Columbia in the mid-Atlantic region, data centers will drive 90% of new power demand over the next five years.",
+      "concern": "Data centers will dominate new power demand in PJM over the next five years.",
+      "bins": [
+        "pr:study",
+        "rg:pjm",
+        "topic:datacenter-demand"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Prompted by projections like these – many of which rely on uncertain and speculative data center proposals – utilities and transmission planning regions are spending billions to guarantee the grid can meet this demand.",
+      "concern": "Utilities are investing billions based on uncertain and speculative data center proposals.",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "topic:forecasting-uncertainty"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "In order to protect ratepayers from unreasonable or unjust price hikes driven by data center energy demand, FERC should reject transmission-related filings that do not properly address cost allocation or allow the cost of transmission built to serve data centers to be spread across the region.",
+      "concern": "FERC must reject transmission filings that spread data center costs to all ratepayers.",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Beyond addressing proposals as they are presented to FERC, the Commission must proactively investigate and act if it finds the practices of a regional operator or utility to be unjust, unreasonable, unduly discriminatory, or preferential to data centers at the expense of residential ratepayers.",
+      "concern": "FERC should proactively investigate utility practices that discriminate against residential ratepayers.",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "FERC should also consider broader proceedings that would standardize load forecasting and other practices relevant to addressing data center demand growth.",
+      "concern": "FERC should standardize load forecasting methods.",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Without transparency into load forecasting, it is difficult to assess the quality of a utility's load projections, making it challenging to ensure the economically responsible build-out of new generation or transmission assets.",
+      "concern": "Lack of transparent load forecasting prevents evaluation of necessary transmission investments.",
+      "bins": [
+        "pr:study",
+        "topic:forecasting-transparency"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "With a guaranteed rate of return of around 11%, there is an obvious incentive for utilities to push for huge investments in transmission, including transmission for speculative data center interconnection requests that may not materialize.",
+      "concern": "Utility incentive structures encourage overinvestment in speculative data center transmission.",
+      "bins": [
+        "topic:utility-incentives"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Nor should FERC fall for the argument that data center demand projections must allow large fossil fuel generators to jump the queue for interconnection to the nation's energy grid.",
+      "concern": "Data center demand should not justify fast-tracking fossil fuel generators in interconnection queue.",
+      "bins": [
+        "topic:queue-priority"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Near-term capacity shortfalls are better met by faster-to-deploy renewable technologies and battery storage than by large, polluting, and expensive fossil fuel generation that takes years to build and get online.",
+      "concern": "Renewables and storage are preferable to fossil fuels for meeting near-term capacity needs.",
+      "bins": [
+        "topic:renewable-preference"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "As FERC considers Energy Secretary Chris Wright's recent request for a rulemaking to standardize and accelerate the interconnection of large loads like data centers, We urge FERC to prioritize the concerns of residential ratepayers.",
+      "concern": "Prioritize residential ratepayers over accelerated data center interconnection rules.",
+      "bins": [
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation and rate fairness",
+      "stance": "oppose",
+      "description": "Senators oppose spreading data center transmission costs to residential ratepayers and urge FERC to reject filings that do not properly allocate costs. They cite PJM's tripled capacity auction costs and call for proactive investigation into discriminatory utility practices.",
+      "quote_ids": [
+        2,
+        5,
+        6,
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Load forecasting transparency and standardization",
+      "stance": "support",
+      "description": "Senators support standardizing load forecasting and increasing transparency into data center demand projections. They note that uncertain and speculative projections are driving billions in utility investments.",
+      "quote_ids": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM-specific concerns",
+      "stance": "oppose",
+      "description": "Senators highlight PJM capacity auction costs that have tripled and note that data centers will drive 90 percent of new demand over the next five years.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "topic:datacenter-demand",
+      "name": "Data center electricity demand growth",
+      "stance": "neutral",
+      "description": "Filing documents rapid growth in AI and cryptomining electricity demand that utilities must plan for and that significantly impacts ratepayers.",
+      "quote_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "key": "topic:forecasting-uncertainty",
+      "name": "Uncertain data center demand projections",
+      "stance": "oppose",
+      "description": "Senators warn that utilities are investing billions based on uncertain and speculative data center proposals that may not materialize.",
+      "quote_ids": [
+        4,
+        9
+      ]
+    },
+    {
+      "key": "topic:forecasting-transparency",
+      "name": "Need for transparent load forecasting",
+      "stance": "support",
+      "description": "Transparent load forecasting is necessary to assess utility projections and ensure economically responsible transmission and generation investments.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:utility-incentives",
+      "name": "Utility rate-of-return incentives",
+      "stance": "oppose",
+      "description": "Senators identify the 11 percent guaranteed rate of return as creating incentive for utilities to overinvest in speculative data center transmission.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:queue-priority",
+      "name": "Interconnection queue prioritization",
+      "stance": "oppose",
+      "description": "Senators oppose prioritizing fossil fuel generators in interconnection queues based on data center demand projections.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:renewable-preference",
+      "name": "Renewable energy and storage priority",
+      "stance": "support",
+      "description": "Senators support meeting near-term capacity shortfalls with faster-deploying renewable technologies and battery storage rather than fossil fuel generation.",
+      "quote_ids": [
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

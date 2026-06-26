@@ -25,9 +25,13 @@ const cj = JSON.parse(readFileSync(join(C, "rm26-4-comments.json"), "utf8"));
 // just one that parses. A worker killed mid-Write can leave a file that parses but is broken; the
 // lightweight check counted those as done and skipped the comment forever. Re-queue anything that
 // doesn't fully validate so a chunk re-run self-heals.
+// "done" = no HARD errors (missing fields, bad JSON, unknown vocab, lens mismatch, boilerplate/AI-register
+// quotes). A low-coverage WARN (a quote just under the verbatim threshold) is a fidelity note for the human
+// review pass, NOT a corruption — re-queuing on it loops forever when an agent keeps producing the same
+// borderline quote. Hard errors still re-queue (so a truncated mid-write file self-heals).
 const summaryUsable = (acc) => {
   if (!existsSync(join(V2, `${acc}.json`))) return false;
-  try { const r = validate(`${acc}.json`); return r.errs.length === 0 && r.lowQuotes.length === 0; }
+  try { return validate(`${acc}.json`).errs.length === 0; }
   catch { return false; }
 };
 const done = new Set(existsSync(V2) ? readdirSync(V2).filter((f) => f.endsWith(".json")).map((f) => f.replace(".json", "")).filter(summaryUsable) : []);

@@ -1,0 +1,150 @@
+{
+  "accession": "20251121-5141",
+  "filer": "ITC Holdings Corp.",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5141__ITC-Holdings-Corp/RM26-4 Comments of ITC Final.txt",
+  "overall_summary": "ITC Holdings Corp., a transmission owner, supports expedited large load interconnection but recommends raising the 20 MW threshold to 50-100 MW to focus resources on projects with material grid impacts. The company emphasizes that utilities must retain cost recovery rights and reasonable returns on prudent investments, and opposes allowing large load customers to construct their own network upgrades due to reliability and coordination concerns.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "ITC generally supports Secretary of Energy Wright's effort to expedite and streamline the interconnection of large loads to the transmission system.",
+      "concern": "ITC supports expedited large load interconnection",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "ITC recommends the Commission consider raising the threshold for what constitutes a large load. In ITC's experience, the proposed threshold of 20 MW may capture a range of projects that are unlikely to have significant impacts on the broader grid, and which may in fact be slowed by a process intended for the unprecedently large loads that are now being proposed for immediate construction.",
+      "concern": "20 MW threshold too low; recommend 50-100 MW",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "a threshold of 50 to 100 MW may be more appropriate and administratively manageable. This would also reflect the real operational differences between even quite large conventional retail and industrial load versus the recent proliferation of data center, crypto mining, or other extremely large loads which can shift tens or hundreds of megawatts in seconds.",
+      "concern": "50-100 MW threshold better matches large load characteristics",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "A higher demand threshold would align resources with projects that have material system impact and avoid unintended backlogs and delays.",
+      "concern": "Higher threshold prevents delays and aligns resources",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Transmission system upgrades driven by large load additions can enhance system reliability, reduce congestion, and enable future generator and load integration. Of course, these benefits accrue system-wide, making it reasonable for utilities to recover costs through transmission rates rather than imposing disproportionate burdens on individual projects.",
+      "concern": "System-wide benefits justify cost recovery through transmission rates",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "if the Commission pursues any untested cost allocation approaches to accommodate the aggressive timing and size requirements of large loads, FERC must recognize and implement a foundational principle of the regulatory compact: public utilities are entitled to recover their costs and earn a reasonable return on prudent investments made to provide FERC jurisdictional service.",
+      "concern": "Utilities must recover costs and earn reasonable returns",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Utility shareholders should not be forced to subsidize network upgrades or any other transmission system investment without a return on those investments. Utilities must be able to attract capital to facilitate these large load interconnections, and that requires a fair return on that capital.",
+      "concern": "Shareholders must not subsidize upgrades without return on investment",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "FERC should not afford the option to construct network upgrades to large load customers. Large loads also often involve critical infrastructure with heightened reliability and safety implications. Further, large loads typically have no ongoing operations and maintenance responsibility, reducing incentives for quality and reliability.",
+      "concern": "Option-to-build poses reliability risks; utilities should retain construction role",
+      "bins": [
+        "topic:construction-rights"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Introducing third-party construction in these contexts increases coordination complexity and oversight burdens for transmission owners and providers without delivering meaningful efficiency gains. Retaining the option to build for large loads could create fragmented construction practices and inconsistent adherence to technical standards.",
+      "concern": "Third-party construction risks fragmentation and inconsistent standards",
+      "bins": [
+        "topic:construction-rights"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Transmission owners bear ultimate responsibility for system integrity, yet they would be required to monitor and validate facilities built by entities with limited experience and limited enduring stake in system performance except as to their own particular point of interconnection. This misalignment of incentives poses unacceptable reliability risks.",
+      "concern": "Misalignment of incentives between builder and system operator",
+      "bins": [
+        "topic:construction-rights"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:threshold",
+      "name": "Threshold should be raised to 50-100 MW",
+      "stance": "support",
+      "description": "ITC proposes raising the large load threshold from 20 MW to 50-100 MW to focus resources on projects with genuine material grid impact and avoid unnecessary delays to smaller projects. The higher threshold better reflects the operational scale of modern data centers and industrial loads.",
+      "quote_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Utilities must recover costs and earn reasonable returns",
+      "stance": "support",
+      "description": "ITC emphasizes that utilities are entitled to full cost recovery and reasonable returns on prudent investments regardless of cost allocation mechanisms employed. Benefits from system upgrades accrue broadly and should support broad-based cost allocation rather than placing burden on individual projects.",
+      "quote_ids": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Support for expedited large load interconnection",
+      "stance": "support",
+      "description": "ITC supports the Secretary of Energy's effort to expedite and streamline large load interconnections as a path to efficient and transparent interconnection processes.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:construction-rights",
+      "name": "Oppose option-to-build for large loads",
+      "stance": "oppose",
+      "description": "ITC opposes allowing large load customers to construct their own network upgrades, citing reliability risks, inconsistent standards, coordination complexity, and misalignment of incentives. Transmission owners should retain construction responsibility to ensure system integrity and consistent performance standards.",
+      "quote_ids": [
+        8,
+        9,
+        10
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "threshold"
+    ],
+    "pr": [
+      "cost",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
