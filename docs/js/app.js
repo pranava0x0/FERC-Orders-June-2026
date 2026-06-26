@@ -403,7 +403,7 @@
             '<p class="cm-analysis-sum">' + esc(c.summary) + "</p>" +
             (binChips ? '<div class="cm-bins" aria-label="Positions, colored by the filer\'s stance">' + binChips + "</div>" : "") +
             '<div class="cm-bindetail" data-state=""></div>' +
-            '<p class="cm-analysis-foot">Each position below carries the filer’s own stance and the verbatim quotes it’s drawn from — the audit trail, also committed in the repository. Stance is the filer’s, not ours.</p></details>';
+            '<p class="cm-analysis-foot">Each position below carries the filer’s own stance and the verbatim quotes behind it; those quotes are the audit trail, committed in the repository. The stance shown is the filer’s own, read from its words.</p></details>';
         }
         return '<li class="cm-row" data-q="' + esc(q) + '">' +
           '<div class="cm-row-top"><span class="cm-row-date mono">' + esc(fmtD(c.filed)) + "</span>" + badge +
