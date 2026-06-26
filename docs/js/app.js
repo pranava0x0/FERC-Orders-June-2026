@@ -294,7 +294,7 @@
     CM.list.forEach(function (c) { (orgsByBucket[c.bucket] = orgsByBucket[c.bucket] || []).push(c.org); });
     Object.keys(orgsByBucket).forEach(function (b) { orgsByBucket[b] = Array.from(new Set(orgsByBucket[b])).sort(function (a, z) { return a.localeCompare(z); }); });
     var maxT = CM.respondentTypes.reduce(function (m, t) { return Math.max(m, t.count); }, 1);
-    var ORG_CAP = 10;
+    var ORG_CAP = 3;
     var types = '<div class="cm-types">' + CM.respondentTypes.map(function (t) {
       var orgs = orgsByBucket[t.bucket] || [];
       var pill = function (o) { return '<span class="cm-eg">' + esc(o) + "</span>"; };
@@ -422,7 +422,7 @@
       "</section>";
 
     var secTypes = '<section class="cm-sec" id="cmsec-types" role="tabpanel" aria-labelledby="cmsub-types" hidden>' +
-      head("Who commented", "Every organization that filed, grouped by stakeholder type. The number is filings; larger camps list the first 10 — open “Show all” for the full roster. Types are keyword-derived from the filer and the filing text.") + types +
+      head("Who commented", "Every organization that filed, grouped by stakeholder type. The number is filings; larger camps list the first three — open “Show all” for the full roster. Types are keyword-derived from the filer and the filing text.") + types +
       "</section>";
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
