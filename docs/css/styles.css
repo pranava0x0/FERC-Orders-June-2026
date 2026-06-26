@@ -385,6 +385,41 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-tag.rg { color: #5a4a1a; background: #f6efdb; }
 .cm-tagsep { width: 1px; min-height: 13px; background: var(--rule-strong); margin: 0 3px; }
 .cm-tag.aq { color: #2e5d4f; background: #e6f1ec; }
+
+/* per-comment audited analysis (expandable on each row) */
+.cm-analysis { margin-top: 8px; border-top: 1px solid var(--rule); }
+.cm-analysis > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; color: var(--accent); padding: 7px 0 5px; min-height: 30px; }
+.cm-analysis > summary::-webkit-details-marker { display: none; }
+.cm-analysis > summary::before { content: "\25B8"; color: var(--accent); transition: transform 0.15s ease; }
+.cm-analysis[open] > summary::before { transform: rotate(90deg); }
+.cm-analysis > summary:hover { color: var(--accent-ink); }
+.cm-analysis > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.cm-analysis-n { font-weight: 400; color: var(--text-muted); font-size: 10.5px; }
+.cm-analysis-sum { font-size: 12.5px; line-height: 1.5; color: var(--ink); margin: 2px 0 9px; }
+.cm-analysis-foot { font-size: 10.5px; color: var(--text-muted); line-height: 1.4; margin: 9px 0 4px; }
+.cm-bins { display: flex; flex-wrap: wrap; gap: 5px; }
+.cm-bin { font-size: 11px; font-weight: 600; border-radius: 4px; padding: 2px 8px; border: 1px solid; border-left-width: 3px; }
+.cm-bin.support { color: var(--stance-positive); border-color: var(--stance-positive); background: #eef5ef; }
+.cm-bin.oppose { color: var(--stance-negative); border-color: var(--stance-negative); background: #f7ece6; }
+.cm-bin.mixed { color: var(--stance-mixed); border-color: var(--stance-mixed); background: #f6efdf; }
+.cm-bin.neutral { color: var(--text-muted); border-color: var(--rule-strong); background: var(--surface-2); }
+
+/* stance map: stacked support / oppose / mixed / no-position per reform principle */
+.cm-stancelegend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 11px; }
+.cm-stancelegend .key { font-size: 11px; color: var(--text-muted); display: inline-flex; align-items: center; gap: 5px; }
+.cm-stancelegend .key::before { content: ""; width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+.cm-stancelegend .sup::before { background: var(--stance-positive); }
+.cm-stancelegend .opp::before { background: var(--stance-negative); }
+.cm-stancelegend .mix::before { background: var(--stance-mixed); }
+.cm-stancelegend .neu::before { background: var(--rule-strong); }
+.cm-stancebars { display: grid; gap: 12px; }
+.cm-stancebar { display: flex; height: 18px; border-radius: 4px; overflow: hidden; border: 1px solid var(--rule); background: var(--surface-2); margin-top: 3px; }
+.cm-stancebar .seg { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; min-width: 2px; }
+.cm-stancebar .sup { background: var(--stance-positive); }
+.cm-stancebar .opp { background: var(--stance-negative); }
+.cm-stancebar .mix { background: var(--stance-mixed); }
+.cm-stancebar .neu { background: var(--rule-strong); color: var(--ink); }
+
 /* Comments sub-tabs (Overview / Respondent types / Comment summaries) */
 .cm-subtabs { display: flex; gap: 2px; margin-bottom: 18px; border-bottom: 2px solid var(--rule); flex-wrap: wrap; }
 .cm-subtab { font: inherit; font-size: 13.5px; font-weight: 700; color: var(--text-muted); background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -2px; padding: 12px 14px; min-height: 44px; cursor: pointer; }

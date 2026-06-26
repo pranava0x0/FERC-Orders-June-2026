@@ -281,7 +281,7 @@
     var AQ = { jurisdiction: "Jurisdiction", threshold: "20 MW", jointstudy: "Joint study", deposits: "Deposits", hybridrights: "Hybrid rights", protection: "Protection", expedited: "Expedited", upgradecost: "Upgrade cost" };
 
     var statRow = '<div class="cm-stats">' +
-      [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.analyzed, "text-analyzed"], [CM.summarized, "read in full"]]
+      [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.summarized2, "audited summaries"], [CM.summarized, "read in full"]]
         .map(function (s) { return '<div class="cm-stat"><span class="v">' + esc(String(s[0])) + '</span><span class="l">' + esc(s[1]) + "</span></div>"; }).join("") + "</div>";
 
     var rounds = '<div class="cm-rounds">' + CM.rounds.map(function (r) {
@@ -311,12 +311,27 @@
     var prRegBar = function (t) {
       return '<div class="cm-theme"><div class="cm-bhead"><span class="cm-label">' + esc(t.label) + '</span><span class="cm-n mono">' + t.pct + '%</span></div>' +
         '<div class="cm-bar prin"><span style="width:' + t.pct + '%"></span></div>' +
-        '<p class="cm-note mono">' + t.count + " of " + CM.analyzed + "</p></div>";
+        '<p class="cm-note mono">' + t.count + " of " + CM.summarized2 + "</p></div>";
     };
     var prReg = '<div class="cm-prreg three">' +
       '<div><h3 class="cm-sub">Comment-period questions</h3><div class="cm-themes one">' + CM.anoprQuestions.map(prRegBar).join("") + "</div></div>" +
       '<div><h3 class="cm-sub">Reform principles</h3><div class="cm-themes one">' + CM.principles.map(prRegBar).join("") + "</div></div>" +
       '<div><h3 class="cm-sub">Order regions</h3><div class="cm-themes one">' + CM.regions.map(prRegBar).join("") + "</div></div></div>";
+
+    // stance map: where commenters land on each reform principle, read from the audited summaries
+    var ST_LBL = { sup: "Support", opp: "Oppose", mix: "Mixed", neu: "No position" };
+    var stanceBars = "";
+    if (CM.principleStances && CM.principleStances.length) {
+      var stLegend = '<div class="cm-stancelegend">' +
+        '<span class="key sup">Support</span><span class="key opp">Oppose</span><span class="key mix">Mixed</span><span class="key neu">No position</span></div>';
+      var stRows = CM.principleStances.map(function (p) {
+        var seg = function (k, cls) { var n = p[k]; return n ? '<span class="seg ' + cls + '" style="flex:' + n + '" title="' + n + " " + ST_LBL[cls] + '">' + (n >= 10 ? n : "") + "</span>" : ""; };
+        return '<div class="cm-stancerow"><div class="cm-bhead"><span class="cm-label">' + esc(p.label) + '</span><span class="cm-n mono">' + p.total + "</span></div>" +
+          '<div class="cm-stancebar" role="img" aria-label="' + esc(p.label) + ": " + p.support + " support, " + p.oppose + " oppose, " + p.mixed + " mixed, " + p.neutral + ' no position">' +
+          seg("support", "sup") + seg("oppose", "opp") + seg("mixed", "mix") + seg("neutral", "neu") + "</div></div>";
+      }).join("");
+      stanceBars = stLegend + '<div class="cm-stancebars">' + stRows + "</div>";
+    }
 
     var flag = "";
     if (D.comments && D.comments.flagships && D.comments.flagships.length) {
@@ -352,13 +367,26 @@
         var grp = function (label, chips) { return chips ? '<span class="sr-only">' + label + ": </span>" + chips : ""; };
         var groups = [grp("Comment-period questions", aqChips), grp("Reform principles", prChips), grp("Regions", rgChips)].filter(Boolean);
         var tags = groups.length ? '<div class="cm-row-tags">' + groups.join('<span class="cm-tagsep" aria-hidden="true"></span>') + "</div>" : "";
-        var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ")).toLowerCase();
+        var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ") + " " + (c.summary || "")).toLowerCase();
+        // expandable audited read: the plain summary + each position as a stance-colored chip
+        var analysis = "";
+        if (c.s2 && c.summary) {
+          var binChips = (c.bins || []).map(function (b) {
+            var st = /support/.test(b.s) ? "support" : /oppose/.test(b.s) ? "oppose" : /mixed/.test(b.s) ? "mixed" : "neutral";
+            return '<span class="cm-bin ' + st + '">' + esc(b.n) + '<span class="sr-only"> (' + esc(b.s) + ")</span></span>";
+          }).join("");
+          analysis = '<details class="cm-analysis"><summary><span class="cm-analysis-label">Read the audited analysis</span>' +
+            '<span class="cm-analysis-n mono">' + (c.bins ? c.bins.length : 0) + " positions</span></summary>" +
+            '<p class="cm-analysis-sum">' + esc(c.summary) + "</p>" +
+            (binChips ? '<div class="cm-bins" aria-label="Positions, colored by the filer\'s stance">' + binChips + "</div>" : "") +
+            '<p class="cm-analysis-foot">Each position is synthesized from verbatim quotes in the filing; the quotes are the audit trail (committed in the repository). Stance is the filer’s, not ours.</p></details>';
+        }
         return '<li class="cm-row" data-q="' + esc(q) + '">' +
           '<div class="cm-row-top"><span class="cm-row-date mono">' + esc(fmtD(c.filed)) + "</span>" + badge +
           '<span class="cm-row-org">' + esc(c.org) + "</span>" +
           '<span class="cm-row-type">' + esc(type) + "</span>" +
           '<a class="cm-row-link" href="' + esc(eli(c.acc)) + '" target="_blank" rel="noopener noreferrer" title="Open eLibrary filing ' + esc(c.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a></div>' +
-          '<p class="cm-row-desc">' + esc(c.desc) + "</p>" + tags + "</li>";
+          '<p class="cm-row-desc">' + esc(c.desc) + "</p>" + tags + analysis + "</li>";
       }).join("");
       return '<section class="cm-listgroup"><h3 class="cm-listgroup-h">' + esc(r.label) + ' <span class="mono">' + r.count + "</span></h3><ul class=\"cm-list\">" + items + "</ul></section>";
     }).join("");
@@ -378,7 +406,8 @@
         ", scraped from FERC eLibrary on " + CM.captured + ". " + CM.downloaded + " bodies are downloaded and " + CM.analyzed + " are text-analyzed.") +
       statRow + rounds +
       head("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies — a measured keyword prevalence, not a coding of each filer's position.") + themes +
-      head("What the comments engage", "Three lenses, tagged per body by keyword: the DOE ANOPR's eight comment-period questions, the five June-order reform principles, and the six show-cause-order regions. A comment can carry several. Out of " + CM.analyzed + " text-analyzed bodies.") + prReg +
+      head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position — read from the filer's own words. Across " + CM.summarized2 + " audited filings.") + stanceBars +
+      head("What the comments engage", "Three lenses, tagged per comment from its audited summary: the DOE ANOPR's eight comment-period questions, the five June-order reform principles, and the six show-cause-order regions. A comment can carry several. Across " + CM.summarized2 + " audited filings.") + prReg +
       "</section>";
 
     var secTypes = '<section class="cm-sec" id="cmsec-types" role="tabpanel" aria-labelledby="cmsub-types" hidden>' +
@@ -387,7 +416,7 @@
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
       flag +
-      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. Each row carries the three lenses it engages — comment-period questions, reform principles, and regions — plus a ★ read-in-full / ✓ downloaded badge and an eLibrary link. Filter by org, type, question, principle, or region.") +
+      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary — open “Read the audited analysis” on any row for the plain read and each position colored by the filer's stance. Each row also shows the lenses it engages and links to its eLibrary filing. Filter by org, type, lens, or any word in a summary.") +
       filter + '<div class="cm-listwrap">' + listHtml + "</div>" + src + "</section>";
 
     return subnav + secOverview + secTypes + secSummaries;
