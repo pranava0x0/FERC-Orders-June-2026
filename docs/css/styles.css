@@ -329,9 +329,15 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-egs .cm-eg { margin: 0; white-space: normal; overflow-wrap: anywhere; max-width: 100%; }
 .cm-eg-rest { display: none; }
 .cm-egs.expanded .cm-eg-rest { display: contents; }
-.cm-showmore { font: inherit; font-size: 10.5px; font-weight: 700; color: var(--accent); background: none; border: 1px solid var(--rule-strong); border-radius: 999px; padding: 4px 12px; min-height: 44px; display: inline-flex; align-items: center; cursor: pointer; }
+/* "Show all / fewer" is a disclosure toggle, not a CTA — keep it chip-scale beside the org pills,
+   accent-colored with a quiet rotating chevron. The 44px touch target is restored on coarse
+   pointers only (where it matters), so it doesn't tower over the pills on desktop. */
+.cm-showmore { font: inherit; font-size: 10.5px; font-weight: 600; color: var(--accent); background: none; border: 1px solid var(--rule); border-radius: 999px; padding: 1px 9px; display: inline-flex; align-items: center; gap: 4px; line-height: 1.5; cursor: pointer; white-space: nowrap; }
+.cm-showmore::after { content: "\203A"; font-weight: 700; line-height: 1; transition: transform 0.15s ease; }
+.cm-showmore[aria-expanded="true"]::after { transform: rotate(90deg); }
 .cm-showmore:hover { background: #eef3f9; border-color: var(--accent); color: var(--accent-ink); }
 .cm-showmore:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (pointer: coarse) { .cm-showmore { min-height: 44px; padding: 0 12px; } }
 /* flagship comment cards (read in full) */
 .cm-flagships { display: grid; gap: 11px; }
 .cm-flag { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 0 6px 6px 0; padding: 11px 14px; }
@@ -416,6 +422,29 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-bin.oppose { color: var(--stance-negative); border-color: var(--stance-negative); background: #f7ece6; }
 .cm-bin.mixed { color: var(--stance-mixed); border-color: var(--stance-mixed); background: #f6efdf; }
 .cm-bin.neutral { color: var(--text-muted); border-color: var(--rule-strong); background: var(--surface-2); }
+
+/* lazy-loaded bin detail: positions grouped by lens, each with its description + verbatim quotes */
+.cm-bindetail:empty { display: none; }
+.cm-bindetail { margin: 10px 0 2px; display: flex; flex-direction: column; gap: 15px; }
+.cm-lensgroup { display: flex; flex-direction: column; gap: 9px; }
+.cm-lensgroup-h { display: flex; align-items: baseline; gap: 8px; margin: 0; padding-bottom: 4px; border-bottom: 1px solid var(--rule); font-size: 10.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-muted); }
+.cm-lensgroup-n { font-weight: 400; color: var(--text-muted); }
+.cm-bin-loading, .cm-bin-error, .cm-bq-none { font-size: 11px; color: var(--text-muted); margin: 2px 0; line-height: 1.4; }
+.cm-binitem { border-left: 3px solid var(--rule-strong); padding: 1px 0 1px 11px; }
+.cm-binitem.support { border-left-color: var(--stance-positive); }
+.cm-binitem.oppose { border-left-color: var(--stance-negative); }
+.cm-binitem.mixed { border-left-color: var(--stance-mixed); }
+.cm-binitem.neutral { border-left-color: var(--rule-strong); }
+.cm-binitem-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 8px; }
+.cm-binitem-name { font-size: 12px; font-weight: 700; color: var(--ink); }
+.cm-binitem-stance { font-size: 9.5px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; border-radius: 3px; padding: 1px 5px; border: 1px solid; }
+.cm-binitem-stance.support { color: var(--stance-positive); border-color: var(--stance-positive); background: #eef5ef; }
+.cm-binitem-stance.oppose { color: var(--stance-negative); border-color: var(--stance-negative); background: #f7ece6; }
+.cm-binitem-stance.mixed { color: var(--stance-mixed); border-color: var(--stance-mixed); background: #f6efdf; }
+.cm-binitem-stance.neutral { color: var(--text-muted); border-color: var(--rule-strong); background: var(--surface-2); }
+.cm-binitem-desc { font-size: 12px; line-height: 1.5; color: var(--ink); margin: 4px 0 6px; }
+.cm-bqs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.cm-bq { font-family: var(--font-serif); font-style: italic; font-size: 12.5px; line-height: 1.45; color: var(--accent-ink); padding-left: 9px; border-left: 2px solid var(--rule); }
 
 /* stance map: stacked support / oppose / mixed / no-position per reform principle */
 .cm-stancelegend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 11px; }
