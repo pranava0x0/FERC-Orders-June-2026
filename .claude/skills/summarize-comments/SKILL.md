@@ -71,6 +71,6 @@ The user watches their **5-hour session budget** (see memory `respect-session-bu
 
 Just re-run from step 1: `node tools/build-comment-worklist.mjs` rebuilds the queue from on-disk state (only comments without a fully-valid summary), so the loop picks up exactly where it stopped. No journal, no manual bookkeeping.
 
-## When the corpus is complete
+## Corpus status (2026-06-26): complete
 
-5 comments are image-only scans (no text layer) and stay unsummarized until OCR'd (`backlog.md`). Once the rest are done, wire the audited bins/quotes into the Comments tab: feed `summaries-v2/` into `tools/build-comments-page-data.mjs` (lens chips from LLM bins, keyword fallback for un-summarized) and add a count-floor + quote-verbatim regression test. See `backlog.md` (the "agentic LLM comment analysis" item) and `tests/data.test.mjs`.
+All **268/268** text-extracted comments are summarized, validated, and wired into the Comments tab via `tools/build-comments-page-data.mjs` (lens chips + synthesis from the LLM bins, keyword fallback for any un-summarized). `tests/comment-summaries.test.mjs` and `tests/data.test.mjs` enforce the count floor (≥ 268), the verbatim-quote fidelity bar, and the per-row bins/stance-map shape. **5 comments stay unsummarized:** 4 image-only scans (no text layer, OCR-pending) and 1 filing (ETI, `20251121-5225`) that eLibrary serves inline rather than releasing for download (`issues.md`, `backlog.md`). Re-run the loop only to fill those in after OCR.

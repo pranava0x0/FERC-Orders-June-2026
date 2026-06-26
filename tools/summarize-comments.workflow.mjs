@@ -79,9 +79,9 @@ ${VOCAB}
   "quotes": [ { "id": 1, "text": "verbatim span", "concern": "one-line paraphrase", "bins": ["pr:cost"] } ],
   "bins": [ { "key": "pr:cost", "name": "...", "stance": "support", "description": "...", "quote_ids": [1] } ],
   "lenses": { "aq": [...], "pr": [...], "rg": [...] },
-  "provenance": { "model": "claude-sonnet-4-6", "generated_at": "${DATE}", "method": "agentic-subagent", "verified": false }
+  "provenance": { "model": "<your own model id>", "generated_at": "${DATE}", "method": "agentic-subagent", "verified": false }
 }
-Set lenses to {"aq":[],"pr":[],"rg":[]} — it is derived in the next step, do NOT hand-author it. Every quote.bins key must exist in bins; every bin.quote_ids id must exist in quotes.
+Set provenance.model to YOUR actual model id (e.g. "claude-sonnet-4-6" or "claude-haiku-4-5"), not a placeholder, so the audit trail records what produced this summary. Set lenses to {"aq":[],"pr":[],"rg":[]} — it is derived in the next step, do NOT hand-author it. Every quote.bins key must exist in bins; every bin.quote_ids id must exist in quotes.
 
 9. Derive lenses — run \`node tools/fix-lenses.mjs ${acc}\`. It sets lenses = the union of your bins' aq/pr/rg keys deterministically, so you never compute or fix lenses by hand (that mismatch was the most common validation failure).
 

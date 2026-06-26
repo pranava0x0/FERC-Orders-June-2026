@@ -42,10 +42,10 @@
   (`sources/comments/rm26-4-manifest.raw.json`), classified type and stakeholder bucket
   (`tools/analyze-comments.mjs` → `rm26-4-comments.json`), and surfaced a **"What the RM26-4 commenters
   said"** section in Discourse: 273 comments from ~201 orgs, 128 interventions, the Nov 21 2025 deadline
-  spike (183 filings), and 17 stakeholder buckets with provisional per-camp positions. A test asserts the
+  spike (183 filings), and 19 stakeholder buckets with provisional per-camp positions. A test asserts the
   bucket counts sum to the comment total.
 - **done (2026-06-24)** — **Full pull + audit trail.** Cracked the eLibrary `GetFileListFromP8` JSON API
-  and pulled the **document/attachment inventory for all 273 comments** (279 files, 7 with sub-documents;
+  and pulled the **document/attachment inventory for all 273 comments** (281 files, 7 with sub-documents;
   `sources/comments/rm26-4-files.json`). Downloaded, text-extracted, and wrote **structured summaries**
   for **9 flagship comments** across the major camps (Google, NRG/Kavulla, PJM, IECA industrial coalition,
   Maryland PSC, PA+DE consumer advocates, Sen. Markey, ACP, EEI) — each with stance per reform category +
@@ -123,15 +123,16 @@
        re-run a sample on Opus and diff before deciding whether it's worth the full re-run.
     3. **Quote-count guidance** ("typically 4 to 15; do not pad") soft-bounds very rich filings; a
        maximal pass would lift the ceiling for the large coalition/RTO comments.
-    4. **Corpus cap.** Only the **268 text-extracted bodies** are summarized; the **5 image-only scans**
-       (`20251121-5224`, `20251121-5521`, `20251121-5140`, `20251205-5005`, + the ETI inline holdout
-       `20251121-5225`) are excluded until OCR'd (see the OCR + ETI items below). `.worklist.json`'s
-       `MIN_CHARS=400` is the cutoff.
+    4. **Corpus cap.** Only the **268 text-extracted bodies** are summarized. The other **5 are not
+       summarizable: 4 image-only scans** (`20251121-5224`, `20251121-5521`, `20251121-5140`,
+       `20251205-5005` — no text layer, OCR-pending) **plus 1 inline-only filing** (ETI,
+       `20251121-5225` — eLibrary serves it inline, no downloadable body). See the OCR + ETI items below.
+       `.worklist.json`'s `MIN_CHARS=400` is the cutoff for "has usable text".
 - **medium — OCR the 4 image-only scans.** `20251121-5224`, `20251121-5521` (Data Center Coalition),
   `20251121-5140` (Yurok Nation), `20251205-5005` are downloaded but have no text layer (`validate-comments.py`
   flags them). Needs an OCR tool (no `ocrmypdf`/`tesseract` installed locally — install one, or use macOS
   Vision). Once OCR'd, re-run organize/validate; they drop out of the scanned set into the text-analyzed corpus.
-- **low — re-fetch the ETI holdout** (`20251121-5225`, Entergy Texas): renders + clicks but won't download
+- **low — re-fetch the ETI holdout** (`20251121-5225`, Energy Trading Institute): renders + clicks but won't download
   (served inline). Inventoried + re-downloadable; the corpus reads 272/273. See `issues.md`.
 - **partially done / medium** — The **written** "what each commissioner said" block is shipped from the
   five concurring statements appended to the orders (see done 2026-06-24). What remains is the **spoken**
@@ -148,6 +149,9 @@
   add a "compliance tracker" sub-view per docket (filed / pending / abeyance).
 - **low** — `og:image` social card (JPG) rendered from the masthead for link previews.
 - **low** — Dark theme token set (palette is defined; wire the toggle + JS re-paint).
+- **low — a11y: the docket accordion summary (`details.dreg > summary`) has a ~13 px tap target** (no
+  padding/min-height) — below the 44 px guideline. Pre-existing (commit `735f776`), surfaced by the
+  2026-06-26 review. Fix: add `padding: 11px 0; min-height: 44px; display: flex; align-items: center;`.
 
 ### Critique / analysis leads (from the 2026-06-24 news refresh)
 

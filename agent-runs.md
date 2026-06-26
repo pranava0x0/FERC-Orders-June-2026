@@ -19,7 +19,8 @@ they do not include the main-loop orchestration tokens.
 | 8 | 2026-06-25 | Workflow `summarize-comments` **chunk-1** (`wf_8042b762-91b`) | 40 comments (the shortest filings) on Sonnet — **chunk too big for the user's ~9% remaining session budget** | 40 | 285 | 1,023,553 | 357.4 s | sonnet | ⚠️ **23/40 written, then the user's 5-hr session limit hit and the last 17 failed.** No data lost (per-summary save); failures re-queue. My error: launched 40 + didn't `TaskStop` when the user flagged budget |
 | 9 | 2026-06-25 | Workflow `summarize-comments` **Haiku probe** (`wf_fa8cb72b-eba`) | 3 re-queued comments, extract on **Haiku**, audit on Sonnet — does the cheap path hold up? | 4 | 100 | 183,855 | 334.9 s | haiku + sonnet | ✅ 3/3 valid; the 1 flagged got a real coverage gap fixed by the Sonnet audit. But **~46K/agent ≈ same token COUNT as Sonnet** (25 tools/agent — Haiku loops more on the validate-fix cycle); Haiku saves $/token, not tokens |
 
-_Totals (Runs 1–9): 81 agent-runs · 1,173 tool uses · **3,761,672** subagent tokens · ~2,449 s of agent wall-clock. Of which Run 3 (974K) produced nothing, Run 5's audit half (~242K) was largely replaceable by deterministic checks, and **Run 8 (1.0M) overshot the user's session budget and hit the rate limit** — see below. 45 of 268 comment summaries are written and valid; ~224 remain._
+_Totals (Runs 1–9 shown): 81 agent-runs · 1,174 tool uses · **3,761,672** subagent tokens · ~2,449 s of agent wall-clock. Of which Run 3 (974K) produced nothing, Run 5's audit half (~242K) was largely replaceable by deterministic checks, and **Run 8 (1.0M) overshot the user's session budget and hit the rate limit** — see below._
+_**The comment run is complete: 268/268 summaries written and valid.** The table above shows the representative runs; the 29 per-chunk runs (these plus ~20 more) are logged in `sources/comments/workflow-runs.jsonl` — **~13.2M subagent tokens** across the full corpus, with `extract_model`/`audit_model` per run for analysis._
 
 ## Evaluation
 
@@ -133,6 +134,7 @@ What went wrong, and the fix:
   re-queues, so a chunk re-run self-heals. **Zero data was lost** across the limit hit: every finished
   summary was already on disk (per-summary save), and the unfinished ones re-queued cleanly.
 
-Net: 45/268 summaries written and valid; the pipeline is correct and resumable, but **the full run is
-~13M tokens regardless of model — several 5-hour windows — so it cannot finish in one budget.** It must
-be run in small, checkpointed chunks across windows, or shipped partial with keyword lenses for the rest.
+Net: **268/268 summaries written and valid** (corpus complete). The full run cost **~13M tokens regardless
+of model**, which spanned **two 5-hour budget windows** — it could not finish in one, exactly as predicted,
+so it ran in small checkpointed chunks (commit-per-chunk), survived two session-limit hits with zero data
+loss (the self-healing worklist re-queued every unfinished comment), and was wired into the Comments tab.

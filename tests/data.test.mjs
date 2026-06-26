@@ -398,11 +398,31 @@ test("comments-data.js (Comments tab) is consistent with the scraped manifest", 
     for (const k of c.aq) assert.ok(QKEYS.has(k), `row ${c.acc} ANOPR question ${k} is a known key`);
     for (const k of c.pr) assert.ok(PKEYS.has(k), `row ${c.acc} principle ${k} is a known key`);
     for (const k of c.rg) assert.ok(RKEYS.has(k), `row ${c.acc} region ${k} is a known key`);
+    if (c.s2 === 1) { // an audited row carries the synthesis the explorer renders
+      assert.ok(typeof c.summary === "string" && c.summary.length > 0, `row ${c.acc} (audited) has a summary`);
+      assert.ok(Array.isArray(c.bins) && c.bins.length >= 1, `row ${c.acc} (audited) has bins`);
+      for (const b of c.bins) {
+        assert.ok(b.k && b.n && b.s, `row ${c.acc} bin has key/name/stance`);
+        assert.ok(["support", "oppose", "mixed", "neutral"].includes(b.s), `row ${c.acc} bin ${b.k} stance is valid`);
+      }
+    }
   }
   // every aggregate count equals the number of rows carrying that tag (no double-count drift)
   for (const q of CM.anoprQuestions) assert.equal(q.count, CM.list.filter((c) => c.aq.includes(q.key)).length, `question ${q.key} count matches rows`);
   for (const p of CM.principles) assert.equal(p.count, CM.list.filter((c) => c.pr.includes(p.key)).length, `principle ${p.key} count matches rows`);
   for (const r of CM.regions) assert.equal(r.count, CM.list.filter((c) => c.rg.includes(r.key)).length, `region ${r.key} count matches rows`);
+
+  // audited-summary count + the stance map's denominators (both render in the Comments tab)
+  assert.equal(CM.summarized2, CM.list.filter((c) => c.s2 === 1).length, "summarized2 equals the count of audited rows");
+  assert.ok(CM.summarized2 >= 260, `audited-summary floor (${CM.summarized2} >= 260) — append-only`);
+  assert.equal(CM.principleStances.length, 5, "five principle-stance rows (the stance map)");
+  for (const ps of CM.principleStances) {
+    assert.ok(ps.key && ps.label, `principleStances ${ps.key} has key/label`);
+    assert.equal(ps.support + ps.oppose + ps.mixed + ps.neutral, ps.total, `principleStances ${ps.key} stances sum to total`);
+    assert.equal(ps.total, CM.list.filter((c) => (c.bins || []).some((b) => b.k === "pr:" + ps.key)).length, `principleStances ${ps.key} total matches rows`);
+  }
+  assert.ok(Array.isArray(CM.rounds) && CM.rounds.length >= 2, "at least two filing rounds");
+  assert.equal(CM.rounds.reduce((s, r) => s + r.count, 0), N, "round counts sum to the comment total");
 });
 
 test("comment body directories are named with the submitter (traceable to filer)", () => {
