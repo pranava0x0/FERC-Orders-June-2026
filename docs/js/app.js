@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260626o";
+  var ASSET_VER = "20260626p";
   var D = window.FERC_DATA;
   if (!D) { document.getElementById("main").innerHTML = "<p class='noscript'>Data failed to load (js/data.js).</p>"; return; }
 
@@ -70,7 +70,7 @@
           var qs = (th.quotes || []).map(function (q) {
             var sp = q.src === "spoken";
             return '<li class="commish-q ' + (sp ? "spoken" : "written") + '">“' + esc(q.t) + "”" +
-              (sp ? '<span class="commish-q-src">spoken' + (q.at ? " · " + esc(q.at) : "") + "</span>" : "") + "</li>";
+              (sp ? '<span class="commish-q-src">spoken · auto-caption' + (q.at ? " · " + esc(q.at) : "") + "</span>" : "") + "</li>";
           }).join("");
           return '<div class="commish-theme"><h5 class="commish-theme-h">' + esc(th.name) + "</h5>" +
             (th.desc ? '<p class="commish-theme-d">' + esc(th.desc) + "</p>" : "") +
@@ -445,7 +445,7 @@
     var tagCount = function (label) { var t = label.toLowerCase(); return allQ.reduce(function (n, s) { return n + (s.indexOf(t) >= 0 ? 1 : 0); }, 0); };
     var tagChip = function (cls, label) { return '<button type="button" class="cm-tag ' + cls + '" data-f="' + esc(label) + '" title="Filter the list by: ' + esc(label) + '">' + esc(label) + ' <span class="cm-tag-n">' + tagCount(label) + "</span></button>"; };
     var tagGroup = function (heading, cls, map) { return '<div class="cm-tagbar-group"><span class="cm-tagbar-label">' + esc(heading) + "</span>" + Object.keys(map).map(function (k) { return tagChip(cls, map[k]); }).join("") + "</div>"; };
-    var tagBar = '<details class="cm-tagbar" open><summary><span class="cm-tagbar-sum">Filter by tag</span><span class="cm-tagbar-hint mono">click any tag · counts show matches</span></summary>' +
+    var tagBar = '<details class="cm-tagbar" open><summary><span class="cm-tagbar-sum">Filter by tag</span><span class="cm-tagbar-hint mono">click any tag · counts = comments mentioning it</span></summary>' +
       '<div class="cm-tagbar-body">' + tagGroup("Comment-period questions", "aq", AQ) + tagGroup("Reform principles", "pr", CL) + tagGroup("Regions", "rg", RG) + "</div></details>";
 
     // three sub-tabs cut the scroll: the overall picture, the respondent mix, and the comment list itself
