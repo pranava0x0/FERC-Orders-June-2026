@@ -282,6 +282,16 @@ details.dreg li::before { content: "▸"; position: absolute; left: 0; color: va
 .docket-asks .label { display: block; margin-bottom: 6px; }
 .docket-asks ul { list-style: none; display: grid; gap: 5px; }
 .docket-asks li { font-size: 12.5px; color: #2b3744; line-height: 1.4; padding-left: 16px; position: relative; }
+
+/* Section IV briefing questions (Dockets tab) — numbered list with verbatim excerpts */
+details.dbrief .brief-head { margin: 4px 0 2px; }
+.brief-cite { display: inline-flex; align-items: baseline; gap: 7px; font-size: 11px; }
+details.dbrief .brief-list { list-style: none; display: grid; gap: 12px; margin-top: 9px; padding: 0; counter-reset: brief; }
+details.dbrief .brief-item { padding-left: 27px; position: relative; line-height: 1.4; }
+details.dbrief .brief-item::before { counter-increment: brief; content: counter(brief); position: absolute; left: 0; top: 1px; width: 18px; height: 18px; border-radius: 999px; background: var(--accent); color: #fff; font-size: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.brief-topic { font-size: 13px; font-weight: 700; color: var(--masthead); }
+.brief-desc { font-size: 12.5px; color: #2b3744; line-height: 1.45; margin: 2px 0 4px; }
+.brief-quote { display: block; font-family: var(--font-serif); font-style: italic; font-size: 12.5px; color: var(--accent-ink); line-height: 1.4; }
 .docket-asks li::before { content: "?"; position: absolute; left: 0; top: 0; color: var(--accent); font-weight: 700; font-size: 12px; }
 details.dros { margin-top: 9px; }
 details.dros ul.roster { grid-template-columns: 1fr; }
@@ -301,6 +311,25 @@ ul.roster li::before { content: "·"; }
 .commish-quote { font-family: var(--font-serif); font-style: italic; font-size: 12.5px; color: var(--accent-ink); margin-top: 6px; }
 .commish-head .commish-tag { margin-left: auto; }
 .commish-tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--status-reform); background: #f6efdf; border: 1px solid #e6d8b0; border-radius: 999px; padding: 1px 8px; }
+
+/* expandable themed read of a commissioner's statement (themes + verbatim quotes) */
+.commish-full { margin-top: 9px; border-top: 1px solid var(--rule); }
+.commish-full > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; color: var(--accent); padding: 9px 0; min-height: 44px; }
+.commish-full > summary::-webkit-details-marker { display: none; }
+.commish-full > summary::before { content: "\25B8"; color: var(--accent); transition: transform 0.15s ease; }
+.commish-full[open] > summary::before { transform: rotate(90deg); }
+.commish-full > summary:hover { color: var(--accent-ink); }
+.commish-full > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.commish-full-n { font-weight: 400; color: var(--text-muted); font-size: 10.5px; }
+.commish-sum { font-size: 12.5px; line-height: 1.5; color: var(--ink); margin: 2px 0 11px; }
+.commish-theme { margin: 0 0 11px; padding-left: 11px; border-left: 3px solid var(--rule-strong); }
+.commish-theme-h { margin: 0 0 3px; font-size: 12px; font-weight: 700; color: var(--ink); }
+.commish-theme-d { font-size: 12px; line-height: 1.5; color: #2b3744; margin: 0 0 6px; }
+.commish-qs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.commish-q { font-family: var(--font-serif); font-style: italic; font-size: 12.5px; line-height: 1.45; color: var(--accent-ink); padding-left: 9px; border-left: 2px solid var(--rule); }
+.commish-q.spoken { color: #4a4753; border-left-color: var(--status-reform); }
+.commish-q-src { display: inline-block; font-family: var(--font-sans); font-style: normal; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-left: 6px; }
+.commish-srcs { font-size: 10px; color: var(--text-muted); line-height: 1.4; margin: 8px 0 2px; }
 /* per-order commissioner statements (nested in each docket accordion) */
 details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .commish-row { padding-left: 11px; border-left: 2px solid var(--rule-strong); }
@@ -388,6 +417,22 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-tag.rg { color: #5a4a1a; background: #f6efdb; }
 .cm-tagsep { width: 1px; min-height: 13px; background: var(--rule-strong); margin: 0 3px; }
 .cm-tag.aq { color: #2e5d4f; background: #e6f1ec; }
+.cm-tag-n { font-weight: 400; opacity: 0.7; }
+
+/* tag bar: the queryable lens vocabulary, collapsible, on the All-comments tab */
+.cm-tagbar { margin: 9px 0 6px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface-2); }
+.cm-tagbar > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 8px 11px; min-height: 44px; }
+.cm-tagbar > summary::-webkit-details-marker { display: none; }
+.cm-tagbar > summary::before { content: "\25B8"; color: var(--accent); transition: transform 0.15s ease; }
+.cm-tagbar[open] > summary::before { transform: rotate(90deg); }
+.cm-tagbar > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+.cm-tagbar-sum { font-size: 12px; font-weight: 700; color: var(--accent); }
+.cm-tagbar-hint { font-size: 10px; color: var(--text-muted); }
+.cm-tagbar-body { display: flex; flex-direction: column; gap: 10px; padding: 2px 11px 12px; }
+.cm-tagbar-group { display: flex; flex-wrap: wrap; gap: 5px; }
+.cm-tagbar-label { flex: 0 0 100%; font-size: 9.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-muted); }
+/* tag-bar chips are a deliberate filter control — give them a comfortable touch target on coarse pointers (§12.12) */
+@media (pointer: coarse) { .cm-tagbar .cm-tag { min-height: 44px; padding: 0 11px; display: inline-flex; align-items: center; } }
 .cm-empty { background: var(--surface); border: 1px dashed var(--rule-strong); border-radius: 6px; padding: 18px; text-align: center; color: var(--text-muted); font-size: 13.5px; margin-top: 4px; }
 
 /* per-comment audited analysis (expandable on each row) */

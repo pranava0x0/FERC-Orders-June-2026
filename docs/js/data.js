@@ -585,26 +585,116 @@ window.FERC_DATA = (function () {
       key: "swett", name: "Laura V. Swett", role: "Chairman", short: "Why §206, not a rulemaking",
       quote: "FERC is no longer the sleepy, responsive agency of the past",
       gist: "Defends the procedure: six tailored show cause orders instead of one rule, because §206 is faster and more ‘legally durable.’ Points to rulemakings like Order Nos. 2023 and 2222 still not fully implemented years on, and notes the six markets cover nearly two-thirds of FERC-jurisdictional load.",
+      sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 84–88; largely common across the six orders, with some per-order tailoring", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption)" },
+      summary: "Swett frames the six orders as historic, urgent delivery on Secretary Wright's October 2025 charge, finding the status quo across the markets not good enough. He defends the choice of six tailored §206 show cause orders over a single rulemaking on two grounds: they fit each region's circumstances, and they move far faster than a NOPR (he points to Order Nos. 2023 and 2222 still not fully implemented years on). The six markets cover nearly two-thirds of FERC-jurisdictional load; he invites §205 filings and urges non-RTO regions to file too, leaving the door open to a future rule.",
+      themes: [
+        { name: "Historic, urgent delivery on the Secretary's charge", desc: "Casts the day as answering DOE Secretary Wright's October 2025 ANOPR directive, and ties the orders to a set of consumer- and market-facing goals.", quotes: [
+          { t: "Today, we take historic action to push our country's electric markets and economy into the future—a future of fair cost allocation, unprecedented transparency for the American ratepayer, respect for states' rights, efficient markets and speed to power.", src: "written" },
+          { t: "And now, through this suite of six orders, we deliver.", src: "written" },
+          { t: "We promised some fireworks last month, and we are going to light the fuse today.", src: "spoken", at: "~3:00" } ] },
+        { name: "The status quo is not good enough", desc: "The record shows most markets' existing rules are too slow and rigid to integrate large loads.", quotes: [
+          { t: "The record prompted by the Secretary's ANOPR leaves no doubt that most of the markets (and their existing rules) are inherently slow and prohibitive of the dexterity necessary to adapt to and power societal evolution", src: "written" } ] },
+        { name: "Tailored show-cause orders, not a one-size-fits-all rule", desc: "Six individualized §206 proceedings fit each region's circumstances and let the markets propose fixes first.", quotes: [
+          { t: "an approach that honors the ANOPR principles but accounts for widening regional variation may now be more efficient than a one-size-fits-all rule.", src: "written" },
+          { t: "Individual show cause proceedings will allow the Commission to ensure that solutions to the problems the Secretary identified are tailored to the specific, varied circumstances and market constructs of each region.", src: "written" } ] },
+        { name: "Speed over the years-long rulemaking path", desc: "Show-cause moves faster than notice-and-comment; he cites prior rules still not fully implemented years later.", quotes: [
+          { t: "proceeding via individual show cause orders will allow the Commission to act more quickly than through traditional rulemaking.", src: "written" } ] },
+        { name: "Two-thirds of load now; an open door for the rest", desc: "Starts with the six RTO/ISO markets but invites §205 filings and encourages non-RTO regions to act, without foreclosing a future rule.", quotes: [
+          { t: "The six markets together cover nearly two-thirds of load subject to Commission-jurisdictional rates, and therefore focusing initially on those regions is a prudent first step.", src: "written" },
+          { t: "I encourage transmission providers and other stakeholders outside RTO/ISO regions to make individual filings to address the issues we discuss today.", src: "written" },
+          { t: "FERC is no longer the sleepy, responsive agency of the past—our country cannot afford for it to be.", src: "written" } ] },
+      ],
     },
     {
       key: "rosner", name: "David Rosner", role: "Commissioner", short: "Four pillars",
       quote: "Bring Your Own New Generation",
       gist: "Frames the orders as four pillars — protecting consumers, safeguarding reliability, enhancing transparency, fostering innovation. Stresses Cost Recovery Agreements so a data center that never shows up can’t shift costs onto residential customers, grid-enhancing technologies, and ‘Bring Your Own New Generation’ modeled on SPP’s HILLGA.",
+      sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 90–98; largely common across the six orders, with some per-order tailoring", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption)" },
+      summary: "Rosner organizes the orders around four pillars: protecting consumers, safeguarding reliability, enhancing transparency, and fostering innovation. He leads with Cost Recovery Agreements so residential customers are not left paying for infrastructure built for a data center that never arrives, pushes grid-enhancing technologies and curbs on speculative interconnection requests, and frames flexible transmission service and Bring Your Own New Generation (modeled on SPP's HILLGA) as the innovation that connects load faster and cheaper. He calls the states essential partners and urges §205 filings inside and outside the RTOs.",
+      themes: [
+        { name: "Protecting consumers: Cost Recovery Agreements", desc: "Mandatory agreements make a large load, not other customers, bear the cost of infrastructure built to serve it if it never materializes.", quotes: [
+          { t: "if new infrastructure is built to accommodate a data center, and that data center doesn't show up, residential customers are not left on the hook to pay the costs.", src: "written" },
+          { t: "if new transmission infrastructure is built to serve a data center and that data center doesn't show up, other customers, especially regular consumers, will not be on the hook for those costs. Period.", src: "spoken", at: "~21:00" } ] },
+        { name: "Safeguarding reliability", desc: "Study procedures and operational requirements should reflect large loads' novel characteristics and reliability impacts.", quotes: [
+          { t: "They help ensure that RTO/ISOs use study procedures and operational requirements that reflect large loads' unique characteristics and the reliability impacts of connecting them to the grid.", src: "written" } ] },
+        { name: "Enhancing transparency, deterring speculation", desc: "Make each upgrade's cost and beneficiary public, and add escalating readiness requirements to weed out speculative requests.", quotes: [
+          { t: "if a Network Upgrade is built to connect a large load to the grid, consumers should know who that upgrade was built for and what it cost.", src: "written" },
+          { t: "we target speculative projects by establishing escalating readiness requirements for distinct phases of the study process to deter duplicative or speculative requests for transmission service.", src: "written" } ] },
+        { name: "Fostering innovation: flexible service and BYONG", desc: "Non-firm service for loads willing to curtail, plus studying electrically proximate load and generation together — Bring Your Own New Generation, modeled on SPP's HILLGA.", quotes: [
+          { t: "To add new supply to the grid, we must create incentives for “Bring Your Own New Generation.”", src: "written" },
+          { t: "today's orders direct other regions to follow SPP's lead in ways that work for them.", src: "written" },
+          { t: "We need new generation of all kinds which means we need to make bring your own new generation.", src: "spoken", at: "~31:00" } ] },
+        { name: "States are essential partners; file under §205", desc: "Respects the federal-State jurisdictional line and urges RTOs and non-RTO utilities alike to bring §205 proposals.", quotes: [
+          { t: "States are essential partners in this work.", src: "written" },
+          { t: "today's orders invite RTO/ISOs to respond by submitting proposals under FPA section 205.  I cannot encourage this enough.", src: "written" } ] },
+      ],
     },
     {
       key: "see", name: "Lindsay S. See", role: "Commissioner", short: "Federalism + affordability",
       quote: "affordability must be at the forefront as we protect consumers",
       gist: "Two themes: large-load interconnection is a shared federal-State responsibility, so the orders should support state efforts rather than override them; and affordability must stay central. Pushes alternative transmission technologies to hold down network-upgrade costs and asks states what cost data they actually need.",
+      sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 98–103; largely common across the six orders, with some per-order tailoring", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption)" },
+      summary: "See highlights two principles she says must stay central: large-load interconnection is a shared federal-State responsibility, so the orders should support State efforts rather than override them; and affordability must stay at the forefront. She presses alternative transmission technologies to hold down network-upgrade costs, asks the States what cost data they actually need, and frames the duty to assign costs to those who cause them as core customer protection.",
+      themes: [
+        { name: "New circumstances require adapting the grid", desc: "The pace and scale of large loads change operations, planning, and cost allocation faster than existing systems were built for.", quotes: [
+          { t: "The pace and scale of emerging large loads create new circumstances that require us to adapt in how we build and manage the grid.", src: "written" },
+          { t: "there is no substitute for getting out of the office to see what it actually takes to get steel in the ground", src: "spoken", at: "~37:00" } ] },
+        { name: "A shared federal-State responsibility — support, don't override", desc: "Use FERC's authority on the parts it owns while respecting and aiding the States, whose role is statutorily preserved.", quotes: [
+          { t: "exercising our authority fully without hamstringing our regulatory and industry partners means respecting the States.", src: "written" },
+          { t: "Our action today is designed to support further State efforts in this urgent and fast-moving space, not override them.", src: "written" } ] },
+        { name: "Affordability at the forefront", desc: "Protect consumers from unnecessary costs as demand rises, and get States the cost information they need.", quotes: [
+          { t: "affordability must be at the forefront as we protect consumers from unnecessary costs in a time of rising demand.", src: "written" } ] },
+        { name: "Alternative transmission technologies to hold costs down", desc: "ATTs can cut large-load network-upgrade costs; providers choosing traditional upgrades must justify why ATTs would not be cheaper or faster.", quotes: [
+          { t: "if the transmission provider opts for traditional network upgrades, they must demonstrate why ATTs are not feasible or would not result in lower costs or a faster timeline for the large load interconnection customer.", src: "written" } ] },
+        { name: "Assign costs to who causes them", desc: "Reaffirms cost responsibility — jurisdictional costs fall on the customers who drive or benefit from upgrades, not on families and small businesses.", quotes: [
+          { t: "we reaffirm our responsibility to assign jurisdictional costs to the customers who drive or benefit from grid upgrades, not shift them onto families and small businesses.", src: "written" } ] },
+      ],
     },
     {
       key: "chang", name: "Judy W. Chang", role: "Commissioner", short: "Records & cost causation",
       quote: "The FPA is fundamentally a customer protection statute",
       gist: "Focuses on building records that survive review under §206’s ex parte limits, calling the FPA ‘fundamentally a customer protection statute.’ Warns that cost-recovery agreements ‘untethered from any assessment of the actual cost’ of serving a load may not protect other customers, and notes the orders deliberately don’t assert the ANOPR’s broadest jurisdictional theory.",
+      sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 103–109; largely common across the six orders, with some per-order tailoring", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption) — remarks deferred to the written statement" },
+      summary: "Chang focuses on procedure and customer protection. Because the Commission is acting through individual §206 show-cause proceedings rather than a rulemaking, she stresses the record in each region must be thorough, and §206's ex parte limits make that harder. She calls the FPA fundamentally a customer-protection statute and warns that cost-recovery agreements untethered from the actual cost of service may not protect other customers. She flags that extending the PJM co-location transmission services is a paradigm shift from Order No. 888 that must not create reliability risks, backs requiring evaluation of alternative transmission technologies, and notes the orders deliberately stop short of the ANOPR's broadest jurisdictional theory.",
+      themes: [
+        { name: "Restraint on jurisdiction; collaborate with the States", desc: "The orders deliberately do not assert the ANOPR's broadest jurisdictional theory, to ease state concerns about federal encroachment.", quotes: [
+          { t: "The Commission does not pursue the broad assertion of jurisdictional authority contemplated in the Advanced Notice of Proposed Rulemaking, which I hope assuages concerns raised by our state colleagues that the Commission ought not encroach upon matters properly left to their jurisdiction.", src: "written" } ] },
+        { name: "Build actionable records under §206's ex parte limits", desc: "Acting case-by-case (not by rulemaking) triggers ex parte restrictions, so a complete regional record matters even more.", quotes: [
+          { t: "the Commission needs active participation from interested stakeholders to develop thorough records in each region.", src: "written" },
+          { t: "the issues addressed by these orders will be subject to ex parte restrictions across the RTOs/ISO regions", src: "written" } ] },
+        { name: "The FPA is a customer-protection statute", desc: "Guards against cost shifts; warns that revenue-contribution agreements untethered from actual cost may not protect other customers.", quotes: [
+          { t: "The FPA is fundamentally a customer protection statute", src: "written" },
+          { t: "bilateral agreements that simply provide transmission revenue contributions untethered from any assessment of the actual cost of providing transmission service induced by individual large loads may be insufficient to adequately protect other customers against unjustified cost shifts.", src: "written" } ] },
+        { name: "New transmission services are a paradigm shift from Order No. 888", desc: "Extending the PJM co-location services runs the system tighter and must be weighed against reliability risk.", quotes: [
+          { t: "These new transmission services represent a fundamental paradigm shift from the traditional network service and point-to-point transmission service models established in Order No. 888 that have been used across the country for the last three decades.", src: "written" },
+          { t: "the Commission and grid operators must also be careful not to implement changes that create unforeseen reliability risks.", src: "written" } ] },
+        { name: "Require evaluation of alternative transmission technologies", desc: "Each tariff is preliminarily unjust and unreasonable for lacking provisions that require considering ATTs to cut cost or time.", quotes: [
+          { t: "each RTO/ISO's tariff is unjust and unreasonable because the tariff lacks clear and consistent provisions requiring the evaluation of alternative transmission technologies as potential solutions to accommodate an Eligible Customer's request for transmission service on behalf of a large load.", src: "written" } ] },
+      ],
     },
     {
       key: "lacerte", name: "David LaCerte", role: "Commissioner", short: "Jurisdictional hardball",
       quote: "I am prepared to play jurisdictional hardball, if needed",
       gist: "The sharpest tone. Invites region-specific §205 proposals and offers operators the ‘first pen,’ but says he is ‘prepared to play jurisdictional hardball’ — if they don’t file real fixes, FERC will ‘dictat[e] the solutions for you.’ Ties the orders to state Ratepayer Protection Pledges.",
+      sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 111–114; largely common across the six orders, with some per-order tailoring", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption) — remarks deferred to the written statement" },
+      summary: "LaCerte strikes the sharpest tone. He frames the moment as an inflection point and offers the RTOs the first wielder of the pen under §205 to bring region-specific fixes, with flexibility on timing, but says that freedom comes with responsibility. If they do not file adequate proposals, he is prepared to play jurisdictional hardball and FERC will dictate the solutions. He backs deploying alternative transmission technologies now and asks state commissions to ensure their retail tariffs insulate ratepayers from data-center cost impacts.",
+      themes: [
+        { name: "An inflection point that outpaces the system", desc: "Large-load growth is faster than the grid can handle; the orders choose decisive change over gridlock and half-measures.", quotes: [
+          { t: "We are at an inflection point in the history of American energy infrastructure.", src: "written" },
+          { t: "The extraordinary and rapid growth of large loads in RTOs and ISOs is faster than the current system can handle.", src: "written" },
+          { t: "every gambler knows that the secret to surviving is knowing what to throw away and knowing what to keep.", src: "written" } ] },
+        { name: "Use alternative transmission technologies now", desc: "Deploy ATTs to unlock existing capacity, speed interconnection, lower costs, and help prevent cost shifting.", quotes: [
+          { t: "I also support the use of alternative transmission technologies to unlock every megawatt of existing capacity from our current transmission system.  We have the technology.  We should use it now", src: "written" } ] },
+        { name: "First wielder of the pen — but responsibility comes with it", desc: "§205 lets the regions write the first proposal with flexibility on timing; that freedom carries an obligation to file real fixes.", quotes: [
+          { t: "By inviting you to proceed under FPA section 205, we are giving you significant perks:  the benefits of first wielder of the pen", src: "written" },
+          { t: "But such freedom comes with great and concomitant responsibility.", src: "written" } ] },
+        { name: "Prepared to play jurisdictional hardball", desc: "If a region does not file an adequate §205 proposal, FERC will use its broad transmission jurisdiction and impose the remedy itself.", quotes: [
+          { t: "I am prepared to play jurisdictional hardball, if needed.", src: "written" },
+          { t: "any failure on your end to provide a sufficient FPA filing or filings to address the large-load-related concerns that we have identified will result in the Commission dictating the solutions for you.", src: "written" } ] },
+        { name: "Ratepayer protection through region-specific tariffs", desc: "Asks state commissions to insulate ratepayers from data-center cost impacts, and favors tailored proposals over top-down mandates.", quotes: [
+          { t: "ensure their large load retail tariff provisions insulate ratepayers from the negative impacts of data center growth.", src: "written" },
+          { t: "not through top-down, one-size-fits-all mandates, but through consideration of region-specific proposals.", src: "written" } ] },
+      ],
     },
   ];
 
@@ -632,5 +722,20 @@ window.FERC_DATA = (function () {
     ],
   };
 
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, comments, commissioners, participate };
+  // Section IV "Briefing Questions" — the questions each show cause order directs the RTO/ISO to brief.
+  // Templated across the six orders (each `v` verified verbatim in every applicable order's text); only
+  // the page and SPP's omission differ. SPP already has the proximate-generation process (HILLGA), so its
+  // order does not pose that question. `t`/`d` are the curator's plain-language label + gloss, not quotes.
+  const briefing = {
+    questions: [
+      { id: "arrangements", t: "Protecting existing commercial arrangements", d: "A reasonable implementation period and time to finalize deals already signed or nearing completion, so the new rules don't disrupt them.", v: "what would be a reasonable implementation period to ensure minimal disruption to such existing commercial arrangements" },
+      { id: "planning", t: "Planning impact of flexible transmission services", d: "How the proposed flexible (curtailable) large-load services would affect regional and local transmission planning.", v: "what, if any, potential impacts on regional and local transmission planning would arise from the introduction of the new transmission services discussed herein" },
+      { id: "costshift", t: "Cost-shift protections", d: "Agreement structures, a minimum level of cost recovery, and financial security so large-load network-upgrade costs aren't shifted onto other customers.", v: "without the inclusion of cost shifting protections" },
+      { id: "att", t: "Alternative transmission technologies", d: "Whether the tariff must require evaluating ATTs (e.g., dynamic line ratings, reconductoring) before selecting traditional network upgrades.", v: "requiring the evaluation of alternative transmission technologies" },
+      { id: "proximate", t: "Generator interconnection for proximate / co-located load", d: "Market participation, mitigation, and resource-adequacy treatment for generation serving electrically proximate or co-located large load.", v: "to seek generator interconnection service" },
+    ],
+    pages: { "E-7": 69, "E-8": 73, "E-9": 51, "E-10": 75, "E-11": 74, "E-12": 78 },
+    omit: { "E-9": ["proximate"] },
+  };
+  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, comments, commissioners, briefing, participate };
 })();

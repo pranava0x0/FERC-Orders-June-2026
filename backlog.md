@@ -95,12 +95,12 @@
       No recall baseline exists yet (see `issues.md`); a small SME-selected gold set would let us measure it.
     - **medium — fuller pass on the 8 large filings (>120 KB).** Page-windowed map-reduce over the whole
       body instead of the front-slice read, so a position buried in an exhibit isn't missed (`issues.md`).
-    - **low — lazy-load the per-comment synthesis, and expose backing quotes.** `comments-data.js` grew to
-      ~104 KB gzipped because it carries each comment's summary + bins; it loads on every tab. Split the
-      heavy per-comment block into a file fetched only when the Comments tab opens. **Bundle with the
-      Antigravity-review ask** to surface the verbatim quote behind each stance chip (tooltip or nested
-      collapsible) — the quotes are committed in `summaries-v2/` but deliberately left out of the page data
-      for weight; the lazy-loaded block is where they'd live, closing the audit loop on the web.
+    - **done (2026-06-26) — lazy-loaded per-letter bin detail + exposed quotes.** Each audited letter's
+      description + verbatim quotes are emitted to `docs/data/comments/<acc>.json` (one ~10 KB file,
+      ~3.1 MB total) and fetched only when a row's "Read the audited analysis" opens; the up-front
+      `comments-data.js` stays ~104 KB gzip. Rendered grouped by lens (questions / principles / regions /
+      other), `aria-busy` + `role=status` on the async load. `tests/comment-detail.test.mjs` traces every
+      detail file bin-for-bin and quote-for-quote back to `summaries-v2/`. Closes the audit loop on the web.
     - **low — Haiku-vs-Sonnet quality spot-check.** 84 summaries are Haiku-extracted; re-extract a sample
       on Sonnet and diff to confirm no quality gap (`issues.md`).
   - **In progress (2026-06-25) — 45 of 268 done, ~224 remaining.** Quote-centric v2 summaries
@@ -131,17 +131,47 @@
        `20251205-5005` — no text layer, OCR-pending) **plus 1 inline-only filing** (ETI,
        `20251121-5225` — eLibrary serves it inline, no downloadable body). See the OCR + ETI items below.
        `.worklist.json`'s `MIN_CHARS=400` is the cutoff for "has usable text".
+- **done (2026-06-26) — Comments tab restructure + filter discoverability.** Removed the dated
+  "Start here: one filing per camp" flagship block (the 9 orgs remain as normal rows; curated
+  `D.comments.flagships` data + its audit tests kept). Renamed the sub-tabs to read as clear buckets:
+  **Themes & categories · Respondent types · All comments**, with "All comments" leading into the list.
+  Added a collapsible **"filter by tag"** bar on All comments — the full lens vocabulary (8 questions /
+  5 principles / 6 regions) with per-tag match counts; clicking a tag drives the existing search box, and
+  the search index now also covers position names. Pruned the dead `.cm-flag*`/`.cm-stance` CSS. Two small
+  fixes folded in: the new bin-detail foot-note shipped an em-dash + "X, not Y" (caught in review, reworded),
+  and the respondent-roster "Show all" toggle was 44 px tall and CTA-loud — now chip-scale with a chevron,
+  44 px target restored only on coarse pointers.
 - **medium — OCR the 4 image-only scans.** `20251121-5224`, `20251121-5521` (Data Center Coalition),
   `20251121-5140` (Yurok Nation), `20251205-5005` are downloaded but have no text layer (`validate-comments.py`
   flags them). Needs an OCR tool (no `ocrmypdf`/`tesseract` installed locally — install one, or use macOS
   Vision). Once OCR'd, re-run organize/validate; they drop out of the scanned set into the text-analyzed corpus.
 - **low — re-fetch the ETI holdout** (`20251121-5225`, Energy Trading Institute): renders + clicks but won't download
   (served inline). Inventoried + re-downloadable; the corpus reads 272/273. See `issues.md`.
-- **partially done / medium** — The **written** "what each commissioner said" block is shipped from the
-  five concurring statements appended to the orders (see done 2026-06-24). What remains is the **spoken**
-  open-meeting version: Chairman Swett's dais framing and any remarks not in the written statements, from
-  FERC's **YouTube** auto-caption transcript (`yt-dlp --write-auto-sub`, ungated), verified against the
-  statement PDFs. Method in `summaries-plan.md` (Part B).
+- **done (2026-06-26) — per-commissioner themed summaries (themes + quotes, no tags).** All five
+  commissioners (Swett, Rosner, See, Chang, LaCerte) summarized the auditable way: an overall read plus
+  5 themes each, every theme backed by verbatim quotes, no tag/stance vocabulary. Written quotes are
+  verbatim from the OCR'd order text (cited to the PJM copy; the concurrences are largely common across the
+  six orders but vary in places — caught by the all-six verbatim check during the 2026-06-26 PR review) and
+  guarded by a `data.test.mjs` verbatim check; spoken quotes come from the June 18 open-meeting auto-caption
+  transcript (pulled with `uvx yt-dlp --write-auto-subs` from the user's YouTube link) and are labeled
+  "spoken" (Rosner ×2, See ×1, Swett ×1; Chang and LaCerte deferred to their written statements at the
+  dais, so written-only). Sources committed under `sources/commissioners/` (5 statements + transcript).
+  Rendered as an expandable themed read on each Overview commissioner card (embedded in `data.js`, not
+  lazy-loaded — only 5 small items). On PR #6.
+- **done (2026-06-26, Section IV) / medium remaining (the clock) — enriched the Dockets tab.** Added each
+  order's **Section IV Briefing Questions** as a numbered, page-cited, collapsible list on the docket card:
+  the five templated questions (protecting existing arrangements; flexible-service planning impact;
+  cost-shift protections; alternative transmission technologies; generator interconnection for proximate /
+  co-located load), each with a plain-language label + the verbatim excerpt; SPP shows four (it already has
+  HILLGA, so its order omits the proximate-generation question). Stored once as `data.js` `briefing`
+  (questions + per-docket § IV page + SPP omission) and DRY-rendered per docket; `data.test.mjs` verifies
+  every shown question is verbatim in that order's text and the § IV page is in range. **Still open:** the
+  **procedural clock** (the (A)-(F) ordering paragraphs — 30-day report, 60-day show-cause, 21-day
+  intervene, 30-day responses + derived dates) as a per-docket timeline, and deeper Section III sub-findings.
+- **requested 2026-06-26 / medium — explore a multi-select / token search on the All-comments filter.** Today
+  the search box holds one substring and the tag bar replaces it on click. Explore letting several tags stack
+  as removable tokens (AND/OR) so you can compose "PJM + Cost + opposes". Design question: token chips in the
+  input vs. a multi-select facet model; AND vs OR semantics; how it interacts with free-text. Spec before build.
 - **partially done / low** — Respondent lists are now captured **in full** per docket (done 2026-06-24)
   and a compact per-docket Section IV "what FERC presses this system on" ships. What remains: the deeper
   verbatim enumeration of every Section IV briefing question per order (PJM's were read in full; the other

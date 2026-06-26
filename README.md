@@ -23,7 +23,8 @@ Built for an energy-regulatory audience. Six tabs:
 5. **Comments (RM26-4)**: the comment-period summary, split into three sub-tabs to cut the scroll —
    *Themes & categories* (stats, rounds, top themes, the stance-by-reform map, and the three-lens aggregate),
    *Respondent types* (19 stakeholder categories), and *All comments* (all 273 comments in filing order,
-   filterable by org, type, question, principle, position, or region). Each comment is tagged across **three
+   filterable by org, type, question, principle, position, or region — a collapsible "filter by tag" bar
+   surfaces the full lens vocabulary with per-tag match counts). Each comment is tagged across **three
    lenses** — which of the DOE ANOPR's eight comment-period questions, the five June-order reform principles,
    and the six show-cause-order RTO regions it engages (keyword-detected, shown per row and in aggregate). Comment bodies
    are committed under `sources/comments/files/<accession>__<org-slug>/` (the path names the submitter) and

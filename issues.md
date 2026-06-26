@@ -64,6 +64,37 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-06-26 · provenance · Commissioner statements claimed "identical across all six orders" on a spot-check.**
+  The themed per-commissioner summaries cited their quotes as "identical across all six orders," but that
+  rested on one distinctive sentence (Swett's opener) appearing once in each order. The 2026-06-26 PR review
+  asked to substantiate it; a strengthened test that checks every written quote against **all six** order
+  texts found the concurrences are **largely common but NOT identical** — a handful of sentences are tailored
+  per region (e.g., Swett's "status quo… not good enough" is absent from SPP/ISO-NE/NYISO; See has 2, Chang 3
+  such quotes). Root cause: **data** (unverified "identical across N sources" assumption from a single
+  spot-check). Fix: corrected the displayed claim to "largely common across the six orders, with some
+  per-order tailoring," cite the PJM canonical copy, and the test now verifies each quote against the cited
+  PJM order (and asserts no summary re-introduces the "identical across all six" overclaim). Status: **Fixed**.
+
+- **2026-06-26 · test · `assert.deepEqual` of a vm-context array failed despite equal contents.** The data
+  tests load `data.js` in a `node:vm` context; an array read from `D` has that context's `Array.prototype`,
+  so `assert.deepStrictEqual(vmArray, [literal])` fails on a cross-realm prototype mismatch even when the
+  elements match. Root cause: **test** (cross-realm identity). Fix: compare by content (`.join(",")`) instead
+  of deep-equality on the cross-realm array. Status: **Fixed**.
+
+- **2026-06-26 · a11y/UX · Respondent-roster "Show all" toggle dominated the org pills.** The
+  `.cm-showmore` button had `min-height: 44px` + bold accent text + a heavy `rule-strong` border, so it
+  rendered ~44 px tall next to ~18 px org pills and read as a primary CTA. Root cause: **code** — the
+  44 px touch-target was applied unconditionally (it only matters for touch). Fix: chip-scale by default
+  (font-weight 600, lighter border, `1px 9px` padding) with a quiet rotating chevron; the 44 px target is
+  restored under `@media (pointer: coarse)`. Commit on `claude/comments-tagbar-docs`. Status: **Fixed**.
+
+- **2026-06-26 · prose · New bin-detail foot-note shipped an em-dash + "X, not Y" parallelism.** The
+  Comments-tab "Read the audited analysis" foot-note read "…drawn from — the audit trail… Stance is the
+  filer's, not ours." — both patterns the `no-ai-isms` rule says to strip from displayed copy. Caught in
+  the self-review of PR #4. Root cause: **code** (AI-register slipped into UI copy). Fix: reworded with the
+  same meaning, no em-dash, no stark contrast. Regression bar: the existing prose lint; reviewers scan UI
+  copy. Status: **Fixed**.
+
 - **2026-06-24 · data · Respondent counts recounted from the OCR'd order captions.** The displayed
   "N named transmission owners" was off for two orders: MISO showed "~31" (an estimate) but the caption
   lists **30**; SPP showed "23" but the caption lists **22**. PJM's page-1 caption is OCR-linearized
