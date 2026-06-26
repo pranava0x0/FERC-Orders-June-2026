@@ -1,0 +1,288 @@
+{
+  "accession": "20251121-5348",
+  "filer": "ISO New England Inc.",
+  "org_type": "rto_iso",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5348__ISO-New-England-Inc/FINAL Large Load ANOPR Comments.txt",
+  "overall_summary": "ISO-NE supports the ANOPR's reform principles for large load interconnection and notes that New England already has many analogous constructs, including cluster studies for RNS requests and cost-allocation rules. The filing focuses on requests for definitional clarity across multiple principles, particularly on jurisdictional scope, the MW threshold definition, study scope limits, and the conditions for an expedited process, and flags concern that 60 days is insufficient for expedited studies.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "ISO-NE recommends that the Commission clarify whether the Commission's jurisdiction is asserted solely for the process of reviewing large load interconnections (i.e., clarity is needed on whether the Commission's jurisdiction extends to the provision of transmission service).",
+      "concern": "FERC should clarify whether its jurisdiction covers only the interconnection process or also transmission service",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The Commission should provide flexibility for the New England region to formulate interconnection procedures that apply to transmission facilities that are already classified as PTF or Non-PTF.",
+      "concern": "FERC rules should allow regional flexibility to align with existing PTF/Non-PTF classifications",
+      "bins": [
+        "aq:jurisdiction",
+        "rg:isone"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "ISO-NE is generally supportive of applying a MW threshold for the application of a FERC-jurisdictional interconnection process.  A MW threshold, however, should be clearly defined.  For example, is the proposed 20 MW threshold based on the maximum load, average load, or something else, and where is the load level measured?",
+      "concern": "ISO-NE supports a MW threshold but wants FERC to specify exactly how load is measured",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "rules for interconnection of large loads should address interconnection of projects in stages.  For example, consider a large load customer's proposal to interconnect 30 MW in two stages of 15 MW each.  ISO-NE submits that the aggregate total of 30 MW should be captured in the supporting interconnection study to fully evaluate the system impacts of the total amount of load",
+      "concern": "Phased large load projects should be studied at their full aggregate capacity, not stage by stage",
+      "bins": [
+        "aq:threshold",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The principle should also establish that upgrades identified in the Cluster Studies (and the corresponding cost responsibility for such upgrades) will be limited to the requests for projects that were part of the same Cluster that included the load and/or hybrid facility.   Without this limitation, there could be a potential increase of restudies of previously completed Cluster Studies.",
+      "concern": "Cost responsibility for cluster study upgrades should be bounded to the same cluster to avoid cascading restudies",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "ISO-NE agrees with this principle.  In addition, non-financial readiness requirements, such as site control, permits, and equipment orders, should also be included to ensure that only requests for \"first ready,\" viable, large load and hybrid facility projects enter the interconnection process.",
+      "concern": "ISO-NE supports deposits and penalties and wants non-financial readiness criteria added",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "ISO-NE is supportive of this principle, the impacts of which would be reflected in study assumptions.  ISO-NE also notes that this principle would not negate the need for Interconnection Studies.",
+      "concern": "Studying hybrid facilities by net injection/withdrawal rights still requires full interconnection studies",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "ISO-NE respectfully submits that clarity is needed with respect to how the concept of \"withdrawal rights\" fits with the currently established transmission service concepts and constructs.",
+      "concern": "The term 'withdrawal rights' needs to be reconciled with existing transmission service frameworks",
+      "bins": [
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "ISO-NE believes that protection schemes must be simple, straightforward, and standardized.  In addition, protection schemes should only act behind a Point of Interconnection for conditions at the Point of Interconnection.  Using more complex schemes would be unmanageable for operators, adding operational complexity risks.",
+      "concern": "Protection schemes for hybrid facilities must be standardized and limited to the point of interconnection to avoid operational risk",
+      "bins": [
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "In order to accomplish an expedited large load study process for curtailable large loads, the terms and conditions related to when load is curtailed should be simple and clear as they will inform the study methodology.  An expedited large load study should be available only if the load is fully curtailable.",
+      "concern": "Expedited studies should require full curtailability with simple, clear curtailment terms",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "ISO-NE is concerned that 60 days may not be enough time to complete required studies.  Although an expedited process may be achieved by reducing the need for certain thermal analyses, other analyses performed in the regular (i.e., non-expedited) interconnection process would still need to be performed for the expedited process (e.g., in order of increasing typical complexity, short circuit, voltage, stability, and electromagnetic transient analyses).",
+      "concern": "60-day expedited study timeline is likely too short given required non-thermal analyses",
+      "bins": [
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "ISO-NE agrees with the principle that load and hybrid facilities should be fully responsible for upgrades needed to support their interconnections.  This construct exists today for RNS.  The methodology used to assign responsibility for upgrades and any crediting mechanism should be simple.",
+      "concern": "ISO-NE supports 100% cost responsibility for load-driven upgrades and wants a simple crediting method",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "ISO-NE agrees that there must be a plan to thoughtfully, efficiently, and properly implement any necessary changes resulting from the proposed reforms.",
+      "concern": "A careful transition plan is needed before reforms take effect",
+      "bins": [
+        "topic:transition-planning"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "ISO-NE agrees with it, and submits that it should also include regional reliability criteria (e.g., NPCC criteria).  ISO-NE also believes that the Commission should provide clarity regarding who are the \"utilities serving large loads\"",
+      "concern": "NERC reliability compliance obligations should extend to regional criteria, and responsible parties need clearer identification",
+      "bins": [
+        "topic:reliability-standards"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Clarify Jurisdictional Scope",
+      "stance": "neutral",
+      "description": "ISO-NE asks FERC to specify whether its jurisdiction covers only the interconnection process or also the provision of transmission service. The filing also requests flexibility for New England to apply its existing PTF and Non-PTF framework.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Define MW Threshold Precisely",
+      "stance": "support",
+      "description": "ISO-NE supports a 20 MW threshold but wants FERC to specify how load is measured (maximum, average, or other) and at what point. It also argues that phased projects should be studied at their full aggregate MW to capture total system impact.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Add Non-Financial Readiness Requirements",
+      "stance": "support",
+      "description": "ISO-NE supports standardized deposits, readiness requirements, and withdrawal penalties. It recommends adding non-financial readiness criteria such as site control, permits, and equipment orders to filter out speculative projects.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Clarify Withdrawal Rights Concept",
+      "stance": "neutral",
+      "description": "ISO-NE supports studying hybrids based on net injection and withdrawal rights but notes that full interconnection studies are still needed. It also asks FERC to explain how 'withdrawal rights' fits with existing transmission service constructs.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Simple Standardized Protection Schemes",
+      "stance": "support",
+      "description": "ISO-NE urges that protection schemes be simple, standardized, and limited to conditions at the point of interconnection. Complex schemes would create unmanageable operational risk for system operators.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Study Conditions and Timeline",
+      "stance": "mixed",
+      "description": "ISO-NE supports expedited studies for fully curtailable loads but wants curtailment terms kept simple and clear. It raises concern that 60 days is insufficient because non-thermal analyses such as short circuit, voltage, stability, and electromagnetic transient studies are still required.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Full Load Upgrade Cost Responsibility",
+      "stance": "support",
+      "description": "ISO-NE agrees that loads and hybrid facilities should bear 100% of interconnection upgrade costs, a construct already in place for RNS in New England. It asks that any crediting mechanism be kept simple.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Limit Cluster Study Restudy Risk",
+      "stance": "support",
+      "description": "ISO-NE notes that New England already includes RNS requests in cluster studies. It recommends that cost responsibility for cluster upgrades be confined to the same cluster to prevent cascading restudies of completed cluster studies. Phased projects should be studied at their full aggregate load.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Simple Cost Allocation Framework",
+      "stance": "support",
+      "description": "ISO-NE supports allocating upgrade costs to the requesting load or hybrid facility and wants the cost assignment method and any crediting mechanism to be simple. It cautions against study scope creep that could trigger restudies and redistribute costs.",
+      "quote_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Joint Study Already Exists in ISO-NE",
+      "stance": "support",
+      "description": "ISO-NE notes that co-locating load and generation for joint study already exists in New England through the cluster study framework. Studying hybrid facilities by net injection and withdrawal rights supports efficient co-location but does not eliminate the need for full interconnection studies.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Market-Based Curtailment Preferred",
+      "stance": "support",
+      "description": "ISO-NE favors qualifying curtailable large loads through wholesale market programs such as demand response, rather than manual out-of-market curtailment protocols. This supports expedited study eligibility while keeping operations orderly.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "rg:isone",
+      "name": "New England Regional Flexibility",
+      "stance": "support",
+      "description": "ISO-NE asks that any FERC rulemaking allow the New England region to apply reforms within its existing PTF and Non-PTF classification framework, given the region's established tariff structures and state law considerations.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "topic:transition-planning",
+      "name": "Thoughtful Transition Plan Needed",
+      "stance": "support",
+      "description": "ISO-NE agrees that reforms require a careful transition plan and lists key questions: whether ongoing studies must transfer between entities, whether tariff changes are needed across interconnection and capacity market rules, and whether new service types will be created.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:reliability-standards",
+      "name": "Include Regional Reliability Criteria",
+      "stance": "support",
+      "description": "ISO-NE agrees that NERC reliability standards apply to large load interconnections but asks that regional criteria such as NPCC standards also be included. It also wants FERC to clarify which entity is the responsible 'utility serving large loads.'",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "isone"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

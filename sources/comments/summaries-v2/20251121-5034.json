@@ -1,0 +1,309 @@
+{
+  "accession": "20251121-5034",
+  "filer": "R Street Institute",
+  "org_type": "think_tank",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5034__R-Street-Institute/Final_DOE ANOPR Comments.txt",
+  "overall_summary": "R Street Institute argues FERC should not adopt the DOE ANOPR as proposed because the six-month deadline is inadequate and the proposal lacks a sufficient evidentiary record to support expanded FERC jurisdiction over load interconnection. RSI proposes a narrower alternative: limit federalized interconnection to load configurations that also seek to provide or receive FERC-jurisdictional wholesale market services, and drop the 20 MW threshold in favor of a wholesale-market-participation criterion. RSI also urges FERC to first prioritize generation interconnection reform and establish joint boards to gather evidence on current utility practices before issuing any final rule.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "six months is not a \"reasonable time\" and is insufficient for FERC to consider, and for parties to meaningfully participate in, a rulemaking that expands the Commission's exertion of jurisdiction.",
+      "concern": "Six-month deadline is too short for a durable rulemaking expanding FERC jurisdiction",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:rulemaking-timeline"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The proposed ANOPR does not provide FERC sufficient evidence or support to issue a NOPR and final rule in the way envisioned.",
+      "concern": "Insufficient evidentiary record to support the proposed rule",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:evidentiary-record"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The Commission should make no substantive decision by April 30, 2026, and instead seek more information in a separate proceeding, rather than issue a rule that makes the problems in the bulk electric system worse.",
+      "concern": "FERC should defer action and gather more evidence rather than rush a final rule",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:rulemaking-timeline"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the degree to which utility companies are doing the \"right thing\" (or their planning and processes are consistent with the proposed ANOPR's principles) is unclear.",
+      "concern": "Lack of transparency in utility interconnection processes undermines the case for federal action",
+      "bins": [
+        "topic:evidentiary-record",
+        "topic:utility-transparency"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the Commission could initiate one or more joint boards under section 209 of the Federal Power Act. These joint boards could be broken out by market or planning region, and could resemble the joint boards of state and federal regulators created nearly 20 years ago on security-constrained economic dispatch, or SCED.",
+      "concern": "Recommends joint state-federal boards to gather evidence on utility interconnection practices before rulemaking",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The proposed ANOPR's entire basis for selecting the 20 MW threshold is that 20 MW is the threshold for the Commission's large generation interconnection process (LGIP) and agreement (LGIA). DOE did not provide support for why the MW threshold for generation should also be applied to load.",
+      "concern": "20 MW threshold is arbitrary and not justified for load interconnection",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "comparison of large loads connecting at the transmission level to large generators connecting to transmission is incongruent.",
+      "concern": "Load and generation interconnection are fundamentally different and should not be treated identically",
+      "bins": [
+        "aq:threshold",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Getting FERC involved in the interconnection of customers that only seek to take a state-jurisdictional end-use service, simply because they are connecting to the bulk electric system, is nonsensical in the context of DOE's proposed ANOPR.",
+      "concern": "Extending FERC jurisdiction to purely retail load customers connecting at transmission voltage is not warranted",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "FERC should conduct a rulemaking permitting Commission-jurisdictional interconnection processes for load, but only where the interconnection is necessary to offer or receive an otherwise wholesale market service.",
+      "concern": "RSI's proposed narrow alternative: limit FERC jurisdiction to wholesale-market-linked load interconnections only",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:colo",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "delineating the applicability of a federalized agreement and process based on the interaction with wholesale markets keeps the Commission from having to make arbitrary determinations. As such, RSI's proposal would be available to any size load, as long as they meet the other criteria for its applicability",
+      "concern": "Wholesale-market criterion replaces the 20 MW threshold, making the rule available to any qualifying load size",
+      "bins": [
+        "aq:threshold",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Limiting the applicability of a rulemaking to those processes that are already FERC-jurisdictional (i.e. expanding the LGIA concept to others seeking to connect to the transmission grid to participate in wholesale markets) reduces the novelty of an ultimate rule, maintains the current balance between state and federal oversight, reduces litigation risk, and ensures that resource adequacy concerns with the rule (that load will take power before generation can catch up) are mitigated",
+      "concern": "Narrowing the rule to wholesale-market participants reduces litigation risk and preserves state-federal balance",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "accelerating the interconnection of these load-and-FERC-jurisdictional-service configurations is warranted, given their outsized contribution to resource adequacy and limiting the impact on the broader transmission network.",
+      "concern": "Hybrid and flexible load configurations deserve priority interconnection because they reduce network upgrade needs and support resource adequacy",
+      "bins": [
+        "pr:colo",
+        "pr:flex",
+        "pr:proximate",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the Commission should use the expertise and evidence it has accumulated in Docket Nos. EL25-49, AD24-11 and EL25-20 to effectuate RSI's proposal.",
+      "concern": "FERC should build on existing co-location docket records rather than starting a new process from scratch",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "[t]he current system for generation interconnection is inefficient and misaligns cost allocation relative to the beneficiary pays principle.",
+      "concern": "Generation interconnection cost allocation is misaligned with cost-causation principles",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Cooperative federalism harmonizes state and federal policies and avoids working at cross-purposes.",
+      "concern": "State-federal coordination is essential to effective interconnection reform",
+      "bins": [
+        "topic:cooperative-federalism",
+        "aq:jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Limit FERC Jurisdictional Reach",
+      "stance": "mixed",
+      "description": "RSI does not dispute FERC's authority but opposes expanding it as the ANOPR envisions. The filer argues the six-month deadline is too short, the evidentiary record is insufficient, and FERC should restrict new federal oversight to load configurations that also participate in wholesale markets, leaving purely retail load interconnections to states.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        15
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Reject the 20 MW Threshold",
+      "stance": "oppose",
+      "description": "RSI argues the 20 MW threshold is arbitrary because it simply copies the generation interconnection cutoff without justification for load. RSI proposes replacing it with a wholesale-market-participation criterion that applies regardless of MW size.",
+      "quote_ids": [
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Build on Co-location Docket Record",
+      "stance": "support",
+      "description": "RSI urges FERC to draw on the record built in co-location dockets (EL25-49, AD24-11, EL25-20) rather than starting a new process, as those proceedings already contain relevant evidence on hybrid load-generation configurations.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedite Hybrid and Flexible Loads",
+      "stance": "support",
+      "description": "RSI supports accelerating interconnection for load configurations that combine wholesale market participation with resource adequacy benefits, distinguishing them from demand-only loads that do not warrant the same priority.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Fix Generation Interconnection First",
+      "stance": "support",
+      "description": "RSI argues that swift FERC action is warranted on the generation side, including assessment of whether further reforms beyond Order 2023 are needed, and that cost-causation misalignment in the current study process should be corrected.",
+      "quote_ids": [
+        11,
+        14
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Align Cost Allocation with Beneficiary Pays",
+      "stance": "support",
+      "description": "RSI identifies the current generation interconnection system as misaligning cost allocation relative to the beneficiary-pays principle and calls for correcting that before or alongside any load interconnection reforms.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Prioritize Hybrid Configurations",
+      "stance": "support",
+      "description": "RSI proposes that federalized interconnection extend to hybrid load-generation and behind-the-meter configurations that seek wholesale market participation, citing their resource adequacy and network upgrade benefits over demand-only loads.",
+      "quote_ids": [
+        9,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Include Demand Response Configurations",
+      "stance": "support",
+      "description": "RSI's proposed rule would cover load that plans to provide demand flexibility and sell it into wholesale markets, recognizing that such arrangements reduce the need for additional capacity and network transmission.",
+      "quote_ids": [
+        9,
+        12
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Network Upgrade Mitigation Benefit",
+      "stance": "support",
+      "description": "RSI notes that hybrid and flexible load configurations can reduce the need for network upgrades when their operational characteristics are properly modeled at interconnection, making them more suitable candidates for expedited federalized processes than load-only customers.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:rulemaking-timeline",
+      "name": "Six-month Deadline Too Short",
+      "stance": "oppose",
+      "description": "RSI contends the six-month deadline imposed by the DOE Secretary does not allow adequate time for a durable rulemaking and recommends FERC defer substantive action, seek additional information in a separate proceeding, and avoid a rule that could worsen grid conditions.",
+      "quote_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "key": "topic:evidentiary-record",
+      "name": "Insufficient Record for Action",
+      "stance": "oppose",
+      "description": "RSI finds the ANOPR lacks sufficient evidence that current utility tariffs are unjust and unreasonable, which is the threshold showing FERC must make before issuing new rules. RSI urges joint boards under FPA section 209 to collect that evidence.",
+      "quote_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "topic:utility-transparency",
+      "name": "Opaque Utility Interconnection Processes",
+      "stance": "neutral",
+      "description": "RSI observes that utility interconnection processes are not transparent, with draft pro forma electric service agreements often inaccessible, making it difficult to assess whether current practices comply with the ANOPR's principles or justify federal intervention.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:cooperative-federalism",
+      "name": "State-Federal Coordination Required",
+      "stance": "support",
+      "description": "RSI argues that the ANOPR's goals depend heavily on state action (siting, flexibility programs, PUC oversight) and that pitting FERC against states through unilateral expansion of federal jurisdiction is counterproductive. RSI favors cooperative federalism through joint boards and limited jurisdictional expansions.",
+      "quote_ids": [
+        5,
+        8,
+        11,
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "hybridrights",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
