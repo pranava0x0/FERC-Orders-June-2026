@@ -1,0 +1,320 @@
+{
+  "accession": "20251205-5317",
+  "filer": "Google LLC",
+  "org_type": "data_center",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5317__Google-LLC/Reply Comments of Google LLC.txt",
+  "overall_summary": "Google frames large load interconnection as fundamentally a transmission infrastructure problem and urges FERC to act promptly on three near-term pathways: expedited joint study for co-located generation and load, expedited interconnection for electrically proximate generation, and incentivized curtailable load service. Google insists all three pathways be technology neutral and voluntary, and argues that these reforms also sit on the less jurisdictionally contested end of the spectrum, easing implementation.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Inadequate electric transmission infrastructure is becoming the principal limitation to interconnecting new large loads, including data centers, and the needed generation capacity at the speed and scale necessary to sustain our global economic competitiveness.",
+      "concern": "Transmission infrastructure gap is the root cause of interconnection delays",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "topic:transmission-investment"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "it takes too long to interconnect new large loads and new generation, and the cost of doing so is too high. Lengthy interconnection delays are directly driving up energy prices.",
+      "concern": "Slow interconnection raises costs for energy, capacity, and ancillary services",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the record is clear: to get large load interconnection right, the Commission must consider the interplay between transmission capacity and the interconnection of both large loads and the generators that supply them.",
+      "concern": "Studies must treat generator and load interconnection as a joint problem",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The way to address that foundational transmission issue is to adopt a holistic transmission planning process that optimizes grid development by accounting for both generators and the large loads planning to interconnect.",
+      "concern": "Holistic transmission planning that accounts for load and generation together is needed",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy",
+        "topic:transmission-investment"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "any expedited processes are technology neutral and do not arbitrarily favor loads paired with generation over those capable of providing equivalent relief through flexibility.",
+      "concern": "Expedited pathways must not favor co-location over flexible load options",
+      "bins": [
+        "pr:colo",
+        "pr:flex",
+        "topic:technology-neutrality"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The concerns raised in the record about co-location are readily resolvable, and do not outweigh its potential value in interconnecting new large loads in a manner that maximizes the use of existing infrastructure and minimizes strain on the grid.",
+      "concern": "Objections to co-location are addressable and should not block an expedited pathway",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Determining what network upgrades are required to accommodate the actual injection and withdrawal rights requested and providing transmission service based on the actual use of the transmission system will send the proper signals to encourage developers to pursue the most efficient projects.",
+      "concern": "Net-load-based transmission service sizing sends better efficiency signals",
+      "bins": [
+        "pr:colo",
+        "pr:cost",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Google agrees with commenters that the Commission should establish pathways for facilitating the expedited study and interconnection of electrically proximate pairs of generation and load, as doing so will reduce the network upgrades needed to interconnect new resources, which can accelerate the pace at which new generation comes online.",
+      "concern": "Expedited study of electrically proximate load-generation pairs reduces upgrade needs",
+      "bins": [
+        "pr:proximate",
+        "aq:expedited",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the Commission should ensure that any such regime: Provides an optional pathway (i.e., an incentive) and not a requirement that effectively blocks the interconnection of large loads that, for whatever reason, are not or cannot be paired with electrically proximate generation.",
+      "concern": "Proximate-generation pathway must be optional, not a gate on interconnection",
+      "bins": [
+        "pr:proximate",
+        "topic:technology-neutrality"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Ensures that any expedited interconnection process is technology neutral. In particular, it must be open to storage resources, which can deploy more rapidly than any other grid resource and can manage the impact of large loads on the grid.",
+      "concern": "Storage must be eligible under any expedited process, not just conventional generation",
+      "bins": [
+        "pr:proximate",
+        "topic:technology-neutrality"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "a load curtailment rate of just 0.25% annually would allow for the integration of 76 GW of new load—the equivalent of 10% of the nation's current aggregate peak demand—with minimal generation capacity expansion.",
+      "concern": "Even minimal curtailment commitments enable very large load additions grid-wide",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "combining flexible grid connections with a \"bring-your-own-capacity\" framework in PJM could shorten interconnection wait times by three to five years and maintain grid power availability for over 99% of hours, while requiring on-site resource dispatch for only 40 to 70 hours annually.",
+      "concern": "Flexible connection plus BYOC model dramatically cuts wait times with minimal curtailment burden",
+      "bins": [
+        "pr:flex",
+        "aq:expedited",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Rules governing the interconnection and operation of curtailable loads must account for how large loads, including data centers, operate in practice. Such rules must encourage innovation without being so onerous and/or impractical that they discourage large loads from opting to operate flexibly when doing so could be beneficial for the load and the system.",
+      "concern": "Curtailment rules must be workable for data center operations to drive uptake",
+      "bins": [
+        "pr:flex",
+        "topic:curtailment-design"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Although Google agrees that the Commission has jurisdiction over the actual interconnection of large loads to the transmission system, it is important not to overstate the practical impact of that conclusion in the broader context of large load integration issues. Because states have exclusive jurisdiction over the rates, terms, and conditions of retail sales, every large load interconnection in the country will require active state involvement.",
+      "concern": "FERC has interconnection jurisdiction but states retain retail authority, requiring coordination",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:federal-state-jurisdiction"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "The substantive reforms discussed above that Google is advocating for in this pleading fall on the relatively uncontroversial end of the spectrum. Accordingly, those reforms not only minimize strain on the existing grid, but they also minimize jurisdictional friction between the Commission and the states, which Google believes will further help ensure their effectiveness, particularly in the near term.",
+      "concern": "Google's preferred reforms are less jurisdictionally contested, easing near-term implementation",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:federal-state-jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Holistic joint load-generation study",
+      "stance": "support",
+      "description": "Google argues that studying large loads and associated generation together, rather than in isolation, is essential to identify efficient network upgrades and reduce interconnection timelines. The current reactive, siloed approach produces piecemeal infrastructure that cannot keep pace with demand.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cut upgrade costs via efficient sizing",
+      "stance": "support",
+      "description": "Google supports sizing network upgrades and transmission service based on actual injection and withdrawal rights rather than gross load. This approach sends better price signals to developers and reduces unnecessary upgrade costs for ratepayers.",
+      "quote_ids": [
+        1,
+        2,
+        7
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Expedite co-location study pathway",
+      "stance": "support",
+      "description": "Google supports an expedited, coordinated study process for loads and generation behind the same point of interconnection. Co-location minimizes dependence on constrained transmission corridors and raises fewer jurisdictional questions than standalone load interconnection.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Incentivize voluntary curtailable load service",
+      "stance": "support",
+      "description": "Google supports creating an optional expedited interconnection pathway for loads willing to curtail during system stress. Research cited by Google shows that even a 0.25% annual curtailment rate could accommodate 76 GW of new load, and flexible connections in PJM could cut wait times by three to five years.",
+      "quote_ids": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Expedite electrically proximate generation pairing",
+      "stance": "support",
+      "description": "Google endorses an optional, time-limited expedited study path for generation electrically proximate to a new large load, modeled on SPP's HILLGA proposal. The pathway must be technology neutral, open to storage, and must not block loads that cannot find a proximate generator.",
+      "quote_ids": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint load and generation studies",
+      "stance": "support",
+      "description": "Google agrees with the DOE ANOPR framing that load and generation interconnection requests that are related should be studied together, aligning project timelines and reducing piecemeal upgrade decisions.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC has authority, states keep retail role",
+      "stance": "mixed",
+      "description": "Google accepts FERC's interconnection jurisdiction but cautions against overstating it. States retain exclusive authority over retail rates and must be actively involved in every large load interconnection. Google's preferred reforms cluster at the less contested end of the jurisdictional spectrum.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Net-load rights for hybrid facilities",
+      "stance": "support",
+      "description": "Google agrees with CAISO that transmission service for co-located facilities should be based on net injection and withdrawal rights, not gross load. This correctly incentivizes developers to right-size their requests and avoids unnecessary upgrades.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited interconnection pathways",
+      "stance": "support",
+      "description": "Google urges the Commission to act promptly to create expedited interconnection pathways for co-located, electrically proximate, and curtailable configurations. Study timelines of 90 days and defined negotiation windows are recommended.",
+      "quote_ids": [
+        8,
+        12
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM flexible connection model",
+      "stance": "neutral",
+      "description": "Google cites Princeton ZERO Lab research showing that a flexible grid connection combined with a bring-your-own-capacity framework in PJM could cut interconnection wait times by three to five years with minimal curtailment burden.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:transmission-investment",
+      "name": "Transmission investment as the core fix",
+      "stance": "support",
+      "description": "Google frames inadequate and siloed transmission planning as the root cause of interconnection delays and rising energy costs. Long-term, the Commission must support holistic regional transmission planning that accounts for both load and generation growth.",
+      "quote_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "key": "topic:technology-neutrality",
+      "name": "Technology-neutral expedited paths",
+      "stance": "support",
+      "description": "Google insists that any fast-track interconnection pathway must treat co-location, flexible load, and storage on equal footing. A pathway that favors one resource type over another would be arbitrary and could distort investment decisions.",
+      "quote_ids": [
+        5,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:curtailment-design",
+      "name": "Workable curtailment rule design",
+      "stance": "support",
+      "description": "Google argues that curtailment rules must reflect how data centers actually operate. Rules that are too onerous or impractical will deter participation and undercut the grid benefits that flexible load service is meant to deliver.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:federal-state-jurisdiction",
+      "name": "Federal-state jurisdictional balance",
+      "stance": "mixed",
+      "description": "Google accepts FERC's authority over interconnection to the transmission system but stresses that states retain exclusive retail regulatory authority. Google argues its preferred reforms sit at the less jurisdictionally contested end of the spectrum, minimizing friction between federal and state regulators.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jointstudy",
+      "jurisdiction",
+      "hybridrights",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
