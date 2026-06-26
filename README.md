@@ -29,7 +29,11 @@ Built for an energy-regulatory audience. Six tabs:
    read-in-full flagship comments with a stance-per-reform-category breakdown. Comment bodies
    are committed under `sources/comments/files/<accession>__<org-slug>/` (the path names the submitter) and
    validated by `tools/validate-comments.py`; the tab's data is generated from the manifest + extracted
-   texts by `tools/build-comments-page-data.mjs` into `docs/js/comments-data.js`.
+   texts by `tools/build-comments-page-data.mjs` into `docs/js/comments-data.js`, plus one small
+   bin-detail file per audited letter into `docs/data/comments/<accession>.json` — lazy-loaded when a
+   row's "Read the audited analysis" is opened, to show each position's description and the verbatim
+   quotes behind it (the audit trail). The quotes are too heavy (~1.8 MB across 268 letters) to embed
+   in the up-front payload, so they are fetched on demand.
 6. **Discourse**: stakeholder reception, named commentary across the political spectrum, and trade-press
    narratives (with a pointer to the Comments tab for the full filing breakdown).
 
@@ -46,7 +50,7 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 31 tests across both suites
+node --test tests/*.test.mjs   # 47 tests across the suites
 ```
 
 Two suites, no dependencies:
@@ -61,6 +65,10 @@ Two suites, no dependencies:
   each directive cite links to a PDF page that carries its quote, that every Discourse commentary quote
   matches captured evidence in `sources/voices-evidence.json`, and that `docs/llms.txt` is in sync with
   `data.js` (regenerate with `node tools/build-llms.mjs`).
+- `tests/comment-summaries.test.mjs` + `tests/comment-detail.test.mjs`: the auditable v2 comment
+  summaries and their generated bin-detail files — every quote verbatim in its source, controlled
+  vocabulary, count floors, and each `docs/data/comments/<acc>.json` traces bin-for-bin and
+  quote-for-quote back to `sources/comments/summaries-v2/` (a stale rebuild fails loud).
 
 ## Deploy (GitHub Pages)
 
