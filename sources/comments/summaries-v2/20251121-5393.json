@@ -1,0 +1,286 @@
+{
+  "accession": "20251121-5393",
+  "filer": "Alliant Energy Corporate Services, Inc.",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5393__Alliant-Energy-Corporate-Services-Inc/Comments of AECS under Docket No. RM26-4.txt",
+  "overall_summary": "Alliant Energy, a transmission-dependent utility in MISO, supports efficient large load interconnection but urges the Commission to raise the minimum threshold to 100 MW, reject load-generation netting in favor of expedited study processes like MISO's ERAS, and adopt gross load standards for both transmission and ancillary services at hybrid facilities. The filing also calls for flexible bilateral curtailment agreements, deposit and readiness requirements tailored to load customers, and grandfathering of projects already in progress.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Alliant Energy strongly recommends that the Commission increase the minimum applicability threshold from 20 MW to at least 100 MW.",
+      "concern": "Raise threshold to 100 MW to focus rules on truly large loads",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Such a low threshold would unnecessarily draw numerous smaller, less impactful projects into the interconnection process, creating backlogs, congestion, and delays that undermine the very objectives of the ANOPR.",
+      "concern": "20 MW threshold would flood queue with smaller projects and cause delays",
+      "bins": [
+        "aq:threshold",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "it is critical for the Commission to recognize that simply assuming generation and load offset each other is insufficient and could jeopardize reliability, affordability, and customer interests.",
+      "concern": "Netting assumption ignores operational realities and risks reliability",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Netting assumes that load and generation at the same point of interconnection can offset one another for transmission planning purposes, but this oversimplification ignores critical operational realities.",
+      "concern": "Opposes netting as an oversimplification that understates system needs",
+      "bins": [
+        "aq:jointstudy",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Expedited interconnection processes like ERAS—not netting—are the right solution to integrate large loads efficiently and maintain a robust, reliable grid.",
+      "concern": "Recommends expedited study processes over netting to handle large load growth",
+      "bins": [
+        "aq:jointstudy",
+        "aq:expedited",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Alliant Energy supports implementing study deposits requirements for large load interconnection studies, as no such framework currently exists in MISO.",
+      "concern": "Supports study deposits to filter speculative projects from the MISO queue",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "a one-size-fits-all approach would be counterproductive.  Large load interconnection processes vary across transmission providers, and imposing uniform requirements risks disrupting effective practices already in place.",
+      "concern": "Readiness requirements should be flexible, not uniform across all transmission providers",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "the Commission should adopt a gross load approach for both, allowing exceptions only if supported by the utility and approved by the state regulator.",
+      "concern": "Gross load standard should apply to both transmission and ancillary services at hybrid facilities",
+      "bins": [
+        "aq:hybridrights",
+        "pr:cost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Alliant Energy cautions that netting for ancillary services would understate system obligations, leading to insufficient reserves, jeopardizing reliability, and increasing costs for other customers.",
+      "concern": "Netting for ancillary services understates reserves and shifts costs to other customers",
+      "bins": [
+        "aq:hybridrights",
+        "pr:cost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "curtailable large loads should not be required to participate in a mandatory formal demand response program as it would unnecessarily hinder and discourage innovative solutions.",
+      "concern": "Opposes mandatory demand response programs for curtailable large loads",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Alliant Energy recommends that the Commission allow for flexible, bilateral agreements between large load customers and transmission providers.",
+      "concern": "Supports bilateral curtailment agreements tailored to each customer and grid need",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "large loads that have begun the formal interconnection process with the relevant transmission owner or provider by the rule's effective date should continue without having to backtrack to meet new requirements.",
+      "concern": "Existing projects in progress should be grandfathered under current rules",
+      "bins": [
+        "pr:study",
+        "topic:transition-grandfathering"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the Commission should continue its long-standing precedent, most recently reiterated in Order No. 2023, to evaluate obligations that result from any final rule in this proceeding under the independent entity variation standard for ISOs/RTOs and the consistent with or superior to standard for non-ISO/RTO transmission providers.",
+      "concern": "Apply existing compliance flexibility standards to avoid overly prescriptive federal rules",
+      "bins": [
+        "topic:state-federal-deference"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "The Commission should avoid using this term in the final rule, as it may create confusion with existing hybrid definitions in tariffs and other contexts.",
+      "concern": "The term 'hybrid facilities' conflicts with existing tariff definitions and should be dropped",
+      "bins": [
+        "aq:hybridrights",
+        "topic:terminology-clarity"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:threshold",
+      "name": "Raise Threshold to 100 MW",
+      "stance": "support",
+      "description": "Alliant Energy supports raising the applicability threshold from 20 MW to at least 100 MW. A 20 MW floor would pull in smaller, less impactful loads, creating backlogs and defeating the ANOPR's efficiency goals. A higher threshold focuses limited study resources on the largest, most grid-impactful projects.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Oppose Load-Generation Netting",
+      "stance": "oppose",
+      "description": "Alliant Energy opposes the ANOPR's netting proposal, arguing it oversimplifies operational realities because generation is intermittent while load must be served at all times. The filing recommends expedited study tracks like MISO's ERAS instead of netting as the correct way to integrate large loads quickly without understating system needs.",
+      "quote_ids": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Deposits with Provider Flexibility",
+      "stance": "support",
+      "description": "Alliant Energy supports study deposit requirements for large load interconnections, noting no such framework exists today in MISO. It endorses Order No. 2023's generator deposit structure as a starting point but calls for flexibility so transmission providers can tailor deposit sizes to load characteristics rather than adopting a one-size-fits-all rule.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Gross Load for Hybrid Facilities",
+      "stance": "support",
+      "description": "Alliant Energy argues that hybrid facilities should be subject to a gross load standard for both transmission service and ancillary services. Netting ancillary services against co-located generation would understate reserve obligations, shift costs to other customers, and risk system reliability during contingencies when generation is unavailable.",
+      "quote_ids": [
+        8,
+        9,
+        14
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Studies, Bilateral Curtailment",
+      "stance": "support",
+      "description": "Alliant Energy endorses expedited study treatment for curtailable large loads but opposes mandatory demand response program participation. It recommends bilateral agreements between customers and transmission providers that define curtailment amounts, notice periods, and duration, giving flexibility to qualify for expedited study without rigid program constraints.",
+      "quote_ids": [
+        5,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study Clarity and Queue Integrity",
+      "stance": "support",
+      "description": "Alliant Energy supports study reforms that reduce queue backlogs, including deposits and readiness requirements, but insists study processes must be flexible across regions and grandfathered for projects already underway. It argues that poorly designed uniform rules would create delays rather than reduce them.",
+      "quote_ids": [
+        2,
+        3,
+        5,
+        7,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Fair Cost Allocation, No Cost Shifts",
+      "stance": "support",
+      "description": "Alliant Energy insists that hybrid facility costs for both transmission and ancillary services be allocated on a gross load basis. Netting would understate system obligations and shift costs to existing customers, conflicting with Commission precedent under Order No. 888 and the MISO OATT.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Reliability Safeguards for Co-location",
+      "stance": "mixed",
+      "description": "Alliant Energy is cautiously open to co-located generation and load sharing an interconnection point but insists the Commission require bidirectional flow controls, separate metering, relay schemes, and full NERC compliance. It warns that assuming load and generation offset each other jeopardizes reliability when generation is absent.",
+      "quote_ids": [
+        3,
+        4,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexible Curtailment Agreements",
+      "stance": "support",
+      "description": "Alliant Energy supports curtailment-based expedited treatment but opposes standardized demand response program mandates. Bilateral agreements that reflect each customer's operational constraints and grid needs are preferred, allowing participation without rigid program requirements that could deter innovative load management.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "topic:transition-grandfathering",
+      "name": "Grandfather In-Progress Projects",
+      "stance": "support",
+      "description": "Alliant Energy urges the Commission to protect projects already in the formal interconnection process from having to restart under new rules. Restarting would cause delays, drive up costs, and undermine customer confidence, while grandfathering preserves good-faith investments made under current procedures.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:state-federal-deference",
+      "name": "Preserve State and ISO Flexibility",
+      "stance": "support",
+      "description": "Alliant Energy asks the Commission to apply the independent entity variation and consistent-with-or-superior-to standards from Order No. 2023 when evaluating compliance filings, avoiding overly prescriptive mandates that would conflict with state utility commissions and existing regional processes.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:terminology-clarity",
+      "name": "Clarify or Drop Hybrid Terminology",
+      "stance": "support",
+      "description": "Alliant Energy recommends the Commission avoid the term 'hybrid facilities' in the final rule because it conflicts with existing tariff definitions, and instead describe interconnection options at a high level to allow flexibility as experience with large load interconnections grows.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

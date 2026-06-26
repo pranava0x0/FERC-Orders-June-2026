@@ -1,0 +1,221 @@
+{
+  "accession": "20251121-5185",
+  "filer": "Maine Office of the Public Advocate",
+  "org_type": "consumer_advocate",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5185__Maine-Office-of-the-Public-Advocate/2025-11-21_Maine OPA Comments_RM26-4.txt",
+  "overall_summary": "Maine OPA supports the Secretary of Energy's proposal for large load interconnection reforms but urges the Commission to ensure that rules protect existing ratepayers through full cost responsibility from large loads for network upgrades, respect state jurisdiction over retail transactions, and include provisions to minimize impacts on wholesale market prices and transmission rates.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the Maine OPA supports the Secretary of Energy's proposal to implement reforms to ensure the timely and orderly interconnection of large loads to the interstate transmission system.",
+      "concern": "Overall support for Secretary's large load interconnection proposal",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the Maine OPA urges the Commission to proceed with caution to ensure that any final rule protects existing ratepayers by requiring large loads to bear the full cost of necessary network upgrades, by respecting existing state jurisdiction over transactions that are fundamentally retail in nature, and by including provisions that minimize any adverse impacts on wholesale market prices and transmission rates from large load interconnection.",
+      "concern": "Three-part requirement: full cost responsibility, state jurisdiction protection, market impact mitigation",
+      "bins": [
+        "pr:cost",
+        "pr:proximate",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "load and hybrid facilities should be responsible for 100% of the network upgrades that they are assigned through interconnection studies.",
+      "concern": "Large loads must bear full cost of network upgrades",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Any crediting mechanism, by necessity, results in the interconnecting entity being relieved of bearing 100% of cost of network upgrades, thus transferring the cost responsibility for the upgrades to other ratepayers.",
+      "concern": "Crediting mechanisms improperly shift upgrade costs to existing ratepayers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the Commission should limit the expansion of its jurisdiction relating to these large load customer to interconnection.",
+      "concern": "FERC jurisdiction should be limited to interconnection process",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "These large loads will be end use customers engaging in retail transactions. Such customers are currently and should remain subject to state jurisdiction regarding the recovery of retail costs.",
+      "concern": "Large loads are retail customers; retail costs remain under state jurisdiction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The State of Maine has a number of existing large industrial loads interconnected directly to the high voltage the transmission system. These loads are appropriately treated as retail customers and are required to pay a retail rate.",
+      "concern": "Maine experience shows large industrial loads can be treated as retail customers",
+      "bins": [
+        "aq:jurisdiction",
+        "rg:isone"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Absent the corresponding development of supply resources, the presence of new large loads will drive up market clearing prices for both energy and capacity in these wholesale markets, increasing retail prices for other customers.",
+      "concern": "Large loads without matching supply can increase wholesale prices and retail rates",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "any interconnection process adopted by the Commission for large loads should parallel the process applied to interconnecting generators.",
+      "concern": "Large load interconnection process should match generator process timeline",
+      "bins": [
+        "pr:study",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The process for interconnecting large loads should not be a more accelerated process than that for generators. Doing so would likely trigger price increases for other customers if new loads are not matched with new generation.",
+      "concern": "Expedited large load interconnection without matching generation increases prices",
+      "bins": [
+        "aq:expedited",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the Maine OPA also supports the recommendation to allow and/or incentivize large load customers to participate in curtailment, load flexibility, and other demand response mechanisms.",
+      "concern": "Support for large load participation in flexibility and demand response",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Such mechanisms allow these new large loads to minimize their impact on both transmission rates and wholesale market prices, as well as to reduce the cost of interconnection and the ongoing cost of electricity to these customers.",
+      "concern": "Flexibility mechanisms reduce costs and market impacts for all customers",
+      "bins": [
+        "pr:flex",
+        "pr:cost",
+        "pr:proximate"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Full cost responsibility for upgrades",
+      "stance": "support",
+      "description": "Maine OPA strongly supports requiring large loads to bear the full cost of network upgrades they trigger. The filer explicitly opposes any crediting mechanism that would transfer upgrade costs to existing ratepayers.",
+      "quote_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Market price and rate impact mitigation",
+      "stance": "support",
+      "description": "Maine OPA supports measures to minimize adverse impacts on wholesale market prices and transmission rates. The filer emphasizes that large loads without matching generation can drive up energy and capacity prices, affecting all customers, and urges cautious implementation.",
+      "quote_ids": [
+        2,
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Load flexibility and demand response",
+      "stance": "support",
+      "description": "Maine OPA supports incentivizing large loads to participate in curtailment, load flexibility, and demand response mechanisms as a way to minimize their impact on transmission rates and wholesale prices.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Orderly interconnection process",
+      "stance": "support",
+      "description": "Maine OPA supports the Secretary's proposal for timely and orderly interconnection reforms and urges that the large load process parallel the generator interconnection timeline to avoid accelerated deployment.",
+      "quote_ids": [
+        1,
+        9
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "State jurisdiction over retail transactions",
+      "stance": "support",
+      "description": "Maine OPA urges FERC to limit its jurisdiction to the interconnection process itself and to respect existing state authority over retail cost recovery, billing, metering, and public policy costs. Maine's experience with large industrial loads treated as retail customers demonstrates this boundary works.",
+      "quote_ids": [
+        2,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Interconnection cost assignment",
+      "stance": "support",
+      "description": "Maine OPA supports assigning 100% of network upgrade costs to the large load facilities causing them, rejecting any offsets or credits.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Interconnection timeline parity",
+      "stance": "oppose",
+      "description": "Maine OPA opposes expedited interconnection processes for large loads. The filer warns that accelerating large load interconnection beyond the generator timeline risks price increases if new loads arrive without matching supply.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "rg:isone",
+      "name": "ISO New England region",
+      "stance": "neutral",
+      "description": "Maine OPA specifically references ISO New England as a restructured market where no entity has direct responsibility to plan and construct generation, making resource adequacy a key concern for large load interconnection.",
+      "quote_ids": [
+        7
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "upgradecost",
+      "expedited"
+    ],
+    "pr": [
+      "cost",
+      "proximate",
+      "flex",
+      "study"
+    ],
+    "rg": [
+      "isone"
+    ]
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "accession": "20251205-5178",
+  "filer": "Long Island Power Authority",
+  "org_type": "transmission_owner",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5178__Long-Island-Power-Authority/2025-12-05 - LIPA Reply Comments on Large Load ANOPR FINAL.txt",
+  "overall_summary": "LIPA supports rigorous technical assessments for large load interconnections to mitigate oscillation, stability, and control interaction risks but opposes uniform national standards, arguing transmission owners must retain regional and location-specific flexibility to adapt requirements to their constrained systems.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Certain types of large loads, including data centers, are known to have repeated and large cyclic variations of load demand with periods ranging from a few seconds to a small fraction of a second. For example, artificial intelligence data centers in the training mode of operation are known to exhibit large cyclic load variations. This cyclic stimulus, if it coincides with a natural frequency of a grid, can initiate oscillations and cause them to grow to potentially damaging magnitudes.",
+      "concern": "Large loads can excite grid oscillations at natural frequencies, risking system damage",
+      "bins": ["topic:oscillation-risk"]
+    },
+    {
+      "id": 2,
+      "text": "One consequence of oscillatory behavior of large loads is the torsional oscillations of the shaft systems of large turbine-generators. These oscillations typically range in frequency from 10-30 Hz (oscillations per second), which are atypical for a power system. Continued torsional oscillations reduce the mechanical life of the affected generator and, if large enough, can cause immediate fracture of the shaft, placing critical generation resources out of service for years.",
+      "concern": "Torsional oscillations from large loads can mechanically damage generator shafts",
+      "bins": ["topic:oscillation-risk"]
+    },
+    {
+      "id": 3,
+      "text": "Another consequence of oscillatory behavior of large load is generator rotor angle swings across a portion of the bulk transmission system. These oscillations tend to have periods of a few seconds. Continued stimulation of such oscillations, injected at an adverse location, can potentially cause system oscillations to build to the point where the transmission system may separate, potentially leading to wide-scale power blackout.",
+      "concern": "Rotor angle swings from large loads can cascade to system separation or blackout",
+      "bins": ["topic:oscillation-risk"]
+    },
+    {
+      "id": 4,
+      "text": "Require the large load interconnection study process to screen for, and assess, the potential for adverse oscillatory behaviors that may require physical (i.e., equipment upgrades) or operational measures to avoid, minimize and mitigate potentially adverse impacts upon the grid; and Allow interconnecting transmission owners to adopt general and locationally specific protection measures and equipment standards necessary to limit adverse oscillatory behavior from large loads and co-located loads.",
+      "concern": "Interconnection studies must assess oscillatory risks and allow location-specific protections",
+      "bins": ["pr:study", "pr:proximate"]
+    },
+    {
+      "id": 5,
+      "text": "a one-size-fits-all standard for such measures is short-sighted and increases risk to the grid. Transmission owners and operators must have the flexibility to adapt and adopt prevention and mitigation measures within their interconnection procedures and standards, reflective of their own system's topology.",
+      "concern": "Uniform ride-through standards increase grid risk; flexibility by transmission owner needed",
+      "bins": ["pr:flex"]
+    },
+    {
+      "id": 6,
+      "text": "Accordingly, frequency and protection measures as well as ride-through standards for large loads cannot be a static, universal standard or study metric. Rather, the transmission owner and operators must have the ability to adapt these standards in a manner that provides an optimal balance of the objectives across all load facilities within its interconnected grid.",
+      "concern": "Ride-through standards must be adaptive to each transmission owner's topology and constraints",
+      "bins": ["pr:flex"]
+    },
+    {
+      "id": 7,
+      "text": "the Commission should ensure that any forthcoming rule provides for regional flexibility on ride through standards in order to meet the needs of a particular system.",
+      "concern": "Federal rule must preserve regional flexibility for ride-through standards",
+      "bins": ["pr:flex"]
+    },
+    {
+      "id": 8,
+      "text": "If a large load facility is susceptible to rapid disconnection or load change in response to a system disturbance, then the large load interconnection study process should assess the potential system impact resulting from such abrupt changes; and As part of the planning, design and construction of interconnection facilities for large loads, transmission owners should have the right to require load to implement and maintain disturbance ride through capability that is necessary to ensure system stability and security.",
+      "concern": "Studies must assess load tripping impacts; transmission owners must retain authority to mandate ride-through",
+      "bins": ["pr:study", "pr:flex"]
+    },
+    {
+      "id": 9,
+      "text": "there is substantial reason to expect that interconnection of large-load facilities dominated by power electronic loads requires specific attention to potential control interactions with other systems on the grid. The relevance of this issue and the necessary interconnection requirements and restrictions are inherently location-specific based on the strength of the grid and the proximity to potentially interacting systems.",
+      "concern": "Power-electronic load control interactions are location-specific and require regional flexibility",
+      "bins": ["pr:proximate", "topic:control-interactions"]
+    },
+    {
+      "id": 10,
+      "text": "The large load interconnection study process should assess the potential system impacts resulting from closed loop instability in the system and identify avoidance, minimization and mitigation measures that would reduce the risks of significant adverse impacts to the grid. Transmission owners should have the flexibility to identify locationally specific load facility oscillatory dampening characteristics that are necessary for system security and included in the development of the large load's interconnection facilities.",
+      "concern": "Studies must assess closed-loop control instability; transmission owners must set location-specific damping requirements",
+      "bins": ["pr:study", "pr:proximate"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "topic:oscillation-risk",
+      "name": "Large load oscillation hazards",
+      "stance": "support",
+      "description": "LIPA warns that large loads such as AI data centers exhibit cyclic demand variations that can excite grid natural frequencies, causing torsional oscillations that damage generator shafts or rotor angle swings that cascade to blackout. These risks must be screened in interconnection studies.",
+      "quote_ids": [1, 2, 3]
+    },
+    {
+      "key": "pr:study",
+      "name": "Rigorous interconnection study assessment",
+      "stance": "support",
+      "description": "LIPA supports comprehensive large load interconnection studies that screen for oscillatory behaviors, assess system impacts of load tripping, and evaluate closed-loop control instability. Studies must be tailored to location-specific grid conditions.",
+      "quote_ids": [4, 8, 10]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Regional and local standards flexibility",
+      "stance": "support",
+      "description": "LIPA opposes uniform national ride-through and frequency standards as short-sighted and grid-risky, insisting transmission owners must adapt requirements to their own system topology. One-size-fits-all rules either become too permissive (compromising security) or too restrictive (making loads economically infeasible).",
+      "quote_ids": [5, 6, 7, 8]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Location-specific control interaction assessment",
+      "stance": "support",
+      "description": "Power-electronic large load control interactions with grid systems such as inverter-based resources are inherently location-specific, depending on grid strength and proximity to other systems. Studies and requirements must account for these interactions and regions must retain flexibility to protect their systems.",
+      "quote_ids": [4, 9, 10]
+    },
+    {
+      "key": "topic:control-interactions",
+      "name": "Closed-loop power-electronic control interactions",
+      "stance": "support",
+      "description": "LIPA emphasizes that large power-electronic loads maintain constant power via control loops with negative resistance characteristics, which can dampen or amplify grid oscillations depending on grid strength and proximity to other controlled systems like HVDC and FACTS. This requires location-specific assessment and mitigation.",
+      "quote_ids": [9, 10]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": ["study", "flex", "proximate"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

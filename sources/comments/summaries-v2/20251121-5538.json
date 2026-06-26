@@ -1,0 +1,160 @@
+{
+  "accession": "20251121-5538",
+  "filer": "Governor Josh Shapiro and Governor Glenn Youngkin",
+  "org_type": "elected",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5538__Governor-Josh-Shapiro-and-Governor-Glenn-Youngkin/2025-11-21 Comment on ANOPR.txt",
+  "overall_summary": "The governors of Pennsylvania and Virginia support the DOE proposal's core framework, endorsing incentives for LLAs to invest in nearby generation and take responsibility for upgrade costs, but raise concerns about the 20 MW threshold encroaching on state jurisdiction. They call for FERC to develop national standards for RTO load forecasts and to address interconnection queue delays beyond the generator-paired-with-LLA context.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "we strongly believe it is essential for states to retain significant jurisdiction in this area, we recognize that the timely interconnection of certain LLAs is a matter of national security and national economic wellbeing.",
+      "concern": "State jurisdiction must be preserved even as national LLA interconnection is treated as a security priority.",
+      "bins": ["aq:jurisdiction"]
+    },
+    {
+      "id": 2,
+      "text": "we believe that the limit as proposed would substantially impact traditional state jurisdiction over loads.",
+      "concern": "The 20 MW threshold is too low and would pull too many loads into federal jurisdiction.",
+      "bins": ["aq:threshold", "aq:jurisdiction"]
+    },
+    {
+      "id": 3,
+      "text": "We look forward to further public participation on what characteristics and size best serve to implicate shared state and federal jurisdiction in this regard.",
+      "concern": "The governors want further public process before the threshold is fixed.",
+      "bins": ["aq:threshold", "aq:jurisdiction"]
+    },
+    {
+      "id": 4,
+      "text": "this framework would provide strong incentives for LLAs to invest in nearby new energy generation and storage resources, to curtail during tight market conditions, and to take responsibility for their network upgrade costs.",
+      "concern": "The governors support the proposal's cost-allocation and co-location incentive structure.",
+      "bins": ["pr:cost", "pr:colo", "pr:proximate"]
+    },
+    {
+      "id": 5,
+      "text": "It would also similarly require that hybrid facilities be studied more efficiently.",
+      "concern": "Support for more efficient study of hybrid generation and load facilities.",
+      "bins": ["aq:hybridrights", "pr:study"]
+    },
+    {
+      "id": 6,
+      "text": "this proposal could be even more impactful if FERC were to develop national standards and guidelines for RTO LLA forecasts.",
+      "concern": "FERC should set national standards for RTO load forecasting to improve accuracy.",
+      "bins": ["pr:study", "topic:load-forecast-standards"]
+    },
+    {
+      "id": 7,
+      "text": "these forecasts have failed to account for the common practice of a single LLA applying for interconnection in multiple utility service territories.",
+      "concern": "Load forecasts are inflated because a single LLA can apply across multiple territories.",
+      "bins": ["pr:study", "topic:load-forecast-standards"]
+    },
+    {
+      "id": 8,
+      "text": "some recent load forecasts have markedly exceeded real-world constraints on load construction, such as the available supply of semiconductor chips, risking significant overbuild and associated cost increases for consumers.",
+      "concern": "Inaccurate load forecasts risk costly overbuilding of grid infrastructure.",
+      "bins": ["pr:study", "pr:cost", "topic:load-forecast-standards"]
+    },
+    {
+      "id": 9,
+      "text": "we also respectfully suggest that FERC examine interconnection study processes, and whether it should be considered not just and reasonable for an interconnection request to take longer than six months, as recently requested by thirteen governors of both parties.",
+      "concern": "Interconnection study timelines over six months should not be accepted as just and reasonable.",
+      "bins": ["pr:study", "aq:expedited"]
+    },
+    {
+      "id": 10,
+      "text": "a more general solution to interconnection queue delays is critical to enable the important investments in manufacturing, AI, and infrastructure that are needed for the United States to compete and win.",
+      "concern": "Queue reform must go beyond LLA-specific fixes to support broader economic investment.",
+      "bins": ["pr:study", "rg:pjm", "topic:queue-reform-scope"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "State jurisdiction must be preserved",
+      "stance": "mixed",
+      "description": "The governors accept that LLA interconnection has national security dimensions but insist states must retain significant authority. They explicitly endorse FERC's existing distinctions protecting state authority over retail sales, siting, and load facilities not directly on the transmission system.",
+      "quote_ids": [1, 2, 3]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20 MW threshold too broad",
+      "stance": "oppose",
+      "description": "The governors argue the 20 MW threshold as proposed would substantially pull loads that have traditionally been regulated by states into federal jurisdiction. They call for further public process to settle the right size and characteristics for triggering shared jurisdiction.",
+      "quote_ids": [2, 3]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Efficient study of hybrid facilities",
+      "stance": "support",
+      "description": "The governors support requiring that hybrid generation-plus-load facilities be studied more efficiently, consistent with the bipartisan PJM governors' proposal.",
+      "quote_ids": [5]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Six-month study timeline standard",
+      "stance": "support",
+      "description": "The governors support the position, shared with thirteen bipartisan governors, that interconnection requests taking longer than six months should not be deemed just and reasonable.",
+      "quote_ids": [9]
+    },
+    {
+      "key": "pr:study",
+      "name": "Improve study processes and forecasts",
+      "stance": "support",
+      "description": "The governors call for national RTO load forecast standards to address inaccuracies caused by LLAs applying across multiple territories, and for a general fix to interconnection queue delays rather than only a targeted LLA solution.",
+      "quote_ids": [5, 6, 7, 8, 9, 10]
+    },
+    {
+      "key": "pr:cost",
+      "name": "LLAs bear upgrade costs",
+      "stance": "support",
+      "description": "The governors support the framework's requirement that LLAs take responsibility for their network upgrade costs and note that inaccurate forecasts risk overbuild that drives up costs for consumers.",
+      "quote_ids": [4, 8]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Incentives for nearby generation investment",
+      "stance": "support",
+      "description": "The governors back the proposal's incentives for LLAs to invest in nearby new generation and storage resources and to curtail during tight market conditions.",
+      "quote_ids": [4]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "LLAs invest in proximate resources",
+      "stance": "support",
+      "description": "The governors support requiring LLAs to invest in nearby energy generation and storage as part of the interconnection framework, mirroring the bipartisan PJM governors' proposal.",
+      "quote_ids": [4]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM bipartisan governor alignment",
+      "stance": "support",
+      "description": "The governors reference the bipartisan PJM governors' LLA proposal pending before the PJM Board of Managers and frame their federal comments as consistent with that regional effort.",
+      "quote_ids": [10]
+    },
+    {
+      "key": "topic:load-forecast-standards",
+      "name": "National RTO forecast standards needed",
+      "stance": "support",
+      "description": "The governors argue that FERC's national vantage point positions it to set uniform forecast standards that account for LLAs applying across multiple territories and for real-world supply constraints like semiconductor chip availability.",
+      "quote_ids": [6, 7, 8]
+    },
+    {
+      "key": "topic:queue-reform-scope",
+      "name": "Queue reform scope beyond LLAs",
+      "stance": "support",
+      "description": "The governors argue that fixing interconnection delays only for generators paired with LLAs is insufficient; a general queue solution is needed to support manufacturing, AI, and infrastructure investment.",
+      "quote_ids": [10]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction", "threshold", "hybridrights", "expedited"],
+    "pr": ["study", "cost", "colo", "proximate"],
+    "rg": ["pjm"]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

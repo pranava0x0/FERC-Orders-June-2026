@@ -1,0 +1,309 @@
+{
+  "accession": "20251121-5448",
+  "filer": "Southwest Power Pool Transmission Owner Group",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5448__Southwest-Power-Pool-Transmission-Owner-Group/RM26-4 20251121 ANOPR Comments of SPP TO Group - Final.txt",
+  "overall_summary": "The SPP TO Group supports the ANOPR's core objectives but urges the Commission to preserve regional flexibility so that SPP's already-developed HILL and HILLGA proposals can proceed without delay. The group calls for a no-netting rule that charges large loads for full gross transmission withdrawals regardless of co-located generation, and opposes granting large load customers an option to build network upgrades, arguing that transmission owners are better positioned to construct facilities quickly.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "it would be a serious error to force the region to pause this work to await a nationwide rule.",
+      "concern": "A national rulemaking should not delay SPP's already-developed large load interconnection proposals.",
+      "bins": [
+        "pr:study",
+        "topic:regional-flexibility"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "any nationwide rule addressing interconnection practices should expressly permit regional flexibility, particularly for regions like SPP that have already been working diligently to advance policies consistent with those of the Commission and DOE.",
+      "concern": "Final rule should include an independent entity variation standard allowing RTOs to adapt pro forma requirements to regional conditions.",
+      "bins": [
+        "topic:regional-flexibility"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the characteristics of regions such as SPP and MISO that are largely composed of vertically-integrated and investor-owned utilities are materially different than other regions, such as PJM, that include numerous states with retail open access policies as well as several wires-only transmission and distribution utilities.",
+      "concern": "Structural differences between SPP and MISO versus PJM justify region-specific interconnection rules.",
+      "bins": [
+        "rg:spp",
+        "rg:miso",
+        "rg:pjm",
+        "topic:regional-flexibility"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "It is essential that any large load rulemaking facilitate the ability to serve new loads with grid-connected generation in a manner similar to the SPP HILL Proposal.",
+      "concern": "Rules should allow load and nearby grid-connected generation to be studied and connected together, not limited to the same bus.",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the load also may be located within a specified number of buses to ensure that system impacts will be limited to a local area.",
+      "concern": "Proximity rules for joint study should be defined by electrical distance in buses, not only by same-point-of-interconnection.",
+      "bins": [
+        "aq:jointstudy",
+        "pr:colo",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the Commission should focus on facilitating the addition of grid-connected loads and generation with a full transmission charge for large loads regardless of the supply configuration.",
+      "concern": "Billing should be based on gross load withdrawals, not net of co-located generation output.",
+      "bins": [
+        "pr:cost",
+        "topic:no-netting"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "SPP's policy expressly requires separate transmission-voltage meters for the load and the generation and prohibits netting for billing.",
+      "concern": "Separate metering and a no-netting billing rule prevents cost shifts when on-site generation is unavailable.",
+      "bins": [
+        "pr:cost",
+        "topic:no-netting"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "This also avoids implicit cost shifts when the on-site generator is unavailable and the grid must stand ready to serve the entire facility.",
+      "concern": "Full gross-load transmission charges protect other customers from cross-subsidies caused by co-located generation availability risk.",
+      "bins": [
+        "pr:cost",
+        "topic:no-netting"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The SPP TO Group disagrees with this proposal and opposes allowing interconnection customers to build network upgrades identified in expedited large load studies except when agreed by the transmission owner in the affected transmission zone.",
+      "concern": "Large load customers should not receive a default option to build network upgrades; that right should remain with transmission owners.",
+      "bins": [
+        "aq:upgradecost",
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "allowing large transmission customers who seek expedited interconnection to construct the transmission facilities necessary to support their interconnection request conflicts with the core purpose of the ANOPR: i.e., to enable the interconnection of large new loads and hybrid facilities as quickly as feasible to support infrastructure critical to the nation's economy and security.",
+      "concern": "Granting a build option to inexperienced load customers would slow, not accelerate, interconnection.",
+      "bins": [
+        "aq:upgradecost",
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Large load interconnection customers are not public utilities and lack experience constructing or developing those facilities.",
+      "concern": "Load customers lack the regulatory status and construction expertise needed to build transmission infrastructure.",
+      "bins": [
+        "aq:upgradecost",
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "cost causers and beneficiaries—whether load or hybrid facilities—should be responsible for all the network costs they are assigned under the relevant study process.",
+      "concern": "Full cost responsibility for assigned network upgrades should apply to load and hybrid facilities alike.",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "an existing generation resource that intends to divert a material amount of its capacity to serve a new large load at the same location should first submit to a study by the transmission provider to determine whether the diversion of that generation capacity will undermine reliable transmission.",
+      "concern": "Partial suspension of existing generation for co-located load should require an SSR/RMR-type reliability study before proceeding.",
+      "bins": [
+        "pr:study",
+        "pr:colo",
+        "topic:partial-suspension"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Imposing sufficient upfront payments and penalties on new large loads and generators to prevent speculative or duplicative projects from seeking expedited interconnection procedures, while mitigating the risk of inappropriate cost shifts or stranded costs",
+      "concern": "Deposits and penalties should deter speculative queue entries under the expedited large load process.",
+      "bins": [
+        "aq:deposits"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "topic:regional-flexibility",
+      "name": "Preserve Regional Variation Rights",
+      "stance": "support",
+      "description": "The SPP TO Group argues that any final rule must include an explicit independent entity variation standard so that RTOs and ISOs, especially SPP, can maintain region-specific programs already under development. The group notes that SPP and MISO differ structurally from PJM in utility ownership and transmission topology, making one-size rules unworkable. Delaying or overriding SPP's pending HILL proposals would be a serious error.",
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Study of Load and Generation",
+      "stance": "support",
+      "description": "The group supports joint study of large loads and nearby generating facilities, and wants rules to allow the paired generator to sit within a defined number of electrical buses rather than requiring the same point of interconnection. This mirrors SPP's HILL framework, which allows up to two substations of separation for non-765 kV generators.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study Process Alignment",
+      "stance": "support",
+      "description": "The group endorses study processes that pair load and generation, evaluate reliability impacts of partial suspension, and avoid delaying regional proposals that already reflect ANOPR principles. Speed to market depends on rigorous but streamlined study procedures.",
+      "quote_ids": [
+        1,
+        4,
+        13
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Rules",
+      "stance": "support",
+      "description": "The group supports co-location frameworks that allow grid-connected generation within a defined electrical proximity to serve large loads, provided each is separately metered and transmission charges apply to gross load withdrawals. It also supports requiring an SSR/RMR study before an existing generator partially suspends to serve a co-located load.",
+      "quote_ids": [
+        4,
+        5,
+        13
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Electrical Proximity Definition",
+      "stance": "support",
+      "description": "The group wants the final rule to define proximity by bus count rather than requiring the same point of interconnection, consistent with SPP's HILL rule allowing generators up to two substations away from the load's local delivery facilities.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Full Gross-Load Transmission Charges",
+      "stance": "support",
+      "description": "The group supports charging large loads for full gross transmission withdrawals with no netting against co-located generation, to prevent cost shifts to other customers and to keep generation on the bulk electric system. It also supports 100% cost responsibility for assigned network upgrade costs, with a crediting mechanism whose term can vary by region.",
+      "quote_ids": [
+        6,
+        7,
+        8,
+        12
+      ]
+    },
+    {
+      "key": "topic:no-netting",
+      "name": "No-Netting Billing Rule",
+      "stance": "support",
+      "description": "The group calls for a federal no-netting rule that meters load and co-located generation separately and bills transmission on gross load withdrawal. Without this rule, loads are incentivized to avoid transmission charges through co-location, which shifts costs to other customers and reduces generation on the grid.",
+      "quote_ids": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Oppose Load Option to Build",
+      "stance": "oppose",
+      "description": "The group opposes granting large load customers a default option to construct network upgrades, arguing they lack the utility status, construction experience, and system knowledge needed to build transmission infrastructure quickly. Transmission owners are better positioned to complete construction in the most expeditious manner, and a load build option would undermine the ANOPR's speed goals.",
+      "quote_ids": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:option-to-build",
+      "name": "Oppose Load Build Rights",
+      "stance": "oppose",
+      "description": "The group specifically disagrees with the ANOPR's proposal to extend generator-style build options to large load interconnection customers. Load customers are not public utilities, lack construction expertise, and the proposal would slow rather than accelerate interconnection. Any such right should require transmission owner consent in the affected zone.",
+      "quote_ids": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Upfront Payments to Deter Speculation",
+      "stance": "support",
+      "description": "The group endorses requiring sufficient upfront payments and penalties on large loads and generators seeking expedited interconnection to prevent speculative or duplicative projects from clogging the queue.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "topic:partial-suspension",
+      "name": "Reliability Study Before Partial Suspension",
+      "stance": "support",
+      "description": "The group supports requiring an SSR/RMR-type study before an existing generator diverts material capacity to a co-located load, consistent with how organized markets already evaluate reliability impacts of generation retirements and capacity exports.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP Regional Context",
+      "stance": "neutral",
+      "description": "The filing centers on SPP's specific structural characteristics (vertically-integrated utilities, lower-voltage lines serving large geographic areas) and its pending HILL/HILLGA proposals as a model for the national rule.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO Structural Similarity to SPP",
+      "stance": "neutral",
+      "description": "The group notes that MISO shares SPP's characteristics of vertically-integrated utilities and lower transmission density, distinguishing both from PJM's retail-open-access structure.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Structural Contrast",
+      "stance": "neutral",
+      "description": "PJM is cited as a structurally distinct region with retail open access and wires-only utilities, illustrating why uniform national rules need regional variation provisions.",
+      "quote_ids": [
+        3
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jointstudy",
+      "upgradecost",
+      "deposits"
+    ],
+    "pr": [
+      "study",
+      "colo",
+      "proximate",
+      "cost"
+    ],
+    "rg": [
+      "spp",
+      "miso",
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

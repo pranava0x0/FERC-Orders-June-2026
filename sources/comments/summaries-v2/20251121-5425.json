@@ -1,0 +1,287 @@
+{
+  "accession": "20251121-5425",
+  "filer": "Clean Energy Buyers Association",
+  "org_type": "clean_energy",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5425__Clean-Energy-Buyers-Association/CEBA comments on Large Load ANOPR FINAL.txt",
+  "overall_summary": "CEBA, representing over 400 large energy-buying members, supports FERC proceeding with large load interconnection rulemaking but urges a higher 75 MW jurisdictional threshold, strict cost-causation allocation, joint load-and-generation studies, and voluntary pathways for co-location and hybrid flexibility. The filing opposes mandates for curtailment or dispatch of large loads and calls for protecting behind-the-meter systems from new federal oversight.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "if the Commission proceeds with a rulemaking in this docket, it will be critical for the Commission to explicitly seek comment on and clearly define the boundaries of its jurisdiction to ensure that any final rule rests on a solid legal foundation and is well-understood by industry stakeholders.",
+      "concern": "FERC must clearly define jurisdictional boundaries before finalizing any rule",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "CEBA recommends substantially increasing the threshold to avoid overburdening the large load interconnection process. A new standard, such as a 75 MW threshold instead of 20 MW, would ensure that FERC is focusing its attention and resources on loads that have greater system impact.",
+      "concern": "Recommends raising the interconnection threshold from 20 MW to 75 MW",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "A 20 MW cutoff, for example, is too low: it would capture many mid-sized industrial and commercial facilities (factories, hospitals, campuses) traditionally under state jurisdiction, creating tension with state regulators and blurring wholesale vs. retail boundaries.",
+      "concern": "20 MW threshold would sweep in state-jurisdictional facilities and cause regulatory conflict",
+      "bins": [
+        "aq:threshold",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "A cost-allocation framework grounded in cost causation is essential to preventing unjust and unreasonable outcomes. Large loads should pay for upgrades required for their interconnection, but should similarly receive the broader benefits that those upgrades may provide to other grid customers.",
+      "concern": "Cost allocation must follow cost causation and credit shared upgrade benefits",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Any cost allocation rules that emerge from this proceeding should avoid setting load interconnection rates using overly generalized estimates or broad averages that bear little or no relationship to anticipated usage at specific locations on the transmission system.",
+      "concern": "Rates must be location-specific, not based on broad averages",
+      "bins": [
+        "pr:cost",
+        "topic:location-specific-pricing"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "CEBA strongly supports the ANOPR proposal to jointly study supply-side and large-load interconnection customers where practicable.",
+      "concern": "Supports joint load-and-generation interconnection studies",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "We recommend against introducing procedures which allow loads to 'skip ahead' either study or energization queues. 'Prioritization' frameworks introduce considerable room for fluctuating policy objectives to drive interconnection access and inevitably raise significant questions around non-discriminatory and non-preferential access.",
+      "concern": "Opposes queue-skipping or prioritization frameworks that risk non-discriminatory access",
+      "bins": [
+        "pr:study",
+        "topic:nondiscriminatory-access"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "CEBA recommends that the Commission require ATTs—including dynamic line ratings—to be evaluated alongside traditional upgrades for large load interconnections, consistent with Order No. 2023, given the significant benefits identified for consumers and interconnection customers.",
+      "concern": "Advanced transmission technologies should be required in large load interconnection studies",
+      "bins": [
+        "pr:study",
+        "topic:advanced-transmission-tech"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Pulling these systems into new transmission-level regulatory frameworks would create confusion, raise costs, and slow deployment—not only harming local reliability but also increasing systemwide energy costs.",
+      "concern": "Behind-the-meter systems must stay out of new federal interconnection rules",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:btm-protection"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "it is essential that interconnection design for large loads is structured to enable innovation and competition through voluntary pathways rather than mandates.",
+      "concern": "Flexibility and co-location configurations must be voluntary, not mandated",
+      "bins": [
+        "pr:flex",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Hybrid projects can utilize generation and storage technologies that have a strong operational track record in terms of responding to balancing authority dispatch requirements.",
+      "concern": "Hybrid generation-and-storage configurations have proven grid-response capability",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "FERC should also require transmission providers to study large-load interconnection requests based on realistic operating behavior, like the approach in Order 2023 for storage resources, to improve accuracy, avoid unnecessary upgrades, and reduce excessive costs.",
+      "concern": "Interconnection studies should model actual large load operating profiles, not worst-case assumptions",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The Commission should explicitly recognize that co-locating large loads with generation, whether existing or new, provides meaningful system benefits and should be treated as an authorized interconnection configuration and be studied in a way that reflects their reduced system impact.",
+      "concern": "Co-location should be formally recognized as a valid interconnection configuration with reduced-impact study treatment",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "FERC should complete its review expeditiously and determine if PJM's tariff, as well as those of other electricity markets, need clearer rules to ensure grid reliability and fair allocation of costs.",
+      "concern": "Urges FERC to finish its PJM co-location review and extend findings to all markets",
+      "bins": [
+        "rg:pjm",
+        "pr:colo"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Define Jurisdiction Before Rulemaking",
+      "stance": "mixed",
+      "description": "CEBA takes no position on whether FERC has authority over large load interconnections but insists the Commission must clearly define jurisdictional limits in any rulemaking. The filing warns that a 20 MW threshold would pull state-regulated facilities into federal oversight, and that behind-the-meter systems must be explicitly excluded.",
+      "quote_ids": [
+        1,
+        3,
+        9
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Raise Threshold to 75 MW",
+      "stance": "oppose",
+      "description": "CEBA opposes the proposed 20 MW threshold as too low and recommends 75 MW instead. At 20 MW, the rule would capture mid-sized industrial and commercial facilities traditionally regulated by states, overwhelming FERC and creating wholesale-retail boundary disputes.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Support Joint Load-Generation Studies",
+      "stance": "support",
+      "description": "CEBA supports jointly studying load and supply-side interconnection customers. Coordinated studies can identify more cost-effective transmission solutions and reduce the multiple-submission behavior that inflates queue volumes and delays both load and generator projects.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Voluntary Hybrid and Co-Location Rights",
+      "stance": "support",
+      "description": "CEBA supports enabling hybrid and co-location configurations but insists they remain voluntary rather than mandated. Interconnection rules should let customers request only the injection or withdrawal rights they actually need, and study methodologies should reflect the reduced system impact of hybrid projects.",
+      "quote_ids": [
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Standardize and Modernize Study Process",
+      "stance": "support",
+      "description": "CEBA supports standardized interconnection study methodologies that model realistic large load operating behavior. Studies should incorporate advanced transmission technologies such as dynamic line ratings, follow Order 2023 precedent, and avoid queue-priority frameworks that undermine nondiscriminatory access.",
+      "quote_ids": [
+        6,
+        7,
+        8,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Causation, Location-Specific Rates",
+      "stance": "support",
+      "description": "CEBA supports a cost-causation framework where large loads pay for upgrades they trigger but share in broader benefits. Rates must reflect actual usage at specific locations, not broad averages, and studies should be based on realistic operating behavior to avoid unnecessary upgrade costs.",
+      "quote_ids": [
+        4,
+        5,
+        12
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Recognize Co-Location System Benefits",
+      "stance": "support",
+      "description": "CEBA urges FERC to formally recognize co-location of large loads with generation or storage as an authorized, high-value configuration. Co-location reduces congestion, line losses, and transmission upgrade costs. FERC should also complete its PJM co-location review and extend resulting tariff clarity to all markets.",
+      "quote_ids": [
+        11,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Voluntary Flexibility Pathways Only",
+      "stance": "support",
+      "description": "CEBA supports interconnection designs that enable large load flexibility but opposes mandates. Most data center workloads are mission-critical and cannot be curtailed; any flexibility incentives must be structured as voluntary pathways to allow innovation without forcing operational risks on customers.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "Complete PJM Co-Location Review",
+      "stance": "support",
+      "description": "CEBA calls on FERC to expeditiously finish its ongoing PJM co-location technical review and clarify tariff rules across all markets to ensure reliability and fair cost allocation.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "topic:location-specific-pricing",
+      "name": "Location-Specific Interconnection Rates",
+      "stance": "support",
+      "description": "CEBA argues that load interconnection pricing should reflect usage and location to guide new load toward less-stressed grid points. Broad averages send no siting signal and can result in unjust cost allocations for both large load customers and existing ratepayers.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:nondiscriminatory-access",
+      "name": "No Queue Prioritization Frameworks",
+      "stance": "oppose",
+      "description": "CEBA opposes any mechanism that lets large loads skip study or energization queues, arguing such prioritization introduces policy-driven discrimination and violates open-access principles. Queue processes must stay grounded in technical and financial criteria.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:advanced-transmission-tech",
+      "name": "Require ATT Evaluation in Studies",
+      "stance": "support",
+      "description": "CEBA recommends that interconnection studies for large loads be required to evaluate advanced transmission technologies, including dynamic line ratings, consistent with Order 2023 requirements for generators. ATTs can increase capacity faster and at lower cost than traditional upgrades.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:btm-protection",
+      "name": "Protect Behind-the-Meter Systems",
+      "stance": "support",
+      "description": "CEBA urges FERC to explicitly exclude behind-the-meter and distribution-connected resources from any new large load interconnection framework. Pulling these systems into federal regulation would disrupt existing reliability benefits, raise costs, and slow beneficial project deployment.",
+      "quote_ids": [
+        9
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

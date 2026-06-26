@@ -1,0 +1,279 @@
+{
+  "accession": "20260615-5141",
+  "filer": "Pennsylvania Office of Consumer Advocate",
+  "org_type": "consumer_advocate",
+  "filed": "06/15/2026",
+  "source_text": "sources/comments/files/20260615-5141__Pennsylvania-Office-of-Consumer-Advocate/Supplemental Comments of Joint Consumer Advocates (PA, DE, NJ).txt",
+  "overall_summary": "The Joint Consumer Advocates (PA, DE, NJ) urge FERC to adopt the Expansion Rate Policy from the FirstEnergy Whitepaper, which charges large load customers both a pro-rata embedded cost rate for the existing grid and a separate incremental expansion rate for new facilities. They argue this two-part structure implements cost causation, avoids existing customers subsidizing data center upgrades, and fulfills the Ratepayer Protection Pledge, and they favor applying it first to Supplemental Projects rather than regional RTEP facilities.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The Commission should adopt the Expansion Rate Policy set forth in the FirstEnergy Whitepaper for incremental network upgrades, because it (1) presents a practical and legally acceptable pathway to ensure just and reasonable rates for all consumers in light of the rapid onset of voluminous interconnections of hyperscale data center large loads to the interstate transmission system; and (2) would be the lynchpin to effectuating the Ratepayer Protection Pledge as to interstate transmission wires charges for incremental network upgrades, especially for network upgrades built as part of Supplemental Projects.",
+      "concern": "JCA urge FERC to adopt the two-part Expansion Rate Policy as the mechanism to protect all consumers from data center upgrade costs",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "hyperscale data center developers promised to \"pay for all new power delivery infrastructure upgrades required to service their data centers, including adequate network upgrade costs to ensure that these expenses are not passed on to the ordinary household.\"",
+      "concern": "JCA cite the Ratepayer Protection Pledge as grounds for direct assignment of upgrade costs to large loads",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Such an agreement would align well with the principle of cost causation and avoid having existing customers subsidize the costs of network facilities from which existing customers derive no benefit commensurate to the benefits that large load interconnecting customers derive.",
+      "concern": "Cost causation principle supports charging large loads rather than native customers for expansion facilities",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "In short, a strict application of FERC's \"higher of\" policy no longer protects native customers from expansion-related costs, as it was initially intended.",
+      "concern": "The existing higher-of rate policy fails to shield native customers from data center driven upgrade costs",
+      "bins": [
+        "pr:cost",
+        "topic:higher-of-policy-limits"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "current cost structures require existing customers to unduly bear short-term costs and long-term costs and risks due to (1) the unique load ramping characteristics of data center large loads, and (2) the execution of electric service agreements that fall far short of the life of installed transmission assets.",
+      "concern": "Two structural mismatches in current rate design shift long-term risks onto native load customers",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "topic:stranded-asset-risk"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "An incremental rate under a strict application of the Commission's \"higher-of\" policy may insulate native load from near-term harms, but it deprives native load of the long-term rate benefits from new large load customers.",
+      "concern": "Incremental-only pricing denies native load the embedded-cost offset benefit from new large customers",
+      "bins": [
+        "pr:cost",
+        "topic:higher-of-policy-limits"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Immense opportunity exists to benefit existing transmission customers through large load customers' paying their share of embedded costs transmission rates, offsetting already high transmission rates.",
+      "concern": "Requiring large loads to pay embedded costs would lower overall rates for existing customers",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "the new large load customer may monopolize the incremental transmission capacity needed to serve them, meaning that the new pathway for electricity that ought to provide reliability and operational benefits is consumed by the large load customer's interconnection.",
+      "concern": "Large loads can consume all new incremental capacity, eliminating system benefits to other customers",
+      "bins": [
+        "pr:proximate",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Special circumstances exist today due to the high volume of large load customers seeking to interconnect to the transmission system and the speed to power demanded by them, requiring significant network facilities to be constructed near immediately.",
+      "concern": "Volume and urgency of data center interconnections constitute special circumstances justifying a policy exception",
+      "bins": [
+        "aq:threshold",
+        "topic:special-circumstances"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "While FERC certainly has the discretion to change its rate policy in these circumstances, it may not need to.",
+      "concern": "JCA argue FERC can adopt the Expansion Rate Policy under existing authority via a special-circumstances exception",
+      "bins": [
+        "topic:higher-of-policy-limits",
+        "topic:ferc-authority"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "If FERC decides to change its rate policy, it should not adopt the credit mechanism advanced by TAPS and Harvard ELI over the Expansion Rate Policy for incremental network upgrades built as part of Supplemental Projects.",
+      "concern": "JCA oppose the TAPS/Harvard crediting mechanism for Supplemental Projects in favor of the Expansion Rate Policy",
+      "bins": [
+        "pr:cost",
+        "topic:crediting-mechanism"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The Commission should require transmission owners to adopt a line-by-line incremental pricing mechanism for the expansion facilities necessary to interconnect and serve new large load customers and ensure that those customers still contribute to the embedded cost of the high voltage transmission grid.",
+      "concern": "JCA ask FERC to mandate a line-by-line incremental rate for expansion facilities alongside embedded cost contributions",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The most critical component is that the cost of the facilities would be depreciated over the life of the contract.",
+      "concern": "Contract-term depreciation ensures the large load customer fully pays off expansion facilities before the rate rolls into the base",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "The JCA submit support for the Expansion Rate Policy as it applies at the local level for Supplemental Projects.",
+      "concern": "JCA endorse the Expansion Rate Policy specifically for local Supplemental Projects, with regional RTEP application left for further consideration",
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:supplemental-projects"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Expansion Rate for Upgrade Costs",
+      "stance": "support",
+      "description": "JCA strongly support a two-part rate structure charging large load customers both the embedded cost of the existing grid and a separate incremental expansion rate for new facilities. They argue this approach implements cost causation, prevents native customers from subsidizing data center upgrades, and is consistent with FERC's Transmission Pricing Policy and the Ratepayer Protection Pledge.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Direct Assignment of Upgrade Costs",
+      "stance": "support",
+      "description": "JCA support direct assignment of network upgrade costs to large load customers through the Expansion Rate Policy, citing the cost causation principle, the Ratepayer Protection Pledge, and the risks that current structures impose on native load. They favor this approach over both rolled-in treatment and incremental-only pricing.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Scale Triggers Special Circumstances",
+      "stance": "support",
+      "description": "JCA argue that the sheer volume and pace of large load interconnection requests constitute special circumstances under existing FERC policy, warranting a departure from the standard higher-of rule without necessarily requiring a formal rate policy change.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Large Load as Sole Cost Cause",
+      "stance": "support",
+      "description": "JCA argue that large load customers are the but-for cause of new network expansion, monopolizing incremental capacity and providing no proportionate benefit to existing customers, which justifies assigning those costs entirely to the interconnecting customer.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Supplemental Projects Priority",
+      "stance": "support",
+      "description": "JCA focus their Expansion Rate Policy recommendation on PJM Supplemental Projects (Attachment M-3), noting these are intra-zonal, designed to meet specific customer needs, and less subject to RTEP-level regional scrutiny, making them the clearest and most urgent target for the new rate structure.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "topic:higher-of-policy-limits",
+      "name": "Higher-Of Policy Now Inadequate",
+      "stance": "support",
+      "description": "JCA contend that FERC's longstanding higher-of rate policy was not designed for the current wave of data center interconnections and no longer protects native customers. Incremental-only pricing under that policy also deprives existing customers of the embedded-cost offset that large loads should provide.",
+      "quote_ids": [
+        4,
+        6,
+        10
+      ]
+    },
+    {
+      "key": "topic:stranded-asset-risk",
+      "name": "Stranded Asset and Contract Mismatch Risk",
+      "stance": "neutral",
+      "description": "JCA flag two structural risks under current rate design: data centers' slow demand ramp-up, which forces native load to pay for unused capacity, and short-term service agreements that leave expansion facilities on native load rate base long after a customer exits.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:special-circumstances",
+      "name": "Existing Authority Sufficient",
+      "stance": "support",
+      "description": "JCA argue FERC can act under its existing rate policy by finding special circumstances rather than formally changing the higher-of rule, though they also argue that if a policy change is needed, the bar for that change is not high.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:ferc-authority",
+      "name": "No Statutory Change Required",
+      "stance": "support",
+      "description": "JCA contend that adopting the Expansion Rate Policy would require neither a statutory change nor a novel assertion of agency authority, supporting FERC's ability to act promptly.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:crediting-mechanism",
+      "name": "Crediting Mechanism Falls Short",
+      "stance": "oppose",
+      "description": "JCA oppose using the TAPS/Harvard ELI crediting mechanism for Supplemental Projects, arguing it would not guarantee that large load developers pay the full cost of network upgrades as required by the Ratepayer Protection Pledge.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:supplemental-projects",
+      "name": "Supplemental Projects First Priority",
+      "stance": "support",
+      "description": "JCA recommend FERC prioritize the Expansion Rate Policy for PJM Supplemental Projects at the local zonal level before extending it to regional RTEP facilities, given the legal and analytical complexity the regional context introduces.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost",
+      "threshold"
+    ],
+    "pr": [
+      "cost",
+      "proximate"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

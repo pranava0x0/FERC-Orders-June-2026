@@ -1,0 +1,373 @@
+{
+  "accession": "20251121-5355",
+  "filer": "MISO Transmission Owners",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5355__MISO-Transmission-Owners/RM26-4 MISO Transmission Owners Initial Comments.txt",
+  "overall_summary": "The MISO Transmission Owners argue that existing regional processes are successfully integrating large loads and that a federal one-size-fits-all rule risks delaying progress already underway. They ask the Commission to preserve regional flexibility, clarify jurisdictional limits, and avoid mandating cost-allocation and option-to-build reforms that conflict with long-standing MISO tariff practices. If the Commission does act, they request a generous transition period and grandfathering for in-progress interconnections.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the reforms proposed in this ANOPR, depending on how they are shaped into a final rule, could in fact hinder progress being made across the industry to address the unique issues arising from individual large load interconnections",
+      "concern": "ANOPR reforms may slow rather than help large load integration",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:federal-vs-regional"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Given the nascency of these issues, pursuing the adoption of a federal, one-size-fits-all approach at this juncture could not only risk delaying the addition of large loads to the system and the incremental infrastructure needed to accommodate those additions, but also frustrate the discovery of new and innovative solutions.",
+      "concern": "Premature federal uniformity stifles regional innovation",
+      "bins": [
+        "topic:federal-vs-regional",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Assuming the Commission has jurisdiction over the interconnection of all large loads to the transmission system as the ANOPR claims, the MISO Transmission Owners urge the Commission to not prejudge whether the Commission should assert any such jurisdiction to enact the proposed reforms.",
+      "concern": "Commission should not presume it must exercise large-load jurisdiction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "In any future action on this ANOPR, the Commission should clarify that it is not exercising jurisdiction over load interconnections where the load is the recipient of bundled transmission service under state law.",
+      "concern": "Bundled retail load should be excluded from federal interconnection rules",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:bundled-retail-exclusion"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "since the 2022 MTEP cycle, the MISO Transmission Owners have sought to build, and MISO has approved, the needed transmission enhancements to accommodate approximately 14.4 gigawatts (\"GW\") of large load additions.",
+      "concern": "MISO region has already accommodated substantial large load growth without federal rules",
+      "bins": [
+        "rg:miso",
+        "topic:federal-vs-regional"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the MISO Transmission Owners strongly encourage the Commission to refrain from taking generic action to develop a one-size-fits-all approach and instead, support transmission owners and transmission providers in their pursuit of solutions that facilitate the expeditious integration of large loads in a manner that preserves reliability and affordability.",
+      "concern": "Commission should defer to regional solutions rather than issue generic rules",
+      "bins": [
+        "topic:federal-vs-regional",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Should the Commission elect to pursue the reforms proposed in the ANOPR, the MISO Transmission Owners recommend that the Commission provide transmission providers and their stakeholders significant flexibility in defining large loads, as they have the technical experience and judgment to appropriately and reasonably weigh operational, reliability, and administrative factors that are critical to defining large loads.",
+      "concern": "Threshold definition should be left to regional providers, not set federally",
+      "bins": [
+        "aq:threshold",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "a threshold based solely on the MW size of load is too rough of a measure when developing a large load definition.  As the North American Electric Reliability Corporation (\"NERC\") explained, several factors should also be considered, such as footprint, load ramp rates, real-time behavior and flexibility, protection systems, and backup power schemes.",
+      "concern": "MW-only threshold is insufficient; multiple technical factors must be considered",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "In order to comment meaningfully on the Third Principle, more information is needed.  In the MISO region, load integration and generation interconnection are studied separately because they have separate impacts on the bulk electric system.",
+      "concern": "Joint study of load and generation conflicts with MISO's separate-study practice",
+      "bins": [
+        "aq:jointstudy",
+        "rg:miso"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Speculative load requests do exist, but to deter speculative load requests, many transmission owners and LSEs already require financial commitments from load customers to develop the transmission facilities needed to serve new large loads.",
+      "concern": "Financial commitments already exist regionally; federal deposits risk duplication",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "large load owners should only be able to co-locate and contract for power directly from generators to the extent state laws and regulations allow.  Second, it is critical to both system planning and operational awareness that load and generation are studied and metered separately, on a gross rather than a net basis.",
+      "concern": "Co-location rights must respect state law and require gross metering",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "rg:miso"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "system protection facilities do not guarantee the prevention of unauthorized injections or withdrawals.  This is one of the reasons that it is imperative from a reliability perspective that the load and generation of a hybrid facility are studied and metered separately.",
+      "concern": "Protection equipment alone does not ensure reliability; separate metering is essential",
+      "bins": [
+        "aq:protection",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "requiring direct assignment of upgrade costs to interconnecting load would mark a fundamental shift when there is no clear basis or purpose for doing so.",
+      "concern": "Direct cost assignment to load lacks legal and policy basis under current precedent",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Under long-standing Commission precedent, the costs of network upgrades required to interconnect load are allocated to transmission customers through transmission rates under Schedule 9 of the MISO Tariff.  LSEs, in turn, pass on those costs to their retail customers.",
+      "concern": "Existing MISO cost-allocation rules already handle load upgrade costs",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "rg:miso"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "the MISO Transmission Owners oppose extending the option to build to large load owners",
+      "concern": "Large load owners should not receive an option to build transmission facilities",
+      "bins": [
+        "pr:cost",
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "the MISO Transmission Owners are concerned that the Eleventh and Twelfth Principles raise significant cost allocation concerns, as well as undue discrimination concerns",
+      "concern": "Netting load against co-located generation for service obligations conflicts with MISO tariff and raises discrimination issues",
+      "bins": [
+        "aq:hybridrights",
+        "pr:cost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Time spent participating in and complying with any such rulemaking is time not spent on supporting load growth in the region.  Another alternative to taking generic action is to issue a policy statement to guide the industry regarding large load interconnections.",
+      "concern": "A policy statement would be less disruptive than a binding rulemaking",
+      "bins": [
+        "topic:federal-vs-regional",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "any such reforms should be solely limited to new load additions or future requests to increase the size of existing loads.  Existing or new large load additions that are currently being considered should also be grandfathered and not subject to the reforms.",
+      "concern": "In-progress interconnections should be grandfathered from any new rule",
+      "bins": [
+        "aq:expedited",
+        "topic:transition-grandfathering"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Challenge Federal Jurisdiction Claim",
+      "stance": "oppose",
+      "description": "The MISO Transmission Owners question whether the Commission should assert jurisdiction over large load interconnections at all, particularly for bundled retail load served under state law. They argue the ANOPR's jurisdictional reach is untested and that the Commission should not presume action is necessary where no record of discrimination exists.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "MW Threshold Too Rigid",
+      "stance": "oppose",
+      "description": "The filer argues that a single MW threshold is too crude a measure for defining large loads, citing NERC guidance that footprint, ramp rates, protection systems, and other factors matter. They recommend that regional providers retain flexibility to set context-appropriate thresholds.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Oppose Mandatory Joint Study",
+      "stance": "oppose",
+      "description": "In MISO, load and generation are studied separately because they have distinct reliability impacts. The MISO Transmission Owners say that more information is needed before they can support any joint-study mandate, and that any reform must preserve this separation for planning and metering purposes.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Financial Commitments Already Exist",
+      "stance": "mixed",
+      "description": "The filer acknowledges that speculative load is a real problem but notes many MISO transmission owners already require financial commitments from load customers. Federal deposit requirements risk duplicating or conflicting with these existing state and tariff mechanisms.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid Study and Metering Rules",
+      "stance": "oppose",
+      "description": "The MISO Transmission Owners insist that co-located load and generation must be studied and metered on a gross rather than net basis for reliability and cost-allocation reasons. They oppose netting arrangements that would reduce a hybrid customer's transmission service obligations.",
+      "quote_ids": [
+        11,
+        12,
+        16
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Protection Equipment Insufficient Alone",
+      "stance": "mixed",
+      "description": "While not opposing system protection facility requirements for hybrid facilities, the filer cautions that such equipment does not guarantee prevention of unauthorized injections or withdrawals, making separate metering essential for reliability.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Oppose Direct Upgrade Cost Assignment",
+      "stance": "oppose",
+      "description": "Assigning 100% of network upgrade costs directly to interconnecting load would be a fundamental departure from long-standing MISO tariff cost-allocation rules under Schedule 9. The filer argues there is no clear basis for this shift and that it risks creating financial burdens that ultimately harm retail customers.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Grandfathering for In-Progress Projects",
+      "stance": "support",
+      "description": "If the Commission proceeds, the MISO Transmission Owners ask that any new rules apply only to future load additions and that loads already in the process of interconnecting be grandfathered. They request at least one year before any reforms take effect.",
+      "quote_ids": [
+        18
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Regional Flexibility Over Uniformity",
+      "stance": "support",
+      "description": "The filing's through-line is that regional providers should retain the flexibility to craft solutions suited to their markets, technologies, and state regulatory contexts. The MISO Transmission Owners point to their own track record as evidence that regional approaches work.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Preserve Existing Cost Allocation",
+      "stance": "oppose",
+      "description": "The filer opposes both direct assignment of upgrade costs to load and any option-to-build right for large load owners, viewing both as departures from proven MISO tariff practices. They argue the Eleventh and Twelfth Principles would create cost-allocation distortions and undue discrimination.",
+      "quote_ids": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Must Respect State Law",
+      "stance": "mixed",
+      "description": "The MISO Transmission Owners accept that co-location arrangements need to be studied but insist they must stay within state law limits and require gross metering of load and generation to protect system reliability and cost-allocation integrity.",
+      "quote_ids": [
+        11,
+        16
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Policy Statement Over Rulemaking",
+      "stance": "support",
+      "description": "Rather than a binding generic rule, the filer suggests the Commission issue a policy statement to guide regional innovation. Time spent on rulemaking compliance is time not spent on actual load integration.",
+      "quote_ids": [
+        17
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO Regional Track Record",
+      "stance": "neutral",
+      "description": "The MISO Transmission Owners document the region's progress: 14.4 GW of large load additions approved since 2022, a draft MTEP25 covering 11.6 GW more, and the new ERAS fast-track process. They use this track record to argue that federal intervention is unnecessary in the MISO footprint.",
+      "quote_ids": [
+        5,
+        9,
+        11,
+        14
+      ]
+    },
+    {
+      "key": "topic:federal-vs-regional",
+      "name": "Federal Rules Risk Regional Progress",
+      "stance": "oppose",
+      "description": "A consistent theme is that a federal one-size-fits-all rule could disrupt active regional work in MISO and prevent discovery of innovative solutions. The filer prefers FPA section 205 filings as the mechanism for change rather than mandatory FERC rulemaking.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        6,
+        17
+      ]
+    },
+    {
+      "key": "topic:bundled-retail-exclusion",
+      "name": "Exclude Bundled Retail Load",
+      "stance": "support",
+      "description": "The filer asks the Commission to clarify that any rule does not cover load interconnections where the load receives bundled transmission service under state retail tariffs, distinguishing those from cases where a customer actively seeks transmission service.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:option-to-build",
+      "name": "Oppose Load Option to Build",
+      "stance": "oppose",
+      "description": "The MISO Transmission Owners argue that large load owners lack the experience and expertise to construct integrated network transmission facilities and should not be given the option to build that generators currently hold.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "topic:transition-grandfathering",
+      "name": "Transition Period and Grandfathering",
+      "stance": "support",
+      "description": "If any rule is adopted, the filer requests at minimum one year before effectiveness, and grandfathering for all loads currently being studied or interconnected, consistent with how the Commission handled transitions in Order No. 2023.",
+      "quote_ids": [
+        18
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "upgradecost",
+      "expedited"
+    ],
+    "pr": [
+      "flex",
+      "cost",
+      "colo",
+      "study"
+    ],
+    "rg": [
+      "miso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

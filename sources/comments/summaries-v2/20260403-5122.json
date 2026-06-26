@@ -1,0 +1,229 @@
+{
+  "accession": "20260403-5122",
+  "filer": "MISO Transmission Owners",
+  "org_type": "transmission_owner",
+  "filed": "04/03/2026",
+  "source_text": "sources/comments/files/20260403-5122__MISO-Transmission-Owners/RM26-4 MISO Transmission Owners Supplemental Comments.txt",
+  "overall_summary": "The MISO Transmission Owners support the ANOPR's goals of timely large load interconnection without unfair cost shifts, and provide an update on ongoing MISO-region efforts including the EPR process, ERAS, JTIQ, a proposed ZGIA, and new reliability requirements for large loads. They urge the Commission to avoid a one-size-fits-all approach that would bypass state authority and existing regional coordination, which has already produced effective results.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the MISO Transmission Owners strongly support the ANOPR's goals of interconnecting large loads in a timely and reliable manner that avoids unfair cost shifts.",
+      "concern": "General support for ANOPR goals on speed and cost allocation",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the interconnection of load to the transmission system, regardless of size, is largely a matter of state jurisdiction in MISO and as such, the transmission owner and LSEs play lead and important roles in managing and interconnecting load to the transmission system even before MISO is involved.",
+      "concern": "State jurisdiction governs load interconnection in MISO; federal rules should not override this",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-authority"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "any new rules that would attempt to bypass MISO states and MISO members could have the unintended result of making interconnections \"more costly, ineffective, and more time consuming,\" which clearly runs counter to the ANOPR's goals and the goals of this Administration.",
+      "concern": "Federal rules bypassing state and member roles risk making interconnections worse",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-authority"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the MISO Transmission Owners welcome any and all support from the Commission that avoids a \"one-size-fits-all\" approach and provides flexibility and encourages Federal Power Act section 205 filings to craft innovative solutions that optimize regional differences in achieving timely, reliable, and affordable speed to power.",
+      "concern": "Commission should allow regional flexibility rather than uniform rules",
+      "bins": [
+        "topic:regional-flexibility",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the EPR process is an open, transparent, and streamlined process that permits MISO to review and approve transmission projects proposed by transmission owners faster than the regular MTEP cycle, which can take years to review and approve transmission upgrades.",
+      "concern": "EPR process enables faster transmission approvals for large loads",
+      "bins": [
+        "pr:study",
+        "topic:expedited-process"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "So far in 2026, MISO has approved EPR projects supporting 10.7 GW of new load additions and currently an additional 9.7 GW are under review.",
+      "concern": "Quantitative evidence of EPR process results in 2026",
+      "bins": [
+        "pr:study",
+        "topic:expedited-process"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the MISO Transmission Owners generally support a definition that avoids a threshold based solely on the MW size of the load and instead provides reasonable flexibility in defining large loads, given the technical experience and judgment that is required to appropriately and reasonably weigh operational, reliability, and administrative factors that are critical to defining large loads.",
+      "concern": "Large load definition should be flexible, not a fixed MW threshold",
+      "bins": [
+        "aq:threshold",
+        "topic:large-load-definition"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "MISO's proposed ZGIA is specifically designed with that goal in mind. The ZGIA would allow a generator to serve load directly but grants no interconnection service.",
+      "concern": "ZGIA enables co-located generation to serve load without full interconnection service",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The proposed ZGIA process leverages existing interconnection frameworks in terms of study aspects, timing, and financial/other obligations.",
+      "concern": "ZGIA builds on existing frameworks rather than creating new processes",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "the MISO Transmission Owners are active participants in several MISO stakeholder initiatives specifically designed to improve speed to power for large loads while ensuring reliability, including consideration of a new Zero-Injection Generator Interconnection Agreement (\"ZGIA\") and new reliability requirements regarding large loads.",
+      "concern": "Active participation in stakeholder initiatives on speed and reliability for large loads",
+      "bins": [
+        "pr:study",
+        "topic:reliability-requirements"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Streamlined study and planning",
+      "stance": "support",
+      "description": "The filer supports accelerating large load integration through existing and new MISO processes, including EPR, ERAS, and JTIQ. They report concrete results: 10.7 GW approved and 9.7 GW under review through EPR in 2026 alone. They want the Commission to support these regional efforts rather than impose uniform federal rules.",
+      "quote_ids": [
+        1,
+        4,
+        5,
+        6,
+        10
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Avoid unfair cost shifts",
+      "stance": "support",
+      "description": "The filer explicitly backs the ANOPR's goal that large load interconnection must not impose unfair cost shifts on other customers. They highlight state-level tariff efforts and data center agreements that produce customer savings as evidence that existing frameworks are working.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location via ZGIA",
+      "stance": "support",
+      "description": "The filer supports MISO's proposed Zero-Injection Generator Interconnection Agreement, which would allow a generator to serve co-located load directly without receiving interconnection service. This approach is designed to reduce network upgrades and is expected to be filed with FERC in June 2026.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "State jurisdiction must be preserved",
+      "stance": "support",
+      "description": "The filer argues that load interconnection in MISO is primarily a state-jurisdictional matter, with transmission owners and LSEs playing the lead role before MISO is even involved. They warn that federal rules bypassing state authority could make interconnections more costly and time-consuming.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Flexible large load definition",
+      "stance": "support",
+      "description": "The filer opposes a definition of large load based solely on MW size. They favor a flexible standard that accounts for operational, reliability, and administrative factors, consistent with the approach being developed through MISO's stakeholder process.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid co-location rights via ZGIA",
+      "stance": "support",
+      "description": "The filer describes MISO's ZGIA proposal as a mechanism for generators to serve co-located load directly, leveraging existing interconnection study and financial frameworks while granting no interconnection service to the grid.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:state-authority",
+      "name": "State and regional primacy",
+      "stance": "support",
+      "description": "The filer consistently argues that the MISO region's structure, where states have primary authority over resource adequacy and load interconnection, has produced affordability and reliability advantages. Federal policy should build on this structure rather than bypass it.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "topic:regional-flexibility",
+      "name": "Avoid one-size-fits-all rules",
+      "stance": "support",
+      "description": "The filer requests that the Commission refrain from imposing uniform national rules and instead encourage section 205 filings and region-specific solutions that reflect MISO's unique composition of obligation-to-serve utilities and state-led resource adequacy.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:expedited-process",
+      "name": "EPR process results in MISO",
+      "stance": "support",
+      "description": "The filer documents the EPR process as a working tool for fast-tracking transmission projects, with typical review times of about three months and as little as thirty days. They cite specific 2026 data showing 10.7 GW approved and 9.7 GW under review.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:large-load-definition",
+      "name": "Technical flexibility in large load definition",
+      "stance": "support",
+      "description": "The filer supports developing reliability requirements tied to a flexible definition of large load, rather than a fixed MW threshold, and notes MISO plans to file tariff revisions in June 2026.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:reliability-requirements",
+      "name": "New reliability standards for large loads",
+      "stance": "support",
+      "description": "The filer highlights MISO's ongoing stakeholder work to develop reliability requirements specific to large loads, including a definition of large load and related interconnection rules, with a planned tariff filing in June 2026.",
+      "quote_ids": [
+        10
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "accession": "20251205-5309",
+  "filer": "Switch, Ltd.",
+  "org_type": "data_center",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5309__Switch-Ltd/Switch Reply Comments on FERC Large Load Interconnection ANOPR (Final 12.5.2025).txt",
+  "overall_summary": "Switch, a data center developer and operator, supports FERC developing standardized, transparent, and non-discriminatory interconnection procedures for large loads. The company urges the Commission to prioritize proven, ready-to-build projects by imposing readiness requirements and financial commitments that screen out speculative applications, and to require transmission providers to publish queue status, study assumptions, and cost estimates.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Switch generally supports FERC's effort to develop standardized, transparent, and non-discriminatory procedures tailored to large load interconnections such as data centers.",
+      "concern": "Broad support for a standardized, non-discriminatory large load interconnection framework",
+      "bins": ["pr:study", "topic:non-discriminatory-access"]
+    },
+    {
+      "id": 2,
+      "text": "Timely and non-discriminatory access to the transmission system is essential to reliability, economic growth, and national competitiveness.",
+      "concern": "Non-discriminatory access is tied to reliability and economic goals",
+      "bins": ["topic:non-discriminatory-access"]
+    },
+    {
+      "id": 3,
+      "text": "Data center development can enhance both the reliability of the grid and affordability for ratepayers by increasing grid infrastructure investment and spreading the fixed costs of the power system over more users.",
+      "concern": "Data centers benefit ratepayers by spreading fixed grid costs",
+      "bins": ["topic:ratepayer-benefit"]
+    },
+    {
+      "id": 4,
+      "text": "Current practices vary widely across regions, which can create uncertainty and delays that hinder investment by providing discriminatory access for the interconnection of large loads to the interstate transmission system.",
+      "concern": "Regional inconsistency creates discriminatory access and delays for large load applicants",
+      "bins": ["pr:study", "topic:non-discriminatory-access"]
+    },
+    {
+      "id": 5,
+      "text": "If the Commission goes forward with the proposed ANOPR, it should focus on expediting interconnection of proven large load projects with demonstrated site control, committed customers, applicable permits, executed service agreements and/or project financing.",
+      "concern": "Interconnection process should prioritize projects with demonstrated readiness",
+      "bins": ["aq:deposits", "pr:study"]
+    },
+    {
+      "id": 6,
+      "text": "This approach is consistent with the fourth principle for reform in the proposed ANOPR about standardized study deposits, readiness requirements, withdrawal penalties and other commitments and financial penalties to deter speculative projects.",
+      "concern": "Deposits, readiness requirements, and withdrawal penalties align with ANOPR reform principles",
+      "bins": ["aq:deposits"]
+    },
+    {
+      "id": 7,
+      "text": "Any rules adopted by the Commission should prioritize projects that are ready for interconnection and reduce the incentives for speculative, non-viable projects.",
+      "concern": "Rules should screen out speculative projects and favor queue-ready applicants",
+      "bins": ["aq:deposits", "pr:study"]
+    },
+    {
+      "id": 8,
+      "text": "As part of this process, the Commission should consider firm timelines for studies and approvals for such projects that are ready for interconnection, similar to generator interconnection reforms under Order No. 2023.",
+      "concern": "Firm study and approval timelines modeled on Order 2023 generator reform",
+      "bins": ["pr:study", "topic:firm-timelines"]
+    },
+    {
+      "id": 9,
+      "text": "The current process often lacks transparency into load interconnection queues and the study process.",
+      "concern": "Queue and study process transparency is currently inadequate",
+      "bins": ["pr:study", "topic:queue-transparency"]
+    },
+    {
+      "id": 10,
+      "text": "Switch encourages coordination between transmission providers and regional planning entities to avoid duplicative studies and delays.",
+      "concern": "Coordination between transmission providers and planners can reduce duplicative studies",
+      "bins": ["pr:study", "topic:queue-transparency"]
+    },
+    {
+      "id": 11,
+      "text": "If the Commission decides to proceed with the proposed ANOPR, it should require transmission providers to publish queue status, study assumptions, and cost estimates for large load interconnections.",
+      "concern": "Transmission providers should be required to disclose queue status, study assumptions, and cost estimates",
+      "bins": ["pr:study", "topic:queue-transparency"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:deposits",
+      "name": "Readiness Requirements and Deposits",
+      "stance": "support",
+      "description": "Switch supports standardized study deposits, readiness requirements, and withdrawal penalties to filter out speculative projects. The company argues the Commission should condition interconnection priority on demonstrated site control, committed customers, permits, executed service agreements, and project financing.",
+      "quote_ids": [5, 6, 7]
+    },
+    {
+      "key": "pr:study",
+      "name": "Standardized Study Process",
+      "stance": "support",
+      "description": "Switch supports a uniform, efficient study process with firm timelines for ready projects, modeled on Order 2023 generator interconnection reforms. The company highlights that current regional variation creates uncertainty and delays, and calls for coordination between transmission providers and regional planning entities to eliminate duplicative studies.",
+      "quote_ids": [1, 4, 5, 7, 8, 9, 10, 11]
+    },
+    {
+      "key": "topic:non-discriminatory-access",
+      "name": "Non-Discriminatory Transmission Access",
+      "stance": "support",
+      "description": "Switch frames non-discriminatory access as central to the proceeding, arguing that regional inconsistency currently produces discriminatory outcomes. The company supports a single, consistent framework so all large load applicants face the same process.",
+      "quote_ids": [1, 2, 4]
+    },
+    {
+      "key": "topic:ratepayer-benefit",
+      "name": "Data Centers Reduce Retail Prices",
+      "stance": "neutral",
+      "description": "Switch cites recent research finding that load growth has tended to reduce retail electricity prices by spreading fixed transmission and distribution costs over more users, positioning data center interconnections as a ratepayer benefit.",
+      "quote_ids": [3]
+    },
+    {
+      "key": "topic:firm-timelines",
+      "name": "Firm Timelines for Study and Approval",
+      "stance": "support",
+      "description": "Switch asks the Commission to set mandatory timelines for studies and approvals for projects that meet readiness criteria, drawing an explicit parallel to the timeline provisions in the generator interconnection reforms of Order 2023.",
+      "quote_ids": [8]
+    },
+    {
+      "key": "topic:queue-transparency",
+      "name": "Queue and Study Transparency",
+      "stance": "support",
+      "description": "Switch calls for transmission providers to publicly disclose queue status, study assumptions, and cost estimates. The company notes the current process lacks this transparency and that better coordination between transmission providers and regional planners would reduce duplicative work.",
+      "quote_ids": [9, 10, 11]
+    }
+  ],
+  "lenses": {
+    "aq": ["deposits"],
+    "pr": ["study"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

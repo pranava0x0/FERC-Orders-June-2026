@@ -1,0 +1,172 @@
+{
+  "accession": "20251121-5517",
+  "filer": "New York State Public Service Commission",
+  "org_type": "state_commission",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5517__New-York-State-Public-Service-Commission/RM26-4 (Large Load ANOPR Comments).txt",
+  "overall_summary": "The New York State Public Service Commission opposes the Proposed ANOPR, arguing it lacks evidence of discriminatory or unreasonable interconnection practices and would unlawfully encroach on state authority over retail service under the Federal Power Act. The NYSPSC urges FERC to pause the rulemaking and instead pursue a cooperative approach with states and regional operators, who already have processes in place to handle large load interconnections without compromising reliability or customer affordability.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the NYSPSC has significant concerns with the scope of the Proposed ANOPR, which would intrude on matters reserved to the states under the Federal Power Act (FPA), namely service to end-use/retail customers.",
+      "concern": "ANOPR intrudes on state jurisdiction over retail customers",
+      "bins": ["aq:jurisdiction", "rg:nyiso"]
+    },
+    {
+      "id": 2,
+      "text": "New York already has the necessary procedures in place to make sure these interconnections do not compromise reliability or resource adequacy.",
+      "concern": "Existing New York procedures adequately handle large load interconnection reliability",
+      "bins": ["aq:jurisdiction", "rg:nyiso", "topic:state-adequacy"]
+    },
+    {
+      "id": 3,
+      "text": "the Proposed ANOPR does not present any evidence to conclude that existing federal or state tariffs are unjust and unreasonable or are being administered in a discriminatory manner.",
+      "concern": "ANOPR lacks evidentiary basis for reform",
+      "bins": ["aq:jurisdiction", "topic:evidentiary-basis"]
+    },
+    {
+      "id": 4,
+      "text": "the NYSPSC takes issue with the expedited schedule where the Secretary seeks final action by April 30, 2026, since such a schedule would leave little doubt that this rulemaking is a fait accompli, leaving insufficient time for the Commission to develop a complete and accurate record, meaningfully consider the comments received, and make a well-informed decision.",
+      "concern": "Expedited rulemaking timeline prevents adequate deliberation",
+      "bins": ["aq:expedited"]
+    },
+    {
+      "id": 5,
+      "text": "the Commission should pause the Proposed ANOPR rulemaking proceeding and work with stakeholders to identify if there are other efforts that should be pursued, particularly those within the Commission's jurisdiction.",
+      "concern": "FERC should pause the ANOPR and pursue stakeholder collaboration instead",
+      "bins": ["aq:jurisdiction", "topic:stakeholder-process"]
+    },
+    {
+      "id": 6,
+      "text": "This information does not suggest that an urgent need exists for the Commission to facilitate additional interconnections to the transmission system.  In fact, it suggests the opposite – a need to ensure that the current \"rapid\" pace of interconnections is carefully analyzed to ensure large loads do not adversely impact reliability or the electric system at large.",
+      "concern": "Rapid interconnection pace calls for caution, not urgency",
+      "bins": ["aq:jurisdiction", "pr:study", "topic:evidentiary-basis"]
+    },
+    {
+      "id": 7,
+      "text": "Notably absent from the Proposed ANOPR is any evidence that utilities across the nation, or within a particular region, have unduly delayed or burdened the interconnection of large loads, leading to inefficient, untimely, or discriminatory load interconnections.",
+      "concern": "No evidence of discriminatory or delayed interconnections to justify federal action",
+      "bins": ["aq:jurisdiction", "topic:evidentiary-basis"]
+    },
+    {
+      "id": 8,
+      "text": "a large load is not interconnecting to obtain wholesale \"transmission service\" or to make wholesale energy transactions, but rather for the end-use/retail consumption of energy.  FERC cannot establish jurisdiction by divorcing the interconnection of a retail customer from the retail service, even if the interconnection is to a transmission facility.",
+      "concern": "Large load interconnection is retail, not wholesale, so FERC lacks jurisdiction",
+      "bins": ["aq:jurisdiction"]
+    },
+    {
+      "id": 9,
+      "text": "the Proposed ANOPR reflects an attempt to expand federal jurisdiction and an intrusion on the states' historic retail regulatory authority under the Federal Power Act, and would unnecessarily introduce potential confusion, unintended customer consequences, and legal uncertainty where none currently exists.",
+      "concern": "ANOPR unlawfully expands federal jurisdiction and creates legal uncertainty",
+      "bins": ["aq:jurisdiction", "topic:legal-uncertainty"]
+    },
+    {
+      "id": 10,
+      "text": "current interconnection processes in New York require large loads to pay for the cost of their interconnection and related transmission upgrades, the operation of large loads may impose other costs not reflected in the interconnection process.",
+      "concern": "Large load costs beyond interconnection charges may fall on other customers",
+      "bins": ["aq:upgradecost", "pr:cost", "rg:nyiso"]
+    },
+    {
+      "id": 11,
+      "text": "these large loads will require significant amounts of generation and their appearance on the electric grid will add to the need for more generation to meet statewide electric demand needs and thereby raise the costs for all customers.",
+      "concern": "Large loads drive up generation costs for all ratepayers",
+      "bins": ["pr:cost", "rg:nyiso", "topic:cost-allocation"]
+    },
+    {
+      "id": 12,
+      "text": "Given the NYPSC's regulatory oversight of the T&D utilities, the NYPSC is in the best position to identify these costs and allocate them appropriately.",
+      "concern": "State regulator is best positioned to allocate large load costs",
+      "bins": ["aq:jurisdiction", "pr:cost", "rg:nyiso"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC Jurisdiction Challenge",
+      "stance": "oppose",
+      "description": "The NYSPSC argues that large load interconnections are retail transactions subject to state authority under the FPA, not wholesale transactions within FERC's jurisdiction. It contends the ANOPR's legal justifications all fail because they attempt to sever the interconnection from the underlying retail service. The filing also objects that no evidence of discriminatory or unreasonable practices justifies this unprecedented expansion of federal authority.",
+      "quote_ids": [1, 2, 3, 5, 6, 7, 8, 9, 12]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Oppose Expedited Timeline",
+      "stance": "oppose",
+      "description": "The NYSPSC objects to the Secretary's demand for final action by April 30, 2026, calling it a pace that forecloses genuine deliberation, record-building, and meaningful consideration of comments.",
+      "quote_ids": [4]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Upgrade Cost Beyond Interconnection",
+      "stance": "neutral",
+      "description": "New York's existing process requires large loads to pay for their interconnection and related transmission upgrades, but the NYSPSC notes that operational costs beyond direct interconnection charges may not be captured, warranting further state-level review.",
+      "quote_ids": [10]
+    },
+    {
+      "key": "pr:study",
+      "name": "Need for Careful Study",
+      "stance": "support",
+      "description": "The NYSPSC argues that NERC's own findings about the speed and scale of data center connections call for deliberate analysis of reliability impacts, not an expedited rulemaking that treats rapid interconnection as inherently desirable.",
+      "quote_ids": [6]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Large Load Cost Allocation",
+      "stance": "neutral",
+      "description": "Large loads create generation needs and other system costs that extend beyond the interconnection itself and are ultimately borne by all customers. The NYSPSC asserts that state regulators, with oversight of T&D utilities, are best positioned to identify and allocate those costs fairly.",
+      "quote_ids": [10, 11, 12]
+    },
+    {
+      "key": "rg:nyiso",
+      "name": "NYISO Existing Processes",
+      "stance": "support",
+      "description": "The NYSPSC points to NYISO tariff provisions and the NYSPSC's own T&D utility oversight as evidence that New York already has adequate processes to evaluate large load interconnections for reliability and resource adequacy impacts, without federal intervention.",
+      "quote_ids": [1, 2, 10, 11, 12]
+    },
+    {
+      "key": "topic:evidentiary-basis",
+      "name": "No Evidence for Reform",
+      "stance": "oppose",
+      "description": "The NYSPSC repeatedly notes that the ANOPR cites no instances of utilities unduly delaying or discriminating against large load interconnections. Without that evidentiary foundation, the case for federal rulemaking is not established.",
+      "quote_ids": [3, 6, 7]
+    },
+    {
+      "key": "topic:state-adequacy",
+      "name": "States Have Adequate Tools",
+      "stance": "neutral",
+      "description": "New York's interconnection procedures, including NYISO reliability reviews and NYSPSC-overseen T&D tariffs, already address the challenges of large load integration, making a new federal framework unnecessary in New York's view.",
+      "quote_ids": [2]
+    },
+    {
+      "key": "topic:stakeholder-process",
+      "name": "Cooperative Stakeholder Approach",
+      "stance": "support",
+      "description": "Rather than a unilateral federal rulemaking, the NYSPSC urges FERC to pause and engage states and regional operators in identifying improvements at both the federal and state level, building on existing efforts like NYISO's own large load interconnection review.",
+      "quote_ids": [5]
+    },
+    {
+      "key": "topic:legal-uncertainty",
+      "name": "Legal Uncertainty from ANOPR",
+      "stance": "oppose",
+      "description": "The NYSPSC warns that extending FERC jurisdiction into retail interconnections would create legal uncertainty and unintended customer consequences in a space that currently has clear and functioning regulatory lines.",
+      "quote_ids": [9]
+    },
+    {
+      "key": "topic:cost-allocation",
+      "name": "Generation Costs Shift to Ratepayers",
+      "stance": "neutral",
+      "description": "Large loads add to statewide generation demand and thereby raise costs for all customers. The NYSPSC sees this as a reason for careful state-level cost allocation review, not a federal mandate.",
+      "quote_ids": [11]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction", "expedited", "upgradecost"],
+    "pr": ["study", "cost"],
+    "rg": ["nyiso"]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

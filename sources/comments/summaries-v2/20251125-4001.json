@@ -1,0 +1,127 @@
+{
+  "accession": "20251125-4001",
+  "filer": "UNITED STATES CONGRESS",
+  "org_type": "elected",
+  "filed": "11/25/2025",
+  "source_text": "sources/comments/files/20251125-4001__UNITED-STATES-CONGRESS/RM26-4.txt",
+  "overall_summary": "Four Members of Congress (Subramanyam, Mannion, Quigley, and Beyer) urge FERC to protect existing ratepayers from cost shifts caused by large load interconnections, require curtailment protocols during grid emergencies, and assess cumulative regional impacts. They ask that congressional members and state public utility commissions be included in the rulemaking process alongside utilities and local communities.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Rate payers in markets with data centers have been subject to higher utility bills as the costs of transmission upgrades and expansions are distributed based on current allocation practices.",
+      "concern": "Existing ratepayers bear data center transmission costs under current allocation rules",
+      "bins": ["pr:cost", "aq:upgradecost"]
+    },
+    {
+      "id": 2,
+      "text": "there have been \"near miss\" incidents in regions with rigorous data center buildout which have raised concerns about black outs when clusters of data centers have suddenly dropped off the grid.",
+      "concern": "Sudden data center disconnections have caused near-miss reliability events in high-buildout regions",
+      "bins": ["pr:flex", "topic:grid-reliability-risk"]
+    },
+    {
+      "id": 3,
+      "text": "Safeguards to prevent large load customers from shifting interconnection or transmission upgrade costs onto existing rate payers.",
+      "concern": "Calls for rules that stop large loads from pushing upgrade costs to existing ratepayers",
+      "bins": ["pr:cost", "aq:upgradecost"]
+    },
+    {
+      "id": 4,
+      "text": "Clear communication between FERC, state regulators, utilities, and local communities before approving large interconnections that may alter demand forecasts or infrastructure needs.",
+      "concern": "Requests multi-party coordination before FERC approves interconnections with major demand or infrastructure effects",
+      "bins": ["pr:study", "topic:community-and-state-coordination"]
+    },
+    {
+      "id": 5,
+      "text": "Authorizing utility-administered curtailment protocols during grid emergencies.",
+      "concern": "Asks FERC to let utilities curtail large loads during emergencies",
+      "bins": ["pr:flex", "aq:protection"]
+    },
+    {
+      "id": 6,
+      "text": "Cumulative impacts of multiple large facilities locating within a single region, including effects on transmission congestion, local generation adequacy, and resource adequacy planning.",
+      "concern": "Asks FERC to study aggregate regional effects of clustered large load buildout",
+      "bins": ["pr:study", "pr:proximate", "topic:grid-reliability-risk"]
+    },
+    {
+      "id": 7,
+      "text": "Robust opportunities for community input.",
+      "concern": "Requests meaningful community participation in the rulemaking and approval process",
+      "bins": ["topic:community-and-state-coordination"]
+    },
+    {
+      "id": 8,
+      "text": "We respectfully request that FERC include congressional stakeholders and state public utility commissions in this process to guarantee that affordability, reliability, and fairness remain a top priority of federal energy policy.",
+      "concern": "Asks FERC to include Congress and state PUCs in the rulemaking to keep affordability and fairness central",
+      "bins": ["topic:community-and-state-coordination"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Protect Ratepayers from Cost Shifts",
+      "stance": "support",
+      "description": "The Congress members argue that current allocation practices push data center transmission upgrade costs onto existing ratepayers, raising utility bills. They ask FERC to add explicit safeguards preventing large load customers from shifting interconnection or upgrade costs to existing customers.",
+      "quote_ids": [1, 3]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Large Load Upgrade Cost Responsibility",
+      "stance": "support",
+      "description": "The filers want FERC rules that place transmission upgrade costs squarely on large load customers rather than distributing them across the existing ratepayer base under current allocation practices.",
+      "quote_ids": [1, 3]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Emergency Curtailment Authority",
+      "stance": "support",
+      "description": "The Congress members point to near-miss outage events caused by data center clusters suddenly disconnecting, and ask FERC to authorize utility-administered curtailment protocols for grid emergencies. They frame controlled curtailment as a reliability safeguard, not just a cost tool.",
+      "quote_ids": [2, 5]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Grid Emergency Curtailment Protocols",
+      "stance": "support",
+      "description": "The filers explicitly request that FERC authorize utility-administered curtailment of large loads during grid emergencies, citing near-miss incidents in high data center buildout regions.",
+      "quote_ids": [5]
+    },
+    {
+      "key": "pr:study",
+      "name": "Cumulative and Regional Impact Studies",
+      "stance": "support",
+      "description": "The Congress members ask FERC to assess the aggregate effects of multiple large facilities in a single region, covering transmission congestion, local generation adequacy, and resource adequacy planning. They also want multi-party consultation before approvals that could alter demand forecasts.",
+      "quote_ids": [4, 6]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Regional Concentration Effects",
+      "stance": "support",
+      "description": "The filers ask FERC to assess how clustering of large loads within a single region affects transmission congestion and generation adequacy, framing geographic concentration as a distinct planning problem beyond individual interconnection review.",
+      "quote_ids": [6]
+    },
+    {
+      "key": "topic:grid-reliability-risk",
+      "name": "Data Center Reliability Incidents",
+      "stance": "neutral",
+      "description": "The Congress members cite near-miss blackout events in regions with heavy data center buildout, where clusters of facilities suddenly disconnected from the grid, as evidence that the current approach creates reliability exposure.",
+      "quote_ids": [2, 6]
+    },
+    {
+      "key": "topic:community-and-state-coordination",
+      "name": "Community and State Inclusion",
+      "stance": "support",
+      "description": "The filers call for pre-approval communication among FERC, state regulators, utilities, and local communities, meaningful opportunities for community input, and explicit inclusion of congressional stakeholders and state PUCs in the rulemaking to keep affordability and fairness central to federal energy policy.",
+      "quote_ids": [4, 7, 8]
+    }
+  ],
+  "lenses": {
+    "aq": ["upgradecost", "protection"],
+    "pr": ["cost", "flex", "study", "proximate"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

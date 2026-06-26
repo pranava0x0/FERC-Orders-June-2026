@@ -1,0 +1,158 @@
+{
+  "accession": "20251205-5226",
+  "filer": "Rewiring America",
+  "org_type": "clean_energy",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5226__Rewiring-America/Rewiring America Reply Comments to FERC Docket RM26-4-000.txt",
+  "overall_summary": "Rewiring America supports a performance-based proximity standard under which DER aggregations and virtual power plants qualify for concurrent study and expedited large load interconnection based on measurable transmission relief capability, not physical distance or bus count. The filer advocates for technology-neutral approaches consistent with Order 2222 that enable cost-effective alternatives to expensive system upgrades, while taking no position on FPA jurisdictional issues and urging the Commission to avoid preempting state authority.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Rewiring America reiterates that it takes no position on any Federal Power Act jurisdictional issues implicated by this proceeding. If the Federal Energy Regulatory Commission proceeds toward a rulemaking, it should avoid preempting or impeding state authority.",
+      "concern": "Preserve state authority in FPA jurisdictional matters",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "DERs and virtual power plants increasingly provide cost-effective, dispatchable, and location-targeted grid services that can be deployed quickly at scale, making their treatment under Principles 34 and 75 an important consideration for the Commission.",
+      "concern": "DERs and VPPs deserve consideration under reform principles",
+      "bins": [
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "This lack of consensus creates a risk of adopting standards for asset proximity—such as a rigid bus-distance requirement—that exclude resources capable of providing real, verifiable relief to the same constrained portion of the grid.",
+      "concern": "Avoid rigid distance-based proximity standards",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "what matters for system impact studies is the portion of the aggregated resource that can measurably relieve the specific constraint associated with the large load, even when the aggregation spans multiple nodes.",
+      "concern": "VPP aggregations should be evaluated on measurable relief, not colocation",
+      "bins": [
+        "topic:vpp-aggregation",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "A resource should qualify as sufficiently proximate when it can provide timely, measurable, and locationally relevant relief to the transmission constraint created by the large load—regardless of its physical location, point of interconnection, or distance measured in buses.",
+      "concern": "Define proximity by performance not physical distance",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "A performance-based approach to concurrent study and expedited large load interconnection ensures that flexibility resources are eligible and credited for providing transmission relief, while remaining technology-neutral and consistent with Order 2222.",
+      "concern": "Support performance-based expedited processes aligned with Order 2222",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Rewiring America strongly supports The Pew Charitable Trusts' recommendation that \"DERs within a VPP should be eligible [for concurrent study and expedited large load interconnection] where they satisfy appropriate locational and deliverability requirements.\"",
+      "concern": "Endorse VPP eligibility for expedited concurrent study",
+      "bins": [
+        "aq:expedited",
+        "topic:vpp-aggregation"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "It also allows large loads to use the most cost-effective tools available, including demand-side solutions that can reduce the need for more expensive system upgrades.",
+      "concern": "Enable cost-effective demand-side alternatives to infrastructure upgrades",
+      "bins": [
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:proximate",
+      "name": "Performance-based proximity standard",
+      "stance": "support",
+      "description": "Rewiring America advocates for defining asset proximity by measurable transmission relief capability rather than physical distance or bus count. This approach allows DER aggregations spanning multiple nodes to qualify when they can provide real, verifiable relief to the constrained area, avoiding exclusion of resources that contribute measurably to system benefit.",
+      "quote_ids": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "DER and VPP flexibility resources",
+      "stance": "support",
+      "description": "Rewiring America emphasizes that DERs and virtual power plants provide cost-effective, dispatchable, location-targeted grid services deployable at scale and warrant consideration under the reform principles. Performance-based frameworks should ensure flexibility resources are eligible and credited for transmission relief.",
+      "quote_ids": [
+        2,
+        6
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost-effective demand-side alternatives",
+      "stance": "support",
+      "description": "Rewiring America supports approaches that enable large loads to use the most cost-effective tools available, including demand-side solutions and virtual power plants that reduce the need for expensive system upgrades. This positions efficiency and flexibility as alternatives to capital-intensive transmission investments.",
+      "quote_ids": [
+        2,
+        8
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "State authority preservation",
+      "stance": "neutral",
+      "description": "Rewiring America takes no position on Federal Power Act jurisdictional issues but states that any rulemaking should avoid preempting or impeding state authority, particularly regarding state authority to require large-load customers to fund local efficiency and distributed energy resource investments.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited concurrent study process",
+      "stance": "support",
+      "description": "Rewiring America supports expedited interconnection study and concurrent study processes for large loads with accompanying flexibility resources, when evaluated under performance-based standards. This aligns with recommendations that DERs within VPPs should be eligible for accelerated review where they meet locational and deliverability requirements.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "topic:vpp-aggregation",
+      "name": "VPP aggregation across multiple nodes",
+      "stance": "support",
+      "description": "Rewiring America supports treating aggregated DERs in virtual power plants as proximate resources for study purposes when they can measurably relieve the large load's transmission constraint, even if distributed across multiple network nodes. This approach recognizes that the relevant unit of analysis is measurable impact, not colocation.",
+      "quote_ids": [
+        4,
+        7
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "expedited"
+    ],
+    "pr": [
+      "proximate",
+      "flex",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

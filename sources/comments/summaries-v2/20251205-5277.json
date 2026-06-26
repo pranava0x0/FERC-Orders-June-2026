@@ -1,0 +1,209 @@
+{
+  "accession": "20251205-5277",
+  "filer": "American Transmission Company LLC",
+  "org_type": "transmission_owner",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5277__American-Transmission-Company-LLC/Reply Comments of American Transmission Company.txt",
+  "overall_summary": "ATC, a MISO transmission owner, urges the Commission to favor flexibility and targeted requirements over sweeping rules, arguing that a policy statement rather than a binding rulemaking would better preserve existing effective interconnection processes. ATC opposes 100% direct assignment of network upgrade costs to load owners and supports rolled-in rate treatment aligned with cost-causation principles, while asking that transmission owners retain the ability to earn a reasonable return on investments. ATC also calls for separate studies of generation and load in hybrid facilities, with local planning authorities retaining discretion over sequencing.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "efficient and expeditious interconnection of large loads is no longer merely a commercial preference, but a matter of national security and an economic development imperative.",
+      "concern": "Frames speed of large-load interconnection as a national security priority",
+      "bins": ["pr:flex", "topic:national-priority"]
+    },
+    {
+      "id": 2,
+      "text": "A \"one-size-fits-all\" approach could inadvertently hinder progress by upending established processes and increasing the risk of implementation delays.",
+      "concern": "Warns that uniform federal rules risk disrupting working regional processes",
+      "bins": ["pr:flex", "aq:jurisdiction"]
+    },
+    {
+      "id": 3,
+      "text": "ATC supports commenters recommending that the Commission consider adopting a policy statement or general guidance rather than a sweeping rule.",
+      "concern": "Prefers a non-binding policy statement over a mandatory rulemaking",
+      "bins": ["pr:flex", "aq:jurisdiction"]
+    },
+    {
+      "id": 4,
+      "text": "requirements should be narrowly tailored to focus on experienced issues and allow maximum flexibility.",
+      "concern": "Asks that any new rules be scoped narrowly and preserve flexibility",
+      "bins": ["pr:flex", "aq:threshold"]
+    },
+    {
+      "id": 5,
+      "text": "the Commission should consider adopting threshold applicability requirements based upon specific operating characteristics.",
+      "concern": "Recommends size or operating-characteristic thresholds to limit rule scope",
+      "bins": ["aq:threshold", "pr:flex"]
+    },
+    {
+      "id": 6,
+      "text": "Limiting applicability to the subset of loads that do not meet with certain operating criteria could provide adequate controls, ensure reliability, contain costs, while preserving the flexibility for transmission owners such as ATC to continue to interconnect traditional, conforming loads based upon our existing interconnection processes.",
+      "concern": "Supports threshold-based applicability to protect existing processes for conforming loads",
+      "bins": ["aq:threshold", "pr:flex", "pr:cost"]
+    },
+    {
+      "id": 7,
+      "text": "ATC, along with other commenters, urges the Commission to separate studies for generation and load while preserving the flexibility for local planning authorities to rely upon their expertise to adjust sequencing and modeling.",
+      "concern": "Calls for separate generation and load studies with local discretion over sequencing",
+      "bins": ["pr:study", "aq:jointstudy", "aq:hybridrights"]
+    },
+    {
+      "id": 8,
+      "text": "Generation and load are functionally different and should be studied separately.",
+      "concern": "Opposes co-study of generation and load due to functional differences",
+      "bins": ["pr:study", "aq:jointstudy"]
+    },
+    {
+      "id": 9,
+      "text": "to the extent hybrid facilities are studied together, safeguards such as process matching and system protection facilities must be incorporated.",
+      "concern": "If co-study is required, demands process safeguards and system protection facilities",
+      "bins": ["pr:study", "aq:jointstudy", "aq:hybridrights", "aq:protection"]
+    },
+    {
+      "id": 10,
+      "text": "Misalignment between load and generation at a shared interconnection point can lead to unintended injections or withdrawals from the transmission system.",
+      "concern": "Reliability risk from generation-load misalignment at shared interconnection points",
+      "bins": ["pr:study", "aq:hybridrights", "aq:protection"]
+    },
+    {
+      "id": 11,
+      "text": "transmission owners lack the necessary tools to curtail firm service; therefore, the full impacts of any hybrid facility must be considered to prevent catastrophic consequences.",
+      "concern": "Asserts TOs cannot curtail firm service and need full impact studies for hybrid facilities",
+      "bins": ["aq:hybridrights", "aq:protection", "pr:study"]
+    },
+    {
+      "id": 12,
+      "text": "These tools can optimize existing assets, improve flexibility, and support localized stability, but they cannot fully mitigate reliability risks posed by hybrid facilities and large, highly variable loads.",
+      "concern": "Grid-enhancing technologies are useful complements but cannot substitute for new transmission capacity",
+      "bins": ["pr:study", "topic:grid-enhancing-tech"]
+    },
+    {
+      "id": 13,
+      "text": "ATC, along with several stakeholders, supports continued allocation of network upgrade costs to all transmission customers that benefit from the enhanced transmission system, consistent with Commission precedent.",
+      "concern": "Supports rolled-in cost allocation for network upgrades across all benefiting customers",
+      "bins": ["pr:cost", "aq:upgradecost"]
+    },
+    {
+      "id": 14,
+      "text": "ATC believes such direct assignment would be highly complex and likely result in disputes, confusion, and delays.",
+      "concern": "Opposes 100% direct assignment of upgrade costs as likely to cause disputes and delays",
+      "bins": ["pr:cost", "aq:upgradecost"]
+    },
+    {
+      "id": 15,
+      "text": "Direct assignment should be narrowly tailored to facilities exclusively attributable to and used by new loads to help contain costs and maintain alignment with cost-causation principles.",
+      "concern": "Accepts direct assignment only for facilities exclusively used by the new load",
+      "bins": ["pr:cost", "aq:upgradecost"]
+    },
+    {
+      "id": 16,
+      "text": "any future guidance, policy statement, or rulemaking should preserve transmission owners' ability to earn a reasonable return on transmission system investments, consistent with judicial precedent.",
+      "concern": "Requires that TOs retain a reasonable rate of return on network upgrade investments",
+      "bins": ["pr:cost", "aq:upgradecost", "topic:to-rate-of-return"]
+    },
+    {
+      "id": 17,
+      "text": "Transmission owners must continue to be compensated for the risks associated with owning, operating, and maintaining network upgrades through mechanisms such as initial funding under any future cost-assignment framework.",
+      "concern": "Asks that any cost-assignment framework include initial funding mechanisms for TOs",
+      "bins": ["pr:cost", "aq:upgradecost"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Preserve Flexibility Over Rigid Rules",
+      "stance": "support",
+      "description": "ATC consistently argues that flexibility is the most effective enabler of timely large-load interconnection. It supports a policy statement rather than binding rules, and asks that any requirements be narrowly tailored so transmission owners can continue using existing processes for conforming loads.",
+      "quote_ids": [1, 2, 3, 4, 5, 6]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Policy Statement Over Rulemaking",
+      "stance": "support",
+      "description": "ATC favors Commission guidance or a policy statement over sweeping new rules, arguing that mandatory nationwide requirements would disrupt effective regional processes and invite litigation.",
+      "quote_ids": [2, 3]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Operating-Characteristic Thresholds",
+      "stance": "support",
+      "description": "ATC recommends that any new requirements apply only to loads that fail specific operating criteria such as ramp rate or ride-through capability, limiting the rule to genuinely non-conforming loads.",
+      "quote_ids": [4, 5, 6]
+    },
+    {
+      "key": "pr:study",
+      "name": "Separate Studies for Generation and Load",
+      "stance": "support",
+      "description": "ATC opposes co-study of hybrid facilities as a default, citing functional differences between generation and load and reliability risks from misalignment at shared interconnection points. If co-study occurs, it requires safeguards and system protection facilities. Grid-enhancing technologies are useful but not substitutes for proper study and new transmission capacity.",
+      "quote_ids": [7, 8, 9, 10, 11, 12]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "No Mandatory Joint Studies",
+      "stance": "oppose",
+      "description": "ATC urges separate studies for generation and load, and argues that imposing coordinated studies nationwide would undermine reliability and effectiveness. Local planning authorities should retain discretion over study sequencing.",
+      "quote_ids": [7, 8, 9]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid Facility Reliability Safeguards",
+      "stance": "mixed",
+      "description": "ATC acknowledges that hybrid facilities raise unique reliability risks from potential unintended injections or withdrawals, and that transmission owners lack tools to curtail firm service. Any framework for hybrid facilities must address these risks through process matching and system protection requirements.",
+      "quote_ids": [7, 9, 10, 11]
+    },
+    {
+      "key": "aq:protection",
+      "name": "System Protection for Hybrid Facilities",
+      "stance": "support",
+      "description": "ATC calls for mandatory system protection facilities in any co-study scenario, warning that the inability to curtail firm service means full reliability impacts must be analyzed to prevent catastrophic consequences.",
+      "quote_ids": [9, 10, 11]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Rolled-In Cost Allocation, Not Direct Assignment",
+      "stance": "oppose",
+      "description": "ATC opposes the ANOPR's 100% direct assignment proposal as overly complex and prone to disputes. It favors continued rolled-in allocation to all benefiting customers, accepts direct assignment only for facilities exclusively used by the new load, and insists that transmission owners retain a reasonable return on investment under any cost framework.",
+      "quote_ids": [6, 13, 14, 15, 16, 17]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Limit Direct Assignment of Upgrade Costs",
+      "stance": "oppose",
+      "description": "ATC believes direct assignment of 100% of network upgrade costs to the load is too broad and complex. It should be confined to facilities exclusively attributable to the new load, and any framework must ensure TOs receive initial funding and a fair rate of return.",
+      "quote_ids": [13, 14, 15, 16, 17]
+    },
+    {
+      "key": "topic:national-priority",
+      "name": "Large-Load Interconnection as National Priority",
+      "stance": "neutral",
+      "description": "ATC frames timely interconnection of large loads as a matter of national security and economic development, using this framing to support arguments for flexibility and speed over regulatory complexity.",
+      "quote_ids": [1]
+    },
+    {
+      "key": "topic:grid-enhancing-tech",
+      "name": "GETs as Complements, Not Substitutes",
+      "stance": "mixed",
+      "description": "ATC supports grid-enhancing technologies as useful operational tools but argues they cannot substitute for additional transmission capacity when dealing with large, highly variable loads.",
+      "quote_ids": [12]
+    },
+    {
+      "key": "topic:to-rate-of-return",
+      "name": "Transmission Owner Rate of Return",
+      "stance": "support",
+      "description": "ATC invokes long-standing judicial precedent (Hope Natural Gas, Bluefield Waterworks) to argue that any rulemaking must preserve transmission owners' ability to earn a reasonable return on network upgrade investments.",
+      "quote_ids": [16]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction", "threshold", "jointstudy", "hybridrights", "protection", "upgradecost"],
+    "pr": ["flex", "study", "cost"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

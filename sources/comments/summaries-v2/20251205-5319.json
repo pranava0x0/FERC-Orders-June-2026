@@ -1,0 +1,331 @@
+{
+  "accession": "20251205-5319",
+  "filer": "Crusoe Energy Systems, Inc.",
+  "org_type": "data_center",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5319__Crusoe-Energy-Systems-Inc/Crusoe_RM26-4 Reply Comments 12-5-25.txt",
+  "overall_summary": "Crusoe, an AI data center operator, supports the ANOPR framework and urges FERC to raise the applicability threshold to 100 MW, impose heightened deposit and site-control requirements to curb speculative queue entries, and prioritize hybrid facilities that bring onsite generation. It also asks FERC to apply new rules only prospectively and to pursue PUHCA reform and supply-chain policy to speed AI infrastructure deployment.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The proposed 20 MW threshold for the new large load and hybrid facility interconnections may be too low to efficiently advance AI deployment.  The Commission should consider raising the threshold to facilities above 100 MW.",
+      "concern": "20 MW threshold is too low; recommends raising to 100 MW",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "streamlined processes should prioritize large facilities above 100 MW.  For example, Crusoe has under development facilities in the 1,200 MW range with both grid interconnection and onsite natural gas production.",
+      "concern": "Streamlined process should focus on very large facilities; cites own 1,200 MW projects",
+      "bins": [
+        "aq:threshold",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "hybrid facilities combining interconnection requests with onsite generation should be prioritized as they can reduce load requirements while potentially supporting the grid during peak demand.",
+      "concern": "Hybrid facilities with onsite generation should get priority treatment",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Joint interconnection studies for hybrid facilities that bring new generation with load will expedite the interconnection process and minimize the need for costly and time-consuming construction of network upgrades because the impact of the new load can be offset by the addition of new generation.",
+      "concern": "Joint studies for hybrid facilities reduce upgrade costs and speed interconnection",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Speculative interconnection requests are hindering AI deployment across the country.  Speculative requests will continue to delay interconnection for large scale projects and lead to uncertainty in real load demand.",
+      "concern": "Speculative queue entries harm AI deployment and distort load forecasts",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Crusoe supports the comments of Google and OpenAI asking the Commission to impose heightened standards for interconnection requests, including significant increase in deposit fees and site control requirements to deter speculative requests.",
+      "concern": "Supports higher deposits and site-control requirements to deter speculation",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The Commission should instead establish clear, objective criteria that require interconnection customers to demonstrate both technical capability and financial commitment beyond mere qualitative assurances of curtailment flexibility.",
+      "concern": "Objective technical and financial criteria needed, not just qualitative curtailment pledges",
+      "bins": [
+        "aq:deposits",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Such qualification standards can include site control requirements, minimum queue fees of $100,000 or greater, and tendering full security for transmission upgrades.",
+      "concern": "Proposes specific floor: $100,000 minimum queue fee plus full upgrade security",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Hybrid facility structures cause significantly less impact on the transmission grid than large loads that do not bring generation.  Thus, where hybrid facilities are proposed, the load and generation should be studied together to get an accurate picture of the load's impact on the grid.",
+      "concern": "Hybrid facilities have lower grid impact and should be studied jointly",
+      "bins": [
+        "aq:hybridrights",
+        "aq:jointstudy",
+        "pr:colo",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Crusoe supports SPP's currently proposed High Impact Large Load (HILL) and High Impact Large Load Generation Assessment (HILLGA) model because it is proactive and supported by a broad group of industry stakeholders.",
+      "concern": "Endorses SPP HILL/HILLGA framework as a model",
+      "bins": [
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The Commission should require hybrid interconnections to install the system protection facilities necessary to prevent unauthorized injections or withdrawals that exceed the respective rights available to the interconnection customer.",
+      "concern": "Protection facilities required to enforce injection and withdrawal limits for hybrids",
+      "bins": [
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "it is critical that companies must demonstrate actual technical ability to curtail loads and advance flexible computing to be eligible for expedited interconnection.  If there are no stringent requirements for flexible load, the Commission could inadvertently create inefficiencies if unproven technologies are prioritized and expedited.",
+      "concern": "Expedited treatment should require proof of curtailment capability, not just a pledge",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "subsequent rule or process changes should not apply to pending interconnection requests retroactively.  Crusoe is concerned that projects can get caught in a never-ending spiral of rule changes that will cause considerable delays even for projects that are nearly finished with the interconnection process.",
+      "concern": "New rules should apply prospectively only; retroactive application causes queue delays",
+      "bins": [
+        "topic:no-retroactive-rules"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Large loads and hybrid facilities should thus pay their fair share of current and future grid costs based on their use of the grid.",
+      "concern": "Cost allocation should track actual grid use, not total facility consumption",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "supply chain constraints for gas and electrical long lead equipment represent a separate challenge that will require complementary policy solutions.  Even with expedited interconnection studies, the time required to manufacture, deliver, and energize network upgrades and new transmission facilities will continue to create long lead times before large loads can be energized.",
+      "concern": "Equipment procurement lead times will remain a bottleneck even after study reforms",
+      "bins": [
+        "topic:supply-chain-procurement"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "By requiring sleeve PPAs in states that would otherwise allow retail sales to large loads, the PUHCA regulations create significant impediments to hybrid facility development and increase costs.",
+      "concern": "PUHCA sleeve PPA requirement blocks direct retail power deals and raises costs",
+      "bins": [
+        "topic:puhca-reform"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Eliminating the sleeve requirement to maintain PUHCA exemptions for upstream owners would reduce costs and accelerate project development.",
+      "concern": "Removing sleeve PPA rule would lower transaction costs and speed hybrid projects",
+      "bins": [
+        "topic:puhca-reform"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:threshold",
+      "name": "Raise threshold to 100 MW",
+      "stance": "support",
+      "description": "Crusoe argues the proposed 20 MW threshold is too low and would flood the queue with smaller projects better handled through existing processes. It recommends a 100 MW floor so that streamlined federal rules target only the largest, highest-impact facilities like Crusoe's own 1,200 MW projects.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint studies for hybrid facilities",
+      "stance": "support",
+      "description": "Crusoe supports studying load and generation together for hybrid facilities. Joint studies produce a more accurate picture of net grid impact and reduce the need for costly network upgrades.",
+      "quote_ids": [
+        4,
+        9
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Higher deposits to curb speculation",
+      "stance": "support",
+      "description": "Crusoe backs sharply higher deposit fees (at least $100,000) and mandatory site control to block speculative queue entries. It also wants objective technical and financial criteria, not just qualitative curtailment pledges, so queue positions reflect real development intent.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Prioritize hybrid facilities",
+      "stance": "support",
+      "description": "Hybrid facilities that bring onsite generation impose less grid burden than pure load and should be studied on the basis of actual injection and withdrawal rights. Crusoe urges FERC to treat hybrids as a distinct, preferred category.",
+      "quote_ids": [
+        3,
+        9
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Protection facilities for hybrids",
+      "stance": "support",
+      "description": "Crusoe supports mandatory system protection facilities for hybrid interconnections to prevent injections or withdrawals that exceed contracted rights, with minimum telemetry and operating standards.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited process requires proven flexibility",
+      "stance": "support",
+      "description": "Crusoe favors fast-track interconnection for curtailable loads but insists that applicants must prove actual technical curtailment ability. Giving expedited treatment to unproven technologies would create new inefficiencies.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study reforms must address speculation",
+      "stance": "support",
+      "description": "Crusoe supports study-process reforms but ties their effectiveness to removing speculative queue entries first. Accurate load data is a prerequisite for reliable interconnection studies.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location reduces grid burden",
+      "stance": "support",
+      "description": "Crusoe argues that co-locating generation with load materially reduces transmission grid impact and should be recognized in both the study process and the allocation of interconnection costs.",
+      "quote_ids": [
+        3,
+        4,
+        9
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility must be demonstrated",
+      "stance": "support",
+      "description": "Crusoe supports flexible load incentives but insists that eligibility for expedited treatment should require demonstrated curtailment capability, not just qualitative commitments.",
+      "quote_ids": [
+        2,
+        7,
+        12
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Hybrid facilities have lower grid impact",
+      "stance": "support",
+      "description": "Because onsite generation offsets withdrawal, hybrid facilities have a smaller footprint on the transmission grid than standalone large loads. Crusoe asks FERC to reflect this difference in study methodology and cost allocation.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation based on grid use",
+      "stance": "support",
+      "description": "Transmission and ancillary service charges should be calculated on the net power actually withdrawn from the grid, not on total facility consumption. Crusoe cites ERCOT's generation-netting settlement as a model.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP HILL/HILLGA model endorsed",
+      "stance": "support",
+      "description": "Crusoe explicitly endorses SPP's High Impact Large Load and HILLGA framework as a proactive, stakeholder-backed approach that protects resource adequacy while accommodating large load growth.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:no-retroactive-rules",
+      "name": "No retroactive rule application",
+      "stance": "oppose",
+      "description": "Crusoe opposes applying new interconnection rules to projects already in the queue. Retroactive changes force re-studies, extend timelines, and have already delayed Crusoe's own voltage ride-through approvals.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:supply-chain-procurement",
+      "name": "Equipment procurement bottleneck",
+      "stance": "neutral",
+      "description": "Even with faster studies, transformer and switchgear lead times of up to 48 months will remain the critical path for large load projects. Crusoe urges coordinated federal policy to strengthen domestic manufacturing capacity for electrical equipment.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "topic:puhca-reform",
+      "name": "Eliminate PUHCA sleeve PPA rule",
+      "stance": "support",
+      "description": "Crusoe supports eliminating the requirement to use sleeve PPAs to preserve PUHCA exemptions in states that permit direct retail sales. The sleeve requirement adds cost and delay without operational value.",
+      "quote_ids": [
+        16,
+        17
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "colo",
+      "flex",
+      "proximate",
+      "cost"
+    ],
+    "rg": [
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

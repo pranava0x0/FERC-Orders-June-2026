@@ -1,0 +1,244 @@
+{
+  "accession": "20260312-5096",
+  "filer": "Edison Electric Institute",
+  "org_type": "trade_assoc",
+  "filed": "03/12/2026",
+  "source_text": "sources/comments/files/20260312-5096__Edison-Electric-Institute/RM26-4-000-LettertoFERCwithAttach_031226.txt",
+  "overall_summary": "EEI supports accelerating large load interconnections and highlights that member utilities and state regulators have already made substantial progress through state-level tariffs and bilateral agreements covering roughly $840 billion in investment and 39 GW of load. EEI urges FERC to build on this existing state and utility work rather than disrupt it, and documents the breadth of approved and pending large load tariffs across 29 states as evidence that customer-protection mechanisms are already in motion.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "EEI shares the Administration's commitment to energy dominance and specifically supports improving the speed, efficiency, fairness, and predictability of large load interconnections.",
+      "concern": "EEI expresses overall support for faster and more predictable large load interconnection",
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "EEI member companies are committed to working collaboratively with states, large load customers, the Commission, and other stakeholders to ensure the timely interconnection of large loads while protecting all customers and the grid.",
+      "concern": "EEI frames timely interconnection and customer protection as equally important goals",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "EEI emphasized that members have been working with their state regulators, customers, and other stakeholders to integrate large loads into the electric system through state-regulated large load tariffs and bilateral retail service agreements.",
+      "concern": "EEI argues that state-regulated tariffs and bilateral agreements are the primary vehicle for large load integration",
+      "bins": [
+        "pr:cost",
+        "topic:state-led-process"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "We continue to underscore the importance of crafting federal policies that build upon, rather than disrupt, existing forward progress, including state processes and stakeholder efforts.",
+      "concern": "EEI cautions FERC not to override or displace state and utility-level processes already underway",
+      "bins": [
+        "topic:state-led-process",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The list of publicly announced projects currently represents approximately $840 billion in investment and more than 39 gigawatts (GW) of connected load.",
+      "concern": "EEI quantifies the scale of existing member-company large load project commitments",
+      "bins": [
+        "topic:scale-of-deployment"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Twenty states have approved at least one large load tariff, and another 9 states have pending large load tariffs.",
+      "concern": "EEI shows that state commissions have already built a broad framework of large load tariffs",
+      "bins": [
+        "topic:state-led-process",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "State commissions across the country have approved or are considering large load tariffs, processes, service regulations, and contractual terms, which are all tools in a broader strategy that electric companies and states can implement to reduce risk and protect customers.",
+      "concern": "EEI characterizes state tariff mechanisms as sufficient customer-protection tools",
+      "bins": [
+        "pr:cost",
+        "topic:state-led-process"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Commission orders across several regions that: Direct PJM to establish transparent rules to facilitate service of AI-driven data centers and other large loads co-located with generating facilities.",
+      "concern": "EEI cites FERC orders on co-location as part of the existing forward progress to build upon",
+      "bins": [
+        "pr:colo",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Approve a Large Load study process and Generation Assessment process in the Southwest Power Pool (SPP).",
+      "concern": "EEI highlights FERC approval of a large load study process in SPP as evidence of progress",
+      "bins": [
+        "pr:study",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "A new SPP proposal to create conditional transmission service to integrate High Impact Large Load customers quickly.",
+      "concern": "EEI notes SPP's conditional transmission service proposal as an example of expedited interconnection tools",
+      "bins": [
+        "aq:expedited",
+        "rg:spp",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Large load tariffs, processes, service regulations, and contractual terms are all tools in a broader strategy that electric companies and states can implement to reduce risk and protect customers.",
+      "concern": "EEI frames the full suite of state and utility mechanisms as adequate for customer risk protection",
+      "bins": [
+        "pr:cost",
+        "topic:state-led-process"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "EEI member companies are, and will continue to be, central to the task of integrating large load customers to advance our nation's economic and national security interests.",
+      "concern": "EEI asserts that member utilities are the primary actors needed to deliver large load interconnection",
+      "bins": [
+        "topic:scale-of-deployment"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Study Process Support",
+      "stance": "support",
+      "description": "EEI supports orderly study processes for large load interconnections and cites FERC approval of study processes in SPP as a model. The filing frames timely, transparent studies as central to achieving speed and predictability.",
+      "quote_ids": [
+        1,
+        2,
+        9
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Customer Cost Protection",
+      "stance": "support",
+      "description": "EEI consistently emphasizes that large load customers must pay their fair share and that state tariffs with minimum billing demands, exit fees, and financial assurance requirements protect other ratepayers. The filing treats existing state-level cost protections as sufficient.",
+      "quote_ids": [
+        2,
+        3,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Rule Transparency",
+      "stance": "support",
+      "description": "EEI cites the FERC order directing PJM to establish transparent rules for AI data centers co-located with generating facilities as part of the forward progress that federal policy should build on rather than displace.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexible Interconnection Tools",
+      "stance": "support",
+      "description": "EEI supports flexible interconnection approaches, including SPP's conditional transmission service for High Impact Large Load customers, as expedited mechanisms that utilities and RTOs can tailor to serve large loads quickly.",
+      "quote_ids": [
+        1,
+        10
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal vs. State Role",
+      "stance": "mixed",
+      "description": "EEI urges FERC to craft federal policy that complements rather than displaces state regulatory processes, implying concern about federal action that could override the state tariff frameworks already in place across 29 states.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Interconnection Pathways",
+      "stance": "support",
+      "description": "EEI points to SPP's conditional transmission service proposal as an example of expedited interconnection tools that allow High Impact Large Load customers to connect quickly while protecting the grid.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Co-location Progress",
+      "stance": "neutral",
+      "description": "EEI notes FERC's order directing PJM to establish transparent co-location rules as evidence of existing regional progress to build upon.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP Study and Service Progress",
+      "stance": "neutral",
+      "description": "EEI highlights FERC's approval of a large load study and generation assessment process in SPP, and SPP's own conditional service proposal, as models of regional progress already underway.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:state-led-process",
+      "name": "State Tariffs as Primary Framework",
+      "stance": "support",
+      "description": "A central theme of the filing is that state commissions and utilities have already built a comprehensive framework of large load tariffs and bilateral agreements across 29 states. EEI urges FERC to treat these state processes as the primary vehicle for large load integration and to avoid displacing them.",
+      "quote_ids": [
+        3,
+        4,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "key": "topic:scale-of-deployment",
+      "name": "Scale of Existing Member Projects",
+      "stance": "neutral",
+      "description": "EEI documents that publicly announced large load projects in member service territories represent roughly $840 billion in investment and over 39 GW of load, spanning data centers and manufacturers across dozens of states. This is presented as evidence that the industry is already delivering results.",
+      "quote_ids": [
+        5,
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "pjm",
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

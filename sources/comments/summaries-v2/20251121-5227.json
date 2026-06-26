@@ -1,0 +1,274 @@
+{
+  "accession": "20251121-5227",
+  "filer": "Industrial Energy Consumers of America et al.",
+  "org_type": "industrial",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5227__Industrial-Energy-Consumers-of-America-et-al/Industrial Joint Comments RM26-4.txt",
+  "overall_summary": "Four industrial customer organizations argue that FERC must protect manufacturers and other existing ratepayers by strictly applying cost-causation principles rather than imposing blanket 100% upgrade costs on all new loads. They propose an optional fast-lane federal interconnection process (XL Connect) for speed-driven loads willing to bear full upgrade costs, while keeping a state-level pathway available for manufacturers with methodical growth plans. They also urge a higher size threshold than 20 MW, a reasonable transition period, sunset provisions for state-level process replacements, and transparency improvements in load forecasting and transmission studies.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Cost impacts cannot be measured solely in terms of the direct cost of infrastructure. Speed-to-market demands, volatility in load forecasts, and the potential for stranded assets must also be considered in evaluating cost responsibility.",
+      "concern": "Cost-causation analysis must account for speed, volatility, and stranded-asset risk, not just direct infrastructure costs",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "mandating 100% cost responsibility for all network upgrades triggered by a new large load interconnection would bring an unjust and unreasonable result in some cases, particularly where growth is methodical, planned, and fits within the existing framework, and where existing customers in the impacted utility zone are generally allocated costs of new network upgrades that benefit them.",
+      "concern": "Blanket 100% upgrade cost mandate would be unjust for manufacturers with planned, methodical growth",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "mandating all new loads greater than 20 MW to go through a separate, new, federal process could cause significant negative impacts, including: disrupting existing processes; triggering confusion between state and federal organizations and regulators; creating business uncertainty; and diverting limited and scarce resources from staff at the Commission, at RTOs/ISOs, and at public utilities.",
+      "concern": "A mandatory federal process for all loads above 20 MW would disrupt existing state processes and create business uncertainty",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the Industrial Customer Organizations respectfully propose that the Commission consider developing an elective, \"fast-lane\" interconnection approach that addresses regional transmission and resource adequacy impacts without cutting out the distribution utility or violating state-level tariffs.",
+      "concern": "Filers propose an optional fast-lane federal interconnection pathway that preserves state jurisdiction",
+      "bins": [
+        "aq:expedited",
+        "pr:flex",
+        "topic:optional-federal-pathway"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "XL Connect is an optional federal, fast-lane interconnection process for a large load connecting to the FERC-jurisdictional transmission system at transmission-level voltage.",
+      "concern": "XL Connect is the filers' proposed optional fast-lane federal interconnection process",
+      "bins": [
+        "aq:expedited",
+        "topic:optional-federal-pathway"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Requiring All New Loads, Including Manufacturers, to Be Responsible for 100% of Network Upgrades They Are Assigned, Is Contrary to Longstanding Cost Causation Principles.",
+      "concern": "100% upgrade cost assignment for all new loads violates cost-causation precedent",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "FERC must tread carefully to avoid intruding into state regulation over retail ratemaking, including new customer service applications, distribution service to end-use customers, and certain generation-related issues.",
+      "concern": "Federal large load rules must not encroach on state retail regulatory authority",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "the new rule should not apply to new large loads where the customers have pending transactions, pending studies, pending new customer service applications, or demonstrated site control for a new or redeveloped project underway before the new rule is finalized.",
+      "concern": "Transition protections must shield in-progress manufacturing projects from new federal rules",
+      "bins": [
+        "topic:transition-period"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Regulations that affect processes currently managed at the state level could include a sunset provision, while regulations that are squarely focused on transmission grid transparency, load forecasting, and grid efficiency could be permanent reforms.",
+      "concern": "Rules displacing state processes should have a sunset provision; transparency reforms can be permanent",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:sunset-provision"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Customers with behind-the-meter generation should be billed on a net basis (accounting for their net demand requirements) and not on a gross load basis.",
+      "concern": "Behind-the-meter generation customers must retain net billing for transmission and capacity charges",
+      "bins": [
+        "pr:cost",
+        "topic:net-billing"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the Commission should also evaluate the potential refinements as to how the cost causation and beneficiary pays principles are applied in the context of different large load interconnection requests.",
+      "concern": "FERC should refine cost-causation methodology to account for different types of large load requests",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "the Industrial Customer Organizations believe a 20 MW limit is far too low and would capture a significant number of manufacturing entities and other industrial and institutional organizations that do not have the speed-to-market and scale demands that are primarily driving today's grid challenges.",
+      "concern": "The 20 MW threshold is too low and would sweep in manufacturers not causing the grid challenges",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "If a threshold is set by the Commission, it should be at a minimum of 75 MW-100 MW (or higher), restricted to new load added to the grid, and with reasonable and clear aggregation rules.",
+      "concern": "Any mandatory threshold should be at least 75 MW to 100 MW and apply only to new load",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "the Commission could – to protect existing customers and promote an efficient electric system – mandate the relevant transmission owner or regional grid operator evaluate the use of advanced reconductoring and the use of GETs, and other efficiency and optimization measures for any new large load interconnection application and related studies.",
+      "concern": "Transmission owners should be required to evaluate grid-enhancing technologies before building new infrastructure",
+      "bins": [
+        "pr:study",
+        "topic:grid-enhancing-technologies"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost Causation Over Blanket Rules",
+      "stance": "mixed",
+      "description": "The filers strongly support cost-causation principles but oppose applying a blanket 100% upgrade cost mandate to all new loads. They argue that speed-driven, large-scale entrants like data centers should bear full 'but for' upgrade costs, while manufacturers with methodical growth plans should continue under the existing beneficiary-pays framework. Net billing for behind-the-meter generation must also be preserved.",
+      "quote_ids": [
+        1,
+        2,
+        6,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Differentiated Upgrade Cost Rules",
+      "stance": "oppose",
+      "description": "The filers oppose the ANOPR's proposal to require all new large loads to pay 100% of assigned network upgrade costs. They argue this is unjust for manufacturers whose growth is planned and fits existing frameworks, and that the Commission must refine cost-causation methodology to distinguish speed-driven loads from methodical industrial customers.",
+      "quote_ids": [
+        2,
+        6,
+        11
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Preserve State Retail Jurisdiction",
+      "stance": "mixed",
+      "description": "The filers acknowledge FERC has jurisdiction over transmission-level interconnections but insist it must not override state authority over retail ratemaking, new customer service applications, and distribution service. They support a FERC role limited to transmission system studies and optional fast-lane processes, not a mandatory federalized regime for all large loads.",
+      "quote_ids": [
+        3,
+        7,
+        9
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Higher Size Threshold Needed",
+      "stance": "oppose",
+      "description": "The filers argue the proposed 20 MW threshold is arbitrary and far too low, capturing manufacturers that are not driving today's grid challenges. They recommend a minimum threshold of 75 MW to 100 MW, applied only to new loads, and suggest using FERC's Seven Factor Test or NERC's bulk electric system definition rather than a bright-line MW figure.",
+      "quote_ids": [
+        3,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Optional Fast-Lane Interconnection",
+      "stance": "support",
+      "description": "The filers propose an optional federal fast-lane process called XL Connect for loads with urgent speed-to-power needs. Qualifying loads would pay full upgrade costs in exchange for a 90-day study timeline, face stricter credit and flexibility requirements, and still retain a distribution utility connection to satisfy state jurisdictional requirements.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility Commitments in Fast Lane",
+      "stance": "support",
+      "description": "The filers' XL Connect proposal requires large loads using the optional fast-lane process to demonstrate flexibility commitments, including curtailable load, behind-the-meter generation, or bring-your-own-generation arrangements, as a condition of eligibility.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Transparent Load and Grid Studies",
+      "stance": "support",
+      "description": "The filers urge FERC to require transmission owners and regional grid operators to conduct transparent load forecasting and system impact studies, including mandatory evaluation of grid-enhancing technologies and reconductoring before authorizing new transmission buildout.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "topic:optional-federal-pathway",
+      "name": "Elective Federal XL Connect Process",
+      "stance": "support",
+      "description": "The filers' central structural proposal is an optional, elective federal interconnection pathway for speed-driven large loads, paired with continued availability of the state-level new customer service application process for manufacturers. This preserves jurisdictional lines while addressing grid stress from data center-scale demand.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "topic:transition-period",
+      "name": "Transition Protections for Manufacturers",
+      "stance": "support",
+      "description": "The filers ask FERC to establish a transition period with an effective date no earlier than 2027, and to exempt in-progress manufacturing projects with pending studies, transactions, or demonstrated site control from any new mandatory federal interconnection rule.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:sunset-provision",
+      "name": "Sunset Rules Displacing State Processes",
+      "stance": "support",
+      "description": "The filers argue that regulations displacing processes currently managed at the state level should include a sunset clause, while rules focused on transmission transparency and load forecasting can be made permanent.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:net-billing",
+      "name": "Net Billing for Behind-Meter Generation",
+      "stance": "support",
+      "description": "The filers urge FERC to preserve net billing for customers with behind-the-meter generation, measuring transmission and capacity obligations based on actual net demand rather than gross load.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:grid-enhancing-technologies",
+      "name": "Mandate GET Evaluation First",
+      "stance": "support",
+      "description": "The filers recommend FERC require transmission owners to evaluate grid-enhancing technologies and advanced reconductoring before recommending new transmission upgrades for any large load interconnection, protecting existing customers from unnecessary infrastructure costs.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost",
+      "jurisdiction",
+      "threshold",
+      "expedited"
+    ],
+    "pr": [
+      "cost",
+      "flex",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

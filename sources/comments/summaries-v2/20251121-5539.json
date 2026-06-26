@@ -1,0 +1,334 @@
+{
+  "accession": "20251121-5539",
+  "filer": "Google LLC",
+  "org_type": "data_center",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5539__Google-LLC/Comments of Google LLC.txt",
+  "overall_summary": "Google, as a large data center operator, urges FERC to prioritize reforms that can be implemented quickly, focusing on incentivizing co-located or electrically proximate load and generation pairs and voluntary load flexibility rather than mandating them. Google supports standardized financial commitments and anti-speculative deposits for all new large loads, and calls for holistic regional transmission planning that incorporates load-side data alongside generation queues.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Google urges the Commission to promptly and pragmatically prioritize the reforms that can be implemented most quickly and that will incentivize digital and energy infrastructure development in a manner that maximizes use of the existing infrastructure and minimizes strain on the grid.",
+      "concern": "urges FERC to focus on fast, targeted reforms rather than broad rulemaking",
+      "bins": [
+        "pr:study",
+        "topic:reform-prioritization"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Large load interconnection requests remain, in many respects, a blind spot for regional transmission planners because of the differing utility-specific requirements and approaches for definitively incorporating a load into their planning forecasts.",
+      "concern": "load-side data gaps hamper regional transmission planning",
+      "bins": [
+        "pr:study",
+        "topic:planning-visibility"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Without a comprehensive, coordinated transmission planning process built on a more complete picture of growth in supply and demand, we will be stuck developing transmission infrastructure through piecemeal, reactive processes that are insufficient to secure our position as a global manufacturing and economic powerhouse for decades to come.",
+      "concern": "fragmented planning leaves transmission development inadequate",
+      "bins": [
+        "pr:study",
+        "topic:planning-visibility"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The Commission should establish nationwide rules governing interconnection arrangements involving generation resources paired with new large loads that share either the same or an electrically proximate point of interconnection.",
+      "concern": "calls for uniform federal rules on proximate load-generation pairing",
+      "bins": [
+        "pr:proximate",
+        "pr:study",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The coordinated and expedited study of electrically proximate large loads and grid-connected generators will facilitate the development of digital infrastructure while minimizing the strain on, and maximizing the use of, existing power infrastructure.",
+      "concern": "expedited joint study of proximate pairs reduces grid strain",
+      "bins": [
+        "pr:proximate",
+        "pr:study",
+        "aq:jointstudy",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The Commission should craft procedures to expedite the transmission-level interconnection of new load and electrically proximate generation where a large load developer makes a financial commitment, via a power purchase agreement ('PPA') or a similar agreement, to bring online a new generating facility, uprate or expand an existing generating facility, retain a generating facility that would otherwise retire, or enable a resource that would otherwise be uneconomic to undergo fuel-switching.",
+      "concern": "proposes expedited interconnection tied to verified financial commitment for new generation",
+      "bins": [
+        "pr:proximate",
+        "aq:expedited",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "To ensure that the generation is appropriately tailored to the new load, those commitments should match the load's ramp and utilization schedule on a one-for-one basis with accredited generation, verified load flexibility, or demand response capabilities.",
+      "concern": "generation commitment must match load ramp and schedule one for one",
+      "bins": [
+        "pr:proximate",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "As with the rules governing colocation or electrically proximate pairs of load and generation, and as in SPP's HILL/HILLGA proposal, any new rules governing the interconnection of curtailable load must take the form of an incentive, not a requirement.",
+      "concern": "load flexibility must be voluntary, not mandatory",
+      "bins": [
+        "pr:flex",
+        "pr:colo",
+        "aq:hybridrights",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The Commission should establish a firm timeline for these and similar interconnection studies.  Google proposes a 90-day study timeline, which is consistent with recent expedited interconnection procedures approved by the Commission.",
+      "concern": "proposes a 90-day study timeline for expedited interconnection",
+      "bins": [
+        "pr:study",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Paired, electrically proximate load and generation should be studied based on the amount of injection and/or withdrawal rights that they request.",
+      "concern": "study methodology should reflect actual injection and withdrawal rights",
+      "bins": [
+        "pr:proximate",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Google agrees with the principle that the transmission service used to provide energy to new large loads should be based on the specific use of the transmission system at that point of interconnection.",
+      "concern": "transmission charges should reflect actual grid use, not peak nameplate demand",
+      "bins": [
+        "pr:cost",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "To comport with the cost causation principle that undergirds the just and reasonable standard, a load's transmission service should be measured based on its actual withdrawal rights from the transmission system.",
+      "concern": "cost causation requires charges keyed to actual withdrawal, not theoretical peak",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "All new loads interconnecting to the transmission system—whether paired with co-located or electrically proximate generation or not—should be subject to safeguards to protect other customers and ratepayers.",
+      "concern": "anti-speculative safeguards should apply universally, not just to co-located configurations",
+      "bins": [
+        "aq:deposits",
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "When public utilities create load forecasts for wholesale market administration and transmission planning, they should include large loads in the forecast only if the developer has made appropriate and verifiable financial commitments commensurate with their stage in the development process.",
+      "concern": "load forecasts should include only loads backed by verifiable financial commitments",
+      "bins": [
+        "aq:deposits",
+        "topic:planning-visibility"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "The Commission's reforms should apply uniformly to all new large loads (above a certain MW-level threshold) that seek to interconnect to the transmission system, regardless of end-use sector.",
+      "concern": "non-discriminatory threshold rule should cover all load types, not just data centers",
+      "bins": [
+        "aq:threshold",
+        "aq:protection"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Coordinated Regional Study Process",
+      "stance": "support",
+      "description": "Google supports establishing a coordinated, expedited interconnection study process that integrates large load data with generation queues, giving regional planners a complete picture of supply and demand. It proposes a firm 90-day study timeline and calls for the Commission to accelerate reforms that can be deployed quickly.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        9
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Expedited Proximate Pair Rules",
+      "stance": "support",
+      "description": "Google strongly supports nationwide rules for expedited interconnection of large loads paired with electrically proximate generation, modeled on SPP's HILLGA framework. Study methodology should reflect actual injection and withdrawal rights, and financial commitments (such as PPAs) should be required to qualify for the expedited track.",
+      "quote_ids": [
+        4,
+        5,
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Voluntary Flexibility Incentives",
+      "stance": "support",
+      "description": "Google supports expedited study treatment for loads that voluntarily offer curtailability or demand response, but insists flexibility must remain an incentive rather than a condition of interconnection. Generation commitments should match the load's ramp and utilization schedule on a one-for-one basis.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location as Incentive Not Mandate",
+      "stance": "support",
+      "description": "Google supports co-location and electrically proximate arrangements as incentivized pathways to faster interconnection, but opposes any rule that would make co-location or curtailability a requirement, citing non-discrimination obligations under the Federal Power Act.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Causation Based on Actual Use",
+      "stance": "support",
+      "description": "Google supports the principle that transmission service charges should be based on a large load's actual withdrawal rights from the grid, not its theoretical peak demand. This aligns with the Commission's long-standing cost causation precedent and is especially relevant for co-located configurations where the generator may serve the load behind the meter.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal Jurisdiction Over Pairing",
+      "stance": "support",
+      "description": "Google supports FERC exercising jurisdiction to establish nationwide rules for proximate load-generation pairs, drawing on the Commission's existing generator interconnection expertise.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Study for Paired Resources",
+      "stance": "support",
+      "description": "Google supports a coordinated, joint study process for electrically proximate load and generation that accounts for how both resources plan to operate together, consistent with Order No. 2023's treatment of storage resources.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Track for Qualifying Loads",
+      "stance": "support",
+      "description": "Google supports an expedited interconnection track for loads that bring new proximate generation or offer verified flexibility, with a 90-day study timeline. The expedited track should be an incentive tied to verifiable financial commitments.",
+      "quote_ids": [
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Standardized Financial Commitments",
+      "stance": "support",
+      "description": "Google supports standardized study deposits, readiness requirements, and withdrawal penalties for all new large loads. It advocates for its Capacity Commitment Framework, which requires long-term contracts, minimum demand charges, and upfront collateral to deter speculative interconnection requests and anchor load forecasts.",
+      "quote_ids": [
+        6,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Study Based on Actual Operating Parameters",
+      "stance": "support",
+      "description": "Google supports studying paired load and generation based on their requested injection and withdrawal rights, rather than treating them as separate standalone resources. Curtailability options must also be non-discriminatory and not interfere with operational needs.",
+      "quote_ids": [
+        8,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Non-Discriminatory Ratepayer Protection",
+      "stance": "support",
+      "description": "Google supports uniform safeguards that apply to all new large loads above a MW threshold, regardless of end-use sector, to protect existing customers from cost shifting and ensure new loads pay their full cost of service.",
+      "quote_ids": [
+        13,
+        15
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Uniform MW Threshold for All Sectors",
+      "stance": "support",
+      "description": "Google supports an MW-level threshold that triggers interconnection requirements uniformly across all new large loads, and opposes rules that single out specific end-uses such as data centers.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP HILLGA as Model",
+      "stance": "support",
+      "description": "Google cites SPP's HILLGA proposal as a useful model for expedited proximate-pair interconnection and notes that curtailability rules in that proposal must remain incentive-based, not mandatory.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:reform-prioritization",
+      "name": "Fast-Track Near-Term Reforms",
+      "stance": "support",
+      "description": "Google urges the Commission to sequence reforms by near-term impact, focusing first on measures that can be implemented quickly rather than attempting a comprehensive overhaul all at once.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:planning-visibility",
+      "name": "Load Data in Transmission Planning",
+      "stance": "support",
+      "description": "Google argues that large load interconnection requests are currently a blind spot for regional planners and that load forecasts should incorporate only verifiable, committed loads. A more complete demand-side picture is essential for efficient regional transmission planning.",
+      "quote_ids": [
+        2,
+        3,
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "jointstudy",
+      "expedited",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "threshold"
+    ],
+    "pr": [
+      "study",
+      "proximate",
+      "flex",
+      "colo",
+      "cost"
+    ],
+    "rg": [
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

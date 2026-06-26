@@ -1,0 +1,257 @@
+{
+  "accession": "20251205-5014",
+  "filer": "Critical Loop",
+  "org_type": "data_center",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5014__Critical-Loop/FINAL CL REPLY TO FERC RM26-4-000.txt",
+  "overall_summary": "Critical Loop supports a Large-Load Flexibility Commitment framework that lets large loads interconnect faster by committing to enforceable operating envelopes backed by on-site or adjacent resources. The filing argues that flexible, high-load-factor customers internalize much of their own interconnection cost and can reduce rates for other customers over time. Critical Loop asks FERC to require studies that model flexibility accurately, treat speed-to-power as a core metric, and publish interconnection timelines so reforms can be evaluated.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Critical Loop proposed a Large-Load Flexibility Commitment (\"LLFC\") construct that would allow large loads to interconnect faster when they commit to enforceable operating envelopes supported by on-site or adjacent resources, backed by telemetry, verification, and non-performance provisions.",
+      "concern": "Proposes an opt-in LLFC framework for faster large-load interconnection",
+      "bins": [
+        "pr:flex",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "for many large loads, time-to-power is the binding constraint. Interconnection queues are severely backlogged, and new transmission and generation are often contentious to permit and develop.",
+      "concern": "Identifies queue backlog and permitting delays as the central time-to-power problem",
+      "bins": [
+        "pr:study",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "An LLFC-style flexible connection can address the transmission bottleneck by defining a mix of firm and conditional service within an operating envelope, while complementary \"bring your own capacity\" mechanisms can address the generation bottleneck by ensuring that the firm portion of the load is backed by accredited capacity paid for by the customer.",
+      "concern": "LLFC plus bring-your-own-capacity addresses both transmission and generation bottlenecks",
+      "bins": [
+        "pr:flex",
+        "pr:colo",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "when a large load accepts a flexible connection and procures or brings capacity sufficient to meet its firm service, it is effectively internalizing much of the marginal cost of its interconnection.",
+      "concern": "LLFC customers internalize their own interconnection costs, reducing burden on other ratepayers",
+      "bins": [
+        "pr:cost",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "because large loads often operate at higher load factors than the system average, these customers can improve utilization of existing transmission and generation assets. Fixed costs are then recovered over a larger volume of energy sales, which can put downward pressure on average rates over time.",
+      "concern": "High-load-factor customers can lower average rates by spreading fixed costs across more energy sales",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Large loads should pay the costs they cause, and they should receive appropriate treatment, including access to expedited, flexible interconnection pathways and transparent queue treatment, when they verifiably reduce needed system investments and help lower long-run costs for other ratepayers through LLFC-style commitments and bring-your-own-capacity arrangements.",
+      "concern": "Cost causation should cut both ways: loads pay their costs and get expedited treatment when they reduce system costs",
+      "bins": [
+        "pr:cost",
+        "aq:expedited",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Requirements to curtail should be expressed in duration, magnitude, or frequency and should be built from time-series and probabilistic tools rather than relying only on worst-case deterministic assumptions.",
+      "concern": "Curtailment obligations should use probabilistic modeling, not only worst-case deterministic methods",
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "cost-of-service utility regulation can unintentionally favor traditional \"own and earn\" investment in traditional wires and generation over more flexible, customer-driven solutions.",
+      "concern": "Rate-of-return regulation biases utilities toward capital investment over flexible alternatives",
+      "bins": [
+        "topic:utility-incentive-bias"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "current tariffs and regulatory frameworks rarely give utilities a clear way to recover the costs of deploying these software and control solutions, or to earn returns on their optimal use that are comparable to traditional network investments.",
+      "concern": "Tariffs do not give utilities a path to recover costs of flexibility-enabling software and controls",
+      "bins": [
+        "topic:utility-incentive-bias",
+        "topic:tariff-transparency"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "we ask the Commission to ensure that flexible solutions and LLFCs are studied on a basis that can be compared with traditional upgrades. This occurs by requiring transmission providers to explicitly model enforceable flexibility and operating envelopes, rather than defaulting to static maximum-withdrawal assumptions that treat all co-located resources as absent or charging.",
+      "concern": "Studies must model LLFC flexibility against the same baseline as traditional upgrades",
+      "bins": [
+        "pr:study",
+        "pr:flex",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "encouraging or requiring transparent, hosting-capacity-style data for load so that customers can see where flexible operation and on-site resources can meaningfully reduce upgrade needs and select sites accordingly.",
+      "concern": "Hosting-capacity-style load data would help customers choose sites where flexibility reduces upgrade costs",
+      "bins": [
+        "topic:tariff-transparency",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Critical Loop urges the Commission instead to treat speed-to-power as a core reliability and national-competitiveness metric. If AI clusters and advanced manufacturing facilities cannot secure timely interconnections in the United States, investments may migrate to jurisdictions with more agile interconnection frameworks, with long-term implications for national security, supply-chain resilience, and economic leadership.",
+      "concern": "Speed-to-power should be a core reliability and competitiveness metric, not just a convenience measure",
+      "bins": [
+        "aq:expedited",
+        "topic:national-competitiveness"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Transmission providers and RTOs might be required to track and publish basic statistics for large-load interconnections, such as the time from request to initial determination and from request to energization, broken out by interconnection type and voltage level.",
+      "concern": "Asks FERC to require RTOs to publish interconnection timeline statistics so reform progress can be measured",
+      "bins": [
+        "pr:study",
+        "topic:national-competitiveness"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "LLFC opt-in flexibility framework",
+      "stance": "support",
+      "description": "Critical Loop supports an opt-in Large-Load Flexibility Commitment framework under which large loads can interconnect faster by committing to enforceable operating envelopes backed by on-site or adjacent resources. Curtailment obligations should be expressed in duration, magnitude, or frequency using probabilistic modeling. Studies must model these envelopes explicitly rather than defaulting to static maximum-withdrawal assumptions.",
+      "quote_ids": [
+        1,
+        3,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location studied with load",
+      "stance": "support",
+      "description": "Critical Loop supports recognizing co-located generation and storage as part of the LLFC solution. The filing asks that co-located resources be explicitly modeled in studies rather than treated as absent, and that bring-your-own-capacity arrangements address the generation bottleneck alongside the transmission bottleneck.",
+      "quote_ids": [
+        1,
+        3,
+        10
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost causation, high-load-factor value",
+      "stance": "support",
+      "description": "Critical Loop agrees that large loads should pay the marginal costs they cause, but argues that LLFC customers effectively internalize much of their interconnection cost. High-load-factor customers can also spread fixed costs across more energy sales, putting downward pressure on average rates. Cost causation principles should recognize both sides: loads pay what they cause and receive expedited treatment when they demonstrably reduce system costs.",
+      "quote_ids": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Accurate flexible-load study methods",
+      "stance": "support",
+      "description": "Critical Loop asks FERC to require studies that model LLFC flexibility on a basis comparable to traditional upgrades, use time-series and probabilistic methods rather than only worst-case deterministic assumptions, and include side-by-side upgrade tables. Transmission providers and RTOs should also track and publish interconnection timeline statistics so reform progress can be measured.",
+      "quote_ids": [
+        2,
+        7,
+        10,
+        13
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Hosting-capacity data for siting",
+      "stance": "support",
+      "description": "Critical Loop encourages FERC to require or encourage transparent, hosting-capacity-style load data so customers can identify sites where on-site resources and flexible operation meaningfully reduce upgrade needs.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited pathway for LLFC loads",
+      "stance": "support",
+      "description": "Critical Loop argues that loads that commit to LLFC arrangements and bring their own capacity should receive expedited treatment in queues and resource-adequacy frameworks. The filing asks for an initial determination within 60 days of submission and treats speed-to-power as a core national-competitiveness metric.",
+      "quote_ids": [
+        2,
+        6,
+        12
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Cost causation as threshold criterion",
+      "stance": "support",
+      "description": "Critical Loop supports cost-causation principles as the threshold for determining large-load interconnection charges, and argues these principles should also reward loads that verifiably reduce system costs through LLFC commitments.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:utility-incentive-bias",
+      "name": "Rate-of-return bias against flexibility",
+      "stance": "neutral",
+      "description": "Critical Loop observes that cost-of-service regulation gives utilities no clear path to recover costs of deploying flexibility-enabling software and controls, and instead rewards capital investment in traditional wires. The filing does not ask FERC to fix state ratemaking but asks that flexible solutions be studied on a basis comparable to traditional upgrades so state regulators can then align incentives through performance mechanisms.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:tariff-transparency",
+      "name": "Transparent curtailment and load data",
+      "stance": "support",
+      "description": "Critical Loop asks FERC to signal that transmission providers and RTOs must present flexibility requirements in clear, comparable terms so customers and state regulators can evaluate proposed tariffs. This includes expressing curtailment in duration, magnitude, or frequency and publishing hosting-capacity-style load data.",
+      "quote_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "key": "topic:national-competitiveness",
+      "name": "Speed-to-power as competitiveness metric",
+      "stance": "support",
+      "description": "Critical Loop urges FERC to treat speed-to-power as a core reliability and national-competitiveness metric alongside reliability, adequacy, and affordability. Delays risk driving AI and manufacturing investment to other jurisdictions with long-term implications for national security and economic leadership.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited",
+      "threshold"
+    ],
+    "pr": [
+      "flex",
+      "colo",
+      "cost",
+      "study",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

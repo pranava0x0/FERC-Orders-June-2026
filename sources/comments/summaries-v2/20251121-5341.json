@@ -1,0 +1,293 @@
+{
+  "accession": "20251121-5341",
+  "filer": "Vantage Data Centers",
+  "org_type": "data_center",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5341__Vantage-Data-Centers/RM26-4 Vantage Data Center Comments_FINAL_11212025.txt",
+  "overall_summary": "Vantage Data Centers supports the proposed ANOPR reforms, with particular emphasis on integrated hybrid facility study processes, expedited interconnection study procedures, cost allocation grounded in cost causation, and transition protections for projects already in the queue. Vantage urges caution on dispatchability requirements given reliability obligations to data center customers, and calls for FERC to collaborate with state regulators throughout implementation.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Vantage emphasizes that the specific principles and reforms concerning (1) hybrid interconnecting data center facilities supported in whole or in part by dedicated generating facilities (Principles 3 and 5), (2) expedited interconnection study procedures (Principle 7), (3) cost allocation for interconnection-related network upgrades (Principle 8), and (4) a fair and structured transition that respects existing rights (Principle 13) are of greatest importance.",
+      "concern": "Vantage identifies four reform areas it considers most critical",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "pr:flex",
+        "aq:expedited",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Vantage believes that the states are critical to the development and implementation of the reforms envisioned in the Secretary's October 23 transmittal to the Commission and subsequent ANOPR because of the integral relationship between those reforms and the regulatory role reserved to the states in Section 201(b)(1) of the Federal Power Act.",
+      "concern": "State regulatory authority must be respected in implementing ANOPR reforms",
+      "bins": [
+        "topic:state-coordination"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Too often, this process lacks transparency, with limited visibility into how queues are managed or how decisions are made, further eroding confidence in the system.",
+      "concern": "Lack of transparency in utility interconnection queue management undermines confidence",
+      "bins": [
+        "topic:queue-transparency"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Vantage is compelled to make significant investments in power plants, sometimes having to limit or forgo reliance on traditionally reliable grid-connected power due to load interconnection delays, shortages of available utility supply, or infeasible interconnection regulations requiring large new loads to be curtailable.",
+      "concern": "Interconnection delays force data centers into costly on-site generation investments",
+      "bins": [
+        "pr:study",
+        "aq:expedited",
+        "topic:hybrid-development-pressure"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Currently, many transmission and interconnection study processes involve independent evaluations at different times which can produce unintended results, including inaccurate assessments of impacts on the grid and resulting requirements for network upgrades that could have been avoided or mitigated by undertaking the studies in tandem.",
+      "concern": "Sequential rather than integrated studies generate unnecessary network upgrade requirements",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Attaining the solutions envisioned in the proposed ANOPR will require coordinated and carefully balanced cooperation between the Commission and affected state regulators, actively implementing the balance of authority over the electric power industry envisioned in FPA Section 201(b)(1).",
+      "concern": "FERC-state cooperation is necessary to achieve ANOPR goals within statutory boundaries",
+      "bins": [
+        "topic:state-coordination"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Vantage supports the objective of proposed ANOPR Principle 7 but encourages the Commission's cautious and thoughtful consideration of potential negative consequences of premature implementation of this Principle's dispatchability aspect.",
+      "concern": "Supports expedited study for curtailable loads but warns against hasty dispatchability requirements",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "making the generation associated with hybrid facilities fully dispatchable (even if restricted only to grid emergencies) undermines the reliability rationale for installing that generation in the first place.",
+      "concern": "Full dispatchability of hybrid generation defeats its reliability purpose for data centers",
+      "bins": [
+        "pr:flex",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "traditional contractual and organized market rule structures for dispatchability may subject the owner or operator of the hybrid facility's generation to Commission regulation as a statutory public utility under Section 201(e) of the Federal Power Act.",
+      "concern": "Dispatchability could trigger unwanted FERC public utility jurisdiction over data center generators",
+      "bins": [
+        "aq:hybridrights",
+        "topic:public-utility-jurisdiction"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "A key determinant in securing such flexibility will hinge on the conditions of curtailment, which must be further developed through a collaborative process that addresses the economic and reliability concerns of data center customers, as well as those of electric utilities and retail electricity consumers.",
+      "concern": "Curtailment conditions need collaborative development balancing data center and grid reliability needs",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The recommendation of Proposed ANOPR Principle 8 that large loads should be fully responsible for assigned network upgrades attributable to their interconnection accords fully with Vantage's commitment to absorb the full cost of upgrades required by its projects.",
+      "concern": "Vantage endorses full cost responsibility for interconnection-caused network upgrades",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "a transmission rate crediting mechanism is appropriate to ensure full compliance with the Commission's 'higher of' transmission pricing principle by ensuring that the data center customer is not allocated the full cost of network upgrades caused by its interconnection plus the system average embedded cost of transmission.",
+      "concern": "Rate crediting is needed to prevent double-charging on upgrade costs",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "it is imperative that projects with existing interconnection agreements are permitted to move forward under their current frameworks and grandfathered from any reform that is put in place – unless they voluntarily opt in to a new, Commission-approved tariff interconnection program that appropriately implements the guiding principles of the proposed ANOPR.",
+      "concern": "Existing interconnection agreements must be grandfathered; opt-in only for new reforms",
+      "bins": [
+        "aq:protection",
+        "topic:transition-rights"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "projects that are in advanced stages of development and have study results in hand should not be subjected to costly restudies and additional delays.",
+      "concern": "Projects with completed studies should not face restudies under new rules",
+      "bins": [
+        "aq:protection",
+        "topic:transition-rights"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Integrated Hybrid Study Process",
+      "stance": "support",
+      "description": "Vantage endorses integrated study processes that evaluate hybrid facility load and generation components together. Sequential studies produce inaccurate grid impact assessments and generate avoidable network upgrade requirements; joint studies eliminate this problem. Interconnection delays under current processes have forced Vantage to invest in stand-alone generation rather than grid-connected projects.",
+      "quote_ids": [
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Causation for Network Upgrades",
+      "stance": "support",
+      "description": "Vantage fully supports assigning large loads the full cost of network upgrades their interconnection causes, consistent with cost causation principles. Vantage also asks for a transmission rate crediting mechanism so that data center customers are not charged both the full upgrade cost and the system average embedded transmission cost.",
+      "quote_ids": [
+        1,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility with Dispatchability Caution",
+      "stance": "mixed",
+      "description": "Vantage supports the goal of expedited study for curtailable loads but warns that requiring hybrid generation to be fully dispatchable undermines the reliability rationale for on-site generation. Curtailment conditions should be developed collaboratively and account for data center customers' need for uninterruptible power. Demand response structures are preferable to direct utility dispatch of hybrid generation.",
+      "quote_ids": [
+        1,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Study for Flexible Loads",
+      "stance": "support",
+      "description": "Vantage supports Principle 7's expedited interconnection study track for curtailable and dispatchable large loads, while urging caution on premature implementation of dispatchability requirements that could create reliability and regulatory problems for data center operators.",
+      "quote_ids": [
+        1,
+        4,
+        7,
+        10
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Full Cost Responsibility Plus Crediting",
+      "stance": "support",
+      "description": "Vantage accepts full responsibility for network upgrade costs caused by its interconnections and supports Principle 8's cost assignment approach. Vantage also seeks a rate crediting mechanism to prevent double recovery through both upgrade cost assignment and system average embedded transmission charges.",
+      "quote_ids": [
+        1,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Load and Generation Study",
+      "stance": "support",
+      "description": "Vantage supports joint study of hybrid facility load and generation components, noting that current independent sequential evaluations can produce inaccurate grid impact assessments and unnecessary network upgrade requirements.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid Facility Operational Rights",
+      "stance": "mixed",
+      "description": "Vantage raises two concerns about full dispatchability of hybrid generation: it undermines the reliability rationale for on-site generation if dispatched power cannot be instantly recalled during a grid outage, and it may subject hybrid generation owners to FERC public utility regulation under FPA Section 201(e).",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Transition Protection for Existing Projects",
+      "stance": "support",
+      "description": "Vantage urges that projects with existing interconnection agreements be grandfathered under current frameworks with only voluntary opt-in to new programs. Projects that already have study results in hand should not face costly restudies or additional delays.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "topic:state-coordination",
+      "name": "FERC and State Coordination",
+      "stance": "support",
+      "description": "Vantage argues that state regulators must be active partners in implementing ANOPR reforms because of the states' reserved authority over retail electric regulation under FPA Section 201(b)(1). Effective reform requires coordinated cooperation between FERC and state regulators.",
+      "quote_ids": [
+        2,
+        6
+      ]
+    },
+    {
+      "key": "topic:queue-transparency",
+      "name": "Interconnection Queue Transparency",
+      "stance": "neutral",
+      "description": "Vantage describes the current interconnection queue process as lacking transparency, with limited visibility into how queues are managed and decisions made, which erodes confidence in the system among data center developers.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "topic:hybrid-development-pressure",
+      "name": "Delays Driving Off-Grid Development",
+      "stance": "neutral",
+      "description": "Vantage notes that interconnection delays, supply shortages, and infeasible curtailment requirements have compelled the company to invest in stand-alone on-site generation rather than preferred grid-connected configurations, illustrating the real-world cost of current process failures.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:public-utility-jurisdiction",
+      "name": "Public Utility Jurisdiction Risk",
+      "stance": "oppose",
+      "description": "Vantage warns that requiring hybrid generation to be dispatchable under traditional contractual or market structures could subject data center generation owners to FERC regulation as statutory public utilities under FPA Section 201(e), creating a significant regulatory disincentive to hybrid development.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:transition-rights",
+      "name": "Transition Plan Protections",
+      "stance": "support",
+      "description": "Vantage calls for grandfathering of projects with existing interconnection agreements and protection of projects with completed study results from costly restudies, ensuring that new reform rules do not retroactively disrupt advanced projects.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited",
+      "upgradecost",
+      "jointstudy",
+      "hybridrights",
+      "protection"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

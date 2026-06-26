@@ -1,0 +1,182 @@
+{
+  "accession": "20251128-5114",
+  "filer": "American Terawatt",
+  "org_type": "data_center",
+  "filed": "11/28/2025",
+  "source_text": "sources/comments/files/20251128-5114__American-Terawatt/ATW_FERC_ANOPR.txt",
+  "overall_summary": "American Terawatt advocates for accelerated interconnection of flexible AI data centers through grid-responsive technology (GRAIDs) and expedited FERC-directed processes. The filer argues that flexible loads can use existing idle grid capacity without requiring new power plants or raising consumer rates, and that federal coordination is needed to prevent regulatory inconsistency across regions.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Traditional interconnection of large loads averages five years, and often up to eight years throughout the country.",
+      "concern": "Interconnection process is slow",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Our ability to bring compute for AI online is severely constrained by the availability of power.",
+      "concern": "Power availability limits data center deployment",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "This structure rewards utilities for undertaking larger, slower, and more capital-intensive projects, because those projects expand rate base, even when smaller or faster solutions would deliver usable grid capacity sooner.",
+      "concern": "Utility incentives favor slow, expensive projects over faster solutions",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "By throttling GPU power and slowing computations rather than switching devices off entirely, grid-responsive AI data centers (GRAIDs) can maintain uptime SLAs without ever stopping workloads.",
+      "concern": "Technology can enable flexible loads without sacrificing reliability",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "GRAIDs can respond to peak grid load by throttling GPUs as required to reduce power while maintaining uptime in response to demand response (DR) signals from the grid operator.",
+      "concern": "Flexible loads can participate in demand response while staying on",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Because the grid is built for peak load, new loads that can reduce load (curtail) during peak times considerably reduce the need for expensive grid upgrades, keeping rates stable for other customers.",
+      "concern": "Flexible loads reduce grid upgrade costs and rate pressure",
+      "bins": [
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Roughly half of the United States' electric infrastructure is idle at any given time. Existing off-peak grid capacity could accommodate an additional 100 GW of flexible loads, more than enough to cover data-center growth and other demand through 2028 and beyond, without needing new power plants.",
+      "concern": "Existing idle capacity can support data center growth via flexible loads",
+      "bins": [
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Because grid peak events are rare and typically last about an hour, the impact to overall throughput is small even under worst-case throttling.",
+      "concern": "Throughput loss from throttling is manageable",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "This number represents at worst an annual throughput reduction of only 1.1 percent, or, in other words, access to 98.9 percent more capacity than if those chips sat idle awaiting grid upgrades and interconnection.",
+      "concern": "Small throughput penalty enables vastly more capacity",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Data-center developers willing to build flexible AI factories or retrofit existing sites with flexible load capabilities should have access to a significantly accelerated grid interconnection process.",
+      "concern": "Expedited interconnection should be available for flexible loads",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "By charging a predetermined up-front premium for this form of accelerated interconnection, utilities need not incur increased rates for consumers in the short term.",
+      "concern": "Up-front fees from flexible loads avoid rate increases for other customers",
+      "bins": [
+        "pr:cost",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "FERC should direct independent system operators (ISOs) to develop expedited interconnection processes for defined large flexible loads, with transparent criteria.",
+      "concern": "FERC should mandate expedited processes for flexible loads",
+      "bins": [
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "To ensure clarity for both developers and grid operators and prevent a national patchwork of regulations, FERC should define qualifying flexible loads for the purposes of transmission-level interconnection and wholesale market participation.",
+      "concern": "FERC should establish uniform national definition of qualifying flexible loads",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:expedited",
+      "name": "Expedited interconnection for flexible loads",
+      "stance": "support",
+      "description": "American Terawatt calls on FERC to direct ISOs to create expedited interconnection processes with transparent criteria for defined flexible loads. The filer argues this federal direction is necessary to avoid a regulatory patchwork and to enable faster grid access for data centers willing to accept curtailment.",
+      "quote_ids": [
+        1,
+        2,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Grid-responsive flexible loads",
+      "stance": "support",
+      "description": "American Terawatt advocates for grid-responsive AI data centers (GRAIDs) that throttle rather than shut down, enabling them to participate in demand response while maintaining uptime. The filer emphasizes existing idle grid capacity can support data center growth through flexible loads, with minimal throughput penalties and no need for new power plants.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost control through flexible loads and utility incentives",
+      "stance": "support",
+      "description": "American Terawatt argues that current utility incentive structures reward slow, capital-intensive projects that expand rate base. The filer proposes accelerated interconnection with up-front premiums from flexible load developers, allowing utilities to recover investment without raising rates for existing customers and generating revenue for future grid upgrades.",
+      "quote_ids": [
+        3,
+        6,
+        7,
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited"
+    ],
+    "pr": [
+      "flex",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

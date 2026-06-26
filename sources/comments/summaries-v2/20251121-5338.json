@@ -1,0 +1,295 @@
+{
+  "accession": "20251121-5338",
+  "filer": "Missouri Public Service Commission",
+  "org_type": "state_commission",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5338__Missouri-Public-Service-Commission/MoPSC Comments.txt",
+  "overall_summary": "The Missouri PSC urges FERC to build its final rule on existing RTO approaches from MISO and SPP, stay within the FPA's jurisdictional bright line, and treat states as partners rather than obstacles. The commission cautions that the proposed 20 MW threshold may be too low and warns against any rule that shifts large load costs onto retail ratepayers or undermines state authority over resource planning and retail tariffs.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "FERC's final rule should draw from existing RTO approaches. Both MISO and SPP developed their large load interconnection provisions through stakeholder engagement, and thus they provide examples of effective approaches that FERC should incorporate into its final rule.",
+      "concern": "Final rule should build on existing MISO and SPP stakeholder-developed approaches",
+      "bins": [
+        "pr:study",
+        "rg:miso",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Standardized study procedures and a defined interconnection queue could reduce regulatory burden and uncertainty for large load customers, protect the safety and reliability of the transmission system, uphold cost causation principles, protect customers from stranded costs, and mitigate the risks of speculative projects that complicate state-level load forecasting and resource planning.",
+      "concern": "Standardized study queue would protect reliability and prevent stranded cost risk",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "FERC must point to 'clear congressional authorization' for the power it claims to exercise.",
+      "concern": "FERC must demonstrate clear statutory authority for large load interconnection jurisdiction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The ANOPR does not explain whether, or how, current state and RTO interconnection practices are discriminatory or unjust or unreasonable. Unlike generation, load represents an opportunity for a utility to increase revenue, not competition.",
+      "concern": "ANOPR fails to establish that existing practices are discriminatory or unjust",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The proposed 20 MW threshold could be too low, potentially clogging the process with small entities, discouraging industrial expansion, and interfering with state retail tariffs. Load is not the same as generation, and any threshold should be based on evidence of different load profiles that would be subject to the rule.",
+      "concern": "20 MW threshold may be too low and lacks evidentiary basis",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The Missouri PSC supports efficient and comprehensive study procedures of hybrid facilities, but emphasizes that hybrid facility arrangements must be structured to prevent harm to the local utility and other customers.",
+      "concern": "Hybrid facility studies must guard against cost harm to existing customers",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Other customers should not bear the costs of co-located generation that becomes unnecessary if, for example, data centers become more efficient over time.",
+      "concern": "Retail customers must not subsidize stranded co-located generation costs",
+      "bins": [
+        "pr:colo",
+        "pr:cost",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The final rule should adopt strong requirements to deter speculative projects, fairly allocate costs and enhance transparency.",
+      "concern": "Rule needs anti-speculation measures, fair cost allocation, and transparency",
+      "bins": [
+        "pr:cost",
+        "aq:deposits",
+        "topic:speculative-project-deterrence"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "FERC must narrowly tailor its final rule so as not to conflict with the vertically integrated structure maintained in Missouri and other states. A final rule cannot commandeer state authority over resource planning or the construction and siting of large loads and generation.",
+      "concern": "Final rule must not override state resource planning authority in vertically integrated states",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-vertical-integration"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "FERC cannot override states' own regulatory and economic development choices, or force state utility ratepayers to construct generation that is not planned for and approved under state IRP and certificate proceedings.",
+      "concern": "FERC may not compel generation construction outside state IRP and certificate processes",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-vertical-integration"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "As Missouri and other state commissions confront issues of affordability in both wholesale and retail electricity rates, FERC must ensure that costs under its jurisdiction are allocated in a just and reasonable manner, and that other customers do not unjustly subsidize the energy needs of large load customers.",
+      "concern": "Large load cost allocation must not burden retail ratepayers",
+      "bins": [
+        "pr:cost",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The Secretary's abbreviated deadline of April 2026 for a final rule, combined with the novel legal and policy issues and rapidly evolving technology involved in large load interconnections, should warrant a cautious approach. FERC should consider adopting broad principles that allow for innovation and regional flexibility, rather than narrow prescriptions.",
+      "concern": "Tight April 2026 deadline argues for broad principles over rigid prescriptions",
+      "bins": [
+        "pr:flex",
+        "topic:rulemaking-timeline"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "In developing its final rule, FERC should look to the states as partners, not obstacles.",
+      "concern": "FERC should treat state commissions as cooperative partners",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "FPA Bright Line and State Authority",
+      "stance": "mixed",
+      "description": "Missouri PSC supports FERC asserting jurisdiction over transmission interconnections but insists it must stay within the FPA's bright line. The commission warns that FERC has not explained how existing practices are discriminatory, must demonstrate clear congressional authorization, and cannot commandeer state authority over resource planning, retail rates, or generation siting.",
+      "quote_ids": [
+        3,
+        4,
+        9,
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20 MW Threshold Too Low",
+      "stance": "oppose",
+      "description": "The proposed 20 MW threshold lacks an evidentiary basis and could clog the process with small entities, discourage industrial expansion, and conflict with state retail tariffs. Any threshold should rest on evidence distinguishing large load profiles from ordinary load.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Anti-Speculation and Financial Security",
+      "stance": "support",
+      "description": "Missouri PSC supports strong financial requirements to deter speculative projects and protect customers from stranded costs, including for co-located generation that may become unnecessary as technology evolves.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid Facility Study Requirements",
+      "stance": "support",
+      "description": "Missouri PSC supports comprehensive study of hybrid facilities but insists these arrangements must be structured to prevent harm to local utilities and retail customers from stranded generation costs.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Build on Existing RTO Processes",
+      "stance": "support",
+      "description": "Missouri PSC urges FERC to incorporate the MISO and SPP large load interconnection frameworks, which were developed through stakeholder engagement, into its final rule. Standardized study procedures and a defined queue would reduce regulatory burden while protecting reliability.",
+      "quote_ids": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Causation and Ratepayer Protection",
+      "stance": "support",
+      "description": "The final rule must uphold cost causation principles and ensure that large load infrastructure costs are not shifted onto existing retail customers. It should include requirements to deter speculative projects, fairly allocate costs, and enhance transparency.",
+      "quote_ids": [
+        2,
+        6,
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Customer Protection",
+      "stance": "mixed",
+      "description": "Missouri PSC supports studying co-located hybrid arrangements but warns that co-located generation costs must not fall on retail customers if the generation becomes unnecessary. States retain authority over the siting and approval of co-located generation.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Regional Flexibility Over Rigid Rules",
+      "stance": "support",
+      "description": "Given the tight April 2026 deadline and rapidly evolving technology, Missouri PSC urges FERC to adopt broad principles that allow regional innovation rather than prescriptive rules that cannot adapt to new circumstances.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO Approach as Model",
+      "stance": "support",
+      "description": "Missouri PSC highlights MISO's Expedited Project Review process as an effective stakeholder-developed approach that FERC should draw on for its final rule.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP HILL Proposal as Model",
+      "stance": "support",
+      "description": "Missouri PSC points to SPP's High Impact Large Load tariff filing, which preserves state jurisdiction and was developed through stakeholder engagement, as a model for the final rule.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:speculative-project-deterrence",
+      "name": "Deter Speculative Queue Entries",
+      "stance": "support",
+      "description": "Missouri PSC calls for strong requirements to deter speculative projects that complicate state-level load forecasting and resource planning, and to protect customers from stranded costs when projects do not materialize.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:state-vertical-integration",
+      "name": "Protect Vertically Integrated States",
+      "stance": "support",
+      "description": "Missouri and similarly structured states rely on integrated resource planning and certificate proceedings to govern generation construction. The final rule must not commandeer these processes or force ratepayers to fund generation outside state-approved plans.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:rulemaking-timeline",
+      "name": "Cautious Pace Given Tight Deadline",
+      "stance": "mixed",
+      "description": "Missouri PSC acknowledges the Secretary's April 2026 deadline but argues that the complexity of jurisdictional and technical issues warrants a cautious approach favoring broad principles over narrow prescriptions.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:cooperative-federalism",
+      "name": "State-Federal Partnership Model",
+      "stance": "support",
+      "description": "Missouri PSC urges FERC to follow the cooperative federalism model established in prior orders on demand response and storage, treating states as partners with complementary authority rather than obstacles to reform.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "deposits",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "miso",
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

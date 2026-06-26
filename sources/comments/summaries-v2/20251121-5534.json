@@ -1,0 +1,320 @@
+{
+  "accession": "20251121-5534",
+  "filer": "LS Power Development, LLC",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5534__LS-Power-Development-LLC/LS POWER Comments on DOE Proposed ANOPR.txt",
+  "overall_summary": "LS Power, a large independent power producer and competitive transmission owner, broadly supports the ANOPR's framework but urges FERC to integrate large-load interconnection into existing regional planning and interconnection processes rather than create parallel ad hoc rules. The company calls for expedited treatment tied to matched co-located generation, cost causation for network upgrades, and competitive market principles throughout, while opposing the proposed SSR/RMR-type study requirement for co-located generation.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the interconnection of large load customers to the interstate transmission grid is squarely within the Commission's jurisdiction.",
+      "concern": "FERC has exclusive jurisdiction over large-load interconnection to the interstate grid",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The Commission should integrate new large loads into the Commission-jurisdictional transmission grid through revisions to existing regional transmission planning and transmission interconnection frameworks rather than establishing additional ad hoc, piecemeal processes solely for large-load interconnections.",
+      "concern": "Large-load rules should reform existing frameworks, not create separate ad hoc processes",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "New large load must be well-defined. The Commission must define it clearly, based on an agreed upon standard, such as whether new large load would have a significant impact to the transmission and energy supply system or based upon load megawatts.",
+      "concern": "The definition of large load needs a clear, agreed standard",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "It is critically important for the Commission to incent large load to bring its own generation (referred to in the Proposed ANOPR as \"hybrid facilities\"), and we urge the Commission to craft final rules with this in mind.",
+      "concern": "Rules should create strong incentives for large load to pair with co-located generation",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Large load interconnection rules should provide an expedited process for generation paired with co-located new large load. In order to qualify for expedited interconnection consideration, the large load must bring generation that matches its maximum capacity and energy needs.",
+      "concern": "Expedited interconnection should require matched generation that covers full load capacity",
+      "bins": [
+        "aq:expedited",
+        "pr:colo",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Hybrid facilities interconnecting on an expedited basis (deferred transmission upgrades) can be fully curtailable. If associated generation is not providing sufficient energy for its load, then the load cannot look to the grid for its energy and if load is less than the generation supply, the generation may not come onto the grid (other than emergency dispatch).",
+      "concern": "Expedited hybrid interconnections must operate within strict generation-load balance constraints",
+      "bins": [
+        "aq:hybridrights",
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "it is also critical that the relevant regional energy markets send the appropriate price signal to indicate scarcity of supply resources such that the curtailment of flexible large loads cannot be used to undermine competitive energy market pricing by failing to reflect curtailable load in resource adequacy planning.",
+      "concern": "Curtailment of flexible large loads must not distort competitive energy market price signals",
+      "bins": [
+        "aq:protection",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The Commission should require that hybrid facility (large load and associated matching generation) interconnections with the interstate transmission grid be studied together where they are anticipated to interconnect electrically close to each other.",
+      "concern": "Co-located load and generation should be studied jointly to right-size upgrades",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "when a new large load requires system or network upgrades, the new large load customer should bear ultimate cost responsibility consistent with cost causation and beneficiary pays principles.",
+      "concern": "Large-load customers should pay for network upgrades they cause",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Attracting the long-term capital needed to meet the infrastructure needs created by the surge in large-load demand requires that all infrastructure investments receive just and reasonable compensation, established to the maximum possible extent through independent planning and competition.",
+      "concern": "Infrastructure investments must earn just and reasonable returns to attract capital",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The existing generation interconnection frameworks should be used and improved upon to establish standardized pro-forma terms for large load interconnections.",
+      "concern": "Standard pro-forma agreements for large-load should build on existing generation interconnection templates",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "LS Power does not support this principle and supports the EPSA position on this principle.",
+      "concern": "LS Power opposes applying SSR/RMR-type analysis to co-located generation serving data center load",
+      "bins": [
+        "pr:colo",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "EPSA rejects the underlying premise that existing generation that is moved behind the meter to serve data center load is akin to a partial suspension or otherwise warrants RMR/SSR type analysis for deactivating resources.",
+      "concern": "Behind-the-meter co-location does not trigger deactivation or SSR/RMR review",
+      "bins": [
+        "pr:colo",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "To introduce resource adequacy as a consideration in determining whether and at what cost to interconnect new large load would necessarily discriminate against that new load and existing generators.",
+      "concern": "Resource adequacy requirements in the interconnection process would unfairly discriminate against new load",
+      "bins": [
+        "aq:protection",
+        "pr:colo",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Large-load interconnection should be integrated into existing planning and study processes for generation interconnection. Large-load integration should be handled within the same coordinated regional planning and study framework used for generation and reliability.",
+      "concern": "Large-load interconnection should use the same regional planning framework as generation",
+      "bins": [
+        "pr:study",
+        "rg:pjm"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC Jurisdiction Affirmed",
+      "stance": "support",
+      "description": "LS Power agrees that large-load interconnection to the interstate transmission grid falls within FERC's exclusive jurisdiction under the Federal Power Act and Supreme Court precedent. The company supports using this jurisdictional authority to reform existing interconnection frameworks rather than building parallel structures.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Large Load Definition Needs Work",
+      "stance": "mixed",
+      "description": "LS Power supports the 20 MW threshold direction but calls for a substantive comment period to develop a clearer standard, whether based on grid impact or load megawatts, and to address regional variations and the meaning of 'new' load.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Study of Load and Generation",
+      "stance": "support",
+      "description": "LS Power supports requiring joint interconnection studies for hybrid facilities that interconnect electrically close together. Coordinated study ensures upgrades are sized correctly, avoids redundant infrastructure, and supports resource adequacy analysis.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Standardized Pro-Forma Terms",
+      "stance": "support",
+      "description": "LS Power supports standardized deposits, readiness requirements, and withdrawal penalties built on the existing generation interconnection pro-forma, with added provisions for cost and schedule accountability drawn from competitive Designated Entity Agreements.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid Rights Tied to Matched Generation",
+      "stance": "support",
+      "description": "LS Power urges that expedited interconnection rights for hybrid facilities be conditioned on the load bringing matched generation sufficient to cover its full capacity and energy needs, including through accreditation methodologies where applicable. Curtailable hybrids on deferred-upgrade paths must stay within their generation-load balance.",
+      "quote_ids": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Market Integrity Protections",
+      "stance": "support",
+      "description": "LS Power calls for rules that prevent curtailment of flexible large loads from suppressing competitive energy market price signals and from distorting resource adequacy planning. Open-access principles prohibit discriminatory treatment of new large load relative to existing load or generation.",
+      "quote_ids": [
+        7,
+        14
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Process for Matched Hybrids",
+      "stance": "support",
+      "description": "LS Power supports an expedited interconnection path but says it should be limited to facilities where generation fully matches the load's capacity and energy needs. The expedited track for curtailable facilities must include operational constraints and must not allow curtailment to undermine market price signals.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Cost Causation for Network Upgrades",
+      "stance": "support",
+      "description": "LS Power supports the beneficiary-pays principle: the large-load customer bears full cost responsibility for any network upgrades triggered by its interconnection. The company also calls for just and reasonable compensation for transmission owners required to own and maintain those facilities, citing Ameren Services Co. v. FERC.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Use Existing Regional Frameworks",
+      "stance": "support",
+      "description": "LS Power consistently argues that large-load interconnection should be integrated into existing Order No. 1000/1920 regional planning and generation interconnection study processes, not handled through separate ad hoc mechanisms. This ensures consistent modeling, coordinated protection, and NERC compliance.",
+      "quote_ids": [
+        2,
+        8,
+        11,
+        15
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Competition to Reduce Interconnection Costs",
+      "stance": "support",
+      "description": "LS Power urges FERC to use competitive processes for network upgrades above 100 kV identified through the interconnection process, and to allow interconnection customers to assign or compete build rights to qualified transmission developers. All infrastructure must receive just and reasonable compensation to attract long-term capital.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Rules and SSR/RMR Opposition",
+      "stance": "mixed",
+      "description": "LS Power supports incentivizing co-located generation and studying load and supply together. However, it firmly opposes ANOPR Principle 10's proposal to apply SSR/RMR-type analysis to existing generation serving co-located data center load, arguing this wrongly treats co-location as a partial suspension and discriminates against new large load.",
+      "quote_ids": [
+        4,
+        5,
+        8,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility Rules Must Preserve Market Signals",
+      "stance": "support",
+      "description": "LS Power supports integrating demand response frameworks into large-load interconnection agreements for flexible loads. Curtailment rights for hybrid facilities must be bounded by generation-load balance constraints, and resource adequacy planning must reflect curtailable load so that flexibility does not distort competitive price signals.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Co-location Is Not Deactivation",
+      "stance": "oppose",
+      "description": "LS Power, citing EPSA, opposes ANOPR Principle 10's premise that moving existing generation behind the meter to serve data center load constitutes a partial suspension. Any reliability review should be limited to safe and reliable interconnection, not broad resource adequacy analysis.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM as Reference Example",
+      "stance": "neutral",
+      "description": "LS Power references PJM's Necessary Study process as an example of an appropriate limited reliability assessment for co-located or hybrid arrangements, distinct from the broader SSR/RMR-type analysis the ANOPR proposes.",
+      "quote_ids": [
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

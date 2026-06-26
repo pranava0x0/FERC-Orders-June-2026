@@ -1,0 +1,375 @@
+{
+  "accession": "20251205-5297",
+  "filer": "FirstEnergy Service Company",
+  "org_type": "transmission_owner",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5297__FirstEnergy-Service-Company/FE Reply Comments ANOPR (12.5.2025) Final.txt",
+  "overall_summary": "FirstEnergy, a PJM transmission owner, opposes extending regional planning competition rules, mandatory disclosure of customer-specific data, and netting of hybrid load with generation to interconnection studies, arguing each undermines reliability and slows speed-to-power goals. It urges a 200 MW threshold limited to data center customers, rolled-in rate treatment for network upgrade costs, and no option-to-build for large load customers. Throughout, FirstEnergy frames its positions as necessary to keep the rulemaking narrow and fast.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "any federal rules governing the interconnection of large load customers should be narrowly tailored to achieving the Administration's speed to power mandate as quickly, affordably, and efficiently as possible.",
+      "concern": "overall framing: rule should be narrow and fast",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The Commission should not require that all network upgrades that are determined to be necessary solutions to interconnecting large load customers be included as projects subject to competition in regional transmission planning processes.",
+      "concern": "opposes applying Order 1000 competitive planning to large load upgrades",
+      "bins": [
+        "pr:study",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "there is now significant evidence that Order No. 1000 competitive transmission processes are not having the intended result in terms of either efficiency or cost-effectiveness.",
+      "concern": "Order 1000 competition has not delivered efficiency or cost savings",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "customer-specific information is often confidential under state law or contract, in which case FirstEnergy is required to maintain such information as strictly confidential unless the customer otherwise consents to its disclosure.",
+      "concern": "confidentiality bar on disclosing customer load profiles and cost data",
+      "bins": [
+        "aq:protection",
+        "topic:customer-confidentiality"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "AI tools at present are not sufficiently advanced to meaningfully accelerate planning and load analyses, although FirstEnergy anticipates that AI tools will eventually play an important role in interconnection studies.",
+      "concern": "AI tools not ready to mandate; encouragement is acceptable but mandates are not",
+      "bins": [
+        "pr:study",
+        "topic:automation-ai"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the Commission should avoid regulating the study practices of transmission providers at the detailed level of dictating the use of particular tools or programs.",
+      "concern": "mandating specific tools reduces flexibility and could hurt efficiency",
+      "bins": [
+        "pr:study",
+        "topic:automation-ai"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Studying the net impact of hybrid facilities undermines the North American Electric Reliability Corporation (\"NERC\") transmission planning performance standards, which require testing the ability of the transmission system to withstand specific contingencies including loss of load and loss of generation.",
+      "concern": "netting violates NERC TPL-001 by failing to test separate loss-of-load and loss-of-generation contingencies",
+      "bins": [
+        "aq:hybridrights",
+        "pr:flex",
+        "topic:nerc-reliability"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "netting fails to provide the redundant protection necessary for the system to perform reliably.",
+      "concern": "netting leaves the grid without the redundancy needed for reliable operation",
+      "bins": [
+        "aq:hybridrights",
+        "aq:protection",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "if the transmission network is only planned to support the net withdrawal and export at the point of interconnection, the interconnection capability may be undersized compared to the amount of generation that could be made available at a time when the load customer is curtailed or not consuming power.",
+      "concern": "net-only sizing leaves insufficient capacity when generation exceeds load",
+      "bins": [
+        "aq:hybridrights",
+        "pr:flex",
+        "topic:nerc-reliability"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Protective equipment that would enforce a net amount is not a failsafe; to the contrary, such equipment suffers from an approximately 6% failure rate.",
+      "concern": "system protection facilities fail roughly 6% of the time and cannot substitute for full study",
+      "bins": [
+        "aq:protection",
+        "pr:flex",
+        "topic:nerc-reliability"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "contingencies and control failures routinely defeat netting.",
+      "concern": "real-world contingencies undermine the assumption that protection systems hold",
+      "bins": [
+        "aq:protection",
+        "pr:flex",
+        "topic:nerc-reliability"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "netting raises another issue not addressed in the initial comments: it undermines NERC standards and therefore also clashes with the ANOPR's principle fourteen.",
+      "concern": "netting conflicts with ANOPR's own reliability principle as well as NERC TPL-001",
+      "bins": [
+        "aq:hybridrights",
+        "topic:nerc-reliability"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the Commission should increase the ANOPR's tentatively proposed threshold of 20 MW to at least 200 MW because doing so will prevent the final rule from frustrating the goals of the ANOPR by adversely affecting industrial, manufacturing and other large load customers who are not the intended targets of the rule",
+      "concern": "20 MW threshold is too low and captures non-data-center loads; 200 MW is the right floor",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "A low megawatt threshold for jurisdictional load interconnections may unintentionally propagate economic risk and instability in communities searching for economic certainty and stability.",
+      "concern": "low threshold harms manufacturing communities and job growth",
+      "bins": [
+        "aq:threshold",
+        "topic:economic-impact"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "if the Commission were to impose a requirement that 100% of network upgrade costs appear on a particular retail customer's electricity bill, that would arguably improperly usurp the states' jurisdiction over retail sales",
+      "concern": "direct cost assignment to retail customers raises FPA jurisdiction concerns",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "mandating direct assignment will likely lead to the same inefficiencies that have plagued the generator interconnection process, such as numerous withdrawal and restudy cycles",
+      "concern": "direct cost assignment replicates generator queue churn and delays",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "The best way to avoid these pitfalls is to use the Commission's long-standing approach that network upgrade costs are rolled in to the transmission owner's rate base and recovered from all wholesale transmission customers proportionally to their load",
+      "concern": "rolled-in ratemaking is the equitable and tested cost allocation method",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "That principle clashes with the ANOPR's \"speed to power\" aims: it will introduce delays, inefficiencies, and reliability issues.",
+      "concern": "option-to-build for large load customers conflicts with speed-to-power goals",
+      "bins": [
+        "pr:study",
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "large load owners may be sophisticated in other technical fields, but they typically have not been involved in construction of transmission facilities and are not in the same position as transmission owners when it comes to knowledge and expertise regarding transmission facilities.",
+      "concern": "large load customers lack the expertise to build transmission safely or efficiently",
+      "bins": [
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Transmission owners can ensure compliance much more efficiently when they are the ones building facilities in the first place.  It is not just or reasonable to make transmission owners responsible for reliability of network upgrades constructed by others.",
+      "concern": "transmission owners bear reliability responsibility and should remain the builders",
+      "bins": [
+        "topic:option-to-build",
+        "aq:protection"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Keep Rule Narrow and Fast",
+      "stance": "support",
+      "description": "FirstEnergy argues the rule should stay tightly scoped to speed-to-power and should not layer in regional planning competition, mandatory tool mandates, or option-to-build extensions. Each addition would complicate the proceeding and slow interconnection of data center loads.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        18
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Rolled-In Cost Allocation",
+      "stance": "support",
+      "description": "FirstEnergy defends rolled-in rate treatment for network upgrade costs as equitable and tested. It argues direct assignment to retail customers raises federal jurisdiction problems and replicates the withdrawal and restudy cycles that have slowed generator interconnection.",
+      "quote_ids": [
+        1,
+        3,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Oppose Hybrid Netting",
+      "stance": "oppose",
+      "description": "FirstEnergy opposes studying hybrid facilities on a net basis because NERC TPL-001 requires separate loss-of-load and loss-of-generation contingency tests. Netting also under-sizes interconnection capacity when generation output exceeds load consumption.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "System Protection Not Sufficient",
+      "stance": "oppose",
+      "description": "FirstEnergy contends that system protection facilities cannot substitute for proper interconnection studies because they fail roughly 6% of the time and are overridden by contingencies. NERC standard PRC-012-2 requires planners to account for exactly these failures.",
+      "quote_ids": [
+        4,
+        8,
+        10,
+        11,
+        20
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Netting Undermines Reliability",
+      "stance": "oppose",
+      "description": "FirstEnergy argues that netting load with generation hides real-world variability and control-system interactions that a net number cannot capture. Reliability standards require separate study of load and generation regardless of on-site generation.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "200 MW Threshold for Data Centers",
+      "stance": "support",
+      "description": "FirstEnergy urges raising the threshold to 200 MW and limiting the rule to data center customers. It argues a 20 MW floor sweeps in manufacturers and industrial loads that are not the source of today's grid pressure and would harm job growth and community investment.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Preserve State Retail Jurisdiction",
+      "stance": "support",
+      "description": "FirstEnergy argues the Commission should limit cost rules to wholesale transmission customers and leave retail allocation to state commissions, avoiding a jurisdictional conflict under the Federal Power Act that could tie up interconnection in appellate courts.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Transmission Owner Return on Investment",
+      "stance": "support",
+      "description": "FirstEnergy supports rolled-in rates and argues that, at minimum, any cost assignment approach must preserve the transmission owner's right to earn a reasonable return on network upgrade investments.",
+      "quote_ids": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Planning Already Covers This",
+      "stance": "neutral",
+      "description": "FirstEnergy notes that large load interconnections requiring regional upgrades are already reviewed through PJM's Regional Transmission Expansion Plan process, undercutting the case for new federal competition mandates.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "topic:customer-confidentiality",
+      "name": "Confidentiality Bars Public Disclosure",
+      "stance": "oppose",
+      "description": "FirstEnergy opposes mandatory public posting of customer-specific load profiles and cost data, citing state law and contract obligations that require it to keep such information confidential absent customer consent.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:automation-ai",
+      "name": "AI Mandates Premature",
+      "stance": "oppose",
+      "description": "FirstEnergy does not object to eventual AI use in interconnection studies but opposes mandating specific tools now. It argues AI is not yet ready to meaningfully accelerate study timelines, and rigid tool requirements would reduce provider flexibility.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:nerc-reliability",
+      "name": "NERC Standards Prohibit Netting",
+      "stance": "oppose",
+      "description": "FirstEnergy argues that NERC TPL-001 and PRC-012-2 together require separate contingency testing of load and generation and require evaluating protection system failures. Netting short-circuits both requirements and conflicts with ANOPR principle fourteen.",
+      "quote_ids": [
+        7,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:economic-impact",
+      "name": "Low Threshold Harms Manufacturing",
+      "stance": "oppose",
+      "description": "FirstEnergy warns that a 20 MW threshold would pull manufacturing and industrial loads into the rule's scope, creating economic uncertainty in communities that depend on that investment and undermining reshoring efforts.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "topic:option-to-build",
+      "name": "No Option to Build for Large Loads",
+      "stance": "oppose",
+      "description": "FirstEnergy opposes extending an option-to-build to large load customers because they lack transmission construction expertise, the generator precedent under Order 845 has produced delays and reliability problems, and transmission owners remain liable for reliability regardless of who builds.",
+      "quote_ids": [
+        18,
+        19,
+        20
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "hybridrights",
+      "protection",
+      "threshold",
+      "jurisdiction",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

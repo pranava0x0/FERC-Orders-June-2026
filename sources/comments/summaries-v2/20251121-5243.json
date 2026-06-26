@@ -1,0 +1,263 @@
+{
+  "accession": "20251121-5243",
+  "filer": "American Electric Power Service Corporation",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5243__American-Electric-Power-Service-Corporation/AEP Comments on ANOPR - 11.21.25 (Final for Filing)(3582307).txt",
+  "overall_summary": "AEP, a major transmission owner serving over five million customers across 11 states, supports the ANOPR's goal but argues that interconnecting large loads requires simultaneous reforms to generation interconnection, transmission planning, and cost allocation. AEP urges FERC to adopt a 'connect and manage' approach for generators, an entry fee model to replace the current 'but-for' cost allocation for generator interconnections, proactive scenario-based transmission planning, and a nationwide cost allocation for extra-high-voltage backbone transmission at 345 kV and above.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "an approach which focuses solely on interconnecting large loads to the electric grid will not fully support rapid data center and industrial load growth.",
+      "concern": "Large-load-only focus is insufficient; generation interconnection and transmission planning reforms are equally needed",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The Commission must also make the necessary changes to ensure that the generation needed to serve that load is able to come online in a timely and efficient fashion.",
+      "concern": "FERC must reform generation interconnection to match the pace of large-load additions",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "AEP supports the application of a 'connect and manage' approach (in tandem with other reforms, such as the entry fee model for generator interconnection described below) as a practical solution for the timely interconnection of generation.",
+      "concern": "Supports connect-and-manage plus entry fee as a package to break generation queue backlogs",
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Under this approach, all generators pay an entry fee and can rapidly connect to the grid subject to curtailment until supporting network transmission is planned and constructed.",
+      "concern": "Entry fee model allows generators to connect immediately under curtailment while awaiting network upgrades",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The Commission should decisively address the current generation interconnection models which are hindering sufficient generation from coming online quickly enough to meet today's generation resource adequacy and reliability needs.",
+      "concern": "Current generation interconnection models are too slow to meet load growth and reliability needs",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "AEP supports the widespread adoption of an entry fee model for generator interconnections, which integrates generator interconnection and transmission planning into a single streamlined process, reducing duplicative studies and expediting transmission upgrade identification.",
+      "concern": "Entry fee model integrates generation interconnection and transmission planning to cut duplicative studies",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "It incorporates a predictable, transparent, and easy to calculate fee for generators to pay to connect to the grid, minimizing delays from cost disputes and preventing restudies as generators drop out of the queue due to unexpected and growing interconnection costs.",
+      "concern": "Transparent upfront fee eliminates restudy delays caused by generator queue withdrawals",
+      "bins": [
+        "pr:cost",
+        "topic:entry-fee-model"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "the prevalent siloed approach to transmission planning—in which there are separate, reactive planning processes for generation interconnection and grid expansion—will not deliver infrastructure fast enough to ensure the United States continues to be a leader in artificial intelligence and is able to grow its manufacturing base.",
+      "concern": "Siloed reactive planning cannot deliver infrastructure fast enough to support AI and manufacturing growth",
+      "bins": [
+        "pr:study",
+        "topic:proactive-transmission-planning"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Consistent with the ANOPR's third Principle for Reform—which encourages studying the interconnection of load and generation together—such proactive planning will necessarily integrate the consideration of both.",
+      "concern": "Proactive planning should study load and generation together, consistent with ANOPR's third reform principle",
+      "bins": [
+        "pr:study",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Delays and uncertainty over who must pay for transmission can prevent investment in new transmission needed to serve data centers and expanding load on the grid.",
+      "concern": "Cost allocation uncertainty blocks transmission investment needed for large-load growth",
+      "bins": [
+        "pr:cost",
+        "topic:national-cost-allocation"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the Commission should establish a uniform national charge for all 'backbone' transmission projects—including, for example, high voltage transmission at 345 kV and above.",
+      "concern": "Proposes a nationwide postage-stamp charge for EHV backbone transmission at 345 kV and above",
+      "bins": [
+        "pr:cost",
+        "topic:national-cost-allocation"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "AEP expects over 28 GW of contracted new load by 2030, supported by binding retail customer financial agreements.",
+      "concern": "AEP documents its direct exposure to large-load growth with 28 GW of contracted demand by 2030",
+      "bins": [
+        "topic:utility-load-growth"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "AEP was the first utility in the country to implement state-level tariff reforms to ensure cost recovery and preserve affordability to protect existing customers.",
+      "concern": "AEP implemented state retail tariffs requiring minimum usage thresholds and long-term contracts to protect existing customers",
+      "bins": [
+        "pr:cost",
+        "topic:retail-tariff-protection"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "the Commission cannot allow parochial fights over cost allocation to slow our nation's progress and impede the connection of these loads to the system.",
+      "concern": "Regional cost allocation disputes are a national obstacle that FERC must preempt with a uniform rule",
+      "bins": [
+        "pr:cost",
+        "topic:national-cost-allocation"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "AEP proposes that the Commission adopt a national cost allocation for all 'backbone' transmission projects—that is, transmission lines that are extra high voltage, for example 345 kV and above (EHV transmission).",
+      "concern": "Formal request for FERC to adopt nationwide cost allocation covering EHV transmission",
+      "bins": [
+        "pr:cost",
+        "topic:national-cost-allocation"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Reform generation interconnection process",
+      "stance": "support",
+      "description": "AEP argues that interconnecting large loads requires simultaneous reforms to the generation interconnection process. It supports a connect-and-manage approach that allows generators to energize subject to curtailment before network upgrades are complete, and proactive scenario-based transmission planning that studies load and generation together rather than in silos.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation must support investment",
+      "stance": "support",
+      "description": "AEP contends that the current but-for cost assignment for generator interconnections and the lack of a clear rule for backbone transmission both block needed investment. It supports an entry fee model that gives generators upfront cost certainty, and a national postage-stamp charge for all transmission at 345 kV and above so that regional disputes do not delay grid expansion.",
+      "quote_ids": [
+        1,
+        4,
+        6,
+        7,
+        10,
+        11,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Study load and generation together",
+      "stance": "support",
+      "description": "AEP endorses the ANOPR's third reform principle that load and generation interconnections should be studied jointly. It argues that proactive planning that integrates both is necessary to avoid the delays produced by treating each as a separate one-off study.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Connect-and-manage flexibility for generators",
+      "stance": "support",
+      "description": "AEP supports a connect-and-manage pathway modeled on ERCOT, where generators can interconnect on an energy-only basis subject to curtailment risk and then progress to full network resource status as proactive transmission planning provides supporting infrastructure. It would eliminate the ERIS-only dead end so all generators are on a pathway to capacity status.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "topic:entry-fee-model",
+      "name": "Entry fee for generator interconnection",
+      "stance": "support",
+      "description": "AEP urges FERC to replace the current study-based, but-for cost allocation with a standardized or formulaic entry fee known before a generator enters the queue. The fee would be transparent, easy to calculate, and consistent with the beneficiary-pays principle, eliminating restudy cascades triggered by queue withdrawals.",
+      "quote_ids": [
+        7,
+        6,
+        4
+      ]
+    },
+    {
+      "key": "topic:proactive-transmission-planning",
+      "name": "Proactive scenario-based planning",
+      "stance": "support",
+      "description": "AEP calls for replacing reactive, one-off transmission upgrade studies with proactive scenario-based planning that forecasts generation and load across the life of transmission investments. This would reduce the need for network upgrade studies, lower costs, and speed interconnection for both generators and large loads.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:national-cost-allocation",
+      "name": "Nationwide EHV backbone charge",
+      "stance": "support",
+      "description": "AEP proposes that FERC adopt a uniform national cost allocation for all transmission at 345 kV and above, analogous to the nationwide NERC funding mechanism. The rationale is that EHV transmission provides broad, bi-directional benefits to all Americans and that regional cost allocation disputes have historically taken years to resolve.",
+      "quote_ids": [
+        10,
+        11,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "topic:utility-load-growth",
+      "name": "AEP direct large-load exposure",
+      "stance": "neutral",
+      "description": "AEP documents its own experience with large-load growth: 28 GW of contracted load by 2030, 190 GW in the broader pipeline, and a $72 billion capital plan including $30 billion for transmission. This grounds its reform proposals in direct operational experience rather than theory.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:retail-tariff-protection",
+      "name": "State tariffs protect existing customers",
+      "stance": "neutral",
+      "description": "AEP describes the state-level large-load tariffs it has already implemented in Ohio, Indiana, West Virginia, and Kentucky, which include minimum usage thresholds and long-term contract requirements. These protect existing customers from cost shifting but are presented as a symptom of the need for the broader federal reforms AEP requests.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

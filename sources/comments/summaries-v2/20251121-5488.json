@@ -1,0 +1,243 @@
+{
+  "accession": "20251121-5488",
+  "filer": "Arizona Public Service Company",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5488__Arizona-Public-Service-Company/APS Motion to Intervene and Comment under Docket No. RM26-4-000.txt",
+  "overall_summary": "Arizona Public Service Company supports the DOE's initiative to address large load interconnection but raises implementation concerns. APS requests higher thresholds, longer study timelines with stakeholder input, and careful attention to cost allocation, hybrid facility standards, and safeguards against shifting costs to existing customers or delaying generator interconnection processes.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "APS does believe that the 20 MW threshold for what is considered a large load could be increased.",
+      "concern": "20 MW threshold is too low",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the ANOPR's position of a 60-day study timeline might be inadequate dependent on the information required for the study itself, and the timeline should be determined in consultation with the stakeholders and transmission planners.",
+      "concern": "60-day study timeline insufficient and needs stakeholder input",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Is the utility expected to back up all, some, or none of the load for a large load that is co-locating with a generator?",
+      "concern": "Unclear backup responsibility for co-located large loads",
+      "bins": [
+        "pr:colo",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Will hybrid facilities be expected to match the NERC requirements?",
+      "concern": "Hybrid facility NERC compliance unclear",
+      "bins": [
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the burden would fall to the host utility to manage frequency deviations caused by mismatches.",
+      "concern": "Utility bears frequency management burden for hybrid mismatches",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "What safeguards will there be to prevent delays to the generator interconnection process given the increase in complexity of the study process?",
+      "concern": "Study complexity risk delays to generator interconnection",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Will there be safeguards to ensure that there is no cost shift between new large load customers and other transmission or retail customer classes?",
+      "concern": "Cost allocation safeguards needed to prevent shifting to existing customers",
+      "bins": [
+        "pr:cost",
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The ANOPR states that the load will be responsible for network upgrades. Will the costs be handled like network upgrades in the existing generator interconnection process, through direct assignment, or through some separate rate treatment?",
+      "concern": "Network upgrade cost treatment methodology unclear",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Will transmission system upgrades required to deliver power to large loads qualify as network upgrade costs for the load, or just those costs required to connect them to the transmission system?",
+      "concern": "Scope of costs charged to large loads not defined",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "substantial infrastructure investments required to connect and serve these large loads will be paid for by those new large load customers, not existing customers.",
+      "concern": "Large load customers must pay their own infrastructure costs",
+      "bins": [
+        "pr:cost",
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Will all large loads connecting to a Transmission Service Provider's system go through the same interconnection process, regardless of their load serving entity?",
+      "concern": "Jurisdictional consistency across different load serving entities",
+      "bins": [
+        "topic:regulatory-consistency"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "APS intends to evaluate any draft proposed rule with a focus on system reliability and economic impact.",
+      "concern": "Evaluation criteria must include reliability and economic impacts",
+      "bins": [
+        "pr:study"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:threshold",
+      "name": "Large load threshold too low",
+      "stance": "oppose",
+      "description": "APS argues the 20 MW threshold for large loads is set too low and should be increased.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Study timeline needs extension",
+      "stance": "oppose",
+      "description": "APS opposes the proposed 60-day study timeline as inadequate and calls for timelines determined in consultation with stakeholders and transmission planners.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid facility NERC standards unclear",
+      "stance": "neutral",
+      "description": "APS seeks clarification on whether hybrid facilities (co-located load and generation) will be required to meet NERC frequency and ramping standards.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Cost allocation safeguards",
+      "stance": "support",
+      "description": "APS supports safeguards against cost-shifting to existing customers and emphasizes that large load customers must pay for their own infrastructure investments.",
+      "quote_ids": [
+        7,
+        10
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Upgrade cost methodology",
+      "stance": "neutral",
+      "description": "APS seeks clarification on how network upgrade costs will be assigned to large loads, whether following generator interconnection process methods or alternative approaches, and the scope of costs (connection versus delivery system upgrades).",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Co-location backup responsibility",
+      "stance": "neutral",
+      "description": "APS seeks clarity on utility backup obligations when large loads co-locate with generators.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study process design and safeguards",
+      "stance": "mixed",
+      "description": "APS generally supports the study requirement but calls for longer timelines with stakeholder consultation, safeguards against delays to generator interconnection from added complexity, and evaluation criteria focused on reliability and economic impact.",
+      "quote_ids": [
+        2,
+        6,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation and cost causation",
+      "stance": "support",
+      "description": "APS supports the principle that large load customers pay for costs they cause, including network and infrastructure upgrades, and seeks safeguards against cost-shifting to existing transmission or retail customer classes.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-located generator and load",
+      "stance": "neutral",
+      "description": "APS seeks clarification on utility backup obligations and risk allocation when large loads co-locate with generators.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Frequency and operational burden on host utility",
+      "stance": "oppose",
+      "description": "APS expresses concern that without clear NERC standards for hybrid facilities, the burden of managing frequency deviations caused by load-generation mismatches will fall to the host utility.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:regulatory-consistency",
+      "name": "Jurisdictional consistency",
+      "stance": "neutral",
+      "description": "APS seeks clarity on whether all large loads connecting to a transmission provider operate under the same interconnection process regardless of their load serving entity.",
+      "quote_ids": [
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "threshold",
+      "jointstudy",
+      "hybridrights",
+      "protection",
+      "upgradecost",
+      "deposits"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

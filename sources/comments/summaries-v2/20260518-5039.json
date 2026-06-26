@@ -1,0 +1,122 @@
+{
+  "accession": "20260518-5039",
+  "filer": "ON Energy Storage, Inc.",
+  "org_type": "clean_energy",
+  "filed": "05/18/2026",
+  "source_text": "sources/comments/files/20260518-5039__ON-Energy-Storage-Inc/ON.energy_RM26-4-000_Comment.txt",
+  "overall_summary": "ON Energy Storage supports FERC's interconnection reforms and urges the Commission to codify NERC standards and NOGRR 282 requirements into uniform, enforceable rules to ensure grid reliability and prevent regional fragmentation. The company asserts that its technology enables large computational loads to comply with stringent requirements without significant project delays or cost increases.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "ON strongly supports the effort by the Commission to consider potential reforms to large load interconnection.",
+      "concern": "Overall support for FERC reform initiative",
+      "bins": ["pr:study"]
+    },
+    {
+      "id": 2,
+      "text": "NERC's issuance of a Level 3 alert on large computational loads highlights the risks these large loads can introduce to the grid.",
+      "concern": "Grid reliability risks from large computational loads",
+      "bins": ["topic:grid-stability"]
+    },
+    {
+      "id": 3,
+      "text": "Often overlooked are the power quality and system stability risks posed by these loads that are larger, more volatile, and more fragile than what grid operators are accustomed to seeing.",
+      "concern": "Power quality and stability risks need attention",
+      "bins": ["pr:study"]
+    },
+    {
+      "id": 4,
+      "text": "On July 10, 2024, a 230 kV lightning-arrestor failure in Northern Virginia produced six voltage drops; approximately 1.5 GW of data-center load disconnected near-simultaneously.",
+      "concern": "Real-world grid event demonstrating data center load risks",
+      "bins": ["topic:grid-stability"]
+    },
+    {
+      "id": 5,
+      "text": "Synchronous generation cannot follow these ramps; the resulting voltage, frequency, and resonance interactions — including sub-synchronous oscillations — can damage equipment and threaten stability.",
+      "concern": "Technical mechanisms for potential grid damage from large loads",
+      "bins": ["topic:grid-stability"]
+    },
+    {
+      "id": 6,
+      "text": "ON urges the Commission to use this and related rulemakings to accelerate adoption of new standards for the interconnection of large computational loads to ensure grid reliability, power quality, and system stability.",
+      "concern": "Request to accelerate standards adoption",
+      "bins": ["pr:study"]
+    },
+    {
+      "id": 7,
+      "text": "The NERC alert provides a strong initial set of actions and should be codified into uniform, enforceable rules.",
+      "concern": "NERC standards should be made binding and enforceable",
+      "bins": ["pr:study"]
+    },
+    {
+      "id": 8,
+      "text": "ERCOT's large-load interconnection process for load facilities of 75 MW or greater, together with the pending NOGRR 282 and its associated work streams, establishes voltage and frequency ride-through requirements for Large Electronic Loads with explicit ramp-rate limits and addresses modeling, ramp behavior, operating coordination, and interconnection documentation.",
+      "concern": "Existing ERCOT and NOGRR 282 frameworks provide model standards",
+      "bins": ["pr:study"]
+    },
+    {
+      "id": 9,
+      "text": "The risk of inaction is regional fragmentation: PJM, the California Independent System Operator (CAISO), the Midcontinent Independent System Operator (MISO), the Southwest Power Pool (SPP), and other grid operators each developing their own responses.",
+      "concern": "Without national standards, regions will develop inconsistent approaches",
+      "bins": ["pr:study"]
+    },
+    {
+      "id": 10,
+      "text": "Without a national baseline, a technical requirement in one region will mean something materially different than in another, making compliance monitoring, lessons learned, and equipment design needlessly complex.",
+      "concern": "Regional fragmentation increases compliance complexity",
+      "bins": ["pr:cost"]
+    },
+    {
+      "id": 11,
+      "text": "Some stakeholders have raised, and will continue to raise, concerns that these rules will make it difficult, expensive, or impossible for data centers to interconnect. We disagree.",
+      "concern": "Rejects assertion that standards will be prohibitively costly",
+      "bins": ["pr:cost"]
+    },
+    {
+      "id": 12,
+      "text": "Our equipment has been studied and approved for interconnection under ERCOT's interim large-load process pursuant to Senate Bill 6, and is designed to meet the pending Large Electronic Load ride-through requirements set out in NOGRR 282.",
+      "concern": "ON's technology already meets existing interim standards",
+      "bins": ["pr:cost"]
+    },
+    {
+      "id": 13,
+      "text": "Our experience with other customers demonstrates that compliance can be achieved without significant delays or cost increases to the projects and, in some cases, can accelerate timelines and reduce project costs.",
+      "concern": "Compliance achievable without major delays or added costs",
+      "bins": ["pr:cost"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Need for uniform national standards",
+      "stance": "support",
+      "description": "ON supports codifying NERC Level 3 Alert recommendations and NOGRR 282 into uniform, enforceable national rules. The company argues this approach prevents regional fragmentation and ensures consistent technical requirements across all RTOs and ISOs.",
+      "quote_ids": [1, 3, 6, 7, 8, 9]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Compliance feasibility and cost",
+      "stance": "support",
+      "description": "ON asserts that compliance with stringent large-load standards is achievable without significant project delays or cost increases. The company's equipment has been validated under existing frameworks and demonstrates that compliance can sometimes accelerate projects and reduce costs.",
+      "quote_ids": [10, 11, 12, 13]
+    },
+    {
+      "key": "topic:grid-stability",
+      "name": "Grid reliability and power quality risks",
+      "stance": "neutral",
+      "description": "ON documents the unique power quality and stability risks posed by large computational loads through real grid events, technical mechanisms, and NERC findings. These include voltage instability, frequency interactions, and potential resonance-induced equipment damage that current grid design does not anticipate.",
+      "quote_ids": [2, 4, 5]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": ["study", "cost"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "accession": "20251121-5523",
+  "filer": "Advanced Energy United",
+  "org_type": "clean_energy",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5523__Advanced-Energy-United/Advanced Energy United - Comments in RM26-4.txt",
+  "overall_summary": "Advanced Energy United supports FERC asserting a role in large load interconnection to ensure affordability, reliability, and fairness for all customers. The filing urges clear jurisdictional definitions, stringent readiness and deposit requirements, narrow guardrails on joint load-and-supply study pathways, and cost responsibility rules that prevent cost shifts to existing ratepayers. The organization asks FERC to prioritize reforms already within its jurisdiction and to advance them on an expedited basis where stakeholder consensus exists.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Should FERC assert its jurisdiction over large load interconnection, it must clearly limit its jurisdiction to large loads connecting to transmission facilities as suggested in the ANOPR. However, reliance on the 'seven factor test' alone is insufficient to avoid potential uncertainty at the boundary of state and federal jurisdiction, which could cause unnecessary delay and added cost to the large load interconnection process, contrary to DOE's stated goal of achieving speed to power.",
+      "concern": "Seven-factor test alone is too vague for clear jurisdictional boundaries",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "United suggests that one potential approach to clarifying when a FERC-jurisdictional large load jurisdiction process should apply is to establish a rebuttable presumption that any large load interconnection above a certain voltage threshold is defined as interconnecting to a 'transmission facility' subject to FERC jurisdiction for purposes of large load interconnections.",
+      "concern": "Recommends voltage-based rebuttable presumption to define FERC jurisdiction",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "United notes that the 20 MW threshold put forward in the ANOPR is significantly lower than the definition of 'large load' already in use in states that have taken action to standardize large load interconnections. For example, Texas statute defines large load as any load above 75 MW, and the recent Indiana & Michigan power settlement defined large load customer as a customer with contract capacity greater than or equal to 70 MW at an individual plant.",
+      "concern": "20 MW ANOPR threshold is far below state-level precedents of 70 to 75 MW",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "However, a loosely defined load/supply resource interconnection pathway that provides an expedited pathway for generation interconnection without appropriate safeguards would result in undue discrimination and unjust and unreasonable rates.",
+      "concern": "Expedited joint study pathway needs guardrails to prevent undue discrimination",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "This means (1) this expedited pathway should not confer the same interconnection service as is available to interconnection customers serving native load, and (2) this pathway should be available only to generation or storage resources that are not similarly situated to other interconnection customers in that they meet eligibility parameters that meaningfully, transparently, and objectively differentiate projects that proceed via expedited pathways from projects in the general queue.",
+      "concern": "Joint study path must be limited in scope and access to avoid queue discrimination",
+      "bins": [
+        "aq:jointstudy",
+        "aq:expedited",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Increasing the requirements on interconnecting large load customers is critical to ensure that utilities and system operators are not planning and preparing for load that will not ultimately show up, and that load is committing to pay the cost of preparing the system. Without this discipline, other new large loads will suffer the consequences of an interconnection process bogged down by speculative projects, and all ratepayers risk being left paying the cost of preparing the system for new load that never materializes.",
+      "concern": "Stringent deposit and readiness requirements are needed to deter speculative queue entries",
+      "bins": [
+        "aq:deposits",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "As with the generator interconnection process, it is critical to ensure compatibility with commercial realities and to adopt a mix of financial and non-financial readiness requirements to accommodate a range of business models and avoid a 'pay to play' model whereby well-capitalized large loads may be able to buy their way into multiple queue positions.",
+      "concern": "Mix of financial and non-financial readiness checks needed to prevent well-capitalized gaming",
+      "bins": [
+        "aq:deposits",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "United agrees with what appears to be the underlying goal of these principles, which is that large loads should pay for all the services they utilize, and avoid paying for those they do not. However, United cautions that a one-size-fits-all approach is likely insufficient given the variety of possible hybrid or co-located load configurations and the range of different grid services they rely upon.",
+      "concern": "Pay-for-actual-use principle is right but needs configuration-specific application for hybrid loads",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "United agrees with the underlying logic that curtailment and/or dispatch of load and hybrid facilities supports 'the timely and orderly addition of large loads to the transmission system in a safe, reliable, and non-discriminatory manner.' However, this principle applies more broadly, and should be expanded to realize the full benefits of load flexibility to accommodate rapid growth of new large loads.",
+      "concern": "Flexibility incentive should cover all curtailable and contractually flexible loads, not only on-site curtailment",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "New large loads willing to operate without firm transmission access—either permanently on a temporary basis as network upgrades are planned and constructed—should have clearly defined, optional, and expedited pathways to do so.",
+      "concern": "Non-firm transmission option should be available as a voluntary expedited path for flexible large loads",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "United encourages aligning cost responsibility for load interconnection with cost responsibility for generator interconnection. In that vein, it is logical that both load and hybrid facilities should be responsible for 100% of the network upgrades they are attributed to serve the load.",
+      "concern": "Full cost responsibility for assigned network upgrades, consistent with generator interconnection rules",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Should the Commission adopt a crediting mechanism to offset costs, this should only be applied to the extent that the network upgrades are shown to bring general benefit to load.",
+      "concern": "Credits for network upgrade costs should be limited to upgrades with demonstrated general system benefit",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "United agrees that such facilities should go through an SSR/RMR type study, and that such studies should include evaluation of potential resource adequacy concerns. United also emphasizes that the Commission can take this action regardless of whether it asserts jurisdiction over the interconnection of new large loads directly to the transmission system.",
+      "concern": "SSR/RMR studies for existing resources entering partial suspension should include resource adequacy screening",
+      "bins": [
+        "aq:protection",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "To the extent that a new large load and new generation or storage resource are geographically and electrically proximate, studying them together would reduce network upgrades, lower costs, and reduce the need for critical supply chain components.",
+      "concern": "Geographic and electrical proximity between load and supply resource is key condition for joint study benefits",
+      "bins": [
+        "aq:jointstudy",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "The Commission should also consider moving forward on a more expedited basis on those elements of the ANOPR that are severable and that have more uniform stakeholder support.",
+      "concern": "FERC should advance less-contested reforms on a faster track without waiting for the full rulemaking",
+      "bins": [
+        "topic:phased-rulemaking"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Clarify FERC Jurisdictional Scope",
+      "stance": "support",
+      "description": "Advanced Energy United supports FERC playing a role in large load interconnection but insists the seven-factor test alone is insufficient to mark the boundary with state jurisdiction. It recommends a voltage-based rebuttable presumption so every applicant knows upfront which process applies, avoiding costly mid-process reassignments.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "MW Threshold Too Low",
+      "stance": "mixed",
+      "description": "The filer supports a size threshold in principle but argues the 20 MW figure in the ANOPR is well below existing state benchmarks of 70 to 75 MW. A voltage threshold might make an MW floor unnecessary; if one is kept, it should be set higher and include anti-evasion rules for incremental load additions.",
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Study Needs Tight Guardrails",
+      "stance": "mixed",
+      "description": "Advanced Energy United supports studying new large loads together with co-located supply resources where they are electrically proximate, as this reduces network upgrades. It strongly opposes a loosely defined expedited pathway that would let generators bypass the standard queue, calling for strict eligibility criteria, limited interconnection service, and a sunset period similar to SPP's HILLGA framework.",
+      "quote_ids": [
+        4,
+        5,
+        14
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Stringent Financial and Non-Financial Deposits",
+      "stance": "support",
+      "description": "The filing backs heightened financial deposits and non-financial readiness indicators such as site control and permitting progress to filter out speculative queue entries. It warns against a pure pay-to-play deposit model that well-capitalized applicants could game by holding multiple queue slots.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid Cost Allocation by Actual Use",
+      "stance": "support",
+      "description": "Advanced Energy United agrees that large loads and hybrid facilities should pay for the grid services they actually use, but cautions that a single formula will not fit the wide range of co-location configurations. Study parameters should be tailored to each facility's anticipated operation.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "SSR/RMR Study for Partial Suspension",
+      "stance": "support",
+      "description": "The filer supports requiring any existing generator entering partial suspension to serve a new large load to undergo an SSR/RMR-type study that covers both reliability and resource adequacy. It notes FERC can impose this requirement regardless of whether it extends its jurisdictional reach over load interconnection.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Path Voluntary and Bounded",
+      "stance": "support",
+      "description": "Advanced Energy United endorses expedited interconnection for flexible or curtailable loads but insists the pathway be strictly voluntary and tightly bounded. It also calls for non-firm transmission options as a parallel benefit for loads that accept flexibility obligations.",
+      "quote_ids": [
+        5,
+        10
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Full Upgrade Cost Responsibility",
+      "stance": "support",
+      "description": "The filing supports assigning 100 percent of attributed network upgrade costs to the interconnecting load, consistent with generator interconnection rules. Any crediting mechanism should be limited to upgrades that provide general system-wide benefit, not used to subsidize large loads at ratepayer expense.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Transparent and Fair Study Process",
+      "stance": "support",
+      "description": "Advanced Energy United supports standardized, transparent study processes for large load interconnection, including concurrent load-and-supply studies with clear eligibility rules, SSR/RMR screening for partial suspension, and load forecasting discipline tied to queue milestones.",
+      "quote_ids": [
+        4,
+        5,
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Causation and Ratepayer Protection",
+      "stance": "support",
+      "description": "The filer consistently applies the principle that large loads must bear costs they cause and must not shift costs to existing ratepayers. This covers network upgrade responsibility, deposit stringency, load forecast accuracy, and limits on any crediting mechanism.",
+      "quote_ids": [
+        6,
+        7,
+        8,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Studied by Actual Grid Impact",
+      "stance": "support",
+      "description": "Advanced Energy United supports co-location and hybrid arrangements where load and supply resources are electrically proximate, but insists each configuration be studied and billed based on its actual grid impact rather than under a one-size-fits-all rule.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility as Broad Interconnection Incentive",
+      "stance": "support",
+      "description": "The filing expands the ANOPR flexibility principle beyond on-site curtailment to include loads that contract with off-site demand response or distributed resources. It proposes non-firm transmission access as an additional incentive, and asks that curtailable large loads not displace existing demand response programs.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Proximity Requirement for Joint Study",
+      "stance": "support",
+      "description": "Geographic and electrical proximity between a large load and its associated supply resource is the key condition justifying joint study. The filer endorses SPP's HILLGA definition of no more than two substations away as a useful starting point, while allowing regional calibration.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "topic:phased-rulemaking",
+      "name": "Phase Uncontested Reforms First",
+      "stance": "support",
+      "description": "The filer urges FERC to identify and advance reforms that are severable and have broad stakeholder support on a faster track, rather than holding all elements hostage to the full April 2026 rulemaking timeline.",
+      "quote_ids": [
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "accession": "20251121-5483",
+  "filer": "ClearPath Foundation",
+  "org_type": "think_tank",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5483__ClearPath-Foundation/ClearPath_Interconnection_of_Large_Loads_ANOPR_Comments.txt",
+  "overall_summary": "ClearPath supports joint study of large load and supply-side interconnection customers, and recommends that FERC study large loads based on their actual operating characteristics rather than worst-case assumptions. The filing urges FERC to remove market barriers so that dispatchable large loads -- including thermal energy storage, electrolyzers, and electric arc furnaces -- can access wholesale energy markets and provide ancillary services. ClearPath also calls for cost-allocation guardrails that align charges with actual system use and incentivize flexible operations.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "ClearPath strongly supports the ANOPR's proposal to jointly study supply-side interconnection customers and large load interconnection customers to the extent practicable.",
+      "concern": "Supports joint study of supply-side and large load interconnection customers",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "developers of both generation and large loads often submit multiple interconnection requests as a means of price discovery and time-to-grid discovery. This creates unmanageable queue volumes, inflated demand and supply forecasts, and significant delays to the interconnection process due to projects withdrawing late into the process when they discover their project is not economically feasible due to costs or energization timelines.",
+      "concern": "Speculative queue behavior driven by cost and timeline uncertainty inflates queue volumes and causes delays",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Coordinating interconnection studies for large loads with supply-side interconnection can enable the identification of more cost-effective transmission solutions and ensure that all benefiting customers pay, whether they are load or supply customers.",
+      "concern": "Joint study identifies cost-effective solutions and ensures beneficiaries pay",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "ClearPath recommends that FERC require transmission providers to study large loads based on their known operating characteristics to increase the accuracy of these studies, avoid unnecessary network upgrades that can slow interconnection, and reduce excessive costs.",
+      "concern": "Recommends study based on actual operating characteristics, not worst-case assumptions",
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "We recommend that FERC adopt a similar approach for studying large load withdrawals and/or injections. This advances just and reasonable rates by avoiding overestimation of the impacts of large loads through study assumptions that depict worst-case scenarios, such as curtailable large loads withdrawing at full capacity during peak demand periods",
+      "concern": "Worst-case study assumptions overstate impacts and inflate costs for flexible loads",
+      "bins": [
+        "pr:study",
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Any interconnection agreement for large load cannot prohibit the load from engaging in jurisdictional wholesale market activities such as the provision of energy (e.g., discharge of energy from storage into the grid) or ancillary services, including voltage support and other similar support for balancing the grid.",
+      "concern": "Interconnection agreements must not bar large loads from wholesale market participation",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:flex",
+        "topic:wholesale-market-access"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "FERC must ensure that dispatchable large loads, in addition to co-located generating facilities, are fully compensated for providing energy and ancillary services to the grid.",
+      "concern": "Dispatchable large loads must receive full compensation for grid services",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:flex",
+        "pr:colo",
+        "topic:wholesale-market-access"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "there is no regulatory framework that provides dispatchable large loads access to purchasing energy at wholesale energy prices.",
+      "concern": "Current rules leave dispatchable large loads without wholesale energy purchase access",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:wholesale-market-access"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Simply, adopting large load interconnection procedures alone is not enough. We urge the Commission to take into consideration how its large load interconnection procedures and other FERC initiatives can ensure accessibility of large load access to wholesale energy markets.",
+      "concern": "Interconnection rules alone are insufficient without pairing wholesale market access",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:wholesale-market-access"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "ClearPath recommends that FERC establish clear guardrails for how utilities serving large loads allocate costs for transmission and ancillary services to prevent cost-shifting or free riding, rather than prescribing a particular methodology.",
+      "concern": "Calls for cost-allocation guardrails without mandating a specific method",
+      "bins": [
+        "pr:cost",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Cost-allocation of network upgrades that combine volumetric and coincident peak demand charges can incentivize flexible large loads to avoid system peaks, therefore reducing system impacts and the need for additional infrastructure investments.",
+      "concern": "Peak-demand-linked cost allocation incentivizes load shifting and reduces infrastructure needs",
+      "bins": [
+        "pr:cost",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "This regulatory framework incentivized EAFs to curtail load during critical peak demand and shift production, leading to a reduction of peak loads by 91%.",
+      "concern": "Critical peak pricing tariff achieved a 91% peak load reduction from electric arc furnaces",
+      "bins": [
+        "pr:flex",
+        "pr:cost",
+        "topic:dispatchable-load-examples"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Joint and Accurate Interconnection Study",
+      "stance": "support",
+      "description": "ClearPath supports jointly studying large load and supply-side interconnection customers to reduce speculative queue behavior, identify cost-effective transmission solutions, and ensure all beneficiaries pay. It also recommends that studies use actual operating characteristics rather than worst-case scenarios, which overstate impacts and inflate costs for flexible loads.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Coordinated Load and Supply Study",
+      "stance": "support",
+      "description": "ClearPath endorses joint processing of large load and generation interconnection requests to align commercial timelines for offtake agreements and to enable identification of shared transmission solutions. This approach ensures that all customers benefiting from a transmission upgrade contribute to its cost.",
+      "quote_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexible Operations and Market Access",
+      "stance": "support",
+      "description": "ClearPath argues that study assumptions and interconnection agreements must reflect the dispatchable nature of large loads such as thermal energy storage, electrolyzers, and electric arc furnaces. Worst-case study assumptions impose unnecessary upgrade costs on flexible loads, and interconnection agreements must not bar these loads from providing ancillary services or wholesale market participation.",
+      "quote_ids": [
+        4,
+        5,
+        6,
+        7,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-located Facility Compensation",
+      "stance": "support",
+      "description": "ClearPath calls on FERC to ensure that dispatchable large loads and their co-located generating facilities are fully compensated for energy and ancillary services provided to the grid.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Allocation Aligned with System Use",
+      "stance": "support",
+      "description": "ClearPath recommends that FERC set guardrails preventing cost-shifting and free riding without prescribing a single methodology, so that utilities can experiment with rate designs. It favors combining volumetric and coincident peak demand charges to incentivize load shifting and cites a critical peak pricing pilot where electric arc furnaces reduced peak loads by 91%.",
+      "quote_ids": [
+        2,
+        3,
+        5,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC Jurisdiction Over Wholesale Access",
+      "stance": "support",
+      "description": "ClearPath contends that FERC's authority under FPA sections 201 and 205 extends to wholesale market participation by dispatchable large loads, including energy sales and ancillary services. It argues that no current regulatory framework grants these loads access to wholesale energy purchase prices and urges FERC to address this gap alongside interconnection reforms.",
+      "quote_ids": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:wholesale-market-access",
+      "name": "Wholesale Energy Purchase Access Gap",
+      "stance": "support",
+      "description": "ClearPath identifies a structural gap: dispatchable large loads cannot purchase electricity at wholesale prices under Orders 745, 841, or 2222, leaving them at an economic disadvantage relative to storage resources. The filing urges FERC to pair interconnection reforms with action on wholesale market access, pointing to a South Dakota ESA with a wholesale-linked pricing rider as a state-level example.",
+      "quote_ids": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:dispatchable-load-examples",
+      "name": "Dispatchable Load Technology Evidence",
+      "stance": "neutral",
+      "description": "ClearPath provides concrete examples -- thermal energy storage, electrolyzers, and electric arc furnaces -- to illustrate how large loads can follow price signals, provide ancillary services, and reduce peak demand. It cites the 91% peak load reduction achieved by electric arc furnaces under a critical peak pricing pilot as evidence that flexible rate structures produce significant system benefits.",
+      "quote_ids": [
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jointstudy",
+      "jurisdiction"
+    ],
+    "pr": [
+      "study",
+      "flex",
+      "colo",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

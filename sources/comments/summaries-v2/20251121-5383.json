@@ -1,0 +1,160 @@
+{
+  "accession": "20251121-5383",
+  "filer": "SPLIGHT INC",
+  "org_type": "data_center",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5383__SPLIGHTSPLIGHT-INC/Splight Comments on DOE ANOPR 26-4-000.txt",
+  "overall_summary": "Splight, a grid technology vendor, supports expedited interconnection for large loads equipped with advanced contingency response systems (Fast-Responding Loads) that can modify demand in under 500 milliseconds. The company argues these technologies warrant firm-load status and increased capacity allocation, recommends NERC clarify that such systems are not Remedial Action Schemes, and proposes performance incentives in FERC tariffs to reward operators adopting these technologies.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Splight strongly supports this principle and respectfully urges the Commission to go further by explicitly recognizing the value of large loads that implement advanced, automated contingency response technologies (\"Fast-Responding Loads\") as a basis for both (1) expedited interconnection and (2) allocation of increased capacity in proportional to the speed and amount of curtailment a load is able to provide.",
+      "concern": "Support for expedited study and increased capacity based on contingency response speed",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Where transmission adequacy is the fundamental limitation, Fast-Responding Loads should be studied based on their ability to modify demand near-instantaneously in the event of a transmission system failure (for example, Splight's DCM can respond in less than 500 milliseconds) and, should be considered for expedited interconnection as firm loads.",
+      "concern": "Fast-Responding Loads should qualify as firm loads for expedited study when transmission is limiting",
+      "bins": [
+        "aq:expedited",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Fast-Responding Loads offer an alternative pathway to maintain adherence to the N-1 or N-1-1 planning and operating criteria, while expanding load service.",
+      "concern": "Fast-Responding Loads enable N-1 compliance while accommodating new loads",
+      "bins": [
+        "pr:study",
+        "topic:transmission-resilience"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "By incorporating this advanced responsiveness, Fast-Responding Loads allow the system to operate at up to the full physical capacity of the grid, except in the rare event of a system failure, thus freeing enough of the system capacity to serve double the amount of demand interconnected.",
+      "concern": "Advanced contingency response can double available interconnection capacity",
+      "bins": [
+        "pr:flex",
+        "topic:transmission-resilience"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Because the additional usable capacity is created using software and real-time controls, there is minimal cost, making this option attractive.",
+      "concern": "Software-based contingency response has low implementation cost",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "NERC should interpret that the implementation by large loads of advanced contingency response capability, i.e., those using intelligent algorithms and real-time computing to self-operate without necessitating breaker action, are not considered Remedial Action Schemes (RAS).",
+      "concern": "Request that NERC exclude load-implemented contingency response from RAS definition",
+      "bins": [
+        "topic:ras-classification"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Allowing qualified large loads to directly manage and implement RAS actions such as dynamic load reduction (in cooperation with their utility), would improve reliability and accelerate infrastructure development without compromising bulk electric system security.",
+      "concern": "Large loads should be eligible to own and manage RAS for dynamic load reduction",
+      "bins": [
+        "pr:flex",
+        "topic:ras-ownership"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:expedited",
+      "name": "Expedited study for fast-responding loads",
+      "stance": "support",
+      "description": "Splight supports expedited interconnection study for large loads with advanced contingency response capability, arguing they should be studied as firm loads when transmission capacity is the limiting factor. The company emphasizes that response times under 500 milliseconds justify faster processing.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Accurate study methodology for contingency-responsive loads",
+      "stance": "support",
+      "description": "The filing argues that interconnection studies should explicitly model the reliability contributions and transmission resilience benefits of fast-responding loads, incorporating their ability to modify demand near-instantaneously during system failures. This ensures system operators accurately assess the actual impact on grid stability.",
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Capacity allocation tied to response performance",
+      "stance": "support",
+      "description": "Splight advocates capacity allocation proportional to load response speed and magnitude. The company argues that fast-responding loads offer an alternative to traditional network expansion, enabling the system to operate near full capacity while maintaining N-1 planning criteria and potentially doubling interconnection capacity through contingent allocation.",
+      "quote_ids": [
+        1,
+        4,
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Low-cost software solutions reduce implementation burden",
+      "stance": "support",
+      "description": "The filing notes that contingency response capability is created through software and real-time controls with minimal cost, making it an attractive option even as a temporary bridge during network expansion. The load can pay for implementation as a discretionary service under existing FERC tariffs, avoiding cross-subsidy.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:transmission-resilience",
+      "name": "Transmission resilience through automated response",
+      "stance": "support",
+      "description": "Splight argues that fast-responding loads contribute to transmission resilience by automatically modulating demand during contingencies, maintaining N-1 compliance and enabling the system to operate at full capacity except during rare failures. This technology reduces post-contingency impacts on remaining grid assets.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "topic:ras-classification",
+      "name": "RAS definition should exclude load-implemented contingency response",
+      "stance": "support",
+      "description": "The filing requests that NERC clarify standards to exclude load-implemented advanced contingency response systems from the definition of Remedial Action Schemes (RAS). Splight argues these systems are fundamentally different from utility-controlled pre-programmed RAS because they use intelligent algorithms and real-time computing without centralized utility control or breaker action.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:ras-ownership",
+      "name": "Large loads should be eligible as RAS-Entities",
+      "stance": "support",
+      "description": "The filing proposes that NERC allow large load owners to directly propose, own, and manage RAS actions such as dynamic load reduction in cooperation with their utility. Currently, RAS-Entity eligibility excludes large loads, forcing reliance on transmission owners. Expanding eligibility would improve reliability and accelerate infrastructure development.",
+      "quote_ids": [
+        7
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "flex",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

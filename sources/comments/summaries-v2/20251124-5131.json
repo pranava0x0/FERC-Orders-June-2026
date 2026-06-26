@@ -1,0 +1,208 @@
+{
+  "accession": "20251124-5131",
+  "filer": "Cato Institute",
+  "org_type": "think_tank",
+  "filed": "11/24/2025",
+  "source_text": "sources/comments/files/20251124-5131__Cato-Institute/Fisher Comments RM26-4-000.txt",
+  "overall_summary": "Travis Fisher of the Cato Institute urges FERC to clarify that physically islanded networks are exempt from Commission and NERC oversight, and promotes Consumer Regulated Electricity (CRE) as a parallel, market-based path for serving large loads outside traditional regulatory structures. The filing argues that CRE utilities, being fully disconnected from the bulk electric system, should not trigger federal jurisdiction, and calls on FERC and DOE to issue joint guidance confirming this interpretation.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "I urge the Commission to enable Consumer Regulated Electricity (CRE), which offers a parallel path to timely, orderly, and non-discriminatory access to electricity for large loads.",
+      "concern": "Advocates CRE as an alternative route to grid access for large loads",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cre-model"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The key advantage of CRE lies in eliminating the delays and regulatory risks associated with federal and state approval processes by ensuring there is no physical connection to electricity systems regulated by FERC or state commissions.",
+      "concern": "CRE avoids interconnection delays by staying off the regulated grid entirely",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cre-model"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "CRE utilities would offer economic and reliability benefits to the broader community by reducing the strain on regulated utilities and protecting existing ratepayers from the financial risks of overspending on infrastructure upgrades.",
+      "concern": "Claims CRE relieves grid stress and shields existing ratepayers from cost shifts",
+      "bins": [
+        "pr:cost",
+        "topic:cre-model"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "I urge the Commission to consider clarifying that any physically islanded network—with no connection whatsoever to the broader grid—is exempt from Commission oversight and NERC standards.",
+      "concern": "Requests FERC issue explicit exemption for islanded networks from its jurisdiction and NERC standards",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:islanded-exemption"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "by my reading of Section 215 of the Federal Power Act, some CRE utilities could be deemed (inappropriately) to be part of the bulk power system based on the facility's (1) economic significance, (2) potential use of other connected networks, including fuel supply chains, or (3) electric equipment operating at high voltages.",
+      "concern": "Flags ambiguity in FPA Section 215 that could unintentionally pull CRE utilities into FERC jurisdiction",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:islanded-exemption"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The reliability of the bulk power system is best served by allowing FERC and NERC to focus on the interconnected regions and networks that serve residential customers.",
+      "concern": "Argues FERC and NERC resources should focus on interconnected systems serving residential load",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:islanded-exemption"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Commission oversight over CRE utilities would be unnecessary and represent a departure from the intent of Section 215 of the Federal Power Act, which was to prevent wide-scale, cascading outages on the bulk power system like the one experienced in August 2003 in the Northeast United States.",
+      "concern": "Contends FERC oversight of islanded CRE utilities would exceed the statutory intent of FPA Section 215",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:islanded-exemption"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Consumer Regulated Electricity (CRE) is a permissionless model that allows new, privately financed, islanded electric utilities to serve new industrial and datacenter loads without relying on taxpayer funds, existing ratepayers, congested transmission systems, or fragile grids.",
+      "concern": "Describes CRE as a private, self-financed alternative that bypasses transmission queues and ratepayer cost exposure",
+      "bins": [
+        "pr:cost",
+        "topic:cre-model"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "DOE can use its existing authorities—without new legislation—to enable CRE by issuing clarifying guidance and model policy templates that: Clarify that CRE utilities are non-jurisdictional to FERC and NERC because they are not interconnected to the bulk electric system.",
+      "concern": "Asks DOE to issue guidance under existing authority confirming CRE utilities fall outside FERC and NERC jurisdiction",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:doe-guidance"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Issue a DOE–FERC joint policy statement confirming that islanded CRE utilities serving captive loads are not public utilities under the Federal Power Act or NERC jurisdiction.",
+      "concern": "Calls for a joint DOE-FERC statement that islanded CRE utilities are not public utilities under the FPA",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:doe-guidance"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "CRE offers a parallel path—privately built capacity that adds supply without affecting regulated rates or queues.",
+      "concern": "Frames CRE as supply growth that does not touch interconnection queues or regulated rates",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "topic:cre-model"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Free from the constraints of traditional monopoly regulations, CRE utilities can adopt new technologies and policies at a pace that matches the evolving needs of industries like artificial intelligence and cloud computing.",
+      "concern": "Claims deregulated CRE model can respond faster to AI and data center demand than regulated utilities",
+      "bins": [
+        "topic:cre-model"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC jurisdiction over islanded systems",
+      "stance": "oppose",
+      "description": "Fisher argues that physically islanded CRE networks should be explicitly exempt from FERC jurisdiction and NERC reliability standards. He flags statutory ambiguity in FPA Section 215 that could sweep in CRE utilities, and asks FERC and DOE to issue clarifying guidance confirming these systems are outside federal oversight.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Ratepayer cost protection via CRE",
+      "stance": "support",
+      "description": "The filing contends that CRE utilities, funded entirely by private capital, prevent cost shifts to existing ratepayers and reduce strain on regulated utilities. It frames CRE as a cost-free alternative to public financing of new large-load infrastructure.",
+      "quote_ids": [
+        3,
+        8,
+        11
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "CRE as queue-bypass alternative",
+      "stance": "support",
+      "description": "Fisher presents CRE as a parallel path that sidesteps interconnection study queues entirely because CRE utilities are not interconnected to the bulk electric system, meaning they require no interconnection studies or approvals.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:cre-model",
+      "name": "Consumer Regulated Electricity model",
+      "stance": "support",
+      "description": "The filing introduces and promotes the CRE model: privately financed, fully islanded utilities serving large industrial or data center loads outside state public utility regulation. Fisher argues these entities accelerate deployment, drive innovation, and serve AI-era demand without burdening taxpayers or the existing grid.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        8,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:islanded-exemption",
+      "name": "Islanded network exemption from oversight",
+      "stance": "support",
+      "description": "Fisher specifically requests that FERC clarify any network with no physical grid connection is exempt from Commission oversight and NERC standards. He argues that applying FPA Section 215 to CRE utilities would exceed its statutory intent, which was to prevent cascading outages on the interconnected bulk system.",
+      "quote_ids": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "topic:doe-guidance",
+      "name": "DOE-FERC joint jurisdictional guidance",
+      "stance": "support",
+      "description": "The filing calls for DOE to use existing authority to issue guidance confirming CRE utilities are non-jurisdictional, and for a joint DOE-FERC policy statement that islanded systems serving private loads are not public utilities under the FPA. The appendices include a draft outline of such a joint statement.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

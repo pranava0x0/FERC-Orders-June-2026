@@ -1,0 +1,276 @@
+{
+  "accession": "20251205-5239",
+  "filer": "American Electric Power Service Corporation",
+  "org_type": "transmission_owner",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5239__American-Electric-Power-Service-Corporation/AEP RM26-4 ANOPR Reply Comments 2025.12.05 (Final)(3587930.2).txt",
+  "overall_summary": "AEP urges the Commission to focus on long-term proactive transmission planning and generation interconnection reform rather than prescriptive short-term mandates, while supporting regional flexibility and protecting existing customers. AEP endorses rolling large load network upgrade costs into transmission rates, exploring conditional service as a bridge tool, and adopting consolidated planning models like SPP's CPP. Any Commission action should complement, not disrupt, ongoing state and RTO/ISO efforts.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Without much needed reforms, the current approaches threaten to produce insufficient and inefficient infrastructure to reliably support large load growth and economic development.",
+      "concern": "Current interconnection processes are too slow and inefficient to handle large load growth",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "To protect other customers, large loads must pay their fair share for the transmission system expansion needed to serve them, and the Commission also needs to fundamentally reconsider how generator interconnection and transmission system planning are conducted to ensure that reforms drive cost-effective development to support interconnecting loads.",
+      "concern": "Large loads should bear their fair share of transmission costs and interconnection reform must be cost-effective",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Any rules adopted by the Commission in this proceeding should be principles-based, avoid prescriptive requirements, and allow for regional flexibility.",
+      "concern": "Commission rules should be flexible, not prescriptive, to accommodate regional differences",
+      "bins": [
+        "topic:regional-flexibility"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Since implementation of the Tariff on July 11, 2025, '36 data center cites representing over 13,000 MW of new load have filed applications' to interconnect.",
+      "concern": "AEP's state-level data center tariffs have demonstrated success at accelerating large load interconnection",
+      "bins": [
+        "topic:state-tariff-success"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "AEP agrees with commenters arguing that network upgrade costs for large load interconnections should be rolled into transmission rates and that direct assignment of 100% of such network upgrade costs to large load customers is not appropriate.",
+      "concern": "Network upgrade costs should be socialized through rolled-in transmission rates, not directly assigned to large loads",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "This is critical to ensure that transmission owners can continue to attract the capital necessary to develop the transmission infrastructure needed to support the interconnection of large loads.",
+      "concern": "Rolled-in rate treatment is needed to ensure transmission owners can attract investment capital",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Temporary conditional service is a short-term speed-to-power solution that can bring new generation and load on line quickly and be used as a bridge service until the transmission system is upgraded to support full network service to those interconnections.",
+      "concern": "Conditional non-firm service can serve as a bridge tool for speed-to-power while upgrades are completed",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "If large loads are willing to accept conditional transmission service and be curtailed, the Commission could adopt rules that allow LSEs to bring large loads online faster.",
+      "concern": "Curtailable conditional service could accelerate load interconnection for willing customers",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Short-term, flexible approaches can facilitate speed-to-power, but they cannot ensure a transmission system that can support the projected large load growth.",
+      "concern": "Flexible short-term tools alone are insufficient; network upgrades and proactive planning are still necessary",
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "While short-term speed-to-power solutions are important, the Commission cannot overlook the need to foster proactive transmission planning, which is necessary to ensure cost-effective and affordable transmission system expansion and timely interconnection of new generation resources.",
+      "concern": "Proactive transmission planning is essential to ensure affordable and timely infrastructure buildout",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Proactive, multi-value planning is also crucial to foster the development of Extra High Voltage ('EHV') facilities—the essential backbone of the nation's transmission system—because it looks ahead to identify regional and interregional needs and the corresponding EHV solutions.",
+      "concern": "Multi-value planning is needed to develop the EHV backbone transmission infrastructure",
+      "bins": [
+        "pr:study",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The Commission should support regional efforts to move towards consolidated, integrated planning, like SPP's CPP.",
+      "concern": "SPP's consolidated planning process is a model the Commission should encourage other regions to adopt",
+      "bins": [
+        "pr:study",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Reconductoring with advanced conductors can greatly increase capacity in a short time frame (less than two years), utilizing existing towers and rights-of-way, thereby avoiding siting processes.",
+      "concern": "Advanced conductor reconductoring offers a fast path to capacity increases using existing infrastructure",
+      "bins": [
+        "topic:advanced-conductors",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "The Commission's reforms should avoid introducing additional delays to large load interconnection by disrupting state and regional-level efforts.",
+      "concern": "Federal reforms must not disrupt productive ongoing state and regional interconnection processes",
+      "bins": [
+        "topic:regional-flexibility",
+        "rg:pjm",
+        "rg:miso",
+        "rg:spp"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Proactive Planning Over Reactive Study",
+      "stance": "support",
+      "description": "AEP argues that piecemeal, reactive interconnection studies are insufficient to handle large load growth and that the Commission must drive proactive, multi-value, long-term transmission planning. Short-term flexible tools are useful but cannot substitute for forward-looking network expansion.",
+      "quote_ids": [
+        1,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Rolled-in Rates for Network Upgrades",
+      "stance": "support",
+      "description": "AEP supports rolling large load network upgrade costs into transmission rates rather than directly assigning them to interconnecting customers. This protects existing customers by making large loads pay their fair share as system users, and ensures transmission owners can attract capital for needed infrastructure.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        6,
+        10
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Conditional Service as Bridge Tool",
+      "stance": "support",
+      "description": "AEP endorses offering conditional or non-firm transmission service to large loads and co-located generators as a short-term bridge until full network upgrades are complete. Customers willing to accept curtailment could come online faster, but terms must protect reliability and ensure fair cost payment.",
+      "quote_ids": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Network Upgrade Cost Treatment",
+      "stance": "support",
+      "description": "AEP opposes direct assignment of 100% of network upgrade costs to large load customers and favors rolled-in rate treatment consistent with longstanding Commission precedent. Proper cost allocation also ensures transmission owners earn a lawful return to attract investment capital.",
+      "quote_ids": [
+        2,
+        5,
+        6,
+        11
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Speed-to-Power Tools and Pathways",
+      "stance": "support",
+      "description": "AEP supports exploring expedited interconnection tools such as conditional service for curtailable loads, advanced conductor reconductoring, and consolidated planning processes that shorten study timelines. These should complement, not replace, longer-term infrastructure solutions.",
+      "quote_ids": [
+        7,
+        8,
+        13
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP as Planning Model",
+      "stance": "support",
+      "description": "AEP highlights SPP's HILL, HILLGA, and Consolidated Planning Process (CPP) as promising models the Commission should encourage other regions to adopt. These proposals shorten study time and provide generators with upfront cost certainty through an entry-fee approach.",
+      "quote_ids": [
+        12,
+        14
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "Preserve PJM Stakeholder Progress",
+      "stance": "support",
+      "description": "AEP notes that PJM has an active stakeholder process to develop large load interconnection reforms and urges the Commission to avoid disrupting that work with prescriptive federal requirements.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "Preserve MISO Regional Processes",
+      "stance": "support",
+      "description": "AEP groups MISO alongside other regions where ongoing state and RTO-level efforts are underway, arguing federal reforms should be additive rather than preemptive.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "topic:regional-flexibility",
+      "name": "Principles-Based Regional Flexibility",
+      "stance": "support",
+      "description": "AEP argues that Commission reforms should be principles-based and avoid prescriptive one-size-fits-all requirements, preserving the ability of states and regions to tailor solutions to their specific large load growth needs.",
+      "quote_ids": [
+        3,
+        14
+      ]
+    },
+    {
+      "key": "topic:state-tariff-success",
+      "name": "State Tariff Success as Template",
+      "stance": "support",
+      "description": "AEP points to its own data center tariffs in Ohio and other states, which attracted over 13,000 MW of applications within months, as evidence that state-level solutions are working and should not be disrupted by federal action.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:advanced-conductors",
+      "name": "Advanced Conductors for Fast Capacity Gains",
+      "stance": "support",
+      "description": "AEP supports Commission incentives for reconductoring with advanced conductors, which can increase line capacity in under two years using existing towers and rights-of-way. AEP has a $1.6 billion DOE loan guarantee to reconductor roughly 5,000 miles across five states.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex"
+    ],
+    "rg": [
+      "spp",
+      "pjm",
+      "miso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

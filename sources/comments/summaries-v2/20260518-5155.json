@@ -1,0 +1,415 @@
+{
+  "accession": "20260518-5155",
+  "filer": "Antora Energy, Inc.",
+  "org_type": "other",
+  "filed": "05/18/2026",
+  "source_text": "sources/comments/files/20260518-5155__Antora-Energy-Inc/RM26-4-000; Antora Supplemental Comments.txt",
+  "overall_summary": "Antora Energy advocates for permanent, long-term non-firm transmission service for flexible, curtailable loads like its thermal energy storage systems, citing SPP's experience. The filer argues SPP's Designated Network Resource requirement and CHILLS program are insufficient because they impose costs inconsistent with actual load usage, while supporting SPP's emerging Price Adaptive Load Service framework and urging all RTOs to adopt comparable permanent non-firm service with cost-causation-based rates.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "load flexibility can critically help to address the challenge of large load growth by increasing transmission and generation capacity utilization, putting downward pressure on rates, and by allowing the grid to accommodate new loads while infrastructure to serve them is being built",
+      "concern": "Load flexibility benefits grid utilization and rate pressure.",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "existing service models sharply constrain the commercial viability of flexible load development, and in particular development of highly flexible loads like TES, by treating them the same as inflexible loads",
+      "concern": "Current service models do not distinguish flexible from inflexible loads.",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Antora submits these supplemental comments to provide Antora's commercial experience with these proposals, including the particular solutions that hold the most promise and the ways they fall short of complete solutions to enable and unleash the benefits of load flexibility",
+      "concern": "Recent RTO reforms address flexibility but are incomplete.",
+      "bins": [
+        "topic:rto-reforms"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Antora urges the Commission, in crafting its remedy in this proceeding, to go beyond these recent reforms to require all transmission providers to: (1) offer permanent non-firm transmission service; (2) at rates reflecting actual use that is consistent with cost causation principles; (3) with curtailment requirements for non-firm load integrated into the interconnection study process and resource adequacy requirements",
+      "concern": "FERC should mandate three features for flexible loads: permanent non-firm service, cost-causation rates, and integrated curtailment.",
+      "bins": [
+        "pr:flex",
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Antora has identified a 6+ GW opportunity in SPP and 10+ GW nationally of immediately cost effective, viable, and highly-flexible thermal load opportunities based on current wholesale energy prices, which can be sited at existing facilities in biofuels, chemicals, food processing, and agriculture",
+      "concern": "Significant commercial TES deployment opportunity nationwide.",
+      "bins": [
+        "topic:thermal-storage",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Antora estimates 1 GW of flexible load projects could generate $65.4 million in additional transmission revenues, reducing existing customer NITS fees by 1-12% depending on the zone in SPP",
+      "concern": "Flexible loads can lower costs for existing ratepayers.",
+      "bins": [
+        "pr:cost",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Highly flexible large loads face substantial interconnection barriers where, as in SPP, the RTO requires a one-to-one matching of non-coincident peak demand with new Designated Network Resources (DNRs). Highly flexible, curtailable large loads can avoid peaks and are inherently price sensitive, meaning they only operate when there is abundant low-cost energy generation available. An artificial DNR requirement is prohibitively expensive, unnecessary given the real-world operation of curtailable large loads like TES, and acts as a roadblock to new beneficial flexible loads",
+      "concern": "SPP's DNR requirement is costly, unnecessary, and blocks flexible load interconnection.",
+      "bins": [
+        "rg:spp",
+        "pr:flex",
+        "topic:dnr-barrier"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "low load-factor, price-sensitive, highly flexible loads have no current mechanism for gaining transmission access without Designated Network Resources that will not be used or needed",
+      "concern": "Flexible loads cannot interconnect without unnecessary DNR requirements.",
+      "bins": [
+        "topic:dnr-barrier",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Requiring such loads to procure generation capacity as though they consume around the clock yields unjust and unreasonable costs, contradicts cost-causation principles, and unduly discriminates against such loads by treating differently-situated customers the same",
+      "concern": "DNR requirements impose unjust, unreasonable, and discriminatory costs.",
+      "bins": [
+        "pr:cost",
+        "topic:cost-causation"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "MISO allows LSEs to serve new off-peak load without a 1:1 DNR match, and removes Load Modifying Resources from capacity calculations due to interruptibility. This more flexible approach is one reason Antora's first large scale commercial project, which we announced is in commissioning this week, is in MISO, and not SPP",
+      "concern": "MISO's flexible approach attracts commercial deployment; SPP's does not.",
+      "bins": [
+        "rg:miso",
+        "rg:spp",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "CHILLS is conditional and temporary, only available for a seven-year term, after which the customer must transition to firm service",
+      "concern": "CHILLS is temporary and requires transition to firm service.",
+      "bins": [
+        "rg:spp",
+        "topic:chills-limits"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "CHILLS requires annual reservations. This means that an Antora thermal storage site would have to pay for transmission at the peak and off peak non-firm point to point rates (which can be very expensive) despite the fact that it would only use power ~1/3 of the time, and only during hours when LMPs are at their lowest",
+      "concern": "CHILLS' annual reservation rates are misaligned with flexible load usage patterns.",
+      "bins": [
+        "rg:spp",
+        "pr:cost",
+        "topic:chills-limits"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "This approach is unjust and unreasonable, inconsistent with the Commission's cost causation principle, and unduly discriminatory for treating differently situated loads similarly—as well as prohibitively expensive for highly price sensitive industrial loads like thermal storage",
+      "concern": "CHILLS rate structure violates cost-causation and non-discrimination principles.",
+      "bins": [
+        "pr:cost",
+        "topic:cost-causation"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Price Adaptive Load Service (PALS). SPP staff are currently developing the PALS proposal and plan to bring it to the stakeholder process for approvals later this year. PALS would create a long-term, non-firm transmission service enabling flexible, price-sensitive loads to interconnect without matching capacity",
+      "concern": "PALS offers long-term non-firm service without capacity requirements.",
+      "bins": [
+        "rg:spp",
+        "topic:pals",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Full Curtailability: PALS loads are always dispatchable to zero. They are curtailed during reliability events, emergency conditions, and meaningful system peaks. SPP or the Transmission Owner can shut down PALS load immediately",
+      "concern": "PALS protects reliability through full curtailability.",
+      "bins": [
+        "topic:pals",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Non-Firm Transmission Charges: Per-MWh billing at hourly non-firm rates (Zonal Annual Transmission Revenue Requirement/Transmission Zone Peak Load/8760) reflect the true cost causation profile of curtailable loads; directly supporting NITS costs reduction for existing ratepayers",
+      "concern": "PALS hourly rates reflect actual cost causation.",
+      "bins": [
+        "topic:pals",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Offer a permanent, long-term, non-firm transmission service for fully-curtailable, price-responsive loads in addition to temporary or conditional service for loads wishing to move to firm. Recognizing that some customers such as Antora can limit withdrawals whether or not co-located with generation, this service should be available to any customer capable of meeting the necessary withdrawal limitations, whether or not co-located",
+      "concern": "FERC should require permanent non-firm service for curtailable loads.",
+      "bins": [
+        "pr:flex",
+        "topic:ferc-reco"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Set transmission charges based on cost-causation principles reflecting actual use that is consistent with how RTOs already bill other firm customers",
+      "concern": "FERC should require cost-causation-based rate design.",
+      "bins": [
+        "pr:cost",
+        "topic:ferc-reco"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Integrate the non-firm, curtailable nature of flexible loads into the interconnection study process so assumptions reflect actual operating profiles",
+      "concern": "Interconnection studies must account for flexible load operating profiles.",
+      "bins": [
+        "pr:study",
+        "topic:ferc-reco"
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Study the full range of benefits that efficiently-sited highly flexible loads can provide to the system, including by avoiding the need for new transmission upgrades",
+      "concern": "System planning must value avoided transmission costs from flexible loads.",
+      "bins": [
+        "pr:study",
+        "topic:system-benefits"
+      ]
+    },
+    {
+      "id": 21,
+      "text": "This opportunity is being hamstrung by frameworks that assume all loads operate at full capacity around the clock",
+      "concern": "Current frameworks incorrectly assume continuous full-capacity operation.",
+      "bins": [
+        "pr:flex",
+        "topic:framework-design"
+      ]
+    },
+    {
+      "id": 22,
+      "text": "PALS offers a sound model—protecting reliability through full curtailability, limiting price impacts through a bid cap, avoiding resource adequacy complications by design, and charging based on actual use",
+      "concern": "PALS balances reliability, price protection, and cost-causation.",
+      "bins": [
+        "topic:pals",
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 23,
+      "text": "every jurisdictional RTO and transmission owner should be required to offer comparable, permanent, cost-causation-based non-firm service for flexible loads",
+      "concern": "All RTOs should be required to offer PALS-like permanent non-firm service.",
+      "bins": [
+        "pr:flex",
+        "pr:cost",
+        "topic:national-requirement"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Flexible load service and interconnection",
+      "stance": "support",
+      "description": "Antora advocates for regulatory frameworks that recognize and enable flexible, curtailable loads to interconnect without capacity matching requirements. Current models treating flexible loads like inflexible ones block deployment and reduce system benefits. PALS demonstrates a viable model, and all RTOs should offer comparable permanent non-firm service.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        10,
+        14,
+        15,
+        17,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost-causation rate design for flexible loads",
+      "stance": "support",
+      "description": "Antora argues that transmission rates for flexible loads must reflect actual usage via cost-causation principles rather than peak-based or capacity-matching models. Annual reservation charges in CHILLS and DNR requirements violate cost-causation, imposing unjust and unreasonable costs. PALS' hourly MWh rates align costs with actual load patterns and reduce existing customer charges.",
+      "quote_ids": [
+        4,
+        6,
+        9,
+        12,
+        13,
+        16,
+        18,
+        22,
+        23
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Interconnection and system planning improvements",
+      "stance": "support",
+      "description": "Antora urges that interconnection studies and system planning integrate the curtailable, non-firm nature of flexible loads so assumptions reflect actual operating profiles. Planning should also account for full benefits flexible loads provide, including avoided transmission upgrades, rather than treating them as standard demand-side resources.",
+      "quote_ids": [
+        4,
+        19,
+        20
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "Southwest Power Pool experience and reforms",
+      "stance": "mixed",
+      "description": "Antora credits SPP for pioneering efforts to accommodate flexible loads through CHILLS and emerging PALS, but finds CHILLS insufficient due to temporary structure and annual reservation rates. SPP's DNR requirement has driven deployment to MISO. PALS holds significant promise and should be completed promptly and serve as a model for national requirements.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        10,
+        11,
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO flexible load accommodations",
+      "stance": "support",
+      "description": "MISO allows new off-peak loads without 1:1 DNR matching and removes interruptible Load Modifying Resources from capacity calculations. This flexible approach has attracted Antora's first commercial TES project to commissioning in MISO rather than SPP.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:dnr-barrier",
+      "name": "Designated Network Resource barriers",
+      "stance": "oppose",
+      "description": "SPP's one-to-one DNR requirement forces flexible loads to procure unnecessary generation capacity and impose unjust costs inconsistent with their actual operation. The requirement is prohibitively expensive, blocks beneficial load development, and contradicts cost-causation principles by treating differently-situated customers the same.",
+      "quote_ids": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:cost-causation",
+      "name": "Cost-causation principle violations",
+      "stance": "oppose",
+      "description": "Antora argues that current SPP frameworks (DNRs and CHILLS) violate the Commission's cost-causation principle by charging flexible loads for capacity and transmission services based on assumed full-time operation rather than actual usage patterns. This discriminatory approach must be corrected via hourly, usage-based rates.",
+      "quote_ids": [
+        9,
+        13
+      ]
+    },
+    {
+      "key": "topic:chills-limits",
+      "name": "CHILLS program limitations",
+      "stance": "mixed",
+      "description": "While CHILLS represents innovation in non-firm service, Antora finds it insufficient: the seven-year term is temporary and requires transition to firm service, and annual reservation rates are misaligned with low load-factor usage patterns, imposing costs during low-LMP hours when the system benefits most from flexible load.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:pals",
+      "name": "Price Adaptive Load Service framework",
+      "stance": "support",
+      "description": "PALS is SPP's emerging non-firm service model offering long-term, permanent transmission service for curtailable loads without capacity requirements. It features full curtailability, hourly MWh-based rates reflecting cost causation, bid price caps preventing price impacts, and elimination of resource adequacy complications. Antora considers PALS a sound model that should be adopted nationally.",
+      "quote_ids": [
+        14,
+        15,
+        16,
+        22
+      ]
+    },
+    {
+      "key": "topic:thermal-storage",
+      "name": "Thermal energy storage commercial opportunity",
+      "stance": "neutral",
+      "description": "Antora identifies 6+ GW of viable, cost-effective TES deployment in SPP and 10+ GW nationally, deployable at existing industrial facilities in biofuels, chemicals, food processing, and agriculture. Realizing this opportunity requires regulatory frameworks enabling flexible load interconnection.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:rto-reforms",
+      "name": "Recent RTO flexibility reforms",
+      "stance": "mixed",
+      "description": "Antora acknowledges and applauds recent RTO efforts (CHILLS, PALS) to enable large flexible load interconnection. However, it argues these reforms fall short of complete solutions and should inform, but not limit, the Commission's national rulemaking to require comparable permanent, cost-causation-based non-firm service across all RTOs.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "topic:ferc-reco",
+      "name": "FERC recommendations for all transmission providers",
+      "stance": "support",
+      "description": "Antora calls on FERC to require all jurisdictional RTOs and transmission providers to offer permanent non-firm service for curtailable loads; set rates on cost-causation and actual usage principles; integrate curtailability into interconnection studies; eliminate DNRs and resource adequacy requirements for fully curtailable service; and study benefits of avoiding transmission upgrades.",
+      "quote_ids": [
+        4,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "key": "topic:system-benefits",
+      "name": "System benefits and cost reductions from flexible loads",
+      "stance": "support",
+      "description": "Flexible TES deployment yields substantial system benefits: increased transmission utilization, price normalization during low-demand periods, reduced wholesale and capacity costs, and avoided transmission upgrade needs. One GW of flexible loads could generate USD 65.4 million in transmission revenues, reducing existing customer NITS fees by 1-12% in SPP zones.",
+      "quote_ids": [
+        6,
+        20
+      ]
+    },
+    {
+      "key": "topic:framework-design",
+      "name": "Framework design flaws",
+      "stance": "oppose",
+      "description": "Current interconnection and service frameworks assume all loads operate at full capacity around the clock, which is incompatible with flexible, price-sensitive loads that only operate during low-LMP periods. This fundamental design flaw hamstrings the commercial viability of beneficial flexible load deployment.",
+      "quote_ids": [
+        21
+      ]
+    },
+    {
+      "key": "topic:national-requirement",
+      "name": "National non-firm service requirement",
+      "stance": "support",
+      "description": "Antora urges FERC to require all jurisdictional RTOs and transmission providers to offer permanent, cost-causation-based non-firm service for flexible loads, not confined to SPP. A national mandate prevents investment distortion and ensures comparable, timely, orderly, and affordable interconnection across regions.",
+      "quote_ids": [
+        23
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "flex",
+      "cost",
+      "study"
+    ],
+    "rg": [
+      "spp",
+      "miso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

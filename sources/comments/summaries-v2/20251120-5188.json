@@ -1,0 +1,142 @@
+{
+  "accession": "20251120-5188",
+  "filer": "North Carolina Utilities Commission",
+  "org_type": "state_commission",
+  "filed": "11/20/2025",
+  "source_text": "sources/comments/files/20251120-5188__North-Carolina-Utilities-Commission/20251120_RM26-4 ANOPR Comments by NCUC.txt",
+  "overall_summary": "North Carolina Utilities Commission supports timely interconnection of large loads but opposes federal jurisdiction over intrastate retail load interconnection. NCUC requests FERC preserve existing bright jurisdictional lines and expresses concern about the 20 MW threshold, emphasizing that North Carolina has effective state-level regulatory processes already managing large-load integration including data centers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the NCUC wants to make certain that FERC will not have jurisdiction over a core component of North Carolina's regulation of bundled retail electric service: the interconnection of new load",
+      "concern": "FERC jurisdiction over state retail load interconnection",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "North Carolina maintains a robust structure of oversight and public participation that, in several key respects, exceeds the transparency and accountability requirements found in regional transmission organizations (RTOs)",
+      "concern": "North Carolina has strong state-level regulatory oversight",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "invoking the Commission's seven-factor test to delineate transmission from local distribution could, in practice, redefine portions of retail service connections as FERC-jurisdictional",
+      "concern": "Seven-factor test risks redefining retail connections as federal",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the NCUC is also concerned about the proposed 20 MW large load threshold",
+      "concern": "20 MW threshold is problematic",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "any FERC rulemaking affirmatively preserve the bright jurisdictional line drawn by the Federal Power Act so that North Carolina and other states can be assured that they will retain jurisdiction over generation facilities, facilities used in local distribution and for the transmission of electric energy in intrastate commerce",
+      "concern": "FERC must preserve bright jurisdictional line for state control",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the NCUC allowed Duke Energy Carolinas, LLC and Duke Energy Progress, LLC (together, Duke) to re-file and adjust their planning assumptions when updated economic-development forecasts, including data centers, materially changed the projected load forecast",
+      "concern": "NCUC already adapts to large-load forecasts including data centers",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the final order issued by the NCUC on November 1, 2024 required Duke to file semiannual large-load reports to monitor new economic-development activity and large customer additions",
+      "concern": "NCUC requires semiannual reporting on large-load additions",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "North Carolina's regulatory framework is already actively, effectively, and efficiently managing large-load integration in a transparent, least-cost, and reliability-focused manner",
+      "concern": "Existing state framework effectively manages large loads",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the NCUC supports enhanced federal-state communication to ensure reliability of the Bulk Electric System while respecting existing jurisdictional boundaries",
+      "concern": "Support for federal-state coordination on reliability within jurisdictional limits",
+      "bins": [
+        "pr:flex"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal jurisdiction over intrastate load",
+      "stance": "oppose",
+      "description": "NCUC opposes federal jurisdiction over retail load interconnection, a core state regulatory function. The Commission is concerned the seven-factor test could redefine retail service connections as FERC-jurisdictional. NCUC requests explicit preservation of the Federal Power Act's bright jurisdictional line to ensure states retain control over generation, local distribution, and intrastate transmission.",
+      "quote_ids": [
+        1,
+        3,
+        5
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20 MW large load threshold",
+      "stance": "oppose",
+      "description": "NCUC expresses concern about the proposed 20 MW threshold without specifying an alternative. The concern appears to relate to how this threshold interacts with state jurisdiction over retail loads.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "State-level process adequacy",
+      "stance": "support",
+      "description": "NCUC demonstrates that North Carolina has strong, transparent state regulatory processes already effectively managing large-load integration. The state has implemented semiannual large-load reporting requirements, cluster-based interconnection studies (predating federal Order 2023), and multi-layered review through CPIRP and rate-case proceedings. NCUC's framework provides oversight exceeding RTO transparency and accountability requirements.",
+      "quote_ids": [
+        2,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Federal-state coordination on reliability",
+      "stance": "support",
+      "description": "NCUC supports enhanced federal-state communication to ensure reliability while maintaining existing jurisdictional boundaries. The Commission agrees NERC's review of new registration categories and reliability standards is an appropriate avenue for addressing reliability concerns.",
+      "quote_ids": [
+        9
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold"
+    ],
+    "pr": [
+      "study",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

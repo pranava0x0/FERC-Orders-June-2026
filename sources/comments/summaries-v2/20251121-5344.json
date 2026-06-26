@@ -1,0 +1,312 @@
+{
+  "accession": "20251121-5344",
+  "filer": "Organization of MISO States, Inc.",
+  "org_type": "state_assoc",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5344__Organization-of-MISO-States-Inc/RM26-4 OMS Initial Comments (Large Load ANOPR).txt",
+  "overall_summary": "OMS, the regional state committee for MISO, argues that load interconnection processes already work well in MISO and that federal jurisdiction over large-load interconnections risks displacing state authority over retail service, resource adequacy, and cost allocation. OMS urges FERC to limit any new rule to narrow transmission-level study processes, require state notification and coordination, and raise the 20 MW threshold before finalizing any rule.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "load interconnection study processes have been working well within the MISO footprint and there are no bottlenecks for interconnecting and energizing large loads that need attention in MISO.",
+      "concern": "OMS contends MISO has no interconnection backlog that justifies new federal rules",
+      "bins": [
+        "rg:miso",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "it is essential that entities causing transmission impacts – directly or indirectly – bear their share of costs, and that states retain full visibility into how such determinations are made and costs are allocated.",
+      "concern": "Cost causation and state transparency must be preserved under any new framework",
+      "bins": [
+        "pr:cost",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "If outcomes of this proceeding cause regulatory gaps, unintended consequences, or are or not in alignment with the FPA (and other long-standing systems of cooperative federalism established in settled case law that have governed the electric grid for decades) the desired speed of interconnecting large loads could come to a standstill through unintended system inefficiencies, new bottlenecks, and most likely – legal challenges.",
+      "concern": "FPA misalignment could slow interconnections and invite litigation",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "connecting large loads to the bulk power system without thorough study, without sufficient resource support, and without appropriate cost alignment could introduce new reliability risks and inequities across customer classes.",
+      "concern": "Inadequate study before connection creates reliability and equity problems",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "topic:reliability-risk"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The ANOPR's proposed framework would effectively reclassify new large-load interconnections as FERC-jurisdictional transmission. This shift could have far-reaching implications for the division of regulatory authority between states and the federal government.",
+      "concern": "Proposed framework would shift retail service functions to FERC jurisdiction",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "OMS is concerned that, as proposed, the ANOPR could sever the existing link between load interconnection and the utility's obligation to serve.",
+      "concern": "Federal jurisdiction would cut utilities' obligation to serve from the interconnection process",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:obligation-to-serve"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the ANOPR provides no evidence or examples demonstrating that current state- or utility-administered interconnection processes are discriminatory or inadequate.",
+      "concern": "FERC offers no factual basis showing existing state processes fail large loads",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Rather than imposing federal jurisdiction, the Commission should pursue a cooperative federalism approach by developing voluntary best practices with states to improve interconnection efficiency, requiring load interconnection processes that enhance transparency, and other novel approaches to meet the moment.",
+      "concern": "OMS prefers voluntary best practices with states over mandatory federal rules",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the Commission should limit its authority over large-load interconnection requests to the study process itself, with clear guardrails ensuring no effect on retail service obligations.",
+      "concern": "Any FERC role should be confined to transmission studies with no retail-service reach",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "FERC should confirm that interconnection under this framework does not confer a right to self-procure from wholesale markets, except through approved arrangements such as co-location or behind-the-meter generation used for flexibility or demand-response purposes.",
+      "concern": "Interconnection should not automatically grant wholesale market self-supply rights",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "FERC should require large loads seeking to interconnect to demonstrate: site control, proof of transmission service, state notification and consultation, and disconnection authority if service obligations are not met.",
+      "concern": "OMS wants mandatory state consultation and site-control requirements before interconnection approval",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction",
+        "topic:guardrails"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "guardrails are needed to prevent inadvertent reliance on other authorities, such as FPA Section 202(c) emergency powers.",
+      "concern": "Fast-tracking without resource adequacy backing could trigger emergency power use",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:guardrails"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Defining large loads as any interconnecting customer demanding a minimum of 20 MW would likely limit any efficiencies or benefits intended by the ANOPR due to the sheer number of prospective large loads.",
+      "concern": "20 MW threshold is too low and would flood the queue with smaller customers",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "many other states have approved or are considering large load tariffs that all contemplate a range of 100-150 MW.",
+      "concern": "State tariff practice points to a threshold of 100 to 150 MW, not 20 MW",
+      "bins": [
+        "aq:threshold",
+        "rg:miso"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "enabling load flexibility is critical to accelerating the interconnection of large loads while maintaining a reliable and affordable grid for existing customers.",
+      "concern": "OMS supports flexibility mechanisms as long as existing customers are protected",
+      "bins": [
+        "pr:flex",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "as the Commission develops proposed requirements for flexible or co-located loads, it should ensure potential changes to existing regulatory constructs, public engagement processes, cost allocation frameworks, wholesale markets, and transmission planning are sufficiently stringent to shield existing customers from negative impacts and to determine whether the large loads are paying for the grid services they use (transmission, ancillary services, reliability backstop, etc.).",
+      "concern": "Co-location and flexibility rules must require large loads to pay their full share of grid services",
+      "bins": [
+        "pr:colo",
+        "pr:flex",
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "State Authority Must Be Preserved",
+      "stance": "oppose",
+      "description": "OMS opposes FERC asserting jurisdiction over large-load interconnection as an intrusion on state retail service authority. The ANOPR offers no evidence that existing state processes are deficient, and the proposed reclassification risks severing utilities' obligation to serve, creating regulatory gaps, and triggering legal challenges. OMS prefers voluntary cooperative federalism over mandatory federal rules.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Raise the 20 MW Threshold",
+      "stance": "oppose",
+      "description": "OMS argues the proposed 20 MW minimum is too low and would swamp the queue with smaller customers, defeating the efficiency goals of the ANOPR. Existing state large-load tariffs use thresholds of 100 to 150 MW, which OMS views as a more appropriate benchmark.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "No Automatic Wholesale Self-Supply Right",
+      "stance": "oppose",
+      "description": "OMS urges FERC to confirm that interconnection approval does not automatically grant large loads the right to self-procure from wholesale markets, limiting any such access to approved co-location or behind-the-meter arrangements.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Thorough Study Before Connection",
+      "stance": "support",
+      "description": "OMS supports thorough transmission-level study requirements and argues that connecting large loads without adequate analysis of resource adequacy and cost allocation creates reliability risks. Any FERC role should be confined to the study process itself.",
+      "quote_ids": [
+        4,
+        9,
+        11
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Causation for Large Loads",
+      "stance": "support",
+      "description": "OMS insists that entities causing transmission impacts must bear their share of costs and that states retain visibility into cost allocation decisions. Co-location and flexibility rules must also ensure large loads pay for the full range of grid services they use.",
+      "quote_ids": [
+        2,
+        4,
+        16
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location With Customer Protection",
+      "stance": "mixed",
+      "description": "OMS appreciates incentives for co-located generation as a way to reduce upgrade costs and protect existing customers, but calls for stringent rules ensuring co-located and flexible loads pay for all grid services and do not shift costs onto ratepayers.",
+      "quote_ids": [
+        10,
+        15,
+        16
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility to Speed Interconnection",
+      "stance": "support",
+      "description": "OMS views load flexibility as critical to accelerating interconnection while keeping the grid affordable and reliable for existing customers. It conditions support on adequate cost allocation safeguards.",
+      "quote_ids": [
+        10,
+        15,
+        16
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO Processes Already Work",
+      "stance": "neutral",
+      "description": "OMS notes that MISO has no interconnection backlog for large loads and that existing processes, including the Expedited Project Review, already coordinate transmission, resource adequacy, and state oversight effectively. Any federal rule should account for this regional context.",
+      "quote_ids": [
+        1,
+        14
+      ]
+    },
+    {
+      "key": "topic:cooperative-federalism",
+      "name": "Cooperative Federalism Over Mandates",
+      "stance": "support",
+      "description": "OMS argues the most durable outcome would result from voluntary best practices developed with states rather than federal mandates. The ANOPR's premise that asserting federal jurisdiction leaves state authority intact is likely incorrect, and the FPA's historical federal-state balance should guide any final rule.",
+      "quote_ids": [
+        3,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "topic:obligation-to-serve",
+      "name": "Utility Obligation to Serve at Risk",
+      "stance": "oppose",
+      "description": "OMS warns that shifting interconnection approval to FERC would sever the link between interconnection and the incumbent utility's obligation to serve, leaving unclear which entity is responsible for reliability and capacity adequacy over time.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:reliability-risk",
+      "name": "Reliability Risk From Rushed Interconnection",
+      "stance": "oppose",
+      "description": "OMS cautions that connecting large loads without adequate study, resource support, or cost alignment could introduce new reliability risks and inequities across customer classes.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:guardrails",
+      "name": "Explicit Guardrails Required",
+      "stance": "support",
+      "description": "OMS calls for specific procedural guardrails including mandatory site control, state notification, designated load-serving entities for resource adequacy, and protections against invoking emergency powers to fill gaps created by an insufficiently studied interconnection process.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "miso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

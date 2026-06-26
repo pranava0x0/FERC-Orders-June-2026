@@ -42,10 +42,10 @@
   (`sources/comments/rm26-4-manifest.raw.json`), classified type and stakeholder bucket
   (`tools/analyze-comments.mjs` → `rm26-4-comments.json`), and surfaced a **"What the RM26-4 commenters
   said"** section in Discourse: 273 comments from ~201 orgs, 128 interventions, the Nov 21 2025 deadline
-  spike (183 filings), and 17 stakeholder buckets with provisional per-camp positions. A test asserts the
+  spike (183 filings), and 19 stakeholder buckets with provisional per-camp positions. A test asserts the
   bucket counts sum to the comment total.
 - **done (2026-06-24)** — **Full pull + audit trail.** Cracked the eLibrary `GetFileListFromP8` JSON API
-  and pulled the **document/attachment inventory for all 273 comments** (279 files, 7 with sub-documents;
+  and pulled the **document/attachment inventory for all 273 comments** (281 files, 7 with sub-documents;
   `sources/comments/rm26-4-files.json`). Downloaded, text-extracted, and wrote **structured summaries**
   for **9 flagship comments** across the major camps (Google, NRG/Kavulla, PJM, IECA industrial coalition,
   Maryland PSC, PA+DE consumer advocates, Sen. Markey, ACP, EEI) — each with stance per reform category +
@@ -61,8 +61,8 @@
   that works. What remains is **structured summaries** beyond the 9 flagships (bodies are on disk +
   text-extracted, ready to read), and OCR for the few scanned filings (e.g., Data Center Coalition).
   Re-run `build-comment-audit.mjs` as summaries land; categorization auto-aggregates.
-- **high — agentic LLM comment analysis (PNNL "CommentNEPA" approach).** Extend per-comment analysis from
-  the 9 flagships to all ~269 text-extracted bodies, following PNNL/Battelle's *CommentNEPA: Auditable,
+- **done (2026-06-26) — agentic LLM comment analysis (PNNL "CommentNEPA" approach).** Extended per-comment
+  analysis from the 9 flagships to all 268 text-extracted bodies, following PNNL/Battelle's *CommentNEPA: Auditable,
   Agentic Workflows with Feedback Alignment for Environmental Review* (NAEP 2025, PNNL-SA-210567). The unit
   of evidence is the **quote**, and binning is **bottom-up on quotes** — not a single chat-shot. Decompose
   each correspondence into auditable subtasks:
@@ -85,11 +85,57 @@
   and a cross-check on the LLM's binning — never ship the LLM pass unaudited. Cost discipline: keyword
   pre-filter first, cheapest model that holds quality, cache by content hash. Surface each bin's name +
   description with its quote references in the Comments tab.
+  - **Done (2026-06-26) — 268/268 summarized, validated, and wired into the Comments tab.** Each comment
+    row carries an expandable "audited analysis" (plain summary + each position as a stance-colored chip),
+    and the Comments → Overview sub-tab leads with a "Where commenters land" stance map (support / oppose /
+    mixed / no-position per reform principle). `tests/comment-summaries.test.mjs` enforces the fidelity bar
+    (verbatim quotes, vocab, lens=union, count floor, one-example-per-enum). **Follow-ups (new):**
+    - **medium — human verification pass (feedback alignment).** All 268 are `verified:false`. Curate a
+      sample, stamp `verified_at`, and feed each curator edit back as a few-shot example (the PNNL loop).
+      No recall baseline exists yet (see `issues.md`); a small SME-selected gold set would let us measure it.
+    - **medium — fuller pass on the 8 large filings (>120 KB).** Page-windowed map-reduce over the whole
+      body instead of the front-slice read, so a position buried in an exhibit isn't missed (`issues.md`).
+    - **low — lazy-load the per-comment synthesis, and expose backing quotes.** `comments-data.js` grew to
+      ~104 KB gzipped because it carries each comment's summary + bins; it loads on every tab. Split the
+      heavy per-comment block into a file fetched only when the Comments tab opens. **Bundle with the
+      Antigravity-review ask** to surface the verbatim quote behind each stance chip (tooltip or nested
+      collapsible) — the quotes are committed in `summaries-v2/` but deliberately left out of the page data
+      for weight; the lazy-loaded block is where they'd live, closing the audit loop on the web.
+    - **low — Haiku-vs-Sonnet quality spot-check.** 84 summaries are Haiku-extracted; re-extract a sample
+      on Sonnet and diff to confirm no quality gap (`issues.md`).
+  - **In progress (2026-06-25) — 45 of 268 done, ~224 remaining.** Quote-centric v2 summaries
+    (`summaries-v2/<acc>.json`, schema in `sources/comments/summarization-spec.md`) by
+    `tools/summarize-comments.workflow.mjs`: **extract (Haiku) + self-critique → independent audit only
+    on `tools/flag-summary.mjs`-flagged items (Sonnet)**, self-validated against
+    `tools/validate-summaries.mjs` (verbatim coverage, vocab, lens=union, AI-register/boilerplate lint).
+    Work-list `tools/build-comment-worklist.mjs` → `.worklist.json` (gitignored); `--next N` yields the
+    next chunk; "done" = passes full validation, so a killed worker's partial file re-queues (self-heals).
+    **Run it in small budget-sized chunks across 5-hr windows** (`node tools/build-comment-worklist.mjs
+    --next 10` → pass as `args.accs`); the full remaining run is ~13M tokens, several windows. **Biggest
+    open token lever: batch several short comments per agent** to amortize the ~25–30K per-agent floor
+    (see `agent-runs.md` Runs 8–9). **Caps applied — go back and do the fuller versions:**
+    1. **Big-body read cap.** For the **8 filings > 120 KB** the extract agent reads only the first
+       ~2000 lines + greps for the argument/recommendation sections, so quotes can miss material buried
+       in later pages or exhibits. Worst case **Sierra Club `20260520-5102` (5.9 MB)** — read only a small
+       front slice. Others (chars): `20260406-5178` SPP TO Group (350k), `20251121-5396` SELC et al.
+       (261k), `20260615-5164` Electricity Customer Alliance (205k), `20260519-5158` Eolian (182k),
+       `20251205-5306` Constellation (157k), `20251121-5541` Eolian (148k), `20251205-5289` Eolian (121k).
+       Fuller pass: chunk the whole body (page-windowed map-reduce over quotes), not a front slice.
+    2. **Model cap.** Extraction ran on **Sonnet**, not Opus, for cost. The deterministic validator
+       backstops quote fidelity, but stance/binning nuance on the hardest filings may improve on Opus —
+       re-run a sample on Opus and diff before deciding whether it's worth the full re-run.
+    3. **Quote-count guidance** ("typically 4 to 15; do not pad") soft-bounds very rich filings; a
+       maximal pass would lift the ceiling for the large coalition/RTO comments.
+    4. **Corpus cap.** Only the **268 text-extracted bodies** are summarized. The other **5 are not
+       summarizable: 4 image-only scans** (`20251121-5224`, `20251121-5521`, `20251121-5140`,
+       `20251205-5005` — no text layer, OCR-pending) **plus 1 inline-only filing** (ETI,
+       `20251121-5225` — eLibrary serves it inline, no downloadable body). See the OCR + ETI items below.
+       `.worklist.json`'s `MIN_CHARS=400` is the cutoff for "has usable text".
 - **medium — OCR the 4 image-only scans.** `20251121-5224`, `20251121-5521` (Data Center Coalition),
   `20251121-5140` (Yurok Nation), `20251205-5005` are downloaded but have no text layer (`validate-comments.py`
   flags them). Needs an OCR tool (no `ocrmypdf`/`tesseract` installed locally — install one, or use macOS
   Vision). Once OCR'd, re-run organize/validate; they drop out of the scanned set into the text-analyzed corpus.
-- **low — re-fetch the ETI holdout** (`20251121-5225`, Entergy Texas): renders + clicks but won't download
+- **low — re-fetch the ETI holdout** (`20251121-5225`, Energy Trading Institute): renders + clicks but won't download
   (served inline). Inventoried + re-downloadable; the corpus reads 272/273. See `issues.md`.
 - **partially done / medium** — The **written** "what each commissioner said" block is shipped from the
   five concurring statements appended to the orders (see done 2026-06-24). What remains is the **spoken**
@@ -106,6 +152,9 @@
   add a "compliance tracker" sub-view per docket (filed / pending / abeyance).
 - **low** — `og:image` social card (JPG) rendered from the masthead for link previews.
 - **low** — Dark theme token set (palette is defined; wire the toggle + JS re-paint).
+- **low — a11y: the docket accordion summary (`details.dreg > summary`) has a ~13 px tap target** (no
+  padding/min-height) — below the 44 px guideline. Pre-existing (commit `735f776`), surfaced by the
+  2026-06-26 review. Fix: add `padding: 11px 0; min-height: 44px; display: flex; align-items: center;`.
 
 ### Critique / analysis leads (from the 2026-06-24 news refresh)
 
