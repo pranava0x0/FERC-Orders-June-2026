@@ -1,0 +1,335 @@
+{
+  "accession": "20260406-5178",
+  "filer": "Southwest Power Pool Transmission Owner Group",
+  "org_type": "transmission_owner",
+  "filed": "04/06/2026",
+  "source_text": "sources/comments/files/20260406-5178__Southwest-Power-Pool-Transmission-Owner-Group/RM26-4 20260406 Supplemental Comments of SPP TO Group.txt",
+  "overall_summary": "The SPP TO Group urges FERC not to issue an overly prescriptive nationwide rule, pointing to SPP's already-accepted HILL and CPP reforms as proof that regional stakeholder-driven solutions can meet every ANOPR principle. The filing argues standardization is a means, not an end, and that a rigid rule would undermine the carefully balanced consensus reforms the SPP region has already built.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the Commission should avoid issuing an overly prescriptive rule, but should instead provide broad latitude for transmission providers and their stakeholders to develop their own solutions to the challenges posed by large load interconnections.",
+      "concern": "Opposes prescriptive national rule; wants regional flexibility",
+      "bins": [
+        "pr:flex",
+        "topic:regional-autonomy"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Standardization is merely a tool to achieve that end; it is not an end in itself.",
+      "concern": "Frames standardization as subordinate to the actual goal of timely interconnection",
+      "bins": [
+        "pr:flex",
+        "topic:regional-autonomy"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "A final rule in this proceeding should not undermine the extraordinary progress the SPP region has made by disturbing the carefully balanced consensus reforms that SPP, its public and investor-owned Load Serving Entities, and state regulators have collaborated to develop.",
+      "concern": "Worries a final rule will disrupt SPP's already-approved HILL and CPP reforms",
+      "bins": [
+        "pr:flex",
+        "rg:spp",
+        "topic:regional-autonomy"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the Commission should 'expressly state that RTOs and ISOs will have broad flexibility to seek variations from any pro forma tariff adopted by the Commission under the independent entity variation standard.'",
+      "concern": "Asks FERC to preserve the independent entity variation standard for RTOs and ISOs",
+      "bins": [
+        "pr:flex",
+        "topic:tariff-variation"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the threshold SPP adopted in its HILL reform varies by voltage.  Specifically, A new commercial or industrial load, or increase in commercial or industrial load, at a single site connected through one or more shared Points of Interconnection (POIs) or delivery points, where such load is either (1) 10 MW or more if connected to the Transmission System at a voltage level less than or equal to 69 [kilovolts (kV)]; or (2) 50 MW or more if connected to the Transmission System at a voltage level greater than 69 kV.",
+      "concern": "SPP uses voltage-based thresholds instead of the ANOPR's flat 20 MW threshold",
+      "bins": [
+        "aq:threshold",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "While a 20 MW threshold may work for other regions, it would not work for SPP.  However, transmission providers outside of SPP should be left to define 'large loads' as they see fit with their stakeholders and according to their region's unique circumstances.  The Commission need not dictate what the limit is, although it should direct all transmission providers to designate and justify an appropriate threshold.",
+      "concern": "Opposes a uniform 20 MW threshold; prefers a regional justification requirement instead",
+      "bins": [
+        "aq:threshold",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "CPP 'eliminat[es] the silos between the transmission planning process and the generator interconnection process, synthesizing and streamlining them into one recurring three-year planning cycle.'",
+      "concern": "CPP's unified planning cycle satisfies the joint-study principle",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The HILL reform imposes a $10,000 non-refundable application fee, a $100,000 deposit to perform an HDPS study, a $200,000 fee for an EMT analysis if necessary, and increased deposits for requests to study and interconnect HILLs and HILLGAs.",
+      "concern": "SPP's deposit and fee structure satisfies the ANOPR's readiness/anti-speculation principle",
+      "bins": [
+        "aq:deposits",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The withdrawal penalty framework SPP has embraced satisfies Principle 4, and the Commission should not impose a new rule that interferes with what SPP and its stakeholders have accomplished.  The SPP TO Group remains agnostic as to the appropriate size of withdrawal penalties in other regions so long as they accomplish the ANOPR's intent to deter speculative projects.",
+      "concern": "Supports SPP's withdrawal penalty approach and asks FERC not to override it with a new rule",
+      "bins": [
+        "aq:deposits",
+        "pr:flex",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "large load interconnection customers are not similarly situated to generator interconnection customers and should not be afforded the same option to build interconnection facilities and stand-alone network upgrades because they lack experience constructing or developing those facilities.",
+      "concern": "Opposes applying the generator option-to-build right to large load customers",
+      "bins": [
+        "aq:hybridrights",
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The HILL reform provides a 90-day expedited review process for generation projects in close electrical proximity to the load they are meant to serve.",
+      "concern": "SPP's HILL reform includes a 90-day expedited study process for proximate generation",
+      "bins": [
+        "aq:expedited",
+        "pr:proximate",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The SPP TO Group strongly support CHILLS and recommends that the Commission approve that proposal as a valuable, region-specific means of expediting curtailable load interconnections.",
+      "concern": "Asks FERC to approve SPP's pending CHILLS proposal for expedited curtailable-load service",
+      "bins": [
+        "aq:expedited",
+        "pr:flex",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "under CPP and HILL framework, as well as the pending CHILLS framework, load and hybrid facilities will be responsible for the cost of upgrades.  SPP, however, takes an additional step by actually reducing the need for upgrades through its identification of Planned Interconnection Locations.",
+      "concern": "SPP's approach assigns upgrade costs to load while cutting those costs via Planned Interconnection Locations",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "CPP shows that stakeholders wish to, and are capable of, designing interconnection solutions that work for their specific regional needs without encroaching on state jurisdiction.  By allowing transmission providers to develop their own region-specific interconnection solutions, the Commission can avoid the jurisdictional minefield that an overbroad rule might create.",
+      "concern": "Regional stakeholder processes protect state jurisdiction; a broad FERC rule risks encroaching on it",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:flex",
+        "topic:state-jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Oppose Prescriptive National Rule",
+      "stance": "oppose",
+      "description": "The SPP TO Group consistently argues that FERC should not issue a one-size-fits-all rule and should instead give RTOs and ISOs broad flexibility under the independent entity variation standard. SPP's HILL and CPP reforms are offered as proof that regional stakeholder processes can satisfy every ANOPR principle without mandated standardization.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        12,
+        14
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP Reforms as Model",
+      "stance": "support",
+      "description": "The filing repeatedly cites FERC-accepted SPP reforms (HILL, CPP, and pending CHILLS) as examples of region-specific solutions that already address the ANOPR's fourteen principles. The filer asks FERC to protect rather than disturb those reforms.",
+      "quote_ids": [
+        3,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Voltage-Based Load Threshold",
+      "stance": "mixed",
+      "description": "The SPP TO Group supports SPP's voltage-tiered threshold (10 MW at 69 kV or below; 50 MW above 69 kV) rather than the ANOPR's flat 20 MW cutoff. The filer accepts that other regions may justify different thresholds but asks FERC not to mandate a single number.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Unified Load and Gen Study",
+      "stance": "support",
+      "description": "CPP's integrated three-year planning cycle merges the transmission planning and generator interconnection processes into a single workflow, satisfying the ANOPR's joint-study principle while going beyond its specific recommendations.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Integrated Planning Cycle",
+      "stance": "support",
+      "description": "The filer endorses CPP's approach of combining load and generation study into one recurring cycle to reduce upgrade costs and improve system planning.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Fees and Withdrawal Penalties",
+      "stance": "support",
+      "description": "The SPP TO Group supports SPP's tiered fees and withdrawal penalties under HILL and CPP as sufficient to deter speculation and asks FERC not to override them with a new standard. The group is agnostic about the specific amounts required in other regions.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "No Option-to-Build for Load Customers",
+      "stance": "oppose",
+      "description": "The filer argues large load customers lack the construction experience of generator interconnection customers and should not receive the same option-to-build rights for interconnection facilities and network upgrades.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Curtailable Load Process",
+      "stance": "support",
+      "description": "HILL's 90-day expedited study and the pending CHILLS proposal together provide a fast path for curtailable large loads and proximate generation. The filer asks FERC to approve CHILLS and recognize these processes as sufficient.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Proximate Generation Linkage",
+      "stance": "support",
+      "description": "The HILL reform expedites study for generation electrically close to the load it serves, directly addressing the ANOPR's proximate-generation principle through a region-specific mechanism.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Load Pays Upgrade Costs",
+      "stance": "support",
+      "description": "Under HILL and CPP, load and hybrid facilities are responsible for assigned upgrade costs, but SPP reduces those costs by identifying Planned Interconnection Locations where capacity is pre-built. The filer supports this approach as superior to a generic cost-assignment rule.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Reduce Upgrade Cost Burden",
+      "stance": "support",
+      "description": "Planned Interconnection Locations cut the upgrade costs new load customers face by channeling requests to areas where transmission capacity already exists, giving upfront cost certainty.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Protect State Jurisdiction",
+      "stance": "support",
+      "description": "The filer argues that regional stakeholder processes like CPP avoid federal-state jurisdictional conflicts because states actively participate in designing them. A broad FERC rule risks overstepping into state authority over retail rates and local distribution.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "topic:regional-autonomy",
+      "name": "Regional Process Over Federal Rule",
+      "stance": "oppose",
+      "description": "A cross-cutting theme throughout the filing is that transmission providers and their regional stakeholders are better placed than FERC to craft large load interconnection solutions, and that federal standardization adds risk without adding value in regions like SPP that have already solved the problem.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "topic:tariff-variation",
+      "name": "Independent Entity Variation Standard",
+      "stance": "support",
+      "description": "The filer explicitly asks FERC to preserve and affirm the independent entity variation standard so RTOs and ISOs can deviate from any pro forma tariff adopted in this proceeding.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:option-to-build",
+      "name": "Reject Load Customer Build Rights",
+      "stance": "oppose",
+      "description": "The filer distinguishes large load customers from generator interconnection customers and argues the option-to-build right should not be extended to load customers who lack relevant construction expertise.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:state-jurisdiction",
+      "name": "Avoid Jurisdictional Conflict",
+      "stance": "support",
+      "description": "CPP's unanimous state regulator support demonstrates that regional processes can bridge the federal-state divide. An overbroad FERC rule risks creating jurisdictional conflicts that stakeholder-designed processes avoid.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "expedited",
+      "upgradecost",
+      "jurisdiction"
+    ],
+    "pr": [
+      "flex",
+      "study",
+      "proximate",
+      "cost"
+    ],
+    "rg": [
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-26",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
