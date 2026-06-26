@@ -1,0 +1,162 @@
+{
+  "accession": "20251205-5171",
+  "filer": "Industrial Energy Consumers of America et al.",
+  "org_type": "industrial",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5171__Industrial-Energy-Consumers-of-America-et-al/Industrial Joint ANOPR Reply Comments (RM26-4-000).txt",
+  "overall_summary": "Four industrial customer organizations urge FERC to mandate evaluation and deployment of Grid Enhancing Technologies in all transmission studies where cost-effective, arguing that voluntary incentives have failed and that the financial structure of rate-base-driven utilities systematically discourages optimization. They also call for strict transparency in load forecasting, enforcement of the cost causation principle, protection of state processes through an optional federal fast-lane, a higher MW threshold than 20 MW, and continued reliance on competitive markets rather than incumbent monopoly preferences.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "standardization of studies impacting the bulk electric system (\"BES\") is within FERC's jurisdiction, the comments affirm the importance of maintaining state jurisdiction over retail services provided to an end-use customer.",
+      "concern": "FERC jurisdiction extends to BES interconnection studies but not to retail service obligations",
+      "bins": ["aq:jurisdiction"]
+    },
+    {
+      "id": 2,
+      "text": "The time has come and gone for voluntary or incentivized consideration of GETs.",
+      "concern": "Voluntary GETs programs have failed; mandatory requirements are overdue",
+      "bins": ["pr:study", "topic:gets-mandate"]
+    },
+    {
+      "id": 3,
+      "text": "To unleash the ANOPR's speed-to-power objectives, the Commission should narrowly focus its near-term efforts on optimizing existing system capacity (or transfer capability) via reconductoring and deployment of GETs and require the transparency of load forecasting and assumptions underlying transmission system studies.",
+      "concern": "Near-term priority should be optimizing existing capacity through GETs and transparent load forecasting",
+      "bins": ["pr:study", "pr:cost", "topic:gets-mandate"]
+    },
+    {
+      "id": 4,
+      "text": "the Commission must address head-on the underlying financial incentive for transmission owners to understate system capability to overbuild and expand rate base",
+      "concern": "Rate-base incentives bias transmission owners toward new construction over optimization",
+      "bins": ["pr:cost", "topic:gets-mandate"]
+    },
+    {
+      "id": 5,
+      "text": "the Commission must refrain from establishing incentives for GETs, but instead require that transmission owners and transmission providers routinely and systematically evaluate GETs as a means for optimizing existing transmission facilities to accommodate new large load interconnections and other load growth.",
+      "concern": "GETs should be a mandatory systematic requirement, not an incentivized option",
+      "bins": ["pr:study", "topic:gets-mandate"]
+    },
+    {
+      "id": 6,
+      "text": "If a traditional upgrade or new line or facility is necessary and more cost-effective than GET deployment, then documentation and analysis supporting the traditional upgrade should be provided publicly so that the parties to the interconnection process, customers, and state and federal regulators have full visibility into the decision.",
+      "concern": "When GETs are rejected, a public record of the cost comparison must be provided",
+      "bins": ["pr:study", "topic:tariff-transparency"]
+    },
+    {
+      "id": 7,
+      "text": "GETs must be required and should no longer be voluntary or simply encouraged or incentivized.",
+      "concern": "GETs evaluation and deployment must be mandatory",
+      "bins": ["pr:study", "topic:gets-mandate"]
+    },
+    {
+      "id": 8,
+      "text": "the Commission could establish a risk of non-recovery of the costs of new transmission facilities that are placed into service if transmission owner fails to consider GETs or advanced technology alternatives to the new construction.",
+      "concern": "Non-recovery risk would enforce GETs consideration before new-build approval",
+      "bins": ["pr:cost", "topic:gets-mandate"]
+    },
+    {
+      "id": 9,
+      "text": "the Commission should create a new office or staff that independently evaluates any proposed transmission solutions associated with a large load interconnection request.",
+      "concern": "An independent FERC office is needed to evaluate proposed transmission solutions",
+      "bins": ["pr:study", "topic:gets-mandate"]
+    },
+    {
+      "id": 10,
+      "text": "Increased transparency and visibility into the impacts of large load requests is an area where the Commission should focus its efforts in developing any NOPR.",
+      "concern": "The NOPR should prioritize load-impact transparency",
+      "bins": ["pr:study", "topic:tariff-transparency"]
+    },
+    {
+      "id": 11,
+      "text": "the Commission must protect customers by upholding the cost causation principle, and as necessary, refine the application of that principle to account for instances where existing customers may be more vulnerable to cost shifts associated with a large new load in a smaller utility zone",
+      "concern": "Cost causation must be refined to protect existing customers in small utility zones from large-load cost shifts",
+      "bins": ["pr:cost"]
+    },
+    {
+      "id": 12,
+      "text": "the Commission should consider implementing an optional and elective, fast lane, federal interconnection process, consistent with the framework in the initial comments of the Industrial Customer Organizations.",
+      "concern": "An optional federal fast-lane would avoid displacing functional state processes",
+      "bins": ["aq:jurisdiction", "pr:study"]
+    },
+    {
+      "id": 13,
+      "text": "If FERC implements a standardized large load interconnection process and load queue, then the Commission should consider using FERC's Seven Factor Test to evaluate the jurisdictional nature of the interconnection, in lieu of any arbitrary MW threshold.",
+      "concern": "The Seven Factor Test is preferable to an arbitrary MW threshold for determining FERC jurisdiction",
+      "bins": ["aq:jurisdiction", "aq:threshold"]
+    },
+    {
+      "id": 14,
+      "text": "mandating a load interconnection queue process in the near term is not advised at this time.",
+      "concern": "A mandatory load queue is premature",
+      "bins": ["pr:study"]
+    },
+    {
+      "id": 15,
+      "text": "the Commission should exercise its regulatory authority, as needed, to ensure reliability and to protect consumers, including the protection of market mechanisms that lower prices and provide enduring value to both the grid and consumers.",
+      "concern": "Competitive market mechanisms should be protected against incumbent utility preferences",
+      "bins": ["topic:competitive-markets"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC jurisdiction, state protection",
+      "stance": "mixed",
+      "description": "The filers support FERC authority over BES interconnection studies but insist state jurisdiction over retail service must be preserved. They propose an optional federal fast-lane as the way to add federal standardization without displacing state processes that are working. They prefer the Seven Factor Test over a fixed MW threshold to determine when FERC jurisdiction applies.",
+      "quote_ids": [1, 12, 13]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "MW threshold too low",
+      "stance": "oppose",
+      "description": "The filers oppose a 20 MW threshold as too low, noting that newer data centers routinely exceed 500 MW and that the larger loads are driving unprecedented growth. They recommend using the Seven Factor Test instead of any fixed MW figure.",
+      "quote_ids": [13]
+    },
+    {
+      "key": "pr:study",
+      "name": "Mandatory GETs in all studies",
+      "stance": "support",
+      "description": "The filers call for FERC to require systematic GETs evaluation in every transmission and load study, not merely encourage it. They want a new independent FERC office to review proposed solutions, mandatory public documentation when GETs are rejected, and no rush toward a load queue. They argue near-term focus should be optimizing existing capacity rather than mandating new queues.",
+      "quote_ids": [2, 3, 5, 6, 7, 9, 10, 12, 14]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost causation, rate-base bias",
+      "stance": "support",
+      "description": "The filers argue that rate-base incentives systematically push transmission owners toward new construction over cost-effective optimization. They want FERC to enforce the cost causation principle, refine it for small-denominator utility zones vulnerable to cost shifts, and create non-recovery risk for owners who skip GETs evaluation.",
+      "quote_ids": [3, 4, 8, 11]
+    },
+    {
+      "key": "topic:gets-mandate",
+      "name": "Mandate, not incentivize, GETs",
+      "stance": "support",
+      "description": "The filers argue that voluntary and incentivized GETs programs have failed despite well-documented cost savings, and that FERC must now require GETs evaluation and deployment where cost-effective. They cite documented savings in PJM, MISO, and individual utility deployments, and argue that shareholder and fiduciary pressures make voluntary compliance structurally unlikely.",
+      "quote_ids": [2, 3, 4, 5, 7, 8, 9]
+    },
+    {
+      "key": "topic:tariff-transparency",
+      "name": "Transparent load and study data",
+      "stance": "support",
+      "description": "The filers support requiring public reporting on load forecasting assumptions, transmission study methods, and implementation schedules for large load interconnection requests. When GETs are not selected, a public cost comparison must accompany the decision so customers, states, and FERC can evaluate whether traditional upgrades are justified.",
+      "quote_ids": [6, 10]
+    },
+    {
+      "key": "topic:competitive-markets",
+      "name": "Competition over incumbent monopoly",
+      "stance": "support",
+      "description": "The filers reject unsupported claims by ATC that incumbent monopolies deliver better value than competitive solicitations. They argue open competition with cost caps and accountability commitments is the best way to hold transmission rates down and drive innovation.",
+      "quote_ids": [15]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction", "threshold"],
+    "pr": ["study", "cost"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

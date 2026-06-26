@@ -85,6 +85,33 @@
   and a cross-check on the LLM's binning — never ship the LLM pass unaudited. Cost discipline: keyword
   pre-filter first, cheapest model that holds quality, cache by content hash. Surface each bin's name +
   description with its quote references in the Comments tab.
+  - **In progress (2026-06-25) — 45 of 268 done, ~224 remaining.** Quote-centric v2 summaries
+    (`summaries-v2/<acc>.json`, schema in `sources/comments/summarization-spec.md`) by
+    `tools/summarize-comments.workflow.mjs`: **extract (Haiku) + self-critique → independent audit only
+    on `tools/flag-summary.mjs`-flagged items (Sonnet)**, self-validated against
+    `tools/validate-summaries.mjs` (verbatim coverage, vocab, lens=union, AI-register/boilerplate lint).
+    Work-list `tools/build-comment-worklist.mjs` → `.worklist.json` (gitignored); `--next N` yields the
+    next chunk; "done" = passes full validation, so a killed worker's partial file re-queues (self-heals).
+    **Run it in small budget-sized chunks across 5-hr windows** (`node tools/build-comment-worklist.mjs
+    --next 10` → pass as `args.accs`); the full remaining run is ~13M tokens, several windows. **Biggest
+    open token lever: batch several short comments per agent** to amortize the ~25–30K per-agent floor
+    (see `agent-runs.md` Runs 8–9). **Caps applied — go back and do the fuller versions:**
+    1. **Big-body read cap.** For the **8 filings > 120 KB** the extract agent reads only the first
+       ~2000 lines + greps for the argument/recommendation sections, so quotes can miss material buried
+       in later pages or exhibits. Worst case **Sierra Club `20260520-5102` (5.9 MB)** — read only a small
+       front slice. Others (chars): `20260406-5178` SPP TO Group (350k), `20251121-5396` SELC et al.
+       (261k), `20260615-5164` Electricity Customer Alliance (205k), `20260519-5158` Eolian (182k),
+       `20251205-5306` Constellation (157k), `20251121-5541` Eolian (148k), `20251205-5289` Eolian (121k).
+       Fuller pass: chunk the whole body (page-windowed map-reduce over quotes), not a front slice.
+    2. **Model cap.** Extraction ran on **Sonnet**, not Opus, for cost. The deterministic validator
+       backstops quote fidelity, but stance/binning nuance on the hardest filings may improve on Opus —
+       re-run a sample on Opus and diff before deciding whether it's worth the full re-run.
+    3. **Quote-count guidance** ("typically 4 to 15; do not pad") soft-bounds very rich filings; a
+       maximal pass would lift the ceiling for the large coalition/RTO comments.
+    4. **Corpus cap.** Only the **268 text-extracted bodies** are summarized; the **5 image-only scans**
+       (`20251121-5224`, `20251121-5521`, `20251121-5140`, `20251205-5005`, + the ETI inline holdout
+       `20251121-5225`) are excluded until OCR'd (see the OCR + ETI items below). `.worklist.json`'s
+       `MIN_CHARS=400` is the cutoff.
 - **medium — OCR the 4 image-only scans.** `20251121-5224`, `20251121-5521` (Data Center Coalition),
   `20251121-5140` (Yurok Nation), `20251205-5005` are downloaded but have no text layer (`validate-comments.py`
   flags them). Needs an OCR tool (no `ocrmypdf`/`tesseract` installed locally — install one, or use macOS

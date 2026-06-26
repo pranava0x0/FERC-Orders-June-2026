@@ -1,0 +1,211 @@
+{
+  "accession": "20251124-5130",
+  "filer": "ENGIE North America Inc.",
+  "org_type": "generator_ipp",
+  "filed": "11/24/2025",
+  "source_text": "sources/comments/files/20251124-5130__ENGIE-North-America-Inc/RM26-4 ENGIE ANOPR Initial Comments.txt",
+  "overall_summary": "ENGIE North America supports the ANOPR's large load interconnection reforms and urges the Commission to adopt a flexible, technology-agnostic framework that promotes co-location of generation and storage with large loads, allows netting of co-located resources for ancillary services, and establishes expedited queues for curtailable hybrid facilities. ENGIE raises specific concerns about the 20 MW threshold being too low, opposes charging ancillary services on gross peak demand without netting co-located generation, and calls for well-defined flexibility parameters so hybrid projects can be commercially financed.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "ENGIE emphasizes, however, that retaining flexibility is paramount. It will be essential that any new requirements take into account, and at times defer to regional differences and regional knowledge of system conditions.",
+      "concern": "Nationwide standardization must preserve regional flexibility",
+      "bins": ["pr:flex", "aq:jurisdiction"]
+    },
+    {
+      "id": 2,
+      "text": "Co-locating large loads with generation and/or storage should be emphasized as the primary solution to impacts caused by large loads interconnecting to the bulk electric system.",
+      "concern": "Co-location should be the primary strategy for managing large load grid impacts",
+      "bins": ["pr:colo"]
+    },
+    {
+      "id": 3,
+      "text": "Allowing large loads and co-located generation to net meter is the most efficient way to interconnect large loads. Netting of load and generation reduces the need for unnecessary system upgrades and associated costs, and decreases the need for subsidies which reduces ratepayer costs.",
+      "concern": "Net metering of co-located load and generation reduces upgrade costs and ratepayer burden",
+      "bins": ["pr:colo", "pr:cost"]
+    },
+    {
+      "id": 4,
+      "text": "While ENGIE does not take a strong view on whether 20 MW is the appropriate threshold, we suggest that the 20 MW threshold may be too low for the types of large loads that typically drive new transmission needs.",
+      "concern": "20 MW threshold may be too low and could capture mid-size facilities that pose no system risk",
+      "bins": ["aq:threshold"]
+    },
+    {
+      "id": 5,
+      "text": "ENGIE recommends that the Commission allow for flexibility in implementation of a given megawatt threshold by deferring to the regions in setting a reasonable threshold. The Commission should require that ISOs and RTOs conduct a transparent stakeholder process to determine an appropriate threshold while relying on relevant system and queue data.",
+      "concern": "Regions should set their own thresholds through transparent stakeholder processes",
+      "bins": ["aq:threshold", "aq:jurisdiction", "pr:flex"]
+    },
+    {
+      "id": 6,
+      "text": "ENGIE strongly supports this principle. We believe that a more holistic approach to system planning, including the studying of all types of facilities together, provides a more complete picture of how new facilities will interact with the electric grid.",
+      "concern": "Joint study of load, hybrid, and generation facilities produces more accurate grid impact assessments",
+      "bins": ["aq:jointstudy", "pr:study"]
+    },
+    {
+      "id": 7,
+      "text": "ENGIE would like to highlight the Southwest Power Pool's (\"SPP\") soon to be implemented Coordinated Planning Process (\"CPP\") for being the most robust, holistic planning process of any ISO/RTO.",
+      "concern": "SPP's Coordinated Planning Process is a model for holistic joint study",
+      "bins": ["aq:jointstudy", "pr:study", "rg:spp"]
+    },
+    {
+      "id": 8,
+      "text": "Financial requirements, including deposits of $5,000-$10,000 per megawatt of load are reasonable as are penalties for facilities that exit interconnection studies.",
+      "concern": "Per-MW deposit range and withdrawal penalties are reasonable financial commitments",
+      "bins": ["aq:deposits"]
+    },
+    {
+      "id": 9,
+      "text": "ENGIE also supports transparency and accountability in the interconnection process by requiring transmission providers to publish tariffs with clear and well understood timelines for deposit requirements.",
+      "concern": "Tariffs should disclose deposit timelines and study schedules clearly",
+      "bins": ["aq:deposits", "topic:tariff-transparency"]
+    },
+    {
+      "id": 10,
+      "text": "ENGIE strongly supports this proposal for several reasons. First, focusing on the requested injection and withdrawal level will increase the accuracy of the interconnection process by aligning interconnection studies with the facility's actual impact on the grid.",
+      "concern": "Studying hybrid facilities based on actual injection and withdrawal rights improves accuracy and efficiency",
+      "bins": ["aq:hybridrights", "pr:study"]
+    },
+    {
+      "id": 11,
+      "text": "hybrid facility owners should have the flexibility to install protection systems of their choice as long as they meet the requisite industry standards.",
+      "concern": "Protection system requirements should be technology-agnostic",
+      "bins": ["aq:protection", "pr:flex"]
+    },
+    {
+      "id": 12,
+      "text": "ENGIE supports the concept of expedited interconnection for these types of facilities where load brings its own generation and/or storage. ENGIE recommends that the Commission consider establishing a separate queue for this purpose.",
+      "concern": "A separate expedited queue for curtailable hybrid facilities would accelerate interconnection",
+      "bins": ["aq:expedited", "pr:flex"]
+    },
+    {
+      "id": 13,
+      "text": "If these requirements are left unparameterized a project will struggle with commercial feasibility. It is next to impossible for a facility to plan around the requirements and there is almost no way to finance facilities that are exposed to these types of undefined risks.",
+      "concern": "Flexibility parameters must be defined for hybrid facilities to be commercially viable",
+      "bins": ["aq:expedited", "pr:flex"]
+    },
+    {
+      "id": 14,
+      "text": "ENGIE does not believe that a crediting mechanism is necessary as large load and hybrid interconnection costs should be paid for by the facilities themselves. A credit mechanism may risk shifting costs onto ratepayers.",
+      "concern": "No cost crediting mechanism needed; upgrade costs should stay with the interconnecting facility",
+      "bins": ["aq:upgradecost", "pr:cost"]
+    },
+    {
+      "id": 15,
+      "text": "ENGIE finds this principle is problematic because it ignores the operational reality and fairness considerations of hybrid facilities. If facilities are charged based solely on peak demand, without netting co-located generation, it treats the site as if the generation does not exist.",
+      "concern": "Charging ancillary services on gross peak demand without netting co-located generation is unfair and overstates grid support needs",
+      "bins": ["pr:colo", "pr:cost"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Regional deference over federal mandates",
+      "stance": "support",
+      "description": "ENGIE supports nationwide standardization but insists new rules must defer to regional differences in system conditions and allow ISOs and RTOs to adapt requirements. Federal overreach concerns grow more credible at lower MW thresholds.",
+      "quote_ids": [1, 5]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20 MW threshold may be too low",
+      "stance": "mixed",
+      "description": "ENGIE does not take a firm position on 20 MW but warns it may capture mid-size commercial facilities that pose no system risk, increasing regulatory burden. ENGIE recommends letting regions set their own thresholds through transparent stakeholder processes.",
+      "quote_ids": [4, 5]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Support joint load and generation study",
+      "stance": "support",
+      "description": "ENGIE strongly supports studying large loads, hybrid facilities, and generating facilities together for a more complete picture of grid impacts. It cites SPP's Coordinated Planning Process as a model worth emulating.",
+      "quote_ids": [6, 7]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Deposits and tariff transparency",
+      "stance": "support",
+      "description": "ENGIE endorses per-MW deposits of $5,000 to $10,000 and withdrawal penalties as reasonable financial commitments. It also calls for tariffs to publish clear timelines for deposit requirements and study schedules.",
+      "quote_ids": [8, 9]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Study hybrid facilities on net injection and withdrawal",
+      "stance": "support",
+      "description": "ENGIE strongly supports studying hybrid facilities based on their requested injection and withdrawal levels rather than gross capacity, as this aligns studies with actual grid impact, reduces unnecessary modeling, and accelerates timelines.",
+      "quote_ids": [10]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Technology-agnostic protection systems",
+      "stance": "support",
+      "description": "ENGIE agrees that hybrid applicants should install system protection facilities to prevent unauthorized flows, but insists owners must have the flexibility to choose their protection systems as long as they meet industry standards.",
+      "quote_ids": [11]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited queue with defined flexibility terms",
+      "stance": "support",
+      "description": "ENGIE supports a separate expedited queue for curtailable and dispatchable hybrid facilities that bring their own generation or storage. It warns that flexibility parameters (notice, percentage, duration, frequency) must be defined or projects will be commercially unfinanceable.",
+      "quote_ids": [12, 13]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "No cost crediting; facilities pay their own upgrades",
+      "stance": "support",
+      "description": "ENGIE agrees that large load and hybrid facilities should bear 100% of network upgrade costs allocated to them and opposes a crediting mechanism that could shift costs to ratepayers. It distinguishes local-benefit upgrades from system-benefit upgrades, which should be socialized.",
+      "quote_ids": [14]
+    },
+    {
+      "key": "pr:study",
+      "name": "Holistic integrated interconnection studies",
+      "stance": "support",
+      "description": "ENGIE supports studying load, hybrid, and generation facilities together to improve accuracy, reduce duplication, and capture the net load and flexibility contributions of hybrid projects. SPP's CPP is highlighted as a leading model.",
+      "quote_ids": [6, 7, 10]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Costs follow actual grid impact",
+      "stance": "support",
+      "description": "ENGIE supports cost allocation that tracks actual grid impact: facilities pay for upgrades they cause, netting of co-located generation reduces ancillary service charges, and no crediting mechanism should shift costs to ratepayers.",
+      "quote_ids": [3, 14, 15]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location as primary integration strategy",
+      "stance": "support",
+      "description": "ENGIE views co-location of generation and storage with large loads as the primary solution to grid impact. Net metering of co-located resources reduces upgrade needs, ratepayer costs, and ancillary service overcharges. Charging on gross peak demand without netting penalizes facilities that have already reduced their grid footprint.",
+      "quote_ids": [2, 3, 15]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility and regional adaptation",
+      "stance": "support",
+      "description": "ENGIE consistently calls for flexibility in implementation: regions should set thresholds, protection systems should be technology-agnostic, expedited queue flexibility terms must be defined, and RTOs should be permitted to propose region-specific curtailment thresholds.",
+      "quote_ids": [1, 5, 11, 12, 13]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP Coordinated Planning Process as model",
+      "stance": "neutral",
+      "description": "ENGIE cites SPP's forthcoming Coordinated Planning Process as the most holistic planning process among ISOs and RTOs, noting it will cut administrative costs, combine processes, and pre-identify grid needs before interconnection requests are filed.",
+      "quote_ids": [7]
+    },
+    {
+      "key": "topic:tariff-transparency",
+      "name": "Tariff publication and study timelines",
+      "stance": "support",
+      "description": "ENGIE calls for transmission providers to publish tariffs with clear timelines for deposit requirements, interconnection study schedules, and completion deadlines so developers and load customers can plan around them.",
+      "quote_ids": [9]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction", "threshold", "jointstudy", "deposits", "hybridrights", "protection", "expedited", "upgradecost"],
+    "pr": ["study", "cost", "colo", "flex"],
+    "rg": ["spp"]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

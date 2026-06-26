@@ -1,0 +1,146 @@
+{
+  "accession": "20251124-5127",
+  "filer": "Washington Utilities and Transportation Commission",
+  "org_type": "other",
+  "filed": "11/24/2025",
+  "source_text": "sources/comments/files/20251124-5127__Washington-Utilities-and-Transportation-Commission/FERC LLI Comments COM-AG-UTC.txt",
+  "overall_summary": "The Washington UTC supports developing national principles around load flexibility and load forecasting but warns that a federal interconnection process could blur jurisdictional lines, undermine state cost-allocation authority, and conflict with Washington's own energy laws. The UTC urges FERC to slow down, collaborate with states, and preserve cooperative federalism rather than rushing to a final rule.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "establishing a standardized, national process for large load interconnection may provide benefits for Washington utility customers. Any benefits of a standardized process must be weighed against the significant risks that blurring the jurisdictional boundaries of regulation could compromise Washington State's own energy policy goals, negatively impact affordability, compromise reliability, and miss opportunities for states to develop new solutions to large load interconnection issues.",
+      "concern": "National standardization risks overriding state energy policy, affordability, and reliability goals",
+      "bins": ["aq:jurisdiction", "pr:cost"]
+    },
+    {
+      "id": 2,
+      "text": "the ANOPR policies may conflict with the ongoing work of Washington's Data Center Working Group established by Governor Ferguson's Executive Order 25-05.",
+      "concern": "Federal proposals may conflict with Washington's active state-level data center policy process",
+      "bins": ["aq:jurisdiction", "topic:state-energy-policy"]
+    },
+    {
+      "id": 3,
+      "text": "we encourage the development of principles of how to prioritize load flexibility in interconnection processes. These principles can be applied in state processes across the country to further develop policies that will advance interconnection of large loads while protecting reliability and affordability.",
+      "concern": "FERC should develop flexibility principles that states can adopt, not preemptive federal rules",
+      "bins": ["pr:flex", "aq:jurisdiction"]
+    },
+    {
+      "id": 4,
+      "text": "the UTC sees value in identifying principles around load forecasting and load certainty to address the unique challenges that large loads are presenting to system planners and grid operators.",
+      "concern": "Load forecasting and certainty principles are a priority area for FERC to develop",
+      "bins": ["pr:study", "topic:load-forecasting"]
+    },
+    {
+      "id": 5,
+      "text": "Understanding context and local nuances is necessary to implement policies within our jurisdiction, specifically to ensure alignment with state law and state specific resource adequacy and energy needs.",
+      "concern": "Local context is needed to align interconnection policy with state resource adequacy law",
+      "bins": ["aq:jurisdiction", "topic:state-energy-policy"]
+    },
+    {
+      "id": 6,
+      "text": "the process and timing for dispatchable and curtailable interconnection would need to align with Washington's Climate Commitment Act and Clean Energy Transformation Act as highlighted by the findings and recommendations adopted by Washington state's Data Center Working Group",
+      "concern": "Washington's clean energy laws constrain how curtailable and dispatchable interconnection can be structured",
+      "bins": ["pr:flex", "aq:jurisdiction", "topic:state-energy-policy"]
+    },
+    {
+      "id": 7,
+      "text": "Large loads often require upgrades to both the transmission and distribution system and utilities must demonstrate that new load will not be served by imposing undue costs on existing customers. Cost recovery is ultimately approved by the UTC, which is responsible for ensuring retail rates are just, reasonable, and non-discriminatory.",
+      "concern": "State commissions, not FERC, control retail rate and cost-allocation decisions for large load upgrades",
+      "bins": ["aq:jurisdiction", "pr:cost", "topic:retail-rate-authority"]
+    },
+    {
+      "id": 8,
+      "text": "A federal interconnection process focused on transmission access may not maintain the essential role that the UTC (and other state commissions) play in ensuring fair retail electric rates that are free from cross subsidy.",
+      "concern": "Federal transmission focus risks cross-subsidy and bypasses state retail rate oversight",
+      "bins": ["aq:jurisdiction", "pr:cost"]
+    },
+    {
+      "id": 9,
+      "text": "the UTC supports the recent resolution adopted by the National Association of Regulatory Utility Commissioners on this issue (Resolution Urging the Federal Energy Regulatory Commission to Preserve and Affirm State Retail Regulatory Jurisdiction in its Large Load Interconnection Proceeding).",
+      "concern": "UTC endorses NARUC resolution calling on FERC to preserve state retail jurisdiction",
+      "bins": ["aq:jurisdiction", "topic:naruc-alignment"]
+    },
+    {
+      "id": 10,
+      "text": "the UTC is concerned that the timelines proposed in this ANOPR do not afford the time necessary to get to the best answer for all. We encourage FERC to take the time to collaborate in developing a productive final rule that charts a path forward that facilitates large load growth, preserves state jurisdiction, and protects all customers.",
+      "concern": "ANOPR timeline is too compressed for adequate state-federal collaboration",
+      "bins": ["aq:expedited", "aq:jurisdiction"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Preserve State Regulatory Authority",
+      "stance": "oppose",
+      "description": "The UTC warns that a federal interconnection process risks overriding state authority over retail rates, cost allocation, and resource adequacy. Washington's mix of FERC-jurisdictional, state-regulated, and non-jurisdictional utilities (including BPA) makes state-level oversight especially important. The UTC endorses the NARUC resolution calling on FERC to respect the state-federal jurisdictional boundary.",
+      "quote_ids": [1, 2, 5, 7, 8, 9, 10]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Slow Down the Timeline",
+      "stance": "oppose",
+      "description": "The UTC argues the ANOPR's proposed timelines do not allow enough time for states and FERC to collaborate on a well-designed final rule. It urges a more deliberate process.",
+      "quote_ids": [10]
+    },
+    {
+      "key": "pr:cost",
+      "name": "State Control Over Cost Recovery",
+      "stance": "oppose",
+      "description": "Large load projects require transmission and distribution upgrades, and state commissions hold authority over retail cost recovery. The UTC is concerned that a federal process focused on transmission access could enable cross-subsidy and undermine the UTC's role in ensuring just and reasonable retail rates.",
+      "quote_ids": [1, 7, 8]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility Principles, Not Federal Rules",
+      "stance": "support",
+      "description": "The UTC supports FERC developing principles for prioritizing load flexibility that states can apply within their own processes. However, any curtailable or dispatchable interconnection framework must align with Washington's Climate Commitment Act and Clean Energy Transformation Act.",
+      "quote_ids": [3, 6]
+    },
+    {
+      "key": "pr:study",
+      "name": "Load Forecasting Principles Needed",
+      "stance": "support",
+      "description": "The UTC sees value in FERC identifying principles around load forecasting and load certainty to help system planners and grid operators handle the unique challenges posed by large loads.",
+      "quote_ids": [4]
+    },
+    {
+      "key": "topic:state-energy-policy",
+      "name": "Washington Clean Energy Law Conflicts",
+      "stance": "oppose",
+      "description": "The UTC flags that federal proposals may conflict with Washington's Data Center Working Group (under Executive Order 25-05), the Climate Commitment Act, and the Clean Energy Transformation Act. Local context and state law must shape how interconnection policy is applied.",
+      "quote_ids": [2, 5, 6]
+    },
+    {
+      "key": "topic:retail-rate-authority",
+      "name": "Distribution-Level Cost Oversight",
+      "stance": "oppose",
+      "description": "State law (RCW 80.28 and RCW 80.04) gives the UTC direct oversight over retail rates and distribution-level reliability impacts. A federal process targeting transmission may not account for distribution upgrade costs or the UTC's cost-allocation review role.",
+      "quote_ids": [7]
+    },
+    {
+      "key": "topic:load-forecasting",
+      "name": "Load Certainty for Planners",
+      "stance": "support",
+      "description": "The UTC highlights load forecasting and load certainty as a distinct area where FERC should develop principles to assist system planners facing the new planning challenges that large loads create.",
+      "quote_ids": [4]
+    },
+    {
+      "key": "topic:naruc-alignment",
+      "name": "NARUC Resolution Endorsement",
+      "stance": "support",
+      "description": "The UTC explicitly endorses the NARUC resolution calling on FERC to preserve and affirm state retail regulatory jurisdiction in the large load interconnection proceeding, framing this as a matter of cooperative federalism.",
+      "quote_ids": [9]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction", "expedited"],
+    "pr": ["cost", "flex", "study"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

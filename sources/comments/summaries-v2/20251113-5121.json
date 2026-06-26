@@ -1,0 +1,190 @@
+{
+  "accession": "20251113-5121",
+  "filer": "Digital Energy Council",
+  "org_type": "data_center",
+  "filed": "11/13/2025",
+  "source_text": "sources/comments/files/20251113-5121__Digital-Energy-Council/DigitalEnergyCouncil_Comments_RM26-4-000.txt",
+  "overall_summary": "The Digital Energy Council, representing data centers, bitcoin miners, and AI computing facilities, supports DOE's initiative and urges FERC to modernize interconnection rules for flexible large loads. Its six recommendations cover: OATT procedures that recognize real-time curtailment, a voluntary expedited track for flexible loads, integrated generation-and-load studies for co-located facilities, extending option-to-build rights to large-load customers, aligning cost responsibility with actual system impact, and using existing stakeholder forums to spread best practices. DEC frames flexible digital-infrastructure load as an active grid asset that can support reliability, not merely consume power.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Bitcoin miners have already proven that large electrical loads can act as controllable, grid-responsive resources. Across multiple markets, mining facilities have curtailed load within seconds during periods of peak demand, providing measurable reliability support while maintaining stable operations.",
+      "concern": "Cites bitcoin miners as evidence that large flexible loads already provide real grid reliability benefits",
+      "bins": ["pr:flex", "topic:digital-load-as-grid-asset"]
+    },
+    {
+      "id": 2,
+      "text": "These examples demonstrate that flexible load is already operating as a system asset, not a theoretical concept.",
+      "concern": "Argues flexible load is a proven grid resource, not speculative",
+      "bins": ["pr:flex", "topic:digital-load-as-grid-asset"]
+    },
+    {
+      "id": 3,
+      "text": "Developers face multi-year queues, inconsistent study processes, and unclear cost responsibilities that slow deployment and create uncertainty.",
+      "concern": "Identifies queue delays and cost uncertainty as the core problem with current interconnection rules",
+      "bins": ["pr:study", "pr:cost"]
+    },
+    {
+      "id": 4,
+      "text": "DEC supports the Department's initiative and encourages the Commission to establish a transparent, performance-based framework that recognizes flexibility as a grid resource, accelerates access to transmission, and ensures reliability and fairness for all users.",
+      "concern": "States overall support for DOE's initiative and calls for a performance-based, transparency-focused framework",
+      "bins": ["pr:flex", "pr:study", "aq:expedited"]
+    },
+    {
+      "id": 5,
+      "text": "The Commission should direct jurisdictional transmission providers to include clear procedures within their Open Access Transmission Tariffs (OATTs) for evaluating large, transmission-level customers capable of providing real-time telemetry and verifiable curtailment.",
+      "concern": "Recommends OATT revisions to formally recognize and study flexible large loads",
+      "bins": ["pr:study", "pr:flex", "topic:tariff-transparency"]
+    },
+    {
+      "id": 6,
+      "text": "Recognizing flexible demand within existing OATT frameworks would not create new service categories but would clarify how transmission providers study, model, and coordinate with these facilities.",
+      "concern": "Argues OATT clarification is sufficient without creating new service categories",
+      "bins": ["pr:study", "pr:flex", "topic:tariff-transparency"]
+    },
+    {
+      "id": 7,
+      "text": "The Commission should direct transmission providers to establish a voluntary, incentive-based fast-track process for customers that commit to verifiable flexibility agreements.",
+      "concern": "Calls for an opt-in expedited interconnection track tied to verifiable curtailment commitments",
+      "bins": ["aq:expedited", "pr:flex"]
+    },
+    {
+      "id": 8,
+      "text": "Transmission providers should post transparent study timelines, milestone schedules, and progress updates for these projects to ensure accountability and predictability.",
+      "concern": "Requests public posting of study schedules and milestones to improve accountability",
+      "bins": ["pr:study", "topic:tariff-transparency"]
+    },
+    {
+      "id": 9,
+      "text": "The Commission should require transmission providers to establish a single, integrated interconnection process under their OATTs for projects that combine generation and load at the same point of interconnection.",
+      "concern": "Recommends unified co-location study process to eliminate duplicate generation-and-load studies",
+      "bins": ["pr:colo", "aq:jointstudy"]
+    },
+    {
+      "id": 10,
+      "text": "Current procedures force developers to complete separate studies for generation and load, even when they are part of a single co-located facility. This duplication increases costs, creates conflicting assumptions, and slows project development.",
+      "concern": "Describes harm from separate studies for co-located generation and load",
+      "bins": ["pr:colo", "aq:jointstudy", "pr:cost"]
+    },
+    {
+      "id": 11,
+      "text": "The Commission should extend the \"option-to-build\" authority, currently available to generator interconnection customers to qualifying large-load and hybrid facilities, subject to Commission oversight and cost-crediting provisions.",
+      "concern": "Asks FERC to let large-load and hybrid customers self-build approved network upgrades",
+      "bins": ["aq:hybridrights", "pr:cost"]
+    },
+    {
+      "id": 12,
+      "text": "The Commission should affirm DOE's principle that large loads and hybrid facilities remain responsible for their assigned upgrade costs but clarify that those demonstrating verifiable curtailment or on-site generation may qualify for phased or partial cost responsibility.",
+      "concern": "Supports cost assignment in principle but requests reduced or phased responsibility for facilities that demonstrably reduce grid stress",
+      "bins": ["pr:cost", "aq:upgradecost", "pr:flex"]
+    },
+    {
+      "id": 13,
+      "text": "Aligning cost responsibility with actual system impact ensures fair treatment, promotes investment in flexible technologies, and encourages efficient infrastructure development.",
+      "concern": "Frames impact-based cost allocation as the fair and efficient standard",
+      "bins": ["pr:cost", "aq:upgradecost"]
+    },
+    {
+      "id": 14,
+      "text": "The absence of consistent frameworks across RTOs and ISOs creates uncertainty for developers and operators.",
+      "concern": "Notes that inconsistent rules across regions create planning uncertainty",
+      "bins": ["pr:study", "topic:rto-consistency"]
+    },
+    {
+      "id": 15,
+      "text": "The Commission should leverage its existing technical conference and regional stakeholder processes along with its existing partnerships with the National Association of Regulatory Utility Commissioners (NARUC) to evaluate how flexible large loads can better participate in reliability and market operations.",
+      "concern": "Urges FERC to use existing forums and NARUC partnerships to develop consistent flexible-load policy",
+      "bins": ["pr:flex", "topic:rto-consistency"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Flexible Load as Grid Asset",
+      "stance": "support",
+      "description": "DEC argues that flexible digital infrastructure loads, including bitcoin miners and data centers, already provide real-time curtailment and reliability support. It wants FERC to formally recognize this flexibility in interconnection procedures, OATT frameworks, and cost rules, and to create a voluntary expedited track for customers that commit to verifiable curtailment agreements.",
+      "quote_ids": [1, 2, 4, 5, 6, 7, 12, 15]
+    },
+    {
+      "key": "pr:study",
+      "name": "Modernize Study Procedures",
+      "stance": "support",
+      "description": "DEC cites multi-year queues and inconsistent study processes as the primary barrier for large-load developers. It asks FERC to direct transmission providers to post transparent study timelines and milestone schedules, and to take corrective action when deadlines are missed.",
+      "quote_ids": [3, 4, 5, 6, 8, 14]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Impact-Based Cost Responsibility",
+      "stance": "mixed",
+      "description": "DEC accepts that large loads should bear their assigned upgrade costs, but argues that facilities demonstrating verifiable curtailment or on-site generation should qualify for phased or partial cost responsibility. It also supports extending option-to-build rights so developers can self-finance approved upgrades.",
+      "quote_ids": [3, 10, 11, 12, 13]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Integrated Co-Location Studies",
+      "stance": "support",
+      "description": "DEC recommends a single unified interconnection study process for projects that combine generation and load at the same point of interconnection, replacing the current system that forces separate studies and produces conflicting assumptions.",
+      "quote_ids": [9, 10]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Voluntary Expedited Track",
+      "stance": "support",
+      "description": "DEC supports an incentive-based, voluntary fast-track interconnection process for flexible loads, conditional on verifiable curtailment commitments, with publicly posted timelines and corrective actions for missed deadlines.",
+      "quote_ids": [4, 7]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Unified Generation-Load Study",
+      "stance": "support",
+      "description": "DEC asks FERC to require a single integrated study process for co-located generation and load, eliminating duplicative separate studies that increase costs and slow development.",
+      "quote_ids": [9, 10]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Option-to-Build for Hybrid Loads",
+      "stance": "support",
+      "description": "DEC asks FERC to extend the option-to-build authority currently available to generators to qualifying large-load and hybrid facilities, subject to Commission oversight and cost-crediting provisions.",
+      "quote_ids": [11]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Upgrade Cost Allocation Fairness",
+      "stance": "mixed",
+      "description": "DEC accepts that large loads are responsible for their assigned upgrade costs, but requests phased or partial cost responsibility for facilities that demonstrably reduce grid stress through curtailment or on-site generation.",
+      "quote_ids": [12, 13]
+    },
+    {
+      "key": "topic:digital-load-as-grid-asset",
+      "name": "Digital Loads Already Proven",
+      "stance": "support",
+      "description": "DEC cites bitcoin miners curtailing load within seconds across multiple markets as evidence that large digital-infrastructure loads are already functioning as controllable grid assets, not a future possibility.",
+      "quote_ids": [1, 2]
+    },
+    {
+      "key": "topic:tariff-transparency",
+      "name": "OATT Clarity for Flexible Loads",
+      "stance": "support",
+      "description": "DEC urges FERC to add clear procedures to OATTs for modeling and coordinating with flexible large loads, and to require public posting of study timelines and milestones, improving predictability without creating entirely new service categories.",
+      "quote_ids": [5, 6, 8]
+    },
+    {
+      "key": "topic:rto-consistency",
+      "name": "Consistent Rules Across RTOs",
+      "stance": "support",
+      "description": "DEC notes that inconsistent flexible-load frameworks across RTOs and ISOs create planning uncertainty for developers, and asks FERC to use its technical conferences and NARUC partnerships to spread best practices from early-adopter regions like ERCOT.",
+      "quote_ids": [14, 15]
+    }
+  ],
+  "lenses": {
+    "aq": ["expedited", "jointstudy", "hybridrights", "upgradecost"],
+    "pr": ["flex", "study", "cost", "colo"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

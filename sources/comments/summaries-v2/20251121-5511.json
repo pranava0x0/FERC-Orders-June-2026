@@ -1,0 +1,204 @@
+{
+  "accession": "20251121-5511",
+  "filer": "PJM Interconnection, L.L.C.",
+  "org_type": "rto_iso",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5511__PJM-Interconnection-LLC/20251121-rm26-4-000.txt",
+  "overall_summary": "PJM supports the ANOPR's goals for timely large load interconnection but urges FERC to gather more information before mandating an RTO/ISO load queue, citing unresolved jurisdictional questions, implementation burdens, and the risk that a new process could slow rather than speed interconnections. PJM also cautions against a \"connect-and-manage\" reliability tradeoff without thorough cost-benefit analysis, and recommends leveraging existing hybrid-facility study processes and the NERC Large Load Task Force rather than creating new federal mandates.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "While the prospect of a federally-regulated large load interconnection process warrants further exploration, PJM encourages FERC to seize available opportunities to issue nearer-term regulatory guidance on matters squarely within its wholesale and transmission jurisdiction about:  resource adequacy, the provision of ancillary services, mandatory operational regimes, potential wholesale rate classes for different types of load customers, interconnection and transmission planning, cost allocation, and NERC and Tariff reliability obligations and requirements.",
+      "concern": "PJM wants FERC to act on near-term guidance within clear jurisdiction before pursuing a broader load queue mandate.",
+      "bins": ["aq:jurisdiction", "pr:study", "pr:cost"]
+    },
+    {
+      "id": 2,
+      "text": "It would be a significant development if FERC would not continue to allow local Electric Distribution Companies (EDCs) and Transmission Owners (TOs) to administer load interconnection processes subject to retail regimes and the traditional federal/wholesale-state/retail division of labor that has long characterized this space.",
+      "concern": "Shifting load interconnection from EDCs and TOs to federal oversight would disrupt the established federal-state division of authority.",
+      "bins": ["aq:jurisdiction"]
+    },
+    {
+      "id": 3,
+      "text": "there remains a question as to whether any rule developed on the existing record targeted at this specific topic would entangle the Commission and stakeholders in a potentially contentious dispute that would distract from the need to provide a durable pathway to the ANOPR's desired outcome:  timely and orderly large load interconnections.",
+      "concern": "Jurisdictional litigation risk could undermine the ANOPR's core objective.",
+      "bins": ["aq:jurisdiction", "pr:study"]
+    },
+    {
+      "id": 4,
+      "text": "questions would need to be answered about whether such a new process will necessarily lead to different or enhanced large load interconnection results, and whether the theoretical benefits of a federally-regulated large load interconnection process outweigh the challenges of creating and administering a load queue at the RTO/ISO level.",
+      "concern": "Benefits of a federal load queue are unproven and must be weighed against implementation costs.",
+      "bins": ["aq:jurisdiction", "pr:study", "pr:cost"]
+    },
+    {
+      "id": 5,
+      "text": "Even assuming record evidence could support the ANOPR's proposed 20 MW load threshold for the ANOPR's conceptual reforms to apply, is that clear line set at the appropriate level given that large loads, most especially data centers, tend to be substantially larger than 20 MW?  Will such a threshold over capture load subject to the proposed reforms, clog interconnection processes, and stymie the intended proposed reforms?",
+      "concern": "The 20 MW threshold may be too low, capturing too many loads and clogging the queue.",
+      "bins": ["aq:threshold", "pr:study"]
+    },
+    {
+      "id": 6,
+      "text": "what are just and reasonable rates for any standardized study deposits, readiness requirements, and withdrawal penalties?  Would the federal load interconnection process and rate levels look to state law analogues where such constructs have already been developed?  Will such rates be postage stamp rates or connected to the scope and scale of the proposed load interconnection?",
+      "concern": "Rate design for study deposits and withdrawal penalties is unresolved and requires clear FERC guidance.",
+      "bins": ["aq:deposits", "pr:cost"]
+    },
+    {
+      "id": 7,
+      "text": "Can any large load interconnection studies – expedited or otherwise – be completed in 60 days?  Based on PJM's experience in managing, coordinating, and performing interconnection studies under the best of circumstances, such a timeline is not likely to be feasible in reality at least in the shorter-term horizon though PJM is certainly committed to acting with as much speed and accuracy as possible consistent with Good Utility Practice.",
+      "concern": "A 60-day study timeline is not feasible given the complexity of interconnection studies.",
+      "bins": ["aq:expedited", "pr:study", "rg:pjm"]
+    },
+    {
+      "id": 8,
+      "text": "Today, it takes approximately 6 months to complete stability studies due to the complexity of the data, modeling, and analytical processes.  And any additional expedited processes – serial in nature or otherwise – may exacerbate or reintroduce queue backlogs for generator interconnection projects subject to cluster studies.",
+      "concern": "Expedited large load studies could slow generator interconnection by worsening existing queue backlogs.",
+      "bins": ["aq:expedited", "pr:study", "rg:pjm"]
+    },
+    {
+      "id": 9,
+      "text": "PJM anticipates needing at least 12 or more additional months to implement any new large load interconnection process (although this estimate is admittedly speculative since the full details of the proposed reforms are not yet clearly known).",
+      "concern": "PJM would need at least 12 months after a final rule to stand up a new large load process.",
+      "bins": ["aq:expedited", "pr:study", "rg:pjm"]
+    },
+    {
+      "id": 10,
+      "text": "Many of these principles could be addressed through the existing PJM necessary study process that PJM previously utilized to study, develop, and modify existing generator interconnections and agreements seeking to co-locate large loads.  This effectively means no FERC action may be needed to accomplish some of the proposed reforms in certain instances.",
+      "concern": "Existing study processes may already address some hybrid co-location principles, reducing the need for new FERC rules.",
+      "bins": ["pr:colo", "pr:study", "rg:pjm"]
+    },
+    {
+      "id": 11,
+      "text": "FERC could assess whether hybrid configurations are resource adequacy positive (thus closing the supply-demand gap) or, at a minimum, resource adequacy neutral when determining whether such configurations are just and reasonable.",
+      "concern": "FERC should evaluate hybrid facility resource adequacy impact as part of its just-and-reasonable analysis.",
+      "bins": ["pr:colo", "aq:hybridrights"]
+    },
+    {
+      "id": 12,
+      "text": "the proposed reforms appear to signal an openness to a less-reliable planning paradigm for new generation facilities (see, e.g., Principles 3 and 5) where hybrid facilities involving \"new generation facilities\" are studied based solely on injection and/or withdrawal rights requested, and large loads and hybrid facilities that agree to be curtailable will have their studies expedited so that such facilities can be put into operation with greater speed.",
+      "concern": "Studying hybrid facilities only on requested rights, not full deliverability, signals an erosion of reliability planning standards.",
+      "bins": ["aq:hybridrights", "aq:protection", "pr:flex", "pr:colo"]
+    },
+    {
+      "id": 13,
+      "text": "Has this tradeoff between reliability and speed to market been sufficiently vetted, and are the potential costs documented and understood?",
+      "concern": "The reliability-versus-speed tradeoff underlying \"connect-and-manage\" has not been fully analyzed.",
+      "bins": ["aq:protection", "pr:flex", "topic:connect-and-manage-reliability"]
+    },
+    {
+      "id": 14,
+      "text": "The \"connect-and-manage\" framework could lead to future grid build out that is not as robust and reliable as the planning standard PJM (and other RTOs/ISOs) have adhered to for decades if voluntarily curtailable load (Principle 7) is not planned for as firm load in regional transmission planning processes.",
+      "concern": "Treating curtailable load as non-firm in planning could degrade long-term grid reliability.",
+      "bins": ["aq:protection", "pr:flex", "topic:connect-and-manage-reliability"]
+    },
+    {
+      "id": 15,
+      "text": "The NERC Large Load Task Force is well-equipped to continue its work in exploring cutting-edge issues relating to the planning for and operational complexities of a grid with growing large load saturation.  That industry wide forum drawing together deep subject matter expertise is the best forum to develop new standards and issue other necessary guidance to inform reliable system operations and planning involving large loads.",
+      "concern": "NERC's task force, not a new FERC mandate, is the right venue to set large load reliability standards.",
+      "bins": ["aq:protection", "topic:nerc-registration"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal vs. state authority limits",
+      "stance": "mixed",
+      "description": "PJM acknowledges federal interest in large load interconnection but warns that displacing EDCs and TOs from retail-jurisdictional processes risks prolonged litigation that would delay rather than advance the ANOPR's goals. PJM urges FERC to act on issues squarely within its existing wholesale jurisdiction first.",
+      "quote_ids": [1, 2, 3, 4]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20 MW threshold too broad",
+      "stance": "mixed",
+      "description": "PJM questions whether 20 MW is the right cutoff, noting that most data centers far exceed that level and a lower threshold could over-capture loads, clog the queue, and defeat the ANOPR's speed goals.",
+      "quote_ids": [5]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Deposit and penalty rate design",
+      "stance": "neutral",
+      "description": "PJM identifies open questions about how to set just-and-reasonable rates for study deposits, readiness requirements, and withdrawal penalties, including whether to follow state-law analogues and how to allocate collected funds.",
+      "quote_ids": [6]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid facility rights and adequacy",
+      "stance": "mixed",
+      "description": "PJM recommends that FERC assess whether hybrid co-location configurations are resource-adequacy positive or neutral, and cautions that studying them only on requested injection or withdrawal rights rather than full deliverability lowers reliability planning standards.",
+      "quote_ids": [11, 12]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Reliability safeguards for large loads",
+      "stance": "oppose",
+      "description": "PJM opposes reducing reliability planning standards under a \"connect-and-manage\" approach without thorough cost-benefit analysis, arguing that treating curtailable load as non-firm in long-term planning could degrade grid reliability for the entire region.",
+      "quote_ids": [12, 13, 14, 15]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited timeline not feasible",
+      "stance": "oppose",
+      "description": "PJM says a 60-day study timeline is not achievable given the complexity of stability studies, which currently take about 6 months. Expedited large load processes could also worsen generator interconnection backlogs. PJM estimates it would need at least 12 months after any final rule to stand up a new process.",
+      "quote_ids": [7, 8, 9]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study process burdens and gaps",
+      "stance": "mixed",
+      "description": "PJM supports thorough interconnection studies but flags that a new federal load queue creates significant administrative burdens, may not improve outcomes over existing processes, and could conflict with generator interconnection timelines. It recommends leveraging existing necessary study processes where possible.",
+      "quote_ids": [1, 3, 4, 5, 7, 8, 9, 10]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation unresolved",
+      "stance": "neutral",
+      "description": "PJM highlights that cost allocation rules for study deposits, withdrawal penalties, and upgrade costs associated with a new federal load queue remain undefined and would require significant tariff development.",
+      "quote_ids": [1, 4, 6]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Existing co-location processes sufficient",
+      "stance": "support",
+      "description": "PJM argues that many ANOPR co-location principles are already addressed through its necessary study process and existing dockets, suggesting some FERC action may be redundant. It recommends FERC assess resource adequacy impacts of hybrid configurations as part of the just-and-reasonable standard.",
+      "quote_ids": [10, 11, 12]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexible curtailment reliability tradeoff",
+      "stance": "oppose",
+      "description": "PJM warns that allowing curtailable large loads to receive expedited study without firm deliverability analysis shifts reliability burdens to real-time operations and could result in frequent real-time interruptions, undermining the \"five nines\" reliability that data centers require.",
+      "quote_ids": [12, 13, 14]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM-specific implementation constraints",
+      "stance": "neutral",
+      "description": "PJM provides concrete data from its own operations: stability studies take about 6 months, a 60-day mandate is not feasible, and standing up any new large load process would require at least 12 months after a final rule.",
+      "quote_ids": [7, 8, 9, 10]
+    },
+    {
+      "key": "topic:connect-and-manage-reliability",
+      "name": "Connect-and-manage grid risk",
+      "stance": "oppose",
+      "description": "PJM warns that a federally mandated \"connect-and-manage\" approach, if adopted without full vetting, could erode the multi-decade regional planning standard and increase real-time operational risk, particularly if voluntarily curtailable load is not counted as firm in long-term transmission planning.",
+      "quote_ids": [13, 14]
+    },
+    {
+      "key": "topic:nerc-registration",
+      "name": "NERC large load registration path",
+      "stance": "support",
+      "description": "PJM recommends DOE use its authority under Section 403(a) of the DOE Organization Act to direct FERC to order NERC to develop large load registration requirements and reliability standards, and supports the NERC Large Load Task Force as the primary forum for setting those standards.",
+      "quote_ids": [15]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction", "threshold", "deposits", "hybridrights", "protection", "expedited"],
+    "pr": ["study", "cost", "colo", "flex"],
+    "rg": ["pjm"]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

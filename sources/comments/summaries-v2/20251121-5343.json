@@ -1,0 +1,249 @@
+{
+  "accession": "20251121-5343",
+  "filer": "Old Dominion Electric Cooperative",
+  "org_type": "trade_assoc",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5343__Old-Dominion-Electric-Cooperative/ODEC Comments RM26-4.txt",
+  "overall_summary": "ODEC, a transmission-dependent wholesale cooperative, supports FERC using this proceeding to anchor large-load interconnection costs firmly to cost-causation principles so incumbent native-load ratepayers are not burdened. It opposes several ANOPR principles as written, including the 20 MW threshold (prefers 50 MW), joint load-generation studies, and limiting transmission service obligations to withdrawal rights, while supporting full 100% cost assignment to large loads, separate metering, and strict reliability standards including NERC registration for large loads.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "this pursuit must be achieved without shifting unjust or unreasonable costs onto incumbent native load customers, particularly residential and small commercial ratepayers",
+      "concern": "Large-load integration must not shift costs to existing ratepayers.",
+      "bins": ["pr:cost", "aq:upgradecost"]
+    },
+    {
+      "id": 2,
+      "text": "The Commission should use this opportunity to take measures to ensure that the costs associated with accommodating these extraordinary new demands are borne by the new large loads driving them, consistent with cost-causation principles.",
+      "concern": "Cost-causation principle should require large loads to pay for the infrastructure they drive.",
+      "bins": ["pr:cost", "aq:upgradecost"]
+    },
+    {
+      "id": 3,
+      "text": "ODEC does not support a brightline rule that the Commission's jurisdiction should be limited to interconnections directly to only those facilities that have been labeled or characterized as \"transmission facilities.\"",
+      "concern": "A bright-line voltage or label test for jurisdiction would miss downstream cooperative distribution facilities.",
+      "bins": ["aq:jurisdiction"]
+    },
+    {
+      "id": 4,
+      "text": "the Commission should adopt the same approach for large-load interconnections",
+      "concern": "ODEC wants FERC to apply the Order 888 seven-factor functional test to large-load jurisdictional determinations.",
+      "bins": ["aq:jurisdiction"]
+    },
+    {
+      "id": 5,
+      "text": "ODEC does not support the proposed 20 MW threshold for defining \"large loads\" and recommends that the Commission not follow the pro forma Large Generator Interconnection Agreement and Procedures in this regard.",
+      "concern": "The 20 MW threshold is too low and would sweep in projects that do not create material bulk-system impacts.",
+      "bins": ["aq:threshold"]
+    },
+    {
+      "id": 6,
+      "text": "We believe a threshold of 50 MW is more appropriate and ensures that reforms focus on projects with a material impact on the bulk power system.",
+      "concern": "ODEC recommends a 50 MW threshold aligned with PJM's Critical Issue Fast Path proposal.",
+      "bins": ["aq:threshold", "rg:pjm"]
+    },
+    {
+      "id": 7,
+      "text": "ODEC does not support studying load and hybrid facilities together with generation facilities.",
+      "concern": "Separate studies are needed because outage timing, retirement schedules, and ELCC values differ between load and generation.",
+      "bins": ["aq:jointstudy", "pr:study"]
+    },
+    {
+      "id": 8,
+      "text": "Generators experience both planned and unplanned outages; thus, the transmission facilities must be evaluated with only the load operational, not the generation.",
+      "concern": "Generator outages mean the grid must be sized for load-only operation, which joint studies can mask.",
+      "bins": ["aq:jointstudy", "pr:study", "pr:colo"]
+    },
+    {
+      "id": 9,
+      "text": "ODEC does not support studying hybrid facilities based on the injection/withdrawal rights requested because we believe it will cause issues stemming from generator outages and the retirement of load or generating facilities, as the transmission system will still need to be built to accommodate either the load or the generating facility operating independently in the future.",
+      "concern": "Sizing the grid only to withdrawal rights understates what infrastructure is needed when one component retires or trips.",
+      "bins": ["aq:hybridrights", "pr:colo"]
+    },
+    {
+      "id": 10,
+      "text": "Any significant change to either the load or the generation should require the project to refile, ensuring that system studies remain accurate and reliable.",
+      "concern": "Material modifications to either load or generation component of a hybrid should trigger a refile.",
+      "bins": ["aq:hybridrights", "pr:study"]
+    },
+    {
+      "id": 11,
+      "text": "ODEC strongly supports allocating 100 percent of the interconnection costs to the large load and hybrid facilities assigned to them through the interconnection studies.",
+      "concern": "Full 100% cost assignment to large loads is essential to protect incumbent ratepayers.",
+      "bins": ["aq:upgradecost", "pr:cost"]
+    },
+    {
+      "id": 12,
+      "text": "ODEC would support the Commission revisiting the applicability of the \"but for\" test from Order No. 2003 regarding the network upgrades needed to serve new large loads.",
+      "concern": "The Order 2003 crediting mechanism may not fit large-load upgrades where direct benefit to the interconnecting customer outweighs system-wide reliability benefits.",
+      "bins": ["aq:upgradecost", "pr:cost"]
+    },
+    {
+      "id": 13,
+      "text": "This should not include any existing generators that deactivate all or part of their capacity to execute more lucrative large-load bilateral supply contracts with large loads that possess unlimited financial resources.",
+      "concern": "Merchant generators should not be allowed to reclassify partially deactivated capacity as \"new\" generation to win data-center supply deals.",
+      "bins": ["pr:colo", "topic:new-generation-definition"]
+    },
+    {
+      "id": 14,
+      "text": "ODEC does not support limiting utilities serving large loads' transmission service obligation based on their withdrawal rights.",
+      "concern": "Limiting transmission service to withdrawal rights shifts costs to other ratepayers when the generator is unavailable.",
+      "bins": ["aq:hybridrights", "pr:cost"]
+    },
+    {
+      "id": 15,
+      "text": "Facilities served by dedicated generation and hybrid facilities should be responsible for contributing to the upkeep and maintenance of the transmission system based on peak demand, without consideration of any co-located generation facilities.",
+      "concern": "Transmission cost responsibility should be based on peak demand, not reduced by co-located generation.",
+      "bins": ["aq:hybridrights", "pr:cost", "pr:colo"]
+    },
+    {
+      "id": 16,
+      "text": "Any transition plan must address resource adequacy for both system stability and consumer costs.",
+      "concern": "Transition rules must prevent large loads from connecting before sufficient generation is available.",
+      "bins": ["pr:flex", "topic:resource-adequacy"]
+    },
+    {
+      "id": 18,
+      "text": "ODEC generally supports this principle but strongly recommends creating a large load queue, along with load forecasts and operating protocols, to help administer these requirements.",
+      "concern": "Standardized deposits and readiness requirements need a dedicated large-load queue and operating protocols to be effective.",
+      "bins": ["aq:deposits"]
+    },
+    {
+      "id": 19,
+      "text": "ODEC supports the encouragement of voluntary mechanisms to expedite interconnection studies, particularly for large loads that agree to be curtailable and for hybrid facilities that agree to be curtailable and dispatchable. However, these expedited processes must not compromise system reliability or allow standards to fall below acceptable levels.",
+      "concern": "Expedited studies are acceptable only on a voluntary basis and only if reliability is not compromised.",
+      "bins": ["aq:expedited", "pr:flex"]
+    },
+    {
+      "id": 17,
+      "text": "ODEC supports requiring utilities serving large loads to meet all applicable NERC reliability standards and OATT provisions.",
+      "concern": "NERC registration and compliance with all reliability standards should be mandatory for large loads.",
+      "bins": ["aq:protection", "topic:nerc-registration"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Seven-factor functional jurisdiction test",
+      "stance": "mixed",
+      "description": "ODEC supports FERC exercising jurisdiction over large-load interconnections but opposes a bright-line rule tied to facility labels or voltage. It argues the Order 888 seven-factor functional analysis should govern because cooperative distribution facilities often serve as the physical connection point between large loads and the transmission system.",
+      "quote_ids": [3, 4]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "50 MW threshold preferred",
+      "stance": "oppose",
+      "description": "ODEC opposes the 20 MW threshold and recommends 50 MW, the level PJM used in its Critical Issue Fast Path proposal. A 50 MW load reliably triggers a new substation and material bulk-system impact, while a 20 MW load may not.",
+      "quote_ids": [5, 6]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Oppose joint load-generation studies",
+      "stance": "oppose",
+      "description": "ODEC opposes studying load and hybrid facilities together with generation because generators have outages and different retirement schedules, meaning the grid must still be designed to carry the full load independently. Separate studies produce more accurate planning and avoid masking infrastructure needs.",
+      "quote_ids": [7, 8]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Oppose withdrawal-rights-only sizing",
+      "stance": "oppose",
+      "description": "ODEC opposes sizing hybrid interconnections to injection and withdrawal rights alone, arguing the grid must accommodate either the load or generation operating independently at full capacity. Limiting transmission service obligations to withdrawal rights shifts costs to other ratepayers when the generator is unavailable.",
+      "quote_ids": [9, 10, 14, 15]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "100% cost assignment to large loads",
+      "stance": "support",
+      "description": "ODEC strongly supports assigning 100% of network upgrade costs to the large loads that cause them, including both PJM Supplemental and Baseline RTEP projects. It also invites FERC to reexamine whether the Order 2003 crediting mechanism's \"but for\" test should apply to large-load upgrades at all.",
+      "quote_ids": [1, 2, 11, 12]
+    },
+    {
+      "key": "aq:protection",
+      "name": "NERC standards and system protection",
+      "stance": "support",
+      "description": "ODEC supports requiring large loads and hybrid facilities to meet all NERC reliability standards and OATT provisions, and calls for NERC registration of large loads. It also flags that current system protection schemes may cause cascading disconnections in complex multi-substation campuses and asks FERC or NERC to develop targeted standards.",
+      "quote_ids": [17]
+    },
+    {
+      "key": "pr:study",
+      "name": "Separate, accurate interconnection studies",
+      "stance": "mixed",
+      "description": "ODEC opposes joint load-generation studies and instead supports separate analyses that account for generator outage scenarios, different retirement timelines, and ELCC values. It also insists that any material change to either component of a hybrid project trigger a refile.",
+      "quote_ids": [7, 8, 10]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost causation protects ratepayers",
+      "stance": "support",
+      "description": "ODEC's primary theme is strict cost-causation: large loads must bear all costs they drive, incumbent ratepayers must not subsidize them, and the Order 2003 crediting mechanism may need to be reconsidered for large-load upgrades. Transmission service responsibilities should be based on peak demand, not reduced by co-located generation.",
+      "quote_ids": [1, 2, 11, 12, 14, 15]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location cannot mask cost and reliability gaps",
+      "stance": "oppose",
+      "description": "ODEC warns that co-located generation at hybrid facilities must not be used to reduce interconnection cost responsibility or to avoid full transmission studies. It opposes merchant generators reclassifying deactivated capacity as new generation to win data-center supply contracts.",
+      "quote_ids": [8, 9, 13, 15]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Resource adequacy before load connects",
+      "stance": "support",
+      "description": "ODEC states that the transition plan must ensure sufficient generation is available before large loads interconnect. Loads that connect before adequate capacity exists must accept curtailment obligations to protect system reliability and existing consumers.",
+      "quote_ids": [16]
+    },
+    {
+      "key": "topic:new-generation-definition",
+      "name": "Define new generation strictly",
+      "stance": "oppose",
+      "description": "ODEC opposes allowing merchant generators to claim \"new\" status by deactivating or partially suspending existing capacity to serve large-load bilateral contracts. Only resources that have never previously injected energy into the grid should qualify as new generation.",
+      "quote_ids": [13]
+    },
+    {
+      "key": "topic:resource-adequacy",
+      "name": "Resource adequacy for transition",
+      "stance": "support",
+      "description": "ODEC calls for any transition plan to explicitly address resource adequacy, requiring that capacity be in place before large loads interconnect, and shielding existing consumers from cost impacts through hedging or other mechanisms.",
+      "quote_ids": [16]
+    },
+    {
+      "key": "topic:nerc-registration",
+      "name": "NERC registration for large loads",
+      "stance": "support",
+      "description": "ODEC supports registering large loads with NERC and enhancing existing reliability standards to address the additional operational complexities that large-load campuses, including those with multiple distribution substations, introduce to the grid.",
+      "quote_ids": [17]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Large-load queue with deposits",
+      "stance": "support",
+      "description": "ODEC generally supports standardized study deposits and readiness requirements for large loads but says they require a dedicated large-load queue with load forecasts and operating protocols to be administered effectively.",
+      "quote_ids": [18]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Conditional support for expedited studies",
+      "stance": "mixed",
+      "description": "ODEC supports voluntary expedited interconnection studies for curtailable large loads and dispatchable hybrid facilities but insists these must not compromise reliability or let standards fall below acceptable levels. It doubts a 60-day window is feasible and prefers leaving the timeline to each transmission provider.",
+      "quote_ids": [19]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM context and precedent",
+      "stance": "neutral",
+      "description": "ODEC references PJM's Critical Issue Fast Path proposal, which set a 50 MW threshold, as supporting evidence for recommending a higher threshold than the ANOPR's proposed 20 MW.",
+      "quote_ids": [6]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction", "threshold", "jointstudy", "hybridrights", "upgradecost", "protection", "deposits", "expedited"],
+    "pr": ["study", "cost", "colo", "flex"],
+    "rg": ["pjm"]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

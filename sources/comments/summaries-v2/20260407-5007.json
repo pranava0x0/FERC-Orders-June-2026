@@ -1,0 +1,174 @@
+{
+  "accession": "20260407-5007",
+  "filer": "PUBLIC CITIZEN, INC",
+  "org_type": "enviro",
+  "filed": "04/07/2026",
+  "source_text": "sources/comments/files/20260407-5007__PUBLIC-CITIZEN-INC/Level3Alert.txt",
+  "overall_summary": "Public Citizen opposes FERC's effort to expedite data center interconnection and calls for a temporary moratorium, citing NERC's Level 3 Alert about reliability threats from rapid data center growth. The filer argues that existing standards are inadequate, that data centers pose unpredictable load surges, and that mandating NERC reliability standards and forced curtailment is necessary. It also contests the public interest framing, noting many AI uses are harmful and that society has not consented to such rapid deployment.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "NERC announced it would issue a Level 3 Alert in May because of significant reliability concerns stemming from the rapid growth of data centers that are straining FERC-jurisdictional power grids.",
+      "concern": "NERC Level 3 Alert warning of data center strain on grid reliability",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The Commission's March 23 order dismissing the IMM's request for a temporary moratorium on new data center interconnections is directly at odds with NERC's Level 3 Alert. NERC's warning makes clear that existing FERC standards and orders are inadequate to address the significant reliability issues posed by large loads.",
+      "concern": "Existing FERC standards inadequate to address data center reliability risks",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "We urge FERC to support a temporary moratorium on new data center interconnections until the issues raised in NERC's Level 3 Alert have been resolved.",
+      "concern": "Request for data center moratorium until reliability issues resolved",
+      "bins": [
+        "topic:moratorium"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Public Citizen raised concerns about the disruptive impact large loads were having on grid reliability, particularly the manner in which data centers feature sudden and unpredictable surges of hundreds or thousands of megawatts coming on- or offline at once.",
+      "concern": "Data centers cause sudden, unpredictable load surges threatening reliability",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Not only should the Commission accept IMM's prudent call for a large load moratorium, it should clarify that NERC has the clear authority to subject large loads to federal electric reliability standards. Requiring data centers to register with NERC would ensure accountability, improve oversight, and help prevent future threats to grid stability.",
+      "concern": "Demand that NERC authority over data center reliability standards be clarified",
+      "bins": [
+        "topic:nerc-authority"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Subjecting data centers to federal reliability standards should include a requirement for RTOs to impose forced curtailment requirements on large loads as a tool to ensure grid reliability.",
+      "concern": "RTOs must have authority to impose forced curtailment on data centers",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "There is no federal law—Federal Power Act or otherwise—touting that data centers producing Artificial Intelligence are in the public interest.",
+      "concern": "No statutory basis for claiming AI data centers are in public interest",
+      "bins": [
+        "topic:public-interest"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "analyses of use cases for generative AI demonstrate that non-consensual pornography is its largest application of AI models.",
+      "concern": "Majority of generative AI use cases are for non-consensual pornography",
+      "bins": [
+        "topic:public-interest"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "AI developers, including the CEOs of some of the largest firms in the world, consistently warn that widespread deployment of artificial intelligence pose systemic risks to humanity. OpenAI was founded explicitly on the premise that AI could be the most dangerous invention in history. Anthropic CEO's cautioned that society is not ready for advanced AI and requires significant guardrails—none of which are in place.",
+      "concern": "AI leaders warn of systemic risks and lack of societal readiness",
+      "bins": [
+        "topic:public-interest"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Just because a handful of the world's wealthiest corporations say we need more data centers to hasten their commodification of and control over artificial intelligence does not mean that it is in the public interest.",
+      "concern": "Private AI interests do not automatically serve the public interest",
+      "bins": [
+        "topic:public-interest"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Neither the Commission nor the Secretary of Energy have demonstrated any public interest mandate for encouraging greater interconnection for data centers under the Federal Power Act, as no distinction has been made between AI data centers commodified to produce predatory, non-consensual pornography, and those producing public interest uses.",
+      "concern": "No distinction made between harmful and beneficial AI data center uses",
+      "bins": [
+        "topic:public-interest"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "NERC has clearly established that AI data centers are having profound, negative impacts on grid reliability that require Commission confirmation that such facilities must be subject to federal electric reliability standards, including the authority for RTOs to impose forced curtailment of data center loads.",
+      "concern": "NERC evidence requires federal reliability standards and forced curtailment",
+      "bins": [
+        "pr:study"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "NERC reliability study and standards gap",
+      "stance": "oppose",
+      "description": "Existing FERC standards are inadequate to address data center reliability risks as evidenced by NERC's Level 3 Alert. Federal reliability standards and NERC authority must be clarified and strengthened before allowing further data center interconnections.",
+      "quote_ids": [
+        1,
+        2,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Forced curtailment and flexible capacity controls",
+      "stance": "support",
+      "description": "Data centers cause sudden, unpredictable megawatt-scale load surges. RTOs must have authority to impose forced curtailment requirements on large loads to maintain grid reliability.",
+      "quote_ids": [
+        4,
+        6
+      ]
+    },
+    {
+      "key": "topic:moratorium",
+      "name": "Temporary data center interconnection moratorium",
+      "stance": "support",
+      "description": "A temporary moratorium on new data center interconnections should remain in place until NERC's Level 3 Alert concerns are resolved and adequate reliability standards are established.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "topic:nerc-authority",
+      "name": "NERC jurisdiction and accountability over data centers",
+      "stance": "support",
+      "description": "FERC must clarify that NERC has clear authority to subject data centers to federal reliability standards. Data centers should register with NERC to ensure accountability and oversight.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:public-interest",
+      "name": "Lack of demonstrated public interest in data center expansion",
+      "stance": "oppose",
+      "description": "Neither FERC nor the Secretary has shown that data center expansion serves the public interest under the Federal Power Act. Many AI uses are harmful (including non-consensual pornography as the largest use case), AI leaders warn of systemic risks, guardrails are lacking, and society has not consented to rapid AI deployment. Private corporate interests should not override societal concerns.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "study",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

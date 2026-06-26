@@ -1,0 +1,204 @@
+{
+  "accession": "20251205-5281",
+  "filer": "The Pew Charitable Trusts",
+  "org_type": "enviro",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5281__The-Pew-Charitable-Trusts/Pew Reply Comments to FERC Large Load Interconnection ANOPR Docket RM26-4-000.txt",
+  "overall_summary": "Pew urges FERC, if it asserts jurisdiction over large load interconnection, to adopt resource-neutral rules that allow Virtual Power Plants to qualify large loads for expedited and integrated interconnection study on the same basis as utility-scale hybrid resources. Pew argues VPPs can deliver the same system benefits as direct curtailment or dispatch, are faster to deploy than conventional supply, and that excluding them would raise undue discrimination concerns under Order No. 2222 precedent.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "large load customers and hybrid facilities to be able to contract with VPPs and to have those contracts accounted for within the scope of interconnection procedures would greatly further DOE's goals, while advancing the Commission's statutory mandate and principles of facilitating resource-neutral competition in wholesale markets.",
+      "concern": "Pew's central ask: VPP contracts should be counted in interconnection procedures",
+      "bins": ["pr:flex", "pr:study", "aq:hybridrights"]
+    },
+    {
+      "id": 2,
+      "text": "Including VPPs within the scope of the rule is consistent with Commission precedent dictating that aggregations of Distributed Energy Resources (DERs) should be permitted to offer services that they are technically capable of providing, and could be done without expanding on the scope of the Commission's jurisdictional claim or intruding upon state-jurisdictional VPP programs.",
+      "concern": "Order No. 2222 precedent supports VPP eligibility without jurisdictional overreach",
+      "bins": ["aq:jurisdiction", "aq:hybridrights", "topic:der-aggregation-precedent"]
+    },
+    {
+      "id": 3,
+      "text": "the Commission cannot afford not to deploy this important tool. Rather, it should insist that transmission providers include it within the toolbox and use it for the job at hand.",
+      "concern": "FERC must require transmission providers to allow VPPs, not treat them as optional",
+      "bins": ["pr:flex", "topic:mandatory-vpp-access"]
+    },
+    {
+      "id": 4,
+      "text": "Adopting rules that allow integrated, expedited study of large loads that contract with VPPs will facilitate speed-to-power for large load customers while keeping transmission and energy affordable for existing customers.",
+      "concern": "Integrated VPP study enables speed-to-power without raising costs for existing customers",
+      "bins": ["pr:study", "pr:flex", "pr:cost", "aq:expedited"]
+    },
+    {
+      "id": 5,
+      "text": "VPPs, by contrast, do not depend on proceeding through the large generator interconnection queue. As Distributed Capacity Parties explain, '[d]istributed capacity assets are installed today across critical footprints, are readily installable en masse, and may be aggregated into utility-scale assets on a timeline of months rather than years'",
+      "concern": "VPPs bypass the generator queue and can reach utility scale in months, not years",
+      "bins": ["pr:flex", "aq:expedited", "topic:deployment-speed"]
+    },
+    {
+      "id": 6,
+      "text": "[W]hat matters is equivalent, verifiable performance in mitigating constraints within the same constrained transmission pocket or local grid area, not whether the asset is physically inside or outside the facility fence line.",
+      "concern": "Performance-based eligibility should apply regardless of whether resources are on-site or off-site",
+      "bins": ["pr:flex", "pr:proximate", "aq:hybridrights", "topic:locational-equivalence"]
+    },
+    {
+      "id": 7,
+      "text": "The same non-discrimination principle requires the Commission to allow aggregated DERs that are technically capable of providing hybrid service to avail themselves of the opportunities available to utility-scale hybrid facilities.",
+      "concern": "Non-discrimination requires equal treatment of DER aggregations and utility-scale hybrids",
+      "bins": ["aq:hybridrights", "topic:der-aggregation-precedent"]
+    },
+    {
+      "id": 8,
+      "text": "Neglecting to do so and thereby excluding resources that are similarly situated in their technical ability to provide the relevant service and benefits from participating in the hybrid-specific procedures would clearly raise questions of undue discrimination.",
+      "concern": "Excluding technically capable VPPs from hybrid procedures would constitute undue discrimination",
+      "bins": ["aq:hybridrights", "topic:der-aggregation-precedent"]
+    },
+    {
+      "id": 9,
+      "text": "the Commission should define hybrid facility in a manner that includes large loads paired with VPPs and/or allow for large load customers and hybrid facilities to contract with VPPs or coordinate operations with jointly-owned VPPs in order to provide curtailment and/or dispatch capability.",
+      "concern": "Hybrid facility definition should encompass large loads paired with VPPs",
+      "bins": ["aq:hybridrights", "pr:flex", "pr:study"]
+    },
+    {
+      "id": 10,
+      "text": "the Commission should adopt resource-neutral definitions that allow VPPs to satisfy technical requirements where they are able to provide the services that the technical requirements are designed to ensure.",
+      "concern": "Technical eligibility criteria must be resource-neutral so VPPs can qualify",
+      "bins": ["pr:flex", "aq:hybridrights", "topic:resource-neutral-rules"]
+    },
+    {
+      "id": 11,
+      "text": "Aggregated DERs, again, should be eligible as 'adjacent supply' in this example, because they are as able to reduce the new large load's transmission system impacts as utility-scale resources.",
+      "concern": "Aggregated DERs should count as adjacent supply on equal footing with utility-scale resources",
+      "bins": ["pr:proximate", "pr:flex", "aq:hybridrights"]
+    },
+    {
+      "id": 12,
+      "text": "States have justifiably expressed support for VPPs and wish to retain 'the ability to incentivize large loads to invest in local communities, including through programs such as . . . funding virtual power plants, non-transmission alternatives, or demand-side management programs.'",
+      "concern": "States want to keep authority to fund VPP and demand-side programs tied to large loads",
+      "bins": ["aq:jurisdiction", "topic:state-federal-jurisdiction"]
+    },
+    {
+      "id": 13,
+      "text": "including VPPs as eligible to contribute to expedited interconnection through Commission-jurisdictional tariffs would not infringe on the ability of states to require or encourage investment in VPPs as part of any processes or services that remain state jurisdictional",
+      "concern": "FERC VPP eligibility rules would not preempt state retail VPP programs",
+      "bins": ["aq:jurisdiction", "topic:state-federal-jurisdiction"]
+    },
+    {
+      "id": 14,
+      "text": "VPPs are critically positioned to allow the timely interconnection of large loads while protecting existing customers from adverse impacts and allowing for additional benefits.",
+      "concern": "VPPs protect existing customers from cost impacts while enabling faster large load interconnection",
+      "bins": ["pr:flex", "pr:cost"]
+    },
+    {
+      "id": 15,
+      "text": "Pew urges the Commission to draft its rules in such a way that unlocks the multiple benefits that VPPs can provide both to existing transmission customers and large load customers seeking to interconnect while keeping electricity rates affordable and maintaining grid reliability.",
+      "concern": "Overall ask: resource-neutral rules that unlock VPP benefits for both existing and new customers",
+      "bins": ["pr:flex", "pr:cost", "pr:study"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "VPPs as Flexible Load Tool",
+      "stance": "support",
+      "description": "Pew argues VPPs should be explicitly included in any flexibility framework the Commission adopts. They can curtail or dispatch to reduce transmission system impacts, are faster to deploy than utility-scale resources, and enable a broader range of large load customers to qualify for expedited interconnection pathways.",
+      "quote_ids": [1, 3, 4, 5, 6, 9, 10, 11, 14, 15]
+    },
+    {
+      "key": "pr:study",
+      "name": "Integrated VPP Interconnection Study",
+      "stance": "support",
+      "description": "Pew supports coordinated study of large loads paired with VPPs alongside generation resources. It contends that studying VPP and load components together in a single integrated process captures combined system effects without inappropriately netting them together or masking reliability risks.",
+      "quote_ids": [1, 4, 9, 15]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Consumer Cost Protection",
+      "stance": "support",
+      "description": "Pew frames VPP inclusion as a tool to keep interconnection affordable for existing customers. VPPs can offset capacity and network upgrade costs that large load additions would otherwise impose, and their faster deployment reduces the period during which supply-demand imbalances inflate prices.",
+      "quote_ids": [4, 14, 15]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Locational DER Proximity Standard",
+      "stance": "support",
+      "description": "Pew endorses a performance-based, location-aware standard for VPP eligibility: what matters is that the resource mitigates constraints in the same constrained transmission pocket, not whether it sits inside or outside the facility fence line. Aggregated DERs in close electrical proximity should qualify as adjacent supply.",
+      "quote_ids": [6, 11]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "VPP Hybrid Facility Rights",
+      "stance": "support",
+      "description": "Pew urges FERC to define hybrid facility broadly to include large loads paired with VPPs, and to adopt resource-neutral technical eligibility criteria. Excluding technically capable VPP aggregations from hybrid-specific procedures while permitting utility-scale hybrids would constitute undue discrimination under Order No. 2222.",
+      "quote_ids": [1, 2, 7, 8, 9, 10, 11]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Study for VPP-Paired Loads",
+      "stance": "support",
+      "description": "Pew supports expedited interconnection pathways for curtailable large loads and contends those pathways must be available to loads contracting with VPPs. VPPs' rapid deployment speed makes them especially suited to the expedited-study objective.",
+      "quote_ids": [4, 5]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Jurisdiction and State Compatibility",
+      "stance": "neutral",
+      "description": "Pew takes no position on whether FERC should assert jurisdiction over large load interconnection. Conditionally, it argues that including VPPs in Commission-jurisdictional tariffs would not preempt state retail VPP programs, and that jurisdictional and state-jurisdictional frameworks can coexist without double-counting.",
+      "quote_ids": [2, 12, 13]
+    },
+    {
+      "key": "topic:der-aggregation-precedent",
+      "name": "Order 2222 DER Precedent",
+      "stance": "support",
+      "description": "Pew draws directly on Order No. 2222 to argue that the non-discrimination principle compels FERC to let technically capable DER aggregations participate in any hybrid or flexible interconnection framework on equal terms with utility-scale resources.",
+      "quote_ids": [2, 7, 8]
+    },
+    {
+      "key": "topic:deployment-speed",
+      "name": "VPP Deployment Speed Advantage",
+      "stance": "support",
+      "description": "VPPs can reach utility scale in months rather than years, bypassing the generator interconnection queue entirely. Pew cites this as a key reason to treat them as a priority tool for bridging the gap between large load growth and available supply.",
+      "quote_ids": [5]
+    },
+    {
+      "key": "topic:locational-equivalence",
+      "name": "Inside-the-Fence vs. Off-Site Equivalence",
+      "stance": "support",
+      "description": "Pew argues that eligibility for expedited interconnection should turn on verifiable performance within the same constrained grid area, not on whether assets are physically located inside the facility. This framing allows VPPs composed of off-site DERs to qualify on equal terms.",
+      "quote_ids": [6]
+    },
+    {
+      "key": "topic:mandatory-vpp-access",
+      "name": "Mandatory Transmission Provider Access",
+      "stance": "support",
+      "description": "Pew argues FERC must require, not merely permit, transmission providers to include VPPs in their interconnection toolbox. A voluntary approach would allow providers to exclude a critical flexibility tool.",
+      "quote_ids": [3]
+    },
+    {
+      "key": "topic:resource-neutral-rules",
+      "name": "Resource-Neutral Rule Design",
+      "stance": "support",
+      "description": "Pew calls for technical eligibility criteria written in performance terms rather than technology terms, so that VPPs can satisfy requirements wherever they can provide the relevant service. This applies across whatever framework the Commission ultimately adopts.",
+      "quote_ids": [10]
+    },
+    {
+      "key": "topic:state-federal-jurisdiction",
+      "name": "State and Federal Jurisdictional Coexistence",
+      "stance": "neutral",
+      "description": "Pew argues that making VPPs eligible under FERC-jurisdictional interconnection tariffs does not preempt or override state retail VPP programs. The two frameworks can run in parallel as long as commitments under each are consistent and FERC rules prevent double-counting of load reduction in the interconnection study.",
+      "quote_ids": [12, 13]
+    }
+  ],
+  "lenses": {
+    "aq": ["hybridrights", "expedited", "jurisdiction"],
+    "pr": ["flex", "study", "cost", "proximate"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

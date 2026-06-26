@@ -1,0 +1,99 @@
+{
+  "accession": "20251208-5087",
+  "filer": "ENGIE North America Inc.",
+  "org_type": "generator_ipp",
+  "filed": "12/08/2025",
+  "source_text": "sources/comments/files/20251208-5087__ENGIE-North-America-Inc/RM26-4 ENGIE ANOPR Reply Comments.txt",
+  "overall_summary": "ENGIE supports the ANOPR initiative and urges two reforms: a PUHCA blanket exemption letting IPPs sell directly to large loads without losing upstream exemptions, and a legally durable final rule grounded in a clear NOPR process that respects state jurisdiction limits.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "ENGIE has reviewed and supports initial comments recommending that the Commission provide blanket PUHCA exemptions for IPPs that sell directly to hybrid facility loads.",
+      "concern": "ENGIE endorses a blanket PUHCA exemption for IPPs serving hybrid large loads directly",
+      "bins": ["topic:puhca-reform"]
+    },
+    {
+      "id": 2,
+      "text": "Having to \"sleeve\" the transactions creates unnecessary barriers and is a significant impediment to power sale arrangements between IPPs and large loads because it increases costs and reduces transaction efficiency.",
+      "concern": "Transaction sleeving requirements raise costs and block direct IPP-to-large-load sales",
+      "bins": ["topic:puhca-reform", "topic:transaction-barriers"]
+    },
+    {
+      "id": 3,
+      "text": "Reforms to PUHCA that allow IPPs to make direct sales to large loads without losing PUHCA exemptions for upstream owners would facilitate the interconnection and service of new large loads to the electric grid.",
+      "concern": "PUHCA reform would remove a barrier to large load interconnection",
+      "bins": ["topic:puhca-reform", "aq:jurisdiction"]
+    },
+    {
+      "id": 4,
+      "text": "Permitting IPPs to file only one request, instead of individual requests for each transaction would greatly reduce the barriers to the development of hybrid large load interconnections.",
+      "concern": "Blanket exemption filing reduces regulatory burden on IPPs doing hybrid interconnections",
+      "bins": ["topic:puhca-reform", "aq:jurisdiction"]
+    },
+    {
+      "id": 5,
+      "text": "Clear, consistent and legally defensible rules are essential for IPPs and all stakeholders to foster long-term investment and to bring large load interconnection to fruition.",
+      "concern": "Legal certainty is required to attract investment in large load interconnection",
+      "bins": ["aq:jurisdiction", "topic:legal-durability"]
+    },
+    {
+      "id": 6,
+      "text": "One way to ensure validity and durability of the final rule is to respect and account for the limits of federal authority and avoid interfering with areas under state jurisdiction and control.",
+      "concern": "Final rule must stay within federal authority and not preempt state jurisdiction",
+      "bins": ["aq:jurisdiction", "topic:legal-durability"]
+    },
+    {
+      "id": 7,
+      "text": "A second way to ensure validity and durability of the final rule is to issue a Notice of Proposed Rulemaking (\"NOPR\") with a reasonable timeframe for comment.",
+      "concern": "A NOPR with a comment period is needed before finalizing the large load rule",
+      "bins": ["topic:legal-durability"]
+    },
+    {
+      "id": 8,
+      "text": "it will be important for stakeholders to have a better sense of a potential framework and draft regulatory language on which to provide further comment before finalization.",
+      "concern": "Stakeholders need draft rule language for meaningful input before the rule is final",
+      "bins": ["topic:legal-durability"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "topic:puhca-reform",
+      "name": "PUHCA Exemption for IPP Direct Sales",
+      "stance": "support",
+      "description": "ENGIE supports a blanket PUHCA exemption that would let IPPs sell electricity directly to hybrid large loads without losing exemptions for upstream owners. The current requirement to route sales through a third-party retail provider adds cost and inefficiency. A blanket exemption, rather than transaction-by-transaction filings, would remove a concrete barrier to hybrid large load interconnection.",
+      "quote_ids": [1, 2, 3, 4]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal Authority and Jurisdiction Limits",
+      "stance": "mixed",
+      "description": "ENGIE wants clear FERC jurisdiction to enable large load interconnection rules, but insists the final rule stay within federal authority and not encroach on state jurisdiction. Clear, legally defensible rules are treated as a prerequisite for long-term investment.",
+      "quote_ids": [3, 4, 5, 6]
+    },
+    {
+      "key": "topic:legal-durability",
+      "name": "Durable Rule via NOPR Process",
+      "stance": "support",
+      "description": "ENGIE urges the Commission to issue a NOPR with a reasonable comment period rather than moving directly to a final rule. Providing draft regulatory language gives stakeholders the ability to comment meaningfully, and issuing the rule through standard notice-and-comment reduces litigation risk.",
+      "quote_ids": [5, 6, 7, 8]
+    },
+    {
+      "key": "topic:transaction-barriers",
+      "name": "Transaction Sleeving Inefficiency",
+      "stance": "oppose",
+      "description": "ENGIE describes how EWG status forces IPPs to use a third-party retail provider to sell power to large loads, a practice called sleeving. This adds cost and reduces efficiency and is framed as a structural impediment to direct IPP-to-load arrangements.",
+      "quote_ids": [2]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction"],
+    "pr": [],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

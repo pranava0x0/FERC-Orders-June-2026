@@ -1,0 +1,126 @@
+{
+  "accession": "20251117-5092",
+  "filer": "PACES AI INC.",
+  "org_type": "data_center",
+  "filed": "11/17/2025",
+  "source_text": "sources/comments/files/20251117-5092__PACES-AI-INC/RM26-4-000 - ANOPR - Paces AI INC Comments.txt",
+  "overall_summary": "Paces AI Inc. argues that manual interconnection study processes and speculative, project-by-project load signals are the core operational problem, and that AI agent automation can cut study times from weeks to hours while land-aware planning maps direct upgrades to where load will actually be built. The company asks FERC to endorse AI automation with engineer sign-off, set a sub-20-business-day study SLA, require parcel-level planning maps, and tie expedited interconnection to locations that are power-ready and dispatchable.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "interconnection studies up to 20x faster with full audit trails and sign-off",
+      "concern": "AI agents can dramatically speed up interconnection studies while preserving auditability",
+      "bins": ["aq:expedited", "pr:study"]
+    },
+    {
+      "id": 2,
+      "text": "manual study processes and speculative, project-by-project signals are producing slow interconnection queues and plans for load that will never be built, while a small set of constraints strands the load that actually can be built",
+      "concern": "manual and speculative processes mismatch grid plans with real load locations",
+      "bins": ["pr:study", "pr:proximate"]
+    },
+    {
+      "id": 3,
+      "text": "FERC's large-loads rule is the chance to fix both problems",
+      "concern": "filer frames the rulemaking as the right vehicle to address study speed and planning mismatch",
+      "bins": ["pr:study"]
+    },
+    {
+      "id": 4,
+      "text": "State that transmission providers are encouraged to use AI agents to operate approved study tools and scripts, as long as qualified engineers own the methodology and sign-off and workflows are auditable.",
+      "concern": "FERC should explicitly endorse AI automation within existing reliability frameworks",
+      "bins": ["aq:expedited", "pr:study", "topic:ai-automation"]
+    },
+    {
+      "id": 5,
+      "text": "Encourage or require a SLA of <20 business days for all large load initial studies which makes the leveraging of AI automation essential to meet such a timeline.",
+      "concern": "a short study SLA would drive adoption of AI tools",
+      "bins": ["aq:expedited", "pr:study", "topic:ai-automation"]
+    },
+    {
+      "id": 6,
+      "text": "Direct transmission providers that face material large-load growth to build parcel-level maps of developable large-load sites (zoning, setbacks, floodplains, water, ownership, etc.) and overlay them with bus-level withdrawal headroom.",
+      "concern": "land-aware planning maps should be a required input to transmission planning",
+      "bins": ["pr:study", "pr:proximate", "topic:land-aware-planning"]
+    },
+    {
+      "id": 7,
+      "text": "sited at buses with positive headroom and nearby developable land",
+      "concern": "expedited treatment should be conditioned on dispatchability and power-ready siting",
+      "bins": ["aq:expedited", "pr:flex", "pr:proximate", "topic:land-aware-planning"]
+    },
+    {
+      "id": 8,
+      "text": "Permit slower timelines and clearer upgrade expectations for heavily constrained, non-power-ready locations.",
+      "concern": "constrained locations should face longer timelines and explicit upgrade cost expectations",
+      "bins": ["aq:expedited", "pr:proximate", "aq:upgradecost"]
+    },
+    {
+      "id": 9,
+      "text": "the real operational risk is mis-located, speculative load plus manual-only study processes that cannot scale",
+      "concern": "speculative and mislocated load combined with manual studies is the central reliability risk",
+      "bins": ["pr:study", "pr:proximate"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:expedited",
+      "name": "Study SLA and fast track",
+      "stance": "support",
+      "description": "Paces supports expedited treatment and recommends a mandatory SLA of under 20 business days for initial studies. It argues that AI automation is the only way to meet such a timeline at scale, and that the fastest interconnection track should be reserved for dispatchable loads sited at power-ready buses.",
+      "quote_ids": [1, 4, 5, 7, 8]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Upgrade expectations at constrained sites",
+      "stance": "support",
+      "description": "Paces supports giving constrained, non-power-ready locations slower timelines paired with clearer upgrade cost expectations, so that speculative projects at costly sites face transparent signals rather than joining the same queue as well-sited loads.",
+      "quote_ids": [8]
+    },
+    {
+      "key": "pr:study",
+      "name": "AI-automated interconnection studies",
+      "stance": "support",
+      "description": "Paces argues that manual study processes cannot scale to meet large-load demand and endorses AI agents running approved power-flow tools under engineer oversight. It recommends FERC explicitly permit this approach and pair it with a short study SLA to make automation necessary.",
+      "quote_ids": [1, 2, 3, 4, 5, 6, 9]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Dispatchability as fast-track condition",
+      "stance": "support",
+      "description": "Paces supports tying the fastest interconnection track to loads that are dispatchable or curtailable, treating flexibility as a prerequisite for expedited treatment rather than an optional feature.",
+      "quote_ids": [7]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Land-aware, constraint-aware siting",
+      "stance": "support",
+      "description": "Paces argues that speculative, poorly sited load produces grid plans that do not match where load will actually be built. It recommends requiring parcel-level developability maps overlaid with bus-level headroom so planning and interconnection decisions reflect actual siting constraints.",
+      "quote_ids": [2, 6, 7, 8, 9]
+    },
+    {
+      "key": "topic:ai-automation",
+      "name": "FERC endorsement of AI agents",
+      "stance": "support",
+      "description": "Paces asks FERC to formally endorse AI agent automation inside existing reliability frameworks, provided engineers retain sign-off authority and workflows produce auditable outputs. It also requests a technical conference where it can demonstrate real-world examples.",
+      "quote_ids": [4, 5]
+    },
+    {
+      "key": "topic:land-aware-planning",
+      "name": "Parcel-level planning maps",
+      "stance": "support",
+      "description": "Paces recommends requiring transmission providers facing material large-load growth to build parcel-level maps covering zoning, setbacks, floodplains, water access, and ownership, then overlay those maps with bus-level withdrawal headroom to guide both planning and siting decisions.",
+      "quote_ids": [6, 7]
+    }
+  ],
+  "lenses": {
+    "aq": ["expedited", "upgradecost"],
+    "pr": ["study", "flex", "proximate"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
