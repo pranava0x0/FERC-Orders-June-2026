@@ -1,0 +1,280 @@
+{
+  "accession": "20260203-5043",
+  "filer": "Individual No Affiliation",
+  "org_type": "individual",
+  "filed": "02/03/2026",
+  "source_text": "sources/comments/files/20260203-5043__Individual-No-Affiliation/FERC_RM26-4_000_FrontDoorTechnologies2.3.26.txt",
+  "overall_summary": "Brian Handshy of Front Door Technologies argues that proposals to grant interconnection offset credit based on regional ELCC values for Virtual Power Plants and demand response fundamentally confuse two distinct reliability frameworks. His Monte Carlo analysis finds that a VPP with 69% regional ELCC credit provides a median of only 4.72% of that value for local interconnection purposes, a 15:1 overestimation, due to geographic dispersion, temporal mismatch, and operational uncertainty. He urges FERC to reject automatic ELCC-based interconnection offsets and require locational, temporal, and operational firmness demonstrations for any DER interconnection credit.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "This comment demonstrates that such proposals fundamentally conflate two distinct grid reliability mechanisms that operate under entirely different engineering and regulatory frameworks: Resource Adequacy and Nodal Interconnection.",
+      "concern": "VPP ELCC credit proposals mix up resource adequacy and interconnection engineering",
+      "bins": [
+        "pr:study",
+        "topic:elcc-vs-interconnection"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The application of Resource Adequacy metrics to interconnection engineering creates what I term a \"Regulatory Hallucination\"—a policy framework that appears mathematically valid on paper but lacks physical correspondence to actual grid conditions at the point of interconnection.",
+      "concern": "Applying regional adequacy metrics to interconnection studies creates a false sense of reliability",
+      "bins": [
+        "pr:study",
+        "topic:elcc-vs-interconnection"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Interconnection studies serve an entirely different function: determining whether specific transmission and distribution equipment can safely accommodate a new point-to-point power flow without exceeding thermal, voltage, or stability limits under worst-case conditions.",
+      "concern": "Interconnection studies require worst-case physical analysis, not regional statistics",
+      "bins": [
+        "pr:study",
+        "topic:interconnection-engineering"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The consequences of interconnection study failure are not financial—they are physical equipment damage, cascading outages, and potential loss of load.",
+      "concern": "Interconnection failures cause physical damage, not just financial penalties",
+      "bins": [
+        "pr:study",
+        "topic:reliability-risk"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Residential VPP resources are necessarily dispersed across residential neighborhoods throughout a utility service territory or RTO region. In PJM, a Demand Response aggregator might enroll 50,000 smart thermostats distributed across Pennsylvania, New Jersey, Maryland, and Delaware. These devices provide regional load reduction, but they are not concentrated at the specific transmission node serving the data center.",
+      "concern": "Geographic dispersal of VPP resources means they cannot relieve specific local transmission constraints",
+      "bins": [
+        "pr:study",
+        "pr:proximate",
+        "topic:locational-specificity"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Load reduction at Location A only relieves constraints at Location B if A and B are electrically proximate in the network topology.",
+      "concern": "Power flow physics requires geographic proximity for constraint relief",
+      "bins": [
+        "pr:proximate",
+        "topic:locational-specificity"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Interconnection studies must model the worst-case hour for the specific local transmission node, which may not coincide with the regional system peak or the hours when VPP resources achieve maximum performance.",
+      "concern": "Local peak conditions for interconnection studies may not align with regional ELCC peak hours",
+      "bins": [
+        "pr:study",
+        "topic:temporal-mismatch"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The median Attribution Gap of 4.72% indicates that a VPP receiving 69% ELCC credit in regional Resource Adequacy markets provides approximately 4.7% of that credit value for local interconnection purposes—a factor of 15:1 overestimation if regional ELCC is applied directly.",
+      "concern": "Monte Carlo analysis shows 15:1 overestimation when applying regional ELCC to local interconnection",
+      "bins": [
+        "pr:study",
+        "topic:attribution-gap"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "granting interconnection credit based on regional ELCC would result in overestimation by a factor of 7:1 or greater in 93% of cases, and overestimation by a factor of 3.5:1 or greater in virtually 100% of cases.",
+      "concern": "ELCC-based interconnection credit almost always produces severe overestimation of actual local capacity",
+      "bins": [
+        "pr:study",
+        "topic:attribution-gap"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Attribution Gap is structural, not transient: The distribution parameters used in this analysis reflect mature VPP programs operating under best practices. The 4-6% median attribution is not a temporary limitation that will disappear with program refinement—it is an inherent consequence of applying regional statistical resources to local deterministic requirements.",
+      "concern": "The gap between ELCC credit and local interconnection value is a permanent structural issue, not a fixable program flaw",
+      "bins": [
+        "pr:study",
+        "topic:attribution-gap"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The Commission should reject proposals to grant automatic interconnection offset credit based on Resource Adequacy ELCC values.",
+      "concern": "FERC should not allow automatic ELCC-based interconnection offset credit",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction",
+        "topic:elcc-vs-interconnection"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "such contributions must be demonstrated through the same rigorous interconnection study methodology applied to all other resources: Locational specificity... Temporal certainty... Operational firmness... Verification and measurement",
+      "concern": "Any DER interconnection credit must go through full interconnection study rigor",
+      "bins": [
+        "pr:study",
+        "pr:proximate",
+        "aq:protection",
+        "topic:interconnection-engineering"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "VPPs should continue to receive appropriate compensation through capacity markets for their genuine Resource Adequacy contributions. Data centers should continue to fund interconnection upgrades necessary to maintain physical system reliability.",
+      "concern": "VPPs belong in capacity markets; data centers should pay for their own interconnection upgrades",
+      "bins": [
+        "pr:cost",
+        "pr:colo",
+        "topic:elcc-vs-interconnection"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Reject ELCC as Interconnection Credit",
+      "stance": "oppose",
+      "description": "The filer opposes proposals to use regional ELCC values from resource adequacy markets as interconnection offset credit for VPPs. He argues the two frameworks are analytically incompatible: resource adequacy is a regional statistical mechanism while interconnection requires worst-case physical analysis at specific nodes. His Monte Carlo model shows a 15:1 median overestimation when regional ELCC is applied to local interconnection.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Geographic Proximity Required",
+      "stance": "support",
+      "description": "The filer argues that only VPP resources electrically proximate to the constrained node can provide genuine interconnection relief, consistent with AC power flow physics. Dispersed residential portfolios across a multi-state RTO footprint cannot relieve a specific substation constraint.",
+      "quote_ids": [
+        5,
+        6,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Data Centers Fund Their Upgrades",
+      "stance": "support",
+      "description": "The filer concludes that data centers should continue to fund the interconnection upgrades their load requires rather than receiving offset credit based on regional VPP statistics.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Keep VPPs in Capacity Markets",
+      "stance": "support",
+      "description": "The filer supports VPPs receiving capacity market compensation for their genuine resource adequacy value, but opposes extending that role into interconnection engineering where different physical standards apply.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC Should Reject Automatic Offsets",
+      "stance": "support",
+      "description": "The filer urges FERC to explicitly reject automatic ELCC-based interconnection offset credit, framing this as a matter of Commission jurisdiction to enforce its own interconnection engineering precedent from Orders 2003 and 2023.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Firm Commitments for Any DER Credit",
+      "stance": "support",
+      "description": "If DER resources are to receive any interconnection credit, the filer argues they must meet the same contractual firmness, metering, and verification standards as generation interconnections, including binding financial penalties for non-performance.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:elcc-vs-interconnection",
+      "name": "ELCC and Interconnection Are Incompatible",
+      "stance": "oppose",
+      "description": "The central theme of the filing is that resource adequacy ELCC and interconnection engineering are fundamentally different analytical frameworks. Treating regional statistical performance as physical node-level capacity creates what the filer calls a Regulatory Hallucination that risks actual equipment damage.",
+      "quote_ids": [
+        1,
+        2,
+        11,
+        13
+      ]
+    },
+    {
+      "key": "topic:attribution-gap",
+      "name": "Monte Carlo Shows 15x Overestimation",
+      "stance": "neutral",
+      "description": "The filer presents a stochastic model applying three sequential filters (locational, temporal, operational) to quantify the gap between regional ELCC and local interconnection value. The median result is 4.72% attribution, representing a factor of 15 to 1 overestimation. He finds the gap is structural and will not improve with program maturity.",
+      "quote_ids": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:locational-specificity",
+      "name": "Dispersed VPPs Cannot Relieve Local Nodes",
+      "stance": "neutral",
+      "description": "VPP portfolios dispersed across a broad RTO footprint provide regional load reduction but cannot physically relieve constraints at a specific substation node. The locational filter in the filer's model has the strongest correlation with overall attribution degradation.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:temporal-mismatch",
+      "name": "Local and Regional Peaks Diverge",
+      "stance": "neutral",
+      "description": "The local worst-case hour that drives an interconnection constraint may not coincide with regional system peaks that drive ELCC calculations. Seasonal variation, microclimate effects, and industrial load patterns can shift local peaks to hours when VPP resources are not performing.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:interconnection-engineering",
+      "name": "Worst-Case Physical Standards Must Hold",
+      "stance": "support",
+      "description": "The filer supports FERC's established interconnection study standards requiring worst-case physical analysis. He argues these standards reflect fundamental engineering requirements for thermal limits, conductor ampacity, and protection coordination that cannot be replaced by statistical or financial mechanisms.",
+      "quote_ids": [
+        3,
+        12
+      ]
+    },
+    {
+      "key": "topic:reliability-risk",
+      "name": "Interconnection Failures Are Physical",
+      "stance": "neutral",
+      "description": "Unlike resource adequacy shortfalls that are resolved through financial penalties and multi-year procurement, interconnection failures manifest immediately as equipment damage, voltage collapse, and cascading outages. The filer uses this distinction to argue why probabilistic VPP credit is inappropriate for interconnection.",
+      "quote_ids": [
+        4
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "protection"
+    ],
+    "pr": [
+      "study",
+      "proximate",
+      "cost",
+      "colo"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

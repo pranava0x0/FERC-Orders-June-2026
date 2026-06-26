@@ -1,0 +1,301 @@
+{
+  "accession": "20251205-5219",
+  "filer": "Monitoring Analytics, LLC",
+  "org_type": "market_monitor",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5219__Monitoring-Analytics-LLC/2025-12-05 IMM Reply Comments re ANOPR (RM26-4)-AS FILED.txt",
+  "overall_summary": "The PJM Independent Market Monitor argues that the central problem in PJM is insufficient generation capacity to reliably serve large new data center loads, and that the ANOPR must require a load queue conditioned on reliable service. The filing opposes co-location, demand-side substitutes for generation, and cost shifting to existing customers, and calls for an expedited path for loads that bring their own new generation.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Commenters with specific proposals generally seek to avoid the only just, reasonable and not unduly discriminatory action available to the Commission that will protect reliability and affordability for existing customers which is to provide clear incentives to large new data center loads to get to market quickly and reliably and to refuse to permit reliability to be undermined by adding large new data center loads without corresponding new generation.",
+      "concern": "Other commenters are avoiding the necessary action: tying large load interconnection to new generation",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The ANOPR does not propose to include a requirement in the interconnection procedures for large loads, that interconnection of large loads to the grid must be predicated on the ability to provide reliable service which in turn requires generation capacity which in turn means that there should be a load queue. The NOPR should include such a requirement.",
+      "concern": "ANOPR omits a reliability-predicated load queue requirement",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The best incentive to bring only real projects is to provide an expedited option to bring your own new generation. This incentive would be much stronger and more effective and more focused on a real solution than requiring deposits.",
+      "concern": "Bring-your-own-generation expedited path is more effective than deposit requirements",
+      "bins": [
+        "aq:expedited",
+        "aq:deposits",
+        "pr:study",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "There is no reason to simply extend the generator threshold to loads. Generators have generally been very large compared to individual loads. While there is no completely objective threshold for large new data center loads, the threshold should be no higher than five MW.",
+      "concern": "The 20 MW threshold is too high; 5 MW is the appropriate cap for PJM",
+      "bins": [
+        "aq:threshold",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The suggestion that the cutoff for the load queue should be 200 MW is an attempt to avoid the issue, would miss many data centers and would permit gaming of the rules to avoid the queue.",
+      "concern": "A 200 MW cutoff would allow gaming and exclude many data centers",
+      "bins": [
+        "aq:threshold",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The Market Monitor's view is that there is a market based path forward to reliably serving large new data center loads that does not require a change in jurisdictional authorities or a lengthy and contentious debate about jurisdiction.",
+      "concern": "Jurisdictional expansion is unnecessary; market rules can address the problem",
+      "bins": [
+        "aq:jurisdiction",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "State regulators cannot protect retail customers from the impact of adding large new data center loads on PJM wholesale market prices for capacity, energy and reserves and on system reliability.",
+      "concern": "State regulators lack authority to shield retail customers from wholesale market cost impacts",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Co-located load is simply a way to wish away the reliability issue and more importantly to undermine the PJM markets and impose unacceptably large reliability and monetary costs on all other PJM customers.",
+      "concern": "Co-location shifts reliability risk and costs to other PJM customers",
+      "bins": [
+        "pr:colo",
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The Commission should reject the co-location option as inconsistent with PJM's competitive markets, inconsistent with just and reasonable rates, and inconsistent with the goal of the ANOPR to ensure the timely and orderly interconnection of large loads.",
+      "concern": "Co-location violates just and reasonable rates and the ANOPR's stated goals",
+      "bins": [
+        "pr:colo",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "In their current and proposed forms, demand side solutions offer no viable substitution for generation capacity resources.",
+      "concern": "Demand-side resources cannot replace generation capacity for reliability",
+      "bins": [
+        "pr:flex",
+        "pr:study",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "If 20,000 MW of new data center load were added and 90 percent or less of this load were offered in the capacity market as emergency demand side resources, the Market Monitor estimates that the increased cost of capacity would be around $5.48 billion per year to existing customers.",
+      "concern": "Adding large data center load without generation could cost existing customers $5.48 billion per year in capacity costs",
+      "bins": [
+        "pr:cost",
+        "pr:flex",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The narrowly defined co-location model that is the subject of Constellation's Complaint and Constellation's ongoing comments in the PJM CIFP process would allow existing generation to sell to a large new data center load and withdraw from the PJM capacity market. If allowed, this option could lead to the end of PJM markets.",
+      "concern": "Allowing generation to withdraw from PJM capacity market to serve co-located load could destroy PJM markets",
+      "bins": [
+        "pr:colo",
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The Market Monitor agrees with PJM's points and thinks that PJM understates the negative outcomes of connect and manage. Ignoring the issues at the time of interconnection and imposing the actual costs as they are realized on other customers is not consistent with the stated purpose of the ANOPR.",
+      "concern": "Connect-and-manage defers costs onto existing customers and conflicts with ANOPR goals",
+      "bins": [
+        "pr:cost",
+        "pr:proximate",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "All customers should be full NITS customers and pay their full share of transmission costs without calculations of asserted gross impacts, net impacts or other attempts to avoid paying for transmission service.",
+      "concern": "Data centers must pay full network transmission costs without special offsets",
+      "bins": [
+        "pr:cost",
+        "pr:proximate",
+        "rg:pjm"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "No New Jurisdictional Authority Needed",
+      "stance": "oppose",
+      "description": "The Market Monitor argues that the reliability problem in PJM can be addressed through existing market rules without expanding FERC jurisdictional authority over state and local interconnection. State regulators cannot protect retail customers from wholesale market cost impacts, but a jurisdictional debate would delay action on an urgent problem.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Lower Threshold to Five MW",
+      "stance": "oppose",
+      "description": "The Market Monitor opposes the ANOPR's 20 MW threshold as an unjustified carry-over from generator rules. It recommends a threshold no higher than 5 MW to prevent gaming through disaggregation of data center interconnection points. A 200 MW cutoff is dismissed as an attempt to avoid the queue entirely.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Reliability Predicate for Load Queue",
+      "stance": "support",
+      "description": "The filing calls for a load queue that explicitly conditions interconnection on the ability to provide reliable service, which requires adequate generation capacity. The ANOPR's failure to include this requirement is identified as a central gap.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Generation Over Deposits as Deterrent",
+      "stance": "mixed",
+      "description": "The Market Monitor acknowledges deposit requirements as a tool to screen out speculative projects but argues that an expedited bring-your-own-generation option is a stronger and more targeted incentive.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Path for Own-Generation Loads",
+      "stance": "support",
+      "description": "The filing supports an expedited interconnection option for large loads that bring their own new generation, viewing this as the most effective mechanism to align load entry with reliability.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Generation Adequacy in Study Process",
+      "stance": "support",
+      "description": "The Market Monitor contends that any load interconnection study process must assess generation adequacy, not just transmission access. Interconnection without a corresponding capacity check cannot produce reliable service.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        10
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "No Cost Shifting to Existing Customers",
+      "stance": "oppose",
+      "description": "The filing quantifies cost shifts to existing PJM customers from adding data center load without new generation, estimating up to $5.48 billion per year in capacity market costs alone. It opposes co-location, connect-and-manage, and demand-side substitutes as mechanisms that defer or spread these costs to others. All customers must pay full NITS costs.",
+      "quote_ids": [
+        1,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Reject Co-location Model",
+      "stance": "oppose",
+      "description": "The Market Monitor opposes the narrow co-location model under which existing generators withdraw from PJM capacity markets to serve behind-the-meter data center load. This shifts reliability risk and costs to all other PJM customers, is inconsistent with just and reasonable rates, and could undermine the entire PJM market structure.",
+      "quote_ids": [
+        8,
+        9,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Demand Response Not a Generation Substitute",
+      "stance": "oppose",
+      "description": "The filing argues that curtailable load and demand-side resources are not a viable alternative to generation capacity. Data centers in practice resist meaningful curtailment, PRD strike prices are too high to serve as real demand resources, and adding large loads without generation will drive up energy and capacity prices.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Costs Must Follow the Cause",
+      "stance": "support",
+      "description": "The Market Monitor supports cost causation principles: new data center loads must bear the transmission and capacity costs they create rather than having those costs deferred or spread to existing customers through connect-and-manage or partial transmission cost calculations.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM-Specific Reliability Crisis",
+      "stance": "neutral",
+      "description": "The filing is explicitly scoped to PJM, where the Market Monitor identifies an immediate and urgent shortage of generation capacity relative to projected data center load growth of approximately 30,000 MW. PJM's existing market structure and lack of load queue authority make federal action urgent.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
