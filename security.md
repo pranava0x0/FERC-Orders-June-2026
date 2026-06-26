@@ -16,6 +16,10 @@ The 2026-06 advisories in the index (IDEsaster, Mastra/Gluestack/TanStack npm wo
 
 **Monitoring only:** browser-vendor updates. Re-run the sweep if we ever add a dependency, a CDN asset, or a GitHub Action.
 
+## Sweep 2026-06-26 (yt-dlp, dev-only)
+
+Pulled `yt-dlp` ephemerally via `uvx yt-dlp` to fetch the FERC open-meeting auto-caption transcript for the commissioner summaries. Re-fetched the advisory index (`llms-ctx.txt`, 123 KB) and grepped: **no `yt-dlp` / `yt_dlp` match — clear to pull**. It is a **dev-time tool only** (run once to produce `sources/commissioners/open-meeting-transcript.txt`); nothing from it ships in `docs/`. No permanent install, no `package.json`/lockfile change. Verdict unchanged: **negligible exposure**.
+
 ## Hardening already applied
 
 - `.gitignore` blocks `.env*`, `credentials.json`, `secrets/`, key material.

@@ -301,6 +301,25 @@ ul.roster li::before { content: "·"; }
 .commish-quote { font-family: var(--font-serif); font-style: italic; font-size: 12.5px; color: var(--accent-ink); margin-top: 6px; }
 .commish-head .commish-tag { margin-left: auto; }
 .commish-tag { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--status-reform); background: #f6efdf; border: 1px solid #e6d8b0; border-radius: 999px; padding: 1px 8px; }
+
+/* expandable themed read of a commissioner's statement (themes + verbatim quotes) */
+.commish-full { margin-top: 9px; border-top: 1px solid var(--rule); }
+.commish-full > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; color: var(--accent); padding: 9px 0; min-height: 44px; }
+.commish-full > summary::-webkit-details-marker { display: none; }
+.commish-full > summary::before { content: "\25B8"; color: var(--accent); transition: transform 0.15s ease; }
+.commish-full[open] > summary::before { transform: rotate(90deg); }
+.commish-full > summary:hover { color: var(--accent-ink); }
+.commish-full > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.commish-full-n { font-weight: 400; color: var(--text-muted); font-size: 10.5px; }
+.commish-sum { font-size: 12.5px; line-height: 1.5; color: var(--ink); margin: 2px 0 11px; }
+.commish-theme { margin: 0 0 11px; padding-left: 11px; border-left: 3px solid var(--rule-strong); }
+.commish-theme-h { margin: 0 0 3px; font-size: 12px; font-weight: 700; color: var(--ink); }
+.commish-theme-d { font-size: 12px; line-height: 1.5; color: #2b3744; margin: 0 0 6px; }
+.commish-qs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.commish-q { font-family: var(--font-serif); font-style: italic; font-size: 12.5px; line-height: 1.45; color: var(--accent-ink); padding-left: 9px; border-left: 2px solid var(--rule); }
+.commish-q.spoken { color: #4a4753; border-left-color: var(--status-reform); }
+.commish-q-src { display: inline-block; font-family: var(--font-sans); font-style: normal; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-left: 6px; }
+.commish-srcs { font-size: 10px; color: var(--text-muted); line-height: 1.4; margin: 8px 0 2px; }
 /* per-order commissioner statements (nested in each docket accordion) */
 details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .commish-row { padding-left: 11px; border-left: 2px solid var(--rule-strong); }
