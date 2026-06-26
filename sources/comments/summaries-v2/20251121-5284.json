@@ -1,0 +1,294 @@
+{
+  "accession": "20251121-5284",
+  "filer": "Organization of PJM States, Inc.",
+  "org_type": "state_assoc",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5284__Organization-of-PJM-States-Inc/RM26-4 - OPSI Initial Comments.txt",
+  "overall_summary": "OPSI, representing PJM-region state utility commissions, argues that FERC lacks authority under the FPA to regulate large load interconnections because load connects via retail service providers outside federal jurisdiction. OPSI urges the Commission to preserve state retail regulatory authority, pursue cooperative federal-state solutions rather than unilateral rulemaking, and carefully limit the scope of any final action to avoid intruding on state retail ratemaking and cost allocation functions.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "OPSI, like the National Association of Regulatory Utility Commissioners (\"NARUC\"), underscores the importance of maintaining the long-established boundary between federal and state authority and urges the Commission to maintain the current jurisdictional framework.",
+      "concern": "OPSI calls for preserving the existing federal-state jurisdictional boundary",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "nearly all load connects via a retail service provider or similar entity over which the Federal Power Act (\"FPA\") conveys no authority to the Commission.",
+      "concern": "Load connects through retail providers outside FERC's FPA authority",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The most expedient way to advance reliable and timely interconnection is to honor long-standing jurisdictional precepts recognizing state authority over retail load interconnections.",
+      "concern": "Respecting state authority is the fastest path to efficient interconnection",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "FERC should \"preserve and affirm states' retail regulatory authority under the FPA, ensure that large load interconnections do not compromise grid reliability or impose undue costs on retail customers, and respect state tools for promoting system flexibility and equitable cost allocation.\"",
+      "concern": "NARUC position OPSI endorses: preserve state authority and protect retail customers from undue costs",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:protection",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The ANOPR provides no evidence that current state- or utility-administered interconnection processes are discriminatory.",
+      "concern": "No evidence of discrimination justifying federal intervention in load interconnection",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "utilities have no incentive to discriminate against large loads, which represent new retail sales and investment opportunities.",
+      "concern": "Unlike generation, load interconnection lacks discriminatory incentives that motivated Orders 888 and 2003",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "OPSI is concerned that, by permitting end use customers to connect directly to the transmission grid, the Commission will seemingly expand its jurisdiction well beyond that provided by the FPA, i.e., into retail service.",
+      "concern": "Direct-to-transmission connection for end users would push FERC into retail jurisdiction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "the reforms in this docket should apply to new loads greater than 20 MW. This threshold is likely too small to make interconnection processes meaningfully more efficient and may overtake state-level proceedings where voltage thresholds have been set higher than this threshold. States in the PJM region are considering or have approved thresholds for large load additions ranging from 25 to 100 MW.",
+      "concern": "20 MW threshold is too low and conflicts with higher PJM-region state thresholds of 25 to 100 MW",
+      "bins": [
+        "aq:threshold",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "It is imperative that large loads looking to interconnect bear their fair share of transmission costs and that the Commission deter harmful speculation as these loads seek to interconnect.",
+      "concern": "Large loads must pay their share of transmission costs; speculation must be deterred",
+      "bins": [
+        "aq:protection",
+        "pr:cost",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "FERC rules must not impede the state's traditional right to perform prudency reviews and conduct cost causation analysis necessary to protect local ratepayers from costs they did not cause, especially where transmission charges are based on withdrawal rights.",
+      "concern": "FERC rules must not block state prudency reviews and cost causation analysis protecting ratepayers",
+      "bins": [
+        "aq:protection",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "granting the customer an option to build must explicitly recognize that state siting and permitting authority is absolute.",
+      "concern": "Option-to-build must not override state siting and permitting authority",
+      "bins": [
+        "aq:hybridrights",
+        "topic:state-siting"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "If large load additions come with its own generation and FERC promotes the more efficient study of generation and load together, this could be an incentive for these loads to bring their own generation.",
+      "concern": "Studying load and co-located generation together could encourage self-supply",
+      "bins": [
+        "pr:colo",
+        "pr:study",
+        "aq:jointstudy"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The Commission should clarify who is responsible for meeting resource adequacy and reliability obligations in both restructured and vertically integrated contexts.",
+      "concern": "Responsibility for resource adequacy when load grows faster than generation must be clarified",
+      "bins": [
+        "aq:protection",
+        "topic:resource-adequacy"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Rather than unilaterally imposing federal jurisdiction on these interconnections, FERC should pursue a cooperative approach -- potentially, developing voluntary best practices with states or other novel approaches to meet the moment -- without undermining state authority or established statutory frameworks.",
+      "concern": "FERC should pursue voluntary cooperative solutions with states rather than unilateral rulemaking",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "State Authority Over Retail Load",
+      "stance": "oppose",
+      "description": "OPSI argues that FERC lacks FPA authority over load interconnections because load connects through retail service providers outside federal jurisdiction. States are already effectively regulating large load interconnections, no discrimination has been shown, and unilateral federal assertion of jurisdiction would intrude on state retail authority.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        14
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20 MW Threshold Too Low",
+      "stance": "oppose",
+      "description": "OPSI contends the proposed 20 MW applicability threshold is too low to produce meaningful efficiency gains and would conflict with PJM-region states that have set thresholds ranging from 25 to 100 MW.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Deter Speculative Interconnection",
+      "stance": "support",
+      "description": "OPSI supports measures to ensure large loads bear their fair share of transmission costs and to deter harmful speculation in the interconnection queue.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Option to Build and State Siting",
+      "stance": "mixed",
+      "description": "OPSI acknowledges the option-to-build concept but insists any such right must explicitly recognize that state siting and permitting authority remains absolute.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Protect Ratepayers and Reliability",
+      "stance": "support",
+      "description": "OPSI supports measures protecting retail customers from costs they did not cause, preserving state prudency review rights, and ensuring resource adequacy obligations are clearly assigned when large loads are added faster than new generation can materialize.",
+      "quote_ids": [
+        4,
+        9,
+        10,
+        13
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Generation and Load Study",
+      "stance": "support",
+      "description": "OPSI sees merit in studying co-located load and generation together, noting it could create incentives for large loads to bring their own generation resources.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Causation Stays with States",
+      "stance": "oppose",
+      "description": "OPSI argues that cost responsibility and cost causation analysis for large load interconnections is a retail ratemaking function within state jurisdiction. FERC rules must not block state prudency reviews or shift costs to ratepayers who did not cause them.",
+      "quote_ids": [
+        4,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "No Basis for Federal Study Process",
+      "stance": "oppose",
+      "description": "OPSI finds no evidence that current state and utility interconnection study processes are discriminatory, undercutting the rationale for imposing a federal interconnection study regime on load.",
+      "quote_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Study as Incentive",
+      "stance": "support",
+      "description": "OPSI supports the concept of studying load and co-located generation together as a way to encourage large loads to bring their own generation, potentially easing resource adequacy concerns.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Region State Thresholds",
+      "stance": "neutral",
+      "description": "OPSI notes that PJM-region states have set large load thresholds ranging from 25 to 100 MW, and describes PJM's ongoing Critical Issue Fast Path process for large load additions.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:cooperative-federalism",
+      "name": "Cooperative Federal-State Approach",
+      "stance": "support",
+      "description": "OPSI urges FERC to pursue voluntary best practices, joint hearings, and other cooperative mechanisms available under the FPA rather than unilaterally asserting jurisdiction over retail load interconnections.",
+      "quote_ids": [
+        1,
+        3,
+        14
+      ]
+    },
+    {
+      "key": "topic:state-siting",
+      "name": "State Siting Authority Absolute",
+      "stance": "support",
+      "description": "OPSI insists that any option-to-build provision must explicitly recognize that state siting and permitting authority is absolute and cannot be overridden by federal interconnection rules.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:resource-adequacy",
+      "name": "Resource Adequacy Gap Risk",
+      "stance": "neutral",
+      "description": "OPSI warns that if large loads interconnect faster than new generation comes online, resource adequacy obligations become unclear, and the Commission must clarify who bears those obligations in both restructured and vertically integrated contexts.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "jointstudy"
+    ],
+    "pr": [
+      "cost",
+      "study",
+      "colo"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

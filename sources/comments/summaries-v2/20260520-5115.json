@@ -1,0 +1,226 @@
+{
+  "accession": "20260520-5115",
+  "filer": "Individual No Affiliation",
+  "org_type": "individual",
+  "filed": "05/20/2026",
+  "source_text": "sources/comments/files/20260520-5115__Individual-No-Affiliation/Maven_Solutions_Research_Brief_FERC_RM26-4-000.txt",
+  "overall_summary": "Maven Solutions argues that the RM26-4-000 docket record has a structural gap: no commenter addressed the community-infrastructure dimensions of large-load interconnection, including workforce housing, schools, healthcare, water, and transportation. The brief uses Wyoming as a case study, where proposed data center capacity could exceed the state's total generation baseline and where the state public utility commission did not file comments. It proposes a ten-dimension community-development evaluation standard to assess host-community readiness alongside electrical interconnection planning.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "No commenter in the docket has substantively addressed the community-infrastructure dimensions of large-load interconnection: workforce housing, school capacity, healthcare access, water system adequacy, transportation infrastructure, and the long-term viability of host communities that absorb facilities consuming as much electrical capacity as mid-sized cities.",
+      "concern": "Community infrastructure impacts on host communities are absent from the docket record",
+      "bins": [
+        "topic:community-infrastructure-gap"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The dominant tension in the docket record is the contest between federal and state regulatory authority.",
+      "concern": "Federal-state jurisdictional contest defines the docket",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "every one of the nineteen state public utility commissions that individually filed comments either opposed or expressed significant caution regarding the proposed expansion of federal authority.",
+      "concern": "All state commissions filing comments opposed or questioned FERC jurisdiction expansion",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "durable solutions may require joint state-federal regulation rather than unilateral federal assertion of control.",
+      "concern": "Joint state-federal approach may be needed for legal durability",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "If all proposed developments reached full build-out, the aggregate demand would exceed the state's total existing generation capacity. No other state in the docket faces a comparable ratio of proposed large-load demand to existing generation baseline.",
+      "concern": "Wyoming faces uniquely disproportionate large-load demand relative to its generation baseline",
+      "bins": [
+        "rg:spp",
+        "topic:wyoming-scale"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Wyoming's PSC, overseeing what may be the single most disproportionately affected state in the nation, has not placed its perspective, its concerns, or its existing regulatory tools on the federal record.",
+      "concern": "Wyoming PSC's absence from the federal docket leaves its perspective unrepresented",
+      "bins": [
+        "rg:spp",
+        "topic:wyoming-scale",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "interconnection standards that ignore community-infrastructure capacity produce outcomes that are technically efficient but operationally fragile.",
+      "concern": "Ignoring community infrastructure creates operationally fragile outcomes even when technically compliant",
+      "bins": [
+        "topic:community-infrastructure-gap",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "A facility that secures grid access but locates in a community without adequate workforce housing, schools, healthcare, or water infrastructure will face recruitment failures, local opposition, and political risk that undermine the 'timely and orderly' interconnection the ANOPR is designed to achieve.",
+      "concern": "Community readiness gaps translate directly into interconnection project failures",
+      "bins": [
+        "topic:community-infrastructure-gap",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The community-development dimension is not adjacent to the rulemaking. It is upstream of it.",
+      "concern": "Community infrastructure readiness is a prerequisite for successful interconnection, not an afterthought",
+      "bins": [
+        "topic:community-infrastructure-gap"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The standard does not prescribe outcomes; it provides a structured evaluation methodology that surfaces infrastructure gaps before they become operational constraints or sources of community opposition.",
+      "concern": "The proposed evaluation standard is diagnostic, not prescriptive",
+      "bins": [
+        "topic:community-development-standard"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "federal interconnection rules that do not account for community-infrastructure readiness will produce facilities that are grid-legal but community-fragile.",
+      "concern": "Rulemaking that omits community readiness will yield legally compliant but practically unviable facilities",
+      "bins": [
+        "topic:community-infrastructure-gap",
+        "topic:community-development-standard"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "For state regulators, the implication is that absence from the federal record is not neutrality.",
+      "concern": "State regulators who do not file comments cede influence over the federal framework",
+      "bins": [
+        "aq:jurisdiction",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The legal durability of any FERC action faces scrutiny under the major questions doctrine articulated in West Virginia v. EPA and the elimination of Chevron deference under Loper Bright Enterprises v. Raimondo.",
+      "concern": "Post-Chevron legal environment raises durability risks for FERC's jurisdictional expansion",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "ensuring costs are allocated to the party that causes them is 'a super complicated, involved affair when you're actually doing it.'",
+      "concern": "Cost causation and allocation is practically complex even when the principle is accepted",
+      "bins": [
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal-state authority contest",
+      "stance": "mixed",
+      "description": "The brief describes the central jurisdictional tension without taking a firm side. It notes that all nineteen state commissions that filed either opposed or expressed caution about federal expansion, while data center developers favor a stronger federal role. It flags that post-Chevron legal doctrine raises durability risks for any unilateral FERC assertion and suggests joint state-federal regulation may be the more durable path.",
+      "quote_ids": [
+        2,
+        3,
+        4,
+        6,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation complexity",
+      "stance": "neutral",
+      "description": "The brief notes through a Wyoming PSC official's statement that cost causation allocation is practically difficult, illustrating why the federal rulemaking must grapple with cost questions that state regulators are already finding complex.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study scope must include community",
+      "stance": "support",
+      "description": "The filer argues that interconnection study processes focused purely on electrical infrastructure miss a layer of analysis that determines whether projects succeed in practice. Facilities that pass technical study but land in communities lacking housing, schools, or water capacity face operational failures that undermine the goals of timely and orderly interconnection.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "Wyoming as extreme case",
+      "stance": "neutral",
+      "description": "The brief uses Wyoming, which sits within SPP territory, as the clearest illustration of the community-infrastructure gap. Proposed data center capacity in Wyoming could exceed the state's entire generation baseline, yet the Wyoming PSC did not file in the docket, leaving the most disproportionately affected state without a voice in the federal record.",
+      "quote_ids": [
+        5,
+        6,
+        12
+      ]
+    },
+    {
+      "key": "topic:community-infrastructure-gap",
+      "name": "Docket record misses community impacts",
+      "stance": "mixed",
+      "description": "The core argument of the filing is that the 3,500-page docket record is organized around jurisdiction, cost allocation, and study timelines but contains no substantive treatment of workforce housing, schools, healthcare, water, or transportation impacts on host communities. This gap is characterized as a structural deficiency that will produce grid-legal but operationally fragile outcomes.",
+      "quote_ids": [
+        1,
+        7,
+        8,
+        9,
+        11
+      ]
+    },
+    {
+      "key": "topic:wyoming-scale",
+      "name": "Wyoming disproportionate exposure",
+      "stance": "neutral",
+      "description": "The brief documents that proposed Wyoming data center projects could collectively exceed the state's roughly 10,200 MW generation capacity, a ratio unmatched by any other state in the docket, and that the Wyoming PSC's absence from the federal record means this exposure is invisible to FERC.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:community-development-standard",
+      "name": "Ten-dimension evaluation framework",
+      "stance": "support",
+      "description": "Maven Solutions proposes a Polar-Grade Community-Development Standard covering ten dimensions from electrical infrastructure and water systems to workforce housing, schools, healthcare, and lifecycle planning. The standard is offered as a diagnostic evaluation tool for interconnection planning, not a prescriptive regulatory mandate.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": [
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

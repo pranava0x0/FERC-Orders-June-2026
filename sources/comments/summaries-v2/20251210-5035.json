@@ -1,0 +1,346 @@
+{
+  "accession": "20251210-5035",
+  "filer": "The Thermal Battery Alliance",
+  "org_type": "clean_energy",
+  "filed": "12/10/2025",
+  "source_text": "sources/comments/files/20251210-5035__The-Thermal-Battery-Alliance/Thermal Battery Alliance_RM26-4-000_Reply_Comments.txt",
+  "overall_summary": "The Thermal Battery Alliance urges FERC to require every jurisdictional transmission provider to offer at least one non-firm network transmission service option for large flexible loads, using a guidelines-based approach that sets minimum standards while allowing regional variation. The filing argues that flexible loads like thermal energy storage do not impose peak-driven infrastructure costs and should not be allocated upgrades as if they were firm, and that only a Commission directive can ensure consistent access across regions rather than a patchwork of voluntary RTO efforts.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "commenters overwhelmingly agree that large loads capable of providing durable, enforceable flexibility should be eligible for expedited interconnection pathways",
+      "concern": "broad record support for expedited interconnection for flexible loads",
+      "bins": [
+        "pr:flex",
+        "pr:study",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "such expedited treatment is only feasible when the interconnecting load takes service on a non‑firm or conditional basis",
+      "concern": "non-firm service is a precondition for expedited interconnection",
+      "bins": [
+        "pr:flex",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the absence of a clear, Commission‑directed, non‑firm service option risks perpetuating unreasonable and inefficient outcomes, including the misallocation of upgrade costs to loads that do not contribute to system peaks",
+      "concern": "without federal direction, flexible loads face unjust cost allocation",
+      "bins": [
+        "pr:cost",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "TBA urges the Commission to require every jurisdictional transmission provider to offer at least one non‑firm network transmission service option tailored to large flexible loads",
+      "concern": "core ask: mandatory non-firm transmission service offering",
+      "bins": [
+        "pr:flex",
+        "pr:cost",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "only loads that are \"completely curtailable or dispatchable\" should qualify for expedited interconnection study treatment, underscoring that the depth of flexibility determines whether a project can be evaluated without peak-driven upgrades",
+      "concern": "CAISO evidence that full curtailability is the threshold for expedited study",
+      "bins": [
+        "pr:study",
+        "pr:flex",
+        "aq:expedited",
+        "rg:caiso"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "NYISO also identifies the development of \"Flexible Load models for Large Loads\" as a priority in its ongoing internal work plan—a clear recognition that formal modeling constructs are needed to appropriately study and integrate flexible load",
+      "concern": "NYISO is developing flexible load modeling as a near-term priority",
+      "bins": [
+        "pr:study",
+        "rg:nyiso"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "SPP's comments provide perhaps the clearest illustration of workable non-firm constructs, as the RTO is already pursuing tariff revisions to create the Conditional High Impact Large Load Service (\"CHILLS\") and the Price Adaptive Load Service (\"PALS\")",
+      "concern": "SPP's CHILLS and PALS are live examples of conditional non-firm service",
+      "bins": [
+        "pr:flex",
+        "aq:hybridrights",
+        "rg:spp",
+        "topic:tariff-reform"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "a Commission requirement is needed to ensure that all transmission providers offer such a product, rather than relying on voluntary regional experimentation",
+      "concern": "voluntary approaches produce an uneven patchwork; federal mandate needed",
+      "bins": [
+        "pr:flex",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "carefully tailored guidelines that set forth clear minimum standards for non-firm transmission service offerings would offer significant benefits",
+      "concern": "guidelines-based minimum standards are preferable to a uniform pro forma tariff",
+      "bins": [
+        "pr:flex",
+        "topic:tariff-reform"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "customers with non-firm withdrawal rights do not impose the same peak-driven infrastructure needs as firm network integration transmission service (\"NITS\") customers",
+      "concern": "non-firm loads have lower cost causation than firm loads",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the Commission should require that non-firm loads not be assigned costs for upgrades based on hours in which they are contractually barred from taking service",
+      "concern": "upgrade costs must exclude hours when loads are curtailed under contract",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "non-firm eligibility must be tied to tangible operational characteristics",
+      "concern": "eligibility for non-firm service must be grounded in verifiable asset-backed flexibility",
+      "bins": [
+        "pr:flex",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "SPP or the Transmission Owner may curtail load \"during critical peaking grid events,\" and the customer must comply immediately or face unreserved-use penalties",
+      "concern": "PALS requires immediate curtailment compliance with financial penalties for non-performance",
+      "bins": [
+        "pr:flex",
+        "rg:spp",
+        "topic:curtailment-enforcement"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "non-firm loads must be modeled in interconnection, transmission service, and planning studies consistent with their curtailment rights",
+      "concern": "planning studies must reflect curtailment commitments across all study types",
+      "bins": [
+        "pr:study",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "we continue to believe that providing non-firm network transmission service to transmission-connected large loads falls squarely within the Commission's jurisdiction over transmission in interstate commerce",
+      "concern": "TBA asserts FERC has jurisdiction over non-firm transmission service to large loads",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "clarifying the ability of thermal energy storage resources to purchase electricity at wholesale for conversion and resale as thermal energy does not erode state jurisdiction",
+      "concern": "wholesale transaction rights for TES do not intrude on state retail authority",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:tes-wholesale-rights"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Non-Firm Service for Flexible Loads",
+      "stance": "support",
+      "description": "TBA's central ask is a mandatory non-firm network transmission service option at every jurisdictional transmission provider. The filing argues that flexible loads like thermal energy storage can curtail during peaks and therefore should not be treated as firm, and that a Commission directive is needed to prevent a regional patchwork. SPP's CHILLS and PALS are cited as proof of administrative feasibility.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        9,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Flexible Load Modeling in Studies",
+      "stance": "support",
+      "description": "TBA supports requiring that interconnection, transmission, and planning studies reflect the curtailment commitments of non-firm loads. NYISO's development of flexible load models and CAISO's curtailability threshold are cited as evidence that RTOs recognize this need.",
+      "quote_ids": [
+        1,
+        5,
+        6,
+        14
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Allocation Tied to Peak Contribution",
+      "stance": "support",
+      "description": "TBA argues that non-firm loads do not cause peak-driven infrastructure needs and must not be allocated upgrade costs based on hours when they are contractually barred from taking service. This directly addresses state commission concerns about cost shifts to retail customers.",
+      "quote_ids": [
+        3,
+        4,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Study Assumptions Match Curtailment Rights",
+      "stance": "support",
+      "description": "TBA calls for consistent application of non-firm assumptions across all study types so that planning outcomes reflect actual load behavior rather than conservative firm-load assumptions.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC Jurisdiction Over Non-Firm Service",
+      "stance": "support",
+      "description": "TBA asserts that providing non-firm network transmission service to transmission-connected large loads is squarely within FERC's jurisdiction and that clarifying wholesale transaction rights for thermal energy storage does not erode state retail authority.",
+      "quote_ids": [
+        8,
+        15,
+        16
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Non-Firm Conditional Service Rights",
+      "stance": "support",
+      "description": "TBA supports creating a conditional, non-firm service right that allows flexible loads to interconnect quickly by accepting curtailment during peaks, drawing on SPP's CHILLS and PALS as concrete models.",
+      "quote_ids": [
+        2,
+        4,
+        7
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Pathway Requires Non-Firm Status",
+      "stance": "support",
+      "description": "TBA argues that expedited interconnection is only feasible for loads on a non-firm or conditional basis, and that the record supports limiting expedited study treatment to fully curtailable or dispatchable loads.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Upgrade Cost Exemption for Non-Firm Loads",
+      "stance": "support",
+      "description": "TBA recommends that non-firm loads be exempted from upgrade costs allocated on the basis of peak contributions they do not make, aligning cost responsibility with actual system use during non-peak hours.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Asset-Backed Flexibility as Eligibility Gate",
+      "stance": "support",
+      "description": "TBA recommends that non-firm service eligibility be tied to tangible operational characteristics such as thermal storage capacity, process flexibility, or battery backing, rather than self-reported flexibility claims.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "rg:caiso",
+      "name": "CAISO Curtailability Requirement",
+      "stance": "neutral",
+      "description": "TBA cites CAISO's position that only fully curtailable or dispatchable loads should qualify for expedited study as evidence supporting a strict eligibility threshold for non-firm service.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "rg:nyiso",
+      "name": "NYISO Flexible Load Modeling Work",
+      "stance": "neutral",
+      "description": "TBA cites NYISO's 2026 initiative to develop flexible load models as confirmation that formal study constructs are needed and that RTOs are moving in this direction.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP CHILLS and PALS as Templates",
+      "stance": "support",
+      "description": "TBA points to SPP's active development of CHILLS and PALS as the clearest existing illustration of workable conditional non-firm service, including curtailment enforcement and penalty provisions.",
+      "quote_ids": [
+        7,
+        13
+      ]
+    },
+    {
+      "key": "topic:tariff-reform",
+      "name": "Guidelines Over Pro Forma Tariff",
+      "stance": "support",
+      "description": "TBA recommends a guidelines-based approach rather than a uniform pro forma tariff, arguing it can be adopted faster, preserves regional variation, and sets minimum standards without over-prescribing implementation.",
+      "quote_ids": [
+        7,
+        9
+      ]
+    },
+    {
+      "key": "topic:curtailment-enforcement",
+      "name": "Immediate Compliance and Penalty Rules",
+      "stance": "support",
+      "description": "TBA endorses enforceable curtailment rules with immediate compliance requirements and financial penalties for non-performance, citing the PALS design as a workable template.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:tes-wholesale-rights",
+      "name": "Wholesale Transaction Rights for TES",
+      "stance": "support",
+      "description": "TBA argues that thermal energy storage should receive the same wholesale transaction rights as battery storage, and that clarifying this does not erode state retail jurisdiction.",
+      "quote_ids": [
+        16
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "hybridrights",
+      "expedited",
+      "upgradecost",
+      "threshold"
+    ],
+    "pr": [
+      "flex",
+      "study",
+      "cost",
+      "proximate"
+    ],
+    "rg": [
+      "caiso",
+      "nyiso",
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

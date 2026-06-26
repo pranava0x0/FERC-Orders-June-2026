@@ -1,0 +1,281 @@
+{
+  "accession": "20251121-5031",
+  "filer": "Verrus LLC",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5031__Verrus-LLC/Verrus ANOPR Comments.txt",
+  "overall_summary": "Verrus, a developer of asset-backed flexible hyperscale data centers, supports FERC jurisdiction over large load interconnection and urges a rule built on four reforms: a formal flexible load subclass with M&V requirements, a standardized queue with a fast-track lane for verified flexible loads, recognition of flexible loads as reliability resources in planning and cost allocation, and credit requirements tied to actual stranded-cost exposure rather than theoretical upgrade costs.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Flexible large loads represent a technology solution that can uniquely speed interconnection time, maximize the use of the grid we have, while also providing a distinct set of benefits to grid operators and resource adequacy planners.",
+      "concern": "Flexible loads can accelerate interconnection and provide grid benefits not recognized by current rules",
+      "bins": [
+        "pr:flex",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Today, the benefits of load flexibility are neither accounted for nor compensated. As a result, flexible resources are discouraged from the market and cannot practically be used to accelerate interconnection times or to protect consumers from the costs of load growth.",
+      "concern": "Current framework fails to value flexibility, discouraging grid-supportive resources",
+      "bins": [
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "In some jurisdictions, access depends more on negotiations, relationships, or economic-development discretion than on objective, system-based criteria. This uncertainty makes it difficult for emerging flexible-load developers to plan projects, creates inefficiency for utilities, and risks allowing priority to be determined by factors other than measurable system benefit and equitable treatment of all consumers.",
+      "concern": "Inconsistent non-federal interconnection rules create discrimination risks and planning uncertainty",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The Commission should establish a uniform national baseline that guarantees: Fair access: all large-load customers—regardless of affiliation or market power—must be subject to transparent, nondiscriminatory standards.",
+      "concern": "Federal rules should ensure non-discriminatory access for all large load customers",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The Commission should establish a clear, standardized definition of 'flexible load' as an asset-backed, verifiable, and dispatchable demand capable of modulating consumption in coordination with the transmission provider or balancing authority throughout a long-term commitment.",
+      "concern": "FERC should create a formal flexible load definition tied to physical, long-term capability",
+      "bins": [
+        "aq:threshold",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Flexibility must be physical, durable, and measurable—not merely theoretical or price-responsive. The defining characteristic should be the presence of on-site assets such as battery energy storage, power-flow controls, or other infrastructure that enables sustained, repeatable flexibility over decades, not just seasonal participation.",
+      "concern": "Flexible load qualification must rest on physical infrastructure, not behavioral response",
+      "bins": [
+        "aq:threshold",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Flexible loads that meet this definition should also be allowed to nominate operational flexibility commitments in the study process that allow the Transmission Provider to avoid, reduce, or defer network upgrades, thereby accelerating interconnection and reducing system costs.",
+      "concern": "Flexible loads should be able to use curtailment commitments to reduce or defer network upgrade costs in studies",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The Commission should require transmission providers to adopt large load interconnection procedures that: Apply uniform criteria for readiness and advancement. Prohibit any discretionary reprioritization or selective acceleration by utilities. Require public reporting of queue timelines and outcomes to maintain accountability.",
+      "concern": "Standardized, transparent queue procedures are needed to prevent discriminatory utility discretion",
+      "bins": [
+        "pr:study",
+        "topic:queue-transparency"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The Commission should require a Fast-Lane Study Track for verified flexible loads, using shorter study timelines and modeling that accounts for their ability to curtail or shift load and to operate on-site resources.",
+      "concern": "Flexible loads with verified capabilities should get an expedited study track",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The Commission should require transmission providers to explicitly model flexible-load curtailment potential in their base-case and sensitivity analyses so that flexibility is valued in interconnection studies with respect to network upgrades, and in the studies that underlie local and regional transmission planning.",
+      "concern": "Planning studies must explicitly model flexible load curtailment to avoid over-assigning upgrade costs",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Credit assurance should protect ratepayers from stranded-cost risk—not serve as a barrier to participation. Today, many utilities require deposits equal to multiple years of transmission revenue or theoretical upgrade costs regardless of a project's actual risk profile or contribution to bulk system upgrades. Such rules privilege only the largest incumbents and exclude technically capable but less capitalized entrants.",
+      "concern": "Excessive collateral requirements block innovative entrants without proportionate ratepayer protection",
+      "bins": [
+        "aq:deposits",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Credit requirements should scale with the actual infrastructure spend required to interconnect the large load. As in the generator interconnection process, credit requirements should secure actual interconnection costs, but only during the period of construction when ratepayers are exposed to those costs.",
+      "concern": "Deposits should mirror the generator interconnection model: tied to actual and time-limited exposure",
+      "bins": [
+        "aq:deposits",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Verrus respects the long-standing role of the PJM Independent Market Monitor in safeguarding competitive markets, but disagrees with recent assertions that flexible data centers are a 'regulatory fiction.' That characterization reflects an older conception of demand response as voluntary or behavioral.",
+      "concern": "Verrus pushes back on PJM IMM skepticism of flexible data center reliability claims",
+      "bins": [
+        "rg:pjm",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Traditional demand response typically depends on customer willingness, has limited duration, and can vary year to year. In contrast, asset-backed flexible data centers incorporate physical infrastructure—utility-scale battery storage, automated curtailment systems, real-time telemetry, and programmable power distribution—that enables predictable, dispatchable performance over the full life of the interconnection agreement.",
+      "concern": "Asset-backed flexible loads are fundamentally different from traditional demand response",
+      "bins": [
+        "pr:flex",
+        "aq:hybridrights"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Support Federal Jurisdiction",
+      "stance": "support",
+      "description": "Verrus supports FERC asserting jurisdiction over large load interconnection to replace the current patchwork of state and utility practices. Without federal rules, access depends on negotiations and discretion rather than objective system-benefit criteria, disadvantaging emerging flexible-load developers.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Formal Flexible Load Definition",
+      "stance": "support",
+      "description": "Verrus asks FERC to define a flexible load subclass requiring physical on-site assets (battery storage, power-flow controls) that enable sustained, dispatchable flexibility over the life of the interconnection. The threshold should require a material share of load (e.g., 20 MW or 25%) be curtailable to meet NERC reserve standards.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Fast-Track Study Lane",
+      "stance": "support",
+      "description": "Verrus urges a dedicated expedited study track for verified flexible loads, with shorter timelines and modeling that reflects curtailment capability, so grid-supportive projects move through the queue faster.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Risk-Based Credit Requirements",
+      "stance": "support",
+      "description": "Verrus argues that collateral should match actual stranded-cost exposure during the construction window, mirroring the generator interconnection model. Blanket deposits tied to theoretical upgrade costs exclude less-capitalized innovative entrants without providing proportionate ratepayer protection.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Flexibility to Reduce Upgrade Costs",
+      "stance": "support",
+      "description": "Verrus supports letting flexible loads nominate curtailment commitments in the study process to avoid, reduce, or defer network upgrade assignments, lowering interconnection costs and accelerating timelines.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Flexible Loads Distinct from Demand Response",
+      "stance": "support",
+      "description": "Verrus argues that asset-backed flexible data centers are a new reliability resource class, not traditional demand response. Their flexibility is engineered into physical infrastructure and is persistent over the full interconnection term, not voluntary or seasonal.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Recognize Flexibility as Reliability Resource",
+      "stance": "support",
+      "description": "Verrus contends that current rules treat all large loads as cost drivers and ignore the reliability value of engineered, asset-backed flexibility. FERC should require RTOs and transmission providers to model and compensate flexible load curtailment as a reliability resource in planning and cost allocation.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Standardized Queue with Flexibility Modeling",
+      "stance": "support",
+      "description": "Verrus wants transmission providers to file transparent, uniform large load interconnection procedures that prohibit discretionary utility reprioritization, require public reporting of queue outcomes, and explicitly model flexible load curtailment in interconnection and planning studies.",
+      "quote_ids": [
+        3,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Align Costs with Actual Grid Impact",
+      "stance": "support",
+      "description": "Verrus supports cost allocation that reflects what flexible loads actually cause. Because flexible loads can avoid or defer network upgrades through curtailment commitments, their upgrade assignments and credit requirements should be reduced accordingly.",
+      "quote_ids": [
+        2,
+        7,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM IMM Skepticism Rebuttal",
+      "stance": "oppose",
+      "description": "Verrus disagrees with the PJM Independent Market Monitor's characterization of flexible data center loads as a regulatory fiction. Verrus argues the IMM's view reflects an outdated demand response conception and does not account for the physical infrastructure backing asset-backed flexible loads.",
+      "quote_ids": [
+        10,
+        13
+      ]
+    },
+    {
+      "key": "topic:queue-transparency",
+      "name": "Transparent Queue Reporting",
+      "stance": "support",
+      "description": "Verrus calls for utilities to publicly post queue timelines and outcomes and to prohibit selective acceleration or discretionary reprioritization. Public accountability in queue management is presented as a prerequisite to non-discriminatory access.",
+      "quote_ids": [
+        8
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "expedited",
+      "deposits",
+      "upgradecost",
+      "hybridrights"
+    ],
+    "pr": [
+      "flex",
+      "study",
+      "cost"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
