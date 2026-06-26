@@ -1,0 +1,227 @@
+{
+  "accession": "20251121-5424",
+  "filer": "Consumers Energy Company",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5424__Consumers-Energy-Company/20251121 RM26-4 Consumers Energy Initial Comments.txt",
+  "overall_summary": "Consumers Energy, a Michigan transmission owner and MISO member, raises four concerns about the ANOPR: the jurisdictional basis for regulating large load interconnection is legally untested and risks overreaching into retail jurisdiction; the 20 MW threshold is too low and should be raised to at least 100 MW; proposals like the option to build and joint study changes could harm resource adequacy and generation interconnection timelines; and the Commission should not rush a rulemaking of this complexity, leaving open whether a sweeping federal rule is even the right vehicle.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "interconnection of retail load has not, in the past, been considered to be a 'critical component of open access transmission service.' If the Commission decides to assert such jurisdiction, it would be an untested departure from historical practice.",
+      "concern": "Asserting FERC jurisdiction over large load interconnection as open-access transmission service is legally untested",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the Commission should clarify that any potential assertion of Commission jurisdiction over the interconnection of large load customers to the transmission system will not change the retail nature of sales to such customers or result in undue preference to them.",
+      "concern": "FERC should confirm jurisdictional action does not alter retail sales classification or create undue preference",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "a 20 MW threshold for load interconnections would capture a myriad of customers that come nowhere close to the data centers and other major industrial loads driving the ANOPR's proposed reforms.",
+      "concern": "20 MW threshold is too broad and sweeps in ordinary retail customers unrelated to data centers",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Consumers Energy submits that a 100 MW nationwide threshold would be more appropriate than the ANOPR's 20 MW proposal.",
+      "concern": "Recommends raising the threshold to 100 MW",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the Company is concerned that allowing large load customers the option to build may carry unintended reliability risks given that many large load customers are data centers or other large industrial customers that lack the industry expertise required to ensure safe and reliable grid operations.",
+      "concern": "Large load customers lack expertise for safe grid operations, making an option to build risky",
+      "bins": [
+        "aq:protection",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "large load customers should not be entitled to the same option to build as generation owners.",
+      "concern": "Option to build for load customers is not appropriate given their different status from generators",
+      "bins": [
+        "aq:hybridrights",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Commission should carefully evaluate how such changes could impact and potentially slow the interconnection of new generation that the Administration has made a priority.",
+      "concern": "ANOPR study process changes could delay generation interconnection timelines",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Certain ANOPR proposals, such as the notion that 'the interconnection study of large loads that agree to be curtailable and hybrid facilities that agree to be curtailable and dispatchable should be expedited,' will burden RTO/ISO resources that are also working to perform timely studies of new generation.",
+      "concern": "Expedited large load study tracks burden RTO/ISO capacity already strained by generation interconnection work",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "rg:miso"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "attempting to finalize a rulemaking of this potential magnitude within approximately six months may compromise the end result and increase the risk of legal challenges concerning the Commission's authority and the rule's legality.",
+      "concern": "A six-month rulemaking timeline is too short for a proceeding of this legal complexity",
+      "bins": [
+        "topic:process-pace"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "not prejudging the best approach to advancing goals set forth in the ANOPR may mean that the Commission determines that a sweeping federal rule is not the best path forward, particularly if it may frustrate state initiatives that are currently in place or being developed.",
+      "concern": "A sweeping federal rule may not be the right vehicle and could conflict with state-level initiatives",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:process-pace"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "RTOs, ISOs, transmission owners, and generation owners have all worked diligently to incorporate the reforms included in Order No. 2023 and need regulatory certainty moving forward.",
+      "concern": "Stakeholders need regulatory stability after the Order No. 2023 implementation effort",
+      "bins": [
+        "pr:study",
+        "topic:regulatory-stability"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Untested retail jurisdiction claim",
+      "stance": "oppose",
+      "description": "Consumers Energy argues that asserting federal jurisdiction over large load interconnection as open-access transmission service is a departure from historical practice and risks encroaching on the states' authority over retail electric sales. The filer asks FERC to confirm that any jurisdictional action will not alter the retail classification of sales to large load customers or create undue preference.",
+      "quote_ids": [
+        1,
+        2,
+        10
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Raise threshold to 100 MW",
+      "stance": "oppose",
+      "description": "The filer contends the proposed 20 MW threshold is far too low and would capture ordinary retail customers unrelated to data centers. Consumers Energy recommends a 100 MW nationwide threshold to keep any reforms narrowly targeted to the problem the ANOPR seeks to address.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint study could slow generation",
+      "stance": "mixed",
+      "description": "Consumers Energy is concerned that changes to study processes for large loads and hybrid facilities could slow the interconnection of new generation, which the Administration has made a priority. The filer urges the Commission to evaluate those impacts carefully before directing any changes.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Option to build not appropriate for load",
+      "stance": "oppose",
+      "description": "The filer argues that large load customers are not analogous to generation owners and should not receive an equivalent option to build interconnection facilities. Extending that right to data centers and industrial customers without grid expertise creates reliability risk.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Reliability risk from load-side build option",
+      "stance": "oppose",
+      "description": "Consumers Energy warns that large load customers lack the industry expertise generators have accumulated over decades, making an option to build interconnection facilities a reliability hazard. The Commission lacks sufficient record to support extending that option.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited track burdens RTO study resources",
+      "stance": "oppose",
+      "description": "The filer argues that an expedited study track for curtailable large loads and hybrids will draw on the same RTO/ISO resources needed for generation interconnection studies, potentially compounding delays rather than alleviating them.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study changes risk generation delays",
+      "stance": "oppose",
+      "description": "Consumers Energy cautions that several ANOPR study proposals could slow generation interconnection timelines at a moment when the Administration has declared new dispatchable generation a priority. The filer urges targeted, careful changes and points to MISO's existing ERAS expedited process as evidence that the region is already under study-queue pressure.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO queue capacity at risk",
+      "stance": "oppose",
+      "description": "As a MISO member, Consumers Energy notes that MISO has already implemented reforms such as the ERAS process to speed generation interconnection. Adding expedited large load study tracks would burden MISO's limited study resources and could undercut those improvements.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:process-pace",
+      "name": "Rulemaking timeline too compressed",
+      "stance": "oppose",
+      "description": "Consumers Energy argues that finalizing a rule of this magnitude in roughly six months risks a poorly reasoned outcome and legal challenges. The filer compares the proceeding to Order Nos. 1000 and 2023, each of which took more than 13 months, and suggests a sweeping federal rule may not even be the right instrument.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:regulatory-stability",
+      "name": "Stakeholders need post-2023 stability",
+      "stance": "neutral",
+      "description": "The filer notes that RTOs, ISOs, transmission owners, and generators have invested heavily in implementing Order No. 2023 reforms and need regulatory certainty before facing another wave of interconnection process changes.",
+      "quote_ids": [
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "hybridrights",
+      "protection",
+      "expedited"
+    ],
+    "pr": [
+      "study"
+    ],
+    "rg": [
+      "miso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
