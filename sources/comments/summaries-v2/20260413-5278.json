@@ -1,0 +1,173 @@
+{
+  "accession": "20260413-5278",
+  "filer": "National Association of Regulatory Utility Commissioners",
+  "org_type": "state_commission",
+  "filed": "04/13/2026",
+  "source_text": "sources/comments/files/20260413-5278__National-Association-of-Regulatory-Utility-Commiss/NARUC Letter to FERC RM26-4 FINAL.txt",
+  "overall_summary": "NARUC opposes federal regulation of large load interconnections, arguing state commissions have the expertise, authority, and regulatory tools to handle interconnections efficiently while protecting other ratepayers. The letter documents six state commission examples showing effective best practices already in place, contends there is no regulatory gap, and warns that federal preemption will impede state adaptation and risk cost-shifting.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "state commissions are in the best position to ensure rational and efficient interconnections of new large loads while protecting all customers (including residential, commercial and large manufacturing customers) from improper cost-shifts or unfair interconnection processes",
+      "concern": "State commissions best positioned for large load interconnection",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Federal regulation of large load interconnections will impede states' abilities to (i) adapt quickly to industry changes or region-specific challenges as they emerge, and (ii) adequately protect the affordability of service to other retail customers",
+      "concern": "Federal regulation will impede state adaptation and ratepayer protection",
+      "bins": [
+        "pr:cost",
+        "topic:federal-preemption"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "State commissions have the authority, regulatory tools, and unique expertise necessary to allocate transmission costs associated with large load interconnections directly to those end-use customers. There is no regulatory gap.",
+      "concern": "No regulatory gap; states have tools to allocate transmission costs",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "state commissions continue to review and approve either utility tariff language or contracts between the utility and large load to ensure efficient non-discriminatory interconnection, while also balancing and protecting the interests of other retail ratepayers",
+      "concern": "State commissions actively protecting all ratepayers through tariff review",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "states are moving with speed to create best practices either by tariff or contract that work within their specific regions and regulatory structures",
+      "concern": "States creating region-specific best practices",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "If FERC issues different federal rules for interconnection of data center loads, this may lead to increased costs or discriminatory procedures for other important end-use customers",
+      "concern": "Federal data center rules risk cost-shifting and discrimination against other customers",
+      "bins": [
+        "pr:cost",
+        "topic:data-center-discrimination"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "By necessity, processes within RTOs, relying as they do on stakeholder consultation, are far less expeditious. So too with FERC, where proceedings under Section 206 of the Federal Power Act are not subject to the statutory deadlines faced by many state commissions",
+      "concern": "State commission processes faster than RTO and FERC processes",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "changing the regulatory regime now will result in further uncertainty in the interconnection process and potentially unwind the state initiatives already put in place",
+      "concern": "Federal regulation will create uncertainty and unwind existing state initiatives",
+      "bins": [
+        "topic:federal-preemption"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "state commissions clearly have the ability to perform cost of service studies and determine the cost allocation of transmission costs among retail ratepayers",
+      "concern": "States have ability to allocate transmission costs via cost-of-service studies",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "federal action on end-use transmission cost allocation may hinder state's abilities to ensure cost allocation among all customer classes is fair and reasonable",
+      "concern": "Federal action may hinder fair cost allocation across customer classes",
+      "bins": [
+        "pr:cost",
+        "topic:federal-preemption"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Adhering to this generally well understood delineation of responsibilities will help avoid unintended consumer consequences that could arise from a blurring of that line",
+      "concern": "Maintaining federal-state jurisdictional roles prevents unintended harms",
+      "bins": [
+        "topic:fed-state-jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation authority and ratepayer protection",
+      "stance": "oppose",
+      "description": "NARUC contends that state commissions have existing authority, regulatory tools, and expertise to directly allocate transmission costs to large load end-use customers. The letter warns that federal intervention risks impeding state cost allocation, creating cost-shifting to other ratepayers, and hindering fair cost allocation across customer classes. States have demonstrated ability to conduct cost-of-service studies and craft protective tariff terms.",
+      "quote_ids": [
+        3,
+        4,
+        6,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "State processes faster and more adaptive than federal oversight",
+      "stance": "oppose",
+      "description": "NARUC argues state commissions can act with speed and agility to develop best practices tailored to regional needs, whereas RTO stakeholder processes and FERC Section 206 proceedings lack statutory deadlines and move slowly. State commissions are positioned to ensure rational, efficient, non-discriminatory interconnections while protecting all customer classes.",
+      "quote_ids": [
+        1,
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "key": "topic:federal-preemption",
+      "name": "Federal preemption risks and regulatory uncertainty",
+      "stance": "oppose",
+      "description": "NARUC opposes federal regulation as preemptive, arguing it will impede state adaptive capacity, create regulatory uncertainty, unwind state initiatives already in place, and hinder fair cost allocation. The filing emphasizes risk of blurring federal-state jurisdictional lines.",
+      "quote_ids": [
+        2,
+        8,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "topic:data-center-discrimination",
+      "name": "Risk of federal data center rules creating cost-shifting to other customers",
+      "stance": "oppose",
+      "description": "NARUC warns that different federal rules specific to data centers may lead to increased costs or discriminatory interconnection procedures for other large end-use customers, such as manufacturers. This could undermine state cost allocation protections for other customer classes.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:fed-state-jurisdiction",
+      "name": "Maintaining federal-state jurisdictional delineation",
+      "stance": "neutral",
+      "description": "NARUC emphasizes the importance of adhering to well-understood federal-state jurisdictional boundaries to avoid unintended consumer consequences from blurring regulatory responsibilities.",
+      "quote_ids": [
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
