@@ -1,0 +1,362 @@
+{
+  "accession": "20251121-5396",
+  "filer": "Southern Environmental Law CenterAppalachian VoicesNorth Carolina Sustainable Energy Association ,South Carolina Coastal Conservation League ,Southern Alliance for Clean Energy ,",
+  "org_type": "enviro",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5396__Southern-Environmental-Law-CenterAppalachian-Voice/Southeast PIOs Initial Comments.txt",
+  "overall_summary": "Southeast environmental and clean-energy public interest organizations support FERC asserting jurisdiction over large load interconnections to the transmission system as a floor against unjust cost shifts to residential ratepayers, but urge the Commission to complement rather than disrupt state retail regulation and to take adequate time to resolve the novel issues involved. They call for the Commission to make the required Section 206 finding by documenting that current cost allocation broadly socializes network upgrade costs caused by large loads, that speculative load requests inflate forecasts and risk stranded investment, and that the lack of standardized procedures is unjust and unreasonable. They recommend applying Order No. 2023-style financial commitments, cluster studies, and 100-percent cost responsibility for large loads uniformly across both RTO and non-RTO regions.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "increased transmission costs and heightened reliability risks will fall disproportionately on residential ratepayers, further straining their ability to afford electric service that they find to be less and less reliable.",
+      "concern": "large load growth imposes disproportionate costs on residential ratepayers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the Commission must find that the procedures governing the physical connection of large loads to the transmission system, the agreements establishing those arrangements, and the allocation of cost responsibility for the associated upgrades are unjust unreasonable or unduly discriminatory.",
+      "concern": "Section 206 predicate finding must cover connection procedures, agreements, and cost allocation",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the costs of network upgrades caused by large load interconnections are generally socialized across all customers.",
+      "concern": "current practice spreads large-load network upgrade costs to all customers without distinction",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "That figure represents 75.9 percent of the $7.595 billion total cost of the entire Dominion transmission plan.",
+      "concern": "data-center-driven upgrades account for the large majority of Dominion's transmission capital plan",
+      "bins": [
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the Commission may find that existing practices that broadly allocate the costs of network upgrades caused by large load interconnections are unjust, unreasonable, and unduly discriminatory because they neither account for the unique transmission needs created by large load interconnections nor allocate costs roughly commensurate with benefits.",
+      "concern": "broad socialization of large-load upgrade costs violates the cost-causation principle",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the lack of uniform conditions placed on large load interconnections to the transmission system fails to limit speculative interconnection requests, which could lead to overbuilding, a heightened risk of stranded investment, and unjust and unreasonable rates borne by transmission customers.",
+      "concern": "absence of uniform conditions encourages speculative requests and stranded-asset risk",
+      "bins": [
+        "pr:study",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "there is ample room for the Commission to exercise jurisdiction over some aspects of large load interconnection to the transmission system.  Doing so would effectively set a nationwide floor of protection against unwarranted cost shifts.",
+      "concern": "FERC jurisdiction over large load interconnection should set a nationwide cost-protection floor",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "the Commission must not restrict the states' ability to regulate large loads in a stricter manner if they so choose.",
+      "concern": "FERC rules should serve as a floor, not a ceiling, on state regulation",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the Commission must ensure that all terms and conditions apply strictly to the transmission-related aspects of the interconnection.",
+      "concern": "FERC must confine its rules to transmission aspects and not intrude on retail service terms",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "the Commission must extend the applicability of its reforms to RTO/ISO areas and non-RTO/ISO areas alike.",
+      "concern": "large-load interconnection rules must apply uniformly to both RTO and non-RTO regions",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:rto-nonrto-uniformity"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The Commission should implement study deposits, readiness deposits, and withdrawal penalties in any standardized large load interconnection procedures.",
+      "concern": "financial commitments from Order No. 2023 should be adopted for large load interconnection",
+      "bins": [
+        "pr:study",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "the Commission should require large loads to pay higher study deposits and withdrawal penalties than those applicable to generator interconnections.",
+      "concern": "large loads need stronger financial deterrents than generators because they are less price-sensitive",
+      "bins": [
+        "pr:study",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the Commission should adopt a default policy whereby large loads pay 100 percent of the costs for transmission upgrades required for their interconnections.",
+      "concern": "large loads should bear full cost of network upgrades they cause as the default rule",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "The Commission should allow interconnection customers to exercise the Option to Build and initially fund network upgrades.",
+      "concern": "large load customers should be permitted to build their own required network upgrades",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "the Commission must be realistic about interconnection timelines.  Currently, large load interconnection can take up to several years in some regions.  Although not perfectly comparable, generation interconnection wait times can also take several years.  Even if flexible interconnection limits the necessary network upgrades, it is simply unrealistic to expect transmission providers to complete interconnection studies for large loads in 60 days.",
+      "concern": "60-day expedited interconnection timeline is unrealistic and would divert resources from existing queues",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "If the Commission allows transmission-connected load to co-locate with generation, it must protect existing ratepayers and other interconnection customers from cost, reliability, and competitive impacts.",
+      "concern": "co-location rules must prevent cost shifts and reliability risks to existing customers",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Rushing this rulemaking without fulsome consideration of the many issues involved could have devastating impacts on costs to customers and grid reliability.",
+      "concern": "the Commission should not rush to meet the DOE April 2026 deadline",
+      "bins": [
+        "topic:rulemaking-pace"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "the Commission should require rigorous compliance with Order No. 1920.",
+      "concern": "Order No. 1920 transmission planning compliance should accompany any large-load interconnection rule",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "the Commission should also establish load forecasting requirements that allow transmission providers to mitigate the uncertainty in large load demand forecasting for large loads to ensure just and reasonable rates.",
+      "concern": "FERC should set load forecasting standards to reduce speculative projections and stranded-asset risk",
+      "bins": [
+        "pr:study",
+        "topic:load-forecasting"
+      ]
+    },
+    {
+      "id": 20,
+      "text": "the Commission should require transmission providers interconnecting large loads to consider use of Advanced Transmission Technologies (ATTs) before large scale network upgrades.",
+      "concern": "ATTs should be considered before new transmission build-out to reduce costs and speed interconnection",
+      "bins": [
+        "pr:cost",
+        "topic:advanced-transmission-tech"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal floor, state authority preserved",
+      "stance": "support",
+      "description": "The filers support FERC asserting jurisdiction over large load physical interconnections to interstate transmission facilities as a nationwide cost-protection floor. They argue the FPA authorizes this without intruding on state authority over retail sales, but FERC must not restrict states from imposing stricter requirements and must confine its rules strictly to transmission-related terms.",
+      "quote_ids": [
+        2,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Threshold informed by state practice",
+      "stance": "neutral",
+      "description": "The filers do not endorse a specific MW threshold but offer considerations: the 20 MW Order No. 2003 analogy is informative but not controlling, state utility thresholds in the Southeast range from 25 MW to 100 MW, and the Commission should also consider load factor alongside size to focus on loads that consistently strain the grid.",
+      "quote_ids": []
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Stronger financial commitments required",
+      "stance": "support",
+      "description": "The filers urge the Commission to adopt study deposits, readiness deposits, and withdrawal penalties modeled on Order No. 2023, and to set them higher for large loads than for generators because large loads are sophisticated and less sensitive to price signals. Site control requirements should also be required before queue entry.",
+      "quote_ids": [
+        6,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Co-location must protect ratepayers",
+      "stance": "support",
+      "description": "The filers support allowing co-location only with rules that prevent co-located loads from underpaying for transmission upgrades and services, and that ensure bilateral contracts between large loads and existing generators do not shift costs or jeopardize resource adequacy for other customers.",
+      "quote_ids": [
+        16
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited timeline is unrealistic",
+      "stance": "oppose",
+      "description": "The filers oppose a 60-day expedited interconnection timeline for large loads, arguing it is unrealistic given current multi-year timelines and would divert scarce transmission provider resources away from existing generation interconnection queues, creating additional delays and potential discrimination.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Large loads pay 100 percent of upgrade costs",
+      "stance": "support",
+      "description": "The filers call for a default rule requiring large loads to bear 100 percent of network upgrade costs they cause, with shared cost recovery available only when the load can demonstrate the upgrade resolves a pre-existing need and provides non-trivial benefits to existing customers. They also support extending the Option to Build to large load interconnection customers.",
+      "quote_ids": [
+        5,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Standardized study process with financial discipline",
+      "stance": "support",
+      "description": "The filers support adopting Order No. 2023-style cluster studies, financial commitments, and readiness requirements for large load interconnection, and urge the Commission to add load forecasting standards to reduce speculative queue entries. They also call for rigorous compliance with Order No. 1920 transmission planning to accompany any new interconnection rule.",
+      "quote_ids": [
+        6,
+        11,
+        12,
+        18,
+        19
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost causation: large loads pay their share",
+      "stance": "support",
+      "description": "The filers argue that existing cost allocation practices that broadly socialize large-load network upgrade costs violate the cost-causation principle and harm residential ratepayers. They support a default of full cost responsibility for large loads, scrutiny of claimed regional benefits, and requiring ATTs before large-scale infrastructure build-out as a cost-reduction measure.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        13,
+        14,
+        20
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility beneficial but timelines must be realistic",
+      "stance": "mixed",
+      "description": "The filers acknowledge that large load demand flexibility can reduce transmission and generation capacity needs and support encouraging or requiring it. However, they oppose offering expedited interconnection as an exchange because current timelines are already years-long and 60-day study windows are not achievable without harming existing queue participants.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location rules to prevent cost shifts",
+      "stance": "support",
+      "description": "The filers support co-location rules that require accurate identification of costs borne by co-located loads, ensure co-located loads pay applicable transmission service rates, and prevent bilateral contracts with existing generators from raising capacity prices or reducing resource adequacy for other ratepayers.",
+      "quote_ids": [
+        16
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM data-center cost evidence",
+      "stance": "neutral",
+      "description": "The filers document that data-center-driven transmission upgrades in Dominion's DOM zone account for 75.9 percent of Dominion's $7.595 billion transmission plan and that UCS found $4.3 billion in PJM supplemental projects for data center connections in 2024 alone, illustrating the magnitude of socialized costs in the PJM footprint.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:rto-nonrto-uniformity",
+      "name": "Uniform rules across RTO and non-RTO areas",
+      "stance": "support",
+      "description": "The filers argue that large load impacts on transmission systems and rates occur identically in RTO and non-RTO regions, so differential standards would unduly discriminate and could cause large loads to migrate to whichever jurisdiction offers more favorable terms. FERC should apply its reforms uniformly across all regions.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:rulemaking-pace",
+      "name": "Allow adequate time for this rulemaking",
+      "stance": "support",
+      "description": "The filers urge FERC not to rush to the DOE-set April 2026 final-rule deadline, noting the Commission allowed only 29 days for initial comments versus 75 days for the Order No. 1920 ANOPR, and that these novel, complex issues require more deliberation than a compressed multi-month schedule allows.",
+      "quote_ids": [
+        17
+      ]
+    },
+    {
+      "key": "topic:load-forecasting",
+      "name": "FERC should set load forecasting standards",
+      "stance": "support",
+      "description": "The filers argue that current large load forecasts are systematically overstated due to duplicative requests, utility incentive misalignment, and structural factors like global chip supply constraints, and that FERC should establish forecasting standards to discipline speculation and protect ratepayers from stranded transmission investment.",
+      "quote_ids": [
+        19
+      ]
+    },
+    {
+      "key": "topic:advanced-transmission-tech",
+      "name": "Prioritize ATTs before new transmission build",
+      "stance": "support",
+      "description": "The filers call for the Commission to require transmission providers to consider and prioritize advanced transmission technologies such as dynamic line ratings and reconductoring before approving large-scale network upgrades for large load interconnection, consistent with Order Nos. 1920 and 2023 precedents.",
+      "quote_ids": [
+        20
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "deposits",
+      "hybridrights",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex",
+      "colo"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-26",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

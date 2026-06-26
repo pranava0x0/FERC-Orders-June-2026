@@ -27,7 +27,7 @@
 
   /* stance (reception) */
   --stance-positive: #2f6b3a;
-  --stance-mixed: #8a6d1a;
+  --stance-mixed: #7b6016;
   --stance-negative: #9a3412;
 
   /* provenance tiers */
@@ -266,7 +266,7 @@ a:hover { color: var(--accent-ink); }
 .dir-quote { display: block; font-family: var(--font-serif); font-style: italic; font-size: 13px; color: #3a4753; line-height: 1.35; margin-top: 2px; }
 .reg-cite { display: inline-flex; align-items: baseline; gap: 6px; white-space: nowrap; margin-left: 5px; }
 details.dreg { margin-top: 12px; border-top: 1px solid var(--rule); padding-top: 9px; }
-details.dreg > summary { cursor: pointer; list-style: none; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-ink); }
+details.dreg > summary { cursor: pointer; list-style: none; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-ink); padding: 11px 0; min-height: 44px; display: flex; align-items: center; }
 details.dreg > summary::-webkit-details-marker { display: none; }
 details.dreg > summary::before { content: "▸ "; color: var(--accent); }
 details.dreg[open] > summary::before { content: "▾ "; }
@@ -311,7 +311,7 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 
 /* RM26-4 comment corpus (Discourse tab) */
 .cm-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 12px; }
-@media (min-width: 640px) { .cm-stats { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 640px) { .cm-stats { grid-template-columns: repeat(4, 1fr); } }
 .cm-stat { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 9px 11px; display: flex; flex-direction: column; gap: 2px; }
 .cm-stat .v { font-family: var(--font-serif); font-weight: 700; font-size: 21px; color: var(--masthead); line-height: 1; }
 .cm-stat .l { font-size: 10.5px; color: var(--text-muted); line-height: 1.25; }
@@ -324,6 +324,14 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-bar > span { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
 .cm-note { font-size: 12.5px; color: #2b3744; line-height: 1.45; }
 .cm-eg { display: inline-block; font-size: 10.5px; color: var(--text-muted); background: var(--surface-2); border-radius: 999px; padding: 1px 8px; margin: 0 3px 2px 0; white-space: nowrap; }
+/* respondent-type roster: every organization per camp, collapsed past 10 */
+.cm-egs { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px; align-items: baseline; }
+.cm-egs .cm-eg { margin: 0; white-space: normal; overflow-wrap: anywhere; max-width: 100%; }
+.cm-eg-rest { display: none; }
+.cm-egs.expanded .cm-eg-rest { display: contents; }
+.cm-showmore { font: inherit; font-size: 10.5px; font-weight: 700; color: var(--accent); background: none; border: 1px solid var(--rule-strong); border-radius: 999px; padding: 4px 12px; min-height: 44px; display: inline-flex; align-items: center; cursor: pointer; }
+.cm-showmore:hover { background: #eef3f9; border-color: var(--accent); color: var(--accent-ink); }
+.cm-showmore:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 /* flagship comment cards (read in full) */
 .cm-flagships { display: grid; gap: 11px; }
 .cm-flag { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--accent); border-radius: 0 6px 6px 0; padding: 11px 14px; }
@@ -363,8 +371,10 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-row-date { font-family: var(--font-mono); font-size: 11px; color: var(--accent-ink); flex: none; min-width: 80px; }
 .cm-row-org { font-weight: 700; font-size: 13.5px; color: var(--masthead); }
 .cm-row-type { font-size: 10.5px; color: var(--text-muted); background: var(--surface-2); border-radius: 999px; padding: 1px 9px; }
-.cm-row-link { margin-left: auto; flex: none; font-size: 10.5px; font-weight: 700; text-decoration: none; color: var(--accent); border: 1px solid var(--rule-strong); border-radius: 4px; padding: 1px 7px; }
+.cm-row-link { margin-left: auto; flex: none; font-size: 10.5px; font-weight: 700; text-decoration: none; color: var(--accent); border: 1px solid var(--rule-strong); border-radius: 4px; padding: 3px 8px; }
 .cm-row-link:hover { background: #eef3f9; border-color: var(--accent); color: var(--accent-ink); }
+/* full 44px tap target on touch viewports (kept compact on desktop to preserve list density) */
+@media (max-width: 700px) { .cm-row-link { padding: 10px 12px; min-height: 44px; display: inline-flex; align-items: center; } }
 .cm-row-desc { font-size: 12px; color: #2b3744; line-height: 1.4; margin-top: 4px; }
 .cm-badge { flex: none; font-size: 11px; font-weight: 700; border-radius: 4px; padding: 0 5px; line-height: 1.5; }
 .cm-badge.sum { color: #7a5a12; background: #f6efdb; }
@@ -380,11 +390,49 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-themes.one { grid-template-columns: 1fr; gap: 9px; }
 .cm-bar.prin > span { background: var(--accent-ink); }
 .cm-row-tags { display: flex; align-items: stretch; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
-.cm-tag { font-size: 9.5px; font-weight: 700; border-radius: 3px; padding: 1px 6px; letter-spacing: 0.02em; white-space: nowrap; }
+.cm-tag { font: inherit; font-size: 9.5px; font-weight: 700; border: none; border-radius: 3px; padding: 2px 7px; letter-spacing: 0.02em; white-space: nowrap; cursor: pointer; line-height: 1.5; }
+.cm-tag:hover { filter: brightness(0.94); }
+.cm-tag:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .cm-tag.pr { color: var(--accent-ink); background: #e9f0f8; }
 .cm-tag.rg { color: #5a4a1a; background: #f6efdb; }
 .cm-tagsep { width: 1px; min-height: 13px; background: var(--rule-strong); margin: 0 3px; }
 .cm-tag.aq { color: #2e5d4f; background: #e6f1ec; }
+.cm-empty { background: var(--surface); border: 1px dashed var(--rule-strong); border-radius: 6px; padding: 18px; text-align: center; color: var(--text-muted); font-size: 13.5px; margin-top: 4px; }
+
+/* per-comment audited analysis (expandable on each row) */
+.cm-analysis { margin-top: 8px; border-top: 1px solid var(--rule); }
+.cm-analysis > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; color: var(--accent); padding: 10px 0; min-height: 44px; }
+.cm-analysis > summary::-webkit-details-marker { display: none; }
+.cm-analysis > summary::before { content: "\25B8"; color: var(--accent); transition: transform 0.15s ease; }
+.cm-analysis[open] > summary::before { transform: rotate(90deg); }
+.cm-analysis > summary:hover { color: var(--accent-ink); }
+.cm-analysis > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.cm-analysis-n { font-weight: 400; color: var(--text-muted); font-size: 10.5px; }
+.cm-analysis-sum { font-size: 12.5px; line-height: 1.5; color: var(--ink); margin: 2px 0 9px; }
+.cm-analysis-foot { font-size: 10.5px; color: var(--text-muted); line-height: 1.4; margin: 9px 0 4px; }
+.cm-bins { display: flex; flex-wrap: wrap; gap: 5px; }
+.cm-bin { font-size: 11px; font-weight: 600; border-radius: 4px; padding: 2px 8px; border: 1px solid; border-left-width: 3px; }
+.cm-bin.support { color: var(--stance-positive); border-color: var(--stance-positive); background: #eef5ef; }
+.cm-bin.oppose { color: var(--stance-negative); border-color: var(--stance-negative); background: #f7ece6; }
+.cm-bin.mixed { color: var(--stance-mixed); border-color: var(--stance-mixed); background: #f6efdf; }
+.cm-bin.neutral { color: var(--text-muted); border-color: var(--rule-strong); background: var(--surface-2); }
+
+/* stance map: stacked support / oppose / mixed / no-position per reform principle */
+.cm-stancelegend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 11px; }
+.cm-stancelegend .key { font-size: 11px; color: var(--text-muted); display: inline-flex; align-items: center; gap: 5px; }
+.cm-stancelegend .key::before { content: ""; width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+.cm-stancelegend .sup::before { background: var(--stance-positive); }
+.cm-stancelegend .opp::before { background: var(--stance-negative); }
+.cm-stancelegend .mix::before { background: var(--stance-mixed); }
+.cm-stancelegend .neu::before { background: var(--rule-strong); }
+.cm-stancebars { display: grid; gap: 12px; }
+.cm-stancebar { display: flex; height: 18px; border-radius: 4px; overflow: hidden; border: 1px solid var(--rule); background: var(--surface-2); margin-top: 3px; }
+.cm-stancebar .seg { display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #fff; min-width: 2px; }
+.cm-stancebar .sup { background: var(--stance-positive); }
+.cm-stancebar .opp { background: var(--stance-negative); }
+.cm-stancebar .mix { background: var(--stance-mixed); }
+.cm-stancebar .neu { background: var(--rule-strong); color: var(--ink); }
+
 /* Comments sub-tabs (Overview / Respondent types / Comment summaries) */
 .cm-subtabs { display: flex; gap: 2px; margin-bottom: 18px; border-bottom: 2px solid var(--rule); flex-wrap: wrap; }
 .cm-subtab { font: inherit; font-size: 13.5px; font-weight: 700; color: var(--text-muted); background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -2px; padding: 12px 14px; min-height: 44px; cursor: pointer; }

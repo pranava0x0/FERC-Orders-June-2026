@@ -1,0 +1,220 @@
+{
+  "accession": "20251113-5158",
+  "filer": "South Dakota Public Utilities Commission",
+  "org_type": "state_commission",
+  "filed": "11/13/2025",
+  "source_text": "sources/comments/files/20251113-5158__South-Dakota-Public-Utilities-Commission/RM26-4 Comments of the South Dakota PUC.txt",
+  "overall_summary": "The South Dakota PUC supports FERC's goal of efficient interconnection for large loads but warns against redefining transmission facilities or altering the seven-factor test, which would risk state jurisdiction, create conflicts with state law, and harm incumbent utilities and existing customers. South Dakota advocates for adopting existing RTO-designed processes like SPP's High Impact Large Load framework that already balance speed and jurisdictional respect.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "We want to emphasize the importance of recognizing and respecting state jurisdiction and avoiding unintended consequences.",
+      "concern": "State jurisdiction must be respected",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "In the ANOPR, the Commission expresses its intention not to 'impinge on States' authority over retail electricity sales by asserting jurisdiction over the interconnection of large loads to the transmission system.' Nonetheless, the unintended consequence of expanding the definition of the transmission system may do just that.",
+      "concern": "Redefining transmission could impinge on state retail authority",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "This standard has remained in place for nearly three decades, having survived and guided many court cases.",
+      "concern": "Seven-factor test is longstanding and validated",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "In the ANOPR, the Commission references the seven-factor test and the need to strictly adhere to it. We urge the Commission to not only adhere to the test but to refrain from altering the test or making other changes that would redefine which facilities are considered transmission subject to FERC's jurisdiction.",
+      "concern": "Preserve the seven-factor test without alteration",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Altering this precedent would lead to loss of regulatory certainty and could result in conflicts between federal regulation and state-approved tariffs.",
+      "concern": "Alteration of test creates regulatory uncertainty and conflict",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Much of the balance of state and federal jurisdiction rests upon the defining of transmission and distribution systems. If the seven-factor test is not preserved, expanding which facilities classify as transmission could create a new class of customers whose rights and privileges extend beyond, and conflict with, state law.",
+      "concern": "Redefining transmission threatens state-federal jurisdictional balance",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "For example, under South Dakota law, an incumbent utility may not be forced to wheel power for an end-user on its distribution system. In addition, South Dakota is not a retail choice state. Therefore, unless a customer self-generates behind the meter, the customer must purchase power from an electric utility.",
+      "concern": "South Dakota law restricts forced wheeling and lacks retail choice",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "An unintended consequence of allowing large load customers to connect directly to the transmission system could be that the customer is able to generate its own power offsite and wheel the power through the transmission system to serve itself. This type of arrangement could lead to unintended consequences such as: 1) exposing existing customers to higher LMP pricing due to congestion, 2) causing the local transmission owner to build additional transmission to address reliability issues created by the large load (which costs would then be assigned to the local zone and recovered from all customers in the zone), 3) lead to resource adequacy challenges, and 4) will deprive other customers of benefits of the large load.",
+      "concern": "Direct transmission connection enables wheeling that harms existing customers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "SPP has worked to expedite the interconnection of large loads such as with their High Impact Large Load (HILL) proposal, recently filed with FERC. The HILL process provides an excellent framework for an interconnection process that meets the rapidly increasing demand for electricity while leaving state jurisdiction intact, protecting legacy customers, and promoting regulatory certainly.",
+      "concern": "SPP HILL process already balances speed and jurisdictional respect",
+      "bins": [
+        "pr:colo",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Like SPP, MISO has worked to facilitate the interconnection of large loads on its system. MISO established a mechanism, known as the Expedited Project Review process, to quickly study and approve transmission projects that are necessary to meet urgent reliability requirements, many of which are associated with large load additions.",
+      "concern": "MISO Expedited Project Review also facilitates large load interconnection",
+      "bins": [
+        "pr:flex",
+        "rg:miso"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The SPP and MISO approaches to large load interconnection represent well-vetted processes which resulted from significant stakeholder input and buy-in. Both approaches help to address the challenges associated with large load customers while respecting and maintaining state and federal jurisdiction.",
+      "concern": "RTO processes are well-vetted and respect jurisdictions",
+      "bins": [
+        "pr:study",
+        "rg:spp",
+        "rg:miso"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The SDPUC supports the work the RTOs are doing and would advocate for a similar large load interconnection process, one that is limited in scope, to be adopted should FERC move forward with a rule making.",
+      "concern": "Support for RTO-model approach in FERC rulemaking",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Like our federal counterparts, we strive for the development of a safe, reliable, and efficient system, while safeguarding customers from increasing costs. We advocate for a system that is orderly constructed, non-discriminatory, and that allows our vertically-integrated incumbent utilities to continue to provide retail service to customers pursuant to their state-mandated service obligations.",
+      "concern": "Preserve incumbent utilities' state-mandated service obligations",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "State jurisdiction over retail and distribution",
+      "stance": "neutral",
+      "description": "South Dakota law restricts forced wheeling on distribution systems, lacks retail choice, and reserves retail service to incumbent utilities with state-mandated obligations. These state jurisdictional constraints would conflict with a broadened FERC transmission definition that allows large loads to bypass local utilities.",
+      "quote_ids": [
+        2,
+        6,
+        7,
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Preserve seven-factor transmission test",
+      "stance": "support",
+      "description": "The seven-factor test has guided FERC for nearly three decades, survived court review, and established regulatory certainty. Altering it would lose that certainty and create conflicts between federal regulation and state tariffs. The test should remain unchanged to maintain the state-federal jurisdictional balance.",
+      "quote_ids": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        11
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Risk to existing customer costs and reliability",
+      "stance": "oppose",
+      "description": "Allowing direct transmission connection enables wheeling arrangements that could expose existing customers to higher LMP pricing from congestion, force costly transmission additions that recover through zone-wide rates, create resource adequacy gaps, and deny legacy customers the benefits of large load cost-sharing.",
+      "quote_ids": [
+        8,
+        13
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Support existing RTO expedited processes",
+      "stance": "support",
+      "description": "SPP's High Impact Large Load process and MISO's Expedited Project Review provide proven, stakeholder-vetted frameworks that expedite large load interconnection while respecting state and federal jurisdictions and protecting incumbent utilities. These should be adopted as the model for any FERC-wide approach.",
+      "quote_ids": [
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "MISO expedited review for reliability",
+      "stance": "support",
+      "description": "MISO's Expedited Project Review process quickly approves transmission projects needed for urgent reliability, including many large load additions, demonstrating that speed and jurisdiction need not conflict.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "Southwest Power Pool large load coordination",
+      "stance": "support",
+      "description": "South Dakota supports SPP's High Impact Large Load process as an excellent framework that meets rapid electricity demand while preserving state jurisdiction, protecting legacy customers, and promoting regulatory certainty.",
+      "quote_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO large load and transmission coordination",
+      "stance": "support",
+      "description": "MISO's well-vetted Expedited Project Review process balances speed with respect for state and federal jurisdiction while addressing large load integration challenges.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "spp",
+      "miso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

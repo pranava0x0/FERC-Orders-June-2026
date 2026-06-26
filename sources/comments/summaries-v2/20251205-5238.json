@@ -1,0 +1,270 @@
+{
+  "accession": "20251205-5238",
+  "filer": "Old Dominion Electric Cooperative",
+  "org_type": "trade_assoc",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5238__Old-Dominion-Electric-Cooperative/RM26-4 ODEC Reply Comments.txt",
+  "overall_summary": "Old Dominion Electric Cooperative urges FERC to act swiftly on large load interconnection rules that protect grid reliability and resource adequacy while requiring large loads to pay costs they cause under cost-causation principles. ODEC argues that existing customers and incumbent load-serving entities must not subsidize the grid upgrades and resource adequacy impacts driven by data centers and other large loads. The filing calls for NERC standards updates, resource adequacy protections, and review of existing large-load agreements to enforce fair cost allocation.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the Commission must do so in a manner consistent with the Commission's statutory responsibility to ensure that the costs associated with accommodating these extraordinary new demands are borne by the new large loads driving them, consistent with cost-causation principles.",
+      "concern": "Large loads must pay costs they cause; cost-causation is non-negotiable",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the Commission should use this proceeding to provide clarity and a set of policies or principles that must be adopted by transmission providers, with flexibility for regional differences.",
+      "concern": "FERC should set binding rules but allow regional flexibility",
+      "bins": [
+        "pr:study",
+        "topic:regional-flexibility"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "PJM's 2025 long-term load forecast shows a peak load growth of 32 GW from 2024 to 2030, of which approximately 30 GW is projected to be from data centers.",
+      "concern": "PJM faces massive near-term data center load growth requiring prompt action",
+      "bins": [
+        "rg:pjm",
+        "topic:urgency"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "ODEC urges the Commission to act swiftly in issuing a Final Rule that will address the principles contained in the ANOPR and issues raised in comments on the ANOPR.",
+      "concern": "Commission should issue a Final Rule quickly",
+      "bins": [
+        "topic:urgency"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "\"Swift\" and \"diligent\" are not mutually exclusive, and the Commission can – and should – issue a reasoned decision that will provide large loads a way to interconnect with the transmission system and/or through hybrid configurations, in a manner that preserves reliability and resource adequacy, and at rates that are just, reasonable and not unduly discriminatory or preferential.",
+      "concern": "Speed and rigor are compatible; FERC should not slow down",
+      "bins": [
+        "topic:urgency",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "ODEC reiterates its agreement with ANOPR Principle 14 and urges the Commission to adopt a requirement in the Final Rule that utilities serving large loads must meet all applicable NERC reliability standards and OATT provisions, as well as require large loads to be registered with NERC and require NERC to enhance its existing registry criteria and Reliability Standards and create new Standards as required to address the operational complexities that large loads introduce to the grid.",
+      "concern": "FERC should mandate NERC registration of large loads and updated reliability standards",
+      "bins": [
+        "pr:study",
+        "topic:nerc-standards"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "ODEC supports NERC's request that the Final Rule reflect the full scope of NERC's reliability authority as pertaining to the BPS.",
+      "concern": "NERC's full authority over the bulk power system should be preserved",
+      "bins": [
+        "topic:nerc-standards"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "the Final Rule should recognize that interconnecting large loads that will result in partial or full suspension of an existing resource raises different and more concerning impacts than a load interconnection with a build-your-own generation arrangement that includes new generation.",
+      "concern": "Generator suspension scenarios deserve stricter scrutiny than BYO-gen arrangements",
+      "bins": [
+        "pr:colo",
+        "topic:resource-adequacy"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The former arrangement will siphon resources away from the very loads that have financially supported the existing generation, at a time when resource adequacy is already severely threatened.",
+      "concern": "Existing customers bear the resource adequacy risk when generators are suspended for co-located loads",
+      "bins": [
+        "pr:colo",
+        "topic:resource-adequacy"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "ODEC supports the ANOPR proposal in Principle 10, to require a system support resource/reliability must run type study for partial suspension of existing generators to serve new loads at the same location.",
+      "concern": "Must-run studies required when generators are partially suspended for co-located large loads",
+      "bins": [
+        "pr:study",
+        "pr:colo",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "\"to keep rates affordable to consumers, it is imperative that large loads pay their own way when interconnecting directly with the interstate transmission system.\"",
+      "concern": "Large loads must not shift interconnection costs to other consumers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "the Commission must also require measures to ensure that large loads in hybrid configurations are responsible for all of the costs caused by their interconnection.",
+      "concern": "Hybrid configuration large loads must bear all costs they cause",
+      "bins": [
+        "pr:cost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "all costs associated with transmission upgrades and facilities caused by the large load interconnection must be allocated to the large load or, as necessary, the FERC-jurisdictional entity serving the large loads.",
+      "concern": "Transmission upgrade costs must be directly assigned to the causing large load",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "ODEC encourages the Commission to require a review of existing agreements in order to ensure that they are accommodating the unique challenges and costs associated with large loads in a manner consistent with principles of cost causation.",
+      "concern": "Existing large-load service agreements should be reviewed for cost-causation compliance",
+      "bins": [
+        "pr:cost",
+        "topic:agreement-review"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "the Commission should resist efforts by large loads and those who will profit from large loads, against agreements tailored to the unique and significant cost impacts caused by service to large loads.",
+      "concern": "FERC should not let large-load interests weaken cost-protective agreements",
+      "bins": [
+        "pr:cost",
+        "topic:agreement-review"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost causation for large loads",
+      "stance": "support",
+      "description": "ODEC insists that large loads must bear all costs their interconnection causes, including transmission upgrades, and that existing customers must not subsidize them. The filing calls for direct cost assignment to large loads or the FERC-jurisdictional entities serving them, and urges FERC to review existing agreements for cost-causation compliance. ODEC opposes any efforts by large-load interests to weaken cost-protective arrangements.",
+      "quote_ids": [
+        1,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Reliability and study requirements",
+      "stance": "support",
+      "description": "ODEC urges FERC to mandate that large loads meet NERC reliability standards and be registered with NERC, and that NERC update its reliability standards to address operational complexities large loads create. ODEC also supports requiring must-run studies when existing generators are partially suspended to serve co-located large loads.",
+      "quote_ids": [
+        2,
+        6,
+        10
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location and hybrid configurations",
+      "stance": "mixed",
+      "description": "ODEC supports allowing hybrid and co-located large load configurations but argues they require strict cost and reliability scrutiny. The filing warns that partial or full suspension of existing generators to serve co-located loads siphons resources from customers who funded those generators, and calls for must-run studies in those cases. ODEC also requires that hybrid configuration loads bear all costs they cause.",
+      "quote_ids": [
+        5,
+        8,
+        9,
+        10,
+        12
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Transmission upgrade cost assignment",
+      "stance": "support",
+      "description": "ODEC supports direct assignment of transmission upgrade costs to the large load causing them, and acknowledges FERC may need to consider whether a pool-based cost allocation covering broader network maintenance is also appropriate.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM region urgency",
+      "stance": "neutral",
+      "description": "ODEC operates as a load-serving entity in PJM and cites PJM's 2025 load forecast showing 32 GW of peak load growth by 2030, nearly all from data centers. ODEC notes that PJM's Necessary Studies process may not adequately assess resource adequacy when generators are partially suspended for co-located loads.",
+      "quote_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "key": "topic:urgency",
+      "name": "Urgent rulemaking timeline",
+      "stance": "support",
+      "description": "ODEC urges FERC to issue a Final Rule quickly, noting that implementation will take over a year after a rule issues and that delays compound reliability risks. ODEC explicitly counters parties calling for a slower pace, arguing that speed and careful deliberation are not mutually exclusive.",
+      "quote_ids": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "topic:regional-flexibility",
+      "name": "Regional flexibility in compliance",
+      "stance": "support",
+      "description": "ODEC supports a Final Rule that sets binding national standards while allowing transmission providers to demonstrate compliance through regionally tailored approaches, provided those approaches meet or exceed the rule's requirements.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "topic:nerc-standards",
+      "name": "NERC authority and standard updates",
+      "stance": "support",
+      "description": "ODEC endorses NERC's request that the Final Rule affirm NERC's full authority over the bulk power system, and calls for FERC to direct NERC to complete stakeholder coordination on registry criteria and reliability standard updates for large loads within one year of rule issuance.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "topic:resource-adequacy",
+      "name": "Resource adequacy protection",
+      "stance": "support",
+      "description": "ODEC warns that large load interconnections involving generator suspension threaten resource adequacy for existing customers who have financially supported those generators. ODEC calls for FERC to exercise its full authority and clarify federal and state roles in preserving resource adequacy.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:agreement-review",
+      "name": "Review of existing large-load agreements",
+      "stance": "support",
+      "description": "ODEC calls for FERC to require a review of existing service agreements with large loads to confirm they enforce cost-causation principles, and urges FERC to resist pressure from large-load interests seeking to weaken cost-protective terms.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost"
+    ],
+    "pr": [
+      "cost",
+      "study",
+      "colo"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

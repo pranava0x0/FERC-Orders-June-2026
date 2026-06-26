@@ -1,0 +1,157 @@
+{
+  "accession": "20251121-5353",
+  "filer": "Oncor Electric Delivery Company LLC",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5353__Oncor-Electric-Delivery-Company-LLC/Oncor Comments on Large Load Interconnection ANOPR.txt",
+  "overall_summary": "Oncor, a Texas transmission utility outside FERC's plenary jurisdiction, takes no position on the merits of the ANOPR's large load interconnection reforms but urges FERC to make clear that any resulting rule applies only to FERC-jurisdictional public utilities under FPA section 201(e) and not to ERCOT or entities operating solely within ERCOT. Oncor warns that the ANOPR's use of section 215 'bulk-power system' language creates ambiguity that could be read to extend the rule's reach to ERCOT, and asks FERC to define key terms carefully to eliminate that uncertainty.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Oncor encourages the Commission to make clear that any rule on large load interconnection it issues in this proceeding does not apply to entities like the Electric Reliability Council of Texas, Inc. (\"ERCOT\") and market participants operating solely within ERCOT that are not \"public utilities\" under FPA section 201(e).",
+      "concern": "Rule should expressly exclude ERCOT and ERCOT entities from coverage",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "In any rule issued in this proceeding, the Commission should carefully define key terms and avoid unnecessary references to provisions like FPA section 215 that apply to entities that are not jurisdictional \"public utilities\" and thus could create uncertainty—and raise challenging legal questions—regarding the reach of the new rule.",
+      "concern": "References to FPA section 215 in the ANOPR create ambiguity about ERCOT's coverage",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:key-term-definitions"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "ERCOT and ERCOT Entities are not \"public utilities\" subject to plenary FERC jurisdiction because (1) the ERCOT grid is located solely within the state of Texas and (2) the transmission and wholesale sales of electric energy in interstate commerce between ERCOT and other regions only occur pursuant to FERC orders issued under FPA section 211.",
+      "concern": "Legal basis for ERCOT's exemption from FERC plenary jurisdiction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The continued independence of ERCOT and ERCOT Entities from plenary federal jurisdiction is the result of long-standing and deliberate choices by Texas utilities and policymakers—choices that federal officials have recognized and respected.",
+      "concern": "ERCOT's non-jurisdictional status reflects settled policy recognized by Congress and FERC",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The ANOPR does not unambiguously identify the specific statutory basis for FERC's authority to implement the proposed reforms. It also does not specifically exempt (or otherwise mention) ERCOT or expressly limit the proposed reforms to \"public utilities.\"",
+      "concern": "ANOPR fails to expressly exclude ERCOT, leaving its coverage ambiguous",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:key-term-definitions"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The ANOPR defines the term \"transmission system\" based on section 215's definition of \"bulk-power system.\" This raises questions about the potential applicability of the proposed reforms to entities like ERCOT and ERCOT Entities that are not \"public utilities\" under FPA section 201(e) but do own or operate facilities that are part of the \"bulk-power system\" subject to FPA section 215.",
+      "concern": "Defining 'transmission system' by reference to section 215 could unintentionally pull ERCOT into the rule",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:key-term-definitions"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Oncor believes there may be value in NERC and FERC exercising their authority under FPA section 215 to address the impact of large loads on the reliable operation of the bulk-power system. Oncor therefore does not oppose the ANOPR's recommendation that \"NERC should review its reliability standards to determine if new registration categories or new or modified reliability standards are required to ensure reliability of the [Bulk Electric System].\"",
+      "concern": "Oncor supports a NERC reliability standards review while distinguishing it from interconnection rule coverage",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:nerc-reliability-review"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "In any rule the Commission chooses to promulgate in this proceeding, the Commission should draw on the language in these prior orders to unambiguously explain the statutory basis for its actions and make clear that the reforms to interconnection processes do not apply to entities that are not \"public utilities,\" as that term is defined in FPA section 201(e).",
+      "concern": "Prior FERC orders (e.g., Order 888) offer a model for expressly limiting applicability to public utilities",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "ERCOT's independence from plenary Commission jurisdiction allows for unique and innovative regulatory and market structures—indeed, Texas has been a leader in establishing new regulatory paradigms for interconnecting and serving large load customers.",
+      "concern": "ERCOT's independence enables state-level innovation on large load interconnection",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-innovation"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The Commission should ensure that any rule on large load interconnection that it promulgates in this proceeding reflects this precedent and clearly exempts entities—like ERCOT and ERCOT Entities—that are not \"public utilities\" under FPA section 201(e).",
+      "concern": "Final ask: rule must contain an explicit ERCOT exemption",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Exempt ERCOT from rule coverage",
+      "stance": "support",
+      "description": "Oncor asks FERC to explicitly exclude ERCOT and ERCOT Entities from any large load interconnection rule because they are not public utilities subject to FERC's plenary jurisdiction under FPA section 201(e). Oncor argues the ANOPR's silence on ERCOT and its use of section 215 'bulk-power system' language create legal ambiguity that needs to be resolved through clear statutory grounding and an express exemption. Prior FERC orders such as Order No. 888 provide a ready model.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:key-term-definitions",
+      "name": "Define transmission system precisely",
+      "stance": "support",
+      "description": "Oncor flags that the ANOPR uses 'transmission system' interchangeably with the section 215 'bulk-power system,' which reaches entities beyond FERC-jurisdictional public utilities. FERC should align its definitions with the specific statutory authority it relies on so the rule's scope is unambiguous.",
+      "quote_ids": [
+        2,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:nerc-reliability-review",
+      "name": "Support NERC reliability standards review",
+      "stance": "support",
+      "description": "Oncor does not oppose having NERC review its reliability standards for large loads under FPA section 215, treating that as a separate track from the interconnection rule that it wants limited to jurisdictional public utilities.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:state-innovation",
+      "name": "Preserve state-level regulatory flexibility",
+      "stance": "support",
+      "description": "Oncor notes that ERCOT's independence from federal oversight has enabled Texas to lead in developing innovative regulatory frameworks for large load customers, and that a federal rule should not disturb that model.",
+      "quote_ids": [
+        9
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

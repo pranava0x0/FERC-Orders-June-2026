@@ -1,0 +1,173 @@
+{
+  "accession": "20251121-5142",
+  "filer": "National Conference of State Legislatures",
+  "org_type": "state_commission",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5142__National-Conference-of-State-Legislatures/NCSL Comments on FERC Docket RM26-4-000.txt",
+  "overall_summary": "NCSL supports FERC engagement with large load interconnection but opposes federal preemption of state authority. The filing emphasizes the need for cost allocation based on causation and beneficiary-pays principles, state involvement in stakeholder discussions, and regulatory requirements for data center transparency, onsite generation, and environmental practices.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "data centers and other large load facilities can help support grid modernization and innovation, accelerate integration of any and all energy generation sources and provide backup generation capacity during periods of peak load demand or emergencies.",
+      "concern": "Large loads can support grid modernization and provide backup capacity",
+      "bins": [
+        "topic:economic-potential"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "total energy demand in the U.S. is expected to potentially increase 15% to 20% in the coming years and data centers' usage share of all electricity in the nation could more than double to almost 10% by 2030. This dramatic increase puts greater pressure on an overburdened and aging power grid and could significantly hamper reliability, raise costs for individual ratepayers, contribute to energy affordability challenges and cause serious cost-sharing concerns among residential users and small businesses.",
+      "concern": "Large load growth threatens grid reliability and consumer costs",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "This new proposed rule would bring under federal jurisdiction an issue that is currently handled by the states and has been for decades. While NCSL understands the need for enhanced oversight over how large loads obtain power any such regulatory decisions by FERC should only come after close, careful and deliberate consultation with states early and often throughout the process of rule development to ensure individual and small rate payers are protected.",
+      "concern": "Federal preemption of state authority over interconnection requires consultation and ratepayer protection",
+      "bins": [
+        "pr:proximate",
+        "topic:state-federal-jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "If jurisdiction for interconnection of large loads is claimed by the FERC, what is the process for determining how those large loads will impact an already strained power supply, and who bears responsibility for managing and mitigating the ensuing reliability concerns? Will NERC standards be developed to manage reliability issues?",
+      "concern": "Questions on reliability responsibility and NERC standard changes under FERC jurisdiction",
+      "bins": [
+        "topic:reliability-responsibility"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "How will FERC determine who is responsible for bearing the costs of increased power demand? FERC must work with states to create cost allocation methods that help ensure large-scale energy users are paying their fair share of costs using the 'cost causation' and 'beneficiary pays' principles while recognizing current jurisdiction on this issue.",
+      "concern": "Cost allocation must follow causation and beneficiary-pays principles with state coordination",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Include state policy makers in all stakeholder discussions regarding data center placement and energy usage and refrain from pre-empting states on siting, permitting, taxation and other regulatory issues relating to the construction and operation of data centers.",
+      "concern": "State involvement required in stakeholder discussions and preservation of state siting/permitting authority",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Recognize opportunities for data centers to contribute to grid stability and resiliency while mitigating the impact of data centers on rate payers and communities, as well as protect local consumers' need for power when disruptions limit the amount of available power.",
+      "concern": "Data centers should contribute to grid stability while protecting consumer access during disruptions",
+      "bins": [
+        "topic:grid-stability-resilience"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Develop incentives and/or implement requirements for data centers regarding onsite generation of power, integration of energy-storage and demand-management systems at new data center projects.",
+      "concern": "Data centers should have onsite generation and energy-storage requirements",
+      "bins": [
+        "topic:onsite-generation"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Require utility operators to file documentation related to data centers with appropriate state and federal regulatory agencies that detail terms and conditions of service and associated prices to facilitate transparency and protect rate payers.",
+      "concern": "Transparency and documentation requirements to protect ratepayers",
+      "bins": [
+        "topic:transparency"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation and affordability",
+      "stance": "support",
+      "description": "Large load growth threatens grid reliability and consumer affordability. FERC must work with states to allocate costs using causation and beneficiary-pays principles, ensuring large-scale energy users pay their fair share rather than shifting costs to residential and small-business ratepayers.",
+      "quote_ids": [
+        2,
+        5
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "State consultation and decision authority",
+      "stance": "oppose",
+      "description": "FERC rules on large load interconnection must follow close consultation with states and preserve state authority over siting, permitting, and taxation. Federal preemption of state jurisdiction requires safeguards and meaningful state participation in stakeholder discussions.",
+      "quote_ids": [
+        3,
+        6
+      ]
+    },
+    {
+      "key": "topic:state-federal-jurisdiction",
+      "name": "Federal preemption concerns",
+      "stance": "oppose",
+      "description": "The proposed rule would transfer large load interconnection authority from states to FERC. NCSL requires early and ongoing state consultation in rule development to ensure individual and small ratepayers are protected.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "topic:reliability-responsibility",
+      "name": "Reliability and operational authority",
+      "stance": "neutral",
+      "description": "Unclear processes for determining large load impacts on grid reliability, responsibility for mitigation, NERC standards development, and operational authority during system restoration across multiple states.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:economic-potential",
+      "name": "Economic benefits of large loads",
+      "stance": "support",
+      "description": "Large load facilities support grid modernization, innovation, energy source integration, and backup generation capacity during peak demand.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:grid-stability-resilience",
+      "name": "Grid stability and consumer protection",
+      "stance": "mixed",
+      "description": "Data centers should contribute to grid stability and resiliency while mitigating costs to ratepayers. Local consumers must retain access to power during disruptions.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:onsite-generation",
+      "name": "Onsite generation and storage requirements",
+      "stance": "support",
+      "description": "Data centers should develop onsite generation capacity, integrate energy-storage systems, and implement demand-management systems to reduce grid dependency.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:transparency",
+      "name": "Transparency and rate protection",
+      "stance": "support",
+      "description": "Utility operators must file documentation on data center interconnection terms, conditions of service, and pricing with state and federal agencies to enable ratepayer protection and market transparency.",
+      "quote_ids": [
+        9
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

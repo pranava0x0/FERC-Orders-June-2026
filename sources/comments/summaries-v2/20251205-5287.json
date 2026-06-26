@@ -1,0 +1,141 @@
+{
+  "accession": "20251205-5287",
+  "filer": "Consumers Energy Company",
+  "org_type": "transmission_owner",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5287__Consumers-Energy-Company/RM26-4 20251205 Consumers Energy Reply Comments.txt",
+  "overall_summary": "Consumers Energy opposes FERC's proposed assertion of jurisdiction over large load interconnections, arguing that the Federal Power Act reserves authority over retail electric service to the states. The company warns that federal overreach will trigger protracted litigation and hamper policy goals, and recommends that if FERC proceeds, it limit its jurisdiction to transmission facilities using the existing seven-factor test rather than adopting new bright-line rules.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the Commission should take care to avoid asserting the authority to regulate matters that the Federal Power Act (\"FPA\") has reserved to the States.",
+      "concern": "FERC should not regulate state-reserved matters",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the FPA makes clear that the Commission's jurisdiction extends \"only to those matters which are not subject to regulation by the States.\"",
+      "concern": "FERC jurisdiction limited by statute to non-state matters",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "To uphold any new Commission regulation, a court \"must determine that it does not regulate retail electricity sales,\" which the FPA has reserved as \"a job for the States alone.\"",
+      "concern": "Retail electricity sales reserved to states",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the ANOPR proposal to regulate large load interconnections to the transmission system is, at best, on shaky jurisdictional ground.",
+      "concern": "Proposal lacks clear jurisdictional authority",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Unlike generator interconnections, load interconnections involve the provision of electric service to end-user consumers (i.e., retail customers), making the generator interconnection process inapposite as a jurisdictional matter.",
+      "concern": "Load interconnections are fundamentally different from generator interconnections",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the receipt of energy by large load is inherently tied to retail distribution and state-regulated functions.",
+      "concern": "Large load energy receipt tied to state-regulated retail functions",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The extent of the Commission's authority to regulate load interconnections is murky at best and will undoubtedly be the subject of protracted litigation should the Commission decide to move forward with the ANOPR proposal.",
+      "concern": "Unclear authority will trigger costly litigation",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "any attempt by the Commission to expand its jurisdictional reach into that reserved to the States would be a serious and unnecessary misstep that may hamper achievement of the Administration's stated goals.",
+      "concern": "Federal overreach would undermine Administration's policy goals",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Consumers Energy respectfully requests that the Commission limit its assertion of jurisdiction to interconnections to transmission facilities, as defined by FERC's longstanding seven-factor test.",
+      "concern": "If proceeding, limit jurisdiction to transmission facilities using seven-factor test",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The Commission should continue to rely on its seven-factor test when determining whether a proposed interconnection concerns a FERC-jurisdictional transmission line or a state-jurisdictional distribution facility.",
+      "concern": "Continue using seven-factor test for determining jurisdiction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Adopting a new framework, such as a bright-line rule based on voltage or some other metric, would arbitrarily upend decades of Commission precedent and could have unintended consequences.",
+      "concern": "New frameworks would disrupt established precedent",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "the Commission's seven-factor test should not be cast aside or revised to bootstrap Commission jurisdiction over large load interconnections.",
+      "concern": "Do not modify seven-factor test to expand jurisdiction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal vs. state jurisdictional authority",
+      "stance": "oppose",
+      "description": "The filing opposes FERC asserting jurisdiction over large load interconnections, arguing that the Federal Power Act reserves retail service authority to the states. Load interconnections involve end-user retail customers and are inherently tied to state-regulated functions, making them fundamentally different from generator interconnections. The company warns that federal overreach will trigger protracted litigation and harm policy goals, and if FERC proceeds, recommends limiting jurisdiction to transmission facilities using the existing seven-factor test rather than adopting new bright-line frameworks.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

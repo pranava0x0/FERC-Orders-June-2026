@@ -1,0 +1,305 @@
+{
+  "accession": "20251121-5542",
+  "filer": "Vistra Corp.",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5542__Vistra-Corp/Comments of Vistra.txt",
+  "overall_summary": "Vistra strongly supports Commission action to establish rules governing transmission-level large load interconnection, arguing FERC jurisdiction is clear under the FPA and urgent given 18 months of regulatory uncertainty that has stymied data center development. Vistra urges the Commission to first issue immediate guidance in pending dockets to confirm co-location permissibility and cost causation principles, then adopt new pro forma tariff procedures for new co-located generation and load, and finally develop standalone load interconnection rules -- while excluding resource adequacy analysis from interconnection studies and setting any MW threshold based on actual transmission system impacts.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the 'timely, orderly, and non-discriminatory' interconnection of large loads, including data centers, to the transmission system is critical to ensuring American prosperity as well as the affordability, reliability, and security of our electric system.",
+      "concern": "Affirms Secretary Wright's framing that non-discriminatory large load interconnection is a national priority",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the Commission should begin by acting in the multiple long-pending dockets with well-developed evidentiary records.  Doing so would immediately resolve the regulatory uncertainty that has crippled the industry for the past 18 months.",
+      "concern": "Calls for immediate Commission action in pending proceedings to end prolonged regulatory uncertainty",
+      "bins": [
+        "pr:study",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the interconnection of large loads directly to the interstate transmission system to access the transmission system and the electricity transmitted over it falls squarely within the Commission's jurisdiction.",
+      "concern": "Asserts FERC has clear jurisdiction over transmission-level large load interconnection",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "transmission-level load interconnection cannot fall within the states' ambit.  If it did, loads that interconnect to the transmission system would do so under state-jurisdictional tariffs and state public utility commissions would be left to determine, for example, how transmission-level interconnection facilities and network upgrades are studied, selected, and funded.",
+      "concern": "Argues that leaving load interconnection to states would create an impermissible regulatory gap and infringe on FERC's plenary transmission jurisdiction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The lack of rates, terms, and conditions for transmission-level load interconnection has created a vacuum in which utilities are exercising unfettered discretion to determine, among other things, the process by which large loads interconnecting to the transmission system are studied, how to allocate the costs incurred to facilitate those load interconnections, and whether to allow large loads to interconnect to the transmission system at all.",
+      "concern": "Documents that absent federal rules, utilities have unchecked discretion over load interconnection, creating unjust and unreasonable rates",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "FERC should not adopt the 20 MW threshold proposed in the DOE ANOPR Proposal.  The 20 MW threshold does not appear to be tied to any particular conclusion about the interaction between the large load and the transmission system.  Rather, the Commission should consider a MW threshold at a level that corresponds to likely use of or impact on the transmission system.",
+      "concern": "Opposes the proposed 20 MW threshold as untethered to actual transmission system impacts",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the studies involving the interconnection of new loads must focus on studying the impacts to the transmission system.  As noted above, states retain jurisdiction over generation facilities.  With that in mind, and consistent with the Commission's jurisdiction over the transmission system -- and interconnections to it -- load interconnection studies must be focused on identifying the transmission system upgrades needed to facilitate the interconnection and allocating the costs of those upgrades in a manner consistent with the Commission's cost causation principles.",
+      "concern": "Argues interconnection studies must be confined to transmission impacts and cost allocation, not resource adequacy",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Using the load interconnection process to address resource adequacy issues would also place resource adequacy obligations on the wrong entity.  New loads coming onto the system only create a resource adequacy issue if an LSE signs up new customers without sufficient generation resources to serve those loads.  LSEs should be responsible for resolving resource adequacy issues that they have allowed to arise.",
+      "concern": "Opposes including resource adequacy in interconnection studies, arguing the burden falls on the wrong party",
+      "bins": [
+        "pr:study",
+        "topic:resource-adequacy-exclusion"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The consideration of resource adequacy issues in load interconnection studies may also grant LSEs a new ability to exercise undue discrimination.  LSEs often have nearly unbounded discretion in producing load forecasts, which is one of the primary tools used to assess whether a resource adequacy concern might arise.",
+      "concern": "Warns that resource adequacy assessments in interconnection studies create a discrimination risk because utilities have broad discretion in load forecasting",
+      "bins": [
+        "pr:study",
+        "topic:resource-adequacy-exclusion"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "the current lack of standardized study deposits, readiness requirements, and withdrawal penalties increases the prevalence of speculative projects and the related risk that ratepayers will be saddled with costs incurred due to projects that never materialize.",
+      "concern": "Argues absent deposit and readiness rules, speculative projects impose unjust costs on ratepayers",
+      "bins": [
+        "aq:deposits",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "co-location arrangements involving new generators will require new tariff language to effectuate the coordinated and expedited study of new load co-located with new generation.  The Commission should prioritize doing so as soon as possible because it 'will allow for efficient siting of loads and generating facilities and thereby minimize the need for costly network upgrades.'",
+      "concern": "Calls for new pro forma tariff language enabling coordinated study of co-located new load and new generation",
+      "bins": [
+        "pr:colo",
+        "pr:cost",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "in keeping with the cost causation principle, transmission service charges should be based on actual use of the transmission system, as measured by the facility's net load.",
+      "concern": "Advocates that transmission charges for co-located arrangements reflect actual net load rather than gross load",
+      "bins": [
+        "pr:cost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the Commission should also clarify that its new pro forma procedures only apply prospectively, consistent with the rule against retroactive ratemaking.  The Commission should propose a transition process that permits customers that are interconnecting under other processes (such as the necessary study process or any applicable state-level process) to choose whether to continue through those processes or under any new procedures that the Commission adopts.",
+      "concern": "Requests grandfathering and prospective-only application of any new procedures to protect existing projects",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "topic:transition-protection"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Transmission owners that have unregulated generation affiliates or operate in states where large loads have the option to select a competitive supplier have a clear incentive to favor the interconnection of new large loads that agree to take electric service from their affiliated generation.  This incentive creates the potential for a textbook example of undue discrimination that must be remedied by a set of national rules that explicitly bar undue discrimination and with on-going compliance checks to ensure those rules are working as designed.",
+      "concern": "Identifies discriminatory incentives for affiliated transmission owners and calls for national anti-discrimination rules with compliance enforcement",
+      "bins": [
+        "pr:study",
+        "aq:protection",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "the Commission could incentivize loads to agree to be curtailable through expedited interconnection access.",
+      "concern": "Supports using curtailability as a basis for expedited interconnection as an alternative to resource adequacy study requirements",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Clear FERC Transmission Jurisdiction",
+      "stance": "support",
+      "description": "Vistra argues that FERC jurisdiction over transmission-level large load interconnection is clear under FPA sections 201, 205, and 206, that leaving it to states would create an impermissible regulatory gap, and that the Commission should issue an unequivocal jurisdictional statement. The filing draws on EPSA, New York v. FERC, and the Commission's own Order No. 2003 precedent.",
+      "quote_ids": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Reject Proposed 20 MW Threshold",
+      "stance": "oppose",
+      "description": "Vistra opposes the DOE ANOPR's proposed 20 MW threshold because it is not tied to any analysis of how a load actually affects the transmission system. The Commission should instead set the threshold at a level that corresponds to likely transmission use or impact.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Deposits and Readiness Rules Needed",
+      "stance": "support",
+      "description": "Vistra supports standardized study deposits, readiness requirements, and withdrawal penalties to screen out speculative projects and protect ratepayers from costs attributable to data centers that never get built.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "New Tariff for Co-Located New Generation",
+      "stance": "support",
+      "description": "Vistra urges the Commission to create new pro forma tariff language for configurations where new load co-locates with new generation, enabling coordinated, expedited study and efficient siting that minimizes network upgrade costs.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Access via Curtailability",
+      "stance": "support",
+      "description": "Vistra supports offering expedited interconnection access to loads that agree to be curtailable, as an alternative to requiring resource adequacy studies in the interconnection process. The filing also calls for transition procedures that let existing customers choose to continue under current rules.",
+      "quote_ids": [
+        13,
+        15
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Anti-Discrimination Rules with Compliance Checks",
+      "stance": "support",
+      "description": "Vistra identifies a clear discrimination risk: transmission owners with generation affiliates have incentives to favor loads served by those affiliates. National rules must explicitly prohibit undue discrimination and include ongoing compliance mechanisms.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Transparent, Standardized Interconnection Studies",
+      "stance": "support",
+      "description": "Vistra supports standardized, Commission-supervised interconnection study processes limited to transmission system impacts, arguing the current absence of rules lets utilities exercise unchecked discretion and creates unjust rates and discrimination risks. Resource adequacy must be excluded from interconnection studies.",
+      "quote_ids": [
+        2,
+        5,
+        7,
+        8,
+        9,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Causation Strictly Enforced",
+      "stance": "support",
+      "description": "Vistra argues that cost causation principles must govern all network upgrade cost allocation and that transmission service charges for co-located facilities should reflect actual net load rather than gross load. Without standardized rules, existing customers risk shouldering costs caused by new loads.",
+      "quote_ids": [
+        5,
+        7,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Prioritize Co-Location Rules",
+      "stance": "support",
+      "description": "Vistra urges the Commission to prioritize co-location rulemaking as the fastest path to actionable reform, noting that the necessary study process already covers existing-generator co-location while new generator co-location requires new tariff language. Net load should be the basis for transmission charges in co-located arrangements.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flex Load Incentives via Curtailability",
+      "stance": "support",
+      "description": "Vistra supports using curtailability as an incentive mechanism -- loads that agree to be curtailable would receive expedited interconnection access -- as a substitute for burdening the interconnection process with resource adequacy analysis.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "Act in Pending PJM Dockets Now",
+      "stance": "support",
+      "description": "Vistra specifically calls out PJM-related pending proceedings, noting the Commission's inaction has created nationwide uncertainty and that unregulated PJM Transmission Owner processes are cost-allocating upgrades for large loads to the broader rate base without Commission oversight.",
+      "quote_ids": [
+        2,
+        14
+      ]
+    },
+    {
+      "key": "topic:resource-adequacy-exclusion",
+      "name": "Exclude Resource Adequacy From Studies",
+      "stance": "oppose",
+      "description": "Vistra argues that resource adequacy must not be incorporated into load interconnection studies: it crosses jurisdictional boundaries into state generation authority, places the obligation on the wrong entity (the interconnecting load rather than the LSE), and gives utilities discretion to discriminate through manipulable load forecasts.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:transition-protection",
+      "name": "Grandfathering for Existing Projects",
+      "stance": "support",
+      "description": "Vistra requests that any new pro forma procedures apply prospectively only, that customers in existing study processes be allowed to continue under current rules, and that interconnection agreements filed before the final rule's effective date not be rejected for failing to conform to new procedures -- mirroring the Order No. 2003 transition approach.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "deposits",
+      "hybridrights",
+      "expedited",
+      "protection"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-26",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

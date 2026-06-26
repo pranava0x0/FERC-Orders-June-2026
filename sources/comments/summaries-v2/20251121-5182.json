@@ -1,0 +1,114 @@
+{
+  "accession": "20251121-5182",
+  "filer": "WIRES",
+  "org_type": "trade_assoc",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5182__WIRES/RM26-4 Comments of WIRES - 20251121.txt",
+  "overall_summary": "WIRES supports expediting large load interconnections and urges the Commission to accommodate ongoing regional reform efforts rather than adopt a new regulatory regime that could inadvertently slow progress. WIRES also seeks assurance that transmission owners can timely recover costs and earn a reasonable return on infrastructure investments needed to interconnect large loads.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "WIRES generally supports the urgent need, as recognized by the Secretary, to expedite and streamline the interconnection of large loads.",
+      "concern": "Supports expedited large load interconnection",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "As the Commission further considers the ANOPR, WIRES urges the Commission to ensure that ongoing regulatory initiatives aimed at achieving the objectives embodied in the Secretary's proposal are not derailed - intentionally or as an unintended consequence of any Commission action.",
+      "concern": "Commission should not derail existing regional reform initiatives",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Finally, WIRES also seeks clarification that any further action taken in this proceeding will protect utilities' ability to build the transmission upgrades and expansions needed to interconnect large loads and preserve their opportunity to earn a return on those investments.",
+      "concern": "Seek protection for utility ability to earn returns on interconnection investments",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "To the extent these ongoing efforts appear likely to yield new processes and reforms that could accomplish the Secretary's goal of expediting the interconnection of large loads, the Commission should seek to accommodate these efforts expeditiously rather than inadvertently slowing down or preempting them with the adoption of a new regulatory regime.",
+      "concern": "Accommodate existing regional efforts rather than adopt new regulatory regime",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Similarly, to accommodate more nuanced approaches nationwide, the Commission's final order should allow for regional variations in compliance filings.",
+      "concern": "Allow regional variations in compliance filings",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The Commission has a long-standing policy in favor of rolled-in rates for integrated systems. The Commission has stated that the principal reason behind its policy of broadly allocating costs is that an integrated system is designed to achieve maximum efficiency and reliability at a minimum cost on a systemwide basis.",
+      "concern": "Rolled-in rates framework applies to integrated systems for efficiency and reliability",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "To ensure the timely and reliable interconnection of large loads, the Commission should require that its overall existing transmission service pricing policy is applicable to new large loads. That is, as they do today, such load customers should pay for the cost of transmission service with such costs reflecting the upgrades and expansions necessary to interconnect and serve such large load customers, over both the short and long term.",
+      "concern": "Large load customers should pay full costs of interconnection through existing pricing policy",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The Commission must ensure that transmission owners can timely recover their costs and investment and earn a reasonable rate of return for the risks and costs associated with their development, ownership, and operation of the transmission upgrades and expansions needed to achieve the Administration's goal of expeditiously interconnecting large loads.",
+      "concern": "Transmission owners must recover costs and earn reasonable returns on large load infrastructure",
+      "bins": [
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost recovery and utility returns",
+      "stance": "support",
+      "description": "WIRES seeks assurance that transmission owners can timely recover the costs of upgrades and expansions needed to interconnect large loads and earn a reasonable return on those investments. The existing rolled-in rates framework for integrated systems should apply to large loads, with those customers paying the full cost of service and upgrades, consistent with longstanding Commission precedent.",
+      "quote_ids": [
+        1,
+        3,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Accommodate existing regional reform efforts",
+      "stance": "support",
+      "description": "WIRES urges the Commission not to derail ongoing regional reform initiatives that are already underway in PJM, MISO, and SPP. Rather than adopt a new regulatory regime, the Commission should accommodate these efforts expeditiously and allow regional variations in compliance filings to reflect each system's regional differences.",
+      "quote_ids": [
+        2,
+        4,
+        5
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

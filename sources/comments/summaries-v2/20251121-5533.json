@@ -1,0 +1,291 @@
+{
+  "accession": "20251121-5533",
+  "filer": "AES Corporation, The",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5533__AES-Corporation-The/Comments of the AES Corporation (RM26-4) 11.21.25.txt",
+  "overall_summary": "AES, a diversified generator and transmission-owning utility in PJM and MISO, supports the ANOPR's goals but urges caution on jurisdiction: FERC should build a full record and avoid displacing state-jurisdictional retail interconnection processes. AES backs co-location in principle but wants flexible, technology-neutral incentives rather than mandatory physical net-injection limits, and asks FERC to defer to ongoing proceedings before locking in definitions. On cost recovery, AES prefers the existing customer-pays model for network upgrades and asks FERC to issue guidance on how termination fees in construction service agreements should flow into transmission rates.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "If the Commission asserts jurisdiction over load interconnection processes that have historically been state-jurisdictional or issues a standalone rulemaking without considering existing stakeholder efforts, then the ANOPR's objective of expediting large load interconnections in a non-discriminatory manner may be delayed.",
+      "concern": "FERC assertion of jurisdiction over traditionally state-jurisdictional load processes risks delay rather than speed",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "AES respectfully recommends that the Commission develop a robust record and consider existing stakeholder and state initiatives before seeking to standardize large load interconnection.",
+      "concern": "Commission should build a full record and account for state and stakeholder initiatives before standardizing",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "agreements to provide retail electric service (regardless of whether such agreements involve service under a high voltage tariff) are state jurisdictional because (among other reasons) such service necessarily involves service over distribution facilities to the end user.",
+      "concern": "Retail electric service agreements are state-jurisdictional regardless of voltage level",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "There is a clear role for the Commission in ensuring that certain cost-recovery mechanisms are just and reasonable (such as cost recovery related to the construction of network upgrades if a large load abandons the interconnection prior to taking retail service).",
+      "concern": "FERC has a clear role in ensuring cost recovery for network upgrades when a large load abandons service",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:protection",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "significant one-size-fits-all changes to the existing cost assignment paradigm for required network upgrades (i.e. 100% costs borne by the customer) are not needed to achieve the above considerations.",
+      "concern": "AES does not see a need for sweeping changes to the customer-pays cost assignment model",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "AES believes that the Commission could provide certainty to the market by issuing guidance, whether in the form of a policy statement or otherwise, regarding how termination fees from construction service agreements associated with transmission network upgrades should be accounted for in transmission rates.",
+      "concern": "FERC should issue guidance on how CSA termination fees flow into transmission rates",
+      "bins": [
+        "aq:deposits",
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "any incentives should be technology neutral and should not disincentivize other activities that support the grid, such as the development of energy storage or the adoption of innovative technologies.",
+      "concern": "Co-location incentives must be technology-neutral and not discourage storage or other grid-supporting resources",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "these incentives should not unduly harm other customers on the system, whether through cost-shifting, or otherwise.",
+      "concern": "Co-location incentives must not shift costs onto existing customers",
+      "bins": [
+        "aq:hybridrights",
+        "aq:protection",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Commission should explore other incentives without the need for physical limitations that effectively island large quantities of new generation.",
+      "concern": "Opposes mandatory physical net-injection limits that would island collocated generation from the grid",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Financial mechanisms to encourage certain behavior or account for deviations, without the need for potentially costly additional system protection equipment, should also be considered.",
+      "concern": "Financial incentives or penalties are preferable to expensive physical protection equipment for co-location",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "AES believes that the Commission should distinguish between co-location of loads with new versus existing generation, as the impacts to existing customers will differ.",
+      "concern": "Rules should treat co-location with new generation differently from co-location with existing generation",
+      "bins": [
+        "pr:colo",
+        "topic:existing-gen-retirement"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "AES believes that the system operator should be required to study that generation as a retirement if it is going to be effectively taken behind-the-meter in a manner that removes the energy and capacity benefits from the market.",
+      "concern": "Existing generation effectively removed from the market by co-location should be studied as a retirement",
+      "bins": [
+        "pr:colo",
+        "pr:study",
+        "topic:existing-gen-retirement"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "To meet the unprecedented demand growth over the next decade, AES believes that Commission focus is needed on expediting all possible solutions (including generation and battery capacity, demand response, targeted curtailment, and grid enhancing technologies).",
+      "concern": "FERC should pursue all supply-side and demand-side solutions to meet large-load growth",
+      "bins": [
+        "aq:expedited",
+        "topic:all-of-above-supply"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Preserve State Retail Jurisdiction",
+      "stance": "mixed",
+      "description": "AES supports FERC acting within its clear authority over transmission-level cost recovery but warns that asserting jurisdiction over historically state-jurisdictional retail interconnection processes would create disputes that delay, rather than speed, large-load connections. Retail electric service agreements are state-jurisdictional regardless of voltage level.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "CSA Termination Fee Guidance",
+      "stance": "support",
+      "description": "AES asks FERC to issue a policy statement clarifying how termination fees paid under construction service agreements for transmission network upgrades should be reflected in transmission rates, providing market certainty without restructuring the existing cost-assignment model.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Flexible Co-location Rights",
+      "stance": "mixed",
+      "description": "AES supports co-location in principle but opposes mandatory physical net-injection limits that would island collocated generation. It prefers financial mechanisms over costly system protection equipment and insists any rules be technology-neutral so storage and other grid resources are not penalized.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Existing Customer Protections",
+      "stance": "support",
+      "description": "AES strongly supports customer protection requirements: network upgrade costs should fall on the large load, termination fees must compensate the utility for stranded infrastructure, and co-location incentives must not shift costs onto existing ratepayers.",
+      "quote_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "All-of-Above Supply Solutions",
+      "stance": "support",
+      "description": "AES backs expedited action across all supply options, including generation, battery storage, demand response, curtailment, and grid-enhancing technologies, to keep pace with large-load demand growth.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Build Full Record First",
+      "stance": "support",
+      "description": "AES urges FERC to develop a thorough evidentiary record, incorporating existing stakeholder and RTO processes and technical conference testimony, before finalizing rules, so that any standards reflect actual regional and operational complexity.",
+      "quote_ids": [
+        2,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Customer-Pays Model Sufficient",
+      "stance": "support",
+      "description": "AES sees the existing 100% customer-pays model for network upgrades as adequate and does not support wholesale changes. It does ask for FERC guidance on how CSA termination fees and minimum-load penalties flow into transmission rates.",
+      "quote_ids": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Technology-Neutral Co-location Rules",
+      "stance": "mixed",
+      "description": "AES supports co-location as a tool to accelerate clean energy deployment but wants rules that allow flexible configurations, avoid physical islanding mandates, treat new and existing generation differently, and do not penalize storage or other innovative resources.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Financial Over Physical Limits",
+      "stance": "support",
+      "description": "AES prefers financial mechanisms (incentives, penalties for deviations) over physical limitations on injection and withdrawal rights for co-located facilities, arguing that physical constraints are costly and unnecessarily restrictive.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Clarify Co-location Definitions",
+      "stance": "neutral",
+      "description": "AES notes the ANOPR's hybrid facility definition may not capture the range of actual configurations, from separately metered shared interconnection points to fully islanded generation, and asks FERC to seek further comment before locking in a definition.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Show Cause Record",
+      "stance": "neutral",
+      "description": "AES flags that co-location and transmission charge questions are already before FERC in the PJM show cause proceeding and urges any new rules to account for that record to avoid inconsistent outcomes.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:existing-gen-retirement",
+      "name": "Study Existing Gen as Retirement",
+      "stance": "support",
+      "description": "AES argues that co-locating a large load with existing generation that is effectively removed from the market should trigger a retirement study by the system operator, protecting grid reliability and market supply adequacy.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:all-of-above-supply",
+      "name": "All Solutions for Demand Growth",
+      "stance": "support",
+      "description": "AES calls for FERC to pursue every available supply and demand tool, including storage, demand response, curtailment, and grid-enhancing technologies, alongside new generation, to address the scale of large-load growth.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

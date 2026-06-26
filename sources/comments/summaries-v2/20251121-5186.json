@@ -1,0 +1,324 @@
+{
+  "accession": "20251121-5186",
+  "filer": "Pacific Gas and Electric Company",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5186__Pacific-Gas-and-Electric-Company/RM-26-4-000_PGE Initial Large Load ANOPR Comments_11-21-25.txt",
+  "overall_summary": "PG&E draws on its experience developing Electric Rule 30 in California to offer detailed comments on each of the fourteen ANOPR principles, emphasizing that the Commission must respect state jurisdiction over retail service and cost allocation while leaving regional flexibility for study processes and cost responsibility frameworks. PG&E supports standardized deposits and protections against speculative applications but opposes a blanket 100% network upgrade cost assignment to large loads, instead urging refund mechanisms based on retail revenues. It also calls for clear grandfathering so customers already in the interconnection process can proceed under existing rules.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "PG&E believes that three key principles are essential to any final Commission rule: Protecting existing ratepayers from incurring additional or stranded costs while also adopting fair and equitable cost responsibility and allocation approaches for large load customers; Appropriately balancing state and Commission jurisdiction and developing a complimentary and cooperative framework, while also ensuring timely state action on large load issues; and Developing clear rules that will expedite large load interconnections by allowing flexibility rather than imposing additional requirements that slow the interconnection process.",
+      "concern": "three overarching principles PG&E says must govern any final rule",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:upgradecost",
+        "pr:cost",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the Commission should consider FPA limitations on retail electric sales issues as well as matters that are subject to state jurisdiction.",
+      "concern": "FERC must account for FPA limits and state authority over retail sales",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "any final rule should be consistent with the Commission's determination earlier this year 'the states get to determine which entities are legally permitted to provide electricity to retail customers in co-location arrangements. The states also get to determine how the wholesale costs of providing electricity to those retail customers are recovered through retail rates.'",
+      "concern": "co-location rules must preserve state authority over retail service and cost recovery",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the Commission should be mindful that 'the Commission and states each regulate within separate zones of exclusive jurisdiction, with the states retaining authority over those matters not expressly conveyed to the Commission under the FPA.'",
+      "concern": "FERC and states operate in separate jurisdictional zones that must be respected",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "To avoid delays and the uncertainty of potential mid-stream changes, PG&E strongly recommends that the Commission make clear that a final rule will only apply to large load customers who have not yet submitted an interconnection application to a utility and/or transmission provider as of the date of the Commission issues a decision.",
+      "concern": "grandfathering threshold: final rule should not apply to customers who have already filed applications",
+      "bins": [
+        "aq:threshold",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "PG&E recommends that the Commission not mandate a single study approach but instead allow individual utilities and/or Regional Transmission Organizations and Independent System Operators ('RTO/ISO') to decide the most efficient way to coordinate planning.",
+      "concern": "joint study of load, hybrid, and generation should not be mandated; let utilities and RTOs choose",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Adding into this mix load and hybrid facility interconnections may only exacerbate this problem. In some parts of the country, load and hybrid facility interconnection requests may be able to be seamlessly added to the generation interconnection process. In other parts of the country, adding this new requirement to an already overburdened process may be detrimental.",
+      "concern": "mandating joint study could worsen already strained generation queues in some regions",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "PG&E supports this proposal as an effective way to address speculative projects and to provide transmission providers with useful information.",
+      "concern": "supports standardized deposits and readiness requirements to filter speculative applications",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "This aspect of the ANOPR is problematic and requires modification. This proposal does not account for the likely situation that for any given time period, a co-located generator may be off-line (requiring the load to solely utilize the transmission system) or a large load facility may be partially or completely off-line or using less energy than forecasted (resulting in the generator injecting more into the transmission system).",
+      "concern": "hybrid facility study methodology is flawed because it ignores generator or load outage scenarios",
+      "bins": [
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "the Commission should direct that hybrid facilities be studied under multiple potential scenarios so that the interconnection facilities can be designed and built to accommodate the inevitable circumstance of a generator or large load being partially or wholly off-line.",
+      "concern": "hybrid studies should use multiple scenarios covering full outage and partial outage conditions",
+      "bins": [
+        "aq:hybridrights",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the Commission should not adopt a blanket rule that large loads and hybrid facilities offering curtailment/dispatchability always receive expedited consideration. There may be situations where a utility or transmission provider has limited transmission planning resources and those resources are already fully committed to studying interconnections which were previously submitted and have been pending for some time.",
+      "concern": "expedited queue priority for curtailable loads should not displace projects already well advanced",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Third, requiring a large load or hybrid facility to pay 100% of the network upgrade costs without any opportunity for refunds is contrary to judicial and Commission precedent.",
+      "concern": "100% upgrade cost assignment with no refund path conflicts with established precedent",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Large load and hybrid customers should be eligible for refunds based on the electric retail revenues produced from these facilities. Unlike generators, which often do not pay retail electric rates and do not produce substantial revenues which can offset interconnection infrastructure costs, large load and hybrid facilities generally pay retail electric rates which, in part, offset the costs of the infrastructure needed for these facilities.",
+      "concern": "large load customers warrant refunds because their retail payments offset infrastructure costs, unlike generators",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "The Commission should avoid a one-size-fits-all approach to cost responsibility and refunds especially given the unique rate structures and designs in each state. Instead, the Commission should allow utilities and/or states to develop a cost responsibility and refund proposal that is right for that utility and/or state.",
+      "concern": "cost responsibility rules should allow state-specific frameworks rather than a uniform national approach",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "the Commission should also be clear in a final rule that, where flexibility is available, the states cannot indefinitely delay action. To the extent a state fails to act or provide clear guidance and rules by the implementation deadline, a utility should be able to submit a Section 205 filing to the Commission proposing tariff provisions for that utility that are consistent with the Commission's decision.",
+      "concern": "state flexibility must be paired with a deadline to prevent indefinite regulatory inaction",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-action-deadline"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "PG&E recommends that large load customers that submit interconnection applications/requests prior to the effective date of the final rule be allowed to proceed under the rules and requirements in place at the time the interconnection request was submitted.",
+      "concern": "grandfathering: customers who applied before the final rule effective date should proceed under existing rules",
+      "bins": [
+        "aq:threshold",
+        "topic:grandfathering"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "the Commission should include in its final rule cost containment provisions for customer built facilities to avoid the construction of facilities that are excessively expensive.",
+      "concern": "customer-build option needs cost containment provisions to protect ratepayers",
+      "bins": [
+        "pr:cost",
+        "topic:customer-build"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "State vs. FERC Jurisdiction",
+      "stance": "mixed",
+      "description": "PG&E argues that FERC's authority under the FPA does not extend to retail electric service, retail rate design, or certain co-location matters, and urges the Commission to respect state regulatory zones. At the same time, it says states must not indefinitely delay action in areas where the Commission grants them flexibility.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        15
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Applicability and Grandfathering",
+      "stance": "support",
+      "description": "PG&E supports limiting the final rule to new loads above 20 MW, and strongly urges that customers who have already submitted interconnection applications be grandfathered under existing rules to avoid mid-process disruption.",
+      "quote_ids": [
+        5,
+        16
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Study Flexibility",
+      "stance": "oppose",
+      "description": "PG&E opposes mandating a single joint study approach for load, hybrids, and generation. It says overburdened generation queues in some regions would worsen if new load studies are folded in, and that utilities and RTOs should choose their own coordination methods.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Deposits and Readiness Requirements",
+      "stance": "support",
+      "description": "PG&E supports standardized deposits and readiness requirements as an effective filter against speculative interconnection requests, while asking for some regional flexibility on amounts and specifics.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid Facility Study Methodology",
+      "stance": "oppose",
+      "description": "PG&E finds the proposed hybrid study methodology flawed because it ignores the reality that generators and loads will sometimes be offline simultaneously. It calls for multi-scenario studies that cover full and partial outage conditions.",
+      "quote_ids": [
+        3,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Process for Curtailable Loads",
+      "stance": "mixed",
+      "description": "PG&E broadly supports prioritizing curtailable and dispatchable facilities but opposes a blanket rule that automatically moves them to the front of the queue, which could displace projects already deep in the study process.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Network Upgrade Cost Responsibility",
+      "stance": "oppose",
+      "description": "PG&E opposes assigning 100% of network upgrade costs to large load customers without a refund mechanism. It argues this conflicts with judicial and Commission precedent that all customers benefit from the integrated transmission network, and that large loads already offset costs through retail rates. It also calls for regional flexibility in cost frameworks.",
+      "quote_ids": [
+        1,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study Process Design",
+      "stance": "mixed",
+      "description": "PG&E supports grandfathering customers already in study while urging that new rules not mandate joint study processes that would strain existing queues. It also calls for multi-scenario studies for hybrid facilities.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost Responsibility and Refunds",
+      "stance": "oppose",
+      "description": "PG&E opposes a uniform 100% cost assignment rule and advocates for refund mechanisms tied to retail revenues, cost containment for customer-built facilities, and state-specific cost frameworks.",
+      "quote_ids": [
+        1,
+        12,
+        13,
+        14,
+        17
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Regional and Operational Flexibility",
+      "stance": "support",
+      "description": "PG&E consistently asks for flexibility rather than one-size-fits-all mandates: on study coordination, expedited queue rules, cost responsibility frameworks, and implementation timelines.",
+      "quote_ids": [
+        1,
+        11,
+        14
+      ]
+    },
+    {
+      "key": "topic:state-action-deadline",
+      "name": "State Flexibility with Deadline",
+      "stance": "support",
+      "description": "PG&E supports giving states flexibility to tailor rules but insists the final rule must set a deadline, and that utilities be allowed to file their own Section 205 tariff provisions if a state fails to act in time.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "topic:grandfathering",
+      "name": "Grandfathering Existing Applicants",
+      "stance": "support",
+      "description": "PG&E urges the Commission to let customers who filed interconnection applications before the final rule effective date proceed under existing rules, avoiding disruption to projects already underway.",
+      "quote_ids": [
+        16
+      ]
+    },
+    {
+      "key": "topic:customer-build",
+      "name": "Customer-Build Cost Containment",
+      "stance": "mixed",
+      "description": "PG&E generally supports giving customers an option to build their own interconnection facilities but says the rule must include cost containment provisions and require ownership transfer to the utility before energization.",
+      "quote_ids": [
+        17
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-26",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

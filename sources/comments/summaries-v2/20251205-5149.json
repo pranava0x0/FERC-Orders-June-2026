@@ -1,0 +1,151 @@
+{
+  "accession": "20251205-5149",
+  "filer": "Electric Power Supply Association",
+  "org_type": "generator_ipp",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5149__Electric-Power-Supply-Association/EPSA Reply Comments - ANOPR 12.5.25.txt",
+  "overall_summary": "EPSA, representing competitive power suppliers, urges FERC to first issue guidance for co-located large load arrangements based on the existing PJM show cause proceeding record, while cautioning against proposals that would allow transmission owners to build rate-based generation. EPSA also argues that FPA Section 212(h) does not limit FERC's jurisdiction over large load interconnection, as interconnection service is distinct from wheeling or retail delivery.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "EPSA urges the Commission to move forward with direction and guidance for co-located arrangements based on the extensive record set out in the PJM Show Cause proceeding on these issues.",
+      "concern": "FERC should act on co-located load guidance using the PJM show cause record rather than waiting for a full rulemaking",
+      "bins": ["pr:colo", "rg:pjm", "topic:phased-approach"]
+    },
+    {
+      "id": 2,
+      "text": "issuing guidance for co-located load arrangements should be task one in the near term for the Commission. This action does not need to run concurrently with any next steps in this rulemaking proceeding",
+      "concern": "Co-located load guidance should be the immediate priority, separate from the broader rulemaking",
+      "bins": ["pr:colo", "topic:phased-approach"]
+    },
+    {
+      "id": 3,
+      "text": "EPSA continues to urge the Commission to ensure that consideration and development of the next step in the instant rulemaking proceeding does not delay, hamper, or interfere with ongoing commercial transactions and arrangements.",
+      "concern": "The rulemaking process must not disrupt commercial deals already in progress",
+      "bins": ["pr:colo", "topic:phased-approach"]
+    },
+    {
+      "id": 4,
+      "text": "this proceeding is being utilized as an opportunity to press unwarranted attacks on our nation's competitive power markets in an attempt to hijack this critical emergent concern to dismantle competitive mechanisms and allow monopolistic behavior to flourish further.",
+      "concern": "EPSA opposes attempts by transmission owners to use this proceeding to justify utility self-build of generation",
+      "bins": ["pr:cost", "topic:competitive-markets"]
+    },
+    {
+      "id": 5,
+      "text": "Fundamentally, monopoly ownership stifles competition, increases consumer costs, distorts markets, and unfairly shifts financial risk from investors to ratepayers.",
+      "concern": "Allowing utilities to build rate-based generation harms consumers and undermines competitive markets",
+      "bins": ["pr:cost", "topic:competitive-markets"]
+    },
+    {
+      "id": 6,
+      "text": "Allowing transmission owners to return to the business of building and operating rate-based generation after Order No. 2000 was established to resolve massive cost overruns and poor operating performance under the previous regime should not be part of any solution.",
+      "concern": "Utility self-build of generation contradicts decades of competitive market policy",
+      "bins": ["pr:cost", "topic:competitive-markets"]
+    },
+    {
+      "id": 7,
+      "text": "In this uncertain environment, competitive markets place the risk of investment to meet load growth on shareholders rather than ratepayers.",
+      "concern": "Competitive markets protect ratepayers from investment risk under uncertain load forecasts",
+      "bins": ["pr:cost", "topic:competitive-markets"]
+    },
+    {
+      "id": 8,
+      "text": "A reliance on innovative market-based mechanisms should be the foundation of any next step in this rulemaking proceeding, while plaintive calls to reregulate should be dismissed for what they are – self-serving mis-directions which will not help us achieve our national goals.",
+      "concern": "Any reform should build on competitive market structures, not reregulation",
+      "bins": ["pr:cost", "topic:competitive-markets"]
+    },
+    {
+      "id": 9,
+      "text": "These arguments incorrectly conflate the wheeling/delivery and interconnection components of transmission service.",
+      "concern": "FPA Section 212(h) does not apply to interconnection because interconnection and wheeling are legally distinct",
+      "bins": ["aq:jurisdiction", "topic:ferc-jurisdiction"]
+    },
+    {
+      "id": 10,
+      "text": "the Commission's authority to require those types of interconnections arises under separate statutory provisions – FPA Sections 210 and 211.",
+      "concern": "FERC's interconnection authority rests on FPA Sections 210 and 211, not the wheeling provisions limited by Section 212(h)",
+      "bins": ["aq:jurisdiction", "topic:ferc-jurisdiction"]
+    },
+    {
+      "id": 11,
+      "text": "The arguments raising section 212(h) concerns attempt to establish a retail \"piece\" of the connection which then grants transmission owners a blanket lever for control over the interconnection – a scenario which, based on the ANOPR's reasoning and the additional legal support included in EPSA's initial comments, runs contrary to the statutory intent and the goal of the ANOPR itself.",
+      "concern": "Section 212(h) arguments are a pretext for transmission owners to delay or control interconnections",
+      "bins": ["aq:jurisdiction", "topic:ferc-jurisdiction"]
+    },
+    {
+      "id": 12,
+      "text": "This hook is also inappropriately established by comments suggesting that any hybrid load interconnection must include a delivery meter – thereby transmogrifying every connection into a state-jurisdictional arrangement.",
+      "concern": "Requiring a delivery meter on hybrid connections would improperly shift federal interconnection authority to state regulators",
+      "bins": ["aq:jurisdiction", "aq:hybridrights", "topic:ferc-jurisdiction"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC interconnection authority",
+      "stance": "support",
+      "description": "EPSA argues that FPA Section 212(h) does not constrain FERC's jurisdiction over large load interconnection because interconnection service is legally separate from wheeling or retail delivery. FERC's authority rests on Sections 210 and 211, and Section 212(h) arguments are a pretext for transmission owners to control or delay interconnections.",
+      "quote_ids": [9, 10, 11, 12]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid load delivery meter dispute",
+      "stance": "oppose",
+      "description": "EPSA opposes the view that any hybrid load interconnection must include a delivery meter. Requiring such a meter would treat every hybrid connection as a state-jurisdictional arrangement and give transmission owners unwarranted control over federal interconnection.",
+      "quote_ids": [12]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Prioritize co-located load guidance",
+      "stance": "support",
+      "description": "EPSA urges FERC to act first on co-located large load arrangements by drawing on the extensive PJM show cause record. This guidance can and should proceed separately from the broader rulemaking and must not disrupt ongoing commercial transactions.",
+      "quote_ids": [1, 2, 3]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Preserve competitive markets",
+      "stance": "support",
+      "description": "EPSA strongly opposes proposals that would allow transmission owners to build and rate-base new generation, arguing this would raise consumer costs, shift risk to ratepayers, and reverse two decades of competitive market policy. Any reform should rest on market-based mechanisms rather than reregulation.",
+      "quote_ids": [4, 5, 6, 7, 8]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM show cause record",
+      "stance": "neutral",
+      "description": "EPSA references the PJM show cause proceeding as the foundation for near-term co-located load guidance, citing its extensive record developed over more than nine months.",
+      "quote_ids": [1]
+    },
+    {
+      "key": "topic:phased-approach",
+      "name": "Phase guidance before rulemaking",
+      "stance": "support",
+      "description": "EPSA recommends a phased approach: issue co-located load guidance promptly from the existing record, then address broader large load interconnection rules. The two tracks should run independently so pending commercial arrangements are not disrupted.",
+      "quote_ids": [1, 2, 3]
+    },
+    {
+      "key": "topic:competitive-markets",
+      "name": "Block utility self-build of generation",
+      "stance": "oppose",
+      "description": "EPSA characterizes calls for transmission owners to build rate-based generation as self-serving attacks on competitive markets. Historical examples from PJM and Georgia illustrate that ratepayers bear the cost of overbuilt or stranded utility investments, while competitive markets place that risk on investors.",
+      "quote_ids": [4, 5, 6, 7, 8]
+    },
+    {
+      "key": "topic:ferc-jurisdiction",
+      "name": "Section 212(h) does not limit FERC",
+      "stance": "oppose",
+      "description": "EPSA rebuts arguments that FPA Section 212(h) limits FERC's authority over large load interconnection. The Commission's interconnection power derives from Sections 210 and 211, which are independent of the wheeling and retail delivery provisions addressed by Section 212(h).",
+      "quote_ids": [9, 10, 11, 12]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction", "hybridrights"],
+    "pr": ["colo", "cost"],
+    "rg": ["pjm"]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

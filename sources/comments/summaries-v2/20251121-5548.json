@@ -1,0 +1,191 @@
+{
+  "accession": "20251121-5548",
+  "filer": "David Gardiner & Associates",
+  "org_type": "think_tank",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5548__David-Gardiner-and-Associates/DGA Initial Comments on RM26-4.txt",
+  "overall_summary": "DGA argues that FERC should include demand-reduction tools, particularly data center heat reuse which can cut electricity demand by 10 to 30 percent, alongside infrastructure development in addressing large load growth. DGA recommends FERC incentivize these reductions through speed-to-power benefits in the interconnection process rather than market payments, as permanent reductions are more valuable than flexible demand response.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "FERC's jurisdiction over wholesale rates includes the responsibility to ensure customers are \"protect[ed] 'against excessive prices' and [to] ensure effective transmission of electric power.\"",
+      "concern": "FERC's mandate to protect customers from excessive rates",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the new large loads present important economic and technological opportunities for our nation; however, due to their unprecedented size, these loads are having, and will continue to have, a direct impact on resource and infrastructure adequacy across the nation which have corresponding impacts on wholesale rates",
+      "concern": "Large loads directly impact infrastructure needs and wholesale rates",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "DGA encourages FERC to consider a broad range of options that are aimed at both: (1) adding needed infrastructure to the grid—including by facilitating cost-effective transmission development to interconnect additional generation capacity in a timely manner, and (2) mitigating the total load requirements to temper additional infrastructure needs—including by improving the accuracy of load forecasting and by reducing overall demand of individual facilities",
+      "concern": "FERC should balance infrastructure addition with demand-mitigation strategies",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "data centers—the largest individual sources of projected load growth—can reduce their facilities electricity demand by 10 to 30% by reusing their waste heat",
+      "concern": "Data centers can achieve significant efficiency gains through heat reuse",
+      "bins": [
+        "pr:cost",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Such energy efficiency tools provide several benefits that are directly related to the issues raised in this docket, including tempering wholesale rates and facilitating speed-to-power by making efficient use of headroom on the system",
+      "concern": "Energy efficiency benefits both rates and system headroom",
+      "bins": [
+        "pr:cost",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "data centers are the largest driver of demand and energy growth, accounting for about 55% of demand growth in utility load forecasts over the next five years",
+      "concern": "Data centers dominate near-term load growth forecasts",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "sixteen GW-scale data centers with an aggregate demand of nearly 30 GW are scheduled to come online in 2026 and 2027",
+      "concern": "Unprecedented scale and speed of data center deployment",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "63% of the increase in capacity prices in the 2025/26 auction can be attributed to data centers, translating to $9.3 billion in infrastructure costs that will be passed on to ratepayers",
+      "concern": "Data center load growth directly drives infrastructure cost burden on ratepayers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "energy efficiency solutions can have a direct and measurable impact on data center demand and should be considered as part of FERC's solution set",
+      "concern": "Energy efficiency should be a core FERC solution",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Because cooling operations can account for 40% of data center electricity consumption, these facilities can mitigate their overall electricity needs by reusing the data center's heat in other applications",
+      "concern": "Heat reuse directly addresses cooling, which is the largest data center load component",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Data center heat reuse can reduce data center electricity demand by 10 to 30%, which translates to \"reduc[ing] new power demand by as much as 27 GW, [and] avoiding the construction of as many as 54 new conventional 500 megawatt (MW) power plants.\"",
+      "concern": "Heat reuse has grid-scale impact on needed generation capacity",
+      "bins": [
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "data center heat reuse is a proven technology that has been widely adopted across Europe, it remains an underutilized tool in the United States",
+      "concern": "Heat reuse is proven but underused in the U.S.",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "While demand reductions can play a key role in resolving resource constraints there is little incentive for data centers to implement these actions unilaterally",
+      "concern": "Market alone does not incentivize efficiency",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "FERC has a unique role and opportunity to incentivize demand reductions, and it should use this power to protect existing customers",
+      "concern": "FERC should use regulatory power to incentivize reductions",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "DGA recommends that such incentives should focus on speed to power rather than market payments for two main reasons. First, unlike traditional demand response and load flexibility tools, which provide real time flexibility to the energy markets, proactive demand reductions provide permanent reductions. Second, time is money and there is more leverage in providing an incentive to interconnect quicker (whether through a new load interconnection process or via the generation interconnection process) than there is in potential future market payments",
+      "concern": "Speed-to-power incentives are superior to market payments because they drive permanent reductions",
+      "bins": [
+        "pr:flex"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Large load impacts wholesale rates",
+      "stance": "neutral",
+      "description": "Large loads directly impact infrastructure adequacy and wholesale rates, with data center load growth now driving 63 percent of PJM capacity price increases. FERC's mandate includes protecting customers from excessive prices, making this a core regulatory concern.",
+      "quote_ids": [
+        1,
+        2,
+        8
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Demand forecasting and load growth magnitude",
+      "stance": "neutral",
+      "description": "Data centers account for about 55 percent of utility demand growth over the next five years, with unprecedented scale (16 GW-scale facilities) coming online in 2026-2027. FERC should balance infrastructure solutions with demand-mitigation strategies including improved forecasting.",
+      "quote_ids": [
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Energy efficiency as a demand-mitigation tool",
+      "stance": "support",
+      "description": "Data center heat reuse is a proven technology that can reduce electricity demand by 10 to 30 percent, avoiding construction of dozens of large power plants. Energy efficiency should be part of FERC's solution set, and FERC should incentivize reductions through speed-to-power benefits in the interconnection process rather than market payments, since permanent reductions are more valuable than flexible demand response.",
+      "quote_ids": [
+        4,
+        5,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "study",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

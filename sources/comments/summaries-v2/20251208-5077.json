@@ -1,0 +1,198 @@
+{
+  "accession": "20251208-5077",
+  "filer": "Oklo Inc.",
+  "org_type": "generator_ipp",
+  "filed": "12/08/2025",
+  "source_text": "sources/comments/files/20251208-5077__Oklo-Inc/Oklo Reply Comment - Interconnection of Large Loads.txt",
+  "overall_summary": "Oklo supports ANOPR principles for large load interconnection, emphasizing cost causation and co-location benefits. The company advocates for study methodologies that evaluate hybrid facilities on net impact rather than gross characteristics and for transmission planning rules that evaluate site-flexible alternatives fairly rather than biasing toward remote generation and long-distance transmission.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Meeting this demand reliably and affordably requires regulatory frameworks that adapt to market dynamics rather than relying on static assumptions.",
+      "concern": "Interconnection rules must adapt to rapid demand growth",
+      "bins": [
+        "topic:adaptive-rules"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Our model internalizes the costs of powering specific large loads—our business model does not require and does not seek to shift costs to captive ratepayers.",
+      "concern": "Co-location minimizes cost externalities to other ratepayers",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The principles articulated in the ANOPR, if implemented thoughtfully, will facilitate efficient grid development and support innovative models like Oklo's.",
+      "concern": "Supports ANOPR principles for large load integration",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "FERC should revisit transmission planning rules, including those in Order No. 1920, to ensure they do not bias the system towards unnecessary transmission expansion when more efficient alternatives exist.",
+      "concern": "Transmission planning should not prefer long-distance lines over co-located alternatives",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "costs should be allocated to those who cause them and benefit from the resulting services. This is essential for ensuring just and reasonable rates",
+      "concern": "Cost causation principle should guide interconnection reform",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Advanced nuclear technology allows reliable, carbon-free, baseload power to be generated close to large loads, minimizing the need for costly transmission investments.",
+      "concern": "Site-flexible advanced nuclear reduces transmission needs",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "hybrid facilities should be studied based on the amount of injection and/or withdrawal rights requested. This focus on net impact, rather than gross characteristics, is critical.",
+      "concern": "Study methodologies should focus on net impact, not gross characteristics",
+      "bins": [
+        "pr:colo",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Methodologies should not default to 'worst-case' assumptions (e.g., assuming co-located generation is offline during peak load) if the facility is not configured to operate that way.",
+      "concern": "Study assumptions should match actual hybrid facility operation",
+      "bins": [
+        "pr:study",
+        "topic:hybrid-facility-treatment"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "load and hybrid facilities should be responsible for 100% of the network upgrades that they are assigned through the interconnection studies. This aligns directly with the cost causation principle.",
+      "concern": "Large loads must bear full cost responsibility for required upgrades",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "If these costs are not assigned to the interconnection customer, they are socialized across ratepayers. Such cross-subsidization is inequitable and economically inefficient",
+      "concern": "Cost socialization across ratepayers distorts efficient siting decisions",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "utilities serving large loads, including hybrid facilities, should be responsible for transmission service based on the large load's withdrawal rights, as this 'reflects the quantity of capacity and energy that is being transmitted across the transmission system to the load.'",
+      "concern": "Transmission charges should be based on actual rights, not gross load",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "These technologies offer reliable, high-capacity-factor attributes without the need for costly, long-distance transmission projects. If the Commission's planning rules default towards identifying projects based on outdated location assumptions, they will overestimate transmission needs.",
+      "concern": "Planning rules biased toward remote generation overestimate transmission needs",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "planning processes must evaluate alternatives on a level playing field and long-term scenarios must realistically account for advanced nuclear deployment rather than defaulting to intermittent resource characteristics.",
+      "concern": "Transmission planning should fairly compare alternatives including advanced nuclear",
+      "bins": [
+        "pr:proximate"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Full cost responsibility for large loads",
+      "stance": "support",
+      "description": "Large load interconnection customers should bear 100% of transmission upgrades they trigger and pay for transmission service based on actual withdrawal and injection rights requested, not gross load. This directly applies cost causation and prevents cross-subsidization across ratepayers.",
+      "quote_ids": [
+        5,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location minimizes grid impact",
+      "stance": "support",
+      "description": "Hybrid facilities placing generation and load at the same point reduce transmission expansion needs. Study methodologies should evaluate co-located systems on net impact (actual rights) rather than gross characteristics, with study assumptions matching actual operational parameters.",
+      "quote_ids": [
+        2,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Interconnection study reforms",
+      "stance": "support",
+      "description": "ANOPR principles for large load integration, if implemented, enable efficient grid development. Study processes must capture co-location benefits and avoid worst-case assumptions when hybrid facilities operate reliably.",
+      "quote_ids": [
+        3,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Efficient generation siting over transmission expansion",
+      "stance": "support",
+      "description": "Transmission planning rules should not bias the system toward unnecessary long-distance transmission when site-flexible alternatives exist. Planning must evaluate all options fairly, account for advanced nuclear deployment, and right-size transmission to actual demand.",
+      "quote_ids": [
+        4,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "topic:hybrid-facility-treatment",
+      "name": "Hybrid facility operational realism",
+      "stance": "support",
+      "description": "Study assumptions must reflect how hybrid facilities actually operate rather than worst-case scenarios. A co-located facility with firm generation should not be studied assuming generation offline during peak load.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:adaptive-rules",
+      "name": "Adaptive regulatory framework for demand growth",
+      "stance": "support",
+      "description": "Interconnection rules must adapt to market dynamics and extraordinary demand growth from data centers and industry, rather than relying on static assumptions.",
+      "quote_ids": [
+        1
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "colo",
+      "study",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

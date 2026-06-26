@@ -1,0 +1,257 @@
+{
+  "accession": "20251121-5333",
+  "filer": "Power for Tomorrow",
+  "org_type": "trade_assoc",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5333__Power-for-Tomorrow/FINAL PFT FERC DOE ANOPR Comments.txt",
+  "overall_summary": "Power for Tomorrow argues that large load interconnection problems are not uniform across the country, and that vertically integrated utilities regulated by state commissions have handled the challenge effectively. The group urges FERC to limit federal intervention to organized wholesale markets where regulatory failures are documented, and to avoid preempting state authority that is already working. Any federal action should be paired with cost protections for existing customers and should stop short of expanding the interconnection concept to encompass retail energy and capacity services.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Facilitating expeditious interconnection of these new customers is an important goal, but the proposal raises key questions about FERC's jurisdiction and, ultimately, could exacerbate the challenges of new large loads: speedy interconnection without expanding supply will strain reliability further and increase costs for all.",
+      "concern": "Expediting interconnection without adding supply risks higher costs and worse reliability",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:expedited",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "PFT respectfully urges the Commission to: (1) recognize the vital state regulatory role in effectively managing and serving large loads, overseeing intrastate transmission, and determining cost allocation; and (2) cautiously examine its jurisdictional authority so as to remain within the bounds of the law and preserve states' jurisdiction to continue to develop and deploy successful approaches to the large load challenge.",
+      "concern": "FERC should preserve state authority over cost allocation and intrastate transmission",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "While large load interconnection presents challenges nationwide, the nature and severity of these challenges vary dramatically based on regional market structure and the effectiveness of state regulatory oversight.",
+      "concern": "The severity of interconnection problems depends on regional market structure, not a uniform national failure",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:regional-variation"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Such arrangements potentially avoid transmission upgrade costs and network service charges while creating reliability concerns: largest customers that can satisfy their demand close to the point of generation, effectively reducing the pool of generation available to all other customers participating in markets.",
+      "concern": "Co-location arrangements let large loads avoid upgrade costs and shrink the shared generation pool",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Generators seek access to wholesale markets, within FERC's jurisdiction, but large loads seek to interconnect to obtain bundled retail services, within states' jurisdiction.",
+      "concern": "Loads and generators are fundamentally different, so generator interconnection rules should not be applied to loads",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "DOE's assertion that transmission service encompasses 'the appurtenant benefits of such' threatens state jurisdiction to the extent that new large loads could, for example, argue that failure to provide them energy and capacity is a violation of the terms of their interconnection or entitles them to direct access to wholesale markets.",
+      "concern": "DOE's bundled-service framing could let large loads claim a right to wholesale energy, undermining state authority",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "In January 2025, the Georgia PSC unanimously approved new rules requiring data centers using more than 100 MW to be billed based on project risks and to pay transmission and distribution costs as construction progresses.",
+      "concern": "Georgia's rules show state commissions can protect ratepayers from large-load cost shifts",
+      "bins": [
+        "pr:cost",
+        "topic:state-model-success"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Throughout the Southeast, vertically integrated utilities have successfully interconnected large loads without the queue backlogs and cost-shifting controversies that exist in some markets.",
+      "concern": "Southeast vertically integrated utilities handle large load interconnection without the queue or cost problems seen in some RTOs",
+      "bins": [
+        "topic:state-model-success",
+        "topic:regional-variation"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "FERC should avoid taking action or asserting jurisdiction in such a way that would serve as an effective preemption of large load interconnection through DOE Section 403 authority or sweeping changes to FERC-jurisdictional interconnection procedures could disrupt effective state regulation without corresponding benefits in jurisdictions where state processes work well.",
+      "concern": "Broad federal preemption risks disrupting effective state models without delivering benefits",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:preemption-risk"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "DOE and FERC could consider, for example, establishing safe harbor provisions whereby states demonstrating effective management of large load interconnection remain free from federal procedural mandates or that encourage states to continue to holistically solve the interrelated challenges of interconnection of large loads and critical new generation.",
+      "concern": "Safe harbor provisions would shield well-functioning state programs from federal mandates",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study",
+        "topic:safe-harbor"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "PFT urges FERC to support the existing functions of state utility regulators while focusing on reforming capacity markets, strengthening transmission planning requirements, and taking a hard look at whether co-located loads are avoiding their share of grid costs and upgrades.",
+      "concern": "Federal action should focus on capacity market reform and ensuring co-located loads pay their share of grid costs",
+      "bins": [
+        "pr:cost",
+        "pr:colo",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "FERC should at a minimum take steps to require that transmission-interconnected large loads participate in efforts to ensure the reliability of the grid and support good transmission and generation planning by providing accurate and timely information about their plans and operations—and are penalized for failure to disclose relevant information or for seeking multiple, duplicative interconnections that distort load forecasting and planning.",
+      "concern": "Large loads should face disclosure requirements and penalties for duplicative interconnection requests",
+      "bins": [
+        "pr:study",
+        "topic:disclosure-requirements"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Jurisdictional Limits on FERC",
+      "stance": "mixed",
+      "description": "PFT acknowledges FERC has some authority over transmission-level interconnection in RTO/ISO footprints but warns that DOE's proposal risks expanding that authority into retail service territory reserved to states. The filer stresses that loads and generators are fundamentally different and that the Federal Power Act does not authorize FERC to regulate the bundled retail services large loads seek. Federal action should stay within those limits.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Speed Without Supply Backfires",
+      "stance": "oppose",
+      "description": "PFT opposes framing expedited interconnection as an unqualified goal. Faster queue processing that outpaces new generation additions will tighten supply and raise costs for all customers, making the underlying problem worse rather than better.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Co-location Cost Avoidance",
+      "stance": "oppose",
+      "description": "PFT is concerned that co-location arrangements allow large loads to bypass transmission upgrade costs and network charges, reducing the generation pool available to other market participants and raising costs for existing customers.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Protect Existing Customer Costs",
+      "stance": "support",
+      "description": "PFT consistently supports cost protections for existing ratepayers. The filer cites Georgia's risk-based billing rules for data centers as a model and urges FERC to ensure any federal action is paired with measures that prevent cost shifts from large loads onto ordinary customers.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        7,
+        11
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Must Pay Grid Costs",
+      "stance": "oppose",
+      "description": "PFT urges FERC to examine whether co-located loads are avoiding their fair share of grid upgrade costs. The DOE framing that bundles transmission interconnection with energy and capacity access could let co-located facilities argue entitlement to wholesale market services while escaping transmission charges.",
+      "quote_ids": [
+        4,
+        6,
+        11
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Planning and Disclosure Requirements",
+      "stance": "support",
+      "description": "PFT supports requiring large loads to provide accurate, timely information on their plans and operations to support transmission and generation planning. The filer also endorses safe harbor provisions tied to demonstrated state-level planning effectiveness, and calls for FERC to strengthen transmission planning requirements broadly.",
+      "quote_ids": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:regional-variation",
+      "name": "Challenges Vary by Region",
+      "stance": "neutral",
+      "description": "The filing documents that large load interconnection difficulties are concentrated in certain RTO and ISO footprints and are not a uniform national problem. Southeast vertically integrated utilities and MISO South have managed large load additions without the queue backlogs seen elsewhere, pointing to market structure as the key variable.",
+      "quote_ids": [
+        3,
+        8
+      ]
+    },
+    {
+      "key": "topic:state-model-success",
+      "name": "State Oversight Delivers Results",
+      "stance": "support",
+      "description": "PFT highlights Georgia PSC's 2025 data center billing rules and the broader Southeast track record as evidence that state commissions with certificate of need proceedings and integrated resource planning can handle large load interconnection effectively without federal mandates.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "topic:preemption-risk",
+      "name": "Federal Preemption Risks Backfire",
+      "stance": "oppose",
+      "description": "PFT warns that broad federal action under DOE Section 403 authority could disrupt ongoing state proceedings that are working well, delay projects currently moving through state processes, and impose ISO/RTO-style procedures on vertically integrated utilities where they do not fit.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:safe-harbor",
+      "name": "Safe Harbor for Effective States",
+      "stance": "support",
+      "description": "PFT recommends that FERC and DOE create safe harbor provisions exempting states that have demonstrated effective large load management from new federal procedural requirements, preserving successful approaches while targeting intervention where problems are real.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:disclosure-requirements",
+      "name": "Penalize Duplicative Requests",
+      "stance": "support",
+      "description": "PFT asks FERC to require large loads to disclose plans and operations to support grid planning and to penalize those that seek multiple duplicative interconnection requests that distort load forecasts.",
+      "quote_ids": [
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "expedited",
+      "hybridrights"
+    ],
+    "pr": [
+      "cost",
+      "colo",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

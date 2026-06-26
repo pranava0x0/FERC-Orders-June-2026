@@ -1,0 +1,266 @@
+{
+  "accession": "20251205-5253",
+  "filer": "Indicated PJM Transmission Owners",
+  "org_type": "transmission_owner",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5253__Indicated-PJM-Transmission-Owners/Indicated PJM TOs Reply Comments (12.5.2025 final).txt",
+  "overall_summary": "The Indicated PJM TOs urge the Commission to keep the ANOPR narrowly scoped, limit any large-load rule to data centers at 200 MW or above, preserve rolled-in rate treatment for network upgrade costs, and reject the option to build for load customers. They argue that expanding scope, lowering the threshold, mandating direct assignment, or importing generator-style rights would delay interconnection, harm traditional industrial customers, and invite litigation.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the goals of the ANOPR will best be served by the Commission developing an appropriately targeted rule that does not disturb the significant work already underway in many states and regions to energize large loads, including data centers.",
+      "concern": "Scope should stay narrow to avoid disrupting state and regional efforts already in progress.",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:anopr-scope"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Failure to do so will result in a larger, more confused record, a risk of increased litigation, and create more hurdles for both transmission providers and data center customers.",
+      "concern": "Expanding ANOPR scope raises litigation risk and slows data center interconnection.",
+      "bins": [
+        "topic:anopr-scope"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Issues regarding the appropriate scope of regional versus local planning and competition have been comprehensively addressed and decided by the Commission in those prior orders.  There is no reason to re-open those issues now, and certainly not in this proceeding, where meeting the goals of the ANOPR will require the Commission to move quickly and in a targeted manner.",
+      "concern": "Regional planning and competition questions are settled and should not be reopened here.",
+      "bins": [
+        "topic:anopr-scope",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "it is in the best interest of the Commission and all stakeholders to adopt a reasonably narrow definition that confines the application of the rules to the types of customers driving the ANOPR:  large data center loads.",
+      "concern": "The large-load definition should be confined to large data center customers.",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the Commission should focus this rulemaking on data center customers that are driving the largest load additions and contributing to network upgrades, and not adopt a threshold so low that it undermines efficiency and adversely impacts traditional industrial and commercial load customers.",
+      "concern": "A low threshold like 20 MW harms industrial and commercial customers not driving the problem.",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Applying generic rules to a broad swathe of large load customers will likely end up making load interconnections more inefficient, both for data center customers as well as traditional industrial and commercial customers that often have very different technical, financial, and regulatory needs.",
+      "concern": "Broad applicability creates inefficiency for customers with different needs.",
+      "bins": [
+        "aq:threshold",
+        "topic:customer-segmentation"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "A number of commenters indicate support for direct assignment of network transmission upgrade costs to large load customers, claiming that doing so best comports with cost causation principles.  Their assertions are wrong and contrary to decades of Commission precedent governing transmission pricing policy.",
+      "concern": "Direct assignment of network upgrade costs contradicts long-standing Commission precedent.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "transmission upgrades, even when prompted in whole or part by data center interconnections can, and often do, involve significant work on integrated facilities that serve customers across wide geographic areas.",
+      "concern": "Network upgrades triggered by data centers often benefit the broader system, not just the triggering customer.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Direct assignment of network upgrade costs dramatically increases the costs to the data center and will likely reduce the number of data centers that interconnect and slow others that are sufficiently brave to weather the process.",
+      "concern": "Direct assignment deters data center interconnection and undermines speed-to-power goals.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "the better approach, and one that avoids protracted cost allocation disputes, as well as better respects jurisdictional boundaries, is to continue to apply the Commission's longstanding preference for rolled-in rate treatment as the default cost allocation methodology for large load driven network upgrades.",
+      "concern": "Rolled-in rate treatment is the correct default for large-load network upgrade costs.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the Commission should instead consider encouraging transmission providers to develop and submit for filing large load service agreements that contain comprehensive customer protection mechanisms",
+      "concern": "Service agreements with consumer protections are a better mechanism than direct assignment for managing cost shifts.",
+      "bins": [
+        "pr:cost",
+        "topic:service-agreements"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "experience with generator interconnections, as well as a recognition of the differences between generators and load customers, demonstrates otherwise.",
+      "concern": "Generator interconnection experience shows option to build does not produce meaningful savings for load customers.",
+      "bins": [
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "When factoring in these additional requirements, any potential efficiencies or cost savings are rendered de minimis or non-existent.",
+      "concern": "Supervision overhead from option to build eliminates any projected cost or time savings.",
+      "bins": [
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Load is not competing with generation for access to the system and is therefore not similarly situated to generation.",
+      "concern": "Load and generation are not comparable, so equal treatment under option to build is not required.",
+      "bins": [
+        "topic:option-to-build",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "on-site load and generation need to be studied at their full amounts to ensure reliable interconnection.",
+      "concern": "Net-basis study for hybrid facilities understates load and creates reliability and cost-shift risks.",
+      "bins": [
+        "pr:study",
+        "aq:hybridrights"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Respect State and Retail Jurisdiction",
+      "stance": "support",
+      "description": "The filer warns that large-load interconnections invariably touch state-jurisdictional retail service and local distribution facilities. Any Commission rule that expands scope or adopts a low threshold risks conflicts with state authority and resulting litigation.",
+      "quote_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "200 MW Data-Center-Only Definition",
+      "stance": "support",
+      "description": "The filer argues the 20 MW ANOPR threshold is too low and should be raised substantially, to at least 200 MW, and limited to data center customers. A broader definition sweeps in industrial and commercial customers with different needs and would make interconnection less efficient for everyone.",
+      "quote_ids": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Reject Direct Assignment of Network Costs",
+      "stance": "oppose",
+      "description": "The filer argues direct assignment of network upgrade costs contradicts decades of Commission precedent, discourages data center investment, and ignores the system-wide benefits of integrated upgrades. It supports retaining rolled-in rate treatment as the default.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Full Study of Hybrid Load and Generation",
+      "stance": "oppose",
+      "description": "The filer opposes net-basis study for hybrid facilities, stating that studying load and generation only at net amounts masks real reliability needs and can shift costs to other customers when on-site generation goes offline.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Rolled-In Rates as Default Policy",
+      "stance": "support",
+      "description": "The filer strongly supports preserving rolled-in rate treatment and encourages service agreements with consumer protection terms as the vehicle for managing cost shifts, rather than direct assignment or holding wholesale entities responsible for a single customer's upgrade costs.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Full-Amount Study for Hybrid Facilities",
+      "stance": "support",
+      "description": "The filer supports studying load and generation from hybrid facilities at full amounts, not on a net basis, to correctly size required upgrades and prevent reliability gaps and cost shifts.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "topic:anopr-scope",
+      "name": "Keep ANOPR Narrowly Targeted",
+      "stance": "support",
+      "description": "The filer argues the Commission should decline to address issues outside the ANOPR's core purpose, including regional planning competition, long-term planning under Order 1920, load forecasting requirements, and mandates for specific technologies. Expanding scope will slow the rulemaking and increase litigation.",
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "key": "topic:customer-segmentation",
+      "name": "Distinguish Data Centers from Other Large Loads",
+      "stance": "support",
+      "description": "The filer argues that data center customers have distinct speed-to-power needs and financial profiles that differ from traditional industrial and commercial customers, and generic rules applied across all large loads will harm customers the ANOPR was not meant to cover.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:service-agreements",
+      "name": "Service Agreements Over Mandatory Rules",
+      "stance": "support",
+      "description": "Rather than a direct-assignment mandate, the filer recommends the Commission encourage transmission providers to file large-load service agreements that include minimum charges, early termination fees, and other consumer protections to manage cost shifts for both retail and wholesale customers.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:option-to-build",
+      "name": "Oppose Load Customer Option to Build",
+      "stance": "oppose",
+      "description": "The filer opposes extending the option to build to large load customers. Generator interconnection experience shows the supervision burden eliminates projected savings, and load is not comparable to generation because it is not competing for access to the system.",
+      "quote_ids": [
+        12,
+        13,
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "upgradecost",
+      "hybridrights"
+    ],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

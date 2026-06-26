@@ -1,0 +1,303 @@
+{
+  "accession": "20251121-5476",
+  "filer": "Bloom Energy Corporation",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5476__Bloom-Energy-Corporation/RM26-4_Bloom Energy Corp. Comments_11-21-25.txt",
+  "overall_summary": "Bloom Energy, a fuel cell manufacturer, supports the ANOPR's hybrid facility interconnection reforms and urges expedited joint study of co-located load and generation to minimize network upgrade costs. Bloom asks FERC to extend expedited study eligibility beyond curtailable/dispatchable facilities to those where primary power covers 100% of peak load, and opposes any rule that would deny cash-equivalent refunds to hybrid facility generators, arguing that would be unduly discriminatory.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The ANOPR presents a major leap forward for interconnecting on-site generation and load as a composite resource.  The Commission should act expeditiously in adopting interconnection reforms.",
+      "concern": "Bloom endorses the ANOPR as a strong foundation and calls for fast Commission action.",
+      "bins": [
+        "pr:study",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Bloom takes no position on whether the Federal Power Act provides FERC jurisdiction over large load interconnections.  However, if the Commission declines to assert jurisdiction, Bloom urges the Commission to adopt reforms to the large generator interconnection procedures for interconnecting on-site large load – that is, new generation co-located with large load behind the same point of interconnection (\"hybrid facilities\").",
+      "concern": "Bloom is agnostic on FERC jurisdiction but wants generator-side reforms regardless.",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Properly structured hybrid facility interconnection procedures will incentivize data centers to deploy on-site generation that meets their peak loads, thereby easing resource adequacy concerns while protecting existing customers from costs.",
+      "concern": "Bloom argues that well-designed hybrid rules benefit both data centers and existing ratepayers.",
+      "bins": [
+        "pr:colo",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Like the ANOPR, Brattle finds that an integrated interconnection study approach for new load and new generation based on requested firm withdrawals and injections can significantly reduce the need for transmission upgrades, potentially avoiding billions in transmission expansion costs.",
+      "concern": "Integrated study of hybrid facilities can save billions in transmission upgrade costs.",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "aq:jointstudy"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "under existing rules, load is studied as if it seeks firm rights to withdraw 100% from the transmission system to meet its requirements, while the generator is studied as if it seeks to inject 100% of its capacity into the transmission grid, with some RTOs, like PJM, requiring that generator capacity also be studied for deliverability to load throughout the system.  These bifurcated, non-integrated processes ignore on-site supply benefits and can improperly identify required Network Upgrades, resulting in slower interconnection and unnecessarily increasing Network Upgrade costs.",
+      "concern": "Current bifurcated study process overstates required upgrades by ignoring co-located supply.",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "DOE's proposal makes sense, though the Commission should clarify that such rights refer to \"firm\" withdrawal and injection rights.",
+      "concern": "Bloom supports study based on requested rights but asks FERC to confirm they mean firm rights.",
+      "bins": [
+        "pr:study",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The scope of the term \"unauthorized\" must be addressed.  Bloom urges the Commission to distinguish between inadvertent or transient injections (authorized injections), and sustained or intentional injections that result in malfunction or non-compliance with transmission provider or RTO directives (unauthorized injections).",
+      "concern": "Penalties should not apply to inadvertent or transient flows; only intentional non-compliant injections should be penalized.",
+      "bins": [
+        "aq:protection",
+        "topic:protection-equipment-standards"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Any minimum technical requirements should be consistent with existing standards, such as IEEE 1547-2018 and emerging NERC IBR performance and modeling guidelines to avoid duplicative or conflicting requirements.",
+      "concern": "Technical protection requirements should align with existing IEEE and NERC standards to avoid conflicts.",
+      "bins": [
+        "aq:protection",
+        "topic:protection-equipment-standards"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Bloom urges the Commission to expand expedited studies to include hybrid facilities having primary power sufficient to meet its peak load.",
+      "concern": "Expedited study eligibility should extend to facilities with primary power covering full peak load, not only curtailable/dispatchable ones.",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The ANOPR seemingly takes the position that agreement by a hybrid facility to be dispatchable and curtailable is the \"grand bargain\" for expedited interconnection studies, but it should not be the only way to receive expedited studies.",
+      "concern": "Curtailability and dispatchability should not be the exclusive basis for expedited study access.",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Consistent with existing reliability study requirements for Surplus Interconnection Service, a 90-day period to study hybrid facilities seems reasonable, provided requested withdrawal and injection rights do not identify the need for additional reliability studies to determine if Network Upgrades are required.",
+      "concern": "Bloom supports a 90-day study timeline for hybrid facilities where no additional reliability studies are triggered.",
+      "bins": [
+        "aq:expedited",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "the proposal for hybrid facility generators to be responsible for 100% of identified Network Upgrades associated with their requested injections but potentially without cash equivalent refunds should be rejected.  There is no reason to treat cash equivalent refunds for such Network Upgrades differently from other generators that are subject to the Commission's pro forma rules or RTO rules.",
+      "concern": "Denying cash-equivalent refunds to hybrid facility generators would be discriminatory and should be rejected.",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Treating a hybrid facility generator differently than other generation subject to FERC jurisdiction would be unduly discriminatory.",
+      "concern": "Applying different refund rules to hybrid generators versus other generators violates the non-discrimination principle.",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:non-discrimination"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Given these benefits, the Commission should decline to adopt rules that could dissuade much needed generation to serve large load by creating unduly discriminatory cash equivalent refund rules.",
+      "concern": "Punitive refund rules would deter the very on-site generation needed to serve large load growth.",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:non-discrimination"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Integrated joint study required",
+      "stance": "support",
+      "description": "Bloom strongly supports studying load and co-located generation together as a composite resource. The current bifurcated approach overstates upgrade needs; an integrated study can cut costs by billions and speed interconnection.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        11
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Network upgrade cost protection",
+      "stance": "mixed",
+      "description": "Bloom supports assigning 100% of upgrade costs tied to generator injections to hybrid facility generators, consistent with existing policy. However, it opposes any rule denying cash-equivalent refunds, calling such a rule unduly discriminatory and a deterrent to needed generation.",
+      "quote_ids": [
+        3,
+        4,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location benefits ratepayers",
+      "stance": "support",
+      "description": "Bloom argues that properly structured co-location rules incentivize data centers to bring their own generation, easing resource adequacy strain and shielding existing customers from costs.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Broaden expedited study access",
+      "stance": "support",
+      "description": "Bloom supports expedited studies but opposes limiting them to curtailable and dispatchable facilities. Any hybrid facility where primary power covers 100% of peak load should also qualify, because network upgrades are unlikely in that case.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Jurisdiction agnosticism",
+      "stance": "neutral",
+      "description": "Bloom takes no position on whether FPA gives FERC jurisdiction over large load interconnections, but asks for generator-side interconnection reforms regardless of the jurisdictional outcome.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint load-generation study",
+      "stance": "support",
+      "description": "Bloom backs the ANOPR proposal to study large load and co-located generation together, citing Brattle analysis showing potential to avoid billions in transmission costs.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Clarify firm injection/withdrawal rights",
+      "stance": "support",
+      "description": "Bloom supports studying hybrid facilities based on requested rights, but asks FERC to specify that those rights are firm, not non-firm.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Protection equipment and penalties",
+      "stance": "mixed",
+      "description": "Bloom supports requiring system protection equipment but urges FERC to define unauthorized injections narrowly. Penalties should apply only to intentional, sustained non-compliance, not to unavoidable transient flows. Technical minimums should align with IEEE 1547-2018 and NERC IBR guidelines.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expand expedited study eligibility",
+      "stance": "support",
+      "description": "Bloom supports expedited interconnection studies and a 90-day timeline. It urges FERC to extend expedited access beyond curtailable/dispatchable facilities to those with primary power sufficient to cover full peak load.",
+      "quote_ids": [
+        1,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Retain cash-equivalent refunds",
+      "stance": "oppose",
+      "description": "Bloom opposes any ANOPR rule that would make hybrid facility generators responsible for 100% of network upgrade costs without cash-equivalent refunds. Order No. 2003 established refunds as a financing mechanism, not a rate; removing them for hybrid generators would be unduly discriminatory.",
+      "quote_ids": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "topic:protection-equipment-standards",
+      "name": "Align protection standards with IEEE/NERC",
+      "stance": "support",
+      "description": "Bloom asks FERC to require that any minimum technical protection requirements align with IEEE 1547-2018 and emerging NERC IBR guidelines, so hybrid facility generators are not subject to duplicative or conflicting obligations.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "topic:non-discrimination",
+      "name": "Non-discriminatory treatment for hybrid generators",
+      "stance": "support",
+      "description": "Bloom argues that hybrid facility generators are FERC-jurisdictional resources and must be treated the same as other generators for cash-equivalent refund purposes. Singling them out for worse treatment would be unduly discriminatory.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM bifurcated study problem",
+      "stance": "oppose",
+      "description": "Bloom uses PJM as the example of a region where current bifurcated study processes ignore co-located supply benefits and improperly identify required network upgrades.",
+      "quote_ids": [
+        5
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "jointstudy",
+      "hybridrights",
+      "protection",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-26",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

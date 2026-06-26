@@ -1,0 +1,285 @@
+{
+  "accession": "20251121-5374",
+  "filer": "Advanced Energy Management Alliance",
+  "org_type": "demand_flex",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5374__Advanced-Energy-Management-Alliance/AEMA_large load ANOPR Comments-VF2 11.21.25.txt",
+  "overall_summary": "AEMA strongly supports standardized large-load interconnection reform and urges FERC to create a Flexible Load Fast Track (FLFT) giving facilities that make verifiable flexibility commitments an expedited 60-to-90-day study process. The filing argues that treating load flexibility as a measurable, technology-neutral reliability resource can defer costly transmission upgrades, protect ratepayers, and accelerate AI and industrial growth.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "AEMA urges the Commission to create a Flexible Load Fast Track (FLFT) for facilities that can verifiably adjust their consumption in response to system conditions and harness a broad set of technologies to deliver flexibility to the grid.",
+      "concern": "AEMA's central ask: a dedicated expedited track for verifiably flexible loads",
+      "bins": [
+        "pr:flex",
+        "pr:study",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The FLFT would be an expedited (60-90 day) interconnection process for loads that commit to flexibility and would incorporate this flexibility into studies that determine whether transmission grid upgrades are necessary to interconnect the load.",
+      "concern": "FLFT timeline and study design: flexibility reduces or eliminates upgrade requirements",
+      "bins": [
+        "pr:flex",
+        "pr:study",
+        "aq:expedited",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Current state-by-state processes are inconsistent, opaque, and time-consuming, resulting in multi-year delays that slow economic growth amid an AI revolution that presents a critical opportunity for U.S. innovation, competitiveness, and prosperity.",
+      "concern": "Existing patchwork of state processes creates multi-year delays and competitive risk",
+      "bins": [
+        "pr:study",
+        "topic:process-reform"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The Commission should direct transmission providers to treat this verifiable reduction as equivalent to a system-impact mitigation, allowing such projects to be studied and interconnected on a shorter timeline.",
+      "concern": "Demand-side flexibility should count as system-impact mitigation in studies",
+      "bins": [
+        "pr:study",
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "AEMA recommends that the interconnection study process be used to define clear, upper-bound limits on the required flexibility (e.g., maximum number of hours per year, hours per event, depth of flexibility, and events per year) needed to mitigate specific system constraints.",
+      "concern": "Flexibility obligations must be bounded and quantified so load operators have investment certainty",
+      "bins": [
+        "pr:flex",
+        "topic:flexibility-definition"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "To comply with Principle 7 of the ANOPR and for large loads to decide whether they can be curtailable, transmission owners and RTOs must provide transparency during the study process regarding the specific constraints that a large load would create and the frequency and amount of curtailment that would be necessary.",
+      "concern": "Study transparency on constraints and curtailment frequency is a prerequisite for flexible load commitments",
+      "bins": [
+        "pr:study",
+        "aq:expedited",
+        "topic:transparency"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The final rule should remain strictly technology-neutral, focusing not on the method used, but on the measurable, verifiable, and reliable performance of the resources at their point of interconnection.",
+      "concern": "Flexibility definition should be performance-based and technology-neutral",
+      "bins": [
+        "pr:flex",
+        "topic:flexibility-definition"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Under this model, the operator issues a dispatch signal, for example a 100-megawatt curtailment request to the facility's registered energy management interface. The facility's flexibility management platform executes the reduction automatically and provides real-time or near-real-time, auditable telemetry back to the operator to confirm compliance.",
+      "concern": "Operator-facility interface model: automated dispatch with auditable telemetry replaces direct utility control",
+      "bins": [
+        "aq:protection",
+        "pr:flex",
+        "topic:operator-interface"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Fast-acting load adjustments can reduce the frequency of local congestion events, defer transmission upgrades, and moderate wholesale price volatility.",
+      "concern": "Flexible loads deliver reliability and cost benefits by reducing congestion and deferring upgrades",
+      "bins": [
+        "pr:cost",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "AEMA believes the FLFT provides a crucial, market-based choice for large loads: (1) interconnect as an inflexible load and potentially bear the costs for the resulting, often slow and expensive, network upgrades; or (2) interconnect as a flexible load via the FLFT, avoid triggering those upgrades, and get online faster at lower cost. This protects all other ratepayers from socializing upgrade costs.",
+      "concern": "FLFT cost-allocation model: flexible loads avoid upgrade costs, protecting other ratepayers",
+      "bins": [
+        "pr:cost",
+        "pr:flex",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "A 'Non-Firm Withdrawal Right,' for example, could be an appropriate tariff-based underpinning. This clarification ensures facilities can combine firm service for mission-critical loads with a separate, curtailable portion, which would in turn have different ancillary service responsibilities.",
+      "concern": "New tariff product needed to give FLFT loads non-firm withdrawal rights for their curtailable portion",
+      "bins": [
+        "aq:hybridrights",
+        "topic:tariff-transparency"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "AEMA supports a clear transition plan (Principle 13) that allows projects already in the queue to opt in to the FLFT if they meet its flexibility and readiness criteria.",
+      "concern": "Existing queue participants should be able to opt into FLFT without restarting",
+      "bins": [
+        "pr:study",
+        "topic:process-reform"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Coordinate with NERC (Principle 14) to establish uniform telemetry and performance reporting standards, which can enable the 'verifiable' aspect of the FLFT.",
+      "concern": "NERC coordination on uniform telemetry standards needed to make flexibility verifiable across regions",
+      "bins": [
+        "pr:flex",
+        "topic:operator-interface"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Flexible Load Fast Track",
+      "stance": "support",
+      "description": "AEMA's central proposal is a dedicated Flexible Load Fast Track giving loads that make verifiable flexibility commitments an expedited 60-to-90-day study process. Flexibility must be defined in performance-based, technology-neutral terms covering temporal, spatial, resource, and adjacent flexibility, with bounded upper limits on curtailment obligations so operators have investment certainty.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Expedited Studies with Transparency",
+      "stance": "support",
+      "description": "AEMA supports standardized interconnection studies that treat verifiable load reductions as system-impact mitigation and provide transparency on specific constraints, curtailment frequency, and amounts. The filing also supports queue opt-in for existing applicants and ISO pilots to accelerate learning.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Upgrade Cost Allocation via Flexibility",
+      "stance": "support",
+      "description": "AEMA argues that integrating flexibility into interconnection studies defers or eliminates costly transmission upgrades, keeping costs down for all ratepayers. The FLFT creates a market-based choice: inflexible loads bear upgrade costs while flexible loads avoid them.",
+      "quote_ids": [
+        2,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Process for Curtailable Loads",
+      "stance": "support",
+      "description": "AEMA endorses an expedited interconnection path for loads committing to curtailability, aligned with the ANOPR's Principle 7 and the SPP High Impact Large Load precedent. Study transparency on constraints is a prerequisite for loads to make informed curtailability commitments.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Operator Interface as System Protection",
+      "stance": "support",
+      "description": "AEMA proposes a secure, standardized operator-facility interface with automated dispatch and auditable telemetry as the modern system protection mechanism, mirroring demand-response verification practices while preserving cybersecurity and operational autonomy.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Non-Firm Withdrawal Rights for Curtailable Portion",
+      "stance": "support",
+      "description": "AEMA recommends a new tariff product giving FLFT facilities non-firm withdrawal rights for their curtailable portion, allowing them to combine firm service for mission-critical operations with separately curtailable capacity and corresponding ancillary service obligations.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Readiness Requirements Scaled to Large Loads",
+      "stance": "support",
+      "description": "AEMA supports standardized readiness criteria such as deposits and site control for the FLFT, consistent with generator interconnection but appropriately scaled for large loads, to deter speculative projects while enabling the cost-allocation benefits of the flexible track.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:process-reform",
+      "name": "Uniform National Process",
+      "stance": "support",
+      "description": "AEMA criticizes inconsistent, opaque state-by-state interconnection processes that cause multi-year delays and urges FERC to impose a standardized national framework. It also supports a transition plan letting queued projects opt into the FLFT.",
+      "quote_ids": [
+        3,
+        12
+      ]
+    },
+    {
+      "key": "topic:flexibility-definition",
+      "name": "Four-Category Flexibility Definition",
+      "stance": "support",
+      "description": "AEMA recommends defining flexibility across four functional categories (temporal, spatial, resource, and adjacent) with bounded obligations and a technology-neutral, performance-based focus on measurable outcomes at the point of interconnection.",
+      "quote_ids": [
+        5,
+        7
+      ]
+    },
+    {
+      "key": "topic:transparency",
+      "name": "Study Transparency on Constraints",
+      "stance": "support",
+      "description": "AEMA urges transmission owners and RTOs to disclose specific grid constraints and curtailment obligations during the study process so loads can make informed decisions about entering the FLFT.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:operator-interface",
+      "name": "Standardized Operator-Facility Interface",
+      "stance": "support",
+      "description": "AEMA advocates for a secure, standardized software or hardware interface through which operators issue dispatch signals and receive auditable telemetry confirming compliance, with NERC coordination to establish uniform standards across regions.",
+      "quote_ids": [
+        8,
+        13
+      ]
+    },
+    {
+      "key": "topic:tariff-transparency",
+      "name": "New Tariff Product for FLFT",
+      "stance": "support",
+      "description": "AEMA recommends a new non-firm withdrawal right tariff product to underpin the FLFT, allowing flexible loads to hold firm service for critical operations and non-firm service for their curtailable capacity with appropriate ancillary service obligations.",
+      "quote_ids": [
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited",
+      "protection",
+      "hybridrights",
+      "deposits"
+    ],
+    "pr": [
+      "flex",
+      "study",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

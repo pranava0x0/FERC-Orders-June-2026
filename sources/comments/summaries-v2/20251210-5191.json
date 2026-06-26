@@ -1,0 +1,169 @@
+{
+  "accession": "20251210-5191",
+  "filer": "Prime Mover Institute",
+  "org_type": "think_tank",
+  "filed": "12/10/2025",
+  "source_text": "sources/comments/files/20251210-5191__Prime-Mover-Institute/Prime Mover Comment - FERC Large Load Docket RM26-4-000 - FINAL.txt",
+  "overall_summary": "Prime Mover Institute urges FERC to confirm that Consumer-Regulated Electricity (CRE) systems, private islanded grids serving large loads without connection to the bulk grid, fall outside FERC and NERC jurisdiction under the Federal Power Act. CRE, the filer argues, can deliver capacity in months rather than years, eliminate cross-subsidies to existing ratepayers, and unlock private investment and innovation while posing no reliability risk to the interconnected system.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Consumer-Regulated Electricity (CRE) refers to private, physically islanded electric systems that serve large loads under direct contract, built and financed entirely by private capital.",
+      "concern": "Definition of CRE as private, islanded system",
+      "bins": [
+        "topic:cre-model"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "CRE also avoids cost shifts to existing ratepayers and taxpayers. Under the traditional utility model, network upgrades required to serve new large loads are often socialized across the entire rate base, meaning residential and small commercial customers subsidize infrastructure built primarily to serve a handful of industrial users.",
+      "concern": "CRE eliminates cross-subsidies and cost socialization",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "CRE could deliver new capacity in months, not years—without the need to navigate interconnection queues, transmission planning cycles, or state rate proceedings, private developers can move from project concept to commercial operation on timelines that match the urgency of demand growth.",
+      "concern": "CRE accelerates project development speed",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Physically islanded CRE systems, by definition, are not interconnected with the bulk electric system and do not participate in the operation of the interstate grid.",
+      "concern": "CRE systems are not grid-connected",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cre-model"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Congress defined as 'bulk power system' to mean facilities and control systems (a) 'necessary for operating' (b) an 'interconnected electric energy transmission network.' Congress also specifically excluded facilities used in the 'local distribution' of electricity from the definition of 'bulk power system.'",
+      "concern": "Legal basis for CRE exclusion from bulk power system",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Further, because such systems are not connected to the grid, they cannot cause cascading failures or impact the reliability of the broader network. Section 215 was enacted in response to the 2003 Northeast blackout, which cascaded across multiple states precisely because interconnected facilities affected one another.",
+      "concern": "Cascading failure risk rationale for Section 215 does not apply to islanded CRE",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Confirm, via rule, policy statement, or order, that a physically islanded CRE system serving identified customers is not a 'public utility' under Part II of the Federal Power Act and is not subject to NERC registration or reliability standards so long as it remains electrically isolated from the bulk electric system",
+      "concern": "FERC recommendation to exclude islanded CRE from jurisdiction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Every gigawatt of load served by a CRE system is one less gigawatt competing for scarce transmission capacity, straining aging infrastructure, or adding to the backlog of interconnection requests.",
+      "concern": "CRE relieves congestion and transmission strain on bulk grid",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Because CRE utilities start with a clean sheet of paper, they are free to experiment with emerging technologies, novel business models, and operational approaches that would be difficult or impossible to implement within the constraints of traditional regulation.",
+      "concern": "CRE enables innovation and novel business models",
+      "bins": [
+        "topic:innovation"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC jurisdiction over CRE systems",
+      "stance": "oppose",
+      "description": "Prime Mover argues islanded CRE systems are not subject to FERC or NERC authority because they are not interconnected to the bulk electric system and fall within statutory exclusions for local distribution and radial systems. The filer urges FERC to issue a rule, policy statement, or order confirming this non-jurisdictional status.",
+      "quote_ids": [
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Ratepayer cost allocation",
+      "stance": "support",
+      "description": "CRE systems avoid cost shifts and cross-subsidies by requiring data-center and industrial customers to finance their own infrastructure through private contracts, protecting residential and small-commercial ratepayers from bearing upgrade costs for large new loads.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Development speed and interconnection queue relief",
+      "stance": "support",
+      "description": "CRE can deliver capacity in months instead of years by bypassing interconnection queues and transmission planning cycles, allowing developers to move from concept to operation rapidly while reducing pressure on existing queues and transmission constraints.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Reliability and cascading risk",
+      "stance": "support",
+      "description": "Islanded CRE systems pose no cascading failure risk to the broader grid because they are not physically connected. Section 215's cascading-failure rationale does not apply to isolated systems, making FERC oversight unnecessary.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Grid relief and transmission congestion",
+      "stance": "support",
+      "description": "Each gigawatt served by CRE removes demand from the bulk system, reducing congestion, easing transmission strain, and shortening interconnection backlogs for other customers.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:cre-model",
+      "name": "Consumer-Regulated Electricity model definition",
+      "stance": "neutral",
+      "description": "CRE is a private, islanded electric system serving large loads under direct contract, fully self-financed and disconnected from the bulk grid. It represents a market-based alternative to traditional utility regulation.",
+      "quote_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "key": "topic:innovation",
+      "name": "Innovation and experimentation freedom",
+      "stance": "support",
+      "description": "CRE systems can experiment with emerging technologies and novel business models without the constraints of traditional utility regulation, unlocking private innovation and private-sector efficiency gains.",
+      "quote_ids": [
+        9
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "cost",
+      "study",
+      "colo",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

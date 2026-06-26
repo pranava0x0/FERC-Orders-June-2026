@@ -1,0 +1,346 @@
+{
+  "accession": "20251205-5295",
+  "filer": "Vistra Corp.",
+  "org_type": "generator_ipp",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5295__Vistra-Corp/Reply Comments of Vistra Corp.txt",
+  "overall_summary": "Vistra Corp. urges FERC to act immediately in Docket No. EL25-49 to clarify that existing rules already permit co-location of load with existing generators, then to create new pro forma tariff rules for co-located new load and new generation, and finally to assert jurisdiction over standalone transmission-level load interconnection. Throughout, Vistra supports participant funding so large loads bear 100% of incremental network upgrade costs, and opposes embedded-cost rollover that would shift risk to other ratepayers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Regulatory uncertainty is stymying data center development and the Commission's inaction in its most significant proceedings involving data center development is a major reason why.",
+      "concern": "Commission inaction is blocking data center investment",
+      "bins": [
+        "pr:study",
+        "topic:urgency-of-action"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the Commission should issue—as soon as possible—unequivocal determinations (either in Docket No. EL25-49 et al., other pending docket(s), or in this docket) that provide immediate clarity on how existing rules should be applied while the Commission works to implement reforms in this proceeding.",
+      "concern": "FERC should issue immediate clarity on how existing rules apply to co-location",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:colo",
+        "topic:urgency-of-action"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The co-location of large loads with existing generation resources is permissible under existing rules, including generator modification rules, and the 'necessary study' process.",
+      "concern": "Co-location with existing generators is already permissible under current rules",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Cost causation principles require that the parties to such an arrangement fund any necessary network upgrades, and the transmission service that facilitates these arrangements be determined by actual use of the transmission system based on their net load.",
+      "concern": "Co-located loads must pay for their own upgrades and be billed on net usage",
+      "bins": [
+        "aq:deposits",
+        "pr:cost",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the Commission must not allow parties that seek to delay new large load interconnections to use this important proceeding to freeze the industry and prevent the rapid development of digital infrastructure needed to win the AI race.",
+      "concern": "Opponents should not be able to use this proceeding to freeze existing co-location arrangements",
+      "bins": [
+        "pr:colo",
+        "topic:urgency-of-action"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "It would be remarkably inefficient—and unduly discriminatory—to inadvertently incentivize the retirement of existing generation at exactly the wrong moment by creating barriers to the co-location of new loads with existing generating facilities.",
+      "concern": "Limiting co-location to new generators would discourage retention of existing resources",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "topic:existing-gen-retention"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Commission should make clear that co-location arrangements involving new load and new generation should minimize the need for network upgrades, minimize line losses, and create efficiencies in equipment, land use, permitting, and siting.",
+      "concern": "New-build co-location reduces network upgrade costs and siting burdens",
+      "bins": [
+        "pr:colo",
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "the Commission has long exercised jurisdiction over generator interconnection, and 'the Commission does not lose its jurisdiction over the interconnection simply because a load also happens to interconnect to the interstate grid at the same point.'",
+      "concern": "FERC has clear jurisdiction over co-located facilities at generator interconnection points",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "transmission providers should serve, and charge, co-located facilities based on their actual use of the transmission system, i.e., based on their net—not gross—injections and withdrawals.",
+      "concern": "Transmission service for co-located facilities should be billed on net usage, not gross",
+      "bins": [
+        "aq:hybridrights",
+        "pr:cost",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Providing transmission service to co-located facilities based on their actual use of the transmission system will incentivize more new large loads to interconnect via co-location, which is undoubtedly the large load interconnection model most likely to fulfill speed-to-power needs while minimizing strain on the grid.",
+      "concern": "Net-based billing incentivizes co-location and reduces grid strain",
+      "bins": [
+        "pr:cost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Vistra supports enabling transmission providers to identify and impose requirements to ensure that co-located facilities inject and withdraw according to their rights, as well as other measures necessary to ensure reliable operation of the transmission system.",
+      "concern": "System protection requirements for co-located facilities are appropriate for grid reliability",
+      "bins": [
+        "aq:protection",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The third option, to contrast, creates a significant risk of cost shifts to other customers if a large load customer fails to materialize, consumes less energy than intended, or ceases operation sooner than anticipated.",
+      "concern": "Embedded-cost rollover exposes existing ratepayers to cost-shift risk from large-load shortfalls",
+      "bins": [
+        "pr:cost",
+        "aq:deposits",
+        "topic:ratepayer-protection"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Participant funding also furthers speed to power by providing cost certainty that can be built into a large load customer's commercial negotiations, whereas a crediting approach could entail more uncertainty and necessitate a risk premium in commercial arrangements.",
+      "concern": "Participant funding provides commercial certainty that crediting mechanisms undermine",
+      "bins": [
+        "pr:cost",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "there are at least three incentives for discrimination that the Commission can recognize and address: (1) transmission owners with generation affiliates have an incentive to favor the interconnection of large loads that agree to take service from their affiliated generation; (2) transmission owners have an incentive to favor large loads interconnecting in front of the meter to maximize transmission charges; and (3) incumbent utilities have an incentive to seek to develop the generation component of co-located load.",
+      "concern": "Three distinct incentives drive utility discrimination against independent generators and co-location",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study",
+        "topic:undue-discrimination"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Utilities are already taking advantage of regulatory uncertainty to extract concessions from data centers.  A commitment from the Commission to act on transmission-level load interconnection would discipline utility action and help prevent undue discrimination.",
+      "concern": "Without clear FERC rules, utilities extract unfair concessions from data centers",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:undue-discrimination"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "a standardized process could include study deposits, readiness requirements, and withdrawal penalties to deter speculative projects that are unlikely to materialize.",
+      "concern": "Deposits and penalties in a standardized process would filter out speculative interconnection requests",
+      "bins": [
+        "aq:deposits",
+        "pr:study",
+        "topic:load-forecasting"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "A more realistic forecast would result in better transmission planning and capacity market price signals.",
+      "concern": "Accurate load forecasting from a standardized process improves planning and market signals",
+      "bins": [
+        "pr:study",
+        "topic:load-forecasting"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC Jurisdiction Over Load Interconnection",
+      "stance": "support",
+      "description": "Vistra supports FERC asserting jurisdiction over transmission-level load interconnection, both for co-located and standalone loads. It argues that FERC's existing authority over generator interconnection extends to load sharing a point of interconnection, and rebuts state-authority arguments by showing that retail service and transmission interconnection are legally distinct.",
+      "quote_ids": [
+        2,
+        8,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Study Deposits and Participant Funding",
+      "stance": "support",
+      "description": "Vistra supports participant funding as the preferred cost allocation model, where large loads pay 100% of incremental network upgrade costs they cause. It also endorses study deposits and withdrawal penalties to screen out speculative requests and provide cost certainty for commercial agreements.",
+      "quote_ids": [
+        4,
+        12,
+        13,
+        16
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Co-Location With Existing Generation Permissible",
+      "stance": "support",
+      "description": "Vistra argues that co-location with existing generators is already allowed under current generator modification rules and the PJM necessary study process. It opposes limiting co-location to new generators, warning that doing so would create barriers that discourage retention of existing generation resources.",
+      "quote_ids": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "System Protection Requirements",
+      "stance": "support",
+      "description": "Vistra supports transmission providers' authority to require circuit breakers, telemetry, and other system protection measures at co-located facilities to ensure they operate within their requested injection and withdrawal rights.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Network Upgrade Cost Minimization via Co-Location",
+      "stance": "support",
+      "description": "Vistra supports the principle that new-build co-location minimizes the need for network upgrades by reducing net transmission use, and endorses charging co-located facilities based on net injection and withdrawal rights to correctly size upgrade requirements.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Coordinated and Standardized Study Process",
+      "stance": "support",
+      "description": "Vistra supports coordinating load and generator studies for co-located facilities to align timelines and reduce uncertainty. It also supports a standardized standalone load interconnection process that would improve load forecasting and capacity market signals.",
+      "quote_ids": [
+        1,
+        14,
+        16,
+        17
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Large Loads Pay Their Own Upgrade Costs",
+      "stance": "support",
+      "description": "Vistra endorses participant funding without crediting as the cleanest approach to cost causation, ensuring large loads bear 100% of the network upgrade costs they cause and other ratepayers are held harmless. It opposes embedded-cost rollover because it creates cost-shift risk if a large load fails to materialize.",
+      "quote_ids": [
+        4,
+        9,
+        10,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Immediate Co-Location Reform Is Top Priority",
+      "stance": "support",
+      "description": "Vistra argues that co-location is the fastest and most efficient path to meeting large load demand. It urges FERC to first clarify that existing rules already permit co-location with existing generators, then develop new pro forma tariff language for co-located new load and new generation, before turning to standalone load interconnection.",
+      "quote_ids": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Net Usage as the Proximate Billing Basis",
+      "stance": "support",
+      "description": "Vistra supports measuring a co-located facility's transmission service and network upgrade obligations based on net injections and withdrawals, not gross load, as required by Federal Power Act cost causation principles.",
+      "quote_ids": [
+        4,
+        9
+      ]
+    },
+    {
+      "key": "topic:urgency-of-action",
+      "name": "Urgency: Act Now Without Waiting",
+      "stance": "support",
+      "description": "Vistra repeatedly emphasizes that FERC must act immediately rather than let this proceeding become a roadblock. It warns that regulatory uncertainty is already blocking data center deals and allowing utilities to extract concessions from large load customers.",
+      "quote_ids": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "key": "topic:undue-discrimination",
+      "name": "Utility Discrimination Against Independent Generators",
+      "stance": "support",
+      "description": "Vistra identifies three structural incentives for utility discrimination: favoring loads that take service from affiliated generation, favoring front-of-meter interconnection to maximize charges, and seeking to develop the generation component of co-located load. It urges FERC to act on this discrimination before it becomes entrenched.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "key": "topic:ratepayer-protection",
+      "name": "Ratepayer Protection From Cost Shifts",
+      "stance": "support",
+      "description": "Vistra opposes embedding large-load network upgrade costs in rate base because it shifts risk to existing ratepayers if a large load fails to materialize or consumes less than forecast. Participant funding avoids this risk entirely.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:existing-gen-retention",
+      "name": "Preserve Access to Existing Generation",
+      "stance": "support",
+      "description": "Vistra warns that limiting co-location to new generators would inadvertently discourage retention of existing generation at a time of rising demand, which would harm resource adequacy.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:load-forecasting",
+      "name": "Standardized Process Improves Load Forecasting",
+      "stance": "support",
+      "description": "Vistra argues that a standardized transmission-level load interconnection process would reduce forum shopping, filter speculative projects through deposits and penalties, and produce more accurate load forecasts that improve transmission planning and capacity market price signals.",
+      "quote_ids": [
+        16,
+        17
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "accession": "20251121-5431",
+  "filer": "North Carolina Utilities Commission Public Staff",
+  "org_type": "state_commission",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5431__North-Carolina-Utilities-Commission-Public-Staff/NC Public Staff - RM26-4 ANOPR Comments FINAL.txt",
+  "overall_summary": "North Carolina Public Staff asserts FERC lacks clear authority to regulate large load interconnections as the matter is primarily reserved to the states. The comments warn that federal rules risk impeding state jurisdiction over retail rates and generation, and propose a 300 MW threshold to reduce study delays and limit federal overreach into matters better addressed by NERC guidelines and state regulators.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "it is doubtful that the Commission has authority to order the reforms outlined in the ANOPR, and if it does, its authority is quite narrow.",
+      "concern": "FERC authority is doubtful and narrow",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Interconnection of load into the transmission system might, in a technical sense, be within FERC's jurisdiction; however, this is an area in which most, if not all, of the authority has been reserved to the states by Congress.",
+      "concern": "Load interconnection authority reserved to states",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "A Commission rule prescribing the methods, timing, and transmission pricing for interconnecting load to the transmission system could not, at the end of the day, provide any right for that load to be actually served as a retail customer, a matter unquestionably reserved to the states alone.",
+      "concern": "Retail service reserved to states, transmission pricing limited",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Because federal jurisdiction does not extend to facilities used for the generation of electric energy, the rules envisioned by the ANOPR cannot reach the heart of the problem they wish to address. A transmission study of a load that cannot be served is of no value.",
+      "concern": "Generation is state domain, limiting federal rule effectiveness",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Even with reasonable study processes in place to minimize speculative projects entering the load queue, adding a new layer to the study process will inevitably cause restudies, delays, and inaccurate studies when projects inevitably either drop out of the queue or seek material changes to their load profiles.",
+      "concern": "Coordinated studies cause delays and restudies",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the North Carolina Public Staff recommends that if the Commission promulgates a rule on large load interconnection, that it limit its applicability to loads in excess of 300 MW. This would reduce the number of load customers requiring study and limit the projects studied to those most likely to have significant impacts on the bulk electric system.",
+      "concern": "Propose 300 MW threshold to reduce study volume",
+      "bins": [
+        "pr:study",
+        "topic:threshold"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "any final rule should place no constraints, express or implied, on the authority of states to set the terms and rates for retail customers over generation facilities, or over the siting of transmission.",
+      "concern": "Protect state authority over retail rates and generation",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The ANOPR proposal to provide special accommodation to load that agrees to be curtailed is an example of a rule that quickly infringes on state jurisdiction.",
+      "concern": "Curtailment accommodation infringes state authority",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Bundled retail rates that include transmission should be preserved. When the Commission issued Order No. 888, it took no action to require these rates to be unbundled, in part to avoid difficult jurisdictional issues.",
+      "concern": "Preserve bundled rates for state visibility",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "While NERC is assiduously studying reliability issues associated with serving large loads and preparing to issue guidelines, issuing final rules prior to those guidelines being finalized would be counterproductive.",
+      "concern": "Defer final rules until NERC guidelines finalize",
+      "bins": [
+        "pr:study"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal authority is limited",
+      "stance": "oppose",
+      "description": "North Carolina Public Staff challenges FERC's jurisdictional authority to regulate load interconnections, arguing that retail service, generation, and rate-setting are reserved to the states by Congress. The comments warn that federal rules cannot address the core problem (generation supply) and risk infringing on state authority over retail rates, generation siting, and curtailment terms.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Coordinated studies risk delays",
+      "stance": "oppose",
+      "description": "The filing argues that adding large load interconnections to transmission study processes will cause restudies, delays, and inaccurate studies, particularly when projects drop out or change profiles. The staff recommends deferring final rules until NERC completes its reliability guidelines for large loads.",
+      "quote_ids": [
+        4,
+        5,
+        6,
+        10
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Preserve cost visibility",
+      "stance": "oppose",
+      "description": "North Carolina Public Staff argues that bundled retail rates (including transmission costs) should remain bundled to preserve state regulatory transparency and oversight. Federal disaggregation of transmission pricing for large loads would undermine state consumer advocates' ability to audit utility costs.",
+      "quote_ids": [
+        3,
+        9
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Curtailment terms are state matter",
+      "stance": "oppose",
+      "description": "The filing opposes federal rules that provide special accommodation or incentives for loads that agree to curtailment, as such terms directly intrude on state authority to set retail service conditions.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:threshold",
+      "name": "300 MW threshold proposal",
+      "stance": "support",
+      "description": "North Carolina Public Staff recommends that any federal rule limit its applicability to loads exceeding 300 MW, which would reduce study volume, focus on systemic impacts, reduce jurisdictional concerns (as such loads are unlikely to connect to distribution), and limit collateral impacts on generation interconnection.",
+      "quote_ids": [
+        6
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

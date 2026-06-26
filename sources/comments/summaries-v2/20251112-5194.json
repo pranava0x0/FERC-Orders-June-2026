@@ -1,0 +1,143 @@
+{
+  "accession": "20251112-5194",
+  "filer": "Individual No Affiliation",
+  "org_type": "individual",
+  "filed": "11/12/2025",
+  "source_text": "sources/comments/files/20251112-5194__Individual-No-Affiliation/Demand Reduction - McKinley.txt",
+  "overall_summary": "A retired FERC employee proposes that large users like data centers be required, as a condition of interconnection, to fund demand-reduction programs in affected communities. Cool-roof technology on commercial and residential buildings can reduce demand at far lower cost than new generation, while providing equity benefits to working-class households. Demand reduction must be part of the solution as supply-side constraints (delayed nuclear, gas projects) limit near-term capacity expansion.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The cost of demand reduction would be pennies on the dollar compared to the cost of new generation.",
+      "concern": "Demand reduction is cost-effective relative to supply-side alternatives",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "We won't be able to build our way out of this mess. Small nuclear units are still years away, gas generating equipment is not immediately available for new construction. Demand reduction must be considered at least as a partial solution.",
+      "concern": "Supply constraints necessitate demand reduction as part of the solution",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "My proposal is simple. The data centers and other large users should be required, as a condition of interconnection, to secure a commensurate amount of demand reduction to the amount of load they plan to put onto the grid. This would be consistent with the ratemaking principle of 'cost causation.'",
+      "concern": "Data centers should be required to fund demand reduction commensurate with load",
+      "bins": [
+        "pr:cost",
+        "topic:interconnection-condition"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "In the larger market, significant demand reduction will create downward pressure on electric wholesale prices, which will benefit everyone, including the large users like the data centers. In the end, everyone wins.",
+      "concern": "Market-wide demand reduction benefits all participants through price reduction",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "In Arlington, Virginia where I live, over half of our population live in multi-family units, a huge number of which are flat-topped high-rises. The owners and managers of those buildings are less likely to pursue a UV-reflective roof because the electric usage is individually-metered in the separate apartments. But this is where most of the working-class and non-home owners live, the very people who are in desperate need of respite from high electric costs.",
+      "concern": "Working-class renters in multi-family buildings suffer most from high costs and lack incentive to pursue demand reduction",
+      "bins": [
+        "topic:equity"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "I would suggest that they start this effort in the very communities that have been hardest hit by their presence–in the communities that already have clusters of data centers. One way to achieve this would be to offer local governments, commercial property owners, and individual households, the free service of converting their roofs to 'cool roof' technology, or at least to UV-reflective use.",
+      "concern": "Demand reduction programs should be offered free to affected communities hit by data center clusters",
+      "bins": [
+        "topic:equity",
+        "topic:interconnection-condition"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "For almost 20 years the U.S. had flat demand, which kept electricity prices affordable across most of the country.",
+      "concern": "Flat demand historically supported affordable electricity pricing",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The low-hanging fruit for demand reduction lies with flat-roofed commercial buildings, most of which have a roofing system of black rubber.",
+      "concern": "Commercial buildings with black rubber roofs are the most cost-effective demand-reduction targets",
+      "bins": [
+        "pr:flex"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost-effectiveness of demand reduction",
+      "stance": "support",
+      "description": "Demand reduction via cool-roof technology costs far less than building new generation capacity. Large users should fund these programs as the direct cause of grid costs under cost-causation principles.",
+      "quote_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Demand reduction as necessary solution",
+      "stance": "support",
+      "description": "Supply-side constraints (delayed nuclear and gas projects) mean new generation cannot be built quickly enough. Demand reduction must be a primary strategy. Historically, demand-side efficiency kept prices stable for 20 years.",
+      "quote_ids": [
+        2,
+        7
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Market benefits of demand reduction",
+      "stance": "support",
+      "description": "System-wide demand reduction creates downward pressure on wholesale prices, benefiting all market participants. Commercial buildings with black rubber roofs are the most cost-effective near-term targets.",
+      "quote_ids": [
+        4,
+        8
+      ]
+    },
+    {
+      "key": "topic:equity",
+      "name": "Equity and affordability for working-class households",
+      "stance": "support",
+      "description": "Working-class renters in multi-family buildings lack individual incentives to invest in efficiency because electric usage is separately metered. These are the people most burdened by high electric bills and most need demand-reduction assistance.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:interconnection-condition",
+      "name": "Data centers fund local demand reduction",
+      "stance": "support",
+      "description": "Large users like data centers should be required at interconnection to fund demand-reduction efforts in affected communities as a cost-causation principle. Programs should prioritize communities with data center clusters.",
+      "quote_ids": [
+        3,
+        6
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "study",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

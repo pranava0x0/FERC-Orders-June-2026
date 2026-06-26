@@ -78,7 +78,7 @@
   function renderTimeline() {
     var tl = '<div class="timeline">' + D.timeline.map(function (e) {
       return '<div class="tl-item ' + e.kind + '"><div class="tl-date">' + esc(e.date) +
-        '<span class="kindpill ' + e.kind + '">' + e.kind + "</span></div>" +
+        '<span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span></div>" +
         '<div class="tl-title">' + esc(e.title) + "</div>" +
         '<div class="tl-body">' + esc(e.body) + "</div>" + srcChips(e.src) + "</div>";
     }).join("") + "</div>";
@@ -228,7 +228,7 @@
   function renderNews() {
     var rec = '<div class="reception">' + D.reception.map(function (r) {
       return '<div class="recep ' + r.stance + '"><div class="recep-head"><span class="recep-group">' + esc(r.group) +
-        '</span><span class="stance-pill ' + r.stance + '">' + r.stance + "</span></div>" +
+        '</span><span class="stance-pill ' + r.stance + '">' + esc(r.stance) + "</span></div>" +
         "<p>" + esc(r.body) + "</p>" + srcChips(r.src) + "</div>";
     }).join("") + "</div>";
 
@@ -281,7 +281,7 @@
     var AQ = { jurisdiction: "Jurisdiction", threshold: "20 MW", jointstudy: "Joint study", deposits: "Deposits", hybridrights: "Hybrid rights", protection: "Protection", expedited: "Expedited", upgradecost: "Upgrade cost" };
 
     var statRow = '<div class="cm-stats">' +
-      [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.analyzed, "text-analyzed"], [CM.summarized, "read in full"]]
+      [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.summarized2, "audited summaries"]]
         .map(function (s) { return '<div class="cm-stat"><span class="v">' + esc(String(s[0])) + '</span><span class="l">' + esc(s[1]) + "</span></div>"; }).join("") + "</div>";
 
     var rounds = '<div class="cm-rounds">' + CM.rounds.map(function (r) {
@@ -289,15 +289,26 @@
         '</span><span class="cm-round-d mono">' + esc(fmtD(r.first)) + " – " + esc(fmtD(r.last)) + "</span></div>";
     }).join("") + "</div>";
 
-    // respondent types: counts across all 273 filings; example orgs from the curated buckets where present
-    var bmeta = {};
-    if (D.comments && D.comments.buckets) D.comments.buckets.forEach(function (b) { bmeta[b.label] = b; });
+    // respondent types: count + the full distinct-organization roster per camp (collapse past 10)
+    var orgsByBucket = {};
+    CM.list.forEach(function (c) { (orgsByBucket[c.bucket] = orgsByBucket[c.bucket] || []).push(c.org); });
+    Object.keys(orgsByBucket).forEach(function (b) { orgsByBucket[b] = Array.from(new Set(orgsByBucket[b])).sort(function (a, z) { return a.localeCompare(z); }); });
     var maxT = CM.respondentTypes.reduce(function (m, t) { return Math.max(m, t.count); }, 1);
+    var ORG_CAP = 3;
     var types = '<div class="cm-types">' + CM.respondentTypes.map(function (t) {
-      var egs = ((bmeta[t.label] || {}).egs || []).slice(0, 3).map(function (e) { return '<span class="cm-eg">' + esc(e) + "</span>"; }).join("");
+      var orgs = orgsByBucket[t.bucket] || [];
+      var pill = function (o) { return '<span class="cm-eg">' + esc(o) + "</span>"; };
+      var pills;
+      if (orgs.length <= ORG_CAP) {
+        pills = orgs.map(pill).join("");
+      } else {
+        pills = orgs.slice(0, ORG_CAP).map(pill).join("") +
+          '<span class="cm-eg-rest">' + orgs.slice(ORG_CAP).map(pill).join("") + "</span>" +
+          '<button type="button" class="cm-showmore" aria-expanded="false" data-n="' + orgs.length + '">Show all ' + orgs.length + "</button>";
+      }
       return '<div class="cm-type"><div class="cm-bhead"><span class="cm-label">' + esc(t.label) + '</span><span class="cm-n mono">' + t.count + "</span></div>" +
         '<div class="cm-bar"><span style="width:' + Math.round((t.count / maxT) * 100) + '%"></span></div>' +
-        (egs ? '<p class="cm-note"><span class="cm-egs">' + egs + "</span></p>" : "") + "</div>";
+        '<div class="cm-egs">' + pills + "</div></div>";
     }).join("") + "</div>";
 
     // themes: keyword prevalence across the analyzed bodies (a measured signal, not a coded position)
@@ -311,12 +322,27 @@
     var prRegBar = function (t) {
       return '<div class="cm-theme"><div class="cm-bhead"><span class="cm-label">' + esc(t.label) + '</span><span class="cm-n mono">' + t.pct + '%</span></div>' +
         '<div class="cm-bar prin"><span style="width:' + t.pct + '%"></span></div>' +
-        '<p class="cm-note mono">' + t.count + " of " + CM.analyzed + "</p></div>";
+        '<p class="cm-note mono">' + t.count + " of " + CM.summarized2 + "</p></div>";
     };
     var prReg = '<div class="cm-prreg three">' +
       '<div><h3 class="cm-sub">Comment-period questions</h3><div class="cm-themes one">' + CM.anoprQuestions.map(prRegBar).join("") + "</div></div>" +
       '<div><h3 class="cm-sub">Reform principles</h3><div class="cm-themes one">' + CM.principles.map(prRegBar).join("") + "</div></div>" +
       '<div><h3 class="cm-sub">Order regions</h3><div class="cm-themes one">' + CM.regions.map(prRegBar).join("") + "</div></div></div>";
+
+    // stance map: where commenters land on each reform principle, read from the audited summaries
+    var ST_LBL = { sup: "Support", opp: "Oppose", mix: "Mixed", neu: "No position" };
+    var stanceBars = "";
+    if (CM.principleStances && CM.principleStances.length) {
+      var stLegend = '<div class="cm-stancelegend">' +
+        '<span class="key sup">Support</span><span class="key opp">Oppose</span><span class="key mix">Mixed</span><span class="key neu">No position</span></div>';
+      var stRows = CM.principleStances.map(function (p) {
+        var seg = function (k, cls) { var n = p[k]; return n ? '<span class="seg ' + cls + '" style="flex:' + n + '" title="' + n + " " + ST_LBL[cls] + '">' + (n >= 10 ? n : "") + "</span>" : ""; };
+        return '<div class="cm-stancerow"><div class="cm-bhead"><span class="cm-label">' + esc(p.label) + '</span><span class="cm-n mono">' + p.total + "</span></div>" +
+          '<div class="cm-stancebar" role="img" aria-label="' + esc(p.label) + ": " + p.support + " support, " + p.oppose + " oppose, " + p.mixed + " mixed, " + p.neutral + ' no position">' +
+          seg("support", "sup") + seg("oppose", "opp") + seg("mixed", "mix") + seg("neutral", "neu") + "</div></div>";
+      }).join("");
+      stanceBars = stLegend + '<div class="cm-stancebars">' + stRows + "</div>";
+    }
 
     var flag = "";
     if (D.comments && D.comments.flagships && D.comments.flagships.length) {
@@ -333,8 +359,8 @@
           (fl.quote ? '<div class="cm-flag-quote">“' + esc(fl.quote) + '”</div>' : "") +
           '<div class="cm-stances">' + stances + "</div></div>";
       }).join("");
-      flag = head("Read in depth: flagship comments",
-        "One representative comment per major camp, downloaded and read in full, with its stance on each reform category (Study · Cost · Co-loc · Flex · Prox-gen). Each links to its eLibrary filing; the body, extracted text, and a structured summary are committed under sources/comments/.") +
+      flag = head("Start here: one filing per camp",
+        "A representative comment from each major stakeholder camp, with its stance on the five reforms at a glance. All " + CM.summarized2 + " audited comments are below — search, or open “Read the audited analysis” on any row.") +
         '<div class="cm-flagships">' + cards + "</div>";
     }
 
@@ -342,23 +368,36 @@
     CM.list.forEach(function (c) { var k = roundOf(c.filed); (rowsByRound[k] = rowsByRound[k] || []).push(c); });
     var listHtml = CM.rounds.map(function (r) {
       var items = (rowsByRound[r.key] || []).map(function (c) {
-        var badge = c.sum ? '<span class="cm-badge sum" title="Read in full (flagship)"><span aria-hidden="true">★</span><span class="sr-only">read in full</span></span>'
-          : c.dl ? '<span class="cm-badge dl" title="Body downloaded and text-extracted"><span aria-hidden="true">✓</span><span class="sr-only">body downloaded</span></span>'
-          : '<span class="cm-badge no" title="Body not downloaded"><span aria-hidden="true">–</span><span class="sr-only">not downloaded</span></span>';
+        var badge = c.s2 ? '<span class="cm-badge dl" title="Audited summary available"><span aria-hidden="true">✓</span><span class="sr-only">audited summary</span></span>'
+          : c.dl ? '<span class="cm-badge sum" title="Downloaded but image-only (no text layer) — not summarized"><span aria-hidden="true">○</span><span class="sr-only">scanned, not summarized</span></span>'
+          : '<span class="cm-badge no" title="Body not downloaded — eLibrary serves it inline"><span aria-hidden="true">–</span><span class="sr-only">not downloaded</span></span>';
         var type = CM.bucketLabels[c.bucket] || c.bucket;
-        var aqChips = (c.aq || []).map(function (k) { return '<span class="cm-tag aq" title="Addresses the ANOPR comment-period question: ' + esc(AQ[k]) + '">' + esc(AQ[k]) + "</span>"; }).join("");
-        var prChips = (c.pr || []).map(function (k) { return '<span class="cm-tag pr ' + k + '" title="Engages the ' + esc(CL[k]) + ' reform principle">' + esc(CL[k]) + "</span>"; }).join("");
-        var rgChips = (c.rg || []).map(function (k) { return '<span class="cm-tag rg" title="References the ' + esc(RG[k]) + ' region">' + esc(RG[k]) + "</span>"; }).join("");
+        var aqChips = (c.aq || []).map(function (k) { return '<button type="button" class="cm-tag aq" data-f="' + esc(AQ[k]) + '" title="Filter the list by: ' + esc(AQ[k]) + '">' + esc(AQ[k]) + "</button>"; }).join("");
+        var prChips = (c.pr || []).map(function (k) { return '<button type="button" class="cm-tag pr ' + k + '" data-f="' + esc(CL[k]) + '" title="Filter the list by: ' + esc(CL[k]) + '">' + esc(CL[k]) + "</button>"; }).join("");
+        var rgChips = (c.rg || []).map(function (k) { return '<button type="button" class="cm-tag rg" data-f="' + esc(RG[k]) + '" title="Filter the list by: ' + esc(RG[k]) + '">' + esc(RG[k]) + "</button>"; }).join("");
         var grp = function (label, chips) { return chips ? '<span class="sr-only">' + label + ": </span>" + chips : ""; };
         var groups = [grp("Comment-period questions", aqChips), grp("Reform principles", prChips), grp("Regions", rgChips)].filter(Boolean);
         var tags = groups.length ? '<div class="cm-row-tags">' + groups.join('<span class="cm-tagsep" aria-hidden="true"></span>') + "</div>" : "";
-        var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ")).toLowerCase();
+        var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ") + " " + (c.summary || "")).toLowerCase();
+        // expandable audited read: the plain summary + each position as a stance-colored chip
+        var analysis = "";
+        if (c.s2 && c.summary) {
+          var binChips = (c.bins || []).map(function (b) {
+            var st = /support/.test(b.s) ? "support" : /oppose/.test(b.s) ? "oppose" : /mixed/.test(b.s) ? "mixed" : "neutral";
+            return '<span class="cm-bin ' + st + '">' + esc(b.n) + '<span class="sr-only"> (' + esc(b.s) + ")</span></span>";
+          }).join("");
+          analysis = '<details class="cm-analysis"><summary><span class="cm-analysis-label">Read the audited analysis</span>' +
+            '<span class="cm-analysis-n mono">' + (c.bins ? c.bins.length : 0) + " positions</span></summary>" +
+            '<p class="cm-analysis-sum">' + esc(c.summary) + "</p>" +
+            (binChips ? '<div class="cm-bins" aria-label="Positions, colored by the filer\'s stance">' + binChips + "</div>" : "") +
+            '<p class="cm-analysis-foot">Each position is synthesized from verbatim quotes in the filing; the quotes are the audit trail (committed in the repository). Stance is the filer’s, not ours.</p></details>';
+        }
         return '<li class="cm-row" data-q="' + esc(q) + '">' +
           '<div class="cm-row-top"><span class="cm-row-date mono">' + esc(fmtD(c.filed)) + "</span>" + badge +
           '<span class="cm-row-org">' + esc(c.org) + "</span>" +
           '<span class="cm-row-type">' + esc(type) + "</span>" +
           '<a class="cm-row-link" href="' + esc(eli(c.acc)) + '" target="_blank" rel="noopener noreferrer" title="Open eLibrary filing ' + esc(c.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a></div>' +
-          '<p class="cm-row-desc">' + esc(c.desc) + "</p>" + tags + "</li>";
+          '<p class="cm-row-desc">' + esc(c.desc) + "</p>" + tags + analysis + "</li>";
       }).join("");
       return '<section class="cm-listgroup"><h3 class="cm-listgroup-h">' + esc(r.label) + ' <span class="mono">' + r.count + "</span></h3><ul class=\"cm-list\">" + items + "</ul></section>";
     }).join("");
@@ -375,20 +414,21 @@
     var secOverview = '<section class="cm-sec" id="cmsec-overview" role="tabpanel" aria-labelledby="cmsub-overview">' +
       head("The RM26-4 comment period",
         CM.total + " comments were filed on DOE's large-load ANOPR (Docket RM26-4-000) between " + fmtD(CM.dateRange.first) + " and " + fmtD(CM.dateRange.last) +
-        ", scraped from FERC eLibrary on " + CM.captured + ". " + CM.downloaded + " bodies are downloaded and " + CM.analyzed + " are text-analyzed.") +
+        ", scraped from FERC eLibrary on " + CM.captured + ". " + CM.downloaded + " of " + CM.total + " bodies are downloaded; " + CM.summarized2 + " carry an audited summary. The other " + (CM.total - CM.summarized2) + " are four image-only scans (no text layer, awaiting OCR) and one filing eLibrary serves inline rather than releasing for download.") +
       statRow + rounds +
       head("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies — a measured keyword prevalence, not a coding of each filer's position.") + themes +
-      head("What the comments engage", "Three lenses, tagged per body by keyword: the DOE ANOPR's eight comment-period questions, the five June-order reform principles, and the six show-cause-order regions. A comment can carry several. Out of " + CM.analyzed + " text-analyzed bodies.") + prReg +
+      head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position — read from the filer's own words. Across " + CM.summarized2 + " audited filings.") + stanceBars +
+      head("What the comments engage", "Three lenses, tagged per comment from its audited summary: the DOE ANOPR's eight comment-period questions, the five June-order reform principles, and the six show-cause-order regions. A comment can carry several. Across " + CM.summarized2 + " audited filings.") + prReg +
       "</section>";
 
     var secTypes = '<section class="cm-sec" id="cmsec-types" role="tabpanel" aria-labelledby="cmsub-types" hidden>' +
-      head("Who commented", "Each filing's stakeholder type, counted across all " + CM.total + " comments. Types are keyword-derived from the filer and the filing text.") + types +
+      head("Who commented", "Every organization that filed, grouped by stakeholder type. The number is filings; larger camps list the first three — open “Show all” for the full roster. Types are keyword-derived from the filer and the filing text.") + types +
       "</section>";
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
       flag +
-      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. Each row carries the three lenses it engages — comment-period questions, reform principles, and regions — plus a ★ read-in-full / ✓ downloaded badge and an eLibrary link. Filter by org, type, question, principle, or region.") +
-      filter + '<div class="cm-listwrap">' + listHtml + "</div>" + src + "</section>";
+      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary — open “Read the audited analysis” on any row for the plain read and each position colored by the filer's stance. Each row also shows the lenses it engages and links to its eLibrary filing. Filter by org, type, lens, or any word in a summary.") +
+      filter + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src + "</section>";
 
     return subnav + secOverview + secTypes + secSummaries;
   }
@@ -414,19 +454,43 @@
         var i = subs.indexOf(s), n = null;
         if (e.key === "ArrowRight") n = (i + 1) % subs.length;
         else if (e.key === "ArrowLeft") n = (i - 1 + subs.length) % subs.length;
+        else if (e.key === "Home") n = 0;
+        else if (e.key === "End") n = subs.length - 1;
         if (n !== null) { e.preventDefault(); var t = document.getElementById("cmsub-" + subs[n]); showSub(subs[n]); t.focus(); }
       });
     });
+    // "Show all" toggles for the respondent-type rosters (camps with >10 organizations)
+    [].slice.call(document.querySelectorAll("#panel-comments .cm-showmore")).forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var egs = btn.closest(".cm-egs");
+        var open = egs.classList.toggle("expanded");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+        btn.textContent = open ? "Show fewer" : "Show all " + btn.getAttribute("data-n");
+      });
+    });
+
     // list filter (within the summaries sub-tab)
     var input = document.getElementById("cm-search"), count = document.getElementById("cm-count");
     if (!input) return;
     var rows = [].slice.call(document.querySelectorAll("#panel-comments .cm-row"));
     var groups = [].slice.call(document.querySelectorAll("#panel-comments .cm-listgroup"));
+    var empty = document.getElementById("cm-empty");
     input.addEventListener("input", function () {
       var q = input.value.trim().toLowerCase(), shown = 0;
       rows.forEach(function (r) { var hit = !q || r.getAttribute("data-q").indexOf(q) >= 0; r.hidden = !hit; if (hit) shown++; });
       groups.forEach(function (g) { g.hidden = !g.querySelector(".cm-row:not([hidden])"); });
       count.textContent = shown + " of " + rows.length;
+      if (empty) empty.hidden = shown !== 0; // explicit empty state — never leave a blank panel
+    });
+    // clicking a lens chip pre-fills the search and filters (the search box stays the primary control)
+    var listwrap = document.querySelector("#panel-comments .cm-listwrap");
+    if (listwrap) listwrap.addEventListener("click", function (e) {
+      var chip = e.target.closest(".cm-tag");
+      if (!chip || !chip.dataset.f) return;
+      input.value = chip.dataset.f;
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+      input.focus();
+      input.scrollIntoView({ block: "nearest" });
     });
   }
 
@@ -451,6 +515,8 @@
       "<p>The <strong>DOE §403 letter</strong> (16 pp.) was downloaded from energy.gov and text-extracted directly. FERC's <strong>news release, fact sheet, meeting summaries, and the RM26-4 docket page</strong> are official FERC text, posted at the June 18, 2026 open meeting and live on ferc.gov; quoted here against Internet Archive snapshots dated June 18 to 20, 2026 so the citations stay fixed to a specific capture even as the live pages change.</p>" +
       "<h4>The six order PDFs, retrieved &amp; OCR’d</h4>" +
       "<p>Automated clients (curl, server-side fetch, the PDF-fetch tool, the Wayback crawler) are all blocked by Cloudflare on <span class='mono'>ferc.gov/media/e-7…e-12</span>. The six orders were therefore opened in a real browser that passes the challenge, downloaded, and text-extracted (OCR) on 2026-06-22. Each one's <strong>page-1 caption was verified</strong> (FERC reporter cite, respondent RTO, docket number, the title “Order Instituting Proceeding Under Section 206,” and the issued date) before any of its text was used. The per-order directives in Tab 2 are quoted from those PDFs with paragraph cites (e.g. “P 77”); the structured extract is committed at <span class='mono'>sources/orders-extract.json</span>. Each cite offers two links to that page: <strong>PDF</strong> (the committed copy under <span class='mono'>docs/orders/</span>, served with the site so it opens inline and jumps reliably) and <strong>gov</strong> (the official ferc.gov source, page-precise when the browser opens it inline past Cloudflare). FERC's published PDFs drop paragraph numbers from their text layer, so a link is anchored to the page where the quoted language appears, not to a paragraph index. A test checks every link lands on a page that carries its quote. All six orders are 195 FERC ¶ 61,211 to 61,216, 92 to 119 pp, issued June 18, 2026.</p>" +
+      "<h4>The RM26-4 public comments, summarized</h4>" +
+      "<p>Every comment on the DOE ANOPR was scraped from FERC eLibrary; the bodies were downloaded and text-extracted, then summarized the auditable way (PNNL's “CommentNEPA” method). Verbatim quotes are pulled from each filing, binned to the reform principles, ANOPR questions, and regions (plus emergent topics), and each bin carries the <strong>filer's own stance</strong> and a plain description built from its quotes. A validator confirms every quote appears verbatim in its source, and a flagged minority get a second, independent LLM check. These per-comment summaries are <strong>AI-generated and provisional</strong> — not yet human-verified — so each is shown with its positions traceable to the quotes; the quotes, extracted text, and structured summary are committed under <span class='mono'>sources/comments/</span>. A handful of image-only scans and one filing eLibrary serves inline are not yet summarized.</p>" +
       "<h4>Derived dates</h4>" +
       "<p>The 30-day and 60-day periods are stated by FERC. The specific calendar due-dates are derived from the June 18, 2026 issuance (business-day-adjusted figures attributed to the National Law Review analysis).</p>" +
       "<h4>All sources</h4>" + srcList +

@@ -1,0 +1,119 @@
+{
+  "accession": "20251121-5496",
+  "filer": "Information Technology Industry Council",
+  "org_type": "data_center",
+  "filed": "11/21/2025",
+  "source_text": "/Users/pranava/Projects/FERC Show Cause Orders/sources/comments/files/20251121-5496__Information-Technology-Industry-Council/ITI Comment_FERC Docket RM26-4-000.txt",
+  "overall_summary": "ITI supports FERC's large load interconnection rulemaking and affirms key principles: raising the 20 MW threshold to 75 MW, bundling generation and load in studies to reduce upgrades, applying standardized deposits and penalties, and allocating costs based on benefits rather than universally assigning 100% to the load, while cautioning that curtailment flexibility should be voluntary and subject to clear operational guidelines.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "ITI suggests that the minimum load threshold be adjusted to 75MWs in order to not overburden the process.",
+      "concern": "Threshold should be 75 MW not 20 MW",
+      "bins": ["topic:load-threshold"]
+    },
+    {
+      "id": 2,
+      "text": "ITI supports the principle that load and generation should be studied together. We would like to clarify that this should not be limited to colocation arrangements. If new generating facilities are located at or near new load facilities, then they would both require less transmission and distribution upgrades than if they were studied separately.",
+      "concern": "Load and generation should be studied together beyond colocation",
+      "bins": ["pr:study", "pr:colo"]
+    },
+    {
+      "id": 3,
+      "text": "Interconnection studies should comprehensively model large load customers' generation colocation arrangements, curtailment abilities, or arrangements with other parties that would result in fewer upgrades. Fewer system upgrades resulting from interconnection studies lead to faster energization timelines for large loads requesting interconnection.",
+      "concern": "Studies should model all configurations that reduce upgrades to speed energization",
+      "bins": ["pr:study", "pr:colo"]
+    },
+    {
+      "id": 4,
+      "text": "FERC should also consider introducing a cluster study process for large loads, similar to the cluster study process in Order 2023 for generation.",
+      "concern": "Support for cluster study process for large loads",
+      "bins": ["pr:study"]
+    },
+    {
+      "id": 5,
+      "text": "ITI supports the principle that loads should be subject to standardized study deposits, readiness requirements, and withdrawal penalties. This would reduce the number of speculative projects and provide more certainty to the interconnection queue. However, we would like to caveat that penalties for withdrawal must be applied surgically. As large load customers may be evaluating multiple sites at once, the withdrawal penalties should be based on the amount of time spent in the queue, study costs, and the withdrawal's impact.",
+      "concern": "Support deposits and penalties but must be calibrated to actual costs and time in queue",
+      "bins": ["topic:deposits-penalties"]
+    },
+    {
+      "id": 6,
+      "text": "ITI agrees that hybrid projects and large loads that agree to be flexible according to operational standards that result in fewer transmission or generation investments would lead to reduced energization timelines. However, the prioritization of study queues based on the ability to be curtailable may lead to inconsistent policy priorities and raise significant questions around non-discriminatory and non-preferential access.",
+      "concern": "Caution on prioritizing curtailable loads to avoid discrimination",
+      "bins": ["pr:flex"]
+    },
+    {
+      "id": 7,
+      "text": "Regulators should take into account the complexity of this issue in practice, and curtailment should be voluntary and not mandatory. Not all large loads are able to reduce their load flexibly and shift load across time or geographic areas. Sometimes, curtailing load from the grid involves firing backup generators, which are bound by existing air permit laws and noise control. Clear guidelines are needed to define the amount of flexibility and the duration of response expected.",
+      "concern": "Curtailment must be voluntary with clear operational guidelines",
+      "bins": ["pr:flex"]
+    },
+    {
+      "id": 8,
+      "text": "ITI supports the principle that large loads should be responsible for 100% of the network upgrades assigned through the interconnection study results. However, large-scale regional network upgrades, such as those planned through regional transmission planning processes, spread a wide range of benefits to a wide range of customers. Large loads should be responsible for 100% of the upgrades directly triggered by their interconnection to the extent that those upgrades do not convey broader benefit to other grid customers. On the other hand, when upgrades do provide broader benefits, costs should be allocated in accordance with their benefits.",
+      "concern": "Cost allocation should match benefit, not assign 100% to load for regional upgrades",
+      "bins": ["pr:cost"]
+    },
+    {
+      "id": 9,
+      "text": "Any rulemaking by the Commission should maintain consistent 'beneficiary pays' cost allocation principles, as directed by Order 1920/1920-A.",
+      "concern": "Support beneficiary pays principle for cost allocation",
+      "bins": ["pr:cost"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "topic:load-threshold",
+      "name": "Raise load threshold to 75 MW",
+      "stance": "support",
+      "description": "ITI supports raising the minimum load threshold from 20 MW to 75 MW to avoid overburdening the interconnection process.",
+      "quote_ids": [1]
+    },
+    {
+      "key": "pr:study",
+      "name": "Joint study of generation and load",
+      "stance": "support",
+      "description": "ITI supports studying generation and load together to reduce transmission and distribution upgrades, including cluster study processes. Studies should comprehensively model colocation, curtailment, and other arrangements that reduce upgrade costs and speed energization timelines.",
+      "quote_ids": [2, 3, 4]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Colocation of generation and load",
+      "stance": "support",
+      "description": "ITI supports comprehensive modeling of generation colocation arrangements and other configurations in interconnection studies, emphasizing that colocation should not be limited to specific arrangements but should include all configurations that reduce upgrade costs.",
+      "quote_ids": [2, 3]
+    },
+    {
+      "key": "topic:deposits-penalties",
+      "name": "Calibrated deposits and withdrawal penalties",
+      "stance": "support",
+      "description": "ITI supports standardized study deposits, readiness requirements, and withdrawal penalties to reduce speculative projects and provide certainty. However, withdrawal penalties must be calibrated to actual costs and time in queue rather than applied uniformly.",
+      "quote_ids": [5]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility should be voluntary with clear guidelines",
+      "stance": "mixed",
+      "description": "ITI supports expedited study for flexible loads but opposes mandatory prioritization based on curtailment ability as potentially discriminatory. Curtailment must be voluntary, and clear operational guidelines are needed because not all loads can shift flexibly and backup generators face air and noise permit constraints.",
+      "quote_ids": [6, 7]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Beneficiary pays cost allocation",
+      "stance": "support",
+      "description": "ITI supports the principle that loads bear 100% of upgrade costs directly triggered by their interconnection, but when regional upgrades provide broader benefits, costs should be allocated according to benefits, following the beneficiary pays principle in Order 1920/1920-A.",
+      "quote_ids": [8, 9]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": ["study", "colo", "flex", "cost"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

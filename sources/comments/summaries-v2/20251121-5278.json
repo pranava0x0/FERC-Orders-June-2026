@@ -1,0 +1,246 @@
+{
+  "accession": "20251121-5278",
+  "filer": "Emerald AI",
+  "org_type": "data_center",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5278__Emerald-AI/Emerald AI_large load ANOPR Comments VF.txt",
+  "overall_summary": "Emerald AI strongly supports the ANOPR and urges FERC to create a Flexible Load Fast Track (FLFT) that rewards verifiable, software-defined flexibility with faster and larger interconnections. The filing argues that a technology-neutral, performance-based definition of curtailment is essential so that software-orchestrated data center demand reduction counts the same as a physical breaker trip. Emerald AI contends that the greatest opportunity in this rulemaking is enabling large loads to avoid or defer grid infrastructure upgrades entirely, reducing costs for ratepayers and accelerating AI deployment.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "We are particularly supportive of Principle 7 and urge the Commission to create a \"Flexible Load Fast Track\" (FLFT) that rewards verifiable flexibility with what large loads value most: faster and larger interconnections for new facilities seeking swift access and existing facilities seeking larger and speedy capacity to upgrade to latest-generation computing technology.",
+      "concern": "Calls for an expedited interconnection track tied to verified flexibility commitments",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The greatest opportunity in this rulemaking is not merely streamlining the administrative study process, but enabling large loads to actively avoid or defer massive grid and energy infrastructure upgrades.",
+      "concern": "Frames avoiding infrastructure upgrades as the primary value of flexibility, not just faster studies",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The Commission should instead adopt a performance-based definition of flexibility, consistent with the shift toward performance-based standards seen in other areas of grid regulation. If a facility can demonstrate, through telemetry and secure software interfaces, that it will reduce its withdrawal from 100 MW to 75 MW within the required timeframe of a signal, it effectively provides the same reliability value as a physical breaker, but with vastly higher economic efficiency.",
+      "concern": "Argues software-verified demand reduction should qualify as curtailment on par with physical disconnection",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The final rule should be technology-neutral and performance-based, recognizing the full spectrum of on-site flexibility.",
+      "concern": "Requests that the rule not prescribe specific technology for meeting flexibility commitments",
+      "bins": [
+        "pr:flex",
+        "topic:tech-neutral-standard"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "If the PJM interconnection is thermally constrained but the MISO region has excess wind generation, an orchestrator can route new inference requests to the MISO facility, for example. This capability acts as a \"virtual transmission line.\" Instead of moving megawatts of electrons across a congested wire to meet a static demand, the system moves the demand for those electrons to a location where power is abundant.",
+      "concern": "Proposes cross-region workload migration as a non-wires alternative to new transmission between PJM and MISO",
+      "bins": [
+        "rg:pjm",
+        "rg:miso",
+        "topic:spatial-flexibility"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the marginal cost of software-based flexibility is near-zero (operating expense), whereas the marginal cost of new transmission capacity is extremely high (capital expense).",
+      "concern": "Contrasts software flexibility cost with transmission buildout cost to support the FLFT economic case",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Transmission service frameworks do not yet exist to allow for load flexibility to avoid network upgrades. Network Integration Transmission Service at the wholesale level is non-interruptible under FERC's pro forma tariff. And, while non-firm point-to-point service does exist, there is no non-firm network option for a load to access and draw upon the full network during times it is not curtailed. Nor do utilities studying large load interconnection generally provide a pathway through which a curtailable customer can be studied to avoid network upgrades.",
+      "concern": "Identifies a structural gap in existing tariff frameworks that forces flexible loads to be studied as inflexible",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "topic:tariff-gap"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Emerald AI strongly recommends this be defined as a secure, standardized, and auditable software interface, not direct, physical utility control.",
+      "concern": "Recommends the operator control requirement be met via software interface rather than physical disconnection",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "projects that remain inflexible proceed through the standard process and may bear upgrade-related costs, whereas projects that commit to and deliver flexibility can avoid or reduce those upgrades and connect sooner.",
+      "concern": "Supports a cost allocation approach that assigns upgrade costs to inflexible loads and rewards flexible ones",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "the FLFT would allow facilities meeting defined flexibility thresholds to receive interconnection approval within 60 to 90 days, based on verification of available firm capacity and demonstration of control and telemetry systems.",
+      "concern": "Proposes a 60 to 90 day study timeline for loads that meet flexibility thresholds",
+      "bins": [
+        "pr:study",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Annual Event Limits: Setting a reasonable ceiling on annual curtailment events prevents excessive dispatch and ensures that flexible loads are used strategically, during genuine system stress, rather than as routine operational tools. AI data centers and next-generation AI Factories engage in the most economically critical workloads of the entire economy, so their curtailment should be extremely judicious.",
+      "concern": "Requests limits on how often operators can call curtailment events to protect data center operations",
+      "bins": [
+        "pr:flex",
+        "topic:performance-standards"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Flexible Load Fast Track",
+      "stance": "support",
+      "description": "Emerald AI strongly supports creating a dedicated FLFT that expedites interconnection for loads that commit to verifiable, software-defined flexibility. The filing argues the rule must adopt a technology-neutral, performance-based definition of curtailment so that software-orchestrated demand reduction counts as valid curtailment. It also recommends operator control be satisfied by a secure, auditable software interface rather than physical disconnection.",
+      "quote_ids": [
+        1,
+        3,
+        4,
+        8,
+        11
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Study for Flexible Loads",
+      "stance": "support",
+      "description": "Emerald AI supports a fast-track study path with a 60 to 90 day approval timeline for loads that demonstrate verifiable flexibility thresholds. It argues that performance-based software verification provides the same reliability signal as physical control, justifying the expedited treatment.",
+      "quote_ids": [
+        1,
+        3,
+        8,
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study Process Reform",
+      "stance": "support",
+      "description": "The filing contends that the current study process forces flexible loads to be evaluated at worst-case inflexible peak, overstating required upgrades. Fixing this requires a parallel FLFT study track with a 60 to 90 day timeline and the ability for curtailable customers to be studied against their committed net withdrawal profile.",
+      "quote_ids": [
+        2,
+        7,
+        10
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Avoid Unnecessary Upgrade Costs",
+      "stance": "support",
+      "description": "Emerald AI argues the near-zero marginal cost of software flexibility makes it far cheaper than new transmission, and that the existing tariff structure forces ratepayers to subsidize upgrades that could be avoided. The filing supports directing upgrade costs to loads that remain inflexible and exempting those that deliver verified flexibility.",
+      "quote_ids": [
+        2,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Upgrade Cost Tied to Flexibility",
+      "stance": "support",
+      "description": "Emerald AI supports tying upgrade cost responsibility to flexibility performance: inflexible loads bear upgrade costs while flexible loads avoid them. It frames software-based flexibility as a low-cost substitute for capital-intensive transmission, protecting ratepayers from unnecessary socialization of those costs.",
+      "quote_ids": [
+        6,
+        9
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Spatial Flexibility Example",
+      "stance": "neutral",
+      "description": "Emerald AI cites PJM as an example of a congested region where workload migration to a less constrained area such as MISO can act as a virtual transmission line, relieving local constraints without new infrastructure.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO as Flexibility Destination",
+      "stance": "neutral",
+      "description": "MISO is cited as a region with surplus wind generation that could absorb AI workloads shifted from a constrained PJM interconnection, illustrating the value of cross-region spatial flexibility.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:spatial-flexibility",
+      "name": "Cross-Region Workload Migration",
+      "stance": "support",
+      "description": "Emerald AI describes migrating AI compute workloads across data centers in different regions via fiber networks as a non-wires alternative to building new transmission. It frames this spatial flexibility as a virtual transmission line that moves demand to where power is available rather than moving electrons across congested wires.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:tariff-gap",
+      "name": "No Tariff Path for Flexible Loads",
+      "stance": "neutral",
+      "description": "The filing identifies a structural gap in existing wholesale tariff frameworks: no transmission service product allows a curtailable load to avoid network upgrade costs, because both network integration service and point-to-point non-firm service lack the flexibility pathway needed. This gap causes overestimation of required upgrades.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:tech-neutral-standard",
+      "name": "Technology-Neutral Flexibility Rule",
+      "stance": "support",
+      "description": "Emerald AI asks FERC to avoid prescribing specific hardware or methods for meeting flexibility commitments, instead setting measurable performance criteria that allow software-only, hardware-only, or hybrid solutions to qualify.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:performance-standards",
+      "name": "Structured Curtailment Event Limits",
+      "stance": "support",
+      "description": "Emerald AI proposes six performance criteria categories including event duration, advance notice, recovery periods, annual event limits, response time tolerances, and testing rules. It specifically requests annual event limits to prevent excessive dispatch of data centers whose workloads represent critical economic infrastructure.",
+      "quote_ids": [
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "flex",
+      "study",
+      "cost"
+    ],
+    "rg": [
+      "pjm",
+      "miso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

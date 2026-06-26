@@ -1,0 +1,176 @@
+{
+  "accession": "20251205-5143",
+  "filer": "National Association of Regulatory Utility Commissioners",
+  "org_type": "state_commission",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5143__National-Association-of-Regulatory-Utility-Commiss/RM26-4 NARUC Reply Comments 120525.txt",
+  "overall_summary": "NARUC opposes FERC's assertion of jurisdiction over large load interconnections as violating the federal-state jurisdictional divide in the Federal Power Act, and urges scheduling a technical conference with state regulators before issuing a Notice of Proposed Rulemaking. If FERC proceeds, NARUC emphasizes that reforms must preserve state authority over retail rates and services, ensure large load customers bear 100% of upgrade costs, and provide flexibility for regional variation.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "every single state public utility commission of the nineteen state PUCs that filed comments expressed concern that FERC asserting jurisdiction over load interconnection would or could impinge on the states' exclusive authority over retail rates and services",
+      "concern": "All nineteen state PUCs oppose FERC asserting jurisdiction over load interconnection",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Congress through the Federal Power Act created a bright-line jurisdictional divide between FERC and that the Commission must respect and honor that jurisdictional bright-line in any rule it issues",
+      "concern": "Federal Power Act establishes bright-line jurisdictional divide FERC must respect",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The Federal Power Act distinguishes between federal and state jurisdiction over electricity, and we strongly encourage the Commission to continue to honor this distinction when taking any future actions addressing large load interconnections",
+      "concern": "Congressional encouragement to honor FPA federal-state jurisdictional distinction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "jurisdiction under the FPA for the Commission to control the terms of large load interconnection is far from clear. A declaration that the Commission has jurisdiction over the transmission component of bundled retail sales is a questionable matter, and would have the likely unintended consequence of the Commission taking charge of the transmission cost component of retail sales rates, meaningfully diminishing state-based authority over retail rates",
+      "concern": "FPA jurisdiction over large load transmission in bundled retail sales is unclear and diminishes state authority",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the ANOPR will lead to unnecessary legal disputes and litigation between the Commission and states, which will delay the Commission's ability to provide regulatory certainty about these important issues and hinder timely development of new generation",
+      "concern": "ANOPR risks legal disputes between FERC and states that delay certainty",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the Commission should focus on developing large load interconnection standards that do not stretch jurisdictional boundaries. As a practical matter, it would maximize near-term benefits to avoid jurisdictional disputes that would threaten to delay the implementation, and the legal durability, of the Commission's directives in this proceeding",
+      "concern": "Standards avoiding jurisdictional disputes maximize near-term benefits and legal durability",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The Commission, however, should not rush to impose a one-size-fits-all regulatory solution nationwide. Some regions of the country are just beginning to bring data centers online, while others have already interconnected substantial large data center loads and are working quickly to add more. Keeping this momentum going is imperative. Issuing a detailed, standard rule that fails to account for the diversity in the economic landscape could slow down successful interconnection processes and undermine the Commission's goal of bringing more data centers online faster and in a more orderly manner",
+      "concern": "One-size-fits-all rule risks slowing successful regional interconnection momentum",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "NARUC respectfully requests that the Commission schedule a two-day technical conference in January 2026, to explore viable solutions with key stakeholders",
+      "concern": "NARUC requests January 2026 technical conference before rule issuance",
+      "bins": [
+        "topic:process"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "working together, under the concept of cooperative federalism, will lead to optimal solutions",
+      "concern": "Cooperative federalism approach yields optimal solutions",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "large load customers are responsible for 100% of the upgrade costs consistent with the cost causation principle",
+      "concern": "Large load customers must bear 100% of upgrade costs per cost causation principle",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Any rule must ensure that all large load interconnections comply with NERC reliability standards and Open Access Transmission Tariff provisions, including technical requirements for system protection facilities for hybrid projects and potential penalties for unauthorized power injections or withdrawals",
+      "concern": "Rules must ensure compliance with NERC reliability standards and OATT provisions",
+      "bins": [
+        "topic:reliability"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "FERC should not take any action that would derail the successful efforts of state regulators and regional entities to address large load interconnections. Any rule should provide for flexibility and should account for regional diversity and market structure diversity",
+      "concern": "Rules must provide flexibility and account for regional and market structure diversity",
+      "bins": [
+        "pr:flex"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Preserve federal-state jurisdictional boundary",
+      "stance": "oppose",
+      "description": "NARUC and all nineteen state PUCs oppose FERC asserting jurisdiction over large load interconnections, arguing that the Federal Power Act establishes a bright-line jurisdictional divide that FERC must respect. NARUC contends that jurisdiction over the transmission component of bundled retail sales would diminish state authority over retail rates and services, invite legal disputes delaying regulatory certainty, and undermine implementation. Cooperative federalism is the preferred path.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Maintain regional flexibility over one-size-fits-all rules",
+      "stance": "oppose",
+      "description": "NARUC opposes binding nationwide standards that fail to account for regional economic diversity and existing successful interconnection processes. Different regions are at different stages of large load development, and rigid national rules risk slowing proven private-sector innovations and the momentum in regions already moving loads efficiently.",
+      "quote_ids": [
+        7,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Large load customers bear 100% of upgrade costs",
+      "stance": "support",
+      "description": "NARUC affirms that large load customers must be responsible for 100% of upgrade costs consistent with cost causation principles, ensuring that costs do not shift to existing ratepayers.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:process",
+      "name": "Convene technical conference before rulemaking",
+      "stance": "support",
+      "description": "NARUC urges FERC to schedule a two-day technical conference in January 2026 with state regulators, regional entities, and commenters to explore consensus solutions before issuing a Notice of Proposed Rulemaking. This collaborative approach allows stakeholders to clarify positions and coalesce on solutions.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:reliability",
+      "name": "Ensure NERC compliance and system protection",
+      "stance": "support",
+      "description": "NARUC supports requiring all large load interconnections to comply with NERC reliability standards and Open Access Transmission Tariff provisions, including technical safeguards for hybrid projects and penalties for unauthorized power injections or withdrawals.",
+      "quote_ids": [
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "flex",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

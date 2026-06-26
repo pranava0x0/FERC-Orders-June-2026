@@ -1,0 +1,164 @@
+{
+  "accession": "20251121-5375",
+  "filer": "America's Power",
+  "org_type": "trade_assoc",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5375__Americas-Power/America's Power Initial Comments RM26-4-Final.txt",
+  "overall_summary": "America's Power supports expedited interconnection pathways for large loads that utilize existing generating capacity, particularly coal-fired facilities. The filer requests fast-track treatment for loads contracting with existing generators, a 60-day priority window for generators to reclaim lost capacity interconnection rights, encouragement of co-location near existing generation to minimize network upgrades, and waiver of reliability studies when units avoid retirement to serve large loads.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "New large load customers that enter into bilateral contracts with existing generators to generate more power either by increasing their capacity factor or adding new generation at an existing site should be eligible for fast-track interconnection treatment.",
+      "concern": "Expedited interconnection for loads contracting with existing generators",
+      "bins": [
+        "pr:study",
+        "topic:expedited-colo"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The average capacity factor for the coal fleet was 43% last year, which means there is considerable underutilized generating capacity available to serve large loads.",
+      "concern": "Coal fleet underutilization represents available capacity",
+      "bins": [
+        "topic:coal-capacity"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Increasing the average capacity factor for coal to 63%, the average capacity factor in January and July of this year, would translate into 35,000 MW of additional generating capacity, or enough to power 35 (more or less) of the largest hyperscale data centers.",
+      "concern": "Potential additional capacity from increased coal utilization",
+      "bins": [
+        "topic:coal-capacity"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "An expedited interconnection path also would incentivize bilateral contracting between underutilized generating capacity and large loads. Such contracting would make efficient use of existing infrastructure, minimize if not eliminate the factors that have prompted premature retirement, and avoid unnecessary and costly transmission expansion.",
+      "concern": "Bilateral contracting benefits existing generators and transmission",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "topic:expedited-colo"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the Commission should adopt a 60-day fast-track priority right for existing generators to reclaim capacity interconnection rights (CIRs) lost due to deactivation, mothballing, or other inactivity of a unit at a generating facility when the generating facility has the ability to increase its output from other operating units at the facility or through reactivation of the mothballed unit.",
+      "concern": "60-day priority to reclaim lost interconnection rights",
+      "bins": [
+        "topic:cir-recapture"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Allowing an existing generator to re-secure those rights will avoid the quagmire of the interconnection study process and its associated delays and thus achieve the ANOPR's goal of timely and orderly interconnection of large loads to the transmission system.",
+      "concern": "Recapturing rights avoids delays in study process",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "siting new load near or at the same point of interconnection as existing generation such as a coal-fired plant can provide similar efficiencies. Therefore, the Commission should encourage interconnection studies that examine load and hybrid facilities under scenarios that consider location near existing generation to enable optimized siting, minimize network upgrade costs and delays, and enhance grid utilization.",
+      "concern": "Co-location with existing generation reduces network upgrade needs",
+      "bins": [
+        "pr:colo",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "generating units that reverse retirement decisions in order to serve large load help to offset demands the new load otherwise would have placed on the grid. Therefore, the Commission should waive the proposed requirement that a generator undergo a reliability study if nuclear or coal-fired resource owners can demonstrate that the resource would have been retired under existing market conditions absent a commercial contract.",
+      "concern": "Waive reliability studies for units avoiding retirement",
+      "bins": [
+        "topic:reliability-study-waiver"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Streamlined study process",
+      "stance": "support",
+      "description": "Expedited interconnection and fast-track pathways avoid prolonged interconnection studies and associated delays by allowing existing generators contracting with large loads to bypass lengthy review processes.",
+      "quote_ids": [
+        1,
+        4,
+        6
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Reduced transmission costs",
+      "stance": "support",
+      "description": "Bilateral contracting and co-location with existing generation eliminate or reduce costly transmission network upgrades needed to serve new large loads.",
+      "quote_ids": [
+        4,
+        7
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location with existing generation",
+      "stance": "support",
+      "description": "Siting large loads near existing coal and other generating facilities enables optimized placement, minimizes network upgrade costs, and enhances grid utilization.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:expedited-colo",
+      "name": "Fast-track for bilateral contracting",
+      "stance": "support",
+      "description": "Large load customers should receive expedited interconnection when entering bilateral contracts with existing generators to increase output or add generation at existing sites.",
+      "quote_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "key": "topic:coal-capacity",
+      "name": "Coal fleet underutilization opportunity",
+      "stance": "support",
+      "description": "Coal plants operating at 43% average capacity factor leave 35,000 MW of available capacity that could serve large loads without new generation or transmission.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "topic:cir-recapture",
+      "name": "60-day priority for lost interconnection rights",
+      "stance": "support",
+      "description": "Existing generators should have a 60-day priority window to reclaim capacity interconnection rights lost through unit deactivation or mothballing, enabling fast return to service.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:reliability-study-waiver",
+      "name": "Waive reliability studies for avoided retirements",
+      "stance": "support",
+      "description": "Coal and nuclear units that reverse retirement decisions to serve large co-located loads should be exempt from reliability studies, as they offset new grid demand.",
+      "quote_ids": [
+        8
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "study",
+      "cost",
+      "colo"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

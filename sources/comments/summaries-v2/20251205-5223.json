@@ -1,0 +1,284 @@
+{
+  "accession": "20251205-5223",
+  "filer": "Edison Electric Institute",
+  "org_type": "trade_assoc",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5223__Edison-Electric-Institute/EEI ANOPR Reply Comments - (final 12.5.25).txt",
+  "overall_summary": "EEI urges the Commission to advance large load interconnection through cooperative federalism, avoiding jurisdictional expansion and preserving state-level processes already underway. EEI supports rolled-in, gross-load cost allocation to protect everyday customers and opposes net load billing for co-located or hybrid facilities. EEI also argues the Commission should keep this proceeding narrowly scoped and not add issues like regional transmission planning or load forecasting reform.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "EEI members share the Administration's goal of enabling speed-to-power for large load customers.  We urge the Commission to move deliberately forward in a manner that protects other customers, ensures grid reliability, and acknowledges the distinct role of the states.",
+      "concern": "EEI supports speed-to-power but insists on customer protection and state role",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The strongest path forward is through adherence to principles of cooperative federalism.",
+      "concern": "EEI frames cooperative federalism as the overarching policy framework",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "An overwhelming majority of commenters, representing a diverse array of perspectives, agree that the Commission should avoid disrupting processes already in place that are supported by the utilities, have been approved by state regulatory authorities, and underlie large load customers' investment decisions.",
+      "concern": "Broad commenter consensus to preserve existing state and utility processes",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "EEI notes that many commenters considered the 20 MW threshold suggested by the ANOPR to be too low.",
+      "concern": "The proposed 20 MW threshold is widely seen as capturing too many non-data-center customers",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "commenters agreed that a 20 MW threshold would fail to ensure that reforms are focused on the high-impact data center customers that provided the impetus for the ANOPR.",
+      "concern": "20 MW threshold misses the target class and dilutes the reform's purpose",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "any nominal threshold should be subject to adjustment to reflect regional and local concerns.",
+      "concern": "Threshold should be adjustable by region rather than fixed nationally",
+      "bins": [
+        "aq:threshold",
+        "topic:regional-flexibility"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Any cost allocation policy adopted in this proceeding should do two things: (1) ensure large load customers pay for the costs that they impose on the transmission system, and (2) protect everyday Americans from adverse impacts and costs from interconnecting new large loads.",
+      "concern": "Cost policy must balance cost causation with protection of existing ratepayers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "large loads should not receive special carved-out treatment (namely, by only paying directly assigned costs for network upgrades), but rather they should be responsible for paying their fair share of the relevant transmission system, including both network upgrades they caused and the existing system they benefit from, like all other users.",
+      "concern": "EEI opposes direct assignment and supports rolled-in cost allocation for large loads",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "network upgrades are \"integrated with and support the ... overall Transmission System for the general benefit of all users of such Transmission System.\"  By their very definition, they benefit the entire system, akin to a widened highway connecting busy commercial regions.",
+      "concern": "Network upgrades for large loads broadly benefit the grid, undermining direct-assignment arguments",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Adopting a default rule that allocates the costs of transmission service for co-located or hybrid large loads based on net injection/withdrawal rights will create adverse cost impacts for other customers and is not necessary to achieve the goals of the DOE ANOPR.",
+      "concern": "Net load billing for co-located facilities would shift costs unfairly onto other customers",
+      "bins": [
+        "pr:cost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the entire arrangement is connected to and reliant on the broader system.  As one example, there is a possibility that the generation component of a hybrid facility becomes unavailable, and the full load (i.e., without netting) looks to non-co-located resources to be served.",
+      "concern": "Hybrid facilities rely on the full transmission system and should pay accordingly",
+      "bins": [
+        "pr:cost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "EEI's recommended approach--a default cost-allocation rule based on gross load for both transmission service and ancillary services--is the measured, most consumer-protective approach.",
+      "concern": "EEI recommends gross-load billing as the default for transmission and ancillary services",
+      "bins": [
+        "pr:cost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Most commenters support the Commission achieving the DOE ANOPR goals through cooperative federalism, without upending the existing jurisdictional paradigm.",
+      "concern": "Wide commenter support for limiting FERC to existing jurisdictional boundaries",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Given the speed with which many states and utilities have adopted large load policies and programs, it would be counterproductive for the Commission to push the pause button and spend months or years developing Commission-jurisdictional uniform large load interconnection procedures.",
+      "concern": "Delay from new federal rulemaking would undercut faster state action already underway",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Any new assertion of Commission jurisdiction to large load interconnection service will raise innumerable questions, such as who would be responsible for serving the load or maintaining reliability and resource adequacy over time.",
+      "concern": "Jurisdictional expansion raises unresolved reliability and resource adequacy questions",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "There is no merit to allegations that utilities are delaying the interconnection of large loads to the transmission system.  There is simply no incentive to do so and in fact, as the record demonstrates, there is every incentive for utilities to work with large load customers and states to find ways to bring large loads on as quickly as reliably possible.",
+      "concern": "EEI rejects claims of undue discrimination by utilities against large load customers",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:discrimination-claims"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Any reforms adopted through this proceeding should be tailored around the issue presented, which was framed as limited to large load interconnections.  While other reforms may be necessary to address the issues raised by large loads, the Commission should address those issues in other dockets.",
+      "concern": "Commission should stay narrowly scoped and not add transmission planning or forecasting issues",
+      "bins": [
+        "topic:proceeding-scope"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Limit Federal Jurisdictional Reach",
+      "stance": "oppose",
+      "description": "EEI opposes expanding Commission jurisdiction over large load interconnection service, arguing that cooperative federalism and state authority are the appropriate framework. EEI contends there is no evidence of utility discrimination against large loads and that jurisdictional expansion would trigger litigation and leave reliability and resource adequacy questions unanswered.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Raise and Regionalize MW Threshold",
+      "stance": "oppose",
+      "description": "EEI and other commenters find the ANOPR's proposed 20 MW threshold too low, as it would capture many ordinary industrial and commercial customers rather than focusing on high-impact data centers. EEI supports a higher threshold that can be adjusted by region to account for local system conditions.",
+      "quote_ids": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Avoid Federal Delay to State Progress",
+      "stance": "oppose",
+      "description": "EEI argues that pausing to develop new federal interconnection procedures would waste months or years while states and utilities have already made significant progress, slowing the speed-to-power goal that motivates the proceeding.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Gross-Load Rolled-In Cost Allocation",
+      "stance": "support",
+      "description": "EEI favors allocating transmission and ancillary service costs to large loads on a gross-load basis, treating them as users of the integrated system rather than carved-out customers. EEI argues this is the most consumer-protective approach and that network upgrades for large loads benefit all grid users, making direct assignment inappropriate.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Oppose Net Load Billing for Hybrid Facilities",
+      "stance": "oppose",
+      "description": "EEI opposes cost allocation based on net injection or withdrawal for co-located and hybrid facilities. Because the generation component can go offline and the full load then depends on the broader transmission system, netting understates actual system reliance and creates cost shifts to other customers similar to problematic state net metering programs.",
+      "quote_ids": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study Based on Actual Grid Impact",
+      "stance": "support",
+      "description": "EEI supports studying large load interconnections in a way that reflects their actual use of the grid, including curtailability, rather than applying uniform or net-based assumptions that misrepresent true system impact.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:cooperative-federalism",
+      "name": "Cooperative Federalism Framework",
+      "stance": "support",
+      "description": "EEI consistently frames cooperative federalism as the central organizing principle for large load interconnection policy. EEI cites broad commenter agreement and the FPA's design to argue that durable reform requires collaboration between FERC and state regulators, not federal preemption.",
+      "quote_ids": [
+        2,
+        3,
+        13
+      ]
+    },
+    {
+      "key": "topic:regional-flexibility",
+      "name": "Allow Regional Threshold Adjustment",
+      "stance": "support",
+      "description": "EEI supports allowing RTOs and regions to set or adjust the MW threshold above the federal floor to account for local system conditions, avoiding a one-size-fits-all national rule.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:discrimination-claims",
+      "name": "No Evidence of Utility Discrimination",
+      "stance": "oppose",
+      "description": "EEI argues that claims of utilities discriminating against large load customers are unsupported by the record. Utilities face legal obligations to serve and have economic incentives to connect large loads quickly.",
+      "quote_ids": [
+        16
+      ]
+    },
+    {
+      "key": "topic:proceeding-scope",
+      "name": "Keep Proceeding Narrowly Scoped",
+      "stance": "support",
+      "description": "EEI urges the Commission not to add regional transmission planning or load forecasting reforms to this docket. Those issues should be addressed separately to avoid complicating and delaying the core large load interconnection reforms.",
+      "quote_ids": [
+        17
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "expedited"
+    ],
+    "pr": [
+      "cost",
+      "colo",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

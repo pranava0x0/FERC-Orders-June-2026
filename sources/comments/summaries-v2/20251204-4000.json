@@ -1,0 +1,87 @@
+{
+  "accession": "20251204-4000",
+  "filer": "UNITED STATES CONGRESS",
+  "org_type": "elected",
+  "filed": "12/04/2025",
+  "source_text": "sources/comments/files/20251204-4000__UNITED-STATES-CONGRESS/25.12.02 - Mannion Comment on FERC ANOPR-4.txt",
+  "overall_summary": "Rep. John Mannion (NY-22) urges FERC to put consumer affordability at the center of any large-load interconnection rulemaking. He argues that data centers should not shift energy costs onto working families and warns that rushing to meet an arbitrary timeline with vague rules will waste the opportunity to lower electricity bills.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Working families and seniors living on fixed incomes shouldn't be subsidizing the energy costs of data centers and other large load customers.",
+      "concern": "Cost-shifting from large loads onto residential ratepayers must be prevented",
+      "bins": ["pr:cost", "topic:consumer-protection"]
+    },
+    {
+      "id": 2,
+      "text": "As we advance new energy intensive projects, we must ensure that consumer prices and the interests of the American taxpayer guide any new rules or regulatory changes.",
+      "concern": "Consumer prices should be the primary criterion for evaluating new interconnection rules",
+      "bins": ["pr:cost", "topic:consumer-protection"]
+    },
+    {
+      "id": 3,
+      "text": "I am cautiously optimistic about Secretary Wright's recent request for FERC to develop a regulatory framework regarding the interconnection of large loads.",
+      "concern": "Filer expresses conditional support for the ANOPR process",
+      "bins": ["topic:rulemaking-support"]
+    },
+    {
+      "id": 4,
+      "text": "As FERC considers regulatory action, I urge the Commission to prioritize policies that result in lower energy costs for consumers.",
+      "concern": "Commission should treat affordability as the top policy priority",
+      "bins": ["pr:cost"]
+    },
+    {
+      "id": 5,
+      "text": "Should FERC pursue ambiguity in any rule to meet an arbitrarily condensed timeline, it will undermine an opportunity to lower energy costs for consumers.",
+      "concern": "Rushing rulemaking and leaving rules vague will harm consumers",
+      "bins": ["pr:cost", "topic:rulemaking-process"]
+    },
+    {
+      "id": 6,
+      "text": "If FERC and DoE are serious about implementing a creative rule that will both lower costs for consumers and recognize the growing need for data centers and energy heavy projects, they must prioritize affordability and take the time necessary to get the policy right so that it lowers costs for consumers.",
+      "concern": "Affordability and adequate deliberation time are prerequisites for a sound rule",
+      "bins": ["pr:cost", "topic:rulemaking-process"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Consumer Cost Protection Priority",
+      "stance": "support",
+      "description": "The filer argues that any large-load interconnection rule must prevent cost-shifting onto residential ratepayers. Data centers and other large loads should bear their own energy costs, and FERC should treat consumer affordability as the primary measure of a rule's success.",
+      "quote_ids": [1, 2, 4, 5, 6]
+    },
+    {
+      "key": "topic:consumer-protection",
+      "name": "Ratepayer Equity for Families",
+      "stance": "support",
+      "description": "The filer grounds the cost argument in constituent harm: New York residents have seen sharp bill increases, and working families and seniors on fixed incomes are already under pressure. He contends these households should not cross-subsidize large commercial loads.",
+      "quote_ids": [1, 2]
+    },
+    {
+      "key": "topic:rulemaking-support",
+      "name": "Conditional ANOPR Support",
+      "stance": "mixed",
+      "description": "The filer is cautiously optimistic about the ANOPR process but ties his support to whether the resulting framework genuinely lowers consumer costs. He does not oppose the rulemaking outright.",
+      "quote_ids": [3]
+    },
+    {
+      "key": "topic:rulemaking-process",
+      "name": "Deliberate Rule Development",
+      "stance": "support",
+      "description": "The filer warns against an arbitrarily compressed timeline and calls for specificity over ambiguity. A rushed or vague rule, he argues, will squander the chance to deliver real savings for consumers.",
+      "quote_ids": [5, 6]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": ["cost"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

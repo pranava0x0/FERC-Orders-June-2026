@@ -1,0 +1,247 @@
+{
+  "accession": "20251121-5364",
+  "filer": "New York Independent System Operator, Inc.",
+  "org_type": "rto_iso",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5364__New-York-Independent-System-Operator-Inc/20251121_NYISO Cmmnts_Large Loads prpsd ANOPR-cmplt.txt",
+  "overall_summary": "NYISO supports reviewing large load interconnection processes but urges FERC to grant ISOs and RTOs flexibility to craft region-specific solutions rather than imposing uniform pro forma rules. NYISO highlights its single-state status, its recently launched Order No. 2023 cluster study process, and growing resource adequacy concerns as reasons why any federal rule must allow independent entity variations. It asks for flexibility on co-location study design, generator exit reliability assessments, and expedited study timelines.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the NYISO urges the Commission to provide flexibility in how an ISO/RTO can address the rulemaking's requirements to account for the unique circumstances and challenges that exist in its regions.",
+      "concern": "NYISO asks for regional flexibility in any final rule rather than uniform requirements",
+      "bins": [
+        "pr:flex",
+        "topic:independent-entity-variations"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "If the Commission issues a notice of proposed rulemaking that includes pro forma language, the NYISO respectfully requests that the Commission continue to permit ISO/RTOs with the opportunity to seek \"independent entity variations\" to enable them to customize the proposed revisions as necessary to fit regional needs.",
+      "concern": "NYISO requests that the pro forma rule preserve the independent entity variation mechanism",
+      "bins": [
+        "pr:flex",
+        "topic:independent-entity-variations"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Additional clarity on the scope of the Commission's jurisdiction over the interconnection of large loads will benefit the Independent System Operators (\"ISOs\") and Regional Transmission Organizations' (\"RTOs\") efforts to develop and implement large load interconnection reform.",
+      "concern": "Jurisdictional ambiguity impedes large load reform at ISOs and RTOs",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Clustering multiple proposed load interconnections with the simultaneous study of proposed generator interconnection requests is likely to present challenges.",
+      "concern": "Combining load and generator cluster studies poses operational difficulties",
+      "bins": [
+        "pr:colo",
+        "pr:study",
+        "topic:cluster-study-compatibility"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Affording flexibility to the NYISO to reform its load process will ensure that the timeliness of the generator interconnection process is not impacted while also furthering the goal of reliably interconnecting large loads to the transmission system fairly and expeditiously.",
+      "concern": "Flexibility protects Order No. 2023 generator queue timelines while advancing large load reform",
+      "bins": [
+        "pr:flex",
+        "pr:study",
+        "topic:cluster-study-compatibility"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The NYISO supports the requirement for ISO/RTOs to establish procedures to study, and ensure, that the exit or suspension of an existing generating facility, in whole or in part, from participation in the wholesale and ancillary markets to serve load does not result in reliability issues on its system.",
+      "concern": "NYISO endorses requiring reliability studies when a generator exits to serve co-located load",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights",
+        "topic:generator-exit-reliability"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "any proposed rule must allow ISO/RTOs to develop a process to assess the reliability impact of an existing generating facility that seeks to exit or suspend participation in order to serve new load directly.  Such assessment should include both transmission security as well as resource adequacy impacts.",
+      "concern": "Reliability assessment for generator exits must cover both transmission security and resource adequacy",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights",
+        "topic:generator-exit-reliability"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "the current fleet of generating resources connected to the New York Control Area (\"NYCA\") is decreasing while insufficient generation with the necessary characteristics is entering service.",
+      "concern": "NYCA faces a growing supply gap as retirements outpace new generation",
+      "bins": [
+        "rg:nyiso",
+        "topic:resource-adequacy"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "it is important to note that resource adequacy issues can also arise when large loads are added to the system, unrelated to a proposal to co-locate with an existing generator.",
+      "concern": "Large load additions alone can create resource adequacy problems, not only co-location scenarios",
+      "bins": [
+        "pr:study",
+        "topic:resource-adequacy"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The NYISO encourages the Commission to afford each region the flexibility to propose appropriate timeframes and deadlines which reflect that particular region's required studies to identify reliability issues.",
+      "concern": "Expedited study timelines should be region-specific rather than fixed at 60 days",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "A pro forma rule that does not permit flexibility on the timing of the study process could cause delays to other NYISO study processes.",
+      "concern": "A rigid 60-day expedited process risks disrupting other NYISO study workflows",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Regional flexibility in rule design",
+      "stance": "support",
+      "description": "NYISO strongly supports any final rule that allows ISOs and RTOs to adapt requirements to their own regional circumstances. It asks that the pro forma rule preserve independent entity variations and that timing requirements not be rigidly fixed, arguing that a one-size-fits-all approach risks disrupting existing processes, especially NYISO's recently implemented cluster study framework.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study process must protect existing queues",
+      "stance": "mixed",
+      "description": "NYISO supports improved load interconnection study processes but warns that integrating load studies into its new generator cluster process could slow down Order No. 2023 reforms. It also wants resource adequacy impacts assessed for any large load addition, not only co-location proposals.",
+      "quote_ids": [
+        4,
+        5,
+        9
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location and generator exit reliability",
+      "stance": "support",
+      "description": "NYISO endorses requiring reliability studies when a generating facility exits markets to serve co-located load, and asks that such studies cover both transmission security and resource adequacy. It requests flexibility for ISOs to design these studies in a way compatible with existing deactivation study processes.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Clarify FERC jurisdiction over load interconnection",
+      "stance": "support",
+      "description": "NYISO notes that ongoing jurisdictional uncertainty has complicated large load reform efforts and asks FERC to clarify the scope of its authority over large load interconnection so ISOs and RTOs can develop and file compliant tariff amendments with confidence.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid and generator exit study rules",
+      "stance": "support",
+      "description": "NYISO supports federal rules that require ISOs to study the reliability impacts of generators exiting markets to serve new load, including resource adequacy considerations, but asks for enough flexibility to integrate such requirements into existing NYISO deactivation study procedures.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Flexible expedited study timelines",
+      "stance": "mixed",
+      "description": "NYISO is not opposed to an expedited study track for curtailable large loads, but opposes a fixed 60-day deadline applied uniformly across all regions. It asks that each ISO and RTO be permitted to propose timelines that reflect the actual studies required in its region.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "rg:nyiso",
+      "name": "NYISO resource adequacy context",
+      "stance": "neutral",
+      "description": "NYISO describes its own shrinking generation reserve margins, driven by retirements outpacing new supply, as context for why large load growth in New York raises particular reliability concerns that a uniform national rule may not adequately address.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:independent-entity-variations",
+      "name": "Preserve independent entity variation mechanism",
+      "stance": "support",
+      "description": "NYISO specifically asks that any pro forma rule continue to allow ISOs and RTOs to seek independent entity variations, citing its history of approved variations under Order Nos. 2003, 2006, and 2023 as precedent for the NYISO's distinct single-state operating environment.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "topic:cluster-study-compatibility",
+      "name": "Protect Order No. 2023 cluster process",
+      "stance": "mixed",
+      "description": "NYISO warns that mixing load interconnection requests into its new generator cluster study process could delay both queues. It asks for the flexibility to keep load and generator studies separate or to integrate them only in a way that its stakeholders have reviewed and that the Commission has accepted through independent entity variation.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "topic:generator-exit-reliability",
+      "name": "Generator exit reliability assessment",
+      "stance": "support",
+      "description": "NYISO supports a requirement to assess reliability when a generator partially or fully exits markets to serve on-site load, and asks that the rule allow ISOs to include resource adequacy review alongside transmission security study, consistent with NERC, NPCC, and NYSRC requirements applicable to New York.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "topic:resource-adequacy",
+      "name": "Resource adequacy risk from large loads",
+      "stance": "neutral",
+      "description": "NYISO emphasizes that large load additions can stress resource adequacy even without co-location, and that New York already faces shrinking reliability margins. It flags this as a gap in the ANOPR principles and calls for any rule to address resource adequacy impacts of large loads broadly.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "hybridrights",
+      "expedited"
+    ],
+    "pr": [
+      "flex",
+      "study",
+      "colo"
+    ],
+    "rg": [
+      "nyiso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

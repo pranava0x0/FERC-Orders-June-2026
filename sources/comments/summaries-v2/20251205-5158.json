@@ -1,0 +1,261 @@
+{
+  "accession": "20251205-5158",
+  "filer": "National Association of State Utility Consumer Advocates",
+  "org_type": "consumer_advocate",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5158__National-Association-of-State-Utility-Consumer-Adv/NASUCA Reply Comments.txt",
+  "overall_summary": "NASUCA urges FERC to center end-use customer interests in this proceeding, warning that industry participants' interests can conflict with those of ordinary ratepayers. The filing calls for strong cost causation rules that assign 100% of network upgrade costs to large loads, rejects the expedited April 2026 action deadline as harmful to meaningful participation, and insists that any federal reforms respect state authority under cooperative federalism principles rather than displacing state jurisdiction over retail customers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "it is critical that FERC understand that the interests of industry participants differ from the interests of end-use customers.  In some circumstances, the interests of industry participants may be contrary to the interests of end-use customers.",
+      "concern": "Industry and consumer interests can conflict; FERC must not treat them as aligned",
+      "bins": [
+        "topic:consumer-vs-industry-interests"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "NASUCA's primary interest in this proceeding is in ensuring that end-use customers' interests in reliable and affordable service are the lodestars that guide FERC's consideration of the ANOPR and potential reforms regarding the interconnection of large loads.",
+      "concern": "NASUCA's core ask: reliability and affordability for retail customers must guide reform",
+      "bins": [
+        "topic:consumer-vs-industry-interests",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "there does not appear to be legal precedent directly granting this jurisdiction, even when limited to transmission interconnections.",
+      "concern": "FERC's proposed jurisdictional expansion lacks legal precedent",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "FERC should address whether and how it has jurisdiction over 'interconnections directly to transmission facilities.'  If FERC finds that it has jurisdiction, the second issue is how to define 'transmission facilities' to avoid infringing on state authority over the distribution system.",
+      "concern": "Two-step jurisdictional question: does FERC have authority, and how to define transmission to protect state distribution authority",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "any extension of federal jurisdiction should ensure that large loads are currently and remain subject to state jurisdiction regarding the recovery and allocation of retail costs.",
+      "concern": "Retail cost recovery must stay under state jurisdiction regardless of any federal expansion",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "this rulemaking must include provisions that mitigate the risk of ratepayer subsidization of large load interconnection",
+      "concern": "Rulemaking must prevent existing ratepayers from subsidizing large load interconnection costs",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "making data centers responsible for 100% of the costs of network upgrades they are assigned",
+      "concern": "Full cost causation: data centers must pay all network upgrade costs assigned to them",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "a crediting mechanism is directly contrary to this protective mechanism because it relieves large loads from a portion of the costs of network upgrades.",
+      "concern": "Credit mechanisms for network upgrades undermine full cost causation and shift costs to ratepayers",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "curtailment should not be considered as a potential option unless and until the mechanisms to implement curtailment are developed—i.e., system protections, the costs as well as penalties resulting from curtailment, and the risks to other customers.",
+      "concern": "Curtailment cannot be treated as a reliability tool until enforcement mechanisms and penalties are clearly defined",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "strong readiness and financial requirements to deter speculative large-load interconnection requests that can distort transmission planning and increase costs for consumers",
+      "concern": "Speculative queue entries harm planning and drive up costs; financial requirements needed to screen them out",
+      "bins": [
+        "aq:deposits",
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "making expedited processing contingent on enforceable curtailment and dispatchability commitment verified through telemetry and subject to penalties for non-performance.",
+      "concern": "Any expedited queue treatment must be conditioned on verifiable, penalty-backed curtailment commitments",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "establishing unprecedented federal jurisdiction and new large load interconnection rules is likely to have sweeping impacts on the nation's ratepayers and electric grids.",
+      "concern": "Broad federal jurisdiction expansion will have wide ratepayer impacts requiring careful deliberation",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Rushing this rulemaking process could substantially curtail meaningful public participation opportunities and detract from the legal durability of any final rules established as a result of this rulemaking process.",
+      "concern": "An expedited schedule risks inadequate public participation and legally vulnerable rules",
+      "bins": [
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "FERC should make clear to stakeholders that it will not attempt to enact any reforms by the date proposed in the ANOPR.",
+      "concern": "NASUCA asks FERC to explicitly abandon the April 2026 action deadline",
+      "bins": [
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "FERC's implementation of the ANOPR should not preempt these salutary efforts underway at the State level directed at resolving many of the problems targeted by the ANOPR if they exceed a minimum level of standards that may emanate from FERC's implementation of the fourth principle of the ANOPR.",
+      "concern": "State large-load tariffs and rules should be preserved where they meet or exceed any federal minimum standards",
+      "bins": [
+        "topic:cooperative-federalism",
+        "aq:jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "topic:consumer-vs-industry-interests",
+      "name": "Consumer vs. industry interests",
+      "stance": "neutral",
+      "description": "NASUCA stresses that industry participants' interests in this proceeding can directly conflict with the interests of end-use customers. FERC must treat reliability and affordability for retail customers as the primary guides for any reform, not the preferences of data center developers or utilities.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal jurisdiction limits",
+      "stance": "mixed",
+      "description": "Consumer advocates and state entities find no clear legal precedent for FERC's proposed jurisdictional expansion over large load interconnections. Any assertion of jurisdiction must be carefully bounded to transmission facilities and must not displace state authority over retail cost recovery, distribution interconnections, or retail tariffs.",
+      "quote_ids": [
+        3,
+        4,
+        5,
+        12,
+        15
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Full cost causation for upgrades",
+      "stance": "support",
+      "description": "NASUCA and allied consumer advocates support assigning 100% of network upgrade costs to the large loads that cause them, with no crediting mechanism. Credit mechanisms are seen as directly contrary to cost causation principles and as a means of shifting costs onto existing ratepayers.",
+      "quote_ids": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Ratepayer cost protection",
+      "stance": "support",
+      "description": "Protecting existing ratepayers from subsidizing large load interconnection is NASUCA's central concern. This means full cost assignment for network upgrades, strong financial readiness requirements to screen out speculative requests, and no crediting mechanisms that dilute cost causation.",
+      "quote_ids": [
+        2,
+        6,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Oppose April 2026 action deadline",
+      "stance": "oppose",
+      "description": "NASUCA opposes the ANOPR's request for final agency action by April 30, 2026. Rushing a rulemaking of this scope risks inadequate public participation, legally fragile rules, and avoidable harm to traditional ratepayers. FERC should publicly abandon the proposed deadline.",
+      "quote_ids": [
+        9,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Financial readiness requirements",
+      "stance": "support",
+      "description": "Strong readiness and financial requirements are needed to deter speculative large-load interconnection requests that distort transmission planning and increase costs for consumers.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study process to minimize upgrades",
+      "stance": "support",
+      "description": "Consumer advocates support interconnection study processes that allow efficient siting of loads and generating facilities to minimize costly network upgrades.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Curtailment conditioned on enforcement",
+      "stance": "mixed",
+      "description": "NASUCA and allied consumer advocates are cautious about curtailment as a reliability tool. Curtailment should not be offered as an interconnection option until enforcement mechanisms, penalty structures, and customer-protection measures are fully developed. When offered, any expedited processing must be contingent on verifiable, telemetry-backed curtailment commitments.",
+      "quote_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "key": "topic:cooperative-federalism",
+      "name": "State authority and cooperative federalism",
+      "stance": "support",
+      "description": "NASUCA supports the cooperative federalism principle under which state and federal regulators work together. State-level large load tariffs and rules that are already addressing these problems should not be preempted by federal rules unless they fall below a minimum federal standard. Retail cost recovery and distribution-level decisions must remain with the states.",
+      "quote_ids": [
+        5,
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "upgradecost",
+      "expedited",
+      "deposits"
+    ],
+    "pr": [
+      "cost",
+      "study",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

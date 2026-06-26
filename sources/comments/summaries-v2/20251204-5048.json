@@ -1,0 +1,239 @@
+{
+  "accession": "20251204-5048",
+  "filer": "Individual No Affiliation",
+  "org_type": "individual",
+  "filed": "12/04/2025",
+  "source_text": "sources/comments/files/20251204-5048__Individual-No-Affiliation/Comments of Herb Schrayshuen in DOE Large Load  ANOPR 12-4-2025.txt",
+  "overall_summary": "Herb Schrayshuen, a licensed PE and former NERC VP, argues that existing NERC reliability standards are inadequate for large load integration and that FERC must direct NERC to augment PRC-006-5 (underfrequency load shedding) and TPL-001-5.1 (transmission planning) before large loads are energized. He also calls for large loads to be registered as NERC entities and for interconnection technical requirements to be codified in FAC-001 and FAC-002.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The rapid growth of data centers, cryptocurrency mining, and industrial electrification present substantial resilience and reliability risk to the power system.",
+      "concern": "Large load growth creates systemic resilience and reliability risks",
+      "bins": [
+        "topic:reliability-risk"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "These risks are best addressed through the augmentation of NERC's existing mandatory Reliability Standards (some of which are Regional Standards) or the addition of new standards applicable to large load analysis and connection facility design to ensure the continued resilience and reliability of the power system.",
+      "concern": "NERC standard augmentation is the preferred policy path",
+      "bins": [
+        "topic:nerc-standards-augmentation"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "I strongly support modification of all currently applicable and potentially applicable standards to specifically reference interconnection resilience and reliability risks emanating from large load entity connections to the transmission system.",
+      "concern": "Existing NERC standards should be updated to name large load interconnection risks",
+      "bins": [
+        "topic:nerc-standards-augmentation"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Inflexible large loads have been demonstrated to reduce the Bulk Electric Systems (BES) ability to withstand disturbances, increasing risks of cascading outages during extreme events",
+      "concern": "Inflexible large loads increase cascading outage risk",
+      "bins": [
+        "pr:flex",
+        "topic:reliability-risk"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Large loads can materialize quickly. These loads can materialize in less than the five year annual review cycle for automatic underfrequency load shedding program functional verification under PRC-006-5.",
+      "concern": "Large loads grow faster than the current UFLS review cycle can capture",
+      "bins": [
+        "topic:ufls-prc006"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The FERC should direct NERC to make PRC-006 universally forward looking by requiring review and analysis of automatic UFLS program functionality through simulation studies prior to the interconnection and energization of large loads.",
+      "concern": "UFLS studies should be required before large load interconnection, not on a fixed five-year cycle",
+      "bins": [
+        "topic:ufls-prc006"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "automatic underfrequency load shedding programs must be analyzed on a forward looking basis, taking into account the presence of large loads, rather than on an 'as connected basis' after electric service facilities are designed, committed and energized to service the large load.",
+      "concern": "UFLS analysis must be prospective, not retroactive after energization",
+      "bins": [
+        "topic:ufls-prc006"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Explore the need for augmentation of the TPL-001-5.1 to require explicit modeling of large, concentrated loads in both near term and long term planning assessments even if those projects are offering to take non-firm 'flexible' electric service.",
+      "concern": "TPL-001 transmission planning must model large loads even when they seek non-firm service",
+      "bins": [
+        "pr:flex",
+        "pr:study",
+        "topic:tpl001-planning"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "offering non-firm transmission service may not meet the requirements in TPL-001. Under the current requirements, it is not permitted to plan the transmission system to provide electric service under TPL-001-5.1 on a non-firm basis (i.e., permitting non-consequential load loss).",
+      "concern": "Current TPL-001 rules create a legal gap for flexible large load planning",
+      "bins": [
+        "pr:flex",
+        "topic:tpl001-planning"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Require all regional transmission organizations, planning coordinators and transmission owners to establish minimum technical interconnection requirements for connecting large loads, similar but not identical to generator requirements (unless the new large load bringing its own generation to the process), including voltage support, frequency ride-through, and demand response capability.",
+      "concern": "RTOs and TOs should set minimum technical standards for large load interconnection",
+      "bins": [
+        "pr:study",
+        "topic:interconnection-requirements"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Authorize NERC to register large load entities as Transmission Owners and Transmission Operators if the new large load interconnecting facilities qualify as BES Elements and are not turned over to the incumbent connecting Transmission Owners and Transmission Operators for operation and maintenance after commissioning.",
+      "concern": "Large load entities that own BES facilities should be registered as NERC transmission entities",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:nerc-registration"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Directing that NERC report annually (or at an interval suitable to the FERC and NERC) to the FERC on the adequacy of manual and automatic UFLS programs and resilience planning in each US Interconnection.",
+      "concern": "Annual FERC-NERC reporting on UFLS program adequacy is needed",
+      "bins": [
+        "topic:ufls-prc006",
+        "topic:ferc-oversight"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The power system will quickly reveal if the FERC, NERC, registered entities get it wrong through outages that are more extensive, exhibit more lengthy recovery times, and are more damaging to hard to replace power delivery equipment.",
+      "concern": "Inadequate standards will result in serious, costly outages",
+      "bins": [
+        "topic:reliability-risk"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "topic:reliability-risk",
+      "name": "Large Load Reliability Risks",
+      "stance": "neutral",
+      "description": "The filer identifies specific reliability risks from large load growth: inflexible loads reduce the grid's ability to withstand disturbances, demand profiles are volatile, and geographic clustering stresses local infrastructure. Failure to act risks cascading outages more severe than Winter Storm Uri.",
+      "quote_ids": [
+        1,
+        4,
+        13
+      ]
+    },
+    {
+      "key": "topic:nerc-standards-augmentation",
+      "name": "Augment NERC Standards Now",
+      "stance": "support",
+      "description": "The filer strongly supports modifying PRC-006, TPL-001, FAC-001, FAC-002, and related standards to explicitly address large load interconnection risks. FERC should direct NERC to file standards authorization requests within two years.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "topic:ufls-prc006",
+      "name": "Forward-Looking UFLS Studies",
+      "stance": "support",
+      "description": "The filer argues the current five-year PRC-006-5 review cycle is too slow for the pace of large load additions. FERC should direct NERC to require forward-looking UFLS simulation studies before large loads are interconnected, and to evaluate clustered loads together rather than individually.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        12
+      ]
+    },
+    {
+      "key": "topic:tpl001-planning",
+      "name": "TPL-001 Gap for Flexible Loads",
+      "stance": "support",
+      "description": "TPL-001-5.1 does not currently permit planning the transmission system to serve loads on a non-firm basis. The filer urges FERC to direct NERC to amend Table 1 and related footnotes so that planning processes can accommodate flexible large loads without violating the standard.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility Does Not Remove Study Obligation",
+      "stance": "support",
+      "description": "The filer supports requiring transmission planning to model large loads even when they offer to take non-firm service, because the regulatory framework does not currently accommodate non-firm planning and inflexible operating behavior creates cascading risk regardless of contractual flexibility.",
+      "quote_ids": [
+        4,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Comprehensive Pre-Interconnection Studies",
+      "stance": "support",
+      "description": "The filer calls for pre-interconnection UFLS and transmission planning studies, clustered analysis of concentrated large loads, and minimum technical interconnection requirements for voltage support, frequency ride-through, and demand response to be codified in FAC-001 and FAC-002.",
+      "quote_ids": [
+        8,
+        10
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "NERC Registration of Large Loads",
+      "stance": "support",
+      "description": "The filer supports authorizing NERC to register large load entities as Transmission Owners and Transmission Operators when their interconnecting facilities qualify as BES elements and remain under their ownership, bringing them within NERC's compliance framework.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:interconnection-requirements",
+      "name": "Minimum Technical Interconnection Standards",
+      "stance": "support",
+      "description": "The filer recommends that RTOs, planning coordinators, and transmission owners establish minimum technical interconnection requirements for large loads, covering voltage support, frequency ride-through, and demand response, codified in future versions of FAC-001 and FAC-002.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:ferc-oversight",
+      "name": "Ongoing FERC Oversight Mechanism",
+      "stance": "support",
+      "description": "The filer recommends that FERC require annual NERC reports on UFLS program adequacy in each US interconnection and set a deadline of two years for NERC to file new or modified standards addressing large load reliability risks.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:nerc-registration",
+      "name": "Register Large Loads as NERC Entities",
+      "stance": "support",
+      "description": "The filer argues large load entities that own BES facilities should be registered as Transmission Owners and Transmission Operators under NERC rules, ensuring they fall under mandatory reliability compliance obligations.",
+      "quote_ids": [
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "flex",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

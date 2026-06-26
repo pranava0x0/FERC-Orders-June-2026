@@ -1,0 +1,252 @@
+{
+  "accession": "20260415-5094",
+  "filer": "Harvard Electricity Law Initiative",
+  "org_type": "think_tank",
+  "filed": "04/15/2026",
+  "source_text": "sources/comments/files/20260415-5094__Harvard-Electricity-Law-Initiative/Harvard ELI RM26-4 Reply to WIRES.txt",
+  "overall_summary": "Harvard ELI argues that FERC's prohibition against 'and' pricing was designed to protect wholesale market competition, not to shield large-load customers from paying their full costs of service. The filing contends that ratepayers bear both short-term subsidies and long-term free-rider risks under current pricing and urges the Commission to clarify that large-load customers must pay both directly-assigned network upgrade costs and the NITS rate. Four concrete pricing approaches are proposed, each grounded in existing Commission policy.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "WIRES' analysis shows that ratepayers face increased costs and risks under either rolled-in pricing or direct assignment of network upgrade costs",
+      "concern": "Both pricing options leave ratepayers exposed to costs or risks",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Because the NITS rate does not recover from the large-load customer the costs its interconnection directly imposes on other ratepayers, ratepayers initially subsidize the large-load customer.",
+      "concern": "NITS-only pricing creates a ratepayer subsidy during early years",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "If the large-load customer paying the NITS rate departs the system before the crossover point, the only cost shift that would have materialized runs from ratepayers to the large-load customer.",
+      "concern": "Early departure risk means ratepayers absorb upgrade costs with no recovery",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Despite relying on the network, the large-load customer pays nothing for its ongoing development, replacement, maintenance, or operations.",
+      "concern": "Direct-assignment-only pricing creates a free-rider problem for embedded system costs",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The prohibition against 'and' pricing aims at protecting wholesale market competition and should not prevent large-load customers from paying their full costs of service",
+      "concern": "The 'and' pricing rule was not designed to apply to large-load retail customers",
+      "bins": [
+        "aq:hybridrights",
+        "topic:and-pricing-scope"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The 'and' pricing prohibition promoted competition by preventing utilities from 'charging twice for the same transmission capacity' in order to raise their competitors' costs.",
+      "concern": "Original purpose of the prohibition was anti-competitive-abuse, not cost allocation for loads",
+      "bins": [
+        "aq:hybridrights",
+        "topic:and-pricing-scope"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The entire framework the Policy Statement addressed — wheeling, third-party transmission service, wholesale competition — had nothing to do with how end-use customers then paid for transmission.",
+      "concern": "The 1994 Policy Statement's context excluded retail large-load customers entirely",
+      "bins": [
+        "aq:hybridrights",
+        "topic:and-pricing-scope"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Payments for network upgrades and the NITS rate, the Commission concluded, were two 'separate charges for separate services.'",
+      "concern": "Order No. 2003 generator precedent supports charging both upgrade costs and NITS",
+      "bins": [
+        "aq:hybridrights",
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Under either approach, the utility would directly assign network upgrade costs to the large-load customer and charge the NITS rate.",
+      "concern": "Both credit and interconnection-rights options require paying upgrade costs plus NITS",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:pricing-options"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "This option may raise jurisdictional issues that are already front-and-center in this proceeding.",
+      "concern": "Interconnection-rights approach depends on Commission asserting jurisdiction over transmission-level large-load interconnections",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:pricing-options"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Disaggregated pricing for large-load customers could be worth exploring.",
+      "concern": "Charging NITS for served capacity and incremental rate for upgrade-dependent demand is a potential path forward",
+      "bins": [
+        "topic:pricing-options",
+        "topic:and-pricing-scope"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Rather than merely allowing the utility to charge the 'higher of' rate for each tranche, the Commission could require utilities to charge the higher rate.",
+      "concern": "Disaggregated pricing should be mandatory, not optional, to fully protect ratepayers",
+      "bins": [
+        "pr:cost",
+        "topic:pricing-options"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The Commission could also require utilities to disclose such disaggregated rates. Transparency would reveal to the public the costs of delivering power to large loads.",
+      "concern": "Public disclosure of disaggregated rates would expose the true cost burden of large-load service",
+      "bins": [
+        "topic:tariff-transparency"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "After the Commission modifies its transmission pricing policy to exempt large-load customers from the prohibition against 'and' pricing, the Commission could find that any transmission rate charging a large-load customer less than the cost of network upgrades and the NITS rate is unjust and unreasonable.",
+      "concern": "A rate below both upgrade costs and NITS should be found unjust and unreasonable",
+      "bins": [
+        "aq:hybridrights",
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "The Commission should extend that reasoning and clarify that just and reasonable rates for large-load customers must recover both the customer-specific interconnection costs and the customer's share of the embedded system.",
+      "concern": "Just and reasonable rates require recovery of both upgrade costs and embedded system costs",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Full cost recovery from large loads",
+      "stance": "support",
+      "description": "Harvard ELI argues that ratepayers bear both short-term subsidy risk (when a large-load customer pays only NITS and departs before the crossover point) and long-term free-rider risk (when a customer pays only upgrade costs and never contributes to embedded system costs). The filing supports pricing that recovers both network upgrade costs and the NITS rate from large-load customers to eliminate both failure modes.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        12,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Direct assignment plus NITS",
+      "stance": "support",
+      "description": "The filing supports directly assigning network upgrade costs to large-load customers while also charging the NITS rate, following the generator interconnection model from Order No. 2003. It presents four variants: credit upgrade payments against NITS charges, issue interconnection rights in exchange for upgrade payments, apply disaggregated pricing, or clarify that a rate below both is unjust and unreasonable.",
+      "quote_ids": [
+        2,
+        3,
+        4,
+        8,
+        9,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "And-pricing rule misapplied to loads",
+      "stance": "support",
+      "description": "Harvard ELI contends that the Commission's prohibition against 'and' pricing was developed to prevent utilities from charging competitors twice for the same capacity, not to limit cost recovery from large retail loads. Because large-load customers are not competing with the utility and cannot be double-charged in the same sense as a cogenerator, the prohibition should not block charging them both upgrade costs and the NITS rate.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        8,
+        14
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Jurisdiction precondition for rights approach",
+      "stance": "neutral",
+      "description": "The filing notes that creating 'interconnection rights' for large-load customers as a pricing mechanism depends on the Commission first asserting jurisdiction over transmission-level large-load interconnections, an issue that remains contested in this proceeding.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:and-pricing-scope",
+      "name": "Historical scope of and-pricing ban",
+      "stance": "support",
+      "description": "The filing traces the 'and' pricing prohibition to the 1991 to 1994 Penelec proceeding and Policy Statement, which addressed wholesale wheeling competition among generators and utilities. That context never contemplated retail large-load customers, whose rates were then set by state commissions. Harvard ELI argues this history shows the rule should not be read to block full cost recovery from large loads.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        11
+      ]
+    },
+    {
+      "key": "topic:pricing-options",
+      "name": "Four alternative pricing structures",
+      "stance": "support",
+      "description": "Harvard ELI lays out four concrete pricing options all grounded in existing Commission authority: (1) charge upgrade costs and credit against NITS, (2) issue interconnection rights in exchange for upgrade payments and charge NITS, (3) disaggregated pricing with NITS for served capacity and incremental rate for upgrade-dependent demand, and (4) clarify that any rate below both costs is unjust and unreasonable. The filing presents these as a menu the Commission can choose among.",
+      "quote_ids": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "topic:tariff-transparency",
+      "name": "Mandatory disclosure of cost allocation",
+      "stance": "support",
+      "description": "The filing proposes that the Commission require utilities to publicly disclose disaggregated large-load transmission rates so that the actual cost burden imposed by large loads is visible to the public.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost",
+      "hybridrights",
+      "jurisdiction"
+    ],
+    "pr": [
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

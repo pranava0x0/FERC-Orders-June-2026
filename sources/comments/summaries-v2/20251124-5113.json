@@ -1,0 +1,330 @@
+{
+  "accession": "20251124-5113",
+  "filer": "esVolta, LP",
+  "org_type": "generator_ipp",
+  "filed": "11/24/2025",
+  "source_text": "sources/comments/files/20251124-5113__esVolta-LP/EsVolta LP Comments in RM26-4 FERC Large Load ANOPR.txt",
+  "overall_summary": "esVolta, a standalone battery energy storage developer, urges FERC to treat BESS as a primary solution for large-load interconnection by granting it expedited study treatment, clarifying its inclusion in the hybrid-facility definition, and recognizing front-of-the-meter configurations. The filing argues that BESS uniquely offers speed to power (12 to 18 months to operation), power-quality mitigation for data center load volatility, and cost savings for other ratepayers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Absent clear, standardized procedures for large load and hybrid interconnections, transmission providers will continue to rely on ad hoc approaches that risk delaying critical projects, exacerbating reliability concerns, and shifting costs to non-participating customers in ways that are inconsistent with open access and just and reasonable rate requirements.",
+      "concern": "Lack of standardized large-load procedures creates reliability risks and unfair cost shifts",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "If an ANOPR is issued, it should seek to include a proposal that articulates core principles, such as studying large loads and hybrid facilities together with generation where practicable, recognizing curtailable and dispatchable configurations (including those supported by BESS) for expedited treatment, and aligning cost responsibility with the specific injection and withdrawal rights requested.",
+      "concern": "ANOPR should codify joint study, expedited treatment for curtailable loads, and cost responsibility tied to specific rights",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "aq:jointstudy",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "In esVolta's view, the Commission's large-load reforms present an important opportunity to recognize that BESS can directly mitigate these power quality concerns and thereby assist in facilitating the timely and orderly interconnection of large loads consistent with the principles of reform outlined in this proceeding.",
+      "concern": "BESS power-quality mitigation should be recognized in interconnection reform principles",
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Data Centers tend to exhibit steep, short-duration changes in demand and highly power-electronics-intensive load profiles that can cause voltage excursions, frequency deviations, flicker, and other power quality issues at the point of interconnection.",
+      "concern": "Data center load volatility poses distinct power quality risks at the point of interconnection",
+      "bins": [
+        "topic:power-quality-risk"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "When properly configured, BESS can be dispatched to smooth the net load seen by the transmission system, mitigating sudden spikes and drops in demand and thereby transforming a volatile large load into a more \"grid-friendly\" net profile.",
+      "concern": "BESS smooths volatile large-load profiles, reducing transmission upgrade scope and cost",
+      "bins": [
+        "pr:flex",
+        "pr:cost",
+        "topic:power-quality-risk"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Battery energy storage is a proven solution to meeting near-term and longer-term resource adequacy and reliability needs, with a modular design that can be right sized based on need, and one of the shortest construction time frames of any resource (12-18 months).",
+      "concern": "BESS deploys faster than other resources and can be right-sized for near-term reliability needs",
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "topic:speed-to-power"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Given its fast deployment, data centers would benefit from the ability to share interconnection rights with existing storage interconnection rights.",
+      "concern": "Data centers should be allowed to share existing BESS interconnection rights",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "topic:interconnection-rights-sharing"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Studying large loads together with BESS aligns closely with the Department's emphasis on the timely and orderly interconnection of large loads. Where a large load is electrically proximate to BESS that is designed to provide the services described above, the combined configuration is better able to satisfy applicable reliability and power quality criteria without imposing excessive incremental burdens on the transmission system.",
+      "concern": "Joint study of large loads with proximate BESS improves reliability outcomes and reduces network upgrade burdens",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "BESS enables the large loads to be curtailable or flexible and should jointly be eligible for an expedited pathway to interconnection.",
+      "concern": "BESS-backed curtailability should qualify load-BESS pairs for expedited interconnection",
+      "bins": [
+        "aq:expedited",
+        "pr:flex",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "the Commission should clarify that consistent with the Commission's Large Generator Interconnection Procedures, it intends for energy storage to be accommodated and included in its definition of \"hybrid facilities\" within the context of any proceeding aimed at ensuring the timely and orderly interconnection of large loads.",
+      "concern": "FERC should clarify that BESS qualifies as a hybrid facility under any large-load rulemaking",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "topic:hybrid-definition-clarity"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the Commission should also expand its view of the load-supply configurations and expressly state that front-of-the-meter BESS configurations are also eligible configurations to serve large loads as many data centers are actively pursuing such arrangements.",
+      "concern": "Front-of-meter BESS should be explicitly eligible to serve large loads",
+      "bins": [
+        "pr:colo",
+        "topic:hybrid-definition-clarity"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "esVolta encourages the Commission to consider a similar approach in any rulemaking it promulgates to address the integration of large loads and ensure that standalone BESS either located \"in close proximity\", \"near by\" the data center, or either electrically or co-located onsite with the data center or the large load is deemed an eligible supply resource to receive expedited interconnection study treatment along with the data center load.",
+      "concern": "Standalone BESS near or co-located with large loads should qualify for expedited study treatment",
+      "bins": [
+        "aq:expedited",
+        "pr:proximate",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "esVolta would go even further to support approaches in PJM that rightfully identify supply resources in the same \"load deliverability area or LDA\" as an eligible resource for the expedited interconnection process and similarly, in MISO, standalone storage and other resources that have agreements with large loads to provide needed resources and are located in the same \"local resource zone or LRZ\" should be deemed eligible for an expedited interconnection process completed within 90 days.",
+      "concern": "PJM LDA and MISO LRZ zone-based eligibility for expedited study should be adopted nationally",
+      "bins": [
+        "aq:expedited",
+        "pr:proximate",
+        "rg:pjm",
+        "rg:miso"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "allowing storage to serve large loads is a cost and time efficient way to maximize the utilization of the existing transmission network more so than increasing the capacity of existing transmission lines, which in the context of expeditiously connecting and serving large loads would be cost and time prohibitive.",
+      "concern": "Storage paired with large loads maximizes existing transmission use more cheaply than line upgrades",
+      "bins": [
+        "pr:cost",
+        "topic:transmission-efficiency"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Joint Study With BESS",
+      "stance": "support",
+      "description": "esVolta supports studying large loads together with proximate BESS under standardized national procedures. The filer argues that a controllable BESS injection modeled at the same point of interconnection reduces network upgrade scope and satisfies reliability criteria more efficiently than studying the load alone.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "BESS Reduces Large-Load Cost Shifts",
+      "stance": "support",
+      "description": "esVolta contends that BESS lowers costs for non-large-load ratepayers by smoothing volatile demand profiles (shrinking required network upgrades) and by maximizing use of existing transmission capacity rather than requiring new line builds. Evidence cited includes $750 million in Texas day-ahead market savings over three peak days.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        14
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "BESS Curtailability Qualifies for Expedited Path",
+      "stance": "support",
+      "description": "esVolta argues that BESS makes large loads curtailable and dispatchable, which are the attributes the reform principles use to justify expedited treatment. The filer asks FERC to formally link BESS-backed flexibility to the expedited interconnection pathway.",
+      "quote_ids": [
+        3,
+        5,
+        9
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Zone-Based Proximity Eligibility",
+      "stance": "support",
+      "description": "esVolta asks FERC to adopt PJM's load deliverability area and MISO's local resource zone as the geographic proximity test for expedited study eligibility, rather than requiring strict co-location on site. Resources within the same zone that have load agreements should qualify.",
+      "quote_ids": [
+        8,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Front-of-Meter and Co-Located BESS",
+      "stance": "support",
+      "description": "esVolta urges FERC to clarify that front-of-the-meter BESS configurations count as hybrid facilities under any large-load rulemaking, and that both on-site co-location and nearby standalone configurations are eligible supply arrangements for serving large loads.",
+      "quote_ids": [
+        7,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Support Joint-Study Proposal",
+      "stance": "support",
+      "description": "esVolta endorses the ANOPR's proposal to study large loads and hybrid facilities together with identified generating facilities, and specifically extends that support to paired BESS configurations.",
+      "quote_ids": [
+        2,
+        8
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Treatment for BESS-Backed Loads",
+      "stance": "support",
+      "description": "esVolta supports an expedited interconnection process for large loads paired with BESS, referencing both the 12 to 18 month BESS deployment advantage and the curtailability test as grounds for that treatment. It explicitly endorses a 90-day expedited study window in MISO.",
+      "quote_ids": [
+        2,
+        6,
+        9,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Clarify BESS Hybrid-Facility Rights",
+      "stance": "support",
+      "description": "esVolta flags that the ANOPR's hybrid-facility definition could inadvertently exclude BESS, and asks FERC to expressly include storage and to allow data centers to share existing BESS interconnection rights.",
+      "quote_ids": [
+        7,
+        10
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM LDA Model as National Template",
+      "stance": "support",
+      "description": "esVolta cites PJM's load deliverability area approach as a model FERC should adopt nationally for defining which storage resources qualify for expedited large-load interconnection.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "rg:miso",
+      "name": "MISO LRZ Model as National Template",
+      "stance": "support",
+      "description": "esVolta cites MISO's local resource zone framework as a parallel model, recommending a 90-day expedited study timeline for storage resources in the same LRZ as the large load.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:power-quality-risk",
+      "name": "Data Center Power Quality Risks",
+      "stance": "neutral",
+      "description": "esVolta describes the power quality hazards that AI data centers pose to the grid, including voltage excursions, frequency deviations, and sub-synchronous oscillations, as factual context supporting the case for BESS mitigation. This is a descriptive framing, not an opposition stance.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "topic:speed-to-power",
+      "name": "BESS Fastest Path to New Capacity",
+      "stance": "support",
+      "description": "esVolta highlights BESS's 12 to 18 month construction timeline as significantly shorter than the five-plus year average for gas plants, making it the fastest available option to close near-term resource adequacy gaps driven by large loads.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:interconnection-rights-sharing",
+      "name": "Data Centers Share BESS Queue Rights",
+      "stance": "support",
+      "description": "esVolta proposes that data centers be permitted to share or integrate with existing BESS interconnection requests, allowing them to use grid capacity already secured by a storage developer rather than re-queuing from scratch.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:hybrid-definition-clarity",
+      "name": "Clarify Hybrid-Facility Definition for BESS",
+      "stance": "support",
+      "description": "esVolta warns that the ANOPR's current hybrid-facility language could be read to exclude BESS, and asks FERC to expressly cover front-of-meter standalone storage in that definition to match what PJM and other regions are already implementing.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "topic:transmission-efficiency",
+      "name": "Storage Maximizes Existing Transmission",
+      "stance": "support",
+      "description": "esVolta argues that pairing storage with large loads extracts more value from underutilized transmission lines rather than requiring new line capacity, citing data that 50% of congestion value comes from just 5% of hours.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jointstudy",
+      "expedited",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex",
+      "proximate",
+      "colo"
+    ],
+    "rg": [
+      "pjm",
+      "miso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

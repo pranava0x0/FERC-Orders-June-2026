@@ -1,0 +1,271 @@
+{
+  "accession": "20251121-5148",
+  "filer": "UNION OF CONCERNED SCIENTISTS",
+  "org_type": "enviro",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5148__UNION-OF-CONCERNED-SCIENTISTS/UCS comments RM26-4.txt",
+  "overall_summary": "UCS supports FERC rulemaking on large load interconnection and focuses on Principles 5 through 8. The filing argues that hybrid facility studies must account for full nameplate capacity in fault scenarios because power limiting controls are not instantaneous, recommends technical workgroups for protection requirements, calls for clear curtailment rules tied to non-firm service, and urges the Commission to adopt cost causation so large load interconnection costs are not socialized across all ratepayers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "capabilities to limit injections or withdrawals are not instantaneous and are not error-proof.",
+      "concern": "Power limiting controls have inherent delays and failure modes that study processes must reflect",
+      "bins": [
+        "pr:study",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the full nameplate capacity must still be used when studying fault conditions to identify power quality impacts.",
+      "concern": "Fault studies must use nameplate capacity, not export-limited capacity, for hybrid facilities",
+      "bins": [
+        "pr:study",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the drafting and adoption of rules that presume tight control and a narrow range of performance from conventional generation with co-located loads will need to be based on clearly stated and explicitly measured standards or limits.",
+      "concern": "Performance standards for co-located generation must be explicit and measurable before rules can rely on them",
+      "bins": [
+        "pr:study",
+        "aq:hybridrights",
+        "topic:performance-standards"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "A future set of proposed rules forthcoming from the Commission should be informed by technical considerations and not be limited to a financial penalty framework.",
+      "concern": "Proposed rules should address technical requirements for protection, not only rely on penalties",
+      "bins": [
+        "aq:protection",
+        "topic:technical-vs-penalty"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "system protection facilities must: 1. Ensure that if the facility exceeds the allowed limits, its import or export is returned to the allowed limits within a fixed time period, defined by the TSO. 2. During the inadvertent export or import event, maintain the voltage at the point of interconnection within limits defined by the TSO.",
+      "concern": "System protection facilities must enforce both time-duration and voltage limits on inadvertent export or import",
+      "bins": [
+        "aq:protection",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "we recommend that the Commission convene a workgroup of technical experts to develop such requirements. These requirements should be responsive to available technical capability and should prioritize reliability while avoiding excessive costs to developers and consumers.",
+      "concern": "Technical protection requirements should be set by expert workgroup balancing reliability and cost",
+      "bins": [
+        "aq:protection",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Commission should propose rules that both supply (in the case of a hybrid interconnection) and the load will need to commit to respond to operator dispatch instructions. That commitment should indicate both the duration and the quantity of the response, in either megawatts or percentage of the injection and withdrawal rights.",
+      "concern": "Curtailment rules must specify duration and quantity commitments from both supply and load",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Any forthcoming rule from the Commission must include criteria for determining the amount and the duration of curtailment and/or dispatch to avoid controversy and delay in the adoption of this principle.",
+      "concern": "Clear curtailment criteria are needed to make the expedited study principle workable",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The most direct approach compatible with existing grid operator dispatch is to have both the supply and demand from such interconnection customers be designated as non-firm and subject to economic dispatch.",
+      "concern": "Non-firm economic dispatch designation is the preferred mechanism for curtailable large loads",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Costs for transmission connections and network extensions required by new large loads have already added over $4 billion to the ratebase of utilities in 2024 from construction in just seven states.",
+      "concern": "Large load connection costs are already adding billions to ratepayer bills with no cost causation remedy",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The existing rules and practices allow the worst outcome: the rapidly rising costs for data centers' needs are spread across all the utilities' customers.",
+      "concern": "Current rules socialize data center interconnection costs across all retail customers",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Under existing practices the revenues from new large load customers are recognized for the largest customer class, but the costs caused by those customers are allocated to all customers. This is not the application of the 'Bonbright' cost-causation principle that is so often cited in utility cost allocation debates.",
+      "concern": "Revenues from large loads benefit only their customer class while costs are socialized, violating cost causation",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "topic:cost-causation-gap"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "this proposed Principle of assigning costs for all upgrades identified in the interconnection studies for large loads will address a regulatory gap and correctly apply the widely cited principle of cost causation to significant costs presently misallocated to all consumers.",
+      "concern": "Principle 8 fills a regulatory gap by assigning network upgrade costs to the load causing them",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Study Full Nameplate Capacity",
+      "stance": "support",
+      "description": "UCS supports requiring that interconnection studies for hybrid facilities use full nameplate capacity for fault analysis. The filing argues that export-limited capacity is appropriate for thermal screening but not for fault conditions, because power limiting controls have inherent delays and cannot prevent inadvertent export. UCS draws on DER interconnection experience and IEEE 2800 to show this gap applies to transmission-connected systems as well.",
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid Facility Injection and Withdrawal Rights",
+      "stance": "mixed",
+      "description": "UCS accepts the concept of net-based injection and withdrawal rights for hybrid facilities but argues the study process must still separately evaluate gross load and gross generation amounts. Power limiting systems are not instantaneous, so relying on net rights alone understates the range of grid impacts a hybrid facility can cause. Rules must be grounded in explicit, measurable performance standards.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Technical Protection Requirements",
+      "stance": "support",
+      "description": "UCS recommends that system protection facilities enforce both duration and voltage limits on inadvertent export or import events, not just capacity limits. The filing calls on FERC to convene a technical expert workgroup to set minimum requirements, and warns that rules should not rely solely on financial penalties as a substitute for engineering requirements.",
+      "quote_ids": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Clear Curtailment and Dispatch Rules",
+      "stance": "support",
+      "description": "UCS supports expedited interconnection for curtailable and dispatchable large loads but says the principle is unworkable without explicit rules specifying duration and quantity of curtailment commitments. The filing recommends designating both supply and load from hybrid customers as non-firm and subject to economic dispatch, consistent with existing Order 888 practices for non-firm transmission service.",
+      "quote_ids": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Study for Curtailable Loads",
+      "stance": "support",
+      "description": "UCS supports expediting interconnection studies for curtailable and dispatchable loads but insists that any rulemaking define the specific terms of curtailment to avoid disputes and implementation delays. A clear non-firm economic dispatch designation is the recommended path.",
+      "quote_ids": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Large Load Cost Causation",
+      "stance": "support",
+      "description": "UCS strongly supports assigning 100 percent of identified network upgrade costs to the large loads that cause them. The filing documents that over $4 billion in connection costs were added to ratebases in 2024 across seven states, and explains how the current regulatory gap allows data center costs to be socialized across all retail customers while revenues from those customers are credited only to the largest customer class.",
+      "quote_ids": [
+        6,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Network Upgrade Cost Allocation Gap",
+      "stance": "support",
+      "description": "UCS documents a structural gap in which transmission upgrade costs driven by large loads flow through FERC formula rates into state retail rate cases, where they are spread across all customers rather than assigned to the causing customer class. The filing uses PJM data to illustrate the scale and calls Principle 8 a correct application of cost causation to close this gap.",
+      "quote_ids": [
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Data Center Cost Evidence",
+      "stance": "neutral",
+      "description": "UCS cites PJM local planning data to identify 150 examples of utilities connecting new customers of 20 MW or more at a combined cost to consumers of more than $5 billion, illustrating the scale of the cost causation problem in the PJM region.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:performance-standards",
+      "name": "Explicit Performance Standards Needed",
+      "stance": "support",
+      "description": "UCS argues that rules relying on tight operational control of co-located loads and generation must rest on clearly stated, explicitly measured performance standards. Existing standards for thermal generators on the bulk power system have not required the same precision, so new rules should establish measurable benchmarks before imposing compliance obligations.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "topic:technical-vs-penalty",
+      "name": "Technical Rules Over Penalty Reliance",
+      "stance": "support",
+      "description": "UCS cautions against designing the protection framework primarily around financial penalties for unauthorized injections or withdrawals, arguing that rules should be grounded in technical requirements and that a penalty-only approach is not sufficient to ensure reliability.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:cost-causation-gap",
+      "name": "Regulatory Cost Causation Gap",
+      "stance": "support",
+      "description": "UCS identifies a specific regulatory gap in which the revenues from large load customers are credited only to the largest customer class in retail rate cases while the transmission costs they cause are spread across all customers, violating the Bonbright cost causation principle.",
+      "quote_ids": [
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "hybridrights",
+      "protection",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "flex",
+      "cost"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

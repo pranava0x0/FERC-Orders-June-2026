@@ -1,0 +1,220 @@
+{
+  "accession": "20251114-5180",
+  "filer": "Critical Loop",
+  "org_type": "data_center",
+  "filed": "11/14/2025",
+  "source_text": "sources/comments/files/20251114-5180__Critical-Loop/Docket No. RM26-4-000 Comments of Critical Loop.txt",
+  "overall_summary": "Critical Loop, a system integrator for time-to-power solutions, urges FERC to create a Large-Load Flexibility Commitment (LLFC) in the pro forma tariff that lets loads accept curtailment or rely on co-located supply in exchange for expedited interconnection and reduced upgrade costs. The filing argues that current interconnection studies default to a static maximum-withdrawal assumption that ignores the measurable reliability contribution of on-site BESS, inflates upgrade costs, and delays connections. Critical Loop recommends pairing the LLFC with hosting-capacity-style data publication, a transparent load queue, a 60-day initial determination requirement, and standardized telemetry to reduce speculative queue entries.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the bottleneck is the commercial and procedural pathway",
+      "concern": "Identifies the core barrier to large-load connections as procedural, not technical",
+      "bins": ["pr:study", "topic:procedural-barrier"]
+    },
+    {
+      "id": 2,
+      "text": "these same frameworks can reduce the proliferation of 'phantom' large‑load projects, speculative or oversized requests that sit in queues and distort transmission planning and investment signals",
+      "concern": "Links flexible interconnection frameworks to reducing speculative queue entries",
+      "bins": ["pr:study", "topic:phantom-load-queue"]
+    },
+    {
+      "id": 3,
+      "text": "Establish a Large‑Load Flexibility Commitment (LLFC) in the pro forma tariff; an opt‑in construct under which a load accepts specified curtailment and/or relies on on‑site or adjacent supply under defined conditions and require transmission providers to model LLFC parameters explicitly in interconnection studies",
+      "concern": "Core ask: create a tariff-backed opt-in flexibility commitment modeled explicitly in studies",
+      "bins": ["pr:flex", "aq:hybridrights", "topic:llfc-tariff-construct"]
+    },
+    {
+      "id": 4,
+      "text": "transmission providers should evaluate interconnections against those limits with explicit non‑performance contingencies rather than defaulting to a static, all‑resources‑unavailable maximum‑withdrawal assumption that obscures the value of on‑site batteries",
+      "concern": "Argues current worst-case study assumption hides the value of co-located BESS and inflates upgrade requirements",
+      "bins": ["pr:study", "pr:flex", "topic:static-assumption-flaw"]
+    },
+    {
+      "id": 5,
+      "text": "the transmission provider should issue time‑varying operating envelopes that cap a site's net withdrawals (and, if applicable, net injections). The customer's certified control system must enforce the envelope autonomously and provide real‑time telemetry confirming compliance",
+      "concern": "Proposes time-varying operating envelopes enforced by certified customer control systems with real-time telemetry",
+      "bins": ["pr:flex", "topic:operating-envelopes"]
+    },
+    {
+      "id": 6,
+      "text": "Systematize and automate flexible interconnections by requiring publication of hosting‑capacity‑style data for load (hourly and seasonal headroom, constraints, expected curtailment windows) and by offering standardized flexible options (limited‑load profiles, non‑firm service, and joint‑study paths for hybrid or adjacent resources)",
+      "concern": "Calls for hosting-capacity-style data publication for load to lower soft costs and direct requests to viable sites",
+      "bins": ["pr:study", "pr:flex", "aq:jointstudy", "topic:hosting-capacity-for-load"]
+    },
+    {
+      "id": 7,
+      "text": "Create a non‑firm network service (withdrawal) option and allow non‑firm injection for hybrid or adjacent resources participating in LLFCs, with joint study for load and supply at or near a common point of interconnection",
+      "concern": "Asks for non-firm service rights and joint studies covering both load and co-located supply",
+      "bins": ["aq:hybridrights", "aq:jointstudy", "pr:colo"]
+    },
+    {
+      "id": 8,
+      "text": "RTOs/ISOs should recognize LLFCs in capacity accreditation or allow appropriate adjustments to procurement obligations when loads accept enforceable limits and provide verifiable response",
+      "concern": "Urges capacity market credit for loads that commit to enforceable curtailment under LLFC",
+      "bins": ["pr:flex", "topic:capacity-accreditation"]
+    },
+    {
+      "id": 9,
+      "text": "A 60‑day requirement for all large‑load requests should provide a binding initial determination that includes a limited‑load capacity profile, identified constraints and telemetry, and a provisional queue position so developers can plan and finance while full engineering studies continue",
+      "concern": "Requests a 60-day binding initial determination with queue position to reduce developer uncertainty",
+      "bins": ["aq:expedited", "pr:study", "topic:queue-timeline"]
+    },
+    {
+      "id": 10,
+      "text": "When developers must anchor a queue position in transparent hosting‑capacity data, tariff‑backed LLFC commitments, and enforceable telemetry and non‑performance provisions, it becomes far less attractive to hold multiple oversized, purely optional positions that inflate apparent load growth",
+      "concern": "Explains how tariff-backed commitments with telemetry requirements would deter speculative queue entries",
+      "bins": ["pr:study", "topic:phantom-load-queue"]
+    },
+    {
+      "id": 11,
+      "text": "Recognize BESS‑enabled bridge operation as a low‑impact path that can permit faster than new combustion generation, improves power quality and ride‑through for large loads, and buys time while export or transmission upgrades for new generation proceed",
+      "concern": "Supports BESS bridge operation as an expedited, low-impact permitting path to accelerate time-to-power",
+      "bins": ["pr:flex", "aq:expedited", "topic:bess-bridge-operation"]
+    },
+    {
+      "id": 12,
+      "text": "base upgrade requirements should not be set by those sensitivities when enforceable LLFC controls materially bound risk",
+      "concern": "Argues non-performance sensitivities should not drive base upgrade costs when LLFC controls are in place",
+      "bins": ["pr:cost", "pr:study"]
+    },
+    {
+      "id": 13,
+      "text": "Speed‑to‑power is a core reliability metric for U.S. industry and AI infrastructure; policy should meet the moment",
+      "concern": "Frames fast interconnection as a reliability and economic competitiveness imperative",
+      "bins": ["pr:flex", "topic:speed-to-power"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "LLFC flexible interconnection framework",
+      "stance": "support",
+      "description": "Critical Loop strongly supports creating a tariff-backed Large-Load Flexibility Commitment that credits curtailment-ready loads and co-located storage. The filer argues existing technology makes large loads technically flexible today, and that pairing enforceable limits with time-varying operating envelopes and real-time telemetry unlocks faster connections. Capacity market recognition and BESS bridge operation are companion elements.",
+      "quote_ids": [3, 4, 5, 8, 11, 13]
+    },
+    {
+      "key": "pr:study",
+      "name": "Replace static worst-case study assumption",
+      "stance": "oppose",
+      "description": "Critical Loop opposes the current default of modeling large loads at static maximum withdrawal with all resources unavailable. It argues this assumption overstates upgrade costs and obscures BESS value. The preferred alternative uses LLFC operating envelopes and explicit non-performance contingencies as the base case, paired with hosting-capacity-style data and a 60-day initial determination to speed planning.",
+      "quote_ids": [1, 2, 4, 6, 9, 10, 12]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Upgrade costs tied to actual risk",
+      "stance": "support",
+      "description": "The filer argues that when enforceable LLFC controls materially bound a site's withdrawal risk, base upgrade requirements should reflect the LLFC envelope rather than the non-performance sensitivity. This would lower interconnection costs for flexible loads.",
+      "quote_ids": [12]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-located and adjacent supply credit",
+      "stance": "support",
+      "description": "Critical Loop asks FERC to treat co-located or adjacent resources behind the same point of interconnection as creditable under the LLFC, with joint study of load and supply. The framework should be resource-agnostic so long as a certified power-control system enforces import limits and non-export at the POI.",
+      "quote_ids": [7]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid non-firm service rights",
+      "stance": "support",
+      "description": "Critical Loop asks for non-firm withdrawal rights for LLFC participants and non-firm injection rights for co-located or adjacent supply, with joint study at or near a common point of interconnection.",
+      "quote_ids": [3, 7]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint study for load and supply",
+      "stance": "support",
+      "description": "The filer recommends that hosting-capacity-style data publication and standardized joint-study paths cover both load and hybrid or adjacent supply at the same point of interconnection, reducing soft costs and directing requests to viable locations.",
+      "quote_ids": [6, 7]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited path for flexible loads",
+      "stance": "support",
+      "description": "Critical Loop asks for a 60-day binding initial determination for all large-load requests, giving developers a provisional queue position while full studies proceed. It also supports recognizing BESS bridge operation as a fast-permitting, low-impact path to accelerate time-to-power.",
+      "quote_ids": [9, 11]
+    },
+    {
+      "key": "topic:llfc-tariff-construct",
+      "name": "LLFC as pro forma tariff construct",
+      "stance": "support",
+      "description": "The central proposal is a tariff-backed opt-in commitment with specified curtailment triggers, maximum hours or MWh per year, notice windows, telemetry, and financial consequences for non-performance, modeled explicitly in interconnection studies.",
+      "quote_ids": [3]
+    },
+    {
+      "key": "topic:static-assumption-flaw",
+      "name": "Static assumption masks battery value",
+      "stance": "oppose",
+      "description": "Critical Loop argues the standard worst-case study treats co-located BESS as absent or charging and the load as non-curtailable, producing overstated upgrades and delayed connections that do not reflect how an LLFC site actually operates.",
+      "quote_ids": [4]
+    },
+    {
+      "key": "topic:operating-envelopes",
+      "name": "Time-varying operating envelopes",
+      "stance": "support",
+      "description": "The filer proposes that transmission providers issue time-varying operating envelopes capping a site's net withdrawals. A certified customer control system would enforce the envelope autonomously with real-time SCADA-grade telemetry.",
+      "quote_ids": [5]
+    },
+    {
+      "key": "topic:hosting-capacity-for-load",
+      "name": "Hosting-capacity data for load",
+      "stance": "support",
+      "description": "Critical Loop asks FERC to require publication of hourly and seasonal headroom, expected curtailment windows, and binding constraints for load at candidate interconnection points, paralleling distribution-level hosting-capacity or ICA tools.",
+      "quote_ids": [6]
+    },
+    {
+      "key": "topic:phantom-load-queue",
+      "name": "Reducing speculative queue entries",
+      "stance": "support",
+      "description": "The filer links tariff-backed LLFC commitments and enforceable telemetry requirements to deterring speculative or oversized queue positions. When a queue position must be anchored in real data and binding commitments, holding multiple optional positions becomes unattractive.",
+      "quote_ids": [2, 10]
+    },
+    {
+      "key": "topic:capacity-accreditation",
+      "name": "Capacity credit for LLFC loads",
+      "stance": "support",
+      "description": "Critical Loop urges RTOs and ISOs to recognize LLFC-committed loads in capacity accreditation or reduce procurement obligations accordingly, with performance testing and penalties aligned to peak grid stress periods.",
+      "quote_ids": [8]
+    },
+    {
+      "key": "topic:queue-timeline",
+      "name": "60-day initial determination",
+      "stance": "support",
+      "description": "The filer asks for a binding 60-day initial determination that provides a limited-load capacity profile, identified constraints, telemetry requirements, and a provisional queue position so developers can plan and finance while engineering studies continue.",
+      "quote_ids": [9]
+    },
+    {
+      "key": "topic:bess-bridge-operation",
+      "name": "BESS bridge as fast-permit path",
+      "stance": "support",
+      "description": "Critical Loop asks FERC to recognize BESS-enabled bridge operation as a low-impact, fast-permitting alternative that improves power quality and ride-through while new generation or transmission upgrades proceed.",
+      "quote_ids": [11]
+    },
+    {
+      "key": "topic:procedural-barrier",
+      "name": "Commercial and procedural bottleneck",
+      "stance": "neutral",
+      "description": "The filer notes that the technology to operate large loads flexibly exists today and that the barrier is the commercial and procedural pathway, not the technology.",
+      "quote_ids": [1]
+    },
+    {
+      "key": "topic:speed-to-power",
+      "name": "Speed-to-power as reliability metric",
+      "stance": "support",
+      "description": "Critical Loop frames rapid interconnection as a core reliability metric for U.S. industry and AI infrastructure, calling on FERC policy to match that urgency.",
+      "quote_ids": [13]
+    }
+  ],
+  "lenses": {
+    "aq": ["hybridrights", "jointstudy", "expedited"],
+    "pr": ["flex", "study", "cost", "colo"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

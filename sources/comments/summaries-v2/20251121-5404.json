@@ -1,0 +1,285 @@
+{
+  "accession": "20251121-5404",
+  "filer": "Ohio Federal Energy Advocate",
+  "org_type": "consumer_advocate",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5404__Ohio-Federal-Energy-Advocate/FEA Large Load Interconnection Final Comments - RM26-4 11.21.25.txt",
+  "overall_summary": "Ohio FEA advocates for respecting state jurisdiction over large load interconnection, supports FERC rulemaking focused specifically on data centers (not all large loads), recommends a clear 20-25 MW threshold, endorses standardized study deposits and readiness requirements, and requires that data centers bear 100% of network upgrade costs while supporting expedited interconnection for generation paired with new loads.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "all Americans, and all industries, must have access to reliable, affordable, and secure electricity service",
+      "concern": "electricity must be accessible and reliable",
+      "bins": [
+        "topic:reliability-access"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The interconnection of new large loads, however, must not come at the expense of reliability to other customers.",
+      "concern": "new load interconnection must not sacrifice existing customer reliability",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "we recommend the Commission continue to defer to state action and utility-specific tariffs to manage the interconnection of load",
+      "concern": "states should lead on load interconnection rules",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the PUCO has already begun working with regulated utilities in Ohio to create an orderly and expedited process by which new data center loads can request interconnection studies and an electric service agreement",
+      "concern": "Ohio is implementing state-level expedited processes for data center interconnection",
+      "bins": [
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Should FERC assert jurisdiction over large load interconnection, the Ohio FEA recommends the Commission proceed in a similar manner and focus any proposed rulemaking on data centers rather than all new large loads.",
+      "concern": "if FERC acts, target data centers specifically, not all large loads",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Data centers are a unique customer class with exceptional characteristics, and it is not unduly discriminatory to identify them as such and apply regulatory treatment that may differ from that applied to other large loads such as manufacturers.",
+      "concern": "data centers warrant distinct regulatory treatment from other large loads",
+      "bins": [
+        "topic:data-center-class"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Ohio FEA supports the adoption of a clear threshold at which such federal jurisdiction would be invoked",
+      "concern": "FERC should establish a clear MW threshold for federal jurisdiction",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "In AEP Ohio's data center tariff, the PUCO established a threshold of 25 MW for inclusion in the new customer class. However, for consistency with generator interconnections, 20 MW could also be a reasonable threshold.",
+      "concern": "recommend a 20-25 MW threshold for data center federal jurisdiction",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the Ohio FEA supports the use of standardized study deposits, readiness requirements, and withdrawal penalties for data center loads across the country",
+      "concern": "standardize study deposits and readiness requirements for data centers",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Such financial obligations and milestones are necessary to separate legitimate loads that are ready for interconnection service from loads that are speculative, redundant, or unlikely to move forward.",
+      "concern": "deposits and milestones filter out speculative loads",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "This frees up limited utility resources to be spent on projects that are truly shovel-ready. It also informs critical utility load forecasting and planning processes, helping to prevent misallocation of resources or overinvestment in the system.",
+      "concern": "deposits improve utility resource allocation and forecasting",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "To illustrate, last year, AEP Ohio projected over 30,000 MW of new data center load interconnections. However, once its data center tariff was in place and a one-time fee was established to conduct a formal study, that number was cut by more than half.",
+      "concern": "deposits screen out speculative loads (30,000 MW reduced to under 15,000 MW)",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Speed is critical, but it must not come at the expense of safety and reliability.",
+      "concern": "speed must not compromise safety or reliability",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "new data center loads should not impose costs on other customers or customer classes",
+      "concern": "data centers must not shift costs to other customers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "large load and hybrid facilities (new load and generation in proximity) should be responsible for 100% of the network upgrades resulting from their interconnection studies",
+      "concern": "data centers and hybrid facilities must pay 100% of network upgrade costs",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Newly interconnecting large loads must be allocated a fair and equitable share of the costs related to the transmission system that they will utilize and benefit from, both new and existing, as well as the grid ancillary systems upon which they will rely.",
+      "concern": "data centers must share costs for both new and existing transmission they use",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "the Ohio FEA strongly supports 'Bring Your Own Generation' concepts as a means to bring much needed new generation online to meet the massive demand of new large loads, including expedited interconnection for new generation paired in proximity to new load",
+      "concern": "support co-located generation with expedited interconnection",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "any existing generating resource that suspends grid service in order to serve new load must undergo studies at their own expense to ensure those arrangements do not undermine the reliability of the bulk power system",
+      "concern": "existing generation that suspends grid service must study reliability impacts at own cost",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "we ask that the Commission respect state jurisdiction over the load interconnection of retail customers by continuing to defer to states' authority to adopt large load tariffs or other measures to protect the interests of retail ratepayers",
+      "concern": "FERC should respect state authority and continue deferring to state tariffs",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "State jurisdiction over interconnection",
+      "stance": "support",
+      "description": "Ohio FEA strongly advocates for FERC to continue deferring to state authority on large load interconnection and to respect states' ability to adopt their own tariffs and measures. Should FERC act, it should coordinate with state approaches rather than preempt them.",
+      "quote_ids": [
+        3,
+        5,
+        19
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Clear federal jurisdiction threshold",
+      "stance": "support",
+      "description": "Ohio FEA supports FERC establishing a clear MW threshold for federal jurisdiction over data center interconnections, recommending 20-25 MW for consistency with generator interconnection precedent.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Standardized study deposits and readiness requirements",
+      "stance": "support",
+      "description": "Ohio FEA endorses standardized study deposits, readiness requirements, and withdrawal penalties for data centers across the country to filter speculative loads, free up utility resources, and improve forecasting. AEP Ohio's experience shows deposits reduced projected data center load from over 30,000 MW to under 15,000 MW.",
+      "quote_ids": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited interconnection processes",
+      "stance": "support",
+      "description": "Ohio FEA points to existing state-level expedited processes in Ohio where data centers can request studies within 45-60 days and sign agreements within 60 days as a model that has already begun working.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Resource allocation and forecasting through deposits",
+      "stance": "support",
+      "description": "Study deposits and milestones improve utility load forecasting and planning by preventing misallocation of resources and overinvestment, freeing limited utility resources for truly shovel-ready projects.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Large loads bear 100% of network upgrade costs",
+      "stance": "support",
+      "description": "Ohio FEA requires that new data center loads and hybrid facilities be responsible for 100% of network upgrades and a fair share of both new and existing transmission and ancillary system costs they will use and benefit from, ensuring costs do not shift to other customers.",
+      "quote_ids": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-located generation with expedited interconnection",
+      "stance": "support",
+      "description": "Ohio FEA strongly supports 'Bring Your Own Generation' concepts with expedited interconnection for generation paired in proximity to new load, provided that any existing generation suspending grid service must study reliability impacts at its own expense.",
+      "quote_ids": [
+        17,
+        18
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Reliability and safety cannot be sacrificed for speed",
+      "stance": "support",
+      "description": "Ohio FEA insists that new load interconnection must not compromise reliability of other customers and that speed must not come at the expense of safety and reliability, with utilities required to meet NERC standards and tariff requirements.",
+      "quote_ids": [
+        2,
+        13
+      ]
+    },
+    {
+      "key": "topic:data-center-class",
+      "name": "Data centers as distinct customer class",
+      "stance": "support",
+      "description": "Ohio FEA argues that data centers are a unique customer class with exceptional characteristics warranting distinct regulatory treatment from other large loads such as manufacturers.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:reliability-access",
+      "name": "Reliable, affordable electricity access for all",
+      "stance": "neutral",
+      "description": "Ohio FEA affirms that all Americans and all industries must have access to reliable, affordable, and secure electricity service as the foundation for interconnection policy.",
+      "quote_ids": [
+        1
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "deposits",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

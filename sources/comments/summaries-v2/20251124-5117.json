@@ -1,0 +1,130 @@
+{
+  "accession": "20251124-5117",
+  "filer": "CTC Global Corporation",
+  "org_type": "other",
+  "filed": "11/24/2025",
+  "source_text": "sources/comments/files/20251124-5117__CTC-Global-Corporation/25.11.21 CTC Global Comments Large Load ANOPR .txt",
+  "overall_summary": "CTC Global urges FERC to require transmission providers to treat reconductoring with advanced conductors as a standard interconnection option for large loads, arguing this approach reduces costly network upgrades and accelerates interconnection timelines. The company cites case studies demonstrating cost savings up to 65 percent and capacity increases up to 80 percent using advanced conductors on existing transmission infrastructure.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Reconductoring with advanced conductors is a proven, fast, and cost-effective way to create transmission headroom on existing corridors.",
+      "concern": "Advanced conductors proven to add transmission capacity rapidly and cost-effectively",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Carbon composite core advanced conductors can double the capacity on existing structures because they do not have the increase in weight and sag necessary when capacity is increased with early and mid-1900s steel core conductors like ACSR and ACSS.",
+      "concern": "Composite core conductors double capacity without additional weight and sag",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "This speed-to-power approach is key when discussing steps that can and must be taken in order to add new large loads to the power system.",
+      "concern": "Speed in adding transmission capacity is critical for large load interconnection",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Should FERC decide to invoke authority over the interconnection of large loads greater than 20 megawatts (MW), we urge the Commission to require transmission providers to explicitly evaluate reconductoring with commercially available advanced conductors as a standard alternative in interconnection and planning studies before ordering more extensive network upgrades.",
+      "concern": "Explicit request for requirement to evaluate advanced conductors as standard option",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Reconductoring existing lines with advanced conductors can often double capacity in 6-24 months by reusing towers and rights-of-way, and avoiding many siting reviews.",
+      "concern": "Reconductoring achieves capacity doubling in 6 to 24 months with reduced siting requirements",
+      "bins": [
+        "pr:proximate",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "This is critical to connecting existing generation to demand, as well as unleashing the 2.6 Terawatts of generation capacity currently sitting in interconnection queues.",
+      "concern": "Advanced conductors needed to unlock generation sitting in interconnection queues",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Southern California Edison reconductored 137 miles of its 230 kV Big Creek transmission corridor with ACCC Conductor, avoiding a costly rebuild while eliminating sag violations and adding more than 60% additional line capacity. The project cut costs from $135 million to $48 million, reduced completion time from 48 to 18 months, improved safety, lowered line losses by 30%, and delivered significant environmental and customer savings.",
+      "concern": "SCE case study demonstrates 65 percent cost reduction and 60 percent capacity increase with 18 month timeline",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Reconductoring with advanced conductors costs far less than building new lines—savings that translate into lower electricity bills for American families and reduced energy costs for businesses.",
+      "concern": "Advanced conductor reconductoring is cheaper than new transmission builds",
+      "bins": [
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Advanced conductors as standard study option",
+      "stance": "support",
+      "description": "CTC requests that transmission providers explicitly evaluate reconductoring with commercially available advanced conductors as a standard alternative in interconnection and planning studies. The company argues this approach directly advances FERC's objectives by minimizing costly network upgrades and ensuring timely interconnection.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Significant cost reduction through reconductoring",
+      "stance": "support",
+      "description": "Advanced conductors substantially reduce interconnection costs compared to new transmission construction. CTC highlights the Southern California Edison case, where reconductoring with advanced conductors reduced project costs from 135 million to 48 million dollars (65 percent savings) while increasing capacity by 60 percent in 18 months.",
+      "quote_ids": [
+        1,
+        2,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Rapid capacity addition critical for large load integration",
+      "stance": "support",
+      "description": "Speed is essential to interconnecting large loads and connecting waiting generation capacity. CTC emphasizes that reconductoring with advanced conductors can double transmission capacity in 6 to 24 months by reusing towers and rights-of-way, which is necessary to unlock the 2.6 terawatts of generation currently in interconnection queues.",
+      "quote_ids": [
+        3,
+        5,
+        6
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "study",
+      "cost",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

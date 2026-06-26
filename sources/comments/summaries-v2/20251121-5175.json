@@ -1,0 +1,318 @@
+{
+  "accession": "20251121-5175",
+  "filer": "Utility Intervention Unit, New York State Department of Stat",
+  "org_type": "consumer_advocate",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5175__Utility-Intervention-Unit-New-York-State-Departmen/UIU Comments on RM26-4-000 ANOPR.txt",
+  "overall_summary": "The New York State UIU, acting as a consumer advocate, urges FERC to build any large-load interconnection rules on top of existing NYISO processes rather than overriding them, and to require large loads to bear the full incremental cost of the upgrades they cause. The UIU opposes fast-tracking curtailable loads or giving hybrid facilities reduced interconnection requirements, arguing both create reliability and cost-shift risks for ratepayers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Data centers often require substantial grid upgrades, and unless carefully managed, these costs risk being unfairly shifted to residential and small business ratepayers who do not directly benefit.",
+      "concern": "cost shift to existing ratepayers from data center interconnection",
+      "bins": [
+        "pr:cost",
+        "topic:consumer-protection"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Protecting consumers means ensuring that developers bear the costs of infrastructure driven by their own demand (ignoring co-located generation), that planning processes remain open to public scrutiny, and that regional coordination prevents unintended reliability or cost consequences.",
+      "concern": "cost-causation principle and transparency in planning",
+      "bins": [
+        "pr:cost",
+        "pr:study",
+        "topic:consumer-protection"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Any new large load rules should be built upon NYISO's established interconnection processes, manuals, and datasets rather than overriding them.",
+      "concern": "preserve existing NYISO interconnection framework",
+      "bins": [
+        "rg:nyiso",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Creating a national standard could introduce confusion, conflicting study timelines, or inconsistent cost-responsibility determinations at a time when speed in the interconnection process is needed most.",
+      "concern": "risk of national standard undermining regional processes",
+      "bins": [
+        "aq:jurisdiction",
+        "rg:nyiso"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "UIU supports the ANOPR proposal to study load and hybrid facilities together with generating facilities.",
+      "concern": "support for unified study process covering load and generation",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "UIU supports the ANOPR proposal to require that generating facilities, load and hybrid facilities be subject to standardized study deposits, readiness requirements, and withdrawal penalties.",
+      "concern": "support for uniform deposits and readiness standards",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "UIU opposes any consideration of a less rigorous interconnection process applicable to large load interconnection. If large load interconnections were managed through a separate, less-rigorous process, it could create inequities and disrupt the timing and results of sequential interconnection cluster studies.",
+      "concern": "opposition to a lighter process for large loads that could disrupt cluster studies",
+      "bins": [
+        "pr:study",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "UIU opposes the contention that the hybrid facilities should not be required to meet the minimum interconnection requirements applicable to its entire load or generation.",
+      "concern": "hybrid facilities must meet full interconnection requirements",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The type of incentive promulgated in the ANOPR would distort queue prioritization, potentially allowing large loads to leapfrog generation projects competing for the same transfer capability because they are not required to financially support their full interconnection request.",
+      "concern": "reduced requirements for hybrids distort queue priority against generation",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "UIU rejects the ANOPRs premise that large loads that agree to be curtailable and hybrid facilities that agree to be curtailable and dispatchable should be expedited.",
+      "concern": "curtailability alone should not grant queue priority",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "A customer receiving interconnection priority for being curtailable but failing to perform could expose consumers to higher costs and reliability risks.",
+      "concern": "curtailment non-performance risks costs and reliability for consumers",
+      "bins": [
+        "aq:expedited",
+        "pr:flex",
+        "topic:consumer-protection"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Each large load project's cost responsibility must reflect the incremental cost of required local and network upgrades, ensuring that large load developers fund the infrastructure needed to support their own demand.",
+      "concern": "cost causation: large loads must pay incremental upgrade costs",
+      "bins": [
+        "pr:cost",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Costs unsupported by quantifiable benefits must not be socialized to general transmission customers.",
+      "concern": "prohibit socializing upgrade costs without demonstrated shared benefit",
+      "bins": [
+        "pr:cost",
+        "topic:consumer-protection"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "UIU urges the Commission to protect consumers from bearing adverse impacts from large load integration, particularly from energy-intensive developments like data centers.",
+      "concern": "consumer protection from costs driven by data center interconnection",
+      "bins": [
+        "pr:cost",
+        "topic:consumer-protection"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "In no instance should existing load customers be on the hook for increased capacity costs (this includes the cost of RMR-style contracts) because a generator has decided to exit the market to serve a large load BTM.",
+      "concern": "existing customers must not pay for capacity costs from BTM generator exits",
+      "bins": [
+        "pr:proximate",
+        "topic:resource-adequacy"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Preserve Regional Authority",
+      "stance": "mixed",
+      "description": "The UIU supports FERC taking action but warns that a single national standard could override NYISO's existing, vetted processes and create conflicting timelines and cost-responsibility determinations. It asks that any new rules allow regions to seek variations rather than imposing uniform federal procedures.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Full Cost Responsibility for Large Loads",
+      "stance": "support",
+      "description": "The UIU supports applying cost-causation principles so that each large load project bears the incremental cost of the upgrades it requires, with shared benefits rigorously quantified before any cost is allocated to others.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Study of Load and Generation",
+      "stance": "support",
+      "description": "The UIU supports studying large loads and hybrid facilities in the same process as generating facilities to ensure comparable, coordinated infrastructure planning.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Uniform Deposits and Readiness",
+      "stance": "support",
+      "description": "The UIU supports requiring large loads and hybrid facilities to post the same study deposits, meet readiness milestones, and face withdrawal penalties as generators, deterring speculative queue entries.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Full Interconnection Requirements for Hybrids",
+      "stance": "oppose",
+      "description": "The UIU opposes allowing hybrid facilities to avoid full interconnection requirements based on net position. Studying only net injection or withdrawal understates real system impacts and lets hybrids leapfrog generators competing for the same transfer capability.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "No Queue Priority for Curtailability",
+      "stance": "oppose",
+      "description": "The UIU rejects fast-tracking large loads simply because they agree to be curtailable. Non-firm curtailable service is not a substitute for generation capacity, and a customer that fails to curtail during emergencies shifts higher costs and reliability risks to consumers.",
+      "quote_ids": [
+        7,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Unified Study Process",
+      "stance": "support",
+      "description": "The UIU supports using NYISO's existing cluster study methodology for large loads, with the same procedural steps, queue priority rules, and milestones already applied to generators. A separate, lighter process would disrupt sequential cluster studies and create inequities.",
+      "quote_ids": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Beneficiary Pays, No Cost Shift",
+      "stance": "support",
+      "description": "The UIU strongly supports the beneficiary-pays principle and opposes any rule that socializes large-load upgrade costs to existing ratepayers. Shared-benefit allocations are acceptable only when benefits are technically and rigorously demonstrable.",
+      "quote_ids": [
+        1,
+        2,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Must Not Reduce Requirements",
+      "stance": "oppose",
+      "description": "The UIU opposes reduced interconnection requirements for co-located generation and load. Failing to study hybrid facilities for their full injection and withdrawal rights creates unnecessary reliability risks and queue distortions.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Curtailability Not a Queue Shortcut",
+      "stance": "oppose",
+      "description": "The UIU argues that curtailability and dispatchability do not substitute for firm capacity. Flexible load creates forecasting uncertainty, gaming potential, and extreme-weather reliability risks that must be managed with enforceable performance metrics, not queue priority.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "BTM Generation Exit Must Not Harm Consumers",
+      "stance": "support",
+      "description": "The UIU urges that when a generator exits the market to serve a large load behind the meter, an RMR-type forward study must confirm no resource adequacy shortfall results. Existing load customers must not absorb higher capacity costs from that market exit.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "rg:nyiso",
+      "name": "Build on NYISO Existing Framework",
+      "stance": "support",
+      "description": "The UIU asks FERC to build large-load rules on NYISO's Attachment HH and Manual 23 processes, which already address load modeling, queue administration, and cost allocation. Overriding them risks confusion and relitigating settled cost-allocation precedents.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "topic:consumer-protection",
+      "name": "Ratepayer Protection Principles",
+      "stance": "support",
+      "description": "The UIU emphasizes throughout that data center and large-load interconnection must not shift infrastructure costs to residential and small-business ratepayers. Planning transparency, open participation, and strict cost-causation rules are the primary safeguards.",
+      "quote_ids": [
+        1,
+        2,
+        11,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "topic:resource-adequacy",
+      "name": "Resource Adequacy and BTM Risks",
+      "stance": "support",
+      "description": "The UIU warns that large flexible loads can distort resource adequacy planning and that generators retreating behind the meter to serve dedicated large loads could create capacity shortfalls. It calls for forward-looking RMR-type studies and a no-adverse-impact standard before any BTM arrangement is approved.",
+      "quote_ids": [
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": [
+      "nyiso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

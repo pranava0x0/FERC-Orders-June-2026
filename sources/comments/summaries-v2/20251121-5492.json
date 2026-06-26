@@ -1,0 +1,154 @@
+{
+  "accession": "20251121-5492",
+  "filer": "Individual No Affiliation",
+  "org_type": "individual",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5492__Individual-No-Affiliation/138422.txt",
+  "overall_summary": "L. Lynne Kiesling, Ph.D., applies transaction-cost and regulatory economics to argue for a modular, principles-based federal framework for large-load interconnection. She contends that data center flexibility is undervalued, co-location is a rational response to high transaction costs, and the ANOPR's 100% participant-funding proposal rests on flawed cost-allocation methodology. She recommends reform grounded in marginal-cost principles and expanded market participation for flexible resources.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The rapid growth of AI data center load presents a critical coordination challenge due to the temporal mismatch between rapid data center deployment (18–24 months) and slow grid infrastructure expansion (7–10 years).",
+      "concern": "Pacing gap between data center construction and grid buildout creates coordination failure",
+      "bins": ["pr:study", "topic:pacing-mismatch"]
+    },
+    {
+      "id": 2,
+      "text": "Modern data centers possess significant latent flexibility through workload shifting, UPS-based frequency response, and hybrid on-site generation.",
+      "concern": "Data centers have underused flexibility that current rules ignore",
+      "bins": ["pr:flex", "topic:demand-flexibility"]
+    },
+    {
+      "id": 3,
+      "text": "Current interconnection rules treat these loads as static and inflexible, ignoring capabilities that could significantly reduce system stress and upgrade costs.",
+      "concern": "Static-load treatment in interconnection rules wastes available flexibility",
+      "bins": ["pr:flex", "pr:cost", "topic:demand-flexibility"]
+    },
+    {
+      "id": 4,
+      "text": "Legacy interconnection rules create high asset specificity and hold-up risks, driving developers toward inefficient bypass strategies.",
+      "concern": "Legacy rules raise transaction costs and push developers toward workarounds",
+      "bins": ["pr:cost", "topic:transaction-costs"]
+    },
+    {
+      "id": 5,
+      "text": "Co-location and hybrid configurations are rational economic responses to these high transaction costs (\"make vs. buy\" decisions) and should be facilitated rather than penalized by extending generator-style interconnection regimes to loads.",
+      "concern": "Co-location is economically rational and should be accommodated, not penalized",
+      "bins": ["pr:colo", "topic:transaction-costs"]
+    },
+    {
+      "id": 6,
+      "text": "The ANOPR's suggestion of 100% participant funding for upgrades relies on flawed embedded-cost methodologies that ignore marginal impacts.",
+      "concern": "Proposed full participant funding is based on flawed cost methodology",
+      "bins": ["aq:deposits", "pr:cost"]
+    },
+    {
+      "id": 7,
+      "text": "Efficient cost recovery should instead follow Ramsey-Boiteux principles, allocating fixed costs inversely to elasticity.",
+      "concern": "Cost allocation should use marginal-cost principles, not embedded-cost averages",
+      "bins": ["pr:cost", "topic:cost-allocation-methodology"]
+    },
+    {
+      "id": 8,
+      "text": "Because large loads are highly elastic and can relocate or self-supply, assigning them full upgrade costs encourages inefficient grid defection.",
+      "concern": "Full upgrade cost assignment to elastic loads drives inefficient bypass of the grid",
+      "bins": ["pr:cost", "pr:proximate", "topic:cost-allocation-methodology"]
+    },
+    {
+      "id": 9,
+      "text": "The Commission should establish a federal framework that lowers barriers to flexible resources, modernizes market participation rules for technologies like thermal energy storage (TES), and reforms cost allocation to reflect marginal impacts.",
+      "concern": "Calls for a federal framework enabling flexibility and marginal-cost-based cost allocation",
+      "bins": ["pr:flex", "pr:cost", "topic:market-participation"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Pacing mismatch study need",
+      "stance": "neutral",
+      "description": "The filer identifies a coordination failure: data centers deploy in 18 to 24 months while grid infrastructure takes 7 to 10 years. This structural lag is the foundation for recommending a federal framework rather than leaving the problem to case-by-case interconnection.",
+      "quote_ids": [1]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Treat flexibility as system value",
+      "stance": "support",
+      "description": "The filer argues that data centers hold significant latent flexibility through workload shifting, UPS response, and on-site generation, and that current rules ignore this. She supports modernizing market participation rules so these capabilities reduce upgrade costs and system stress.",
+      "quote_ids": [2, 3, 9]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Reform upgrade cost allocation",
+      "stance": "oppose",
+      "description": "The filer opposes 100% participant funding as grounded in flawed embedded-cost methodology that ignores marginal impacts. She advocates Ramsey-Boiteux cost allocation, warning that full cost assignment to elastic large loads will push them toward grid defection.",
+      "quote_ids": [3, 4, 6, 7, 8, 9]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Facilitate co-location economically",
+      "stance": "support",
+      "description": "The filer frames co-location as a rational make-vs-buy response to high transaction costs in legacy interconnection rules. She supports extending generator-style interconnection regimes to loads rather than penalizing co-location arrangements.",
+      "quote_ids": [5]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Elastic loads and grid defection risk",
+      "stance": "neutral",
+      "description": "The filer notes that large loads are highly elastic and can relocate or self-supply, making full upgrade cost assignment counterproductive. This frames the proximate-load question in terms of economic efficiency rather than geography.",
+      "quote_ids": [8]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Participant funding methodology flawed",
+      "stance": "oppose",
+      "description": "The filer opposes the ANOPR's suggestion of 100% participant funding, arguing it relies on embedded-cost methodologies that ignore marginal cost impacts and misalign incentives for large elastic loads.",
+      "quote_ids": [6]
+    },
+    {
+      "key": "topic:pacing-mismatch",
+      "name": "Deployment vs. grid buildout lag",
+      "stance": "neutral",
+      "description": "The structural mismatch between fast data center deployment and slow grid expansion is the organizing problem the filing addresses. The filer uses it to justify a modular, principles-based federal response.",
+      "quote_ids": [1]
+    },
+    {
+      "key": "topic:demand-flexibility",
+      "name": "Undervalued data center flexibility",
+      "stance": "support",
+      "description": "The filer argues current rules treat large loads as static, overlooking workload shifting, UPS frequency response, and hybrid generation. Recognizing and enabling this flexibility could materially reduce infrastructure costs.",
+      "quote_ids": [2, 3]
+    },
+    {
+      "key": "topic:transaction-costs",
+      "name": "Legacy rules raise transaction costs",
+      "stance": "oppose",
+      "description": "Applying transaction-cost economics, the filer argues that legacy interconnection rules create asset specificity and hold-up risks that push developers toward bypass strategies. Co-location is a rational economic response, not an abuse.",
+      "quote_ids": [4, 5]
+    },
+    {
+      "key": "topic:cost-allocation-methodology",
+      "name": "Marginal vs. embedded cost principles",
+      "stance": "oppose",
+      "description": "The filer argues cost allocation should follow Ramsey-Boiteux principles rather than embedded-cost averages. Assigning full upgrade costs to highly elastic loads encourages grid defection and is economically inefficient.",
+      "quote_ids": [7, 8]
+    },
+    {
+      "key": "topic:market-participation",
+      "name": "Market rules for flexible technologies",
+      "stance": "support",
+      "description": "The filer calls for modernized market participation rules covering technologies like thermal energy storage so that demand-side flexibility can be valued and compensated within wholesale markets.",
+      "quote_ids": [9]
+    }
+  ],
+  "lenses": {
+    "aq": ["deposits"],
+    "pr": ["study", "flex", "cost", "colo", "proximate"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

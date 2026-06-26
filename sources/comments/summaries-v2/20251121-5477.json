@@ -1,0 +1,222 @@
+{
+  "accession": "20251121-5477",
+  "filer": "NORTHEASTERN REMC",
+  "org_type": "trade_assoc",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5477__NORTHEASTERN-REMC/NREMC Comments RM26-4 ANOPR .txt",
+  "overall_summary": "NREMC urges the Commission to carefully circumscribe its jurisdiction over large load interconnections to avoid undermining state retail-market authority, raise the 20 MW threshold to at least 100 MW to focus on hyper-concentrated data-center loads, and ensure transparent front-of-meter interconnection with full cost allocation. The cooperative also opposes expedited interconnection for curtailable loads as discriminatory and emphasizes that implementation must include a detailed regional transition framework.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Commission jurisdiction cannot override state authority over retail sales, confer any delivery rights under the Open Access Transmission Tariff (\"OATT\"), or create a federal right to interconnection that would allow large loads to bypass state-established service territories or retail-choice restrictions.",
+      "concern": "Federal jurisdiction must not override state retail authority",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Granting a federal right of interconnection to large loads could enable these loads to obtain de facto retail access to alternative suppliers across the transmission system, even in states that maintain exclusive monopoly service territories and prohibit retail competition.",
+      "concern": "Federal interconnection rights could circumvent state retail-choice restrictions",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "a uniform, nationwide bright-line standard at 20 MW is far too low and would include many manufacturing and industrial loads essential for communities across nation. These types of loads bear little resemblance in scale, behavior, or system impact to the concern driving this proceeding: extraordinarily large, highly concentrated data-center demand measured in the hundreds of megawatts or even gigawatts, at a single point of interconnection. The minimum threshold should more closely reflect these loads of concern and should be set at no less than 100 MW.",
+      "concern": "Threshold of 20 MW is too low and unfairly includes smaller industrial loads",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Smaller or more distributed loads present fundamentally different characteristics and risk profiles. Their electrical demands, operational behavior, and location on the system do not produce the same system-level challenges that hyper-concentrated data-center growth creates.",
+      "concern": "Smaller loads have different risk profiles than data centers",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "NREMC agrees that, to the extent practicable, studying load and hybrid facilities together with new generating facilities can support more efficient siting decisions and reduce the need for costly network upgrades. Co-locating a large load front-of-meter with newly developed generation, not generation pulled from the existing supply stack, can meaningfully reduce the overall interconnection footprint and limit the transmission reinforcements that would otherwise be required if each facility were studied independently.",
+      "concern": "Joint study of load with new generation supports efficiency",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "All load and generation configurations, including hybrid arrangements, should interconnect on a front-of-the-meter basis, with full transparency regarding both the load and the generating components. Transparent, front-of-the-meter interconnection ensures that transmission providers can accurately study system impacts (including contingency scenarios at the hybrid facilities), appropriately allocate costs, and maintain clear operational visibility.",
+      "concern": "Front-of-meter interconnection with transparency enables accurate cost allocation",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Expediting interconnection studies solely for large loads or hybrid facilities that agree to be curtailable and dispatchable would create a discriminatory two-tiered system, favoring certain customers over others based on operational preferences rather than system needs.",
+      "concern": "Expedited interconnection for curtailable loads is discriminatory",
+      "bins": [
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "A \"fast-track\" interconnection process should instead focus on facilities paired with new, front-of-meter generation, where operational flexibility and system benefits can be clearly demonstrated. This approach maintains fairness, supports reliable integration, and avoids preferential treatment that could distort the interconnection queue.",
+      "concern": "Fast-track should apply to front-of-meter generation pairings, not curtailment",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Interconnection customers who are not transmission owners should absolutely be afforded the same or equivalent option to build as generator interconnection customers. Transmission owners should not be permitted to delay or impede the interconnection process if the customer has the capability to construct the necessary facilities themselves.",
+      "concern": "Non-transmission owners must have equal build options",
+      "bins": [
+        "topic:build-equity"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "NREMC agrees that utilities serving large loads should be responsible for ancillary services based on the gross peak load, without netting against any co-located generation. Even where generation is co-located, the system must still be prepared to serve the full load at any time, maintaining the ability to provide black start, regulation, reactive power, and other essential services.",
+      "concern": "Ancillary service responsibility should be based on gross load",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Co-location does not reduce the system's obligations or the risk the load imposes, and charges for ancillary services should reflect the full potential need to deploy these capabilities.",
+      "concern": "Costs must reflect full ancillary service obligations",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Any proposed changes will need to be aligned with existing generator-interconnection procedures, transmission-service request processes, and ongoing regional transmission-planning activities. Absent a clear transition framework, transmission providers and customers could face conflicting requirements, duplicative studies, or delays that undermine the very efficiencies these reforms are intended to achieve.",
+      "concern": "Implementation requires alignment with existing procedures",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "RTOs and ISOs, transmission providers, and load serving entities must have sufficient time to update their procedures, software, staffing, and coordination protocols before any new requirements take effect. Moreover, regional flexibility is necessary to account for differences in queue structures, study methodologies, and the status of current large-load interconnection requests.",
+      "concern": "Regional flexibility and transition time are essential",
+      "bins": [
+        "pr:proximate"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Jurisdiction limited to wholesale transmission",
+      "stance": "oppose",
+      "description": "NREMC opposes granting the Commission broad jurisdiction that overrides state retail authority. Federal interconnection rights for large loads risk enabling de facto retail access across the transmission system, circumventing state-established service territories and retail-choice restrictions.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Raise 20 MW threshold to 100 MW",
+      "stance": "oppose",
+      "description": "NREMC contends the 20 MW threshold is far too low and unfairly captures manufacturing and industrial loads that differ fundamentally from the hyper-concentrated data-center loads driving this proceeding. The cooperative urges a minimum threshold of 100 MW to focus the rules on the actual problem.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study large load with new generation together",
+      "stance": "support",
+      "description": "NREMC supports studying large loads and hybrid facilities jointly with new generating facilities to reduce the need for costly network upgrades. Implementation must align with existing procedures and avoid duplicative studies that could delay or undermine the intended efficiencies.",
+      "quote_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Transparent front-of-meter interconnection",
+      "stance": "support",
+      "description": "NREMC supports front-of-meter interconnection for hybrid facilities with full transparency on load and generation components. This approach enables transmission providers to accurately study system impacts, appropriately allocate costs, and maintain clear operational visibility.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Reject expedited interconnection for curtailable loads",
+      "stance": "oppose",
+      "description": "NREMC opposes expediting interconnection studies for large loads or hybrids that agree to be curtailable and dispatchable, calling it discriminatory. Data centers claim national security imperatives preventing curtailment, making such preferential treatment impractical and unfair.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Fast-track paired with new front-of-meter generation",
+      "stance": "support",
+      "description": "Instead of curtailment-based expediting, NREMC supports fast-track interconnection for facilities paired with new front-of-meter generation where operational flexibility and system benefits are demonstrable. This maintains fairness and avoids distorting the interconnection queue.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:build-equity",
+      "name": "Equal build rights for non-transmission owners",
+      "stance": "support",
+      "description": "NREMC supports affording non-transmission-owner customers the same or equivalent build option as generator interconnection customers. Transmission owners must not be permitted to delay or impede interconnection if the customer can construct facilities themselves.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Ancillary services based on gross peak load",
+      "stance": "support",
+      "description": "NREMC supports charging for ancillary services based on gross peak load without netting against co-located generation. The system must remain prepared to serve the full load at any time, and costs should reflect the full potential need for essential services.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Regional flexibility and transition time",
+      "stance": "support",
+      "description": "NREMC emphasizes that implementation must include regional flexibility to account for differences in queue structures, study methodologies, and status of current requests. RTOs, ISOs, and transmission providers need sufficient time to update procedures and staffing before new requirements take effect.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "colo",
+      "flex",
+      "cost",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

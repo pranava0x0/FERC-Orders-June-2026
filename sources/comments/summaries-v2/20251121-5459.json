@@ -1,0 +1,283 @@
+{
+  "accession": "20251121-5459",
+  "filer": "Institute for Progress",
+  "org_type": "think_tank",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5459__Institute-for-Progress/FERC ANOPR comments - Institute for Progress.txt",
+  "overall_summary": "The Institute for Progress strongly supports the ANOPR's principles for accelerating large load interconnection, framing them as necessary to preserve US AI leadership and economic competitiveness. The filing argues that Principle 7 (expedited interconnection for curtailable loads) is the most critical near-term tool, while also urging FERC to go beyond Principle 14 by mandating cybersecurity and physical security standards as a precondition for expedited interconnection.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "IFP strongly supports the Principles identified in the Commission's ANOPR.",
+      "concern": "Broad support for all ANOPR principles",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "pr:colo",
+        "pr:flex",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the ANOPR's principles directed at accelerating and standardizing large load interconnection are needed to maintain United States leadership in both AI research and development as well as AI deployment.",
+      "concern": "Links interconnection reform to US AI leadership",
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "If power and interconnection bottlenecks are not addressed, US companies may be compelled to relocate AI infrastructure abroad.",
+      "concern": "Warns that interconnection delays risk offshoring AI compute",
+      "bins": [
+        "topic:ai-national-security"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Principle 4, which calls for standardized study deposits, readiness requirements, and withdrawal penalties, is a necessary means of filtering out speculative projects, providing transmission providers with more useful information to more accurately forecast demand on their systems.",
+      "concern": "Supports deposits and readiness criteria to clear speculative projects from queues",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Principle 3 encourages the co-location of new loads and generation, which can minimize the need for costly network upgrades.",
+      "concern": "Co-location reduces network upgrade costs and delays",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "a 900 MW data center co-located with a 1000 MW generator could request only 100 MW of net injection rights, dramatically reducing its grid impact and avoiding years of delays associated with upgrades.",
+      "concern": "Hybrid netting of injection/withdrawal rights cuts study scope and timelines",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Principle 8 proposes that large loads should be responsible for 100% of the network upgrades assigned to them. This is appropriate because – though it places an additional financial burden on the large loads – such loads are well capitalized and this cost is small compared to the overall costs of their projects.",
+      "concern": "Full cost responsibility for network upgrades is appropriate and provides cost certainty",
+      "bins": [
+        "pr:cost",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "allocating responsibility in this way provides the cost certainty that developers, and their investors, critically need to finance multi-billion dollar projects.",
+      "concern": "Clear cost allocation unlocks project financing",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The most powerful proposal for immediate impact is Principle 7, which proposes that 'the interconnection study of large loads that agree to be curtailable... should be expedited.'",
+      "concern": "Expedited study for curtailable loads is the single highest-impact proposal",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "the US grid could integrate \"76 GW of new load\" with minimal expansion of the existing power system.",
+      "concern": "Low curtailment commitment unlocks large amounts of new load capacity",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Concentrating gigawatts of controllable load onto the grid creates a novel threat vector that our strategic adversaries can exploit.",
+      "concern": "Large controllable loads introduce a new cybersecurity threat to the grid",
+      "bins": [
+        "topic:grid-cybersecurity"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "an attacker could deliberately 'flash' the load – repeatedly initiating and halting a gigawatt-scale job. This would inject malicious load dynamics directly into the BPS.",
+      "concern": "Flash load attack via compromised load management could destabilize the grid",
+      "bins": [
+        "topic:grid-cybersecurity"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "An adversary could seek to trigger this exact response through a cyber-attack, effectively weaponizing the data center's own protective settings to destabilize the grid and cause a cascading, system-wide failure.",
+      "concern": "LVRT cascade attack could weaponize data center protective systems against the grid",
+      "bins": [
+        "topic:grid-cybersecurity"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "The Commission should use this rulemaking to mandate such reliability and, crucially, security standards – both cyber and physical – and ensure they attach to large loads that seek accelerated interconnection.",
+      "concern": "Security standards should be mandatory conditions for expedited interconnection",
+      "bins": [
+        "topic:grid-cybersecurity",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Adherence to these new, robust security standards should be a non-negotiable precondition for any large load to receive the 'speed-to-power' benefits (Principle 7) proposed in this ANOPR.",
+      "concern": "Security compliance should gate access to expedited interconnection",
+      "bins": [
+        "topic:grid-cybersecurity",
+        "pr:flex",
+        "aq:expedited"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Support standardized study process",
+      "stance": "support",
+      "description": "IFP backs the ANOPR's call for a dedicated, standardized interconnection study framework for large loads. Standardization is needed to give transmission providers accurate demand forecasts and concentrate study resources on viable projects.",
+      "quote_ids": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Full cost responsibility for upgrades",
+      "stance": "support",
+      "description": "IFP supports assigning 100% of network upgrade costs to the interconnecting large load. This approach is justified because large loads are well capitalized, and clear cost allocation provides the financial certainty developers and investors need for multi-billion dollar projects.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location reduces grid impact",
+      "stance": "support",
+      "description": "IFP supports co-location of loads with generation as a key tool for reducing costly network upgrades. Studying hybrid facilities on net injection or withdrawal rights can dramatically shrink grid impact and cut years of interconnection delays.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Curtailment pathway is highest priority",
+      "stance": "support",
+      "description": "IFP calls Principle 7 the single most powerful near-term proposal. Expedited interconnection for curtailable loads can unlock 76 GW or more of new capacity with minimal grid expansion, bridging the gap between immediate AI demand and longer-horizon generation and transmission buildout.",
+      "quote_ids": [
+        1,
+        9,
+        10,
+        15
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Support overall ANOPR framework",
+      "stance": "support",
+      "description": "IFP broadly endorses the combined framework of Principles 3, 5, 7, 8, and 9 as a viable path to deploying gigawatt-scale AI infrastructure while preserving grid reliability.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Deposits filter speculative projects",
+      "stance": "support",
+      "description": "IFP supports Principle 4's deposits, readiness requirements, and withdrawal penalties as necessary to filter out speculative projects and give transmission providers more accurate demand forecasts.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Net injection rights for hybrid facilities",
+      "stance": "support",
+      "description": "IFP supports allowing hybrid load-plus-generation facilities to be studied based on net injection or withdrawal rights, which can dramatically reduce grid impact and avoid upgrade-driven delays.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited study tied to security compliance",
+      "stance": "support",
+      "description": "IFP supports expedited interconnection for curtailable loads and urges that security standard adherence be a precondition for receiving that expedited pathway, turning speed-to-power benefits into an incentive for security hardening.",
+      "quote_ids": [
+        9,
+        10,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Cost allocation threshold is appropriate",
+      "stance": "support",
+      "description": "IFP accepts full cost responsibility for large loads as appropriate given their capitalization levels, viewing it as a reasonable threshold condition for interconnection.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:ai-national-security",
+      "name": "AI infrastructure as national security asset",
+      "stance": "support",
+      "description": "IFP frames rapid interconnection as a national security imperative. Without solving interconnection bottlenecks, US companies may be forced to relocate AI infrastructure abroad, undermining oversight and increasing intellectual property theft risks.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "topic:grid-cybersecurity",
+      "name": "Mandatory security standards for large loads",
+      "stance": "support",
+      "description": "IFP argues Principle 14 is insufficient and urges FERC to mandate cybersecurity and physical security standards for large loads as a non-negotiable condition for expedited interconnection. Specific threats include flash load attacks and LVRT cascade attacks that adversaries could use to destabilize the grid.",
+      "quote_ids": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "deposits",
+      "hybridrights",
+      "expedited",
+      "threshold"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

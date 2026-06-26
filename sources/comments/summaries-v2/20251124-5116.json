@@ -1,0 +1,301 @@
+{
+  "accession": "20251124-5116",
+  "filer": "Individual No Affiliation",
+  "org_type": "individual",
+  "filed": "11/24/2025",
+  "source_text": "sources/comments/files/20251124-5116__Individual-No-Affiliation/Kiesling FERC DOE ANOPR comment November 2025.txt",
+  "overall_summary": "Economist L. Lynne Kiesling argues that FERC should adopt a principles-based federal framework treating large-load flexibility as a system value, reducing the transaction costs created by legacy interconnection rules, and replacing embedded-cost upgrade allocation with Ramsey-Boiteux marginal-cost methods. She opposes blanket 100% participant funding and a generator-style interconnection regime applied without modification to loads, and recommends modernized market participation pathways for technologies such as thermal energy storage.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The rapid growth of AI data center load presents a critical coordination challenge due to the temporal mismatch between rapid data center deployment (18–24 months) and slow grid infrastructure expansion (7–10 years).",
+      "concern": "pacing mismatch between data center build speed and grid infrastructure timelines",
+      "bins": [
+        "pr:study",
+        "topic:pacing-mismatch"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Current interconnection rules treat these loads as static and inflexible, ignoring capabilities that could significantly reduce system stress and upgrade costs.",
+      "concern": "interconnection rules fail to account for demand flexibility",
+      "bins": [
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The ANOPR's suggestion of 100% participant funding for upgrades relies on flawed embedded-cost methodologies that ignore marginal impacts.",
+      "concern": "100% participant funding rests on economically flawed cost allocation methods",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Efficient cost recovery should instead follow Ramsey-Boiteux principles, allocating fixed costs inversely to elasticity.",
+      "concern": "cost allocation should use inverse-elasticity pricing rather than embedded cost",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Because large loads are highly elastic and can relocate or self-supply, assigning them full upgrade costs encourages inefficient grid defection.",
+      "concern": "full upgrade cost assignment drives elastic large loads to bypass the grid",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Norris et al. (2025) quantifies this potential: it finds that, with modest curtailment of just 0.25 %–0.5 % of annual uptime, U.S. balancing authorities could integrate nearly 76 GW–98 GW of new large loads using existing capacity without disruptive grid upgrades.",
+      "concern": "small flexibility commitments could allow integration of large load growth on existing capacity",
+      "bins": [
+        "pr:flex",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Hyper flexible loads like TES are being installed now with the operational capability and business model incentive to make robust, enforceable and dependable flexibility commitments.",
+      "concern": "thermal energy storage and similar loads can provide firm, grid-operator-dispatchable flexibility today",
+      "bins": [
+        "pr:flex",
+        "topic:tes-market-access"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Applying a generator-style interconnection regime to large loads risks entrenching these problems further. The generator process is designed for resources that inject power, not for large, flexible loads whose operational behaviors differ fundamentally from generators.",
+      "concern": "importing the generator interconnection process wholesale is a poor fit for flexible loads",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "A TES resource that charges with electricity and discharges thermal energy to an industrial host becomes simultaneously a wholesale and retail customer, even though its grid-facing behavior is indistinguishable from a purely electrical TES asset.",
+      "concern": "inconsistent jurisdictional treatment of TES configurations raises transaction costs and blocks market access",
+      "bins": [
+        "topic:tes-market-access",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The hybrid or co-location contracts that large loads and generators are entering are system-enhancing examples of the 'make or buy' decision in institutional economics.",
+      "concern": "co-location is a rational market response to high interconnection transaction costs, not a problem to penalize",
+      "bins": [
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Co-location is a market response to the pacing mismatch between data center speed-to-power and infrastructure construction timeframes.",
+      "concern": "co-location contracts reflect the structural gap between data center and grid build timelines",
+      "bins": [
+        "pr:colo",
+        "topic:pacing-mismatch"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Transmission upgrade cost assignment remains one of the least transparent components of the interconnection process. Because most jurisdictions rely on embedded-cost or FDC methods, the relationship between a project's marginal impact and its assigned upgrade cost is weak.",
+      "concern": "lack of transparency in upgrade cost assignment produces arbitrary and distorted outcomes",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "topic:tariff-transparency"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "FERC should not adopt a blanket rule obligating large loads to bear 100 percent of assigned upgrade costs without first reforming the allocation methodology to reflect marginal cost principles.",
+      "concern": "blanket 100% participant funding should not proceed without first fixing the underlying cost methodology",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "The expedited queue access proposal is one step in the direction of valuing flexibility as a capability.",
+      "concern": "expedited access for flexible loads is a positive step but insufficient on its own",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Aligning cost allocation with marginal impacts ensures that flexible loads remain part of the bulk system rather than retreating into private microgrids.",
+      "concern": "marginal-cost-aligned tariffs keep flexible loads integrated rather than driving self-supply",
+      "bins": [
+        "pr:cost",
+        "pr:flex",
+        "pr:proximate"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Flexibility as System Value",
+      "stance": "support",
+      "description": "Kiesling argues that modern data centers and hyper-flexible loads such as thermal energy storage possess latent flexibility across multiple time scales that current rules ignore. She supports interconnection and market rules that recognize and reward this flexibility, citing research showing that modest curtailment commitments could integrate tens of gigawatts of new load on existing capacity.",
+      "quote_ids": [
+        2,
+        6,
+        7,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Marginal-Cost Allocation Reform",
+      "stance": "oppose",
+      "description": "Kiesling opposes both embedded-cost and fully distributed cost methodologies and the ANOPR's 100% participant funding proposal. She argues these methods are economically unsound because they ignore marginal impacts, produce arbitrary results based on queue position, and push elastic large loads toward grid defection. She recommends replacing them with Ramsey-Boiteux inverse-elasticity pricing.",
+      "quote_ids": [
+        2,
+        3,
+        4,
+        5,
+        12,
+        13,
+        15
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study Process Modernization",
+      "stance": "support",
+      "description": "Kiesling supports modernizing interconnection studies to model actual flexible operational profiles rather than peak nameplate demand. She cautions against mechanically importing the generator interconnection process to loads, as it was designed for resources that inject power and embeds outdated assumptions about load rigidity.",
+      "quote_ids": [
+        1,
+        6,
+        8
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location as Rational Response",
+      "stance": "support",
+      "description": "Kiesling frames co-location and hybrid configurations as rational institutional responses to high transaction costs and the pacing mismatch, not as bypass strategies to penalize. She argues that extending generator-style rules to loads without modification would worsen rather than resolve these frictions.",
+      "quote_ids": [
+        5,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Keep Loads on the Bulk System",
+      "stance": "support",
+      "description": "Kiesling argues that poor cost allocation drives flexible loads into private microgrids, undermining reliability. Marginal-cost-aligned tariffs are necessary to keep grid-supportive large loads interconnected rather than isolated.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Oppose Blanket 100% Participant Funding",
+      "stance": "oppose",
+      "description": "Kiesling directly opposes the ANOPR's suggestion of 100% participant funding for upgrades, arguing it rests on methodologies that do not reflect marginal cost causation and that assigning full lumpy upgrade costs to elastic loads maximizes distortion and bypass incentives.",
+      "quote_ids": [
+        3,
+        4,
+        5,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Support Expedited Access with Caveats",
+      "stance": "mixed",
+      "description": "Kiesling views the expedited queue access proposal for flexible loads as a positive step but insufficient without broader flexibility recognition in interconnection studies and cost allocation.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Clarify Jurisdictional Treatment",
+      "stance": "support",
+      "description": "Kiesling identifies inconsistent jurisdictional treatment of TES and hybrid resources as a transaction cost barrier and recommends that FERC clarify that wholesale electricity purchases for conversion to thermal energy qualify as wholesale transactions.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Facilitate Hybrid and Co-location Rights",
+      "stance": "support",
+      "description": "Kiesling supports facilitating hybrid configurations and co-location arrangements as legitimate institutional responses to high transaction costs, noting that ERCOT's Private Use Network rules have made Texas competitive for hybrid facilities.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:pacing-mismatch",
+      "name": "Grid-Datacenter Pacing Gap",
+      "stance": "neutral",
+      "description": "Kiesling identifies the 18 to 24 month data center build time versus 7 to 10 year grid infrastructure timeline as the central coordination problem the ANOPR must address. This mismatch drives both co-location decisions and the urgency of flexibility-based solutions.",
+      "quote_ids": [
+        1,
+        11
+      ]
+    },
+    {
+      "key": "topic:tes-market-access",
+      "name": "TES Market Participation Barriers",
+      "stance": "neutral",
+      "description": "Kiesling uses thermal energy storage as a case study in how inconsistent jurisdictional classification raises transaction costs and blocks market access for a technology with strong flexibility potential. Three configurations of TES that impose similar net loads receive divergent regulatory treatment.",
+      "quote_ids": [
+        7,
+        9
+      ]
+    },
+    {
+      "key": "topic:tariff-transparency",
+      "name": "Upgrade Cost Transparency",
+      "stance": "neutral",
+      "description": "Kiesling identifies upgrade cost assignment as the least transparent part of the interconnection process, producing outcomes that vary by orders of magnitude across similarly sized projects due to queue position rather than actual marginal impact.",
+      "quote_ids": [
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost",
+      "expedited",
+      "jurisdiction",
+      "hybridrights"
+    ],
+    "pr": [
+      "flex",
+      "cost",
+      "study",
+      "colo",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

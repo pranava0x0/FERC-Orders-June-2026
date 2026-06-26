@@ -1,0 +1,266 @@
+{
+  "accession": "20251205-5204",
+  "filer": "Advanced Energy Management Alliance",
+  "org_type": "demand_flex",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5204__Advanced-Energy-Management-Alliance/AEMA_large load ANOPR Reply Comments 12.5.25 VF.txt",
+  "overall_summary": "AEMA urges FERC to establish a technology-neutral, performance-based Flexible Load Fast Track (FLFT) that treats software, storage, and other demand-side solutions on par with generation pairing as pathways to expedited interconnection. The filing rebuts arguments that demand flexibility is inferior or illusory, citing peer-reviewed literature and a broad record of support from transmission owners, tech companies, and grid operators. AEMA also argues that restricting expedited interconnection to loads that pair matching generation would be unduly discriminatory given that verifiable curtailment provides reliability benefits equivalent to new supply.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "AEMA urges the Commission to adopt an expressly 'all-of-the-above' approach in which any particular technology (whether storage, thermal resources, on-site generation, or software-defined controls) or combination thereof is encouraged so long as it can verifiably deliver the flexibility attributes that support reliability.",
+      "concern": "Framework should be technology-neutral, rewarding any combination of tools that delivers verifiable flexibility",
+      "bins": [
+        "pr:flex",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The fastest way to connect new loads that advances affordability, effectively drives investment into U.S. competitiveness and AI infrastructure rapidly, and bolsters grid reliability is to harness the full suite of flexibility technologies in a technology-neutral and performance-based way.",
+      "concern": "Technology-neutral, performance-based flexibility is the fastest and most affordable interconnection path",
+      "bins": [
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "flexible load capabilities should be leveraged to bridge the gap between immediate interconnection needs and the longer timelines required for traditional transmission upgrades, accelerating AI infrastructure investments while also deferring or avoiding upgrades that can raise costs for ratepayers.",
+      "concern": "Flexible loads can bridge to full service while transmission is built, cutting ratepayer costs",
+      "bins": [
+        "pr:flex",
+        "pr:cost",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "AEMA recommends that the interconnection study process be used to define clear, upper-bound limits on the required flexibility (e.g., maximum number of hours per year, hours per event, depth of flexibility, and events per year) needed to mitigate specific system constraints.",
+      "concern": "Studies should specify clear, bounded flexibility requirements so operators know what commitments to make",
+      "bins": [
+        "pr:study",
+        "topic:study-transparency"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "interconnection studies must reflect the actual, controlled operating profile of a facility rather than a theoretical maximum withdrawal.",
+      "concern": "Studies should model net controlled withdrawal, not worst-case peak demand",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "AEMA strongly urges the Commission to reject arguments from the Independent Market Monitor for PJM (\"PJM IMM\"), the Electric Power Supply Association (\"EPSA\"), the Illinois Attorney General, and others suggesting that large loads must \"bring their own generation\" or that demand-side solutions are inferior to generation assets.",
+      "concern": "Mandatory generation pairing should be rejected as the sole pathway to expedited interconnection",
+      "bins": [
+        "pr:flex",
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Mandating that every new large load be paired with new generation forces the construction of redundant capital assets when cost-effective flexibility could otherwise allow that load to be served by the existing system. This approach would unnecessarily inflate the cost of AI infrastructure and add years of supply chain backlog.",
+      "concern": "Mandatory co-location with generation raises costs and causes delays compared to demand flexibility",
+      "bins": [
+        "pr:colo",
+        "pr:cost",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "AEMA urges the Commission to treat generation matching as one optional pathway among many to achieve flexibility, not as a mandatory precondition for timely interconnection.",
+      "concern": "Generation pairing should be optional, not required, for expedited interconnection",
+      "bins": [
+        "pr:colo",
+        "pr:flex",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "When a large load commits to a tariff-backed operational limit—monitored in real-time by the grid operator—it provides a reliability service physically equivalent to generation.",
+      "concern": "Tariff-backed curtailment commitments with real-time monitoring are functionally equivalent to generation",
+      "bins": [
+        "pr:flex",
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "It is a fundamental principle of interconnection policy that customers who impose different impacts on the system should be treated differently. A load that is legally and technically bound to curtail during constraints does not require the same network upgrades as a static, inflexible load.",
+      "concern": "Differentiated treatment for curtailable loads is not discriminatory but reflects different system impacts",
+      "bins": [
+        "pr:flex",
+        "pr:cost",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "a final rule singling out loads or hybrid facilities that pair matching generation as the sole mechanism for expedited interconnection—while excluding verifiable load flexibility—would be unduly discriminatory.",
+      "concern": "Restricting expedited track to generation-paired loads while excluding demand flexibility would be unduly discriminatory",
+      "bins": [
+        "pr:flex",
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The Commission has a proven record of asserting jurisdiction over demand-side capabilities that affect wholesale rates and reliability, such as but not limited to Order No. 745 (demand response compensation) and Order No. 2222 (distributed energy resource aggregation).",
+      "concern": "FERC has clear precedent and authority to mandate equal treatment of demand flexibility",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:ferc-authority"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Technology-Neutral Flexibility Framework",
+      "stance": "support",
+      "description": "AEMA supports a Flexible Load Fast Track that accepts any combination of storage, software, thermal, or on-site generation as long as it delivers verifiable flexibility. The filing argues that a performance-based, technology-neutral approach is faster, cheaper, and more reliable than prescribing a single pathway. Curtailable loads monitored in real time provide reliability services physically equivalent to generation.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Flexibility Reduces Ratepayer Cost",
+      "stance": "support",
+      "description": "AEMA argues that flexible loads defer or avoid transmission upgrades, reducing costs for ratepayers. Mandating generation pairing instead would force redundant capital spending and extend supply chain backlogs, inflating the cost of AI infrastructure.",
+      "quote_ids": [
+        2,
+        3,
+        7,
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Studies Based on Controlled Operating Profile",
+      "stance": "support",
+      "description": "AEMA recommends that interconnection studies model a facility's actual, controlled withdrawal profile rather than theoretical maximum demand. Studies should specify clear upper-bound flexibility parameters (hours per year, depth, events) so that operators and customers both understand the commitment required.",
+      "quote_ids": [
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Generation Pairing as Optional, Not Mandatory",
+      "stance": "oppose",
+      "description": "AEMA opposes proposals from PJM IMM and EPSA that would require new large loads to pair with new generation as a precondition for expedited interconnection. Generation matching should be one optional pathway among several, evaluated on a technology-neutral basis alongside storage, software, and other demand-side tools.",
+      "quote_ids": [
+        6,
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Track for Curtailable Loads",
+      "stance": "support",
+      "description": "AEMA supports expedited study and interconnection pathways for loads that commit to curtailment. The filing rejects discrimination claims, arguing that loads with different system impacts rightly receive different treatment, and that a curtailable load simply does not need the same network upgrades as a firm load.",
+      "quote_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Reject Mandatory Generation Pairing",
+      "stance": "oppose",
+      "description": "AEMA argues that proposals requiring every large load to bring its own generation ignore the efficiency of the transmission grid and would raise costs and delay projects without adding reliability benefits that demand flexibility cannot already provide. A final rule limiting expedited treatment to generation-paired loads would be unduly discriminatory.",
+      "quote_ids": [
+        6,
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Model Net Controlled Withdrawal in Studies",
+      "stance": "support",
+      "description": "AEMA supports modeling interconnection studies on a facility's actual controlled operating profile rather than worst-case peak withdrawal, consistent with broader stakeholder calls to reflect real withdrawal rights and curtailment commitments.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Tariff-Backed Curtailment as Reliability Service",
+      "stance": "support",
+      "description": "AEMA argues that a load with a tariff-backed operational limit monitored in real time by the grid operator delivers a reliability service equivalent to generation, and therefore deserves equivalent treatment in the interconnection process.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC Authority Over Demand Flexibility",
+      "stance": "support",
+      "description": "AEMA cites FERC's authority under Order Nos. 745 and 2222 as precedent for asserting jurisdiction over demand-side capabilities that affect wholesale rates and reliability, arguing the Commission has both the authority and obligation to ensure demand flexibility receives equal treatment with generation pairing.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:study-transparency",
+      "name": "Publish Clear Study Constraint Data",
+      "stance": "support",
+      "description": "AEMA and supporting commenters argue that transmission providers must publish specific constraint information so customers can develop targeted flexibility solutions. Without visibility into binding constraints, customers cannot design cost-effective alternatives, leading to delayed interconnections and an overbuilt system.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:ferc-authority",
+      "name": "Commission Jurisdiction Is Clear",
+      "stance": "support",
+      "description": "AEMA argues that FERC's existing precedent on demand response and distributed energy resources establishes clear authority to mandate equal treatment for demand-side flexibility in the interconnection process, dismissing any hesitation about jurisdictional reach.",
+      "quote_ids": [
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited",
+      "hybridrights",
+      "jointstudy",
+      "protection",
+      "jurisdiction"
+    ],
+    "pr": [
+      "flex",
+      "cost",
+      "study",
+      "colo"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

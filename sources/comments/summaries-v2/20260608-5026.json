@@ -1,0 +1,262 @@
+{
+  "accession": "20260608-5026",
+  "filer": "MAVEN SOLUTIONS",
+  "org_type": "other",
+  "filed": "06/08/2026",
+  "source_text": "sources/comments/files/20260608-5026__MAVEN-SOLUTIONS/Maven_Response_FirstEnergy.txt",
+  "overall_summary": "Maven Solutions opposes FirstEnergy's proposed natural-gas-style expansion rate for large-load transmission, arguing the gas-pipeline analogy is structurally false for a meshed AC network, that the proposal protects transmission owners at least as much as ratepayers, and that it ignores both the beneficiary math required by cost-causation doctrine and the communities that host the infrastructure. The filing sets out ten structural conditions that any FERC cost-allocation framework for large loads must satisfy, including benefit studies, automatic reallocation, anti-overbuild safeguards, NERC reliability obligations, and community hosting standards.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The natural-gas analogy is directionally useful and structurally false.",
+      "concern": "Gas-pipeline cost model does not translate to meshed AC transmission",
+      "bins": [
+        "pr:cost",
+        "topic:gas-analogy-limits"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Electric transmission is a meshed alternating-current network in which power flows simultaneously over all transmission paths according to electrical characteristics—not according to contractual designations.",
+      "concern": "AC network physics make contract-path pricing inapplicable",
+      "bins": [
+        "pr:cost",
+        "topic:gas-analogy-limits"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "A transmission facility built to interconnect a data center may simultaneously improve regional reliability, reduce congestion, increase transfer capability, support future load service, and enable generation deliverability for parties who had no part in the interconnection request.",
+      "concern": "Transmission upgrades produce broad grid benefits beyond the triggering customer",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The proposal does not eliminate the bottleneck. It monetizes it.",
+      "concern": "Expansion rate converts incumbent monopoly position into a revenue extraction mechanism",
+      "bins": [
+        "pr:cost",
+        "topic:incumbent-gatekeeper"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "FirstEnergy's framework guarantees the transmission owner's cost recovery, collateralizes the transmission owner's investment, and shifts all demand-forecast, utilization, and cancellation risk from the utility to the customer.",
+      "concern": "Proposal shifts risk to large-load customers while securing utility revenue",
+      "bins": [
+        "pr:cost",
+        "topic:incumbent-gatekeeper"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "\"Triggered by a data center\" is not the same as \"benefits only a data center.\" FirstEnergy wants the causation label without doing the beneficiary math.",
+      "concern": "Cost causation requires benefit allocation, not just trigger identification",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The Commission cannot approve a framework that announces reallocation as a concept without specifying it as a mechanism.",
+      "concern": "FirstEnergy's reallocation promise is unspecified and unenforceable",
+      "bins": [
+        "pr:cost",
+        "topic:reallocation-gap"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Political pledges and filed-rate obligations are different instruments. The Commission should not confuse a White House press event with the evidentiary record required to support a just-and-reasonable rate under FPA §§ 205–206.",
+      "concern": "White House Ratepayer Protection Pledge is not a legal cost-allocation basis",
+      "bins": [
+        "pr:cost",
+        "topic:pledge-limits"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "FirstEnergy's expansion-rate proposal is, in part, a direct response to that litigation. The filing says: do not block the project—fix the rate design.",
+      "concern": "Proposal reflects FirstEnergy's own litigation interest, not neutral rate-design analysis",
+      "bins": [
+        "pr:cost",
+        "topic:incumbent-gatekeeper"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "A rate-design framework that assigns capital costs without addressing dynamic-load performance creates a dangerous half-solution.",
+      "concern": "Cost allocation without reliability conditions is incomplete for computational loads",
+      "bins": [
+        "pr:cost",
+        "pr:study",
+        "topic:reliability-gap"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "The Commission should not adopt any cost-allocation framework for large computational loads without requiring the applicant to satisfy NERC's emerging reliability obligations as a condition of receiving transmission service.",
+      "concern": "NERC reliability conditions must be tied to any cost-recovery framework",
+      "bins": [
+        "pr:study",
+        "topic:reliability-gap"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Maven Solutions' research documents the national scale of community opposition to data-center development: 268 local groups across 37 states, representing over 360,000 members, coordinated through organizations including the Coalition for Responsible Data Center Development.",
+      "concern": "Widespread community opposition exists that rate design alone will not resolve",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "A framework that assigns transmission costs while ignoring the communities standing next to the transmission facilities will not resolve that opposition. It will deepen it.",
+      "concern": "Excluding host communities from cost-allocation framework worsens siting conflicts",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Collateral requirements must be proportional to risk, not designed to exclude smaller competitors. A framework that only trillion-dollar hyperscalers can satisfy entrenches the largest firms while pricing out smaller developers, manufacturers, and emerging industries.",
+      "concern": "Collateral standards must not effectively bar smaller large-load customers",
+      "bins": [
+        "pr:cost",
+        "topic:collateral-access"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "The gas analogy is useful as a directional signal. It is false as a one-to-one regulatory mapping.",
+      "concern": "Gas-pipeline precedent cannot be directly transplanted to electric transmission",
+      "bins": [
+        "pr:cost",
+        "topic:gas-analogy-limits"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost Causation Applied Wrongly",
+      "stance": "oppose",
+      "description": "Maven Solutions opposes FirstEnergy's expansion-rate proposal as a misapplication of cost-causation doctrine. The filing argues that triggering a transmission upgrade does not equal bearing its full cost; proper allocation requires a benefit study that accounts for regional reliability, congestion relief, and future load service. The proposal also secures transmission-owner revenue while shifting all risk to the customer, and its reallocation mechanism is unspecified.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Benefit Study Before Assignment",
+      "stance": "support",
+      "description": "Maven Solutions supports requiring a public benefit study before any direct cost assignment, covering congestion relief, reliability improvement, transfer capability, generation deliverability, and avoided-cost benefits. The filing also ties this to NERC reliability conditions: computational-load modeling and dynamic-load simulations must be satisfied before a customer receives transmission service under any expansion rate.",
+      "quote_ids": [
+        3,
+        6,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Community Hosting Accountability",
+      "stance": "support",
+      "description": "Maven Solutions argues that any cost-allocation framework must include community hosting standards, not just ratepayer protection. The filing documents 268 opposition groups across 37 states and argues that assigning transmission costs without addressing environmental impact, water use, workforce participation, and tax-revenue transparency will deepen rather than resolve community opposition.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "topic:gas-analogy-limits",
+      "name": "Gas Model Structurally Inapplicable",
+      "stance": "oppose",
+      "description": "Maven Solutions identifies the gas-pipeline analogy as the structural flaw in FirstEnergy's filing. AC transmission flows across all paths simultaneously according to electrical physics, not contractual designations, so a contract-path pricing model imported from a commodity pipeline industry does not map onto a meshed, reliability-critical network.",
+      "quote_ids": [
+        1,
+        2,
+        15
+      ]
+    },
+    {
+      "key": "topic:incumbent-gatekeeper",
+      "name": "Proposal Monetizes Monopoly Position",
+      "stance": "oppose",
+      "description": "Maven Solutions argues that FirstEnergy's framework converts incumbent monopoly control of transmission into a FERC-approved revenue extraction mechanism. The proposal guarantees utility cost recovery and collateralizes utility investment while presenting itself as consumer protection. The filing also discloses that the proposal responds to FirstEnergy's own rate litigation, flagging a conflict of interest.",
+      "quote_ids": [
+        4,
+        5,
+        9
+      ]
+    },
+    {
+      "key": "topic:reallocation-gap",
+      "name": "Reallocation Left Unspecified",
+      "stance": "oppose",
+      "description": "FirstEnergy acknowledges that expansion facilities may eventually serve the broader grid and gestures at annual reallocation, but leaves frequency, methodology, and enforcement entirely undefined. Maven Solutions argues the Commission cannot approve a framework that names reallocation as a concept without specifying it as an enforceable mechanism.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:pledge-limits",
+      "name": "White House Pledge Not a Rate Basis",
+      "stance": "oppose",
+      "description": "Maven Solutions argues the White House Ratepayer Protection Pledge is a voluntary political commitment by seven named companies, not a FERC tariff or statutory cost-allocation rule. Converting that pledge into a mandatory cost-recovery mechanism applied to all hyperscale customers conflates a press event with the evidentiary record required under FPA sections 205 and 206.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:reliability-gap",
+      "name": "Reliability Conditions Required",
+      "stance": "support",
+      "description": "Maven Solutions points to NERC's March 2026 Gap Assessment and May 2026 Level 3 Essential Action Alert finding existing standards inadequate for computational loads. The filing argues that any cost-allocation framework must condition transmission service on satisfying NERC's emerging reliability obligations, including dynamic-load modeling, telemetry, and ride-through capability.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "topic:collateral-access",
+      "name": "Collateral Standards Must Be Scaled",
+      "stance": "mixed",
+      "description": "Maven Solutions accepts that collateral requirements have a role in managing project risk but argues they must be proportional rather than set at levels only large hyperscalers can meet. A framework calibrated to trillion-dollar firms would entrench the largest companies and price out smaller developers, manufacturers, and emerging industries.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "study",
+      "colo"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
