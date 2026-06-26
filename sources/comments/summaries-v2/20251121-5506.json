@@ -1,0 +1,196 @@
+{
+  "accession": "20251121-5506",
+  "filer": "American Clean Power Association",
+  "org_type": "clean_energy",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5506__American-Clean-Power-Association/2025-11-21 - RM26-4 - ACP Large load comments FINAL.txt",
+  "overall_summary": "ACP supports timely large-load interconnection but emphasizes federalism principles and cautions against disrupting ongoing projects. The filing opposes the 20MW threshold as too low, advocates a state-led approach with federal backstop only when needed, and demands technology-neutral rules allowing loads to bring their own generation or storage.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Load interconnection has historically been a state-jurisdictional issue, and any Federal action should be measured and carefully considered.",
+      "concern": "Federalism principle - calls for cautious federal involvement",
+      "bins": [
+        "pr:study",
+        "topic:federalism-deference"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "A state-driven approach, which would seek to minimize disruption of the multiple large load projects under development and seeking to interconnect today.",
+      "concern": "Prefers state leadership over immediate federal mandate",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the proposed 20 MW load threshold (ANOPR Principle 2) may be unrealistically low for the types of large loads that drive transmission needs, and could inadvertently increase uncertainty by sweeping an unnecessarily high number of load interconnection requests into a new process Federal jurisdiction.",
+      "concern": "20MW threshold too low, creates overreach and uncertainty",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "By contrast, a 20MW standalone threshold would capture many mid-sized projects that may pose little system risk, and in many cases may have a predictable pathway to interconnection under current rules.",
+      "concern": "Low threshold sweeps in low-risk loads, disrupts working processes",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Any jurisdictional changes could jeopardize interconnection requests that are in process, and inadvertently increase interconnection delays.",
+      "concern": "Warns federal action could harm ongoing projects",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "ACP recommends that the Commission utilize the record developed in this proceeding to establish a load interconnection threshold significantly higher than 20MW, while also taking note of multiple load interconnections at the same grid connection point that could be individually lower but collectively higher than the threshold level.",
+      "concern": "Proposes higher threshold and aggregate-point rule",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "several regions are already moving forward with their own, stakeholder-led approaches to large load interconnection, including pairing load and generation. The Commission should ensure that any action in this proceeding supports regional flexibility, and does not deter or supplant proactive regional efforts",
+      "concern": "Regional initiatives underway, federal action should not undermine them",
+      "bins": [
+        "pr:flex",
+        "pr:study",
+        "topic:regional-initiative"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "ACP also urges the Commission to ensure that any implementation of these principles is both technology- and fuel-neutral, and allows load customers to bring their own supply resources of choice, consistent with applicable laws and requirements.",
+      "concern": "Demands technology neutrality and customer choice in supply",
+      "bins": [
+        "topic:technology-neutrality"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The Commission should ensure that there is no undue discrimination among supply resources that accompany interconnection requests for hybrid loads.",
+      "concern": "Warns against discriminating between supply types",
+      "bins": [
+        "topic:technology-neutrality",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "loads should be expressly allowed to bring their own supply resources with them, including energy storage.",
+      "concern": "Explicit right to customer choice on generation/storage",
+      "bins": [
+        "aq:hybridrights",
+        "topic:technology-neutrality"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal versus state authority",
+      "stance": "oppose",
+      "description": "ACP opposes federal overreach in load interconnection, arguing it has been a state matter and cautioning that jurisdictional changes could jeopardize ongoing projects and increase delays. Prefers a state-driven approach with federal action as a backstop only when needed.",
+      "quote_ids": [
+        2,
+        5
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20MW threshold is too low",
+      "stance": "oppose",
+      "description": "ACP opposes the proposed 20MW threshold, arguing it is unrealistically low and would sweep many mid-sized, low-risk projects into federal jurisdiction that already have predictable pathways under current rules. Recommends a significantly higher threshold, ideally 100MW or higher.",
+      "quote_ids": [
+        3,
+        4,
+        6
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Customer choice in supply resources",
+      "stance": "support",
+      "description": "ACP supports explicit rights for loads to bring their own generation or storage, with no undue discrimination among supply types. Technology and fuel neutrality are essential to avoid favoring particular resource types.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Record development and federalism",
+      "stance": "neutral",
+      "description": "ACP acknowledges the need for record development on jurisdictional and other issues but emphasizes that federal study and action should be measured and respect cooperative federalism principles.",
+      "quote_ids": [
+        1,
+        2,
+        7
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Regional flexibility and innovation",
+      "stance": "support",
+      "description": "ACP supports regional flexibility and existing stakeholder-led initiatives, including load-generation pairings in SPP and PJM. Federal action should not deter or supplant proactive regional efforts.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:federalism-deference",
+      "name": "Federalism deference",
+      "stance": "oppose",
+      "description": "ACP argues that load interconnection has historically been a state matter and any federal action should be measured and carefully considered to respect federalism principles.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:technology-neutrality",
+      "name": "Technology and fuel neutrality",
+      "stance": "support",
+      "description": "ACP demands that rules be technology-neutral and fuel-neutral, allowing loads to choose their supply resources without undue discrimination. This aligns with longstanding FPA principles against undue discrimination and preference.",
+      "quote_ids": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:regional-initiative",
+      "name": "Existing regional approaches",
+      "stance": "support",
+      "description": "ACP notes that several regions including SPP and PJM are already developing stakeholder-led approaches to large load interconnection and load-generation pairing. Federal action should support these efforts, not undermine them.",
+      "quote_ids": [
+        7
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "accession": "20251205-5225",
+  "filer": "Southern California Edison Company",
+  "org_type": "transmission_owner",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5225__Southern-California-Edison-Company/RM26-4-000 Southern California Edison Company Reply Comments.txt",
+  "overall_summary": "SCE opposes a direct FERC rule on large load interconnections, citing jurisdictional conflicts with state retail regulation in California, and urges the Commission to issue a Notice of Proposed Rulemaking with draft procedures before proceeding to a final rule. SCE supports cost allocation principles where large load customers bear their interconnection costs, but emphasizes the need for resource adequacy planning and protection of existing utility customers from cost burden.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "In California, the Public Utilities Commission (\"CPUC\") regulates the interconnection of retail (e.g., end-use) customers to SCE's system and FERC has not historically exercised authority in this area.",
+      "concern": "California state jurisdiction over retail load interconnections",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Any Commission rule that intrudes on the states' authority to determine the terms and conditions of retail service—even retail service to large data center loads that arguably affect wholesale rates—would be problematic from a jurisdictional perspective.",
+      "concern": "Federal rule would intrude on state retail ratemaking authority",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the ANOPR's eighth reform principle, which suggests a new federal standard for how transmission costs should be allocated to large load retail customers, risks directly intruding on retail ratemaking in jurisdictions that have retained bundled retail service.",
+      "concern": "Cost allocation principle threatens state bundled retail authority",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "any rule must be carefully crafted to avoid, to the extent possible, any future jurisdictional challenges that will unnecessarily delay implementation.",
+      "concern": "Rulemaking must be narrowly tailored to avoid jurisdictional disputes",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "it is critical to balance speed to interconnection with utility customer protections by ensuring that large load customers are responsible for the costs to facilitate their interconnection to the transmission system and their use of the transmission system.",
+      "concern": "Large load customers should bear their own interconnection costs",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "existing customers should not bear the interconnection costs for new large load customers, but that those costs may ultimately be rolled into rates (through credits/refunds) if the load is durable.",
+      "concern": "Existing customers protected from new large load costs; durable loads may earn cost credits",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Protections should also be in place to ensure utility customers are not left carrying the costs of stranded or underutilized assets built to interconnect large loads.",
+      "concern": "Existing customers should not absorb stranded asset costs",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Given the potential size of large data centers seeking to interconnect, it is critical that proactive reliability studies and integrated planning are thoroughly executed to ensure there is sufficient generation capacity to serve large loads upon interconnection.",
+      "concern": "Resource adequacy and capacity planning essential before large load interconnection",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the Commission should recognize and support the need for this type of proactive planning while ensuring that any future Commission rule does not conflict with existing state reliability planning processes, and should give deference to the established processes governed by the state regulators.",
+      "concern": "Federal rule should defer to established state reliability planning",
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "SCE urges the Commission to first issue a Notice of Proposed Rulemaking (\"NOPR\") rather than proceeding to a final rule based solely on the high-level principles outlined in the ANOPR and the necessarily high-level comments provided in response.",
+      "concern": "Commission should issue NOPR with draft procedures before final rule",
+      "bins": [
+        "topic:process-timing"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "A NOPR should include actual draft procedures and agreements, which would allow stakeholders to provide more specific input.",
+      "concern": "NOPR should include proposed pro forma procedures for comment",
+      "bins": [
+        "topic:process-timing"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "publishing a full proposed rulemaking that includes a pro forma agreement and procedures and allowing full comment on firm proposals, including through working groups and technical conferences, will allow more robust input from all stakeholders.",
+      "concern": "Full NOPR process with working groups will improve rulemaking quality",
+      "bins": [
+        "topic:process-timing"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "State versus federal jurisdiction over retail interconnections",
+      "stance": "oppose",
+      "description": "SCE argues FERC lacks historical jurisdiction over retail load interconnections in California, which are regulated by the CPUC. A federal rule on cost allocation risks intruding on state authority to set retail service terms. Any rule must be narrowly tailored to avoid jurisdictional challenges that could delay implementation.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        9
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation for large load interconnection",
+      "stance": "support",
+      "description": "SCE supports requiring large load customers to bear their own interconnection and transmission use costs. However, existing utility customers must be protected from these costs; durable loads may eventually roll costs into rates via credits or refunds if they persist. Protections must prevent existing customers from absorbing stranded or underutilized assets.",
+      "quote_ids": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Resource adequacy and reliability planning before interconnection",
+      "stance": "support",
+      "description": "SCE emphasizes proactive reliability studies and integrated resource planning are critical before large loads interconnect, to ensure sufficient generation capacity. Federal rules should defer to California's established state planning processes (Resource Adequacy, Integrated Resource Planning, and CAISO Transmission Planning) rather than conflicting with them.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:process-timing",
+      "name": "NOPR with draft procedures before final rule",
+      "stance": "oppose",
+      "description": "SCE opposes jumping directly to a final rule from high-level ANOPR principles. The Commission should follow the precedent of Order 2003, issuing a full Notice of Proposed Rulemaking with draft pro forma procedures and agreements, allowing stakeholders to comment on actual language through working groups and technical conferences.",
+      "quote_ids": [
+        10,
+        11,
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
