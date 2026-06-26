@@ -1,0 +1,313 @@
+{
+  "accession": "20251121-5253",
+  "filer": "Fervo Energy Company",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5253__Fervo-Energy-Company/RM 26-4-000 - Fervo Initial Comments on ANOPR.txt",
+  "overall_summary": "Fervo Energy Company, a geothermal developer, supports FERC's proposed framework for large load interconnection with emphasis on readiness requirements, expedited study pathways for hybrid facilities that offer operational flexibility, and cost allocation that recognizes system benefits of co-located generation and load.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "a 20 MW threshold is reasonable, appropriately tailored to the types of high-impact projects this rulemaking is intended to address, and fully consistent with the structure of the existing pro forma LGIP and LGIA",
+      "concern": "20 MW threshold is appropriate and aligns with generator framework.",
+      "bins": [
+        "aq:threshold",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The LGIP framework is the Commission's established mechanism for studying and processing generation interconnection requests that can materially affect transmission system reliability. Aligning the applicability threshold for large-load and hybrid interconnections with this framework can ensure procedural consistency, reduce administrative complexity for transmission providers, and create a predictable pathway for customers whose system impacts are similar to those of large generators.",
+      "concern": "Procedural consistency and predictability benefit from aligning large-load rules with generator framework.",
+      "bins": [
+        "aq:threshold",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Fervo supports the Commission's focus on ensuring that large-load and hybrid interconnection customers demonstrate commercial readiness before entering and advancing through the interconnection queue. Fervo encourages the Commission to prioritize readiness criteria that mirror the maturity expectations already applied to large generator interconnection customers, including demonstrated site control or contracting milestones.",
+      "concern": "Readiness criteria should mirror generator standards, including site control and contracting milestones.",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Applying a readiness framework to load and hybrid customers can help transmission providers distinguish commercially viable projects, improve queue efficiency, and reduce speculative requests without imposing unnecessary financial barriers.",
+      "concern": "Readiness criteria improve queue efficiency while avoiding excessive financial barriers.",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Fervo agrees that appropriate system-protection requirements may be necessary for hybrid facilities but emphasizes that such requirements should be proportionate to the actual operational characteristics and risks of the resource. Geothermal has stable and predictable operating profiles and does not exhibit fast-changing injection or withdrawal patterns that drive many protection concerns for other technologies.",
+      "concern": "Protection requirements should be proportionate to geothermal's stable operating profile.",
+      "bins": [
+        "aq:protection",
+        "topic:geothermal-stability"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "protection systems for these hybrids can be tailored rather than broadly prescriptive, ensuring reliability without imposing unnecessary or overly burdensome technical mandates",
+      "concern": "Protection systems should be tailored, not standardized across all hybrid types.",
+      "bins": [
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Fervo encourages the Commission to ensure that any enforcement mechanisms or operational limits for unauthorized injections or withdrawals reflect the physical realities of hybrid geothermal operations and do not inadvertently constrain resources that already pose minimal system-protection risk.",
+      "concern": "Enforcement mechanisms must account for geothermal's minimal risk profile.",
+      "bins": [
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Fervo supports the Commission's proposal to expedite interconnection studies for large loads and hybrid facilities that agree to be curtailable or dispatchable, as these operational flexibilities materially reduce system impacts and allow transmission providers to study such projects with greater confidence.",
+      "concern": "Expedited studies supported for curtailable and dispatchable hybrid facilities.",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Geothermal-based hybrid projects are particularly well suited for this approach because they can provide highly predictable, operator-controlled responses that improve system reliability during peak or contingency events.",
+      "concern": "Geothermal hybrids offer predictable responses that improve system reliability.",
+      "bins": [
+        "pr:flex",
+        "topic:geothermal-stability"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "An expedited study process that recognizes the reliability value of curtailable or dispatchable hybrids would help accelerate deployment of clean firm resources while allowing transmission providers to prioritize projects that offer the greatest operational benefit.",
+      "concern": "Expedited studies accelerate clean firm resource deployment when operational benefits are recognized.",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Fervo supports clear cost-allocation rules but emphasizes that any cost-allocation framework must recognize when a project's design meaningfully reduces its system impact.",
+      "concern": "Cost allocation should reflect actual system benefits, not impose standard formulas.",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Hybrid geothermal facilities that \"bring their own power\" can substantially decrease the need for upstream transmission reinforcements by co-locating firm, dispatchable generation with load, often avoiding or minimizing upgrades that a stand-alone load would otherwise require.",
+      "concern": "Hybrid geothermal co-location reduces upstream transmission reinforcement needs.",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Fervo therefore encourages the Commission to ensure that cost responsibility is applied in a way that reflects actual system benefits and not over-assign costs to hybrids that reduce net flows or improve local reliability.",
+      "concern": "Cost responsibility should reflect net system benefits from hybrids.",
+      "bins": [
+        "pr:cost",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Where appropriate, crediting mechanisms should remain available to acknowledge these benefits and maintain fair treatment across different project types.",
+      "concern": "Crediting mechanisms should acknowledge system benefits of hybrids.",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Fervo supports the Commission's effort to establish a clear and orderly transition plan and encourages the Commission to design that transition to recognize the system benefits of projects that co-locate large loads with clean generation.",
+      "concern": "Transition rules should recognize system benefits of co-located load and generation.",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Fervo therefore recommends that generation projects already in the generation interconnection queue, or in late-stage development, be permitted to elect into the new coordinated hybrid study framework where doing so would better reflect these reduced system impacts.",
+      "concern": "Existing queue projects should opt into coordinated hybrid framework to reflect reduced impacts.",
+      "bins": [
+        "aq:hybridrights",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Allowing transmission providers to apply the new modeling assumptions, hybrid treatment rules, and coordinated study processes to existing queue positions, without forcing restudy or loss of queue priority, would ensure that early geothermal hybrid projects can access the benefits of reforms intended for exactly this type of configuration.",
+      "concern": "Existing projects should retain queue priority when electing hybrid framework.",
+      "bins": [
+        "pr:study",
+        "pr:proximate"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:threshold",
+      "name": "20 MW threshold alignment",
+      "stance": "support",
+      "description": "Fervo supports the 20 MW threshold as appropriately tailored and consistent with existing LGIP and LGIA frameworks, ensuring procedural consistency and predictability for large-load and hybrid customers.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Commercial readiness requirements",
+      "stance": "support",
+      "description": "Fervo supports readiness criteria that mirror generator standards, including site control and contracting milestones, to distinguish commercially viable projects and improve queue efficiency without imposing excessive financial barriers.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Proportionate system protection",
+      "stance": "support",
+      "description": "Fervo supports tailored protection requirements that account for geothermal's stable operating profile and minimal system risk, rather than broadly prescriptive mandates that do not reflect geothermal's actual operational characteristics.",
+      "quote_ids": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited study pathway",
+      "stance": "support",
+      "description": "Fervo supports expedited interconnection studies for hybrid facilities that offer operational flexibility (curtailability or dispatchability), as these characteristics reduce system impacts and accelerate deployment of clean firm resources.",
+      "quote_ids": [
+        8,
+        10
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid framework and queue election",
+      "stance": "support",
+      "description": "Fervo supports allowing existing generation projects to elect into the coordinated hybrid study framework without loss of queue priority, enabling early geothermal hybrid projects to benefit from new rules that reflect their reduced system impacts.",
+      "quote_ids": [
+        16,
+        17
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "System impact-based cost allocation",
+      "stance": "support",
+      "description": "Fervo supports cost-allocation rules that recognize when project design reduces system impact, rather than applying standardized costs that do not reflect actual system benefits or reflect net flows.",
+      "quote_ids": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Coordinated study framework",
+      "stance": "support",
+      "description": "Fervo supports coordinated study processes and modeling frameworks that align large-load and hybrid interconnections with generator procedures, creating procedural consistency and enabling existing projects to retain queue benefits.",
+      "quote_ids": [
+        2,
+        3,
+        4,
+        16,
+        17
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Fair cost assignment for hybrids",
+      "stance": "support",
+      "description": "Fervo supports cost allocation and crediting mechanisms that fairly reflect the transmission system benefits provided by hybrid geothermal facilities, avoiding cost over-assignment for projects that reduce net flows or improve local reliability.",
+      "quote_ids": [
+        11,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Generation-load co-location benefits",
+      "stance": "support",
+      "description": "Fervo emphasizes that co-locating firm, dispatchable generation with load substantially reduces transmission reinforcement needs and that transition rules and cost allocation should recognize these system benefits.",
+      "quote_ids": [
+        12,
+        15
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Operational flexibility value",
+      "stance": "support",
+      "description": "Fervo supports recognizing that curtailability and dispatchability materially reduce system impacts; geothermal-based hybrids are particularly well suited to provide predictable, operator-controlled responses that improve system reliability.",
+      "quote_ids": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Local system benefit recognition",
+      "stance": "support",
+      "description": "Fervo supports cost responsibility frameworks that reflect actual local and systemic benefits from hybrids and allow existing projects to benefit from new rules without forced restudy when electing hybrid framework.",
+      "quote_ids": [
+        13,
+        17
+      ]
+    },
+    {
+      "key": "topic:geothermal-stability",
+      "name": "Geothermal operating characteristics",
+      "stance": "neutral",
+      "description": "Fervo describes geothermal as having stable, predictable operating profiles without fast-changing injection or withdrawal patterns, supporting proportionate rather than prescriptive protection and expedited study eligibility.",
+      "quote_ids": [
+        5,
+        9
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "threshold",
+      "deposits",
+      "protection",
+      "expedited",
+      "hybridrights",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
