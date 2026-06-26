@@ -27,7 +27,7 @@
 
   /* stance (reception) */
   --stance-positive: #2f6b3a;
-  --stance-mixed: #8a6d1a;
+  --stance-mixed: #7b6016;
   --stance-negative: #9a3412;
 
   /* provenance tiers */
@@ -266,7 +266,7 @@ a:hover { color: var(--accent-ink); }
 .dir-quote { display: block; font-family: var(--font-serif); font-style: italic; font-size: 13px; color: #3a4753; line-height: 1.35; margin-top: 2px; }
 .reg-cite { display: inline-flex; align-items: baseline; gap: 6px; white-space: nowrap; margin-left: 5px; }
 details.dreg { margin-top: 12px; border-top: 1px solid var(--rule); padding-top: 9px; }
-details.dreg > summary { cursor: pointer; list-style: none; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-ink); }
+details.dreg > summary { cursor: pointer; list-style: none; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-ink); padding: 11px 0; min-height: 44px; display: flex; align-items: center; }
 details.dreg > summary::-webkit-details-marker { display: none; }
 details.dreg > summary::before { content: "▸ "; color: var(--accent); }
 details.dreg[open] > summary::before { content: "▾ "; }
@@ -371,8 +371,10 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-row-date { font-family: var(--font-mono); font-size: 11px; color: var(--accent-ink); flex: none; min-width: 80px; }
 .cm-row-org { font-weight: 700; font-size: 13.5px; color: var(--masthead); }
 .cm-row-type { font-size: 10.5px; color: var(--text-muted); background: var(--surface-2); border-radius: 999px; padding: 1px 9px; }
-.cm-row-link { margin-left: auto; flex: none; font-size: 10.5px; font-weight: 700; text-decoration: none; color: var(--accent); border: 1px solid var(--rule-strong); border-radius: 4px; padding: 1px 7px; }
+.cm-row-link { margin-left: auto; flex: none; font-size: 10.5px; font-weight: 700; text-decoration: none; color: var(--accent); border: 1px solid var(--rule-strong); border-radius: 4px; padding: 3px 8px; }
 .cm-row-link:hover { background: #eef3f9; border-color: var(--accent); color: var(--accent-ink); }
+/* full 44px tap target on touch viewports (kept compact on desktop to preserve list density) */
+@media (max-width: 700px) { .cm-row-link { padding: 10px 12px; min-height: 44px; display: inline-flex; align-items: center; } }
 .cm-row-desc { font-size: 12px; color: #2b3744; line-height: 1.4; margin-top: 4px; }
 .cm-badge { flex: none; font-size: 11px; font-weight: 700; border-radius: 4px; padding: 0 5px; line-height: 1.5; }
 .cm-badge.sum { color: #7a5a12; background: #f6efdb; }
@@ -388,11 +390,14 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-themes.one { grid-template-columns: 1fr; gap: 9px; }
 .cm-bar.prin > span { background: var(--accent-ink); }
 .cm-row-tags { display: flex; align-items: stretch; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
-.cm-tag { font-size: 9.5px; font-weight: 700; border-radius: 3px; padding: 1px 6px; letter-spacing: 0.02em; white-space: nowrap; }
+.cm-tag { font: inherit; font-size: 9.5px; font-weight: 700; border: none; border-radius: 3px; padding: 2px 7px; letter-spacing: 0.02em; white-space: nowrap; cursor: pointer; line-height: 1.5; }
+.cm-tag:hover { filter: brightness(0.94); }
+.cm-tag:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .cm-tag.pr { color: var(--accent-ink); background: #e9f0f8; }
 .cm-tag.rg { color: #5a4a1a; background: #f6efdb; }
 .cm-tagsep { width: 1px; min-height: 13px; background: var(--rule-strong); margin: 0 3px; }
 .cm-tag.aq { color: #2e5d4f; background: #e6f1ec; }
+.cm-empty { background: var(--surface); border: 1px dashed var(--rule-strong); border-radius: 6px; padding: 18px; text-align: center; color: var(--text-muted); font-size: 13.5px; margin-top: 4px; }
 
 /* per-comment audited analysis (expandable on each row) */
 .cm-analysis { margin-top: 8px; border-top: 1px solid var(--rule); }

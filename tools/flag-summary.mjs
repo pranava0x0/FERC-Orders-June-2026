@@ -20,9 +20,13 @@ export function flagDecision(s, prior, chars) {
   const reasons = [];
   const q = s.quotes || [], bins = s.bins || [];
   const pr = new Set((s.lenses && s.lenses.pr) || []);
-  // 1. too few quotes for the body's substance
+  // 1. too few quotes for the body's substance — the expected minimum scales with filing size (a
+  //    3-quote summary of a 100k-char brief is still thin), floored at 3 and capped at 5.
   if (q.length === 0) reasons.push("zero quotes");
-  else if (chars > 8000 && q.length < 3) reasons.push(`only ${q.length} quote(s) on a ${Math.round(chars / 1000)}k body`);
+  else if (chars > 8000) {
+    const minQ = Math.max(3, Math.min(5, Math.ceil(chars / 30000) + 1));
+    if (q.length < minQ) reasons.push(`only ${q.length} quote(s) on a ${Math.round(chars / 1000)}k body (expected >= ${minQ})`);
+  }
   // 2. a substantive filing coded with no position at all
   if (bins.length > 1 && bins.every((b) => b.stance === "neutral")) reasons.push("every bin is neutral");
   // 3. missed the reform-principle dimension entirely (no pr bins at all, but the prior found several)

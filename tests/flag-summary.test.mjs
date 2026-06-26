@@ -16,6 +16,15 @@ test("flags too few quotes for a substantial body", () => {
   assert.equal(flagDecision({ quotes: q(2), bins: [{ stance: "support" }], lenses: { pr: ["cost"] } }, { pr: ["cost"] }, 12000).flagged, true);
 });
 
+test("scales the quote floor with filing size: 3 quotes on a 70k brief is thin", () => {
+  // minQ = max(3, min(5, ceil(70000/30000)+1)) = 4, so 3 quotes flags
+  assert.equal(flagDecision({ quotes: q(3), bins: [{ stance: "support" }], lenses: { pr: ["cost"] } }, { pr: ["cost"] }, 70000).flagged, true);
+});
+
+test("does NOT flag a well-quoted large filing", () => {
+  assert.equal(flagDecision({ quotes: q(6), bins: [{ stance: "support" }, { stance: "oppose" }], lenses: { pr: ["cost", "study"] } }, { pr: ["cost"] }, 70000).flagged, false);
+});
+
 test("flags a substantive filing coded entirely neutral", () => {
   assert.equal(flagDecision({ quotes: q(4), bins: [{ stance: "neutral" }, { stance: "neutral" }], lenses: { pr: ["cost"] } }, {}, 5000).flagged, true);
 });
