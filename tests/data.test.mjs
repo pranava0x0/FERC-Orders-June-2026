@@ -156,6 +156,39 @@ test("commissioner statements: five, with per-order page cites that carry the qu
   }
 });
 
+test("commissioner themed summaries: written quotes are verbatim in the order text", () => {
+  // The expandable per-commissioner read (themes + quotes) must trace to source: every WRITTEN quote
+  // appears verbatim in the OCR'd order text (statements are identical across the six orders — PJM copy
+  // is canonical). Spoken quotes come from the open-meeting auto-caption transcript and are labeled, not
+  // verbatim-checked against the orders. Authored incrementally, so guard only commissioners that have themes.
+  const pjm = readFileSync(join(here, "..", "sources", "text", "orders", "e-7-pjm-el26-67-000.txt"), "utf8");
+  const norm = (s) => String(s)
+    .replace(/---\s*PAGE\s*\d+\s*---/g, " ")
+    .replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, "-")
+    .replace(/\s+/g, " ")
+    .replace(/(\w)-\s(\w)/g, "$1-$2") // rejoin soft hyphens broken across a line ("Commission-\njurisdictional")
+    .toLowerCase().trim();
+  const nsrc = norm(pjm);
+  const themed = D.commissioners.filter((c) => Array.isArray(c.themes) && c.themes.length);
+  assert.ok(themed.length >= 1, "at least one commissioner has an authored themed summary");
+  let writtenChecked = 0;
+  for (const c of themed) {
+    assert.ok(typeof c.summary === "string" && c.summary.length >= 40, `${c.key} has an overall summary`);
+    assert.ok(c.sources && c.sources.written, `${c.key} cites its written source`);
+    for (const th of c.themes) {
+      assert.ok(th.name && Array.isArray(th.quotes) && th.quotes.length >= 1, `${c.key} theme "${th.name}" has quotes`);
+      for (const q of th.quotes) {
+        assert.ok(q.t && (q.src === "written" || q.src === "spoken"), `${c.key} quote has text + src (written|spoken)`);
+        if (q.src === "written") {
+          assert.ok(nsrc.includes(norm(q.t)), `${c.key} written quote not verbatim in order text: "${q.t.slice(0, 60)}…"`);
+          writtenChecked++;
+        }
+      }
+    }
+  }
+  assert.ok(writtenChecked >= 3, `enough written quotes verified (${writtenChecked})`);
+});
+
 test("RM26-4 comment corpus: stats present and stakeholder buckets sum to the comment total", () => {
   const c = D.comments;
   assert.ok(c && c.filings >= 400 && c.total >= 200, "headline comment stats present");

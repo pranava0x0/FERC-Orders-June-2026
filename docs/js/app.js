@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260626l";
+  var ASSET_VER = "20260626m";
   var D = window.FERC_DATA;
   if (!D) { document.getElementById("main").innerHTML = "<p class='noscript'>Data failed to load (js/data.js).</p>"; return; }
 
@@ -61,11 +61,33 @@
 
     var commish = "";
     if (D.commissioners && D.commissioners.length) {
+      // expandable themed read of each statement (themes + verbatim quotes), shown when authored.
+      // Written quotes are verbatim from the order text; spoken quotes are from the open-meeting
+      // auto-caption transcript and labeled as such (machine transcription, may be approximate).
+      var themed = function (c) {
+        if (!c.themes || !c.themes.length) return "";
+        var blocks = c.themes.map(function (th) {
+          var qs = (th.quotes || []).map(function (q) {
+            var sp = q.src === "spoken";
+            return '<li class="commish-q ' + (sp ? "spoken" : "written") + '">“' + esc(q.t) + "”" +
+              (sp ? '<span class="commish-q-src">spoken' + (q.at ? " · " + esc(q.at) : "") + "</span>" : "") + "</li>";
+          }).join("");
+          return '<div class="commish-theme"><h5 class="commish-theme-h">' + esc(th.name) + "</h5>" +
+            (th.desc ? '<p class="commish-theme-d">' + esc(th.desc) + "</p>" : "") +
+            (qs ? '<ul class="commish-qs">' + qs + "</ul>" : "") + "</div>";
+        }).join("");
+        var last = c.name.split(" ").pop();
+        var srcs = c.sources ? '<p class="commish-srcs">Sources: ' + esc(c.sources.written) +
+          (c.sources.spoken ? "; " + esc(c.sources.spoken) : "") + "</p>" : "";
+        return '<details class="commish-full"><summary><span class="commish-full-label">Read ' + esc(last) +
+          "’s themes &amp; quotes</span><span class=\"commish-full-n mono\">" + c.themes.length + " themes</span></summary>" +
+          (c.summary ? '<p class="commish-sum">' + esc(c.summary) + "</p>" : "") + blocks + srcs + "</details>";
+      };
       var cards = D.commissioners.map(function (c) {
         return '<div class="commish"><div class="commish-head"><span class="commish-name">' + esc(c.name) +
           '</span><span class="commish-role">' + esc(c.role) + '</span><span class="commish-tag">' + esc(c.short) + "</span></div>" +
           '<p class="commish-gist">' + esc(c.gist) + "</p>" +
-          '<div class="commish-quote">“…' + esc(c.quote) + '…”</div></div>';
+          '<div class="commish-quote">“…' + esc(c.quote) + '…”</div>' + themed(c) + "</div>";
       }).join("");
       commish = head("What each commissioner emphasized",
         "All five joined every order unanimously; their concurring statements diverge in emphasis. Each statement is quoted from the orders and cited to the exact page of its own order in the Dockets tab.") +
