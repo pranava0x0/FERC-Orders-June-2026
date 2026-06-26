@@ -1,0 +1,75 @@
+{
+  "accession": "20251205-5203",
+  "filer": "COMPETITIVE ENTERPRISE INSTITUTE",
+  "org_type": "think_tank",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5203__COMPETITIVE-ENTERPRISE-INSTITUTE/CEI CRE Reply Comment.txt",
+  "overall_summary": "CEI supports Consumer Regulated Electricity (CRE) as an alternative path for large electricity loads, endorsing the Cato Institute's request that FERC and DOE clarify that CRE utilities are separate from the Bulk Power System. The filer argues CRE provides a timely, orderly, and non-discriminatory parallel option for large loads that cannot be readily served by the existing grid.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "I support Mr. Fisher's request in his comment to enable Consumer Regulated Electricity (CRE). In doing so, this would allow a parallel path to power access for large electricity loads that is timely, orderly, and non-discriminatory.",
+      "concern": "Endorses CRE as a parallel, non-discriminatory path for large load power access",
+      "bins": ["topic:cre-alternative-path", "aq:jurisdiction"]
+    },
+    {
+      "id": 2,
+      "text": "CRE presents an alternative option for those whose electricity needs cannot be readily met by the Bulk Power System or who feel they can better meet their own power needs.",
+      "concern": "CRE serves large loads that the existing grid cannot adequately serve",
+      "bins": ["topic:cre-alternative-path", "aq:jurisdiction"]
+    },
+    {
+      "id": 3,
+      "text": "CRE primarily requires state level policy change to allow companies to work with power suppliers independent of the existing power grid.",
+      "concern": "CRE implementation depends on state-level regulatory change, not federal action",
+      "bins": ["topic:cre-state-policy", "aq:jurisdiction"]
+    },
+    {
+      "id": 4,
+      "text": "regulatory clarity from DOE and FERC would make clear that CRE utilities are separate from the Bulk Power System and should be treated as such.",
+      "concern": "Requests federal clarity that CRE utilities fall outside Bulk Power System jurisdiction",
+      "bins": ["topic:cre-jurisdictional-clarity", "aq:jurisdiction"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "CRE Outside FERC Jurisdiction",
+      "stance": "support",
+      "description": "CEI supports clarifying that Consumer Regulated Electricity utilities are separate from the Bulk Power System and fall outside FERC jurisdiction. The filer endorses the Cato Institute's request that DOE and FERC issue regulatory clarity to this effect, arguing it would create a parallel, non-discriminatory path for large loads.",
+      "quote_ids": [1, 2, 3, 4]
+    },
+    {
+      "key": "topic:cre-alternative-path",
+      "name": "CRE as Large Load Alternative",
+      "stance": "support",
+      "description": "CEI argues that CRE provides a timely and orderly alternative for large electricity loads that cannot be readily served by the existing Bulk Power System. This parallel path would give large load customers an additional option independent of the existing grid.",
+      "quote_ids": [1, 2]
+    },
+    {
+      "key": "topic:cre-state-policy",
+      "name": "State Policy Enables CRE",
+      "stance": "neutral",
+      "description": "The filer notes that enabling CRE primarily requires state-level policy change, specifically amending the enabling legislation of state utility regulators to define CRE and exempt it from regulation. Federal clarification complements but does not replace state action.",
+      "quote_ids": [3]
+    },
+    {
+      "key": "topic:cre-jurisdictional-clarity",
+      "name": "FERC Clarity on CRE Status",
+      "stance": "support",
+      "description": "CEI asks DOE and FERC to issue regulatory clarity confirming that CRE utilities are separate from the Bulk Power System and should be treated accordingly. This federal signal would support the state-level policy changes needed to unlock CRE arrangements.",
+      "quote_ids": [4]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction"],
+    "pr": [],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

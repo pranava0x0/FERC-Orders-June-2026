@@ -1,0 +1,69 @@
+{
+  "accession": "20251205-5292",
+  "filer": "Michigan Attorney General",
+  "org_type": "consumer_advocate",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5292__Michigan-Attorney-General/RM26-4-000 Michigan AG Reply Comments.txt",
+  "overall_summary": "The Michigan Attorney General submits reply comments aligning with NASUCA's positions on jurisdictional concerns and the inappropriateness of expedited rulemaking action. The filing also endorses the multi-state attorneys general coalition's call for FERC to prioritize ratepayer protections throughout this proceeding.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The Attorney General replies to express support for NASUCA's comments as to jurisdictional concerns presented by the ANOPR's arguments and potential impact.",
+      "concern": "Supports NASUCA's jurisdictional objections to the ANOPR",
+      "bins": ["aq:jurisdiction"]
+    },
+    {
+      "id": 2,
+      "text": "The Attorney General further replies to express support for NASUCA's comments as to why expedited action would be inappropriate here.",
+      "concern": "Opposes expedited rulemaking action",
+      "bins": ["aq:expedited"]
+    },
+    {
+      "id": 3,
+      "text": "The Attorney General also replies to express support for the request raised in comment by a group of several states' attorneys general and ratepayer advocates for FERC to \"meaningfully prioritize ratepayer protections during this rulemaking process.\"",
+      "concern": "Calls for FERC to put ratepayer protection at the center of this rulemaking",
+      "bins": ["pr:cost", "aq:protection"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "ANOPR jurisdictional concerns",
+      "stance": "oppose",
+      "description": "The Michigan AG supports NASUCA's view that the ANOPR raises jurisdictional concerns about the scope of DOE's authority and its potential impact on existing FERC frameworks.",
+      "quote_ids": [1]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Against expedited rulemaking",
+      "stance": "oppose",
+      "description": "The Michigan AG endorses NASUCA's position that expedited action on the ANOPR is inappropriate, implying the proceeding warrants more deliberate consideration.",
+      "quote_ids": [2]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Ratepayer protection priority",
+      "stance": "support",
+      "description": "The Michigan AG joins a multi-state coalition urging FERC to make ratepayer protection a central priority throughout this rulemaking, not an afterthought.",
+      "quote_ids": [3]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost protection for ratepayers",
+      "stance": "support",
+      "description": "By endorsing the call to prioritize ratepayer protections, the Michigan AG signals concern that cost allocation rules for large load interconnection must guard against shifting costs to existing customers.",
+      "quote_ids": [3]
+    }
+  ],
+  "lenses": {
+    "aq": ["jurisdiction", "expedited", "protection"],
+    "pr": ["cost"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

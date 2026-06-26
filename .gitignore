@@ -33,3 +33,6 @@ Thumbs.db
 
 # Local preview config (machine-specific)
 .claude/launch.json
+
+# Regenerable scratch: the summarization workflow's per-comment task list
+sources/comments/.worklist.json

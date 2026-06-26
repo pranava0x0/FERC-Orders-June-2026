@@ -1,0 +1,101 @@
+{
+  "accession": "20260316-5144",
+  "filer": "Entergy Services, LLCEntergy New Orleans, LLCEntergy Louisiana, LLC ,Entergy Mississippi, LLC ,Entergy Arkansas, LLC ,Entergy Texas, Inc. ,",
+  "org_type": "transmission_owner",
+  "filed": "03/16/2026",
+  "source_text": "sources/comments/files/20260316-5144__Entergy-Services-LLCEntergy-New-Orleans-LLCEntergy/Entergy Supplemental Comments, Docket No RM26-4.txt",
+  "overall_summary": "Entergy Services argues that existing state retail regulatory frameworks in its operating territories are already working well, pointing to $5 billion in projected customer savings from data center agreements and a series of recent state statutes and commission actions. It contends that evidence does not support federal Commission action in Entergy regions, and asks that any rule avoid interfering with those successful state processes.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the existing retail regulatory frameworks in the Entergy Operating Companies' service territories include efficient rules for attracting and interconnecting large loads, and which provide for significant input from retail regulators.",
+      "concern": "Existing state frameworks are already adequate for large load interconnection",
+      "bins": ["pr:colo", "topic:state-retail-regulation"]
+    },
+    {
+      "id": 2,
+      "text": "the Louisiana Public Service Commission (\"LPSC\") adopted non-binding guidelines for the interconnection of large loads that are intended to ensure that the interests of all customers are protected and balanced.",
+      "concern": "LPSC issued customer-protection guidelines for large load interconnection",
+      "bins": ["pr:study", "topic:state-retail-regulation"]
+    },
+    {
+      "id": 3,
+      "text": "Act 373 is designed to help Entergy Arkansas and other utilities attract large commercial customers.  The statute allows Entergy Arkansas to build the infrastructure needed to support new large load growth, while keeping power affordable and reliable.",
+      "concern": "Arkansas legislation enables large load infrastructure while protecting affordability",
+      "bins": ["pr:cost", "topic:state-retail-regulation"]
+    },
+    {
+      "id": 4,
+      "text": "Entergy Corporation announced that approximately $5 billion in total savings will accrue to 2.3 million customers in Arkansas, Louisiana, and Mississippi because of data center customer agreements in those states.",
+      "concern": "Data center agreements produce large customer savings in Entergy territories",
+      "bins": ["pr:cost", "topic:customer-benefit"]
+    },
+    {
+      "id": 5,
+      "text": "In light of the successes in Entergy Operating Company regions, evidence does not support Commission action in those regions.",
+      "concern": "Filer opposes federal rulemaking action in its service territory given demonstrated state success",
+      "bins": ["topic:state-retail-regulation", "topic:oppose-federal-action"]
+    },
+    {
+      "id": 6,
+      "text": "If the Commission nonetheless does take any action, it should recognize that the Entergy Operating Companies' respective public service commissions provided the collaboration, oversight, and direction needed to achieve the successes discussed above.  It should take care to avoid any rule that could interfere with successful existing state processes.",
+      "concern": "Any federal rule should preserve, not displace, successful state regulatory processes",
+      "bins": ["pr:colo", "topic:state-retail-regulation", "topic:oppose-federal-action"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "State study and oversight",
+      "stance": "support",
+      "description": "Entergy points to the LPSC's new guidelines as evidence that state commissions are already conducting the oversight and review needed to protect customers during large load interconnection.",
+      "quote_ids": [2]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Customer cost protection",
+      "stance": "support",
+      "description": "Entergy highlights $5 billion in projected customer savings from data center agreements and Arkansas legislation requiring that large load growth keep power affordable, arguing that existing state cost-allocation mechanisms protect retail customers without federal intervention.",
+      "quote_ids": [3, 4]
+    },
+    {
+      "key": "pr:colo",
+      "name": "State co-location and siting rules",
+      "stance": "support",
+      "description": "Entergy argues that its state retail regulatory frameworks already include efficient rules for attracting and interconnecting large loads, and asks that any federal action avoid displacing that collaborative state process.",
+      "quote_ids": [1, 6]
+    },
+    {
+      "key": "topic:state-retail-regulation",
+      "name": "State regulation is sufficient",
+      "stance": "oppose",
+      "description": "The central argument of the filing is that state commissions in Entergy territories have enacted statutes and guidelines that demonstrate federal Commission action is not needed. Entergy asks that any rule preserve rather than override those state processes.",
+      "quote_ids": [1, 2, 3, 5, 6]
+    },
+    {
+      "key": "topic:customer-benefit",
+      "name": "Customer savings from large loads",
+      "stance": "neutral",
+      "description": "Entergy cites the $5 billion in projected customer savings from data center agreements as evidence that its existing framework for attracting large loads already delivers benefits to retail customers.",
+      "quote_ids": [4]
+    },
+    {
+      "key": "topic:oppose-federal-action",
+      "name": "Oppose federal rulemaking here",
+      "stance": "oppose",
+      "description": "Entergy explicitly states that evidence does not support Commission action in its regions and conditions any participation on the Commission's avoiding rules that interfere with existing state successes.",
+      "quote_ids": [5, 6]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": ["study", "cost", "colo"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
