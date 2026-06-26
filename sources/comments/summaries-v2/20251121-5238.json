@@ -1,0 +1,170 @@
+{
+  "accession": "20251121-5238",
+  "filer": "FuelCell Energy, Inc.",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5238__FuelCell-Energy-Inc/FCE ANOPR Comments (11.21.2025).txt",
+  "overall_summary": "FuelCell Energy supports FERC's proposed rulemaking on large load interconnections but requests that the rules address the unique characteristics of hybrid facilities (combined generation and load). The filing argues that hybrid facilities need separate interconnection standards, full operational scope studies rather than net-only assessments, and equivalent option-to-build rights as generator projects.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "FuelCell Energy generally supports the principles set forth in the Proposed ANOPR, but urges the Commission to consider the unique circumstances presented by hybrid facilities consisting of generation resources co-located with, and intended to support, large loads",
+      "concern": "Support with caveat: hybrid facilities need special consideration",
+      "bins": [
+        "aq:hybridrights",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Adopting a separate interconnection standard for hybrid facilities that reflects each facility's actual operational characteristics and impact on the transmission grid, instead of applying the thresholds established for generation or load facilities",
+      "concern": "Request separate interconnection standard for hybrids",
+      "bins": [
+        "aq:hybridrights",
+        "aq:threshold",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Developing a framework that ensures that interconnection studies fully reflect each hybrid facility's operational scope as opposed to a facility's net injections or withdrawals",
+      "concern": "Studies should cover full operational scope, not just net position",
+      "bins": [
+        "aq:hybridrights",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "a separate standard is necessary for hybrid facilities that combine significant generation and load components. This distinction is critical because the generation component of a hybrid facility may exceed 20 MW and serve an associated load of comparable or greater magnitude, while the net output of the facility could appear to fall below 20 MW",
+      "concern": "Hybrid net output can mask large generation and load components",
+      "bins": [
+        "aq:threshold",
+        "aq:hybridrights",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "A facility with a net 10 MW output could, in practice, consist of a 700 MW generator paired with a 690 MW load. Such cases demonstrate the need for a distinct process that enables Transmission Owners and Transmission Providers to properly assess the full system impacts of hybrid facilities",
+      "concern": "Example showing need for distinct hybrid assessment process",
+      "bins": [
+        "aq:hybridrights",
+        "pr:study",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "studies of hybrid facilities reflect their full operational scope, rather than only their net injections or withdrawals",
+      "concern": "Oppose net-only study methodology for hybrids",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Commission should ensure that the Transmission Owner or Transmission Provider study and account for the full amount of load and MWs of generation that make up a hybrid facility",
+      "concern": "Full study of both load and generation components required",
+      "bins": [
+        "pr:study",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "if the Commission decides to allow hybrid facilities to be studied at the net amount, it should give this as an option rather than a mandatory requirement",
+      "concern": "Net-only study should be optional, not required",
+      "bins": [
+        "aq:hybridrights",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "load interconnection customer is not the Transmission Owner or Transmission Provider, the customer should be afforded the same or equivalent option to build as is currently available to generator interconnection customers",
+      "concern": "Load customers need equivalent option-to-build rights",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "hybrid facilities should have the same right to exercise an option to build as traditional generation-only projects. Without such clarity, hybrid developers could face unnecessary uncertainty or delays, which would in turn discourage investment",
+      "concern": "Hybrid projects need explicit option-to-build parity",
+      "bins": [
+        "aq:hybridrights",
+        "pr:proximate"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid rights parity in interconnection",
+      "stance": "support",
+      "description": "FuelCell Energy requests that hybrid facilities receive equivalent interconnection rights and treatment as generation-only projects, including explicit option-to-build authority and clear definition of how hybrid configurations are assessed under any new threshold.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        8,
+        10
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Threshold measurement for hybrid facilities",
+      "stance": "support",
+      "description": "The filing argues that if a 20 MW threshold is adopted, it must clearly define how that threshold is measured for hybrids. Measuring at the point of interconnection could mask the true system impact when generation and load offset one another.",
+      "quote_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Full operational scope studies for hybrids",
+      "stance": "oppose",
+      "description": "FuelCell Energy opposes studying hybrid facilities based only on net injections and withdrawals. The filing argues that studies must reflect the full operational scope of both generation and load components to enable accurate transmission system impact assessment and prevent future inefficiencies.",
+      "quote_ids": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Option to build and location flexibility for hybrids",
+      "stance": "support",
+      "description": "FuelCell Energy supports giving load customers and hybrid projects the option to build when they are not the transmission owner, ensuring that hybrid facilities can move forward on timelines comparable to other resource types and are not disadvantaged by co-location.",
+      "quote_ids": [
+        5,
+        7,
+        9,
+        10
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "hybridrights",
+      "threshold"
+    ],
+    "pr": [
+      "study",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
