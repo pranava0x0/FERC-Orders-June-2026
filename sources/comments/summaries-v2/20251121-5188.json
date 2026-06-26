@@ -1,0 +1,141 @@
+{
+  "accession": "20251121-5188",
+  "filer": "Eversource Energy Service Company",
+  "org_type": "Public utility holding company",
+  "filed": "11/21/2025",
+  "source_text": "/Users/pranava/Projects/FERC Show Cause Orders/sources/comments/files/20251121-5188__Eversource-Energy-Service-Company/RM26-4 ANOPR Eversource Energy Comments.txt",
+  "overall_summary": "Eversource supports establishing rules to clarify the large load interconnection process but opposes overly prescriptive requirements. The company advocates for regulatory flexibility to accommodate varying load types and service arrangements, preservation of existing retail transmission arrangements for large loads, and optional participation in generator cluster studies rather than mandatory enrollment.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "an overly prescriptive and restrictive final rule arising out of this proceeding could result in more harm than the status quo to prospective large load customers, interconnecting transmission owners, and the public generally",
+      "concern": "Overly prescriptive rules risk harming large load interconnection process",
+      "bins": ["pr:flex"]
+    },
+    {
+      "id": 2,
+      "text": "Eversource recommends that the focus of any final rule arising out of this proceeding focus on improving the efficiency of the large-load interconnection process without being overly prescriptive",
+      "concern": "Prioritize efficiency improvements over rigid standardization",
+      "bins": ["pr:flex"]
+    },
+    {
+      "id": 3,
+      "text": "implementing a strict, one-size-fits-all interconnection process will impede rather than facilitate the interconnection of these large loads",
+      "concern": "One-size-fits-all approach will obstruct large load interconnection",
+      "bins": ["pr:flex"]
+    },
+    {
+      "id": 4,
+      "text": "Given the extreme complexities and variability of the types of loads and their desired service arrangements, the Commission should also ensure that any final rule provides sufficient flexibility to address the different needs of large-load customers",
+      "concern": "Final rules must accommodate diverse load types and service needs",
+      "bins": ["pr:flex"]
+    },
+    {
+      "id": 5,
+      "text": "Eversource appreciates that the ANOPR appears not to disturb, and should not disturb, certain existing beneficial transmission arrangements between utilities and their retail customers. These arrangements should also remain available to prospective large-load customers as they are often faster and more flexible than traditional federal interconnection processes",
+      "concern": "Preserve retail transmission arrangements for large loads",
+      "bins": ["pr:flex", "topic:retail-transmission"]
+    },
+    {
+      "id": 6,
+      "text": "In Eversource's experience, prospective large loads overwhelmingly prefer the retail construct",
+      "concern": "Large load customers favor retail service arrangements",
+      "bins": ["topic:retail-transmission"]
+    },
+    {
+      "id": 7,
+      "text": "the retail arrangement for transmission-interconnected electric service provides significant advantages to the customer as it allows the customer to function as an end-use, state-jurisdictional customer for the sale of electricity while simultaneously allowing the transmission provider to deploy its own expertise in the complex federal interconnection space",
+      "concern": "Retail arrangements combine state jurisdiction with transmission expertise",
+      "bins": ["topic:retail-transmission"]
+    },
+    {
+      "id": 8,
+      "text": "state processes must necessarily account for regional differences and be more responsive to local needs, including potentially the flexibility required by large loads",
+      "concern": "State processes better accommodate regional and local needs",
+      "bins": ["pr:flex", "topic:retail-transmission"]
+    },
+    {
+      "id": 9,
+      "text": "Retail processes can in some cases also result in the timelier interconnection of loads relative to federal-jurisdictional process, primarily due to the fixed nature of cluster study processes required by Order No. 2023",
+      "concern": "Retail pathways enable faster interconnection than federal cluster studies",
+      "bins": ["topic:retail-transmission"]
+    },
+    {
+      "id": 10,
+      "text": "the Commission should preserve both existing and prospective retail interconnections at transmission voltages in order to efficiently interconnect large loads to the system",
+      "concern": "Preserve retail option for transmission-voltage loads",
+      "bins": ["topic:retail-transmission"]
+    },
+    {
+      "id": 11,
+      "text": "While combined studies could result in enhanced efficiencies, the strict and often lengthy study timelines for generator interconnection may not be practically feasible with the tight timelines for the interconnection of large loads, which can either be subject to state-mandated service dates (such as through electrification) or whose viability is based on rapid development and construction (such as data centers)",
+      "concern": "Generator cluster timelines conflict with load project urgency",
+      "bins": ["topic:load-cluster-study"]
+    },
+    {
+      "id": 12,
+      "text": "to the extent any final rule arising out of this proceeding contemplates including qualifying loads in the Order No. 2023-mandated cluster study process, such inclusion should be optional",
+      "concern": "Large load cluster study participation must be optional not mandatory",
+      "bins": ["topic:load-cluster-study"]
+    },
+    {
+      "id": 13,
+      "text": "This will allow loads without major time pressures to reap the benefits and efficiencies of the cluster study process (such as reduced network upgrade costs) while not threatening the viability of other load projects for whom the cluster study process and timeline present insurmountable barriers to entry",
+      "concern": "Optional cluster participation balances efficiency gains and project viability",
+      "bins": ["topic:load-cluster-study"]
+    },
+    {
+      "id": 14,
+      "text": "the Commission should consider not including loads in that process at all due to the time pressures described above",
+      "concern": "Consider excluding loads entirely from generator cluster study process",
+      "bins": ["topic:load-cluster-study"]
+    },
+    {
+      "id": 15,
+      "text": "In Eversource's experience, none of its current or prospective large load customers have expressed any interest in mandatory/dispatchable curtailment",
+      "concern": "Large load customers lack interest in mandatory curtailment requirements",
+      "bins": ["topic:dispatchability"]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Regulatory flexibility for diverse load types",
+      "stance": "support",
+      "description": "Eversource supports final rules that prioritize efficiency and flexibility rather than prescriptive uniformity. Load characteristics vary widely by purpose, use, location, and service needs, and rigid one-size-fits-all approaches will obstruct interconnection. Any rule must accommodate different load types, hybrid arrangements, and regional variations.",
+      "quote_ids": [1, 2, 3, 4, 5, 8]
+    },
+    {
+      "key": "topic:retail-transmission",
+      "name": "Preserve retail transmission service pathways",
+      "stance": "support",
+      "description": "Eversource opposes any changes that would eliminate state-jurisdictional retail arrangements for transmission-interconnected loads. Large load customers strongly prefer retail service, which combines state regulatory simplicity with transmission provider expertise, enables faster interconnection than federal cluster processes, and accounts for regional and local needs. Both existing and prospective retail interconnections should remain available.",
+      "quote_ids": [5, 6, 7, 8, 9, 10]
+    },
+    {
+      "key": "topic:load-cluster-study",
+      "name": "Optional rather than mandatory cluster study participation for loads",
+      "stance": "oppose",
+      "description": "Eversource opposes mandatory participation of large loads in generator cluster study processes. Generator cluster study timelines are incompatible with the urgent service dates and rapid development cycles of large load projects like electrification and data centers. Participation should remain optional, and the Commission should consider excluding loads from the cluster process entirely to preserve project viability.",
+      "quote_ids": [11, 12, 13, 14]
+    },
+    {
+      "key": "topic:dispatchability",
+      "name": "Limited demand for mandatory curtailment among load customers",
+      "stance": "neutral",
+      "description": "Eversource reports that none of its current or prospective large load customers have expressed interest in mandatory or dispatchable curtailment arrangements. This finding suggests customer demand may not support regulatory requirements for curtailment functionality.",
+      "quote_ids": [15]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": ["flex"],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
