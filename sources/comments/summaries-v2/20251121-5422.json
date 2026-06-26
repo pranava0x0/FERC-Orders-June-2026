@@ -1,0 +1,287 @@
+{
+  "accession": "20251121-5422",
+  "filer": "GERONIMO POWER, LLC",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5422__GERONIMO-POWER-LLC/Geronimo Power - ANOPR Comments.txt",
+  "overall_summary": "Geronimo Power, an independent power producer, supports the ANOPR framework and urges FERC to move quickly to a final rule, but argues the process must go further than financial readiness screens to impose objective viability criteria (capacity backing, size threshold, site control, and permitting) that prevent speculative queue inflation. The filing also insists that cost assignments for both transmission and ancillary services must track each large load's actual grid impact, consistent with the cost causation principle, and must not charge loads for services tied to generation they have co-located.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Geronimo Power urges the Commission to promptly move forward with a notice of proposed rulemaking and final rule in this proceeding that builds on many of the principles articulated in the ANOPR to ensure large loads may interconnect to the grid in an efficient, timely, and non-discriminatory manner that will enable the expedited development of industries that are key to America's economic competitiveness while simultaneously mitigating impacts to the grid and its existing customers.",
+      "concern": "Filer calls for a swift NOPR and final rule grounded in the ANOPR principles",
+      "bins": [
+        "pr:study",
+        "topic:expedited-rulemaking"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "large loads seeking to interconnect to the grid face ad hoc and opaque study processes—to the extent that a formal process exists at all.",
+      "concern": "Current large-load study processes are informal and non-transparent",
+      "bins": [
+        "pr:study",
+        "topic:process-transparency"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "A process governing how large loads interconnect to the interstate transmission system falls squarely within the Commission's jurisdictional mandate.",
+      "concern": "Filer asserts FERC clearly has jurisdiction over large-load transmission interconnection",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Such arguments, however, are wholly unsupported by the plain language of the FPA and decades of precedent.",
+      "concern": "Filer dismisses state-jurisdiction challenges as legally unfounded",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The dramatic increase in load growth driven predominantly by new large loads seeking to interconnect is unquestionably directly affecting wholesale rates.",
+      "concern": "Large-load growth is directly impacting wholesale rates, supporting FERC jurisdiction",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:wholesale-rate-impact"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "There is no reason to believe that exclusively relying on study deposits, withdrawal penalties, or other financial indications of readiness will be sufficient to deter the submission of requests by speculative or immature projects.",
+      "concern": "Financial screens alone will not stop speculative queue entries by well-capitalized loads",
+      "bins": [
+        "aq:deposits",
+        "aq:threshold",
+        "topic:queue-viability"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Geronimo Power believes that it is critical that any large load interconnection process adopted by the Commission incorporate objective and technology neutral criteria to ensure that large loads are prioritized based on their maturity and ability to come online in the near term.",
+      "concern": "Filer calls for objective, technology-neutral viability criteria to prioritize near-term loads",
+      "bins": [
+        "aq:threshold",
+        "topic:queue-viability"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The Commission can avoid repeating the mistakes that led to unmanageable generator interconnection queues by requiring that large loads demonstrate that their load is supported by a binding commitment of capacity sufficient to serve a significant proportion of their needs given the specified operational characteristics of the load.",
+      "concern": "Capacity-backing requirement would prevent speculative queue inflation",
+      "bins": [
+        "aq:deposits",
+        "pr:study",
+        "topic:queue-viability"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Geronimo Power recommends the Commission apply a threshold that is set at a reasonable level that aligns with the size of the large loads that are driving this unprecedented load growth (e.g., 100 MW and above).",
+      "concern": "Filer recommends a 100 MW minimum threshold to focus the process on true large loads",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "the Commission should require large loads to demonstrate that they have applied for material permits necessary for the construction of the large load's facility.",
+      "concern": "Permit applications should be required as a viability gate for queue entry",
+      "bins": [
+        "aq:threshold",
+        "topic:queue-viability"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Geronimo Power fully agrees with this principle because assessing large loads transmission service charges based upon their actual withdrawal rights appropriately limits the cost responsibility of such customers to the costs necessary to provide them with the service requested.",
+      "concern": "Filer backs charging loads only on their actual withdrawal rights, not gross demand",
+      "bins": [
+        "pr:cost",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The cost causation principle requires that 'all approved rates reflect to some degree the costs actually caused by the customer who must pay them' and prohibits the Commission from approving a rate scheme that will result in one group of customers being required to subsidize the provision of service to a different group of customers.",
+      "concern": "Cost causation principle prohibits charging loads for costs they do not cause",
+      "bins": [
+        "pr:cost",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Assessing large loads based on their net impact is not only required by the cost causation principle, it will also accelerate the ability of large loads to obtain power on a timely basis.",
+      "concern": "Net-impact billing both satisfies cost causation law and speeds project timelines",
+      "bins": [
+        "pr:cost",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "principle twelve of the ANOPR states that 'utilities serving large loads, including those at hybrid facilities, should be responsible for ancillary services based on peak demand, without consideration of any co-located generation.'",
+      "concern": "Filer flags ANOPR principle twelve as potentially inconsistent with cost causation for co-located resources",
+      "bins": [
+        "pr:cost",
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "A better approach for the Commission to take is to treat ancillary service costs in the same manner as it has proposed to treat transmission service charges: large loads pay for ancillary services based on their actual use of, and reliance on, the service at issue.",
+      "concern": "Ancillary service charges should mirror the net-impact approach used for transmission charges",
+      "bins": [
+        "pr:cost",
+        "pr:colo",
+        "aq:hybridrights"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC authority over load interconnection",
+      "stance": "support",
+      "description": "Geronimo Power argues that FERC has clear jurisdiction over large-load transmission interconnection under the FPA, that state-jurisdiction objections are legally unsupported, and that large-load growth directly affects wholesale rates in a way that confirms the Commission's authority.",
+      "quote_ids": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "100 MW minimum threshold",
+      "stance": "support",
+      "description": "The filing recommends setting the large-load threshold at 100 MW or above to focus the process on the loads actually driving demand growth. Objective viability criteria including site control and permit applications should serve as gating or prioritization requirements.",
+      "quote_ids": [
+        6,
+        7,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Financial screens insufficient alone",
+      "stance": "mixed",
+      "description": "Geronimo Power contends that study deposits and withdrawal penalties, while useful, will not deter speculative submissions by well-capitalized data center developers and must be supplemented by substantive viability criteria such as a binding capacity commitment.",
+      "quote_ids": [
+        6,
+        8
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Withdrawal-right basis for charges",
+      "stance": "support",
+      "description": "The filer supports structuring both transmission and ancillary service charges around a hybrid facility's actual withdrawal rights rather than gross demand, arguing that charging for service a load has contractually foregone violates cost causation.",
+      "quote_ids": [
+        11,
+        12,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Coordinated load-generation study",
+      "stance": "support",
+      "description": "Geronimo Power supports studying large loads together with associated generation to reveal net grid impact and reduce unnecessary network upgrades, and calls for a formal, transparent process to replace the current ad hoc approach.",
+      "quote_ids": [
+        1,
+        2,
+        8
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Net-impact cost assignment",
+      "stance": "support",
+      "description": "The filing strongly backs assigning costs based on each load's net grid impact, consistent with the cost causation principle, and opposes assessments that charge co-located hybrid facilities for transmission or ancillary services beyond their actual withdrawal commitments.",
+      "quote_ids": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location reduces grid cost burden",
+      "stance": "support",
+      "description": "Geronimo Power argues that net-impact billing creates an incentive for large loads to pursue co-location, which minimizes reliance on the grid and protects captive ratepayers. The ANOPR's ancillary service principle should be revised to credit co-located generation.",
+      "quote_ids": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "topic:expedited-rulemaking",
+      "name": "Prompt NOPR and final rule",
+      "stance": "support",
+      "description": "The filer urges FERC to move promptly from the ANOPR to a notice of proposed rulemaking and then a final rule, framing speed as essential to U.S. competitiveness in AI and industrial manufacturing.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:process-transparency",
+      "name": "Formal transparent study process",
+      "stance": "support",
+      "description": "Geronimo Power identifies the absence of a formal, transparent study process for large-load interconnection as a core deficiency that the Commission's rulemaking should remedy.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "topic:queue-viability",
+      "name": "Viability criteria prevent queue bloat",
+      "stance": "support",
+      "description": "Drawing on lessons from generator interconnection queue dysfunction, the filing advocates for objective viability screens (capacity backing, zoned site control, permit applications) that go beyond financial deposits to keep speculative requests out of the large-load queue.",
+      "quote_ids": [
+        6,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "key": "topic:wholesale-rate-impact",
+      "name": "Large loads affect wholesale rates",
+      "stance": "neutral",
+      "description": "The filer cites PJM market monitor data showing that data center load growth has caused billions of dollars of capacity market revenue increases, establishing that large-load interconnection directly affects wholesale rates and thus falls within FERC's authority.",
+      "quote_ids": [
+        5
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "deposits",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

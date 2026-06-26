@@ -1,0 +1,288 @@
+{
+  "accession": "20251121-5503",
+  "filer": "California Public Utilities Commission",
+  "org_type": "state_commission",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5503__California-Public-Utilities-Commission/FERC Docket No. RM26-4-000 Initial Comments of the CPUC.txt",
+  "overall_summary": "The CPUC opposes federal jurisdiction over large load interconnection, arguing it is a retail transaction under state authority and that FERC's ANOPR encroaches on state jurisdiction in violation of the FPA. While sharing the goal of prompt and efficient energization, the CPUC contends states like California are already developing the needed rules and that federal intervention would be duplicative. If FERC proceeds anyway, the CPUC urges close coordination with states, deference to ongoing state proceedings, and ratepayer protections on upgrade cost recovery.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the CPUC objects to the Secretary of Energy's proposition that the proposed rules do not venture into state jurisdiction.",
+      "concern": "CPUC disputes DOE's claim that the ANOPR avoids state jurisdiction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Large load interconnection is part of retail service and is not part of the transmission system operation or a purchase of wholesale electricity.",
+      "concern": "Large load interconnection is a retail transaction, not a wholesale one, placing it under state authority",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "This analogy between generator and large-load interconnections is too simplistic and does not account for fundamental jurisdictional and technical distinctions established under the FPA.",
+      "concern": "Generator-load interconnection analogy is flawed and ignores key legal and technical differences",
+      "bins": [
+        "aq:jurisdiction",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "States, including California, are already underway in addressing the concerns the Department of Energy identifies, making broad federal intervention duplicative and counter to the goal of timely energization of load.",
+      "concern": "State actions already underway make broad federal rules redundant",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The CPUC is concerned that a threshold as low as 20 MW for large load energization will ensnare small commercial and industrial load in a large load energization process, which is not the intended goal of the ANOPR.",
+      "concern": "20 MW threshold is too low and would sweep in small commercial loads",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "while reiterating that there is no appropriate threshold for federal oversight of retail large load energizations, if a threshold is established, the CPUC believes that it should be far greater than 20 MW.",
+      "concern": "CPUC rejects federal threshold but says if one is set it should be well above 20 MW",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "adding this new layer of study processes would impact CAISO's recent interconnection process enhancements, approved by FERC last year, and their interaction with the CAISO Transmission Planning Process (TPP).",
+      "concern": "Federal joint-study requirement would disrupt CAISO's recently approved interconnection process enhancements",
+      "bins": [
+        "aq:jointstudy",
+        "rg:caiso"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The CPUC supports ratepayer protections and efforts to mitigate risks associated with stranded or mis-sized transmission assets.",
+      "concern": "CPUC supports deposit and penalty mechanisms to protect ratepayers from stranded assets",
+      "bins": [
+        "aq:deposits",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The CPUC supports studying hybrid facilities based on requested injection and requested withdrawal rights, respectively.  This is distinct from studying the net of withdrawal plus injection.",
+      "concern": "Hybrid facilities should be studied on gross injection and withdrawal, not net, to capture peak-condition risks",
+      "bins": [
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "For any cost offsets (i.e., reimbursements to large load customers) for transmission network upgrades, it is imperative that they occur over a period sufficient to ensure that risks to other ratepayers associated with the failure of generation to timely materialize, and costs borne while load ramps up, are fully mitigated.",
+      "concern": "Reimbursement periods for upgrade costs must be long enough to protect other ratepayers",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the five years over which payback to generators occurs is likely too short a period to ensure that load will develop and be sustained.  Any reimbursement to load customers for their upfront investment in load energization upgrade costs would likely need to occur over longer than five years to ensure protection of other ratepayers.",
+      "concern": "Five-year reimbursement period copied from generator rules is too short for load customers",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "the benefits of curtailment and load shifting commitments can be realized at the state level without federal oversight of retail large load energizations.",
+      "concern": "Flexible interconnection benefits can be achieved through existing state mechanisms",
+      "bins": [
+        "pr:flex",
+        "aq:expedited",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the Commission should defer to rulemakings already underway by state regulators and, further, provide the opportunity for states to implement rules and regulations in the future to ensure the timely and cost-effective energization of large load and hybrid facilities",
+      "concern": "FERC should defer to and not preempt ongoing state proceedings on large load energization",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "in California's experience, studies looking out only three years would likely be insufficient to fully assess system conditions, load growth, and potential reliability impacts.",
+      "concern": "Three-year horizon in SSR/RMR studies is too short for California conditions",
+      "bins": [
+        "aq:protection",
+        "rg:caiso"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "oversight of interconnecting large retail load customers to the transmission grid should remain under the domain of the states.",
+      "concern": "State authority over large retail load interconnection must be preserved",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "State Jurisdiction Over Retail Load",
+      "stance": "oppose",
+      "description": "The CPUC argues that large load interconnection is a retail transaction governed by state authority under the FPA, not a wholesale transmission matter for FERC. FERC's claimed analogies to generator interconnection and wholesale rate authority do not justify jurisdiction over retail end-use customers. States have existing proceedings and expertise and should retain control.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        13,
+        15
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "20 MW Threshold Too Low",
+      "stance": "oppose",
+      "description": "The CPUC rejects any federal threshold over retail load but argues that if one is set it must be far above 20 MW, which would sweep in small commercial and industrial loads not intended to be covered. The 20 MW figure appears borrowed from generator interconnection rather than actual data center load profiles in California.",
+      "quote_ids": [
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Study Would Disrupt CAISO",
+      "stance": "oppose",
+      "description": "Requiring large load studies to be integrated with generation interconnection would disrupt CAISO's recently FERC-approved interconnection process enhancements, including the load-serving entity scoring mechanism that prioritizes generation and storage projects. This could delay procurement needed for state reliability and clean energy compliance.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Support for Deposit and Penalty Guardrails",
+      "stance": "support",
+      "description": "The CPUC supports standardized study deposits, readiness requirements, and withdrawal penalties to protect ratepayers from stranded or mis-sized transmission assets. California is already developing similar mechanisms through its Rule 30 and CAISO proceedings.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Gross Not Net Hybrid Study",
+      "stance": "support",
+      "description": "The CPUC supports studying hybrid facilities based on gross injection and withdrawal rights separately, not the net of the two. Studying only the net would miss scenarios where a forced outage of either the load or generation places the full gross demand or injection on the system simultaneously.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Longer Reimbursement Period for Load",
+      "stance": "mixed",
+      "description": "The CPUC supports ratepayer protection in upgrade cost recovery but argues that the five-year generator reimbursement period is too short for load customers. Because load may ramp more slowly and is not backed by resource adequacy obligations, a longer payback period is needed to avoid stranded investment risk for ratepayers.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "State Can Deliver Flex Benefits",
+      "stance": "oppose",
+      "description": "The CPUC argues that the efficiency benefits of expediting curtailable and dispatchable loads can be achieved through existing state tools, including the CPUC-CAISO-CEC memorandum of understanding and California's dynamic retail rate proceedings, without federal oversight.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Three-Year Study Horizon Insufficient",
+      "stance": "oppose",
+      "description": "Based on California's experience, the proposed three-year forward look in reliability studies for co-located generation is too short to capture load growth and system condition impacts relevant to reliability.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Ratepayer Cost Allocation at State Level",
+      "stance": "mixed",
+      "description": "The CPUC supports cost allocation principles commensurate with benefits and opposes any federal rule that would bypass state-level decisions on upgrade cost recovery, crediting periods, and rate design. Reimbursement periods for load customers should be longer than the five years used for generators.",
+      "quote_ids": [
+        8,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Load Flexibility Through State Constructs",
+      "stance": "oppose",
+      "description": "The CPUC contends that commitments by large loads to curtail or shift can be integrated into transmission and resource adequacy planning through existing state constructs, making a new federal framework for expediting flexible loads unnecessary.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "rg:caiso",
+      "name": "CAISO Process Disruption Risk",
+      "stance": "oppose",
+      "description": "Federal study and prioritization requirements would conflict with CAISO's recently approved interconnection process enhancements and the three-year study horizon in the ANOPR is insufficient for California system conditions.",
+      "quote_ids": [
+        7,
+        14
+      ]
+    },
+    {
+      "key": "topic:cooperative-federalism",
+      "name": "Cooperative Federalism Over Preemption",
+      "stance": "oppose",
+      "description": "The CPUC urges FERC to honor the cooperative federalism structure of the FPA by deferring to state proceedings already underway and coordinating with states rather than issuing rules that preempt or duplicate state action. At minimum, any final rule should allow states maximum flexibility to address local conditions.",
+      "quote_ids": [
+        4,
+        12,
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "upgradecost",
+      "expedited",
+      "protection"
+    ],
+    "pr": [
+      "cost",
+      "flex"
+    ],
+    "rg": [
+      "caiso"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

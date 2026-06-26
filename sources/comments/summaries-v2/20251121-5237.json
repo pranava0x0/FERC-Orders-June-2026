@@ -1,0 +1,314 @@
+{
+  "accession": "20251121-5237",
+  "filer": "Duke Energy Corporation",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5237__Duke-Energy-Corporation/FINAL Duke Energy RM26-4 LL ANOPR Comments.txt",
+  "overall_summary": "Duke Energy, a large vertically integrated transmission owner operating in RTO and non-RTO regions, argues that FERC should limit any new large load interconnection rules to customers taking unbundled transmission service, leaving existing state-jurisdictional bundled retail processes intact. It recommends a 300 MW threshold (minimum 100 MW) tied to NERC-identified reliability characteristics, a refundable up-front funding model for network upgrade costs rather than 100 percent direct assignment, and narrow hybrid facility definitions requiring load and generation behind a common point of interconnection.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "To the extent FERC can identify specific and concrete problems within its statutory authority, FERC should narrowly tailor any proposed reforms to solving those specific problems.",
+      "concern": "FERC should limit reforms to concrete, in-scope problems rather than hypothetical or edge-case issues",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:narrow-tailoring"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Any reforms that FERC pursues must be catalysts, not quicksand.",
+      "concern": "Reforms should accelerate interconnection, not create new procedural burdens",
+      "bins": [
+        "topic:narrow-tailoring"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "standardized requirements should apply only where customers take unbundled transmission service. Imposing federal requirements on bundled retail service will create legal and operational uncertainty and conflicts, which will cause delays and thwart the goals of the ANOPR.",
+      "concern": "FERC rules should not apply to bundled retail service customers",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "standardized study deposits, readiness requirements, and withdrawal penalties will help to deter speculative requests.",
+      "concern": "Standardized deposits and penalties reduce queue speculation",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "the transmission provider must have the flexibility to quickly adjust its customer requirements to respond to newly identified risks and emergent needs.",
+      "concern": "Providers need flexibility to update requirements as reliability knowledge evolves",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Duke Energy cautions that it may take several years to develop (and potentially litigate) just and reasonable rules to address these issues.",
+      "concern": "Study process coordination complexity could cause multi-year delays before benefits materialize",
+      "bins": [
+        "pr:study",
+        "topic:implementation-complexity"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Duke Energy recommends that, for purposes of this rulemaking, FERC define large load as new loads greater than 300 MW (but, in the alternative, no lower than 100 MW), that require interconnection at 100 kilovolt (kV) or above.",
+      "concern": "FERC's proposed 20 MW threshold is too low; Duke recommends 300 MW minimum",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "A threshold of 20 MW would capture conventional larger loads including manufacturing, commercial, and other industrial loads, which can average around 50 MW in size.",
+      "concern": "20 MW threshold sweeps in conventional loads that have long been integrated without problems",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Duke Energy strongly recommends that any definition of 'hybrid facilities' require that the load and generation be behind a common point of interconnection to the transmission system.",
+      "concern": "Hybrid facility definition should require a common point of interconnection, not mere proximity",
+      "bins": [
+        "aq:hybridrights"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "'Nearness' of load and generation is not a technically implementable standard, and the 'nearness' of load and generation does not determine the electrical impacts to the transmission system.",
+      "concern": "Proximity-based hybrid definition is technically unworkable and adds reliability risk",
+      "bins": [
+        "aq:hybridrights",
+        "topic:reliability-risk"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Transmission providers must have the ability to study all load and generation, including hybrid facilities, in a manner that reflects the potential actual operating impacts to the grid.",
+      "concern": "Studying only net contractual rights understates reliability risk from hybrid facilities",
+      "bins": [
+        "aq:hybridrights",
+        "aq:protection",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Duke Energy encourages the Commission to re-consider this direct assignment principle and retain its repeatedly and consistently affirmed position that network upgrades are integrated transmission that provide benefits on a system-wide basis, which justifies rolled-in rate treatment.",
+      "concern": "100 percent direct cost assignment contradicts FERC's longstanding rolled-in pricing policy",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Duke Energy recommends the adoption of large load interconnection pricing rules that would require large load customers to initially fund the network upgrade (unless the transmission provider elects to initially fund the upgrade), then require the transmission provider to credit or refund back to the large load customer the total amount paid for the required network upgrades.",
+      "concern": "Refundable up-front funding model preferred over direct assignment",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Duke Energy recognizes that there may be opportunities to identify 'bridge' solutions for limited, temporary interconnection service rights without eliminating the need for full interconnection service studies that identify the need for long-term infrastructure expansion.",
+      "concern": "Conditional time-limited interconnection service could accelerate large load connections without sacrificing long-term reliability studies",
+      "bins": [
+        "pr:flex",
+        "rg:spp",
+        "topic:conditional-service"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Duke Energy urges the Commission to consider whether the time needed to address the complexity and details of coordinated load and generation studies will help achieve faster interconnection of large loads or whether such an effort could actually impede timely interconnections of large loads at this pivotal moment.",
+      "concern": "Joint load-generation study coordination may slow rather than speed interconnection",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Limit scope to unbundled service",
+      "stance": "support",
+      "description": "Duke Energy argues FERC should restrict new rules to customers taking unbundled transmission service, consistent with Order No. 888. Applying federal requirements to bundled retail service would conflict with state jurisdictional processes that are already working and create legal uncertainty that delays interconnection.",
+      "quote_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Raise MW threshold to 300 MW",
+      "stance": "oppose",
+      "description": "Duke Energy opposes the proposed 20 MW threshold as far too low, recommending 300 MW (minimum 100 MW) at 100 kV or above, further narrowed to loads with NERC-identified reliability characteristics. The 20 MW level would sweep in conventional industrial and commercial loads that utilities have served for decades without issue.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint study coordination concerns",
+      "stance": "mixed",
+      "description": "Duke Energy is open to coordinating load and generation evaluations in transmission planning but warns that integrating individual load studies with clustered generator interconnection studies introduces significant complexity. It questions whether the effort will speed or impede timely interconnection.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Support standardized deposits and penalties",
+      "stance": "support",
+      "description": "Duke Energy supports standardized study deposits, readiness requirements, and withdrawal penalties to deter speculative queue entries, consistent with its own existing retail practices.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Require common point for hybrid facilities",
+      "stance": "oppose",
+      "description": "Duke Energy opposes a proximity-based hybrid facility definition, insisting load and generation must be behind a common point of interconnection. It also insists providers must study full operating ranges, not just net contractual rights, to avoid unstudied reliability conditions.",
+      "quote_ids": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Full operating range must be studied",
+      "stance": "oppose",
+      "description": "Studying only net contractual rights for hybrid facilities ignores independent load and generation behavior during planned or forced outages. Duke Energy argues full withdrawal and injection capabilities must be evaluated to protect grid reliability.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Refundable up-front funding, not direct assignment",
+      "stance": "oppose",
+      "description": "Duke Energy opposes 100 percent direct assignment of network upgrade costs, recommending instead a refundable up-front funding model consistent with Order No. 2003. This preserves rolled-in rate treatment and allows transmission owners to earn a return on network assets.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study process coordination complexity",
+      "stance": "mixed",
+      "description": "Duke Energy supports orderly study processes with deposits and readiness requirements, but warns that creating a new large load study process that must coordinate with existing generator interconnection cluster studies raises numerous unresolved implementation questions that could take years to litigate.",
+      "quote_ids": [
+        4,
+        6,
+        11,
+        15
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Rolled-in pricing over direct assignment",
+      "stance": "oppose",
+      "description": "Duke Energy argues network upgrades provide system-wide benefits and should receive rolled-in rate treatment consistent with longstanding FERC policy. It recommends a refund-upon-energization mechanism rather than 100 percent direct cost assignment.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Preserve provider flexibility",
+      "stance": "support",
+      "description": "Duke Energy supports flexibility for transmission providers to adapt study requirements as reliability knowledge evolves and to tailor Electric Service Agreements to individual large load characteristics. It also sees merit in conditional, time-limited service as a bridge solution.",
+      "quote_ids": [
+        5,
+        14
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP conditional service as model",
+      "stance": "neutral",
+      "description": "Duke Energy cites SPP's proposed Load Limited Resource Interconnection Service as an example of a bridge solution worth further evaluation, while noting it would need adaptation for regions where generators serve all load rather than specific customers.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "topic:narrow-tailoring",
+      "name": "Narrow reforms to real problems",
+      "stance": "support",
+      "description": "Duke Energy repeatedly urges FERC to identify specific, concrete problems within its statutory authority before acting, and to avoid rulemaking that tries to solve theoretical or edge-case issues that would introduce jurisdictional disputes and implementation complexity.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "topic:implementation-complexity",
+      "name": "Standardization implementation risks",
+      "stance": "oppose",
+      "description": "Duke Energy catalogs a list of unresolved coordination questions between a new large load study process and existing generator interconnection and transmission service processes, warning these details could take years to resolve and may slow rather than accelerate interconnection.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:reliability-risk",
+      "name": "Grid reliability must not be compromised",
+      "stance": "oppose",
+      "description": "Duke Energy warns that proximity-based hybrid definitions and net-contractual-rights study approaches create unstudied operating conditions that threaten bulk power system reliability.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:conditional-service",
+      "name": "Conditional service as a bridge",
+      "stance": "mixed",
+      "description": "Duke Energy is open to conditional, time-limited interconnection service rights as a bridge to speed large load integration, but questions whether data center customers who require 24/7 uptime would actually demand such conditional service.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex"
+    ],
+    "rg": [
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

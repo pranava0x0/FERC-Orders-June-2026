@@ -1,0 +1,177 @@
+{
+  "accession": "20251119-5149",
+  "filer": "Georgia Public Service Commission",
+  "org_type": "state_commission",
+  "filed": "11/19/2025",
+  "source_text": "sources/comments/files/20251119-5149__Georgia-Public-Service-Commission/FERC RM 26-4 Comments of GPSC.txt",
+  "overall_summary": "The Georgia Public Service Commission argues that its existing regulatory tools under a vertically integrated market structure are sufficient to ensure timely and orderly interconnection of large loads, making further federal action in Georgia unnecessary. The GPSC points to recent tariff rule changes, minimum billing requirements, and an all-source capacity certification proceeding as evidence that state oversight is working. It urges FERC to defer to state commissions where those tools are adequate.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the GPSC has the authority and flexibility to facilitate this growth in a manner that will meet the electricity needs of new customers while protecting existing customers from upward pressure on utility rates.",
+      "concern": "GPSC claims its existing authority is sufficient to protect existing ratepayers while accommodating large load growth",
+      "bins": [
+        "pr:cost",
+        "topic:state-authority"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The GPSC affirms that it is best positioned to ensure the timely and orderly interconnection of large loads with its current policy and regulatory tools.",
+      "concern": "GPSC asserts state-level regulation is better suited than federal action for interconnecting large loads",
+      "bins": [
+        "topic:state-authority",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The vertically integrated market structure in Georgia allows the GPSC to oversee every facet of this load growth and adjust to market conditions as they emerge.",
+      "concern": "GPSC credits vertically integrated structure for enabling comprehensive state oversight",
+      "bins": [
+        "topic:state-authority",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the GPSC has acted in the past year to further solidify its regulatory mandate in response to the timely and orderly interconnection of large loads. In April 2025 the Commission approved changes to its rules and regulations requiring Georgia Power to ensure that new customers over 100 MW pay their cost of service through minimum billing requirements, long term contracts with sizable fees in the case of early termination, and other terms and conditions",
+      "concern": "GPSC describes tariff rule changes it adopted in 2025 to assign large load costs directly to new customers",
+      "bins": [
+        "pr:cost",
+        "aq:deposits",
+        "topic:state-authority"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The GPSC is also currently conducting an all-source capacity certification proceeding to consider meeting the future needs of Georgia Power customers through cost-effective thermal, renewable, and battery storage technologies.",
+      "concern": "GPSC is running an all-source capacity proceeding to plan for large load driven demand growth",
+      "bins": [
+        "pr:study",
+        "topic:state-authority"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The GPSC is able to support this economic development through engagement with businesses looking to locate in Georgia to ensure that the size and types of resources, opportunities for load flexibility, and rate designs meet the desired specifications.",
+      "concern": "GPSC highlights its role in shaping load flexibility and rate design for incoming large loads",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The GPSC understands that states in other market structures may require different interventions from FERC.",
+      "concern": "GPSC acknowledges other market structures may need federal action while arguing Georgia does not",
+      "bins": [
+        "topic:state-authority",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The GPSC will continue to collaborate towards shared goals without the need for further Federal action in Georgia.",
+      "concern": "GPSC explicitly opposes additional FERC regulation applied to Georgia",
+      "bins": [
+        "topic:state-authority",
+        "aq:jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost Assignment to Large Loads",
+      "stance": "support",
+      "description": "The GPSC supports requiring large loads to pay their full cost of service. It adopted tariff changes in 2025 requiring customers over 100 MW to meet minimum billing requirements and sign long-term contracts with early termination fees, so existing customers are not burdened by new load costs.",
+      "quote_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "All-Source Capacity Study",
+      "stance": "neutral",
+      "description": "The GPSC is conducting an all-source capacity certification proceeding to evaluate generation needs driven by large load growth, analyzing load forecasting from its 2025 IRP as part of that process.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Load Flexibility Engagement",
+      "stance": "support",
+      "description": "The GPSC engages with prospective large load customers on load flexibility and rate design as part of its economic development work, treating flexibility as one tool to manage system impacts.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "State Jurisdiction Over Large Loads",
+      "stance": "oppose",
+      "description": "The GPSC argues that federal intervention is unnecessary in Georgia because the vertically integrated market structure gives the state commission full oversight over large load interconnection. It acknowledges other market structures may need FERC action but urges no further federal involvement in Georgia.",
+      "quote_ids": [
+        2,
+        3,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Financial Security Requirements",
+      "stance": "support",
+      "description": "The GPSC adopted minimum billing requirements and early termination fees for customers over 100 MW as a form of financial commitment, ensuring cost recovery without shifting costs to existing ratepayers.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited State Proceedings",
+      "stance": "support",
+      "description": "The GPSC describes its ability to quickly engage with prospective customers on resource type, load flexibility, and rate design as evidence that state-level processes can move fast enough to accommodate large load growth.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:state-authority",
+      "name": "State Regulation Sufficient",
+      "stance": "oppose",
+      "description": "The GPSC's central argument is that its existing tools under Georgia's vertically integrated structure are adequate to handle large load interconnection, making further FERC rulemaking unnecessary for Georgia. It presents recent tariff changes, the all-source capacity proceeding, and direct stakeholder engagement as proof the state can manage this growth without federal intervention.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "deposits",
+      "expedited"
+    ],
+    "pr": [
+      "cost",
+      "study",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
