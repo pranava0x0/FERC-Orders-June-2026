@@ -157,12 +157,16 @@
   dais, so written-only). Sources committed under `sources/commissioners/` (5 statements + transcript).
   Rendered as an expandable themed read on each Overview commissioner card (embedded in `data.js`, not
   lazy-loaded — only 5 small items). On PR #6.
-- **requested 2026-06-26 / medium — enrich the Dockets tab (orders are 92–119 pp; current display is light).**
-  Each order is long but the docket card surfaces only the directives + a few distinct findings + Section IV
-  asks. Mine more from `sources/text/orders/*.txt`: the deeper verbatim Section IV briefing questions per
-  order (only PJM was read end-to-end — see below), the procedural schedule (30/60-day specifics), and any
-  per-order findings not yet captured. Scope first (what's genuinely missing vs. already distilled) before
-  bulk extraction; keep the page-cite + verbatim-in-source test bar.
+- **done (2026-06-26, Section IV) / medium remaining (the clock) — enriched the Dockets tab.** Added each
+  order's **Section IV Briefing Questions** as a numbered, page-cited, collapsible list on the docket card:
+  the five templated questions (protecting existing arrangements; flexible-service planning impact;
+  cost-shift protections; alternative transmission technologies; generator interconnection for proximate /
+  co-located load), each with a plain-language label + the verbatim excerpt; SPP shows four (it already has
+  HILLGA, so its order omits the proximate-generation question). Stored once as `data.js` `briefing`
+  (questions + per-docket § IV page + SPP omission) and DRY-rendered per docket; `data.test.mjs` verifies
+  every shown question is verbatim in that order's text and the § IV page is in range. **Still open:** the
+  **procedural clock** (the (A)-(F) ordering paragraphs — 30-day report, 60-day show-cause, 21-day
+  intervene, 30-day responses + derived dates) as a per-docket timeline, and deeper Section III sub-findings.
 - **requested 2026-06-26 / medium — explore a multi-select / token search on the All-comments filter.** Today
   the search box holds one substring and the tag bar replaces it on click. Explore letting several tags stack
   as removable tokens (AND/OR) so you can compose "PJM + Cost + opposes". Design question: token chips in the

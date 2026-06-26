@@ -189,6 +189,34 @@ test("commissioner themed summaries: written quotes are verbatim in the order te
   assert.ok(writtenChecked >= 3, `enough written quotes verified (${writtenChecked})`);
 });
 
+test("docket Section IV briefing questions: every shown question is verbatim in its order text", () => {
+  const STEM = {
+    "E-7": "e-7-pjm-el26-67-000", "E-8": "e-8-miso-el26-70-000", "E-9": "e-9-spp-el26-68-000",
+    "E-10": "e-10-caiso-el26-71-000", "E-11": "e-11-isone-el26-72-000", "E-12": "e-12-nyiso-el26-69-000",
+  };
+  const norm = (s) => String(s)
+    .replace(/---\s*PAGE\s*\d+\s*---/g, " ")
+    .replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, "-")
+    .replace(/\s+/g, " ").replace(/(\w)-\s(\w)/g, "$1-$2").toLowerCase().trim();
+  assert.ok(D.briefing && Array.isArray(D.briefing.questions) && D.briefing.questions.length >= 4, "briefing questions present");
+  for (const q of D.briefing.questions) assert.ok(q.id && q.t && q.d && q.v, `briefing question ${q.id} has id/label/desc/quote`);
+  let checked = 0;
+  for (const d of D.dockets) {
+    const txt = norm(readFileSync(join(here, "..", "sources", "text", "orders", STEM[d.item] + ".txt"), "utf8"));
+    const omit = (D.briefing.omit && D.briefing.omit[d.item]) || [];
+    const pg = D.briefing.pages[d.item];
+    assert.ok(Number.isInteger(pg) && pg >= 1 && pg <= d.pages, `${d.item} briefing page ${pg} within 1..${d.pages}`);
+    for (const q of D.briefing.questions) {
+      if (omit.includes(q.id)) continue;
+      assert.ok(txt.includes(norm(q.v)), `${d.item} briefing "${q.id}" not verbatim in order text: "${q.v.slice(0, 50)}…"`);
+      checked++;
+    }
+  }
+  assert.ok(checked >= 28, `enough briefing quotes verified (${checked})`); // 5 orders x 5 + SPP x 4
+  // join() avoids a cross-realm Array prototype mismatch (D is loaded in a separate vm context)
+  assert.equal((D.briefing.omit["E-9"] || []).join(","), "proximate", "SPP omits the proximate-generation question (it already has HILLGA)");
+});
+
 test("RM26-4 comment corpus: stats present and stakeholder buckets sum to the comment total", () => {
   const c = D.comments;
   assert.ok(c && c.filings >= 400 && c.total >= 200, "headline comment stats present");

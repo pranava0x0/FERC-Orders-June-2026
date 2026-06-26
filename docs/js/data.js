@@ -722,5 +722,20 @@ window.FERC_DATA = (function () {
     ],
   };
 
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, comments, commissioners, participate };
+  // Section IV "Briefing Questions" — the questions each show cause order directs the RTO/ISO to brief.
+  // Templated across the six orders (each `v` verified verbatim in every applicable order's text); only
+  // the page and SPP's omission differ. SPP already has the proximate-generation process (HILLGA), so its
+  // order does not pose that question. `t`/`d` are the curator's plain-language label + gloss, not quotes.
+  const briefing = {
+    questions: [
+      { id: "arrangements", t: "Protecting existing commercial arrangements", d: "A reasonable implementation period and time to finalize deals already signed or nearing completion, so the new rules don't disrupt them.", v: "what would be a reasonable implementation period to ensure minimal disruption to such existing commercial arrangements" },
+      { id: "planning", t: "Planning impact of flexible transmission services", d: "How the proposed flexible (curtailable) large-load services would affect regional and local transmission planning.", v: "what, if any, potential impacts on regional and local transmission planning would arise from the introduction of the new transmission services discussed herein" },
+      { id: "costshift", t: "Cost-shift protections", d: "Agreement structures, a minimum level of cost recovery, and financial security so large-load network-upgrade costs aren't shifted onto other customers.", v: "without the inclusion of cost shifting protections" },
+      { id: "att", t: "Alternative transmission technologies", d: "Whether the tariff must require evaluating ATTs (e.g., dynamic line ratings, reconductoring) before selecting traditional network upgrades.", v: "requiring the evaluation of alternative transmission technologies" },
+      { id: "proximate", t: "Generator interconnection for proximate / co-located load", d: "Market participation, mitigation, and resource-adequacy treatment for generation serving electrically proximate or co-located large load.", v: "to seek generator interconnection service" },
+    ],
+    pages: { "E-7": 69, "E-8": 73, "E-9": 51, "E-10": 75, "E-11": 74, "E-12": 78 },
+    omit: { "E-9": ["proximate"] },
+  };
+  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, comments, commissioners, briefing, participate };
 })();

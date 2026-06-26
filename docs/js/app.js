@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260626n";
+  var ASSET_VER = "20260626o";
   var D = window.FERC_DATA;
   if (!D) { document.getElementById("main").innerHTML = "<p class='noscript'>Data failed to load (js/data.js).</p>"; return; }
 
@@ -185,8 +185,26 @@
             '<span class="dir-quote">“' + esc(x.q) + '”</span></div>';
         }).join("") + "</div>";
       var unique = d.unique ? '<div class="docket-unique"><span class="label">What’s unique to ' + esc(d.rto) + '</span><p>' + esc(d.unique) + "</p></div>" : "";
-      var asks = (d.asks && d.asks.length) ? '<div class="docket-asks"><span class="label">What FERC presses ' + esc(d.rto) + ' on (Section IV)</span><ul>' +
+      var asks = (d.asks && d.asks.length) ? '<div class="docket-asks"><span class="label">What FERC presses ' + esc(d.rto) + ' on</span><ul>' +
         d.asks.map(function (a) { return "<li>" + esc(a) + "</li>"; }).join("") + "</ul></div>" : "";
+      // Section IV briefing questions: the formal questions the order directs the RTO/ISO to brief.
+      // Templated across orders (data.js `briefing`); page link to where § IV opens in this order's PDF.
+      var briefing = "";
+      if (D.briefing && D.briefing.questions) {
+        var bOmit = (D.briefing.omit && D.briefing.omit[d.item]) || [];
+        var bpg = D.briefing.pages && D.briefing.pages[d.item];
+        var bqs = D.briefing.questions.filter(function (q) { return bOmit.indexOf(q.id) < 0; });
+        var bCite = bpg ? '<span class="brief-cite"><span class="dir-para mono">§ IV, p. ' + bpg + "</span>" +
+          '<a class="cite-link" href="' + esc(d.pdf) + "#page=" + bpg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the committed ' + esc(d.item) + " order PDF at the Section IV page " + bpg + '" title="Committed PDF, opens inline to p. ' + bpg + '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
+          '<a class="cite-link" href="' + esc(so.url) + "#page=" + bpg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov ' + esc(d.item) + " order at page " + bpg + '" title="Official ferc.gov source, page ' + bpg + '">gov <span class="ext" aria-hidden="true">↗</span></a></span>' : "";
+        briefing = '<details class="dreg dbrief"><summary>The Section IV briefing questions (' + bqs.length + ")</summary>" +
+          (bCite ? '<div class="brief-head">' + bCite + "</div>" : "") +
+          '<ol class="brief-list">' + bqs.map(function (q) {
+            return '<li class="brief-item"><span class="brief-topic">' + esc(q.t) + "</span>" +
+              '<p class="brief-desc">' + esc(q.d) + "</p>" +
+              '<span class="brief-quote">“…' + esc(q.v) + '…”</span></li>';
+          }).join("") + "</ol></details>";
+      }
       // Per-order commissioner statements: the same five concurrences, cited to THIS order's pages.
       var commish = (d.commishPages && D.commissioners) ?
         '<details class="dreg dcom"><summary>What the commissioners said in this order (' + D.commissioners.length + ")</summary><div class=\"commish-rows\">" +
@@ -228,7 +246,7 @@
         '<span class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</span></span>" +
         '<span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span>" +
         '<span class="chev" aria-hidden="true">›</span></summary>' +
-        '<div class="docket-body">' + orderLink + unique + directives + asks + commish + region + roster + "</div></details>";
+        '<div class="docket-body">' + orderLink + unique + directives + asks + briefing + commish + region + roster + "</div></details>";
     }).join("") + "</div>";
 
     var p = D.participate;
