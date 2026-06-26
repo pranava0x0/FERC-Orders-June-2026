@@ -61,8 +61,8 @@
   that works. What remains is **structured summaries** beyond the 9 flagships (bodies are on disk +
   text-extracted, ready to read), and OCR for the few scanned filings (e.g., Data Center Coalition).
   Re-run `build-comment-audit.mjs` as summaries land; categorization auto-aggregates.
-- **high — agentic LLM comment analysis (PNNL "CommentNEPA" approach).** Extend per-comment analysis from
-  the 9 flagships to all ~269 text-extracted bodies, following PNNL/Battelle's *CommentNEPA: Auditable,
+- **done (2026-06-26) — agentic LLM comment analysis (PNNL "CommentNEPA" approach).** Extended per-comment
+  analysis from the 9 flagships to all 268 text-extracted bodies, following PNNL/Battelle's *CommentNEPA: Auditable,
   Agentic Workflows with Feedback Alignment for Environmental Review* (NAEP 2025, PNNL-SA-210567). The unit
   of evidence is the **quote**, and binning is **bottom-up on quotes** — not a single chat-shot. Decompose
   each correspondence into auditable subtasks:
@@ -85,6 +85,21 @@
   and a cross-check on the LLM's binning — never ship the LLM pass unaudited. Cost discipline: keyword
   pre-filter first, cheapest model that holds quality, cache by content hash. Surface each bin's name +
   description with its quote references in the Comments tab.
+  - **Done (2026-06-26) — 268/268 summarized, validated, and wired into the Comments tab.** Each comment
+    row carries an expandable "audited analysis" (plain summary + each position as a stance-colored chip),
+    and the Comments → Overview sub-tab leads with a "Where commenters land" stance map (support / oppose /
+    mixed / no-position per reform principle). `tests/comment-summaries.test.mjs` enforces the fidelity bar
+    (verbatim quotes, vocab, lens=union, count floor, one-example-per-enum). **Follow-ups (new):**
+    - **medium — human verification pass (feedback alignment).** All 268 are `verified:false`. Curate a
+      sample, stamp `verified_at`, and feed each curator edit back as a few-shot example (the PNNL loop).
+      No recall baseline exists yet (see `issues.md`); a small SME-selected gold set would let us measure it.
+    - **medium — fuller pass on the 8 large filings (>120 KB).** Page-windowed map-reduce over the whole
+      body instead of the front-slice read, so a position buried in an exhibit isn't missed (`issues.md`).
+    - **low — lazy-load the per-comment synthesis.** `comments-data.js` grew to ~104 KB gzipped because it
+      now carries each comment's summary + bins; it loads on every tab. Split the heavy per-comment block
+      into a file fetched only when the Comments tab opens, to keep the other tabs lean.
+    - **low — Haiku-vs-Sonnet quality spot-check.** 84 summaries are Haiku-extracted; re-extract a sample
+      on Sonnet and diff to confirm no quality gap (`issues.md`).
   - **In progress (2026-06-25) — 45 of 268 done, ~224 remaining.** Quote-centric v2 summaries
     (`summaries-v2/<acc>.json`, schema in `sources/comments/summarization-spec.md`) by
     `tools/summarize-comments.workflow.mjs`: **extract (Haiku) + self-critique → independent audit only

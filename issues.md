@@ -4,6 +4,33 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
+- **2026-06-26 · method/data · v2 comment summaries: recall is unmeasured (PNNL CommentNEPA caveat).**
+  All 268 text-extracted RM26-4 comments now have auditable quote-centric summaries
+  (`summaries-v2/`), verified against the method: the quote is the atomic unit (verbatim-tested),
+  quotes are bracketed substantive-vs-boilerplate, binned bottom-up against the controlled vocab +
+  emergent topics, each bin named with the filer's stance, plus an overall summary; the audit graph is
+  body (`files/`) → versioned prompt (`tools/summarize-comments.workflow.mjs`) → output (`summaries-v2/`
+  with a `source_text` pointer + accurate `provenance.model`). **What is NOT measured:** PNNL reports raw
+  LLM extraction at ~78% precision / ~20% recall vs. subject-matter experts (the LLM *under-selects*). We
+  enforce precision deterministically (verbatim coverage, vocab, lens=union, lint) and audit a flagged
+  ~5%, but we have **no SME-selected gold set to measure recall** — a substantive position an extractor
+  skipped would pass silently. Root cause: **method limitation** (no human baseline). Status: **Open
+  (known limitation)** — every summary is `verified:false` (provisional); a human-verification pass with
+  `verified_at` + feedback-aligned few-shot examples is the mitigation (backlog).
+- **2026-06-26 · data · 8 large filings (>120 KB) summarized from a front-slice read, not the full body.**
+  Worst case **Sierra Club `20260520-5102` (5.9 MB)** — its substantive argument is pp. 1–6 and the bulk
+  is ~3,844 form letters in an appendix, so the front-slice read captured the argument well there, but for
+  the others (SPP TO Group 350 KB, SELC coalition 261 KB, ECA 205 KB, Eolian 182/148 KB, Constellation
+  157 KB) a position buried deep in an exhibit could be missed. Root cause: **read cap** (documented in
+  `summarize-comments.workflow.mjs`). Status: **Open** — a page-windowed map-reduce over the whole body is
+  the fuller pass (backlog).
+- **2026-06-26 · data · extract-model variance across the corpus.** 183 summaries were extracted by
+  Sonnet, 84 by Haiku (1 pilot "claude"); `provenance.model` records each accurately. Haiku was switched
+  off mid-run because it over-reported writes on larger filings (~10–40% silent re-runs that the
+  self-healing worklist recovered). All 268 pass the same deterministic bar, but quality variance between
+  Haiku- and Sonnet-extracted summaries is **unmeasured**. Root cause: **process** (model switch).
+  Status: **Open (low)** — spot-check or re-extract the 84 Haiku ones on Sonnet if a quality gap shows.
+
 - **2026-06-24 · data · one comment body (ETI, `20251121-5225`) will not download.** Of the 270 RM26-4
   comments carrying attachments, 269 bodies were bulk-downloaded via the iframe grinder; ETI Comments
   (Entergy Texas) is the lone holdout across five attempts (main-frame click ×2, iframe retry, dedicated
