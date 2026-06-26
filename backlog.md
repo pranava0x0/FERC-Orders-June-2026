@@ -95,9 +95,12 @@
       No recall baseline exists yet (see `issues.md`); a small SME-selected gold set would let us measure it.
     - **medium — fuller pass on the 8 large filings (>120 KB).** Page-windowed map-reduce over the whole
       body instead of the front-slice read, so a position buried in an exhibit isn't missed (`issues.md`).
-    - **low — lazy-load the per-comment synthesis.** `comments-data.js` grew to ~104 KB gzipped because it
-      now carries each comment's summary + bins; it loads on every tab. Split the heavy per-comment block
-      into a file fetched only when the Comments tab opens, to keep the other tabs lean.
+    - **low — lazy-load the per-comment synthesis, and expose backing quotes.** `comments-data.js` grew to
+      ~104 KB gzipped because it carries each comment's summary + bins; it loads on every tab. Split the
+      heavy per-comment block into a file fetched only when the Comments tab opens. **Bundle with the
+      Antigravity-review ask** to surface the verbatim quote behind each stance chip (tooltip or nested
+      collapsible) — the quotes are committed in `summaries-v2/` but deliberately left out of the page data
+      for weight; the lazy-loaded block is where they'd live, closing the audit loop on the web.
     - **low — Haiku-vs-Sonnet quality spot-check.** 84 summaries are Haiku-extracted; re-extract a sample
       on Sonnet and diff to confirm no quality gap (`issues.md`).
   - **In progress (2026-06-25) — 45 of 268 done, ~224 remaining.** Quote-centric v2 summaries

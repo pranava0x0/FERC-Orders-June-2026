@@ -372,9 +372,9 @@
           : c.dl ? '<span class="cm-badge sum" title="Downloaded but image-only (no text layer) — not summarized"><span aria-hidden="true">○</span><span class="sr-only">scanned, not summarized</span></span>'
           : '<span class="cm-badge no" title="Body not downloaded — eLibrary serves it inline"><span aria-hidden="true">–</span><span class="sr-only">not downloaded</span></span>';
         var type = CM.bucketLabels[c.bucket] || c.bucket;
-        var aqChips = (c.aq || []).map(function (k) { return '<span class="cm-tag aq" title="Addresses the ANOPR comment-period question: ' + esc(AQ[k]) + '">' + esc(AQ[k]) + "</span>"; }).join("");
-        var prChips = (c.pr || []).map(function (k) { return '<span class="cm-tag pr ' + k + '" title="Engages the ' + esc(CL[k]) + ' reform principle">' + esc(CL[k]) + "</span>"; }).join("");
-        var rgChips = (c.rg || []).map(function (k) { return '<span class="cm-tag rg" title="References the ' + esc(RG[k]) + ' region">' + esc(RG[k]) + "</span>"; }).join("");
+        var aqChips = (c.aq || []).map(function (k) { return '<button type="button" class="cm-tag aq" data-f="' + esc(AQ[k]) + '" title="Filter the list by: ' + esc(AQ[k]) + '">' + esc(AQ[k]) + "</button>"; }).join("");
+        var prChips = (c.pr || []).map(function (k) { return '<button type="button" class="cm-tag pr ' + k + '" data-f="' + esc(CL[k]) + '" title="Filter the list by: ' + esc(CL[k]) + '">' + esc(CL[k]) + "</button>"; }).join("");
+        var rgChips = (c.rg || []).map(function (k) { return '<button type="button" class="cm-tag rg" data-f="' + esc(RG[k]) + '" title="Filter the list by: ' + esc(RG[k]) + '">' + esc(RG[k]) + "</button>"; }).join("");
         var grp = function (label, chips) { return chips ? '<span class="sr-only">' + label + ": </span>" + chips : ""; };
         var groups = [grp("Comment-period questions", aqChips), grp("Reform principles", prChips), grp("Regions", rgChips)].filter(Boolean);
         var tags = groups.length ? '<div class="cm-row-tags">' + groups.join('<span class="cm-tagsep" aria-hidden="true"></span>') + "</div>" : "";
@@ -428,7 +428,7 @@
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
       flag +
       head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary — open “Read the audited analysis” on any row for the plain read and each position colored by the filer's stance. Each row also shows the lenses it engages and links to its eLibrary filing. Filter by org, type, lens, or any word in a summary.") +
-      filter + '<div class="cm-listwrap">' + listHtml + "</div>" + src + "</section>";
+      filter + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src + "</section>";
 
     return subnav + secOverview + secTypes + secSummaries;
   }
@@ -454,6 +454,8 @@
         var i = subs.indexOf(s), n = null;
         if (e.key === "ArrowRight") n = (i + 1) % subs.length;
         else if (e.key === "ArrowLeft") n = (i - 1 + subs.length) % subs.length;
+        else if (e.key === "Home") n = 0;
+        else if (e.key === "End") n = subs.length - 1;
         if (n !== null) { e.preventDefault(); var t = document.getElementById("cmsub-" + subs[n]); showSub(subs[n]); t.focus(); }
       });
     });
@@ -472,11 +474,23 @@
     if (!input) return;
     var rows = [].slice.call(document.querySelectorAll("#panel-comments .cm-row"));
     var groups = [].slice.call(document.querySelectorAll("#panel-comments .cm-listgroup"));
+    var empty = document.getElementById("cm-empty");
     input.addEventListener("input", function () {
       var q = input.value.trim().toLowerCase(), shown = 0;
       rows.forEach(function (r) { var hit = !q || r.getAttribute("data-q").indexOf(q) >= 0; r.hidden = !hit; if (hit) shown++; });
       groups.forEach(function (g) { g.hidden = !g.querySelector(".cm-row:not([hidden])"); });
       count.textContent = shown + " of " + rows.length;
+      if (empty) empty.hidden = shown !== 0; // explicit empty state — never leave a blank panel
+    });
+    // clicking a lens chip pre-fills the search and filters (the search box stays the primary control)
+    var listwrap = document.querySelector("#panel-comments .cm-listwrap");
+    if (listwrap) listwrap.addEventListener("click", function (e) {
+      var chip = e.target.closest(".cm-tag");
+      if (!chip || !chip.dataset.f) return;
+      input.value = chip.dataset.f;
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+      input.focus();
+      input.scrollIntoView({ block: "nearest" });
     });
   }
 

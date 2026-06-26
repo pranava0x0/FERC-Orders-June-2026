@@ -79,8 +79,13 @@ export function buildLlmsTxt(D) {
   }
   out.push("");
 
+  out.push("## The RM26-4 public comments (corpus)", "");
+  out.push(`- ${D.comments.total} public comments (of ${D.comments.filings} total eLibrary filings) on the DOE ANOPR (Docket RM26-4-000) were scraped from FERC eLibrary. Each text-extracted comment carries a quote-centric, auditable summary built the PNNL "CommentNEPA" way: verbatim quotes pulled from the filing, binned to the five reform principles / eight ANOPR questions / six regions (plus emergent topics), each bin with the filer's stance. AI-generated and provisional (not yet human-verified).`);
+  out.push("- Per-comment summaries: `sources/comments/summaries-v2/<accession>.json`. Compiled for the site: `docs/js/comments-data.js` (`window.FERC_COMMENTS`). Method + schema: `sources/comments/summarization-spec.md`. Explore on the Comments tab (a stance map + per-comment audited analysis).");
+  out.push("");
+
   out.push("## Read the site", "");
-  out.push(`- [${m.title}](${SITE}): five tabs (Overview, Timeline, Reforms, Dockets, Discourse).`);
+  out.push(`- [${m.title}](${SITE}): six tabs (Overview, Timeline, Reforms, Dockets, Comments, Discourse).`);
 
   return out.join("\n") + "\n";
 }

@@ -59,6 +59,11 @@ Each order PDF is committed and served at the page-precise link below; the offic
 - Mona Dajani (nonpartisan, Cooley LLP): Reads the six-order route as the end of any national template: ‘The era of one national standard for data center interconnection is over before it began.’ What replaces it, she says, is ‘six regional answers to the same question, decided on six different timelines’ — clarity within each region, fragmentation across them. Source: https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/
 - Neil Chatterjee (right of center, former FERC chairman): Calls it ‘a very FERC-y approach’ — approving of the choice to push region-specific reform through §206 show cause orders rather than one national rule, which he reads as both faster to deliver and harder to challenge. Source: https://heatmap.news/energy/ferc-data-center-plan
 
+## The RM26-4 public comments (corpus)
+
+- 273 public comments (of 423 total eLibrary filings) on the DOE ANOPR (Docket RM26-4-000) were scraped from FERC eLibrary. Each text-extracted comment carries a quote-centric, auditable summary built the PNNL "CommentNEPA" way: verbatim quotes pulled from the filing, binned to the five reform principles / eight ANOPR questions / six regions (plus emergent topics), each bin with the filer's stance. AI-generated and provisional (not yet human-verified).
+- Per-comment summaries: `sources/comments/summaries-v2/<accession>.json`. Compiled for the site: `docs/js/comments-data.js` (`window.FERC_COMMENTS`). Method + schema: `sources/comments/summarization-spec.md`. Explore on the Comments tab (a stance map + per-comment audited analysis).
+
 ## Read the site
 
-- [Large Load Interconnection](https://pranava0x0.github.io/FERC-Orders-June-2026/): five tabs (Overview, Timeline, Reforms, Dockets, Discourse).
+- [Large Load Interconnection](https://pranava0x0.github.io/FERC-Orders-June-2026/): six tabs (Overview, Timeline, Reforms, Dockets, Comments, Discourse).
