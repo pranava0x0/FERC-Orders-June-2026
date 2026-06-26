@@ -147,15 +147,16 @@
   Vision). Once OCR'd, re-run organize/validate; they drop out of the scanned set into the text-analyzed corpus.
 - **low — re-fetch the ETI holdout** (`20251121-5225`, Energy Trading Institute): renders + clicks but won't download
   (served inline). Inventoried + re-downloadable; the corpus reads 272/273. See `issues.md`.
-- **requested 2026-06-26 / medium — fuller per-commissioner summaries (themes + quotes, no tags).** The
-  user wants each commissioner summarized the same auditable way as the public comments — an overall read
-  plus **themes, each backed by verbatim quotes** — but with **no tag/stance vocabulary**, just themes and
-  quotes. Sources: the **written** concurring statements (already extracted to the order text, citable and
-  verbatim-checkable) **plus** the **spoken** open-meeting remarks from FERC's **YouTube** auto-caption
-  transcript (`yt-dlp --write-auto-sub`, ungated), verified against the statement PDFs. Method scaffold in
-  `summaries-plan.md` (Part B). Needs the **YouTube URL** (or yt-dlp run) for the spoken half; the written
-  half is doable now from `sources/text/orders/*.txt`. Display: expand the Overview "what each commissioner
-  emphasized" cards into a per-commissioner themed read (lazy-loaded like the comment bin detail).
+- **done (2026-06-26) — per-commissioner themed summaries (themes + quotes, no tags).** All five
+  commissioners (Swett, Rosner, See, Chang, LaCerte) summarized the auditable way: an overall read plus
+  5 themes each, every theme backed by verbatim quotes, no tag/stance vocabulary. Written quotes are
+  verbatim from the OCR'd order text (statements identical across all six orders; PJM copy canonical) and
+  guarded by a `data.test.mjs` verbatim check; spoken quotes come from the June 18 open-meeting auto-caption
+  transcript (pulled with `uvx yt-dlp --write-auto-subs` from the user's YouTube link) and are labeled
+  "spoken" (Rosner ×2, See ×1, Swett ×1; Chang and LaCerte deferred to their written statements at the
+  dais, so written-only). Sources committed under `sources/commissioners/` (5 statements + transcript).
+  Rendered as an expandable themed read on each Overview commissioner card (embedded in `data.js`, not
+  lazy-loaded — only 5 small items). On PR #6.
 - **requested 2026-06-26 / medium — enrich the Dockets tab (orders are 92–119 pp; current display is light).**
   Each order is long but the docket card surfaces only the directives + a few distinct findings + Section IV
   asks. Mine more from `sources/text/orders/*.txt`: the deeper verbatim Section IV briefing questions per
