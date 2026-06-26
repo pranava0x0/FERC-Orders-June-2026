@@ -1,0 +1,210 @@
+{
+  "accession": "20251121-5547",
+  "filer": "Maryland Energy Administration",
+  "org_type": "state_commission",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5547__Maryland-Energy-Administration/MEA FINAL Comments RM26-4.txt",
+  "overall_summary": "Maryland Energy Administration supports FERC's large load interconnection reforms, endorsing standardized deposits and expedited studies for flexible loads. The state urges a threshold higher than 20 MW to match regional practices, emphasizes that large load customers must pay fair network upgrade costs, and insists FERC preserve state authority over retail rates, planning, and demand-side resources.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "ensure that large load interconnections do not compromise grid reliability or impose undue costs on retail customers",
+      "concern": "large loads must not shift costs to other customers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Setting a minimum load threshold can allow smaller load customers to receive service through other avenues, where the associated financial risks are not as significant",
+      "concern": "threshold shields smaller customers from risk",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "MEA recommends FERC consider a higher threshold than 20 MW for defining new load and hybrid facilities for the purposes of the proposal, and allow some flexibility to meet unique regional needs",
+      "concern": "threshold should be higher than 20 MW and regionally flexible",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "like generating facilities, load and hybrid facilities should be subject to standardized study deposits, readiness requirements, and withdrawal penalties",
+      "concern": "standardized deposits and readiness requirements needed",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Imposing financial and readiness requirements is important to limit the inclusion of speculative projects that are unlikely to materialize",
+      "concern": "deposits screen out speculative projects",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "states, too, have an important role in ensuring the accuracy of forecast demand",
+      "concern": "states must have role in demand forecasting",
+      "bins": [
+        "topic:state-authority"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "MEA urges FERC to approach transmission-level large load interconnections in a manner that will support and not hinder state decisionmakers as they work to develop and enhance historically siloed state resource, distribution, and transmission planning processes for greater alignment, increased transparency, and more robust stakeholder engagement",
+      "concern": "FERC must support state planning integration",
+      "bins": [
+        "topic:state-authority"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "MEA believes well-designed voluntary pathways to faster interconnection can provide effective incentives",
+      "concern": "expedited studies via voluntary curtailability are effective",
+      "bins": [
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "MEA urges that any expediting of interconnection studies of large loads ensure minimal disruption to PJM's generation interconnection process",
+      "concern": "expedited studies must not disrupt generator interconnection queue",
+      "bins": [
+        "aq:expedited",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Interconnection bottlenecks impart real costs for Maryland consumers",
+      "concern": "queue delays raise consumer costs",
+      "bins": [
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "load and hybrid facilities should be responsible for 100% of the network upgrades that they are assigned through the interconnection studies",
+      "concern": "large loads must pay full upgrade costs",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "MEA urges fair allocation of electricity system costs to large load customers, which can prevent unfair shifting of costs to other customers",
+      "concern": "cost allocation must be fair and prevent cost-shifting",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "FERC actions should not exacerbate affordability and reliability issues, nor constrain state actions on resource decisions, demand response, virtual power plants (VPPs), distributed generation, behind-the-meter generation and energy efficiency",
+      "concern": "FERC must not limit state authority over demand-side resources",
+      "bins": [
+        "topic:state-authority",
+        "pr:flex"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:threshold",
+      "name": "Threshold higher than 20 MW",
+      "stance": "oppose",
+      "description": "Maryland opposes FERC's proposed 20 MW threshold as insufficient. The state notes Maryland law sets 100 MW with 80% load factor, and PJM considers requests of 50 MW or larger. A higher and regionally flexible threshold allows smaller loads to access service through lower-risk avenues.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Standardized deposits for large loads",
+      "stance": "support",
+      "description": "Maryland supports standardized study deposits, readiness requirements, and withdrawal penalties mirroring those for generators. Such requirements deter speculative projects and improve demand forecasting accuracy for transmission planning.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited studies for curtailable loads",
+      "stance": "support",
+      "description": "Maryland supports expedited interconnection studies for large loads and hybrids that are curtailable and dispatchable, viewing well-designed voluntary pathways as effective incentives. However, expedited processing must not disrupt PJM's generation interconnection queue.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation to large loads",
+      "stance": "support",
+      "description": "Maryland emphasizes that large load customers must pay 100% of network upgrade costs assigned to them and opposes cost-shifting to other retail customers. Fair allocation reflects Maryland's law requiring large load tariffs to protect residential customers from financial risk, and addresses real consumer costs from interconnection delays.",
+      "quote_ids": [
+        1,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Preserve state demand-side authority",
+      "stance": "oppose",
+      "description": "Maryland opposes any FERC action that constrains state authority over demand response, virtual power plants, distributed generation, behind-the-meter resources, and energy efficiency programs essential to affordability and reliability.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM-specific considerations",
+      "stance": "neutral",
+      "description": "Maryland describes PJM processes for large load adjustment and notes that interconnection queue delays have raised consumer costs in recent capacity auctions. The state urges that expedited large load studies preserve the efficiency of PJM's generator queue.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:state-authority",
+      "name": "State authority over planning and forecasting",
+      "stance": "oppose",
+      "description": "Maryland asserts that states have a critical role in demand forecasting, resource planning, and transmission planning integration. The state urges FERC to support rather than hinder state coordination across historically separate planning processes, and to respect NARUC principles preserving state retail regulatory authority.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "threshold",
+      "deposits",
+      "expedited"
+    ],
+    "pr": [
+      "cost",
+      "flex"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
