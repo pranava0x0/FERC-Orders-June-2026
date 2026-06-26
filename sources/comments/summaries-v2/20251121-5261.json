@@ -1,0 +1,208 @@
+{
+  "accession": "20251121-5261",
+  "filer": "Enchanted Rock, LLC",
+  "org_type": "demand_flex",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5261__Enchanted-Rock-LLC/Comments of Enchanted Rock, LLC (RM26-4-000) (11.21.25).txt",
+  "overall_summary": "Enchanted Rock, a microgrid developer, supports the Commission's rulemaking on large load interconnection and recommends adoption of the LCDG framework to pair new loads with on-site generation, expedited interconnection pathways for flexible loads, clarification of FERC jurisdiction over large load radial lines, and NERC standards revision to recognize load flexibility as a planning tool.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Enchanted Rock recommends that the Commission adopt policies to incorporate and incentivize load flexibility as a tool to expedite the interconnection of large loads, which in turn, will enhance grid reliability and help to ensure affordability for all classes of customers.",
+      "concern": "Recommends incentivizing load flexibility to expedite interconnection",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "LCDG is a practical and effective solution that would mitigate transmission constraints and address growing electricity demand associated with the influx of large load facilities.",
+      "concern": "LCDG mitigates transmission constraints and growing demand",
+      "bins": [
+        "pr:colo",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "LCDG would mitigate the risk of stranded infrastructure costs falling upon existing grid customers because it would ensure that new large loads would be investing in needed generation resources as they interconnect to the transmission system.",
+      "concern": "LCDG prevents stranded infrastructure costs to ratepayers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Under circumstances where transmission is unavailable, under LCDG, on-site generation assets would serve as prime power to the large load facility that are waiting for transmission upgrades to be built.",
+      "concern": "LCDG on-site generation provides interim power during transmission delays",
+      "bins": [
+        "pr:colo",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "LCDG enables loads to operate as non-firm service customers, thus allowing facilities to be studied as integrated load-generation assets to manage near-term transmission constraints and supply chain bottlenecks.",
+      "concern": "Non-firm service status reduces study scope and timelines",
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "LCDG offers dispatchable on-site generation that, under grid operator control, can be called on to reduce load or export back to the grid during peak periods, which strengthens reliability and manages grid congestion.",
+      "concern": "Dispatchable generation provides grid flexibility and congestion relief",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Commission should consider making large load facilities paired with generation, or large load facilities willing to participate under non-firm service, eligible for an expedited interconnection process.",
+      "concern": "Expedited interconnection for large loads with generation or non-firm commitment",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Efforts such as Southwest Power Pool, Inc. ('SPP')'s High Impact Large Load Generation Assessment ('HILLGA') and anticipated Conditional High Impact Large Load Service ('CHILLS') proposal are examples of proposals that will create expedited pathways for interconnecting large loads.",
+      "concern": "SPP HILLGA and CHILLS proposals as models for expedited pathways",
+      "bins": [
+        "rg:spp",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the Commission's seven-factor test may not always be suitable for determining whether a particular line is transmission (and subject to the Commission's jurisdiction) or distribution (and subject to a state's jurisdiction) in the context of large load facility interconnections.",
+      "concern": "Seven-factor test inadequate for large load jurisdictional determinations",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Enchanted Rock respectfully requests that the Commission consider whether it is appropriate to clarify its seven-factor test with respect to its application to the interconnection of large load facilities, or alternatively, to consider brightline criteria specific to the interconnection of large load facilities.",
+      "concern": "Clarify seven-factor test or establish brightline criteria for large loads",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the Commission should direct the North American Electric Reliability Corporation ('NERC') to review and revise its standards to recognize the flexibility created by large loads deploying on-site or co-located generation as a standard operational and planning tool.",
+      "concern": "NERC should revise standards to recognize load flexibility in planning",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "large loads can be made flexible with respect to the transmission system through the deployment of on-site or co-located generation. Acknowledging load flexibility during the transmission planning and interconnection processes allows transmission planners to assume lower peak demand for the associated load facility, thereby reducing the immediate need for transmission upgrades and expediting interconnection timelines.",
+      "concern": "Load flexibility lowers peak demand assumptions, reducing transmission upgrade needs",
+      "bins": [
+        "pr:flex",
+        "pr:study"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Load flexibility incentives and operational benefits",
+      "stance": "support",
+      "description": "Enchanted Rock supports Commission policies that incentivize load flexibility as a primary tool to expedite interconnection, strengthen reliability, and manage grid congestion. Flexible loads paired with dispatchable generation can reduce peak demand assumptions in transmission planning, thereby reducing upgrade needs and accelerating timelines.",
+      "quote_ids": [
+        1,
+        4,
+        6,
+        7,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-located generation and LCDG framework",
+      "stance": "support",
+      "description": "Enchanted Rock advocates for adoption of the LCDG framework, whereby load and generation are separately metered but studied together for interconnection and planning. LCDG provides interim power via on-site generation while transmission upgrades are built, mitigating transmission constraints.",
+      "quote_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Stranded infrastructure cost prevention",
+      "stance": "support",
+      "description": "LCDG ensures that new large loads invest in needed generation resources at interconnection, preventing stranded costs from falling on existing ratepayers.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study timeline and scope reduction",
+      "stance": "support",
+      "description": "Non-firm service status for loads with generation allows facilities to be studied as integrated assets, reducing study complexity and timelines while managing supply chain bottlenecks. Load flexibility lowers peak demand assumptions used in transmission planning.",
+      "quote_ids": [
+        5,
+        12
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited interconnection processes",
+      "stance": "support",
+      "description": "Enchanted Rock recommends expedited interconnection processes for large loads paired with generation or willing to operate under non-firm service, operating in parallel with prevailing queues. SPP models like HILLGA and CHILLS should be adopted by other grid operators.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC jurisdictional clarification for large load radial lines",
+      "stance": "support",
+      "description": "The seven-factor test is inadequate for determining transmission vs. distribution classification for large load radial lines. Enchanted Rock requests FERC either clarify the seven-factor test or establish brightline criteria specific to large load facility radial interconnections.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP large load expedited processes as regional models",
+      "stance": "neutral",
+      "description": "SPP's High Impact Large Load Generation Assessment (HILLGA) and Conditional High Impact Large Load Service (CHILLS) proposals are identified as examples of expedited pathways for large load interconnection that other Commission-jurisdictional grid operators should consider adopting.",
+      "quote_ids": [
+        8
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited",
+      "jurisdiction"
+    ],
+    "pr": [
+      "flex",
+      "colo",
+      "cost",
+      "study"
+    ],
+    "rg": [
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
