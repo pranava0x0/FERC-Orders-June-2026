@@ -1,0 +1,341 @@
+{
+  "accession": "20251121-5064",
+  "filer": "Solar Energy Industries Association",
+  "org_type": "clean_energy",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5064__Solar-Energy-Industries-Association/RM26-4 SEIA Comments.Final.txt",
+  "overall_summary": "SEIA supports a federal rulemaking to standardize large load interconnection but insists the Commission must ground its jurisdiction in the transmission-level authority under the Commission's seven-factor test rather than the weaker theories offered in the ANOPR. SEIA calls for a flexible pro forma agreement that accommodates co-located and BYOG arrangements, standardized deposits and readiness requirements, transparent load forecasting, and cost allocation tied to actual grid use. SEIA opposes expedited treatment for curtailable loads, arguing curtailability should simply reduce required network upgrades and study time rather than jump the queue.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the interconnection of these new large loads to the grid is governed by a patchwork of regulations and business practices that fail to deliver accurate load projections or encourage the development of generation to provide energy to those new loads.",
+      "concern": "Current rules produce inaccurate load forecasts and fail to incentivize new generation",
+      "bins": [
+        "pr:study",
+        "topic:load-forecasting"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Data centers often submit multiple interconnection requests for the same project, and some hyperscalers have acknowledged engaging with multiple utilities simultaneously for a single facility.",
+      "concern": "Duplicative interconnection requests distort load forecasts",
+      "bins": [
+        "pr:study",
+        "topic:load-forecasting"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "SEIA agrees that the Commission has the authority to issue a rulemaking to standardize the process for interconnecting large loads to the transmission system and urges the Commission to do so while recognizing state jurisdictional boundaries.",
+      "concern": "SEIA supports rulemaking authority but wants state boundaries respected",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Large loads, however, are not competitors to transmission-owning utilities; they are customers. Transmission Owners are financially motivated to attract large loads to their service territories and to provide favorable interconnection terms and conditions.",
+      "concern": "The generator-interconnection analogy for jurisdiction is legally weak because loads are customers, not competitors",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Any final rule in this proceeding must clearly limit jurisdiction to the interconnection of large loads to the Commission-jurisdictional transmission system, as defined under the Commission's seven-factor test.",
+      "concern": "Jurisdiction must be limited to transmission-level interconnections under the seven-factor test",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The Commission must make clear that grid-charging energy storage resources should not be considered load under any potential rulemaking.",
+      "concern": "Storage resources should be excluded from the large-load rule",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "In order to set a legally defensible size for which loads are considered 'large,' the Commission should request data on the average size of new large loads, as well as the demand profiles and curtailment abilities, of those loads.",
+      "concern": "The 20 MW threshold may be too low; Commission should gather data before deciding",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "SEIA recommends that the Commission allow flexibility in how these studies are conducted and prioritized so that they align appropriately with each region's existing queue and study procedures.",
+      "concern": "Study integration should be flexible, not a rigid standalone queue",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "any study of the large load and associated generation, whether co-located or not, must reflect the actual operational needs of the load.",
+      "concern": "Studies must capture the full operational profile of the specific load arrangement",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "SEIA generally supports instituting standard study deposits, readiness requirements, and withdrawal penalties for the interconnection of large loads, co-located generation and BYOG.",
+      "concern": "Supports standardized deposits, readiness, and withdrawal penalties",
+      "bins": [
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "increased site control requirements must also come with increased transparency in how the transmission providers will establish load projections.",
+      "concern": "Deposits and readiness requirements must pair with transparent load-forecasting methods",
+      "bins": [
+        "aq:deposits",
+        "topic:load-forecasting"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "The Commission should also not permit generation that agrees to be dispatchable to be expedited. As stated above, to maintain open access principles and not negatively impact generation projects that are already in the queue, BYOG arrangements must be electrically close, if not behind the same POI, then at least in the same zone.",
+      "concern": "Opposes expedited queue treatment for dispatchable co-located or BYOG generation",
+      "bins": [
+        "aq:expedited",
+        "aq:hybridrights",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "SEIA does not support this principle. The Commission should not require load that agrees to be curtailable to be explicitly expedited.",
+      "concern": "Opposes explicit expediting of curtailable loads",
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "As a general principle, SEIA agrees that if a large load interconnection request triggers a network upgrade, then that large load should pay for the upgrade.",
+      "concern": "Supports cost causation for network upgrades triggered by large loads",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "The Commission should therefore require transmission providers to develop transparent, standardized criteria for determining cost responsibility in cases where both large-load interconnections and generation projects contribute to the same transmission constraints.",
+      "concern": "Calls for clear cost-allocation methodologies when load and generation share upgrade costs",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "The Commission should instead require transmission providers to develop methodologies that allocate ancillary service and transmission costs in proportion to the level of service and reliability actually used by each customer.",
+      "concern": "Ancillary service costs should reflect actual grid use, not uniform peak-demand charges",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "The Commission should also make explicit that BYOG arrangements may include Distributed Energy Resource Aggregations (sometimes referred to as 'Virtual Power Plants' (VPPs)).",
+      "concern": "Asks the Commission to clarify that VPP aggregations qualify as BYOG",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "SEIA urges the Commission to establish incentives and efficient processes to encourage large loads to bring their own, new generation.",
+      "concern": "Urges the Commission to favor new generation paired with new load over co-location with retiring units",
+      "bins": [
+        "pr:colo",
+        "topic:new-generation-incentives"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Transmission-level jurisdiction only",
+      "stance": "mixed",
+      "description": "SEIA supports the Commission issuing a rulemaking but finds the first three jurisdictional theories in the ANOPR legally weak. SEIA argues the generator-interconnection analogy fails because loads are customers, not competitors, and that the 'affecting rates' theory extends jurisdiction too broadly. SEIA backs the fourth theory, Commission authority over transmission in interstate commerce, but only when loads connect directly to transmission under the seven-factor test and subject to state boundary limits.",
+      "quote_ids": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Size and voltage thresholds",
+      "stance": "mixed",
+      "description": "SEIA wants storage excluded from the rule and questions whether 20 MW is the right cutoff, noting that a NERC survey found most respondents defined 'large' as over 50 MW. SEIA asks the Commission to gather data on actual load sizes and demand profiles before fixing a threshold, and recommends adding a voltage criterion alongside the MW threshold.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Flexible joint study process",
+      "stance": "support",
+      "description": "SEIA supports joint study of load and associated generation but wants the Commission to allow each region to integrate large-load studies into its existing queue rather than creating a separate queue. Studies must capture the actual operational profile of each load, including islanding capability and curtailability, to avoid underestimating needed upgrades.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Deposits tied to transparency",
+      "stance": "support",
+      "description": "SEIA supports standard study deposits, readiness requirements, and withdrawal penalties to screen out speculative requests. However, SEIA conditions this support on equal transparency from transmission providers about how they will establish load projections.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Co-location and BYOG rights",
+      "stance": "mixed",
+      "description": "SEIA supports flexible co-location arrangements and wants the Commission to explicitly recognize VPP aggregations as eligible BYOG. Any additional injection rights beyond serving the associated load must go through the standard generator queue, and BYOG generators should be electrically close to the load. Ancillary service costs must reflect actual grid use rather than a uniform peak-demand standard.",
+      "quote_ids": [
+        12,
+        16,
+        17
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "No expediting for curtailability",
+      "stance": "oppose",
+      "description": "SEIA opposes the ANOPR's proposal to expedite curtailable loads or dispatchable co-located generation. Curtailability should reduce required network upgrades and therefore naturally shorten study time; creating an explicit fast track would disrupt queue order and harm projects already waiting.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Cost causation for upgrades",
+      "stance": "support",
+      "description": "SEIA agrees that loads triggering network upgrades should pay for them, consistent with Commission precedent. When load and generation are studied together, the Commission must require transmission providers to use transparent, standardized criteria to assign cost responsibility between the two.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Accurate forecasting and study",
+      "stance": "support",
+      "description": "SEIA identifies inaccurate load forecasting as the central problem: hyperscalers submit duplicative interconnection requests across multiple utilities, distorting load projections that feed wholesale markets and transmission planning. A standardized interconnection process with readiness requirements and standardized reporting by load-serving entities would improve forecast accuracy.",
+      "quote_ids": [
+        1,
+        2,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Fair and transparent cost allocation",
+      "stance": "support",
+      "description": "SEIA supports allocating network upgrade costs to the customer who triggers them and wants ancillary service costs set in proportion to actual grid use. The Commission must require clear methodologies for cases where load and generation jointly cause the same upgrade need.",
+      "quote_ids": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location and new generation",
+      "stance": "support",
+      "description": "SEIA supports flexible co-location frameworks, including BYOG with VPP aggregations, but draws a line at preferential access. Co-located generators seeking injection rights beyond load service must use the standard queue, and BYOG generators should be in the same electrical zone as the load. SEIA urges the Commission to create incentives for new generation rather than repurposing retiring units.",
+      "quote_ids": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility in pro forma agreement",
+      "stance": "support",
+      "description": "SEIA urges the Commission to make the pro forma Large Load Interconnection Service Agreement adaptable to different load configurations, including fully islanded loads, loads with firm backup service, and flexible loads that can respond to price signals or participate in demand response. Study assumptions should reflect each load's actual operational profile.",
+      "quote_ids": [
+        9,
+        13
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Proximity requirement for BYOG",
+      "stance": "support",
+      "description": "SEIA recommends that BYOG generators be electrically close to the associated load, either behind the same point of interconnection or at least in the same zone. This limits the network upgrades triggered and preserves open access for other queue participants.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:load-forecasting",
+      "name": "Load forecast accuracy and reporting",
+      "stance": "support",
+      "description": "SEIA argues that inaccurate utility load forecasts are the root problem, driven by duplicative data center interconnection requests and inconsistent utility methodologies. SEIA asks the Commission to require standardized reporting by load-serving entities and transparent forecasting assumptions, pairing any new deposit requirements with equal transparency from transmission providers.",
+      "quote_ids": [
+        1,
+        2,
+        11
+      ]
+    },
+    {
+      "key": "topic:new-generation-incentives",
+      "name": "Incentives for new generation",
+      "stance": "support",
+      "description": "SEIA urges the Commission to create incentives and efficient processes that encourage large loads to bring new generation rather than co-locating with retiring capacity, which removes existing supply from the grid without adding new supply.",
+      "quote_ids": [
+        18
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

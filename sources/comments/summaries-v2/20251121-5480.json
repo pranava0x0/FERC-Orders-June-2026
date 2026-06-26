@@ -1,0 +1,353 @@
+{
+  "accession": "20251121-5480",
+  "filer": "National Grid Plc",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5480__National-Grid-Plc/NG Initial Comments on Large Loads ANOPR - RM26-4.txt",
+  "overall_summary": "National Grid supports establishing standardized large load interconnection rules but urges the Commission to exercise FPA jurisdiction narrowly to avoid displacing state authority over retail service. The filing argues that cost allocation should follow a beneficiary-pays approach rather than the 100% up-front CIAC model used for generator interconnections, and calls for regional flexibility on thresholds, hybrid facility study processes, and transition periods.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "National Grid strongly supports the statement of the Secretary that \"large loads, including AI data centers, served by public utilities must be able to connect to the transmission system in a timely, orderly, and non-discriminatory manner.\"",
+      "concern": "National Grid endorses the Secretary's goal of timely, non-discriminatory large load interconnection",
+      "bins": [
+        "pr:study",
+        "topic:interconnection-framework"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Federal jurisdiction over large load interconnections to the transmission grid should be positioned as an accelerant to State objectives.  Assertion of FPA jurisdiction should be done in a manner that is narrowly tailored to interconnection as proposed in the ANOPR, so that the Commission's narrow jurisdiction over large load interconnection does not interfere with State jurisdiction over retail service while enabling collaboration that benefits customers and the grid.",
+      "concern": "Federal jurisdiction must be narrow and must not override state authority over retail service",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:federal-state-balance"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "A final rule should reflect this reality and be limited to truly large loads as defined on a region-by-region basis, which in most regions, including New York and New England, is likely to be at a higher MW threshold than 20 MW.",
+      "concern": "The 20 MW threshold is too low; regions should set their own thresholds",
+      "bins": [
+        "aq:threshold",
+        "rg:isone",
+        "rg:nyiso"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "It would not be just and reasonable to apply a 100% up-front Contributions in Aid of Construction (\"CIAC\") framework (as used for certain transmission facilities built to accommodate generator interconnections) to all transmission network upgrades triggered by large load interconnections.",
+      "concern": "Applying the generator CIAC model to large load network upgrades would be unjust",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Cost allocation approaches should take into account the principle that \"beneficiaries pay\" for the cost of network transmission investment, including both requesting customers and all transmission system users where both benefit.",
+      "concern": "Network upgrade costs should be spread to all who benefit, not solely assigned to the requesting customer",
+      "bins": [
+        "pr:cost",
+        "topic:beneficiary-pays"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "National Grid is concerned that a bright line 20 MW test for defining \"large loads\" will not be workable in many regions of the nation.  Such a low threshold could subject smaller projects with minimal reliability impact or required upgrades to a cluster study process or other large load interconnection process in the NYISO and ISO-NE regions that extends for a long time.",
+      "concern": "A uniform 20 MW threshold would delay small projects that could connect faster outside the large load process",
+      "bins": [
+        "aq:threshold",
+        "rg:nyiso",
+        "rg:isone"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Large loads interconnecting to the transmission system and generator interconnection customers occupy fundamentally different roles within the electric grid.  Generators function as wholesale electricity suppliers, feeding power into the system, while large loads are retail end-use consumers that draw power from the grid and pay delivery charges for their use of the electric system.",
+      "concern": "Load and generator interconnection customers are fundamentally different and must be treated differently",
+      "bins": [
+        "aq:hybridrights",
+        "pr:cost",
+        "topic:load-vs-gen-distinction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "A rate design where a public utility is not permitted to earn a sufficient return on the significant capital investment necessary to provide interconnection service to large loads would violate Supreme Court standards and deprive public utilities of their property in violation of the Constitution.",
+      "concern": "Denying utilities a return on large load network upgrades would be unconstitutional",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:utility-return-on-investment"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Allowing large load interconnection customers the option to construct their own network upgrades introduces risks that could jeopardize overall system reliability.  National Grid believes that maintaining transmission owner control over these upgrades is essential to ensure consistency, safety, and long-term system integrity.",
+      "concern": "Transmission owners must retain control over network upgrades to protect reliability",
+      "bins": [
+        "aq:upgradecost",
+        "pr:study",
+        "topic:to-build-rights"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Rather than subjecting these projects to full cluster study timelines, the Commission could explore exemptions or streamlined processes for hybrid facilities where generation is primarily intended to serve the associated load.",
+      "concern": "Hybrid co-located facilities should get a streamlined study track, not full cluster study timelines",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Large loads that agree to be curtailable or otherwise flexible offer the potential to reduce costly network upgrades, make better use of existing transmission capacity, and accelerate interconnection timelines.",
+      "concern": "Curtailable loads can cut upgrade costs and speed interconnection",
+      "bins": [
+        "pr:flex",
+        "topic:curtailable-loads"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Establishing a reasonable transition period is essential to ensure a smooth regulatory shift while maintaining continuity for large load interconnection projects already in advanced stages under retail interconnection procedures.",
+      "concern": "Projects in advanced stages under existing rules need a transition period to avoid disruption",
+      "bins": [
+        "aq:expedited",
+        "topic:transition-period"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "The NYISO already has procedures in place to study large loads interconnecting to the transmission system.  Allowing the NYISO and other regions to leverage these existing processes will help avoid unnecessary delays and support innovation.",
+      "concern": "Existing regional procedures like NYISO's should be preserved and built upon, not overridden",
+      "bins": [
+        "rg:nyiso",
+        "pr:study",
+        "topic:regional-flexibility"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Narrow Federal Jurisdiction",
+      "stance": "mixed",
+      "description": "National Grid accepts that FERC may assert FPA jurisdiction over large load interconnections but insists that authority be confined to transmission interconnection requirements. State control over retail service rates and conditions must remain undisturbed. Federal oversight should accelerate state objectives, not override them.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Region-Set MW Thresholds",
+      "stance": "oppose",
+      "description": "National Grid opposes a uniform 20 MW bright-line threshold. In New York and New England, a threshold of 50 MW to 80 MW would be more appropriate to avoid pulling small projects into lengthy cluster study processes. Each region should set its own threshold.",
+      "quote_ids": [
+        3,
+        6
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Streamlined Hybrid Facility Treatment",
+      "stance": "support",
+      "description": "National Grid supports special treatment for hybrid load-plus-generation facilities. They should receive streamlined study tracks rather than full generator cluster study timelines. Operating parameters and injection limits should be set by contract, not remedial action schemes.",
+      "quote_ids": [
+        7,
+        10
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Transition Period for In-Flight Projects",
+      "stance": "support",
+      "description": "National Grid calls for a transition period that allows projects already in advanced stages under existing retail interconnection rules to continue without reevaluation under new criteria. This mirrors the approach used in Order No. 2023 and protects investment-backed expectations.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "No CIAC Model for Network Upgrades",
+      "stance": "oppose",
+      "description": "National Grid opposes applying the generator CIAC (100% up-front customer contribution) model to large load network upgrades. Utilities must earn a return on those investments or face constitutional takings claims. Direct assignment without a return component is unjust and unreasonable.",
+      "quote_ids": [
+        4,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Standardized but Flexible Study Rules",
+      "stance": "support",
+      "description": "National Grid supports a uniform federal framework as a baseline for large load interconnection studies but requires regional flexibility to adapt timelines and procedures. Using generator interconnection rules as a starting point is acceptable so long as the differences between load and generation customers are recognized.",
+      "quote_ids": [
+        1,
+        9,
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Beneficiary-Pays Cost Allocation",
+      "stance": "support",
+      "description": "National Grid argues that network upgrade costs should be allocated to beneficiaries, including both the triggering large load and other system users who gain benefit. Direct assignment of 100% of costs to the requesting customer would be unjust, create free-ridership for other users, and deprive utilities of a constitutionally required return.",
+      "quote_ids": [
+        4,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-Location Study Exemptions",
+      "stance": "support",
+      "description": "National Grid supports exemptions or tailored study tracks for hybrid co-located facilities where on-site generation primarily serves the associated load. This avoids subjecting data center projects to the full 567-day NYISO cluster study cycle and encourages co-location.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility Reduces Upgrade Costs",
+      "stance": "support",
+      "description": "National Grid supports policies that incentivize large loads to accept curtailment or other flexibility commitments. Flexible loads can reduce or defer costly network upgrades, use existing capacity more efficiently, and accelerate interconnection timelines. Operational safeguards must accompany any flexibility arrangements.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "rg:nyiso",
+      "name": "Build on NYISO Existing Procedures",
+      "stance": "support",
+      "description": "National Grid highlights NYISO's existing large load interconnection procedures as a model the Commission should allow regions to build upon. The NYISO cluster study cycle is approximately 567 days; a 20 MW threshold would overwhelm that process with small projects that could connect faster outside it.",
+      "quote_ids": [
+        3,
+        6,
+        13
+      ]
+    },
+    {
+      "key": "rg:isone",
+      "name": "ISO-NE Regional Threshold Needs",
+      "stance": "support",
+      "description": "National Grid notes that a 20 MW threshold would also be too low for the ISO-NE region, where a higher threshold appropriate to local grid characteristics should apply. Regional flexibility for ISO-NE is needed to avoid burdening small commercial and industrial projects with large load study timelines.",
+      "quote_ids": [
+        3,
+        6
+      ]
+    },
+    {
+      "key": "topic:interconnection-framework",
+      "name": "Uniform Rules Reduce Uncertainty",
+      "stance": "support",
+      "description": "National Grid supports establishing a standardized federal framework because uncertainty about the rules delays projects, inflates cost estimates, and undermines stakeholder confidence. Clear, predictable rules benefit both transmission owners and large load customers.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:federal-state-balance",
+      "name": "Federal Jurisdiction as State Accelerant",
+      "stance": "mixed",
+      "description": "National Grid frames the jurisdictional question as a matter of positioning federal authority to complement, not displace, state regulatory objectives. It cites Massachusetts law requiring all customers to be served through local distribution utilities as a concrete example of state retail authority that must be preserved.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "topic:beneficiary-pays",
+      "name": "Spread Costs to All Beneficiaries",
+      "stance": "support",
+      "description": "National Grid argues that network upgrades driven by large loads often benefit the broader transmission system, not just the requesting customer. Allocating all costs to the triggering customer creates free-ridership for other users and is inconsistent with court-affirmed cost causation principles.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:load-vs-gen-distinction",
+      "name": "Load and Generator Rules Differ",
+      "stance": "support",
+      "description": "National Grid draws a clear line between generators, which inject power and do not pay transmission access charges in ISO-NE and NYISO, and large loads, which draw power and pay delivery charges. Rules just and reasonable for generators will not necessarily be just and reasonable for large loads.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:utility-return-on-investment",
+      "name": "Utilities Must Earn Return on Upgrades",
+      "stance": "oppose",
+      "description": "National Grid argues that any framework barring utilities from earning a return on network upgrade investments would violate constitutional standards set in Bluefield and Hope Natural Gas and amount to compelled service on a not-for-profit basis.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:to-build-rights",
+      "name": "Transmission Owners Build Network Upgrades",
+      "stance": "support",
+      "description": "National Grid supports allowing large load customers to build sole-use interconnection facilities but opposes extending that option to network upgrades. Transmission owner control over network upgrades is needed for safety, consistency, and long-term system integrity.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:curtailable-loads",
+      "name": "Curtailment Commitments Speed Connection",
+      "stance": "support",
+      "description": "National Grid supports flexibility and curtailment commitments as a way to reduce upgrade requirements and accelerate timelines. It notes these arrangements require strong operational protocols and that savings from avoided upgrades are likely larger than savings from shorter study timelines.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:transition-period",
+      "name": "Protect In-Flight Projects from New Rules",
+      "stance": "support",
+      "description": "National Grid urges a transition period shielding projects in advanced stages of development from reevaluation under new criteria, consistent with the Order No. 2023 transition approach. This avoids disrupting investments made in reliance on existing state regulatory frameworks.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:regional-flexibility",
+      "name": "Regions Adapt Federal Baseline",
+      "stance": "support",
+      "description": "National Grid supports a final rule that sets a federal baseline while allowing ISOs, RTOs, and transmission owners to adapt requirements to regional market characteristics. Regions with existing procedures should be allowed to build on them rather than start over.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "hybridrights",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex"
+    ],
+    "rg": [
+      "nyiso",
+      "isone"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
