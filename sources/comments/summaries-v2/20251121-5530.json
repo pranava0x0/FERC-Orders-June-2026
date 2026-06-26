@@ -1,0 +1,215 @@
+{
+  "accession": "20251121-5530",
+  "filer": "Voltus, Inc., Sparkfund, Cloverleaf Infrastructure",
+  "org_type": "demand_flex",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5530__Voltus-IncSparkfundCloverleaf-Infrastructure/RM26-4 Comments of Distributed Capacity Parties.txt",
+  "overall_summary": "The Distributed Capacity Parties urge FERC to direct RTOs/ISOs to grant expedited interconnection studies to large loads that provide curtailable or dispatchable distributed capacity, including demand flexibility, storage, and generation located on the distribution system, arguing that such resources can mitigate transmission constraints faster than traditional generation and should be studied together with the load in a holistic framework.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the Distributed Capacity Parties respectfully urge the Federal Energy Regulatory Commission (\"FERC\" or \"Commission\") in any subsequent rulemaking to direct the Regional Transmission Organizations/Independent System Operators (\"RTO/ISOs\") to develop mechanisms for granting expedited interconnection studies to large loads that provide curtailable and/or dispatchable distributed assets (aka Distributed Capacity) capable of mitigating potential system constraints attributable to the new large loads.",
+      "concern": "Request expedited interconnection for large loads paired with distributed capacity to mitigate constraints",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The ANOPR Seventh Principle should include incremental Distributed Capacity in the form of load flexibility, storage, and/or generation capacity whose location can address capacity and transmission constraints projected to be caused by the new large loads, even if such capacity is located on the distribution system.",
+      "concern": "Expand ANOPR Principle 7 to include distribution-level capacity for constraint relief",
+      "bins": [
+        "pr:flex",
+        "pr:colo",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Distributed capacity assets are installed today across critical footprints, are readily installable en masse, and may be aggregated into utility-scale assets on a timeline of months rather than years.",
+      "concern": "Distributed capacity can be deployed faster than traditional generation",
+      "bins": [
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "In 2023 alone, the Southwest Power Pool (\"SPP\") added approximately 431 MW new demand response resource capability, equivalent to a large power plant.",
+      "concern": "Demand response is already providing utility-scale capacity quickly in SPP",
+      "bins": [
+        "pr:flex",
+        "rg:spp"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Another 500 MW power plant could be added by interconnecting to the distribution system a mere 200 batteries of 1-5 MW size.",
+      "concern": "Distribution-connected battery storage can provide large capacity contributions",
+      "bins": [
+        "pr:flex",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "hyperscalers could more than meet their total planned capacity needs by paying for battery storage as well as rooftop solar for homes well suited for it.",
+      "concern": "Distributed residential resources can meet large load capacity needs",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "If the Commission truly wants to bring all American resources to bear in service of interconnecting large loads, Distributed Capacity is one of the only resource types that can be enlisted on a timeline that matches the urgency of the challenge at a scale that counts.",
+      "concern": "Distributed capacity is the only resource type that can meet the urgent timeline for large load interconnection",
+      "bins": [
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "New large loads that bring their own capacity—in whatever form—should be studied together with that capacity.",
+      "concern": "Large loads and co-located or nearby capacity should be studied holistically",
+      "bins": [
+        "pr:study",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "siting a new large load while considering the location of installed but underutilized grid resources and proposed aggregations of the same can save on network upgrades.",
+      "concern": "Using existing and proposed distributed resources can reduce network upgrade costs",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "new capacity supporting large loads need not be physically co-located at the facility, but can be distributed across the geographic area within which the new load will impact system constraints, provided that the system operator has the requisite level of control to integrate the facility into operations and system planning.",
+      "concern": "Distributed capacity serving the same load impact zone can count toward meeting interconnection requirements without being at the same site",
+      "bins": [
+        "pr:colo",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "ANOPR Principle Seven should be broadened to leverage all available resources. The Principle as written does not recognize the reduced impact of an interconnecting load that brings on (contracts for) demand-side flexibility or capacity not physically \"within the fence-line\" of the facility but still appropriately located to relieve constraints.",
+      "concern": "ANOPR Principle 7 should recognize demand-side flexibility located outside the facility boundary if it relieves constraints",
+      "bins": [
+        "pr:flex",
+        "pr:colo",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "capacity—including batteries, generation, and demand response (DR)—should be geographically transferable in the form of capacity credits as defined by the wholesale market, or within the TOs system planning paradigm.",
+      "concern": "Distributed capacity should be recognized as geographically transferable via capacity credits for constraint relief",
+      "bins": [
+        "pr:colo",
+        "pr:flex"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Distributed capacity for constraint relief and rapid deployment",
+      "stance": "support",
+      "description": "The filers emphasize demand flexibility, batteries, and distributed generation as available today and deployable in months rather than years. These resources provide utility-scale capacity equivalent to large traditional plants and should be leveraged to mitigate constraints caused by new loads and accelerate interconnection timelines.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Electrical proximity and joint study of capacity with loads",
+      "stance": "support",
+      "description": "Large loads should be studied jointly with nearby or electrically proximate distributed capacity, even if not physically at the same site, to exploit network savings. Such resources can be distributed across the load's impact zone and recognized via capacity credits within wholesale market frameworks.",
+      "quote_ids": [
+        2,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Holistic study of loads and distributed capacity together",
+      "stance": "support",
+      "description": "Large loads and their associated or nearby distributed capacity should be studied together as an integrated system to properly credit the capacity's role in mitigating transmission and capacity impacts.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Network upgrade cost reduction via distributed resources",
+      "stance": "support",
+      "description": "Using installed or quickly deployable distributed resources to meet capacity and constraint needs can avoid or reduce costly network upgrades that would otherwise be required to serve large loads.",
+      "quote_ids": [
+        3,
+        7,
+        9
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "ANOPR Principle Seven expansion for expedited studies",
+      "stance": "support",
+      "description": "The filers seek to broaden ANOPR Principle Seven to explicitly recognize that large loads bringing non-co-located but appropriately sited distributed capacity, including demand flexibility, deserve expedited interconnection treatment.",
+      "quote_ids": [
+        1,
+        2,
+        11
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "Southwest Power Pool as example of demand response scale",
+      "stance": "neutral",
+      "description": "The filers cite SPP's 2023 addition of 431 MW of demand response as evidence that distributed capacity can scale rapidly to utility-grade levels.",
+      "quote_ids": [
+        4
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited"
+    ],
+    "pr": [
+      "flex",
+      "colo",
+      "study",
+      "cost"
+    ],
+    "rg": [
+      "spp"
+    ]
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

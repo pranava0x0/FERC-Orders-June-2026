@@ -1,0 +1,211 @@
+{
+  "accession": "20251205-5330",
+  "filer": "Voltus, Inc.SparkfundCPower, Inc.",
+  "org_type": "demand_flex",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5330__Voltus-IncSparkfundCPower-Inc/Reply Comments of the Distributed Capacity Parties.txt",
+  "overall_summary": "The Distributed Capacity Parties (CPower, Sparkfund, Voltus) support expedited interconnection for large loads paired with off-site distributed energy resources that are appropriately located to address transmission constraints. They argue that dispatchability and ability to mitigate constraints, not physical co-location, should determine resource eligibility, and present evidence that off-site solutions (bring-your-own-capacity) reduce timelines and consumer costs.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "that large loads . . . that enter into arrangements with another appropriately located load aggregation to provide . . . curtailment be considered when exploring expedited interconnection processes that respect existing queue positions.",
+      "concern": "expedited interconnection for loads with contracted curtailment capacity",
+      "bins": [
+        "aq:expedited",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "can be distributed across the geographic area within which the new load will impact system constraints, provided that the system operator has the requisite level of control to integrate the facility into operations and system planning.",
+      "concern": "flexibility can be geographically distributed if operator has control",
+      "bins": [
+        "pr:proximate",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "[s]uch resources may share a point of interconnection or be in close (electrical) proximity to one another . . . and may warrant accelerated treatment to connect to the grid",
+      "concern": "electrical proximity justifies accelerated interconnection",
+      "bins": [
+        "aq:expedited",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "offset their load through the addition of timely, local, and adequate capacity resources",
+      "concern": "capacity resources should be local and geographically consistent",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "what matters is equivalent, verifiable performance in mitigating constraints within the same constrained transmission pocket or local grid area, not whether the asset is physically inside or outside the facility fence line.",
+      "concern": "performance in constraint mitigation is the criterion, not site location",
+      "bins": [
+        "topic:performance-over-location",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Off-site distributed energy resources (\"DERs\") can deliver the same types of energy services—generation, load reduction, or transmission relief—that on-site assets provide.",
+      "concern": "off-site DERs deliver same services as on-site resources",
+      "bins": [
+        "pr:flex",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The defining feature of resource adequacy is dispatchability, not geography.",
+      "concern": "dispatchability determines adequacy, not geographic location",
+      "bins": [
+        "topic:performance-over-location",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "appropriately located off-site resources provide network benefits on par with those provided by on-site resources, and should be studied and interconnected with equivalent priority.",
+      "concern": "off-site resources should receive equivalent priority in studies and interconnection",
+      "bins": [
+        "pr:study",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "such adjacent flexibility refers to the ability to coordinate with nearby or aggregated resources (e.g., a local VPP) via a software interface, so that the net effect reduces withdrawals on constrained parts of the grid.",
+      "concern": "adjacent flexibility via coordinated resources reduces constrained-area withdrawals",
+      "bins": [
+        "pr:flex",
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "VPPs should be considered for their potential to alleviate transmission network constraints and capacity needs associated with the interconnection of large loads.",
+      "concern": "VPPs as tools for transmission constraint and capacity relief",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "[Capacity] solutions need not originate at the site of a new large load but could be incremental flexibility that is contracted by that large load and that is located such that it counteracts the impacts of the new large load.",
+      "concern": "off-site contracted flexibility can counteract load impacts if appropriately sited",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "distributed solutions significantly mitigate system costs borne by consumers, placing downward pressure on rates in a load growth environment",
+      "concern": "off-site solutions reduce consumer costs and rates",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "BYOC internalizes $326 million in capacity costs per GW, with the data center procuring accredited resources directly and offering them into the market to increase supply.",
+      "concern": "quantified cost savings: $326 million per GW from off-site capacity",
+      "bins": [
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:expedited",
+      "name": "expedited interconnection processes",
+      "stance": "support",
+      "description": "The filer supports expedited interconnection for large loads that have contracted off-site resources capable of addressing transmission constraints. Electrical proximity and contractual arrangements, not physical co-location, should enable faster interconnection.",
+      "quote_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "appropriately located off-site capacity",
+      "stance": "support",
+      "description": "Off-site distributed resources located within the constrained transmission area or local grid provide equivalent network benefits to co-located assets and should receive equivalent treatment in studies and interconnection. Appropriateness is determined by the resource's ability to mitigate the load's impacts, not its physical fence-line location.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        11
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "flexible off-site distributed resources",
+      "stance": "support",
+      "description": "Off-site DERs, VPPs, and adjacent aggregated resources deliver the same generation, load reduction, and transmission relief services as on-site assets. Flexible technologies including demand response and coordinated resource aggregations should be recognized as equivalent providers of system support.",
+      "quote_ids": [
+        2,
+        6,
+        7,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "cost and rate impacts of distributed solutions",
+      "stance": "support",
+      "description": "Off-site distributed solutions and bring-your-own-capacity (BYOC) programs significantly reduce consumer costs and place downward pressure on rates. Research quantifies that BYOC can internalize $326 million in capacity costs per GW while accelerating data center interconnection timelines.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "joint studies including off-site resources",
+      "stance": "support",
+      "description": "Off-site resources should be studied alongside large load interconnection requests on equivalent terms, with system operator control enabling their integration into operations and planning.",
+      "quote_ids": [
+        6,
+        8
+      ]
+    },
+    {
+      "key": "topic:performance-over-location",
+      "name": "performance and dispatchability as primary criteria",
+      "stance": "neutral",
+      "description": "The filer frames the technical and policy argument that performance in mitigating constraints and the ability to dispatch resources are the defining features of resource adequacy, not geographic location or physical co-location.",
+      "quote_ids": [
+        5,
+        7
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited"
+    ],
+    "pr": [
+      "proximate",
+      "flex",
+      "cost",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
