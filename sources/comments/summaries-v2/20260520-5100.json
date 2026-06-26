@@ -1,0 +1,202 @@
+{
+  "accession": "20260520-5100",
+  "filer": "Southern Company Services, Inc., Alabama Power Company, Georgia Power Company, Mississippi Power Company",
+  "org_type": "transmission_owner",
+  "filed": "05/20/2026",
+  "source_text": "sources/comments/files/20260520-5100__Southern-Company-Services-IncAlabama-Power-Company/Southern Companies' Supplemental ANOPR Comments.txt",
+  "overall_summary": "Southern Companies support federal action on large load interconnection but urge the Commission to preserve state-led integrated planning frameworks in regions like the Southeast, where vertically integrated utilities have successfully delivered timely infrastructure, affordability protections, and queue-free generation expansion. They argue regional differences justify targeted rather than one-size-fits-all reforms, and that federal action should not impair existing state-regulated structures that are already delivering rapid large load integration.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Southern Companies re-emphasize their support for timely and cost-effective integration of large-load customers to support growth and enable economic development and bolster the nation's national security, in a way that protects existing customers",
+      "concern": "Support timely large load integration with customer protection",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Southern Companies are connecting large load retail customers quickly and efficiently, while protecting customers from cost-shifting, as identified in the ANOPR and the President's Ratepayer Protection Pledge.",
+      "concern": "Claim existing cost-shifting protections are working",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Southern Companies respectfully request that the Commission allow Southern Companies to continue building on this record of success and progress towards the ANOPR's goals, while preserving the historic jurisdiction of our state regulators over retail customer connections, the terms and conditions of which are inextricably embedded in our bundled rate mechanisms.",
+      "concern": "Request federal deference to state jurisdiction over retail connections",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "As of April 2026, 32 large load customers have committed to receive approximately 15,600 MW of electric service from Georgia Power, including executed Contracts for Electric Service for 9,572 MW of large load. In the near term, Southern Companies are finalizing 6 GW of additional large load connection agreements across Alabama and Georgia.",
+      "concern": "Document rapid large load acquisition and interconnection success",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Serving large loads requires a holistic analysis of system conditions and solutions to arrive at a prudent generation expansion and capital investment plan that balances speed, reliability, and affordability. Unlike regions that rely principally on fragmented market structures or separated transmission and resource planning functions, Southern Companies' planning framework permits coordinated evaluation of generation, transmission, distribution, fuel supply, customer commitments, and retail service obligations within a single integrated planning process subject to state oversight.",
+      "concern": "Defend integrated planning advantage over fragmented market structures",
+      "bins": [
+        "pr:study",
+        "topic:integrated-planning"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Southern Companies' experience demonstrates that coordinated state-regulated planning structures can support more timely generation development and reduce interconnection delays relative to regions currently experiencing substantial queue backlogs and infrastructure constraints.",
+      "concern": "Show state regulation reduces queues and accelerates development",
+      "bins": [
+        "pr:study",
+        "topic:queue-management"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Southern Companies' integrated resource planning process, vertically integrated structure, and existing regulatory regime, have yielded no generation interconnection queue backlog.",
+      "concern": "Claim no queue backlog in their territories",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Southern Companies have integrated large volumes of new loads in a manner that not only protects existing customers from additional costs, but actually benefits these existing customers through allocating fixed-cost recovery across a broader customer base.",
+      "concern": "Claim large loads create positive cross-subsidy for existing customers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "In December 2025, the Georgia PSC voted to approve an agreement with the Public Interest Advocacy Staff and Georgia Power that certified the construction of 9,885 MW of new energy generation, almost all of which is expected to come online by 2030, much of which to support new large load customers. The Georgia PSC concluded that its order protects existing ratepayers from increased rates, even if the data center projections do not come to fruition.",
+      "concern": "Document state approval of generation with rate protections",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "these new generation resources will ensure durable integration of large loads and are projected to result in at least $1.6 billion in savings for Georgia customers (equivalent to anticipated savings for the typical Georgia ratepayer of $100 per year) when Georgia Power files its next base rate case.",
+      "concern": "Quantify projected customer benefits from large load integration",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Georgia Power committed to a three-year base rate freeze. This rate freeze was made possible in large part by Georgia Power's success in signing up large load customers in conjunction with the rules and regulations implemented by the Georgia PSC that ensure large load customers pay all of the costs incurred to serve them.",
+      "concern": "Link cost recovery rules to rate freeze benefits",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Federal reforms should not inadvertently impair state-regulated planning and retail-service frameworks that are already rapidly developing generation, transmission, and customer-specific infrastructure needed to support large-load growth.",
+      "concern": "Caution against federal rules that undermine state frameworks",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "a one-size-fits-all rule would be counterproductive. Federal reforms should not inadvertently impair state-regulated planning and retail-service frameworks that are already rapidly developing generation, transmission, and customer-specific infrastructure needed to support large-load growth. Any federal reforms adopted in this proceeding should preserve the flexibility for states and vertically integrated utilities to continue to use coordinated bundled-service structures that are already delivering timely infrastructure development, customer protections, and reliable service.",
+      "concern": "Oppose one-size-fits-all rules; call for regional flexibility",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "To the extent the Commission determines that additional near-term federal reforms are appropriate, those reforms should focus principally on regions where wholesale market structures, transmission service constructs, and Commission-jurisdictional processes are directly implicated.",
+      "concern": "If federal reforms needed, target FERC-jurisdictional regions",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Preserve state jurisdiction over retail connections",
+      "stance": "oppose",
+      "description": "Southern Companies oppose federal action that would override state jurisdiction over retail customer connections and bundled rate mechanisms. They argue the terms and conditions of retail connections are inextricably embedded in their bundled rate structures and state regulatory oversight, which they credit for enabling rapid, affordable integration.",
+      "quote_ids": [
+        3,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "State integrated planning model delivers speed and reliability",
+      "stance": "support",
+      "description": "Southern Companies present data showing their vertically integrated, state-regulated planning framework has delivered rapid large load integration with no queue backlog, contrasting this success with fragmented market regions experiencing substantial queue delays. They argue their coordinated approach to generation, transmission, distribution, and fuel planning allows faster infrastructure development.",
+      "quote_ids": [
+        4,
+        5,
+        6,
+        7,
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost protections ensure existing customer benefits",
+      "stance": "support",
+      "description": "Southern Companies maintain that their existing cost allocation and tariff mechanisms protect existing customers from subsidizing large loads while enabling them to share in benefits through rate reductions and broader fixed-cost recovery. They cite Georgia PSC approval of 9,885 MW of new generation with rate protections, projected $1.6 billion in customer savings, and Georgia Power's three-year rate freeze as evidence.",
+      "quote_ids": [
+        1,
+        2,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "topic:integrated-planning",
+      "name": "Holistic integrated planning approach",
+      "stance": "neutral",
+      "description": "Southern Companies describe their vertically integrated planning process as enabling holistic analysis of generation, transmission, distribution, fuel supply, and customer commitments within a unified framework subject to state oversight, distinguishing this from fragmented market structures.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:queue-management",
+      "name": "Queue backlog eliminated through state coordination",
+      "stance": "support",
+      "description": "Southern Companies argue that their state-regulated, coordinated planning structures have eliminated generation interconnection queue backlogs that plague other regions, demonstrating the effectiveness of integrated state regulation.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "study",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
