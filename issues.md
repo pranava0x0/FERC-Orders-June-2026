@@ -64,6 +64,20 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-06-26 · a11y/UX · Respondent-roster "Show all" toggle dominated the org pills.** The
+  `.cm-showmore` button had `min-height: 44px` + bold accent text + a heavy `rule-strong` border, so it
+  rendered ~44 px tall next to ~18 px org pills and read as a primary CTA. Root cause: **code** — the
+  44 px touch-target was applied unconditionally (it only matters for touch). Fix: chip-scale by default
+  (font-weight 600, lighter border, `1px 9px` padding) with a quiet rotating chevron; the 44 px target is
+  restored under `@media (pointer: coarse)`. Commit on `claude/comments-tagbar-docs`. Status: **Fixed**.
+
+- **2026-06-26 · prose · New bin-detail foot-note shipped an em-dash + "X, not Y" parallelism.** The
+  Comments-tab "Read the audited analysis" foot-note read "…drawn from — the audit trail… Stance is the
+  filer's, not ours." — both patterns the `no-ai-isms` rule says to strip from displayed copy. Caught in
+  the self-review of PR #4. Root cause: **code** (AI-register slipped into UI copy). Fix: reworded with the
+  same meaning, no em-dash, no stark contrast. Regression bar: the existing prose lint; reviewers scan UI
+  copy. Status: **Fixed**.
+
 - **2026-06-24 · data · Respondent counts recounted from the OCR'd order captions.** The displayed
   "N named transmission owners" was off for two orders: MISO showed "~31" (an estimate) but the caption
   lists **30**; SPP showed "23" but the caption lists **22**. PJM's page-1 caption is OCR-linearized

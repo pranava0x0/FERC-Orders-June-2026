@@ -209,7 +209,9 @@ For a large list of analyzed items (the 268 audited comments), three patterns ma
 - **Stance map first.** Before the list, a stacked horizontal bar per category (support / oppose / mixed / no-position) with a color legend gives the lay of the land at a glance — the single most useful entry point. Each bar is `role="img"` with a full `aria-label` ("Cost allocation: 187 support, 33 oppose, …") because the segments are a lossy visual; the number lives in the label so screen readers and tests still get it. Always give a denominator.
 - **Per-row deep-dive is a native `<details>`.** No JS toggle — `details > summary` is accessible for free (keyboard, `aria-expanded` built in). Collapse the heavy synthesis (summary + position chips) behind "Read the audited analysis"; the row stays scannable, the detail is one click away. The summary is a ≥ 44 px tap target.
 - **Positions as stance-colored chips**, each a named bin tinted by the filer's stance (green support / red oppose / amber mixed / gray neutral), with the stance also in `sr-only` text (color is never the only signal). Reuse the existing stance tokens — do not invent a parallel palette.
-- **Show-more past a small N.** A roster (every org per camp) shows the first few, then a real `<button>` (`aria-expanded`, 44 px) reveals the rest via `display: contents` on a wrapper `<span>` (not the `hidden` attr — see § 12.1). Dedupe to distinct entities and state that the count is filings, not orgs.
+- **The evidence layer is lazy-loaded, not embedded.** Each chip's full backing (a plain description + the verbatim quotes) is too heavy to ship in the up-front index across a big corpus (~1.8 MB over 268 letters → would 5× the page data). Emit one small file per item (`docs/data/comments/<acc>.json`) and `fetch` it on the row's first open (relative URL for a Pages subpath; cache in a `Map`; `aria-busy` + a `role=status` loading line). Render the positions **grouped by the same lenses the rest of the tab uses** (questions / principles / regions / other), each group a small heading. A test traces every emitted file bin-for-bin and quote-for-quote back to source.
+- **Make the filter vocabulary discoverable.** Don't hide the queryable tags on per-row chips alone — a collapsible "filter by tag" bar lists the whole vocabulary grouped by lens, each tag carrying its **match count**. Compute the count the same way the filter matches (over the row search strings) so a tag's number equals the result you get clicking it. Clicking any tag (bar or row) drives the one search box.
+- **Show-more past a small N.** A roster (every org per camp) shows the first few, then a real `<button>` (`aria-expanded`) reveals the rest via `display: contents` on a wrapper `<span>` (not the `hidden` attr — see § 12.1). Dedupe to distinct entities and state that the count is filings, not orgs. Keep the toggle **chip-scale** beside the pills, not a 44 px-tall CTA — restore the 44 px touch target only under `@media (pointer: coarse)` (see § 12.12).
 
 ### 8.10 Stat row — one number per real thing
 
@@ -356,6 +358,10 @@ A browser serving an old `app.js` is the most common silent frontend failure —
 ### 12.11 Mobile collapse must be deterministic
 
 Don't drive a responsive show/hide off the `hidden` attribute or a native `<details open>` default alone — once restyled, their behavior is inconsistent across breakpoints. Drive open/closed from a `matchMedia` listener with an explicit `display: none` per breakpoint (collapsed on mobile, forced visible on desktop), so the state never rides on attribute quirks. (`<details>` is still the right primitive for *user-toggled* disclosure per § 7 — this is about *breakpoint-driven* collapse.)
+
+### 12.12 The 44 px touch target is for *touch* — don't let it bloat desktop
+
+A `min-height: 44px` on a small inline control (a "show more" toggle, a tag) makes it tower over the lightweight chips beside it on desktop and read as a primary CTA. The 44 px guideline (§ 9) is about coarse pointers. Style the control at its natural chip scale and restore the touch target only where it applies: `@media (pointer: coarse) { … min-height: 44px; padding: … }`. Same number, applied where it matters — desktop stays visually quiet, touch stays comfortable.
 
 ---
 

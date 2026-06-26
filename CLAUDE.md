@@ -171,7 +171,7 @@ A living audit trail in the project root.
 - Colors, enums, constants in a dedicated file — never inline.
 - Data transforms in hooks/utils, not components.
 - Loading, error, and empty states on every view. Visible focus indicators on every interactive element.
-- **Mobile-first**; test at 375px before declaring done. **Touch targets ≥ 44px.**
+- **Mobile-first**; test at 375px before declaring done. **Touch targets ≥ 44px on touch** — apply the 44px floor under `@media (pointer: coarse)`, so a small inline control (a "show more" toggle, a tag) keeps its natural chip scale on desktop instead of bloating into a CTA next to the lightweight elements beside it.
 - **Deduplicate image assets;** `<picture>` + `srcset` for AVIF/WebP/PNG. Never serve uncompressed PNGs for content. **Descriptive `alt`** on every content image.
 - **Only load libraries used on the page.** No backend-only deps in read-only frontends.
 - **Responsive CSS, not duplicate DOM trees.**

@@ -143,6 +143,9 @@ Default verification matrix (project-specific `AGENTS.md` should override with c
 3. Build that. Add tests alongside. Use the feature in the browser / CLI.
 4. Commit at the natural boundary (per module, per fix, per doc update).
 
+- **Heavy per-item detail is lazy-loaded, never embedded.** When a per-record deep-dive (verbatim quotes, long descriptions) would bloat the always-loaded page data, emit one small file per item under `docs/data/<set>/<id>.json` and `fetch` it on first open (relative URL for the Pages subpath; cache in a `Map`; `aria-busy` + `role=status` on load). Test that every emitted file traces back to source (`tests/comment-detail.test.mjs` is the template). See `DESIGN.md` § 8.9.
+- **A filter chip's count must equal its click result.** If a tag/facet shows a number, compute it over the same strings the filter scans, so "Cost · 238" → "238 of 273" on click. Mismatched counts read as a bug.
+
 ### Adding a new vocabulary item (theme, category, tier)
 
 This is a schema change. **Don't do this casually.** Steps:
