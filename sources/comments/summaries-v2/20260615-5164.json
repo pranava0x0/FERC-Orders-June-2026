@@ -1,0 +1,285 @@
+{
+  "accession": "20260615-5164",
+  "filer": "Electricity Customer Alliance",
+  "org_type": "industrial",
+  "filed": "06/15/2026",
+  "source_text": "sources/comments/files/20260615-5164__Electricity-Customer-Alliance/RM26-4-000 Supplemental Comments 6.15.26 w Exhibit A.txt",
+  "overall_summary": "ECA submits a new research report (Federal Transmission Pricing Volume 2) for the Commission's consideration, arguing that adding new large loads need not raise rates for existing customers but only if transmission planning, cost allocation, and cost recovery policies keep pace with unprecedented load growth. The filing presents twelve federal transmission pricing options across four categories and concludes that the most durable path combines strong state retail tariffs, improved federal-state coordination, enhanced transparency, and targeted federal reforms where state-level tools cannot reach. ECA does not advocate a single preferred option, offering the report as a framework for evaluating tradeoffs.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the timing of cost recovery can be as important as the ultimate allocation of costs. Transmission costs may enter rates before anticipated load growth fully materializes, creating a risk that existing customers temporarily or permanently bear costs incurred to serve future demand.",
+      "concern": "Timing mismatch between when transmission costs enter rates and when large loads actually show up",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "no single transmission cost allocation methodology is likely to address all stakeholder concerns. More targeted approaches may better align with cost-causation principles but may also generate disputes regarding attribution of transmission needs and costs.",
+      "concern": "No one-size-fits-all cost allocation method exists; tradeoffs persist across options",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "improved transparency and enhanced federal-state coordination (on a more detailed level than has existed to date) are likely to be critical regardless of the specific policy path selected.",
+      "concern": "Federal-state coordination and transparency are essential regardless of which reform path is chosen",
+      "bins": [
+        "pr:cost",
+        "topic:federal-state-coordination"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "States remain primarily responsible for designing retail tariffs and customer-specific arrangements intended to ensure that large loads bear an appropriate share of system costs. Those efforts are more effective when states have clear visibility into how FERC-jurisdictional transmission costs are incurred, allocated, and flowed through to load-serving entities and retail customers.",
+      "concern": "State retail tools work best when states can clearly trace FERC-approved transmission costs to large loads",
+      "bins": [
+        "topic:federal-state-coordination",
+        "topic:tariff-transparency"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Adding new electricity demand to the system need not raise rates for existing customers—and in fact can put downward pressure on existing customer rates—but that depends on the policy choices federal and state regulators make now.",
+      "concern": "Load growth rate impact depends entirely on policy choices, not inherent in growth itself",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "upfront payments, long-term service commitments, minimum billing obligations, exit charges, and financial assurance requirements may be among the most important consumer protection tools in the large load context.",
+      "concern": "Financial security mechanisms are the most direct protection against stranded costs and cost shifts",
+      "bins": [
+        "aq:deposits",
+        "pr:cost",
+        "topic:financial-security-tools"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "The federal role is therefore not necessarily to upend existing transmission pricing policies. In many cases, the more important federal task may be to ensure that the FERC-jurisdictional transmission pricing framework works effectively with state retail reforms.",
+      "concern": "Federal reform should complement rather than replace state retail large load tariffs",
+      "bins": [
+        "topic:federal-state-coordination",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "States can do a great deal through large load tariffs, but they cannot always protect customers alone where transmission planning regions and cost allocation boundaries cross state lines, or where the relevant costs are first approved and allocated under FERC-jurisdictional tariffs.",
+      "concern": "Cross-border cost allocation is beyond the reach of state retail tools and requires federal action",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:federal-state-coordination"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Bottom-up proposals from states, utilities, RTOs, large load customers, and other stakeholders should be encouraged, especially where they reflect regional differences and pursue more holistic approaches to how the system is planned and paid for.",
+      "concern": "Regional flexibility via bottom-up proposals is preferable to uniform federal mandates",
+      "bins": [
+        "pr:study",
+        "topic:bottom-up-flexibility"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "The most durable path is likely to combine strong state retail tariffs, better and more granular federal-state alignment, improved transparency, targeted federal reforms where transmission costs, planning processes, or cost allocation decisions are beyond the reach of state retail regulation, alongside innovative new customer-centric approaches to transmission planning and expansion outside traditional approaches.",
+      "concern": "Preferred overall approach combines state tariffs, federal-state alignment, transparency, and customer-led innovation",
+      "bins": [
+        "pr:cost",
+        "pr:study",
+        "topic:federal-state-coordination",
+        "topic:tariff-transparency"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "singling out large load-driven regional transmission costs may appear to improve alignment with the cost causation principle in the near term, but could undermine more efficient, multi-value regional planning that produces broader long-term benefits for consumers.",
+      "concern": "Direct assignment of regional costs to large loads risks undermining efficient multi-value planning",
+      "bins": [
+        "pr:cost",
+        "pr:proximate",
+        "topic:multi-value-planning"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "More opportunities for large load customers to directly signal their willingness to pay for needed transmission capacity and contract to do so, whether through open seasons or other innovative market-responsive approaches, would directly address concerns about cost shifts to existing customers.",
+      "concern": "Customer-led mechanisms like open seasons give large loads a direct path to pay for their own transmission needs",
+      "bins": [
+        "pr:flex",
+        "aq:hybridrights",
+        "topic:open-season"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Cost Allocation Tradeoffs",
+      "stance": "neutral",
+      "description": "ECA argues that new large loads need not raise rates for existing customers but the outcome depends entirely on transmission planning and cost allocation choices. No single allocation method resolves all concerns: targeted direct assignment aligns better with cost causation but creates disputes and risks foregoing rate-spreading benefits, while broader regional approaches risk misaligning costs with causal loads. The timing of when costs enter rates can matter as much as the ultimate allocation.",
+      "quote_ids": [
+        1,
+        2,
+        5,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Proactive Regional Planning",
+      "stance": "support",
+      "description": "ECA supports proactive, multi-value regional transmission planning rather than piecemeal reactive approaches. The filing argues that bottom-up proposals from RTOs, utilities, states, and customers should be encouraged to reflect regional differences, and that regional planning processes must be capable of accommodating large loads at reasonable cost.",
+      "quote_ids": [
+        2,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Direct Assignment Risks",
+      "stance": "mixed",
+      "description": "ECA cautions that directly singling out large load-driven regional transmission costs may seem to improve cost causation alignment but could undermine more efficient multi-value regional planning that benefits all consumers over the long term. Targeted assignment and broader regional approaches both have real tradeoffs that policymakers must weigh carefully.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Customer-Led Contracting Options",
+      "stance": "support",
+      "description": "ECA supports giving large load customers direct opportunities to signal willingness to pay and contract for needed transmission capacity, through open seasons or other market-responsive approaches. This would address cost-shift concerns while preserving customer choice.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal-State Jurisdictional Line",
+      "stance": "neutral",
+      "description": "ECA notes that state retail tools cannot reach costs approved and allocated under FERC-jurisdictional tariffs, particularly where transmission planning and cost allocation boundaries cross state lines. The filing does not advocate shifting jurisdictional boundaries but calls for the federal role to complement rather than displace state retail reform.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Financial Security Requirements",
+      "stance": "support",
+      "description": "ECA identifies upfront payments, long-term service commitments, minimum billing obligations, exit charges, and financial assurance requirements as among the most important consumer protection tools. These mechanisms, already common in retail large load tariffs, should be extended or mirrored at the federal wholesale level to reduce stranded cost risk.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Upgrade Cost Timing Risk",
+      "stance": "neutral",
+      "description": "ECA highlights that transmission costs can enter rates before large loads fully materialize, creating a risk that existing customers bear costs intended for future demand. The filing frames this timing mismatch as a core challenge for any federal reform, distinct from the question of ultimate cost allocation.",
+      "quote_ids": [
+        1,
+        5
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Innovative Service Models",
+      "stance": "support",
+      "description": "ECA supports open season models and other innovative customer-centric approaches that allow large loads to directly fund and secure needed transmission capacity, as alternatives or complements to traditional tariff-based service.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:federal-state-coordination",
+      "name": "Federal-State Alignment Gap",
+      "stance": "support",
+      "description": "ECA argues that improved federal-state coordination, at a more granular level than currently exists, is critical regardless of which reform path is chosen. States need clear visibility into how FERC-approved transmission costs are incurred, allocated, and flow to LSEs and retail customers so state retail tariffs can do their job effectively.",
+      "quote_ids": [
+        3,
+        4,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "key": "topic:tariff-transparency",
+      "name": "Cost Transparency for States",
+      "stance": "support",
+      "description": "ECA argues that state retail large load tariffs can only protect customers if states have clear visibility into which FERC-approved transmission costs are associated with large loads and how those costs flow through to LSEs and retail customers. Improved transparency is a prerequisite for effective state-level cost assignment.",
+      "quote_ids": [
+        4,
+        10
+      ]
+    },
+    {
+      "key": "topic:financial-security-tools",
+      "name": "Wholesale-Level Security Tools",
+      "stance": "support",
+      "description": "ECA argues that financial security mechanisms, including upfront payments, minimum billing, exit charges, and collateral requirements, should be among the first tools considered for consumer protection in the large load context. These tools are well-developed in retail tariffs and should be extended to the FERC-jurisdictional level.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:multi-value-planning",
+      "name": "Multi-Value Planning Preservation",
+      "stance": "support",
+      "description": "ECA cautions against reforms that could undermine efficient multi-value regional transmission planning. Singling out large load-driven costs for direct assignment may improve short-term cost causation alignment but risks forgoing the broader consumer savings that well-planned, multi-purpose regional transmission can deliver.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:bottom-up-flexibility",
+      "name": "Regional Bottom-Up Reform",
+      "stance": "support",
+      "description": "ECA encourages bottom-up proposals from RTOs, utilities, states, and large load customers, particularly where they reflect regional differences and pursue more holistic planning and payment approaches. The filing argues these proposals are generally faster and more administratively feasible than top-down federal mandates.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:open-season",
+      "name": "Open Season Interconnection Model",
+      "stance": "support",
+      "description": "ECA supports open season models as a market-responsive mechanism that lets large load customers directly signal their willingness to pay for needed transmission capacity, reducing reliance on socialized cost allocation and addressing cost-shift concerns.",
+      "quote_ids": [
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "deposits",
+      "upgradecost",
+      "hybridrights"
+    ],
+    "pr": [
+      "cost",
+      "study",
+      "proximate",
+      "flex"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-26",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
