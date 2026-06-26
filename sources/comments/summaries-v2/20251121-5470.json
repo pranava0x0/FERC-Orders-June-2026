@@ -1,0 +1,279 @@
+{
+  "accession": "20251121-5470",
+  "filer": "PPL Services Corporation",
+  "org_type": "transmission_owner",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5470__PPL-Services-Corporation/2025-11-21 PPL Comments on DOE ANOPR, RM26-4.txt",
+  "overall_summary": "PPL Services Corporation supports the ANOPR's goal of accelerating large load interconnection but argues that federal jurisdiction is not needed where state processes already work well, proposing instead a federal backstop triggered only when states slow development. PPL opposes requiring large loads to fund 100% of network upgrade costs upfront, favoring the existing utility ratemaking model with load guarantee agreements, and warns against option to build based on negative experience on the generation side. On co-location, PPL endorses system protection requirements and separate metering to prevent netting and cost subsidization of network customers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "By asserting federal jurisdiction, FERC would displace not just longstanding state jurisdiction, but the detailed processes, practices, agreements, and precedents developed over decades in each state to answer the myriad and intricate questions of retail load interconnection.",
+      "concern": "Federal jurisdiction would displace decades of state interconnection processes",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "In some parts of the country, this assertion of jurisdiction may be necessary to accelerate the interconnection of these crucial loads. In others, it may instead slow them significantly.",
+      "concern": "Federal jurisdiction may help in some regions but slow interconnection in others",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Pennsylvania's efficient oversight has not added a single day to any data center development timeline. Each site is proceeding as quickly as possible given broader issues such as land acquisition/permitting and global supply chains for necessary components.",
+      "concern": "State regulation in Pennsylvania has not slowed data center interconnection",
+      "bins": [
+        "aq:jurisdiction",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "FERC could create a federal backstop for large load interconnections that the utility, or potentially the customer, could trigger when a state process bogs down.",
+      "concern": "Proposes a triggered federal backstop rather than blanket federal jurisdiction",
+      "bins": [
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The ANOPR proposes that under federal interconnection rules, 'load and hybrid facilities should be responsible for 100% of the network upgrades that they are assigned through interconnection studies.' Should the Commission adopt the ANOPR and assume control over large load interconnection, it should interpret this language consistent with its longstanding policy that network customers pay for network upgrades.",
+      "concern": "Opposes 100% upfront network upgrade cost assignment to large loads; urges consistent policy that network customers pay",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Charging large retail loads 100% of the network upgrade costs required to interconnect them to the transmission system would dramatically increase the Day 1 costs of data center interconnections. This will inevitably lead to slower process, higher costs, and fewer data centers being constructed.",
+      "concern": "Full upfront network upgrade cost assignment raises Day 1 costs and slows interconnection",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "PPL Electric requires interconnecting large load customers like data centers to enter into ESAs with provisions guaranteeing they will purchase at least 80% of the aggregate load requested over an initial term of five years. This electric service commitment ensures that the new load pays aggregate transmission service charges that are at least equal to the total expenses incurred by PPL Electric for construction work included in the rate base.",
+      "concern": "Load guarantee agreements ensure large loads cover network upgrade costs without upfront charges",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:load-guarantee"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Unlike upfront payment by large loads, this process does not disincentivize new load connections and does not violate longstanding ratemaking principles.",
+      "concern": "Load guarantees protect customers without the disincentive effects of upfront cost assignment",
+      "bins": [
+        "pr:cost",
+        "topic:load-guarantee"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The PPL Companies caution that expanding option to build to retail load customers is likely to increase costs and risks of interconnection, again frustrating, rather than furthering, the Administration's goals.",
+      "concern": "Option to build for retail loads would raise costs and risks, contrary to ANOPR goals",
+      "bins": [
+        "aq:upgradecost",
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Utility experience with generator option to build has largely been negative. At best, utilities needed new and complex processes and carefully negotiated contracts regarding site acquisition, environmental permitting, equipment standards, insurance/indemnity, and numerous other provisions to protect themselves and their customers from poor-quality, expensive, and in some cases dangerous, customer-built facilities.",
+      "concern": "Generator option to build experience shows high complexity and substandard outcomes",
+      "bins": [
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "This relatively low threshold will ensure that FERC regulation reaches not just hyperscalers and other large data centers, but many longstanding industrial and commercial customers, including many connected at transmission voltages below 100 kV.",
+      "concern": "20 MW threshold is too low and would capture existing industrial and commercial loads",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "If the Commission is seeking a lighter touch that only impacts the new class of loads connecting to the bulk electric system, it could consider a higher threshold such as 100 MW, or even 500 MW (thresholds that would still catch many data centers).",
+      "concern": "Recommends raising the threshold to 100 MW or 500 MW to target only bulk-system loads",
+      "bins": [
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "any Commission action on co-located load should follow two 'North Star' principles: (1) Protect the safety and reliability of the bulk electric system; and (2) Prevent subsidization of new loads by network customers.",
+      "concern": "Co-location rules must prioritize reliability and preventing network customer cost subsidization",
+      "bins": [
+        "aq:protection",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "hybrid facilities 'shall be required to install the system protection facilities necessary to prevent unauthorized injections or withdrawals that exceed the respective rights.' Here again, the ANOPR hits the mark exactly.",
+      "concern": "Supports the ANOPR's system protection facility requirement for hybrid co-located resources",
+      "bins": [
+        "aq:protection",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Transmission service should not be based on a netted value with the generator, as this risks undercharging for use based on the characteristics of the generator and the load.",
+      "concern": "Netting generation against load for transmission service charges undercharges and subsidizes co-located load",
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "topic:anti-netting"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal backstop over blanket jurisdiction",
+      "stance": "mixed",
+      "description": "PPL acknowledges that federal jurisdiction may be needed where states obstruct large load interconnection, but argues its own state processes in Pennsylvania and Kentucky work well and have not delayed any project. PPL proposes that FERC create a triggered federal backstop, available only when a state process stalls, modeled on the IIJA transmission siting provisions.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Higher MW threshold needed",
+      "stance": "oppose",
+      "description": "PPL opposes the 20 MW threshold as too low, noting it would sweep in longstanding industrial and commercial loads on sub-100 kV lines. PPL recommends a threshold of 100 MW or 500 MW to limit federal reach to genuinely new bulk-system loads while still covering most data centers.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Oppose 100% upfront upgrade cost assignment",
+      "stance": "oppose",
+      "description": "PPL argues that requiring large loads to fund 100% of network upgrade costs upfront would raise Day 1 costs and slow interconnection, directly undercutting the ANOPR's own goals. PPL favors the existing utility ratemaking model, under which network upgrades are charged to all customers over the asset's lifetime, supplemented by load guarantee agreements that ensure data centers cover those costs.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        9
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "System protection requirements supported",
+      "stance": "support",
+      "description": "PPL supports requiring hybrid co-located facilities to install system protection equipment that prevents unauthorized injections or withdrawals beyond their interconnection rights, citing its own experience with the Susquehanna Nuclear load arrangement and prior advocacy in related dockets.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "No netting for transmission service charges",
+      "stance": "oppose",
+      "description": "PPL opposes netting co-located load against co-located generation when calculating transmission service charges, arguing this undercharges large loads and shifts costs to network customers.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Ratemaking over upfront cost charges",
+      "stance": "oppose",
+      "description": "PPL argues that existing utility ratemaking, combined with load guarantee agreements requiring data centers to purchase at least 80% of contracted load over five years, already protects network customers without the deterrent effect of 100% upfront network upgrade cost assignment.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Separate metering and anti-netting rules",
+      "stance": "support",
+      "description": "PPL supports co-location rules that require separate metering, system protection facilities, and transmission service charges based on the load's full withdrawal rights rather than a netted value. These conditions allow co-location benefits while preventing subsidization of new loads by network customers.",
+      "quote_ids": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM territory already working well",
+      "stance": "neutral",
+      "description": "PPL Electric operates in PJM territory and reports that its Pennsylvania interconnection process has not delayed any data center project, with over 20 GW in advanced development stages and 5 GW under active construction.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "topic:load-guarantee",
+      "name": "Load guarantees protect network customers",
+      "stance": "support",
+      "description": "PPL describes its electric service agreements that require data centers to purchase at least 80% of contracted load for five years, ensuring they cover the cost of network upgrades through normal rates. PPL presents this as a better alternative to upfront cost assignment that avoids discouraging interconnection.",
+      "quote_ids": [
+        7,
+        8
+      ]
+    },
+    {
+      "key": "topic:option-to-build",
+      "name": "Option to build raises costs and risks",
+      "stance": "oppose",
+      "description": "PPL cautions against extending option to build to retail load customers, drawing on utility experience with generator option to build, which required complex contracting and sometimes produced substandard facilities. PPL argues this would increase costs and risks, working against the ANOPR's goals.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:anti-netting",
+      "name": "Netting risks cost shifting to network customers",
+      "stance": "oppose",
+      "description": "PPL argues that netting co-located generation against load for transmission service and ancillary service charges undercharges the load, enabling free ridership on the grid. Charges should be based on peak demand and full withdrawal rights without netting.",
+      "quote_ids": [
+        15
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "upgradecost",
+      "protection",
+      "hybridrights"
+    ],
+    "pr": [
+      "cost",
+      "colo"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
