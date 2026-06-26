@@ -1,0 +1,242 @@
+{
+  "accession": "20260330-5308",
+  "filer": "WIRES",
+  "org_type": "trade_assoc",
+  "filed": "03/30/2026",
+  "source_text": "sources/comments/files/20260330-5308__WIRES/WIRES Supplemental Comments (RM26-4) 20260330 Final-combined.txt",
+  "overall_summary": "WIRES submits a Concentric Energy Advisors whitepaper showing that directly assigning 100 percent of network upgrade costs to large load customers and exempting them from NITS charges would shift significant transmission costs onto other retail customers. The analysis finds residential bills in PJM could rise 8 to 11 percent in the transmission portion, with aggregate cost shifts of $33 to $47 billion over 30 years for PJM alone. WIRES does not advocate a specific alternative cost allocation method but urges the Commission to weigh these unintended consequences before adopting a sole direct-assignment policy.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The Whitepaper sets forth an analysis of the ANOPR's proposal to allocate 100 percent of network upgrade costs to large load customers and illustrates the potential for unintended cost shifts to retail customers under certain implementation scenarios.",
+      "concern": "Whitepaper documents unintended retail cost shifts from sole direct-assignment of network upgrade costs",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "directly assigning network upgrade costs to large load customers can lead to significant transmission cost shifts away from large load customers onto other retail customers.",
+      "concern": "Direct assignment shifts transmission costs from large loads to other retail customers",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "A prohibition on 'and' pricing might allow the same large load customers, having paid for their network upgrades, to argue that they should be exempt from the rates that fund the ongoing development, maintenance, and operation of the broader transmission system, called Network Integration Transmission Service ('NITS') charges.",
+      "concern": "The anti-double-charging rule could let large loads escape ongoing NITS obligations entirely",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:and-pricing-exemption"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Our core finding is that direct assignment of network upgrade costs, with accompanying excusal from paying NITS charges, results in significant transmission cost shifts away from the large load customers and onto other customers.",
+      "concern": "Core finding: direct assignment plus NITS exemption shifts significant costs to other customers",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "over time, these cost shifts could amount to $33-47 billion in present value terms for just the volume of large loads expected to be developed in PJM from 2025-2030.",
+      "concern": "PJM-level cost shift quantified at $33 to $47 billion over 30 years",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "if the Commission were to implement in PJM a sole direct assignment policy for network upgrades associated with large loads interconnecting in the 2025-2030 period, the average PJM customer could experience an approximately 8-11 percent increase in the transmission portion of their retail electricity bill, or about $23-33 more per year in 2026 dollars.",
+      "concern": "Residential bill impact in PJM estimated at 8 to 11 percent increase in transmission charges",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "it shows that when large loads pay only for their required network upgrades and do not contribute to the embedded system costs or the future costs required to maintain system reliability for all customers, including themselves, those costs are shifted onto other customers.",
+      "concern": "Paying only network upgrade costs leaves large loads not contributing to ongoing system reliability costs",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Neither the Whitepaper nor these comments advocate for any specific cost allocation methodology.",
+      "concern": "WIRES takes no position on which alternative cost allocation method should replace direct assignment",
+      "bins": [
+        "topic:no-specific-alternative"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "special attention should be given to data that highlights potential unintended consequences that could flow from certain rate structures or cost allocation methodologies which may adversely impact customer affordability.",
+      "concern": "Commission should weigh customer affordability impacts before finalizing rate design",
+      "bins": [
+        "pr:cost",
+        "topic:customer-affordability"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "This approach creates a problematic cost shift from an equity and policy standpoint. Furthermore, such rate treatment ignores the reality that the transmission system is an evolving investment.",
+      "concern": "Sole direct assignment is inequitable and ignores ongoing system costs",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "cost responsibilities for co-located load arrangements bear similarities to the scenarios discussed above, with similar cost shift concerns.",
+      "concern": "Co-located load configurations face the same cost-shift risk as standalone large loads",
+      "bins": [
+        "pr:colo",
+        "aq:upgradecost",
+        "topic:and-pricing-exemption"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "establishing a crediting mechanism for large load customers would effectively reimburse them for any network upgrade costs that they were responsible for. Once they have been fully reimbursed, they would presumably then be responsible for NITS obligations like any other customers.",
+      "concern": "A crediting mechanism that reimburses upgrade costs effectively returns to the status quo and neutralizes the direct-assignment policy",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:crediting-mechanism"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:upgradecost",
+      "name": "Direct assignment cost shift risk",
+      "stance": "mixed",
+      "description": "WIRES presents quantitative evidence that directly assigning 100 percent of network upgrade costs to large loads, when paired with exemption from NITS charges under the anti-double-charging rule, shifts substantial transmission costs onto other retail customers. The filing supports the goal of making large loads pay their fair share but opposes a sole direct-assignment framework that produces unintended cost shifts.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        12
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost allocation equity concern",
+      "stance": "mixed",
+      "description": "WIRES argues that a sole direct-assignment policy undermines cost equity because large loads would eventually contribute less to transmission cost recovery than if charged standard NITS rates. The filing urges careful review of any policy that could shift billions in costs to residential and other retail customers, while declining to endorse a specific alternative framework.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study process and system cost",
+      "stance": "neutral",
+      "description": "WIRES notes that network upgrade costs identified through the interconnection study process represent investments that benefit the entire transmission system, and that paying only those study-identified costs does not cover ongoing system reliability obligations.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-located load cost shift",
+      "stance": "neutral",
+      "description": "WIRES flags that co-located load arrangements face cost shift dynamics similar to standalone large loads, because co-located customers may also escape NITS charges after paying network upgrade costs, leaving embedded system costs to other ratepayers.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM regional cost impact",
+      "stance": "neutral",
+      "description": "The whitepaper uses PJM as the primary case study, estimating aggregate cost shifts of $33 to $47 billion over 30 years and an 8 to 11 percent increase in the transmission portion of a typical residential customer's bill, based on projected 20 GW of large load additions in PJM from 2025 to 2030.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:and-pricing-exemption",
+      "name": "Anti-double-charging NITS exemption",
+      "stance": "oppose",
+      "description": "WIRES identifies the Commission's prohibition on charging both an incremental and a rolled-in rate as the mechanism that could allow large loads to avoid NITS entirely after paying network upgrade costs. The filing treats this as the key driver of the cost shift and a central flaw in the sole direct-assignment approach.",
+      "quote_ids": [
+        3,
+        11
+      ]
+    },
+    {
+      "key": "topic:customer-affordability",
+      "name": "Retail customer affordability",
+      "stance": "support",
+      "description": "WIRES emphasizes that customer affordability is a central concern and that any cost allocation framework should be scrutinized for bill impacts on residential and other retail customers before adoption.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:no-specific-alternative",
+      "name": "No preferred alternative proposed",
+      "stance": "neutral",
+      "description": "WIRES explicitly states it does not advocate for any particular replacement cost allocation methodology, limiting the filing's purpose to documenting the cost shift risk of sole direct assignment.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:crediting-mechanism",
+      "name": "Crediting mechanism returns to status quo",
+      "stance": "neutral",
+      "description": "WIRES observes that a mechanism reimbursing large loads for network upgrade costs would effectively restore NITS obligations and thus eliminate the cost shift, but would also negate the policy goal of direct assignment.",
+      "quote_ids": [
+        12
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost"
+    ],
+    "pr": [
+      "cost",
+      "study",
+      "colo"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

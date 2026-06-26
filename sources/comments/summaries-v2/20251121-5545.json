@@ -1,0 +1,197 @@
+{
+  "accession": "20251121-5545",
+  "filer": "Americans for a Clean Energy Grid",
+  "org_type": "clean_energy",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5545__Americans-for-a-Clean-Energy-Grid/ACEG Comments_Docket No. RM26-4-000_Final.txt",
+  "overall_summary": "ACEG supports the ANOPR's goal of accelerating large load interconnection but argues the proposal has a critical gap: it does not address the transmission buildout needed to make interconnection feasible at scale. The filing urges FERC to pair any interconnection reforms with rapid implementation of Order No. 1920 multi-value transmission planning, improved regional load forecasting, and cost allocation that spreads upgrade costs broadly rather than assigning them entirely to individual interconnection customers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the ANOPR has a significant gap that may jeopardize the ability to achieve the stated goals, by not also specifically tackling the obstacles to building out the transmission needed to interconnect those loads.",
+      "concern": "ANOPR omits transmission buildout, which is essential to large load interconnection",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "for every year of delay of well-planned transmission, there is a 15-35% cost in postponed reliability improvements, reduced access to lower-cost generation, and foregone economic efficiencies.",
+      "concern": "Delay in transmission buildout imposes large costs on customers",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "the best way to integrate new facilities on the grid is to build out sufficient capacity through proactive well-planned multi-value transmission.",
+      "concern": "Proactive multi-value transmission planning is superior to piecemeal interconnection upgrades",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Building transmission upgrades on a sporadic, piecemeal basis to integrate certain resources is simply less efficient and more expensive than integrating both generation and load through proactive and comprehensive planning.",
+      "concern": "Piecemeal upgrade approach is more costly than regional proactive planning",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "generation interconnection requests often withdraw from the interconnection queue after studies are completed and the required network upgrades are not constructed.",
+      "concern": "High piecemeal upgrade costs drive project withdrawals from the queue",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "in the final rule, load forecasting was treated as it has always been: through rolling up the forecasts from individual transmission owners within a region. While this may have worked for conventional increases in demand, this does not work for the large loads being forecasted today.",
+      "concern": "Order 1920's rolled-up load forecasting approach is inadequate for large loads",
+      "bins": [
+        "pr:study",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Commission could do more—either through a supplemental rulemaking associated with Order No. 1920 or provision of guidance in this proceeding—to require transmission planners to independently assess load forecasts and determine that they are sufficiently robust and as accurate as possible.",
+      "concern": "FERC should require independent regional assessment of large load forecasts",
+      "bins": [
+        "pr:study",
+        "aq:threshold"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "a requirement that large loads (50 MW or larger, for instance) are backed by stringent financial commitments and are reported to regional transmission planners so that significant loads can be adequately supported and integrated into the larger grid.",
+      "concern": "Large loads above 50 MW should be financially committed and reported to regional planners",
+      "bins": [
+        "aq:threshold",
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The Commission has acknowledged that reliance on participant funding as a regional cost allocation method 'increases the incentive of any individual beneficiary to defer investment in the hopes that other beneficiaries will value a transmission project enough to fund its development.'",
+      "concern": "Participant-only funding creates holdout problems that block transmission investment",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Large loads that are incorporated into forecasts used to plan and develop new infrastructure should pay their fair share over the life of the asset; planning processes should ensure that such forecasts only incorporate loads that are not speculative or temporary.",
+      "concern": "Large loads should pay their proportionate share of planned transmission costs, not speculative loads",
+      "bins": [
+        "pr:cost",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Should the Commission revert to a strict direct-assignment funding mechanism for load interconnection-related network upgrades, it risks stymying the very development it seeks to accelerate, as this will only harm transmission developers' ability to attract capital and make needed investments that benefit all transmission users.",
+      "concern": "100% direct cost assignment to load interconnection customers would block rather than accelerate development",
+      "bins": [
+        "pr:cost",
+        "aq:deposits"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "As the Commission seeks to accelerate interconnection of new loads, it should do so in conjunction with rapid implementation of Order No. 1920 and require regions to more quickly plan multi-value transmission lines and allocate costs to all customers who use—and benefit from—the integrated transmission system.",
+      "concern": "FERC should accelerate Order 1920 multi-value planning alongside load interconnection reforms",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "it would be a no-regrets course of action to speed regional and interregional transmission planning under Order No. 1920, enhanced by robust load forecasting to accommodate the new realities posed by large loads.",
+      "concern": "Accelerating Order 1920 planning with improved load forecasting is a low-risk priority action",
+      "bins": [
+        "pr:study"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Proactive multi-value planning needed",
+      "stance": "support",
+      "description": "ACEG argues that clearing interconnection queues for large loads requires proactive, comprehensive regional transmission planning under Order No. 1920, not piecemeal upgrade-by-upgrade processing. The filing calls for rapid implementation of Order 1920 alongside any new load interconnection rules, and for regional planners to independently assess and verify large load forecasts rather than relying on rolled-up utility submissions.",
+      "quote_ids": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        8,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Broad cost sharing over direct assignment",
+      "stance": "oppose",
+      "description": "ACEG opposes a strict 100% direct-assignment funding model for load interconnection network upgrades, arguing it would replicate the bottleneck that plagued generator interconnection. The filing supports broad cost allocation across all beneficiaries of the integrated transmission system, consistent with Order 1920 principles, and warns that participant-only funding creates holdout incentives that deter investment. Large loads should pay their proportionate share as part of a multi-value plan, not bear the full cost of upgrades that benefit the wider grid.",
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "50 MW threshold with financial commitments",
+      "stance": "support",
+      "description": "ACEG recommends that large loads of 50 MW or more be required to make stringent financial commitments and be reported to regional transmission planners, so forecasts are reliable and not inflated by speculative requests. The filing notes that rolled-up forecasts from individual transmission owners distort regional planning and create delays.",
+      "quote_ids": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Financial commitments to anchor load forecasts",
+      "stance": "support",
+      "description": "ACEG supports requiring financial commitments from large loads seeking interconnection to weed out speculative projects and ensure regional plans reflect real demand. Loads that are incorporated into regional transmission plans should pay their fair share over the life of the asset.",
+      "quote_ids": [
+        8,
+        10,
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "threshold",
+      "deposits"
+    ],
+    "pr": [
+      "study",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

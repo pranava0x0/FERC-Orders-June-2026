@@ -1,0 +1,295 @@
+{
+  "accession": "20251121-5377",
+  "filer": "Buckeye Power, Inc.",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5377__Buckeye-Power-Inc/Buckeye Power, Inc. ANOPR Comments -- FINAL (RM26-4).txt",
+  "overall_summary": "Buckeye Power, an Ohio generation and transmission cooperative serving over 400,000 retail consumers through 25 member cooperatives, argues that large data center loads are driving massive transmission investments that create stranded cost risks for wholesale transmission customers who did not cause those investments. Buckeye supports ANOPR Principle 8 requiring large loads to pay 100% of assigned network upgrade costs upfront and Principle 4 requiring study deposits and withdrawal penalties, while also presenting fallback options -- holding the relevant wholesale transmission entity responsible, or at minimum requiring retail stranded-cost protections to be reflected in FERC-jurisdictional rates. Buckeye urges that these protections apply to large load interconnections already being studied as a transition mechanism.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "There is serious concern that these large loads could drive significant transmission investment and then not show up to pay for it on a sustained basis.",
+      "concern": "Data centers may not sustain the load levels that justified transmission investment, leaving other customers holding the cost.",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "If a large load fails to materialize or consume electricity at the level and duration expected when these transmission investments were made, other wholesale transmission customers (and, ultimately, their retail customers) may be faced with the massive costs of investments they did not cause.",
+      "concern": "Stranded transmission costs fall on uninvolved wholesale customers if data center load falls short.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Because the Commission is obligated under the Federal Power Act (\"FPA\") to ensure that rates under its jurisdiction are just, reasonable, and not unduly discriminatory, the Commission must ensure that large loads are responsible for the cost of transmission facilities built to serve them so other wholesale customers are not left holding the bag.",
+      "concern": "FERC's statutory duty requires it to assign transmission upgrade costs to the large loads that cause them.",
+      "bins": [
+        "pr:cost",
+        "aq:jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Buckeye supports holding large loads such as data centers directly responsible for 100% of the network upgrades they are assigned through interconnection studies (which could include crediting, provided that crediting is designed to ensure that wholesale transmission customers are protected).",
+      "concern": "Buckeye endorses full direct-assignment of network upgrade costs to large loads, with carefully designed crediting.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Buckeye supports requirements to deter speculative projects, such as standardized study deposits, readiness requirements, and withdrawal penalties.",
+      "concern": "Upfront deposits and withdrawal penalties should be required to discourage speculative queue entries.",
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Although these requirements may prevent speculative projects from entering the study process, they do not address the major stranded cost concerns with data centers that complete the study process, cause massive transmission upgrades, but then do not have the expected level of demand over a sustained period.",
+      "concern": "Deposits and penalties alone do not protect against stranded costs once transmission is built.",
+      "bins": [
+        "aq:deposits",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Load growth of approximately 10,000 MW driven largely by data centers in the Dominion Zone of PJM resulted in approximately $12 billion in transmission investment across PJM.",
+      "concern": "The scale of data-center-driven transmission investment in PJM is already in the tens of billions of dollars.",
+      "bins": [
+        "rg:pjm",
+        "pr:cost",
+        "topic:stranded-cost-scale"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "While these costs are primarily driven by data center loads, currently all customers in the corresponding PJM transmission zones and, where applicable, in the broader PJM region will bear them.",
+      "concern": "Data-center transmission costs are currently socialized across all PJM customers rather than charged to the causing load.",
+      "bins": [
+        "rg:pjm",
+        "pr:cost",
+        "topic:cost-socialization"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "If the relevant wholesale transmission entity, like AEP Ohio, were responsible for the network upgrade costs caused by their retail customers seeking large load interconnections, that could both protect other wholesale transmission customers and still allow a mechanism for ultimately holding large loads responsible for the costs they cause.",
+      "concern": "Holding the host utility responsible at wholesale is a viable fallback that preserves a path to cost recovery from the data center.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "topic:host-utility-accountability"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "At a minimum (and as a transition mechanism before upfront funding measures take effect, as discussed in Part III.D below), the Commission must ensure that any existing retail-level protections against the risks of stranded costs of Commission-jurisdictional transmission service resulting from large loads will be reflected and accounted for in Commission-jurisdictional rates.",
+      "concern": "Retail stranded-cost protections must flow through to wholesale rates to prevent double recovery and protect other customers.",
+      "bins": [
+        "pr:cost",
+        "aq:jurisdiction",
+        "topic:retail-wholesale-alignment"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Under AEP Ohio's retail tariff, these measures protect only AEP Ohio's own retail customers from these significant stranded transmission cost risks, leaving wholesale transmission customers exposed.",
+      "concern": "AEP Ohio's state-level tariff protects its own retail base but leaves FERC-jurisdictional wholesale customers unprotected.",
+      "bins": [
+        "rg:pjm",
+        "pr:cost",
+        "topic:retail-wholesale-alignment"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "It is absolutely essential that this Commission address these issues and cost shifting concerns at the federal level.",
+      "concern": "Federal action is necessary because state-level retail solutions cannot protect wholesale customers.",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Buckeye supports a transition mechanism for the treatment of large load interconnections that are already being studied.",
+      "concern": "Protections should apply to projects already in the interconnection queue, not just future filings.",
+      "bins": [
+        "pr:study",
+        "topic:transition-mechanism"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "An appropriate crediting mechanism for this purpose will need to be different from the crediting mechanism used for large generator interconnections.",
+      "concern": "Generator-style crediting was a financing tool only and does not address stranded cost risks from large loads.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "topic:crediting-design"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Large Loads Pay Full Upgrade Costs",
+      "stance": "support",
+      "description": "Buckeye argues that data centers drive massive transmission investments that, if the load fails to materialize or sustain, will be stranded on uninvolved wholesale customers. Buckeye supports ANOPR Principle 8 requiring large loads to pay 100% of network upgrade costs upfront, with a crediting mechanism only if designed to protect other customers. Fallback options -- holding the host utility responsible or requiring retail protections to flow into wholesale rates -- are also supported.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Study Deposits and Transition Coverage",
+      "stance": "support",
+      "description": "Buckeye supports standardized study deposits, readiness requirements, and withdrawal penalties to deter speculative projects and improve load forecasting. It also supports applying protections to large load interconnections already in the study process as a transition mechanism.",
+      "quote_ids": [
+        1,
+        5,
+        6,
+        13
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Deposits Deter Speculation, Not Stranded Costs",
+      "stance": "mixed",
+      "description": "Buckeye supports study deposits and withdrawal penalties as tools to reduce speculative queue entries but is explicit that these measures do not address stranded cost risks that arise after transmission is built and large loads fail to sustain expected demand.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Direct Assignment of Upgrade Costs",
+      "stance": "support",
+      "description": "Buckeye supports direct assignment of 100% of network upgrade, interconnection facility, and attachment facility costs to large loads. It notes that any crediting mechanism must be designed differently from the generator-interconnection financing model to actually prevent cost shifts to other wholesale customers.",
+      "quote_ids": [
+        2,
+        4,
+        9,
+        14
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC Must Act, Not States Alone",
+      "stance": "support",
+      "description": "Buckeye contends that FERC has a statutory obligation under the FPA to ensure just and reasonable rates, and that state retail tariffs -- like AEP Ohio's -- cannot protect wholesale transmission customers from cost shifts caused by large loads. Federal action at the wholesale level is essential.",
+      "quote_ids": [
+        3,
+        10,
+        12
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Stranded Cost Exposure",
+      "stance": "neutral",
+      "description": "Buckeye draws on PJM data to illustrate the scale of the problem: approximately $12 billion in transmission investment driven by data center load in the Dominion Zone alone, with costs currently socialized across all PJM customers rather than charged to the data centers that caused them.",
+      "quote_ids": [
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "key": "topic:stranded-cost-scale",
+      "name": "Billions in Stranded Cost Risk",
+      "stance": "neutral",
+      "description": "Buckeye quantifies the transmission investment driven by data center loads -- $12 billion from the Dominion Zone and over $10 billion projected for Central Ohio -- to show that the stranded cost risk is not theoretical but already materializing at a scale that demands federal action.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:cost-socialization",
+      "name": "Costs Spread to Uninvolved Customers",
+      "stance": "oppose",
+      "description": "Buckeye opposes the current default outcome in which data-center-driven transmission costs are socialized across all PJM customers. It uses a numerical table showing that if data centers do not sustain forecast demand, other customers in the same transmission zone bear hundreds of millions in costs they did not cause.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:host-utility-accountability",
+      "name": "Hold Host Utility Responsible at Wholesale",
+      "stance": "support",
+      "description": "If FERC does not directly assign upgrade costs to large loads, Buckeye proposes holding the relevant wholesale transmission entity (the host utility with a retail relationship with the large load) responsible at the wholesale level. That entity can then recover costs from the data center through state retail mechanisms.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "topic:retail-wholesale-alignment",
+      "name": "Retail Protections Must Reach Wholesale Rates",
+      "stance": "support",
+      "description": "As a minimum fallback, Buckeye argues that any retail tariff provisions (minimum charges, exit fees, etc.) securing stranded cost recovery must be reflected in FERC-jurisdictional wholesale rates. Without this, host utilities double-recover by collecting from both the data center at retail and from wholesale customers through FERC rates.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "topic:transition-mechanism",
+      "name": "Apply Rules to In-Queue Projects",
+      "stance": "support",
+      "description": "Buckeye supports applying cost protection rules to large load interconnections already in the study queue, not just future filings, because transmission investment to serve those loads is already underway and creating cost-shift risk today.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:crediting-design",
+      "name": "Crediting Must Differ from Generator Model",
+      "stance": "support",
+      "description": "Buckeye notes that generator-interconnection crediting was designed only as a financing mechanism, not to protect other customers from stranded cost risks. Any crediting mechanism for large loads must be structured differently to ensure credits paid back to data centers do not shift costs onto other wholesale customers.",
+      "quote_ids": [
+        14
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "deposits",
+      "upgradecost",
+      "jurisdiction"
+    ],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
