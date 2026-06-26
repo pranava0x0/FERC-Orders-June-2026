@@ -1,0 +1,282 @@
+{
+  "accession": "20251121-5466",
+  "filer": "ENVIRONMENTAL LAW & POLICY CENTER",
+  "org_type": "enviro",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5466__ENVIRONMENTAL-LAW-and-POLICY-CENTER/Ex B Mike Jacobs.txt",
+  "overall_summary": "ELPC urges FERC to adopt a cooperative federalism approach: let states protect retail customers from the cost and reliability harms of large load interconnection while FERC addresses problems within its own transmission jurisdiction. The core ratepayer argument is that utilities socialize large-load connection costs into the transmission rate base without cost-causation discipline, leaving existing customers to subsidize hundreds of millions in infrastructure that serves individual data centers. ELPC supports the ANOPR moving toward a proposed rule but insists any rule must not preempt state authority over retail tariffs.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Hyperscale data centers are placing unprecedented strains on our electricity system and on traditional interconnection and cost allocation practices.",
+      "concern": "Rapid large-load growth is overwhelming existing interconnection and cost-allocation frameworks.",
+      "bins": [
+        "topic:large-load-growth"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Regions that have not had meaningful load growth in two decades are now facing projections of 5-10% growth every year for the foreseeable future.",
+      "concern": "Sudden load growth in historically flat regions strains planning assumptions.",
+      "bins": [
+        "topic:large-load-growth"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The consequences are higher prices for consumers and regulators at every level facing significant questions as to how to meet electricity demand growth while ensuring affordability and reliability.",
+      "concern": "Unchecked large-load growth raises costs for all consumers.",
+      "bins": [
+        "pr:cost",
+        "topic:ratepayer-protection"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "We encourage the Commission to avoid interfering with the efforts of state commissions to protect retail customers and the grid from the impacts of large load additions.",
+      "concern": "FERC should not preempt state authority over retail customer protection.",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "ELPC encourages the Commission to follow a cooperative federalism model in its response to large load interconnections.",
+      "concern": "FERC should coordinate with states rather than displace their authority.",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "The Commission should make clear that states, as regulators of retail customers, can impose terms and conditions on retail service requests of large load customers.",
+      "concern": "FERC should affirm state jurisdiction over retail large-load tariff conditions.",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "large load customers often require new lines and substations at voltages of 138kV or higher. Mr. Jacobs explained that although such high-voltage connection facilities are essentially line extensions that the utility designs to serve a specific customer, the utilities socialize their costs by placing them into the transmission rate base.",
+      "concern": "High-voltage connection costs built for specific customers are socialized across all ratepayers.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "topic:ratepayer-protection"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Mr. Jacobs provided his analysis showing that such connection facilities added up to $4.1 billion across PJM in 2024 alone, with costs continuing to increase in 2025 and beyond.",
+      "concern": "Socialized transmission costs from large-load connections total billions of dollars in PJM.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the California Public Utilities Commission recently issued an interim order requiring new transmission-level customers seeking retail services to be responsible for the initial costs of all transmission facilities, rather than those costs being borne by ratepayers.",
+      "concern": "State commissions have begun requiring direct cost assignment to large-load customers.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "topic:ratepayer-protection"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "These decisions reflect sound exercises of states' authority over retail customers. In the face of the reliability and ratepayer risks that large load interconnections create, state commissions have a responsibility under state law to preserve reliability and protect just and reasonable rates.",
+      "concern": "State retail regulatory authority over large loads is well-grounded and must be preserved.",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Any rule that this Commission considers must avoid interference with the states in their role as regulators of retail customers.",
+      "concern": "A FERC rulemaking must be scoped to avoid preempting state retail jurisdiction.",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "the Company practices that do provide tracking of these transmission costs are not used to pursue cost allocation that would apply cost-causation principles.",
+      "concern": "Utility tracks which costs are caused by large loads but does not allocate them back to those customers.",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the Company makes decisions regarding functionalization of new facilities as transmission or distribution without any oversight. Such decisions have a major impact on retail rates. ComEd should make these decisions with greater transparency and oversight.",
+      "concern": "Unilateral functionalization decisions by the utility lack transparency and regulatory review.",
+      "bins": [
+        "pr:cost",
+        "topic:tariff-transparency"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "The Company does not plan to use Cluster Studies to assign the costs of new facilities to the Large Demand Project Applicants or Customers that cause those costs.",
+      "concern": "Cluster studies identify cost causation but the utility does not use them to allocate costs to causers.",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "the Commission should order ComEd to collect deposits for the incremental costs of Large Demand Project Applicants or Customers, regardless of whether those costs are deemed by ComEd to be transmission costs or distribution costs.",
+      "concern": "Deposits should cover all incremental costs regardless of the distribution/transmission classification.",
+      "bins": [
+        "aq:deposits",
+        "pr:cost",
+        "topic:ratepayer-protection"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "topic:large-load-growth",
+      "name": "Unprecedented scale of load growth",
+      "stance": "neutral",
+      "description": "Data center load requests are generating 5 to 10 percent annual growth projections in regions that had been flat for two decades, creating novel challenges for interconnection processes and cost allocation that existing frameworks were not designed to handle.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Socialize costs to direct causers",
+      "stance": "support",
+      "description": "ELPC argues that high-voltage connection facilities built solely to serve individual large-load customers are improperly placed into the shared transmission rate base, spreading costs worth billions of dollars annually to existing ratepayers. ELPC supports rules and state tariff approaches that assign those costs directly to the customers who cause them.",
+      "quote_ids": [
+        3,
+        7,
+        8,
+        9,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Large loads must pay upgrade costs",
+      "stance": "support",
+      "description": "ELPC endorses requiring large-load applicants to bear the incremental transmission upgrade and extension costs their connections require. Evidence from PJM shows $4.1 billion in socialized connection costs in 2024 alone, and state commissions in California and Kansas have already moved to direct cost assignment.",
+      "quote_ids": [
+        7,
+        8,
+        9,
+        15
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "State retail jurisdiction must be preserved",
+      "stance": "support",
+      "description": "ELPC urges FERC to confine any rulemaking to its own transmission jurisdiction and to affirm explicitly that states retain authority to impose terms and conditions on retail service for large-load customers. A cooperative federalism framework would allow both levels of government to address the problem without one displacing the other.",
+      "quote_ids": [
+        4,
+        5,
+        6,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "topic:cooperative-federalism",
+      "name": "Cooperative federalism model",
+      "stance": "support",
+      "description": "ELPC frames the ideal FERC response as a cooperative federalism model: FERC addresses wholesale transmission rates and reliability, states address retail customer protection and tariff conditions. FERC should not issue rules that preempt the state proceedings already underway.",
+      "quote_ids": [
+        4,
+        5,
+        6,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "topic:ratepayer-protection",
+      "name": "Protect existing ratepayers from cost shifts",
+      "stance": "support",
+      "description": "Existing customers face billions in cost shifts because utilities functionalize large-load connection infrastructure as transmission and spread it across the rate base. State commissions and FERC should require deposits, direct cost assignment, and tariff provisions that prevent this subsidy from flowing from ordinary customers to data center operators.",
+      "quote_ids": [
+        3,
+        7,
+        9,
+        15
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Use studies to track and assign costs",
+      "stance": "support",
+      "description": "Cluster studies already identify the transmission and distribution reinforcements triggered by individual large-load requests, but utilities do not use that information to assign costs back to the causers. ELPC recommends that study results be tied directly to cost allocation.",
+      "quote_ids": [
+        12,
+        14
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Deposits must cover transmission costs",
+      "stance": "support",
+      "description": "Current deposit proposals cover only distribution facilities; ELPC recommends requiring deposits for all incremental costs regardless of how the utility classifies the facilities, to prevent ratepayers from absorbing stranded transmission investments if a large-load project withdraws.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "topic:tariff-transparency",
+      "name": "Transparent functionalization decisions",
+      "stance": "support",
+      "description": "ComEd decides on a case-by-case basis whether to classify new facilities as distribution or transmission, with no external oversight. ELPC argues those decisions should be made with greater transparency and subject to regulatory review, as they determine which customers bear the resulting costs.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM cost socialization scale",
+      "stance": "neutral",
+      "description": "ELPC cites PJM as the region where the socialization of large-load connection costs is most documented, with $4.1 billion in such costs in 2024 alone and the trend worsening into 2025 and beyond.",
+      "quote_ids": [
+        8
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost",
+      "jurisdiction",
+      "deposits"
+    ],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-26",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

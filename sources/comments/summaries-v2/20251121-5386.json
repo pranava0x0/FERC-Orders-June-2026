@@ -1,0 +1,344 @@
+{
+  "accession": "20251121-5386",
+  "filer": "Natural Resource Defense CouncilSustainable FERC ProjectClean Air Task Force ,Coalition for Affordable Utility Services and Energy Efficie ,EARTHJUSTICE ,ENVIRONMENTAL DEFENSE FUND ,MONTANA ENVIRONMENTAL INFORMATION CENTER ,Sierra Club ,Southern Environmental Law Center ,",
+  "org_type": "consumer_advocate",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5386__Natural-Resource-Defense-CouncilSustainable-FERC-P/DRAFT PIO RM26-4 Large Load Comment to FERC FINAL.txt",
+  "overall_summary": "A coalition of public interest organizations supports the DOE proposal as a starting point but urges FERC to hold firmly to the principle that new large loads must not harm affordability or reliability for existing consumers. The filers call for cost-causation discipline (large loads bear 100% of upgrade costs), oppose allowing existing generators to suspend service to the broader market to serve a single data center customer, and support curtailment and control-technology requirements tied to flexibility commitments. They also flag jurisdictional limits, market-manipulation risks from co-location, and the need for long-term proactive transmission planning alongside any near-term interconnection rules.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "These recent price surges in PJM illustrate how the rapid and unregulated interconnection of new large loads can unjustly and unreasonably impose extreme costs and significant reliability risks on other consumers.",
+      "concern": "Unregulated large load interconnection has already driven extreme capacity costs and reliability risks in PJM",
+      "bins": [
+        "pr:cost",
+        "rg:pjm"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "new large loads should be responsible for the costs they cause, and it would be unjust and unreasonable for the costs caused by new large loads to be shifted to existing consumers who did not cause those costs and who receive no, or trivial, benefits from the infrastructure developed to serve new large loads.",
+      "concern": "Cost-causation principle requires large loads to bear all upgrade costs rather than shift them to existing ratepayers",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "we encourage FERC to set minimum standards governing the interconnection of new large loads—floors, not ceilings—to allow for more rigorous state regulation and encourage RTO/ISOs and utilities to work closely with state regulators to address the incoming large load demands.",
+      "concern": "Federal rules should set floors, not ceilings, preserving state authority to impose stricter protections",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:federal-state-floors"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "in the long term, building out the system in response to discrete, emergent needs rather than through proactive, forward-looking, system-wide planning fails to identify the most cost-effective infrastructure investments, which would solve the reliability issues associated with new large loads and provide broader system benefits.",
+      "concern": "Reactive project-by-project interconnection planning produces inferior outcomes compared to proactive system-wide planning",
+      "bins": [
+        "pr:study",
+        "topic:proactive-transmission-planning"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "FERC should emphasize accelerating interconnection processes generally over adopting separate fast-tracks, and must at least implement safeguards to prevent fast-tracks from causing harm to the existing generator interconnection process.",
+      "concern": "Fast-track interconnection paths for large loads must not delay or harm existing generator queue processes",
+      "bins": [
+        "aq:expedited",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Control technologies are a better approach because they can allow direct control of injections or withdrawals and thus prevent any harm associated with unauthorized actions, such as distortions in market prices or threats to reliability.",
+      "concern": "Physical control technologies are preferable to financial penalties for enforcing withdrawal and injection limits",
+      "bins": [
+        "aq:hybridrights",
+        "aq:protection",
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "FERC should not adopt a default crediting mechanism to offset the costs of network upgrades required for large load interconnection. Again, because large loads are the sole or primary beneficiaries of the network upgrades required for their interconnection, it is appropriate for them to bear 100% of the costs of those upgrades.",
+      "concern": "Filers oppose a default credit mechanism that could shift network upgrade costs away from the large load that caused them",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "PIOs do not believe that the Commission should adopt Principle 10. Many regions of the country are currently experiencing resource adequacy or reliability challenges. Generation that has been on the system and serving existing load should not be allowed to be essentially removed from the grid to serve a single customer.",
+      "concern": "Filers oppose Principle 10 because allowing existing generators to suspend service to the broader market to serve one large load harms resource adequacy and shifts costs",
+      "bins": [
+        "pr:cost",
+        "pr:proximate",
+        "topic:generator-suspension"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the suspension of existing generation to serve new large loads is inconsistent with cost-causation principles and unjust and unreasonable because this practice shifts costs associated with maintaining resource adequacy onto other consumers, as well as increasing reliability risks for existing ratepayers.",
+      "concern": "Generator suspension to serve a new large load shifts resource adequacy costs and reliability risks onto other ratepayers",
+      "bins": [
+        "pr:cost",
+        "topic:generator-suspension"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "It is unjust and unreasonable to force ordinary ratepayers to bear an increased risk of blackouts simply to facilitate new large loads buying up existing capacity.",
+      "concern": "Allowing large loads to capture existing generation capacity at the expense of other ratepayers' blackout risk is unjust",
+      "bins": [
+        "pr:cost",
+        "topic:generator-suspension"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "76 GW of new load—equivalent to 10% of the nation's current aggregate peak demand—could be integrated with an average annual load curtailment rate of 0.25%.",
+      "concern": "Modest curtailment commitments can unlock substantial new load capacity without major system stress",
+      "bins": [
+        "pr:flex",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "FERC must establish guidelines to limit unfair allocation of reliability risks at the wholesale level.",
+      "concern": "Wholesale curtailment rules must protect other customers from bearing disproportionate reliability risk",
+      "bins": [
+        "pr:flex",
+        "aq:protection"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "any curtailment requirements must not allow a backup generator to be in violation of state or federal air quality laws or maximum backup generation run-time requirements.",
+      "concern": "Curtailment rules must not push large load backup generators into violations of air quality or run-time limits",
+      "bins": [
+        "pr:flex",
+        "topic:air-quality-curtailment"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "co-location arrangements involving existing generators can heighten the concern with deficiencies in market power mitigation rules by exacerbating certain market participants' incentives to abuse market power and engage in market manipulation.",
+      "concern": "Co-location with existing generators can worsen market power and manipulation incentives",
+      "bins": [
+        "pr:colo",
+        "topic:market-manipulation"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "FERC must ensure that load interconnection studies are sufficiently rigorous and transparent to identify the beneficiaries of network upgrades and enable cost-allocation that is roughly commensurate with the benefits.",
+      "concern": "Study processes must be rigorous and transparent enough to support accurate cost allocation",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Large Loads Bear Full Upgrade Costs",
+      "stance": "support",
+      "description": "The filers strongly support cost-causation discipline. Large loads are the sole or primary beneficiaries of the network upgrades they require, so they must bear 100% of those costs with no default crediting mechanism. The same principle bars allowing generators to suspend service to the broader market for a single customer, which shifts resource adequacy costs and blackout risk onto other ratepayers.",
+      "quote_ids": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Rigorous and Transparent Studies",
+      "stance": "support",
+      "description": "Interconnection studies must be thorough enough to identify upgrade beneficiaries and support accurate cost allocation. The filers also call for proactive, system-wide planning over reactive project-by-project responses, and warn that fast-track processes must not degrade the existing generator interconnection queue.",
+      "quote_ids": [
+        4,
+        5,
+        15
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Curtailment Tied to Clear Rules",
+      "stance": "support",
+      "description": "The filers support flexibility and curtailment requirements as a condition for expedited interconnection, noting that even a 0.25% annual curtailment rate could integrate 76 GW of new load. Curtailment guidelines must, however, fairly allocate reliability risk at the wholesale level and must not force large loads to run backup generators in violation of air quality or run-time rules.",
+      "quote_ids": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location Controls and Market Risk",
+      "stance": "mixed",
+      "description": "The filers support studying large loads together with co-located generation and favor physical control technologies over financial penalties to enforce injection and withdrawal limits. They flag, however, that co-location with existing generators can worsen market power incentives and market manipulation risks that FERC must address.",
+      "quote_ids": [
+        6,
+        14
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "No Generator Suspension for Single Customer",
+      "stance": "oppose",
+      "description": "The filers oppose Principle 10 because allowing an existing generator to suspend service to the broader market to serve one data center customer removes capacity already paid for by existing ratepayers and increases their resource adequacy costs and blackout risk.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Federal Floors, Not Ceilings",
+      "stance": "support",
+      "description": "The filers support FERC exercising its FPA jurisdiction over transmission-level large load interconnections but insist that federal rules set minimum floors rather than ceilings, preserving states' authority to impose stricter protections and enabling cooperative federalism.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "100% Cost Responsibility, No Default Credit",
+      "stance": "support",
+      "description": "Large loads must pay 100% of the network upgrade costs they cause. The filers oppose any default crediting mechanism and insist that a utility seeking cost sharing for a particular upgrade must affirmatively prove the degree and identity of broader beneficiaries.",
+      "quote_ids": [
+        2,
+        7
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited Interconnection With Safeguards",
+      "stance": "support",
+      "description": "The filers support expedited interconnection for curtailable loads but warn against fast-track paths that harm the existing generator queue. They prefer accelerating interconnection processes broadly over creating separate fast-track lanes.",
+      "quote_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Control Technologies Over Penalties",
+      "stance": "support",
+      "description": "Physical control technologies that directly limit unauthorized withdrawals or injections are superior to financial penalties, which may simply be absorbed as a cost of doing business and do not prevent harm in real time.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Protect Existing Customers from Harm",
+      "stance": "support",
+      "description": "Any interconnection rule must protect existing ratepayers from cost shifts, reliability risk, and unfair curtailment allocation. Control technologies and clear wholesale curtailment guidelines are the primary mechanisms the filers endorse.",
+      "quote_ids": [
+        6,
+        12
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Holistic Joint Study Process",
+      "stance": "support",
+      "description": "The filers support studying large loads together with generation to minimize network upgrade needs, provided the process is transparent enough to enable accurate cost allocation and does not disadvantage existing queue participants.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Capacity Cost Surge",
+      "stance": "neutral",
+      "description": "PJM is the primary example throughout the filing. Capacity auction costs reached $14.7 billion in 2025/2026 and $16.1 billion in 2026/2027, driven by data center load growth, illustrating the concrete consumer harm that motivates the filers' positions.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:federal-state-floors",
+      "name": "Cooperative Federalism Floors",
+      "stance": "support",
+      "description": "Following the EPSA and Hughes cooperative federalism framework, the filers want FERC to set minimum federal standards and leave room for states to go further, particularly through state large load tariffs and rate designs that protect retail customers.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "topic:proactive-transmission-planning",
+      "name": "Proactive System-Wide Planning",
+      "stance": "support",
+      "description": "The filers argue that reactive, project-by-project interconnection planning will not identify the most cost-effective investments. Long-term proactive planning that coordinates transmission, generation interconnection, and load needs is necessary for a reliable and affordable grid.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:generator-suspension",
+      "name": "Oppose Existing Generator Suspension",
+      "stance": "oppose",
+      "description": "The filers oppose Principle 10's allowance of generator suspension to serve new large loads. This practice removes capacity already paid for by existing customers, shifts resource adequacy costs, and forces ordinary ratepayers to bear a higher risk of blackouts to benefit data centers.",
+      "quote_ids": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:market-manipulation",
+      "name": "Market Power and Manipulation Risk",
+      "stance": "neutral",
+      "description": "Co-location with existing generators can sharpen the incentive for market participants to withhold supply, particularly when co-location shifts market reliance toward more inelastic portions of the supply curve. FERC must evaluate whether changes to market power mitigation rules are needed.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "topic:air-quality-curtailment",
+      "name": "Air Quality Limits on Curtailment",
+      "stance": "neutral",
+      "description": "Curtailment rules must be designed so that large loads are not forced to rely on backup generators in ways that violate state or federal air quality laws or maximum run-time requirements.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "upgradecost",
+      "expedited",
+      "hybridrights",
+      "protection",
+      "jointstudy"
+    ],
+    "pr": [
+      "cost",
+      "study",
+      "flex",
+      "colo",
+      "proximate"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-26",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
