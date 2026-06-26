@@ -1,0 +1,298 @@
+{
+  "accession": "20251121-5395",
+  "filer": "Southern Maryland Electric Cooperative, Inc.",
+  "org_type": "trade_assoc",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5395__Southern-Maryland-Electric-Cooperative-Inc/SMECO RM26-4 DOE ANOPR Comments 112125-Final.txt",
+  "overall_summary": "SMECO supports expedited interconnection studies for dispatchable large loads with adequate control mechanisms; advocates for cost-causation principles requiring large loads to bear 100% of their network upgrade costs rather than shifting costs to residential consumers; and urges expanded reliability studies for co-located hybrid arrangements to protect local supply adequacy.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "SMECO respectfully submits that a final rule to establish standardized, non-discriminatory procedures for \"orderly\" interconnections of large new loads without compromising reliability is needed at the present time.",
+      "concern": "Final rule needed for orderly large load interconnection without reliability compromise",
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "with each passing PJM capacity market auction, the quantity of new loads that PJM is attempting to serve in its capacity market is ever increasing.",
+      "concern": "Large load volume increasing significantly in PJM auctions",
+      "bins": [
+        "rg:pjm",
+        "topic:load-surge"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "SMECO urges the Commission, in any final rule, to ensure that PJM's ability to control such eligible load facilities through curtailment and/or dispatch, through, for example PJM Price Responsive Demand and Demand response products, to the extent those or similar products is permitted at all to serve new large loads, is adequate for PJM to integrate the facility into both operations and system planning.",
+      "concern": "Requires adequate RTO control mechanisms for dispatchable large loads",
+      "bins": [
+        "aq:expedited",
+        "pr:flex",
+        "topic:dispatch-products"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "SMECO supports a federal construct and framework in the PJM Open Access Transmission Tariff that would directly assign costs associated with upgrades to the electric transmission system caused by a large load facility directly to the large load facility (or group of large load facilities) assigned through the interconnection studies.",
+      "concern": "Large loads should directly bear upgrade costs assigned through interconnection studies",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:cost-causation"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "A framework that would directly assign costs associated with upgrades to the electric transmission system caused by a large load facility - akin to a customer Contribution in Aid of Construction (\"CIAC\") at the wholesale level or Federal CIAC - would also entail the new large load paying network service thru the applicable network service rate once access to the grid is achieved by paying for the appurtenant necessary upgrade.",
+      "concern": "Cost allocation model analogous to CIAC ensures large loads pay for their network service",
+      "bins": [
+        "pr:cost",
+        "topic:ciac-model"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "it is the intent of the General Assembly that residential retail electric customers in the State should not bear the financial risks associated with large load customers interconnecting to the electric system serving the State.",
+      "concern": "Residential customers should not absorb financial risk from large load interconnection",
+      "bins": [
+        "topic:residential-protection"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Principle 8 is essential to keep rates affordable to other consumers (especially residential customers, many of whom are currently struggling to afford their electric service) and to protect them from cost shifting.",
+      "concern": "Cost assignment principle protects residential rate affordability",
+      "bins": [
+        "pr:cost",
+        "topic:rate-protection"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "PJM transmission costs already occupy a higher share of total wholesale costs than RPM capacity costs, and such costs stand to increase as the considerable large loads contemplated for the PJM region require PJM grid expansion.",
+      "concern": "PJM transmission costs growing and large loads will drive further expansion",
+      "bins": [
+        "rg:pjm",
+        "pr:cost",
+        "topic:transmission-burden"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "SMECO's support for a framework in the PJM Tariff that would directly assign costs associated with upgrades to the electric transmission system caused by a large load facility directly to the large load facility is consistent with long-standing cost-causation ratemaking principles",
+      "concern": "Direct cost assignment aligns with cost-causation ratemaking precedent",
+      "bins": [
+        "pr:cost",
+        "topic:cost-causation"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "SMECO appreciates the importance of ANOPR Principle 10 and urges the Commission to adopt a final rule to ensure that local reliability is not negatively impacted by hybrid/co-location arrangements, if such arrangements are to be permitted in the first instance at all.",
+      "concern": "Hybrid arrangements must not degrade local reliability",
+      "bins": [
+        "pr:colo",
+        "pr:proximate",
+        "topic:hybrid-reliability"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "SMECO supports a final rule that would consider expanding the reliability studies that PJM performs pursuant to PJM Tariff, Part V to an existing generating facility that seeks to enter a partial suspension, as described in the ANOPR, to serve any new load authorized to take service in a co-located or hybrid configuration.",
+      "concern": "Expand RMR-type studies for co-located load and generator arrangements",
+      "bins": [
+        "pr:colo",
+        "pr:study",
+        "topic:rmr-expansion"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:expedited",
+      "name": "Expedited studies with dispatch control",
+      "stance": "support",
+      "description": "SMECO supports expedited interconnection studies for large loads that agree to be dispatchable, provided that PJM retains adequate ability to control such facilities through curtailment and dispatch mechanisms such as Price Responsive Demand and Demand Response products.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Large loads bear upgrade costs",
+      "stance": "support",
+      "description": "SMECO supports requiring large loads and hybrid facilities to bear 100% of network upgrade costs assigned through interconnection studies via a federal framework analogous to Contribution in Aid of Construction.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Standardized orderly interconnection procedures",
+      "stance": "support",
+      "description": "SMECO calls for a final rule establishing standardized, non-discriminatory procedures for orderly interconnections of large new loads without compromising reliability.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost causation for residential rate protection",
+      "stance": "support",
+      "description": "SMECO supports cost-causation ratemaking principles that directly assign transmission upgrade costs to large loads to protect residential customers from cost shifting and rate increases, as PJM transmission costs already exceed capacity costs and will rise further.",
+      "quote_ids": [
+        4,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "RMR studies for co-located hybrid arrangements",
+      "stance": "support",
+      "description": "SMECO supports expanding reliability must-run studies for existing generators entering partial suspension to serve co-located or hybrid large load configurations to ensure local reliability is not compromised.",
+      "quote_ids": [
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Operational and planning integration capability",
+      "stance": "support",
+      "description": "SMECO emphasizes that control mechanisms for dispatchable large loads must be adequate for PJM to integrate such facilities into both operations and system planning.",
+      "quote_ids": [
+        1,
+        3
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Local supply adequacy in hybrid arrangements",
+      "stance": "support",
+      "description": "SMECO warns that co-located hybrid large loads may dilute available generation supply and degrade resource adequacy, necessitating protective reliability frameworks.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM-specific concerns and context",
+      "stance": "neutral",
+      "description": "SMECO addresses large load growth in PJM auctions and identifies PJM as the primary region for its comments, noting rising transmission costs and the need for regional flexibility in implementing large load rules.",
+      "quote_ids": [
+        2,
+        8
+      ]
+    },
+    {
+      "key": "topic:load-surge",
+      "name": "Rapid increase in large loads",
+      "stance": "neutral",
+      "description": "SMECO documents that large load volume is rising with each capacity auction, creating urgency for interconnection frameworks.",
+      "quote_ids": [
+        2
+      ]
+    },
+    {
+      "key": "topic:dispatch-products",
+      "name": "Tariff products for dispatchable control",
+      "stance": "support",
+      "description": "SMECO references PJM Price Responsive Demand and Demand Response products as mechanisms to enable adequate system control of dispatchable large loads.",
+      "quote_ids": [
+        3
+      ]
+    },
+    {
+      "key": "topic:cost-causation",
+      "name": "Cost-causation ratemaking principle",
+      "stance": "support",
+      "description": "SMECO grounds its cost-allocation position in long-standing cost-causation principles requiring that costs be allocated commensurate with benefits derived.",
+      "quote_ids": [
+        4,
+        9
+      ]
+    },
+    {
+      "key": "topic:ciac-model",
+      "name": "CIAC framework for wholesale cost allocation",
+      "stance": "support",
+      "description": "SMECO proposes a federal Contribution in Aid of Construction model at the wholesale level to directly assign upgrade costs to large loads and establish their obligation to pay network service rates.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "topic:residential-protection",
+      "name": "Protecting residential customer interests",
+      "stance": "support",
+      "description": "SMECO cites Maryland legislation stating that residential customers should not bear financial risk from large load interconnection, establishing a state policy underpinning federal cost allocation.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:rate-protection",
+      "name": "Keeping rates affordable for existing customers",
+      "stance": "support",
+      "description": "SMECO emphasizes that cost-causation cost allocation is essential to keep rates affordable for existing consumers, many of whom are struggling with affordability.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:transmission-burden",
+      "name": "Growing PJM transmission cost burden",
+      "stance": "neutral",
+      "description": "SMECO documents that transmission costs already occupy a higher share of PJM wholesale costs than capacity costs and will increase further due to grid expansion for large loads.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:hybrid-reliability",
+      "name": "Reliability risk in hybrid co-location",
+      "stance": "support",
+      "description": "SMECO cautions that hybrid co-located arrangements could negatively impact local reliability through supply dilution and calls for protective frameworks.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:rmr-expansion",
+      "name": "Expand RMR studies for hybrid configurations",
+      "stance": "support",
+      "description": "SMECO supports expanding PJM Tariff Part V reliability must-run studies to cover cases where existing generators partially suspend service to co-locate with new large loads.",
+      "quote_ids": [
+        11
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

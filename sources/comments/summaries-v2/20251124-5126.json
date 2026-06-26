@@ -1,0 +1,343 @@
+{
+  "accession": "20251124-5126",
+  "filer": "Helion Energy",
+  "org_type": "generator_ipp",
+  "filed": "11/24/2025",
+  "source_text": "sources/comments/files/20251124-5126__Helion-Energy/Helion Comment Re Docket RM26-4-000.txt",
+  "overall_summary": "Helion Energy argues that interconnection delays are the primary barrier to deploying advanced baseload generation like fusion to meet surging electricity demand from AI and manufacturing. Helion recommends prioritizing baseload, dispatchable resources in interconnection queues, streamlining approval for collocated generation and behind-the-meter installations, requiring automated study processes with expedited timelines, incorporating emerging technologies into transmission planning, and establishing expedited pathways for novel generation technologies.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "As a U.S.-based fusion energy company delivering the world's first commercial fusion power plant by 2028 with plans to rapidly scale deployment thereafter, Helion is deeply invested in ensuring that federal policy supports accelerated interconnection of baseload and dispatchable generation that can meet America's surging electricity demand.",
+      "concern": "Filer seeks accelerated interconnection for baseload and dispatchable generation",
+      "bins": [
+        "topic:baseload-priority"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "The United States is entering an era of explosive electricity demand driven by artificial intelligence, advanced manufacturing, and industrial reshoring. At the same time, the processes for adding new generation and transmission are too slow and cumbersome to meet the demands of America's competitive environment.",
+      "concern": "Current interconnection processes inadequate for demand surge",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Regional operators are warning of capacity shortfalls as early as this year, with projects delayed years by interconnection queues. Developers are forced to choose where to build based not on where power is needed most, but on where approvals can be secured fastest.",
+      "concern": "Queue delays cause suboptimal siting decisions",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "That is why Helion believes it is essential to simultaneously address the ANOPR comments and to reevaluate and improve generation interconnection practices in a single rulemaking process that prioritizes an interconnection process capable of meeting the moment.",
+      "concern": "Comprehensive rulemaking on interconnection needed",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Advanced energy technologies—whether nuclear, fusion, geothermal, or grid-scale storage—cannot scale at the speed of innovation if they must wait for years in queues designed for another era.",
+      "concern": "Queue delays restrict deployment of emerging technologies",
+      "bins": [
+        "topic:tech-innovation"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "China is moving at a pace that should serve as a wake-up call. It adds gigawatts of new capacity in the time it takes U.S. projects to complete initial studies by aligning industrial policy, manufacturing, and energy deployment with ruthless efficiency.",
+      "concern": "U.S. interconnection process slower than international competitors",
+      "bins": [
+        "topic:international-competition"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "FERC has a once-in-a-generation opportunity to break the logjam that has made our own regulatory process the biggest barrier to American progress.",
+      "concern": "Regulatory process is primary barrier to energy infrastructure deployment",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "America's future energy system will depend on baseload, dispatchable resources that can operate in direct coordination with large, concentrated loads.",
+      "concern": "System design should prioritize baseload and dispatchable resources",
+      "bins": [
+        "topic:baseload-priority"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "FERC's framework should prioritize resources capable of providing baseload, dispatchable, non-fuel-limited power that enhances grid stability.",
+      "concern": "FERC should establish prioritization for baseload dispatchable resources",
+      "bins": [
+        "topic:baseload-priority"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "It is time for FERC to recognize that non-discriminatory transmission access does not prevent—and actually supports—treating dispatchable, baseload power with priority to meet community energy demand, support national security concerns, and secure America's competitive edge.",
+      "concern": "Queue prioritization of baseload resources is compatible with nondiscrimination",
+      "bins": [
+        "topic:baseload-priority"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Helion's fusion plants will deliver baseload power that is not fuel-limited with rapid dispatchability—ramping output dynamically in response to grid conditions within seconds through our inherent pulsed power system.",
+      "concern": "Fusion technology provides baseload power with rapid dispatchability",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "There is a fundamental shift in how America must approach grid planning: the rise of large, concentrated loads requiring direct coordination with generation resources. This insight points toward a solution that reduces transmission congestion while enhancing reliability—collocating generation directly at load centers.",
+      "concern": "Collocation reduces transmission congestion and enhances reliability",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Calling data centers \"flexible\" does not mean they can simply absorb sudden cuts in power; real flexibility comes from collocated generation that can ramp up and down with their needs and support the grid in the process.",
+      "concern": "Collocated generation provides true load flexibility and grid support",
+      "bins": [
+        "pr:colo",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Helion's independence from geographic constraints, continuous fuel supply chains, and weather conditions enables siting directly alongside data centers, manufacturing facilities, and other large users.",
+      "concern": "Fusion can be sited at loads due to geographic and fuel flexibility",
+      "bins": [
+        "pr:proximate"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "When baseload, dispatchable, non-fuel-limited generation is collocated with large loads, both the interconnection challenge and the generation/transmission capacity challenge can be addressed simultaneously.",
+      "concern": "Collocation solves both interconnection and capacity challenges",
+      "bins": [
+        "pr:colo",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "FERC should establish clear criteria that recognize and prioritize baseload, dispatchable resources based on their contribution to grid reliability.",
+      "concern": "Recommendation: establish prioritization criteria for baseload resources",
+      "bins": [
+        "topic:baseload-priority",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Expedited study pathways for resources providing baseload, dispatchable, non-fuel-limited power",
+      "concern": "Expedited study processes for baseload and dispatchable resources",
+      "bins": [
+        "pr:study",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Queue priority weighted by factors like dispatchability and baseload energy capability that promote grid reliability, not solely application date or readiness",
+      "concern": "Queue priority should reflect grid reliability, not just application order",
+      "bins": [
+        "topic:baseload-priority"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Establish simplified procedures for projects pairing large loads with collocated baseload, dispatchable generation that addresses reliability issues",
+      "concern": "Simplified procedures for collocated load-generation projects",
+      "bins": [
+        "pr:colo"
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Create expedited approval pathways for behind-the-meter or directly connected generation that reduces demand on shared grid infrastructure",
+      "concern": "Expedited approval for BTM and direct-connect generation",
+      "bins": [
+        "pr:colo",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Require transmission providers to deploy AI and advanced modeling tools to automate and accelerate interconnection studies for all new load and generation requests",
+      "concern": "Mandate automated study tools to accelerate interconnection studies",
+      "bins": [
+        "pr:study"
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Establish standards for real-time or near-instantaneous study results, particularly for projects with minimal transmission impact or those pairing loads with baseload, dispatchable generation",
+      "concern": "Study result timelines should be standardized and accelerated",
+      "bins": [
+        "pr:study",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Incorporate fusion energy and any other advanced baseload, dispatchable, non-fuel limited technologies into transmission planning models and resource adequacy assessments",
+      "concern": "Emerging technologies should be incorporated in transmission planning",
+      "bins": [
+        "pr:study",
+        "topic:tech-innovation"
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Create expedited review processes for novel generation technologies demonstrating baseload, dispatchable characteristics",
+      "concern": "Expedited review pathways for emerging generation technologies",
+      "bins": [
+        "aq:expedited",
+        "topic:tech-innovation"
+      ]
+    },
+    {
+      "id": 25,
+      "text": "The interconnection challenges facing America's energy system are policy choices, not technical limitations.",
+      "concern": "Interconnection delays are regulatory, not technical",
+      "bins": [
+        "pr:study"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Accelerated study processes and timelines",
+      "stance": "support",
+      "description": "Helion advocates for modernizing interconnection study processes through automation, standardized timelines, and expedited pathways to reduce delays that currently take years. The filing states interconnection processes are too slow and cumbersome, with projects delayed years in queues, and recommends requiring AI-based automation, establishing real-time study standards, and setting progressive timeline targets as systems are deployed.",
+      "quote_ids": [
+        2,
+        3,
+        4,
+        7,
+        17,
+        21,
+        22,
+        25
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Collocated generation and behind-the-meter solutions",
+      "stance": "support",
+      "description": "Helion supports streamlining interconnection for generation collocated directly with large loads to reduce transmission congestion while enhancing reliability. The filing proposes simplified procedures and expedited approval for collocated and behind-the-meter generation, noting that collocation eliminates line losses, reduces bulk transmission stress, and allows precise matching of power supply to demand.",
+      "quote_ids": [
+        12,
+        13,
+        15,
+        19,
+        20
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Transmission cost reduction through collocation",
+      "stance": "support",
+      "description": "Helion argues that collocated generation reduces stress on shared grid infrastructure and addresses both interconnection and capacity challenges simultaneously, implicitly supporting cost allocation that recognizes these benefits.",
+      "quote_ids": [
+        15
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Dispatchability and grid coordination",
+      "stance": "support",
+      "description": "Helion emphasizes that modern grids need generation capable of rapid ramping and precise coordination with load fluctuations. Helion's fusion technology is characterized as providing baseload power with dispatchability to respond within seconds, and the filing argues collocated generation enables true load flexibility and grid support.",
+      "quote_ids": [
+        11,
+        13
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Geographic siting flexibility for fuel-independent generation",
+      "stance": "support",
+      "description": "Helion highlights that fusion energy is independent of geographic constraints, fuel supply chains, and weather conditions, enabling siting at load centers. This flexibility allows generation to be deployed precisely where needed without the limitations of traditional baseload sources.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited interconnection pathways",
+      "stance": "support",
+      "description": "Helion calls for multiple expedited mechanisms: expedited study pathways for baseload and dispatchable resources, expedited approval for BTM and directly connected generation, and expedited review for novel generation technologies. These pathways are justified by grid reliability benefits and the need to match deployment speed to electricity demand growth.",
+      "quote_ids": [
+        16,
+        17,
+        20,
+        22,
+        24
+      ]
+    },
+    {
+      "key": "topic:baseload-priority",
+      "name": "Prioritizing baseload and dispatchable resources",
+      "stance": "support",
+      "description": "Helion argues that FERC should establish clear criteria to prioritize baseload, dispatchable, non-fuel-limited resources based on grid reliability contribution rather than application date alone. Queue priority should reflect dispatchability and baseload capability, and this prioritization is asserted to be compatible with nondiscriminatory transmission access when serving community energy demand and national security goals.",
+      "quote_ids": [
+        1,
+        8,
+        9,
+        10,
+        16,
+        18
+      ]
+    },
+    {
+      "key": "topic:tech-innovation",
+      "name": "Emerging technology siting and integration",
+      "stance": "support",
+      "description": "Helion contends that advanced technologies including fusion, nuclear, and geothermal cannot scale at innovation speed if delayed in queues designed for another era. The filing recommends incorporating emerging technologies into transmission planning, establishing technical working groups for interconnection standards before commercial scale, and creating expedited pathways for first-of-a-kind technologies.",
+      "quote_ids": [
+        5,
+        23,
+        24
+      ]
+    },
+    {
+      "key": "topic:international-competition",
+      "name": "International competitiveness and pace of deployment",
+      "stance": "support",
+      "description": "Helion frames interconnection reform as essential to U.S. economic and energy security competitiveness, citing China's ability to add gigawatts in the time U.S. projects complete initial studies. The filing argues that regulatory speed determines whether next-generation technologies are deployed domestically or abroad and whether American workers capture strategic advantages.",
+      "quote_ids": [
+        6
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "colo",
+      "cost",
+      "flex",
+      "proximate"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

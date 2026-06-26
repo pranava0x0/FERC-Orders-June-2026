@@ -88,6 +88,7 @@ Set lenses to {"aq":[],"pr":[],"rg":[]} — it is derived in the next step, do N
 10. Validate — run:
    node tools/validate-summaries.mjs ${acc}
    Fix every FAIL and low-coverage WARN, then re-run until it prints "0 with errors, 0 with low-coverage quotes". The validator also rejects AI-register words and em-dashes in your prose and caption/signature quotes — fix those too. Most remaining failures are a quote that is not verbatim (re-copy exactly, or shorten to the verbatim part).
+   IMPORTANT: the validator reads the file from disk. If it prints "not found" or "no body text", your Write did NOT persist — write the file again and re-run. Report status "written" ONLY after the validator actually printed a "N summaries checked, 0 with errors" line for ${acc}. Do not claim success you have not seen on screen.
 
 11. Flag — run \`node tools/flag-summary.mjs ${acc}\` and report its "flagged" value in your status.
 

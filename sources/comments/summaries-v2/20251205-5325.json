@@ -1,0 +1,212 @@
+{
+  "accession": "20251205-5325",
+  "filer": "Americans for a Clean Energy Grid",
+  "org_type": "clean energy advocacy coalition",
+  "filed": "2025-12-05",
+  "source_text": "/Users/pranava/Projects/FERC Show Cause Orders/sources/comments/files/20251205-5325__Americans-for-a-Clean-Energy-Grid/ACEG ANOPR Reply Comments_RM26-4-000_Final.txt",
+  "overall_summary": "ACEG strongly supports rapid large-load interconnection but emphasizes that procedural reforms alone are insufficient; the Commission must mandate regional and interregional transmission expansion and proactive planning frameworks to accommodate new loads at utility scale. ACEG recommends improved load forecasting, cost-allocation mechanisms protecting existing customers, and multi-value transmission buildout.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Interconnecting both load and generation to constrained transmission system will not be effective unless significant new grid infrastructure is built, and those new resources must be incorporated into forward-looking planning.",
+      "concern": "Transmission infrastructure expansion required alongside interconnection",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "when managed correctly, interconnecting large loads to the grid is a win-win for all customers; the transmission system that serves everyone benefits from additional investment: new costs can be shared among a larger customer base in ways that will mitigate",
+      "concern": "Cost-sharing spreads network upgrade costs across broader customer base",
+      "bins": [
+        "pr:cost",
+        "topic:cost-allocation"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "We strongly support deployment of infrastructure to meet these goals, and are mindful of the need to implement the proposals in the ANOPR in a way that addresses the affordability impacts on customers and ensures harmony with state and federal jurisdiction",
+      "concern": "Support infrastructure but must address affordability and state-federal coordination",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "the grid cannot support a new era of high-density, high-demand loads without a corresponding expansion in transmission capacity.",
+      "concern": "Transmission capacity expansion essential to serve new loads",
+      "bins": [
+        "pr:cost",
+        "topic:transmission-capacity"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The core challenge facing the electric system today is not merely procedural delay in generator interconnection studies, but the lack of sufficient transmission infrastructure and forward planning to accommodate new load and new generation in a timely manner... A planning construct designed for marginal load variation is no longer adequate when load is materializing at utility-scale magnitude and on industrial timelines.",
+      "concern": "Procedural reforms insufficient; core issue is transmission infrastructure deficit and inadequate planning frameworks",
+      "bins": [
+        "pr:study",
+        "topic:transmission-capacity"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "the long-term goal of many of these customers is to be grid-connected in order to ensure the reliability and resilience that these facilities need... customers prefer to develop grid-connected sites to promote reliability and resilience to ensure operational continuity",
+      "concern": "Large loads prefer grid connection for operational reliability despite near-term alternatives",
+      "bins": [
+        "topic:reliability"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the current siloed approach to transmission planning will not deliver infrastructure fast enough to ensure the United States continues to be a leader in artificial intelligence and is able to grow its manufacturing base. Widespread adoption of proactive transmission planning will better anticipate and plan for load and generation in an efficient and cost-effective manner.",
+      "concern": "Current reactive planning inadequate; proactive regional planning needed",
+      "bins": [
+        "pr:study",
+        "topic:transmission-planning"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Proactively planning transmission can increase transparency on the cost and timing of interconnection and identify cost-effective transmission solutions. In particular, when transmission is proactively planned, the costs for interconnection are provided to interconnection customers upfront, and developers have greater clarity on when they can interconnect, reducing uncertainty and the speculative behavior that increases queue timelines.",
+      "concern": "Proactive planning improves cost transparency and reduces market uncertainty",
+      "bins": [
+        "pr:study",
+        "topic:transmission-planning",
+        "topic:cost-allocation"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "to plan better in order to develop a transmission grid that can support the nation's digital infrastructure needs. Doing so requires a holistic transmission planning process that harmonizes both new load interconnection with new generation supply. transmission planners must have a realistic picture of the generators and the large loads planning to interconnect to the transmission grid if they are to plan the grid in an efficient, cost-effective, and reliable manner.",
+      "concern": "Holistic planning integrating load and generation forecasts needed",
+      "bins": [
+        "pr:study",
+        "topic:transmission-planning"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "must be understood as a core transmission-infrastructure priority one that modernizes and expands the grid at the scale required, not merely streamlines procedural steps.",
+      "concern": "Large-load interconnection is primarily a transmission infrastructure issue, not a procedural one",
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "new transmission infrastructure is critical to meeting large loads and enhancing the grid overall... new generation and transmission infrastructure will be part of the solution... supports expansion of the electric grid in order to enable data center growth and AI industry development",
+      "concern": "Broad coalition support for transmission expansion to enable economic growth",
+      "bins": [
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Require improved regional forecasting for significant loads (75 MW or more). Ensure cost recovery and cost-allocation mechanisms that protect existing customers while allowing large loads to participate fairly in and benefit from the broader grid. Direct proactively planned multi-value high-capacity transmission as part of the solution",
+      "concern": "Key recommendations: forecasting, cost-allocation protection, and multi-value transmission buildout",
+      "bins": [
+        "pr:cost",
+        "pr:study",
+        "topic:cost-allocation"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the transmission system must meet the moment. No procedural refinement or queue improvement can substitute for the foundational need for more regional and interregional transmission nor for planning frameworks that anticipate, rather than react to, large-load growth.",
+      "concern": "Procedural solutions cannot substitute for foundational transmission and planning reforms",
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:cost",
+      "name": "Transmission expansion as core infrastructure need",
+      "stance": "support",
+      "description": "ACEG emphasizes that large-load interconnection requires significant regional and interregional transmission buildout at scale. Advocates for cost-allocation mechanisms that allow new costs to be shared across a larger customer base while protecting existing customers from undue burden. Positions transmission expansion as foundational, not supplementary, to interconnection success.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Proactive planning and forecasting frameworks",
+      "stance": "support",
+      "description": "Advocates for proactive regional and interregional transmission planning that anticipates large-load demand rather than reacting to individual interconnection requests. Emphasizes need for improved load forecasting at the 75 MW threshold and holistic planning that harmonizes new loads with generation supply. Current siloed and reactive approaches are insufficient to meet utility-scale demand on industrial timelines.",
+      "quote_ids": [
+        5,
+        7,
+        8,
+        9,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "topic:transmission-capacity",
+      "name": "Transmission capacity constraints blocking interconnection",
+      "stance": "neutral",
+      "description": "Identifies the shortage of transmission capacity as the core bottleneck preventing large-load interconnection. Notes that planning constructs designed for marginal load variation are inadequate for utility-scale loads materializing on industrial timelines.",
+      "quote_ids": [
+        4,
+        5
+      ]
+    },
+    {
+      "key": "topic:transmission-planning",
+      "name": "Deficiency of current transmission planning processes",
+      "stance": "oppose",
+      "description": "Critiques existing siloed, reactive, and decentralized transmission planning approaches. Advocates for coordinated, proactive planning processes that integrate load forecasts, generation supply, and transmission needs into a unified regional framework.",
+      "quote_ids": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:cost-allocation",
+      "name": "Cost recovery and allocation mechanisms",
+      "stance": "support",
+      "description": "Supports cost-allocation reforms that distribute transmission upgrade costs across the broader customer base while ensuring existing customers are protected and large loads are able to participate fairly and benefit from grid improvements.",
+      "quote_ids": [
+        2,
+        8,
+        12
+      ]
+    },
+    {
+      "key": "topic:reliability",
+      "name": "Grid connection for operational continuity",
+      "stance": "neutral",
+      "description": "Notes that large load operators prefer grid-connected sites to co-located or isolated arrangements to ensure operational reliability and resilience for their customers, despite near-term alternatives available.",
+      "quote_ids": [
+        6
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}

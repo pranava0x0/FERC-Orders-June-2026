@@ -1,0 +1,189 @@
+{
+  "accession": "20251205-5222",
+  "filer": "Emerald AI",
+  "org_type": "data_center",
+  "filed": "12/05/2025",
+  "source_text": "sources/comments/files/20251205-5222__Emerald-AI/Emerald AI_large load ANOPR Reply Comments 12.5.25 VF.txt",
+  "overall_summary": "Emerald AI strongly supports a Flexible Load Fast Track framework that treats software-defined flexibility as equivalent to generation for interconnection purposes. The company opposes mandatory generation requirements, arguing that AI data centers can verifiably reduce net load through software orchestration and are thus viable for expedited interconnection without building new power plants.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "We align ourselves with the broad coalition of commenters—including the Advanced Energy Management Alliance (AEMA), utilities, transmission owners, and technology companies—in supporting a Flexible Load Fast Track (FLFT).",
+      "concern": "Support for FLFT model",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "software-defined flexibility of data centers should be eligible as one of many qualifying technologies to provide load flexibility to the power system.",
+      "concern": "Data center software flexibility should qualify",
+      "bins": [
+        "topic:software-flexibility"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "harness the full suite of flexibility technologies in a technology-neutral and performance-based way.",
+      "concern": "Need technology-neutral flexibility framework",
+      "bins": [
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "National Grid provides direct transmission owner support for this approach, stating they are actively working to implement solutions to make this possible, including through our engagements with companies such as Emerald AI which focus on advanced analytics and flexible demand management",
+      "concern": "Utility endorsement for software flexibility",
+      "bins": [
+        "topic:utility-support"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Requiring physical generation (as suggested by the PJM IMM, Monitoring Analytics) erodes the value of software-defined curtailment and unnecessarily increases costs.",
+      "concern": "Oppose mandatory generation requirements",
+      "bins": [
+        "pr:cost",
+        "topic:generation-mandate"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "If a facility can verifiably reduce its net load at the Point of Interconnection (POI) within a specified timeframe, the method used to achieve that reduction should be irrelevant to the transmission provider.",
+      "concern": "Performance-based flexibility definition",
+      "bins": [
+        "pr:flex",
+        "pr:cost"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Emerald AI specifically urges the Commission to recognize Software-Defined Flexibility as a valid form of dispatchability and curtailment, equivalent to generation.",
+      "concern": "Software flexibility equal to generation",
+      "bins": [
+        "topic:software-flexibility",
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Emerald AI has already demonstrated through recent peer-reviewed research (Colangelo et al., Nature Energy, 2025) that AI data centers can provide grid-interactive value reliably.",
+      "concern": "Data centers proven grid-beneficial",
+      "bins": [
+        "topic:software-flexibility"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Building new generation is capital-intensive and delay projects by several years. Software-defined flexibility can be deployed immediately.",
+      "concern": "Software faster than building generation",
+      "bins": [
+        "pr:cost",
+        "aq:expedited"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "A reduction in demand (megawatts off) is physically equivalent to an increase in supply (megawatts on) for the purposes of balancing the system.",
+      "concern": "Demand reduction equals supply increase",
+      "bins": [
+        "pr:flex"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Mandating that data centers build matching generation to receive expedited interconnection is economically inefficient and technologically regressive.",
+      "concern": "Oppose generation requirement for expedited access",
+      "bins": [
+        "pr:cost",
+        "topic:generation-mandate",
+        "aq:expedited"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:flex",
+      "name": "Technology-neutral flexibility framework",
+      "stance": "support",
+      "description": "Emerald AI supports defining flexibility in performance-based, technology-neutral terms where any method to verifiably reduce net load qualifies, regardless of whether via software, hardware, or hybrid approaches. This includes recognizing software-defined flexibility as equivalent to generation for grid balancing.",
+      "quote_ids": [
+        1,
+        3,
+        6,
+        7,
+        10
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Cost efficiency over generation mandates",
+      "stance": "oppose",
+      "description": "Emerald AI opposes requirements to build matching generation, arguing software-defined flexibility is more cost-effective, can be deployed immediately, and achieves the same grid balancing outcome without capital-intensive multi-year buildouts.",
+      "quote_ids": [
+        3,
+        5,
+        6,
+        9,
+        11
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited access for flexible loads",
+      "stance": "support",
+      "description": "Emerald AI supports expedited interconnection pathways for data centers that can verifiably reduce load through software orchestration, without requiring generation buildouts as a precondition.",
+      "quote_ids": [
+        9,
+        11
+      ]
+    },
+    {
+      "key": "topic:software-flexibility",
+      "name": "Software as grid-interactive asset",
+      "stance": "support",
+      "description": "Emerald AI contends that software-orchestrated load flexibility (temporal, spatial, and resource-based) should be recognized as a valid, credible, peer-reviewed grid asset for data centers, capable of providing verifiable curtailment and demand response.",
+      "quote_ids": [
+        2,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "topic:generation-mandate",
+      "name": "Opposition to generation-only pathway",
+      "stance": "oppose",
+      "description": "Emerald AI rejects arguments that large loads must pair with on-site generation for expedited interconnection, calling such requirements economically inefficient and dismissive of modern AI data center operational capabilities.",
+      "quote_ids": [
+        5,
+        11
+      ]
+    },
+    {
+      "key": "topic:utility-support",
+      "name": "Utility validation of software solutions",
+      "stance": "neutral",
+      "description": "Emerald AI notes that transmission owners like National Grid have validated software-defined flexibility approaches, are actively working with companies like Emerald AI on advanced analytics and demand management, and recognize that flexible loads can contribute to cost efficiency.",
+      "quote_ids": [
+        4
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "expedited"
+    ],
+    "pr": [
+      "flex",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-haiku-4-5-20251001",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
