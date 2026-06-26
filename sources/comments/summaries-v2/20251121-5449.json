@@ -1,0 +1,252 @@
+{
+  "accession": "20251121-5449",
+  "filer": "Longroad Energy Holdings, LLC",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5449__Longroad-Energy-Holdings-LLC/FINAL Longroad RM26-4 Comments (11.21.25).txt",
+  "overall_summary": "Longroad Energy Holdings argues that a standalone large load interconnection process grafted onto the existing siloed generation and transmission planning frameworks will not solve the speed and cost problems the ANOPR targets. The filing calls for \"Open Access 2.0\" -- holistic, coordinated planning of transmission, generation, and load under unified modeling assumptions. Longroad also urges a crediting mechanism for network upgrade costs and an option-to-build right for large load developers.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "Simply creating a standalone large load interconnection process for public utility transmission providers to implement alongside the current uncoordinated generation queue and transmission planning processes will not provide the required speed and cost efficiencies.",
+      "concern": "Standalone large load process without integrated planning will fail to deliver speed or cost savings",
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "topic:integrated-planning"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Open Access 2.0 is needed to ensure that the United States remains energy and data center dominant.",
+      "concern": "Holistic planning reform is a national security imperative",
+      "bins": [
+        "topic:integrated-planning"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Longroad is concerned that merely grafting on a separate load interconnection process that is addressed in isolation will only exacerbate the inefficiencies that currently exist in the siloed generation and transmission planning processes.",
+      "concern": "An isolated load queue will compound existing siloed planning problems",
+      "bins": [
+        "pr:study",
+        "topic:integrated-planning"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Currently, different models and assumptions within and outside of regional transmission organizations (\"RTOs\") are used for generation and transmission planning. This fractionated nature and use of different modeling assumptions are causing, in some instances, transmission overbuild or piecemeal transmission that is not efficiently optimized.",
+      "concern": "Inconsistent modeling across processes leads to overbuild and inefficiency",
+      "bins": [
+        "pr:study",
+        "topic:modeling-consistency"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Upgrade costs for generation that are unnecessarily costly have prevented generation from being built, which delays service to large loads.",
+      "concern": "Excessive network upgrade costs block generation and thereby delay large load service",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "NRIS studies have become impossible to solve, rendering them meaningless in some planning regions because many projects with interconnection agreements do not have a viable development path (offtake) and yet are still consuming NRIS capacity.",
+      "concern": "NRIS queue clog from projects without viable offtake blocks new entrants",
+      "bins": [
+        "pr:study",
+        "topic:queue-reform"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Open Access 2.0 would take the nation to the next level where transmission planning, generator interconnection and large load interconnection are modeled the same and in a coordinated, cohesive fashion.",
+      "concern": "Unified modeling of all three planning tracks is the end-state goal",
+      "bins": [
+        "topic:integrated-planning",
+        "pr:study"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Longroad respectfully submits that, in many ways, the concepts presented in the ANOPR should be viewed as the transition process and not the final product.",
+      "concern": "ANOPR reforms are a short-term bridge, not the finished framework",
+      "bins": [
+        "topic:integrated-planning"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "The base case should be updated for all known and confirmed load, which will minimize piecemeal build -- at least until Open Access 2.0 principles are adopted.",
+      "concern": "Study base cases must reflect confirmed load to reduce piecemeal transmission",
+      "bins": [
+        "pr:study",
+        "aq:jointstudy"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Longroad urges the Commission to adopt a crediting mechanism. Load and generation would provide backstop security or funds to enable the interconnecting transmission owner to build any required network upgrades following what the Commission adopted in Order No. 2003, and then the load and generation would be reimbursed via credits or cash.",
+      "concern": "Network upgrade costs should be credited back to load and generation, restoring the Order 2003 reimbursement model",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Transmission customers and load clearly benefit as the Commission found in Order No. 2003 and related cases because of the integrated nature of the network upgrades. Reimbursement effectuates that reality.",
+      "concern": "Beneficiary-pays logic from Order 2003 supports reimbursing network upgrade costs",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Another byproduct of the Commission's move away from the Order No. 2003 reimbursement paradigm and moving to participant funding has been removal of the incentive for the public utility transmission provider to optimize transmission planning.",
+      "concern": "Participant funding removes the transmission owner's incentive to optimize network upgrade solutions",
+      "bins": [
+        "pr:cost",
+        "topic:to-incentives"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "National security interests cannot be held hostage to public utility transmission provider delays. If large load can build the \"stand-alone\" connection facilities faster and at a lower cost than the interconnecting utility, the national security need and fairness to the consumer dictate that it must be allowed.",
+      "concern": "Large load developers must have an option to build stand-alone facilities to avoid transmission owner delays",
+      "bins": [
+        "pr:study",
+        "aq:hybridrights",
+        "topic:option-to-build"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "pr:study",
+      "name": "Unified Study Process Needed",
+      "stance": "support",
+      "description": "Longroad supports the ANOPR's study reforms but argues they are insufficient unless generation, transmission, and load are studied together under the same modeling assumptions. The current siloed, static base-case approach produces piecemeal transmission and NRIS queue gridlock. An option for large load to build stand-alone facilities is also part of the study-process fix.",
+      "quote_ids": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        9,
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Restore Crediting for Network Upgrades",
+      "stance": "support",
+      "description": "Longroad urges the Commission to reinstate a crediting mechanism modeled on Order No. 2003, under which load and generation are reimbursed after backstop-funding network upgrades. Participant funding has eliminated the transmission owner's incentive to optimize solutions and undermined the beneficiary-pays principle.",
+      "quote_ids": [
+        5,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Cost Assignment and Reimbursement",
+      "stance": "mixed",
+      "description": "Longroad acknowledges the ANOPR's 100% cost assignment to interconnecting customers but argues that a crediting mechanism is essential. Without reimbursement, unnecessarily high upgrade costs will deter both generation and large load, repeating the failures of the current process.",
+      "quote_ids": [
+        5,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint Study of Load and Generation",
+      "stance": "support",
+      "description": "Longroad supports studying load and generation together and updating the study base case with all known confirmed load so that network upgrade needs are accurately sized from the start.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Option to Build for Large Load",
+      "stance": "support",
+      "description": "Longroad argues large load developers should have the right to build stand-alone connection facilities when they can do so faster and at lower cost than the transmission owner, preventing national security goals from being held back by utility delays.",
+      "quote_ids": [
+        13
+      ]
+    },
+    {
+      "key": "topic:integrated-planning",
+      "name": "Open Access 2.0 Framework",
+      "stance": "support",
+      "description": "The central theme of the filing is that ANOPR reforms are a useful short-term bridge but the Commission should ultimately pursue \"Open Access 2.0\" -- a pro forma framework that mandates unified, coordinated planning of transmission, generation, and load under shared modeling assumptions. Longroad draws on Order 1920's unfinished coordination goals as the blueprint.",
+      "quote_ids": [
+        1,
+        2,
+        3,
+        7,
+        8
+      ]
+    },
+    {
+      "key": "topic:modeling-consistency",
+      "name": "Consistent Modeling Assumptions",
+      "stance": "support",
+      "description": "Longroad identifies inconsistent modeling inputs across generation, load, and transmission planning processes as a root cause of overbuild and piecemeal transmission, and calls for unified assumptions across all three processes.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:queue-reform",
+      "name": "NRIS Queue Cleanup",
+      "stance": "support",
+      "description": "Longroad flags that NRIS studies are unsolvable in some regions because projects with interconnection agreements but no viable offtake continue to consume capacity, and argues this systemic issue must be addressed as part of any large load reform.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "topic:to-incentives",
+      "name": "Transmission Owner Optimization Incentives",
+      "stance": "mixed",
+      "description": "Longroad argues that moving from reimbursement to participant funding removed transmission owners' incentive to optimize network upgrade solutions, because they no longer earn a rate of return on those facilities. Restoring a crediting mechanism would also restore that incentive.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "topic:option-to-build",
+      "name": "Developer Build Rights",
+      "stance": "support",
+      "description": "Longroad supports preserving the option for large load developers to construct stand-alone connection facilities, citing national security and consumer fairness when transmission owner timelines or costs are prohibitive.",
+      "quote_ids": [
+        13
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "upgradecost",
+      "jointstudy",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "cost"
+    ],
+    "rg": []
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-25",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
