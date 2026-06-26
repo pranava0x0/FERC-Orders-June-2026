@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260626k";
+  var ASSET_VER = "20260626l";
   var D = window.FERC_DATA;
   if (!D) { document.getElementById("main").innerHTML = "<p class='noscript'>Data failed to load (js/data.js).</p>"; return; }
 
@@ -354,6 +354,7 @@
 
     var rowsByRound = {};
     CM.list.forEach(function (c) { var k = roundOf(c.filed); (rowsByRound[k] = rowsByRound[k] || []).push(c); });
+    var allQ = []; // every row's search string, collected so the tag bar can show real match counts
     var listHtml = CM.rounds.map(function (r) {
       var items = (rowsByRound[r.key] || []).map(function (c) {
         var badge = c.s2 ? '<span class="cm-badge dl" title="Audited summary available"><span aria-hidden="true">✓</span><span class="sr-only">audited summary</span></span>'
@@ -370,6 +371,7 @@
         // descriptions and verbatim quotes are deliberately left out — they're lazy-loaded per letter,
         // too heavy to fold into every row's up-front index.)
         var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ") + " " + (c.summary || "") + " " + (c.bins || []).map(function (b) { return b.n; }).join(" ")).toLowerCase();
+        allQ.push(q);
         // expandable audited read: the plain summary, the positions as stance-colored chips (loaded
         // up front), and — fetched on open — each position's description + the verbatim quotes it draws on
         var analysis = "";
@@ -397,6 +399,15 @@
     var filter = '<div class="cm-filter"><input type="search" id="cm-search" placeholder="Filter by organization, type, position, or description…" aria-label="Filter the comment list" autocomplete="off" /><span class="cm-filter-count mono" id="cm-count">' + CM.total + " of " + CM.total + "</span></div>";
     var src = '<div class="srcs"><span class="label">Source</span><a class="src-chip" data-tier="ferc" href="' + esc(CM.source_url) + '" target="_blank" rel="noopener noreferrer" title="FERC eLibrary docket sheet for RM26-4-000">eLibrary · RM26-4 docket sheet</a></div>';
 
+    // discoverable filter vocabulary: a collapsible bar of every lens tag with the count of rows each
+    // matches. Count is the text-search count (over the same row strings the filter scans), so it equals
+    // the result you get clicking the chip. Chips reuse .cm-tag and the existing chip-click filter.
+    var tagCount = function (label) { var t = label.toLowerCase(); return allQ.reduce(function (n, s) { return n + (s.indexOf(t) >= 0 ? 1 : 0); }, 0); };
+    var tagChip = function (cls, label) { return '<button type="button" class="cm-tag ' + cls + '" data-f="' + esc(label) + '" title="Filter the list by: ' + esc(label) + '">' + esc(label) + ' <span class="cm-tag-n">' + tagCount(label) + "</span></button>"; };
+    var tagGroup = function (heading, cls, map) { return '<div class="cm-tagbar-group"><span class="cm-tagbar-label">' + esc(heading) + "</span>" + Object.keys(map).map(function (k) { return tagChip(cls, map[k]); }).join("") + "</div>"; };
+    var tagBar = '<details class="cm-tagbar" open><summary><span class="cm-tagbar-sum">Filter by tag</span><span class="cm-tagbar-hint mono">click any tag · counts show matches</span></summary>' +
+      '<div class="cm-tagbar-body">' + tagGroup("Comment-period questions", "aq", AQ) + tagGroup("Reform principles", "pr", CL) + tagGroup("Regions", "rg", RG) + "</div></details>";
+
     // three sub-tabs cut the scroll: the overall picture, the respondent mix, and the comment list itself
     var subtab = function (id, label, sel) {
       return '<button class="cm-subtab" role="tab" id="cmsub-' + id + '" aria-controls="cmsec-' + id + '" aria-selected="' + (sel ? "true" : "false") + '"' + (sel ? "" : ' tabindex="-1"') + ' data-sub="' + id + '">' + esc(label) + "</button>";
@@ -420,7 +431,7 @@
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
       head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary — open “Read the audited analysis” on any row for the plain read, then each position grouped by lens with its description and the verbatim quotes behind it. Each row also shows the lenses it engages and links to its eLibrary filing. Filter by org, type, lens, position, or any word in a summary.") +
-      filter + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src + "</section>";
+      filter + tagBar + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src + "</section>";
 
     return subnav + secOverview + secTypes + secSummaries;
   }
@@ -474,9 +485,10 @@
       count.textContent = shown + " of " + rows.length;
       if (empty) empty.hidden = shown !== 0; // explicit empty state — never leave a blank panel
     });
-    // clicking a lens chip pre-fills the search and filters (the search box stays the primary control)
-    var listwrap = document.querySelector("#panel-comments .cm-listwrap");
-    if (listwrap) listwrap.addEventListener("click", function (e) {
+    // clicking a lens chip — in the tag bar or on any row — pre-fills the search and filters
+    // (the search box stays the primary control). Scoped to the summaries section so it covers both.
+    var summariesSec = document.getElementById("cmsec-summaries");
+    if (summariesSec) summariesSec.addEventListener("click", function (e) {
       var chip = e.target.closest(".cm-tag");
       if (!chip || !chip.dataset.f) return;
       input.value = chip.dataset.f;
