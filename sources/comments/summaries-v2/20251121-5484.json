@@ -1,0 +1,478 @@
+{
+  "accession": "20251121-5484",
+  "filer": "Constellation Energy Generation, LLC",
+  "org_type": "generator_ipp",
+  "filed": "11/21/2025",
+  "source_text": "sources/comments/files/20251121-5484__Constellation-Energy-Generation-LLC/Constellation ANOPR Comments.txt",
+  "overall_summary": "Constellation Energy Generation broadly supports the DOE ANOPR's fourteen principles for large load interconnection and urges FERC to issue a comprehensive final rule by April 30, 2026. The filing's primary ask is that FERC not wait for a final rule before acting in the PJM Show Cause proceedings, where the record is already fully developed. Constellation presses three immediate priorities: confirm FERC jurisdiction over hybrid facility interconnections, require net-based transmission rates rather than gross charges, and order Transmission Owners to cooperate promptly with large load studies.",
+  "quotes": [
+    {
+      "id": 1,
+      "text": "the Commission should \"build upon these principles\" by issuing a full order in the PJM Show Cause proceedings consistent with the ANOPR's guidance based upon the extensive record already established in that consolidated docket.",
+      "concern": "FERC should act now in PJM using the existing record rather than waiting for a final rule",
+      "bins": [
+        "pr:study",
+        "rg:pjm",
+        "topic:pjm-immediate-order"
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the Commission should affirm its jurisdiction over large load interconnections to the transmission system generally and to hybrid facilities (i.e., the generator and load sharing an interconnection to the interstate grid) in particular.",
+      "concern": "FERC jurisdiction over hybrid facility interconnections should be affirmed clearly",
+      "bins": [
+        "aq:jurisdiction",
+        "pr:colo",
+        "topic:hybrid-jurisdiction"
+      ]
+    },
+    {
+      "id": 3,
+      "text": "The Commission should reject any argument that low-voltage facilities that step down the power from the interstate grid at the point of interconnection to the load are outside the Commission's jurisdiction.",
+      "concern": "Step-down facilities at the interconnection point should remain within FERC jurisdiction",
+      "bins": [
+        "aq:jurisdiction",
+        "topic:hybrid-jurisdiction"
+      ]
+    },
+    {
+      "id": 4,
+      "text": "The Commission should reject undue discrimination against existing generation. This includes \"Bring Your Own Generation\" proposals in which only new generation resources are eligible to participate.",
+      "concern": "BYOG proposals that exclude existing generation are discriminatory and should be rejected",
+      "bins": [
+        "pr:colo",
+        "topic:byog-discrimination"
+      ]
+    },
+    {
+      "id": 5,
+      "text": "The current load interconnection process in PJM in practice cedes control of all large load interconnections to the discretion of Transmission Owners, regardless of the facilities to which the load proposes to interconnect.",
+      "concern": "PJM's current process gives Transmission Owners unchecked discretion over large load interconnections",
+      "bins": [
+        "rg:pjm",
+        "topic:to-obstruction"
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Some Transmission Owners have simply refused to participate in PJM's studies to analyze reliability impacts; and some, acting under unfiled interconnection study procedures, have changed their entire construct and timetable for processing load studies.",
+      "concern": "Transmission Owners in PJM are refusing to participate in studies and unilaterally changing procedures",
+      "bins": [
+        "rg:pjm",
+        "topic:to-obstruction"
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Some Transmission Owners have refused to allow new load connections unless the load agrees to the Transmission Owner's favored configuration or agrees to take other services offered by the Transmission Owner that the load does not need or wish to take and should not be required to take.",
+      "concern": "Transmission Owners are conditioning interconnection on customers taking unnecessary or preferred services",
+      "bins": [
+        "rg:pjm",
+        "topic:to-obstruction"
+      ]
+    },
+    {
+      "id": 8,
+      "text": "The lack of consistent standards for large loads and hybrid facilities creates a vacuum that leaves Transmission Owners with significant discretion to delay or deny large-load and co-location proposals and to impose terms that are neither just nor reasonable.",
+      "concern": "Absence of standardized interconnection rules lets Transmission Owners delay and discriminate",
+      "bins": [
+        "aq:threshold",
+        "pr:study",
+        "topic:standardized-rules"
+      ]
+    },
+    {
+      "id": 9,
+      "text": "the Commission should allow the transmission services customers want and rates that reflect the quantity of capacity and energy being transmitted to them over the grid.",
+      "concern": "Transmission rates should match actual grid usage, not gross load, for all co-location configurations",
+      "bins": [
+        "aq:hybridrights",
+        "pr:cost",
+        "topic:net-billing"
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Charging all large loads a \"NITS rate [network transmission rate] based on gross load (as opposed to net) no matter their actual use of the transmission system discriminates because such a construct 'is incapable of differentiating customers who impose different costs on the transmission system through co-location.'",
+      "concern": "Gross-load NITS charges are discriminatory for hybrid and co-located loads that use the grid on a net basis",
+      "bins": [
+        "aq:hybridrights",
+        "pr:cost",
+        "topic:net-billing"
+      ]
+    },
+    {
+      "id": 11,
+      "text": "While expediting the interconnection studies of flexible load is a good step, the Commission should endorse other paths that would allow curtailable large loads and dispatchable hybrid resources to connect without first requiring the completion of system upgrades needed to support firm transmission service at peak, and without requiring any additional capacity.",
+      "concern": "Curtailable loads should be allowed to connect under interruptible service before firm upgrades are complete",
+      "bins": [
+        "pr:flex",
+        "aq:expedited",
+        "topic:interruptible-service"
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Replacing PJM's Necessary Study process with RMR/SSR retirement studies that would impose broad new network costs on a class of existing resources for the simple act of serving a customer through a co-located configuration chosen by the customer, which may be the only option to serve the load in a timely fashion.",
+      "concern": "Applying RMR/SSR retirement-type studies to co-locating existing generators is discriminatory and unwarranted",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "pr:proximate",
+        "topic:existing-gen-study"
+      ]
+    },
+    {
+      "id": 13,
+      "text": "It is highly discriminatory to charge these costs to resources entering into such arrangements compared to resources that are actually retiring altogether which are not burdened with these costs.",
+      "concern": "Imposing higher study costs on co-locating existing generators than on actual retirements is discriminatory",
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "topic:existing-gen-study"
+      ]
+    },
+    {
+      "id": 14,
+      "text": "the Commission should issue a full order in the PJM Show Cause proceedings confirming its preliminary finding that the PJM Tariff is unjust and unreasonable because it does not contain \"provisions addressing with sufficient clarity or consistency the rates, terms, and conditions of service that apply to co-location arrangements\"",
+      "concern": "FERC should finalize the PJM Show Cause proceeding finding that the PJM Tariff is unjust and unreasonable",
+      "bins": [
+        "rg:pjm",
+        "pr:study",
+        "topic:pjm-immediate-order"
+      ]
+    },
+    {
+      "id": 15,
+      "text": "the Commission should also immediately issue an order in the PJM Show Cause proceedings ... adopting the Commission's preliminary finding that the PJM Tariff is unjust and unreasonable and establishing a replacement rate based on the record in those proceedings that reflects the ANOPR's guidance",
+      "concern": "FERC should establish a replacement rate in PJM now, based on the existing record",
+      "bins": [
+        "rg:pjm",
+        "pr:cost",
+        "topic:pjm-immediate-order"
+      ]
+    },
+    {
+      "id": 16,
+      "text": "the Commission should immediately order the following: PJM must establish a timeline -- with milestones -- for the completion of load interconnection studies for hybrid in-front-of-the-meter configurations ... with an absolute study completion deadline, including Transmission Owner input, of six months.",
+      "concern": "PJM should be required to complete large load interconnection studies within six months",
+      "bins": [
+        "pr:study",
+        "aq:expedited",
+        "rg:pjm",
+        "topic:study-timelines"
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Transmission Owners will be subject to referral to the Commission's Office of Enforcement for any failure to diligently process large load interconnection requests or for conditioning the processing of such requests on the applicant's acceding to the Transmission Owner's favored configuration or unnecessary services",
+      "concern": "Transmission Owners who obstruct or condition large load studies should face enforcement referral",
+      "bins": [
+        "rg:pjm",
+        "topic:to-obstruction"
+      ]
+    },
+    {
+      "id": 18,
+      "text": "the Commission should adopt clear, uniform standards, which should also consider large load forecasting standards and other measures that will expedite large load studies and interconnections.",
+      "concern": "FERC should set clear load forecasting standards to support accurate planning and expedite study processes",
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "topic:load-forecasting"
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Constellation agrees that the option to build should be provided to large load customers subject to host utility standards as it is currently provided to generator interconnection customers.",
+      "concern": "Large load customers should have an option to build interconnection facilities, like generator customers do",
+      "bins": [
+        "aq:expedited",
+        "topic:option-to-build"
+      ]
+    },
+    {
+      "id": 20,
+      "text": "the Commission should grandfather interconnection studies that already are substantially completed by the time the Commission accepts final compliance filings in response to the Commission's final rules.",
+      "concern": "Nearly complete interconnection studies should not have to restart under new rules",
+      "bins": [
+        "pr:study",
+        "topic:grandfathering"
+      ]
+    }
+  ],
+  "bins": [
+    {
+      "key": "aq:jurisdiction",
+      "name": "Affirm FERC Hybrid Facility Jurisdiction",
+      "stance": "support",
+      "description": "Constellation strongly supports FERC asserting jurisdiction over large load interconnections to the interstate transmission system, including hybrid facilities and the step-down equipment at the point of interconnection. It argues that treating these interconnections as outside FERC's reach would let Transmission Owners block the ANOPR's goals through litigation.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Standardized Interconnection Rules Needed",
+      "stance": "support",
+      "description": "Constellation supports adopting standardized study deposits, readiness requirements, and withdrawal penalties for large loads, similar to Order No. 2003 for generators. Without clear filed standards, Transmission Owners retain discretion to delay or deny large load requests.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Load Forecasting Standards",
+      "stance": "support",
+      "description": "Constellation asks FERC to adopt clear, uniform large load forecasting standards so planning baselines reflect only credible, committed projects. The filing proposes requiring verifiable commitments before including loads in planning models.",
+      "quote_ids": [
+        18
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Net Billing for Hybrid and Co-located Load",
+      "stance": "support",
+      "description": "Constellation argues transmission rates for hybrid and co-located facilities should reflect net actual usage of the grid, not gross load withdrawal rights. Charging gross NITS rates regardless of actual usage discriminates against customers who impose lower costs on the system.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited and Interruptible Service Pathways",
+      "stance": "support",
+      "description": "Constellation supports expediting interconnection studies for curtailable and dispatchable loads and endorses allowing interruptible transmission service as a bridge while firm upgrades are completed. It also supports extending the option to build to large load customers.",
+      "quote_ids": [
+        11,
+        16,
+        19
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Upgrade Cost Assignment for Existing Generators",
+      "stance": "oppose",
+      "description": "Constellation opposes applying RMR/SSR retirement-style studies to existing generators seeking to serve co-located load. It argues PJM's existing Necessary Study process is sufficient for reliability and that imposing broader upgrade costs on co-locating generators relative to actual retirements is discriminatory.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Act on PJM Record Now",
+      "stance": "support",
+      "description": "Constellation urges FERC to issue a full or targeted order in the pending PJM Show Cause proceedings immediately, rather than waiting for a comprehensive final rule. It contends the record is fully developed and further delay allows Transmission Owner obstruction to continue unchecked.",
+      "quote_ids": [
+        1,
+        8,
+        14,
+        16,
+        18,
+        20
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Configuration-Specific Rate Treatment",
+      "stance": "support",
+      "description": "Constellation supports transmission rates that reflect the actual quantity of capacity and energy flowing to a large load over the grid, varying by service type (firm, generator-contingent, interruptible). It opposes a one-size-fits-all gross NITS charge and argues net billing is consistent with how PJM already handles behind-the-meter generation.",
+      "quote_ids": [
+        9,
+        10,
+        12,
+        13,
+        15
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Non-Discriminatory Co-location Rules",
+      "stance": "support",
+      "description": "Constellation supports co-location rules that treat existing and new generation equally. It opposes BYOG proposals that extend expedited treatment only to new generators and argues such proposals would suppress merchant capacity and push existing resources into premature retirement.",
+      "quote_ids": [
+        2,
+        4
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Non-Firm Service for Curtailable Loads",
+      "stance": "support",
+      "description": "Constellation supports allowing curtailable large loads to begin service under interruptible transmission service rather than waiting for full firm upgrade completion. It cites Duke University research showing modest curtailment rates can unlock tens of GW of new load integration without new capacity.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Proximity Incentives Through Net Rates",
+      "stance": "support",
+      "description": "Constellation argues that net-based transmission rates create strong incentives for large loads to locate near existing generation, reducing the need for network upgrades. Applying RMR/SSR requirements to co-locating existing generators undermines those co-location incentives.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "rg:pjm",
+      "name": "PJM Immediate Order Request",
+      "stance": "support",
+      "description": "Constellation directs most of its filing at PJM, where it has a pending complaint and the Show Cause record is fully developed. It documents Transmission Owner refusals to process studies, demands enforcement referral for non-compliant utilities, and requests a six-month study deadline and a replacement rate covering all viable co-location options.",
+      "quote_ids": [
+        1,
+        5,
+        6,
+        7,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "key": "topic:to-obstruction",
+      "name": "Transmission Owner Obstruction",
+      "stance": "oppose",
+      "description": "Constellation provides specific evidence that some PJM Transmission Owners have refused to participate in load studies, changed study procedures unilaterally, and conditioned interconnection on customers taking unwanted services. It asks FERC to order immediate compliance and refer non-compliant utilities to the Office of Enforcement.",
+      "quote_ids": [
+        5,
+        6,
+        7,
+        17
+      ]
+    },
+    {
+      "key": "topic:byog-discrimination",
+      "name": "BYOG Unduly Discriminatory",
+      "stance": "oppose",
+      "description": "Constellation argues that Bring Your Own Generation proposals restricted to new resources are unlawfully discriminatory. They distort market signals, suppress economics for existing resources, and can lead to premature retirements of dispatchable and baseload generation including nuclear plants.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:hybrid-jurisdiction",
+      "name": "Hybrid Facility Jurisdiction Clear",
+      "stance": "support",
+      "description": "Constellation contends jurisdiction over hybrid facility interconnections is straightforward because the generator's shared point of interconnection is already FERC-jurisdictional. It warns that Transmission Owners may use litigation over the seven-factor test to block the ANOPR's purposes if FERC does not issue clear guidance on step-down facilities.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "topic:net-billing",
+      "name": "Net Billing Reflects Actual Grid Usage",
+      "stance": "support",
+      "description": "Constellation argues that net transmission billing for hybrid and co-located configurations is consistent with how PJM already handles behind-the-meter generation and has been endorsed by the Commission in other contexts. Gross billing regardless of actual usage is discriminatory and creates a disincentive to co-locate.",
+      "quote_ids": [
+        9,
+        10
+      ]
+    },
+    {
+      "key": "topic:pjm-immediate-order",
+      "name": "Issue PJM Order Without Delay",
+      "stance": "support",
+      "description": "Constellation's central request is that FERC issue either a full merits order or a targeted order in the PJM Show Cause proceedings immediately, rather than treating the ANOPR as grounds for further delay. It frames inaction as inconsistent with the ANOPR's own stated urgency.",
+      "quote_ids": [
+        1,
+        14,
+        15
+      ]
+    },
+    {
+      "key": "topic:study-timelines",
+      "name": "Six-Month Study Deadline for PJM",
+      "stance": "support",
+      "description": "Constellation asks FERC to order PJM to establish a milestone-based interconnection study timeline with an absolute six-month deadline including Transmission Owner input. It also asks for monthly Commission reporting on any Transmission Owner that misses a milestone.",
+      "quote_ids": [
+        16
+      ]
+    },
+    {
+      "key": "topic:existing-gen-study",
+      "name": "No Retirement Studies for Co-locating Generators",
+      "stance": "oppose",
+      "description": "Constellation opposes applying SSR/RMR retirement-style reliability studies to existing generators that co-locate with large load. PJM's existing Necessary Study process is sufficient, and treating a running generator as retiring is factually incorrect and legally discriminatory.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "topic:interruptible-service",
+      "name": "Interruptible Service as Bridge to Firm Service",
+      "stance": "support",
+      "description": "Constellation supports PJM Option 7 (interruptible co-location service) as a bridge allowing large loads to connect and begin taking service before firm transmission upgrades are complete. Under this path no standby or system impact charges apply because PJM can interrupt the load during constrained conditions.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:load-forecasting",
+      "name": "Accurate Load Forecasting Required",
+      "stance": "support",
+      "description": "Constellation urges FERC to require that only large loads backed by verifiable commitments such as executed service agreements or posted collateral be included in planning models. The Joint Stakeholder Package it co-sponsors includes a large load forecasting improvement proposal for PJM.",
+      "quote_ids": [
+        18
+      ]
+    },
+    {
+      "key": "topic:option-to-build",
+      "name": "Option to Build for Large Load Customers",
+      "stance": "support",
+      "description": "Constellation supports extending the option to build interconnection facilities to large load customers on the same terms currently available to generator interconnection customers under Order No. 845, giving customers more control over schedule and cost.",
+      "quote_ids": [
+        19
+      ]
+    },
+    {
+      "key": "topic:grandfathering",
+      "name": "Grandfather Substantially Complete Studies",
+      "stance": "support",
+      "description": "Constellation asks FERC to grandfather interconnection studies that are substantially complete when final compliance filings are accepted, so those projects do not have to restart under new rules, avoiding unnecessary cost and delay.",
+      "quote_ids": [
+        20
+      ]
+    },
+    {
+      "key": "topic:standardized-rules",
+      "name": "Standardized Rules Like Order No. 2003",
+      "stance": "support",
+      "description": "Constellation supports applying to large loads the same type of standardized study deposits, readiness requirements, and withdrawal penalties that Order No. 2003 established for generator interconnections, to close the vacuum that currently lets Transmission Owners impose unjust terms.",
+      "quote_ids": [
+        8
+      ]
+    }
+  ],
+  "lenses": {
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "hybridrights",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
+    "rg": [
+      "pjm"
+    ]
+  },
+  "provenance": {
+    "model": "claude-sonnet-4-6",
+    "generated_at": "2026-06-26",
+    "method": "agentic-subagent",
+    "verified": false
+  }
+}
