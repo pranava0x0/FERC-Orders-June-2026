@@ -233,12 +233,16 @@ overreach?") is folded into ideas 2 and 5.
   is split" friction line. Label estimates/contested claims as such; audit each figure to a primary before
   shipping (do not ship the LBNL price-correlation stat or PR figures as fact — see the existing lead).
 
-- **medium — surface the PJM E-2 co-location order as a linked companion track.** A separate, concurrent
-  FERC action ("FERC Directs Nation's Largest Grid Operator to Create New Rules…" fact sheet; "FERC Issues
-  Order Clarifying Data Center and Large Load Interconnection Procedures in PJM") is getting its own
-  coverage (Blank Rome, NatLawReview, Gravel2Gavel). The site mentions the E-2 track only in passing while
-  co-location / BTM is already a Discourse friction point. Add a short E-2 explainer + cross-link so the
-  BTM thread is grounded in the actual companion order. (Verify content past Cloudflare before quoting.)
+- **done (2026-06-27) — grounded the PJM co-location companion track.** Verification resolved the
+  identity: **Item E-2 = Docket EL25-49**, whose order (193 FERC ¶ 61,217, issued Dec. 18, 2025) found
+  PJM's tariff unjust and unreasonable and set co-located-load procedures, interim non-firm /
+  contract-demand transmission service, and behind-the-meter netting limits — the "December PJM ruling"
+  the site already referenced vaguely. Added it as the `pjmcoloc` source (verified via National Law
+  Review) and enriched the co-location/BTM friction item with the docket, the reporter cite, and the
+  specifics, keeping the "Item E-2, EL25-49" label consistent with the Reforms-tab detail. Note: a
+  *distinct* June-18 PJM order separate from the E-7 show cause order could not be confirmed past
+  Cloudflare (the ferc.gov "Directs Nation's Largest Grid Operator" fact sheet is gated and may just be
+  the E-7 press release), so nothing was asserted about one.
 
 - **medium — a curated "what the experts flag" digest pointing into the Comments tab.** The discourse
   rewards docket-level expert reads (Peskoe's "my takeaways from the docket" threads, Jennifer Danis,
