@@ -197,7 +197,70 @@
   lower retail prices. AI-industry PR plus a striking empirical claim — audit against the LBNL primary
   and label as contested before any use; do not ship the stat as fact.
 - **low** — Add the **DOE statement applauding FERC** (energy.gov) and **E&E/Politico** coverage as
-  reaction sources; consider a Bloomberg Law read ("Energy Regulator Staves Off Critique…") on how the
-  orders were drafted to pre-empt the jurisdictional challenge.
+  reaction sources. ~~Bloomberg Law read ("Energy Regulator Staves Off Critique…") on how the orders
+  were drafted to pre-empt the jurisdictional challenge~~ **done (2026-06-27)** — added as the
+  `bloomberglaw` source, a Jennifer Danis voice (litigation-durability), and a "Built to survive appeal"
+  consensus line in Discourse.
 - **low** — Capture the **state consumer-advocate** stranded-asset / timing-mismatch concern (PA, DE,
   NJ): near-term large-load need vs. the decades-long life of the gas plants and pipelines built to serve it.
+
+### Improvement leads (from the 2026-06-27 discourse scan: X, trade press, consumer/academic voices)
+
+Each idea is tied to what the FERC/energy discourse is actually doing right now, not a guess. The scan ran
+across trade/law press, X (Ari Peskoe, Travis Kavulla, Sec. Wright, Ramez Naam, Art Berman, @FERC),
+analyst pieces (Bloomberg Law) and consumer coverage (Consumer Reports). Reddit/Bluesky returned little
+indexable thread-level signal; the lay concern they carry ("who pays on my bill?", "is this federal
+overreach?") is folded into ideas 2 and 5.
+
+- **high — a live "What happens next" procedural status board.** Every practitioner thread and law-firm
+  alert ends on the same calendar, and the site is still a frozen "as of June 18" snapshot. Build a dated,
+  per-RTO tracker of the post-order clock: **intervene by Jul 9**, **generation-adequacy report Jul 20**
+  (30-day), **rehearing ~Jul 18** (30-day), **abeyance request by Aug 3** (45-day, FERC says it will
+  heavily scrutinize and cap at 90 days), **show-cause / tariff filing by Aug 17** (60-day), then a 30-day
+  public-comment window after each filing. Surface "next deadline" prominently and a per-RTO status
+  (report filed? abeyance requested? tariff filing landed?). This unifies and supersedes the older
+  "procedural clock" (per-docket A–F timeline) and "compliance tracker" leads above into one prioritized
+  deliverable. Dates corroborated across Day Pitney, McGuireWoods, Husch Blackwell, V&E. Note SPP is
+  furthest along (its HILL / HILLGA expedited process is the template others are told to adapt).
+
+- **high — a "who pays" cost-shift explainer that lands the bill stakes.** Cost allocation is the single
+  most-discussed angle, but the public frame is the household bill, not the tariff. Ground the existing
+  transmission-vs-retail bifurcation in the concrete story the discourse runs on: the March 2026 tech
+  "ratepayer protection pledge" (Microsoft, Anthropic and others to build/buy and pay for their own
+  infrastructure), reported residential spikes (a Virginia ~$281 bill, Jan 2026), 30+ states with 300+
+  data-center bills, demand ~80→150 GW by 2028, and Ari Peskoe's argument that FERC's 1994 transmission-
+  pricing policy lets utilities socialize data-center upgrades. Pairs with the new "affordability backstop
+  is split" friction line. Label estimates/contested claims as such; audit each figure to a primary before
+  shipping (do not ship the LBNL price-correlation stat or PR figures as fact — see the existing lead).
+
+- **medium — surface the PJM E-2 co-location order as a linked companion track.** A separate, concurrent
+  FERC action ("FERC Directs Nation's Largest Grid Operator to Create New Rules…" fact sheet; "FERC Issues
+  Order Clarifying Data Center and Large Load Interconnection Procedures in PJM") is getting its own
+  coverage (Blank Rome, NatLawReview, Gravel2Gavel). The site mentions the E-2 track only in passing while
+  co-location / BTM is already a Discourse friction point. Add a short E-2 explainer + cross-link so the
+  BTM thread is grounded in the actual companion order. (Verify content past Cloudflare before quoting.)
+
+- **medium — a curated "what the experts flag" digest pointing into the Comments tab.** The discourse
+  rewards docket-level expert reads (Peskoe's "my takeaways from the docket" threads, Jennifer Danis,
+  Devin Hartman, Heatmap's "Battle Lines Are Drawn" docket piece). The audited Comments corpus is the
+  site's differentiated strength; add a short, attributed digest of expert takeaways as an entry point
+  into it, each linked to the relevant comments/themes.
+
+- **medium — frame the federalism / jurisdiction question explicitly.** States-vs-Washington is a top
+  discourse axis (Art Berman "big-government overreach," Kavulla, the litigation-durability debate, and
+  Wilson Sonsini's Christiansen arguing the orders don't "impede on states' authority"). The
+  jurisdictional boundary lives in Reforms but the *debate* isn't framed; add a short callout tying the
+  boundary to the live argument and to the new "Built to survive appeal" / "affordability backstop is
+  split" Discourse items.
+
+- **done (2026-06-27) / partial — round out the outlet set to the audiences now covering it.** Added
+  Bloomberg Law, The Hill, ENR, Data Center Knowledge and **IEEE Spectrum** (engineering-technical
+  audience) as outlet chips. **Consumer-facing source deferred on purpose:** the strongest consumer piece
+  (Consumer Reports, "AI Data Centers: Big Tech's Impact on Electric Bills") is dated 2026-03-20 and
+  predates the orders, so it is not honest as a "where it's being covered" chip — it belongs in the HIGH
+  "who pays" cost-shift explainer instead. (Tech Times covered the orders from a consumer angle but is a
+  thin SEO outlet; left out for quality.)
+
+- **low — make "freshness" salient.** The story is deadline-driven and fast-moving; a small "as of
+  <date> · next deadline <date>" banner (the capture dates already exist in `meta`) would set expectations
+  and naturally front-ends the procedural status board above.

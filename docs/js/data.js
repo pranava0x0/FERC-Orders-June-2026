@@ -81,6 +81,12 @@ window.FERC_DATA = (function () {
     heatmap: { label: "“FERC Has a New Plan for Data Centers”", org: "Heatmap News (Matthew Zeitlin)", tier: "secondary", url: "https://heatmap.news/energy/ferc-data-center-plan", captured: "2026-06-24", note: "Analysis; carries former FERC chairman Neil Chatterjee’s ‘a very FERC-y approach’ reaction and PJM price-surge context." },
     duanemorris: { label: "“FERC Acts to Advance Data Center and Large Load Integration in Six RTO Regions”", org: "Duane Morris LLP", tier: "secondary", url: "https://www.duanemorris.com/alerts/ferc_acts_advance_data_center_large_load_integration_six_rto_regions_0626.html", captured: "2026-06-24", note: "Law-firm alert; partner Robert Montejo on flexibility as connection leverage." },
     mdopc: { label: "“Maryland lawmakers back data center transmission cost complaint at FERC”", org: "Utility Dive", tier: "secondary", url: "https://www.utilitydive.com/news/maryland-ratepayer-advocate-ferc-data-center-complaint-transmission/823244/", captured: "2026-06-24", note: "Maryland Office of People’s Counsel complaint on PJM cost allocation; 80 state lawmakers in support; ~$1.6B ratepayer exposure cited." },
+    // Coverage refresh (gathered 2026-06-27): the story moved past trade/law press into analyst, mainstream and sector outlets.
+    bloomberglaw: { label: "“Energy Regulator Staves Off Critique in New Data Center Orders”", org: "Bloomberg Law", tier: "secondary", url: "https://news.bloomberglaw.com/environment-and-energy/energy-regulator-staves-off-critique-in-new-data-center-orders", captured: "2026-06-27", note: "Analyst read that the per-RTO §206 record is built to resist litigation; quotes Jennifer Danis (Institute for Policy Integrity), Larry Gasteiger (WIRES) and Matthew Christiansen (Wilson Sonsini)." },
+    thehill: { label: "“FERC lays out AI data center, grid operator reforms”", org: "The Hill", tier: "secondary", url: "https://thehill.com/policy/energy-environment/5931287-ai-data-centers-grid-operators-ferc/", captured: "2026-06-27", note: "Mainstream political-press coverage; carries the federal-transmission vs. state-retail cost-shifting split." },
+    dcknowledge: { label: "“FERC Targets Grid Rules for Data Centers and Large Loads”", org: "Data Center Knowledge", tier: "secondary", url: "https://www.datacenterknowledge.com/build-design/ferc-targets-grid-rules-for-data-centers-and-large-loads", captured: "2026-06-27", note: "The affected industry’s own trade press; developer-side read on speed-to-power." },
+    enr: { label: "“FERC Orders Grid Operators to Rework Data Center Power Rules”", org: "Engineering News-Record", tier: "secondary", url: "https://www.enr.com/articles/63195-ferc-orders-grid-operators-to-rework-data-center-power-rules", captured: "2026-06-27", note: "Engineering and construction trade coverage." },
+    ieee: { label: "“U.S. Pushes Grid Operators to Connect Data Centers Faster”", org: "IEEE Spectrum", tier: "secondary", url: "https://spectrum.ieee.org/ferc-data-center-policy", captured: "2026-06-27", note: "Engineering and technical-audience coverage of the June 18 orders; speed-to-connect paired with consumer cost protections." },
   };
 
   const meta = {
@@ -88,7 +94,7 @@ window.FERC_DATA = (function () {
     subtitle: "From the DOE §403 ANOPR (Docket RM26-4-000) to FERC’s June 18, 2026 tailored §206 show cause orders",
     items: "Items E-7 to E-12 · Dockets EL26-67-000 to EL26-72-000",
     capture: "2026-06-22",
-    discourseCapture: "2026-06-24",
+    discourseCapture: "2026-06-27",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
@@ -472,6 +478,7 @@ window.FERC_DATA = (function () {
       { t: "Speed via procedure: § 206 show cause beats a multi-year NOPR; commentators read it as DOE’s April 30 deadline operationalized across all six markets at once.", src: ["aaf", "rtoinsider"] },
       { t: "Regional flexibility reads as a deliberate design choice: SPP and PJM are treated as proactive leaders, others told to catch up without a uniform template.", src: ["powermag", "latitude"] },
       { t: "Flexibility is becoming the price of speed: practitioners read curtailable / flexible service as the most valuable near-term lever to connect faster, turning a load’s willingness to limit usage into bargaining power.", src: ["duanemorris", "norris"] },
+      { t: "Built to survive appeal: legal analysts read the six tailored § 206 orders as deliberately litigation-resistant. A detailed, region-specific administrative record offers fewer openings to challenge than a single national rule, and it skips the multi-year lag of a rulemaking.", src: ["bloomberglaw", "heatmap"] },
     ],
     friction: [
       { t: "Cost allocation is the central fight: how aggressively must large loads pre-fund and backstop upgrades, and over what crediting term? The ANOPR explicitly left crediting open.", src: ["utilitydive", "doe403"] },
@@ -480,9 +487,10 @@ window.FERC_DATA = (function () {
       { t: "Coverage-gap questions: commenters flag that some transmission owners (e.g., Nebraska Public Power District, Great River Energy) appear absent from the published respondent lists, a completeness question to watch.", src: ["substack"] },
       { t: "The cost-allocation fight is already concrete and pending: Maryland’s ratepayer advocate, backed by 80 state lawmakers (June 17, 2026), says PJM’s tariff lets data-center transmission costs ‘leak’ across zones — ‘an unjust subsidy for that data center load’ — and pegs Maryland’s exposure near $1.6 billion over a decade (FERC comment window extended to July 27, 2026).", src: ["mdopc", "utilitydive"] },
       { t: "Fragmentation risk: six regional answers on six different timelines give multi-region developers clarity within a market but a patchwork across them, and fresh diligence for near-term deals.", src: ["utilitydive", "duanemorris"] },
+      { t: "The affordability backstop is split: FERC guards against cost-shifting among transmission customers but says preventing cost-shifting among retail customers is the states’ job, so the household-bill fight moves to state regulators even as the orders’ federal reach over load interconnection invites a jurisdictional challenge.", src: ["thehill", "bloomberglaw"] },
     ],
     // outlet chips render from cited source records (each links to its SOURCES entry) — no uncited names.
-    outlets: ["utilitydive", "rtoinsider", "latitude", "tdworld", "powermag", "rew", "akin", "sheppard", "whitecase", "natlaw", "aaf", "substack", "heatmap", "duanemorris"],
+    outlets: ["utilitydive", "rtoinsider", "latitude", "tdworld", "powermag", "rew", "akin", "sheppard", "whitecase", "natlaw", "aaf", "substack", "heatmap", "duanemorris", "bloomberglaw", "thehill", "dcknowledge", "enr", "ieee"],
   };
 
   // Named commentary spanning the political spectrum (Tab 3). Each is the source's own
@@ -527,6 +535,11 @@ window.FERC_DATA = (function () {
       name: "Neil Chatterjee", affil: "former FERC chairman", lean: "right",
       take: "Calls it ‘a very FERC-y approach’ — approving of the choice to push region-specific reform through §206 show cause orders rather than one national rule, which he reads as both faster to deliver and harder to challenge.",
       src: ["heatmap"],
+    },
+    {
+      name: "Jennifer Danis", affil: "Institute for Policy Integrity", lean: "nonpartisan",
+      take: "Reads the six-order route as built to survive appeal: a § 206 show cause yields ‘a much more robust and detailed administrative record’ tailored to each RTO, which she says ‘reduces future litigation entry points’ versus a single national rule.",
+      src: ["bloomberglaw"],
     },
   ];
 
