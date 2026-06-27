@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-06-24",
+  "captured_at": "2026-06-27",
   "note": "Verified source snippets backing the directly-quoted phrases in D.voices (Discourse 'Commentary across the spectrum'). A test in tests/source-accuracy.test.mjs asserts every single-quoted phrase in a voice's take appears in its evidence here, so a future edit to a quote fails loudly until the evidence is re-verified against the cited source.",
   "voices": {
     "Tyler Norris": {
@@ -33,6 +33,10 @@
     "Neil Chatterjee": {
       "src": "heatmap",
       "evidence": "Neil Chatterjee, a former FERC chairman, characterized the commission's region-specific show cause approach as a very FERC-y approach."
+    },
+    "Jennifer Danis": {
+      "src": "bloomberglaw",
+      "evidence": "Jennifer Danis, an attorney with the Institute for Policy Integrity, said the show cause approach will give a much more robust and detailed administrative record, so I think it really reduces future litigation entry points, compared with a broad nationwide rulemaking."
     }
   }
 }
