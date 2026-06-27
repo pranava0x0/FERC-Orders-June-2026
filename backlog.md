@@ -266,6 +266,8 @@ overreach?") is folded into ideas 2 and 5.
   "who pays" cost-shift explainer instead. (Tech Times covered the orders from a consumer angle but is a
   thin SEO outlet; left out for quality.)
 
-- **low — make "freshness" salient.** The story is deadline-driven and fast-moving; a small "as of
-  <date> · next deadline <date>" banner (the capture dates already exist in `meta`) would set expectations
-  and naturally front-ends the procedural status board above.
+- **done (2026-06-27) / partial — made "freshness" salient.** Added a masthead line ("Order record as of
+  <capture> · discourse updated <discourseCapture>") rendered by app.js from `D.meta` (single source of
+  truth; placeholder ships `hidden` and is revealed once filled, so JS-off users still get the footer
+  date). The **"next deadline <date>"** half was intentionally deferred — it depends on the HIGH
+  procedural status board, which owns the deadline data.
