@@ -244,11 +244,17 @@ overreach?") is folded into ideas 2 and 5.
   Cloudflare (the ferc.gov "Directs Nation's Largest Grid Operator" fact sheet is gated and may just be
   the E-7 press release), so nothing was asserted about one.
 
-- **medium — a curated "what the experts flag" digest pointing into the Comments tab.** The discourse
-  rewards docket-level expert reads (Peskoe's "my takeaways from the docket" threads, Jennifer Danis,
-  Devin Hartman, Heatmap's "Battle Lines Are Drawn" docket piece). The audited Comments corpus is the
-  site's differentiated strength; add a short, attributed digest of expert takeaways as an entry point
-  into it, each linked to the relevant comments/themes.
+- **evaluated 2026-06-27 — deferred (would be redundant): a curated "what the experts flag" digest into
+  the Comments tab.** On inspection the Discourse tab already carries this: "Commentary across the
+  spectrum" *is* a curated, attributed set of expert takes (now incl. Danis, Christiansen), and the
+  "Open the Comments tab →" pointer already bridges into the audited corpus. A separate digest mapping
+  order-reaction voices to ANOPR-comment themes would duplicate both, and the mapping is loose (the
+  order-reaction commentators are mostly not the docket commenters). The one influential voice still
+  missing is **Ari Peskoe (Harvard ELI)** — but his point is the cost-causation / outdated-1994-
+  transmission-pricing argument, which is the substance of the HIGH "who pays" cost-shift explainer.
+  **Plan:** add Peskoe there (verifiable via Utility Dive, "An outdated FERC policy is undermining the
+  White House's ratepayer protection pledge"), not as a bolted-on digest. Skipped to avoid a redundant
+  feature.
 
 - **done (2026-06-27) — frame the federalism / jurisdiction question explicitly.** Added a **Matthew
   Christiansen (Wilson Sonsini)** voice giving the jurisdiction-defense side (the orders stay within
