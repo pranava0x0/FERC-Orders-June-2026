@@ -246,12 +246,13 @@ overreach?") is folded into ideas 2 and 5.
   site's differentiated strength; add a short, attributed digest of expert takeaways as an entry point
   into it, each linked to the relevant comments/themes.
 
-- **medium — frame the federalism / jurisdiction question explicitly.** States-vs-Washington is a top
-  discourse axis (Art Berman "big-government overreach," Kavulla, the litigation-durability debate, and
-  Wilson Sonsini's Christiansen arguing the orders don't "impede on states' authority"). The
-  jurisdictional boundary lives in Reforms but the *debate* isn't framed; add a short callout tying the
-  boundary to the live argument and to the new "Built to survive appeal" / "affordability backstop is
-  split" Discourse items.
+- **done (2026-06-27) — frame the federalism / jurisdiction question explicitly.** Added a **Matthew
+  Christiansen (Wilson Sonsini)** voice giving the jurisdiction-defense side (the orders stay within
+  FERC's transmission jurisdiction and don't encroach on state authority), verified-quoted from Bloomberg
+  Law. With the existing "affordability backstop is split" friction item (the overreach-challenge concern)
+  and the DOE §403 timeline note (FERC asserting interconnection jurisdiction it "historically has not
+  asserted"), the states-vs-Washington debate is now framed across both lanes by named voices. Kept it in
+  the Discourse/commentary lane (not Reforms) to preserve the facts-vs-judgment separation.
 
 - **done (2026-06-27) / partial — round out the outlet set to the audiences now covering it.** Added
   Bloomberg Law, The Hill, ENR, Data Center Knowledge and **IEEE Spectrum** (engineering-technical

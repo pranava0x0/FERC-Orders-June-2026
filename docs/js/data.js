@@ -541,6 +541,11 @@ window.FERC_DATA = (function () {
       take: "Reads the six-order route as built to survive appeal: a § 206 show cause yields ‘a much more robust and detailed administrative record’ tailored to each RTO, which she says ‘reduces future litigation entry points’ versus a single national rule.",
       src: ["bloomberglaw"],
     },
+    {
+      name: "Matthew Christiansen", affil: "Wilson Sonsini", lean: "nonpartisan",
+      take: "On the federalism question: reads the orders as a legitimate exercise of FERC's transmission jurisdiction rather than an intrusion on the states. Says he doesn't think ‘anything that FERC proposed to do’ encroaches on state authority, so the state-versus-federal challenge critics expect starts from a narrow opening.",
+      src: ["bloomberglaw"],
+    },
   ];
 
   /* ------------------------------------------------ TAB 3: RM26-4 comment corpus */
