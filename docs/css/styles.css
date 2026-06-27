@@ -97,6 +97,8 @@ a:hover { color: var(--accent-ink); }
   line-height: 1.05; letter-spacing: -0.01em; color: #fff; margin-top: 1px;
 }
 .masthead-sub { color: #cdd9e8; font-size: clamp(13px, 1.8vw, 15px); margin-top: 5px; max-width: 70ch; }
+.masthead-fresh { color: #9db4d0; font-size: 12px; margin-top: 7px; }
+.masthead-fresh .mono { color: #cdd9e8; }
 
 /* ------------------------------------------------- Overview: stats + at-a-glance */
 .kpis {

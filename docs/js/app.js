@@ -668,6 +668,14 @@
 
   function init() {
     renderProvenance();
+    // Surface freshness in the masthead from the single source of truth (D.meta), so a reader sees
+    // how current the record is without scrolling. Revealed only once filled (placeholder ships hidden).
+    var fresh = document.getElementById("masthead-fresh");
+    if (fresh) {
+      fresh.innerHTML = 'Order record as of <span class="mono">' + esc(D.meta.capture) +
+        '</span> · discourse updated <span class="mono">' + esc(D.meta.discourseCapture) + "</span>";
+      fresh.hidden = false;
+    }
     TABS.forEach(function (t) {
       var tab = tabFor(t);
       tab.addEventListener("click", function () { activate(t, false); scrollToTabsTop(); });
