@@ -119,11 +119,14 @@ const list = cj.comments.map((c) => {
     item.bins = (v2.bins || []).map((b) => ({ k: b.key, n: b.name, s: b.stance })); // key, short name, stance
     // the lazy-loaded detail: each bin's plain description + the verbatim quotes that back it.
     // quote_ids reference quotes[].id (1-based id, NOT array index); a bin can be legitimately quoteless.
-    const qById = Object.fromEntries((v2.quotes || []).map((q) => [q.id, q.text]));
-    detailWrites.push({ acc: c.acc, detail: { acc: c.acc, bins: (v2.bins || []).map((b) => ({
-      key: b.key, name: b.name, stance: b.stance, desc: b.description || "",
-      quotes: (b.quote_ids || []).map((id) => qById[id]).filter((t) => t != null),
-    })) } });
+    const qById = Object.fromEntries((v2.quotes || []).map((q) => [q.id, q]));
+    detailWrites.push({ acc: c.acc, detail: { acc: c.acc, bins: (v2.bins || []).map((b) => {
+      // quotes stay verbatim strings (the fidelity guard); `pages` is a parallel array of the source
+      // page each quote starts on (null when unlocatable), so the UI can cite "p. N" per quote.
+      const qs = (b.quote_ids || []).map((id) => qById[id]).filter(Boolean);
+      return { key: b.key, name: b.name, stance: b.stance, desc: b.description || "",
+        quotes: qs.map((q) => q.text), pages: qs.map((q) => (q.page == null ? null : q.page)) };
+    }) } });
   } else if (txt.length > 200) {
     // no v2 summary yet → fall back to keyword detection so the row still carries lens chips
     pr = PRINCIPLES.filter((p) => p.re.test(txt)).map((p) => p.key);

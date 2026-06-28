@@ -541,9 +541,18 @@
     // analysis is opened. The detail is one small file per letter (docs/data/comments/<acc>.json),
     // too heavy to embed across 268 letters; the chips above render up front from comments-data.js.
     var detailCache = {};
-    var binItemHtml = function (b) {
+    var binItemHtml = function (b, acc) {
       var st = stanceClass(b.stance);
-      var quotes = (b.quotes || []).map(function (q) { return '<li class="cm-bq">“' + esc(q) + "”</li>"; }).join("");
+      var pages = b.pages || [];
+      var quotes = (b.quotes || []).map(function (q, i) {
+        // Page cite links to the filing on eLibrary (the served site can't host the comment PDFs, and
+        // eLibrary isn't page-anchorable, so the page number is the locator + the filing is the link).
+        var pg = pages[i];
+        var cite = pg != null
+          ? ' <a class="cm-bq-cite" href="' + esc(eli(acc)) + '" target="_blank" rel="noopener noreferrer" title="Open the eLibrary filing (p. ' + pg + ' of the source document)">p. ' + pg + '<span class="ext" aria-hidden="true"> ↗</span></a>'
+          : "";
+        return '<li class="cm-bq">“' + esc(q) + "”" + cite + "</li>";
+      }).join("");
       return '<div class="cm-binitem ' + st + '">' +
         '<div class="cm-binitem-head"><span class="cm-binitem-name">' + esc(b.name) + "</span>" +
         '<span class="cm-binitem-stance ' + st + '">' + esc(b.stance) + "</span></div>" +
@@ -551,21 +560,22 @@
         (quotes ? '<ul class="cm-bqs">' + quotes + "</ul>" : '<p class="cm-bq-none mono">No verbatim quote is binned to this position.</p>') +
         "</div>";
     };
-    var lensGroupHtml = function (label, items) {
+    var lensGroupHtml = function (label, items, acc) {
       return '<section class="cm-lensgroup"><h4 class="cm-lensgroup-h">' + esc(label) +
         '<span class="cm-lensgroup-n mono">' + items.length + "</span></h4>" +
-        items.map(binItemHtml).join("") + "</section>";
+        items.map(function (b) { return binItemHtml(b, acc); }).join("") + "</section>";
     };
     var nsOf = function (b) { return String(b.key).split(":")[0]; };
     var renderBinDetail = function (box, d) {
       var bins = d.bins || [];
+      var acc = d.acc;
       var html = LENS_ORDER.map(function (ns) {
         var items = bins.filter(function (b) { return nsOf(b) === ns; });
-        return items.length ? lensGroupHtml(LENS_LABEL[ns], items) : "";
+        return items.length ? lensGroupHtml(LENS_LABEL[ns], items, acc) : "";
       }).join("");
       // defensive: any bin whose namespace isn't one of the known lenses still gets shown
       var rest = bins.filter(function (b) { return LENS_ORDER.indexOf(nsOf(b)) < 0; });
-      if (rest.length) html += lensGroupHtml("Other positions", rest);
+      if (rest.length) html += lensGroupHtml("Other positions", rest, acc);
       box.innerHTML = html || '<p class="cm-bin-error">No positions found.</p>';
       box.setAttribute("data-state", "done");
       box.setAttribute("aria-busy", "false");

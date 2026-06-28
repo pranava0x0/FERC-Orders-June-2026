@@ -477,6 +477,8 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-binitem-desc { font-size: 12px; line-height: 1.5; color: var(--ink); margin: 4px 0 6px; }
 .cm-bqs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
 .cm-bq { font-family: var(--font-serif); font-style: italic; font-size: 12.5px; line-height: 1.45; color: var(--accent-ink); padding-left: 9px; border-left: 2px solid var(--rule); }
+.cm-bq-cite { font-family: var(--font-mono); font-style: normal; font-size: 10.5px; white-space: nowrap; color: var(--accent); text-decoration: none; }
+.cm-bq-cite:hover { text-decoration: underline; }
 
 /* stance map: stacked support / oppose / mixed / no-position per reform principle */
 .cm-stancelegend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-bottom: 11px; }
