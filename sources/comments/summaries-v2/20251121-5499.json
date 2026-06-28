@@ -4,70 +4,50 @@
   "org_type": "clean_energy",
   "filed": "11/21/2025",
   "source_text": "sources/comments/files/20251121-5499__American-Council-on-Renewable-Energy/ACORE ANOPR Comments RM26-4 11 21 25.txt",
-  "overall_summary": "ACORE supports FERC's rulemaking on large load interconnection but urges a longer timeline than April 2026 and emphasizes that transmission expansion and modernization must be central to the approach, not an afterthought. The organization advocates for integrated transmission planning that coordinates generation and load needs, opposes queue prioritization that could delay generation, and recommends standardized deposits, study processes, and evaluation of advanced transmission technologies.",
+  "overall_summary": "ACORE supports starting a rulemaking on large load interconnection but urges FERC to slow down and reject the April 30, 2026 final-rule deadline in favor of a fuller record. It argues the Commission should look beyond interconnection to expand and modernize transmission, integrate load and generation interconnection needs into long-term planning, and adopt specific reforms such as joint study of load and generation, standardized deposits and readiness requirements, avoiding serial study, and an enumerated list of advanced transmission technologies. It is concerned that expediting curtailable loads could detract from processing generation already waiting in the queue.",
   "quotes": [
     {
       "id": 1,
-      "text": "As the Commission approaches the challenges of interconnecting large loads to the grid, we urge the Commission to avoid focusing solely on interconnection and instead take steps to expand and modernize the transmission system to achieve the greatest cost savings and reliability benefits.",
-      "concern": "Transmission expansion must be central, not optional",
+      "text": "ACORE supports the initiation of a new Commission rulemaking on the interconnection of large loads",
+      "concern": "Supports starting the rulemaking",
       "bins": [
-        "pr:study"
+        "topic:rulemaking-support"
       ],
       "page": 1
     },
     {
       "id": 2,
-      "text": "ACORE recommends that if the Commission were to establish such a rulemaking, it does so with a reasonable timeline that allows for a sufficient evidentiary record and the development of informed and comprehensive proposed and final rules, rather than seeking to issue a final rule by April 30, 2026 as requested in the ANOPR.",
-      "concern": "April 2026 deadline is too tight",
+      "text": "we urge the Commission to avoid focusing solely on interconnection and instead take steps to expand and modernize the transmission system to achieve the greatest cost savings and reliability benefits.",
+      "concern": "Look beyond interconnection to grid expansion and modernization",
       "bins": [
-        "aq:expedited"
+        "pr:study",
+        "pr:cost"
       ],
       "page": 1
     },
     {
       "id": 3,
-      "text": "Regardless of the co-location of adjacent or behind-the-meter resources, a significant amount of the demand from these large loads will need to be served by the bulk power system.",
-      "concern": "Large loads require bulk system capacity",
+      "text": "ACORE recommends that if the Commission were to establish such a rulemaking, it does so with a reasonable timeline that allows for a sufficient evidentiary record and the development of informed and comprehensive",
+      "concern": "Urges a longer timeline over the April 30, 2026 deadline",
       "bins": [
-        "pr:colo",
-        "pr:proximate"
+        "aq:expedited",
+        "topic:rulemaking-timeline"
       ],
-      "page": 2
+      "page": 1
     },
     {
       "id": 4,
-      "text": "An expansion of transmission, especially long-range and high-voltage lines, is well demonstrated to achieve cost savings. For example, the Southwest Power Pool's Board of Directors has just approved a transmission plan for high-voltage lines that has benefits ranging from $12 to $18 for every dollar spent.",
-      "concern": "Transmission expansion is cost-effective",
+      "text": "An expansion of transmission, especially long-range and high-voltage lines, is well demonstrated to achieve cost savings.",
+      "concern": "Transmission expansion lowers cost",
       "bins": [
-        "pr:cost",
-        "rg:spp"
-      ],
-      "page": 2
-    },
-    {
-      "id": 5,
-      "text": "Interregional transmission itself provides much needed capacity value to serve this increasing demand. For example, Invenergy Transmission LLC's testimony reported that the Grain Belt Express provides about 1 GW of RA value to MISO and about 500 MW of RA value to SPP.",
-      "concern": "Interregional transmission provides capacity and reduces reserve margin needs",
-      "bins": [
-        "rg:miso",
-        "rg:spp",
         "pr:cost"
       ],
       "page": 2
     },
     {
-      "id": 6,
-      "text": "The accelerating demands of AI and electrification require significantly more generation and transmission capacity than current planning frameworks anticipate. Importantly, generation is only part of the story....EHV transmission, such as 765 kV, can play a critical role in mitigating generation shortages by enabling access to remote generating resources and enhancing power delivery.",
-      "concern": "AI demand requires more transmission capacity",
-      "bins": [
-        "pr:study"
-      ],
-      "page": 3
-    },
-    {
-      "id": 7,
-      "text": "One important step, among others, would be for the Commission to work with DOE and the National Laboratories to establish best practices and common methodologies for the forecasting of large loads and their power needs that can be incorporated into the long-term transmission planning process.",
-      "concern": "Need standardized forecasting methods integrated with transmission planning",
+      "id": 5,
+      "text": "the Commission to work with DOE and the National Laboratories to establish best practices and common methodologies for the forecasting of large loads and their power needs that can be incorporated into the long-term transmission planning process.",
+      "concern": "Joint DOE/lab forecasting methodology fed into planning",
       "bins": [
         "aq:jointstudy",
         "pr:study"
@@ -75,45 +55,48 @@
       "page": 3
     },
     {
-      "id": 8,
+      "id": 6,
       "text": "Essential to cost-effectively meeting the large load needs is an accelerated deployment of Grid Enhancing Technologies and High-Performance Conductors.",
-      "concern": "GETs and HPCs are essential for cost-effective service",
+      "concern": "Deploy grid enhancing technologies and advanced conductors",
       "bins": [
+        "aq:upgradecost",
         "pr:cost"
       ],
       "page": 3
     },
     {
-      "id": 9,
+      "id": 7,
       "text": "An essential component of improving the interconnection of large loads will be to fully integrate interconnection-driven needs into longer-term transmission planning.",
-      "concern": "Interconnection needs must be integrated with transmission planning",
+      "concern": "Integrate interconnection needs into long-term planning",
       "bins": [
         "pr:study"
       ],
       "page": 4
+    },
+    {
+      "id": 8,
+      "text": "ACORE agrees with the ANOPR recommendations to study load and hybrid facilities together with generating facilities as a means to improve the process efficiency and lower network upgrade costs",
+      "concern": "Supports joint study of load, hybrid, and generation",
+      "bins": [
+        "aq:jointstudy",
+        "aq:hybridrights",
+        "aq:upgradecost"
+      ],
+      "page": 6
+    },
+    {
+      "id": 9,
+      "text": "to subject load and hybrid facilities to standardized study deposits, readiness requirements, and withdrawal penalties to provide greater certainty on the likelihood that such interconnection requests will materialize.",
+      "concern": "Supports standardized deposits, readiness, and withdrawal penalties",
+      "bins": [
+        "aq:deposits"
+      ],
+      "page": 6
     },
     {
       "id": 10,
-      "text": "Integrated planning frameworks that account for the long-term interaction between transmission needs, generation availability, and load behaviors could produce more effective system solutions.",
-      "concern": "Integrated planning produces better solutions",
-      "bins": [
-        "pr:study"
-      ],
-      "page": 4
-    },
-    {
-      "id": 11,
-      "text": "most transmission providers do not actively integrate interconnection studies with long-term, proactive transmission planning, instead relying on an inefficient, piecemeal approach to expanding the grid.",
-      "concern": "Current piecemeal approach is inefficient",
-      "bins": [
-        "pr:study"
-      ],
-      "page": 4
-    },
-    {
-      "id": 12,
-      "text": "Regarding the ANOPR recommendation to expedite the interconnection of large loads that agree to be curtailable and hybrid facilities that agree to be curtailable and dispatchable, ACORE is concerned that queue prioritization methods can disrupt the processing of needed generation waiting in lengthy interconnection queues.",
-      "concern": "Expediting loads could delay generation interconnection",
+      "text": "ACORE is concerned that queue prioritization methods can disrupt the processing of needed generation waiting in lengthy interconnection queues.",
+      "concern": "Concern that expediting curtailable loads harms generation queue",
       "bins": [
         "aq:expedited",
         "pr:flex"
@@ -121,157 +104,152 @@
       "page": 6
     },
     {
+      "id": 11,
+      "text": "The Commission should avoid a serial interconnection process for large load interconnection.",
+      "concern": "Opposes serial study; favors cluster process",
+      "bins": [
+        "aq:expedited",
+        "topic:cluster-study"
+      ],
+      "page": 6
+    },
+    {
+      "id": 12,
+      "text": "One gap in the ANOPR principles that should be incorporated into a rulemaking on the interconnection of large loads is to mirror Order No. 2023’s requirements for “transmission providers to evaluate the following enumerated list of alternative",
+      "concern": "Add enumerated alternative transmission technologies",
+      "bins": [
+        "aq:upgradecost",
+        "topic:advanced-transmission-tech"
+      ],
+      "page": 6
+    },
+    {
       "id": 13,
-      "text": "With limited transmission provider resources, expediting these load interconnections could detract from efforts to bring other resources on-line to provide the power needed to meet growing demand.",
-      "concern": "Limited resources make expedited queue problematic",
+      "text": "We also urge the Commission to include dynamic line ratings in the list of enumerated technologies.",
+      "concern": "Add dynamic line ratings to the enumerated list",
       "bins": [
-        "aq:expedited"
+        "topic:advanced-transmission-tech"
       ],
-      "page": 6
-    },
-    {
-      "id": 14,
-      "text": "It would be beneficial for the Commission and transmission providers to focus more on holistic transmission planning that integrates the needs of the load and generation in the interconnection queues, than on the prioritization of certain projects.",
-      "concern": "Holistic planning preferable to queue prioritization",
-      "bins": [
-        "pr:study"
-      ],
-      "page": 6
-    },
-    {
-      "id": 15,
-      "text": "ACORE agrees with the ANOPR recommendations to study load and hybrid facilities together with generating facilities as a means to improve the process efficiency and lower network upgrade costs; and to subject load and hybrid facilities to standardized study deposits, readiness requirements, and withdrawal penalties to provide greater certainty on the likelihood that such interconnection requests will materialize.",
-      "concern": "Support joint study and standardized deposits",
-      "bins": [
-        "aq:deposits",
-        "aq:jointstudy",
-        "pr:cost"
-      ],
-      "page": 6
-    },
-    {
-      "id": 16,
-      "text": "The Commission should avoid a serial interconnection process for large load interconnection. As the Commission found in Order No. 2023, such a process introduces significant inefficiencies and contributes to interconnection queue backlogs.",
-      "concern": "Serial process causes inefficiencies",
-      "bins": [
-        "pr:study"
-      ],
-      "page": 6
-    },
-    {
-      "id": 17,
-      "text": "One gap in the ANOPR principles that should be incorporated into a rulemaking on the interconnection of large loads is to mirror Order No. 2023's requirements for transmission providers to evaluate the following enumerated list of alternative transmission technologies: static synchronous compensators, static VAR compensators, advanced power flow control devices, transmission switching, synchronous condensers, voltage source converters, advanced conductors, and tower lifting. We also urge the Commission to include dynamic line ratings in the list of enumerated technologies.",
-      "concern": "Require evaluation of advanced transmission technologies",
-      "bins": [
-        "pr:study"
-      ],
-      "page": 6
+      "page": 7
     }
   ],
   "bins": [
     {
-      "key": "pr:cost",
-      "name": "Cost-effective transmission expansion",
+      "key": "topic:rulemaking-support",
+      "name": "Supports the rulemaking",
       "stance": "support",
-      "description": "ACORE emphasizes that transmission expansion, particularly long-range high-voltage lines and advanced technologies like GETs and HPCs, is demonstrated to be cost-effective. Regional examples like SPP's transmission plan show benefits of 12 to 18 dollars per dollar spent, and interregional transmission reduces capacity reserve margins.",
+      "description": "ACORE backs FERC opening a new rulemaking on large load interconnection and calls the ANOPR an important step.",
       "quote_ids": [
-        4,
-        5,
-        8,
-        15
+        1
       ]
     },
     {
       "key": "pr:study",
-      "name": "Integrated transmission and interconnection planning",
+      "name": "Integrate planning, expand the grid",
       "stance": "support",
-      "description": "ACORE advocates for moving beyond piecemeal approaches by integrating interconnection-driven needs into long-term transmission planning. The organization urges DOE collaboration on standardized load forecasting, calls for transmission providers to evaluate advanced technologies, and opposes serial interconnection processes in favor of holistic coordination of generation and load needs.",
+      "description": "ACORE urges FERC to go beyond interconnection and integrate large load and generation interconnection needs into long-term transmission planning, working with DOE and the national labs on common load-forecasting methods.",
       "quote_ids": [
-        1,
-        6,
-        7,
-        9,
-        10,
-        11,
-        14,
-        16,
-        17
+        2,
+        5,
+        7
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Transmission expansion lowers cost",
+      "stance": "support",
+      "description": "ACORE argues that expanding high-voltage transmission and deploying grid enhancing technologies and high-performance conductors achieves cost savings and reliability benefits while meeting large load demand.",
+      "quote_ids": [
+        2,
+        4,
+        6
       ]
     },
     {
       "key": "aq:expedited",
-      "name": "Concerns about expedited queue timelines",
+      "name": "Caution on expedited processing",
       "stance": "mixed",
-      "description": "ACORE supports a longer rulemaking timeline than April 2026 to allow a sufficient evidentiary record. The organization also opposes queue prioritization of expedited large loads on concern that it could disrupt generation interconnection processing given limited transmission provider resources.",
+      "description": "ACORE wants a longer rulemaking timeline rather than the April 30, 2026 deadline, opposes a serial study process, and warns that expediting curtailable load interconnections could divert resources from generation already waiting in the queue.",
       "quote_ids": [
-        2,
-        12,
-        13
+        3,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "topic:rulemaking-timeline",
+      "name": "Allow a fuller record",
+      "stance": "oppose",
+      "description": "ACORE asks FERC to set a reasonable timeline allowing a sufficient evidentiary record, instead of rushing to a final rule by the ANOPR's April 30, 2026 target.",
+      "quote_ids": [
+        3
       ]
     },
     {
       "key": "aq:jointstudy",
-      "name": "Joint study of loads and generation",
+      "name": "Study load and generation together",
       "stance": "support",
-      "description": "ACORE agrees with ANOPR recommendations to study large loads and hybrid facilities together with generating facilities to improve process efficiency and lower network upgrade costs, and supports standardized study processes.",
+      "description": "ACORE agrees with studying load and hybrid facilities alongside generating facilities to improve efficiency and lower network upgrade costs, and wants common forecasting methods built into planning.",
       "quote_ids": [
-        7,
-        15
+        5,
+        8
       ]
     },
     {
-      "key": "aq:deposits",
-      "name": "Standardized deposits and readiness requirements",
+      "key": "aq:upgradecost",
+      "name": "Cut upgrade cost via advanced tech",
       "stance": "support",
-      "description": "ACORE supports ANOPR recommendations for standardized study deposits, readiness requirements, and withdrawal penalties for loads and hybrids to provide greater certainty on materialization of interconnection requests.",
+      "description": "ACORE ties lower network upgrade costs to joint study and accelerated deployment of grid enhancing technologies, high-performance conductors, and an enumerated list of alternative transmission technologies.",
       "quote_ids": [
-        15
-      ]
-    },
-    {
-      "key": "pr:colo",
-      "name": "Limits of behind-the-meter and co-located resources",
-      "stance": "neutral",
-      "description": "ACORE notes that co-location of adjacent or behind-the-meter resources cannot fully serve large load demand; a significant portion will still require the bulk power system.",
-      "quote_ids": [
-        3
-      ]
-    },
-    {
-      "key": "pr:proximate",
-      "name": "Bulk system capacity requirements",
-      "stance": "neutral",
-      "description": "Large loads, regardless of co-located resources, require significant bulk power system capacity.",
-      "quote_ids": [
-        3
-      ]
-    },
-    {
-      "key": "pr:flex",
-      "name": "Flexibility and curtailment tradeoffs",
-      "stance": "mixed",
-      "description": "While ACORE acknowledges flexibility and curtailment as potential benefits, it expresses concern that expediting flexible loads could detract from generation interconnection in resource-constrained transmission provider environments.",
-      "quote_ids": [
+        6,
+        8,
         12
       ]
     },
     {
-      "key": "rg:spp",
-      "name": "Southwest Power Pool considerations",
-      "stance": "neutral",
-      "description": "ACORE cites SPP's transmission plan and Grain Belt Express project as evidence of cost-effective interregional transmission expansion.",
+      "key": "aq:hybridrights",
+      "name": "Include hybrid facilities",
+      "stance": "support",
+      "description": "ACORE supports studying hybrid facilities together with load and generation as part of an efficient interconnection process.",
       "quote_ids": [
-        4,
-        5
+        8
       ]
     },
     {
-      "key": "rg:miso",
-      "name": "MISO region considerations",
-      "stance": "neutral",
-      "description": "ACORE references MISO's reserve margin benefits from interregional transmission.",
+      "key": "aq:deposits",
+      "name": "Standardized deposits and readiness",
+      "stance": "support",
+      "description": "ACORE supports standardized study deposits, readiness requirements, and withdrawal penalties for load and hybrid facilities to give greater certainty that interconnection requests will materialize.",
       "quote_ids": [
-        5
+        9
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Curtailable load tradeoffs",
+      "stance": "mixed",
+      "description": "ACORE is wary that prioritizing curtailable or flexible loads through queue prioritization could disrupt processing of generation needed to meet growing demand.",
+      "quote_ids": [
+        10
+      ]
+    },
+    {
+      "key": "topic:cluster-study",
+      "name": "Avoid serial study",
+      "stance": "oppose",
+      "description": "ACORE opposes a serial interconnection process for large loads, citing Order No. 2023's finding that serial study creates inefficiencies and queue backlogs.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "topic:advanced-transmission-tech",
+      "name": "Enumerate advanced transmission tech",
+      "stance": "support",
+      "description": "ACORE wants the rulemaking to mirror Order No. 2023's enumerated list of alternative transmission technologies and to add dynamic line ratings, so transmission providers evaluate these options.",
+      "quote_ids": [
+        12,
+        13
       ]
     }
   ],
@@ -279,23 +257,20 @@
     "aq": [
       "expedited",
       "jointstudy",
+      "upgradecost",
+      "hybridrights",
       "deposits"
     ],
     "pr": [
-      "cost",
       "study",
-      "colo",
-      "proximate",
+      "cost",
       "flex"
     ],
-    "rg": [
-      "spp",
-      "miso"
-    ]
+    "rg": []
   },
   "provenance": {
-    "model": "claude-haiku-4-5",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }
