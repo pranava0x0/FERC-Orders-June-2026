@@ -553,6 +553,11 @@ window.FERC_DATA = (function () {
       take: "The cost-causation hawk: warns that utilities are ‘rolling billions of dollars in data-center-driven transmission upgrades into rates that everyone pays,’ and argues FERC should revise its 1994 transmission-pricing policy to ‘assign the full costs of transmission service to power-hungry data centers,’ plus require disaggregated pricing so the public can see what serving a data center actually costs.",
       src: ["peskoe"],
     },
+    {
+      name: "Larry Gasteiger", affil: "WIRES (transmission trade group)", lean: "nonpartisan",
+      take: "From the transmission-builder camp: reads the show cause route as the faster path, since ‘going through the show cause process makes a lot of sense, because you don't have all of the time lags associated with a lengthy rulemaking process.’",
+      src: ["bloomberglaw"],
+    },
   ];
 
   /* ------------------------------------------------ TAB 3: RM26-4 comment corpus */
