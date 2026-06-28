@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "topic:planning-methodology"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
         "pr:study",
         "pr:cost",
         "topic:latent-capacity"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "bins": [
         "pr:study",
         "topic:data-standardization"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
         "rg:pjm",
         "rg:spp",
         "rg:isone"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -63,7 +68,8 @@
         "pr:flex",
         "pr:cost",
         "topic:latent-capacity"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -72,7 +78,8 @@
       "bins": [
         "pr:study",
         "topic:transparency"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -82,7 +89,8 @@
         "aq:hybridrights",
         "pr:colo",
         "topic:behind-meter-treatment"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -92,7 +100,8 @@
         "aq:hybridrights",
         "pr:colo",
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -102,7 +111,8 @@
         "aq:deposits",
         "pr:cost",
         "topic:study-fees"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -111,7 +121,8 @@
       "bins": [
         "pr:cost",
         "topic:transmission-incentives"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 12,
@@ -121,7 +132,8 @@
         "pr:cost",
         "pr:proximate",
         "topic:latent-capacity"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

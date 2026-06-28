@@ -13,7 +13,8 @@
       "bins": [
         "pr:flex",
         "pr:study"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "concern": "Federal rules should ensure non-discriminatory access for all large load customers",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "bins": [
         "aq:threshold",
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "bins": [
         "aq:threshold",
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
         "pr:study",
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
       "bins": [
         "pr:study",
         "topic:queue-transparency"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 9,
@@ -86,7 +94,8 @@
         "aq:expedited",
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 10,
@@ -96,7 +105,8 @@
         "pr:study",
         "pr:cost",
         "rg:pjm"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 11,
@@ -105,7 +115,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 12,
@@ -114,7 +125,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 13,
@@ -123,7 +135,8 @@
       "bins": [
         "rg:pjm",
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 14,
@@ -132,7 +145,8 @@
       "bins": [
         "pr:flex",
         "aq:hybridrights"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

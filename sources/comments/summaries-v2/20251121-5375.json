@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "topic:expedited-colo"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "Coal fleet underutilization represents available capacity",
       "bins": [
         "topic:coal-capacity"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "Potential additional capacity from increased coal utilization",
       "bins": [
         "topic:coal-capacity"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
         "pr:study",
         "pr:cost",
         "topic:expedited-colo"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "concern": "60-day priority to reclaim lost interconnection rights",
       "bins": [
         "topic:cir-recapture"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "concern": "Recapturing rights avoids delays in study process",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "pr:colo",
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "Waive reliability studies for units avoiding retirement",
       "bins": [
         "topic:reliability-study-waiver"
-      ]
+      ],
+      "page": 5
     }
   ],
   "bins": [

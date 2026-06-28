@@ -12,7 +12,8 @@
       "concern": "Support for FLFT model",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Data center software flexibility should qualify",
       "bins": [
         "topic:software-flexibility"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "Utility endorsement for software flexibility",
       "bins": [
         "topic:utility-support"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "bins": [
         "pr:cost",
         "topic:generation-mandate"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "bins": [
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "topic:software-flexibility",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "Data centers proven grid-beneficial",
       "bins": [
         "topic:software-flexibility"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "bins": [
         "pr:cost",
         "aq:expedited"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "concern": "Demand reduction equals supply increase",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -99,7 +109,8 @@
         "pr:cost",
         "topic:generation-mandate",
         "aq:expedited"
-      ]
+      ],
+      "page": 4
     }
   ],
   "bins": [

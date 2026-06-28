@@ -12,7 +12,8 @@
       "concern": "ESRs enable faster large load interconnection",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Data center load volatility threatens grid stability",
       "bins": [
         "topic:datacenter-stability"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Battery storage addresses data center reliability needs",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "ESRs have dual role as supply and demand",
       "bins": [
         "topic:esr-definition"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "ESR charging differs fundamentally from large customer loads",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "ESRs need separate regulatory treatment",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "Large load queue rules should not apply to ESRs",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 8,
@@ -69,7 +76,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 9,
@@ -78,7 +86,8 @@
       "bins": [
         "pr:colo",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 10,
@@ -87,7 +96,8 @@
       "bins": [
         "pr:colo",
         "pr:study"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 11,
@@ -96,7 +106,8 @@
       "bins": [
         "pr:colo",
         "pr:proximate"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 12,
@@ -104,7 +115,8 @@
       "concern": "ESRs are inherently flexible and grid-responsive",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 13,
@@ -112,7 +124,8 @@
       "concern": "ESR charging can use 60 to 90 day transmission service process",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 14,
@@ -120,7 +133,8 @@
       "concern": "ESRs represent major share of interconnection queue",
       "bins": [
         "topic:esr-volume"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 15,
@@ -129,7 +143,8 @@
       "bins": [
         "pr:study",
         "aq:expedited"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 16,
@@ -138,7 +153,8 @@
       "bins": [
         "rg:pjm",
         "rg:caiso"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

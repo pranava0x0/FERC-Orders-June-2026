@@ -10,55 +10,84 @@
       "id": 1,
       "text": "DER aggregations—commonly referred to as virtual power plants (\"VPPs\")—are a cost-effective and near-term tool that large loads can employ to provide flexibility and operational support to the transmission system.",
       "concern": "VPPs are cost-effective flexibility tools for large loads",
-      "bins": ["topic:vpp-flexibility"]
+      "bins": [
+        "topic:vpp-flexibility"
+      ],
+      "page": 2
     },
     {
       "id": 2,
       "text": "VPPs have the potential to lower capacity procurement needs and defer or avoid costly network upgrades associated with interconnecting large loads, while supporting distributed energy systems that provide consumers savings.",
       "concern": "VPPs can reduce upgrade costs and support consumer savings",
-      "bins": ["pr:cost"]
+      "bins": [
+        "pr:cost"
+      ],
+      "page": 2
     },
     {
       "id": 3,
       "text": "Allowing large load interconnection studies to include VPPs is consistent with existing policy under Order No. 2222, which recognizes that DERs should be able to participate in regional wholesale markets.",
       "concern": "VPP inclusion aligns with Order 2222 policy framework",
-      "bins": ["topic:order-2222-alignment"]
+      "bins": [
+        "topic:order-2222-alignment"
+      ],
+      "page": 2
     },
     {
       "id": 4,
       "text": "VPPs are inherently modular and flexible, allowing them to scale rapidly, respond dynamically to system conditions, and provide verifiable reductions to a load's net peak demand.",
       "concern": "VPPs scale rapidly and reduce net peak demand measurably",
-      "bins": ["pr:flex"]
+      "bins": [
+        "pr:flex"
+      ],
+      "page": 3
     },
     {
       "id": 5,
       "text": "Order No. 2222 requires RTOs/ISOs allow DER aggregators to participate directly in wholesale markets and to provide energy, capacity, and ancillary services.",
       "concern": "Order 2222 mandates DER aggregator market participation",
-      "bins": ["topic:order-2222-alignment"]
+      "bins": [
+        "topic:order-2222-alignment"
+      ],
+      "page": null
     },
     {
       "id": 6,
       "text": "DER participation in wholesale markets is a well-defined, FERC-approved pathway through which large loads may procure and present measurable, dispatchable, and creditable capacity to the transmission provider as part of an interconnection request.",
       "concern": "DER wholesale participation is established pathway for large loads",
-      "bins": ["topic:vpp-pathway"]
+      "bins": [
+        "topic:vpp-pathway"
+      ],
+      "page": 4
     },
     {
       "id": 7,
       "text": "A large load should be permitted to present a contracted VPP or aggregated DER portfolio to reduce its studied net load by a specified MW profile, which may vary hourly or seasonally.",
       "concern": "Large loads should use VPPs to reduce studied net load",
-      "bins": ["topic:vpp-pathway"]
+      "bins": [
+        "topic:vpp-pathway"
+      ],
+      "page": 5
     },
     {
       "id": 8,
       "text": "The Commission should also consider directing regional grid operators to update their tariffs to explicitly allow large loads to utilize VPPs in interconnection requests.",
       "concern": "FERC should direct RTOs/ISOs to allow VPPs in interconnection rules",
-      "bins": ["pr:study"]
+      "bins": [
+        "pr:study"
+      ],
+      "page": 6
     },
     {
       "id": 9,
       "text": "By establishing a framework and appropriate ground rules for allowing VPPs to be studied together with load and hybrid facilities, the Commission can ensure that large loads have a diverse suite of tools for flexibility and resource adequacy, accelerate interconnection timelines, and encourage large loads to make DER investments that can simultaneously provide direct consumer savings and resiliency benefits.",
       "concern": "VPP framework accelerates interconnection and supports consumer savings",
-      "bins": ["pr:study", "pr:flex", "pr:cost"]
+      "bins": [
+        "pr:study",
+        "pr:flex",
+        "pr:cost"
+      ],
+      "page": 6
     }
   ],
   "bins": [
@@ -67,47 +96,66 @@
       "name": "VPP network upgrade cost reduction",
       "stance": "support",
       "description": "VPPs can lower capacity procurement needs and defer or avoid costly network upgrades. Pew argues this aligns with DOE's cost-minimization objectives for large load interconnection.",
-      "quote_ids": [2]
+      "quote_ids": [
+        2
+      ]
     },
     {
       "key": "pr:flex",
       "name": "VPP modular flexibility and peak demand reduction",
       "stance": "support",
       "description": "VPPs provide modular, scalable flexibility that responds dynamically to system conditions and delivers verifiable reductions in net peak demand. This supports the show-cause-order's flexibility principles.",
-      "quote_ids": [4]
+      "quote_ids": [
+        4
+      ]
     },
     {
       "key": "pr:study",
       "name": "VPP study framework and tariff integration",
       "stance": "support",
       "description": "FERC should establish clear implementation principles and direct RTOs/ISOs to update tariffs and expedite Order 2222 compliance to explicitly allow large loads to study and utilize VPPs in interconnection requests.",
-      "quote_ids": [8, 9]
+      "quote_ids": [
+        8,
+        9
+      ]
     },
     {
       "key": "topic:vpp-flexibility",
       "name": "Virtual power plants as flexibility tools",
       "stance": "support",
       "description": "VPPs offer a cost-effective, near-term tool for large loads to provide flexibility and operational support to the transmission system.",
-      "quote_ids": [1]
+      "quote_ids": [
+        1
+      ]
     },
     {
       "key": "topic:order-2222-alignment",
       "name": "Order 2222 consistency and DER market participation",
       "stance": "support",
       "description": "VPP inclusion in large load interconnection studies is consistent with Order 2222 and FERC-approved DER participation in wholesale markets. Order 2222 mandates that RTOs/ISOs allow DER aggregators to participate directly in markets.",
-      "quote_ids": [3, 5]
+      "quote_ids": [
+        3,
+        5
+      ]
     },
     {
       "key": "topic:vpp-pathway",
       "name": "DER wholesale participation as interconnection pathway",
       "stance": "support",
       "description": "DER participation in wholesale markets is a well-established, FERC-approved pathway for large loads to procure measurable, dispatchable capacity and reduce studied net load as part of interconnection requests.",
-      "quote_ids": [6, 7]
+      "quote_ids": [
+        6,
+        7
+      ]
     }
   ],
   "lenses": {
     "aq": [],
-    "pr": ["cost", "flex", "study"],
+    "pr": [
+      "cost",
+      "flex",
+      "study"
+    ],
     "rg": []
   },
   "provenance": {

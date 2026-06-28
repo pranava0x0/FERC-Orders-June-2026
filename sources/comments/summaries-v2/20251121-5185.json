@@ -12,7 +12,8 @@
       "concern": "Overall support for Secretary's large load interconnection proposal",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
         "pr:cost",
         "pr:proximate",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "concern": "Crediting mechanisms improperly shift upgrade costs to existing ratepayers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "concern": "FERC jurisdiction should be limited to interconnection process",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "concern": "Large loads are retail customers; retail costs remain under state jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "aq:jurisdiction",
         "rg:isone"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "Large loads without matching supply can increase wholesale prices and retail rates",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "bins": [
         "pr:study",
         "aq:expedited"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 10,
@@ -90,7 +99,8 @@
       "bins": [
         "aq:expedited",
         "pr:proximate"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 11,
@@ -98,7 +108,8 @@
       "concern": "Support for large load participation in flexibility and demand response",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 12,
@@ -108,7 +119,8 @@
         "pr:flex",
         "pr:cost",
         "pr:proximate"
-      ]
+      ],
+      "page": 5
     }
   ],
   "bins": [

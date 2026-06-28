@@ -12,7 +12,8 @@
       "concern": "Datacenter UPS protection settings trigger disconnection on minor grid disturbances",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "pr:flex",
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "pr:flex",
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "pr:study",
         "pr:colo"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "bins": [
         "pr:colo",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "bins": [
         "pr:proximate",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "concern": "Interconnection rules should differentiate datacenter designs based on internal stability features",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "concern": "Storage plus grid-forming controls alternative to co-located generation meets reliability requirements",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "concern": "Integrated power electronics should be recognized as valid compliance pathway",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "concern": "Compliance standard should be performance-based at interconnection point",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "concern": "Grid-forming loads contribute grid services, not just reduce harm",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 12,
@@ -105,7 +116,8 @@
       "concern": "Grid-forming loads provide inertia, voltage support, and fault current services",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 13,
@@ -113,7 +125,8 @@
       "concern": "Grid-forming loads address NERC's synchronous inertia and stability concerns",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 14,
@@ -121,7 +134,8 @@
       "concern": "Expedited interconnection pathway warranted for grid-forming load capability",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 15,
@@ -130,7 +144,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 16,
@@ -138,7 +153,8 @@
       "concern": "Grid service benefits from grid-forming loads should offset upgrade costs",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 17,
@@ -147,7 +163,8 @@
       "bins": [
         "pr:cost",
         "pr:colo"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 18,
@@ -155,7 +172,8 @@
       "concern": "Proprietary inverter models create trust gap and re-study burden",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 19,
@@ -163,7 +181,8 @@
       "concern": "Open-source controller architecture enables transparent, verifiable system behavior",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 20,
@@ -171,7 +190,8 @@
       "concern": "Public access to control code enables third-party verification",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 21,
@@ -179,7 +199,8 @@
       "concern": "Streamlined studies warranted for open, verifiable control architectures",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 22,
@@ -187,7 +208,8 @@
       "concern": "Regulatory framework should incentivize open inverter controls",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 23,
@@ -195,7 +217,8 @@
       "concern": "Performance-based standards, not equipment mandates, support technology innovation",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 24,
@@ -203,7 +226,8 @@
       "concern": "Technology-neutral performance standards enable market-driven innovation",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 25,
@@ -211,7 +235,8 @@
       "concern": "Performance-based rules create demand for domestic advanced power electronics manufacturing",
       "bins": [
         "topic:domestic-manufacturing"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

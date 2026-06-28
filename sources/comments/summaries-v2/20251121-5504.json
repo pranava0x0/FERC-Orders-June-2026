@@ -12,7 +12,8 @@
       "concern": "General support for timely interconnection reforms.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "No retroactive application of new rules.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Existing projects made investments under current rules.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Retroactive rules risk project viability and delay.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Fast-track for ready projects mirrors generator rules.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -53,7 +58,8 @@
       "bins": [
         "pr:study",
         "aq:threshold"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "concern": "Automation and AI tools to speed interconnections.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -69,7 +76,8 @@
       "concern": "Require advanced modeling and AI-driven analysis.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -77,7 +85,8 @@
       "concern": "Automation enhances efficiency without replacing engineering review.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -86,7 +95,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -94,7 +104,8 @@
       "concern": "Standardize milestones within each ISO/RTO.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 12,
@@ -103,7 +114,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 13,
@@ -111,7 +123,8 @@
       "concern": "Higher project quality reduces restudies and delays.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 14,
@@ -119,7 +132,8 @@
       "concern": "Standardized milestones improve transmission planning and demand forecasting.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 15,
@@ -127,7 +141,8 @@
       "concern": "Require transmission operators to report aggregated interconnection metrics.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 16,
@@ -135,7 +150,8 @@
       "concern": "Data transparency enables better planning and resource adequacy decisions.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 17,
@@ -144,7 +160,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 18,
@@ -153,7 +170,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 19,
@@ -162,7 +180,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 20,
@@ -171,7 +190,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 21,
@@ -180,7 +200,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 22,
@@ -189,7 +210,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 7
     }
   ],
   "bins": [

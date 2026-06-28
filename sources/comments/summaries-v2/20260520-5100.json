@@ -13,7 +13,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "Claim existing cost-shifting protections are working",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "Request federal deference to state jurisdiction over retail connections",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "Document rapid large load acquisition and interconnection success",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "bins": [
         "pr:study",
         "topic:integrated-planning"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "bins": [
         "pr:study",
         "topic:queue-management"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
       "concern": "Claim no queue backlog in their territories",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -71,7 +78,8 @@
       "concern": "Claim large loads create positive cross-subsidy for existing customers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "concern": "Document state approval of generation with rate protections",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -87,7 +96,8 @@
       "concern": "Quantify projected customer benefits from large load integration",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 11,
@@ -95,7 +105,8 @@
       "concern": "Link cost recovery rules to rate freeze benefits",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 12,
@@ -103,7 +114,8 @@
       "concern": "Caution against federal rules that undermine state frameworks",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 13,
@@ -112,7 +124,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 14,
@@ -120,7 +133,8 @@
       "concern": "If federal reforms needed, target FERC-jurisdictional regions",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 8
     }
   ],
   "bins": [

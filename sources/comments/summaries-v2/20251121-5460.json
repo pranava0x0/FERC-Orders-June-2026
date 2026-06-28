@@ -10,85 +10,144 @@
       "id": 1,
       "text": "the WEC Companies believe that a federally mandated load interconnection process is not necessary to bring data centers online in a timely manner and could, in fact, introduce significant delay and impede the efforts of the WEC Companies and the Public Service Commission of Wisconsin (\"PSCW\") to interconnect hyperscale data centers while protecting the WEC Companies' existing retail customers.",
       "concern": "A federal mandate is unnecessary and could delay Wisconsin data center interconnections.",
-      "bins": ["aq:jurisdiction", "pr:study"]
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ],
+      "page": 2
     },
     {
       "id": 2,
       "text": "a \"one size fits all\" federalized large load interconnection process could supersede the progress that has been made in Wisconsin and elsewhere and unintentionally delay the otherwise timely and efficient interconnection of data center loads in Wisconsin.",
       "concern": "A uniform federal process risks displacing successful regional efforts and slowing interconnections.",
-      "bins": ["aq:jurisdiction", "pr:study"]
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ],
+      "page": null
     },
     {
       "id": 3,
       "text": "any rulemaking pursuant to the ANOPR should be limited and apply only to regions that do not have similarly strong processes in place.",
       "concern": "Any rule should be scoped to regions that lack effective existing processes.",
-      "bins": ["aq:jurisdiction", "pr:study"]
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ],
+      "page": 3
     },
     {
       "id": 4,
       "text": "The WEC Companies are concerned that the process established by any rulemaking will not adequately insulate other customers, resulting in cross-subsidies from Wisconsin Electric's base customers to large load customers.",
       "concern": "Federal rules may not prevent cost shifting onto existing retail customers.",
-      "bins": ["aq:upgradecost", "pr:cost"]
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ],
+      "page": 8
     },
     {
       "id": 5,
       "text": "State jurisdiction over an array of services that fall under traditional, bundled electric retail rates is broader and more complex than the ANOPR describes.",
       "concern": "The ANOPR understates the breadth of state authority over bundled retail rates.",
-      "bins": ["aq:jurisdiction"]
+      "bins": [
+        "aq:jurisdiction"
+      ],
+      "page": 9
     },
     {
       "id": 6,
       "text": "A generation facility that is co-located with a large load and which then sells its energy product to that load is, by definition, making a retail sale.  This is true regardless of whether the co-located load is interconnected at the transmission level or at distribution voltage.  Commission regulation of this retail sale would extend far beyond regulating interconnections as a \"component\" or \"element\" of transmission service and would clearly be ultra vires.",
       "concern": "Co-located generation selling to adjacent load is a retail sale beyond FERC's jurisdiction.",
-      "bins": ["aq:jurisdiction", "aq:hybridrights", "pr:colo"]
+      "bins": [
+        "aq:jurisdiction",
+        "aq:hybridrights",
+        "pr:colo"
+      ],
+      "page": 10
     },
     {
       "id": 7,
       "text": "the Commission is proposing to regulate the interconnection of load to the grid for the first time, notwithstanding the fact that states have historically regulated the interconnection of retail customers to the transmission system.",
       "concern": "FERC has never before regulated load interconnections; states have held that authority throughout the FPA's history.",
-      "bins": ["aq:jurisdiction"]
+      "bins": [
+        "aq:jurisdiction"
+      ],
+      "page": 11
     },
     {
       "id": 8,
       "text": "Interpreting the FPA to suddenly grant the Commission with exclusive jurisdiction over load interconnections, when the states have long held that authority, could conflict with the major questions doctrine.",
       "concern": "Asserting jurisdiction over load interconnections for the first time may violate the major questions doctrine.",
-      "bins": ["aq:jurisdiction"]
+      "bins": [
+        "aq:jurisdiction"
+      ],
+      "page": 12
     },
     {
       "id": 9,
       "text": "the Commission should make the \"gross\" amount of load the default approach for studying large load interconnections consistent with existing Commission precedent.  This will ensure that co-located arrangements are appropriately studied based on their actual use of the transmission system, even if the load or generation has its withdrawal or injection rights based on the net capacity behind the meter.",
       "concern": "Studies should use gross load, not net, to reflect actual transmission use and prevent cost shifts.",
-      "bins": ["aq:jointstudy", "aq:hybridrights", "pr:study", "pr:colo", "pr:cost"]
+      "bins": [
+        "aq:jointstudy",
+        "aq:hybridrights",
+        "pr:study",
+        "pr:colo",
+        "pr:cost"
+      ],
+      "page": 14
     },
     {
       "id": 10,
       "text": "If the net withdrawal or injection of co-located facilities are permitted to influence transmission cost allocation, the Commission should ensure that there are adequate restrictions on the ability of the load or generation facility to withdraw or inject beyond their respective entitlements.",
       "concern": "Net-based cost allocation requires strict controls on actual withdrawal and injection to prevent reliability risk.",
-      "bins": ["aq:hybridrights", "pr:colo", "pr:cost"]
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:cost"
+      ],
+      "page": 14
     },
     {
       "id": 11,
       "text": "A new load of 20 MW is well below what should be considered a \"large load,\" much less a high-impact \"large load.\"  The currently proposed threshold of 20 MW would still capture many typical commercial and industrial loads and could create a substantial backlog of routine load interconnections that were not intended to be addressed by the ANOPR.",
       "concern": "The 20 MW threshold is too low and would create a backlog of routine interconnections.",
-      "bins": ["aq:threshold"]
+      "bins": [
+        "aq:threshold"
+      ],
+      "page": 16
     },
     {
       "id": 12,
       "text": "the minimum threshold should be in the magnitude of hundreds of MWs, not tens.",
       "concern": "Threshold should be set in the hundreds of MWs to capture only high-impact large loads.",
-      "bins": ["aq:threshold"]
+      "bins": [
+        "aq:threshold"
+      ],
+      "page": 16
     },
     {
       "id": 13,
       "text": "the Commission should honor established processes that are working well and should not apply federal rules to regions where there are existing or proposed processes or tariffs, such as in Wisconsin.  At a minimum, the Commission should apply the \"independent entity variation\" standard to load interconnection rules, as it does the generator interconnection rules.",
       "concern": "Federal rules should allow regional variation and exempt areas with working processes.",
-      "bins": ["aq:jurisdiction", "pr:study", "rg:miso"]
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study",
+        "rg:miso"
+      ],
+      "page": 16
     },
     {
       "id": 14,
       "text": "any rulemaking should ensure that franchised service territories are protected and that any processes mandated by a rule does not permit generators to serve co-located load in violation of retail franchise laws.",
       "concern": "Any rule must protect franchised utility territories from bypass through co-located generation.",
-      "bins": ["aq:hybridrights", "pr:colo", "rg:miso", "topic:franchise-protection"]
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "rg:miso",
+        "topic:franchise-protection"
+      ],
+      "page": 12
     }
   ],
   "bins": [
@@ -97,83 +156,138 @@
       "name": "Federal authority over load questioned",
       "stance": "oppose",
       "description": "WEC argues FERC has never regulated load interconnections and that states hold that authority under the FPA. They warn that asserting jurisdiction for the first time risks conflicting with the major questions doctrine and that the ANOPR understates how broad state authority over bundled retail rates actually is. They ask any rule be limited to regions that lack working processes.",
-      "quote_ids": [1, 2, 3, 5, 7, 8, 13]
+      "quote_ids": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        13
+      ]
     },
     {
       "key": "aq:threshold",
       "name": "20 MW threshold too low",
       "stance": "oppose",
       "description": "WEC contends 20 MW captures ordinary commercial and industrial loads, not just high-impact large loads, and would produce a backlog that defeats the ANOPR's purpose. They recommend a threshold in the hundreds of MWs, citing ATC's 200 MW floor as an example, and support allowing states and RTOs to set their own minimums.",
-      "quote_ids": [11, 12]
+      "quote_ids": [
+        11,
+        12
+      ]
     },
     {
       "key": "aq:jointstudy",
       "name": "Gross-load standard for studies",
       "stance": "support",
       "description": "WEC supports using the gross load amount as the default for studying large load interconnections, arguing it matches existing Commission precedent and accurately reflects actual transmission use even when co-located generation reduces net withdrawal.",
-      "quote_ids": [9]
+      "quote_ids": [
+        9
+      ]
     },
     {
       "key": "aq:hybridrights",
       "name": "Co-located rights and controls",
       "stance": "mixed",
       "description": "WEC warns that co-located generation selling to an adjacent load is a retail sale beyond FERC's jurisdiction. If the Commission proceeds, it must restrict withdrawal and injection to each facility's entitlements and cannot allow co-located arrangements to bypass state franchise laws.",
-      "quote_ids": [6, 9, 10, 14]
+      "quote_ids": [
+        6,
+        9,
+        10,
+        14
+      ]
     },
     {
       "key": "aq:upgradecost",
       "name": "Cost shifting to existing customers",
       "stance": "oppose",
       "description": "WEC fears federal rules will not adequately protect existing retail customers from cross-subsidies. They argue large load customers must pay their share of network upgrade costs, and that Wisconsin Electric's proposed VLC and Bespoke Resources Tariffs already address this problem.",
-      "quote_ids": [4]
+      "quote_ids": [
+        4
+      ]
     },
     {
       "key": "pr:study",
       "name": "Protect working study processes",
       "stance": "oppose",
       "description": "WEC argues Wisconsin and MISO already have functioning interconnection study processes, including MISO's Expedited Project Review and ERAS processes. They contend a new federal process modeled on the generator interconnection queue would slow rather than speed data center deployments in their region.",
-      "quote_ids": [1, 2, 3, 13]
+      "quote_ids": [
+        1,
+        2,
+        3,
+        13
+      ]
     },
     {
       "key": "pr:cost",
       "name": "Fair cost allocation required",
       "stance": "mixed",
       "description": "WEC insists cost allocation rules must prevent cross-subsidies from existing customers to large loads. They support the gross-load default for cost assignment and warn that net-based approaches create shifting risks unless strict controls on actual grid use are in place.",
-      "quote_ids": [4, 9, 10]
+      "quote_ids": [
+        4,
+        9,
+        10
+      ]
     },
     {
       "key": "pr:colo",
       "name": "Co-location rules risk retail jurisdiction",
       "stance": "oppose",
       "description": "WEC contends that co-located generation selling power to an adjacent large load is a retail sale, putting FERC regulation of that arrangement beyond its lawful authority. They ask any rule to bar co-located generators from serving load in violation of state retail franchise laws.",
-      "quote_ids": [6, 9, 10, 14]
+      "quote_ids": [
+        6,
+        9,
+        10,
+        14
+      ]
     },
     {
       "key": "pr:proximate",
       "name": "Regional exemption for working areas",
       "stance": "support",
       "description": "WEC asks the Commission to recognize that proximity to working processes matters: regions like Wisconsin with functioning state and RTO frameworks should be exempted or allowed to vary from any national rule under an independent-entity variation standard.",
-      "quote_ids": [3, 13]
+      "quote_ids": [
+        3,
+        13
+      ]
     },
     {
       "key": "rg:miso",
       "name": "MISO processes already working",
       "stance": "support",
       "description": "WEC points to MISO's load interconnection whitepaper, Expedited Project Review, and new ERAS process as evidence that MISO already addresses large load interconnections effectively. They argue a federal rule applied uniformly across MISO would disrupt rather than improve these efforts.",
-      "quote_ids": [13, 14]
+      "quote_ids": [
+        13,
+        14
+      ]
     },
     {
       "key": "topic:franchise-protection",
       "name": "Protect franchise territory exclusivity",
       "stance": "support",
       "description": "WEC warns that co-location rules could allow third-party generators to make retail sales within franchised utility territories without state authorization. They ask any rule to explicitly bar such arrangements and preserve the exclusive service obligations that franchised utilities hold under state law.",
-      "quote_ids": [14]
+      "quote_ids": [
+        14
+      ]
     }
   ],
   "lenses": {
-    "aq": ["jurisdiction", "threshold", "jointstudy", "hybridrights", "upgradecost"],
-    "pr": ["study", "cost", "colo", "proximate"],
-    "rg": ["miso"]
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "hybridrights",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "proximate"
+    ],
+    "rg": [
+      "miso"
+    ]
   },
   "provenance": {
     "model": "claude-sonnet-4-6",

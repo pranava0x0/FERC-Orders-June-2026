@@ -14,7 +14,8 @@
         "pr:flex",
         "pr:study",
         "aq:expedited"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
       "bins": [
         "pr:flex",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "bins": [
         "pr:cost",
         "aq:expedited"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
         "pr:flex",
         "pr:cost",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
         "pr:flex",
         "aq:expedited",
         "rg:caiso"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -62,7 +67,8 @@
       "bins": [
         "pr:study",
         "rg:nyiso"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -73,7 +79,8 @@
         "aq:hybridrights",
         "rg:spp",
         "topic:tariff-reform"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 8,
@@ -82,7 +89,8 @@
       "bins": [
         "pr:flex",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -91,7 +99,8 @@
       "bins": [
         "pr:flex",
         "topic:tariff-reform"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 10,
@@ -100,7 +109,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -109,7 +119,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "bins": [
         "pr:flex",
         "aq:threshold"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 13,
@@ -128,7 +140,8 @@
         "pr:flex",
         "rg:spp",
         "topic:curtailment-enforcement"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 14,
@@ -137,7 +150,8 @@
       "bins": [
         "pr:study",
         "pr:proximate"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 15,
@@ -145,7 +159,8 @@
       "concern": "TBA asserts FERC has jurisdiction over non-firm transmission service to large loads",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 16,
@@ -154,7 +169,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:tes-wholesale-rights"
-      ]
+      ],
+      "page": 9
     }
   ],
   "bins": [

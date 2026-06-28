@@ -13,7 +13,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "pr:cost",
         "rg:pjm"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 9,
@@ -84,7 +92,8 @@
       "concern": "Wholesale entity approach sidesteps federal-state jurisdictional conflicts",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 10,
@@ -93,7 +102,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 11,
@@ -102,7 +112,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 12,
@@ -111,7 +122,8 @@
       "bins": [
         "aq:protection",
         "pr:cost"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 13,
@@ -120,7 +132,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 19
     }
   ],
   "bins": [

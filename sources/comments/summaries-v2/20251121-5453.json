@@ -12,7 +12,8 @@
       "concern": "Concern about maintaining federal-state jurisdictional balance",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "pr:study",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:retail-wholesale-boundary"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "pr:cost",
         "topic:retail-cost-recovery"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "bins": [
         "pr:study",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "concern": "New rules should address documented systemic issues",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "bins": [
         "pr:study",
         "rg:spp"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
       "bins": [
         "pr:study",
         "rg:miso"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -84,7 +92,8 @@
         "pr:study",
         "rg:spp",
         "rg:miso"
-      ]
+      ],
+      "page": 5
     }
   ],
   "bins": [

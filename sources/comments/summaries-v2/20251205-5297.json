@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:study",
         "rg:pjm"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "aq:protection",
         "topic:customer-confidentiality"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "pr:study",
         "topic:automation-ai"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "bins": [
         "pr:study",
         "topic:automation-ai"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
         "aq:hybridrights",
         "pr:flex",
         "topic:nerc-reliability"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
         "aq:hybridrights",
         "aq:protection",
         "pr:flex"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
         "aq:hybridrights",
         "pr:flex",
         "topic:nerc-reliability"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
         "aq:protection",
         "pr:flex",
         "topic:nerc-reliability"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
         "aq:protection",
         "pr:flex",
         "topic:nerc-reliability"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 12,
@@ -117,7 +128,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:nerc-reliability"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 13,
@@ -125,7 +137,8 @@
       "concern": "20 MW threshold is too low and captures non-data-center loads; 200 MW is the right floor",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 14,
@@ -134,7 +147,8 @@
       "bins": [
         "aq:threshold",
         "topic:economic-impact"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 15,
@@ -144,7 +158,8 @@
         "aq:jurisdiction",
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 16,
@@ -153,7 +168,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 17,
@@ -162,7 +178,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 18,
@@ -171,7 +188,8 @@
       "bins": [
         "pr:study",
         "topic:option-to-build"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 19,
@@ -179,7 +197,8 @@
       "concern": "large load customers lack the expertise to build transmission safely or efficiently",
       "bins": [
         "topic:option-to-build"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 20,
@@ -188,7 +207,8 @@
       "bins": [
         "topic:option-to-build",
         "aq:protection"
-      ]
+      ],
+      "page": 16
     }
   ],
   "bins": [

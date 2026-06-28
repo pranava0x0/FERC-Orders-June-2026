@@ -12,7 +12,8 @@
       "concern": "FERC jurisdiction over large load interconnection is unnecessary and should be avoided",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "ANOPR oversteps the federal-state boundary established by the FPA",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Large load facilities meet distribution-facility criteria under Order No. 888 and are subject to state, not federal, jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Generator interconnection analogy does not apply to load interconnection",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Jurisdictional overreach risks litigation that would delay ANOPR objectives",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -53,7 +58,8 @@
       "bins": [
         "aq:threshold",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
         "aq:jointstudy",
         "pr:colo",
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
         "aq:hybridrights",
         "pr:colo",
         "topic:grid-visibility"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 9,
@@ -82,7 +90,8 @@
       "bins": [
         "aq:deposits",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 10,
@@ -91,7 +100,8 @@
       "bins": [
         "aq:deposits",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
         "aq:expedited",
         "pr:flex",
         "topic:reliability-risk"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 12,
@@ -111,7 +122,8 @@
         "rg:pjm",
         "pr:cost",
         "topic:market-price-impact"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 13,
@@ -120,7 +132,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 14,
@@ -130,7 +143,8 @@
         "pr:colo",
         "pr:cost",
         "rg:pjm"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 15,
@@ -139,7 +153,8 @@
       "bins": [
         "topic:lse-accountability",
         "pr:study"
-      ]
+      ],
+      "page": 14
     }
   ],
   "bins": [

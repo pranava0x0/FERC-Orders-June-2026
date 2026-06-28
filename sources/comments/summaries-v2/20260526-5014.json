@@ -10,67 +10,116 @@
       "id": 1,
       "text": "my electric bill is proof of the unfair and systematic transfer of costs from large commercial electricity consumers to residential ratepayers.",
       "concern": "Frames personal bill as evidence of cost shifting from large commercial loads to residential ratepayers",
-      "bins": ["pr:cost", "rg:pjm"]
+      "bins": [
+        "pr:cost",
+        "rg:pjm"
+      ],
+      "page": null
     },
     {
       "id": 2,
       "text": "Penelec's residential Price to Compare has increased from 4.981 cents per kWh in March 2021 to 11.747 cents per kWh in December 2025.",
       "concern": "Cites specific rate increases as evidence of harm to residential customers",
-      "bins": ["pr:cost", "rg:pjm"]
+      "bins": [
+        "pr:cost",
+        "rg:pjm"
+      ],
+      "page": null
     },
     {
       "id": 3,
       "text": "The PJM independent market monitor has attributed 63% of the 833% capacity auction price increase between the 2024-2025 and 2025-2026 delivery years to data center electricity demand.",
       "concern": "Cites PJM market monitor finding that data center demand drove most of the capacity price surge",
-      "bins": ["pr:cost", "rg:pjm", "topic:capacity-cost-attribution"]
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:capacity-cost-attribution"
+      ],
+      "page": null
     },
     {
       "id": 4,
       "text": "This translates to $9.3 billion in costs being paid by 67 million ratepayers across the 13 PJM states.",
       "concern": "Quantifies the ratepayer cost burden from the capacity price increase across PJM",
-      "bins": ["pr:cost", "rg:pjm", "topic:capacity-cost-attribution"]
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:capacity-cost-attribution"
+      ],
+      "page": null
     },
     {
       "id": 5,
       "text": "The Union of Concerned Scientists identified an additional $4.3 billion in transmission interconnection costs previously obscured in utility filings, connecting private data centers directly to the high-voltage transmission system.",
       "concern": "Cites additional hidden interconnection costs attributed to private data center connections",
-      "bins": ["pr:cost", "rg:pjm", "topic:bill-transparency"]
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:bill-transparency"
+      ],
+      "page": null
     },
     {
       "id": 6,
       "text": "Any jobs, tax revenue, and economic activity created by those facilities remain in Virginia and Maryland, but the costs are socialized onto me and the other millions of ratepayers in PJM states.",
       "concern": "Argues economic benefits of data centers stay local while costs are spread across all PJM ratepayers",
-      "bins": ["pr:cost", "rg:pjm", "topic:geographic-cost-inequity"]
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:geographic-cost-inequity"
+      ],
+      "page": null
     },
     {
       "id": 7,
       "text": "require that large loads, specifically data centers and other high-density commercial facilities, bear the full cost of transmission infrastructure required to interconnect them to the interstate transmission system, rather than socializing those costs across existing ratepayer classes.",
       "concern": "Asks FERC to require large loads to pay full interconnection costs instead of spreading them to other ratepayers",
-      "bins": ["pr:cost", "aq:upgradecost"]
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ],
+      "page": null
     },
     {
       "id": 8,
       "text": "require that PJM's capacity auction cost allocation methodology distinguish between infrastructure serving broad public load and infrastructure serving concentrated private commercial loads. The current framework treats these identically. They are not identical.",
       "concern": "Asks FERC to direct PJM to differentiate cost allocation between public and private commercial infrastructure",
-      "bins": ["pr:cost", "rg:pjm", "topic:capacity-cost-attribution"]
+      "bins": [
+        "pr:cost",
+        "rg:pjm",
+        "topic:capacity-cost-attribution"
+      ],
+      "page": null
     },
     {
       "id": 9,
       "text": "require utilities to disclose on residential bills the portion of supply and transmission charges attributable to large load interconnection costs. Ratepayers currently have no visibility into why their bills are rising.",
       "concern": "Calls for bill-level disclosure of the share of charges caused by large load interconnection",
-      "bins": ["topic:bill-transparency"]
+      "bins": [
+        "topic:bill-transparency"
+      ],
+      "page": null
     },
     {
       "id": 10,
       "text": "act before the Shapiro price cap expires in 2030. The cap has provided temporary protection for Pennsylvania ratepayers. Without action, costs will increase even more.",
       "concern": "Urges FERC to act before the Pennsylvania price cap expires and leaves ratepayers unprotected",
-      "bins": ["pr:proximate", "rg:pjm", "topic:ratepayer-protection"]
+      "bins": [
+        "pr:proximate",
+        "rg:pjm",
+        "topic:ratepayer-protection"
+      ],
+      "page": null
     },
     {
       "id": 11,
       "text": "Requiring residential ratepayers in rural Pennsylvania to subsidize the electricity infrastructure of Fortune 500 technology companies generating no local economic benefit is neither just nor reasonable.",
       "concern": "Argues current cost allocation violates the Federal Power Act's just and reasonable standard",
-      "bins": ["pr:cost", "topic:geographic-cost-inequity"]
+      "bins": [
+        "pr:cost",
+        "topic:geographic-cost-inequity"
+      ],
+      "page": null
     }
   ],
   "bins": [
@@ -79,62 +128,103 @@
       "name": "Full Cost on Large Loads",
       "stance": "support",
       "description": "Hopkins argues that data center demand has directly caused her electric bill to more than double since 2021, backed by PJM market monitor figures attributing most of the capacity price surge to data centers. She asks FERC to require large commercial loads to bear the full cost of their interconnection infrastructure rather than spreading those costs to residential ratepayers, and frames the current practice as a violation of the Federal Power Act's just and reasonable standard.",
-      "quote_ids": [1, 2, 3, 4, 6, 7, 8, 11]
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        11
+      ]
     },
     {
       "key": "rg:pjm",
       "name": "PJM Ratepayer Harm",
       "stance": "support",
       "description": "Hopkins grounds her filing in PJM-specific data: the market monitor's attribution of 63% of the 833% capacity price increase to data centers, the resulting $9.3 billion spread across 67 million ratepayers in 13 states, and additional hidden transmission costs identified by the Union of Concerned Scientists. She calls for PJM's cost allocation to distinguish between infrastructure serving broad public load and infrastructure serving concentrated private commercial loads.",
-      "quote_ids": [1, 2, 3, 4, 5, 6, 8, 10]
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ]
     },
     {
       "key": "aq:upgradecost",
       "name": "Upgrade Costs to Benefiting Party",
       "stance": "support",
       "description": "Hopkins asks FERC to assign transmission upgrade costs to the large loads whose interconnection requires those upgrades, ending the practice of socializing those costs across existing residential ratepayer classes.",
-      "quote_ids": [7]
+      "quote_ids": [
+        7
+      ]
     },
     {
       "key": "pr:proximate",
       "name": "Act Before 2030 Cap Expires",
       "stance": "support",
       "description": "Hopkins urges FERC to take action before the Shapiro price cap protecting Pennsylvania ratepayers expires in 2030, warning that costs will rise further without reform.",
-      "quote_ids": [10]
+      "quote_ids": [
+        10
+      ]
     },
     {
       "key": "topic:capacity-cost-attribution",
       "name": "Data Centers Drove Capacity Prices",
       "stance": "support",
       "description": "Hopkins cites the PJM market monitor's finding that data center demand caused 63% of the 833% capacity auction price increase, resulting in $9.3 billion in costs across PJM. She asks FERC to require PJM's cost allocation methodology to treat private commercial load infrastructure differently from broad public load infrastructure.",
-      "quote_ids": [3, 4, 8]
+      "quote_ids": [
+        3,
+        4,
+        8
+      ]
     },
     {
       "key": "topic:bill-transparency",
       "name": "Disclose Large-Load Charges on Bills",
       "stance": "support",
       "description": "Hopkins asks FERC to require utilities to itemize on residential bills the share of supply and transmission charges attributable to large-load interconnection costs, arguing that ratepayers currently have no way to understand why their bills are rising. She also notes that $4.3 billion in interconnection costs were previously hidden in utility filings.",
-      "quote_ids": [5, 9]
+      "quote_ids": [
+        5,
+        9
+      ]
     },
     {
       "key": "topic:geographic-cost-inequity",
       "name": "Local Benefits, Socialized Costs",
       "stance": "support",
       "description": "Hopkins argues that data centers concentrated in Northern Virginia and Maryland generate jobs and tax revenue only for those localities while spreading electricity infrastructure costs across all PJM states, leaving rural Pennsylvania ratepayers paying for facilities that provide them no economic benefit.",
-      "quote_ids": [6, 11]
+      "quote_ids": [
+        6,
+        11
+      ]
     },
     {
       "key": "topic:ratepayer-protection",
       "name": "Protect Ratepayers Before Cap Expires",
       "stance": "support",
       "description": "Hopkins points to the Shapiro price cap as temporary protection that will expire in 2030, and urges FERC to act before that deadline to prevent further cost increases for Pennsylvania residential customers.",
-      "quote_ids": [10]
+      "quote_ids": [
+        10
+      ]
     }
   ],
   "lenses": {
-    "aq": ["upgradecost"],
-    "pr": ["cost", "proximate"],
-    "rg": ["pjm"]
+    "aq": [
+      "upgradecost"
+    ],
+    "pr": [
+      "cost",
+      "proximate"
+    ],
+    "rg": [
+      "pjm"
+    ]
   },
   "provenance": {
     "model": "claude-sonnet-4-6",

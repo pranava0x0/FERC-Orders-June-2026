@@ -12,7 +12,8 @@
       "concern": "FERC must clearly define jurisdictional boundaries before finalizing any rule",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Recommends raising the interconnection threshold from 20 MW to 75 MW",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "aq:threshold",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "Cost allocation must follow cost causation and credit shared upgrade benefits",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "bins": [
         "pr:cost",
         "topic:location-specific-pricing"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "pr:study",
         "topic:nondiscriminatory-access"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "bins": [
         "pr:study",
         "topic:advanced-transmission-tech"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 9,
@@ -82,7 +90,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:btm-protection"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 10,
@@ -91,7 +100,8 @@
       "bins": [
         "pr:flex",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 11,
@@ -100,7 +110,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 12,
@@ -109,7 +120,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 13,
@@ -118,7 +130,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 14,
@@ -127,7 +140,8 @@
       "bins": [
         "rg:pjm",
         "pr:colo"
-      ]
+      ],
+      "page": 17
     }
   ],
   "bins": [

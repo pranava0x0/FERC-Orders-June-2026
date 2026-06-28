@@ -12,7 +12,8 @@
       "concern": "Apply deposits and readiness requirements specifically to data center and crypto mining loads",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Study hybrid facilities based on injection and withdrawal rights to incentivize colocation",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Behind-the-meter capacity should count toward POI limits",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Permit expedited review of capacity additions offsetting generation loss",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Establish minimum interconnection standards applied uniformly across regions",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "Limit information requirements once minimum standards are met",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "bins": [
         "rg:spp",
         "topic:bess-clarity"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -69,7 +76,8 @@
       "concern": "Non-exporting BESS does not require registration but clarification was needed",
       "bins": [
         "topic:bess-clarity"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -77,7 +85,8 @@
       "concern": "Interconnection process needs greater clarity, efficiency, and predictability",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 10,
@@ -85,7 +94,8 @@
       "concern": "Recognize DERs and VPPs to accelerate large load interconnection and alleviate transmission constraints",
       "bins": [
         "topic:der-vpp"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 11,
@@ -93,7 +103,8 @@
       "concern": "Order 2222 implementation barriers limit DER and VPP participation",
       "bins": [
         "topic:order2222"
-      ]
+      ],
+      "page": 4
     }
   ],
   "bins": [

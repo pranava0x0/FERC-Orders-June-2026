@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "aq:jointstudy"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
         "pr:study",
         "aq:jointstudy",
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 5,
@@ -51,7 +55,8 @@
         "pr:study",
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -61,7 +66,8 @@
         "aq:jurisdiction",
         "pr:flex",
         "topic:wholesale-market-access"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 7,
@@ -72,7 +78,8 @@
         "pr:flex",
         "pr:colo",
         "topic:wholesale-market-access"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 8,
@@ -81,7 +88,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:wholesale-market-access"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 9,
@@ -90,7 +98,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:wholesale-market-access"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 10,
@@ -99,7 +108,8 @@
       "bins": [
         "pr:cost",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "bins": [
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
         "pr:flex",
         "pr:cost",
         "topic:dispatchable-load-examples"
-      ]
+      ],
+      "page": 10
     }
   ],
   "bins": [

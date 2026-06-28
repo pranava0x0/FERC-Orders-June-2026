@@ -13,7 +13,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "pr:flex",
         "pr:proximate"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
       "concern": "Multi-segment bidding should extend to all products, not only energy",
       "bins": [
         "topic:market-design-bess"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
       "concern": "Administrative operational restrictions limit BESS below its technical capability",
       "bins": [
         "topic:market-design-bess"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "bins": [
         "rg:caiso",
         "topic:market-design-bess"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
       "bins": [
         "rg:miso",
         "topic:transmission-charges-miso"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
       "bins": [
         "rg:miso",
         "topic:transmission-charges-miso"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 12,
@@ -109,7 +120,8 @@
       "concern": "Market design failures, not technology failures, are the source of BESS operational issues",
       "bins": [
         "topic:market-design-bess"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 13,
@@ -117,7 +129,8 @@
       "concern": "Transmission-only participation wastes storage capacity during non-constraint hours",
       "bins": [
         "topic:dual-use-storage"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 14,
@@ -125,7 +138,8 @@
       "concern": "Dual-use storage rules are needed to extract full value from transmission-sited BESS",
       "bins": [
         "topic:dual-use-storage"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "concern": "Cybersecurity requirements should apply throughout the supply chain for large load infrastructure",
       "bins": [
         "topic:grid-security"
-      ]
+      ],
+      "page": 14
     }
   ],
   "bins": [

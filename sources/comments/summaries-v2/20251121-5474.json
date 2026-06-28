@@ -13,7 +13,8 @@
       "bins": [
         "pr:colo",
         "topic:nondiscrimination"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "Request for non-discriminatory rules across data center types",
       "bins": [
         "topic:nondiscrimination"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "pr:colo",
         "pr:proximate"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:intergovernmental-coordination"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "bins": [
         "pr:cost",
         "topic:load-growth-benefits"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
         "pr:flex",
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
       "bins": [
         "pr:flex",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -86,7 +94,8 @@
         "pr:flex",
         "pr:colo",
         "pr:proximate"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 10,
@@ -96,7 +105,8 @@
         "pr:flex",
         "pr:proximate",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 11,
@@ -106,7 +116,8 @@
         "pr:study",
         "pr:flex",
         "topic:queue-priority"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 12,
@@ -115,7 +126,8 @@
       "bins": [
         "pr:study",
         "topic:queue-priority"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 13,
@@ -125,7 +137,8 @@
         "pr:colo",
         "pr:proximate",
         "topic:nondiscrimination"
-      ]
+      ],
+      "page": 7
     }
   ],
   "bins": [

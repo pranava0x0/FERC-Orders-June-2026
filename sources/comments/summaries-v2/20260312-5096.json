@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "pr:cost",
         "topic:state-led-process"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "topic:state-led-process",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "concern": "EEI quantifies the scale of existing member-company large load project commitments",
       "bins": [
         "topic:scale-of-deployment"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "bins": [
         "topic:state-led-process",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
       "bins": [
         "pr:cost",
         "topic:state-led-process"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 8,
@@ -75,7 +82,8 @@
       "bins": [
         "pr:colo",
         "rg:pjm"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 9,
@@ -84,7 +92,8 @@
       "bins": [
         "pr:study",
         "rg:spp"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 10,
@@ -94,7 +103,8 @@
         "aq:expedited",
         "rg:spp",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 11,
@@ -103,7 +113,8 @@
       "bins": [
         "pr:cost",
         "topic:state-led-process"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 12,
@@ -111,7 +122,8 @@
       "concern": "EEI asserts that member utilities are the primary actors needed to deliver large load interconnection",
       "bins": [
         "topic:scale-of-deployment"
-      ]
+      ],
+      "page": 3
     }
   ],
   "bins": [

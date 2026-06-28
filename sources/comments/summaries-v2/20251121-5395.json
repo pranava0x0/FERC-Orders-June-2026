@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "rg:pjm",
         "topic:load-surge"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
         "aq:expedited",
         "pr:flex",
         "topic:dispatch-products"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:cost-causation"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -51,7 +55,8 @@
       "bins": [
         "pr:cost",
         "topic:ciac-model"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -59,7 +64,8 @@
       "concern": "Residential customers should not absorb financial risk from large load interconnection",
       "bins": [
         "topic:residential-protection"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "bins": [
         "pr:cost",
         "topic:rate-protection"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
         "rg:pjm",
         "pr:cost",
         "topic:transmission-burden"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -87,7 +95,8 @@
       "bins": [
         "pr:cost",
         "topic:cost-causation"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -97,7 +106,8 @@
         "pr:colo",
         "pr:proximate",
         "topic:hybrid-reliability"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 11,
@@ -107,7 +117,8 @@
         "pr:colo",
         "pr:study",
         "topic:rmr-expansion"
-      ]
+      ],
+      "page": 3
     }
   ],
   "bins": [

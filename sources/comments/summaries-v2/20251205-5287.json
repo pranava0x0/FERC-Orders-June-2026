@@ -12,7 +12,8 @@
       "concern": "FERC should not regulate state-reserved matters",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "FERC jurisdiction limited by statute to non-state matters",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Retail electricity sales reserved to states",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Proposal lacks clear jurisdictional authority",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Load interconnections are fundamentally different from generator interconnections",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "Large load energy receipt tied to state-regulated retail functions",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "Unclear authority will trigger costly litigation",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "Federal overreach would undermine Administration's policy goals",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -76,7 +84,8 @@
       "concern": "If proceeding, limit jurisdiction to transmission facilities using seven-factor test",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 10,
@@ -84,7 +93,8 @@
       "concern": "Continue using seven-factor test for determining jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 11,
@@ -92,7 +102,8 @@
       "concern": "New frameworks would disrupt established precedent",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 12,
@@ -100,7 +111,8 @@
       "concern": "Do not modify seven-factor test to expand jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     }
   ],
   "bins": [

@@ -13,7 +13,8 @@
       "bins": [
         "pr:cost",
         "topic:tribal-consultation"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:cost",
         "topic:tribal-consultation"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "pr:cost",
         "topic:tribal-consultation"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "concern": "ANOPR fails to acknowledge Tribal Nations or their sovereignty",
       "bins": [
         "topic:tribal-consultation"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "concern": "EO 13175 requires consultation on matters with direct tribal effects",
       "bins": [
         "topic:tribal-consultation"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "concern": "Infrastructure acceleration will impact Tribal lands and resources",
       "bins": [
         "topic:tribal-impact"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
       "concern": "ANOPR does not address compliance with NHPA and NEPA consultation",
       "bins": [
         "topic:tribal-impact"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 9,
@@ -80,7 +88,8 @@
       "concern": "Option to Build conflicts with Tribal consent requirement for rights-of-way",
       "bins": [
         "topic:tribal-impact"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "concern": "Jurisdictional analysis omits Tribal sovereigns",
       "bins": [
         "topic:tribal-consultation"
-      ]
+      ],
+      "page": 3
     }
   ],
   "bins": [

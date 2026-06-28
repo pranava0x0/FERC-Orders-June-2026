@@ -13,7 +13,8 @@
       "bins": [
         "pr:flex",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "Hybrid facility definition should explicitly include storage resources",
       "bins": [
         "topic:hybrid-definition"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "pr:flex",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "bins": [
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "concern": "RTOs/ISOs must develop capacity accreditation for long-duration and multi-day storage",
       "bins": [
         "topic:capacity-accreditation"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "bins": [
         "topic:flexibility-standards",
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
       "bins": [
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

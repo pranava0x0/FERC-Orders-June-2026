@@ -12,7 +12,8 @@
       "concern": "Support for reform conditional on not disrupting state-level progress",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Advocate for streamlined, faster interconnection via study automation",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Clear, fair cost allocation methodology and advanced grid technologies",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Large load interconnection must maintain grid reliability",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Enable flexible solutions including demand response and energy storage",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "Raise minimum threshold to 75-100 MW to focus resources",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "Add deposits and penalties to discourage frivolous interconnection requests",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "Voluntary hybrid generation-load structures to accelerate service",
       "bins": [
         "aq:hybridrights"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -76,7 +84,8 @@
       "concern": "Cost allocation proportionate to benefits; no cost shift to other customers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -84,7 +93,8 @@
       "concern": "Protect pending requests and allow regional flexibility in implementation",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -92,7 +102,8 @@
       "concern": "Expedite colocation proceedings for comprehensive policy alignment",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 3
     }
   ],
   "bins": [

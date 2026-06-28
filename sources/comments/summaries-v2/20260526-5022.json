@@ -12,7 +12,8 @@
       "concern": "Support for faster, fairer large load interconnection processes aligned with Administration goals.",
       "bins": [
         "topic:interconnection-speed"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Existing state-level mechanisms already protect ratepayers from cost-shifting by large loads.",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "pr:study",
         "topic:state-preemption"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "Federal policy should not displace successful existing state and utility mechanisms for large load integration.",
       "bins": [
         "topic:state-preemption"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -45,7 +49,8 @@
       "concern": "Multiple proven tariff protections are already in widespread use across LPPC member utilities.",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -53,7 +58,8 @@
       "concern": "Significant existing activity in large load development demonstrates current frameworks are working for major investment.",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "concern": "Customer-funded infrastructure is a core element protecting ratepayers from large load cost impacts.",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 8,
@@ -69,7 +76,8 @@
       "concern": "Public power utilities can balance speed and customer protection simultaneously without federal intervention.",
       "bins": [
         "topic:interconnection-speed"
-      ]
+      ],
+      "page": 8
     }
   ],
   "bins": [

@@ -13,7 +13,8 @@
       "bins": [
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:study",
         "aq:jointstudy"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "ECA endorses FERC's claimed jurisdiction over large load transmission interconnection.",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "FERC must act on jurisdiction while respecting state retail rate authority.",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "pr:cost",
         "topic:cost-transparency"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "concern": "ECA prefers guidelines over pro forma rules because of regional variability and complexity.",
       "bins": [
         "topic:guidelines-approach"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "aq:expedited",
         "topic:guidelines-approach"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "bins": [
         "aq:expedited",
         "topic:timeliness-guideline"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
         "aq:expedited",
         "pr:flex",
         "topic:timeliness-guideline"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 10,
@@ -91,7 +100,8 @@
       "concern": "20 MW threshold is a reasonable starting point for applicability.",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 11,
@@ -100,7 +110,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 12,
@@ -108,7 +119,8 @@
       "concern": "Financial commitments and readiness requirements are needed to discipline load forecasts.",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 13,
@@ -117,7 +129,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 14,
@@ -126,7 +139,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 15,
@@ -135,7 +149,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 23
     },
     {
       "id": 16,
@@ -144,7 +159,8 @@
       "bins": [
         "rg:pjm",
         "rg:spp"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 17,
@@ -153,7 +169,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:flex"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

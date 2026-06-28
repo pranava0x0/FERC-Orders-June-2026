@@ -13,7 +13,8 @@
       "bins": [
         "pr:flex",
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
         "pr:flex",
         "pr:cost",
         "aq:expedited"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "pr:study",
         "topic:study-transparency"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -50,7 +54,8 @@
       "bins": [
         "pr:study",
         "aq:jointstudy"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -60,7 +65,8 @@
         "pr:flex",
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -70,7 +76,8 @@
         "pr:colo",
         "pr:cost",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -80,7 +87,8 @@
         "pr:colo",
         "pr:flex",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -89,7 +97,8 @@
       "bins": [
         "pr:flex",
         "aq:protection"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -99,7 +108,8 @@
         "pr:flex",
         "pr:cost",
         "aq:expedited"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 11,
@@ -109,7 +119,8 @@
         "pr:flex",
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:ferc-authority"
-      ]
+      ],
+      "page": 7
     }
   ],
   "bins": [

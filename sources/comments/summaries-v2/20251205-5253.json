@@ -13,7 +13,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:anopr-scope"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "Expanding ANOPR scope raises litigation risk and slows data center interconnection.",
       "bins": [
         "topic:anopr-scope"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "topic:anopr-scope",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "The large-load definition should be confined to large data center customers.",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "A low threshold like 20 MW harms industrial and commercial customers not driving the problem.",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "bins": [
         "aq:threshold",
         "topic:customer-segmentation"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 9,
@@ -82,7 +90,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 10,
@@ -91,7 +100,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 11,
@@ -100,7 +110,8 @@
       "bins": [
         "pr:cost",
         "topic:service-agreements"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 12,
@@ -108,7 +119,8 @@
       "concern": "Generator interconnection experience shows option to build does not produce meaningful savings for load customers.",
       "bins": [
         "topic:option-to-build"
-      ]
+      ],
+      "page": 20
     },
     {
       "id": 13,
@@ -116,7 +128,8 @@
       "concern": "Supervision overhead from option to build eliminates any projected cost or time savings.",
       "bins": [
         "topic:option-to-build"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 14,
@@ -125,7 +138,8 @@
       "bins": [
         "topic:option-to-build",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 15,
@@ -134,7 +148,8 @@
       "bins": [
         "pr:study",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 22
     }
   ],
   "bins": [

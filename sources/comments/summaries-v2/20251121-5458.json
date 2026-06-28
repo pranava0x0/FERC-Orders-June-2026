@@ -12,7 +12,8 @@
       "concern": "Filer argues the 20 MW ANOPR threshold is too low and the rule should cover only data centers at 200 MW or above.",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Low threshold would pull in traditional industrial and commercial customers outside the ANOPR's intended scope.",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Filer wants the rule scoped to data centers only, excluding other load types.",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "bins": [
         "aq:threshold",
         "topic:queue-congestion"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
         "pr:cost",
         "aq:upgradecost",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
       "bins": [
         "pr:cost",
         "topic:ratepayer-protection"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "bins": [
         "aq:upgradecost",
         "topic:utility-return"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 10,
@@ -91,7 +100,8 @@
       "concern": "Filer opposes extending an option to build to load customers.",
       "bins": [
         "topic:option-to-build"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 11,
@@ -99,7 +109,8 @@
       "concern": "Load customers lack technical qualifications and reliability obligations required to build transmission.",
       "bins": [
         "topic:option-to-build"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 12,
@@ -108,7 +119,8 @@
       "bins": [
         "aq:upgradecost",
         "topic:utility-return"
-      ]
+      ],
+      "page": 23
     },
     {
       "id": 13,
@@ -117,7 +129,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 30
     },
     {
       "id": 14,
@@ -127,7 +140,8 @@
         "aq:jurisdiction",
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 32
     },
     {
       "id": 15,
@@ -136,7 +150,8 @@
       "bins": [
         "aq:deposits",
         "pr:study"
-      ]
+      ],
+      "page": 37
     },
     {
       "id": 16,
@@ -145,7 +160,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:study"
-      ]
+      ],
+      "page": 36
     },
     {
       "id": 17,
@@ -155,7 +171,8 @@
         "pr:flex",
         "pr:study",
         "aq:expedited"
-      ]
+      ],
+      "page": 38
     },
     {
       "id": 18,
@@ -163,7 +180,8 @@
       "concern": "The Secretary's April 30, 2026 deadline may be too compressed to satisfy APA rulemaking requirements.",
       "bins": [
         "topic:apa-process"
-      ]
+      ],
+      "page": 40
     }
   ],
   "bins": [

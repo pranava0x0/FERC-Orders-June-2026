@@ -12,7 +12,8 @@
       "concern": "Federal jurisdiction would displace decades of state interconnection processes",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Federal jurisdiction may help in some regions but slow interconnection in others",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "aq:jurisdiction",
         "rg:pjm"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "Proposes a triggered federal backstop rather than blanket federal jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:load-guarantee"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
       "bins": [
         "pr:cost",
         "topic:load-guarantee"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "bins": [
         "aq:upgradecost",
         "topic:option-to-build"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 10,
@@ -91,7 +100,8 @@
       "concern": "Generator option to build experience shows high complexity and substandard outcomes",
       "bins": [
         "topic:option-to-build"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 11,
@@ -99,7 +109,8 @@
       "concern": "20 MW threshold is too low and would capture existing industrial and commercial loads",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 12,
@@ -107,7 +118,8 @@
       "concern": "Recommends raising the threshold to 100 MW or 500 MW to target only bulk-system loads",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 13,
@@ -116,7 +128,8 @@
       "bins": [
         "aq:protection",
         "pr:colo"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 14,
@@ -125,7 +138,8 @@
       "bins": [
         "aq:protection",
         "pr:colo"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 15,
@@ -135,7 +149,8 @@
         "aq:hybridrights",
         "pr:colo",
         "topic:anti-netting"
-      ]
+      ],
+      "page": 19
     }
   ],
   "bins": [

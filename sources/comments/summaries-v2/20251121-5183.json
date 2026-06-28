@@ -14,7 +14,8 @@
         "aq:jurisdiction",
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
         "aq:jurisdiction",
         "rg:miso",
         "rg:spp"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "concern": "Filers question whether a federal rule is needed at all",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "concern": "ANOPR lacks evidentiary basis for asserting federal jurisdiction over retail interconnection",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
         "aq:jurisdiction",
         "rg:miso",
         "rg:spp"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -77,7 +84,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -87,7 +95,8 @@
         "pr:flex",
         "rg:miso",
         "rg:spp"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 10,
@@ -96,7 +105,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 11,
@@ -105,7 +115,8 @@
       "bins": [
         "pr:cost",
         "aq:protection"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 12,
@@ -113,7 +124,8 @@
       "concern": "20 MW threshold is too low and will overload FERC capacity",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 13,
@@ -121,7 +133,8 @@
       "concern": "Threshold should be raised and tied to demonstrated delay",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 8
     }
   ],
   "bins": [

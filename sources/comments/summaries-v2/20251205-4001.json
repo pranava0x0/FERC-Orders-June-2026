@@ -12,7 +12,8 @@
       "concern": "Consumer cost protection from data center loads",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Rising electricity prices threatened by data center demand",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Magnitude of data center load growth",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Cost shifting from data centers to residential customers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Data centers must not shift costs to consumers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "Large loads must bear full cost of upgrades",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "Transparency required for cost verification",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "Support for deposits and financial commitments similar to Order 2023",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 9,
@@ -76,7 +84,8 @@
       "concern": "Take-or-pay commitments needed for large loads",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 10,
@@ -84,7 +93,8 @@
       "concern": "No cost credits for large loads",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 11,
@@ -92,7 +102,8 @@
       "concern": "Transparency on load-specific upgrade needs",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 12,
@@ -100,7 +111,8 @@
       "concern": "Expedited connection through flexible service",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 13,
@@ -108,7 +120,8 @@
       "concern": "Flexible loads minimize grid upgrades",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 14,
@@ -116,7 +129,8 @@
       "concern": "Protect Order 2023 generator reforms",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 15,
@@ -124,7 +138,8 @@
       "concern": "No discrimination based on data center support",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 16,
@@ -132,7 +147,8 @@
       "concern": "Jurisdictional clarity between FERC and states",
       "bins": [
         "topic:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 17,
@@ -140,7 +156,8 @@
       "concern": "States retain right to impose protections if FERC is weak",
       "bins": [
         "topic:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 18,
@@ -148,7 +165,8 @@
       "concern": "FERC must act independently from DOE",
       "bins": [
         "topic:ferc-independence"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 19,
@@ -156,7 +174,8 @@
       "concern": "FERC retains ultimate authority despite DOE submission",
       "bins": [
         "topic:ferc-independence"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 20,
@@ -164,7 +183,8 @@
       "concern": "Commissioners must have independence from political pressure",
       "bins": [
         "topic:ferc-independence"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 21,
@@ -172,7 +192,8 @@
       "concern": "Full NOPR with comment period needed before final action",
       "bins": [
         "topic:process"
-      ]
+      ],
+      "page": 4
     }
   ],
   "bins": [

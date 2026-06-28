@@ -12,7 +12,8 @@
       "concern": "Endorses the large-load interconnection reform initiative overall.",
       "bins": [
         "topic:ai-energy-competitiveness"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "aq:expedited",
         "aq:threshold"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "Wants a required fast-track interconnection for designated projects.",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "Curtailable loads should get interconnection priority over inflexible loads.",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
         "aq:hybridrights",
         "pr:study",
         "pr:colo"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "concern": "Supports standardized readiness criteria to prioritize ready projects.",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "Reduce withdrawal penalties for vetted projects that withdraw for reasons beyond their control.",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -80,7 +88,8 @@
       "concern": "Speculative loads without offtake agreements should keep full withdrawal penalties.",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     }
   ],
   "bins": [

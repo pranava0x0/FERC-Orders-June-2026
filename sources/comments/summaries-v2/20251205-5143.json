@@ -12,7 +12,8 @@
       "concern": "All nineteen state PUCs oppose FERC asserting jurisdiction over load interconnection",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Federal Power Act establishes bright-line jurisdictional divide FERC must respect",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Congressional encouragement to honor FPA federal-state jurisdictional distinction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "FPA jurisdiction over large load transmission in bundled retail sales is unclear and diminishes state authority",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "ANOPR risks legal disputes between FERC and states that delay certainty",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "Standards avoiding jurisdictional disputes maximize near-term benefits and legal durability",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "One-size-fits-all rule risks slowing successful regional interconnection momentum",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "NARUC requests January 2026 technical conference before rule issuance",
       "bins": [
         "topic:process"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -76,7 +84,8 @@
       "concern": "Cooperative federalism approach yields optimal solutions",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -84,7 +93,8 @@
       "concern": "Large load customers must bear 100% of upgrade costs per cost causation principle",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 11,
@@ -92,7 +102,8 @@
       "concern": "Rules must ensure compliance with NERC reliability standards and OATT provisions",
       "bins": [
         "topic:reliability"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 12,
@@ -100,7 +111,8 @@
       "concern": "Rules must provide flexibility and account for regional and market structure diversity",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 7
     }
   ],
   "bins": [

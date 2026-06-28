@@ -10,55 +10,97 @@
       "id": 1,
       "text": "VEIR supports the Commission initiating a rulemaking to develop a transparent, predictable, and technology-neutral framework for these connections, recognizing that timely action is essential for U.S. economic growth, competitiveness and grid resilience.",
       "concern": "Support for a transparent, technology-neutral large-load interconnection framework",
-      "bins": ["aq:jurisdiction", "pr:study"]
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ],
+      "page": null
     },
     {
       "id": 2,
       "text": "The large-load interconnection regime can include both procedural mechanisms and technology-neutral performance standards (or incentives) that reward deployment of high-capacity, space-efficient systems. For example, expedited study tracks might apply for projects proposing such high-density conductors.",
       "concern": "Expedited study tracks for high-capacity, compact interconnection technologies",
-      "bins": ["aq:expedited", "pr:study", "topic:technology-neutral-standards"]
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "topic:technology-neutral-standards"
+      ],
+      "page": null
     },
     {
       "id": 3,
       "text": "VEIR invites FERC to consider in the ANOPR stage: (a) whether study cost-allocation frameworks should recognize reduced ROW and environmental impact associated with innovative cable technology; (b) whether pilot or demonstration status of such technologies merits expedited interconnection treatment; and (c) how manufacturing scale-up of such systems may reduce long-lead supply-chain delays that currently hamper large-load attachments.",
       "concern": "Cost allocation and expedited treatment for innovative cable technologies with lower siting impact",
-      "bins": ["aq:expedited", "pr:cost", "pr:study", "topic:supply-chain"]
+      "bins": [
+        "aq:expedited",
+        "pr:cost",
+        "pr:study",
+        "topic:supply-chain"
+      ],
+      "page": null
     },
     {
       "id": 4,
       "text": "VEIR is encouraged by the principles outlined in the ANOPR and particularly supports Principles 8 and 9, which highlight the value of allowing large load developers to build or fund their own network upgrades. We believe this flexibility can accelerate deployment and create space for innovative technical approaches to interconnection and co-location of load and generation.",
       "concern": "Support for self-build and self-funding of network upgrades to speed deployment",
-      "bins": ["pr:cost", "pr:colo", "aq:hybridrights"]
+      "bins": [
+        "pr:cost",
+        "pr:colo",
+        "aq:hybridrights"
+      ],
+      "page": null
     },
     {
       "id": 5,
       "text": "We ask FERC to consider creating a \"low-impact interconnection study track\" for projects that demonstrably reduce system or siting complexity—such as those using compact, underground, or non-emitting delivery technologies.",
       "concern": "Request for a dedicated low-impact study track for projects with reduced siting complexity",
-      "bins": ["aq:expedited", "pr:study", "topic:low-impact-track"]
+      "bins": [
+        "aq:expedited",
+        "pr:study",
+        "topic:low-impact-track"
+      ],
+      "page": null
     },
     {
       "id": 6,
       "text": "Ensure cost-allocation frameworks acknowledge when interconnection upgrades are mitigated or avoided entirely by advanced conductors while allowing crediting for non-traditional upgrade paths.",
       "concern": "Cost-allocation credit for avoided or reduced upgrade costs via advanced conductors",
-      "bins": ["pr:cost", "aq:upgradecost", "topic:technology-neutral-standards"]
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost",
+        "topic:technology-neutral-standards"
+      ],
+      "page": null
     },
     {
       "id": 7,
       "text": "Allow large loads (or load developers) to own or build portions of the interconnection infrastructure (including superconducting feeders) under engineer-and-construct options equal to those available to generators. This is consistent with DOE's principle allowing self-build.",
       "concern": "Self-build rights for large load developers equivalent to those available to generators",
-      "bins": ["pr:cost", "aq:hybridrights", "topic:self-build-parity"]
+      "bins": [
+        "pr:cost",
+        "aq:hybridrights",
+        "topic:self-build-parity"
+      ],
+      "page": null
     },
     {
       "id": 8,
       "text": "Encourage DOE and FERC to coordinate with manufacturing and supply-chain support programs (e.g., 48C/45X tax credits, Advanced Manufacturing Office) so that large-load interconnection reform is paired with domestic cable manufacturing scale-up.",
       "concern": "Coordination between interconnection reform and domestic manufacturing incentive programs",
-      "bins": ["topic:supply-chain"]
+      "bins": [
+        "topic:supply-chain"
+      ],
+      "page": null
     },
     {
       "id": 9,
       "text": "We encourage FERC, in issuing its NOPR, to incorporate mechanisms that actively incentivize or accelerate deployment of enabling solutions like superconducting cable systems.",
       "concern": "Request for NOPR mechanisms that incentivize deployment of advanced cable technology",
-      "bins": ["pr:study", "topic:technology-neutral-standards"]
+      "bins": [
+        "pr:study",
+        "topic:technology-neutral-standards"
+      ],
+      "page": null
     }
   ],
   "bins": [
@@ -67,82 +109,126 @@
       "name": "Framework Scope and Authority",
       "stance": "support",
       "description": "VEIR supports FERC initiating a rulemaking to establish a transparent and predictable framework for large-load interconnections, treating such loads with procedural clarity comparable to generator interconnections.",
-      "quote_ids": [1]
+      "quote_ids": [
+        1
+      ]
     },
     {
       "key": "aq:expedited",
       "name": "Expedited Track for Low-Impact Projects",
       "stance": "support",
       "description": "VEIR asks FERC to create expedited study tracks for projects that reduce siting complexity or use compact, underground cable technologies. The filer also asks whether pilot or demonstration status for such technologies should merit expedited treatment.",
-      "quote_ids": [2, 3, 5]
+      "quote_ids": [
+        2,
+        3,
+        5
+      ]
     },
     {
       "key": "aq:hybridrights",
       "name": "Self-Build Rights for Large Loads",
       "stance": "support",
       "description": "VEIR supports giving large load developers the right to own or build portions of interconnection infrastructure on terms equal to those available to generators, citing consistency with DOE's self-build principle.",
-      "quote_ids": [4, 7]
+      "quote_ids": [
+        4,
+        7
+      ]
     },
     {
       "key": "aq:upgradecost",
       "name": "Credit for Avoided Upgrade Costs",
       "stance": "support",
       "description": "VEIR asks that cost-allocation rules acknowledge when advanced conductors reduce or eliminate the need for network upgrades, and that crediting mechanisms exist for non-traditional upgrade paths.",
-      "quote_ids": [6]
+      "quote_ids": [
+        6
+      ]
     },
     {
       "key": "pr:study",
       "name": "Predictable Study Process",
       "stance": "support",
       "description": "VEIR supports standardized data requirements and predictable study timelines drawn from generator interconnection reforms. The filer also asks for a low-impact study track and incentives for enabling technologies within the NOPR.",
-      "quote_ids": [1, 2, 3, 5, 9]
+      "quote_ids": [
+        1,
+        2,
+        3,
+        5,
+        9
+      ]
     },
     {
       "key": "pr:cost",
       "name": "Cost Allocation for Advanced Technologies",
       "stance": "support",
       "description": "VEIR supports cost-allocation frameworks that reflect savings from advanced conductors, including crediting avoided upgrades and allowing self-build options that lower costs for large load developers.",
-      "quote_ids": [3, 4, 6, 7]
+      "quote_ids": [
+        3,
+        4,
+        6,
+        7
+      ]
     },
     {
       "key": "pr:colo",
       "name": "Load and Generation Co-location",
       "stance": "support",
       "description": "VEIR sees self-build flexibility as creating space for co-location of load and generation, and cites ANOPR Principles 8 and 9 as providing useful room for innovative technical approaches.",
-      "quote_ids": [4]
+      "quote_ids": [
+        4
+      ]
     },
     {
       "key": "topic:technology-neutral-standards",
       "name": "Technology-Neutral Performance Standards",
       "stance": "support",
       "description": "VEIR asks FERC to adopt technology-neutral performance standards or incentives rather than prescriptive rules, so that compact and high-capacity cable systems can compete on technical merit and receive appropriate credit.",
-      "quote_ids": [2, 6, 9]
+      "quote_ids": [
+        2,
+        6,
+        9
+      ]
     },
     {
       "key": "topic:supply-chain",
       "name": "Supply Chain and Manufacturing Scale-Up",
       "stance": "support",
       "description": "VEIR asks FERC and DOE to coordinate interconnection reform with domestic manufacturing support programs such as 48C and 45X tax credits. The filer argues that manufacturing scale-up can shorten supply-chain lead times that currently delay large-load attachments.",
-      "quote_ids": [3, 8]
+      "quote_ids": [
+        3,
+        8
+      ]
     },
     {
       "key": "topic:low-impact-track",
       "name": "Low-Impact Interconnection Study Track",
       "stance": "support",
       "description": "VEIR specifically recommends a named low-impact study track for projects that reduce siting or system complexity, citing underground cable systems as an example of qualifying technology.",
-      "quote_ids": [5]
+      "quote_ids": [
+        5
+      ]
     },
     {
       "key": "topic:self-build-parity",
       "name": "Parity with Generator Self-Build Rights",
       "stance": "support",
       "description": "VEIR asks that large load developers receive engineer-and-construct options equivalent to those available to generators, including the right to own or build superconducting feeder infrastructure.",
-      "quote_ids": [7]
+      "quote_ids": [
+        7
+      ]
     }
   ],
   "lenses": {
-    "aq": ["jurisdiction", "expedited", "hybridrights", "upgradecost"],
-    "pr": ["study", "cost", "colo"],
+    "aq": [
+      "jurisdiction",
+      "expedited",
+      "hybridrights",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo"
+    ],
     "rg": []
   },
   "provenance": {

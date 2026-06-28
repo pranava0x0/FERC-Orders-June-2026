@@ -13,7 +13,8 @@
       "bins": [
         "aq:threshold",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:threshold",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "aq:deposits",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "aq:deposits",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "aq:protection",
         "topic:geothermal-stability"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "concern": "Protection systems should be tailored, not standardized across all hybrid types.",
       "bins": [
         "aq:protection"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "concern": "Enforcement mechanisms must account for geothermal's minimal risk profile.",
       "bins": [
         "aq:protection"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "bins": [
         "pr:flex",
         "topic:geothermal-stability"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 12,
@@ -111,7 +122,8 @@
         "aq:hybridrights",
         "pr:colo",
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 13,
@@ -120,7 +132,8 @@
       "bins": [
         "pr:cost",
         "pr:proximate"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 14,
@@ -128,7 +141,8 @@
       "concern": "Crediting mechanisms should acknowledge system benefits of hybrids.",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 15,
@@ -136,7 +150,8 @@
       "concern": "Transition rules should recognize system benefits of co-located load and generation.",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 16,
@@ -145,7 +160,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 17,
@@ -154,7 +170,8 @@
       "bins": [
         "pr:study",
         "pr:proximate"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

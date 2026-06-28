@@ -13,7 +13,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:narrow-tailoring"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "Reforms should accelerate interconnection, not create new procedural burdens",
       "bins": [
         "topic:narrow-tailoring"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "FERC rules should not apply to bundled retail service customers",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "aq:deposits",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "Providers need flexibility to update requirements as reliability knowledge evolves",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "bins": [
         "pr:study",
         "topic:implementation-complexity"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
       "concern": "FERC's proposed 20 MW threshold is too low; Duke recommends 300 MW minimum",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -71,7 +78,8 @@
       "concern": "20 MW threshold sweeps in conventional loads that have long been integrated without problems",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "concern": "Hybrid facility definition should require a common point of interconnection, not mere proximity",
       "bins": [
         "aq:hybridrights"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:reliability-risk"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 11,
@@ -98,7 +108,8 @@
         "aq:hybridrights",
         "aq:protection",
         "pr:study"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 12,
@@ -107,7 +118,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 13,
@@ -116,7 +128,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 23
     },
     {
       "id": 14,
@@ -126,7 +139,8 @@
         "pr:flex",
         "rg:spp",
         "topic:conditional-service"
-      ]
+      ],
+      "page": 20
     },
     {
       "id": 15,
@@ -135,7 +149,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

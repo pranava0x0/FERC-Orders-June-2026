@@ -13,7 +13,8 @@
       "bins": [
         "pr:cost",
         "topic:consumer-protection"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "concern": "public disclosure of interconnection applicants and cost impacts is required",
       "bins": [
         "topic:transparency-accountability"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "bins": [
         "aq:threshold",
         "topic:transparency-accountability"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
       "bins": [
         "topic:transparency-accountability",
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -75,7 +82,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:state-authority"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -84,7 +92,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:state-authority"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -94,7 +103,8 @@
         "aq:jurisdiction",
         "topic:state-authority",
         "rg:pjm"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 11,
@@ -103,7 +113,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:state-authority"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 12,
@@ -112,7 +123,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 13,
@@ -122,7 +134,8 @@
         "aq:deposits",
         "pr:study",
         "topic:queue-integrity"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 14,
@@ -131,7 +144,8 @@
       "bins": [
         "aq:deposits",
         "topic:queue-integrity"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 15,
@@ -139,7 +153,8 @@
       "concern": "20 MW threshold preserves state oversight of smaller loads",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 16,
@@ -148,7 +163,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 17,
@@ -158,7 +174,8 @@
         "aq:expedited",
         "aq:hybridrights",
         "pr:flex"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 18,
@@ -168,7 +185,8 @@
         "pr:study",
         "aq:jurisdiction",
         "rg:pjm"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 19,
@@ -177,7 +195,8 @@
       "bins": [
         "aq:protection",
         "pr:study"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 20,
@@ -186,7 +205,8 @@
       "bins": [
         "aq:protection",
         "pr:cost"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 21,
@@ -195,7 +215,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:hybrid-operational-limits"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 22,
@@ -204,7 +225,8 @@
       "bins": [
         "pr:cost",
         "topic:consumer-protection"
-      ]
+      ],
+      "page": 14
     }
   ],
   "bins": [

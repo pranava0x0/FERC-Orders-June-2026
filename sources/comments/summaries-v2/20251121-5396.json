@@ -12,7 +12,8 @@
       "concern": "large load growth imposes disproportionate costs on residential ratepayers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "current practice spreads large-load network upgrade costs to all customers without distinction",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "pr:cost",
         "rg:pjm"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 20
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "bins": [
         "pr:study",
         "aq:deposits"
-      ]
+      ],
+      "page": 27
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "concern": "FERC jurisdiction over large load interconnection should set a nationwide cost-protection floor",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "FERC rules should serve as a floor, not a ceiling, on state regulation",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 32
     },
     {
       "id": 9,
@@ -80,7 +88,8 @@
       "concern": "FERC must confine its rules to transmission aspects and not intrude on retail service terms",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 33
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:rto-nonrto-uniformity"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 11,
@@ -98,7 +108,8 @@
       "bins": [
         "pr:study",
         "aq:deposits"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 12,
@@ -107,7 +118,8 @@
       "bins": [
         "pr:study",
         "aq:deposits"
-      ]
+      ],
+      "page": 45
     },
     {
       "id": 13,
@@ -116,7 +128,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 49
     },
     {
       "id": 14,
@@ -125,7 +138,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 51
     },
     {
       "id": 15,
@@ -134,7 +148,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 54
     },
     {
       "id": 16,
@@ -143,7 +158,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 55
     },
     {
       "id": 17,
@@ -151,7 +167,8 @@
       "concern": "the Commission should not rush to meet the DOE April 2026 deadline",
       "bins": [
         "topic:rulemaking-pace"
-      ]
+      ],
+      "page": 57
     },
     {
       "id": 18,
@@ -159,7 +176,8 @@
       "concern": "Order No. 1920 transmission planning compliance should accompany any large-load interconnection rule",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 59
     },
     {
       "id": 19,
@@ -168,7 +186,8 @@
       "bins": [
         "pr:study",
         "topic:load-forecasting"
-      ]
+      ],
+      "page": 60
     },
     {
       "id": 20,
@@ -177,7 +196,8 @@
       "bins": [
         "pr:cost",
         "topic:advanced-transmission-tech"
-      ]
+      ],
+      "page": 2
     }
   ],
   "bins": [

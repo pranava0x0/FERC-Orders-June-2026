@@ -12,7 +12,8 @@
       "concern": "FERC authority is doubtful and narrow",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Load interconnection authority reserved to states",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "Coordinated studies cause delays and restudies",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "bins": [
         "pr:study",
         "topic:threshold"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
       "concern": "Protect state authority over retail rates and generation",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:flex"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "concern": "Defer final rules until NERC guidelines finalize",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 8
     }
   ],
   "bins": [

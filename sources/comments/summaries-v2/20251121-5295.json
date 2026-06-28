@@ -13,7 +13,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "aq:expedited",
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "pr:flex",
         "rg:caiso"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 6,
@@ -59,7 +64,8 @@
         "pr:flex",
         "rg:caiso",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 8,
@@ -77,7 +84,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
         "pr:cost",
         "aq:deposits",
         "topic:crediting-mechanism"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:crediting-mechanism"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 11,
@@ -107,7 +117,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:regional-variation"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 12,
@@ -116,7 +127,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:regional-variation"
-      ]
+      ],
+      "page": 10
     }
   ],
   "bins": [

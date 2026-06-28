@@ -13,7 +13,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:flex"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "aq:threshold",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -59,7 +64,8 @@
         "aq:threshold",
         "pr:cost",
         "topic:stranded-cost-risk"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "bins": [
         "aq:threshold",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -77,7 +84,8 @@
       "bins": [
         "aq:threshold",
         "pr:study"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 9,
@@ -86,7 +94,8 @@
       "bins": [
         "aq:threshold",
         "pr:study"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 10,
@@ -95,7 +104,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 11,
@@ -105,7 +115,8 @@
         "aq:hybridrights",
         "pr:colo",
         "pr:cost"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 12,
@@ -114,7 +125,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 13,
@@ -123,7 +135,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 14,
@@ -132,7 +145,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 15,
@@ -142,7 +156,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:mobile-sierra-gap"
-      ]
+      ],
+      "page": 23
     }
   ],
   "bins": [

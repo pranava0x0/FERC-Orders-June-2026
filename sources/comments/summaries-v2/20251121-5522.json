@@ -10,49 +10,87 @@
       "id": 1,
       "text": "access to sufficient power – and the long lead times often associated with securing it – has become a central barrier to new economic development opportunities in the United States.",
       "concern": "Identifies slow electricity access as the primary barrier to AI supply chain development",
-      "bins": ["pr:study", "topic:interconnection-timelines"]
+      "bins": [
+        "pr:study",
+        "topic:interconnection-timelines"
+      ],
+      "page": 2
     },
     {
       "id": 2,
       "text": "Reducing interconnection timelines is now a national security and economic development imperative.",
       "concern": "Frames faster interconnection as a national security necessity",
-      "bins": ["aq:expedited", "topic:interconnection-timelines"]
+      "bins": [
+        "aq:expedited",
+        "topic:interconnection-timelines"
+      ],
+      "page": 2
     },
     {
       "id": 3,
       "text": "Meeting the growing demand from new, critical large loads requires accelerating interconnection processes and establishing additional pathways for large loads to connect to the transmission system in ways that manage costs and preserve long-term reliability for all customers.",
       "concern": "Calls for accelerated interconnection with cost management and reliability preservation",
-      "bins": ["pr:study", "pr:cost", "aq:expedited"]
+      "bins": [
+        "pr:study",
+        "pr:cost",
+        "aq:expedited"
+      ],
+      "page": 2
     },
     {
       "id": 4,
       "text": "Approaches such as direct market access and new supply arrangements, such as co-location (or hybrid facilities), bring your own power, and behind-the-meter generation, can enable faster connection to the grid for large load customers like data centers, reshoring of manufacturing, and other industrial processes while ensuring that interconnecting customers are responsible for associated costs of network upgrades.",
       "concern": "Endorses co-location, bring-your-own-power, and behind-the-meter approaches as faster pathways that preserve cost responsibility",
-      "bins": ["pr:colo", "pr:proximate", "pr:cost", "aq:hybridrights"]
+      "bins": [
+        "pr:colo",
+        "pr:proximate",
+        "pr:cost",
+        "aq:hybridrights"
+      ],
+      "page": 2
     },
     {
       "id": 5,
       "text": "Timely interconnection to the transmission system via existing sites with power and opportunities to quickly develop new and additional power supplies is paramount to meeting national security and economic development goals.",
       "concern": "Prioritizes use of existing energized sites and new supply options for rapid interconnection",
-      "bins": ["pr:proximate", "aq:expedited", "topic:interconnection-timelines"]
+      "bins": [
+        "pr:proximate",
+        "aq:expedited",
+        "topic:interconnection-timelines"
+      ],
+      "page": 2
     },
     {
       "id": 6,
       "text": "the AI-SCA encourages the Commission to exercise its existing authority to determine that large load interconnection to the transmission system is a key component of open access transmission service.",
       "concern": "Asks FERC to affirm large load interconnection as part of open access transmission",
-      "bins": ["aq:jurisdiction", "topic:oatt-framework"]
+      "bins": [
+        "aq:jurisdiction",
+        "topic:oatt-framework"
+      ],
+      "page": 2
     },
     {
       "id": 7,
       "text": "we urge the Commission to encourage additional parameters and information from transmission providers to develop large load interconnection procedures that provide flexibility and that result in interconnection times that are faster than current processes.",
       "concern": "Urges FERC to push transmission providers for flexible, faster interconnection procedures",
-      "bins": ["pr:study", "pr:flex", "topic:oatt-framework"]
+      "bins": [
+        "pr:study",
+        "pr:flex",
+        "topic:oatt-framework"
+      ],
+      "page": 2
     },
     {
       "id": 8,
       "text": "members of the AI-SCA encourage the Commission to act expeditiously in support of open and non-discriminatory access to the transmission system and standardization of interconnection procedures and agreements for large loads to support economic growth and competition.",
       "concern": "Calls for prompt FERC action to standardize large load interconnection procedures",
-      "bins": ["aq:expedited", "aq:jurisdiction", "topic:oatt-framework"]
+      "bins": [
+        "aq:expedited",
+        "aq:jurisdiction",
+        "topic:oatt-framework"
+      ],
+      "page": 3
     }
   ],
   "bins": [
@@ -61,75 +99,117 @@
       "name": "Faster Study Procedures Needed",
       "stance": "support",
       "description": "AI-SCA argues that current interconnection timelines are too slow and urges FERC to push transmission providers to develop procedures that produce faster results. It frames long lead times for power access as the defining barrier for data center and AI supply chain development.",
-      "quote_ids": [1, 3, 7]
+      "quote_ids": [
+        1,
+        3,
+        7
+      ]
     },
     {
       "key": "pr:cost",
       "name": "Interconnecting Customers Bear Costs",
       "stance": "support",
       "description": "AI-SCA accepts that interconnecting large load customers should remain responsible for the costs of associated network upgrades. It sees alternative supply arrangements like co-location and behind-the-meter generation as ways to manage those costs while accelerating connection.",
-      "quote_ids": [3, 4]
+      "quote_ids": [
+        3,
+        4
+      ]
     },
     {
       "key": "pr:colo",
       "name": "Co-Location Enables Faster Access",
       "stance": "support",
       "description": "AI-SCA endorses co-location and hybrid facilities as pathways that can speed up grid connection for data centers while keeping cost responsibility with the interconnecting customer.",
-      "quote_ids": [4]
+      "quote_ids": [
+        4
+      ]
     },
     {
       "key": "pr:proximate",
       "name": "Use Existing Energized Sites",
       "stance": "support",
       "description": "AI-SCA emphasizes connecting to transmission at existing sites with available power and developing new local supply quickly, framing proximity to existing power infrastructure as key to meeting national security and economic goals.",
-      "quote_ids": [4, 5]
+      "quote_ids": [
+        4,
+        5
+      ]
     },
     {
       "key": "pr:flex",
       "name": "Flexible Procedures for Diverse Loads",
       "stance": "support",
       "description": "AI-SCA urges FERC to require transmission providers to build flexibility into large load interconnection procedures so they can accommodate the diverse supply arrangements and load types seeking connection.",
-      "quote_ids": [7]
+      "quote_ids": [
+        7
+      ]
     },
     {
       "key": "aq:jurisdiction",
       "name": "FERC Authority over Large Load Access",
       "stance": "support",
       "description": "AI-SCA asks FERC to use its existing authority to declare large load interconnection a core component of open access transmission service, establishing a clear jurisdictional basis for standardized procedures.",
-      "quote_ids": [6, 8]
+      "quote_ids": [
+        6,
+        8
+      ]
     },
     {
       "key": "aq:expedited",
       "name": "Expedite Interconnection Processes",
       "stance": "support",
       "description": "AI-SCA frames faster interconnection as a national security and economic development imperative and calls on FERC to act promptly to establish procedures that outperform current timelines.",
-      "quote_ids": [2, 3, 5, 8]
+      "quote_ids": [
+        2,
+        3,
+        5,
+        8
+      ]
     },
     {
       "key": "aq:hybridrights",
       "name": "Hybrid and Behind-the-Meter Pathways",
       "stance": "support",
       "description": "AI-SCA endorses bring-your-own-power, behind-the-meter generation, and hybrid facilities as supply arrangements that should have clear interconnection pathways under new FERC procedures.",
-      "quote_ids": [4]
+      "quote_ids": [
+        4
+      ]
     },
     {
       "key": "topic:interconnection-timelines",
       "name": "Timeline Delays Block Development",
       "stance": "neutral",
       "description": "AI-SCA describes long interconnection lead times as the primary development barrier for AI supply chain members, displacing real estate and supply chain concerns that once dominated. It ties this delay directly to national security risk.",
-      "quote_ids": [1, 2, 5]
+      "quote_ids": [
+        1,
+        2,
+        5
+      ]
     },
     {
       "key": "topic:oatt-framework",
       "name": "Standardize Under OATT",
       "stance": "support",
       "description": "AI-SCA asks FERC to use its existing open access framework to standardize large load interconnection procedures, pushing for non-discriminatory access and uniform agreements across transmission providers.",
-      "quote_ids": [6, 7, 8]
+      "quote_ids": [
+        6,
+        7,
+        8
+      ]
     }
   ],
   "lenses": {
-    "aq": ["jurisdiction", "expedited", "hybridrights"],
-    "pr": ["study", "cost", "colo", "proximate", "flex"],
+    "aq": [
+      "jurisdiction",
+      "expedited",
+      "hybridrights"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "proximate",
+      "flex"
+    ],
     "rg": []
   },
   "provenance": {

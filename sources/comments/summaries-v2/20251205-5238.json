@@ -12,7 +12,8 @@
       "concern": "Large loads must pay costs they cause; cost-causation is non-negotiable",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "pr:study",
         "topic:regional-flexibility"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "rg:pjm",
         "topic:urgency"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "Commission should issue a Final Rule quickly",
       "bins": [
         "topic:urgency"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "topic:urgency",
         "pr:colo"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "bins": [
         "pr:study",
         "topic:nerc-standards"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "concern": "NERC's full authority over the bulk power system should be preserved",
       "bins": [
         "topic:nerc-standards"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "bins": [
         "pr:colo",
         "topic:resource-adequacy"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 9,
@@ -82,7 +90,8 @@
       "bins": [
         "pr:colo",
         "topic:resource-adequacy"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
         "pr:study",
         "pr:colo",
         "rg:pjm"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 11,
@@ -100,7 +110,8 @@
       "concern": "Large loads must not shift interconnection costs to other consumers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 12,
@@ -109,7 +120,8 @@
       "bins": [
         "pr:cost",
         "pr:colo"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 13,
@@ -118,7 +130,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 14,
@@ -127,7 +140,8 @@
       "bins": [
         "pr:cost",
         "topic:agreement-review"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 15,
@@ -136,7 +150,8 @@
       "bins": [
         "pr:cost",
         "topic:agreement-review"
-      ]
+      ],
+      "page": 9
     }
   ],
   "bins": [
