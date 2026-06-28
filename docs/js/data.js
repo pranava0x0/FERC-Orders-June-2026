@@ -88,6 +88,7 @@ window.FERC_DATA = (function () {
     dcknowledge: { label: "“FERC Targets Grid Rules for Data Centers and Large Loads”", org: "Data Center Knowledge", tier: "secondary", url: "https://www.datacenterknowledge.com/build-design/ferc-targets-grid-rules-for-data-centers-and-large-loads", captured: "2026-06-27", note: "The affected industry’s own trade press; developer-side read on speed-to-power." },
     enr: { label: "“FERC Orders Grid Operators to Rework Data Center Power Rules”", org: "Engineering News-Record", tier: "secondary", url: "https://www.enr.com/articles/63195-ferc-orders-grid-operators-to-rework-data-center-power-rules", captured: "2026-06-27", note: "Engineering and construction trade coverage." },
     ieee: { label: "“U.S. Pushes Grid Operators to Connect Data Centers Faster”", org: "IEEE Spectrum", tier: "secondary", url: "https://spectrum.ieee.org/ferc-data-center-policy", captured: "2026-06-27", note: "Engineering and technical-audience coverage of the June 18 orders; speed-to-connect paired with consumer cost protections." },
+    peskoe: { label: "“An outdated FERC policy is undermining the White House’s ratepayer protection pledge”", org: "Utility Dive", tier: "secondary", url: "https://www.utilitydive.com/news/ferc-transmission-policy-white-house-ratepayer-protection-peskoe/815438/", captured: "2026-06-28", note: "Op-ed by Ari Peskoe (Harvard Electricity Law Initiative), published 2026-04-15: argues FERC’s 1994 transmission-pricing policy lets utilities socialize data-center upgrade costs, and that FERC should require full cost assignment plus disaggregated-pricing transparency." },
   };
 
   const meta = {
@@ -546,6 +547,11 @@ window.FERC_DATA = (function () {
       name: "Matthew Christiansen", affil: "Wilson Sonsini", lean: "nonpartisan",
       take: "On the federalism question: reads the orders as a legitimate exercise of FERC's transmission jurisdiction rather than an intrusion on the states. Says he doesn't think ‘anything that FERC proposed to do’ encroaches on state authority, so the state-versus-federal challenge critics expect starts from a narrow opening.",
       src: ["bloomberglaw"],
+    },
+    {
+      name: "Ari Peskoe", affil: "Harvard Electricity Law Initiative", lean: "nonpartisan",
+      take: "The cost-causation hawk: warns that utilities are ‘rolling billions of dollars in data-center-driven transmission upgrades into rates that everyone pays,’ and argues FERC should revise its 1994 transmission-pricing policy to ‘assign the full costs of transmission service to power-hungry data centers,’ plus require disaggregated pricing so the public can see what serving a data center actually costs.",
+      src: ["peskoe"],
     },
   ];
 

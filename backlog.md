@@ -254,7 +254,9 @@ overreach?") is folded into ideas 2 and 5.
   transmission-pricing argument, which is the substance of the HIGH "who pays" cost-shift explainer.
   **Plan:** add Peskoe there (verifiable via Utility Dive, "An outdated FERC policy is undermining the
   White House's ratepayer protection pledge"), not as a bolted-on digest. Skipped to avoid a redundant
-  feature.
+  feature. **Update (2026-06-28):** added **Ari Peskoe (Harvard ELI)** as a cost-causation voice from
+  that op-ed (verbatim quotes backed in voices-evidence.json). The full "who pays" explainer is still the
+  HIGH item; the voice is the standalone piece of it that fit cleanly now.
 
 - **done (2026-06-27) — frame the federalism / jurisdiction question explicitly.** Added a **Matthew
   Christiansen (Wilson Sonsini)** voice giving the jurisdiction-defense side (the orders stay within
