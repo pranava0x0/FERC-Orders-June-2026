@@ -498,8 +498,10 @@ test("comment body directories are named with the submitter (traceable to filer)
   // The path names who filed: files/<accession>__<org-slug>/. Guards the traceability convention.
   const FILES = join(here, "..", "sources", "comments", "files");
   const dirs = readdirSync(FILES).filter((d) => /^20\d{6}-\d{4}/.test(d));
+  // The folder was named from the scraped filer at download time; a later org correction keeps that raw
+  // value in `org_raw`, so the slug must trace to org_raw when present (preserve-raw), else org.
   const orgByAcc = Object.fromEntries(
-    JSON.parse(readFileSync(join(here, "..", "sources", "comments", "rm26-4-comments.json"), "utf8")).comments.map((c) => [c.acc, c.org]));
+    JSON.parse(readFileSync(join(here, "..", "sources", "comments", "rm26-4-comments.json"), "utf8")).comments.map((c) => [c.acc, c.org_raw || c.org]));
   const slug = (s) => (s || "").replace(/&/g, " and ").replace(/[^A-Za-z0-9 -]/g, "").trim()
     .replace(/\s+/g, "-").replace(/-+/g, "-").replace(/^-+|-+$/g, "").slice(0, 50).replace(/-+$/, "") || "unknown";
   assert.ok(dirs.length >= 270, `comment body dirs present (${dirs.length})`);
