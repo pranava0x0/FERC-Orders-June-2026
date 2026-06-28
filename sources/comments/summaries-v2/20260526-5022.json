@@ -4,146 +4,247 @@
   "org_type": "trade_assoc",
   "filed": "05/26/2026",
   "source_text": "sources/comments/files/20260526-5022__Large-Public-Power-Council/LPPC Comments RM26-4 _Final_(243510249.2).txt",
-  "overall_summary": "LPPC supports faster, fairer large load interconnections but argues federal policy should build on existing state tariffs and utility contracts already protecting ratepayers. Public power utilities have implemented protective mechanisms such as customer-funded infrastructure and take-or-pay provisions; LPPC opposes disrupting these proven frameworks with new federal mandates.",
+  "overall_summary": "The Large Public Power Council supports faster, fairer, more predictable large load interconnection and supplements the record with a snapshot of more than 50 gigawatts of member large load projects and the tariffs and contracts used to serve them. Its central position is that public power utilities and states already have effective customer-protective frameworks in place, so federal policy should build on rather than disrupt this progress.",
   "quotes": [
     {
       "id": 1,
       "text": "We share the Administration's commitment to energy dominance and specifically support improving the speed, efficiency, fairness, and predictability of large load interconnections.",
-      "concern": "Support for faster, fairer large load interconnection processes aligned with Administration goals.",
+      "concern": "Supports faster, fairer, more predictable large load interconnection",
       "bins": [
-        "topic:interconnection-speed"
+        "pr:study",
+        "aq:expedited"
       ],
       "page": 1
     },
     {
       "id": 2,
-      "text": "LPPC member utilities have long employed public power tariffs, special contracts, and bilateral service agreements to integrate large loads while protecting all customers from undue cost-shifting.",
-      "concern": "Existing state-level mechanisms already protect ratepayers from cost-shifting by large loads.",
+      "text": "its member utilities have long employed public power tariffs, special contracts, and bilateral service agreements to integrate large loads while protecting all customers from undue cost-",
+      "concern": "Existing tariffs and contracts already protect customers from cost-shifting",
       "bins": [
-        "pr:cost"
+        "pr:cost",
+        "aq:protection"
       ],
-      "page": null
+      "page": 1
     },
     {
       "id": 3,
-      "text": "Both approved tariffs and contract-based structures are in active use across multiple states, demonstrating that states and utilities have developed effective frameworks before any federal mandate.",
-      "concern": "State and utility frameworks for large load cost allocation already function effectively without federal rulemaking.",
+      "text": "a summary of the tariff and contractual frameworks those utilities are using to ensure large load customers pay their fair share",
+      "concern": "Frameworks ensure large loads pay their fair share of costs",
       "bins": [
-        "pr:study",
-        "topic:state-preemption"
+        "pr:cost",
+        "aq:protection"
       ],
-      "page": 2
+      "page": 1
     },
     {
       "id": 4,
-      "text": "We continue to underscore the importance of crafting federal policies that build upon, rather than disrupt, this progress.",
-      "concern": "Federal policy should not displace successful existing state and utility mechanisms for large load integration.",
+      "text": "LPPC member utilities are employing a variety of customer-protective mechanisms, including dedicated substations, upfront infrastructure funding requirements, take-or-pay provisions, minimum billing demand charges, exit fees, and bring-your-own-power arrangements, to ensure large load growth does not burden existing ratepayers.",
+      "concern": "Catalog of customer-protective cost mechanisms in use",
       "bins": [
-        "topic:state-preemption"
+        "pr:cost",
+        "aq:protection",
+        "aq:deposits"
       ],
       "page": 2
     },
     {
       "id": 5,
-      "text": "LPPC member utilities are employing a variety of customer-protective mechanisms, including dedicated substations, upfront infrastructure funding requirements, take-or-pay provisions, minimum billing demand charges, exit fees, and bring-your-own-power arrangements, to ensure large load growth does not burden existing ratepayers.",
-      "concern": "Multiple proven tariff protections are already in widespread use across LPPC member utilities.",
+      "text": "Both approved tariffs and contract-based structures are in active use across multiple states, demonstrating that states and utilities have developed effective frameworks before any federal mandate.",
+      "concern": "States and utilities already have effective frameworks without a federal mandate",
       "bins": [
-        "pr:cost"
+        "aq:jurisdiction",
+        "topic:existing-state-frameworks"
       ],
       "page": 2
     },
     {
       "id": 6,
-      "text": "LPPC member utilities collectively report more than 50 gigawatts of large load requests across committed projects and speculative, early-stage inquiries, spanning data centers, manufacturing, and other industrial facilities. These requests contribute more than $140 Billion in capital investments.",
-      "concern": "Significant existing activity in large load development demonstrates current frameworks are working for major investment.",
+      "text": "We continue to underscore the importance of crafting federal policies that build upon, rather than disrupt, this progress.",
+      "concern": "Federal policy should build on, not disrupt, existing progress",
       "bins": [
-        "aq:threshold"
+        "aq:jurisdiction",
+        "topic:existing-state-frameworks"
       ],
-      "page": 1
+      "page": 2
     },
     {
       "id": 7,
-      "text": "Requires the large load customer to pay upfront for dedicated substations, distribution upgrades, transmission lines, and other required facilities. Ensures grid upgrades needed for large loads do not burden existing ratepayers.",
-      "concern": "Customer-funded infrastructure is a core element protecting ratepayers from large load cost impacts.",
+      "text": "Requires large load customers to procure or contract for their own generation supply.",
+      "concern": "Bring-your-own-power generation requirements for large loads",
       "bins": [
-        "pr:cost"
+        "pr:flex",
+        "pr:colo"
       ],
       "page": 7
     },
     {
       "id": 8,
-      "text": "LPPC member utilities are committed to ensuring the timely interconnection of large loads while also ensuring benefits and protection for all customers and the grid.",
-      "concern": "Public power utilities can balance speed and customer protection simultaneously without federal intervention.",
+      "text": "Defines the type of large load customer that qualifies, such as a minimum power demand (ranging from 5 MW to 75+ MW across LPPC members).",
+      "concern": "Eligibility MW thresholds defining large load customers vary by utility",
       "bins": [
-        "topic:interconnection-speed"
+        "aq:threshold"
+      ],
+      "page": 7
+    },
+    {
+      "id": 9,
+      "text": "Requires the large load customer to pay upfront for dedicated substations, distribution upgrades, transmission lines, and other required facilities.",
+      "concern": "Customer-funded infrastructure so upgrades do not burden ratepayers",
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ],
+      "page": 7
+    },
+    {
+      "id": 10,
+      "text": "Requires the customer to post collateral or demonstrate creditworthiness prior to construction.",
+      "concern": "Financial assurance and creditworthiness requirements before construction",
+      "bins": [
+        "aq:deposits"
       ],
       "page": 8
+    },
+    {
+      "id": 11,
+      "text": "Bills the customer at a minimum demand level (e.g., fixed percentage of expected peak demand), even if actual usage falls short.",
+      "concern": "Minimum billing demand and take-or-pay protect against stranded cost",
+      "bins": [
+        "pr:cost"
+      ],
+      "page": 7
     }
   ],
   "bins": [
     {
       "key": "pr:cost",
-      "name": "Cost-shifting protection via tariff mechanisms",
+      "name": "No cost-shifting to ratepayers",
       "stance": "support",
-      "description": "LPPC supports continued reliance on existing utility tariff mechanisms that protect ratepayers. Public power utilities employ dedicated substations, upfront infrastructure funding, take-or-pay provisions, and other structures already proven effective at ensuring large load customers pay their fair share without burdening existing ratepayers.",
+      "description": "LPPC stresses that its members use tariffs, special contracts, customer-funded infrastructure, take-or-pay provisions, minimum billing demand charges, and exit fees to ensure large loads pay their fair share and do not burden existing ratepayers. It presents these as proven mechanisms already protecting everyday customers.",
       "quote_ids": [
         2,
-        5,
-        7
+        3,
+        4,
+        9,
+        11
       ]
     },
     {
-      "key": "aq:threshold",
-      "name": "Large load activity evidence and scale",
-      "stance": "neutral",
-      "description": "LPPC documents 50 GW of large load requests and $140 billion in capital investment across member utilities, demonstrating that existing frameworks are already supporting substantial large load development without federal changes.",
+      "key": "aq:protection",
+      "name": "Protecting existing ratepayers",
+      "stance": "support",
+      "description": "The filing frames its customer-protective mechanisms as the way to ensure large load growth does not shift costs onto other customers. It catalogs dedicated substations, upfront funding, and other provisions as in active use to protect all customers.",
       "quote_ids": [
-        6
-      ]
-    },
-    {
-      "key": "pr:study",
-      "name": "State and utility frameworks sufficient without federal mandate",
-      "stance": "oppose",
-      "description": "LPPC opposes new federal study or rulemaking requirements, noting states and utilities have already developed effective frameworks across multiple jurisdictions before any federal mandate.",
-      "quote_ids": [
-        3
-      ]
-    },
-    {
-      "key": "topic:state-preemption",
-      "name": "Federal policy should build on state frameworks, not disrupt them",
-      "stance": "oppose",
-      "description": "LPPC emphasizes that federal policy must build on existing state and utility processes rather than disrupt them. Current state-level mechanisms reflect local stakeholder efforts and have proven effective.",
-      "quote_ids": [
+        2,
         3,
         4
       ]
     },
     {
-      "key": "topic:interconnection-speed",
-      "name": "Support for faster interconnection within existing protective structures",
+      "key": "aq:deposits",
+      "name": "Financial assurance and deposits",
       "stance": "support",
-      "description": "LPPC supports the goal of improving speed and efficiency of large load interconnections and is committed to timely interconnection, but within existing ratepayer protection frameworks.",
+      "description": "LPPC describes financial assurance practices, including required collateral or creditworthiness demonstrations before construction and upfront funding commitments, as standard tools its members use to ensure large loads can cover their costs.",
       "quote_ids": [
-        1,
+        4,
+        10
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "Defer to state and utility frameworks",
+      "stance": "support",
+      "description": "LPPC argues states and utilities have already developed effective large load frameworks before any federal mandate and that federal policy should build on rather than disrupt this progress. It positions existing state and local processes as the foundation any federal action should respect.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "topic:existing-state-frameworks",
+      "name": "Existing frameworks already work",
+      "stance": "support",
+      "description": "The comment supplements the record with evidence that approved tariffs and contract structures are in active use across multiple states, presenting them as proof the issue is already being managed without federal intervention.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Bring-your-own-power requirements",
+      "stance": "support",
+      "description": "LPPC highlights bring-your-own-power arrangements that require large load customers to procure or contract for their own generation, insulating other customers from capacity cost impacts.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Customer-procured generation",
+      "stance": "support",
+      "description": "The filing describes generation requirements and customer-owned supply arrangements among the protective tools members use to serve large loads.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "MW eligibility thresholds vary",
+      "stance": "support",
+      "description": "LPPC notes that member tariffs define qualifying large load customers by minimum power demand thresholds ranging from 5 MW to 75 or more MW, supporting the use of size-based eligibility to apply special terms only to the largest customers.",
+      "quote_ids": [
         8
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Customer-funded grid upgrades",
+      "stance": "support",
+      "description": "The comment describes requirements that large load customers pay upfront for dedicated substations, distribution upgrades, and transmission lines so the upgrades needed to serve them do not fall on existing ratepayers.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Faster, fairer interconnection",
+      "stance": "support",
+      "description": "LPPC supports improving the speed, efficiency, fairness, and predictability of large load interconnections and aligns itself with the goal of integrating new demand responsibly.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Speed and predictability",
+      "stance": "support",
+      "description": "The filing supports faster and more predictable large load interconnection as a shared goal, while emphasizing it should be achieved through existing customer-protective frameworks.",
+      "quote_ids": [
+        1
       ]
     }
   ],
   "lenses": {
     "aq": [
-      "threshold"
+      "protection",
+      "deposits",
+      "jurisdiction",
+      "threshold",
+      "upgradecost",
+      "expedited"
     ],
     "pr": [
       "cost",
+      "flex",
+      "colo",
       "study"
     ],
     "rg": []
   },
   "provenance": {
-    "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }

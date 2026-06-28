@@ -4,7 +4,7 @@
   "org_type": "transmission_owner",
   "filed": "06/05/2026",
   "source_text": "sources/comments/files/20260605-5169__FirstEnergy-Service-Company/FirstEnergy Supplemental Comments (RM26-4)__(20260605).txt",
-  "overall_summary": "FirstEnergy proposes adapting the natural gas expansion rate framework to electric transmission. Under this approach, large data center customers seeking interconnection would pay an incremental expansion rate for new transmission facilities built to serve them, while all other customers pay the standard zonal rate, eliminating cost-shifting to existing residential and small business customers.",
+  "overall_summary": "FirstEnergy proposes adapting FERC's 1999 natural gas expansion-rate framework to electric transmission. A hyperscale data center seeking interconnection would pay its pro-rata share of the existing zonal rate plus an incremental expansion rate that recovers the cost of upgrades built to serve it, so existing residential and small business customers no longer subsidize that infrastructure. FirstEnergy argues FERC already has the authority and judicial support to adopt this approach without new legislation.",
   "quotes": [
     {
       "id": 1,
@@ -27,9 +27,10 @@
     {
       "id": 3,
       "text": "The Commission developed a durable solution: a rate-design framework requiring the customer driving the expansion to bear the associated costs while leaving the remainder of the system unaffected.",
-      "concern": "natural gas precedent for cost causation in expansion pricing",
+      "concern": "natural gas precedent applies cost causation to expansion pricing",
       "bins": [
-        "pr:cost"
+        "pr:cost",
+        "topic:natural-gas-precedent"
       ],
       "page": 6
     },
@@ -47,7 +48,8 @@
       "text": "Adapting the 1999 natural gas framework to electric transmission infrastructure would require neither statutory change nor a novel assertion of agency authority.",
       "concern": "FERC has existing legal authority to implement expansion rates",
       "bins": [
-        "topic:regulatory-authority"
+        "aq:jurisdiction",
+        "topic:natural-gas-precedent"
       ],
       "page": 9
     },
@@ -56,33 +58,34 @@
       "text": "FERC has long recognized that interconnection service is a component of transmission service, and its jurisdiction over interstate transmission rate design is well established.",
       "concern": "FERC jurisdiction covers transmission-voltage interconnection rates",
       "bins": [
-        "topic:regulatory-authority"
+        "aq:jurisdiction"
       ],
       "page": 9
     },
     {
       "id": 7,
-      "text": "Under an electric transmission expansion-rate framework, a hyperscale data center seeking transmission-voltage interconnection would enter into a long-term agreement with the host transmission owner. That agreement would be filed with and reviewed by FERC under the same just-and-reasonable standard applicable to other jurisdictional transmission arrangements.",
-      "concern": "data centers would execute FERC-reviewed long-term agreements for expansion rates",
+      "text": "That agreement would be filed with and reviewed by FERC under the same just-and-reasonable standard applicable to other jurisdictional transmission arrangements.",
+      "concern": "expansion agreements would be filed and FERC-reviewed",
       "bins": [
         "pr:cost",
-        "pr:study"
+        "aq:jurisdiction"
       ],
       "page": 9
     },
     {
       "id": 8,
       "text": "The agreement would obligate the data center customer to pay two distinct rate components. First, the customer would pay its standard pro-rata share of the existing zonal transmission rate, applying the same tariff structure applicable to all transmission customers within the zone. Second, the customer would pay an expansion rate specifically designed to recover the costs of the network upgrades required to support the interconnection.",
-      "concern": "two-tier rate structure: base zonal rate plus incremental expansion rate",
+      "concern": "two-tier rate: base zonal rate plus incremental expansion rate",
       "bins": [
-        "pr:cost"
+        "pr:cost",
+        "aq:upgradecost"
       ],
       "page": 9
     },
     {
       "id": 9,
-      "text": "Expansion-facility costs would be depreciated on a straight-line basis over the term of the agreement. The transmission owner's return on equity, capital structure, and debt assumptions would mirror those already embedded in the incumbent zonal transmission rate, thereby avoiding either preferential treatment or punitive pricing.",
-      "concern": "expansion rate cost recovery mirrors standard utility financial parameters",
+      "text": "The transmission owner's return on equity, capital structure, and debt assumptions would mirror those already embedded in the incumbent zonal transmission rate, thereby avoiding either preferential treatment or punitive pricing.",
+      "concern": "expansion rate uses standard utility financial parameters",
       "bins": [
         "pr:cost"
       ],
@@ -90,44 +93,47 @@
     },
     {
       "id": 10,
-      "text": "The default contract term would be fifteen years, consistent with the established natural gas model.",
-      "concern": "fifteen-year term aligned with natural gas precedent",
+      "text": "To protect existing customers from residual exposure, the data center developer would also maintain creditworthy collateral support equal to the remaining unrecovered balance of the expansion facilities over the life of the agreement.",
+      "concern": "developer posts collateral covering the unrecovered expansion balance",
       "bins": [
-        "pr:cost"
+        "pr:cost",
+        "aq:protection"
       ],
       "page": 9
     },
     {
       "id": 11,
+      "text": "the customer's transmission-rate contribution could be calculated based on the higher of actual demand or a minimum contractual-demand threshold, preventing cost-shifting through underutilization. Likewise, expansion-rate obligations could be reallocated annually as additional customers interconnect to the same facilities, reducing the cost burden borne by any individual participant over time.",
+      "concern": "minimum-demand floor and annual reallocation as added structural protections",
+      "bins": [
+        "pr:flex",
+        "aq:protection"
+      ],
+      "page": 9
+    },
+    {
+      "id": 12,
       "text": "At the conclusion of the term, the expansion facilities—having been fully recovered—would transition into the integrated system rate base.",
-      "concern": "expansion facilities eventually integrate into base rate after cost recovery",
+      "concern": "expansion facilities roll into base rate after cost recovery",
       "bins": [
         "pr:cost"
       ],
       "page": 8
     },
     {
-      "id": 12,
+      "id": 13,
       "text": "Households and small businesses would no longer be required to subsidize infrastructure developed primarily to serve hyperscale facilities.",
       "concern": "existing customers benefit from elimination of cost-shifting",
       "bins": [
-        "pr:cost"
-      ],
-      "page": 10
-    },
-    {
-      "id": 13,
-      "text": "Transmission owners are currently caught between the economic-development imperative to accommodate large new loads and the obligation to shield existing customers from resulting rate impacts.",
-      "concern": "transmission owners face tension between attracting development and protecting ratepayers",
-      "bins": [
-        "pr:cost"
+        "pr:cost",
+        "aq:protection"
       ],
       "page": 10
     },
     {
       "id": 14,
       "text": "An expansion-rate framework resolves that tension by providing a clear, FERC-approved path to cost recovery while protecting the existing customer base.",
-      "concern": "expansion framework balances development needs with ratepayer protection",
+      "concern": "framework balances development needs with ratepayer protection",
       "bins": [
         "pr:cost"
       ],
@@ -137,54 +143,89 @@
   "bins": [
     {
       "key": "pr:cost",
-      "name": "Cost allocation for data center transmission",
+      "name": "Expansion rate for data center upgrades",
       "stance": "support",
-      "description": "FirstEnergy supports allocating transmission expansion costs directly to data center customers rather than spreading them to all ratepayers. The filing proposes a two-tier rate structure where data centers pay their pro-rata share of the existing transmission system plus an incremental rate for new facilities built to serve them. This approach, modeled on the natural gas expansion-rate framework established in 1999, protects existing residential and small business customers from subsidizing infrastructure they do not benefit from and provides transmission owners with a clear cost-recovery mechanism.",
+      "description": "FirstEnergy supports allocating transmission expansion costs directly to the data center driving the need rather than spreading them across all ratepayers. The proposed two-tier structure has the customer pay its pro-rata share of the existing zonal rate plus an incremental expansion rate that recovers the network upgrades built to serve it, using the same financial parameters as the incumbent rate. After a default fifteen-year term the facilities roll into the integrated rate base, and existing households and small businesses stop subsidizing infrastructure they do not benefit from.",
       "quote_ids": [
         1,
         2,
         3,
         4,
+        7,
         8,
         9,
         10,
-        11,
         12,
         13,
         14
       ]
     },
     {
-      "key": "pr:study",
-      "name": "Regulatory process and review",
+      "key": "pr:flex",
+      "name": "Structural protections against cost-shift",
       "stance": "support",
-      "description": "FirstEnergy supports FERC review of data center interconnection agreements under the just-and-reasonable standard, with agreements filed for Commission approval. This formal regulatory oversight ensures transparent cost recovery and protects against preferential or punitive pricing.",
+      "description": "FirstEnergy proposes additional design features to keep the expansion rate fair over time. The customer's contribution would be set on the higher of actual or a minimum contractual demand to prevent cost-shifting through underutilization, and expansion obligations would be reallocated annually as more customers connect to the same facilities so no single participant overpays.",
       "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "aq:jurisdiction",
+      "name": "FERC authority over interconnection rates",
+      "stance": "support",
+      "description": "FirstEnergy argues FERC already has the jurisdiction to adopt this framework without new legislation. The Commission has long treated interconnection service as part of transmission service, and the filed agreements would be reviewed under the standard just-and-reasonable standard for jurisdictional transmission arrangements.",
+      "quote_ids": [
+        5,
+        6,
         7
       ]
     },
     {
-      "key": "topic:regulatory-authority",
-      "name": "FERC legal authority",
-      "stance": "neutral",
-      "description": "FirstEnergy asserts that FERC has existing statutory authority to implement an expansion-rate framework without legislative changes. The Commission's longstanding jurisdiction over interstate transmission service and interconnection rates provides the legal foundation needed.",
+      "key": "aq:protection",
+      "name": "Protecting existing captive customers",
+      "stance": "support",
+      "description": "A central aim of the proposal is shielding existing residential, small business, and industrial customers from the cost of upgrades built for hyperscale loads. Developer collateral, a minimum-demand floor, and direct cost causation all serve to keep that infrastructure off the bills of customers who do not benefit from it.",
       "quote_ids": [
-        5,
-        6
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Recovering network upgrade costs",
+      "stance": "support",
+      "description": "FirstEnergy addresses how the substantial network upgrades a single data center requires would be recovered. The expansion rate is designed specifically to recover the cost of those upgrades from the customer driving them, separate from the existing zonal rate that covers the legacy system.",
+      "quote_ids": [
+        8
+      ]
+    },
+    {
+      "key": "topic:natural-gas-precedent",
+      "name": "Natural gas framework as precedent",
+      "stance": "support",
+      "description": "The filing grounds the entire proposal in FERC's 1995 and 1999 natural gas pipeline expansion-pricing policy, which it says solved a structurally identical cost-shift problem and has survived more than twenty-five years of judicial review. FirstEnergy argues adapting that proven framework to electric transmission needs no statutory change or novel assertion of authority.",
+      "quote_ids": [
+        3,
+        5
       ]
     }
   ],
   "lenses": {
-    "aq": [],
+    "aq": [
+      "jurisdiction",
+      "protection",
+      "upgradecost"
+    ],
     "pr": [
       "cost",
-      "study"
+      "flex"
     ],
     "rg": []
   },
   "provenance": {
-    "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }

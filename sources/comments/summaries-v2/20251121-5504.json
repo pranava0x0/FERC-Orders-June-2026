@@ -4,59 +4,59 @@
   "org_type": "data_center",
   "filed": "11/21/2025",
   "source_text": "sources/comments/files/20251121-5504__Amazon-Energy-LLC/RM26-4 Amazon Energy's Initial Comments.txt",
-  "overall_summary": "Amazon Energy supports FERC reforms to standardize and accelerate large load interconnections, but urges prospective application only and recommends fast-track processing for ready projects, advanced automation tools, standardized milestones and readiness requirements, and enhanced data reporting. The filer also supports optionality and co-location of loads with generation facilities.",
+  "overall_summary": "Amazon Energy supports FERC reforms to standardize and speed up large load interconnections, but it urges that any new rules apply prospectively so in-progress projects are not disrupted. The filer recommends fast-track processing and automation for ready projects, generator-style study deposits, readiness requirements and withdrawal penalties, public aggregated reporting on interconnection outcomes, and flexible co-location pathways for loads sited with generation.",
   "quotes": [
     {
       "id": 1,
       "text": "Amazon Energy supports reforms that, done right, will help the United States connect new AI and advanced manufacturing investment quickly, while strengthening grid reliability and affordability for all customers.",
-      "concern": "General support for timely interconnection reforms.",
+      "concern": "General support for timely interconnection reform.",
       "bins": [
-        "pr:study"
+        "topic:reform-support"
       ],
       "page": 1
     },
     {
       "id": 2,
       "text": "Amazon Energy respectfully urges the Commission to apply any new rules or policy changes adopted in this proceeding prospectively, and not to large load interconnection requests currently in progress under existing interconnection procedures.",
-      "concern": "No retroactive application of new rules.",
+      "concern": "Apply new rules prospectively, not to in-progress requests.",
       "bins": [
-        "pr:study"
+        "topic:prospective-application"
       ],
       "page": 3
     },
     {
       "id": 3,
       "text": "Large load developers have expended significant time and resources developing new large load projects (e.g., completing feasibility and system impact studies, securing sites, permits, and long-lead equipment, and executing definitive agreements) and made substantial investments in reliance on existing interconnection rules and procedures.",
-      "concern": "Existing projects made investments under current rules.",
+      "concern": "Existing projects relied on current rules when investing.",
       "bins": [
-        "pr:study"
+        "topic:prospective-application"
       ],
       "page": 3
     },
     {
       "id": 4,
       "text": "Abruptly subjecting these in-progress projects to new requirements or study processes could upend their economics, cause substantial delay, or even force withdrawals, thereby undermining the goals of timely and orderly interconnection that the ANOPR seeks to advance.",
-      "concern": "Retroactive rules risk project viability and delay.",
+      "concern": "Retroactive rules risk project economics and delay.",
       "bins": [
-        "pr:study"
+        "topic:prospective-application"
       ],
       "page": 3
     },
     {
       "id": 5,
       "text": "Amazon Energy recommends that any rule adopted by the Commission governing the interconnection of large loads include mechanisms like those in Order No. 2023 to prioritize projects that are ready for interconnection.",
-      "concern": "Fast-track for ready projects mirrors generator rules.",
+      "concern": "Use Order No. 2023-style readiness prioritization.",
       "bins": [
-        "pr:study"
+        "aq:expedited"
       ],
       "page": 4
     },
     {
       "id": 6,
       "text": "Amazon Energy encourages the Commission to include in any rule a \"fast track\" or priority processing track for large load projects that can demonstrate a high degree of readiness (e.g., projects that have (i) committed customers, (ii) secured all necessary permits, (iii) site control, (iv) secured financing or corporate commitments, and/or (v) an executed service agreement).",
-      "concern": "Define readiness criteria for fast-track eligibility.",
+      "concern": "Create a fast-track with defined readiness criteria.",
       "bins": [
-        "pr:study",
+        "aq:expedited",
         "aq:threshold"
       ],
       "page": 4
@@ -64,44 +64,44 @@
     {
       "id": 7,
       "text": "Amazon Energy encourages the Commission to leverage technology and process innovations to automate and accelerate large load interconnections.",
-      "concern": "Automation and AI tools to speed interconnections.",
+      "concern": "Use automation to speed interconnections.",
       "bins": [
-        "pr:study"
+        "aq:expedited"
       ],
       "page": 4
     },
     {
       "id": 8,
       "text": "The Commission should incentivize or require transmission providers to deploy modern software tools, such as advanced grid modeling and AI-driven analysis, that can conduct feasibility and system impact studies more expeditiously and efficiently.",
-      "concern": "Require advanced modeling and AI-driven analysis.",
+      "concern": "Require advanced modeling and AI-driven study tools.",
       "bins": [
-        "pr:study"
+        "aq:expedited"
       ],
       "page": 4
     },
     {
       "id": 9,
       "text": "Amazon Energy emphasizes that greater automation is not a substitute for sound engineering judgment, but a way to expedite engineers' and planners' work by handling administratively burdensome tasks and analyses in hours or days rather than weeks or months.",
-      "concern": "Automation enhances efficiency without replacing engineering review.",
+      "concern": "Automation aids, does not replace, engineering review.",
       "bins": [
-        "pr:study"
+        "aq:expedited"
       ],
       "page": 5
     },
     {
       "id": 10,
       "text": "Amazon Energy supports the proposal in the ANOPR that, \"like generating facilities, load and hybrid facilities should be subject to standardized study deposits, readiness requirements, and withdrawal penalties,\"",
-      "concern": "Apply generator-like standardized deposits and readiness rules to loads.",
+      "concern": "Apply generator-style deposits and readiness rules to loads.",
       "bins": [
         "aq:deposits",
-        "pr:cost"
+        "pr:study"
       ],
       "page": 5
     },
     {
       "id": 11,
       "text": "Amazon Energy urges the Commission to consider imposing similar standardization and requirements here to ensure the timely and efficient processing of large load interconnection requests, particularly for interconnections within the same ISO/RTO.",
-      "concern": "Standardize milestones within each ISO/RTO.",
+      "concern": "Standardize milestones and requirements within each ISO or RTO.",
       "bins": [
         "pr:study"
       ],
@@ -110,17 +110,17 @@
     {
       "id": 12,
       "text": "requiring large load interconnection customers to make upfront study deposits, demonstrate a degree of project readiness (e.g., site control or an executed facilities construction contract), and face withdrawal penalties if they exit after certain milestones will discourage non-viable or speculative large load requests.",
-      "concern": "Upfront deposits and penalties filter non-viable projects.",
+      "concern": "Upfront deposits and withdrawal penalties deter speculative requests.",
       "bins": [
         "aq:deposits",
-        "pr:cost"
+        "aq:threshold"
       ],
       "page": 6
     },
     {
       "id": 13,
-      "text": "Improving the caliber of projects at entry will allow the processing of large load interconnections to function more efficiently, with fewer late-stage withdrawals and cascading adverse effects for later large load interconnection requests.",
-      "concern": "Higher project quality reduces restudies and delays.",
+      "text": "standardizing milestones and requirements for large load interconnections within a common ISO/RTO will lead to better transmission planning outcomes, and in turn, result in improved accuracy in load forecasting.",
+      "concern": "Standardized milestones improve planning and load forecasting.",
       "bins": [
         "pr:study"
       ],
@@ -128,55 +128,54 @@
     },
     {
       "id": 14,
-      "text": "standardizing milestones and requirements for large load interconnections within a common ISO/RTO will lead to better transmission planning outcomes, and in turn, result in improved accuracy in load forecasting.",
-      "concern": "Standardized milestones improve transmission planning and demand forecasting.",
+      "text": "Amazon Energy recommends that the Commission direct transmission providers to report non-confidential, aggregated data on the processing of large load interconnection request outcomes, such as withdrawal rates, success rates, and processing times.",
+      "concern": "Require aggregated public reporting on interconnection outcomes.",
       "bins": [
-        "pr:study"
+        "topic:data-transparency"
       ],
       "page": 6
     },
     {
       "id": 15,
-      "text": "Amazon Energy recommends that the Commission direct transmission providers to report non-confidential, aggregated data on the processing of large load interconnection request outcomes, such as withdrawal rates, success rates, and processing times.",
-      "concern": "Require transmission operators to report aggregated interconnection metrics.",
+      "text": "This information will allow for (i) more accurate transmission system and large load planning and development, and (ii) regulators and market participants to make more informed decisions regarding resource adequacy, load growth, and reliability.",
+      "concern": "Reported data improves planning and resource adequacy decisions.",
       "bins": [
-        "pr:study"
+        "topic:data-transparency"
       ],
       "page": 6
     },
     {
       "id": 16,
-      "text": "This information will allow for (i) more accurate transmission system and large load planning and development, and (ii) regulators and market participants to make more informed decisions regarding resource adequacy, load growth, and reliability.",
-      "concern": "Data transparency enables better planning and resource adequacy decisions.",
+      "text": "Improving the quality of large load interconnection requests through stricter criteria and milestones and enhanced visibility into the processing of large load interconnections through standardized reporting will result in market efficiencies, shorter development timelines, and lower costs for consumers.",
+      "concern": "Stricter criteria and transparency lower costs for consumers.",
       "bins": [
-        "pr:study"
+        "pr:cost"
       ],
       "page": 6
     },
     {
       "id": 17,
-      "text": "Improving the quality of large load interconnection requests through stricter criteria and milestones and enhanced visibility into the processing of large load interconnections through standardized reporting will result in market efficiencies, shorter development timelines, and lower costs for consumers.",
-      "concern": "Standardization and transparency yield efficiency and cost reductions.",
+      "text": "Amazon Energy supports co-location of large load projects.",
+      "concern": "Supports co-location of large loads with generation.",
       "bins": [
-        "pr:cost",
-        "pr:study"
+        "pr:colo"
       ],
       "page": 6
     },
     {
       "id": 18,
-      "text": "Amazon Energy supports co-location of large load projects.",
-      "concern": "Support for hybrid facilities and co-location model.",
+      "text": "Amazon Energy also recognizes there may be benefits for all ratepayers to interconnecting large loads directly to the bulk electric system in coordination with the interconnection of generation facilities.",
+      "concern": "Coordinated load and generation interconnection benefits ratepayers.",
       "bins": [
         "pr:colo",
         "aq:hybridrights"
       ],
-      "page": 6
+      "page": 7
     },
     {
       "id": 19,
-      "text": "Amazon Energy also recognizes there may be benefits for all ratepayers to interconnecting large loads directly to the bulk electric system in coordination with the interconnection of generation facilities.",
-      "concern": "Large loads coordinated with generation benefit ratepayers.",
+      "text": "creating viable pathways to allow large load customers and generators to interconnect to the bulk electric system, and to study, model, and operate with some form of interrelationship would yield benefits for the bulk electric system as a whole, including reduced administration for utilities, RTOs/ISOs, and investors.",
+      "concern": "Pathways for load and generation interrelationship reduce administration.",
       "bins": [
         "pr:colo",
         "aq:hybridrights"
@@ -185,88 +184,53 @@
     },
     {
       "id": 20,
-      "text": "creating viable pathways to allow large load customers and generators to interconnect to the bulk electric system, and to study, model, and operate with some form of interrelationship would yield benefits for the bulk electric system as a whole, including reduced administration for utilities, RTOs/ISOs, and investors.",
-      "concern": "Operational interrelationship pathways reduce administration.",
+      "text": "Amazon Energy supports solutions that provide the most flexibility to meet the needs of customers and businesses, which can include co-location.",
+      "concern": "Favors flexible interconnection options including co-location.",
       "bins": [
-        "pr:colo",
-        "aq:hybridrights"
+        "pr:flex",
+        "pr:colo"
       ],
       "page": 7
     },
     {
       "id": 21,
-      "text": "Amazon Energy supports solutions that provide the most flexibility to meet the needs of customers and businesses, which can include co-location.",
-      "concern": "Flexibility and customer optionality in interconnection models.",
-      "bins": [
-        "pr:colo",
-        "aq:hybridrights"
-      ],
-      "page": 7
-    },
-    {
-      "id": 22,
       "text": "Amazon Energy respectfully encourages the Commission to expeditiously issue an order in the pending proceeding in Docket No. AD24-11-000, which would provide the industry with much needed guidance as to the viability of large loads co-locating at generating facilities going forward.",
-      "concern": "Urgent need for regulatory clarity on load co-location.",
+      "concern": "Urges prompt guidance on co-location viability in AD24-11-000.",
       "bins": [
-        "pr:colo",
-        "aq:hybridrights"
+        "pr:colo"
       ],
       "page": 7
     }
   ],
   "bins": [
     {
-      "key": "pr:study",
-      "name": "Prospective application and streamlined studies",
+      "key": "aq:expedited",
+      "name": "Fast-track and automated processing",
       "stance": "support",
-      "description": "Amazon Energy supports major reforms to streamline large load interconnections but insists new rules apply prospectively only to avoid disrupting in-progress projects. The filer advocates fast-track processing for ready projects, AI-driven and advanced modeling tools to automate studies, standardized milestones within each ISO/RTO, and mandatory data reporting on interconnection outcomes. These changes target elimination of delays and administrative burdens while maintaining engineering rigor.",
+      "description": "Amazon Energy recommends Order No. 2023-style mechanisms to prioritize ready projects and a fast-track for high-readiness large loads. It urges the Commission to incentivize or require transmission providers to use advanced grid modeling and AI-driven analysis to speed feasibility and system impact studies, while stressing that automation supports rather than replaces engineering judgment.",
       "quote_ids": [
-        1,
-        2,
-        3,
-        4,
         5,
         6,
         7,
         8,
-        9,
-        11,
-        13,
-        14,
-        15,
-        16,
-        17
+        9
       ]
     },
     {
-      "key": "pr:cost",
-      "name": "Standardized deposits and cost efficiency",
+      "key": "aq:threshold",
+      "name": "Readiness criteria for eligibility",
       "stance": "support",
-      "description": "Amazon Energy supports applying generator-style standardized study deposits, readiness requirements, and withdrawal penalties to large loads to deter speculative projects and reduce restudies. These measures improve project quality at entry, reduce late-stage withdrawals and cascading delays, and ultimately yield lower costs for consumers and more accurate transmission planning.",
+      "description": "Amazon Energy proposes concrete readiness criteria for fast-track qualification and for deterring speculative requests, such as committed customers, secured permits, site control, secured financing or corporate commitments, and executed service or construction agreements.",
       "quote_ids": [
-        10,
-        12,
-        17
-      ]
-    },
-    {
-      "key": "pr:colo",
-      "name": "Co-location and hybrid facility pathways",
-      "stance": "support",
-      "description": "Amazon Energy supports co-location of large loads with generation facilities and hybrid interconnection models. The filer views coordinated load and generation interconnection as beneficial to ratepayers, reduces administrative burden on utilities and RTOs, and enables flexibility for customers. Regulatory clarity on co-location viability is needed urgently.",
-      "quote_ids": [
-        18,
-        19,
-        20,
-        21,
-        22
+        6,
+        12
       ]
     },
     {
       "key": "aq:deposits",
-      "name": "Standardized study deposits and readiness requirements",
+      "name": "Study deposits and withdrawal penalties",
       "stance": "support",
-      "description": "Amazon Energy endorses standardized upfront study deposits and readiness criteria (site control, permits, financing commitments, executed agreements) for large loads, mirroring generator interconnection rules. This approach filters non-viable and speculative projects early, reduces queue backlog, and improves interconnection processing efficiency.",
+      "description": "Amazon Energy endorses applying generator-style standardized study deposits, readiness requirements, and withdrawal penalties to large loads. It argues these measures deter non-viable and speculative requests and reduce cascading restudies.",
       "quote_ids": [
         10,
         12
@@ -274,43 +238,105 @@
     },
     {
       "key": "aq:hybridrights",
-      "name": "Hybrid rights and co-location flexibility",
+      "name": "Hybrid facility interconnection rights",
       "stance": "support",
-      "description": "Amazon Energy supports flexible interconnection rights for hybrid facilities (loads operating with generation at a common point) and advocates for regulatory pathways enabling loads and generators to coordinate study, modeling, and operations at the same interconnection point.",
+      "description": "Amazon Energy supports pathways for loads and generators to interconnect and to study, model, and operate with some interrelationship at a shared point. It sees coordinated hybrid interconnection as a benefit to ratepayers and the bulk electric system that reduces administration for utilities, RTOs, and ISOs.",
       "quote_ids": [
         18,
-        19,
-        20,
-        21,
-        22
+        19
       ]
     },
     {
-      "key": "aq:threshold",
-      "name": "Readiness criteria for fast-track qualification",
+      "key": "pr:study",
+      "name": "Standardized milestones within each ISO or RTO",
       "stance": "support",
-      "description": "Amazon Energy proposes specific readiness criteria for fast-track priority processing: committed customers, all necessary permits secured, site control, secured financing or corporate commitments, and executed service agreements. These criteria ensure only commercially viable projects receive expedited review.",
+      "description": "Amazon Energy supports standardized study procedures, milestones, and readiness requirements for large loads, particularly within a common ISO or RTO. It argues standardization improves processing efficiency, transmission planning, and load-forecasting accuracy.",
       "quote_ids": [
-        6
+        10,
+        11,
+        13
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Lower costs through better project quality",
+      "stance": "support",
+      "description": "Amazon Energy contends that stricter entry criteria, standardized milestones, and enhanced reporting will produce market efficiencies, shorter development timelines, and lower costs for consumers.",
+      "quote_ids": [
+        16
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Co-location of load with generation",
+      "stance": "support",
+      "description": "Amazon Energy supports co-location of large loads at generating facilities and coordinated load and generation interconnection to the bulk electric system. It urges the Commission to expeditiously issue guidance in Docket No. AD24-11-000 on the viability of co-location.",
+      "quote_ids": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Flexibility and customer optionality",
+      "stance": "support",
+      "description": "Amazon Energy favors solutions that give customers and businesses the most flexibility in how large loads interconnect, including co-location among the available options.",
+      "quote_ids": [
+        20
+      ]
+    },
+    {
+      "key": "topic:reform-support",
+      "name": "Support for timely interconnection reform",
+      "stance": "support",
+      "description": "Amazon Energy broadly supports reforms that, done correctly, connect new AI and advanced manufacturing demand quickly while strengthening grid reliability and affordability for all customers.",
+      "quote_ids": [
+        1
+      ]
+    },
+    {
+      "key": "topic:prospective-application",
+      "name": "Prospective application and grandfathering",
+      "stance": "support",
+      "description": "Amazon Energy urges that any new rules apply prospectively and not to large load requests already in progress under existing procedures. It argues developers invested in reliance on current rules and that retroactive requirements could upend project economics, cause delay, or force withdrawals, so reforms should include grandfathering or transition mechanisms.",
+      "quote_ids": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "topic:data-transparency",
+      "name": "Aggregated reporting on interconnection outcomes",
+      "stance": "support",
+      "description": "Amazon Energy recommends that transmission providers report non-confidential, aggregated data on large load interconnection outcomes, including withdrawal rates, success rates, and processing times, to support more accurate planning and better resource-adequacy and reliability decisions.",
+      "quote_ids": [
+        14,
+        15
       ]
     }
   ],
   "lenses": {
     "aq": [
+      "expedited",
+      "threshold",
       "deposits",
-      "hybridrights",
-      "threshold"
+      "hybridrights"
     ],
     "pr": [
       "study",
       "cost",
-      "colo"
+      "colo",
+      "flex"
     ],
     "rg": []
   },
   "provenance": {
-    "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }
