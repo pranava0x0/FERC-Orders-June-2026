@@ -14,7 +14,8 @@
         "pr:study",
         "pr:colo",
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
         "pr:study",
         "pr:flex",
         "topic:tariff-reform"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
         "aq:jurisdiction",
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -44,7 +47,8 @@
         "pr:study",
         "aq:jointstudy",
         "topic:study-standards"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
       "bins": [
         "pr:flex",
         "topic:permanent-service"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -63,7 +68,8 @@
         "pr:flex",
         "pr:colo",
         "pr:proximate"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -73,7 +79,8 @@
         "pr:flex",
         "pr:colo",
         "pr:proximate"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 8,
@@ -82,7 +89,8 @@
       "bins": [
         "pr:flex",
         "topic:non-firm-availability"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 9,
@@ -92,7 +100,8 @@
         "rg:pjm",
         "rg:spp",
         "topic:reform-scope"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 10,
@@ -102,7 +111,8 @@
         "rg:spp",
         "topic:permanent-service",
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 11,
@@ -112,7 +122,8 @@
         "rg:pjm",
         "pr:study",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 12,
@@ -122,7 +133,8 @@
         "pr:study",
         "pr:cost",
         "topic:utility-incentives"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 13,
@@ -132,7 +144,8 @@
         "rg:pjm",
         "pr:proximate",
         "topic:siting-incentives"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 14,
@@ -142,7 +155,8 @@
         "pr:proximate",
         "pr:colo",
         "topic:capacity-tags"
-      ]
+      ],
+      "page": 13
     }
   ],
   "bins": [

@@ -10,121 +10,204 @@
       "id": 1,
       "text": "The Commission must assert jurisdiction over the interconnection of large loads and establish federal requirements for the interconnections of large loads because that step is necessary to ensure that the bulk power system is capable of reliably and affordably integrating large loads.",
       "concern": "FERC must assert jurisdiction over large load interconnection",
-      "bins": ["aq:jurisdiction", "pr:study"]
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ],
+      "page": 7
     },
     {
       "id": 2,
       "text": "The Commission has ample authority to assert jurisdiction over interconnection of large loads to the transmission system through its authority over transmission rates and, in the alternative, as a practice affecting transmission rates.",
       "concern": "FPA authority supports jurisdiction over large load interconnection rates",
-      "bins": ["aq:jurisdiction"]
+      "bins": [
+        "aq:jurisdiction"
+      ],
+      "page": 8
     },
     {
       "id": 3,
       "text": "Bright-line applicability rules are necessary to ensure developers have sufficient certainty regarding when FERC vs. state jurisdictional interconnection procedures will apply.",
       "concern": "Bright-line MW and voltage thresholds are needed for jurisdictional clarity",
-      "bins": ["aq:threshold", "aq:jurisdiction"]
+      "bins": [
+        "aq:threshold",
+        "aq:jurisdiction"
+      ],
+      "page": 12
     },
     {
       "id": 4,
       "text": "A higher threshold, such as 75-100 MW would be consistent with Eolian's project development experience.",
       "concern": "Eolian recommends a 75 to 100 MW threshold rather than 20 MW",
-      "bins": ["aq:threshold"]
+      "bins": [
+        "aq:threshold"
+      ],
+      "page": 13
     },
     {
       "id": 5,
       "text": "Consistent with ANOPR Principles Three, Five, and Six, integrated joint study of hybrid load and generation facilities based on requested withdrawal and injection rights is critical to enabling rapid, affordable interconnection of large loads and hybrids.",
       "concern": "Joint study of hybrid generation and load based on requested rights is essential",
-      "bins": ["aq:jointstudy", "pr:study", "pr:colo"]
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:colo"
+      ],
+      "page": 16
     },
     {
       "id": 6,
       "text": "The load and generation components of a hybrid facility are no different and would be separately subject to such contingency studies under a joint study approach.",
       "concern": "Joint study still applies standard contingency analysis to each hybrid component separately",
-      "bins": ["aq:jointstudy", "pr:study"]
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ],
+      "page": 18
     },
     {
       "id": 7,
       "text": "Operating limits can be enforced through physical system protection and control equipment, through contractual and legal tariff obligations to obey dispatch instructions, and through FERC and NERC enforcement actions.",
       "concern": "Multiple enforcement mechanisms make hybrid operating limits reliable",
-      "bins": ["aq:hybridrights", "pr:flex"]
+      "bins": [
+        "aq:hybridrights",
+        "pr:flex"
+      ],
+      "page": 20
     },
     {
       "id": 8,
       "text": "Taken together, these examples clearly demonstrate that operating limits on hybrid facilities' net injections and withdrawals to and from the grid can be safely enforced, and therefore assigned based on the amounts requested, and not necessarily their nameplate capabilities, in such cases where such requested injections and withdrawals are below the amount of nameplate generation and load respectively.",
       "concern": "Real-world precedents prove operating limits on hybrid facilities can be safely enforced",
-      "bins": ["aq:hybridrights", "aq:protection", "pr:flex"]
+      "bins": [
+        "aq:hybridrights",
+        "aq:protection",
+        "pr:flex"
+      ],
+      "page": 22
     },
     {
       "id": 9,
       "text": "We urge the Commission to set standards that allow for configurations to flexibly navigate commercial and local regulatory considerations while adhering to demonstrable de-minimis impacts on the transmission system and thereby qualifying for expedited interconnection.",
       "concern": "Hybrid facility definition should use de-minimis impact standard rather than rigid co-location requirement",
-      "bins": ["aq:hybridrights", "pr:colo", "pr:proximate"]
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo",
+        "pr:proximate"
+      ],
+      "page": 25
     },
     {
       "id": 10,
       "text": "The establishment of a non-firm network transmission service tier should be a core part of any final rule, as such a service tier is integral to enabling transmission providers to expedite interconnection for curtailable large loads and curtailable and dispatchable hybrid facilities.",
       "concern": "A non-firm network transmission service class is required to enable expedited interconnection",
-      "bins": ["aq:expedited", "pr:flex", "pr:study"]
+      "bins": [
+        "aq:expedited",
+        "pr:flex",
+        "pr:study"
+      ],
+      "page": 27
     },
     {
       "id": 11,
       "text": "just as an express checkout line appropriately rewards those whose needs can be addressed more quickly with faster service, it is appropriate to study curtailable and dispatchable facilities on a separate, streamlined basis due to their lesser impacts on the broader system",
       "concern": "Curtailable and dispatchable facilities merit separate streamlined study because they cause fewer system impacts",
-      "bins": ["aq:expedited", "pr:flex", "pr:study"]
+      "bins": [
+        "aq:expedited",
+        "pr:flex",
+        "pr:study"
+      ],
+      "page": 26
     },
     {
       "id": 12,
       "text": "the record provides a better path to achieving this goal: Transmission Security Commitments to ensure that large load customers, in aggregate, will contribute their fair share to network upgrade costs via rolled-in pricing.",
       "concern": "Transmission Security Commitments with rolled-in pricing are a better alternative to direct cost assignment",
-      "bins": ["aq:upgradecost", "pr:cost"]
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ],
+      "page": 30
     },
     {
       "id": 13,
       "text": "FERC could avoid repeating the problems that have plagued generator interconnection queues through an approach that provides greater up-front cost certainty to interconnection customers, which is the single most powerful tool for reducing speculative and duplicative requests, study complexity, and re-studies.",
       "concern": "Up-front cost certainty through rolled-in pricing prevents the queue delays seen in generator interconnection",
-      "bins": ["aq:upgradecost", "aq:deposits", "pr:cost", "pr:study"]
+      "bins": [
+        "aq:upgradecost",
+        "aq:deposits",
+        "pr:cost",
+        "pr:study"
+      ],
+      "page": 30
     },
     {
       "id": 14,
       "text": "As a developer of FERC-jurisdictional generation projects, Eolian confirms that under a direct assignment regime, generation developers have no choice but to use the interconnection process as a price discovery mechanism.",
       "concern": "Direct cost assignment forces speculative queue behavior because costs cannot be known in advance",
-      "bins": ["aq:upgradecost", "pr:cost"]
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ],
+      "page": 35
     },
     {
       "id": 15,
       "text": "such cost certainty will lower overall system costs by reducing risk for project developers",
       "concern": "Cost certainty from rolled-in pricing reduces financing risk and lowers overall project costs",
-      "bins": ["aq:upgradecost", "pr:cost"]
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ],
+      "page": 36
     },
     {
       "id": 16,
       "text": "adopting hybrid-specific rules are a consensus, no-regrets reform that allows the Commission to tackle the lowest hanging fruit of the large load growth challenge.",
       "concern": "Hybrid-resource rules have broad stakeholder support and should be adopted even without full jurisdiction",
-      "bins": ["aq:hybridrights", "pr:study", "pr:flex"]
+      "bins": [
+        "aq:hybridrights",
+        "pr:study",
+        "pr:flex"
+      ],
+      "page": 43
     },
     {
       "id": 17,
       "text": "Even if the Commission elects only to provide for expedited interconnection for hybrid facilities rather than providing for a robust implementation of the ANOPR that establishes a standard interconnection process for new large load customers, the Commission should not apply the cost causation framework set forth in principle 8, nor the status quo cost causation framework for generator interconnection.",
       "concern": "Direct cost assignment should be avoided even in a hybrid-only rule",
-      "bins": ["aq:upgradecost", "pr:cost"]
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ],
+      "page": 48
     },
     {
       "id": 18,
       "text": "Eolian supports EDF's request to allow IPPs to make direct sales to large loads while maintaining PUHCA exemptions.",
       "concern": "A blanket PUHCA waiver would remove a regulatory barrier for IPPs serving large loads",
-      "bins": ["topic:puhca-waiver"]
+      "bins": [
+        "topic:puhca-waiver"
+      ],
+      "page": null
     },
     {
       "id": 19,
       "text": "the Commission should be clear that the developer option to build applies to all interconnection facilities and stand-alone network upgrades, and require facilities to be built to standards and adhere to applicable NERC requirements.",
       "concern": "Interconnection customers should have a clear option to build all interconnection facilities and network upgrades",
-      "bins": ["topic:option-to-build"]
+      "bins": [
+        "topic:option-to-build"
+      ],
+      "page": 50
     },
     {
       "id": 20,
       "text": "The Commission should take the same approach here for hybrid facilities. While a hybrid facility may involve net consumption such that the opportunity to receive the nodal rather than zonal price may offer a large load customer a path to purchase energy at nodal rather than zonal prices, this opportunity promotes the efficient location and participation of large load customers.",
       "concern": "Hybrid facility settlement should occur at the nodal LMP to prevent arbitrage and promote efficient siting",
-      "bins": ["topic:hybrid-settlement"]
+      "bins": [
+        "topic:hybrid-settlement"
+      ],
+      "page": 52
     }
   ],
   "bins": [
@@ -133,117 +216,191 @@
       "name": "FERC authority over large loads",
       "stance": "support",
       "description": "Eolian argues FERC has ample authority under its transmission rate jurisdiction and its 'affecting' jurisdiction to regulate large load interconnection, citing the D.C. Circuit's NextEra decision as directly analogous. If the Commission declines full jurisdiction, it retains clear authority over hybrid resources through its established generator interconnection framework.",
-      "quote_ids": [1, 2, 3]
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "key": "aq:threshold",
       "name": "MW and voltage applicability threshold",
       "stance": "support",
       "description": "Eolian supports bright-line capacity and voltage thresholds over the seven-factor test, which it views as too slow and litigable to provide investment certainty. Based on its own project experience, Eolian recommends 75 to 100 MW as a capacity floor, combined with a voltage threshold above 69 kV.",
-      "quote_ids": [3, 4]
+      "quote_ids": [
+        3,
+        4
+      ]
     },
     {
       "key": "aq:jointstudy",
       "name": "Integrated joint study of hybrids",
       "stance": "support",
       "description": "Eolian defends the feasibility of integrated joint study of hybrid generation and load, rebutting concerns from Constellation and Entergy. It clarifies that joint study means studying both components together within the same model, including contingency events for each component separately, not merely studying the net of the two.",
-      "quote_ids": [5, 6]
+      "quote_ids": [
+        5,
+        6
+      ]
     },
     {
       "key": "aq:hybridrights",
       "name": "Hybrid facility interconnection rights",
       "stance": "support",
       "description": "Eolian supports assigning interconnection rights based on a hybrid facility's requested injection and withdrawal operating limits, backed by physical protection schemes, contractual obligations, and FERC/NERC enforcement. It urges a configuration-neutral definition of hybrid facilities tied to demonstrable de-minimis transmission impacts rather than a rigid same-point-of-interconnection requirement.",
-      "quote_ids": [7, 8, 9, 16]
+      "quote_ids": [
+        7,
+        8,
+        9,
+        16
+      ]
     },
     {
       "key": "aq:protection",
       "name": "Operating limit enforcement mechanisms",
       "stance": "support",
       "description": "Eolian draws on precedents including ATC's paper-mill contracts and MISO's surplus interconnection service to demonstrate that operating limits on hybrid net injections and withdrawals can be reliably enforced through protection equipment and contractual commitments.",
-      "quote_ids": [8]
+      "quote_ids": [
+        8
+      ]
     },
     {
       "key": "aq:expedited",
       "name": "Expedited study for curtailable loads",
       "stance": "support",
       "description": "Eolian strongly supports expedited, streamlined study for curtailable and dispatchable facilities, noting broad record support from large loads, developers, utilities, and states. It frames expedited study as appropriate because curtailable facilities cause fewer system impacts and can be studied outside the standard queue without triggering restudies.",
-      "quote_ids": [10, 11]
+      "quote_ids": [
+        10,
+        11
+      ]
     },
     {
       "key": "aq:deposits",
       "name": "Up-front cost certainty over deposits",
       "stance": "support",
       "description": "Eolian links up-front cost certainty to queue efficiency, arguing it is the single most powerful tool for reducing speculative withdrawals and restudies. It favors Transmission Security Commitments over facility-specific deposit or direct assignment regimes that replicate the uncertainty plaguing generator interconnection.",
-      "quote_ids": [13]
+      "quote_ids": [
+        13
+      ]
     },
     {
       "key": "aq:upgradecost",
       "name": "Rolled-in pricing over direct assignment",
       "stance": "oppose",
       "description": "Eolian opposes direct assignment of network upgrade costs and ANOPR Principle 8's cost causation framework. It argues that Transmission Security Commitments paired with rolled-in pricing protect existing customers from stranded costs while providing developers the cost certainty needed to avoid speculative queue behavior, whether in a comprehensive rule or a hybrid-only rule.",
-      "quote_ids": [12, 13, 14, 15, 17]
+      "quote_ids": [
+        12,
+        13,
+        14,
+        15,
+        17
+      ]
     },
     {
       "key": "pr:study",
       "name": "Streamlined serial study process",
       "stance": "support",
       "description": "Eolian calls for a single, serial, integrated interconnection study for hybrid facilities studied together based on their requested operating limits, completed within a 90-day target. It argues that current pro forma procedures lack any mechanism for studying paired generation and load together, which must change through a Commission rule.",
-      "quote_ids": [1, 5, 6, 10, 11, 13, 16]
+      "quote_ids": [
+        1,
+        5,
+        6,
+        10,
+        11,
+        13,
+        16
+      ]
     },
     {
       "key": "pr:cost",
       "name": "Rolled-in pricing with security commitment",
       "stance": "support",
       "description": "Eolian supports a Transmission Security Commitment framework as a substitute for direct cost assignment, giving developers predictable rolled-in transmission rates while protecting existing customers through aggregate security sized to network upgrade exposure. It frames cost certainty as critical to enabling bridge solutions and financing for flexible hybrid facilities.",
-      "quote_ids": [12, 13, 14, 15, 17]
+      "quote_ids": [
+        12,
+        13,
+        14,
+        15,
+        17
+      ]
     },
     {
       "key": "pr:colo",
       "name": "Co-location standard for hybrids",
       "stance": "support",
       "description": "Eolian supports a configuration-neutral co-location standard based on de-minimis loop flows (no more than 3% through ties to the network and 1% over other transmission facilities) rather than a same-point-of-interconnection requirement, which it argues would exclude projects with no reliability justification.",
-      "quote_ids": [5, 9]
+      "quote_ids": [
+        5,
+        9
+      ]
     },
     {
       "key": "pr:flex",
       "name": "Flexibility rewarded with speed-to-power",
       "stance": "support",
       "description": "Eolian argues that curtailability and dispatchability should be rewarded with faster interconnection, because flexible facilities cause fewer system impacts and can be safely integrated without triggering broader queue restudies. It supports non-firm transmission service as the operational framework that makes flexibility commitments meaningful.",
-      "quote_ids": [7, 8, 10, 11, 16]
+      "quote_ids": [
+        7,
+        8,
+        10,
+        11,
+        16
+      ]
     },
     {
       "key": "pr:proximate",
       "name": "Electrically proximate siting standard",
       "stance": "support",
       "description": "Eolian endorses a technical de-minimis loop flow standard for defining electrical proximity of hybrid components, rather than rigid physical adjacency, to allow projects to navigate land, retail law, and commercial constraints while still qualifying for expedited interconnection.",
-      "quote_ids": [9]
+      "quote_ids": [
+        9
+      ]
     },
     {
       "key": "topic:puhca-waiver",
       "name": "Blanket PUHCA waiver for IPPs",
       "stance": "support",
       "description": "Eolian supports a blanket PUHCA waiver allowing exempt wholesale generators to make direct sales to large load customers where state law permits, eliminating the need for company-specific declaratory orders or expensive power-sale sleeves that delay hybrid arrangements.",
-      "quote_ids": [18]
+      "quote_ids": [
+        18
+      ]
     },
     {
       "key": "topic:option-to-build",
       "name": "Customer option to build upgrades",
       "stance": "support",
       "description": "Eolian supports extending the generator option to build to large load and hybrid interconnection customers, with clear standards covering all interconnection facilities and stand-alone network upgrades. It warns against utility-discretion requirements that would make the option a practical nullity.",
-      "quote_ids": [19]
+      "quote_ids": [
+        19
+      ]
     },
     {
       "key": "topic:hybrid-settlement",
       "name": "Nodal settlement for hybrid facilities",
       "stance": "support",
       "description": "Eolian urges the Commission to require nodal LMP settlement for both the load and generation components of hybrid facilities, consistent with Order No. 841's approach for storage, to prevent zonal-to-nodal arbitrage and simplify market participation.",
-      "quote_ids": [20]
+      "quote_ids": [
+        20
+      ]
     }
   ],
   "lenses": {
-    "aq": ["jurisdiction", "threshold", "jointstudy", "hybridrights", "protection", "expedited", "deposits", "upgradecost"],
-    "pr": ["study", "cost", "colo", "flex", "proximate"],
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "hybridrights",
+      "protection",
+      "expedited",
+      "deposits",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
     "rg": []
   },
   "provenance": {

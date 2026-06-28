@@ -12,7 +12,8 @@
       "concern": "FERC assertion of jurisdiction over traditionally state-jurisdictional load processes risks delay rather than speed",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "Retail electric service agreements are state-jurisdictional regardless of voltage level",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
         "aq:jurisdiction",
         "aq:protection",
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "concern": "AES does not see a need for sweeping changes to the customer-pays cost assignment model",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
         "aq:deposits",
         "pr:cost",
         "rg:pjm"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
         "aq:hybridrights",
         "aq:protection",
         "pr:colo"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 9,
@@ -86,7 +94,8 @@
         "aq:hybridrights",
         "pr:colo",
         "pr:flex"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 10,
@@ -96,7 +105,8 @@
         "aq:hybridrights",
         "pr:colo",
         "pr:flex"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 11,
@@ -105,7 +115,8 @@
       "bins": [
         "pr:colo",
         "topic:existing-gen-retirement"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 12,
@@ -115,7 +126,8 @@
         "pr:colo",
         "pr:study",
         "topic:existing-gen-retirement"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 13,
@@ -124,7 +136,8 @@
       "bins": [
         "aq:expedited",
         "topic:all-of-above-supply"
-      ]
+      ],
+      "page": 7
     }
   ],
   "bins": [

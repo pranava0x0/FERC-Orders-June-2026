@@ -12,7 +12,8 @@
       "concern": "EEI expresses general support for the ANOPR's goals.",
       "bins": [
         "topic:general-support"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "EEI argues the 20 MW default threshold is too low and should be raised to at least 100 MW.",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "aq:threshold",
         "topic:reliability-safeguards"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "bins": [
         "aq:deposits",
         "pr:study"
-      ]
+      ],
+      "page": 20
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "bins": [
         "aq:deposits",
         "pr:study"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 10,
@@ -91,7 +100,8 @@
       "concern": "EEI raises reliability concerns about extending the option-to-build right to large load customers.",
       "bins": [
         "topic:reliability-safeguards"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 11,
@@ -99,7 +109,8 @@
       "concern": "Any option-to-build for large loads must be narrowly scoped and backed by strong reliability safeguards.",
       "bins": [
         "topic:reliability-safeguards"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 12,
@@ -108,7 +119,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:reliability-safeguards"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 13,
@@ -116,7 +128,8 @@
       "concern": "Retail load interconnection is state-regulated and FERC's jurisdiction over it is not established.",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "concern": "Asserting FERC jurisdiction over retail load interconnection could violate the major questions doctrine.",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 28
     },
     {
       "id": 15,
@@ -132,7 +146,8 @@
       "concern": "Existing state-approved tariffs and bilateral agreements should be preserved when new federal rules take effect.",
       "bins": [
         "topic:preserve-existing-arrangements"
-      ]
+      ],
+      "page": 35
     },
     {
       "id": 16,
@@ -142,7 +157,8 @@
         "topic:preserve-existing-arrangements",
         "rg:spp",
         "rg:pjm"
-      ]
+      ],
+      "page": 36
     },
     {
       "id": 17,
@@ -151,7 +167,8 @@
       "bins": [
         "aq:expedited",
         "pr:proximate"
-      ]
+      ],
+      "page": 18
     }
   ],
   "bins": [

@@ -10,37 +10,55 @@
       "id": 1,
       "text": "The agencies cannot legally approve any technical permits, air quality modifications, or infrastructure taps for this project until this mandatory review is completed.",
       "concern": "Demands a halt to federal permits until Section 106 historic preservation review is finished",
-      "bins": ["topic:nhpa-section-106"]
+      "bins": [
+        "topic:nhpa-section-106"
+      ],
+      "page": 1
     },
     {
       "id": 2,
       "text": "FERC Jurisdiction: The physical tap and delivery interconnect on the interstate Ruby Pipeline require federal regulatory approval.",
       "concern": "Asserts FERC jurisdiction over the project via the required Ruby Pipeline interconnection",
-      "bins": ["topic:federal-nexus"]
+      "bins": [
+        "topic:federal-nexus"
+      ],
+      "page": 1
     },
     {
       "id": 3,
       "text": "The footprint is culturally continuous with the sacred ancestral lands of the Northwestern Band of the Shoshone Nation and the broader Bear River Massacre landscape, containing known and unmapped Native American artifacts.",
       "concern": "Warns that the project area contains Shoshone sacred and archaeological resources",
-      "bins": ["topic:tribal-consultation"]
+      "bins": [
+        "topic:tribal-consultation"
+      ],
+      "page": 1
     },
     {
       "id": 4,
       "text": "Burning natural gas to generate 9 gigawatts of power will result in a projected 64% spike in Utah's entire carbon emissions, dumping massive particulate pollution directly over regional communities.",
       "concern": "Flags severe air quality and climate impacts from on-site gas generation",
-      "bins": ["topic:environmental-impact"]
+      "bins": [
+        "topic:environmental-impact"
+      ],
+      "page": 2
     },
     {
       "id": 5,
       "text": "Initiate formal, government-to-government consultation with the Northwestern Band of the Shoshone Nation under Executive Order 13175, independent of any state-level MIDA proceedings.",
       "concern": "Requests federally separate tribal consultation not deferred to state authority",
-      "bins": ["topic:tribal-consultation"]
+      "bins": [
+        "topic:tribal-consultation"
+      ],
+      "page": 2
     },
     {
       "id": 6,
       "text": "No federal agency may legally bypass these requirements by deferring to Utah's Military Installation Development Authority (MIDA), as state-level zoning overrides do not exempt federal agencies from their statutory obligations under the National Historic Preservation Act.",
       "concern": "Argues that state zoning cannot substitute for federal NHPA compliance",
-      "bins": ["topic:nhpa-section-106"]
+      "bins": [
+        "topic:nhpa-section-106"
+      ],
+      "page": 2
     }
   ],
   "bins": [
@@ -49,28 +67,38 @@
       "name": "Section 106 Review Required",
       "stance": "support",
       "description": "The filer demands immediate invocation of the Section 106 process under the National Historic Preservation Act before any federal permits are issued. The filer argues that state-level zoning authority cannot substitute for this mandatory federal review.",
-      "quote_ids": [1, 6]
+      "quote_ids": [
+        1,
+        6
+      ]
     },
     {
       "key": "topic:federal-nexus",
       "name": "FERC Pipeline Tap Triggers Review",
       "stance": "neutral",
       "description": "The filer identifies the required physical interconnection to the interstate Ruby Pipeline as the primary federal nexus that brings the Stratos project under FERC jurisdiction and triggers Section 106 obligations.",
-      "quote_ids": [2]
+      "quote_ids": [
+        2
+      ]
     },
     {
       "key": "topic:tribal-consultation",
       "name": "Shoshone Tribal Consultation Needed",
       "stance": "support",
       "description": "The filer argues the project area is culturally continuous with Northwestern Band of the Shoshone Nation ancestral lands and contains known Native American artifacts. The filer demands formal government-to-government consultation under Executive Order 13175, separate from any state proceedings.",
-      "quote_ids": [3, 5]
+      "quote_ids": [
+        3,
+        5
+      ]
     },
     {
       "key": "topic:environmental-impact",
       "name": "Air Quality and Climate Concerns",
       "stance": "oppose",
       "description": "The filer warns that on-site burning of natural gas to generate 9 gigawatts would cause a projected 64% spike in Utah's total carbon emissions and create particulate pollution affecting regional communities.",
-      "quote_ids": [4]
+      "quote_ids": [
+        4
+      ]
     }
   ],
   "lenses": {

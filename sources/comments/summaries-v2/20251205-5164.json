@@ -13,7 +13,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:evidence-standard"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
         "rg:pjm",
         "rg:miso",
         "topic:evidence-standard"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
         "aq:jurisdiction",
         "rg:miso",
         "topic:evidence-standard"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 4,
@@ -44,7 +47,8 @@
         "aq:jurisdiction",
         "pr:study",
         "topic:evidence-standard"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 5,
@@ -54,7 +58,8 @@
         "aq:expedited",
         "pr:study",
         "topic:backstop-role"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 6,
@@ -64,7 +69,8 @@
         "aq:expedited",
         "pr:study",
         "topic:backstop-role"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 7,
@@ -73,7 +79,8 @@
       "bins": [
         "pr:study",
         "topic:queue-design"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 8,
@@ -82,7 +89,8 @@
       "bins": [
         "pr:study",
         "topic:queue-design"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 9,
@@ -90,7 +98,8 @@
       "concern": "20 MW threshold is too low and would capture speculative projects",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "concern": "broad commenter consensus supports a 75 to 100 MW threshold",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
         "aq:hybridrights",
         "pr:study",
         "topic:reliability"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 12,
@@ -119,7 +130,8 @@
         "aq:expedited",
         "pr:study",
         "topic:reliability"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 13,
@@ -129,7 +141,8 @@
         "aq:jurisdiction",
         "pr:flex",
         "topic:state-retail-authority"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 14,
@@ -138,7 +151,8 @@
       "bins": [
         "aq:protection",
         "topic:grandfathering"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 15,
@@ -147,7 +161,8 @@
       "bins": [
         "aq:protection",
         "topic:grandfathering"
-      ]
+      ],
+      "page": 16
     }
   ],
   "bins": [

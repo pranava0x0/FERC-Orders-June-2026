@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "topic:connection-queue-reform"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
         "pr:study",
         "aq:deposits",
         "topic:connection-queue-reform"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 3,
@@ -33,7 +35,8 @@
         "aq:deposits",
         "pr:cost",
         "topic:connection-queue-reform"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "bins": [
         "pr:flex",
         "topic:demand-side-flexibility"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 5,
@@ -52,7 +56,8 @@
         "pr:flex",
         "rg:pjm",
         "topic:demand-side-flexibility"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -62,7 +67,8 @@
         "pr:cost",
         "aq:threshold",
         "topic:cost-allocation"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -72,7 +78,8 @@
         "pr:cost",
         "rg:pjm",
         "topic:cost-allocation"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -81,7 +88,8 @@
       "bins": [
         "pr:cost",
         "topic:cost-allocation"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -91,7 +99,8 @@
         "pr:cost",
         "aq:threshold",
         "topic:cost-allocation"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 10,
@@ -102,7 +111,8 @@
         "pr:flex",
         "aq:jointstudy",
         "topic:contract-design"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 11,
@@ -112,7 +122,8 @@
         "pr:colo",
         "rg:pjm",
         "topic:colocation-complexity"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 12,
@@ -122,7 +133,8 @@
         "pr:proximate",
         "pr:colo",
         "topic:byog-policy"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 13,
@@ -133,7 +145,8 @@
         "pr:cost",
         "pr:flex",
         "topic:integrated-reform"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 14,
@@ -142,7 +155,8 @@
       "bins": [
         "pr:study",
         "topic:integrated-reform"
-      ]
+      ],
+      "page": 11
     }
   ],
   "bins": [

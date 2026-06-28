@@ -13,7 +13,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
         "pr:flex",
         "pr:colo",
         "aq:expedited"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "bins": [
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "pr:flex",
         "rg:spp"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -50,7 +54,8 @@
       "bins": [
         "pr:flex",
         "pr:colo"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "concern": "Distributed residential resources can meet large load capacity needs",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "bins": [
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
       "bins": [
         "pr:study",
         "pr:colo"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -85,7 +93,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -94,7 +103,8 @@
       "bins": [
         "pr:colo",
         "pr:flex"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 11,
@@ -104,7 +114,8 @@
         "pr:flex",
         "pr:colo",
         "aq:expedited"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 12,
@@ -113,7 +124,8 @@
       "bins": [
         "pr:colo",
         "pr:flex"
-      ]
+      ],
+      "page": 7
     }
   ],
   "bins": [

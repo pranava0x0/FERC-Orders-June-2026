@@ -12,7 +12,8 @@
       "concern": "FERC jurisdiction over state retail load interconnection",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "North Carolina has strong state-level regulatory oversight",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Seven-factor test risks redefining retail connections as federal",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "20 MW threshold is problematic",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "FERC must preserve bright jurisdictional line for state control",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "NCUC already adapts to large-load forecasts including data centers",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "NCUC requires semiannual reporting on large-load additions",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "Existing state framework effectively manages large loads",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -76,7 +84,8 @@
       "concern": "Support for federal-state coordination on reliability within jurisdictional limits",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 4
     }
   ],
   "bins": [

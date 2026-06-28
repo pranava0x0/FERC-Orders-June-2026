@@ -12,7 +12,8 @@
       "concern": "Load flexibility benefits grid utilization and rate pressure.",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Current service models do not distinguish flexible from inflexible loads.",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Recent RTO reforms address flexibility but are incomplete.",
       "bins": [
         "topic:rto-reforms"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
         "pr:flex",
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "topic:thermal-storage",
         "rg:spp"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "bins": [
         "pr:cost",
         "rg:spp"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
         "rg:spp",
         "pr:flex",
         "topic:dnr-barrier"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -75,7 +82,8 @@
       "bins": [
         "topic:dnr-barrier",
         "pr:flex"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -84,7 +92,8 @@
       "bins": [
         "pr:cost",
         "topic:cost-causation"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -94,7 +103,8 @@
         "rg:miso",
         "rg:spp",
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -103,7 +113,8 @@
       "bins": [
         "rg:spp",
         "topic:chills-limits"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 12,
@@ -113,7 +124,8 @@
         "rg:spp",
         "pr:cost",
         "topic:chills-limits"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 13,
@@ -122,7 +134,8 @@
       "bins": [
         "pr:cost",
         "topic:cost-causation"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 14,
@@ -132,7 +145,8 @@
         "rg:spp",
         "topic:pals",
         "pr:flex"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 15,
@@ -141,7 +155,8 @@
       "bins": [
         "topic:pals",
         "pr:flex"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 16,
@@ -150,7 +165,8 @@
       "bins": [
         "topic:pals",
         "pr:cost"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 17,
@@ -159,7 +175,8 @@
       "bins": [
         "pr:flex",
         "topic:ferc-reco"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 18,
@@ -168,7 +185,8 @@
       "bins": [
         "pr:cost",
         "topic:ferc-reco"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 19,
@@ -177,7 +195,8 @@
       "bins": [
         "pr:study",
         "topic:ferc-reco"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 20,
@@ -186,7 +205,8 @@
       "bins": [
         "pr:study",
         "topic:system-benefits"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 21,
@@ -195,7 +215,8 @@
       "bins": [
         "pr:flex",
         "topic:framework-design"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 22,
@@ -205,7 +226,8 @@
         "topic:pals",
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 23,
@@ -215,7 +237,8 @@
         "pr:flex",
         "pr:cost",
         "topic:national-requirement"
-      ]
+      ],
+      "page": 10
     }
   ],
   "bins": [

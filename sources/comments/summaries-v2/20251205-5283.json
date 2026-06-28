@@ -10,37 +10,59 @@
       "id": 1,
       "text": "RWECE supports such an \"entry fee\" concept for its potential to provide certainty to project developers, both load and hybrid facilities (\"LAHF\") and generation, and avoid projects which seek to identify low-cost interconnection locations but are rarely constructed, as AEP describes.",
       "concern": "RWECE endorses an entry fee to give developers cost certainty and deter speculative interconnection requests",
-      "bins": ["pr:cost", "aq:upgradecost"]
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ],
+      "page": 2
     },
     {
       "id": 2,
       "text": "Implementing new interconnection mechanisms quickly is important as well.",
       "concern": "Speed of implementation matters alongside the substance of reform",
-      "bins": ["pr:study"]
+      "bins": [
+        "pr:study"
+      ],
+      "page": 2
     },
     {
       "id": 3,
       "text": "the \"entry fee\" proposal that has been developed by Southwest Power Pool, Inc. (\"SPP\") took several years to be developed and filed at FERC, and is currently pending FERC approval.",
       "concern": "SPP's entry fee took years to develop and still awaits FERC approval, illustrating reform delays",
-      "bins": ["rg:spp", "pr:cost"]
+      "bins": [
+        "rg:spp",
+        "pr:cost"
+      ],
+      "page": 2
     },
     {
       "id": 4,
       "text": "RWECE believes that solutions which require more than 4 years to complete do not address the issues identified in the ANOPR.",
       "concern": "Multi-year reform timelines are too slow to meet the ANOPR's acceleration goals",
-      "bins": ["pr:study"]
+      "bins": [
+        "pr:study"
+      ],
+      "page": 2
     },
     {
       "id": 5,
       "text": "solutions, including the crediting mechanism methodology identified in Principle #8 of the ANOPR, and which RWECE supported in its initial comments, can and should be implemented much faster than four years to meet the objective of this acceleration initiative.",
       "concern": "The Principle 8 crediting mechanism should be deployed quickly as a near-term fix",
-      "bins": ["pr:cost", "aq:upgradecost"]
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ],
+      "page": 3
     },
     {
       "id": 6,
       "text": "For the longer term, the crediting mechanism should be replaced with an \"entry fee\" concept, which provides certainty and reduced risks for LAHF and generation participants.",
       "concern": "An entry fee should replace the crediting mechanism over the longer term to reduce cost risk for all developer types",
-      "bins": ["pr:cost", "aq:upgradecost"]
+      "bins": [
+        "pr:cost",
+        "aq:upgradecost"
+      ],
+      "page": 3
     }
   ],
   "bins": [
@@ -49,34 +71,55 @@
       "name": "Entry Fee for Cost Certainty",
       "stance": "support",
       "description": "RWECE supports AEP's entry fee model because it gives developers -- both load/hybrid and generation -- firm cost information before they commit to an interconnection request. The filing calls for a two-phase approach: fast deployment of the Principle 8 crediting mechanism now, then replacement with an entry fee over the longer term.",
-      "quote_ids": [1, 3, 5, 6]
+      "quote_ids": [
+        1,
+        3,
+        5,
+        6
+      ]
     },
     {
       "key": "pr:study",
       "name": "Faster Reform Implementation",
       "stance": "support",
       "description": "RWECE argues that reform timelines exceeding four years fail to meet the ANOPR's acceleration goals. It cites SPP's consolidated planning process as a cautionary example and calls for near-term solutions to be adopted far more quickly.",
-      "quote_ids": [2, 4]
+      "quote_ids": [
+        2,
+        4
+      ]
     },
     {
       "key": "aq:upgradecost",
       "name": "Network Upgrade Cost Uncertainty",
       "stance": "support",
       "description": "RWECE agrees with AEP that network upgrade cost uncertainty is a core problem driving speculative interconnection requests and impeding timely project completion. The entry fee concept and the near-term crediting mechanism are both framed as ways to reduce that uncertainty.",
-      "quote_ids": [1, 5, 6]
+      "quote_ids": [
+        1,
+        5,
+        6
+      ]
     },
     {
       "key": "rg:spp",
       "name": "SPP Entry Fee as Cautionary Example",
       "stance": "neutral",
       "description": "RWECE notes that SPP's own entry fee proposal took from 2021 to late 2025 to develop and file, and will likely not receive FERC approval until 2026. The filing uses SPP's timeline to show why federal reform must move faster than regional processes.",
-      "quote_ids": [3]
+      "quote_ids": [
+        3
+      ]
     }
   ],
   "lenses": {
-    "aq": ["upgradecost"],
-    "pr": ["cost", "study"],
-    "rg": ["spp"]
+    "aq": [
+      "upgradecost"
+    ],
+    "pr": [
+      "cost",
+      "study"
+    ],
+    "rg": [
+      "spp"
+    ]
   },
   "provenance": {
     "model": "claude-sonnet-4-6",

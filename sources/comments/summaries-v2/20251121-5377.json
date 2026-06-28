@@ -13,7 +13,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "pr:cost",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "aq:deposits",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
         "rg:pjm",
         "pr:cost",
         "topic:stranded-cost-scale"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
         "rg:pjm",
         "pr:cost",
         "topic:cost-socialization"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
         "pr:cost",
         "aq:upgradecost",
         "topic:host-utility-accountability"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
         "pr:cost",
         "aq:jurisdiction",
         "topic:retail-wholesale-alignment"
-      ]
+      ],
+      "page": 25
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
         "rg:pjm",
         "pr:cost",
         "topic:retail-wholesale-alignment"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 12,
@@ -117,7 +128,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 13,
@@ -126,7 +138,8 @@
       "bins": [
         "pr:study",
         "topic:transition-mechanism"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 14,
@@ -136,7 +149,8 @@
         "pr:cost",
         "aq:upgradecost",
         "topic:crediting-design"
-      ]
+      ],
+      "page": 19
     }
   ],
   "bins": [

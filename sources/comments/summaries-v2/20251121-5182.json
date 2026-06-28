@@ -12,7 +12,8 @@
       "concern": "Supports expedited large load interconnection",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Commission should not derail existing regional reform initiatives",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Seek protection for utility ability to earn returns on interconnection investments",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Accommodate existing regional efforts rather than adopt new regulatory regime",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Allow regional variations in compliance filings",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "Rolled-in rates framework applies to integrated systems for efficiency and reliability",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "Large load customers should pay full costs of interconnection through existing pricing policy",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "Transmission owners must recover costs and earn reasonable returns on large load infrastructure",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 7
     }
   ],
   "bins": [

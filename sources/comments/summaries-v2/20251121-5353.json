@@ -12,7 +12,8 @@
       "concern": "Rule should expressly exclude ERCOT and ERCOT entities from coverage",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:key-term-definitions"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "Legal basis for ERCOT's exemption from FERC plenary jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "ERCOT's non-jurisdictional status reflects settled policy recognized by Congress and FERC",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:key-term-definitions"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:key-term-definitions"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:nerc-reliability-review"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "Prior FERC orders (e.g., Order 888) offer a model for expressly limiting applicability to public utilities",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:state-innovation"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "concern": "Final ask: rule must contain an explicit ERCOT exemption",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 14
     }
   ],
   "bins": [

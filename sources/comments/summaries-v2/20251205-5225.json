@@ -12,7 +12,8 @@
       "concern": "California state jurisdiction over retail load interconnections",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Federal rule would intrude on state retail ratemaking authority",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "Rulemaking must be narrowly tailored to avoid jurisdictional disputes",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -45,7 +49,8 @@
       "concern": "Large load customers should bear their own interconnection costs",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -53,7 +58,8 @@
       "concern": "Existing customers protected from new large load costs; durable loads may earn cost credits",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "concern": "Existing customers should not absorb stranded asset costs",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -69,7 +76,8 @@
       "concern": "Resource adequacy and capacity planning essential before large load interconnection",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -78,7 +86,8 @@
       "bins": [
         "pr:study",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 10,
@@ -86,7 +95,8 @@
       "concern": "Commission should issue NOPR with draft procedures before final rule",
       "bins": [
         "topic:process-timing"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 11,
@@ -94,7 +104,8 @@
       "concern": "NOPR should include proposed pro forma procedures for comment",
       "bins": [
         "topic:process-timing"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 12,
@@ -102,7 +113,8 @@
       "concern": "Full NOPR process with working groups will improve rulemaking quality",
       "bins": [
         "topic:process-timing"
-      ]
+      ],
+      "page": 5
     }
   ],
   "bins": [

@@ -10,85 +10,137 @@
       "id": 1,
       "text": "SMA believes that without significant reforms, the existing system will be unable to support the rapid deployment of AI data centers necessary for the U.S. to win the global race in AI and digital infrastructure, while ensuring that the regular rate payers have access to affordable and reliable power.",
       "concern": "Current interconnection system cannot handle AI data center demand at scale without reform",
-      "bins": ["pr:study", "pr:cost"]
+      "bins": [
+        "pr:study",
+        "pr:cost"
+      ],
+      "page": 1
     },
     {
       "id": 2,
       "text": "Advanced grid-forming inverters with BESS can reduce the need for costly infrastructure expenditures, which would otherwise be borne by consumers.",
       "concern": "BESS and grid-forming inverters can lower upgrade costs that would otherwise fall on consumers",
-      "bins": ["pr:cost", "pr:colo"]
+      "bins": [
+        "pr:cost",
+        "pr:colo"
+      ],
+      "page": 1
     },
     {
       "id": 3,
       "text": "The performance threshold should be defined to include advanced grid-forming inverters combined with BESS, which may need to be aggregated to exceed 20 MW (in line with the modular build-up of data center racks).",
       "concern": "The 20 MW threshold should allow aggregation of modular inverter-BESS systems, not require a single unit to qualify",
-      "bins": ["aq:threshold"]
+      "bins": [
+        "aq:threshold"
+      ],
+      "page": 2
     },
     {
       "id": 4,
       "text": "SMA strongly supports the simulation of load and hybrid facilities together as we find large gaps today in addressing the risks on both the grid and AI data center (load) sides, in that the load-side ignores real risks to the grid and vice versa.",
       "concern": "Joint simulation of load and generation is needed because each side currently ignores risks from the other",
-      "bins": ["aq:jointstudy", "pr:study"]
+      "bins": [
+        "aq:jointstudy",
+        "pr:study"
+      ],
+      "page": 3
     },
     {
       "id": 5,
       "text": "SMA recommends that FERC consider differentiated and proportionate study deposits and readiness requirements for grid-supportive technology providers.",
       "concern": "Deposit and readiness requirements should be reduced for applicants deploying proven grid-supportive technology",
-      "bins": ["aq:deposits"]
+      "bins": [
+        "aq:deposits"
+      ],
+      "page": 3
     },
     {
       "id": 6,
       "text": "SMA suggests reducing initial deposit requirements by approximately 15 percent for applicants with a proven track record of delivering grid-supportive performance.",
       "concern": "A 15 percent deposit reduction for proven providers would lower barriers without enabling speculative projects",
-      "bins": ["aq:deposits"]
+      "bins": [
+        "aq:deposits"
+      ],
+      "page": 3
     },
     {
       "id": 7,
       "text": "A key consideration for hybrid facilities serving large, variable loads such as data centers is the highly dynamic load profile, which can pose challenges for maintaining system stability.",
       "concern": "Variable data center load profiles create system stability risks that hybrid facility rules must address",
-      "bins": ["aq:hybridrights", "pr:colo"]
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ],
+      "page": 3
     },
     {
       "id": 8,
       "text": "Controllability (in particular curtailability and dispatchability) with SMA technology is already field-proven and state-of-the-art (system operators can manage it) using, for example, the IEEE 2030.5 (SEP2) protocol.",
       "concern": "Curtailability required for expedited study is already achievable with existing SMA inverter technology and standard protocols",
-      "bins": ["aq:expedited", "pr:flex"]
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ],
+      "page": 4
     },
     {
       "id": 9,
       "text": "Preferably, controllability should be assessed at the interconnection point rather than at individual components, allowing owners maximum flexibility in implementation.",
       "concern": "Curtailability compliance should be measured at the point of interconnection, not at each component",
-      "bins": ["aq:expedited", "pr:flex"]
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ],
+      "page": 4
     },
     {
       "id": 10,
       "text": "SMA's perspective is that penalties are not necessary if system protection settings are well coordinated and operate effectively at the overall system level.",
       "concern": "Well-coordinated protection settings make injection/withdrawal penalties unnecessary",
-      "bins": ["aq:protection"]
+      "bins": [
+        "aq:protection"
+      ],
+      "page": 3
     },
     {
       "id": 11,
       "text": "SMA supports prioritizing large loads, especially when co-located with generation, provided that power system stability is maintained and further price increases are avoided.",
       "concern": "Prioritization of co-located large loads is acceptable only when stability is maintained and costs do not rise for ratepayers",
-      "bins": ["pr:colo", "pr:cost"]
+      "bins": [
+        "pr:colo",
+        "pr:cost"
+      ],
+      "page": 5
     },
     {
       "id": 12,
       "text": "Cost responsibility should be ring-fenced so that general ratepayers are not burdened.",
       "concern": "Interconnection costs for large loads must not be passed to general ratepayers",
-      "bins": ["pr:cost", "pr:proximate"]
+      "bins": [
+        "pr:cost",
+        "pr:proximate"
+      ],
+      "page": 5
     },
     {
       "id": 13,
       "text": "SMA suggests allowing a 'priority setup' to be connected, where facilities with their own infrastructure that already supports grid stability - such as BESS with advanced grid-forming capabilities - can provide all relevant ancillary services and receive appropriate incentives (e.g. compensation fees or easy connection process).",
       "concern": "Facilities that self-supply ancillary services via BESS should get a priority connection pathway and compensation",
-      "bins": ["pr:colo", "pr:flex", "topic:grid-forming-incentives"]
+      "bins": [
+        "pr:colo",
+        "pr:flex",
+        "topic:grid-forming-incentives"
+      ],
+      "page": 4
     },
     {
       "id": 14,
       "text": "High performance grid-forming inverters are fully aligned with these requirements. For example, all of SMA's BESS solutions routinely meet applicable NERC reliability standards and OATT provisions, providing reliable support for consultants and system operators.",
       "concern": "SMA's BESS and inverter products already meet NERC and OATT reliability requirements",
-      "bins": ["topic:nerc-compliance"]
+      "bins": [
+        "topic:nerc-compliance"
+      ],
+      "page": 5
     }
   ],
   "bins": [
@@ -97,96 +149,146 @@
       "name": "Joint load-generation study support",
       "stance": "support",
       "description": "SMA supports studying load and hybrid facilities together with generators, citing current gaps where each side ignores risks from the other. Without joint simulation, grid risks from large dynamic loads go unaddressed.",
-      "quote_ids": [1, 4]
+      "quote_ids": [
+        1,
+        4
+      ]
     },
     {
       "key": "pr:cost",
       "name": "Ratepayer cost protection",
       "stance": "support",
       "description": "SMA argues that grid-forming inverters and BESS can substitute for costly network upgrades, reducing costs that would otherwise be borne by consumers. Cost responsibility for large load interconnection should be ring-fenced and not shifted to general ratepayers.",
-      "quote_ids": [1, 2, 11, 12]
+      "quote_ids": [
+        1,
+        2,
+        11,
+        12
+      ]
     },
     {
       "key": "aq:threshold",
       "name": "Aggregation for 20 MW threshold",
       "stance": "mixed",
       "description": "SMA asks FERC to allow modular inverter-BESS systems to be aggregated when applying the 20 MW performance threshold, reflecting how data center racks scale up incrementally. The connection capacity at the point of interconnection, not the rating of a single unit, is the relevant metric.",
-      "quote_ids": [3]
+      "quote_ids": [
+        3
+      ]
     },
     {
       "key": "aq:jointstudy",
       "name": "Support for joint interconnection study",
       "stance": "support",
       "description": "SMA strongly endorses the ANOPR principle that loads and hybrid facilities be studied alongside generators, because the current siloed approach leaves real risks unaddressed on both sides.",
-      "quote_ids": [4]
+      "quote_ids": [
+        4
+      ]
     },
     {
       "key": "aq:deposits",
       "name": "Reduced deposits for grid-supportive providers",
       "stance": "support",
       "description": "SMA recommends differentiated and proportionate study deposits for proven grid-supportive technology providers, specifically a 15 percent reduction in initial deposits for applicants with a demonstrated track record. This would lower market entry barriers without enabling speculative projects.",
-      "quote_ids": [5, 6]
+      "quote_ids": [
+        5,
+        6
+      ]
     },
     {
       "key": "aq:hybridrights",
       "name": "Dynamic load profile risk in hybrid rights",
       "stance": "neutral",
       "description": "SMA notes that the highly variable load profiles of data centers present system stability challenges that must factor into how hybrid facility injection and withdrawal rights are defined and studied.",
-      "quote_ids": [7]
+      "quote_ids": [
+        7
+      ]
     },
     {
       "key": "aq:expedited",
       "name": "Curtailability already achievable",
       "stance": "support",
       "description": "SMA states that curtailability and dispatchability required for expedited study are already field-proven using standard protocols such as IEEE 2030.5. Compliance should be assessed at the interconnection point rather than component by component.",
-      "quote_ids": [8, 9]
+      "quote_ids": [
+        8,
+        9
+      ]
     },
     {
       "key": "aq:protection",
       "name": "Coordination over penalties for protection",
       "stance": "oppose",
       "description": "SMA argues that penalties for unauthorized injections or withdrawals are unnecessary when system protection settings are well coordinated at the overall system level, and that disconnection is itself harmful to the customer.",
-      "quote_ids": [10]
+      "quote_ids": [
+        10
+      ]
     },
     {
       "key": "pr:colo",
       "name": "Co-location with BESS to cut upgrades",
       "stance": "support",
       "description": "SMA supports co-location of large loads with BESS and generation as a way to reduce costly network upgrades and maintain stability. Facilities that self-supply ancillary services should receive priority connection pathways and compensation.",
-      "quote_ids": [2, 7, 11, 13]
+      "quote_ids": [
+        2,
+        7,
+        11,
+        13
+      ]
     },
     {
       "key": "pr:flex",
       "name": "Flexibility and curtailability via inverters",
       "stance": "support",
       "description": "SMA supports flexibility and curtailability requirements, arguing its inverter technology already meets these demands. Controllability should be measured at the interconnection point, not at individual components, to give owners maximum implementation flexibility.",
-      "quote_ids": [8, 9, 13]
+      "quote_ids": [
+        8,
+        9,
+        13
+      ]
     },
     {
       "key": "pr:proximate",
       "name": "Ring-fence large load costs",
       "stance": "support",
       "description": "SMA supports allocating interconnection and upgrade costs to the large load customer and not to general ratepayers, consistent with a proximate cost responsibility principle.",
-      "quote_ids": [12]
+      "quote_ids": [
+        12
+      ]
     },
     {
       "key": "topic:grid-forming-incentives",
       "name": "Incentives for grid-forming technology",
       "stance": "support",
       "description": "SMA proposes a priority connection pathway and compensation for facilities that deploy BESS with advanced grid-forming capabilities, since they self-supply ancillary services and reduce system costs.",
-      "quote_ids": [13]
+      "quote_ids": [
+        13
+      ]
     },
     {
       "key": "topic:nerc-compliance",
       "name": "NERC and OATT compliance of BESS",
       "stance": "support",
       "description": "SMA asserts that its grid-forming inverter and BESS products already meet NERC reliability standards and OATT provisions, positioning them as ready-to-deploy solutions under any new FERC reliability requirements.",
-      "quote_ids": [14]
+      "quote_ids": [
+        14
+      ]
     }
   ],
   "lenses": {
-    "aq": ["threshold", "jointstudy", "deposits", "hybridrights", "expedited", "protection"],
-    "pr": ["study", "cost", "colo", "flex", "proximate"],
+    "aq": [
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "expedited",
+      "protection"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "colo",
+      "flex",
+      "proximate"
+    ],
     "rg": []
   },
   "provenance": {

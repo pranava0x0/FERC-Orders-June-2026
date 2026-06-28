@@ -10,85 +10,129 @@
       "id": 1,
       "text": "CRE utilities are physically disconnected from the bulk power system and do not participate in interstate wholesale electricity markets.",
       "concern": "CRE utilities are physically disconnected from bulk power system",
-      "bins": ["topic:jurisdictional-status"]
+      "bins": [
+        "topic:jurisdictional-status"
+      ],
+      "page": 2
     },
     {
       "id": 2,
       "text": "CRE utilities are financed entirely with private capital and do not shift costs, risks, or reliability obligations to existing ratepayers.",
       "concern": "CRE does not shift costs to existing ratepayers",
-      "bins": ["pr:cost"]
+      "bins": [
+        "pr:cost"
+      ],
+      "page": 2
     },
     {
       "id": 3,
       "text": "CRE provides a parallel, voluntary path for meeting large-load demand—particularly data centers and industrial facilities—without burdening existing systems or requiring complex interconnection studies.",
       "concern": "CRE avoids complex interconnection studies",
-      "bins": ["pr:cost", "pr:study"]
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ],
+      "page": 2
     },
     {
       "id": 4,
       "text": "CRE utilities do not make wholesale sales in interstate commerce, do not transmit electricity in interstate commerce, and do not hold themselves out to serve the general public.",
       "concern": "CRE does not engage in interstate commerce",
-      "bins": ["topic:jurisdictional-status"]
+      "bins": [
+        "topic:jurisdictional-status"
+      ],
+      "page": 2
     },
     {
       "id": 5,
       "text": "Historically, the Commission has not asserted jurisdiction over industrial or campus generation and distribution systems that lack electrical interconnection with the interstate grid and do not make wholesale sales in interstate commerce. CRE utilities align with this category.",
       "concern": "CRE aligns with historical precedent for non-jurisdictional industrial systems",
-      "bins": ["topic:jurisdictional-status"]
+      "bins": [
+        "topic:jurisdictional-status"
+      ],
+      "page": 2
     },
     {
       "id": 6,
       "text": "A Commission statement confirming that such systems remain outside jurisdiction so long as they remain physically islanded from the bulk power system would be consistent with statutory text, Commission precedent, and longstanding practice.",
       "concern": "FERC statement confirming non-jurisdictional status would be consistent with precedent",
-      "bins": ["topic:jurisdictional-status"]
+      "bins": [
+        "topic:jurisdictional-status"
+      ],
+      "page": 2
     },
     {
       "id": 7,
       "text": "Section 215 was enacted to protect the reliability of the interconnected bulk power system by preventing disturbances that could propagate across regional transmission networks. A physically isolated CRE system, by design, cannot cause such disturbances.",
       "concern": "Physically isolated CRE cannot cause Section 215 disturbances",
-      "bins": ["topic:jurisdictional-status"]
+      "bins": [
+        "topic:jurisdictional-status"
+      ],
+      "page": 3
     },
     {
       "id": 8,
       "text": "A system with no physical tie to the bulk power system cannot materially affect that system's reliable operation.",
       "concern": "Non-interconnected systems cannot affect bulk system reliability",
-      "bins": ["topic:jurisdictional-status"]
+      "bins": [
+        "topic:jurisdictional-status"
+      ],
+      "page": 3
     },
     {
       "id": 9,
       "text": "CRE utilities relieve the bulk power system of the obligation to plan for and serve very large loads. By allowing those loads to internalize their own costs and risks, CRE reduces upward pressure on transmission expansion, generation additions, and interconnection queues.",
       "concern": "CRE reduces pressure on transmission planning and interconnection queues",
-      "bins": ["pr:cost", "pr:study"]
+      "bins": [
+        "pr:cost",
+        "pr:study"
+      ],
+      "page": 3
     },
     {
       "id": 10,
       "text": "For existing ratepayers, CRE reduces the likelihood of cost-shifting associated with new large loads.",
       "concern": "CRE avoids cost-shifting to existing ratepayers",
-      "bins": ["pr:cost"]
+      "bins": [
+        "pr:cost"
+      ],
+      "page": 3
     },
     {
       "id": 11,
       "text": "CRE provides an option for managing industrial growth without compromising system reliability or increasing ratepayer exposure.",
       "concern": "CRE allows industrial growth without increasing ratepayer burden",
-      "bins": ["pr:cost"]
+      "bins": [
+        "pr:cost"
+      ],
+      "page": 3
     },
     {
       "id": 12,
       "text": "Clarify that electricity systems which are physically islanded, serve only identified contractual customers, and do not engage in interstate wholesale sales are not public utilities under Part II of the FPA.",
       "concern": "Recommend FERC clarify non-jurisdictional status under Part II",
-      "bins": ["topic:jurisdictional-status"]
+      "bins": [
+        "topic:jurisdictional-status"
+      ],
+      "page": 3
     },
     {
       "id": 13,
       "text": "Clarify that Section 215 reliability jurisdiction applies only to systems physically interconnected with the bulk power system.",
       "concern": "Recommend FERC clarify Section 215 applies only to interconnected systems",
-      "bins": ["topic:jurisdictional-status"]
+      "bins": [
+        "topic:jurisdictional-status"
+      ],
+      "page": 3
     },
     {
       "id": 14,
       "text": "Recognize CRE utilities as a lawful, voluntary, non-jurisdictional path that can complement Commission-jurisdictional solutions to large-load interconnection challenges.",
       "concern": "Recommend FERC recognize CRE as non-jurisdictional complementary path",
-      "bins": ["topic:jurisdictional-status"]
+      "bins": [
+        "topic:jurisdictional-status"
+      ],
+      "page": 4
     }
   ],
   "bins": [
@@ -97,26 +141,48 @@
       "name": "CRE exemption from FERC jurisdiction",
       "stance": "support",
       "description": "A4CRE argues that physically islanded CRE utilities should be exempt from FERC jurisdiction under Part II of the Federal Power Act and Section 215 reliability requirements because they lack electrical interconnection with the bulk power system, do not engage in interstate commerce, and cannot cause system disturbances by design. The organization notes that this aligns with historical precedent for non-jurisdictional industrial and campus systems and requests a FERC statement confirming such systems remain outside jurisdiction.",
-      "quote_ids": [1, 4, 5, 6, 7, 8, 12, 13, 14]
+      "quote_ids": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14
+      ]
     },
     {
       "key": "pr:cost",
       "name": "Cost benefits and avoiding ratepayer burden",
       "stance": "support",
       "description": "A4CRE contends that CRE utilities reduce upward pressure on transmission expansion and interconnection queues by allowing large loads to internalize their own costs and risks through private capital financing. This approach avoids cost-shifting to existing ratepayers and provides states an option for managing industrial growth without increasing consumer burden.",
-      "quote_ids": [2, 3, 9, 10, 11]
+      "quote_ids": [
+        2,
+        3,
+        9,
+        10,
+        11
+      ]
     },
     {
       "key": "pr:study",
       "name": "Reducing interconnection study burden",
       "stance": "support",
       "description": "A4CRE describes CRE as providing a path for large-load demand without requiring complex interconnection studies. This relieves pressure on transmission planning by diverting loads that would otherwise require significant system upgrades.",
-      "quote_ids": [3, 9]
+      "quote_ids": [
+        3,
+        9
+      ]
     }
   ],
   "lenses": {
     "aq": [],
-    "pr": ["cost", "study"],
+    "pr": [
+      "cost",
+      "study"
+    ],
     "rg": []
   },
   "provenance": {

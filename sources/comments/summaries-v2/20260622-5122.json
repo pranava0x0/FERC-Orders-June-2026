@@ -10,61 +10,95 @@
       "id": 1,
       "text": "The Commission should recognize AI-assisted dynamic transmission line rating, built on the ambient-adjusted and dynamic rating foundation of Order No. 881, as a near-term tool for surfacing latent transmission headroom that can accommodate large loads without waiting for new line construction.",
       "concern": "AI dynamic rating as near-term solution to surface existing latent headroom",
-      "bins": ["topic:dynamic-rating"]
+      "bins": [
+        "topic:dynamic-rating"
+      ],
+      "page": 1
     },
     {
       "id": 2,
       "text": "A significant share of the interconnection delay facing large loads is not a physical absence of capacity but an inability to see and use capacity that already exists.",
       "concern": "Interconnection delays are visibility/utilization problems, not physical scarcity",
-      "bins": ["topic:dynamic-rating"]
+      "bins": [
+        "topic:dynamic-rating"
+      ],
+      "page": 2
     },
     {
       "id": 3,
       "text": "AI methods that fuse real-time weather data with the IEEE 738 heat-balance model can identify dynamic headroom on existing lines, which can meaningfully exceed static ratings under favorable conditions.",
       "concern": "Technical mechanism for dynamic rating using weather and heat-balance physics",
-      "bins": ["topic:dynamic-rating"]
+      "bins": [
+        "topic:dynamic-rating"
+      ],
+      "page": 2
     },
     {
       "id": 4,
       "text": "Any acceleration of interconnection or System Impact Study timelines toward the proposed 60-day target should be paired with a requirement that automated or AI-assisted study tools be validated against deterministic, physics-based engineering models, so that speed does not come at the cost of reliability.",
       "concern": "Faster studies must include physics-based validation requirement",
-      "bins": ["pr:study", "topic:reliability-protection"]
+      "bins": [
+        "pr:study",
+        "topic:reliability-protection"
+      ],
+      "page": 1
     },
     {
       "id": 5,
       "text": "The sound path is a hybrid, physics-constrained approach: machine-learning components accelerate data ingestion and scenario generation, while a deterministic engineering layer, such as power-flow and thermal models, validates every result against physical law before it is relied upon.",
       "concern": "Hybrid machine-learning plus physics-based validation architecture",
-      "bins": ["pr:study", "topic:reliability-protection"]
+      "bins": [
+        "pr:study",
+        "topic:reliability-protection"
+      ],
+      "page": 2
     },
     {
       "id": 6,
       "text": "The Commission should encourage standardized telemetry and data-exchange practices that make AI-assisted rating and study acceleration auditable and reproducible across transmission providers.",
       "concern": "Standardized data practices for auditability across transmission providers",
-      "bins": ["topic:auditability"]
+      "bins": [
+        "topic:auditability"
+      ],
+      "page": 2
     },
     {
       "id": 7,
       "text": "Flexible and curtailable large loads should be evaluated using real-time, consequence-aware analytics, which can quantify the reliability value of their flexibility and support the faster study track the ANOPR contemplates.",
       "concern": "Real-time analytics to quantify reliability value of flexible load commitments",
-      "bins": ["pr:flex"]
+      "bins": [
+        "pr:flex"
+      ],
+      "page": 2
     },
     {
       "id": 8,
       "text": "Consequence-aware analytics can quantify, for a specific location and system state, the headroom that a curtailable load frees up and the reliability margin its flexibility preserves.",
       "concern": "Consequence-aware measurement of flexible load reliability contribution",
-      "bins": ["pr:flex"]
+      "bins": [
+        "pr:flex"
+      ],
+      "page": 3
     },
     {
       "id": 9,
       "text": "I recommend that the Commission encourage standardized data-exchange and documentation practices for any AI-assisted rating or study tools, so that their inputs and outputs are reproducible and auditable by transmission providers, regulators, and affected stakeholders.",
       "concern": "Reproducible and auditable data practices across stakeholders",
-      "bins": ["topic:auditability"]
+      "bins": [
+        "topic:auditability"
+      ],
+      "page": 3
     },
     {
       "id": 10,
       "text": "The need to integrate large loads, including AI data centers, in a timely and orderly manner is urgent, and tools to do so reliably are largely available today.",
       "concern": "Tools for safe large-load integration are available and urgent need exists",
-      "bins": ["pr:study", "pr:flex", "topic:dynamic-rating"]
+      "bins": [
+        "pr:study",
+        "pr:flex",
+        "topic:dynamic-rating"
+      ],
+      "page": 3
     }
   ],
   "bins": [
@@ -73,40 +107,62 @@
       "name": "AI-assisted dynamic line rating",
       "stance": "support",
       "description": "AI-assisted dynamic transmission line rating can surface latent headroom on existing lines by fusing real-time weather data with IEEE 738 heat-balance physics. This headroom can accommodate large loads without waiting for new construction, addressing the visibility problem that delays interconnection.",
-      "quote_ids": [1, 2, 3, 10]
+      "quote_ids": [
+        1,
+        2,
+        3,
+        10
+      ]
     },
     {
       "key": "pr:study",
       "name": "Study acceleration with physics validation",
       "stance": "support",
       "description": "60-day study timelines should be paired with mandatory physics-based validation to ensure speed does not compromise reliability. A hybrid approach using machine-learning for data ingestion combined with deterministic engineering models (power-flow, thermal) validates every result against physical law.",
-      "quote_ids": [4, 5, 10]
+      "quote_ids": [
+        4,
+        5,
+        10
+      ]
     },
     {
       "key": "pr:flex",
       "name": "Real-time flexible load analytics",
       "stance": "support",
       "description": "Flexible and curtailable large loads should be evaluated using consequence-aware analytics that quantify, for specific grid locations and system states, the reliability value their flexibility provides. This enables expedited treatment based on measurable principles rather than categorical rules.",
-      "quote_ids": [7, 8, 10]
+      "quote_ids": [
+        7,
+        8,
+        10
+      ]
     },
     {
       "key": "topic:auditability",
       "name": "Standardized auditable data practices",
       "stance": "support",
       "description": "Standardized telemetry and data-exchange practices across transmission providers enable AI-assisted rating and study tools to be auditable and reproducible. This standardization reduces barriers for smaller providers and allows regulators and stakeholders to verify results.",
-      "quote_ids": [6, 9]
+      "quote_ids": [
+        6,
+        9
+      ]
     },
     {
       "key": "topic:reliability-protection",
       "name": "Reliability protection in accelerated studies",
       "stance": "support",
       "description": "Physics-based validation layers must accompany any acceleration of interconnection studies to ensure reliability is not sacrificed for speed. Pure data-driven models can be statistically plausible but physically invalid, creating grid risk.",
-      "quote_ids": [4, 5]
+      "quote_ids": [
+        4,
+        5
+      ]
     }
   ],
   "lenses": {
     "aq": [],
-    "pr": ["study", "flex"],
+    "pr": [
+      "study",
+      "flex"
+    ],
     "rg": []
   },
   "provenance": {

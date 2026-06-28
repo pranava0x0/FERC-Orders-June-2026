@@ -12,7 +12,8 @@
       "concern": "Asserting FERC jurisdiction over large load interconnection as open-access transmission service is legally untested",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "FERC should confirm jurisdictional action does not alter retail sales classification or create undue preference",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "20 MW threshold is too broad and sweeps in ordinary retail customers unrelated to data centers",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Recommends raising the threshold to 100 MW",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 5,
@@ -45,7 +49,8 @@
       "bins": [
         "aq:protection",
         "pr:study"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:study"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
         "aq:expedited",
         "pr:study",
         "rg:miso"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "concern": "A six-month rulemaking timeline is too short for a proceeding of this legal complexity",
       "bins": [
         "topic:process-pace"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 10,
@@ -90,7 +99,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:process-pace"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 11,
@@ -99,7 +109,8 @@
       "bins": [
         "pr:study",
         "topic:regulatory-stability"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

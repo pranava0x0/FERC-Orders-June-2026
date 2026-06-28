@@ -12,7 +12,8 @@
       "concern": "FERC lacks precedent to assert jurisdiction over load interconnection",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "expanding FERC jurisdiction into load interconnection is legally untested",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "aq:jurisdiction",
         "aq:protection"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
         "aq:jurisdiction",
         "pr:study",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
         "aq:jurisdiction",
         "pr:study",
         "topic:structural-delays"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -59,7 +64,8 @@
         "aq:jurisdiction",
         "pr:study",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "bins": [
         "rg:pjm",
         "topic:rto-limits"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -77,7 +84,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -87,7 +95,8 @@
         "rg:pjm",
         "pr:study",
         "topic:gen-queue-reform"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -97,7 +106,8 @@
         "rg:pjm",
         "pr:study",
         "topic:gen-queue-reform"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
         "pr:flex",
         "aq:hybridrights",
         "topic:fast-track-queue"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 12,
@@ -116,7 +127,8 @@
       "concern": "deposits should be calibrated to deter speculation without blocking real projects",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 13,
@@ -125,7 +137,8 @@
       "bins": [
         "pr:study",
         "topic:queue-integrity"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 14,
@@ -133,7 +146,8 @@
       "concern": "VSCC requests a technical conference to develop the record with state regulator input",
       "bins": [
         "topic:process"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "topic:federalism-deference"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:study",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "20MW threshold too low, creates overreach and uncertainty",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "Low threshold sweeps in low-risk loads, disrupts working processes",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "Warns federal action could harm ongoing projects",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
       "concern": "Proposes higher threshold and aggregate-point rule",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
         "pr:flex",
         "pr:study",
         "topic:regional-initiative"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "Demands technology neutrality and customer choice in supply",
       "bins": [
         "topic:technology-neutrality"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "bins": [
         "topic:technology-neutrality",
         "aq:hybridrights"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 10,
@@ -90,7 +99,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:technology-neutrality"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

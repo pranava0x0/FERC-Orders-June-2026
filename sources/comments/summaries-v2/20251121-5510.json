@@ -12,7 +12,8 @@
       "concern": "Interconnection rules must not create barriers that disadvantage data center developers",
       "bins": [
         "topic:fair-competition"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Rules should apply equally regardless of developer size or business model",
       "bins": [
         "topic:fair-competition"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
         "aq:jointstudy",
         "pr:study",
         "pr:colo"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
         "aq:deposits",
         "pr:cost",
         "topic:cost-predictability"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "bins": [
         "pr:study",
         "aq:expedited"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
       "bins": [
         "pr:study",
         "topic:queue-management"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -86,7 +94,8 @@
         "aq:deposits",
         "pr:cost",
         "topic:cost-predictability"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -95,7 +104,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 11,
@@ -105,7 +115,8 @@
         "aq:deposits",
         "pr:cost",
         "topic:milestone-security"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 12,
@@ -114,7 +125,8 @@
       "bins": [
         "aq:deposits",
         "topic:assignment-rights"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 13,
@@ -123,7 +135,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 14,
@@ -133,7 +146,8 @@
         "aq:expedited",
         "pr:flex",
         "pr:study"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 15,
@@ -143,7 +157,8 @@
         "aq:upgradecost",
         "pr:cost",
         "pr:proximate"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 16,
@@ -152,7 +167,8 @@
       "bins": [
         "topic:transition",
         "pr:study"
-      ]
+      ],
+      "page": 9
     }
   ],
   "bins": [

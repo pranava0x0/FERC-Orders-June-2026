@@ -13,7 +13,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:protect-existing-arrangements"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "Jurisdiction should follow the existing seven-factor test, not expand beyond it",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:state-federal-coordination"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "aq:threshold",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
         "aq:threshold",
         "pr:study",
         "topic:regional-deference"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "bins": [
         "aq:deposits",
         "topic:protect-existing-arrangements"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "bins": [
         "aq:deposits",
         "pr:study"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 8,
@@ -77,7 +84,8 @@
         "aq:expedited",
         "pr:flex",
         "pr:study"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 9,
@@ -87,7 +95,8 @@
         "aq:expedited",
         "pr:flex",
         "topic:definition-and-enforcement"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 10,
@@ -97,7 +106,8 @@
         "aq:deposits",
         "pr:cost",
         "topic:queue-equity"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 11,
@@ -106,7 +116,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 12,
@@ -116,7 +127,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:build-option"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 13,
@@ -126,7 +138,8 @@
         "pr:flex",
         "pr:cost",
         "topic:demand-response-compensation"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 14,
@@ -135,7 +148,8 @@
       "bins": [
         "aq:protection",
         "topic:nerc-registration"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 15,
@@ -144,7 +158,8 @@
       "bins": [
         "aq:protection",
         "topic:nerc-registration"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 16,
@@ -154,7 +169,8 @@
         "aq:protection",
         "aq:jurisdiction",
         "topic:nerc-registration"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 17,
@@ -164,7 +180,8 @@
         "aq:hybridrights",
         "pr:colo",
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 18,
@@ -173,7 +190,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 5
     }
   ],
   "bins": [

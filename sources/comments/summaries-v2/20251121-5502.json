@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "aq:expedited"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "topic:transparency",
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "pr:flex",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "topic:parity",
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "pr:proximate",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "concern": "RTO cost allocation must reflect cost-causation principles and incentivize grid-positive behavior",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
       "bins": [
         "topic:transparency",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -75,7 +82,8 @@
       "bins": [
         "topic:transparency",
         "pr:proximate"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "concern": "Transmission owners must publish facility lists to establish clear jurisdiction rules for load interconnections",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 10,
@@ -93,7 +102,8 @@
         "topic:parity",
         "pr:flex",
         "aq:jointstudy"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 11,
@@ -102,7 +112,8 @@
       "bins": [
         "pr:proximate",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 12,
@@ -110,7 +121,8 @@
       "concern": "All transmission service costs must be allocated using cost-causation principles through the interconnection process",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 13,
@@ -118,7 +130,8 @@
       "concern": "Pricing must reflect cost-causation periods and peak-demand contribution, not maximum withdrawal rights",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 9
     }
   ],
   "bins": [

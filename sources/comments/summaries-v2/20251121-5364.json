@@ -13,7 +13,8 @@
       "bins": [
         "pr:flex",
         "topic:independent-entity-variations"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:flex",
         "topic:independent-entity-variations"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "Jurisdictional ambiguity impedes large load reform at ISOs and RTOs",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
         "pr:colo",
         "pr:study",
         "topic:cluster-study-compatibility"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 5,
@@ -50,7 +54,8 @@
         "pr:flex",
         "pr:study",
         "topic:cluster-study-compatibility"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 6,
@@ -60,7 +65,8 @@
         "pr:colo",
         "aq:hybridrights",
         "topic:generator-exit-reliability"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 7,
@@ -70,7 +76,8 @@
         "pr:colo",
         "aq:hybridrights",
         "topic:generator-exit-reliability"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 8,
@@ -79,7 +86,8 @@
       "bins": [
         "rg:nyiso",
         "topic:resource-adequacy"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "bins": [
         "pr:study",
         "topic:resource-adequacy"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 10,
@@ -97,7 +106,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 11,
@@ -106,7 +116,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 9
     }
   ],
   "bins": [

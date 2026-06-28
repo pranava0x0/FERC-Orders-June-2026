@@ -10,55 +10,90 @@
       "id": 1,
       "text": "if a hybrid facility has 100MW of load and 80MW of generation (to have a sum total of 20MW), they can provide an outsized threat to the grid if one day they simply turn off their on-site generators to slam the full 100MW load onto the grid.",
       "concern": "Net-MW threshold allows hybrid facilities with large gross loads to exceed their studied impact",
-      "bins": ["aq:threshold", "aq:hybridrights", "topic:malicious-actor-loopholes"]
+      "bins": [
+        "aq:threshold",
+        "aq:hybridrights",
+        "topic:malicious-actor-loopholes"
+      ],
+      "page": null
     },
     {
       "id": 2,
       "text": "Can you clarify whether modular loads (e.g., phased data centers with multiple 10–15 MW modules) that individually fall below 20 MW but share a POI will be aggregated? Recommend anti‑fragmentation rules that aggregate affiliated requests within a time and facility/geographic window.",
       "concern": "Modular loads could evade the 20 MW threshold if not aggregated by shared point of interconnection",
-      "bins": ["aq:threshold", "topic:anti-fragmentation"]
+      "bins": [
+        "aq:threshold",
+        "topic:anti-fragmentation"
+      ],
+      "page": null
     },
     {
       "id": 3,
       "text": "Is there a loophole for malicious actors to get past these requirements if data centers are connected to \"distribution\" wiring?",
       "concern": "Distribution-connected large loads fall outside FERC transmission jurisdiction",
-      "bins": ["aq:jurisdiction", "topic:malicious-actor-loopholes"]
+      "bins": [
+        "aq:jurisdiction",
+        "topic:malicious-actor-loopholes"
+      ],
+      "page": null
     },
     {
       "id": 4,
       "text": "if there is a loophole for dangerous connection of large loads to distribution wiring, is there an possibility to make a formal recommendation to those agencies who do have the jurisdiction?",
       "concern": "FERC should refer distribution-connected large-load security gaps to state or other regulators",
-      "bins": ["aq:jurisdiction"]
+      "bins": [
+        "aq:jurisdiction"
+      ],
+      "page": null
     },
     {
       "id": 5,
       "text": "I have significant concern that allotting the installation and operation of protection devices to the load facility would not protect against malicious actors since they could simply bypass these protections on their facility. I would recommend at least the local grid operator, install, maintain, and operate the protection.",
       "concern": "Protection devices controlled by the load owner are vulnerable to bypass; grid operators should control them",
-      "bins": ["aq:protection", "topic:malicious-actor-loopholes"]
+      "bins": [
+        "aq:protection",
+        "topic:malicious-actor-loopholes"
+      ],
+      "page": null
     },
     {
       "id": 6,
       "text": "I recommend that large‑load interconnection procedures mandate probabilistic and scenario‑based studies that include coordinated cyber‑physical attack cases, not just independent customer behavior cases, and that these scenarios be developed in consultation with agencies like NERC, Department of Defense, E‑ISAC, and RTO/ISO planners.",
       "concern": "Interconnection studies should model coordinated cyber-physical attacks, not only normal operating behavior",
-      "bins": ["aq:jointstudy", "topic:cyber-physical-security"]
+      "bins": [
+        "aq:jointstudy",
+        "topic:cyber-physical-security"
+      ],
+      "page": null
     },
     {
       "id": 7,
       "text": "a hybrid interconnection customer should be subject to penalties for unauthorized injections or withdrawals (outside of a certain reasonable minimum threshold).",
       "concern": "Penalties needed for hybrid facilities that inject or withdraw power beyond their authorized rights",
-      "bins": ["aq:hybridrights", "aq:protection"]
+      "bins": [
+        "aq:hybridrights",
+        "aq:protection"
+      ],
+      "page": null
     },
     {
       "id": 8,
       "text": "Recommend the possibility that curtailment may be mandatory at the system operator's instruction (for emergency situations) and request clarity on how curtailment priority will be established relative to other resources.",
       "concern": "System operators need clear authority to curtail large loads in emergencies",
-      "bins": ["pr:flex", "aq:protection"]
+      "bins": [
+        "pr:flex",
+        "aq:protection"
+      ],
+      "page": null
     },
     {
       "id": 9,
       "text": "If a large load sites near a generator solely to reduce network upgrades, require demonstration of credible commercial arrangements and aligned in‑service dates (to avoid que piggybacking).",
       "concern": "Proximate siting near a generator to reduce upgrade costs should require verified commercial ties",
-      "bins": ["pr:proximate"]
+      "bins": [
+        "pr:proximate"
+      ],
+      "page": null
     }
   ],
   "bins": [
@@ -67,75 +102,111 @@
       "name": "20 MW Threshold Loopholes",
       "stance": "mixed",
       "description": "The commenter accepts the 20 MW threshold concept but flags two gaps: hybrid facilities whose gross load far exceeds their net interconnection amount, and modular load facilities that fragment below the threshold at a shared point. Anti-fragmentation aggregation rules are recommended.",
-      "quote_ids": [1, 2]
+      "quote_ids": [
+        1,
+        2
+      ]
     },
     {
       "key": "aq:hybridrights",
       "name": "Hybrid Facility Unauthorized Withdrawals",
       "stance": "support",
       "description": "The commenter supports penalties for hybrid facilities that inject or withdraw beyond authorized rights and highlights that a hybrid owner could dramatically exceed studied grid impact by switching off on-site generation, creating a national security risk.",
-      "quote_ids": [1, 7]
+      "quote_ids": [
+        1,
+        7
+      ]
     },
     {
       "key": "aq:jurisdiction",
       "name": "Distribution-Connected Large Load Gap",
       "stance": "neutral",
       "description": "The commenter asks whether FERC's transmission-only jurisdiction leaves a gap for large loads connected to distribution wiring and suggests FERC formally refer that gap to agencies with distribution authority.",
-      "quote_ids": [3, 4]
+      "quote_ids": [
+        3,
+        4
+      ]
     },
     {
       "key": "aq:protection",
       "name": "Grid-Operator Control of Protection Devices",
       "stance": "support",
       "description": "The commenter opposes leaving protection device installation and operation solely with the load facility because a malicious actor could bypass them. Grid operators should install, maintain, and operate these devices. Penalties for unauthorized injections or withdrawals and mandatory curtailment authority are also recommended.",
-      "quote_ids": [5, 7, 8]
+      "quote_ids": [
+        5,
+        7,
+        8
+      ]
     },
     {
       "key": "aq:jointstudy",
       "name": "Cyber-Physical Attack Scenarios in Studies",
       "stance": "support",
       "description": "Interconnection studies should go beyond independent customer behavior and include coordinated cyber-physical attack scenarios, developed with NERC, Department of Defense, E-ISAC, and RTO/ISO planners.",
-      "quote_ids": [6]
+      "quote_ids": [
+        6
+      ]
     },
     {
       "key": "pr:flex",
       "name": "Mandatory Curtailment Authority",
       "stance": "support",
       "description": "The commenter recommends that system operators have clear authority to mandate curtailment of large loads in emergencies and that curtailment priority relative to other resources be specified.",
-      "quote_ids": [8]
+      "quote_ids": [
+        8
+      ]
     },
     {
       "key": "pr:proximate",
       "name": "Proximate Siting Commercial Verification",
       "stance": "support",
       "description": "When a large load sites near a generator to reduce network upgrade costs, credible commercial arrangements and aligned in-service dates should be required to prevent queue piggybacking.",
-      "quote_ids": [9]
+      "quote_ids": [
+        9
+      ]
     },
     {
       "key": "topic:malicious-actor-loopholes",
       "name": "National Security Grid Threat Gaps",
       "stance": "neutral",
       "description": "Writing from a Department of Defense critical infrastructure perspective, the commenter identifies multiple points where the proposed rules leave openings for malicious actors: the net-MW hybrid threshold, facility-controlled protection devices, and distribution-connected loads outside FERC jurisdiction.",
-      "quote_ids": [1, 3, 5]
+      "quote_ids": [
+        1,
+        3,
+        5
+      ]
     },
     {
       "key": "topic:anti-fragmentation",
       "name": "Aggregate Affiliated Modular Loads",
       "stance": "support",
       "description": "Phased or modular data center deployments with multiple units below 20 MW but sharing a point of interconnection should be aggregated to prevent threshold evasion through fragmentation.",
-      "quote_ids": [2]
+      "quote_ids": [
+        2
+      ]
     },
     {
       "key": "topic:cyber-physical-security",
       "name": "Cyber-Physical Study Requirements",
       "stance": "support",
       "description": "Probabilistic and scenario-based interconnection studies should include coordinated cyber-physical attack cases in addition to normal operating scenarios, developed with defense and reliability agencies.",
-      "quote_ids": [6]
+      "quote_ids": [
+        6
+      ]
     }
   ],
   "lenses": {
-    "aq": ["threshold", "hybridrights", "jurisdiction", "protection", "jointstudy"],
-    "pr": ["flex", "proximate"],
+    "aq": [
+      "threshold",
+      "hybridrights",
+      "jurisdiction",
+      "protection",
+      "jointstudy"
+    ],
+    "pr": [
+      "flex",
+      "proximate"
+    ],
     "rg": []
   },
   "provenance": {

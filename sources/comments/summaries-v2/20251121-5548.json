@@ -12,7 +12,8 @@
       "concern": "FERC's mandate to protect customers from excessive rates",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "bins": [
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "concern": "Data centers dominate near-term load growth forecasts",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "concern": "Unprecedented scale and speed of data center deployment",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "Data center load growth directly drives infrastructure cost burden on ratepayers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -80,7 +88,8 @@
       "concern": "Energy efficiency should be a core FERC solution",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "concern": "Heat reuse directly addresses cooling, which is the largest data center load component",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "bins": [
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 12,
@@ -105,7 +116,8 @@
       "concern": "Heat reuse is proven but underused in the U.S.",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 13,
@@ -113,7 +125,8 @@
       "concern": "Market alone does not incentivize efficiency",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 14,
@@ -121,7 +134,8 @@
       "concern": "FERC should use regulatory power to incentivize reductions",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 15,
@@ -129,7 +143,8 @@
       "concern": "Speed-to-power incentives are superior to market payments because they drive permanent reductions",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

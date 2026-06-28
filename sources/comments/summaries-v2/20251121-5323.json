@@ -10,43 +10,69 @@
       "id": 1,
       "text": "One of the most significant and widespread delays Oracle encounters when siting data centers in the United States is access to sufficient energy.",
       "concern": "Energy access delays are the primary obstacle Oracle faces when siting U.S. data centers.",
-      "bins": ["pr:study", "topic:energy-access-barriers"]
+      "bins": [
+        "pr:study",
+        "topic:energy-access-barriers"
+      ],
+      "page": 1
     },
     {
       "id": 2,
       "text": "The Commission should support efforts to streamline administrative procedures and harmonize standards related to load sheds and down time.",
       "concern": "Oracle asks FERC to standardize load shedding and downtime rules across regions.",
-      "bins": ["pr:study", "pr:flex", "topic:harmonization"]
+      "bins": [
+        "pr:study",
+        "pr:flex",
+        "topic:harmonization"
+      ],
+      "page": 2
     },
     {
       "id": 3,
       "text": "the Commission could explore imposing decision shot clocks on its own cases.",
       "concern": "Oracle requests binding timelines for FERC decisions to speed interconnection.",
-      "bins": ["pr:study", "topic:process-speed"]
+      "bins": [
+        "pr:study",
+        "topic:process-speed"
+      ],
+      "page": 3
     },
     {
       "id": 4,
       "text": "Shortening longer comment periods and limiting intervenor and reply comment rounds to a single round will allow for public participation without creating a heckler's veto.",
       "concern": "Oracle wants shorter comment periods and a single intervenor reply round to prevent procedural delay.",
-      "bins": ["topic:process-speed"]
+      "bins": [
+        "topic:process-speed"
+      ],
+      "page": 3
     },
     {
       "id": 5,
       "text": "the Commission could explore ways to streamline backstop permitting procedures.",
       "concern": "Oracle supports faster backstop permitting to reduce siting delays.",
-      "bins": ["topic:process-speed"]
+      "bins": [
+        "topic:process-speed"
+      ],
+      "page": 3
     },
     {
       "id": 6,
       "text": "the Commission could encourage ways to harmonize load shedding practices as well as downtime calculations.",
       "concern": "Oracle calls for uniform load shedding and downtime calculation rules to reduce regional patchwork.",
-      "bins": ["pr:flex", "topic:harmonization"]
+      "bins": [
+        "pr:flex",
+        "topic:harmonization"
+      ],
+      "page": 3
     },
     {
       "id": 7,
       "text": "Winning the AI race with an American tech stack requires powering data centers here in the United States and abroad as fast as possible.",
       "concern": "Oracle frames rapid data center power access as a national AI competitiveness imperative.",
-      "bins": ["topic:ai-competitiveness"]
+      "bins": [
+        "topic:ai-competitiveness"
+      ],
+      "page": 3
     }
   ],
   "bins": [
@@ -55,47 +81,68 @@
       "name": "Faster interconnection study process",
       "stance": "support",
       "description": "Oracle supports procedural reforms to speed FERC's own decision-making, including shot clocks and shorter comment periods. The filing links energy access delays directly to slower AI infrastructure deployment.",
-      "quote_ids": [1, 2, 3]
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "key": "pr:flex",
       "name": "Harmonized load shedding rules",
       "stance": "support",
       "description": "Oracle asks FERC to harmonize load shedding practices and downtime calculations across regions, arguing that the current patchwork of standards creates unnecessary friction for data center operators.",
-      "quote_ids": [2, 6]
+      "quote_ids": [
+        2,
+        6
+      ]
     },
     {
       "key": "topic:energy-access-barriers",
       "name": "Energy access as key barrier",
       "stance": "neutral",
       "description": "Oracle identifies insufficient energy access as the single most significant and widespread obstacle it faces when siting U.S. data centers, framing the rulemaking as an opportunity to close that gap.",
-      "quote_ids": [1]
+      "quote_ids": [
+        1
+      ]
     },
     {
       "key": "topic:harmonization",
       "name": "Uniform national standards",
       "stance": "support",
       "description": "Oracle argues that a patchwork of regional load shedding and downtime rules slows data center deployment and asks FERC to encourage harmonized national standards.",
-      "quote_ids": [2, 6]
+      "quote_ids": [
+        2,
+        6
+      ]
     },
     {
       "key": "topic:process-speed",
       "name": "Shot clocks and shorter proceedings",
       "stance": "support",
       "description": "Oracle requests that FERC impose decision shot clocks, shorten comment periods, limit intervenor rounds to one, and streamline backstop permitting to cut the time from application to decision.",
-      "quote_ids": [3, 4, 5]
+      "quote_ids": [
+        3,
+        4,
+        5
+      ]
     },
     {
       "key": "topic:ai-competitiveness",
       "name": "AI race and U.S. dominance",
       "stance": "support",
       "description": "Oracle frames the entire filing around U.S. AI competitiveness, arguing that powering data centers fast is essential to winning the AI race against global rivals.",
-      "quote_ids": [7]
+      "quote_ids": [
+        7
+      ]
     }
   ],
   "lenses": {
     "aq": [],
-    "pr": ["study", "flex"],
+    "pr": [
+      "study",
+      "flex"
+    ],
     "rg": []
   },
   "provenance": {

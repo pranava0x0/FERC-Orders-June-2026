@@ -13,7 +13,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "Siting rules should permit generation beyond the load's direct point of interconnection",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "Proximal siting should be allowed when performance is verifiable",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "aq:expedited",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "concern": "Dispatchable loads achieve resource adequacy more cost-effectively",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "Dispatchability must be defined with enforceable performance parameters",
       "bins": [
         "aq:hybridrights"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -80,7 +88,8 @@
       "concern": "Dispatchability, not location, determines resource adequacy value",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "bins": [
         "aq:expedited",
         "pr:proximate"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 11,
@@ -98,7 +108,8 @@
       "bins": [
         "pr:cost",
         "pr:proximate"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "concern": "Curtailable and dispatchable loads warrant expedited treatment",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "bins": [
         "aq:expedited",
         "pr:study"
-      ]
+      ],
+      "page": 8
     }
   ],
   "bins": [

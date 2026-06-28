@@ -10,67 +10,103 @@
       "id": 1,
       "text": "LPPC expressed support for the objective articulated by the Department of Energy (\"DOE\") of a consistent, nationwide approach to large load interconnection. However, LPPC asked that this be accomplished while respecting the role reserved under the Federal Power Act (\"FPA\") to state authorities over retail service, of which large load is an increasing component.",
       "concern": "Support nationwide consistency while preserving state retail authority",
-      "bins": ["pr:study", "aq:jurisdiction"]
+      "bins": [
+        "pr:study",
+        "aq:jurisdiction"
+      ],
+      "page": null
     },
     {
       "id": 2,
       "text": "LPPC here renews the request outlined in its initial comments that the Commission convene a forum to develop a consensus-based approach to large load interconnection that may be adopted voluntarily across the nation.",
       "concern": "Proposes voluntary consensus framework over mandatory federal rule",
-      "bins": ["pr:study"]
+      "bins": [
+        "pr:study"
+      ],
+      "page": null
     },
     {
       "id": 3,
       "text": "Concerns that LPPC voiced in its initial comments regarding the scope of FERC's authority to mandate large load interconnections as proposed in the ANOPR have been echoed by a broad cross-section of parties in this docket, including the National Association of Regulatory Utility Commissioners (\"NARUC\"), the Edison Electric Institute (\"EEI\"), the National Rural Electric Cooperative Association (\"NRECA\"), the American Public Power Association (\"APPA\") and the overwhelming majority of commenting state commissions.",
       "concern": "Widespread party concern about FERC jurisdictional overreach",
-      "bins": ["aq:jurisdiction"]
+      "bins": [
+        "aq:jurisdiction"
+      ],
+      "page": null
     },
     {
       "id": 4,
       "text": "In its comments, LPPC urged the Commission, should it adopt a rule in this docket, to eschew any intention to interfere with the terms and conditions of retail service, including contractual terms and the assessment and allocation of the cost of generation needed to serve large loads.",
       "concern": "FERC should not interfere with retail service terms or cost allocation",
-      "bins": ["aq:jurisdiction", "pr:cost"]
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost"
+      ],
+      "page": null
     },
     {
       "id": 5,
       "text": "Further, LPPC asked the Commission to clarify that its intention is not to mandate retail wheeling, as would be prohibited by Federal Power Act (\"FPA\") section 210(h).",
       "concern": "Demand clarification that FERC will not mandate retail wheeling",
-      "bins": ["aq:jurisdiction"]
+      "bins": [
+        "aq:jurisdiction"
+      ],
+      "page": null
     },
     {
       "id": 6,
       "text": "In addition, LPPC cautioned that the Commission's assertion of authority over retail interconnections where transmission remains bundled with retail sales is questionable, and fraught with potential unintended consequences as to the scope of responsibility over retail transmission that the assertion of this jurisdiction would entail.",
       "concern": "FERC jurisdiction over bundled retail-transmission interconnections is legally questionable",
-      "bins": ["aq:jurisdiction"]
+      "bins": [
+        "aq:jurisdiction"
+      ],
+      "page": null
     },
     {
       "id": 7,
       "text": "NARUC \"pledges to engage with regulated entities and with other stakeholders to explore consensus solutions for FERC's consideration that will help meet national goals, while avoiding disputes over jurisdiction that would impede achieving our shared goals.\"",
       "concern": "Aligned stakeholder support for consensus solutions avoiding jurisdiction disputes",
-      "bins": ["pr:study"]
+      "bins": [
+        "pr:study"
+      ],
+      "page": null
     },
     {
       "id": 8,
       "text": "Rather than unilaterally imposing federal jurisdiction on these interconnections, FERC should pursue a cooperative approach – potentially developing voluntary best practices with states and other novel approaches to meet the moment – without undermining state authority or established statutory frameworks.",
       "concern": "Reject unilateral federal imposition; pursue state-cooperative voluntary best practices",
-      "bins": ["aq:jurisdiction", "pr:study"]
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ],
+      "page": null
     },
     {
       "id": 9,
       "text": "That forum, overseen by FERC, should include NARUC and representatives from the investor-owned utility, public power and cooperative communities. LPPC would commit to participate in such a forum and supports the suggestion it understands NARUC will make in reply comments in this docket that this discussion begin with a Commission-sponsored technical conference.",
       "concern": "Proposes FERC-led forum and technical conference with multistate and utility stakeholders",
-      "bins": ["pr:study"]
+      "bins": [
+        "pr:study"
+      ],
+      "page": null
     },
     {
       "id": 10,
       "text": "As to the substance of an interconnection framework, LPPC envisions that the Principles of Reform outlined in the ANOPR would serve as a starting point for relevant discussions. Assuming consensus can be achieved, the framework may be articulated in a policy statement or simply in an order closing this proceeding.",
       "concern": "Use ANOPR reform principles as foundation for consensus-based voluntary framework",
-      "bins": ["pr:study"]
+      "bins": [
+        "pr:study"
+      ],
+      "page": null
     },
     {
       "id": 11,
       "text": "Following some period of time for voluntary adoption of the framework, FERC may reserve the option of taking further action if it determines that progress in interconnecting large loads has unreasonably stalled.",
       "concern": "After voluntary adoption period, FERC can take mandatory action if progress stalls",
-      "bins": ["pr:study"]
+      "bins": [
+        "pr:study"
+      ],
+      "page": null
     }
   ],
   "bins": [
@@ -79,26 +115,49 @@
       "name": "FERC jurisdiction over retail service",
       "stance": "oppose",
       "description": "LPPC and aligned parties oppose FERC's assertion of jurisdiction over large load interconnections, particularly over retail service terms, cost allocation, and retail wheeling. The council expresses concerns that FERC lacks authority under the Federal Power Act to mandate these interconnections, especially where transmission remains bundled with retail sales, and calls for FERC to clarify it will not mandate retail wheeling under section 210(h).",
-      "quote_ids": [1, 3, 4, 5, 6, 8]
+      "quote_ids": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        8
+      ]
     },
     {
       "key": "pr:study",
       "name": "Consensus-based voluntary framework development",
       "stance": "support",
       "description": "LPPC advocates for a Commission-convened forum with state and industry stakeholders to develop a voluntary, consensus-based approach to large load interconnection, beginning with a technical conference. The framework would use ANOPR reform principles as a starting point and could be adopted voluntarily across states, with FERC retaining discretion to mandate action later if progress stalls.",
-      "quote_ids": [1, 2, 7, 8, 9, 10, 11]
+      "quote_ids": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     {
       "key": "pr:cost",
       "name": "Preserve state authority over generation cost allocation",
       "stance": "oppose",
       "description": "LPPC opposes FERC interference in the terms, conditions, and cost allocation for generation serving large loads. The council argues that assessment and allocation of generation costs for large load service should remain under state authority, not subject to federal mandate.",
-      "quote_ids": [1, 4]
+      "quote_ids": [
+        1,
+        4
+      ]
     }
   ],
   "lenses": {
-    "aq": ["jurisdiction"],
-    "pr": ["study", "cost"],
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "study",
+      "cost"
+    ],
     "rg": []
   },
   "provenance": {

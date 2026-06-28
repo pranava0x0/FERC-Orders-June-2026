@@ -12,7 +12,8 @@
       "concern": "Transmission expansion must be central, not optional",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "April 2026 deadline is too tight",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "pr:colo",
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "pr:cost",
         "rg:spp"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
         "rg:miso",
         "rg:spp",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "concern": "AI demand requires more transmission capacity",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "concern": "GETs and HPCs are essential for cost-effective service",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "concern": "Interconnection needs must be integrated with transmission planning",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "concern": "Integrated planning produces better solutions",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "concern": "Current piecemeal approach is inefficient",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 13,
@@ -114,7 +126,8 @@
       "concern": "Limited resources make expedited queue problematic",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 14,
@@ -122,7 +135,8 @@
       "concern": "Holistic planning preferable to queue prioritization",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 15,
@@ -132,7 +146,8 @@
         "aq:deposits",
         "aq:jointstudy",
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 16,
@@ -140,7 +155,8 @@
       "concern": "Serial process causes inefficiencies",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 17,
@@ -148,7 +164,8 @@
       "concern": "Require evaluation of advanced transmission technologies",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

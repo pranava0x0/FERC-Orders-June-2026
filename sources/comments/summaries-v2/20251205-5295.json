@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "topic:urgency-of-action"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
         "aq:jurisdiction",
         "pr:colo",
         "topic:urgency-of-action"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
         "aq:deposits",
         "pr:cost",
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -51,7 +55,8 @@
       "bins": [
         "pr:colo",
         "topic:urgency-of-action"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -61,7 +66,8 @@
         "aq:hybridrights",
         "pr:colo",
         "topic:existing-gen-retention"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 7,
@@ -71,7 +77,8 @@
         "pr:colo",
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 8,
@@ -79,7 +86,8 @@
       "concern": "FERC has clear jurisdiction over co-located facilities at generator interconnection points",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 9,
@@ -89,7 +97,8 @@
         "aq:hybridrights",
         "pr:cost",
         "pr:proximate"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "bins": [
         "pr:cost",
         "pr:colo"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 11,
@@ -107,7 +117,8 @@
       "bins": [
         "aq:protection",
         "pr:colo"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 12,
@@ -117,7 +128,8 @@
         "pr:cost",
         "aq:deposits",
         "topic:ratepayer-protection"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 13,
@@ -126,7 +138,8 @@
       "bins": [
         "pr:cost",
         "aq:deposits"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 14,
@@ -136,7 +149,8 @@
         "aq:jurisdiction",
         "pr:study",
         "topic:undue-discrimination"
-      ]
+      ],
+      "page": 25
     },
     {
       "id": 15,
@@ -145,7 +159,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:undue-discrimination"
-      ]
+      ],
+      "page": 27
     },
     {
       "id": 16,
@@ -155,7 +170,8 @@
         "aq:deposits",
         "pr:study",
         "topic:load-forecasting"
-      ]
+      ],
+      "page": 28
     },
     {
       "id": 17,
@@ -164,7 +180,8 @@
       "bins": [
         "pr:study",
         "topic:load-forecasting"
-      ]
+      ],
+      "page": 28
     }
   ],
   "bins": [

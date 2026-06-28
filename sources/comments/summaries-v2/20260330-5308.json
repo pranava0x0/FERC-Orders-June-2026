@@ -13,7 +13,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:and-pricing-exemption"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 5,
@@ -51,7 +55,8 @@
         "aq:upgradecost",
         "pr:cost",
         "rg:pjm"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 6,
@@ -61,7 +66,8 @@
         "aq:upgradecost",
         "pr:cost",
         "rg:pjm"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -71,7 +77,8 @@
         "aq:upgradecost",
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -79,7 +86,8 @@
       "concern": "WIRES takes no position on which alternative cost allocation method should replace direct assignment",
       "bins": [
         "topic:no-specific-alternative"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "bins": [
         "pr:cost",
         "topic:customer-affordability"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -97,7 +106,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 11,
@@ -107,7 +117,8 @@
         "pr:colo",
         "aq:upgradecost",
         "topic:and-pricing-exemption"
-      ]
+      ],
+      "page": 27
     },
     {
       "id": 12,
@@ -117,7 +128,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:crediting-mechanism"
-      ]
+      ],
+      "page": 27
     }
   ],
   "bins": [

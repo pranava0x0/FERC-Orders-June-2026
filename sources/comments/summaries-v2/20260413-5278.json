@@ -12,7 +12,8 @@
       "concern": "State commissions best positioned for large load interconnection",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "pr:cost",
         "topic:federal-preemption"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "No regulatory gap; states have tools to allocate transmission costs",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "States creating region-specific best practices",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "bins": [
         "pr:cost",
         "topic:data-center-discrimination"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
       "concern": "State commission processes faster than RTO and FERC processes",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -71,7 +78,8 @@
       "concern": "Federal regulation will create uncertainty and unwind existing state initiatives",
       "bins": [
         "topic:federal-preemption"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "concern": "States have ability to allocate transmission costs via cost-of-service studies",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "bins": [
         "pr:cost",
         "topic:federal-preemption"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 11,
@@ -96,7 +106,8 @@
       "concern": "Maintaining federal-state jurisdictional roles prevents unintended harms",
       "bins": [
         "topic:fed-state-jurisdiction"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

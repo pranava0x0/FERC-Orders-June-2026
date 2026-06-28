@@ -12,7 +12,8 @@
       "concern": "Filer seeks accelerated interconnection for baseload and dispatchable generation",
       "bins": [
         "topic:baseload-priority"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Current interconnection processes inadequate for demand surge",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Queue delays cause suboptimal siting decisions",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Comprehensive rulemaking on interconnection needed",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Queue delays restrict deployment of emerging technologies",
       "bins": [
         "topic:tech-innovation"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "U.S. interconnection process slower than international competitors",
       "bins": [
         "topic:international-competition"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "Regulatory process is primary barrier to energy infrastructure deployment",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "System design should prioritize baseload and dispatchable resources",
       "bins": [
         "topic:baseload-priority"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 9,
@@ -76,7 +84,8 @@
       "concern": "FERC should establish prioritization for baseload dispatchable resources",
       "bins": [
         "topic:baseload-priority"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 10,
@@ -84,7 +93,8 @@
       "concern": "Queue prioritization of baseload resources is compatible with nondiscrimination",
       "bins": [
         "topic:baseload-priority"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 11,
@@ -92,7 +102,8 @@
       "concern": "Fusion technology provides baseload power with rapid dispatchability",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 12,
@@ -100,7 +111,8 @@
       "concern": "Collocation reduces transmission congestion and enhances reliability",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 13,
@@ -109,7 +121,8 @@
       "bins": [
         "pr:colo",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 14,
@@ -117,7 +130,8 @@
       "concern": "Fusion can be sited at loads due to geographic and fuel flexibility",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 15,
@@ -126,7 +140,8 @@
       "bins": [
         "pr:colo",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 16,
@@ -135,7 +150,8 @@
       "bins": [
         "topic:baseload-priority",
         "aq:expedited"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 17,
@@ -144,7 +160,8 @@
       "bins": [
         "pr:study",
         "aq:expedited"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 18,
@@ -152,7 +169,8 @@
       "concern": "Queue priority should reflect grid reliability, not just application order",
       "bins": [
         "topic:baseload-priority"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 19,
@@ -160,7 +178,8 @@
       "concern": "Simplified procedures for collocated load-generation projects",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 20,
@@ -169,7 +188,8 @@
       "bins": [
         "pr:colo",
         "aq:expedited"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 21,
@@ -177,7 +197,8 @@
       "concern": "Mandate automated study tools to accelerate interconnection studies",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 22,
@@ -186,7 +207,8 @@
       "bins": [
         "pr:study",
         "aq:expedited"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 23,
@@ -195,7 +217,8 @@
       "bins": [
         "pr:study",
         "topic:tech-innovation"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 24,
@@ -204,7 +227,8 @@
       "bins": [
         "aq:expedited",
         "topic:tech-innovation"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 25,
@@ -212,7 +236,8 @@
       "concern": "Interconnection delays are regulatory, not technical",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     }
   ],
   "bins": [

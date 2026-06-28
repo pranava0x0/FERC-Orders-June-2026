@@ -12,7 +12,8 @@
       "concern": "Large data center loads driven by AI demand unprecedented growth",
       "bins": [
         "topic:load-growth-urgency"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Large data center loads can respond to and amplify grid instability",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "pr:flex",
         "topic:load-reliability-integration"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "NERC is accelerating work via parallel processing instead of sequential phases",
       "bins": [
         "topic:accelerated-timeline"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "bins": [
         "pr:study",
         "topic:accelerated-timeline"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
       "concern": "Interim guidance through Level 3 Alert before standards are finalized",
       "bins": [
         "topic:interim-guidance"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
       "bins": [
         "pr:study",
         "topic:standards-development"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 8,
@@ -71,7 +78,8 @@
       "concern": "Regulatory clarity needed on large load obligations and participants",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 9,
@@ -80,7 +88,8 @@
       "bins": [
         "topic:interim-guidance",
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "bins": [
         "topic:interim-guidance",
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "concern": "Balancing reliability with economic and innovation growth",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "bins": [
         "pr:flex",
         "topic:load-reliability-integration"
-      ]
+      ],
+      "page": 3
     }
   ],
   "bins": [

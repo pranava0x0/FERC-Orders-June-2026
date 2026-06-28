@@ -12,7 +12,8 @@
       "concern": "Agrees that FERC jurisdiction should cover only direct transmission interconnections under the seven-factor test",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Agrees with the 20MW threshold aligned to LGIP generation thresholds",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
         "aq:jointstudy",
         "pr:colo",
         "pr:proximate"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "Opposes copying Order 2023 deposit amounts because they disadvantage smaller, less-capitalized developers",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "Order 2023 financial requirements have concentrated queue access among large-balance-sheet developers",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
       "concern": "Urges FERC to find deterrence mechanisms other than high financial barriers",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "bins": [
         "aq:expedited",
         "pr:study"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "concern": "Asks FERC and DOE to address the engineer shortage driving slow study turnaround times",
       "bins": [
         "topic:workforce-shortage"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "concern": "Reform will worsen the engineer shortage; urges FERC or DOE to offer financial or other support to retain and recruit study engineers",
       "bins": [
         "topic:workforce-shortage"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

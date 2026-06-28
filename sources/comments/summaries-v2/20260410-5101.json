@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "Large loads reduce rates by spreading fixed costs",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "Data center load generates measurable rate reductions",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "Large loads must pay network charges to enable rate benefits",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
         "rg:miso",
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
         "rg:miso",
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -75,7 +82,8 @@
       "bins": [
         "rg:miso",
         "pr:study"
-      ]
+      ],
+      "page": 5
     }
   ],
   "bins": [

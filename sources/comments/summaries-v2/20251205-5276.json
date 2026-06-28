@@ -12,7 +12,8 @@
       "concern": "FERC should proceed cautiously to preserve federal-state jurisdictional balance",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Oppose policies that discriminate against existing generation",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Reject IMM proposal for PJM discretion to favor BYOG or restrict load",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "bins": [
         "pr:proximate",
         "topic:open-access"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 5,
@@ -45,7 +49,8 @@
       "concern": "Large load interconnection involves retail distribution falling under state jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -53,7 +58,8 @@
       "concern": "FERC authority is limited to wholesale transmission, not retail",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -62,7 +68,8 @@
       "bins": [
         "aq:jurisdiction",
         "aq:expedited"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "concern": "Prevent undue discrimination against existing generation",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -78,7 +86,8 @@
       "concern": "BYOG requirements are discriminatory",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 10,
@@ -86,7 +95,8 @@
       "concern": "Disproportionate reliability requirements for existing generation are unlawful",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 11,
@@ -94,7 +104,8 @@
       "concern": "Existing and new generation should compete on equal terms",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 12,
@@ -103,7 +114,8 @@
       "bins": [
         "pr:proximate",
         "topic:existing-gen-retention"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 13,
@@ -112,7 +124,8 @@
       "bins": [
         "pr:study",
         "topic:existing-gen-retention"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 14,
@@ -120,7 +133,8 @@
       "concern": "Policies favoring only new resources distort market signals",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 15,
@@ -129,7 +143,8 @@
       "bins": [
         "pr:proximate",
         "topic:open-access"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 16,
@@ -138,7 +153,8 @@
       "bins": [
         "pr:proximate",
         "topic:open-access"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 17,
@@ -146,7 +162,8 @@
       "concern": "BYOG policies create structural preferences and regulatory uncertainty",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 18,
@@ -156,7 +173,8 @@
         "pr:cost",
         "pr:flex",
         "topic:market-signals"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 19,
@@ -165,7 +183,8 @@
       "bins": [
         "pr:proximate",
         "topic:open-access"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 20,
@@ -173,7 +192,8 @@
       "concern": "Selective restrictions create structural preferences",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 21,
@@ -181,7 +201,8 @@
       "concern": "BYOG creates two-tiered access to transmission service",
       "bins": [
         "topic:open-access"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 22,
@@ -190,7 +211,8 @@
       "bins": [
         "pr:study",
         "topic:byog-reliability"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 23,
@@ -198,7 +220,8 @@
       "concern": "BYOG prioritization creates tiers between new and existing generation",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 24,
@@ -207,7 +230,8 @@
       "bins": [
         "pr:proximate",
         "topic:market-signals"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 25,
@@ -215,7 +239,8 @@
       "concern": "Focus on sufficient generation resources for growing demand",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 26,
@@ -224,7 +249,8 @@
       "bins": [
         "pr:study",
         "aq:threshold"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 27,
@@ -233,7 +259,8 @@
       "bins": [
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 28,
@@ -242,7 +269,8 @@
       "bins": [
         "pr:cost",
         "topic:market-signals"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 29,
@@ -251,7 +279,8 @@
       "bins": [
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 30,
@@ -260,7 +289,8 @@
       "bins": [
         "pr:cost",
         "topic:rba-mechanism"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 31,
@@ -269,7 +299,8 @@
       "bins": [
         "pr:cost",
         "topic:rba-mechanism"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 32,
@@ -278,7 +309,8 @@
       "bins": [
         "pr:flex",
         "topic:rba-mechanism"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 33,
@@ -287,7 +319,8 @@
       "bins": [
         "pr:cost",
         "topic:rba-mechanism"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 34,
@@ -297,7 +330,8 @@
         "pr:flex",
         "aq:expedited",
         "topic:rba-mechanism"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 35,
@@ -306,7 +340,8 @@
       "bins": [
         "pr:flex",
         "topic:rba-mechanism"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 36,
@@ -315,7 +350,8 @@
       "bins": [
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 9
     }
   ],
   "bins": [

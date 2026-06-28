@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "FERC must reform generation interconnection to match the pace of large-load additions",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "concern": "Current generation interconnection models are too slow to meet load growth and reliability needs",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "bins": [
         "pr:cost",
         "topic:entry-fee-model"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
       "bins": [
         "pr:study",
         "topic:proactive-transmission-planning"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "bins": [
         "pr:study",
         "pr:colo"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
       "bins": [
         "pr:cost",
         "topic:national-cost-allocation"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
       "bins": [
         "pr:cost",
         "topic:national-cost-allocation"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 12,
@@ -109,7 +120,8 @@
       "concern": "AEP documents its direct exposure to large-load growth with 28 GW of contracted demand by 2030",
       "bins": [
         "topic:utility-load-growth"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 13,
@@ -118,7 +130,8 @@
       "bins": [
         "pr:cost",
         "topic:retail-tariff-protection"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 14,
@@ -127,7 +140,8 @@
       "bins": [
         "pr:cost",
         "topic:national-cost-allocation"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 15,
@@ -136,7 +150,8 @@
       "bins": [
         "pr:cost",
         "topic:national-cost-allocation"
-      ]
+      ],
+      "page": 20
     }
   ],
   "bins": [

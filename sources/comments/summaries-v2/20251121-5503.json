@@ -12,7 +12,8 @@
       "concern": "CPUC disputes DOE's claim that the ANOPR avoids state jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Large load interconnection is a retail transaction, not a wholesale one, placing it under state authority",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "aq:jurisdiction",
         "aq:threshold"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "20 MW threshold is too low and would sweep in small commercial loads",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
       "concern": "CPUC rejects federal threshold but says if one is set it should be well above 20 MW",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
       "bins": [
         "aq:jointstudy",
         "rg:caiso"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 9,
@@ -80,7 +88,8 @@
       "concern": "Hybrid facilities should be studied on gross injection and withdrawal, not net, to capture peak-condition risks",
       "bins": [
         "aq:hybridrights"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 11,
@@ -98,7 +108,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 12,
@@ -108,7 +119,8 @@
         "pr:flex",
         "aq:expedited",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 13,
@@ -117,7 +129,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 25
     },
     {
       "id": 14,
@@ -126,7 +139,8 @@
       "bins": [
         "aq:protection",
         "rg:caiso"
-      ]
+      ],
+      "page": 24
     },
     {
       "id": 15,
@@ -134,7 +148,8 @@
       "concern": "State authority over large retail load interconnection must be preserved",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 12
     }
   ],
   "bins": [

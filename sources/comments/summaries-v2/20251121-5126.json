@@ -13,7 +13,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
         "pr:flex",
         "pr:colo",
         "topic:puhca-ewg-reform"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "bins": [
         "topic:puhca-ewg-reform",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "topic:puhca-ewg-reform",
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 5,
@@ -50,7 +54,8 @@
       "bins": [
         "topic:puhca-ewg-reform",
         "aq:expedited"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 6,
@@ -60,7 +65,8 @@
         "aq:jointstudy",
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -69,7 +75,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 8,
@@ -79,7 +86,8 @@
         "aq:hybridrights",
         "pr:flex",
         "pr:colo"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 10,
@@ -96,7 +105,8 @@
       "concern": "Deposits and withdrawal penalties filter speculative projects and improve study quality",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 11,
@@ -106,7 +116,8 @@
         "aq:upgradecost",
         "pr:cost",
         "aq:jointstudy"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 12,
@@ -116,7 +127,8 @@
         "aq:hybridrights",
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 13,
@@ -125,7 +137,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:cost"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 14,
@@ -134,7 +147,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:puhca-ewg-reform"
-      ]
+      ],
+      "page": 11
     }
   ],
   "bins": [

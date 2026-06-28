@@ -13,7 +13,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:federal-vs-regional"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "topic:federal-vs-regional",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "Commission should not presume it must exercise large-load jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:bundled-retail-exclusion"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "bins": [
         "rg:miso",
         "topic:federal-vs-regional"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "bins": [
         "topic:federal-vs-regional",
         "pr:flex"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
       "bins": [
         "aq:threshold",
         "pr:flex"
-      ]
+      ],
+      "page": 20
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
       "concern": "MW-only threshold is insufficient; multiple technical factors must be considered",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 20
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "bins": [
         "aq:jointstudy",
         "rg:miso"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 10,
@@ -91,7 +100,8 @@
       "concern": "Financial commitments already exist regionally; federal deposits risk duplication",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 23
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
         "aq:hybridrights",
         "pr:colo",
         "rg:miso"
-      ]
+      ],
+      "page": 24
     },
     {
       "id": 12,
@@ -110,7 +121,8 @@
       "bins": [
         "aq:protection",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 25
     },
     {
       "id": 13,
@@ -119,7 +131,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 26
     },
     {
       "id": 14,
@@ -129,7 +142,8 @@
         "aq:upgradecost",
         "pr:cost",
         "rg:miso"
-      ]
+      ],
+      "page": 27
     },
     {
       "id": 15,
@@ -138,7 +152,8 @@
       "bins": [
         "pr:cost",
         "topic:option-to-build"
-      ]
+      ],
+      "page": 28
     },
     {
       "id": 16,
@@ -148,7 +163,8 @@
         "aq:hybridrights",
         "pr:cost",
         "pr:colo"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 17,
@@ -157,7 +173,8 @@
       "bins": [
         "topic:federal-vs-regional",
         "pr:study"
-      ]
+      ],
+      "page": 33
     },
     {
       "id": 18,
@@ -166,7 +183,8 @@
       "bins": [
         "aq:expedited",
         "topic:transition-grandfathering"
-      ]
+      ],
+      "page": 33
     }
   ],
   "bins": [

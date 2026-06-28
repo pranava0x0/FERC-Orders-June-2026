@@ -10,25 +10,40 @@
       "id": 1,
       "text": "Chemical manufacturing relies on highly reliable and competitively priced electricity, and many future facilities will require transmission-level interconnection in order to expand or modernize operations to meet the increasing demands driven by AI, Data Center, and domestic manufacturing.",
       "concern": "Chemical manufacturers need reliable, affordable electricity and transmission-level interconnection for expansion and modernization.",
-      "bins": ["pr:study", "topic:industrial-load-needs"]
+      "bins": [
+        "pr:study",
+        "topic:industrial-load-needs"
+      ],
+      "page": 1
     },
     {
       "id": 2,
       "text": "Current practices for connecting large loads to the transmission system vary across regions and often create uncertainty for project timelines and upgrade responsibilities.",
       "concern": "Regional inconsistency in large-load interconnection creates timeline and cost uncertainty.",
-      "bins": ["pr:study", "topic:regional-inconsistency"]
+      "bins": [
+        "pr:study",
+        "topic:regional-inconsistency"
+      ],
+      "page": 1
     },
     {
       "id": 3,
       "text": "Chemical manufacturing underpins the semiconductor and artificial intelligence supply chain by providing the critical materials, process chemicals, and infrastructure inputs required for chipmaking and modern data center development.",
       "concern": "Chemical manufacturing is integral to U.S. semiconductor and AI infrastructure, making its electricity access a national competitiveness issue.",
-      "bins": ["topic:industrial-load-needs"]
+      "bins": [
+        "topic:industrial-load-needs"
+      ],
+      "page": 1
     },
     {
       "id": 4,
       "text": "Ensuring reliable electricity access for these facilities is essential to maintaining U.S. competitiveness in advanced technologies.",
       "concern": "Reliable power for chemical plants supports broader U.S. technology competitiveness.",
-      "bins": ["pr:study", "topic:industrial-load-needs"]
+      "bins": [
+        "pr:study",
+        "topic:industrial-load-needs"
+      ],
+      "page": 1
     }
   ],
   "bins": [
@@ -37,26 +52,38 @@
       "name": "Consistent interconnection study rules",
       "stance": "support",
       "description": "ACC supports clearer, more consistent rules for studying and processing large-load interconnection requests. Current regional variation creates uncertainty around project timelines and upgrade responsibilities, which the rulemaking should address.",
-      "quote_ids": [1, 2, 4]
+      "quote_ids": [
+        1,
+        2,
+        4
+      ]
     },
     {
       "key": "topic:industrial-load-needs",
       "name": "Chemical sector electricity access",
       "stance": "support",
       "description": "ACC argues that chemical manufacturing, as a supplier to the semiconductor and AI industries, requires reliable and competitively priced transmission-level electricity. Securing that access is framed as a national competitiveness priority.",
-      "quote_ids": [1, 3, 4]
+      "quote_ids": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "key": "topic:regional-inconsistency",
       "name": "Regional process inconsistency",
       "stance": "mixed",
       "description": "ACC notes that large-load interconnection practices vary across regions, creating uncertainty for industrial project timelines and upgrade cost responsibilities.",
-      "quote_ids": [2]
+      "quote_ids": [
+        2
+      ]
     }
   ],
   "lenses": {
     "aq": [],
-    "pr": ["study"],
+    "pr": [
+      "study"
+    ],
     "rg": []
   },
   "provenance": {

@@ -12,7 +12,8 @@
       "concern": "Rapid large-load growth is overwhelming existing interconnection and cost-allocation frameworks.",
       "bins": [
         "topic:large-load-growth"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Sudden load growth in historically flat regions strains planning assumptions.",
       "bins": [
         "topic:large-load-growth"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "pr:cost",
         "topic:ratepayer-protection"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
         "pr:cost",
         "aq:upgradecost",
         "topic:ratepayer-protection"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
         "pr:cost",
         "aq:upgradecost",
         "rg:pjm"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 9,
@@ -86,7 +94,8 @@
         "pr:cost",
         "aq:upgradecost",
         "topic:ratepayer-protection"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 10,
@@ -95,7 +104,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 11,
@@ -104,7 +114,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 12,
@@ -114,7 +125,8 @@
         "pr:cost",
         "aq:upgradecost",
         "pr:study"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 13,
@@ -123,7 +135,8 @@
       "bins": [
         "pr:cost",
         "topic:tariff-transparency"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 14,
@@ -132,7 +145,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 23
     },
     {
       "id": 15,
@@ -142,7 +156,8 @@
         "aq:deposits",
         "pr:cost",
         "topic:ratepayer-protection"
-      ]
+      ],
+      "page": 29
     }
   ],
   "bins": [
