@@ -196,8 +196,10 @@
   blog) and its **LBNL** claim that a 10% rise in state electricity consumption correlates with ~6¢/kWh
   lower retail prices. AI-industry PR plus a striking empirical claim — audit against the LBNL primary
   and label as contested before any use; do not ship the stat as fact.
-- **low** — Add the **DOE statement applauding FERC** (energy.gov) and **E&E/Politico** coverage as
-  reaction sources. ~~Bloomberg Law read ("Energy Regulator Staves Off Critique…") on how the orders
+- **low** — ~~Add the **DOE statement applauding FERC** (energy.gov)~~ **done (2026-06-28)** — added the
+  June 18 DOE applause statement as the `doeApplaud` source and a **Secretary Chris Wright** voice (the
+  directing agency declaring victory; adds the executive-branch / right-leaning perspective). Still open:
+  **E&E/Politico** coverage as reaction sources. ~~Bloomberg Law read ("Energy Regulator Staves Off Critique…") on how the orders
   were drafted to pre-empt the jurisdictional challenge~~ **done (2026-06-27)** — added as the
   `bloomberglaw` source, a Jennifer Danis voice (litigation-durability), and a "Built to survive appeal"
   consensus line in Discourse.
