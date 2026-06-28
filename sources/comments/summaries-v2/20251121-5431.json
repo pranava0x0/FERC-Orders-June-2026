@@ -4,12 +4,12 @@
   "org_type": "state_commission",
   "filed": "11/21/2025",
   "source_text": "sources/comments/files/20251121-5431__North-Carolina-Utilities-Commission-Public-Staff/NC Public Staff - RM26-4 ANOPR Comments FINAL.txt",
-  "overall_summary": "North Carolina Public Staff asserts FERC lacks clear authority to regulate large load interconnections as the matter is primarily reserved to the states. The comments warn that federal rules risk impeding state jurisdiction over retail rates and generation, and propose a 300 MW threshold to reduce study delays and limit federal overreach into matters better addressed by NERC guidelines and state regulators.",
+  "overall_summary": "North Carolina's consumer advocate urges FERC to regulate transmission-connected load with great caution, if at all, doubting the Commission has authority over an area largely reserved to the states. It argues the ANOPR lacks a section 206 showing of unjust rates, would slow generation interconnection, and risks infringing state retail and siting jurisdiction. If FERC proceeds, it asks that any rule apply only to loads above 300 MW, preserve bundled retail rates, leave state large-load tools intact, and wait for NERC reliability guidelines.",
   "quotes": [
     {
       "id": 1,
-      "text": "it is doubtful that the Commission has authority to order the reforms outlined in the ANOPR, and if it does, its authority is quite narrow.",
-      "concern": "FERC authority is doubtful and narrow",
+      "text": "the Public Staff urges the Commission to enter into regulation of transmission-connected load with great caution, if at all.",
+      "concern": "Overall caution against regulating large load",
       "bins": [
         "aq:jurisdiction"
       ],
@@ -17,8 +17,8 @@
     },
     {
       "id": 2,
-      "text": "Interconnection of load into the transmission system might, in a technical sense, be within FERC's jurisdiction; however, this is an area in which most, if not all, of the authority has been reserved to the states by Congress.",
-      "concern": "Load interconnection authority reserved to states",
+      "text": "it is doubtful that the Commission has authority to order the reforms outlined in the ANOPR, and if it does, its authority is quite narrow.",
+      "concern": "FERC authority over load interconnection is doubtful and narrow",
       "bins": [
         "aq:jurisdiction"
       ],
@@ -26,78 +26,132 @@
     },
     {
       "id": 3,
-      "text": "A Commission rule prescribing the methods, timing, and transmission pricing for interconnecting load to the transmission system could not, at the end of the day, provide any right for that load to be actually served as a retail customer, a matter unquestionably reserved to the states alone.",
-      "concern": "Retail service reserved to states, transmission pricing limited",
+      "text": "this is an area in which most, if not all, of the authority has been reserved to the states by Congress.",
+      "concern": "Load interconnection authority reserved to states",
       "bins": [
-        "aq:jurisdiction",
-        "pr:cost"
+        "aq:jurisdiction"
       ],
-      "page": 3
+      "page": 2
     },
     {
       "id": 4,
-      "text": "Because federal jurisdiction does not extend to facilities used for the generation of electric energy, the rules envisioned by the ANOPR cannot reach the heart of the problem they wish to address. A transmission study of a load that cannot be served is of no value.",
-      "concern": "Generation is state domain, limiting federal rule effectiveness",
+      "text": "A Commission rule prescribing the methods, timing, and transmission pricing for interconnecting load to the transmission system could not, at the end of the day, provide any right for that load to be actually served as a retail customer, a matter unquestionably reserved to the states alone.",
+      "concern": "Federal rule cannot grant a right to retail service, which is state-reserved",
       "bins": [
         "aq:jurisdiction",
-        "pr:study"
+        "aq:hybridrights"
       ],
       "page": 3
     },
     {
       "id": 5,
-      "text": "Even with reasonable study processes in place to minimize speculative projects entering the load queue, adding a new layer to the study process will inevitably cause restudies, delays, and inaccurate studies when projects inevitably either drop out of the queue or seek material changes to their load profiles.",
-      "concern": "Coordinated studies cause delays and restudies",
+      "text": "Because federal jurisdiction does not extend to facilities used for the generation of electric energy, the rules envisioned by the ANOPR cannot reach the heart of the problem they wish to address. A transmission study of a load that cannot be served is of no value.",
+      "concern": "Generation shortage is the real problem and is outside FERC jurisdiction",
       "bins": [
+        "aq:jurisdiction",
         "pr:study"
       ],
-      "page": 6
+      "page": 3
     },
     {
       "id": 6,
-      "text": "the North Carolina Public Staff recommends that if the Commission promulgates a rule on large load interconnection, that it limit its applicability to loads in excess of 300 MW. This would reduce the number of load customers requiring study and limit the projects studied to those most likely to have significant impacts on the bulk electric system.",
-      "concern": "Propose 300 MW threshold to reduce study volume",
+      "text": "to proceed under section 206, the Commission must have substantial record evidence that the existing rate is unjust and unreasonable and that the replacement tariff is just and reasonable. However, the ANOPR does not enumerate any such practices.",
+      "concern": "No FPA section 206 showing of unjust rates supports the ANOPR",
+      "bins": [
+        "topic:legal-basis"
+      ],
+      "page": 4
+    },
+    {
+      "id": 7,
+      "text": "rather than having an incentive to discriminate against large load customers, the economic incentives for utilities favor interconnecting large loads. The ANOPR has not articulated how the proposed rules would result in lower electric rates.",
+      "concern": "Order 888 analogy fails because utilities already want to serve large loads",
+      "bins": [
+        "topic:legal-basis"
+      ],
+      "page": null
+    },
+    {
+      "id": 8,
+      "text": "the proposed rules risk creating a new class of customer that would receive unduly preferential treatment.",
+      "concern": "Rules could give large loads unduly preferential treatment",
+      "bins": [
+        "aq:protection"
+      ],
+      "page": 5
+    },
+    {
+      "id": 9,
+      "text": "adding a new layer to the study process will inevitably cause restudies, delays, and inaccurate studies when projects inevitably either drop out of the queue or seek material changes to their load profiles.",
+      "concern": "Joint load-generation study will cause restudies and delays",
       "bins": [
         "pr:study",
-        "topic:threshold"
+        "aq:jointstudy"
       ],
       "page": 6
     },
     {
-      "id": 7,
-      "text": "any final rule should place no constraints, express or implied, on the authority of states to set the terms and rates for retail customers over generation facilities, or over the siting of transmission.",
-      "concern": "Protect state authority over retail rates and generation",
+      "id": 10,
+      "text": "the North Carolina Public Staff recommends that if the Commission promulgates a rule on large load interconnection, that it limit its applicability to loads in excess of 300 MW.",
+      "concern": "Recommends a 300 MW applicability threshold",
       "bins": [
-        "aq:jurisdiction"
+        "aq:threshold"
+      ],
+      "page": 6
+    },
+    {
+      "id": 11,
+      "text": "any final rule should place no constraints, express or implied, on the authority of states to set the terms and rates for retail customers over generation facilities, or over the siting of transmission.",
+      "concern": "Rule must not constrain state authority over retail rates and siting",
+      "bins": [
+        "aq:protection",
+        "pr:proximate"
       ],
       "page": 7
     },
     {
-      "id": 8,
+      "id": 12,
       "text": "The ANOPR proposal to provide special accommodation to load that agrees to be curtailed is an example of a rule that quickly infringes on state jurisdiction.",
-      "concern": "Curtailment accommodation infringes state authority",
+      "concern": "Curtailment-flexibility accommodation infringes state jurisdiction",
       "bins": [
-        "aq:jurisdiction",
         "pr:flex"
       ],
       "page": 7
     },
     {
-      "id": 9,
-      "text": "Bundled retail rates that include transmission should be preserved. When the Commission issued Order No. 888, it took no action to require these rates to be unbundled, in part to avoid difficult jurisdictional issues.",
-      "concern": "Preserve bundled rates for state visibility",
+      "id": 13,
+      "text": "limit[ing] States’ ability to implement pro ability to implement protective measures, such as large load tariffs and flexibility requirements",
+      "concern": "FERC should not limit state large-load tariffs and flexibility requirements",
       "bins": [
-        "aq:jurisdiction",
-        "pr:cost"
+        "aq:protection",
+        "pr:flex"
       ],
       "page": 7
     },
     {
-      "id": 10,
-      "text": "While NERC is assiduously studying reliability issues associated with serving large loads and preparing to issue guidelines, issuing final rules prior to those guidelines being finalized would be counterproductive.",
-      "concern": "Defer final rules until NERC guidelines finalize",
+      "id": 14,
+      "text": "Bundled retail rates that include transmission should be preserved.",
+      "concern": "Preserve bundled retail rates that include transmission",
       "bins": [
-        "pr:study"
+        "topic:tariff-transparency"
+      ],
+      "page": 7
+    },
+    {
+      "id": 15,
+      "text": "statutory consumer advocates need to retain this tool to ensure they can fully perform their obligation to review and audit monopoly utility costs.",
+      "concern": "Consumer advocates need bundled rates to audit transmission costs",
+      "bins": [
+        "topic:tariff-transparency"
+      ],
+      "page": 7
+    },
+    {
+      "id": 16,
+      "text": "issuing final rules prior to those guidelines being finalized would be counterproductive.",
+      "concern": "FERC should wait for NERC large-load reliability guidelines",
+      "bins": [
+        "topic:nerc-reliability"
       ],
       "page": 8
     }
@@ -105,74 +159,132 @@
   "bins": [
     {
       "key": "aq:jurisdiction",
-      "name": "Federal authority is limited",
+      "name": "FERC lacks jurisdiction over load",
       "stance": "oppose",
-      "description": "North Carolina Public Staff challenges FERC's jurisdictional authority to regulate load interconnections, arguing that retail service, generation, and rate-setting are reserved to the states by Congress. The comments warn that federal rules cannot address the core problem (generation supply) and risk infringing on state authority over retail rates, generation siting, and curtailment terms.",
+      "description": "The Public Staff doubts FERC has authority to regulate transmission-connected load and argues most authority is reserved to the states. It says a federal rule cannot grant a right to retail service and cannot reach the generation shortage that is the real constraint, so it urges great caution if any rule is issued.",
       "quote_ids": [
         1,
         2,
         3,
         4,
-        7,
+        5
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "No federal right to be served",
+      "stance": "oppose",
+      "description": "A federal interconnection rule cannot confer a right for a large load to actually be served as a retail customer, which is reserved to the states alone.",
+      "quote_ids": [
+        4
+      ]
+    },
+    {
+      "key": "topic:legal-basis",
+      "name": "No section 206 unjust-rate showing",
+      "stance": "oppose",
+      "description": "The filing argues the ANOPR lacks the substantial record evidence of unjust and unreasonable rates that section 206 requires. It distinguishes Order No. 888, noting utilities already have economic incentives to serve large loads and the ANOPR never shows the rules would lower rates.",
+      "quote_ids": [
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Protect state authority and customers",
+      "stance": "support",
+      "description": "The Public Staff warns the rules could create a new customer class with unduly preferential treatment and asks that any rule place no constraints on state authority over retail rates, generation, and siting. It supports preserving states' ability to use large-load tariffs and flexibility requirements.",
+      "quote_ids": [
         8,
-        9
+        11,
+        13
       ]
     },
     {
       "key": "pr:study",
-      "name": "Coordinated studies risk delays",
+      "name": "Joint study delays generation",
       "stance": "oppose",
-      "description": "The filing argues that adding large load interconnections to transmission study processes will cause restudies, delays, and inaccurate studies, particularly when projects drop out or change profiles. The staff recommends deferring final rules until NERC completes its reliability guidelines for large loads.",
+      "description": "Studying large loads jointly with generation would add a layer that causes restudies, delays, and inaccurate studies as projects drop out or change profiles. The filing warns this could reverse progress on generation interconnection, which is the system's driving need.",
       "quote_ids": [
-        4,
         5,
-        6,
-        10
-      ]
-    },
-    {
-      "key": "pr:cost",
-      "name": "Preserve cost visibility",
-      "stance": "oppose",
-      "description": "North Carolina Public Staff argues that bundled retail rates (including transmission costs) should remain bundled to preserve state regulatory transparency and oversight. Federal disaggregation of transmission pricing for large loads would undermine state consumer advocates' ability to audit utility costs.",
-      "quote_ids": [
-        3,
         9
       ]
     },
     {
-      "key": "pr:flex",
-      "name": "Curtailment terms are state matter",
+      "key": "aq:jointstudy",
+      "name": "Joint load-generation study concerns",
       "stance": "oppose",
-      "description": "The filing opposes federal rules that provide special accommodation or incentives for loads that agree to curtailment, as such terms directly intrude on state authority to set retail service conditions.",
+      "description": "Adding load into the generation study process risks restudies and delays when load projects drop out or seek material changes, undermining the value of the studies.",
       "quote_ids": [
-        8
+        9
       ]
     },
     {
-      "key": "topic:threshold",
-      "name": "300 MW threshold proposal",
+      "key": "aq:threshold",
+      "name": "Apply only above 300 MW",
       "stance": "support",
-      "description": "North Carolina Public Staff recommends that any federal rule limit its applicability to loads exceeding 300 MW, which would reduce study volume, focus on systemic impacts, reduce jurisdictional concerns (as such loads are unlikely to connect to distribution), and limit collateral impacts on generation interconnection.",
+      "description": "If FERC proceeds, the Public Staff recommends limiting any rule to loads above 300 MW to reduce the number of customers studied, focus on bulk-system impacts, and lessen jurisdictional concerns.",
       "quote_ids": [
-        6
+        10
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "No federal limits on siting",
+      "stance": "oppose",
+      "description": "Any final rule should not constrain state authority over the siting of transmission or over generation facilities serving retail customers.",
+      "quote_ids": [
+        11
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Curtailment accommodation intrudes on states",
+      "stance": "oppose",
+      "description": "The ANOPR's special accommodation for load that agrees to be curtailed quickly infringes state jurisdiction. The filing wants states to keep their ability to set flexibility requirements rather than have FERC impose them.",
+      "quote_ids": [
+        12,
+        13
+      ]
+    },
+    {
+      "key": "topic:tariff-transparency",
+      "name": "Preserve bundled retail rates",
+      "stance": "support",
+      "description": "Bundled retail rates that include transmission should be preserved as they were under Order No. 888. The Public Staff says this gives consumer advocates the transparency they need to review and audit monopoly transmission costs as those costs rise.",
+      "quote_ids": [
+        14,
+        15
+      ]
+    },
+    {
+      "key": "topic:nerc-reliability",
+      "name": "Wait for NERC guidelines",
+      "stance": "support",
+      "description": "The Public Staff agrees all NERC reliability standards must be met and notes NERC's Large Loads Task Force is nearing completion of draft guidelines. It argues issuing final rules before those guidelines are finalized would be counterproductive.",
+      "quote_ids": [
+        16
       ]
     }
   ],
   "lenses": {
     "aq": [
-      "jurisdiction"
+      "jurisdiction",
+      "hybridrights",
+      "protection",
+      "jointstudy",
+      "threshold"
     ],
     "pr": [
       "study",
-      "cost",
+      "proximate",
       "flex"
     ],
     "rg": []
   },
   "provenance": {
-    "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }

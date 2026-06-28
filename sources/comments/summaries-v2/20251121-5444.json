@@ -4,83 +4,166 @@
   "org_type": "clean_energy",
   "filed": "11/21/2025",
   "source_text": "sources/comments/files/20251121-5444__US-Energy-Storage-Coalition/Energy Storage Coalition Comments - FERC ANOPR Docket No. RM26-4-000.txt",
-  "overall_summary": "The U.S. Energy Storage Coalition supports FERC's expedited large load interconnection proposals and argues that energy storage is uniquely suited to enable flexible loads while reducing network upgrade costs. They recommend FERC expand hybrid facility definitions to include storage, establish clear load flexibility standards, and require RTOs/ISOs to develop capacity accreditation for long-duration and multi-day storage systems.",
+  "overall_summary": "The U.S. Energy Storage Coalition supports the ANOPR's proposal to expedite interconnection for curtailable and dispatchable large loads and hybrid facilities, and urges FERC to act promptly. It argues energy storage is uniquely positioned to make loads flexible, and asks the Commission to include storage in the hybrid facility definition, allow constrained charging rights, recognize physically or electrically adjacent paired resources, and develop capacity accreditation for long-duration and multi-day storage.",
   "quotes": [
     {
       "id": 1,
-      "text": "energy storage is uniquely situated to make an expedited interconnection process for large loads both feasible and reliable",
-      "concern": "Storage enables expedited interconnection for flexible large loads",
+      "text": "The ANOPR’s proposal to expedite interconnection studies for large loads and hybrid facilities that agree to be curtailable and dispatchable can, if implemented effectively, significantly increase the pace of interconnection for large loads and their associated supply resources.",
+      "concern": "Supports expedited studies for curtailable large loads and hybrids",
       "bins": [
         "pr:flex",
-        "pr:study"
+        "pr:study",
+        "aq:expedited",
+        "aq:hybridrights"
       ],
-      "page": 2
+      "page": 1
     },
     {
       "id": 2,
-      "text": "the Commission's Large Generator Interconnection Procedures accommodate energy storage, its definition of 'hybrid facilities' in the large load context should also include energy storage",
-      "concern": "Hybrid facility definition should explicitly include storage resources",
+      "text": "As a threshold matter, the Commission should specify that storage resources can be considered as part of a load-supply hybrid.",
+      "concern": "Storage should count as part of a hybrid facility",
       "bins": [
-        "topic:hybrid-definition"
+        "aq:hybridrights",
+        "topic:storage-in-hybrid-definition"
       ],
       "page": 2
     },
     {
       "id": 3,
-      "text": "Energy storage is uniquely positioned as a rapid pathway for making loads curtailable and flexible, enabling them to potentially seek and obtain expedited interconnection.",
-      "concern": "Storage is the key technology for load curtailability and expedited study pathways",
+      "text": "just as the Commission’s Large Generator Interconnection Procedures accommodate energy storage, its definition of “hybrid facilities” in the large load context should also include energy storage.",
+      "concern": "Hybrid facility definition should include energy storage",
       "bins": [
-        "pr:flex",
-        "pr:study"
+        "aq:hybridrights",
+        "topic:storage-in-hybrid-definition"
       ],
       "page": 2
     },
     {
       "id": 4,
-      "text": "Enabling large loads to avoid drawing from the grid by maintaining dispatchable energy during peak demand events—when transmission constraints are most salient—can dramatically reduce or eliminate the need for network upgrades that would otherwise require years of study and construction",
-      "concern": "Storage-backed loads reduce or eliminate network upgrade requirements",
+      "text": "Energy storage is uniquely positioned as a rapid pathway for making loads curtailable and flexible, enabling them to potentially seek and obtain expedited interconnection.",
+      "concern": "Storage is a fast route to making loads flexible",
       "bins": [
-        "pr:cost",
-        "pr:flex"
+        "pr:flex",
+        "aq:expedited"
       ],
       "page": 2
     },
     {
       "id": 5,
-      "text": "the Commission should ensure in any final action that storage resources are permitted to charge in low-usage intervals, when doing so will not trigger the need for expensive and long-lead-time upgrades",
-      "concern": "Storage charging rules should allow low-usage period charging without triggering upgrades",
+      "text": "Enabling large loads to avoid drawing from the grid by maintaining dispatchable energy during peak demand events—when transmission constraints are most salient—can dramatically reduce or eliminate the need for network upgrades that would otherwise require years of study and construction (as well as sizeable costs) to accommodate.",
+      "concern": "Storage-backed flexibility can avoid costly network upgrades",
       "bins": [
         "pr:cost",
+        "pr:flex",
+        "aq:upgradecost"
+      ],
+      "page": 2
+    },
+    {
+      "id": 6,
+      "text": "The Commission should also ensure that load commitments to flexibility can be met by resources physically and/or electrically adjacent to load.",
+      "concern": "Flexibility commitments should be met by adjacent resources",
+      "bins": [
+        "pr:proximate",
+        "aq:hybridrights"
+      ],
+      "page": 3
+    },
+    {
+      "id": 7,
+      "text": "SPP’s recent High Impact Large Load proposal would enable expedited interconnection for load paired with generation, if the resources are within two substations of one another, or one substation if the transmission facility between them is 765kV.",
+      "concern": "Cites SPP's substation-based proximity rule as a model",
+      "bins": [
+        "pr:proximate",
+        "rg:spp"
+      ],
+      "page": 3
+    },
+    {
+      "id": 8,
+      "text": "the Commission should ensure in any final action that storage resources are permitted to charge in low-usage intervals, when doing so will not trigger the need for expensive and long-lead-time upgrades that could easily place loads behind their planned interconnection schedules.",
+      "concern": "Storage should be allowed to charge in low-usage intervals",
+      "bins": [
+        "aq:hybridrights",
+        "pr:flex",
+        "topic:storage-charging-rights"
+      ],
+      "page": 3
+    },
+    {
+      "id": 9,
+      "text": "These limited withdrawal rights should be applicable in defined, constrained intervals, that will enable flexibility while also providing clarity regarding which constraints are binding, and which actions are needed to avoid any adverse impacts.",
+      "concern": "Limited withdrawal rights should apply in defined constrained intervals",
+      "bins": [
+        "topic:storage-charging-rights",
         "pr:flex"
       ],
       "page": 3
     },
     {
-      "id": 6,
-      "text": "certain energy storage and hybrid resources are not accredited in capacity markets today. The Commission should ensure that all grid operators develop capacity accreditation values for long-duration energy storage (>10 hours in duration), multi-day energy storage (>24 hours in duration), and hybrid resources",
-      "concern": "RTOs/ISOs must develop capacity accreditation for long-duration and multi-day storage",
+      "id": 10,
+      "text": "if storage resources are studied using unrealistic assumptions (for instance, that they would opt to charge in congested, high-priced grid intervals), the resulting unnecessarily lengthy study processes could limit load’s ability to benefit from this quickly-deployable asset.",
+      "concern": "Unrealistic charging assumptions would create needlessly long studies",
+      "bins": [
+        "pr:study",
+        "topic:storage-charging-rights"
+      ],
+      "page": null
+    },
+    {
+      "id": 11,
+      "text": "The Commission’s requirement in Order No. 2023 that storage be modeled based upon intended use sets a clear pathway for hybrid interconnection as well.",
+      "concern": "Order 2023 intended-use modeling is a precedent for hybrids",
+      "bins": [
+        "pr:study",
+        "topic:storage-charging-rights"
+      ],
+      "page": 4
+    },
+    {
+      "id": 12,
+      "text": "certain energy storage and hybrid resources are not accredited in capacity markets today. The Commission should ensure that all grid operators develop capacity accreditation values for long-duration energy storage (>10 hours in duration), multi-day energy storage (>24 hours in duration), and hybrid resources that include various combinations of storage and generation.",
+      "concern": "Grid operators should accredit long-duration and multi-day storage",
       "bins": [
         "topic:capacity-accreditation"
       ],
       "page": 5
     },
     {
-      "id": 7,
-      "text": "Without objective criteria, transmission providers will apply inconsistent standards, and developers will face regulatory uncertainty that undermines the benefits of expedited processing.",
-      "concern": "Load flexibility standards must be clear and objective to avoid inconsistent implementation",
+      "id": 13,
+      "text": "No organized market today has accredited battery durations beyond 8 hours.",
+      "concern": "Identifies an 8-hour ceiling on accredited battery duration",
       "bins": [
-        "topic:flexibility-standards",
-        "pr:study"
+        "topic:capacity-accreditation"
+      ],
+      "page": 5
+    },
+    {
+      "id": 14,
+      "text": "On the load side, major considerations include the percentage of load that must be curtailable, how many hours annually a load must be flexible, what response times are required, and whether curtailability commitments must be firm or may be conditional on operational constraints.",
+      "concern": "Lists open design questions on curtailability obligations",
+      "bins": [
+        "pr:flex",
+        "aq:threshold"
       ],
       "page": 6
     },
     {
-      "id": 8,
-      "text": "By advancing policies that allow storage deployment to keep pace with large load growth, the Commission can help stabilize electricity prices for consumers while strengthening America's energy and economic security.",
-      "concern": "Coordinated storage and load deployment stabilizes prices and strengthens energy security",
+      "id": 15,
+      "text": "Without objective criteria, transmission providers will apply inconsistent standards, and developers will face regulatory uncertainty that undermines the benefits of expedited processing.",
+      "concern": "Calls for objective criteria to avoid inconsistent standards",
       "bins": [
         "pr:flex",
-        "pr:cost"
+        "aq:threshold"
+      ],
+      "page": 6
+    },
+    {
+      "id": 16,
+      "text": "The Commission should also be open considering and taking stock of regional differences on these issues.",
+      "concern": "Urges attention to regional differences",
+      "bins": [
+        "aq:threshold"
       ],
       "page": 6
     }
@@ -88,79 +171,154 @@
   "bins": [
     {
       "key": "pr:flex",
-      "name": "Storage enables load flexibility",
+      "name": "Expedited path for flexible loads",
       "stance": "support",
-      "description": "Energy storage is uniquely positioned to make loads curtailable and flexible, enabling expedited interconnection by allowing large loads to avoid drawing during peak constraints and maintaining dispatchable energy during grid stress. This flexibility can be combined with permissive charging rules during low-usage intervals to unlock faster pathways for load deployment.",
+      "description": "The Coalition supports expediting interconnection for curtailable and dispatchable large loads and hybrid facilities. It argues storage is the fastest way to make loads flexible and that storage-backed loads can interconnect with minimal system impact, justifying faster study timelines.",
       "quote_ids": [
         1,
-        3,
         4,
         5,
-        8
-      ]
-    },
-    {
-      "key": "pr:cost",
-      "name": "Storage reduces network upgrade costs",
-      "stance": "support",
-      "description": "Storage-backed flexible loads can dramatically reduce or eliminate the need for expensive, long-lead-time network upgrades by enabling loads to avoid drawing during transmission constraints. Clear charging rules that permit storage to charge during low-usage periods without triggering upgrades unlock cost savings for both developers and consumers.",
-      "quote_ids": [
-        4,
-        5,
-        8
+        8,
+        9,
+        14,
+        15
       ]
     },
     {
       "key": "pr:study",
-      "name": "Joint study of storage and load",
+      "name": "Realistic study assumptions for storage",
       "stance": "support",
-      "description": "Storage resources should be studied jointly with large loads as hybrid facilities to enable expedited interconnection processes. Clear, objective standards for load flexibility criteria are needed to prevent inconsistent transmission provider implementation and ensure developers can reliably access expedited pathways.",
+      "description": "The filer wants load and supply studied together but warns against modeling storage with unrealistic charging assumptions that would lengthen studies. It points to Order No. 2023's intended-use modeling as a workable precedent for hybrid interconnection studies.",
       "quote_ids": [
         1,
-        3,
+        10,
+        11
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Storage avoids network upgrade costs",
+      "stance": "support",
+      "description": "The Coalition argues storage-backed load flexibility during peak events can reduce or eliminate the need for costly, multi-year network upgrades.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "pr:proximate",
+      "name": "Adjacent paired resources for flexibility",
+      "stance": "support",
+      "description": "The filer asks FERC to allow flexibility commitments to be met by resources physically or electrically adjacent to the load, and cites SPP's substation-distance presumption as a useful model for clear pairing rules.",
+      "quote_ids": [
+        6,
         7
       ]
     },
     {
-      "key": "topic:hybrid-definition",
-      "name": "Expand hybrid facility definitions",
+      "key": "aq:hybridrights",
+      "name": "Include storage in hybrid facilities",
       "stance": "support",
-      "description": "FERC should explicitly include energy storage in the hybrid facility definition, consistent with the Large Generator Interconnection Procedures that already accommodate storage. This definition expansion is a threshold requirement to enable storage's role in expedited large load interconnection.",
+      "description": "The Coalition urges FERC to specify that storage resources count as part of a load-supply hybrid and to mirror the generator procedures that already accommodate storage. It also wants hybrid facilities to have a means of expediting interconnection and storage charging rights protected.",
       "quote_ids": [
-        2
+        1,
+        2,
+        3,
+        6,
+        8
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Storage enables expedited interconnection",
+      "stance": "support",
+      "description": "The filer supports an expedited interconnection pathway and argues energy storage is uniquely positioned to make loads curtailable and flexible enough to qualify for it.",
+      "quote_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Reduce upgrade cost via flexibility",
+      "stance": "support",
+      "description": "The Coalition argues maintaining dispatchable storage energy during peaks can dramatically reduce or eliminate the network upgrade costs that would otherwise be required to serve large loads.",
+      "quote_ids": [
+        5
+      ]
+    },
+    {
+      "key": "aq:threshold",
+      "name": "Objective curtailability criteria needed",
+      "stance": "support",
+      "description": "The filer identifies open questions on how much load must be curtailable, how many hours, what response times, and whether commitments are firm. It urges objective criteria to avoid inconsistent standards and regulatory uncertainty, and asks FERC to account for regional differences.",
+      "quote_ids": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP High Impact Large Load model",
+      "stance": "support",
+      "description": "The Coalition cites SPP's High Impact Large Load proposal, which would allow expedited interconnection for load paired with generation within two substations (or one at 765kV), as a helpful example of a proximity presumption.",
+      "quote_ids": [
+        7
+      ]
+    },
+    {
+      "key": "topic:storage-in-hybrid-definition",
+      "name": "Storage in hybrid definition",
+      "stance": "support",
+      "description": "A core ask is that FERC's definition of hybrid facility in the large load context explicitly include energy storage, consistent with how the Large Generator Interconnection Procedures already accommodate storage.",
+      "quote_ids": [
+        2,
+        3
+      ]
+    },
+    {
+      "key": "topic:storage-charging-rights",
+      "name": "Defined storage charging rights",
+      "stance": "support",
+      "description": "The filer asks that storage be permitted to charge in low-usage, defined and constrained intervals without triggering expensive upgrades, that charging be studied alongside injections, and that studies avoid unrealistic charging assumptions.",
+      "quote_ids": [
+        8,
+        9,
+        10,
+        11
       ]
     },
     {
       "key": "topic:capacity-accreditation",
-      "name": "Develop capacity accreditation for long-duration storage",
+      "name": "Accredit long-duration storage",
       "stance": "support",
-      "description": "No organized market today accredits battery durations beyond 8 hours or hybrid resources combining long-duration storage with generation. FERC should direct RTOs/ISOs to develop capacity accreditation values for long-duration (10+ hour), multi-day (24+ hour), and hybrid storage resources to unlock their potential in supporting large load interconnection and grid reliability.",
+      "description": "The Coalition flags that no organized market accredits batteries beyond 8 hours and urges FERC to ensure grid operators develop capacity accreditation values for long-duration, multi-day, and hybrid storage resources to support large load interconnection.",
       "quote_ids": [
-        6
-      ]
-    },
-    {
-      "key": "topic:flexibility-standards",
-      "name": "Establish clear load flexibility criteria",
-      "stance": "support",
-      "description": "FERC should establish objective criteria for load flexibility (curtailment percentage, annual hours, response times, and whether commitments are firm or conditional) to ensure consistent transmission provider implementation. Without such standards, developers face regulatory uncertainty and cannot reliably access expedited processing benefits.",
-      "quote_ids": [
-        7
+        12,
+        13
       ]
     }
   ],
   "lenses": {
-    "aq": [],
+    "aq": [
+      "hybridrights",
+      "expedited",
+      "upgradecost",
+      "threshold"
+    ],
     "pr": [
       "flex",
+      "study",
       "cost",
-      "study"
+      "proximate"
     ],
-    "rg": []
+    "rg": [
+      "spp"
+    ]
   },
   "provenance": {
-    "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }
