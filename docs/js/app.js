@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260628p";
+  var ASSET_VER = "20260629b";
   var D = window.FERC_DATA;
   if (!D) { document.getElementById("main").innerHTML = "<p class='noscript'>Data failed to load (js/data.js).</p>"; return; }
 
@@ -38,6 +38,27 @@
     }).join("");
     return '<div class="srcs"><span class="label">Sources</span>' + chips + "</div>";
   }
+  function isFederalSource(id) {
+    var s = D.SOURCES[id];
+    if (!s) return false;
+    var href = s.url || "";
+    return s.tier === "ferc" || s.tier === "doe" || s.tier === "order" ||
+      /^https?:\/\/([^/]+\.)?(ferc|energy)\.gov\b/i.test(href);
+  }
+  function publicSrcChips(ids) {
+    return srcChips((ids || []).filter(function (id) { return !isFederalSource(id); }));
+  }
+  function commissionerQuoteCite(c, pg) {
+    var d = D.dockets && D.dockets[0];
+    if (!d || !pg) return "";
+    var so = D.SOURCES[d.url];
+    return '<span class="commish-cite"><span class="dir-para mono">p. ' + pg + "</span>" +
+      '<a class="cite-link" href="' + esc(d.pdf) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open ' +
+      esc(c.name) + "'s PJM concurring statement in the committed order PDF at page " + pg +
+      '" title="Committed PJM order PDF, opens inline to p. ' + pg + '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
+      '<a class="cite-link" href="' + esc(so.url) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov PJM order at page ' +
+      pg + '" title="Official ferc.gov source, page ' + pg + '">gov <span class="ext" aria-hidden="true">↗</span></a></span>';
+  }
   function head(h2, lede) {
     return '<div class="section-head"><h2>' + esc(h2) + "</h2>" + (lede ? '<p class="lede">' + esc(lede) + "</p>" : "") + "</div>";
   }
@@ -70,7 +91,7 @@
           var qs = (th.quotes || []).map(function (q) {
             var sp = q.src === "spoken";
             return '<li class="commish-q ' + (sp ? "spoken" : "written") + '">“' + esc(q.t) + "”" +
-              (sp ? '<span class="commish-q-src">spoken · auto-caption' + (q.at ? " · " + esc(q.at) : "") + "</span>" : "") + "</li>";
+              (sp ? '<span class="commish-q-src">spoken · auto-caption' + (q.at ? " · " + esc(q.at) : "") + "</span>" : commissionerQuoteCite(c, q.pg)) + "</li>";
           }).join("");
           return '<div class="commish-theme"><h5 class="commish-theme-h">' + esc(th.name) + "</h5>" +
             (th.desc ? '<p class="commish-theme-d">' + esc(th.desc) + "</p>" : "") +
@@ -87,7 +108,7 @@
         return '<div class="commish"><div class="commish-head"><span class="commish-name">' + esc(c.name) +
           '</span><span class="commish-role">' + esc(c.role) + '</span><span class="commish-tag">' + esc(c.short) + "</span></div>" +
           '<p class="commish-gist">' + esc(c.gist) + "</p>" +
-          '<div class="commish-quote">“…' + esc(c.quote) + '…”</div>' + themed(c) + "</div>";
+          '<div class="commish-quote">“…' + esc(c.quote) + '…”' + commissionerQuoteCite(c, c.quotePg) + "</div>" + themed(c) + "</div>";
       }).join("");
       commish = head("What each commissioner emphasized",
         "All five joined every order unanimously; their concurring statements diverge in emphasis. Each statement is quoted from the orders and cited to the exact page of its own order in the Dockets tab.") +
@@ -269,30 +290,46 @@
 
   /* ---- TAB 3 ---- */
   function renderNews() {
-    var rec = '<div class="reception">' + D.reception.map(function (r) {
+    var recItems = D.reception.filter(function (r) { return !/^FERC\b/.test(r.group); });
+    var rec = '<div class="reception">' + recItems.map(function (r) {
       return '<div class="recep ' + r.stance + '"><div class="recep-head"><span class="recep-group">' + esc(r.group) +
         '</span><span class="stance-pill ' + r.stance + '">' + esc(r.stance) + "</span></div>" +
-        "<p>" + esc(r.body) + "</p>" + srcChips(r.src) + "</div>";
+        "<p>" + esc(r.body) + "</p>" + publicSrcChips(r.src) + "</div>";
     }).join("") + "</div>";
 
     var disc = '<div class="discourse"><div class="disc-col consensus"><h3>Points of consensus</h3><div class="disc-list">' +
-      D.media.consensus.map(function (c) { return '<div class="disc-item">' + esc(c.t) + srcChips(c.src) + "</div>"; }).join("") +
+      D.media.consensus.map(function (c) { return '<div class="disc-item">' + esc(c.t) + publicSrcChips(c.src) + "</div>"; }).join("") +
       '</div></div><div class="disc-col friction"><h3>Points of friction</h3><div class="disc-list">' +
-      D.media.friction.map(function (c) { return '<div class="disc-item">' + esc(c.t) + srcChips(c.src) + "</div>"; }).join("") +
+      D.media.friction.map(function (c) { return '<div class="disc-item">' + esc(c.t) + publicSrcChips(c.src) + "</div>"; }).join("") +
       "</div></div></div>";
 
     var outlets = '<div class="section-head"><h2>Where it’s being covered</h2><p class="lede">Each links to the cited source.</p></div><div class="outlets">' +
-      D.media.outlets.map(function (id) {
+      D.media.outlets.filter(function (id) { return !isFederalSource(id); }).map(function (id) {
         var s = D.SOURCES[id]; if (!s) return "";
         return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
       }).join("") + "</div>";
 
     var LEAN = { right: "Right of center", left: "Left of center", nonpartisan: "Nonpartisan" };
-    var voices = '<div class="voices">' + D.voices.map(function (v) {
+    var voiceCard = function (v) {
       return '<div class="voice ' + v.lean + '"><div class="voice-head"><span class="voice-name">' + esc(v.name) +
         '</span><span class="voice-affil">' + esc(v.affil) + '</span>' +
         '<span class="lean-pill ' + v.lean + '">' + esc(LEAN[v.lean]) + "</span></div>" +
-        "<p>" + esc(v.take) + "</p>" + srcChips(v.src) + "</div>";
+        "<p>" + esc(v.take) + "</p>" + publicSrcChips(v.src) + "</div>";
+    };
+    var voiceItems = D.voices.filter(function (v) { return v.name !== "Chris Wright"; });
+    var voiceByName = {};
+    voiceItems.forEach(function (v) { voiceByName[v.name] = v; });
+    var voiceGroups = [
+      { h: "Data centers & hyperscalers", names: ["Arthur Haubenstock", "Heather McGeory", "Lucia Tian", "Sara Axelrod", "Chase Lochmiller", "Cully Cavness", "Amanda Peterson Corio", "Josh Levi", "Cy McNeill", "Cy McGeady", "David Young", "Tag Greason", "Rima Alaily", "Briana Kobor"] },
+      { h: "Grid flexibility & supply", names: ["Tyler Norris", "Aniruddh Mohan", "Ayse Coskun", "Varun Sivaram", "Tim Latimer", "Jeff Bladen", "Chris Gillett", "Briggs White", "Shanu Mathew"] },
+      { h: "Cost, consumers & public narrative", names: ["Ari Peskoe", "Jeff Dennis", "Ben Inskeep", "Charles Hua", "Jamie Nolan", "Public Citizen", "Sierra Club", "Southern Environmental Law Center", "Simon Mahan"] },
+      { h: "Law, markets & procedure", names: ["Travis Kavulla", "Neil Chatterjee", "Jennifer Danis", "Matthew Christiansen", "Mona Dajani", "Larry Gasteiger", "Jigar Shah", "Ben Schifman", "Devin Hartman"] },
+    ];
+    var voices = '<div class="voice-groups">' + voiceGroups.map(function (g) {
+      var list = g.names.map(function (n) { return voiceByName[n]; }).filter(Boolean);
+      if (!list.length) return "";
+      return '<section class="voice-group"><div class="voice-group-head"><h3>' + esc(g.h) + '</h3><span class="voice-count mono">' + list.length + '</span></div><div class="voices">' +
+        list.map(voiceCard).join("") + "</div></section>";
     }).join("") + "</div>";
 
     // The RM26-4 comment period (stats, respondent types, themes/categories, and the full searchable

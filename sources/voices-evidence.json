@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-06-27",
+  "captured_at": "2026-06-29",
   "note": "Verified source snippets backing the directly-quoted phrases in D.voices (Discourse 'Commentary across the spectrum'). A test in tests/source-accuracy.test.mjs asserts every single-quoted phrase in a voice's take appears in its evidence here, so a future edit to a quote fails loudly until the evidence is re-verified against the cited source.",
   "voices": {
     "Tyler Norris": {
@@ -8,7 +8,7 @@
     },
     "Travis Kavulla": {
       "src": "kavulla",
-      "evidence": "Kavulla proposes borrowing an open season mechanism from interstate natural gas pipeline regulation to replace the current first-come, first-served interconnection process. Winners receive transferable property rights to grid access, not merely revocable regulatory permission."
+      "evidence": "Kavulla proposes borrowing an open season mechanism from interstate natural gas pipeline regulation to replace the current first-come, first-served interconnection process. Winners receive transferable property rights to grid access, not merely revocable regulatory permission. In LinkedIn discussion of his data-center power pricing argument, the concern is that competition between regulated utilities can erode consumer surplus if hyperscalers do not internalize incremental infrastructure costs."
     },
     "Devin Hartman": {
       "src": "utilitydive",
@@ -32,7 +32,7 @@
     },
     "Neil Chatterjee": {
       "src": "heatmap",
-      "evidence": "Neil Chatterjee, a former FERC chairman, characterized the commission's region-specific show cause approach as a very FERC-y approach."
+      "evidence": "Neil Chatterjee, a former FERC chairman, characterized the commission's region-specific show cause approach as a very FERC-y approach. E&E reported Chatterjee saying that FERC was trying to tackle each core challenge on a region by region basis on a tight timeline."
     },
     "Jennifer Danis": {
       "src": "bloomberglaw",
@@ -45,6 +45,122 @@
     "Ari Peskoe": {
       "src": "peskoe",
       "evidence": "By Ari Peskoe: Utilities, however, are thwarting that commitment by rolling billions of dollars in data-center-driven transmission upgrades into rates that everyone pays. FERC should revisit its transmission pricing policy so that it requires utilities to assign the full costs of transmission service to power-hungry data centers. To protect ratepayers, FERC could require utilities to disclose disaggregated pricing structures."
+    },
+    "Jigar Shah": {
+      "src": "jigarferc",
+      "evidence": "Jigar Shah wrote that on June 18 FERC didn't issue a sweeping rule. It did something sneakier and arguably smarter: it issued six region-specific show-cause orders. He framed the move as aimed at speed to power, said FERC is not solving the price problem directly, and argued data centers are not the root cause but an accelerant. He called the missing piece a public, granular capacity and demand map."
+    },
+    "Ben Inskeep": {
+      "src": "benferc",
+      "evidence": "Ben Inskeep wrote that while he rejects the premise that data centers need any more help with interconnection to the grid, he is encouraged to see FERC's large load interconnection action. In Utility Dive's NERC Level 3 alert coverage, Inskeep said that although the impact of unexpected loss of data center load seems to be limited today, the potential growth of AI data centers makes the problem more severe, and that we must have appropriate standards and rules in place that protect ratepayers from any negative stability, reliability and resiliency impacts."
+    },
+    "Aniruddh Mohan": {
+      "src": "mohanferc",
+      "evidence": "Aniruddh Mohan co-authored Eolian's RM26-4 affidavit, which says transmission providers can study the composite behavior of co-located load and generation, and model generation and load so dispatch remains within N-0 and N-1 limits. On X, Mohan flagged the Maryland/PJM complaint as part of increasing scrutiny on who pays for transmission to connect data centers."
+    },
+    "Arthur Haubenstock": {
+      "src": "arthurwm",
+      "evidence": "Arthur Haubenstock discussed data-center power constraints, the operational limits of BYOP / BYONCE ideas (bring your own power / bring your own new clean energy), backup generation limits, local grid impacts, and why grids matter for serving data centers."
+    },
+    "Jeff Dennis": {
+      "src": "jeffdennis",
+      "evidence": "Jeff Dennis and the Electricity Customer Alliance said FERC's action is a critical step to support timely interconnection of large loads while ensuring those loads bear the costs incurred to serve them, improving transparency, and supporting coordination with states. IEEE reported Dennis saying FERC is threading the needle between speed to power and public concerns about bill impacts."
+    },
+    "Ben Schifman": {
+      "src": "xschifman",
+      "evidence": "Ben Schifman argues in an X article that FERC's large-load reforms are meaningful interconnection reforms, but that security gaps remain as more data-center demand connects to the grid."
+    },
+    "Simon Mahan": {
+      "src": "simonmahan",
+      "evidence": "Simon Mahan of the Southern Renewable Energy Association said manufacturers and data centers are bringing jobs and investment to the region. The Southeast needs a modern transmission system or we risk higher energy prices, power shortages, and lost economic opportunities."
+    },
+    "Rima Alaily": {
+      "src": "rimaalaily",
+      "evidence": "Rima Alaily wrote that Microsoft has committed to pay our way to ensure its data centers do not increase residents' electricity prices, pointing to a Very Large Customer tariff as the mechanism."
+    },
+    "Briana Kobor": {
+      "src": "brianakobor",
+      "evidence": "Briana Kobor presented Google's Capacity Commitment Framework as a way to shift risk and reduce capacity planning uncertainty. The framework uses long-term capacity commitments, upfront deposits, minimum charges, collateral and transparent modification fees to move forecasting risk from utilities to large customers."
+    },
+    "Briggs White": {
+      "src": "briggswhite",
+      "evidence": "Briggs White wrote that data-center demand is a physical infrastructure buildout, with co-location now assumed and emergency data-center load reduction ripe for deeper industry analysis. He also highlighted gas-turbine, transformer and interconnection lead times and the need to balance affordability and reliability."
+    },
+    "Heather McGeory": {
+      "src": "heathermcgeory",
+      "evidence": "Heather McGeory of CoreWeave said power conversations for individual data centers have moved from megawatts to gigawatts, framing AI infrastructure as a national-security and energy-procurement challenge."
+    },
+    "Ayse Coskun": {
+      "src": "aysecoskun",
+      "evidence": "Ayse Coskun's work at Boston University and Emerald AI focuses on transforming data centers into grid-responsive powerhouses, using data-center energy flexibility as a tool for grid stability and sustainability."
+    },
+    "Varun Sivaram": {
+      "src": "varunsivaram",
+      "evidence": "Varun Sivaram argues that flexible AI data centers can adjust demand dynamically and act as grid assets, not only as fixed loads. Emerald AI's public materials describe data centers relieving grid stress while preserving performance."
+    },
+    "Tim Latimer": {
+      "src": "timlatimer",
+      "evidence": "Tim Latimer and Fervo Energy are tied to Google data-center clean-power procurement through advanced geothermal projects, including Nevada and Utah development intended to supply firm 24/7 clean power."
+    },
+    "Jeff Bladen": {
+      "src": "jeffbladen",
+      "evidence": "Jeff Bladen of Verrus argues that asset-backed flexible data centers can operate as grid assets using physical storage, controls, telemetry and coordinated operations, rather than behaving like passive loads or old demand-response programs."
+    },
+    "Jamie Nolan": {
+      "src": "jamienolan",
+      "evidence": "Jamie Nolan frames data centers as a guardrails problem rather than a simple good-or-bad story: without the right deal structure they can be a Loudoun County cautionary tale, while with the right guardrails they can help local bills rather than drive them up."
+    },
+    "Lucia Tian": {
+      "src": "luciatian",
+      "evidence": "Lucia Tian of Google frames AI power demand as a race to secure carbon-free energy through advanced geothermal, nuclear, long-duration storage and grid optimization."
+    },
+    "Sara Axelrod": {
+      "src": "saraaxelrod",
+      "evidence": "Sara Axelrod of Crusoe frames AI compute as making energy the defining constraint and competitive advantage for data infrastructure, with Crusoe pursuing energy-first infrastructure and co-location with abundant or stranded power."
+    },
+    "Chase Lochmiller": {
+      "src": "chaselochmiller",
+      "evidence": "Chase Lochmiller of Crusoe says developers are pairing data-center growth with behind-the-meter generation and siting near stranded or underused power, making power availability central to data-center buildout."
+    },
+    "Cully Cavness": {
+      "src": "cullycavness",
+      "evidence": "Cully Cavness of Crusoe described gas as a bridge to grid power at Abilene / Stargate, showing that AI data-center projects are also power-development projects while the grid catches up."
+    },
+    "Amanda Peterson Corio": {
+      "src": "amandapc",
+      "evidence": "Amanda Peterson Corio of Google said the sector needs solutions that better utilize the electric system. Utility Dive also reports her argument that paying other customers to shift load can be faster and more cost effective than curtailing expensive data-center chips."
+    },
+    "Charles Hua": {
+      "src": "charleshua",
+      "evidence": "Charles Hua calls data centers an important energy topic but warns that blaming every bill increase on data centers is too simple. His PowerLines work focuses on utility incentives, transparency, regulatory modernization and consumer-centered oversight."
+    },
+    "Chris Gillett": {
+      "src": "chrisgillett",
+      "evidence": "Chris Gillett argues America has enough electricity in aggregate for AI buildout, but the bottleneck is connecting data centers and power plants to the grid. He points to study, connection and flexible connection-rights reforms."
+    },
+    "Shanu Mathew": {
+      "src": "shanumathew",
+      "evidence": "Shanu Mathew focuses on energized GW rather than announced demand, treating power constraints and political resistance as the variables that decide which data-center projects become real. His FERC thread reads the reform as fixing slow, inconsistent interconnection rules and making full upgrade-cost responsibility part of the bargain."
+    },
+    "Josh Levi": {
+      "src": "joshlevi",
+      "evidence": "Josh Levi of the Data Center Coalition testified to FERC that the industry needs faster infrastructure development and broader public understanding of data centers' role in the grid and modern economy."
+    },
+    "Cy McGeady": {
+      "src": "cymcgeady",
+      "evidence": "Cy McGeady argues that electricity supply is a bottleneck for U.S. AI dominance and that data-center investment follows generation, permitting and land-use constraints."
+    },
+    "Cy McNeill": {
+      "src": "cymcneill",
+      "evidence": "Cy McNeill is listed by the Data Center Coalition as Senior Director of Federal Affairs. The DCC source places him in the federal policy lane for transmission, siting, permitting and energy-market advocacy for the data-center industry, distinct from Cy McGeady at Equinix."
+    },
+    "David Young": {
+      "src": "davidyoung",
+      "evidence": "David Young of Equinix is listed as a Data Center Coalition Federal Policy Leadership Advisory Council co-chair, representing the data-center industry's organized federal policy lane."
+    },
+    "Tag Greason": {
+      "src": "taggreason",
+      "evidence": "Tag Greason of QTS discusses hyperscale AI demand and the bottlenecks involved in delivering actual data-center capacity, including the capital and infrastructure side of the buildout."
     },
     "Larry Gasteiger": {
       "src": "bloomberglaw",
