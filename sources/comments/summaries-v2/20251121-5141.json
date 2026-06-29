@@ -12,7 +12,8 @@
       "concern": "ITC supports expedited large load interconnection",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "20 MW threshold too low; recommend 50-100 MW",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "50-100 MW threshold better matches large load characteristics",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Higher threshold prevents delays and aligns resources",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "System-wide benefits justify cost recovery through transmission rates",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "Utilities must recover costs and earn reasonable returns",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "Shareholders must not subsidize upgrades without return on investment",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "Option-to-build poses reliability risks; utilities should retain construction role",
       "bins": [
         "topic:construction-rights"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -76,7 +84,8 @@
       "concern": "Third-party construction risks fragmentation and inconsistent standards",
       "bins": [
         "topic:construction-rights"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -84,7 +93,8 @@
       "concern": "Misalignment of incentives between builder and system operator",
       "bins": [
         "topic:construction-rights"
-      ]
+      ],
+      "page": 5
     }
   ],
   "bins": [

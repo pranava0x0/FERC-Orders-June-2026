@@ -14,7 +14,8 @@
         "pr:study",
         "pr:colo",
         "topic:lcep-new-service"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
         "pr:study",
         "pr:colo",
         "topic:lcep-new-service"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
         "aq:jurisdiction",
         "pr:study",
         "topic:fpa-206-finding"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -44,7 +47,8 @@
         "aq:hybridrights",
         "pr:study",
         "topic:lcep-new-service"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 5,
@@ -54,7 +58,8 @@
         "aq:jurisdiction",
         "pr:proximate",
         "topic:fpa-206-finding"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 6,
@@ -64,7 +69,8 @@
         "aq:hybridrights",
         "pr:study",
         "topic:fpa-206-finding"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 7,
@@ -74,7 +80,8 @@
         "aq:expedited",
         "pr:study",
         "topic:lcep-new-service"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 8,
@@ -84,7 +91,8 @@
         "aq:expedited",
         "pr:study",
         "topic:lcep-new-service"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 9,
@@ -94,7 +102,8 @@
         "aq:hybridrights",
         "pr:flex",
         "topic:lcep-operational-terms"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 10,
@@ -104,7 +113,8 @@
         "aq:jointstudy",
         "pr:study",
         "topic:lcep-new-service"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 11,
@@ -114,7 +124,8 @@
         "aq:jointstudy",
         "pr:study",
         "topic:study-transparency"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 12,
@@ -124,7 +135,8 @@
         "pr:cost",
         "pr:study",
         "topic:lcep-new-service"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 13,
@@ -134,7 +146,8 @@
         "pr:study",
         "pr:colo",
         "aq:jointstudy"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 14,
@@ -143,7 +156,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:ferc-jurisdiction"
-      ]
+      ],
+      "page": 14
     }
   ],
   "bins": [

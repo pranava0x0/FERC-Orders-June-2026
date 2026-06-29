@@ -12,7 +12,8 @@
       "concern": "April 2026 deadline risks undermining participation and legal durability",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Request for adequate comment periods",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "FERC's legal authority over load interconnections is uncertain",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Rulemaking must not encroach on state authority over distribution",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Rule must be narrow to avoid expanding FERC jurisdiction over distribution",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "FERC must prescribe clear jurisdictional limits in the proposed rule",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:state-regional-flexibility"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:state-regional-flexibility"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "bins": [
         "pr:cost",
         "aq:deposits"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "bins": [
         "pr:flex",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "bins": [
         "pr:flex",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 9
     }
   ],
   "bins": [

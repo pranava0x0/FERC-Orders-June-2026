@@ -4,192 +4,274 @@
   "org_type": "generator_ipp",
   "filed": "11/21/2025",
   "source_text": "sources/comments/files/20251121-5358__Tesla-Inc/Tesla_FERC_ANOPR.txt",
-  "overall_summary": "Tesla supports the proposed ANOPR framework, endorsing measures that apply deposits and study requirements to data center and crypto mining loads while enabling hybrid facility colocation. Tesla urges expedited review pathways for capacity additions that offset generation loss, standardized reliability requirements at the point of interconnection, and recognition of distributed energy resources and virtual power plants as meaningful tools to alleviate transmission constraints and support faster large load interconnection.",
+  "overall_summary": "Tesla broadly supports the Commission's reform principles and offers refinements drawn from its Gigafactory Texas experience, urging clearer and more predictable large-load interconnection. It pushes for expedited reviews of behind-the-meter storage that offsets generation loss, standardized technology-neutral minimum interconnection standards, and recognition of distributed energy resources and virtual power plants as tools to ease transmission constraints.",
   "quotes": [
     {
       "id": 1,
-      "text": "we believe that requirements should be instituted for large loads presumed to be data centers or crypto mining centers",
-      "concern": "Apply deposits and readiness requirements specifically to data center and crypto mining loads",
+      "text": "Tesla is generally supportive of concepts that limit duplicative load interconnection requests; however, we believe that requirements should be instituted for large loads presumed to be data centers or crypto mining centers.",
+      "concern": "Supports study deposits and readiness requirements, targeted at data center and crypto large loads",
       "bins": [
+        "pr:flex",
         "aq:deposits"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
-      "text": "hybrid facilities should be studied based on the amount of injection and/or withdrawal rights requested to incentivize colocation and efficiency buildout",
-      "concern": "Study hybrid facilities based on injection and withdrawal rights to incentivize colocation",
+      "text": "a system should be established to provide credit back for study deposits, but perhaps through transmission credits.",
+      "concern": "Wants study deposits refundable via transmission credits",
       "bins": [
-        "pr:colo"
-      ]
+        "aq:deposits",
+        "pr:cost"
+      ],
+      "page": 2
     },
     {
       "id": 3,
-      "text": "any additional load or battery energy storage systems (BESS) installed behind-the-meter (BTM) at large load facilities count towards the point of interconnection (POI) limit",
-      "concern": "Behind-the-meter capacity should count toward POI limits",
+      "text": "Tesla strongly endorses the fifth principle, which notes that hybrid facilities should be studied based on the amount of injection and/or withdrawal rights requested to incentivize colocation and efficiency buildout.",
+      "concern": "Strongly endorses studying hybrid facilities by injection/withdrawal rights to incentivize colocation",
       "bins": [
-        "pr:proximate"
-      ]
+        "pr:colo",
+        "aq:hybridrights"
+      ],
+      "page": 2
     },
     {
       "id": 4,
-      "text": "capacity additions behind the same POI that offset generation loss to serve load should be permitted with expedited reviews, assuming the system maintains consistent or similar POI import/export limitations",
-      "concern": "Permit expedited review of capacity additions offsetting generation loss",
+      "text": "We suggest that any additional load or battery energy storage systems (BESS) installed behind-the-meter (BTM) at large load facilities count towards the point of interconnection (POI) limit.",
+      "concern": "Behind-the-meter load and storage should count toward POI limit",
       "bins": [
-        "pr:proximate"
-      ]
+        "pr:colo",
+        "aq:hybridrights"
+      ],
+      "page": 2
     },
     {
       "id": 5,
-      "text": "Tesla recommends establishing minimum interconnection standards for large loads, including ramp rate, load stability, and voltage ride-through rate as standardized with the process. These should be applied at the POI and with a technology-neutral lens.",
-      "concern": "Establish minimum interconnection standards applied uniformly across regions",
+      "text": "Tesla believes that capacity additions behind the same POI that offset generation “loss” to serve load should be permitted with expedited reviews, assuming the system maintains consistent or similar POI import/export limitations.",
+      "concern": "Wants expedited review for storage offsetting generation loss at same POI",
       "bins": [
-        "pr:study"
-      ]
+        "aq:expedited",
+        "pr:colo",
+        "pr:flex"
+      ],
+      "page": 2
     },
     {
       "id": 6,
-      "text": "if a load meets the minimum interconnection standards, additional information on its makeup, which may change over time, should not be required--especially at early stages in the load's development when it may not be available",
-      "concern": "Limit information requirements once minimum standards are met",
+      "text": "Tesla recommends establishing minimum interconnection standards for large loads, including ramp rate, load stability, and voltage ride-through rate as standardized with the process.",
+      "concern": "Recommends standardized minimum interconnection standards for large loads",
       "bins": [
-        "pr:study"
-      ]
+        "aq:protection",
+        "topic:load-performance-standards"
+      ],
+      "page": 2
     },
     {
       "id": 7,
-      "text": "In 2024, Tesla pursued interconnection for the Gigafactory Texas Megapack project, declaring the use case as back-up generation to load. The interconnection process bucket was unclear for this application and, therefore, ERCOT developed a pathway.",
-      "concern": "ERCOT had to create novel pathway for BESS as backup generation",
+      "text": "These should be applied at the POI and with a technology-neutral lens. Similar performance expectations are being applied or developed in regions (e.g. SPP and ERCOT) and could serve as a foundation for national best practices.",
+      "concern": "Standards should be technology-neutral and build on SPP and ERCOT practice",
       "bins": [
-        "rg:spp",
-        "topic:bess-clarity"
-      ]
+        "topic:load-performance-standards",
+        "rg:spp"
+      ],
+      "page": 2
     },
     {
       "id": 8,
-      "text": "Tesla reevaluated regulatory requirements and discovered that a non-exporting BESS back-up generator did not require ERCOT registration. This finding was initially validated by ERCOT's presentation to the Texas House of Representatives Committee on State Affairs and later reinforced by ERCOT's Large Load Working Group",
-      "concern": "Non-exporting BESS does not require registration but clarification was needed",
+      "text": "if a load meets the minimum interconnection standards, additional information on its makeup, which may change over time, should not be required—especially at early stages in the load’s development when it may not be available.",
+      "concern": "Once standards are met, no further load-makeup disclosure should be required",
       "bins": [
-        "topic:bess-clarity"
-      ]
+        "topic:load-performance-standards"
+      ],
+      "page": 2
     },
     {
       "id": 9,
       "text": "This experience highlights a broader need to establish greater clarity, efficiency, and predictability in the interconnection process as large load growth driven by manufacturing facilities and data centers continues at a rapid pace.",
-      "concern": "Interconnection process needs greater clarity, efficiency, and predictability",
+      "concern": "Urges clarity, efficiency, and predictability in the interconnection process",
       "bins": [
-        "pr:study"
-      ]
+        "aq:expedited",
+        "topic:interconnection-predictability"
+      ],
+      "page": 3
     },
     {
       "id": 10,
-      "text": "Tesla urges the recognition of DERs and VPPs as meaningful grid service tools that can support faster interconnection of large loads to the transmission system. VPPs should be considered for their potential to alleviate transmission network constraints and capacity needs associated with the interconnection of large loads.",
-      "concern": "Recognize DERs and VPPs to accelerate large load interconnection and alleviate transmission constraints",
+      "text": "Tesla urges the recognition of DERs and VPPs as meaningful grid service tools that can support faster interconnection of large loads to the transmission system.",
+      "concern": "Urges recognition of DERs and VPPs as tools for faster large-load interconnection",
       "bins": [
-        "topic:der-vpp"
-      ]
+        "topic:der-vpp-capacity"
+      ],
+      "page": 4
     },
     {
       "id": 11,
-      "text": "FERC must address challenges in 2222 implementations including: 1) metering and telemetry barriers, 2) device size thresholds, 3) state-level barriers, and particularly 4) the lack of pathways for DERs receiving retail rate credits",
-      "concern": "Order 2222 implementation barriers limit DER and VPP participation",
+      "text": "VPPs should be considered for their potential to alleviate transmission network constraints and capacity needs associated with the interconnection of large loads.",
+      "concern": "VPPs should be counted as capacity that relieves transmission constraints",
       "bins": [
-        "topic:order2222"
-      ]
+        "topic:der-vpp-capacity"
+      ],
+      "page": 4
+    },
+    {
+      "id": 12,
+      "text": "restrictive interpretations of Order No. 2222 continue to limit the participation of these resources. Currently, no interpretation of the Order practically enables the full value of an inverter-based DER.",
+      "concern": "Order 2222 implementations restrict DER participation",
+      "bins": [
+        "topic:order-2222"
+      ],
+      "page": 4
+    },
+    {
+      "id": 13,
+      "text": "FERC must address challenges in 2222 implementations including: 1) metering and telemetry barriers, 2) device size thresholds, 3) state-level barriers, and particularly 4) the lack of pathways for DERs receiving retail rate credits.",
+      "concern": "Lists specific Order 2222 barriers FERC must fix",
+      "bins": [
+        "topic:order-2222"
+      ],
+      "page": 4
     }
   ],
   "bins": [
     {
-      "key": "aq:deposits",
-      "name": "Study deposits for data center loads",
+      "key": "pr:flex",
+      "name": "Readiness rules for speculative loads",
       "stance": "support",
-      "description": "Tesla supports applying study deposit, readiness, and withdrawal penalty requirements, but specifically to large loads presumed to be data centers or crypto mining operations. This targeted approach addresses duplicative interconnection requests from this category while potentially enabling credit back through transmission credits for other applicants.",
+      "description": "Tesla supports mechanisms that limit duplicative load interconnection requests, and argues readiness and study-deposit requirements should target large loads presumed to be data centers or crypto mining centers.",
       "quote_ids": [
-        1
+        1,
+        5
       ]
     },
     {
-      "key": "pr:colo",
-      "name": "Hybrid facility colocation incentives",
+      "key": "aq:deposits",
+      "name": "Refundable study deposits",
       "stance": "support",
-      "description": "Tesla strongly endorses studying hybrid facilities based on the amount of injection and withdrawal rights requested, interpreting this as an incentive to drive colocation and efficiency buildout. This principle aligns with utility service responsibility based on withdrawal rights.",
+      "description": "Tesla backs study deposits and withdrawal penalties for large loads but wants the deposits credited back, possibly through transmission credits, since prior load requests were not subject to such mechanisms.",
+      "quote_ids": [
+        1,
+        2
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Deposit credit through transmission",
+      "stance": "support",
+      "description": "Tesla proposes returning study deposit value via transmission credits rather than forfeiting it.",
       "quote_ids": [
         2
       ]
     },
     {
-      "key": "pr:proximate",
-      "name": "Behind-the-meter capacity and POI limits",
+      "key": "pr:colo",
+      "name": "Colocation by withdrawal rights",
       "stance": "support",
-      "description": "Tesla proposes that behind-the-meter BESS and load additions at large load facilities count toward POI limits and that facilities remain responsible for ensuring total demand stays below contracted capacity. Tesla also advocates for expedited review of capacity additions offsetting generation loss at the same POI, provided system import/export limitations remain consistent.",
+      "description": "Tesla strongly endorses studying hybrid facilities on the basis of injection and withdrawal rights to incentivize colocation, and asks that behind-the-meter load and storage count toward the point of interconnection limit and toward offsetting generation loss.",
+      "quote_ids": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Behind-the-meter counts to POI",
+      "stance": "support",
+      "description": "Tesla supports allocating hybrid facility study and service by requested rights, and wants behind-the-meter load and battery storage counted against the contracted POI capacity.",
       "quote_ids": [
         3,
         4
       ]
     },
     {
-      "key": "pr:study",
-      "name": "Standardized reliability standards and streamlined requirements",
+      "key": "aq:expedited",
+      "name": "Expedited review for offsetting storage",
       "stance": "support",
-      "description": "Tesla recommends establishing minimum interconnection standards applied uniformly across regions (ramp rate, load stability, voltage ride-through) using a technology-neutral lens. Once a load meets these standards, additional information about its makeup should not be required, particularly at early development stages when such details may be unavailable. This addresses the need for greater clarity, efficiency, and predictability as large load growth accelerates.",
+      "description": "Tesla wants capacity additions behind the same POI that offset generation loss to serve load permitted through expedited review, and frames its Gigafactory case as evidence of the need for faster, more predictable interconnection.",
       "quote_ids": [
         5,
-        6,
         9
       ]
     },
     {
+      "key": "aq:protection",
+      "name": "Minimum interconnection standards",
+      "stance": "support",
+      "description": "Tesla recommends standardized minimum interconnection standards for large loads covering ramp rate, load stability, and voltage ride-through.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
       "key": "rg:spp",
-      "name": "Regional best practices from SPP and ERCOT",
+      "name": "SPP and ERCOT as model",
       "stance": "neutral",
-      "description": "Tesla notes that similar performance expectations for interconnection standards are being applied in regions like SPP and ERCOT, citing these as potential foundations for national best practices.",
+      "description": "Tesla points to performance expectations being developed in regions such as SPP and ERCOT as a possible foundation for national best practices.",
       "quote_ids": [
         7
       ]
     },
     {
-      "key": "topic:bess-clarity",
-      "name": "Clarity on BESS registration and classification",
+      "key": "topic:load-performance-standards",
+      "name": "Technology-neutral load standards",
       "stance": "support",
-      "description": "Tesla's experience at Gigafactory Texas revealed that the interconnection process bucket was unclear for BESS as backup generation, requiring ERCOT to develop a novel pathway. Tesla later discovered that non-exporting BESS backup generators do not require registration, a clarification validated by ERCOT's Large Load Working Group. This highlights the need for standardized, predictable interconnection pathways for BESS.",
+      "description": "Tesla wants minimum interconnection standards applied at the POI through a technology-neutral lens, built on existing regional practice, and argues that once a load meets them no further disclosure of its changing makeup should be required.",
       "quote_ids": [
+        6,
         7,
         8
       ]
     },
     {
-      "key": "topic:der-vpp",
-      "name": "Distributed energy resources and virtual power plants",
+      "key": "topic:interconnection-predictability",
+      "name": "Clearer interconnection process",
       "stance": "support",
-      "description": "Tesla urges the Commission to recognize DERs and VPPs as meaningful grid service tools capable of supporting faster large load interconnection by alleviating transmission network constraints and capacity needs. Tesla emphasizes its leadership role operating over 1 million distributed batteries and 250,000 battery units participating in grid services, and notes VPPs can be deployed in weeks to months versus the years-long construction timelines of conventional generation.",
+      "description": "Drawing on its Gigafactory Texas experience, Tesla urges greater clarity, efficiency, and predictability in the interconnection process as large load growth accelerates.",
       "quote_ids": [
-        10
+        9
       ]
     },
     {
-      "key": "topic:order2222",
-      "name": "Order 2222 implementation barriers",
+      "key": "topic:der-vpp-capacity",
+      "name": "DERs and VPPs as capacity",
       "stance": "support",
-      "description": "Tesla identifies restrictive interpretations of Order 2222 as limiting DER and VPP participation in wholesale electricity markets. Key barriers include metering and telemetry constraints, device size thresholds, state-level restrictions, and the lack of pathways for DERs receiving retail rate credits. Tesla believes these barriers can be addressed while preventing double-counting.",
+      "description": "Tesla urges the Commission to recognize distributed energy resources and virtual power plants as grid service tools that can support faster large-load interconnection and relieve transmission constraints and capacity needs.",
       "quote_ids": [
+        10,
         11
+      ]
+    },
+    {
+      "key": "topic:order-2222",
+      "name": "Fix Order 2222 barriers",
+      "stance": "support",
+      "description": "Tesla argues restrictive interpretations of Order No. 2222 still limit DER participation and asks FERC to address metering and telemetry barriers, device size thresholds, state-level barriers, and the lack of pathways for DERs receiving retail rate credits.",
+      "quote_ids": [
+        12,
+        13
       ]
     }
   ],
   "lenses": {
     "aq": [
-      "deposits"
+      "deposits",
+      "hybridrights",
+      "expedited",
+      "protection"
     ],
     "pr": [
-      "colo",
-      "proximate",
-      "study"
+      "flex",
+      "cost",
+      "colo"
     ],
     "rg": [
       "spp"
     ]
   },
   "provenance": {
-    "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }

@@ -12,7 +12,8 @@
       "concern": "Cost-causation analysis must account for speed, volatility, and stranded-asset risk, not just direct infrastructure costs",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "aq:jurisdiction",
         "aq:threshold"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
         "aq:expedited",
         "pr:flex",
         "topic:optional-federal-pathway"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "aq:expedited",
         "topic:optional-federal-pathway"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
       "concern": "Federal large load rules must not encroach on state retail regulatory authority",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
       "concern": "Transition protections must shield in-progress manufacturing projects from new federal rules",
       "bins": [
         "topic:transition-period"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:sunset-provision"
-      ]
+      ],
+      "page": 23
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
       "bins": [
         "pr:cost",
         "topic:net-billing"
-      ]
+      ],
+      "page": 25
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 12,
@@ -109,7 +120,8 @@
       "concern": "The 20 MW threshold is too low and would sweep in manufacturers not causing the grid challenges",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 13,
@@ -117,7 +129,8 @@
       "concern": "Any mandatory threshold should be at least 75 MW to 100 MW and apply only to new load",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 29
     },
     {
       "id": 14,
@@ -126,7 +139,8 @@
       "bins": [
         "pr:study",
         "topic:grid-enhancing-technologies"
-      ]
+      ],
+      "page": 29
     }
   ],
   "bins": [

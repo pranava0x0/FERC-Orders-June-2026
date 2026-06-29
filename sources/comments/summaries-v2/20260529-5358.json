@@ -14,7 +14,8 @@
         "topic:monopoly-control",
         "topic:water-impact",
         "topic:emissions"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "concern": "Ratepayers bear costs and liabilities that operators should pay",
       "bins": [
         "topic:cost-responsibility"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "topic:technology-solution",
         "pr:colo"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "topic:open-source-mandate",
         "pr:colo"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "topic:public-control",
         "pr:colo"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "concern": "Ban proprietary software control of utility-related data center systems",
       "bins": [
         "topic:open-source-mandate"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "concern": "Proposed technology achieves financial payback within 3.9 years through operational savings",
       "bins": [
         "topic:financial-viability"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

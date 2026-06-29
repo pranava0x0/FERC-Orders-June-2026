@@ -12,7 +12,8 @@
       "concern": "Preserve state authority in FPA jurisdictional matters",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "pr:flex",
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "Avoid rigid distance-based proximity standards",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "topic:vpp-aggregation",
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "Define proximity by performance not physical distance",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "aq:expedited",
         "topic:vpp-aggregation"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "Enable cost-effective demand-side alternatives to infrastructure upgrades",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     }
   ],
   "bins": [

@@ -47,13 +47,15 @@ test("each detail file matches the documented schema exactly (no extra fields)",
     assert.equal(d.acc + ".json", f, `${f} acc field matches filename`);
     assert.ok(Array.isArray(d.bins), `${f} bins is an array`);
     for (const b of d.bins) {
-      assert.deepEqual(Object.keys(b).sort(), ["desc", "key", "name", "quotes", "stance"],
-        `${f} bin ${b.key} has exactly {key,name,stance,desc,quotes}`);
+      assert.deepEqual(Object.keys(b).sort(), ["desc", "key", "name", "pages", "quotes", "stance"],
+        `${f} bin ${b.key} has exactly {key,name,stance,desc,quotes,pages}`);
       assert.ok(b.key && b.name, `${f} bin has key + name`);
       assert.ok(VOCAB.STANCES.has(b.stance), `${f} bin ${b.key} stance "${b.stance}" is valid`);
       assert.equal(typeof b.desc, "string", `${f} bin ${b.key} desc is a string`);
       assert.ok(Array.isArray(b.quotes), `${f} bin ${b.key} quotes is an array`);
       for (const q of b.quotes) assert.ok(typeof q === "string" && q.length > 0, `${f} bin ${b.key} quote is non-empty`);
+      assert.ok(Array.isArray(b.pages) && b.pages.length === b.quotes.length, `${f} bin ${b.key} pages parallels quotes`);
+      for (const p of b.pages) assert.ok(p === null || (Number.isInteger(p) && p >= 1), `${f} bin ${b.key} page is a positive int or null`);
     }
   }
 });
@@ -63,16 +65,18 @@ test("detail bins + quotes trace verbatim to the source summary (no drift, no fa
     const d = loadDetail(f);
     const s = loadV2(d.acc);
     assert.equal(d.bins.length, (s.bins || []).length, `${f} bin count matches source`);
-    const qById = Object.fromEntries((s.quotes || []).map((q) => [q.id, q.text]));
+    const qById = Object.fromEntries((s.quotes || []).map((q) => [q.id, q]));
     s.bins.forEach((sb, i) => {
       const db = d.bins[i];
       assert.equal(db.key, sb.key, `${f} bin ${i} key matches source (order preserved)`);
       assert.equal(db.name, sb.name, `${f} bin ${sb.key} name matches source`);
       assert.equal(db.stance, sb.stance, `${f} bin ${sb.key} stance matches source`);
       assert.equal(db.desc, sb.description || "", `${f} bin ${sb.key} description matches source`);
-      // quotes are the resolved source quote texts, in quote_ids order, byte-for-byte (verbatim)
-      const expected = (sb.quote_ids || []).map((id) => qById[id]).filter((t) => t != null);
-      assert.deepEqual(db.quotes, expected, `${f} bin ${sb.key} quotes are the verbatim source quotes`);
+      // quotes are the resolved source quote texts, in quote_ids order, byte-for-byte (verbatim);
+      // pages parallel them, each the source quote's stamped page.
+      const qs = (sb.quote_ids || []).map((id) => qById[id]).filter(Boolean);
+      assert.deepEqual(db.quotes, qs.map((q) => q.text), `${f} bin ${sb.key} quotes are the verbatim source quotes`);
+      assert.deepEqual(db.pages, qs.map((q) => (q.page == null ? null : q.page)), `${f} bin ${sb.key} pages trace to source`);
     });
   }
 });

@@ -13,7 +13,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:study",
         "rg:pjm"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "Asserts FERC has clear jurisdiction over transmission-level large load interconnection",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "Argues that leaving load interconnection to states would create an impermissible regulatory gap and infringe on FERC's plenary transmission jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "concern": "Opposes the proposed 20 MW threshold as untethered to actual transmission system impacts",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 28
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 29
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "bins": [
         "pr:study",
         "topic:resource-adequacy-exclusion"
-      ]
+      ],
+      "page": 30
     },
     {
       "id": 9,
@@ -82,7 +90,8 @@
       "bins": [
         "pr:study",
         "topic:resource-adequacy-exclusion"
-      ]
+      ],
+      "page": 30
     },
     {
       "id": 10,
@@ -91,7 +100,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": 23
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
         "pr:colo",
         "pr:cost",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 32
     },
     {
       "id": 12,
@@ -110,7 +121,8 @@
       "bins": [
         "pr:cost",
         "pr:colo"
-      ]
+      ],
+      "page": 33
     },
     {
       "id": 13,
@@ -120,7 +132,8 @@
         "aq:expedited",
         "pr:study",
         "topic:transition-protection"
-      ]
+      ],
+      "page": 26
     },
     {
       "id": 14,
@@ -130,7 +143,8 @@
         "pr:study",
         "aq:protection",
         "rg:pjm"
-      ]
+      ],
+      "page": 24
     },
     {
       "id": 15,
@@ -139,7 +153,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 31
     }
   ],
   "bins": [

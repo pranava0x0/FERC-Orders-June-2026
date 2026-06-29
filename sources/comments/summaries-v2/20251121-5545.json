@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "Delay in transmission buildout imposes large costs on customers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "concern": "High piecemeal upgrade costs drive project withdrawals from the queue",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "bins": [
         "pr:study",
         "aq:threshold"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "bins": [
         "pr:study",
         "aq:threshold"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 8,
@@ -75,7 +82,8 @@
         "aq:threshold",
         "aq:deposits",
         "pr:study"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "concern": "Participant-only funding creates holdout problems that block transmission investment",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
       "bins": [
         "pr:cost",
         "aq:deposits"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
       "bins": [
         "pr:cost",
         "aq:deposits"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 12,
@@ -110,7 +121,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 13,
@@ -118,7 +130,8 @@
       "concern": "Accelerating Order 1920 planning with improved load forecasting is a low-risk priority action",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 11
     }
   ],
   "bins": [

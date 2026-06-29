@@ -196,8 +196,88 @@
   blog) and its **LBNL** claim that a 10% rise in state electricity consumption correlates with ~6¢/kWh
   lower retail prices. AI-industry PR plus a striking empirical claim — audit against the LBNL primary
   and label as contested before any use; do not ship the stat as fact.
-- **low** — Add the **DOE statement applauding FERC** (energy.gov) and **E&E/Politico** coverage as
-  reaction sources; consider a Bloomberg Law read ("Energy Regulator Staves Off Critique…") on how the
-  orders were drafted to pre-empt the jurisdictional challenge.
+- **low** — ~~Add the **DOE statement applauding FERC** (energy.gov)~~ **done (2026-06-28)** — added the
+  June 18 DOE applause statement as the `doeApplaud` source and a **Secretary Chris Wright** voice (the
+  directing agency declaring victory; adds the executive-branch / right-leaning perspective). Still open:
+  **E&E/Politico** coverage as reaction sources. ~~Bloomberg Law read ("Energy Regulator Staves Off Critique…") on how the orders
+  were drafted to pre-empt the jurisdictional challenge~~ **done (2026-06-27)** — added as the
+  `bloomberglaw` source, a Jennifer Danis voice (litigation-durability), and a "Built to survive appeal"
+  consensus line in Discourse.
 - **low** — Capture the **state consumer-advocate** stranded-asset / timing-mismatch concern (PA, DE,
   NJ): near-term large-load need vs. the decades-long life of the gas plants and pipelines built to serve it.
+
+### Improvement leads (from the 2026-06-27 discourse scan: X, trade press, consumer/academic voices)
+
+Each idea is tied to what the FERC/energy discourse is actually doing right now, not a guess. The scan ran
+across trade/law press, X (Ari Peskoe, Travis Kavulla, Sec. Wright, Ramez Naam, Art Berman, @FERC),
+analyst pieces (Bloomberg Law) and consumer coverage (Consumer Reports). Reddit/Bluesky returned little
+indexable thread-level signal; the lay concern they carry ("who pays on my bill?", "is this federal
+overreach?") is folded into ideas 2 and 5.
+
+- **high — a live "What happens next" procedural status board.** Every practitioner thread and law-firm
+  alert ends on the same calendar, and the site is still a frozen "as of June 18" snapshot. Build a dated,
+  per-RTO tracker of the post-order clock: **intervene by Jul 9**, **generation-adequacy report Jul 20**
+  (30-day), **rehearing ~Jul 18** (30-day), **abeyance request by Aug 3** (45-day, FERC says it will
+  heavily scrutinize and cap at 90 days), **show-cause / tariff filing by Aug 17** (60-day), then a 30-day
+  public-comment window after each filing. Surface "next deadline" prominently and a per-RTO status
+  (report filed? abeyance requested? tariff filing landed?). This unifies and supersedes the older
+  "procedural clock" (per-docket A–F timeline) and "compliance tracker" leads above into one prioritized
+  deliverable. Dates corroborated across Day Pitney, McGuireWoods, Husch Blackwell, V&E. Note SPP is
+  furthest along (its HILL / HILLGA expedited process is the template others are told to adapt).
+
+- **high — a "who pays" cost-shift explainer that lands the bill stakes.** Cost allocation is the single
+  most-discussed angle, but the public frame is the household bill, not the tariff. Ground the existing
+  transmission-vs-retail bifurcation in the concrete story the discourse runs on: the March 2026 tech
+  "ratepayer protection pledge" (Microsoft, Anthropic and others to build/buy and pay for their own
+  infrastructure), reported residential spikes (a Virginia ~$281 bill, Jan 2026), 30+ states with 300+
+  data-center bills, demand ~80→150 GW by 2028, and Ari Peskoe's argument that FERC's 1994 transmission-
+  pricing policy lets utilities socialize data-center upgrades. Pairs with the new "affordability backstop
+  is split" friction line. Label estimates/contested claims as such; audit each figure to a primary before
+  shipping (do not ship the LBNL price-correlation stat or PR figures as fact — see the existing lead).
+
+- **done (2026-06-27) — grounded the PJM co-location companion track.** Verification resolved the
+  identity: **Item E-2 = Docket EL25-49**, whose order (193 FERC ¶ 61,217, issued Dec. 18, 2025) found
+  PJM's tariff unjust and unreasonable and set co-located-load procedures, interim non-firm /
+  contract-demand transmission service, and behind-the-meter netting limits — the "December PJM ruling"
+  the site already referenced vaguely. Added it as the `pjmcoloc` source (verified via National Law
+  Review) and enriched the co-location/BTM friction item with the docket, the reporter cite, and the
+  specifics, keeping the "Item E-2, EL25-49" label consistent with the Reforms-tab detail. Note: a
+  *distinct* June-18 PJM order separate from the E-7 show cause order could not be confirmed past
+  Cloudflare (the ferc.gov "Directs Nation's Largest Grid Operator" fact sheet is gated and may just be
+  the E-7 press release), so nothing was asserted about one.
+
+- **evaluated 2026-06-27 — deferred (would be redundant): a curated "what the experts flag" digest into
+  the Comments tab.** On inspection the Discourse tab already carries this: "Commentary across the
+  spectrum" *is* a curated, attributed set of expert takes (now incl. Danis, Christiansen), and the
+  "Open the Comments tab →" pointer already bridges into the audited corpus. A separate digest mapping
+  order-reaction voices to ANOPR-comment themes would duplicate both, and the mapping is loose (the
+  order-reaction commentators are mostly not the docket commenters). The one influential voice still
+  missing is **Ari Peskoe (Harvard ELI)** — but his point is the cost-causation / outdated-1994-
+  transmission-pricing argument, which is the substance of the HIGH "who pays" cost-shift explainer.
+  **Plan:** add Peskoe there (verifiable via Utility Dive, "An outdated FERC policy is undermining the
+  White House's ratepayer protection pledge"), not as a bolted-on digest. Skipped to avoid a redundant
+  feature. **Update (2026-06-28):** added **Ari Peskoe (Harvard ELI)** as a cost-causation voice from
+  that op-ed (verbatim quotes backed in voices-evidence.json). The full "who pays" explainer is still the
+  HIGH item; the voice is the standalone piece of it that fit cleanly now.
+
+- **done (2026-06-27) — frame the federalism / jurisdiction question explicitly.** Added a **Matthew
+  Christiansen (Wilson Sonsini)** voice giving the jurisdiction-defense side (the orders stay within
+  FERC's transmission jurisdiction and don't encroach on state authority), verified-quoted from Bloomberg
+  Law. With the existing "affordability backstop is split" friction item (the overreach-challenge concern)
+  and the DOE §403 timeline note (FERC asserting interconnection jurisdiction it "historically has not
+  asserted"), the states-vs-Washington debate is now framed across both lanes by named voices. Kept it in
+  the Discourse/commentary lane (not Reforms) to preserve the facts-vs-judgment separation.
+
+- **done (2026-06-27) / partial — round out the outlet set to the audiences now covering it.** Added
+  Bloomberg Law, The Hill, ENR, Data Center Knowledge and **IEEE Spectrum** (engineering-technical
+  audience) as outlet chips. **Consumer-facing source deferred on purpose:** the strongest consumer piece
+  (Consumer Reports, "AI Data Centers: Big Tech's Impact on Electric Bills") is dated 2026-03-20 and
+  predates the orders, so it is not honest as a "where it's being covered" chip — it belongs in the HIGH
+  "who pays" cost-shift explainer instead. (Tech Times covered the orders from a consumer angle but is a
+  thin SEO outlet; left out for quality.)
+
+- **done (2026-06-27) / partial — made "freshness" salient.** Added a masthead line ("Order record as of
+  <capture> · discourse updated <discourseCapture>") rendered by app.js from `D.meta` (single source of
+  truth; placeholder ships `hidden` and is revealed once filled, so JS-off users still get the footer
+  date). The **"next deadline <date>"** half was intentionally deferred — it depends on the HIGH
+  procedural status board, which owns the deadline data.

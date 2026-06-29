@@ -37,21 +37,21 @@
       "other": 3
     },
     "substantive_comments": 273,
-    "org_comments": 258,
-    "individual_comments": 15,
-    "unique_commenting_orgs": 201,
+    "org_comments": 260,
+    "individual_comments": 13,
+    "unique_commenting_orgs": 203,
     "interventions": 128,
     "comments_by_bucket": {
       "Transmission owners / utilities": 42,
       "Generators / IPPs / developers": 37,
       "Data centers, hyperscalers & tech": 29,
-      "Trade associations & power groups": 25,
+      "Trade associations & power groups": 26,
       "State commissions": 24,
       "Clean energy & storage": 16,
-      "Individuals": 15,
       "Consumer advocates": 14,
+      "Individuals": 13,
       "Environmental & public interest": 13,
-      "Other / uncategorized": 10,
+      "Other / uncategorized": 11,
       "Industrial & large customers": 9,
       "Think tanks & research": 9,
       "RTOs / ISOs": 7,
@@ -80,10 +80,11 @@
       "desc": "Comments of Terraflux LLC in support of the Interconnection of Large Loads to the Interstate Transmission System under RM26-4."
     },
     {
-      "org": "Individual No Affiliation",
+      "org": "Texas Blockchain Council",
+      "org_raw": "Individual No Affiliation",
       "filed": "11/10/2025",
       "acc": "20251110-5121",
-      "bucket": "individual",
+      "bucket": "trade_assoc",
       "desc": "Comment of Stephen Graddy in Docket(s)/Project(s) RM26-4-000 Submission Date: 11/10/2025"
     },
     {
@@ -122,10 +123,11 @@
       "desc": "Comments of Critical Loop in response to the Advanced Notice of Proposed Rulemaking under RM26-4."
     },
     {
-      "org": "Individual No Affiliation",
+      "org": "VEIR Inc.",
+      "org_raw": "Individual No Affiliation",
       "filed": "11/14/2025",
       "acc": "20251114-5063",
-      "bucket": "individual",
+      "bucket": "other",
       "desc": "Comment of Jason Miller in Docket(s)/Project(s) RM26-4-000 Submission Date: 11/14/2025"
     },
     {

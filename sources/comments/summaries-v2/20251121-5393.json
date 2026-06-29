@@ -12,7 +12,8 @@
       "concern": "Raise threshold to 100 MW to focus rules on truly large loads",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "aq:threshold",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
         "aq:jointstudy",
         "pr:study",
         "pr:colo"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:colo"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 5,
@@ -50,7 +54,8 @@
         "aq:jointstudy",
         "aq:expedited",
         "pr:study"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "concern": "Supports study deposits to filter speculative projects from the MISO queue",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "bins": [
         "aq:deposits",
         "pr:study"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 8,
@@ -77,7 +84,8 @@
         "aq:hybridrights",
         "pr:cost",
         "pr:colo"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 9,
@@ -87,7 +95,8 @@
         "aq:hybridrights",
         "pr:cost",
         "pr:colo"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 10,
@@ -96,7 +105,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 11,
@@ -105,7 +115,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 12,
@@ -114,7 +125,8 @@
       "bins": [
         "pr:study",
         "topic:transition-grandfathering"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 13,
@@ -122,7 +134,8 @@
       "concern": "Apply existing compliance flexibility standards to avoid overly prescriptive federal rules",
       "bins": [
         "topic:state-federal-deference"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 14,
@@ -131,7 +144,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:terminology-clarity"
-      ]
+      ],
+      "page": 15
     }
   ],
   "bins": [

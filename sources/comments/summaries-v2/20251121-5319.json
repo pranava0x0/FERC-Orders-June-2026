@@ -14,7 +14,8 @@
         "pr:study",
         "pr:cost",
         "topic:competitive-neutrality"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "bins": [
         "pr:study",
         "aq:jointstudy"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -51,7 +55,8 @@
         "pr:study",
         "pr:cost",
         "topic:competitive-neutrality"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -60,7 +65,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -69,7 +75,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -79,7 +86,8 @@
         "pr:cost",
         "pr:flex",
         "aq:threshold"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -97,7 +106,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 11,
@@ -106,7 +116,8 @@
       "bins": [
         "pr:cost",
         "aq:deposits"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 12,
@@ -115,7 +126,8 @@
       "bins": [
         "pr:study",
         "topic:enforceable-flexibility"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 13,
@@ -124,7 +136,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:wholesale-market-access"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 14,
@@ -133,7 +146,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:transition-rules"
-      ]
+      ],
+      "page": 7
     }
   ],
   "bins": [

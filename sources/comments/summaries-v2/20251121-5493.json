@@ -4,258 +4,290 @@
   "org_type": "generator_ipp",
   "filed": "11/21/2025",
   "source_text": "sources/comments/files/20251121-5493__GridStor-LLC/RM26-4 Comment of GridStor on ANOPR re ESRs and Large Loads.txt",
-  "overall_summary": "GridStor supports the ANOPR and advocates for Energy Storage Resources (ESRs) to be treated distinctly from large loads in any final rule, with special attention to coordinated studies, expedited transmission service for flexible ESRs, and simultaneous study of ESR charging and discharging during the generator interconnection process.",
+  "overall_summary": "GridStor, an independent power producer of transmission-scale battery storage, argues that any large-load interconnection rule must treat Energy Storage Resource (ESR) charging as distinct from large customer load so that reforms do not slow ESR deployment. It supports the ANOPR proposals to study paired loads and generation together and to expedite curtailable and dispatchable loads, asking that both extend to ESRs, and it recommends studying ESR charging and discharging together during the generator interconnection process to fill the gap between Order 841 and Order 2023.",
   "quotes": [
     {
       "id": 1,
-      "text": "Energy Storage Resources (ESRs) are critical to helping get large loads online faster and reliably.",
-      "concern": "ESRs enable faster large load interconnection",
+      "text": "GridStor submits these comments to assist the Commission as it moves forward with a rulemaking on these issues, emphasizing the need to distinguish the treatment of Energy Storage Resource (“ESR”) charging in the development of a Final Rule or other action that affects the interconnection of large loads.",
+      "concern": "Core ask: distinguish ESR charging from large loads in any final rule",
       "bins": [
-        "pr:flex"
-      ]
+        "pr:colo",
+        "topic:esr-distinct-treatment"
+      ],
+      "page": null
     },
     {
       "id": 2,
-      "text": "Because data centers have very large power demands, the sudden swings in their power consumption that occur during model training runs can destabilize the power system.",
-      "concern": "Data center load volatility threatens grid stability",
+      "text": "Energy Storage Resources (ESRs) are critical to helping get large loads online faster and reliably.",
+      "concern": "ESRs speed up large-load interconnection and reliability",
       "bins": [
-        "topic:datacenter-stability"
-      ]
+        "pr:flex",
+        "topic:esr-distinct-treatment"
+      ],
+      "page": null
     },
     {
       "id": 3,
-      "text": "Battery storage is uniquely suited to solving this problem for data centers, providing real and reactive power services at hundreds of MW size on millisecond timescales.",
-      "concern": "Battery storage addresses data center reliability needs",
+      "text": "Batteries enable flexible demand management for data centers to ensure business continuity while complying with such requirements.",
+      "concern": "Batteries provide the flexibility data centers need to meet curtailment requirements",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
-      "text": "ESRs are unlike conventional supply, in that they make withdrawals from the power system in addition to injections.",
-      "concern": "ESRs have dual role as supply and demand",
+      "text": "In subsequent action to this ANOPR, the Commission must carefully distinguish ESR charging from large customer loads.",
+      "concern": "ESR charging must be treated separately from large customer load",
       "bins": [
-        "topic:esr-definition"
-      ]
+        "topic:esr-distinct-treatment"
+      ],
+      "page": null
     },
     {
       "id": 5,
-      "text": "In transmission system operations, ESR charging may look similar to a large customer load, but key differences distinguish ESR charging from large customer loads: specifically in market operations, ESR charging a time-shifting of supply, and a key reason that load serving entities have procured ESRs for resource adequacy.",
-      "concern": "ESR charging differs fundamentally from large customer loads",
+      "text": "To the extent that the Commission seeks to put new requirements on large loads, it is imperative that ESRs be considered distinctly and separately from large loads.",
+      "concern": "New large-load requirements should not be applied to ESRs",
       "bins": [
-        "pr:study"
-      ]
+        "topic:esr-distinct-treatment",
+        "aq:protection"
+      ],
+      "page": null
     },
     {
       "id": 6,
-      "text": "To the extent that the Commission seeks to put new requirements on large loads, it is imperative that ESRs be considered distinctly and separately from large loads.",
-      "concern": "ESRs need separate regulatory treatment",
+      "text": "For example, it would be inappropriate and onerously duplicative to apply large loads queuing requirements as discussed in the ANOPR to apply to ESRs. Today, ESRs already participate in generator interconnection queuing processes with required deposits and readiness requirements, and ESRs execute interconnection agreements in a well-understood manner.",
+      "concern": "Applying large-load queuing and deposit rules to ESRs would be duplicative since ESRs already meet generator queue requirements",
       "bins": [
-        "pr:study"
-      ]
+        "aq:deposits",
+        "aq:protection"
+      ],
+      "page": null
     },
     {
       "id": 7,
-      "text": "it would be inappropriate and onerously duplicative to apply large loads queuing requirements as discussed in the ANOPR to apply to ESRs.",
-      "concern": "Large load queue rules should not apply to ESRs",
+      "text": "In particular, we ask that any Commission consideration of such coordinated study include the load side of paired facilities like ESRs, not only the generation side.",
+      "concern": "Coordinated study of paired facilities must include the load side (ESR charging), not just generation",
       "bins": [
-        "aq:deposits"
-      ]
+        "aq:jointstudy",
+        "pr:study",
+        "pr:colo"
+      ],
+      "page": null
     },
     {
       "id": 8,
-      "text": "the ANOPR's proposal to expedite interconnection for large loads that are curtailable and dispatchable could be extended to the studies of ESR charging where RTOs/ISOs or Transmission Owners study ESR charging as a load.",
-      "concern": "Expedited interconnection should apply to ESR charging as a load",
+      "text": "The present approach to studying loads independently creates a competitive dynamic between any paired ESR and large loads, forcing them to vie for transmission capacity rather than provide desired mutual benefit.",
+      "concern": "Studying paired loads independently makes ESR and load compete for transmission capacity",
       "bins": [
-        "aq:expedited",
-        "pr:flex"
-      ]
+        "aq:jointstudy",
+        "pr:study"
+      ],
+      "page": null
     },
     {
       "id": 9,
-      "text": "Siting a large load near or at the same point of interconnection as a new generating facility could reduce the network upgrades needed to interconnect only the load or only the generating facility.",
-      "concern": "Co-location reduces transmission upgrade costs",
+      "text": "The Commission should enable studies of large loads and paired ESRs as coordinated loads, i.e., with integrated control that act as a single resource.",
+      "concern": "Recommends studying paired large loads and ESRs as a single coordinated resource",
       "bins": [
-        "pr:colo",
-        "pr:cost"
-      ]
+        "aq:jointstudy",
+        "pr:study",
+        "pr:colo"
+      ],
+      "page": null
     },
     {
       "id": 10,
-      "text": "we ask that any Commission consideration of such coordinated study include the load side of paired facilities like ESRs, not only the generation side.",
-      "concern": "Coordinated studies must include ESR charging side",
+      "text": "To the extent that the Commission seeks to develop rules to expedite transmission service studies of large loads that are flexible and curtailable, we respectfully request that such rules also enable speedy and timely transmission service studies of ESR charging.",
+      "concern": "Expedited study of curtailable loads should also cover ESR charging",
       "bins": [
-        "pr:colo",
-        "pr:study"
-      ]
+        "aq:expedited",
+        "pr:flex"
+      ],
+      "page": null
     },
     {
       "id": 11,
-      "text": "ESR charging can be planned for when a paired large load is reduced, and ESR discharging can be planned for when a paired large load is increased.",
-      "concern": "Coordinated ESR-load operations reduce network stress",
+      "text": "Precedent exists in RTO/ISO tariffs for load interconnection processes that need no longer than 60-90 days to execute fully, and similar timeframes could be applied to ESR charging studies.",
+      "concern": "Proposes a 60 to 90 day expedited timeframe for ESR charging studies",
       "bins": [
-        "pr:colo",
-        "pr:proximate"
-      ]
+        "aq:expedited"
+      ],
+      "page": null
     },
     {
       "id": 12,
-      "text": "ESRs are not only fundamentally flexible and curtailable resources, but also they are premised on responding to power system needs.",
-      "concern": "ESRs are inherently flexible and grid-responsive",
+      "text": "It is also worth exploring whether RTOs/ISOs might offer different forms of transmission service to support such flexible and curtailable loads.",
+      "concern": "Suggests new transmission service forms (non-firm, conditional firm) for flexible loads",
       "bins": [
-        "pr:flex"
-      ]
+        "pr:flex",
+        "topic:conditional-firm-service"
+      ],
+      "page": null
     },
     {
       "id": 13,
-      "text": "Precedent exists in RTO/ISO tariffs for load interconnection processes that need no longer than 60-90 days to execute fully, and similar timeframes could be applied to ESR charging studies.",
-      "concern": "ESR charging can use 60 to 90 day transmission service process",
+      "text": "Other large loads and ESRs would benefit from a “conditional firm” transmission service, where pre-defined conditions (e.g., EEA, conservative operations, etc) require curtailment but where transmission service is otherwise expected—an improvement from as-available service that has little predictability.",
+      "concern": "Proposes a conditional firm transmission service that curtails only under defined conditions",
       "bins": [
-        "aq:expedited"
-      ]
+        "topic:conditional-firm-service",
+        "pr:flex"
+      ],
+      "page": null
     },
     {
       "id": 14,
-      "text": "Standalone ESRs today comprise nearly 900 GW of interconnection requests, roughly 45% of the volume by capacity of all current active generator interconnection requests.",
-      "concern": "ESRs represent major share of interconnection queue",
+      "text": "To that end, the Commission should move reforms to fill the gap left between Order 841 and Order 2023.",
+      "concern": "Asks FERC to fill the regulatory gap between Order 841 and Order 2023 on ESR charging study",
       "bins": [
-        "topic:esr-volume"
-      ]
+        "topic:order841-2023-gap"
+      ],
+      "page": null
     },
     {
       "id": 15,
-      "text": "Therefore, we recommend that the Commission consider whether study of ESR charging should be more optimally conducted during the generator interconnection process and prior to a generator interconnection agreement.",
-      "concern": "ESR charging study should occur before generator interconnection agreement",
+      "text": "Therefore, we recommend that the Commission consider whether study of ESR charging should be more optimally conducted during the generator interconnection process and prior to a generator interconnection agreement, instead of in a separate load study after a generator interconnection agreement.",
+      "concern": "Recommends studying ESR charging during the generator interconnection process, before the GIA",
       "bins": [
-        "pr:study",
-        "aq:expedited"
-      ]
+        "aq:jointstudy",
+        "topic:order841-2023-gap"
+      ],
+      "page": null
     },
     {
       "id": 16,
-      "text": "PJM and CAISO already study ESR charging and discharging in an integrated processes and could offer valuable insights to the Commission.",
-      "concern": "PJM and CAISO have integrated ESR study models",
+      "text": "Such upgrades would be allocated following the established cost-allocation principles applied to other interconnection upgrades.",
+      "concern": "ESR charging upgrades should follow established interconnection cost-allocation principles",
       "bins": [
-        "rg:pjm",
-        "rg:caiso"
-      ]
+        "pr:cost",
+        "aq:upgradecost"
+      ],
+      "page": null
     }
   ],
   "bins": [
     {
-      "key": "pr:study",
-      "name": "ESRs require distinct regulatory analysis",
+      "key": "topic:esr-distinct-treatment",
+      "name": "Treat ESR charging distinctly",
       "stance": "support",
-      "description": "GridStor advocates that ESR charging must be studied separately and distinctly from large customer loads in interconnection processes, as ESRs function as both supply and demand through time-shifting and are fundamentally different in operation and control characteristics.",
+      "description": "GridStor's central position is that ESR charging is integral to a supply resource and must be treated separately from large customer load. It warns that applying new large-load requirements to ESRs would slow storage deployment and asks the Commission to consider ESRs distinctly in any subsequent rule.",
       "quote_ids": [
-        5,
-        6,
-        10,
-        15
+        1,
+        2,
+        4,
+        5
       ]
     },
     {
       "key": "pr:flex",
-      "name": "Flexible ESRs enable faster interconnection",
+      "name": "Storage flexibility serves large loads",
       "stance": "support",
-      "description": "GridStor emphasizes that flexible, curtailable ESRs accelerate large load interconnection by providing grid services and managing power swings on millisecond timescales, making them critical to solving data center reliability needs.",
+      "description": "GridStor argues that batteries are inherently flexible and curtailable, enabling demand management for data centers and helping large loads meet ride-through and curtailment requirements. It wants reforms for flexible loads to recognize and extend to ESRs.",
       "quote_ids": [
-        1,
+        2,
         3,
+        10,
+        12,
+        13
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "Avoid discriminatory rules against ESRs",
+      "stance": "support",
+      "description": "GridStor asks that new large-load rules not inadvertently disadvantage ESRs, calling it imperative that ESRs be considered separately and that large-load queuing requirements not be imposed on resources already in generator queues.",
+      "quote_ids": [
+        5,
+        6
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "No duplicative ESR queue deposits",
+      "stance": "oppose",
+      "description": "GridStor opposes applying large-load queuing and deposit requirements to ESRs, noting that ESRs already participate in generator interconnection queues with required deposits and readiness requirements, making added requirements onerously duplicative.",
+      "quote_ids": [
+        6
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Coordinated study of paired ESR and load",
+      "stance": "support",
+      "description": "GridStor supports the ANOPR proposal to study paired load and generation together but asks that the load side, including ESR charging, be included so paired ESRs and large loads are studied as a single coordinated resource rather than competing for transmission capacity. It recommends ESR charging be studied during the generator interconnection process before the agreement is executed.",
+      "quote_ids": [
+        7,
         8,
-        12
+        9,
+        15
+      ]
+    },
+    {
+      "key": "pr:study",
+      "name": "Integrated study of paired facilities",
+      "stance": "support",
+      "description": "GridStor wants paired large loads and ESRs studied as coordinated loads with integrated control, arguing that independent study forces them to vie for transmission capacity and delays and raises the cost of both.",
+      "quote_ids": [
+        8,
+        9,
+        7
       ]
     },
     {
       "key": "pr:colo",
-      "name": "Coordinated ESR-load studies reduce upgrades",
+      "name": "Recognize co-located load and storage",
       "stance": "support",
-      "description": "GridStor supports coordinated interconnection studies of paired ESRs and large loads at the same point of interconnection, reducing transmission network upgrades needed when they are studied independently.",
+      "description": "GridStor frames ESR charging paired with large load like a co-located behind-the-meter configuration and asks the Commission to recognize this pairing when distinguishing ESR treatment and coordinating studies.",
       "quote_ids": [
-        9,
+        1,
+        7,
+        9
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedite curtailable load and ESR studies",
+      "stance": "support",
+      "description": "GridStor supports the ANOPR proposal to expedite study of curtailable and dispatchable loads and requests that expedited transmission service studies also apply to ESR charging, citing existing 60 to 90 day load interconnection timeframes as a model.",
+      "quote_ids": [
         10,
         11
       ]
     },
     {
-      "key": "pr:cost",
-      "name": "Co-location strategy reduces costs",
+      "key": "topic:conditional-firm-service",
+      "name": "New transmission service options",
       "stance": "support",
-      "description": "Coordinated siting of large loads and ESRs at the same interconnection point lowers network upgrade costs for both resources.",
+      "description": "GridStor suggests RTOs/ISOs offer new forms of transmission service for flexible loads and ESRs, including a non-firm service driven by locational marginal pricing and a conditional firm service that curtails only under predefined conditions.",
       "quote_ids": [
-        9
+        12,
+        13
       ]
     },
     {
-      "key": "pr:proximate",
-      "name": "Integrated ESR-load control improves efficiency",
+      "key": "topic:order841-2023-gap",
+      "name": "Fill the Order 841 to 2023 gap",
       "stance": "support",
-      "description": "Planning ESR charging when paired large loads decrease and discharging when loads increase creates integrated operations that improve overall system efficiency.",
+      "description": "GridStor recommends FERC fill the gap between Order 841, which declined to require study of ESR charging in the generator interconnection process, and Order 2023, which gave directives on how to study it, by allowing ESR charging to be studied during interconnection before the generator interconnection agreement.",
       "quote_ids": [
-        11
-      ]
-    },
-    {
-      "key": "aq:expedited",
-      "name": "Expedited study for flexible ESRs",
-      "stance": "support",
-      "description": "GridStor supports fast-tracking transmission service studies for flexible and curtailable ESRs, citing 60 to 90 day precedents in existing RTO/ISO tariffs and requesting similar timelines for ESR charging studies.",
-      "quote_ids": [
-        8,
-        13,
+        14,
         15
       ]
     },
     {
-      "key": "aq:deposits",
-      "name": "ESRs should not face large load queue rules",
-      "stance": "oppose",
-      "description": "GridStor opposes applying large load queuing and deposit requirements to ESRs, noting that ESRs already participate in generator interconnection processes with established deposit and readiness requirements.",
-      "quote_ids": [
-        7
-      ]
-    },
-    {
-      "key": "topic:datacenter-stability",
-      "name": "Data center loads threaten grid stability",
-      "stance": "neutral",
-      "description": "Data centers present large power demands with sharp consumption swings during model training runs that can destabilize the power system.",
-      "quote_ids": [
-        2
-      ]
-    },
-    {
-      "key": "topic:esr-definition",
-      "name": "ESRs function as dual supply-demand resources",
-      "stance": "neutral",
-      "description": "ESRs differ from conventional supply by acting as both withdrawals from and injections into the power system, a fundamental characteristic reflected in Order 841.",
-      "quote_ids": [
-        4
-      ]
-    },
-    {
-      "key": "topic:esr-volume",
-      "name": "ESRs dominate the interconnection queue",
-      "stance": "neutral",
-      "description": "Standalone ESRs comprise nearly 900 GW of active interconnection requests, representing roughly 45 percent of the total interconnection queue by capacity.",
-      "quote_ids": [
-        14
-      ]
-    },
-    {
-      "key": "rg:pjm",
-      "name": "PJM integrated ESR study model",
+      "key": "pr:cost",
+      "name": "Established cost allocation for ESR upgrades",
       "stance": "support",
-      "description": "PJM already uses integrated processes to study ESR charging and discharging together, providing a model the Commission could adopt more broadly.",
+      "description": "GridStor states that upgrades identified for ESR charging should be allocated under the same established cost-allocation principles applied to other interconnection upgrades.",
       "quote_ids": [
         16
       ]
     },
     {
-      "key": "rg:caiso",
-      "name": "CAISO integrated ESR study model",
+      "key": "aq:upgradecost",
+      "name": "ESR charging upgrade cost allocation",
       "stance": "support",
-      "description": "CAISO already uses integrated processes to study ESR charging and discharging together, providing a model the Commission could adopt more broadly.",
+      "description": "GridStor addresses how the costs of network upgrades needed for ESR charging should be handled, recommending they follow the established interconnection cost-allocation framework rather than a separate treatment.",
       "quote_ids": [
         16
       ]
@@ -263,24 +295,23 @@
   ],
   "lenses": {
     "aq": [
+      "protection",
+      "deposits",
+      "jointstudy",
       "expedited",
-      "deposits"
+      "upgradecost"
     ],
     "pr": [
-      "study",
       "flex",
+      "study",
       "colo",
-      "cost",
-      "proximate"
+      "cost"
     ],
-    "rg": [
-      "pjm",
-      "caiso"
-    ]
+    "rg": []
   },
   "provenance": {
-    "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }

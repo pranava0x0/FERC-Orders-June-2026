@@ -12,7 +12,8 @@
       "concern": "AI data center load is categorically different from prior large loads and demands distinct treatment",
       "bins": [
         "topic:ai-load-characteristics"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "topic:ai-load-characteristics",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:targeted-reform"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "The 20 MW threshold is too low and would create burdensome, counterproductive procedures",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "aq:threshold",
         "topic:behavior-based-threshold"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
         "aq:threshold",
         "topic:behavior-based-threshold",
         "pr:study"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
         "aq:hybridrights",
         "pr:colo",
         "topic:process-matching"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
         "pr:colo",
         "pr:cost",
         "topic:process-matching"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 9,
@@ -86,7 +94,8 @@
       "concern": "ATC supports deposits and withdrawal penalties to screen out speculative load requests",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 10,
@@ -95,7 +104,8 @@
       "bins": [
         "aq:deposits",
         "topic:targeted-reform"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 11,
@@ -104,7 +114,8 @@
       "bins": [
         "aq:protection",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 12,
@@ -113,7 +124,8 @@
       "bins": [
         "aq:protection",
         "pr:cost"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 13,
@@ -123,7 +135,8 @@
         "aq:expedited",
         "pr:flex",
         "rg:miso"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 14,
@@ -133,7 +146,8 @@
         "aq:expedited",
         "pr:study",
         "topic:study-timeline"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 15,
@@ -143,7 +157,8 @@
         "aq:expedited",
         "pr:study",
         "topic:study-timeline"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 16,
@@ -152,7 +167,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 17,
@@ -161,7 +177,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 18,
@@ -171,7 +188,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:behavior-based-threshold"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 19,
@@ -180,7 +198,8 @@
       "bins": [
         "aq:upgradecost",
         "topic:to-funding"
-      ]
+      ],
+      "page": 20
     },
     {
       "id": 20,
@@ -189,7 +208,8 @@
       "bins": [
         "aq:protection",
         "topic:nerc-standards"
-      ]
+      ],
+      "page": 21
     }
   ],
   "bins": [

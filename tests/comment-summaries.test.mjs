@@ -6,12 +6,14 @@
  */
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readdirSync, readFileSync } from "node:fs";
+import { readdirSync, readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { validate, VOCAB } from "../tools/validate-summaries.mjs";
+import { buildPageIndex, pageForQuote } from "../tools/stamp-comment-pages.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
+const ROOT = join(here, "..");
 const DIR = join(here, "..", "sources", "comments", "summaries-v2");
 const files = readdirSync(DIR).filter((f) => f.endsWith(".json"));
 const load = (f) => JSON.parse(readFileSync(join(DIR, f), "utf8"));
@@ -35,6 +37,34 @@ test("each reform principle, ANOPR question, and region is engaged by >=1 summar
   for (const k of VOCAB.PR) assert.ok(seen.pr.has(k), `reform principle pr:${k} has >=1 summary`);
   for (const k of VOCAB.AQ) assert.ok(seen.aq.has(k), `ANOPR question aq:${k} has >=1 summary`);
   for (const k of VOCAB.RG) assert.ok(seen.rg.has(k), `region rg:${k} has >=1 summary`);
+});
+
+test("every quote carries a page that its source page actually starts (recomputed) or null", () => {
+  // Page stamps must be reproducible from the body: recompute and assert equality, so a stale stamp or a
+  // hand-edited page fails loudly. pageForQuote only returns a page that carries a >=50-char prefix of
+  // the quote, so a non-null page provably locates the quote's start; null means honestly unlocatable.
+  const bad = [];
+  for (const f of files) {
+    const s = load(f);
+    const sp = join(ROOT, s.source_text || "");
+    if (!existsSync(sp)) continue;
+    const idx = buildPageIndex(readFileSync(sp, "utf8"));
+    for (const q of s.quotes || []) {
+      const expected = pageForQuote(q.text, idx);
+      const got = q.page === undefined ? undefined : q.page;
+      if (got !== expected) bad.push(`${s.accession} Q${q.id}: page ${JSON.stringify(got)} != recomputed ${JSON.stringify(expected)}`);
+      else if (got != null && (!Number.isInteger(got) || got < 1 || got > idx.maxPage))
+        bad.push(`${s.accession} Q${q.id}: page ${got} outside 1..${idx.maxPage}`);
+    }
+  }
+  assert.deepEqual(bad.slice(0, 12), [], `quote page stamps are stale/invalid; re-run: node tools/stamp-comment-pages.mjs\n${bad.slice(0, 12).join("\n")}`);
+});
+
+test("page matching prefers a later full quote over an earlier repeated prefix", () => {
+  const prefix = "A repeated opening long enough to satisfy the fallback matcher appears in both places";
+  const full = `${prefix}, but only the later page carries this complete quoted passage.`;
+  const idx = buildPageIndex(`--- PAGE 3 ---\n${prefix}.\n--- PAGE 8 ---\n${full}\n`);
+  assert.equal(pageForQuote(full, idx), 8);
 });
 
 test("every summary is provisional (verified:false) and traces to a source body", () => {

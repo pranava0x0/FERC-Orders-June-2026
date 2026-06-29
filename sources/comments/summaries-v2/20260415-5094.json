@@ -12,7 +12,8 @@
       "concern": "Both pricing options leave ratepayers exposed to costs or risks",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:and-pricing-scope"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:and-pricing-scope"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:and-pricing-scope"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
         "aq:hybridrights",
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 9,
@@ -86,7 +94,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:pricing-options"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 10,
@@ -95,7 +104,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:pricing-options"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 11,
@@ -104,7 +114,8 @@
       "bins": [
         "topic:pricing-options",
         "topic:and-pricing-scope"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 12,
@@ -113,7 +124,8 @@
       "bins": [
         "pr:cost",
         "topic:pricing-options"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 13,
@@ -121,7 +133,8 @@
       "concern": "Public disclosure of disaggregated rates would expose the true cost burden of large-load service",
       "bins": [
         "topic:tariff-transparency"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 14,
@@ -131,7 +144,8 @@
         "aq:hybridrights",
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 15,
@@ -140,7 +154,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 16
     }
   ],
   "bins": [

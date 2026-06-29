@@ -13,7 +13,8 @@
       "bins": [
         "pr:flex",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "No prior federal framework exists; new rules must respect the federal-state division",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "pr:study",
         "rg:nyiso"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "aq:threshold",
         "pr:flex"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
         "aq:threshold",
         "aq:jurisdiction",
         "pr:flex"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 6,
@@ -59,7 +64,8 @@
         "aq:threshold",
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "concern": "Reliability must be the primary criterion in any large-load interconnection framework",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 8,
@@ -75,7 +82,8 @@
       "concern": "Large loads interconnecting at transmission voltage must face binding NERC reliability obligations",
       "bins": [
         "aq:protection"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "concern": "NERC reliability responsibility must stay with the entity that owns or operates BES equipment, not shift to the TO",
       "bins": [
         "aq:protection"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 11,
@@ -102,7 +112,8 @@
         "pr:cost",
         "aq:upgradecost",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 12,
@@ -111,7 +122,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:cost"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 13,
@@ -121,7 +133,8 @@
         "pr:study",
         "aq:jointstudy",
         "pr:flex"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 14,
@@ -130,7 +143,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 20
     },
     {
       "id": 15,
@@ -138,7 +152,8 @@
       "concern": "Any new rules must apply prospectively to protect existing interconnection agreements",
       "bins": [
         "topic:prospective-application"
-      ]
+      ],
+      "page": 21
     }
   ],
   "bins": [

@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "topic:load-forecasting"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:study",
         "topic:load-forecasting"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "SEIA supports rulemaking authority but wants state boundaries respected",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "The generator-interconnection analogy for jurisdiction is legally weak because loads are customers, not competitors",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "Jurisdiction must be limited to transmission-level interconnections under the seven-factor test",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
       "concern": "Storage resources should be excluded from the large-load rule",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 7,
@@ -62,7 +68,8 @@
       "concern": "The 20 MW threshold may be too low; Commission should gather data before deciding",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 8,
@@ -71,7 +78,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
         "aq:jointstudy",
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "concern": "Supports standardized deposits, readiness, and withdrawal penalties",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 11,
@@ -98,7 +108,8 @@
       "bins": [
         "aq:deposits",
         "topic:load-forecasting"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 12,
@@ -108,7 +119,8 @@
         "aq:expedited",
         "aq:hybridrights",
         "pr:proximate"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 13,
@@ -117,7 +129,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 14,
@@ -126,7 +139,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 15,
@@ -135,7 +149,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 16,
@@ -145,7 +160,8 @@
         "aq:hybridrights",
         "pr:colo",
         "pr:cost"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 17,
@@ -154,7 +170,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 18,
@@ -163,7 +180,8 @@
       "bins": [
         "pr:colo",
         "topic:new-generation-incentives"
-      ]
+      ],
+      "page": 21
     }
   ],
   "bins": [

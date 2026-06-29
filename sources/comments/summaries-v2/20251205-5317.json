@@ -14,7 +14,8 @@
         "pr:study",
         "pr:cost",
         "topic:transmission-investment"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "bins": [
         "pr:study",
         "aq:jointstudy"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
         "pr:study",
         "aq:jointstudy",
         "topic:transmission-investment"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -52,7 +56,8 @@
         "pr:colo",
         "pr:flex",
         "topic:technology-neutrality"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 6,
@@ -61,7 +66,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 7,
@@ -71,7 +77,8 @@
         "pr:colo",
         "pr:cost",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 8,
@@ -81,7 +88,8 @@
         "pr:proximate",
         "aq:expedited",
         "pr:study"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 9,
@@ -90,7 +98,8 @@
       "bins": [
         "pr:proximate",
         "topic:technology-neutrality"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 10,
@@ -99,7 +108,8 @@
       "bins": [
         "pr:proximate",
         "topic:technology-neutrality"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 11,
@@ -107,7 +117,8 @@
       "concern": "Even minimal curtailment commitments enable very large load additions grid-wide",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 12,
@@ -117,7 +128,8 @@
         "pr:flex",
         "aq:expedited",
         "rg:pjm"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 13,
@@ -126,7 +138,8 @@
       "bins": [
         "pr:flex",
         "topic:curtailment-design"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 14,
@@ -135,7 +148,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:federal-state-jurisdiction"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 15,
@@ -144,7 +158,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:federal-state-jurisdiction"
-      ]
+      ],
+      "page": 24
     }
   ],
   "bins": [

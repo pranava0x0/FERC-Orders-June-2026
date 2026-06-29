@@ -12,7 +12,8 @@
       "concern": "Overall ask that the rulemaking respect Tribal sovereignty",
       "bins": [
         "topic:tribal-sovereignty"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Demand for formal pre-rule Tribal Consultation under existing FERC regulation",
       "bins": [
         "topic:tribal-consultation"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "topic:tribal-consultation",
         "topic:tribal-sovereignty"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "Call for formal, early Government-to-Government Consultation as part of implementation",
       "bins": [
         "topic:tribal-consultation"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "bins": [
         "aq:deposits",
         "topic:tribal-equity"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
         "aq:deposits",
         "pr:cost",
         "topic:tribal-equity"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
         "aq:deposits",
         "aq:expedited",
         "topic:tribal-equity"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
         "aq:hybridrights",
         "pr:colo",
         "topic:tribal-equity"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -85,7 +93,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -95,7 +104,8 @@
         "aq:expedited",
         "pr:flex",
         "topic:tribal-equity"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 11,
@@ -104,7 +114,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 12,
@@ -114,7 +125,8 @@
         "pr:cost",
         "pr:proximate",
         "topic:tribal-reliability"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 13,
@@ -123,7 +135,8 @@
       "bins": [
         "pr:study",
         "topic:tribal-reliability"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 14,
@@ -131,7 +144,8 @@
       "concern": "Tribal communities face compounding climate vulnerability from new large-load development",
       "bins": [
         "topic:tribal-sovereignty"
-      ]
+      ],
+      "page": 8
     }
   ],
   "bins": [

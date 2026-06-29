@@ -12,7 +12,8 @@
       "concern": "support for standardized procedures",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "FPA allocation of wholesale vs retail authority",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
         "aq:jurisdiction",
         "pr:cost",
         "topic:ratepayer-protection"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
         "aq:jurisdiction",
         "pr:cost",
         "pr:proximate"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -84,7 +92,8 @@
       "concern": "raise 20 MW threshold to 50 MW",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -93,7 +102,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:colo"
-      ]
+      ],
+      "page": 5
     }
   ],
   "bins": [

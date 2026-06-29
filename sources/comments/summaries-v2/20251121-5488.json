@@ -12,7 +12,8 @@
       "concern": "20 MW threshold is too low",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "pr:colo",
         "aq:deposits"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "Hybrid facility NERC compliance unclear",
       "bins": [
         "aq:hybridrights"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "concern": "Utility bears frequency management burden for hybrid mismatches",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
       "concern": "Study complexity risk delays to generator interconnection",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
       "bins": [
         "pr:cost",
         "aq:protection"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -90,7 +99,8 @@
       "bins": [
         "pr:cost",
         "aq:protection"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 11,
@@ -98,7 +108,8 @@
       "concern": "Jurisdictional consistency across different load serving entities",
       "bins": [
         "topic:regulatory-consistency"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "concern": "Evaluation criteria must include reliability and economic impacts",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

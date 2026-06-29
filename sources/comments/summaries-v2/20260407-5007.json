@@ -12,7 +12,8 @@
       "concern": "NERC Level 3 Alert warning of data center strain on grid reliability",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Existing FERC standards inadequate to address data center reliability risks",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Request for data center moratorium until reliability issues resolved",
       "bins": [
         "topic:moratorium"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Data centers cause sudden, unpredictable load surges threatening reliability",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Demand that NERC authority over data center reliability standards be clarified",
       "bins": [
         "topic:nerc-authority"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "RTOs must have authority to impose forced curtailment on data centers",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "No statutory basis for claiming AI data centers are in public interest",
       "bins": [
         "topic:public-interest"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "Majority of generative AI use cases are for non-consensual pornography",
       "bins": [
         "topic:public-interest"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -76,7 +84,8 @@
       "concern": "AI leaders warn of systemic risks and lack of societal readiness",
       "bins": [
         "topic:public-interest"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 10,
@@ -84,7 +93,8 @@
       "concern": "Private AI interests do not automatically serve the public interest",
       "bins": [
         "topic:public-interest"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 11,
@@ -92,7 +102,8 @@
       "concern": "No distinction made between harmful and beneficial AI data center uses",
       "bins": [
         "topic:public-interest"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 12,
@@ -100,7 +111,8 @@
       "concern": "NERC evidence requires federal reliability standards and forced curtailment",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     }
   ],
   "bins": [

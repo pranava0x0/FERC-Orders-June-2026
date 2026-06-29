@@ -12,7 +12,8 @@
       "concern": "electricity must be accessible and reliable",
       "bins": [
         "topic:reliability-access"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "new load interconnection must not sacrifice existing customer reliability",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "states should lead on load interconnection rules",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Ohio is implementing state-level expedited processes for data center interconnection",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "if FERC acts, target data centers specifically, not all large loads",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "data centers warrant distinct regulatory treatment from other large loads",
       "bins": [
         "topic:data-center-class"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "FERC should establish a clear MW threshold for federal jurisdiction",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "recommend a 20-25 MW threshold for data center federal jurisdiction",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -76,7 +84,8 @@
       "concern": "standardize study deposits and readiness requirements for data centers",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 10,
@@ -84,7 +93,8 @@
       "concern": "deposits and milestones filter out speculative loads",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 11,
@@ -92,7 +102,8 @@
       "concern": "deposits improve utility resource allocation and forecasting",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 12,
@@ -100,7 +111,8 @@
       "concern": "deposits screen out speculative loads (30,000 MW reduced to under 15,000 MW)",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 13,
@@ -108,7 +120,8 @@
       "concern": "speed must not compromise safety or reliability",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 14,
@@ -116,7 +129,8 @@
       "concern": "data centers must not shift costs to other customers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 15,
@@ -124,7 +138,8 @@
       "concern": "data centers and hybrid facilities must pay 100% of network upgrade costs",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 16,
@@ -132,7 +147,8 @@
       "concern": "data centers must share costs for both new and existing transmission they use",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 17,
@@ -140,7 +156,8 @@
       "concern": "support co-located generation with expedited interconnection",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 18,
@@ -148,7 +165,8 @@
       "concern": "existing generation that suspends grid service must study reliability impacts at own cost",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 19,
@@ -156,7 +174,8 @@
       "concern": "FERC should respect state authority and continue deferring to state tariffs",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

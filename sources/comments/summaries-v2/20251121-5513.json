@@ -10,91 +10,152 @@
       "id": 1,
       "text": "The 20 MW threshold is necessary and practical.",
       "concern": "ETX endorses the 20 MW threshold as appropriate",
-      "bins": ["aq:threshold"]
+      "bins": [
+        "aq:threshold"
+      ],
+      "page": null
     },
     {
       "id": 2,
       "text": "For Hybrid projects, the Commission should consider both absolute size of the load (greater or equal to the threshold) and the relative size of the load component to the generation component.",
       "concern": "Hybrid project threshold should account for load-to-generation ratio, not just absolute size",
-      "bins": ["aq:threshold", "aq:hybridrights"]
+      "bins": [
+        "aq:threshold",
+        "aq:hybridrights"
+      ],
+      "page": null
     },
     {
       "id": 3,
       "text": "A threshold lower than 20 MW could be manipulated to gain favorable treatment of oversized (effectively stand-alone) generation resources included in a Hybrid application.",
       "concern": "A sub-20 MW threshold creates a loophole for oversized generation in hybrid applications",
-      "bins": ["aq:threshold", "aq:hybridrights"]
+      "bins": [
+        "aq:threshold",
+        "aq:hybridrights"
+      ],
+      "page": null
     },
     {
       "id": 4,
       "text": "FERC's Form LGIP for generation resources is a reasonable pro-forma for graduated/escalating study deposits and readiness requirements for a new load study procedure (\"Load Interconnection Study Procedures\"), including formulaic mechanisms for refundability of deposits in the early stages of the process.",
       "concern": "LGIP framework is a suitable model for load study deposits and refundability",
-      "bins": ["aq:deposits", "pr:study"]
+      "bins": [
+        "aq:deposits",
+        "pr:study"
+      ],
+      "page": null
     },
     {
       "id": 5,
       "text": "The additional and most potent commercial readiness criteria ETX recommends for consideration by the Commission is a Permitting and/or Public Acceptance qualification.",
       "concern": "Permitting and community acceptance should be a key readiness criterion",
-      "bins": ["aq:deposits", "pr:study", "topic:permitting-readiness"]
+      "bins": [
+        "aq:deposits",
+        "pr:study",
+        "topic:permitting-readiness"
+      ],
+      "page": null
     },
     {
       "id": 6,
       "text": "The right locations for large load and Hybrid projects, with proper community acceptance and buy-in, are much more scarce than the capital willing to invest speculatively in them.",
       "concern": "Siting with community acceptance is the binding constraint, not capital",
-      "bins": ["topic:permitting-readiness"]
+      "bins": [
+        "topic:permitting-readiness"
+      ],
+      "page": null
     },
     {
       "id": 7,
       "text": "The Commission should reject any Load Interconnection Study Procedures that inherently rewards certain load/market participants to the detriment of others. Open access to the transmission system must be protected in both statute and practice.",
       "concern": "Study procedures must preserve open, non-discriminatory transmission access",
-      "bins": ["pr:study", "topic:open-access-protection"]
+      "bins": [
+        "pr:study",
+        "topic:open-access-protection"
+      ],
+      "page": null
     },
     {
       "id": 8,
       "text": "The Load Interconnection Study Procedures should establish expedited pathways for more mature projects that pass greater readiness thresholds and for projects with flexible requirements or capabilities that can limit transmission system impacts.",
       "concern": "Mature and flexible projects should qualify for expedited interconnection",
-      "bins": ["pr:study", "pr:flex"]
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ],
+      "page": null
     },
     {
       "id": 9,
       "text": "The Load Interconnection Study Procedures should allow for flexible project sizing amendments based on study results that encourage efficient use of transmission resources, especially for Hybrid and/or co-located projects where parallel load and generation studies will create modeling circularities.",
       "concern": "Study process should permit sizing adjustments to resolve modeling circularities in hybrid and co-located projects",
-      "bins": ["aq:hybridrights", "pr:study", "pr:flex", "pr:colo"]
+      "bins": [
+        "aq:hybridrights",
+        "pr:study",
+        "pr:flex",
+        "pr:colo"
+      ],
+      "page": null
     },
     {
       "id": 10,
       "text": "Co-located facilities should not be studied based on the \"net\" amount of injection/withdrawal rights requested – to do so implies the Docket is applicable only to \"behind the meter\" (\"BTM\") co-located facilities, and misrepresents the broader potential benefits of co-location.",
       "concern": "Net injection/withdrawal netting for co-location study would wrongly exclude front-of-meter arrangements",
-      "bins": ["aq:hybridrights", "pr:colo"]
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ],
+      "page": null
     },
     {
       "id": 11,
       "text": "A load with a \"front of the meter\" (\"FTM\"), market-facing interconnection co-located with generation with a FTM interconnection, even if commercially distinct and not electrically \"netting\" injection/withdrawal, may have equal or greater benefits to grid reliability (total network upgrades, resource adequacy, transmission constraints, etc.) than co-located BTM facilities.",
       "concern": "Front-of-meter co-location can deliver the same or greater grid reliability benefits as behind-the-meter arrangements",
-      "bins": ["aq:hybridrights", "pr:colo"]
+      "bins": [
+        "aq:hybridrights",
+        "pr:colo"
+      ],
+      "page": null
     },
     {
       "id": 12,
       "text": "Load, Hybrid and/or co-located load and generation facilities should be responsible for 100% of their network upgrade costs.",
       "concern": "Large loads and hybrids should bear full network upgrade costs with no offset credits",
-      "bins": ["aq:upgradecost", "pr:cost"]
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ],
+      "page": null
     },
     {
       "id": 13,
       "text": "If a project cannot achieve that through lower network upgrade costs, it should not be incentivized to do so with an off-set crediting mechanism.",
       "concern": "Offset crediting for co-location should be rejected if it is not earned through lower upgrade costs",
-      "bins": ["aq:upgradecost", "pr:cost", "pr:colo"]
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost",
+        "pr:colo"
+      ],
+      "page": null
     },
     {
       "id": 14,
       "text": "Self-build of the interconnection facilities should continue to be an option for projects managed through the Load Interconnection Study Process as it allows the market to optimize for speed and cost, eliminating potential deliverability or cost-inflation bottlenecks.",
       "concern": "Self-build rights should be preserved to promote speed and cost efficiency",
-      "bins": ["pr:study", "topic:self-build-rights"]
+      "bins": [
+        "pr:study",
+        "topic:self-build-rights"
+      ],
+      "page": null
     },
     {
       "id": 15,
       "text": "The Commission should ensure that, as of final rulemaking, large load projects that have matured through existing state, utility, and/or transmission provider interconnection processes are granted the option to retain their existing service requests.",
       "concern": "Projects already in existing interconnection processes should be allowed to keep their queue position",
-      "bins": ["topic:grandfathering-active-requests"]
+      "bins": [
+        "topic:grandfathering-active-requests"
+      ],
+      "page": null
     }
   ],
   "bins": [
@@ -103,89 +164,142 @@
       "name": "20 MW Threshold Support",
       "stance": "support",
       "description": "ETX endorses the 20 MW threshold as necessary and practical. For hybrid projects, it recommends FERC also weigh the load-to-generation ratio to prevent applicants from packaging oversized stand-alone generation with a small load component to game the threshold.",
-      "quote_ids": [1, 2, 3]
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "key": "aq:deposits",
       "name": "LGIP-Based Deposit Framework",
       "stance": "support",
       "description": "ETX supports modeling the new Load Interconnection Study Procedures on FERC's Form LGIP, including graduated and escalating deposits with formulaic refundability in early stages. It also recommends adding a permitting and community acceptance criterion as the most meaningful commercial readiness gate.",
-      "quote_ids": [4, 5]
+      "quote_ids": [
+        4,
+        5
+      ]
     },
     {
       "key": "aq:hybridrights",
       "name": "Hybrid and Co-location Study Design",
       "stance": "mixed",
       "description": "ETX argues that studying co-located facilities on a net injection/withdrawal basis incorrectly limits the docket to behind-the-meter arrangements. Front-of-meter co-location with separate interconnections can deliver equal or greater grid reliability benefits and should be studied accordingly. It also warns that parallel load and generation studies will create modeling circularities that require flexible sizing rules.",
-      "quote_ids": [2, 3, 9, 10, 11]
+      "quote_ids": [
+        2,
+        3,
+        9,
+        10,
+        11
+      ]
     },
     {
       "key": "aq:upgradecost",
       "name": "Full Cost Responsibility for Network Upgrades",
       "stance": "support",
       "description": "ETX takes the position that large loads, hybrids, and co-located facilities should bear 100% of network upgrade costs. It opposes offset or crediting mechanisms that reward co-location when the project has not actually reduced upgrade costs.",
-      "quote_ids": [12, 13]
+      "quote_ids": [
+        12,
+        13
+      ]
     },
     {
       "key": "pr:study",
       "name": "Load Study Procedures Design",
       "stance": "support",
       "description": "ETX supports a new Load Interconnection Study Procedures modeled on LGIP, with graduated deposits, expedited pathways for mature and flexible projects, open non-discriminatory access, and self-build rights. It urges FERC to reject designs that favor certain participants over others.",
-      "quote_ids": [4, 5, 7, 8, 9, 14]
+      "quote_ids": [
+        4,
+        5,
+        7,
+        8,
+        9,
+        14
+      ]
     },
     {
       "key": "pr:flex",
       "name": "Expedited Paths and Flexible Sizing",
       "stance": "support",
       "description": "ETX recommends expedited interconnection pathways for projects that pass higher readiness thresholds or can limit transmission system impacts. It also urges flexible sizing amendments during the study process so hybrid and co-located projects can right-size around modeling circularities rather than locking in suboptimal capacities early.",
-      "quote_ids": [8, 9]
+      "quote_ids": [
+        8,
+        9
+      ]
     },
     {
       "key": "pr:cost",
       "name": "Cost Allocation: No Offset Credits",
       "stance": "support",
       "description": "ETX supports assigning 100% of network upgrade costs to large loads and hybrid projects and opposes offset crediting mechanisms. It argues that co-location should justify itself through genuinely lower upgrade costs, not through a subsidy.",
-      "quote_ids": [12, 13]
+      "quote_ids": [
+        12,
+        13
+      ]
     },
     {
       "key": "pr:colo",
       "name": "Co-location: FTM vs BTM Parity",
       "stance": "support",
       "description": "ETX argues that both front-of-meter and behind-the-meter co-location arrangements should be recognized in the study framework. Studying only net injection/withdrawal would effectively exclude FTM co-location, even though such arrangements can provide equal or greater reliability benefits.",
-      "quote_ids": [9, 10, 11, 13]
+      "quote_ids": [
+        9,
+        10,
+        11,
+        13
+      ]
     },
     {
       "key": "topic:permitting-readiness",
       "name": "Permitting and Community Acceptance",
       "stance": "support",
       "description": "ETX recommends that the Commission add a permitting and public acceptance qualification as the primary commercial readiness criterion for the Load Interconnection Study Procedures, contending that suitable, community-accepted sites are scarcer than capital.",
-      "quote_ids": [5, 6]
+      "quote_ids": [
+        5,
+        6
+      ]
     },
     {
       "key": "topic:open-access-protection",
       "name": "Non-discriminatory Transmission Access",
       "stance": "support",
       "description": "ETX asks FERC to reject any study procedures that systematically advantage certain load types or market participants, insisting that open access to the transmission system must be protected in both statute and practice.",
-      "quote_ids": [7]
+      "quote_ids": [
+        7
+      ]
     },
     {
       "key": "topic:self-build-rights",
       "name": "Preserve Self-build Option",
       "stance": "support",
       "description": "ETX supports retaining self-build rights for interconnection facilities in the new load study process, arguing that market-driven construction optimizes speed and cost while avoiding potential bottlenecks from utility-built facilities.",
-      "quote_ids": [14]
+      "quote_ids": [
+        14
+      ]
     },
     {
       "key": "topic:grandfathering-active-requests",
       "name": "Grandfather Existing Queue Positions",
       "stance": "support",
       "description": "ETX urges FERC to allow large load projects that have already advanced through existing state, utility, or transmission provider processes to retain their current service requests rather than being forced into the new queue, warning that mandatory transition would harm the most shovel-ready projects.",
-      "quote_ids": [15]
+      "quote_ids": [
+        15
+      ]
     }
   ],
   "lenses": {
-    "aq": ["threshold", "deposits", "hybridrights", "upgradecost"],
-    "pr": ["study", "flex", "cost", "colo"],
+    "aq": [
+      "threshold",
+      "deposits",
+      "hybridrights",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "flex",
+      "cost",
+      "colo"
+    ],
     "rg": []
   },
   "provenance": {

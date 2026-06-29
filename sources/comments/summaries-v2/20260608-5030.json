@@ -4,312 +4,317 @@
   "org_type": "other",
   "filed": "06/08/2026",
   "source_text": "sources/comments/files/20260608-5030__Heron-Power/Heron Power _ FERC Comments _ RM26-4-000 _ Final.txt",
-  "overall_summary": "Heron Power argues that AI datacenter grid risks arise from legacy power delivery architectures, not inherent load characteristics, and proposes that performance-based interconnection rules should recognize energy-integrated power electronics, grid-forming controls, and open-source inverter architectures as equivalent to traditional co-located generation for achieving reliability compliance. The filing emphasizes that grid-forming large loads provide grid services (inertia, voltage support, harmonic damping) rather than imposing pure costs, and that technology-neutral performance standards would reduce interconnection study burdens while supporting domestic advanced power electronics manufacturing.",
+  "overall_summary": "Heron Power, a U.S. power electronics manufacturer, argues that the network risk of large AI datacenter loads is an artifact of legacy power delivery architecture, not inherent, and can be solved with grid-forming controls and integrated DC-bus storage. It urges the Commission to write performance-based standards that recognize energy-integrated power electronics as a valid compliance pathway alongside co-located generation, to credit grid-forming loads' system benefits against upgrade costs, and to give expedited study and reduced deposits to loads with open, verifiable controls.",
   "quotes": [
     {
       "id": 1,
-      "text": "When grid voltage or frequency deviates beyond tight thresholds, data hall UPS systems immediately and completely disconnect compute load.",
-      "concern": "Datacenter UPS protection settings trigger disconnection on minor grid disturbances",
+      "text": "why energy-integrated power conversion, not only co-located generation, should be recognized as a valid compliance pathway for large load reliability requirements",
+      "concern": "Power electronics should be a recognized compliance pathway, not only co-located generation",
       "bins": [
-        "pr:flex"
-      ]
+        "pr:colo",
+        "aq:hybridrights"
+      ],
+      "page": 1
     },
     {
       "id": 2,
-      "text": "In a grid with tens or hundreds of megawatts of co-located data center load, this behavior is self-reinforcing, and a minor grid disturbance can trigger simultaneous disconnection across multiple facilities, producing a sudden loss of load that exacerbates the very instability that triggered the disconnection.",
-      "concern": "Cascading datacenter disconnections amplify grid instability",
+      "text": "Overly prescriptive rules with generation mandates or lengthy interconnection studies that fail to recognize the capabilities of modern power electronics to support the grid will produce longer queue timelines, higher costs, and more network upgrades.",
+      "concern": "Prescriptive generation mandates and long studies raise costs and upgrades",
       "bins": [
-        "pr:flex",
-        "pr:proximate"
-      ]
+        "pr:study",
+        "pr:cost"
+      ],
+      "page": 2
     },
     {
       "id": 3,
-      "text": "unmitigated AI training workloads cause facility-wide load swings of 30 to 150 percent of rated power within milliseconds",
-      "concern": "AI workload dynamics create rapid facility power transients",
+      "text": "The Commission's evolving reliability framework should distinguish between data centers designed with integrated ride-through and load-smoothing capability and those without.",
+      "concern": "Rules should distinguish loads with built-in ride-through and load-smoothing",
       "bins": [
-        "pr:flex",
-        "pr:proximate"
-      ]
+        "topic:load-smoothing-architecture",
+        "pr:flex"
+      ],
+      "page": 3
     },
     {
       "id": 4,
-      "text": "These problems are not inherent to AI data centers. They are an artifact of legacy datacenter power delivery architectures.",
-      "concern": "Grid interaction problems stem from architecture choices, not inherent datacenter nature",
+      "text": "Facilities that can demonstrate, at the point of interconnection, that their power draw remains within defined voltage & frequency ride-through, ramp-rate and ripple thresholds should be recognized as meeting the AI training load stability requirements the Commission and NERC are developing, without additional prescriptive equipment mandates.",
+      "concern": "Performance at the point of interconnection should satisfy stability rules without equipment mandates",
       "bins": [
-        "pr:study",
-        "pr:colo"
-      ]
+        "topic:load-smoothing-architecture",
+        "pr:study"
+      ],
+      "page": 3
     },
     {
       "id": 5,
-      "text": "Heron's SuperBBU is a high C-rate battery that couples directly to the data hall 800 VDC distribution power bus without an additional conversion stage, enabling ride-through support and sub-millisecond response to individual GPU-level load changes.",
-      "concern": "Integrated battery architecture enables rapid load response and ride-through",
+      "text": "The Commission should update its reliability compliance framework to explicitly recognize integrated power electronics solutions as a valid pathway alongside co-located generation.",
+      "concern": "Recognize integrated power electronics as a valid pathway alongside co-located generation",
       "bins": [
         "pr:colo",
-        "pr:flex"
-      ]
+        "aq:hybridrights"
+      ],
+      "page": 3
     },
     {
       "id": 6,
-      "text": "Facility-wide training load swings that would otherwise propagate as severe flicker or medium-voltage current oscillations are absorbed within the 800 VDC bus before they reach the network point of interconnection.",
-      "concern": "Internal power architecture absorbs load transients internally without network propagation",
+      "text": "The relevant test should be performance-based: does the facility meet specified ride-through duration, ramp-rate, fault current, and voltage stability requirements at the point of interconnection?",
+      "concern": "Adopt a performance-based, technology-neutral test",
       "bins": [
-        "pr:proximate",
-        "pr:flex"
-      ]
+        "topic:performance-based-standards"
+      ],
+      "page": 3
     },
     {
       "id": 7,
-      "text": "The Commission's evolving reliability framework should distinguish between data centers designed with integrated ride-through and load-smoothing capability and those without.",
-      "concern": "Interconnection rules should differentiate datacenter designs based on internal stability features",
+      "text": "Where energy-integrated power electronics can satisfy the same performance requirements at lower cost, ratepayers benefit.",
+      "concern": "Allowing power electronics to meet requirements lowers cost for ratepayers",
       "bins": [
-        "pr:study"
-      ]
+        "pr:cost"
+      ],
+      "page": 4
     },
     {
       "id": 8,
-      "text": "Energy-integrated power electronics achieve the same reliability outcomes through a different mechanism: energy storage coupled directly to the datacenter 800 V DC distribution system tethered via grid-forming controls to the medium-voltage interconnection.",
-      "concern": "Storage plus grid-forming controls alternative to co-located generation meets reliability requirements",
+      "text": "A large load equipped with grid-forming controls is not merely a less-harmful version of a passive load but can be a positive grid asset.",
+      "concern": "Grid-forming large loads are a positive grid asset, not just a reduced liability",
       "bins": [
-        "pr:colo"
-      ]
+        "topic:grid-forming-loads"
+      ],
+      "page": 4
     },
     {
       "id": 9,
-      "text": "The Commission should update its reliability compliance framework to explicitly recognize integrated power electronics solutions as a valid pathway alongside co-located generation.",
-      "concern": "Integrated power electronics should be recognized as valid compliance pathway",
+      "text": "the Commission should create a distinct interconnection treatment pathway for large loads that demonstrate grid-forming capability",
+      "concern": "Create a distinct interconnection pathway for grid-forming loads",
       "bins": [
-        "pr:colo"
-      ]
+        "topic:grid-forming-loads",
+        "pr:study"
+      ],
+      "page": 4
     },
     {
       "id": 10,
-      "text": "The relevant test should be performance-based: does the facility meet specified ride-through duration, ramp-rate, fault current, and voltage stability requirements at the point of interconnection?",
-      "concern": "Compliance standard should be performance-based at interconnection point",
+      "text": "The expedited study pathway the Commission is considering for flexible and curtailable loads is a natural starting point; grid-forming loads should qualify for comparable treatment.",
+      "concern": "Grid-forming loads should get expedited study like flexible and curtailable loads",
       "bins": [
-        "pr:study"
-      ]
+        "pr:flex",
+        "aq:expedited"
+      ],
+      "page": 5
     },
     {
       "id": 11,
-      "text": "A large load equipped with grid-forming controls is not merely a less-harmful version of a passive load but can be a positive grid asset.",
-      "concern": "Grid-forming loads contribute grid services, not just reduce harm",
+      "text": "the Commission should direct RTOs and transmission owners to credit the grid services provided by grid-forming large loads against any direct-assignment network upgrade costs.",
+      "concern": "Credit grid-forming loads' services against direct-assignment upgrade costs",
       "bins": [
-        "pr:flex"
-      ]
+        "pr:cost",
+        "aq:upgradecost"
+      ],
+      "page": 5
     },
     {
       "id": 12,
-      "text": "At the point of interconnection, a grid-forming inverter-based load behaves like a well-damped voltage-forming source — establishing a stable voltage and frequency reference, providing inertial response, delivering harmonic damping, and generating fault currents consistent with established protection relay coordination.",
-      "concern": "Grid-forming loads provide inertia, voltage support, and fault current services",
+      "text": "The cost-causation principle underlying ANOPR Principle 8 should apply symmetrically to benefits as well as costs.",
+      "concern": "Cost causation should apply to benefits, not only costs",
       "bins": [
-        "pr:flex"
-      ]
+        "pr:cost",
+        "aq:upgradecost"
+      ],
+      "page": 5
     },
     {
       "id": 13,
-      "text": "A large load that actively replenishes these services is not a burden on the grid, but a partial solution to the problem the Commission and NERC are spending considerable resources trying to solve through other means.",
-      "concern": "Grid-forming loads address NERC's synchronous inertia and stability concerns",
+      "text": "RTOs and transmission providers should be directed to develop streamlined interconnection study procedures for loads implementing open, publicly documented control architectures, reducing the study depth required for facilities whose control behavior is fully verifiable.",
+      "concern": "Streamline studies for loads with open, verifiable control architectures",
       "bins": [
-        "pr:flex"
-      ]
+        "topic:open-verifiable-controls",
+        "pr:study"
+      ],
+      "page": 6
     },
     {
       "id": 14,
-      "text": "the Commission should create a distinct interconnection treatment pathway for large loads that demonstrate grid-forming capability — including extended ride-through, voltage support, inertial response, and harmonic damping — at the point of interconnection.",
-      "concern": "Expedited interconnection pathway warranted for grid-forming load capability",
+      "text": "The Commission should also explore preferential queue treatment or reduced study deposit requirements for such facilities, recognizing that the study burden those facilities impose on operators is materially lower.",
+      "concern": "Offer preferential queue treatment and reduced study deposits for low-burden facilities",
       "bins": [
-        "pr:study"
-      ]
+        "aq:deposits",
+        "aq:expedited",
+        "topic:open-verifiable-controls"
+      ],
+      "page": 6
     },
     {
       "id": 15,
-      "text": "Such loads impose lower study burdens, require fewer network upgrades, and contribute to system reliability.",
-      "concern": "Grid-forming loads reduce study burden and network upgrade costs",
+      "text": "The Commission should write performance-based standards that specify what grid behaviors large loads must exhibit ... without specifying which equipment categories must be deployed to achieve them.",
+      "concern": "Write technology-neutral performance-based standards, not equipment mandates",
       "bins": [
-        "pr:cost",
-        "pr:study"
-      ]
+        "topic:performance-based-standards"
+      ],
+      "page": 6
     },
     {
       "id": 16,
-      "text": "the Commission should direct RTOs and transmission providers to credit the grid services provided by grid-forming large loads against any direct-assignment network upgrade costs.",
-      "concern": "Grid service benefits from grid-forming loads should offset upgrade costs",
-      "bins": [
-        "pr:cost"
-      ]
-    },
-    {
-      "id": 17,
-      "text": "A facility whose grid-forming controls demonstrably eliminate the need for a synchronous condenser, flicker mitigation device, or static VAR compensator provides a quantifiable benefit to the transmission system.",
-      "concern": "Grid-forming controls can eliminate need for separate voltage-support equipment",
-      "bins": [
-        "pr:cost",
-        "pr:colo"
-      ]
-    },
-    {
-      "id": 18,
-      "text": "Proprietary, nonlinear inverter controls are shared with system operators only as black-box models — opaque representations that may diverge from deployed firmware, and that must be re-evaluated whenever firmware is updated, plant design evolves, or the surrounding power system changes.",
-      "concern": "Proprietary inverter models create trust gap and re-study burden",
-      "bins": [
-        "pr:study"
-      ]
-    },
-    {
-      "id": 19,
-      "text": "OpenVSM is an open-source grid-forming controller whose architecture, tuning parameters, and embedded firmware code are publicly available.",
-      "concern": "Open-source controller architecture enables transparent, verifiable system behavior",
-      "bins": [
-        "pr:study"
-      ]
-    },
-    {
-      "id": 20,
-      "text": "Any developer, utility engineer, grid planner, or independent researcher can inspect, replicate, and validate its behavior.",
-      "concern": "Public access to control code enables third-party verification",
-      "bins": [
-        "pr:study"
-      ]
-    },
-    {
-      "id": 21,
-      "text": "RTOs and transmission providers should be directed to develop streamlined interconnection study procedures for loads implementing open, publicly documented control architectures, reducing the study depth required for facilities whose control behavior is fully verifiable.",
-      "concern": "Streamlined studies warranted for open, verifiable control architectures",
-      "bins": [
-        "pr:study"
-      ]
-    },
-    {
-      "id": 22,
-      "text": "The trust gap between inverter model and field behavior is not a technical inevitability. It is a consequence of regulatory frameworks that do not reward openness.",
-      "concern": "Regulatory framework should incentivize open inverter controls",
-      "bins": [
-        "pr:study"
-      ]
-    },
-    {
-      "id": 23,
-      "text": "The Commission should write performance-based standards that specify what grid behaviors large loads must exhibit — ride-through duration and depth, ramp-rate limits, fault current characteristics, voltage stability contributions — without specifying which equipment categories must be deployed to achieve them.",
-      "concern": "Performance-based standards, not equipment mandates, support technology innovation",
-      "bins": [
-        "pr:study"
-      ]
-    },
-    {
-      "id": 24,
-      "text": "This approach rewards innovation; any technology that meets performance requirements qualifies, creating a competitive market that drives cost reduction and capability improvement over time.",
-      "concern": "Technology-neutral performance standards enable market-driven innovation",
-      "bins": [
-        "pr:cost"
-      ]
-    },
-    {
-      "id": 25,
-      "text": "It avoids locking in legacy equipment, and it creates the stable, technology-neutral demand signal that domestic manufacturers need to justify the capital investment required to build factory capacity at scale.",
-      "concern": "Performance-based rules create demand for domestic advanced power electronics manufacturing",
+      "text": "it creates the stable, technology-neutral demand signal that domestic manufacturers need to justify the capital investment required to build factory capacity at scale.",
+      "concern": "Technology-neutral standards support domestic power electronics manufacturing",
       "bins": [
         "topic:domestic-manufacturing"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [
     {
-      "key": "pr:flex",
-      "name": "Datacenter load flexibility and grid response",
-      "stance": "support",
-      "description": "Heron argues that datacenter UPS protection settings create grid instability by triggering simultaneous disconnections during minor disturbances, and that AI workload power swings (30-150 percent within milliseconds) exacerbate this. Grid-forming loads with integrated ride-through and load-smoothing capabilities absorb these transients internally, providing inertial response, voltage support, and harmonic damping as grid assets rather than pure liabilities.",
+      "key": "pr:colo",
+      "name": "Power electronics as compliance pathway",
+      "stance": "mixed",
+      "description": "Heron supports the ANOPR's co-located generation framework (Principle 3) as valuable but says it describes only one of several sound architectures. It asks the Commission to explicitly recognize energy-integrated power electronics as an equally valid reliability compliance pathway alongside co-located generation.",
       "quote_ids": [
         1,
-        2,
-        3,
-        5,
-        6,
-        11,
-        12,
-        13
+        5
       ]
     },
     {
-      "key": "pr:proximate",
-      "name": "Localized power management reduces network impact",
+      "key": "aq:hybridrights",
+      "name": "Recognize integrated storage alternative",
       "stance": "support",
-      "description": "Heron emphasizes that internal datacenter power architectures can absorb facility-wide load transients (flicker, current oscillations) before they reach the network point of interconnection. This localized management prevents cascading instability across multiple datacenters sharing a grid.",
+      "description": "On hybrid and co-located configurations, Heron argues integrated storage tethered to grid-forming controls satisfies ride-through requirements natively without a separate generation asset, and the framework should recognize that alternative.",
       "quote_ids": [
-        2,
-        3,
-        6
-      ]
-    },
-    {
-      "key": "pr:colo",
-      "name": "Energy-integrated power electronics as compliance alternative",
-      "stance": "support",
-      "description": "Heron proposes that integrated battery storage coupled with grid-forming controls should be recognized alongside co-located generation as a valid compliance pathway for ride-through and stability requirements. This performance-based approach (meeting ride-through duration, ramp-rate, and fault current specs at the interconnection point) enables architectures that eliminate the need for separate synchronous condensers or reactive power devices.",
-      "quote_ids": [
-        4,
-        5,
-        8,
-        9,
-        17
+        1,
+        5
       ]
     },
     {
       "key": "pr:study",
-      "name": "Performance-based standards and streamlined studies",
-      "stance": "support",
-      "description": "Heron advocates for performance-based interconnection rules that specify required grid behaviors (ride-through, ramp limits, fault current, voltage stability) without mandating specific equipment. Open, verifiable control architectures (like OpenVSM) reduce study burden by replacing proprietary black-box models with transparent, third-party-verifiable designs. Distinct expedited pathways should apply to grid-forming loads, which impose lower study costs and require fewer network upgrades.",
+      "name": "Performance test over prescriptive studies",
+      "stance": "mixed",
+      "description": "Heron warns that prescriptive generation mandates and lengthy studies raise queue timelines, costs, and upgrades. It wants demonstrated performance at the point of interconnection to satisfy stability rules, and streamlined or distinct study pathways for grid-forming and verifiable loads.",
       "quote_ids": [
+        2,
         4,
-        7,
-        10,
-        14,
-        15,
-        18,
-        19,
-        20,
-        21,
-        22,
-        23
+        9,
+        13
       ]
     },
     {
       "key": "pr:cost",
-      "name": "Cost reduction through grid service credits",
+      "name": "Symmetric cost causation and benefits",
       "stance": "support",
-      "description": "Heron argues that grid services provided by grid-forming loads (inertia, voltage support) should be credited against direct-assignment network upgrade costs, reducing the capital burden on interconnecting parties. Technology-neutral performance standards drive cost reduction and innovation by creating competitive markets; costs also fall where open control architectures reduce re-study requirements.",
+      "description": "Heron argues performance-based rules lower costs for ratepayers, and that cost-causation under Principle 8 should run symmetrically so grid-forming loads' system benefits are credited against direct-assignment network upgrade costs.",
       "quote_ids": [
-        15,
-        16,
-        17,
-        24
+        2,
+        7,
+        11,
+        12
+      ]
+    },
+    {
+      "key": "pr:flex",
+      "name": "Extend flexible-load treatment to grid-forming",
+      "stance": "support",
+      "description": "Heron asks the Commission to distinguish loads with integrated ride-through and load-smoothing, and to extend the expedited treatment being considered for flexible and curtailable loads to grid-forming loads.",
+      "quote_ids": [
+        3,
+        10
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited path for low-burden loads",
+      "stance": "support",
+      "description": "Heron supports expedited interconnection study for grid-forming loads and preferential queue treatment for facilities with open, verifiable controls, on the basis that they impose materially lower study burdens.",
+      "quote_ids": [
+        10,
+        14
+      ]
+    },
+    {
+      "key": "aq:upgradecost",
+      "name": "Credit benefits against upgrade costs",
+      "stance": "support",
+      "description": "Heron asks RTOs and transmission owners to credit the grid services of grid-forming loads against direct-assignment network upgrade costs, treating avoided synchronous condensers or flicker devices as a quantifiable benefit to the system.",
+      "quote_ids": [
+        11,
+        12
+      ]
+    },
+    {
+      "key": "aq:deposits",
+      "name": "Reduced study deposits for verifiable loads",
+      "stance": "support",
+      "description": "Heron asks the Commission to explore reduced study deposit requirements for facilities whose open, documented control behavior lowers the study burden on operators.",
+      "quote_ids": [
+        14
+      ]
+    },
+    {
+      "key": "topic:load-smoothing-architecture",
+      "name": "Ride-through and load-smoothing design",
+      "stance": "support",
+      "description": "Heron argues datacenter network risk is an artifact of legacy power architecture, not inherent, and that facilities demonstrating integrated ride-through, ramp-rate, and ripple control at the point of interconnection should be recognized as meeting stability requirements without additional equipment mandates.",
+      "quote_ids": [
+        3,
+        4
+      ]
+    },
+    {
+      "key": "topic:grid-forming-loads",
+      "name": "Grid-forming loads as grid asset",
+      "stance": "support",
+      "description": "Heron contends a grid-forming large load is a positive grid asset that provides voltage support, inertial response, and harmonic damping. It urges a distinct interconnection treatment pathway recognizing those contributions.",
+      "quote_ids": [
+        8,
+        9
+      ]
+    },
+    {
+      "key": "topic:open-verifiable-controls",
+      "name": "Open verifiable controls cut study friction",
+      "stance": "support",
+      "description": "Heron argues opaque black-box inverter models drive bespoke EMT studies and queue backlog, and that open, publicly documented control architectures (its OpenVSM) should earn streamlined studies and reduced study depth because behavior is fully verifiable.",
+      "quote_ids": [
+        13,
+        14
+      ]
+    },
+    {
+      "key": "topic:performance-based-standards",
+      "name": "Technology-neutral performance standards",
+      "stance": "support",
+      "description": "Heron's central ask is performance-based, technology-neutral standards that specify required grid behaviors at the point of interconnection without dictating equipment categories, leaving how to meet them to developers.",
+      "quote_ids": [
+        6,
+        15
       ]
     },
     {
       "key": "topic:domestic-manufacturing",
-      "name": "Technology-neutral rules support domestic power electronics",
+      "name": "Standards shape domestic manufacturing",
       "stance": "support",
-      "description": "Heron contends that FERC's technical standards directly determine which equipment categories are purchased and from which suppliers. Performance-based rules (versus equipment mandates) create stable demand for U.S. advanced power electronics manufacturing, including solid-state transformers and grid-forming inverters, enabling domestic manufacturers to justify factory-scale capital investment.",
+      "description": "Heron argues FERC's technical standards determine which equipment is bought and where, and that technology-neutral performance standards create the stable demand signal U.S. advanced power electronics manufacturers need to invest in factory capacity.",
       "quote_ids": [
-        25
+        16
       ]
     }
   ],
   "lenses": {
-    "aq": [],
+    "aq": [
+      "hybridrights",
+      "expedited",
+      "upgradecost",
+      "deposits"
+    ],
     "pr": [
-      "flex",
-      "proximate",
       "colo",
       "study",
-      "cost"
+      "cost",
+      "flex"
     ],
     "rg": []
   },
   "provenance": {
-    "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }

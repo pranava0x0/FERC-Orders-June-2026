@@ -12,7 +12,8 @@
       "concern": "Industry and consumer interests can conflict; FERC must not treat them as aligned",
       "bins": [
         "topic:consumer-vs-industry-interests"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "topic:consumer-vs-industry-interests",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "FERC's proposed jurisdictional expansion lacks legal precedent",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "Two-step jurisdictional question: does FERC have authority, and how to define transmission to protect state distribution authority",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 9,
@@ -82,7 +90,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
         "aq:deposits",
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 12,
@@ -110,7 +121,8 @@
       "bins": [
         "aq:jurisdiction",
         "aq:expedited"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 13,
@@ -118,7 +130,8 @@
       "concern": "An expedited schedule risks inadequate public participation and legally vulnerable rules",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 14,
@@ -126,7 +139,8 @@
       "concern": "NASUCA asks FERC to explicitly abandon the April 2026 action deadline",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 15,
@@ -135,7 +149,8 @@
       "bins": [
         "topic:cooperative-federalism",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 7
     }
   ],
   "bins": [

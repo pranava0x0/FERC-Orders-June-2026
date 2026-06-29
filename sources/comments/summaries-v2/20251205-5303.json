@@ -12,7 +12,8 @@
       "concern": "ANOPR exceeds FERC jurisdiction under the FPA",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "State authority over retail matters not expressly granted to FERC",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Indirect wholesale market effects from retail load do not establish FERC jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "FPA section 212(h) bars FERC from mandating retail transmission service",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Large load energization terms are retail, not wholesale, under 16 U.S.C. 824(b)",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 6,
@@ -53,7 +58,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:regulatory-stability"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 7,
@@ -62,7 +68,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
         "aq:jurisdiction",
         "pr:cost",
         "topic:rulemaking-pace"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 9,
@@ -80,7 +88,8 @@
       "concern": "ANOPR should feed a full NOPR, not rush to final action by April 2026",
       "bins": [
         "topic:rulemaking-pace"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:rulemaking-pace"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "concern": "State flexibility is necessary for timely large load energization",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "bins": [
         "pr:study",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 13,
@@ -114,7 +126,8 @@
       "concern": "Flexible guidelines preferred over prescriptive fixed rules",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 14,
@@ -123,7 +136,8 @@
       "bins": [
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 15,
@@ -132,7 +146,8 @@
       "bins": [
         "pr:cost",
         "topic:queue-transparency"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 16,
@@ -141,7 +156,8 @@
       "bins": [
         "pr:cost",
         "topic:queue-transparency"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 17,
@@ -149,7 +165,8 @@
       "concern": "Cost causation methodology must be transparent to prevent cost-shifting to other ratepayers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 20
     },
     {
       "id": 18,
@@ -157,7 +174,8 @@
       "concern": "CPUC revises position to support a higher MW threshold and non-MW class criteria",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 19,
@@ -165,7 +183,8 @@
       "concern": "Data centers should be defined by characteristics beyond MW, not solely by size",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 20,
@@ -173,7 +192,8 @@
       "concern": "If a nationwide MW threshold is set, it should be at the high end of proposed values",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 23
     }
   ],
   "bins": [

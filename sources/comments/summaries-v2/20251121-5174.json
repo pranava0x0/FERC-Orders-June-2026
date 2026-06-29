@@ -13,7 +13,8 @@
       "bins": [
         "topic:load-flexibility",
         "aq:expedited"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:flex",
         "topic:tech-neutral"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "pr:colo",
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "concern": "Grandfathering needed to protect pre-rule interconnection agreements",
       "bins": [
         "topic:pre-existing"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "concern": "Large loads should bear upgrade costs they directly cause",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "bins": [
         "pr:cost",
         "aq:threshold"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "concern": "Flexibility is a complement, not substitute, for new generation",
       "bins": [
         "topic:generation-pairing"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "bins": [
         "pr:cost",
         "topic:infrastructure"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "concern": "Multi-technology generation mix needed alongside transmission buildout",
       "bins": [
         "topic:generation-mix"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 10,
@@ -90,7 +99,8 @@
       "bins": [
         "aq:expedited",
         "topic:permitting"
-      ]
+      ],
+      "page": 4
     }
   ],
   "bins": [

@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "topic:market-certainty"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
         "rg:pjm",
         "pr:study",
         "topic:pending-proceedings"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "bins": [
         "pr:study",
         "topic:transition-treatment"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "pr:study",
         "topic:transmission-owner-opacity"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 5,
@@ -50,7 +54,8 @@
       "bins": [
         "pr:study",
         "topic:demand-visibility"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "concern": "EPSA affirms FERC's jurisdictional authority over large load interconnections",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
       "concern": "jurisdiction turns on whether interconnection service is in interstate commerce, not on the nature of the sale",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 8,
@@ -75,7 +82,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:bright-line-classification"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "concern": "threshold should apply to full projected load, not initial phase capacity",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
       "bins": [
         "pr:study",
         "topic:open-access-queue"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 12,
@@ -110,7 +121,8 @@
       "bins": [
         "aq:expedited",
         "pr:study"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 13,
@@ -119,7 +131,8 @@
       "bins": [
         "pr:colo",
         "topic:rmr-ssr-scope"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 14,
@@ -128,7 +141,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 15,
@@ -138,7 +152,8 @@
         "pr:colo",
         "pr:cost",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 18
     }
   ],
   "bins": [

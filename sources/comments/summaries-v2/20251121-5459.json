@@ -16,7 +16,8 @@
         "pr:colo",
         "pr:flex",
         "pr:proximate"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -25,7 +26,8 @@
       "bins": [
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -33,7 +35,8 @@
       "concern": "Warns that interconnection delays risk offshoring AI compute",
       "bins": [
         "topic:ai-national-security"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "bins": [
         "aq:deposits",
         "pr:study"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 5,
@@ -51,7 +55,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 6,
@@ -60,7 +65,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 7,
@@ -69,7 +75,8 @@
       "bins": [
         "pr:cost",
         "aq:threshold"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 8,
@@ -77,7 +84,8 @@
       "concern": "Clear cost allocation unlocks project financing",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 9,
@@ -86,7 +94,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 10,
@@ -95,7 +104,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 11,
@@ -103,7 +113,8 @@
       "concern": "Large controllable loads introduce a new cybersecurity threat to the grid",
       "bins": [
         "topic:grid-cybersecurity"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 12,
@@ -111,7 +122,8 @@
       "concern": "Flash load attack via compromised load management could destabilize the grid",
       "bins": [
         "topic:grid-cybersecurity"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 13,
@@ -119,7 +131,8 @@
       "concern": "LVRT cascade attack could weaponize data center protective systems against the grid",
       "bins": [
         "topic:grid-cybersecurity"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 14,
@@ -128,7 +141,8 @@
       "bins": [
         "topic:grid-cybersecurity",
         "aq:expedited"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 15,
@@ -138,7 +152,8 @@
         "topic:grid-cybersecurity",
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 16
     }
   ],
   "bins": [

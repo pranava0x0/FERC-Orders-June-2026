@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:study",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
         "pr:study",
         "aq:hybridrights",
         "topic:performance-standards"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "aq:protection",
         "topic:technical-vs-penalty"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 5,
@@ -50,7 +54,8 @@
       "bins": [
         "aq:protection",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 6,
@@ -59,7 +64,8 @@
       "bins": [
         "aq:protection",
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 8,
@@ -77,7 +84,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 9,
@@ -86,7 +94,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 10,
@@ -96,7 +105,8 @@
         "pr:cost",
         "aq:upgradecost",
         "rg:pjm"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 11,
@@ -105,7 +115,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 12,
@@ -115,7 +126,8 @@
         "pr:cost",
         "aq:upgradecost",
         "topic:cost-causation-gap"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 13,
@@ -124,7 +136,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 13
     }
   ],
   "bins": [

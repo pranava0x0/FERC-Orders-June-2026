@@ -13,7 +13,8 @@
       "bins": [
         "pr:colo",
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:regulatory-certainty"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "Chevron frames large-scale natural gas investment as contingent on stable FERC policy",
       "bins": [
         "topic:regulatory-certainty"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "concern": "Chevron urges FERC to hit the DOE deadline of April 30, 2026",
       "bins": [
         "topic:expedited-timeline"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "bins": [
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "bins": [
         "pr:study",
         "topic:expedited-timeline"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
         "rg:spp",
         "rg:miso",
         "rg:pjm"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -85,7 +93,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:regional-flexibility"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -93,7 +102,8 @@
       "concern": "Chevron argues regional flexibility speeds adoption of national standards",
       "bins": [
         "topic:regional-flexibility"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 11,
@@ -102,7 +112,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:regulatory-certainty"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 12,
@@ -111,7 +122,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:federal-state-coordination"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 13,
@@ -120,7 +132,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:section-215-authority"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 14,
@@ -130,7 +143,8 @@
         "aq:jurisdiction",
         "topic:regulatory-certainty",
         "topic:regional-flexibility"
-      ]
+      ],
+      "page": 10
     }
   ],
   "bins": [

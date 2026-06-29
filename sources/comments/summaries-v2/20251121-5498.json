@@ -12,7 +12,8 @@
       "concern": "Support for federal ANOPR process and timeline",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Federal jurisdiction over large load interconnection is consistent with FPA",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "ANOPR provides flexibility for large customer interconnection",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Federal regulation should enable fair cost allocation",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Support for nationwide standardized interconnection process",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "Cost allocation fairness principle",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -62,7 +68,8 @@
         "pr:study",
         "rg:miso",
         "rg:spp"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -71,7 +78,8 @@
       "bins": [
         "rg:miso",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "concern": "Current collateral requirements burden large load customers",
       "bins": [
         "topic:collateral-requirements"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "bins": [
         "pr:cost",
         "topic:direct-payment"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "bins": [
         "pr:cost",
         "topic:grid-enhancing-technologies"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 12,
@@ -105,7 +116,8 @@
       "concern": "Extremely large loads require differentiated treatment",
       "bins": [
         "topic:extremely-large-loads"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 13,
@@ -113,7 +125,8 @@
       "concern": "Proposal for separate process for loads exceeding utility peak load percentage",
       "bins": [
         "topic:extremely-large-loads"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

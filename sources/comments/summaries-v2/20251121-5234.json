@@ -13,7 +13,8 @@
       "bins": [
         "pr:colo",
         "topic:conserved-land-protection"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "Definition of conserved lands covered by the Alliance's advocacy.",
       "bins": [
         "topic:conserved-land-protection"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "Transmission takings destroy multiple public benefits of conserved land.",
       "bins": [
         "topic:conserved-land-protection"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "topic:conserved-land-protection",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "topic:conserved-land-protection",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "bins": [
         "pr:study",
         "topic:grid-optimization"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "concern": "Co-location with existing generation cuts new transmission and conserved-land harm.",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "New large loads should pair with renewables and storage rather than conventional generation.",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -80,7 +88,8 @@
       "concern": "Mandatory community engagement reduces opposition and project delays.",
       "bins": [
         "topic:community-engagement"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "bins": [
         "topic:community-engagement",
         "topic:conserved-land-protection"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 11,
@@ -98,7 +108,8 @@
       "bins": [
         "pr:study",
         "topic:load-forecast-accuracy"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 12,
@@ -107,7 +118,8 @@
       "bins": [
         "pr:study",
         "topic:load-forecast-accuracy"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 13,
@@ -116,7 +128,8 @@
       "bins": [
         "pr:cost",
         "topic:load-forecast-accuracy"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "concern": "Cost causation pricing deters excessive load growth and protects existing ratepayers.",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 15,
@@ -132,7 +146,8 @@
       "concern": "Demand flexibility should be a precondition for interconnection until a facility is self-sufficient in generation.",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 10
     }
   ],
   "bins": [

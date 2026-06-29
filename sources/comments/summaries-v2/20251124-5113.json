@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
         "pr:cost",
         "aq:jointstudy",
         "aq:expedited"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 3,
@@ -33,7 +35,8 @@
       "bins": [
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "concern": "Data center load volatility poses distinct power quality risks at the point of interconnection",
       "bins": [
         "topic:power-quality-risk"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 5,
@@ -51,7 +55,8 @@
         "pr:flex",
         "pr:cost",
         "topic:power-quality-risk"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 6,
@@ -61,7 +66,8 @@
         "aq:expedited",
         "pr:study",
         "topic:speed-to-power"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 7,
@@ -71,7 +77,8 @@
         "aq:hybridrights",
         "pr:colo",
         "topic:interconnection-rights-sharing"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 8,
@@ -81,7 +88,8 @@
         "aq:jointstudy",
         "pr:study",
         "pr:proximate"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 9,
@@ -91,7 +99,8 @@
         "aq:expedited",
         "pr:flex",
         "pr:study"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 10,
@@ -101,7 +110,8 @@
         "aq:hybridrights",
         "pr:colo",
         "topic:hybrid-definition-clarity"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 11,
@@ -110,7 +120,8 @@
       "bins": [
         "pr:colo",
         "topic:hybrid-definition-clarity"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 12,
@@ -120,7 +131,8 @@
         "aq:expedited",
         "pr:proximate",
         "pr:colo"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 13,
@@ -131,7 +143,8 @@
         "pr:proximate",
         "rg:pjm",
         "rg:miso"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 14,
@@ -140,7 +153,8 @@
       "bins": [
         "pr:cost",
         "topic:transmission-efficiency"
-      ]
+      ],
+      "page": 13
     }
   ],
   "bins": [
