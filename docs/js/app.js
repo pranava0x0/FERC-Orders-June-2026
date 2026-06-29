@@ -321,9 +321,9 @@
     var voiceByName = {};
     voiceItems.forEach(function (v) { voiceByName[v.name] = v; });
     var voiceGroups = [
-      { h: "Data centers & hyperscalers", names: ["Arthur Haubenstock", "Heather McGeory", "Lucia Tian", "Sara Axelrod", "Chase Lochmiller", "Cully Cavness", "Amanda Peterson Corio", "Josh Levi", "Cy McNeill", "Cy McGeady", "David Young", "Tag Greason", "Rima Alaily", "Briana Kobor"] },
-      { h: "Grid flexibility & supply", names: ["Tyler Norris", "Aniruddh Mohan", "Ayse Coskun", "Varun Sivaram", "Tim Latimer", "Jeff Bladen", "Chris Gillett", "Briggs White", "Shanu Mathew"] },
-      { h: "Cost, consumers & public narrative", names: ["Ari Peskoe", "Jeff Dennis", "Ben Inskeep", "Charles Hua", "Jamie Nolan", "Public Citizen", "Sierra Club", "Southern Environmental Law Center", "Simon Mahan"] },
+      { h: "Data centers & hyperscalers", names: ["Arthur Haubenstock", "Heather McGeory", "Lucia Tian", "Sara Axelrod", "Chase Lochmiller", "Cully Cavness", "Amanda Peterson Corio", "Josh Levi", "Cy McNeill", "Cy McGeady", "David Young", "Tag Greason"] },
+      { h: "Grid flexibility & supply", names: ["Aniruddh Mohan", "Varun Sivaram", "Tim Latimer", "Jeff Bladen", "Chris Gillett", "Briggs White", "Shanu Mathew"] },
+      { h: "Cost, consumers & public narrative", names: ["Jeff Dennis", "Ben Inskeep", "Charles Hua", "Jamie Nolan", "Public Citizen", "Sierra Club", "Southern Environmental Law Center", "Simon Mahan"] },
       { h: "Law, markets & procedure", names: ["Travis Kavulla", "Neil Chatterjee", "Jennifer Danis", "Matthew Christiansen", "Mona Dajani", "Larry Gasteiger", "Jigar Shah", "Ben Schifman", "Devin Hartman"] },
     ];
     var voices = '<div class="voice-groups">' + voiceGroups.map(function (g) {
@@ -668,7 +668,7 @@
       "<h4>Derived dates</h4>" +
       "<p>The 30-day and 60-day periods are stated by FERC. The specific calendar due-dates are derived from the June 18, 2026 issuance (business-day-adjusted figures attributed to the National Law Review analysis).</p>" +
       "<h4>All sources</h4>" + srcList +
-      "<p style='margin-top:10px'><em>Primary capture date " + esc(D.meta.capture) + "; the secondary commentary in the Discourse tab was gathered " + esc(D.meta.discourseCapture) + ". Independent analysis; not affiliated with FERC or DOE.</em></p>";
+      "<p style='margin-top:10px'><em>Last updated: order record as of " + esc(D.meta.capture) + "; Discourse updated " + esc(D.meta.discourseCapture) + ". Independent analysis; not affiliated with FERC or DOE.</em></p>";
   }
 
   /* ---- tablist ---- */
@@ -716,14 +716,6 @@
 
   function init() {
     renderProvenance();
-    // Surface freshness in the masthead from the single source of truth (D.meta), so a reader sees
-    // how current the record is without scrolling. Revealed only once filled (placeholder ships hidden).
-    var fresh = document.getElementById("masthead-fresh");
-    if (fresh) {
-      fresh.innerHTML = 'Order record as of <span class="mono">' + esc(D.meta.capture) +
-        '</span> · discourse updated <span class="mono">' + esc(D.meta.discourseCapture) + "</span>";
-      fresh.hidden = false;
-    }
     TABS.forEach(function (t) {
       var tab = tabFor(t);
       tab.addEventListener("click", function () { activate(t, false); scrollToTabsTop(); });
