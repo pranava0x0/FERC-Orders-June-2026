@@ -172,6 +172,17 @@
   the search box holds one substring and the tag bar replaces it on click. Explore letting several tags stack
   as removable tokens (AND/OR) so you can compose "PJM + Cost + opposes". Design question: token chips in the
   input vs. a multi-select facet model; AND vs OR semantics; how it interacts with free-text. Spec before build.
+- **medium — add published-date discipline to Discourse sources.** Discourse now aims to show reaction to the
+  June 18 orders, not pre-order background. Add a `published_at` (or `source_date`) field to every `SOURCES`
+  record used by `D.reception`, `D.media`, and `D.voices`, then add a test that rejects any Discourse source
+  dated before 2026-06-18 unless it is explicitly marked as background and rendered in a separate context lane.
+- **medium — give Discourse a source-type/freshness filter.** The tab now mixes trade press, law-firm alerts,
+  social posts, public reaction, operator voices, and long-form context in one surface. Split or filter by
+  post-order source type (press/law, social, industry, advocacy, public reaction), with visible source dates so
+  readers can tell fresh reaction from slower background analysis.
+- **low — rebalance the Discourse voice roster.** The post-order scan made the voice section broad enough that
+  some cards feel more like context than live reaction. Trim to the strongest 20 to 25 voices, or add a
+  "show more" pattern per group so the first screen carries the clearest post-order arguments.
 - **partially done / low** — Respondent lists are now captured **in full** per docket (done 2026-06-24)
   and a compact per-docket Section IV "what FERC presses this system on" ships. What remains: the deeper
   verbatim enumeration of every Section IV briefing question per order (PJM's were read in full; the other
