@@ -57,8 +57,11 @@ export function pageForQuote(quoteText, idx) {
   // a boundary-spanning quote pages to where it begins. Require a >=50-char prefix on the page; below
   // that the location isn't trustworthy, so return null rather than guess a coincidental page.
   const probes = [q, q.slice(0, 120), q.slice(0, 80), q.slice(0, 50)].filter((p) => p.length >= 50 || p === q);
-  for (const page of idx.pages) {
-    for (const probe of probes) if (probe.length >= 12 && page.norm.includes(probe)) return page.page;
+  // Exhaust the strongest probe across every page before weakening it. A filing can repeat a quote's
+  // opening in an executive summary, then carry the full passage later; page-first matching would cite
+  // the summary even though it does not contain the displayed quote.
+  for (const probe of probes) {
+    for (const page of idx.pages) if (probe.length >= 12 && page.norm.includes(probe)) return page.page;
   }
   return null;
 }

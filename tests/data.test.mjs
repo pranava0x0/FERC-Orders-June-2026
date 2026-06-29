@@ -63,6 +63,11 @@ test("every source has url/label/org/tier and an http(s) url", () => {
   }
 });
 
+test("official DOE sources use the primary DOE provenance tier", () => {
+  assert.equal(D.SOURCES.doe403.tier, "doe");
+  assert.equal(D.SOURCES.doeApplaud.tier, "doe");
+});
+
 test("all referenced source ids resolve", () => {
   const ids = new Set(Object.keys(D.SOURCES));
   const bad = [];
@@ -494,6 +499,19 @@ test("comments-data.js (Comments tab) is consistent with the scraped manifest", 
   assert.equal(CM.rounds.reduce((s, r) => s + r.count, 0), N, "round counts sum to the comment total");
 });
 
+test("evidence-backed filer corrections survive manifest regeneration", () => {
+  const manifest = JSON.parse(readFileSync(join(here, "..", "sources", "comments", "rm26-4-comments.json"), "utf8"));
+  const byAcc = Object.fromEntries(manifest.comments.map((c) => [c.acc, c]));
+  assert.deepEqual(
+    { org: byAcc["20251110-5121"].org, raw: byAcc["20251110-5121"].org_raw, bucket: byAcc["20251110-5121"].bucket },
+    { org: "Texas Blockchain Council", raw: "Individual No Affiliation", bucket: "trade_assoc" },
+  );
+  assert.deepEqual(
+    { org: byAcc["20251114-5063"].org, raw: byAcc["20251114-5063"].org_raw, bucket: byAcc["20251114-5063"].bucket },
+    { org: "VEIR Inc.", raw: "Individual No Affiliation", bucket: "other" },
+  );
+});
+
 test("comment body directories are named with the submitter (traceable to filer)", () => {
   // The path names who filed: files/<accession>__<org-slug>/. Guards the traceability convention.
   const FILES = join(here, "..", "sources", "comments", "files");
@@ -532,6 +550,10 @@ test("SEO + accessibility essentials are present in the deployed shell", () => {
   assert.ok(existsSync(join(docs, "robots.txt")), "robots.txt present");
   assert.match(readFileSync(join(docs, "robots.txt"), "utf8"), /Sitemap:/, "robots.txt references the sitemap");
   assert.match(readFileSync(join(docs, "sitemap.xml"), "utf8"), /pranava0x0\.github\.io\/FERC-Orders-June-2026/, "sitemap uses the canonical host");
+  const app = readFileSync(join(docs, "js", "app.js"), "utf8");
+  const shellVersion = html.match(/js\/app\.js\?v=([A-Za-z0-9_-]+)/)?.[1];
+  const lazyVersion = app.match(/ASSET_VER\s*=\s*"([A-Za-z0-9_-]+)"/)?.[1];
+  assert.equal(lazyVersion, shellVersion, "lazy comment-detail cache key matches the deployed app asset version");
 });
 
 test("every inventoried comment has its body on disk (download completeness)", () => {
