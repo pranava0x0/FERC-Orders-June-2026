@@ -60,6 +60,13 @@ test("every quote carries a page that its source page actually starts (recompute
   assert.deepEqual(bad.slice(0, 12), [], `quote page stamps are stale/invalid; re-run: node tools/stamp-comment-pages.mjs\n${bad.slice(0, 12).join("\n")}`);
 });
 
+test("page matching prefers a later full quote over an earlier repeated prefix", () => {
+  const prefix = "A repeated opening long enough to satisfy the fallback matcher appears in both places";
+  const full = `${prefix}, but only the later page carries this complete quoted passage.`;
+  const idx = buildPageIndex(`--- PAGE 3 ---\n${prefix}.\n--- PAGE 8 ---\n${full}\n`);
+  assert.equal(pageForQuote(full, idx), 8);
+});
+
 test("every summary is provisional (verified:false) and traces to a source body", () => {
   for (const f of files) {
     const s = load(f);

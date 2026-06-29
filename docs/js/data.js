@@ -90,7 +90,7 @@ window.FERC_DATA = (function () {
     ieee: { label: "“U.S. Pushes Grid Operators to Connect Data Centers Faster”", org: "IEEE Spectrum", tier: "secondary", url: "https://spectrum.ieee.org/ferc-data-center-policy", captured: "2026-06-27", note: "Engineering and technical-audience coverage of the June 18 orders; speed-to-connect paired with consumer cost protections." },
     peskoe: { label: "“An outdated FERC policy is undermining the White House’s ratepayer protection pledge”", org: "Utility Dive", tier: "secondary", url: "https://www.utilitydive.com/news/ferc-transmission-policy-white-house-ratepayer-protection-peskoe/815438/", captured: "2026-06-28", note: "Op-ed by Ari Peskoe (Harvard Electricity Law Initiative), published 2026-04-15: argues FERC’s 1994 transmission-pricing policy lets utilities socialize data-center upgrade costs, and that FERC should require full cost assignment plus disaggregated-pricing transparency." },
     latitudedocket: { label: "“What’s in FERC’s large load interconnection docket”", org: "Latitude Media", tier: "secondary", url: "https://www.latitudemedia.com/news/whats-in-fercs-large-load-interconnection-docket/", captured: "2026-06-28", note: "Docket-comment analysis (2025-11-25): AI/tech filers agree the current process hampers growth but split on federal preemption; OpenAI proposes a >250 MW ‘national interest’ fast lane, while Google, Meta, Amazon and the Data Center Coalition favor preserving the state role." },
-    doeApplaud: { label: "“The Department of Energy Applauds FERC’s Action on Large Load Interconnection Reform”", org: "U.S. Department of Energy", tier: "secondary", url: "https://www.energy.gov/articles/department-energy-applauds-fercs-action-large-load-interconnection-reform", captured: "2026-06-28", note: "Official DOE statement, June 18, 2026: the agency that directed FERC (via the §403 ANOPR) endorses the show cause orders as speed-to-power with ratepayer protection; carries a Secretary Wright quote." },
+    doeApplaud: { label: "“The Department of Energy Applauds FERC’s Action on Large Load Interconnection Reform”", org: "U.S. Department of Energy", tier: "doe", url: "https://www.energy.gov/articles/department-energy-applauds-fercs-action-large-load-interconnection-reform", captured: "2026-06-28", note: "Official DOE statement, June 18, 2026: the agency that directed FERC (via the §403 ANOPR) endorses the show cause orders as speed-to-power with ratepayer protection; carries a Secretary Wright quote." },
   };
 
   const meta = {
@@ -98,7 +98,7 @@ window.FERC_DATA = (function () {
     subtitle: "From the DOE §403 ANOPR (Docket RM26-4-000) to FERC’s June 18, 2026 tailored §206 show cause orders",
     items: "Items E-7 to E-12 · Dockets EL26-67-000 to EL26-72-000",
     capture: "2026-06-22",
-    discourseCapture: "2026-06-27",
+    discourseCapture: "2026-06-28",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",

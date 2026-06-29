@@ -13,6 +13,14 @@ const RAW = join(here, "..", "sources", "comments", "rm26-4-manifest.raw.json");
 const OUT = join(here, "..", "sources", "comments", "rm26-4-comments.json");
 const rows = JSON.parse(readFileSync(RAW, "utf8"));
 
+// The docket sheet labels these two filings as unaffiliated individuals, but the downloaded filings
+// identify their organizations. Keep the scraped value as org_raw while making the evidence-backed
+// correction reproducible on every refresh.
+const ORG_OVERRIDES = {
+  "20251110-5121": "Texas Blockchain Council",
+  "20251114-5063": "VEIR Inc.",
+};
+
 const has = (s, ...subs) => subs.some((x) => s.toLowerCase().includes(x.toLowerCase()));
 
 // Filing type from the description (one type per filing).
@@ -45,7 +53,7 @@ function bucket(org, desc) {
   if (has(o, "Petroleum Institute", "Public Gas Association", "Chevron", "Natural Gas Supply", "Gas Association", "ETX Upstream")) return "oil_gas";
   if (has(o, "Electric Power Supply Association", "EPSA")) return "generator_ipp";
   if (has(o, "North American Electric Reliability", "NERC")) return "reliability";
-  if (has(o, "WIRES", "Large Public Power Council", "Public Power Association", "Edison Electric", "Energy Trading Institute", "Energy Credit Association", "Electric Cooperative", "REMC", "Municipal Utilities", "Community Choice", "Community Energy", "Public Power", "Cooperative", "Consumer Energy Alliance", "WATT and AMP", "America's Power", "Transmission Access Policy", "Power for Tomorrow", "Energy Association")) return "trade_assoc";
+  if (has(o, "WIRES", "Large Public Power Council", "Public Power Association", "Edison Electric", "Energy Trading Institute", "Energy Credit Association", "Electric Cooperative", "REMC", "Municipal Utilities", "Community Choice", "Community Energy", "Public Power", "Cooperative", "Consumer Energy Alliance", "WATT and AMP", "America's Power", "Transmission Access Policy", "Power for Tomorrow", "Energy Association", "Blockchain Council")) return "trade_assoc";
   // generators / IPPs / storage developers — named companies
   if (has(o, "NRG", "Vistra", "Constellation", "LS Power", "Brookfield", "Geronimo", "Pattern Energy", "Arevia", "Arevon", "Eolian", "Clearway", "Longroad", "Treaty Oak", "Calibrant", "AES", "Fervo", "FuelCell", "GridStor", "VC Renewables", "Engie", "ENGIE", "Enel", "Avangrid", "Invenergy", "EDP Power", "EDF Power", "RWE", "Terraflux", "Salt River Project", "Balancing Authority", "Fluence", "CO2EFFICIENT", "Verrus", "Buckeye Power", "Tesla", "Helion", "Oklo", "esVolta", "Shell Energy", "Nuclear", "GridStor")) return "generator_ipp";
   // transmission owners / vertically-integrated utilities
@@ -75,7 +83,11 @@ const BUCKET_LABELS = {
   other: "Other / uncategorized",
 };
 
-const enriched = rows.map((r) => ({ ...r, type: filingType(r), bucket: bucket(r.org, r.desc) }));
+const enriched = rows.map((r) => {
+  const correctedOrg = ORG_OVERRIDES[r.acc];
+  const row = correctedOrg ? { ...r, org_raw: r.org, org: correctedOrg } : r;
+  return { ...row, type: filingType(row), bucket: bucket(row.org, row.desc) };
+});
 const comments = enriched.filter((r) => r.type === "comment");
 
 const tally = (arr, key) => arr.reduce((m, r) => ((m[r[key]] = (m[r[key]] || 0) + 1), m), {});
@@ -116,7 +128,14 @@ const out = {
   note: "Manifest of all filings (who filed, filing type, date, accession). Stakeholder buckets are keyword-derived. Filing bodies were not downloaded; position summaries are provisional and must be audited against the PDFs.",
   bucket_labels: BUCKET_LABELS,
   stats,
-  comments: comments.map((r) => ({ org: r.org, filed: r.filed, acc: r.acc, bucket: r.bucket, desc: r.desc })),
+  comments: comments.map((r) => ({
+    org: r.org,
+    ...(r.org_raw ? { org_raw: r.org_raw } : {}),
+    filed: r.filed,
+    acc: r.acc,
+    bucket: r.bucket,
+    desc: r.desc,
+  })),
 };
 writeFileSync(OUT, JSON.stringify(out, null, 2));
 console.log("=== RM26-4-000 comment manifest ===");

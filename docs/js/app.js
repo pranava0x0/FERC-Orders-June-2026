@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260626p";
+  var ASSET_VER = "20260628p";
   var D = window.FERC_DATA;
   if (!D) { document.getElementById("main").innerHTML = "<p class='noscript'>Data failed to load (js/data.js).</p>"; return; }
 
@@ -18,7 +18,7 @@
     var s = D.SOURCES[id];
     if (!s) return id;
     if (s.tier === "order") return id.toUpperCase().replace(/^E/, "E-"); // e7 -> E-7
-    if (s.tier === "doe") return "DOE §403";
+    if (s.tier === "doe") return { doe403: "DOE §403", doeApplaud: "DOE statement" }[id] || "DOE";
     if (s.tier === "ferc") {
       return { fercPR: "FERC release", fercFS: "FERC fact sheet", fercSum: "FERC summaries", fercRM264: "RM26-4 page" }[id] || "FERC";
     }
