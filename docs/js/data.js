@@ -76,6 +76,7 @@ window.FERC_DATA = (function () {
     // Named-voice commentary (added 2026-06-23) backing the spectrum section in Tab 3 only.
     norris: { label: "POWER Magazine on the Duke “Rethinking Load Growth” flexible-loads study", org: "POWER Magazine", tier: "secondary", url: "https://www.powermag.com/duke-researchers-grid-flexibility-key-to-accommodate-load-growth/", captured: "2026-06-23", note: "Reports the Tyler Norris et al. (Duke Nicholas Institute) finding that curtailing a small share of a large load’s annual peak frees existing grid capacity; basis for the flexible-load reform." },
     kavulla: { label: "Texas Energy & Power on Travis Kavulla’s “open season” argument", org: "Texas Energy & Power", tier: "secondary", url: "https://www.texasenergyandpower.com/p/price-the-grid-or-keep-rationing", captured: "2026-06-23", note: "Discusses Kavulla’s American Affairs essay arguing for pricing grid access via a gas-pipeline-style ‘open season’ with transferable rights." },
+    kavullali: { label: "Travis Kavulla on data-center power pricing", org: "Travis Kavulla on LinkedIn", tier: "secondary", url: "https://www.linkedin.com/posts/travis-kavulla-a199994_how-will-data-centers-pay-for-power-american-activity-7462986821577400321-Lakz", captured: "2026-06-29", note: "LinkedIn post around Kavulla's American Affairs argument; the comment thread sharpened the point that large-load competition between regulated monopolies can erode consumer surplus if hyperscalers do not internalize incremental infrastructure costs." },
     insideclimate: { label: "“Federal Regulators Tell Grid Operators to Fix Their Rules on Data Centers”", org: "Inside Climate News", tier: "secondary", url: "https://insideclimatenews.org/news/18062026/federal-energy-regulatory-commission-data-center-orders/", captured: "2026-06-23", note: "June 18, 2026 coverage carrying Sierra Club and Southern Environmental Law Center reactions." },
     publiccitizen: { label: "“FERC Must Reconsider Risks Posed by Data Centers to Power Grids”", org: "Public Citizen", tier: "secondary", url: "https://www.citizen.org/news/ferc-must-reconsider-risks-posed-by-data-centers-to-power-grids/", captured: "2026-06-23", note: "Consumer-watchdog stance; pressed for a temporary moratorium on new data-center interconnections pending NERC reliability alerts." },
     // Post-issuance commentary refresh (gathered 2026-06-24).
@@ -91,6 +92,46 @@ window.FERC_DATA = (function () {
     peskoe: { label: "“An outdated FERC policy is undermining the White House’s ratepayer protection pledge”", org: "Utility Dive", tier: "secondary", url: "https://www.utilitydive.com/news/ferc-transmission-policy-white-house-ratepayer-protection-peskoe/815438/", captured: "2026-06-28", note: "Op-ed by Ari Peskoe (Harvard Electricity Law Initiative), published 2026-04-15: argues FERC’s 1994 transmission-pricing policy lets utilities socialize data-center upgrade costs, and that FERC should require full cost assignment plus disaggregated-pricing transparency." },
     latitudedocket: { label: "“What’s in FERC’s large load interconnection docket”", org: "Latitude Media", tier: "secondary", url: "https://www.latitudemedia.com/news/whats-in-fercs-large-load-interconnection-docket/", captured: "2026-06-28", note: "Docket-comment analysis (2025-11-25): AI/tech filers agree the current process hampers growth but split on federal preemption; OpenAI proposes a >250 MW ‘national interest’ fast lane, while Google, Meta, Amazon and the Data Center Coalition favor preserving the state role." },
     doeApplaud: { label: "“The Department of Energy Applauds FERC’s Action on Large Load Interconnection Reform”", org: "U.S. Department of Energy", tier: "doe", url: "https://www.energy.gov/articles/department-energy-applauds-fercs-action-large-load-interconnection-reform", captured: "2026-06-28", note: "Official DOE statement, June 18, 2026: the agency that directed FERC (via the §403 ANOPR) endorses the show cause orders as speed-to-power with ratepayer protection; carries a Secretary Wright quote." },
+    techcrunch: { label: "“AI data centers just got a government-mandated fast lane to the grid”", org: "TechCrunch", tier: "secondary", url: "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/", captured: "2026-06-29", note: "Tech / startup press framing: FERC gives data centers and other large loads a faster interconnection path, while the power-supply shortage remains the harder bottleneck." },
+    apdata: { label: "“Federal regulators order grid operators to speed power to energy-hungry AI data centers”", org: "Associated Press", tier: "secondary", url: "https://apnews.com/article/power-electricity-ai-plants-data-centers-grid-506e3d206871111f15c3c62fc5368be5", captured: "2026-06-29", note: "Mainstream wire coverage: unanimous FERC vote, state retail-rate authority preserved, data centers assigned upgrade costs, and public backlash over power, water, noise and land-use impacts." },
+    tomhardware: { label: "“US energy regulator to order grid operators to expedite AI data center applications”", org: "Tom’s Hardware", tier: "secondary", url: "https://www.tomshardware.com/tech-industry/data-centers/us-energy-regulator-to-order-grid-operators-to-expedite-ai-data-center-applications-says-projects-should-bring-their-own-power-or-cut-usage-during-high-demand", captured: "2026-06-29", note: "Hardware / tech-industry read: the fast lane is tied to bring-your-own-power or curtailment, while the article links the order to PJM rate pressure, Maryland cost-allocation backlash, and local opposition to data centers." },
+    dcdpowerup: { label: "“Republican senator introduces bill to impose federal rules on data center grid connections”", org: "Data Center Dynamics", tier: "secondary", url: "https://www.datacenterdynamics.com/en/news/republican-senator-introduces-bill-to-impose-federal-rules-on-data-center-grid-connections/", captured: "2026-06-29", note: "Federal-legislation context: Sen. Cynthia Lummis's POWER Up Act would set a 100 MW large-load threshold and direct FERC to issue standardized transmission-level interconnection rules while preserving state/local authority over siting, retail rates and generation." },
+    eenewsferc: { label: "“FERC acts to force US markets to protect electricity ratepayers”", org: "E&E News by POLITICO", tier: "secondary", url: "https://www.eenews.net/articles/ferc-acts-to-force-us-markets-to-protect-electricity-ratepayers/", captured: "2026-06-29", note: "E&E / Politico coverage of the June 18 orders; Josh Siegel contributed to the story. Carries Nvidia, EEI, John Miller, Neil Chatterjee and Robert Gramlich reactions around ratepayer protection, speed-to-power and jurisdiction." },
+    xschifman: { label: "“FERC Reforms Large Load Interconnection; Security Gaps Remain”", org: "Ben Schifman on X", tier: "secondary", url: "https://x.com/BenSchifman/article/2067679572431138993", captured: "2026-06-29", note: "X article surfaced in the social scan: reads FERC's large-load reform as an interconnection-speed move but flags unresolved grid-security and reliability questions." },
+    xnearco: { label: "“The Sixty-Day Clock: FERC”", org: "NeArco Capital on X", tier: "secondary", url: "https://x.com/NearcoCapital/article/2069126584909303911", captured: "2026-06-29", note: "X article surfaced in the social scan: investor / infrastructure framing around the 60-day response clock and the physical scarcity of power for data centers." },
+    xhalcyon: { label: "“What’s Happening in Energy June 26”", org: "Halcyon on X", tier: "secondary", url: "https://x.com/Halcyon/article/2070478226141712581", captured: "2026-06-29", note: "X article surfaced in the social scan: curates the FERC large-load action into a broader energy-alert stream, showing the order is now part of the recurring data-center / grid watchlist." },
+    jigarferc: { label: "Jigar Shah on FERC's June 18 large-load orders", org: "Jigar Shah on LinkedIn", tier: "secondary", url: "https://www.linkedin.com/posts/jigarshahdc_on-june-18-ferc-didnt-issue-a-sweeping-activity-7475542327546122240-WudI", captured: "2026-06-29", note: "Former DOE Loan Programs Office director Jigar Shah reads the orders as a clever region-by-region move that targets the speed-to-power bottleneck, not the underlying electricity-price problem; he also flags missing public capacity / demand data." },
+    benferc: { label: "Ben Inskeep on FERC large-load interconnection", org: "Ben Inskeep on X", tier: "secondary", url: "https://x.com/Ben_Inskeep/status/2068025625860841880", captured: "2026-06-29", note: "X reaction surfaced in the social scan: Citizens Action Coalition's Ben Inskeep rejects the premise that data centers need more help connecting to the grid, while saying he is encouraged to see FERC's large-load interconnection action." },
+    bennerc: { label: "“NERC issues Level 3 alert, mandates action to address data center load losses”", org: "Utility Dive", tier: "secondary", url: "https://www.utilitydive.com/news/nerc-issues-rare-level-3-alert-over-data-center-load-losses/819295/", captured: "2026-06-29", note: "Reliability context for Ben Inskeep's data-center stance: warns that data-center-driven grid instability could become severe and calls for standards protecting ratepayers from stability, reliability and resiliency impacts." },
+    mohanferc: { label: "Affidavit of Levitt, Mohan, Quint and Tanneeru on behalf of Eolian", org: "Eolian / Brattle / Elevate Energy Consulting", tier: "secondary", url: "https://www.brattle.com/wp-content/uploads/2025/11/2025.11.21-RM26-4-Affidavit-of-Levitt-et-al-for-Eolian-L.P.pdf", captured: "2026-06-29", note: "RM26-4 filing co-authored by Aniruddh Mohan: argues that hybrid large-load / generation facilities can be studied by modeling both generation and load, including dispatchability and load curtailment, so N-0 and N-1 flows stay within limits." },
+    mohanx: { label: "Aniruddh Mohan on PJM data-center transmission cost scrutiny", org: "Aniruddh Mohan on X", tier: "secondary", url: "https://x.com/aniruddh_mohan/status/2069973894237184457", captured: "2026-06-29", note: "X post surfaced in the social scan: flags increasing scrutiny over who pays for transmission to connect data centers, including the Maryland ratepayer complaint against PJM and the claim that Maryland ratepayers face more than $2 billion in transmission costs for new data centers." },
+    arthurwm: { label: "“Data centers are adding an extra 220 gigawatts of electricity demand in the US”", org: "Wood Mackenzie / Energy Gang", tier: "secondary", url: "https://www.woodmac.com/podcasts/energy-gang/data-centers-are-adding-an-extra-220-gigawatts-of-electricity-demand-in-us/", captured: "2026-06-29", note: "Developer-operations lens: Arthur Haubenstock (Equinix) discusses real data-center electricity needs, the limits of bring-your-own-power / bring-your-own-new-clean-energy ideas, backup generation constraints, local grid impacts and why grids matter." },
+    jeffdennis: { label: "“FERC Directs Grid Reform to Support Large Loads and Customer Affordability”", org: "Jeff Dennis / Electricity Customer Alliance", tier: "secondary", url: "https://www.linkedin.com/posts/jeffdennis77_ecaferclargeloadinterconnectionstatementpdf-activity-7473477334738599936-NWa-", captured: "2026-06-29", note: "Electricity Customer Alliance statement from Jeff Dennis: supports FERC's direction to speed large-load interconnection while making new large loads bear the costs incurred to serve them, improving transparency, and working with states." },
+    simonmahan: { label: "“Southeast Energy Opportunities Require a Bigger, Better, Faster Grid”", org: "CEBA / Southern Renewable Energy Association", tier: "secondary", url: "https://ceba.org/southeast-energy-opportunities-require-a-bigger-better-faster-grid-business-leaders-call-for-regional-transmission-planning/", captured: "2026-06-29", note: "Simon Mahan (SREA) argues that manufacturers and data centers are bringing jobs to the Southeast, but without modern regional transmission the region risks higher prices, power shortages and lost economic opportunity." },
+    briggswhite: { label: "“Demand is Here — Are We Ready to Build?”", org: "Briggs White on LinkedIn", tier: "secondary", url: "https://www.linkedin.com/pulse/demand-hereare-we-ready-build-briggs-white-cixae", captured: "2026-06-29", note: "Briggs White (Keystone Ascent) frames data-center demand as a physical infrastructure and supply-chain buildout: co-location is now assumed, emergency load reduction deserves deeper analysis, and long lead times for gas turbines, transformers and interconnection force regulators to balance affordability and reliability." },
+    heathermcgeory: { label: "“American Energy, American AI: Powering a Secure Future”", org: "American Clean Power", tier: "secondary", url: "https://cleanpower.org/blog/american-energy-american-ai-powering-a-secure-future/", captured: "2026-06-29", note: "CoreWeave hyperscaler voice: Heather McGeory says data-center power conversations have moved from megawatts to gigawatts, and frames energy availability as a national-security / AI-infrastructure issue." },
+    aysecoskun: { label: "“Transforming Data Centers into Grid-Responsive Powerhouses”", org: "Boston University", tier: "secondary", url: "https://www.bu.edu/eng/2025/07/01/transforming-data-centers-into-grid-responsive-powerhouses/", captured: "2026-06-29", note: "Academic / Emerald AI voice: Ayse Coskun's research makes data-center energy flexibility central to grid stability and sustainability; relevant to FERC's flexible-load study category." },
+    varunsivaram: { label: "“The rise of flexible data centers”", org: "Latitude Media", tier: "secondary", url: "https://www.latitudemedia.com/news/catalyst-the-rise-of-flexible-data-centers/", captured: "2026-06-29", note: "Emerald AI voice: Varun Sivaram argues AI data centers can operate as flexible grid assets rather than fixed loads; related search also surfaced his LinkedIn post on visits to the White House, FERC and DOE to showcase AI flexibility." },
+    timlatimer: { label: "“Tim Latimer’s vision for Fervo and geothermal energy”", org: "Fast Company", tier: "secondary", url: "https://www.fastcompany.com/91549060/tim-latimer-fervo-energy-world-changing-ideas-2026", captured: "2026-06-29", note: "Firm-power supply voice: Tim Latimer and Fervo are tied to Google data-center clean-power procurement, including the Nevada project and larger Utah geothermal buildout." },
+    jeffbladen: { label: "“Can data centers be good grid citizens?”", org: "Volts / Verrus", tier: "secondary", url: "https://www.volts.wtf/p/can-data-centers-be-good-grid-citizens", captured: "2026-06-29", note: "Flexible-data-center operator voice: Jeff Bladen explains how asset-backed flexible data centers can operate as grid assets rather than passive large loads." },
+    jamienolan: { label: "Jennifer Granholm on Power Demand and Governors Races", org: "Jamie Nolan / Energy Empire", tier: "secondary", url: "https://www.linkedin.com/posts/jamiemnolan_the-episode-i-have-been-waiting-for-has-finally-activity-7475925914535538691-kMB8", captured: "2026-06-29", note: "Public-narrative voice: Jamie Nolan frames data centers as neither automatic villains nor automatic allies; the political question is whether guardrails make them lower bills rather than raise them." },
+    luciatian: { label: "“The AI Energy Nexus”", org: "Google Data Centers podcast", tier: "secondary", url: "https://datacenters.google/podcast/the-ai-energy-nexus/", captured: "2026-06-29", note: "Google clean-energy voice: Lucia Tian frames AI load growth as a race to secure carbon-free power through advanced geothermal, nuclear, storage and grid-optimization partnerships." },
+    saraaxelrod: { label: "“Big Tech steps up: companies agree to cover energy costs amid AI data center surge”", org: "Crusoe / LinkedIn", tier: "secondary", url: "https://www.linkedin.com/posts/this-with-krish_big-tech-steps-up-companies-agree-to-cover-activity-7435339817791672320-T8HB", captured: "2026-06-29", note: "Crusoe government-affairs voice: Sara Axelrod frames AI compute as making energy the defining constraint and competitive advantage for data infrastructure, with Crusoe taking an energy-first / BYO-power approach." },
+    chaselochmiller: { label: "“US grid overhaul urgently needed to meet AI load: FERC”", org: "Argus Media", tier: "secondary", url: "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2804882-us-grid-overhaul-urgently-needed-to-meet-ai-load-ferc", captured: "2026-06-29", note: "Crusoe CEO voice: Chase Lochmiller says developers are pairing data-center growth with their own behind-the-meter generation and situating facilities near stranded or underutilized supply." },
+    cullycavness: { label: "“The data center event that became an energy event”", org: "Latitude Media", tier: "secondary", url: "https://www.latitudemedia.com/news/the-data-center-event-that-became-an-energy-event/", captured: "2026-06-29", note: "Crusoe operator voice: Cully Cavness describes gas as a bridge to grid power at Abilene / Stargate, showing how the data-center buildout is turning into an energy-buildout story." },
+    amandapc: { label: "“How Big Tech learned to speak FERC”", org: "E&E News by POLITICO", tier: "secondary", url: "https://www.eenews.net/articles/how-big-tech-learned-to-speak-ferc/", captured: "2026-06-29", note: "Google data-center-energy voice: Amanda Peterson Corio says tech companies need solutions that better utilize the grid, and Utility Dive reports her point that paying other customers to shift load can be faster and cheaper than curtailing data-center chips." },
+    charleshua: { label: "“Thousands of Hoover Dams: Utilities request $1.4 trillion in spending through 2030”", org: "Latitude Media / PowerLines", tier: "secondary", url: "https://www.latitudemedia.com/news/thousands-of-hoover-dams-utilities-request-1-4-trillion-in-spending-through-2030/", captured: "2026-06-29", note: "Affordability / utility-regulation voice: Charles Hua argues data centers are an important energy topic but rate increases also reflect the utility business model and a need for regulatory transparency and modernization." },
+    chrisgillett: { label: "“Why American data centers can’t plug in”", org: "Works in Progress", tier: "secondary", url: "https://worksinprogress.co/issue/why-american-data-centers-cant-plug-in/", captured: "2026-06-29", note: "Grid-mechanics voice: Chris Gillett argues the United States has electricity to power AI buildout, but the bottleneck is connecting data centers and power plants to the grid; flexible connection rights are part of the fix." },
+    shanumathew: { label: "Shanu Mathew on FERC large-load reform and energized gigawatts", org: "Shanu Mathew", tier: "secondary", url: "https://www.shanumathew.com/writing/data-centers-focus-on-energized-gw", captured: "2026-06-29", note: "Capital-markets / infrastructure voice: Mathew tracks energized GW, power constraints and political resistance as the real investment variables; his X thread reads FERC's reform as fixing slow, inconsistent data-center interconnection rules and making full upgrade-cost responsibility central." },
+    joshlevi: { label: "Testimony: Josh Levi, President, Data Center Coalition", org: "FERC Reliability Technical Conference", tier: "secondary", url: "https://www.ferc.gov/media/testimoniescomments-josh-levi-president-data-center-coalition", captured: "2026-06-29", note: "Data Center Coalition voice: Levi tells FERC the industry needs faster infrastructure and broader public understanding of data centers' grid role." },
+    cymcgeady: { label: "“The Electricity Supply Bottleneck on U.S. AI Dominance”", org: "CSIS / Cy McGeady", tier: "secondary", url: "https://www.csis.org/analysis/electricity-supply-bottleneck-us-ai-dominance", captured: "2026-06-29", note: "Equinix energy-policy voice with CSIS source lineage: Cy McGeady argues electricity supply is a bottleneck for U.S. AI dominance and maps where data-center investment is moving based on generation, permitting and land-use constraints." },
+    cymcneill: { label: "Cy McNeill, Senior Director of Federal Affairs", org: "Data Center Coalition", tier: "secondary", url: "https://datacentercoalition.org/cpages/cy-mcneill", captured: "2026-06-29", note: "Data Center Coalition federal-affairs voice: Cy McNeill represents DCC in federal energy, transmission, siting and permitting advocacy; separate from Equinix's Cy McGeady." },
+    davidyoung: { label: "Data Center Coalition committee leadership", org: "Data Center Coalition", tier: "secondary", url: "https://datacentercoalition.org/cpages/committee-leadership", captured: "2026-06-29", note: "Data-center federal-policy voice: David Young of Equinix is listed as a Data Center Coalition Federal Policy Leadership Advisory Council co-chair." },
+    taggreason: { label: "QTS Co-CEO Tag Greason on data-center capacity delivery", org: "TD Securities", tier: "secondary", url: "https://www.tdsecurities.com/ca/en/tdc-insights-qts-on-data-center-outlook", captured: "2026-06-29", note: "Data-center operator / capital-delivery voice: Tag Greason discusses hyperscale AI demand and bottlenecks for delivering data-center capacity." },
+    rimaalaily: { label: "Rima Alaily on We Energies data-center rate", org: "Rima Alaily on LinkedIn", tier: "secondary", url: "https://www.linkedin.com/posts/rima-alaily_we-energies-data-center-rate-activity-7432819257794699264-2ips", captured: "2026-06-29", note: "Microsoft hyperscaler voice: Alaily says Microsoft has committed to pay its own way so its data centers do not increase residents' electricity prices, pointing to Wisconsin's Very Large Customer tariff as the mechanism." },
+    brianakobor: { label: "Google's Capacity Commitment Framework for large loads", org: "LinkedIn / Simple Thread", tier: "secondary", url: "https://www.linkedin.com/posts/justinetheredge_yesterday-briana-kobor-shed-light-on-the-activity-7331290739412189186-Hs8W", captured: "2026-06-29", note: "Google hyperscaler voice: Briana Kobor's ESIG presentation described Google's Capacity Commitment Framework, shifting forecasting risk and capacity-planning uncertainty from utilities to large customers through long-term commitments, minimum charges, collateral and transparent modification fees." },
+    redditecon: { label: "r/Economics thread: “AI data centers just got a government-mandated fast lane…”", org: "Reddit", tier: "secondary", url: "https://www.reddit.com/r/Economics/comments/1ua07ck/ai_data_centers_just_got_a_governmentmandated/", captured: "2026-06-29", note: "Public social reaction to the TechCrunch / Yahoo framing: FERC gave data centers a faster interconnection path but did not solve the underlying power-supply shortage." },
+    reddittech: { label: "r/technology thread: “Federal regulators order grid operators to speed power…”", org: "Reddit", tier: "secondary", url: "https://www.reddit.com/r/technology/comments/1u9ir0r/federal_regulators_order_grid_operators_to_speed/", captured: "2026-06-29", note: "Public tech-community reaction to AP coverage: the order is read through AI demand, local backlash, affordability, and whether fast interconnection shifts costs or risks elsewhere." },
   };
 
   const meta = {
@@ -98,7 +139,7 @@ window.FERC_DATA = (function () {
     subtitle: "From the DOE §403 ANOPR (Docket RM26-4-000) to FERC’s June 18, 2026 tailored §206 show cause orders",
     items: "Items E-7 to E-12 · Dockets EL26-67-000 to EL26-72-000",
     capture: "2026-06-22",
-    discourseCapture: "2026-06-28",
+    discourseCapture: "2026-06-29",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
@@ -247,7 +288,7 @@ window.FERC_DATA = (function () {
       respondents: "PJM + 45 named transmission owners",
       commishPages: { swett: 87, rosner: 93, see: 99, chang: 104, lacerte: 113 },
       status: "Co-location rules already in place",
-      unique: "The only market that has already cleared the co-location question. PJM’s co-located-load rules were settled in a separate proceeding (the Dec. 2025 Co-Location Order), so this §206 builds on that record instead of reopening it — and PJM’s new services become the template the other five orders are told to copy.",
+      unique: "PJM is the control case. FERC already accepted PJM’s co-location architecture in EL25-49, so E-7 does not start from a blank page; it asks how to extend those Interim NITS, Contract Demand and flexible-load services into the large-load framework while protecting pending service deals and preserving PJM’s first-ready, first-served New Services Queue.",
       asks: [
         "Protecting existing deals: a reasonable implementation period, and time to finalize agreements nearing completion when the new tariff provisions are filed (Section IV).",
         "Whether the new flexible-load services would change regional and local transmission planning, given uncertainty in the type, location, and quantity of such loads (Section IV).",
@@ -277,7 +318,7 @@ window.FERC_DATA = (function () {
       respondents: "MISO + 30 named transmission owners",
       commishPages: { swett: 91, rosner: 96, see: 102, chang: 106, lacerte: 114 },
       status: "Early-stage large-load rules",
-      unique: "The fast-growing middle of the pack. MISO runs a Large Load Working Group and an Expedited Project Review path, and even told its own stakeholders the Tariff lacks a ‘consistent or transparent framework’ for large loads — but it has no co-location procedures in the Tariff yet and only the basic Order No. 888 services, so FERC imports the PJM and SPP templates ‘with regional variation.’",
+      unique: "MISO is the cost-allocation stress test. It already has an Expedited Project Review path, but its tariff still studies new load at maximum demand even when the customer says it can curtail, and network upgrades roll into each transmission owner’s base zonal rates. E-8 presses MISO on whether flexible service and a pro forma cost-recovery agreement can keep those upgrade costs assigned to the load that caused them.",
       asks: [
         "Whether and how Eligible Customers taking the new services would be charged for regulation and black-start service (P 99).",
         "An appropriate minimum level of cost recovery and financial security under any cost-recovery agreement (P 119).",
@@ -305,7 +346,7 @@ window.FERC_DATA = (function () {
       respondents: "SPP + 22 named transmission owners",
       commishPages: { swett: 68, rosner: 73, see: 78, chang: 83, lacerte: 92 },
       status: "Most mature: HILL / HILLGA",
-      unique: "The acknowledged leader. FERC adopts SPP’s own ‘High Impact Large Load’ (HILL) definition as the order’s definition of large load and commends its HILLGA and Conditional HILL services — so SPP’s is the shortest order (92 pp), finds only two gaps to close, and its frameworks become the model the other regions are told to follow.",
+      unique: "SPP is the benchmark, not the laggard. E-9 adopts SPP’s own HILL definition, commends HILLGA and Conditional HILL Service, and leaves its Attachment Z1/AQ/AX study stack plus Highway/Byway cost split largely intact. The narrow missing pieces are operational terms in the service agreement, automatic alternative-technology review, and crediting large-load payments back through transmission revenue requirements.",
       asks: [
         "A mechanism to credit large-load cost-recovery payments toward transmission owners’ revenue requirements (Ordering (B)(1)(b)).",
         "Evaluating alternative transmission technologies in all instances without a customer request — and, if conventional upgrades are chosen instead, justifying why (P 46).",
@@ -334,7 +375,7 @@ window.FERC_DATA = (function () {
       respondents: "CAISO + 24 Participating Transmission Owners",
       commishPages: { swett: 93, rosner: 98, see: 104, chang: 109, lacerte: 117 },
       status: "No Order No. 888 service",
-      unique: "The structural outlier. CAISO doesn’t offer traditional Order No. 888 transmission service at all — no firm long-term reservations, no formal application process, just a single ‘daily’ service — and its Participating TOs, not CAISO, lead load interconnection. FERC even gives it an escape hatch no other order offers: explain whether its non-888 framework already meets the concerns.",
+      unique: "CAISO is the translation problem. It does not sell Order No. 888 network or point-to-point service, offers no firm long-term reservation product, and relies on Scheduling Coordinators and Participating TO-led load interconnection inside a state-planning framework. E-10 therefore asks CAISO either to build equivalent large-load protections or explain why its daily-service, TAC/RAC framework already solves the same cost and reliability problems.",
       asks: [
         "Whether, given that CAISO does not offer Order No. 888 service, its existing framework already addresses the concerns — or what equivalent options it would create (p. 60).",
         "How load-addition study procedures and operational requirements would work when its Participating TOs, not CAISO, lead load interconnection.",
@@ -363,7 +404,7 @@ window.FERC_DATA = (function () {
       respondents: "ISO-NE + 16 Participating Transmission Owners",
       commishPages: { swett: 92, rosner: 97, see: 102, chang: 107, lacerte: 115 },
       status: "Transmission-constrained grid",
-      unique: "The most transmission-constrained. With a system peak of only ~30,000 MW and significant existing constraints, FERC calls the cost-shifting and reliability risks ‘particularly acute’ here — and its planning runs off a CELT forecast that doesn’t even include large proposed data-center loads.",
+      unique: "ISO-NE is the small-system, big-load case. FERC flags a roughly 30,000 MW peak, existing transmission constraints, and a CELT forecast that generally excludes proposed data-center loads. E-11 turns that into a concrete planning question: how do Schedule 22/23 cluster studies, Pool Transmission Facilities at 69 kV and above, and the Monthly Regional Network Load netting rules change when one large customer can move the regional needle?",
       asks: [
         "How it would study and serve large loads on a system peaking at only ~30,000 MW with significant transmission constraints (P 11 n.31).",
         "Applying a PJM-style MW threshold to the ‘Monthly Regional Network Load’ behind-the-meter-netting definition (P 60).",
@@ -391,7 +432,7 @@ window.FERC_DATA = (function () {
       respondents: "NYISO + 9 named New York transmission owners",
       commishPages: { swett: 96, rosner: 100, see: 106, chang: 111, lacerte: 118 },
       status: "Largely outside the tariff today",
-      unique: "The least-codified. NYISO’s large-load handling lives largely outside its tariff — study deposits and assumptions sit in non-tariff documents, it has no tariff definition of ‘large load,’ and it doesn’t expect to file co-location reforms until 2027, which FERC cites as exactly why a §206 proceeding is needed now. It is also the only order with a 45-day window to seek up to a 90-day abeyance.",
+      unique: "NYISO is the tariff-gap case. It has non-tariff study materials for >10 MW / 115 kV load projects, but no tariff definition of ‘large load,’ no tariff-ready deposits or assumptions, and co-location reforms not expected until 2027. E-12 converts that off-tariff practice into show-cause issues, including a 60- to 90-day study expectation and the only express path to seek a 90-day abeyance.",
       asks: [
         "How NYISO and its TOs will timely study transmission service — within 60–90 days of a request (P 44).",
         "Why a pro forma cost-recovery agreement is not necessary to ensure just and reasonable rates, or else propose one (P 89).",
@@ -481,8 +522,10 @@ window.FERC_DATA = (function () {
       { t: "‘Historic’ / ‘landmark’: the framing is near-universal across trade press and the bar, with FERC asserting itself on load interconnection in an area it historically left alone.", src: ["akin", "rew", "powermag"] },
       { t: "Speed via procedure: § 206 show cause beats a multi-year NOPR; commentators read it as DOE’s April 30 deadline operationalized across all six markets at once.", src: ["aaf", "rtoinsider"] },
       { t: "Regional flexibility reads as a deliberate design choice: SPP and PJM are treated as proactive leaders, others told to catch up without a uniform template.", src: ["powermag", "latitude"] },
-      { t: "Flexibility is becoming the price of speed: practitioners read curtailable / flexible service as the most valuable near-term lever to connect faster, turning a load’s willingness to limit usage into bargaining power.", src: ["duanemorris", "norris"] },
-      { t: "Built to survive appeal: legal analysts read the six tailored § 206 orders as deliberately litigation-resistant. A detailed, region-specific administrative record offers fewer openings to challenge than a single national rule, and it skips the multi-year lag of a rulemaking.", src: ["bloomberglaw", "heatmap"] },
+      { t: "Flexibility is becoming the price of speed: practitioners read curtailable / flexible service as the most valuable near-term lever to connect faster, turning a load’s willingness to limit usage into bargaining power. Technical filings from the Brattle/Eolian/Emerald/Verrus camp put the same idea into study mechanics: model the large load, nearby generation and curtailability together, then test system flows.", src: ["duanemorris", "norris", "mohanferc", "brianakobor", "briggswhite", "aysecoskun", "varunsivaram", "jeffbladen"] },
+      { t: "Built to survive appeal: legal analysts read the six tailored § 206 orders as deliberately litigation-resistant. A detailed, region-specific administrative record offers fewer openings to challenge than a single national rule, and it skips the multi-year lag of a rulemaking.", src: ["bloomberglaw", "heatmap", "eenewsferc"] },
+      { t: "The public headline has escaped the energy-law lane: TechCrunch, AP, Tom's Hardware and Reddit all translate the orders as a data-center fast lane, even when they disagree on whether the real bottleneck is interconnection paperwork, physical power supply, or household bills.", src: ["techcrunch", "apdata", "tomhardware", "jigarferc", "redditecon", "reddittech"] },
+      { t: "X is treating the 60-day response clock as the live market story: energy/security analysts and infrastructure accounts are watching whether the RTO filings answer the real scarcity question, not just whether they satisfy FERC's process.", src: ["xschifman", "xnearco", "xhalcyon"] },
     ],
     friction: [
       { t: "Cost allocation is the central fight: how aggressively must large loads pre-fund and backstop upgrades, and over what crediting term? The ANOPR explicitly left crediting open.", src: ["utilitydive", "doe403"] },
@@ -493,9 +536,22 @@ window.FERC_DATA = (function () {
       { t: "Fragmentation risk: six regional answers on six different timelines give multi-region developers clarity within a market but a patchwork across them, and fresh diligence for near-term deals.", src: ["utilitydive", "duanemorris"] },
       { t: "The affordability backstop is split: FERC guards against cost-shifting among transmission customers but says preventing cost-shifting among retail customers is the states’ job, so the household-bill fight moves to state regulators even as the orders’ federal reach over load interconnection invites a jurisdictional challenge.", src: ["thehill", "bloomberglaw"] },
       { t: "Even Big Tech is split on the jurisdiction question: filings from OpenAI, Microsoft, Google, the Data Center Coalition and others agree the current process hampers growth but divide on whether FERC should preempt state-regulated interconnection. OpenAI pushes a federal fast lane (a ‘national interest’ designation for loads above 250 MW), while Google, Meta, Amazon and the Data Center Coalition lean toward preserving the state role.", src: ["latitudedocket"] },
+      { t: "Fast lane vs. power supply: TechCrunch and Reddit frame the order as faster access to the grid, but AP and tech press stress the harder constraint: data-center construction is outrunning new generation, transmission upgrades and local consent.", src: ["techcrunch", "apdata", "tomhardware", "redditecon"] },
+      { t: "Reliability risk is now part of the same conversation: consumer advocates point to NERC's Level 3 data-center alert as the reason fast interconnection needs enforceable modeling, operating and ratepayer-protection standards, while modelers are pressing the details of how hybrid large-load facilities should be studied.", src: ["benferc", "bennerc", "mohanferc"] },
+      { t: "The Maryland/PJM fight is also spreading through technical social media: Aniruddh Mohan flags the ratepayer complaint as part of rising scrutiny over who pays for transmission to connect data centers, with Maryland's claimed exposure framed above $2 billion.", src: ["mohanx", "mdopc"] },
+      { t: "Developer reality check: Equinix's Arthur Haubenstock argues that data centers often cannot simply behave as flexible grid loads, and CoreWeave's Heather McGeory shows the scale has moved from megawatts to gigawatts. That complicates any policy story that treats curtailment or on-site supply as an easy fix.", src: ["arthurwm", "heathermcgeory"] },
+      { t: "The buildout is colliding with supply-chain physics: Briggs White points to 3- to 5-year gas-turbine lead times, 3- to 4-year transformer lead times and interconnection delays, so the FERC clock is only one part of a much larger delivery bottleneck.", src: ["briggswhite"] },
+      { t: "Firm clean supply is the other half of the answer: Tim Latimer's Fervo work with Google and Lucia Tian's advanced-energy portfolio show why hyperscalers are pairing interconnection reform with geothermal, storage, nuclear and grid-optimization procurement, not only demand flexibility.", src: ["timlatimer", "luciatian"] },
+      { t: "The hyperscaler line is not monolithic but it is explicit on cost assignment: Microsoft says it is committed to paying its own way through large-customer tariffs, while Google is promoting capacity commitments and grid-utilization strategies that shift planning risk from utilities to large customers. DCC's Josh Levi, Cy McNeill and David Young show the same argument is organized at the industry-association level.", src: ["rimaalaily", "brianakobor", "amandapc", "latitudedocket", "joshlevi", "cymcneill", "davidyoung"] },
+      { t: "AI competitiveness has become part of the power-grid argument: Equinix's Cy McGeady frames electricity supply as a bottleneck on U.S. AI dominance, while Tag Greason, Chase Lochmiller, Cully Cavness and Sara Axelrod show the operator side racing to deliver actual data-center capacity with energy attached.", src: ["cymcgeady", "taggreason", "chaselochmiller", "cullycavness", "saraaxelrod"] },
+      { t: "Capital is watching energized gigawatts, not headline announcements: Shanu Mathew frames the investable question as which projects actually get power, interconnection and political permission, with FERC's reform aimed at slow and inconsistent rules.", src: ["shanumathew"] },
+      { t: "The grid-connection problem has its own mechanics: Chris Gillett argues the country has enough electricity in aggregate, but the bottleneck is getting new loads and generation studied, connected and prioritized; Charles Hua adds that utility regulation and transparency shape whether consumers trust the answer.", src: ["chrisgillett", "charleshua"] },
+      { t: "The public narrative is settling around guardrails, not a simple yes/no on data centers: Jamie Nolan's Energy Empire framing is that data centers can either become the Loudoun County cautionary tale or a local-bill ally, depending on the deal structure.", src: ["jamienolan"] },
+      { t: "The Southeast remains the outside-the-RTO pressure point: Simon Mahan argues that data centers and manufacturers need regional transmission planning, not just local patches, or the region risks higher prices and power shortages.", src: ["simonmahan"] },
+      { t: "Congress may not leave the issue to FERC orders alone: the POWER Up Act would write a 100 MW large-load category into federal law and push standardized transmission-level interconnection rules, while saying state and local siting, generation and retail-rate authority remain intact.", src: ["dcdpowerup"] },
     ],
     // outlet chips render from cited source records (each links to its SOURCES entry) — no uncited names.
-    outlets: ["utilitydive", "rtoinsider", "latitude", "tdworld", "powermag", "rew", "akin", "sheppard", "whitecase", "natlaw", "aaf", "substack", "heatmap", "duanemorris", "bloomberglaw", "thehill", "dcknowledge", "enr", "ieee"],
+    outlets: ["utilitydive", "rtoinsider", "latitude", "tdworld", "powermag", "rew", "akin", "sheppard", "whitecase", "natlaw", "aaf", "substack", "heatmap", "duanemorris", "bloomberglaw", "thehill", "dcknowledge", "enr", "ieee", "techcrunch", "apdata", "tomhardware", "dcdpowerup", "eenewsferc", "xschifman", "xnearco", "xhalcyon", "jigarferc", "benferc", "bennerc", "mohanferc", "mohanx", "arthurwm", "jeffdennis", "simonmahan", "briggswhite", "heathermcgeory", "aysecoskun", "varunsivaram", "timlatimer", "jeffbladen", "jamienolan", "luciatian", "saraaxelrod", "chaselochmiller", "cullycavness", "amandapc", "charleshua", "chrisgillett", "shanumathew", "joshlevi", "cymcgeady", "cymcneill", "davidyoung", "taggreason", "rimaalaily", "brianakobor", "redditecon", "reddittech"],
   };
 
   // Named commentary spanning the political spectrum (Tab 3). Each is the source's own
@@ -509,7 +565,7 @@ window.FERC_DATA = (function () {
     {
       name: "Travis Kavulla", affil: "American Affairs · NRG", lean: "right",
       take: "Wants grid access priced, not rationed: borrow the natural-gas ‘open season’ so large loads bid for transferable interconnection rights instead of queuing first-come, first-served. Reads the orders’ cost-causation push as a step toward that, but short of market pricing.",
-      src: ["kavulla"],
+      src: ["kavulla", "kavullali"],
     },
     {
       name: "Devin Hartman", affil: "R Street Institute", lean: "right",
@@ -538,8 +594,8 @@ window.FERC_DATA = (function () {
     },
     {
       name: "Neil Chatterjee", affil: "former FERC chairman", lean: "right",
-      take: "Calls it ‘a very FERC-y approach’ — approving of the choice to push region-specific reform through §206 show cause orders rather than one national rule, which he reads as both faster to deliver and harder to challenge.",
-      src: ["heatmap"],
+      take: "Calls it ‘a very FERC-y approach’ and says the design targets the core challenges ‘on a region by region basis on a tight timeline.’ He approves of the region-specific §206 route as faster and more legally defensible than one national rule.",
+      src: ["heatmap", "eenewsferc"],
     },
     {
       name: "Jennifer Danis", affil: "Institute for Policy Integrity", lean: "nonpartisan",
@@ -555,6 +611,151 @@ window.FERC_DATA = (function () {
       name: "Ari Peskoe", affil: "Harvard Electricity Law Initiative", lean: "nonpartisan",
       take: "The cost-causation hawk: warns that utilities are ‘rolling billions of dollars in data-center-driven transmission upgrades into rates that everyone pays,’ and argues FERC should revise its 1994 transmission-pricing policy to ‘assign the full costs of transmission service to power-hungry data centers,’ plus require disaggregated pricing so the public can see what serving a data center actually costs.",
       src: ["peskoe"],
+    },
+    {
+      name: "Jigar Shah", affil: "Deploy Action · former DOE Loan Programs Office", lean: "nonpartisan",
+      take: "Reads the orders as a clever jurisdictional move: region-by-region § 206 orders avoid the federal-overreach fight while targeting the ‘speed to power’ bottleneck. His caveat is that FERC is not solving the price problem directly; data centers are an accelerant on a strained system, and the missing piece is a public capacity-and-demand picture.",
+      src: ["jigarferc"],
+    },
+    {
+      name: "Ben Inskeep", affil: "Citizens Action Coalition of Indiana", lean: "left",
+      take: "Brings the consumer-advocate reliability lens: skeptical that data centers need a faster path to the grid, but encouraged that FERC is taking up large-load interconnection. His broader warning is that standards must protect ratepayers from negative stability, reliability and resiliency impacts as data centers proliferate.",
+      src: ["benferc", "bennerc"],
+    },
+    {
+      name: "Aniruddh Mohan", affil: "The Brattle Group", lean: "nonpartisan",
+      take: "The technical-modeling voice: in RM26-4 testimony, co-authors a hybrid-facility framework where large load, nearby generation and curtailability are modeled together so dispatch keeps N-0 and N-1 flows within limits. On X, he also flags the Maryland/PJM complaint as part of ‘increasing scrutiny on who pays’ for transmission to connect data centers.",
+      src: ["mohanferc", "mohanx"],
+    },
+    {
+      name: "Arthur Haubenstock", affil: "Equinix", lean: "nonpartisan",
+      take: "The data-center-operator reality check: says the industry’s power needs collide with local grid impacts, backup-generation limits, and the real constraints behind ‘BYOP / BYONCE’ flexibility. Useful counterweight to the idea that every large load can simply curtail or bring its own supply.",
+      src: ["arthurwm"],
+    },
+    {
+      name: "Jeff Dennis", affil: "Electricity Customer Alliance · Coefficient Policy Experts", lean: "nonpartisan",
+      take: "The customer-affordability voice: supports FERC's move because it accelerates pathways for new large loads while reinforcing that those loads should bear the costs incurred to serve them, with more transparency and state coordination. In IEEE's coverage, he says FERC is threading the needle between speed-to-power and public concern over broader bill impacts.",
+      src: ["jeffdennis", "ieee"],
+    },
+    {
+      name: "Ben Schifman", affil: "Institute for Progress", lean: "nonpartisan",
+      take: "The security-and-reliability skeptic: reads FERC's large-load action as meaningful interconnection reform, but flags that ‘security gaps remain’ as the grid absorbs more data-center demand.",
+      src: ["xschifman"],
+    },
+    {
+      name: "Simon Mahan", affil: "Southern Renewable Energy Association", lean: "nonpartisan",
+      take: "The Southeast planning voice: argues that manufacturers and data centers are bringing jobs to the region, but without a modern transmission system ‘we risk higher energy prices, power shortages, and lost economic opportunities.’ His point sharpens the non-RTO coverage gap the orders do not directly solve.",
+      src: ["simonmahan"],
+    },
+    {
+      name: "Briggs White", affil: "Keystone Ascent", lean: "nonpartisan",
+      take: "The buildout-and-supply-chain voice: sees hyperscaler demand as a physical infrastructure buildout, with co-location now assumed and emergency data-center load reduction ‘ripe for deeper industry analysis.’ His warning is that turbine, transformer and interconnection lead times force regulators to keep costs manageable while maintaining reliability.",
+      src: ["briggswhite"],
+    },
+    {
+      name: "Heather McGeory", affil: "CoreWeave", lean: "nonpartisan",
+      take: "A hyperscaler power-procurement voice: says the conversation has moved from megawatts to gigawatts for individual data centers. Her presence in the discourse reinforces that AI infrastructure demand is no longer an abstract forecast; it is a siting, procurement and grid-modernization problem now.",
+      src: ["heathermcgeory"],
+    },
+    {
+      name: "Ayse Coskun", affil: "Boston University · Emerald AI", lean: "nonpartisan",
+      take: "The academic flexibility voice: argues data centers can be made more responsive to power-grid demands, turning energy flexibility into a reliability and sustainability tool rather than treating AI load as fixed demand.",
+      src: ["aysecoskun"],
+    },
+    {
+      name: "Varun Sivaram", affil: "Emerald AI", lean: "nonpartisan",
+      take: "The software-flexibility voice: argues data centers can become grid assets, not just fixed loads, by dynamically adjusting demand to relieve grid stress while maintaining performance.",
+      src: ["varunsivaram"],
+    },
+    {
+      name: "Tim Latimer", affil: "Fervo Energy", lean: "nonpartisan",
+      take: "The firm-clean-power voice: Fervo's Google data-center deals show the supply-side counterpart to FERC's load-interconnection push: hyperscalers are also trying to procure 24/7 geothermal power near the places where AI load is growing.",
+      src: ["timlatimer"],
+    },
+    {
+      name: "Jeff Bladen", affil: "Verrus", lean: "nonpartisan",
+      take: "The asset-backed-flexibility operator: argues a flexible data center can be a grid asset, not only a consumer, and that physical storage, controls and telemetry make that different from old demand-response programs.",
+      src: ["jeffbladen"],
+    },
+    {
+      name: "Jamie Nolan", affil: "Energy Empire · Nolan Strategic Communications", lean: "nonpartisan",
+      take: "The public-narrative voice: frames data centers as a guardrails problem, not a binary good-or-bad story. Done wrong, they are the Loudoun County cautionary tale; done right, she argues they can become a local-bill ally rather than the villain driving bills up.",
+      src: ["jamienolan"],
+    },
+    {
+      name: "Lucia Tian", affil: "Google", lean: "nonpartisan",
+      take: "The Google advanced-energy voice: frames AI's power demand as a race to secure carbon-free power through geothermal, nuclear, long-duration storage and grid optimization. That makes the hyperscaler story about procuring new clean supply, not only asking grid operators for faster interconnection.",
+      src: ["luciatian"],
+    },
+    {
+      name: "Sara Axelrod", affil: "Crusoe", lean: "nonpartisan",
+      take: "The Crusoe policy voice: says AI compute is making energy the defining constraint and competitive advantage for data infrastructure, and frames Crusoe's answer as energy-first infrastructure that co-locates compute with abundant or stranded power.",
+      src: ["saraaxelrod"],
+    },
+    {
+      name: "Chase Lochmiller", affil: "Crusoe", lean: "nonpartisan",
+      take: "The AI-campus builder voice: says developers are pairing data-center growth with behind-the-meter generation and siting near stranded or underused power. His Stargate work makes the large-load debate concrete: build compute where power can actually be delivered.",
+      src: ["chaselochmiller"],
+    },
+    {
+      name: "Cully Cavness", affil: "Crusoe", lean: "nonpartisan",
+      take: "The bridge-to-grid voice: describes gas as a bridge to grid power at Abilene / Stargate, showing how AI data centers are turning into power-development projects before the grid can catch up.",
+      src: ["cullycavness"],
+    },
+    {
+      name: "Amanda Peterson Corio", affil: "Google", lean: "nonpartisan",
+      take: "The Google grid-utilization voice: says the sector has to find solutions that better utilize the system. Google works on data-center flexibility, but she also argues it can be faster and more cost effective to pay other customers to shift load because idle chips are expensive.",
+      src: ["amandapc"],
+    },
+    {
+      name: "Charles Hua", affil: "PowerLines", lean: "nonpartisan",
+      take: "The utility-regulation voice: calls data centers arguably the most important topic in energy, but warns that blaming every bill increase on data centers is too simple. His focus is utility incentives, transparency and whether regulators center consumers as the grid is rebuilt.",
+      src: ["charleshua"],
+    },
+    {
+      name: "Chris Gillett", affil: "Works in Progress", lean: "nonpartisan",
+      take: "The interconnection-mechanics voice: argues America has enough electricity in aggregate; the hard part is getting new data centers and power plants studied and connected to the grid, and flexible connection rights could let some loads move faster.",
+      src: ["chrisgillett"],
+    },
+    {
+      name: "Shanu Mathew", affil: "Energy, power and infrastructure investor", lean: "nonpartisan",
+      take: "The capital-markets voice: focuses on energized GW rather than announced demand, with power constraints and political resistance as the variables that decide which data-center projects become real. On FERC, he reads the reform as fixing slow, inconsistent interconnection rules and making full upgrade-cost responsibility part of the bargain.",
+      src: ["shanumathew"],
+    },
+    {
+      name: "Josh Levi", affil: "Data Center Coalition", lean: "nonpartisan",
+      take: "The data-center trade-association voice: pushes back on data centers being singled out for grid impacts and argues the sector needs utilities, grid operators and policymakers to grow infrastructure and recognize data centers as part of the modern economy.",
+      src: ["joshlevi"],
+    },
+    {
+      name: "Cy McGeady", affil: "Equinix · former CSIS", lean: "nonpartisan",
+      take: "The Equinix energy-policy voice: argues electricity supply is a bottleneck for U.S. AI dominance, with data-center investment moving toward regions where generation, permitting and land-use conditions allow rapid buildout.",
+      src: ["cymcgeady"],
+    },
+    {
+      name: "Cy McNeill", affil: "Data Center Coalition", lean: "nonpartisan",
+      take: "The DCC federal-affairs voice: works the transmission, siting, permitting and energy-market advocacy lane for the data-center industry. Distinct from Cy McGeady at Equinix, McNeill represents the association's federal policy posture.",
+      src: ["cymcneill"],
+    },
+    {
+      name: "David Young", affil: "Equinix · Data Center Coalition", lean: "nonpartisan",
+      take: "The data-center federal-policy voice: represents the Equinix/DCC lane in the coalition's Federal Policy Leadership Advisory Council, reinforcing that the industry is organizing around federal power, permitting and grid-access questions.",
+      src: ["davidyoung"],
+    },
+    {
+      name: "Tag Greason", affil: "QTS Data Centers", lean: "nonpartisan",
+      take: "The data-center capacity-delivery voice: from the operator side, emphasizes hyperscale AI demand and the bottlenecks that determine whether capacity can actually be delivered, not just announced.",
+      src: ["taggreason"],
+    },
+    {
+      name: "Rima Alaily", affil: "Microsoft", lean: "nonpartisan",
+      take: "A hyperscaler affordability line from Microsoft: says the company has ‘committed to pay our way’ so its data centers do not increase residents' electricity prices, pointing to very-large-customer tariffs as the mechanism.",
+      src: ["rimaalaily"],
+    },
+    {
+      name: "Briana Kobor", affil: "Google", lean: "nonpartisan",
+      take: "A hyperscaler planning-risk line from Google: presents the Capacity Commitment Framework as a way to shift forecasting risk and capacity-planning uncertainty from utilities to large customers through long-term commitments, minimum charges, collateral and clear modification fees.",
+      src: ["brianakobor"],
     },
     {
       name: "Larry Gasteiger", affil: "WIRES (transmission trade group)", lean: "nonpartisan",
@@ -622,116 +823,121 @@ window.FERC_DATA = (function () {
     {
       key: "swett", name: "Laura V. Swett", role: "Chairman", short: "Why §206, not a rulemaking",
       quote: "FERC is no longer the sleepy, responsive agency of the past",
+      quotePg: 87,
       gist: "Defends the procedure: six tailored show cause orders instead of one rule, because §206 is faster and more ‘legally durable.’ Points to rulemakings like Order Nos. 2023 and 2222 still not fully implemented years on, and notes the six markets cover nearly two-thirds of FERC-jurisdictional load.",
       sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 84–88; largely common across the six orders, with some per-order tailoring", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption)" },
       summary: "Swett frames the six orders as historic, urgent delivery on Secretary Wright's October 2025 charge, finding the status quo across the markets not good enough. He defends the choice of six tailored §206 show cause orders over a single rulemaking on two grounds: they fit each region's circumstances, and they move far faster than a NOPR (he points to Order Nos. 2023 and 2222 still not fully implemented years on). The six markets cover nearly two-thirds of FERC-jurisdictional load; he invites §205 filings and urges non-RTO regions to file too, leaving the door open to a future rule.",
       themes: [
         { name: "Historic, urgent delivery on the Secretary's charge", desc: "Casts the day as answering DOE Secretary Wright's October 2025 ANOPR directive, and ties the orders to a set of consumer- and market-facing goals.", quotes: [
-          { t: "Today, we take historic action to push our country's electric markets and economy into the future—a future of fair cost allocation, unprecedented transparency for the American ratepayer, respect for states' rights, efficient markets and speed to power.", src: "written" },
-          { t: "And now, through this suite of six orders, we deliver.", src: "written" },
+          { t: "Today, we take historic action to push our country's electric markets and economy into the future—a future of fair cost allocation, unprecedented transparency for the American ratepayer, respect for states' rights, efficient markets and speed to power.", src: "written", pg: 84 },
+          { t: "And now, through this suite of six orders, we deliver.", src: "written", pg: 84 },
           { t: "We promised some fireworks last month, and we are going to light the fuse today.", src: "spoken", at: "~3:00" } ] },
         { name: "The status quo is not good enough", desc: "The record shows most markets' existing rules are too slow and rigid to integrate large loads.", quotes: [
-          { t: "The record prompted by the Secretary's ANOPR leaves no doubt that most of the markets (and their existing rules) are inherently slow and prohibitive of the dexterity necessary to adapt to and power societal evolution", src: "written" } ] },
+          { t: "The record prompted by the Secretary's ANOPR leaves no doubt that most of the markets (and their existing rules) are inherently slow and prohibitive of the dexterity necessary to adapt to and power societal evolution", src: "written", pg: 84 } ] },
         { name: "Tailored show-cause orders, not a one-size-fits-all rule", desc: "Six individualized §206 proceedings fit each region's circumstances and let the markets propose fixes first.", quotes: [
-          { t: "an approach that honors the ANOPR principles but accounts for widening regional variation may now be more efficient than a one-size-fits-all rule.", src: "written" },
-          { t: "Individual show cause proceedings will allow the Commission to ensure that solutions to the problems the Secretary identified are tailored to the specific, varied circumstances and market constructs of each region.", src: "written" } ] },
+          { t: "an approach that honors the ANOPR principles but accounts for widening regional variation may now be more efficient than a one-size-fits-all rule.", src: "written", pg: 85 },
+          { t: "Individual show cause proceedings will allow the Commission to ensure that solutions to the problems the Secretary identified are tailored to the specific, varied circumstances and market constructs of each region.", src: "written", pg: 86 } ] },
         { name: "Speed over the years-long rulemaking path", desc: "Show-cause moves faster than notice-and-comment; he cites prior rules still not fully implemented years later.", quotes: [
-          { t: "proceeding via individual show cause orders will allow the Commission to act more quickly than through traditional rulemaking.", src: "written" } ] },
+          { t: "proceeding via individual show cause orders will allow the Commission to act more quickly than through traditional rulemaking.", src: "written", pg: 86 } ] },
         { name: "Two-thirds of load now; an open door for the rest", desc: "Starts with the six RTO/ISO markets but invites §205 filings and encourages non-RTO regions to act, without foreclosing a future rule.", quotes: [
-          { t: "The six markets together cover nearly two-thirds of load subject to Commission-jurisdictional rates, and therefore focusing initially on those regions is a prudent first step.", src: "written" },
-          { t: "I encourage transmission providers and other stakeholders outside RTO/ISO regions to make individual filings to address the issues we discuss today.", src: "written" },
-          { t: "FERC is no longer the sleepy, responsive agency of the past—our country cannot afford for it to be.", src: "written" } ] },
+          { t: "The six markets together cover nearly two-thirds of load subject to Commission-jurisdictional rates, and therefore focusing initially on those regions is a prudent first step.", src: "written", pg: 87 },
+          { t: "I encourage transmission providers and other stakeholders outside RTO/ISO regions to make individual filings to address the issues we discuss today.", src: "written", pg: 87 },
+          { t: "FERC is no longer the sleepy, responsive agency of the past—our country cannot afford for it to be.", src: "written", pg: 87 } ] },
       ],
     },
     {
       key: "rosner", name: "David Rosner", role: "Commissioner", short: "Four pillars",
       quote: "Bring Your Own New Generation",
+      quotePg: 93,
       gist: "Frames the orders as four pillars — protecting consumers, safeguarding reliability, enhancing transparency, fostering innovation. Stresses Cost Recovery Agreements so a data center that never shows up can’t shift costs onto residential customers, grid-enhancing technologies, and ‘Bring Your Own New Generation’ modeled on SPP’s HILLGA.",
       sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 90–98; largely common across the six orders, with some per-order tailoring", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption)" },
       summary: "Rosner organizes the orders around four pillars: protecting consumers, safeguarding reliability, enhancing transparency, and fostering innovation. He leads with Cost Recovery Agreements so residential customers are not left paying for infrastructure built for a data center that never arrives, pushes grid-enhancing technologies and curbs on speculative interconnection requests, and frames flexible transmission service and Bring Your Own New Generation (modeled on SPP's HILLGA) as the innovation that connects load faster and cheaper. He calls the states essential partners and urges §205 filings inside and outside the RTOs.",
       themes: [
         { name: "Protecting consumers: Cost Recovery Agreements", desc: "Mandatory agreements make a large load, not other customers, bear the cost of infrastructure built to serve it if it never materializes.", quotes: [
-          { t: "if new infrastructure is built to accommodate a data center, and that data center doesn't show up, residential customers are not left on the hook to pay the costs.", src: "written" },
+          { t: "if new infrastructure is built to accommodate a data center, and that data center doesn't show up, residential customers are not left on the hook to pay the costs.", src: "written", pg: 91 },
           { t: "if new transmission infrastructure is built to serve a data center and that data center doesn't show up, other customers, especially regular consumers, will not be on the hook for those costs. Period.", src: "spoken", at: "~21:00" } ] },
         { name: "Safeguarding reliability", desc: "Study procedures and operational requirements should reflect large loads' novel characteristics and reliability impacts.", quotes: [
-          { t: "They help ensure that RTO/ISOs use study procedures and operational requirements that reflect large loads' unique characteristics and the reliability impacts of connecting them to the grid.", src: "written" } ] },
+          { t: "They help ensure that RTO/ISOs use study procedures and operational requirements that reflect large loads' unique characteristics and the reliability impacts of connecting them to the grid.", src: "written", pg: 91 } ] },
         { name: "Enhancing transparency, deterring speculation", desc: "Make each upgrade's cost and beneficiary public, and add escalating readiness requirements to weed out speculative requests.", quotes: [
-          { t: "if a Network Upgrade is built to connect a large load to the grid, consumers should know who that upgrade was built for and what it cost.", src: "written" },
-          { t: "we target speculative projects by establishing escalating readiness requirements for distinct phases of the study process to deter duplicative or speculative requests for transmission service.", src: "written" } ] },
+          { t: "if a Network Upgrade is built to connect a large load to the grid, consumers should know who that upgrade was built for and what it cost.", src: "written", pg: 92 },
+          { t: "we target speculative projects by establishing escalating readiness requirements for distinct phases of the study process to deter duplicative or speculative requests for transmission service.", src: "written", pg: 92 } ] },
         { name: "Fostering innovation: flexible service and BYONG", desc: "Non-firm service for loads willing to curtail, plus studying electrically proximate load and generation together — Bring Your Own New Generation, modeled on SPP's HILLGA.", quotes: [
-          { t: "To add new supply to the grid, we must create incentives for “Bring Your Own New Generation.”", src: "written" },
-          { t: "today's orders direct other regions to follow SPP's lead in ways that work for them.", src: "written" },
+          { t: "To add new supply to the grid, we must create incentives for “Bring Your Own New Generation.”", src: "written", pg: 93 },
+          { t: "today's orders direct other regions to follow SPP's lead in ways that work for them.", src: "written", pg: 94 },
           { t: "We need new generation of all kinds which means we need to make bring your own new generation.", src: "spoken", at: "~31:00" } ] },
         { name: "States are essential partners; file under §205", desc: "Respects the federal-State jurisdictional line and urges RTOs and non-RTO utilities alike to bring §205 proposals.", quotes: [
-          { t: "States are essential partners in this work.", src: "written" },
-          { t: "today's orders invite RTO/ISOs to respond by submitting proposals under FPA section 205.  I cannot encourage this enough.", src: "written" } ] },
+          { t: "States are essential partners in this work.", src: "written", pg: 94 },
+          { t: "today's orders invite RTO/ISOs to respond by submitting proposals under FPA section 205.  I cannot encourage this enough.", src: "written", pg: 94 } ] },
       ],
     },
     {
       key: "see", name: "Lindsay S. See", role: "Commissioner", short: "Federalism + affordability",
       quote: "affordability must be at the forefront as we protect consumers",
+      quotePg: 99,
       gist: "Two themes: large-load interconnection is a shared federal-State responsibility, so the orders should support state efforts rather than override them; and affordability must stay central. Pushes alternative transmission technologies to hold down network-upgrade costs and asks states what cost data they actually need.",
       sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 98–103; largely common across the six orders, with some per-order tailoring", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption)" },
       summary: "See highlights two principles she says must stay central: large-load interconnection is a shared federal-State responsibility, so the orders should support State efforts rather than override them; and affordability must stay at the forefront. She presses alternative transmission technologies to hold down network-upgrade costs, asks the States what cost data they actually need, and frames the duty to assign costs to those who cause them as core customer protection.",
       themes: [
         { name: "New circumstances require adapting the grid", desc: "The pace and scale of large loads change operations, planning, and cost allocation faster than existing systems were built for.", quotes: [
-          { t: "The pace and scale of emerging large loads create new circumstances that require us to adapt in how we build and manage the grid.", src: "written" },
+          { t: "The pace and scale of emerging large loads create new circumstances that require us to adapt in how we build and manage the grid.", src: "written", pg: 98 },
           { t: "there is no substitute for getting out of the office to see what it actually takes to get steel in the ground", src: "spoken", at: "~37:00" } ] },
         { name: "A shared federal-State responsibility — support, don't override", desc: "Use FERC's authority on the parts it owns while respecting and aiding the States, whose role is statutorily preserved.", quotes: [
-          { t: "exercising our authority fully without hamstringing our regulatory and industry partners means respecting the States.", src: "written" },
-          { t: "Our action today is designed to support further State efforts in this urgent and fast-moving space, not override them.", src: "written" } ] },
+          { t: "exercising our authority fully without hamstringing our regulatory and industry partners means respecting the States.", src: "written", pg: 99 },
+          { t: "Our action today is designed to support further State efforts in this urgent and fast-moving space, not override them.", src: "written", pg: 99 } ] },
         { name: "Affordability at the forefront", desc: "Protect consumers from unnecessary costs as demand rises, and get States the cost information they need.", quotes: [
-          { t: "affordability must be at the forefront as we protect consumers from unnecessary costs in a time of rising demand.", src: "written" } ] },
+          { t: "affordability must be at the forefront as we protect consumers from unnecessary costs in a time of rising demand.", src: "written", pg: 99 } ] },
         { name: "Alternative transmission technologies to hold costs down", desc: "ATTs can cut large-load network-upgrade costs; providers choosing traditional upgrades must justify why ATTs would not be cheaper or faster.", quotes: [
-          { t: "if the transmission provider opts for traditional network upgrades, they must demonstrate why ATTs are not feasible or would not result in lower costs or a faster timeline for the large load interconnection customer.", src: "written" } ] },
+          { t: "if the transmission provider opts for traditional network upgrades, they must demonstrate why ATTs are not feasible or would not result in lower costs or a faster timeline for the large load interconnection customer.", src: "written", pg: 100 } ] },
         { name: "Assign costs to who causes them", desc: "Reaffirms cost responsibility — jurisdictional costs fall on the customers who drive or benefit from upgrades, not on families and small businesses.", quotes: [
-          { t: "we reaffirm our responsibility to assign jurisdictional costs to the customers who drive or benefit from grid upgrades, not shift them onto families and small businesses.", src: "written" } ] },
+          { t: "we reaffirm our responsibility to assign jurisdictional costs to the customers who drive or benefit from grid upgrades, not shift them onto families and small businesses.", src: "written", pg: 100 } ] },
       ],
     },
     {
       key: "chang", name: "Judy W. Chang", role: "Commissioner", short: "Records & cost causation",
       quote: "The FPA is fundamentally a customer protection statute",
+      quotePg: 104,
       gist: "Focuses on building records that survive review under §206’s ex parte limits, calling the FPA ‘fundamentally a customer protection statute.’ Warns that cost-recovery agreements ‘untethered from any assessment of the actual cost’ of serving a load may not protect other customers, and notes the orders deliberately don’t assert the ANOPR’s broadest jurisdictional theory.",
       sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 103–109; largely common across the six orders, with some per-order tailoring", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption) — remarks deferred to the written statement" },
       summary: "Chang focuses on procedure and customer protection. Because the Commission is acting through individual §206 show-cause proceedings rather than a rulemaking, she stresses the record in each region must be thorough, and §206's ex parte limits make that harder. She calls the FPA fundamentally a customer-protection statute and warns that cost-recovery agreements untethered from the actual cost of service may not protect other customers. She flags that extending the PJM co-location transmission services is a paradigm shift from Order No. 888 that must not create reliability risks, backs requiring evaluation of alternative transmission technologies, and notes the orders deliberately stop short of the ANOPR's broadest jurisdictional theory.",
       themes: [
         { name: "Restraint on jurisdiction; collaborate with the States", desc: "The orders deliberately do not assert the ANOPR's broadest jurisdictional theory, to ease state concerns about federal encroachment.", quotes: [
-          { t: "The Commission does not pursue the broad assertion of jurisdictional authority contemplated in the Advanced Notice of Proposed Rulemaking, which I hope assuages concerns raised by our state colleagues that the Commission ought not encroach upon matters properly left to their jurisdiction.", src: "written" } ] },
+          { t: "The Commission does not pursue the broad assertion of jurisdictional authority contemplated in the Advanced Notice of Proposed Rulemaking, which I hope assuages concerns raised by our state colleagues that the Commission ought not encroach upon matters properly left to their jurisdiction.", src: "written", pg: 103 } ] },
         { name: "Build actionable records under §206's ex parte limits", desc: "Acting case-by-case (not by rulemaking) triggers ex parte restrictions, so a complete regional record matters even more.", quotes: [
-          { t: "the Commission needs active participation from interested stakeholders to develop thorough records in each region.", src: "written" },
-          { t: "the issues addressed by these orders will be subject to ex parte restrictions across the RTOs/ISO regions", src: "written" } ] },
+          { t: "the Commission needs active participation from interested stakeholders to develop thorough records in each region.", src: "written", pg: 104 },
+          { t: "the issues addressed by these orders will be subject to ex parte restrictions across the RTOs/ISO regions", src: "written", pg: 104 } ] },
         { name: "The FPA is a customer-protection statute", desc: "Guards against cost shifts; warns that revenue-contribution agreements untethered from actual cost may not protect other customers.", quotes: [
-          { t: "The FPA is fundamentally a customer protection statute", src: "written" },
-          { t: "bilateral agreements that simply provide transmission revenue contributions untethered from any assessment of the actual cost of providing transmission service induced by individual large loads may be insufficient to adequately protect other customers against unjustified cost shifts.", src: "written" } ] },
+          { t: "The FPA is fundamentally a customer protection statute", src: "written", pg: 104 },
+          { t: "bilateral agreements that simply provide transmission revenue contributions untethered from any assessment of the actual cost of providing transmission service induced by individual large loads may be insufficient to adequately protect other customers against unjustified cost shifts.", src: "written", pg: 105 } ] },
         { name: "New transmission services are a paradigm shift from Order No. 888", desc: "Extending the PJM co-location services runs the system tighter and must be weighed against reliability risk.", quotes: [
-          { t: "These new transmission services represent a fundamental paradigm shift from the traditional network service and point-to-point transmission service models established in Order No. 888 that have been used across the country for the last three decades.", src: "written" },
-          { t: "the Commission and grid operators must also be careful not to implement changes that create unforeseen reliability risks.", src: "written" } ] },
+          { t: "These new transmission services represent a fundamental paradigm shift from the traditional network service and point-to-point transmission service models established in Order No. 888 that have been used across the country for the last three decades.", src: "written", pg: 107 },
+          { t: "the Commission and grid operators must also be careful not to implement changes that create unforeseen reliability risks.", src: "written", pg: 107 } ] },
         { name: "Require evaluation of alternative transmission technologies", desc: "Each tariff is preliminarily unjust and unreasonable for lacking provisions that require considering ATTs to cut cost or time.", quotes: [
-          { t: "each RTO/ISO's tariff is unjust and unreasonable because the tariff lacks clear and consistent provisions requiring the evaluation of alternative transmission technologies as potential solutions to accommodate an Eligible Customer's request for transmission service on behalf of a large load.", src: "written" } ] },
+          { t: "each RTO/ISO's tariff is unjust and unreasonable because the tariff lacks clear and consistent provisions requiring the evaluation of alternative transmission technologies as potential solutions to accommodate an Eligible Customer's request for transmission service on behalf of a large load.", src: "written", pg: 107 } ] },
       ],
     },
     {
       key: "lacerte", name: "David LaCerte", role: "Commissioner", short: "Jurisdictional hardball",
       quote: "I am prepared to play jurisdictional hardball, if needed",
+      quotePg: 113,
       gist: "The sharpest tone. Invites region-specific §205 proposals and offers operators the ‘first pen,’ but says he is ‘prepared to play jurisdictional hardball’ — if they don’t file real fixes, FERC will ‘dictat[e] the solutions for you.’ Ties the orders to state Ratepayer Protection Pledges.",
       sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 111–114; largely common across the six orders, with some per-order tailoring", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption) — remarks deferred to the written statement" },
       summary: "LaCerte strikes the sharpest tone. He frames the moment as an inflection point and offers the RTOs the first wielder of the pen under §205 to bring region-specific fixes, with flexibility on timing, but says that freedom comes with responsibility. If they do not file adequate proposals, he is prepared to play jurisdictional hardball and FERC will dictate the solutions. He backs deploying alternative transmission technologies now and asks state commissions to ensure their retail tariffs insulate ratepayers from data-center cost impacts.",
       themes: [
         { name: "An inflection point that outpaces the system", desc: "Large-load growth is faster than the grid can handle; the orders choose decisive change over gridlock and half-measures.", quotes: [
-          { t: "We are at an inflection point in the history of American energy infrastructure.", src: "written" },
-          { t: "The extraordinary and rapid growth of large loads in RTOs and ISOs is faster than the current system can handle.", src: "written" },
-          { t: "every gambler knows that the secret to surviving is knowing what to throw away and knowing what to keep.", src: "written" } ] },
+          { t: "We are at an inflection point in the history of American energy infrastructure.", src: "written", pg: 111 },
+          { t: "The extraordinary and rapid growth of large loads in RTOs and ISOs is faster than the current system can handle.", src: "written", pg: 111 },
+          { t: "every gambler knows that the secret to surviving is knowing what to throw away and knowing what to keep.", src: "written", pg: 112 } ] },
         { name: "Use alternative transmission technologies now", desc: "Deploy ATTs to unlock existing capacity, speed interconnection, lower costs, and help prevent cost shifting.", quotes: [
-          { t: "I also support the use of alternative transmission technologies to unlock every megawatt of existing capacity from our current transmission system.  We have the technology.  We should use it now", src: "written" } ] },
+          { t: "I also support the use of alternative transmission technologies to unlock every megawatt of existing capacity from our current transmission system.  We have the technology.  We should use it now", src: "written", pg: 111 } ] },
         { name: "First wielder of the pen — but responsibility comes with it", desc: "§205 lets the regions write the first proposal with flexibility on timing; that freedom carries an obligation to file real fixes.", quotes: [
-          { t: "By inviting you to proceed under FPA section 205, we are giving you significant perks:  the benefits of first wielder of the pen", src: "written" },
-          { t: "But such freedom comes with great and concomitant responsibility.", src: "written" } ] },
+          { t: "By inviting you to proceed under FPA section 205, we are giving you significant perks:  the benefits of first wielder of the pen", src: "written", pg: 113 },
+          { t: "But such freedom comes with great and concomitant responsibility.", src: "written", pg: 113 } ] },
         { name: "Prepared to play jurisdictional hardball", desc: "If a region does not file an adequate §205 proposal, FERC will use its broad transmission jurisdiction and impose the remedy itself.", quotes: [
-          { t: "I am prepared to play jurisdictional hardball, if needed.", src: "written" },
-          { t: "any failure on your end to provide a sufficient FPA filing or filings to address the large-load-related concerns that we have identified will result in the Commission dictating the solutions for you.", src: "written" } ] },
+          { t: "I am prepared to play jurisdictional hardball, if needed.", src: "written", pg: 113 },
+          { t: "any failure on your end to provide a sufficient FPA filing or filings to address the large-load-related concerns that we have identified will result in the Commission dictating the solutions for you.", src: "written", pg: 114 } ] },
         { name: "Ratepayer protection through region-specific tariffs", desc: "Asks state commissions to insulate ratepayers from data-center cost impacts, and favors tailored proposals over top-down mandates.", quotes: [
-          { t: "ensure their large load retail tariff provisions insulate ratepayers from the negative impacts of data center growth.", src: "written" },
-          { t: "not through top-down, one-size-fits-all mandates, but through consideration of region-specific proposals.", src: "written" } ] },
+          { t: "ensure their large load retail tariff provisions insulate ratepayers from the negative impacts of data center growth.", src: "written", pg: 111 },
+          { t: "not through top-down, one-size-fits-all mandates, but through consideration of region-specific proposals.", src: "written", pg: 112 } ] },
       ],
     },
   ];
