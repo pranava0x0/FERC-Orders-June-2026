@@ -13,7 +13,8 @@
       "bins": [
         "pr:colo",
         "pr:proximate"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:state-federal-collaboration"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:state-federal-collaboration"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:guidance-over-mandates"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "aq:expedited",
         "topic:guidance-over-mandates"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 6,
@@ -59,7 +64,8 @@
         "pr:cost",
         "pr:study",
         "topic:cost-allocation"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 7,
@@ -71,7 +77,8 @@
         "pr:proximate",
         "aq:jointstudy",
         "aq:expedited"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 8,
@@ -81,7 +88,8 @@
         "pr:flex",
         "aq:expedited",
         "topic:curtailability"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 9,
@@ -91,7 +99,8 @@
         "pr:flex",
         "aq:expedited",
         "topic:curtailability"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 10,
@@ -100,7 +109,8 @@
       "bins": [
         "pr:flex",
         "topic:demand-response"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 11,
@@ -109,7 +119,8 @@
       "bins": [
         "aq:protection",
         "topic:guidance-over-mandates"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 12,
@@ -120,7 +131,8 @@
         "pr:proximate",
         "aq:protection",
         "rg:pjm"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 13,
@@ -129,7 +141,8 @@
       "bins": [
         "topic:guidance-over-mandates",
         "topic:innovation-flexibility"
-      ]
+      ],
+      "page": 12
     }
   ],
   "bins": [

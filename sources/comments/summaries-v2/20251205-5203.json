@@ -10,25 +10,41 @@
       "id": 1,
       "text": "I support Mr. Fisher's request in his comment to enable Consumer Regulated Electricity (CRE). In doing so, this would allow a parallel path to power access for large electricity loads that is timely, orderly, and non-discriminatory.",
       "concern": "Endorses CRE as a parallel, non-discriminatory path for large load power access",
-      "bins": ["topic:cre-alternative-path", "aq:jurisdiction"]
+      "bins": [
+        "topic:cre-alternative-path",
+        "aq:jurisdiction"
+      ],
+      "page": 1
     },
     {
       "id": 2,
       "text": "CRE presents an alternative option for those whose electricity needs cannot be readily met by the Bulk Power System or who feel they can better meet their own power needs.",
       "concern": "CRE serves large loads that the existing grid cannot adequately serve",
-      "bins": ["topic:cre-alternative-path", "aq:jurisdiction"]
+      "bins": [
+        "topic:cre-alternative-path",
+        "aq:jurisdiction"
+      ],
+      "page": 1
     },
     {
       "id": 3,
       "text": "CRE primarily requires state level policy change to allow companies to work with power suppliers independent of the existing power grid.",
       "concern": "CRE implementation depends on state-level regulatory change, not federal action",
-      "bins": ["topic:cre-state-policy", "aq:jurisdiction"]
+      "bins": [
+        "topic:cre-state-policy",
+        "aq:jurisdiction"
+      ],
+      "page": 1
     },
     {
       "id": 4,
       "text": "regulatory clarity from DOE and FERC would make clear that CRE utilities are separate from the Bulk Power System and should be treated as such.",
       "concern": "Requests federal clarity that CRE utilities fall outside Bulk Power System jurisdiction",
-      "bins": ["topic:cre-jurisdictional-clarity", "aq:jurisdiction"]
+      "bins": [
+        "topic:cre-jurisdictional-clarity",
+        "aq:jurisdiction"
+      ],
+      "page": 2
     }
   ],
   "bins": [
@@ -37,32 +53,46 @@
       "name": "CRE Outside FERC Jurisdiction",
       "stance": "support",
       "description": "CEI supports clarifying that Consumer Regulated Electricity utilities are separate from the Bulk Power System and fall outside FERC jurisdiction. The filer endorses the Cato Institute's request that DOE and FERC issue regulatory clarity to this effect, arguing it would create a parallel, non-discriminatory path for large loads.",
-      "quote_ids": [1, 2, 3, 4]
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "key": "topic:cre-alternative-path",
       "name": "CRE as Large Load Alternative",
       "stance": "support",
       "description": "CEI argues that CRE provides a timely and orderly alternative for large electricity loads that cannot be readily served by the existing Bulk Power System. This parallel path would give large load customers an additional option independent of the existing grid.",
-      "quote_ids": [1, 2]
+      "quote_ids": [
+        1,
+        2
+      ]
     },
     {
       "key": "topic:cre-state-policy",
       "name": "State Policy Enables CRE",
       "stance": "neutral",
       "description": "The filer notes that enabling CRE primarily requires state-level policy change, specifically amending the enabling legislation of state utility regulators to define CRE and exempt it from regulation. Federal clarification complements but does not replace state action.",
-      "quote_ids": [3]
+      "quote_ids": [
+        3
+      ]
     },
     {
       "key": "topic:cre-jurisdictional-clarity",
       "name": "FERC Clarity on CRE Status",
       "stance": "support",
       "description": "CEI asks DOE and FERC to issue regulatory clarity confirming that CRE utilities are separate from the Bulk Power System and should be treated accordingly. This federal signal would support the state-level policy changes needed to unlock CRE arrangements.",
-      "quote_ids": [4]
+      "quote_ids": [
+        4
+      ]
     }
   ],
   "lenses": {
-    "aq": ["jurisdiction"],
+    "aq": [
+      "jurisdiction"
+    ],
     "pr": [],
     "rg": []
   },

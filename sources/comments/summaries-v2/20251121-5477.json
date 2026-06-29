@@ -12,7 +12,8 @@
       "concern": "Federal jurisdiction must not override state retail authority",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Federal interconnection rights could circumvent state retail-choice restrictions",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Threshold of 20 MW is too low and unfairly includes smaller industrial loads",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Smaller loads have different risk profiles than data centers",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Joint study of load with new generation supports efficiency",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "Front-of-meter interconnection with transparency enables accurate cost allocation",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "Expedited interconnection for curtailable loads is discriminatory",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "Fast-track should apply to front-of-meter generation pairings, not curtailment",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -76,7 +84,8 @@
       "concern": "Non-transmission owners must have equal build options",
       "bins": [
         "topic:build-equity"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -84,7 +93,8 @@
       "concern": "Ancillary service responsibility should be based on gross load",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -92,7 +102,8 @@
       "concern": "Costs must reflect full ancillary service obligations",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 12,
@@ -100,7 +111,8 @@
       "concern": "Implementation requires alignment with existing procedures",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 13,
@@ -108,7 +120,8 @@
       "concern": "Regional flexibility and transition time are essential",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

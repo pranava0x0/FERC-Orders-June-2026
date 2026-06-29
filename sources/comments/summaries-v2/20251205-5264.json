@@ -4,198 +4,237 @@
   "org_type": "demand_flex",
   "filed": "12/05/2025",
   "source_text": "sources/comments/files/20251205-5264__Enchanted-Rock-LLC/Reply Comments of Enchanted Rock, LLC (RM26-4) (12.5.25).txt",
-  "overall_summary": "Enchanted Rock supports the Secretary of Energy's proposal for timely and orderly large load interconnections and argues that load flexibility with co-located generation and hybrid resources is essential for speed-to-power, grid reliability, and cost-effective interconnection. The filer advocates for clear transmission rules, alignment with NERC standards, and joint study processes that evaluate flexible loads based on net grid impacts.",
+  "overall_summary": "Enchanted Rock, a dispatchable-generation and microgrid provider, files reply comments supporting clear and predictable large-load interconnection rules and urging the Commission to recognize load flexibility as a primary tool for speed-to-power. It promotes its load-co-located-with-dispatchable-generation (LCDG) model, joint study of co-located and hybrid facilities based on net grid impacts, and bridge or interruptible service arrangements that let loads operate before transmission upgrades while protecting ratepayer affordability and reliability.",
   "quotes": [
     {
       "id": 1,
-      "text": "Enchanted Rock generally supports the Secretary of Energy's position regarding the need to ensure \"access to affordable, reliable, and secure electricity\" by facilitating the connection of large loads \"to the transmission system in a timely, orderly, and non-discriminatory manner.\"",
-      "concern": "General support for DOE proposal on large load interconnection",
+      "text": "Winning the AI race and bolstering the U.S. economy relies on the ability of federal and state regulators to create stable and predictable rules that encourage infrastructure investment and business confidence.",
+      "concern": "Calls for stable, predictable interconnection rules",
       "bins": [
-        "pr:study"
-      ]
+        "aq:jurisdiction"
+      ],
+      "page": 2
     },
     {
       "id": 2,
-      "text": "These Reply Comments reiterate the urgent need to facilitate load flexibility as a mechanism to accomplish speed-to-power, which will reinforce grid reliability, support energy affordability, and offer a technology-neutral pathway to secure necessary generation.",
-      "concern": "Load flexibility as key to speed-to-power and reliability",
+      "text": "Vistra's comments align with Enchanted Rock's initial comments seeking further clarification on the dividing line between federal and state regulation of large load interconnection,6 and demonstrate the need for the Commission to promulgate a final rule that is clear, predictable and legally durable.",
+      "concern": "Seeks clarity on the federal-state jurisdictional dividing line",
       "bins": [
-        "pr:flex"
-      ]
+        "aq:jurisdiction"
+      ],
+      "page": 2
     },
     {
       "id": 3,
-      "text": "Winning the AI race and bolstering the U.S. economy relies on the ability of federal and state regulators to create stable and predictable rules that encourage infrastructure investment and business confidence.",
-      "concern": "Need for clear, predictable interconnection rules",
+      "text": "Enchanted Rock previously recommended that the Commission direct the North American",
+      "concern": "Wants NERC standards revised to recognize large-load flexibility",
       "bins": [
-        "pr:study"
-      ]
+        "topic:nerc-reliability-standards"
+      ],
+      "page": 2
     },
     {
       "id": 4,
-      "text": "Vistra's comments align with Enchanted Rock's initial comments seeking further clarification on the dividing line between federal and state regulation of large load interconnection, and demonstrate the need for the Commission to promulgate a final rule that is clear, predictable and legally durable.",
-      "concern": "Clear federal-state regulatory division needed",
+      "text": "supports efforts to harmonize NERC's reliability standards with the reforms being considered in this ANOPR proceeding.",
+      "concern": "Supports harmonizing NERC reliability standards with the reforms",
       "bins": [
-        "pr:study"
-      ]
+        "topic:nerc-reliability-standards"
+      ],
+      "page": 3
     },
     {
       "id": 5,
       "text": "Acknowledging load flexibility during the transmission planning and interconnection processes allows transmission planners to assume lower peak demand for the associated load facility, thereby reducing the immediate need for transmission upgrades and expediting interconnection timelines.",
-      "concern": "Flexibility reduces transmission upgrade costs and accelerates interconnection",
+      "concern": "Load flexibility lowers assumed peak demand and speeds interconnection",
       "bins": [
-        "pr:flex",
-        "pr:cost"
-      ]
+        "pr:flex"
+      ],
+      "page": null
     },
     {
       "id": 6,
-      "text": "Enchanted Rock acknowledges CAISO's comments that large loads connecting to the transmission system pose significant impacts on system reliability, and supports efforts to harmonize NERC's reliability standards with the reforms being considered in this ANOPR proceeding.",
-      "concern": "Support for NERC standards alignment",
+      "text": "Enchanted Rock encourages the Commission to adopt rules that will facilitate joint study processes (even if only for a provisional period) and that evaluate co-located and hybrid facilities based on their net impacts to the grid.",
+      "concern": "Urges joint study evaluating co-located and hybrid facilities on net grid impacts",
       "bins": [
-        "pr:study"
-      ]
+        "pr:study",
+        "aq:jointstudy",
+        "pr:colo"
+      ],
+      "page": 4
     },
     {
       "id": 7,
-      "text": "Transmission system operators and planners urgently require a solution capable of efficiently managing the high volume of large load interconnections and accommodating the aggregate demand introduced by these facilities.",
-      "concern": "Urgent need for solutions to manage high-volume large load interconnections",
+      "text": "a joint study process would allow LCDG and hybrid facilities to be studied based on their operational behavior and net load impacts, which Enchanted Rock believes will result in less strain on the transmission system, unlock available grid headroom, optimize existing transmission infrastructure and more accurately model the flexible capabilities of the system.",
+      "concern": "Joint study of LCDG and hybrid facilities reduces system strain and unlocks headroom",
       "bins": [
+        "pr:study",
+        "aq:jointstudy",
         "pr:flex"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
-      "text": "Google recommends that the Commission, in the near term, prioritize \"facilitating the integration of co-located generation, including electric storage resources, and load and electrically proximate load and generation, which unlock planning and siting efficiencies that minimize transmission impact.\"",
-      "concern": "Co-located generation and storage minimize transmission impact",
+      "text": "This observation highlights the value of co-location and its practical application to facilitate speed-to-power, expedite study timelines, protect ratepayer affordability, and reduce strain on transmission infrastructure.",
+      "concern": "Co-location speeds power, protects affordability, and reduces transmission strain",
       "bins": [
         "pr:colo",
-        "pr:flex"
-      ]
+        "pr:cost"
+      ],
+      "page": 4
     },
     {
       "id": 9,
-      "text": "A joint study process would allow LCDG and hybrid facilities to be studied based on their operational behavior and net load impacts, which Enchanted Rock believes will result in less strain on the transmission system, unlock available grid headroom, optimize existing transmission infrastructure and more accurately model the flexible capabilities of the system.",
-      "concern": "Joint study process for flexible facilities based on net impacts",
-      "bins": [
-        "pr:study",
-        "pr:flex"
-      ]
-    },
-    {
-      "id": 10,
-      "text": "Enchanted Rock encourages the Commission to adopt rules that will facilitate joint study processes (even if only for a provisional period) and that evaluate co-located and hybrid facilities based on their net impacts to the grid.",
-      "concern": "Encourage joint studies and net-impact evaluation for co-located facilities",
-      "bins": [
-        "pr:study",
-        "pr:colo"
-      ]
-    },
-    {
-      "id": 11,
-      "text": "Flexible models, such as LCDG, offer a practical approach to meet accelerating energy \"without driving up costs or abandoning progress on efficiency, resilience and carbon reduction.\"",
-      "concern": "Flexibility enables cost-effective meeting of accelerating energy demand",
-      "bins": [
-        "pr:flex",
-        "pr:cost"
-      ]
-    },
-    {
-      "id": 12,
-      "text": "if the customer chooses, interruptible service can serve as a bridge to full service while transmission upgrades are completed",
-      "concern": "Interruptible service as temporary bridge to full service",
-      "bins": [
-        "pr:flex"
-      ]
-    },
-    {
-      "id": 13,
-      "text": "Co-locating generation with load allows system planners to study the assets as a combined facility, triggering fewer transmission upgrades and mitigating the associated costs that would otherwise be passed onto rate payers.",
-      "concern": "Co-location reduces transmission upgrades and ratepayer costs",
+      "text": "Co-locating generation with load allows system planners to",
+      "concern": "Combined study of co-located assets triggers fewer upgrades and lowers ratepayer costs",
       "bins": [
         "pr:colo",
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
-      "id": 14,
-      "text": "Enchanted Rock urges the Commission to prioritize the development of clear transmission interconnection rules and consider the value of flexibility in accelerating large load interconnections, while protecting ratepayer affordability and grid reliability.",
-      "concern": "Urge clear rules, flexibility, and ratepayer and reliability protection",
+      "id": 10,
+      "text": "interruptible service can serve as a bridge to full service while transmission upgrades are completed.",
+      "concern": "Endorses interruptible service as a bridge while upgrades finish",
       "bins": [
-        "pr:study",
+        "pr:flex"
+      ],
+      "page": 5
+    },
+    {
+      "id": 11,
+      "text": "a temporary flexibility option that large loads can opt into . . . therefore mitigate[ing] some . . . risks and allow[ing] for faster load interconnection.",
+      "concern": "Temporary opt-in flexibility enables faster interconnection",
+      "bins": [
+        "pr:flex"
+      ],
+      "page": 5
+    },
+    {
+      "id": 12,
+      "text": "Efforts such as Southwest Power Pool, Inc. (“SPP”)’s High Impact Large Load Generation Assessment (“HILLGA”) and anticipated Conditional High Impact Large Load Service (“CHILLS”) proposal are examples of proposals that will create expedited pathways for interconnecting large loads.",
+      "concern": "Points to SPP HILLGA and CHILLS as expedited-pathway models",
+      "bins": [
         "pr:flex",
-        "pr:cost"
-      ]
+        "rg:spp",
+        "aq:expedited"
+      ],
+      "page": null
     }
   ],
   "bins": [
     {
-      "key": "pr:study",
-      "name": "Clear interconnection rules and joint studies",
+      "key": "aq:jurisdiction",
+      "name": "Clear federal-state jurisdiction lines",
       "stance": "support",
-      "description": "Enchanted Rock supports clear, predictable federal transmission interconnection rules with joint study processes that evaluate co-located and hybrid facilities based on net grid impacts, ensuring legal durability and alignment with NERC reliability standards.",
+      "description": "Enchanted Rock wants stable, predictable, and legally durable rules and joins Vistra in seeking clarity on the dividing line between federal and state regulation of large-load interconnection. It frames predictable rules as necessary for infrastructure investment and business confidence.",
       "quote_ids": [
         1,
+        2
+      ]
+    },
+    {
+      "key": "topic:nerc-reliability-standards",
+      "name": "Align NERC standards with reforms",
+      "stance": "support",
+      "description": "The filer recommends the Commission direct NERC to revise its standards to recognize load flexibility from on-site or co-located generation, and supports harmonizing NERC reliability standards with the reforms under consideration in this proceeding.",
+      "quote_ids": [
         3,
-        4,
-        6,
-        9,
-        10,
-        14
+        4
       ]
     },
     {
       "key": "pr:flex",
-      "name": "Load flexibility for speed-to-power",
+      "name": "Flexible and bridge load service",
       "stance": "support",
-      "description": "The filer advocates flexible load models as essential to achieving rapid power delivery while managing high volumes of large load interconnections, enabling interruptible service, co-located generation integration, and more accurate system modeling of flexible capabilities.",
+      "description": "Enchanted Rock argues load flexibility lets planners assume lower peak demand, reducing immediate upgrade needs and speeding interconnection. It endorses interruptible and temporary opt-in service as a bridge that lets large loads operate before transmission upgrades complete, and cites SPP's HILLGA and CHILLS as expedited-pathway models.",
       "quote_ids": [
-        2,
         5,
-        7,
-        8,
-        9,
+        10,
         11,
-        12,
-        14
+        12
       ]
     },
     {
-      "key": "pr:cost",
-      "name": "Transmission cost reduction through flexibility and co-location",
+      "key": "pr:study",
+      "name": "Joint study on net grid impacts",
       "stance": "support",
-      "description": "Enchanted Rock argues that acknowledging load flexibility and co-locating generation with load reduces peak demand assumptions, minimizes transmission upgrades, and mitigates costs passed to ratepayers while supporting affordability.",
+      "description": "The filer urges the Commission to adopt rules facilitating joint study processes, even provisionally, that evaluate co-located and hybrid facilities such as its LCDG model based on operational behavior and net load impacts, which it says reduces system strain and unlocks grid headroom.",
       "quote_ids": [
-        5,
-        11,
-        13,
-        14
+        6,
+        7
+      ]
+    },
+    {
+      "key": "aq:jointstudy",
+      "name": "Joint study of load and generation",
+      "stance": "support",
+      "description": "Enchanted Rock supports a joint study process that studies co-located load and generation together based on net impacts, arguing it more accurately models flexible system capabilities and optimizes existing infrastructure.",
+      "quote_ids": [
+        6,
+        7
       ]
     },
     {
       "key": "pr:colo",
-      "name": "Co-located generation and hybrid resource integration",
+      "name": "Co-location reduces transmission strain",
       "stance": "support",
-      "description": "The filer supports co-location of generation with large loads and hybrid facilities to optimize transmission infrastructure, reduce planning burdens, trigger fewer upgrades, and unlock grid headroom through net-impact evaluation.",
+      "description": "The filer promotes co-locating generation with load so planners study the assets as a combined facility, which it says speeds power delivery, expedites study timelines, triggers fewer upgrades, and reduces strain on transmission infrastructure.",
+      "quote_ids": [
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "pr:cost",
+      "name": "Protect ratepayer affordability",
+      "stance": "support",
+      "description": "Enchanted Rock ties co-location to ratepayer protection, arguing that studying co-located assets together triggers fewer transmission upgrades and mitigates costs that would otherwise be passed onto ratepayers.",
       "quote_ids": [
         8,
-        10,
-        13
+        9
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedited interconnection pathways",
+      "stance": "support",
+      "description": "The filer cites SPP's HILLGA assessment and anticipated CHILLS proposal as examples of expedited large-load interconnection pathways the Commission should consider as models for other grid operators.",
+      "quote_ids": [
+        12
+      ]
+    },
+    {
+      "key": "rg:spp",
+      "name": "SPP large-load pathways as model",
+      "stance": "support",
+      "description": "Enchanted Rock points to SPP's High Impact Large Load Generation Assessment and Conditional High Impact Large Load Service proposal as concrete regional examples of expedited large-load interconnection pathways worth adopting elsewhere.",
+      "quote_ids": [
+        12
       ]
     }
   ],
   "lenses": {
-    "aq": [],
-    "pr": [
-      "study",
-      "flex",
-      "cost",
-      "colo"
+    "aq": [
+      "jurisdiction",
+      "jointstudy",
+      "expedited"
     ],
-    "rg": []
+    "pr": [
+      "flex",
+      "study",
+      "colo",
+      "cost"
+    ],
+    "rg": [
+      "spp"
+    ]
   },
   "provenance": {
-    "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }

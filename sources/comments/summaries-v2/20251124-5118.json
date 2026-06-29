@@ -12,7 +12,8 @@
       "concern": "General support for efficient large load interconnection",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "Explicit request to preserve state jurisdiction over retail service and rates",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "Indiana enacted expedited approval legislation and cost protections in 2024",
       "bins": [
         "topic:state-leadership"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
       "concern": "Load interconnections fundamentally different from generator interconnections; no discrimination risk for retail customers",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -62,7 +68,8 @@
       "concern": "Increased data-center volume should not trigger federal jurisdiction shift",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "concern": "FPA Section 212 prohibits conditioning transmission on retail service; retail rates more affected than wholesale",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 9,
@@ -78,7 +86,8 @@
       "concern": "Final rule must explicitly exclude retail service from federal jurisdiction",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 10,
@@ -87,7 +96,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 11,
@@ -96,7 +106,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 12,
@@ -105,7 +116,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 4
     }
   ],
   "bins": [

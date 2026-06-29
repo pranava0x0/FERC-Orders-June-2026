@@ -13,7 +13,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "State retail authority does not substitute for FERC jurisdiction over wholesale transmission rates",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
         "aq:jurisdiction",
         "pr:cost",
         "topic:retail-to-wholesale-passthrough"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
       "bins": [
         "aq:upgradecost",
         "topic:and-pricing-policy"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 9,
@@ -85,7 +93,8 @@
       "bins": [
         "aq:upgradecost",
         "topic:and-pricing-policy"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 10,
@@ -94,7 +103,8 @@
       "bins": [
         "aq:upgradecost",
         "topic:and-pricing-policy"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 11,
@@ -104,7 +114,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:crediting-mechanism"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 12,
@@ -114,7 +125,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:crediting-mechanism"
-      ]
+      ],
+      "page": 11
     }
   ],
   "bins": [

@@ -12,7 +12,8 @@
       "concern": "Large loads trigger ERO mandatory reliability requirements",
       "bins": [
         "aq:protection"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "System stress from large loads and renewables will increase UFLS activation risk",
       "bins": [
         "topic:ufls-magnitude"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "UFLS is the critical last-line defense against system collapse",
       "bins": [
         "aq:protection"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "bins": [
         "pr:study",
         "aq:protection"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -46,7 +50,8 @@
       "bins": [
         "topic:ufls-magnitude",
         "topic:five-year-cycle"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
       "concern": "Five-year review cycle prevents large loads from being incorporated into UFLS adequately",
       "bins": [
         "topic:five-year-cycle"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -62,7 +68,8 @@
       "concern": "UFLS studies must occur before interconnection, not after",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -71,7 +78,8 @@
       "bins": [
         "aq:protection",
         "pr:study"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

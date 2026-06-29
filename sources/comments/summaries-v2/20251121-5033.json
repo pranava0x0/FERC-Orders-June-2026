@@ -10,67 +10,118 @@
       "id": 1,
       "text": "the proposed rule is unnecessarily harmful for Arkansas and risks disrupting well‑functioning regional and state processes.",
       "concern": "Filer opposes the ANOPR as harmful to existing state and regional frameworks",
-      "bins": ["pr:study", "rg:spp", "rg:miso"]
+      "bins": [
+        "pr:study",
+        "rg:spp",
+        "rg:miso"
+      ],
+      "page": 1
     },
     {
       "id": 2,
       "text": "there are already processes for the integration of large loads and therefore the proposed ANOPR is unnecessary.",
       "concern": "Existing regional processes make new federal rules redundant",
-      "bins": ["pr:study", "rg:spp", "rg:miso"]
+      "bins": [
+        "pr:study",
+        "rg:spp",
+        "rg:miso"
+      ],
+      "page": 2
     },
     {
       "id": 3,
       "text": "SPP is proposing innovative tariff offerings such as the High‑Impact Load (\"HILLS\") and Conditional High Impact Large Load (CHILLS\") proposed tariff revisions which will establish a 90-day study and approval process for interconnecting large loads.",
       "concern": "SPP's HILLS and CHILLS tariff proposals already create a fast study process",
-      "bins": ["pr:study", "rg:spp", "topic:tariff-transparency"]
+      "bins": [
+        "pr:study",
+        "rg:spp",
+        "topic:tariff-transparency"
+      ],
+      "page": 2
     },
     {
       "id": 4,
       "text": "Arkansas supported and FERC recently approved MISO's Expedited Resource Addition Study Process to address faster processes through MISO's interconnection queue, which addresses the issues FERC seeks to remedy.",
       "concern": "MISO's expedited study process already addresses the interconnection backlog",
-      "bins": ["pr:study", "rg:miso", "aq:expedited"]
+      "bins": [
+        "pr:study",
+        "rg:miso",
+        "aq:expedited"
+      ],
+      "page": 2
     },
     {
       "id": 5,
       "text": "These reforms are specifically tailored to regional system needs and reflect ongoing coordination among the RTOs, load‑serving entities, transmission owners and state regulators.",
       "concern": "Regional reforms reflect coordinated, system-specific solutions",
-      "bins": ["pr:study", "rg:spp", "rg:miso"]
+      "bins": [
+        "pr:study",
+        "rg:spp",
+        "rg:miso"
+      ],
+      "page": 2
     },
     {
       "id": 6,
       "text": "Federal action should be reserved for regions where processes are failing, not those where reforms are already in place and producing results.",
       "concern": "Federal rules should target failing regions, not well-functioning ones",
-      "bins": ["aq:jurisdiction", "pr:study"]
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ],
+      "page": 2
     },
     {
       "id": 7,
       "text": "Reassigning interconnection authority for large loads to FERC would blur the distinction between retail service and transmission interconnection, complicate state‑regulated special‑rate contracts, create uncertainty regarding which entity bears the obligation to serve, and risk conflict with the state's legislative framework.",
       "concern": "Federal jurisdiction over large-load interconnection conflicts with state retail authority",
-      "bins": ["aq:jurisdiction", "topic:state-jurisdiction"]
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-jurisdiction"
+      ],
+      "page": null
     },
     {
       "id": 8,
       "text": "Creating a system where the load is separated from the obligation to serve would result in the very thing the ANOPR seeks to avoid: making the grid less reliable.",
       "concern": "Separating load from the obligation to serve undermines reliability",
-      "bins": ["aq:jurisdiction", "topic:state-jurisdiction"]
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-jurisdiction"
+      ],
+      "page": 3
     },
     {
       "id": 9,
       "text": "the APSC urges FERC to support the state regulatory authorities by establishing voluntary best practices, establish backstop authority only in instances of demonstrated delay or discrimination, and avoid any implication that the federal government is asserting jurisdiction over retail‑level obligations.",
       "concern": "FERC should limit itself to backstop authority rather than mandatory rules",
-      "bins": ["aq:jurisdiction", "topic:state-jurisdiction"]
+      "bins": [
+        "aq:jurisdiction",
+        "topic:state-jurisdiction"
+      ],
+      "page": 3
     },
     {
       "id": 10,
       "text": "limits any final rule to transmission‑level engineering studies only; recognizes existing regional processes such as SPP's proposed HILLS and CHILLS as compliant alternatives; sets a minimum load threshold of no less than 100 MW; and requires robust coordination with state regulators.",
       "concern": "If FERC acts, the rule should be narrow: transmission studies only, 100 MW threshold, regional process recognition",
-      "bins": ["aq:threshold", "pr:study", "rg:spp", "topic:state-jurisdiction"]
+      "bins": [
+        "aq:threshold",
+        "pr:study",
+        "rg:spp",
+        "topic:state-jurisdiction"
+      ],
+      "page": 3
     },
     {
       "id": 11,
       "text": "A federal rule that overrides or duplicates these efforts is unnecessary and counterproductive.",
       "concern": "A duplicative federal rule would undermine state and regional work already done",
-      "bins": ["aq:jurisdiction", "pr:study"]
+      "bins": [
+        "aq:jurisdiction",
+        "pr:study"
+      ],
+      "page": 3
     }
   ],
   "bins": [
@@ -79,62 +130,109 @@
       "name": "Existing Study Processes Sufficient",
       "stance": "oppose",
       "description": "The APSC argues that SPP and MISO have already adopted or proposed interconnection study reforms (HILLS, CHILLS, and MISO's expedited process) that address the problems the ANOPR targets. A new federal study requirement would duplicate or override work already producing results in these regions.",
-      "quote_ids": [1, 2, 3, 4, 5, 6, 10, 11]
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11
+      ]
     },
     {
       "key": "aq:jurisdiction",
       "name": "State Jurisdiction Must Be Preserved",
       "stance": "oppose",
       "description": "The APSC warns that assigning large-load interconnection authority to FERC blurs the line between retail service and transmission, conflicts with Arkansas's vertically integrated utility model, and creates uncertainty about the obligation to serve. FERC should act only as a backstop where regional processes fail.",
-      "quote_ids": [6, 7, 8, 9, 11]
+      "quote_ids": [
+        6,
+        7,
+        8,
+        9,
+        11
+      ]
     },
     {
       "key": "aq:threshold",
       "name": "100 MW Minimum Threshold",
       "stance": "support",
       "description": "If FERC proceeds, the APSC recommends a minimum load threshold of no less than 100 MW to limit federal rule scope to genuinely large loads.",
-      "quote_ids": [10]
+      "quote_ids": [
+        10
+      ]
     },
     {
       "key": "aq:expedited",
       "name": "MISO Expedited Process Already Approved",
       "stance": "neutral",
       "description": "The APSC notes that FERC already approved MISO's Expedited Resource Addition Study Process, which addresses queue speed. This is cited as evidence that new federal action is redundant for MISO.",
-      "quote_ids": [4]
+      "quote_ids": [
+        4
+      ]
     },
     {
       "key": "rg:spp",
       "name": "SPP Reforms Underway",
       "stance": "oppose",
       "description": "SPP's proposed HILLS and CHILLS tariff revisions would create a 90-day study and approval pathway for large loads. The APSC cites these as evidence that SPP does not need a federal mandate.",
-      "quote_ids": [1, 2, 3, 5, 10]
+      "quote_ids": [
+        1,
+        2,
+        3,
+        5,
+        10
+      ]
     },
     {
       "key": "rg:miso",
       "name": "MISO Processes Working",
       "stance": "oppose",
       "description": "Arkansas supported and FERC approved MISO's expedited study process. Combined with ongoing RTO coordination, MISO's region does not need the ANOPR's proposed reforms.",
-      "quote_ids": [1, 2, 4, 5]
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5
+      ]
     },
     {
       "key": "topic:state-jurisdiction",
       "name": "Retail Obligation to Serve at Risk",
       "stance": "oppose",
       "description": "The APSC argues that separating large-load interconnection from the retail obligation to serve undermines grid reliability and conflicts with Arkansas's vertically integrated utility model and 2025 legislation. FERC should issue voluntary best practices, not mandatory rules.",
-      "quote_ids": [7, 8, 9, 10]
+      "quote_ids": [
+        7,
+        8,
+        9,
+        10
+      ]
     },
     {
       "key": "topic:tariff-transparency",
       "name": "SPP Tariff Proposals Cited",
       "stance": "neutral",
       "description": "The APSC highlights SPP's specific HILLS and CHILLS tariff proposals as examples of transparent, named tariff reform already in progress, arguing they should be recognized as compliant alternatives to any federal rule.",
-      "quote_ids": [3, 10]
+      "quote_ids": [
+        3,
+        10
+      ]
     }
   ],
   "lenses": {
-    "aq": ["jurisdiction", "threshold", "expedited"],
-    "pr": ["study"],
-    "rg": ["spp", "miso"]
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "expedited"
+    ],
+    "pr": [
+      "study"
+    ],
+    "rg": [
+      "spp",
+      "miso"
+    ]
   },
   "provenance": {
     "model": "claude-sonnet-4-6",

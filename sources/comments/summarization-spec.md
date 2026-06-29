@@ -42,7 +42,7 @@ Labels + plain descriptions for `aq`/`pr`/`rg` live in `tools/build-comments-pag
   "overall_summary": "Plain 1–3 sentence read of the filing's position.",
   "quotes": [
     { "id": 1, "text": "verbatim span from the body", "concern": "one-line paraphrase",
-      "bins": ["aq:upgradecost", "pr:cost", "rg:pjm"] }
+      "bins": ["aq:upgradecost", "pr:cost", "rg:pjm"], "page": 8 }
   ],
   "bins": [
     { "key": "pr:cost", "name": "Short bin name", "stance": "support|oppose|mixed|neutral",
@@ -57,6 +57,10 @@ Labels + plain descriptions for `aq`/`pr`/`rg` live in `tools/build-comments-pag
 ## Rules
 
 - **Quotes are verbatim** — copy exactly (a test asserts each `quote.text` appears in the source `.txt`).
+- **`page` is stamped, not hand-authored** — run `node tools/stamp-comment-pages.mjs` after writing/editing
+  summaries. It locates each quote's start in the page-marked body (`--- PAGE N ---`) and writes the page
+  it begins on, or `null` when the body has no markers or the start can't be located with confidence
+  (never guess). A test recomputes and asserts every stored `page` matches.
 - **`lenses` is the union** of its bins' `aq`/`pr`/`rg` keys — the fast filter for the UI.
 - **`stance` is the filer's**, never the curator's; `neutral` when the bin only describes.
 - **`verified: false`** until a human audits it — these are provisional (the "AI-synthesized values are

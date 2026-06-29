@@ -4,494 +4,281 @@
   "org_type": "transmission_owner",
   "filed": "12/05/2025",
   "source_text": "sources/comments/files/20251205-5276__Talen-Energy-Corporation/Talen ANOPR Reply Comments.txt",
-  "overall_summary": "Talen opposes FERC jurisdiction over large load interconnections to preserve federal-state balance under the FPA and rejects the IMM's BYOG proposal, arguing it violates open-access principles and discriminates against existing generation. Instead, Talen urges market-based solutions centered on improving the Reliability Backstop Auction to send clear price signals and attract needed generation capacity.",
+  "overall_summary": "Talen Energy urges FERC to proceed cautiously, preserve the federal/state jurisdictional balance under the FPA, and avoid asserting jurisdiction over large load interconnections that would trigger litigation with states. It opposes the PJM Market Monitor's bring-your-own-generation proposal as discriminatory and contrary to open access, and argues the real fix for reliability is market-based mechanisms, such as a modified PJM Reliability Backstop Auction, that let new and existing generation compete on a level playing field.",
   "quotes": [
     {
       "id": 1,
-      "text": "Talen Energy Corporation (\"Talen\") files these reply comments to encourage the Federal Energy Regulatory Commission (\"Commission\" or \"FERC\") to proceed with caution in any action taken following the proposed Advance Notice of Proposed Rulemaking (\"ANOPR\") in order to preserve the federal/state jurisdictional balance established under the Federal Power Act (\"FPA\") and decades of precedent.",
-      "concern": "FERC should proceed cautiously to preserve federal-state jurisdictional balance",
+      "text": "Talen Energy Corporation (“Talen”) files these reply comments to encourage the Federal Energy Regulatory Commission (“Commission” or “FERC”) to proceed with caution in any action taken following the proposed Advance Notice of Proposed Rulemaking (“ANOPR”) in order to preserve the federal/state jurisdictional balance established under the Federal Power Act (“FPA”) and decades of precedent.",
+      "concern": "Asks FERC to proceed cautiously and preserve the federal/state jurisdictional balance",
       "bins": [
-        "aq:jurisdiction"
-      ]
+        "aq:jurisdiction",
+        "pr:study"
+      ],
+      "page": 1
     },
     {
       "id": 2,
-      "text": "FERC should also ensure that any action it takes does not result in undue discrimination against existing generation resources that are critical for reliability.",
-      "concern": "Oppose policies that discriminate against existing generation",
+      "text": "For end-use customers receiving retail service, the delivery of energy—particularly for large loads—is inseparable from retail distribution, which falls squarely within state jurisdiction.",
+      "concern": "Large load delivery is tied to retail distribution, which is state-jurisdictional",
       "bins": [
-        "pr:proximate"
-      ]
+        "aq:jurisdiction"
+      ],
+      "page": 2
     },
     {
       "id": 3,
-      "text": "the Commission should soundly reject proposals—such as those advanced by the Independent Market Monitor of PJM Interconnection, L.L.C. (\"IMM\")—that would grant PJM Interconnection, L.L.C. (\"PJM\") \"discretion\" to discriminate in favor of \"bring your own generation\" (\"BYOG\") arrangements or selectively restrict load interconnection.",
-      "concern": "Reject IMM proposal for PJM discretion to favor BYOG or restrict load",
+      "text": "the ANOPR fails to define the term “directly” and it remains unclear how a large load or hybrid facility could directly connect to the transmission system without also connecting with facilities that qualify as distribution facilities under the Commission’s seven-factor test.",
+      "concern": "ANOPR leaves 'directly connected' undefined and conflicts with the distribution-facilities test",
       "bins": [
-        "pr:proximate"
-      ]
+        "aq:jurisdiction",
+        "aq:hybridrights"
+      ],
+      "page": 2
     },
     {
       "id": 4,
-      "text": "These ill-advised measures conflict with open-access principles, risk fragmenting competitive markets, and undermine the reliability of the transmission system as a whole.",
-      "concern": "BYOG proposals violate open access and fragment markets",
+      "text": "attempting to resolve the threshold jurisdictional question posed in the ANOPR—namely, whether FERC should assert jurisdiction over large load interconnections—would undoubtedly trigger lengthy litigation between the Commission and the states.",
+      "concern": "Asserting jurisdiction over large load interconnections would trigger lengthy federal/state litigation",
       "bins": [
-        "pr:proximate",
-        "topic:open-access"
-      ]
+        "aq:jurisdiction"
+      ],
+      "page": 3
     },
     {
       "id": 5,
-      "text": "the act of interconnecting a large load with the transmission system encompasses more than transmission service alone. For end-use customers receiving retail service, the delivery of energy—particularly for large loads—is inseparable from retail distribution, which falls squarely within state jurisdiction.",
-      "concern": "Large load interconnection involves retail distribution falling under state jurisdiction",
+      "text": "FERC can issue orders in any of the pending proceedings that already have fully developed records on a much faster timeline.",
+      "concern": "FERC should act through pending proceedings rather than a slow new rulemaking",
       "bins": [
-        "aq:jurisdiction"
-      ]
+        "aq:expedited"
+      ],
+      "page": 3
     },
     {
       "id": 6,
-      "text": "The Commission's jurisdiction is expressly limited to \"the transmission of electric energy in interstate commerce and the sale of electric energy at wholesale in interstate commerce.\"",
-      "concern": "FERC authority is limited to wholesale transmission, not retail",
+      "text": "Proposals that require new large load customers to bring their own new generation are discriminatory.",
+      "concern": "BYOG requirements for large loads are discriminatory",
       "bins": [
-        "aq:jurisdiction"
-      ]
+        "aq:protection",
+        "pr:colo"
+      ],
+      "page": 3
     },
     {
       "id": 7,
-      "text": "Such disputes would undermine the cooperative federalism framework of the FPA, delay regulatory certainty under Sections 205 and 206, and hinder timely development of new generation resources needed to meet reliability challenges.",
-      "concern": "Jurisdictional disputes harm federalism framework and delay regulatory certainty",
+      "text": "enhanced reliability studies that apply disproportionate requirements to large loads contracting with existing generation as opposed to new generation are unlawful and will result in undue discrimination against existing generation.",
+      "concern": "Disproportionate study requirements for loads using existing generation are unlawful discrimination",
       "bins": [
-        "aq:jurisdiction",
-        "aq:expedited"
-      ]
+        "aq:protection",
+        "pr:study"
+      ],
+      "page": 3
     },
     {
       "id": 8,
-      "text": "The Commission should ensure no existing generation resources face undue discrimination in any action taken.",
-      "concern": "Prevent undue discrimination against existing generation",
+      "text": "the Commission should allow existing generation resources to compete on equal footing with new generation resources to serve large load customers.",
+      "concern": "Existing generation should compete equally with new generation to serve large loads",
       "bins": [
-        "pr:proximate"
-      ]
+        "aq:protection"
+      ],
+      "page": 3
     },
     {
       "id": 9,
-      "text": "Proposals that require new large load customers to bring their own new generation are discriminatory.",
-      "concern": "BYOG requirements are discriminatory",
+      "text": "policies favoring new generation at the expense of existing resources risks accelerating retirement of highly reliable, dispatchable, and baseload units.",
+      "concern": "Favoring new generation risks premature retirement of reliable existing baseload units",
       "bins": [
-        "pr:proximate"
-      ]
+        "aq:protection"
+      ],
+      "page": 4
     },
     {
       "id": 10,
-      "text": "enhanced reliability studies that apply disproportionate requirements to large loads contracting with existing generation as opposed to new generation are unlawful and will result in undue discrimination against existing generation.",
-      "concern": "Disproportionate reliability requirements for existing generation are unlawful",
+      "text": "Conditioning customer interconnections on BYOG or instructing PJM to deny service conflicts with bedrock open-access principles FERC established in Order No. 888 and Order No. 2000, which mandate non-discriminatory transmission service under a Commission-approved tariff.",
+      "concern": "BYOG conditions and load-denial conflict with Order 888/2000 open-access principles",
       "bins": [
-        "pr:proximate"
-      ]
+        "aq:protection",
+        "pr:colo",
+        "rg:pjm"
+      ],
+      "page": 5
     },
     {
       "id": 11,
-      "text": "Instead, the Commission should allow existing generation resources to compete on equal footing with new generation resources to serve large load customers.",
-      "concern": "Existing and new generation should compete on equal terms",
+      "text": "Instructing PJM to pick winners and losers among loads would undermine the Commission’s open-access framework and invite litigation over undue discrimination, delaying urgently needed reliability solutions.",
+      "concern": "Letting PJM choose which loads interconnect undermines open access and invites litigation",
       "bins": [
-        "pr:proximate"
-      ]
+        "aq:protection",
+        "rg:pjm"
+      ],
+      "page": 6
     },
     {
       "id": 12,
-      "text": "policies favoring new generation at the expense of existing resources risks accelerating retirement of highly reliable, dispatchable, and baseload units.",
-      "concern": "Policies favoring new generation cause premature retirement of baseload units",
+      "text": "FERC should reject any proposal that allows PJM (or any other RTO/ISO) to deny interconnection or prioritize BYOG arrangements.",
+      "concern": "FERC should reject any RTO authority to deny interconnection or prioritize BYOG",
       "bins": [
-        "pr:proximate",
-        "topic:existing-gen-retention"
-      ]
+        "pr:colo",
+        "rg:pjm"
+      ],
+      "page": 7
     },
     {
       "id": 13,
-      "text": "maintaining resource adequacy is not simply about adding new capacity; it requires a balanced approach that preserves existing assets while integrating new resources to meet fast-growing demand.",
-      "concern": "Resource adequacy requires balance between existing and new generation",
+      "text": "The way to ensure all loads are reliably served is by ensuring there are sufficient generation resources to meet the forecasted exponential growth in demand.",
+      "concern": "Reliable load service depends on sufficient generation to meet demand growth",
       "bins": [
-        "pr:study",
-        "topic:existing-gen-retention"
-      ]
+        "topic:resource-adequacy"
+      ],
+      "page": 7
     },
     {
       "id": 14,
-      "text": "This will not happen if the Commission creates policies that favor only new resources that distort market signals and undermine reliability.",
-      "concern": "Policies favoring only new resources distort market signals",
+      "text": "the Commission must ensure that price signals accurately reflect scarcity and reliability needs.  Only when markets send clear signals can developers make informed investment backed decisions.",
+      "concern": "Accurate market price signals are needed to drive generation investment",
       "bins": [
-        "pr:proximate"
-      ]
+        "topic:market-based-mechanisms"
+      ],
+      "page": 7
     },
     {
       "id": 15,
-      "text": "To ensure all load is served, new and existing resources must be allowed to compete on a level playing field, without structural preferences.",
-      "concern": "No structural preferences between new and existing resources",
+      "text": "Talen suggests modifying the RBA so that the auction is triggered when the RPM auctions clear below 98% of the reserve margin requirement two base residual auctions in a row, rather than the current trigger of the base residual auctions clearing below 99% of the reserve margin three auctions in a row.",
+      "concern": "Proposes modifying PJM's Reliability Backstop Auction trigger to fire sooner",
       "bins": [
-        "pr:proximate",
-        "topic:open-access"
-      ]
+        "topic:market-based-mechanisms",
+        "rg:pjm"
+      ],
+      "page": 8
     },
     {
       "id": 16,
-      "text": "Conditioning customer interconnections on BYOG or instructing PJM to deny service conflicts with bedrock open-access principles FERC established in Order No. 888 and Order No. 2000, which mandate non-discriminatory transmission service under a Commission-approved tariff.",
-      "concern": "BYOG conditioning violates open-access principles and Orders 888 and 2000",
-      "bins": [
-        "pr:proximate",
-        "topic:open-access"
-      ]
-    },
-    {
-      "id": 17,
-      "text": "Such policies would create structural preferences, undermine competitive markets, and introduce regulatory uncertainty, which would in turn deter investment and fragment resource planning.",
-      "concern": "BYOG policies create structural preferences and regulatory uncertainty",
-      "bins": [
-        "pr:proximate"
-      ]
-    },
-    {
-      "id": 18,
-      "text": "Reliability and market efficiency are best achieved through coordinated regional planning and market-based mechanisms that provide clear price signals—not through ad hoc and discriminatory interconnection restrictions.",
-      "concern": "Market-based mechanisms with clear price signals achieve reliability",
-      "bins": [
-        "pr:cost",
-        "pr:flex",
-        "topic:market-signals"
-      ]
-    },
-    {
-      "id": 19,
-      "text": "Instructing PJM to pick winners and losers among loads would undermine the Commission's open-access framework and invite litigation over undue discrimination, delaying urgently needed reliability solutions.",
-      "concern": "PJM picking winners among loads violates open access",
-      "bins": [
-        "pr:proximate",
-        "topic:open-access"
-      ]
-    },
-    {
-      "id": 20,
-      "text": "Selectively restricting interconnection rights or conditioning them on self-supply undermines these principles and introduces structural preferences that will distort market outcomes.",
-      "concern": "Selective restrictions create structural preferences",
-      "bins": [
-        "pr:proximate"
-      ]
-    },
-    {
-      "id": 21,
-      "text": "Such an approach would effectively create a two-tiered load system—one for loads that can finance generation and another for those that cannot—which is contrary to the Commission's long-standing policy of ensuring equal access to transmission service.",
-      "concern": "BYOG creates two-tiered access to transmission service",
-      "bins": [
-        "topic:open-access"
-      ]
-    },
-    {
-      "id": 22,
-      "text": "From a reliability perspective, prioritizing BYOG arrangements does not guarantee system stability and could harm resource adequacy.",
-      "concern": "BYOG prioritization does not ensure reliability",
-      "bins": [
-        "pr:study",
-        "topic:byog-reliability"
-      ]
-    },
-    {
-      "id": 23,
-      "text": "Prioritizing BYOG arrangements will also create two tiers of generation— new and existing.",
-      "concern": "BYOG prioritization creates tiers between new and existing generation",
-      "bins": [
-        "pr:proximate"
-      ]
-    },
-    {
-      "id": 24,
-      "text": "Conditioning interconnection on BYOG would also fragment planning processes, discourage participation in centralized capacity markets, and potentially lead to inefficient siting of generation resources.",
-      "concern": "BYOG fragments planning and discourages centralized markets",
-      "bins": [
-        "pr:proximate",
-        "topic:market-signals"
-      ]
-    },
-    {
-      "id": 25,
-      "text": "The way to ensure all loads are reliably served is by ensuring there are sufficient generation resources to meet the forecasted exponential growth in demand.",
-      "concern": "Focus on sufficient generation resources for growing demand",
-      "bins": [
-        "pr:study"
-      ]
-    },
-    {
-      "id": 26,
-      "text": "The fundamental underlying issue of resource adequacy will not be solved solely through a rulemaking process addressing large load interconnection.",
-      "concern": "Large load rulemaking cannot solve resource adequacy alone",
-      "bins": [
-        "pr:study",
-        "aq:threshold"
-      ]
-    },
-    {
-      "id": 27,
-      "text": "Supporting market-based mechanisms designed to ensure sufficient generation resources are available to serve load demand is more pressing (and within the Commission's jurisdiction) than the issues raised by the ANOPR.",
-      "concern": "Market-based mechanisms for resource adequacy are priority",
-      "bins": [
-        "pr:cost",
-        "pr:flex"
-      ]
-    },
-    {
-      "id": 28,
-      "text": "To facilitate continued resource adequacy, including both building new generation in a timely manner and retaining existing resources, the Commission must ensure that price signals accurately reflect scarcity and reliability needs.",
-      "concern": "Price signals must reflect scarcity and reliability needs",
-      "bins": [
-        "pr:cost",
-        "topic:market-signals"
-      ]
-    },
-    {
-      "id": 29,
-      "text": "Only when markets send clear signals can developers make informed investment backed decisions.",
-      "concern": "Clear market signals enable informed investment decisions",
-      "bins": [
-        "pr:cost",
-        "pr:flex"
-      ]
-    },
-    {
-      "id": 30,
-      "text": "PJM's Open Access Transmission Tariff (\"OATT\") already contains an efficient, market-based solution—the Reliability Backstop Auction (\"RBA\")—that, with modifications, can address issues of resource adequacy by sending accurate price signals to generation developers.",
-      "concern": "RBA mechanism with modifications can address resource adequacy",
-      "bins": [
-        "pr:cost",
-        "topic:rba-mechanism"
-      ]
-    },
-    {
-      "id": 31,
-      "text": "the RBA process is a market-based mechanism designed to guarantee sufficient generation will be available to ensure system reliability when there is a lack of sufficient capacity committed through the Reliability Pricing Model (\"RPM\") auctions.",
-      "concern": "RBA guarantees sufficient generation when RPM is insufficient",
-      "bins": [
-        "pr:cost",
-        "topic:rba-mechanism"
-      ]
-    },
-    {
-      "id": 32,
-      "text": "Talen suggests modifying the RBA so that the auction is triggered when the RPM auctions clear below 98% of the reserve margin requirement two base residual auctions in a row, rather than the current trigger of the base residual auctions clearing below 99% of the reserve margin three auctions in a row.",
-      "concern": "Lower RBA trigger threshold to two auctions at 98% reserve margin",
-      "bins": [
-        "pr:flex",
-        "topic:rba-mechanism"
-      ]
-    },
-    {
-      "id": 33,
-      "text": "The RBA's guarantee of a multi-year term will stimulate generation development, enabling developers to respond quickly to meet the communicated resource adequacy needs.",
-      "concern": "Multi-year RBA terms attract generation development",
-      "bins": [
-        "pr:cost",
-        "topic:rba-mechanism"
-      ]
-    },
-    {
-      "id": 34,
       "text": "the Commission should direct PJM to develop a Reliability Resource Initiative-like interconnection process which will expedite the interconnection of all resources selected under the RBA mechanism.",
-      "concern": "Expedite interconnection of RBA-selected resources",
+      "concern": "PJM should expedite interconnection of resources selected through the backstop auction",
       "bins": [
-        "pr:flex",
         "aq:expedited",
-        "topic:rba-mechanism"
-      ]
-    },
-    {
-      "id": 35,
-      "text": "Expediting interconnection of resources selected under the RBA mechanism will guarantee that projects developed expressly to meet resource adequacy needs are able to bring the additional energy resources onto the network and relieve reliability concerns as quickly as possible.",
-      "concern": "Fast-track RBA projects onto network to address reliability",
-      "bins": [
-        "pr:flex",
-        "topic:rba-mechanism"
-      ]
-    },
-    {
-      "id": 36,
-      "text": "the Commission should order all RTOs/ISOs to develop similar market-based mechanisms.",
-      "concern": "All RTOs/ISOs should adopt similar market-based mechanisms",
-      "bins": [
-        "pr:cost",
-        "pr:flex"
-      ]
+        "rg:pjm"
+      ],
+      "page": 9
     }
   ],
   "bins": [
     {
       "key": "aq:jurisdiction",
-      "name": "Preserve federal-state jurisdictional balance",
+      "name": "Preserve state retail jurisdiction",
       "stance": "oppose",
-      "description": "Large load interconnection involves retail distribution and customer service that fall under exclusive state jurisdiction per FPA Section 201(b). FERC jurisdiction is limited to wholesale transmission. Asserting jurisdiction would trigger litigation, undermine cooperative federalism, and delay development of new generation resources.",
+      "description": "Talen argues that interconnecting a large load is inseparable from retail distribution, which the FPA reserves to the states, so FERC should not assert jurisdiction over large load interconnections. It warns the ANOPR leaves 'directly connected' undefined and that asserting jurisdiction would trigger lengthy federal/state litigation.",
       "quote_ids": [
         1,
-        5,
-        6,
-        7
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "key": "aq:hybridrights",
+      "name": "Hybrid facility connection ambiguity",
+      "stance": "neutral",
+      "description": "Talen notes the ANOPR does not explain how a large load or hybrid facility could directly connect to transmission without also using facilities that qualify as distribution under the Commission's seven-factor test.",
+      "quote_ids": [
+        3
       ]
     },
     {
       "key": "aq:expedited",
-      "name": "Expedited interconnection for resource adequacy",
+      "name": "Act through pending proceedings",
       "stance": "support",
-      "description": "Expedite interconnection processes for resources selected under market-based mechanisms like the RBA to quickly bring capacity online and address resource adequacy needs.",
+      "description": "Talen favors faster action through existing dockets with developed records rather than a slow new rulemaking, and asks FERC to direct PJM to expedite interconnection of resources selected under the backstop auction.",
       "quote_ids": [
+        5,
+        16
+      ]
+    },
+    {
+      "key": "aq:protection",
+      "name": "No discrimination against existing generation",
+      "stance": "support",
+      "description": "Talen wants existing generation protected from undue discrimination, opposing BYOG mandates and disproportionate reliability studies that disadvantage loads contracting with existing units. It argues new and existing resources should compete on equal footing to avoid accelerating premature retirements.",
+      "quote_ids": [
+        6,
         7,
-        34,
-        35
-      ]
-    },
-    {
-      "key": "aq:threshold",
-      "name": "Resource adequacy transcends load interconnection rulemaking",
-      "stance": "neutral",
-      "description": "The fundamental resource adequacy issue cannot be solved through a large load interconnection rulemaking alone. Market-based mechanisms for ensuring sufficient generation are the priority.",
-      "quote_ids": [
-        26,
-        27
-      ]
-    },
-    {
-      "key": "pr:cost",
-      "name": "Market-based mechanisms with clear price signals",
-      "stance": "support",
-      "description": "Support market-based mechanisms like the improved RBA that send clear price signals reflecting scarcity and reliability needs. These signals enable informed investment decisions and stimulate timely generation development. Multi-year RBA commitments attract generation capacity to meet resource adequacy.",
-      "quote_ids": [
-        18,
-        27,
-        28,
-        29,
-        30,
-        31,
-        33,
-        36
-      ]
-    },
-    {
-      "key": "pr:flex",
-      "name": "Modify RBA trigger and expedite interconnection",
-      "stance": "support",
-      "description": "Lower the RBA trigger threshold to two base residual auctions at 98 percent reserve margin (versus current three auctions at 99 percent) to better respond to growing demand. Expedite interconnection of RBA-selected resources using a Reliability Resource Initiative-like process. Extend market-based mechanisms across all RTOs/ISOs.",
-      "quote_ids": [
-        32,
-        34,
-        35,
-        36
+        8,
+        9,
+        10,
+        11
       ]
     },
     {
       "key": "pr:study",
-      "name": "Regional planning and generation resource adequacy",
-      "stance": "support",
-      "description": "Support coordinated regional planning focused on ensuring sufficient generation resources for fast-growing demand. Balance must preserve existing assets while integrating new resources. Prioritize analysis of how market mechanisms attract and retain needed generation capacity.",
+      "name": "Studies must not discriminate",
+      "stance": "mixed",
+      "description": "Talen supports cautious, balanced study requirements but opposes enhanced reliability studies that impose disproportionate burdens on large loads contracting with existing generation, calling such asymmetry unlawful discrimination.",
       "quote_ids": [
-        13,
-        22,
-        25,
-        26
+        1,
+        7
       ]
     },
     {
-      "key": "topic:open-access",
-      "name": "Open-access principles non-negotiable",
+      "key": "pr:colo",
+      "name": "Reject BYOG and load denial",
       "stance": "oppose",
-      "description": "BYOG and selective interconnection restrictions violate bedrock open-access principles established in Orders 888 and 2000 mandating non-discriminatory transmission service. Such policies effectively create two-tiered access to transmission and undermine the Commission's long-standing commitment to equal access.",
+      "description": "Talen opposes the PJM Market Monitor's bring-your-own-generation proposal and any authority for RTOs to deny or condition load interconnection on self-supplied generation, arguing it conflicts with open-access principles and creates a two-tiered load system.",
       "quote_ids": [
-        4,
-        15,
-        16,
-        19,
-        21
+        6,
+        10,
+        12
       ]
     },
     {
-      "key": "topic:existing-gen-retention",
-      "name": "Preserve existing generation resources",
-      "stance": "support",
-      "description": "Policies favoring only new generation risk accelerating premature retirement of highly reliable, dispatchable, and baseload units. Maintaining resource adequacy requires preserving existing generation while integrating new capacity to meet fast-growing demand.",
+      "key": "rg:pjm",
+      "name": "PJM open access and backstop auction",
+      "stance": "mixed",
+      "description": "Talen opposes giving PJM discretion to pick which loads interconnect or to prioritize BYOG, but supports modifying PJM's existing Reliability Backstop Auction and interconnection process as a market-based fix for resource adequacy.",
       "quote_ids": [
+        10,
+        11,
         12,
+        15,
+        16
+      ]
+    },
+    {
+      "key": "topic:resource-adequacy",
+      "name": "Resource adequacy is the core issue",
+      "stance": "neutral",
+      "description": "Talen frames sufficient generation to meet forecasted demand growth as the underlying problem that large load interconnection rules alone will not solve.",
+      "quote_ids": [
         13
       ]
     },
     {
-      "key": "topic:market-signals",
-      "name": "Price signals must reflect true scarcity and reliability",
+      "key": "topic:market-based-mechanisms",
+      "name": "Market-based generation incentives",
       "stance": "support",
-      "description": "Market signals must accurately reflect scarcity and reliability needs to attract generation investment. Fragmented planning and selective interconnection restrictions distort market outcomes and prevent efficient siting of generation resources.",
+      "description": "Talen argues accurate scarcity-reflecting price signals drive generation investment and proposes a sooner-triggering PJM Reliability Backstop Auction to stimulate new and retained generation through market mechanisms.",
       "quote_ids": [
-        18,
-        24,
-        28,
-        29
-      ]
-    },
-    {
-      "key": "topic:byog-reliability",
-      "name": "BYOG does not guarantee reliability",
-      "stance": "oppose",
-      "description": "Prioritizing BYOG arrangements does not guarantee system stability and could harm resource adequacy by creating tiers between new and existing generation, reducing investment signals for needed capacity.",
-      "quote_ids": [
-        22
-      ]
-    },
-    {
-      "key": "topic:rba-mechanism",
-      "name": "Strengthen Reliability Backstop Auction mechanism",
-      "stance": "support",
-      "description": "The RBA already provides an efficient market-based solution to guarantee sufficient generation when RPM auctions are inadequate. Lower the trigger threshold and accelerate interconnection of RBA-selected resources. Extend similar mechanisms across all RTOs/ISOs to ensure timely development of needed capacity.",
-      "quote_ids": [
-        30,
-        31,
-        32,
-        33,
-        34,
-        35
-      ]
-    },
-    {
-      "key": "pr:proximate",
-      "name": "Reject BYOG and prevent discrimination against existing generation",
-      "stance": "oppose",
-      "description": "Reject BYOG requirements or PJM discretion to selectively restrict load interconnection as they discriminate against existing generation and violate open-access principles. Such policies create structural preferences, fragment planning, and distort market signals. Existing and new generation should compete on equal footing to serve large loads and ensure resource adequacy.",
-      "quote_ids": [
-        2,
-        3,
-        4,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
         14,
-        15,
-        17,
-        19,
-        20,
-        23,
-        24
+        15
       ]
     }
   ],
   "lenses": {
     "aq": [
       "jurisdiction",
+      "hybridrights",
       "expedited",
-      "threshold"
+      "protection"
     ],
     "pr": [
-      "cost",
-      "flex",
       "study",
-      "proximate"
+      "colo"
     ],
-    "rg": []
+    "rg": [
+      "pjm"
+    ]
   },
   "provenance": {
-    "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }

@@ -12,7 +12,8 @@
       "concern": "FERC must factor in climate and environmental risks of data center growth",
       "bins": [
         "topic:environmental-review"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Data centers are heavily fossil-fuel dependent and emit large amounts of carbon",
       "bins": [
         "topic:fossil-fuel-dependency"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "Data center expansion driven by corporate interest is worsening climate disruption",
       "bins": [
         "topic:fossil-fuel-dependency"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Support for demand flexibility and renewables to offset grid strain",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Minimal curtailment by data centers could allow large amounts of new load without new generation",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "Renewable co-location as a way to grow data center capacity without fossil generation",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "Lack of data center disclosure harms grid planning and cost allocation",
       "bins": [
         "topic:disclosure-transparency"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "Calls for mandatory reporting of electricity, emissions, and water use by data centers",
       "bins": [
         "topic:disclosure-transparency"
-      ]
+      ],
+      "page": 21
     },
     {
       "id": 9,
@@ -77,7 +85,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 22
     },
     {
       "id": 10,
@@ -86,7 +95,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 25
     },
     {
       "id": 11,
@@ -96,7 +106,8 @@
         "pr:cost",
         "pr:colo",
         "topic:special-contracts"
-      ]
+      ],
+      "page": 24
     },
     {
       "id": 12,
@@ -105,7 +116,8 @@
       "bins": [
         "pr:cost",
         "rg:pjm"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 13,
@@ -113,7 +125,8 @@
       "concern": "Supports 20 MW threshold, open to lower, opposes industry proposals for 100 to 200 MW",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 29
     },
     {
       "id": 14,
@@ -121,7 +134,8 @@
       "concern": "High threshold would leave many data centers and cryptomining facilities unregulated",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 29
     },
     {
       "id": 15,
@@ -129,7 +143,8 @@
       "concern": "Tribal consultation before fast-tracking interconnection is a legal requirement, not optional",
       "bins": [
         "topic:tribal-consultation"
-      ]
+      ],
+      "page": 30
     },
     {
       "id": 16,
@@ -137,7 +152,8 @@
       "concern": "Rulemaking should not be rushed to meet DOE's April 2026 deadline",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 31
     }
   ],
   "bins": [

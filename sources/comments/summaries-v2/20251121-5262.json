@@ -12,7 +12,8 @@
       "concern": "State-federal jurisdictional boundary must be preserved for economic predictability",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "Load interconnection belongs under state jurisdiction, not FERC",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "bins": [
         "aq:jurisdiction",
         "aq:protection"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "aq:protection",
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
         "aq:protection",
         "pr:flex",
         "topic:state-tariff-authority"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "concern": "20 MW individual threshold is too low and sweeps in non-data-center industrial load",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "concern": "Extending rules to all loads above 20 MW would disrupt established industrial interconnection practice",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "bins": [
         "aq:threshold",
         "topic:state-tariff-authority"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 9,
@@ -90,7 +98,8 @@
         "pr:cost",
         "pr:colo",
         "topic:major-questions-doctrine"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 10,
@@ -99,7 +108,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:major-questions-doctrine"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 12,
@@ -119,7 +130,8 @@
         "pr:study",
         "pr:colo",
         "topic:hybrid-study-guidance"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 13,
@@ -128,7 +140,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 8
     }
   ],
   "bins": [

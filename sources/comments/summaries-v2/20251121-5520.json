@@ -10,103 +10,156 @@
       "id": 1,
       "text": "Arevia believes that FERC should consider an even larger threshold of above 99 MW, due to the increasing size of Artificial Intelligence data center loads.",
       "concern": "Advocates for 99 MW threshold to accommodate large AI data center loads",
-      "bins": ["aq:threshold"]
+      "bins": [
+        "aq:threshold"
+      ],
+      "page": 1
     },
     {
       "id": 2,
       "text": "Arevia supports and strongly recommends studying load and generation and hybrid project together.",
       "concern": "Supports integrated study of hybrid load and generation facilities",
-      "bins": ["pr:study"]
+      "bins": [
+        "pr:study"
+      ],
+      "page": 1
     },
     {
       "id": 3,
       "text": "Arevia would support standardized study deposits.",
       "concern": "Backs standardized deposits to deter speculation",
-      "bins": ["aq:deposits"]
+      "bins": [
+        "aq:deposits"
+      ],
+      "page": 1
     },
     {
       "id": 4,
       "text": "Arevia believes that deposits in lieu of site control and commercial readiness will help deter speculative hybrid projects.",
       "concern": "Sees deposits as effective deterrent for speculative projects",
-      "bins": ["aq:deposits"]
+      "bins": [
+        "aq:deposits"
+      ],
+      "page": 1
     },
     {
       "id": 5,
       "text": "if a hybrid project has site control and commercial readiness satisfied with binding off-take/ load agreements, then they should not be subject to those deposits.",
       "concern": "Proposes waiving deposits for projects with binding agreements and site control",
-      "bins": ["aq:deposits"]
+      "bins": [
+        "aq:deposits"
+      ],
+      "page": null
     },
     {
       "id": 6,
       "text": "Arevia would support that all hybrid applications contain a minimum amount of withdrawal rights, to ensure that grid reliability can be supported if hybrid generation goes offline.",
       "concern": "Requires minimum withdrawal rights for hybrid facilities to maintain grid reliability",
-      "bins": ["aq:hybridrights"]
+      "bins": [
+        "aq:hybridrights"
+      ],
+      "page": 2
     },
     {
       "id": 7,
       "text": "If the generating component of the hybrid facility is capable of being curtailable and/or dispatchable, then the combined load and generation facilities should be expedited.",
       "concern": "Seeks expedited study for hybrids with dispatchable generation components",
-      "bins": ["aq:expedited", "pr:flex"]
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ],
+      "page": 2
     },
     {
       "id": 8,
       "text": "Arevia supports studying large load projects within the cluster study framework, particularly when paired with a corresponding generation asset.",
       "concern": "Endorses cluster studies for paired load and generation",
-      "bins": ["pr:study"]
+      "bins": [
+        "pr:study"
+      ],
+      "page": 2
     },
     {
       "id": 9,
       "text": "Arevia recognizes that implementation of cluster studies may vary based on regional planning process and defers to regional capabilities on this matter.",
       "concern": "Defers implementation details to regional processes",
-      "bins": ["pr:study"]
+      "bins": [
+        "pr:study"
+      ],
+      "page": 2
     },
     {
       "id": 10,
       "text": "Arevia hybrid projects would be responsible initially for 100% of the network upgrade costs, but, if in actual system operation after the hybrid project goes commercial, the system can be shown to operate in a more efficient manner, then hybrid facilities should share in the cost savings.",
       "concern": "Accepts full cost responsibility initially but seeks sharing of operational efficiency gains",
-      "bins": ["pr:cost", "topic:cost-benefit-sharing"]
+      "bins": [
+        "pr:cost",
+        "topic:cost-benefit-sharing"
+      ],
+      "page": 2
     },
     {
       "id": 11,
       "text": "Arevia would be open and supportive to this priority.",
       "concern": "Supports same build option available to generator customers",
-      "bins": ["pr:proximate"]
+      "bins": [
+        "pr:proximate"
+      ],
+      "page": 2
     },
     {
       "id": 12,
       "text": "If the Arevia hybrid projects are responsible 100% for NU costs, then that should allow service based on their withdrawal rights.",
       "concern": "Links transmission service responsibility to withdrawal rights when bearing full upgrade costs",
-      "bins": ["pr:cost"]
+      "bins": [
+        "pr:cost"
+      ],
+      "page": 3
     },
     {
       "id": 13,
       "text": "Arevia hybrid (generation) facilities would be capable of providing voltage support as per a normal LGIA (+ / - 0.95 PF); but the load would not be capable of any ancillary services, thereby reverting those to the utility.",
       "concern": "Clarifies hybrid generation can provide voltage support but load cannot provide ancillary services",
-      "bins": ["topic:ancillary-services"]
+      "bins": [
+        "topic:ancillary-services"
+      ],
+      "page": 3
     },
     {
       "id": 14,
       "text": "A high-level generic idea would be implementation similar to FERC Order 2023, with a transition queue for any project that could be considered hybrid, then followed by an annual/twice-a-year study as needed.",
       "concern": "Proposes transition implementation modeled on Order 2023 with dedicated queue and periodic study cycles",
-      "bins": ["topic:implementation-model"]
+      "bins": [
+        "topic:implementation-model"
+      ],
+      "page": 3
     },
     {
       "id": 15,
       "text": "Arevia would support NERC developing separate reliability requirements for hybrid facilities that distinguish between Behind the Meter configurations and Around the Meter (collocated generation facility that is partially behind and partially in front of the meter) configurations.",
       "concern": "Calls for configuration-specific reliability standards",
-      "bins": ["topic:hybrid-reliability"]
+      "bins": [
+        "topic:hybrid-reliability"
+      ],
+      "page": 3
     },
     {
       "id": 16,
       "text": "Clear standards for each configuration type will ensure that collocated generation and load resources do not undermine reliability of the Bulk Electric System while enabling appropriate flexibility for different facility designs.",
       "concern": "Configuration standards support reliability and operational flexibility",
-      "bins": ["topic:hybrid-reliability"]
+      "bins": [
+        "topic:hybrid-reliability"
+      ],
+      "page": 3
     },
     {
       "id": 17,
       "text": "Arevia believes that an In Front of the Meter solution where capacity and generation is sleeved and controlled through the utility within its balancing system is superior in all aspects.",
       "concern": "Advocates for in-front-of-meter control as superior model",
-      "bins": ["topic:hybrid-reliability"]
+      "bins": [
+        "topic:hybrid-reliability"
+      ],
+      "page": 3
     }
   ],
   "bins": [
@@ -115,89 +168,130 @@
       "name": "Higher threshold for large loads",
       "stance": "support",
       "description": "Arevia advocates for a 99 MW threshold rather than 20 MW to account for the scale of modern AI data center loads.",
-      "quote_ids": [1]
+      "quote_ids": [
+        1
+      ]
     },
     {
       "key": "aq:deposits",
       "name": "Standardized study deposits with exemptions",
       "stance": "support",
       "description": "Arevia backs standardized deposits as effective deterrents against speculation but proposes exempting projects with binding contracts and site control.",
-      "quote_ids": [3, 4, 5]
+      "quote_ids": [
+        3,
+        4,
+        5
+      ]
     },
     {
       "key": "aq:hybridrights",
       "name": "Minimum withdrawal rights for hybrids",
       "stance": "support",
       "description": "Arevia requires that hybrid applications maintain minimum withdrawal rights to preserve grid reliability in case generation goes offline.",
-      "quote_ids": [6]
+      "quote_ids": [
+        6
+      ]
     },
     {
       "key": "aq:expedited",
       "name": "Expedited study for dispatchable hybrids",
       "stance": "support",
       "description": "Arevia seeks expedited interconnection studies for hybrid facilities whose generation component can be curtailed or dispatched.",
-      "quote_ids": [7]
+      "quote_ids": [
+        7
+      ]
     },
     {
       "key": "pr:study",
       "name": "Integrated load and generation study",
       "stance": "support",
       "description": "Arevia strongly supports studying hybrid load and generation facilities together, including within cluster study frameworks, while respecting regional implementation variations.",
-      "quote_ids": [2, 8, 9]
+      "quote_ids": [
+        2,
+        8,
+        9
+      ]
     },
     {
       "key": "pr:flex",
       "name": "Curtailment and dispatch capability",
       "stance": "support",
       "description": "Arevia supports expedited treatment for hybrid facilities with generation components capable of curtailment and dispatch.",
-      "quote_ids": [7]
+      "quote_ids": [
+        7
+      ]
     },
     {
       "key": "pr:cost",
       "name": "Cost allocation with efficiency sharing",
       "stance": "support",
       "description": "Arevia accepts full network upgrade cost responsibility upfront but seeks to share cost savings when hybrid operations improve system efficiency, with transmission service tied to withdrawal rights.",
-      "quote_ids": [10, 12]
+      "quote_ids": [
+        10,
+        12
+      ]
     },
     {
       "key": "pr:proximate",
       "name": "Build option parity with generators",
       "stance": "support",
       "description": "Arevia supports giving large load interconnection customers the same build options available to generator customers.",
-      "quote_ids": [11]
+      "quote_ids": [
+        11
+      ]
     },
     {
       "key": "topic:cost-benefit-sharing",
       "name": "Operational efficiency cost sharing",
       "stance": "support",
       "description": "Arevia proposes that if hybrid operation demonstrates system efficiency gains in actual operation, those cost savings should be shared with the hybrid project developer.",
-      "quote_ids": [10]
+      "quote_ids": [
+        10
+      ]
     },
     {
       "key": "topic:ancillary-services",
       "name": "Hybrid ancillary service split",
       "stance": "neutral",
       "description": "Arevia clarifies that hybrid generation can provide voltage support under standard LGIA terms but the load component cannot provide ancillary services.",
-      "quote_ids": [13]
+      "quote_ids": [
+        13
+      ]
     },
     {
       "key": "topic:implementation-model",
       "name": "Transition implementation approach",
       "stance": "support",
       "description": "Arevia proposes implementation following FERC Order 2023 model with a dedicated transition queue for hybrid projects and periodic study cycles.",
-      "quote_ids": [14]
+      "quote_ids": [
+        14
+      ]
     },
     {
       "key": "topic:hybrid-reliability",
       "name": "Configuration-specific reliability standards",
       "stance": "support",
       "description": "Arevia calls for NERC to develop separate reliability standards for different hybrid configurations (behind-the-meter, around-the-meter, in-front-of-meter) that preserve reliability while enabling flexibility, with preference for in-front-of-meter control through utility balancing.",
-      "quote_ids": [15, 16, 17]
+      "quote_ids": [
+        15,
+        16,
+        17
+      ]
     }
   ],
   "lenses": {
-    "aq": ["threshold", "deposits", "hybridrights", "expedited"],
-    "pr": ["study", "flex", "cost", "proximate"],
+    "aq": [
+      "threshold",
+      "deposits",
+      "hybridrights",
+      "expedited"
+    ],
+    "pr": [
+      "study",
+      "flex",
+      "cost",
+      "proximate"
+    ],
     "rg": []
   },
   "provenance": {

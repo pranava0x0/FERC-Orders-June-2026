@@ -12,7 +12,8 @@
       "concern": "Recommends incentivizing load flexibility to expedite interconnection",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "pr:colo",
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "LCDG prevents stranded infrastructure costs to ratepayers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "pr:colo",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "concern": "Dispatchable generation provides grid flexibility and congestion relief",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "bins": [
         "rg:spp",
         "aq:expedited"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "concern": "Seven-factor test inadequate for large load jurisdictional determinations",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 10,
@@ -89,7 +98,8 @@
       "concern": "Clarify seven-factor test or establish brightline criteria for large loads",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "concern": "NERC should revise standards to recognize load flexibility in planning",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "bins": [
         "pr:flex",
         "pr:study"
-      ]
+      ],
+      "page": 5
     }
   ],
   "bins": [

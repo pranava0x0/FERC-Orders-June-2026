@@ -13,7 +13,8 @@
       "bins": [
         "aq:expedited",
         "topic:ai-competitiveness"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:federal-state-collaboration"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:regional-flexibility"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "bins": [
         "rg:pjm",
         "topic:interconnection-delays"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 5,
@@ -50,7 +54,8 @@
         "aq:jointstudy",
         "aq:jurisdiction",
         "pr:colo"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "concern": "Southeast and parts of the West are succeeding without delays; mandatory reform would be counterproductive there",
       "bins": [
         "topic:regional-flexibility"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 8,
@@ -77,7 +84,8 @@
         "aq:jointstudy",
         "pr:study",
         "pr:colo"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 9,
@@ -86,7 +94,8 @@
       "bins": [
         "aq:protection",
         "topic:outage-contingency"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 10,
@@ -95,7 +104,8 @@
       "bins": [
         "aq:protection",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 11,
@@ -104,7 +114,8 @@
       "bins": [
         "pr:flex",
         "topic:controllable-dispatch"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 12,
@@ -113,7 +124,8 @@
       "bins": [
         "aq:threshold",
         "aq:expedited"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 13,
@@ -122,7 +134,8 @@
       "bins": [
         "aq:threshold",
         "aq:protection"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 14,
@@ -131,7 +144,8 @@
       "bins": [
         "topic:regional-flexibility",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 13
     }
   ],
   "bins": [

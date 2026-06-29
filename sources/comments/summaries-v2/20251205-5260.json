@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "pr:colo"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
         "pr:study",
         "pr:colo",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "bins": [
         "pr:cost",
         "aq:threshold"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "pr:study",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -50,7 +54,8 @@
       "bins": [
         "pr:study",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "concern": "FERC interconnection regulation does not encroach on state retail authority",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
       "bins": [
         "aq:jurisdiction",
         "aq:threshold"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 9,
@@ -85,7 +93,8 @@
       "bins": [
         "aq:threshold",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 10,
@@ -94,7 +103,8 @@
       "bins": [
         "pr:cost",
         "aq:deposits"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 11,
@@ -103,7 +113,8 @@
       "bins": [
         "pr:cost",
         "aq:deposits"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 12,
@@ -112,7 +123,8 @@
       "bins": [
         "pr:flex",
         "topic:behind-meter-aggregation"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 13,
@@ -121,7 +133,8 @@
       "bins": [
         "pr:flex",
         "topic:behind-meter-aggregation"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 14,
@@ -131,7 +144,8 @@
         "pr:flex",
         "aq:deposits",
         "topic:open-season-models"
-      ]
+      ],
+      "page": 10
     }
   ],
   "bins": [

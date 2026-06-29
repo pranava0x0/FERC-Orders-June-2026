@@ -4,162 +4,214 @@
   "org_type": "industrial",
   "filed": "11/21/2025",
   "source_text": "sources/comments/files/20251121-5044__CHAMBER-OF-COMMERCE-OF-THE-UNITED-STATES/FINAL USCC Comments to FERC on DOE Large Load Interconnection ANOPR.txt",
-  "overall_summary": "The Chamber supports FERC's rulemaking to streamline large load interconnection but cautions against disrupting ongoing state-level efforts. The Chamber advocates for a higher 75-100 MW threshold to focus resources, transparent cost allocation, prudent study deposits and withdrawal penalties, expedited colocation proceedings, and safeguards to prevent unintended delays to pending interconnection requests.",
+  "overall_summary": "The Chamber generally supports FERC's effort to streamline large load interconnection but warns that reforms must not upend state-level progress or delay pending requests. It asks the Commission to raise the large load threshold to 75 to 100 MW, allocate costs transparently and in proportion to benefits so other customers are not harmed, add study deposits and withdrawal penalties, keep hybrid configurations voluntary, finalize the pending colocation proceeding, and preserve regional flexibility.",
   "quotes": [
     {
       "id": 1,
-      "text": "The Chamber is generally supportive of the Commission's efforts, in part due to the Department of Energy's entreaty, to explore reforms that have the potential to enhance the interconnection process for large loads. It should be recognized, however, that the preexisting process, handled primarily on a state-level basis, is not broken everywhere. Many large loads have been and continue to be connected at the transmission level nationwide. Thus, any reforms proposed or implemented because of this proceeding should be mindful to not upend the progress that is currently being made to interconnect large loads across the country; new delays should not inadvertently be imposed by reforms intended to achieve the opposite result.",
-      "concern": "Support for reform conditional on not disrupting state-level progress",
+      "text": "The Chamber is generally supportive of the Commission's efforts, in part due to the Department of Energy's entreaty, to explore reforms that have the potential to enhance the interconnection process for large loads.",
+      "concern": "General support for FERC exploring large load interconnection reforms",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
-      "text": "Streamlined Interconnection Processes: The Commission should prioritize reforms that reduce delays and administrative burdens in the interconnection process, including through the potential adoption of AI technologies to support the automation and acceleration of required studies, consistent with prudent utility practice.",
-      "concern": "Advocate for streamlined, faster interconnection via study automation",
+      "text": "the preexisting process, handled primarily on a state-level basis, is not broken everywhere. Many large loads have been and continue to be connected at the transmission level nationwide. Thus, any reforms proposed or implemented because of this proceeding should be mindful to not upend the progress that is currently being made to interconnect large loads across the country; new delays should not inadvertently be imposed by reforms intended to achieve the opposite result.",
+      "concern": "Support is conditional on not disrupting working state-level processes",
       "bins": [
-        "pr:study"
-      ]
+        "pr:study",
+        "pr:flex"
+      ],
+      "page": 2
     },
     {
       "id": 3,
-      "text": "Cost Allocation Transparency: It is essential that the costs associated with interconnecting large loads are allocated in a fair and transparent manner. Clear cost allocation methodologies will provide certainty to large load customers and generation and transmission developers and ensure that costs are equitably allocated, as appropriate, across relevant stakeholder constituencies. When consistent with reliable utility operations, the adoption of advanced grid management technologies such as dynamic line ratings and high-performance conductors should be considered when cost-effective.",
-      "concern": "Clear, fair cost allocation methodology and advanced grid technologies",
+      "text": "Streamlined Interconnection Processes: The Commission should prioritize reforms that reduce delays and administrative burdens in the interconnection process, including through the potential adoption of AI technologies to support the automation and acceleration of required studies, consistent with prudent utility practice.",
+      "concern": "Streamline and automate interconnection studies to cut delays",
       "bins": [
-        "pr:cost"
-      ]
+        "pr:study"
+      ],
+      "page": 2
     },
     {
       "id": 4,
-      "text": "Grid Reliability and Resilience: The integration of large loads must not compromise grid reliability or resilience. The Commission should ensure the grid can accommodate these loads without adverse impacts on existing customers or the overall integrity of the grid.",
-      "concern": "Large load interconnection must maintain grid reliability",
+      "text": "Cost Allocation Transparency: It is essential that the costs associated with interconnecting large loads are allocated in a fair and transparent manner. Clear cost allocation methodologies will provide certainty to large load customers and generation and transmission developers and ensure that costs are equitably allocated, as appropriate, across relevant stakeholder constituencies.",
+      "concern": "Cost allocation should be fair, transparent, and methodologically clear",
       "bins": [
-        "pr:flex"
-      ]
+        "pr:cost"
+      ],
+      "page": 3
     },
     {
       "id": 5,
-      "text": "Support for Innovation: The interconnection process should encourage the adoption of innovative technologies and practices, such as expanded use of voluntary demand response programs, energy storage, hybrid facilities, and advanced grid management systems, provided that such options are amenable to all directly impacted entities, to optimize the integration of large loads.",
-      "concern": "Enable flexible solutions including demand response and energy storage",
+      "text": "Grid Reliability and Resilience: The integration of large loads must not compromise grid reliability or resilience. The Commission should ensure the grid can accommodate these loads without adverse impacts on existing customers or the overall integrity of the grid.",
+      "concern": "Large load integration must not harm reliability or existing customers",
       "bins": [
-        "pr:flex"
-      ]
+        "aq:protection"
+      ],
+      "page": 3
     },
     {
       "id": 6,
-      "text": "the Chamber recommends that the floor for 'large load' interconnections be raised to 75 or 100 MW. An increased minimum threshold would better reflect the scale of modern large load projects, ensuring that regulatory frameworks are aligned with current and future industry needs.",
-      "concern": "Raise minimum threshold to 75-100 MW to focus resources",
+      "text": "Support for Innovation: The interconnection process should encourage the adoption of innovative technologies and practices, such as expanded use of voluntary demand response programs, energy storage, hybrid facilities, and advanced grid management systems, provided that such options are amenable to all directly impacted entities, to optimize the integration of large loads.",
+      "concern": "Encourage flexible options such as demand response, storage, and hybrids",
       "bins": [
-        "aq:threshold"
-      ]
+        "pr:flex"
+      ],
+      "page": 3
     },
     {
       "id": 7,
-      "text": "The ANOPR's fourth principle should be strengthened to include study deposits, readiness requirements, and withdrawal penalties that enhance the veracity and transparency of the load growth currently anticipated across the power grid.",
-      "concern": "Add deposits and penalties to discourage frivolous interconnection requests",
+      "text": "the Commission should promptly finalize its pending proceeding regarding the colocation of generation with such large loads. A holistic approach is necessary",
+      "concern": "Finalize the pending colocation proceeding for aligned policy",
       "bins": [
-        "aq:deposits"
-      ]
+        "pr:colo",
+        "aq:expedited"
+      ],
+      "page": 3
     },
     {
       "id": 8,
-      "text": "Such hybrid options should be available on a voluntary basis when the sought 'speed to power' for a large load is not otherwise available, and the simultaneous study of load and generation behind a single point of interconnection has merit.",
-      "concern": "Voluntary hybrid generation-load structures to accelerate service",
+      "text": "the Chamber recommends that the floor for “large load” interconnections be raised to 75 or 100 MW. An increased minimum threshold would better reflect the scale of modern large load projects, ensuring that regulatory frameworks are aligned with current and future industry needs.",
+      "concern": "Raise the large load threshold from 20 MW to 75 to 100 MW",
       "bins": [
-        "aq:hybridrights"
-      ]
+        "aq:threshold"
+      ],
+      "page": 4
     },
     {
       "id": 9,
-      "text": "large loads are committed to paying their full cost of service for the energy and infrastructure supporting the electric service they require. Ultimately, large load interconnections should result in lower, rather than elevated, electricity rates for all other customers. The Commission's efforts to streamline large load interconnections should ensure that costs are allocated commensurate with the benefits received from any needed network upgrades.",
-      "concern": "Cost allocation proportionate to benefits; no cost shift to other customers",
+      "text": "The ANOPR's fourth principle should be strengthened to include study deposits, readiness requirements, and withdrawal penalties that enhance the veracity and transparency of the load growth currently anticipated across the power grid.",
+      "concern": "Add deposits, readiness rules, and penalties to deter speculative requests",
       "bins": [
-        "pr:cost"
-      ]
+        "aq:deposits"
+      ],
+      "page": 4
     },
     {
       "id": 10,
-      "text": "it is important that the Commission be mindful that reforms aimed at shortening the interconnection of large loads could result in lengthened timelines for such requests that are already pending. To counteract any such unintended consequences, the Commission should commit specific attention to ensuring that any new interconnection queues or processes not be developed or implemented in a way that unduly delays or interrupts pending requests. Moreover, flexibility should be provided – consistent with the final paragraph of the ANOPR – to ensure that equivalent or superior solutions to large load interconnection can be continued or newly developed on a utility-specific or larger regional bases, as appropriate.",
-      "concern": "Protect pending requests and allow regional flexibility in implementation",
+      "text": "Such hybrid options should be available on a voluntary basis when the sought “speed to power” for a large load is not otherwise available, and the simultaneous study of load and generation behind a single point of interconnection has merit.",
+      "concern": "Keep hybrid generation-load configurations voluntary and temporary",
       "bins": [
-        "pr:study"
-      ]
+        "aq:hybridrights"
+      ],
+      "page": 4
     },
     {
       "id": 11,
-      "text": "the Commission should promptly finalize its pending proceeding regarding the colocation of generation with such large loads. A holistic approach is necessary",
-      "concern": "Expedite colocation proceedings for comprehensive policy alignment",
+      "text": "large loads are committed to paying their full cost of service for the energy and infrastructure supporting the electric service they require. Ultimately, large load interconnections should result in lower, rather than elevated, electricity rates for all other customers. The Commission's efforts to streamline large load interconnections should ensure that costs are allocated commensurate with the benefits received from any needed network upgrades.",
+      "concern": "Large loads pay full cost of service; allocate costs to benefits, no cost shift",
       "bins": [
-        "aq:expedited"
-      ]
+        "pr:cost",
+        "aq:protection"
+      ],
+      "page": 5
+    },
+    {
+      "id": 12,
+      "text": "the Commission should commit specific attention to ensuring that any new interconnection queues or processes not be developed or implemented in a way that unduly delays or interrupts pending requests.",
+      "concern": "New processes must not delay or interrupt already-pending requests",
+      "bins": [
+        "pr:study"
+      ],
+      "page": 5
+    },
+    {
+      "id": 13,
+      "text": "flexibility should be provided – consistent with the final paragraph of the ANOPR – to ensure that equivalent or superior solutions to large load interconnection can be continued or newly developed on a utility-specific or larger regional bases, as appropriate.",
+      "concern": "Preserve utility-specific and regional flexibility in solutions",
+      "bins": [
+        "pr:flex"
+      ],
+      "page": 5
     }
   ],
   "bins": [
     {
       "key": "pr:study",
-      "name": "Study streamlining and timeline protection",
+      "name": "Streamline studies, protect pending requests",
       "stance": "support",
-      "description": "Chamber supports automation of interconnection studies via AI to reduce delays, but cautions that reforms must not disrupt ongoing state-level progress or delay pending requests. Holistic regional coordination needed.",
+      "description": "The Chamber supports streamlining and automating interconnection studies to reduce delays, including through AI. It conditions that support on not upending working state-level processes and insists new queues must not delay requests already pending.",
       "quote_ids": [
         1,
-        2,
-        10
+        3,
+        12
       ]
     },
     {
       "key": "pr:cost",
-      "name": "Transparent, equitable cost allocation",
+      "name": "Transparent cost allocation to beneficiaries",
       "stance": "support",
-      "description": "Clear, fair cost allocation is essential. Large loads should pay their full cost of service, resulting in lower rates for other customers. Advanced grid technologies (dynamic line ratings, high-performance conductors) should be considered when cost-effective.",
+      "description": "Cost allocation should be fair, transparent, and tied to a clear methodology. Large loads should pay their full cost of service so that interconnections lower rather than raise rates for other customers, with costs assigned in proportion to benefits from upgrades.",
       "quote_ids": [
-        3,
-        9
+        4,
+        11
+      ]
+    },
+    {
+      "key": "pr:colo",
+      "name": "Finalize pending colocation proceeding",
+      "stance": "support",
+      "description": "The Chamber urges the Commission to promptly finalize its pending colocation proceeding so that generation-with-load policy is aligned and mutually reinforcing with this rulemaking.",
+      "quote_ids": [
+        7
       ]
     },
     {
       "key": "pr:flex",
-      "name": "Grid reliability and innovation flexibility",
+      "name": "Regional flexibility and innovative options",
       "stance": "support",
-      "description": "Integration must maintain grid reliability and resilience. Interconnection should encourage innovative solutions such as demand response, energy storage, and hybrid facilities, provided all impacted stakeholders accept them.",
+      "description": "The Chamber wants the process to encourage voluntary options such as demand response, storage, and hybrids when stakeholders accept them, and to preserve utility-specific and regional flexibility so working approaches are not disrupted.",
       "quote_ids": [
-        4,
-        5
+        2,
+        6,
+        13
       ]
     },
     {
       "key": "aq:threshold",
-      "name": "Raise minimum large load threshold",
+      "name": "Raise large load threshold to 75 to 100 MW",
       "stance": "support",
-      "description": "Chamber recommends raising the minimum threshold from 20 MW to 75 to 100 MW to focus resources on truly impactful interconnections and prevent queue overwhelm from smaller loads.",
+      "description": "The Chamber recommends raising the minimum large load threshold from the proposed 20 MW to 75 or 100 MW so grid operators focus on truly impactful interconnections and queues are not overwhelmed by smaller loads.",
       "quote_ids": [
-        6
+        8
       ]
     },
     {
       "key": "aq:deposits",
-      "name": "Study deposits and readiness requirements",
+      "name": "Study deposits and withdrawal penalties",
       "stance": "support",
-      "description": "Strengthen the fourth principle to include study deposits, readiness requirements, and withdrawal penalties to discourage duplicate interconnection requests and ensure transparent, verifiable load growth data.",
+      "description": "The Chamber asks that the fourth principle be strengthened with study deposits, readiness requirements, and withdrawal penalties to deter duplicative and speculative requests and improve the accuracy of anticipated load growth.",
+      "quote_ids": [
+        9
+      ]
+    },
+    {
+      "key": "aq:expedited",
+      "name": "Expedite related colocation proceeding",
+      "stance": "support",
+      "description": "The Chamber wants the Commission to move quickly on its pending colocation proceeding so a holistic, coordinated approach across related rulemakings is in place.",
       "quote_ids": [
         7
       ]
     },
     {
       "key": "aq:hybridrights",
-      "name": "Voluntary hybrid generation-load structures",
+      "name": "Voluntary, temporary hybrid configurations",
       "stance": "support",
-      "description": "Hybrid options should remain voluntary and temporary to accelerate speed to power when direct grid interconnection is delayed. Simultaneous study of load and generation at a single point has merit.",
+      "description": "Hybrid load-and-generation configurations should be available on a voluntary basis to provide speed to power when full grid service is delayed, with simultaneous study of load and generation behind a single point of interconnection.",
       "quote_ids": [
-        8
+        10
       ]
     },
     {
-      "key": "aq:expedited",
-      "name": "Expedite colocation proceedings",
+      "key": "aq:protection",
+      "name": "Protect existing customers from harm",
       "stance": "support",
-      "description": "Commission should promptly finalize pending colocation proceedings to enable holistic, aligned policy across generation and load interconnection rules.",
+      "description": "The Chamber stresses that large loads must not compromise reliability or impose adverse impacts on existing customers, and that cost allocation should ensure interconnections lower rather than raise rates for everyone else.",
       "quote_ids": [
+        5,
         11
       ]
     }
@@ -168,19 +220,21 @@
     "aq": [
       "threshold",
       "deposits",
+      "expedited",
       "hybridrights",
-      "expedited"
+      "protection"
     ],
     "pr": [
       "study",
       "cost",
+      "colo",
       "flex"
     ],
     "rg": []
   },
   "provenance": {
-    "model": "claude-haiku-4-5-20251001",
-    "generated_at": "2026-06-25",
+    "model": "claude-opus-4-8",
+    "generated_at": "2026-06-28",
     "method": "agentic-subagent",
     "verified": false
   }

@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "topic:interconnection-framework"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:federal-state-balance"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
         "aq:threshold",
         "rg:isone",
         "rg:nyiso"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -50,7 +54,8 @@
       "bins": [
         "pr:cost",
         "topic:beneficiary-pays"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -60,7 +65,8 @@
         "aq:threshold",
         "rg:nyiso",
         "rg:isone"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 7,
@@ -70,7 +76,8 @@
         "aq:hybridrights",
         "pr:cost",
         "topic:load-vs-gen-distinction"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 8,
@@ -80,7 +87,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:utility-return-on-investment"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 9,
@@ -90,7 +98,8 @@
         "aq:upgradecost",
         "pr:study",
         "topic:to-build-rights"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 10,
@@ -100,7 +109,8 @@
         "aq:hybridrights",
         "pr:colo",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -109,7 +119,8 @@
       "bins": [
         "pr:flex",
         "topic:curtailable-loads"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "bins": [
         "aq:expedited",
         "topic:transition-period"
-      ]
+      ],
+      "page": 20
     },
     {
       "id": 13,
@@ -128,7 +140,8 @@
         "rg:nyiso",
         "pr:study",
         "topic:regional-flexibility"
-      ]
+      ],
+      "page": 11
     }
   ],
   "bins": [

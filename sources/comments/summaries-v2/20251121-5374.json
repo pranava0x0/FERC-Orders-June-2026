@@ -14,7 +14,8 @@
         "pr:flex",
         "pr:study",
         "aq:expedited"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -25,7 +26,8 @@
         "pr:study",
         "aq:expedited",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
       "bins": [
         "pr:study",
         "topic:process-reform"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -44,7 +47,8 @@
         "pr:study",
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
       "bins": [
         "pr:flex",
         "topic:flexibility-definition"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -63,7 +68,8 @@
         "pr:study",
         "aq:expedited",
         "topic:transparency"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -72,7 +78,8 @@
       "bins": [
         "pr:flex",
         "topic:flexibility-definition"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -82,7 +89,8 @@
         "aq:protection",
         "pr:flex",
         "topic:operator-interface"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -91,7 +99,8 @@
       "bins": [
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -101,7 +110,8 @@
         "pr:cost",
         "pr:flex",
         "aq:deposits"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 11,
@@ -110,7 +120,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:tariff-transparency"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 12,
@@ -119,7 +130,8 @@
       "bins": [
         "pr:study",
         "topic:process-reform"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 13,
@@ -128,7 +140,8 @@
       "bins": [
         "pr:flex",
         "topic:operator-interface"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

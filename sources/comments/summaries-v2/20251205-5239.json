@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "Commission rules should be flexible, not prescriptive, to accommodate regional differences",
       "bins": [
         "topic:regional-flexibility"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "AEP's state-level data center tariffs have demonstrated success at accelerating large load interconnection",
       "bins": [
         "topic:state-tariff-success"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
       "bins": [
         "pr:flex",
         "aq:expedited"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "bins": [
         "pr:study",
         "pr:flex"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
       "bins": [
         "pr:study",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 12,
@@ -110,7 +121,8 @@
       "bins": [
         "pr:study",
         "rg:spp"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 13,
@@ -119,7 +131,8 @@
       "bins": [
         "topic:advanced-conductors",
         "aq:expedited"
-      ]
+      ],
+      "page": 20
     },
     {
       "id": 14,
@@ -130,7 +143,8 @@
         "rg:pjm",
         "rg:miso",
         "rg:spp"
-      ]
+      ],
+      "page": 21
     }
   ],
   "bins": [

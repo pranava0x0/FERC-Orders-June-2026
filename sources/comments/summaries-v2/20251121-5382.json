@@ -10,85 +10,147 @@
       "id": 1,
       "text": "In PJM capacity prices effective June 1, 2025 skyrocketed by approximately 833% increasing from $28.92 per MW-day to $269.92 per MW-day, and further increased to $329.17 per MW-day for 2026-2027.",
       "concern": "PJM capacity prices have surged dramatically, harming Illinois ratepayers.",
-      "bins": ["pr:cost", "rg:pjm"]
+      "bins": [
+        "pr:cost",
+        "rg:pjm"
+      ],
+      "page": 2
     },
     {
       "id": 2,
       "text": "In the MISO area the summer capacity price increased by an astonishing $635 per MW-day, or approximately 2,122%, from $30 MW-day to $666.50 MW-day.",
       "concern": "MISO capacity prices have risen even more sharply than PJM.",
-      "bins": ["pr:cost", "rg:miso"]
+      "bins": [
+        "pr:cost",
+        "rg:miso"
+      ],
+      "page": 2
     },
     {
       "id": 3,
       "text": "large load interconnection requests accounted for only 80 MW in 2019, but jumped to 652 MW in 2022, to 3,931 MW in 2024, and to an astonishing 8,272 MW in 2025.",
       "concern": "Large load interconnection requests have grown exponentially in the ComEd service area.",
-      "bins": ["aq:threshold", "pr:study", "rg:pjm"]
+      "bins": [
+        "aq:threshold",
+        "pr:study",
+        "rg:pjm"
+      ],
+      "page": 3
     },
     {
       "id": 4,
       "text": "large load projects create significant risks, including the risks of: (1) insufficient supply to meet existing demand and the additional demand of large load projects, (2) skyrocketing prices both in response to insufficient supply and to provide \"incentives\" in the hope that increased generator revenues will cause them to build sufficient generation to meet the large load demand, and (3) electricity shortages leading to blackouts or \"load shed.\"",
       "concern": "Large load growth creates supply, price, and reliability risks for existing customers.",
-      "bins": ["pr:cost", "pr:flex", "rg:pjm", "rg:miso"]
+      "bins": [
+        "pr:cost",
+        "pr:flex",
+        "rg:pjm",
+        "rg:miso"
+      ],
+      "page": 4
     },
     {
       "id": 5,
       "text": "Adopting clear rules on the interconnection of large loads to the transmission system is necessary to address the effect that these outsized loads have on the wholesale electricity markets and on the transmission system and to prevent practices that will lead to unjust and unreasonable cost shifts and prices.",
       "concern": "Clear interconnection rules are needed to prevent unjust cost shifts and price distortions.",
-      "bins": ["aq:jurisdiction", "pr:cost", "pr:study"]
+      "bins": [
+        "aq:jurisdiction",
+        "pr:cost",
+        "pr:study"
+      ],
+      "page": 6
     },
     {
       "id": 6,
       "text": "Whether a 20 MW or a 50 MW threshold is appropriate, the key factors are whether the large load customer has 24/7 operations, requires service at high voltage, presents high levels of concentrated demand, or has other characteristics that indicate that it should be included in the customer class that has direct effects on federal markets and the bulk power system.",
       "concern": "Threshold should be set based on operational characteristics, not just MW size.",
-      "bins": ["aq:threshold", "aq:jurisdiction"]
+      "bins": [
+        "aq:threshold",
+        "aq:jurisdiction"
+      ],
+      "page": 7
     },
     {
       "id": 7,
       "text": "The ANOPR should expressly include discussion of requiring large load to be matched with equivalent new generation in order to connect to the federal transmission system.",
       "concern": "Filer urges FERC to require new large loads to pair with new generation before connecting.",
-      "bins": ["aq:jointstudy", "pr:study", "pr:proximate"]
+      "bins": [
+        "aq:jointstudy",
+        "pr:study",
+        "pr:proximate"
+      ],
+      "page": 8
     },
     {
       "id": 8,
       "text": "New load and generation may be sited at the same point of interconnection (i.e. hybrid facilities), but to minimize costs on the transmission system they should be sited within the smallest applicable market area even if they are not at the same point of interconnection.",
       "concern": "Paired generation should be within the same market area as the load to minimize transmission costs.",
-      "bins": ["aq:jointstudy", "pr:cost", "pr:proximate"]
+      "bins": [
+        "aq:jointstudy",
+        "pr:cost",
+        "pr:proximate"
+      ],
+      "page": 8
     },
     {
       "id": 9,
       "text": "new large load contracts with generators who currently serve the aggregate load of electricity customers throughout the country, from residential customers to major industrial load, will siphon power from the grid and leave customers who rely on the bulk power system vulnerable to scarcity pricing and possible shortages and blackouts.",
       "concern": "Large loads contracting existing generation siphon power from the grid and threaten other customers.",
-      "bins": ["pr:cost", "pr:flex", "aq:protection"]
+      "bins": [
+        "pr:cost",
+        "pr:flex",
+        "aq:protection"
+      ],
+      "page": 9
     },
     {
       "id": 10,
       "text": "Study deposits, readiness requirements, and withdrawal penalties must be designed to ensure that large loads and associated generation have the resources to proceed, are not speculative, and do not waste utility and other resources on projects that are not ready to implement.",
       "concern": "Deposits and penalties should screen out speculative projects and ensure readiness.",
-      "bins": ["aq:deposits"]
+      "bins": [
+        "aq:deposits"
+      ],
+      "page": 9
     },
     {
       "id": 11,
       "text": "Curtailment of load should not be considered a factor or option when connecting large loads before the mechanisms to implement curtailment including system protections, the costs as well as penalties resulting from curtailment, and the risks to other customers are fully considered and incorporated into any curtailment provision.",
       "concern": "Curtailment should not be used as a basis for interconnection until technical and enforcement issues are resolved.",
-      "bins": ["aq:expedited", "pr:flex"]
+      "bins": [
+        "aq:expedited",
+        "pr:flex"
+      ],
+      "page": 11
     },
     {
       "id": 12,
       "text": "The costs of large load, hybrid facilities, and associated generation should be paid exclusively by the large load seeking to connect to the system.",
       "concern": "All interconnection costs should fall exclusively on the large load, not other ratepayers.",
-      "bins": ["aq:upgradecost", "pr:cost"]
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ],
+      "page": 11
     },
     {
       "id": 13,
       "text": "Requiring a large load customer to pay all installation and upgrade costs ensures that the cost-causer pays for the system upgrade. This prevents socialization of system costs that do not benefit the breadth of ratepayers and prevents stranding the costs of the upgrade if the customer's business fails.",
       "concern": "Full cost assignment prevents cost socialization and protects against stranded cost risk.",
-      "bins": ["aq:upgradecost", "pr:cost"]
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ],
+      "page": 12
     },
     {
       "id": 14,
       "text": "when customers pay the full cost that they impose on the system through a CIAC payment, it is not necessary to use a crediting mechanism to cover those costs.",
       "concern": "Full CIAC payment by the large load makes a crediting mechanism unnecessary.",
-      "bins": ["aq:upgradecost", "pr:cost"]
+      "bins": [
+        "aq:upgradecost",
+        "pr:cost"
+      ],
+      "page": 12
     }
   ],
   "bins": [
@@ -97,104 +159,170 @@
       "name": "Federal vs. state authority scope",
       "stance": "neutral",
       "description": "The filing describes the FPA jurisdictional boundary and the seven-factor test, noting that transmission-level large loads fall under federal jurisdiction while distribution-connected loads are subject to state oversight. It argues that large loads' effects on wholesale markets justify federal rulemaking under EPSA.",
-      "quote_ids": [5, 6]
+      "quote_ids": [
+        5,
+        6
+      ]
     },
     {
       "key": "aq:threshold",
       "name": "Threshold size for large load rules",
       "stance": "support",
       "description": "The IL OAG does not object to a 20 MW threshold and supports matching it to generator interconnection rules. It notes PJM and ComEd are considering 50 MW, but argues the real test is operational characteristics such as 24/7 operation, high voltage service, and concentrated demand.",
-      "quote_ids": [3, 6]
+      "quote_ids": [
+        3,
+        6
+      ]
     },
     {
       "key": "aq:jointstudy",
       "name": "Joint study of load and generation",
       "stance": "support",
       "description": "The filing goes further than the ANOPR by urging FERC to require large loads to pair with new generation as a condition of interconnection, not merely to study them together where practicable. Paired generation should be sited within the same market area to minimize transmission system costs.",
-      "quote_ids": [7, 8]
+      "quote_ids": [
+        7,
+        8
+      ]
     },
     {
       "key": "aq:deposits",
       "name": "Study deposits and readiness requirements",
       "stance": "support",
       "description": "The IL OAG supports tailored deposits, readiness requirements, and withdrawal penalties calibrated to prevent speculative filings. It cites the ComEd pipeline of 28,000 MW, exceeding ComEd's all-time peak, as evidence that the current queue is inflated with projects unlikely to be built.",
-      "quote_ids": [10]
+      "quote_ids": [
+        10
+      ]
     },
     {
       "key": "aq:hybridrights",
       "name": "Injection and withdrawal rights for hybrid loads",
       "stance": "support",
       "description": "The filing supports specifying injection and withdrawal rights and requiring system protection facilities for hybrid interconnections, given the scale of the loads and the risk of sudden, unpredictable changes in demand or supply.",
-      "quote_ids": [9]
+      "quote_ids": [
+        9
+      ]
     },
     {
       "key": "aq:protection",
       "name": "Grid and customer protection requirements",
       "stance": "support",
       "description": "The filing warns that large loads contracting existing generation will siphon power from the grid, leaving residential and commercial customers vulnerable to scarcity pricing and blackouts. It calls for a framework that protects current customers from the distortions caused by loads the size of small cities.",
-      "quote_ids": [9]
+      "quote_ids": [
+        9
+      ]
     },
     {
       "key": "aq:expedited",
       "name": "Expedited process for curtailable loads",
       "stance": "oppose",
       "description": "The IL OAG opposes treating curtailment as a basis for expediting interconnection until technical feasibility, enforcement mechanisms, system protection costs, and risks to other customers are all fully resolved. It cites a NERC September 2025 alert on disturbances caused by large load ramp events.",
-      "quote_ids": [11]
+      "quote_ids": [
+        11
+      ]
     },
     {
       "key": "aq:upgradecost",
       "name": "Upgrade cost assignment to large loads",
       "stance": "support",
       "description": "The filing argues all upgrade costs should be borne exclusively by the large load through a Contribution in Aid of Construction payment, which keeps the cost-causer responsible, avoids socialization, and eliminates the collection risk that a crediting mechanism creates over the life of an upgrade.",
-      "quote_ids": [12, 13, 14]
+      "quote_ids": [
+        12,
+        13,
+        14
+      ]
     },
     {
       "key": "pr:study",
       "name": "Study process needs new rules",
       "stance": "support",
       "description": "The IL OAG calls for clear interconnection rules to address the scale of large load requests and their market effects. It supports requiring load-generation pairing as part of the study framework and making deposits and readiness requirements strong enough to filter speculative projects.",
-      "quote_ids": [3, 5, 7]
+      "quote_ids": [
+        3,
+        5,
+        7
+      ]
     },
     {
       "key": "pr:cost",
       "name": "Cost-causer-pays principle",
       "stance": "support",
       "description": "The filing documents dramatic wholesale price increases in PJM and MISO attributable to large load growth, and argues that all system upgrade costs must fall on the large load through CIAC, not be socialized across ratepayers or recovered through a crediting mechanism.",
-      "quote_ids": [1, 2, 4, 5, 8, 9, 12, 13, 14]
+      "quote_ids": [
+        1,
+        2,
+        4,
+        5,
+        8,
+        9,
+        12,
+        13,
+        14
+      ]
     },
     {
       "key": "pr:flex",
       "name": "Curtailment skepticism",
       "stance": "oppose",
       "description": "The filing is skeptical of curtailment as a reliability or interconnection tool. It cites technical barriers including ramp-down speed, voltage stability risks, and the difficulty of enforcing targeted curtailment through distribution utilities outside federal jurisdiction.",
-      "quote_ids": [4, 9, 11]
+      "quote_ids": [
+        4,
+        9,
+        11
+      ]
     },
     {
       "key": "pr:proximate",
       "name": "Locate new generation near large load",
       "stance": "support",
       "description": "The IL OAG urges that paired generation be sited within the same market area as the large load, even if not at the same point of interconnection, to keep transmission system costs low and avoid drawing on distant resources already serving the existing customer base.",
-      "quote_ids": [7, 8]
+      "quote_ids": [
+        7,
+        8
+      ]
     },
     {
       "key": "rg:pjm",
       "name": "PJM price and queue impact",
       "stance": "neutral",
       "description": "The filing documents PJM capacity price increases of 833% and 1,038% over consecutive auction years, and notes the ComEd large-load interconnection queue has grown from 80 MW in 2019 to 8,272 MW in 2025, exceeding ComEd's all-time system peak.",
-      "quote_ids": [1, 3, 4]
+      "quote_ids": [
+        1,
+        3,
+        4
+      ]
     },
     {
       "key": "rg:miso",
       "name": "MISO price impact",
       "stance": "neutral",
       "description": "The filing documents a MISO summer capacity price increase of 2,122% in a single auction year, reflecting the same large-load-driven supply squeeze affecting Illinois ratepayers in the Ameren Illinois service area.",
-      "quote_ids": [2, 4]
+      "quote_ids": [
+        2,
+        4
+      ]
     }
   ],
   "lenses": {
-    "aq": ["jurisdiction", "threshold", "jointstudy", "deposits", "hybridrights", "protection", "expedited", "upgradecost"],
-    "pr": ["study", "cost", "flex", "proximate"],
-    "rg": ["pjm", "miso"]
+    "aq": [
+      "jurisdiction",
+      "threshold",
+      "jointstudy",
+      "deposits",
+      "hybridrights",
+      "protection",
+      "expedited",
+      "upgradecost"
+    ],
+    "pr": [
+      "study",
+      "cost",
+      "flex",
+      "proximate"
+    ],
+    "rg": [
+      "pjm",
+      "miso"
+    ]
   },
   "provenance": {
     "model": "claude-sonnet-4-6",

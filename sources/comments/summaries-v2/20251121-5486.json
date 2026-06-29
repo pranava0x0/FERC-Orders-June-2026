@@ -12,7 +12,8 @@
       "concern": "CEA supports expedited siting reforms",
       "bins": [
         "pr:flex"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "FERC should not impose uniform rules across diverse state structures",
       "bins": [
         "topic:jurisdictional-flexibility"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "FERC should not override state processes that are already working",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "Large loads must bear full cost of assigned upgrades",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "Cost causation prevents cross-subsidy and protects reliability",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "Retain existing seven-factor jurisdictional test",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "bins": [
         "topic:federalism",
         "aq:jurisdiction"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 8,
@@ -69,7 +76,8 @@
       "concern": "Uniform national rules risk delaying rather than accelerating projects",
       "bins": [
         "topic:jurisdictional-flexibility"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "topic:expedited-rulemaking"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:study",
         "topic:process-transparency"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "Filer asserts FERC clearly has jurisdiction over large-load transmission interconnection",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "Filer dismisses state-jurisdiction challenges as legally unfounded",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:wholesale-rate-impact"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 6,
@@ -57,7 +62,8 @@
         "aq:deposits",
         "aq:threshold",
         "topic:queue-viability"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 7,
@@ -66,7 +72,8 @@
       "bins": [
         "aq:threshold",
         "topic:queue-viability"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 8,
@@ -76,7 +83,8 @@
         "aq:deposits",
         "pr:study",
         "topic:queue-viability"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 9,
@@ -84,7 +92,8 @@
       "concern": "Filer recommends a 100 MW minimum threshold to focus the process on true large loads",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 10,
@@ -93,7 +102,8 @@
       "bins": [
         "aq:threshold",
         "topic:queue-viability"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 11,
@@ -102,7 +112,8 @@
       "bins": [
         "pr:cost",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 12,
@@ -111,7 +122,8 @@
       "bins": [
         "pr:cost",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 13,
@@ -120,7 +132,8 @@
       "bins": [
         "pr:cost",
         "pr:colo"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 14,
@@ -130,7 +143,8 @@
         "pr:cost",
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 19
     },
     {
       "id": 15,
@@ -140,7 +154,8 @@
         "pr:cost",
         "pr:colo",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 21
     }
   ],
   "bins": [

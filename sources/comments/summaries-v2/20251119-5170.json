@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "concern": "Seven-factor test alone will recreate the delays the ANOPR aims to eliminate",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "Proposes a 230 kV voltage-based rebuttable presumption for jurisdictional clarity",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "The 20 MW threshold is borrowed from generation rules without a principled basis for loads",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 5,
@@ -45,7 +49,8 @@
       "concern": "Size threshold risks trapping scaling data centers in state-jurisdictional procedures indefinitely",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
       "bins": [
         "pr:study",
         "topic:open-season-auctions"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 7,
@@ -63,7 +69,8 @@
       "bins": [
         "pr:study",
         "topic:open-season-auctions"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 10,
@@ -90,7 +99,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 11,
@@ -99,7 +109,8 @@
       "bins": [
         "pr:cost",
         "pr:proximate"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 12,
@@ -108,7 +119,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:grandfathering"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 13,
@@ -117,7 +129,8 @@
       "bins": [
         "aq:hybridrights",
         "topic:grandfathering"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 14,
@@ -126,7 +139,8 @@
       "bins": [
         "pr:study",
         "topic:open-season-auctions"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 15,
@@ -135,7 +149,8 @@
       "bins": [
         "pr:cost",
         "topic:open-season-auctions"
-      ]
+      ],
+      "page": null
     }
   ],
   "bins": [

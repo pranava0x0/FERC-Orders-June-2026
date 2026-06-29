@@ -13,7 +13,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "concern": "Speed in adding transmission capacity is critical for large load interconnection",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "concern": "Explicit request for requirement to evaluate advanced conductors as standard option",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "pr:proximate",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "concern": "Advanced conductors needed to unlock generation sitting in interconnection queues",
       "bins": [
         "pr:proximate"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -72,7 +79,8 @@
       "concern": "Advanced conductor reconductoring is cheaper than new transmission builds",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 3
     }
   ],
   "bins": [

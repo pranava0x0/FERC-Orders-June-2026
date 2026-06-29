@@ -13,7 +13,8 @@
       "bins": [
         "topic:forum-shopping",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "topic:forum-shopping",
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
         "aq:deposits",
         "pr:cost",
         "pr:colo"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -41,7 +44,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -51,7 +55,8 @@
         "aq:jointstudy",
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -61,7 +66,8 @@
         "aq:jointstudy",
         "pr:study",
         "pr:proximate"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -71,7 +77,8 @@
         "pr:colo",
         "aq:expedited",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 8,
@@ -80,7 +87,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "concern": "Transition rules should protect customers already deep in existing processes",
       "bins": [
         "topic:transition-protection"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
         "aq:deposits",
         "pr:cost",
         "pr:colo"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 11,
@@ -107,7 +117,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 12,
@@ -115,7 +126,8 @@
       "concern": "Public load forecasts should separate confirmed from speculative requests to guide generation siting",
       "bins": [
         "topic:load-forecast-transparency"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 13,
@@ -124,7 +136,8 @@
       "bins": [
         "topic:application-requirements",
         "aq:deposits"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 14,
@@ -133,7 +146,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 15,
@@ -143,7 +157,8 @@
         "aq:upgradecost",
         "pr:colo",
         "pr:cost"
-      ]
+      ],
+      "page": 9
     }
   ],
   "bins": [

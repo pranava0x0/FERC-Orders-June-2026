@@ -10,43 +10,71 @@
       "id": 1,
       "text": "APGA supports the Secretary's emphasis on public engagement in shaping this rulemaking process. However, we are concerned that the current scope of the ANOPR overlooks the critical role natural gas infrastructure plays in supporting large electric loads.",
       "concern": "ANOPR scope too narrow -- omits natural gas infrastructure",
-      "bins": ["aq:jurisdiction", "topic:gas-infrastructure-scope"]
+      "bins": [
+        "aq:jurisdiction",
+        "topic:gas-infrastructure-scope"
+      ],
+      "page": 3
     },
     {
       "id": 2,
       "text": "As AI data centers and other high-demand facilities continue to grow, many are relying on natural gas-fired generation to meet their energy needs. Because many of these gas-fired facilities may draw from interstate pipelines regulated by FERC, their energy use has implications for interstate commerce.",
       "concern": "Gas-fired large loads implicate FERC's interstate commerce jurisdiction",
-      "bins": ["aq:jurisdiction", "topic:gas-infrastructure-scope"]
+      "bins": [
+        "aq:jurisdiction",
+        "topic:gas-infrastructure-scope"
+      ],
+      "page": 4
     },
     {
       "id": 3,
       "text": "they may impact the reliability of the natural gas transmission system, creating downstream impacts on APGA members' ability to reliably and affordably serve their communities and customers.",
       "concern": "Large load gas demand threatens pipeline reliability and downstream utility service",
-      "bins": ["pr:proximate", "topic:gas-infrastructure-scope"]
+      "bins": [
+        "pr:proximate",
+        "topic:gas-infrastructure-scope"
+      ],
+      "page": 4
     },
     {
       "id": 4,
       "text": "APGA requests that as the Commission contemplate jurisdiction over large loads, they consider how these large loads may influence interstate natural gas markets and infrastructure.",
       "concern": "FERC should extend its large-load analysis to natural gas markets",
-      "bins": ["aq:jurisdiction", "topic:gas-infrastructure-scope"]
+      "bins": [
+        "aq:jurisdiction",
+        "topic:gas-infrastructure-scope"
+      ],
+      "page": 4
     },
     {
       "id": 5,
       "text": "Any policy changes must preserve public gas utilities' flexibility in exercising their firm transportation rights and protect their ability to serve residential and commercial customers.",
       "concern": "Rulemaking must protect firm gas transportation rights for public utilities",
-      "bins": ["pr:proximate", "topic:firm-transportation-rights"]
+      "bins": [
+        "pr:proximate",
+        "topic:firm-transportation-rights"
+      ],
+      "page": 4
     },
     {
       "id": 6,
       "text": "Without thoughtful planning and coordination, increased demand on pipelines could strain existing capacity and jeopardize the ability of public gas systems to meet their core obligation to serve.",
       "concern": "Unplanned large load gas demand could impair public utilities' obligation to serve",
-      "bins": ["pr:proximate", "topic:firm-transportation-rights"]
+      "bins": [
+        "pr:proximate",
+        "topic:firm-transportation-rights"
+      ],
+      "page": 4
     },
     {
       "id": 7,
       "text": "APGA urges the Commission to incorporate natural gas considerations into this rulemaking to support an energy future that safeguards the interests of public gas utilities and their customers.",
       "concern": "Natural gas considerations should be formally included in the rulemaking",
-      "bins": ["aq:jurisdiction", "topic:gas-infrastructure-scope"]
+      "bins": [
+        "aq:jurisdiction",
+        "topic:gas-infrastructure-scope"
+      ],
+      "page": 4
     }
   ],
   "bins": [
@@ -55,33 +83,55 @@
       "name": "FERC Gas Jurisdiction Gap",
       "stance": "mixed",
       "description": "APGA argues the ANOPR's jurisdictional scope is too narrow because large electric loads powered by interstate gas pipelines fall within FERC's regulatory reach but are not addressed. The association asks FERC to evaluate whether and how such facilities affect interstate commerce and to bring natural gas infrastructure into the large-load framework.",
-      "quote_ids": [1, 2, 4, 7]
+      "quote_ids": [
+        1,
+        2,
+        4,
+        7
+      ]
     },
     {
       "key": "pr:proximate",
       "name": "Pipeline Capacity and Proximity",
       "stance": "neutral",
       "description": "APGA highlights the proximate relationship between large electric loads and the gas transmission system: gas-fired data centers draw from the same interstate pipelines that public utilities depend on. Without coordination, pipeline capacity strain could impair public gas systems' ability to meet their obligation to serve, and firm transportation rights must be preserved.",
-      "quote_ids": [3, 5, 6]
+      "quote_ids": [
+        3,
+        5,
+        6
+      ]
     },
     {
       "key": "topic:gas-infrastructure-scope",
       "name": "Expand Rulemaking to Gas Infrastructure",
       "stance": "support",
       "description": "APGA's central ask is that FERC broaden the RM26-4 proceeding to cover natural gas infrastructure impacts from large loads. The association contends the current ANOPR addresses only the electric side while ignoring how AI data centers and similar facilities stress the interstate gas system that public utilities rely on.",
-      "quote_ids": [1, 2, 3, 4, 7]
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        7
+      ]
     },
     {
       "key": "topic:firm-transportation-rights",
       "name": "Protect Firm Gas Transportation Rights",
       "stance": "support",
       "description": "APGA asks that any new large-load policy preserve the firm transportation rights of public gas utilities and their flexibility to serve residential and commercial customers, warning that unchecked pipeline demand from large loads could jeopardize their core service obligations.",
-      "quote_ids": [5, 6]
+      "quote_ids": [
+        5,
+        6
+      ]
     }
   ],
   "lenses": {
-    "aq": ["jurisdiction"],
-    "pr": ["proximate"],
+    "aq": [
+      "jurisdiction"
+    ],
+    "pr": [
+      "proximate"
+    ],
     "rg": []
   },
   "provenance": {

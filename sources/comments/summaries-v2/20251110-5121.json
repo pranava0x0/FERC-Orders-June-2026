@@ -1,7 +1,7 @@
 {
   "accession": "20251110-5121",
-  "filer": "Individual No Affiliation",
-  "org_type": "individual",
+  "filer": "Texas Blockchain Council",
+  "org_type": "trade_assoc",
   "filed": "11/10/2025",
   "source_text": "sources/comments/files/20251110-5121__Individual-No-Affiliation/136684.txt",
   "overall_summary": "The Texas Blockchain Council urges DOE to push ISOs, RTOs, and ERCOT to create a uniform non-firm interconnection category for flexible large loads such as bitcoin mining and AI compute. The filing argues that flexible loads reduce study and upgrade requirements, provide fast-acting demand response, and can anchor new generation, and it points to SPP's HILLS framework and Texas bitcoin mining curtailment as working examples.",
@@ -10,61 +10,100 @@
       "id": 1,
       "text": "not all large loads behave the same way. Digital-compute data centers, particularly bitcoin mining and, in the future, some emerging AI compute installations, can operate as large, flexible, interruptible loads with the capability to modulate power consumption within seconds in response to grid demands.",
       "concern": "Flexible digital loads differ from traditional always-on load and should be treated differently in interconnection",
-      "bins": ["pr:flex", "topic:demand-response"]
+      "bins": [
+        "pr:flex",
+        "topic:demand-response"
+      ],
+      "page": null
     },
     {
       "id": 2,
       "text": "we recommend that DOE support the creation and adoption of a non-firm load interconnection category across U.S. markets.",
       "concern": "Core ask for a new non-firm interconnection category",
-      "bins": ["pr:flex", "topic:non-firm-interconnection"]
+      "bins": [
+        "pr:flex",
+        "topic:non-firm-interconnection"
+      ],
+      "page": null
     },
     {
       "id": 3,
       "text": "Southwest Power Pool's (SPP) High-Impact Large Loads (HILLs) framework enables \"fast-track\" interconnection for large loads that agree to curtail when needed to preserve reliability.",
       "concern": "SPP HILLS cited as an existing model for non-firm flexible load interconnection",
-      "bins": ["rg:spp", "pr:flex"]
+      "bins": [
+        "rg:spp",
+        "pr:flex"
+      ],
+      "page": null
     },
     {
       "id": 4,
       "text": "Flexible load does not require the same level of transmission upgrades as other businesses and often locates at or near existing power sources. This reduces required studies, transmission upgrades, and queue congestion.",
       "concern": "Non-firm flexible loads reduce study burden and queue congestion",
-      "bins": ["pr:study", "pr:flex"]
+      "bins": [
+        "pr:study",
+        "pr:flex"
+      ],
+      "page": null
     },
     {
       "id": 5,
       "text": "Bitcoin mining facilities in Texas have already demonstrated real-time load shed performance ahead of grid emergencies, contributing meaningful stability during both extreme heat and winter reliability events.",
       "concern": "Texas bitcoin mining has proven demand-response value during grid emergencies",
-      "bins": ["topic:demand-response", "pr:flex"]
+      "bins": [
+        "topic:demand-response",
+        "pr:flex"
+      ],
+      "page": null
     },
     {
       "id": 6,
       "text": "In instances where utilities do not have to build more transmission to connect flexible loads, they can increase revenue on the same infrastructure, wires, and substations. Prior to TDSP rate adjustments, this increased revenue can, in turn, help pay for additional transmission projects assuming guidelines have been developed outlining what transmission charges apply to these loads when they are co-located, at the same POI.",
       "concern": "Flexible loads raise revenue on existing infrastructure and can fund additional transmission when co-located",
-      "bins": ["pr:cost", "pr:colo"]
+      "bins": [
+        "pr:cost",
+        "pr:colo"
+      ],
+      "page": null
     },
     {
       "id": 7,
       "text": "When these loads are exposed to real-time prices and congestion signals, they shift consumption away from peak periods using a variety of market-based tools, reducing uplift charges and lessening the need for emergency procurement.",
       "concern": "Real-time price exposure causes flexible loads to reduce peak demand and lower consumer costs",
-      "bins": ["pr:cost", "pr:flex"]
+      "bins": [
+        "pr:cost",
+        "pr:flex"
+      ],
+      "page": null
     },
     {
       "id": 8,
       "text": "Flexible loads can serve as anchor tenants for new generation projects and unlock financing for transmission-constrained generation pockets.",
       "concern": "Flexible loads enable new generation financing in constrained areas",
-      "bins": ["pr:colo"]
+      "bins": [
+        "pr:colo"
+      ],
+      "page": null
     },
     {
       "id": 9,
       "text": "Encourage FERC-jurisdictional ISOs and RTOs as well as ERCOT to establish a uniform, non-firm interconnection category for qualifying flexible loads.",
       "concern": "Specific ask for uniform non-firm category across FERC-jurisdictional and non-jurisdictional markets",
-      "bins": ["pr:flex", "topic:non-firm-interconnection"]
+      "bins": [
+        "pr:flex",
+        "topic:non-firm-interconnection"
+      ],
+      "page": null
     },
     {
       "id": 10,
       "text": "Expand coordination with NERC and reliability entities to ensure transparent, achievable performance criteria for fast-acting interruptible load.",
       "concern": "Asks for NERC coordination to set clear performance standards for interruptible load",
-      "bins": ["pr:study", "topic:demand-response"]
+      "bins": [
+        "pr:study",
+        "topic:demand-response"
+      ],
+      "page": null
     }
   ],
   "bins": [
@@ -73,55 +112,88 @@
       "name": "Non-Firm Interconnection for Flexible Loads",
       "stance": "support",
       "description": "The filing's central argument is that bitcoin mining and AI compute loads can curtail in seconds and should qualify for a dedicated non-firm interconnection pathway. The filer argues this differs fundamentally from always-on load, reduces upgrade requirements, and benefits grid reliability. SPP's HILLS program is cited as a proven template.",
-      "quote_ids": [1, 2, 3, 4, 5, 7, 9]
+      "quote_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9
+      ]
     },
     {
       "key": "pr:study",
       "name": "Reduced Study and Queue Burden",
       "stance": "support",
       "description": "Flexible loads site near existing sources and require fewer transmission upgrades, cutting study requirements and queue congestion. The filer also asks DOE to coordinate with NERC to set transparent, achievable performance criteria.",
-      "quote_ids": [4, 10]
+      "quote_ids": [
+        4,
+        10
+      ]
     },
     {
       "key": "pr:cost",
       "name": "Consumer Cost and Infrastructure Revenue",
       "stance": "support",
       "description": "The filer argues that flexible loads raise revenue on existing wires without new construction and, when exposed to real-time prices, shift away from peaks and cut uplift charges, lowering costs for all consumers.",
-      "quote_ids": [6, 7]
+      "quote_ids": [
+        6,
+        7
+      ]
     },
     {
       "key": "pr:colo",
       "name": "Co-Location Anchors New Generation",
       "stance": "support",
       "description": "Flexible loads can anchor new generation projects and unlock financing in transmission-constrained areas. The filer notes that co-location raises questions about which transmission charges apply at a shared POI.",
-      "quote_ids": [6, 8]
+      "quote_ids": [
+        6,
+        8
+      ]
     },
     {
       "key": "rg:spp",
       "name": "SPP HILLS as Template",
       "stance": "neutral",
       "description": "The filer points to SPP's High-Impact Large Loads framework as an existing fast-track model that other markets should replicate, without criticizing SPP or calling for changes to SPP's own rules.",
-      "quote_ids": [3]
+      "quote_ids": [
+        3
+      ]
     },
     {
       "key": "topic:demand-response",
       "name": "Bitcoin Mining Demand Response Record",
       "stance": "support",
       "description": "The filer highlights that Texas bitcoin miners have already shed load in real time ahead of grid emergencies in both heat and winter events. This track record is offered as evidence that bitcoin mining qualifies as a reliable demand-response resource.",
-      "quote_ids": [1, 5, 10]
+      "quote_ids": [
+        1,
+        5,
+        10
+      ]
     },
     {
       "key": "topic:non-firm-interconnection",
       "name": "Uniform Non-Firm Category Across Markets",
       "stance": "support",
       "description": "The filer asks DOE to encourage both FERC-jurisdictional ISOs and RTOs and non-jurisdictional ERCOT to adopt a common non-firm interconnection category, not just a patchwork of regional pilots.",
-      "quote_ids": [2, 9]
+      "quote_ids": [
+        2,
+        9
+      ]
     }
   ],
   "lenses": {
     "aq": [],
-    "pr": ["flex", "study", "cost", "colo"],
-    "rg": ["spp"]
+    "pr": [
+      "flex",
+      "study",
+      "cost",
+      "colo"
+    ],
+    "rg": [
+      "spp"
+    ]
   },
   "provenance": {
     "model": "claude-sonnet-4-6",

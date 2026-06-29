@@ -10,37 +10,63 @@
       "id": 1,
       "text": "My office is investigating AI data centers' impact on rising power bills in Georgia and nationwide.",
       "concern": "Senator investigating how AI data center load growth is driving up consumer power bills",
-      "bins": ["pr:cost", "topic:consumer-cost-impact"]
+      "bins": [
+        "pr:cost",
+        "topic:consumer-cost-impact"
+      ],
+      "page": 1
     },
     {
       "id": 2,
       "text": "Without proper safeguards, higher prices and capital costs from increased energy generation could be passed onto Georgia families.",
       "concern": "Concern that capital and generation costs from data center growth will be socialized to residential customers",
-      "bins": ["pr:cost", "topic:consumer-cost-impact"]
+      "bins": [
+        "pr:cost",
+        "topic:consumer-cost-impact"
+      ],
+      "page": 1
     },
     {
       "id": 3,
       "text": "Prominent technology companies have made public commitments to \"pay their own way\" when it comes to data center power usage and infrastructure costs. Does FERC assess these to be credible and/or enforceable commitments?",
       "concern": "Asks whether tech company pledges to self-fund grid costs are credible and enforceable",
-      "bins": ["pr:cost", "aq:protection", "topic:cost-responsibility"]
+      "bins": [
+        "pr:cost",
+        "aq:protection",
+        "topic:cost-responsibility"
+      ],
+      "page": 1
     },
     {
       "id": 4,
       "text": "What steps is FERC taking to improve its load forecasting process?",
       "concern": "Asks what FERC is doing to improve load forecasting given rapid data center growth",
-      "bins": ["pr:study", "topic:load-forecasting"]
+      "bins": [
+        "pr:study",
+        "topic:load-forecasting"
+      ],
+      "page": 1
     },
     {
       "id": 5,
       "text": "What strategies is FERC prepared to deploy should load growth exceed modeled or predicted growth?",
       "concern": "Asks FERC what contingency plans exist if actual load growth outpaces forecasts",
-      "bins": ["pr:study", "topic:load-forecasting"]
+      "bins": [
+        "pr:study",
+        "topic:load-forecasting"
+      ],
+      "page": 2
     },
     {
       "id": 6,
       "text": "In October 2025, the Secretary of Energy issued an advanced notice of proposed rulemaking to FERC with potential reforms to standardize interconnection procedures and agreements for large loads like data centers. The deadline set forth in the Secretary's letter (April 30, 2026) is fast approaching; how is FERC planning to engage in the rulemaking process?",
       "concern": "Asks how FERC will respond to the DOE ANOPR on large load interconnection standardization ahead of the April 30 deadline",
-      "bins": ["aq:jurisdiction", "aq:threshold", "topic:anopr-response"]
+      "bins": [
+        "aq:jurisdiction",
+        "aq:threshold",
+        "topic:anopr-response"
+      ],
+      "page": 2
     }
   ],
   "bins": [
@@ -49,68 +75,98 @@
       "name": "Data center cost responsibility",
       "stance": "support",
       "description": "The Senator supports ensuring data centers bear their own grid infrastructure costs rather than passing them to Georgia families. He asks FERC to assess whether tech company pledges to pay their own way are credible and enforceable, and flags the risk that capital costs from new generation get socialized to residential customers.",
-      "quote_ids": [1, 2, 3]
+      "quote_ids": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "key": "pr:study",
       "name": "Load forecasting and contingency planning",
       "stance": "neutral",
       "description": "The Senator asks what FERC is doing to improve load forecasting and what contingency strategies FERC would deploy if actual load growth exceeds modeled growth. The questions are informational; no specific reform is endorsed.",
-      "quote_ids": [4, 5]
+      "quote_ids": [
+        4,
+        5
+      ]
     },
     {
       "key": "aq:protection",
       "name": "Enforceability of cost pledges",
       "stance": "neutral",
       "description": "The Senator asks whether tech company public commitments to fund their own infrastructure costs are credible and enforceable. The question implies skepticism but stops short of a policy recommendation.",
-      "quote_ids": [3]
+      "quote_ids": [
+        3
+      ]
     },
     {
       "key": "aq:jurisdiction",
       "name": "FERC engagement with DOE ANOPR",
       "stance": "neutral",
       "description": "The Senator asks how FERC plans to engage with the DOE ANOPR on standardizing large load interconnection procedures, noting the April 30, 2026 deadline. No position on the outcome is stated.",
-      "quote_ids": [6]
+      "quote_ids": [
+        6
+      ]
     },
     {
       "key": "aq:threshold",
       "name": "Large load interconnection standards",
       "stance": "neutral",
       "description": "The ANOPR question references standardizing interconnection procedures and agreements specifically for large loads like data centers, touching on the threshold and definitional scope of any new rules.",
-      "quote_ids": [6]
+      "quote_ids": [
+        6
+      ]
     },
     {
       "key": "topic:consumer-cost-impact",
       "name": "Consumer bill impact in Georgia",
       "stance": "neutral",
       "description": "The letter documents that Georgia families face rising power bills as AI data center load grows, citing the Georgia PSC's approval of new generation largely serving large customers. This frames the Senator's concern without making a specific regulatory ask.",
-      "quote_ids": [1, 2]
+      "quote_ids": [
+        1,
+        2
+      ]
     },
     {
       "key": "topic:cost-responsibility",
       "name": "Tech company pay-their-own-way pledges",
       "stance": "neutral",
       "description": "The Senator asks FERC whether tech company pledges to self-fund grid infrastructure are credible and enforceable, signaling skepticism that voluntary commitments are sufficient.",
-      "quote_ids": [3]
+      "quote_ids": [
+        3
+      ]
     },
     {
       "key": "topic:load-forecasting",
       "name": "Forecasting accuracy and contingencies",
       "stance": "neutral",
       "description": "Two of the four questions focus on load forecasting: what FERC is doing to improve it, and what strategies FERC would use if growth exceeds models. No specific methodology is advocated.",
-      "quote_ids": [4, 5]
+      "quote_ids": [
+        4,
+        5
+      ]
     },
     {
       "key": "topic:anopr-response",
       "name": "FERC response to DOE ANOPR",
       "stance": "neutral",
       "description": "The Senator asks how FERC plans to engage with the DOE ANOPR on large load interconnection standardization, noting the April 30, 2026 response deadline. The question is informational.",
-      "quote_ids": [6]
+      "quote_ids": [
+        6
+      ]
     }
   ],
   "lenses": {
-    "aq": ["protection", "jurisdiction", "threshold"],
-    "pr": ["cost", "study"],
+    "aq": [
+      "protection",
+      "jurisdiction",
+      "threshold"
+    ],
+    "pr": [
+      "cost",
+      "study"
+    ],
     "rg": []
   },
   "provenance": {

@@ -10,13 +10,21 @@
       "id": 1,
       "text": "forward-looking grid stress prediction, using publicly available data, is technically viable today and could inform interconnection study processes.",
       "concern": "Grid stress forecasting tools exist now and could be used in interconnection studies",
-      "bins": ["pr:study", "topic:grid-reliability-forecasting"]
+      "bins": [
+        "pr:study",
+        "topic:grid-reliability-forecasting"
+      ],
+      "page": null
     },
     {
       "id": 2,
       "text": "We score daily failure probability across 6 US RTOs using EIA demand, weather, and LMP congestion data. Our walk-forward validated model detects 87% of reliability events with a 13% false positive rate.",
       "concern": "Claims high accuracy for a multi-RTO reliability prediction model built on public data",
-      "bins": ["pr:study", "topic:grid-reliability-forecasting"]
+      "bins": [
+        "pr:study",
+        "topic:grid-reliability-forecasting"
+      ],
+      "page": null
     }
   ],
   "bins": [
@@ -25,19 +33,27 @@
       "name": "Forecasting tools for studies",
       "stance": "support",
       "description": "The filer contends that probabilistic grid reliability forecasting, built on public EIA, weather, and LMP data, is accurate enough today to be incorporated into interconnection study processes.",
-      "quote_ids": [1, 2]
+      "quote_ids": [
+        1,
+        2
+      ]
     },
     {
       "key": "topic:grid-reliability-forecasting",
       "name": "RTO reliability prediction platform",
       "stance": "neutral",
       "description": "Monza Tech's Sentinel Grid scores daily failure probability across six RTOs, detecting 87% of reliability events with a 13% false positive rate, and offers this capability as potential technical input to FERC rulemaking.",
-      "quote_ids": [1, 2]
+      "quote_ids": [
+        1,
+        2
+      ]
     }
   ],
   "lenses": {
     "aq": [],
-    "pr": ["study"],
+    "pr": [
+      "study"
+    ],
     "rg": []
   },
   "provenance": {

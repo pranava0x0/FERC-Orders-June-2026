@@ -12,7 +12,8 @@
       "concern": "rule scope should be narrow and targeted",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "aq:threshold",
         "rg:pjm"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 3,
@@ -30,7 +32,8 @@
       "bins": [
         "aq:threshold",
         "aq:expedited"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -39,7 +42,8 @@
       "bins": [
         "aq:threshold",
         "topic:non-dc-customer-harm"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
         "aq:expedited",
         "pr:study",
         "rg:pjm"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "bins": [
         "aq:expedited",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
         "aq:upgradecost",
         "pr:cost",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:jurisdiction"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
         "aq:upgradecost",
         "pr:cost",
         "aq:protection"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
         "aq:upgradecost",
         "pr:cost",
         "topic:jurisdiction"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 11,
@@ -107,7 +117,8 @@
       "bins": [
         "pr:cost",
         "topic:option-to-build"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 12,
@@ -116,7 +127,8 @@
       "bins": [
         "aq:expedited",
         "topic:option-to-build"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 13,
@@ -125,7 +137,8 @@
       "bins": [
         "topic:option-to-build",
         "topic:reliability"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 14,
@@ -134,7 +147,8 @@
       "bins": [
         "topic:option-to-build",
         "topic:reliability"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 15,
@@ -143,7 +157,8 @@
       "bins": [
         "topic:option-to-build",
         "pr:proximate"
-      ]
+      ],
+      "page": 13
     }
   ],
   "bins": [

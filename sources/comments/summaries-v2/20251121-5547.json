@@ -12,7 +12,8 @@
       "concern": "large loads must not shift costs to other customers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "concern": "threshold shields smaller customers from risk",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "concern": "threshold should be higher than 20 MW and regionally flexible",
       "bins": [
         "aq:threshold"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -36,7 +39,8 @@
       "concern": "standardized deposits and readiness requirements needed",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 5,
@@ -44,7 +48,8 @@
       "concern": "deposits screen out speculative projects",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "concern": "states must have role in demand forecasting",
       "bins": [
         "topic:state-authority"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "concern": "FERC must support state planning integration",
       "bins": [
         "topic:state-authority"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -68,7 +75,8 @@
       "concern": "expedited studies via voluntary curtailability are effective",
       "bins": [
         "aq:expedited"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 9,
@@ -77,7 +85,8 @@
       "bins": [
         "aq:expedited",
         "rg:pjm"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -86,7 +95,8 @@
       "bins": [
         "pr:cost",
         "rg:pjm"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -94,7 +104,8 @@
       "concern": "large loads must pay full upgrade costs",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 12,
@@ -102,7 +113,8 @@
       "concern": "cost allocation must be fair and prevent cost-shifting",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 13,
@@ -111,7 +123,8 @@
       "bins": [
         "topic:state-authority",
         "pr:flex"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

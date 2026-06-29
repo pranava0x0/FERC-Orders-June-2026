@@ -12,7 +12,8 @@
       "concern": "FERC must explicitly disclaim jurisdiction over distribution interconnections, generation, and retail sales",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:state-retail-authority"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "FERC has historically not claimed jurisdiction over load interconnection because the FPA does not permit it",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:fpa-statutory-text"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
         "aq:jurisdiction",
         "pr:cost",
         "topic:state-retail-authority"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -56,7 +61,8 @@
       "concern": "Large load interconnection is a traditional state function that has never been federalized",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -65,7 +71,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 8,
@@ -73,7 +80,8 @@
       "concern": "NARUC commits to collaborative engagement to find solutions that serve national interconnection goals without jurisdictional conflict",
       "bins": [
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 9,
@@ -81,7 +89,8 @@
       "concern": "Rapid large load interconnection without adequate generation capacity poses reliability risks to existing retail customers",
       "bins": [
         "topic:reliability-risk"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 10,
@@ -90,7 +99,8 @@
       "bins": [
         "pr:cost",
         "topic:cost-allocation"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 11,
@@ -99,7 +109,8 @@
       "bins": [
         "pr:flex",
         "topic:state-large-load-tariffs"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 12,
@@ -107,7 +118,8 @@
       "concern": "NARUC requests a joint federal-state forum to examine large load interconnection challenges",
       "bins": [
         "topic:cooperative-federalism"
-      ]
+      ],
+      "page": 7
     }
   ],
   "bins": [

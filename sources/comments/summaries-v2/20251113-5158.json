@@ -12,7 +12,8 @@
       "concern": "State jurisdiction must be respected",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "Seven-factor test is longstanding and validated",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 4,
@@ -37,7 +40,8 @@
       "concern": "Preserve the seven-factor test without alteration",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 5,
@@ -45,7 +49,8 @@
       "concern": "Alteration of test creates regulatory uncertainty and conflict",
       "bins": [
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 6,
@@ -54,7 +59,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 7,
@@ -62,7 +68,8 @@
       "concern": "South Dakota law restricts forced wheeling and lacks retail choice",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "concern": "Direct transmission connection enables wheeling that harms existing customers",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "bins": [
         "pr:colo",
         "rg:spp"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "bins": [
         "pr:flex",
         "rg:miso"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -98,7 +108,8 @@
         "pr:study",
         "rg:spp",
         "rg:miso"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "concern": "Support for RTO-model approach in FERC rulemaking",
       "bins": [
         "pr:colo"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:cost"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [

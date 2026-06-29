@@ -15,7 +15,8 @@
         "aq:upgradecost",
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 2,
@@ -23,7 +24,8 @@
       "concern": "FERC must account for FPA limits and state authority over retail sales",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
       "bins": [
         "aq:jurisdiction",
         "aq:hybridrights"
-      ]
+      ],
+      "page": 10
     },
     {
       "id": 4,
@@ -40,7 +43,8 @@
       "concern": "FERC and states operate in separate jurisdictional zones that must be respected",
       "bins": [
         "aq:jurisdiction"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 5,
@@ -49,7 +53,8 @@
       "bins": [
         "aq:threshold",
         "pr:study"
-      ]
+      ],
+      "page": 12
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 7,
@@ -67,7 +73,8 @@
       "bins": [
         "aq:jointstudy",
         "pr:study"
-      ]
+      ],
+      "page": 13
     },
     {
       "id": 8,
@@ -75,7 +82,8 @@
       "concern": "supports standardized deposits and readiness requirements to filter speculative applications",
       "bins": [
         "aq:deposits"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "concern": "hybrid facility study methodology is flawed because it ignores generator or load outage scenarios",
       "bins": [
         "aq:hybridrights"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:study"
-      ]
+      ],
+      "page": 15
     },
     {
       "id": 11,
@@ -101,7 +111,8 @@
       "bins": [
         "aq:expedited",
         "pr:flex"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 12,
@@ -110,7 +121,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 17
     },
     {
       "id": 13,
@@ -119,7 +131,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 14,
@@ -129,7 +142,8 @@
         "aq:upgradecost",
         "pr:cost",
         "pr:flex"
-      ]
+      ],
+      "page": 18
     },
     {
       "id": 15,
@@ -138,7 +152,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:state-action-deadline"
-      ]
+      ],
+      "page": 24
     },
     {
       "id": 16,
@@ -147,7 +162,8 @@
       "bins": [
         "aq:threshold",
         "topic:grandfathering"
-      ]
+      ],
+      "page": 24
     },
     {
       "id": 17,
@@ -156,7 +172,8 @@
       "bins": [
         "pr:cost",
         "topic:customer-build"
-      ]
+      ],
+      "page": 20
     }
   ],
   "bins": [

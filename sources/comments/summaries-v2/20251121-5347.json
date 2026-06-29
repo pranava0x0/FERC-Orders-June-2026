@@ -13,7 +13,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "bins": [
         "pr:cost",
         "aq:deposits"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@
         "pr:cost",
         "aq:deposits",
         "topic:transmission-security-agreements"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
         "pr:cost",
         "aq:deposits",
         "topic:transmission-security-agreements"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 5,
@@ -51,7 +55,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 6,
@@ -61,7 +66,8 @@
         "pr:cost",
         "aq:upgradecost",
         "topic:and-pricing"
-      ]
+      ],
+      "page": 7
     },
     {
       "id": 7,
@@ -70,7 +76,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 8,
@@ -79,7 +86,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 9
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "bins": [
         "pr:cost",
         "aq:upgradecost"
-      ]
+      ],
+      "page": 11
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
         "pr:cost",
         "aq:upgradecost",
         "topic:queue-dynamics"
-      ]
+      ],
+      "page": 8
     },
     {
       "id": 11,
@@ -107,7 +117,8 @@
       "bins": [
         "pr:study",
         "topic:supply-adequacy"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 12,
@@ -117,7 +128,8 @@
         "aq:hybridrights",
         "pr:colo",
         "pr:flex"
-      ]
+      ],
+      "page": null
     },
     {
       "id": 13,
@@ -126,7 +138,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo"
-      ]
+      ],
+      "page": 14
     },
     {
       "id": 14,
@@ -135,7 +148,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:order-2003-analogy"
-      ]
+      ],
+      "page": 16
     },
     {
       "id": 15,
@@ -144,7 +158,8 @@
       "bins": [
         "aq:jurisdiction",
         "topic:order-2003-analogy"
-      ]
+      ],
+      "page": 16
     }
   ],
   "bins": [
