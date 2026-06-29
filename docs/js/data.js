@@ -785,6 +785,67 @@ window.FERC_DATA = (function () {
     },
   ];
 
+  const voiceThemes = [
+    {
+      title: "Cost responsibility is the center of gravity",
+      body: "Across the post-order discussion, the basic question is not whether large loads should connect faster; it is whether the tariff makes the beneficiary carry the cost and risk of the upgrade.",
+      quotes: [
+        { q: "There’s no real quarantining of the cost caused by data centers to those data centers", src: "insideclimate" },
+        { q: "those loads bear the costs incurred to serve them", src: "jeffdennis" },
+        { q: "increasing scrutiny on who pays for transmission to connect data centers", src: "mohanx" },
+        { q: "President Trump's Ratepayer Protection Pledge", src: "doeApplaud" },
+      ],
+    },
+    {
+      title: "The regional route is both substance and litigation strategy",
+      body: "The six-order structure is being read as a deliberate alternative to one national template: faster than a rulemaking, more tailored to each market, and easier to defend on the record.",
+      quotes: [
+        { q: "far more substantively ambitious than the ANOPR", src: "utilitydive" },
+        { q: "six regional answers to the same question, decided on six different timelines", src: "utilitydive" },
+        { q: "a much more robust and detailed administrative record", src: "bloomberglaw" },
+        { q: "reduces future litigation entry points", src: "bloomberglaw" },
+      ],
+    },
+    {
+      title: "Speed now depends on provable flexibility",
+      body: "The strongest pro-speed argument treats data centers as controllable loads, but the quotes also show the hard edge: flexibility has to be operational, measurable, and worth something in the tariff.",
+      quotes: [
+        { q: "emergency data-center load reduction ripe for deeper industry analysis", src: "briggswhite" },
+        { q: "flexible AI data centers can adjust demand dynamically and act as grid assets, not only as fixed loads", src: "varunsivaram" },
+        { q: "asset-backed flexible data centers can operate as grid assets", src: "jeffbladen" },
+        { q: "paying other customers to shift load can be faster and more cost effective than curtailing expensive data-center chips", src: "amandapc" },
+      ],
+    },
+    {
+      title: "Reliability and security remain live objections",
+      body: "The order is not landing as a pure acceleration story. Consumer and security voices are treating faster interconnection as acceptable only if modeling, operating standards, and stability protections keep up.",
+      quotes: [
+        { q: "security gaps remain", src: "xschifman" },
+        { q: "data centers need any more help with interconnection to the grid", src: "benferc" },
+        { q: "standards and rules in place that protect ratepayers from any negative stability, reliability and resiliency impacts", src: "benferc" },
+      ],
+    },
+    {
+      title: "The physical buildout is bigger than the FERC clock",
+      body: "The discourse keeps returning to the same physical constraint: the orders can compress process, but turbines, transformers, generation, local consent, and deliverable capacity still decide which projects energize.",
+      quotes: [
+        { q: "power conversations for individual data centers have moved from megawatts to gigawatts", src: "heathermcgeory" },
+        { q: "gas-turbine, transformer and interconnection lead times", src: "briggswhite" },
+        { q: "power constraints and political resistance", src: "shanumathew" },
+        { q: "developers are pairing data-center growth with behind-the-meter generation and siting near stranded or underused power", src: "chaselochmiller" },
+      ],
+    },
+    {
+      title: "The organized-market focus leaves a Southeast gap",
+      body: "The order covers the six RTO/ISO markets, while several reactions flag the regions outside that structure as exactly where transmission planning and interconnection practice may be weakest.",
+      quotes: [
+        { q: "non-RTO areas, which typically suffer from the worst transmission and interconnection practices", src: "utilitydive" },
+        { q: "The Southeast needs a modern transmission system", src: "simonmahan" },
+        { q: "we risk higher energy prices, power shortages, and lost economic opportunities", src: "simonmahan" },
+      ],
+    },
+  ];
+
   /* ------------------------------------------------ TAB 3: RM26-4 comment corpus */
   // Scraped from FERC's eLibrary docket sheet (past Cloudflare) on 2026-06-24; full manifest +
   // categorization saved at sources/comments/. Stats are mechanical; bucket positions are a provisional
@@ -997,5 +1058,5 @@ window.FERC_DATA = (function () {
     pages: { "E-7": 69, "E-8": 73, "E-9": 51, "E-10": 75, "E-11": 74, "E-12": 78 },
     omit: { "E-9": ["proximate"] },
   };
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, comments, commissioners, briefing, participate };
+  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, voiceThemes, comments, commissioners, briefing, participate };
 })();
