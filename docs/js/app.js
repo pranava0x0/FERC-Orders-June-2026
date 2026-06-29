@@ -105,14 +105,14 @@
           (c.summary ? '<p class="commish-sum">' + esc(c.summary) + "</p>" : "") + blocks + srcs + "</details>";
       };
       var cards = D.commissioners.map(function (c) {
-        return '<div class="commish"><div class="commish-head"><span class="commish-name">' + esc(c.name) +
+        return '<article class="commish-rowcard"><div class="commish"><div class="commish-head"><span class="commish-name">' + esc(c.name) +
           '</span><span class="commish-role">' + esc(c.role) + '</span><span class="commish-tag">' + esc(c.short) + "</span></div>" +
           '<p class="commish-gist">' + esc(c.gist) + "</p>" +
-          '<div class="commish-quote">“…' + esc(c.quote) + '…”' + commissionerQuoteCite(c, c.quotePg) + "</div>" + themed(c) + "</div>";
+          '<div class="commish-quote">“…' + esc(c.quote) + '…”' + commissionerQuoteCite(c, c.quotePg) + "</div></div>" + themed(c) + "</article>";
       }).join("");
       commish = head("What each commissioner emphasized",
-        "All five joined every order unanimously; their concurring statements diverge in emphasis. Each statement is quoted from the orders and cited to the exact page of its own order in the Dockets tab.") +
-        '<div class="commish-grid">' + cards + "</div>";
+        "All five joined every order unanimously; their concurring statements diverge in emphasis. Each row opens into that commissioner’s themes and page-cited quotes, without changing the layout of the other commissioners.") +
+        '<div class="commish-list">' + cards + "</div>";
     }
 
     return head("Overview", m.subtitle) +
@@ -294,7 +294,8 @@
     var rec = '<div class="reception">' + recItems.map(function (r) {
       return '<div class="recep ' + r.stance + '"><div class="recep-head"><span class="recep-group">' + esc(r.group) +
         '</span><span class="stance-pill ' + r.stance + '">' + esc(r.stance) + "</span></div>" +
-        "<p>" + esc(r.body) + "</p>" + publicSrcChips(r.src) + "</div>";
+        "<p>" + esc(r.body) + "</p>" +
+        '<div class="source-line">' + publicSrcChips(r.src) + "</div></div>";
     }).join("") + "</div>";
 
     var disc = '<div class="discourse"><div class="disc-col consensus"><h3>Points of consensus</h3><div class="disc-list">' +

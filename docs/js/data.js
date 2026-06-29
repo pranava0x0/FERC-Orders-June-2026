@@ -202,6 +202,30 @@ window.FERC_DATA = (function () {
       body: "Within 60 days, each grid operator and its TOs must either show cause why its current tariff stays just and reasonable absent clear, consistent large-load provisions, or explain the §206 tariff changes that would remedy the concerns (Ordering Para (B)). The orders also set a 21-day intervention deadline (Rule 214), a 30-day window for responses after the operators file, and, in the NYISO order, a 45-day deadline to request abeyance of up to 90 days (NYISO P 42). The refund effective date is the order’s Federal Register publication date.",
       src: ["e7", "e12", "natlaw"],
     },
+    {
+      date: "After each 60-day filing", iso: "2026-09-16", kind: "deadline",
+      title: "Responses due 30 days after the RTO/TO filing",
+      body: "The 60-day filing is not the end of the process. After each respondent files its show-cause answer or proposed tariff changes, other parties get 30 days to respond. That response window is where large-load customers, generators, states, consumer advocates and existing customers can contest whether the filing actually solves cost allocation, transparency, flexible service and co-location issues.",
+      src: ["e7", "natlaw"],
+    },
+    {
+      date: "Fall 2026, if requested", iso: "2026-10-01", kind: "deadline",
+      title: "Abeyance requests can slow the clock, but only within a bounded lane",
+      body: "NYISO's order expressly lets respondents request abeyance within 45 days, capped at 90 days and subject to FERC scrutiny. Practitioners read that as the safety valve for regions that need stakeholder process time, not an open-ended pause. Any abeyance would push the tariff-answer deadline later for that region while leaving the broader §206 proceeding alive.",
+      src: ["e12", "substack", "natlaw"],
+    },
+    {
+      date: "After the response records close", iso: "2026-10-17", kind: "ferc",
+      title: "FERC decides whether to accept, modify, or impose a §206 remedy",
+      body: "Once the show-cause answers and response comments are in, FERC can accept a sufficient compliance path, direct further tariff changes, set additional hearing or settlement procedures, or impose its own §206 remedy if a region has not shown its tariff is just and reasonable. The practical question after the 60-day filings is therefore not just 'filed or not filed,' but whether the filing gives FERC enough record to approve a durable regional fix.",
+      src: ["e7", "bloomberglaw", "fercFS"],
+    },
+    {
+      date: "Parallel lane", iso: "2026-10-18", kind: "milestone",
+      title: "Rehearing and court-review risk runs alongside implementation",
+      body: "Parties can seek rehearing of FERC action before heading to court. Legal commentators read the six region-specific §206 records as a litigation-defense strategy: narrower records, tailored findings and market-by-market remedies give challengers fewer generic-rule targets. That does not remove legal risk; it shapes where the fight happens.",
+      src: ["bloomberglaw", "heatmap"],
+    },
   ];
 
   const toplines = [
@@ -492,23 +516,43 @@ window.FERC_DATA = (function () {
   const reception = [
     {
       group: "Data-center developers & hyperscalers", stance: "mixed",
-      body: "Speed-to-power is the prize. Expedited study tracks for flexible loads could compress today’s multi-year interconnection waits. The cost is the bill: pro forma cost-recovery agreements push 100% of network-upgrade risk onto the customer and address the ‘no-show’ problem (a developer walks, ratepayers eat the stranded infrastructure). Flexibility/curtailment becomes a bargaining chip for faster access.",
-      src: ["substack", "aaf", "utilitydive"],
+      body: "Speed-to-power is the prize, but the trade is explicit: large customers are increasingly expected to bring credible capacity commitments, minimum charges, collateral, flexible operations or their own power strategy. Microsoft, Google, DCC, Equinix and operator voices all converge on the same point from different angles: the projects that look real are the ones that can show who pays, who curtails and where deliverable power comes from.",
+      src: ["rimaalaily", "brianakobor", "amandapc", "joshlevi", "cymcgeady", "arthurwm"],
     },
     {
       group: "Transmission owners", stance: "mixed",
-      body: "Named as respondents alongside the RTOs, TOs get clearer cost-allocation rules but assume new documentation burdens and a duty to evaluate grid-enhancing technologies before defaulting to conventional upgrades, a friction point on timelines.",
-      src: ["substack", "fercFS"],
+      body: "Named as respondents alongside the RTOs, TOs get clearer cost-allocation rules and a faster §206 lane than a generic rulemaking. The burden is real: they must help build the record, evaluate grid-enhancing technologies before defaulting to conventional upgrades, and answer whether existing tariffs can handle large-load risk without cross-subsidies.",
+      src: ["fercFS", "bloomberglaw", "jeffdennis"],
     },
     {
       group: "Generators (gas / nuclear)", stance: "positive",
-      body: "Read by analysts (Capstone) as a ‘major victory’ for owners of dispatchable PJM generation such as Constellation, PSEG, and Vistra, because co-location and proximate-generation pathways raise the value of existing plants sited near load.",
-      src: ["utilitydive"],
+      body: "Dispatchable and firm-power suppliers benefit from the co-location and proximate-generation frame: a data center that can pair with deliverable generation is easier to study than a naked load request. That helps existing plants near load, but the clean-firm-power lane is also live; geothermal, storage, nuclear and grid-optimization procurement are part of the hyperscaler answer.",
+      src: ["utilitydive", "timlatimer", "luciatian", "chaselochmiller"],
     },
     {
       group: "State utility commissions", stance: "positive",
-      body: "The bifurcation hands states wholesale-side transmission-cost visibility to inform retail rate design, while preserving their authority over retail cost allocation and generation siting, easing the residential-rate-spike worry that has dominated state dockets.",
-      src: ["fercFS", "substack"],
+      body: "The bifurcation gives states wholesale-side transmission-cost visibility while preserving retail cost allocation and siting authority. That matters because the household-bill fight is already concrete: Maryland's ratepayer advocate and state lawmakers are challenging how PJM transmission costs tied to data-center load move across zones.",
+      src: ["fercFS", "thehill", "mdopc", "bloomberglaw"],
+    },
+    {
+      group: "Consumer and environmental advocates", stance: "mixed",
+      body: "The guardrail camp sees progress but not closure. Sierra Club called the announcement responsive on consumer-protection fronts; SELC wanted stronger federal standardization and clearer quarantine of data-center costs; Public Citizen remains more skeptical, tying fast interconnection to unresolved NERC reliability and state-authority concerns.",
+      src: ["insideclimate", "publiccitizen", "benferc", "bennerc"],
+    },
+    {
+      group: "Grid-flexibility and demand-response providers", stance: "positive",
+      body: "This camp gets a clearer market opening. Flexible-load researchers and operators argue that small amounts of curtailment, telemetry and controllable demand can turn some data centers into grid assets and shorten study timelines. Their caveat is operational proof: the promise only works if the tariff turns flexibility into enforceable performance.",
+      src: ["norris", "mohanferc", "aysecoskun", "varunsivaram", "jeffbladen"],
+    },
+    {
+      group: "Public power, co-ops and large customers", stance: "mixed",
+      body: "Large customers and public-power interests mostly like faster interconnection when the beneficiary pays. Their worry is that vague cost causation turns into ordinary customers funding speculative upgrades. Ari Peskoe's critique of FERC's older transmission-pricing policy and ECA's support for large-load cost responsibility point to the same unresolved bill-design question.",
+      src: ["peskoe", "jeffdennis", "mdopc", "latitudedocket"],
+    },
+    {
+      group: "Non-RTO Southeast and regional planners", stance: "negative",
+      body: "The six orders cover organized markets, not the whole country. Southeast voices warn that manufacturers and data centers still need regional transmission planning outside the RTO/ISO frame, and that the regions with weak interconnection practice may be precisely where FERC's show-cause orders do not directly reach.",
+      src: ["utilitydive", "simonmahan"],
     },
     {
       group: "FERC (the Commission itself)", stance: "positive",

@@ -308,9 +308,9 @@ ul.roster li { font-size: 12px; color: var(--text-muted); }
 ul.roster li::before { content: "·"; }
 
 /* Commissioner statements (Overview tab) */
-.commish-grid { display: grid; gap: 11px; }
-@media (min-width: 760px) { .commish-grid { grid-template-columns: 1fr 1fr; } }
-.commish { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--masthead); border-radius: 0 6px 6px 0; padding: 12px 15px; }
+.commish-list { display: grid; gap: 10px; }
+.commish-rowcard { background: var(--surface); border: 1px solid var(--rule); border-left: 4px solid var(--masthead); border-radius: 0 6px 6px 0; padding: 12px 15px; }
+.commish { background: transparent; border: 0; border-radius: 0; padding: 0; }
 .commish-head { display: flex; align-items: baseline; gap: 6px 10px; flex-wrap: wrap; margin-bottom: 6px; }
 .commish-name { font-weight: 700; font-size: 15px; color: var(--masthead); }
 .commish-role { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
@@ -534,6 +534,8 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .stance-pill.mixed { color: var(--stance-mixed); background: #f6efdb; }
 .stance-pill.negative { color: var(--stance-negative); background: var(--deadline-bg); }
 .recep p { font-size: 14px; color: #2b3744; }
+.source-line { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 11px; padding-top: 8px; border-top: 1px solid var(--rule); }
+.source-line .label { margin-right: 2px; }
 
 /* commentary across the spectrum */
 .voices { display: grid; gap: 11px; }
