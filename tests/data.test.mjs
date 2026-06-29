@@ -316,6 +316,10 @@ test("timeline spans DOE -> FERC -> deadlines", () => {
   assert.ok(kinds.includes("doe"), "has a DOE event");
   assert.ok(kinds.includes("ferc"), "has the FERC issuance");
   assert.ok(kinds.filter((k) => k === "deadline").length >= 2, "has 30d and 60d deadlines");
+  const after60 = D.timeline.slice(D.timeline.findIndex((e) => /60-day/.test(e.title)) + 1);
+  assert.ok(after60.some((e) => /30 days after/.test(e.title + " " + e.body)), "shows the response window after 60-day filings");
+  assert.ok(after60.some((e) => /abeyance/i.test(e.title + " " + e.body)), "shows bounded abeyance after the 60-day clock");
+  assert.ok(after60.some((e) => /§206 remedy/.test(e.title + " " + e.body)), "shows FERC's post-filing remedy path");
 });
 
 test("kpis: six, with the 30/60-day deadline pair flagged", () => {
@@ -324,8 +328,19 @@ test("kpis: six, with the 30/60-day deadline pair flagged", () => {
 });
 
 test("reception count floor + valid stances", () => {
-  assert.ok(D.reception.length >= 5, "reception count floor");
-  D.reception.forEach((r) => assert.ok(["positive", "mixed", "negative"].includes(r.stance), `stance ${r.group}`));
+  assert.ok(D.reception.length >= 8, "reception count floor");
+  const allSources = new Set();
+  D.reception.forEach((r) => {
+    assert.ok(["positive", "mixed", "negative"].includes(r.stance), `stance ${r.group}`);
+    assert.ok(Array.isArray(r.src) && r.src.length >= 2, `${r.group} has multiple sources`);
+    r.src.forEach((id) => {
+      assert.ok(D.SOURCES[id], `${r.group} source ${id} exists`);
+      allSources.add(id);
+    });
+  });
+  assert.ok(allSources.size >= 16, "reception cards draw from a broad source set");
+  const onlySubstack = D.reception.filter((r) => r.src.length === 1 && r.src[0] === "substack");
+  assert.equal(onlySubstack.length, 0, "no reception card rests only on Arushi Sharma Frank");
 });
 
 test("each of the five categories is referenced by at least one docket OR regional note", () => {
