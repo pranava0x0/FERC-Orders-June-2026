@@ -72,10 +72,13 @@ export function buildLlmsTxt(D) {
   }
   out.push("");
 
-  out.push(`## Commentary across the spectrum (secondary, gathered ${m.discourseCapture})`, "");
-  for (const v of D.voices) {
-    const s = D.SOURCES[v.src[0]];
-    out.push(`- ${v.name} (${LEAN[v.lean]}, ${v.affil}): ${v.take} Source: ${s.url}`);
+  out.push(`## Commentary themes (secondary, gathered ${m.discourseCapture})`, "");
+  for (const theme of D.voiceThemes || []) {
+    out.push(`- ${theme.title}: ${theme.body}`);
+    for (const q of theme.quotes || []) {
+      const s = D.SOURCES[q.src];
+      out.push(`  - "${q.q}" Source: ${s.url}`);
+    }
   }
   out.push("");
 

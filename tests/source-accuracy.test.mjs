@@ -377,6 +377,10 @@ test("docs/llms.txt is generated from data.js and in sync", () => {
 test("Discourse commentary quotes are backed by captured evidence", () => {
   const evidence = jsonFile("sources", "voices-evidence.json");
   const byName = new Map(Object.entries(evidence.voices));
+  const bySource = new Map();
+  for (const ev of Object.values(evidence.voices)) {
+    bySource.set(ev.src, `${bySource.get(ev.src) || ""}\n${ev.evidence}`);
+  }
 
   for (const voice of D.voices) {
     const ev = byName.get(voice.name);
@@ -398,6 +402,18 @@ test("Discourse commentary quotes are backed by captured evidence", () => {
       assert.ok(
         evidenceText.includes(looseText(quote)),
         `voice "${voice.name}" quotes text not found in its captured evidence: ${quote}`,
+      );
+    }
+  }
+
+  for (const theme of D.voiceThemes || []) {
+    for (const quote of theme.quotes || []) {
+      assert.ok(D.SOURCES[quote.src], `theme "${theme.title}" cites unknown source "${quote.src}"`);
+      const ev = bySource.get(quote.src);
+      assert.ok(ev, `theme "${theme.title}" quote source "${quote.src}" must be captured in voices-evidence.json`);
+      assert.ok(
+        looseText(ev).includes(looseText(quote.q)),
+        `theme "${theme.title}" quote not found in evidence for "${quote.src}": ${quote.q}`,
       );
     }
   }

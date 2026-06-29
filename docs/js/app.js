@@ -310,27 +310,11 @@
         return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
       }).join("") + "</div>";
 
-    var LEAN = { right: "Right of center", left: "Left of center", nonpartisan: "Nonpartisan" };
-    var voiceCard = function (v) {
-      return '<div class="voice ' + v.lean + '"><div class="voice-head"><span class="voice-name">' + esc(v.name) +
-        '</span><span class="voice-affil">' + esc(v.affil) + '</span>' +
-        '<span class="lean-pill ' + v.lean + '">' + esc(LEAN[v.lean]) + "</span></div>" +
-        "<p>" + esc(v.take) + "</p>" + publicSrcChips(v.src) + "</div>";
-    };
-    var voiceItems = D.voices.filter(function (v) { return v.name !== "Chris Wright"; });
-    var voiceByName = {};
-    voiceItems.forEach(function (v) { voiceByName[v.name] = v; });
-    var voiceGroups = [
-      { h: "Data centers & hyperscalers", names: ["Arthur Haubenstock", "Heather McGeory", "Lucia Tian", "Sara Axelrod", "Chase Lochmiller", "Cully Cavness", "Amanda Peterson Corio", "Josh Levi", "Cy McNeill", "Cy McGeady", "David Young", "Tag Greason"] },
-      { h: "Grid flexibility & supply", names: ["Aniruddh Mohan", "Varun Sivaram", "Tim Latimer", "Jeff Bladen", "Chris Gillett", "Briggs White", "Shanu Mathew"] },
-      { h: "Cost, consumers & public narrative", names: ["Jeff Dennis", "Ben Inskeep", "Charles Hua", "Jamie Nolan", "Public Citizen", "Sierra Club", "Southern Environmental Law Center", "Simon Mahan"] },
-      { h: "Law, markets & procedure", names: ["Travis Kavulla", "Neil Chatterjee", "Jennifer Danis", "Matthew Christiansen", "Mona Dajani", "Larry Gasteiger", "Jigar Shah", "Ben Schifman", "Devin Hartman"] },
-    ];
-    var voices = '<div class="voice-groups">' + voiceGroups.map(function (g) {
-      var list = g.names.map(function (n) { return voiceByName[n]; }).filter(Boolean);
-      if (!list.length) return "";
-      return '<section class="voice-group"><div class="voice-group-head"><h3>' + esc(g.h) + '</h3><span class="voice-count mono">' + list.length + '</span></div><div class="voices">' +
-        list.map(voiceCard).join("") + "</div></section>";
+    var quoteThemes = '<div class="quote-themes">' + (D.voiceThemes || []).map(function (t) {
+      var qs = (t.quotes || []).map(function (q) {
+        return '<li><blockquote>“' + esc(q.q) + '”</blockquote>' + srcChips([q.src]) + "</li>";
+      }).join("");
+      return '<section class="quote-theme"><h3>' + esc(t.title) + '</h3><p>' + esc(t.body) + '</p><ul class="quote-list">' + qs + "</ul></section>";
     }).join("") + "</div>";
 
     // The RM26-4 comment period (stats, respondent types, themes/categories, and the full searchable
@@ -343,8 +327,8 @@
     return head("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.") + rec +
       commentsBlock +
-      head("Commentary across the spectrum",
-      "Named voices from right of center to left of center, plus the research case for load flexibility. Each is the source's own position, not a FERC determination. Commentary gathered " + D.meta.discourseCapture + " (the order record is as of " + D.meta.capture + ").") + voices +
+      head("Commentary themes with quoted source lines",
+      "Themes from the post-order discourse, with the underlying quoted statements linked under each theme. Commentary gathered " + D.meta.discourseCapture + " (the order record is as of " + D.meta.capture + ").") + quoteThemes +
       head("Media & discourse", "The dominant narratives in energy trade press and policy circles.") + disc + outlets;
   }
 
