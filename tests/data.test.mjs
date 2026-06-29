@@ -180,18 +180,25 @@ test("commissioner themed summaries: written quotes are verbatim in the cited (P
   // region), so the displayed claim is "largely common, with per-order tailoring" and quotes cite the PJM
   // copy. Spoken quotes come from the open-meeting auto-caption transcript: labeled, not verbatim-checked.
   const pjm = orderText("E-7");
+  const raw = readFileSync(join(here, "..", "sources", "text", "orders", ORDER_STEMS["E-7"] + ".txt"), "utf8");
+  const parts = raw.split(/--- PAGE (\d+) ---/);
+  const pages = new Map([[1, parts[0]]]);
+  for (let i = 1; i < parts.length; i += 2) pages.set(Number(parts[i]), parts[i + 1] || "");
   const themed = D.commissioners.filter((c) => Array.isArray(c.themes) && c.themes.length);
   assert.ok(themed.length >= 1, "at least one commissioner has an authored themed summary");
   let writtenChecked = 0;
   for (const c of themed) {
     assert.ok(typeof c.summary === "string" && c.summary.length >= 40, `${c.key} has an overall summary`);
     assert.ok(c.sources && c.sources.written && /PJM/.test(c.sources.written), `${c.key} cites the PJM copy`);
+    assert.ok(Number.isInteger(c.quotePg) && normOrder(pages.get(c.quotePg) || "").includes(normOrder(c.quote)), `${c.key} overview pull quote has an exact PJM page cite`);
     assert.ok(!/identical across all six/i.test(c.sources.written), `${c.key} does not overclaim "identical across all six"`);
     for (const th of c.themes) {
       assert.ok(th.name && Array.isArray(th.quotes) && th.quotes.length >= 1, `${c.key} theme "${th.name}" has quotes`);
       for (const q of th.quotes) {
         assert.ok(q.t && (q.src === "written" || q.src === "spoken"), `${c.key} quote has text + src (written|spoken)`);
         if (q.src === "written") {
+          assert.ok(Number.isInteger(q.pg), `${c.key} written quote carries a PJM page cite`);
+          assert.ok(normOrder(pages.get(q.pg) || "").includes(normOrder(q.t)), `${c.key} written quote not on cited PJM p.${q.pg}: "${q.t.slice(0, 50)}…"`);
           assert.ok(pjm.includes(normOrder(q.t)), `${c.key} written quote not verbatim in the PJM order: "${q.t.slice(0, 50)}…"`);
           writtenChecked++;
         }
