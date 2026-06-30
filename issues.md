@@ -4,6 +4,30 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
+- **2026-06-30 · ui/data · consensus heatmap shows a "net oppose" legend swatch with zero matching cells.**
+  Of 60 visible stakeholder×reform cells, 41 are strong-support, 13 support, 6 contested, **0 net-oppose** —
+  but the legend renders a net-oppose key, advertising opposition that isn't there. Two contributing causes:
+  the net-banding is lenient, and the AI comment summaries under-select opposition (~80% precision / ~20%
+  recall, PNNL caveat), so a true oppose could also be missed. Root cause: **code** (legend not filtered to
+  the present-set) compounded by a **data** limitation. Status: **Open** — fix: render legend entries only
+  for stances that occur, or state the absence; revisit banding. See DESIGN.md § 7 (net-vs-plurality).
+
+## Fixed
+
+- **2026-06-30 · accuracy · E-2 "minimum charge" finding cited p.277 (inside Chang's concurrence) for a
+  majority holding.** The majority's determination ("does not adequately *substantiate*… we decline to
+  establish an additional charge") is on pp.207–208; p.277 is Chang's individual statement and uses her
+  paraphrase ("support"). Root cause: **source** (wrong page + paraphrase-vs-holding). Status: **Fixed**
+  (commit 188ab52) — re-cited to p.207 with the majority wording; both prongs (need + how to calculate)
+  noted. Caught by the FERC-attorney persona review.
+- **2026-06-30 · ui · E-2 final order rendered §206 show-cause labels.** The co-location card reused the
+  six orders' templates — "Directs the respondent to address", "What FERC presses PJM on", and a Section IV
+  **briefing block with 5 quotes not present in E-2 at all** — reading a final order as an open clock. Root
+  cause: **code** (render not gated on order type). Status: **Fixed** (188ab52) — gated all three on the
+  card being a show-cause order; E-2 reads "What this order holds" / "What the order decides" + a `kind`
+  line, no briefing. The misattributed briefing quotes passed silently because `verify-quotes.mjs` did not
+  sweep `D.briefing`; that sweep was added (regression guard).
+
 - **2026-06-26 · method/data · v2 comment summaries: recall is unmeasured (PNNL CommentNEPA caveat).**
   All 268 text-extracted RM26-4 comments now have auditable quote-centric summaries
   (`summaries-v2/`), verified against the method: the quote is the atomic unit (verbatim-tested),
