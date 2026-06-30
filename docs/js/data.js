@@ -145,8 +145,9 @@ window.FERC_DATA = (function () {
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
     summary: [
-      "On October 23, 2025, the Department of Energy used its rarely invoked § 403 authority to direct FERC to open a rulemaking on the interconnection of large loads such as data centers (Docket RM26-4-000).",
-      "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO, putting all six markets on a 30/60-day clock to defend or revise their large-load tariffs.",
+      "On October 23, 2025, the Department of Energy invoked its rarely used § 403 authority to direct FERC to open a rulemaking on connecting large loads (data centers, AI, advanced manufacturing) to the interstate grid (Docket RM26-4-000), and asked for final action by April 30, 2026.",
+      "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.",
+      "The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC finalized the PJM co-location order (Item E-2, EL25-49-002) whose three new transmission services the six orders extend to every other region.",
     ],
   };
 
@@ -313,7 +314,7 @@ window.FERC_DATA = (function () {
       respondents: "PJM + 45 named transmission owners",
       commishPages: { swett: 87, rosner: 93, see: 99, chang: 104, lacerte: 113 },
       status: "Co-location rules already in place",
-      unique: "PJM is the control case. FERC already accepted PJM’s co-location architecture in EL25-49, so E-7 does not start from a blank page; it asks how to extend those Interim NITS, Contract Demand and flexible-load services into the large-load framework while protecting pending service deals and preserving PJM’s first-ready, first-served New Services Queue.",
+      unique: "PJM is the control case, the one region that does not start from a blank page. FERC rebuilt PJM’s co-location rules in the parallel EL25-49 proceeding (Item E-2, decided the same morning), so E-7 asks PJM to carry those new services (Interim NITS and Firm/Non-Firm Contract Demand) into a general large-load framework. The catch: every request still runs through one ‘first-ready, first-served’ clustered New Services Queue with no large-load-specific study, even though an Eligible Customer already pays ‘100% of the costs of the minimum amount of Network Upgrades’ its request triggers. So the order presses how to add flexible-load service and protect deals nearing completion without breaking that queue.",
       asks: [
         "Protecting existing deals: a reasonable implementation period, and time to finalize agreements nearing completion when the new tariff provisions are filed (Section IV).",
         "Whether the new flexible-load services would change regional and local transmission planning, given uncertainty in the type, location, and quantity of such loads (Section IV).",
@@ -343,7 +344,7 @@ window.FERC_DATA = (function () {
       respondents: "MISO + 30 named transmission owners",
       commishPages: { swett: 91, rosner: 96, see: 102, chang: 106, lacerte: 114 },
       status: "Early-stage large-load rules",
-      unique: "MISO is the cost-allocation stress test. It already has an Expedited Project Review path, but its tariff still studies new load at maximum demand even when the customer says it can curtail, and network upgrades roll into each transmission owner’s base zonal rates. E-8 presses MISO on whether flexible service and a pro forma cost-recovery agreement can keep those upgrade costs assigned to the load that caused them.",
+      unique: "MISO is the cost-allocation stress test. Its tariff still studies new load at its maximum demand ‘regardless of the load’s operational capabilities or willingness to be curtailed,’ and the resulting network upgrades are ‘rolled into the relevant transmission owner’s base zonal rates,’ spread across that utility’s wholesale customers. MISO itself told its Large Load Working Group the tariff does ‘not provide a consistent or transparent framework’ for large loads. E-8 presses whether flexible service and a pro forma cost-recovery agreement can keep those upgrade costs on the load that caused them.",
       asks: [
         "Whether and how Eligible Customers taking the new services would be charged for regulation and black-start service (P 99).",
         "An appropriate minimum level of cost recovery and financial security under any cost-recovery agreement (P 119).",
@@ -371,7 +372,7 @@ window.FERC_DATA = (function () {
       respondents: "SPP + 22 named transmission owners",
       commishPages: { swett: 68, rosner: 73, see: 78, chang: 83, lacerte: 92 },
       status: "Most mature: HILL / HILLGA",
-      unique: "SPP is the benchmark, not the laggard. E-9 adopts SPP’s own HILL definition, commends HILLGA and Conditional HILL Service, and leaves its Attachment Z1/AQ/AX study stack plus Highway/Byway cost split largely intact. The narrow missing pieces are operational terms in the service agreement, automatic alternative-technology review, and crediting large-load payments back through transmission revenue requirements.",
+      unique: "SPP is the benchmark, not the laggard. E-9 adopts SPP’s own ‘High Impact Large Load’ (HILL) definition, commends its ‘High Impact Large Load Generation Assessment’ (HILLGA) and Conditional HILL Service, and leaves the Attachment Z1/AQ/AX study stack and Highway/Byway cost split intact. Even in this leading framework FERC finds only two real gaps: no requirement to evaluate alternative transmission technologies, and no pro forma terms to ‘memorialize ongoing operational requirements in a transmission service agreement.’ The remaining ask is a mechanism to credit large-load payments back through transmission owners’ revenue requirements.",
       asks: [
         "A mechanism to credit large-load cost-recovery payments toward transmission owners’ revenue requirements (Ordering (B)(1)(b)).",
         "Evaluating alternative transmission technologies in all instances without a customer request — and, if conventional upgrades are chosen instead, justifying why (P 46).",
@@ -400,7 +401,7 @@ window.FERC_DATA = (function () {
       respondents: "CAISO + 24 Participating Transmission Owners",
       commishPages: { swett: 93, rosner: 98, see: 104, chang: 109, lacerte: 117 },
       status: "No Order No. 888 service",
-      unique: "CAISO is the translation problem. It does not sell Order No. 888 network or point-to-point service, offers no firm long-term reservation product, and relies on Scheduling Coordinators and Participating TO-led load interconnection inside a state-planning framework. E-10 therefore asks CAISO either to build equivalent large-load protections or explain why its daily-service, TAC/RAC framework already solves the same cost and reliability problems.",
+      unique: "CAISO is the translation problem. It ‘does not offer traditional Order No. 888 network and point-to-point transmission services, offers no firm, long-term transmission reservations of capacity,’ and its Participating TOs (not CAISO itself) ‘play the lead role in managing the interconnection of load’ inside California’s state planning and forecasting processes. So E-10 gives CAISO an alternative no other order offers: either build equivalent large-load protections, or explain why its single daily service and Transmission Access Charge (TAC/RAC) framework already solves the same cost and reliability problems.",
       asks: [
         "Whether, given that CAISO does not offer Order No. 888 service, its existing framework already addresses the concerns — or what equivalent options it would create (p. 60).",
         "How load-addition study procedures and operational requirements would work when its Participating TOs, not CAISO, lead load interconnection.",
@@ -429,7 +430,7 @@ window.FERC_DATA = (function () {
       respondents: "ISO-NE + 16 Participating Transmission Owners",
       commishPages: { swett: 92, rosner: 97, see: 102, chang: 107, lacerte: 115 },
       status: "Transmission-constrained grid",
-      unique: "ISO-NE is the small-system, big-load case. FERC flags a roughly 30,000 MW peak, existing transmission constraints, and a CELT forecast that generally excludes proposed data-center loads. E-11 turns that into a concrete planning question: how do Schedule 22/23 cluster studies, Pool Transmission Facilities at 69 kV and above, and the Monthly Regional Network Load netting rules change when one large customer can move the regional needle?",
+      unique: "ISO-NE is the small-system, big-load case. FERC flags a system peaking at only ‘30,000 MW’ with significant transmission constraints, and a ‘CELT load forecast’ that generally excludes proposed data centers, so a single large customer can move the regional needle. E-11 turns that into concrete planning questions: how Schedule 22/23 cluster studies, Pool Transmission Facilities at ‘69 kV’ and above, and the Monthly Regional Network Load behind-the-meter-netting rules should change, and whether to import PJM’s MW-threshold remedy for that netting.",
       asks: [
         "How it would study and serve large loads on a system peaking at only ~30,000 MW with significant transmission constraints (P 11 n.31).",
         "Applying a PJM-style MW threshold to the ‘Monthly Regional Network Load’ behind-the-meter-netting definition (P 60).",
@@ -457,7 +458,7 @@ window.FERC_DATA = (function () {
       respondents: "NYISO + 9 named New York transmission owners",
       commishPages: { swett: 96, rosner: 100, see: 106, chang: 111, lacerte: 118 },
       status: "Largely outside the tariff today",
-      unique: "NYISO is the tariff-gap case. It has non-tariff study materials for >10 MW / 115 kV load projects, but no tariff definition of ‘large load,’ no tariff-ready deposits or assumptions, and co-location reforms not expected until 2027. E-12 converts that off-tariff practice into show-cause issues, including a 60- to 90-day study expectation and the only express path to seek a 90-day abeyance.",
+      unique: "NYISO is the tariff-gap case. It runs load interconnection for projects over 10 MW at ‘115 kV’ and above largely off-tariff: the study details, deposits, and assumptions sit in non-tariff documents, and its tariff ‘lacks a definition of large load’ as a category. With co-location reforms not expected until ‘2027,’ E-12 converts that off-tariff practice into show-cause issues: a 60-to-90-day study expectation, a new large-load definition with readiness requirements to deter speculation, and the only order’s express path to request a 90-day abeyance.",
       asks: [
         "How NYISO and its TOs will timely study transmission service — within 60–90 days of a request (P 44).",
         "Why a pro forma cost-recovery agreement is not necessary to ensure just and reasonable rates, or else propose one (P 89).",
@@ -493,7 +494,7 @@ window.FERC_DATA = (function () {
     respondents: "PJM + its transmission owners",
     kind: "Order on rehearing, clarification, compliance & paper hearing",
     status: "The co-location order the six build on",
-    unique: "E-2 is the co-location order the other six extend. Voted the same morning, it closes out PJM’s December 18, 2025 §206 co-location proceeding (193 FERC ¶ 61,217) by resolving rehearing, clarification, a compliance filing, and a paper hearing at once. It modifies and sets aside the December Order in part, accepts PJM’s compliance filing only in part, and — the consequential piece — fixes the just-and-reasonable rates, terms, and conditions for the three new transmission services the §206 orders now push into every other region: Interim NITS, Firm Contract Demand (FCD), and Non-Firm Contract Demand (NFCD). It also rewrites the retail behind-the-meter-generation netting rules with a transition path for existing participants, and rejects PJM’s proposed cap tying required NFCD service to the co-located generator’s dedicated megawatts. Commissioner Chang concurs separately on the still-open ‘minimum charge’ cost-shift question.",
+    unique: "E-2 is the co-location order the other six extend. Voted the same morning, it closes out PJM’s December 18, 2025 §206 co-location proceeding (193 FERC ¶ 61,217) by resolving rehearing, clarification, a compliance filing, and a paper hearing at once. It modifies and sets aside the December Order in part, accepts PJM’s compliance filing only in part, and (most consequentially) fixes the just-and-reasonable rates, terms, and conditions for the three new transmission services the §206 orders now push into every other region: Interim NITS, Firm Contract Demand (FCD), and Non-Firm Contract Demand (NFCD). It also rewrites the retail behind-the-meter-generation netting rules with a transition path for existing participants, and rejects PJM’s proposed cap tying required NFCD service to the co-located generator’s dedicated megawatts. Commissioner Chang concurs separately on the still-open ‘minimum charge’ cost-shift question.",
     asks: [
       "Rehearing & clarification: the December Order is modified and set aside in part; the clarification requests are granted in part and denied in part.",
       "Compliance: PJM’s compliance filing is accepted in part and rejected in part, with a further compliance filing due in 60 days.",
@@ -507,13 +508,13 @@ window.FERC_DATA = (function () {
       { t: "December Order set aside in part", q: "we are modifying the discussion in the December Order and setting aside the order, in part", p: "FPA § 313(a)", pg: 5 },
     ],
     reg: [
-      { t: "E-2 resolves rehearing of PJM’s December 18, 2025 §206 co-location order (193 FERC ¶ 61,217) — the show cause proceeding the other six orders cite as their template.", p: "p. 2", pg: 2, a: "On December 18, 2025, the Commission issued an order in the show cause proceeding in Docket No. EL25-49-000" },
+      { t: "E-2 resolves rehearing of PJM’s December 18, 2025 §206 co-location order (193 FERC ¶ 61,217), the show cause proceeding the other six orders cite as their template.", p: "p. 2", pg: 2, a: "On December 18, 2025, the Commission issued an order in the show cause proceeding in Docket No. EL25-49-000" },
       { t: "On compliance, PJM must set the specific Tariff terms an Interconnection Customer in PJM seeking to serve Co-Located Load must follow to effectuate a Co-Location Arrangement.", p: "p. 3", pg: 3, a: "Interconnection Customer in PJM seeking to serve Co-Located Load must follow" },
       { t: "The Commission rejected PJM’s proposed NFCD ‘Maximum Facility Output’ limit, which would have tied required service to the megawatts of the co-located generator dedicated to the load.", p: "p. 271", pg: 271, a: "we reject PJM’s proposal" },
       { t: "On the ‘minimum charge’ question, the Commission found the record does not adequately support either the need for an additional charge at this time or how to calculate one.", p: "p. 277", pg: 277, a: "the record does not adequately support either the need for an additional charge at this time" },
     ],
     // Only Commissioner Chang filed a separate statement on E-2 (the others did not write separately here).
-    commish: { chang: { pg: 276, quote: "I write separately to address the Commission’s resolution of the “minimum charge” issue raised in my concurrence to the December Order", gist: "Chang is the lone separate writer on E-2. She concurs on the resolution of the ‘minimum charge’ question — the Commission found the record did not yet support an added charge for co-located loads that take little or no transmission service — and says she stands ready to consider §205 filings or §206 complaints, including sua sponte action, if that cost shift actually appears." } },
+    commish: { chang: { pg: 276, quote: "I write separately to address the Commission’s resolution of the “minimum charge” issue raised in my concurrence to the December Order", gist: "Chang is the lone separate writer on E-2. She concurs on the resolution of the ‘minimum charge’ question: the Commission found the record did not yet support an added charge for co-located loads that take little or no transmission service. She says she stands ready to consider §205 filings or §206 complaints, including sua sponte action, if that cost shift actually appears." } },
   };
 
   const jurisdiction = [
