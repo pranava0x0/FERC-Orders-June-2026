@@ -2,8 +2,9 @@
 
 > From the DOE §403 ANOPR (Docket RM26-4-000) to FERC’s June 18, 2026 tailored §206 show cause orders
 
-On October 23, 2025, the Department of Energy used its rarely invoked § 403 authority to direct FERC to open a rulemaking on the interconnection of large loads such as data centers (Docket RM26-4-000).
-Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO, putting all six markets on a 30/60-day clock to defend or revise their large-load tariffs.
+On October 23, 2025, the Department of Energy invoked its rarely used § 403 authority to direct FERC to open a rulemaking on connecting large loads (data centers, AI, advanced manufacturing) to the interstate grid (Docket RM26-4-000), and asked for final action by April 30, 2026.
+Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.
+The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC issued Item E-2 (EL25-49-002), the order on rehearing that finalizes the rates and terms for the three new transmission services its PJM co-location proceeding created, the same services the six orders extend to every other region.
 
 A static, independent analysis microsite (not affiliated with FERC or DOE). Source of truth: docs/js/data.js. Evidence is kept in three visibly distinct tiers: FERC primary, DOE primary, and secondary analysis.
 
@@ -31,6 +32,10 @@ Each order PDF is committed and served at the page-precise link below; the offic
 - [E-10 CAISO, EL26-71-000, 195 FERC ¶ 61,214, 118 pp](https://pranava0x0.github.io/FERC-Orders-June-2026/orders/e-10-caiso-el26-71-000.pdf): No Order No. 888 service. Region: California (+ WEIM footprint). Official: https://www.ferc.gov/media/e-10-el26-71-000
 - [E-11 ISO-NE, EL26-72-000, 195 FERC ¶ 61,215, 115 pp](https://pranava0x0.github.io/FERC-Orders-June-2026/orders/e-11-isone-el26-72-000.pdf): Transmission-constrained grid. Region: Six New England states. Official: https://www.ferc.gov/media/e11-el26-72-000
 - [E-12 NYISO, EL26-69-000, 195 FERC ¶ 61,216, 119 pp](https://pranava0x0.github.io/FERC-Orders-June-2026/orders/e-12-nyiso-el26-69-000.pdf): Largely outside the tariff today. Region: New York State. Official: https://www.ferc.gov/media/e12-el26-69-000
+
+## The PJM co-location rehearing order the six extend (Item E-2)
+
+- [E-2 PJM Interconnection, L.L.C., EL25-49-002, 195 FERC ¶ 61,209, 278 pp](https://pranava0x0.github.io/FERC-Orders-June-2026/orders/e-2-pjm-el25-49-002.pdf): Order on rehearing, clarification, compliance & paper hearing on the December 18, 2025 PJM Co-Location Order (193 FERC ¶ 61,217), issued June 18, 2026. Finalizes PJM’s co-location services (Interim NITS, FCD, NFCD) — the services the six §206 orders extend. Official: https://www.ferc.gov/media/e-2-el25-49-002
 
 ## The five reform categories
 
