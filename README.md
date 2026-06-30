@@ -14,12 +14,15 @@ Built for an energy-regulatory audience. Six tabs:
    orders over a generic NOPR.
 3. **Reforms**: the five reform categories, the transmission-vs-retail jurisdictional boundary, and the
    per-RTO regional distinctions, grounded in the orders' published framing.
-4. **Dockets (E-7 to E-12)**: six collapsible per-RTO accordions (the common §206 spine the orders share
-   lives in the Reforms tab) — open one for what's unique to that system, the quoted directives
+4. **Dockets (E-7 to E-12, plus E-2)**: six collapsible per-RTO accordions (the common §206 spine the orders
+   share lives in the Reforms tab) — open one for what's unique to that system, the quoted directives
    (page-linked to the committed PDF and ferc.gov), the system-specific Section IV asks, what each
-   commissioner said about that order (quote + page cite, both links), a variable-length distinct-findings
-   list including each region's existing-tariff mechanics (each finding page-cited to the PDF + ferc.gov),
-   and the full named-respondent roster — plus how to file or follow each docket.
+   commissioner said about that order (their substantive read + headline quote + page cite, both links),
+   a variable-length distinct-findings list including each region's existing-tariff mechanics (each finding
+   page-cited to the PDF + ferc.gov), and the full named-respondent roster. A seventh card holds **Item E-2**
+   (EL25-49-002, 195 FERC ¶ 61,209) — the PJM co-location *Order on Rehearing, Clarification, Compliance, and
+   Paper Hearing*, decided the same June 18 meeting, that fixes the three new transmission services the six
+   orders extend. Plus how to file or follow each docket.
 5. **Comments (RM26-4)**: the comment-period summary, split into three sub-tabs to cut the scroll —
    *Themes & categories* (stats, rounds, top themes, the stance-by-reform map, and the three-lens aggregate),
    *Respondent types* (19 stakeholder categories), and *All comments* (all 273 comments in filing order,
@@ -50,10 +53,11 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 47 tests across the suites
+node --test tests/*.test.mjs   # 56 tests across the suites
+node tools/verify-quotes.mjs   # whole-site quote audit (one command; --list for every quote)
 ```
 
-Two suites, no dependencies:
+Suites, no dependencies:
 
 - `tests/data.test.mjs`: data-layer integrity. All six dockets present and correctly mapped, all five
   reform categories, every source id resolves, count floors, archive URLs present, every displayed
@@ -69,6 +73,11 @@ Two suites, no dependencies:
   summaries and their generated bin-detail files — every quote verbatim in its source, controlled
   vocabulary, count floors, and each `docs/data/comments/<acc>.json` traces bin-for-bin and
   quote-for-quote back to `sources/comments/summaries-v2/` (a stale rebuild fails loud).
+- `tests/quote-coverage.test.mjs` + [`tools/verify-quotes.mjs`](tools/verify-quotes.mjs): the whole-site
+  quote sweep. Every structured quote (order directives & findings, commissioner statements, discourse
+  voice/theme quotes) must appear verbatim in its committed source, and every embedded prose quote (in
+  `unique`, the Overview summary, toplines) must resolve in the corpus. Run the script for a one-shot
+  report; spoken auto-caption quotes are flagged as unverifiable (they live on YouTube, off the text).
 
 ## Deploy (GitHub Pages)
 
@@ -90,6 +99,14 @@ The site is fully static; no Actions required.
   [`sources/orders-extract.json`](sources/orders-extract.json). The six PDFs are committed under
   [`docs/orders/`](docs/orders/) and served by GitHub Pages (so `#page=` opens inline at the cited
   page); they remain re-downloadable from the linked ferc.gov URLs.
+- **Item E-2** — the PJM co-location *rehearing* order (**EL25-49-002, 195 FERC ¶ 61,209**, 278 pp), the
+  *Order on Rehearing, Clarification, Compliance Filing, and Paper Hearing* on the December 18, 2025 PJM
+  Co-Location Order (193 FERC ¶ 61,217), voted the same June 18, 2026 meeting and finalizing the three new
+  transmission services the six orders extend —
+  was downloaded the same way (browser past Cloudflare, then PyMuPDF text extraction, page-1 caption
+  verified, captured 2026-06-30) and committed under `docs/orders/`. Its directives, findings, and
+  Commissioner Chang's separate concurrence are quoted verbatim with page cites; the structured extract
+  lives alongside the six in [`sources/orders-extract.json`](sources/orders-extract.json).
 - **RM26-4 public comments** (Docket No. RM26-4-000): all 423 docket filings scraped from FERC eLibrary,
   273 classified as comments with a per-accession file/attachment inventory, and the comment bodies
   downloaded and text-extracted under [`sources/comments/files/`](sources/comments/files/). The

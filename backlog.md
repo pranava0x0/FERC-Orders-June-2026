@@ -292,3 +292,75 @@ overreach?") is folded into ideas 2 and 5.
   truth; placeholder ships `hidden` and is revealed once filled, so JS-off users still get the footer
   date). The **"next deadline <date>"** half was intentionally deferred — it depends on the HIGH
   procedural status board, which owns the deadline data.
+
+---
+
+## Comments-tab UX ideas — from a scan of public-comment-processing tools (2026-06-30)
+
+Surveyed how dedicated comment-analysis platforms present mass public comment (DocketScope, SmartComment,
+Konveio, the federal CDO Council "Comment Analysis" pilot, ICF/CommentWorks, and the academic comment-viz
+literature). Patterns worth borrowing for our read-only, static RM26-4 Comments tab, ranked by value/effort
+for a zero-dependency site:
+
+- **HIGH — Stance-by-reform aggregate visualization (diverging stacked bar / heatmap).** Every tool leads
+  with a "level of support" rollup: support / oppose / mixed per issue, sliceable by stakeholder type. We
+  already store per-bin stances on the audited letters; surface an at-a-glance diverging bar per reform
+  principle (and an org-type × reform heatmap). Blocked on coverage — only ~9 flagships carry full stances
+  today; depends on extending audited stances to more letters (see the model-delta note). Pure SVG, no dep.
+- **HIGH — Issue-outline ("by issue") navigation.** DocketScope's core view is a hierarchical issue
+  outline: click an issue, see every comment that raised it with its quotes. We have the three lenses
+  (ANOPR questions / reform principles / regions) and per-letter bins; add a "browse by issue" mode that
+  inverts the current "by comment" list — pick a principle/question/region and read the binned quotes
+  across all letters. Reuses existing data; mostly a render mode + index.
+- **MEDIUM — Form-letter / near-duplicate clustering with collapse + count.** The single biggest UX win in
+  every federal tool: detect mass-campaign/identical submissions and collapse them into one row with an
+  "N identical/near-identical" badge so they don't drown the unique substance. Our 273 are mostly distinct
+  orgs, but worth a near-duplicate pass (shingled/MinHash on the extracted text) to confirm and to label
+  any campaign clusters. Data-layer (build step) + a collapse affordance in the list.
+- **MEDIUM — Top-phrases / keyword-frequency chips per lens.** Academic viz tools show a per-cluster phrase
+  cloud. Lightweight version: top distinctive terms per reform/region computed from the keyword pass,
+  rendered as a small chip row under each theme. Cheap, additive, no new data model.
+- **LOW — "Similar filers" links.** Several tools surface "comments most closely related." Useful but heavy
+  for a static site (needs a similarity matrix); defer.
+- **LOW — Interactive geographic map of comments.** SmartComment maps comments by location. We have the six
+  RTO-region tags, but a US map adds real page weight to a deliberately light site; a region-faceted list
+  (already have region filtering) covers most of the value. Defer unless region geography becomes a focus.
+- **Already have (parity check):** faceted search/filter by org/type/lens/position, drill-down to the
+  audit trail (quotes → eLibrary), per-tag match counts, and a quote-centric extraction view. These match
+  the table-stakes features of the commercial tools.
+
+Sources: [DocketScope](https://www.docketscope.com/public-comment-software-comment-analysis-tool/) ·
+[Federal CDOC Comment Analysis toolset](https://resources.data.gov/resources/cdoc_comment_analysis/) ·
+[SmartComment](https://www.smartcomment.com/features/) ·
+[Konveio analytics](https://www.konveio.com/features/analytics-reporting) ·
+[ICF GenAI comment analysis](https://www.icf.com/clients/technology/regulations-gov-gen-ai-public-comment-analysis).
+
+---
+
+## Comment-summary model tier — normalize + verify (2026-06-30)
+
+State today: 268 audited summaries, all `provenance.verified:false`, split **Sonnet 4.6 ×183 / Haiku 4.5
+×62 / Opus 4.8 ×22 (the flagships) / 1 unlabeled**. The flagships were deliberately re-authored on Opus
+after starting as Haiku, i.e. Haiku quality was judged insufficient where it mattered most. Established
+facts (agent-runs.md Runs 5–9): the full corpus cost **~13M tokens regardless of model** — token COUNT is
+set by the per-agent floor (~25–30K) and the verbatim-quote validate→fix loop, not by the model; Haiku
+even *loops more* (~25 tool calls/agent), so it's cheaper per token but not fewer tokens, and lower
+quality. So model choice moves **$/token and quality, not token count.**
+
+Recommended next steps, in order:
+
+- **MEDIUM — Re-author the 62 Haiku summaries on Sonnet** (or Opus for any high-profile filer) to lift the
+  whole corpus to at least the Sonnet floor and retire the weakest tier. Bounded job (~62 × ~50K ≈ 3.1M
+  tokens); run in budget-sized, checkpointed chunks (commit per chunk) per the self-healing worklist —
+  never a single fan-out (see the Run 8 budget blowup). Stamp `provenance.model` on the rewrite.
+- **MEDIUM — Stamp `verified_at` via a sampled human/deterministic pass.** Everything is `verified:false`.
+  The next real quality lever is not another model swap but verification: spot-check a stratified sample
+  (by org type + by model tier), fix, stamp `verified_at`, and fold each human edit into a few-shot
+  example for any future re-runs (the feedback-alignment loop in CLAUDE.md's AI-cost section).
+- **LOW — Batch several short filings per agent** before any re-run. This is the only lever that actually
+  cuts token COUNT (removes the per-agent floor); pair it with the Haiku→Sonnet rewrite so the rewrite is
+  cheaper than the original pass, not just better.
+- **Decision: drop Haiku for this task.** No token-count benefit, measurably more validate-fix looping,
+  and a quality gap the flagship re-authoring already conceded. Default workhorse = **Sonnet**; reserve
+  **Opus** for synthesis/judgment-heavy flagships; keep the deterministic keyword + linter gate in front
+  of any LLM audit (that gate, not the model, is where the savings are).
