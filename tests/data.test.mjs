@@ -525,12 +525,14 @@ test("comments-data.js (Comments tab) is consistent with the scraped manifest", 
   // consensus heatmap: bucket x reform matrix. Each cell's stances sum to its total, net is consistent,
   // and a cell's total never exceeds that bucket's letter count; rows are real buckets sorted by engagement.
   assert.ok(Array.isArray(CM.bucketStances) && CM.bucketStances.length >= 6, `consensus map has rows (${(CM.bucketStances || []).length} >= 6)`);
+  // `letters` is the count of AUDITED letters in the bucket (the cells tally stances from audited
+  // summaries, and the UI labels the number "audited letters") — not the all-filings bucket size.
   const bucketCount = {};
-  for (const c of CM.list) bucketCount[c.bucket] = (bucketCount[c.bucket] || 0) + 1;
+  for (const c of CM.list) if (c.s2) bucketCount[c.bucket] = (bucketCount[c.bucket] || 0) + 1;
   let lastEngaged = Infinity;
   for (const row of CM.bucketStances) {
     assert.ok(row.bucket && row.label, `bucketStances ${row.bucket} has bucket/label`);
-    assert.equal(row.letters, bucketCount[row.bucket], `bucketStances ${row.bucket} letter count matches the list`);
+    assert.equal(row.letters, bucketCount[row.bucket], `bucketStances ${row.bucket} audited-letter count matches the list`);
     assert.equal(row.cells.length, 5, `bucketStances ${row.bucket} has a cell per reform principle`);
     assert.ok(row.engaged >= 4, `bucketStances ${row.bucket} clears the engagement floor`);
     assert.ok(row.engaged <= lastEngaged, `bucketStances is sorted by engagement (desc)`);
