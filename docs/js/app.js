@@ -214,7 +214,10 @@
         esc(d.pdf) + '" title="Open the ' + esc(d.item) + " order PDF (committed copy of the ferc.gov original)\">Order PDF ↗</a>" +
         '<a class="order-src" target="_blank" rel="noopener noreferrer" href="' + esc(so.url) +
         '" title="Official source on ferc.gov (Cloudflare-gated; the committed copy mirrors it)">ferc.gov ↗</a></span>';
-      var directives = '<div class="dir"><span class="label">Directs the respondent to address</span>' +
+      // E-2 is a final order on rehearing, not a §206 show cause order: its rows are holdings, not
+      // directives an RTO must still answer. Label them accordingly so the card doesn't read as an open clock.
+      var dirLabel = d.track ? "What this order holds" : "Directs the respondent to address";
+      var directives = '<div class="dir"><span class="label">' + dirLabel + "</span>" +
         d.dir.map(function (x) {
           var cite;
           if (x.pg) {
@@ -237,13 +240,17 @@
             "</span>" + cite + "</div>" +
             '<span class="dir-quote">“' + esc(x.q) + '”</span></div>';
         }).join("") + "</div>";
+      // A final order (E-2) carries a `kind` line up top so its nature reads at a glance vs the open §206 clocks.
+      var kindLine = d.kind ? '<div class="docket-kind">' + esc(d.kind) + ' · final order</div>' : "";
       var unique = d.unique ? '<div class="docket-unique"><span class="label">What’s unique to ' + esc(d.rto) + '</span><p>' + esc(d.unique) + "</p></div>" : "";
-      var asks = (d.asks && d.asks.length) ? '<div class="docket-asks"><span class="label">What FERC presses ' + esc(d.rto) + ' on</span><ul>' +
+      var asksLabel = d.track ? "What the order decides" : "What FERC presses " + esc(d.rto) + " on";
+      var asks = (d.asks && d.asks.length) ? '<div class="docket-asks"><span class="label">' + asksLabel + '</span><ul>' +
         d.asks.map(function (a) { return "<li>" + esc(a) + "</li>"; }).join("") + "</ul></div>" : "";
-      // Section IV briefing questions: the formal questions the order directs the RTO/ISO to brief.
-      // Templated across orders (data.js `briefing`); page link to where § IV opens in this order's PDF.
+      // Section IV briefing questions: the formal questions a §206 show cause order directs the RTO/ISO to
+      // brief. Only the six show cause orders have them — gate on a Section IV page so the E-2 final order
+      // (which has no briefing) doesn't render these templated questions as if they were its own.
       var briefing = "";
-      if (D.briefing && D.briefing.questions) {
+      if (D.briefing && D.briefing.questions && D.briefing.pages && D.briefing.pages[d.item]) {
         var bOmit = (D.briefing.omit && D.briefing.omit[d.item]) || [];
         var bpg = D.briefing.pages && D.briefing.pages[d.item];
         var bqs = D.briefing.questions.filter(function (q) { return bOmit.indexOf(q.id) < 0; });
@@ -287,7 +294,7 @@
         '<span class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</span></span>" +
         '<span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span>" +
         '<span class="chev" aria-hidden="true">›</span></summary>' +
-        '<div class="docket-body">' + orderLink + unique + directives + asks + briefing + commish + region + roster + "</div></details>";
+        '<div class="docket-body">' + orderLink + kindLine + unique + directives + asks + briefing + commish + region + roster + "</div></details>";
     }
     // The six §206 show cause orders, then the E-2 co-location order they build on (collapsed, labeled).
     var six = D.dockets.map(renderDocketCard).join("");
