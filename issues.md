@@ -14,6 +14,20 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-06-30 · a11y · collapsible-section titles dropped their heading semantics.** Folding the
+  Toplines / Jurisdictional / Regional / Discourse `head()` sections into `<details>` accordions rendered
+  the title as a styled `<span class="acc-h2">`, so screen-reader heading navigation and the document
+  outline lost seven section landmarks. Root cause: **code** (semantic regression in `accSection`). Status:
+  **Fixed** (PR #10) — the span now carries `role="heading" aria-level="2"`. Flagged by Codex and the
+  inline code review. (A first pass used a real `<h2>`, reverted after a block heading in a flex `<summary>`
+  read as 800 px mid-reflow; see the DESIGN.md "don't trust a mid-reflow measurement" note — the 800 px was
+  a measurement artifact, the steady-state height is fine, but span+role is the lighter summary anyway.)
+- **2026-06-30 · honesty · consensus heatmap could colour an all-neutral cell "contested" (amber).** A cell
+  whose audited letters all take a *neutral* stance has net 0, which banded as `mixed`/"contested" — overstating
+  friction in a map whose point is consensus-vs-contest (one real cell today: Oil & gas × proximate generation,
+  below the displayed top-12). Root cause: **code** (band ignored the all-neutral case). Status: **Fixed**
+  (PR #10) — `band()` returns a `neutral` "no position" band when support+oppose+mixed is 0; the legend keys
+  it only when present. Found by the inline review.
 - **2026-06-30 · accuracy · E-2 "minimum charge" finding cited p.277 (inside Chang's concurrence) for a
   majority holding.** The majority's determination ("does not adequately *substantiate*… we decline to
   establish an additional charge") is on pp.207–208; p.277 is Chang's individual statement and uses her
