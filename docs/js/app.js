@@ -292,7 +292,7 @@
     // The six §206 show cause orders, then the E-2 co-location order they build on (collapsed, labeled).
     var six = D.dockets.map(renderDocketCard).join("");
     var colo = D.colocation
-      ? '<div class="docket-section-label">The co-location order the six build on</div>' + renderDocketCard(D.colocation, 1)
+      ? '<div class="docket-section-label">The order finalizing PJM’s co-location services</div>' + renderDocketCard(D.colocation, 1)
       : "";
     var docs = '<div class="dockets">' + six + colo + "</div>";
 
@@ -309,7 +309,7 @@
     var participate = '<p class="lede" style="margin-bottom:14px">' + esc(p.intro) + "</p>" + partRows + partLinks;
 
     return head("The dockets: E-7 through E-12, plus the E-2 co-location order",
-      "Every §206 order runs the same spine — the five categories, the clock, and the jurisdictional line are in the Reforms tab; each card here is the region-specific variation. Open one for what’s unique to that system, the page-cited directives and distinct findings, the Section IV asks, what each commissioner said about that order, and every named respondent. After the six sits Item E-2 (EL25-49-002), the PJM co-location order, decided the same morning, that the six build on.") +
+      "Every §206 order runs the same spine — the five categories, the clock, and the jurisdictional line are in the Reforms tab; each card here is the region-specific variation. Open one for what’s unique to that system, the page-cited directives and distinct findings, the Section IV asks, what each commissioner said about that order, and every named respondent. After the six sits Item E-2 (EL25-49-002), the order on rehearing decided the same morning that finalizes the PJM co-location services the six extend.") +
       docs +
       head("File or follow the dockets", "Every proceeding is open on the public record. Use the exact docket number on any submission.") + participate;
   }

@@ -64,10 +64,11 @@ export function buildLlmsTxt(D) {
   if (D.colocation) {
     const c = D.colocation;
     const so = D.SOURCES[c.url];
-    out.push("## The co-location order the six build on (Item E-2)", "");
+    out.push("## The PJM co-location rehearing order the six extend (Item E-2)", "");
     out.push(
       `- [${c.item} ${c.rtoFull}, ${c.docket}, ${c.cite}, ${c.pages} pp](${SITE}${c.pdf}): ` +
-        `${c.kind}, issued June 18, 2026. ${c.status}. Official: ${so.url}`,
+        `${c.kind} on the December 18, 2025 PJM Co-Location Order (193 FERC ¶ 61,217), issued June 18, 2026. ` +
+        `${c.status} (Interim NITS, FCD, NFCD) — the services the six §206 orders extend. Official: ${so.url}`,
       "",
     );
   }

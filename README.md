@@ -53,10 +53,11 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 47 tests across the suites
+node --test tests/*.test.mjs   # 56 tests across the suites
+node tools/verify-quotes.mjs   # whole-site quote audit (one command; --list for every quote)
 ```
 
-Two suites, no dependencies:
+Suites, no dependencies:
 
 - `tests/data.test.mjs`: data-layer integrity. All six dockets present and correctly mapped, all five
   reform categories, every source id resolves, count floors, archive URLs present, every displayed
@@ -72,6 +73,11 @@ Two suites, no dependencies:
   summaries and their generated bin-detail files — every quote verbatim in its source, controlled
   vocabulary, count floors, and each `docs/data/comments/<acc>.json` traces bin-for-bin and
   quote-for-quote back to `sources/comments/summaries-v2/` (a stale rebuild fails loud).
+- `tests/quote-coverage.test.mjs` + [`tools/verify-quotes.mjs`](tools/verify-quotes.mjs): the whole-site
+  quote sweep. Every structured quote (order directives & findings, commissioner statements, discourse
+  voice/theme quotes) must appear verbatim in its committed source, and every embedded prose quote (in
+  `unique`, the Overview summary, toplines) must resolve in the corpus. Run the script for a one-shot
+  report; spoken auto-caption quotes are flagged as unverifiable (they live on YouTube, off the text).
 
 ## Deploy (GitHub Pages)
 
@@ -93,8 +99,10 @@ The site is fully static; no Actions required.
   [`sources/orders-extract.json`](sources/orders-extract.json). The six PDFs are committed under
   [`docs/orders/`](docs/orders/) and served by GitHub Pages (so `#page=` opens inline at the cited
   page); they remain re-downloadable from the linked ferc.gov URLs.
-- **Item E-2** — the PJM co-location order (**EL25-49-002, 195 FERC ¶ 61,209**, 278 pp), the *Order on
-  Rehearing, Clarification, Compliance Filing, and Paper Hearing* voted the same June 18, 2026 meeting —
+- **Item E-2** — the PJM co-location *rehearing* order (**EL25-49-002, 195 FERC ¶ 61,209**, 278 pp), the
+  *Order on Rehearing, Clarification, Compliance Filing, and Paper Hearing* on the December 18, 2025 PJM
+  Co-Location Order (193 FERC ¶ 61,217), voted the same June 18, 2026 meeting and finalizing the three new
+  transmission services the six orders extend —
   was downloaded the same way (browser past Cloudflare, then PyMuPDF text extraction, page-1 caption
   verified, captured 2026-06-30) and committed under `docs/orders/`. Its directives, findings, and
   Commissioner Chang's separate concurrence are quoted verbatim with page cites; the structured extract
