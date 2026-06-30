@@ -172,9 +172,41 @@
       head("Regional distinctions at a glance", "The variations FERC says the orders were designed to reflect.") + reg;
   }
 
-  /* ---- TAB: Dockets (the six order cards + how to participate) ---- */
+  // Per-order commissioner block. For the six §206 orders the concurrences are largely common, so
+  // each row shows the commissioner's substantive gist + headline quote, cited to THIS order's page.
+  // E-2 carries a `commish` override (only Chang wrote separately) with its own order-specific read.
+  function commishBlock(d, so) {
+    if (!D.commissioners) return "";
+    var override = d.commish || null;
+    var list = D.commissioners.filter(function (c) {
+      return override ? override[c.key] : (d.commishPages && d.commishPages[c.key]);
+    });
+    if (!list.length) return "";
+    var rows = list.map(function (c) {
+      var ov = override && override[c.key];
+      var pg = ov ? ov.pg : d.commishPages[c.key];
+      var gist = ov ? ov.gist : c.gist;
+      var quote = ov ? ov.quote : c.quote;
+      var links = pg ? '<span class="commish-cite"><span class="dir-para mono">p. ' + pg + "</span>" +
+        '<a class="cite-link" href="' + esc(d.pdf) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open ' + esc(c.name) +
+        "’s statement in the committed " + esc(d.item) + " order PDF at page " + pg + '" title="Committed PDF, opens inline to p. ' + pg +
+        '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
+        '<a class="cite-link" href="' + esc(so.url) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov ' + esc(d.item) +
+        " order at page " + pg + '" title="Official ferc.gov source, page ' + pg + '">gov <span class="ext" aria-hidden="true">↗</span></a></span>' : "";
+      return '<div class="commish-row"><div class="commish-row-head"><span class="commish-name">' + esc(c.name) +
+        '</span><span class="commish-tag">' + esc(c.short) + "</span>" + links + "</div>" +
+        (gist ? '<p class="commish-rgist">' + esc(gist) + "</p>" : "") +
+        '<div class="commish-quote">“…' + esc(quote) + '…”</div></div>';
+    }).join("");
+    var note = override ? "" :
+      '<p class="commish-block-note">The five concurrences are largely common across the six orders — full themes and quotes are on the Overview tab. The page cites here open <em>this</em> order’s PDF.</p>';
+    return '<details class="dreg dcom"><summary>What the commissioners said in this order (' + list.length + ")</summary>" +
+      note + '<div class="commish-rows">' + rows + "</div></details>";
+  }
+
+  /* ---- TAB: Dockets (the six §206 order cards + the E-2 co-location order + how to participate) ---- */
   function renderDockets() {
-    var docs = '<div class="dockets">' + D.dockets.map(function (d, idx) {
+    function renderDocketCard(d, idx) {
       var so = D.SOURCES[d.url];
       // Link to the committed copy under docs/orders/ (served by GitHub Pages, same-origin) so the
       // PDF opens inline and #page= works; the official ferc.gov source sits behind Cloudflare.
@@ -226,21 +258,8 @@
               '<span class="brief-quote">“…' + esc(q.v) + '…”</span></li>';
           }).join("") + "</ol></details>";
       }
-      // Per-order commissioner statements: the same five concurrences, cited to THIS order's pages.
-      var commish = (d.commishPages && D.commissioners) ?
-        '<details class="dreg dcom"><summary>What the commissioners said in this order (' + D.commissioners.length + ")</summary><div class=\"commish-rows\">" +
-        D.commissioners.map(function (c) {
-          var pg = d.commishPages[c.key];
-          var links = pg ? '<span class="commish-cite"><span class="dir-para mono">p. ' + pg + "</span>" +
-            '<a class="cite-link" href="' + esc(d.pdf) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open ' + esc(c.name) +
-            "’s concurring statement in the committed " + esc(d.item) + " order PDF at page " + pg + '" title="Committed PDF, opens inline to p. ' + pg +
-            '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
-            '<a class="cite-link" href="' + esc(so.url) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov ' + esc(d.item) +
-            " order at page " + pg + '" title="Official ferc.gov source, page ' + pg + '">gov <span class="ext" aria-hidden="true">↗</span></a></span>' : "";
-          return '<div class="commish-row"><div class="commish-row-head"><span class="commish-name">' + esc(c.name) +
-            '</span><span class="commish-tag">' + esc(c.short) + "</span>" + links + "</div>" +
-            '<div class="commish-quote">“…' + esc(c.quote) + '…”</div></div>';
-        }).join("") + "</div></details>" : "";
+      // Per-order commissioner statements, cited to THIS order's pages (helper below).
+      var commish = commishBlock(d, so);
       var region = '<details class="dreg"><summary>What’s distinct about ' + esc(d.rto) + " (" + d.reg.length + ")</summary><ul>" +
         d.reg.map(function (r) {
           var rc = "";
@@ -260,15 +279,22 @@
       var roster = (d.respondentList && d.respondentList.length) ?
         '<details class="dreg dros"><summary>All ' + d.respondentList.length + " named respondents</summary><ul class=\"roster\">" +
         d.respondentList.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></details>" : "";
-      // Accordion: collapsed by default (first open) so all six fit on one screen; expand for detail.
-      return '<details class="docket"' + (idx === 0 ? " open" : "") + ">" +
+      // Accordion: collapsed by default (first open) so all cards fit on one screen; expand for detail.
+      var track = d.track ? '<span class="docket-track">' + esc(d.track) + "</span>" : "";
+      return '<details class="docket' + (d.track ? " docket-colo" : "") + '"' + (idx === 0 ? " open" : "") + ">" +
         '<summary class="docket-sum"><span class="item">' + esc(d.item) + "</span>" +
-        '<span class="docket-sum-id"><span class="rto">' + esc(d.rto) + '</span> <span class="rto-full">' + esc(d.rtoFull) + "</span>" +
+        '<span class="docket-sum-id"><span class="rto">' + esc(d.rto) + "</span> " + track + '<span class="rto-full">' + esc(d.rtoFull) + "</span>" +
         '<span class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</span></span>" +
         '<span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span>" +
         '<span class="chev" aria-hidden="true">›</span></summary>' +
         '<div class="docket-body">' + orderLink + unique + directives + asks + briefing + commish + region + roster + "</div></details>";
-    }).join("") + "</div>";
+    }
+    // The six §206 show cause orders, then the E-2 co-location order they build on (collapsed, labeled).
+    var six = D.dockets.map(renderDocketCard).join("");
+    var colo = D.colocation
+      ? '<div class="docket-section-label">The co-location order the six build on</div>' + renderDocketCard(D.colocation, 1)
+      : "";
+    var docs = '<div class="dockets">' + six + colo + "</div>";
 
     var p = D.participate;
     var partRows = '<div class="docket-links">' + p.dockets.map(function (d) {
@@ -282,8 +308,8 @@
     }).join("") + "</div>";
     var participate = '<p class="lede" style="margin-bottom:14px">' + esc(p.intro) + "</p>" + partRows + partLinks;
 
-    return head("The six dockets: E-7 through E-12",
-      "Every order runs the same §206 spine — the five categories, the clock, and the jurisdictional line are in the Reforms tab; each card here is the region-specific variation. Open one for what’s unique to that system, the page-cited directives and distinct findings, the Section IV asks, what each commissioner said about that order, and every named respondent.") +
+    return head("The dockets: E-7 through E-12, plus the E-2 co-location order",
+      "Every §206 order runs the same spine — the five categories, the clock, and the jurisdictional line are in the Reforms tab; each card here is the region-specific variation. Open one for what’s unique to that system, the page-cited directives and distinct findings, the Section IV asks, what each commissioner said about that order, and every named respondent. After the six sits Item E-2 (EL25-49-002) — the PJM co-location order, decided the same morning, that the six build on.") +
       docs +
       head("File or follow the dockets", "Every proceeding is open on the public record. Use the exact docket number on any submission.") + participate;
   }

@@ -61,6 +61,17 @@ export function buildLlmsTxt(D) {
   }
   out.push("");
 
+  if (D.colocation) {
+    const c = D.colocation;
+    const so = D.SOURCES[c.url];
+    out.push("## The co-location order the six build on (Item E-2)", "");
+    out.push(
+      `- [${c.item} ${c.rtoFull}, ${c.docket}, ${c.cite}, ${c.pages} pp](${SITE}${c.pdf}): ` +
+        `${c.kind}, issued June 18, 2026. ${c.status}. Official: ${so.url}`,
+      "",
+    );
+  }
+
   out.push("## The five reform categories", "");
   for (const c of D.categories) out.push(`- ${c.n}. ${c.title}: ${c.ferc}`);
   out.push("");

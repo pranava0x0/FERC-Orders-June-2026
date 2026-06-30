@@ -52,6 +52,7 @@ const ORDER_PDF_BY_ITEM = {
 };
 
 const ORDER_TXT_BY_ITEM = {
+  "E-2": ["sources", "text", "orders", "e-2-pjm-el25-49-002.txt"],
   "E-7": ["sources", "text", "orders", "e-7-pjm-el26-67-000.txt"],
   "E-8": ["sources", "text", "orders", "e-8-miso-el26-70-000.txt"],
   "E-9": ["sources", "text", "orders", "e-9-spp-el26-68-000.txt"],
@@ -310,7 +311,8 @@ test("displayed order metadata matches the extracted PDF text", () => {
       sourceTextSupportsClaim(docket.respondents, extract.respondents),
       `${docket.item} respondents claim must be supported by extracted text`,
     );
-    assert.equal(D.SOURCES[docket.url].captured, ORDER_EXTRACT.captured_at, `${docket.item} capture date must match extract`);
+    const expectCaptured = extract.captured_at ?? ORDER_EXTRACT.captured_at;
+    assert.equal(D.SOURCES[docket.url].captured, expectCaptured, `${docket.item} capture date must match extract`);
   }
 });
 
@@ -366,6 +368,46 @@ test("each directive citation links to a PDF page that carries its quoted text",
       );
     }
   }
+});
+
+test("E-2 co-location order is grounded in its extracted text", () => {
+  const e2 = D.colocation;
+  assert.ok(e2 && e2.item === "E-2", "D.colocation must hold the E-2 co-location order");
+
+  const extract = EXTRACT_BY_ITEM.get("E-2");
+  assert.ok(extract, "E-2 must have an extracted order entry");
+  assert.equal(extract.captionVerified, true, "E-2 caption must be verified from the PDF");
+  assert.equal(extract.fercCite, e2.cite, "E-2 FERC cite must match the extract");
+  assert.equal(extract.pages, e2.pages, "E-2 page count must match the extract");
+  assert.equal(D.SOURCES[e2.url].captured, extract.captured_at, "E-2 capture date must match its extract");
+
+  // Served PDF exists and the docket points at the committed copy.
+  assert.ok(existsSync(rootPath("docs", e2.pdf)), `E-2 served PDF (docs/${e2.pdf}) must exist`);
+  assert.ok(statSync(rootPath("docs", e2.pdf)).size > 100_000, "E-2 PDF is unexpectedly small");
+
+  const pages = loadOrderPages("E-2");
+  assert.equal(Math.max(...pages.keys()), e2.pages, "E-2 extracted page count must match displayed length");
+
+  for (const directive of e2.dir) {
+    assert.ok(Number.isInteger(directive.pg), `E-2 directive "${directive.p}" needs an integer pg`);
+    assert.ok(
+      pageCarriesQuote(directive.q, pages.get(directive.pg) ?? ""),
+      `E-2 "${directive.p}" links to page ${directive.pg}, which does not carry: ${directive.q}`,
+    );
+  }
+  for (const finding of e2.reg) {
+    const anchor = finding.a ?? finding.t;
+    assert.ok(
+      pageCarriesQuote(anchor, pages.get(finding.pg) ?? ""),
+      `E-2 regional finding cites page ${finding.pg}, which does not carry: ${anchor}`,
+    );
+  }
+  // Only Chang wrote separately on E-2; her quote must appear on the cited page.
+  const chang = e2.commish.chang;
+  assert.ok(
+    pageCarriesQuote(chang.quote, pages.get(chang.pg) ?? ""),
+    `E-2 Chang concurrence cites page ${chang.pg}, which does not carry her quote`,
+  );
 });
 
 test("docs/llms.txt is generated from data.js and in sync", () => {

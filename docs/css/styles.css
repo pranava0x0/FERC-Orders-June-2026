@@ -341,6 +341,13 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .commish-row .commish-name { font-size: 13px; }
 .commish-row .commish-cite { margin-left: auto; align-items: baseline; }
 .commish-row .commish-quote { margin-top: 2px; }
+.commish-rgist { font-size: 12.5px; line-height: 1.5; color: var(--text); margin: 4px 0 0; }
+.commish-block-note { font-size: 11px; color: var(--text-muted); line-height: 1.45; margin: 6px 0 2px; }
+
+/* E-2 co-location order — distinguished from the six §206 cards */
+.docket-section-label { grid-column: 1 / -1; margin: 16px 2px 2px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+.docket-track { flex: none; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); background: #eaf0f8; border: 1px solid #cbd9ee; border-radius: 999px; padding: 1px 8px; }
+.docket.docket-colo { border-left: 4px solid var(--accent); }
 
 /* RM26-4 comment corpus (Discourse tab) */
 .cm-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 12px; }

@@ -352,7 +352,8 @@ test("each of the five categories is referenced by at least one docket OR region
 });
 
 test("rendered docket content traces back to sources/orders-extract.json (no drift)", () => {
-  assert.equal(EXTRACT.length, 6, "extract has six orders");
+  assert.equal(EXTRACT.length, D.dockets.length + (D.colocation ? 1 : 0),
+    "extract has the six §206 orders plus the E-2 co-location order");
   D.dockets.forEach((d) => {
     const x = EXTRACT_BY_ITEM[d.item];
     assert.ok(x, `extract for ${d.item}`);
@@ -394,6 +395,7 @@ test("every extracted directive quote appears verbatim in the saved full order t
   const STEM = {
     "E-7": "e-7-pjm-el26-67-000", "E-8": "e-8-miso-el26-70-000", "E-9": "e-9-spp-el26-68-000",
     "E-10": "e-10-caiso-el26-71-000", "E-11": "e-11-isone-el26-72-000", "E-12": "e-12-nyiso-el26-69-000",
+    "E-2": "e-2-pjm-el25-49-002",
   };
   const normTxt = (s) => s
     .replace(/[’‘]/g, "'").replace(/[“”]/g, '"')
