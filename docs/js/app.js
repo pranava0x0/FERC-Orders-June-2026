@@ -62,6 +62,16 @@
   function head(h2, lede) {
     return '<div class="section-head"><h2>' + esc(h2) + "</h2>" + (lede ? '<p class="lede">' + esc(lede) + "</p>" : "") + "</div>";
   }
+  // Collapsible section: same heading + lede as head(), but the body folds away to cut scrolling on the
+  // long flat tabs. Pass open=true for the section that should be expanded by default. `count` shows a
+  // tally on the summary so a collapsed section still advertises what's inside.
+  function accSection(h2, lede, body, open, count) {
+    return '<details class="acc"' + (open ? " open" : "") + '><summary class="acc-sum">' +
+      '<span class="acc-h2">' + esc(h2) + "</span>" +
+      (count != null ? '<span class="acc-count mono">' + count + "</span>" : "") +
+      '<span class="acc-chev" aria-hidden="true">›</span></summary>' +
+      (lede ? '<p class="acc-lede">' + esc(lede) + "</p>" : "") + body + "</details>";
+  }
   function paras(arr) { return arr.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join(""); }
 
   /* ---- TAB: Overview (stats + at-a-glance + background) ---- */
@@ -137,9 +147,8 @@
     return head("Timeline: DOE §403 directive to FERC §206 orders",
       "How an Oct. 2025 DOE directive became six near-simultaneous show cause orders on a 30/60-day clock.") +
       tl +
-      head("Toplines: the strategic shift",
-      "Why tailored §206 show cause orders instead of a generic NOPR, and what it signals.") +
-      top;
+      accSection("Toplines: the strategic shift",
+        "Why tailored §206 show cause orders instead of a generic NOPR, and what it signals.", top, false, (D.toplines || []).length);
   }
 
   /* ---- TAB: Reforms (the five categories + jurisdiction + regional) ---- */
@@ -167,9 +176,9 @@
 
     return head("The five reform categories",
       "Each tailored order tees up the same five categories. FERC's mandate text is quoted; the underlying DOE ANOPR principles show the mechanics.") + cats +
-      head("Jurisdictional & contractual protections",
-      "Where FERC draws the federal/state line, and how it shields existing deals.") + jur +
-      head("Regional distinctions at a glance", "The variations FERC says the orders were designed to reflect.") + reg;
+      accSection("Jurisdictional & contractual protections",
+        "Where FERC draws the federal/state line, and how it shields existing deals.", jur, false, (D.jurisdiction || []).length) +
+      accSection("Regional distinctions at a glance", "The variations FERC says the orders were designed to reflect.", reg, false, (D.regional || []).length);
   }
 
   // Per-order commissioner block. For the six §206 orders the concurrences are largely common, so
@@ -337,11 +346,10 @@
       D.media.friction.map(function (c) { return '<div class="disc-item">' + esc(c.t) + publicSrcChips(c.src) + "</div>"; }).join("") +
       "</div></div></div>";
 
-    var outlets = '<div class="section-head"><h2>Where it’s being covered</h2><p class="lede">Each links to the cited source.</p></div><div class="outlets">' +
-      D.media.outlets.filter(function (id) { return !isFederalSource(id); }).map(function (id) {
-        var s = D.SOURCES[id]; if (!s) return "";
-        return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
-      }).join("") + "</div>";
+    var outletChips = D.media.outlets.filter(function (id) { return !isFederalSource(id); }).map(function (id) {
+      var s = D.SOURCES[id]; if (!s) return "";
+      return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
+    }).join("");
 
     var quoteThemes = '<div class="quote-themes">' + (D.voiceThemes || []).map(function (t) {
       var qs = (t.quotes || []).map(function (q) {
@@ -357,12 +365,14 @@
       " comment bodies were downloaded and text-analyzed. The full searchable filing list, the top themes and categories, and the respondent-type breakdown are in the Comments tab.") +
       '<p class="cm-jump-wrap"><a class="cm-jump" href="#comments">Open the Comments tab →</a></p>') : "";
 
-    return head("Industry reception",
-      "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.") + rec +
-      commentsBlock +
-      head("Commentary themes with quoted source lines",
-      "Themes from the post-order discourse, with the underlying quoted statements linked under each theme. Commentary gathered " + D.meta.discourseCapture + " (the order record is as of " + D.meta.capture + ").") + quoteThemes +
-      head("Media & discourse", "The dominant narratives in energy trade press and policy circles.") + disc + outlets;
+    var consensusN = (D.media.consensus || []).length, frictionN = (D.media.friction || []).length;
+    return accSection("Industry reception",
+      "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.", rec + commentsBlock, true, recItems.length) +
+      accSection("Commentary themes with quoted source lines",
+      "Themes from the post-order discourse, with the underlying quoted statements linked under each theme. Commentary gathered " + D.meta.discourseCapture + " (the order record is as of " + D.meta.capture + ").", quoteThemes, false, (D.voiceThemes || []).length) +
+      accSection("Media & discourse: consensus and friction", "The dominant narratives in energy trade press and policy circles.", disc, false, consensusN + frictionN) +
+      accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false,
+        D.media.outlets.filter(function (id) { return !isFederalSource(id); }).length);
   }
 
   /* ---- TAB: Comments (RM26-4 comment period — list, themes, respondent types) ---- */
