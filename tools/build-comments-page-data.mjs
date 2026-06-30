@@ -147,6 +147,28 @@ const principleStances = PRINCIPLES.map((p) => {
   return { key: p.key, label: p.label, ...tally, total: STANCE_KEYS.reduce((s, k) => s + tally[k], 0) };
 });
 
+// Consensus map: stakeholder type x reform principle, each cell tallying the audited stances of that
+// bucket's letters that engage that principle. Powers the heatmap on the Themes sub-tab. Buckets with
+// too little audited signal are dropped (a 1-letter row reads as fake certainty); sorted by engagement.
+const STANCE_NET = { support: 1, neutral: 0, mixed: 0, oppose: -1 };
+const bucketStances = [...new Set(list.map((c) => c.bucket))].map((bk) => {
+  // Audited letters only: the cells tally stances from `bins` (present only on audited summaries), and
+  // the UI labels `letters` as "audited letters from this camp" — so the denominator must match (a bucket
+  // with unaudited filings would otherwise overstate it, e.g. data centers 29 vs 28 audited).
+  const cs = list.filter((c) => c.bucket === bk && c.s2);
+  const cells = PRINCIPLES.map((p) => {
+    const tally = { support: 0, oppose: 0, mixed: 0, neutral: 0 };
+    for (const c of cs) { const b = (c.bins || []).find((x) => x.k === "pr:" + p.key); if (b && tally[b.s] != null) tally[b.s]++; }
+    const total = STANCE_KEYS.reduce((s, k) => s + tally[k], 0);
+    // net = support − oppose; the UI bands net/total to colour the cell (not the plurality stance, which
+    // would flatten a broadly-supportive corpus to one colour and hide the contested cells).
+    const net = STANCE_KEYS.reduce((s, k) => s + STANCE_NET[k] * tally[k], 0);
+    return { key: p.key, ...tally, total, net };
+  });
+  const engaged = cells.reduce((s, c) => s + c.total, 0);
+  return { bucket: bk, label: labels[bk] || bk, letters: cs.length, engaged, cells };
+}).filter((r) => r.engaged >= 4).sort((a, b) => b.engaged - a.engaged);
+
 // aggregate the per-comment lens tags. Denominator is the audited-summary set (the lenses come from
 // those summaries now), not the slightly larger keyword-analyzed set used for the themes.
 const tagStats = (defs, field) => defs.map((d) => {
@@ -190,6 +212,7 @@ const out = {
   anoprQuestions,
   principles,
   principleStances,
+  bucketStances,
   regions,
   bucketLabels: labels,
   list,

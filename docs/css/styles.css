@@ -161,6 +161,21 @@ a:hover { color: var(--accent-ink); }
 .section-head h2 { font-family: var(--font-serif); font-size: clamp(20px, 3.4vw, 27px); font-weight: 700; color: var(--masthead); letter-spacing: -0.01em; }
 .section-head .lede { color: var(--text-muted); font-size: 15px; margin-top: 6px; max-width: 72ch; }
 
+/* Collapsible section (long flat tabs fold to cut scrolling) */
+/* Author display rules on the body (e.g. .discourse{display:grid}) outrank the UA details-collapse,
+   so close it explicitly — this selector is specific enough to win over those display declarations. */
+details.acc:not([open]) > :not(summary) { display: none; }
+details.acc { border-top: 1px solid var(--rule); margin-top: 18px; }
+details.acc:first-child { border-top: none; margin-top: 4px; }
+.acc-sum { cursor: pointer; list-style: none; display: flex; align-items: baseline; gap: 10px; padding: 18px 0 6px; }
+.acc-sum::-webkit-details-marker { display: none; }
+.acc-sum:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.acc-h2 { margin: 0; font-family: var(--font-serif); font-size: clamp(19px, 3vw, 25px); font-weight: 700; color: var(--masthead); letter-spacing: -0.01em; line-height: 1.15; }
+.acc-count { flex: none; font-size: 12px; color: var(--text-muted); align-self: center; }
+.acc-chev { flex: none; margin-left: auto; color: var(--accent); font-size: 20px; line-height: 1; transition: transform 0.15s ease; align-self: center; }
+details.acc[open] .acc-chev { transform: rotate(90deg); }
+.acc-lede { color: var(--text-muted); font-size: 15px; margin: 0 0 14px; max-width: 72ch; }
+
 /* timeline */
 .timeline { border-left: 2px solid var(--rule-strong); margin-left: 6px; }
 .tl-item { position: relative; padding: 0 0 22px 26px; }
@@ -505,6 +520,30 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-stancebar .opp { background: var(--stance-negative); }
 .cm-stancebar .mix { background: var(--stance-mixed); }
 .cm-stancebar .neu { background: var(--rule-strong); color: var(--ink); }
+
+/* Consensus heatmap: stakeholder type x reform principle */
+.cm-hm-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-size: 11.5px; color: var(--text-secondary); margin-bottom: 4px; }
+.cm-hm-key { display: inline-flex; align-items: center; gap: 5px; }
+.cm-hm-sw { width: 13px; height: 13px; border-radius: 3px; flex: none; }
+.cm-hm-sw.support.strong { background: var(--stance-positive); }
+.cm-hm-sw.support { background: #cfe4d2; }
+.cm-hm-sw.mixed { background: #f6efdf; border: 1px solid var(--stance-mixed); }
+.cm-hm-sw.oppose { background: #f7ece6; border: 1px solid var(--stance-negative); }
+.cm-hm-sw.neutral { background: var(--surface-2); border: 1px solid var(--rule); }
+.cm-hm-note { font-size: 11px; color: var(--text-muted); margin-left: auto; }
+.cm-heatmap { display: grid; grid-template-columns: minmax(120px, 1.7fr) repeat(5, minmax(0, 1fr)); gap: 3px; margin-top: 8px; align-items: stretch; }
+.cm-hm-corner { }
+.cm-hm-col { font-size: 11px; font-weight: 700; color: var(--text-muted); text-align: center; align-self: end; padding-bottom: 4px; line-height: 1.15; }
+.cm-hm-rowlabel { display: flex; align-items: center; justify-content: space-between; gap: 6px; font-size: 12px; color: var(--ink); padding-right: 8px; }
+.cm-hm-letters { font-size: 10px; color: var(--text-muted); flex: none; }
+.cm-hm-cell { display: flex; align-items: center; justify-content: center; min-height: 30px; border-radius: 5px; font-size: 12px; font-weight: 700; }
+.cm-hm-cell.support { background: #dcebde; color: #1f5a35; }
+.cm-hm-cell.support.strong { background: var(--stance-positive); color: #fff; }
+.cm-hm-cell.oppose { background: #f7ece6; color: var(--stance-negative); }
+.cm-hm-cell.mixed { background: #f6efdf; color: var(--stance-mixed); }
+.cm-hm-cell.neutral { background: var(--surface-2); color: var(--text-muted); border: 1px solid var(--rule); }
+.cm-hm-cell.empty { background: repeating-linear-gradient(45deg, var(--surface-1), var(--surface-1) 4px, var(--surface-2) 4px, var(--surface-2) 8px); }
+@media (pointer: coarse) { .cm-hm-cell { min-height: 40px; } }
 
 /* Comments sub-tabs (Overview / Respondent types / Comment summaries) */
 .cm-subtabs { display: flex; gap: 2px; margin-bottom: 18px; border-bottom: 2px solid var(--rule); flex-wrap: wrap; }
