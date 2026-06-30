@@ -199,7 +199,7 @@
         '<div class="commish-quote">“…' + esc(quote) + '…”</div></div>';
     }).join("");
     var note = override ? "" :
-      '<p class="commish-block-note">The five concurrences are largely common across the six orders — full themes and quotes are on the Overview tab. The page cites here open <em>this</em> order’s PDF.</p>';
+      '<p class="commish-block-note">The five concurrences are largely common across the six orders; full themes and quotes are on the Overview tab. The page cites here open <em>this</em> order’s PDF.</p>';
     return '<details class="dreg dcom"><summary>What the commissioners said in this order (' + list.length + ")</summary>" +
       note + '<div class="commish-rows">' + rows + "</div></details>";
   }
@@ -309,7 +309,7 @@
     var participate = '<p class="lede" style="margin-bottom:14px">' + esc(p.intro) + "</p>" + partRows + partLinks;
 
     return head("The dockets: E-7 through E-12, plus the E-2 co-location order",
-      "Every §206 order runs the same spine — the five categories, the clock, and the jurisdictional line are in the Reforms tab; each card here is the region-specific variation. Open one for what’s unique to that system, the page-cited directives and distinct findings, the Section IV asks, what each commissioner said about that order, and every named respondent. After the six sits Item E-2 (EL25-49-002) — the PJM co-location order, decided the same morning, that the six build on.") +
+      "Every §206 order runs the same spine — the five categories, the clock, and the jurisdictional line are in the Reforms tab; each card here is the region-specific variation. Open one for what’s unique to that system, the page-cited directives and distinct findings, the Section IV asks, what each commissioner said about that order, and every named respondent. After the six sits Item E-2 (EL25-49-002), the PJM co-location order, decided the same morning, that the six build on.") +
       docs +
       head("File or follow the dockets", "Every proceeding is open on the public record. Use the exact docket number on any submission.") + participate;
   }
