@@ -447,6 +447,38 @@
       stanceBars = stLegend + '<div class="cm-stancebars">' + stRows + "</div>";
     }
 
+    // consensus map: stakeholder type x reform principle, each cell colored by that camp's dominant
+    // audited stance and labeled with how many of its letters engage that reform. Reads the 2D field
+    // built into comments-data.js; the top dozen camps by engagement keep it scannable.
+    var PR_SHORT = { study: "Study", cost: "Cost", colo: "Co-loc", flex: "Flex", proximate: "Prox. gen" };
+    var consensusMap = "";
+    if (CM.bucketStances && CM.bucketStances.length) {
+      var cmRows = CM.bucketStances.slice(0, 12);
+      var cmCols = cmRows[0].cells.map(function (c) { return PR_SHORT[c.key] || c.key; });
+      var grid = '<div class="cm-hm-corner"></div>' +
+        cmCols.map(function (c) { return '<div class="cm-hm-col">' + esc(c) + "</div>"; }).join("");
+      grid += cmRows.map(function (r) {
+        var label = '<div class="cm-hm-rowlabel">' + esc(r.label) + ' <span class="cm-hm-letters mono" title="audited letters from this camp">' + r.letters + "</span></div>";
+        var cells = r.cells.map(function (c) {
+          if (!c.total) return '<div class="cm-hm-cell empty"><span class="sr-only">no audited position</span></div>';
+          // colour by NET sentiment, not the plurality: a cell that is 10 support / 6 oppose is
+          // contested, not "support". net = support − oppose; ratio over engaged letters sets the band.
+          var nr = c.net / c.total;
+          var cls = nr < 0 ? "oppose" : nr < 0.3 ? "mixed" : nr < 0.6 ? "support" : "support strong";
+          var full = r.label + " — " + (PR_SHORT[c.key] || c.key) + ": " + c.support + " support, " + c.oppose + " oppose, " + c.mixed + " mixed, " + c.neutral + " no position (n=" + c.total + ")";
+          return '<div class="cm-hm-cell ' + cls + '" role="img" aria-label="' + esc(full) + '" title="' + esc(full) + '"><span class="cm-hm-n">' + c.total + "</span></div>";
+        }).join("");
+        return label + cells;
+      }).join("");
+      var cmLegend = '<div class="cm-hm-legend">' +
+        '<span class="cm-hm-key"><span class="cm-hm-sw support strong"></span>strong support</span>' +
+        '<span class="cm-hm-key"><span class="cm-hm-sw support"></span>support</span>' +
+        '<span class="cm-hm-key"><span class="cm-hm-sw mixed"></span>contested</span>' +
+        '<span class="cm-hm-key"><span class="cm-hm-sw oppose"></span>net oppose</span>' +
+        '<span class="cm-hm-note">cell = net of support minus oppose · number = audited letters engaging that reform</span></div>';
+      consensusMap = cmLegend + '<div class="cm-heatmap">' + grid + "</div>";
+    }
+
     var rowsByRound = {};
     CM.list.forEach(function (c) { var k = roundOf(c.filed); (rowsByRound[k] = rowsByRound[k] || []).push(c); });
     var allQ = []; // every row's search string, collected so the tag bar can show real match counts
@@ -517,6 +549,7 @@
       statRow + rounds +
       head("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies — a measured keyword prevalence, not a coding of each filer's position.") + themes +
       head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position — read from the filer's own words. Across " + CM.summarized2 + " audited filings.") + stanceBars +
+      head("Where each stakeholder type stands", "The same audited stances, split by camp: each cell is a stakeholder type's dominant position on one reform, the number its letters engaging it. Support is broad; the friction shows where cells turn amber or red. Top twelve camps by engagement.") + consensusMap +
       head("What the comments engage", "Three lenses, tagged per comment from its audited summary: the DOE ANOPR's eight comment-period questions, the five June-order reform principles, and the six show-cause-order regions. A comment can carry several. Across " + CM.summarized2 + " audited filings.") + prReg +
       "</section>";
 

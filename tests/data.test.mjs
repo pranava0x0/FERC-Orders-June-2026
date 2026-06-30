@@ -521,6 +521,30 @@ test("comments-data.js (Comments tab) is consistent with the scraped manifest", 
   }
   assert.ok(Array.isArray(CM.rounds) && CM.rounds.length >= 2, "at least two filing rounds");
   assert.equal(CM.rounds.reduce((s, r) => s + r.count, 0), N, "round counts sum to the comment total");
+
+  // consensus heatmap: bucket x reform matrix. Each cell's stances sum to its total, net is consistent,
+  // and a cell's total never exceeds that bucket's letter count; rows are real buckets sorted by engagement.
+  assert.ok(Array.isArray(CM.bucketStances) && CM.bucketStances.length >= 6, `consensus map has rows (${(CM.bucketStances || []).length} >= 6)`);
+  const bucketCount = {};
+  for (const c of CM.list) bucketCount[c.bucket] = (bucketCount[c.bucket] || 0) + 1;
+  let lastEngaged = Infinity;
+  for (const row of CM.bucketStances) {
+    assert.ok(row.bucket && row.label, `bucketStances ${row.bucket} has bucket/label`);
+    assert.equal(row.letters, bucketCount[row.bucket], `bucketStances ${row.bucket} letter count matches the list`);
+    assert.equal(row.cells.length, 5, `bucketStances ${row.bucket} has a cell per reform principle`);
+    assert.ok(row.engaged >= 4, `bucketStances ${row.bucket} clears the engagement floor`);
+    assert.ok(row.engaged <= lastEngaged, `bucketStances is sorted by engagement (desc)`);
+    lastEngaged = row.engaged;
+    let engaged = 0;
+    for (const cell of row.cells) {
+      assert.ok(PKEYS.has(cell.key), `bucketStances cell ${cell.key} is a known principle`);
+      assert.equal(cell.support + cell.oppose + cell.mixed + cell.neutral, cell.total, `cell ${row.bucket}/${cell.key} stances sum to total`);
+      assert.equal(cell.net, cell.support - cell.oppose, `cell ${row.bucket}/${cell.key} net = support − oppose`);
+      assert.ok(cell.total <= row.letters, `cell ${row.bucket}/${cell.key} total never exceeds the bucket's letters`);
+      engaged += cell.total;
+    }
+    assert.equal(engaged, row.engaged, `bucketStances ${row.bucket} engaged = sum of cell totals`);
+  }
 });
 
 test("evidence-backed filer corrections survive manifest regeneration", () => {
