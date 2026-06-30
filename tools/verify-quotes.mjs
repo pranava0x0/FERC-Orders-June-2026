@@ -9,11 +9,13 @@
 //
 // Two tiers:
 //   REQUIRED — structured quote fields (order directives & findings, commissioner statements, discourse
-//              voice/theme quotes). These MUST appear verbatim in their designated source or the run fails.
-//   ADVISORY — free-prose “…”/‘…’ spans (unique, summary, toplines, jurisdiction, regional). Checked
-//              against the whole corpus and listed for review; many are curator term-labels, so a miss is
-//              a prompt to look, not a hard failure. Spoken (auto-caption) quotes are reported separately:
-//              they live on YouTube, not in committed text, so they cannot be verified here.
+//              voice/theme quotes, the Section IV briefing quotes). These MUST appear verbatim in their
+//              designated source or the run fails.
+//   PROSE    — embedded “…”/‘…’ spans of ≥16 chars in free copy (unique, summary, toplines, jurisdiction,
+//              regional). Also required: if you put a span that long in quotes, it must resolve somewhere
+//              in the corpus — otherwise tighten it or drop the quote marks. (The ≥16-char floor skips
+//              short curator term-labels like ‘large load’.) Both tiers fail the run on a miss.
+//   SPOKEN   — auto-caption quotes (YouTube), reported separately: not in committed text, so unverifiable.
 
 import { readFileSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -51,20 +53,26 @@ function loose(value) {
 }
 
 // Longest common substring length — tolerates footnote splices / OCR breaks inside a long quote.
+// Two row buffers are reused across iterations (the source `b` can be ~2.3M chars, so a fresh
+// Int32Array per row of `a` was ~9MB/row of short-lived garbage; hoisting kills that latency cliff).
 function lcsLength(a, b) {
   if (!a || !b) return 0;
   let prev = new Int32Array(b.length + 1);
+  let cur = new Int32Array(b.length + 1);
   let best = 0;
   for (let i = 1; i <= a.length; i++) {
-    const cur = new Int32Array(b.length + 1);
+    cur.fill(0); // cells with no match this row must read 0, not the previous row's value
     const ai = a.charCodeAt(i - 1);
     for (let j = 1; j <= b.length; j++) {
       if (ai === b.charCodeAt(j - 1)) {
-        cur[j] = prev[j - 1] + 1;
-        if (cur[j] > best) best = cur[j];
+        const v = prev[j - 1] + 1;
+        cur[j] = v;
+        if (v > best) best = v;
       }
     }
+    const tmp = prev;
     prev = cur;
+    cur = tmp;
   }
   return best;
 }
@@ -109,17 +117,18 @@ const evidenceText = loose(Object.values(evidence.voices).map((v) => v.evidence)
 // the CLI block below prints a human report.
 export function verifyAllQuotes(D = loadData()) {
 const required = []; // { label, quote, ok }
-const advisory = []; // { label, quote, ok }
+const prose = []; // { label, quote, ok } — embedded prose quotes; also required to resolve in the corpus
 const spoken = []; // { label, quote } — cannot be verified against committed text
 
 const req = (label, quote, source) => required.push({ label, quote, ok: carries(quote, source) });
-const adv = (label, quote, source = wholeCorpus) => advisory.push({ label, quote, ok: carries(quote, source) });
+const adv = (label, quote, source = wholeCorpus) => prose.push({ label, quote, ok: carries(quote, source) });
 
 // Pull free-prose quoted spans: “double” quotes and ‘single’ quotes whose close isn't an inner
 // apostrophe (’ not followed by a letter). Skip very short spans (term-labels like ‘large load’).
 function proseQuotes(text) {
   const out = [];
   for (const m of String(text).matchAll(/[“]([^”]+)[”]/g)) out.push(m[1]);
+  for (const m of String(text).matchAll(/"([^"]+)"/g)) out.push(m[1]); // straight double-quotes, if any
   for (const m of String(text).matchAll(/[‘](.+?)[’](?![A-Za-z])/g)) out.push(m[1]);
   return out.filter((q) => loose(q).length >= 16);
 }
@@ -161,6 +170,11 @@ for (const th of D.voiceThemes || []) {
   for (const q of th.quotes || []) req(`voice theme "${th.title}"`, q.q, evidenceText);
 }
 
+// Section IV briefing quotes (REQUIRED) — templated across the six §206 orders, so check each against the
+// union of order texts. (These render on every §206 card; they must NOT silently attach to a card whose
+// order doesn't contain them, e.g. the E-2 final order.)
+for (const q of D.briefing?.questions || []) req(`briefing "${q.id}"`, q.v, allOrders);
+
 // 4) Free prose (ADVISORY) — the orienting copy with embedded quotes but no unit test.
 for (const d of [...D.dockets, D.colocation].filter(Boolean)) {
   for (const q of proseQuotes(d.unique || "")) adv(`${d.item} unique`, q, orderText[d.item] || wholeCorpus);
@@ -170,14 +184,14 @@ for (const t of D.toplines || []) for (const p of t.body || []) for (const q of 
 for (const b of D.jurisdiction || []) for (const q of proseQuotes(b.body)) adv(`jurisdiction "${b.h}"`, q, fercDoe);
 for (const b of D.regional || []) for (const q of proseQuotes(b.body)) adv(`regional "${b.h}"`, q);
 
-  return { required, advisory, spoken };
+  return { required, prose, spoken };
 }
 
 // --- CLI report (only when run directly, not when imported by a test) ------
 if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
-  const { required, advisory, spoken } = verifyAllQuotes();
+  const { required, prose, spoken } = verifyAllQuotes();
   const reqMiss = required.filter((r) => !r.ok);
-  const advMiss = advisory.filter((r) => !r.ok);
+  const proseMiss = prose.filter((r) => !r.ok);
 
   const section = (title, rows) => {
     if (!rows.length) return;
@@ -188,18 +202,18 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
   console.log("Quote verification — docs/js/data.js against the committed source corpus");
   console.log("=".repeat(74));
   console.log(`REQUIRED quotes : ${required.length - reqMiss.length}/${required.length} verified`);
-  console.log(`ADVISORY prose  : ${advisory.length - advMiss.length}/${advisory.length} found in corpus`);
+  console.log(`PROSE quotes    : ${prose.length - proseMiss.length}/${prose.length} resolved in corpus`);
   console.log(`SPOKEN (caption): ${spoken.length} not verifiable here (auto-caption, off the committed text)`);
 
-  if (LIST) for (const r of required) console.log(`  ${r.ok ? "✓" : "✗"} ${r.label}: “${r.quote.slice(0, 80)}…”`);
+  if (LIST) for (const r of [...required, ...prose]) console.log(`  ${r.ok ? "✓" : "✗"} ${r.label}: “${r.quote.slice(0, 80)}…”`);
 
-  section("REQUIRED quotes NOT found in their source (must fix):", reqMiss);
-  section("ADVISORY prose quotes not found in corpus (review — may be a curator term):", advMiss);
+  section("REQUIRED quotes NOT found in their source (fix):", reqMiss);
+  section("PROSE quotes NOT found in corpus (tighten the quote or drop the quote marks):", proseMiss);
 
   console.log("");
-  if (reqMiss.length) {
-    console.log(`FAIL — ${reqMiss.length} required quote(s) unverified.`);
+  if (reqMiss.length || proseMiss.length) {
+    console.log(`FAIL — ${reqMiss.length} required + ${proseMiss.length} prose quote(s) unverified.`);
     process.exit(1);
   }
-  console.log(`OK — all ${required.length} required quotes verified.` + (advMiss.length ? ` ${advMiss.length} advisory item(s) to review above.` : ""));
+  console.log(`OK — all ${required.length} required and ${prose.length} prose quotes verified.`);
 }
