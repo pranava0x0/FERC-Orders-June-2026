@@ -3,6 +3,75 @@
   "source": "OCR/text-extraction of the six order PDFs (ferc.gov/media), downloaded via browser 2026-06-22",
   "orders": [
     {
+      "item": "E-2",
+      "rto": "PJM",
+      "docket": "EL25-49-002",
+      "fercCite": "195 FERC ¶ 61,209",
+      "issued": "June 18, 2026",
+      "pages": 278,
+      "captionVerified": true,
+      "captured_at": "2026-06-30",
+      "commissioners": [
+        "Laura V. Swett (Chairman)",
+        "David Rosner",
+        "Lindsay S. See",
+        "Judy W. Chang",
+        "David LaCerte"
+      ],
+      "respondents": "PJM + its transmission owners",
+      "sections": [
+        "I. Background",
+        "II. Notice of Filings and Responsive Pleadings",
+        "III. Procedural Matters",
+        "IV. Requests for Rehearing and/or Clarification",
+        "V. Compliance Filing",
+        "VI. Paper Hearing on New Transmission Services"
+      ],
+      "directives": [
+        {
+          "topic": "One of three new co-location transmission services",
+          "quote": "the Eligible Customer taking transmission service on behalf of the Co-Located Load takes one of three transmission services",
+          "para": "Ordering Para (C); P 2",
+          "pg": 3
+        },
+        {
+          "topic": "Interim NITS (new interim, non-firm service)",
+          "quote": "a new interim, non-firm transmission service available until all Network Upgrades necessary to provide the requested NITS are complete (Interim NITS)",
+          "para": "P 2",
+          "pg": 3
+        },
+        {
+          "topic": "Retail behind-the-meter-generation netting rewritten",
+          "quote": "the Behind the Meter Generation (BTMG) rules in the Tariff to be no longer just and reasonable, and the Commission directed PJM to submit in its compliance filing revisions to its Tariff to revise the retail BTMG netting rules and to implement a transition process for existing BTMG participants",
+          "para": "P 4 / Ordering Para (C)",
+          "pg": 3
+        },
+        {
+          "topic": "Paper hearing sets just-and-reasonable rates for the new services",
+          "quote": "we establish as just and reasonable certain rates, terms, and conditions for the new transmission services directed in the December Order",
+          "para": "Disposition",
+          "pg": 5
+        },
+        {
+          "topic": "December Order modified and set aside in part on rehearing",
+          "quote": "we are modifying the discussion in the December Order and setting aside the order, in part",
+          "para": "FPA section 313(a)",
+          "pg": 5
+        }
+      ],
+      "regionSpecific": [
+        "E-2 resolves rehearing, clarification, compliance, and a paper hearing on PJM's December 18, 2025 section 206 co-location order (193 FERC ¶ 61,217), issued the same June 18, 2026 meeting as E-7 through E-12.",
+        "The order fixes the just-and-reasonable rates, terms, and conditions for the three new transmission services the show cause orders extend to the other regions: Interim NITS, Firm Contract Demand (FCD), and Non-Firm Contract Demand (NFCD).",
+        "The Commission rejected PJM's proposed NFCD Maximum Facility Output limit tying required service to the co-located generator's dedicated megawatts.",
+        "On the 'minimum charge' question, the Commission found the record did not adequately support imposing an additional charge on co-located loads at this time.",
+        "PJM must file a further compliance filing within 60 days, and the PJM transmission owners must file a compliance filing within 60 days, to revise the Tariff."
+      ],
+      "deadlines": [
+        "60 days from issuance: PJM must submit a further compliance filing revising the Tariff (Ordering Para (C)/(D)).",
+        "60 days from issuance: the PJM transmission owners must submit a compliance filing revising the Tariff (Ordering Para (H); Part VI)."
+      ]
+    },
+    {
       "item": "E-7",
       "rto": "PJM",
       "docket": "EL26-67-000",

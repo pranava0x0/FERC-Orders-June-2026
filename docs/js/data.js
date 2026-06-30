@@ -60,6 +60,7 @@ window.FERC_DATA = (function () {
     e10: { label: "Order E-10 (CAISO): EL26-71-000 · 195 FERC ¶ 61,214", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-10-el26-71-000", captured: "2026-06-22", note: "Downloaded & OCR'd, 118 pp; §206 order, issued June 18, 2026; caption verified." },
     e11: { label: "Order E-11 (ISO-NE): EL26-72-000 · 195 FERC ¶ 61,215", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e11-el26-72-000", captured: "2026-06-22", note: "Downloaded & OCR'd, 115 pp; §206 order, issued June 18, 2026; caption verified." },
     e12: { label: "Order E-12 (NYISO): EL26-69-000 · 195 FERC ¶ 61,216", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e12-el26-69-000", captured: "2026-06-22", note: "Downloaded & OCR'd, 119 pp; §206 order, issued June 18, 2026; caption verified." },
+    e2: { label: "Order E-2 (PJM co-location): EL25-49-002 · 195 FERC ¶ 61,209", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-2-el25-49-002", captured: "2026-06-30", note: "Downloaded & OCR'd, 278 pp; Order on Rehearing, Clarification, Compliance Filing, and Paper Hearing in PJM’s co-location proceeding, issued June 18, 2026 at the same meeting as E-7 to E-12; caption verified. The foundational co-location order the six show cause orders extend." },
     akin: { label: "“FERC Issues Landmark Show Cause Orders on Large Load Interconnection”", org: "Akin Gump (Speaking Energy)", tier: "secondary", url: "https://www.akingump.com/en/insights/blogs/speaking-energy/ferc-issues-landmark-show-cause-orders-on-large-load-interconnection", captured: "2026-06-22", note: "Law-firm client alert." },
     sheppard: { label: "“FERC Orders Six RTOs to Address Specific Reforms… Speed to Power”", org: "Sheppard Mullin", tier: "secondary", url: "https://www.sheppard.com/insights/blogs/ferc-orders-six-rtos-to-address-specific-reforms-to-effectuate-speed-to-power-that-will-facilitate-the-integration-of-large-loads", captured: "2026-06-22", note: "Law-firm client alert." },
     whitecase: { label: "“PJM proposes to carve out new services for co-located data centers”", org: "White & Case", tier: "secondary", url: "https://www.whitecase.com/insight-alert/pjm-proposes-carve-out-new-services-co-located-data-centers", captured: "2026-06-22", note: "Co-location context (PJM EL25-49 line)." },
@@ -479,6 +480,41 @@ window.FERC_DATA = (function () {
       respondentList: ["Central Hudson Gas & Electric Corporation", "Consolidated Edison Company of New York, Inc.", "LS Power Grid New York Corporation I", "New York State Electric & Gas Corporation", "New York Transco LLC", "NextEra Energy Transmission New York, Inc.", "Niagara Mohawk Power Corp.", "Orange and Rockland Utilities, Inc.", "Rochester Gas and Electric Corporation"],
     },
   ];
+
+  // Item E-2 (PJM co-location) — the order the six show cause orders build on, voted the same
+  // June 18, 2026 meeting. It is NOT a §206 show cause order to an RTO; it is the order on rehearing,
+  // clarification, compliance, and paper hearing in PJM's December 18, 2025 co-location proceeding
+  // (193 FERC ¶ 61,217). Kept out of `dockets` (which is the six §206 orders) and rendered as its own
+  // distinguished card. Every quote is verbatim in sources/text/orders/e-2-pjm-el25-49-002.txt at `pg`.
+  const colocation = {
+    item: "E-2", rto: "PJM", rtoFull: "PJM Interconnection, L.L.C.", track: "Co-location",
+    docket: "EL25-49-002", url: "e2", pdf: "orders/e-2-pjm-el25-49-002.pdf",
+    region: "Mid-Atlantic / 13 states + DC", cite: "195 FERC ¶ 61,209", pages: 278,
+    respondents: "PJM + its transmission owners",
+    kind: "Order on rehearing, clarification, compliance & paper hearing",
+    status: "The co-location order the six build on",
+    unique: "E-2 is the co-location order the other six extend. Voted the same morning, it closes out PJM’s December 18, 2025 §206 co-location proceeding (193 FERC ¶ 61,217) by resolving rehearing, clarification, a compliance filing, and a paper hearing at once. It modifies and sets aside the December Order in part, accepts PJM’s compliance filing only in part, and — the consequential piece — fixes the just-and-reasonable rates, terms, and conditions for the three new transmission services the §206 orders now push into every other region: Interim NITS, Firm Contract Demand (FCD), and Non-Firm Contract Demand (NFCD). It also rewrites the retail behind-the-meter-generation netting rules with a transition path for existing participants, and rejects PJM’s proposed cap tying required NFCD service to the co-located generator’s dedicated megawatts. Commissioner Chang concurs separately on the still-open ‘minimum charge’ cost-shift question.",
+    asks: [
+      "Rehearing & clarification: the December Order is modified and set aside in part; the clarification requests are granted in part and denied in part.",
+      "Compliance: PJM’s compliance filing is accepted in part and rejected in part, with a further compliance filing due in 60 days.",
+      "Paper hearing: the Commission sets the just-and-reasonable rates, terms, and conditions for Interim NITS, FCD, and NFCD service.",
+    ],
+    dir: [
+      { t: "One of three new co-location services", q: "the Eligible Customer taking transmission service on behalf of the Co-Located Load takes one of three transmission services", p: "P 2", pg: 3 },
+      { t: "Interim NITS", q: "a new interim, non-firm transmission service available until all Network Upgrades necessary to provide the requested NITS are complete (Interim NITS)", p: "P 2", pg: 3 },
+      { t: "Retail BTMG netting rewritten", q: "the Behind the Meter Generation (BTMG) rules in the Tariff to be no longer just and reasonable, and the Commission directed PJM to submit in its compliance filing revisions to its Tariff to revise the retail BTMG netting rules and to implement a transition process for existing BTMG participants", p: "P 4", pg: 3 },
+      { t: "Paper hearing sets the rates", q: "we establish as just and reasonable certain rates, terms, and conditions for the new transmission services directed in the December Order", p: "Disposition", pg: 5 },
+      { t: "December Order set aside in part", q: "we are modifying the discussion in the December Order and setting aside the order, in part", p: "FPA § 313(a)", pg: 5 },
+    ],
+    reg: [
+      { t: "E-2 resolves rehearing of PJM’s December 18, 2025 §206 co-location order (193 FERC ¶ 61,217) — the show cause proceeding the other six orders cite as their template.", p: "p. 2", pg: 2, a: "On December 18, 2025, the Commission issued an order in the show cause proceeding in Docket No. EL25-49-000" },
+      { t: "On compliance, PJM must set the specific Tariff terms an Interconnection Customer in PJM seeking to serve Co-Located Load must follow to effectuate a Co-Location Arrangement.", p: "p. 3", pg: 3, a: "Interconnection Customer in PJM seeking to serve Co-Located Load must follow" },
+      { t: "The Commission rejected PJM’s proposed NFCD ‘Maximum Facility Output’ limit, which would have tied required service to the megawatts of the co-located generator dedicated to the load.", p: "p. 271", pg: 271, a: "we reject PJM’s proposal" },
+      { t: "On the ‘minimum charge’ question, the Commission found the record does not adequately support either the need for an additional charge at this time or how to calculate one.", p: "p. 277", pg: 277, a: "the record does not adequately support either the need for an additional charge at this time" },
+    ],
+    // Only Commissioner Chang filed a separate statement on E-2 (the others did not write separately here).
+    commish: { chang: { pg: 276, quote: "I write separately to address the Commission’s resolution of the “minimum charge” issue raised in my concurrence to the December Order", gist: "Chang is the lone separate writer on E-2. She concurs on the resolution of the ‘minimum charge’ question — the Commission found the record did not yet support an added charge for co-located loads that take little or no transmission service — and says she stands ready to consider §205 filings or §206 complaints, including sua sponte action, if that cost shift actually appears." } },
+  };
 
   const jurisdiction = [
     {
@@ -1024,6 +1060,7 @@ window.FERC_DATA = (function () {
     intro: "Each proceeding is open on the public record. Interventions, comments, and protests are filed in the relevant docket via FERC Online; anyone can follow filings in eLibrary or eSubscription. Reference the exact docket number on every submission.",
     // per-docket eLibrary docket-sheet links (enter the docket number if a link 404s on a new docket)
     dockets: [
+      { item: "E-2", rto: "PJM co-location", docket: "EL25-49-002" },
       { item: "E-7", rto: "PJM", docket: "EL26-67-000" },
       { item: "E-8", rto: "MISO", docket: "EL26-70-000" },
       { item: "E-9", rto: "SPP", docket: "EL26-68-000" },
@@ -1058,5 +1095,5 @@ window.FERC_DATA = (function () {
     pages: { "E-7": 69, "E-8": 73, "E-9": 51, "E-10": 75, "E-11": 74, "E-12": 78 },
     omit: { "E-9": ["proximate"] },
   };
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, jurisdiction, regional, reception, media, voices, voiceThemes, comments, commissioners, briefing, participate };
+  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, colocation, jurisdiction, regional, reception, media, voices, voiceThemes, comments, commissioners, briefing, participate };
 })();
