@@ -364,3 +364,13 @@ Recommended next steps, in order:
   and a quality gap the flagship re-authoring already conceded. Default workhorse = **Sonnet**; reserve
   **Opus** for synthesis/judgment-heavy flagships; keep the deterministic keyword + linter gate in front
   of any LLM audit (that gate, not the model, is where the savings are).
+
+---
+
+- **done (2026-06-30)** — Built the **stance consensus heatmap** (the HIGH idea above): a
+  stakeholder-type × five-reform grid in the Comments tab, each cell colored by net stance, `role="img"`
+  with a full `aria-label` (color is a lossy visual). Pure SVG/CSS, no new deps. Also **cut scrolling**
+  by folding the long flat tabs into collapsible `<details>` sections on Background/Reforms/Discourse
+  (first section open). Shipped on `feat/comments-consensus-ux` (PR #10). Known follow-ups from review:
+  the legend shows a net-oppose swatch with no matching cells (issues.md), and stance *coverage* is still
+  flagship-only until the Haiku→Sonnet re-author lands (see the model-tier note above).
