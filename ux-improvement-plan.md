@@ -1,9 +1,12 @@
 # UX improvement plan: the comment-analysis flow + persona deep-dives (2026-07-09)
 
-A build-ready plan in two parts: (1) a redesign of the **Comments (RM26-4) tab** into a top-notch
-comment-summary product for people who *respond to* public comments and people who *mine* them, and
-(2) a **persona-by-persona review of the rest of the site** with ranked improvements. Part 3 is the
-prioritized roadmap; Part 4 is implementation guidance for the executor.
+A build-ready plan: (1) a redesign of the **Comments (RM26-4) tab** into a top-notch
+comment-summary product for people who *respond to* public comments and people who *mine* them —
+including an external benchmark survey of government comment-analysis tools (§1.8) — and
+(2) a **persona-by-persona review of the rest of the site** with ranked improvements. Part 3 is
+the prioritized roadmap; Part 4 is implementation guidance for the executor; Part 5 is a
+**design refresh** that moves the site off the default-AI look toward a public-record identity
+of its own.
 
 Everything here was grounded by reading `docs/js/app.js` end-to-end, inspecting the live
 `FERC_COMMENTS` data model, and measuring the rendered site (1280×720 viewport, local server):
@@ -236,7 +239,74 @@ round-trip test (parse(serialize(s)) === s) in the node test suite.
 - **Form-letter clustering UI** — run the near-duplicate *check* (backlog MEDIUM) as a build-time
   audit first; the record is mostly distinct orgs, so build UI only if clusters actually exist.
 
-### 1.8 Data-quality prerequisites (sequence before or alongside)
+### 1.8 External benchmark survey — what other tools and agencies do (web, 2026-07-09)
+
+A second survey pass beyond the 2026-06-30 backlog scan (which covered DocketScope, SmartComment,
+Konveio, the CDO Council pilot, ICF/CommentWorks). This one looked at what *government entities
+themselves* run, plus the FERC-specific commercial layer. Findings, each with an adopt/skip call:
+
+1. **USDA Forest Service CARA** (Comment Analysis and Response Application) — the longest-running
+   federal in-house tool. Its workflow: break each letter into coded excerpts, roll excerpts into
+   **"public concern statements,"** and attach an agency response to each concern. Two takeaways:
+   our bins ≈ concern statements (independent validation of the summaries-v2 model), and the
+   *response* is a first-class object in their data model, not an afterthought. **Adopt** via the
+   response-scaffold export below. CARA also runs a public "reading room" per project — our
+   All-comments list already is one.
+   ([CARA pilot nomination](https://obamawhitehouse.archives.gov/sites/default/files/microsites/ceq/nepa_pilot_project_nomination_-_sid_1217545_jim_smalls_usda_forest_service_-_comment_analysis_and_response_application_cara.pdf) ·
+   [CARA public portal](https://cara.fs2c.usda.gov/Public/CommentInput?project=NP-2048))
+2. **The comment-response matrix is the canonical responder deliverable.** EPA, DOE-NEPA, FTA,
+   and NCPC all publish "Response to Comments" documents built on the same table: comment ID /
+   topic / commenter / comment summary / agency response, with similar comments consolidated
+   into one summarized comment answered once.
+   ([DOE EIS comment-response process](https://www.energy.gov/nepa/articles/eis-comment-response-process-doe-2004) ·
+   [NCPC comment matrix example](https://www.ncpc.gov/files/projects/2016/MP20_Comment_Matrix_Jan2017.pdf) ·
+   [FTA guidance](https://www.transit.dot.gov/sites/fta.dot.gov/files/docs/regulations-and-guidance/environmental-programs/55996/11-responding-comments.pdf))
+   **Adopt — new P1 item:** a **"response scaffold" export** from the By-issue reader: for the
+   selected issue (or all issues), emit a markdown/CSV matrix — issue, then per distinct argument:
+   the orgs raising it, stance, representative verbatim quote, accession + page cite, and an empty
+   Response column. That turns the By-issue view from a reading aid into the first draft of the
+   document a responder is actually producing. Cheap: it serializes data the view already has
+   (same CSV-injection guard as 1.4.6).
+3. **UK i.AI "Consult" + ThemeFinder** — the UK Cabinet Office's AI consultation-analysis tool
+   (open-source), which analyzed 50k+ responses to the Independent Water Commission review and
+   was evaluated as matching human accuracy. Its architecture mirrors ours (theme generation →
+   response classification → **human review dashboard** before anything is final) and its
+   published evaluation is the model for our missing step: a documented accuracy check against
+   human coders. **Adopt the posture, not the tool:** (a) the `verified_at` stratified human pass
+   (1.9.3) gets promoted from housekeeping to the thing that lets us say "human-reviewed" the way
+   Consult's eval does; (b) their question-first dashboard validates By-issue as the primary
+   view — UK consultations are question-structured exactly like the ANOPR's eight questions.
+   ([Consult](https://ai.gov.uk/knowledge-hub/tools/consult/) ·
+   [gov.uk evaluation](https://www.gov.uk/government/publications/ai-consultation-analysis-tool-evaluation))
+4. **ACUS Recommendation 2021-1** (Managing Mass, Computer-Generated, and Falsely Attributed
+   Comments) — federal best practice for mass-comment handling: deduplication technology, and
+   **transparency about how comments were processed**. Our record is small and org-distinct, but
+   the recommendation strengthens two planned items: the near-duplicate build-time audit (1.10)
+   (roadmap item 14) is standard practice, not paranoia; and the Methodology block should gain a
+   short "how the comment record was processed" passage (scrape → download → extract → bin →
+   validate → audit gate), which it currently only implies.
+   ([ACUS project page](https://www.acus.gov/research-projects/managing-mass-computer-generated-and-falsely-attributed-comments))
+5. **Mirrulations / regulations.gov researcher ecosystem** — an open project mirroring
+   regulations.gov so researchers can `pip install` a CLI, download whole dockets, and get CSVs.
+   FERC's eLibrary sits *outside* regulations.gov, so RM26-4 is invisible to that ecosystem.
+   **Adopt — P2:** publish our structured record as a documented, machine-readable bundle
+   (`docs/data/rm26-4-comments.csv` + the existing per-letter JSON, described in `llms.txt` and
+   the README): the only clean structured copy of this docket's comment record anywhere. Cheap —
+   it's the 1.4.6 CSV exporter run at build time over the full set.
+   ([Civic Tech DC on Mirrulations](https://www.civictechdc.org/events/community/2025/08/06/civic-hackdc-july-recap.html))
+6. **Arbo (ex-LawIQ)** — the commercial FERC docket-intelligence layer (structured filings,
+   timeline analytics, per-docket alerts; FERC itself is a customer). Confirms the two things
+   practitioners pay for are **docket alerts** and **procedural timelines** — i.e., the
+   procedural status board (2.1) is the right P0 and the site's freshness gap is its biggest
+   competitive weakness vs. the paid layer. A static site can't push alerts, but it can serve a
+   feed: **adopt — P2:** a static `feed.xml` (Atom) of docket events (filings landed, deadlines
+   passed/upcoming), regenerated by the data-refresh playbook, linked from the status board.
+   ([Arbo](https://goarbo.com/))
+7. **Skipped after review**: pol.is/deliberation-mapping visualizations (built for open-ended
+   civic opinion, wrong shape for a structured docket record); FCC ECFS-style raw-search parity
+   (eLibrary already is the search layer; we link into it).
+
+### 1.9 Data-quality prerequisites (sequence before or alongside)
 
 From the existing backlog, now load-bearing for the new views:
 
@@ -400,7 +470,8 @@ readers.
 | 7 | Copy-citation + CSV export (with injection guard + tests) | 1.4.5–6 | S | 3 |
 | 8 | Cross-links: Section IV questions & Reforms principles → By-issue | 2.1, 2.2 | S | 2 |
 | 9 | Sort control + summary-first row descriptions | 1.4.7–8 | S | 3 |
-| 10 | OCR 4 scans + ETI re-fetch; Haiku→Sonnet re-author | 1.8 | M (pipeline) | — |
+| 10 | OCR 4 scans + ETI re-fetch; Haiku→Sonnet re-author | 1.9 | M (pipeline) | — |
+| 10a | Response-scaffold export (comment-response matrix per issue) | 1.8.2 | S | 2, 7 |
 
 **P2 — synthesis + persona content**
 
@@ -409,8 +480,12 @@ readers.
 | 11 | Per-issue LLM briefs (auditable, provisional-labeled) | 1.3 phase 2 | L (LLM budget) | 2, 10 |
 | 12 | "Who pays" explainer (audited figures) | 2.5 | M | — |
 | 13 | Discourse source-type/date filter + og:image | 2.6 | S | — |
-| 14 | Near-duplicate build-time audit; UI only if clusters found | 1.7 | S | — |
-| 15 | `verified_at` stratified spot-check pass | 1.8 | M (human) | — |
+| 14 | Near-duplicate build-time audit; UI only if clusters found | 1.7, 1.8.4 | S | — |
+| 15 | `verified_at` stratified spot-check pass (the "human-reviewed" claim, per the UK Consult eval model) | 1.9, 1.8.3 | M (human) | — |
+| 16 | Machine-readable dataset bundle (full-record CSV + llms.txt/README docs) | 1.8.5 | S | 7 |
+| 17 | Static Atom feed of docket events, regenerated on data refresh | 1.8.6 | S | 5 |
+| 18 | Methodology: "how the comment record was processed" passage | 1.8.4 | S | — |
+| 19 | Design refresh (tokens + idioms, own PR, before/after screenshots) | Part 5 | M | after P0 |
 
 Sizing: S ≈ ≤half a session, M ≈ a session, L ≈ multi-session with checkpointed commits. Items
 5, 10, 11, 15 touch data/pipeline, the rest are docs/js/app.js + css + tests. Respect the session
@@ -441,3 +516,81 @@ budget rule: L items run in committed chunks, never one fan-out.
 - **Verify loop**: `python3 -m http.server` against `docs/`, test at 375 px and desktop, run the
   full suite plus `node tools/verify-quotes.mjs` before any commit; UAT the three flows —
   issue-to-quote, org-to-permalink, filter-to-CSV.
+
+---
+
+## Part 5 — Design refresh: away from the default-AI look
+
+### 5.1 Honest read of the current design
+
+The site already dodges the worst AI tells (no gradients, no purple, no emoji, system fonts,
+hairline rules, one shadow in the whole stylesheet). But audited against "would a stranger guess
+an AI built this," several tells remain — and the biggest is the overall *ambience*:
+
+1. **The palette is Claude's palette.** Warm ivory paper (`#f4f1ea`), deep navy, muted serif
+   headings — that trio is Anthropic's own brand ambience, and it's become the default "tasteful
+   AI output" look across thousands of generated sites. Individually defensible, collectively a
+   fingerprint.
+2. **Pill inflation.** ~19 `border-radius: 999px` rules — source chips, lens tags, stance pills,
+   status pills, count bubbles. The fully-rounded chip is the single most recognizable
+   LLM-frontend tic.
+3. **The KPI stat-card row** (big number, small gray label, white rounded card ×4) is the
+   canonical AI-dashboard opener. Ours is honest, but the *form* is stock.
+4. **Numbered tabs** ("01 Overview") — a portfolio-template flourish that reads generated, and
+   the numbers carry no meaning.
+5. **Uniform white cards on beige** for every content type — cards as the only container idiom.
+
+### 5.2 The direction: design from the primary documents, not from a design system
+
+The site's soul is the public record itself. FERC orders, the Federal Register, and eLibrary
+docket sheets have a *strong existing visual language* that no AI default resembles: dense
+typographic hierarchy, caption blocks, double rules, paragraph marks (¶ / §), reporter cites,
+stamped dates, ledger-style tables. Leaning into that gives the site a look that is (a) fresh,
+(b) impossible to mistake for a template, and (c) *argues the content's authority* — the design
+itself says "this is the record, organized."
+
+Concretely — a bounded token-and-idiom pass, not a rebuild:
+
+1. **Cool the paper.** Move `--bg` off Claude-ivory to a cooler archival off-white (in the
+   direction of `#f6f5f1` → test against WCAG on all existing text tokens) and let the navy
+   masthead carry all the warmth-contrast. One move, and the ambience stops reading Anthropic.
+2. **Kill the pill.** Replace 999px chips with two idioms: **bracketed tags** for lenses/filters
+   (square-cornered, hairline border, mono or small-caps label — visually "[PJM] [Cost]", the
+   way a reporter cite reads) and **underline-accent text chips** for sources. Keep stance colors
+   exactly as-is (they're semantic tokens, not decoration). One CSS pass over existing classes;
+   no markup changes.
+3. **Caption block instead of KPI cards.** Re-set the Overview stat row and the Comments stat row
+   as a ruled ledger strip — figures in a single hairline-ruled row, tabular numerals, labels in
+   small caps beneath, double rule above (the way an order's caption page tables its docket
+   numbers). Same data, same `cm-stat` markup, different dress.
+4. **Section heads as running heads.** Replace card-boxed section heads with the gazette idiom:
+   small-caps section label, thin-thick double rule, generous top space. Drop the numbered-tab
+   prefix ("01") from the primary tabs; let the tab labels stand, with the active tab marked by
+   a heavier underline (the sub-tabs already do this correctly).
+5. **One signature element: the cite margin.** On wide screens, page cites and paragraph marks
+   (`P 77`, `p. 43`, accession numbers) — already mono-styled — move into a hanging right margin
+   on directive/finding rows, like marginalia in a reporter volume. This is the memorable,
+   screenshot-able detail nobody else's site has. (Desktop-only; collapses inline on mobile —
+   the mobile layout is already correct.)
+6. **Typography tune, no new fonts.** Keep the Charter/serif + system-sans + mono stack (project
+   rule: system stacks only). Sharpen the scale contrast: display serif slightly larger/tighter
+   at the masthead and section heads, body stays as-is; use real small-caps
+   (`font-variant-caps: all-small-caps`) for eyebrows/labels instead of tracked uppercase 11px,
+   which is currently the third AI tell in the label styling.
+7. **Where color may be added** (sparingly): a single "record red" in the Federal Register
+   tradition for the deadline hue could replace the current burnt amber — evaluate against the
+   existing `--deadline` semantics; do not add a second accent anywhere else.
+
+### 5.3 Guardrails
+
+- **Don't cosplay authority.** As the design gets more gazette-like, the "Not affiliated with
+  FERC or DOE" line must get *more* prominent, not less — keep it in the footer and add it to
+  the Methodology summary line. No seals, no eagle, nothing that imitates an official mark.
+- **Semantics don't move.** Stance/tier/status color tokens keep their meanings and contrast
+  ratios; the refresh touches dress (radius, rules, casing, spacing), not the semantic layer.
+- **A11y is the floor**: every replacement keeps focus-visible outlines, ≥44px coarse-pointer
+  targets, and the sr-only/aria patterns exactly as they are.
+- **Ship it as its own PR** — a pure-CSS pass (plus the tab-number removal) with before/after
+  screenshots at 375px and desktop, zero data or behavior changes, so review is purely visual.
+- **Effort**: M. Sequence after P0 items land (the new views should be born into the new dress,
+  but don't block them on it — tokens first, then views).
