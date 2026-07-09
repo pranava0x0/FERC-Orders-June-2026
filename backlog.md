@@ -1,5 +1,9 @@
 # backlog.md
 
+- **planned 2026-07-09 — comment-flow + persona UX overhaul: see [ux-improvement-plan.md](ux-improvement-plan.md).**
+  Sequences and supersedes several open items below (issue-outline navigation, multi-select token filter,
+  procedural status board, Discourse freshness filter, comments-tool benchmark ideas) into one prioritized
+  P0/P1/P2 roadmap with specs. Work those items from the plan, not from their older entries here.
 - **done (2026-06-22)** — Downloaded all six order PDFs through a real browser, OCR'd them, and folded
   quoted directives + paragraph cites into Tab 2 (195 FERC ¶ 61,211 to 61,216). Extract in
   `sources/orders-extract.json`.
