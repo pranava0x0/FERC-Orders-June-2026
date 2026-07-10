@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260709e";
+  var ASSET_VER = "20260709f";
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -401,13 +401,15 @@
     { k: "oppose", label: "Opposes" },
     { k: "neutral", label: "No position stated" },
   ];
+  // Short lens labels shared by the row chips, the filter vocabulary, and the AND-token chips.
+  var CL = { study: "Study", cost: "Cost", colo: "Co-loc", flex: "Flex", proximate: "Prox-gen" };
+  var RG = { pjm: "PJM", miso: "MISO", spp: "SPP", caiso: "CAISO", isone: "ISO-NE", nyiso: "NYISO" };
+  var AQ = { jurisdiction: "Jurisdiction", threshold: "20 MW", jointstudy: "Joint study", deposits: "Deposits", hybridrights: "Hybrid rights", protection: "Protection", expedited: "Expedited", upgradecost: "Upgrade cost" };
+  var ROUND_SHORT = { initial: "Initial", reply: "Reply", supplemental: "Supplemental" };
 
   function renderComments() {
     var CM = window.FERC_COMMENTS;
     if (!CM) return head("The RM26-4 comment period", "Comment data did not load (js/comments-data.js).");
-    var CL = { study: "Study", cost: "Cost", colo: "Co-loc", flex: "Flex", proximate: "Prox-gen" };
-    var RG = { pjm: "PJM", miso: "MISO", spp: "SPP", caiso: "CAISO", isone: "ISO-NE", nyiso: "NYISO" };
-    var AQ = { jurisdiction: "Jurisdiction", threshold: "20 MW", jointstudy: "Joint study", deposits: "Deposits", hybridrights: "Hybrid rights", protection: "Protection", expedited: "Expedited", upgradecost: "Upgrade cost" };
 
     var statRow = '<div class="cm-stats">' +
       [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.summarized2, "audited summaries"]]
@@ -516,16 +518,17 @@
 
     var rowsByRound = {};
     CM.list.forEach(function (c) { var k = roundOf(c.filed); (rowsByRound[k] = rowsByRound[k] || []).push(c); });
-    var allQ = []; // every row's search string, collected so the tag bar can show real match counts
     var listHtml = CM.rounds.map(function (r) {
       var items = (rowsByRound[r.key] || []).map(function (c) {
         var badge = c.s2 ? '<span class="cm-badge dl" title="Audited summary available"><span aria-hidden="true">✓</span><span class="sr-only">audited summary</span></span>'
           : c.dl ? '<span class="cm-badge sum" title="Downloaded but image-only (no text layer) — not summarized"><span aria-hidden="true">○</span><span class="sr-only">scanned, not summarized</span></span>'
           : '<span class="cm-badge no" title="Body not downloaded — eLibrary serves it inline"><span aria-hidden="true">–</span><span class="sr-only">not downloaded</span></span>';
         var type = CM.bucketLabels[c.bucket] || c.bucket;
-        var aqChips = (c.aq || []).map(function (k) { return '<button type="button" class="cm-tag aq" data-f="' + esc(AQ[k]) + '" title="Filter the list by: ' + esc(AQ[k]) + '">' + esc(AQ[k]) + "</button>"; }).join("");
-        var prChips = (c.pr || []).map(function (k) { return '<button type="button" class="cm-tag pr ' + k + '" data-f="' + esc(CL[k]) + '" title="Filter the list by: ' + esc(CL[k]) + '">' + esc(CL[k]) + "</button>"; }).join("");
-        var rgChips = (c.rg || []).map(function (k) { return '<button type="button" class="cm-tag rg" data-f="' + esc(RG[k]) + '" title="Filter the list by: ' + esc(RG[k]) + '">' + esc(RG[k]) + "</button>"; }).join("");
+        // lens chips add an AND filter token when clicked (data-tk = "<ns>:<key>")
+        var lensChip = function (cls, ns, k, label) { return '<button type="button" class="cm-tag ' + cls + (cls === "pr" ? " " + k : "") + '" data-tk="' + ns + ":" + k + '" title="Add filter: ' + esc(label) + '">' + esc(label) + "</button>"; };
+        var aqChips = (c.aq || []).map(function (k) { return lensChip("aq", "aq", k, AQ[k]); }).join("");
+        var prChips = (c.pr || []).map(function (k) { return lensChip("pr", "pr", k, CL[k]); }).join("");
+        var rgChips = (c.rg || []).map(function (k) { return lensChip("rg", "rg", k, RG[k]); }).join("");
         var grp = function (label, chips) { return chips ? '<span class="sr-only">' + label + ": </span>" + chips : ""; };
         var groups = [grp("Comment-period questions", aqChips), grp("Reform principles", prChips), grp("Regions", rgChips)].filter(Boolean);
         var tags = groups.length ? '<div class="cm-row-tags">' + groups.join('<span class="cm-tagsep" aria-hidden="true"></span>') + "</div>" : "";
@@ -533,7 +536,6 @@
         // descriptions and verbatim quotes are deliberately left out — they're lazy-loaded per letter,
         // too heavy to fold into every row's up-front index.)
         var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ") + " " + (c.summary || "") + " " + (c.bins || []).map(function (b) { return b.n; }).join(" ")).toLowerCase();
-        allQ.push(q);
         // expandable audited read: the plain summary, the positions as stance-colored chips (loaded
         // up front), and — fetched on open — each position's description + the verbatim quotes it draws on
         var analysis = "";
@@ -549,7 +551,12 @@
             '<div class="cm-bindetail" data-state=""></div>' +
             '<p class="cm-analysis-foot">Each position below carries the filer’s own stance and the verbatim quotes behind it; those quotes are the audit trail, committed in the repository. The stance shown is the filer’s own, read from its words.</p></details>';
         }
-        return '<li class="cm-row" id="c-' + esc(c.acc) + '" data-q="' + esc(q) + '">' +
+        var roundKey = roundOf(c.filed);
+        // structured fields the AND-token filters match against (never the free-text search string)
+        var stEnc = (c.bins || []).filter(function (b) { return String(b.k).indexOf("pr:") === 0; }).map(function (b) { return b.k.slice(3) + ":" + stanceClass(b.s); }).join(" ");
+        return '<li class="cm-row" id="c-' + esc(c.acc) + '" data-q="' + esc(q) + '" data-round="' + roundKey +
+          '" data-aq="' + esc((c.aq || []).join(" ")) + '" data-pr="' + esc((c.pr || []).join(" ")) +
+          '" data-rg="' + esc((c.rg || []).join(" ")) + '" data-st="' + esc(stEnc) + '">' +
           '<div class="cm-row-top"><span class="cm-row-date mono">' + esc(fmtD(c.filed)) + "</span>" + badge +
           '<span class="cm-row-org">' + esc(c.org) + "</span>" +
           '<span class="cm-row-type">' + esc(type) + "</span>" +
@@ -559,17 +566,35 @@
       }).join("");
       return '<section class="cm-listgroup"><h3 class="cm-listgroup-h">' + esc(r.label) + ' <span class="mono">' + r.count + "</span></h3><ul class=\"cm-list\">" + items + "</ul></section>";
     }).join("");
-    var filter = '<div class="cm-filter"><input type="search" id="cm-search" placeholder="Filter by organization, type, position, or description…" aria-label="Filter the comment list" autocomplete="off" /><span class="cm-filter-count mono" id="cm-count">' + CM.total + " of " + CM.total + "</span></div>";
+    // Sticky workbench: the search box, a Tags toggle, the result count, and the active-filter tokens.
+    // Clicking a lens/round/stance chip adds a removable AND token (structured match); free text ANDs with them.
+    var workbench = '<div class="cm-workbench">' +
+      '<div class="cm-wb-controls">' +
+      '<input type="search" id="cm-search" placeholder="Filter by org, type, or any word…" aria-label="Filter the comment list" autocomplete="off" />' +
+      '<button type="button" class="cm-tags-toggle" id="cm-tags-toggle" aria-expanded="false" aria-controls="cm-tagbar">Tags</button>' +
+      '<span class="cm-filter-count mono" id="cm-count">' + CM.total + " of " + CM.total + "</span></div>" +
+      '<div class="cm-tokens" id="cm-tokens" aria-label="Active filters" hidden></div></div>';
     var src = '<div class="srcs"><span class="label">Source</span><a class="src-chip" data-tier="ferc" href="' + esc(CM.source_url) + '" target="_blank" rel="noopener noreferrer" title="FERC eLibrary docket sheet for RM26-4-000">eLibrary · RM26-4 docket sheet</a></div>';
 
-    // discoverable filter vocabulary: a collapsible bar of every lens tag with the count of rows each
-    // matches. Count is the text-search count (over the same row strings the filter scans), so it equals
-    // the result you get clicking the chip. Chips reuse .cm-tag and the existing chip-click filter.
-    var tagCount = function (label) { var t = label.toLowerCase(); return allQ.reduce(function (n, s) { return n + (s.indexOf(t) >= 0 ? 1 : 0); }, 0); };
-    var tagChip = function (cls, label) { return '<button type="button" class="cm-tag ' + cls + '" data-f="' + esc(label) + '" title="Filter the list by: ' + esc(label) + '">' + esc(label) + ' <span class="cm-tag-n">' + tagCount(label) + "</span></button>"; };
-    var tagGroup = function (heading, cls, map) { return '<div class="cm-tagbar-group"><span class="cm-tagbar-label">' + esc(heading) + "</span>" + Object.keys(map).map(function (k) { return tagChip(cls, map[k]); }).join("") + "</div>"; };
-    var tagBar = '<details class="cm-tagbar" open><summary><span class="cm-tagbar-sum">Filter by tag</span><span class="cm-tagbar-hint mono">click any tag · counts = comments mentioning it</span></summary>' +
-      '<div class="cm-tagbar-body">' + tagGroup("Comment-period questions", "aq", AQ) + tagGroup("Reform principles", "pr", CL) + tagGroup("Regions", "rg", RG) + "</div></details>";
+    // filter vocabulary: every lens tag + comment round + stance-on-a-reform, each with the count of rows
+    // it matches. Counts are over the structured fields the tokens match, so a chip's count equals its result.
+    var countIn = function (field, key) { return CM.list.reduce(function (n, c) { return n + ((c[field] || []).indexOf(key) >= 0 ? 1 : 0); }, 0); };
+    var countRound = function (key) { return CM.list.reduce(function (n, c) { return n + (roundOf(c.filed) === key ? 1 : 0); }, 0); };
+    var countStance = function (pk, stance) { return CM.list.reduce(function (n, c) { return n + ((c.bins || []).some(function (b) { return b.k === "pr:" + pk && stanceClass(b.s) === stance; }) ? 1 : 0); }, 0); };
+    var tagChip = function (cls, tk, label, n) { return '<button type="button" class="cm-tag ' + cls + '" data-tk="' + esc(tk) + '" title="Add filter: ' + esc(label) + '">' + esc(label) + ' <span class="cm-tag-n">' + n + "</span></button>"; };
+    var lensGroup = function (heading, cls, map, field) { return '<div class="cm-tagbar-group"><span class="cm-tagbar-label">' + esc(heading) + "</span>" + Object.keys(map).map(function (k) { return tagChip(cls, cls + ":" + k, map[k], countIn(field, k)); }).join("") + "</div>"; };
+    var ROUND_KEYS = { initial: "Initial", reply: "Reply", supplemental: "Supplemental" };
+    var roundGroup = '<div class="cm-tagbar-group"><span class="cm-tagbar-label">Comment round</span>' +
+      Object.keys(ROUND_KEYS).map(function (k) { return tagChip("round", "round:" + k, ROUND_KEYS[k], countRound(k)); }).join("") + "</div>";
+    var stanceGroup = '<div class="cm-tagbar-group"><span class="cm-tagbar-label">Stance on a reform</span>' +
+      Object.keys(CL).map(function (k) {
+        return [["support", "Supports"], ["oppose", "Opposes"]].map(function (s) {
+          var n = countStance(k, s[0]); return n ? tagChip("st", "st:" + k + ":" + s[0], s[1] + " " + CL[k], n) : "";
+        }).join("");
+      }).join("") + "</div>";
+    var tagBar = '<div class="cm-tagbar" id="cm-tagbar" hidden><div class="cm-tagbar-body">' +
+      lensGroup("Comment-period questions", "aq", AQ, "aq") + lensGroup("Reform principles", "pr", CL, "pr") +
+      lensGroup("Regions", "rg", RG, "rg") + roundGroup + stanceGroup + "</div></div>";
 
     // three sub-tabs cut the scroll: the overall picture, the respondent mix, and the comment list itself
     var subtab = function (id, label, sel) {
@@ -620,8 +645,8 @@
       "</section>";
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
-      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary — open “Read the audited analysis” on any row for the plain read, then each position grouped by lens with its description and the verbatim quotes behind it. Each row also shows the lenses it engages and links to its eLibrary filing. Filter by org, type, lens, position, or any word in a summary.") +
-      filter + tagBar + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src +
+      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary; open “Read the audited analysis” on any row for the plain read, then each position grouped by lens with its description and the verbatim quotes behind it. Open Tags to filter by question, principle, region, round, or stance; the tokens stack (AND), and free text narrows further.") +
+      workbench + tagBar + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your filters. Remove a token or broaden the search.</p>' + src +
       '<span class="sr-only" role="status" aria-live="polite" id="cm-copystatus"></span></section>';
 
     return subnav + secOverview + secIssue + secTypes + secSummaries;
@@ -665,29 +690,65 @@
       });
     });
 
-    // list filter (within the summaries sub-tab)
+    // list filter (within the summaries sub-tab): free-text search ANDed with structured AND-tokens.
     var input = document.getElementById("cm-search"), count = document.getElementById("cm-count");
     if (!input) return;
     var rows = [].slice.call(document.querySelectorAll("#panel-comments .cm-row"));
     var groups = [].slice.call(document.querySelectorAll("#panel-comments .cm-listgroup"));
     var empty = document.getElementById("cm-empty");
-    input.addEventListener("input", function () {
-      var q = input.value.trim().toLowerCase(), shown = 0;
-      rows.forEach(function (r) { var hit = !q || r.getAttribute("data-q").indexOf(q) >= 0; r.hidden = !hit; if (hit) shown++; });
+    var tokensBox = document.getElementById("cm-tokens");
+    var activeTokens = []; // token ids, e.g. "rg:pjm", "round:initial", "st:colo:support"
+    var tokenLabel = function (id) {
+      var p = id.split(":");
+      if (p[0] === "round") return ROUND_SHORT[p[1]] || p[1];
+      if (p[0] === "st") return (p[2] === "support" ? "Supports " : "Opposes ") + (CL[p[1]] || p[1]);
+      return (p[0] === "aq" ? AQ : p[0] === "pr" ? CL : RG)[p[1]] || p[1];
+    };
+    var tokenTest = function (id) {
+      var p = id.split(":");
+      if (p[0] === "round") return function (r) { return r.dataset.round === p[1]; };
+      if (p[0] === "st") { var need = " " + p[1] + ":" + p[2] + " "; return function (r) { return (" " + (r.dataset.st || "") + " ").indexOf(need) >= 0; }; }
+      var need2 = " " + p[1] + " ";
+      return function (r) { return (" " + (r.dataset[p[0]] || "") + " ").indexOf(need2) >= 0; };
+    };
+    var testers = {};
+    var applyFilter = function () {
+      var q = input.value.trim().toLowerCase();
+      var preds = activeTokens.map(function (id) { return testers[id] || (testers[id] = tokenTest(id)); });
+      var shown = 0;
+      rows.forEach(function (r) {
+        var hit = (!q || r.getAttribute("data-q").indexOf(q) >= 0) && preds.every(function (fn) { return fn(r); });
+        r.hidden = !hit; if (hit) shown++;
+      });
       groups.forEach(function (g) { g.hidden = !g.querySelector(".cm-row:not([hidden])"); });
       count.textContent = shown + " of " + rows.length;
       if (empty) empty.hidden = shown !== 0; // explicit empty state — never leave a blank panel
-    });
-    // clicking a lens chip — in the tag bar or on any row — pre-fills the search and filters
-    // (the search box stays the primary control). Scoped to the summaries section so it covers both.
+    };
+    var renderTokens = function () {
+      if (!tokensBox) return;
+      tokensBox.hidden = activeTokens.length === 0;
+      tokensBox.innerHTML = activeTokens.map(function (id) {
+        var lbl = tokenLabel(id);
+        return '<span class="cm-token">' + esc(lbl) + '<button type="button" class="cm-token-x" data-rm="' + esc(id) + '" aria-label="Remove filter ' + esc(lbl) + '">×</button></span>';
+      }).join("");
+    };
+    var addToken = function (id) { if (activeTokens.indexOf(id) < 0) { activeTokens.push(id); renderTokens(); applyFilter(); } };
+    var removeToken = function (id) { var i = activeTokens.indexOf(id); if (i >= 0) { activeTokens.splice(i, 1); renderTokens(); applyFilter(); } };
+    input.addEventListener("input", applyFilter);
+    // one delegated handler: a chip's data-tk adds a token; a token's × (data-rm) removes it.
     var summariesSec = document.getElementById("cmsec-summaries");
     if (summariesSec) summariesSec.addEventListener("click", function (e) {
-      var chip = e.target.closest(".cm-tag");
-      if (!chip || !chip.dataset.f) return;
-      input.value = chip.dataset.f;
-      input.dispatchEvent(new Event("input", { bubbles: true }));
-      input.focus();
-      input.scrollIntoView({ block: "nearest" });
+      var rm = e.target.closest("[data-rm]");
+      if (rm) { removeToken(rm.getAttribute("data-rm")); return; }
+      var chip = e.target.closest(".cm-tag[data-tk]");
+      if (chip) { addToken(chip.getAttribute("data-tk")); }
+    });
+    // the sticky Tags button discloses the filter vocabulary panel
+    var tagsToggle = document.getElementById("cm-tags-toggle"), tagbar = document.getElementById("cm-tagbar");
+    if (tagsToggle && tagbar) tagsToggle.addEventListener("click", function () {
+      var opening = tagbar.hasAttribute("hidden");
+      if (opening) tagbar.removeAttribute("hidden"); else tagbar.setAttribute("hidden", "");
+      tagsToggle.setAttribute("aria-expanded", opening ? "true" : "false");
     });
 
     // lazy-load each audited row's bin detail (description + verbatim quotes) the first time its
