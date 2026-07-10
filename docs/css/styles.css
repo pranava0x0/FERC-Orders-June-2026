@@ -116,6 +116,28 @@ a:hover { color: var(--accent-ink); }
 
 .overview-bg { max-width: 74ch; }
 .overview-bg p { font-size: 15.5px; color: var(--ink); margin-bottom: 9px; }
+
+/* procedural clock: the §206 timeline, status computed against today */
+.proc-board { list-style: none; display: grid; gap: 8px; margin: 4px 0 10px; padding: 0; }
+.proc-step { display: grid; grid-template-columns: 140px 1fr; gap: 12px; background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--rule-strong); border-radius: 0 6px 6px 0; padding: 10px 14px; }
+.proc-step.next { border-left-color: var(--deadline); background: var(--deadline-bg); }
+.proc-step.past { opacity: 0.62; }
+.proc-when { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+.proc-date { font-size: 13px; font-weight: 700; color: var(--masthead); }
+.proc-badge { font-size: 9.5px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; border-radius: 3px; padding: 1px 7px; }
+.proc-badge.next { color: #fff; background: var(--deadline); }
+.proc-badge.upcoming { color: var(--accent-ink); background: #e9f0f8; }
+.proc-badge.past { color: var(--text-muted); background: var(--surface-2); }
+.proc-badge.pending { color: #5a4a1a; background: #f6efdb; }
+.proc-headline { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.proc-label { font-weight: 700; font-size: 14px; color: var(--ink); }
+.proc-period { font-size: 10.5px; color: var(--text-muted); }
+.proc-desc { font-size: 12.5px; color: #2b3744; line-height: 1.45; margin-top: 3px; }
+.proc-note { font-size: 10.5px; color: var(--text-muted); margin-top: 3px; }
+.proc-foot { font-size: 11.5px; color: var(--text-secondary); margin: 2px 0 4px; max-width: 74ch; line-height: 1.5; }
+@media (max-width: 560px) { .proc-step { grid-template-columns: 1fr; gap: 5px; } .proc-when { flex-direction: row; align-items: center; gap: 8px; } }
+/* masthead next-deadline chip */
+.mh-derived { color: #9db4d0; font-weight: 400; }
 .glance {
   display: grid; grid-template-columns: 1fr; gap: 1px;
   background: var(--rule); border: 1px solid var(--rule); margin-top: 4px;
@@ -398,30 +420,60 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 /* Comments tab: rounds, respondent types, themes, the full filterable list */
 .cm-rounds { display: grid; gap: 8px; margin-bottom: 18px; }
 @media (min-width: 600px) { .cm-rounds { grid-template-columns: repeat(3, 1fr); } }
-.cm-round { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 9px 13px; display: flex; flex-direction: column; gap: 2px; }
+.cm-round { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 9px 13px; display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: inherit; }
+.cm-round:hover { background: #eef3f9; border-color: var(--accent); }
+.cm-round:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* compact coverage-honesty line under the stat row */
+.cm-coverage { font-size: 11.5px; color: var(--text-secondary); margin: -6px 0 14px; letter-spacing: 0.01em; }
+/* an aggregate whose label deep-links into By-issue */
+.cm-agg-link { text-decoration: none; }
+.cm-agg-link:hover { color: var(--accent); text-decoration: underline; }
+.cm-agg-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.cm-agg-arrow { color: var(--accent); font-weight: 700; }
 .cm-round-n { font-family: var(--font-serif); font-weight: 700; font-size: 19px; color: var(--masthead); line-height: 1; }
 .cm-round-l { font-weight: 700; font-size: 13px; color: var(--ink); }
 .cm-round-d { font-size: 10.5px; color: var(--text-muted); }
 .cm-types, .cm-themes { display: grid; gap: 9px 20px; margin-bottom: 4px; }
 @media (min-width: 700px) { .cm-types, .cm-themes { grid-template-columns: 1fr 1fr; } }
 .cm-bar.theme > span { background: var(--masthead); }
-.cm-filter { display: flex; align-items: center; gap: 10px; margin: 4px 0 14px; }
-.cm-filter input { flex: 1; min-width: 0; font: inherit; font-size: 13.5px; padding: 7px 11px; border: 1px solid var(--rule-strong); border-radius: 6px; background: var(--surface); color: var(--ink); }
-.cm-filter input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+/* All-comments workbench: sticky search + Tags toggle + result count + active tokens, under the tablist */
+.cm-workbench { position: sticky; top: 46px; z-index: 15; background: var(--bg); padding: 8px 0 9px; margin: 4px 0 12px; border-bottom: 1px solid var(--rule); }
+.cm-wb-controls { display: flex; align-items: center; gap: 8px; }
+.cm-workbench input[type="search"] { flex: 1; min-width: 0; font: inherit; font-size: 13.5px; padding: 7px 11px; border: 1px solid var(--rule-strong); border-radius: 6px; background: var(--surface); color: var(--ink); }
+.cm-workbench input[type="search"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.cm-tags-toggle { flex: none; font: inherit; font-size: 11.5px; font-weight: 700; color: var(--accent); background: none; border: 1px solid var(--rule-strong); border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+.cm-tags-toggle:hover { background: #eef3f9; border-color: var(--accent); }
+.cm-tags-toggle[aria-expanded="true"] { background: #eef3f9; border-color: var(--accent); color: var(--accent-ink); }
+.cm-tags-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .cm-filter-count { flex: none; font-size: 11px; color: var(--text-muted); white-space: nowrap; }
+.cm-tokens { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
+.cm-tokens[hidden] { display: none; }
+.cm-token { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 600; color: var(--accent-ink); background: #e9f0f8; border: 1px solid var(--rule-strong); border-radius: 4px; padding: 2px 4px 2px 8px; }
+.cm-token-x { font: inherit; font-size: 14px; line-height: 1; color: var(--accent); background: none; border: none; cursor: pointer; padding: 0 3px; border-radius: 3px; }
+.cm-token-x:hover { color: var(--stance-negative); }
+.cm-token-x:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+@media (pointer: coarse) { .cm-tags-toggle { min-height: 44px; } .cm-token-x { min-width: 30px; min-height: 30px; } }
 .cm-listwrap { display: grid; gap: 18px; }
 .cm-listgroup-h { font-family: var(--font-serif); font-size: 16px; color: var(--masthead); margin-bottom: 9px; padding-bottom: 4px; border-bottom: 1px solid var(--rule); }
 .cm-listgroup-h .mono { font-size: 12px; color: var(--text-muted); font-weight: 400; }
 .cm-list { display: grid; gap: 7px; list-style: none; }
-.cm-row { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 8px 12px; }
+.cm-row { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 8px 12px; scroll-margin-top: 120px; }
+/* a permalinked row briefly highlights so a shared link lands the reader on the right comment */
+.cm-row-flash { animation: cm-row-flash 1.8s ease-out; }
+@keyframes cm-row-flash { 0%, 30% { background: #fbf3d8; border-color: var(--deadline, #b5791f); } 100% { background: var(--surface); border-color: var(--rule); } }
 .cm-row-top { display: flex; align-items: baseline; gap: 6px 9px; flex-wrap: wrap; }
 .cm-row-date { font-family: var(--font-mono); font-size: 11px; color: var(--accent-ink); flex: none; min-width: 80px; }
 .cm-row-org { font-weight: 700; font-size: 13.5px; color: var(--masthead); }
 .cm-row-type { font-size: 10.5px; color: var(--text-muted); background: var(--surface-2); border-radius: 999px; padding: 1px 9px; }
 .cm-row-link { margin-left: auto; flex: none; font-size: 10.5px; font-weight: 700; text-decoration: none; color: var(--accent); border: 1px solid var(--rule-strong); border-radius: 4px; padding: 3px 8px; }
 .cm-row-link:hover { background: #eef3f9; border-color: var(--accent); color: var(--accent-ink); }
+/* copy-permalink button: same compact chip idiom as the eLibrary link, sits just after it */
+.cm-row-permalink { flex: none; font: inherit; font-size: 10.5px; font-weight: 700; color: var(--accent); background: none; border: 1px solid var(--rule-strong); border-radius: 4px; padding: 3px 8px; cursor: pointer; white-space: nowrap; }
+.cm-row-permalink:hover { background: #eef3f9; border-color: var(--accent); color: var(--accent-ink); }
+.cm-row-permalink:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cm-row-permalink.copied { color: var(--accent-ink); border-color: var(--accent); background: #eef3f9; }
 /* full 44px tap target on touch viewports (kept compact on desktop to preserve list density) */
-@media (max-width: 700px) { .cm-row-link { padding: 10px 12px; min-height: 44px; display: inline-flex; align-items: center; } }
+@media (max-width: 700px) { .cm-row-link, .cm-row-permalink { padding: 10px 12px; min-height: 44px; display: inline-flex; align-items: center; } }
 .cm-row-desc { font-size: 12px; color: #2b3744; line-height: 1.4; margin-top: 4px; }
 .cm-badge { flex: none; font-size: 11px; font-weight: 700; border-radius: 4px; padding: 0 5px; line-height: 1.5; }
 .cm-badge.sum { color: #7a5a12; background: #f6efdb; }
@@ -430,12 +482,6 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-jump-wrap { margin-top: 6px; }
 .cm-jump { font-weight: 700; font-size: 13.5px; text-decoration: none; color: var(--accent); }
 .cm-jump:hover { color: var(--accent-ink); text-decoration: underline; }
-/* reform-principle + order-region aggregate (two bar groups) and the per-row tags */
-.cm-prreg { display: grid; gap: 16px 28px; margin-bottom: 4px; }
-@media (min-width: 740px) { .cm-prreg { grid-template-columns: 1fr 1fr; } }
-.cm-sub { font-family: var(--font-serif); font-size: 14.5px; color: var(--masthead); margin-bottom: 9px; }
-.cm-themes.one { grid-template-columns: 1fr; gap: 9px; }
-.cm-bar.prin > span { background: var(--accent-ink); }
 .cm-row-tags { display: flex; align-items: stretch; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
 .cm-tag { font: inherit; font-size: 9.5px; font-weight: 700; border: none; border-radius: 3px; padding: 2px 7px; letter-spacing: 0.02em; white-space: nowrap; cursor: pointer; line-height: 1.5; }
 .cm-tag:hover { filter: brightness(0.94); }
@@ -444,18 +490,14 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-tag.rg { color: #5a4a1a; background: #f6efdb; }
 .cm-tagsep { width: 1px; min-height: 13px; background: var(--rule-strong); margin: 0 3px; }
 .cm-tag.aq { color: #2e5d4f; background: #e6f1ec; }
+.cm-tag.round { color: #4a4a55; background: #ececf2; }
+.cm-tag.st { color: #47506a; background: #eceef5; }
 .cm-tag-n { font-weight: 400; opacity: 0.7; }
 
-/* tag bar: the queryable lens vocabulary, collapsible, on the All-comments tab */
-.cm-tagbar { margin: 9px 0 6px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface-2); }
-.cm-tagbar > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 8px 11px; min-height: 44px; }
-.cm-tagbar > summary::-webkit-details-marker { display: none; }
-.cm-tagbar > summary::before { content: "\25B8"; color: var(--accent); transition: transform 0.15s ease; }
-.cm-tagbar[open] > summary::before { transform: rotate(90deg); }
-.cm-tagbar > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
-.cm-tagbar-sum { font-size: 12px; font-weight: 700; color: var(--accent); }
-.cm-tagbar-hint { font-size: 10px; color: var(--text-muted); }
-.cm-tagbar-body { display: flex; flex-direction: column; gap: 10px; padding: 2px 11px 12px; }
+/* tag bar: the queryable lens/round/stance vocabulary, disclosed by the sticky Tags toggle */
+.cm-tagbar { margin: 0 0 12px; border: 1px solid var(--rule); border-radius: 6px; background: var(--surface-2); }
+.cm-tagbar[hidden] { display: none; }
+.cm-tagbar-body { display: flex; flex-direction: column; gap: 10px; padding: 12px 11px; }
 .cm-tagbar-group { display: flex; flex-wrap: wrap; gap: 5px; }
 .cm-tagbar-label { flex: 0 0 100%; font-size: 9.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-muted); }
 /* tag-bar chips are a deliberate filter control — give them a comfortable touch target on coarse pointers (§12.12) */
@@ -521,6 +563,56 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-stancebar .mix { background: var(--stance-mixed); }
 .cm-stancebar .neu { background: var(--rule-strong); color: var(--ink); }
 
+/* By-issue reader: two-pane on wide screens (outline + reader), stacked on narrow */
+.cm-issues { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 24px; align-items: start; }
+@media (max-width: 900px) { .cm-issues { grid-template-columns: 1fr; gap: 14px; } }
+.cm-issue-outline { min-width: 0; }
+@media (min-width: 901px) { .cm-issue-outline { position: sticky; top: 116px; max-height: calc(100vh - 140px); overflow: auto; } }
+.cm-issue-group + .cm-issue-group { margin-top: 16px; }
+.cm-issue-group-h { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 5px; }
+.cm-issue-outline-list { list-style: none; display: grid; gap: 2px; margin: 0; padding: 0; }
+.cm-issue-link { width: 100%; display: flex; align-items: center; gap: 8px; text-align: left; font: inherit; font-size: 12.5px; background: none; border: 1px solid transparent; border-radius: 6px; padding: 7px 9px; cursor: pointer; color: var(--ink); }
+.cm-issue-link:hover { background: var(--surface-2); }
+.cm-issue-link.active { background: #eef3f9; border-color: var(--rule-strong); }
+.cm-issue-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cm-issue-name { flex: 1; min-width: 0; font-weight: 600; line-height: 1.3; }
+.cm-issue-count { flex: none; font-size: 11px; color: var(--text-muted); }
+.cm-issue-micro { display: inline-flex; flex: none; height: 6px; width: 48px; border-radius: 2px; overflow: hidden; background: var(--surface-2); border: 1px solid var(--rule); }
+.cm-issue-micro .seg { display: block; }
+.cm-issue-micro .sup { background: var(--stance-positive); }
+.cm-issue-micro .opp { background: var(--stance-negative); }
+.cm-issue-micro .mix { background: var(--stance-mixed); }
+.cm-issue-micro .neu { background: var(--rule-strong); }
+@media (pointer: coarse) { .cm-issue-link { min-height: 44px; } }
+.cm-issue-reader { min-width: 0; }
+.cm-issue-hint { color: var(--text-muted); font-size: 13px; line-height: 1.5; }
+.cm-issue-readhead { margin-bottom: 6px; }
+.cm-issue-readtitle { font-family: var(--font-serif); font-size: 19px; color: var(--masthead); line-height: 1.25; }
+.cm-issue-readdesc { font-size: 13px; color: #2b3744; line-height: 1.5; margin-top: 4px; }
+.cm-issue-readmeta { font-size: 11px; color: var(--text-muted); margin-top: 7px; }
+.cm-issue-splitbar { margin-top: 8px; }
+.cm-issue-stancegroup { margin-top: 18px; }
+.cm-issue-stancegroup-h { font-size: 12.5px; font-weight: 700; color: var(--masthead); padding-bottom: 4px; border-bottom: 2px solid var(--rule); }
+.cm-issue-stancegroup.support .cm-issue-stancegroup-h { border-color: var(--stance-positive); }
+.cm-issue-stancegroup.oppose .cm-issue-stancegroup-h { border-color: var(--stance-negative); }
+.cm-issue-stancegroup.mixed .cm-issue-stancegroup-h { border-color: var(--stance-mixed); }
+.cm-issue-stancegroup-h .mono { color: var(--text-muted); font-weight: 400; font-size: 11px; }
+.cm-issue-letter { padding: 9px 0; border-bottom: 1px solid var(--rule); }
+.cm-issue-letter-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.cm-issue-org { font-weight: 700; font-size: 13px; color: var(--accent); text-decoration: none; }
+.cm-issue-org:hover { text-decoration: underline; }
+.cm-issue-bucket { font-size: 10.5px; color: var(--text-muted); background: var(--surface-2); border-radius: 999px; padding: 1px 8px; }
+.cm-issue-letter-desc { font-size: 12.5px; color: #2b3744; line-height: 1.45; margin-top: 4px; }
+.cm-issue-quotes { margin-top: 6px; }
+.cm-issue-quotes > summary { cursor: pointer; font-size: 11px; color: var(--accent); display: inline-flex; gap: 6px; align-items: center; list-style: none; }
+.cm-issue-quotes > summary::-webkit-details-marker { display: none; }
+.cm-issue-quotes > summary::before { content: "\203A"; font-weight: 700; transition: transform 0.15s ease; }
+.cm-issue-quotes[open] > summary::before { transform: rotate(90deg); }
+.cm-issue-quotes:focus-within > summary { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cm-issue-quotes .cm-bqs { display: grid; gap: 7px; margin-top: 6px; }
+.cm-issue-quotes-n { color: var(--text-muted); }
+@media (pointer: coarse) { .cm-issue-quotes > summary { min-height: 44px; } }
+
 /* Consensus heatmap: stakeholder type x reform principle */
 .cm-hm-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-size: 11.5px; color: var(--text-secondary); margin-bottom: 4px; }
 .cm-hm-key { display: inline-flex; align-items: center; gap: 5px; }
@@ -536,7 +628,10 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-hm-col { font-size: 11px; font-weight: 700; color: var(--text-muted); text-align: center; align-self: end; padding-bottom: 4px; line-height: 1.15; }
 .cm-hm-rowlabel { display: flex; align-items: center; justify-content: space-between; gap: 6px; font-size: 12px; color: var(--ink); padding-right: 8px; }
 .cm-hm-letters { font-size: 10px; color: var(--text-muted); flex: none; }
-.cm-hm-cell { display: flex; align-items: center; justify-content: center; min-height: 30px; border-radius: 5px; font-size: 12px; font-weight: 700; }
+.cm-hm-cell { display: flex; align-items: center; justify-content: center; min-height: 30px; border-radius: 5px; font-size: 12px; font-weight: 700; text-decoration: none; }
+a.cm-hm-cell { cursor: pointer; }
+a.cm-hm-cell:hover { outline: 2px solid var(--accent); outline-offset: -2px; }
+a.cm-hm-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .cm-hm-cell.support { background: #dcebde; color: #1f5a35; }
 .cm-hm-cell.support.strong { background: var(--stance-positive); color: #fff; }
 .cm-hm-cell.oppose { background: #f7ece6; color: var(--stance-negative); }
@@ -551,8 +646,6 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-subtab:hover { color: var(--ink); }
 .cm-subtab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
 .cm-subtab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
-.cm-prreg.three { grid-template-columns: 1fr; }
-@media (min-width: 920px) { .cm-prreg.three { grid-template-columns: 1fr 1fr 1fr; } }
 
 /* generic two-col blocks (jurisdiction / regional) */
 .blocks { display: grid; gap: 12px; }

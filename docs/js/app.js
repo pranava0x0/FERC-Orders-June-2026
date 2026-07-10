@@ -4,7 +4,11 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260629b";
+  var ASSET_VER = "20260710d";
+  // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
+  var pendingCommentsRoute = null;
+  // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
+  var applyCommentsRoute = null;
   var D = window.FERC_DATA;
   if (!D) { document.getElementById("main").innerHTML = "<p class='noscript'>Data failed to load (js/data.js).</p>"; return; }
 
@@ -78,6 +82,44 @@
   }
   function paras(arr) { return arr.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join(""); }
 
+  /* ---- Procedural clock (the §206 timeline; status computed in-browser against today) ---- */
+  var PROC_MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function fmtISO(iso) { if (!iso) return ""; var p = String(iso).split("-"); return PROC_MON[+p[1] - 1] + " " + (+p[2]) + ", " + p[0]; }
+  // Tag each step past / next / upcoming / pending by comparing its derived date to today. The single
+  // soonest future-dated step is "next"; steps with no fixed date (relative windows) stay "pending".
+  function procStatus() {
+    var P = D.procedural; if (!P || !P.steps) return null;
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var steps = P.steps.map(function (s) {
+      var d = s.date ? new Date(s.date + "T00:00:00") : null;
+      return { s: s, date: d, status: d ? (d < today ? "past" : "upcoming") : "pending" };
+    });
+    var next = null;
+    steps.forEach(function (x) { if (x.date && x.date >= today && (!next || x.date < next.date)) next = x; });
+    if (next) next.status = "next";
+    return { steps: steps, next: next };
+  }
+  function renderProcedural() {
+    var P = D.procedural, ps = procStatus();
+    if (!ps) return "";
+    var STATUS_LBL = { past: "Passed", next: "Next", upcoming: "Upcoming", pending: "Pending" };
+    var rows = ps.steps.map(function (x) {
+      var s = x.s;
+      var when = x.date ? fmtISO(s.date) : (s.dateNote || "TBD");
+      return '<li class="proc-step ' + x.status + '"' + (x.status === "next" ? ' aria-current="date"' : "") + ">" +
+        '<div class="proc-when"><span class="proc-date mono">' + esc(when) + "</span>" +
+        '<span class="proc-badge ' + x.status + '">' + STATUS_LBL[x.status] + "</span></div>" +
+        '<div class="proc-what"><div class="proc-headline"><span class="proc-label">' + esc(s.label) + "</span>" +
+        '<span class="proc-period mono">' + esc(s.period) + " · " + esc(s.cite) + "</span></div>" +
+        '<p class="proc-desc">' + esc(s.desc) + "</p>" +
+        (s.dateNote && x.date ? '<p class="proc-note mono">' + esc(s.dateNote) + "</p>" : "") + "</div></li>";
+    }).join("");
+    return head("What happens next: the §206 procedural clock", P.basis) +
+      '<ol class="proc-board">' + rows + "</ol>" +
+      '<p class="proc-foot">Dates are derived from the ' + esc(P.issuedLabel) +
+      " issuance, business-day-adjusted; status reflects today’s date, not confirmed eLibrary filings. Confirm each deadline in the order before relying on it.</p>";
+  }
+
   /* ---- TAB: Overview (stats + at-a-glance + background) ---- */
   function renderOverview() {
     var stats = '<div class="kpis">' + D.kpis.map(function (k) {
@@ -131,7 +173,7 @@
 
     return head("Overview", m.subtitle) +
       '<div class="overview-bg">' + paras(m.summary) + "</div>" +
-      stats + glance + commish;
+      stats + renderProcedural() + glance + commish;
   }
 
   /* ---- TAB 1 ---- */
@@ -389,21 +431,40 @@
   // same order the rest of the Comments tab uses (ANOPR questions, reform principles, regions, then emergent topics).
   var LENS_ORDER = ["aq", "pr", "rg", "topic"];
   var LENS_LABEL = { aq: "Comment-period questions", pr: "Reform principles", rg: "Order regions", topic: "Other topics raised" };
+  // By-issue outline groups (same lens order); the reader groups letters by these stance buckets.
+  var ISSUE_GROUP = { aq: "Comment-period questions", pr: "Reform principles", rg: "Order regions", topic: "Emergent topics" };
+  var ISSUE_STANCE_GROUPS = [
+    { k: "support", label: "Supports" },
+    { k: "mixed", label: "Supports with conditions / mixed" },
+    { k: "oppose", label: "Opposes" },
+    { k: "neutral", label: "No position stated" },
+  ];
+  // Short lens labels shared by the row chips, the filter vocabulary, and the AND-token chips.
+  var CL = { study: "Study", cost: "Cost", colo: "Co-loc", flex: "Flex", proximate: "Prox-gen" };
+  var RG = { pjm: "PJM", miso: "MISO", spp: "SPP", caiso: "CAISO", isone: "ISO-NE", nyiso: "NYISO" };
+  var AQ = { jurisdiction: "Jurisdiction", threshold: "20 MW", jointstudy: "Joint study", deposits: "Deposits", hybridrights: "Hybrid rights", protection: "Protection", expedited: "Expedited", upgradecost: "Upgrade cost" };
+  var ROUND_SHORT = { initial: "Initial", reply: "Reply", supplemental: "Supplemental" };
 
   function renderComments() {
     var CM = window.FERC_COMMENTS;
     if (!CM) return head("The RM26-4 comment period", "Comment data did not load (js/comments-data.js).");
-    var CL = { study: "Study", cost: "Cost", colo: "Co-loc", flex: "Flex", proximate: "Prox-gen" };
-    var RG = { pjm: "PJM", miso: "MISO", spp: "SPP", caiso: "CAISO", isone: "ISO-NE", nyiso: "NYISO" };
-    var AQ = { jurisdiction: "Jurisdiction", threshold: "20 MW", jointstudy: "Joint study", deposits: "Deposits", hybridrights: "Hybrid rights", protection: "Protection", expedited: "Expedited", upgradecost: "Upgrade cost" };
 
     var statRow = '<div class="cm-stats">' +
       [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.summarized2, "audited summaries"]]
         .map(function (s) { return '<div class="cm-stat"><span class="v">' + esc(String(s[0])) + '</span><span class="l">' + esc(s[1]) + "</span></div>"; }).join("") + "</div>";
 
+    // compact coverage-honesty line, derived from the data so the numbers stay in sync (never a bare 0)
+    var cvScans = CM.list.filter(function (c) { return c.dl && !c.s2; }).length;
+    var cvInline = CM.list.filter(function (c) { return !c.dl; }).length;
+    var coverageLine = '<p class="cm-coverage">' + CM.summarized2 + " of " + CM.total + " audited · " +
+      cvScans + " image-only scan" + (cvScans === 1 ? "" : "s") + " await" + (cvScans === 1 ? "s" : "") + " OCR · " +
+      cvInline + " served inline by eLibrary</p>";
+
+    // each round links into All comments filtered to that round (the rounds strip is navigation, not decoration)
     var rounds = '<div class="cm-rounds">' + CM.rounds.map(function (r) {
-      return '<div class="cm-round"><span class="cm-round-n mono">' + r.count + '</span><span class="cm-round-l">' + esc(r.label) +
-        '</span><span class="cm-round-d mono">' + esc(fmtD(r.first)) + " – " + esc(fmtD(r.last)) + "</span></div>";
+      return '<a class="cm-round" href="#' + window.CommentsRoute.serialize({ sub: "summaries", params: { f: "round:" + r.key } }) +
+        '" title="See the ' + esc(r.label.toLowerCase()) + ' in All comments"><span class="cm-round-n mono">' + r.count + '</span><span class="cm-round-l">' + esc(r.label) +
+        '</span><span class="cm-round-d mono">' + esc(fmtD(r.first)) + " to " + esc(fmtD(r.last)) + "</span></a>";
     }).join("") + "</div>";
 
     // respondent types: count + the full distinct-organization roster per camp (collapse past 10)
@@ -435,17 +496,6 @@
         '<p class="cm-note mono">' + t.count + " of " + CM.analyzed + " comments mention it</p></div>";
     }).join("") + "</div>";
 
-    // per-comment reform-principle + order-region tags, aggregated into two bar groups
-    var prRegBar = function (t) {
-      return '<div class="cm-theme"><div class="cm-bhead"><span class="cm-label">' + esc(t.label) + '</span><span class="cm-n mono">' + t.pct + '%</span></div>' +
-        '<div class="cm-bar prin"><span style="width:' + t.pct + '%"></span></div>' +
-        '<p class="cm-note mono">' + t.count + " of " + CM.summarized2 + "</p></div>";
-    };
-    var prReg = '<div class="cm-prreg three">' +
-      '<div><h3 class="cm-sub">Comment-period questions</h3><div class="cm-themes one">' + CM.anoprQuestions.map(prRegBar).join("") + "</div></div>" +
-      '<div><h3 class="cm-sub">Reform principles</h3><div class="cm-themes one">' + CM.principles.map(prRegBar).join("") + "</div></div>" +
-      '<div><h3 class="cm-sub">Order regions</h3><div class="cm-themes one">' + CM.regions.map(prRegBar).join("") + "</div></div></div>";
-
     // stance map: where commenters land on each reform principle, read from the audited summaries
     var ST_LBL = { sup: "Support", opp: "Oppose", mix: "Mixed", neu: "No position" };
     var stanceBars = "";
@@ -454,7 +504,9 @@
         '<span class="key sup">Support</span><span class="key opp">Oppose</span><span class="key mix">Mixed</span><span class="key neu">No position</span></div>';
       var stRows = CM.principleStances.map(function (p) {
         var seg = function (k, cls) { var n = p[k]; return n ? '<span class="seg ' + cls + '" style="flex:' + n + '" title="' + n + " " + ST_LBL[cls] + '">' + (n >= 10 ? n : "") + "</span>" : ""; };
-        return '<div class="cm-stancerow"><div class="cm-bhead"><span class="cm-label">' + esc(p.label) + '</span><span class="cm-n mono">' + p.total + "</span></div>" +
+        // the label deep-links into By-issue for this principle (the aggregate becomes a way in)
+        var href = "#" + window.CommentsRoute.serialize({ sub: "issue", params: { id: "pr:" + p.key } });
+        return '<div class="cm-stancerow"><div class="cm-bhead"><a class="cm-label cm-agg-link" href="' + href + '" title="Read the record on ' + esc(p.label) + ' by issue">' + esc(p.label) + ' <span class="cm-agg-arrow" aria-hidden="true">→</span></a><span class="cm-n mono">' + p.total + "</span></div>" +
           '<div class="cm-stancebar" role="img" aria-label="' + esc(p.label) + ": " + p.support + " support, " + p.oppose + " oppose, " + p.mixed + " mixed, " + p.neutral + ' no position">' +
           seg("support", "sup") + seg("oppose", "opp") + seg("mixed", "mix") + seg("neutral", "neu") + "</div></div>";
       }).join("");
@@ -489,7 +541,9 @@
           if (!c.total) return '<div class="cm-hm-cell empty"><span class="sr-only">no audited position</span></div>';
           var b = band(c); present[b] = true;
           var full = r.label + " — " + (PR_SHORT[c.key] || c.key) + ": " + c.support + " support, " + c.oppose + " oppose, " + c.mixed + " mixed, " + c.neutral + " no position (n=" + c.total + ")";
-          return '<div class="cm-hm-cell ' + BAND_CLS[b] + '" role="img" aria-label="' + esc(full) + '" title="' + esc(full) + '"><span class="cm-hm-n">' + c.total + "</span></div>";
+          // the cell links into By-issue for this reform (a labeled link is the accessible clickable form)
+          var href = "#" + window.CommentsRoute.serialize({ sub: "issue", params: { id: "pr:" + c.key } });
+          return '<a class="cm-hm-cell ' + BAND_CLS[b] + '" href="' + href + '" aria-label="' + esc(full) + '. Read this issue" title="' + esc(full) + '"><span class="cm-hm-n">' + c.total + "</span></a>";
         }).join("");
         return label + cells;
       }).join("");
@@ -504,16 +558,17 @@
 
     var rowsByRound = {};
     CM.list.forEach(function (c) { var k = roundOf(c.filed); (rowsByRound[k] = rowsByRound[k] || []).push(c); });
-    var allQ = []; // every row's search string, collected so the tag bar can show real match counts
     var listHtml = CM.rounds.map(function (r) {
       var items = (rowsByRound[r.key] || []).map(function (c) {
         var badge = c.s2 ? '<span class="cm-badge dl" title="Audited summary available"><span aria-hidden="true">✓</span><span class="sr-only">audited summary</span></span>'
           : c.dl ? '<span class="cm-badge sum" title="Downloaded but image-only (no text layer) — not summarized"><span aria-hidden="true">○</span><span class="sr-only">scanned, not summarized</span></span>'
           : '<span class="cm-badge no" title="Body not downloaded — eLibrary serves it inline"><span aria-hidden="true">–</span><span class="sr-only">not downloaded</span></span>';
         var type = CM.bucketLabels[c.bucket] || c.bucket;
-        var aqChips = (c.aq || []).map(function (k) { return '<button type="button" class="cm-tag aq" data-f="' + esc(AQ[k]) + '" title="Filter the list by: ' + esc(AQ[k]) + '">' + esc(AQ[k]) + "</button>"; }).join("");
-        var prChips = (c.pr || []).map(function (k) { return '<button type="button" class="cm-tag pr ' + k + '" data-f="' + esc(CL[k]) + '" title="Filter the list by: ' + esc(CL[k]) + '">' + esc(CL[k]) + "</button>"; }).join("");
-        var rgChips = (c.rg || []).map(function (k) { return '<button type="button" class="cm-tag rg" data-f="' + esc(RG[k]) + '" title="Filter the list by: ' + esc(RG[k]) + '">' + esc(RG[k]) + "</button>"; }).join("");
+        // lens chips add an AND filter token when clicked (data-tk = "<ns>:<key>")
+        var lensChip = function (cls, ns, k, label) { return '<button type="button" class="cm-tag ' + cls + (cls === "pr" ? " " + k : "") + '" data-tk="' + ns + ":" + k + '" title="Add filter: ' + esc(label) + '">' + esc(label) + "</button>"; };
+        var aqChips = (c.aq || []).map(function (k) { return lensChip("aq", "aq", k, AQ[k]); }).join("");
+        var prChips = (c.pr || []).map(function (k) { return lensChip("pr", "pr", k, CL[k]); }).join("");
+        var rgChips = (c.rg || []).map(function (k) { return lensChip("rg", "rg", k, RG[k]); }).join("");
         var grp = function (label, chips) { return chips ? '<span class="sr-only">' + label + ": </span>" + chips : ""; };
         var groups = [grp("Comment-period questions", aqChips), grp("Reform principles", prChips), grp("Regions", rgChips)].filter(Boolean);
         var tags = groups.length ? '<div class="cm-row-tags">' + groups.join('<span class="cm-tagsep" aria-hidden="true"></span>') + "</div>" : "";
@@ -521,7 +576,6 @@
         // descriptions and verbatim quotes are deliberately left out — they're lazy-loaded per letter,
         // too heavy to fold into every row's up-front index.)
         var q = (c.org + " " + c.desc + " " + type + " " + (c.aq || []).map(function (k) { return AQ[k]; }).join(" ") + " " + (c.pr || []).map(function (k) { return CL[k]; }).join(" ") + " " + (c.rg || []).map(function (k) { return RG[k]; }).join(" ") + " " + (c.summary || "") + " " + (c.bins || []).map(function (b) { return b.n; }).join(" ")).toLowerCase();
-        allQ.push(q);
         // expandable audited read: the plain summary, the positions as stance-colored chips (loaded
         // up front), and — fetched on open — each position's description + the verbatim quotes it draws on
         var analysis = "";
@@ -537,43 +591,92 @@
             '<div class="cm-bindetail" data-state=""></div>' +
             '<p class="cm-analysis-foot">Each position below carries the filer’s own stance and the verbatim quotes behind it; those quotes are the audit trail, committed in the repository. The stance shown is the filer’s own, read from its words.</p></details>';
         }
-        return '<li class="cm-row" data-q="' + esc(q) + '">' +
+        var roundKey = roundOf(c.filed);
+        // structured fields the AND-token filters match against (never the free-text search string)
+        var stEnc = (c.bins || []).filter(function (b) { return String(b.k).indexOf("pr:") === 0; }).map(function (b) { return b.k.slice(3) + ":" + stanceClass(b.s); }).join(" ");
+        return '<li class="cm-row" id="c-' + esc(c.acc) + '" data-q="' + esc(q) + '" data-round="' + roundKey +
+          '" data-aq="' + esc((c.aq || []).join(" ")) + '" data-pr="' + esc((c.pr || []).join(" ")) +
+          '" data-rg="' + esc((c.rg || []).join(" ")) + '" data-st="' + esc(stEnc) + '">' +
           '<div class="cm-row-top"><span class="cm-row-date mono">' + esc(fmtD(c.filed)) + "</span>" + badge +
           '<span class="cm-row-org">' + esc(c.org) + "</span>" +
           '<span class="cm-row-type">' + esc(type) + "</span>" +
-          '<a class="cm-row-link" href="' + esc(eli(c.acc)) + '" target="_blank" rel="noopener noreferrer" title="Open eLibrary filing ' + esc(c.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a></div>' +
+          '<a class="cm-row-link" href="' + esc(eli(c.acc)) + '" target="_blank" rel="noopener noreferrer" title="Open eLibrary filing ' + esc(c.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a>' +
+          '<button type="button" class="cm-row-permalink" data-acc="' + esc(c.acc) + '" title="Copy a link to this comment" aria-label="Copy a permalink to this comment from ' + esc(c.org) + '">Link</button></div>' +
           '<p class="cm-row-desc">' + esc(c.desc) + "</p>" + tags + analysis + "</li>";
       }).join("");
       return '<section class="cm-listgroup"><h3 class="cm-listgroup-h">' + esc(r.label) + ' <span class="mono">' + r.count + "</span></h3><ul class=\"cm-list\">" + items + "</ul></section>";
     }).join("");
-    var filter = '<div class="cm-filter"><input type="search" id="cm-search" placeholder="Filter by organization, type, position, or description…" aria-label="Filter the comment list" autocomplete="off" /><span class="cm-filter-count mono" id="cm-count">' + CM.total + " of " + CM.total + "</span></div>";
+    // Sticky workbench: the search box, a Tags toggle, the result count, and the active-filter tokens.
+    // Clicking a lens/round/stance chip adds a removable AND token (structured match); free text ANDs with them.
+    var workbench = '<div class="cm-workbench">' +
+      '<div class="cm-wb-controls">' +
+      '<input type="search" id="cm-search" placeholder="Filter by org, type, or any word…" aria-label="Filter the comment list" autocomplete="off" />' +
+      '<button type="button" class="cm-tags-toggle" id="cm-tags-toggle" aria-expanded="false" aria-controls="cm-tagbar">Tags</button>' +
+      '<span class="cm-filter-count mono" id="cm-count">' + CM.total + " of " + CM.total + "</span></div>" +
+      '<div class="cm-tokens" id="cm-tokens" aria-label="Active filters" hidden></div></div>';
     var src = '<div class="srcs"><span class="label">Source</span><a class="src-chip" data-tier="ferc" href="' + esc(CM.source_url) + '" target="_blank" rel="noopener noreferrer" title="FERC eLibrary docket sheet for RM26-4-000">eLibrary · RM26-4 docket sheet</a></div>';
 
-    // discoverable filter vocabulary: a collapsible bar of every lens tag with the count of rows each
-    // matches. Count is the text-search count (over the same row strings the filter scans), so it equals
-    // the result you get clicking the chip. Chips reuse .cm-tag and the existing chip-click filter.
-    var tagCount = function (label) { var t = label.toLowerCase(); return allQ.reduce(function (n, s) { return n + (s.indexOf(t) >= 0 ? 1 : 0); }, 0); };
-    var tagChip = function (cls, label) { return '<button type="button" class="cm-tag ' + cls + '" data-f="' + esc(label) + '" title="Filter the list by: ' + esc(label) + '">' + esc(label) + ' <span class="cm-tag-n">' + tagCount(label) + "</span></button>"; };
-    var tagGroup = function (heading, cls, map) { return '<div class="cm-tagbar-group"><span class="cm-tagbar-label">' + esc(heading) + "</span>" + Object.keys(map).map(function (k) { return tagChip(cls, map[k]); }).join("") + "</div>"; };
-    var tagBar = '<details class="cm-tagbar" open><summary><span class="cm-tagbar-sum">Filter by tag</span><span class="cm-tagbar-hint mono">click any tag · counts = comments mentioning it</span></summary>' +
-      '<div class="cm-tagbar-body">' + tagGroup("Comment-period questions", "aq", AQ) + tagGroup("Reform principles", "pr", CL) + tagGroup("Regions", "rg", RG) + "</div></details>";
+    // filter vocabulary: every lens tag + comment round + stance-on-a-reform, each with the count of rows
+    // it matches. Counts are over the structured fields the tokens match, so a chip's count equals its result.
+    var countIn = function (field, key) { return CM.list.reduce(function (n, c) { return n + ((c[field] || []).indexOf(key) >= 0 ? 1 : 0); }, 0); };
+    var countRound = function (key) { return CM.list.reduce(function (n, c) { return n + (roundOf(c.filed) === key ? 1 : 0); }, 0); };
+    var countStance = function (pk, stance) { return CM.list.reduce(function (n, c) { return n + ((c.bins || []).some(function (b) { return b.k === "pr:" + pk && stanceClass(b.s) === stance; }) ? 1 : 0); }, 0); };
+    var tagChip = function (cls, tk, label, n) { return '<button type="button" class="cm-tag ' + cls + '" data-tk="' + esc(tk) + '" title="Add filter: ' + esc(label) + '">' + esc(label) + ' <span class="cm-tag-n">' + n + "</span></button>"; };
+    var lensGroup = function (heading, cls, map, field) { return '<div class="cm-tagbar-group"><span class="cm-tagbar-label">' + esc(heading) + "</span>" + Object.keys(map).map(function (k) { return tagChip(cls, cls + ":" + k, map[k], countIn(field, k)); }).join("") + "</div>"; };
+    var ROUND_KEYS = { initial: "Initial", reply: "Reply", supplemental: "Supplemental" };
+    var roundGroup = '<div class="cm-tagbar-group"><span class="cm-tagbar-label">Comment round</span>' +
+      Object.keys(ROUND_KEYS).map(function (k) { return tagChip("round", "round:" + k, ROUND_KEYS[k], countRound(k)); }).join("") + "</div>";
+    var stanceGroup = '<div class="cm-tagbar-group"><span class="cm-tagbar-label">Stance on a reform</span>' +
+      Object.keys(CL).map(function (k) {
+        return [["support", "Supports"], ["oppose", "Opposes"]].map(function (s) {
+          var n = countStance(k, s[0]); return n ? tagChip("st", "st:" + k + ":" + s[0], s[1] + " " + CL[k], n) : "";
+        }).join("");
+      }).join("") + "</div>";
+    var tagBar = '<div class="cm-tagbar" id="cm-tagbar" hidden><div class="cm-tagbar-body">' +
+      lensGroup("Comment-period questions", "aq", AQ, "aq") + lensGroup("Reform principles", "pr", CL, "pr") +
+      lensGroup("Regions", "rg", RG, "rg") + roundGroup + stanceGroup + "</div></div>";
 
     // three sub-tabs cut the scroll: the overall picture, the respondent mix, and the comment list itself
     var subtab = function (id, label, sel) {
       return '<button class="cm-subtab" role="tab" id="cmsub-' + id + '" aria-controls="cmsec-' + id + '" aria-selected="' + (sel ? "true" : "false") + '"' + (sel ? "" : ' tabindex="-1"') + ' data-sub="' + id + '">' + esc(label) + "</button>";
     };
     var subnav = '<div class="cm-subtabs" role="tablist" aria-label="Comment-period views">' +
-      subtab("overview", "Themes & categories", true) + subtab("types", "Respondent types", false) + subtab("summaries", "All comments", false) + "</div>";
+      subtab("overview", "Themes & categories", true) + subtab("issue", "By issue", false) +
+      subtab("types", "Respondent types", false) + subtab("summaries", "All comments", false) + "</div>";
+
+    // By-issue outline: the landing state of the reader. Rendered synchronously from the small baked
+    // outline (CM.issues); picking an issue lazy-loads its per-issue file and fills the reader pane.
+    var microStance = function (st) {
+      var seg = function (k, cls) { return st[k] ? '<span class="seg ' + cls + '" style="flex:' + st[k] + '"></span>' : ""; };
+      return '<span class="cm-issue-micro" aria-hidden="true">' + seg("support", "sup") + seg("mixed", "mix") + seg("oppose", "opp") + seg("neutral", "neu") + "</span>";
+    };
+    var issueOutlineHtml = LENS_ORDER.map(function (ns) {
+      var items = (CM.issues || []).filter(function (i) { return i.ns === ns; });
+      if (!items.length) return "";
+      var lis = items.map(function (i) {
+        var s = i.stances;
+        return '<li><button type="button" class="cm-issue-link" data-issue="' + esc(i.key) + '" data-slug="' + esc(i.slug) +
+          '" title="' + esc(i.name + " — " + s.support + " support, " + s.oppose + " oppose, " + s.mixed + " mixed, " + s.neutral + " no position") + '">' +
+          '<span class="cm-issue-name">' + esc(i.name) + "</span>" +
+          '<span class="cm-issue-count mono">' + i.count + "</span>" + microStance(s) + "</button></li>";
+      }).join("");
+      return '<section class="cm-issue-group"><h3 class="cm-issue-group-h">' + esc(ISSUE_GROUP[ns]) +
+        '</h3><ul class="cm-issue-outline-list">' + lis + "</ul></section>";
+    }).join("");
+    var secIssue = '<section class="cm-sec" id="cmsec-issue" role="tabpanel" aria-labelledby="cmsub-issue" hidden>' +
+      head("Read the record by issue",
+        "Pick a question, principle, region, or recurring topic and read every letter’s position on it, grouped by where the filer stands, with the verbatim quotes behind each. Positions are AI-audited and provisional, traceable to the quotes; organizations only.") +
+      '<div class="cm-issues"><nav class="cm-issue-outline" aria-label="Issue outline">' + issueOutlineHtml + "</nav>" +
+      '<div class="cm-issue-reader" id="cm-issue-reader" aria-live="polite"><p class="cm-issue-hint">Pick an issue on the left to read the whole record on it: every filer’s position, grouped by stance, with the quotes behind each.</p></div></div></section>';
 
     var secOverview = '<section class="cm-sec" id="cmsec-overview" role="tabpanel" aria-labelledby="cmsub-overview">' +
       head("The RM26-4 comment period",
         CM.total + " comments were filed on DOE's large-load ANOPR (Docket RM26-4-000) between " + fmtD(CM.dateRange.first) + " and " + fmtD(CM.dateRange.last) +
-        ", scraped from FERC eLibrary on " + CM.captured + ". " + CM.downloaded + " of " + CM.total + " bodies are downloaded; " + CM.summarized2 + " carry an audited summary. The other " + (CM.total - CM.summarized2) + " are four image-only scans (no text layer, awaiting OCR) and one filing eLibrary serves inline rather than releasing for download.") +
-      statRow + rounds +
-      head("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies — a measured keyword prevalence, not a coding of each filer's position.") + themes +
-      head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position — read from the filer's own words. Across " + CM.summarized2 + " audited filings.") + stanceBars +
-      head("Where each stakeholder type stands", "The same audited stances, split by camp: each cell is a stakeholder type's net position on one reform (support minus oppose), the number its audited letters engaging it. Support is broad; the friction shows where cells turn amber (contested). Top twelve camps by engagement.") + consensusMap +
-      head("What the comments engage", "Three lenses, tagged per comment from its audited summary: the DOE ANOPR's eight comment-period questions, the five June-order reform principles, and the six show-cause-order regions. A comment can carry several. Across " + CM.summarized2 + " audited filings.") + prReg +
+        ", scraped from FERC eLibrary on " + CM.captured + ". Where commenters land and which camps agree is below; the whole record, by issue or by filer, is on the By-issue and All-comments tabs.") +
+      statRow + coverageLine + rounds +
+      head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position; read from the filer's own words. Across " + CM.summarized2 + " audited filings. Follow a principle to read the record on it.") + stanceBars +
+      head("Where each stakeholder type stands", "The same audited stances, split by camp: each cell is a stakeholder type's net position on one reform (support minus oppose), the number its audited letters engaging it. Support is broad; the friction shows where cells turn amber (contested). Top twelve camps by engagement. Open a cell to read that reform by issue.") + consensusMap +
+      accSection("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies: a measured keyword prevalence, not a coding of each filer's position.", themes, false, (CM.themes || []).length) +
       "</section>";
 
     var secTypes = '<section class="cm-sec" id="cmsec-types" role="tabpanel" aria-labelledby="cmsub-types" hidden>' +
@@ -581,16 +684,18 @@
       "</section>";
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
-      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary — open “Read the audited analysis” on any row for the plain read, then each position grouped by lens with its description and the verbatim quotes behind it. Each row also shows the lenses it engages and links to its eLibrary filing. Filter by org, type, lens, position, or any word in a summary.") +
-      filter + tagBar + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src + "</section>";
+      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary; open “Read the audited analysis” on any row for the plain read, then each position grouped by lens with its description and the verbatim quotes behind it. Open Tags to filter by question, principle, region, round, or stance; the tokens stack (AND), and free text narrows further.") +
+      workbench + tagBar + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your filters. Remove a token or broaden the search.</p>' + src +
+      '<span class="sr-only" role="status" aria-live="polite" id="cm-copystatus"></span></section>';
 
-    return subnav + secOverview + secTypes + secSummaries;
+    return subnav + secOverview + secIssue + secTypes + secSummaries;
   }
 
   function wireComments() {
+    var CM = window.FERC_COMMENTS; // same source renderComments used; the By-issue wiring reads CM.issues etc.
     // sub-tab switching within the Comments panel
-    var subs = ["overview", "types", "summaries"];
-    var showSub = function (name) {
+    var subs = ["overview", "issue", "types", "summaries"];
+    var showSub = function (name, updateHash) {
       subs.forEach(function (s) {
         var btn = document.getElementById("cmsub-" + s), sec = document.getElementById("cmsec-" + s);
         if (!btn || !sec) return;
@@ -599,6 +704,11 @@
         btn.tabIndex = on ? 0 : -1;
         sec.hidden = !on;
       });
+      if (updateHash === false) return;
+      // All-comments reflects its active filter in the hash (so switching to it keeps the list shareable);
+      // other sub-tabs write a bare #comments/<sub>.
+      if (name === "summaries" && typeof syncFilterHash === "function") syncFilterHash();
+      else writeCommentsHash({ sub: name });
     };
     subs.forEach(function (s) {
       var btn = document.getElementById("cmsub-" + s);
@@ -623,29 +733,78 @@
       });
     });
 
-    // list filter (within the summaries sub-tab)
+    // list filter (within the summaries sub-tab): free-text search ANDed with structured AND-tokens.
     var input = document.getElementById("cm-search"), count = document.getElementById("cm-count");
     if (!input) return;
     var rows = [].slice.call(document.querySelectorAll("#panel-comments .cm-row"));
     var groups = [].slice.call(document.querySelectorAll("#panel-comments .cm-listgroup"));
     var empty = document.getElementById("cm-empty");
-    input.addEventListener("input", function () {
-      var q = input.value.trim().toLowerCase(), shown = 0;
-      rows.forEach(function (r) { var hit = !q || r.getAttribute("data-q").indexOf(q) >= 0; r.hidden = !hit; if (hit) shown++; });
+    var tokensBox = document.getElementById("cm-tokens");
+    var activeTokens = []; // token ids, e.g. "rg:pjm", "round:initial", "st:colo:support"
+    var tokenLabel = function (id) {
+      var p = id.split(":");
+      if (p[0] === "round") return ROUND_SHORT[p[1]] || p[1];
+      if (p[0] === "st") return (p[2] === "support" ? "Supports " : "Opposes ") + (CL[p[1]] || p[1]);
+      return (p[0] === "aq" ? AQ : p[0] === "pr" ? CL : RG)[p[1]] || p[1];
+    };
+    var tokenTest = function (id) {
+      var p = id.split(":");
+      if (p[0] === "round") return function (r) { return r.dataset.round === p[1]; };
+      if (p[0] === "st") { var need = " " + p[1] + ":" + p[2] + " "; return function (r) { return (" " + (r.dataset.st || "") + " ").indexOf(need) >= 0; }; }
+      var need2 = " " + p[1] + " ";
+      return function (r) { return (" " + (r.dataset[p[0]] || "") + " ").indexOf(need2) >= 0; };
+    };
+    var testers = {};
+    var applyFilter = function () {
+      var q = input.value.trim().toLowerCase();
+      var preds = activeTokens.map(function (id) { return testers[id] || (testers[id] = tokenTest(id)); });
+      var shown = 0;
+      rows.forEach(function (r) {
+        var hit = (!q || r.getAttribute("data-q").indexOf(q) >= 0) && preds.every(function (fn) { return fn(r); });
+        r.hidden = !hit; if (hit) shown++;
+      });
       groups.forEach(function (g) { g.hidden = !g.querySelector(".cm-row:not([hidden])"); });
       count.textContent = shown + " of " + rows.length;
       if (empty) empty.hidden = shown !== 0; // explicit empty state — never leave a blank panel
-    });
-    // clicking a lens chip — in the tag bar or on any row — pre-fills the search and filters
-    // (the search box stays the primary control). Scoped to the summaries section so it covers both.
+    };
+    var renderTokens = function () {
+      if (!tokensBox) return;
+      tokensBox.hidden = activeTokens.length === 0;
+      tokensBox.innerHTML = activeTokens.map(function (id) {
+        var lbl = tokenLabel(id);
+        return '<span class="cm-token">' + esc(lbl) + '<button type="button" class="cm-token-x" data-rm="' + esc(id) + '" aria-label="Remove filter ' + esc(lbl) + '">×</button></span>';
+      }).join("");
+    };
+    var addToken = function (id) { if (activeTokens.indexOf(id) < 0) { activeTokens.push(id); renderTokens(); applyFilter(); } };
+    var removeToken = function (id) { var i = activeTokens.indexOf(id); if (i >= 0) { activeTokens.splice(i, 1); renderTokens(); applyFilter(); } };
+    // keep the URL in step with the filter so a filtered view is shareable (#comments/summaries?f=…&q=…)
+    var syncFilterHash = function () {
+      var params = {};
+      if (activeTokens.length) params.f = activeTokens.join(",");
+      var q = input.value.trim(); if (q) params.q = q;
+      writeCommentsHash({ sub: "summaries", params: params });
+    };
+    // set the whole filter state from a route (used when a link deep-links a filtered list)
+    var setFilterState = function (fStr, qStr) {
+      activeTokens = fStr ? fStr.split(",").filter(Boolean) : [];
+      input.value = qStr || "";
+      renderTokens(); applyFilter();
+    };
+    input.addEventListener("input", function () { applyFilter(); syncFilterHash(); });
+    // one delegated handler: a chip's data-tk adds a token; a token's × (data-rm) removes it.
     var summariesSec = document.getElementById("cmsec-summaries");
     if (summariesSec) summariesSec.addEventListener("click", function (e) {
-      var chip = e.target.closest(".cm-tag");
-      if (!chip || !chip.dataset.f) return;
-      input.value = chip.dataset.f;
-      input.dispatchEvent(new Event("input", { bubbles: true }));
-      input.focus();
-      input.scrollIntoView({ block: "nearest" });
+      var rm = e.target.closest("[data-rm]");
+      if (rm) { removeToken(rm.getAttribute("data-rm")); syncFilterHash(); return; }
+      var chip = e.target.closest(".cm-tag[data-tk]");
+      if (chip) { addToken(chip.getAttribute("data-tk")); syncFilterHash(); }
+    });
+    // the sticky Tags button discloses the filter vocabulary panel
+    var tagsToggle = document.getElementById("cm-tags-toggle"), tagbar = document.getElementById("cm-tagbar");
+    if (tagsToggle && tagbar) tagsToggle.addEventListener("click", function () {
+      var opening = tagbar.hasAttribute("hidden");
+      if (opening) tagbar.removeAttribute("hidden"); else tagbar.setAttribute("hidden", "");
+      tagsToggle.setAttribute("aria-expanded", opening ? "true" : "false");
     });
 
     // lazy-load each audited row's bin detail (description + verbatim quotes) the first time its
@@ -713,6 +872,128 @@
     [].slice.call(document.querySelectorAll("#panel-comments .cm-analysis")).forEach(function (d) {
       d.addEventListener("toggle", function () { if (d.open) hydrate(d); });
     });
+
+    // row permalink: copy a shareable link (…#comments/c=<acc>) and reflect it in the address bar,
+    // so a drafter can cite one comment to a colleague. Delegated so it covers every row.
+    var status = document.getElementById("cm-copystatus");
+    if (summariesSec) summariesSec.addEventListener("click", function (e) {
+      var lb = e.target.closest(".cm-row-permalink");
+      if (!lb || !lb.dataset.acc) return;
+      writeCommentsHash({ acc: lb.dataset.acc });
+      var url = location.href.split("#")[0] + "#" + window.CommentsRoute.serialize({ acc: lb.dataset.acc });
+      var done = function (ok) {
+        lb.classList.add("copied");
+        lb.textContent = ok ? "Copied" : "Link ready";
+        if (status) status.textContent = ok ? "Link copied to clipboard" : "Link is now in the address bar";
+        setTimeout(function () { lb.classList.remove("copied"); lb.textContent = "Link"; }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () { done(true); }, function () { done(false); });
+      } else { done(false); }
+    });
+
+    // ---- By-issue reader: pick an issue in the outline, lazy-load its record, render stance groups ----
+    var issueCache = {};
+    var issueByKey = {};
+    (CM.issues || []).forEach(function (i) { issueByKey[i.key] = i; });
+    var issueLetterRow = function (l) {
+      var st = stanceClass(l.stance);
+      var quotes = (l.quotes || []).map(function (q, i) {
+        var pg = (l.pages || [])[i];
+        var cite = pg != null
+          ? ' <a class="cm-bq-cite" href="' + esc(eli(l.acc)) + '" target="_blank" rel="noopener noreferrer" title="Open the eLibrary filing (p. ' + pg + ' of the source document)">p. ' + pg + '<span class="ext" aria-hidden="true"> ↗</span></a>'
+          : "";
+        return '<li class="cm-bq">“' + esc(q) + "”" + cite + "</li>";
+      }).join("");
+      var quotesBlock = quotes
+        ? '<details class="cm-issue-quotes"><summary><span class="cm-issue-quotes-lbl">Verbatim quotes</span><span class="cm-issue-quotes-n mono">' + (l.quotes || []).length + "</span></summary><ul class=\"cm-bqs\">" + quotes + "</ul></details>"
+        : '<p class="cm-bq-none mono">No verbatim quote is binned to this position.</p>';
+      var org = '<a class="cm-issue-org" href="#' + window.CommentsRoute.serialize({ acc: l.acc }) + '" title="See this filer’s row in All comments">' + esc(l.org) + "</a>";
+      var bucket = l.bucket ? '<span class="cm-issue-bucket">' + esc(CM.bucketLabels[l.bucket] || l.bucket) + "</span>" : "";
+      return '<div class="cm-issue-letter ' + st + '"><div class="cm-issue-letter-head">' + org + bucket + "</div>" +
+        (l.desc ? '<p class="cm-issue-letter-desc">' + esc(l.desc) + "</p>" : "") + quotesBlock + "</div>";
+    };
+    var renderIssueReader = function (box, d) {
+      var by = { support: [], mixed: [], oppose: [], neutral: [] };
+      (d.letters || []).forEach(function (l) { by[stanceClass(l.stance)].push(l); });
+      var s = d.stances || { support: 0, oppose: 0, mixed: 0, neutral: 0, total: 0 };
+      var seg = function (k, cls) { return s[k] ? '<span class="seg ' + cls + '" style="flex:' + s[k] + '" title="' + s[k] + " " + esc(cls) + '">' + (s[k] >= 8 ? s[k] : "") + "</span>" : ""; };
+      var splitBar = '<div class="cm-stancebar cm-issue-splitbar" role="img" aria-label="' + esc(d.name) + ": " + s.support + " support, " + s.oppose + " oppose, " + s.mixed + " mixed, " + s.neutral + ' no position">' +
+        seg("support", "sup") + seg("mixed", "mix") + seg("oppose", "opp") + seg("neutral", "neu") + "</div>";
+      var groups = ISSUE_STANCE_GROUPS.map(function (g) {
+        var ls = by[g.k]; if (!ls.length) return "";
+        return '<section class="cm-issue-stancegroup ' + g.k + '"><h4 class="cm-issue-stancegroup-h">' + esc(g.label) +
+          ' <span class="mono">' + ls.length + "</span></h4>" + ls.map(issueLetterRow).join("") + "</section>";
+      }).join("");
+      var html = '<div class="cm-issue-readhead"><h3 class="cm-issue-readtitle">' + esc(d.name) + "</h3>" +
+        (d.desc ? '<p class="cm-issue-readdesc">' + esc(d.desc) + "</p>" : "") +
+        '<p class="cm-issue-readmeta mono">' + s.total + " audited " + (s.total === 1 ? "letter" : "letters") + " engage this issue</p>" +
+        splitBar + "</div>" + groups;
+      box.innerHTML = html;
+      box.setAttribute("aria-busy", "false");
+    };
+    var markActiveIssue = function (key) {
+      [].slice.call(document.querySelectorAll("#cmsec-issue .cm-issue-link")).forEach(function (b) {
+        var on = b.dataset.issue === key;
+        b.classList.toggle("active", on);
+        if (on) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current");
+      });
+    };
+    var selectIssue = function (key, slug, updateHash) {
+      var meta = issueByKey[key];
+      if (!slug) slug = meta && meta.slug;
+      if (!slug) return; // unknown issue id — leave the outline as-is
+      markActiveIssue(key);
+      if (updateHash !== false) writeCommentsHash({ sub: "issue", params: { id: key } });
+      var box = document.getElementById("cm-issue-reader");
+      if (!box) return;
+      if (issueCache[slug]) { renderIssueReader(box, issueCache[slug]); return; }
+      box.setAttribute("aria-busy", "true");
+      box.innerHTML = '<p class="cm-bin-loading mono" role="status">Loading the record on this issue…</p>';
+      fetch("data/comments/issues/" + slug + ".json?v=" + ASSET_VER)
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (d) { issueCache[slug] = d; renderIssueReader(box, d); })
+        .catch(function () {
+          box.setAttribute("aria-busy", "false");
+          box.innerHTML = '<p class="cm-bin-error" role="status">Couldn’t load this issue here. The positions are committed under <span class="mono">sources/comments/summaries-v2/</span>.</p>';
+        });
+    };
+    var issueSec = document.getElementById("cmsec-issue");
+    if (issueSec) issueSec.addEventListener("click", function (e) {
+      var b = e.target.closest(".cm-issue-link");
+      if (!b) return;
+      selectIssue(b.dataset.issue, b.dataset.slug, true);
+      var reader = document.getElementById("cm-issue-reader");
+      if (reader) reader.scrollIntoView({ block: "nearest" }); // bring the reader into view on stacked/mobile
+    });
+
+    // apply a route requested from the URL: select a sub-tab, deep-link an issue, or open a permalinked row.
+    applyCommentsRoute = function (state) {
+      if (!state) return;
+      if (state.acc) {
+        showSub("summaries", false);
+        setFilterState("", ""); // a permalink shows its row in the full list — never leave it hidden behind a filter
+        var row = document.getElementById("c-" + state.acc);
+        if (row) {
+          var det = row.querySelector(".cm-analysis");
+          if (det && !det.open) det.open = true; // fires 'toggle' -> lazy-loads the quotes
+          row.scrollIntoView({ block: "start" });
+          row.classList.add("cm-row-flash");
+          setTimeout(function () { row.classList.remove("cm-row-flash"); }, 1800);
+        }
+        writeCommentsHash({ acc: state.acc });
+      } else {
+        var sub = subs.indexOf(state.sub) >= 0 ? state.sub : "overview";
+        showSub(sub, false);
+        var pr = state.params || {};
+        if (sub === "issue" && pr.id) selectIssue(pr.id, null, false);
+        // the URL is authoritative for the All-comments filter: apply f/q, or clear it when absent
+        else if (sub === "summaries") { setFilterState(pr.f, pr.q); syncFilterHash(); }
+        else writeCommentsHash({ sub: sub });
+      }
+    };
+    // consume any route parsed from the hash before this panel finished wiring
+    if (pendingCommentsRoute) { applyCommentsRoute(pendingCommentsRoute); pendingCommentsRoute = null; }
   }
 
   /* ---- provenance ---- */
@@ -753,6 +1034,43 @@
   function panelFor(name) { return document.getElementById("panel-" + name); }
   function tabFor(name) { return document.getElementById("tab-" + name); }
 
+  // Comments-tab URL state (grammar in comments-route.js). The Comments panel owns its own hash so
+  // sub-tab and row-permalink state survive a shared link; other tabs stay bare "#<tab>".
+  function writeCommentsHash(state) {
+    var body = "#" + window.CommentsRoute.serialize(state);
+    if (history.replaceState) history.replaceState(null, "", body);
+    else location.hash = body.slice(1);
+  }
+  function currentSub() {
+    var subs = window.CommentsRoute.SUBS;
+    for (var i = 0; i < subs.length; i++) {
+      var b = document.getElementById("cmsub-" + subs[i]);
+      if (b && b.getAttribute("aria-selected") === "true") return subs[i];
+    }
+    return window.CommentsRoute.DEFAULT_SUB;
+  }
+  // "#comments/summaries?q=x" -> { tab: "comments", rest: "summaries?q=x" }; "#news" -> { tab:"news", rest:"" }
+  function parseHash() {
+    var h = (location.hash || "").replace(/^#/, "");
+    var slash = h.indexOf("/");
+    return slash < 0 ? { tab: h, rest: "" } : { tab: h.slice(0, slash), rest: h.slice(slash + 1) };
+  }
+  // Switch tabs from the hash/router, routing the Comments sub-state through the comments module.
+  function goTab(tab, rest, focus) {
+    if (TABS.indexOf(tab) < 0) tab = "overview";
+    if (tab === "comments") {
+      var state = window.CommentsRoute.parse(rest);
+      var firstRender = !rendered.comments;
+      pendingCommentsRoute = state;        // consumed by wireComments on first render
+      activate("comments", focus);
+      if (!firstRender && applyCommentsRoute) applyCommentsRoute(state); // already wired: apply now
+      if (!state.acc) scrollToTabsTop();   // a permalink scrolls to its row instead
+    } else {
+      activate(tab, focus);
+      scrollToTabsTop();
+    }
+  }
+
   // Tabs are sticky; on a user-initiated switch, scroll back up to the tablist so the new
   // (often shorter) panel starts at the top instead of leaving the viewport stranded mid-page.
   function scrollToTabsTop() {
@@ -772,8 +1090,11 @@
         if (focus) tab.focus();
       }
     });
-    if (history.replaceState) history.replaceState(null, "", "#" + name);
-    else location.hash = name;
+    // Comments manages its own richer hash (sub-tab + permalinks); other tabs stay bare "#<tab>".
+    if (name !== "comments") {
+      if (history.replaceState) history.replaceState(null, "", "#" + name);
+      else location.hash = name;
+    }
   }
 
   function onKey(e) {
@@ -784,23 +1105,46 @@
     else if (e.key === "ArrowLeft" || e.key === "ArrowUp") next = (i - 1 + TABS.length) % TABS.length;
     else if (e.key === "Home") next = 0;
     else if (e.key === "End") next = TABS.length - 1;
-    if (next !== null) { e.preventDefault(); activate(TABS[next], true); scrollToTabsTop(); }
+    if (next !== null) {
+      e.preventDefault();
+      var nm = TABS[next];
+      activate(nm, true);
+      scrollToTabsTop();
+      if (nm === "comments") writeCommentsHash({ sub: currentSub() });
+    }
+  }
+
+  // masthead chip: the soonest upcoming procedural deadline, so the clock is visible before any tab click
+  function setMastheadDeadline() {
+    var el = document.getElementById("masthead-fresh");
+    if (!el) return;
+    var ps = procStatus();
+    if (!ps || !ps.next) return;
+    var n = ps.next.s;
+    el.innerHTML = 'Next deadline · <span class="mono">' + esc(fmtISO(n.date)) + "</span> · " + esc(n.label) +
+      ' <span class="mh-derived">(derived)</span>';
+    el.hidden = false;
   }
 
   function init() {
     renderProvenance();
+    setMastheadDeadline();
     TABS.forEach(function (t) {
       var tab = tabFor(t);
-      tab.addEventListener("click", function () { activate(t, false); scrollToTabsTop(); });
+      tab.addEventListener("click", function () {
+        activate(t, false);
+        scrollToTabsTop();
+        if (t === "comments") writeCommentsHash({ sub: currentSub() });
+      });
       tab.addEventListener("keydown", onKey);
     });
-    // in-page links like the Discourse "Open the Comments tab →" pointer switch tabs via the hash
+    // in-page links and shared permalinks switch tabs (and Comments sub-state) via the hash
     window.addEventListener("hashchange", function () {
-      var h = (location.hash || "").replace("#", "");
-      if (TABS.indexOf(h) >= 0) { activate(h, false); scrollToTabsTop(); }
+      var p = parseHash();
+      if (TABS.indexOf(p.tab) >= 0) goTab(p.tab, p.rest, false);
     });
-    var initial = (location.hash || "").replace("#", "");
-    activate(TABS.indexOf(initial) >= 0 ? initial : "overview", false);
+    var p = parseHash();
+    goTab(TABS.indexOf(p.tab) >= 0 ? p.tab : "overview", p.rest, false);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

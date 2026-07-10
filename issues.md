@@ -14,6 +14,25 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-07-10 · js (found in code review) · a permalinked / cross-nav comment could land hidden behind
+  an active filter.** `applyCommentsRoute`'s `acc` branch selected the All-comments sub and scrolled to
+  `#c-<acc>` but never cleared the token filter. Scenario: filter to `rg:pjm`, open a By-issue reader,
+  click a non-PJM filer's org (its link is `#comments/c=<acc>`) — the target row is still `hidden` from
+  the PJM filter, so `scrollIntoView` no-ops and the flash lands on an invisible element; the user sees
+  the filtered list without their target. Same for opening a shared `#comments/c=<acc>` link mid-session
+  with a filter active. Root cause: **code** (missing filter reset on the permalink entry point). Fix:
+  `setFilterState("", "")` in the `acc` branch so a permalink always shows its row in the full list.
+  Status: **Fixed** (verified: PJM-filtered → open a non-PJM permalink → filter clears, row visible).
+
+- **2026-07-09 · js · the By-issue wiring silently no-op'd: `wireComments()` referenced `CM` out of
+  scope.** `CM` (`window.FERC_COMMENTS`) is a local of `renderComments`; the new By-issue block in
+  `wireComments` opened with `(CM.issues || []).forEach(…)`, throwing a `ReferenceError` on the first
+  line, so every listener defined after it (the issue-outline click handler, `applyCommentsRoute`, the
+  pending-route consume) never attached — the outline rendered but nothing responded, and the preview
+  console showed no error. Root cause: **code** (assumed a sibling function's local was visible). Fix:
+  bind `var CM = window.FERC_COMMENTS;` at the top of `wireComments`. Status: **Fixed** (verified: the
+  deep-link, outline click, and org cross-nav all work). Lesson in LEARNINGS.md (silent-abort during init).
+
 - **2026-06-30 · a11y · collapsible-section titles dropped their heading semantics.** Folding the
   Toplines / Jurisdictional / Regional / Discourse `head()` sections into `<details>` accordions rendered
   the title as a styled `<span class="acc-h2">`, so screen-reader heading navigation and the document

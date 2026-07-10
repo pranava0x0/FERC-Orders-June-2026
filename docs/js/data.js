@@ -1096,5 +1096,27 @@ window.FERC_DATA = (function () {
     pages: { "E-7": 69, "E-8": 73, "E-9": 51, "E-10": 75, "E-11": 74, "E-12": 78 },
     omit: { "E-9": ["proximate"] },
   };
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, colocation, jurisdiction, regional, reception, media, voices, voiceThemes, comments, commissioners, briefing, participate };
+
+  // The §206 procedural clock. All six show cause orders (E-7 to E-12) run the SAME clock from the
+  // June 18, 2026 issuance; the periods are quoted from each order's ordering paragraphs (see
+  // sources/orders-extract.json → deadlines), and the calendar dates are DERIVED (business-day-adjusted)
+  // and attributed to the National Law Review analysis (SOURCES.natlaw). Statuses are computed in the
+  // browser against today's date, NOT from confirmed eLibrary filings — this tracks the schedule, not who
+  // has filed. Confirm any date in the order before relying on it.
+  const procedural = {
+    issued: "2026-06-18",
+    issuedLabel: "June 18, 2026",
+    source: "natlaw",
+    basis: "All six §206 orders run one clock from the June 18, 2026 issuance. The periods are stated in each order’s ordering paragraphs; the calendar dates are derived and business-day-adjusted (National Law Review). Status is computed from today’s date, not from confirmed filings, so it tracks the schedule rather than who has filed.",
+    steps: [
+      { id: "intervene", label: "Motions to intervene", date: "2026-07-09", period: "21 days from issuance", cite: "Ordering ¶ (D) · Rule 214", desc: "Notices of intervention or motions to intervene in the six proceedings are due." },
+      { id: "report", label: "Generation-adequacy report", date: "2026-07-20", dateNote: "30 days (Jul 18) rolled to the next business day", period: "30 days from issuance", cite: "Ordering ¶ (C)", desc: "Each RTO/ISO files an informational report on how it will ensure adequate generation to serve existing and new large loads." },
+      { id: "rehearing", label: "Requests for rehearing", date: "2026-07-20", dateNote: "statutory 30 days (Jul 18) rolled to the next business day", period: "30 days from issuance", cite: "FPA § 313(a)", desc: "Statutory deadline to seek rehearing of the June 18 orders before a court appeal." },
+      { id: "abeyance", label: "Abeyance request (NYISO only)", date: "2026-08-03", dateNote: "45 days (Aug 2) rolled to the next business day", period: "45 days from issuance", cite: "E-12 (NYISO) P 42", desc: "NYISO-only: deadline to request full or partial abeyance (up to 90 days) of the proceeding." },
+      { id: "showcause", label: "Show cause or file tariff changes", date: "2026-08-17", period: "60 days from issuance", cite: "Ordering ¶ (B)", desc: "Each RTO/ISO and its Transmission Owners must show cause why the tariff remains just and reasonable, or file remedial tariff changes." },
+      { id: "response", label: "Response window opens", date: null, dateNote: "30 days after each RTO’s 60-day filing lands", period: "filing + 30 days", cite: "Ordering ¶ (E)", desc: "Interested entities may respond on whether the tariff remains just and reasonable and, if not, what replacement rates to implement. Opens once the show-cause/tariff filing is made." },
+    ],
+  };
+
+  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, colocation, jurisdiction, regional, reception, media, voices, voiceThemes, comments, commissioners, briefing, participate, procedural };
 })();
