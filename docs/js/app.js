@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260710c";
+  var ASSET_VER = "20260710d";
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -972,6 +972,7 @@
       if (!state) return;
       if (state.acc) {
         showSub("summaries", false);
+        setFilterState("", ""); // a permalink shows its row in the full list — never leave it hidden behind a filter
         var row = document.getElementById("c-" + state.acc);
         if (row) {
           var det = row.querySelector(".cm-analysis");
