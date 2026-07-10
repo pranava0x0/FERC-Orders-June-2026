@@ -197,6 +197,93 @@ const themes = THEMES.map((t) => ({ key: t.key, label: t.label, count: themeCoun
   pct: analyzed ? Math.round((themeCounts[t.key] / analyzed) * 100) : 0 }))
   .sort((a, b) => b.count - a.count);
 
+// ---- By-issue index (plan §1.3): invert the per-letter bins into one file per issue, so the
+// By-issue reader loads a single issue's whole record in one fetch instead of 268 client-side. Every
+// audited bin lands in exactly one issue file (union == the letter bins; guarded by a trace-back test).
+const canonStance = (s) => { s = String(s); return /support/i.test(s) ? "support" : /oppose/i.test(s) ? "oppose" : /mixed/i.test(s) ? "mixed" : "neutral"; };
+// One-line, authored gloss per lens so the reader header explains what the issue actually is. aq glosses
+// reuse the ANOPR_QUESTIONS.desc above; pr/rg are authored here (regions are just which RTO the position
+// engages). Emergent topic: bins carry no authored gloss — their name is the filers' own most-used label.
+const PR_DESC = {
+  study: "How interconnection studies, queues, and readiness rules should work, and where grid-enhancing or alternative transmission technologies fit.",
+  cost: "Who pays for the network upgrades a large load triggers, and how those costs are allocated and disclosed.",
+  colo: "Rules for load sited with generation behind the meter or on the same site, including whether and how it interconnects.",
+  flex: "Treatment of loads that agree to curtail or be dispatched, and the faster study and services they earn in return.",
+  proximate: "How co-located or nearby load-plus-generation (hybrid) facilities are studied and interconnected together.",
+};
+const RG_DESC = {
+  pjm: "Positions engaging PJM Interconnection specifically.",
+  miso: "Positions engaging the Midcontinent ISO (MISO) specifically.",
+  spp: "Positions engaging the Southwest Power Pool (SPP) specifically.",
+  caiso: "Positions engaging the California ISO (CAISO) specifically.",
+  isone: "Positions engaging ISO New England (ISO-NE) specifically.",
+  nyiso: "Positions engaging the New York ISO (NYISO) specifically.",
+};
+const lensName = {
+  aq: Object.fromEntries(ANOPR_QUESTIONS.map((q) => [q.key, q.label])),
+  pr: Object.fromEntries(PRINCIPLES.map((p) => [p.key, p.label])),
+  rg: Object.fromEntries(REGIONS.map((r) => [r.key, r.label])),
+};
+const lensDesc = { aq: Object.fromEntries(ANOPR_QUESTIONS.map((q) => [q.key, q.desc])), pr: PR_DESC, rg: RG_DESC };
+const nsOrder = { aq: 0, pr: 1, rg: 2, topic: 3 };
+const orderInNs = {
+  aq: Object.fromEntries(ANOPR_QUESTIONS.map((q, i) => [q.key, i])),
+  pr: Object.fromEntries(PRINCIPLES.map((p, i) => [p.key, i])),
+  rg: Object.fromEntries(REGIONS.map((r, i) => [r.key, i])),
+};
+const byAcc = Object.fromEntries(list.map((c) => [c.acc, c]));
+const slugify = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const usedSlug = new Set();
+const issues = {}; // key -> { key, ns, slug, name, desc, letters, stances, _nameVotes }
+for (const { acc, detail } of detailWrites) {
+  const meta = byAcc[acc] || {};
+  for (const b of detail.bins) {
+    const key = b.key, ns = String(key).split(":")[0], sub = key.slice(ns.length + 1);
+    if (!issues[key]) {
+      let base = ns + "-" + (slugify(sub) || "x"), slug = base, n = 2;
+      while (usedSlug.has(slug)) slug = base + "-" + n++; // keys are the true id; disambiguate file names
+      usedSlug.add(slug);
+      issues[key] = { key, ns, slug, name: (lensName[ns] && lensName[ns][sub]) || b.name || sub,
+        desc: (lensDesc[ns] && lensDesc[ns][sub]) || "", letters: [],
+        stances: { support: 0, oppose: 0, mixed: 0, neutral: 0, total: 0 }, _nameVotes: {} };
+    }
+    const iss = issues[key], st = canonStance(b.stance);
+    iss.letters.push({ acc, org: meta.org || "", bucket: meta.bucket || "", stance: b.stance,
+      desc: b.desc || "", quotes: b.quotes || [], pages: b.pages || [] });
+    iss.stances[st]++; iss.stances.total++;
+    if (ns === "topic") iss._nameVotes[b.name] = (iss._nameVotes[b.name] || 0) + 1;
+  }
+}
+const STANCE_SORT = { support: 0, mixed: 1, oppose: 2, neutral: 3 };
+for (const iss of Object.values(issues)) {
+  if (iss.ns === "topic") { // an emergent topic's display name is the filers' own most-used bin label
+    const v = iss._nameVotes;
+    iss.name = Object.keys(v).sort((a, z) => v[z] - v[a] || a.localeCompare(z))[0] || iss.key;
+  }
+  delete iss._nameVotes;
+  iss.letters.sort((a, z) => STANCE_SORT[canonStance(a.stance)] - STANCE_SORT[canonStance(z.stance)] ||
+    a.org.localeCompare(z.org) || a.acc.localeCompare(z.acc));
+}
+// The controlled vocab (aq/pr/rg) is always surfaced in full — none may silently drop. Emergent topics
+// are an idiosyncratic long tail (mostly one-off per-letter labels); surface only the recurring ones
+// (≥ TOPIC_MIN letters, capped at TOPIC_CAP by count) so the outline stays scannable. The dropped tail
+// is NOT lost — every topic bin still shows in that letter's own row in All-comments — and it's logged.
+const TOPIC_MIN = 3, TOPIC_CAP = 15;
+const issueAll = Object.values(issues);
+const lensIssues = issueAll.filter((i) => i.ns !== "topic");
+const topicIssues = issueAll.filter((i) => i.ns === "topic")
+  .sort((a, z) => z.letters.length - a.letters.length || a.name.localeCompare(z.name));
+const surfacedTopics = topicIssues.filter((i) => i.letters.length >= TOPIC_MIN).slice(0, TOPIC_CAP);
+const issueList = lensIssues.concat(surfacedTopics); // the issues that get a file + an outline entry
+const droppedTopics = topicIssues.length - surfacedTopics.length;
+const droppedTopicBins = topicIssues.filter((i) => !surfacedTopics.includes(i)).reduce((s, i) => s + i.letters.length, 0);
+const issueOutline = issueList.map((iss) => ({ key: iss.key, ns: iss.ns, slug: iss.slug, name: iss.name,
+  desc: iss.desc, count: iss.letters.length, stances: iss.stances }))
+  .sort((a, z) => nsOrder[a.ns] - nsOrder[z.ns] ||
+    ((orderInNs[a.ns] ? orderInNs[a.ns][a.key.slice(a.ns.length + 1)] ?? 99 : 0) -
+     (orderInNs[z.ns] ? orderInNs[z.ns][z.key.slice(z.ns.length + 1)] ?? 99 : 0)) ||
+    z.count - a.count || a.name.localeCompare(z.name));
+
 const out = {
   captured: cj.captured_at,
   source_url: cj.source_url,
@@ -228,5 +315,16 @@ rmSync(DETAIL, { recursive: true, force: true });
 mkdirSync(DETAIL, { recursive: true });
 for (const { acc, detail } of detailWrites) writeFileSync(join(DETAIL, acc + ".json"), JSON.stringify(detail));
 
+// the By-issue index: one outline file (loaded up front by the reader) + one file per issue (lazy).
+const ISSUES = join(DETAIL, "issues");
+mkdirSync(ISSUES, { recursive: true });
+writeFileSync(join(ISSUES, "index.json"), JSON.stringify(issueOutline));
+for (const iss of issueList) {
+  writeFileSync(join(ISSUES, iss.slug + ".json"),
+    JSON.stringify({ key: iss.key, ns: iss.ns, name: iss.name, desc: iss.desc, stances: iss.stances, letters: iss.letters }));
+}
+
 console.log(`comments-data.js: ${out.total} comments | ${summarized2} audited summaries | analyzed ${analyzed} bodies | ${respondentTypes.length} respondent types | top theme: ${themes[0].label} (${themes[0].count})`);
 console.log(`bin detail: ${detailWrites.length} per-letter files -> docs/data/comments/`);
+console.log(`by-issue index: ${issueList.length} issues (${lensIssues.length} lenses + ${surfacedTopics.length} recurring topics ≥${TOPIC_MIN} letters) -> docs/data/comments/issues/`);
+console.log(`  long tail not surfaced in the outline (still in each letter's row): ${droppedTopics} one-off topics / ${droppedTopicBins} bins`);
