@@ -4,6 +4,16 @@
   Sequences and supersedes several open items below (issue-outline navigation, multi-select token filter,
   procedural status board, Discourse freshness filter, comments-tool benchmark ideas) into one prioritized
   P0/P1/P2 roadmap with specs. Work those items from the plan, not from their older entries here.
+- **done (2026-07-10) — plan P0 #5: procedural status board + next-deadline chip.** The Overview tab now
+  opens with a "What happens next" §206 clock: the six steps from the June 18 issuance (21-day intervene,
+  30-day report, statutory rehearing, NYISO 45-day abeyance, 60-day show-cause/tariff, the relative response
+  window), each cited to its ordering paragraph, with status (Passed / Next / Upcoming / Pending) computed in
+  the browser against today's date. The masthead carries a next-deadline chip. Dates are quoted-period +
+  derived calendar (business-day-adjusted, National Law Review), labeled derived, with an honesty foot noting
+  status tracks the schedule, not confirmed eLibrary filings. **Not a per-RTO filing matrix:** the clock is
+  uniform across the six orders and we don't poll eLibrary for who has filed, so a per-RTO status grid would
+  fabricate certainty; that needs the data-refresh playbook and is left as a follow-up. New
+  `tests/procedural.test.mjs` (dates valid, chronological, cited, matching the quoted periods); 72 tests pass.
 - **done (2026-07-10) — plan P0 #4: Overview reorder + aggregate click-through.** The Comments Overview
   now leads with the audited stance map, then the stakeholder heatmap, with the weaker keyword-themes
   prevalence demoted to a collapsed section at the end; the redundant "What the comments engage" three-column

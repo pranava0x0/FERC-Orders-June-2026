@@ -116,6 +116,28 @@ a:hover { color: var(--accent-ink); }
 
 .overview-bg { max-width: 74ch; }
 .overview-bg p { font-size: 15.5px; color: var(--ink); margin-bottom: 9px; }
+
+/* procedural clock: the §206 timeline, status computed against today */
+.proc-board { list-style: none; display: grid; gap: 8px; margin: 4px 0 10px; padding: 0; }
+.proc-step { display: grid; grid-template-columns: 140px 1fr; gap: 12px; background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--rule-strong); border-radius: 0 6px 6px 0; padding: 10px 14px; }
+.proc-step.next { border-left-color: var(--deadline); background: var(--deadline-bg); }
+.proc-step.past { opacity: 0.62; }
+.proc-when { display: flex; flex-direction: column; gap: 4px; align-items: flex-start; }
+.proc-date { font-size: 13px; font-weight: 700; color: var(--masthead); }
+.proc-badge { font-size: 9.5px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; border-radius: 3px; padding: 1px 7px; }
+.proc-badge.next { color: #fff; background: var(--deadline); }
+.proc-badge.upcoming { color: var(--accent-ink); background: #e9f0f8; }
+.proc-badge.past { color: var(--text-muted); background: var(--surface-2); }
+.proc-badge.pending { color: #5a4a1a; background: #f6efdb; }
+.proc-headline { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.proc-label { font-weight: 700; font-size: 14px; color: var(--ink); }
+.proc-period { font-size: 10.5px; color: var(--text-muted); }
+.proc-desc { font-size: 12.5px; color: #2b3744; line-height: 1.45; margin-top: 3px; }
+.proc-note { font-size: 10.5px; color: var(--text-muted); margin-top: 3px; }
+.proc-foot { font-size: 11.5px; color: var(--text-secondary); margin: 2px 0 4px; max-width: 74ch; line-height: 1.5; }
+@media (max-width: 560px) { .proc-step { grid-template-columns: 1fr; gap: 5px; } .proc-when { flex-direction: row; align-items: center; gap: 8px; } }
+/* masthead next-deadline chip */
+.mh-derived { color: #9db4d0; font-weight: 400; }
 .glance {
   display: grid; grid-template-columns: 1fr; gap: 1px;
   background: var(--rule); border: 1px solid var(--rule); margin-top: 4px;

@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260710a";
+  var ASSET_VER = "20260710b";
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -82,6 +82,44 @@
   }
   function paras(arr) { return arr.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join(""); }
 
+  /* ---- Procedural clock (the §206 timeline; status computed in-browser against today) ---- */
+  var PROC_MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function fmtISO(iso) { if (!iso) return ""; var p = String(iso).split("-"); return PROC_MON[+p[1] - 1] + " " + (+p[2]) + ", " + p[0]; }
+  // Tag each step past / next / upcoming / pending by comparing its derived date to today. The single
+  // soonest future-dated step is "next"; steps with no fixed date (relative windows) stay "pending".
+  function procStatus() {
+    var P = D.procedural; if (!P || !P.steps) return null;
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var steps = P.steps.map(function (s) {
+      var d = s.date ? new Date(s.date + "T00:00:00") : null;
+      return { s: s, date: d, status: d ? (d < today ? "past" : "upcoming") : "pending" };
+    });
+    var next = null;
+    steps.forEach(function (x) { if (x.date && x.date >= today && (!next || x.date < next.date)) next = x; });
+    if (next) next.status = "next";
+    return { steps: steps, next: next };
+  }
+  function renderProcedural() {
+    var P = D.procedural, ps = procStatus();
+    if (!ps) return "";
+    var STATUS_LBL = { past: "Passed", next: "Next", upcoming: "Upcoming", pending: "Pending" };
+    var rows = ps.steps.map(function (x) {
+      var s = x.s;
+      var when = x.date ? fmtISO(s.date) : (s.dateNote || "TBD");
+      return '<li class="proc-step ' + x.status + '"' + (x.status === "next" ? ' aria-current="date"' : "") + ">" +
+        '<div class="proc-when"><span class="proc-date mono">' + esc(when) + "</span>" +
+        '<span class="proc-badge ' + x.status + '">' + STATUS_LBL[x.status] + "</span></div>" +
+        '<div class="proc-what"><div class="proc-headline"><span class="proc-label">' + esc(s.label) + "</span>" +
+        '<span class="proc-period mono">' + esc(s.period) + " · " + esc(s.cite) + "</span></div>" +
+        '<p class="proc-desc">' + esc(s.desc) + "</p>" +
+        (s.dateNote && x.date ? '<p class="proc-note mono">' + esc(s.dateNote) + "</p>" : "") + "</div></li>";
+    }).join("");
+    return head("What happens next: the §206 procedural clock", P.basis) +
+      '<ol class="proc-board">' + rows + "</ol>" +
+      '<p class="proc-foot">Dates are derived from the ' + esc(P.issuedLabel) +
+      " issuance, business-day-adjusted; status reflects today’s date, not confirmed eLibrary filings. Confirm each deadline in the order before relying on it.</p>";
+  }
+
   /* ---- TAB: Overview (stats + at-a-glance + background) ---- */
   function renderOverview() {
     var stats = '<div class="kpis">' + D.kpis.map(function (k) {
@@ -135,7 +173,7 @@
 
     return head("Overview", m.subtitle) +
       '<div class="overview-bg">' + paras(m.summary) + "</div>" +
-      stats + glance + commish;
+      stats + renderProcedural() + glance + commish;
   }
 
   /* ---- TAB 1 ---- */
@@ -1070,8 +1108,21 @@
     }
   }
 
+  // masthead chip: the soonest upcoming procedural deadline, so the clock is visible before any tab click
+  function setMastheadDeadline() {
+    var el = document.getElementById("masthead-fresh");
+    if (!el) return;
+    var ps = procStatus();
+    if (!ps || !ps.next) return;
+    var n = ps.next.s;
+    el.innerHTML = 'Next deadline · <span class="mono">' + esc(fmtISO(n.date)) + "</span> · " + esc(n.label) +
+      ' <span class="mh-derived">(derived)</span>';
+    el.hidden = false;
+  }
+
   function init() {
     renderProvenance();
+    setMastheadDeadline();
     TABS.forEach(function (t) {
       var tab = tabFor(t);
       tab.addEventListener("click", function () {
