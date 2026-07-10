@@ -1,5 +1,50 @@
 # backlog.md
 
+- **planned 2026-07-09 — comment-flow + persona UX overhaul: see [ux-improvement-plan.md](ux-improvement-plan.md).**
+  Sequences and supersedes several open items below (issue-outline navigation, multi-select token filter,
+  procedural status board, Discourse freshness filter, comments-tool benchmark ideas) into one prioritized
+  P0/P1/P2 roadmap with specs. Work those items from the plan, not from their older entries here.
+- **done (2026-07-10) — plan P0 #5: procedural status board + next-deadline chip.** The Overview tab now
+  opens with a "What happens next" §206 clock: the six steps from the June 18 issuance (21-day intervene,
+  30-day report, statutory rehearing, NYISO 45-day abeyance, 60-day show-cause/tariff, the relative response
+  window), each cited to its ordering paragraph, with status (Passed / Next / Upcoming / Pending) computed in
+  the browser against today's date. The masthead carries a next-deadline chip. Dates are quoted-period +
+  derived calendar (business-day-adjusted, National Law Review), labeled derived, with an honesty foot noting
+  status tracks the schedule, not confirmed eLibrary filings. **Not a per-RTO filing matrix:** the clock is
+  uniform across the six orders and we don't poll eLibrary for who has filed, so a per-RTO status grid would
+  fabricate certainty; that needs the data-refresh playbook and is left as a follow-up. New
+  `tests/procedural.test.mjs` (dates valid, chronological, cited, matching the quoted periods); 72 tests pass.
+- **done (2026-07-10) — plan P0 #4: Overview reorder + aggregate click-through.** The Comments Overview
+  now leads with the audited stance map, then the stakeholder heatmap, with the weaker keyword-themes
+  prevalence demoted to a collapsed section at the end; the redundant "What the comments engage" three-column
+  block is gone (its counts live in the By-issue outline). Every aggregate is now a way in: each stance-bar
+  principle and each heatmap cell deep-links into By-issue for that reform, and each round in the strip opens
+  All comments filtered to that round. Added a compact coverage-honesty badge under the stats (derived, in
+  sync: "268 of 273 audited · 4 image-only scans await OCR · 1 served inline"). Also wired the URL filter
+  grammar (`#comments/summaries?f=…&q=…`) into the token system, so filtered lists are shareable. Verified
+  in-browser; 67 tests pass.
+- **done (2026-07-09) — plan P0 #3: All-comments workbench (sticky controls + AND-token filters).** The
+  search box, a Tags toggle, the result count, and the active-filter tokens now sit in a bar that stays
+  stuck under the primary tablist while you scroll the list. Clicking any lens/round/stance chip adds a
+  removable AND token that matches structured row fields (not the search string, so "PJM + Cost + Opposes
+  Cost" returns the 6 exact rows, no summary-prose false positives); free text ANDs with the tokens. New
+  round and stance token types. Verified in-browser (AND correctness, removal, empty state, sticky pin,
+  375px). **Windowing (plan §1.4.3) deferred:** at 273 rows (~7k nodes, 140px each) the list is far below
+  the DOM-budget threshold that motivates it (the rule targets ~38k rows / 265k nodes); revisit if the
+  record grows an order of magnitude. Logged here rather than built speculatively.
+- **done (2026-07-09) — plan P0 #2: By-issue reader.** Pick a question, principle, region, or recurring
+  topic and read the whole record on it, grouped by stance, with the verbatim quotes behind each. Build tool
+  now emits a By-issue index (`docs/data/comments/issues/`): the controlled vocab (19 lenses) in full plus the
+  top-15 recurring emergent topics; the long tail is logged, not silently capped. New "By issue" sub-tab with a
+  two-pane outline+reader (stacks on mobile), lazy-loading one file per issue, deep-linkable via
+  `#comments/issue?id=<key>`, with org names cross-linking to their All-comments row. Trace-back test
+  (`tests/comments-issues.test.mjs`) pins the inversion to source both ways; 67 tests pass.
+- **done (2026-07-09) — plan P0 #1: Comments URL-state router + row permalinks.** New `docs/js/comments-route.js`
+  (a single parse/serialize helper for the `#comments/<sub>[?k=v]` and `#comments/c=<acc>` grammar), wired into
+  app.js: sub-tabs are now URL-addressable, every comment row has `id="c-<acc>"` and a copy-link button, and a
+  shared `#comments/c=<acc>` link opens the All-comments list, scrolls to the row, and expands its audited
+  analysis. Back-compatible with bare `#comments`. Round-trip test added (`tests/comments-route.test.mjs`); 60
+  tests pass. Foundation for the By-issue and All-comments-workbench items (plan §1.6, §1.4.4).
 - **done (2026-06-22)** — Downloaded all six order PDFs through a real browser, OCR'd them, and folded
   quoted directives + paragraph cites into Tab 2 (195 FERC ¶ 61,211 to 61,216). Extract in
   `sources/orders-extract.json`.
