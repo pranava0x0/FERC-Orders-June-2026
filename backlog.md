@@ -4,6 +4,15 @@
   Sequences and supersedes several open items below (issue-outline navigation, multi-select token filter,
   procedural status board, Discourse freshness filter, comments-tool benchmark ideas) into one prioritized
   P0/P1/P2 roadmap with specs. Work those items from the plan, not from their older entries here.
+- **done (2026-07-10) — plan P0 #4: Overview reorder + aggregate click-through.** The Comments Overview
+  now leads with the audited stance map, then the stakeholder heatmap, with the weaker keyword-themes
+  prevalence demoted to a collapsed section at the end; the redundant "What the comments engage" three-column
+  block is gone (its counts live in the By-issue outline). Every aggregate is now a way in: each stance-bar
+  principle and each heatmap cell deep-links into By-issue for that reform, and each round in the strip opens
+  All comments filtered to that round. Added a compact coverage-honesty badge under the stats (derived, in
+  sync: "268 of 273 audited · 4 image-only scans await OCR · 1 served inline"). Also wired the URL filter
+  grammar (`#comments/summaries?f=…&q=…`) into the token system, so filtered lists are shareable. Verified
+  in-browser; 67 tests pass.
 - **done (2026-07-09) — plan P0 #3: All-comments workbench (sticky controls + AND-token filters).** The
   search box, a Tags toggle, the result count, and the active-filter tokens now sit in a bar that stays
   stuck under the primary tablist while you scroll the list. Clicking any lens/round/stance chip adds a

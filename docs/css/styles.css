@@ -398,7 +398,16 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 /* Comments tab: rounds, respondent types, themes, the full filterable list */
 .cm-rounds { display: grid; gap: 8px; margin-bottom: 18px; }
 @media (min-width: 600px) { .cm-rounds { grid-template-columns: repeat(3, 1fr); } }
-.cm-round { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 9px 13px; display: flex; flex-direction: column; gap: 2px; }
+.cm-round { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 0 6px 6px 0; padding: 9px 13px; display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: inherit; }
+.cm-round:hover { background: #eef3f9; border-color: var(--accent); }
+.cm-round:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* compact coverage-honesty line under the stat row */
+.cm-coverage { font-size: 11.5px; color: var(--text-secondary); margin: -6px 0 14px; letter-spacing: 0.01em; }
+/* an aggregate whose label deep-links into By-issue */
+.cm-agg-link { text-decoration: none; }
+.cm-agg-link:hover { color: var(--accent); text-decoration: underline; }
+.cm-agg-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.cm-agg-arrow { color: var(--accent); font-weight: 700; }
 .cm-round-n { font-family: var(--font-serif); font-weight: 700; font-size: 19px; color: var(--masthead); line-height: 1; }
 .cm-round-l { font-weight: 700; font-size: 13px; color: var(--ink); }
 .cm-round-d { font-size: 10.5px; color: var(--text-muted); }
@@ -451,12 +460,6 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-jump-wrap { margin-top: 6px; }
 .cm-jump { font-weight: 700; font-size: 13.5px; text-decoration: none; color: var(--accent); }
 .cm-jump:hover { color: var(--accent-ink); text-decoration: underline; }
-/* reform-principle + order-region aggregate (two bar groups) and the per-row tags */
-.cm-prreg { display: grid; gap: 16px 28px; margin-bottom: 4px; }
-@media (min-width: 740px) { .cm-prreg { grid-template-columns: 1fr 1fr; } }
-.cm-sub { font-family: var(--font-serif); font-size: 14.5px; color: var(--masthead); margin-bottom: 9px; }
-.cm-themes.one { grid-template-columns: 1fr; gap: 9px; }
-.cm-bar.prin > span { background: var(--accent-ink); }
 .cm-row-tags { display: flex; align-items: stretch; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
 .cm-tag { font: inherit; font-size: 9.5px; font-weight: 700; border: none; border-radius: 3px; padding: 2px 7px; letter-spacing: 0.02em; white-space: nowrap; cursor: pointer; line-height: 1.5; }
 .cm-tag:hover { filter: brightness(0.94); }
@@ -603,7 +606,10 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-hm-col { font-size: 11px; font-weight: 700; color: var(--text-muted); text-align: center; align-self: end; padding-bottom: 4px; line-height: 1.15; }
 .cm-hm-rowlabel { display: flex; align-items: center; justify-content: space-between; gap: 6px; font-size: 12px; color: var(--ink); padding-right: 8px; }
 .cm-hm-letters { font-size: 10px; color: var(--text-muted); flex: none; }
-.cm-hm-cell { display: flex; align-items: center; justify-content: center; min-height: 30px; border-radius: 5px; font-size: 12px; font-weight: 700; }
+.cm-hm-cell { display: flex; align-items: center; justify-content: center; min-height: 30px; border-radius: 5px; font-size: 12px; font-weight: 700; text-decoration: none; }
+a.cm-hm-cell { cursor: pointer; }
+a.cm-hm-cell:hover { outline: 2px solid var(--accent); outline-offset: -2px; }
+a.cm-hm-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .cm-hm-cell.support { background: #dcebde; color: #1f5a35; }
 .cm-hm-cell.support.strong { background: var(--stance-positive); color: #fff; }
 .cm-hm-cell.oppose { background: #f7ece6; color: var(--stance-negative); }
@@ -618,8 +624,6 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-subtab:hover { color: var(--ink); }
 .cm-subtab[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
 .cm-subtab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
-.cm-prreg.three { grid-template-columns: 1fr; }
-@media (min-width: 920px) { .cm-prreg.three { grid-template-columns: 1fr 1fr 1fr; } }
 
 /* generic two-col blocks (jurisdiction / regional) */
 .blocks { display: grid; gap: 12px; }

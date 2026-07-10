@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260709f";
+  var ASSET_VER = "20260710a";
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -415,9 +415,18 @@
       [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.summarized2, "audited summaries"]]
         .map(function (s) { return '<div class="cm-stat"><span class="v">' + esc(String(s[0])) + '</span><span class="l">' + esc(s[1]) + "</span></div>"; }).join("") + "</div>";
 
+    // compact coverage-honesty line, derived from the data so the numbers stay in sync (never a bare 0)
+    var cvScans = CM.list.filter(function (c) { return c.dl && !c.s2; }).length;
+    var cvInline = CM.list.filter(function (c) { return !c.dl; }).length;
+    var coverageLine = '<p class="cm-coverage">' + CM.summarized2 + " of " + CM.total + " audited · " +
+      cvScans + " image-only scan" + (cvScans === 1 ? "" : "s") + " await" + (cvScans === 1 ? "s" : "") + " OCR · " +
+      cvInline + " served inline by eLibrary</p>";
+
+    // each round links into All comments filtered to that round (the rounds strip is navigation, not decoration)
     var rounds = '<div class="cm-rounds">' + CM.rounds.map(function (r) {
-      return '<div class="cm-round"><span class="cm-round-n mono">' + r.count + '</span><span class="cm-round-l">' + esc(r.label) +
-        '</span><span class="cm-round-d mono">' + esc(fmtD(r.first)) + " – " + esc(fmtD(r.last)) + "</span></div>";
+      return '<a class="cm-round" href="#' + window.CommentsRoute.serialize({ sub: "summaries", params: { f: "round:" + r.key } }) +
+        '" title="See the ' + esc(r.label.toLowerCase()) + ' in All comments"><span class="cm-round-n mono">' + r.count + '</span><span class="cm-round-l">' + esc(r.label) +
+        '</span><span class="cm-round-d mono">' + esc(fmtD(r.first)) + " to " + esc(fmtD(r.last)) + "</span></a>";
     }).join("") + "</div>";
 
     // respondent types: count + the full distinct-organization roster per camp (collapse past 10)
@@ -449,17 +458,6 @@
         '<p class="cm-note mono">' + t.count + " of " + CM.analyzed + " comments mention it</p></div>";
     }).join("") + "</div>";
 
-    // per-comment reform-principle + order-region tags, aggregated into two bar groups
-    var prRegBar = function (t) {
-      return '<div class="cm-theme"><div class="cm-bhead"><span class="cm-label">' + esc(t.label) + '</span><span class="cm-n mono">' + t.pct + '%</span></div>' +
-        '<div class="cm-bar prin"><span style="width:' + t.pct + '%"></span></div>' +
-        '<p class="cm-note mono">' + t.count + " of " + CM.summarized2 + "</p></div>";
-    };
-    var prReg = '<div class="cm-prreg three">' +
-      '<div><h3 class="cm-sub">Comment-period questions</h3><div class="cm-themes one">' + CM.anoprQuestions.map(prRegBar).join("") + "</div></div>" +
-      '<div><h3 class="cm-sub">Reform principles</h3><div class="cm-themes one">' + CM.principles.map(prRegBar).join("") + "</div></div>" +
-      '<div><h3 class="cm-sub">Order regions</h3><div class="cm-themes one">' + CM.regions.map(prRegBar).join("") + "</div></div></div>";
-
     // stance map: where commenters land on each reform principle, read from the audited summaries
     var ST_LBL = { sup: "Support", opp: "Oppose", mix: "Mixed", neu: "No position" };
     var stanceBars = "";
@@ -468,7 +466,9 @@
         '<span class="key sup">Support</span><span class="key opp">Oppose</span><span class="key mix">Mixed</span><span class="key neu">No position</span></div>';
       var stRows = CM.principleStances.map(function (p) {
         var seg = function (k, cls) { var n = p[k]; return n ? '<span class="seg ' + cls + '" style="flex:' + n + '" title="' + n + " " + ST_LBL[cls] + '">' + (n >= 10 ? n : "") + "</span>" : ""; };
-        return '<div class="cm-stancerow"><div class="cm-bhead"><span class="cm-label">' + esc(p.label) + '</span><span class="cm-n mono">' + p.total + "</span></div>" +
+        // the label deep-links into By-issue for this principle (the aggregate becomes a way in)
+        var href = "#" + window.CommentsRoute.serialize({ sub: "issue", params: { id: "pr:" + p.key } });
+        return '<div class="cm-stancerow"><div class="cm-bhead"><a class="cm-label cm-agg-link" href="' + href + '" title="Read the record on ' + esc(p.label) + ' by issue">' + esc(p.label) + ' <span class="cm-agg-arrow" aria-hidden="true">→</span></a><span class="cm-n mono">' + p.total + "</span></div>" +
           '<div class="cm-stancebar" role="img" aria-label="' + esc(p.label) + ": " + p.support + " support, " + p.oppose + " oppose, " + p.mixed + " mixed, " + p.neutral + ' no position">' +
           seg("support", "sup") + seg("oppose", "opp") + seg("mixed", "mix") + seg("neutral", "neu") + "</div></div>";
       }).join("");
@@ -503,7 +503,9 @@
           if (!c.total) return '<div class="cm-hm-cell empty"><span class="sr-only">no audited position</span></div>';
           var b = band(c); present[b] = true;
           var full = r.label + " — " + (PR_SHORT[c.key] || c.key) + ": " + c.support + " support, " + c.oppose + " oppose, " + c.mixed + " mixed, " + c.neutral + " no position (n=" + c.total + ")";
-          return '<div class="cm-hm-cell ' + BAND_CLS[b] + '" role="img" aria-label="' + esc(full) + '" title="' + esc(full) + '"><span class="cm-hm-n">' + c.total + "</span></div>";
+          // the cell links into By-issue for this reform (a labeled link is the accessible clickable form)
+          var href = "#" + window.CommentsRoute.serialize({ sub: "issue", params: { id: "pr:" + c.key } });
+          return '<a class="cm-hm-cell ' + BAND_CLS[b] + '" href="' + href + '" aria-label="' + esc(full) + '. Read this issue" title="' + esc(full) + '"><span class="cm-hm-n">' + c.total + "</span></a>";
         }).join("");
         return label + cells;
       }).join("");
@@ -632,12 +634,11 @@
     var secOverview = '<section class="cm-sec" id="cmsec-overview" role="tabpanel" aria-labelledby="cmsub-overview">' +
       head("The RM26-4 comment period",
         CM.total + " comments were filed on DOE's large-load ANOPR (Docket RM26-4-000) between " + fmtD(CM.dateRange.first) + " and " + fmtD(CM.dateRange.last) +
-        ", scraped from FERC eLibrary on " + CM.captured + ". " + CM.downloaded + " of " + CM.total + " bodies are downloaded; " + CM.summarized2 + " carry an audited summary. The other " + (CM.total - CM.summarized2) + " are four image-only scans (no text layer, awaiting OCR) and one filing eLibrary serves inline rather than releasing for download.") +
-      statRow + rounds +
-      head("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies — a measured keyword prevalence, not a coding of each filer's position.") + themes +
-      head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position — read from the filer's own words. Across " + CM.summarized2 + " audited filings.") + stanceBars +
-      head("Where each stakeholder type stands", "The same audited stances, split by camp: each cell is a stakeholder type's net position on one reform (support minus oppose), the number its audited letters engaging it. Support is broad; the friction shows where cells turn amber (contested). Top twelve camps by engagement.") + consensusMap +
-      head("What the comments engage", "Three lenses, tagged per comment from its audited summary: the DOE ANOPR's eight comment-period questions, the five June-order reform principles, and the six show-cause-order regions. A comment can carry several. Across " + CM.summarized2 + " audited filings.") + prReg +
+        ", scraped from FERC eLibrary on " + CM.captured + ". Where commenters land and which camps agree is below; the whole record, by issue or by filer, is on the By-issue and All-comments tabs.") +
+      statRow + coverageLine + rounds +
+      head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position; read from the filer's own words. Across " + CM.summarized2 + " audited filings. Follow a principle to read the record on it.") + stanceBars +
+      head("Where each stakeholder type stands", "The same audited stances, split by camp: each cell is a stakeholder type's net position on one reform (support minus oppose), the number its audited letters engaging it. Support is broad; the friction shows where cells turn amber (contested). Top twelve camps by engagement. Open a cell to read that reform by issue.") + consensusMap +
+      accSection("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies: a measured keyword prevalence, not a coding of each filer's position.", themes, false, (CM.themes || []).length) +
       "</section>";
 
     var secTypes = '<section class="cm-sec" id="cmsec-types" role="tabpanel" aria-labelledby="cmsub-types" hidden>' +
@@ -734,14 +735,27 @@
     };
     var addToken = function (id) { if (activeTokens.indexOf(id) < 0) { activeTokens.push(id); renderTokens(); applyFilter(); } };
     var removeToken = function (id) { var i = activeTokens.indexOf(id); if (i >= 0) { activeTokens.splice(i, 1); renderTokens(); applyFilter(); } };
-    input.addEventListener("input", applyFilter);
+    // keep the URL in step with the filter so a filtered view is shareable (#comments/summaries?f=…&q=…)
+    var syncFilterHash = function () {
+      var params = {};
+      if (activeTokens.length) params.f = activeTokens.join(",");
+      var q = input.value.trim(); if (q) params.q = q;
+      writeCommentsHash({ sub: "summaries", params: params });
+    };
+    // set the whole filter state from a route (used when a link deep-links a filtered list)
+    var setFilterState = function (fStr, qStr) {
+      activeTokens = fStr ? fStr.split(",").filter(Boolean) : [];
+      input.value = qStr || "";
+      renderTokens(); applyFilter();
+    };
+    input.addEventListener("input", function () { applyFilter(); syncFilterHash(); });
     // one delegated handler: a chip's data-tk adds a token; a token's × (data-rm) removes it.
     var summariesSec = document.getElementById("cmsec-summaries");
     if (summariesSec) summariesSec.addEventListener("click", function (e) {
       var rm = e.target.closest("[data-rm]");
-      if (rm) { removeToken(rm.getAttribute("data-rm")); return; }
+      if (rm) { removeToken(rm.getAttribute("data-rm")); syncFilterHash(); return; }
       var chip = e.target.closest(".cm-tag[data-tk]");
-      if (chip) { addToken(chip.getAttribute("data-tk")); }
+      if (chip) { addToken(chip.getAttribute("data-tk")); syncFilterHash(); }
     });
     // the sticky Tags button discloses the filter vocabulary panel
     var tagsToggle = document.getElementById("cm-tags-toggle"), tagbar = document.getElementById("cm-tagbar");
@@ -928,7 +942,9 @@
       } else {
         var sub = subs.indexOf(state.sub) >= 0 ? state.sub : "overview";
         showSub(sub, false);
-        if (sub === "issue" && state.params && state.params.id) selectIssue(state.params.id, null, false);
+        var pr = state.params || {};
+        if (sub === "issue" && pr.id) selectIssue(pr.id, null, false);
+        else if (sub === "summaries" && (pr.f || pr.q)) { setFilterState(pr.f, pr.q); syncFilterHash(); }
         else writeCommentsHash({ sub: sub });
       }
     };
