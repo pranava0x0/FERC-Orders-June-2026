@@ -4,6 +4,15 @@
   Sequences and supersedes several open items below (issue-outline navigation, multi-select token filter,
   procedural status board, Discourse freshness filter, comments-tool benchmark ideas) into one prioritized
   P0/P1/P2 roadmap with specs. Work those items from the plan, not from their older entries here.
+- **done (2026-07-09) — plan P0 #3: All-comments workbench (sticky controls + AND-token filters).** The
+  search box, a Tags toggle, the result count, and the active-filter tokens now sit in a bar that stays
+  stuck under the primary tablist while you scroll the list. Clicking any lens/round/stance chip adds a
+  removable AND token that matches structured row fields (not the search string, so "PJM + Cost + Opposes
+  Cost" returns the 6 exact rows, no summary-prose false positives); free text ANDs with the tokens. New
+  round and stance token types. Verified in-browser (AND correctness, removal, empty state, sticky pin,
+  375px). **Windowing (plan §1.4.3) deferred:** at 273 rows (~7k nodes, 140px each) the list is far below
+  the DOM-budget threshold that motivates it (the rule targets ~38k rows / 265k nodes); revisit if the
+  record grows an order of magnitude. Logged here rather than built speculatively.
 - **done (2026-07-09) — plan P0 #2: By-issue reader.** Pick a question, principle, region, or recurring
   topic and read the whole record on it, grouped by stance, with the verbatim quotes behind each. Build tool
   now emits a By-issue index (`docs/data/comments/issues/`): the controlled vocab (19 lenses) in full plus the
