@@ -4,6 +4,13 @@
   Sequences and supersedes several open items below (issue-outline navigation, multi-select token filter,
   procedural status board, Discourse freshness filter, comments-tool benchmark ideas) into one prioritized
   P0/P1/P2 roadmap with specs. Work those items from the plan, not from their older entries here.
+- **done (2026-07-09) — plan P0 #2: By-issue reader.** Pick a question, principle, region, or recurring
+  topic and read the whole record on it, grouped by stance, with the verbatim quotes behind each. Build tool
+  now emits a By-issue index (`docs/data/comments/issues/`): the controlled vocab (19 lenses) in full plus the
+  top-15 recurring emergent topics; the long tail is logged, not silently capped. New "By issue" sub-tab with a
+  two-pane outline+reader (stacks on mobile), lazy-loading one file per issue, deep-linkable via
+  `#comments/issue?id=<key>`, with org names cross-linking to their All-comments row. Trace-back test
+  (`tests/comments-issues.test.mjs`) pins the inversion to source both ways; 67 tests pass.
 - **done (2026-07-09) — plan P0 #1: Comments URL-state router + row permalinks.** New `docs/js/comments-route.js`
   (a single parse/serialize helper for the `#comments/<sub>[?k=v]` and `#comments/c=<acc>` grammar), wired into
   app.js: sub-tabs are now URL-addressable, every comment row has `id="c-<acc>"` and a copy-link button, and a

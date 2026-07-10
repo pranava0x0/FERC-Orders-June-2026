@@ -302,6 +302,7 @@ const out = {
   bucketStances,
   regions,
   bucketLabels: labels,
+  issues: issueOutline, // the By-issue outline (small); per-issue letter files are lazy-loaded
   list,
 };
 

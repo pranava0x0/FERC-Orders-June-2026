@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260709a";
+  var ASSET_VER = "20260709e";
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -393,6 +393,14 @@
   // same order the rest of the Comments tab uses (ANOPR questions, reform principles, regions, then emergent topics).
   var LENS_ORDER = ["aq", "pr", "rg", "topic"];
   var LENS_LABEL = { aq: "Comment-period questions", pr: "Reform principles", rg: "Order regions", topic: "Other topics raised" };
+  // By-issue outline groups (same lens order); the reader groups letters by these stance buckets.
+  var ISSUE_GROUP = { aq: "Comment-period questions", pr: "Reform principles", rg: "Order regions", topic: "Emergent topics" };
+  var ISSUE_STANCE_GROUPS = [
+    { k: "support", label: "Supports" },
+    { k: "mixed", label: "Supports with conditions / mixed" },
+    { k: "oppose", label: "Opposes" },
+    { k: "neutral", label: "No position stated" },
+  ];
 
   function renderComments() {
     var CM = window.FERC_COMMENTS;
@@ -568,7 +576,33 @@
       return '<button class="cm-subtab" role="tab" id="cmsub-' + id + '" aria-controls="cmsec-' + id + '" aria-selected="' + (sel ? "true" : "false") + '"' + (sel ? "" : ' tabindex="-1"') + ' data-sub="' + id + '">' + esc(label) + "</button>";
     };
     var subnav = '<div class="cm-subtabs" role="tablist" aria-label="Comment-period views">' +
-      subtab("overview", "Themes & categories", true) + subtab("types", "Respondent types", false) + subtab("summaries", "All comments", false) + "</div>";
+      subtab("overview", "Themes & categories", true) + subtab("issue", "By issue", false) +
+      subtab("types", "Respondent types", false) + subtab("summaries", "All comments", false) + "</div>";
+
+    // By-issue outline: the landing state of the reader. Rendered synchronously from the small baked
+    // outline (CM.issues); picking an issue lazy-loads its per-issue file and fills the reader pane.
+    var microStance = function (st) {
+      var seg = function (k, cls) { return st[k] ? '<span class="seg ' + cls + '" style="flex:' + st[k] + '"></span>' : ""; };
+      return '<span class="cm-issue-micro" aria-hidden="true">' + seg("support", "sup") + seg("mixed", "mix") + seg("oppose", "opp") + seg("neutral", "neu") + "</span>";
+    };
+    var issueOutlineHtml = LENS_ORDER.map(function (ns) {
+      var items = (CM.issues || []).filter(function (i) { return i.ns === ns; });
+      if (!items.length) return "";
+      var lis = items.map(function (i) {
+        var s = i.stances;
+        return '<li><button type="button" class="cm-issue-link" data-issue="' + esc(i.key) + '" data-slug="' + esc(i.slug) +
+          '" title="' + esc(i.name + " — " + s.support + " support, " + s.oppose + " oppose, " + s.mixed + " mixed, " + s.neutral + " no position") + '">' +
+          '<span class="cm-issue-name">' + esc(i.name) + "</span>" +
+          '<span class="cm-issue-count mono">' + i.count + "</span>" + microStance(s) + "</button></li>";
+      }).join("");
+      return '<section class="cm-issue-group"><h3 class="cm-issue-group-h">' + esc(ISSUE_GROUP[ns]) +
+        '</h3><ul class="cm-issue-outline-list">' + lis + "</ul></section>";
+    }).join("");
+    var secIssue = '<section class="cm-sec" id="cmsec-issue" role="tabpanel" aria-labelledby="cmsub-issue" hidden>' +
+      head("Read the record by issue",
+        "Pick a question, principle, region, or recurring topic and read every letter’s position on it, grouped by where the filer stands, with the verbatim quotes behind each. Positions are AI-audited and provisional, traceable to the quotes; organizations only.") +
+      '<div class="cm-issues"><nav class="cm-issue-outline" aria-label="Issue outline">' + issueOutlineHtml + "</nav>" +
+      '<div class="cm-issue-reader" id="cm-issue-reader" aria-live="polite"><p class="cm-issue-hint">Pick an issue on the left to read the whole record on it: every filer’s position, grouped by stance, with the quotes behind each.</p></div></div></section>';
 
     var secOverview = '<section class="cm-sec" id="cmsec-overview" role="tabpanel" aria-labelledby="cmsub-overview">' +
       head("The RM26-4 comment period",
@@ -590,12 +624,13 @@
       filter + tagBar + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src +
       '<span class="sr-only" role="status" aria-live="polite" id="cm-copystatus"></span></section>';
 
-    return subnav + secOverview + secTypes + secSummaries;
+    return subnav + secOverview + secIssue + secTypes + secSummaries;
   }
 
   function wireComments() {
+    var CM = window.FERC_COMMENTS; // same source renderComments used; the By-issue wiring reads CM.issues etc.
     // sub-tab switching within the Comments panel
-    var subs = ["overview", "types", "summaries"];
+    var subs = ["overview", "issue", "types", "summaries"];
     var showSub = function (name, updateHash) {
       subs.forEach(function (s) {
         var btn = document.getElementById("cmsub-" + s), sec = document.getElementById("cmsec-" + s);
@@ -740,7 +775,82 @@
       } else { done(false); }
     });
 
-    // apply a route requested from the URL: select a sub-tab, or open + scroll to a permalinked row.
+    // ---- By-issue reader: pick an issue in the outline, lazy-load its record, render stance groups ----
+    var issueCache = {};
+    var issueByKey = {};
+    (CM.issues || []).forEach(function (i) { issueByKey[i.key] = i; });
+    var issueLetterRow = function (l) {
+      var st = stanceClass(l.stance);
+      var quotes = (l.quotes || []).map(function (q, i) {
+        var pg = (l.pages || [])[i];
+        var cite = pg != null
+          ? ' <a class="cm-bq-cite" href="' + esc(eli(l.acc)) + '" target="_blank" rel="noopener noreferrer" title="Open the eLibrary filing (p. ' + pg + ' of the source document)">p. ' + pg + '<span class="ext" aria-hidden="true"> ↗</span></a>'
+          : "";
+        return '<li class="cm-bq">“' + esc(q) + "”" + cite + "</li>";
+      }).join("");
+      var quotesBlock = quotes
+        ? '<details class="cm-issue-quotes"><summary><span class="cm-issue-quotes-lbl">Verbatim quotes</span><span class="cm-issue-quotes-n mono">' + (l.quotes || []).length + "</span></summary><ul class=\"cm-bqs\">" + quotes + "</ul></details>"
+        : '<p class="cm-bq-none mono">No verbatim quote is binned to this position.</p>';
+      var org = '<a class="cm-issue-org" href="#' + window.CommentsRoute.serialize({ acc: l.acc }) + '" title="See this filer’s row in All comments">' + esc(l.org) + "</a>";
+      var bucket = l.bucket ? '<span class="cm-issue-bucket">' + esc(CM.bucketLabels[l.bucket] || l.bucket) + "</span>" : "";
+      return '<div class="cm-issue-letter ' + st + '"><div class="cm-issue-letter-head">' + org + bucket + "</div>" +
+        (l.desc ? '<p class="cm-issue-letter-desc">' + esc(l.desc) + "</p>" : "") + quotesBlock + "</div>";
+    };
+    var renderIssueReader = function (box, d) {
+      var by = { support: [], mixed: [], oppose: [], neutral: [] };
+      (d.letters || []).forEach(function (l) { by[stanceClass(l.stance)].push(l); });
+      var s = d.stances || { support: 0, oppose: 0, mixed: 0, neutral: 0, total: 0 };
+      var seg = function (k, cls) { return s[k] ? '<span class="seg ' + cls + '" style="flex:' + s[k] + '" title="' + s[k] + " " + esc(cls) + '">' + (s[k] >= 8 ? s[k] : "") + "</span>" : ""; };
+      var splitBar = '<div class="cm-stancebar cm-issue-splitbar" role="img" aria-label="' + esc(d.name) + ": " + s.support + " support, " + s.oppose + " oppose, " + s.mixed + " mixed, " + s.neutral + ' no position">' +
+        seg("support", "sup") + seg("mixed", "mix") + seg("oppose", "opp") + seg("neutral", "neu") + "</div>";
+      var groups = ISSUE_STANCE_GROUPS.map(function (g) {
+        var ls = by[g.k]; if (!ls.length) return "";
+        return '<section class="cm-issue-stancegroup ' + g.k + '"><h4 class="cm-issue-stancegroup-h">' + esc(g.label) +
+          ' <span class="mono">' + ls.length + "</span></h4>" + ls.map(issueLetterRow).join("") + "</section>";
+      }).join("");
+      var html = '<div class="cm-issue-readhead"><h3 class="cm-issue-readtitle">' + esc(d.name) + "</h3>" +
+        (d.desc ? '<p class="cm-issue-readdesc">' + esc(d.desc) + "</p>" : "") +
+        '<p class="cm-issue-readmeta mono">' + s.total + " audited " + (s.total === 1 ? "letter" : "letters") + " engage this issue</p>" +
+        splitBar + "</div>" + groups;
+      box.innerHTML = html;
+      box.setAttribute("aria-busy", "false");
+    };
+    var markActiveIssue = function (key) {
+      [].slice.call(document.querySelectorAll("#cmsec-issue .cm-issue-link")).forEach(function (b) {
+        var on = b.dataset.issue === key;
+        b.classList.toggle("active", on);
+        if (on) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current");
+      });
+    };
+    var selectIssue = function (key, slug, updateHash) {
+      var meta = issueByKey[key];
+      if (!slug) slug = meta && meta.slug;
+      if (!slug) return; // unknown issue id — leave the outline as-is
+      markActiveIssue(key);
+      if (updateHash !== false) writeCommentsHash({ sub: "issue", params: { id: key } });
+      var box = document.getElementById("cm-issue-reader");
+      if (!box) return;
+      if (issueCache[slug]) { renderIssueReader(box, issueCache[slug]); return; }
+      box.setAttribute("aria-busy", "true");
+      box.innerHTML = '<p class="cm-bin-loading mono" role="status">Loading the record on this issue…</p>';
+      fetch("data/comments/issues/" + slug + ".json?v=" + ASSET_VER)
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (d) { issueCache[slug] = d; renderIssueReader(box, d); })
+        .catch(function () {
+          box.setAttribute("aria-busy", "false");
+          box.innerHTML = '<p class="cm-bin-error" role="status">Couldn’t load this issue here. The positions are committed under <span class="mono">sources/comments/summaries-v2/</span>.</p>';
+        });
+    };
+    var issueSec = document.getElementById("cmsec-issue");
+    if (issueSec) issueSec.addEventListener("click", function (e) {
+      var b = e.target.closest(".cm-issue-link");
+      if (!b) return;
+      selectIssue(b.dataset.issue, b.dataset.slug, true);
+      var reader = document.getElementById("cm-issue-reader");
+      if (reader) reader.scrollIntoView({ block: "nearest" }); // bring the reader into view on stacked/mobile
+    });
+
+    // apply a route requested from the URL: select a sub-tab, deep-link an issue, or open a permalinked row.
     applyCommentsRoute = function (state) {
       if (!state) return;
       if (state.acc) {
@@ -757,7 +867,8 @@
       } else {
         var sub = subs.indexOf(state.sub) >= 0 ? state.sub : "overview";
         showSub(sub, false);
-        writeCommentsHash({ sub: sub });
+        if (sub === "issue" && state.params && state.params.id) selectIssue(state.params.id, null, false);
+        else writeCommentsHash({ sub: sub });
       }
     };
     // consume any route parsed from the hash before this panel finished wiring
