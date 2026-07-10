@@ -4,6 +4,12 @@
   Sequences and supersedes several open items below (issue-outline navigation, multi-select token filter,
   procedural status board, Discourse freshness filter, comments-tool benchmark ideas) into one prioritized
   P0/P1/P2 roadmap with specs. Work those items from the plan, not from their older entries here.
+- **done (2026-07-09) — plan P0 #1: Comments URL-state router + row permalinks.** New `docs/js/comments-route.js`
+  (a single parse/serialize helper for the `#comments/<sub>[?k=v]` and `#comments/c=<acc>` grammar), wired into
+  app.js: sub-tabs are now URL-addressable, every comment row has `id="c-<acc>"` and a copy-link button, and a
+  shared `#comments/c=<acc>` link opens the All-comments list, scrolls to the row, and expands its audited
+  analysis. Back-compatible with bare `#comments`. Round-trip test added (`tests/comments-route.test.mjs`); 60
+  tests pass. Foundation for the By-issue and All-comments-workbench items (plan §1.6, §1.4.4).
 - **done (2026-06-22)** — Downloaded all six order PDFs through a real browser, OCR'd them, and folded
   quoted directives + paragraph cites into Tab 2 (195 FERC ¶ 61,211 to 61,216). Extract in
   `sources/orders-extract.json`.
