@@ -98,6 +98,39 @@ run-by-run numbers are in [`agent-runs.md`](agent-runs.md); per-bug detail is in
   instead of wrapping, and on a tab switch scroll back to the tablist (`main.offsetTop`) so a short
   panel starts at the top rather than stranded mid-page.
 
+## Frontend build + preview loop (the P0 comment-analysis overhaul)
+
+- **A `ReferenceError` during synchronous init can silently abort the rest of wiring — and the preview
+  console may not show it.** `wireComments()` referenced `CM` (a `renderComments` local, not in scope
+  there); line 1 of the By-issue block threw, so every listener defined *after* it never attached, while
+  everything before it worked. The preview MCP's `preview_console_logs` reported "No console logs." When
+  listeners silently don't fire but the markup renders, suspect a swallowed exception: drop a
+  `window.__marker` at suspect points, reload, and read it back — don't trust the console to surface an
+  uncaught error from page load. Bind shared helpers (`var CM = window.FERC_COMMENTS;`) at the top of
+  *every* function that uses them; don't assume a sibling function's local is visible.
+- **The preview viewport intermittently collapses to `innerWidth: 0`** (after resize cycles / reloads),
+  which reflows the list to ~26px wide, inflates a 273-row section to ~890,000px, and returns blank
+  screenshots. It is a preview-environment artifact, not a layout bug. Set an explicit
+  `preview_resize({width, height})` before measuring geometry or screenshotting; prefer width-independent
+  `preview_eval` / `preview_inspect` for functional checks (they were reliable throughout).
+- **Bump `ASSET_VER` (and the `?v=` tokens) before every verify cycle when iterating.** The browser
+  caches `js/*.js?v=…`; editing a file after a load *without* bumping the token serves the stale copy, and
+  you will chase a "bug" that is just a cached `comments-data.js`/`app.js`. During active dev, advance the
+  suffix each reload; settle on one clean value for the commit.
+- **`position: sticky` under `body { overflow-x: hidden }`:** the body becomes the scroll container, so
+  sticky still pins for the user, but `window.scrollTo` in a test may scroll the wrong element — measure
+  with `document.scrollingElement.scrollTop`. A sticky bar's `top` must equal the sticky tablist's rendered
+  height (46px here); measure it, don't guess.
+- **Honest data beats the literal spec.** The plan asked for a per-RTO procedural *grid* (filed/pending
+  per docket). We don't poll eLibrary for who has filed, so per-RTO cells would fabricate certainty — the
+  clock is uniform across the six orders, so it shipped as one shared timeline with browser-computed
+  status and a "tracks the schedule, not confirmed filings" rail. CLAUDE.md's "don't manufacture
+  certainty" overrides a plan when the data to back it isn't there.
+- **Precompute the inverted index at build, fetch one file per view.** The By-issue reader needs "every
+  letter on issue X"; assembling that from 268 per-letter files client-side is the wrong shape. The build
+  emits one `issues/<slug>.json` per issue (controlled vocab in full + top-N recurring topics, the long
+  tail logged not silently capped), guarded by a bin-for-bin trace-back test.
+
 ## Small things that mattered
 
 - **Don't put a dash range separator between dash-containing identifiers.** `EL26-67-000 – EL26-72-000`

@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260710b";
+  var ASSET_VER = "20260710c";
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -704,7 +704,11 @@
         btn.tabIndex = on ? 0 : -1;
         sec.hidden = !on;
       });
-      if (updateHash !== false) writeCommentsHash({ sub: name });
+      if (updateHash === false) return;
+      // All-comments reflects its active filter in the hash (so switching to it keeps the list shareable);
+      // other sub-tabs write a bare #comments/<sub>.
+      if (name === "summaries" && typeof syncFilterHash === "function") syncFilterHash();
+      else writeCommentsHash({ sub: name });
     };
     subs.forEach(function (s) {
       var btn = document.getElementById("cmsub-" + s);
@@ -982,7 +986,8 @@
         showSub(sub, false);
         var pr = state.params || {};
         if (sub === "issue" && pr.id) selectIssue(pr.id, null, false);
-        else if (sub === "summaries" && (pr.f || pr.q)) { setFilterState(pr.f, pr.q); syncFilterHash(); }
+        // the URL is authoritative for the All-comments filter: apply f/q, or clear it when absent
+        else if (sub === "summaries") { setFilterState(pr.f, pr.q); syncFilterHash(); }
         else writeCommentsHash({ sub: sub });
       }
     };
