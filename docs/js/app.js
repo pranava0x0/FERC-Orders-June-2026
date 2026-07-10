@@ -4,7 +4,11 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260629b";
+  var ASSET_VER = "20260709a";
+  // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
+  var pendingCommentsRoute = null;
+  // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
+  var applyCommentsRoute = null;
   var D = window.FERC_DATA;
   if (!D) { document.getElementById("main").innerHTML = "<p class='noscript'>Data failed to load (js/data.js).</p>"; return; }
 
@@ -537,11 +541,12 @@
             '<div class="cm-bindetail" data-state=""></div>' +
             '<p class="cm-analysis-foot">Each position below carries the filer’s own stance and the verbatim quotes behind it; those quotes are the audit trail, committed in the repository. The stance shown is the filer’s own, read from its words.</p></details>';
         }
-        return '<li class="cm-row" data-q="' + esc(q) + '">' +
+        return '<li class="cm-row" id="c-' + esc(c.acc) + '" data-q="' + esc(q) + '">' +
           '<div class="cm-row-top"><span class="cm-row-date mono">' + esc(fmtD(c.filed)) + "</span>" + badge +
           '<span class="cm-row-org">' + esc(c.org) + "</span>" +
           '<span class="cm-row-type">' + esc(type) + "</span>" +
-          '<a class="cm-row-link" href="' + esc(eli(c.acc)) + '" target="_blank" rel="noopener noreferrer" title="Open eLibrary filing ' + esc(c.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a></div>' +
+          '<a class="cm-row-link" href="' + esc(eli(c.acc)) + '" target="_blank" rel="noopener noreferrer" title="Open eLibrary filing ' + esc(c.acc) + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a>' +
+          '<button type="button" class="cm-row-permalink" data-acc="' + esc(c.acc) + '" title="Copy a link to this comment" aria-label="Copy a permalink to this comment from ' + esc(c.org) + '">Link</button></div>' +
           '<p class="cm-row-desc">' + esc(c.desc) + "</p>" + tags + analysis + "</li>";
       }).join("");
       return '<section class="cm-listgroup"><h3 class="cm-listgroup-h">' + esc(r.label) + ' <span class="mono">' + r.count + "</span></h3><ul class=\"cm-list\">" + items + "</ul></section>";
@@ -582,7 +587,8 @@
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
       head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary — open “Read the audited analysis” on any row for the plain read, then each position grouped by lens with its description and the verbatim quotes behind it. Each row also shows the lenses it engages and links to its eLibrary filing. Filter by org, type, lens, position, or any word in a summary.") +
-      filter + tagBar + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src + "</section>";
+      filter + tagBar + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your search. Try a broader term, or clear the filter.</p>' + src +
+      '<span class="sr-only" role="status" aria-live="polite" id="cm-copystatus"></span></section>';
 
     return subnav + secOverview + secTypes + secSummaries;
   }
@@ -590,7 +596,7 @@
   function wireComments() {
     // sub-tab switching within the Comments panel
     var subs = ["overview", "types", "summaries"];
-    var showSub = function (name) {
+    var showSub = function (name, updateHash) {
       subs.forEach(function (s) {
         var btn = document.getElementById("cmsub-" + s), sec = document.getElementById("cmsec-" + s);
         if (!btn || !sec) return;
@@ -599,6 +605,7 @@
         btn.tabIndex = on ? 0 : -1;
         sec.hidden = !on;
       });
+      if (updateHash !== false) writeCommentsHash({ sub: name });
     };
     subs.forEach(function (s) {
       var btn = document.getElementById("cmsub-" + s);
@@ -713,6 +720,48 @@
     [].slice.call(document.querySelectorAll("#panel-comments .cm-analysis")).forEach(function (d) {
       d.addEventListener("toggle", function () { if (d.open) hydrate(d); });
     });
+
+    // row permalink: copy a shareable link (…#comments/c=<acc>) and reflect it in the address bar,
+    // so a drafter can cite one comment to a colleague. Delegated so it covers every row.
+    var status = document.getElementById("cm-copystatus");
+    if (summariesSec) summariesSec.addEventListener("click", function (e) {
+      var lb = e.target.closest(".cm-row-permalink");
+      if (!lb || !lb.dataset.acc) return;
+      writeCommentsHash({ acc: lb.dataset.acc });
+      var url = location.href.split("#")[0] + "#" + window.CommentsRoute.serialize({ acc: lb.dataset.acc });
+      var done = function (ok) {
+        lb.classList.add("copied");
+        lb.textContent = ok ? "Copied" : "Link ready";
+        if (status) status.textContent = ok ? "Link copied to clipboard" : "Link is now in the address bar";
+        setTimeout(function () { lb.classList.remove("copied"); lb.textContent = "Link"; }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(function () { done(true); }, function () { done(false); });
+      } else { done(false); }
+    });
+
+    // apply a route requested from the URL: select a sub-tab, or open + scroll to a permalinked row.
+    applyCommentsRoute = function (state) {
+      if (!state) return;
+      if (state.acc) {
+        showSub("summaries", false);
+        var row = document.getElementById("c-" + state.acc);
+        if (row) {
+          var det = row.querySelector(".cm-analysis");
+          if (det && !det.open) det.open = true; // fires 'toggle' -> lazy-loads the quotes
+          row.scrollIntoView({ block: "start" });
+          row.classList.add("cm-row-flash");
+          setTimeout(function () { row.classList.remove("cm-row-flash"); }, 1800);
+        }
+        writeCommentsHash({ acc: state.acc });
+      } else {
+        var sub = subs.indexOf(state.sub) >= 0 ? state.sub : "overview";
+        showSub(sub, false);
+        writeCommentsHash({ sub: sub });
+      }
+    };
+    // consume any route parsed from the hash before this panel finished wiring
+    if (pendingCommentsRoute) { applyCommentsRoute(pendingCommentsRoute); pendingCommentsRoute = null; }
   }
 
   /* ---- provenance ---- */
@@ -753,6 +802,43 @@
   function panelFor(name) { return document.getElementById("panel-" + name); }
   function tabFor(name) { return document.getElementById("tab-" + name); }
 
+  // Comments-tab URL state (grammar in comments-route.js). The Comments panel owns its own hash so
+  // sub-tab and row-permalink state survive a shared link; other tabs stay bare "#<tab>".
+  function writeCommentsHash(state) {
+    var body = "#" + window.CommentsRoute.serialize(state);
+    if (history.replaceState) history.replaceState(null, "", body);
+    else location.hash = body.slice(1);
+  }
+  function currentSub() {
+    var subs = window.CommentsRoute.SUBS;
+    for (var i = 0; i < subs.length; i++) {
+      var b = document.getElementById("cmsub-" + subs[i]);
+      if (b && b.getAttribute("aria-selected") === "true") return subs[i];
+    }
+    return window.CommentsRoute.DEFAULT_SUB;
+  }
+  // "#comments/summaries?q=x" -> { tab: "comments", rest: "summaries?q=x" }; "#news" -> { tab:"news", rest:"" }
+  function parseHash() {
+    var h = (location.hash || "").replace(/^#/, "");
+    var slash = h.indexOf("/");
+    return slash < 0 ? { tab: h, rest: "" } : { tab: h.slice(0, slash), rest: h.slice(slash + 1) };
+  }
+  // Switch tabs from the hash/router, routing the Comments sub-state through the comments module.
+  function goTab(tab, rest, focus) {
+    if (TABS.indexOf(tab) < 0) tab = "overview";
+    if (tab === "comments") {
+      var state = window.CommentsRoute.parse(rest);
+      var firstRender = !rendered.comments;
+      pendingCommentsRoute = state;        // consumed by wireComments on first render
+      activate("comments", focus);
+      if (!firstRender && applyCommentsRoute) applyCommentsRoute(state); // already wired: apply now
+      if (!state.acc) scrollToTabsTop();   // a permalink scrolls to its row instead
+    } else {
+      activate(tab, focus);
+      scrollToTabsTop();
+    }
+  }
+
   // Tabs are sticky; on a user-initiated switch, scroll back up to the tablist so the new
   // (often shorter) panel starts at the top instead of leaving the viewport stranded mid-page.
   function scrollToTabsTop() {
@@ -772,8 +858,11 @@
         if (focus) tab.focus();
       }
     });
-    if (history.replaceState) history.replaceState(null, "", "#" + name);
-    else location.hash = name;
+    // Comments manages its own richer hash (sub-tab + permalinks); other tabs stay bare "#<tab>".
+    if (name !== "comments") {
+      if (history.replaceState) history.replaceState(null, "", "#" + name);
+      else location.hash = name;
+    }
   }
 
   function onKey(e) {
@@ -784,23 +873,33 @@
     else if (e.key === "ArrowLeft" || e.key === "ArrowUp") next = (i - 1 + TABS.length) % TABS.length;
     else if (e.key === "Home") next = 0;
     else if (e.key === "End") next = TABS.length - 1;
-    if (next !== null) { e.preventDefault(); activate(TABS[next], true); scrollToTabsTop(); }
+    if (next !== null) {
+      e.preventDefault();
+      var nm = TABS[next];
+      activate(nm, true);
+      scrollToTabsTop();
+      if (nm === "comments") writeCommentsHash({ sub: currentSub() });
+    }
   }
 
   function init() {
     renderProvenance();
     TABS.forEach(function (t) {
       var tab = tabFor(t);
-      tab.addEventListener("click", function () { activate(t, false); scrollToTabsTop(); });
+      tab.addEventListener("click", function () {
+        activate(t, false);
+        scrollToTabsTop();
+        if (t === "comments") writeCommentsHash({ sub: currentSub() });
+      });
       tab.addEventListener("keydown", onKey);
     });
-    // in-page links like the Discourse "Open the Comments tab →" pointer switch tabs via the hash
+    // in-page links and shared permalinks switch tabs (and Comments sub-state) via the hash
     window.addEventListener("hashchange", function () {
-      var h = (location.hash || "").replace("#", "");
-      if (TABS.indexOf(h) >= 0) { activate(h, false); scrollToTabsTop(); }
+      var p = parseHash();
+      if (TABS.indexOf(p.tab) >= 0) goTab(p.tab, p.rest, false);
     });
-    var initial = (location.hash || "").replace("#", "");
-    activate(TABS.indexOf(initial) >= 0 ? initial : "overview", false);
+    var p = parseHash();
+    goTab(TABS.indexOf(p.tab) >= 0 ? p.tab : "overview", p.rest, false);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
