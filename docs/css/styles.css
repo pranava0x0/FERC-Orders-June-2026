@@ -529,6 +529,56 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .cm-stancebar .mix { background: var(--stance-mixed); }
 .cm-stancebar .neu { background: var(--rule-strong); color: var(--ink); }
 
+/* By-issue reader: two-pane on wide screens (outline + reader), stacked on narrow */
+.cm-issues { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 24px; align-items: start; }
+@media (max-width: 900px) { .cm-issues { grid-template-columns: 1fr; gap: 14px; } }
+.cm-issue-outline { min-width: 0; }
+@media (min-width: 901px) { .cm-issue-outline { position: sticky; top: 116px; max-height: calc(100vh - 140px); overflow: auto; } }
+.cm-issue-group + .cm-issue-group { margin-top: 16px; }
+.cm-issue-group-h { font-size: 11px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 5px; }
+.cm-issue-outline-list { list-style: none; display: grid; gap: 2px; margin: 0; padding: 0; }
+.cm-issue-link { width: 100%; display: flex; align-items: center; gap: 8px; text-align: left; font: inherit; font-size: 12.5px; background: none; border: 1px solid transparent; border-radius: 6px; padding: 7px 9px; cursor: pointer; color: var(--ink); }
+.cm-issue-link:hover { background: var(--surface-2); }
+.cm-issue-link.active { background: #eef3f9; border-color: var(--rule-strong); }
+.cm-issue-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cm-issue-name { flex: 1; min-width: 0; font-weight: 600; line-height: 1.3; }
+.cm-issue-count { flex: none; font-size: 11px; color: var(--text-muted); }
+.cm-issue-micro { display: inline-flex; flex: none; height: 6px; width: 48px; border-radius: 2px; overflow: hidden; background: var(--surface-2); border: 1px solid var(--rule); }
+.cm-issue-micro .seg { display: block; }
+.cm-issue-micro .sup { background: var(--stance-positive); }
+.cm-issue-micro .opp { background: var(--stance-negative); }
+.cm-issue-micro .mix { background: var(--stance-mixed); }
+.cm-issue-micro .neu { background: var(--rule-strong); }
+@media (pointer: coarse) { .cm-issue-link { min-height: 44px; } }
+.cm-issue-reader { min-width: 0; }
+.cm-issue-hint { color: var(--text-muted); font-size: 13px; line-height: 1.5; }
+.cm-issue-readhead { margin-bottom: 6px; }
+.cm-issue-readtitle { font-family: var(--font-serif); font-size: 19px; color: var(--masthead); line-height: 1.25; }
+.cm-issue-readdesc { font-size: 13px; color: #2b3744; line-height: 1.5; margin-top: 4px; }
+.cm-issue-readmeta { font-size: 11px; color: var(--text-muted); margin-top: 7px; }
+.cm-issue-splitbar { margin-top: 8px; }
+.cm-issue-stancegroup { margin-top: 18px; }
+.cm-issue-stancegroup-h { font-size: 12.5px; font-weight: 700; color: var(--masthead); padding-bottom: 4px; border-bottom: 2px solid var(--rule); }
+.cm-issue-stancegroup.support .cm-issue-stancegroup-h { border-color: var(--stance-positive); }
+.cm-issue-stancegroup.oppose .cm-issue-stancegroup-h { border-color: var(--stance-negative); }
+.cm-issue-stancegroup.mixed .cm-issue-stancegroup-h { border-color: var(--stance-mixed); }
+.cm-issue-stancegroup-h .mono { color: var(--text-muted); font-weight: 400; font-size: 11px; }
+.cm-issue-letter { padding: 9px 0; border-bottom: 1px solid var(--rule); }
+.cm-issue-letter-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.cm-issue-org { font-weight: 700; font-size: 13px; color: var(--accent); text-decoration: none; }
+.cm-issue-org:hover { text-decoration: underline; }
+.cm-issue-bucket { font-size: 10.5px; color: var(--text-muted); background: var(--surface-2); border-radius: 999px; padding: 1px 8px; }
+.cm-issue-letter-desc { font-size: 12.5px; color: #2b3744; line-height: 1.45; margin-top: 4px; }
+.cm-issue-quotes { margin-top: 6px; }
+.cm-issue-quotes > summary { cursor: pointer; font-size: 11px; color: var(--accent); display: inline-flex; gap: 6px; align-items: center; list-style: none; }
+.cm-issue-quotes > summary::-webkit-details-marker { display: none; }
+.cm-issue-quotes > summary::before { content: "\203A"; font-weight: 700; transition: transform 0.15s ease; }
+.cm-issue-quotes[open] > summary::before { transform: rotate(90deg); }
+.cm-issue-quotes:focus-within > summary { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cm-issue-quotes .cm-bqs { display: grid; gap: 7px; margin-top: 6px; }
+.cm-issue-quotes-n { color: var(--text-muted); }
+@media (pointer: coarse) { .cm-issue-quotes > summary { min-height: 44px; } }
+
 /* Consensus heatmap: stakeholder type x reform principle */
 .cm-hm-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-size: 11.5px; color: var(--text-secondary); margin-bottom: 4px; }
 .cm-hm-key { display: inline-flex; align-items: center; gap: 5px; }

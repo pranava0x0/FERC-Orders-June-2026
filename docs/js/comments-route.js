@@ -11,8 +11,8 @@
    Readable on purpose: these URLs get pasted into emails and briefs. */
 (function (g) {
   "use strict";
-  // Known sub-tab ids, in tablist order. Extended as the By-issue / Who-filed views land.
-  var SUBS = ["overview", "types", "summaries"];
+  // Known sub-tab ids, in tablist order. Extended as the Who-filed view lands.
+  var SUBS = ["overview", "issue", "types", "summaries"];
   var DEFAULT_SUB = "overview";
 
   function parseQuery(s) {
