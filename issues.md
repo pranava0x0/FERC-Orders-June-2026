@@ -14,6 +14,21 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-07-14 · ux (found in UAT of the crosswalk) · the policy map was the highest-value view but two
+  clicks deep with no signpost.** Reaching it meant Comments tab → "By issue" sub-tab (and the default
+  Comments sub is "Themes & categories," so the map isn't even first). Neither label advertises a policy
+  crosswalk, and the Comments overview didn't link to it. Root cause: **ux** (discoverability). Status:
+  **Fixed** (`8d78b94`) — a "The policy map" callout at the top of the Comments overview links straight
+  to it (`#comments/issue`).
+- **2026-07-14 · ux (found in UAT) · no way back to the policy map from inside an issue read.** Once you
+  drilled into an issue, the only routes back to the landing map were the sub-tab or hand-editing the URL;
+  the left outline only swaps issues. Root cause: **ux** (a drill-down with no exit). Status: **Fixed**
+  (`8d78b94`) — a "← Policy map" link atop the issue reader restores the landing via the existing route.
+- **2026-07-14 · js (found in UAT) · the "planning" Section IV deep-link resolved to `aq:expedited`
+  instead of `pr:flex`.** Two crosswalk rows carried `briefingId:"planning"`, and the link helper took the
+  first. Root cause: **code** (non-unique join key). Status: **Fixed** (`0358ee6`) — dropped the stray
+  `briefingId` on `aq:expedited` (its open item is DOE's 60-day question, not a Section IV item) and made
+  the helper prefer the `pr:` reform issue.
 - **2026-07-10 · js (found in code review) · a permalinked / cross-nav comment could land hidden behind
   an active filter.** `applyCommentsRoute`'s `acc` branch selected the All-comments sub and scrolled to
   `#c-<acc>` but never cleared the token filter. Scenario: filter to `rg:pjm`, open a By-issue reader,
