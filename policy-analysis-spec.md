@@ -3,8 +3,15 @@
 An evaluation of the comment-summary analysis as it stands after the P0 flow overhaul (PR #12), and
 a build-ready spec for the layer it is missing: **policy intelligence for SMEs and regulatory
 experts** — what concrete policies the record puts on the table, who backs each, what the June 18
-orders actually did with them, and where each can still be implemented (the Aug 17 compliance
-filings, the Section IV briefs, the E-2 paper hearing, the still-open RM26-4 rulemaking).
+orders actually did with them, where each can still be implemented (the Aug 17 compliance
+filings, the Section IV briefs, the E-2 paper hearing, the still-open RM26-4 rulemaking), and how
+it all lands on each respondent type given the industry forces driving them.
+
+Quality bar (the user's stated priorities, 2026-07-14, binding on every phase): citation accuracy
+to the original letters; substantive-comment identification; end-to-end auditability and
+traceability; domain accuracy **without losing context** — no quote read or synthesized apart
+from its letter's surrounding context; accurate, *descriptive* bin and option names; and an
+understanding of respondent types and how industry trends impact them. Context is key.
 
 Relationship to [ux-improvement-plan.md](ux-improvement-plan.md): **complements, does not
 supersede.** That plan fixed the *flow* (issue-first reading, workbench filters, permalinks,
@@ -80,6 +87,12 @@ in five measured ways:
    no distinct-argument consolidation, no proposal grouping, conditions ("support **only if**…")
    buried inside `mixed`/`support` descriptions. The reader's landing state is a hint sentence,
    spending the best screen in the tab on nothing.
+6. **Respondent types are counted, not understood.** The 19 buckets carry labels, rosters, and
+   stance tallies (the heatmap) — but no surface answers "what is at stake for this camp, and why
+   now": the industry forces behind each camp's posture (hyperscaler load growth, co-location
+   dealflow, queue backlogs, state-commission cost exposure) and how the proposed policies would
+   land on each type differentially. That impact reading is left entirely to the reader, and it
+   is the reading the named audience actually does.
 
 ### 1.3 Data-quality debts that gate any new synthesis
 
@@ -90,12 +103,13 @@ in five measured ways:
 | Un-stamped quote pages | 284 quotes (8%) `page: null` (mostly DOCX-extracted bodies with no page markers) | Option cards cite quotes; a null page weakens the cite (still linkable to the eLibrary filing, so acceptable — but note the cause in the UI foot) |
 | Missing letters | 4 image-only scans + 1 eLibrary-inline (268/273) | Data Center Coalition is one of the four — a heatmap-relevant camp absent from options backers |
 | One unlabeled provenance | 1 summary with `model: "claude"` | Trivial; normalize when touched |
+| Recall ceiling | LLM extraction under-selects substantive text vs experts (PNNL ~78% precision / ~20% recall) | The quotes are precise but not exhaustive; downstream layers must treat thin-quote issues as a summaries-v2 gap to fix at source (Part 7), with per-issue `unclustered` counts as the tripwire — never pad from memory |
 
 ---
 
 ## Part 2 — The concept: a policy layer over the existing quotes
 
-Three new first-class objects, each auditable in the same quote-centric way:
+Four new first-class objects, each auditable in the same quote-centric way:
 
 1. **Policy option** — a distinct, concrete course of action proposed in the record on an issue
    ("tier study deposits by MW so entry cost scales", "define near-located as ≤3 busbars",
@@ -115,6 +129,15 @@ Three new first-class objects, each auditable in the same quote-centric way:
 3. **Open-question status** — the forward link: each crosswalk row names the concrete vehicle and
    date ("show-cause/tariff filing, Aug 17, 2026" from `data.js#procedural`), so "what could be
    implemented as a result" is a dated, procedural answer, never a prediction.
+4. **Camp profile** — per stakeholder bucket (19): who this camp is, its computed footprint in
+   the record (letters, issues most engaged, stance tendencies — all derivable at build), **"in
+   their words, what's at stake"** (synthesized only from that camp's own quotes, ref-linked),
+   and a curator **industry-context** line naming the trend driving the camp's posture
+   (hyperscaler load growth, co-location dealflow, queue backlogs, retail-rate exposure), cited
+   to the site's captured sources (Discourse voices, orders, filings). This is the
+   respondent-type impact layer: what the record means *for* each type, not just what each type
+   said — with impact claims grounded in the camp's own filings or the curator's cited lane,
+   never invented.
 
 External grounding: this is exactly the shape the canonical government deliverable takes. In the
 comment-response-matrix tradition (EPA/DOE-NEPA/FTA; CARA's concern→response model, ux-plan
@@ -132,15 +155,22 @@ exists in the committed, page-cited order text.
    ground (Section IV), and untouched ground (e.g. issues the orders are silent on).
 8. *"Which minority proposals survived into the orders, and which majority asks were ignored?"* —
    the expert's calibration question; answerable only by the crosswalk.
+9. *"What does this mean for my camp — or a camp I watch — and why now?"* — a strategy lead or
+   analyst reading one respondent type across the whole record: its exposure, its asks, and the
+   industry trend behind them.
 
 ## Part 3 — Data design
 
 ### 3.1 Policy-option extraction (pipeline)
 
 **Input** (all committed): per canonical issue, every quote binned to it across the 268 summaries
-— `{acc, org, bucket, stance, concern, quote, page}`. Measured sizes: pr:cost 959 quotes / 231
-letters (largest), pr:study 860/229, aq:jurisdiction 618/161, … 5,244 canonical-binned quote
-instances total. The largest issue fits one context comfortably (~115K tokens with prompt);
+— `{acc, org, bucket, stance, concern, quote, page}` — **plus, per letter, its context**: the
+letter's `overall_summary` and this issue's bin `desc`. A quote never arrives naked; the
+clustering model always sees how the letter itself frames the position (context is key — a span
+that reads as clean support may be conditioned two sentences away, and the bin desc/summary carry
+that). Measured sizes: pr:cost 959 quotes / 231 letters (largest), pr:study 860/229,
+aq:jurisdiction 618/161, … 5,244 canonical-binned quote instances total. With the per-letter
+context the largest issue is ~145K input tokens — still one comfortable context;
 **one clustering call per issue**, 19 canonical calls + ~10–15 normalized-topic calls.
 
 **Method** (per issue, one subagent call, self-critique folded in per the audit-cost-sink rule):
@@ -155,6 +185,12 @@ instances total. The largest issue fits one context comfortably (~115K tokens wi
    Terraflux's busbar definition must not be dropped for being alone).
 5. Leftover quotes that fit no option go to an explicit `unclustered` list with count — an empty
    or huge remainder is an audit flag, never silently absorbed.
+6. **Quote-in-context fidelity**: an option's `name`/`desc` must stay true to each backing quote
+   *as its letter uses it* — checked against the bin desc + overall summary supplied with it. If
+   a letter's support is conditioned elsewhere in the letter, the condition surfaces as a
+   `condition` option (or the backer is not claimed). Option names are descriptive of the actual
+   position taken ("credit upgrade payments against future transmission rates"), never generic
+   topic labels ("cost concerns"). The folded self-critique checks both per option.
 
 **Output** — committed, one file per issue: `sources/comments/policy-options/<ns>-<slug>.json`
 
@@ -191,12 +227,14 @@ cannot drift.
 - style/boilerplate linter over `name`/`desc` (the existing AI-register linter — reuse it);
 - count floors per issue once shipped (append-only protection).
 
-**Selective LLM audit** only on deterministically flagged issues (unclustered > 15%, an option
-with backers whose stances on the parent issue are all `oppose` while `kind: "proposal"`,
-zero conditions found on an issue whose `mixed` count > 20 — divergence smells), per the measured
-~43%-savings gating rule. Budget: ~630K input + prompts ≈ **~$3–5 on Sonnet, run in per-issue
-chunks, resumable** (each issue file lands independently; the run stops cleanly at any budget
-line — respect the session-budget rule, report spend per chunk).
+**Selective LLM audit** only on deterministically flagged issues (unclustered > 15%; an option
+with backers whose stances on the parent issue are all `oppose` while `kind: "proposal"`; a
+backer whose bin desc or overall summary reads *against* the option it is claimed for — the
+context-contradiction smell; zero conditions found on an issue whose `mixed` count > 20), per
+the measured ~43%-savings gating rule. Budget: ~790K input + prompts with the per-letter context
+≈ **~$4–6 on Sonnet, run in per-issue chunks, resumable** (each issue file lands independently;
+the run stops cleanly at any budget line — respect the session-budget rule, report spend per
+chunk).
 
 ### 3.2 Topic normalization (prerequisite for topic-level options)
 
@@ -247,6 +285,29 @@ The outline index gains per-issue `optionCount`. The crosswalk ships in `data.js
 and load-bearing for two tabs). `docs/llms.txt` gains the options + crosswalk (regenerate via
 `build-llms.mjs`) — for the named audience, agent consumers are real users.
 
+### 3.5 Camp profiles (respondent-type impact, grounded)
+
+One committed file, `sources/comments/camp-profiles.json`, 19 entries (one per bucket), three
+lanes per entry — computed, camp's-own-words, curator:
+
+```json
+{ "bucket": "data_center",
+  "footprint": { "letters": 29, "topIssues": ["pr:colo", "pr:flex", "aq:expedited"], "stanceMix": {...} },   // derived at build, no LLM, recomputed each regen
+  "atStake": { "desc": "In their filings: speed to power and co-location certainty decide siting; ...",      // synthesized ONLY from this camp's own quotes
+               "quote_refs": [{ "acc": "...", "id": 4 }], "provenance": { "model": "...", "verified": false } },
+  "context": { "note": "Curator: hyperscaler load growth is the demand shock behind this docket; this camp is the one being asked to prepay for network upgrades.",
+               "sources": ["doeLetter", "natlaw"] } }                                                        // curator lane, cited to SOURCES ids
+```
+
+Rules: `footprint` is recomputed by the build (a hand-edited copy fails the sync test);
+`atStake.desc` synthesizes **only that camp's quotes** (refs resolve into summaries-v2, same
+no-text-duplication pattern as options) — what the camp *says* is at stake for it, not our guess;
+`context.note` is the industry-trend framing, curator lane, every claim carrying a `SOURCES` id
+already captured by the site (no new unverified web claims ride in). Camps with thin records
+(≤3 letters) get footprint + curator context only — no synthesized `atStake` from a sample that
+small; the absence renders as "too few filings to characterize," which is itself the finding.
+LLM cost is trivial (19 camps, quotes already extracted; ≈40–60K tokens).
+
 ## Part 4 — UX design
 
 ### 4.1 By-issue reader upgrade (the core surface)
@@ -285,7 +346,22 @@ already the issue list; the landing pane is the natural home and costs no naviga
 - **Overview stance map** rows gain the status chip inline (one glyph + label), so "187 support"
   reads next to "posed as a question, briefs due with the Aug 17 filing."
 
-### 4.3 Exports (upgrades ux-plan P1 #10a, absorbs it)
+### 4.3 Camp surfaces (respondent-type impact in the UI)
+
+1. **Camp filter in the By-issue reader**: a "View as camp" select (bucket list with counts)
+   filters both the option cards (backer bars re-denominate to the camp) and the stance groups —
+   one control answers "how does this issue read for consumer advocates." URL-addressable
+   (`&camp=<bucket>`).
+2. **Camp profile cards** in the Who-filed sub-tab (extends ux-plan P1 #6, same home): per
+   bucket — definition (existing label + a one-line gloss), footprint numbers with links into
+   By-issue/All-comments filtered views, the "in their words, what's at stake" block (quotes
+   expandable, cites, provisional label), and the curator industry-context line with its source
+   links and the curator-lane label. The three lanes are visually distinct (see 4.6).
+3. **Option cards carry the camp story already** (backer mini-bars by bucket, §4.1.3); with the
+   camp filter this doubles as "which options *my* camp backs vs. what the rest of the record
+   backs" — the coalition read.
+
+### 4.4 Exports (upgrades ux-plan P1 #10a, absorbs it)
 
 The response-scaffold export emits the **policy-option matrix** per issue (or all issues):
 markdown + CSV — issue · option · kind · backers (orgs, buckets, N) · representative verbatim
@@ -293,11 +369,12 @@ quote · accession + page cite · order status from policyMap · empty Response 
 comment-response matrix a responder actually files, pre-filled with everything the record and the
 orders already settle. Same formula-injection guard + test as the planned CSV work.
 
-### 4.4 URL, a11y, design system
+### 4.5 URL, a11y, design system
 
 - Grammar (extends `comments-route.js`): `#comments/issue?id=pr:cost&opt=protective-minimum-take`
-  (selected option card scrolled + expanded); `#comments/issue` with no id = the policy-map
-  landing (already the default). Round-trip test extends the existing one.
+  (selected option card scrolled + expanded), `&camp=<bucket>` for the camp filter;
+  `#comments/issue` with no id = the policy-map landing (already the default). Round-trip test
+  extends the existing one.
 - Status chips are text + color, never color alone; option cards keep ≥44px coarse-pointer
   targets on the expand affordance; the policy-map grid scrolls in-container on mobile like the
   heatmap; `aria-label` carries the full status sentence on every chip (lossy-glyph rule).
@@ -307,12 +384,16 @@ orders already settle. Same formula-injection guard + test as the planned CSV wo
   denominators stated, provisional labels on all AI-derived content, curator-judgment label on
   crosswalk fields (no-ai-isms memory; DESIGN.md §11.1).
 
-### 4.5 Honesty rails specific to this layer
+### 4.6 Honesty rails specific to this layer
 
 - **Three lanes, visibly distinct**: verbatim record (quotes, order text — cited), AI-derived
-  aggregation (bins, options — "AI-audited, provisional" label, `verified: false` until the
-  human pass), curator judgment (crosswalk status/note — "curator's read, cite-checked" label).
-  Never let a status chip render without its lane label reachable.
+  aggregation (bins, options, camp `atStake` — "AI-audited, provisional" label,
+  `verified: false` until the human pass), curator judgment (crosswalk status/note, camp
+  industry-context — "curator's read, cite-checked" label). Never let a status chip render
+  without its lane label reachable.
+- **Impact claims stay grounded or labeled.** "How this lands on camp X" is only ever (a) the
+  camp's own words, quote-linked, or (b) the curator's cited context line. No synthesized
+  cross-camp impact narrative, no trend claims without a captured source.
 - **No forecasting.** The layer says what is procedurally open and who asked for what — never
   "FERC is likely to." The vehicle+date chip is the only forward-looking element, and it is a
   quoted deadline.
@@ -333,27 +414,33 @@ orders already settle. Same formula-injection guard + test as the planned CSV wo
    `briefing.questions`; status enum closed; every `pg` cite lands on a page carrying its quote
    (the existing directive-cite test pattern).
 3. Topic canon: member slugs exist, no slug claimed twice, canonical counts ≥ members' max.
-4. Route round-trip extended for `opt=`; node-budget check on the policy-map landing grid
-   (13 rows — trivial, but the floor guards growth).
+4. Route round-trip extended for `opt=` and `camp=`; node-budget check on the policy-map landing
+   grid (13 rows — trivial, but the floor guards growth).
 5. Seed rule: ≥1 example per `kind` and per `status` in shipped data, so no legend slot renders
    empty (enum-seed rule).
+6. `tests/camp-profiles.test.mjs`: every `atStake.quote_refs` entry resolves to a quote in a
+   letter *of that bucket*; `footprint` matches a recompute from summaries-v2 (hand-edit fails
+   loud); every `context.sources` id exists in `SOURCES`; thin camps (≤3 letters) carry no
+   `atStake`; style linter over all displayed strings.
 
 ## Part 6 — Phases, sizing, sequencing
 
 | Phase | What | Effort | Gates / depends |
 |---|---|---|---|
 | A | Data debts: OCR 4 scans + ETI re-fetch, 62 Haiku→Sonnet re-authors, topic canon (§3.2), normalize the 1 `model:"claude"` | M (pipeline) | = ux-plan P1 #10, promoted: **gates B** |
-| B | Option extraction over 19 canonical issues + validators + committed files (§3.1) | L (LLM ~$3–5, per-issue chunks, resumable) | A |
+| B | Option extraction over 19 canonical issues + validators + committed files (§3.1) | L (LLM ~$4–6, per-issue chunks, resumable) | A |
 | C | Crosswalk `policyMap` authored + tests (§3.3) | M (curator, no LLM) | — (parallel to B) |
-| D | UI: reader strip + option cards + policy-map landing + cross-links + URL (§4.1–4.2, 4.4) | L | B, C |
-| E | Option-matrix export (§4.3) | S | B, C (absorbs ux-plan P1 #10a) |
+| D | UI: reader strip + option cards + policy-map landing + cross-links + URL (§4.1–4.2, 4.5) | L | B, C |
+| E | Option-matrix export (§4.4) | S | B, C (absorbs ux-plan P1 #10a) |
 | F | Topic-level options for the canonical top topics | M | A, B learnings |
-| G | `verified_at` stratified human pass now covering options (ux-plan P2 #15, scope grown) | M (human) | B |
+| G | `verified_at` stratified human pass now covering options + camp `atStake` (ux-plan P2 #15, scope grown) | M (human) | B, H |
+| H | Camp profiles + camp filter (§3.5, §4.3) — ships with/extends ux-plan P1 #6 Who-filed | M (LLM trivial + curator context lines) | A |
 
 Ship order: **C first** (cheapest, zero-inference, immediately useful as the policy-map landing
-with status chips even before options exist), then A → B → D, then E/F/G. Each phase is its own
-PR with the repo's committed-chunk discipline; B runs under the `/summarize-comments`-style
-budget pattern (explicit pause points, spend reported per chunk).
+with status chips even before options exist), then A → B → D, with **H in parallel after A**
+(it needs only summaries-v2 + curator time), then E/F/G. Each phase is its own PR with the
+repo's committed-chunk discipline; B runs under the `/summarize-comments`-style budget pattern
+(explicit pause points, spend reported per chunk).
 
 Supersessions to record in backlog when work starts: ux-plan **P2 #11 (per-issue LLM briefs) is
 replaced** by options (same budget, strictly more structure — a prose brief can still be
