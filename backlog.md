@@ -18,9 +18,17 @@
   the Overview stance bars and the Reforms category cards carry the status chip inline + deep-link into the
   record; the procedural board's show-cause step shows "10 record issues land here →"; and each Section IV
   briefing question links to "what the record says →" (join = `policyMap.next.briefingId`, preferring the pr:
-  reform issue). 81 tests pass; quote sweep clean; verified in-browser (desktop + 375px). **Not yet
-  built (needs go-ahead on the paid LLM run):** phase B option extraction (~$4–6 fan-out over 19 issues),
-  phase H camp profiles, phase A data debts (OCR + Haiku re-authors + topic canon), phases D-options/E/F/G.
+  reform issue). Then UAT (findability / navigation / clicks) surfaced two gaps, both fixed (`8d78b94`):
+  a "The policy map" callout in the Comments overview (the map was two clicks deep with no signpost), and
+  a "← Policy map" back link out of the issue reader. 81 tests pass; quote sweep clean; verified in-browser
+  (desktop + 375px). **Not yet built (runs on subscription tokens — no separate $ cost — so size to the
+  session budget, small resumable chunks, report spend, pause for go-ahead; do NOT frame as paid API):**
+  phase B option extraction (fan-out over 19 issues, the token-heavy piece), phase H camp profiles, phase A
+  data debts (OCR + re-authors + topic canon), phases D-options/E/F/G.
+- **idea (2026-07-14, LOW) — let the "from record to rule" strip collapse.** UAT: the strip is always
+  expanded (~260px, ~0.3 viewport) above the stance groups, so a reader who just wants the letters scrolls
+  past it every time. It is intentionally the expert's first read, but a remembered collapse toggle (or
+  auto-collapse on repeat visits within a session) would cut scroll for browse-heavy use. Low priority.
 - **planned 2026-07-14 (HIGH) — policy-options layer + record-to-rule crosswalk: see [policy-analysis-spec.md](policy-analysis-spec.md).**
   The next comment-analysis increment, aimed at SMEs and regulatory experts: the current analysis stops at
   topic × stance (69% of bins read "support"), while ~1,200 concrete policy asks already sit extracted in the
