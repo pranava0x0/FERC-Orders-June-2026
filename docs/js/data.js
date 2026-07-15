@@ -1177,7 +1177,7 @@ window.FERC_DATA = (function () {
       anopr: "Fast-track the study of loads and hybrids that agree to be curtailable and dispatchable; DOE asked whether such studies could finish in 60 days.",
       status: "directed",
       did: { q: "transmission services that reflect Eligible Customers taking transmission service on behalf of flexible large loads that are willing and able to limit their use of the transmission system", order: "E-7", pg: 56 },
-      next: { vehicle: "compliance-filing", step: "showcause", briefingId: "planning" },
+      next: { vehicle: "compliance-filing", step: "showcause" },
       note: "The orders direct new services that reward curtailable load, the speed-to-power lever. DOE's 60-day study target stays an open question the filings may answer." },
     { issue: "aq:upgradecost",
       anopr: "Make large loads pay 100% of the network upgrades they trigger; DOE left crediting those payments over a term an open question.",

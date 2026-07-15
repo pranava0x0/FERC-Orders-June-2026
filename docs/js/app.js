@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260714a";
+  var ASSET_VER = "20260714b";
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -106,13 +106,20 @@
     var rows = ps.steps.map(function (x) {
       var s = x.s;
       var when = x.date ? fmtISO(s.date) : (s.dateNote || "TBD");
+      // Policy calendar: how many crosswalk issues land on this step, linking to the policy map.
+      var landing = pmIssuesForStep(s.id);
+      var landChip = landing.length
+        ? '<a class="proc-lands" href="#' + window.CommentsRoute.serialize({ sub: "issue" }) +
+          '" title="See these issues on the policy map">' + landing.length + " record " +
+          (landing.length === 1 ? "issue lands" : "issues land") + ' here <span aria-hidden="true">→</span></a>'
+        : "";
       return '<li class="proc-step ' + x.status + '"' + (x.status === "next" ? ' aria-current="date"' : "") + ">" +
         '<div class="proc-when"><span class="proc-date mono">' + esc(when) + "</span>" +
         '<span class="proc-badge ' + x.status + '">' + STATUS_LBL[x.status] + "</span></div>" +
         '<div class="proc-what"><div class="proc-headline"><span class="proc-label">' + esc(s.label) + "</span>" +
         '<span class="proc-period mono">' + esc(s.period) + " · " + esc(s.cite) + "</span></div>" +
         '<p class="proc-desc">' + esc(s.desc) + "</p>" +
-        (s.dateNote && x.date ? '<p class="proc-note mono">' + esc(s.dateNote) + "</p>" : "") + "</div></li>";
+        (s.dateNote && x.date ? '<p class="proc-note mono">' + esc(s.dateNote) + "</p>" : "") + landChip + "</div></li>";
     }).join("");
     return head("What happens next: the §206 procedural clock", P.basis) +
       '<ol class="proc-board">' + rows + "</ol>" +
@@ -164,6 +171,34 @@
     var w = pmStepWhen(next.step);
     var dateBit = w ? ' <span class="cm-pm-when mono">' + esc(w.when) + " · " + w.flag + "</span>" : "";
     return '<span class="cm-pm-nextchip"><span class="cm-pm-next-lbl">Next</span> ' + esc(label) + dateBit + "</span>";
+  }
+
+  // Crosswalk rows whose forward link lands on a given procedural step — turns the clock into a policy
+  // calendar ("N issues land here"). Only rows with a dated next.step count.
+  function pmIssuesForStep(stepId) {
+    return (D.policyMap || []).filter(function (r) { return r.next && r.next.step === stepId; });
+  }
+
+  // Deep-link from a Reforms category card (key = study/cost/…) into the By-issue record on it, with the
+  // crosswalk status chip so the Reforms tab reads what the orders did, not just what they proposed.
+  function pmReformLink(catKey) {
+    var key = "pr:" + catKey;
+    var pol = POLICY_BY_ISSUE[key];
+    if (!pol) return "";
+    var href = "#" + window.CommentsRoute.serialize({ sub: "issue", params: { id: key } });
+    return '<p class="cm-xlink">' + pmStatusChip(pol.status) +
+      ' <a class="cm-agg-link" href="' + href + '">Read the record on this by issue <span aria-hidden="true">→</span></a></p>';
+  }
+
+  // Deep-link from a Section IV briefing question to the issue whose crosswalk row briefs it. The join key
+  // is policyMap.next.briefingId; the question is a Section IV ask, so the record is where the answer lives.
+  function pmBriefingLink(briefingId) {
+    var matches = (D.policyMap || []).filter(function (r) { return r.next && r.next.briefingId === briefingId; });
+    // a briefing question maps to its reform principle first; prefer the pr: issue over an aq: cross-ref
+    var row = matches.filter(function (r) { return r.issue.indexOf("pr:") === 0; })[0] || matches[0];
+    if (!row) return "";
+    var href = "#" + window.CommentsRoute.serialize({ sub: "issue", params: { id: row.issue } });
+    return '<a class="cm-xlink-inline" href="' + href + '" title="Read the record on this by issue">what the record says <span aria-hidden="true">→</span></a>';
   }
 
   // Compact next label for the landing grid's last column.
@@ -299,6 +334,7 @@
         '<p class="cat-detail">' + esc(c.detail) + "</p>" +
         '<div class="cat-doe"><span class="label">Underlying DOE ANOPR principles</span><ul>' +
         c.doe.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></div>" +
+        pmReformLink(c.key) +
         srcChips(c.src) + "</div></details>";
     }).join("");
 
@@ -405,7 +441,8 @@
         briefing = '<details class="dreg dbrief"><summary>The Section IV briefing questions (' + bqs.length + ")</summary>" +
           (bCite ? '<div class="brief-head">' + bCite + "</div>" : "") +
           '<ol class="brief-list">' + bqs.map(function (q) {
-            return '<li class="brief-item"><span class="brief-topic">' + esc(q.t) + "</span>" +
+            var rec = pmBriefingLink(q.id);
+            return '<li class="brief-item"><span class="brief-topic">' + esc(q.t) + (rec ? ' <span class="brief-record">' + rec + "</span>" : "") + "</span>" +
               '<p class="brief-desc">' + esc(q.d) + "</p>" +
               '<span class="brief-quote">“…' + esc(q.v) + '…”</span></li>';
           }).join("") + "</ol></details>";
@@ -596,7 +633,10 @@
         var seg = function (k, cls) { var n = p[k]; return n ? '<span class="seg ' + cls + '" style="flex:' + n + '" title="' + n + " " + ST_LBL[cls] + '">' + (n >= 10 ? n : "") + "</span>" : ""; };
         // the label deep-links into By-issue for this principle (the aggregate becomes a way in)
         var href = "#" + window.CommentsRoute.serialize({ sub: "issue", params: { id: "pr:" + p.key } });
-        return '<div class="cm-stancerow"><div class="cm-bhead"><a class="cm-label cm-agg-link" href="' + href + '" title="Read the record on ' + esc(p.label) + ' by issue">' + esc(p.label) + ' <span class="cm-agg-arrow" aria-hidden="true">→</span></a><span class="cm-n mono">' + p.total + "</span></div>" +
+        // the crosswalk status chip reads next to the tally: "187 support" beside "posed as a question"
+        var pol = POLICY_BY_ISSUE["pr:" + p.key];
+        var polChip = pol ? " " + pmStatusChip(pol.status) : "";
+        return '<div class="cm-stancerow"><div class="cm-bhead"><a class="cm-label cm-agg-link" href="' + href + '" title="Read the record on ' + esc(p.label) + ' by issue">' + esc(p.label) + ' <span class="cm-agg-arrow" aria-hidden="true">→</span></a><span class="cm-n mono">' + p.total + "</span>" + polChip + "</div>" +
           '<div class="cm-stancebar" role="img" aria-label="' + esc(p.label) + ": " + p.support + " support, " + p.oppose + " oppose, " + p.mixed + " mixed, " + p.neutral + ' no position">' +
           seg("support", "sup") + seg("oppose", "opp") + seg("mixed", "mix") + seg("neutral", "neu") + "</div></div>";
       }).join("");
