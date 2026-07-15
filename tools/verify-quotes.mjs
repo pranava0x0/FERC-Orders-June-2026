@@ -38,7 +38,7 @@ function loadData() {
 
 // Same normalization the accuracy tests use: fold smart punctuation, expand §, strip inline OCR
 // footnote markers ("technologies154"), drop non-alphanumerics, lowercase.
-function loose(value) {
+export function loose(value) {
   return String(value)
     .replace(/[‘’]/g, "'")
     .replace(/[“”]/g, '"')
@@ -89,7 +89,7 @@ function carriesRun(run, normalizedSource) {
 
 // A quote may splice non-contiguous passages with an ellipsis ("post … data … and cost estimates").
 // Require EVERY substantial segment to appear in the source — stricter than checking the longest run.
-function carries(quote, normalizedSource) {
+export function carries(quote, normalizedSource) {
   const segments = String(quote)
     .split(/…|\.\.\./)
     .map((s) => s.trim())
@@ -99,11 +99,17 @@ function carries(quote, normalizedSource) {
 }
 
 // --- corpus ---------------------------------------------------------------
-const orderText = {}; // "E-7" -> normalized full text
-for (const file of readdirSync(join(ROOT, "sources", "text", "orders"))) {
-  const m = file.match(/^e-(\d+)-/);
-  if (m) orderText[`E-${m[1]}`] = loose(read("sources", "text", "orders", file));
+// "E-7" -> normalized full order text. Exported so sibling suites (the policy-map crosswalk test)
+// verify their own order quotes through the exact same sweep, not a re-implementation.
+export function loadOrderTexts() {
+  const out = {};
+  for (const file of readdirSync(join(ROOT, "sources", "text", "orders"))) {
+    const m = file.match(/^e-(\d+)-/);
+    if (m) out[`E-${m[1]}`] = loose(read("sources", "text", "orders", file));
+  }
+  return out;
 }
+const orderText = loadOrderTexts();
 const fercDoe = ["press-release", "fact-sheet", "summaries", "rm26-4", "doe-403-full"]
   .map((n) => loose(read("sources", "text", `${n}.txt`)))
   .join(" ¶ ");

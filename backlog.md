@@ -1,5 +1,22 @@
 # backlog.md
 
+- **done (2026-07-14) — spec phase C: record-to-rule crosswalk (`policyMap`) + policy-map landing + reader strip.**
+  Shipped the zero-inference crosswalk the spec sequences first. `docs/js/data.js` gains a hand-authored,
+  cite-backed `policyMap`: one row per canonical aq:/pr: issue (13) joining what DOE's ANOPR asked, what the
+  June 18 orders **did** (status `directed / briefed / resolved / silent` + a verbatim, page-cited order quote
+  reused from the verified directive corpus), and where it goes **next** on the §206 clock (vehicle + a
+  procedural-step id that flips Passed/Upcoming live + a Section IV `briefingId`). The By-issue reader gains a
+  "from record to rule" strip above the stance groups, and its empty landing pane is now the one-screen
+  **policy map** grid (issue · count · micro-stance · status chip · next-step date), each row deep-linking into
+  the reader; a bare `#comments/issue` restores the landing. Three visibly distinct honesty lanes (verbatim
+  order text with PDF/gov cites, curator status/note labeled "curator judgment," provisional micro-stance),
+  status chips are text+color with full-sentence `aria-label`, tag-not-CTA on mobile, no em-dashes.
+  New `tests/policy-map.test.mjs` (9 tests: every `did.q` verbatim via the shared quote sweep, `next.step`/
+  `briefingId` resolve to live surfaces, enums closed, silent rows carry cited SOURCES, every status seeded,
+  copy linted); `tools/verify-quotes.mjs` now exports `carries`/`loose`/`loadOrderTexts` so the crosswalk test
+  reuses the exact sweep. 81 tests pass; quote sweep clean; verified in-browser (desktop + 375px). **Not yet
+  built (needs go-ahead on the paid LLM run):** phase B option extraction (~$4–6 fan-out over 19 issues),
+  phase H camp profiles, phase A data debts (OCR + Haiku re-authors + topic canon), phases D-options/E/F/G.
 - **planned 2026-07-14 (HIGH) — policy-options layer + record-to-rule crosswalk: see [policy-analysis-spec.md](policy-analysis-spec.md).**
   The next comment-analysis increment, aimed at SMEs and regulatory experts: the current analysis stops at
   topic × stance (69% of bins read "support"), while ~1,200 concrete policy asks already sit extracted in the
