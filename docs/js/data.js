@@ -1118,5 +1118,104 @@ window.FERC_DATA = (function () {
     ],
   };
 
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, colocation, jurisdiction, regional, reception, media, voices, voiceThemes, comments, commissioners, briefing, participate, procedural };
+  // ---- Record-to-rule crosswalk (policy-analysis-spec.md Part 3.3) ----------------------------
+  // One row per canonical comment-period issue (the aq: ANOPR questions + the pr: reform principles).
+  // Joins four surfaces the site already holds: what DOE's ANOPR proposed (`anopr`, a curator paraphrase
+  // of categories[].doe / the ANOPR principle text), what the June 18 orders DID with it (`status` + a
+  // verbatim, page-cited order quote in `did`), and where it goes NEXT (`next`, joined live to the §206
+  // procedural clock and the Section IV briefing questions by id).
+  //
+  //   status  — directed : the orders direct a tariff change on it
+  //             briefed  : the live question is posed in Section IV (asked, not decided)
+  //             resolved : fixed in the E-2 co-location order
+  //             silent   : the orders do not direct anything on it; it stays open in RM26-4
+  //   did     — { q, order, pg } verbatim in sources/text/orders/<order>.txt (guarded by
+  //             tests/policy-map.test.mjs, the same sweep behind the directive quotes). Absent on `silent`.
+  //   next    — { vehicle, step?, briefingId? }; `step` is a procedural.steps id, `briefingId` a
+  //             briefing.questions id. `vehicle` ∈ compliance-filing | e2-paper-hearing | rm26-4-rule.
+  //   note    — curator judgment lane (labeled as such in the UI). `anopr` and `note` are curator prose,
+  //             not quotes; every `did.q` is verbatim. The rg: (region) lens gets no rows: regions are
+  //             venues, not policies. An issue with no row renders "not yet mapped," never a guessed status.
+  const policyMap = [
+    { issue: "aq:jurisdiction",
+      anopr: "Limit the reforms to interconnections made directly to transmission (the seven-factor test), so state authority over generation siting and retail rates is left untouched.",
+      status: "silent",
+      next: { vehicle: "rm26-4-rule" },
+      note: "The orders deliberately stop short of the ANOPR's broadest jurisdictional theory. They guard against cost-shifting among transmission customers and leave retail cost-shifting to the states, so the transmission-only limit is honored by restraint rather than written into any tariff.",
+      sources: ["fercFS", "doe403"] },
+    { issue: "aq:threshold",
+      anopr: "Apply the reforms to new loads above 20 MW; DOE asked whether that line is right, or needed at all.",
+      status: "silent",
+      next: { vehicle: "rm26-4-rule" },
+      note: "The orders set no uniform threshold. Each RTO defines large load its own way (SPP adopts its HILL definition; NYISO is directed to create one), so the 20 MW line DOE floated stays an open question in the rulemaking.",
+      sources: ["fercFS"] },
+    { issue: "aq:jointstudy",
+      anopr: "Study large loads and hybrid facilities together with their generation, to site them efficiently and cut network upgrades.",
+      status: "directed",
+      did: { q: "address the rates, terms, and conditions of service that apply to co-location arrangements", order: "E-9", pg: 21 },
+      next: { vehicle: "compliance-filing", step: "showcause" },
+      note: "Five orders direct each RTO to set co-location terms in its filing; the joint load-and-generation study DOE proposed is left to each RTO to design. PJM's is finalized in E-2." },
+    { issue: "aq:deposits",
+      anopr: "Standardize study deposits, readiness requirements, and withdrawal penalties to deter speculative requests.",
+      status: "directed",
+      did: { q: "it lacks a definition of large load, as a new category of load", order: "E-12", pg: 41 },
+      next: { vehicle: "compliance-filing", step: "showcause" },
+      note: "Readiness and anti-speculation requirements ride on the study-process reform. NYISO is directed to define large load as a category with readiness requirements; the others fold deposits and penalties into their study procedures." },
+    { issue: "aq:hybridrights",
+      anopr: "Study hybrid load-plus-generation facilities by the injection and withdrawal rights they request.",
+      status: "directed",
+      did: { q: "transmission services that reflect Eligible Customers taking transmission service on behalf of co-located loads, load with behind the meter generation, and flexible large loads", order: "E-8", pg: 7 },
+      next: { vehicle: "compliance-filing", step: "showcause" },
+      note: "The orders direct co-location and behind-the-meter services but do not prescribe DOE's injection and withdrawal-rights study; each RTO proposes how hybrids are studied and metered in its filing." },
+    { issue: "aq:protection",
+      anopr: "Require hybrids to install system-protection facilities that block injections or withdrawals beyond their granted rights.",
+      status: "silent",
+      next: { vehicle: "rm26-4-rule" },
+      note: "No order directs the system-protection equipment DOE proposed to enforce injection and withdrawal limits. It is the most granular co-location mechanic and stays with each RTO's design and the open rulemaking.",
+      sources: ["doe403"] },
+    { issue: "aq:expedited",
+      anopr: "Fast-track the study of loads and hybrids that agree to be curtailable and dispatchable; DOE asked whether such studies could finish in 60 days.",
+      status: "directed",
+      did: { q: "transmission services that reflect Eligible Customers taking transmission service on behalf of flexible large loads that are willing and able to limit their use of the transmission system", order: "E-7", pg: 56 },
+      next: { vehicle: "compliance-filing", step: "showcause", briefingId: "planning" },
+      note: "The orders direct new services that reward curtailable load, the speed-to-power lever. DOE's 60-day study target stays an open question the filings may answer." },
+    { issue: "aq:upgradecost",
+      anopr: "Make large loads pay 100% of the network upgrades they trigger; DOE left crediting those payments over a term an open question.",
+      status: "directed",
+      did: { q: "establish a mechanism to ensure such payments are appropriately credited toward transmission owners’ transmission revenue requirements", order: "E-9", pg: 21 },
+      next: { vehicle: "compliance-filing", step: "showcause", briefingId: "costshift" },
+      note: "Cost responsibility runs through the pro forma cost-recovery agreement. SPP is directed to build the crediting mechanism DOE flagged; for the others crediting stays an open design question." },
+    { issue: "pr:study",
+      anopr: "Build an efficient, non-discriminatory application and study process, and evaluate alternative transmission technologies before defaulting to conventional network upgrades.",
+      status: "directed",
+      did: { q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", order: "E-7", pg: 7 },
+      next: { vehicle: "compliance-filing", step: "showcause", briefingId: "att" },
+      note: "Every order directs a defined large-load study path. Whether the tariff must require evaluating alternative transmission technologies first is posed as a Section IV briefing question." },
+    { issue: "pr:cost",
+      anopr: "Prevent cost-shifting and require transparency into how network-upgrade costs are identified, allocated, and recovered.",
+      status: "directed",
+      did: { q: "a pro forma cost recovery agreement between PJM, the relevant transmission owner, and Eligible Customer … to mitigate the risk of cost shifting among transmission customers", order: "E-7", pg: 28 },
+      next: { vehicle: "compliance-filing", step: "showcause", briefingId: "costshift" },
+      note: "The orders direct a pro forma cost-recovery agreement and cost transparency. The design of cost-shift protections, including a minimum level of cost recovery and financial security, is posed as a Section IV briefing question." },
+    { issue: "pr:colo",
+      anopr: "Accommodate co-location and behind-the-meter generation with clear terms for loads sited at or near their own generation.",
+      status: "resolved",
+      did: { q: "we establish as just and reasonable certain rates, terms, and conditions for the new transmission services directed in the December Order", order: "E-2", pg: 5 },
+      next: { vehicle: "e2-paper-hearing", step: "showcause" },
+      note: "PJM's co-location framework is finalized in E-2, which sets the rates for Interim NITS and Firm and Non-Firm Contract Demand. The other five orders direct each RTO to address co-location in its own filing." },
+    { issue: "pr:flex",
+      anopr: "Provide new transmission services for flexible large loads that are willing to curtail, and study whether their interconnection can be expedited.",
+      status: "directed",
+      did: { q: "transmission services that reflect Eligible Customers taking transmission service on behalf of flexible large loads that are willing and able to limit their use of the transmission system", order: "E-7", pg: 56 },
+      next: { vehicle: "compliance-filing", step: "showcause", briefingId: "planning" },
+      note: "The orders direct services that reward flexibility. Their effect on regional and local transmission planning is posed as a Section IV briefing question." },
+    { issue: "pr:proximate",
+      anopr: "Create a process to study generation serving electrically proximate or co-located loads, with an SSR/RMR-type reliability review.",
+      status: "briefed",
+      did: { q: "the rates, terms, and conditions of service applicable to interconnection customers serving electrically proximate large load or co-located load", order: "E-11", pg: 7 },
+      next: { vehicle: "compliance-filing", step: "showcause", briefingId: "proximate" },
+      note: "The orders direct a study process for proximate generation. Whether such a generator can join the RTO's energy, ancillary, and capacity markets, and how it is accredited, is posed as a Section IV briefing question." },
+  ];
+
+  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, colocation, jurisdiction, regional, reception, media, voices, voiceThemes, comments, commissioners, briefing, participate, procedural, policyMap };
 })();

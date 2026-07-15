@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260710d";
+  var ASSET_VER = "20260714a";
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -118,6 +118,96 @@
       '<ol class="proc-board">' + rows + "</ol>" +
       '<p class="proc-foot">Dates are derived from the ' + esc(P.issuedLabel) +
       " issuance, business-day-adjusted; status reflects today’s date, not confirmed eLibrary filings. Confirm each deadline in the order before relying on it.</p>";
+  }
+
+  // ---- Record-to-rule crosswalk (data.js → policyMap; policy-analysis-spec.md Part 4.1) ----------
+  // Curator-judgment lane joining four surfaces the site already holds: what DOE's ANOPR asked, what
+  // the June 18 orders DID (verbatim, page-cited), and where it goes NEXT on the §206 clock. Rendered as
+  // a strip atop each By-issue read and as the reader's landing grid. Every did.q is verified by
+  // tests/policy-map.test.mjs, so these quotes carry the same guarantee as the docket directives.
+  var ORDER_BY_ITEM = {};
+  (D.dockets || []).forEach(function (d) { ORDER_BY_ITEM[d.item] = d; });
+  if (D.colocation) ORDER_BY_ITEM[D.colocation.item] = D.colocation;
+  var POLICY_BY_ISSUE = {};
+  (D.policyMap || []).forEach(function (r) { POLICY_BY_ISSUE[r.issue] = r; });
+
+  var PM_STATUS = {
+    directed: { lbl: "Directed", sentence: "Directed: the June 18 orders direct a tariff change on this." },
+    briefed: { lbl: "Posed as a question", sentence: "Posed as a Section IV briefing question: asked, not decided." },
+    resolved: { lbl: "Resolved in E-2", sentence: "Resolved in the E-2 co-location order." },
+    silent: { lbl: "Not addressed", sentence: "Not addressed by the orders; it stays open in the RM26-4 rulemaking." },
+  };
+  var PM_VEHICLE = {
+    "compliance-filing": "Show-cause / tariff filing",
+    "e2-paper-hearing": "E-2 compliance & paper hearing",
+    "rm26-4-rule": "Open in the RM26-4 rulemaking",
+  };
+
+  function pmStatusChip(status) {
+    var m = PM_STATUS[status] || { lbl: status, sentence: status };
+    return '<span class="cm-pm-chip cm-pm-' + status + '" role="img" aria-label="' + esc(m.sentence) + '">' + esc(m.lbl) + "</span>";
+  }
+
+  // Look up a next.step on the live clock so the chip flips Passed/Upcoming automatically (same
+  // today-comparison as the procedural board). Returns "" when the step carries no fixed date.
+  function pmStepWhen(stepId) {
+    if (!stepId) return null;
+    var ps = procStatus();
+    var hit = ps && ps.steps.filter(function (x) { return x.s.id === stepId; })[0];
+    if (!hit || !hit.date) return null;
+    return { when: fmtISO(hit.s.date), flag: hit.status === "past" ? "Passed" : "Upcoming" };
+  }
+
+  function pmNextChip(next) {
+    if (!next) return "";
+    var label = PM_VEHICLE[next.vehicle] || next.vehicle;
+    var w = pmStepWhen(next.step);
+    var dateBit = w ? ' <span class="cm-pm-when mono">' + esc(w.when) + " · " + w.flag + "</span>" : "";
+    return '<span class="cm-pm-nextchip"><span class="cm-pm-next-lbl">Next</span> ' + esc(label) + dateBit + "</span>";
+  }
+
+  // Compact next label for the landing grid's last column.
+  function pmNextShort(next) {
+    if (!next) return "";
+    var w = pmStepWhen(next.step);
+    if (w) return w.when;
+    if (next.vehicle === "rm26-4-rule") return "RM26-4";
+    return PM_VEHICLE[next.vehicle] || next.vehicle;
+  }
+
+  function pmDidCite(row) {
+    var ord = ORDER_BY_ITEM[row.did.order];
+    var pg = row.did.pg;
+    if (!ord) return '<span class="dir-para mono">' + esc(row.did.order) + " · p. " + pg + "</span>";
+    var so = D.SOURCES[ord.url];
+    var links = '<a class="cite-link" href="' + esc(ord.pdf) + "#page=" + pg +
+      '" target="_blank" rel="noopener noreferrer" aria-label="Open the committed ' + esc(row.did.order) +
+      " order PDF at page " + pg + '">PDF <span class="ext" aria-hidden="true">↗</span></a>';
+    if (so) links += '<a class="cite-link" href="' + esc(so.url) + "#page=" + pg +
+      '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov ' + esc(row.did.order) +
+      " order at page " + pg + '">gov <span class="ext" aria-hidden="true">↗</span></a>';
+    return '<span class="cm-pm-cite"><span class="dir-para mono">' + esc(row.did.order) + " · p. " + pg + "</span>" + links + "</span>";
+  }
+
+  // The "from record to rule" strip: rendered above the stance groups when an issue has a crosswalk row.
+  function pmStrip(row) {
+    if (!row) return "";
+    var didLine = row.did
+      ? '<div class="cm-pm-didline"><span class="cm-pm-quote">“' + esc(row.did.q) + '”</span>' + pmDidCite(row) + "</div>"
+      : "";
+    var briefBit = "";
+    if (row.next && row.next.briefingId && D.briefing) {
+      var q = (D.briefing.questions || []).filter(function (x) { return x.id === row.next.briefingId; })[0];
+      if (q) briefBit = '<span class="cm-pm-brief">Briefs the “' + esc(q.t) + '” question (§ IV)</span>';
+    }
+    return '<section class="cm-pm-strip" aria-label="From record to rule">' +
+      '<div class="cm-pm-head"><span class="cm-pm-kicker">From record to rule</span>' + pmStatusChip(row.status) + "</div>" +
+      '<div class="cm-pm-anopr"><span class="cm-pm-lbl">DOE ANOPR asked</span> ' + esc(row.anopr) + "</div>" +
+      didLine +
+      '<div class="cm-pm-forward">' + pmNextChip(row.next) + briefBit + "</div>" +
+      '<p class="cm-pm-note"><span class="cm-pm-lbl">Curator’s read</span> ' + esc(row.note) + "</p>" +
+      '<p class="cm-pm-foot">Curator judgment. Status reflects what the June 18 orders did, never a forecast.</p>' +
+      "</section>";
   }
 
   /* ---- TAB: Overview (stats + at-a-glance + background) ---- */
@@ -663,11 +753,33 @@
       return '<section class="cm-issue-group"><h3 class="cm-issue-group-h">' + esc(ISSUE_GROUP[ns]) +
         '</h3><ul class="cm-issue-outline-list">' + lis + "</ul></section>";
     }).join("");
+
+    // Reader landing = the policy map. One row per crosswalk issue: what the orders did with it and where
+    // it goes next. This is the strategic read (what is decided, directed, asked, ignored) an SME otherwise
+    // assembles by hand across four tabs. Rows deep-link into the reader (reusing the .cm-issue-link handler).
+    var issuesByKey = {};
+    (CM.issues || []).forEach(function (i) { issuesByKey[i.key] = i; });
+    var pmGridRows = (D.policyMap || []).map(function (r) {
+      var it = issuesByKey[r.issue];
+      if (!it) return "";
+      return '<button type="button" class="cm-issue-link cm-pm-gridrow" data-issue="' + esc(it.key) + '" data-slug="' + esc(it.slug) +
+        '" title="' + esc(it.name + " — " + PM_STATUS[r.status].lbl) + '">' +
+        '<span class="cm-pm-gname">' + esc(it.name) + "</span>" +
+        '<span class="cm-pm-gcount mono">' + it.count + "</span>" +
+        microStance(it.stances) +
+        pmStatusChip(r.status) +
+        '<span class="cm-pm-gnext mono">' + esc(pmNextShort(r.next)) + "</span></button>";
+    }).join("");
+    var policyMapLanding = D.policyMap && D.policyMap.length
+      ? '<div class="cm-pm-landing"><h3 class="cm-pm-landing-h">The policy map: from the record to the rule</h3>' +
+        '<p class="cm-pm-landing-lede">Each comment-period issue, what the June 18 orders did with it, and where it goes next on the §206 clock. Pick a row to read the record behind it. <span class="cm-pm-lane">Curator’s read, cite-checked; issues the curator has not yet mapped are absent.</span></p>' +
+        '<div class="cm-pm-grid">' + pmGridRows + "</div></div>"
+      : '<p class="cm-issue-hint">Pick an issue on the left to read the whole record on it: every filer’s position, grouped by stance, with the quotes behind each.</p>';
     var secIssue = '<section class="cm-sec" id="cmsec-issue" role="tabpanel" aria-labelledby="cmsub-issue" hidden>' +
       head("Read the record by issue",
         "Pick a question, principle, region, or recurring topic and read every letter’s position on it, grouped by where the filer stands, with the verbatim quotes behind each. Positions are AI-audited and provisional, traceable to the quotes; organizations only.") +
       '<div class="cm-issues"><nav class="cm-issue-outline" aria-label="Issue outline">' + issueOutlineHtml + "</nav>" +
-      '<div class="cm-issue-reader" id="cm-issue-reader" aria-live="polite"><p class="cm-issue-hint">Pick an issue on the left to read the whole record on it: every filer’s position, grouped by stance, with the quotes behind each.</p></div></div></section>';
+      '<div class="cm-issue-reader" id="cm-issue-reader" aria-live="polite">' + policyMapLanding + "</div></div></section>";
 
     var secOverview = '<section class="cm-sec" id="cmsec-overview" role="tabpanel" aria-labelledby="cmsub-overview">' +
       head("The RM26-4 comment period",
@@ -896,6 +1008,16 @@
     var issueCache = {};
     var issueByKey = {};
     (CM.issues || []).forEach(function (i) { issueByKey[i.key] = i; });
+    // The reader's initial content is the policy-map landing; cache the node so a route back to a bare
+    // #comments/issue (no id) restores it instead of leaving the last-read issue in place. Clone-based
+    // (not innerHTML) so it stays a trusted DOM copy, and the delegated .cm-issue-link handler still fires.
+    var readerBox0 = document.getElementById("cm-issue-reader");
+    var issueLandingNode = readerBox0 && readerBox0.firstElementChild ? readerBox0.firstElementChild.cloneNode(true) : null;
+    var showIssueLanding = function () {
+      var box = document.getElementById("cm-issue-reader");
+      if (box && issueLandingNode) { box.replaceChildren(issueLandingNode.cloneNode(true)); box.setAttribute("aria-busy", "false"); }
+      markActiveIssue(null);
+    };
     var issueLetterRow = function (l) {
       var st = stanceClass(l.stance);
       var quotes = (l.quotes || []).map(function (q, i) {
@@ -928,7 +1050,7 @@
       var html = '<div class="cm-issue-readhead"><h3 class="cm-issue-readtitle">' + esc(d.name) + "</h3>" +
         (d.desc ? '<p class="cm-issue-readdesc">' + esc(d.desc) + "</p>" : "") +
         '<p class="cm-issue-readmeta mono">' + s.total + " audited " + (s.total === 1 ? "letter" : "letters") + " engage this issue</p>" +
-        splitBar + "</div>" + groups;
+        splitBar + "</div>" + pmStrip(POLICY_BY_ISSUE[d.key]) + groups;
       box.innerHTML = html;
       box.setAttribute("aria-busy", "false");
     };
@@ -987,6 +1109,8 @@
         showSub(sub, false);
         var pr = state.params || {};
         if (sub === "issue" && pr.id) selectIssue(pr.id, null, false);
+        // a bare #comments/issue is the policy-map landing: restore it if a prior read replaced it
+        else if (sub === "issue") { showIssueLanding(); writeCommentsHash({ sub: "issue" }); }
         // the URL is authoritative for the All-comments filter: apply f/q, or clear it when absent
         else if (sub === "summaries") { setFilterState(pr.f, pr.q); syncFilterHash(); }
         else writeCommentsHash({ sub: sub });
