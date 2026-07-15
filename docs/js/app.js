@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260714c";
+  var ASSET_VER = "20260715a";
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -241,7 +241,7 @@
       didLine +
       '<div class="cm-pm-forward">' + pmNextChip(row.next) + briefBit + "</div>" +
       '<p class="cm-pm-note"><span class="cm-pm-lbl">Curator’s read</span> ' + esc(row.note) + "</p>" +
-      '<p class="cm-pm-foot">Curator judgment. Status reflects what the June 18 orders did, never a forecast.</p>' +
+      '<p class="cm-pm-foot">Curator judgment. It reports what the June 18 orders did; it does not forecast what comes next.</p>' +
       "</section>";
   }
 
