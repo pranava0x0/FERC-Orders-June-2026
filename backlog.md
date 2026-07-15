@@ -1,6 +1,51 @@
 # backlog.md
 
-- **planned 2026-07-09 — comment-flow + persona UX overhaul: see [ux-improvement-plan.md](ux-improvement-plan.md).**
+- **done (2026-07-14) — spec phase C: record-to-rule crosswalk (`policyMap`) + policy-map landing + reader strip.**
+  Shipped the zero-inference crosswalk the spec sequences first. `docs/js/data.js` gains a hand-authored,
+  cite-backed `policyMap`: one row per canonical aq:/pr: issue (13) joining what DOE's ANOPR asked, what the
+  June 18 orders **did** (status `directed / briefed / resolved / silent` + a verbatim, page-cited order quote
+  reused from the verified directive corpus), and where it goes **next** on the §206 clock (vehicle + a
+  procedural-step id that flips Passed/Upcoming live + a Section IV `briefingId`). The By-issue reader gains a
+  "from record to rule" strip above the stance groups, and its empty landing pane is now the one-screen
+  **policy map** grid (issue · count · micro-stance · status chip · next-step date), each row deep-linking into
+  the reader; a bare `#comments/issue` restores the landing. Three visibly distinct honesty lanes (verbatim
+  order text with PDF/gov cites, curator status/note labeled "curator judgment," provisional micro-stance),
+  status chips are text+color with full-sentence `aria-label`, tag-not-CTA on mobile, no em-dashes.
+  New `tests/policy-map.test.mjs` (9 tests: every `did.q` verbatim via the shared quote sweep, `next.step`/
+  `briefingId` resolve to live surfaces, enums closed, silent rows carry cited SOURCES, every status seeded,
+  copy linted); `tools/verify-quotes.mjs` now exports `carries`/`loose`/`loadOrderTexts` so the crosswalk test
+  reuses the exact sweep. Also shipped the zero-cost §4.2 cross-links that make the other tabs policy-aware:
+  the Overview stance bars and the Reforms category cards carry the status chip inline + deep-link into the
+  record; the procedural board's show-cause step shows "10 record issues land here →"; and each Section IV
+  briefing question links to "what the record says →" (join = `policyMap.next.briefingId`, preferring the pr:
+  reform issue). Then UAT (findability / navigation / clicks) surfaced two gaps, both fixed (`8d78b94`):
+  a "The policy map" callout in the Comments overview (the map was two clicks deep with no signpost), and
+  a "← Policy map" back link out of the issue reader. 81 tests pass; quote sweep clean; verified in-browser
+  (desktop + 375px). **Not yet built (runs on subscription tokens — no separate $ cost — so size to the
+  session budget, small resumable chunks, report spend, pause for go-ahead; do NOT frame as paid API):**
+  phase B option extraction (fan-out over 19 issues, the token-heavy piece), phase H camp profiles, phase A
+  data debts (OCR + re-authors + topic canon), phases D-options/E/F/G.
+- **idea (2026-07-14, LOW) — let the "from record to rule" strip collapse.** UAT: the strip is always
+  expanded (~260px, ~0.3 viewport) above the stance groups, so a reader who just wants the letters scrolls
+  past it every time. It is intentionally the expert's first read, but a remembered collapse toggle (or
+  auto-collapse on repeat visits within a session) would cut scroll for browse-heavy use. Low priority.
+- **planned 2026-07-14 (HIGH) — policy-options layer + record-to-rule crosswalk: see [policy-analysis-spec.md](policy-analysis-spec.md).**
+  The next comment-analysis increment, aimed at SMEs and regulatory experts: the current analysis stops at
+  topic × stance (69% of bins read "support"), while ~1,200 concrete policy asks already sit extracted in the
+  summaries-v2 quotes with no surface. The spec: (B) cluster each issue's quotes into auditable **policy
+  options** (proposal / condition / objection, backers by camp, implementation vehicle) with deterministic
+  validators and a gated audit; (C) a hand-authored, cite-backed **policyMap crosswalk** per issue — what DOE
+  proposed, what the record said, what the June 18 orders did (directed / briefed / resolved in E-2 / silent,
+  verbatim order quote + page), and where it can still land (Aug 17 show-cause filings, Section IV briefs,
+  E-2 paper hearing, RM26-4); (D) the By-issue reader gains a "from record to rule" strip + "what's on the
+  table" option cards, and its empty landing pane becomes the one-screen **policy map**; (H) **camp profiles**
+  per stakeholder bucket — computed footprint, "in their words, what's at stake" (own-quotes only), and a
+  curator industry-context line, plus a camp filter in the reader — so respondent-type impact is a surface,
+  not a reader exercise. Also: normalize the 673-slug emergent-topic tail behind a committed canon. Quality
+  bar binding throughout (2026-07-14): cite accuracy, auditability, quote-in-context fidelity (extraction
+  always carries the letter's own framing), descriptive option names, three visibly distinct lanes. Start
+  with phase C (curator-only, zero LLM). Upgrades rather than duplicates the ux-plan roadmap: absorbs P1
+  #10a, replaces P2 #11, extends P1 #6; P1 #10 (OCR + Haiku re-author) becomes its gating phase A.
   Sequences and supersedes several open items below (issue-outline navigation, multi-select token filter,
   procedural status board, Discourse freshness filter, comments-tool benchmark ideas) into one prioritized
   P0/P1/P2 roadmap with specs. Work those items from the plan, not from their older entries here.
