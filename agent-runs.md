@@ -1,9 +1,13 @@
 # agent-runs.md — subagent / workflow run history + evaluation
 
-Append-only log of the AI subagent and workflow runs used to build this project, with an
-accuracy and token-efficiency assessment. Stats are taken verbatim from each run's completion
-notification (`usage` block). Tokens = subagent output tokens (the figure the runtime reports);
-they do not include the main-loop orchestration tokens.
+Append-only log of the AI runs used to build this project, with an accuracy and token-efficiency
+assessment. Two parts: **subagent / workflow runs** (§ Runs, stats taken verbatim from each run's
+completion `usage` block — tokens = subagent output tokens, excluding main-loop orchestration), and
+**main-loop sessions** (§ below) where the work was done inline with no fan-out. **Log every session
+here going forward** (see CLAUDE.md → "Working with AI agents"): a one-row entry plus a short
+efficiency note, so the token/agent-use audit trail stays continuous. Exact main-loop token totals are
+not self-observable mid-session, so those rows report tool-call counts + a qualitative read, not a
+token figure.
 
 ## Runs
 
@@ -138,3 +142,45 @@ Net: **268/268 summaries written and valid** (corpus complete). The full run cos
 of model**, which spanned **two 5-hour budget windows** — it could not finish in one, exactly as predicted,
 so it ran in small checkpointed chunks (commit-per-chunk), survived two session-limit hits with zero data
 loss (the self-healing worklist re-queued every unfinished comment), and was wired into the Comments tab.
+
+---
+
+## Main-loop sessions (inline work, no subagents)
+
+| # | Date | Task | Subagents | Approx. tool calls | Outcome |
+|---|------|------|:---------:|-------------------:|---------|
+| S1 | 2026-07-14 | Implement policy-analysis-spec phase C: record-to-rule crosswalk (`policyMap`) + landing + reader strip + §4.2 cross-links + UAT fixes | 0 | ~110 (Bash ~24, Read ~10, Edit ~18, Write 1, Browser ~55, AskUserQuestion 1) | ✅ 4 commits, 81 tests pass, quote sweep clean, verified in-browser desktop + 375px |
+
+### Session S1 evaluation (2026-07-14)
+
+**Shape — inline was the right call.** The task was a focused, sequential explore→edit→verify loop over
+a known codebase, not an open-ended search or a fan-out. Per CLAUDE.md ("inline before subagent"), zero
+subagents was correct: a fan-out would have paid ~25–40K/agent of orchestration for work one context
+holds comfortably. No workflow, no Task tool.
+
+**What was efficient.**
+- **Reused the audited substrate instead of re-deriving.** Every crosswalk `did.q` was sourced from the
+  already-verified `dockets[].dir` quotes, so `tests/policy-map.test.mjs` passed first try with no
+  quote-hunting loop against the 300 KB order texts. The spec's "the quotes are the audited substrate"
+  principle paid off directly.
+- **Targeted exploration.** Read the spec, then only the structures the authoring needed (data.js
+  briefing/procedural/dockets sections, the issue index, the route, the reader) — grep/section reads,
+  not whole-file or broad sweeps. Extended the existing quote-sweep (`verify-quotes.mjs` exports) rather
+  than duplicating normalization.
+- **Caught two real defects during verification, not after shipping:** the landing-restore gap (bare
+  `#comments/issue` kept the last issue) and the `planning` Section IV question mis-routing to
+  `aq:expedited` instead of `pr:flex`. Both fixed before the relevant commit.
+
+**Where tokens/tool-calls were wasted (the lever for next time).**
+- **Browser-verification churn was the single biggest inefficiency (~55 of ~110 calls).** Two causes:
+  (1) the static `python -m http.server` preview **exited between turns**, returning a blank page and a
+  stale `serverId` — cost a detour to diagnose + restart; (2) after editing `app.js` I queried the DOM
+  before the tab had picked up the new `ASSET_VER`, so I re-verified against **stale JS** more than once,
+  and hit ~4 blank screenshots from a post-restart repaint/viewport-height-0 state.
+  **Fixes for next session:** after editing front-end code, hard-reload once and confirm the new asset
+  version is live *before* asserting behavior; if a browser result looks stale or blank, `preview_list`
+  first (the server may have died) rather than re-querying; prefer DOM text assertions (`javascript_tool`)
+  over screenshots for logic checks — screenshots were the flakiest calls this session.
+- **Net:** accuracy high (nothing shipped broken, tests + sweep green), efficiency good on the authoring
+  half and mediocre on the verification half — all of the drag was browser-harness friction, none of it
+  model reasoning.
