@@ -9,10 +9,14 @@
   proposed, what the record said, what the June 18 orders did (directed / briefed / resolved in E-2 / silent,
   verbatim order quote + page), and where it can still land (Aug 17 show-cause filings, Section IV briefs,
   E-2 paper hearing, RM26-4); (D) the By-issue reader gains a "from record to rule" strip + "what's on the
-  table" option cards, and its empty landing pane becomes the one-screen **policy map**. Also: normalize the
-  673-slug emergent-topic tail behind a committed canon. Start with phase C (curator-only, zero LLM). Upgrades
-  rather than duplicates the ux-plan roadmap: absorbs P1 #10a, replaces P2 #11; P1 #10 (OCR + Haiku re-author)
-  becomes its gating phase A.
+  table" option cards, and its empty landing pane becomes the one-screen **policy map**; (H) **camp profiles**
+  per stakeholder bucket — computed footprint, "in their words, what's at stake" (own-quotes only), and a
+  curator industry-context line, plus a camp filter in the reader — so respondent-type impact is a surface,
+  not a reader exercise. Also: normalize the 673-slug emergent-topic tail behind a committed canon. Quality
+  bar binding throughout (2026-07-14): cite accuracy, auditability, quote-in-context fidelity (extraction
+  always carries the letter's own framing), descriptive option names, three visibly distinct lanes. Start
+  with phase C (curator-only, zero LLM). Upgrades rather than duplicates the ux-plan roadmap: absorbs P1
+  #10a, replaces P2 #11, extends P1 #6; P1 #10 (OCR + Haiku re-author) becomes its gating phase A.
   Sequences and supersedes several open items below (issue-outline navigation, multi-select token filter,
   procedural status board, Discourse freshness filter, comments-tool benchmark ideas) into one prioritized
   P0/P1/P2 roadmap with specs. Work those items from the plan, not from their older entries here.
