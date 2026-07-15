@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260714b";
+  var ASSET_VER = "20260714c";
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -825,6 +825,11 @@
       head("The RM26-4 comment period",
         CM.total + " comments were filed on DOE's large-load ANOPR (Docket RM26-4-000) between " + fmtD(CM.dateRange.first) + " and " + fmtD(CM.dateRange.last) +
         ", scraped from FERC eLibrary on " + CM.captured + ". Where commenters land and which camps agree is below; the whole record, by issue or by filer, is on the By-issue and All-comments tabs.") +
+      (D.policyMap && D.policyMap.length
+        ? '<a class="cm-pm-promo" href="#' + window.CommentsRoute.serialize({ sub: "issue" }) + '">' +
+          '<span class="cm-pm-promo-k">The policy map</span>' +
+          '<span class="cm-pm-promo-t">See what the June 18 orders did with each issue, and where it goes next on the §206 clock <span aria-hidden="true">→</span></span></a>'
+        : "") +
       statRow + coverageLine + rounds +
       head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position; read from the filer's own words. Across " + CM.summarized2 + " audited filings. Follow a principle to read the record on it.") + stanceBars +
       head("Where each stakeholder type stands", "The same audited stances, split by camp: each cell is a stakeholder type's net position on one reform (support minus oppose), the number its audited letters engaging it. Support is broad; the friction shows where cells turn amber (contested). Top twelve camps by engagement. Open a cell to read that reform by issue.") + consensusMap +
@@ -1087,7 +1092,11 @@
         return '<section class="cm-issue-stancegroup ' + g.k + '"><h4 class="cm-issue-stancegroup-h">' + esc(g.label) +
           ' <span class="mono">' + ls.length + "</span></h4>" + ls.map(issueLetterRow).join("") + "</section>";
       }).join("");
-      var html = '<div class="cm-issue-readhead"><h3 class="cm-issue-readtitle">' + esc(d.name) + "</h3>" +
+      // back to the policy-map landing — the reader is a drill-down, so give it an explicit way out
+      var backLink = (D.policyMap && D.policyMap.length)
+        ? '<a class="cm-issue-back" href="#' + window.CommentsRoute.serialize({ sub: "issue" }) + '"><span aria-hidden="true">←</span> Policy map</a>'
+        : "";
+      var html = '<div class="cm-issue-readhead">' + backLink + '<h3 class="cm-issue-readtitle">' + esc(d.name) + "</h3>" +
         (d.desc ? '<p class="cm-issue-readdesc">' + esc(d.desc) + "</p>" : "") +
         '<p class="cm-issue-readmeta mono">' + s.total + " audited " + (s.total === 1 ? "letter" : "letters") + " engage this issue</p>" +
         splitBar + "</div>" + pmStrip(POLICY_BY_ISSUE[d.key]) + groups;

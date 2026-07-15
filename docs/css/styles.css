@@ -658,6 +658,18 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
   .cm-pm-gnext { grid-column: 2; align-self: center; }
 }
 
+/* Findability: a callout in the Comments overview pointing at the policy map (the highest-value view,
+   otherwise two clicks deep under By issue), and a back link out of the drill-down reader. */
+.cm-pm-promo { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin: 12px 0; padding: 11px 14px; background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--accent); border-radius: 6px; text-decoration: none; color: var(--ink); }
+.cm-pm-promo:hover { background: #eef3f9; border-color: var(--rule-strong); border-left-color: var(--accent); }
+.cm-pm-promo:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.cm-pm-promo-k { font-size: 10.5px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); flex: none; }
+.cm-pm-promo-t { font-size: 13px; line-height: 1.4; color: #2b3744; }
+.cm-issue-back { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 600; color: var(--accent); text-decoration: none; margin-bottom: 6px; }
+.cm-issue-back:hover { text-decoration: underline; }
+.cm-issue-back:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (pointer: coarse) { .cm-issue-back { min-height: 44px; } }
+
 /* Crosswalk cross-links surfaced on the other tabs (Overview stance bars, Reforms cards, Section IV
    questions, the procedural board) — the clock and the aggregates become policy-aware. */
 .cm-bhead .cm-pm-chip { margin-left: 6px; vertical-align: middle; }
