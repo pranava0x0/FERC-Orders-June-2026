@@ -1,6 +1,18 @@
 # backlog.md
 
-- **planned 2026-07-09 — comment-flow + persona UX overhaul: see [ux-improvement-plan.md](ux-improvement-plan.md).**
+- **planned 2026-07-14 (HIGH) — policy-options layer + record-to-rule crosswalk: see [policy-analysis-spec.md](policy-analysis-spec.md).**
+  The next comment-analysis increment, aimed at SMEs and regulatory experts: the current analysis stops at
+  topic × stance (69% of bins read "support"), while ~1,200 concrete policy asks already sit extracted in the
+  summaries-v2 quotes with no surface. The spec: (B) cluster each issue's quotes into auditable **policy
+  options** (proposal / condition / objection, backers by camp, implementation vehicle) with deterministic
+  validators and a gated audit; (C) a hand-authored, cite-backed **policyMap crosswalk** per issue — what DOE
+  proposed, what the record said, what the June 18 orders did (directed / briefed / resolved in E-2 / silent,
+  verbatim order quote + page), and where it can still land (Aug 17 show-cause filings, Section IV briefs,
+  E-2 paper hearing, RM26-4); (D) the By-issue reader gains a "from record to rule" strip + "what's on the
+  table" option cards, and its empty landing pane becomes the one-screen **policy map**. Also: normalize the
+  673-slug emergent-topic tail behind a committed canon. Start with phase C (curator-only, zero LLM). Upgrades
+  rather than duplicates the ux-plan roadmap: absorbs P1 #10a, replaces P2 #11; P1 #10 (OCR + Haiku re-author)
+  becomes its gating phase A.
   Sequences and supersedes several open items below (issue-outline navigation, multi-select token filter,
   procedural status board, Discourse freshness filter, comments-tool benchmark ideas) into one prioritized
   P0/P1/P2 roadmap with specs. Work those items from the plan, not from their older entries here.
