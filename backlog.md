@@ -14,7 +14,11 @@
   New `tests/policy-map.test.mjs` (9 tests: every `did.q` verbatim via the shared quote sweep, `next.step`/
   `briefingId` resolve to live surfaces, enums closed, silent rows carry cited SOURCES, every status seeded,
   copy linted); `tools/verify-quotes.mjs` now exports `carries`/`loose`/`loadOrderTexts` so the crosswalk test
-  reuses the exact sweep. 81 tests pass; quote sweep clean; verified in-browser (desktop + 375px). **Not yet
+  reuses the exact sweep. Also shipped the zero-cost §4.2 cross-links that make the other tabs policy-aware:
+  the Overview stance bars and the Reforms category cards carry the status chip inline + deep-link into the
+  record; the procedural board's show-cause step shows "10 record issues land here →"; and each Section IV
+  briefing question links to "what the record says →" (join = `policyMap.next.briefingId`, preferring the pr:
+  reform issue). 81 tests pass; quote sweep clean; verified in-browser (desktop + 375px). **Not yet
   built (needs go-ahead on the paid LLM run):** phase B option extraction (~$4–6 fan-out over 19 issues),
   phase H camp profiles, phase A data debts (OCR + Haiku re-authors + topic canon), phases D-options/E/F/G.
 - **planned 2026-07-14 (HIGH) — policy-options layer + record-to-rule crosswalk: see [policy-analysis-spec.md](policy-analysis-spec.md).**
