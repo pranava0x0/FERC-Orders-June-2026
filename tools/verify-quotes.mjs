@@ -118,6 +118,11 @@ const wholeCorpus = `${allOrders} ¶ ${fercDoe}`;
 
 const evidence = JSON.parse(read("sources", "voices-evidence.json"));
 const evidenceText = loose(Object.values(evidence.voices).map((v) => v.evidence).join(" ¶ "));
+// News-refresh captures (news-tracks-plan.md). Timeline event bodies quote named speakers at the AD26-7
+// conference and on RTO channels; those quotes live off the order corpus, so they need their own capture
+// file or they would ship unswept. Union with the corpus: a timeline body may equally quote an order.
+const newsEvidence = JSON.parse(read("sources", "news-evidence.json"));
+const newsEvidenceText = loose(Object.values(newsEvidence.items).map((v) => v.evidence).join(" ¶ "));
 
 // Sweep every quote in FERC_DATA and classify it. Exported so a test can assert zero required misses;
 // the CLI block below prints a human report.

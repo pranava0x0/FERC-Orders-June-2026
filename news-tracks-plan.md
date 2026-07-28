@@ -1,6 +1,49 @@
 # News & parallel-timelines plan: four tracks, a filing tracker, discourse wave 2 (2026-07-28)
 
-> Status: **PLANNED, not implemented.** Companion to `ux-improvement-plan.md` (2026-07-09) and
+## Progress log (append per session)
+
+**Session 2026-07-28b — Phase 0 done, Phase 1 data layer done, paused mid-flight.**
+
+Done and committed:
+
+- **Phase 0** (previous session, commit `ccb67c1`): abeyance-scope hotfix, shipped.
+- **Verification pass** (Part 1.6 items 4, 5, plus the ISO-NE rows in 1.1). What resolved:
+  - **AD26-7-000 confirmed as primary source.** federalregister.gov HTML bot-blocks automated
+    fetch, but its **JSON API and `full_text/text/...txt` endpoints are open** (write this down;
+    it is the workaround for every future FR check). Four notices found: 2026-05-18 (Doc.
+    2026-09924), 06-10, 07-08, 07-21 (Doc. 2026-14691). The initial notice states verbatim that the
+    conference "will convene on Thursday, July 23, 2026, in the Kevin J. McIntyre Commission Meeting
+    Room." **July 23 is now primary-source confirmed**; the plan's date-discipline worry is closed.
+  - **ISO-NE 6/29 and 7/21 fetched** from ISO Newswire (first-party, open): the 90-day abeyance
+    intent, the Nov 16 2026 §205 target, and the 30-day report's substance.
+  - **PJM BRA figures confirmed** against PJM's own release: $325/MW-day cap, 138,318 MW, $16.4B,
+    **6,831 MW** short (the plan's "~6.8 GW"), 14.7% reserve margin, September backstop procurement.
+  - **Utility Dive 7/24 fetched** for the Swett / LaCerte / Mills quotes.
+  - **Still unverified, still eLibrary-gated:** queue items 1, 2, 3, 6 (the six 30-day report
+    accessions, the Jul 17 advocates filing's procedural type, any rehearing/abeyance requests, the
+    EL25-49 Jul 31 effective date). Everything touching them ships as `filed-reported` or
+    `none-observed`, never as verified.
+- **Phase 1 data layer** in `docs/js/data.js`: six new `SOURCES` records carrying `published`; the
+  five-track `tracks` registry (Part 2.2); `track` on all 11 pre-existing timeline events per the
+  Part 2.1 mapping; five new verified events (FR notice, ISO-NE abeyance signal, PJM BRA, ISO-NE
+  report, conference held); `meta.newsCapture`.
+- **`sources/news-evidence.json`** created (Part 3 Feature F) with the captured snippets, and
+  `tools/verify-quotes.mjs` given a `newsEvidenceText` corpus.
+
+Tests are **82/82 green** at this commit; the work so far is purely additive.
+
+**Resume here, in order:**
+
+1. `tools/verify-quotes.mjs` — `newsEvidenceText` is loaded but **not yet consumed**. Add the sweep
+   over `D.timeline` event-body prose quotes against `newsEvidenceText + wholeCorpus` as REQUIRED
+   (today timeline bodies are swept by nothing, which is how the Swett quotes could ship unbacked),
+   and add the matching test (Part 5 #5).
+2. Rest of Phase 1: the UI. Timeline Feature A (track cards, filter chips, trackpills, `#timeline/track/<id>`
+   URL state), Overview "where things stand" strip (Feature E1 to E3).
+3. Phases 2, 3, 4 as written below.
+
+> Status: **Phase 0 shipped; Phase 1 data layer shipped; Phase 1 UI and Phases 2 to 4 outstanding.**
+> Companion to `ux-improvement-plan.md` (2026-07-09) and
 > `policy-analysis-spec.md` (2026-07-14); this spec supersedes the backlog's "compliance tracker,"
 > "per-docket procedural clock," "published-date discipline," "Discourse freshness filter," and
 > "voice roster rebalance" entries by absorbing them. Nothing in Part 1 ships without the
