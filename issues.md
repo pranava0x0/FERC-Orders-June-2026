@@ -243,3 +243,29 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   cache; `python3 -m http.server` sends no no-cache headers). **Fix:** load `http://127.0.0.1:8131`
   instead of `localhost` — a different host string is a separate cache entry. Check
   `window.FERC_DATA` in the console before debugging the renderer.
+
+- **2026-07-28 · deploy · Asset cache tokens were not bumped, so a release could ship as an old app
+  against new data.** Found by the Codex review on PR #14 (P1), not by me or by any test.
+  `docs/index.html` loaded `styles.css`, `data.js` and `app.js` with the unchanged
+  `?v=20260715a` while the PR replaced all three, so a returning visitor keeps the cached files. Worst
+  case is not "stale site" but **skew**: an old `app.js` driving a new `data.js`, which renders as a
+  data-shape bug that reproduces for users and never locally. Root cause: **process** — the token was
+  one hand-typed date shared by every asset, and "remember to bump it" is not a mechanism.
+  **Fix:** `tools/stamp-assets.mjs` derives each token from that file's own sha256, so assets bust
+  independently and nobody has to remember; a test asserts the committed HTML matches the generated
+  output (same contract as `build-llms.mjs`). `app.js`'s `ASSET_VER` (the cache key for lazily fetched
+  bin-detail JSON) now reads the deployed token off its own `<script src>` rather than a literal, which
+  could not have held app.js's own content hash without being circular.
+  **Note the irony:** I hit this exact cache class three times locally and diagnosed it as a browser
+  quirk each time instead of asking whether the deployed tokens had the same problem.
+
+- **2026-07-28 · routing · The Timeline URL could disagree with the rail it was showing.**
+  Found in self-review of PR #14 and reproduced in a browser. `pendingTimelineTrack` was a deep-link
+  handoff cleared only inside `wireTimeline`, which runs on **first render only**; on the
+  already-rendered path it stayed set, and `activate()` preferred it over the live `timelineTrack`.
+  Repro: open Overview, click Timeline, follow a `#timeline/track/gov` link, pick a different track by
+  chip, leave the tab and come back. The hash read `.../gov` while the rail showed `context`, so a
+  copied permalink pointed at the wrong track. Root cause: **code bug**, two sources of truth for one
+  piece of state. **Fix:** `timelineTrack` is now the only source of truth; the pending value is
+  applied before `activate()` and is purely a before-first-render handoff. Same class as the PR #12
+  permalink lesson: if the URL is authoritative, nothing else may quietly outvote it.

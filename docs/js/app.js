@@ -3,8 +3,15 @@
    additionally lazy-loads one small per-letter bin-detail file on demand (docs/data/comments/). */
 (function () {
   "use strict";
-  // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260715a";
+  // Cache-buster for the lazily fetched bin-detail JSON. Read off our own <script src> rather than
+  // hardcoded: index.html's tokens are content hashes now (tools/stamp-assets.mjs), so a literal here
+  // could not hold app.js's own hash without being circular, and "keep this in sync by hand" is exactly
+  // the instruction that got missed and shipped a stale-asset bug. Falls back to "dev" off-server.
+  var ASSET_VER = (function () {
+    var s = document.currentScript || document.querySelector('script[src*="js/app.js"]');
+    var m = s && s.src && s.src.match(/[?&]v=([A-Za-z0-9_-]+)/);
+    return m ? m[1] : "dev";
+  })();
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -157,19 +164,22 @@
     return (F.rows || []).filter(function (r) { return r.docket === docket && r.step === stepId; })[0] || null;
   }
   // The derived half: no observation means the answer depends only on whether the date has passed.
-  function filingCell(docket, stepId) {
+  // `ps` is one clock snapshot passed in by the caller, so every cell in a render is derived against the
+  // same instant (and we don't re-map all seven steps 18 times to say the same thing).
+  function filingCell(docket, stepId, ps) {
     var obs = filingObs(docket, stepId);
     if (obs) return { status: obs.status, obs: obs };
-    var ps = procStatus();
-    var hit = ps && ps.steps.filter(function (x) { return x.s.id === stepId; })[0];
+    var clock = ps || procStatus();
+    var hit = clock && clock.steps.filter(function (x) { return x.s.id === stepId; })[0];
     var passed = hit && hit.date && hit.status === "past";
     return { status: passed ? "none-observed" : "upcoming", obs: null };
   }
   // Counts for the masthead chip and the matrix caption. Derived, never hand-written.
   function filingTally(stepId) {
     var six = D.dockets || [];
+    var ps = procStatus();
     var seen = six.filter(function (d) {
-      var c = filingCell(d.docket, stepId);
+      var c = filingCell(d.docket, stepId, ps);
       return c.status === "filed-verified" || c.status === "filed-reported";
     }).length;
     return { seen: seen, total: six.length };
@@ -188,9 +198,10 @@
         (s.date ? '<span class="fm-coldate mono">' + esc(fmtISO(s.date)) + "</span>" : "") + "</th>";
     }).join("");
 
+    var ps = procStatus();   // one clock snapshot for the whole grid
     var bodyRows = D.dockets.map(function (d) {
       var cells = cols.map(function (id) {
-        var c = filingCell(d.docket, id);
+        var c = filingCell(d.docket, id, ps);
         var m = FILING_STATUS[c.status] || { lbl: c.status, sentence: c.status };
         var when = c.obs && c.obs.date ? '<span class="fm-when mono">' + esc(fmtISO(c.obs.date)) + "</span>" : "";
         return '<td><span class="fm-chip fm-' + esc(c.status) + '" role="img" aria-label="' +
@@ -448,7 +459,9 @@
   function trackCount(id) {
     return (D.timeline || []).filter(function (e) { return e.track === id; }).length;
   }
-  function validTrack(id) { return id === "all" || !!(D.tracks || {})[id] ? id : "all"; }
+  // Guard that stops a hand-typed "#timeline/track/whatever" from filtering the rail to nothing.
+  // Parenthesised deliberately: `||` binds tighter than `?:`, so the intent is easy to misread here.
+  function validTrack(id) { return (id === "all" || !!(D.tracks || {})[id]) ? id : "all"; }
 
   // The pill sits beside the kindpill on every row. kindpill stays color-coded text (doe/ferc/deadline);
   // the trackpill gets a hairline border and muted fill so the rail doesn't turn into confetti.
@@ -1511,11 +1524,13 @@
       if (!firstRender && applyCommentsRoute) applyCommentsRoute(state); // already wired: apply now
       if (!state.acc) scrollToTabsTop();   // a permalink scrolls to its row instead
     } else if (tab === "timeline") {
+      // `timelineTrack` is the single source of truth; `pendingTimelineTrack` is ONLY the handoff for a
+      // deep link that arrives before the panel exists. Apply before activate() either way, so the hash
+      // activate() writes reflects the track we just routed to.
       var track = parseTimelineRest(rest);
-      var freshRail = !rendered.timeline;
-      pendingTimelineTrack = track;        // consumed by wireTimeline on first render
+      if (!rendered.timeline) pendingTimelineTrack = track;   // wireTimeline consumes and clears it
+      else if (applyTimelineTrack) applyTimelineTrack(track); // already wired: set live state now
       activate("timeline", focus);
-      if (!freshRail && applyTimelineTrack) applyTimelineTrack(track); // already wired: apply now
       scrollToTabsTop();
     } else {
       activate(tab, focus);
@@ -1544,7 +1559,10 @@
     });
     // Comments and Timeline manage their own richer hashes (sub-tab + permalinks; track filter).
     // Writing a bare "#timeline" here would clobber a #timeline/track/<id> deep link on arrival.
-    if (name === "timeline") writeTimelineHash(pendingTimelineTrack || timelineTrack);
+    // By here wireTimeline (first render) or goTab (already rendered) has already settled timelineTrack,
+    // so it is the only thing to read. Preferring the pending handoff instead let a consumed-but-uncleared
+    // value outvote the live filter, and the URL then disagreed with the rail.
+    if (name === "timeline") writeTimelineHash(timelineTrack);
     else if (name !== "comments") {
       if (history.replaceState) history.replaceState(null, "", "#" + name);
       else location.hash = name;

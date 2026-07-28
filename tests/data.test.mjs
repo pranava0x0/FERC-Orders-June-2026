@@ -6,6 +6,7 @@ import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
+import { stampAssets } from "../tools/stamp-assets.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const code = readFileSync(join(here, "..", "docs", "js", "data.js"), "utf8");
@@ -600,10 +601,14 @@ test("SEO + accessibility essentials are present in the deployed shell", () => {
   assert.ok(existsSync(join(docs, "robots.txt")), "robots.txt present");
   assert.match(readFileSync(join(docs, "robots.txt"), "utf8"), /Sitemap:/, "robots.txt references the sitemap");
   assert.match(readFileSync(join(docs, "sitemap.xml"), "utf8"), /pranava0x0\.github\.io\/FERC-Orders-June-2026/, "sitemap uses the canonical host");
+  // The lazy comment-detail cache key must track the deployed app.js token. It used to be a hardcoded
+  // literal kept in sync by hand; the tokens are content hashes now, so a literal could not hold
+  // app.js's own hash without being circular. It reads its own <script src> instead, which cannot drift.
   const app = readFileSync(join(docs, "js", "app.js"), "utf8");
-  const shellVersion = html.match(/js\/app\.js\?v=([A-Za-z0-9_-]+)/)?.[1];
-  const lazyVersion = app.match(/ASSET_VER\s*=\s*"([A-Za-z0-9_-]+)"/)?.[1];
-  assert.equal(lazyVersion, shellVersion, "lazy comment-detail cache key matches the deployed app asset version");
+  assert.ok(/js\/app\.js\?v=[0-9a-f]{10}/.test(html), "the shell loads app.js with a content-hash token");
+  assert.doesNotMatch(app, /ASSET_VER\s*=\s*"[0-9A-Za-z_-]+"/,
+    "ASSET_VER is derived from the script tag, not a hand-maintained literal that can go stale");
+  assert.match(app, /document\.currentScript/, "ASSET_VER reads the deployed token off its own script element");
 });
 
 test("every inventoried comment has its body on disk (download completeness)", () => {
@@ -850,4 +855,26 @@ test("every displayed news quote is captured in the news evidence file", () => {
       assert.ok(captured.has(q.src), `wave-2 quote source "${q.src}" has a captured snippet`);
     }
   }
+});
+
+/* ---- Deployed asset cache keys (PR #14 review, Codex P1) -------------------------------------- */
+
+test("docs/index.html asset tokens are derived from asset content and in sync", () => {
+  // Regression for a silent deploy bug: the tokens were one hand-typed date shared by every asset, so
+  // shipping a change meant REMEMBERING to bump it. Forgetting means returning visitors keep cached
+  // files and can run an old app.js against a new data.js — a mismatch that reproduces for users and
+  // never locally. Tokens are now content hashes, and this test is what makes forgetting impossible.
+  const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
+  const stamped = stampAssets(html, join(here, ".."));
+  assert.equal(html, stamped, "docs/index.html asset tokens are stale; regenerate with: node tools/stamp-assets.mjs");
+
+  // And the mechanism itself must still be reaching the files it is supposed to protect.
+  const tokens = [...html.matchAll(/(?:href|src)="((?!https?:)[^"?]+\.(?:css|js))\?v=([^"]*)"/g)];
+  assert.ok(tokens.length >= 5, `every local asset carries a cache token (${tokens.length} >= 5)`);
+  for (const [, path, token] of tokens) {
+    assert.match(token, /^[0-9a-f]{10}$/, `${path} token is a content hash, not a hand-typed date`);
+  }
+  // Distinct content must give distinct tokens; a shared token is the bug this replaced.
+  const byToken = new Set(tokens.map(([, , t]) => t));
+  assert.equal(byToken.size, tokens.length, "each asset busts independently rather than sharing one token");
 });
