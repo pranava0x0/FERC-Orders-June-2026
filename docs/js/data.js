@@ -215,14 +215,16 @@ window.FERC_DATA = (function () {
       "On October 23, 2025, the Department of Energy invoked its rarely used § 403 authority to direct FERC to open a rulemaking on connecting large loads (data centers, AI, advanced manufacturing) to the interstate grid (Docket RM26-4-000), and asked for final action by April 30, 2026.",
       "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.",
       "The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC issued Item E-2 (EL25-49-002), the order on rehearing that finalizes the rates and terms for the three new transmission services its PJM co-location proceeding created, the same services the six orders extend to every other region.",
+      "As of the July 2026 sweep that clock has started firing. Interventions closed July 9 and the 30-day generation-adequacy reports were due July 20; ISO-NE’s is the only one our checks confirmed, and it has said it will ask for a 90-day abeyance. Abeyance requests are due August 3, and August 17 carries both the six show-cause filings and PJM’s further compliance filing in the separate co-location docket. Running beside all of it, FERC has put PJM’s own governance on a September clock in Docket AD26-7-000.",
     ],
   };
 
   const kpis = [
     { value: "6", label: "RTOs / ISOs", sub: "all FERC-jurisdictional grid operators + their TOs" },
     { value: "5", label: "Reform categories", sub: "teed up in each tailored order" },
-    { value: "30 days", label: "Informational report", sub: "resource-adequacy plan to serve large loads", deadline: true },
-    { value: "60 days", label: "Justify or file", sub: "defend tariffs or propose §206 revisions", deadline: true },
+    // `step` joins the card to the live procedural clock, so these two stop reading as forever-pending.
+    { value: "30 days", label: "Informational report", sub: "resource-adequacy plan to serve large loads", deadline: true, step: "report" },
+    { value: "60 days", label: "Justify or file", sub: "defend tariffs or propose §206 revisions", deadline: true, step: "showcause" },
     { value: "> 20 MW", label: "“Large load”", sub: "DOE threshold (per Order No. 2003)" },
     { value: "3,500+", label: "Pages reviewed", sub: "public comments in the RM26-4 docket" },
   ];

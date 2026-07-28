@@ -186,3 +186,27 @@ holds comfortably. No workflow, no Task tool.
 - **Net:** accuracy high (nothing shipped broken, tests + sweep green), efficiency good on the authoring
   half and mediocre on the verification half — all of the drag was browser-harness friction, none of it
   model reasoning.
+
+## Session 2026-07-28b — news-tracks plan, Phases 1 to 4 (inline, no subagents)
+
+- **Agents spawned: none.** The plan was already written and the sub-questions were enumerable, so the
+  work was done in the main loop per the "inline before subagent" rule. The only open-ended step
+  (verification) was 8 targeted `WebFetch`/`WebSearch` calls, roughly 5 to 10K tokens each, against a
+  ~25 to 40K floor for a single subagent. A fan-out here would have bought nothing.
+- **Verification spend, 8 network calls total**, resolving 4 of the 6 queue items in
+  `news-tracks-plan.md` 1.6: FR document search + one `full_text` read (AD26-7-000 and the July 23
+  conference date), two ISO Newswire posts, one Utility Dive article, two web searches. eLibrary items
+  (1, 2, 3, 6) stayed blocked and shipped as `filed-reported` / `none-observed`.
+- **Tooling friction, same as last session and predicted by it.** Browser screenshots returned blank
+  ~5 times; root cause this time was the Browser pane being hidden (pointer actions timed out with an
+  explicit "pane is hidden" error) plus one viewport that collapsed to `innerWidth: 0` after a preset
+  resize, which inflated every measured height ~20x and briefly looked like a layout regression.
+  **Last session's own note said to prefer DOM assertions over screenshots; following it sooner would
+  have saved the detour.** Every real check — filter state, counts, overflow, aria-labels, hash
+  routing — came from `javascript_tool`, which never failed.
+- **One self-inflicted bug**, logged in issues.md: `tracks` added to `data.js` but not to the IIFE's
+  `return` list, so it was `undefined` with no console error and vacuously-passing tests. Caught by
+  counting rendered DOM nodes, not by the suite. The suite now asserts the registry is non-empty
+  before iterating it.
+- **Net:** 4 phases, 5 commits, tests 82 → 98, required quotes 193 → 209. Efficiency good: no wasted
+  agent spawns, and the verification pass was scoped to what actually changes what ships.

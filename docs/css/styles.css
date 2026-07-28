@@ -222,6 +222,15 @@ details.acc[open] .acc-chev { transform: rotate(90deg); }
 .kindpill.deadline { color: var(--deadline); background: var(--deadline-bg); }
 .kindpill.milestone { color: var(--text-muted); }
 
+/* KPI deadline state — the two clock cards read their status off the procedural board. */
+.kpi-state {
+  margin-top: 6px; font-family: var(--font-mono); font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.05em;
+}
+.kpi-state.past { color: var(--text-muted); }
+.kpi-state.upcoming { color: var(--deadline); }
+.kpi-state .mono { font-weight: 400; text-transform: none; letter-spacing: 0; }
+
 /* Discourse waves (news-tracks-plan.md Feature D) — two dated lanes, freshest first. */
 .wave + .wave { margin-top: 22px; }
 .wave-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; border-bottom: 1px solid var(--rule); padding-bottom: 5px; margin-bottom: 12px; }

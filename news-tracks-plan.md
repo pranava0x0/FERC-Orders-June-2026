@@ -32,17 +32,33 @@ Done and committed:
 
 Tests are **82/82 green** at this commit; the work so far is purely additive.
 
-**Resume here, in order:**
+**Session 2026-07-28b (continued) — Phases 1 to 4 complete.**
 
-1. `tools/verify-quotes.mjs` — `newsEvidenceText` is loaded but **not yet consumed**. Add the sweep
-   over `D.timeline` event-body prose quotes against `newsEvidenceText + wholeCorpus` as REQUIRED
-   (today timeline bodies are swept by nothing, which is how the Swett quotes could ship unbacked),
-   and add the matching test (Part 5 #5).
-2. Rest of Phase 1: the UI. Timeline Feature A (track cards, filter chips, trackpills, `#timeline/track/<id>`
-   URL state), Overview "where things stand" strip (Feature E1 to E3).
-3. Phases 2, 3, 4 as written below.
+- **Phase 1**: tracks registry, `track` on every event, Timeline Feature A (cards, chips, pills,
+  `#timeline/track/<id>`), Overview "where things stand" strip. Commit `c2536cb`.
+- **Phase 2**: filing matrix storing **observations only**, with `upcoming` / `none-observed` derived
+  from the clock at render time so the grid cannot go stale into a false "nothing was filed";
+  Aug 17 collision callout; two-evidence-base board foot; masthead second clause; `REFRESH.md`;
+  `tools/check-staleness.mjs`. Commit `52554d1`.
+- **Phase 3**: Discourse wave lanes with per-wave capture stamps, three wave-2 themes with track
+  pills, evidence plumbed through both capture files, `llms.txt` "Parallel proceedings" and
+  "Observed filings" sections. Commit `f1e58be`.
+- **Phase 4**: KPI cards read their state off the procedural clock, Overview prose acknowledges the
+  post-June world, Dockets carries a pointer to the gov track, footer stamps the news sweep.
 
-> Status: **Phase 0 shipped; Phase 1 data layer shipped; Phase 1 UI and Phases 2 to 4 outstanding.**
+**Deviations from the plan, and why:**
+
+- **Feature D #4 (wave-1 roster trim) not done.** `D.voices` is never rendered by `app.js`; it feeds
+  `llms.txt` and the tests. There is no 37-name list on the page to collapse behind a show-more.
+- **Feature B cell popovers** became an at-a-glance chip grid plus a full "what we observed" list
+  underneath. Same data, nothing behind a hover, and it survives 375px without a popover layer.
+- **Nothing is `filed-verified`.** eLibrary stayed Cloudflare-gated, so no accession was read. Queue
+  items 1, 2, 3 and 6 are open and carried into `REFRESH.md`.
+
+**Still outstanding:** the post-Aug-17 refresh (run `REFRESH.md` end to end on the six show-cause
+filings and the E-2 compliance filing). That is scheduled work, and the real test of this plan.
+
+> Status: **Phases 0 to 4 shipped.** The remaining work is the recurring refresh loop, not features.
 > Companion to `ux-improvement-plan.md` (2026-07-09) and
 > `policy-analysis-spec.md` (2026-07-14); this spec supersedes the backlog's "compliance tracker,"
 > "per-docket procedural clock," "published-date discipline," "Discourse freshness filter," and

@@ -348,9 +348,17 @@
 
   /* ---- TAB: Overview (stats + at-a-glance + background) ---- */
   function renderOverview() {
+    // The two deadline cards read as forever-pending until they say where the clock actually is. State
+    // comes from the same today-comparison the procedural board uses, so the three never disagree.
     var stats = '<div class="kpis">' + D.kpis.map(function (k) {
+      var state = "";
+      if (k.step) {
+        var w = pmStepWhen(k.step);
+        if (w) state = '<div class="kpi-state ' + (w.flag === "Passed" ? "past" : "upcoming") + '">' +
+          esc(w.flag) + ' <span class="mono">' + esc(w.when) + "</span></div>";
+      }
       return '<div class="kpi' + (k.deadline ? " deadline" : "") + '"><div class="v">' + esc(k.value) +
-        '</div><div class="l">' + esc(k.label) + '</div><div class="s">' + esc(k.sub) + "</div></div>";
+        '</div><div class="l">' + esc(k.label) + '</div><div class="s">' + esc(k.sub) + "</div>" + state + "</div>";
     }).join("") + "</div>";
 
     var m = D.meta;
@@ -723,6 +731,12 @@
 
     return head("The dockets: E-7 through E-12, plus the E-2 co-location order",
       "Every §206 order runs the same spine — the five categories, the clock, and the jurisdictional line are in the Reforms tab; each card here is the region-specific variation. Open one for what’s unique to that system, the page-cited directives and distinct findings, the Section IV asks, what each commissioner said about that order, and every named respondent. After the six sits Item E-2 (EL25-49-002), the order on rehearing decided the same morning that finalizes the PJM co-location services the six extend.") +
+      // AD26-7 gets a pointer, not a card. These accordions are backed by committed, page-cited order
+      // PDFs; the governance conference has no primary document in the repo to quote. If FERC's
+      // post-conference notice becomes one, that is the moment it earns a card here, and not before.
+      '<p class="cm-xlink">The PJM governance proceeding (Docket AD26-7-000) runs beside these dockets ' +
+      'on its own clock, with no committed order to cite yet. ' +
+      '<a class="cm-agg-link" href="#timeline/track/gov">See the governance track on the timeline <span aria-hidden="true">→</span></a></p>' +
       docs +
       head("File or follow the dockets", "Every proceeding is open on the public record. Use the exact docket number on any submission.") + participate;
   }
@@ -1439,7 +1453,9 @@
       "<h4>Derived dates</h4>" +
       "<p>The 30-day and 60-day periods are stated by FERC. The specific calendar due-dates are derived from the June 18, 2026 issuance (business-day-adjusted figures attributed to the National Law Review analysis).</p>" +
       "<h4>All sources</h4>" + srcList +
-      "<p style='margin-top:10px'><em>Last updated: order record as of " + esc(D.meta.capture) + "; Discourse updated " + esc(D.meta.discourseCapture) + ". Independent analysis; not affiliated with FERC or DOE.</em></p>";
+      "<p style='margin-top:10px'><em>Last updated: order record as of " + esc(D.meta.capture) + "; Discourse updated " + esc(D.meta.discourseCapture) +
+      (D.meta.newsCapture ? "; news and filings swept " + esc(D.meta.newsCapture) : "") +
+      ". Independent analysis; not affiliated with FERC or DOE.</em></p>";
   }
 
   /* ---- tablist ---- */

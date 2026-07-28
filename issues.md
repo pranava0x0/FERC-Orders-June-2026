@@ -215,3 +215,31 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 - **2026-06-22 · build · `design.md` write collided with existing `DESIGN.md`** on the
   case-insensitive macOS filesystem. Root cause: **environment**. Fix: named the project identity
   file `design-notes.md`.
+
+- **2026-07-28 · data layer · A new `data.js` section was silently `undefined` in the app.**
+  The `tracks` registry was added as a `const` inside the `window.FERC_DATA` IIFE but not to the
+  explicit `return { … }` list at the bottom, so `D.tracks` was `undefined`. Root cause: **code bug**.
+  The failure was silent in both directions: the app rendered zero track cards and zero chips with no
+  console error (every consumer did `D.tracks || {}`), and the tests passed vacuously because they
+  iterated the same empty object. Caught only by counting rendered nodes in the browser.
+  **Fix:** added `tracks` to the return list. **Regression guard:** the tracks tests now assert a
+  populated registry (`Object.keys(D.tracks).length >= 5`) before iterating, so an empty section fails
+  loud instead of passing over nothing. Noted in REFRESH.md gotchas: adding a section to `data.js` is
+  two edits, never one.
+
+- **2026-07-28 · tooling · Timeline event bodies were covered by no quote sweep.**
+  `tools/verify-quotes.mjs` swept order directives, commissioner statements, Discourse voices/themes
+  and some prose, but never `D.timeline[].body`. Root cause: **coverage gap** — timeline bodies had
+  historically only quoted order text, so the gap was invisible until the news refresh put named
+  speakers (Swett, LaCerte) on the rail, where a fabricated or drifted quote would have shipped
+  unchecked. **Fix:** a required sweep over timeline body prose quotes against
+  `sources/news-evidence.json` + the committed corpus, plus a test naming the specific spans. Required
+  quote count went 193 → 201 on the sweep addition alone.
+
+- **2026-07-28 · local dev · A stale `data.js` in the browser cache read as a code bug.**
+  After editing `data.js`, `http://localhost:8131` kept serving the previous file: the page showed new
+  timeline events but an empty `tracks`, which looks exactly like a data-shape bug. `fetch()` of the
+  same path returned the *correct* file, which is the tell. Root cause: **environment** (browser HTTP
+  cache; `python3 -m http.server` sends no no-cache headers). **Fix:** load `http://127.0.0.1:8131`
+  instead of `localhost` — a different host string is a separate cache entry. Check
+  `window.FERC_DATA` in the console before debugging the renderer.

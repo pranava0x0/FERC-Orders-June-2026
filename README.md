@@ -53,9 +53,15 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 56 tests across the suites
+node --test tests/*.test.mjs   # 98 tests across the suites
 node tools/verify-quotes.mjs   # whole-site quote audit (one command; --list for every quote)
+node tools/check-staleness.mjs # advisory: passed deadlines, stale stamps, unobserved filings
 ```
+
+Refreshing the data (new filings, news, docket activity) is its own runbook:
+[REFRESH.md](REFRESH.md). It carries the open eLibrary verification queue and the retrieval
+workarounds that actually work (notably: federalregister.gov bot-blocks its HTML pages but leaves its
+JSON API and `full_text` endpoints open).
 
 Suites, no dependencies:
 
