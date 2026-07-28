@@ -298,14 +298,98 @@
 
     return head("Overview", m.subtitle) +
       '<div class="overview-bg">' + paras(m.summary) + "</div>" +
-      stats + renderProcedural() + glance + commish;
+      stats + renderStandStrip() + renderProcedural() + glance + commish;
   }
 
-  /* ---- TAB 1 ---- */
+  // "Where things stand": one line per track, generated from the registry so there is no second copy of
+  // the status prose to keep in sync (news-tracks-plan.md Feature E1). Each line links into the Timeline
+  // filtered to that track. The strip carries its own as-of stamp because it is the one part of the
+  // Overview that goes stale on a calendar, not on a docket.
+  function renderStandStrip() {
+    var ids = Object.keys(D.tracks || {});
+    if (!ids.length) return "";
+    var rows = ids.map(function (id) {
+      var t = D.tracks[id];
+      var next = t.next && t.next.date
+        ? '<span class="stand-next"><span class="mono">' + esc(fmtISO(t.next.date)) + "</span> " + esc(t.next.label) + "</span>"
+        : '<span class="stand-next none">' + esc((t.next && t.next.label) || "No dated step") + "</span>";
+      return '<li class="stand-row"><a class="stand-link" href="#timeline/track/' + esc(id) + '">' +
+        '<span class="stand-label">' + esc(t.label) + '</span><span class="stand-go" aria-hidden="true">→</span></a>' +
+        '<p class="stand-line">' + esc(t.status.line) + "</p>" + next + "</li>";
+    }).join("");
+    var asOf = (D.meta && D.meta.newsCapture) || "";
+    return '<section class="stand" aria-labelledby="stand-h">' +
+      '<div class="stand-head"><h3 id="stand-h">Where things stand</h3>' +
+      (asOf ? '<span class="stand-asof mono">news swept ' + esc(asOf) + "</span>" : "") + "</div>" +
+      '<p class="stand-lede">Four proceedings and one context lane run beside each other, each on its own clock.</p>' +
+      '<ol class="stand-list">' + rows + "</ol></section>";
+  }
+
+  /* ---- TAB 1: the track-aware rail (news-tracks-plan.md Feature A) ---- */
+  // Four proceedings and one context lane run beside each other. The rail stays ONE merged chronology
+  // on purpose: the capacity auction clearing at its cap nine days before the governance conference is
+  // the story, and swimlanes would destroy it (also unreadable at 375px across five lanes of very
+  // uneven density). Separation comes on demand instead, from the track cards, a single-select chip
+  // row, and a per-event pill. Filtering hides rows rather than rebuilding the DOM: ~16 events.
+  var TRACK_IDS = Object.keys(D.tracks || {});
+  var timelineTrack = "all";                 // module state; mirrored in the hash as #timeline/track/<id>
+  var applyTimelineTrack = null;             // set by wireTimeline once the panel exists
+  var pendingTimelineTrack = null;           // a deep link parsed before first render
+
+  function trackCount(id) {
+    return (D.timeline || []).filter(function (e) { return e.track === id; }).length;
+  }
+  function validTrack(id) { return id === "all" || !!(D.tracks || {})[id] ? id : "all"; }
+
+  // The pill sits beside the kindpill on every row. kindpill stays color-coded text (doe/ferc/deadline);
+  // the trackpill gets a hairline border and muted fill so the rail doesn't turn into confetti.
+  function trackPill(id) {
+    var t = (D.tracks || {})[id];
+    if (!t) return "";
+    return '<button type="button" class="trackpill" data-track="' + esc(id) +
+      '" title="' + esc(t.label) + '" aria-label="Filter the timeline to ' + esc(t.label) + '">' +
+      esc(t.short) + "</button>";
+  }
+
+  function trackCards() {
+    var cards = TRACK_IDS.map(function (id) {
+      var t = D.tracks[id], n = trackCount(id);
+      var next = t.next && t.next.date
+        ? '<span class="trk-next"><span class="trk-next-lbl">Next</span> <span class="mono">' +
+          esc(fmtISO(t.next.date)) + "</span> " + esc(t.next.label) +
+          (t.next.dateNote ? '<span class="trk-next-note">' + esc(t.next.dateNote) + "</span>" : "") + "</span>"
+        : '<span class="trk-next none">' + esc((t.next && t.next.label) || "No dated step") + "</span>";
+      return '<button type="button" class="trk-card" data-track="' + esc(id) + '" aria-pressed="false">' +
+        '<span class="trk-head"><span class="trk-label">' + esc(t.label) +
+        '</span><span class="trk-n mono">' + n + (n === 1 ? " event" : " events") + "</span></span>" +
+        '<span class="trk-venue mono">' + esc(t.venue || "Not a docket") + "</span>" +
+        '<span class="trk-what">' + esc(t.what) + "</span>" +
+        '<span class="trk-why"><span class="trk-why-lbl">Why it is separate</span> ' + esc(t.whySeparate) + "</span>" +
+        (t.aka ? '<span class="trk-aka">' + esc(t.aka) + "</span>" : "") +
+        '<span class="trk-status">' + esc(t.status.line) +
+        ' <span class="trk-asof mono">as of ' + esc(t.status.asOf) + "</span></span>" +
+        next + "</button>";
+    }).join("");
+    return '<div class="trk-grid">' + cards + "</div>";
+  }
+
+  function trackChips() {
+    var chips = [{ id: "all", short: "All", label: "All tracks", n: (D.timeline || []).length }]
+      .concat(TRACK_IDS.map(function (id) {
+        return { id: id, short: D.tracks[id].short, label: D.tracks[id].label, n: trackCount(id) };
+      }));
+    return '<div class="trk-chips" role="group" aria-label="Filter the timeline by track">' +
+      chips.map(function (c) {
+        return '<button type="button" class="trk-chip" data-track="' + esc(c.id) +
+          '" aria-pressed="' + (c.id === "all" ? "true" : "false") + '" title="' + esc(c.label) + '">' +
+          esc(c.short) + ' <span class="trk-chip-n mono">' + c.n + "</span></button>";
+      }).join("") + "</div>";
+  }
+
   function renderTimeline() {
     var tl = '<div class="timeline">' + D.timeline.map(function (e) {
-      return '<div class="tl-item ' + e.kind + '"><div class="tl-date">' + esc(e.date) +
-        '<span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span></div>" +
+      return '<div class="tl-item ' + e.kind + '" data-track="' + esc(e.track || "") + '"><div class="tl-date">' + esc(e.date) +
+        '<span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span>" + trackPill(e.track) + "</div>" +
         '<div class="tl-title">' + esc(e.title) + "</div>" +
         '<div class="tl-body">' + esc(e.body) + "</div>" + srcChips(e.src) + "</div>";
     }).join("") + "</div>";
@@ -316,10 +400,49 @@
     }).join("") + "</div>";
 
     return head("Timeline: DOE §403 directive to FERC §206 orders",
-      "How an Oct. 2025 DOE directive became six near-simultaneous show cause orders on a 30/60-day clock.") +
+      "One chronology, five lanes: the §206 clock, the EL25-49 co-location docket, the AD26-7 governance fight, the RM26-4 record, and the market context around them.") +
+      '<h3 class="trk-h">The parallel tracks</h3>' +
+      '<p class="trk-lede">Each lane is its own proceeding on its own clock. Pick one to filter the rail below it.</p>' +
+      trackCards() + trackChips() +
+      '<span class="sr-only" role="status" aria-live="polite" id="tl-filterstatus"></span>' +
       tl +
       accSection("Toplines: the strategic shift",
         "Why tailored §206 show cause orders instead of a generic NOPR, and what it signals.", top, false, (D.toplines || []).length);
+  }
+
+  // Filter wiring. The cards and the chips drive one piece of state, so both carry aria-pressed and both
+  // toggle back to "all" when the active track is clicked again. The intro grid never hides: a shared
+  // #timeline/track/<id> link must land on something that explains the lane it just filtered to.
+  function wireTimeline() {
+    var panel = panelFor("timeline");
+    if (!panel) return;
+    applyTimelineTrack = function (id) {
+      timelineTrack = validTrack(id);
+      panel.querySelectorAll(".tl-item").forEach(function (el) {
+        el.hidden = timelineTrack !== "all" && el.getAttribute("data-track") !== timelineTrack;
+      });
+      panel.querySelectorAll(".trk-chip, .trk-card").forEach(function (b) {
+        var on = b.getAttribute("data-track") === timelineTrack;
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+        b.classList.toggle("is-active", on);
+      });
+      var live = panel.querySelector("#tl-filterstatus");
+      if (live) {
+        var n = panel.querySelectorAll(".tl-item:not([hidden])").length;
+        live.textContent = timelineTrack === "all"
+          ? "Showing all " + n + " events."
+          : "Filtered to " + D.tracks[timelineTrack].label + ": " + n + (n === 1 ? " event." : " events.");
+      }
+    };
+    panel.addEventListener("click", function (ev) {
+      var b = ev.target.closest("button[data-track]");
+      if (!b || !panel.contains(b)) return;
+      var id = b.getAttribute("data-track");
+      applyTimelineTrack(id === timelineTrack && id !== "all" ? "all" : id);
+      writeTimelineHash(timelineTrack);
+    });
+    applyTimelineTrack(pendingTimelineTrack || "all");
+    pendingTimelineTrack = null;
   }
 
   /* ---- TAB: Reforms (the five categories + jurisdiction + regional) ---- */
@@ -1201,7 +1324,7 @@
   /* ---- tablist ---- */
   var TABS = ["overview", "timeline", "reforms", "dockets", "comments", "news"];
   var renderers = { overview: renderOverview, timeline: renderTimeline, reforms: renderReforms, dockets: renderDockets, comments: renderComments, news: renderNews };
-  var afterRender = { comments: wireComments };
+  var afterRender = { comments: wireComments, timeline: wireTimeline };
   var rendered = {};
 
   function panelFor(name) { return document.getElementById("panel-" + name); }
@@ -1222,6 +1345,18 @@
     }
     return window.CommentsRoute.DEFAULT_SUB;
   }
+  // Timeline URL state: "#timeline/track/gov". Same shape as the Comments hash, minus the query grammar,
+  // because a filtered rail is worth sharing but has exactly one parameter. "all" writes the bare "#timeline".
+  function writeTimelineHash(track) {
+    var body = "#timeline" + (track && track !== "all" ? "/track/" + track : "");
+    if (history.replaceState) history.replaceState(null, "", body);
+    else location.hash = body.slice(1);
+  }
+  function parseTimelineRest(rest) {
+    var m = String(rest || "").match(/^track\/([A-Za-z0-9_-]+)$/);
+    return validTrack(m ? m[1] : "all");   // an unknown track id degrades to the unfiltered rail
+  }
+
   // "#comments/summaries?q=x" -> { tab: "comments", rest: "summaries?q=x" }; "#news" -> { tab:"news", rest:"" }
   function parseHash() {
     var h = (location.hash || "").replace(/^#/, "");
@@ -1238,6 +1373,13 @@
       activate("comments", focus);
       if (!firstRender && applyCommentsRoute) applyCommentsRoute(state); // already wired: apply now
       if (!state.acc) scrollToTabsTop();   // a permalink scrolls to its row instead
+    } else if (tab === "timeline") {
+      var track = parseTimelineRest(rest);
+      var freshRail = !rendered.timeline;
+      pendingTimelineTrack = track;        // consumed by wireTimeline on first render
+      activate("timeline", focus);
+      if (!freshRail && applyTimelineTrack) applyTimelineTrack(track); // already wired: apply now
+      scrollToTabsTop();
     } else {
       activate(tab, focus);
       scrollToTabsTop();
@@ -1263,8 +1405,10 @@
         if (focus) tab.focus();
       }
     });
-    // Comments manages its own richer hash (sub-tab + permalinks); other tabs stay bare "#<tab>".
-    if (name !== "comments") {
+    // Comments and Timeline manage their own richer hashes (sub-tab + permalinks; track filter).
+    // Writing a bare "#timeline" here would clobber a #timeline/track/<id> deep link on arrival.
+    if (name === "timeline") writeTimelineHash(pendingTimelineTrack || timelineTrack);
+    else if (name !== "comments") {
       if (history.replaceState) history.replaceState(null, "", "#" + name);
       else location.hash = name;
     }

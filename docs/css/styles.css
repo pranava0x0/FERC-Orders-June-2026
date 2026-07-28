@@ -222,6 +222,75 @@ details.acc[open] .acc-chev { transform: rotate(90deg); }
 .kindpill.deadline { color: var(--deadline); background: var(--deadline-bg); }
 .kindpill.milestone { color: var(--text-muted); }
 
+/* "Where things stand" strip (Overview) — one line per track, generated from the registry. */
+.stand { border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; margin: 18px 0; background: var(--surface); }
+.stand-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.stand-head h3 { font-size: 15px; margin: 0; }
+.stand-asof { font-size: 10.5px; color: var(--text-muted); }
+.stand-lede { font-size: 13px; color: var(--text-muted); margin: 3px 0 10px; max-width: 70ch; }
+.stand-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+.stand-row { border-top: 1px solid var(--rule); padding-top: 8px; }
+.stand-row:first-child { border-top: 0; padding-top: 0; }
+.stand-link { display: inline-flex; align-items: baseline; gap: 5px; text-decoration: none; }
+.stand-label { font-weight: 700; font-size: 13.5px; color: var(--accent-ink); }
+.stand-link:hover .stand-label { text-decoration: underline; }
+.stand-go { color: var(--accent); font-size: 12px; }
+.stand-line { font-size: 13px; color: #2b3744; margin: 2px 0 3px; max-width: 78ch; }
+.stand-next { font-size: 12px; font-weight: 600; color: var(--deadline); }
+.stand-next.none { color: var(--text-muted); font-weight: 400; }
+
+/* parallel tracks (news-tracks-plan.md Feature A) — the intro grid, the filter chips, and the
+   per-event pill. The trackpill is deliberately quieter than the kindpill (hairline border, muted
+   fill, no color coding) so a rail carrying both pills doesn't read as confetti. */
+.trk-h { font-size: 15px; margin: 18px 0 2px; }
+.trk-lede { font-size: 13.5px; color: var(--text-muted); margin: 0 0 12px; max-width: 70ch; }
+.trk-grid { display: grid; gap: 10px; margin-bottom: 14px; }
+@media (min-width: 700px) { .trk-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .trk-grid { grid-template-columns: repeat(3, 1fr); } }
+.trk-card {
+  display: flex; flex-direction: column; gap: 5px; text-align: left; width: 100%;
+  padding: 11px 13px; border: 1px solid var(--rule); border-radius: 10px;
+  background: var(--surface); color: inherit; font: inherit; cursor: pointer;
+}
+.trk-card:hover { border-color: var(--rule-strong); }
+.trk-card.is-active { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
+.trk-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.trk-label { font-weight: 700; font-size: 14.5px; color: var(--ink); }
+.trk-n { font-size: 11px; color: var(--text-muted); white-space: nowrap; }
+.trk-venue { font-size: 11px; color: var(--accent-ink); }
+.trk-what { font-size: 13px; color: #2b3744; }
+.trk-why { font-size: 12.5px; color: var(--text-muted); }
+.trk-why-lbl, .trk-next-lbl {
+  font-family: var(--font-mono); font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--text-muted); margin-right: 4px;
+}
+.trk-aka { font-size: 12.5px; color: var(--text-muted); font-style: italic; }
+.trk-status { font-size: 12.5px; color: #2b3744; border-top: 1px solid var(--rule); padding-top: 6px; margin-top: 2px; }
+.trk-asof { font-size: 10.5px; color: var(--text-muted); white-space: nowrap; }
+.trk-next { font-size: 12px; color: var(--deadline); font-weight: 600; }
+.trk-next.none { color: var(--text-muted); font-weight: 400; }
+.trk-next-note { display: block; font-size: 11px; color: var(--text-muted); font-weight: 400; }
+
+.trk-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; }
+.trk-chip, .trackpill {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 0.02em;
+  padding: 4px 10px; border-radius: 999px; border: 1px solid var(--rule-strong);
+  background: var(--surface); color: var(--text-muted); cursor: pointer;
+}
+.trk-chip:hover, .trackpill:hover { border-color: var(--accent); color: var(--accent-ink); }
+.trk-chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.trk-chip[aria-pressed="true"] .trk-chip-n { color: #fff; opacity: 0.85; }
+.trk-chip-n { color: var(--text-muted); }
+.trackpill {
+  font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; padding: 1px 7px;
+  margin-left: 6px; vertical-align: 1px; background: var(--bg);
+}
+/* Touch targets reach the 44px floor only on coarse pointers, so these stay chip-scale on desktop
+   instead of bloating next to the lightweight kindpill beside them. */
+@media (pointer: coarse) {
+  .trk-chip, .trackpill { min-height: 44px; display: inline-flex; align-items: center; }
+}
+
 /* cards / analysis */
 .cards { display: grid; gap: 14px; }
 @media (min-width: 820px) { .cards.cols-3 { grid-template-columns: repeat(3, 1fr); } }

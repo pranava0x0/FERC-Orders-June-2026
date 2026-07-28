@@ -15,6 +15,7 @@ window.FERC_DATA = (function () {
       tier: "doe",
       url: "https://www.energy.gov/sites/default/files/2025-10/403%20Large%20Loads%20Letter.pdf",
       captured: "2026-06-22",
+      published: "2025-10-23",
       note: "16-pp. primary PDF, downloaded from energy.gov and text-extracted.",
     },
     fercPR: {
@@ -24,6 +25,7 @@ window.FERC_DATA = (function () {
       url: "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
       archiveUrl: "http://web.archive.org/web/20260618211730/https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
       captured: "2026-06-18 (Internet Archive)",
+      published: "2026-06-18",
       note: "Live page is Cloudflare-gated; chip opens the fixed June 18, 2026 Wayback snapshot the text was checked against.",
     },
     fercFS: {
@@ -33,6 +35,7 @@ window.FERC_DATA = (function () {
       url: "https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and",
       archiveUrl: "http://web.archive.org/web/20260620020229/https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and",
       captured: "2026-06-20 (Internet Archive)",
+      published: "2026-06-18",
       note: "Enumerates the five categories, the 30/60-day deadlines, the jurisdictional boundary and the regional distinctions verbatim. Chip opens the fixed snapshot.",
     },
     fercSum: {
@@ -51,6 +54,7 @@ window.FERC_DATA = (function () {
       url: "https://www.ferc.gov/rm26-4",
       archiveUrl: "http://web.archive.org/web/20260619085932/https://www.ferc.gov/rm26-4",
       captured: "2026-06-19 (Internet Archive)",
+      published: "2026-01-13",
       note: "DOE Oct. 23, 2025 §403 directive; >20 MW definition; four summarized ANOPR questions; comment period extended (page last updated Jan 13, 2026). Chip opens the fixed snapshot.",
     },
     // The six order PDFs — downloaded via browser (past Cloudflare) and OCR'd; page-1 captions verified.
@@ -60,7 +64,8 @@ window.FERC_DATA = (function () {
     e10: { label: "Order E-10 (CAISO): EL26-71-000 · 195 FERC ¶ 61,214", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-10-el26-71-000", captured: "2026-06-22", note: "Downloaded & OCR'd, 118 pp; §206 order, issued June 18, 2026; caption verified." },
     e11: { label: "Order E-11 (ISO-NE): EL26-72-000 · 195 FERC ¶ 61,215", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e11-el26-72-000", captured: "2026-06-22", note: "Downloaded & OCR'd, 115 pp; §206 order, issued June 18, 2026; caption verified." },
     e12: { label: "Order E-12 (NYISO): EL26-69-000 · 195 FERC ¶ 61,216", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e12-el26-69-000", captured: "2026-06-22", note: "Downloaded & OCR'd, 119 pp; §206 order, issued June 18, 2026; caption verified." },
-    e2: { label: "Order E-2 (PJM co-location): EL25-49-002 · 195 FERC ¶ 61,209", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-2-el25-49-002", captured: "2026-06-30", note: "Downloaded & OCR'd, 278 pp; Order on Rehearing, Clarification, Compliance Filing, and Paper Hearing on PJM’s December 18, 2025 co-location order (193 FERC ¶ 61,217), issued June 18, 2026 at the same meeting as E-7 to E-12; caption verified. Finalizes the rates and terms for the three new transmission services the six show cause orders extend to the other regions." },
+    e2: { label: "Order E-2 (PJM co-location): EL25-49-002 · 195 FERC ¶ 61,209", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-2-el25-49-002", captured: "2026-06-30",
+      published: "2026-06-18", note: "Downloaded & OCR'd, 278 pp; Order on Rehearing, Clarification, Compliance Filing, and Paper Hearing on PJM’s December 18, 2025 co-location order (193 FERC ¶ 61,217), issued June 18, 2026 at the same meeting as E-7 to E-12; caption verified. Finalizes the rates and terms for the three new transmission services the six show cause orders extend to the other regions." },
     akin: { label: "“FERC Issues Landmark Show Cause Orders on Large Load Interconnection”", org: "Akin Gump (Speaking Energy)", tier: "secondary", url: "https://www.akingump.com/en/insights/blogs/speaking-energy/ferc-issues-landmark-show-cause-orders-on-large-load-interconnection", captured: "2026-06-22", note: "Law-firm client alert." },
     sheppard: { label: "“FERC Orders Six RTOs to Address Specific Reforms… Speed to Power”", org: "Sheppard Mullin", tier: "secondary", url: "https://www.sheppard.com/insights/blogs/ferc-orders-six-rtos-to-address-specific-reforms-to-effectuate-speed-to-power-that-will-facilitate-the-integration-of-large-loads", captured: "2026-06-22", note: "Law-firm client alert." },
     whitecase: { label: "“PJM proposes to carve out new services for co-located data centers”", org: "White & Case", tier: "secondary", url: "https://www.whitecase.com/insight-alert/pjm-proposes-carve-out-new-services-co-located-data-centers", captured: "2026-06-22", note: "Co-location context (PJM EL25-49 line)." },
@@ -1385,5 +1390,5 @@ window.FERC_DATA = (function () {
       note: "The orders direct a study process for proximate generation. Whether such a generator can join the RTO's energy, ancillary, and capacity markets, and how it is accredited, is posed as a Section IV briefing question." },
   ];
 
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, colocation, jurisdiction, regional, reception, media, voices, voiceThemes, comments, commissioners, briefing, participate, procedural, policyMap };
+  return { SOURCES, meta, kpis, tracks, timeline, toplines, categories, dockets, colocation, jurisdiction, regional, reception, media, voices, voiceThemes, comments, commissioners, briefing, participate, procedural, policyMap };
 })();

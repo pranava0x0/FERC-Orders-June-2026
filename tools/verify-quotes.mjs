@@ -181,6 +181,14 @@ for (const th of D.voiceThemes || []) {
   for (const q of th.quotes || []) req(`voice theme "${th.title}"`, q.q, evidenceText);
 }
 
+// 3b) Timeline event bodies (REQUIRED). These were swept by nothing until the 2026-07-28 news refresh,
+//     which is how a named speaker's quote could reach the rail unbacked. An event body may quote an
+//     order, a FERC/DOE text, or a captured news snippet, so check against the union of all three.
+const timelineCorpus = `${newsEvidenceText} ¶ ${wholeCorpus}`;
+for (const e of D.timeline || []) {
+  for (const q of proseQuotes(e.body || "")) req(`timeline "${e.title}"`, q, timelineCorpus);
+}
+
 // Section IV briefing quotes (REQUIRED) — templated across the six §206 orders, so check each against the
 // union of order texts. (These render on every §206 card; they must NOT silently attach to a card whose
 // order doesn't contain them, e.g. the E-2 final order.)

@@ -646,3 +646,90 @@ test("abeyance step scopes to all six orders (issues.md 2026-07-28 regression)",
       "timeline no longer scopes abeyance to the NYISO order");
   }
 });
+
+/* ---- The tracks layer (news-tracks-plan.md Part 5 #1, #4) ------------------------------------- */
+
+test("every timeline event declares a track that resolves in the registry", () => {
+  const ids = Object.keys(D.tracks || {});
+  assert.ok(ids.length >= 5, `track registry is populated (${ids.length} >= 5)`);
+  for (const e of D.timeline) {
+    assert.ok(e.track, `timeline event "${e.title}" declares a track`);
+    assert.ok(D.tracks[e.track], `timeline event "${e.title}" track "${e.track}" is a registry key`);
+  }
+});
+
+test("every track seeds at least one event (no card points at an empty lane)", () => {
+  // The seed-per-enum rule. The Timeline renders a card per track with an event count; a track with
+  // zero events would render "0 events" and a filter that empties the rail.
+  for (const [id, t] of Object.entries(D.tracks)) {
+    const n = D.timeline.filter((e) => e.track === id).length;
+    assert.ok(n >= 1, `track "${id}" (${t.label}) has at least one timeline event, has ${n}`);
+  }
+});
+
+test("every track carries its framing copy and a well-formed next step", () => {
+  for (const [id, t] of Object.entries(D.tracks)) {
+    for (const f of ["label", "short", "what", "whySeparate"]) {
+      assert.ok(t[f] && String(t[f]).trim(), `track "${id}" has ${f}`);
+    }
+    assert.ok(t.status && t.status.line && /^\d{4}-\d{2}-\d{2}$/.test(t.status.asOf || ""),
+      `track "${id}" has a status line stamped with an ISO asOf`);
+    // A dated next step must parse; an undated one must still say so in words rather than render blank.
+    if (t.next && t.next.date) {
+      assert.match(t.next.date, /^\d{4}-\d{2}-\d{2}$/, `track "${id}" next.date is ISO`);
+      assert.ok(!Number.isNaN(Date.parse(t.next.date + "T00:00:00")), `track "${id}" next.date parses`);
+    }
+    assert.ok(t.next && t.next.label, `track "${id}" says what comes next, even when undated`);
+    // Sources on a track card must resolve, like every other cited id on the site.
+    for (const s of t.src || []) assert.ok(D.SOURCES[s], `track "${id}" cites known source "${s}"`);
+  }
+});
+
+test("the context track stays free of docket framing", () => {
+  // `context` exists so an auction result never reads as a docket filing. If it ever gains a venue,
+  // the rail has re-blurred the distinction this track was added to draw.
+  const c = D.tracks.context;
+  assert.ok(c.noDocket === true, "context track is flagged noDocket");
+  assert.equal(c.venue, null, "context track has no venue");
+});
+
+test("sources cited from a track surface carry a publication date", () => {
+  // news-tracks-plan.md 2.3. On a track card "when was this said" is load-bearing: a June status line
+  // sourced to a May article is a different claim than one sourced the same week.
+  const cited = new Set();
+  for (const t of Object.values(D.tracks)) for (const s of t.src || []) cited.add(s);
+  for (const id of cited) {
+    const s = D.SOURCES[id];
+    assert.ok(s.published || s.undated === true,
+      `source "${id}" is cited from a track card, so it needs published (or undated: true)`);
+    if (s.published) {
+      assert.match(s.published, /^\d{4}-\d{2}-\d{2}$/, `source "${id}" published is ISO`);
+      // Some captured stamps carry a provenance suffix ("2026-06-18 (Internet Archive)"); compare dates.
+      const capturedDay = String(s.captured).slice(0, 10);
+      assert.ok(s.published <= capturedDay,
+        `source "${id}" cannot be published (${s.published}) after it was captured (${capturedDay})`);
+    }
+  }
+});
+
+test("news-refresh sources resolve and are stamped, and the capture is dated", () => {
+  assert.match(D.meta.newsCapture || "", /^\d{4}-\d{2}-\d{2}$/, "meta.newsCapture is an ISO date");
+  // Every source introduced by the refresh carries `published`; these are the ones whose freshness the
+  // reader is being asked to trust.
+  for (const id of ["frAD267", "frAD267s3", "isonews0629", "isonews0721", "udgov", "pjmbra"]) {
+    const s = D.SOURCES[id];
+    assert.ok(s, `refresh source "${id}" exists`);
+    assert.match(s.published || "", /^\d{4}-\d{2}-\d{2}$/, `refresh source "${id}" has an ISO published date`);
+  }
+});
+
+test("the AD26-7 governance track is sourced to the Federal Register, not to trade press alone", () => {
+  // The docket number and the conference date were snippet-only in the research pass. They ship only
+  // because the FR notice was read; if that citation is ever dropped the claim goes back to unverified.
+  const gov = D.tracks.gov;
+  assert.ok((gov.src || []).includes("frAD267"), "gov track cites the Federal Register notice");
+  assert.match(D.SOURCES.frAD267.url, /federalregister\.gov/, "the notice source is a federalregister.gov URL");
+  const conf = D.timeline.find((e) => e.track === "gov" && /notices a technical conference/i.test(e.title));
+  assert.ok(conf, "the timeline carries the notice event");
+  assert.ok((conf.src || []).includes("frAD267"), "the notice event cites the FR notice");
+});
