@@ -222,6 +222,36 @@ details.acc[open] .acc-chev { transform: rotate(90deg); }
 .kindpill.deadline { color: var(--deadline); background: var(--deadline-bg); }
 .kindpill.milestone { color: var(--text-muted); }
 
+/* Standalone per-docket pages (tools/build-docket-pages.mjs). Static HTML, no app JS, so they style
+   from scratch off the shared tokens rather than reusing the accordion's classes. */
+.dk-page { padding-bottom: 40px; }
+.dk-nav { font-size: 12.5px; color: var(--text-muted); margin: 16px 0 18px; }
+.dk-nav a { color: var(--accent-ink); }
+.dk-facts { display: grid; gap: 10px 22px; margin: 0 0 16px; padding: 12px 14px; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); }
+@media (min-width: 640px) { .dk-facts { grid-template-columns: repeat(3, 1fr); } }
+.dk-facts dt { font-family: var(--font-mono); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); }
+.dk-facts dd { margin: 2px 0 0; font-size: 14px; color: var(--ink); }
+.dk-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 0 0 22px; font-size: 13.5px; }
+.dk-cta { display: inline-block; background: var(--accent); color: #fff; padding: 8px 14px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+.dk-cta:hover { text-decoration: underline; }
+.dk-page h2 { font-size: 17px; margin: 26px 0 8px; }
+.dk-page > p { font-size: 14.5px; color: #2b3744; max-width: 78ch; }
+.dk-list { max-width: 78ch; padding-left: 20px; }
+.dk-list li { font-size: 14px; color: #2b3744; margin-bottom: 9px; }
+.dk-quotes { max-width: 82ch; padding-left: 20px; }
+.dk-quotes li { margin-bottom: 16px; }
+.dk-topic { font-weight: 700; font-size: 14px; margin: 0 0 4px; color: var(--ink); }
+.dk-cite { font-size: 11px; color: var(--text-muted); font-weight: 400; }
+.dk-quotes blockquote, .dk-list blockquote {
+  margin: 4px 0 5px; padding-left: 12px; border-left: 3px solid var(--rule-strong);
+  font-size: 14px; color: #2b3744;
+}
+.dk-links { font-size: 12px; margin: 3px 0 0; }
+.dk-roster { font-size: 13px; color: #2b3744; max-width: 82ch; line-height: 1.7; }
+.dk-siblings { font-size: 13.5px; }
+.dk-siblings a { margin-right: 4px; }
+.docket-page-link { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--accent-ink); }
+
 /* Baked crawlable summary (tools/build-seo.mjs). app.js replaces it on first render, so with JS on
    it is visible for a frame at most; with JS off it IS the briefing, so it has to read properly. */
 .seo-static { max-width: 78ch; }

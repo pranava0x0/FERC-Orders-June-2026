@@ -19,6 +19,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import vm from "node:vm";
+import { allDockets, slugFor } from "./build-docket-pages.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE = "https://pranava0x0.github.io/FERC-Orders-June-2026/";
@@ -55,19 +56,21 @@ export function buildSeoBlock(D) {
     out.push("</ul>");
   }
 
+  // Link the per-docket pages, not the PDFs. These are the crawl paths into the seven detail pages;
+  // each of those then links to its own PDF and to ferc.gov.
   out.push("<h2>The six show cause orders</h2>");
-  out.push("<p>Each order PDF below is a committed copy of the ferc.gov original, served with this site so page-precise citations open inline.</p>");
+  out.push("<p>Each order has its own page below, with the quoted directives, the region-specific findings and the full respondent roster. Every PDF is a committed copy of the ferc.gov original, served with this site so page-precise citations open inline.</p>");
   out.push("<ul>");
   for (const d of D.dockets) {
     out.push(
-      `<li><a href="${esc(d.pdf)}">${esc(d.item)} ${esc(d.rto)}, Docket ${esc(d.docket)}</a>: ` +
+      `<li><a href="dockets/${slugFor(d)}/">${esc(d.item)} ${esc(d.rto)}, Docket ${esc(d.docket)}</a>: ` +
         `${esc(d.cite)}, ${d.pages} pp. ${esc(d.status)}. Region: ${esc(d.region)}. ${esc(d.unique)}</li>`,
     );
   }
   out.push("</ul>");
   if (D.colocation) {
     out.push(
-      `<p>Decided the same morning: <a href="${esc(D.colocation.pdf)}">${esc(D.colocation.item)} ` +
+      `<p>Decided the same morning: <a href="dockets/${slugFor(D.colocation)}/">${esc(D.colocation.item)} ` +
         `(Docket ${esc(D.colocation.docket)}, ${esc(D.colocation.cite)})</a>, the PJM co-location order on ` +
         `rehearing that finalises the three new transmission services the six orders extend.</p>`,
     );
@@ -135,16 +138,54 @@ export function buildIndexHtml(html, D) {
         `  <meta name="twitter:image" content="${SITE}og-card.png" />`,
     );
   }
+
+  // The comment corpus is a genuine structured dataset (every filing scraped, text-extracted and
+  // quote-binned), and Dataset is a rich-result type the Report entity above does not cover. Declared
+  // once, after the existing JSON-LD block, and regenerated so its counts cannot drift from the data.
+  const DATASET_MARK = '"@type": "Dataset"';
+  const dataset =
+    `  <script type="application/ld+json">\n` +
+    JSON.stringify(
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        name: "RM26-4-000 public comment record, quote-binned",
+        description:
+          `All ${D.comments.filings} filings in FERC Docket RM26-4-000 scraped from eLibrary, with ` +
+          `${D.comments.total} public comments text-extracted and summarised the auditable way: verbatim ` +
+          `quotes binned to the five reform principles, the eight ANOPR questions and the six RTO regions, ` +
+          `each bin carrying the filer's own stance. AI-generated and provisional, with every quote ` +
+          `traceable to its source filing.`,
+        url: `${SITE}#comments`,
+        creator: { "@type": "Organization", name: "Independent regulatory analysis" },
+        dateModified: fresh,
+        isAccessibleForFree: true,
+        license: "https://github.com/pranava0x0/FERC-Orders-June-2026",
+        keywords: ["FERC", "RM26-4-000", "large load interconnection", "data centers", "public comments"],
+        measurementTechnique: "eLibrary scrape, text extraction, LLM quote extraction with deterministic verbatim validation",
+      },
+      null,
+      2,
+    ) +
+    `\n  </script>`;
+  if (!out.includes(DATASET_MARK)) out = out.replace("</head>", `${dataset}\n</head>`);
   return out;
 }
 
-export function buildSitemap(xml, D) {
+// Generated whole rather than patched, so a new docket page cannot be added and left out of it.
+// The root and the docket pages track the news sweep; the order PDFs keep their issuance date.
+export function buildSitemap(D) {
   const fresh = D.meta.newsCapture || D.meta.capture;
-  // Only the root URL tracks the news sweep; the order PDFs keep their issuance date.
-  return xml.replace(
-    /(<loc>https:\/\/pranava0x0\.github\.io\/FERC-Orders-June-2026\/<\/loc>\s*<lastmod>)[^<]*(<\/lastmod>)/,
-    `$1${fresh}$2`,
-  );
+  const rows = [`  <url>\n    <loc>${SITE}</loc>\n    <lastmod>${fresh}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`];
+  for (const d of allDockets(D)) {
+    rows.push(
+      `  <url><loc>${SITE}dockets/${slugFor(d)}/</loc><lastmod>${fresh}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`,
+    );
+  }
+  for (const d of allDockets(D)) {
+    rows.push(`  <url><loc>${SITE}${d.pdf}</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>`);
+  }
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${rows.join("\n")}\n</urlset>\n`;
 }
 
 if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -154,7 +195,7 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
   const html = readFileSync(htmlPath, "utf8");
   const xml = readFileSync(mapPath, "utf8");
   const nextHtml = buildIndexHtml(html, D);
-  const nextXml = buildSitemap(xml, D);
+  const nextXml = buildSitemap(D);
 
   if (process.argv.includes("--check")) {
     const stale = [];

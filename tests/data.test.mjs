@@ -8,6 +8,7 @@ import { dirname, join } from "node:path";
 import vm from "node:vm";
 import { stampAssets } from "../tools/stamp-assets.mjs";
 import { buildIndexHtml, buildSitemap } from "../tools/build-seo.mjs";
+import { pagesFor, allDockets, slugFor } from "../tools/build-docket-pages.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const code = readFileSync(join(here, "..", "docs", "js", "data.js"), "utf8");
@@ -909,7 +910,7 @@ test("baked SEO content and sitemap are regenerated from data.js and in sync", (
   const html = readFileSync(htmlPath, "utf8");
   const xml = readFileSync(mapPath, "utf8");
   assert.equal(html, buildIndexHtml(html, D), "docs/index.html is stale; regenerate with: node tools/build-seo.mjs");
-  assert.equal(xml, buildSitemap(xml, D), "docs/sitemap.xml is stale; regenerate with: node tools/build-seo.mjs");
+  assert.equal(xml, buildSitemap(D), "docs/sitemap.xml is stale; regenerate with: node tools/build-seo.mjs");
 });
 
 test("freshness signals track the data rather than drifting", () => {
@@ -933,4 +934,85 @@ test("the social card exists and is declared at the size the card type promises"
   const buf = readFileSync(png);
   assert.equal(buf.readUInt32BE(16), 1200, "card is 1200px wide, as og:image:width claims");
   assert.equal(buf.readUInt32BE(20), 630, "card is 630px tall, as og:image:height claims");
+});
+
+/* ---- Per-docket static pages (2026-07-28 SEO) ------------------------------------------------- */
+
+test("every docket has a static page, generated and in sync", () => {
+  // The app is one URL: its tabs are hash routes, and a fragment is not a separate URL to a search
+  // engine, so no order could rank for its own docket number. These pages are that surface.
+  const pages = pagesFor(D);
+  assert.equal(pages.size, D.dockets.length + 1, "one page per show cause order, plus E-2");
+  for (const [rel, html] of pages) {
+    const abs = join(here, "..", "docs", rel);
+    assert.ok(existsSync(abs), `${rel} exists (regenerate: node tools/build-docket-pages.mjs)`);
+    assert.equal(readFileSync(abs, "utf8"), html, `${rel} is stale; regenerate with: node tools/build-docket-pages.mjs`);
+  }
+});
+
+test("each docket page is unique, self-canonical, and substantial", () => {
+  // Duplicate-content risk is the thing that makes a bulk page-generation strategy backfire, so the
+  // pages must differ in title, description and body, not just in a docket number.
+  const titles = new Set(), descs = new Set();
+  for (const d of allDockets(D)) {
+    const slug = slugFor(d);
+    const html = readFileSync(join(here, "..", "docs", "dockets", slug, "index.html"), "utf8");
+    const title = (html.match(/<title>([^<]*)<\/title>/) || [])[1];
+    const desc = (html.match(/<meta name="description" content="([^"]*)"/) || [])[1];
+    assert.ok(title && desc, `${slug} has a title and description`);
+    titles.add(title);
+    descs.add(desc);
+
+    assert.ok(html.includes(`<link rel="canonical" href="https://pranava0x0.github.io/FERC-Orders-June-2026/dockets/${slug}/" />`),
+      `${slug} canonical points at itself`);
+    assert.ok(html.includes(d.docket), `${slug} names its docket number`);
+    assert.ok(html.includes(`../../${d.pdf}`), `${slug} links its committed order PDF`);
+    assert.match(html, /pranavaraparla\.com/, `${slug} carries the author attribution`);
+    assert.match(html, /Not affiliated with FERC or DOE/, `${slug} carries the disclaimer`);
+
+    const body = html.split("<main")[1].split("</main>")[0].replace(/<[^>]+>/g, " ");
+    const words = body.split(/\s+/).filter(Boolean).length;
+    assert.ok(words >= 400, `${slug} carries real content (${words} words >= 400)`);
+  }
+  assert.equal(titles.size, allDockets(D).length, "every page title is distinct");
+  assert.equal(descs.size, allDockets(D).length, "every meta description is distinct");
+});
+
+test("docket pages quote only text the order corpus actually carries", () => {
+  // These pages render the same d.dir quotes the app does, so they inherit the verbatim guarantee
+  // from tools/verify-quotes.mjs. This asserts the join: what is printed came from the audited data.
+  for (const d of allDockets(D)) {
+    const html = readFileSync(join(here, "..", "docs", "dockets", slugFor(d), "index.html"), "utf8");
+    for (const x of d.dir || []) {
+      const escaped = x.q.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+      assert.ok(html.includes(escaped), `${slugFor(d)} prints directive quote verbatim from data.js: ${x.q.slice(0, 40)}`);
+    }
+  }
+});
+
+test("the sitemap lists every page, and every listed page exists", () => {
+  const xml = readFileSync(join(here, "..", "docs", "sitemap.xml"), "utf8");
+  const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  const SITE = "https://pranava0x0.github.io/FERC-Orders-June-2026/";
+  assert.ok(locs.includes(SITE), "root URL is listed");
+  for (const d of allDockets(D)) {
+    assert.ok(locs.includes(`${SITE}dockets/${slugFor(d)}/`), `${slugFor(d)} is in the sitemap`);
+    assert.ok(locs.includes(`${SITE}${d.pdf}`), `${d.item} PDF is in the sitemap`);
+  }
+  // No 404s: every non-PDF site URL must resolve to a committed file.
+  for (const loc of locs) {
+    const rel = loc.replace(SITE, "");
+    if (!rel) continue;
+    const target = rel.endsWith("/") ? join(rel, "index.html") : rel;
+    assert.ok(existsSync(join(here, "..", "docs", target)), `sitemap URL ${loc} resolves to a committed file`);
+  }
+});
+
+test("the comment corpus is declared as a Dataset for rich results", () => {
+  const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
+  const blocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => JSON.parse(m[1]));
+  const ds = blocks.find((b) => b["@type"] === "Dataset");
+  assert.ok(ds, "a Dataset entity is declared");
+  assert.ok(ds.description.includes(String(D.comments.total)), "Dataset counts come from the data, not retyped");
+  assert.equal(ds.dateModified, D.meta.newsCapture, "Dataset tracks the newest sweep");
 });

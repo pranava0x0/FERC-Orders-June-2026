@@ -667,6 +667,11 @@
             '<span class="dir-quote">“' + esc(x.q) + '”</span></div>';
         }).join("") + "</div>";
       // A final order (E-2) carries a `kind` line up top so its nature reads at a glance vs the open §206 clocks.
+      // Each order also has a standalone page (tools/build-docket-pages.mjs) so it has a URL of its own
+      // to rank for and to link to. Keep the slug rule identical to the generator's.
+      var docketSlug = (d.docket + "-" + d.rto).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      var pageLink = '<a class="docket-page-link" href="dockets/' + esc(docketSlug) + '/">' +
+        "Open the " + esc(d.item) + " page for " + esc(d.docket) + ' <span aria-hidden="true">→</span></a>';
       var kindLine = d.kind ? '<div class="docket-kind">' + esc(d.kind) + ' · final order</div>' : "";
       var unique = d.unique ? '<div class="docket-unique"><span class="label">What’s unique to ' + esc(d.rto) + '</span><p>' + esc(d.unique) + "</p></div>" : "";
       var asksLabel = d.track ? "What the order decides" : "What FERC presses " + esc(d.rto) + " on";
@@ -721,7 +726,7 @@
         '<span class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</span></span>" +
         '<span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span>" +
         '<span class="chev" aria-hidden="true">›</span></summary>' +
-        '<div class="docket-body">' + orderLink + kindLine + unique + directives + asks + briefing + commish + region + roster + "</div></details>";
+        '<div class="docket-body">' + orderLink + kindLine + unique + directives + asks + briefing + commish + region + roster + pageLink + "</div></details>";
     }
     // The six §206 show cause orders, then the E-2 co-location order they build on (collapsed, labeled).
     var six = D.dockets.map(renderDocketCard).join("");
