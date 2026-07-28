@@ -733,3 +733,72 @@ test("the AD26-7 governance track is sourced to the Federal Register, not to tra
   assert.ok(conf, "the timeline carries the notice event");
   assert.ok((conf.src || []).includes("frAD267"), "the notice event cites the FR notice");
 });
+
+/* ---- The filing matrix (news-tracks-plan.md Part 5 #2) ---------------------------------------- */
+
+const FILING_VOCAB = ["filed-verified", "filed-reported", "signaled", "none-observed", "upcoming", "na"];
+
+test("the filing matrix is stamped and its columns are real procedural steps", () => {
+  const F = D.procedural.filings;
+  assert.ok(F, "procedural.filings exists");
+  assert.match(F.asOf, /^\d{4}-\d{2}-\d{2}$/, "filings.asOf is an ISO date");
+  assert.ok(F.note && F.note.trim(), "filings carries the none-observed legend");
+  const stepIds = new Set(D.procedural.steps.map((s) => s.id));
+  assert.ok(F.steps.length >= 1, "the matrix has columns");
+  for (const id of F.steps) assert.ok(stepIds.has(id), `matrix column "${id}" is a procedural step id`);
+});
+
+test("every stored filing row obeys the status vocabulary and its evidence requirement", () => {
+  const F = D.procedural.filings;
+  const dockets = new Set(D.dockets.map((d) => d.docket));
+  const stepIds = new Set(D.procedural.steps.map((s) => s.id));
+  for (const r of F.rows) {
+    assert.ok(FILING_VOCAB.includes(r.status), `row status "${r.status}" is in the closed vocabulary`);
+    assert.ok(dockets.has(r.docket), `row docket "${r.docket}" is one of the six`);
+    assert.ok(stepIds.has(r.step), `row step "${r.step}" is a procedural step id`);
+    assert.match(r.date || "", /^\d{4}-\d{2}-\d{2}$/, `row ${r.docket}/${r.step} carries an ISO date`);
+    assert.ok(r.gist && r.gist.trim(), `row ${r.docket}/${r.step} says what was filed`);
+
+    // The "a 200 is not proof" rule as a schema: the strongest status costs the most evidence.
+    if (r.status === "filed-verified") {
+      assert.ok(r.accession, `${r.docket}/${r.step} claims eLibrary verification, so it needs an accession`);
+      assert.ok(r.verified_at, `${r.docket}/${r.step} claims eLibrary verification, so it needs verified_at`);
+    }
+    if (r.status === "filed-reported" || r.status === "signaled") {
+      assert.ok((r.src || []).length, `${r.docket}/${r.step} is press-sourced, so it needs src`);
+      for (const s of r.src) assert.ok(D.SOURCES[s], `${r.docket}/${r.step} cites known source "${s}"`);
+    }
+  }
+});
+
+test("no two filing rows describe the same docket and step", () => {
+  // A duplicate (docket, step) would render two chips in one cell and silently pick one.
+  const seen = new Set();
+  for (const r of D.procedural.filings.rows) {
+    const key = `${r.docket}::${r.step}`;
+    assert.ok(!seen.has(key), `one row per cell: ${key} is duplicated`);
+    seen.add(key);
+  }
+});
+
+test("the matrix stores observations only, never a derived state", () => {
+  // `upcoming` and `none-observed` are computed from the clock at render time. Storing one would
+  // freeze a date-dependent claim into the data and go stale without any code change.
+  for (const r of D.procedural.filings.rows) {
+    assert.ok(!["upcoming", "none-observed"].includes(r.status),
+      `row ${r.docket}/${r.step} stores "${r.status}", which the renderer derives; store observations only`);
+  }
+});
+
+test("no filing claims eLibrary verification while eLibrary is unchecked", () => {
+  // Honesty rail for the 2026-07-28 state: ferc.gov blocks automated retrieval, so no accession has
+  // been read. If a future refresh adds a filed-verified row it must bring an accession with it, which
+  // the schema test above enforces. This test just keeps the legend and the data telling one story.
+  const F = D.procedural.filings;
+  const verified = F.rows.filter((r) => r.status === "filed-verified");
+  if (!verified.length) {
+    assert.match(F.note, /eLibrary/i, "the legend explains that nothing is eLibrary-confirmed yet");
+  } else {
+    for (const r of verified) assert.ok(r.accession && r.verified_at, `${r.docket} verified row carries its proof`);
+  }
+});

@@ -222,6 +222,52 @@ details.acc[open] .acc-chev { transform: rotate(90deg); }
 .kindpill.deadline { color: var(--deadline); background: var(--deadline-bg); }
 .kindpill.milestone { color: var(--text-muted); }
 
+/* Per-RTO filing matrix (news-tracks-plan.md Feature B). The chips are the at-a-glance layer and are
+   lossy on their own, so each carries its full sentence in aria-label; the observation list below the
+   grid holds the gist, date and sources in text. */
+.proc-collide {
+  font-size: 13px; color: #2b3744; border-left: 3px solid var(--deadline); background: var(--deadline-bg);
+  padding: 8px 12px; border-radius: 0 8px 8px 0; margin: 12px 0;
+}
+.proc-collide-lbl {
+  font-family: var(--font-mono); font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--deadline); margin-right: 6px;
+}
+.fm { border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; margin: 14px 0; background: var(--surface); }
+.fm-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.fm-head h4 { font-size: 14.5px; margin: 0; }
+.fm-asof { font-size: 10.5px; color: var(--text-muted); }
+.fm-lede { font-size: 12.5px; color: var(--text-muted); margin: 4px 0 10px; max-width: 80ch; }
+.fm-scroll { overflow-x: auto; }
+.fm-table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+.fm-table th, .fm-table td { border: 1px solid var(--rule); padding: 6px 8px; text-align: left; vertical-align: top; }
+.fm-table thead th { background: var(--bg); font-size: 11.5px; }
+.fm-col { display: block; font-weight: 700; }
+.fm-coldate { display: block; font-size: 10.5px; color: var(--text-muted); white-space: nowrap; }
+.fm-rto { display: block; font-weight: 700; }
+.fm-docket { display: block; font-size: 10.5px; color: var(--text-muted); white-space: nowrap; }
+.fm-when { display: block; font-size: 10.5px; color: var(--text-muted); margin-top: 3px; }
+.fm-chip {
+  display: inline-block; font-family: var(--font-mono); font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 7px; border-radius: 999px;
+  border: 1px solid currentColor; white-space: nowrap;
+}
+/* Weight reads off the evidence: a docket-confirmed filing is filled, a press report is outlined,
+   an announced intent is quieter still, and the two derived states are grey. */
+.fm-filed-verified { color: #fff; background: var(--accent); border-color: var(--accent); }
+.fm-filed-reported { color: var(--accent-ink); }
+.fm-signaled { color: var(--text-muted); font-style: italic; }
+.fm-none-observed { color: var(--text-muted); border-style: dashed; }
+.fm-upcoming { color: var(--text-muted); opacity: 0.75; }
+.fm-na { color: var(--text-muted); opacity: 0.55; }
+.fm-obs-h { font-size: 12.5px; margin: 14px 0 6px; }
+.fm-obs-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.fm-obs { border-top: 1px solid var(--rule); padding-top: 8px; }
+.fm-obs-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.fm-obs-who { font-weight: 700; font-size: 13px; color: var(--ink); }
+.fm-obs-gist { font-size: 13px; color: #2b3744; margin: 4px 0 5px; max-width: 78ch; }
+.mh-observed { font-size: 11px; color: var(--text-muted); }
+
 /* "Where things stand" strip (Overview) — one line per track, generated from the registry. */
 .stand { border: 1px solid var(--rule); border-radius: 10px; padding: 12px 14px; margin: 18px 0; background: var(--surface); }
 .stand-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }

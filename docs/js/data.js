@@ -1289,6 +1289,42 @@ window.FERC_DATA = (function () {
       { id: "showcause", label: "Show cause or file tariff changes", date: "2026-08-17", period: "60 days from issuance", cite: "Ordering ¶ (B)", desc: "Each RTO/ISO and its Transmission Owners must show cause why the tariff remains just and reasonable, or file remedial tariff changes." },
       { id: "response", label: "Response window opens", date: null, dateNote: "30 days after each RTO’s 60-day filing lands", period: "filing + 30 days", cite: "Ordering ¶ (E)", desc: "Interested entities may respond on whether the tariff remains just and reasonable and, if not, what replacement rates to implement. Opens once the show-cause/tariff filing is made." },
     ],
+
+    // ---- Per-RTO filing matrix (news-tracks-plan.md Feature B) -------------------------------
+    // The board above tracks the SCHEDULE; this tracks the OBSERVATIONS. They rest on different
+    // evidence and must not be conflated: a date passing is arithmetic, a filing landing is a fact
+    // somebody had to go and check.
+    //
+    // Only observations are stored. Every other cell is DERIVED from the clock at render time
+    // (`upcoming` before the step's date, `none-observed` after), so a matrix left sitting still can
+    // never harden into a false "nothing was filed" claim, and no status needs re-hand-editing as
+    // dates roll past. `steps` names the columns, by procedural.steps id.
+    //
+    //   filed-verified — accession seen on eLibrary. Requires `accession` + `verified_at`.
+    //   filed-reported — credible press or first-party RTO channel only. Requires `src`.
+    //   signaled       — the entity announced intent; nothing on the docket yet. Requires `src`.
+    //   none-observed  — derived: the deadline passed and our checks found nothing.
+    //   upcoming       — derived: the deadline has not arrived yet.
+    //
+    // As of the 2026-07-28 sweep NOTHING is `filed-verified`: eLibrary stayed Cloudflare-gated, so no
+    // accession has been read. That is the honest state, and the legend says so in the reader's words.
+    filings: {
+      asOf: "2026-07-28",
+      steps: ["report", "abeyance", "showcause"],
+      note: "Observed filings only. An empty cell means our checks found nothing, which is not proof nothing was filed. Nothing here is confirmed against an eLibrary accession yet: ferc.gov blocks automated retrieval, so docket confirmation is a manual step this refresh did not complete.",
+      rows: [
+        {
+          docket: "EL26-72-000", step: "report", status: "filed-reported", date: "2026-07-20",
+          gist: "Informational filing on regional resource adequacy. Outlines requiring new large loads to bring incremental new generation, and not procuring capacity for them through the regional capacity market.",
+          src: ["isonews0721"], accession: null, verified_at: null,
+        },
+        {
+          docket: "EL26-72-000", step: "abeyance", status: "signaled", date: "2026-06-29",
+          gist: "Says it and the region’s transmission owners intend to request a 90-day abeyance. If FERC grants it, the filing moves to November 16, 2026.",
+          src: ["isonews0629"], accession: null, verified_at: null,
+        },
+      ],
+    },
   };
 
   // ---- Record-to-rule crosswalk (policy-analysis-spec.md Part 3.3) ----------------------------

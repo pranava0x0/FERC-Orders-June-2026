@@ -123,8 +123,109 @@
     }).join("");
     return head("What happens next: the §206 procedural clock", P.basis) +
       '<ol class="proc-board">' + rows + "</ol>" +
-      '<p class="proc-foot">Dates are derived from the ' + esc(P.issuedLabel) +
-      " issuance, business-day-adjusted; status reflects today’s date, not confirmed eLibrary filings. Confirm each deadline in the order before relying on it.</p>";
+      // The Aug 17 collision: two clocks, one date, different dockets. Exactly the confusion the
+      // tracks model exists to prevent, so it is called out where the clock is read.
+      '<p class="proc-collide"><span class="proc-collide-lbl">Two clocks, one date</span> ' +
+      "August 17 carries both the six show-cause filings and PJM’s further compliance filing in the " +
+      "separate EL25-49 co-location docket. Different proceedings, same deadline.</p>" +
+      renderFilingMatrix() +
+      // The old foot described one evidence base. There are now two, and they are not equally strong.
+      '<p class="proc-foot">The clock above is arithmetic: dates derived from the ' + esc(P.issuedLabel) +
+      " issuance, business-day-adjusted, and status computed against today. The matrix below it is " +
+      "observation, and a much weaker guarantee: it records only what our checks actually found, on " +
+      "the evidence noted per cell. Confirm each deadline in the order, and each filing on the docket, " +
+      "before relying on either.</p>";
+  }
+
+  /* ---- Per-RTO filing matrix (news-tracks-plan.md Feature B) ---- */
+  // Stored rows are observations only; every other cell is derived from the clock here, so the grid
+  // cannot go stale into a false "nothing was filed". The chips are lossy on their own, so each carries
+  // the full sentence in aria-label (the house rule for a glyph standing in for a fact).
+  var FILING_STATUS = {
+    "filed-verified": { lbl: "Filed", sentence: "Filed, and confirmed against an eLibrary accession." },
+    "filed-reported": { lbl: "Filed (reported)", sentence: "Reported filed by press or the operator’s own channel. Not confirmed on the docket." },
+    signaled: { lbl: "Signaled", sentence: "The operator has announced it intends to file. Nothing on the docket yet." },
+    "none-observed": { lbl: "Not observed", sentence: "The deadline has passed and our checks found nothing. That is not proof nothing was filed." },
+    upcoming: { lbl: "Upcoming", sentence: "The deadline has not arrived yet." },
+    na: { lbl: "N/A", sentence: "This step does not apply here." },
+  };
+
+  // (docket, step) -> stored observation, if any.
+  function filingObs(docket, stepId) {
+    var F = D.procedural && D.procedural.filings;
+    if (!F) return null;
+    return (F.rows || []).filter(function (r) { return r.docket === docket && r.step === stepId; })[0] || null;
+  }
+  // The derived half: no observation means the answer depends only on whether the date has passed.
+  function filingCell(docket, stepId) {
+    var obs = filingObs(docket, stepId);
+    if (obs) return { status: obs.status, obs: obs };
+    var ps = procStatus();
+    var hit = ps && ps.steps.filter(function (x) { return x.s.id === stepId; })[0];
+    var passed = hit && hit.date && hit.status === "past";
+    return { status: passed ? "none-observed" : "upcoming", obs: null };
+  }
+  // Counts for the masthead chip and the matrix caption. Derived, never hand-written.
+  function filingTally(stepId) {
+    var six = D.dockets || [];
+    var seen = six.filter(function (d) {
+      var c = filingCell(d.docket, stepId);
+      return c.status === "filed-verified" || c.status === "filed-reported";
+    }).length;
+    return { seen: seen, total: six.length };
+  }
+
+  function renderFilingMatrix() {
+    var F = D.procedural && D.procedural.filings;
+    if (!F || !F.steps || !D.dockets) return "";
+    var stepById = {};
+    (D.procedural.steps || []).forEach(function (s) { stepById[s.id] = s; });
+    var cols = F.steps.filter(function (id) { return stepById[id]; });
+
+    var headCells = cols.map(function (id) {
+      var s = stepById[id];
+      return '<th scope="col"><span class="fm-col">' + esc(s.label) + "</span>" +
+        (s.date ? '<span class="fm-coldate mono">' + esc(fmtISO(s.date)) + "</span>" : "") + "</th>";
+    }).join("");
+
+    var bodyRows = D.dockets.map(function (d) {
+      var cells = cols.map(function (id) {
+        var c = filingCell(d.docket, id);
+        var m = FILING_STATUS[c.status] || { lbl: c.status, sentence: c.status };
+        var when = c.obs && c.obs.date ? '<span class="fm-when mono">' + esc(fmtISO(c.obs.date)) + "</span>" : "";
+        return '<td><span class="fm-chip fm-' + esc(c.status) + '" role="img" aria-label="' +
+          esc(d.rto + ", " + stepById[id].label + ": " + m.sentence) + '">' + esc(m.lbl) + "</span>" + when + "</td>";
+      }).join("");
+      return '<tr><th scope="row"><span class="fm-rto">' + esc(d.rto) +
+        '</span><span class="fm-docket mono">' + esc(d.docket) + "</span></th>" + cells + "</tr>";
+    }).join("");
+
+    // Every observation in full, beneath the grid. The chips are the at-a-glance layer; this is where
+    // the gist, the date and the sources live, so nothing is hidden behind a hover or a popover.
+    var obsList = (F.rows || []).map(function (r) {
+      var d = (D.dockets || []).filter(function (x) { return x.docket === r.docket; })[0];
+      var m = FILING_STATUS[r.status] || { lbl: r.status };
+      var acc = r.accession
+        ? ' <a class="cite-link" href="' + esc(eli(r.accession)) + '" target="_blank" rel="noopener noreferrer">eLibrary ' +
+          esc(r.accession) + ' <span class="ext" aria-hidden="true">↗</span></a>'
+        : "";
+      return '<li class="fm-obs"><div class="fm-obs-head"><span class="fm-chip fm-' + esc(r.status) + '">' + esc(m.lbl) + "</span>" +
+        '<span class="fm-obs-who">' + esc((d ? d.rto : r.docket) + " · " + ((stepById[r.step] || {}).label || r.step)) + "</span>" +
+        '<span class="fm-when mono">' + esc(fmtISO(r.date)) + "</span></div>" +
+        '<p class="fm-obs-gist">' + esc(r.gist) + "</p>" + srcChips(r.src) + acc + "</li>";
+    }).join("");
+
+    var tally = filingTally("report");
+    return '<section class="fm" aria-labelledby="fm-h">' +
+      '<div class="fm-head"><h4 id="fm-h">What has actually been filed</h4>' +
+      '<span class="fm-asof mono">checked ' + esc(F.asOf) + "</span></div>" +
+      '<p class="fm-lede">' + esc(F.note) + "</p>" +
+      '<div class="fm-scroll"><table class="fm-table"><caption class="sr-only">Observed filings by grid operator and procedural step. ' +
+      esc(tally.seen + " of " + tally.total + " generation-adequacy reports observed.") + '</caption>' +
+      "<thead><tr><th scope=\"col\">Grid operator</th>" + headCells + "</tr></thead>" +
+      "<tbody>" + bodyRows + "</tbody></table></div>" +
+      (obsList ? '<h5 class="fm-obs-h">What we observed</h5><ul class="fm-obs-list">' + obsList + "</ul>" : "") +
+      "</section>";
   }
 
   // ---- Record-to-rule crosswalk (data.js → policyMap; policy-analysis-spec.md Part 4.1) ----------
@@ -1440,6 +1541,25 @@
     var n = ps.next.s;
     el.innerHTML = 'Next deadline · <span class="mono">' + esc(fmtISO(n.date)) + "</span> · " + esc(n.label) +
       ' <span class="mh-derived">(derived)</span>';
+    // Second clause: the most recent PASSED step the filing matrix covers, with its observed count.
+    // Without it the chip announces a deadline and says nothing about whether the last one was met,
+    // which is the honesty gap a visitor hits first. Counts derive from the matrix, never hand-written.
+    // Appended as a text node rather than folded into the innerHTML above: no markup needed here.
+    var F = D.procedural && D.procedural.filings;
+    if (F && F.steps) {
+      var passed = ps.steps.filter(function (x) {
+        return x.status === "past" && F.steps.indexOf(x.s.id) >= 0;
+      });
+      var last = passed[passed.length - 1];
+      if (last) {
+        var t = filingTally(last.s.id);
+        var span = document.createElement("span");
+        span.className = "mh-observed";
+        span.textContent = last.s.label.toLowerCase() + ": " + t.seen + " of " + t.total + " observed";
+        el.appendChild(document.createTextNode(" · "));
+        el.appendChild(span);
+      }
+    }
     el.hidden = false;
   }
 
