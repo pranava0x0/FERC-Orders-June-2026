@@ -87,6 +87,20 @@ node tools/verify-quotes.mjs
 Append to `issues.md` anything found broken, and to `agent-runs.md` a row for any sweep agent, with its
 token usage. Update the progress log at the top of `news-tracks-plan.md`.
 
+## Search Console
+
+The site is a verified URL-prefix property at
+`https://pranava0x0.github.io/FERC-Orders-June-2026/` (Google account: the repo owner's).
+`sitemap.xml` is submitted and regenerates from `data.js`, so a refresh that adds pages needs no
+resubmission; Google re-reads the same URL.
+
+**Do not delete `docs/google1a32de6a02a9a6e0.html` or the `google-site-verification` meta tag in
+`docs/index.html`.** Both are ownership proofs. Google un-verifies a property when the artifact it
+verified with disappears, and the failure is silent: reporting just stops.
+
+After a refresh that adds URLs, optionally inspect one new URL in Search Console and hit **Request
+indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
+
 ## Gotchas learned the hard way
 
 - **The browser caches `data.js` hard** on `localhost`. When a change does not appear, load
