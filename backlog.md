@@ -464,3 +464,37 @@ Recommended next steps, in order:
   (first section open). Shipped on `feat/comments-consensus-ux` (PR #10). Known follow-ups from review:
   the legend shows a net-oppose swatch with no matching cells (issues.md), and stance *coverage* is still
   flagship-only until the Haiku→Sonnet re-author lands (see the model-tier note above).
+
+---
+
+- **HIGH (2026-07-28)** — **Add CI: nothing runs the test suite on push.** The repo has no
+  `.github/workflows/`, so the 99 tests, the quote sweep, the llms.txt sync check and the new
+  asset-token check only run when someone remembers locally. Both bugs found in the PR #14 review were
+  invisible to local checking, which is exactly the case CI exists for. A single workflow running
+  `node --test tests/*.test.mjs`, `node tools/verify-quotes.mjs`, `node tools/build-llms.mjs --check`
+  and `node tools/stamp-assets.mjs --check` would cover it. Pin `uses:` to a full commit SHA with a
+  minimal `permissions:` block (CLAUDE.md supply-chain rules).
+
+- **HIGH (2026-07-28)** — **Post-Aug-17 refresh: run REFRESH.md end to end.** Aug 17 carries both the
+  six show-cause / tariff filings and PJM's further compliance filing in EL25-49. This is the real
+  test of the tracks + filing-matrix design, and the first run where cells should move to
+  `filed-verified`. Aug 3 (abeyance requests, ISO-NE has announced it will use it) is the smaller
+  rehearsal before it.
+
+- **MEDIUM (2026-07-28)** — **Close the eLibrary verification queue** (REFRESH.md items 1 to 4).
+  Needs a manual browser session: the six 30-day report accessions (only ISO-NE is observed, and only
+  as press-reported), the reported Jul 17 ratepayer-advocate filing's procedural type and filers, any
+  rehearing requests on or before Jul 20, and EL25-49's Feb 2026 compliance filing effective date.
+  Until these land, nothing in the filing matrix can reach `filed-verified`.
+
+- **LOW (2026-07-28)** — **Revisit the `none-observed` legend wording.** PJM's 30-day report was
+  reported filed in trade press but could not be verified this pass, so its cell derives to
+  `none-observed` ("our checks found nothing"). That is honest about our evidence but a reader could
+  take the empty cell as "PJM did not file," which is probably false. Raised in the PR #14 self-review
+  and deliberately left; the fix, if any, is the wording rather than the data. A third status for
+  "reported but unverified by us" is the alternative, at the cost of vocabulary for one row.
+
+- **LOW (2026-07-28)** — **AD26-7 has no committed primary document.** The governance track ships as
+  timeline events plus a track card, with a pointer from the Dockets tab, because there is no order
+  PDF to page-cite. If FERC issues its post-conference notice with the structured question set, that
+  becomes a quotable primary source and the track earns a Dockets-grade card.

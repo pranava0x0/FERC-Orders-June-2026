@@ -210,3 +210,22 @@ holds comfortably. No workflow, no Task tool.
   before iterating it.
 - **Net:** 4 phases, 5 commits, tests 82 → 98, required quotes 193 → 209. Efficiency good: no wasted
   agent spawns, and the verification pass was scoped to what actually changes what ships.
+
+### Review round (same session): PR #14, one bot reviewer, no agents
+
+- **My self-review found 1 real bug**, the Timeline URL/state divergence, reproduced in a browser
+  before it was written up rather than asserted from reading. Cost: one diff read plus one browser
+  repro, no agent.
+- **Codex found the one I was blind to** (P1, stale asset cache tokens). Worth noting *where* it
+  landed: I had spent the session inside application logic, and the finding was in the deploy layer,
+  the one place my attention never went. **Lesson: weight an independent reviewer's finding higher
+  when it lands outside the area you were working in** — that is the whole reason to have one.
+- **Poll tuning:** I backgrounded a 20-minute poll for the bot review and it timed out; the review
+  landed shortly after. Codex review latency on this repo is **> 20 min**, so poll ~30 to 40 min, or
+  just check back rather than burning a foreground wait.
+- **Net for the whole session:** 4 phases + a review round, 6 commits, zero subagents, 8 verification
+  fetches. Tests 82 → 99, required quotes 193 → 209, 3 bugs logged with regression tests for the two
+  code bugs. The single biggest efficiency lesson repeats last session's: **DOM assertions never
+  failed; screenshots failed ~5 times** (hidden pane, and one `innerWidth: 0` viewport that inflated
+  every measurement ~20× and briefly looked like a layout regression). That is now written into
+  AGENTS.md as a check rather than left as a session note, since noting it twice did not stop it.
