@@ -498,3 +498,25 @@ Recommended next steps, in order:
   timeline events plus a track card, with a pointer from the Dockets tab, because there is no order
   PDF to page-cite. If FERC issues its post-conference notice with the structured question set, that
   becomes a quotable primary source and the track earns a Dockets-grade card.
+
+- **HIGH (2026-07-28)** — **Per-docket static pages: the site is one indexable URL.** The six tabs are
+  hash routes, and a fragment is not a separate URL to a search engine, so 3,500 pages of analysed
+  record compete for a single result. Generating six real pages (one per order: RTO, docket, cite,
+  page-cited directives, region-specific findings, respondent roster, link to the committed PDF) from
+  `data.js` would multiply the indexable surface with genuinely unique content, give each order a URL
+  worth linking to, and let each rank for its own docket number. Each needs a self-referencing
+  canonical, a link back into the app, and the footer disclaimer. Generate them the same way as
+  `build-seo.mjs`, with a sync test. This is the largest remaining SEO lever; it is listed rather than
+  built because it adds site architecture and deserves a design decision, not a late-session sprint.
+
+- **MEDIUM (2026-07-28)** — **`robots.txt` on a Pages project site is at the wrong path.** It is
+  served at `/FERC-Orders-June-2026/robots.txt`, but crawlers read `pranava0x0.github.io/robots.txt`
+  (the user-site root), which this repo does not control. The file documents intent and the `<meta
+  name="robots">` tag does the actual work, so nothing is broken; worth knowing that the `Sitemap:`
+  line in it is largely decorative. Submitting the sitemap directly in Google Search Console is the
+  reliable path.
+
+- **LOW (2026-07-28)** — **Consider `BreadcrumbList` / `Dataset` JSON-LD.** The page ships a `Report`
+  entity. If per-docket pages land, each should carry its own `Report` or `Legislation` entity with
+  `datePublished` and the FERC cite, and the comment corpus arguably qualifies as a `Dataset` (273
+  filings, structured, openly licensed), which is a rich-result type worth testing.

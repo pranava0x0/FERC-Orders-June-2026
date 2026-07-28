@@ -53,9 +53,12 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 98 tests across the suites
+node --test tests/*.test.mjs   # 103 tests across the suites
 node tools/verify-quotes.mjs   # whole-site quote audit (one command; --list for every quote)
 node tools/check-staleness.mjs # advisory: passed deadlines, stale stamps, unobserved filings
+node tools/build-seo.mjs       # bake crawlable content + freshness dates (--check to verify)
+node tools/stamp-assets.mjs    # content-hash the ?v= asset tokens (--check to verify)
+python3 tools/build-og-image.py # regenerate the 1200x630 social card
 ```
 
 Refreshing the data (new filings, news, docket activity) is its own runbook:

@@ -222,6 +222,14 @@ details.acc[open] .acc-chev { transform: rotate(90deg); }
 .kindpill.deadline { color: var(--deadline); background: var(--deadline-bg); }
 .kindpill.milestone { color: var(--text-muted); }
 
+/* Baked crawlable summary (tools/build-seo.mjs). app.js replaces it on first render, so with JS on
+   it is visible for a frame at most; with JS off it IS the briefing, so it has to read properly. */
+.seo-static { max-width: 78ch; }
+.seo-static h2 { font-size: 17px; margin: 22px 0 6px; }
+.seo-static p { font-size: 14.5px; color: #2b3744; margin: 0 0 10px; }
+.seo-static ul { margin: 0 0 14px; padding-left: 20px; }
+.seo-static li { font-size: 14px; color: #2b3744; margin-bottom: 7px; }
+
 /* KPI deadline state — the two clock cards read their status off the procedural board. */
 .kpi-state {
   margin-top: 6px; font-family: var(--font-mono); font-size: 10px; font-weight: 700;

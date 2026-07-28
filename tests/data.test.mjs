@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
 import { stampAssets } from "../tools/stamp-assets.mjs";
+import { buildIndexHtml, buildSitemap } from "../tools/build-seo.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const code = readFileSync(join(here, "..", "docs", "js", "data.js"), "utf8");
@@ -877,4 +878,59 @@ test("docs/index.html asset tokens are derived from asset content and in sync", 
   // Distinct content must give distinct tokens; a shared token is the bug this replaced.
   const byToken = new Set(tokens.map(([, , t]) => t));
   assert.equal(byToken.size, tokens.length, "each asset busts independently rather than sharing one token");
+});
+
+/* ---- SEO: crawlable content + freshness (2026-07-28) ------------------------------------------ */
+
+test("the served HTML carries real crawlable content, not just a shell", () => {
+  // Before tools/build-seo.mjs the six tab panels shipped EMPTY and app.js filled them, so the served
+  // HTML held 113 words on a site holding 3,500 pages of analysed record. Googlebot renders JS on a
+  // second, budget-limited pass; Bing, most LLM crawlers and every social unfurler largely do not.
+  const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
+  const body = html.split("<body>")[1] || "";
+  const text = body
+    .replace(/<script[\s\S]*?<\/script>/g, " ")
+    .replace(/<noscript[\s\S]*?<\/noscript>/g, " ")
+    .replace(/<[^>]+>/g, " ");
+  const words = text.split(/\s+/).filter(Boolean).length;
+  assert.ok(words >= 800, `served HTML carries a real briefing without JS (${words} words >= 800)`);
+
+  // It must be the site's own facts, not filler: the dockets and the reform categories are the two
+  // things a search result for this topic should be able to match on.
+  for (const d of D.dockets) {
+    assert.ok(html.includes(d.docket), `baked HTML names docket ${d.docket}`);
+  }
+  assert.ok(/<h2[^>]*>/.test(body), "baked content uses real headings");
+});
+
+test("baked SEO content and sitemap are regenerated from data.js and in sync", () => {
+  const htmlPath = join(here, "..", "docs", "index.html");
+  const mapPath = join(here, "..", "docs", "sitemap.xml");
+  const html = readFileSync(htmlPath, "utf8");
+  const xml = readFileSync(mapPath, "utf8");
+  assert.equal(html, buildIndexHtml(html, D), "docs/index.html is stale; regenerate with: node tools/build-seo.mjs");
+  assert.equal(xml, buildSitemap(xml, D), "docs/sitemap.xml is stale; regenerate with: node tools/build-seo.mjs");
+});
+
+test("freshness signals track the data rather than drifting", () => {
+  // These were hand-typed and had fallen a month behind the newest sweep, on a site whose entire
+  // value proposition is currency.
+  const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
+  const xml = readFileSync(join(here, "..", "docs", "sitemap.xml"), "utf8");
+  const fresh = D.meta.newsCapture;
+  assert.match(html, new RegExp(`"dateModified":\\s*"${fresh}"`), "JSON-LD dateModified matches the newest sweep");
+  assert.ok(xml.includes(`<lastmod>${fresh}</lastmod>`), "sitemap lastmod matches the newest sweep");
+});
+
+test("the social card exists and is declared at the size the card type promises", () => {
+  // twitter:card was summary_large_image with NO og:image at all, so every share unfurled blank.
+  const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
+  const png = join(here, "..", "docs", "og-card.png");
+  assert.ok(existsSync(png), "docs/og-card.png exists (regenerate: python3 tools/build-og-image.py)");
+  assert.match(html, /property="og:image" content="https:\/\/[^"]+og-card\.png"/, "og:image declared absolutely");
+  assert.match(html, /property="og:image:alt"/, "og:image carries alt text");
+  // PNG header: width/height are big-endian uint32 at bytes 16..24 of the IHDR chunk.
+  const buf = readFileSync(png);
+  assert.equal(buf.readUInt32BE(16), 1200, "card is 1200px wide, as og:image:width claims");
+  assert.equal(buf.readUInt32BE(20), 630, "card is 630px tall, as og:image:height claims");
 });
