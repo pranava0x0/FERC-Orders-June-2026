@@ -201,7 +201,7 @@ window.FERC_DATA = (function () {
     {
       date: "≈ Aug 17, 2026", iso: "2026-08-17", kind: "deadline",
       title: "60-day justification or tariff filing due",
-      body: "Within 60 days, each grid operator and its TOs must either show cause why its current tariff stays just and reasonable absent clear, consistent large-load provisions, or explain the §206 tariff changes that would remedy the concerns (Ordering Para (B)). The orders also set a 21-day intervention deadline (Rule 214), a 30-day window for responses after the operators file, and, in the NYISO order, a 45-day deadline to request abeyance of up to 90 days (NYISO P 42). The refund effective date is the order’s Federal Register publication date.",
+      body: "Within 60 days, each grid operator and its TOs must either show cause why its current tariff stays just and reasonable absent clear, consistent large-load provisions, or explain the §206 tariff changes that would remedy the concerns (Ordering Para (B)). The orders also set a 21-day intervention deadline (Rule 214), a 30-day window for responses after the operators file, and, in each order, a 45-day deadline to request abeyance of up to 90 days (e.g., NYISO P 42). The refund effective date is the order’s Federal Register publication date.",
       src: ["e7", "e12", "natlaw"],
     },
     {
@@ -213,8 +213,8 @@ window.FERC_DATA = (function () {
     {
       date: "Fall 2026, if requested", iso: "2026-10-01", kind: "deadline",
       title: "Abeyance requests can slow the clock, but only within a bounded lane",
-      body: "NYISO's order expressly lets respondents request abeyance within 45 days, capped at 90 days and subject to FERC scrutiny. Practitioners read that as the safety valve for regions that need stakeholder process time, not an open-ended pause. Any abeyance would push the tariff-answer deadline later for that region while leaving the broader §206 proceeding alive.",
-      src: ["e12", "substack", "natlaw"],
+      body: "Every one of the six orders lets respondents request abeyance within 45 days, capped at 90 days and subject to FERC scrutiny; the Commission says it will not grant abeyances reflexively. Practitioners read that as the safety valve for regions that need stakeholder process time, not an open-ended pause. Any abeyance would push the tariff-answer deadline later for that region while leaving the broader §206 proceeding alive.",
+      src: ["e11", "e12", "substack", "natlaw"],
     },
     {
       date: "After the response records close", iso: "2026-10-17", kind: "ferc",
@@ -1112,7 +1112,7 @@ window.FERC_DATA = (function () {
       { id: "intervene", label: "Motions to intervene", date: "2026-07-09", period: "21 days from issuance", cite: "Ordering ¶ (D) · Rule 214", desc: "Notices of intervention or motions to intervene in the six proceedings are due." },
       { id: "report", label: "Generation-adequacy report", date: "2026-07-20", dateNote: "30 days (Jul 18) rolled to the next business day", period: "30 days from issuance", cite: "Ordering ¶ (C)", desc: "Each RTO/ISO files an informational report on how it will ensure adequate generation to serve existing and new large loads." },
       { id: "rehearing", label: "Requests for rehearing", date: "2026-07-20", dateNote: "statutory 30 days (Jul 18) rolled to the next business day", period: "30 days from issuance", cite: "FPA § 313(a)", desc: "Statutory deadline to seek rehearing of the June 18 orders before a court appeal." },
-      { id: "abeyance", label: "Abeyance request (NYISO only)", date: "2026-08-03", dateNote: "45 days (Aug 2) rolled to the next business day", period: "45 days from issuance", cite: "E-12 (NYISO) P 42", desc: "NYISO-only: deadline to request full or partial abeyance (up to 90 days) of the proceeding." },
+      { id: "abeyance", label: "Abeyance requests", date: "2026-08-03", dateNote: "45 days (Aug 2) rolled to the next business day", period: "45 days from issuance", cite: "All six orders (e.g., E-12 P 42)", desc: "Deadline in each of the six orders to request full or partial abeyance (up to 90 days) of the proceeding. FERC says it will not grant abeyances reflexively and views extension requests with great disfavor." },
       { id: "showcause", label: "Show cause or file tariff changes", date: "2026-08-17", period: "60 days from issuance", cite: "Ordering ¶ (B)", desc: "Each RTO/ISO and its Transmission Owners must show cause why the tariff remains just and reasonable, or file remedial tariff changes." },
       { id: "response", label: "Response window opens", date: null, dateNote: "30 days after each RTO’s 60-day filing lands", period: "filing + 30 days", cite: "Ordering ¶ (E)", desc: "Interested entities may respond on whether the tariff remains just and reasonable and, if not, what replacement rates to implement. Opens once the show-cause/tariff filing is made." },
     ],

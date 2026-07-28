@@ -624,3 +624,25 @@ test("every inventoried comment has its body on disk (download completeness)", (
   }
   assert.deepEqual(missing, [], `every inventoried comment body is on disk (missing: ${missing.join(", ")})`);
 });
+
+test("abeyance step scopes to all six orders (issues.md 2026-07-28 regression)", () => {
+  // The 45-day / 90-day abeyance mechanism is in EVERY order, not only NYISO's; the step was once
+  // shipped as "(NYISO only)". Guard the relabel, and verify the claim against the committed texts.
+  const step = D.procedural.steps.find((s) => s.id === "abeyance");
+  assert.ok(step, "abeyance step exists");
+  assert.doesNotMatch(step.label + " " + step.desc, /NYISO[\s-]?only/i, "abeyance step is not scoped to one RTO");
+  assert.match(step.cite, /six orders/i, "cite states the all-six scope");
+  const dir = join(here, "..", "sources", "text", "orders");
+  const six = readdirSync(dir).filter((f) => /^e-(7|8|9|10|11|12)-/.test(f));
+  assert.equal(six.length, 6, "all six order texts on disk");
+  for (const f of six) {
+    const t = readFileSync(join(dir, f), "utf8").toLowerCase();
+    assert.ok(t.includes("abeyance"), `${f} carries the abeyance provision`);
+  }
+  // The two timeline entries that carried the mis-scope must not regress either.
+  for (const e of D.timeline) {
+    const s = e.title + " " + e.body;
+    if (/abeyance/i.test(s)) assert.doesNotMatch(s, /NYISO's order expressly|in the NYISO order, a 45-day/i,
+      "timeline no longer scopes abeyance to the NYISO order");
+  }
+});

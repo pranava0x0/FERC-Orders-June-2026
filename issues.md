@@ -14,6 +14,23 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-07-28 · data/accuracy · the Aug 3 abeyance step was scoped "NYISO only," but the mechanism is in
+  all six orders.** Surfaced while researching the news refresh: ISO Newswire (2026-06-29) reports ISO-NE
+  planning a 90-day abeyance request, which contradicted the site's label. Verified locally against
+  `sources/text/orders/*.txt`: "abeyance" appears 7–8 times in **every** order (e.g., E-11 ISO-NE:
+  requests due "within 45 days of issuance," "limited to 90 days," granted with "great disfavor," partial
+  abeyance contemplated). Was mis-scoped in three places: `procedural.steps` id `abeyance` ("Abeyance
+  request (NYISO only)" · cite "E-12 (NYISO) P 42"), the ≈Aug 17 timeline entry ("in the NYISO order, a
+  45-day deadline…"), and the "Fall 2026, if requested" timeline entry ("NYISO's order expressly lets
+  respondents request abeyance") — with the masthead next-deadline chip displaying the mislabeled step
+  (Aug 3 is the soonest upcoming date). Root cause: **data** — the provision was read in full in the NYISO
+  order and assumed unique to it; no cross-order grep before shipping the "(NYISO only)" claim. Status:
+  **Fixed** (this session, plan Phase 0 of `news-tracks-plan.md`): step relabeled to the all-six scope with
+  the FERC "not reflexively / great disfavor" caveat, both timeline entries corrected (`e11` added as a
+  source on the Fall entry), llms.txt regenerated (no delta; the procedural block isn't baked into it), and
+  a regression test added (`tests/data.test.mjs`) that rejects any single-RTO scoping AND greps all six
+  committed order texts for the provision. 82/82 tests pass.
+
 - **2026-07-14 · ux (found in UAT of the crosswalk) · the policy map was the highest-value view but two
   clicks deep with no signpost.** Reaching it meant Comments tab → "By issue" sub-tab (and the default
   Comments sub is "Themes & categories," so the map isn't even first). Neither label advertises a policy
