@@ -515,6 +515,19 @@ Recommended next steps, in order:
   `build-seo.mjs`, with a sync test. This is the largest remaining SEO lever; it is listed rather than
   built because it adds site architecture and deserves a design decision, not a late-session sprint.
 
+- **done (2026-07-28)** — **Google Search Console: property created, verified, sitemap submitted.**
+  Property is the URL-prefix `https://pranava0x0.github.io/FERC-Orders-June-2026/`, verified by HTML
+  file with the meta tag as a second method. `sitemap.xml` submitted (15 URLs) and the homepage sent to
+  the priority crawl queue via URL inspection. Baseline worth remembering: before this, URL inspection
+  reported **"URL is not on Google"** and "no referring sitemaps detected" — the site had never been
+  indexed at all, which is what the whole SEO pass was fixing.
+  Two follow-ups: the sitemap read **"Couldn't fetch"** immediately after submission, which is the
+  normal pre-processing state (the file is HTTP 200, `application/xml`, valid, and the root
+  `robots.txt` 404s so nothing is blocked) — **re-check the Sitemaps page in a few days** and only
+  investigate if it has not flipped to Success. And **never delete `docs/google1a32de6a02a9a6e0.html`
+  or the `google-site-verification` meta tag**: removing what Google verified with silently
+  un-verifies the property and reporting just stops.
+
 - **MEDIUM (2026-07-28)** — **`robots.txt` on a Pages project site is at the wrong path.** It is
   served at `/FERC-Orders-June-2026/robots.txt`, but crawlers read `pranava0x0.github.io/robots.txt`
   (the user-site root), which this repo does not control. The file documents intent and the `<meta
