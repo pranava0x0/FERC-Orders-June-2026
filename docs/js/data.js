@@ -997,6 +997,7 @@ window.FERC_DATA = (function () {
 
   const voiceThemes = [
     {
+      wave: 1,
       title: "Cost responsibility is the center of gravity",
       body: "Across the post-order discussion, the basic question is not whether large loads should connect faster; it is whether the tariff makes the beneficiary carry the cost and risk of the upgrade.",
       quotes: [
@@ -1007,6 +1008,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
+      wave: 1,
       title: "The regional route is both substance and litigation strategy",
       body: "The six-order structure is being read as a deliberate alternative to one national template: faster than a rulemaking, more tailored to each market, and easier to defend on the record.",
       quotes: [
@@ -1017,6 +1019,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
+      wave: 1,
       title: "Speed now depends on provable flexibility",
       body: "The strongest pro-speed argument treats data centers as controllable loads, but the quotes also show the hard edge: flexibility has to be operational, measurable, and worth something in the tariff.",
       quotes: [
@@ -1027,6 +1030,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
+      wave: 1,
       title: "Reliability and security remain live objections",
       body: "The order is not landing as a pure acceleration story. Consumer and security voices are treating faster interconnection as acceptable only if modeling, operating standards, and stability protections keep up.",
       quotes: [
@@ -1036,6 +1040,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
+      wave: 1,
       title: "The physical buildout is bigger than the FERC clock",
       body: "The discourse keeps returning to the same physical constraint: the orders can compress process, but turbines, transformers, generation, local consent, and deliverable capacity still decide which projects energize.",
       quotes: [
@@ -1046,12 +1051,53 @@ window.FERC_DATA = (function () {
       ],
     },
     {
+      wave: 1,
       title: "The organized-market focus leaves a Southeast gap",
       body: "The order covers the six RTO/ISO markets, while several reactions flag the regions outside that structure as exactly where transmission planning and interconnection practice may be weakest.",
       quotes: [
         { q: "non-RTO areas, which typically suffer from the worst transmission and interconnection practices", src: "utilitydive" },
         { q: "The Southeast needs a modern transmission system", src: "simonmahan" },
         { q: "we risk higher energy prices, power shortages, and lost economic opportunities", src: "simonmahan" },
+      ],
+    },
+
+    // ---- Wave 2: the filings and the governance fight (news-tracks-plan.md Feature D) ----------
+    // Wave 1 above is reaction to the June 18 orders, captured Jun 22 to 29. Wave 2 is what the record
+    // did next. Keeping them in dated lanes is the freshness filter: a June reaction and a July
+    // observation are different claims, and collapsing them would let the tab read as one frozen moment.
+    // Every wave-2 quote is captured in sources/news-evidence.json and swept by verify-quotes.mjs.
+    // `track` ties an item to the proceeding it belongs to, so governance commentary cannot quietly
+    // contaminate the §206 story.
+    {
+      wave: 2,
+      track: "gov",
+      title: "PJM’s own legitimacy becomes the story",
+      body: "The July 23 technical conference put PJM’s decision-making machinery on the record, and on a September clock. The same commission running the §206 filings is now asking who gets to decide what PJM files, which makes this lane a precondition for the other one rather than a sideshow.",
+      quotes: [
+        { q: "PJM is facing a grave legitimacy crisis", src: "udgov" },
+        { q: "Some transmission owners are openly discussing leaving the RTO altogether", src: "udgov" },
+        { q: "This is a cultural quagmire", src: "udgov" },
+      ],
+    },
+    {
+      wave: 2,
+      track: "sc6",
+      title: "Regional divergence: the tailoring thesis meets the record",
+      body: "The first observed answer to the 30-day reports points somewhere different from PJM’s expedited-new-entry posture. ISO-NE looks to new generation and away from its capacity market. That is the regional variation the six tailored orders were built to permit, showing up as substance rather than as a gap.",
+      quotes: [
+        { q: "requiring new large loads to bring incremental new generation", src: "isonews0721" },
+        { q: "not procuring capacity through the regional capacity market to serve these large loads", src: "isonews0721" },
+        { q: "intend to request a 90-day abeyance", src: "isonews0629" },
+      ],
+    },
+    {
+      wave: 2,
+      track: "context",
+      title: "Capacity scarcity is the arithmetic behind the argument",
+      body: "PJM’s 2028/2029 auction cleared at its cap for the third year running and still landed short of the reserve-margin target. Every claim about who should pay for new load is being made against that number.",
+      quotes: [
+        { q: "The price came in at the FERC-approved cap of $325/MW-day", src: "pjmbra" },
+        { q: "short of PJM’s 20% installed reserve margin target by 6,831 MW", src: "pjmbra" },
       ],
     },
   ];

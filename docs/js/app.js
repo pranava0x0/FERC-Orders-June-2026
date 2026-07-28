@@ -749,12 +749,32 @@
       return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
     }).join("");
 
-    var quoteThemes = '<div class="quote-themes">' + (D.voiceThemes || []).map(function (t) {
+    // Two dated waves, freshest first (news-tracks-plan.md Feature D). Wave 1 is reaction to the June
+    // 18 orders; wave 2 is what the record did next. Each lane carries its own capture stamp, because
+    // "commentary gathered <one date>" stopped being true the moment the tab held two moments.
+    var themeCard = function (t) {
       var qs = (t.quotes || []).map(function (q) {
         return '<li><blockquote>“' + esc(q.q) + '”</blockquote>' + srcChips([q.src]) + "</li>";
       }).join("");
-      return '<section class="quote-theme"><h3>' + esc(t.title) + '</h3><p>' + esc(t.body) + '</p><ul class="quote-list">' + qs + "</ul></section>";
-    }).join("") + "</div>";
+      var tr = t.track && D.tracks && D.tracks[t.track]
+        ? '<span class="trackpill is-static" title="' + esc(D.tracks[t.track].label) + '">' + esc(D.tracks[t.track].short) + "</span>"
+        : "";
+      return '<section class="quote-theme"><h3>' + esc(t.title) + tr + '</h3><p>' + esc(t.body) +
+        '</p><ul class="quote-list">' + qs + "</ul></section>";
+    };
+    var themesInWave = function (n) {
+      return (D.voiceThemes || []).filter(function (t) { return (t.wave || 1) === n; });
+    };
+    var waveLane = function (n, title, stamp) {
+      var items = themesInWave(n);
+      if (!items.length) return "";
+      return '<div class="wave wave-' + n + '"><div class="wave-head"><h3 class="wave-title">' + esc(title) +
+        '</h3><span class="wave-stamp mono">captured ' + esc(stamp) + "</span></div>" +
+        '<div class="quote-themes">' + items.map(themeCard).join("") + "</div></div>";
+    };
+    var quoteThemes =
+      waveLane(2, "The filings and the governance fight", D.meta.newsCapture || D.meta.discourseCapture) +
+      waveLane(1, "Reaction to the June 18 orders", D.meta.discourseCapture);
 
     // The RM26-4 comment period (stats, respondent types, themes/categories, and the full searchable
     // filing list) lives in its own Comments tab now; Discourse keeps a short pointer.
@@ -767,7 +787,7 @@
     return accSection("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.", rec + commentsBlock, true, recItems.length) +
       accSection("Commentary themes with quoted source lines",
-      "Themes from the post-order discourse, with the underlying quoted statements linked under each theme. Commentary gathered " + D.meta.discourseCapture + " (the order record is as of " + D.meta.capture + ").", quoteThemes, false, (D.voiceThemes || []).length) +
+      "Themes from the discourse, in two dated waves: reaction to the orders themselves, then what the record did next. Each quote links to its captured source. The order record is as of " + D.meta.capture + ".", quoteThemes, false, (D.voiceThemes || []).length) +
       accSection("Media & discourse: consensus and friction", "The dominant narratives in energy trade press and policy circles.", disc, false, consensusN + frictionN) +
       accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false, outletIds.length);
   }

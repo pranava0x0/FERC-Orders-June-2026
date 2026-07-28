@@ -177,8 +177,11 @@ for (const v of D.voices || []) {
     if (loose(m[1]).length >= 6) req(`voice "${v.name}"`, m[1], evidenceText);
   }
 }
+// Wave-1 theme quotes were captured in voices-evidence; wave-2's come from the news captures. Check
+// against the union so a theme is verified by whichever file actually holds its snippet.
+const themeEvidence = `${evidenceText} ¶ ${newsEvidenceText}`;
 for (const th of D.voiceThemes || []) {
-  for (const q of th.quotes || []) req(`voice theme "${th.title}"`, q.q, evidenceText);
+  for (const q of th.quotes || []) req(`voice theme "${th.title}"`, q.q, themeEvidence);
 }
 
 // 3b) Timeline event bodies (REQUIRED). These were swept by nothing until the 2026-07-28 news refresh,

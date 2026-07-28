@@ -802,3 +802,52 @@ test("no filing claims eLibrary verification while eLibrary is unchecked", () =>
     for (const r of verified) assert.ok(r.accession && r.verified_at, `${r.docket} verified row carries its proof`);
   }
 });
+
+/* ---- Discourse waves (news-tracks-plan.md Part 5 #4, #6) -------------------------------------- */
+
+test("every Discourse theme declares a wave, and wave 1 never shrinks", () => {
+  const themes = D.voiceThemes || [];
+  for (const t of themes) {
+    assert.ok(t.wave === 1 || t.wave === 2, `theme "${t.title}" declares wave 1 or 2`);
+  }
+  // Count floor: wave 2 is additive. Wave 1 is the captured June reaction and is append-only; if it
+  // ever drops, a reaction was deleted rather than superseded.
+  const w1 = themes.filter((t) => t.wave === 1).length;
+  const w2 = themes.filter((t) => t.wave === 2).length;
+  assert.ok(w1 >= 6, `wave-1 theme floor (${w1} >= 6)`);
+  assert.ok(w2 >= 1, `wave 2 exists (${w2} >= 1)`);
+});
+
+test("wave-2 themes carry a track and cite sources published after the orders issued", () => {
+  // A wave-2 item is by definition post-June-18 commentary. A June-17 source in that lane would mean
+  // the freshness split is decorative.
+  for (const t of (D.voiceThemes || []).filter((x) => x.wave === 2)) {
+    assert.ok(D.tracks[t.track], `wave-2 theme "${t.title}" declares a known track (got "${t.track}")`);
+    for (const q of t.quotes || []) {
+      const s = D.SOURCES[q.src];
+      assert.ok(s, `wave-2 theme "${t.title}" cites known source "${q.src}"`);
+      assert.ok(s.published || s.background === true || s.undated === true,
+        `wave-2 source "${q.src}" needs published (or an explicit background/undated flag)`);
+      if (s.published && !s.background) {
+        assert.ok(s.published >= "2026-06-18",
+          `wave-2 source "${q.src}" is dated ${s.published}, before the June 18 orders; mark it background: true if that is deliberate`);
+      }
+    }
+  }
+});
+
+test("every displayed news quote is captured in the news evidence file", () => {
+  // The companion to the verify-quotes sweep: this checks the JOIN (does the evidence exist and is it
+  // attributed to the source the theme cites), the sweep checks the TEXT.
+  const news = JSON.parse(readFileSync(join(here, "..", "sources", "news-evidence.json"), "utf8"));
+  assert.match(news.captured_at, /^\d{4}-\d{2}-\d{2}$/, "news evidence is stamped");
+  assert.ok(news.capture_method && /elibrary/i.test(news.capture_method),
+    "the capture method states the eLibrary limitation rather than implying docket confirmation");
+  const captured = new Set(Object.values(news.items).map((i) => i.src));
+  for (const s of captured) assert.ok(D.SOURCES[s], `news evidence cites known source "${s}"`);
+  for (const t of (D.voiceThemes || []).filter((x) => x.wave === 2)) {
+    for (const q of t.quotes || []) {
+      assert.ok(captured.has(q.src), `wave-2 quote source "${q.src}" has a captured snippet`);
+    }
+  }
+});

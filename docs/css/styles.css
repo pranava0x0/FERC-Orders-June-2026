@@ -222,6 +222,15 @@ details.acc[open] .acc-chev { transform: rotate(90deg); }
 .kindpill.deadline { color: var(--deadline); background: var(--deadline-bg); }
 .kindpill.milestone { color: var(--text-muted); }
 
+/* Discourse waves (news-tracks-plan.md Feature D) — two dated lanes, freshest first. */
+.wave + .wave { margin-top: 22px; }
+.wave-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; border-bottom: 1px solid var(--rule); padding-bottom: 5px; margin-bottom: 12px; }
+.wave-title { font-size: 14px; margin: 0; }
+.wave-stamp { font-size: 10.5px; color: var(--text-muted); }
+.wave-2 .wave-title { color: var(--accent-ink); }
+.quote-theme h3 .trackpill.is-static { cursor: default; }
+.trackpill.is-static:hover { border-color: var(--rule-strong); color: var(--text-muted); }
+
 /* Per-RTO filing matrix (news-tracks-plan.md Feature B). The chips are the at-a-glance layer and are
    lossy on their own, so each carries its full sentence in aria-label; the observation list below the
    grid holds the gist, date and sources in text. */
