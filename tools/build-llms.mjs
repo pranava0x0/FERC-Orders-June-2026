@@ -84,9 +84,47 @@ export function buildLlmsTxt(D) {
   }
   out.push("");
 
-  out.push(`## Commentary themes (secondary, gathered ${m.discourseCapture})`, "");
+  // Parallel proceedings. Agent consumers get the same disambiguation humans do on the Timeline:
+  // four dockets and a context lane, each with its own clock. Without this an AD26-7 event and an
+  // EL26-67 filing read as the same proceeding, which is the exact confusion the tracks model fixes.
+  if (D.tracks) {
+    out.push(`## Parallel proceedings (as of the ${m.newsCapture} news sweep)`, "");
+    for (const [id, t] of Object.entries(D.tracks)) {
+      out.push(`### ${t.label} (\`${id}\`)`);
+      out.push(`- Venue: ${t.venue || "not a docket"}`);
+      out.push(`- What: ${t.what}`);
+      out.push(`- Why it is tracked separately: ${t.whySeparate}`);
+      if (t.aka) out.push(`- Also known as: ${t.aka}`);
+      out.push(`- Status (${t.status.asOf}): ${t.status.line}`);
+      out.push(`- Next: ${t.next && t.next.date ? `${t.next.date}, ${t.next.label}` : (t.next && t.next.label) || "no dated step"}`);
+      const events = (D.timeline || []).filter((e) => e.track === id).slice(-3);
+      for (const e of events) out.push(`  - ${e.date}: ${e.title}`);
+      out.push("");
+    }
+  }
+
+  // Observed filings. The site's weakest-evidence surface, so the status vocabulary ships with it;
+  // an agent reading this must not mistake a press report for a docket confirmation.
+  const F = D.procedural && D.procedural.filings;
+  if (F) {
+    out.push(`## Observed filings (checked ${F.asOf})`, "");
+    out.push(`- ${F.note}`);
+    out.push("- Status vocabulary: `filed-verified` (eLibrary accession seen) · `filed-reported` (press or operator channel only) · `signaled` (announced intent). An absent row means our checks observed nothing, which is not proof nothing was filed.");
+    const byDocket = Object.fromEntries((D.dockets || []).map((d) => [d.docket, d]));
+    for (const r of F.rows || []) {
+      const d = byDocket[r.docket];
+      out.push(`- ${d ? d.rto : r.docket} (${r.docket}), ${r.step}, ${r.status}, ${r.date}: ${r.gist}` +
+        (r.accession ? ` Accession: ${r.accession}.` : ""));
+    }
+    out.push("");
+  }
+
+  out.push("## Commentary themes (secondary, in two dated waves)", "");
   for (const theme of D.voiceThemes || []) {
-    out.push(`- ${theme.title}: ${theme.body}`);
+    const wave = (theme.wave || 1) === 2
+      ? `wave 2, the filings and the governance fight, captured ${m.newsCapture}`
+      : `wave 1, reaction to the June 18 orders, captured ${m.discourseCapture}`;
+    out.push(`- [${wave}] ${theme.title}: ${theme.body}`);
     for (const q of theme.quotes || []) {
       const s = D.SOURCES[q.src];
       out.push(`  - "${q.q}" Source: ${s.url}`);

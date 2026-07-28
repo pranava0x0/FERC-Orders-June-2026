@@ -121,6 +121,12 @@ Default verification matrix (project-specific `AGENTS.md` should override with c
 
 **DOM-count before screenshot.** For any DOM-rendering change, make a ~100-token element count (`querySelectorAll('.x').length` via `preview_eval`) the *first* verification step — it catches blank-because-scrolled viewports and stale-cached-JS that screenshots and unit tests miss. Screenshot only once the count is right, and **reload the preview after a rebuild** first — an open tab shows stale data until reloaded.
 
+**Assert `innerWidth` is non-zero before trusting any layout measurement.** A preset viewport resize can leave the pane at `innerWidth: 0`; text then wraps at ~zero width, every measured height inflates roughly 20×, and `scrollWidth > innerWidth` is trivially true — so a healthy page reports a giant `overflow: true` and reads as a layout regression you did not cause. Measure `innerWidth` in the same call as the assertion, and set an explicit `width`/`height` rather than a named preset when a measurement depends on it. (2026-07-28: cost a detour chasing a 95,000px "Overview panel".)
+
+**A blank screenshot usually means the pane, not the page.** If screenshots come back empty and pointer actions time out, check for an explicit "Browser pane is hidden" error before re-querying — a hidden pane cannot render or capture, while `javascript_tool` keeps working normally. Every real check this project needs (filter state, counts, overflow, `aria-label`s, hash routing) is a DOM assertion; screenshots are for showing a human, not for verifying logic.
+
+**On `localhost`, the browser caches `data.js`/`app.js` hard** (`python3 -m http.server` sends no cache headers). If an edit does not appear, load `http://127.0.0.1:<port>` — a different host string is a separate cache entry — and confirm `window.FERC_DATA` in the console before debugging the renderer. A `fetch()` of the same path returning the *correct* file while the page behaves old is the tell.
+
 **Run a build/codegen script twice to assert idempotency** — the second run must inject identical bytes.
 
 **Spot-check source URLs by status** before committing externally-sourced records: `curl -s -o /dev/null -w "%{http_code}" -L -A "Mozilla/5.0..." <url>`. A 403 (bot-blocker) is inconclusive — keep it; a 404 is dead — drop or replace.

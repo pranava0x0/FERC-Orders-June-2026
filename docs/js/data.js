@@ -15,6 +15,7 @@ window.FERC_DATA = (function () {
       tier: "doe",
       url: "https://www.energy.gov/sites/default/files/2025-10/403%20Large%20Loads%20Letter.pdf",
       captured: "2026-06-22",
+      published: "2025-10-23",
       note: "16-pp. primary PDF, downloaded from energy.gov and text-extracted.",
     },
     fercPR: {
@@ -24,6 +25,7 @@ window.FERC_DATA = (function () {
       url: "https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
       archiveUrl: "http://web.archive.org/web/20260618211730/https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration",
       captured: "2026-06-18 (Internet Archive)",
+      published: "2026-06-18",
       note: "Live page is Cloudflare-gated; chip opens the fixed June 18, 2026 Wayback snapshot the text was checked against.",
     },
     fercFS: {
@@ -33,6 +35,7 @@ window.FERC_DATA = (function () {
       url: "https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and",
       archiveUrl: "http://web.archive.org/web/20260620020229/https://www.ferc.gov/news-events/news/fact-sheet-ferc-takes-action-supercharge-americas-grid-efficiency-reliability-and",
       captured: "2026-06-20 (Internet Archive)",
+      published: "2026-06-18",
       note: "Enumerates the five categories, the 30/60-day deadlines, the jurisdictional boundary and the regional distinctions verbatim. Chip opens the fixed snapshot.",
     },
     fercSum: {
@@ -51,6 +54,7 @@ window.FERC_DATA = (function () {
       url: "https://www.ferc.gov/rm26-4",
       archiveUrl: "http://web.archive.org/web/20260619085932/https://www.ferc.gov/rm26-4",
       captured: "2026-06-19 (Internet Archive)",
+      published: "2026-01-13",
       note: "DOE Oct. 23, 2025 §403 directive; >20 MW definition; four summarized ANOPR questions; comment period extended (page last updated Jan 13, 2026). Chip opens the fixed snapshot.",
     },
     // The six order PDFs — downloaded via browser (past Cloudflare) and OCR'd; page-1 captions verified.
@@ -60,7 +64,8 @@ window.FERC_DATA = (function () {
     e10: { label: "Order E-10 (CAISO): EL26-71-000 · 195 FERC ¶ 61,214", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-10-el26-71-000", captured: "2026-06-22", note: "Downloaded & OCR'd, 118 pp; §206 order, issued June 18, 2026; caption verified." },
     e11: { label: "Order E-11 (ISO-NE): EL26-72-000 · 195 FERC ¶ 61,215", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e11-el26-72-000", captured: "2026-06-22", note: "Downloaded & OCR'd, 115 pp; §206 order, issued June 18, 2026; caption verified." },
     e12: { label: "Order E-12 (NYISO): EL26-69-000 · 195 FERC ¶ 61,216", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e12-el26-69-000", captured: "2026-06-22", note: "Downloaded & OCR'd, 119 pp; §206 order, issued June 18, 2026; caption verified." },
-    e2: { label: "Order E-2 (PJM co-location): EL25-49-002 · 195 FERC ¶ 61,209", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-2-el25-49-002", captured: "2026-06-30", note: "Downloaded & OCR'd, 278 pp; Order on Rehearing, Clarification, Compliance Filing, and Paper Hearing on PJM’s December 18, 2025 co-location order (193 FERC ¶ 61,217), issued June 18, 2026 at the same meeting as E-7 to E-12; caption verified. Finalizes the rates and terms for the three new transmission services the six show cause orders extend to the other regions." },
+    e2: { label: "Order E-2 (PJM co-location): EL25-49-002 · 195 FERC ¶ 61,209", org: "FERC", tier: "order", url: "https://www.ferc.gov/media/e-2-el25-49-002", captured: "2026-06-30",
+      published: "2026-06-18", note: "Downloaded & OCR'd, 278 pp; Order on Rehearing, Clarification, Compliance Filing, and Paper Hearing on PJM’s December 18, 2025 co-location order (193 FERC ¶ 61,217), issued June 18, 2026 at the same meeting as E-7 to E-12; caption verified. Finalizes the rates and terms for the three new transmission services the six show cause orders extend to the other regions." },
     akin: { label: "“FERC Issues Landmark Show Cause Orders on Large Load Interconnection”", org: "Akin Gump (Speaking Energy)", tier: "secondary", url: "https://www.akingump.com/en/insights/blogs/speaking-energy/ferc-issues-landmark-show-cause-orders-on-large-load-interconnection", captured: "2026-06-22", note: "Law-firm client alert." },
     sheppard: { label: "“FERC Orders Six RTOs to Address Specific Reforms… Speed to Power”", org: "Sheppard Mullin", tier: "secondary", url: "https://www.sheppard.com/insights/blogs/ferc-orders-six-rtos-to-address-specific-reforms-to-effectuate-speed-to-power-that-will-facilitate-the-integration-of-large-loads", captured: "2026-06-22", note: "Law-firm client alert." },
     whitecase: { label: "“PJM proposes to carve out new services for co-located data centers”", org: "White & Case", tier: "secondary", url: "https://www.whitecase.com/insight-alert/pjm-proposes-carve-out-new-services-co-located-data-centers", captured: "2026-06-22", note: "Co-location context (PJM EL25-49 line)." },
@@ -133,6 +138,67 @@ window.FERC_DATA = (function () {
     brianakobor: { label: "Google's Capacity Commitment Framework for large loads", org: "LinkedIn / Simple Thread", tier: "secondary", url: "https://www.linkedin.com/posts/justinetheredge_yesterday-briana-kobor-shed-light-on-the-activity-7331290739412189186-Hs8W", captured: "2026-06-29", note: "Google hyperscaler voice: Briana Kobor's ESIG presentation described Google's Capacity Commitment Framework, shifting forecasting risk and capacity-planning uncertainty from utilities to large customers through long-term commitments, minimum charges, collateral and transparent modification fees." },
     redditecon: { label: "r/Economics thread: “AI data centers just got a government-mandated fast lane…”", org: "Reddit", tier: "secondary", url: "https://www.reddit.com/r/Economics/comments/1ua07ck/ai_data_centers_just_got_a_governmentmandated/", captured: "2026-06-29", note: "Public social reaction to the TechCrunch / Yahoo framing: FERC gave data centers a faster interconnection path but did not solve the underlying power-supply shortage." },
     reddittech: { label: "r/technology thread: “Federal regulators order grid operators to speed power…”", org: "Reddit", tier: "secondary", url: "https://www.reddit.com/r/technology/comments/1u9ir0r/federal_regulators_order_grid_operators_to_speed/", captured: "2026-06-29", note: "Public tech-community reaction to AP coverage: the order is read through AI demand, local backlash, affordability, and whether fast interconnection shifts costs or risks elsewhere." },
+
+    // ---- News-refresh sources (news-tracks-plan.md, capture 2026-07-28) --------------------------
+    // Every record here carries `published` (the outlet's own date) because it is cited from a track,
+    // filing-matrix, or wave-2 Discourse surface, where "when was this said" is load-bearing. Enforced
+    // by tests/data.test.mjs. federalregister.gov serves its HTML through a bot wall; its JSON API and
+    // full_text endpoints are open, so the FR notices below were read from the full_text .txt files.
+    frAD267: {
+      label: "“PJM Governance and Stakeholder Reforms; Notice of Commission-Led Technical Conference”",
+      org: "FERC, via the Federal Register (91 FR, Doc. 2026-09924)",
+      tier: "ferc",
+      url: "https://www.federalregister.gov/documents/2026/05/18/2026-09924/pjm-governance-and-stakeholder-reforms-notice-of-commission-led-technical-conference",
+      textUrl: "https://www.federalregister.gov/documents/full_text/text/2026/05/18/2026-09924.txt",
+      captured: "2026-07-28",
+      published: "2026-05-18",
+      note: "Primary source establishing Docket AD26-7-000 and the conference date. Read from the Federal Register full-text endpoint: the conference “will convene on Thursday, July 23, 2026, in the Kevin J. McIntyre Commission Meeting Room” at FERC, on PJM’s “governance and stakeholder process, with a particular focus on identifying and evaluating actionable reforms.”",
+    },
+    frAD267s3: {
+      label: "“PJM Governance and Stakeholder Reforms; Third Supplemental Notice of Commission-Led Technical Conference”",
+      org: "FERC, via the Federal Register (Doc. 2026-14691)",
+      tier: "ferc",
+      url: "https://www.federalregister.gov/documents/2026/07/21/2026-14691/pjm-governance-and-stakeholder-reforms-third-supplemental-notice-of-commission-led-technical",
+      captured: "2026-07-28",
+      published: "2026-07-21",
+      note: "Last of three supplemental notices (2026-06-10, 2026-07-08, 2026-07-21) updating the AD26-7-000 agenda and panelists. Confirms the notice trail via the Federal Register API document search.",
+    },
+    isonews0629: {
+      label: "“ISO-NE provides update on compliance with FERC large loads order”",
+      org: "ISO New England (ISO Newswire)",
+      tier: "secondary",
+      url: "https://isonewswire.com/2026/06/29/iso-ne-provides-update-on-compliance-with-ferc-large-loads-order/",
+      captured: "2026-07-28",
+      published: "2026-06-29",
+      note: "First-party RTO channel. ISO-NE and the region’s transmission owners “intend to request a 90-day abeyance as part of compliance with a show cause order”; if granted, interconnection-process changes would be filed by November 16, 2026 instead of the August 17 deadline.",
+    },
+    isonews0721: {
+      label: "“Update on ISO-NE compliance with FERC large and co-located loads order”",
+      org: "ISO New England (ISO Newswire)",
+      tier: "secondary",
+      url: "https://isonewswire.com/2026/07/21/update-on-iso-ne-compliance-with-ferc-large-and-co-located-loads-order/",
+      captured: "2026-07-28",
+      published: "2026-07-21",
+      note: "First-party RTO channel reporting ISO-NE’s 30-day informational filing: the region’s outline points toward “requiring new large loads to bring incremental new generation” and “not procuring capacity through the regional capacity market to serve these large loads.” The eLibrary accession is not yet confirmed, so the filing renders as press-reported.",
+    },
+    udgov: {
+      label: "“FERC will impose reforms if PJM fails to adopt changes by September, chairman warns”",
+      org: "Utility Dive (Ethan Howland)",
+      tier: "secondary",
+      url: "https://www.utilitydive.com/news/ferc-pjm-governance-reforms-data-centers-capacity-market/826140/",
+      captured: "2026-07-28",
+      published: "2026-07-24",
+      note: "Report from the July 23 AD26-7-000 technical conference. Source of the Swett and LaCerte quotes shown on the site; snippets captured in sources/news-evidence.json and swept by tools/verify-quotes.mjs.",
+    },
+    pjmbra: {
+      label: "“PJM Capacity Auction Procures 138,318 MW of Generation Resources”",
+      org: "PJM Interconnection (news release PDF)",
+      tier: "secondary",
+      url: "https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/2026-releases/20260714-pjm-capacity-auction-procures-138318-mw-generation-resources.pdf",
+      captured: "2026-07-28",
+      published: "2026-07-14",
+      note: "First-party release for the 2028/2029 Base Residual Auction: cleared at the $325/MW-day cap for the whole footprint, 138,318 MW procured, $16.4B total cost, and 6,831 MW short of the 20% installed reserve margin target. Market context for the orders, not a filing in any of them.",
+    },
   };
 
   const meta = {
@@ -141,6 +207,7 @@ window.FERC_DATA = (function () {
     items: "Items E-7 to E-12 · Dockets EL26-67-000 to EL26-72-000",
     capture: "2026-06-22",
     discourseCapture: "2026-06-29",
+    newsCapture: "2026-07-28",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
@@ -148,82 +215,190 @@ window.FERC_DATA = (function () {
       "On October 23, 2025, the Department of Energy invoked its rarely used § 403 authority to direct FERC to open a rulemaking on connecting large loads (data centers, AI, advanced manufacturing) to the interstate grid (Docket RM26-4-000), and asked for final action by April 30, 2026.",
       "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.",
       "The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC issued Item E-2 (EL25-49-002), the order on rehearing that finalizes the rates and terms for the three new transmission services its PJM co-location proceeding created, the same services the six orders extend to every other region.",
+      "As of the July 2026 sweep that clock has started firing. Interventions closed July 9 and the 30-day generation-adequacy reports were due July 20; ISO-NE’s is the only one our checks confirmed, and it has said it will ask for a 90-day abeyance. Abeyance requests are due August 3, and August 17 carries both the six show-cause filings and PJM’s further compliance filing in the separate co-location docket. Running beside all of it, FERC has put PJM’s own governance on a September clock in Docket AD26-7-000.",
     ],
   };
 
   const kpis = [
     { value: "6", label: "RTOs / ISOs", sub: "all FERC-jurisdictional grid operators + their TOs" },
     { value: "5", label: "Reform categories", sub: "teed up in each tailored order" },
-    { value: "30 days", label: "Informational report", sub: "resource-adequacy plan to serve large loads", deadline: true },
-    { value: "60 days", label: "Justify or file", sub: "defend tariffs or propose §206 revisions", deadline: true },
+    // `step` joins the card to the live procedural clock, so these two stop reading as forever-pending.
+    { value: "30 days", label: "Informational report", sub: "resource-adequacy plan to serve large loads", deadline: true, step: "report" },
+    { value: "60 days", label: "Justify or file", sub: "defend tariffs or propose §206 revisions", deadline: true, step: "showcause" },
     { value: "> 20 MW", label: "“Large load”", sub: "DOE threshold (per Order No. 2003)" },
     { value: "3,500+", label: "Pages reviewed", sub: "public comments in the RM26-4 docket" },
   ];
 
+  // ---- Track registry (news-tracks-plan.md Part 2) --------------------------------------------
+  // Four proceedings and one context lane run beside each other. Before this registry the Timeline was
+  // one undifferentiated rail, so an AD26-7 conference and an EL26-67 filing read as the same kind of
+  // thing. Every timeline event now carries a required `track`; the registry holds the per-track framing
+  // (what it is, why it is separate, its own next date) and every surface that shows an event shows its
+  // track. Tests: every event's track resolves here, and every track has at least one event, so no track
+  // card ever points at an empty lane.
+  //
+  //   short      — the pill label on an event row (kept to a docket-length token)
+  //   status     — { asOf, line }: what is true as of the last news sweep. Restamped each refresh.
+  //   next       — { date, label }: the track's own clock. `date` null for tracks with no dated step.
+  //   noDocket   — true only for `context`, which never renders a docket chip or feeds the filing matrix.
+  const tracks = {
+    sc6: {
+      label: "The six-market §206 clock",
+      short: "§206",
+      venue: "FERC Dockets EL26-67-000 to EL26-72-000",
+      what: "Six show cause orders on one 60-day clock. Each RTO or ISO must defend its tariff or file a fix.",
+      whySeparate: "This is the main proceeding the site tracks. The other lanes run beside it, each on its own clock.",
+      status: {
+        asOf: "2026-07-28",
+        line: "Interventions and the 30-day reports are past. ISO-NE’s report is the only one confirmed in our checks. Abeyance requests are due Aug 3 and the show-cause filings Aug 17.",
+      },
+      next: { date: "2026-08-03", label: "Abeyance requests due (all six dockets)" },
+      src: ["fercPR", "fercFS"],
+    },
+    e2: {
+      label: "PJM co-location: EL25-49",
+      short: "EL25-49",
+      venue: "FERC Docket EL25-49 (Item E-2, order on rehearing)",
+      what: "The PJM co-location proceeding that created the three new transmission services the six orders extend to every other region.",
+      whySeparate: "A different docket with its own compliance clock. Its further compliance filing lands Aug 17, the same day as the six show-cause filings.",
+      status: {
+        asOf: "2026-07-28",
+        line: "A quiet lane. Our checks found no circuit-court petition against the December 2025 or June 2026 co-location orders.",
+      },
+      next: { date: "2026-08-17", label: "PJM and PJM TOs further compliance filing" },
+      src: ["e2"],
+    },
+    gov: {
+      label: "PJM governance: AD26-7",
+      short: "AD26-7",
+      venue: "FERC Docket AD26-7-000 (Commission-led technical conference)",
+      what: "A July 23 conference on who runs PJM: board independence, the stakeholder process, and the states’ role.",
+      whySeparate: "Runs outside the §206 clock. Its September deadlines decide who controls PJM’s follow-through filings.",
+      aka: "Also referred to in shorthand as the Swett technical conference, after the chairman who convened it.",
+      status: {
+        asOf: "2026-07-28",
+        line: "The conference was held July 23. FERC said it will seek written comments and convene a dispute-resolution forum in September.",
+      },
+      next: { date: "2026-09-30", label: "PJM reform package due or FERC imposes its own", dateNote: "“end of September” per the chairman’s closing remarks; no calendar date has been noticed" },
+      src: ["frAD267", "udgov"],
+    },
+    rm264: {
+      label: "The RM26-4 record",
+      short: "RM26-4",
+      venue: "FERC Docket RM26-4-000 (the DOE §403 rulemaking)",
+      what: "The rulemaking DOE’s §403 directive opened, and the 3,500-plus pages of comment the orders were built on.",
+      whySeparate: "Still open. Everything the six orders left unaddressed stays live here, which is what the record-to-rule crosswalk tracks.",
+      status: { asOf: "2026-07-28", line: "Open with no dated next step. FERC answered the directive with the six §206 orders rather than a rule." },
+      next: { date: null, label: "No dated step on the record" },
+      src: ["fercRM264", "doe403"],
+    },
+    context: {
+      label: "Market context",
+      short: "context",
+      venue: null,
+      noDocket: true,
+      what: "Auction results and market events that set the stakes for the filings, from outside any of the dockets.",
+      whySeparate: "None of these are filings. They are kept in their own lane so the rail never reads an auction result as a docket event.",
+      status: { asOf: "2026-07-28", line: "PJM’s 2028/2029 capacity auction cleared at the price cap for the third year running, 6,831 MW short of its reserve-margin target." },
+      next: { date: null, label: "Not a docket, so no clock" },
+      src: ["pjmbra"],
+    },
+  };
+
   /* ---------------------------------------------------------------- TAB 1 */
   const timeline = [
     {
-      date: "Oct 23, 2025", iso: "2025-10-23", kind: "doe",
+      date: "Oct 23, 2025", iso: "2025-10-23", kind: "doe", track: "rm264",
       title: "DOE issues a § 403 directive + enclosed ANOPR",
       body: "Energy Secretary Chris Wright, invoking § 403 of the DOE Organization Act (42 U.S.C. § 7173), a rarely used authority that lets the Secretary propose rules within FERC’s jurisdiction, directs FERC to initiate rulemaking on the “timely and orderly” interconnection of large loads (data centers, AI, advanced manufacturing) to the interstate transmission system. The letter asserts that load interconnection to transmission falls “squarely within” FERC jurisdiction even though FERC has historically not asserted it, and asks for final action no later than April 30, 2026.",
       src: ["doe403", "fercRM264"],
     },
     {
-      date: "Oct 23, 2025", iso: "2025-10-23b", kind: "doe",
+      date: "Oct 23, 2025", iso: "2025-10-23b", kind: "doe", track: "rm264",
       title: "Fourteen ANOPR principles define the reform menu",
       body: "The enclosed ANOPR sets large loads at > 20 MW (mirroring Order No. 2003 large generators) and lays out 14 principles: study loads with proximate generation, standardized study deposits / readiness / withdrawal penalties, hybrid (load+generation) facilities studied by injection/withdrawal rights, expedited study for curtailable loads (could studies finish in 60 days?), 100% network-upgrade cost responsibility with an open question on crediting, SSR/RMR-type review when an existing plant partially suspends to serve a co-located load, and a transition plan for pending requests.",
       src: ["doe403"],
     },
     {
-      date: "Late 2025 to Jan 2026", iso: "2026-01-13", kind: "milestone",
+      date: "Late 2025 to Jan 2026", iso: "2026-01-13", kind: "milestone", track: "rm264",
       title: "FERC opens RM26-4-000, takes comment, extends the period",
       body: "FERC opens Docket RM26-4-000 in response to the § 403 proposal and seeks comment on DOE’s principles, then issues a notice extending the comment period. Staff ultimately reviews more than 3,500 pages of public comment. (RM26-4 landing page last updated Jan 13, 2026.)",
       src: ["fercRM264", "fercPR"],
     },
     {
-      date: "Dec 2025 to Jun 2026", iso: "2025-12-18", kind: "milestone",
+      date: "Dec 2025 to Jun 2026", iso: "2025-12-18", kind: "milestone", track: "e2",
       title: "Track record builds: PJM co-location order + SPP HILL/HILLGA",
       body: "The show cause orders build on a live record. FERC’s PJM Co-Location Order (193 FERC ¶ 61,217, Dec. 18, 2025; rehearing 195 FERC ¶ 61,209; compliance accepted Apr. 16, 2026, 195 FERC ¶ 61,030) created three new services (Interim NITS, Firm and Non-Firm Contract Demand) that the §206 orders now extend to the other regions. SPP’s HILL study process, its HILLGA generation assessment (accepted Jan. 14, 2026, 194 FERC ¶ 61,031), and its Conditional HILL Service (accepted June 5, 2026) become the working template for categories 1 and 5.",
       src: ["e7", "e9", "fercPR"],
     },
     {
-      date: "Jun 18, 2026", iso: "2026-06-18", kind: "ferc",
+      date: "May 18, 2026", iso: "2026-05-18", kind: "ferc", track: "gov",
+      title: "FERC notices a technical conference on PJM governance (AD26-7-000)",
+      body: "A month before the show cause orders, FERC opens Docket AD26-7-000 and notices a Commission-led technical conference on PJM’s governance and stakeholder process, with a particular focus on identifying and evaluating actionable reforms to improve PJM’s ability to address system needs in a timely and efficient manner. The notice sets the conference for Thursday, July 23, 2026 in the Kevin J. McIntyre Commission Meeting Room at FERC headquarters. Three supplemental notices (June 10, July 8, July 21) update the agenda and panelists. This lane runs outside the §206 clock; it is sometimes called the Swett technical conference, after the chairman who convened it.",
+      src: ["frAD267", "frAD267s3"],
+    },
+    {
+      date: "Jun 18, 2026", iso: "2026-06-18", kind: "ferc", track: "sc6",
       title: "FERC issues six tailored § 206 show cause orders (E-7 to E-12)",
       body: "At its open meeting, FERC unanimously issues six tailored §206 show cause orders: PJM (195 FERC ¶ 61,211), MISO (¶ 61,212), SPP (¶ 61,213), CAISO (¶ 61,214), ISO-NE (¶ 61,215), NYISO (¶ 61,216), 92 to 119 pages each, Commissioners Swett, Rosner, See, Chang, LaCerte. Each ‘Order Instituting Proceeding Under Section 206’ runs the same spine, applied to each region’s own tariff: III.A transmission service for large loads · III.B cost-shifting risk · III.C co-location & behind-the-meter generation · III.D services for flexible loads · III.E interconnection for electrically proximate / co-located load · III.F informational report · IV briefing questions.",
       src: ["e7", "e8", "e9", "e10", "e11", "e12"],
     },
     {
-      date: "≈ Jul 18, 2026", iso: "2026-07-18", kind: "deadline",
+      date: "Jun 29, 2026", iso: "2026-06-29", kind: "milestone", track: "sc6",
+      title: "ISO-NE signals it will ask to pause its clock",
+      body: "ISO New England and the region’s transmission owners say they intend to request a 90-day abeyance as part of complying with their show cause order, the first public use of the 45-day abeyance mechanism every one of the six orders carries. If FERC grants it, ISO-NE would file its interconnection-process changes by November 16, 2026 rather than on the August 17 deadline. This is announced intent on a first-party RTO channel: the request itself is due August 3, and our checks have not confirmed it on the docket.",
+      src: ["isonews0629"],
+    },
+    {
+      date: "Jul 14, 2026", iso: "2026-07-14", kind: "milestone", track: "context",
+      title: "PJM’s capacity auction clears at the cap, short of its reserve target",
+      body: "PJM’s Base Residual Auction for 2028/2029 procures 138,318 MW and clears at the $325/MW-day cap across the entire footprint, the third consecutive capped auction, for a total cost of $16.4 billion. Procured supply plus FRR resources falls 6,831 MW short of PJM’s 20% installed reserve margin target, leaving a 14.7% reserve margin for the delivery year. PJM says it will seek FERC approval to hold a backstop procurement in September. This is market context rather than a docket filing: it sets the scarcity backdrop the August 17 filings are written into.",
+      src: ["pjmbra"],
+    },
+    {
+      date: "≈ Jul 18, 2026", iso: "2026-07-18", kind: "deadline", track: "sc6",
       title: "30-day informational report due",
-      body: "Within 30 days, each RTO/ISO and its TOs must file a detailed informational report on how it will ensure adequate generation is available to serve existing and new large loads, including any resource-adequacy proposals under consideration in its stakeholder process, a milestone schedule with the estimated FERC-filing date, and any ongoing efforts to speed new capacity. (Calendar date derived from the June 18 issuance; one analysis pegs the business-day-adjusted due date at July 20, 2026.)",
+      body: "Within 30 days, each RTO/ISO and its TOs must file a detailed informational report on how it will ensure adequate generation is available to serve existing and new large loads, including any resource-adequacy proposals under consideration in its stakeholder process, a milestone schedule with the estimated FERC-filing date, and any ongoing efforts to speed new capacity. (Calendar date derived from the June 18 issuance; one analysis pegs the business-day-adjusted due date at July 20, 2026.) This window has closed: see the filing matrix on the Overview for what our checks observed, docket by docket.",
       src: ["fercFS", "fercPR", "natlaw"],
     },
     {
-      date: "≈ Aug 17, 2026", iso: "2026-08-17", kind: "deadline",
+      date: "Jul 20, 2026", iso: "2026-07-20", kind: "milestone", track: "sc6",
+      title: "ISO-NE files its 30-day generation-adequacy report",
+      body: "ISO New England makes its informational filing on regional resource adequacy and begins to outline the rule changes it is weighing: requiring new large loads to bring incremental new generation, and not procuring capacity through the regional capacity market to serve those loads. That is a markedly different answer from PJM’s expedited-new-entry posture, and it is the regional tailoring the orders were designed to allow. It is the only one of the six 30-day reports our checks confirmed. The eLibrary accession is unverified, so the filing matrix carries it as press-reported rather than docket-verified.",
+      src: ["isonews0721"],
+    },
+    {
+      date: "Jul 23, 2026", iso: "2026-07-23", kind: "ferc", track: "gov",
+      title: "FERC holds the PJM governance conference and sets a September deadline",
+      body: "At the AD26-7-000 technical conference, Chairman Laura Swett says “PJM is facing a grave legitimacy crisis” and that “Some transmission owners are openly discussing leaving the RTO altogether.” Commissioner David LaCerte calls the board’s weakened independence “a cultural quagmire.” Commissioners, state officials, PJM leadership and market participants converge on board independence, an expanded state role, and limits on §205 filing rights as the levers; whether the stakeholder process should become purely advisory stays contested. FERC says it will issue a post-conference notice seeking written comments and convene a time-bound dispute-resolution forum in September, and that it will impose reforms itself if no credible package is agreed by the end of September.",
+      src: ["udgov", "frAD267"],
+    },
+    {
+      date: "≈ Aug 17, 2026", iso: "2026-08-17", kind: "deadline", track: "sc6",
       title: "60-day justification or tariff filing due",
-      body: "Within 60 days, each grid operator and its TOs must either show cause why its current tariff stays just and reasonable absent clear, consistent large-load provisions, or explain the §206 tariff changes that would remedy the concerns (Ordering Para (B)). The orders also set a 21-day intervention deadline (Rule 214), a 30-day window for responses after the operators file, and, in the NYISO order, a 45-day deadline to request abeyance of up to 90 days (NYISO P 42). The refund effective date is the order’s Federal Register publication date.",
+      body: "Within 60 days, each grid operator and its TOs must either show cause why its current tariff stays just and reasonable absent clear, consistent large-load provisions, or explain the §206 tariff changes that would remedy the concerns (Ordering Para (B)). The orders also set a 21-day intervention deadline (Rule 214), a 30-day window for responses after the operators file, and, in each order, a 45-day deadline to request abeyance of up to 90 days (e.g., NYISO P 42). The refund effective date is the order’s Federal Register publication date.",
       src: ["e7", "e12", "natlaw"],
     },
     {
-      date: "After each 60-day filing", iso: "2026-09-16", kind: "deadline",
+      date: "After each 60-day filing", iso: "2026-09-16", kind: "deadline", track: "sc6",
       title: "Responses due 30 days after the RTO/TO filing",
       body: "The 60-day filing is not the end of the process. After each respondent files its show-cause answer or proposed tariff changes, other parties get 30 days to respond. That response window is where large-load customers, generators, states, consumer advocates and existing customers can contest whether the filing actually solves cost allocation, transparency, flexible service and co-location issues.",
       src: ["e7", "natlaw"],
     },
     {
-      date: "Fall 2026, if requested", iso: "2026-10-01", kind: "deadline",
+      date: "Fall 2026, if requested", iso: "2026-10-01", kind: "deadline", track: "sc6",
       title: "Abeyance requests can slow the clock, but only within a bounded lane",
-      body: "NYISO's order expressly lets respondents request abeyance within 45 days, capped at 90 days and subject to FERC scrutiny. Practitioners read that as the safety valve for regions that need stakeholder process time, not an open-ended pause. Any abeyance would push the tariff-answer deadline later for that region while leaving the broader §206 proceeding alive.",
-      src: ["e12", "substack", "natlaw"],
+      body: "Every one of the six orders lets respondents request abeyance within 45 days, capped at 90 days and subject to FERC scrutiny; the Commission says it will not grant abeyances reflexively. Practitioners read that as the safety valve for regions that need stakeholder process time, not an open-ended pause. Any abeyance would push the tariff-answer deadline later for that region while leaving the broader §206 proceeding alive.",
+      src: ["e11", "e12", "substack", "natlaw"],
     },
     {
-      date: "After the response records close", iso: "2026-10-17", kind: "ferc",
+      date: "After the response records close", iso: "2026-10-17", kind: "ferc", track: "sc6",
       title: "FERC decides whether to accept, modify, or impose a §206 remedy",
       body: "Once the show-cause answers and response comments are in, FERC can accept a sufficient compliance path, direct further tariff changes, set additional hearing or settlement procedures, or impose its own §206 remedy if a region has not shown its tariff is just and reasonable. The practical question after the 60-day filings is therefore not just 'filed or not filed,' but whether the filing gives FERC enough record to approve a durable regional fix.",
       src: ["e7", "bloomberglaw", "fercFS"],
     },
     {
-      date: "Parallel lane", iso: "2026-10-18", kind: "milestone",
+      date: "Parallel lane", iso: "2026-10-18", kind: "milestone", track: "sc6",
       title: "Rehearing and court-review risk runs alongside implementation",
       body: "Parties can seek rehearing of FERC action before heading to court. Legal commentators read the six region-specific §206 records as a litigation-defense strategy: narrower records, tailored findings and market-by-market remedies give challengers fewer generic-rule targets. That does not remove legal risk; it shapes where the fight happens.",
       src: ["bloomberglaw", "heatmap"],
@@ -824,6 +999,7 @@ window.FERC_DATA = (function () {
 
   const voiceThemes = [
     {
+      wave: 1,
       title: "Cost responsibility is the center of gravity",
       body: "Across the post-order discussion, the basic question is not whether large loads should connect faster; it is whether the tariff makes the beneficiary carry the cost and risk of the upgrade.",
       quotes: [
@@ -834,6 +1010,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
+      wave: 1,
       title: "The regional route is both substance and litigation strategy",
       body: "The six-order structure is being read as a deliberate alternative to one national template: faster than a rulemaking, more tailored to each market, and easier to defend on the record.",
       quotes: [
@@ -844,6 +1021,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
+      wave: 1,
       title: "Speed now depends on provable flexibility",
       body: "The strongest pro-speed argument treats data centers as controllable loads, but the quotes also show the hard edge: flexibility has to be operational, measurable, and worth something in the tariff.",
       quotes: [
@@ -854,6 +1032,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
+      wave: 1,
       title: "Reliability and security remain live objections",
       body: "The order is not landing as a pure acceleration story. Consumer and security voices are treating faster interconnection as acceptable only if modeling, operating standards, and stability protections keep up.",
       quotes: [
@@ -863,6 +1042,7 @@ window.FERC_DATA = (function () {
       ],
     },
     {
+      wave: 1,
       title: "The physical buildout is bigger than the FERC clock",
       body: "The discourse keeps returning to the same physical constraint: the orders can compress process, but turbines, transformers, generation, local consent, and deliverable capacity still decide which projects energize.",
       quotes: [
@@ -873,12 +1053,53 @@ window.FERC_DATA = (function () {
       ],
     },
     {
+      wave: 1,
       title: "The organized-market focus leaves a Southeast gap",
       body: "The order covers the six RTO/ISO markets, while several reactions flag the regions outside that structure as exactly where transmission planning and interconnection practice may be weakest.",
       quotes: [
         { q: "non-RTO areas, which typically suffer from the worst transmission and interconnection practices", src: "utilitydive" },
         { q: "The Southeast needs a modern transmission system", src: "simonmahan" },
         { q: "we risk higher energy prices, power shortages, and lost economic opportunities", src: "simonmahan" },
+      ],
+    },
+
+    // ---- Wave 2: the filings and the governance fight (news-tracks-plan.md Feature D) ----------
+    // Wave 1 above is reaction to the June 18 orders, captured Jun 22 to 29. Wave 2 is what the record
+    // did next. Keeping them in dated lanes is the freshness filter: a June reaction and a July
+    // observation are different claims, and collapsing them would let the tab read as one frozen moment.
+    // Every wave-2 quote is captured in sources/news-evidence.json and swept by verify-quotes.mjs.
+    // `track` ties an item to the proceeding it belongs to, so governance commentary cannot quietly
+    // contaminate the §206 story.
+    {
+      wave: 2,
+      track: "gov",
+      title: "PJM’s own legitimacy becomes the story",
+      body: "The July 23 technical conference put PJM’s decision-making machinery on the record, and on a September clock. The same commission running the §206 filings is now asking who gets to decide what PJM files, which makes this lane a precondition for the other one rather than a sideshow.",
+      quotes: [
+        { q: "PJM is facing a grave legitimacy crisis", src: "udgov" },
+        { q: "Some transmission owners are openly discussing leaving the RTO altogether", src: "udgov" },
+        { q: "This is a cultural quagmire", src: "udgov" },
+      ],
+    },
+    {
+      wave: 2,
+      track: "sc6",
+      title: "Regional divergence: the tailoring thesis meets the record",
+      body: "The first observed answer to the 30-day reports points somewhere different from PJM’s expedited-new-entry posture. ISO-NE looks to new generation and away from its capacity market. That is the regional variation the six tailored orders were built to permit, showing up as substance rather than as a gap.",
+      quotes: [
+        { q: "requiring new large loads to bring incremental new generation", src: "isonews0721" },
+        { q: "not procuring capacity through the regional capacity market to serve these large loads", src: "isonews0721" },
+        { q: "intend to request a 90-day abeyance", src: "isonews0629" },
+      ],
+    },
+    {
+      wave: 2,
+      track: "context",
+      title: "Capacity scarcity is the arithmetic behind the argument",
+      body: "PJM’s 2028/2029 auction cleared at its cap for the third year running and still landed short of the reserve-margin target. Every claim about who should pay for new load is being made against that number.",
+      quotes: [
+        { q: "The price came in at the FERC-approved cap of $325/MW-day", src: "pjmbra" },
+        { q: "short of PJM’s 20% installed reserve margin target by 6,831 MW", src: "pjmbra" },
       ],
     },
   ];
@@ -1112,10 +1333,46 @@ window.FERC_DATA = (function () {
       { id: "intervene", label: "Motions to intervene", date: "2026-07-09", period: "21 days from issuance", cite: "Ordering ¶ (D) · Rule 214", desc: "Notices of intervention or motions to intervene in the six proceedings are due." },
       { id: "report", label: "Generation-adequacy report", date: "2026-07-20", dateNote: "30 days (Jul 18) rolled to the next business day", period: "30 days from issuance", cite: "Ordering ¶ (C)", desc: "Each RTO/ISO files an informational report on how it will ensure adequate generation to serve existing and new large loads." },
       { id: "rehearing", label: "Requests for rehearing", date: "2026-07-20", dateNote: "statutory 30 days (Jul 18) rolled to the next business day", period: "30 days from issuance", cite: "FPA § 313(a)", desc: "Statutory deadline to seek rehearing of the June 18 orders before a court appeal." },
-      { id: "abeyance", label: "Abeyance request (NYISO only)", date: "2026-08-03", dateNote: "45 days (Aug 2) rolled to the next business day", period: "45 days from issuance", cite: "E-12 (NYISO) P 42", desc: "NYISO-only: deadline to request full or partial abeyance (up to 90 days) of the proceeding." },
+      { id: "abeyance", label: "Abeyance requests", date: "2026-08-03", dateNote: "45 days (Aug 2) rolled to the next business day", period: "45 days from issuance", cite: "All six orders (e.g., E-12 P 42)", desc: "Deadline in each of the six orders to request full or partial abeyance (up to 90 days) of the proceeding. FERC says it will not grant abeyances reflexively and views extension requests with great disfavor." },
       { id: "showcause", label: "Show cause or file tariff changes", date: "2026-08-17", period: "60 days from issuance", cite: "Ordering ¶ (B)", desc: "Each RTO/ISO and its Transmission Owners must show cause why the tariff remains just and reasonable, or file remedial tariff changes." },
       { id: "response", label: "Response window opens", date: null, dateNote: "30 days after each RTO’s 60-day filing lands", period: "filing + 30 days", cite: "Ordering ¶ (E)", desc: "Interested entities may respond on whether the tariff remains just and reasonable and, if not, what replacement rates to implement. Opens once the show-cause/tariff filing is made." },
     ],
+
+    // ---- Per-RTO filing matrix (news-tracks-plan.md Feature B) -------------------------------
+    // The board above tracks the SCHEDULE; this tracks the OBSERVATIONS. They rest on different
+    // evidence and must not be conflated: a date passing is arithmetic, a filing landing is a fact
+    // somebody had to go and check.
+    //
+    // Only observations are stored. Every other cell is DERIVED from the clock at render time
+    // (`upcoming` before the step's date, `none-observed` after), so a matrix left sitting still can
+    // never harden into a false "nothing was filed" claim, and no status needs re-hand-editing as
+    // dates roll past. `steps` names the columns, by procedural.steps id.
+    //
+    //   filed-verified — accession seen on eLibrary. Requires `accession` + `verified_at`.
+    //   filed-reported — credible press or first-party RTO channel only. Requires `src`.
+    //   signaled       — the entity announced intent; nothing on the docket yet. Requires `src`.
+    //   none-observed  — derived: the deadline passed and our checks found nothing.
+    //   upcoming       — derived: the deadline has not arrived yet.
+    //
+    // As of the 2026-07-28 sweep NOTHING is `filed-verified`: eLibrary stayed Cloudflare-gated, so no
+    // accession has been read. That is the honest state, and the legend says so in the reader's words.
+    filings: {
+      asOf: "2026-07-28",
+      steps: ["report", "abeyance", "showcause"],
+      note: "Observed filings only. An empty cell means our checks found nothing, which is not proof nothing was filed. Nothing here is confirmed against an eLibrary accession yet: ferc.gov blocks automated retrieval, so docket confirmation is a manual step this refresh did not complete.",
+      rows: [
+        {
+          docket: "EL26-72-000", step: "report", status: "filed-reported", date: "2026-07-20",
+          gist: "Informational filing on regional resource adequacy. Outlines requiring new large loads to bring incremental new generation, and not procuring capacity for them through the regional capacity market.",
+          src: ["isonews0721"], accession: null, verified_at: null,
+        },
+        {
+          docket: "EL26-72-000", step: "abeyance", status: "signaled", date: "2026-06-29",
+          gist: "Says it and the region’s transmission owners intend to request a 90-day abeyance. If FERC grants it, the filing moves to November 16, 2026.",
+          src: ["isonews0629"], accession: null, verified_at: null,
+        },
+      ],
+    },
   };
 
   // ---- Record-to-rule crosswalk (policy-analysis-spec.md Part 3.3) ----------------------------
@@ -1217,5 +1474,5 @@ window.FERC_DATA = (function () {
       note: "The orders direct a study process for proximate generation. Whether such a generator can join the RTO's energy, ancillary, and capacity markets, and how it is accredited, is posed as a Section IV briefing question." },
   ];
 
-  return { SOURCES, meta, kpis, timeline, toplines, categories, dockets, colocation, jurisdiction, regional, reception, media, voices, voiceThemes, comments, commissioners, briefing, participate, procedural, policyMap };
+  return { SOURCES, meta, kpis, tracks, timeline, toplines, categories, dockets, colocation, jurisdiction, regional, reception, media, voices, voiceThemes, comments, commissioners, briefing, participate, procedural, policyMap };
 })();

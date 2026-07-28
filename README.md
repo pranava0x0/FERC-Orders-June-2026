@@ -53,9 +53,19 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 56 tests across the suites
+node --test tests/*.test.mjs   # 108 tests across the suites
 node tools/verify-quotes.mjs   # whole-site quote audit (one command; --list for every quote)
+node tools/check-staleness.mjs # advisory: passed deadlines, stale stamps, unobserved filings
+node tools/build-seo.mjs       # bake crawlable content + freshness dates + sitemap (--check)
+node tools/build-docket-pages.mjs # regenerate the seven per-docket pages (--check to verify)
+node tools/stamp-assets.mjs    # content-hash the ?v= asset tokens (--check to verify)
+python3 tools/build-og-image.py # regenerate the 1200x630 social card
 ```
+
+Refreshing the data (new filings, news, docket activity) is its own runbook:
+[REFRESH.md](REFRESH.md). It carries the open eLibrary verification queue and the retrieval
+workarounds that actually work (notably: federalregister.gov bot-blocks its HTML pages but leaves its
+JSON API and `full_text` endpoints open).
 
 Suites, no dependencies:
 
@@ -78,6 +88,16 @@ Suites, no dependencies:
   voice/theme quotes) must appear verbatim in its committed source, and every embedded prose quote (in
   `unique`, the Overview summary, toplines) must resolve in the corpus. Run the script for a one-shot
   report; spoken auto-caption quotes are flagged as unverifiable (they live on YouTube, off the text).
+
+## Generated pages
+
+Beyond the single-page app, `docs/dockets/<docket>-<rto>/` holds one static page per order (seven:
+E-7 to E-12 plus E-2), generated from `data.js` by `tools/build-docket-pages.mjs`. They exist because
+the app is one URL — its tabs are hash routes, and a fragment is not a separate URL to a search
+engine — so no order could rank for its own docket number. Each page carries that order's quoted
+directives, region-specific findings and full respondent roster, so no two share a paragraph. A test
+asserts they are in sync, that every title and description is distinct, and that every sitemap URL
+resolves to a committed file.
 
 ## Deploy (GitHub Pages)
 

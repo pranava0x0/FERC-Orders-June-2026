@@ -3,8 +3,15 @@
    additionally lazy-loads one small per-letter bin-detail file on demand (docs/data/comments/). */
 (function () {
   "use strict";
-  // cache-buster for the lazily fetched bin-detail JSON; keep in sync with index.html's ?v= tokens.
-  var ASSET_VER = "20260715a";
+  // Cache-buster for the lazily fetched bin-detail JSON. Read off our own <script src> rather than
+  // hardcoded: index.html's tokens are content hashes now (tools/stamp-assets.mjs), so a literal here
+  // could not hold app.js's own hash without being circular, and "keep this in sync by hand" is exactly
+  // the instruction that got missed and shipped a stale-asset bug. Falls back to "dev" off-server.
+  var ASSET_VER = (function () {
+    var s = document.currentScript || document.querySelector('script[src*="js/app.js"]');
+    var m = s && s.src && s.src.match(/[?&]v=([A-Za-z0-9_-]+)/);
+    return m ? m[1] : "dev";
+  })();
   // A Comments route parsed from the URL hash, held until the panel is rendered and wired, then applied.
   var pendingCommentsRoute = null;
   // Set by wireComments once the Comments panel exists; drives sub-tab + row-permalink navigation.
@@ -123,8 +130,113 @@
     }).join("");
     return head("What happens next: the §206 procedural clock", P.basis) +
       '<ol class="proc-board">' + rows + "</ol>" +
-      '<p class="proc-foot">Dates are derived from the ' + esc(P.issuedLabel) +
-      " issuance, business-day-adjusted; status reflects today’s date, not confirmed eLibrary filings. Confirm each deadline in the order before relying on it.</p>";
+      // The Aug 17 collision: two clocks, one date, different dockets. Exactly the confusion the
+      // tracks model exists to prevent, so it is called out where the clock is read.
+      '<p class="proc-collide"><span class="proc-collide-lbl">Two clocks, one date</span> ' +
+      "August 17 carries both the six show-cause filings and PJM’s further compliance filing in the " +
+      "separate EL25-49 co-location docket. Different proceedings, same deadline.</p>" +
+      renderFilingMatrix() +
+      // The old foot described one evidence base. There are now two, and they are not equally strong.
+      '<p class="proc-foot">The clock above is arithmetic: dates derived from the ' + esc(P.issuedLabel) +
+      " issuance, business-day-adjusted, and status computed against today. The matrix below it is " +
+      "observation, and a much weaker guarantee: it records only what our checks actually found, on " +
+      "the evidence noted per cell. Confirm each deadline in the order, and each filing on the docket, " +
+      "before relying on either.</p>";
+  }
+
+  /* ---- Per-RTO filing matrix (news-tracks-plan.md Feature B) ---- */
+  // Stored rows are observations only; every other cell is derived from the clock here, so the grid
+  // cannot go stale into a false "nothing was filed". The chips are lossy on their own, so each carries
+  // the full sentence in aria-label (the house rule for a glyph standing in for a fact).
+  var FILING_STATUS = {
+    "filed-verified": { lbl: "Filed", sentence: "Filed, and confirmed against an eLibrary accession." },
+    "filed-reported": { lbl: "Filed (reported)", sentence: "Reported filed by press or the operator’s own channel. Not confirmed on the docket." },
+    signaled: { lbl: "Signaled", sentence: "The operator has announced it intends to file. Nothing on the docket yet." },
+    "none-observed": { lbl: "Not observed", sentence: "The deadline has passed and our checks found nothing. That is not proof nothing was filed." },
+    upcoming: { lbl: "Upcoming", sentence: "The deadline has not arrived yet." },
+    na: { lbl: "N/A", sentence: "This step does not apply here." },
+  };
+
+  // (docket, step) -> stored observation, if any.
+  function filingObs(docket, stepId) {
+    var F = D.procedural && D.procedural.filings;
+    if (!F) return null;
+    return (F.rows || []).filter(function (r) { return r.docket === docket && r.step === stepId; })[0] || null;
+  }
+  // The derived half: no observation means the answer depends only on whether the date has passed.
+  // `ps` is one clock snapshot passed in by the caller, so every cell in a render is derived against the
+  // same instant (and we don't re-map all seven steps 18 times to say the same thing).
+  function filingCell(docket, stepId, ps) {
+    var obs = filingObs(docket, stepId);
+    if (obs) return { status: obs.status, obs: obs };
+    var clock = ps || procStatus();
+    var hit = clock && clock.steps.filter(function (x) { return x.s.id === stepId; })[0];
+    var passed = hit && hit.date && hit.status === "past";
+    return { status: passed ? "none-observed" : "upcoming", obs: null };
+  }
+  // Counts for the masthead chip and the matrix caption. Derived, never hand-written.
+  function filingTally(stepId) {
+    var six = D.dockets || [];
+    var ps = procStatus();
+    var seen = six.filter(function (d) {
+      var c = filingCell(d.docket, stepId, ps);
+      return c.status === "filed-verified" || c.status === "filed-reported";
+    }).length;
+    return { seen: seen, total: six.length };
+  }
+
+  function renderFilingMatrix() {
+    var F = D.procedural && D.procedural.filings;
+    if (!F || !F.steps || !D.dockets) return "";
+    var stepById = {};
+    (D.procedural.steps || []).forEach(function (s) { stepById[s.id] = s; });
+    var cols = F.steps.filter(function (id) { return stepById[id]; });
+
+    var headCells = cols.map(function (id) {
+      var s = stepById[id];
+      return '<th scope="col"><span class="fm-col">' + esc(s.label) + "</span>" +
+        (s.date ? '<span class="fm-coldate mono">' + esc(fmtISO(s.date)) + "</span>" : "") + "</th>";
+    }).join("");
+
+    var ps = procStatus();   // one clock snapshot for the whole grid
+    var bodyRows = D.dockets.map(function (d) {
+      var cells = cols.map(function (id) {
+        var c = filingCell(d.docket, id, ps);
+        var m = FILING_STATUS[c.status] || { lbl: c.status, sentence: c.status };
+        var when = c.obs && c.obs.date ? '<span class="fm-when mono">' + esc(fmtISO(c.obs.date)) + "</span>" : "";
+        return '<td><span class="fm-chip fm-' + esc(c.status) + '" role="img" aria-label="' +
+          esc(d.rto + ", " + stepById[id].label + ": " + m.sentence) + '">' + esc(m.lbl) + "</span>" + when + "</td>";
+      }).join("");
+      return '<tr><th scope="row"><span class="fm-rto">' + esc(d.rto) +
+        '</span><span class="fm-docket mono">' + esc(d.docket) + "</span></th>" + cells + "</tr>";
+    }).join("");
+
+    // Every observation in full, beneath the grid. The chips are the at-a-glance layer; this is where
+    // the gist, the date and the sources live, so nothing is hidden behind a hover or a popover.
+    var obsList = (F.rows || []).map(function (r) {
+      var d = (D.dockets || []).filter(function (x) { return x.docket === r.docket; })[0];
+      var m = FILING_STATUS[r.status] || { lbl: r.status };
+      var acc = r.accession
+        ? ' <a class="cite-link" href="' + esc(eli(r.accession)) + '" target="_blank" rel="noopener noreferrer">eLibrary ' +
+          esc(r.accession) + ' <span class="ext" aria-hidden="true">↗</span></a>'
+        : "";
+      return '<li class="fm-obs"><div class="fm-obs-head"><span class="fm-chip fm-' + esc(r.status) + '">' + esc(m.lbl) + "</span>" +
+        '<span class="fm-obs-who">' + esc((d ? d.rto : r.docket) + " · " + ((stepById[r.step] || {}).label || r.step)) + "</span>" +
+        '<span class="fm-when mono">' + esc(fmtISO(r.date)) + "</span></div>" +
+        '<p class="fm-obs-gist">' + esc(r.gist) + "</p>" + srcChips(r.src) + acc + "</li>";
+    }).join("");
+
+    var tally = filingTally("report");
+    return '<section class="fm" aria-labelledby="fm-h">' +
+      '<div class="fm-head"><h4 id="fm-h">What has actually been filed</h4>' +
+      '<span class="fm-asof mono">checked ' + esc(F.asOf) + "</span></div>" +
+      '<p class="fm-lede">' + esc(F.note) + "</p>" +
+      '<div class="fm-scroll"><table class="fm-table"><caption class="sr-only">Observed filings by grid operator and procedural step. ' +
+      esc(tally.seen + " of " + tally.total + " generation-adequacy reports observed.") + '</caption>' +
+      "<thead><tr><th scope=\"col\">Grid operator</th>" + headCells + "</tr></thead>" +
+      "<tbody>" + bodyRows + "</tbody></table></div>" +
+      (obsList ? '<h5 class="fm-obs-h">What we observed</h5><ul class="fm-obs-list">' + obsList + "</ul>" : "") +
+      "</section>";
   }
 
   // ---- Record-to-rule crosswalk (data.js → policyMap; policy-analysis-spec.md Part 4.1) ----------
@@ -247,9 +359,17 @@
 
   /* ---- TAB: Overview (stats + at-a-glance + background) ---- */
   function renderOverview() {
+    // The two deadline cards read as forever-pending until they say where the clock actually is. State
+    // comes from the same today-comparison the procedural board uses, so the three never disagree.
     var stats = '<div class="kpis">' + D.kpis.map(function (k) {
+      var state = "";
+      if (k.step) {
+        var w = pmStepWhen(k.step);
+        if (w) state = '<div class="kpi-state ' + (w.flag === "Passed" ? "past" : "upcoming") + '">' +
+          esc(w.flag) + ' <span class="mono">' + esc(w.when) + "</span></div>";
+      }
       return '<div class="kpi' + (k.deadline ? " deadline" : "") + '"><div class="v">' + esc(k.value) +
-        '</div><div class="l">' + esc(k.label) + '</div><div class="s">' + esc(k.sub) + "</div></div>";
+        '</div><div class="l">' + esc(k.label) + '</div><div class="s">' + esc(k.sub) + "</div>" + state + "</div>";
     }).join("") + "</div>";
 
     var m = D.meta;
@@ -298,14 +418,100 @@
 
     return head("Overview", m.subtitle) +
       '<div class="overview-bg">' + paras(m.summary) + "</div>" +
-      stats + renderProcedural() + glance + commish;
+      stats + renderStandStrip() + renderProcedural() + glance + commish;
   }
 
-  /* ---- TAB 1 ---- */
+  // "Where things stand": one line per track, generated from the registry so there is no second copy of
+  // the status prose to keep in sync (news-tracks-plan.md Feature E1). Each line links into the Timeline
+  // filtered to that track. The strip carries its own as-of stamp because it is the one part of the
+  // Overview that goes stale on a calendar, not on a docket.
+  function renderStandStrip() {
+    var ids = Object.keys(D.tracks || {});
+    if (!ids.length) return "";
+    var rows = ids.map(function (id) {
+      var t = D.tracks[id];
+      var next = t.next && t.next.date
+        ? '<span class="stand-next"><span class="mono">' + esc(fmtISO(t.next.date)) + "</span> " + esc(t.next.label) + "</span>"
+        : '<span class="stand-next none">' + esc((t.next && t.next.label) || "No dated step") + "</span>";
+      return '<li class="stand-row"><a class="stand-link" href="#timeline/track/' + esc(id) + '">' +
+        '<span class="stand-label">' + esc(t.label) + '</span><span class="stand-go" aria-hidden="true">→</span></a>' +
+        '<p class="stand-line">' + esc(t.status.line) + "</p>" + next + "</li>";
+    }).join("");
+    var asOf = (D.meta && D.meta.newsCapture) || "";
+    return '<section class="stand" aria-labelledby="stand-h">' +
+      '<div class="stand-head"><h3 id="stand-h">Where things stand</h3>' +
+      (asOf ? '<span class="stand-asof mono">news swept ' + esc(asOf) + "</span>" : "") + "</div>" +
+      '<p class="stand-lede">Four proceedings and one context lane run beside each other, each on its own clock.</p>' +
+      '<ol class="stand-list">' + rows + "</ol></section>";
+  }
+
+  /* ---- TAB 1: the track-aware rail (news-tracks-plan.md Feature A) ---- */
+  // Four proceedings and one context lane run beside each other. The rail stays ONE merged chronology
+  // on purpose: the capacity auction clearing at its cap nine days before the governance conference is
+  // the story, and swimlanes would destroy it (also unreadable at 375px across five lanes of very
+  // uneven density). Separation comes on demand instead, from the track cards, a single-select chip
+  // row, and a per-event pill. Filtering hides rows rather than rebuilding the DOM: ~16 events.
+  var TRACK_IDS = Object.keys(D.tracks || {});
+  var timelineTrack = "all";                 // module state; mirrored in the hash as #timeline/track/<id>
+  var applyTimelineTrack = null;             // set by wireTimeline once the panel exists
+  var pendingTimelineTrack = null;           // a deep link parsed before first render
+
+  function trackCount(id) {
+    return (D.timeline || []).filter(function (e) { return e.track === id; }).length;
+  }
+  // Guard that stops a hand-typed "#timeline/track/whatever" from filtering the rail to nothing.
+  // Parenthesised deliberately: `||` binds tighter than `?:`, so the intent is easy to misread here.
+  function validTrack(id) { return (id === "all" || !!(D.tracks || {})[id]) ? id : "all"; }
+
+  // The pill sits beside the kindpill on every row. kindpill stays color-coded text (doe/ferc/deadline);
+  // the trackpill gets a hairline border and muted fill so the rail doesn't turn into confetti.
+  function trackPill(id) {
+    var t = (D.tracks || {})[id];
+    if (!t) return "";
+    return '<button type="button" class="trackpill" data-track="' + esc(id) +
+      '" title="' + esc(t.label) + '" aria-label="Filter the timeline to ' + esc(t.label) + '">' +
+      esc(t.short) + "</button>";
+  }
+
+  function trackCards() {
+    var cards = TRACK_IDS.map(function (id) {
+      var t = D.tracks[id], n = trackCount(id);
+      var next = t.next && t.next.date
+        ? '<span class="trk-next"><span class="trk-next-lbl">Next</span> <span class="mono">' +
+          esc(fmtISO(t.next.date)) + "</span> " + esc(t.next.label) +
+          (t.next.dateNote ? '<span class="trk-next-note">' + esc(t.next.dateNote) + "</span>" : "") + "</span>"
+        : '<span class="trk-next none">' + esc((t.next && t.next.label) || "No dated step") + "</span>";
+      return '<button type="button" class="trk-card" data-track="' + esc(id) + '" aria-pressed="false">' +
+        '<span class="trk-head"><span class="trk-label">' + esc(t.label) +
+        '</span><span class="trk-n mono">' + n + (n === 1 ? " event" : " events") + "</span></span>" +
+        '<span class="trk-venue mono">' + esc(t.venue || "Not a docket") + "</span>" +
+        '<span class="trk-what">' + esc(t.what) + "</span>" +
+        '<span class="trk-why"><span class="trk-why-lbl">Why it is separate</span> ' + esc(t.whySeparate) + "</span>" +
+        (t.aka ? '<span class="trk-aka">' + esc(t.aka) + "</span>" : "") +
+        '<span class="trk-status">' + esc(t.status.line) +
+        ' <span class="trk-asof mono">as of ' + esc(t.status.asOf) + "</span></span>" +
+        next + "</button>";
+    }).join("");
+    return '<div class="trk-grid">' + cards + "</div>";
+  }
+
+  function trackChips() {
+    var chips = [{ id: "all", short: "All", label: "All tracks", n: (D.timeline || []).length }]
+      .concat(TRACK_IDS.map(function (id) {
+        return { id: id, short: D.tracks[id].short, label: D.tracks[id].label, n: trackCount(id) };
+      }));
+    return '<div class="trk-chips" role="group" aria-label="Filter the timeline by track">' +
+      chips.map(function (c) {
+        return '<button type="button" class="trk-chip" data-track="' + esc(c.id) +
+          '" aria-pressed="' + (c.id === "all" ? "true" : "false") + '" title="' + esc(c.label) + '">' +
+          esc(c.short) + ' <span class="trk-chip-n mono">' + c.n + "</span></button>";
+      }).join("") + "</div>";
+  }
+
   function renderTimeline() {
     var tl = '<div class="timeline">' + D.timeline.map(function (e) {
-      return '<div class="tl-item ' + e.kind + '"><div class="tl-date">' + esc(e.date) +
-        '<span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span></div>" +
+      return '<div class="tl-item ' + e.kind + '" data-track="' + esc(e.track || "") + '"><div class="tl-date">' + esc(e.date) +
+        '<span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span>" + trackPill(e.track) + "</div>" +
         '<div class="tl-title">' + esc(e.title) + "</div>" +
         '<div class="tl-body">' + esc(e.body) + "</div>" + srcChips(e.src) + "</div>";
     }).join("") + "</div>";
@@ -316,10 +522,49 @@
     }).join("") + "</div>";
 
     return head("Timeline: DOE §403 directive to FERC §206 orders",
-      "How an Oct. 2025 DOE directive became six near-simultaneous show cause orders on a 30/60-day clock.") +
+      "One chronology, five lanes: the §206 clock, the EL25-49 co-location docket, the AD26-7 governance fight, the RM26-4 record, and the market context around them.") +
+      '<h3 class="trk-h">The parallel tracks</h3>' +
+      '<p class="trk-lede">Each lane is its own proceeding on its own clock. Pick one to filter the rail below it.</p>' +
+      trackCards() + trackChips() +
+      '<span class="sr-only" role="status" aria-live="polite" id="tl-filterstatus"></span>' +
       tl +
       accSection("Toplines: the strategic shift",
         "Why tailored §206 show cause orders instead of a generic NOPR, and what it signals.", top, false, (D.toplines || []).length);
+  }
+
+  // Filter wiring. The cards and the chips drive one piece of state, so both carry aria-pressed and both
+  // toggle back to "all" when the active track is clicked again. The intro grid never hides: a shared
+  // #timeline/track/<id> link must land on something that explains the lane it just filtered to.
+  function wireTimeline() {
+    var panel = panelFor("timeline");
+    if (!panel) return;
+    applyTimelineTrack = function (id) {
+      timelineTrack = validTrack(id);
+      panel.querySelectorAll(".tl-item").forEach(function (el) {
+        el.hidden = timelineTrack !== "all" && el.getAttribute("data-track") !== timelineTrack;
+      });
+      panel.querySelectorAll(".trk-chip, .trk-card").forEach(function (b) {
+        var on = b.getAttribute("data-track") === timelineTrack;
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+        b.classList.toggle("is-active", on);
+      });
+      var live = panel.querySelector("#tl-filterstatus");
+      if (live) {
+        var n = panel.querySelectorAll(".tl-item:not([hidden])").length;
+        live.textContent = timelineTrack === "all"
+          ? "Showing all " + n + " events."
+          : "Filtered to " + D.tracks[timelineTrack].label + ": " + n + (n === 1 ? " event." : " events.");
+      }
+    };
+    panel.addEventListener("click", function (ev) {
+      var b = ev.target.closest("button[data-track]");
+      if (!b || !panel.contains(b)) return;
+      var id = b.getAttribute("data-track");
+      applyTimelineTrack(id === timelineTrack && id !== "all" ? "all" : id);
+      writeTimelineHash(timelineTrack);
+    });
+    applyTimelineTrack(pendingTimelineTrack || "all");
+    pendingTimelineTrack = null;
   }
 
   /* ---- TAB: Reforms (the five categories + jurisdiction + regional) ---- */
@@ -422,6 +667,11 @@
             '<span class="dir-quote">“' + esc(x.q) + '”</span></div>';
         }).join("") + "</div>";
       // A final order (E-2) carries a `kind` line up top so its nature reads at a glance vs the open §206 clocks.
+      // Each order also has a standalone page (tools/build-docket-pages.mjs) so it has a URL of its own
+      // to rank for and to link to. Keep the slug rule identical to the generator's.
+      var docketSlug = (d.docket + "-" + d.rto).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      var pageLink = '<a class="docket-page-link" href="dockets/' + esc(docketSlug) + '/">' +
+        "Open the " + esc(d.item) + " page for " + esc(d.docket) + ' <span aria-hidden="true">→</span></a>';
       var kindLine = d.kind ? '<div class="docket-kind">' + esc(d.kind) + ' · final order</div>' : "";
       var unique = d.unique ? '<div class="docket-unique"><span class="label">What’s unique to ' + esc(d.rto) + '</span><p>' + esc(d.unique) + "</p></div>" : "";
       var asksLabel = d.track ? "What the order decides" : "What FERC presses " + esc(d.rto) + " on";
@@ -476,7 +726,7 @@
         '<span class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</span></span>" +
         '<span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span>" +
         '<span class="chev" aria-hidden="true">›</span></summary>' +
-        '<div class="docket-body">' + orderLink + kindLine + unique + directives + asks + briefing + commish + region + roster + "</div></details>";
+        '<div class="docket-body">' + orderLink + kindLine + unique + directives + asks + briefing + commish + region + roster + pageLink + "</div></details>";
     }
     // The six §206 show cause orders, then the E-2 co-location order they build on (collapsed, labeled).
     var six = D.dockets.map(renderDocketCard).join("");
@@ -499,6 +749,12 @@
 
     return head("The dockets: E-7 through E-12, plus the E-2 co-location order",
       "Every §206 order runs the same spine — the five categories, the clock, and the jurisdictional line are in the Reforms tab; each card here is the region-specific variation. Open one for what’s unique to that system, the page-cited directives and distinct findings, the Section IV asks, what each commissioner said about that order, and every named respondent. After the six sits Item E-2 (EL25-49-002), the order on rehearing decided the same morning that finalizes the PJM co-location services the six extend.") +
+      // AD26-7 gets a pointer, not a card. These accordions are backed by committed, page-cited order
+      // PDFs; the governance conference has no primary document in the repo to quote. If FERC's
+      // post-conference notice becomes one, that is the moment it earns a card here, and not before.
+      '<p class="cm-xlink">The PJM governance proceeding (Docket AD26-7-000) runs beside these dockets ' +
+      'on its own clock, with no committed order to cite yet. ' +
+      '<a class="cm-agg-link" href="#timeline/track/gov">See the governance track on the timeline <span aria-hidden="true">→</span></a></p>' +
       docs +
       head("File or follow the dockets", "Every proceeding is open on the public record. Use the exact docket number on any submission.") + participate;
   }
@@ -525,12 +781,32 @@
       return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
     }).join("");
 
-    var quoteThemes = '<div class="quote-themes">' + (D.voiceThemes || []).map(function (t) {
+    // Two dated waves, freshest first (news-tracks-plan.md Feature D). Wave 1 is reaction to the June
+    // 18 orders; wave 2 is what the record did next. Each lane carries its own capture stamp, because
+    // "commentary gathered <one date>" stopped being true the moment the tab held two moments.
+    var themeCard = function (t) {
       var qs = (t.quotes || []).map(function (q) {
         return '<li><blockquote>“' + esc(q.q) + '”</blockquote>' + srcChips([q.src]) + "</li>";
       }).join("");
-      return '<section class="quote-theme"><h3>' + esc(t.title) + '</h3><p>' + esc(t.body) + '</p><ul class="quote-list">' + qs + "</ul></section>";
-    }).join("") + "</div>";
+      var tr = t.track && D.tracks && D.tracks[t.track]
+        ? '<span class="trackpill is-static" title="' + esc(D.tracks[t.track].label) + '">' + esc(D.tracks[t.track].short) + "</span>"
+        : "";
+      return '<section class="quote-theme"><h3>' + esc(t.title) + tr + '</h3><p>' + esc(t.body) +
+        '</p><ul class="quote-list">' + qs + "</ul></section>";
+    };
+    var themesInWave = function (n) {
+      return (D.voiceThemes || []).filter(function (t) { return (t.wave || 1) === n; });
+    };
+    var waveLane = function (n, title, stamp) {
+      var items = themesInWave(n);
+      if (!items.length) return "";
+      return '<div class="wave wave-' + n + '"><div class="wave-head"><h3 class="wave-title">' + esc(title) +
+        '</h3><span class="wave-stamp mono">captured ' + esc(stamp) + "</span></div>" +
+        '<div class="quote-themes">' + items.map(themeCard).join("") + "</div></div>";
+    };
+    var quoteThemes =
+      waveLane(2, "The filings and the governance fight", D.meta.newsCapture || D.meta.discourseCapture) +
+      waveLane(1, "Reaction to the June 18 orders", D.meta.discourseCapture);
 
     // The RM26-4 comment period (stats, respondent types, themes/categories, and the full searchable
     // filing list) lives in its own Comments tab now; Discourse keeps a short pointer.
@@ -543,7 +819,7 @@
     return accSection("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.", rec + commentsBlock, true, recItems.length) +
       accSection("Commentary themes with quoted source lines",
-      "Themes from the post-order discourse, with the underlying quoted statements linked under each theme. Commentary gathered " + D.meta.discourseCapture + " (the order record is as of " + D.meta.capture + ").", quoteThemes, false, (D.voiceThemes || []).length) +
+      "Themes from the discourse, in two dated waves: reaction to the orders themselves, then what the record did next. Each quote links to its captured source. The order record is as of " + D.meta.capture + ".", quoteThemes, false, (D.voiceThemes || []).length) +
       accSection("Media & discourse: consensus and friction", "The dominant narratives in energy trade press and policy circles.", disc, false, consensusN + frictionN) +
       accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false, outletIds.length);
   }
@@ -1195,13 +1471,15 @@
       "<h4>Derived dates</h4>" +
       "<p>The 30-day and 60-day periods are stated by FERC. The specific calendar due-dates are derived from the June 18, 2026 issuance (business-day-adjusted figures attributed to the National Law Review analysis).</p>" +
       "<h4>All sources</h4>" + srcList +
-      "<p style='margin-top:10px'><em>Last updated: order record as of " + esc(D.meta.capture) + "; Discourse updated " + esc(D.meta.discourseCapture) + ". Independent analysis; not affiliated with FERC or DOE.</em></p>";
+      "<p style='margin-top:10px'><em>Last updated: order record as of " + esc(D.meta.capture) + "; Discourse updated " + esc(D.meta.discourseCapture) +
+      (D.meta.newsCapture ? "; news and filings swept " + esc(D.meta.newsCapture) : "") +
+      ". Independent analysis; not affiliated with FERC or DOE.</em></p>";
   }
 
   /* ---- tablist ---- */
   var TABS = ["overview", "timeline", "reforms", "dockets", "comments", "news"];
   var renderers = { overview: renderOverview, timeline: renderTimeline, reforms: renderReforms, dockets: renderDockets, comments: renderComments, news: renderNews };
-  var afterRender = { comments: wireComments };
+  var afterRender = { comments: wireComments, timeline: wireTimeline };
   var rendered = {};
 
   function panelFor(name) { return document.getElementById("panel-" + name); }
@@ -1222,6 +1500,18 @@
     }
     return window.CommentsRoute.DEFAULT_SUB;
   }
+  // Timeline URL state: "#timeline/track/gov". Same shape as the Comments hash, minus the query grammar,
+  // because a filtered rail is worth sharing but has exactly one parameter. "all" writes the bare "#timeline".
+  function writeTimelineHash(track) {
+    var body = "#timeline" + (track && track !== "all" ? "/track/" + track : "");
+    if (history.replaceState) history.replaceState(null, "", body);
+    else location.hash = body.slice(1);
+  }
+  function parseTimelineRest(rest) {
+    var m = String(rest || "").match(/^track\/([A-Za-z0-9_-]+)$/);
+    return validTrack(m ? m[1] : "all");   // an unknown track id degrades to the unfiltered rail
+  }
+
   // "#comments/summaries?q=x" -> { tab: "comments", rest: "summaries?q=x" }; "#news" -> { tab:"news", rest:"" }
   function parseHash() {
     var h = (location.hash || "").replace(/^#/, "");
@@ -1238,6 +1528,15 @@
       activate("comments", focus);
       if (!firstRender && applyCommentsRoute) applyCommentsRoute(state); // already wired: apply now
       if (!state.acc) scrollToTabsTop();   // a permalink scrolls to its row instead
+    } else if (tab === "timeline") {
+      // `timelineTrack` is the single source of truth; `pendingTimelineTrack` is ONLY the handoff for a
+      // deep link that arrives before the panel exists. Apply before activate() either way, so the hash
+      // activate() writes reflects the track we just routed to.
+      var track = parseTimelineRest(rest);
+      if (!rendered.timeline) pendingTimelineTrack = track;   // wireTimeline consumes and clears it
+      else if (applyTimelineTrack) applyTimelineTrack(track); // already wired: set live state now
+      activate("timeline", focus);
+      scrollToTabsTop();
     } else {
       activate(tab, focus);
       scrollToTabsTop();
@@ -1263,8 +1562,13 @@
         if (focus) tab.focus();
       }
     });
-    // Comments manages its own richer hash (sub-tab + permalinks); other tabs stay bare "#<tab>".
-    if (name !== "comments") {
+    // Comments and Timeline manage their own richer hashes (sub-tab + permalinks; track filter).
+    // Writing a bare "#timeline" here would clobber a #timeline/track/<id> deep link on arrival.
+    // By here wireTimeline (first render) or goTab (already rendered) has already settled timelineTrack,
+    // so it is the only thing to read. Preferring the pending handoff instead let a consumed-but-uncleared
+    // value outvote the live filter, and the URL then disagreed with the rail.
+    if (name === "timeline") writeTimelineHash(timelineTrack);
+    else if (name !== "comments") {
       if (history.replaceState) history.replaceState(null, "", "#" + name);
       else location.hash = name;
     }
@@ -1296,6 +1600,25 @@
     var n = ps.next.s;
     el.innerHTML = 'Next deadline · <span class="mono">' + esc(fmtISO(n.date)) + "</span> · " + esc(n.label) +
       ' <span class="mh-derived">(derived)</span>';
+    // Second clause: the most recent PASSED step the filing matrix covers, with its observed count.
+    // Without it the chip announces a deadline and says nothing about whether the last one was met,
+    // which is the honesty gap a visitor hits first. Counts derive from the matrix, never hand-written.
+    // Appended as a text node rather than folded into the innerHTML above: no markup needed here.
+    var F = D.procedural && D.procedural.filings;
+    if (F && F.steps) {
+      var passed = ps.steps.filter(function (x) {
+        return x.status === "past" && F.steps.indexOf(x.s.id) >= 0;
+      });
+      var last = passed[passed.length - 1];
+      if (last) {
+        var t = filingTally(last.s.id);
+        var span = document.createElement("span");
+        span.className = "mh-observed";
+        span.textContent = last.s.label.toLowerCase() + ": " + t.seen + " of " + t.total + " observed";
+        el.appendChild(document.createTextNode(" · "));
+        el.appendChild(span);
+      }
+    }
     el.hidden = false;
   }
 

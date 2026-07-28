@@ -118,6 +118,11 @@ const wholeCorpus = `${allOrders} ¶ ${fercDoe}`;
 
 const evidence = JSON.parse(read("sources", "voices-evidence.json"));
 const evidenceText = loose(Object.values(evidence.voices).map((v) => v.evidence).join(" ¶ "));
+// News-refresh captures (news-tracks-plan.md). Timeline event bodies quote named speakers at the AD26-7
+// conference and on RTO channels; those quotes live off the order corpus, so they need their own capture
+// file or they would ship unswept. Union with the corpus: a timeline body may equally quote an order.
+const newsEvidence = JSON.parse(read("sources", "news-evidence.json"));
+const newsEvidenceText = loose(Object.values(newsEvidence.items).map((v) => v.evidence).join(" ¶ "));
 
 // Sweep every quote in FERC_DATA and classify it. Exported so a test can assert zero required misses;
 // the CLI block below prints a human report.
@@ -172,8 +177,19 @@ for (const v of D.voices || []) {
     if (loose(m[1]).length >= 6) req(`voice "${v.name}"`, m[1], evidenceText);
   }
 }
+// Wave-1 theme quotes were captured in voices-evidence; wave-2's come from the news captures. Check
+// against the union so a theme is verified by whichever file actually holds its snippet.
+const themeEvidence = `${evidenceText} ¶ ${newsEvidenceText}`;
 for (const th of D.voiceThemes || []) {
-  for (const q of th.quotes || []) req(`voice theme "${th.title}"`, q.q, evidenceText);
+  for (const q of th.quotes || []) req(`voice theme "${th.title}"`, q.q, themeEvidence);
+}
+
+// 3b) Timeline event bodies (REQUIRED). These were swept by nothing until the 2026-07-28 news refresh,
+//     which is how a named speaker's quote could reach the rail unbacked. An event body may quote an
+//     order, a FERC/DOE text, or a captured news snippet, so check against the union of all three.
+const timelineCorpus = `${newsEvidenceText} ¶ ${wholeCorpus}`;
+for (const e of D.timeline || []) {
+  for (const q of proseQuotes(e.body || "")) req(`timeline "${e.title}"`, q, timelineCorpus);
 }
 
 // Section IV briefing quotes (REQUIRED) — templated across the six §206 orders, so check each against the

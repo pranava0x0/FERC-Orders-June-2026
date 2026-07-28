@@ -22,8 +22,9 @@ token figure.
 | 7 | 2026-06-25 | Workflow `summarize-comments` **redesign** (`wf_d373e68a-c9c`) | Same task, optimized: self-critique in the extractor + deterministic linter + audit **only on flagged** items; lean subagent | 11 | 140 | 513,245 | 271.1 s | sonnet | ✅ 10/10 valid; **51K/comment vs pilot's 89K = 43% less on LARGER comments**; only 1/10 flagged (audit confirmed it good) |
 | 8 | 2026-06-25 | Workflow `summarize-comments` **chunk-1** (`wf_8042b762-91b`) | 40 comments (the shortest filings) on Sonnet — **chunk too big for the user's ~9% remaining session budget** | 40 | 285 | 1,023,553 | 357.4 s | sonnet | ⚠️ **23/40 written, then the user's 5-hr session limit hit and the last 17 failed.** No data lost (per-summary save); failures re-queue. My error: launched 40 + didn't `TaskStop` when the user flagged budget |
 | 9 | 2026-06-25 | Workflow `summarize-comments` **Haiku probe** (`wf_fa8cb72b-eba`) | 3 re-queued comments, extract on **Haiku**, audit on Sonnet — does the cheap path hold up? | 4 | 100 | 183,855 | 334.9 s | haiku + sonnet | ✅ 3/3 valid; the 1 flagged got a real coverage gap fixed by the Sonnet audit. But **~46K/agent ≈ same token COUNT as Sonnet** (25 tools/agent — Haiku loops more on the validate-fix cycle); Haiku saves $/token, not tokens |
+| 10 | 2026-07-28 | Agent `claude` **news sweep** | Web-search-only refresh research for `news-tracks-plan.md`: six-docket filings since Jun 24, E-2/EL25-49, the PJM governance conference, "SW technical conference" disambiguation, 30/60-day deadline watch | 1 | 44 | 135,370 | 478.5 s | sonnet | ✅ All 4 tracks resolved with per-item fetched-vs-snippet confidence flags + a source index; disambiguated the "SW technical conference" = the Swett-led AD26-7-000 PJM governance conference (Jul 23), ruling out SPP/NERC/RA-conference candidates; its ISO-NE abeyance find exposed the site's "(NYISO only)" scoping bug (issues.md 2026-07-28). ferc.gov/eLibrary 403'd throughout (expected), so docket-level confirmation is queued for the manual browser pass |
 
-_Totals (Runs 1–9 shown): 81 agent-runs · 1,174 tool uses · **3,761,672** subagent tokens · ~2,449 s of agent wall-clock. Of which Run 3 (974K) produced nothing, Run 5's audit half (~242K) was largely replaceable by deterministic checks, and **Run 8 (1.0M) overshot the user's session budget and hit the rate limit** — see below._
+_Totals (Runs 1–10 shown): 82 agent-runs · 1,218 tool uses · **3,897,042** subagent tokens · ~2,928 s of agent wall-clock. Of which Run 3 (974K) produced nothing, Run 5's audit half (~242K) was largely replaceable by deterministic checks, and **Run 8 (1.0M) overshot the user's session budget and hit the rate limit** — see below._
 _**The comment run is complete: 268/268 summaries written and valid.** The table above shows the representative runs; the 29 per-chunk runs (these plus ~20 more) are logged in `sources/comments/workflow-runs.jsonl` — **~13.2M subagent tokens** across the full corpus, with `extract_model`/`audit_model` per run for analysis._
 
 ## Evaluation
@@ -150,6 +151,7 @@ loss (the self-healing worklist re-queued every unfinished comment), and was wir
 | # | Date | Task | Subagents | Approx. tool calls | Outcome |
 |---|------|------|:---------:|-------------------:|---------|
 | S1 | 2026-07-14 | Implement policy-analysis-spec phase C: record-to-rule crosswalk (`policyMap`) + landing + reader strip + §4.2 cross-links + UAT fixes | 0 | ~110 (Bash ~24, Read ~10, Edit ~18, Write 1, Browser ~55, AskUserQuestion 1) | ✅ 4 commits, 81 tests pass, quote sweep clean, verified in-browser desktop + 375px |
+| S2 | 2026-07-28 | Plan the news refresh: repo survey → Sonnet web-search sweep (Run 10) → write `news-tracks-plan.md` (5 tracks, filing matrix, discourse wave 2) + log the abeyance-scope bug | 1 (Run 10) | ~22 (Bash ~15, Read ~4, Write 1, Edit 2) | ✅ Plan-only session (no site code touched). Survey was grep-targeted, not whole-file reads; the one fan-out was the user-requested search agent; local order-text grep turned the agent's ISO-NE lead into a confirmed site bug before planning the fix |
 
 ### Session S1 evaluation (2026-07-14)
 
@@ -184,3 +186,46 @@ holds comfortably. No workflow, no Task tool.
 - **Net:** accuracy high (nothing shipped broken, tests + sweep green), efficiency good on the authoring
   half and mediocre on the verification half — all of the drag was browser-harness friction, none of it
   model reasoning.
+
+## Session 2026-07-28b — news-tracks plan, Phases 1 to 4 (inline, no subagents)
+
+- **Agents spawned: none.** The plan was already written and the sub-questions were enumerable, so the
+  work was done in the main loop per the "inline before subagent" rule. The only open-ended step
+  (verification) was 8 targeted `WebFetch`/`WebSearch` calls, roughly 5 to 10K tokens each, against a
+  ~25 to 40K floor for a single subagent. A fan-out here would have bought nothing.
+- **Verification spend, 8 network calls total**, resolving 4 of the 6 queue items in
+  `news-tracks-plan.md` 1.6: FR document search + one `full_text` read (AD26-7-000 and the July 23
+  conference date), two ISO Newswire posts, one Utility Dive article, two web searches. eLibrary items
+  (1, 2, 3, 6) stayed blocked and shipped as `filed-reported` / `none-observed`.
+- **Tooling friction, same as last session and predicted by it.** Browser screenshots returned blank
+  ~5 times; root cause this time was the Browser pane being hidden (pointer actions timed out with an
+  explicit "pane is hidden" error) plus one viewport that collapsed to `innerWidth: 0` after a preset
+  resize, which inflated every measured height ~20x and briefly looked like a layout regression.
+  **Last session's own note said to prefer DOM assertions over screenshots; following it sooner would
+  have saved the detour.** Every real check — filter state, counts, overflow, aria-labels, hash
+  routing — came from `javascript_tool`, which never failed.
+- **One self-inflicted bug**, logged in issues.md: `tracks` added to `data.js` but not to the IIFE's
+  `return` list, so it was `undefined` with no console error and vacuously-passing tests. Caught by
+  counting rendered DOM nodes, not by the suite. The suite now asserts the registry is non-empty
+  before iterating it.
+- **Net:** 4 phases, 5 commits, tests 82 → 98, required quotes 193 → 209. Efficiency good: no wasted
+  agent spawns, and the verification pass was scoped to what actually changes what ships.
+
+### Review round (same session): PR #14, one bot reviewer, no agents
+
+- **My self-review found 1 real bug**, the Timeline URL/state divergence, reproduced in a browser
+  before it was written up rather than asserted from reading. Cost: one diff read plus one browser
+  repro, no agent.
+- **Codex found the one I was blind to** (P1, stale asset cache tokens). Worth noting *where* it
+  landed: I had spent the session inside application logic, and the finding was in the deploy layer,
+  the one place my attention never went. **Lesson: weight an independent reviewer's finding higher
+  when it lands outside the area you were working in** — that is the whole reason to have one.
+- **Poll tuning:** I backgrounded a 20-minute poll for the bot review and it timed out; the review
+  landed shortly after. Codex review latency on this repo is **> 20 min**, so poll ~30 to 40 min, or
+  just check back rather than burning a foreground wait.
+- **Net for the whole session:** 4 phases + a review round, 6 commits, zero subagents, 8 verification
+  fetches. Tests 82 → 99, required quotes 193 → 209, 3 bugs logged with regression tests for the two
+  code bugs. The single biggest efficiency lesson repeats last session's: **DOM assertions never
+  failed; screenshots failed ~5 times** (hidden pane, and one `innerWidth: 0` viewport that inflated
+  every measurement ~20× and briefly looked like a layout regression). That is now written into
+  AGENTS.md as a check rather than left as a session note, since noting it twice did not stop it.
