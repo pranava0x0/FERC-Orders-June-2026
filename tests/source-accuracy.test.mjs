@@ -423,6 +423,12 @@ test("Discourse commentary quotes are backed by captured evidence", () => {
   for (const ev of Object.values(evidence.voices)) {
     bySource.set(ev.src, `${bySource.get(ev.src) || ""}\n${ev.evidence}`);
   }
+  // Wave-2 Discourse themes quote the news refresh's own captures, which live in their own file
+  // (voices-evidence is keyed by person; these are keyed by story). Same guarantee, second shelf.
+  const news = jsonFile("sources", "news-evidence.json");
+  for (const ev of Object.values(news.items)) {
+    bySource.set(ev.src, `${bySource.get(ev.src) || ""}\n${ev.evidence}`);
+  }
 
   for (const voice of D.voices) {
     const ev = byName.get(voice.name);

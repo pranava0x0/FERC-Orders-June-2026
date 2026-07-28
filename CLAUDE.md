@@ -244,6 +244,22 @@ For a content/static site, default to a **cookieless, privacy-first** tool (no c
 
 ---
 
+## Universal lessons learned here
+
+> Mirrors the canonical `coding-best-practices/CLAUDE.md`. Written here too because this is the file
+> that loads into context when working in this directory.
+
+### 2026-07-28 (news refresh: 4-phase plan → self-review → bot review)
+
+- **A section added to a module but not to its explicit export list is silently `undefined`, and tests over it pass vacuously.** The `tracks` registry went into the `data.js` IIFE but not its `return {…}` list. Nothing errored: consumers read `D.tracks || {}` so the UI rendered zero cards with a clean console, and the new tests iterated the same empty object and passed over nothing. Caught only by counting rendered DOM nodes. **Adding a section to `data.js` is two edits, never one** — and **any test that iterates a collection must first assert it is non-empty**, or "nothing violated the rule" is indistinguishable from "there was nothing."
+- **Derive cache-busting tokens from content; "keep in sync by hand" is not a mechanism.** One hand-typed `?v=` shared by five assets went unbumped while a PR replaced three of them (found by the bot reviewer, not by the suite). The real risk is not staleness but **skew**: a partial cache hit serves an old `app.js` against a new `data.js`, which renders as a data-shape bug that reproduces for users and never locally. `tools/stamp-assets.mjs` now derives each token from that file's sha256 with a sync test. A literal can never hold its own file's hash, so anything needing its own version reads it at runtime off its `<script src>`.
+- **When you work around a caching artifact locally, ask whether the deployed artifact has the same bug.** Browser-cache staleness hit three times in one session and was dismissed as environment noise each time (the fix being to load `127.0.0.1` instead of `localhost`). The identical bug was in the shipped HTML the whole time. A local cache workaround is a signal about the cache strategy, not a quirk to route around.
+- **One piece of state, one source of truth, especially for URL state.** `pendingTimelineTrack` was cleared in only one of two consuming paths, went stale on the other, and outvoted the live filter when writing the hash, so the URL disagreed with the rendered rail and a copied permalink pointed at the wrong track. If the URL is authoritative, nothing may quietly outvote it.
+- **A site that bot-blocks its HTML often leaves its API and full-text endpoints open.** `federalregister.gov` 302s automated HTML fetches but serves `/api/v1/documents.json` and `/documents/full_text/text/…txt` cleanly. That converted a snippet-only claim into a primary-source-confirmed one. Before recording a source as unreachable, try its API, its full-text endpoint, and its own listing URL.
+- **Self-review adversarially, and still expect the independent reviewer to find the class you were blind to.** Self-review found a real correctness bug; the bot then found a P1 in the deploy/caching layer, the one place attention never went after a session spent inside application logic. Weight an independent finding *higher* when it lands outside the area you were working in.
+
+---
+
 ## Influences
 
 - **Andrej Karpathy** — "make it work, then make it good"; LLM-as-fuzzy-CPU; eval-as-the-loop ("LLMs automate what you can verify"); context over prompt engineering; the closed-loop bar for trustworthy agents; the 2026 shift from vibe coding to *agentic engineering* (intent spec + task decomposition) and the four failure modes (unverified assumptions, abstraction hypertrophy, collateral changes, missing success criteria).

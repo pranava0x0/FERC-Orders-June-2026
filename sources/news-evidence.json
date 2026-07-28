@@ -1,0 +1,55 @@
+{
+  "captured_at": "2026-07-28",
+  "note": "Verified source snippets backing the directly-quoted phrases added by the 2026-07-28 news refresh (news-tracks-plan.md): the AD26-7-000 governance track and the sc6 filing observations. Mirrors sources/voices-evidence.json, and is swept by tools/verify-quotes.mjs the same way, so no displayed quote on a track surface is unbacked. A test in tests/source-accuracy.test.mjs asserts every quoted span in a timeline event body resolves here or in the committed order corpus.",
+  "capture_method": "federalregister.gov items were read from their full_text .txt endpoints (the FR HTML pages bot-block automated fetches; the JSON API and full_text endpoints are open). Trade-press items were fetched and their quotations transcribed as printed. ferc.gov and eLibrary stayed Cloudflare-gated throughout, so nothing here is an eLibrary confirmation.",
+  "items": {
+    "swett-legitimacy": {
+      "src": "udgov",
+      "speaker": "Laura Swett, FERC Chairman",
+      "occasion": "AD26-7-000 technical conference, July 23, 2026",
+      "evidence": "PJM is facing a grave legitimacy crisis. Some transmission owners are openly discussing leaving the RTO altogether. Put plainly, market participants have lost confidence in PJM's decision-making abilities."
+    },
+    "lacerte-quagmire": {
+      "src": "udgov",
+      "speaker": "David LaCerte, FERC Commissioner",
+      "occasion": "AD26-7-000 technical conference, July 23, 2026",
+      "evidence": "This is a cultural quagmire that they've developed by eroding the board in the past and creating this fear of [board members] being terminated to where they're not using their authorities. They're not engaging with the states because they don't want to get out of line with what the stakeholders want."
+    },
+    "mills-committed": {
+      "src": "udgov",
+      "speaker": "David Mills, PJM President and CEO",
+      "occasion": "AD26-7-000 technical conference, July 23, 2026",
+      "evidence": "We are fully committed to rise to the challenge."
+    },
+    "ferc-september": {
+      "src": "udgov",
+      "speaker": "Utility Dive report of the Commission's stated next steps",
+      "occasion": "AD26-7-000 technical conference, July 23, 2026",
+      "evidence": "FERC will hold a dispute resolution forum in September with PJM stakeholders to develop a governance reform package. If no agreement is reached by end of September, FERC will impose its own reforms on PJM."
+    },
+    "fr-conference-date": {
+      "src": "frAD267",
+      "speaker": "FERC, Notice of Commission-Led Technical Conference (Docket AD26-7-000)",
+      "occasion": "Federal Register, published May 18, 2026",
+      "evidence": "The technical conference will convene on Thursday, July 23, 2026, in the Kevin J. McIntyre Commission Meeting Room at the Federal Energy Regulatory Commission, 888 First Street NE, Washington, DC 20426. The conference will discuss PJM Interconnection, L.L.C.'s (PJM) governance and stakeholder process, with a particular focus on identifying and evaluating actionable reforms to improve PJM's ability to address system needs in a timely and efficient manner."
+    },
+    "isone-abeyance": {
+      "src": "isonews0629",
+      "speaker": "ISO New England (ISO Newswire)",
+      "occasion": "June 29, 2026",
+      "evidence": "ISO New England and the region's transmission owners intend to request a 90-day abeyance as part of compliance with a show cause order issued by the Federal Energy Regulatory Commission (FERC). The ISO and transmission owners must submit interconnection process modifications by November 16, 2026, following the abeyance period if approved. By July 20, the ISO must file with FERC an informational report on resource adequacy in the context of large loads."
+    },
+    "isone-report": {
+      "src": "isonews0721",
+      "speaker": "ISO New England (ISO Newswire)",
+      "occasion": "July 21, 2026",
+      "evidence": "ISO-NE has made an informational filing on regional resource adequacy and has begun to outline potential rule changes, including requiring new large loads to bring incremental new generation, and not procuring capacity through the regional capacity market to serve these large loads. During a July 16 presentation to the NEPOOL Transmission Committee, ISO-NE outlined plans to request a 90-day abeyance of the show cause proceeding."
+    },
+    "pjm-bra": {
+      "src": "pjmbra",
+      "speaker": "PJM Interconnection news release",
+      "occasion": "July 14, 2026",
+      "evidence": "PJM's 2028/2029 Base Residual Auction procured 138,318 MW of unforced capacity. The price came in at the FERC-approved cap of $325/MW-day (UCAP) for the entire PJM footprint. The cleared supply procured in the auction times the clearing price totals $16.4 billion. The capacity of the resources procured in the auction, plus FRR resources, is short of PJM's 20% installed reserve margin target by 6,831 MW. PJM continues to hold a reserve margin of 14.7% for the 2028/2029 Delivery Year."
+    }
+  }
+}

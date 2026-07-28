@@ -166,3 +166,14 @@ run-by-run numbers are in [`agent-runs.md`](agent-runs.md); per-bug detail is in
   the LLM read for depth (the nine flagships); label the keyword layer "prevalence," not a coded position.
 - **OCR is the remaining gap.** Four filings are image-only scans (0 text layer); flagged OCR-pending — no
   local OCR tool, so they are surfaced honestly rather than silently counted as extracted.
+
+## Cross-order scoping (the "(NYISO only)" abeyance bug, 2026-07-28)
+
+- **A provision read in full in ONE order must be grepped across the other five before it ships as
+  "unique to X."** The abeyance mechanism was read carefully in the NYISO order (P 42) and labeled
+  "(NYISO only)"; a 5-second `grep -c abeyance sources/text/orders/*.txt` shows it in all six (7–8
+  mentions each). The committed full texts exist precisely for this — any "only this region" or
+  "distinct finding" claim gets a cross-order grep first, and the regression test that guards the
+  claim should grep the texts too, not just the display string (see the abeyance test in
+  `tests/data.test.mjs`). Corollary: external news is a working accuracy probe — ISO-NE announcing
+  an abeyance plan is what exposed the mislabel.

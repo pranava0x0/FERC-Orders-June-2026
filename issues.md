@@ -14,6 +14,23 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-07-28 · data/accuracy · the Aug 3 abeyance step was scoped "NYISO only," but the mechanism is in
+  all six orders.** Surfaced while researching the news refresh: ISO Newswire (2026-06-29) reports ISO-NE
+  planning a 90-day abeyance request, which contradicted the site's label. Verified locally against
+  `sources/text/orders/*.txt`: "abeyance" appears 7–8 times in **every** order (e.g., E-11 ISO-NE:
+  requests due "within 45 days of issuance," "limited to 90 days," granted with "great disfavor," partial
+  abeyance contemplated). Was mis-scoped in three places: `procedural.steps` id `abeyance` ("Abeyance
+  request (NYISO only)" · cite "E-12 (NYISO) P 42"), the ≈Aug 17 timeline entry ("in the NYISO order, a
+  45-day deadline…"), and the "Fall 2026, if requested" timeline entry ("NYISO's order expressly lets
+  respondents request abeyance") — with the masthead next-deadline chip displaying the mislabeled step
+  (Aug 3 is the soonest upcoming date). Root cause: **data** — the provision was read in full in the NYISO
+  order and assumed unique to it; no cross-order grep before shipping the "(NYISO only)" claim. Status:
+  **Fixed** (this session, plan Phase 0 of `news-tracks-plan.md`): step relabeled to the all-six scope with
+  the FERC "not reflexively / great disfavor" caveat, both timeline entries corrected (`e11` added as a
+  source on the Fall entry), llms.txt regenerated (no delta; the procedural block isn't baked into it), and
+  a regression test added (`tests/data.test.mjs`) that rejects any single-RTO scoping AND greps all six
+  committed order texts for the provision. 82/82 tests pass.
+
 - **2026-07-14 · ux (found in UAT of the crosswalk) · the policy map was the highest-value view but two
   clicks deep with no signpost.** Reaching it meant Comments tab → "By issue" sub-tab (and the default
   Comments sub is "Themes & categories," so the map isn't even first). Neither label advertises a policy
@@ -198,3 +215,57 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 - **2026-06-22 · build · `design.md` write collided with existing `DESIGN.md`** on the
   case-insensitive macOS filesystem. Root cause: **environment**. Fix: named the project identity
   file `design-notes.md`.
+
+- **2026-07-28 · data layer · A new `data.js` section was silently `undefined` in the app.**
+  The `tracks` registry was added as a `const` inside the `window.FERC_DATA` IIFE but not to the
+  explicit `return { … }` list at the bottom, so `D.tracks` was `undefined`. Root cause: **code bug**.
+  The failure was silent in both directions: the app rendered zero track cards and zero chips with no
+  console error (every consumer did `D.tracks || {}`), and the tests passed vacuously because they
+  iterated the same empty object. Caught only by counting rendered nodes in the browser.
+  **Fix:** added `tracks` to the return list. **Regression guard:** the tracks tests now assert a
+  populated registry (`Object.keys(D.tracks).length >= 5`) before iterating, so an empty section fails
+  loud instead of passing over nothing. Noted in REFRESH.md gotchas: adding a section to `data.js` is
+  two edits, never one.
+
+- **2026-07-28 · tooling · Timeline event bodies were covered by no quote sweep.**
+  `tools/verify-quotes.mjs` swept order directives, commissioner statements, Discourse voices/themes
+  and some prose, but never `D.timeline[].body`. Root cause: **coverage gap** — timeline bodies had
+  historically only quoted order text, so the gap was invisible until the news refresh put named
+  speakers (Swett, LaCerte) on the rail, where a fabricated or drifted quote would have shipped
+  unchecked. **Fix:** a required sweep over timeline body prose quotes against
+  `sources/news-evidence.json` + the committed corpus, plus a test naming the specific spans. Required
+  quote count went 193 → 201 on the sweep addition alone.
+
+- **2026-07-28 · local dev · A stale `data.js` in the browser cache read as a code bug.**
+  After editing `data.js`, `http://localhost:8131` kept serving the previous file: the page showed new
+  timeline events but an empty `tracks`, which looks exactly like a data-shape bug. `fetch()` of the
+  same path returned the *correct* file, which is the tell. Root cause: **environment** (browser HTTP
+  cache; `python3 -m http.server` sends no no-cache headers). **Fix:** load `http://127.0.0.1:8131`
+  instead of `localhost` — a different host string is a separate cache entry. Check
+  `window.FERC_DATA` in the console before debugging the renderer.
+
+- **2026-07-28 · deploy · Asset cache tokens were not bumped, so a release could ship as an old app
+  against new data.** Found by the Codex review on PR #14 (P1), not by me or by any test.
+  `docs/index.html` loaded `styles.css`, `data.js` and `app.js` with the unchanged
+  `?v=20260715a` while the PR replaced all three, so a returning visitor keeps the cached files. Worst
+  case is not "stale site" but **skew**: an old `app.js` driving a new `data.js`, which renders as a
+  data-shape bug that reproduces for users and never locally. Root cause: **process** — the token was
+  one hand-typed date shared by every asset, and "remember to bump it" is not a mechanism.
+  **Fix:** `tools/stamp-assets.mjs` derives each token from that file's own sha256, so assets bust
+  independently and nobody has to remember; a test asserts the committed HTML matches the generated
+  output (same contract as `build-llms.mjs`). `app.js`'s `ASSET_VER` (the cache key for lazily fetched
+  bin-detail JSON) now reads the deployed token off its own `<script src>` rather than a literal, which
+  could not have held app.js's own content hash without being circular.
+  **Note the irony:** I hit this exact cache class three times locally and diagnosed it as a browser
+  quirk each time instead of asking whether the deployed tokens had the same problem.
+
+- **2026-07-28 · routing · The Timeline URL could disagree with the rail it was showing.**
+  Found in self-review of PR #14 and reproduced in a browser. `pendingTimelineTrack` was a deep-link
+  handoff cleared only inside `wireTimeline`, which runs on **first render only**; on the
+  already-rendered path it stayed set, and `activate()` preferred it over the live `timelineTrack`.
+  Repro: open Overview, click Timeline, follow a `#timeline/track/gov` link, pick a different track by
+  chip, leave the tab and come back. The hash read `.../gov` while the rail showed `context`, so a
+  copied permalink pointed at the wrong track. Root cause: **code bug**, two sources of truth for one
+  piece of state. **Fix:** `timelineTrack` is now the only source of truth; the pending value is
+  applied before `activate()` and is purely a before-first-render handoff. Same class as the PR #12
+  permalink lesson: if the URL is authoritative, nothing else may quietly outvote it.

@@ -5,6 +5,7 @@
 On October 23, 2025, the Department of Energy invoked its rarely used § 403 authority to direct FERC to open a rulemaking on connecting large loads (data centers, AI, advanced manufacturing) to the interstate grid (Docket RM26-4-000), and asked for final action by April 30, 2026.
 Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.
 The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC issued Item E-2 (EL25-49-002), the order on rehearing that finalizes the rates and terms for the three new transmission services its PJM co-location proceeding created, the same services the six orders extend to every other region.
+As of the July 2026 sweep that clock has started firing. Interventions closed July 9 and the 30-day generation-adequacy reports were due July 20; ISO-NE’s is the only one our checks confirmed, and it has said it will ask for a 90-day abeyance. Abeyance requests are due August 3, and August 17 carries both the six show-cause filings and PJM’s further compliance filing in the separate co-location docket. Running beside all of it, FERC has put PJM’s own governance on a September clock in Docket AD26-7-000.
 
 A static, independent analysis microsite (not affiliated with FERC or DOE). Source of truth: docs/js/data.js. Evidence is kept in three visibly distinct tiers: FERC primary, DOE primary, and secondary analysis.
 
@@ -53,36 +54,102 @@ Each order PDF is committed and served at the page-precise link below; the offic
 - [Summaries: June 2026 Commission Meeting](http://web.archive.org/web/20260618204955/https://www.ferc.gov/news-events/news/summaries-june-2026-commission-meeting): FERC, Office of External Affairs, captured 2026-06-18 (Internet Archive)
 - [Docket RM26-4-000 landing page: “Interconnection of Large Loads…”](http://web.archive.org/web/20260619085932/https://www.ferc.gov/rm26-4): FERC, captured 2026-06-19 (Internet Archive)
 
-## Commentary themes (secondary, gathered 2026-06-29)
+## Parallel proceedings (as of the 2026-07-28 news sweep)
 
-- Cost responsibility is the center of gravity: Across the post-order discussion, the basic question is not whether large loads should connect faster; it is whether the tariff makes the beneficiary carry the cost and risk of the upgrade.
+### The six-market §206 clock (`sc6`)
+- Venue: FERC Dockets EL26-67-000 to EL26-72-000
+- What: Six show cause orders on one 60-day clock. Each RTO or ISO must defend its tariff or file a fix.
+- Why it is tracked separately: This is the main proceeding the site tracks. The other lanes run beside it, each on its own clock.
+- Status (2026-07-28): Interventions and the 30-day reports are past. ISO-NE’s report is the only one confirmed in our checks. Abeyance requests are due Aug 3 and the show-cause filings Aug 17.
+- Next: 2026-08-03, Abeyance requests due (all six dockets)
+  - Fall 2026, if requested: Abeyance requests can slow the clock, but only within a bounded lane
+  - After the response records close: FERC decides whether to accept, modify, or impose a §206 remedy
+  - Parallel lane: Rehearing and court-review risk runs alongside implementation
+
+### PJM co-location: EL25-49 (`e2`)
+- Venue: FERC Docket EL25-49 (Item E-2, order on rehearing)
+- What: The PJM co-location proceeding that created the three new transmission services the six orders extend to every other region.
+- Why it is tracked separately: A different docket with its own compliance clock. Its further compliance filing lands Aug 17, the same day as the six show-cause filings.
+- Status (2026-07-28): A quiet lane. Our checks found no circuit-court petition against the December 2025 or June 2026 co-location orders.
+- Next: 2026-08-17, PJM and PJM TOs further compliance filing
+  - Dec 2025 to Jun 2026: Track record builds: PJM co-location order + SPP HILL/HILLGA
+
+### PJM governance: AD26-7 (`gov`)
+- Venue: FERC Docket AD26-7-000 (Commission-led technical conference)
+- What: A July 23 conference on who runs PJM: board independence, the stakeholder process, and the states’ role.
+- Why it is tracked separately: Runs outside the §206 clock. Its September deadlines decide who controls PJM’s follow-through filings.
+- Also known as: Also referred to in shorthand as the Swett technical conference, after the chairman who convened it.
+- Status (2026-07-28): The conference was held July 23. FERC said it will seek written comments and convene a dispute-resolution forum in September.
+- Next: 2026-09-30, PJM reform package due or FERC imposes its own
+  - May 18, 2026: FERC notices a technical conference on PJM governance (AD26-7-000)
+  - Jul 23, 2026: FERC holds the PJM governance conference and sets a September deadline
+
+### The RM26-4 record (`rm264`)
+- Venue: FERC Docket RM26-4-000 (the DOE §403 rulemaking)
+- What: The rulemaking DOE’s §403 directive opened, and the 3,500-plus pages of comment the orders were built on.
+- Why it is tracked separately: Still open. Everything the six orders left unaddressed stays live here, which is what the record-to-rule crosswalk tracks.
+- Status (2026-07-28): Open with no dated next step. FERC answered the directive with the six §206 orders rather than a rule.
+- Next: No dated step on the record
+  - Oct 23, 2025: DOE issues a § 403 directive + enclosed ANOPR
+  - Oct 23, 2025: Fourteen ANOPR principles define the reform menu
+  - Late 2025 to Jan 2026: FERC opens RM26-4-000, takes comment, extends the period
+
+### Market context (`context`)
+- Venue: not a docket
+- What: Auction results and market events that set the stakes for the filings, from outside any of the dockets.
+- Why it is tracked separately: None of these are filings. They are kept in their own lane so the rail never reads an auction result as a docket event.
+- Status (2026-07-28): PJM’s 2028/2029 capacity auction cleared at the price cap for the third year running, 6,831 MW short of its reserve-margin target.
+- Next: Not a docket, so no clock
+  - Jul 14, 2026: PJM’s capacity auction clears at the cap, short of its reserve target
+
+## Observed filings (checked 2026-07-28)
+
+- Observed filings only. An empty cell means our checks found nothing, which is not proof nothing was filed. Nothing here is confirmed against an eLibrary accession yet: ferc.gov blocks automated retrieval, so docket confirmation is a manual step this refresh did not complete.
+- Status vocabulary: `filed-verified` (eLibrary accession seen) · `filed-reported` (press or operator channel only) · `signaled` (announced intent). An absent row means our checks observed nothing, which is not proof nothing was filed.
+- ISO-NE (EL26-72-000), report, filed-reported, 2026-07-20: Informational filing on regional resource adequacy. Outlines requiring new large loads to bring incremental new generation, and not procuring capacity for them through the regional capacity market.
+- ISO-NE (EL26-72-000), abeyance, signaled, 2026-06-29: Says it and the region’s transmission owners intend to request a 90-day abeyance. If FERC grants it, the filing moves to November 16, 2026.
+
+## Commentary themes (secondary, in two dated waves)
+
+- [wave 1, reaction to the June 18 orders, captured 2026-06-29] Cost responsibility is the center of gravity: Across the post-order discussion, the basic question is not whether large loads should connect faster; it is whether the tariff makes the beneficiary carry the cost and risk of the upgrade.
   - "There’s no real quarantining of the cost caused by data centers to those data centers" Source: https://insideclimatenews.org/news/18062026/federal-energy-regulatory-commission-data-center-orders/
   - "those loads bear the costs incurred to serve them" Source: https://www.linkedin.com/posts/jeffdennis77_ecaferclargeloadinterconnectionstatementpdf-activity-7473477334738599936-NWa-
   - "increasing scrutiny on who pays for transmission to connect data centers" Source: https://x.com/aniruddh_mohan/status/2069973894237184457
   - "President Trump's Ratepayer Protection Pledge" Source: https://www.energy.gov/articles/department-energy-applauds-fercs-action-large-load-interconnection-reform
-- The regional route is both substance and litigation strategy: The six-order structure is being read as a deliberate alternative to one national template: faster than a rulemaking, more tailored to each market, and easier to defend on the record.
+- [wave 1, reaction to the June 18 orders, captured 2026-06-29] The regional route is both substance and litigation strategy: The six-order structure is being read as a deliberate alternative to one national template: faster than a rulemaking, more tailored to each market, and easier to defend on the record.
   - "far more substantively ambitious than the ANOPR" Source: https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/
   - "six regional answers to the same question, decided on six different timelines" Source: https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/
   - "a much more robust and detailed administrative record" Source: https://news.bloomberglaw.com/environment-and-energy/energy-regulator-staves-off-critique-in-new-data-center-orders
   - "reduces future litigation entry points" Source: https://news.bloomberglaw.com/environment-and-energy/energy-regulator-staves-off-critique-in-new-data-center-orders
-- Speed now depends on provable flexibility: The strongest pro-speed argument treats data centers as controllable loads, but the quotes also show the hard edge: flexibility has to be operational, measurable, and worth something in the tariff.
+- [wave 1, reaction to the June 18 orders, captured 2026-06-29] Speed now depends on provable flexibility: The strongest pro-speed argument treats data centers as controllable loads, but the quotes also show the hard edge: flexibility has to be operational, measurable, and worth something in the tariff.
   - "emergency data-center load reduction ripe for deeper industry analysis" Source: https://www.linkedin.com/pulse/demand-hereare-we-ready-build-briggs-white-cixae
   - "flexible AI data centers can adjust demand dynamically and act as grid assets, not only as fixed loads" Source: https://www.latitudemedia.com/news/catalyst-the-rise-of-flexible-data-centers/
   - "asset-backed flexible data centers can operate as grid assets" Source: https://www.volts.wtf/p/can-data-centers-be-good-grid-citizens
   - "paying other customers to shift load can be faster and more cost effective than curtailing expensive data-center chips" Source: https://www.eenews.net/articles/how-big-tech-learned-to-speak-ferc/
-- Reliability and security remain live objections: The order is not landing as a pure acceleration story. Consumer and security voices are treating faster interconnection as acceptable only if modeling, operating standards, and stability protections keep up.
+- [wave 1, reaction to the June 18 orders, captured 2026-06-29] Reliability and security remain live objections: The order is not landing as a pure acceleration story. Consumer and security voices are treating faster interconnection as acceptable only if modeling, operating standards, and stability protections keep up.
   - "security gaps remain" Source: https://x.com/BenSchifman/article/2067679572431138993
   - "data centers need any more help with interconnection to the grid" Source: https://x.com/Ben_Inskeep/status/2068025625860841880
   - "standards and rules in place that protect ratepayers from any negative stability, reliability and resiliency impacts" Source: https://x.com/Ben_Inskeep/status/2068025625860841880
-- The physical buildout is bigger than the FERC clock: The discourse keeps returning to the same physical constraint: the orders can compress process, but turbines, transformers, generation, local consent, and deliverable capacity still decide which projects energize.
+- [wave 1, reaction to the June 18 orders, captured 2026-06-29] The physical buildout is bigger than the FERC clock: The discourse keeps returning to the same physical constraint: the orders can compress process, but turbines, transformers, generation, local consent, and deliverable capacity still decide which projects energize.
   - "power conversations for individual data centers have moved from megawatts to gigawatts" Source: https://cleanpower.org/blog/american-energy-american-ai-powering-a-secure-future/
   - "gas-turbine, transformer and interconnection lead times" Source: https://www.linkedin.com/pulse/demand-hereare-we-ready-build-briggs-white-cixae
   - "power constraints and political resistance" Source: https://www.shanumathew.com/writing/data-centers-focus-on-energized-gw
   - "developers are pairing data-center growth with behind-the-meter generation and siting near stranded or underused power" Source: https://www.argusmedia.com/en/news-and-insights/latest-market-news/2804882-us-grid-overhaul-urgently-needed-to-meet-ai-load-ferc
-- The organized-market focus leaves a Southeast gap: The order covers the six RTO/ISO markets, while several reactions flag the regions outside that structure as exactly where transmission planning and interconnection practice may be weakest.
+- [wave 1, reaction to the June 18 orders, captured 2026-06-29] The organized-market focus leaves a Southeast gap: The order covers the six RTO/ISO markets, while several reactions flag the regions outside that structure as exactly where transmission planning and interconnection practice may be weakest.
   - "non-RTO areas, which typically suffer from the worst transmission and interconnection practices" Source: https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/
   - "The Southeast needs a modern transmission system" Source: https://ceba.org/southeast-energy-opportunities-require-a-bigger-better-faster-grid-business-leaders-call-for-regional-transmission-planning/
   - "we risk higher energy prices, power shortages, and lost economic opportunities" Source: https://ceba.org/southeast-energy-opportunities-require-a-bigger-better-faster-grid-business-leaders-call-for-regional-transmission-planning/
+- [wave 2, the filings and the governance fight, captured 2026-07-28] PJM’s own legitimacy becomes the story: The July 23 technical conference put PJM’s decision-making machinery on the record, and on a September clock. The same commission running the §206 filings is now asking who gets to decide what PJM files, which makes this lane a precondition for the other one rather than a sideshow.
+  - "PJM is facing a grave legitimacy crisis" Source: https://www.utilitydive.com/news/ferc-pjm-governance-reforms-data-centers-capacity-market/826140/
+  - "Some transmission owners are openly discussing leaving the RTO altogether" Source: https://www.utilitydive.com/news/ferc-pjm-governance-reforms-data-centers-capacity-market/826140/
+  - "This is a cultural quagmire" Source: https://www.utilitydive.com/news/ferc-pjm-governance-reforms-data-centers-capacity-market/826140/
+- [wave 2, the filings and the governance fight, captured 2026-07-28] Regional divergence: the tailoring thesis meets the record: The first observed answer to the 30-day reports points somewhere different from PJM’s expedited-new-entry posture. ISO-NE looks to new generation and away from its capacity market. That is the regional variation the six tailored orders were built to permit, showing up as substance rather than as a gap.
+  - "requiring new large loads to bring incremental new generation" Source: https://isonewswire.com/2026/07/21/update-on-iso-ne-compliance-with-ferc-large-and-co-located-loads-order/
+  - "not procuring capacity through the regional capacity market to serve these large loads" Source: https://isonewswire.com/2026/07/21/update-on-iso-ne-compliance-with-ferc-large-and-co-located-loads-order/
+  - "intend to request a 90-day abeyance" Source: https://isonewswire.com/2026/06/29/iso-ne-provides-update-on-compliance-with-ferc-large-loads-order/
+- [wave 2, the filings and the governance fight, captured 2026-07-28] Capacity scarcity is the arithmetic behind the argument: PJM’s 2028/2029 auction cleared at its cap for the third year running and still landed short of the reserve-margin target. Every claim about who should pay for new load is being made against that number.
+  - "The price came in at the FERC-approved cap of $325/MW-day" Source: https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/2026-releases/20260714-pjm-capacity-auction-procures-138318-mw-generation-resources.pdf
+  - "short of PJM’s 20% installed reserve margin target by 6,831 MW" Source: https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/2026-releases/20260714-pjm-capacity-auction-procures-138318-mw-generation-resources.pdf
 
 ## The RM26-4 public comments (corpus)
 

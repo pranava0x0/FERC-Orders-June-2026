@@ -6,6 +6,9 @@ import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
+import { stampAssets } from "../tools/stamp-assets.mjs";
+import { buildIndexHtml, buildSitemap } from "../tools/build-seo.mjs";
+import { pagesFor, allDockets, slugFor } from "../tools/build-docket-pages.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const code = readFileSync(join(here, "..", "docs", "js", "data.js"), "utf8");
@@ -600,10 +603,14 @@ test("SEO + accessibility essentials are present in the deployed shell", () => {
   assert.ok(existsSync(join(docs, "robots.txt")), "robots.txt present");
   assert.match(readFileSync(join(docs, "robots.txt"), "utf8"), /Sitemap:/, "robots.txt references the sitemap");
   assert.match(readFileSync(join(docs, "sitemap.xml"), "utf8"), /pranava0x0\.github\.io\/FERC-Orders-June-2026/, "sitemap uses the canonical host");
+  // The lazy comment-detail cache key must track the deployed app.js token. It used to be a hardcoded
+  // literal kept in sync by hand; the tokens are content hashes now, so a literal could not hold
+  // app.js's own hash without being circular. It reads its own <script src> instead, which cannot drift.
   const app = readFileSync(join(docs, "js", "app.js"), "utf8");
-  const shellVersion = html.match(/js\/app\.js\?v=([A-Za-z0-9_-]+)/)?.[1];
-  const lazyVersion = app.match(/ASSET_VER\s*=\s*"([A-Za-z0-9_-]+)"/)?.[1];
-  assert.equal(lazyVersion, shellVersion, "lazy comment-detail cache key matches the deployed app asset version");
+  assert.ok(/js\/app\.js\?v=[0-9a-f]{10}/.test(html), "the shell loads app.js with a content-hash token");
+  assert.doesNotMatch(app, /ASSET_VER\s*=\s*"[0-9A-Za-z_-]+"/,
+    "ASSET_VER is derived from the script tag, not a hand-maintained literal that can go stale");
+  assert.match(app, /document\.currentScript/, "ASSET_VER reads the deployed token off its own script element");
 });
 
 test("every inventoried comment has its body on disk (download completeness)", () => {
@@ -623,4 +630,389 @@ test("every inventoried comment has its body on disk (download completeness)", (
     if (!ok && !KNOWN_MISSING.has(acc)) missing.push(acc);
   }
   assert.deepEqual(missing, [], `every inventoried comment body is on disk (missing: ${missing.join(", ")})`);
+});
+
+test("abeyance step scopes to all six orders (issues.md 2026-07-28 regression)", () => {
+  // The 45-day / 90-day abeyance mechanism is in EVERY order, not only NYISO's; the step was once
+  // shipped as "(NYISO only)". Guard the relabel, and verify the claim against the committed texts.
+  const step = D.procedural.steps.find((s) => s.id === "abeyance");
+  assert.ok(step, "abeyance step exists");
+  assert.doesNotMatch(step.label + " " + step.desc, /NYISO[\s-]?only/i, "abeyance step is not scoped to one RTO");
+  assert.match(step.cite, /six orders/i, "cite states the all-six scope");
+  const dir = join(here, "..", "sources", "text", "orders");
+  const six = readdirSync(dir).filter((f) => /^e-(7|8|9|10|11|12)-/.test(f));
+  assert.equal(six.length, 6, "all six order texts on disk");
+  for (const f of six) {
+    const t = readFileSync(join(dir, f), "utf8").toLowerCase();
+    assert.ok(t.includes("abeyance"), `${f} carries the abeyance provision`);
+  }
+  // The two timeline entries that carried the mis-scope must not regress either.
+  for (const e of D.timeline) {
+    const s = e.title + " " + e.body;
+    if (/abeyance/i.test(s)) assert.doesNotMatch(s, /NYISO's order expressly|in the NYISO order, a 45-day/i,
+      "timeline no longer scopes abeyance to the NYISO order");
+  }
+});
+
+/* ---- The tracks layer (news-tracks-plan.md Part 5 #1, #4) ------------------------------------- */
+
+test("every timeline event declares a track that resolves in the registry", () => {
+  const ids = Object.keys(D.tracks || {});
+  assert.ok(ids.length >= 5, `track registry is populated (${ids.length} >= 5)`);
+  for (const e of D.timeline) {
+    assert.ok(e.track, `timeline event "${e.title}" declares a track`);
+    assert.ok(D.tracks[e.track], `timeline event "${e.title}" track "${e.track}" is a registry key`);
+  }
+});
+
+test("every track seeds at least one event (no card points at an empty lane)", () => {
+  // The seed-per-enum rule. The Timeline renders a card per track with an event count; a track with
+  // zero events would render "0 events" and a filter that empties the rail.
+  for (const [id, t] of Object.entries(D.tracks)) {
+    const n = D.timeline.filter((e) => e.track === id).length;
+    assert.ok(n >= 1, `track "${id}" (${t.label}) has at least one timeline event, has ${n}`);
+  }
+});
+
+test("every track carries its framing copy and a well-formed next step", () => {
+  for (const [id, t] of Object.entries(D.tracks)) {
+    for (const f of ["label", "short", "what", "whySeparate"]) {
+      assert.ok(t[f] && String(t[f]).trim(), `track "${id}" has ${f}`);
+    }
+    assert.ok(t.status && t.status.line && /^\d{4}-\d{2}-\d{2}$/.test(t.status.asOf || ""),
+      `track "${id}" has a status line stamped with an ISO asOf`);
+    // A dated next step must parse; an undated one must still say so in words rather than render blank.
+    if (t.next && t.next.date) {
+      assert.match(t.next.date, /^\d{4}-\d{2}-\d{2}$/, `track "${id}" next.date is ISO`);
+      assert.ok(!Number.isNaN(Date.parse(t.next.date + "T00:00:00")), `track "${id}" next.date parses`);
+    }
+    assert.ok(t.next && t.next.label, `track "${id}" says what comes next, even when undated`);
+    // Sources on a track card must resolve, like every other cited id on the site.
+    for (const s of t.src || []) assert.ok(D.SOURCES[s], `track "${id}" cites known source "${s}"`);
+  }
+});
+
+test("the context track stays free of docket framing", () => {
+  // `context` exists so an auction result never reads as a docket filing. If it ever gains a venue,
+  // the rail has re-blurred the distinction this track was added to draw.
+  const c = D.tracks.context;
+  assert.ok(c.noDocket === true, "context track is flagged noDocket");
+  assert.equal(c.venue, null, "context track has no venue");
+});
+
+test("sources cited from a track surface carry a publication date", () => {
+  // news-tracks-plan.md 2.3. On a track card "when was this said" is load-bearing: a June status line
+  // sourced to a May article is a different claim than one sourced the same week.
+  const cited = new Set();
+  for (const t of Object.values(D.tracks)) for (const s of t.src || []) cited.add(s);
+  for (const id of cited) {
+    const s = D.SOURCES[id];
+    assert.ok(s.published || s.undated === true,
+      `source "${id}" is cited from a track card, so it needs published (or undated: true)`);
+    if (s.published) {
+      assert.match(s.published, /^\d{4}-\d{2}-\d{2}$/, `source "${id}" published is ISO`);
+      // Some captured stamps carry a provenance suffix ("2026-06-18 (Internet Archive)"); compare dates.
+      const capturedDay = String(s.captured).slice(0, 10);
+      assert.ok(s.published <= capturedDay,
+        `source "${id}" cannot be published (${s.published}) after it was captured (${capturedDay})`);
+    }
+  }
+});
+
+test("news-refresh sources resolve and are stamped, and the capture is dated", () => {
+  assert.match(D.meta.newsCapture || "", /^\d{4}-\d{2}-\d{2}$/, "meta.newsCapture is an ISO date");
+  // Every source introduced by the refresh carries `published`; these are the ones whose freshness the
+  // reader is being asked to trust.
+  for (const id of ["frAD267", "frAD267s3", "isonews0629", "isonews0721", "udgov", "pjmbra"]) {
+    const s = D.SOURCES[id];
+    assert.ok(s, `refresh source "${id}" exists`);
+    assert.match(s.published || "", /^\d{4}-\d{2}-\d{2}$/, `refresh source "${id}" has an ISO published date`);
+  }
+});
+
+test("the AD26-7 governance track is sourced to the Federal Register, not to trade press alone", () => {
+  // The docket number and the conference date were snippet-only in the research pass. They ship only
+  // because the FR notice was read; if that citation is ever dropped the claim goes back to unverified.
+  const gov = D.tracks.gov;
+  assert.ok((gov.src || []).includes("frAD267"), "gov track cites the Federal Register notice");
+  assert.match(D.SOURCES.frAD267.url, /federalregister\.gov/, "the notice source is a federalregister.gov URL");
+  const conf = D.timeline.find((e) => e.track === "gov" && /notices a technical conference/i.test(e.title));
+  assert.ok(conf, "the timeline carries the notice event");
+  assert.ok((conf.src || []).includes("frAD267"), "the notice event cites the FR notice");
+});
+
+/* ---- The filing matrix (news-tracks-plan.md Part 5 #2) ---------------------------------------- */
+
+const FILING_VOCAB = ["filed-verified", "filed-reported", "signaled", "none-observed", "upcoming", "na"];
+
+test("the filing matrix is stamped and its columns are real procedural steps", () => {
+  const F = D.procedural.filings;
+  assert.ok(F, "procedural.filings exists");
+  assert.match(F.asOf, /^\d{4}-\d{2}-\d{2}$/, "filings.asOf is an ISO date");
+  assert.ok(F.note && F.note.trim(), "filings carries the none-observed legend");
+  const stepIds = new Set(D.procedural.steps.map((s) => s.id));
+  assert.ok(F.steps.length >= 1, "the matrix has columns");
+  for (const id of F.steps) assert.ok(stepIds.has(id), `matrix column "${id}" is a procedural step id`);
+});
+
+test("every stored filing row obeys the status vocabulary and its evidence requirement", () => {
+  const F = D.procedural.filings;
+  const dockets = new Set(D.dockets.map((d) => d.docket));
+  const stepIds = new Set(D.procedural.steps.map((s) => s.id));
+  for (const r of F.rows) {
+    assert.ok(FILING_VOCAB.includes(r.status), `row status "${r.status}" is in the closed vocabulary`);
+    assert.ok(dockets.has(r.docket), `row docket "${r.docket}" is one of the six`);
+    assert.ok(stepIds.has(r.step), `row step "${r.step}" is a procedural step id`);
+    assert.match(r.date || "", /^\d{4}-\d{2}-\d{2}$/, `row ${r.docket}/${r.step} carries an ISO date`);
+    assert.ok(r.gist && r.gist.trim(), `row ${r.docket}/${r.step} says what was filed`);
+
+    // The "a 200 is not proof" rule as a schema: the strongest status costs the most evidence.
+    if (r.status === "filed-verified") {
+      assert.ok(r.accession, `${r.docket}/${r.step} claims eLibrary verification, so it needs an accession`);
+      assert.ok(r.verified_at, `${r.docket}/${r.step} claims eLibrary verification, so it needs verified_at`);
+    }
+    if (r.status === "filed-reported" || r.status === "signaled") {
+      assert.ok((r.src || []).length, `${r.docket}/${r.step} is press-sourced, so it needs src`);
+      for (const s of r.src) assert.ok(D.SOURCES[s], `${r.docket}/${r.step} cites known source "${s}"`);
+    }
+  }
+});
+
+test("no two filing rows describe the same docket and step", () => {
+  // A duplicate (docket, step) would render two chips in one cell and silently pick one.
+  const seen = new Set();
+  for (const r of D.procedural.filings.rows) {
+    const key = `${r.docket}::${r.step}`;
+    assert.ok(!seen.has(key), `one row per cell: ${key} is duplicated`);
+    seen.add(key);
+  }
+});
+
+test("the matrix stores observations only, never a derived state", () => {
+  // `upcoming` and `none-observed` are computed from the clock at render time. Storing one would
+  // freeze a date-dependent claim into the data and go stale without any code change.
+  for (const r of D.procedural.filings.rows) {
+    assert.ok(!["upcoming", "none-observed"].includes(r.status),
+      `row ${r.docket}/${r.step} stores "${r.status}", which the renderer derives; store observations only`);
+  }
+});
+
+test("no filing claims eLibrary verification while eLibrary is unchecked", () => {
+  // Honesty rail for the 2026-07-28 state: ferc.gov blocks automated retrieval, so no accession has
+  // been read. If a future refresh adds a filed-verified row it must bring an accession with it, which
+  // the schema test above enforces. This test just keeps the legend and the data telling one story.
+  const F = D.procedural.filings;
+  const verified = F.rows.filter((r) => r.status === "filed-verified");
+  if (!verified.length) {
+    assert.match(F.note, /eLibrary/i, "the legend explains that nothing is eLibrary-confirmed yet");
+  } else {
+    for (const r of verified) assert.ok(r.accession && r.verified_at, `${r.docket} verified row carries its proof`);
+  }
+});
+
+/* ---- Discourse waves (news-tracks-plan.md Part 5 #4, #6) -------------------------------------- */
+
+test("every Discourse theme declares a wave, and wave 1 never shrinks", () => {
+  const themes = D.voiceThemes || [];
+  for (const t of themes) {
+    assert.ok(t.wave === 1 || t.wave === 2, `theme "${t.title}" declares wave 1 or 2`);
+  }
+  // Count floor: wave 2 is additive. Wave 1 is the captured June reaction and is append-only; if it
+  // ever drops, a reaction was deleted rather than superseded.
+  const w1 = themes.filter((t) => t.wave === 1).length;
+  const w2 = themes.filter((t) => t.wave === 2).length;
+  assert.ok(w1 >= 6, `wave-1 theme floor (${w1} >= 6)`);
+  assert.ok(w2 >= 1, `wave 2 exists (${w2} >= 1)`);
+});
+
+test("wave-2 themes carry a track and cite sources published after the orders issued", () => {
+  // A wave-2 item is by definition post-June-18 commentary. A June-17 source in that lane would mean
+  // the freshness split is decorative.
+  for (const t of (D.voiceThemes || []).filter((x) => x.wave === 2)) {
+    assert.ok(D.tracks[t.track], `wave-2 theme "${t.title}" declares a known track (got "${t.track}")`);
+    for (const q of t.quotes || []) {
+      const s = D.SOURCES[q.src];
+      assert.ok(s, `wave-2 theme "${t.title}" cites known source "${q.src}"`);
+      assert.ok(s.published || s.background === true || s.undated === true,
+        `wave-2 source "${q.src}" needs published (or an explicit background/undated flag)`);
+      if (s.published && !s.background) {
+        assert.ok(s.published >= "2026-06-18",
+          `wave-2 source "${q.src}" is dated ${s.published}, before the June 18 orders; mark it background: true if that is deliberate`);
+      }
+    }
+  }
+});
+
+test("every displayed news quote is captured in the news evidence file", () => {
+  // The companion to the verify-quotes sweep: this checks the JOIN (does the evidence exist and is it
+  // attributed to the source the theme cites), the sweep checks the TEXT.
+  const news = JSON.parse(readFileSync(join(here, "..", "sources", "news-evidence.json"), "utf8"));
+  assert.match(news.captured_at, /^\d{4}-\d{2}-\d{2}$/, "news evidence is stamped");
+  assert.ok(news.capture_method && /elibrary/i.test(news.capture_method),
+    "the capture method states the eLibrary limitation rather than implying docket confirmation");
+  const captured = new Set(Object.values(news.items).map((i) => i.src));
+  for (const s of captured) assert.ok(D.SOURCES[s], `news evidence cites known source "${s}"`);
+  for (const t of (D.voiceThemes || []).filter((x) => x.wave === 2)) {
+    for (const q of t.quotes || []) {
+      assert.ok(captured.has(q.src), `wave-2 quote source "${q.src}" has a captured snippet`);
+    }
+  }
+});
+
+/* ---- Deployed asset cache keys (PR #14 review, Codex P1) -------------------------------------- */
+
+test("docs/index.html asset tokens are derived from asset content and in sync", () => {
+  // Regression for a silent deploy bug: the tokens were one hand-typed date shared by every asset, so
+  // shipping a change meant REMEMBERING to bump it. Forgetting means returning visitors keep cached
+  // files and can run an old app.js against a new data.js — a mismatch that reproduces for users and
+  // never locally. Tokens are now content hashes, and this test is what makes forgetting impossible.
+  const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
+  const stamped = stampAssets(html, join(here, ".."));
+  assert.equal(html, stamped, "docs/index.html asset tokens are stale; regenerate with: node tools/stamp-assets.mjs");
+
+  // And the mechanism itself must still be reaching the files it is supposed to protect.
+  const tokens = [...html.matchAll(/(?:href|src)="((?!https?:)[^"?]+\.(?:css|js))\?v=([^"]*)"/g)];
+  assert.ok(tokens.length >= 5, `every local asset carries a cache token (${tokens.length} >= 5)`);
+  for (const [, path, token] of tokens) {
+    assert.match(token, /^[0-9a-f]{10}$/, `${path} token is a content hash, not a hand-typed date`);
+  }
+  // Distinct content must give distinct tokens; a shared token is the bug this replaced.
+  const byToken = new Set(tokens.map(([, , t]) => t));
+  assert.equal(byToken.size, tokens.length, "each asset busts independently rather than sharing one token");
+});
+
+/* ---- SEO: crawlable content + freshness (2026-07-28) ------------------------------------------ */
+
+test("the served HTML carries real crawlable content, not just a shell", () => {
+  // Before tools/build-seo.mjs the six tab panels shipped EMPTY and app.js filled them, so the served
+  // HTML held 113 words on a site holding 3,500 pages of analysed record. Googlebot renders JS on a
+  // second, budget-limited pass; Bing, most LLM crawlers and every social unfurler largely do not.
+  const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
+  const body = html.split("<body>")[1] || "";
+  const text = body
+    .replace(/<script[\s\S]*?<\/script>/g, " ")
+    .replace(/<noscript[\s\S]*?<\/noscript>/g, " ")
+    .replace(/<[^>]+>/g, " ");
+  const words = text.split(/\s+/).filter(Boolean).length;
+  assert.ok(words >= 800, `served HTML carries a real briefing without JS (${words} words >= 800)`);
+
+  // It must be the site's own facts, not filler: the dockets and the reform categories are the two
+  // things a search result for this topic should be able to match on.
+  for (const d of D.dockets) {
+    assert.ok(html.includes(d.docket), `baked HTML names docket ${d.docket}`);
+  }
+  assert.ok(/<h2[^>]*>/.test(body), "baked content uses real headings");
+});
+
+test("baked SEO content and sitemap are regenerated from data.js and in sync", () => {
+  const htmlPath = join(here, "..", "docs", "index.html");
+  const mapPath = join(here, "..", "docs", "sitemap.xml");
+  const html = readFileSync(htmlPath, "utf8");
+  const xml = readFileSync(mapPath, "utf8");
+  assert.equal(html, buildIndexHtml(html, D), "docs/index.html is stale; regenerate with: node tools/build-seo.mjs");
+  assert.equal(xml, buildSitemap(D), "docs/sitemap.xml is stale; regenerate with: node tools/build-seo.mjs");
+});
+
+test("freshness signals track the data rather than drifting", () => {
+  // These were hand-typed and had fallen a month behind the newest sweep, on a site whose entire
+  // value proposition is currency.
+  const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
+  const xml = readFileSync(join(here, "..", "docs", "sitemap.xml"), "utf8");
+  const fresh = D.meta.newsCapture;
+  assert.match(html, new RegExp(`"dateModified":\\s*"${fresh}"`), "JSON-LD dateModified matches the newest sweep");
+  assert.ok(xml.includes(`<lastmod>${fresh}</lastmod>`), "sitemap lastmod matches the newest sweep");
+});
+
+test("the social card exists and is declared at the size the card type promises", () => {
+  // twitter:card was summary_large_image with NO og:image at all, so every share unfurled blank.
+  const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
+  const png = join(here, "..", "docs", "og-card.png");
+  assert.ok(existsSync(png), "docs/og-card.png exists (regenerate: python3 tools/build-og-image.py)");
+  assert.match(html, /property="og:image" content="https:\/\/[^"]+og-card\.png"/, "og:image declared absolutely");
+  assert.match(html, /property="og:image:alt"/, "og:image carries alt text");
+  // PNG header: width/height are big-endian uint32 at bytes 16..24 of the IHDR chunk.
+  const buf = readFileSync(png);
+  assert.equal(buf.readUInt32BE(16), 1200, "card is 1200px wide, as og:image:width claims");
+  assert.equal(buf.readUInt32BE(20), 630, "card is 630px tall, as og:image:height claims");
+});
+
+/* ---- Per-docket static pages (2026-07-28 SEO) ------------------------------------------------- */
+
+test("every docket has a static page, generated and in sync", () => {
+  // The app is one URL: its tabs are hash routes, and a fragment is not a separate URL to a search
+  // engine, so no order could rank for its own docket number. These pages are that surface.
+  const pages = pagesFor(D);
+  assert.equal(pages.size, D.dockets.length + 1, "one page per show cause order, plus E-2");
+  for (const [rel, html] of pages) {
+    const abs = join(here, "..", "docs", rel);
+    assert.ok(existsSync(abs), `${rel} exists (regenerate: node tools/build-docket-pages.mjs)`);
+    assert.equal(readFileSync(abs, "utf8"), html, `${rel} is stale; regenerate with: node tools/build-docket-pages.mjs`);
+  }
+});
+
+test("each docket page is unique, self-canonical, and substantial", () => {
+  // Duplicate-content risk is the thing that makes a bulk page-generation strategy backfire, so the
+  // pages must differ in title, description and body, not just in a docket number.
+  const titles = new Set(), descs = new Set();
+  for (const d of allDockets(D)) {
+    const slug = slugFor(d);
+    const html = readFileSync(join(here, "..", "docs", "dockets", slug, "index.html"), "utf8");
+    const title = (html.match(/<title>([^<]*)<\/title>/) || [])[1];
+    const desc = (html.match(/<meta name="description" content="([^"]*)"/) || [])[1];
+    assert.ok(title && desc, `${slug} has a title and description`);
+    titles.add(title);
+    descs.add(desc);
+
+    assert.ok(html.includes(`<link rel="canonical" href="https://pranava0x0.github.io/FERC-Orders-June-2026/dockets/${slug}/" />`),
+      `${slug} canonical points at itself`);
+    assert.ok(html.includes(d.docket), `${slug} names its docket number`);
+    assert.ok(html.includes(`../../${d.pdf}`), `${slug} links its committed order PDF`);
+    assert.match(html, /pranavaraparla\.com/, `${slug} carries the author attribution`);
+    assert.match(html, /Not affiliated with FERC or DOE/, `${slug} carries the disclaimer`);
+
+    const body = html.split("<main")[1].split("</main>")[0].replace(/<[^>]+>/g, " ");
+    const words = body.split(/\s+/).filter(Boolean).length;
+    assert.ok(words >= 400, `${slug} carries real content (${words} words >= 400)`);
+  }
+  assert.equal(titles.size, allDockets(D).length, "every page title is distinct");
+  assert.equal(descs.size, allDockets(D).length, "every meta description is distinct");
+});
+
+test("docket pages quote only text the order corpus actually carries", () => {
+  // These pages render the same d.dir quotes the app does, so they inherit the verbatim guarantee
+  // from tools/verify-quotes.mjs. This asserts the join: what is printed came from the audited data.
+  for (const d of allDockets(D)) {
+    const html = readFileSync(join(here, "..", "docs", "dockets", slugFor(d), "index.html"), "utf8");
+    for (const x of d.dir || []) {
+      const escaped = x.q.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+      assert.ok(html.includes(escaped), `${slugFor(d)} prints directive quote verbatim from data.js: ${x.q.slice(0, 40)}`);
+    }
+  }
+});
+
+test("the sitemap lists every page, and every listed page exists", () => {
+  const xml = readFileSync(join(here, "..", "docs", "sitemap.xml"), "utf8");
+  const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  const SITE = "https://pranava0x0.github.io/FERC-Orders-June-2026/";
+  assert.ok(locs.includes(SITE), "root URL is listed");
+  for (const d of allDockets(D)) {
+    assert.ok(locs.includes(`${SITE}dockets/${slugFor(d)}/`), `${slugFor(d)} is in the sitemap`);
+    assert.ok(locs.includes(`${SITE}${d.pdf}`), `${d.item} PDF is in the sitemap`);
+  }
+  // No 404s: every non-PDF site URL must resolve to a committed file.
+  for (const loc of locs) {
+    const rel = loc.replace(SITE, "");
+    if (!rel) continue;
+    const target = rel.endsWith("/") ? join(rel, "index.html") : rel;
+    assert.ok(existsSync(join(here, "..", "docs", target)), `sitemap URL ${loc} resolves to a committed file`);
+  }
+});
+
+test("the comment corpus is declared as a Dataset for rich results", () => {
+  const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
+  const blocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => JSON.parse(m[1]));
+  const ds = blocks.find((b) => b["@type"] === "Dataset");
+  assert.ok(ds, "a Dataset entity is declared");
+  assert.ok(ds.description.includes(String(D.comments.total)), "Dataset counts come from the data, not retyped");
+  assert.equal(ds.dateModified, D.meta.newsCapture, "Dataset tracks the newest sweep");
 });
