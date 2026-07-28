@@ -229,3 +229,28 @@ holds comfortably. No workflow, no Task tool.
   failed; screenshots failed ~5 times** (hidden pane, and one `innerWidth: 0` viewport that inflated
   every measurement ~20× and briefly looked like a layout regression). That is now written into
   AGENTS.md as a check rather than left as a session note, since noting it twice did not stop it.
+
+### SEO + deploy half (same session): audit → 7 generated pages → Search Console
+
+- **Agents spawned: none.** Fourth consecutive stretch with zero subagents. Nothing here was
+  open-ended enough to justify a spawn: the audit was one measurement, the generators were authoring,
+  and the Search Console work was sequential UI driving that a subagent could not have parallelised.
+- **The audit was one cheap measurement and it found everything.** Stripping `<script>`/`<noscript>`
+  from the served HTML and counting words (~15 lines of Python, negligible tokens) surfaced the 113-word
+  problem, and reading the `<head>` surfaced the missing `og:image`. **Measure the artifact before
+  theorising about it** — no amount of reasoning about meta tags would have found either.
+- **Browser tooling, second data point in one session.** The in-app Browser pane again produced blank
+  screenshots and one `innerWidth: 0` viewport; the user's real Chrome (claude-in-chrome) drove Google
+  Search Console flawlessly across ~15 interactions. For anything behind a login, the real browser is
+  the tool; for local verification, DOM assertions remain the only thing that has never failed.
+- **`browser_batch` was flagged on nearly every Chrome call and I ignored it.** Each click → screenshot
+  → read was its own round-trip through a UI whose next state was genuinely unknown, so batching was
+  not obviously safe, but the navigate → type → click sequences (entering the property URL, the sitemap
+  path) were fully predictable and should have been single batched calls. **Batch the deterministic
+  runs, keep single calls only where the next state has to be observed first.**
+- **A 20-minute poll for a bot review timed out ~1 minute early.** Codex latency on this repo is over
+  20 minutes; poll 30 to 40, or just check back rather than burning a wait.
+- **Net for the whole session:** 9 commits across 2 PRs, zero subagents, 8 verification fetches plus
+  ~20 browser calls. Tests 82 → 108, required quotes 193 → 209, crawlable words 113 → ~1,700,
+  indexable URLs 1 → 8. Three bugs logged, two with regression tests; the third (stale asset tokens)
+  came from the bot reviewer, in the one layer a session spent inside application logic never looks at.
