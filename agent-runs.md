@@ -254,3 +254,79 @@ holds comfortably. No workflow, no Task tool.
   ~20 browser calls. Tests 82 → 108, required quotes 193 → 209, crawlable words 113 → ~1,700,
   indexable URLs 1 → 8. Three bugs logged, two with regression tests; the third (stale asset tokens)
   came from the bot reviewer, in the one layer a session spent inside application logic never looks at.
+
+## Session 2026-08-03 — news refresh + commissioner-quote audit + RTO/ISO comment views + UAT skill
+
+- **Agent 1 of 2: general-purpose, commissioner-quote cross-order comparison — total loss.** Asked it
+  to compare 5 commissioners' statements across all 6 orders and report tailored vs. common text.
+  Terminated by the harness after hitting the account's session API limit: 59 tool calls, 607,911 ms
+  (~10 min), **238,988 subagent tokens**, zero usable output (only its opening sentence survived).
+  Recovered by doing the comparison inline with two small Node scripts (~15 min, a few thousand
+  tokens) reusing the project's own `carries()`/`loose()` matcher from `tools/verify-quotes.mjs` — this
+  is exactly the "exact-verification over a small known corpus" case the project's own
+  "inline before subagent" rule already covers; the agent should not have been spawned for it. The
+  inline path also caught two of its own bugs along the way (naive-substring false positives, then a
+  normalization-mismatch bug) that a report from the failed agent would have hidden either way.
+- **Agent 2 of 2: Explore, RTO/ISO comment-architecture mapping — full value.** Six targeted questions
+  about an unfamiliar subsystem (does a comment record carry a docket field? does any view filter by
+  RTO already? do the static docket-page generators touch comment data?). Returned a complete,
+  file:line-cited report that directly resolved the "wire up existing data vs. build new extraction"
+  design question in the plan — the kind of genuinely open-ended "map this for me" task an Explore
+  agent is for. No token/cost figure captured for this one (ran to completion before the other agent's
+  failure was noticed); worth instrumenting next time.
+- **Browser automation, two different tools for two different jobs.** `Control_Chrome` (the user's
+  authenticated real Chrome) read FERC eLibrary docket sheets directly — Cloudflare-gated to every
+  automated fetch tried, wide open here — across 8 dockets (6 show-cause + E-2 + AD26-7), confirming 12
+  `filed-verified` filings (6 reports + 6 abeyance motions) with real accessions where the prior sweep
+  had exactly zero. One incident: a JS-exec call landed on an unrelated Gmail tab mid-session (tab
+  focus drift in a live, human-owned browser, not an isolated instance) — no action taken on it, but
+  every call after was pinned to an explicit `tab_id`. Separately, `Claude_Browser` (the sandboxed
+  preview pane) drove local dev-server verification (desktop + mobile screenshots, console/network
+  checks, deep-link clicks) across the docket pages and Comments tab — the two tools were not
+  interchangeable for their respective jobs, and using the wrong one for either would not have worked.
+- **Net for the whole session:** 1 failed general-purpose agent (238,988 tokens, 0 output) + 1
+  successful Explore agent, otherwise fully inline (2 hand-written Node verification scripts, ~30
+  browser-tool calls across both bridges, ~25 file edits). Tests 101 → 109 (2 new: the commissioner
+  full-statement diff, wired to a new permanent tool). New permanent tool:
+  `tools/verify-commish-tailoring.mjs`. 3 bugs logged (2 data provenance, 1 code — the Dataset JSON-LD
+  staleness bug), all fixed with regression coverage. First `ferc-uat` skill run: clean, one naming
+  inconsistency found (not a bug), logged to `backlog.md`. The failed-agent tokens (238,988) alone cost
+  roughly 15× what the two Node scripts that replaced its job actually needed — the sharpest single
+  data point yet for "inline before subagent" on exact-verification tasks.
+
+### PR #17 review round — Codex (automated) + one resumed code-reviewer agent
+
+- **Codex's GitHub review** (automatic, no spawn on my end) caught a real P2 the moment the PR opened:
+  `verify-commish-tailoring.mjs` only checked for *additions*, never *omissions* — an empty/truncated
+  extraction would silently report `ok: true`. Fixed same-session (bidirectional check + a length floor),
+  which in turn surfaced a genuine extraction-boundary bug (a footnote truncated along with a
+  commissioner's signature block). Free, fast, and worth the reply-in-thread to close the loop.
+  164,542 subagent tokens, 23 tool uses, ~411s — the session's own rate limit interrupted it once (see
+  above) and it resumed cleanly via `SendMessage` to the same agent id, continuing from its transcript
+  rather than restarting from zero.
+- **The resumed `code-reviewer` agent found the session's most important bug**: LaCerte's "verbatim in
+  all six orders" claim was false — confirmed 97% confidence with specific before/after quote pairs, and
+  independently verified by direct grep before touching any code. It also correctly identified *why*:
+  the `carries()` matcher's ~60-char LCS threshold proves presence, not identity, so a phrase-swapped
+  sentence still passes. Separately flagged (and I fixed) an inverted coverage statistic ("40% carries
+  no region tag" should have read "60%") and zero test coverage on the new per-docket comment section's
+  key invariant (E-2 must never render one). Also explicitly cleared several things I'd have otherwise
+  spent time re-checking myself: `commishAside` vs `commish` handling, the E-2 exclusion logic, XSS
+  escaping, and the `build-seo.mjs` Dataset regex — all "verified clean, no issue found," stated plainly
+  rather than padded with minor nits. That mattered as much as the findings: it told me where NOT to
+  spend the remaining time.
+- **My own fix for the LaCerte finding overcorrected once before landing.** First attempt: rewrite the
+  general sentence check to require exact matches instead of `carries()`-style presence. That broke the
+  other direction — different orders have different page counts, so genuinely-identical prose gets
+  interrupted by page-break artifacts at different points per order, and exact-matching flagged dozens
+  of real matches as false "modifications." Reverted to the proven bidirectional presence check as the
+  general safety net, and added one narrow, targeted check for LaCerte's specific confirmed pattern
+  instead of trying to build one classifier that had to get both failure modes right at once. Full
+  account in `issues.md` and `CLAUDE.md`.
+- **Net for the review round:** 1 automated review (free) + 1 resumed agent (164,542 tokens, continuing
+  a session interrupted by its own rate limit rather than restarting) found 2 real bugs neither the
+  109-test suite nor my own manual verification had caught, plus cleared several things as genuinely
+  fine. Tests 109 → 112 (3 new: LaCerte substitution, noise-allowlist rot guard, E-2 comment-section
+  exclusion). The independent review's method (word-level LCS from scratch) differed from every one of
+  my own re-checks (all presence-based), which is specifically what let it see past a blind spot that
+  survived a full rebuild, a bidirectional check, and manual grep-verification of individual examples.

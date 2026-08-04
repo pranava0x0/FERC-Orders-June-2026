@@ -269,3 +269,56 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   piece of state. **Fix:** `timelineTrack` is now the only source of truth; the pending value is
   applied before `activate()` and is purely a before-first-render handoff. Same class as the PR #12
   permalink lesson: if the URL is authoritative, nothing else may quietly outvote it.
+
+- **2026-08-03/04 · provenance · the 2026-06-26 "largely common, with some per-order tailoring" hedge
+  was itself wrong, and my first two re-verification attempts were each wrong in the opposite direction
+  before landing on the true scope.** That 2026-06-26 fix corrected an "identical across all six orders"
+  overclaim after a spot-check found mismatches — but the spot-check had a false-positive problem
+  (footnote/page-break splices register as "different" to a naive substring check). Redone
+  (2026-08-03) with the project's own LCS-tolerant `carries()` matcher: initially reported "4 of 5
+  commissioners fully verbatim, only Chang tailored" — this was ALSO wrong, because `carries()` proves a
+  sentence is *present* in the target, not that it's *identical*; a sentence with one phrase swapped
+  (a region name) still shares long runs with the original on both sides of the swap and passes a
+  presence-only check. An independent PR review (2026-08-04) re-derived the claim with a different
+  method (word-level LCS) and found LaCerte's statement genuinely, systematically names the respondent
+  RTO directly in ~4 sentences per order — confirmed against the raw text. **True scope: 3 of 5
+  commissioners (Swett, Rosner, See) fully verbatim; Chang has one genuine addition (a CAISO footnote,
+  E-10 p. 111); LaCerte is NOT verbatim — he names the RTO/TOs directly, every order.** (A follow-up
+  attempt to fix this generally, by requiring exact sentence-for-exact-sentence matches instead of
+  presence, was itself reverted — different orders have different page counts, so identical prose gets
+  interrupted by page-break artifacts at different points per order, and exact-matching flagged dozens
+  of genuinely-identical sentences as false positives.) Root cause: **data**, twice over — the original
+  spot-check's false positives, and this session's own first-pass verification tool sharing the same
+  presence-vs-identity blind spot as everything before it. Fix: `commishAside` field on E-10's docket
+  entry for Chang's footnote (additive — renders alongside the normal five-commissioner list via
+  `commishBlock()`, doesn't replace it, unlike the `commish` override built for E-2); corrected
+  `sources.written` text per commissioner, including LaCerte's; and `tools/verify-commish-tailoring.mjs`
+  now runs both the general bidirectional presence check AND a targeted, direct check specifically for
+  LaCerte's confirmed RTO-naming pattern (`verifyLacerteSubstitution`), rather than one generic
+  classifier trying to catch both failure modes at once. Wired into `tests/data.test.mjs`. Status:
+  **Fixed** — none of the site's *displayed* quotes were ever affected (LaCerte's swapped sentences
+  aren't among his curated theme quotes), only the general "verbatim" provenance claim about his
+  statement as a whole.
+
+- **2026-08-03 · provenance · site claimed "no circuit-court petition" against the PJM co-location
+  predecessor orders; four were filed in April 2026.** The `e2` track's 2026-07-28 status line said "Our
+  checks found no circuit-court petition against the December 2025 or June 2026 co-location orders."
+  Direct eLibrary verification (docket EL25-49-002) found Petitions for Review on file in both the Third
+  Circuit (PJM Industrial Customer Coalition et al.; Exelon; Industrial Energy Consumers of America, No.
+  26-1840) and the D.C. Circuit (American Transmission Systems and affiliated PJM transmission owners),
+  all filed in late April 2026 — predating the 2026-07-28 sweep that claimed none existed. Root cause:
+  **data** (the claim was never actually re-verified against eLibrary; it was carried forward from an
+  earlier, unconfirmed read). Fix: `e2` track status corrected, new timeline entry (Jul 28, 2026, "PJM
+  separately seeks more time on its co-location compliance filing") cites all four petitions. Status:
+  **Fixed**.
+
+- **2026-08-03 · code · `build-seo.mjs`'s Dataset JSON-LD block was inserted once and never updated
+  again.** `if (!out.includes(DATASET_MARK)) out = out.replace("</head>", ...)` handled "insert if
+  missing" but had no "replace if present" branch, so the block's `dateModified` (and every other baked
+  field) silently froze at whatever it was the first time the block was created — every later
+  `node tools/build-seo.mjs` run exited 0 having changed nothing about it. Surfaced by the
+  `newsCapture` bump in this session's refresh: the sync test expected `2026-08-03`, got the
+  first-ever-baked `2026-07-28`. Root cause: **code** (incomplete branch in an idempotent-generator
+  pattern). Fix: match and replace the existing `<script type="application/ld+json">…Dataset…</script>`
+  block in place (regex captures its leading whitespace too, so a re-run doesn't compound the indent —
+  the first fix attempt did exactly that and had to be corrected again before landing). Status: **Fixed**.
