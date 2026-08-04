@@ -254,3 +254,42 @@ holds comfortably. No workflow, no Task tool.
   ~20 browser calls. Tests 82 → 108, required quotes 193 → 209, crawlable words 113 → ~1,700,
   indexable URLs 1 → 8. Three bugs logged, two with regression tests; the third (stale asset tokens)
   came from the bot reviewer, in the one layer a session spent inside application logic never looks at.
+
+## Session 2026-08-03 — news refresh + commissioner-quote audit + RTO/ISO comment views + UAT skill
+
+- **Agent 1 of 2: general-purpose, commissioner-quote cross-order comparison — total loss.** Asked it
+  to compare 5 commissioners' statements across all 6 orders and report tailored vs. common text.
+  Terminated by the harness after hitting the account's session API limit: 59 tool calls, 607,911 ms
+  (~10 min), **238,988 subagent tokens**, zero usable output (only its opening sentence survived).
+  Recovered by doing the comparison inline with two small Node scripts (~15 min, a few thousand
+  tokens) reusing the project's own `carries()`/`loose()` matcher from `tools/verify-quotes.mjs` — this
+  is exactly the "exact-verification over a small known corpus" case the project's own
+  "inline before subagent" rule already covers; the agent should not have been spawned for it. The
+  inline path also caught two of its own bugs along the way (naive-substring false positives, then a
+  normalization-mismatch bug) that a report from the failed agent would have hidden either way.
+- **Agent 2 of 2: Explore, RTO/ISO comment-architecture mapping — full value.** Six targeted questions
+  about an unfamiliar subsystem (does a comment record carry a docket field? does any view filter by
+  RTO already? do the static docket-page generators touch comment data?). Returned a complete,
+  file:line-cited report that directly resolved the "wire up existing data vs. build new extraction"
+  design question in the plan — the kind of genuinely open-ended "map this for me" task an Explore
+  agent is for. No token/cost figure captured for this one (ran to completion before the other agent's
+  failure was noticed); worth instrumenting next time.
+- **Browser automation, two different tools for two different jobs.** `Control_Chrome` (the user's
+  authenticated real Chrome) read FERC eLibrary docket sheets directly — Cloudflare-gated to every
+  automated fetch tried, wide open here — across 8 dockets (6 show-cause + E-2 + AD26-7), confirming 12
+  `filed-verified` filings (6 reports + 6 abeyance motions) with real accessions where the prior sweep
+  had exactly zero. One incident: a JS-exec call landed on an unrelated Gmail tab mid-session (tab
+  focus drift in a live, human-owned browser, not an isolated instance) — no action taken on it, but
+  every call after was pinned to an explicit `tab_id`. Separately, `Claude_Browser` (the sandboxed
+  preview pane) drove local dev-server verification (desktop + mobile screenshots, console/network
+  checks, deep-link clicks) across the docket pages and Comments tab — the two tools were not
+  interchangeable for their respective jobs, and using the wrong one for either would not have worked.
+- **Net for the whole session:** 1 failed general-purpose agent (238,988 tokens, 0 output) + 1
+  successful Explore agent, otherwise fully inline (2 hand-written Node verification scripts, ~30
+  browser-tool calls across both bridges, ~25 file edits). Tests 101 → 109 (2 new: the commissioner
+  full-statement diff, wired to a new permanent tool). New permanent tool:
+  `tools/verify-commish-tailoring.mjs`. 3 bugs logged (2 data provenance, 1 code — the Dataset JSON-LD
+  staleness bug), all fixed with regression coverage. First `ferc-uat` skill run: clean, one naming
+  inconsistency found (not a bug), logged to `backlog.md`. The failed-agent tokens (238,988) alone cost
+  roughly 15× what the two Node scripts that replaced its job actually needed — the sharpest single
+  data point yet for "inline before subagent" on exact-verification tasks.

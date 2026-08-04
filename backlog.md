@@ -287,6 +287,14 @@
   padding/min-height) — below the 44 px guideline. Pre-existing (commit `735f776`), surfaced by the
   2026-06-26 review. Fix: add `padding: 11px 0; min-height: 44px; display: flex; align-items: center;`.
 
+- **low — the "Discourse" tab's hash id is `news`, not `discourse`.** Surfaced by the 2026-08-03 first
+  `ferc-uat` run: `app.js`'s `TABS` array names the sixth tab `news` even though its visible label and
+  every doc reference to it say "Discourse." Typing `#discourse` by hand silently no-ops (stays on
+  whatever tab was already active) instead of erroring, which cost real debugging time this run. Not
+  user-facing (nobody hand-types tab hashes), so low priority — but a one-line rename of the `TABS` entry
+  (plus its route-parsing branch) would remove the trap for the next person who reads the code before the
+  UI. Logged in `uat.md`'s "Patterns noticed."
+
 ### Critique / analysis leads (from the 2026-06-24 news refresh)
 
 - **medium** — Develop the **non-RTO coverage gap** into an explicit "what's *not* covered" note:

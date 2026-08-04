@@ -269,3 +269,40 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   piece of state. **Fix:** `timelineTrack` is now the only source of truth; the pending value is
   applied before `activate()` and is purely a before-first-render handoff. Same class as the PR #12
   permalink lesson: if the URL is authoritative, nothing else may quietly outvote it.
+
+- **2026-08-03 · provenance · the 2026-06-26 "largely common, with some per-order tailoring" hedge itself
+  overstated the tailoring.** That fix corrected an "identical across all six orders" overclaim after a
+  spot-check found mismatches — but the spot-check had a false-positive problem (footnote/page-break
+  splices in the OCR text register as "different" to a naive substring check). Redone with the project's
+  own LCS-tolerant `carries()` matcher, correctly normalized on both sides this time: **4 of 5
+  commissioners' statements are fully verbatim across all six orders; the 5th (Chang) has exactly one
+  genuine addition**, a CAISO-specific footnote on E-10 (p. 111, on the Order No. 888 NITS framework).
+  Root cause: **data** (an under-tested verification produced the wrong *scope* of correction, not just
+  a wrong claim). Fix: `commishAside` field on E-10's docket entry (additive — renders alongside the
+  normal five-commissioner list via `commishBlock()`, doesn't replace it, unlike the `commish` override
+  built for E-2), corrected `sources.written` text per commissioner, and a new permanent regression tool
+  `tools/verify-commish-tailoring.mjs` (wired into `tests/data.test.mjs`) so this stays true instead of
+  being a one-time manual finding. Status: **Fixed**.
+
+- **2026-08-03 · provenance · site claimed "no circuit-court petition" against the PJM co-location
+  predecessor orders; four were filed in April 2026.** The `e2` track's 2026-07-28 status line said "Our
+  checks found no circuit-court petition against the December 2025 or June 2026 co-location orders."
+  Direct eLibrary verification (docket EL25-49-002) found Petitions for Review on file in both the Third
+  Circuit (PJM Industrial Customer Coalition et al.; Exelon; Industrial Energy Consumers of America, No.
+  26-1840) and the D.C. Circuit (American Transmission Systems and affiliated PJM transmission owners),
+  all filed in late April 2026 — predating the 2026-07-28 sweep that claimed none existed. Root cause:
+  **data** (the claim was never actually re-verified against eLibrary; it was carried forward from an
+  earlier, unconfirmed read). Fix: `e2` track status corrected, new timeline entry (Jul 28, 2026, "PJM
+  separately seeks more time on its co-location compliance filing") cites all four petitions. Status:
+  **Fixed**.
+
+- **2026-08-03 · code · `build-seo.mjs`'s Dataset JSON-LD block was inserted once and never updated
+  again.** `if (!out.includes(DATASET_MARK)) out = out.replace("</head>", ...)` handled "insert if
+  missing" but had no "replace if present" branch, so the block's `dateModified` (and every other baked
+  field) silently froze at whatever it was the first time the block was created — every later
+  `node tools/build-seo.mjs` run exited 0 having changed nothing about it. Surfaced by the
+  `newsCapture` bump in this session's refresh: the sync test expected `2026-08-03`, got the
+  first-ever-baked `2026-07-28`. Root cause: **code** (incomplete branch in an idempotent-generator
+  pattern). Fix: match and replace the existing `<script type="application/ld+json">…Dataset…</script>`
+  block in place (regex captures its leading whitespace too, so a re-run doesn't compound the indent —
+  the first fix attempt did exactly that and had to be corrected again before landing). Status: **Fixed**.
