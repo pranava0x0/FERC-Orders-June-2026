@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // tools/verify-commish-tailoring.mjs — verify the site's claim that each commissioner's concurring
 // statement is VERBATIM across all six §206 orders, except a small, explicit allowlist of documented
-// exceptions (docs/js/data.js's per-docket `commishAside` fields).
+// exceptions: docs/js/data.js's per-docket `commishAside` fields (genuine additions), and LaCerte's
+// confirmed RTO-name substitution (checked separately by verifyLacerteSubstitution() below).
 //
 //   node tools/verify-commish-tailoring.mjs          # report + exit non-zero on any unexplained divergence
 //
@@ -12,10 +13,26 @@
 // (carries()/loose() from verify-quotes.mjs), which tolerates the footnote/page-break splices the OCR
 // layer interleaves — a naive substring check flags those splices as false "tailoring".
 //
+// KNOWN LIMITATION, load-bearing: carries()'s ~60-char LCS threshold proves a sentence is PRESENT
+// somewhere in the target, not that it is IDENTICAL. A sentence with one phrase swapped (a region name)
+// still shares long runs with the original on both sides of the swap and passes this check as "found" —
+// it cannot see an in-place edit, only a whole sentence appearing or disappearing. This is exactly how
+// an earlier version of this tool missed LaCerte's real tailoring and reported him "fully verbatim" (a
+// 2026-08-04 PR review caught it). A general "present vs. identical" classifier was attempted and
+// reverted: exact-matching sentences one-to-one broke on ordinary page-break splicing (which shifts
+// sentence boundaries even for genuinely-identical prose across orders with different page counts),
+// flooding the output with false positives worse than the blind spot it was meant to fix. LaCerte's
+// specific, confirmed pattern is checked directly instead (verifyLacerteSubstitution()) rather than
+// through a general in-place-edit detector.
+//
 // This tool exists because the 2026-06-26 fix (issues.md) corrected an overclaim ("identical across all
-// six") to a hedge ("largely common, with some per-order tailoring") based on a check that itself had the
-// same false-positive problem this tool tolerates for. Redone properly (2026-08-03): four of five
-// commissioners are fully verbatim; the fifth (Chang) has exactly one genuine addition, on CAISO (E-10).
+// six") to a hedge ("largely common, with some per-order tailoring") based on a check that had the same
+// false-positive problem this tool tolerates for. Current state (2026-08-04): three of five commissioners
+// (Swett, Rosner, See) are fully verbatim; Chang has exactly one genuine addition (a CAISO footnote,
+// E-10); LaCerte's statement names the respondent RTO directly in several sentences per order and is NOT
+// verbatim — confirmed, not a false positive. The site's displayed quotes for him don't happen to include
+// any of the swapped sentences, so what's shown remains accurate; only the "verbatim" provenance claim
+// about his statement as a whole was wrong, and is corrected in data.js.
 import { readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -68,6 +85,25 @@ const KNOWN_OCR_NOISE = {
   lacerte: { "E-8": ["Kenny Rogers, The Gambler"], "E-9": ["535 U.S. 17"], "E-11": ["535 U.S. 17"] },
 };
 
+// Rot guard: every entry above must actually match something real, or it's a stale filter silently
+// suppressing nothing (harmless) — or worse, one that used to be a narrow, verified exception and is now
+// matching something new and different (not harmless). A noise substring identifies a specific FLAGGED
+// SENTENCE to skip, and that sentence can originate from either side of the comparison (the PJM baseline,
+// for an omission being wrongly flagged; the target order, for an addition being wrongly flagged) — so a
+// substring counts as live if it's found in EITHER the PJM (E-7) span or the target item's own span for
+// that commissioner. Exported for a test to run.
+export function verifyNoiseAllowlist() {
+  const bad = [];
+  for (const [key, byItem] of Object.entries(KNOWN_OCR_NOISE)) {
+    const pjmStmt = (statementSpans("E-7")[key] || "").replace(/\s+/g, " ");
+    for (const [item, substrings] of Object.entries(byItem)) {
+      const targetStmt = (statementSpans(item)[key] || "").replace(/\s+/g, " ");
+      for (const s of substrings) if (!pjmStmt.includes(s) && !targetStmt.includes(s)) bad.push({ key, item, substring: s });
+    }
+  }
+  return bad;
+}
+
 // Documented exceptions: commissioner key -> docket item -> the exact additional note(s) already
 // captured as that docket's `commishAside`. Anything else "novel" found is an UNEXPLAINED divergence —
 // either new tailoring nobody surfaced yet, or a false positive in this tool's sentence-splitting that
@@ -88,8 +124,10 @@ function rawOf(item) {
 }
 
 // One commissioner's statement text per order, keyed by commissioner surname (lowercased), located by
-// header text rather than by page number.
-function statementSpans(item) {
+// header text rather than by page number. Exported so a rot-guard test can check each KNOWN_OCR_NOISE
+// entry still matches something real — an entry that matches nothing is either stale (the underlying
+// text changed) or was never real to begin with, and either way should not silently keep suppressing.
+export function statementSpans(item) {
   const text = rawOf(item);
   const re = /([A-Z]+),\s*(?:Chairman|Commissioner),\s*concurring:?/g;
   const hits = [...text.matchAll(re)].map((m) => ({ key: m[1].toLowerCase(), idx: m.index, end: m.index + m[0].length }));
@@ -156,6 +194,45 @@ export function verifyCommishTailoring(D = loadData()) {
   return results;
 }
 
+// LaCerte's statement systematically names the respondent RTO by name in several sentences (verified
+// 2026-08-04 against raw order text, after a PR review caught that the "verbatim in all six orders"
+// claim was wrong for him specifically: "I expect PJM to design proposals" becomes "I expect CAISO
+// and/or the Participating Transmission Owners to design proposals" in E-10, and the same pattern
+// recurs for the other four). The sentence-level check above is structurally unable to see this kind of
+// in-place edit: a sentence with one phrase swapped still shares long runs with the original on both
+// sides of the swap, so it passes carries() as "present" even though it isn't the same sentence. A
+// general "is this sentence merely present, or actually identical" classifier was attempted and
+// reverted — it could not distinguish a real word swap from routine page-break/footnote splicing (which
+// shifts sentence boundaries too, and floods a strict check with false positives). Instead, this checks
+// the one thing that actually matters for catching a regression: LaCerte's substantive prose in every
+// non-PJM order must not still say "PJM" outside the case-caption boilerplate at the top of his section
+// (which legitimately cites "PJM Interconnection, L.L.C." in a footnote common to all six orders) — if
+// it does, the known substitution didn't happen, or happened incompletely.
+const CAPTION_BLEED_CHARS = 700; // party-list/footnote-citation text before LaCerte's own prose begins
+// Two "PJM" mentions are legitimate and expected in every non-PJM order, confirmed identical across all
+// five (2026-08-04): a historical/narrative reference ("the odyssey that we embarked upon first with
+// PJM, then SPP, we now aggressively extend...") and a footnote citing the actual PJM Co-Location Order
+// by its case name. Both are invariant facts, not addressee references, so they correctly stay "PJM"
+// regardless of which order you're reading — unlike "I expect PJM to design proposals," which is a
+// direct address to the respondent and does get substituted.
+// "embarked upon first with" (the text before "PJM") is sometimes pushed outside the 40-char window by
+// a page-break artifact landing right before it (e.g. MISO's "Docket No. EL26-70-000 - 3 -" bleed) — the
+// after-side anchor catches that case since the splice never lands between "PJM" and what follows it.
+const LACERTE_EXPECTED_PJM_MENTIONS = ["embarked upon first with", "then SPP, we now aggressively extend", "citing PJM Co-Location Order"];
+export function verifyLacerteSubstitution(D = loadData()) {
+  const results = [];
+  for (const item of NONPJM) {
+    const spans = statementSpans(item);
+    const stmt = spans.lacerte || "";
+    const body = stmt.slice(CAPTION_BLEED_CHARS).replace(/\s+/g, " ");
+    const mentions = [...body.matchAll(/.{0,40}\bPJM\b.{0,40}/g)]
+      .map((m) => m[0].trim())
+      .filter((m) => !LACERTE_EXPECTED_PJM_MENTIONS.some((e) => m.includes(e)));
+    results.push({ item, stmtLen: stmt.length, mentions, ok: stmt.length >= MIN_STMT_LEN && mentions.length === 0 });
+  }
+  return results;
+}
+
 if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
   const results = verifyCommishTailoring();
   const bad = results.filter((r) => !r.ok);
@@ -174,4 +251,16 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
     process.exit(1);
   }
   console.log("\nOK.");
+
+  const lacerte = verifyLacerteSubstitution();
+  const lacerteBad = lacerte.filter((r) => !r.ok);
+  console.log("\nLaCerte RTO-name substitution check — 'PJM' must not remain in his non-PJM statements");
+  console.log("=".repeat(78));
+  for (const r of lacerte) console.log(`  ${r.item}: ${r.mentions.length} leftover "PJM" mention(s)${r.stmtLen < MIN_STMT_LEN ? " [TOO SHORT]" : ""}`);
+  if (lacerteBad.length) {
+    for (const r of lacerteBad) for (const m of r.mentions) console.log(`    ✗ ${r.item}: …${m}…`);
+    console.log(`\nFAIL — ${lacerteBad.length} order(s) with an unsubstituted "PJM" mention.`);
+    process.exit(1);
+  }
+  console.log("OK — substitution confirmed complete in all five non-PJM orders.");
 }
