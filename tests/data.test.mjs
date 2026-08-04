@@ -8,8 +8,8 @@ import { dirname, join } from "node:path";
 import vm from "node:vm";
 import { stampAssets } from "../tools/stamp-assets.mjs";
 import { buildIndexHtml, buildSitemap } from "../tools/build-seo.mjs";
-import { pagesFor, allDockets, slugFor } from "../tools/build-docket-pages.mjs";
-import { verifyCommishTailoring } from "../tools/verify-commish-tailoring.mjs";
+import { pagesFor, allDockets, slugFor, buildDocketPage } from "../tools/build-docket-pages.mjs";
+import { verifyCommishTailoring, verifyLacerteSubstitution, verifyNoiseAllowlist } from "../tools/verify-commish-tailoring.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const code = readFileSync(join(here, "..", "docs", "js", "data.js"), "utf8");
@@ -179,11 +179,13 @@ const orderText = (item) => normOrder(readFileSync(join(here, "..", "sources", "
 
 test("commissioner themed summaries: written quotes are verbatim in the cited (PJM) order", () => {
   // The expandable per-commissioner read (themes + quotes) must trace to source: every WRITTEN quote is
-  // verbatim in the cited canonical copy (the PJM order, 195 FERC ¶ 61,211). A 2026-08-03 full-statement
-  // diff against all six orders (tools/verify-commish-tailoring.mjs, run separately below) found the
-  // concurrences ARE verbatim across all six, except one documented CAISO-specific footnote on Chang's
-  // E-10 statement (see that docket's `commishAside`) — so quotes citing the PJM copy hold for every
-  // order. Spoken quotes come from the open-meeting auto-caption transcript: labeled, not verbatim-checked.
+  // verbatim in the cited canonical copy (the PJM order, 195 FERC ¶ 61,211). A 2026-08-04 full-statement
+  // diff against all six orders (tools/verify-commish-tailoring.mjs, run separately below) found three of
+  // five commissioners' FULL statements verbatim across all six; Chang has one documented CAISO footnote
+  // and LaCerte names the respondent RTO directly elsewhere in his statement — but neither exception
+  // touches any of the specific quotes selected here, so quotes citing the PJM copy hold for every order
+  // regardless. Spoken quotes come from the open-meeting auto-caption transcript: labeled, not
+  // verbatim-checked.
   const pjm = orderText("E-7");
   const raw = readFileSync(join(here, "..", "sources", "text", "orders", ORDER_STEMS["E-7"] + ".txt"), "utf8");
   const parts = raw.split(/--- PAGE (\d+) ---/);
@@ -227,6 +229,28 @@ test("commissioner statements: every non-PJM order matches the PJM baseline, exc
   const withAside = results.filter((r) => r.allowedCount > 0);
   assert.ok(withAside.length >= 1, "at least one documented commishAside exists to test against");
   for (const r of withAside) assert.ok(r.novel.length > 0, `${r.key}/${r.item} has a commishAside but no novel text was found to justify it`);
+});
+
+test("LaCerte's RTO-name substitution is complete in every non-PJM order (no leftover \"PJM\")", () => {
+  // carries()'s sentence-presence check above cannot see an in-place edit (a sentence with one phrase
+  // swapped still overlaps the original), which is how an earlier version of this tool missed LaCerte's
+  // real per-order tailoring. This checks the thing that actually matters: his substantive prose in every
+  // non-PJM order must not still say "PJM" — if it does, the known substitution regressed. A 2026-08-04
+  // PR review caught the miss; see tools/verify-commish-tailoring.mjs's header for the full account.
+  const results = verifyLacerteSubstitution(D);
+  assert.ok(results.length === 5, "checked all 5 non-PJM orders");
+  for (const r of results) assert.ok(!r.tooShort, `${r.item}: LaCerte statement extraction looks truncated (${r.stmtLen} chars)`);
+  const bad = results.filter((r) => !r.ok);
+  assert.deepEqual(bad.map((r) => r.item), [], `unsubstituted "PJM" mention(s): ${bad.map((r) => `${r.item}: ${r.mentions.join(" | ")}`).join("; ")}`);
+});
+
+test("verify-commish-tailoring's KNOWN_OCR_NOISE allowlist has no stale entries", () => {
+  // Each entry documents a specific, verified false positive (footnote/page-break splicing). A stale
+  // entry — one that no longer matches the current order text — means either the underlying text
+  // changed (worth a second look) or the entry was never real; either way it shouldn't sit there
+  // silently suppressing nothing forever.
+  const stale = verifyNoiseAllowlist();
+  assert.deepEqual(stale, [], `stale KNOWN_OCR_NOISE entries: ${stale.map((s) => `${s.key}/${s.item}: "${s.substring}"`).join("; ")}`);
 });
 
 test("docket Section IV briefing questions: every shown question is verbatim, and the cited § IV page is right", () => {
@@ -966,6 +990,23 @@ test("every docket has a static page, generated and in sync", () => {
     assert.ok(existsSync(abs), `${rel} exists (regenerate: node tools/build-docket-pages.mjs)`);
     assert.equal(readFileSync(abs, "utf8"), html, `${rel} is stale; regenerate with: node tools/build-docket-pages.mjs`);
   }
+});
+
+test("docket pages: the public-comments section appears on the six show-cause dockets and never on E-2", () => {
+  // The key invariant of the RTO/ISO comments feature, previously untested (flagged in the 2026-08-04 PR
+  // review): the six §206 dockets carry an rg:-derived comments section, and E-2 (a different docket the
+  // rg: vocabulary was never designed to distinguish from E-7's "pjm") carries none — not an empty
+  // placeholder, genuinely absent. Also checks comment-derived text goes through esc(): a dropped filer
+  // name containing "&" or "<" would prove the escaping regressed rather than just eyeballing the HTML.
+  const HEADING = "What the public comment record says about";
+  for (const d of D.dockets) {
+    const html = buildDocketPage(d, D);
+    assert.ok(html.includes(HEADING), `${d.item} (${d.rto}) is missing its public-comments section`);
+    assert.ok(html.includes(`about ${d.rto}`), `${d.item}'s comments section doesn't name ${d.rto}`);
+    assert.ok(html.includes("#comments/issue?id=rg%3A"), `${d.item}'s comments section is missing its By-issue deep link`);
+  }
+  const e2Html = buildDocketPage(D.colocation, D);
+  assert.ok(!e2Html.includes(HEADING), "E-2 must not carry a public-comments section (the rg: lens can't distinguish it from E-7's PJM)");
 });
 
 test("each docket page is unique, self-canonical, and substantial", () => {

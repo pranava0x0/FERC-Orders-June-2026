@@ -1192,14 +1192,17 @@ window.FERC_DATA = (function () {
   };
 
   /* ---------------------------------------------------------------- OVERVIEW */
-  // The five concurring statements are attached to every order and are, in full, VERBATIM across all six
-  // (confirmed by a header-to-header full-statement diff against the fuzzy matcher tools/verify-quotes.mjs
-  // already uses — not just the pre-selected quotes; tools/verify-commish-tailoring.mjs re-runs this check
-  // as a permanent regression guard). So the emphasis (gist) and themed quotes live here once; each docket
-  // cites the same text's page in its OWN order via docket.commishPages. The one confirmed exception —
-  // Chang's CAISO (E-10) footnote — is NOT reflected here; it lives additively on that docket's own
-  // `commishAside` field (see the E-10 docket entry and commishBlock() in app.js), since it augments
-  // Chang's row rather than replacing it.
+  // The five concurring statements are attached to every order. THREE of five (Swett, Rosner, See) are,
+  // in full, VERBATIM across all six (confirmed by a header-to-header full-statement diff against the
+  // fuzzy matcher tools/verify-quotes.mjs already uses — not just the pre-selected quotes;
+  // tools/verify-commish-tailoring.mjs re-runs this check as a permanent regression guard). The other two
+  // are NOT fully verbatim, though the specific quotes chosen below still are: Chang's CAISO (E-10)
+  // statement carries one extra footnote (additive, lives on that docket's own `commishAside` field —
+  // see the E-10 docket entry and commishBlock() in app.js, since it augments her row rather than
+  // replacing it), and LaCerte's statement systematically names the respondent RTO/TOs directly in
+  // several sentences per order (verified by verifyLacerteSubstitution() in the same tool) — none of
+  // which happen to be among his quotes below, so what's displayed remains accurate even though his
+  // `sources.written` claim (unlike the other four) is not "verbatim in all six orders."
   const commissioners = [
     {
       key: "swett", name: "Laura V. Swett", role: "Chairman", short: "Why §206, not a rulemaking",
@@ -1301,7 +1304,7 @@ window.FERC_DATA = (function () {
       quote: "I am prepared to play jurisdictional hardball, if needed",
       quotePg: 113,
       gist: "The sharpest tone. Invites region-specific §205 proposals and offers operators the ‘first pen,’ but says he is ‘prepared to play jurisdictional hardball’ — if they don’t file real fixes, FERC will ‘dictat[e] the solutions for you.’ Ties the orders to state Ratepayer Protection Pledges.",
-      sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 111–114; verbatim in all six orders", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption) — remarks deferred to the written statement" },
+      sources: { written: "Concurring statement, 195 FERC ¶ 61,211 (PJM) pp. 111–114; the passages quoted below are verbatim in all six orders, but the statement as a whole is NOT — LaCerte names the respondent RTO/TOs directly in several other sentences per order (e.g. \"I expect PJM to design proposals\" becomes \"I expect CAISO and/or the Participating Transmission Owners to design proposals\" in E-10; confirmed by tools/verify-commish-tailoring.mjs's verifyLacerteSubstitution check)", spoken: "FERC open meeting, June 18, 2026 (youtube.com/watch?v=r7y-iDn-rkU, auto-caption) — remarks deferred to the written statement" },
       summary: "LaCerte strikes the sharpest tone. He frames the moment as an inflection point and offers the RTOs the first wielder of the pen under §205 to bring region-specific fixes, with flexibility on timing, but says that freedom comes with responsibility. If they do not file adequate proposals, he is prepared to play jurisdictional hardball and FERC will dictate the solutions. He backs deploying alternative transmission technologies now and asks state commissions to ensure their retail tariffs insulate ratepayers from data-center cost impacts.",
       themes: [
         { name: "An inflection point that outpaces the system", desc: "Large-load growth is faster than the grid can handle; the orders choose decisive change over gridlock and half-measures.", quotes: [
