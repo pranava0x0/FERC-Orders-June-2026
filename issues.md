@@ -270,19 +270,35 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   applied before `activate()` and is purely a before-first-render handoff. Same class as the PR #12
   permalink lesson: if the URL is authoritative, nothing else may quietly outvote it.
 
-- **2026-08-03 · provenance · the 2026-06-26 "largely common, with some per-order tailoring" hedge itself
-  overstated the tailoring.** That fix corrected an "identical across all six orders" overclaim after a
-  spot-check found mismatches — but the spot-check had a false-positive problem (footnote/page-break
-  splices in the OCR text register as "different" to a naive substring check). Redone with the project's
-  own LCS-tolerant `carries()` matcher, correctly normalized on both sides this time: **4 of 5
-  commissioners' statements are fully verbatim across all six orders; the 5th (Chang) has exactly one
-  genuine addition**, a CAISO-specific footnote on E-10 (p. 111, on the Order No. 888 NITS framework).
-  Root cause: **data** (an under-tested verification produced the wrong *scope* of correction, not just
-  a wrong claim). Fix: `commishAside` field on E-10's docket entry (additive — renders alongside the
-  normal five-commissioner list via `commishBlock()`, doesn't replace it, unlike the `commish` override
-  built for E-2), corrected `sources.written` text per commissioner, and a new permanent regression tool
-  `tools/verify-commish-tailoring.mjs` (wired into `tests/data.test.mjs`) so this stays true instead of
-  being a one-time manual finding. Status: **Fixed**.
+- **2026-08-03/04 · provenance · the 2026-06-26 "largely common, with some per-order tailoring" hedge
+  was itself wrong, and my first two re-verification attempts were each wrong in the opposite direction
+  before landing on the true scope.** That 2026-06-26 fix corrected an "identical across all six orders"
+  overclaim after a spot-check found mismatches — but the spot-check had a false-positive problem
+  (footnote/page-break splices register as "different" to a naive substring check). Redone
+  (2026-08-03) with the project's own LCS-tolerant `carries()` matcher: initially reported "4 of 5
+  commissioners fully verbatim, only Chang tailored" — this was ALSO wrong, because `carries()` proves a
+  sentence is *present* in the target, not that it's *identical*; a sentence with one phrase swapped
+  (a region name) still shares long runs with the original on both sides of the swap and passes a
+  presence-only check. An independent PR review (2026-08-04) re-derived the claim with a different
+  method (word-level LCS) and found LaCerte's statement genuinely, systematically names the respondent
+  RTO directly in ~4 sentences per order — confirmed against the raw text. **True scope: 3 of 5
+  commissioners (Swett, Rosner, See) fully verbatim; Chang has one genuine addition (a CAISO footnote,
+  E-10 p. 111); LaCerte is NOT verbatim — he names the RTO/TOs directly, every order.** (A follow-up
+  attempt to fix this generally, by requiring exact sentence-for-exact-sentence matches instead of
+  presence, was itself reverted — different orders have different page counts, so identical prose gets
+  interrupted by page-break artifacts at different points per order, and exact-matching flagged dozens
+  of genuinely-identical sentences as false positives.) Root cause: **data**, twice over — the original
+  spot-check's false positives, and this session's own first-pass verification tool sharing the same
+  presence-vs-identity blind spot as everything before it. Fix: `commishAside` field on E-10's docket
+  entry for Chang's footnote (additive — renders alongside the normal five-commissioner list via
+  `commishBlock()`, doesn't replace it, unlike the `commish` override built for E-2); corrected
+  `sources.written` text per commissioner, including LaCerte's; and `tools/verify-commish-tailoring.mjs`
+  now runs both the general bidirectional presence check AND a targeted, direct check specifically for
+  LaCerte's confirmed RTO-naming pattern (`verifyLacerteSubstitution`), rather than one generic
+  classifier trying to catch both failure modes at once. Wired into `tests/data.test.mjs`. Status:
+  **Fixed** — none of the site's *displayed* quotes were ever affected (LaCerte's swapped sentences
+  aren't among his curated theme quotes), only the general "verbatim" provenance claim about his
+  statement as a whole.
 
 - **2026-08-03 · provenance · site claimed "no circuit-court petition" against the PJM co-location
   predecessor orders; four were filed in April 2026.** The `e2` track's 2026-07-28 status line said "Our

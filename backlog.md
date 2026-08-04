@@ -295,6 +295,18 @@
   (plus its route-parsing branch) would remove the trap for the next person who reads the code before the
   UI. Logged in `uat.md`'s "Patterns noticed."
 
+- **low — minor cleanup items from the 2026-08-04 PR #17 review, not worth blocking the merge for.**
+  (1) `tools/verify-commish-tailoring.mjs`'s `statementSpans(item)` is called inside the per-commissioner
+  loop — 25 re-reads/re-parses of ~200KB order text files instead of 6 (once per order). Hoist it above
+  the commissioner loop. (2) `tools/build-docket-pages.mjs`'s `pickRepresentative(letters, n = 4)` never
+  has `n` passed by any caller and isn't exported, so it can't be unit-tested directly — export it or
+  drop the unused parameter. (3) A `docs/data/comments/issues/rg-<key>.json` with an empty `letters: []`
+  would still render a heading and an empty list; guard on `region.letters.length` alongside the
+  `existsSync` check in `loadRegionComments`. (4) Several `procedural.filings` rows describe multiple
+  filers in the `gist` (e.g. EL26-67's abeyance step covers both PJM and the Indicated PJM Transmission
+  Owners) while carrying one `accession` — the prose is honest about it, but it's lossy against the
+  one-record-one-origin convention; consider an `accessions: []` array if this recurs.
+
 ### Critique / analysis leads (from the 2026-06-24 news refresh)
 
 - **medium** — Develop the **non-RTO coverage gap** into an explicit "what's *not* covered" note:

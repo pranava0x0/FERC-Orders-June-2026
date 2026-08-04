@@ -293,3 +293,40 @@ holds comfortably. No workflow, no Task tool.
   inconsistency found (not a bug), logged to `backlog.md`. The failed-agent tokens (238,988) alone cost
   roughly 15× what the two Node scripts that replaced its job actually needed — the sharpest single
   data point yet for "inline before subagent" on exact-verification tasks.
+
+### PR #17 review round — Codex (automated) + one resumed code-reviewer agent
+
+- **Codex's GitHub review** (automatic, no spawn on my end) caught a real P2 the moment the PR opened:
+  `verify-commish-tailoring.mjs` only checked for *additions*, never *omissions* — an empty/truncated
+  extraction would silently report `ok: true`. Fixed same-session (bidirectional check + a length floor),
+  which in turn surfaced a genuine extraction-boundary bug (a footnote truncated along with a
+  commissioner's signature block). Free, fast, and worth the reply-in-thread to close the loop.
+  164,542 subagent tokens, 23 tool uses, ~411s — the session's own rate limit interrupted it once (see
+  above) and it resumed cleanly via `SendMessage` to the same agent id, continuing from its transcript
+  rather than restarting from zero.
+- **The resumed `code-reviewer` agent found the session's most important bug**: LaCerte's "verbatim in
+  all six orders" claim was false — confirmed 97% confidence with specific before/after quote pairs, and
+  independently verified by direct grep before touching any code. It also correctly identified *why*:
+  the `carries()` matcher's ~60-char LCS threshold proves presence, not identity, so a phrase-swapped
+  sentence still passes. Separately flagged (and I fixed) an inverted coverage statistic ("40% carries
+  no region tag" should have read "60%") and zero test coverage on the new per-docket comment section's
+  key invariant (E-2 must never render one). Also explicitly cleared several things I'd have otherwise
+  spent time re-checking myself: `commishAside` vs `commish` handling, the E-2 exclusion logic, XSS
+  escaping, and the `build-seo.mjs` Dataset regex — all "verified clean, no issue found," stated plainly
+  rather than padded with minor nits. That mattered as much as the findings: it told me where NOT to
+  spend the remaining time.
+- **My own fix for the LaCerte finding overcorrected once before landing.** First attempt: rewrite the
+  general sentence check to require exact matches instead of `carries()`-style presence. That broke the
+  other direction — different orders have different page counts, so genuinely-identical prose gets
+  interrupted by page-break artifacts at different points per order, and exact-matching flagged dozens
+  of real matches as false "modifications." Reverted to the proven bidirectional presence check as the
+  general safety net, and added one narrow, targeted check for LaCerte's specific confirmed pattern
+  instead of trying to build one classifier that had to get both failure modes right at once. Full
+  account in `issues.md` and `CLAUDE.md`.
+- **Net for the review round:** 1 automated review (free) + 1 resumed agent (164,542 tokens, continuing
+  a session interrupted by its own rate limit rather than restarting) found 2 real bugs neither the
+  109-test suite nor my own manual verification had caught, plus cleared several things as genuinely
+  fine. Tests 109 → 112 (3 new: LaCerte substitution, noise-allowlist rot guard, E-2 comment-section
+  exclusion). The independent review's method (word-level LCS from scratch) differed from every one of
+  my own re-checks (all presence-based), which is specifically what let it see past a blind spot that
+  survived a full rebuild, a bidirectional check, and manual grep-verification of individual examples.
