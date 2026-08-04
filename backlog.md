@@ -287,6 +287,26 @@
   padding/min-height) — below the 44 px guideline. Pre-existing (commit `735f776`), surfaced by the
   2026-06-26 review. Fix: add `padding: 11px 0; min-height: 44px; display: flex; align-items: center;`.
 
+- **low — the "Discourse" tab's hash id is `news`, not `discourse`.** Surfaced by the 2026-08-03 first
+  `ferc-uat` run: `app.js`'s `TABS` array names the sixth tab `news` even though its visible label and
+  every doc reference to it say "Discourse." Typing `#discourse` by hand silently no-ops (stays on
+  whatever tab was already active) instead of erroring, which cost real debugging time this run. Not
+  user-facing (nobody hand-types tab hashes), so low priority — but a one-line rename of the `TABS` entry
+  (plus its route-parsing branch) would remove the trap for the next person who reads the code before the
+  UI. Logged in `uat.md`'s "Patterns noticed."
+
+- **low — minor cleanup items from the 2026-08-04 PR #17 review, not worth blocking the merge for.**
+  (1) `tools/verify-commish-tailoring.mjs`'s `statementSpans(item)` is called inside the per-commissioner
+  loop — 25 re-reads/re-parses of ~200KB order text files instead of 6 (once per order). Hoist it above
+  the commissioner loop. (2) `tools/build-docket-pages.mjs`'s `pickRepresentative(letters, n = 4)` never
+  has `n` passed by any caller and isn't exported, so it can't be unit-tested directly — export it or
+  drop the unused parameter. (3) A `docs/data/comments/issues/rg-<key>.json` with an empty `letters: []`
+  would still render a heading and an empty list; guard on `region.letters.length` alongside the
+  `existsSync` check in `loadRegionComments`. (4) Several `procedural.filings` rows describe multiple
+  filers in the `gist` (e.g. EL26-67's abeyance step covers both PJM and the Indicated PJM Transmission
+  Owners) while carrying one `accession` — the prose is honest about it, but it's lossy against the
+  one-record-one-origin convention; consider an `accessions: []` array if this recurs.
+
 ### Critique / analysis leads (from the 2026-06-24 news refresh)
 
 - **medium** — Develop the **non-RTO coverage gap** into an explicit "what's *not* covered" note:

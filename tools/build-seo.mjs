@@ -168,7 +168,19 @@ export function buildIndexHtml(html, D) {
       2,
     ) +
     `\n  </script>`;
-  if (!out.includes(DATASET_MARK)) out = out.replace("</head>", `${dataset}\n</head>`);
+  // Replace an existing Dataset script tag in place (its dateModified must track fresh sweeps, not just
+  // get baked once and left stale forever); only fall back to inserting before </head> the first time.
+  // Leading whitespace is part of the match (not just `<script...>` onward) so a re-run replaces the
+  // WHOLE indented block including its own indent, rather than leaving the old indent in front of the
+  // freshly-templated one and compounding it deeper on every regeneration.
+  const scriptRe = /[ \t]*<script type="application\/ld\+json">\n[\s\S]*?\n[ \t]*<\/script>/g;
+  let replaced = false;
+  out = out.replace(scriptRe, (block) => {
+    if (replaced || !block.includes(DATASET_MARK)) return block;
+    replaced = true;
+    return dataset;
+  });
+  if (!replaced) out = out.replace("</head>", `${dataset}\n</head>`);
   return out;
 }
 

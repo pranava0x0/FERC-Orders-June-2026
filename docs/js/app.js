@@ -598,9 +598,15 @@
       accSection("Regional distinctions at a glance", "The variations FERC says the orders were designed to reflect.", reg, false, (D.regional || []).length);
   }
 
-  // Per-order commissioner block. For the six §206 orders the concurrences are largely common, so
-  // each row shows the commissioner's substantive gist + headline quote, cited to THIS order's page.
-  // E-2 carries a `commish` override (only Chang wrote separately) with its own order-specific read.
+  // Per-order commissioner block. The displayed quote/gist for each commissioner is verbatim in all six
+  // orders even though two of the five FULL statements are not (see tools/verify-commish-tailoring.mjs):
+  // Chang's carries one extra CAISO-specific footnote, and LaCerte's names the respondent RTO directly
+  // elsewhere in his statement — neither swapped/added passage happens to be among the quotes shown
+  // here, so each row's own text is still accurate cited to THIS order's page. E-2 carries a `commish`
+  // override (only Chang wrote separately there) with its own order-specific read, REPLACING the
+  // five-row list. `commishAside` is different: it ADDS to a normal row (all five still render) rather
+  // than replacing the list — used for E-10, where Chang's statement carries that CAISO-specific
+  // footnote the other five orders don't have.
   function commishBlock(d, so) {
     if (!D.commissioners) return "";
     var override = d.commish || null;
@@ -608,24 +614,29 @@
       return override ? override[c.key] : (d.commishPages && d.commishPages[c.key]);
     });
     if (!list.length) return "";
+    function pageLinks(pg, name) {
+      return pg ? '<span class="commish-cite"><span class="dir-para mono">p. ' + pg + "</span>" +
+        '<a class="cite-link" href="' + esc(d.pdf) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open ' + esc(name) +
+        "’s statement in the committed " + esc(d.item) + " order PDF at page " + pg + '" title="Committed PDF, opens inline to p. ' + pg +
+        '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
+        '<a class="cite-link" href="' + esc(so.url) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov ' + esc(d.item) +
+        " order at page " + pg + '" title="Official ferc.gov source, page ' + pg + '">gov <span class="ext" aria-hidden="true">↗</span></a></span>' : "";
+    }
     var rows = list.map(function (c) {
       var ov = override && override[c.key];
       var pg = ov ? ov.pg : d.commishPages[c.key];
       var gist = ov ? ov.gist : c.gist;
       var quote = ov ? ov.quote : c.quote;
-      var links = pg ? '<span class="commish-cite"><span class="dir-para mono">p. ' + pg + "</span>" +
-        '<a class="cite-link" href="' + esc(d.pdf) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open ' + esc(c.name) +
-        "’s statement in the committed " + esc(d.item) + " order PDF at page " + pg + '" title="Committed PDF, opens inline to p. ' + pg +
-        '">PDF <span class="ext" aria-hidden="true">↗</span></a>' +
-        '<a class="cite-link" href="' + esc(so.url) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer" aria-label="Open the official ferc.gov ' + esc(d.item) +
-        " order at page " + pg + '" title="Official ferc.gov source, page ' + pg + '">gov <span class="ext" aria-hidden="true">↗</span></a></span>' : "";
+      var aside = !ov && d.commishAside && d.commishAside[c.key];
+      var asideBlock = aside ? '<div class="commish-aside"><p class="commish-aside-label">Specific to ' + esc(d.rto) + "</p>" +
+        pageLinks(aside.pg, c.name) + '<div class="commish-quote">“…' + esc(aside.note) + '…”</div></div>' : "";
       return '<div class="commish-row"><div class="commish-row-head"><span class="commish-name">' + esc(c.name) +
-        '</span><span class="commish-tag">' + esc(c.short) + "</span>" + links + "</div>" +
+        '</span><span class="commish-tag">' + esc(c.short) + "</span>" + pageLinks(pg, c.name) + "</div>" +
         (gist ? '<p class="commish-rgist">' + esc(gist) + "</p>" : "") +
-        '<div class="commish-quote">“…' + esc(quote) + '…”</div></div>';
+        '<div class="commish-quote">“…' + esc(quote) + '…”</div>' + asideBlock + "</div>";
     }).join("");
     var note = override ? "" :
-      '<p class="commish-block-note">The five concurrences are largely common across the six orders; full themes and quotes are on the Overview tab. The page cites here open <em>this</em> order’s PDF.</p>';
+      '<p class="commish-block-note">The quotes above are verbatim across the six orders; full themes and quotes are on the Overview tab. The page cites here open <em>this</em> order’s PDF.</p>';
     return '<details class="dreg dcom"><summary>What the commissioners said in this order (' + list.length + ")</summary>" +
       note + '<div class="commish-rows">' + rows + "</div></details>";
   }
@@ -870,6 +881,14 @@
         '</span><span class="cm-round-d mono">' + esc(fmtD(r.first)) + " to " + esc(fmtD(r.last)) + "</span></a>";
     }).join("") + "</div>";
 
+    // which RTO/ISO each comment specifically name-checks (the rg: bin lens) — computed in
+    // comments-data.js but unread until now; each chip opens the By-issue reader on that region.
+    var regions = (CM.regions && CM.regions.length) ? '<div class="cm-regions">' + CM.regions.map(function (r) {
+      return '<a class="cm-region" href="#' + window.CommentsRoute.serialize({ sub: "issue", params: { id: "rg:" + r.key } }) +
+        '" title="Read every comment engaging ' + esc(r.label) + '"><span class="cm-region-n mono">' + r.count +
+        '</span><span class="cm-region-l">' + esc(r.label) + "</span></a>";
+    }).join("") + "</div>" : "";
+
     // respondent types: count + the full distinct-organization roster per camp (collapse past 10)
     var orgsByBucket = {};
     CM.list.forEach(function (c) { (orgsByBucket[c.bucket] = orgsByBucket[c.bucket] || []).push(c.org); });
@@ -1107,6 +1126,7 @@
           '<span class="cm-pm-promo-t">See what the June 18 orders did with each issue, and where it goes next on the §206 clock <span aria-hidden="true">→</span></span></a>'
         : "") +
       statRow + coverageLine + rounds +
+      (regions ? head("Which RTO/ISO each comment engages", "Comments that specifically name-check one of the six regions, drawn from the same audit as the reform-principle read below. A floor, not a full count: roughly 60% of the corpus carries no region tag at all, either because the letter argues at the policy level or because the audit pass didn't catch a region-specific mention. Open a region to read every comment engaging it.") + regions : "") +
       head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position; read from the filer's own words. Across " + CM.summarized2 + " audited filings. Follow a principle to read the record on it.") + stanceBars +
       head("Where each stakeholder type stands", "The same audited stances, split by camp: each cell is a stakeholder type's net position on one reform (support minus oppose), the number its audited letters engaging it. Support is broad; the friction shows where cells turn amber (contested). Top twelve camps by engagement. Open a cell to read that reform by issue.") + consensusMap +
       accSection("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies: a measured keyword prevalence, not a coding of each filer's position.", themes, false, (CM.themes || []).length) +
