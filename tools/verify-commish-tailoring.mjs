@@ -45,10 +45,27 @@ const NONPJM = ["E-8", "E-9", "E-10", "E-11", "E-12"];
 // (2026-08-03) against the raw OCR text that each of these is the SAME footnote/sentence as the PJM
 // baseline, just spliced differently — not a data.js `commishAside`, because there is no actual content
 // difference to document. Matched by a short, distinctive substring so a real future change still trips it.
+// False positives found by the OMISSION direction of this check (added after a 2026-08-04 PR review
+// caught that the original addition-only check would silently pass an empty/truncated extraction —
+// see MIN_STMT_LEN below for the other half of that fix). Two distinct mechanisms, both verified
+// against the raw OCR text, neither a real content difference:
+//  - swett/E-10: `statementSpans()`'s "strip the trailing signature block" regex is too aggressive. A
+//    footnote that continues past where a commissioner's printed signature sits on the page (a normal
+//    PDF page-layout artifact) gets cut along with the real signature block. Confirmed present in
+//    CAISO's raw text (sed on the surrounding lines), positioned textually AFTER the "Laura V. Swett /
+//    Chairman" signature — that's the reordering, not a missing footnote. Affects only this one pair;
+//    the comprehensive bidirectional check running uniformly over all 25 pairs would have caught any
+//    other instance, so this is documented rather than fixed at the regex level.
+//  - chang/E-8, lacerte/E-9 + E-11: long, citation-heavy footnote sentences (case cites with pincites,
+//    "id." chains) get fragmented differently by each order's own page breaks and footnote renumbering
+//    — badly enough that no single contiguous run reaches carries()'s LCS threshold, even though grep
+//    confirms the text is present verbatim in every order checked ("PG&E and Smart Wires" in MISO;
+//    "535 U.S. 17" in both SPP and ISO-NE, alongside their PJM occurrence).
 const KNOWN_OCR_NOISE = {
-  swett: { "E-8": ["individual show cause 8 See"] },
+  swett: { "E-8": ["individual show cause 8 See"], "E-10": ["is a natural consequence of complex, nuanced efforts", "will continue to evaluate Commission directives"] },
   see: { "E-10": ["195 FERC ¶ 61,209"] },
-  lacerte: { "E-8": ["Kenny Rogers, The Gambler"] },
+  chang: { "E-8": ["PG&E and Smart Wires"] },
+  lacerte: { "E-8": ["Kenny Rogers, The Gambler"], "E-9": ["535 U.S. 17"], "E-11": ["535 U.S. 17"] },
 };
 
 // Documented exceptions: commissioner key -> docket item -> the exact additional note(s) already
@@ -99,22 +116,41 @@ function sentences(text) {
     .filter((s) => (s.match(/\d/g) || []).length < s.length * 0.15);
 }
 
+// Real statements run 9,200-16,900 chars (checked 2026-08-03 across all 30 commissioner×order pairs);
+// 3,000 is a floor with wide margin. Below it, `statementSpans()` almost certainly failed to find that
+// commissioner's header (a truncated/empty `stmt` has nothing to compare, so the addition-only check
+// below would silently report `ok: true` on a statement that was never actually read — caught in review).
+const MIN_STMT_LEN = 3000;
+
 export function verifyCommishTailoring(D = loadData()) {
   const pjmSpans = statementSpans("E-7");
   const allowed = allowedAsides(D);
-  const results = []; // { key, item, novel: [sentence,...], allowedCount, ok }
+  const results = []; // { key, item, novel, unexplained, omitted, tooShort, allowedCount, ok }
 
   for (const key of KEYS) {
-    const pjmText = loose(pjmSpans[key] || "");
+    const pjmFull = pjmSpans[key] || "";
+    const pjmText = loose(pjmFull);
+    const pjmSentences = sentences(pjmFull);
     for (const item of NONPJM) {
       const spans = statementSpans(item);
       const stmt = spans[key] || "";
+      const stmtText = loose(stmt);
       const noise = KNOWN_OCR_NOISE[key]?.[item] || [];
+      const tooShort = stmt.length < MIN_STMT_LEN;
+
+      // Additions: sentences in the non-PJM statement not found in PJM.
       const novel = sentences(stmt).filter((s) => !carries(s, pjmText)).filter((s) => !noise.some((n) => s.includes(n)));
       const allowedNotes = allowed[key]?.[item] || [];
       // A novel sentence is "explained" if it fuzzy-matches one of this docket's documented aside notes.
       const unexplained = novel.filter((s) => !allowedNotes.some((note) => carries(note, loose(s)) || carries(s, loose(note))));
-      results.push({ key, item, novel, unexplained, allowedCount: allowedNotes.length, ok: unexplained.length === 0 });
+
+      // Omissions (the reverse direction): every substantive PJM sentence must also carry into the
+      // non-PJM statement. Without this, an empty or truncated `stmt` produces zero `novel` entries and
+      // passes — omissions are never "explained" by a commishAside (that field documents additions only).
+      const omitted = tooShort ? [] : pjmSentences.filter((s) => !carries(s, stmtText)).filter((s) => !noise.some((n) => s.includes(n)));
+
+      const ok = !tooShort && unexplained.length === 0 && omitted.length === 0;
+      results.push({ key, item, novel, unexplained, omitted, tooShort, stmtLen: stmt.length, allowedCount: allowedNotes.length, ok });
     }
   }
   return results;
@@ -130,7 +166,9 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
     console.log("\nUnexplained divergence(s) — either new tailoring to add as a commishAside, or a false positive to investigate:");
     for (const r of bad) {
       console.log(`\n  ✗ ${r.key} / ${r.item}:`);
-      for (const s of r.unexplained) console.log(`      • ${s.slice(0, 200)}${s.length > 200 ? "…" : ""}`);
+      if (r.tooShort) console.log(`      ⚠ statement extraction suspiciously short (${r.stmtLen} chars, floor ${MIN_STMT_LEN}) — header regex likely failed to match; nothing meaningfully compared`);
+      for (const s of r.unexplained) console.log(`      + added: ${s.slice(0, 200)}${s.length > 200 ? "…" : ""}`);
+      for (const s of r.omitted) console.log(`      - missing: ${s.slice(0, 200)}${s.length > 200 ? "…" : ""}`);
     }
     console.log(`\nFAIL — ${bad.length} unexplained pair(s).`);
     process.exit(1);
