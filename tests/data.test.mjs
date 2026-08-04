@@ -9,6 +9,7 @@ import vm from "node:vm";
 import { stampAssets } from "../tools/stamp-assets.mjs";
 import { buildIndexHtml, buildSitemap } from "../tools/build-seo.mjs";
 import { pagesFor, allDockets, slugFor } from "../tools/build-docket-pages.mjs";
+import { verifyCommishTailoring } from "../tools/verify-commish-tailoring.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const code = readFileSync(join(here, "..", "docs", "js", "data.js"), "utf8");
@@ -178,10 +179,11 @@ const orderText = (item) => normOrder(readFileSync(join(here, "..", "sources", "
 
 test("commissioner themed summaries: written quotes are verbatim in the cited (PJM) order", () => {
   // The expandable per-commissioner read (themes + quotes) must trace to source: every WRITTEN quote is
-  // verbatim in the cited canonical copy (the PJM order, 195 FERC ¶ 61,211). NB: an all-six check showed
-  // the concurrences are largely common but NOT identical across orders (a few sentences are tailored per
-  // region), so the displayed claim is "largely common, with per-order tailoring" and quotes cite the PJM
-  // copy. Spoken quotes come from the open-meeting auto-caption transcript: labeled, not verbatim-checked.
+  // verbatim in the cited canonical copy (the PJM order, 195 FERC ¶ 61,211). A 2026-08-03 full-statement
+  // diff against all six orders (tools/verify-commish-tailoring.mjs, run separately below) found the
+  // concurrences ARE verbatim across all six, except one documented CAISO-specific footnote on Chang's
+  // E-10 statement (see that docket's `commishAside`) — so quotes citing the PJM copy hold for every
+  // order. Spoken quotes come from the open-meeting auto-caption transcript: labeled, not verbatim-checked.
   const pjm = orderText("E-7");
   const raw = readFileSync(join(here, "..", "sources", "text", "orders", ORDER_STEMS["E-7"] + ".txt"), "utf8");
   const parts = raw.split(/--- PAGE (\d+) ---/);
@@ -209,6 +211,22 @@ test("commissioner themed summaries: written quotes are verbatim in the cited (P
     }
   }
   assert.ok(writtenChecked >= 3, `enough written quotes verified (${writtenChecked})`);
+});
+
+test("commissioner statements: every non-PJM order matches the PJM baseline, except documented commishAside exceptions", () => {
+  // The permanent guard behind the "verbatim in all six orders" claim above: a full-statement diff (not
+  // just the pre-selected theme quotes) against every non-PJM order. Any commissioner×docket pair with
+  // unexplained novel text either needs a new `commishAside` on that docket, or flags a regression in a
+  // docket that used to be verbatim. See tools/verify-commish-tailoring.mjs for the method.
+  const results = verifyCommishTailoring(D);
+  assert.ok(results.length === 25, "checked all 5 commissioners against all 5 non-PJM orders");
+  const bad = results.filter((r) => !r.ok);
+  assert.deepEqual(bad.map((r) => `${r.key}/${r.item}`), [], `unexplained divergence(s): ${bad.map((r) => `${r.key}/${r.item}: ${r.unexplained.join(" | ")}`).join("; ")}`);
+  // And the flip side: a docket that DOES carry a commishAside must actually need it (guards against a
+  // stale aside nobody removed after an order's text changed).
+  const withAside = results.filter((r) => r.allowedCount > 0);
+  assert.ok(withAside.length >= 1, "at least one documented commishAside exists to test against");
+  for (const r of withAside) assert.ok(r.novel.length > 0, `${r.key}/${r.item} has a commishAside but no novel text was found to justify it`);
 });
 
 test("docket Section IV briefing questions: every shown question is verbatim, and the cited § IV page is right", () => {
