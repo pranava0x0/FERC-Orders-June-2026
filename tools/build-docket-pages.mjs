@@ -40,6 +40,39 @@ export function allDockets(D) {
   return [...D.dockets, D.colocation].filter(Boolean);
 }
 
+// Maps a show-cause docket item to its `rg:` (region) key in the comment corpus. The six §206 dockets
+// only — the `rg:` vocabulary was designed around the six regions (summarization-spec.md), and "pjm"
+// can't distinguish this show-cause docket (EL26-67) from the separate co-location docket (EL25-49-002,
+// item E-2), so E-2 intentionally has no entry and gets no comments section.
+const RG_KEY = { "E-7": "pjm", "E-8": "miso", "E-9": "spp", "E-10": "caiso", "E-11": "isone", "E-12": "nyiso" };
+
+function loadRegionComments(item, root) {
+  const key = RG_KEY[item];
+  if (!key) return null;
+  const path = join(root, "docs", "data", "comments", "issues", `rg-${key}.json`);
+  // `slug` (not `key`) on purpose: the JSON's own top-level `key` is already "rg:<slug>" (its full lens
+  // id), so spreading it in would silently shadow ours and double the "rg:" prefix wherever we build a
+  // deep link.
+  return existsSync(path) ? { slug: key, ...JSON.parse(readFileSync(path, "utf8")) } : null;
+}
+
+// Pick up to `n` representative letters, preferring one of each stance before repeating (so a 3-support/
+// 1-oppose docket doesn't show 3 support quotes and miss the one dissent) and falling back to filing
+// order once every stance present is covered.
+function pickRepresentative(letters, n = 4) {
+  const byStance = { support: [], oppose: [], mixed: [], neutral: [] };
+  for (const l of letters) (byStance[l.stance] || byStance.neutral).push(l);
+  const picked = [];
+  for (const stance of ["support", "oppose", "mixed", "neutral"]) {
+    if (picked.length < n && byStance[stance].length) picked.push(byStance[stance][0]);
+  }
+  for (const l of letters) {
+    if (picked.length >= n) break;
+    if (!picked.includes(l)) picked.push(l);
+  }
+  return picked;
+}
+
 function metaDescription(d) {
   const kind = d.track ? "order on rehearing" : "§206 show cause order";
   return plain(
@@ -82,13 +115,14 @@ function jsonLd(d, D) {
   return [report, crumbs].map((o) => `  <script type="application/ld+json">\n${JSON.stringify(o, null, 2)}\n  </script>`).join("\n");
 }
 
-export function buildDocketPage(d, D) {
+export function buildDocketPage(d, D, root = ROOT) {
   const all = allDockets(D);
   const slug = slugFor(d);
   const url = `${SITE}dockets/${slug}/`;
   const src = D.SOURCES[d.url];
   const isE2 = Boolean(d.track);
   const title = `FERC Docket ${d.docket}: ${d.rto} ${isE2 ? "Co-Location Order" : "Large Load Show Cause Order"} (Item ${d.item})`;
+  const region = loadRegionComments(d.item, root);
 
   const dirItems = (d.dir || [])
     .map(
@@ -112,6 +146,31 @@ export function buildDocketPage(d, D) {
 
   const askItems = (d.asks || []).map((a) => `        <li>${esc(a)}</li>`).join("\n");
   const roster = (d.respondentList || []).map((r) => esc(r)).join(" · ");
+
+  // Public comments that specifically name-check this RTO (the `rg:` bin lens). Coverage caveat stated
+  // plainly rather than left implicit: only ~40% of the RM26-4 corpus carries a region tag at all, so this
+  // is a floor on engagement, not a full count of every comment relevant to this docket.
+  const commentSection = region
+    ? `\n    <h2>What the public comment record says about ${esc(d.rto)}</h2>\n` +
+      `    <p class="dk-comments-note">${region.stances.total} of the RM26-4 record's public comments name-check ${esc(d.rto)} specifically ` +
+      `(${region.stances.support} support · ${region.stances.oppose} oppose · ${region.stances.mixed} mixed · ${region.stances.neutral} neutral). ` +
+      `That's a floor, not a full count: only about 40% of the corpus carries a region tag at all, so a comment that discusses ${esc(d.rto)} ` +
+      `without the audit pass catching a region-specific mention won't appear here.</p>\n` +
+      `    <ul class="dk-quotes dk-comment-quotes">\n` +
+      pickRepresentative(region.letters)
+        .map((l) => {
+          const q = l.quotes && l.quotes[0];
+          const pg = l.pages && l.pages[0];
+          return (
+            `        <li>\n          <p class="dk-topic">${esc(l.org)} <span class="dk-cite mono">${esc(l.stance)}</span></p>\n` +
+            (q ? `          <blockquote>“${esc(q)}”${pg ? ` <span class="dk-cite mono">p. ${esc(pg)}</span>` : ""}</blockquote>\n` : "") +
+            `        </li>`
+          );
+        })
+        .join("\n") +
+      `\n    </ul>\n` +
+      `    <p><a href="../../#comments/issue?id=${encodeURIComponent("rg:" + region.slug)}">See all ${region.stances.total} comments about ${esc(d.rto)} →</a></p>\n`
+    : "";
 
   const siblings = all
     .filter((x) => x.item !== d.item)
@@ -192,7 +251,7 @@ ${dirItems}
     <ul class="dk-list">
 ${regItems}
     </ul>
-${briefPage ? `\n    <h2>Section IV briefing questions</h2>\n    <p>This order poses its briefing questions at page ${briefPage} of the committed PDF: <a href="../../${esc(d.pdf)}#page=${briefPage}">open at §&nbsp;IV</a>. The questions are templated across the six show cause orders; the full set, and what the public record says on each, is in the <a href="../../#comments">comment record</a>.</p>` : ""}
+${commentSection}${briefPage ? `\n    <h2>Section IV briefing questions</h2>\n    <p>This order poses its briefing questions at page ${briefPage} of the committed PDF: <a href="../../${esc(d.pdf)}#page=${briefPage}">open at §&nbsp;IV</a>. The questions are templated across the six show cause orders; the full set, and what the public record says on each, is in the <a href="../../#comments">comment record</a>.</p>` : ""}
 
     <h2>Respondents named in the order</h2>
     <p class="dk-roster">${roster}</p>
@@ -220,7 +279,7 @@ export function pagesFor(D, root = ROOT) {
   for (const d of allDockets(D)) {
     const slug = slugFor(d);
     const dir = join(root, "docs", "dockets", slug);
-    out.set(join("dockets", slug, "index.html"), stampAssets(buildDocketPage(d, D), root, dir));
+    out.set(join("dockets", slug, "index.html"), stampAssets(buildDocketPage(d, D, root), root, dir));
   }
   return out;
 }
