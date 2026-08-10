@@ -58,6 +58,27 @@ Tests are **82/82 green** at this commit; the work so far is purely additive.
 **Still outstanding:** the post-Aug-17 refresh (run `REFRESH.md` end to end on the six show-cause
 filings and the E-2 compliance filing). That is scheduled work, and the real test of this plan.
 
+**Session 2026-08-03 — first full REFRESH.md run (logged here retroactively; the prior session ended
+before writing this entry).** eLibrary's Cloudflare gate crossed for the first time via the Control_Chrome
+browser bridge: all six 30-day generation-adequacy reports and all six abeyance motions confirmed
+`filed-verified` with accessions. `elibrary0803` source added; `tracks`, `timeline` and
+`procedural.filings` updated. Commissioner-tailoring bug found and fixed (see `issues.md` 2026-08-03/04).
+
+**Session 2026-08-09 — second REFRESH.md run, first real division in the record.** Swept eLibrary
+(Control_Chrome bridge) for every filing since Aug 3 across all six §206 dockets, EL25-49, AD26-7-000,
+and the newly discovered ER26-3380 (PJM's backstop-auction docket). Findings: American Municipal Power
+is the first party to oppose an abeyance motion (MISO's, Aug 7); Silver Run Electric filed a third,
+separate abeyance motion in PJM's own docket asking for a ruling by Aug 13; the Indicated PJM
+Transmission Owners and, jointly, Exelon and FirstEnergy filed rehearing/clarification requests
+against both the PJM order and the E-2 order on July 20 (closing REFRESH.md queue item 3 from the
+2026-08-03 refresh — confirmed present only in those two dockets, absent from the other five); FERC's
+Aug 4 Federal Register notice set concrete AD26-7 dates (comments due Aug 21, ADR forum starts Sep 1);
+and PJM's capacity backstop moved from a stated intent to an actual FERC filing (Docket ER26-3380,
+filed Jul 31). Two new sources (`frgov0804`, `udbackstop`) plus `elibrary0809`. All 112 tests, the
+quote verifier, and the commissioner-tailoring verifier pass. See `REFRESH.md`'s "Gotchas learned the
+hard way" for the session's eLibrary-search lessons (multi-docket filings, pagination order, a
+boilerplate description field, and "in response to" not implying opposition).
+
 > Status: **Phases 0 to 4 shipped.** The remaining work is the recurring refresh loop, not features.
 > Companion to `ux-improvement-plan.md` (2026-07-09) and
 > `policy-analysis-spec.md` (2026-07-14); this spec supersedes the backlog's "compliance tracker,"
