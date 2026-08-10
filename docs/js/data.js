@@ -209,6 +209,36 @@ window.FERC_DATA = (function () {
       undated: true,
       note: "eLibrary's Angular docket-sheet UI (https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=<docket>) is Cloudflare-gated to automated fetch; each of the eight dockets below was read directly in an authenticated browser session on 2026-08-03 and every accession cited from it cross-checked against its own docket-sheet row (organization, filed date, description). This is the first sweep with any eLibrary-confirmed (filed-verified) accessions.",
     },
+
+    // ---- News-refresh sources (capture 2026-08-09) ----------------------------------------------
+    elibrary0809: {
+      label: "FERC eLibrary docket sheets: EL26-67 to EL26-72, EL25-49-000, AD26-7-000, ER26-3380-000",
+      org: "FERC eLibrary",
+      tier: "ferc",
+      url: "https://elibrary.ferc.gov/eLibrary/search",
+      captured: "2026-08-09",
+      undated: true,
+      note: "Same authenticated-browser route as elibrary0803, re-run against all nine dockets for every filing dated on or after August 3, 2026, plus a full re-sweep of each §206 docket and EL25-49-000 for any rehearing filing dated on or before July 20 (open queue item from the 2026-08-03 refresh). Found: American Municipal Power's answer opposing MISO's abeyance motion (20260807-5199); Silver Run Electric's separate PJM abeyance motion (20260803-5261); the Indicated PJM Transmission Owners' and, jointly, Exelon and FirstEnergy's July 20 rehearing/clarification requests against the PJM order and the E-2 order, known only through Constellation Energy's Aug 4 answer (20260804-5163), which quotes, dates and captions both requests as filed in Docket No. EL26-67-000 and Docket No. EL25-49-000 et al. respectively; a keyword search of EL26-67's own eLibrary docket sheet for the underlying requests themselves found nothing, a false negative we could not explain this session; the same keyword search found no rehearing filing in the other five §206 dockets, unverified beyond that search; and PJM's ER26-3380 backstop-auction filing (20260731-5214) with its intervenor list.",
+    },
+    frgov0804: {
+      label: "“PJM Governance and Stakeholder Reforms; Notice Requesting Post-Conference Comment”",
+      org: "FERC, via the Federal Register (91 FR 49430, Doc. 2026-15781)",
+      tier: "ferc",
+      url: "https://www.federalregister.gov/documents/2026/08/04/2026-15781/pjm-governance-and-stakeholder-reforms-notice-requesting-post-conference-comment",
+      textUrl: "https://www.federalregister.gov/documents/full_text/text/2026/08/04/2026-15781.txt",
+      captured: "2026-08-09",
+      published: "2026-08-04",
+      note: "Read from the Federal Register full-text endpoint (the HTML page bot-blocks automated fetch). Sets the post-conference comment deadline at Friday, August 21, 2026, and states that a future notice will establish an Alternative Dispute Resolution forum commencing September 1, 2026.",
+    },
+    udbackstop: {
+      label: "“PJM files backstop capacity auction plan at FERC to meet capacity shortfall”",
+      org: "Utility Dive (Ethan Howland)",
+      tier: "secondary",
+      url: "https://www.utilitydive.com/news/pjm-backstop-capacity-auction-ferc-data-centers/826792/",
+      captured: "2026-08-09",
+      published: "2026-08-03",
+      note: "Reports PJM's July 31 filing in Docket ER26-3380: a one-time reliability backstop auction (targeted for September 30 to October 21, 2026) at a $555/MW-day price cap, up to $20 billion for new power plants, targeting the same 6,831 MW shortfall as the July 14 capacity auction. Cross-checked against the docket's own filing and intervenor list on eLibrary (elibrary0809).",
+    },
   };
 
   const meta = {
@@ -217,7 +247,7 @@ window.FERC_DATA = (function () {
     items: "Items E-7 to E-12 · Dockets EL26-67-000 to EL26-72-000",
     capture: "2026-06-22",
     discourseCapture: "2026-06-29",
-    newsCapture: "2026-08-03",
+    newsCapture: "2026-08-09",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
@@ -226,6 +256,7 @@ window.FERC_DATA = (function () {
       "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.",
       "The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC issued Item E-2 (EL25-49-002), the order on rehearing that finalizes the rates and terms for the three new transmission services its PJM co-location proceeding created, the same services the six orders extend to every other region.",
       "As of the August 3, 2026 sweep, all six markets have used the tools the clock gives them. Every RTO/ISO filed its 30-day generation-adequacy report by July 20 (confirmed on eLibrary for all six). Every one of the six proceedings now carries an abeyance motion: PJM and its Transmission Owners filed five days early, on July 28; the other five followed on August 3, the deadline itself. FERC opened an answer period on PJM's motion, and large stakeholders are answering in support rather than opposing it. August 17 still carries the six show-cause filings for any docket that isn't held in abeyance, plus PJM's separate request to extend its co-location compliance deadline. Running beside all of it, FERC opened the post-conference comment period on PJM's own governance on July 30, in Docket AD26-7-000, heading toward a September reform deadline.",
+      "The August 9, 2026 sweep finds the answer period producing the record's first real division. American Municipal Power is the lone opponent, arguing MISO's abeyance motion does not meet the show cause order's own abeyance standard, and asking FERC to condition further abeyance on a 20-day stakeholder proposal rather than deny it outright. Every other answer's own filed description states support for its docket's motion, from Constellation, an industrial customer coalition, the Corporate Energy Buyers Association, a state committee and state commissions; the one ambiguously worded exception (a state committee's answer in ISO-NE's docket) was confirmed as support by reading the filing directly. PJM's docket alone gained a third, separate abeyance motion, from a respondent asking FERC to rule by August 13 so it has certainty ahead of the August 17 deadline. Newly confirmed, known only through an Aug 4 Constellation answer that cites and dates them: the Indicated PJM Transmission Owners and, jointly, Exelon and FirstEnergy sought rehearing of both the PJM order and the E-2 order on July 20. Constellation's answer, opposing both, says the Exelon/FirstEnergy E-2 request largely repeats an earlier rehearing request the Commission already rejected. On the governance track, FERC's July 30 notice, once its own text was read directly, sets two concrete dates: post-conference comments are due August 21, and its Alternative Dispute Resolution forum is set to commence September 1. And PJM's capacity backstop moved from a stated intent to a proposed FERC filing on July 31 (Docket ER26-3380, not yet acted on): a one-time reliability auction targeting the same 6,831 MW shortfall, at a $555/MW-day cap and up to $20 billion. No docket has a FERC ruling yet on any pending abeyance motion.",
     ],
   };
 
@@ -259,11 +290,11 @@ window.FERC_DATA = (function () {
       what: "Six show cause orders on one 60-day clock. Each RTO or ISO must defend its tariff or file a fix.",
       whySeparate: "This is the main proceeding the site tracks. The other lanes run beside it, each on its own clock.",
       status: {
-        asOf: "2026-08-03",
-        line: "All six 30-day reports are now eLibrary-confirmed. Every one of the six proceedings now carries an abeyance motion — PJM and its TOs filed five days early (Jul 28); SPP, MISO, CAISO, NYISO and ISO-NE followed on the Aug 3 deadline. FERC has opened an answer period on PJM's motion.",
+        asOf: "2026-08-09",
+        line: "The abeyance wave is now in its answer period, and it shows the record's first real division. American Municipal Power filed the lone opposition (to MISO's motion, Aug 7), arguing it fails the order's own abeyance standard and asking FERC to condition further abeyance on a 20-day stakeholder proposal. Every other answer's own filed description states support for its docket's motion instead. PJM's docket alone carries a third, separate abeyance motion, from Silver Run Electric (Aug 3), asking FERC to rule by Aug 13. Also newly confirmed, known only through Constellation's Aug 4 answer citing them: the Indicated PJM Transmission Owners and, jointly, Exelon and FirstEnergy sought rehearing or clarification of the PJM order on July 20; Constellation's answer opposes both. No docket has a FERC ruling yet on any pending abeyance motion.",
       },
       next: { date: "2026-08-17", label: "Show-cause / tariff filings due (any docket not held in abeyance)" },
-      src: ["fercPR", "fercFS", "elibrary0803"],
+      src: ["fercPR", "fercFS", "elibrary0803", "elibrary0809"],
     },
     e2: {
       label: "PJM co-location: EL25-49",
@@ -272,11 +303,11 @@ window.FERC_DATA = (function () {
       what: "The PJM co-location proceeding that created the three new transmission services the six orders extend to every other region.",
       whySeparate: "A different docket with its own compliance clock. Its further compliance filing lands Aug 17, the same day as the six show-cause filings.",
       status: {
-        asOf: "2026-08-03",
-        line: "Not quiet: PJM and its Transmission Owners separately sought a compliance-deadline extension on Jul 28 (stakeholders answering in support), and the December 2025 / February 2026 predecessor orders are under active appeal in the Third and D.C. Circuits — corrects our 2026-07-28 read of a clean docket.",
+        asOf: "2026-08-09",
+        line: "The same July 20 rehearing wave also targeted this order, known only through Constellation's Aug 4 answer citing them: the Indicated PJM Transmission Owners and, jointly, Exelon and FirstEnergy sought rehearing or clarification of the June 2026 Co-Location Order. Constellation's answer opposes both requests, says the Exelon/FirstEnergy request largely repeats arguments from a rehearing request the Commission already rejected against the December 2025 order, and asks FERC to grant Constellation's own pending rehearing request instead. That is separate from PJM's Jul 28 compliance-deadline extension request, still awaiting a ruling, and the Third and D.C. Circuit appeals of the December 2025 / February 2026 predecessor orders, still pending.",
       },
       next: { date: "2026-08-17", label: "PJM and PJM TOs further compliance filing (if the extension isn't granted)" },
-      src: ["e2", "elibrary0803"],
+      src: ["e2", "elibrary0803", "elibrary0809"],
     },
     gov: {
       label: "PJM governance: AD26-7",
@@ -286,11 +317,11 @@ window.FERC_DATA = (function () {
       whySeparate: "Runs outside the §206 clock. Its September deadlines decide who controls PJM’s follow-through filings.",
       aka: "Also referred to in shorthand as the Swett technical conference, after the chairman who convened it.",
       status: {
-        asOf: "2026-08-03",
-        line: "The conference was held July 23. FERC opened the promised post-conference written-comment period on Jul 30; comments are now arriving, heading toward the September dispute-resolution forum.",
+        asOf: "2026-08-09",
+        line: "FERC set two concrete dates in its Aug 4 Federal Register notice: post-conference comments are due Aug 21, 2026, and its Alternative Dispute Resolution forum is set to commence Sept 1, 2026. The chairman's end-of-September deadline for a PJM reform package, or FERC imposing its own, remains a closing-remarks commitment with no calendar date yet noticed. A handful of comments, mostly from individuals, are already on the docket.",
       },
-      next: { date: "2026-09-30", label: "PJM reform package due or FERC imposes its own", dateNote: "“end of September” per the chairman’s closing remarks; no calendar date has been noticed" },
-      src: ["frAD267", "udgov", "elibrary0803"],
+      next: { date: "2026-08-21", label: "Post-conference comments due" },
+      src: ["frAD267", "udgov", "elibrary0803", "elibrary0809", "frgov0804"],
     },
     rm264: {
       label: "The RM26-4 record",
@@ -309,9 +340,9 @@ window.FERC_DATA = (function () {
       noDocket: true,
       what: "Auction results and market events that set the stakes for the filings, from outside any of the dockets.",
       whySeparate: "None of these are filings. They are kept in their own lane so the rail never reads an auction result as a docket event.",
-      status: { asOf: "2026-07-28", line: "PJM’s 2028/2029 capacity auction cleared at the price cap for the third year running, 6,831 MW short of its reserve-margin target." },
-      next: { date: null, label: "Not a docket, so no clock" },
-      src: ["pjmbra"],
+      status: { asOf: "2026-08-09", line: "PJM's capacity backstop moved from a stated intent to an actual FERC filing: on Jul 31 it filed the backstop auction plan (Docket ER26-3380), proposing a one-time reliability auction from Sept 30 to Oct 21 at a $555/MW-day cap, up to $20 billion, targeting the same 6,831 MW shortfall as the July 14 auction. More than 30 parties, from state commissions to a data center operator, have moved to intervene; no protests are on the docket yet." },
+      next: { date: "2026-09-30", label: "PJM's one-time reliability backstop auction opens (Docket ER26-3380)", dateNote: "as proposed in PJM's Jul 31 filing; FERC has not yet acted on it" },
+      src: ["pjmbra", "udbackstop", "elibrary0809"],
     },
   };
 
@@ -378,6 +409,18 @@ window.FERC_DATA = (function () {
       src: ["isonews0721", "elibrary0803"],
     },
     {
+      date: "Jul 20, 2026", iso: "2026-07-20b", kind: "milestone", track: "sc6",
+      title: "PJM's Transmission Owners and Exelon/FirstEnergy seek rehearing of the PJM order",
+      body: "Within the statutory 30-day window, the Indicated PJM Transmission Owners file a request for clarification or, in the alternative, rehearing of the PJM show cause order (EL26-67-000); Exelon and FirstEnergy jointly file their own request for rehearing. Our checks find no rehearing filing in any of the other five §206 dockets. Both requests surface only through Constellation Energy's Aug 4 answer opposing them, which cites, dates and quotes them directly; a keyword search of EL26-67's own eLibrary docket sheet for the underlying filings themselves came up empty, a discrepancy we could not resolve this session.",
+      src: ["elibrary0809"],
+    },
+    {
+      date: "Jul 20, 2026", iso: "2026-07-20c", kind: "milestone", track: "e2",
+      title: "The same Transmission Owners seek rehearing of the E-2 co-location order",
+      body: "The Indicated PJM Transmission Owners and, jointly, Exelon and FirstEnergy also seek rehearing of the June 2026 Co-Location Order (EL25-49-002) on July 20. Constellation Energy's Aug 4 answer says the Exelon/FirstEnergy request repeats, almost word for word, a rehearing request the same parties filed in January against the December 2025 order, this time substituting the phrase load served by BTMG for co-located load, and asks FERC to deny both requests and instead grant Constellation's own pending rehearing request.",
+      src: ["elibrary0809"],
+    },
+    {
       date: "Jul 23, 2026", iso: "2026-07-23", kind: "ferc", track: "gov",
       title: "FERC holds the PJM governance conference and sets a September deadline",
       body: "At the AD26-7-000 technical conference, Chairman Laura Swett says “PJM is facing a grave legitimacy crisis” and that “Some transmission owners are openly discussing leaving the RTO altogether.” Commissioner David LaCerte calls the board’s weakened independence “a cultural quagmire.” Commissioners, state officials, PJM leadership and market participants converge on board independence, an expanded state role, and limits on §205 filing rights as the levers; whether the stakeholder process should become purely advisory stays contested. FERC says it will issue a post-conference notice seeking written comments and convene a time-bound dispute-resolution forum in September, and that it will impose reforms itself if no credible package is agreed by the end of September.",
@@ -398,14 +441,26 @@ window.FERC_DATA = (function () {
     {
       date: "Jul 30, 2026", iso: "2026-07-30", kind: "ferc", track: "gov",
       title: "FERC opens the post-conference comment period on PJM governance",
-      body: "As promised at the July 23 technical conference, FERC's Secretary issues a notice requesting post-conference comment in Docket AD26-7-000. Comments begin arriving the same week, running toward the time-bound dispute-resolution forum and the end-of-September deadline for PJM to agree to a reform package.",
-      src: ["elibrary0803"],
+      body: "As promised at the July 23 technical conference, FERC's Secretary issues a notice requesting post-conference comment in Docket AD26-7-000, published in the Federal Register Aug 4. The notice sets two concrete dates: comments are due August 21, 2026, and a future notice will establish an Alternative Dispute Resolution forum commencing September 1, 2026. The chairman's end-of-September deadline for a PJM reform package, or FERC imposing its own, remains a closing-remarks commitment with no calendar date yet noticed.",
+      src: ["elibrary0803", "frgov0804"],
+    },
+    {
+      date: "Jul 31, 2026", iso: "2026-07-31", kind: "milestone", track: "context",
+      title: "PJM files its backstop capacity auction plan at FERC",
+      body: "PJM asks FERC to approve a one-time reliability backstop auction, Docket ER26-3380, to close the 6,831 MW shortfall from its July 14 capacity auction: bilateral deals between data centers and suppliers first, then an auction, targeted for September 30 to October 21, to fill what is left, at a $555/MW-day price cap (up from $325), with up to $20 billion available for new power plants. Results are targeted for December 2. More than 30 parties, from state commissions and consumer advocates to a data center operator, move to intervene within the first week.",
+      src: ["udbackstop", "elibrary0809", "pjmbra"],
     },
     {
       date: "Aug 3, 2026", iso: "2026-08-03", kind: "milestone", track: "sc6",
       title: "Every one of the six dockets now carries an abeyance motion",
-      body: "On the deadline itself, the remaining five dockets catch up to PJM: Southwest Power Pool and other respondents file a joint abeyance motion in EL26-68; the Midcontinent ISO and its Transmission Owners file jointly in EL26-70; ISO New England and its Participating Transmission Owners Administrative Committee file jointly in EL26-72, following through on the intent they signaled June 29; New York gets three separate abeyance filings in EL26-69 (NYISO itself, the New York Transmission Owners jointly, and LS Power Grid New York / New York Transco); and California gets the most contested docket — the California ISO itself and a coalition of California transmission owners (Southern California Edison, San Diego Gas & Electric, Pacific Gas & Electric, and others) file abeyance motions in EL26-71, while the “Six Cities” (Anaheim, Azusa, Banning, Colton, Pasadena, Riverside) file a conditional abeyance motion after already moving on Jul 31 to rescind the order outright as applied to them, and the Western Area Power Administration separately moves to rescind. In the PJM docket, Allegheny Electric Cooperative had made the same rescission ask on Jul 22. Read together: every respondent wants more time; a handful want out entirely.",
-      src: ["elibrary0803"],
+      body: "On the deadline itself, the remaining five dockets catch up to PJM: Southwest Power Pool and other respondents file a joint abeyance motion in EL26-68; the Midcontinent ISO and its Transmission Owners file jointly in EL26-70; ISO New England and its Participating Transmission Owners Administrative Committee file jointly in EL26-72, following through on the intent they signaled June 29; New York gets three separate abeyance filings in EL26-69 (NYISO itself, the New York Transmission Owners jointly, and LS Power Grid New York / New York Transco); and California gets the most contested docket — the California ISO itself and a coalition of California transmission owners (Southern California Edison, San Diego Gas & Electric, Pacific Gas & Electric, and others) file abeyance motions in EL26-71, while the “Six Cities” (Anaheim, Azusa, Banning, Colton, Pasadena, Riverside) file a conditional abeyance motion after already moving on Jul 31 to rescind the order outright as applied to them, and the Western Area Power Administration separately moves to rescind. In the PJM docket, Allegheny Electric Cooperative had made the same rescission ask on Jul 22. PJM's own docket gains a third abeyance motion the same day, from Silver Run Electric, a respondent that asks FERC to shorten its answer period and rule by August 13 so it has certainty ahead of the August 17 deadline. Read together: every respondent wants more time; a handful want out entirely.",
+      src: ["elibrary0803", "elibrary0809"],
+    },
+    {
+      date: "Aug 7, 2026", iso: "2026-08-07", kind: "milestone", track: "sc6",
+      title: "American Municipal Power is the first party to oppose an abeyance motion",
+      body: "In MISO's docket, American Municipal Power answers that the Aug 3 abeyance motion by MISO and its Transmission Owners falls short of the show cause order's own abeyance standard: no detailed roadmap, just a plan to bring concepts to MISO's Large Load Working Group with a possible filing in November. Rather than ask FERC to deny the motion outright, though the answer notes FERC has grounds to, AMP asks FERC to instead direct MISO to file a stakeholder proposal within 20 days and hold to a November 16 filing deadline. Every other answer's own filed description states support for its docket's abeyance motion, including from Constellation, the PJM Industrial Customer Coalition, the Corporate Energy Buyers Association, a regional state committee and multiple state commissions.",
+      src: ["elibrary0809"],
     },
     {
       date: "≈ Aug 17, 2026", iso: "2026-08-17", kind: "deadline", track: "sc6",

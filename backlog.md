@@ -559,3 +559,30 @@ Recommended next steps, in order:
   entity. If per-docket pages land, each should carry its own `Report` or `Legislation` entity with
   `datePublished` and the FERC cite, and the comment corpus arguably qualifies as a `Dataset` (273
   filings, structured, openly licensed), which is a rich-result type worth testing.
+
+- **MEDIUM (2026-08-09)** — **A "rehearing" column for the filing matrix.** `procedural.steps` already
+  has a `rehearing` step (statutory 30-day deadline, Jul 20), but `procedural.filings.steps` only
+  tracks `report` / `abeyance` / `showcause`. This sweep found real rehearing requests (PJM's docket
+  and the E-2 docket, confirmed via Constellation's Aug 4 answer), which currently live only as
+  timeline prose, not as a matrix row with an accession. Adding the column is a small schema change
+  but touches the matrix's render logic and its tests; deserves its own pass rather than folding into
+  a refresh. The underlying rehearing filings themselves are also still unconfirmed on eLibrary by
+  direct accession (see `REFRESH.md`'s gotcha on multi-docket filings not cross-listing); a future
+  session should also try to find their own accession numbers before adding the column.
+
+- **LOW (2026-08-09)** — **Should PJM's capacity backstop auction (Docket ER26-3380) get its own
+  track?** It started as pure market context (the Jul 14 auction result) but is now a real FERC
+  docket with its own filing, intervenors, and a Sept 30 to Oct 21 auction window: more than the
+  `context` track's "auction results and market events... none of these are filings" framing was
+  built for. Currently described under `context` anyway to avoid a mid-refresh schema change; if it
+  keeps generating docket-level developments (protests, a FERC order), promote it to a sixth track
+  with its own venue and next-step clock.
+
+- **LOW (2026-08-09)** — **`docs/js/data.js`'s editorial prose has drifted from its own style rule.**
+  `design-notes.md`'s Voice section is explicit: no em-dashes in displayed prose, comma/colon/period/
+  parentheses instead, "X to Y" not "X, Y" ranges. A grep of the file finds roughly 56 em-dashes in
+  track status lines and timeline bodies accumulated across refresh sessions (this session's own new
+  text avoids them, following the rule). Not fixed here because touching all 56 would churn many
+  unrelated lines in a refresh-scoped diff; worth a dedicated copy-edit pass that greps, rewrites, and
+  adds the "grep the rendered tabs for em-dashes, expect zero" check the design doc already prescribes
+  as an actual test rather than a manual habit.
