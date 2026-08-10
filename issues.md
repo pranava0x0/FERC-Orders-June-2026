@@ -14,6 +14,48 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-08-09 · data/accuracy · an independent adversarial review of this session's refresh diff found
+  six real accuracy issues before the data shipped, none caught by the automated tests, the quote
+  verifier, or the author's own re-read.** A `code-reviewer` agent given the diff plus the downloaded
+  source PDFs and Federal Register text found: (1) a fabricated explanation for a real observation — the
+  new copy claimed the July 20 PJM/E-2 rehearing filings were "indexed under the EL25-49 lead docket
+  rather than EL26-67," but the cited PDF actually captions one of them as filed in "Docket No.
+  EL26-67-000" directly, contradicting the claim; (2) a duplicate FERC action invented from a
+  publication-date/action-date confusion — a new "Aug 4" timeline event restated the same Federal
+  Register notice the existing "Jul 30" event already covered, because Aug 4 is when the notice was
+  *published* in the Federal Register, not when FERC issued it (the notice itself is "Dated: July 30,
+  2026"); (3) American Municipal Power's answer was described as asking FERC to "deny the motion, or
+  condition further abeyance," when the filing explicitly declines to request denial ("the Commission
+  should *instead* direct MISO to..."), naming it only as available; (4) an opposing party's litigation
+  characterization ("largely repeating arguments the Commission already rejected") was stated in the
+  site's own voice as neutral fact in two places, and extended to cover a rehearing request the source
+  never characterizes that way; (5) a proposed, FERC-not-yet-acted-on auction date rendered as a
+  confirmed "Next" step on the context track, with the `dateNote` field that exists for exactly this
+  case left unused; (6) two universal-negative claims ("no rehearing filing in the other five dockets,"
+  "every other answer supports its docket's motion") stated flatly from a keyword-search method the same
+  diff had just demonstrated produces false negatives. Root cause: **data** — every instance is an
+  inference or a secondhand characterization written with more confidence than the underlying evidence
+  supported, the exact failure mode CLAUDE.md's "don't manufacture certainty" rule targets. Status:
+  **Fixed** — claims rewritten to state only what was directly observed, attribute characterizations to
+  their source, and add hedging language or a `dateNote` where confirmation is genuinely incomplete; all
+  112 tests, the quote verifier, and the commissioner-tailoring verifier re-pass. See `agent-runs.md`
+  2026-08-09 for the review's token cost and the "cost is in the spawn" framing for why one review agent
+  on the whole diff, not per-claim verification agents, was the right scale here.
+
+- **2026-08-09 · process/docs · `REFRESH.md`'s "Open verification queue" carried a resolved item as
+  still-open across a refresh session.** Item 1 ("the 30-day reports... only ISO-NE's is observed")
+  was resolved by the 2026-08-03 refresh (all six confirmed `filed-verified` in `data.js`, cited to
+  `elibrary0803`), but the queue text itself was never rewritten to say so, so this session's sweep
+  started by planning to re-verify something already closed. Root cause: **process** — the queue is
+  plain prose with no test enforcing it stays in sync with what `data.js` actually shows resolved,
+  unlike the site's own freshness stamps (`meta.newsCapture`, `asOf`), which `check-staleness.mjs`
+  does check. Separately, the 2026-08-03 refresh session had never written its own entry into
+  `news-tracks-plan.md`'s progress log, despite `REFRESH.md` step 5 asking for one every run. Status:
+  **Fixed** — the queue rewritten to drop resolved items and list what's still genuinely open; the
+  missing 2026-08-03 progress-log entry backfilled retroactively alongside this session's own entry.
+  No test added: this is a documentation-hygiene gap, not a data-correctness one, and the fix is
+  procedural (actually do step 5 each time) rather than something a test can enforce.
+
 - **2026-07-28 · data/accuracy · the Aug 3 abeyance step was scoped "NYISO only," but the mechanism is in
   all six orders.** Surfaced while researching the news refresh: ISO Newswire (2026-06-29) reports ISO-NE
   planning a 90-day abeyance request, which contradicted the site's label. Verified locally against
