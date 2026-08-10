@@ -23,8 +23,9 @@ token figure.
 | 8 | 2026-06-25 | Workflow `summarize-comments` **chunk-1** (`wf_8042b762-91b`) | 40 comments (the shortest filings) on Sonnet — **chunk too big for the user's ~9% remaining session budget** | 40 | 285 | 1,023,553 | 357.4 s | sonnet | ⚠️ **23/40 written, then the user's 5-hr session limit hit and the last 17 failed.** No data lost (per-summary save); failures re-queue. My error: launched 40 + didn't `TaskStop` when the user flagged budget |
 | 9 | 2026-06-25 | Workflow `summarize-comments` **Haiku probe** (`wf_fa8cb72b-eba`) | 3 re-queued comments, extract on **Haiku**, audit on Sonnet — does the cheap path hold up? | 4 | 100 | 183,855 | 334.9 s | haiku + sonnet | ✅ 3/3 valid; the 1 flagged got a real coverage gap fixed by the Sonnet audit. But **~46K/agent ≈ same token COUNT as Sonnet** (25 tools/agent — Haiku loops more on the validate-fix cycle); Haiku saves $/token, not tokens |
 | 10 | 2026-07-28 | Agent `claude` **news sweep** | Web-search-only refresh research for `news-tracks-plan.md`: six-docket filings since Jun 24, E-2/EL25-49, the PJM governance conference, "SW technical conference" disambiguation, 30/60-day deadline watch | 1 | 44 | 135,370 | 478.5 s | sonnet | ✅ All 4 tracks resolved with per-item fetched-vs-snippet confidence flags + a source index; disambiguated the "SW technical conference" = the Swett-led AD26-7-000 PJM governance conference (Jul 23), ruling out SPP/NERC/RA-conference candidates; its ISO-NE abeyance find exposed the site's "(NYISO only)" scoping bug (issues.md 2026-07-28). ferc.gov/eLibrary 403'd throughout (expected), so docket-level confirmation is queued for the manual browser pass |
+| 11 | 2026-08-09 | Agent `code-reviewer` **adversarial refresh review** | Independent re-check of the uncommitted 2026-08-09 refresh diff (`data.js` + `REFRESH.md`) against the actual downloaded PDFs and FR text, not the author's own summary of them | 1 | 28 | 151,484 | 409.7 s | sonnet | ✅ 6 confirmed findings (see issues.md 2026-08-09), 0 false positives; also cleared several claims as accurate rather than padding the report — the review's method (re-derive from the primary PDFs) differed from the author's (write from notes taken while reading them), which is what caught claims that had drifted from the source during writing |
 
-_Totals (Runs 1–10 shown): 82 agent-runs · 1,218 tool uses · **3,897,042** subagent tokens · ~2,928 s of agent wall-clock. Of which Run 3 (974K) produced nothing, Run 5's audit half (~242K) was largely replaceable by deterministic checks, and **Run 8 (1.0M) overshot the user's session budget and hit the rate limit** — see below._
+_Totals (Runs 1–11 shown): 83 agent-runs · 1,246 tool uses · **4,048,526** subagent tokens · ~3,338 s of agent wall-clock. Of which Run 3 (974K) produced nothing, Run 5's audit half (~242K) was largely replaceable by deterministic checks, and **Run 8 (1.0M) overshot the user's session budget and hit the rate limit** — see below._
 _**The comment run is complete: 268/268 summaries written and valid.** The table above shows the representative runs; the 29 per-chunk runs (these plus ~20 more) are logged in `sources/comments/workflow-runs.jsonl` — **~13.2M subagent tokens** across the full corpus, with `extract_model`/`audit_model` per run for analysis._
 
 ## Evaluation
@@ -152,6 +153,7 @@ loss (the self-healing worklist re-queued every unfinished comment), and was wir
 |---|------|------|:---------:|-------------------:|---------|
 | S1 | 2026-07-14 | Implement policy-analysis-spec phase C: record-to-rule crosswalk (`policyMap`) + landing + reader strip + §4.2 cross-links + UAT fixes | 0 | ~110 (Bash ~24, Read ~10, Edit ~18, Write 1, Browser ~55, AskUserQuestion 1) | ✅ 4 commits, 81 tests pass, quote sweep clean, verified in-browser desktop + 375px |
 | S2 | 2026-07-28 | Plan the news refresh: repo survey → Sonnet web-search sweep (Run 10) → write `news-tracks-plan.md` (5 tracks, filing matrix, discourse wave 2) + log the abeyance-scope bug | 1 (Run 10) | ~22 (Bash ~15, Read ~4, Write 1, Edit 2) | ✅ Plan-only session (no site code touched). Survey was grep-targeted, not whole-file reads; the one fan-out was the user-requested search agent; local order-text grep turned the agent's ISO-NE lead into a confirmed site bug before planning the fix |
+| S3 | 2026-08-09 | Second full `REFRESH.md` run: eLibrary sweep (Control_Chrome bridge, 9 dockets) + 4 `WebSearch`/`WebFetch` calls + `data.js` update (5 new SOURCES, 5 tracks updated, 6 new timeline events) + regenerate + doc-set updates | 0 | ~90 (Control_Chrome ~55, WebSearch/WebFetch 6, Read/Edit ~20, Bash ~9) | ✅ All 112 tests + quote verifier + commish-tailoring verifier pass on first re-run after regenerating. Found the record's first genuine abeyance opposition (American Municipal Power vs. MISO) and confirmed rehearing requests against the PJM and E-2 orders that had been an open verification-queue item since 2026-07-28 |
 
 ### Session S1 evaluation (2026-07-14)
 
@@ -330,3 +332,66 @@ holds comfortably. No workflow, no Task tool.
   exclusion). The independent review's method (word-level LCS from scratch) differed from every one of
   my own re-checks (all presence-based), which is specifically what let it see past a blind spot that
   survived a full rebuild, a bidirectional check, and manual grep-verification of individual examples.
+
+## Session 2026-08-09 — second REFRESH.md run + one review agent
+
+- **The refresh itself was inline, no subagents.** The task decomposes cleanly into "check eLibrary for
+  filings since the last sweep" and "check the web for context," both exact-verification tasks over a
+  small, known set of dockets rather than open-ended research, so per CLAUDE.md's "inline before
+  subagent" this stayed in the main loop. `WebSearch`/`WebFetch` (6 calls total) covered the parts a
+  browser bridge can't reach (Federal Register full text, Utility Dive, general context searches);
+  `Control_Chrome` (roughly 55 calls) covered every eLibrary docket sheet and PDF download. One
+  `code-reviewer` agent (Run 11) ran afterward, on the finished diff, as the accuracy-critical
+  adversarial pass this project's ship ritual calls for — see below.
+- **eLibrary sweep found real news, not just confirmation.** Checked all six §206 dockets, EL25-49-000,
+  AD26-7-000, and the newly discovered ER26-3380 for anything filed since 2026-08-03. Two findings
+  needed a downloaded-PDF read rather than a docket-sheet description, because the description text
+  was ambiguous or actively misleading: American Municipal Power's "Answer... in Response to" MISO's
+  abeyance motion turned out to be an opposition (the first of the sweep), while NESCOE's identically
+  worded "Answer... in Response to" ISO-NE's motion turned out to be support. Reading the PDF, not the
+  procedural title, was the only way to tell them apart — logged as a `REFRESH.md` gotcha.
+- **Closed a queue item that two prior sessions had left open.** REFRESH.md's "any rehearing requests
+  dated on or before Jul 20" item had been open since 2026-07-28. A direct eLibrary keyword search
+  across all six §206 dockets found nothing, which read like a clean "none filed" until Constellation
+  Energy's Aug 4 answer was read directly and turned out to cite, quote, and date two rehearing requests
+  against both the PJM order and the E-2 order, one of them explicitly captioned "Docket No.
+  EL26-67-000." The keyword search that seemed to "confirm" nothing was filed there was actually a
+  false negative against a filing a primary source in hand already named, caught only by reading that
+  document. Logged as a `REFRESH.md` gotcha: a "nothing found" eLibrary search is not proof of absence
+  when a primary document you already hold cites, dates and names the thing you searched for. (My first
+  write-up of this went further than the evidence supported, guessing the underlying filings were
+  "indexed under the EL25-49 lead docket instead" — the review agent below caught that the source
+  actually contradicts it, so the final text states the discrepancy without asserting an unverified
+  cause.)
+- **Found a genuinely new, unreported development via primary source only.** American Municipal Power's
+  opposition and PJM's ER26-3380 backstop-auction filing had zero trade-press pickup as of this sweep
+  (`WebSearch` for both came up empty beyond generic background); both ship because the accession itself
+  was read and downloaded, not because a secondary source reported them. This is the same "verify the
+  content, not just that the URL loads" discipline CLAUDE.md calls for, applied to a live sweep instead
+  of a retrospective audit.
+- **Deliberately left two style choices out of scope.** `design-notes.md`'s Voice section bans
+  em-dashes in editorial prose; the file already carries ~56 from prior sessions. New text this session
+  was written without them, but the existing violations were not touched, since fixing them would have
+  turned a data-refresh diff into an unrelated copy-edit sweep across dozens of unrelated lines. Logged
+  to `backlog.md` instead. Same reasoning kept the "add a rehearing column to the filing matrix" idea
+  out of this session's diff: real feature/schema work, not a data refresh.
+- **The review round (Run 11) earned its cost.** Ran one `code-reviewer` agent against the finished
+  diff, told to re-check every new claim against the actual downloaded PDFs and FR text rather than
+  trust the author's own summary of them. It found 6 real issues (issues.md 2026-08-09): a fabricated
+  cause for a true observation, a duplicate FERC event from confusing a Federal Register publication
+  date with the date FERC actually acted, a party's requested relief overstated beyond what its own
+  filing asks for, an opposing party's advocacy repeated in the site's own neutral voice and over-scoped
+  beyond what that party actually said, an unapproved proposal rendered as a confirmed date, and two
+  flat universal-negative claims resting on a search method the same diff had just shown produces false
+  negatives. It also explicitly cleared several claims as accurate (the FR notice's dates, every figure
+  in the backstop-auction event, the AMP-vs-NESCOE distinction, the style check) rather than padding the
+  report to look thorough — that mattered as much as the findings, since it said where not to keep
+  digging. All six findings were fixed and re-verified before shipping. This matches the pattern from
+  the 2026-08-03 session's own review (agent-runs.md, same file): the reviewing method being genuinely
+  different from the writing method (re-derive from primary sources vs. write from notes taken while
+  reading them) is what let it see past claims the writer had already convinced themselves were fine.
+- **Net:** 112/112 tests, the quote verifier (209 required + 17 prose), and the commissioner-tailoring
+  verifier all pass on the first re-run after regenerating (`build-seo.mjs`, `stamp-assets.mjs`,
+  `build-docket-pages.mjs`, `build-llms.mjs`). Verified the rendered Overview and Timeline tabs in a
+  local preview before considering the refresh done, per this project's standing rule that a UI change
+  isn't verified until it's been looked at in a browser, not just passed its tests.
