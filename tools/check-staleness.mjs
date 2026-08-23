@@ -65,16 +65,26 @@ for (const [label, iso] of [
 
 // 4) Steps whose deadline has passed with nothing observed in any docket. Not necessarily wrong (the
 //    checks may genuinely have found nothing), but it is the queue for the next eLibrary session.
+//    A step FERC has formally reset (`revised`) is measured against the reset date instead: the
+//    original date passing is then arithmetic, not a missed filing, and flagging it would read as a
+//    coverage gap when the deadline simply moved.
 const F = D.procedural?.filings;
 if (F) {
   const stepById = Object.fromEntries((D.procedural.steps || []).map((s) => [s.id, s]));
   for (const stepId of F.steps || []) {
     const step = stepById[stepId];
-    if (!step || !isPast(step.date)) continue;
-    const observed = new Set(F.rows.filter((r) => r.step === stepId).map((r) => r.docket));
-    const missing = (D.dockets || []).filter((d) => !observed.has(d.docket)).map((d) => d.rto);
+    if (!step) continue;
+    const operative = step.revised?.date || step.date;
+    const observed = new Set((F.rows || []).filter((r) => r.step === stepId).map((r) => r.docket));
+    // A docket can carry its own reset date for this step (SPP got 95 days rather than 90), so measure
+    // each docket against its own where it has one. Flagging SPP on the day the OTHER five come due
+    // would report a coverage gap that does not exist.
+    const dueFor = (d) => (stepId === "showcause" && d.abeyance?.due) || operative;
+    const missing = (D.dockets || [])
+      .filter((d) => !observed.has(d.docket) && isPast(dueFor(d)))
+      .map((d) => `${d.rto} (${dueFor(d)})`);
     if (missing.length) {
-      flag("filings", `"${step.label}" passed ${step.date} with nothing observed for: ${missing.join(", ")}.`);
+      flag("filings", `"${step.label}"${step.revised?.date ? " (revised)" : ""} passed with nothing observed for: ${missing.join(", ")}.`);
     }
   }
   const unverified = (F.rows || []).filter((r) => r.status === "filed-reported" || r.status === "signaled");

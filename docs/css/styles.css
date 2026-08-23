@@ -134,6 +134,26 @@ a:hover { color: var(--accent-ink); }
 .proc-period { font-size: 10.5px; color: var(--text-muted); }
 .proc-desc { font-size: 12.5px; color: #2b3744; line-height: 1.45; margin-top: 3px; }
 .proc-note { font-size: 10.5px; color: var(--text-muted); margin-top: 3px; }
+/* A deadline FERC formally reset: the reset date reads as the date, the original stays visible
+   beside it struck through, and the reason sits under the step description. */
+/* A docket held in abeyance: the present state of the proceeding, above the June 18 directives. */
+.docket-abeyance {
+  border: 1px solid var(--deadline); border-left-width: 3px; border-radius: 4px;
+  background: var(--surface-2); padding: 10px 12px; margin: 10px 0;
+}
+.docket-abeyance .label {
+  display: block; font-family: var(--font-mono); font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.06em; color: var(--deadline); margin-bottom: 5px;
+}
+.docket-abeyance p { font-size: 12.5px; line-height: 1.55; margin: 0 0 6px; max-width: 74ch; }
+.docket-abeyance p:last-of-type { margin-bottom: 0; }
+.docket-abeyance-q {
+  margin: 8px 0 0; padding-left: 10px; border-left: 2px solid var(--border);
+  font-size: 12px; line-height: 1.55; color: var(--text-secondary); font-style: italic; max-width: 74ch;
+}
+.proc-was { font-size: 10px; color: var(--text-muted); text-decoration: line-through; }
+.proc-revised { font-size: 11.5px; color: var(--text-secondary); margin-top: 4px; max-width: 74ch;
+  line-height: 1.5; border-left: 2px solid var(--deadline); padding-left: 8px; }
 .proc-foot { font-size: 11.5px; color: var(--text-secondary); margin: 2px 0 4px; max-width: 74ch; line-height: 1.5; }
 @media (max-width: 560px) { .proc-step { grid-template-columns: 1fr; gap: 5px; } .proc-when { flex-direction: row; align-items: center; gap: 8px; } }
 /* masthead next-deadline chip */
@@ -301,6 +321,7 @@ details.acc[open] .acc-chev { transform: rotate(90deg); }
 .fm-table thead th { background: var(--bg); font-size: 11.5px; }
 .fm-col { display: block; font-weight: 700; }
 .fm-coldate { display: block; font-size: 10.5px; color: var(--text-muted); white-space: nowrap; }
+.fm-colwas { display: block; font-size: 9.5px; color: var(--text-muted); white-space: nowrap; opacity: 0.85; }
 .fm-rto { display: block; font-weight: 700; }
 .fm-docket { display: block; font-size: 10.5px; color: var(--text-muted); white-space: nowrap; }
 .fm-when { display: block; font-size: 10.5px; color: var(--text-muted); margin-top: 3px; }
