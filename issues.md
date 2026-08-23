@@ -14,6 +14,205 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-08-23 · ui · the masthead announced a date SIX DAYS IN THE PAST as the "Next deadline", on
+  every tab.** `setMastheadDeadline` reads `var n = ps.next.s; … fmtISO(n.date)`. After the `revised`
+  change, `procStatus()` *selects* `next` using the operative date (Nov 16) but `n.date` is still the raw
+  `"2026-08-17"`, so the chip paired a correct selection with a superseded date. This is precisely the
+  failure `revised` was introduced to eliminate, reintroduced one function away from the change. Found by
+  an independent adversarial reviewer, not by me and not by the 119-test suite. Root cause: **code**
+  (blast radius: an untouched function consuming a changed helper's output). Fix: `fmtISO(stepWhen(n))`.
+  Status: **Fixed**.
+
+- **2026-08-23 · ui · ten policy-map rows rendered a self-contradicting chip, "Aug 17, 2026 ·
+  Upcoming".** `pmStepWhen` computed `hit.date`/`hit.status` from the operative date but returned
+  `when: fmtISO(hit.s.date)` from the original, so every `policyMap` row whose `next.step` is `showcause`
+  (all 10 of them) labelled a past date "Upcoming". Same root cause and same reviewer. Fix:
+  `fmtISO(stepWhen(hit.s))`. Status: **Fixed**.
+
+- **2026-08-23 · ui/data · the filing matrix and the staleness checker measured every docket against one
+  reset date, but FERC gave SPP a different one.** SPP asked for 95 days rather than 90 and got Nov 20;
+  the other five are Nov 16. Both surfaces used `steps[showcause].revised.date` for all six, so between
+  Nov 17 and Nov 19 SPP's cell would have read "the deadline has passed and our checks found nothing"
+  while SPP's own card, its generated page and its order all said Nov 20. Also live: the derived
+  collision paragraph said Nov 16 carries "the six show-cause responses" when it carries five. Root
+  cause: **code**. Fix: `docketStepDate()` lets a docket carry its own reset date and `filingCell`
+  measures against it; `check-staleness.mjs` does the same and now names the per-docket date it used;
+  the collision copy counts the dockets on the date instead of asserting a number. Simulated across
+  Nov 16/17/19/21: SPP stays `upcoming` exactly while it should. Status: **Fixed**.
+
+- **2026-08-23 · test · the new abeyance quote check could not detect a quote attributed to the wrong
+  docket, and neither could its test.** Both checked `d.abeyance.quote` against the union of all twelve
+  abeyance texts using `carries()`. Two problems compounded: the union cannot distinguish a docket
+  quoting its own order from one quoting a sibling's, and `carries()` falls back to a 60-character
+  longest-common-substring, which six orders issued the same day from one template share many times
+  over. Proven: swapping MISO's "noting AMP's answer…" sentence onto SPP's entry passed both. Root
+  cause: **test** (a check weaker than its own label claimed) — the same trap CLAUDE.md already records
+  from the LaCerte episode. Fix: check EXACT normalized containment in that docket's own committed text.
+  These are DOCX extractions with a clean text layer, so there is no OCR splicing to tolerate and exact
+  is the right bar. Negative-controlled: the misattribution now fails both the tool and the test.
+  Status: **Fixed**.
+
+- **2026-08-23 · tooling · eight defects in the two new sweep tools, all found by review.**
+  `news-sweep-plan.mjs`: (1) the quote-dedupe compared any quote ≥25 chars against long evidence blobs
+  and hard-errored on an innocent substring match, so a genuinely new quote about a different auction was
+  rejected as already captured — now requires a 60-char overlap and warns rather than errors; (2)
+  `--check` on an object-shaped file without a `findings` array crashed with a TypeError after correctly
+  reporting the problem; (3) the window END defaulted to `meta.newsCapture`, so running the sweep before
+  bumping the stamp (the natural order) rejected every new article — now defaults to today; (4)
+  `--queries` with a missing or non-numeric value silently emitted zero queries and exited 0, the
+  "a cheaper run usually failed" mode — now exits 2 with a message; (5) `lane` was named in an error
+  message but never validated. `reconcile-summary-bins.mjs`: (6) the quote_ids sort sat after the
+  `if (!touched) continue`, so an already-symmetric file never got ordered, leaving real residue
+  (20251121-5493 held `[8,9,7]`) — sort now precedes the exit and counts as a change.
+  `validate-summaries.mjs`: (7) the `org_type` and absolute-path checks sat after the body-text early
+  return, so a summary with an absolute path reported only "no body text found" and never the actual
+  diagnosis, and a missing manifest silently skipped every `org_type` check while reporting "0 errors" —
+  the manifest is now required and an unknown accession is an error. `build-docket-pages.mjs`: (8)
+  `fmtLong` fell through to `String(iso)` and was interpolated unescaped, so a missing field would render
+  `now due <strong>undefined</strong>` — returns "" on a miss and every call site is escaped. Root
+  cause: **code** throughout. Status: **Fixed**.
+
+
+- **2026-08-23 · ui/data · the Overview tab asserted a deadline that had moved, in the one sentence on
+  the site with a date typed into it by hand.** `renderProcedural()` rendered a fixed paragraph: "Two
+  clocks, one date — August 17 carries both the six show-cause filings and PJM's further compliance
+  filing in the separate EL25-49 co-location docket." Both clocks had moved to November (the six by the
+  Aug 14 abeyance orders, PJM's by the same day's extension notice), so the sentence was false on both
+  halves, and it rendered directly above a filing matrix that had already been corrected. Found in
+  self-review of the diff, not by any test: every other date in `app.js` comes from `data.js` through
+  `fmtISO`, and nothing checked that they all do. Root cause: **code** (a hardcoded value where the rest
+  of the surface is data-driven). Fix: `collideNote()` derives the callout from the operative show-cause
+  date and the E-2 track's next date and renders only while the two coincide, so a future divergence
+  removes the claim rather than falsifying it; plus a regression test that permits exactly one hardcoded
+  date in an `app.js` display string, the orders' issuance date, which cannot move. The test was
+  negative-controlled in both directions after an initial version passed on a deliberately reintroduced
+  bug. Status: **Fixed**.
+
+- **2026-08-23 · ui · a deadline reset on a step with no original fixed date would render a bare
+  "was ".** `var moved = s.revised && s.revised.date` gated both the struck-through original date and the
+  explanation, but the strikethrough prints `fmtISO(s.date)`, which returns "" when `s.date` is null (the
+  `response` step is exactly such a relative window). Latent, not live, since the only reset step today
+  has both dates. Root cause: **code**. Fix: the strikethrough is gated on `moved && s.date`, the
+  explanation still on the reset alone, in both the step row and the matrix column header. Status:
+  **Fixed**.
+
+
+- **2026-08-23 · tooling/sweep · the news-sweep planner deduped by HOST, so a search agent spent part of
+  its budget re-finding two articles the site already cites.** `tools/news-sweep-plan.mjs` gave the agent
+  a list of known outlets so it could tell a new source from a familiar one. utilitydive.com was on that
+  list, which meant nothing flagged that the specific July 24 article the agent returned as a new
+  commissioner finding is already `SOURCES.udgov`, and that both quotes in it are already verbatim in
+  `sources/news-evidence.json`. 2 of 10 findings were our own material handed back. Root cause: **code**
+  (host-level dedupe where URL-level was needed). Fix: the plan now carries a normalized URL to
+  SOURCES-key map and `checkFindings` errors on an exact URL match, naming the source key it duplicates;
+  it also normalizes and compares against every quote already in news-evidence.json, so the same remarks
+  are caught even from a different write-up. Both fire on the real findings file. Status: **Fixed**.
+
+- **2026-08-23 · data/accuracy · a search agent's verbatim quotes were accurate and its characterizations
+  around them were not, in two of six shipped findings.** (1) It returned LaCerte's remark as
+  `"The PJM Interconnection's status quo is really untenable."` Reading the article, the outlet's own
+  sentence is `The PJM Interconnection's "status quo is really untenable,"` so only the words inside the
+  inner quotation marks are his; the rest is the reporter. Shipping the agent's version would have
+  attributed a constructed sentence to a sitting commissioner. The site quotes the fragment only, and
+  `news-evidence.json` records why. (2) It summarized the Maryland congressional letter as seeking
+  "retroactive relief" from roughly $2 billion; reading the signed PDF with fitz, the word retroactive
+  appears nowhere and the ask is relief "as requested in OPC's complaint" (Docket EL26-63). Root cause:
+  **source** handling, caught by the verification pass rather than by any automated check, since both
+  would have passed the quote verifier. Status: **Fixed** before shipping. Lesson recorded in
+  agent-runs.md: check the frame around a quote, not just the quote.
+
+
+- **2026-08-23 · data/timeline · two forward-looking events described the abeyance mechanism in the
+  conditional after it had been fully exercised, and the site's most important upcoming date had no
+  event at all.** `check-staleness.mjs` only flags a passed `kind: "deadline"` event, so both of these
+  sat undetected with future isos. (1) "Abeyance requests can slow the clock, but only within a bounded
+  lane" (iso 2026-10-01) still read "Any abeyance *would* push the tariff-answer deadline later," written
+  when abeyance was hypothetical; all six were granted on Aug 14. (2) "Responses due 30 days after the
+  RTO/TO filing" carried iso 2026-09-16, derived as Aug 17 + 30, a date the abeyance orders replaced with
+  a fixed Dec 16. (3) Nov 16, the rescheduled deadline the entire site now points at, had no timeline
+  entry. Root cause: **data**, and a real gap in the staleness checker, which has no notion of an event
+  whose *framing* expired even though its date has not. Fix: the abeyance event rewritten as a dated
+  Aug 14 milestone about what actually happened, the response event re-dated to Dec 16, a Nov 16 event
+  added, and the two placeholder isos on the trailing "after the records close" events rebased past
+  December so the rail stays chronological. Status: **Fixed**. Follow-up in backlog: teach
+  check-staleness to flag conditional language ("would", "if requested") on an event whose subject
+  already resolved.
+
+
+- **2026-08-23 · data/security · two committed summaries stored an absolute `/Users/pranava/...`
+  `source_text`, which both leaked the author's home directory into a public repo and silently excluded
+  those two filings from page stamping.** CLAUDE.md requires repo-relative paths ("no machine-local paths
+  in committed data"), and 20251205-5325 and 20251121-5496 had absolute ones. The second-order effect was
+  the interesting part: `tools/stamp-comment-pages.mjs` resolves `join(ROOT, source_text)`, which for an
+  absolute path produces a nonexistent `<ROOT>/Users/...`, so the tool skipped both files and reported
+  them as "2 no-body" every run without failing anything. Their quotes were never page-stamped and never
+  counted (3498 reported vs 3520 real). Root cause: **data**, invisible because the skip was silent and
+  the quote-page test also skips a `source_text` it cannot resolve, so absence of a body read as nothing
+  to check rather than as a gap. Fix: both paths rewritten repo-relative, pages re-stamped (now
+  "0 no-body"), and `validate-summaries.mjs` errors on any absolute or drive-letter `source_text`.
+  Status: **Fixed**.
+
+
+- **2026-08-23 · data/comments · 99 verbatim quotes were being silently dropped from the comment page,
+  because the two directions of quote-to-bin membership disagreed and only one of them renders.**
+  A v2 summary records membership twice: each quote lists the bins it belongs to (`quotes[].bins`), and
+  each bin lists the quotes it rests on (`bins[].quote_ids`). The spec builds bins ON quotes, so
+  `quote_ids` is derived and the two must agree. They did not, in 87 of 268 files: 99 cases where a quote
+  named a bin whose `quote_ids` omitted it, and 54 the other way. `build-comments-page-data.mjs` renders
+  each bin's evidence from `quote_ids` alone, so each of those 99 was a quote the extractor had assigned
+  to a position and the page never showed under it. The Markey senators' letter, for one, was displaying
+  4 of its 6 cost-allocation quotes. Root cause: **data** (the model's step-4 back-reference did not
+  reproduce its own step-3 binning), missed because the validator checked that each side's references
+  RESOLVED but never that they AGREED. Fix: `tools/reconcile-summary-bins.mjs` unions the two directions
+  (idempotent, adds only membership the extractor itself asserted, never invents one), plus a new
+  reciprocity check in `validate-summaries.mjs` so it cannot recur. Status: **Fixed**.
+
+- **2026-08-23 · data/comments · three bins rendered a stance and a description with zero supporting
+  quotes.** `aq:protection` in 20251104-5015 (Terraflux) and 20251121-5126 (EDF Power Solutions), and
+  `aq:threshold` in 20251121-5396 (Southeast Public Interest Organizations) each carried a name, a
+  written description and a stance on an empty `quote_ids` — an unsourced position on a site whose whole
+  architecture is that every value traces to a verbatim span. All three turned out to be *recoverable*
+  rather than hallucinated: grepping each filing found the supporting sentence the extractor had failed
+  to pull, so each bin gained a real verbatim quote rather than being deleted. Root cause: **data**
+  (extraction gap), missed because a quoteless bin was explicitly tolerated
+  (`build-comments-page-data.mjs`: "a bin can be legitimately quoteless"). Fix: quotes attached, and
+  `validate-summaries.mjs` now errors on any bin resting on no quote. Status: **Fixed**.
+
+- **2026-08-23 · data/comments · `org_type` had no vocabulary check and three summaries had invented
+  label-style values.** The field is meant to be copied verbatim from the filing's stakeholder bucket in
+  `rm26-4-comments.json`; instead 20251121-5443 held "Environmental & public interest" (for `enviro`),
+  20251121-5527 "Trade Association" (`trade_assoc`) and 20251205-5325 "clean energy advocacy coalition"
+  (`clean_energy`), inflating the site's respondent-type count from the real 19 to 22. Root cause:
+  **data**, missed because the validator checked every other controlled vocabulary but not this one.
+  Fix: values corrected from the manifest, and `validate-summaries.mjs` now validates `org_type` against
+  the manifest bucket for that accession rather than a hand-kept allowlist, so the vocabulary cannot
+  drift from the data it describes. Status: **Fixed**.
+
+- **2026-08-23 · method/sweep · the eLibrary docket-sheet extractor read only the LAST page and lost
+  rows.** eLibrary sorts ascending by filed date, so the newest filings are at the end and reading the
+  final page looks sufficient. It is not: when a day's activity exceeds the final page's row count, the
+  rest sits at the tail of the previous page. AD26-7 (135 rows, 35 on the last page) reported 35 filings
+  since Aug 9 when the true number was 67; EL26-69 reported 2 when it was 4, hiding the Natural Gas
+  Supply Association's cross-docket comments. Caught only because an eLibrary general search surfaced a
+  PJM filing in AD26-7 that the docket-sheet sweep of the same docket had not returned. Root cause:
+  **code** (in the sweep method, not the repo). Fix: accumulate rows across every page into a map keyed
+  by accession; the corrected extractor is committed at `tools/elibrary-sweep.js` and the trap is written
+  up in REFRESH.md. Status: **Fixed**.
+
+- **2026-08-23 · ui/data · the procedural board would have shown six RTOs as having missed a deadline
+  that FERC had moved.** The filing matrix derives `none-observed` for any (docket, step) with no stored
+  observation once the step's date passes. FERC held all six §206 proceedings in abeyance on Aug 14 and
+  reset the Aug 17 show-cause date to Nov 16, so on Aug 18 the matrix would have rendered "Not observed"
+  across the row: literally true, and a false accusation. Naively rewriting `steps[].date` to Nov 16 was
+  the wrong fix and the test suite said so, since `procedural.steps` is the order's own arithmetic
+  schedule (`tests/procedural.test.mjs` asserts each step sits at issuance + its quoted period, and that
+  the response window stays undated). Fix: the step keeps its Aug 17 date and gains a separate
+  `revised: { date, by, note, src }`; `procStatus()` in app.js measures status against the revised date
+  when present, the step row renders the new date with the original struck through beside it and the
+  reason underneath, the matrix column header says "moved from Aug 17, 2026", and `check-staleness.mjs`
+  measures the same way so a moved deadline is not reported as a coverage gap. Status: **Fixed**.
+
+
 - **2026-08-09 · data/accuracy · an independent adversarial review of this session's refresh diff found
   six real accuracy issues before the data shipped, none caught by the automated tests, the quote
   verifier, or the author's own re-read.** A `code-reviewer` agent given the diff plus the downloaded
