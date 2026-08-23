@@ -95,6 +95,25 @@ test("the procedural clock's revised date matches what the abeyance orders actua
   assert.match(step.revised.note, /SPP/, "the note names the docket the single date does not cover");
 });
 
+test("the response window carries the date the abeyance orders fixed, so the clock does not run out early", () => {
+  // The order leaves this window relative to each filing, so `date` is null and a test elsewhere
+  // enforces that. But the abeyance orders then set an actual date for answers, and without recording
+  // it the board has no dated step after Nov 16: procStatus() finds no `next`, and the masthead's
+  // "next deadline" chip goes blank the day the show-cause date passes.
+  const step = D.procedural.steps.find((s) => s.id === "response");
+  assert.equal(step.date, null, "the order's own window stays relative");
+  assert.ok(step.revised?.date, "the date the abeyance orders fixed is recorded");
+  // It must agree with what the per-docket orders say, not be typed independently.
+  const answers = D.dockets.filter((d) => d.abeyance).map((d) => d.abeyance.answers);
+  assert.ok(answers.includes(step.revised.date),
+    `revised.date ${step.revised.date} matches an abeyance order's answers date (${[...new Set(answers)].join(", ")})`);
+  // And there must be a dated step still ahead of the show-cause date, or the board dead-ends on it.
+  const showcause = D.procedural.steps.find((s) => s.id === "showcause");
+  const operative = (x) => (x.revised && x.revised.date) || x.date;
+  assert.ok(operative(step) > operative(showcause),
+    "the response window falls after the show-cause date it follows");
+});
+
 test("every displayed abeyance quote is exact in ITS OWN order's text, not merely somewhere in the corpus", () => {
   // Deliberately stricter than the site's usual carries() sweep, twice over. (1) Per FILE: checking the
   // union of all twelve texts cannot tell a docket quoting its own order from one quoting a sibling's,
@@ -106,8 +125,12 @@ test("every displayed abeyance quote is exact in ITS OWN order's text, not merel
   const quoted = D.dockets.filter((d) => d.abeyance?.quote);
   assert.ok(quoted.length >= 4, `at least four dockets quote their order (${quoted.length})`);
   for (const d of quoted) {
+    // Scoped to the `abeyance-` file specifically. PJM's and MISO's dockets each also have an errata
+    // file, and a docket-substring match would accept a quote taken from the erratum instead.
     const key = String(d.docket).toLowerCase().replace(/-\d+$/, "");   // EL26-67-000 -> el26-67
-    const own = Object.entries(texts).filter(([slug]) => slug.includes(key)).map(([, t]) => t).join(" ¶ ");
+    const own = Object.entries(texts)
+      .filter(([slug]) => slug.startsWith("abeyance-") && slug.includes(key))
+      .map(([, t]) => t).join(" ¶ ");
     assert.ok(own, `${d.rto}: found the committed text for ${d.docket}`);
     assert.ok(own.includes(loose(d.abeyance.quote)),
       `${d.rto} abeyance quote is exact in ${key}'s own order text:\n  ${d.abeyance.quote.slice(0, 120)}`);

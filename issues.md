@@ -14,6 +14,49 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-08-23 · tooling/test · `extract-abeyance-docs.py --check` passed while comparing zero
+  documents.** The source PDFs and DOCX are not committed (they live in a transient download directory),
+  and when that directory is clean every document takes the "no source" branch and is counted as
+  `same`. So the command documented in REFRESH.md as the way to prove the committed text still matches
+  its source reported "12 unchanged" and exited 0 having verified nothing — indistinguishable from a
+  real pass, which is the exact trap CLAUDE.md names. Found by the Codex reviewer on the PR (P1). Root
+  cause: **code**. Fix: track which documents were actually compared against a present source; `--check`
+  now exits 2 and says so when that set is empty, and reports "compared N of 12" when it is not.
+  Status: **Fixed**.
+
+- **2026-08-23 · tooling · the new Python CLI printed runtime output instead of logging it.** CLAUDE.md's
+  Python standards require `logging`, not `print`, for runtime output; the extractor used `print()` for
+  its summary and for DRIFT/MISSING diagnostics. Codex (P1). Root cause: **code**. Fix: module logger,
+  `basicConfig` at INFO with a `-v` for DEBUG, diagnostics at ERROR. Status: **Fixed**.
+
+- **2026-08-23 · test · the per-docket abeyance quote check also matched that docket's ERRATUM.** The
+  lookup filtered committed texts by docket substring, and PJM's and MISO's dockets each have both an
+  `abeyance-*` and an `errata-*` file, so a quote lifted from the erratum would pass while labeled exact
+  in the abeyance order. Codex (P2), and a second narrowing of the same check the human reviewer had
+  already tightened once. Root cause: **test**. Fix: require the `abeyance-` prefix as well as the
+  docket, in both `verify-quotes.mjs` and `tests/abeyance.test.mjs`. Status: **Fixed**.
+
+- **2026-08-23 · ui/data · the masthead deadline chip would have gone blank the day the show-cause date
+  passed.** The `response` step is deliberately undated, because the ORDER leaves that window relative to
+  each filing. But the abeyance orders then fixed a real date (Dec 16, Dec 21 for SPP), and with nothing
+  recording it the board had no dated step after Nov 16: `procStatus()` finds no `next` and the chip
+  renders nothing. Codex (P2). Root cause: **data**. Fix: the step keeps `date: null` and gains
+  `revised.date`, the same mechanism built for the moved show-cause deadline, so the clock carries
+  forward without pretending the order fixed a date it did not. Simulated across Nov 17 / Nov 21 /
+  Dec 17: the chip now advances to "Dec 16, 2026 · Response window opens". A test asserts the recorded
+  date matches an abeyance order's own answers date rather than being typed independently.
+  Status: **Fixed**.
+
+- **2026-08-23 · tooling · two more silent-success paths in `news-sweep-plan.mjs --check`.** (1) A
+  malformed URL such as `"https://"` satisfied the `/^https?:\/\//` prefix test, then threw inside
+  `new URL()`, and the catch swallowed it on the assumption an error had already been recorded — so the
+  finding validated with zero errors. Now the URL is parsed once, up front, and protocol and hostname
+  are both required. (2) `--check` with no operand, or an empty shell variable as its operand, fell
+  through to printing an ordinary query plan and exiting 0, so an automated refresh would read
+  "validated" from a run that validated nothing. Now exits 2. Both Codex (P2), and both the same class
+  as the `--queries` bug found earlier in this session. Root cause: **code**. Status: **Fixed**.
+
+
 - **2026-08-23 · ui · the masthead announced a date SIX DAYS IN THE PAST as the "Next deadline", on
   every tab.** `setMastheadDeadline` reads `var n = ps.next.s; … fmtISO(n.date)`. After the `revised`
   change, `procStatus()` *selects* `next` using the operative date (Nov 16) but `n.date` is still the raw

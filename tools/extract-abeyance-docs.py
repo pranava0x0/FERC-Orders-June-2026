@@ -22,10 +22,13 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import re
 import subprocess
 import sys
 from pathlib import Path
+
+log = logging.getLogger("extract-abeyance-docs")
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "sources" / "text" / "abeyance"
@@ -143,12 +146,16 @@ def main() -> int:
     ap.add_argument("--in", dest="in_dir", default=str(Path.home() / "Downloads"))
     ap.add_argument("--check", action="store_true",
                     help="verify committed text matches what the sources produce; write nothing")
+    ap.add_argument("-v", "--verbose", action="store_true", help="debug-level logging")
     args = ap.parse_args()
+    logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
+                        format="%(levelname)s %(message)s")
 
     in_dir = Path(args.in_dir).expanduser()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     wrote, same, missing, drifted = [], [], [], []
+    compared = []   # only documents with a source file present, i.e. actually verified
     metas = []
     for rec in DOCS:
         dest = OUT_DIR / f"{rec['slug']}.txt"
@@ -163,6 +170,7 @@ def main() -> int:
             continue
         text, meta = build(rec, src)
         metas.append(meta)
+        compared.append(rec["accession"])
         if dest.exists() and dest.read_text(encoding="utf-8") == text:
             same.append(rec["accession"])
         elif args.check:
@@ -182,12 +190,25 @@ def main() -> int:
             "documents": metas,
         }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    print(f"{'checked' if args.check else 'extracted'}: {len(wrote)} written, {len(same)} unchanged, "
-          f"{len(drifted)} drifted, {len(missing)} missing source and no committed text")
+    log.info("%s: %d written, %d unchanged, %d drifted, %d missing source and no committed text",
+             "checked" if args.check else "extracted", len(wrote), len(same), len(drifted), len(missing))
     for a in drifted:
-        print(f"  DRIFT {a}: committed text differs from the source document")
+        log.error("DRIFT %s: committed text differs from the source document", a)
     for a in missing:
-        print(f"  MISSING {a}: no file in {in_dir} and nothing committed")
+        log.error("MISSING %s: no file in %s and nothing committed", a, in_dir)
+
+    # --check exists to prove the committed text still matches its source. When the transient download
+    # directory has been cleaned, every document takes the "no source" branch and is counted as
+    # unchanged, so the command reported "12 unchanged" and exited 0 having compared nothing at all.
+    # That is the failure mode CLAUDE.md names directly: a check that passes over an empty set is
+    # indistinguishable from one that passed. Verifying nothing is now an error, not a pass.
+    if args.check and not compared:
+        log.error("--check verified 0 of %d document(s): no source files found in %s. "
+                  "Re-download them from eLibrary (see tools/elibrary-sweep.js) before trusting this.",
+                  len(DOCS), in_dir)
+        return 2
+    if args.check:
+        log.info("--check compared %d of %d document(s) against their sources.", len(compared), len(DOCS))
     return 1 if (drifted or missing) else 0
 
 

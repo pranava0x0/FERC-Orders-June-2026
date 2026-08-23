@@ -264,3 +264,22 @@ run-by-run numbers are in [`agent-runs.md`](agent-runs.md); per-bug detail is in
   Scripting them would produce a tool nobody trusts. The render smoke check is unscripted for a
   different reason: no jsdom, because the repo has no dependencies and should not gain one for this. It
   lives in REFRESH.md as a paste-in console snippet instead.
+
+## Silent success is this repo's recurring bug (2026-08-23)
+
+Six review findings in one PR, and four were the same shape: **a command that reports success without
+having done the work.** `extract-abeyance-docs.py --check` compared zero documents and exited 0 because
+the source directory was clean. `news-sweep-plan.mjs --check` with no operand printed a plan and exited
+0. `--queries` with a bad value emitted an empty plan and exited 0. A malformed URL threw inside a
+`try` whose `catch` assumed the error had already been reported. None of them failed; all of them
+lied.
+
+The pattern to watch for: **any branch that treats "nothing to do" the same as "done".** The fix is
+always the same shape too — count what was actually verified, and make an empty count an error rather
+than a pass. `--check` now reports "compared 12 of 12" so the number is visible even on success, which
+is what makes the zero case obvious the moment it happens.
+
+Worth noting where these came from. The human reviewer found the two live rendering bugs; the automated
+reviewer found four silent-success paths in the tooling, which is the class a human skims past because
+the tool "works when you run it normally". Both passes were worth their cost, and they found disjoint
+sets.

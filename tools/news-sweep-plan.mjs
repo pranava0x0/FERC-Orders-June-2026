@@ -159,7 +159,12 @@ export function checkFindings(findings, { windowStart, windowEnd, knownHosts = [
   const known = new Set(knownHosts);
   findings.forEach((f, i) => {
     const at = `finding[${i}]${f.speaker ? ` (${f.speaker})` : ""}`;
-    if (!f.url || !/^https?:\/\//.test(f.url)) errs.push(`${at}: needs an http(s) url`);
+    // Parse rather than prefix-test: "https://" satisfies /^https?:\/\// but throws in `new URL`, and the
+    // catch below assumed any throw had already been reported, so a malformed URL passed with 0 errors.
+    let parsedUrl = null;
+    try { parsedUrl = f.url ? new URL(f.url) : null; } catch { parsedUrl = null; }
+    if (!parsedUrl || !/^https?:$/.test(parsedUrl.protocol) || !parsedUrl.hostname)
+      errs.push(`${at}: needs a valid http(s) url (got ${JSON.stringify(f.url)})`);
     if (!f.publisher) errs.push(`${at}: needs a publisher`);
     if (!f.published || !/^\d{4}-\d{2}-\d{2}$/.test(f.published)) errs.push(`${at}: needs an ISO published date`);
     else if (f.published < windowStart || f.published > windowEnd)
@@ -173,12 +178,12 @@ export function checkFindings(findings, { windowStart, windowEnd, knownHosts = [
     }
     if (!f.lane) errs.push(`${at}: needs a lane (${LANE_IDS.join(" | ")})`);
     else if (!LANE_IDS.includes(f.lane)) errs.push(`${at}: unknown lane "${f.lane}" (expected ${LANE_IDS.join(" | ")})`);
-    try {
-      const host = new URL(f.url).hostname.replace(/^www\./, "");
+    if (parsedUrl) {
+      const host = parsedUrl.hostname.replace(/^www\./, "");
       if (!known.has(host)) warn.push(`${at}: ${host} is a NEW outlet, not yet in SOURCES`);
       const norm = String(f.url).replace(/^https?:\/\/(www\.)?/, "").replace(/[/?#]+$/, "").toLowerCase();
       if (knownUrls[norm]) errs.push(`${at}: this exact URL is ALREADY cited as SOURCES.${knownUrls[norm]} — not a new finding`);
-    } catch { /* url error already reported */ }
+    }
     // A quote we already display is not new even from a different write-up of the same remarks. Two
     // guards against false positives, because this is a WARNING, not a rejection: a short quote can be
     // an innocent substring of a long evidence blob (a 42-char span inside the PJM auction blob matched
@@ -207,6 +212,15 @@ if (fileURLToPath(import.meta.url) === process.argv[1]) {
     process.exit(2);
   }
 
+  // `--check` with no operand (or an empty shell variable) used to fall through to the ordinary plan and
+  // exit 0, so an automated refresh would read "validated" from a run that validated nothing.
+  if (process.argv.includes("--check")) {
+    const operand = arg("--check", null);
+    if (!operand || operand.startsWith("--")) {
+      console.error("--check needs a findings file. Refusing to print a plan and exit 0, which would read as a clean validation.");
+      process.exit(2);
+    }
+  }
   const checkFile = arg("--check", null);
   if (checkFile) {
     if (!existsSync(checkFile)) { console.error(`no such findings file: ${checkFile}`); process.exit(1); }
