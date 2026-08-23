@@ -139,7 +139,7 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   already resolved.
 
 
-- **2026-08-23 · data/security · two committed summaries stored an absolute `/Users/pranava/...`
+- **2026-08-23 · data/security · two committed summaries stored an absolute `/Users/<name>/...`
   `source_text`, which both leaked the author's home directory into a public repo and silently excluded
   those two filings from page stamping.** CLAUDE.md requires repo-relative paths ("no machine-local paths
   in committed data"), and 20251205-5325 and 20251121-5496 had absolute ones. The second-order effect was
