@@ -1,5 +1,11 @@
 # backlog.md
 
+- **Audit the other CLI tools for silent-success paths.** (medium) One PR review found four in the two
+  newest tools. The older ones (`build-comment-worklist`, `grind-comment-downloads`, `analyze-comments`,
+  `fix-lenses`, `flag-summary`) have never been checked for the same class: a `--check`/filter that
+  finds nothing and exits 0, a flag with a missing operand, a `parseInt` of an absent argument. One pass
+  with the pattern in hand should be quick.
+
 - **Normalize bin-name casing across the comment corpus.** (low) `tools/survey-summaries.mjs` reports 14
   bin names reused more than twice, several of which are the same name in two casings: "20 MW threshold
   too low" (3x) and "20 MW Threshold Too Low" (3x); "Joint Study of Load and Generation" (5x) and "Joint

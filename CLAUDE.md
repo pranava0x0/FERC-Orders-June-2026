@@ -286,3 +286,49 @@ For a content/static site, default to a **cookieless, privacy-first** tool (no c
 - **Pieter Levels (levels.io)** — ship fast and ugly; boring tech beats shiny; solo-friendly defaults (vanilla, SQLite, single-file, cheap hosting); profit before scale; don't add a dependency you can't maintain alone; talk to users daily.
 
 When in doubt: **ship the smallest version that works, then iterate on what real users do, not what you imagine they'll do.**
+
+### 2026-08-23 (refresh: the clock stopped, a comment-analysis audit, two review passes)
+
+- **Silent success is a bug class, not a one-off: any branch that treats "nothing to do" the same as
+  "done".** Four instances in a single PR review. `extract-abeyance-docs.py --check` counted every
+  document as "unchanged" when the download directory was empty, printing `12 unchanged` and exiting 0
+  having compared nothing, which is the command REFRESH.md documents as the proof that committed text
+  still matches its source. `news-sweep-plan.mjs --check` with no operand printed a plan and exited 0;
+  `--queries` with a bad value emitted an empty plan and exited 0; a malformed `"https://"` passed the
+  URL prefix test, threw inside `new URL()`, and was swallowed by a `catch` assuming the error was
+  already recorded. **Fix shape, every time: count what was actually verified, make an empty count an
+  error, and print the count on success too** so the zero case is obvious the moment it happens.
+- **Blast radius is the whole consumer set, not the diff.** `procStatus()` was made reset-aware; the two
+  changed lines were right and two untouched functions one call away were wrong, because they read
+  `.s.date` back off the object the helper had just reinterpreted. The masthead announced a date six
+  days in the past as "Next deadline" on every tab and ten policy-map rows read "Aug 17, 2026 ·
+  Upcoming", with 119 tests, the quote sweep and the staleness checker all green. **After changing what
+  a shared derivation means, grep every reader of its output.**
+- **A superseded date is a new field, not an overwrite.** `procedural.steps` is the order's own
+  arithmetic and a test enforces issuance + the stated period, so rewriting `date` to the abeyance date
+  was rejected — correctly. The shape that works is `revised: { date, by, note, src }` plus one
+  `stepWhen()` helper that every derived surface consumes: status, the "next" pick, filing-matrix cells,
+  `check-staleness`. Without it the matrix would have accused six RTOs of missing a deadline FERC itself
+  moved. **And the per-docket exception needs its own path** — SPP got 95 days rather than 90, so
+  `filingCell` and the staleness checker read `d.abeyance.due` where a docket has one, or SPP reads as
+  delinquent for the three days between Nov 16 and its own Nov 20.
+- **Keep the tool that FOUND the defect, not only the one that now prevents it.** The 268 comment
+  summaries passed every check we had; the four defects were found by a throwaway script printing
+  distributions. Three became hard checks in `validate-summaries.mjs` and the script went to `/tmp`.
+  It is now `tools/survey-summaries.mjs`: a should-be-zero set at the top, distributions below that are
+  deliberately not asserted. The validator is the gate; the survey is how the next unknown defect
+  becomes visible.
+- **A manual check run more than twice is a missing test.** Timeline chronological order was verified
+  with an ad-hoc `node -e` four times in one session and hand-fixed four times. Now two tests, with the
+  real exception recorded: span events (`date: "Dec 2025 to Jun 2026"`) carry an iso that is a placement
+  hint, not a moment, so they are exempt.
+- **A search agent's quotes are accurate; its characterizations are not.** It rendered Utility Dive's
+  own sentence (`The PJM Interconnection's "status quo is really untenable,"`) as a whole sentence
+  attributed to LaCerte, and called the Maryland delegation's letter a request for "retroactive" relief,
+  a word appearing nowhere in it. Verify the frame around a quote, not just the span. It also returned
+  two findings that were already on this site, because the sweep plan listed known *hosts* and
+  utilitydive.com was one — dedupe by exact URL and by already-captured quote text.
+- **The two review passes found disjoint sets.** The prose-reasoning reviewer found the live rendering
+  bugs in untouched code; the automated reviewer (Codex) found four silent-success paths in the CLI
+  tooling, the class a human skims because the tool works when run normally. Run both when a change
+  alters what a shared value means.
