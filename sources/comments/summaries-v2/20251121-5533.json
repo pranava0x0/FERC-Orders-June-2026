@@ -114,7 +114,8 @@
       "concern": "Rules should treat co-location with new generation differently from co-location with existing generation",
       "bins": [
         "pr:colo",
-        "topic:existing-gen-retirement"
+        "topic:existing-gen-retirement",
+        "pr:proximate"
       ],
       "page": 14
     },

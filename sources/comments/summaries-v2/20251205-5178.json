@@ -96,7 +96,8 @@
       "concern": "Studies must assess closed-loop control instability; transmission owners must set location-specific damping requirements",
       "bins": [
         "pr:study",
-        "pr:proximate"
+        "pr:proximate",
+        "topic:control-interactions"
       ],
       "page": 6
     }

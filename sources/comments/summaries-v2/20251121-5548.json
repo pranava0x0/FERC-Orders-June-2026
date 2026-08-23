@@ -156,7 +156,11 @@
       "quote_ids": [
         1,
         2,
-        8
+        3,
+        4,
+        5,
+        8,
+        11
       ]
     },
     {
@@ -165,6 +169,7 @@
       "stance": "neutral",
       "description": "Data centers account for about 55 percent of utility demand growth over the next five years, with unprecedented scale (16 GW-scale facilities) coming online in 2026-2027. FERC should balance infrastructure solutions with demand-mitigation strategies including improved forecasting.",
       "quote_ids": [
+        2,
         3,
         6,
         7

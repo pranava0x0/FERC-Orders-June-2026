@@ -109,6 +109,15 @@
         "topic:workforce-shortage"
       ],
       "page": null
+    },
+    {
+      "id": 12,
+      "text": "We agree with the sixth principle's assertion that hybrid interconnections shall be required to install system protections.",
+      "concern": "Agrees hybrid interconnections must install system protections",
+      "bins": [
+        "aq:protection"
+      ],
+      "page": null
     }
   ],
   "bins": [
@@ -164,7 +173,9 @@
       "name": "System protection requirements",
       "stance": "support",
       "description": "Terraflux agrees that hybrid interconnections should be required to install system protections.",
-      "quote_ids": []
+      "quote_ids": [
+        12
+      ]
     },
     {
       "key": "aq:expedited",

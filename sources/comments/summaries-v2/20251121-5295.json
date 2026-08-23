@@ -106,7 +106,8 @@
       "bins": [
         "aq:upgradecost",
         "pr:cost",
-        "topic:crediting-mechanism"
+        "topic:crediting-mechanism",
+        "aq:deposits"
       ],
       "page": 9
     },
@@ -192,6 +193,7 @@
       "stance": "support",
       "description": "DWR favors enabling load to bid into real-time markets and participate in demand response rather than offering a one-time queue jump. DWR cites its own 2,600 MW of curtailable SWP pumping load as an example of existing curtailable capacity that market tools could unlock at no additional ratepayer cost.",
       "quote_ids": [
+        1,
         2,
         4,
         5,

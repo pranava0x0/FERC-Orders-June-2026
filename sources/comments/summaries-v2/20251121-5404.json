@@ -101,7 +101,8 @@
       "text": "This frees up limited utility resources to be spent on projects that are truly shovel-ready. It also informs critical utility load forecasting and planning processes, helping to prevent misallocation of resources or overinvestment in the system.",
       "concern": "deposits improve utility resource allocation and forecasting",
       "bins": [
-        "pr:study"
+        "pr:study",
+        "aq:deposits"
       ],
       "page": 4
     },

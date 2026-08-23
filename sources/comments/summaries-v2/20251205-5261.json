@@ -12,7 +12,8 @@
       "concern": "Support nationwide consistency while preserving state retail authority",
       "bins": [
         "pr:study",
-        "aq:jurisdiction"
+        "aq:jurisdiction",
+        "pr:cost"
       ],
       "page": null
     },

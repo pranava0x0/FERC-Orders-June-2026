@@ -72,7 +72,8 @@
       "concern": "Usage-based crediting mechanism protects both data centers and other customers",
       "bins": [
         "aq:deposits",
-        "pr:cost"
+        "pr:cost",
+        "aq:upgradecost"
       ],
       "page": 8
     },

@@ -51,7 +51,8 @@
       "bins": [
         "aq:expedited",
         "pr:colo",
-        "pr:flex"
+        "pr:flex",
+        "aq:hybridrights"
       ],
       "page": 5
     },
@@ -247,6 +248,7 @@
         2,
         8,
         11,
+        14,
         15
       ]
     },
@@ -280,6 +282,7 @@
       "stance": "support",
       "description": "LS Power supports integrating demand response frameworks into large-load interconnection agreements for flexible loads. Curtailment rights for hybrid facilities must be bounded by generation-load balance constraints, and resource adequacy planning must reflect curtailable load so that flexibility does not distort competitive price signals.",
       "quote_ids": [
+        5,
         6,
         7
       ]

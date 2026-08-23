@@ -155,7 +155,8 @@
       "bins": [
         "aq:deposits",
         "pr:cost",
-        "topic:ratepayer-protection"
+        "topic:ratepayer-protection",
+        "aq:upgradecost"
       ],
       "page": 29
     }
@@ -183,7 +184,8 @@
         9,
         12,
         13,
-        14
+        14,
+        15
       ]
     },
     {
@@ -195,6 +197,7 @@
         7,
         8,
         9,
+        12,
         15
       ]
     },

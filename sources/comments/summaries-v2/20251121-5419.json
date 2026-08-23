@@ -116,7 +116,8 @@
       "text": "In areas with an RTO that have already developed adequate procedures, the NPRB encourages FERC to adopt a collaborative approach where FERC, state commissions and transmission providers work together to develop solutions.",
       "concern": "FERC should collaborate with RTOs and states, not impose rules unilaterally",
       "bins": [
-        "topic:collaborative-approach"
+        "topic:collaborative-approach",
+        "topic:local-process"
       ],
       "page": 3
     },
@@ -136,7 +137,8 @@
       "concern": "FERC can meet DOE goals through collaborative means without overreach",
       "bins": [
         "aq:jurisdiction",
-        "topic:collaborative-approach"
+        "topic:collaborative-approach",
+        "topic:local-process"
       ],
       "page": 3
     },
