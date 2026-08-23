@@ -27,6 +27,15 @@ export function loadData(root = ROOT) {
   return ctx.window.FERC_DATA;
 }
 
+// "2026-11-16" -> "November 16, 2026". These pages are prose for a human and a crawler, not a data grid.
+const MONTHS = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"];
+const fmtLong = (iso) => {
+  const m = String(iso).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  // "" rather than String(iso) on a miss: these pages are served HTML, and a missing field must render
+  // as nothing, never as the literal "undefined".
+  return m ? `${MONTHS[+m[2] - 1]} ${+m[3]}, ${m[1]}` : "";
+};
 const esc = (s) =>
   String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 // Plain text for meta/JSON-LD: fold the typographic quotes data.js uses so attributes stay clean.
@@ -145,6 +154,22 @@ export function buildDocketPage(d, D, root = ROOT) {
     .join("\n");
 
   const askItems = (d.asks || []).map((a) => `        <li>${esc(a)}</li>`).join("\n");
+
+  // The Aug 14, 2026 order that paused this docket. These static pages are what a crawler and a reader
+  // arriving from search actually get, so leaving it out would serve a page saying the RTO owes a filing
+  // on Aug 17 with nothing to say the proceeding is stopped. It goes ABOVE the directives for that reason.
+  const ab = d.abeyance;
+  const abeyanceSection = ab
+    ? `\n    <h2>This proceeding is held in abeyance</h2>\n` +
+      `    <p>On ${esc(fmtLong(ab.issued))} FERC granted the abeyance motion of ${esc(ab.granted)} ` +
+      `(${esc(ab.kind)} ${esc(ab.accession)}${ab.cite ? `, ${esc(ab.cite)}` : ""}). ` +
+      `Responses to the show cause order are now due <strong>${esc(fmtLong(ab.due))}</strong>, ` +
+      `answers ${esc(fmtLong(ab.answers))}. A respondent that instead makes an FPA section 205 filing by that ` +
+      `date has its obligation to respond suspended, and the proceeding stays in abeyance pending further ` +
+      `Commission direction.</p>\n` +
+      `    <p>${esc(ab.note)}</p>\n` +
+      (ab.quote ? `    <blockquote class="dk-quote">${esc(ab.quote)}</blockquote>\n` : "")
+    : "";
   const roster = (d.respondentList || []).map((r) => esc(r)).join(" · ");
 
   // Public comments that specifically name-check this RTO (the `rg:` bin lens). Coverage caveat stated
@@ -233,6 +258,7 @@ ${jsonLd(d, D)}
       <a href="${esc(src.url)}" rel="nofollow noopener" target="_blank">Official source on ferc.gov ↗</a>
     </p>
 
+${abeyanceSection}
     <h2>What is unique to ${esc(d.rto)}</h2>
     <p>${esc(d.unique)}</p>
 

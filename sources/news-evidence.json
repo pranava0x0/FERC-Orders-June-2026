@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-07-28",
-  "note": "Verified source snippets backing the directly-quoted phrases added by the 2026-07-28 news refresh (news-tracks-plan.md): the AD26-7-000 governance track and the sc6 filing observations. Mirrors sources/voices-evidence.json, and is swept by tools/verify-quotes.mjs the same way, so no displayed quote on a track surface is unbacked. A test in tests/source-accuracy.test.mjs asserts every quoted span in a timeline event body resolves here or in the committed order corpus.",
+  "captured_at": "2026-08-23",
+  "note": "Verified source snippets backing the directly-quoted phrases added by the 2026-07-28 news refresh (news-tracks-plan.md): the AD26-7-000 governance track and the sc6 filing observations. Mirrors sources/voices-evidence.json, and is swept by tools/verify-quotes.mjs the same way, so no displayed quote on a track surface is unbacked. A test in tests/source-accuracy.test.mjs asserts every quoted span in a timeline event body resolves here or in the committed order corpus. Extended by the 2026-08-23 sweep with the WIRES remarks, the Maryland congressional letter (read directly from the signed PDF, not a summary) and two analyst readiness assessments.",
   "capture_method": "federalregister.gov items were read from their full_text .txt endpoints (the FR HTML pages bot-block automated fetches; the JSON API and full_text endpoints are open). Trade-press items were fetched and their quotations transcribed as printed. ferc.gov and eLibrary stayed Cloudflare-gated throughout, so nothing here is an eLibrary confirmation.",
   "items": {
     "swett-legitimacy": {
@@ -50,6 +50,34 @@
       "speaker": "PJM Interconnection news release",
       "occasion": "July 14, 2026",
       "evidence": "PJM's 2028/2029 Base Residual Auction procured 138,318 MW of unforced capacity. The price came in at the FERC-approved cap of $325/MW-day (UCAP) for the entire PJM footprint. The cleared supply procured in the auction times the clearing price totals $16.4 billion. The capacity of the resources procured in the auction, plus FRR resources, is short of PJM's 20% installed reserve margin target by 6,831 MW. PJM continues to hold a reserve margin of 14.7% for the 2028/2029 Delivery Year."
+    },
+    "lacerte-wires": {
+      "src": "udlacerte",
+      "speaker": "David LaCerte, FERC Commissioner",
+      "occasion": "WIRES meeting, Philadelphia, July 9, 2026",
+      "evidence": "status quo is really untenable. Looking at things differently is hard, especially in entrenched utilities that have been doing this for a long time. We have a lot of other models at other RTOs and ISOs across the country that are much more functional. We need to make sure that the incentives that we give are properly tailored to actually meet the goals.",
+      "note": "Utility Dive renders the first phrase as a partial quote inside its own sentence ('The PJM Interconnection's \"status quo is really untenable\"'), so only the words inside the inner quotation marks are his; the site quotes that fragment and no more."
+    },
+    "md-delegation-letter": {
+      "src": "mdcong",
+      "speaker": "Maryland Congressional Delegation (Sens. Van Hollen and Alsobrooks; Reps. Hoyer, Mfume, Raskin, Ivey, Elfreth, McClain Delaney and Olszewski)",
+      "occasion": "Letter to FERC Chairman Swett, July 27, 2026",
+      "evidence": "We were encouraged by the Commission's June 18, 2026 orders directing PJM and five other grid operators to justify or reform how they assign the costs of serving large loads, which advance the essential goal of protecting ordinary consumers. We urge the Commission to act expeditiously to provide relief from these costs for Maryland ratepayers, including as requested in OPC's complaint.",
+      "note": "Read directly from the signed PDF with fitz, not from a summary. The letter cites $22 billion in PJM projects advanced principally to serve data centers, roughly $2 billion of it assigned to Maryland ratepayers, and an estimated $1.6 billion on Maryland bills over ten years, $823 million of it residential, about $345 for the average customer. It asks for relief as requested in the Maryland OPC complaint at Docket EL26-63, not for retroactive refunds."
+    },
+    "spanberger-scc": {
+      "src": "vagov",
+      "speaker": "Abigail Spanberger, Governor of Virginia",
+      "occasion": "Statement on the Virginia SCC order, August 10, 2026",
+      "evidence": "I am proud that after my administration urged state regulators to protect Virginia families and small businesses from shouldering the cost of new transmission infrastructure meant to serve data centers, the SCC listened. This order \\u2014 which is projected to save Virginians hundreds of millions of dollars \\u2014 makes sure that data centers are paying the full cost of the transmission infrastructure their developments require.",
+      "note": "The release does not mention FERC or PJM; it is state retail action running parallel to the federal proceeding."
+    },
+    "sherrill-fairshare": {
+      "src": "njgov",
+      "speaker": "Mikie Sherrill, Governor of New Jersey",
+      "occasion": "Signing of the Data Center Fair Share Act (S731/A796), July 7, 2026",
+      "evidence": "For too long, New Jersey families have paid the price for poor oversight, outdated policies, and rising demand on our electric grid by unchecked actors.",
+      "note": "The bill creates a data-center ratepayer class, requires large loads to curtail before residential customers on a strained grid, and lets large loads offset capacity obligations by funding demand reduction elsewhere."
     }
   }
 }
