@@ -116,7 +116,26 @@ node tools/build-llms.mjs
 node --test tests/*.test.mjs
 node tools/verify-quotes.mjs
 python3 tools/extract-abeyance-docs.py --check   # committed order text still matches its source
+node tools/survey-summaries.mjs --brief          # comment corpus: the should-be-zero set
 ```
+
+**The one check that is not a script.** The repo has no dependencies and no package.json, so there is no
+jsdom and the renderers cannot be exercised headlessly. After a refresh, open the preview and run this
+in the console; it is thirty seconds and it has caught real breakage:
+
+```js
+// every tab renders, and no data hole leaks into the copy
+(async () => { const s = ms => new Promise(r => setTimeout(r, ms)); const out = {};
+  for (const t of ['overview','timeline','reforms','dockets','comments','news']) {
+    location.hash = '#' + t; await s(700); const p = document.querySelector('#panel-' + t);
+    const x = p ? p.innerText : '';
+    out[t] = { len: x.length, undef: /\bundefined\b/.test(x), nan: /\bNaN\b/.test(x) };
+  } console.table(out); })();
+```
+
+Every `len` non-zero, every `undef`/`nan` false. Then check `document.documentElement.scrollWidth -
+clientWidth === 0` at 375px, and read the console at all levels. Setting `location.hash` synchronously
+and reading immediately returns an empty panel: the render is async, hence the wait.
 
 If the sweep pulled new FERC documents, extract them BEFORE quoting from them: add a record to `DOCS`
 in `tools/extract-abeyance-docs.py`, run it, and the text lands in `sources/text/abeyance/` where

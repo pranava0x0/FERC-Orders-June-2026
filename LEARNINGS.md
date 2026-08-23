@@ -237,3 +237,30 @@ run-by-run numbers are in [`agent-runs.md`](agent-runs.md); per-bug detail is in
   characters. A quote misattributed from MISO to SPP passed both the tool and its test. Two of my own
   regression tests this session also passed on a deliberately reintroduced bug before I tightened them.
   **A test you have not seen fail is a test you have not written.**
+
+## Keep the tool that FOUND the bug, not just the one that prevents it (2026-08-23)
+
+- **A validator and a survey are different jobs, and only one of them was being kept.** The comment
+  corpus passed every check it had, so the defects were found by a throwaway script that printed
+  distributions: link asymmetry, quoteless bins, org_type spread, bin-name reuse, topic sprawl. Three of
+  its findings became hard checks in `validate-summaries.mjs` and the script went in `/tmp`. That is
+  backwards. The validator enforces the failure modes we already know; the survey is how the *next*
+  unknown one gets seen, and rewriting it from scratch each session is the expensive part. It is now
+  `tools/survey-summaries.mjs`, with a should-be-zero set and a distributions section that is explicitly
+  not asserted.
+- **A manual check repeated more than twice is a missing test.** Timeline chronological order was
+  verified with an ad-hoc `node -e` four times in one session, and fixed by hand four times, because
+  nothing asserted it. Now two tests: point events ascend, and every iso matches
+  `YYYY-MM-DD` with an optional same-day ordering suffix. Span events (`date: "Dec 2025 to Jun 2026"`)
+  are exempt by design, since their iso is a placement hint rather than the moment they occurred.
+- **Scripting the happy path is not the same as scripting the discovery path.** The docket sweep was
+  committed early; the eLibrary *general search* was not, and that is the half that finds filings a
+  docket sheet structurally cannot show — a compliance filing gets its own ER docket, so the two Aug 17
+  filings appear nowhere on the EL25-49 sheets. It also caught the pagination bug, by returning a filing
+  the docket sweep of the same docket had missed. Both halves are now in `tools/elibrary-sweep.js`.
+- **Know what should stay unscripted, and say so.** Pulling candidate quotes out of a new corpus, and
+  verifying an agent's finding against a primary source, are judgment work: the regex is different every
+  time and the question "does this source actually support this claim" is the part a human is for.
+  Scripting them would produce a tool nobody trusts. The render smoke check is unscripted for a
+  different reason: no jsdom, because the repo has no dependencies and should not gain one for this. It
+  lives in REFRESH.md as a paste-in console snippet instead.
