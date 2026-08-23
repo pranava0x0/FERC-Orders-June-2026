@@ -177,3 +177,63 @@ run-by-run numbers are in [`agent-runs.md`](agent-runs.md); per-bug detail is in
   claim should grep the texts too, not just the display string (see the abeyance test in
   `tests/data.test.mjs`). Corollary: external news is a working accuracy probe — ISO-NE announcing
   an abeyance plan is what exposed the mislabel.
+
+## A moved deadline is not a missed one (2026-08-23)
+
+- **A date written into display copy will outlive the fact it describes.** `renderProcedural()` carried
+  one hand-written sentence: "August 17 carries both the six show-cause filings and PJM's further
+  compliance filing." FERC moved *both* clocks to November, and that sentence kept asserting August 17
+  on the Overview tab, directly above a matrix that had already been corrected. Every other date on the
+  site is rendered from `data.js` through `fmtISO`; this was the one that wasn't, and it was the one that
+  went stale. The fix was not to retype the new date but to **derive the claim**: `collideNote()` reads
+  the operative show-cause date and the E-2 track's own next date and renders only while they genuinely
+  coincide, so if the two clocks separate the callout disappears instead of lying. Guarded by a test that
+  allows exactly one hardcoded date in `app.js` display strings, the orders' own issuance, which cannot
+  move.
+- **Model a reset deadline as a separate field, not an overwrite.** The instinct on learning that Aug 17
+  became Nov 16 is to edit `steps[].date`. The test suite rejected that, correctly: `procedural.steps` is
+  the *order's own arithmetic* (issuance + the period the order states), and a test asserts each step sits
+  at its quoted interval. Overwriting it would have destroyed the record of what the order actually
+  required. The shape that works is `steps[].revised = { date, by, note, src }`, with one helper
+  (`stepWhen`) deciding which date governs, used by status, the "next" pick, every derived filing-matrix
+  cell, and `check-staleness.mjs`. The UI then shows both: the new date, the old struck through, and why.
+- **Without that, the site would have accused six RTOs of missing a deadline FERC itself moved.** The
+  filing matrix derives `none-observed` for any (docket, step) with no stored observation once the step's
+  date passes. That derivation is the right design and it produces a false accusation the moment the
+  deadline moves underneath it. Any derived-from-the-clock status needs to measure against the operative
+  date, not the original.
+- **Guard a "was X" render on X existing.** `moved = s.revised && s.revised.date` gated a strikethrough of
+  `s.date`, so a step reset from a *relative* window (no original fixed date) would render a bare "was ".
+  Latent today, one line to prevent: gate the strikethrough on both dates, and the explanation on the
+  reset alone.
+- **Check what the STATIC pages serve, not what the app renders.** The per-docket SEO pages
+  (`tools/build-docket-pages.mjs`) are a second renderer over the same data, and they had no notion of the
+  abeyance: a crawler or a search visitor got "respond by Aug 17" with nothing saying the proceeding was
+  paused. Adding a field to `data.js` and wiring it into `app.js` is two of the three places it has to go.
+
+## Blast radius is the whole consumer set, not the diff (2026-08-23)
+
+- **Changing what a helper MEANS silently breaks every reader of its output.** `procStatus()` gained a
+  reset-aware date, and the two lines that changed were correct. The two that broke were untouched and
+  one function away: `setMastheadDeadline` reads `ps.next.s.date`, and `pmStepWhen` returns
+  `fmtISO(hit.s.date)`. Both had been right for months; both now paired a status derived from the *new*
+  date with the *old* date printed beside it. The masthead announced a date six days in the past as
+  "Next deadline" above every tab, and ten policy-map rows read "Aug 17, 2026 · Upcoming". 119 tests,
+  the quote sweep and the staleness checker were all green. **After changing a shared derivation, grep
+  every consumer of the value it produces** — here, every read of `.s.date` off a `procStatus()` result.
+- **An independent reviewer earns its cost on exactly this class.** Self-review caught the one hardcoded
+  string I had written; it did not catch either of the two live bugs in code I had not edited, because I
+  was reading the diff and the bugs were not in the diff. Give the reviewer the enclosing functions and
+  say plainly that untouched lines are in scope.
+- **A per-entity exception has to reach every derived surface or it becomes an accusation.** FERC gave
+  SPP 95 days rather than 90. The board can only show one date, which is fine, but the filing matrix and
+  the staleness checker are per-docket and were still measuring all six against the majority date, so for
+  three days in November SPP's cell would have said "the deadline has passed and our checks found
+  nothing" while its own card said Nov 20. When data gains a per-entity exception, every surface that
+  derives status from the shared value needs the exception too.
+- **Check a check by breaking it deliberately, and be suspicious when it passes.** The abeyance quote
+  guard read convincingly and was nearly vacuous: it verified against the union of twelve texts with a
+  60-char LCS fallback, and six orders issued the same day from one template share far more than 60
+  characters. A quote misattributed from MISO to SPP passed both the tool and its test. Two of my own
+  regression tests this session also passed on a deliberately reintroduced bug before I tightened them.
+  **A test you have not seen fail is a test you have not written.**

@@ -1,5 +1,13 @@
 # backlog.md
 
+- **Teach `check-staleness.mjs` to catch expired FRAMING, not just expired dates.** (medium) It flags a
+  passed `kind: "deadline"` event, but not an event whose date is still in the future while its subject
+  has already resolved. Two shipped that way this session: an abeyance event written in the conditional
+  ("any abeyance would push the deadline later") months after all six were granted, and a response
+  deadline whose derived date the abeyance orders had replaced. A cheap heuristic: flag any event whose
+  body contains conditional markers ("would", "if requested", "could", "is expected to") when a later
+  event on the same track describes the same subject as done.
+
 - **done (2026-07-14) — spec phase C: record-to-rule crosswalk (`policyMap`) + policy-map landing + reader strip.**
   Shipped the zero-inference crosswalk the spec sequences first. `docs/js/data.js` gains a hand-authored,
   cite-backed `policyMap`: one row per canonical aq:/pr: issue (13) joining what DOE's ANOPR asked, what the
