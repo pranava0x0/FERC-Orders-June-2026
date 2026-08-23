@@ -106,7 +106,8 @@
       "concern": "Large loads should pay directly for interstate grid improvements and GETs",
       "bins": [
         "pr:cost",
-        "topic:grid-enhancing-technologies"
+        "topic:grid-enhancing-technologies",
+        "topic:direct-payment"
       ],
       "page": 4
     },

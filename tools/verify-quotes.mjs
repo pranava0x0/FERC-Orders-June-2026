@@ -17,7 +17,7 @@
 //              short curator term-labels like ‘large load’.) Both tiers fail the run on a miss.
 //   SPOKEN   — auto-caption quotes (YouTube), reported separately: not in committed text, so unverifiable.
 
-import { readFileSync, readdirSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import vm from "node:vm";
@@ -110,11 +110,26 @@ export function loadOrderTexts() {
   return out;
 }
 const orderText = loadOrderTexts();
+// The Aug 2026 Commission actions ON those proceedings: the six abeyance orders, the errata, the
+// co-location extension and compliance transmittals, and the one substantive show-cause answer
+// (tools/extract-abeyance-docs.py). They are a separate corpus from the June 18 orders and quoted
+// separately, so a quote from an abeyance order verifies without loosening the order sweep.
+export function loadAbeyanceTexts() {
+  const dir = join(ROOT, "sources", "text", "abeyance");
+  if (!existsSync(dir)) return {};
+  const out = {};
+  for (const file of readdirSync(dir)) {
+    if (file.endsWith(".txt")) out[file.replace(/\.txt$/, "")] = loose(read("sources", "text", "abeyance", file));
+  }
+  return out;
+}
+const abeyanceText = loadAbeyanceTexts();
 const fercDoe = ["press-release", "fact-sheet", "summaries", "rm26-4", "doe-403-full"]
   .map((n) => loose(read("sources", "text", `${n}.txt`)))
   .join(" ¶ ");
 const allOrders = Object.values(orderText).join(" ¶ ");
-const wholeCorpus = `${allOrders} ¶ ${fercDoe}`;
+const allAbeyance = Object.values(abeyanceText).join(" ¶ ");
+const wholeCorpus = `${allOrders} ¶ ${allAbeyance} ¶ ${fercDoe}`;
 
 const evidence = JSON.parse(read("sources", "voices-evidence.json"));
 const evidenceText = loose(Object.values(evidence.voices).map((v) => v.evidence).join(" ¶ "));
@@ -149,6 +164,32 @@ for (const d of [...D.dockets, D.colocation].filter(Boolean)) {
   const t = orderText[d.item] || "";
   for (const x of d.dir || []) req(`${d.item} directive "${x.p}"`, x.q, t);
   for (const r of d.reg || []) if (r.a) req(`${d.item} finding`, r.a, t);
+  // 1b) The Aug 14, 2026 abeyance order for this docket, checked against THAT DOCKET'S OWN file.
+  //     An earlier version checked against the union of all twelve abeyance texts, reasoning that the
+  //     suspension clause is templated across the six. It is, but the other three displayed quotes are
+  //     not, and a union check cannot tell a docket quoting its own order from a docket quoting someone
+  //     else's: MISO's "noting AMP's answer…" sentence passed against SPP's entry. Same trap CLAUDE.md
+  //     records from the LaCerte episode, since carries() proves presence, not identity.
+  //     EXACT containment, not carries(): carries() falls back to a 60-char longest-common-substring,
+  //     and two FERC orders from the same day share far more than 60 characters of boilerplate, so the
+  //     per-file check alone still passed a deliberately misattributed sentence. These texts come from
+  //     DOCX with a clean text layer, not OCR, so there are no footnote splices to tolerate and exact
+  //     containment is the right bar. Verified: all four displayed quotes contain exactly in their own
+  //     file today.
+  if (d.abeyance?.quote) {
+    // `abeyance-` prefix, not just the docket: PJM's and MISO's dockets also have an errata file, so a
+    //     docket-substring match would let a quote lifted from the ERRATUM pass while labeled as exact in
+    //     the abeyance order.
+    const key = String(d.docket || "").toLowerCase().replace(/-\d+$/, "");   // EL26-67-000 -> el26-67
+    const own = Object.entries(abeyanceText)
+      .filter(([slug]) => slug.startsWith("abeyance-") && slug.includes(key))
+      .map(([, t]) => t).join(" ¶ ");
+    required.push({
+      label: `${d.item} abeyance ${d.abeyance.cite} (exact, own order text)`,
+      quote: d.abeyance.quote,
+      ok: !!own && own.includes(loose(d.abeyance.quote)),
+    });
+  }
 }
 
 // 2) Commissioner statements (REQUIRED). The headline quote is templated across all six §206 orders;

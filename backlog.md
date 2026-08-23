@@ -1,5 +1,28 @@
 # backlog.md
 
+- **Normalize bin-name casing across the comment corpus.** (low) `tools/survey-summaries.mjs` reports 14
+  bin names reused more than twice, several of which are the same name in two casings: "20 MW threshold
+  too low" (3x) and "20 MW Threshold Too Low" (3x); "Joint Study of Load and Generation" (5x) and "Joint
+  study of load and generation" (3x). They render as distinct positions in the UI when they are one.
+  Decide a convention (sentence case reads better next to the descriptions), apply it, and add a
+  case-insensitive duplicate check to validate-summaries.
+
+- **Consolidate the emergent `topic:` vocabulary.** (medium) 673 distinct topic bins across 268 files,
+  with obvious near-synonyms: `topic:state-authority` (7) vs `topic:state-jurisdiction` (3),
+  `topic:tariff-transparency` (12) vs `topic:transparency` (5) vs `topic:queue-transparency` (4),
+  `topic:cost-allocation` (5) vs `topic:cost-causation` (3). The by-issue index only surfaces topics
+  appearing in 3+ letters, so the long tail is invisible to readers while still fragmenting the ones
+  that are surfaced. Merge the synonym clusters into a controlled list, keep genuinely one-off topics
+  as they are, and record the mapping so the merge is auditable.
+
+- **Teach `check-staleness.mjs` to catch expired FRAMING, not just expired dates.** (medium) It flags a
+  passed `kind: "deadline"` event, but not an event whose date is still in the future while its subject
+  has already resolved. Two shipped that way this session: an abeyance event written in the conditional
+  ("any abeyance would push the deadline later") months after all six were granted, and a response
+  deadline whose derived date the abeyance orders had replaced. A cheap heuristic: flag any event whose
+  body contains conditional markers ("would", "if requested", "could", "is expected to") when a later
+  event on the same track describes the same subject as done.
+
 - **done (2026-07-14) — spec phase C: record-to-rule crosswalk (`policyMap`) + policy-map landing + reader strip.**
   Shipped the zero-inference crosswalk the spec sequences first. `docs/js/data.js` gains a hand-authored,
   cite-backed `policyMap`: one row per canonical aq:/pr: issue (13) joining what DOE's ANOPR asked, what the

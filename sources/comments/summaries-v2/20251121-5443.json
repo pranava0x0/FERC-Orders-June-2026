@@ -1,7 +1,7 @@
 {
   "accession": "20251121-5443",
   "filer": "The Pew Charitable Trusts",
-  "org_type": "Environmental & public interest",
+  "org_type": "enviro",
   "filed": "2025-11-21",
   "source_text": "sources/comments/files/20251121-5443__The-Pew-Charitable-Trusts/Pew Comments to FERC Large Load Interconnection ANOPR Docket RM26-4-000.txt",
   "overall_summary": "Pew urges FERC to explicitly allow virtual power plants (VPPs) and distributed energy resource aggregations to be studied alongside large loads in interconnection requests. VPPs offer a cost-effective, near-term tool to reduce capacity procurement needs and avoid costly network upgrades while supporting consumer savings and grid reliability. Pew recommends that FERC establish clear implementation principles, direct RTOs/ISOs to update Order 2222 compliance to accelerate VPP availability, and enable large loads to utilize VPPs as part of their interconnection pathway.",
@@ -97,7 +97,8 @@
       "stance": "support",
       "description": "VPPs can lower capacity procurement needs and defer or avoid costly network upgrades. Pew argues this aligns with DOE's cost-minimization objectives for large load interconnection.",
       "quote_ids": [
-        2
+        2,
+        9
       ]
     },
     {
@@ -106,7 +107,8 @@
       "stance": "support",
       "description": "VPPs provide modular, scalable flexibility that responds dynamically to system conditions and delivers verifiable reductions in net peak demand. This supports the show-cause-order's flexibility principles.",
       "quote_ids": [
-        4
+        4,
+        9
       ]
     },
     {

@@ -1,9 +1,9 @@
 {
   "accession": "20251205-5325",
   "filer": "Americans for a Clean Energy Grid",
-  "org_type": "clean energy advocacy coalition",
+  "org_type": "clean_energy",
   "filed": "2025-12-05",
-  "source_text": "/Users/pranava/Projects/FERC Show Cause Orders/sources/comments/files/20251205-5325__Americans-for-a-Clean-Energy-Grid/ACEG ANOPR Reply Comments_RM26-4-000_Final.txt",
+  "source_text": "sources/comments/files/20251205-5325__Americans-for-a-Clean-Energy-Grid/ACEG ANOPR Reply Comments_RM26-4-000_Final.txt",
   "overall_summary": "ACEG strongly supports rapid large-load interconnection but emphasizes that procedural reforms alone are insufficient; the Commission must mandate regional and interregional transmission expansion and proactive planning frameworks to accommodate new loads at utility scale. ACEG recommends improved load forecasting, cost-allocation mechanisms protecting existing customers, and multi-value transmission buildout.",
   "quotes": [
     {
@@ -12,7 +12,8 @@
       "concern": "Transmission infrastructure expansion required alongside interconnection",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 2,
@@ -21,7 +22,8 @@
       "bins": [
         "pr:cost",
         "topic:cost-allocation"
-      ]
+      ],
+      "page": 1
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "concern": "Support infrastructure but must address affordability and state-federal coordination",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "bins": [
         "pr:cost",
         "topic:transmission-capacity"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 5,
@@ -47,7 +51,8 @@
       "bins": [
         "pr:study",
         "topic:transmission-capacity"
-      ]
+      ],
+      "page": 2
     },
     {
       "id": 6,
@@ -55,7 +60,8 @@
       "concern": "Large loads prefer grid connection for operational reliability despite near-term alternatives",
       "bins": [
         "topic:reliability"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 7,
@@ -64,7 +70,8 @@
       "bins": [
         "pr:study",
         "topic:transmission-planning"
-      ]
+      ],
+      "page": 3
     },
     {
       "id": 8,
@@ -74,7 +81,8 @@
         "pr:study",
         "topic:transmission-planning",
         "topic:cost-allocation"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 9,
@@ -83,7 +91,8 @@
       "bins": [
         "pr:study",
         "topic:transmission-planning"
-      ]
+      ],
+      "page": 4
     },
     {
       "id": 10,
@@ -92,7 +101,8 @@
       "bins": [
         "pr:cost",
         "pr:study"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 11,
@@ -100,7 +110,8 @@
       "concern": "Broad coalition support for transmission expansion to enable economic growth",
       "bins": [
         "pr:cost"
-      ]
+      ],
+      "page": 5
     },
     {
       "id": 12,
@@ -110,7 +121,8 @@
         "pr:cost",
         "pr:study",
         "topic:cost-allocation"
-      ]
+      ],
+      "page": 6
     },
     {
       "id": 13,
@@ -119,7 +131,8 @@
       "bins": [
         "pr:study",
         "pr:cost"
-      ]
+      ],
+      "page": 6
     }
   ],
   "bins": [
@@ -149,6 +162,7 @@
         7,
         8,
         9,
+        10,
         12,
         13
       ]

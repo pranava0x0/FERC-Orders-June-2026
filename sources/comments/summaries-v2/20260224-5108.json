@@ -178,11 +178,13 @@
       "stance": "support",
       "description": "The filer documents that shallow charges shift billions in upgrade costs to existing ratepayers, raising bills and stoking opposition. It supports deep charging and bespoke contract structures that place costs on the connecting data centre while providing cost certainty for developers.",
       "quote_ids": [
+        3,
         6,
         7,
         8,
         9,
-        10
+        10,
+        13
       ]
     },
     {
@@ -193,7 +195,8 @@
       "quote_ids": [
         4,
         5,
-        10
+        10,
+        13
       ]
     },
     {

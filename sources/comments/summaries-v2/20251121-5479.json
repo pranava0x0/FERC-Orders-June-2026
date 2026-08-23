@@ -134,7 +134,8 @@
       "concern": "Reliability impact analysis on Tribal communities should be a required part of transmission planning",
       "bins": [
         "pr:study",
-        "topic:tribal-reliability"
+        "topic:tribal-reliability",
+        "pr:proximate"
       ],
       "page": 7
     },

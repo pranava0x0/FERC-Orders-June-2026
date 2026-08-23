@@ -94,11 +94,16 @@
   function fmtISO(iso) { if (!iso) return ""; var p = String(iso).split("-"); return PROC_MON[+p[1] - 1] + " " + (+p[2]) + ", " + p[0]; }
   // Tag each step past / next / upcoming / pending by comparing its derived date to today. The single
   // soonest future-dated step is "next"; steps with no fixed date (relative windows) stay "pending".
+  // A step FERC has formally reset carries `revised`, and the reset date is the one that governs:
+  // status, the "next" pick and every derived filing-matrix cell measure against it. Otherwise a
+  // deadline that merely MOVED would render as six operators that missed it.
+  function stepWhen(s) { return (s.revised && s.revised.date) || s.date; }
   function procStatus() {
     var P = D.procedural; if (!P || !P.steps) return null;
     var today = new Date(); today.setHours(0, 0, 0, 0);
     var steps = P.steps.map(function (s) {
-      var d = s.date ? new Date(s.date + "T00:00:00") : null;
+      var iso = stepWhen(s);
+      var d = iso ? new Date(iso + "T00:00:00") : null;
       return { s: s, date: d, status: d ? (d < today ? "past" : "upcoming") : "pending" };
     });
     var next = null;
@@ -106,13 +111,38 @@
     if (next) next.status = "next";
     return { steps: steps, next: next };
   }
+  // The collision callout, derived. Returns "" unless the two dates genuinely coincide.
+  function collideNote() {
+    var P = D.procedural, e2 = D.tracks && D.tracks.e2;
+    var step = (P && P.steps || []).filter(function (x) { return x.id === "showcause"; })[0];
+    if (!step || !e2 || !e2.next || !e2.next.date) return "";
+    var when = stepWhen(step);
+    if (!when || when !== e2.next.date) return "";
+    // How many dockets actually land on this date, counted, not asserted: SPP was granted 95 days
+    // rather than 90, so "the six" would be wrong by one.
+    var on = (D.dockets || []).filter(function (d) { return d.abeyance && d.abeyance.due === when; }).length;
+    var total = (D.dockets || []).filter(function (d) { return d.abeyance; }).length;
+    var which = !total ? "the six show-cause responses"
+      : on === total ? "all " + total + " show-cause responses"
+      : on + " of the " + total + " show-cause responses";
+    return '<p class="proc-collide"><span class="proc-collide-lbl">Two clocks, one date</span> ' +
+      esc(fmtISO(when)) + " carries both " + esc(which) + " and PJM\u2019s co-location " +
+      "compliance filing in the separate " + esc(e2.short || "EL25-49") + " docket. Different " +
+      "proceedings, same deadline.</p>";
+  }
+
   function renderProcedural() {
     var P = D.procedural, ps = procStatus();
     if (!ps) return "";
     var STATUS_LBL = { past: "Passed", next: "Next", upcoming: "Upcoming", pending: "Pending" };
     var rows = ps.steps.map(function (x) {
       var s = x.s;
-      var when = x.date ? fmtISO(s.date) : (s.dateNote || "TBD");
+      // `movedFrom` needs BOTH dates: a reset on a step that never had a fixed date has nothing to
+      // strike through, and would render a bare "was ". `moved` still gates the explanation, which
+      // is meaningful either way.
+      var moved = s.revised && s.revised.date;
+      var movedFrom = moved && s.date;
+      var when = x.date ? fmtISO(stepWhen(s)) : (s.dateNote || "TBD");
       // Policy calendar: how many crosswalk issues land on this step, linking to the policy map.
       var landing = pmIssuesForStep(s.id);
       var landChip = landing.length
@@ -122,19 +152,24 @@
         : "";
       return '<li class="proc-step ' + x.status + '"' + (x.status === "next" ? ' aria-current="date"' : "") + ">" +
         '<div class="proc-when"><span class="proc-date mono">' + esc(when) + "</span>" +
+        (movedFrom ? '<span class="proc-was mono">was ' + esc(fmtISO(s.date)) + "</span>" : "") +
         '<span class="proc-badge ' + x.status + '">' + STATUS_LBL[x.status] + "</span></div>" +
         '<div class="proc-what"><div class="proc-headline"><span class="proc-label">' + esc(s.label) + "</span>" +
         '<span class="proc-period mono">' + esc(s.period) + " · " + esc(s.cite) + "</span></div>" +
         '<p class="proc-desc">' + esc(s.desc) + "</p>" +
+        (moved ? '<p class="proc-revised">Moved to <span class="mono">' + esc(fmtISO(s.revised.date)) +
+          "</span> by " + esc(s.revised.by) + ". " + esc(s.revised.note) + "</p>" : "") +
         (s.dateNote && x.date ? '<p class="proc-note mono">' + esc(s.dateNote) + "</p>" : "") + landChip + "</div></li>";
     }).join("");
     return head("What happens next: the §206 procedural clock", P.basis) +
       '<ol class="proc-board">' + rows + "</ol>" +
-      // The Aug 17 collision: two clocks, one date, different dockets. Exactly the confusion the
-      // tracks model exists to prevent, so it is called out where the clock is read.
-      '<p class="proc-collide"><span class="proc-collide-lbl">Two clocks, one date</span> ' +
-      "August 17 carries both the six show-cause filings and PJM’s further compliance filing in the " +
-      "separate EL25-49 co-location docket. Different proceedings, same deadline.</p>" +
+      // Two clocks, one date: the §206 show-cause step and the separate EL25-49 co-location compliance
+      // filing have repeatedly landed on the same day, which is exactly the confusion the tracks model
+      // exists to prevent. DERIVED, not written: it reads the operative show-cause date (post-abeyance
+      // where FERC reset it) and the E-2 track's own next date, and renders only while they actually
+      // match. This paragraph previously hardcoded "August 17" and was still asserting it after both
+      // clocks moved to November, which is the failure this derivation removes.
+      collideNote() +
       renderFilingMatrix() +
       // The old foot described one evidence base. There are now two, and they are not equally strong.
       '<p class="proc-foot">The clock above is arithmetic: dates derived from the ' + esc(P.issuedLabel) +
@@ -166,9 +201,24 @@
   // The derived half: no observation means the answer depends only on whether the date has passed.
   // `ps` is one clock snapshot passed in by the caller, so every cell in a render is derived against the
   // same instant (and we don't re-map all seven steps 18 times to say the same thing).
+  // A docket can carry its own reset date for a step: FERC granted SPP 95 days rather than 90, so its
+  // show-cause response is due Nov 20 while the other five are Nov 16. The procedural board shows one
+  // date because it describes the ORDER; the matrix is per-docket, so it measures each docket against
+  // its own. Without this, SPP's cell reads "the deadline has passed and our checks found nothing"
+  // for the three days between the two dates, contradicting SPP's own card on the same page.
+  function docketStepDate(docket, stepId) {
+    if (stepId !== "showcause") return null;
+    var d = (D.dockets || []).filter(function (x) { return x.docket === docket; })[0];
+    return (d && d.abeyance && d.abeyance.due) || null;
+  }
   function filingCell(docket, stepId, ps) {
     var obs = filingObs(docket, stepId);
     if (obs) return { status: obs.status, obs: obs };
+    var own = docketStepDate(docket, stepId);
+    if (own) {
+      var today = new Date(); today.setHours(0, 0, 0, 0);
+      return { status: new Date(own + "T00:00:00") < today ? "none-observed" : "upcoming", obs: null };
+    }
     var clock = ps || procStatus();
     var hit = clock && clock.steps.filter(function (x) { return x.s.id === stepId; })[0];
     var passed = hit && hit.date && hit.status === "past";
@@ -194,8 +244,11 @@
 
     var headCells = cols.map(function (id) {
       var s = stepById[id];
+      var when = stepWhen(s);
       return '<th scope="col"><span class="fm-col">' + esc(s.label) + "</span>" +
-        (s.date ? '<span class="fm-coldate mono">' + esc(fmtISO(s.date)) + "</span>" : "") + "</th>";
+        (when ? '<span class="fm-coldate mono">' + esc(fmtISO(when)) + "</span>" : "") +
+        (s.revised && s.revised.date && s.date ? '<span class="fm-colwas mono" title="' + esc(s.revised.note || "") +
+          '">moved from ' + esc(fmtISO(s.date)) + "</span>" : "") + "</th>";
     }).join("");
 
     var ps = procStatus();   // one clock snapshot for the whole grid
@@ -274,7 +327,9 @@
     var ps = procStatus();
     var hit = ps && ps.steps.filter(function (x) { return x.s.id === stepId; })[0];
     if (!hit || !hit.date) return null;
-    return { when: fmtISO(hit.s.date), flag: hit.status === "past" ? "Passed" : "Upcoming" };
+    // `hit.date`/`hit.status` are computed from the operative date, so `when` must be too, or the chip
+    // pairs a superseded date with a status derived from a different one: "Aug 17, 2026 · Upcoming".
+    return { when: fmtISO(stepWhen(hit.s)), flag: hit.status === "past" ? "Passed" : "Upcoming" };
   }
 
   function pmNextChip(next) {
@@ -684,6 +739,17 @@
       var pageLink = '<a class="docket-page-link" href="dockets/' + esc(docketSlug) + '/">' +
         "Open the " + esc(d.item) + " page for " + esc(d.docket) + ' <span aria-hidden="true">→</span></a>';
       var kindLine = d.kind ? '<div class="docket-kind">' + esc(d.kind) + ' · final order</div>' : "";
+      // The Aug 14, 2026 order that paused this docket. It sits directly under the order link because it
+      // is the first thing a reader needs to know about the proceeding's present state: the June 18
+      // directives below are real but not currently running against anyone.
+      var ab = d.abeyance;
+      var abeyance = ab ? '<div class="docket-abeyance"><span class="label">Held in abeyance</span>' +
+        "<p>Granted " + esc(fmtISO(ab.issued)) + " (" + esc(ab.kind) + " " + esc(ab.accession) + ", " +
+        esc(ab.cite) + ") on the motion of " + esc(ab.granted) + ". Responses now due " +
+        '<strong>' + esc(fmtISO(ab.due)) + "</strong>, answers " + esc(fmtISO(ab.answers)) + ".</p>" +
+        "<p>" + esc(ab.note) + "</p>" +
+        (ab.quote ? '<blockquote class="docket-abeyance-q">' + esc(ab.quote) + "</blockquote>" : "") +
+        "</div>" : "";
       var unique = d.unique ? '<div class="docket-unique"><span class="label">What’s unique to ' + esc(d.rto) + '</span><p>' + esc(d.unique) + "</p></div>" : "";
       var asksLabel = d.track ? "What the order decides" : "What FERC presses " + esc(d.rto) + " on";
       var asks = (d.asks && d.asks.length) ? '<div class="docket-asks"><span class="label">' + asksLabel + '</span><ul>' +
@@ -737,7 +803,7 @@
         '<span class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</span></span>" +
         '<span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span>" +
         '<span class="chev" aria-hidden="true">›</span></summary>' +
-        '<div class="docket-body">' + orderLink + kindLine + unique + directives + asks + briefing + commish + region + roster + pageLink + "</div></details>";
+        '<div class="docket-body">' + orderLink + kindLine + abeyance + unique + directives + asks + briefing + commish + region + roster + pageLink + "</div></details>";
     }
     // The six §206 show cause orders, then the E-2 co-location order they build on (collapsed, labeled).
     var six = D.dockets.map(renderDocketCard).join("");
@@ -1618,7 +1684,10 @@
     var ps = procStatus();
     if (!ps || !ps.next) return;
     var n = ps.next.s;
-    el.innerHTML = 'Next deadline · <span class="mono">' + esc(fmtISO(n.date)) + "</span> · " + esc(n.label) +
+    // stepWhen, not n.date: procStatus PICKS `next` by the operative date, so reading the raw `date`
+    // back off the step announces the superseded one. With Aug 17 reset to Nov 16 this chip was
+    // rendering a date six days in the PAST as "Next deadline", above every tab.
+    el.innerHTML = 'Next deadline · <span class="mono">' + esc(fmtISO(stepWhen(n))) + "</span> · " + esc(n.label) +
       ' <span class="mh-derived">(derived)</span>';
     // Second clause: the most recent PASSED step the filing matrix covers, with its observed count.
     // Without it the chip announces a deadline and says nothing about whether the last one was met,

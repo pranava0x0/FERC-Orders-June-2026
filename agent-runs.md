@@ -24,6 +24,8 @@ token figure.
 | 9 | 2026-06-25 | Workflow `summarize-comments` **Haiku probe** (`wf_fa8cb72b-eba`) | 3 re-queued comments, extract on **Haiku**, audit on Sonnet — does the cheap path hold up? | 4 | 100 | 183,855 | 334.9 s | haiku + sonnet | ✅ 3/3 valid; the 1 flagged got a real coverage gap fixed by the Sonnet audit. But **~46K/agent ≈ same token COUNT as Sonnet** (25 tools/agent — Haiku loops more on the validate-fix cycle); Haiku saves $/token, not tokens |
 | 10 | 2026-07-28 | Agent `claude` **news sweep** | Web-search-only refresh research for `news-tracks-plan.md`: six-docket filings since Jun 24, E-2/EL25-49, the PJM governance conference, "SW technical conference" disambiguation, 30/60-day deadline watch | 1 | 44 | 135,370 | 478.5 s | sonnet | ✅ All 4 tracks resolved with per-item fetched-vs-snippet confidence flags + a source index; disambiguated the "SW technical conference" = the Swett-led AD26-7-000 PJM governance conference (Jul 23), ruling out SPP/NERC/RA-conference candidates; its ISO-NE abeyance find exposed the site's "(NYISO only)" scoping bug (issues.md 2026-07-28). ferc.gov/eLibrary 403'd throughout (expected), so docket-level confirmation is queued for the manual browser pass |
 | 11 | 2026-08-09 | Agent `code-reviewer` **adversarial refresh review** | Independent re-check of the uncommitted 2026-08-09 refresh diff (`data.js` + `REFRESH.md`) against the actual downloaded PDFs and FR text, not the author's own summary of them | 1 | 28 | 151,484 | 409.7 s | sonnet | ✅ 6 confirmed findings (see issues.md 2026-08-09), 0 false positives; also cleared several claims as accurate rather than padding the report — the review's method (re-derive from the primary PDFs) differed from the author's (write from notes taken while reading them), which is what caught claims that had drifted from the source during writing |
+| 13 | 2026-08-23 | Agent `general-purpose` (`aaee30de8`) | July/August news sweep: commissioner + elected-official statements on the show cause orders, driven by `tools/news-sweep-plan.mjs`'s 119-query matrix | 1 | 86 | 203,328 | 550.9 s | sonnet | ⚠️ 10 findings, **2 already on the site**; 6 verified and shipped, 2 snippet-only leads |
+| 14 | 2026-08-23 | Agent `general-purpose` (`a036584d6`) | Adversarial code review of the `revised` / `abeyance` diff (app.js, css, 4 tools, 2 new tools) | 1 | 55 | 198,918 | 750.3 s | opus-5 (inherited) | ✅ **12 findings, 12 real** — incl. 2 HIGH live bugs the 119-test suite and self-review both missed |
 
 _Totals (Runs 1–11 shown): 83 agent-runs · 1,246 tool uses · **4,048,526** subagent tokens · ~3,338 s of agent wall-clock. Of which Run 3 (974K) produced nothing, Run 5's audit half (~242K) was largely replaceable by deterministic checks, and **Run 8 (1.0M) overshot the user's session budget and hit the rate limit** — see below._
 _**The comment run is complete: 268/268 summaries written and valid.** The table above shows the representative runs; the 29 per-chunk runs (these plus ~20 more) are logged in `sources/comments/workflow-runs.jsonl` — **~13.2M subagent tokens** across the full corpus, with `extract_model`/`audit_model` per run for analysis._
@@ -395,3 +397,107 @@ holds comfortably. No workflow, no Task tool.
   `build-docket-pages.mjs`, `build-llms.mjs`). Verified the rendered Overview and Timeline tabs in a
   local preview before considering the refresh done, per this project's standing rule that a UI change
   isn't verified until it's been looked at in a browser, not just passed its tests.
+
+## Session 2026-08-23 — third REFRESH.md run + comment-analysis audit (inline, zero subagents)
+
+Two tasks in one session: the news refresh (the Aug 13 / 17 / 21 dates had all passed), and a validation
+pass over the 268 RM26-4 comment summaries. **No subagents, no workflows, no fan-out.** Everything was
+either a browser-bridge read of a primary document or a local script.
+
+| Phase | Method | Tool calls (approx) | Outcome |
+|---|---|---:|---|
+| News sweep | Chrome bridge → eLibrary, 9 dockets | ~34 | All six abeyance orders found, downloaded, read in full |
+| Primary docs | `.click()` download → `textutil` / `fitz` | ~12 | 6 orders + 2 errata + 2 compliance transmittals + 1 answer |
+| Web / press | 3 `WebSearch`, 2 `WebFetch`, 4 browser | ~9 | Press added nothing; CAISO's own notice confirmed first-party |
+| Comment audit | local Node/Python diagnostics | ~14 | 153 link asymmetries, 3 unsourced bins, 3 vocab violations |
+| Fixes + guards | edits, 2 new tools, validator extension | ~22 | 112/112 tests pass; 99 dropped quotes recovered |
+
+**What worked.** Doing the exact-verification work *inline as code* rather than delegating it, which is
+the lesson from 2026-08-03 restated: a `node`/`python3` diagnostic over 268 JSON files found three real
+data defects in about four tool calls and a few thousand tokens. An agent fan-out over the same corpus
+would have cost six figures of tokens to reach the same list, and the CLAUDE.md guidance says as much.
+
+**What web research was worth.** Almost nothing, and that is the useful finding. Three searches and two
+fetches (~15K tokens) returned only pre-Aug-9 law-firm alerts, plus one substantive lead from an
+unfamiliar outlet. Every fact that shipped came from a primary document pulled through the browser
+bridge. On a docket-tracking project, the search engine lags the docket by more than a week; go to
+eLibrary first and treat press as garnish. The one lead press did produce (CAISO's straw proposal
+contents) is in the verification queue *unshipped*, because the primary PDF was not located.
+
+**Where tokens went that they did not need to.** Two places. (1) The eLibrary sweep snippet was pasted
+in full roughly six times before being compressed and then committed as `tools/elibrary-sweep.js`; it
+should have been written to a file on the second use. (2) Four screenshot attempts were spent fighting a
+viewport/scroll interaction that reset on resize, when the DOM assertions via `javascript_tool` had
+already proven the render. Screenshot to *show* the user a result, not to verify one.
+
+**The methodology bug is the honest headline.** The first six docket sweeps used a last-page-only
+extractor, which under-reports whenever a single day's filings exceed the final page. It was caught only
+because a general search surfaced a filing the docket sweep of the same docket had missed, i.e. by
+cross-checking one method against another rather than by any check inside the method. Two dockets were
+re-swept; AD26-7 went 35 → 67 and EL26-69 2 → 4. Corrected extractor committed so the next session
+starts from the fixed version.
+
+
+### Session 2026-08-23b — abeyance corpus, tab decision, and the one search agent
+
+Follow-on to the same day's refresh. Everything inline again except a single background search agent.
+
+**The search agent, evaluated.** 203K tokens, 86 tool calls, 9.2 minutes, for 10 findings. Two of them
+(`udgov`, `udbackstop`) were articles **already cited on this site**, and one of those re-reported two
+quotes already sitting in `news-evidence.json` verbatim. That is a 20% duplicate rate on a sweep whose
+whole job was to find what we do not have, and the fault was mine, not the agent's: the plan I handed it
+listed known *hosts* and utilitydive.com was already known, so nothing told it that specific article was
+ours. `tools/news-sweep-plan.mjs` now dedupes by exact URL and by already-captured quote text, and
+`--check` fails a finding that matches either. Cost of the lesson: roughly 40K tokens of the agent's
+budget spent re-finding our own material.
+
+**What the agent was genuinely good at.** Three things nothing else would have surfaced: LaCerte's July 9
+WIRES remarks (a different event and article from the July 23 conference already covered), the Maryland
+congressional delegation's July 27 letter, and two analyst readiness assessments. It was also honest
+about its own gaps, listing eight terms that returned nothing and explicitly flagging that it could not
+source a new Lindsay See or Judy Chang statement rather than padding, and excluding a New Mexico AG
+letter once it found the date fell outside the window. That self-reporting is worth more than the
+marginal finding, and worth asking for by name in the prompt.
+
+**Where it needed correcting, and why the verification pass is not optional.** Two of its shipped items
+were wrong in the detail. It rendered LaCerte's line as `"The PJM Interconnection's status quo is really
+untenable."` when the outlet's own construction puts only *status quo is really untenable* inside the
+quotation marks, the rest being the reporter's sentence; shipping the agent's version would have put
+words in a commissioner's mouth. And it summarized the Maryland letter as seeking "retroactive relief,"
+a word that appears nowhere in it; the actual ask is relief "as requested in OPC's complaint." Both were
+caught by going to the primary source, the second by reading the signed PDF with fitz rather than
+trusting a fetch summary. **The quotes it returned were accurate; its characterizations around them were
+not.** That is the shape of the error to expect and to check for.
+
+**Token note.** One agent, as asked. The verification afterwards cost five WebFetches and one fitz read,
+maybe 20K tokens, and changed what shipped in two of six cases. Verification is not the expensive part
+of a sweep; the sweep is. Budget accordingly.
+
+
+### The review agent, evaluated (2026-08-23)
+
+199K tokens, 55 tool calls, 12.5 minutes, **12 findings and every one of them real** — no false
+positives, which is the number that matters, since a false positive costs more than a miss. It ran
+`node -e` simulations to confirm each hypothesis before reporting, quoted the offending line, and said
+LIVE or LATENT per finding. It also listed the six categories where it found nothing, including a
+measured check that widening `wholeCorpus` with the abeyance texts weakened no existing quote check
+(exactly 3 quotes newly resolve, all legitimately from the new corpus). That negative reporting is what
+made the positives trustworthy.
+
+**The two it caught that nothing else did were both outside the diff.** `setMastheadDeadline` and
+`pmStepWhen` were untouched functions reading `.s.date` off a `procStatus()` result whose meaning had
+changed underneath them. Self-review found the one hardcoded string I had *written*; it did not find
+these, because I was reading a diff and they were not in it. 119 tests, `verify-quotes`,
+`validate-summaries` and `check-staleness` were all green with the masthead announcing a date six days in
+the past on every tab.
+
+**Prompt choices that paid.** Saying "bugs in untouched lines of a touched function are IN SCOPE" and
+naming the enclosing functions; supplying the XSS model up front (`esc()` on every interpolation) so it
+never filed the usual innerHTML false positive; demanding a concrete failure scenario and a LIVE/LATENT
+call per finding; and "a false positive wastes more time than a miss." It cost ~199K tokens against a
+diff of roughly 700 changed lines, which is the right trade for a change that alters what a shared
+derivation means.
+
+**Two runs, one session, 402K subagent tokens total.** The search agent returned 20% of its findings as
+material already on the site (my planner's fault, now fixed); the review agent returned 100% signal. The
+difference is that the review had a closed, checkable target and the search did not.

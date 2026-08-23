@@ -30,7 +30,8 @@
       "text": "LCDG would mitigate the risk of stranded infrastructure costs falling upon existing grid customers because it would ensure that new large loads would be investing in needed generation resources as they interconnect to the transmission system.",
       "concern": "LCDG prevents stranded infrastructure costs to ratepayers",
       "bins": [
-        "pr:cost"
+        "pr:cost",
+        "pr:colo"
       ],
       "page": null
     },
@@ -129,7 +130,9 @@
       "description": "Enchanted Rock supports Commission policies that incentivize load flexibility as a primary tool to expedite interconnection, strengthen reliability, and manage grid congestion. Flexible loads paired with dispatchable generation can reduce peak demand assumptions in transmission planning, thereby reducing upgrade needs and accelerating timelines.",
       "quote_ids": [
         1,
+        2,
         4,
+        5,
         6,
         7,
         11,

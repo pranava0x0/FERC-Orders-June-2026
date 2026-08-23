@@ -80,7 +80,8 @@
       "concern": "Utilities should be able to submit region-specific study proposals rather than follow a uniform federal process",
       "bins": [
         "pr:flex",
-        "pr:study"
+        "pr:study",
+        "aq:jointstudy"
       ],
       "page": 19
     },
@@ -230,6 +231,7 @@
       "description": "Entergy supports the principle that load and generation additions should be studied together for efficiency, but opposes applying a uniform federal study process and requires that hybrid loads be studied on a gross rather than net basis to capture actual reliability impacts.",
       "quote_ids": [
         3,
+        4,
         8,
         14,
         15

@@ -43,7 +43,8 @@
       "concern": "Asks FERC to preserve the independent entity variation standard for RTOs and ISOs",
       "bins": [
         "pr:flex",
-        "topic:tariff-variation"
+        "topic:tariff-variation",
+        "topic:regional-autonomy"
       ],
       "page": null
     },

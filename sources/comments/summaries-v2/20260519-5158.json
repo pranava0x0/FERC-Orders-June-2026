@@ -13,7 +13,8 @@
       "bins": [
         "pr:study",
         "pr:colo",
-        "pr:flex"
+        "pr:flex",
+        "pr:proximate"
       ],
       "page": 2
     },
@@ -24,7 +25,8 @@
       "bins": [
         "pr:study",
         "pr:flex",
-        "topic:tariff-reform"
+        "topic:tariff-reform",
+        "pr:cost"
       ],
       "page": 2
     },

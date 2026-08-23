@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-06-29",
+  "captured_at": "2026-08-23",
   "note": "Verified source snippets backing the directly-quoted phrases in D.voices (Discourse 'Commentary across the spectrum'). A test in tests/source-accuracy.test.mjs asserts every single-quoted phrase in a voice's take appears in its evidence here, so a future edit to a quote fails loudly until the evidence is re-verified against the cited source.",
   "voices": {
     "Tyler Norris": {
@@ -169,6 +169,14 @@
     "Chris Wright": {
       "src": "doeApplaud",
       "evidence": "Secretary Wright said: This Administration is working to remove barriers, accelerate development, and ensure America has the affordable, reliable, and secure energy needed to power a new era of prosperity while delivering on President Trump's Ratepayer Protection Pledge."
+    },
+    "CSIS Energy Security and Climate Change Program": {
+      "src": "csis",
+      "evidence": "FERC's June 2026 show-cause orders represent the commission's most significant effort to modernize large load interconnection policy to date. only 20 percent of the criteria meet the guidelines; of 30 matrix boxes, only 6 are plausibly sufficient. none of the six grid operators are likely to receive a clear pass through the five reforms. SPP's relative success in meeting FERC's objectives shows they are achievable under the existing regulatory framework; the matrix suggests, however, that most operators will need to implement significant reforms before reaching comparable levels of large load readiness."
+    },
+    "Juan Arteaga": {
+      "src": "enverus",
+      "evidence": "SPP is the only region with FERC-approved large-load tariffs and currently offers the most flexible pathway to faster grid access. Large-load development is concentrating in markets where key interconnection and cost-allocation rules are still evolving."
     }
   }
 }

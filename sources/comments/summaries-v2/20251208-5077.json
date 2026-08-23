@@ -76,7 +76,8 @@
       "concern": "Study assumptions should match actual hybrid facility operation",
       "bins": [
         "pr:study",
-        "topic:hybrid-facility-treatment"
+        "topic:hybrid-facility-treatment",
+        "pr:colo"
       ],
       "page": 3
     },

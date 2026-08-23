@@ -32,7 +32,8 @@
       "concern": "Any rule should be scoped to regions that lack effective existing processes.",
       "bins": [
         "aq:jurisdiction",
-        "pr:study"
+        "pr:study",
+        "pr:proximate"
       ],
       "page": 3
     },
@@ -133,7 +134,8 @@
       "bins": [
         "aq:jurisdiction",
         "pr:study",
-        "rg:miso"
+        "rg:miso",
+        "pr:proximate"
       ],
       "page": 16
     },
@@ -161,6 +163,7 @@
         2,
         3,
         5,
+        6,
         7,
         8,
         13
@@ -215,6 +218,7 @@
         1,
         2,
         3,
+        9,
         13
       ]
     },

@@ -92,7 +92,8 @@
       "concern": "High withdrawal rates in generator queues cause restudy delays that would carry over to load queues.",
       "bins": [
         "pr:study",
-        "aq:deposits"
+        "aq:deposits",
+        "pr:cost"
       ],
       "page": 15
     },
@@ -208,6 +209,7 @@
       "quote_ids": [
         8,
         9,
+        10,
         13
       ]
     },
