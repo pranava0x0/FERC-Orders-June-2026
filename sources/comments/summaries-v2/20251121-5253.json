@@ -121,7 +121,8 @@
       "bins": [
         "aq:hybridrights",
         "pr:colo",
-        "pr:cost"
+        "pr:cost",
+        "aq:upgradecost"
       ],
       "page": 5
     },
@@ -131,7 +132,8 @@
       "concern": "Cost responsibility should reflect net system benefits from hybrids.",
       "bins": [
         "pr:cost",
-        "pr:proximate"
+        "pr:proximate",
+        "aq:upgradecost"
       ],
       "page": 5
     },
@@ -169,7 +171,8 @@
       "concern": "Existing projects should retain queue priority when electing hybrid framework.",
       "bins": [
         "pr:study",
-        "pr:proximate"
+        "pr:proximate",
+        "aq:hybridrights"
       ],
       "page": 6
     }
@@ -222,6 +225,7 @@
       "stance": "support",
       "description": "Fervo supports allowing existing generation projects to elect into the coordinated hybrid study framework without loss of queue priority, enabling early geothermal hybrid projects to benefit from new rules that reflect their reduced system impacts.",
       "quote_ids": [
+        12,
         16,
         17
       ]
@@ -243,6 +247,7 @@
       "stance": "support",
       "description": "Fervo supports coordinated study processes and modeling frameworks that align large-load and hybrid interconnections with generator procedures, creating procedural consistency and enabling existing projects to retain queue benefits.",
       "quote_ids": [
+        1,
         2,
         3,
         4,
@@ -257,6 +262,7 @@
       "description": "Fervo supports cost allocation and crediting mechanisms that fairly reflect the transmission system benefits provided by hybrid geothermal facilities, avoiding cost over-assignment for projects that reduce net flows or improve local reliability.",
       "quote_ids": [
         11,
+        12,
         13,
         14
       ]

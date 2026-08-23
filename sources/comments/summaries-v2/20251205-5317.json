@@ -172,7 +172,8 @@
         1,
         2,
         3,
-        4
+        4,
+        8
       ]
     },
     {
@@ -192,6 +193,7 @@
       "stance": "support",
       "description": "Google supports an expedited, coordinated study process for loads and generation behind the same point of interconnection. Co-location minimizes dependence on constrained transmission corridors and raises fewer jurisdictional questions than standalone load interconnection.",
       "quote_ids": [
+        5,
         6,
         7
       ]
@@ -202,6 +204,7 @@
       "stance": "support",
       "description": "Google supports creating an optional expedited interconnection pathway for loads willing to curtail during system stress. Research cited by Google shows that even a 0.25% annual curtailment rate could accommodate 76 GW of new load, and flexible connections in PJM could cut wait times by three to five years.",
       "quote_ids": [
+        5,
         11,
         12,
         13

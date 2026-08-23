@@ -54,7 +54,8 @@
       "concern": "Cost allocation model analogous to CIAC ensures large loads pay for their network service",
       "bins": [
         "pr:cost",
-        "topic:ciac-model"
+        "topic:ciac-model",
+        "aq:upgradecost"
       ],
       "page": 2
     },
@@ -147,7 +148,8 @@
       "stance": "support",
       "description": "SMECO calls for a final rule establishing standardized, non-discriminatory procedures for orderly interconnections of large new loads without compromising reliability.",
       "quote_ids": [
-        1
+        1,
+        11
       ]
     },
     {
@@ -157,6 +159,7 @@
       "description": "SMECO supports cost-causation ratemaking principles that directly assign transmission upgrade costs to large loads to protect residential customers from cost shifting and rate increases, as PJM transmission costs already exceed capacity costs and will rise further.",
       "quote_ids": [
         4,
+        5,
         7,
         8,
         9

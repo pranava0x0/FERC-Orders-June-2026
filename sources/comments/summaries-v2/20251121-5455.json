@@ -41,7 +41,8 @@
       "concern": "A fixed MW threshold is too blunt; rules should be tailored to regional protocols",
       "bins": [
         "aq:threshold",
-        "pr:study"
+        "pr:study",
+        "topic:regional-deference"
       ],
       "page": 5
     },

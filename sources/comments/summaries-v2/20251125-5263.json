@@ -29,7 +29,8 @@
       "text": "the appropriate response involves adherence to the well-established divide between state and federal jurisdiction and a commitment to cooperative federalism",
       "concern": "KCC favors cooperative federalism over expanded federal authority",
       "bins": [
-        "aq:jurisdiction"
+        "aq:jurisdiction",
+        "topic:cooperative-federalism"
       ],
       "page": 2
     },
@@ -111,7 +112,8 @@
       "concern": "RTO-level stakeholders should develop targeted wholesale tariff reforms",
       "bins": [
         "pr:study",
-        "rg:spp"
+        "rg:spp",
+        "topic:cooperative-federalism"
       ],
       "page": null
     },

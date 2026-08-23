@@ -147,7 +147,8 @@
       "concern": "Partial curtailability should not qualify for the same fast-track treatment as full curtailability",
       "bins": [
         "aq:expedited",
-        "pr:flex"
+        "pr:flex",
+        "topic:curtailability-tiers"
       ],
       "page": 13
     },

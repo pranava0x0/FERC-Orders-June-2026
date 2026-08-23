@@ -103,7 +103,8 @@
       "concern": "JCA argue FERC can adopt the Expansion Rate Policy under existing authority via a special-circumstances exception",
       "bins": [
         "topic:higher-of-policy-limits",
-        "topic:ferc-authority"
+        "topic:ferc-authority",
+        "topic:special-circumstances"
       ],
       "page": 11
     },
@@ -144,7 +145,8 @@
       "bins": [
         "pr:cost",
         "rg:pjm",
-        "topic:supplemental-projects"
+        "topic:supplemental-projects",
+        "aq:upgradecost"
       ],
       "page": 17
     }

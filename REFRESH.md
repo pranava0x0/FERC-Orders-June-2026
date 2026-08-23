@@ -12,13 +12,18 @@ Driven by real dates, not a calendar interval:
 
 | Date | What lands |
 |---|---|
-| 2026-08-13 | Requested ruling date on Silver Run Electric's separate PJM abeyance motion (EL26-67). |
-| 2026-08-17 | **Two clocks, one date.** The six show-cause / tariff filings, and PJM's further compliance filing in EL25-49. |
-| 2026-08-21 | AD26-7 post-conference comments due (Federal Register, confirmed). |
-| ~2026-09-16 | Response windows open, 30 days after each filing lands. |
 | 2026-09-01 | AD26-7 Alternative Dispute Resolution forum commences (Federal Register, confirmed). |
-| 2026-09-30 to 2026-10-21 | PJM's one-time reliability backstop capacity auction (Docket ER26-3380). |
+| 2026-09-16 | Third PJM stakeholder engagement session on its §205 proposal (named in the PJM abeyance order). |
+| 2026-09-30 to 2026-10-21 | PJM's one-time reliability backstop capacity auction (Docket ER26-3380), now protested. |
 | end of Sept 2026 | PJM's governance reform package is due, or FERC imposes its own (no calendar date noticed yet). |
+| 2026-10-28 | PJM advisory stakeholder vote at the Members Committee; CAISO Board of Governors and WEM Governing Body approval target. Both named in the Aug 14 abeyance orders. |
+| **2026-11-16** | **The reset deadline.** Show-cause responses in five of the six §206 dockets, AND PJM's and the PJM TOs' full co-location compliance filing in EL25-49. PJM, CAISO and others have said they will instead make FPA §205 filings by this date, which suspends the obligation to respond. |
+| 2026-11-20 | SPP's show-cause response (EL26-68 got 95 days rather than 90). |
+| 2026-12-16 | Answers to the show-cause responses (SPP: 2026-12-21). |
+
+**Resolved 2026-08-23:** every date above 2026-08-21 in the previous version of this table has landed.
+All six abeyance motions were granted Aug 14; Silver Run's was granted with PJM's; the Aug 17 §206
+deadline passed with the proceedings paused; the Aug 21 AD26-7 comments arrived (roughly 49 filings).
 
 `node tools/check-staleness.mjs` tells you if you are overdue. Run it first; it is the cheapest signal.
 
@@ -52,24 +57,40 @@ That is how AD26-7-000 and the July 23 conference date were confirmed.
 - Trade press behind a paywall: if the only source for a claim is unfetchable, it ships as a labeled
   headline pointer or not at all. Never as a paraphrased fact.
 
-**Open verification queue** (updated 2026-08-09; resolved items removed rather than left to rot):
+**Open verification queue** (updated 2026-08-23; resolved items removed rather than left to rot):
 
-1. eLibrary, EL26-67: the reported Jul 17 ratepayer-advocate filing. Exact procedural type + filers.
-2. EL25-49: the Feb 2026 compliance filing's requested Jul 31 effective date.
-3. Whether FERC rules on any pending abeyance motion before the Aug 17 deadline, especially MISO's
-   (the only one drawing an opposition) and PJM's Silver Run Electric motion (requested ruling Aug 13).
-4. Whether anyone answers American Municipal Power's Aug 7 opposition in the MISO docket before Aug 17.
-5. The Jul 20 rehearing/clarification requests against the PJM order (EL26-67) and the E-2 order
-   (EL25-49) are known only through Constellation's Aug 4 answer citing them; find their own accession
-   numbers directly (see the eLibrary gotcha below on why the obvious keyword search came up empty).
+1. CAISO's Aug 12 Large Loads straw proposal: CAISO's own notice (first-party, in `SOURCES.caisostraw`)
+   confirms the posting date, the Aug 19 stakeholder meeting and the topic list. Secondary coverage
+   (mgrid.org, Aug 18) attributes to the proposal document itself two named services, "FILI" and "FLIP",
+   a 50 MW single-site large-load definition, and a decision to drop FERC's 69 kV and customer-type
+   tests. None of that is confirmed against the proposal PDF, which was not located on caiso.com this
+   sweep. Treat as a lead. Get the PDF from the Large Loads initiative page before quoting any of it.
+2. EL26-67: the reported Jul 17 ratepayer-advocate filing. Exact procedural type + filers. (Carried.)
+3. EL25-49: the Feb 2026 compliance filing's requested Jul 31 effective date. (Carried.)
+4. The Jul 20 rehearing/clarification requests against the PJM order (EL26-67) and the E-2 order
+   (EL25-49) are still known only through Constellation's Aug 4 answer citing them; their own accession
+   numbers have not been found. See the eLibrary gotcha below on why the obvious keyword search came up
+   empty. (Carried, twice now.)
+5. Northern Virginia Electric Cooperative's Jul 29 motion for clarification of the June 18 E-2 order is
+   newly known from Vistra's Aug 18 answer (20260818-5146). Its own accession has not been pulled.
+6. Whether any of the six respondents makes its FPA §205 filing before Nov 16, which suspends its
+   obligation to respond. PJM said early-to-mid November, the Indicated PJM TOs no later than Nov 16,
+   CAISO Nov 16. This is the single most important thing to check on the next sweep.
+7. No new statement from Commissioner Lindsay See or Commissioner Judy Chang on these orders, outside
+   their June 18 concurrences, could be sourced in the Jul-Aug sweep. Both appear in the window (Chang at
+   NARUC's Summer Policy Summit, Jul 19-22) but nothing verbatim was found. A real gap, not a null
+   result: try conference video, NARUC materials and FERC open-meeting transcripts next time.
+8. No commissioner reaction to the Aug 14 abeyance grant itself was found anywhere, and no dissent or
+   separate statement is attached to any of the six orders. The grant was 9 days old at the sweep window's
+   close, so this is probably coverage lag rather than silence. Re-check.
+9. The three parties that filed unsolicited comments on the 30-day informational reports (NGSA across
+   all six dockets Aug 10, Sparkfund Aug 12, the Organization of MISO States Aug 14) have not been read.
+   Nobody was invited to comment on those reports; what they argue is not yet known.
 
-Resolved this sweep: the 30-day reports were confirmed for all six dockets by the 2026-08-03 refresh
-(this line in the queue had gone stale after being carried forward once already). Rehearing requests
-dated on or before Jul 20 are known to exist, from the Indicated PJM Transmission Owners and, jointly,
-Exelon and FirstEnergy, against both the PJM order and the E-2 order, only through Constellation
-Energy's Aug 4 answer, which cites and dates both; a direct eLibrary keyword search across all six
-§206 dockets found none in the other five, and also missed the PJM and E-2 filings themselves despite
-Constellation's own caption naming their docket numbers (see the eLibrary gotcha below).
+Resolved this sweep: all six abeyance motions (granted Aug 14, all six orders downloaded and read);
+Silver Run's separate PJM motion (granted, in the same order as PJM's); whether FERC would rule before
+Aug 17 (yes, on Aug 14); whether anyone answered AMP's opposition (FERC did, in the order itself);
+PJM's E-2 extension request (granted Aug 14, and the promised partial filing landed Aug 17 anyway).
 
 ### 3. Update `docs/js/data.js`
 
@@ -94,7 +115,47 @@ node tools/check-staleness.mjs
 node tools/build-llms.mjs
 node --test tests/*.test.mjs
 node tools/verify-quotes.mjs
+python3 tools/extract-abeyance-docs.py --check   # committed order text still matches its source
+node tools/survey-summaries.mjs --brief          # comment corpus: the should-be-zero set
 ```
+
+**The one check that is not a script.** The repo has no dependencies and no package.json, so there is no
+jsdom and the renderers cannot be exercised headlessly. After a refresh, open the preview and run this
+in the console; it is thirty seconds and it has caught real breakage:
+
+```js
+// every tab renders, and no data hole leaks into the copy
+(async () => { const s = ms => new Promise(r => setTimeout(r, ms)); const out = {};
+  for (const t of ['overview','timeline','reforms','dockets','comments','news']) {
+    location.hash = '#' + t; await s(700); const p = document.querySelector('#panel-' + t);
+    const x = p ? p.innerText : '';
+    out[t] = { len: x.length, undef: /\bundefined\b/.test(x), nan: /\bNaN\b/.test(x) };
+  } console.table(out); })();
+```
+
+Every `len` non-zero, every `undef`/`nan` false. Then check `document.documentElement.scrollWidth -
+clientWidth === 0` at 375px, and read the console at all levels. Setting `location.hash` synchronously
+and reading immediately returns an empty panel: the render is async, hence the wait.
+
+If the sweep pulled new FERC documents, extract them BEFORE quoting from them: add a record to `DOCS`
+in `tools/extract-abeyance-docs.py`, run it, and the text lands in `sources/text/abeyance/` where
+`verify-quotes.mjs` can prove any quote you display. A quote from a document that is not in the
+committed corpus cannot be verified and must not ship.
+
+### Planning the search
+
+`node tools/news-sweep-plan.mjs` builds the query matrix from the data itself (every docket, reporter
+citation, commissioner and named voice on the site) crossed with curated topic, event and
+elected-official terms, deduped and prioritized. P1 is what changed in the window and who said something
+about it; P3 is the broad topical net. Use `--json` to hand the plan to a search agent, and
+`--check <findings.json>` to validate what comes back before merging: every finding needs a URL, a
+publisher, a published date inside the window, and either a verbatim quote with a named speaker or an
+explicit `snippetOnly: true`. Findings from an outlet not already in `SOURCES` are flagged, not rejected.
+
+**One agent, not a fan-out.** The search is a single background agent with the matrix in its prompt.
+Two sweeps running now have found that press lags this docket by more than a week, so the search is
+garnish: go to eLibrary first, and spend the search budget on statements by named people, which is the
+one thing the docket sheet cannot give you.
 
 ### 5. Log
 
@@ -139,14 +200,34 @@ indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
   assume a "nothing found" eLibrary search is proof of absence when a primary document you already hold
   cites, dates and names the thing you searched for. When a search result and a primary source conflict,
   the primary source wins and the search method is what's suspect, not the fact.
-- **eLibrary paginates ascending by filed date, oldest first.** For a 100-row page size, the newest
-  filings are always on the LAST page, not the first. `Records Found` in the header text gives the
-  total; `Math.ceil(total / 100)` tells you how many "Next page" clicks to the newest rows.
+- **eLibrary paginates ascending by filed date, oldest first, and reading only the last page LOSES
+  ROWS.** For a 100-row page size the newest filings are at the end, so the instinct is to click through
+  to the final page and read it. That silently drops rows whenever recent activity is larger than the
+  final page holds: with 135 total rows the last page is 35, and if 49 filings arrived on one day, 14 of
+  them sit at the tail of page 1. Measured on 2026-08-23: last-page-only gave AD26-7 35 filings since
+  Aug 9 where the true number was 67, and EL26-69 2 where it was 4. **Accumulate rows across every page
+  into a map keyed by accession, then filter by date.** `Records Found` in the header gives the total and
+  `Math.ceil(total / 100)` the page count; click `button[aria-label="Next page"]` and re-read the table
+  after each click. The working extractor is committed at [`tools/elibrary-sweep.js`](tools/elibrary-sweep.js); paste it through the Chrome bridge rather than rewriting it.
+- **The Chrome bridge does not await promises.** `execute_javascript` returns "JavaScript executed" for
+  an async IIFE and throws the result away. Stash it on `window` (`window.__sweep = {...}`) from inside
+  the async function and read it back in a second call.
+- **Downloading a filing works.** On a filelist page, `document.querySelectorAll('a.filedownloadlink')`
+  are Angular click handlers with `href="#"`, not real URLs; calling `.click()` on them downloads to
+  `~/Downloads` as `<accession>_<filename>`. Notational orders are DOCX (`textutil -convert txt -stdout`),
+  filings are PDF (`fitz`). This is how the six abeyance orders were read in full rather than trusted
+  from their one-line descriptions.
 - **A filing's docket-sheet description can be generic or reused boilerplate.** American Municipal
   Power's file-list description read "Answer... to abeyance motion under EL26-80-000" (a docket that
   doesn't exist in this matter; the actual docket is EL26-70) — apparently copy-pasted from a template.
   The docket-sheet row itself had the correct docket. Don't trust a filing's own internal description
-  field over the docket sheet when they conflict; when a claim matters, open the PDF.
+  field over the docket sheet when they conflict; when a claim matters, open the PDF. Seen again on
+  2026-08-23, and worse: the docket-sheet row for accession 20260813-3026 describes it as an erratum
+  "re Midcontinent Independent System Operator, Inc. et al. under EL26-72. For order see accession
+  number 20260618-3047." The document itself is captioned Docket No. EL26-70-000 and corrects
+  195 FERC ¶ 61,212, the MISO order. Both the docket number and the parent-order accession in the
+  description are wrong. Here the DESCRIPTION was wrong and the document right, the opposite of the AMP
+  case, so the rule is not "trust the row over the filing" but "open the document".
 - **"Answer... in Response to" a motion is not the same as opposing it.** Two respondents this sweep
   used identical procedural phrasing ("Answer of X in Response to the Motion...") for opposite
   positions: NESCOE's Aug 7 answer in EL26-72 supports ISO-NE's abeyance motion outright; American

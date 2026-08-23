@@ -2,6 +2,81 @@
 
 ## Progress log (append per session)
 
+**Session 2026-08-23 — third refresh: the clock stopped, plus a comment-analysis audit.**
+
+The refresh loop ran against three passed dates (Aug 13, 17, 21) and found the story had turned: on
+**Aug 14** FERC granted every pending abeyance motion and held all six §206 proceedings in abeyance in
+full, three days before the deadline the whole site was built around. Responses reset to **Nov 16, 2026**
+(SPP **Nov 20**, having asked for 95 days rather than 90), answers to Dec 16 (SPP Dec 21). All six orders
+(196 FERC ¶ 61,128 to 61,133) were downloaded and read rather than trusted from their descriptions.
+
+What shipped:
+
+- **Eleven new timeline events** across four tracks (24 to 35), and the Aug 17 `kind: "deadline"` event converted per
+  the deadline-conversion rule into a dated milestone that says the window closed with the proceedings
+  paused. All four dated tracks restamped, all four `next` dates advanced.
+- **The E-2 lane did not go quiet.** FERC extended PJM's co-location compliance to Nov 16 on the same
+  day, but PJM had promised a partial filing for Aug 17 and made one (ER26-1479-002), with the PJM TOs'
+  Interim NITS rate alongside it (ER26-3537). The detail worth having: PJM proposes the Interim NITS
+  provisions effective **July 1, 2028**, and the TOs filed theirs under an explicit reservation that the
+  directives are under challenge and the sheets may later be withdrawn.
+- **A new modeling primitive: `procedural.steps[].revised`.** The board is the order's own arithmetic
+  schedule and `tests/procedural.test.mjs` enforces that (issuance + quoted period; the response window
+  stays undated), so the reset could not just overwrite `date`. The step keeps Aug 17 and carries the
+  reset separately; `procStatus()` measures against the revised date, the row shows the new date with the
+  old struck through, and `check-staleness.mjs` uses the same rule. Without this the filing matrix would
+  have rendered "Not observed" against all six operators for a deadline FERC itself had moved.
+- **One real show-cause answer exists** and is now in the filing matrix: Morongo Transmission (Aug 12,
+  EL26-71), a CAISO participating TO owned by the Morongo Band of Mission Indians, answering that its
+  tariff needs no amendment because it serves no end-use customers.
+- **Comment analysis (RM26-4, 268 v2 summaries).** Everything already checked passed, so the work was
+  finding what was not checked. Three defects: 153 disagreements between `quotes[].bins` and
+  `bins[].quote_ids` (99 of them quotes the page was silently dropping from a bin, across 87 files);
+  three bins rendering a stance with no quote at all, all three recoverable from the source text rather
+  than hallucinated; and three `org_type` values written as human labels instead of the manifest's slug,
+  inflating the respondent-type count from 19 to 22. Fixed, with new guards in `validate-summaries.mjs`
+  (reciprocity, no-quoteless-bin, `org_type` validated against the manifest rather than an allowlist)
+  and a new idempotent `tools/reconcile-summary-bins.mjs`.
+- **A sweep-method bug worth remembering:** the eLibrary extractor read only the last page of a docket
+  sheet, which under-reports whenever one day's filings exceed the final page's row count. AD26-7 went
+  35 → 67 filings since Aug 9 once fixed; EL26-69 went 2 → 4. Corrected extractor committed at
+  `tools/elibrary-sweep.js`. It was caught by cross-checking a general search against the docket sweep,
+  not by anything inside the sweep.
+
+**Decision: no seventh tab for the abeyance orders.** The question was asked directly, so here is the
+reasoning rather than just the outcome.
+
+The twelve August documents (six abeyance orders, two errata, the extension notice, two compliance
+transmittals, one show-cause answer) are a real document class, and a "Commission actions" tab is the
+obvious move. It is the wrong one, for three reasons:
+
+1. **The tab bar is topical, not document-class.** Overview / Timeline / Reforms / Dockets / Comments /
+   Discourse each answer a *question a reader has* ("what happened", "what does it require", "who said
+   what"). A tab named for a document type would be the only one organized by what a thing IS rather
+   than what it ANSWERS, and it would compete with Timeline and Dockets for the same reader.
+2. **Every one of the twelve already has a home, and splitting them weakens all three surfaces.** The
+   narrative belongs in Timeline (ten new events). The clock belongs in the procedural board, which is
+   why `steps[].revised` exists. The per-docket state belongs on the Dockets tab, which is where someone
+   reading about EL26-70 needs to learn the proceeding is paused. Pulling the abeyance out into its own
+   tab would leave the Dockets tab describing directives that are not currently running against anyone,
+   with the correction one click away. That is the worst outcome available.
+3. **This is one procedural episode, not a standing lane.** A tab is a permanent structural commitment.
+   If the §205 filings land in November and the show cause orders are terminated, the abeyance becomes a
+   paragraph of history, and the site is left with a seventh tab describing a closed detour.
+
+What shipped instead: a `dockets[].abeyance` block rendering directly under the order link on each of
+the six docket cards, carrying the granting order's accession, reporter citation, who moved, the reset
+dates and, for four of the six, a verbatim quote from the order itself. Revisit the tab question only if
+the November filings produce a genuinely new lane (an actual §205 proceeding per region), which would be
+a new *topic*, not a new document type.
+
+Still open (carried into REFRESH.md's queue): whether any respondent makes its §205 filing before
+Nov 16, which suspends its duty to respond; the contents of CAISO's Aug 12 straw proposal, whose posting
+is first-party confirmed but whose substance is so far only secondary-sourced; the three unsolicited
+comments filed on the 30-day informational reports; and, for the third session running, the Jul 20
+rehearing requests' own accession numbers.
+
+
 **Session 2026-07-28b — Phase 0 done, Phase 1 data layer done, paused mid-flight.**
 
 Done and committed:

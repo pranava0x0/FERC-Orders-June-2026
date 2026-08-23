@@ -107,7 +107,8 @@
       "bins": [
         "pr:study",
         "rg:spp",
-        "rg:miso"
+        "rg:miso",
+        "pr:colo"
       ],
       "page": 6
     },
@@ -151,6 +152,7 @@
       "description": "The seven-factor test has guided FERC for nearly three decades, survived court review, and established regulatory certainty. Altering it would lose that certainty and create conflicts between federal regulation and state tariffs. The test should remain unchanged to maintain the state-federal jurisdictional balance.",
       "quote_ids": [
         1,
+        2,
         3,
         4,
         5,

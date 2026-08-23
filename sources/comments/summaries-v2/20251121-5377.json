@@ -62,7 +62,8 @@
       "concern": "Deposits and penalties alone do not protect against stranded costs once transmission is built.",
       "bins": [
         "aq:deposits",
-        "pr:cost"
+        "pr:cost",
+        "pr:study"
       ],
       "page": 3
     },

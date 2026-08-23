@@ -90,7 +90,8 @@
       "text": "With a guaranteed rate of return of around 11%, there is an obvious incentive for utilities to push for huge investments in transmission, including transmission for speculative data center interconnection requests that may not materialize.",
       "concern": "Utility incentive structures encourage overinvestment in speculative data center transmission.",
       "bins": [
-        "topic:utility-incentives"
+        "topic:utility-incentives",
+        "topic:forecasting-uncertainty"
       ],
       "page": 3
     },
@@ -129,7 +130,9 @@
       "stance": "oppose",
       "description": "Senators oppose spreading data center transmission costs to residential ratepayers and urge FERC to reject filings that do not properly allocate costs. They cite PJM's tripled capacity auction costs and call for proactive investigation into discriminatory utility practices.",
       "quote_ids": [
+        1,
         2,
+        4,
         5,
         6,
         12
@@ -141,6 +144,7 @@
       "stance": "support",
       "description": "Senators support standardizing load forecasting and increasing transparency into data center demand projections. They note that uncertain and speculative projections are driving billions in utility investments.",
       "quote_ids": [
+        3,
         4,
         7,
         8

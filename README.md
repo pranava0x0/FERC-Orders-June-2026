@@ -53,9 +53,14 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 108 tests across the suites
+node --test tests/*.test.mjs   # 118 tests across the suites
 node tools/verify-quotes.mjs   # whole-site quote audit (one command; --list for every quote)
 node tools/check-staleness.mjs # advisory: passed deadlines, stale stamps, unobserved filings
+node tools/validate-summaries.mjs        # the 268 comment summaries: verbatim quotes, vocab, bin links
+node tools/survey-summaries.mjs          # DISCOVERY pass: distributions + smells nothing checks yet
+node tools/reconcile-summary-bins.mjs    # repair quote<->bin links (idempotent; --dry-run to preview)
+python3 tools/extract-abeyance-docs.py   # abeyance orders/errata/compliance -> committed text (--check)
+node tools/news-sweep-plan.mjs           # build the news-sweep query matrix (--json, --check <file>)
 node tools/build-seo.mjs       # bake crawlable content + freshness dates + sitemap (--check)
 node tools/build-docket-pages.mjs # regenerate the seven per-docket pages (--check to verify)
 node tools/stamp-assets.mjs    # content-hash the ?v= asset tokens (--check to verify)

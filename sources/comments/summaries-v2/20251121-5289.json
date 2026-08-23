@@ -91,7 +91,8 @@
       "concern": "Co-location of load with existing generators creates market power risks requiring dedicated market-power studies",
       "bins": [
         "aq:hybridrights",
-        "topic:market-power"
+        "topic:market-power",
+        "pr:colo"
       ],
       "page": 18
     },

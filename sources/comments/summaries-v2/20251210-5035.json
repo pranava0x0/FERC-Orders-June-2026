@@ -23,7 +23,8 @@
       "concern": "non-firm service is a precondition for expedited interconnection",
       "bins": [
         "pr:flex",
-        "aq:hybridrights"
+        "aq:hybridrights",
+        "aq:expedited"
       ],
       "page": 1
     },
@@ -183,6 +184,7 @@
         1,
         2,
         4,
+        5,
         7,
         8,
         9,

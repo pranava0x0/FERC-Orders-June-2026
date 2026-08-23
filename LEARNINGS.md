@@ -177,3 +177,109 @@ run-by-run numbers are in [`agent-runs.md`](agent-runs.md); per-bug detail is in
   claim should grep the texts too, not just the display string (see the abeyance test in
   `tests/data.test.mjs`). Corollary: external news is a working accuracy probe — ISO-NE announcing
   an abeyance plan is what exposed the mislabel.
+
+## A moved deadline is not a missed one (2026-08-23)
+
+- **A date written into display copy will outlive the fact it describes.** `renderProcedural()` carried
+  one hand-written sentence: "August 17 carries both the six show-cause filings and PJM's further
+  compliance filing." FERC moved *both* clocks to November, and that sentence kept asserting August 17
+  on the Overview tab, directly above a matrix that had already been corrected. Every other date on the
+  site is rendered from `data.js` through `fmtISO`; this was the one that wasn't, and it was the one that
+  went stale. The fix was not to retype the new date but to **derive the claim**: `collideNote()` reads
+  the operative show-cause date and the E-2 track's own next date and renders only while they genuinely
+  coincide, so if the two clocks separate the callout disappears instead of lying. Guarded by a test that
+  allows exactly one hardcoded date in `app.js` display strings, the orders' own issuance, which cannot
+  move.
+- **Model a reset deadline as a separate field, not an overwrite.** The instinct on learning that Aug 17
+  became Nov 16 is to edit `steps[].date`. The test suite rejected that, correctly: `procedural.steps` is
+  the *order's own arithmetic* (issuance + the period the order states), and a test asserts each step sits
+  at its quoted interval. Overwriting it would have destroyed the record of what the order actually
+  required. The shape that works is `steps[].revised = { date, by, note, src }`, with one helper
+  (`stepWhen`) deciding which date governs, used by status, the "next" pick, every derived filing-matrix
+  cell, and `check-staleness.mjs`. The UI then shows both: the new date, the old struck through, and why.
+- **Without that, the site would have accused six RTOs of missing a deadline FERC itself moved.** The
+  filing matrix derives `none-observed` for any (docket, step) with no stored observation once the step's
+  date passes. That derivation is the right design and it produces a false accusation the moment the
+  deadline moves underneath it. Any derived-from-the-clock status needs to measure against the operative
+  date, not the original.
+- **Guard a "was X" render on X existing.** `moved = s.revised && s.revised.date` gated a strikethrough of
+  `s.date`, so a step reset from a *relative* window (no original fixed date) would render a bare "was ".
+  Latent today, one line to prevent: gate the strikethrough on both dates, and the explanation on the
+  reset alone.
+- **Check what the STATIC pages serve, not what the app renders.** The per-docket SEO pages
+  (`tools/build-docket-pages.mjs`) are a second renderer over the same data, and they had no notion of the
+  abeyance: a crawler or a search visitor got "respond by Aug 17" with nothing saying the proceeding was
+  paused. Adding a field to `data.js` and wiring it into `app.js` is two of the three places it has to go.
+
+## Blast radius is the whole consumer set, not the diff (2026-08-23)
+
+- **Changing what a helper MEANS silently breaks every reader of its output.** `procStatus()` gained a
+  reset-aware date, and the two lines that changed were correct. The two that broke were untouched and
+  one function away: `setMastheadDeadline` reads `ps.next.s.date`, and `pmStepWhen` returns
+  `fmtISO(hit.s.date)`. Both had been right for months; both now paired a status derived from the *new*
+  date with the *old* date printed beside it. The masthead announced a date six days in the past as
+  "Next deadline" above every tab, and ten policy-map rows read "Aug 17, 2026 · Upcoming". 119 tests,
+  the quote sweep and the staleness checker were all green. **After changing a shared derivation, grep
+  every consumer of the value it produces** — here, every read of `.s.date` off a `procStatus()` result.
+- **An independent reviewer earns its cost on exactly this class.** Self-review caught the one hardcoded
+  string I had written; it did not catch either of the two live bugs in code I had not edited, because I
+  was reading the diff and the bugs were not in the diff. Give the reviewer the enclosing functions and
+  say plainly that untouched lines are in scope.
+- **A per-entity exception has to reach every derived surface or it becomes an accusation.** FERC gave
+  SPP 95 days rather than 90. The board can only show one date, which is fine, but the filing matrix and
+  the staleness checker are per-docket and were still measuring all six against the majority date, so for
+  three days in November SPP's cell would have said "the deadline has passed and our checks found
+  nothing" while its own card said Nov 20. When data gains a per-entity exception, every surface that
+  derives status from the shared value needs the exception too.
+- **Check a check by breaking it deliberately, and be suspicious when it passes.** The abeyance quote
+  guard read convincingly and was nearly vacuous: it verified against the union of twelve texts with a
+  60-char LCS fallback, and six orders issued the same day from one template share far more than 60
+  characters. A quote misattributed from MISO to SPP passed both the tool and its test. Two of my own
+  regression tests this session also passed on a deliberately reintroduced bug before I tightened them.
+  **A test you have not seen fail is a test you have not written.**
+
+## Keep the tool that FOUND the bug, not just the one that prevents it (2026-08-23)
+
+- **A validator and a survey are different jobs, and only one of them was being kept.** The comment
+  corpus passed every check it had, so the defects were found by a throwaway script that printed
+  distributions: link asymmetry, quoteless bins, org_type spread, bin-name reuse, topic sprawl. Three of
+  its findings became hard checks in `validate-summaries.mjs` and the script went in `/tmp`. That is
+  backwards. The validator enforces the failure modes we already know; the survey is how the *next*
+  unknown one gets seen, and rewriting it from scratch each session is the expensive part. It is now
+  `tools/survey-summaries.mjs`, with a should-be-zero set and a distributions section that is explicitly
+  not asserted.
+- **A manual check repeated more than twice is a missing test.** Timeline chronological order was
+  verified with an ad-hoc `node -e` four times in one session, and fixed by hand four times, because
+  nothing asserted it. Now two tests: point events ascend, and every iso matches
+  `YYYY-MM-DD` with an optional same-day ordering suffix. Span events (`date: "Dec 2025 to Jun 2026"`)
+  are exempt by design, since their iso is a placement hint rather than the moment they occurred.
+- **Scripting the happy path is not the same as scripting the discovery path.** The docket sweep was
+  committed early; the eLibrary *general search* was not, and that is the half that finds filings a
+  docket sheet structurally cannot show — a compliance filing gets its own ER docket, so the two Aug 17
+  filings appear nowhere on the EL25-49 sheets. It also caught the pagination bug, by returning a filing
+  the docket sweep of the same docket had missed. Both halves are now in `tools/elibrary-sweep.js`.
+- **Know what should stay unscripted, and say so.** Pulling candidate quotes out of a new corpus, and
+  verifying an agent's finding against a primary source, are judgment work: the regex is different every
+  time and the question "does this source actually support this claim" is the part a human is for.
+  Scripting them would produce a tool nobody trusts. The render smoke check is unscripted for a
+  different reason: no jsdom, because the repo has no dependencies and should not gain one for this. It
+  lives in REFRESH.md as a paste-in console snippet instead.
+
+## Silent success is this repo's recurring bug (2026-08-23)
+
+Six review findings in one PR, and four were the same shape: **a command that reports success without
+having done the work.** `extract-abeyance-docs.py --check` compared zero documents and exited 0 because
+the source directory was clean. `news-sweep-plan.mjs --check` with no operand printed a plan and exited
+0. `--queries` with a bad value emitted an empty plan and exited 0. A malformed URL threw inside a
+`try` whose `catch` assumed the error had already been reported. None of them failed; all of them
+lied.
+
+The pattern to watch for: **any branch that treats "nothing to do" the same as "done".** The fix is
+always the same shape too — count what was actually verified, and make an empty count an error rather
+than a pass. `--check` now reports "compared 12 of 12" so the number is visible even on success, which
+is what makes the zero case obvious the moment it happens.
+
+Worth noting where these came from. The human reviewer found the two live rendering bugs; the automated
+reviewer found four silent-success paths in the tooling, which is the class a human skims past because
+the tool "works when you run it normally". Both passes were worth their cost, and they found disjoint
+sets.

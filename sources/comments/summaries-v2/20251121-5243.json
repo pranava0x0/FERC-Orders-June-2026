@@ -41,7 +41,9 @@
       "concern": "Entry fee model allows generators to connect immediately under curtailment while awaiting network upgrades",
       "bins": [
         "pr:study",
-        "pr:cost"
+        "pr:cost",
+        "pr:flex",
+        "topic:entry-fee-model"
       ],
       "page": 3
     },
@@ -60,7 +62,8 @@
       "concern": "Entry fee model integrates generation interconnection and transmission planning to cut duplicative studies",
       "bins": [
         "pr:study",
-        "pr:cost"
+        "pr:cost",
+        "topic:entry-fee-model"
       ],
       "page": 4
     },
@@ -90,7 +93,8 @@
       "concern": "Proactive planning should study load and generation together, consistent with ANOPR's third reform principle",
       "bins": [
         "pr:study",
-        "pr:colo"
+        "pr:colo",
+        "topic:proactive-transmission-planning"
       ],
       "page": 5
     },
@@ -213,9 +217,9 @@
       "stance": "support",
       "description": "AEP urges FERC to replace the current study-based, but-for cost allocation with a standardized or formulaic entry fee known before a generator enters the queue. The fee would be transparent, easy to calculate, and consistent with the beneficiary-pays principle, eliminating restudy cascades triggered by queue withdrawals.",
       "quote_ids": [
-        7,
+        4,
         6,
-        4
+        7
       ]
     },
     {

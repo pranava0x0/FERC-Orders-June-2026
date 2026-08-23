@@ -94,7 +94,8 @@
       "concern": "Generator suspension to serve a new large load shifts resource adequacy costs and reliability risks onto other ratepayers",
       "bins": [
         "pr:cost",
-        "topic:generator-suspension"
+        "topic:generator-suspension",
+        "pr:proximate"
       ],
       "page": 36
     },

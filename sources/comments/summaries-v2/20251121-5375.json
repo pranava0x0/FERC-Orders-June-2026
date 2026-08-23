@@ -59,7 +59,8 @@
       "text": "Allowing an existing generator to re-secure those rights will avoid the quagmire of the interconnection study process and its associated delays and thus achieve the ANOPR's goal of timely and orderly interconnection of large loads to the transmission system.",
       "concern": "Recapturing rights avoids delays in study process",
       "bins": [
-        "pr:study"
+        "pr:study",
+        "topic:cir-recapture"
       ],
       "page": 3
     },

@@ -25,7 +25,8 @@
       "concern": "Links interconnection reform to US AI leadership",
       "bins": [
         "pr:study",
-        "pr:flex"
+        "pr:flex",
+        "topic:ai-national-security"
       ],
       "page": 1
     },
@@ -174,6 +175,7 @@
       "stance": "support",
       "description": "IFP supports assigning 100% of network upgrade costs to the interconnecting large load. This approach is justified because large loads are well capitalized, and clear cost allocation provides the financial certainty developers and investors need for multi-billion dollar projects.",
       "quote_ids": [
+        1,
         7,
         8
       ]
@@ -184,6 +186,7 @@
       "stance": "support",
       "description": "IFP supports co-location of loads with generation as a key tool for reducing costly network upgrades. Studying hybrid facilities on net injection or withdrawal rights can dramatically shrink grid impact and cut years of interconnection delays.",
       "quote_ids": [
+        1,
         5,
         6
       ]
@@ -195,6 +198,7 @@
       "description": "IFP calls Principle 7 the single most powerful near-term proposal. Expedited interconnection for curtailable loads can unlock 76 GW or more of new capacity with minimal grid expansion, bridging the gap between immediate AI demand and longer-horizon generation and transmission buildout.",
       "quote_ids": [
         1,
+        2,
         9,
         10,
         15

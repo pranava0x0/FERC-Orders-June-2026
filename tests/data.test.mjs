@@ -1075,3 +1075,29 @@ test("the comment corpus is declared as a Dataset for rich results", () => {
   assert.ok(ds.description.includes(String(D.comments.total)), "Dataset counts come from the data, not retyped");
   assert.equal(ds.dateModified, D.meta.newsCapture, "Dataset tracks the newest sweep");
 });
+
+test("the timeline rail reads in chronological order", () => {
+  // Four events shipped out of order during one refresh, each caught by an ad-hoc `node -e` and fixed by
+  // hand, because nothing asserted this. The rail is rendered in array order, so an out-of-place event
+  // reads as though it happened at the wrong time.
+  //
+  // SPAN events are exempt: their `date` is a range ("Dec 2025 to Jun 2026") and their `iso` is a
+  // placement hint, not the moment they occurred, so two overlapping spans can legitimately sit in
+  // either order. Point events cannot.
+  const isSpan = (e) => /\bto\b/i.test(String(e.date || "")) || /^(After|Parallel|Fall|Late)/i.test(String(e.date || ""));
+  const out = [];
+  for (let i = 1; i < D.timeline.length; i++) {
+    const prev = D.timeline[i - 1], cur = D.timeline[i];
+    if (isSpan(prev) || isSpan(cur)) continue;
+    if (prev.iso > cur.iso) out.push(`${prev.iso} ("${prev.title}") precedes ${cur.iso} ("${cur.title}")`);
+  }
+  assert.deepEqual(out, [], "point events must be in ascending iso order:\n" + out.join("\n"));
+});
+
+test("every timeline iso is a date, optionally with a same-day ordering suffix", () => {
+  // Several events share a day and are ordered with a trailing letter (2026-08-14, -14b, -14c). That is
+  // the convention; anything else is a typo that would sort unpredictably against its neighbours.
+  for (const e of D.timeline) {
+    assert.match(e.iso, /^\d{4}-\d{2}-\d{2}[a-z]?$/, `timeline iso "${e.iso}" (${e.title})`);
+  }
+});

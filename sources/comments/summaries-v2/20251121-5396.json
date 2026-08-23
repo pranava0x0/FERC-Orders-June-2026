@@ -198,6 +198,15 @@
         "topic:advanced-transmission-tech"
       ],
       "page": 2
+    },
+    {
+      "id": 21,
+      "text": "At this time, Southeast Public Interest Organizations do not support any particular size threshold to govern which large loads will be subject to the reforms the Commission adopts.",
+      "concern": "Declines to endorse any particular MW threshold at this stage",
+      "bins": [
+        "aq:threshold"
+      ],
+      "page": 38
     }
   ],
   "bins": [
@@ -219,7 +228,9 @@
       "name": "Threshold informed by state practice",
       "stance": "neutral",
       "description": "The filers do not endorse a specific MW threshold but offer considerations: the 20 MW Order No. 2003 analogy is informative but not controlling, state utility thresholds in the Southeast range from 25 MW to 100 MW, and the Commission should also consider load factor alongside size to focus on loads that consistently strain the grid.",
-      "quote_ids": []
+      "quote_ids": [
+        21
+      ]
     },
     {
       "key": "aq:deposits",
