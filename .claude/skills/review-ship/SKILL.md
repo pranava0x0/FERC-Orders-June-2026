@@ -41,6 +41,19 @@ scope). Hunt the failure modes that actually bite this codebase:
 - **Dates**: `new Date("YYYY-MM-DDT00:00:00")` (local) vs today (`new Date()` + `setHours(0,0,0,0)`) —
   keep both local; ties on "next"; all-past.
 - **Deleted guards**: for every removed line, find where its invariant is re-established.
+- **Blast radius past the diff** (2026-08-23, the two worst bugs of that session): when a hunk changes
+  what a shared helper *means*, grep every READER of its output, not just its callers. `procStatus()`
+  became reset-aware and two untouched functions one call away kept reading `.s.date` off the result —
+  the masthead announced a date six days in the past on every tab, with a fully green suite. Untouched
+  lines inside the blast radius are in scope; say so to any reviewer agent.
+- **Silent success in tooling** (same session, 4 instances in one PR): any branch treating "nothing to
+  do" as "done". A `--check` that finds no inputs and exits 0; a flag with a missing operand falling
+  through to a normal run; `parseInt(undefined)` → `NaN` → an empty slice; a `catch` that swallows on
+  the assumption an error was already recorded. Grep new CLI code for every early return and ask what it
+  prints and what it exits.
+- **Hardcoded values in display copy** where the rest of the surface is data-driven. One typed date
+  outlived the fact it described and kept asserting it above a table that had already been corrected.
+  If a page derives every other instance of a value, the literal one is the one that rots.
 - **CLAUDE.md conventions**: no em-dashes / "X, not Y" / range dashes in *displayed* copy; ≥44px touch
   targets under `@media (pointer: coarse)`; `[hidden]{display:none}` alongside any `display:` rule on a
   `hidden`-toggled element; derived values labeled derived; never manufacture certainty.
