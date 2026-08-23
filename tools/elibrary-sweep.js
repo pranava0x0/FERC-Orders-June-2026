@@ -97,3 +97,52 @@
  * than trusting the docket-sheet description: on 2026-08-23 accession 20260813-3026's description named
  * the wrong docket (EL26-72) and the wrong parent order for what is in fact the EL26-70 erratum.
  */
+
+/* ---------------------------------------------------------------------------------------------
+ * THE GENERAL SEARCH — the other half, and the half that finds what a docket sweep structurally
+ * cannot.
+ *
+ * A docket sheet only lists filings docketed under THAT docket. A compliance filing gets its own new
+ * ER docket, so PJM's Aug 17, 2026 partial co-location compliance filing and the PJM Transmission
+ * Owners' Interim NITS rate filing appear NOWHERE on the EL25-49 sheets. They were found by searching
+ * eLibrary by applicant and date instead, and they were the whole "Aug 17 did not pass empty" finding.
+ * Running this alongside the per-docket sweep is also what caught the last-page-only pagination bug,
+ * by surfacing an AD26-7 filing the docket sweep of AD26-7 had not returned.
+ *
+ * Navigate to https://elibrary.ferc.gov/eLibrary/search FIRST (a fresh search form, not a results
+ * page — the results page has a filter panel with DIFFERENT field names, e.g. `ftextsearch` instead of
+ * `textsearch`, and filling that silently filters instead of searching).
+ *
+ * Then paste this, adjusting the three values at the top.
+ */
+(() => {
+  const FROM = "08/15/2026";               // mm/dd/yyyy
+  const TO = "08/23/2026";
+  const ORG = "PJM Interconnection";       // Organization / applicant. Leave "" to search all.
+  const KEYWORD = "";                      // optional; searches the Description field
+
+  // Angular Material inputs ignore a plain `.value =`. Set through the native setter, then dispatch
+  // input + change + blur, or the form submits with the field still empty.
+  const setNg = (el, val) => {
+    if (!el) return false;
+    const setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, "value").set;
+    setter.call(el, val);
+    for (const ev of ["input", "change", "blur"]) el.dispatchEvent(new Event(ev, { bubbles: true }));
+    return true;
+  };
+  const byName = (n) => document.querySelector(`[name="${n}"]`);
+
+  const ok = [
+    setNg(byName("dFROM"), FROM),
+    setNg(byName("dTO"), TO),
+    ORG ? setNg(byName("Affiliation"), ORG) : true,
+    KEYWORD ? setNg(byName("textsearch"), KEYWORD) : true,
+  ];
+  if (ok.includes(false)) return "a field was missing — are you on /eLibrary/search, not a results page?";
+
+  const desc = document.querySelector("#mat-checkbox-1-input");   // "Description"
+  if (desc && !desc.checked) desc.click();
+
+  document.querySelector("#submit").click();
+  return "submitted — read the results with the row extractor above (the results grid is the same shape)";
+})();

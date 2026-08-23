@@ -57,6 +57,7 @@ node --test tests/*.test.mjs   # 118 tests across the suites
 node tools/verify-quotes.mjs   # whole-site quote audit (one command; --list for every quote)
 node tools/check-staleness.mjs # advisory: passed deadlines, stale stamps, unobserved filings
 node tools/validate-summaries.mjs        # the 268 comment summaries: verbatim quotes, vocab, bin links
+node tools/survey-summaries.mjs          # DISCOVERY pass: distributions + smells nothing checks yet
 node tools/reconcile-summary-bins.mjs    # repair quote<->bin links (idempotent; --dry-run to preview)
 python3 tools/extract-abeyance-docs.py   # abeyance orders/errata/compliance -> committed text (--check)
 node tools/news-sweep-plan.mjs           # build the news-sweep query matrix (--json, --check <file>)
