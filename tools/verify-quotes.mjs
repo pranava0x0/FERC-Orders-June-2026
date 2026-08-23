@@ -177,8 +177,13 @@ for (const d of [...D.dockets, D.colocation].filter(Boolean)) {
   //     containment is the right bar. Verified: all four displayed quotes contain exactly in their own
   //     file today.
   if (d.abeyance?.quote) {
+    // `abeyance-` prefix, not just the docket: PJM's and MISO's dockets also have an errata file, so a
+    //     docket-substring match would let a quote lifted from the ERRATUM pass while labeled as exact in
+    //     the abeyance order.
     const key = String(d.docket || "").toLowerCase().replace(/-\d+$/, "");   // EL26-67-000 -> el26-67
-    const own = Object.entries(abeyanceText).filter(([slug]) => slug.includes(key)).map(([, t]) => t).join(" ¶ ");
+    const own = Object.entries(abeyanceText)
+      .filter(([slug]) => slug.startsWith("abeyance-") && slug.includes(key))
+      .map(([, t]) => t).join(" ¶ ");
     required.push({
       label: `${d.item} abeyance ${d.abeyance.cite} (exact, own order text)`,
       quote: d.abeyance.quote,
