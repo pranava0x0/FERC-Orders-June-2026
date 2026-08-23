@@ -22,7 +22,8 @@
       "concern": "Large loads should pay transmission charges and support long-term planning",
       "bins": [
         "pr:cost",
-        "pr:flex"
+        "pr:flex",
+        "pr:study"
       ],
       "page": 1
     },

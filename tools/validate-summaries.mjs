@@ -23,6 +23,19 @@ const RG = new Set(["pjm", "miso", "spp", "caiso", "isone", "nyiso"]);
 const STANCES = new Set(["support", "oppose", "mixed", "neutral"]);
 export const VOCAB = { AQ, PR, RG, STANCES };
 
+// `org_type` has exactly one source of truth: the stakeholder bucket already assigned to the filing in
+// the scraped manifest. The workflow prompt tells the model to copy it verbatim; three summaries instead
+// wrote a human-readable label ("Trade Association" for `trade_assoc`), which nothing caught because the
+// field had no vocabulary check at all. Validate against the manifest rather than a hand-kept allowlist,
+// so the vocabulary can never drift from the data it describes.
+const MANIFEST = join(ROOT, "sources", "comments", "rm26-4-comments.json");
+if (!existsSync(MANIFEST)) {
+  // Without it every org_type check silently passes, and the run reports "0 errors" identically to a
+  // real pass. Fail loudly instead of quietly checking nothing.
+  throw new Error(`comments manifest missing at ${MANIFEST}; org_type cannot be validated`);
+}
+const BUCKET_BY_ACC = new Map(JSON.parse(readFileSync(MANIFEST, "utf8")).comments.map((c) => [c.acc, c.bucket]));
+
 const norm = (x) => x.replace(/[​‌‍﻿⁠]/g, "").replace(/---\s*PAGE\s*\d+\s*---/g, " ").replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/[–—]/g, "-").replace(/\s+/g, " ").trim();
 
 // Deterministic style + quality checks (free; would otherwise need an LLM audit pass).
@@ -74,6 +87,19 @@ export function validate(file) {
   const s = JSON.parse(readFileSync(join(DIR, file), "utf8"));
   const errs = [];
   for (const k of ["accession", "filer", "source_text", "overall_summary", "quotes", "bins", "lenses"]) if (s[k] == null) errs.push(`missing ${k}`);
+  // These two run BEFORE the body-text early return. A summary with an absolute source_text often has
+  // no resolvable body dir either, and reporting only "no body text found" would bury the actual
+  // diagnosis — the absolute path was the cause, not a second symptom.
+  const expectedBucket = BUCKET_BY_ACC.get(s.accession);
+  if (expectedBucket && s.org_type !== expectedBucket)
+    errs.push(`org_type "${s.org_type}" != manifest bucket "${expectedBucket}"`);
+  else if (!expectedBucket)
+    errs.push(`accession not found in the comments manifest, so org_type "${s.org_type}" is unverifiable`);
+  // This repo is public, so a committed absolute path leaks the author's home directory and machine
+  // layout into history. Paths are stored repo-relative (CLAUDE.md, Supply-chain hardening).
+  if (typeof s.source_text === "string" && (s.source_text.startsWith("/") || /^[A-Za-z]:[\\/]/.test(s.source_text)))
+    errs.push(`source_text is a machine-local absolute path (store it repo-relative): ${s.source_text}`);
+
   const srcText = sourceTextFor(s);
   if (srcText == null) { errs.push(`no body text found for ${s.accession} (source_text: ${s.source_text})`); return { acc: s.accession, errs, lowQuotes: [] }; }
   const nsrc = norm(srcText);
@@ -101,6 +127,24 @@ export function validate(file) {
     if (ns !== "topic" && union[ns]) union[ns].add(k);
     if (!STANCES.has(b.stance)) errs.push(`bin ${b.key} bad stance ${b.stance}`);
     for (const id of b.quote_ids || []) if (!qids.has(id)) errs.push(`bin ${b.key} -> unknown quote ${id}`);
+    // A bin's name, description and stance are synthesized FROM its quotes, so a quoteless bin is an
+    // unsourced position: it renders on the comment page with a stance and no evidence behind it.
+    if (!(b.quote_ids || []).length) errs.push(`bin ${b.key} rests on no quote (unsourced position)`);
+  }
+  // `bins[].quote_ids` is derived from `quotes[].bins`, so the two directions must agree exactly.
+  // Only quote_ids reaches the built page, so a quote naming a bin that omits it is evidence the site
+  // silently drops. Repair with: node tools/reconcile-summary-bins.mjs
+  for (const q of s.quotes || []) {
+    for (const bk of q.bins || []) {
+      const b = (s.bins || []).find((x) => x.key === bk);
+      if (b && !(b.quote_ids || []).includes(q.id)) errs.push(`quote ${q.id} names bin ${bk} but its quote_ids omits the quote`);
+    }
+  }
+  for (const b of s.bins || []) {
+    for (const id of b.quote_ids || []) {
+      const q = (s.quotes || []).find((x) => x.id === id);
+      if (q && !(q.bins || []).includes(b.key)) errs.push(`bin ${b.key} claims quote ${id} but the quote does not name it`);
+    }
   }
   for (const ns of ["aq", "pr", "rg"]) {
     const got = new Set(s.lenses?.[ns] || []);

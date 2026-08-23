@@ -70,7 +70,8 @@
       "text": "Simple Payback Period = Upfront Capital Premium divided by Annual OpEx Savings = $23,000,000 / $5,900,000 = 3.9 Years.",
       "concern": "Proposed technology achieves financial payback within 3.9 years through operational savings",
       "bins": [
-        "topic:financial-viability"
+        "topic:financial-viability",
+        "topic:open-source-mandate"
       ],
       "page": null
     }

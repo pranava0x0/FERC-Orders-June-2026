@@ -149,6 +149,15 @@
         "topic:puhca-ewg-reform"
       ],
       "page": 11
+    },
+    {
+      "id": 15,
+      "text": "the Commission should require hybrid interconnections to install the system protection facilities necessary to prevent unauthorized injections or withdrawals that exceed the respective rights available to the interconnection customer.",
+      "concern": "Protection facilities should stop injections or withdrawals beyond granted rights",
+      "bins": [
+        "aq:protection"
+      ],
+      "page": 15
     }
   ],
   "bins": [
@@ -211,7 +220,9 @@
       "name": "Protection Facilities for Hybrid Interconnections",
       "stance": "support",
       "description": "EDF supports requiring hybrid interconnections to install telemetry and protection facilities that enforce injection and withdrawal rights and prevent unauthorized grid use.",
-      "quote_ids": []
+      "quote_ids": [
+        15
+      ]
     },
     {
       "key": "aq:expedited",
