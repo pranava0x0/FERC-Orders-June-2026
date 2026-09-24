@@ -25,7 +25,7 @@ Repeat until `.worklist.json` count is 0:
 
 ```bash
 # 1. pick the next chunk (size to budget — see pause points)
-node tools/build-comment-worklist.mjs --next 10          # prints ["acc1", ...]
+node tools/build-comment-worklist.mjs --next 5          # prints ["acc1", ...]
 ```
 
 ```
@@ -35,19 +35,19 @@ Workflow({ scriptPath: "tools/summarize-comments.workflow.mjs",
 ```
 
 ```bash
-# 3. on completion — validate, log usage, commit (one block; commit gated on no hard errors):
+# 3. on completion — validate, log usage, commit (one block; commit only after complete=true and disk validation reports zero errors and zero low-coverage quotes):
 node tools/validate-summaries.mjs > /tmp/v.txt 2>&1; VEXIT=$?; tail -1 /tmp/v.txt
 COUNT=$(grep -oE '^[0-9]+ summaries checked' /tmp/v.txt | grep -oE '^[0-9]+')
 if [ "$VEXIT" -eq 0 ]; then
   # append the run's usage (from the completion notification's `usage` block) for later analysis:
   node -e 'require("fs").appendFileSync("sources/comments/workflow-runs.jsonl", JSON.stringify({
     run_id:"<wf_id>", label:"chunk", date:"<today>", extract_model:"sonnet", audit_model:"sonnet",
-    comments_in:10, written:<n>, flagged:<n>, audited:<n>, agents:<n>, tool_uses:<n>,
+    comments_in:5, written:<n>, flagged:<n>, audited:<n>, agents:<n>, tool_uses:<n>,
     subagent_tokens:<n>, duration_s:<n>, note:"" })+"\n")'
   node tools/build-comment-worklist.mjs | head -1
   git add -A && git commit -q -m "Add comment summaries (${COUNT}/268 valid)"
 else echo "VALIDATION FAILED — not committing"; tail -5 /tmp/v.txt; fi
-node tools/build-comment-worklist.mjs --next 10           # next chunk
+node tools/build-comment-worklist.mjs --next 5           # next chunk
 ```
 
 A re-queued accession (silent write-fail or invalid) reappears at the front of the next chunk — that is the self-heal, not a bug.
@@ -56,7 +56,7 @@ A re-queued accession (silent write-fail or invalid) reappears at the front of t
 
 The user watches their **5-hour session budget** (see memory `respect-session-budget`). A fan-out can exhaust it and rate-limit them for the rest of the window. So:
 
-- **Size the chunk to the *remaining* budget.** Default 10. When the user signals a tight budget ("within my 9%"), drop to 3–5. Each ~10-chunk costs ~430–570K subagent tokens.
+- **Size the chunk to the *remaining* budget.** Default 5 (hard maximum in the workflow). When the user signals a tight budget ("within my 9%"), drop to 3–5. Each ~10-chunk costs ~430–570K subagent tokens.
 - **Commit after every chunk** so no batch is ever lost (per-summary save + this commit = two safety nets).
 - **Report cumulative spend after each chunk and PAUSE for an explicit go-ahead** when budget is tight. Do not autonomously run the whole corpus unless told "keep going".
 - **`TaskStop` in-flight work the moment the user flags budget** — "it's already running" is not a reason to let it finish; the not-yet-started agents are saveable.
@@ -74,3 +74,7 @@ Just re-run from step 1: `node tools/build-comment-worklist.mjs` rebuilds the qu
 ## Corpus status (2026-06-26): complete
 
 All **268/268** text-extracted comments are summarized, validated, and wired into the Comments tab via `tools/build-comments-page-data.mjs` (lens chips + synthesis from the LLM bins, keyword fallback for any un-summarized). `tests/comment-summaries.test.mjs` and `tests/data.test.mjs` enforce the count floor (≥ 268), the verbatim-quote fidelity bar, and the per-row bins/stance-map shape. **5 comments stay unsummarized:** 4 image-only scans (no text layer, OCR-pending) and 1 filing (ETI, `20251121-5225`) that eLibrary serves inline rather than releasing for download (`issues.md`, `backlog.md`). Re-run the loop only to fill those in after OCR.
+
+## Completion gate (2026-09-24)
+
+A worker saying `written` is insufficient. The workflow requires matching accession, validator `ok`, and a boolean audit flag. Flagged records also need audit validator `ok` and verdict `good` or `revised`. Skipped audits remain null. Dates default to the actual run date; duplicate accessions are processed once; batches above five fail before dispatch. At most two repair attempts per worker. After the workflow, independently validate the saved files before building or committing. AI review does not set `provenance.verified` to true.
