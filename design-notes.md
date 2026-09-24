@@ -70,3 +70,9 @@ parentheses), no "it's not X, it's Y" parallelism, no marketing register. Ranges
 "X–Y." Leave verbatim FERC/DOE quotes, reporter cites, and source titles exactly as quoted; the dash
 rule is for our editorial prose, not for quoted text. A regression-style habit: after editing copy,
 grep the rendered tabs for em-dashes and expect zero.
+
+## September 2026 refresh
+
+Identity: a regulatory research desk, using FERC’s current white, deep teal and gold palette (ferc.gov inspected September 24). No agency seal; independent status appears in the masthead. Sans-serif headings, square edges, ruled lists, and a docket-number column. Gold marks navigation, never stance. Essential paths precede background. All six main tabs stay visible on mobile.
+
+Behavior: from Overview, one link opens order documents, comment search, the issue map, filing evidence, or the schedule. Existing hashes remain valid. Success: no horizontal page overflow at 375/768/1280 pixels; essential entry points within the first screen; quotes unchanged.

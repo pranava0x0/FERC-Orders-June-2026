@@ -9,6 +9,12 @@
  */
 window.FERC_DATA = (function () {
   const SOURCES = {
+    elibrary0924: {"label":"eLibrary docket sheets checked September 24, 2026","org":"FERC eLibrary","tier":"ferc","url":"https://elibrary.ferc.gov/eLibrary/search","captured":"2026-09-24","undated":true,"note":"Paginated browser checks of EL26-67 through EL26-72, EL25-49, AD26-7, ER26-3380 and RM26-4. September 21 orders downloaded and text-extracted under sources/text/rehearing. Other new filings are described from docket metadata only; their arguments were not analyzed. Docket-sheet checks do not cover separate new ER compliance dockets."},
+    rehearingPJM0921: {"label":"EL26-67: order dismissing rehearing and clarification requests","org":"FERC","tier":"ferc","url":"https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-3020","captured":"2026-09-24","published":"2026-09-21","note":"Downloaded DOCX and read extracted text; committed at sources/text/rehearing/20260921-3020_EL26-67-001.txt. Dismissal concerns finality, not a decision on the tariff merits."},
+    rehearingMISO0921: {"label":"EL26-70: order dismissing rehearing and clarification requests","org":"FERC","tier":"ferc","url":"https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-3047","captured":"2026-09-24","published":"2026-09-21","note":"Downloaded DOCX and read extracted text; committed at sources/text/rehearing/20260921-3047_EL26-70-001.txt. Dismissal concerns finality, not a decision on the tariff merits."},
+    rehearingNYISO0921: {"label":"EL26-69: order dismissing rehearing and clarification requests","org":"FERC","tier":"ferc","url":"https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-3021","captured":"2026-09-24","published":"2026-09-21","note":"Downloaded DOCX and read extracted text; committed at sources/text/rehearing/20260921-3021_EL26-69-001.txt. Dismissal concerns finality, not a decision on the tariff merits."},
+    rehearingCAISO0921: {"label":"EL26-71: order dismissing rehearing and clarification requests","org":"FERC","tier":"ferc","url":"https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-3019","captured":"2026-09-24","published":"2026-09-21","note":"Downloaded DOCX and read extracted text; committed at sources/text/rehearing/20260921-3019_EL26-71-001.txt. Dismissal concerns finality, not a decision on the tariff merits."},
+    rehearingISONE0921: {"label":"EL26-72: order dismissing rehearing and clarification requests","org":"FERC","tier":"ferc","url":"https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-3056","captured":"2026-09-24","published":"2026-09-21","note":"Downloaded DOCX and read extracted text; committed at sources/text/rehearing/20260921-3056_EL26-72-001.txt. Dismissal concerns finality, not a decision on the tariff merits."},
     doe403: {
       label: "DOE §403 Letter & enclosed ANOPR",
       org: "U.S. Dept. of Energy (Sec. Chris Wright)",
@@ -329,28 +335,24 @@ window.FERC_DATA = (function () {
 
   const meta = {
     title: "Large Load Interconnection",
-    subtitle: "From the DOE §403 ANOPR (Docket RM26-4-000) to FERC’s June 18, 2026 tailored §206 show cause orders",
+    subtitle: "Orders, deadlines, and public comments on connecting large electricity loads",
     items: "Items E-7 to E-12 · Dockets EL26-67-000 to EL26-72-000",
     capture: "2026-06-22",
     discourseCapture: "2026-06-29",
-    newsCapture: "2026-08-23",
+    newsCapture: "2026-09-24",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
     summary: [
-      "On October 23, 2025, the Department of Energy invoked its rarely used § 403 authority to direct FERC to open a rulemaking on connecting large loads (data centers, AI, advanced manufacturing) to the interstate grid (Docket RM26-4-000), and asked for final action by April 30, 2026.",
-      "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.",
-      "The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC issued Item E-2 (EL25-49-002), the order on rehearing that finalizes the rates and terms for the three new transmission services its PJM co-location proceeding created, the same services the six orders extend to every other region.",
-      "As of the August 3, 2026 sweep, all six markets have used the tools the clock gives them. Every RTO/ISO filed its 30-day generation-adequacy report by July 20 (confirmed on eLibrary for all six). Every one of the six proceedings now carries an abeyance motion: PJM and its Transmission Owners filed five days early, on July 28; the other five followed on August 3, the deadline itself. FERC opened an answer period on PJM's motion, and large stakeholders are answering in support rather than opposing it. August 17 still carries the six show-cause filings for any docket that isn't held in abeyance, plus PJM's separate request to extend its co-location compliance deadline. Running beside all of it, FERC opened the post-conference comment period on PJM's own governance on July 30, in Docket AD26-7-000, heading toward a September reform deadline.",
-      "The August 23, 2026 sweep finds the clock stopped. On August 14, three days before the deadline everything had been building toward, FERC held all six §206 proceedings in abeyance, in full, including both the show-cause responses and the briefing questions. Responses now come due November 16, 2026, and answers to them December 16; SPP asked for 95 days rather than 90 and got exactly that, so its dates are November 20 and December 21. Every abeyance motion on file was granted, including PJM's, its Transmission Owners' and Silver Run Electric's, and including MISO's over American Municipal Power's opposition, the only opposition in the record. FERC did not adopt AMP's proposed condition but answered it in the order, reminding MISO and its Transmission Owners that if their §205 filings do not address all of the preliminary findings, the Commission will take those issues up through the show cause proceeding. Each order carries the same suspension clause: a respondent that makes its §205 filing by the new date has its obligation to respond suspended, and the proceeding stays in abeyance pending further direction. CAISO's is the only one issued as a full order rather than a letter order, because it also granted the rescission motions of the Six Cities and the Western Area Power Administration, removing them from the proceeding as non-public utilities under FPA §201(f) and amending the caption. FERC made the same cleanup in PJM's and MISO's dockets by errata on August 13.",
-      "August 17 did not pass empty. It was also the co-location compliance date, and although FERC granted PJM a 90-day extension to November 16 there too, PJM had promised a partial filing that day and made one: revised definitions, removal of the 50 MW nameplate limit on retail behind-the-meter netting, and the tariff records for Interim Network Integration Transmission Service, whose provisions it proposes not to make effective until July 1, 2028. The PJM Transmission Owners filed the Interim NITS rate the same day, noting in a footnote that the directives they are complying with are under challenge and the sheets may later be withdrawn. The pressure did not pause with the clock. On Jul 27 the entire Maryland congressional delegation, two senators and seven representatives, wrote to Chairman Swett saying they were encouraged by the June 18 orders and asking for something the orders do not reach: relief from the roughly $2 billion of PJM transmission cost already allocated to Maryland ratepayers for data centers built in other states. Two states went further and acted on their own, New Jersey enacting a data-center ratepayer class on Jul 7 and Virginia's commission directing Dominion on Aug 10 to assign transmission costs to large loads directly. Cost causation, the principle the six orders rest on, is being implemented at retail while the federal proceeding waits. Meanwhile the two lanes running beside the main one both filled up: roughly 49 filings landed in the PJM governance docket on the August 21 comment deadline, from PJM itself, the state committee, utilities, generators, consumer advocates and environmental groups, and PJM's backstop auction drew protests from its own Transmission Owners, from consumer advocates in three states and from generators, after a sweep two weeks earlier had found none.",
-      "The August 9, 2026 sweep found the answer period producing the record's first real division. American Municipal Power is the lone opponent, arguing MISO's abeyance motion does not meet the show cause order's own abeyance standard, and asking FERC to condition further abeyance on a 20-day stakeholder proposal rather than deny it outright. Every other answer's own filed description states support for its docket's motion, from Constellation, an industrial customer coalition, the Corporate Energy Buyers Association, a state committee and state commissions; the one ambiguously worded exception (a state committee's answer in ISO-NE's docket) was confirmed as support by reading the filing directly. PJM's docket alone gained a third, separate abeyance motion, from a respondent asking FERC to rule by August 13 so it has certainty ahead of the August 17 deadline. Newly confirmed, known only through an Aug 4 Constellation answer that cites and dates them: the Indicated PJM Transmission Owners and, jointly, Exelon and FirstEnergy sought rehearing of both the PJM order and the E-2 order on July 20. Constellation's answer, opposing both, says the Exelon/FirstEnergy E-2 request largely repeats an earlier rehearing request the Commission already rejected. On the governance track, FERC's July 30 notice, once its own text was read directly, sets two concrete dates: post-conference comments are due August 21, and its Alternative Dispute Resolution forum is set to commence September 1. And PJM's capacity backstop moved from a stated intent to a proposed FERC filing on July 31 (Docket ER26-3380, not yet acted on): a one-time reliability auction targeting the same 6,831 MW shortfall, at a $555/MW-day cap and up to $20 billion. No docket has a FERC ruling yet on any pending abeyance motion.",
-    ],
+      "FERC opened six investigations on June 18, 2026 into transmission rules for large electricity users. The orders cover study procedures, upgrade costs, co-location, flexible service, and nearby generation.",
+      "Responses are due November 16, 2026; SPP’s are due November 20. FERC granted abeyance on August 14. A qualifying section 205 tariff filing suspends that respondent’s obligation to answer the show-cause order.",
+      "On September 21, FERC dismissed rehearing and clarification requests in five proceedings because the June orders were not final decisions. The November schedule remains. The comment explorer covers 273 filings collected through June 24; later filings are not yet analyzed."
+],
   };
 
   const kpis = [
     { value: "6", label: "RTOs / ISOs", sub: "all FERC-jurisdictional grid operators + their TOs" },
-    { value: "5", label: "Reform categories", sub: "teed up in each tailored order" },
+    { value: "5", label: "Reform categories", sub: "addressed in each regional order" },
     // `step` joins the card to the live procedural clock, so these two stop reading as forever-pending.
     { value: "30 days", label: "Informational report", sub: "resource-adequacy plan to serve large loads", deadline: true, step: "report" },
     { value: "60 days", label: "Justify or file", sub: "defend tariffs or propose §206 revisions; all six now in abeyance to Nov 16", deadline: true, step: "showcause" },
@@ -378,11 +380,11 @@ window.FERC_DATA = (function () {
       what: "Six show cause orders on one 60-day clock. Each RTO or ISO must defend its tariff or file a fix.",
       whySeparate: "This is the main proceeding the site tracks. The other lanes run beside it, each on its own clock.",
       status: {
-        asOf: "2026-08-23",
-        line: "All six proceedings are held in abeyance. FERC granted every pending abeyance motion on Aug 14, three days before the 60-day deadline, in full, including responses to the show cause order and the briefing questions. Responses are now due Nov 16, 2026 and answers Dec 16, except SPP, which asked for 95 days instead of 90 and got them: Nov 20 and Dec 21. MISO's was granted over American Municipal Power's opposition; FERC declined AMP's proposed 20-day condition but told MISO and its Transmission Owners in the order that any preliminary finding their §205 filings leave unaddressed will be taken up through the show cause proceeding. In every docket, a respondent that makes its §205 filing by the new date has its obligation to respond suspended, and the proceeding stays in abeyance pending further direction. CAISO's order also granted the Six Cities' and WAPA's motions to rescind the order as against them, as non-public utilities under FPA §201(f); errata on Aug 13 made the same correction in the PJM and MISO orders. One actual show-cause answer was filed before the pause: Morongo Transmission, a CAISO participating TO owned by the Morongo Band of Mission Indians, answered on Aug 12 that its tariff needs no amendment because it serves no end-use customers.",
+        asOf: "2026-09-24",
+        line: "Responses remain due November 16 (SPP: November 20). On September 21, FERC dismissed rehearing and clarification requests in PJM, MISO, NYISO, CAISO and ISO-NE because the June orders were not final. No corresponding SPP dismissal was found in this sweep.",
       },
       next: { date: "2026-11-16", label: "Show-cause responses due after the 90-day abeyance (SPP: Nov 20)", dateNote: "moved from Aug 17 by the Aug 14 abeyance orders; SPP received 95 days rather than 90" },
-      src: ["fercPR", "fercFS", "elibrary0803", "elibrary0809", "elibrary0823", "abeyance0814"],
+      src: ["rehearingPJM0921", "rehearingMISO0921", "rehearingNYISO0921", "rehearingCAISO0921", "rehearingISONE0921", "elibrary0924", "fercPR", "fercFS", "elibrary0803", "elibrary0809", "elibrary0823", "abeyance0814"],
     },
     e2: {
       label: "PJM co-location: EL25-49",
@@ -391,25 +393,25 @@ window.FERC_DATA = (function () {
       what: "The PJM co-location proceeding that created the three new transmission services the six orders extend to every other region.",
       whySeparate: "A different docket with its own compliance clock, which has tracked the §206 clock closely: both were reset to Nov 16, 2026 on the same day, by separate FERC actions.",
       status: {
-        asOf: "2026-08-23",
-        line: "FERC granted the 90-day extension on Aug 14, moving PJM's and the PJM Transmission Owners' co-location compliance deadline to Nov 16, 2026, the same date as the §206 clock. PJM had told FERC it would still make a partial filing on Aug 17 regardless, and it did: revised definitions of Co-Located Load, behind-the-meter generation and Necessary Study, removal of the 50 MW nameplate limit on retail behind-the-meter netting, an end to the requirement that existing customers sign a new interconnection agreement to serve co-located load, and the tariff records for Interim Network Integration Transmission Service. Most of it is proposed effective Oct 17, 2026, but the Interim NITS provisions are proposed for July 1, 2028, which PJM attributes to the operational tools needed to curtail the non-firm service. The PJM Transmission Owners filed the Interim NITS rate the same day and noted that the directives behind it are under challenge, so the sheets may be withdrawn later. Northern Virginia Electric Cooperative's Jul 29 motion for clarification is now on the docket too, answered by Vistra on Aug 18. The Jul 20 rehearing requests, the Third and D.C. Circuit appeals of the predecessor orders, and Constellation's own rehearing request all remain pending.",
+        asOf: "2026-09-24",
+        line: "PJM’s remaining co-location compliance filing is due November 16. The docket records PJM’s August 26 notice of its partial compliance filing, NOVEC’s August 28 answer, and Constellation’s September 8 limited protest. These filing descriptions do not establish FERC approval.",
       },
       next: { date: "2026-11-16", label: "PJM and PJM TOs full co-location compliance filing", dateNote: "extended from Aug 17 by the Aug 14 notice of extension of time" },
-      src: ["e2", "elibrary0803", "elibrary0809", "elibrary0823"],
+      src: ["elibrary0924", "e2", "elibrary0803", "elibrary0809", "elibrary0823"],
     },
     gov: {
       label: "PJM governance: AD26-7",
       short: "AD26-7",
       venue: "FERC Docket AD26-7-000 (Commission-led technical conference)",
       what: "A July 23 conference on who runs PJM: board independence, the stakeholder process, and the states’ role.",
-      whySeparate: "Runs outside the §206 clock. Its September deadlines decide who controls PJM’s follow-through filings.",
+      whySeparate: "Separate governance proceeding; its schedule does not change the show-cause deadlines.",
       aka: "Also referred to in shorthand as the Swett technical conference, after the chairman who convened it.",
       status: {
-        asOf: "2026-08-23",
-        line: "The comment deadline landed and the docket filled: roughly 49 filings on Aug 21 alone, against a handful of mostly individual comments two weeks earlier. PJM filed its own post-conference comments, as did the Organization of PJM States, and the range of filers is the point: utilities and transmission owners (Exelon, FirstEnergy, AEP, Dominion, PSEG, PPL, Duquesne, Duke, Rockland, National Grid Ventures), generators and traders (Constellation, NRG, Vistra, ENGIE, Shell Energy, Capital Power, Tenaska, Vitol, the PJM Power Providers Group, the Financial Marketers Coalition), public power and cooperatives (American Municipal Power, Buckeye Power, three municipal agencies, two co-ops), consumer advocates and state bodies (the Ohio Consumers' Counsel, the Citizens Utility Board of Illinois, the Illinois Commerce Commission), and public-interest and academic filers (the Harvard Electricity Law Initiative, answering Questions 12 and 13 specifically, R Street, the Center for Progressive Reform, Advanced Energy United, SEIA, a joint Sierra Club filing). The Alternative Dispute Resolution forum is next, set to commence Sept 1. The chairman's end-of-September deadline for a PJM reform package, or FERC imposing its own, is still a closing-remarks commitment with no calendar date noticed.",
+        asOf: "2026-09-24",
+        line: "Google filed post-conference comments August 24; PJM’s independent market monitor filed August 26. September 1 was the noticed start of dispute resolution. This sweep did not verify the forum’s outcome or a new Commission deadline.",
       },
-      next: { date: "2026-09-01", label: "Alternative Dispute Resolution forum commences" },
-      src: ["frAD267", "udgov", "elibrary0803", "elibrary0809", "frgov0804", "elibrary0823"],
+      next: { date: null, label: "No new deadline verified; September 1 start date has passed" },
+      src: ["elibrary0924", "frAD267", "udgov", "elibrary0803", "elibrary0809", "frgov0804", "elibrary0823"],
     },
     rm264: {
       label: "The RM26-4 record",
@@ -417,9 +419,9 @@ window.FERC_DATA = (function () {
       venue: "FERC Docket RM26-4-000 (the DOE §403 rulemaking)",
       what: "The rulemaking DOE’s §403 directive opened, and the 3,500-plus pages of comment the orders were built on.",
       whySeparate: "Still open. Everything the six orders left unaddressed stays live here, which is what the record-to-rule crosswalk tracks.",
-      status: { asOf: "2026-07-28", line: "Open with no dated next step. FERC answered the directive with the six §206 orders rather than a rule." },
+      status: { asOf: "2026-09-24", line: "Two September comments appear on the docket: Relentless Energy Systems (September 8) and Barb Lesiak (September 14). The explorer below remains a June 24 collection of 273 comments; it does not include these later submissions." },
       next: { date: null, label: "No dated step on the record" },
-      src: ["fercRM264", "doe403"],
+      src: ["elibrary0924", "fercRM264", "doe403"],
     },
     context: {
       label: "Market context",
@@ -427,10 +429,10 @@ window.FERC_DATA = (function () {
       venue: null,
       noDocket: true,
       what: "Auction results and market events that set the stakes for the filings, from outside any of the dockets.",
-      whySeparate: "None of these are filings. They are kept in their own lane so the rail never reads an auction result as a docket event.",
-      status: { asOf: "2026-08-23", line: "The backstop auction is now contested. PJM's Jul 31 filing (Docket ER26-3380) proposing a one-time reliability auction from Sept 30 to Oct 21 at a $555/MW-day cap, up to $20 billion, drew protests on the Aug 21 comment date from the Indicated PJM Transmission Owners, from consumer advocates in three states (the Pennsylvania Office of Consumer Advocate, the Delaware Division of the Public Advocate, which asked FERC to reject the filing outright, and the Ohio Consumers' Counsel, which asked for rejection or an evidentiary hearing), and from generators including Constellation, NRG, FirstEnergy, AEP and Dominion, most of them limited or partial protests rather than outright opposition. The Illinois Commerce Commission and the Organization of PJM States filed in support. Data center operators are on the docket in their own right: Google, Equinix and CyrusOne all filed. Two weeks earlier this docket had interventions and no protests at all.", },
-      next: { date: "2026-09-30", label: "PJM's one-time reliability backstop auction opens (Docket ER26-3380)", dateNote: "as proposed in PJM's Jul 31 filing; FERC has not yet acted on it, and the filing is now protested" },
-      src: ["pjmbra", "udbackstop", "elibrary0809", "elibrary0823"],
+      whySeparate: "Market developments and related capacity-procurement filings, separate from the six show-cause dockets.",
+      status: { asOf: "2026-09-24", line: "PJM answered protests to its proposed reliability backstop procurement September 10. Further answers followed through September 23. No approval order was observed on the ER26-3380 docket in this sweep; September 30 remains a proposed auction start, not a confirmed event.", },
+      next: { date: "2026-09-30", label: "Proposed PJM reliability backstop auction start (ER26-3380)", dateNote: "as proposed in PJM's Jul 31 filing; FERC has not yet acted on it, and the filing is now protested" },
+      src: ["elibrary0924", "pjmbra", "udbackstop", "elibrary0809", "elibrary0823"],
     },
   };
 
@@ -594,14 +596,14 @@ window.FERC_DATA = (function () {
     },
     {
       date: "Aug 14, 2026", iso: "2026-08-14", kind: "ferc", track: "sc6",
-      title: "FERC stops all six clocks, three days before the deadline",
+      title: "FERC grants abeyance in all six proceedings",
       body: "In six orders issued the same day (196 FERC ¶ 61,128 through ¶ 61,133), FERC grants every pending abeyance motion and holds each proceeding in abeyance in full, including both the show-cause responses and the briefing questions. Responses are rescheduled to Nov 16, 2026 and answers to Dec 16, except in SPP's docket, where the movants asked for 95 days rather than 90 and received them: Nov 20 and Dec 21. Each order adds the same clause: a respondent that makes its §205 filing by the new date has its obligation to respond suspended, and the proceeding stays in abeyance pending further Commission direction. FERC also encourages respondents to say which of their proposed revisions resolve which preliminary findings, and whether the show cause order should then be terminated in whole or in part. PJM's order grants three motions, PJM's, its Transmission Owners' and Silver Run Electric's, and records the stakeholder calendar it relied on: sessions Jul 30, Aug 18 and Sep 16, and an advisory vote at the Members Committee on Oct 28.",
       src: ["abeyance0814", "elibrary0823"],
     },
     {
       date: "Aug 14, 2026", iso: "2026-08-14b", kind: "ferc", track: "sc6",
       title: "MISO's pause is granted over the record's only opposition",
-      body: "American Municipal Power had argued that MISO's motion failed the order's own abeyance standard and asked FERC to condition any pause on MISO bringing a specific cost-transparency proposal to stakeholders within 20 days, vetting it with state regulators and consumer advocates, and filing by Nov 16. FERC grants the abeyance without that condition, but does not pass over the objection: it writes that, noting AMP's answer opposing the motion, it reminds MISO and the Transmission Owners that should their §205 filings not address all of the Commission's preliminary findings, the Commission will address those issues through the show cause proceeding. The lone dissenting voice did not win, and did not leave the record unchanged either.",
+      body: "American Municipal Power had argued that MISO's motion failed the order's own abeyance standard and asked FERC to condition any pause on MISO bringing a specific cost-transparency proposal to stakeholders within 20 days, vetting it with state regulators and consumer advocates, and filing by Nov 16. FERC grants the abeyance without that condition, but does not pass over the objection: it writes that, noting AMP's answer opposing the motion, it reminds MISO and the Transmission Owners that should their §205 filings not address all of the Commission's preliminary findings, the Commission will address those issues through the show cause proceeding. FERC did not adopt AMP’s requested condition.",
       src: ["abeyance0814"],
     },
     {
@@ -618,7 +620,7 @@ window.FERC_DATA = (function () {
     },
     {
       date: "Aug 14, 2026, resolved", iso: "2026-08-14e", kind: "milestone", track: "sc6",
-      title: "The safety valve turned out to be the whole story",
+      title: "All six proceedings receive abeyance",
       body: "Every one of the six orders let respondents request abeyance within 45 days, capped at 90, and FERC said it would not grant them reflexively and viewed extensions with great disfavor. Practitioners read that as a safety valve for regions needing stakeholder time, not an open-ended pause, and expected it to be used unevenly. It was used by everyone: all six regions requested it, every request was granted, and the §206 proceedings stayed alive but stopped. The bounded lane held, in that nobody got more than the 90 days the orders allowed, and SPP got 95 only because it asked for a date rather than a duration. What the safety valve did not do is slow anything unevenly: it moved all six regions to the same November date, which is closer to a synchronized extension than to the region-by-region pacing the design implied.",
       src: ["e11", "e12", "substack", "natlaw", "abeyance0814"],
     },
@@ -670,6 +672,9 @@ window.FERC_DATA = (function () {
       body: "Parties can seek rehearing of FERC action before heading to court. Legal commentators read the six region-specific §206 records as a litigation-defense strategy: narrower records, tailored findings and market-by-market remedies give challengers fewer generic-rule targets. That does not remove legal risk; it shapes where the fight happens.",
       src: ["bloomberglaw", "heatmap"],
     },
+    {"date":"Sep 21, 2026","iso":"2026-09-21","kind":"ferc","track":"sc6","title":"FERC dismisses rehearing requests in five show-cause proceedings","body":"PJM, MISO, NYISO, CAISO and ISO-NE received dismissal orders. FERC found that the June show-cause orders were not final decisions and declined clarification during abeyance. The orders retain November 16 responses and December 16 answers for these five regions. SPP’s separate November 20 and December 21 dates remain in its August order.","src":["rehearingPJM0921","rehearingMISO0921","rehearingNYISO0921","rehearingCAISO0921","rehearingISONE0921"]},
+    {"date":"Sep 8 to 14, 2026","iso":"2026-09-14","kind":"milestone","track":"rm264","title":"Two September comments added to RM26-4","body":"eLibrary lists supplemental comments from Relentless Energy Systems on September 8 (20260908-5076) and comments from Barb Lesiak on September 14 (20260914-0001). These filings are outside this site’s June 24 comment collection and have not been summarized.","src":["elibrary0924"]},
+    {"date":"Sep 10 to 23, 2026","iso":"2026-09-23","kind":"milestone","track":"context","title":"PJM and intervenors exchange further backstop-procurement answers","body":"The ER26-3380 docket lists PJM’s September 10 answer (20260910-5296), followed by answers from transmission owners, generators and cooperatives through September 23. No approval order was observed in the September 24 docket-sheet check. Filing titles alone do not establish the merits of these arguments.","src":["elibrary0924"]},
   ];
 
   const toplines = [
@@ -716,7 +721,7 @@ window.FERC_DATA = (function () {
       n: 2, key: "cost",
       title: "Cost-shifting prevention & transmission-cost transparency",
       ferc: "Preventing cost shifting and requiring transparency into transmission costs.",
-      detail: "FERC flags a lack of transparency in how RTOs assign and recover network-upgrade costs, and an absence of pro forma cost-recovery agreements that put the risk and cost of upgrades on the large-load customer. The remedy is cost causation made auditable: identify, allocate, and communicate the cost of serving large loads so they don’t migrate onto other transmission customers’ bills. The DOE principles supply the mechanics: 100% network-upgrade responsibility (with an open question on crediting over a term), transmission service billed on withdrawal rights, and ancillary services on peak demand without netting co-located generation.",
+      detail: "FERC flags a lack of transparency in how RTOs assign and recover network-upgrade costs, and an absence of pro forma cost-recovery agreements that put the risk and cost of upgrades on the large-load customer. The proposed remedy requires operators to identify large-load service costs and assign them to the customers responsible. The DOE principles supply the mechanics: 100% network-upgrade responsibility (with an open question on crediting over a term), transmission service billed on withdrawal rights, and ancillary services on peak demand without netting co-located generation.",
       doe: ["Load/hybrid facilities responsible for 100% of assigned network upgrades; crediting an open question.", "Transmission service charged on withdrawal rights.", "Ancillary services on peak demand, ignoring co-located generation."],
       src: ["fercFS", "utilitydive", "doe403"],
     },
@@ -732,7 +737,7 @@ window.FERC_DATA = (function () {
       n: 4, key: "flex",
       title: "New transmission services for flexible large loads",
       ferc: "Providing new transmission services for flexible large loads.",
-      detail: "Loads willing to curtail are worth more to the system than firm loads of the same size, because the operator can lean on them in tight conditions. FERC wants new service products that reward flexibility, and DOE asks whether a curtailable load’s interconnection study could be expedited (potentially to 60 days), provided the operator’s ability to curtail/dispatch is firm enough to fold the facility into operations and planning. This is the lever that most directly delivers ‘speed to power.’",
+      detail: "Loads willing to curtail are worth more to the system than firm loads of the same size, because the operator can lean on them in tight conditions. FERC wants new service products that reward flexibility, and DOE asks whether a curtailable load’s interconnection study could be expedited (potentially to 60 days), provided the operator’s ability to curtail/dispatch is firm enough to fold the facility into operations and planning. This could reduce connection time for customers that accept curtailment.",
       doe: ["Expedite the study of loads that agree to be curtailable (and dispatchable hybrids).", "Operator curtailment/dispatch control must suffice for operations + planning.", "Open question: can such expedited studies finish in 60 days?"],
       src: ["fercFS", "doe403"],
     },
@@ -766,7 +771,7 @@ window.FERC_DATA = (function () {
       },
       commishPages: { swett: 87, rosner: 93, see: 99, chang: 104, lacerte: 113 },
       status: "Co-location rules already in place",
-      unique: "PJM is the control case, the one region that does not start from a blank page. FERC built PJM’s co-location rules in the parallel EL25-49 proceeding (finalized the same morning in Item E-2), so E-7 asks PJM to carry those new services (Interim NITS and Firm/Non-Firm Contract Demand) into a general large-load framework. The catch: every request still runs through one ‘first-ready, first-served’ clustered New Services Queue with no large-load-specific study, even though an Eligible Customer already pays ‘100% of the costs of the minimum amount of Network Upgrades’ its request triggers. So the order presses how to add flexible-load service and protect deals nearing completion without breaking that queue.",
+      unique: "FERC built PJM’s co-location rules in the parallel EL25-49 proceeding (finalized the same morning in Item E-2), so E-7 asks PJM to carry those new services (Interim NITS and Firm/Non-Firm Contract Demand) into a general large-load framework. Every request still runs through one ‘first-ready, first-served’ clustered New Services Queue with no large-load-specific study, even though an Eligible Customer already pays ‘100% of the costs of the minimum amount of Network Upgrades’ its request triggers. So the order presses how to add flexible-load service and protect deals nearing completion without breaking that queue.",
       asks: [
         "Protecting existing deals: a reasonable implementation period, and time to finalize agreements nearing completion when the new tariff provisions are filed (Section IV).",
         "Whether the new flexible-load services would change regional and local transmission planning, given uncertainty in the type, location, and quantity of such loads (Section IV).",
@@ -806,7 +811,7 @@ window.FERC_DATA = (function () {
       },
       commishPages: { swett: 91, rosner: 96, see: 102, chang: 106, lacerte: 114 },
       status: "Early-stage large-load rules",
-      unique: "MISO is the cost-allocation stress test. Its tariff still studies new load at its maximum demand ‘regardless of the load’s operational capabilities or willingness to be curtailed,’ and the resulting network upgrades are ‘rolled into the relevant transmission owner’s base zonal rates,’ spread across that utility’s wholesale customers. MISO itself told its Large Load Working Group the tariff does ‘not provide a consistent or transparent framework’ for large loads. E-8 presses whether flexible service and a pro forma cost-recovery agreement can keep those upgrade costs on the load that caused them.",
+      unique: "Its tariff still studies new load at its maximum demand ‘regardless of the load’s operational capabilities or willingness to be curtailed,’ and the resulting network upgrades are ‘rolled into the relevant transmission owner’s base zonal rates,’ spread across that utility’s wholesale customers. MISO itself told its Large Load Working Group the tariff does ‘not provide a consistent or transparent framework’ for large loads. E-8 presses whether flexible service and a pro forma cost-recovery agreement can keep those upgrade costs on the load that caused them.",
       asks: [
         "Whether and how Eligible Customers taking the new services would be charged for regulation and black-start service (P 99).",
         "An appropriate minimum level of cost recovery and financial security under any cost-recovery agreement (P 119).",
@@ -844,7 +849,7 @@ window.FERC_DATA = (function () {
       },
       commishPages: { swett: 68, rosner: 73, see: 78, chang: 83, lacerte: 92 },
       status: "Most mature: HILL / HILLGA",
-      unique: "SPP is the benchmark, not the laggard. E-9 adopts SPP’s own ‘High Impact Large Load’ (HILL) definition, commends its ‘High Impact Large Load Generation Assessment’ (HILLGA) and Conditional HILL Service, and leaves the Attachment Z1/AQ/AX study stack and Highway/Byway cost split intact. Even in this leading framework FERC finds only two real gaps: no requirement to evaluate alternative transmission technologies, and no pro forma terms to ‘memorialize ongoing operational requirements in a transmission service agreement.’ The remaining ask is a mechanism to credit large-load payments back through transmission owners’ revenue requirements.",
+      unique: "E-9 adopts SPP’s own ‘High Impact Large Load’ (HILL) definition, commends its ‘High Impact Large Load Generation Assessment’ (HILLGA) and Conditional HILL Service, and leaves the Attachment Z1/AQ/AX study stack and Highway/Byway cost split intact. Even in this leading framework FERC finds only two real gaps: no requirement to evaluate alternative transmission technologies, and no pro forma terms to ‘memorialize ongoing operational requirements in a transmission service agreement.’ The remaining ask is a mechanism to credit large-load payments back through transmission owners’ revenue requirements.",
       asks: [
         "A mechanism to credit large-load cost-recovery payments toward transmission owners’ revenue requirements (Ordering (B)(1)(b)).",
         "Evaluating alternative transmission technologies in all instances without a customer request — and, if conventional upgrades are chosen instead, justifying why (P 46).",
@@ -890,7 +895,7 @@ window.FERC_DATA = (function () {
       // right for E-2 — only Chang wrote there — but wrong here, where all five wrote and four are common).
       commishAside: { chang: { pg: 111, note: "This is particularly true in CAISO, which does not rely upon the Order No. 888 NITS framework." } },
       status: "No Order No. 888 service",
-      unique: "CAISO is the translation problem. It ‘does not offer traditional Order No. 888 network and point-to-point transmission services, offers no firm, long-term transmission reservations of capacity,’ and its Participating TOs (not CAISO itself) ‘play the lead role in managing the interconnection of load’ inside California’s state planning and forecasting processes. So E-10 gives CAISO an alternative no other order offers: either build equivalent large-load protections, or explain why its single daily service and Transmission Access Charge (TAC/RAC) framework already solves the same cost and reliability problems.",
+      unique: "CAISO ‘does not offer traditional Order No. 888 network and point-to-point transmission services, offers no firm, long-term transmission reservations of capacity,’ and its Participating TOs (not CAISO itself) ‘play the lead role in managing the interconnection of load’ inside California’s state planning and forecasting processes. So E-10 gives CAISO an alternative no other order offers: either build equivalent large-load protections, or explain why its single daily service and Transmission Access Charge (TAC/RAC) framework already solves the same cost and reliability problems.",
       asks: [
         "Whether, given that CAISO does not offer Order No. 888 service, its existing framework already addresses the concerns — or what equivalent options it would create (p. 60).",
         "How load-addition study procedures and operational requirements would work when its Participating TOs, not CAISO, lead load interconnection.",
@@ -928,7 +933,7 @@ window.FERC_DATA = (function () {
       },
       commishPages: { swett: 92, rosner: 97, see: 102, chang: 107, lacerte: 115 },
       status: "Transmission-constrained grid",
-      unique: "ISO-NE is the small-system, big-load case. FERC flags a system peaking at only ‘30,000 MW’ with significant transmission constraints, and a ‘CELT load forecast’ that generally excludes proposed data centers, so a single large customer can move the regional needle. E-11 turns that into concrete planning questions: how Schedule 22/23 cluster studies, Pool Transmission Facilities at ‘69 kV’ and above, and the Monthly Regional Network Load behind-the-meter-netting rules should change, and whether to import PJM’s MW-threshold remedy for that netting.",
+      unique: "FERC flags a system peaking at only ‘30,000 MW’ with significant transmission constraints, and a ‘CELT load forecast’ that generally excludes proposed data centers, so a single large customer can move the regional needle. E-11 turns that into concrete planning questions: how Schedule 22/23 cluster studies, Pool Transmission Facilities at ‘69 kV’ and above, and the Monthly Regional Network Load behind-the-meter-netting rules should change, and whether to import PJM’s MW-threshold remedy for that netting.",
       asks: [
         "How it would study and serve large loads on a system peaking at only ~30,000 MW with significant transmission constraints (P 11 n.31).",
         "Applying a PJM-style MW threshold to the ‘Monthly Regional Network Load’ behind-the-meter-netting definition (P 60).",
@@ -965,7 +970,7 @@ window.FERC_DATA = (function () {
       },
       commishPages: { swett: 96, rosner: 100, see: 106, chang: 111, lacerte: 118 },
       status: "Largely outside the tariff today",
-      unique: "NYISO is the tariff-gap case. It runs load interconnection for projects over 10 MW at ‘115 kV’ and above largely off-tariff: the study details, deposits, and assumptions sit in non-tariff documents, and its tariff ‘lacks a definition of large load’ as a category. With co-location reforms not expected until ‘2027,’ E-12 converts that off-tariff practice into show-cause issues: a 60-to-90-day study expectation, a new large-load definition with readiness requirements to deter speculation, and the only order’s express path to request a 90-day abeyance.",
+      unique: "It runs load interconnection for projects over 10 MW at ‘115 kV’ and above largely off-tariff: the study details, deposits, and assumptions sit in non-tariff documents, and its tariff ‘lacks a definition of large load’ as a category. With co-location reforms not expected until ‘2027,’ E-12 converts that off-tariff practice into show-cause issues: a 60-to-90-day study expectation, a new large-load definition with readiness requirements to deter speculation, and the only order’s express path to request a 90-day abeyance.",
       asks: [
         "How NYISO and its TOs will timely study transmission service — within 60–90 days of a request (P 44).",
         "Why a pro forma cost-recovery agreement is not necessary to ensure just and reasonable rates, or else propose one (P 89).",
@@ -1471,7 +1476,7 @@ window.FERC_DATA = (function () {
       { label: "Industrial & large customers", n: 9, egs: ["IECA", "PJM Industrial Customer Coalition", "Steel Manufacturers", "U.S. Chamber"], note: "Want existing industrial load shielded from cost-shifting as data centers connect, with cost causation on the new load." },
       { label: "Think tanks & research", n: 9, egs: ["R Street", "Institute for Progress", "Cato", "ClearPath"], note: "Market-oriented: price grid access, reward flexibility, and avoid a single national rule across six unlike markets." },
       { label: "RTOs / ISOs", n: 7, egs: ["PJM", "MISO", "SPP", "CAISO", "ISO-NE", "NYISO"], note: "Describe their own existing processes and, for PJM and SPP, reforms already filed; they caution against a uniform rule that overrides regional design." },
-      { label: "Demand response & flexible load", n: 7, egs: ["Voltus", "CPower", "Enchanted Rock", "Enel"], note: "Flexibility is the lever: expedited, curtailable service for loads that agree to limit withdrawals." },
+      { label: "Demand response & flexible load", n: 7, egs: ["Voltus", "CPower", "Enchanted Rock", "Enel"], note: "Expedited, curtailable service for loads that agree to limit withdrawals." },
       { label: "Elected officials", n: 6, egs: ["Sen. Markey et al.", "Senate Energy Cmte.", "Govs. Shapiro & Youngkin"], note: "Bipartisan ratepayer-protection pressure that households should not bear data-center-driven costs." },
       { label: "Reliability & market monitors", n: 4, egs: ["NERC", "PJM IMM", "SPP MMU"], note: "Large-load registration and reliability standards (NERC); cost-allocation and market-power oversight (the market monitors)." },
       { label: "Oil, gas & fuels", n: 3, egs: ["American Public Gas Assn.", "Chevron", "API"], note: "Fold natural-gas considerations and gas-fired co-location into the reforms." },
@@ -1713,7 +1718,7 @@ window.FERC_DATA = (function () {
     // accession below was read directly off its own docket sheet. `showcause` stays empty — that
     // deadline (Aug 17) hasn't arrived yet, so it renders `upcoming`, derived.
     filings: {
-      asOf: "2026-08-23",
+      asOf: "2026-09-24",
       steps: ["report", "abeyance", "showcause"],
       note: "Observed filings only. An empty cell means our checks found nothing, which is not proof nothing was filed. Every report and abeyance cell below is confirmed against its own eLibrary accession. Every abeyance motion was GRANTED on Aug 14, 2026, so the show-cause column is upcoming again, now against Nov 16 (Nov 20 for SPP) rather than Aug 17; each cell's gist carries the granting order's accession and reporter citation.",
       rows: [

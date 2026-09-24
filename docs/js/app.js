@@ -28,6 +28,8 @@
   function shortName(id) {
     var s = D.SOURCES[id];
     if (!s) return id;
+    var named = { rehearingPJM0921: "PJM order", rehearingMISO0921: "MISO order", rehearingNYISO0921: "NYISO order", rehearingCAISO0921: "CAISO order", rehearingISONE0921: "ISO-NE order", elibrary0924: "Docket check" };
+    if (named[id]) return named[id];
     if (s.tier === "order") return id.toUpperCase().replace(/^E/, "E-"); // e7 -> E-7
     if (s.tier === "doe") return { doe403: "DOE §403", doeApplaud: "DOE statement" }[id] || "DOE";
     if (s.tier === "ferc") {
@@ -257,6 +259,8 @@
         var c = filingCell(d.docket, id, ps);
         var m = FILING_STATUS[c.status] || { lbl: c.status, sentence: c.status };
         var when = c.obs && c.obs.date ? '<span class="fm-when mono">' + esc(fmtISO(c.obs.date)) + "</span>" : "";
+        var due = docketStepDate(d.docket, id);
+        if (due && due !== stepWhen(stepById[id])) when += '<span class="fm-when mono">Due ' + esc(fmtISO(due)) + '</span>';
         return '<td><span class="fm-chip fm-' + esc(c.status) + '" role="img" aria-label="' +
           esc(d.rto + ", " + stepById[id].label + ": " + m.sentence) + '">' + esc(m.lbl) + "</span>" + when + "</td>";
       }).join("");
@@ -288,7 +292,7 @@
       esc(tally.seen + " of " + tally.total + " generation-adequacy reports observed.") + '</caption>' +
       "<thead><tr><th scope=\"col\">Grid operator</th>" + headCells + "</tr></thead>" +
       "<tbody>" + bodyRows + "</tbody></table></div>" +
-      (obsList ? '<h5 class="fm-obs-h">What we observed</h5><ul class="fm-obs-list">' + obsList + "</ul>" : "") +
+      (obsList ? '<details class="filing-evidence"><summary>Filing evidence (' + F.rows.length + ' records)</summary><ul class="fm-obs-list">' + obsList + "</ul></details>" : "") +
       "</section>";
   }
 
@@ -402,12 +406,12 @@
       var q = (D.briefing.questions || []).filter(function (x) { return x.id === row.next.briefingId; })[0];
       if (q) briefBit = '<span class="cm-pm-brief">Briefs the “' + esc(q.t) + '” question (§ IV)</span>';
     }
-    return '<section class="cm-pm-strip" aria-label="From record to rule">' +
-      '<div class="cm-pm-head"><span class="cm-pm-kicker">From record to rule</span>' + pmStatusChip(row.status) + "</div>" +
+    return '<section class="cm-pm-strip" aria-label="Order and next step">' +
+      '<div class="cm-pm-head"><span class="cm-pm-kicker">Order and next step</span>' + pmStatusChip(row.status) + "</div>" +
       '<div class="cm-pm-anopr"><span class="cm-pm-lbl">DOE ANOPR asked</span> ' + esc(row.anopr) + "</div>" +
       didLine +
       '<div class="cm-pm-forward">' + pmNextChip(row.next) + briefBit + "</div>" +
-      '<p class="cm-pm-note"><span class="cm-pm-lbl">Curator’s read</span> ' + esc(row.note) + "</p>" +
+      '<p class="cm-pm-note"><span class="cm-pm-lbl">Analysis</span> ' + esc(row.note) + "</p>" +
       '<p class="cm-pm-foot">Curator judgment. It reports what the June 18 orders did; it does not forecast what comes next.</p>' +
       "</section>";
   }
@@ -467,13 +471,22 @@
           '<div class="commish-quote">“…' + esc(c.quote) + '…”' + commissionerQuoteCite(c, c.quotePg) + "</div></div>" + themed(c) + "</article>";
       }).join("");
       commish = head("What each commissioner emphasized",
-        "All five joined every order unanimously; their concurring statements diverge in emphasis. Each row opens into that commissioner’s themes and page-cited quotes, without changing the layout of the other commissioners.") +
+        "All five commissioners joined the orders. Open a statement for its themes, quotes, and page citations.") +
         '<div class="commish-list">' + cards + "</div>";
     }
 
-    return head("Overview", m.subtitle) +
+    var paths = '<nav class="research-links" aria-label="Research shortcuts">' +
+      '<a href="#overview/filings">Filing status <span aria-hidden="true">→</span></a>' +
+      '<a href="#dockets">Order documents <span aria-hidden="true">→</span></a>' +
+      '<a href="#comments/summaries">Find a comment <span aria-hidden="true">→</span></a>' +
+      '<a href="#comments/issue">Issues &amp; evidence <span aria-hidden="true">→</span></a>' +
+      '<a href="#overview/schedule">Deadlines <span aria-hidden="true">→</span></a>' +
+      '<a href="#overview/commissioners">Commissioner statements <span aria-hidden="true">→</span></a></nav>';
+    return paths + head("The record at a glance", m.subtitle) +
       '<div class="overview-bg">' + paras(m.summary) + "</div>" +
-      stats + renderStandStrip() + renderProcedural() + glance + commish;
+      renderStandStrip() + '<section id="research-schedule" tabindex="-1">' + renderProcedural() + '</section>' +
+      '<details class="overview-background"><summary>June 18 orders: scope and background</summary>' + stats + glance + '</details>' +
+      '<section id="research-commissioners" tabindex="-1">' + commish + '</section>';
   }
 
   // "Where things stand": one line per track, generated from the registry so there is no second copy of
@@ -490,13 +503,13 @@
         : '<span class="stand-next none">' + esc((t.next && t.next.label) || "No dated step") + "</span>";
       return '<li class="stand-row"><a class="stand-link" href="#timeline/track/' + esc(id) + '">' +
         '<span class="stand-label">' + esc(t.label) + '</span><span class="stand-go" aria-hidden="true">→</span></a>' +
-        '<p class="stand-line">' + esc(t.status.line) + "</p>" + next + "</li>";
+        '<p class="stand-line">' + esc(t.status.line) + "</p>" + srcChips(t.src) + next + "</li>";
     }).join("");
     var asOf = (D.meta && D.meta.newsCapture) || "";
     return '<section class="stand" aria-labelledby="stand-h">' +
       '<div class="stand-head"><h3 id="stand-h">Where things stand</h3>' +
-      (asOf ? '<span class="stand-asof mono">news swept ' + esc(asOf) + "</span>" : "") + "</div>" +
-      '<p class="stand-lede">Four proceedings and one context lane run beside each other, each on its own clock.</p>' +
+      (asOf ? '<span class="stand-asof mono">checked ' + esc(asOf) + "</span>" : "") + "</div>" +
+      '<p class="stand-lede">Latest checked developments. Each proceeding has its own schedule.</p>' +
       '<ol class="stand-list">' + rows + "</ol></section>";
   }
 
@@ -564,8 +577,8 @@
   }
 
   function renderTimeline() {
-    var tl = '<div class="timeline">' + D.timeline.map(function (e) {
-      return '<div class="tl-item ' + e.kind + '" data-track="' + esc(e.track || "") + '"><div class="tl-date">' + esc(e.date) +
+    var tl = '<div class="timeline">' + D.timeline.slice().sort(function (a, b) { return a.iso.localeCompare(b.iso); }).map(function (e) {
+      return '<div class="tl-item ' + e.kind + '" data-iso="' + esc(e.iso) + '" tabindex="-1" data-track="' + esc(e.track || "") + '"><div class="tl-date">' + esc(e.date) +
         '<span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span>" + trackPill(e.track) + "</div>" +
         '<div class="tl-title">' + esc(e.title) + "</div>" +
         '<div class="tl-body">' + esc(e.body) + "</div>" + srcChips(e.src) + "</div>";
@@ -577,20 +590,24 @@
     }).join("") + "</div>";
 
     return head("Timeline: DOE §403 directive to FERC §206 orders",
-      "One chronology, five lanes: the §206 clock, the EL25-49 co-location docket, the AD26-7 governance fight, the RM26-4 record, and the market context around them.") +
-      '<h3 class="trk-h">The parallel tracks</h3>' +
-      '<p class="trk-lede">Each lane is its own proceeding on its own clock. Pick one to filter the rail below it.</p>' +
-      trackCards() + trackChips() +
+      "Filter by proceeding. Events run oldest first; jump to the latest recorded event below.") +
+      '<button type="button" class="timeline-latest" id="timeline-latest">Latest recorded event ↓</button>' + trackChips() +
       '<span class="sr-only" role="status" aria-live="polite" id="tl-filterstatus"></span>' +
-      tl +
-      accSection("Toplines: the strategic shift",
-        "Why tailored §206 show cause orders instead of a generic NOPR, and what it signals.", top, false, (D.toplines || []).length);
+      tl + accSection("About these proceedings", "Separate dockets and schedules.", trackCards(), false, TRACK_IDS.length) +
+      accSection("Background analysis", "Why FERC used regional show-cause proceedings.", top, false, (D.toplines || []).length);
   }
 
   // Filter wiring. The cards and the chips drive one piece of state, so both carry aria-pressed and both
   // toggle back to "all" when the active track is clicked again. The intro grid never hides: a shared
   // #timeline/track/<id> link must land on something that explains the lane it just filtered to.
   function wireTimeline() {
+    document.getElementById("timeline-latest").addEventListener("click", function () {
+      var today = new Date().toLocaleDateString("en-CA");
+      var rows = [].slice.call(document.querySelectorAll(".tl-item:not([hidden])"));
+      var past = rows.filter(function (r) { return r.dataset.iso.slice(0, 10) <= today; });
+      var target = past[past.length - 1];
+      if (target) { target.focus({ preventScroll: true }); target.scrollIntoView({ block: "start" }); }
+    });
     var panel = panelFor("timeline");
     if (!panel) return;
     applyTimelineTrack = function (id) {
@@ -930,13 +947,13 @@
     if (!CM) return head("The RM26-4 comment period", "Comment data did not load (js/comments-data.js).");
 
     var statRow = '<div class="cm-stats">' +
-      [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.summarized2, "audited summaries"]]
+      [[CM.total, "comments filed"], [CM.respondentTypes.length, "respondent types"], [CM.downloaded, "bodies downloaded"], [CM.summarized2, "AI summaries"]]
         .map(function (s) { return '<div class="cm-stat"><span class="v">' + esc(String(s[0])) + '</span><span class="l">' + esc(s[1]) + "</span></div>"; }).join("") + "</div>";
 
     // compact coverage-honesty line, derived from the data so the numbers stay in sync (never a bare 0)
     var cvScans = CM.list.filter(function (c) { return c.dl && !c.s2; }).length;
     var cvInline = CM.list.filter(function (c) { return !c.dl; }).length;
-    var coverageLine = '<p class="cm-coverage">' + CM.summarized2 + " of " + CM.total + " audited · " +
+    var coverageLine = '<p class="cm-coverage">' + CM.summarized2 + " of " + CM.total + " summarized · " +
       cvScans + " image-only scan" + (cvScans === 1 ? "" : "s") + " await" + (cvScans === 1 ? "s" : "") + " OCR · " +
       cvInline + " served inline by eLibrary</p>";
 
@@ -984,7 +1001,7 @@
         '<p class="cm-note mono">' + t.count + " of " + CM.analyzed + " comments mention it</p></div>";
     }).join("") + "</div>";
 
-    // stance map: where commenters land on each reform principle, read from the audited summaries
+    // stance map: where commenters land on each reform principle, read from the AI summaries
     var ST_LBL = { sup: "Support", opp: "Oppose", mix: "Mixed", neu: "No position" };
     var stanceBars = "";
     if (CM.principleStances && CM.principleStances.length) {
@@ -1027,9 +1044,9 @@
       var grid = '<div class="cm-hm-corner"></div>' +
         cmCols.map(function (c) { return '<div class="cm-hm-col">' + esc(c) + "</div>"; }).join("");
       grid += cmRows.map(function (r) {
-        var label = '<div class="cm-hm-rowlabel">' + esc(r.label) + ' <span class="cm-hm-letters mono" title="audited letters from this camp">' + r.letters + "</span></div>";
+        var label = '<div class="cm-hm-rowlabel">' + esc(r.label) + ' <span class="cm-hm-letters mono" title="summarized letters from this camp">' + r.letters + "</span></div>";
         var cells = r.cells.map(function (c) {
-          if (!c.total) return '<div class="cm-hm-cell empty"><span class="sr-only">no audited position</span></div>';
+          if (!c.total) return '<div class="cm-hm-cell empty"><span class="sr-only">no coded position</span></div>';
           var b = band(c); present[b] = true;
           var full = r.label + " — " + (PR_SHORT[c.key] || c.key) + ": " + c.support + " support, " + c.oppose + " oppose, " + c.mixed + " mixed, " + c.neutral + " no position (n=" + c.total + ")";
           // the cell links into By-issue for this reform (a labeled link is the accessible clickable form)
@@ -1043,7 +1060,7 @@
         ["strong", "support", "mixed", "oppose", "neutral"].filter(function (b) { return present[b]; }).map(function (b) {
           return '<span class="cm-hm-key"><span class="cm-hm-sw ' + BAND_CLS[b] + '"></span>' + BAND_LABEL[b] + "</span>";
         }).join("") +
-        '<span class="cm-hm-note">cell = net of support minus oppose · number = audited letters engaging that reform</span></div>';
+        '<span class="cm-hm-note">cell = net of support minus oppose · number = summarized letters engaging that reform</span></div>';
       consensusMap = cmLegend + '<div class="cm-heatmap">' + grid + "</div>";
     }
 
@@ -1051,7 +1068,7 @@
     CM.list.forEach(function (c) { var k = roundOf(c.filed); (rowsByRound[k] = rowsByRound[k] || []).push(c); });
     var listHtml = CM.rounds.map(function (r) {
       var items = (rowsByRound[r.key] || []).map(function (c) {
-        var badge = c.s2 ? '<span class="cm-badge dl" title="Audited summary available"><span aria-hidden="true">✓</span><span class="sr-only">audited summary</span></span>'
+        var badge = c.s2 ? '<span class="cm-badge dl" title="Provisional AI summary available"><span aria-hidden="true">AI</span><span class="sr-only">AI summary</span></span>'
           : c.dl ? '<span class="cm-badge sum" title="Downloaded but image-only (no text layer) — not summarized"><span aria-hidden="true">○</span><span class="sr-only">scanned, not summarized</span></span>'
           : '<span class="cm-badge no" title="Body not downloaded — eLibrary serves it inline"><span aria-hidden="true">–</span><span class="sr-only">not downloaded</span></span>';
         var type = CM.bucketLabels[c.bucket] || c.bucket;
@@ -1075,12 +1092,12 @@
             var st = stanceClass(b.s);
             return '<span class="cm-bin ' + st + '">' + esc(b.n) + '<span class="sr-only"> (' + esc(b.s) + ")</span></span>";
           }).join("");
-          analysis = '<details class="cm-analysis" data-acc="' + esc(c.acc) + '"><summary><span class="cm-analysis-label">Read the audited analysis</span>' +
+          analysis = '<details class="cm-analysis" data-acc="' + esc(c.acc) + '"><summary><span class="cm-analysis-label">Summary & source quotes</span>' +
             '<span class="cm-analysis-n mono">' + (c.bins ? c.bins.length : 0) + " positions</span></summary>" +
             '<p class="cm-analysis-sum">' + esc(c.summary) + "</p>" +
             (binChips ? '<div class="cm-bins" aria-label="Positions, colored by the filer\'s stance">' + binChips + "</div>" : "") +
             '<div class="cm-bindetail" data-state=""></div>' +
-            '<p class="cm-analysis-foot">Each position below carries the filer’s own stance and the verbatim quotes behind it; those quotes are the audit trail, committed in the repository. The stance shown is the filer’s own, read from its words.</p></details>';
+            '<p class="cm-analysis-foot">Each position links to supporting source quotes. Stance labels are AI interpretations, not human-verified findings.</p></details>';
         }
         var roundKey = roundOf(c.filed);
         // structured fields the AND-token filters match against (never the free-text search string)
@@ -1132,8 +1149,8 @@
       return '<button class="cm-subtab" role="tab" id="cmsub-' + id + '" aria-controls="cmsec-' + id + '" aria-selected="' + (sel ? "true" : "false") + '"' + (sel ? "" : ' tabindex="-1"') + ' data-sub="' + id + '">' + esc(label) + "</button>";
     };
     var subnav = '<div class="cm-subtabs" role="tablist" aria-label="Comment-period views">' +
-      subtab("overview", "Themes & categories", true) + subtab("issue", "By issue", false) +
-      subtab("types", "Respondent types", false) + subtab("summaries", "All comments", false) + "</div>";
+      subtab("overview", "Summary", true) + subtab("issue", "By issue", false) +
+      subtab("types", "Filer types", false) + subtab("summaries", "All comments", false) + "</div>";
 
     // By-issue outline: the landing state of the reader. Rendered synchronously from the small baked
     // outline (CM.issues); picking an issue lazy-loads its per-issue file and fills the reader pane.
@@ -1172,38 +1189,39 @@
         '<span class="cm-pm-gnext mono">' + esc(pmNextShort(r.next)) + "</span></button>";
     }).join("");
     var policyMapLanding = D.policyMap && D.policyMap.length
-      ? '<div class="cm-pm-landing"><h3 class="cm-pm-landing-h">The policy map: from the record to the rule</h3>' +
-        '<p class="cm-pm-landing-lede">Each comment-period issue, what the June 18 orders did with it, and where it goes next on the §206 clock. Pick a row to read the record behind it. <span class="cm-pm-lane">Curator’s read, cite-checked; issues the curator has not yet mapped are absent.</span></p>' +
+      ? '<div class="cm-pm-landing"><h3 class="cm-pm-landing-h">Issue map</h3>' +
+        '<p class="cm-pm-landing-lede">What the orders address and where each issue goes next. Select an issue for source quotes. <span class="cm-pm-lane">Analysis, cite-checked; issues the curator has not yet mapped are absent.</span></p>' +
         '<div class="cm-pm-grid">' + pmGridRows + "</div></div>"
       : '<p class="cm-issue-hint">Pick an issue on the left to read the whole record on it: every filer’s position, grouped by stance, with the quotes behind each.</p>';
     var secIssue = '<section class="cm-sec" id="cmsec-issue" role="tabpanel" aria-labelledby="cmsub-issue" hidden>' +
       head("Read the record by issue",
-        "Pick a question, principle, region, or recurring topic and read every letter’s position on it, grouped by where the filer stands, with the verbatim quotes behind each. Positions are AI-audited and provisional, traceable to the quotes; organizations only.") +
+        "Select an issue for positions and source quotes. AI classifications are provisional; this view covers organizations.") +
+      '<label class="cm-issue-picker">Choose an issue<select id="cm-issue-select"><option value="">Issue map</option>' + (CM.issues || []).map(function (i) { return '<option value="' + esc(i.key) + '">' + esc(i.name) + ' (' + i.count + ')</option>'; }).join('') + '</select></label>' +
       '<div class="cm-issues"><nav class="cm-issue-outline" aria-label="Issue outline">' + issueOutlineHtml + "</nav>" +
       '<div class="cm-issue-reader" id="cm-issue-reader" aria-live="polite">' + policyMapLanding + "</div></div></section>";
 
     var secOverview = '<section class="cm-sec" id="cmsec-overview" role="tabpanel" aria-labelledby="cmsub-overview">' +
       head("The RM26-4 comment period",
         CM.total + " comments were filed on DOE's large-load ANOPR (Docket RM26-4-000) between " + fmtD(CM.dateRange.first) + " and " + fmtD(CM.dateRange.last) +
-        ", scraped from FERC eLibrary on " + CM.captured + ". Where commenters land and which camps agree is below; the whole record, by issue or by filer, is on the By-issue and All-comments tabs.") +
+        ", scraped from FERC eLibrary on " + CM.captured + ". AI summaries are provisional. Later filings are not included; use eLibrary for the current docket.") +
       (D.policyMap && D.policyMap.length
         ? '<a class="cm-pm-promo" href="#' + window.CommentsRoute.serialize({ sub: "issue" }) + '">' +
           '<span class="cm-pm-promo-k">The policy map</span>' +
           '<span class="cm-pm-promo-t">See what the June 18 orders did with each issue, and where it goes next on the §206 clock <span aria-hidden="true">→</span></span></a>'
         : "") +
       statRow + coverageLine + rounds +
-      (regions ? head("Which RTO/ISO each comment engages", "Comments that specifically name-check one of the six regions, drawn from the same audit as the reform-principle read below. A floor, not a full count: roughly 60% of the corpus carries no region tag at all, either because the letter argues at the policy level or because the audit pass didn't catch a region-specific mention. Open a region to read every comment engaging it.") + regions : "") +
-      head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position; read from the filer's own words. Across " + CM.summarized2 + " audited filings. Follow a principle to read the record on it.") + stanceBars +
-      head("Where each stakeholder type stands", "The same audited stances, split by camp: each cell is a stakeholder type's net position on one reform (support minus oppose), the number its audited letters engaging it. Support is broad; the friction shows where cells turn amber (contested). Top twelve camps by engagement. Open a cell to read that reform by issue.") + consensusMap +
+      (regions ? head("Which RTO/ISO each comment engages", "Open a region for tagged comments and source quotes. Missing tags can reflect either a national focus or an extraction omission.") + regions : "") +
+      head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of AI summaries whose filer supports, opposes, is mixed, or takes no position; read from the filer's own words. Across " + CM.summarized2 + " summarized filings. Follow a principle to read the record on it.") + stanceBars +
+      head("Where each stakeholder type stands", "Each cell counts summarized letters discussing a reform. Color shows support minus opposition among AI-coded positions. Open a cell for evidence; the aggregate can miss qualifications and dissent.") + consensusMap +
       accSection("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies: a measured keyword prevalence, not a coding of each filer's position.", themes, false, (CM.themes || []).length) +
       "</section>";
 
     var secTypes = '<section class="cm-sec" id="cmsec-types" role="tabpanel" aria-labelledby="cmsub-types" hidden>' +
-      head("Who commented", "Every organization that filed, grouped by stakeholder type. The number is filings; larger camps list the first three — open “Show all” for the full roster. Types are keyword-derived from the filer and the filing text.") + types +
+      head("Who commented", "Filers in the collected record, grouped by keyword-derived type. Counts are filings. Open Show all for the full list.") + types +
       "</section>";
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
-      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary; open “Read the audited analysis” on any row for the plain read, then each position grouped by lens with its description and the verbatim quotes behind it. Open Tags to filter by question, principle, region, round, or stance; the tokens stack (AND), and free text narrows further.") +
+      head("All " + CM.total + " comments, in filing order", "Search by filer or subject. Filters combine: a comment must match every selected filter. Open a summary for its source quotes. AI stance labels need review.") +
       workbench + tagBar + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your filters. Remove a token or broaden the search.</p>' + src +
       '<span class="sr-only" role="status" aria-live="polite" id="cm-copystatus"></span></section>';
 
@@ -1413,6 +1431,7 @@
 
     // ---- By-issue reader: pick an issue in the outline, lazy-load its record, render stance groups ----
     var issueCache = {};
+    var selectedIssueKey = null;
     var issueByKey = {};
     (CM.issues || []).forEach(function (i) { issueByKey[i.key] = i; });
     // The reader's initial content is the policy-map landing; cache the node so a route back to a bare
@@ -1460,12 +1479,14 @@
         : "";
       var html = '<div class="cm-issue-readhead">' + backLink + '<h3 class="cm-issue-readtitle">' + esc(d.name) + "</h3>" +
         (d.desc ? '<p class="cm-issue-readdesc">' + esc(d.desc) + "</p>" : "") +
-        '<p class="cm-issue-readmeta mono">' + s.total + " audited " + (s.total === 1 ? "letter" : "letters") + " engage this issue</p>" +
+        '<p class="cm-issue-readmeta mono">' + s.total + " summarized " + (s.total === 1 ? "letter" : "letters") + " engage this issue</p>" +
         splitBar + "</div>" + pmStrip(POLICY_BY_ISSUE[d.key]) + groups;
       box.innerHTML = html;
       box.setAttribute("aria-busy", "false");
     };
     var markActiveIssue = function (key) {
+      selectedIssueKey = key;
+      var picker = document.getElementById("cm-issue-select"); if (picker) picker.value = key || "";
       [].slice.call(document.querySelectorAll("#cmsec-issue .cm-issue-link")).forEach(function (b) {
         var on = b.dataset.issue === key;
         b.classList.toggle("active", on);
@@ -1485,12 +1506,18 @@
       box.innerHTML = '<p class="cm-bin-loading mono" role="status">Loading the record on this issue…</p>';
       fetch("data/comments/issues/" + slug + ".json?v=" + ASSET_VER)
         .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-        .then(function (d) { issueCache[slug] = d; renderIssueReader(box, d); })
+        .then(function (d) { issueCache[slug] = d; if (selectedIssueKey === key) renderIssueReader(box, d); })
         .catch(function () {
+          if (selectedIssueKey !== key) return;
           box.setAttribute("aria-busy", "false");
           box.innerHTML = '<p class="cm-bin-error" role="status">Couldn’t load this issue here. The positions are committed under <span class="mono">sources/comments/summaries-v2/</span>.</p>';
         });
     };
+    var picker = document.getElementById("cm-issue-select");
+    if (picker) picker.addEventListener("change", function () {
+      if (picker.value) selectIssue(picker.value);
+      else { showIssueLanding(); writeCommentsHash({ sub: "issue" }); }
+    });
     var issueSec = document.getElementById("cmsec-issue");
     if (issueSec) issueSec.addEventListener("click", function (e) {
       var b = e.target.closest(".cm-issue-link");
@@ -1626,6 +1653,14 @@
     } else {
       activate(tab, focus);
       scrollToTabsTop();
+      var destinations = { filings: "fm-h", schedule: "research-schedule", commissioners: "research-commissioners" };
+      if (tab === "overview" && destinations[rest]) {
+        history.replaceState(null, "", "#overview/" + rest);
+        var target = document.getElementById(destinations[rest]);
+        target.setAttribute("tabindex", "-1");
+        target.focus({ preventScroll: true });
+        target.scrollIntoView({ block: "start" });
+      }
     }
   }
 
@@ -1688,7 +1723,7 @@
     // back off the step announces the superseded one. With Aug 17 reset to Nov 16 this chip was
     // rendering a date six days in the PAST as "Next deadline", above every tab.
     el.innerHTML = 'Next deadline · <span class="mono">' + esc(fmtISO(stepWhen(n))) + "</span> · " + esc(n.label) +
-      ' <span class="mh-derived">(derived)</span>';
+      ' <span class="mh-derived">(' + (n.revised ? 'FERC order' : 'derived') + ')</span>';
     // Second clause: the most recent PASSED step the filing matrix covers, with its observed count.
     // Without it the chip announces a deadline and says nothing about whether the last one was met,
     // which is the honesty gap a visitor hits first. Counts derive from the matrix, never hand-written.

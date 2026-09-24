@@ -1,0 +1,150 @@
+{
+  "checked_at": "2026-09-24",
+  "since": "2026-08-24",
+  "method": "Read every docket-sheet page in browser; wait for accession rows, then for prior page boundary to disappear. New accessions deduplicated across subdockets.",
+  "coverage_limits": [
+    "Docket metadata does not establish filing arguments or approval.",
+    "Separate new ER compliance dockets were not searched.",
+    "EL25-49 displays 388 records but renders 391 rows (315 distinct accessions). All four pages read twice; retain this discrepancy rather than claiming count reconciliation.",
+    "RM26-4 analysis remains the June 24 snapshot. September intake is identified here, not silently included in the 273-comment denominator.",
+    "Governance dispute-resolution outcome not verified.",
+    "Commentary sources remain dated June 29; no fresh opinion classification performed."
+  ],
+  "dockets": [
+    {
+      "docket": "EL26-67",
+      "url": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-67",
+      "reported_records": 179,
+      "observed_rows": 179,
+      "new_accessions": [
+        "20260824-5023",
+        "20260921-3020"
+      ]
+    },
+    {
+      "docket": "EL26-68",
+      "url": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-68",
+      "reported_records": 148,
+      "observed_rows": 148,
+      "new_accessions": []
+    },
+    {
+      "docket": "EL26-69",
+      "url": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-69",
+      "reported_records": 105,
+      "observed_rows": 105,
+      "new_accessions": [
+        "20260921-3021"
+      ]
+    },
+    {
+      "docket": "EL26-70",
+      "url": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-70",
+      "reported_records": 173,
+      "observed_rows": 173,
+      "new_accessions": [
+        "20260903-5046",
+        "20260910-4000",
+        "20260915-5107",
+        "20260921-3047"
+      ]
+    },
+    {
+      "docket": "EL26-71",
+      "url": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-71",
+      "reported_records": 116,
+      "observed_rows": 116,
+      "new_accessions": [
+        "20260921-3019"
+      ]
+    },
+    {
+      "docket": "EL26-72",
+      "url": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-72",
+      "reported_records": 112,
+      "observed_rows": 112,
+      "new_accessions": [
+        "20260908-5127",
+        "20260921-3056"
+      ]
+    },
+    {
+      "docket": "EL25-49",
+      "url": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL25-49",
+      "reported_records": 388,
+      "observed_rows": 391,
+      "new_accessions": [
+        "20260826-5137",
+        "20260828-5273",
+        "20260908-5326"
+      ]
+    },
+    {
+      "docket": "AD26-7",
+      "url": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=AD26-7",
+      "reported_records": 149,
+      "observed_rows": 149,
+      "new_accessions": [
+        "20260824-5126",
+        "20260824-5004",
+        "20260826-4000",
+        "20260826-5199"
+      ]
+    },
+    {
+      "docket": "ER26-3380",
+      "url": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER26-3380",
+      "reported_records": 143,
+      "observed_rows": 143,
+      "new_accessions": [
+        "20260824-5017",
+        "20260902-5075",
+        "20260902-5087",
+        "20260904-5056",
+        "20260908-5232",
+        "20260908-5260",
+        "20260910-5296",
+        "20260915-5145",
+        "20260917-5316",
+        "20260918-5364",
+        "20260918-5413",
+        "20260921-5148",
+        "20260922-5110",
+        "20260923-5149",
+        "20260923-5060"
+      ]
+    },
+    {
+      "docket": "RM26-4",
+      "url": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=RM26-4",
+      "reported_records": 443,
+      "observed_rows": 443,
+      "new_accessions": [
+        "20260908-5076",
+        "20260914-0001"
+      ]
+    }
+  ],
+  "orders_read": [
+    {
+      "accession": "20260921-3019",
+      "text": "sources/text/rehearing/20260921-3019_EL26-71-001.txt"
+    },
+    {
+      "accession": "20260921-3020",
+      "text": "sources/text/rehearing/20260921-3020_EL26-67-001.txt"
+    },
+    {
+      "accession": "20260921-3021",
+      "text": "sources/text/rehearing/20260921-3021_EL26-69-001.txt"
+    },
+    {
+      "accession": "20260921-3047",
+      "text": "sources/text/rehearing/20260921-3047_EL26-70-001.txt"
+    },
+    {
+      "accession": "20260921-3056",
+      "text": "sources/text/rehearing/20260921-3056_EL26-72-001.txt"
+    }
+  ]
+}

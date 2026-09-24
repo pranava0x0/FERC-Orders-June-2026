@@ -1,5 +1,7 @@
 # backlog.md
 
+- **done locally (2026-09-24)** — Refresh docket evidence; replace long Overview history with current status and direct research links; FERC-inspired teal/white/gold styling; measure mobile/tablet/desktop paths; harden comment workflow completion gates. Preserve verbatim quotes and existing source dates. New comment intake remains distinct from the June 24 analyzed corpus.
+
 - **Audit the other CLI tools for silent-success paths.** (medium) One PR review found four in the two
   newest tools. The older ones (`build-comment-worklist`, `grind-comment-downloads`, `analyze-comments`,
   `fix-lenses`, `flag-summary`) have never been checked for the same class: a `--check`/filter that
@@ -615,3 +617,15 @@ Recommended next steps, in order:
   unrelated lines in a refresh-scoped diff; worth a dedicated copy-edit pass that greps, rewrites, and
   adds the "grep the rendered tabs for em-dashes, expect zero" check the design doc already prescribes
   as an actual test rather than a manual habit.
+
+
+- **next (2026-09-24, HIGH)** — Expand RM26-4 collection beyond June 24. September accessions
+  `20260908-5076` and `20260914-0001` are confirmed in the docket sheet; reconcile the whole intervening
+  period, download bodies, assign manifest buckets, then extract in batches of at most five. Do not
+  mix new unreviewed records into the existing 273-comment stance denominator.
+- **next (2026-09-24, MEDIUM)** — Targeted human review of conditions and objections in comment
+  summaries; keyword/style/quote checks cannot prove completeness or correct stance. Prioritize
+  policy-changing asks over another whole-corpus model pass. Four image-only scans still need OCR.
+- **next (2026-09-24, MEDIUM)** — Check separate ER compliance dockets and governance dispute-resolution
+  outcomes. Reconcile EL25-49's 388 reported records / 391 rendered rows before claiming exhaustive
+  count coverage. See `sources/refresh-2026-09-24.json`.

@@ -230,9 +230,9 @@ ${jsonLd(d, D)}
   <header class="masthead" role="banner">
     <div class="wrap masthead-inner">
       <div class="masthead-text">
-        <p class="eyebrow">Federal Energy Regulatory Commission · Issued June 18, 2026</p>
+        <p class="eyebrow">Independent research · FERC order issued June 18, 2026</p>
         <h1>${esc(d.item)} · ${esc(d.rto)} · Docket ${esc(d.docket)}</h1>
-        <p class="masthead-sub">${esc(d.rtoFull || d.rto)} — ${esc(d.cite)}, ${d.pages} pages. ${esc(d.status)}.</p>
+        <p class="masthead-sub">${esc(d.rtoFull || d.rto)} · ${esc(d.cite)}, ${d.pages} pages. ${esc(d.status)}.</p>
       </div>
     </div>
   </header>
