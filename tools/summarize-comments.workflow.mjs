@@ -9,14 +9,22 @@ export const meta = {
 
 // args: { accs: [accession, ...], date: "YYYY-MM-DD" }  (tolerate args arriving as a JSON string)
 const A = typeof args === 'string' ? JSON.parse(args) : (args || {})
-const accs = A.accs || []
-const DATE = A.date || '2026-06-25'
+// Reject unsafe/oversized inputs before spending any agent tokens.
+if (!Array.isArray(A.accs) || A.accs.some((acc) => typeof acc !== 'string' || !/^\d{8}-\d{4}$/.test(acc))) {
+  throw new Error('accs must be an array of FERC accession numbers')
+}
+const accs = [...new Set(A.accs)]
+if (accs.length > 5) throw new Error('Run at most 5 comments per batch; save results before continuing')
+const DATE = A.date || new Date().toISOString().slice(0, 10)
+if (!/^\d{4}-\d{2}-\d{2}$/.test(DATE) || !Number.isFinite(Date.parse(DATE)) || new Date(DATE).toISOString().slice(0, 10) !== DATE) {
+  throw new Error('date must be a real YYYY-MM-DD date')
+}
 if (!accs.length) { log(`no accessions in args (typeof args = ${typeof args})`); return { error: 'no accs', argsType: typeof args } }
 
 // Lean default workflow subagent (probed: has Bash/Write/Read/Edit). general-purpose's heavy system
 // prompt was re-fed every turn in the pilot; omitting agentType cuts that fixed overhead.
-// Budget: extract on the cheapest model that holds up (Haiku); reserve Sonnet for the rare flagged audit.
-const EXTRACT_MODEL = A.extractModel || 'haiku'
+// Local run evidence favors Sonnet: fewer false write reports and retries than Haiku.
+const EXTRACT_MODEL = A.extractModel || 'sonnet'
 const AUDIT_MODEL = A.auditModel || 'sonnet'
 log(`summarizing ${accs.length} comments (extract ${EXTRACT_MODEL} + self-critique → selective audit ${AUDIT_MODEL}), generated_at ${DATE}`)
 
@@ -47,7 +55,7 @@ const AUDIT_SCHEMA = {
     validator: { type: 'string', enum: ['ok', 'warn', 'fail'] },
     issues: { type: 'array', items: { type: 'string' } },
   },
-  required: ['acc', 'verdict', 'changed'],
+  required: ['acc', 'verdict', 'changed', 'validator'],
 }
 
 const extractPrompt = (acc) => `You are extracting an auditable, quote-centric summary of ONE public comment in FERC Docket RM26-4-000. Method (PNNL CommentNEPA): the unit of evidence is the verbatim quote; bins are built on quotes; each bin is a short name + stance + description synthesized from its quotes.
@@ -87,7 +95,7 @@ Set provenance.model to YOUR actual model id (e.g. "claude-sonnet-4-6" or "claud
 
 10. Validate — run:
    node tools/validate-summaries.mjs ${acc}
-   Fix every FAIL and low-coverage WARN, then re-run until it prints "0 with errors, 0 with low-coverage quotes". The validator also rejects AI-register words and em-dashes in your prose and caption/signature quotes — fix those too. Most remaining failures are a quote that is not verbatim (re-copy exactly, or shorten to the verbatim part).
+   Fix every FAIL and low-coverage WARN, with at most TWO repair attempts. If still invalid, report status "failed" and leave the evidence on disk for review. Success requires that it prints "0 with errors, 0 with low-coverage quotes". The validator also rejects AI-register words and em-dashes in your prose and caption/signature quotes — fix those too. Most remaining failures are a quote that is not verbatim (re-copy exactly, or shorten to the verbatim part).
    IMPORTANT: the validator reads the file from disk. If it prints "not found" or "no body text", your Write did NOT persist — write the file again and re-run. Report status "written" ONLY after the validator actually printed a "N summaries checked, 0 with errors" line for ${acc}. Do not claim success you have not seen on screen.
 
 11. Flag — run \`node tools/flag-summary.mjs ${acc}\` and report its "flagged" value in your status.
@@ -105,7 +113,7 @@ Read that JSON, then read its source body (the source_text .txt, and other .txt 
 4. Quote quality — substantive, not boilerplate (caption, docket no., signature, certificate of service)?
 5. Coverage — any major position in the body with no quote?
 
-If you find MATERIAL problems, fix them directly in the JSON (edit quotes/bins/stances/summary; keep quotes verbatim), then re-run \`node tools/validate-summaries.mjs ${acc}\` until clean. Do not churn minor wording. ${STYLE}
+If you find MATERIAL problems, fix them directly in the JSON (edit quotes/bins/stances/summary; keep quotes verbatim), then run \`node tools/fix-lenses.mjs ${acc}\` and \`node tools/validate-summaries.mjs ${acc}\`. Limit repairs to TWO attempts; report verdict "problems" if still invalid. Do not churn minor wording. ${STYLE}
 
 Return your verdict (the schema fields). Set changed=true only if you edited the file.`
 
@@ -113,21 +121,23 @@ const results = await pipeline(
   accs,
   (acc) => agent(extractPrompt(acc), { label: `extract:${acc}`, phase: 'Extract', schema: EXTRACT_SCHEMA, model: EXTRACT_MODEL, effort: 'medium' }),
   async (ext, acc) => {
-    if (!ext || ext.status !== 'written') return { acc, ext, aud: null, audited: false }
-    if (!ext.flagged) return { acc, ext, aud: { verdict: 'good', changed: false, skipped: true }, audited: false }
+    if (!ext || ext.acc !== acc || ext.status !== 'written' || ext.validator !== 'ok' || typeof ext.flagged !== 'boolean') return { acc, ext, aud: null, audited: false }
+    if (!ext.flagged) return { acc, ext, aud: null, audited: false }
     const aud = await agent(auditPrompt(acc, ext.notes), { label: `audit:${acc}`, phase: 'Audit', schema: AUDIT_SCHEMA, model: AUDIT_MODEL, effort: 'low' })
     return { acc, ext, aud, audited: true }
   },
 )
 
 const ok = results.filter(Boolean)
-const written = ok.filter((r) => r.ext && r.ext.status === 'written').length
+const written = ok.filter((r) => r.ext && r.ext.acc === r.acc && r.ext.status === 'written' && r.ext.validator === 'ok' && typeof r.ext.flagged === 'boolean').length
 const flagged = ok.filter((r) => r.ext && r.ext.flagged).length
 const audited = ok.filter((r) => r.audited).length
 const revised = ok.filter((r) => r.aud && r.aud.changed).length
-const failedExtract = ok.filter((r) => !r.ext || r.ext.status !== 'written').map((r) => r.acc)
-log(`done: ${written}/${accs.length} written, ${flagged} flagged, ${audited} audited, ${revised} revised. failed: ${failedExtract.join(', ') || 'none'}`)
+const failedExtract = ok.filter((r) => !r.ext || r.ext.acc !== r.acc || r.ext.status !== 'written' || r.ext.validator !== 'ok' || typeof r.ext.flagged !== 'boolean').map((r) => r.acc)
+const failedAudit = ok.filter((r) => r.audited && (!r.aud || r.aud.acc !== r.acc || !['good', 'revised'].includes(r.aud.verdict) || r.aud.validator !== 'ok')).map((r) => r.acc)
+const complete = ok.length === accs.length && failedExtract.length === 0 && failedAudit.length === 0
+log(`done: ${written}/${accs.length} written, ${flagged} flagged, ${audited} audited, ${revised} revised. failed extraction: ${failedExtract.join(', ') || 'none'}; failed audit: ${failedAudit.join(', ') || 'none'}; complete: ${complete}`)
 return {
-  total: accs.length, written, flagged, audited, revised, failedExtract,
+  total: accs.length, complete, written, flagged, audited, revised, failedExtract, failedAudit,
   rows: ok.map((r) => ({ acc: r.acc, ext: r.ext, aud: r.aud })),
 }
