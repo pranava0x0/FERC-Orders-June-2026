@@ -4,15 +4,26 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
-- **2026-06-30 · ui/data · consensus heatmap shows a "net oppose" legend swatch with zero matching cells.**
-  Of 60 visible stakeholder×reform cells, 41 are strong-support, 13 support, 6 contested, **0 net-oppose** —
-  but the legend renders a net-oppose key, advertising opposition that isn't there. Two contributing causes:
-  the net-banding is lenient, and the AI comment summaries under-select opposition (~80% precision / ~20%
-  recall, PNNL caveat), so a true oppose could also be missed. Root cause: **code** (legend not filtered to
-  the present-set) compounded by a **data** limitation. Status: **Open** — fix: render legend entries only
-  for stances that occur, or state the absence; revisit banding. See DESIGN.md § 7 (net-vs-plurality).
+No confirmed open UI defect from the September 24 pass. Coverage limits remain in `refresh-review.md`.
 
 ## Fixed
+
+- **2026-09-24 · UI · issue requests could resolve out of order.** A slow prior fetch could replace
+  the issue selected most recently, or replace the issue map after reset. Code inspection and controlled
+  delayed-response regression tests confirmed the race. The renderer now checks the active issue before
+  showing a response or error. The old response can still populate the cache. Status: **Fixed**.
+- **2026-09-24 · workflow · false completion and stale default date.** A worker could say `written`
+  with validator `warn`/`fail`; an unsuccessful audit was not counted as failure; generation defaulted
+  to June 25. Added input/date validation, matching-accession and validation gates, separate audit
+  failures, five-record batch maximum, deduplication, bounded repair instructions, and regression tests.
+  Status: **Fixed**. Disk validation is still required after worker reports.
+- **2026-09-24 · copy/UX · accumulated refresh essays obscured current information.** Overview had
+  1,145 words before status, including superseded claims. Replaced with 100 words, refreshed status,
+  direct research links, explicit analysis coverage, and source citations. Status: **Fixed**.
+- **2026-09-24 · issue-log drift · absent heatmap legend band.** The June 30 open item had already
+  been fixed in code: the legend filters to bands present in the cells. Verified in this pass; no
+  stance algorithm changed. Machine classification can still miss opposition. Status: **Resolved**.
+
 
 - **2026-08-23 · tooling/test · `extract-abeyance-docs.py --check` passed while comparing zero
   documents.** The source PDFs and DOCX are not committed (they live in a transient download directory),

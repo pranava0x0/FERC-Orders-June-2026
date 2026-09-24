@@ -501,3 +501,13 @@ derivation means.
 **Two runs, one session, 402K subagent tokens total.** The search agent returned 20% of its findings as
 material already on the site (my planner's fault, now fixed); the review agent returned 100% signal. The
 difference is that the review had a closed, checkable target and the search did not.
+
+
+## September 24, 2026 — inline refresh and UAT
+
+No subagents spawned; no agent-run retrospective applies. Reused the August 23 work on origin/main.
+Ten docket sheets read; five order bodies downloaded; deterministic corpus survey/validation;
+268 browser summary loads, 34 issue views, 32 filter counts, and responsive navigation checks.
+Exact main-session token/tool totals are not available; no model-extraction batch ran. Improvement:
+wait for accession rows before reading eLibrary, and keep fresh docket metadata distinct from the
+older analyzed-comment denominator. Workflow now enforces five-record batches and reports failed audits.
