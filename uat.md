@@ -3,7 +3,7 @@
 Learned-pathways log for the `ferc-uat` skill (`~/.claude/skills/ferc-uat/SKILL.md`). Do not
 delete the "Learned pathways log" section below — it's the skill's memory across runs.
 
-_Last run: 2026-08-03_
+_Last run: 2026-09-24_
 
 ---
 
@@ -72,3 +72,40 @@ systematically here as the skill's actual first pass.
 - The procedural-clock "Next deadline" banner's day-of-deadline boundary behavior (it showed
   "Aug 3, 2026" as still-next while today's date is itself Aug 3 — plausibly correct
   inclusive-boundary behavior, not confirmed as intentional vs. accidental)
+
+
+### Run 2026-09-24 — refresh, reading distance, and comment explorer
+
+Baseline: current published Git head `67283df`, recovered after finding the local checkout at
+`c05b1fd`. Tested locally in the Codex browser at 375×812, 768×1024 and 1280×800.
+This is responsive browser testing, not physical-device or cross-engine certification.
+
+- All 6 main sections at all 3 sizes: 18 layout checks, no page overflow.
+- All 7 standalone docket pages at all 3 sizes: 21 checks, order links present.
+- All 7 docket accordions and 26 nested disclosures opened.
+- Overview statements/background, all 7 Reforms disclosures, all 4 News disclosures,
+  methodology, 13-record filing evidence, and 14 filer-roster expanders exercised.
+- All 34 issue views loaded. Mobile/tablet native selector restores the issue map.
+- All 32 filter-chip counts equal click results. PJM + cost + opposition returns 6 rows.
+  Search empty state, keyboard clearing, and query/filter URL state checked.
+- Every one of the 268 summary disclosures clicked, quote file loaded, and disclosure closed:
+  268 unique accessions, zero load errors. This validates delivery, not semantic correctness.
+- Comment permalink `20251113-4000` survives reload, opens summary, and loads quotes.
+- Timeline: 42 events; filters yield 22/5/5/4/6. Latest-recorded-event jump reaches September 23.
+- Main-tab ArrowRight and End navigation move selection and focus correctly.
+- Overview shortcuts route to filing status, schedule and commissioners with focus transferred
+  below the sticky navigation. All six shortcut links fit above the fold at all three sizes.
+- Zero console warnings/errors in the exercised local session.
+- Mobile filing table needs 98 px of horizontal scrolling; tablet and desktop need none.
+- Mobile and desktop screenshots inspected inline. Browser API did not provide a saved artifact path.
+
+Full before/after measurements and scope limits: [refresh-review.md](refresh-review.md).
+
+Automation note: this browser's `fill('')` did not clear the search through the input event;
+Control/Command+A then Backspace did. Wait for routed state after hash clicks before measuring.
+eLibrary initially renders an empty grid while loading: wait for real accession rows. Its EL25-49
+pagination count discrepancy is recorded in the refresh evidence, not treated as a clean count.
+
+Next UAT: test network-failure recovery in a browser with request interception; physical touch
+and Safari/Firefox remain untested. Controlled delayed-response unit tests now prevent an old
+issue fetch or failure from overwriting the latest selection.

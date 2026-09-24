@@ -6,18 +6,18 @@
   --font-serif: "Charter", "Source Serif 4", "Iowan Old Style", "Palatino", "Georgia", "Times New Roman", serif;
   --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
 
-  --bg: #f4f1ea;          /* warm paper */
+  --bg: #f5f7f7;          /* warm paper */
   --surface: #ffffff;
-  --surface-2: #efeadf;
-  --masthead: #0b2545;    /* FERC navy */
-  --masthead-2: #102f56;
+  --surface-2: #edf3f2;
+  --masthead: #123d3a;    /* FERC navy */
+  --masthead-2: #123d3a;
   --ink: #15212e;
   --text-muted: #51606e;
-  --rule: #d9d2c4;
-  --rule-strong: #b9b09c;
+  --rule: #ccd8d6;
+  --rule-strong: #8ca6a2;
 
-  --accent: #1a4480;      /* federal blue */
-  --accent-ink: #12325f;
+  --accent: #175f58;      /* federal blue */
+  --accent-ink: #103f3b;
   --deadline: #9a3412;    /* burnt amber — 30/60-day clocks only */
   --deadline-bg: #fbeee6;
 
@@ -1037,4 +1037,66 @@ a.cm-hm-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1
   .panel { animation: none; }
   .cat-chev { transition: none; }
   .skip-link { transition: none; }
+}
+
+/* September research desk: FERC-inspired teal, white and gold; distinct from the agency. */
+.masthead { background: var(--masthead); border-bottom: 4px solid #e8bb45; box-shadow: none; }
+.masthead h1, .section-head h2, h2, h3, h4, .kpi .v { font-family: var(--font-sans); }
+.masthead .eyebrow, .masthead-fresh { color: #d0e3df; }
+.masthead-sub, .masthead-fresh .mono { color: #edf5f3; }
+.masthead .eyebrow { letter-spacing: .06em; font-size: 11px; }
+.tab-no { display: none; }
+.tabs { background: #fff; border-bottom: 2px solid var(--masthead); }
+.tab { border-radius: 0; }
+.tab[aria-selected="true"] { color: var(--masthead); box-shadow: inset 0 -4px #d7a62c; }
+.research-links { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 0; border: 1px solid var(--rule); margin: 4px 0 24px; background: white; }
+.research-links a { display: flex; justify-content: space-between; align-items: center; min-height: 48px; padding: 10px 14px; border: 1px solid var(--rule); text-decoration: none; font-weight: 650; font-size: 14px; }
+.research-links a:hover { background: var(--surface-2); text-decoration: underline; }
+.overview-bg { max-width: 85ch; }
+.stand { border-radius: 0; background: #fff; }
+.stand-row { padding-block: 14px; }
+.stand-line { max-width: 88ch; }
+.stand .srcs { margin: 6px 0; }
+.overview-background { margin: 24px 0; border-block: 1px solid var(--rule); }
+.overview-background > summary { min-height: 48px; padding: 12px 0; font-weight: 650; cursor: pointer; }
+#fm-h, #research-schedule, #research-commissioners { scroll-margin-top: 80px; }
+.docket, .cat, .block, .commish-rowcard, .cm-policy-callout, .trk-card { border-radius: 0; box-shadow: none; }
+.cm-issue-link, .cm-tag, .cm-row-permalink, .cm-tags-toggle, .cm-token-x, .cm-issue-quotes > summary { min-height: 44px; }
+.cm-token-x { min-width: 44px; }
+@media (max-width: 900px) {
+ .cm-issues { display: flex; flex-direction: column; }
+ .cm-issue-reader { order: -1; }
+}
+@media (max-width: 700px) {
+ .wrap { padding-inline: 14px; }
+ .masthead-inner { padding-block: 14px; }
+ .masthead h1 { font-size: 25px; line-height: 1.15; }
+ .masthead-sub { font-size: 13px; }
+ .tabs { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); overflow: visible; gap: 0; }
+ .tab { padding: 8px 4px; min-height: 44px; font-size: 12px; white-space: normal; }
+ .tab-aside { display: none; }
+ .research-links { grid-template-columns: repeat(2,minmax(0,1fr)); margin-bottom: 20px; }
+ .research-links a { font-size: 13px; padding: 8px 10px; min-height: 52px; }
+ .cm-subtabs { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); position: static; gap: 0; }
+ .cm-subtab { min-height: 44px; padding: 8px; }
+ .cm-workbench { top: 92px; }
+ #fm-h, #research-schedule, #research-commissioners { scroll-margin-top: 105px; }
+}
+
+.masthead .mh-observed { color: #d0e3df; }
+.cm-issue-picker { display: none; }
+@media (max-width: 900px) {
+ .cm-issue-picker { display: block; font-size: 13px; font-weight: 650; margin-bottom: 16px; }
+ .cm-issue-picker select { display: block; width: 100%; min-height: 44px; margin-top: 6px; font: inherit; padding: 8px; border: 1px solid var(--rule-strong); background: white; color: var(--ink); }
+ .cm-issue-outline { display: none; }
+}
+
+.timeline-latest { min-height: 44px; padding: 10px 16px; background: var(--masthead); color: white; border: 0; font: inherit; cursor: pointer; }
+.tl-item { scroll-margin-top: 100px; }
+
+.filing-evidence { border-top: 1px solid var(--rule); margin-top: 12px; }
+.filing-evidence > summary { min-height: 44px; padding: 12px 0; cursor: pointer; font-weight: 650; }
+@media (max-width: 900px) {
+ .trk-chip, .trackpill, .src-chip, .cite-link, .cm-pm-gridrow, .cm-issue-back, .cm-showmore { min-height: 44px; display: inline-flex; align-items: center; }
+ .cm-pm-gridrow { display: grid; }
 }

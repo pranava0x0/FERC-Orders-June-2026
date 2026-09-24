@@ -6,6 +6,23 @@ The design behind it is `news-tracks-plan.md` Part 4; this file is the runbook.
 **The site is static and baked.** There is no runtime fetching, no RSS, no cron. Freshness comes from
 running this loop and committing the result. That is deliberate (plan Part 7).
 
+## Latest check: September 24, 2026
+
+Ten docket sheets checked, all pages read. Evidence and coverage limits: `sources/refresh-2026-09-24.json`.
+Five September 21 rehearing dismissals were downloaded and read; extracted bodies are in
+`sources/text/rehearing/`. They dismiss requests because the June orders were not final decisions;
+they do not resolve the tariff merits. November response dates remain.
+
+New eLibrary descriptions identify further PJM, governance and backstop-procurement filings.
+Those documents were not substantively analyzed. No new ER compliance-docket search was performed.
+EL25-49 displays 388 records but renders 391 rows across four pages (315 distinct accessions);
+this discrepancy was reproduced and is retained in the evidence log.
+
+The comment explorer remains the June 24 snapshot: 273 filings, 268 provisional summaries.
+Two September RM26-4 accessions are recorded in the refresh evidence; do not fold them into stance
+counts until their bodies, manifest classification, extraction and validation are complete.
+The September 1 governance start is now historical; outcome remains unverified.
+
 ## When to run
 
 Driven by real dates, not a calendar interval:
