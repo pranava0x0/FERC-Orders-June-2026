@@ -615,3 +615,5 @@ Recommended next steps, in order:
   unrelated lines in a refresh-scoped diff; worth a dedicated copy-edit pass that greps, rewrites, and
   adds the "grep the rendered tabs for em-dashes, expect zero" check the design doc already prescribes
   as an actual test rather than a manual habit.
+
+- **Medium** · Make `tools/extract-abeyance-docs.py` merge into the existing manifest instead of regenerating it, and add the `-001` sub-dockets to `tools/elibrary-sweep.js` (2026-10-08).
