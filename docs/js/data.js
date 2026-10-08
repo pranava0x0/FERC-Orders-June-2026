@@ -563,7 +563,7 @@ window.FERC_DATA = (function () {
       date: "Jul 20, 2026", iso: "2026-07-20b", kind: "milestone", track: "sc6",
       title: "PJM's Transmission Owners and Exelon/FirstEnergy seek rehearing of the PJM order",
       body: "Within the statutory 30-day window, the Indicated PJM Transmission Owners file a request for clarification or, in the alternative, rehearing of the PJM show cause order (EL26-67-000); Exelon and FirstEnergy jointly file their own request for rehearing. The same day, Eolian files a limited request in the NYISO, MISO and CAISO dockets as well. At the time these surfaced only through Constellation Energy's Aug 4 answer opposing them, because a keyword search of EL26-67-000's docket sheet came up empty; the Oct 8 sweep found why: rehearing requests are docketed under the -001 sub-docket (EL26-67-001), which the earlier searches never read.",
-      src: ["elibrary0809"],
+      src: ["elibrary0809", "elibrary1008", "rehearing0921"],
     },
     {
       date: "Jul 20, 2026", iso: "2026-07-20c", kind: "milestone", track: "e2",
