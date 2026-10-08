@@ -501,3 +501,12 @@ derivation means.
 **Two runs, one session, 402K subagent tokens total.** The search agent returned 20% of its findings as
 material already on the site (my planner's fault, now fixed); the review agent returned 100% signal. The
 difference is that the review had a closed, checkable target and the search did not.
+
+**2026-10-08 refresh (inline + one search agent).** Run 15: Agent `general-purpose` (`a3ce48a6a`), sonnet,
+60 tool uses, 148,432 subagent tokens, 218 s: Aug 23 to Oct 8 news sweep driven by `news-sweep-plan.mjs`.
+14 findings, 8 from primary documents read in full, 6 snippet-only. Its biggest finds (Sep 21 rehearing
+dismissal, Sep 29 backstop order with four concurrences, the Sep 30 governance vote) were re-read from the
+documents before shipping, and all of them landed; the press items stayed out. The eLibrary docket sweep
+(about 35 inline browser calls) found less than the search agent this time, because the real action was in
+sub-dockets and companion dockets the `-000` sweep does not cover. Main-loop token totals are not
+self-observable.

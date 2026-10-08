@@ -169,6 +169,66 @@
       "pages": 6,
       "chars": 9289,
       "text": "sources/text/abeyance/answer-el26-71-morongo.txt"
+    },
+    {
+      "slug": "order-el26-67-001-pjm-rehearing",
+      "accession": "20260921-3020",
+      "docket": "EL26-67-001",
+      "rto": "PJM",
+      "cite": "196 FERC ¶ 61,214",
+      "issued": "2026-09-21",
+      "kind": "order",
+      "captured_at": "2026-10-08",
+      "title": "Order dismissing requests for rehearing and clarification of the June 18, 2026 PJM show-cause order",
+      "source_file": "20260921-3020_order.pdf",
+      "pages": 11,
+      "chars": 24918,
+      "text": "sources/text/abeyance/order-el26-67-001-pjm-rehearing.txt"
+    },
+    {
+      "slug": "order-er26-3380-pjm-backstop",
+      "accession": "20260929-3099",
+      "docket": "ER26-3380-000",
+      "rto": "PJM",
+      "cite": "196 FERC ¶ 61,245",
+      "issued": "2026-09-29",
+      "kind": "order",
+      "captured_at": "2026-10-08",
+      "title": "Order accepting PJM's Reliability Backstop Procurement, suspending it to February 28, 2027, and establishing further procedures",
+      "source_file": "20260929-3099_order.pdf",
+      "pages": 97,
+      "chars": 240398,
+      "text": "sources/text/abeyance/order-er26-3380-pjm-backstop.txt"
+    },
+    {
+      "slug": "filing-ad26-7-pjm-governance-vote",
+      "accession": "20261001-5164",
+      "docket": "AD26-7-000",
+      "rto": "PJM",
+      "cite": null,
+      "issued": "2026-09-30",
+      "kind": "informational filing",
+      "captured_at": "2026-10-08",
+      "title": "PJM informational filing on the September 30, 2026 Members Committee vote on governance term sheets",
+      "source_file": "20261001-5164_filing.pdf",
+      "pages": 2,
+      "chars": 2224,
+      "text": "sources/text/abeyance/filing-ad26-7-pjm-governance-vote.txt"
+    },
+    {
+      "slug": "statement-er26-3380-doe",
+      "accession": "20261007-5181",
+      "docket": "ER26-3380-000",
+      "rto": "PJM",
+      "cite": null,
+      "issued": "2026-10-07",
+      "kind": "notice of intervention and statement of position",
+      "captured_at": "2026-10-08",
+      "title": "U.S. Department of Energy notice of intervention and statement of position supporting the September 29, 2026 backstop order",
+      "source_file": "20261007-5181_ER26-3380-000 DOE Intervention re PJM Backstop Filing_10072026_.pdf",
+      "pages": 9,
+      "chars": 16939,
+      "text": "sources/text/abeyance/statement-er26-3380-doe.txt"
     }
   ]
 }

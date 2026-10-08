@@ -2,6 +2,15 @@
 
 ## Progress log (append per session)
 
+**Session 2026-10-08 — fourth refresh: the action moved to PJM's own dockets.** The six §206 dockets are
+quiet (abeyance holds; no respondent filing since Aug 22; Sep 21 orders dismissed the rehearing requests
+in four dockets). Sep 29: FERC accepted PJM's backstop but suspended it to Feb 28, 2027, set a paper
+hearing, and expects a §205 refiling by **Oct 29**; four separate concurrences, Chang silent; DOE
+intervened Oct 7 in support. Sep 30: PJM's Members voted through their own governance term sheet over the
+states' objection. Six timeline events (45 total), all five tracks' `asOf` advanced, five new primary
+documents committed under `sources/text/abeyance/`. Lesson: sweep `-001` sub-dockets. Not done: a
+general §205 search, three dismissal orders unread, Constellation's Sep 8 protest unread.
+
 **Session 2026-08-23 — third refresh: the clock stopped, plus a comment-analysis audit.**
 
 The refresh loop ran against three passed dates (Aug 13, 17, 21) and found the story had turned: on
