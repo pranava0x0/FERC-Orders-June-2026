@@ -23,7 +23,7 @@ Driven by real dates, not a calendar interval:
 | 2026-11-20 | SPP's show-cause response (EL26-68 got 95 days rather than 90). |
 | 2026-12-16 | Answers to the show-cause responses (SPP: 2026-12-21). |
 
-**Resolved 2026-10-08:** Sep 1 (AD26-7 mediation began), Sep 16 (PJM stakeholder session, not separately confirmed), the Sep 30 to Oct 21 backstop window (suspended), end-of-September governance package (Members' sheet voted Sept 30).
+**Resolved 2026-10-08:** Sep 1 (AD26-7 mediation began, per PJM's filing), Sep 16 (PJM stakeholder session, not separately confirmed), the Sep 30 to Oct 21 backstop window (suspended), end-of-September governance package (Members' sheet voted Sept 30).
 
 **Resolved 2026-08-23:** every date above 2026-08-21 in the previous version of this table has landed.
 All six abeyance motions were granted Aug 14; Silver Run's was granted with PJM's; the Aug 17 §206
