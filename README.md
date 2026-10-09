@@ -15,25 +15,25 @@ Built for an energy-regulatory audience. Six tabs:
 3. **Reforms**: the five reform categories, the transmission-vs-retail jurisdictional boundary, and the
    per-RTO regional distinctions, grounded in the orders' published framing.
 4. **Dockets (E-7 to E-12, plus E-2)**: six collapsible per-RTO accordions (the common §206 spine the orders
-   share lives in the Reforms tab) — open one for what's unique to that system, the quoted directives
+   share lives in the Reforms tab): open one for what's unique to that system, the quoted directives
    (page-linked to the committed PDF and ferc.gov), the system-specific Section IV asks, what each
    commissioner said about that order (their substantive read + headline quote + page cite, both links),
    a variable-length distinct-findings list including each region's existing-tariff mechanics (each finding
    page-cited to the PDF + ferc.gov), and the full named-respondent roster. A seventh card holds **Item E-2**
-   (EL25-49-002, 195 FERC ¶ 61,209) — the PJM co-location *Order on Rehearing, Clarification, Compliance, and
+   (EL25-49-002, 195 FERC ¶ 61,209): the PJM co-location *Order on Rehearing, Clarification, Compliance, and
    Paper Hearing*, decided the same June 18 meeting, that fixes the three new transmission services the six
    orders extend. Plus how to file or follow each docket.
-5. **Comments (RM26-4)**: the comment-period summary, split into three sub-tabs to cut the scroll —
+5. **Comments (RM26-4)**: the comment-period summary, split into three sub-tabs to cut the scroll:
    *Themes & categories* (stats, rounds, top themes, the stance-by-reform map, and the three-lens aggregate),
    *Respondent types* (19 stakeholder categories), and *All comments* (all 273 comments in filing order,
-   filterable by org, type, question, principle, position, or region — a collapsible "filter by tag" bar
+   filterable by org, type, question, principle, position, or region: a collapsible "filter by tag" bar
    surfaces the full lens vocabulary with per-tag match counts). Each comment is tagged across **three
-   lenses** — which of the DOE ANOPR's eight comment-period questions, the five June-order reform principles,
+   lenses**, which of the DOE ANOPR's eight comment-period questions, the five June-order reform principles,
    and the six show-cause-order RTO regions it engages (keyword-detected, shown per row and in aggregate). Comment bodies
    are committed under `sources/comments/files/<accession>__<org-slug>/` (the path names the submitter) and
    validated by `tools/validate-comments.py`; the tab's data is generated from the manifest + extracted
    texts by `tools/build-comments-page-data.mjs` into `docs/js/comments-data.js`, plus one small
-   bin-detail file per audited letter into `docs/data/comments/<accession>.json` — lazy-loaded when a
+   bin-detail file per audited letter into `docs/data/comments/<accession>.json`: lazy-loaded when a
    row's "Read the audited analysis" is opened, to show each position's description and the verbatim
    quotes behind it (the audit trail). The quotes are too heavy (~1.8 MB across 268 letters) to embed
    in the up-front payload, so they are fetched on demand.
@@ -85,7 +85,7 @@ Suites, no dependencies:
   matches captured evidence in `sources/voices-evidence.json`, and that `docs/llms.txt` is in sync with
   `data.js` (regenerate with `node tools/build-llms.mjs`).
 - `tests/comment-summaries.test.mjs` + `tests/comment-detail.test.mjs`: the auditable v2 comment
-  summaries and their generated bin-detail files — every quote verbatim in its source, controlled
+  summaries and their generated bin-detail files: every quote verbatim in its source, controlled
   vocabulary, count floors, and each `docs/data/comments/<acc>.json` traces bin-for-bin and
   quote-for-quote back to `sources/comments/summaries-v2/` (a stale rebuild fails loud).
 - `tests/quote-coverage.test.mjs` + [`tools/verify-quotes.mjs`](tools/verify-quotes.mjs): the whole-site
@@ -98,8 +98,8 @@ Suites, no dependencies:
 
 Beyond the single-page app, `docs/dockets/<docket>-<rto>/` holds one static page per order (seven:
 E-7 to E-12 plus E-2), generated from `data.js` by `tools/build-docket-pages.mjs`. They exist because
-the app is one URL — its tabs are hash routes, and a fragment is not a separate URL to a search
-engine — so no order could rank for its own docket number. Each page carries that order's quoted
+the app is one URL: its tabs are hash routes, and a fragment is not a separate URL to a search
+engine, so no order could rank for its own docket number. Each page carries that order's quoted
 directives, region-specific findings and full respondent roster, so no two share a paragraph. A test
 asserts they are in sync, that every title and description is distinct, and that every sitemap URL
 resolves to a committed file.
@@ -124,10 +124,10 @@ The site is fully static; no Actions required.
   [`sources/orders-extract.json`](sources/orders-extract.json). The six PDFs are committed under
   [`docs/orders/`](docs/orders/) and served by GitHub Pages (so `#page=` opens inline at the cited
   page); they remain re-downloadable from the linked ferc.gov URLs.
-- **Item E-2** — the PJM co-location *rehearing* order (**EL25-49-002, 195 FERC ¶ 61,209**, 278 pp), the
+- **Item E-2**: the PJM co-location *rehearing* order (**EL25-49-002, 195 FERC ¶ 61,209**, 278 pp), the
   *Order on Rehearing, Clarification, Compliance Filing, and Paper Hearing* on the December 18, 2025 PJM
   Co-Location Order (193 FERC ¶ 61,217), voted the same June 18, 2026 meeting and finalizing the three new
-  transmission services the six orders extend —
+  transmission services the six orders extend:
   was downloaded the same way (browser past Cloudflare, then PyMuPDF text extraction, page-1 caption
   verified, captured 2026-06-30) and committed under `docs/orders/`. Its directives, findings, and
   Commissioner Chang's separate concurrence are quoted verbatim with page cites; the structured extract
@@ -139,7 +139,7 @@ The site is fully static; no Actions required.
   documented in [`sources/comments/README.md`](sources/comments/README.md); the bulk download runs
   through a real Chrome tab via [`tools/grind-comment-downloads.js`](tools/grind-comment-downloads.js)
   (eLibrary is Cloudflare-gated). **PDF storage policy:** comment PDFs/DOCX are committed to the repo
-  but live **outside `docs/`**, so GitHub Pages (which publishes only `/docs`) never serves them — the
+  but live **outside `docs/`**, so GitHub Pages (which publishes only `/docs`) never serves them: the
   site links each comment to its eLibrary filing instead. The six order PDFs under `docs/orders/` are
   the only deployed PDFs (they back the inline citations); a test enforces this split.
 

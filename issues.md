@@ -606,3 +606,15 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   pattern). Fix: match and replace the existing `<script type="application/ld+json">…Dataset…</script>`
   block in place (regex captures its leading whitespace too, so a re-run doesn't compound the indent —
   the first fix attempt did exactly that and had to be corrected again before landing). Status: **Fixed**.
+
+- **2026-10-08 · process · The Aug 23 sweep could not find the rehearing requests because it searched the wrong
+  docket sheet.** Root cause: **code/process** (the sweep covered only `-000` sheets). Rehearing and
+  clarification filings live in `EL26-67-001` (and `-69-001`, `-70-001`, `-71-001`), and the Sep 21
+  dismissal orders sit there too. Fix: REFRESH.md now says to sweep `-001` sub-dockets and companion
+  dockets; the open-queue item 4 is closed with accessions. The earlier "confirmed false negative"
+  note in REFRESH.md had the symptom right and the cause wrong. Status: **Fixed** (data), **Open** (no
+  automated `-001` sweep in `tools/elibrary-sweep.js` yet; it takes one docket per call).
+- **2026-10-08 · process · The extractor clobbers the manifest.** `tools/extract-abeyance-docs.py` regenerates
+  `sources/abeyance-manifest.json` from whatever source files are on disk, so a run after the
+  Downloads folder was cleaned blanks `source_file` for every earlier record and changes their `chars`.
+  Worked around by appending the new records. Root cause: **code**. Status: **Open** (backlog).
