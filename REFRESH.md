@@ -14,12 +14,16 @@ Driven by real dates, not a calendar interval:
 |---|---|
 | 2026-09-01 | AD26-7 Alternative Dispute Resolution forum commences (Federal Register, confirmed). |
 | 2026-09-16 | Third PJM stakeholder engagement session on its §205 proposal (named in the PJM abeyance order). |
-| 2026-09-30 to 2026-10-21 | PJM's one-time reliability backstop capacity auction (Docket ER26-3380), now protested. |
-| end of Sept 2026 | PJM's governance reform package is due, or FERC imposes its own (no calendar date noticed yet). |
+| ~~2026-09-30 to 2026-10-21~~ | ~~PJM's backstop auction window~~. FERC suspended the procurement to Feb 28, 2027 on Sep 29 (196 FERC ¶ 61,245). |
+| **2026-10-29** | **PJM's window to refile the backstop under §205** and have the paper hearing held in abeyance (30 days from the Sep 29 order). DOE urged the same date. |
+| 2026-11-13 | Backstop paper-hearing initial briefs (45 days from Sep 29) unless held in abeyance; responses 20 days later. |
+| ~~end of Sept 2026~~ | PJM's Members approved their own governance term sheet Sept 30; the states oppose it. What PJM files at FERC is not yet known. |
 | 2026-10-28 | PJM advisory stakeholder vote at the Members Committee; CAISO Board of Governors and WEM Governing Body approval target. Both named in the Aug 14 abeyance orders. |
 | **2026-11-16** | **The reset deadline.** Show-cause responses in five of the six §206 dockets, AND PJM's and the PJM TOs' full co-location compliance filing in EL25-49. PJM, CAISO and others have said they will instead make FPA §205 filings by this date, which suspends the obligation to respond. |
 | 2026-11-20 | SPP's show-cause response (EL26-68 got 95 days rather than 90). |
 | 2026-12-16 | Answers to the show-cause responses (SPP: 2026-12-21). |
+
+**Resolved 2026-10-08:** Sep 1 (AD26-7 mediation began, per PJM's filing), Sep 16 (PJM stakeholder session, not separately confirmed), the Sep 30 to Oct 21 backstop window (suspended), end-of-September governance package (Members' sheet voted Sept 30).
 
 **Resolved 2026-08-23:** every date above 2026-08-21 in the previous version of this table has landed.
 All six abeyance motions were granted Aug 14; Silver Run's was granted with PJM's; the Aug 17 §206
@@ -57,7 +61,9 @@ That is how AD26-7-000 and the July 23 conference date were confirmed.
 - Trade press behind a paywall: if the only source for a claim is unfetchable, it ships as a labeled
   headline pointer or not at all. Never as a paraphrased fact.
 
-**Open verification queue** (updated 2026-08-23; resolved items removed rather than left to rot):
+**Open verification queue** (updated 2026-10-08; resolved items removed rather than left to rot):
+
+0. **New 2026-10-08.** (a) No general eLibrary keyword search for §205 large-load filings by *other* applicants was completed (the form would not submit); "none observed" means the six docket sheets only. (b) Constellation's Sep 8 limited protest of PJM's Aug 17 co-location compliance filing (20260908-5326) was not read; its download did not land. (c) The Sep 21 dismissal orders in NYISO, MISO and CAISO (20260921-3021, -3047, -3019) are known from docket-sheet descriptions only. (d) Press on the governance vote and the postponed backstop window (Utility Dive, Maryland Matters, MyChesCo, Energy Central) is snippet-only and not shipped. (e) Rep. Pallone's Sep 28 and Voltus's Sep 29 comments in ER26-3380 are unread.
 
 1. CAISO's Aug 12 Large Loads straw proposal: CAISO's own notice (first-party, in `SOURCES.caisostraw`)
    confirms the posting date, the Aug 19 stakeholder meeting and the topic list. Secondary coverage
@@ -67,10 +73,7 @@ That is how AD26-7-000 and the July 23 conference date were confirmed.
    sweep. Treat as a lead. Get the PDF from the Large Loads initiative page before quoting any of it.
 2. EL26-67: the reported Jul 17 ratepayer-advocate filing. Exact procedural type + filers. (Carried.)
 3. EL25-49: the Feb 2026 compliance filing's requested Jul 31 effective date. (Carried.)
-4. The Jul 20 rehearing/clarification requests against the PJM order (EL26-67) and the E-2 order
-   (EL25-49) are still known only through Constellation's Aug 4 answer citing them; their own accession
-   numbers have not been found. See the eLibrary gotcha below on why the obvious keyword search came up
-   empty. (Carried, twice now.)
+4. RESOLVED 2026-10-08: the rehearing requests live in the **-001 sub-docket** (EL26-67-001: 20260717-5246, -5258; 20260720-5198, -5218, -5172), disposed of Sep 21 (20260921-3020). See the gotcha below.
 5. Northern Virginia Electric Cooperative's Jul 29 motion for clarification of the June 18 E-2 order is
    newly known from Vistra's Aug 18 answer (20260818-5146). Its own accession has not been pulled.
 6. Whether any of the six respondents makes its FPA §205 filing before Nov 16, which suspends its
@@ -177,6 +180,22 @@ After a refresh that adds URLs, optionally inspect one new URL in Search Console
 indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
 
 ## Gotchas learned the hard way
+
+- **Sweep the `-001` sub-dockets, and the companion docket, not just `-000`.** Rehearing and clarification
+  requests (and the orders that dispose of them) are docketed under `EL26-67-001`, not the `-000` sheet.
+  The Aug 23 sweep of `-000` alone could not find them, which is the real cause of the "confirmed false
+  negative" below: the filing was never on the sheet being searched. A Sep 21 order sat in `EL26-67-001`
+  while the `-000` sheet showed one trivial filing. Likewise PJM's backstop sits on `ER26-3380-000` with
+  a companion `EL26-108`. For each docket also read `-001` and check the docket sheet of any order that
+  cites a new one. The general search (`textsearch`, `Affiliation`) needs its submit button located by
+  text if `#submit` is null.
+- **PJM hosts FERC's own orders and its filings on pjm.com, open to curl.** `pjm.com/pjmfiles/directory/etariff/FercOrders/…`
+  and `pjm.com/-/media/DotCom/documents/ferc/{orders,filings}/…` return real PDFs, so a PJM-docket order
+  needs no browser download once you know its accession from eLibrary (still take the accession from
+  eLibrary: the extractor keys on it). Extraction needs PyMuPDF; there is none on the system python, so
+  make a throwaway venv in the scratchpad rather than installing globally. Do not let the extractor
+  rewrite `sources/abeyance-manifest.json` when the old source files are gone: it blanks `source_file`
+  on every earlier record. Append the new records instead.
 
 - **The browser caches `data.js` hard** on `localhost`. When a change does not appear, load
   `http://127.0.0.1:8131` instead of `localhost:8131`: a different host string is a separate cache entry.
