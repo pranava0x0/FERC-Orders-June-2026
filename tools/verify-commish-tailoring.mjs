@@ -174,21 +174,26 @@ export function verifyCommishTailoring(D = loadData()) {
       const stmt = spans[key] || "";
       const stmtText = loose(stmt);
       const noise = KNOWN_OCR_NOISE[key]?.[item] || [];
-      const tooShort = stmt.length < MIN_STMT_LEN;
+      // The PJM baseline counts too: an empty baseline makes every omission check pass vacuously.
+      const tooShort = stmt.length < MIN_STMT_LEN || pjmFull.length < MIN_STMT_LEN;
 
       // Additions: sentences in the non-PJM statement not found in PJM.
       const novel = sentences(stmt).filter((s) => !carries(s, pjmText)).filter((s) => !noise.some((n) => s.includes(n)));
       const allowedNotes = allowed[key]?.[item] || [];
       // A novel sentence is "explained" if it fuzzy-matches one of this docket's documented aside notes.
-      const unexplained = novel.filter((s) => !allowedNotes.some((note) => carries(note, loose(s)) || carries(s, loose(note))));
+      const explains = (note, s) => carries(note, loose(s)) || carries(s, loose(note));
+      const unexplained = novel.filter((s) => !allowedNotes.some((note) => explains(note, s)));
+      // The reverse: a documented aside that explains no novel sentence is a claim on the site that this
+      // check no longer backs (the order text moved, or the aside was misfiled to the wrong docket).
+      const unusedAsides = allowedNotes.filter((note) => !novel.some((s) => explains(note, s)));
 
       // Omissions (the reverse direction): every substantive PJM sentence must also carry into the
       // non-PJM statement. Without this, an empty or truncated `stmt` produces zero `novel` entries and
       // passes — omissions are never "explained" by a commishAside (that field documents additions only).
       const omitted = tooShort ? [] : pjmSentences.filter((s) => !carries(s, stmtText)).filter((s) => !noise.some((n) => s.includes(n)));
 
-      const ok = !tooShort && unexplained.length === 0 && omitted.length === 0;
-      results.push({ key, item, novel, unexplained, omitted, tooShort, stmtLen: stmt.length, allowedCount: allowedNotes.length, ok });
+      const ok = !tooShort && unexplained.length === 0 && omitted.length === 0 && unusedAsides.length === 0;
+      results.push({ key, item, novel, unexplained, omitted, unusedAsides, tooShort, stmtLen: stmt.length, allowedCount: allowedNotes.length, ok });
     }
   }
   return results;
@@ -228,7 +233,8 @@ export function verifyLacerteSubstitution(D = loadData()) {
     const mentions = [...body.matchAll(/.{0,40}\bPJM\b.{0,40}/g)]
       .map((m) => m[0].trim())
       .filter((m) => !LACERTE_EXPECTED_PJM_MENTIONS.some((e) => m.includes(e)));
-    results.push({ item, stmtLen: stmt.length, mentions, ok: stmt.length >= MIN_STMT_LEN && mentions.length === 0 });
+    const tooShort = stmt.length < MIN_STMT_LEN;
+    results.push({ item, stmtLen: stmt.length, tooShort, mentions, ok: !tooShort && mentions.length === 0 });
   }
   return results;
 }
@@ -246,17 +252,29 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
       if (r.tooShort) console.log(`      ⚠ statement extraction suspiciously short (${r.stmtLen} chars, floor ${MIN_STMT_LEN}) — header regex likely failed to match; nothing meaningfully compared`);
       for (const s of r.unexplained) console.log(`      + added: ${s.slice(0, 200)}${s.length > 200 ? "…" : ""}`);
       for (const s of r.omitted) console.log(`      - missing: ${s.slice(0, 200)}${s.length > 200 ? "…" : ""}`);
+      for (const s of r.unusedAsides) console.log(`      ? commishAside explains no novel sentence: ${s.slice(0, 200)}${s.length > 200 ? "…" : ""}`);
     }
     console.log(`\nFAIL — ${bad.length} unexplained pair(s).`);
     process.exit(1);
   }
   console.log("\nOK.");
 
+  // The KNOWN_OCR_NOISE rot guard used to run only under `node --test`, so this CLI could print OK
+  // while an allowlist entry suppressed nothing (or something new).
+  const staleNoise = verifyNoiseAllowlist();
+  if (staleNoise.length) {
+    for (const n of staleNoise) console.log(`  ✗ stale KNOWN_OCR_NOISE entry ${n.key}/${n.item}: "${n.substring}"`);
+    console.log(`\nFAIL — ${staleNoise.length} KNOWN_OCR_NOISE entr${staleNoise.length === 1 ? "y matches" : "ies match"} nothing.`);
+    process.exit(1);
+  }
+  const noiseCount = Object.values(KNOWN_OCR_NOISE).flatMap((byItem) => Object.values(byItem).flat()).length;
+  console.log(`All ${noiseCount} KNOWN_OCR_NOISE entries still match real text.`);
+
   const lacerte = verifyLacerteSubstitution();
   const lacerteBad = lacerte.filter((r) => !r.ok);
   console.log("\nLaCerte RTO-name substitution check — 'PJM' must not remain in his non-PJM statements");
   console.log("=".repeat(78));
-  for (const r of lacerte) console.log(`  ${r.item}: ${r.mentions.length} leftover "PJM" mention(s)${r.stmtLen < MIN_STMT_LEN ? " [TOO SHORT]" : ""}`);
+  for (const r of lacerte) console.log(`  ${r.item}: ${r.mentions.length} leftover "PJM" mention(s)${r.tooShort ? ` [TOO SHORT: ${r.stmtLen} chars]` : ""}`);
   if (lacerteBad.length) {
     for (const r of lacerteBad) for (const m of r.mentions) console.log(`    ✗ ${r.item}: …${m}…`);
     console.log(`\nFAIL — ${lacerteBad.length} order(s) with an unsubstituted "PJM" mention.`);

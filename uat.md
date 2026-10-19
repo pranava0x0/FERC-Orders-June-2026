@@ -3,11 +3,48 @@
 Learned-pathways log for the `ferc-uat` skill (`~/.claude/skills/ferc-uat/SKILL.md`). Do not
 delete the "Learned pathways log" section below — it's the skill's memory across runs.
 
-_Last run: 2026-08-03_
+_Last run: 2026-10-19_
 
 ---
 
 ## Learned pathways log
+
+### Run 2026-10-19 (headless, `tools/uat-playwright.mjs`; same session as the Oct 8 to Oct 19 refresh)
+
+**Context:** First run of the Playwright harness, built this session because the cloud container has no
+preview MCP and no Chrome bridge. It automates REFRESH.md's console check (every tab and Comments sub-tab,
+`undefined`/`NaN`, horizontal overflow, console, failed requests) at 375x812 and 1280x800, and measures
+reader depth for nine goals as taps + swipes + screens of scroll from a fresh Overview load, choosing the
+cheapest of several candidate paths per goal. Serve `docs/` on 127.0.0.1:8131 first; a run takes about
+70 seconds and gave identical numbers on repeat.
+
+**What was tested:** 20 panel checks and 18 goal measurements per run, four runs (before, after the
+first fixes, after teaching the tool the new paths, after moving the timeline button).
+
+**What was discovered:**
+- One real defect, introduced by this refresh: the `pjmto1009` source chip rendered its 56-character
+  org name as a `white-space: nowrap` chip, pushing the Overview 45px and the Timeline 64px past a 375px
+  screen. Fixed with a `short` label on the source and `max-width: 100%` + ellipsis on every chip.
+- Depth, mobile, before → after: newest timeline event 23.3 → 2 (a "Jump to the latest event" button
+  above the track cards; each `.tl-item` now carries `id="tl-<iso>"`), filing matrix 7.9 → 1 and
+  commissioner statements 5.7 → 1 (an "On this page" jump row of four buttons under the Overview head,
+  buttons not hash links because the router owns the hash), latest Discourse quote 7.1 → 3.1 (the
+  commentary section first and open), and the sideways swipe to reach Dockets, Comments and Discourse
+  is gone (3x2 tab grid at ≤480px; the sticky bar is 92px there, so jump targets get a 104px
+  scroll margin). Desktop: 11.0 → 2, 3.7 → 1, 3.0 → 1, 3.8 → 1.8.
+- Load: 6 requests, 1,008 KB uncompressed, 100 to 135 ms to `load` on the local server; 1,548 DOM nodes
+  on the Overview and 19,970 after every tab has rendered, 14,109 of them the All-comments list.
+  `comments-data.js` is 48% of the bytes and loads on every visit (backlog).
+- Unchanged and still fine: no `undefined`/`NaN` anywhere, zero console errors, zero failed requests.
+
+**Paths that worked reliably:** `node tools/uat-playwright.mjs` with `python3 -m http.server 8131
+--directory docs` running; `--json` for the full result object; `--out` for the two screenshots. The
+tool exits 1 on any failure and 2 if the server is unreachable, and fails rather than passes over an
+empty set.
+
+**Paths NOT yet tested (carry over):** keyboard-only navigation through the tablist and the new jump
+buttons (they are real buttons with visible focus, but nobody has tabbed through them); a comment-row
+permalink round-trip; the 768px viewport; the day-of-deadline boundary.
 
 ### Run 2026-08-03 (first run — same session as the news refresh + commissioner-quote +
 RTO/ISO-comment feature work it's testing)

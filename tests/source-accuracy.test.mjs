@@ -5,6 +5,7 @@ import { test } from "node:test";
 import { fileURLToPath } from "node:url";
 import vm from "node:vm";
 import { buildLlmsTxt } from "../tools/build-llms.mjs";
+import { carries, loose } from "../tools/verify-quotes.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -430,6 +431,7 @@ test("Discourse commentary quotes are backed by captured evidence", () => {
     bySource.set(ev.src, `${bySource.get(ev.src) || ""}\n${ev.evidence}`);
   }
 
+  let voiceQuotes = 0, themeQuotes = 0;
   for (const voice of D.voices) {
     const ev = byName.get(voice.name);
     assert.ok(ev, `voice "${voice.name}" must have an entry in sources/voices-evidence.json`);
@@ -447,6 +449,7 @@ test("Discourse commentary quotes are backed by captured evidence", () => {
       .map((match) => match[1])
       .filter((quote) => looseText(quote).length >= 6);
     for (const quote of quotes) {
+      voiceQuotes++;
       assert.ok(
         evidenceText.includes(looseText(quote)),
         `voice "${voice.name}" quotes text not found in its captured evidence: ${quote}`,
@@ -454,17 +457,45 @@ test("Discourse commentary quotes are backed by captured evidence", () => {
     }
   }
 
+  // From wave 3 on a theme may quote a FERC order whose full text is committed (sources/text/abeyance/),
+  // which is a stronger backing than a captured snippet. Each such quote is checked against the one file
+  // its source record names in `text`, not the union of every order (a span from the backstop order
+  // tagged as the large-load order must fail: the attribution is what is being audited), through the
+  // same matcher the quote sweep uses, and counted separately so the branch cannot pass over nothing.
+  const ownText = new Map();
+  const textOf = (id) => {
+    if (!ownText.has(id)) ownText.set(id, loose(readFileSync(join(ROOT, ...D.SOURCES[id].text.split("/")), "utf8")));
+    return ownText.get(id);
+  };
+  let orderBacked = 0;
   for (const theme of D.voiceThemes || []) {
     for (const quote of theme.quotes || []) {
-      assert.ok(D.SOURCES[quote.src], `theme "${theme.title}" cites unknown source "${quote.src}"`);
+      themeQuotes++;
+      const src = D.SOURCES[quote.src];
+      assert.ok(src, `theme "${theme.title}" cites unknown source "${quote.src}"`);
       const ev = bySource.get(quote.src);
-      assert.ok(ev, `theme "${theme.title}" quote source "${quote.src}" must be captured in voices-evidence.json`);
+      if (!ev && src.tier === "ferc" && (theme.wave || 1) >= 3) {
+        orderBacked++;
+        assert.ok(src.text && existsSync(join(ROOT, ...src.text.split("/"))),
+          `theme "${theme.title}" quotes FERC source "${quote.src}", which must name its committed text in \`text\``);
+        assert.ok(carries(quote.q, textOf(quote.src)), `theme "${theme.title}" quotes "${quote.src}" but the span is not in ${src.text}: ${quote.q}`);
+        continue;
+      }
+      assert.ok(ev, `theme "${theme.title}" quote source "${quote.src}" must be captured in voices-evidence.json or news-evidence.json`);
       assert.ok(
         looseText(ev).includes(looseText(quote.q)),
         `theme "${theme.title}" quote not found in evidence for "${quote.src}": ${quote.q}`,
       );
     }
   }
+  assert.ok(orderBacked >= 6, `order-backed theme quotes checked against their own text (${orderBacked} >= 6)`);
+  // The scoping is the point: a verbatim line from a DIFFERENT committed order must not pass as this one.
+  const elsewhere = "This Commission will not be forced into accepting a deeply flawed, eleventh-hour procurement mechanism";
+  assert.ok(!carries(elsewhere, textOf("llorder1009")), "a backstop-order sentence does not verify against the large-load order's own text");
+  // The voice-take quotes are found by a curly-quote regex; if the copy switches quote style it matches
+  // nothing and every check above passes over zero phrases. A reach check (takes can be de-quoted).
+  assert.ok(voiceQuotes >= 10, `voice-take quotes checked (${voiceQuotes} >= 10)`);
+  assert.ok(themeQuotes >= 30, `Discourse theme quotes checked (${themeQuotes} >= 30)`);
 });
 
 test("website FERC and DOE summary claims are supported by extracted source text", () => {

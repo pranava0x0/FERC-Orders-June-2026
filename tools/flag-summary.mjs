@@ -36,13 +36,16 @@ export function flagDecision(s, prior, chars) {
 
 if (fileURLToPath(import.meta.url) === process.argv[1]) {
   const acc = process.argv[2];
-  if (!acc) { console.log(JSON.stringify({ flagged: false, reasons: ["no accession"] })); process.exit(0); }
+  // A missing operand is a usage error, not "not flagged": the old {"flagged":false} told the workflow
+  // to skip the independent audit for a summary that was never looked at.
+  if (!acc) { console.error("usage: node tools/flag-summary.mjs <accession>"); process.exit(1); }
   const sumPath = join(ROOT, "sources", "comments", "summaries-v2", `${acc}.json`);
   if (!existsSync(sumPath)) { console.log(JSON.stringify({ flagged: true, reasons: ["summary file missing"] })); process.exit(0); }
   const s = JSON.parse(readFileSync(sumPath, "utf8"));
   const wlPath = join(ROOT, "sources", "comments", ".worklist.json");
   const row = existsSync(wlPath) ? (JSON.parse(readFileSync(wlPath, "utf8")).rows || []).find((r) => r.acc === acc) : null;
-  const prior = (row && row.prior) || { aq: [], pr: [], rg: [] };
-  const chars = (row && row.chars) || 0;
-  console.log(JSON.stringify(flagDecision(s, prior, chars)));
+  // Without its worklist row the gate has no body size and no keyword prior, so the size and prior rules
+  // cannot fire and an unflagged result would mean "not evaluated". Route it to the audit instead.
+  if (!row) { console.log(JSON.stringify({ flagged: true, reasons: [`no .worklist.json row for ${acc}: body size and keyword prior unknown`] })); process.exit(0); }
+  console.log(JSON.stringify(flagDecision(s, row.prior || { aq: [], pr: [], rg: [] }, row.chars || 0)));
 }

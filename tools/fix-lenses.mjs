@@ -26,9 +26,13 @@ function fix(file) {
 
 const arg = process.argv[2];
 const files = arg ? [arg] : (existsSync(DIR) ? readdirSync(DIR).filter((f) => f.endsWith(".json")) : []);
+if (!files.length) { console.error(`fix-lenses: no summaries-v2 files found in ${DIR}; nothing was checked.`); process.exit(1); }
 let n = 0, bad = 0;
 for (const f of files) {
   try { const r = fix(f); if (r.changed) n++; if (arg || r.changed) console.log(`${r.changed ? "fixed" : "ok"} ${r.acc}: lenses ${JSON.stringify(r.lenses)}`); }
   catch (e) { bad++; console.log(`skip ${f}: ${e.message}`); } // one unreadable file must not abort the batch
 }
-console.log(`\n${files.length} checked, ${n} lenses recomputed${bad ? `, ${bad} skipped` : ""}.`);
+console.log(`\n${files.length - bad} of ${files.length} checked, ${n} lenses recomputed${bad ? `, ${bad} skipped` : ""}.`);
+// The batch finishes, but a skip is not success: the extract agent runs this on the file it just wrote,
+// and a missing or truncated file used to print "skip" and exit 0.
+if (bad) process.exit(1);

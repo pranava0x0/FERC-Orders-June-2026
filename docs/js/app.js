@@ -33,6 +33,7 @@
     if (s.tier === "ferc") {
       return { fercPR: "FERC release", fercFS: "FERC fact sheet", fercSum: "FERC summaries", fercRM264: "RM26-4 page" }[id] || "FERC";
     }
+    if (s.short) return s.short; // an org name too long for a chip (the PJM TOs' committee is 56 chars)
     return s.org.split("(")[0].trim(); // secondary -> org
   }
   function srcChips(ids) {
@@ -161,7 +162,7 @@
           "</span> by " + esc(s.revised.by) + ". " + esc(s.revised.note) + "</p>" : "") +
         (s.dateNote && x.date ? '<p class="proc-note mono">' + esc(s.dateNote) + "</p>" : "") + landChip + "</div></li>";
     }).join("");
-    return head("What happens next: the §206 procedural clock", P.basis) +
+    return '<span id="proc-h" class="jump-anchor"></span>' + head("What happens next: the §206 procedural clock", P.basis) +
       '<ol class="proc-board">' + rows + "</ol>" +
       // Two clocks, one date: the §206 show-cause step and the separate EL25-49 co-location compliance
       // filing have repeatedly landed on the same day, which is exactly the confusion the tracks model
@@ -466,14 +467,23 @@
           '<p class="commish-gist">' + esc(c.gist) + "</p>" +
           '<div class="commish-quote">“…' + esc(c.quote) + '…”' + commissionerQuoteCite(c, c.quotePg) + "</div></div>" + themed(c) + "</article>";
       }).join("");
-      commish = head("What each commissioner emphasized",
+      commish = '<span id="commish-h" class="jump-anchor"></span>' + head("What each commissioner emphasized",
         "All five joined every order unanimously; their concurring statements diverge in emphasis. Each row opens into that commissioner’s themes and page-cited quotes, without changing the layout of the other commissioners.") +
         '<div class="commish-list">' + cards + "</div>";
     }
 
-    return head("Overview", m.subtitle) +
+    // Measured 2026-10-19 (tools/uat-playwright.mjs): the filing matrix sat 7.9 screens down a phone and
+    // the commissioner statements 15, with nothing above the fold pointing at either. The jump row is
+    // four in-page buttons (not hash links, which the tab router would read as a tab), and the status
+    // strip moves above the summary because it is the one part of this tab that changes every sweep.
+    var jumps = [["#stand-h", "Where things stand"], ["#proc-h", "The clock"], ["#fm-h", "Filing matrix"], ["#commish-h", "Commissioners"]];
+    var jumpRow = '<nav class="jump-row" aria-label="On this page">' + jumps.map(function (j) {
+      return '<button type="button" class="jump-btn" data-jump="' + j[0] + '">' + esc(j[1]) + "</button>";
+    }).join("") + "</nav>";
+    return head("Overview", m.subtitle) + jumpRow +
+      renderStandStrip() +
       '<div class="overview-bg">' + paras(m.summary) + "</div>" +
-      stats + renderStandStrip() + renderProcedural() + glance + commish;
+      stats + renderProcedural() + glance + commish;
   }
 
   // "Where things stand": one line per track, generated from the registry so there is no second copy of
@@ -565,7 +575,7 @@
 
   function renderTimeline() {
     var tl = '<div class="timeline">' + D.timeline.map(function (e) {
-      return '<div class="tl-item ' + e.kind + '" data-track="' + esc(e.track || "") + '"><div class="tl-date">' + esc(e.date) +
+      return '<div class="tl-item ' + e.kind + '" id="tl-' + esc(e.iso || "") + '" data-iso="' + esc(e.iso || "") + '" data-track="' + esc(e.track || "") + '"><div class="tl-date">' + esc(e.date) +
         '<span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span>" + trackPill(e.track) + "</div>" +
         '<div class="tl-title">' + esc(e.title) + "</div>" +
         '<div class="tl-body">' + esc(e.body) + "</div>" + srcChips(e.src) + "</div>";
@@ -578,6 +588,11 @@
 
     return head("Timeline: DOE §403 directive to FERC §206 orders",
       "One chronology, five lanes: the §206 clock, the EL25-49 co-location docket, the AD26-7 governance fight, the RM26-4 record, and the market context around them.") +
+      // The rail runs oldest first over fifty-odd events, so the newest one sat twenty screens down on a
+      // phone (measured 2026-10-19). One button, above the track cards so it is on the first screen,
+      // takes the reader to the most recent dated event that is not in the future, within whatever track
+      // filter is active.
+      '<p class="tl-jump-wrap"><button type="button" class="tl-jump" id="tl-jump">Jump to the latest event</button></p>' +
       '<h3 class="trk-h">The parallel tracks</h3>' +
       '<p class="trk-lede">Each lane is its own proceeding on its own clock. Pick one to filter the rail below it.</p>' +
       trackCards() + trackChips() +
@@ -593,6 +608,22 @@
   function wireTimeline() {
     var panel = panelFor("timeline");
     if (!panel) return;
+    var jumpBtn = panel.querySelector("#tl-jump");
+    if (jumpBtn) jumpBtn.addEventListener("click", function () {
+      // Same today-comparison as procStatus(): a scheduled deadline is not "the latest event".
+      var today = new Date(); today.setHours(0, 0, 0, 0);
+      var items = Array.prototype.slice.call(panel.querySelectorAll(".tl-item:not([hidden])"));
+      var target = null;
+      items.forEach(function (el) {
+        var iso = (el.getAttribute("data-iso") || "").slice(0, 10);
+        if (/^\d{4}-\d{2}-\d{2}$/.test(iso) && new Date(iso + "T00:00:00") <= today) target = el;
+      });
+      if (!target) target = items[items.length - 1];
+      if (!target) return;
+      target.scrollIntoView({ block: "start" });
+      target.setAttribute("tabindex", "-1");
+      target.focus({ preventScroll: true });
+    });
     applyTimelineTrack = function (id) {
       timelineTrack = validTrack(id);
       panel.querySelectorAll(".tl-item").forEach(function (el) {
@@ -604,6 +635,11 @@
         b.classList.toggle("is-active", on);
       });
       var live = panel.querySelector("#tl-filterstatus");
+      var jump = panel.querySelector("#tl-jump");
+      if (jump) {
+        var n0 = panel.querySelectorAll(".tl-item:not([hidden])").length;
+        jump.textContent = "Jump to the latest event" + (timelineTrack === "all" ? "" : " in " + D.tracks[timelineTrack].short) + " (" + n0 + " shown)";
+      }
       if (live) {
         var n = panel.querySelectorAll(".tl-item:not([hidden])").length;
         live.textContent = timelineTrack === "all"
@@ -858,8 +894,9 @@
       return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
     }).join("");
 
-    // Two dated waves, freshest first (news-tracks-plan.md Feature D). Wave 1 is reaction to the June
-    // 18 orders; wave 2 is what the record did next. Each lane carries its own capture stamp, because
+    // Dated waves, freshest first (news-tracks-plan.md Feature D). Wave 1 is reaction to the June 18
+    // orders; wave 2 is what the record did over the summer; wave 3 is October's first FERC ruling on
+    // large-load tariff text and the refilings. Each lane carries its own capture stamp, because
     // "commentary gathered <one date>" stopped being true the moment the tab held two moments.
     var themeCard = function (t) {
       var qs = (t.quotes || []).map(function (q) {
@@ -882,7 +919,8 @@
         '<div class="quote-themes">' + items.map(themeCard).join("") + "</div></div>";
     };
     var quoteThemes =
-      waveLane(2, "The filings and the governance fight", D.meta.newsCapture || D.meta.discourseCapture) +
+      waveLane(3, "October: the retail line, and the refilings", D.meta.newsCapture || D.meta.discourseCapture) +
+      waveLane(2, "The filings and the governance fight", D.meta.wave2Capture || D.meta.newsCapture || D.meta.discourseCapture) +
       waveLane(1, "Reaction to the June 18 orders", D.meta.discourseCapture);
 
     // The RM26-4 comment period (stats, respondent types, themes/categories, and the full searchable
@@ -893,10 +931,12 @@
       '<p class="cm-jump-wrap"><a class="cm-jump" href="#comments">Open the Comments tab →</a></p>') : "";
 
     var consensusN = (D.media.consensus || []).length, frictionN = (D.media.friction || []).length;
-    return accSection("Industry reception",
-      "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.", rec + commentsBlock, true, recItems.length) +
-      accSection("Commentary themes with quoted source lines",
-      "Themes from the discourse, in two dated waves: reaction to the orders themselves, then what the record did next. Each quote links to its captured source. The order record is as of " + D.meta.capture + ".", quoteThemes, false, (D.voiceThemes || []).length) +
+    // The dated commentary comes first and open: it is the part of this tab that changes with each
+    // sweep, and in a collapsed second position its newest quote was seven screens down on a phone.
+    return accSection("Commentary themes with quoted source lines",
+      "Themes from the discourse, in dated waves: reaction to the orders themselves, then what the record did next. Each quote links to its captured source. The order record is as of " + D.meta.capture + ".", quoteThemes, true, (D.voiceThemes || []).length) +
+      accSection("Industry reception",
+      "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.", rec + commentsBlock, false, recItems.length) +
       accSection("Media & discourse: consensus and friction", "The dominant narratives in energy trade press and policy circles.", disc, false, consensusN + frictionN) +
       accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false, outletIds.length);
   }
@@ -1566,6 +1606,17 @@
   var TABS = ["overview", "timeline", "reforms", "dockets", "comments", "news"];
   var renderers = { overview: renderOverview, timeline: renderTimeline, reforms: renderReforms, dockets: renderDockets, comments: renderComments, news: renderNews };
   var afterRender = { comments: wireComments, timeline: wireTimeline };
+  // Overview jump row: delegated once, so it works whichever render pass drew the buttons. Buttons, not
+  // hash links, because the router owns location.hash and would read "#fm-h" as a tab name.
+  document.addEventListener("click", function (ev) {
+    var b = ev.target && ev.target.closest ? ev.target.closest(".jump-btn") : null;
+    if (!b) return;
+    var t = document.querySelector(b.getAttribute("data-jump"));
+    if (!t) return;
+    t.scrollIntoView({ block: "start" });
+    if (!t.hasAttribute("tabindex")) t.setAttribute("tabindex", "-1");
+    t.focus({ preventScroll: true });
+  });
   var rendered = {};
 
   function panelFor(name) { return document.getElementById("panel-" + name); }

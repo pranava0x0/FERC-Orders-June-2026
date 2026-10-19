@@ -175,6 +175,30 @@ a:hover { color: var(--accent-ink); }
   overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
 }
 .tabs::-webkit-scrollbar { display: none; }
+/* Phones: all six tabs visible at once as a 3x2 grid, so no tab needs a sideways swipe to reach
+   (UAT 2026-10-19: Dockets, Comments and Discourse were off-screen at 375px). The bar grows to two rows. */
+@media (max-width: 480px) {
+  .tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; overflow-x: visible; }
+  .tab { padding: 8px 4px; justify-content: center; white-space: normal; text-align: center; font-size: 13px; }
+  .tab .tab-no, .tab .tab-aside { display: none; }
+}
+
+/* In-page jumps on the Overview (buttons, not hash links: the router owns the hash) and the Timeline. */
+.jump-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
+.jump-btn, .tl-jump {
+  appearance: none; font-family: var(--font-sans); font-size: 13px; font-weight: 600; cursor: pointer;
+  color: var(--accent-ink); background: var(--surface-2); border: 1px solid var(--rule-strong);
+  border-radius: 999px; padding: 6px 12px; line-height: 1.3;
+}
+.jump-btn:hover, .tl-jump:hover { background: #e3ecf6; border-color: var(--accent); }
+.jump-btn:focus-visible, .tl-jump:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (pointer: coarse) { .jump-btn, .tl-jump { min-height: 44px; } }
+.tl-jump-wrap { margin: 6px 0 12px; }
+.jump-anchor { display: block; height: 0; }
+/* jump targets land below the sticky tablist (46px, or two rows on phones) */
+#stand-h, #proc-h, #fm-h, #commish-h, .tl-item { scroll-margin-top: 60px; }
+@media (max-width: 480px) { #stand-h, #proc-h, #fm-h, #commish-h, .tl-item { scroll-margin-top: 104px; } }
+.tl-item:focus { outline: 2px solid var(--accent); outline-offset: 4px; }
 .tab {
   appearance: none; border: 1px solid transparent; border-bottom: none; background: transparent;
   font-family: var(--font-sans); font-size: clamp(14px, 2.2vw, 16px); font-weight: 600; color: var(--text-muted);
@@ -999,6 +1023,9 @@ a.cm-hm-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1
   font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; text-decoration: none;
   color: var(--accent-ink); background: var(--surface-2); border: 1px solid var(--rule-strong);
   border-radius: 4px; padding: 1px 7px; line-height: 1.7; white-space: nowrap;
+  /* a chip can never be wider than its row: a 56-char org name pushed the Overview 45px past a 375px
+     screen (UAT 2026-10-19). inline-block so text-overflow applies; max-width against the flex row. */
+  display: inline-block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; vertical-align: bottom;
 }
 .src-chip:hover { background: #e3ecf6; color: var(--accent-ink); border-color: var(--accent); }
 .src-chip[data-tier="doe"] { border-left: 3px solid var(--tier-doe); }

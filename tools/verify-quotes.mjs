@@ -220,9 +220,28 @@ for (const v of D.voices || []) {
 }
 // Wave-1 theme quotes were captured in voices-evidence; wave-2's come from the news captures. Check
 // against the union so a theme is verified by whichever file actually holds its snippet.
+// A theme may also quote a FERC document directly (from wave 3 on: the Oct 9 ER26-3515 order and
+// Rosner's concurrence). Such a quote is checked against THAT source's own committed text, named by the
+// source record's `text` field, never against the union of every order: a span lifted from the backstop
+// order and tagged as the large-load order must fail, since the attribution is the claim being audited.
 const themeEvidence = `${evidenceText} ¶ ${newsEvidenceText}`;
+const sourceTextCache = {};
+function sourceText(id) {
+  const s = D.SOURCES[id];
+  if (!s || !s.text) return null;
+  if (!(id in sourceTextCache)) sourceTextCache[id] = loose(read(...s.text.split("/")));
+  return sourceTextCache[id];
+}
 for (const th of D.voiceThemes || []) {
-  for (const q of th.quotes || []) req(`voice theme "${th.title}"`, q.q, themeEvidence);
+  for (const q of th.quotes || []) {
+    const own = sourceText(q.src);
+    const s = D.SOURCES[q.src] || {};
+    if (!own && s.tier === "ferc" && (th.wave || 1) >= 3) {
+      required.push({ label: `voice theme "${th.title}" (${q.src} has no committed text to check against)`, quote: q.q, ok: false });
+      continue;
+    }
+    req(`voice theme "${th.title}"${own ? ` (own text of ${q.src})` : ""}`, q.q, own || themeEvidence);
+  }
 }
 
 // 3b) Timeline event bodies (REQUIRED). These were swept by nothing until the 2026-07-28 news refresh,

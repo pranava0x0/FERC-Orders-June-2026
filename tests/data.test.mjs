@@ -58,7 +58,7 @@ test("data object loaded", () => {
 
 test("every source has url/label/org/tier and an http(s) url", () => {
   const ids = Object.keys(D.SOURCES);
-  assert.ok(ids.length >= 20, `source count floor: ${ids.length} >= 20`);
+  assert.ok(ids.length >= 106, `source count floor: ${ids.length} >= 106`);
   for (const id of ids) {
     const s = D.SOURCES[id];
     assert.match(s.url, /^https?:\/\//, `${id} url`);
@@ -284,7 +284,7 @@ test("docket Section IV briefing questions: every shown question is verbatim, an
 
 test("RM26-4 comment corpus: stats present and stakeholder buckets sum to the comment total", () => {
   const c = D.comments;
-  assert.ok(c && c.filings >= 400 && c.total >= 200, "headline comment stats present");
+  assert.ok(c && c.filings >= 423 && c.total >= 273, `headline comment stats present (${c && c.filings} filings, ${c && c.total} comments)`);
   assert.ok(Array.isArray(c.buckets) && c.buckets.length >= 10, "stakeholder buckets present");
   const sum = c.buckets.reduce((s, b) => s + b.n, 0);
   assert.equal(sum, c.total, `bucket counts (${sum}) sum to the comment total (${c.total})`);
@@ -295,7 +295,7 @@ test("RM26-4 comment corpus: stats present and stakeholder buckets sum to the co
   assert.ok(c.interventions >= 1 && c.orgs >= 1 && c.peakN >= 1, "secondary stats present");
   assert.match(c.url, /elibrary\.ferc\.gov/, "links to the eLibrary docket sheet");
   // flagship comments read in full
-  assert.ok(Array.isArray(c.flagships) && c.flagships.length >= 5, "flagship summaries present");
+  assert.ok(Array.isArray(c.flagships) && c.flagships.length >= 9, `flagship summaries present (${(c.flagships || []).length} >= 9)`);
   const CATS = ["study", "cost", "colo", "flex", "proximate"];
   c.flagships.forEach((f, i) => {
     assert.ok(f.acc && f.filer && f.bucketLabel && f.summary && f.summary.length >= 40, `flagship ${i} fields`);
@@ -317,7 +317,7 @@ test("comment audit trail: every flagship threads website -> summary JSON -> dow
   }
   // the per-accession file inventory covers all comments
   const files = JSON.parse(readFileSync(join(here, "..", "sources", "comments", "rm26-4-files.json"), "utf8"));
-  assert.ok(files.stats.accessions >= 270 && files.stats.with_files >= 260, "file inventory covers the comment set");
+  assert.ok(files.stats.accessions >= 273 && files.stats.with_files >= 273, `file inventory covers the comment set (${files.stats.accessions}/${files.stats.with_files})`);
 });
 
 test("distinct findings: every page cite lands on a page carrying the finding's anchor text", () => {
@@ -342,7 +342,7 @@ test("distinct findings: every page cite lands on a page carrying the finding's 
       checked++;
     }
   }
-  assert.ok(checked >= 20, `enough page-anchored findings checked (${checked})`);
+  assert.ok(checked >= 37, `enough page-anchored findings checked (${checked} >= 37)`);
 });
 
 test("five reform categories, numbered 1..5, each fully populated", () => {
@@ -356,12 +356,15 @@ test("five reform categories, numbered 1..5, each fully populated", () => {
 });
 
 test("timeline spans DOE -> FERC -> deadlines", () => {
-  assert.ok(D.timeline.length >= 7, "timeline count floor");
+  assert.ok(D.timeline.length >= 45, `timeline count floor (${D.timeline.length} >= 45)`);
   const kinds = D.timeline.map((e) => e.kind);
   assert.ok(kinds.includes("doe"), "has a DOE event");
   assert.ok(kinds.includes("ferc"), "has the FERC issuance");
   assert.ok(kinds.filter((k) => k === "deadline").length >= 2, "has 30d and 60d deadlines");
-  const after60 = D.timeline.slice(D.timeline.findIndex((e) => /60-day/.test(e.title)) + 1);
+  // findIndex() of -1 would slice from 0 and test the whole rail, so the anchor event must exist.
+  const i60 = D.timeline.findIndex((e) => /60-day/.test(e.title));
+  assert.ok(i60 !== -1, "the 60-day deadline event exists");
+  const after60 = D.timeline.slice(i60 + 1);
   assert.ok(after60.some((e) => /30 days after/.test(e.title + " " + e.body)), "shows the response window after 60-day filings");
   assert.ok(after60.some((e) => /abeyance/i.test(e.title + " " + e.body)), "shows bounded abeyance after the 60-day clock");
   assert.ok(after60.some((e) => /§206 remedy/.test(e.title + " " + e.body)), "shows FERC's post-filing remedy path");
@@ -373,7 +376,7 @@ test("kpis: six, with the 30/60-day deadline pair flagged", () => {
 });
 
 test("reception count floor + valid stances", () => {
-  assert.ok(D.reception.length >= 8, "reception count floor");
+  assert.ok(D.reception.length >= 9, `reception count floor (${D.reception.length} >= 9)`);
   const allSources = new Set();
   D.reception.forEach((r) => {
     assert.ok(["positive", "mixed", "negative"].includes(r.stance), `stance ${r.group}`);
@@ -421,7 +424,7 @@ test("rendered docket content traces back to sources/orders-extract.json (no dri
 
 test("every 'where it's covered' outlet maps to a cited secondary source", () => {
   const ids = D.SOURCES;
-  assert.ok(D.media.outlets.length >= 8, "outlet count floor");
+  assert.ok(D.media.outlets.length >= 53, `outlet count floor (${D.media.outlets.length} >= 53)`);
   D.media.outlets.forEach((id) => {
     assert.ok(ids[id], `outlet id ${id} exists in SOURCES`);
     assert.equal(ids[id].tier, "secondary", `outlet ${id} is a secondary source`);
@@ -525,7 +528,7 @@ test("comments-data.js (Comments tab) is consistent with the scraped manifest", 
     assert.ok(t.pct >= 0 && t.pct <= 100, `theme ${t.key} prevalence is a percentage`);
     assert.ok(t.count <= CM.analyzed, `theme ${t.key} count never exceeds the analyzed corpus`);
   }
-  assert.ok(CM.downloaded >= 270, `downloaded-body floor (${CM.downloaded} >= 270)`);
+  assert.ok(CM.downloaded >= 272, `downloaded-body floor (${CM.downloaded} >= 272)`);
 
   // per-comment metadata lenses: ANOPR comment-period questions (8), reform principles (5), regions (6)
   assert.equal(CM.anoprQuestions.length, 8, "eight ANOPR comment-period questions");
@@ -557,7 +560,7 @@ test("comments-data.js (Comments tab) is consistent with the scraped manifest", 
 
   // audited-summary count + the stance map's denominators (both render in the Comments tab)
   assert.equal(CM.summarized2, CM.list.filter((c) => c.s2 === 1).length, "summarized2 equals the count of audited rows");
-  assert.ok(CM.summarized2 >= 260, `audited-summary floor (${CM.summarized2} >= 260) — append-only`);
+  assert.ok(CM.summarized2 >= 268, `audited-summary floor (${CM.summarized2} >= 268) — append-only`);
   assert.equal(CM.principleStances.length, 5, "five principle-stance rows (the stance map)");
   for (const ps of CM.principleStances) {
     assert.ok(ps.key && ps.label, `principleStances ${ps.key} has key/label`);
@@ -617,7 +620,7 @@ test("comment body directories are named with the submitter (traceable to filer)
     JSON.parse(readFileSync(join(here, "..", "sources", "comments", "rm26-4-comments.json"), "utf8")).comments.map((c) => [c.acc, c.org_raw || c.org]));
   const slug = (s) => (s || "").replace(/&/g, " and ").replace(/[^A-Za-z0-9 -]/g, "").trim()
     .replace(/\s+/g, "-").replace(/-+/g, "-").replace(/^-+|-+$/g, "").slice(0, 50).replace(/-+$/, "") || "unknown";
-  assert.ok(dirs.length >= 270, `comment body dirs present (${dirs.length})`);
+  assert.ok(dirs.length >= 272, `comment body dirs present (${dirs.length} >= 272)`);
   for (const d of dirs) {
     const m = d.match(/^(20\d{6}-\d{4})__(.+)$/);
     assert.ok(m, `dir "${d}" follows <accession>__<org-slug>`);
@@ -665,12 +668,15 @@ test("every inventoried comment has its body on disk (download completeness)", (
   const dirForAcc = (acc) => dirs.find((d) => d === acc || d.startsWith(acc + "__"));
   const KNOWN_MISSING = new Set(["20251121-5225"]); // ETI: renders but won't download (issues.md)
   const missing = [];
+  let checked = 0;
   for (const [acc, files] of Object.entries(inv)) {
     if (!files || !files.length) continue; // genuinely attachment-less filing
+    checked++;
     const dir = dirForAcc(acc);
     const ok = dir && readdirSync(join(FILES, dir)).some((f) => /\.(pdf|docx?|txt)$/i.test(f));
     if (!ok && !KNOWN_MISSING.has(acc)) missing.push(acc);
   }
+  assert.ok(checked >= 273, `inventoried bodies checked (${checked} >= 273)`);
   assert.deepEqual(missing, [], `every inventoried comment body is on disk (missing: ${missing.join(", ")})`);
 });
 
@@ -747,6 +753,7 @@ test("sources cited from a track surface carry a publication date", () => {
   // sourced to a May article is a different claim than one sourced the same week.
   const cited = new Set();
   for (const t of Object.values(D.tracks)) for (const s of t.src || []) cited.add(s);
+  assert.ok(cited.size >= 1, "track cards cite sources to check");
   for (const id of cited) {
     const s = D.SOURCES[id];
     assert.ok(s.published || s.undated === true,
@@ -793,7 +800,7 @@ test("the filing matrix is stamped and its columns are real procedural steps", (
   assert.match(F.asOf, /^\d{4}-\d{2}-\d{2}$/, "filings.asOf is an ISO date");
   assert.ok(F.note && F.note.trim(), "filings carries the none-observed legend");
   const stepIds = new Set(D.procedural.steps.map((s) => s.id));
-  assert.ok(F.steps.length >= 1, "the matrix has columns");
+  assert.ok(F.steps.length >= 3, `the matrix has columns (${F.steps.length} >= 3)`);
   for (const id of F.steps) assert.ok(stepIds.has(id), `matrix column "${id}" is a procedural step id`);
 });
 
@@ -801,6 +808,8 @@ test("every stored filing row obeys the status vocabulary and its evidence requi
   const F = D.procedural.filings;
   const dockets = new Set(D.dockets.map((d) => d.docket));
   const stepIds = new Set(D.procedural.steps.map((s) => s.id));
+  // Observations are append-only; this also keeps the three row-loop tests below from passing over nothing.
+  assert.ok(F.rows.length >= 13, `filing rows present (${F.rows.length} >= 13)`);
   for (const r of F.rows) {
     assert.ok(FILING_VOCAB.includes(r.status), `row status "${r.status}" is in the closed vocabulary`);
     assert.ok(dockets.has(r.docket), `row docket "${r.docket}" is one of the six`);
@@ -857,29 +866,40 @@ test("no filing claims eLibrary verification while eLibrary is unchecked", () =>
 test("every Discourse theme declares a wave, and wave 1 never shrinks", () => {
   const themes = D.voiceThemes || [];
   for (const t of themes) {
-    assert.ok(t.wave === 1 || t.wave === 2, `theme "${t.title}" declares wave 1 or 2`);
+    assert.ok([1, 2, 3].includes(t.wave), `theme "${t.title}" declares wave 1, 2 or 3`);
   }
-  // Count floor: wave 2 is additive. Wave 1 is the captured June reaction and is append-only; if it
-  // ever drops, a reaction was deleted rather than superseded.
-  const w1 = themes.filter((t) => t.wave === 1).length;
-  const w2 = themes.filter((t) => t.wave === 2).length;
-  assert.ok(w1 >= 6, `wave-1 theme floor (${w1} >= 6)`);
-  assert.ok(w2 >= 1, `wave 2 exists (${w2} >= 1)`);
+  // Count floors: each wave is append-only once captured. Wave 1 is the June reaction, wave 2 the
+  // summer record, wave 3 October's order and refilings; if any drops, a theme was deleted rather than
+  // superseded.
+  const count = (n) => themes.filter((t) => t.wave === n).length;
+  assert.ok(count(1) >= 6, `wave-1 theme floor (${count(1)} >= 6)`);
+  assert.ok(count(2) >= 3, `wave 2 floor (${count(2)} >= 3)`);
+  assert.ok(count(3) >= 4, `wave 3 floor (${count(3)} >= 4)`);
+  // The lanes render with their own capture stamps, so each stamp the renderer reads must exist.
+  for (const k of ["discourseCapture", "wave2Capture", "newsCapture"]) {
+    assert.match(D.meta[k] || "", /^\d{4}-\d{2}-\d{2}$/, `meta.${k} is a YYYY-MM-DD stamp`);
+  }
+  assert.ok(D.meta.discourseCapture <= D.meta.wave2Capture && D.meta.wave2Capture <= D.meta.newsCapture, "wave stamps are in order");
 });
 
-test("wave-2 themes carry a track and cite sources published after the orders issued", () => {
-  // A wave-2 item is by definition post-June-18 commentary. A June-17 source in that lane would mean
-  // the freshness split is decorative.
-  for (const t of (D.voiceThemes || []).filter((x) => x.wave === 2)) {
-    assert.ok(D.tracks[t.track], `wave-2 theme "${t.title}" declares a known track (got "${t.track}")`);
+test("post-June themes carry a track and cite sources published after the orders issued", () => {
+  // A wave-2 or wave-3 item is by definition post-June-18 commentary. A June-17 source in those lanes
+  // would mean the freshness split is decorative. Wave 3 is October: its sources post-date Sept 29.
+  const later = (D.voiceThemes || []).filter((x) => x.wave >= 2);
+  assert.ok(later.length >= 7, `post-June themes exist (${later.length} >= 7)`);
+  for (const t of later) {
+    // A wave-N item postdates the capture of wave N-1; otherwise it belonged in that lane.
+    const floor = t.wave === 3 ? D.meta.wave2Capture : "2026-06-18";
+    assert.ok(D.tracks[t.track], `wave-${t.wave} theme "${t.title}" declares a known track (got "${t.track}")`);
+    assert.ok((t.quotes || []).length >= 2, `wave-${t.wave} theme "${t.title}" carries at least two quotes`);
     for (const q of t.quotes || []) {
       const s = D.SOURCES[q.src];
-      assert.ok(s, `wave-2 theme "${t.title}" cites known source "${q.src}"`);
+      assert.ok(s, `wave-${t.wave} theme "${t.title}" cites known source "${q.src}"`);
       assert.ok(s.published || s.background === true || s.undated === true,
-        `wave-2 source "${q.src}" needs published (or an explicit background/undated flag)`);
+        `wave-${t.wave} source "${q.src}" needs published (or an explicit background/undated flag)`);
       if (s.published && !s.background) {
-        assert.ok(s.published >= "2026-06-18",
-          `wave-2 source "${q.src}" is dated ${s.published}, before the June 18 orders; mark it background: true if that is deliberate`);
+        assert.ok(s.published >= floor,
+          `wave-${t.wave} source "${q.src}" is dated ${s.published}, before ${floor}; mark it background: true if that is deliberate`);
       }
     }
   }
@@ -890,6 +910,22 @@ test("every displayed news quote is captured in the news evidence file", () => {
   // attributed to the source the theme cites), the sweep checks the TEXT.
   const news = JSON.parse(readFileSync(join(here, "..", "sources", "news-evidence.json"), "utf8"));
   assert.match(news.captured_at, /^\d{4}-\d{2}-\d{2}$/, "news evidence is stamped");
+  // The file-level stamp is the default capture date; a snippet captured on a later sweep must carry
+  // its own `captured_at`, or a reader of this file alone dates October evidence to August (Codex, PR
+  // #23). The source record's `captured` is the sweep that pulled it, so that is the test.
+  let own = 0;
+  for (const [key, item] of Object.entries(news.items)) {
+    const src = D.SOURCES[item.src];
+    assert.ok(src, `news evidence "${key}" cites known source "${item.src}"`);
+    const effective = item.captured_at || news.captured_at;
+    assert.match(effective, /^\d{4}-\d{2}-\d{2}$/, `news evidence "${key}" has a capture date`);
+    if (src.captured && src.captured > news.captured_at) {
+      own++;
+      assert.equal(item.captured_at, src.captured,
+        `news evidence "${key}" was captured with its source on ${src.captured}, after the file-level stamp, so it needs its own captured_at`);
+    }
+  }
+  assert.ok(own >= 14, `later-sweep evidence items checked for their own stamp (${own} >= 14)`);
   assert.ok(news.capture_method && /elibrary/i.test(news.capture_method),
     "the capture method states the eLibrary limitation rather than implying docket confirmation");
   const captured = new Set(Object.values(news.items).map((i) => i.src));
@@ -985,6 +1021,10 @@ test("every docket has a static page, generated and in sync", () => {
   // engine, so no order could rank for its own docket number. These pages are that surface.
   const pages = pagesFor(D);
   assert.equal(pages.size, D.dockets.length + 1, "one page per show cause order, plus E-2");
+  // Regenerate-and-diff never sees a page whose docket left data.js; it would stay served and crawlable.
+  const generated = new Set([...pages.keys()].map((rel) => rel.split("/")[1]));
+  const orphans = readdirSync(join(here, "..", "docs", "dockets")).filter((n) => !generated.has(n));
+  assert.deepEqual(orphans, [], `docs/dockets/ holds pages data.js no longer generates: ${orphans.join(", ")}`);
   for (const [rel, html] of pages) {
     const abs = join(here, "..", "docs", rel);
     assert.ok(existsSync(abs), `${rel} exists (regenerate: node tools/build-docket-pages.mjs)`);
@@ -1086,11 +1126,15 @@ test("the timeline rail reads in chronological order", () => {
   // either order. Point events cannot.
   const isSpan = (e) => /\bto\b/i.test(String(e.date || "")) || /^(After|Parallel|Fall|Late)/i.test(String(e.date || ""));
   const out = [];
+  let compared = 0;
   for (let i = 1; i < D.timeline.length; i++) {
     const prev = D.timeline[i - 1], cur = D.timeline[i];
     if (isSpan(prev) || isSpan(cur)) continue;
+    compared++;
     if (prev.iso > cur.iso) out.push(`${prev.iso} ("${prev.title}") precedes ${cur.iso} ("${cur.title}")`);
   }
+  // A widened isSpan() would exempt everything and pass; keep the comparison reaching most of the rail.
+  assert.ok(compared >= 36, `adjacent point-event pairs compared (${compared} >= 36)`);
   assert.deepEqual(out, [], "point events must be in ascending iso order:\n" + out.join("\n"));
 });
 

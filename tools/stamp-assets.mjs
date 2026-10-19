@@ -61,9 +61,10 @@ export function htmlPages(root = ROOT) {
 if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
   const check = process.argv.includes("--check");
   const stale = [];
-  let stampedCount = 0;
+  let stampedCount = 0, refCount = 0;
   for (const page of htmlPages()) {
     const current = readFileSync(page, "utf8");
+    refCount += [...current.matchAll(ASSET_REF)].length;
     const next = stampAssets(current, ROOT, dirname(page));
     if (current === next) continue;
     if (check) stale.push(page.replace(`${ROOT}/`, ""));
@@ -72,13 +73,19 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
       stampedCount++;
     }
   }
+  // "In sync" over zero references would mean ASSET_REF stopped matching (attribute order, quoting),
+  // not that every token is current.
+  if (!refCount) {
+    console.error("stamp-assets: no local css/js references found in any docs/ HTML page; nothing was checked.");
+    process.exit(1);
+  }
   if (check) {
     if (stale.length) {
       console.error(`Asset tokens are stale (${stale.join(", ")}). Regenerate with: node tools/stamp-assets.mjs`);
       process.exit(1);
     }
-    console.log(`Asset tokens are in sync (${htmlPages().length} pages).`);
+    console.log(`Asset tokens are in sync (${refCount} references across ${htmlPages().length} pages).`);
   } else {
-    console.log(`Stamped ${stampedCount} of ${htmlPages().length} HTML pages under docs/.`);
+    console.log(`Stamped ${stampedCount} of ${htmlPages().length} HTML pages under docs/ (${refCount} references).`);
   }
 }

@@ -283,3 +283,31 @@ Worth noting where these came from. The human reviewer found the two live render
 reviewer found four silent-success paths in the tooling, which is the class a human skims past because
 the tool "works when you run it normally". Both passes were worth their cost, and they found disjoint
 sets.
+
+## Measure the path, then change it, then measure again (2026-10-19)
+
+- **"Clicks to X" is only a number if a tool computes it from the DOM.** The September branch's
+  click table was hand-estimated from heading positions; this session's harness walks candidate paths
+  with real `getBoundingClientRect` reads and a fixed in-view rule, and the two disagreed on half the
+  goals. The harness also caught a layout defect the refresh had just introduced that no test could
+  see (a chip wider than the screen). Keep the tool next to the tests and run it after any change to
+  `app.js`, `styles.css` or a `SOURCES` org name.
+- **A new path only counts once the tool knows about it.** After adding the jump row, the first re-run
+  still reported the filing matrix at 8 screens, because the harness's candidate list did not include
+  the button. A depth tool is a list of paths a reader might take; adding a shortcut means adding it
+  there too, or the shortcut is invisible to the measurement that justified it.
+- **In-page jumps on a hash-routed site are buttons, not anchors.** `<a href="#fm-h">` would have
+  handed `fm-h` to the tab router, which treats an unknown hash as "stay where you are" and leaves the
+  URL wrong. `button[data-jump]` plus `scrollIntoView` and a `scroll-margin-top` the height of the
+  sticky bar does the job without touching the hash.
+- **A missing primary route changes what the copy may claim, not whether to ship.** With no eLibrary
+  session, every docket-level statement had to be dated to the last sweep that read the sheets, and
+  the filing matrix's new rows had to be `signaled` (the respondent's own words) rather than observed.
+  The alternative, skipping the refresh, would have left a FERC order and three written Nov 16
+  commitments off the site for want of a docket sheet nobody needed to confirm them.
+- **Harvest an abandoned branch for evidence, not for code.** The unmerged September branch held four
+  order texts main lacked and a redesign nobody asked for. The texts were trusted only after its copy
+  of a fifth document was checked sentence by sentence against an independent copy, then re-homed with
+  a `provenance` field that says they were harvested, not re-extracted. The redesign was closed with
+  the PR.
+
