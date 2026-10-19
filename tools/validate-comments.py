@@ -33,7 +33,7 @@ def extraction_chars(d: Path) -> int:
         total += len(s.strip())
     return total
 
-ok, scanned, corrupt, missing, fileless = [], [], [], [], []
+ok, scanned, corrupt, missing, fileless, unextracted = [], [], [], [], [], []
 for c in comments:
     acc = c["acc"]
     if not inv.get(acc):
@@ -56,6 +56,10 @@ for c in comments:
             bad = True
     if bad:
         corrupt.append(acc); continue
+    # No .txt at all is an extraction failure (organize-comment-files.py reports it once, then a re-run
+    # skips the already-moved file); a short .txt is a scanned body. Only the second is a known state.
+    if any(not b.with_suffix(".txt").exists() for b in pdfs + docx):
+        unextracted.append(acc); continue
     (ok if extraction_chars(d) >= TEXT_MIN else scanned).append(acc)
 
 with_files = len(comments) - len(fileless)
@@ -65,16 +69,25 @@ print(f"  comments with files:     {with_files}")
 print(f"  OK (body + real text):   {len(ok)}")
 print(f"  scanned (needs OCR):     {len(scanned)}  {scanned}")
 print(f"  corrupt PDFs:            {len(corrupt)}  {corrupt}")
+print(f"  never text-extracted:    {len(unextracted)}  {unextracted}")
 print(f"  missing body:            {len(missing)}  {missing}")
 print(f"  file-less (no attach):   {len(fileless)}  {fileless}")
-print(f"  => downloaded {len(ok) + len(scanned) + len(corrupt)} / {with_files} bodies")
+print(f"  => downloaded {len(ok) + len(scanned) + len(corrupt) + len(unextracted)} / {with_files} bodies")
 
 unexpected_missing = set(missing) - KNOWN_MISSING
 problems = []
+# PASS means "every body was checked", so zero bodies checked cannot be a pass: an empty manifest or an
+# empty rm26-4-files.json inventory used to send every comment to file-less and print PASS.
+if not comments:
+    problems.append("rm26-4-comments.json lists no comments")
+elif not with_files:
+    problems.append(f"rm26-4-files.json inventories none of the {len(comments)} comments")
 if unexpected_missing:
     problems.append(f"{len(unexpected_missing)} unexpectedly missing: {sorted(unexpected_missing)}")
 if corrupt:
     problems.append(f"{len(corrupt)} corrupt: {corrupt}")
+if unextracted:
+    problems.append(f"{len(unextracted)} with a PDF/DOCX but no .txt (re-run extraction): {unextracted}")
 if problems:
     print("\nFAIL: " + " | ".join(problems))
     sys.exit(1)

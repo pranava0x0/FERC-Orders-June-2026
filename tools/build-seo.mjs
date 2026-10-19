@@ -119,16 +119,21 @@ export function buildIndexHtml(html, D) {
   const fresh = D.meta.newsCapture || D.meta.discourseCapture || D.meta.capture;
 
   // Freshness signals. These were hand-typed and had drifted a month behind the data.
-  out = out.replace(/("dateModified":\s*")[^"]*(")/, `$1${fresh}$2`);
-  out = out.replace(
-    /(<meta property="og:description" content="[^"]*?As of )\d{4}-\d{2}-\d{2}(\.")/,
-    `$1${fresh}$2`,
-  );
+  // A replace() whose pattern no longer matches is a silent no-op, and the sync test cannot see it
+  // (regenerated and committed both lack the stamp), so a missing anchor throws instead.
+  const DATE_MODIFIED = /("dateModified":\s*")[^"]*(")/;
+  const OG_AS_OF = /(<meta property="og:description" content="[^"]*?As of )\d{4}-\d{2}-\d{2}(\.")/;
+  for (const [name, re] of [["a JSON-LD dateModified", DATE_MODIFIED], ['an og:description ending "As of YYYY-MM-DD."', OG_AS_OF]]) {
+    if (!re.test(out)) throw new Error(`docs/index.html has no ${name} to stamp with ${fresh}`);
+  }
+  out = out.replace(DATE_MODIFIED, `$1${fresh}$2`);
+  out = out.replace(OG_AS_OF, `$1${fresh}$2`);
 
   // The social card: twitter:card declared summary_large_image with no image at all, so shares
   // unfurled blank. Insert the tags once, right after the twitter:card line.
   if (!out.includes('property="og:image"')) {
     const anchor = '<meta name="twitter:card" content="summary_large_image" />';
+    if (!out.includes(anchor)) throw new Error("docs/index.html has no og:image and no twitter:card line to insert it after");
     out = out.replace(
       anchor,
       `${anchor}\n  <meta property="og:image" content="${SITE}og-card.png" />\n` +

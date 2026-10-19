@@ -27,7 +27,7 @@ const loadV2 = (acc) => JSON.parse(readFileSync(join(V2, acc + ".json"), "utf8")
 const expectedAccs = v2Files.map((f) => f.slice(0, -5)).filter((acc) => manifestAccs.has(acc));
 
 test("one detail file per audited letter (count floor, append-only — never silently drops)", () => {
-  assert.ok(detailFiles.length >= 260, `detail count floor (${detailFiles.length} >= 260)`);
+  assert.ok(detailFiles.length >= 268, `detail count floor (${detailFiles.length} >= 268)`);
   assert.equal(detailFiles.length, expectedAccs.length,
     `one detail file per manifest-listed v2 summary (${detailFiles.length} === ${expectedAccs.length})`);
 });

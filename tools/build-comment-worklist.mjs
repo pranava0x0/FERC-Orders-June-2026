@@ -21,6 +21,12 @@ const MIN_CHARS = 400;   // below this the body is a scanned/empty stub — not 
 const LARGE = 120000;    // bodies above this carry exhibits; tell the agent to focus on the argument
 
 const cj = JSON.parse(readFileSync(join(C, "rm26-4-comments.json"), "utf8"));
+// An empty queue is how the summarize loop knows it is finished, so every way of building one from
+// missing inputs has to fail here instead: no manifest rows, no body dir, or no keyword priors would
+// each produce "0 to summarize" (or a queue with every prior blank) and read as done.
+const fail = (msg) => { console.error(`build-comment-worklist: ${msg}`); process.exit(1); };
+if (!(cj.comments || []).length) fail("rm26-4-comments.json lists no comments.");
+if (!existsSync(FILES)) fail(`no comment body directory at ${relative(ROOT, FILES)}; every comment would be skipped as no-text.`);
 // "done" = a summary that passes the FULL validator (verbatim quotes + vocab + lens-union + lint), not
 // just one that parses. A worker killed mid-Write can leave a file that parses but is broken; the
 // lightweight check counted those as done and skipped the comment forever. Re-queue anything that
@@ -42,11 +48,12 @@ const cmCtx = { window: {} };
 vm.createContext(cmCtx);
 vm.runInContext(readFileSync(join(ROOT, "docs", "js", "comments-data.js"), "utf8"), cmCtx);
 const priorByAcc = Object.fromEntries((cmCtx.window.FERC_COMMENTS?.list || []).map((c) => [c.acc, { aq: c.aq || [], pr: c.pr || [], rg: c.rg || [] }]));
+if (!Object.keys(priorByAcc).length) fail("docs/js/comments-data.js has no FERC_COMMENTS.list; every row would carry an empty keyword prior.");
 
 const dirForAcc = (acc) => { if (!existsSync(FILES)) return null; const n = readdirSync(FILES).find((x) => x === acc || x.startsWith(acc + "__")); return n ? join(FILES, n) : null; };
 
 const rows = [];
-let skippedNoText = 0, skippedDone = 0;
+let skippedNoText = 0, skippedDone = 0, noPrior = 0;
 for (const c of cj.comments) {
   if (done.has(c.acc)) { skippedDone++; continue; }
   const d = dirForAcc(c.acc);
@@ -57,6 +64,7 @@ for (const c of cj.comments) {
   const total = txts.reduce((s, t) => s + t.size, 0);
   if (total < MIN_CHARS) { skippedNoText++; continue; }
   const rel = (p) => relative(ROOT, p);
+  if (!priorByAcc[c.acc]) noPrior++;
   rows.push({
     acc: c.acc,
     filer: c.org,
@@ -72,6 +80,7 @@ for (const c of cj.comments) {
   });
 }
 rows.sort((a, b) => a.chars - b.chars); // small bodies first → fast feedback when the workflow runs
+if (!rows.length && !skippedDone) fail(`nothing summarized and nothing to summarize (${skippedNoText} of ${cj.comments.length} skipped as no-text).`);
 
 writeFileSync(join(C, ".worklist.json"), JSON.stringify({ generated_for: "summaries-v2", count: rows.length, rows }, null, 2));
 
@@ -79,9 +88,12 @@ writeFileSync(join(C, ".worklist.json"), JSON.stringify({ generated_for: "summar
 // workflow's args.accs. Driven entirely by on-disk state, so it is interruption-safe and resumable.
 const nextArg = process.argv.indexOf("--next");
 if (nextArg !== -1) {
-  const n = parseInt(process.argv[nextArg + 1], 10) || 40;
+  // No silent default: a bare `--next` (or `--next foo`) used to become 40 and launch a chunk four
+  // times the size the operator budgeted for.
+  const n = Number(process.argv[nextArg + 1]);
+  if (!Number.isInteger(n) || n < 1) fail(`--next needs a positive integer chunk size (got ${JSON.stringify(process.argv[nextArg + 1] ?? null)}).`);
   process.stdout.write(JSON.stringify(rows.slice(0, n).map((r) => r.acc)) + "\n");
 } else {
-  console.log(`worklist: ${rows.length} comments to summarize (skipped ${skippedDone} already-done, ${skippedNoText} no-text). large=${rows.filter((r) => r.large).length}`);
+  console.log(`worklist: ${rows.length} comments to summarize (skipped ${skippedDone} already-done, ${skippedNoText} no-text; ${cj.comments.length} in manifest). large=${rows.filter((r) => r.large).length}${noPrior ? `, ${noPrior} with no keyword prior` : ""}`);
   console.log(`buckets: ${JSON.stringify(rows.reduce((m, r) => ((m[r.org_type] = (m[r.org_type] || 0) + 1), m), {}))}`);
 }
