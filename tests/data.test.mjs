@@ -910,6 +910,22 @@ test("every displayed news quote is captured in the news evidence file", () => {
   // attributed to the source the theme cites), the sweep checks the TEXT.
   const news = JSON.parse(readFileSync(join(here, "..", "sources", "news-evidence.json"), "utf8"));
   assert.match(news.captured_at, /^\d{4}-\d{2}-\d{2}$/, "news evidence is stamped");
+  // The file-level stamp is the default capture date; a snippet captured on a later sweep must carry
+  // its own `captured_at`, or a reader of this file alone dates October evidence to August (Codex, PR
+  // #23). The source record's `captured` is the sweep that pulled it, so that is the test.
+  let own = 0;
+  for (const [key, item] of Object.entries(news.items)) {
+    const src = D.SOURCES[item.src];
+    assert.ok(src, `news evidence "${key}" cites known source "${item.src}"`);
+    const effective = item.captured_at || news.captured_at;
+    assert.match(effective, /^\d{4}-\d{2}-\d{2}$/, `news evidence "${key}" has a capture date`);
+    if (src.captured && src.captured > news.captured_at) {
+      own++;
+      assert.equal(item.captured_at, src.captured,
+        `news evidence "${key}" was captured with its source on ${src.captured}, after the file-level stamp, so it needs its own captured_at`);
+    }
+  }
+  assert.ok(own >= 14, `later-sweep evidence items checked for their own stamp (${own} >= 14)`);
   assert.ok(news.capture_method && /elibrary/i.test(news.capture_method),
     "the capture method states the eLibrary limitation rather than implying docket confirmation");
   const captured = new Set(Object.values(news.items).map((i) => i.src));
