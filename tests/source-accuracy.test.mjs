@@ -5,6 +5,7 @@ import { test } from "node:test";
 import { fileURLToPath } from "node:url";
 import vm from "node:vm";
 import { buildLlmsTxt } from "../tools/build-llms.mjs";
+import { carries, loadAbeyanceTexts } from "../tools/verify-quotes.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -456,18 +457,31 @@ test("Discourse commentary quotes are backed by captured evidence", () => {
     }
   }
 
+  // From wave 3 on a theme may quote a FERC order whose full text is committed (sources/text/abeyance/),
+  // which is a stronger backing than a captured snippet: those check against the order corpus itself,
+  // through the same matcher the quote sweep uses, and are counted separately so the branch cannot
+  // pass over nothing.
+  const orderCorpus = Object.values(loadAbeyanceTexts()).join(" ¶ ");
+  let orderBacked = 0;
   for (const theme of D.voiceThemes || []) {
     for (const quote of theme.quotes || []) {
       themeQuotes++;
-      assert.ok(D.SOURCES[quote.src], `theme "${theme.title}" cites unknown source "${quote.src}"`);
+      const src = D.SOURCES[quote.src];
+      assert.ok(src, `theme "${theme.title}" cites unknown source "${quote.src}"`);
       const ev = bySource.get(quote.src);
-      assert.ok(ev, `theme "${theme.title}" quote source "${quote.src}" must be captured in voices-evidence.json`);
+      if (!ev && src.tier === "ferc" && (theme.wave || 1) >= 3) {
+        orderBacked++;
+        assert.ok(carries(quote.q, orderCorpus), `theme "${theme.title}" quotes an order ("${quote.src}") but the span is not in sources/text/abeyance/: ${quote.q}`);
+        continue;
+      }
+      assert.ok(ev, `theme "${theme.title}" quote source "${quote.src}" must be captured in voices-evidence.json or news-evidence.json`);
       assert.ok(
         looseText(ev).includes(looseText(quote.q)),
         `theme "${theme.title}" quote not found in evidence for "${quote.src}": ${quote.q}`,
       );
     }
   }
+  assert.ok(orderBacked >= 6, `order-backed theme quotes checked against the corpus (${orderBacked} >= 6)`);
   // The voice-take quotes are found by a curly-quote regex; if the copy switches quote style it matches
   // nothing and every check above passes over zero phrases. A reach check (takes can be de-quoted).
   assert.ok(voiceQuotes >= 10, `voice-take quotes checked (${voiceQuotes} >= 10)`);

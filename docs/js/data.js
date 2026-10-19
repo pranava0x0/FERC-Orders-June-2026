@@ -525,6 +525,7 @@ window.FERC_DATA = (function () {
     items: "Items E-7 to E-12 · Dockets EL26-67-000 to EL26-72-000",
     capture: "2026-06-22",
     discourseCapture: "2026-06-29",
+    wave2Capture: "2026-07-28",
     newsCapture: "2026-10-19",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
@@ -1722,6 +1723,54 @@ window.FERC_DATA = (function () {
       quotes: [
         { q: "The price came in at the FERC-approved cap of $325/MW-day", src: "pjmbra" },
         { q: "short of PJM’s 20% installed reserve margin target by 6,831 MW", src: "pjmbra" },
+      ],
+    },
+    // --- wave 3: October 2026, FERC's first ruling on large-load tariff text and the refilings ----------
+    {
+      wave: 3,
+      track: "context",
+      title: "FERC draws the retail line under PJM's curtail-first service",
+      body: "The Oct 9 order on ER26-3515 is the first FERC ruling on large-load tariff text since June 18, and the ground it chose was jurisdiction rather than policy. The interim service fell because it reached retail customers; the definition and the registry survived because they do not. Analysts read the result as support for existing generators, and PJM's own reaction kept to cost causation.",
+      quotes: [
+        { q: "several provisions of the proposed Tariff appear to place obligations directly on Eligible New Large Loads, which are, for the most part, retail customers", src: "llorder1009" },
+        { q: "the proposed compensation framework appears to establish a retail rate", src: "llorder1009" },
+        { q: "we strongly encourage states to continue their important work on this issue", src: "llorder1009" },
+        { q: "honoring the concept that existing electricity customers should not be unfairly burdened by new, energy intensive customers", src: "udive1012" },
+        { q: "the latest development is positive for existing generation/IPPs", src: "udive1012" },
+      ],
+    },
+    {
+      wave: 3,
+      track: "context",
+      title: "Rosner: curtail data centers last, and only after demand response",
+      body: "The one separate statement on the Oct 9 order. Commissioner Rosner agreed with rejecting the package and wrote to say what a refiled version would have to justify: forcing new large loads off the system before customers who volunteered for demand response, and excluding those loads from the capacity-market demand curve while the region sheds them involuntarily.",
+      quotes: [
+        { q: "That’s not only economically inefficient, but also likely to prevent supply and demand from coming back into balance.", src: "llorder1009" },
+        { q: "We need state regulators to establish clear rules for which customers should be curtailed first when circumstances require it.", src: "llorder1009" },
+        { q: "such measures should only be taken when necessary to keep the system reliable, after voluntary demand response resources have been exhausted", src: "llorder1009" },
+      ],
+    },
+    {
+      wave: 3,
+      track: "context",
+      title: "PJM answers two setbacks with refilings, not rehearing",
+      body: "After the Sept 29 backstop order and the Oct 9 large-load order, PJM's public posture is the same both times: review, then refile fast. Its Oct 22 consultation deck names Oct 29 for the new backstop filing and lists the fixes, including dropping the municipal and cooperative opt-out FERC called unduly discriminatory.",
+      quotes: [
+        { q: "PJM is reviewing the order and intends to work quickly to address the Commission’s remaining concerns.", src: "pjmil0930" },
+        { q: "PJM submitted a motion for abeyance of the paper hearing on October 12 and notified FERC that it plans to submit a new 205 filing to FERC on October 29th", src: "pjmmc1022" },
+        { q: "Remove the opt out for muni/co-ops.", src: "pjmmc1022" },
+      ],
+    },
+    {
+      wave: 3,
+      track: "sc6",
+      title: "Nov 16 is turning into a §205 date",
+      body: "Four weeks before the reset deadline, the respondents are saying in their own documents that they will file tariff changes rather than defend the status quo: the PJM transmission owners and ISO-NE in writing on Oct 9, MISO by filing pieces as it goes, PJM with a ride-through standard it says it will file in November.",
+      quotes: [
+        { q: "The PJM Transmission Owners have committed to submit their proposed revisions to address the concerns identified by the June 18, 2026 order issued in Docket No. EL26-67-000", src: "pjmto1009" },
+        { q: "The ISO and the Participating Transmission Owners Administrative Committee (PTO AC) were granted an abeyance and will develop a Section 205 filing to be submitted by November 16, 2026.", src: "isone1009" },
+        { q: "LARS provides MISO with a targeted tool to address the intersection of significant large load additions,", src: "udive1005" },
+        { q: "This type of operation is unsustainable and needs to be addressed,", src: "pjmil0910" },
       ],
     },
   ];
