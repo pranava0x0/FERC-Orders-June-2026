@@ -21,12 +21,22 @@ const FILES = join(C, "files");
 const dirForAcc = (acc) => { if (!existsSync(FILES)) return null; const n = readdirSync(FILES).find((x) => x === acc || x.startsWith(acc + "__")); return n ? join(FILES, n) : null; };
 const hasBody = (acc) => { const d = dirForAcc(acc); return !!d && readdirSync(d).some((f) => /\.(pdf|docx?|txt)$/i.test(f)); };
 const read = (p, d) => (existsSync(p) ? JSON.parse(readFileSync(p, "utf8")) : d);
+// The three outputs are committed, so a missing input must not regenerate them as zeros: a checkout
+// without the manifest, the file inventory, the body dir or the flagship summaries used to write an
+// empty audit index / every `downloaded: false` / an empty digest and print a clean tally.
+const fail = (msg) => { console.error(`build-comment-audit: ${msg}`); process.exit(1); };
+for (const need of ["rm26-4-comments.json", "rm26-4-files.json", "files", "summaries"]) {
+  if (!existsSync(join(C, need))) fail(`missing sources/comments/${need}; refusing to overwrite the committed outputs.`);
+}
 
 const comments = read(join(C, "rm26-4-comments.json"), { comments: [] }).comments;
 const filesMeta = read(join(C, "rm26-4-files.json"), { files: {} }).files; // acc -> [{name,type,size,security}]
 const sumDir = join(C, "summaries");
 const summaries = !existsSync(sumDir) ? [] : readdirSync(sumDir).filter((f) => f.endsWith(".json"))
   .map((f) => JSON.parse(readFileSync(join(sumDir, f), "utf8")));
+if (!comments.length) fail("rm26-4-comments.json lists no comments.");
+if (!Object.keys(filesMeta || {}).length) fail("rm26-4-files.json inventories no files.");
+if (!summaries.length) fail("sources/comments/summaries/ holds no summaries; the flagship digest would be emptied.");
 const sumByAcc = Object.fromEntries(summaries.map((s) => [s.accession, s]));
 
 const CATS = ["study", "cost", "colo", "flex", "proximate"];

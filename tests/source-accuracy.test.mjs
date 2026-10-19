@@ -430,6 +430,7 @@ test("Discourse commentary quotes are backed by captured evidence", () => {
     bySource.set(ev.src, `${bySource.get(ev.src) || ""}\n${ev.evidence}`);
   }
 
+  let voiceQuotes = 0, themeQuotes = 0;
   for (const voice of D.voices) {
     const ev = byName.get(voice.name);
     assert.ok(ev, `voice "${voice.name}" must have an entry in sources/voices-evidence.json`);
@@ -447,6 +448,7 @@ test("Discourse commentary quotes are backed by captured evidence", () => {
       .map((match) => match[1])
       .filter((quote) => looseText(quote).length >= 6);
     for (const quote of quotes) {
+      voiceQuotes++;
       assert.ok(
         evidenceText.includes(looseText(quote)),
         `voice "${voice.name}" quotes text not found in its captured evidence: ${quote}`,
@@ -456,6 +458,7 @@ test("Discourse commentary quotes are backed by captured evidence", () => {
 
   for (const theme of D.voiceThemes || []) {
     for (const quote of theme.quotes || []) {
+      themeQuotes++;
       assert.ok(D.SOURCES[quote.src], `theme "${theme.title}" cites unknown source "${quote.src}"`);
       const ev = bySource.get(quote.src);
       assert.ok(ev, `theme "${theme.title}" quote source "${quote.src}" must be captured in voices-evidence.json`);
@@ -465,6 +468,10 @@ test("Discourse commentary quotes are backed by captured evidence", () => {
       );
     }
   }
+  // The voice-take quotes are found by a curly-quote regex; if the copy switches quote style it matches
+  // nothing and every check above passes over zero phrases. A reach check (takes can be de-quoted).
+  assert.ok(voiceQuotes >= 10, `voice-take quotes checked (${voiceQuotes} >= 10)`);
+  assert.ok(themeQuotes >= 30, `Discourse theme quotes checked (${themeQuotes} >= 30)`);
 });
 
 test("website FERC and DOE summary claims are supported by extracted source text", () => {

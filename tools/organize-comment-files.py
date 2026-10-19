@@ -3,7 +3,7 @@
 and extract text: PDF via PyMuPDF (fitz), DOC/DOCX via macOS `textutil`. The directory is named with
 the submitter (from the manifest) so a file's path names who filed it. Idempotent; safe to re-run —
 it also migrates any older bare "<accession>" directory to the submitter-named form."""
-import re, shutil, subprocess, json
+import re, shutil, subprocess, json, sys
 from pathlib import Path
 import fitz  # PyMuPDF
 
@@ -40,7 +40,7 @@ if DEST.exists():
             if new != d and not new.exists():
                 d.rename(new); renamed += 1
 
-moved, extracted, skipped = 0, 0, 0
+moved, extracted, skipped, failed = 0, 0, 0, 0
 for p in sorted(DL.iterdir()):
     if not p.is_file():
         continue
@@ -59,8 +59,8 @@ for p in sorted(DL.iterdir()):
             with open(p, "rb") as fh:
                 if fh.read(5) == b"%PDF-":
                     rest += ".pdf"
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"  ! could not sniff {p.name} for a PDF header: {e}")
     d = dir_for(acc)
     d.mkdir(parents=True, exist_ok=True)
     target = d / rest
@@ -79,6 +79,7 @@ for p in sorted(DL.iterdir()):
                 txt.write_text("\n".join(parts), encoding="utf-8")
                 extracted += 1
             except Exception as e:
+                failed += 1
                 print(f"  ! extract failed {acc}/{rest}: {e}")
     elif suf in (".docx", ".doc"):
         txt = target.with_suffix(".txt")
@@ -89,6 +90,11 @@ for p in sorted(DL.iterdir()):
                 txt.write_text(out.stdout, encoding="utf-8")
                 extracted += 1
             except Exception as e:
+                failed += 1
                 print(f"  ! docx extract failed {acc}/{rest}: {e}")
-print(f"moved={moved} extracted={extracted} skipped(existing)={skipped} renamed_dirs={renamed}")
+print(f"moved={moved} extracted={extracted} failed={failed} skipped(existing)={skipped} renamed_dirs={renamed}")
 print(f"accessions with files: {len(list(DEST.glob('20*')))}")
+# A body with no .txt is invisible to the summarizer, so a failed extraction is a failed run, not a
+# footnote above a clean tally. The rest of the batch still completes first.
+if failed:
+    sys.exit(1)

@@ -30,7 +30,8 @@ const stepIds = new Set((D.procedural.steps || []).map((s) => s.id));
 const briefingIds = new Set((D.briefing.questions || []).map((q) => q.id));
 
 test("policyMap is a non-empty array", () => {
-  assert.ok(Array.isArray(MAP) && MAP.length >= 10, `expected >= 10 rows, got ${MAP && MAP.length}`);
+  // 13 = one row per aq: (8) and pr: (5) issue, the most the no-duplicates rule below allows.
+  assert.ok(Array.isArray(MAP) && MAP.length >= 13, `expected >= 13 rows, got ${MAP && MAP.length}`);
 });
 
 test("every row targets a real aq:/pr: issue, no duplicates, no region rows", () => {

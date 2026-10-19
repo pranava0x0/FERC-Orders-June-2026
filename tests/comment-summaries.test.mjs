@@ -47,7 +47,8 @@ test("every quote carries a page that its source page actually starts (recompute
   for (const f of files) {
     const s = load(f);
     const sp = join(ROOT, s.source_text || "");
-    if (!existsSync(sp)) continue;
+    // A missing body used to be skipped, so a moved files/ dir would pass this test over nothing.
+    if (!existsSync(sp)) { bad.push(`${s.accession}: source_text ${JSON.stringify(s.source_text)} does not exist`); continue; }
     const idx = buildPageIndex(readFileSync(sp, "utf8"));
     for (const q of s.quotes || []) {
       const expected = pageForQuote(q.text, idx);
