@@ -150,8 +150,13 @@ def extract_pdf(path: Path) -> tuple[str, int, str]:
             parts.append(doc[i].get_text())
         return "\n".join(parts), doc.page_count, "PyMuPDF (fitz)"
     out = subprocess.run(["pdftotext", "-layout", str(path), "-"], capture_output=True, text=True, check=True)
-    pages = [pg for pg in out.stdout.split("\f") if pg.strip()]
-    if not pages:
+    # pdftotext ends EVERY page with a form feed, so the split leaves one empty chunk after the last
+    # page; drop only that. A blank or image-only page in the middle is an empty chunk too, and it must
+    # stay, or every later `--- PAGE N ---` marker and page-cited quote would point one page early.
+    pages = out.stdout.split("\f")
+    if pages and not pages[-1].strip():
+        pages.pop()
+    if not pages or not any(pg.strip() for pg in pages):
         raise RuntimeError(f"pdftotext produced no text for {path.name}")
     parts = []
     for i, pg in enumerate(pages):

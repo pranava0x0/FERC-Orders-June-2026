@@ -390,6 +390,7 @@ window.FERC_DATA = (function () {
       published: "2026-10-09",
       captured: "2026-10-19",
       note: "Accession 20261009-3055, 57 pages including Commissioner Rosner's concurrence, read in full from PJM's copy of the order and committed as sources/text/abeyance/order-er26-3515-pjm-large-load.txt. Every quotation from it on this site is verified against that text.",
+      text: "sources/text/abeyance/order-er26-3515-pjm-large-load.txt", // the one file a quote citing this source must come from
     },
     rehearing0921x4: {
       label: "Orders Dismissing Request for Rehearing and Clarification, EL26-69-001, EL26-70-001, EL26-71-001 and EL26-72-001 (196 FERC ¶ 61,215 to 61,218)",

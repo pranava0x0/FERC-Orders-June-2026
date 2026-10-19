@@ -85,6 +85,16 @@ test("build-comment-worklist: a bare --next and a missing body dir exit non-zero
     assert.equal(r.status, 1, "no files/ dir used to report 0 to summarize, which the loop reads as done");
     assert.match(r.stderr, /no comment body directory/);
   });
+  // A page build that lists SOME comments but not this one used to hand the row an empty keyword prior,
+  // which the workflow then ran without its deterministic cross-check. Now it is a stale-build error.
+  const stale = { ...base, "docs/js/comments-data.js": `window.FERC_COMMENTS = { list: [{ acc: "20990101-0002", aq: [], pr: ["cost"], rg: [] }] };` };
+  withTree(tools, { ...stale, [`sources/comments/files/${acc}__Example-Co/body.txt`]: "x".repeat(500) }, (root) => {
+    for (const args of [[], ["--next", "1"]]) {
+      const r = run(root, "build-comment-worklist.mjs", ...args);
+      assert.equal(r.status, 1, `missing prior must fail (${args.join(" ") || "default mode"}): ${r.stdout}`);
+      assert.match(r.stderr, /no keyword prior/);
+    }
+  });
 });
 
 test("analyze-comments and build-comment-audit refuse to overwrite committed outputs from empty inputs", () => {

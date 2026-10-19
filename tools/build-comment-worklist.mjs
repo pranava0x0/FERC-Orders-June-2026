@@ -53,7 +53,8 @@ if (!Object.keys(priorByAcc).length) fail("docs/js/comments-data.js has no FERC_
 const dirForAcc = (acc) => { if (!existsSync(FILES)) return null; const n = readdirSync(FILES).find((x) => x === acc || x.startsWith(acc + "__")); return n ? join(FILES, n) : null; };
 
 const rows = [];
-let skippedNoText = 0, skippedDone = 0, noPrior = 0;
+let skippedNoText = 0, skippedDone = 0;
+const noPrior = []; // accessions missing from comments-data.js: a stale page build, never an empty prior
 for (const c of cj.comments) {
   if (done.has(c.acc)) { skippedDone++; continue; }
   const d = dirForAcc(c.acc);
@@ -64,7 +65,7 @@ for (const c of cj.comments) {
   const total = txts.reduce((s, t) => s + t.size, 0);
   if (total < MIN_CHARS) { skippedNoText++; continue; }
   const rel = (p) => relative(ROOT, p);
-  if (!priorByAcc[c.acc]) noPrior++;
+  if (!priorByAcc[c.acc]) { noPrior.push(c.acc); continue; }
   rows.push({
     acc: c.acc,
     filer: c.org,
@@ -73,12 +74,16 @@ for (const c of cj.comments) {
     dir: rel(d),
     primary: rel(join(d, txts[0].f)),
     txts: txts.map((t) => rel(join(d, t.f))),
-    prior: priorByAcc[c.acc] || { aq: [], pr: [], rg: [] },
+    prior: priorByAcc[c.acc],
     chars: total,
     large: total > LARGE,
     flagship: flagships.has(c.acc),
   });
 }
+// A summarizable comment with no keyword prior means comments-data.js predates the manifest. Substituting
+// an empty prior would let the workflow run without its deterministic cross-check and leave flag-summary
+// nothing to compare against, so the build stops here instead (in --next mode too).
+if (noPrior.length) fail(`${noPrior.length} summarizable comment(s) have no keyword prior in docs/js/comments-data.js (${noPrior.slice(0, 5).join(", ")}${noPrior.length > 5 ? ", …" : ""}); rebuild it with: node tools/build-comments-page-data.mjs`);
 rows.sort((a, b) => a.chars - b.chars); // small bodies first → fast feedback when the workflow runs
 if (!rows.length && !skippedDone) fail(`nothing summarized and nothing to summarize (${skippedNoText} of ${cj.comments.length} skipped as no-text).`);
 
@@ -94,6 +99,6 @@ if (nextArg !== -1) {
   if (!Number.isInteger(n) || n < 1) fail(`--next needs a positive integer chunk size (got ${JSON.stringify(process.argv[nextArg + 1] ?? null)}).`);
   process.stdout.write(JSON.stringify(rows.slice(0, n).map((r) => r.acc)) + "\n");
 } else {
-  console.log(`worklist: ${rows.length} comments to summarize (skipped ${skippedDone} already-done, ${skippedNoText} no-text; ${cj.comments.length} in manifest). large=${rows.filter((r) => r.large).length}${noPrior ? `, ${noPrior} with no keyword prior` : ""}`);
+  console.log(`worklist: ${rows.length} comments to summarize (skipped ${skippedDone} already-done, ${skippedNoText} no-text; ${cj.comments.length} in manifest). large=${rows.filter((r) => r.large).length}`);
   console.log(`buckets: ${JSON.stringify(rows.reduce((m, r) => ((m[r.org_type] = (m[r.org_type] || 0) + 1), m), {}))}`);
 }
