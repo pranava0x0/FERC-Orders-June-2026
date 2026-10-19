@@ -125,6 +125,12 @@ python3 tools/extract-abeyance-docs.py --check   # committed order text still ma
 node tools/survey-summaries.mjs --brief          # comment corpus: the should-be-zero set
 ```
 
+**The browser check, scripted.** `node tools/uat-playwright.mjs` (serve `docs/` on 127.0.0.1:8131 first)
+runs the console check below at 375x812 and 1280x800, fails on `undefined`/`NaN`, horizontal overflow,
+console errors or failed requests, and prints the reader-depth table (taps + swipes + screens of scroll
+to nine things a reader comes for). It needs Playwright and a Chromium, which the cloud container has
+and a laptop may not; where it cannot run, do the manual version:
+
 **The one check that is not a script.** The repo has no dependencies and no package.json, so there is no
 jsdom and the renderers cannot be exercised headlessly. After a refresh, open the preview and run this
 in the console; it is thirty seconds and it has caught real breakage:
