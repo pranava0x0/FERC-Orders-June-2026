@@ -1,6 +1,6 @@
 {
   "captured_at": "2026-08-23",
-  "note": "Verified source snippets backing the directly-quoted phrases added by the 2026-07-28 news refresh (news-tracks-plan.md): the AD26-7-000 governance track and the sc6 filing observations. Mirrors sources/voices-evidence.json, and is swept by tools/verify-quotes.mjs the same way, so no displayed quote on a track surface is unbacked. A test in tests/source-accuracy.test.mjs asserts every quoted span in a timeline event body resolves here or in the committed order corpus. Extended by the 2026-08-23 sweep with the WIRES remarks, the Maryland congressional letter (read directly from the signed PDF, not a summary) and two analyst readiness assessments.",
+  "note": "Verified source snippets backing the directly-quoted phrases added by the 2026-07-28 news refresh (news-tracks-plan.md): the AD26-7-000 governance track and the sc6 filing observations. Mirrors sources/voices-evidence.json, and is swept by tools/verify-quotes.mjs the same way, so no displayed quote on a track surface is unbacked. A test in tests/source-accuracy.test.mjs asserts every quoted span in a timeline event body resolves here or in the committed order corpus. Extended by the 2026-08-23 sweep with the WIRES remarks, the Maryland congressional letter (read directly from the signed PDF, not a summary) and two analyst readiness assessments. Extended 2026-10-19 with PJM committee postings, ISO-NE's proposal summary and Utility Dive's October reporting; each item names the document and page or slide it was read from.",
   "capture_method": "federalregister.gov items were read from their full_text .txt endpoints (the FR HTML pages bot-block automated fetches; the JSON API and full_text endpoints are open). Trade-press items were fetched and their quotations transcribed as printed. ferc.gov and eLibrary stayed Cloudflare-gated throughout, so nothing here is an eLibrary confirmation.",
   "items": {
     "swett-legitimacy": {
@@ -86,6 +86,84 @@
       "evidence": "Should the Members nonetheless approve their term sheet, the states will forcefully oppose it before the Commission and beyond.",
       "note": "Read in full from the one-page PDF posted by PJM. Added by the 2026-10-08 sweep; the file-level captured_at predates it.",
       "captured_at": "2026-10-08"
+    },
+    "pjmmc1022-abeyance": {
+      "src": "pjmmc1022",
+      "speaker": "PJM staff",
+      "occasion": "Special Members Committee consultation deck, posted Oct 15, 2026 for the Oct 22 meeting (slide 2)",
+      "evidence": "PJM submitted a motion for abeyance of the paper hearing on October 12 and notified FERC that it plans to submit a new 205 filing to FERC on October 29th to address these elements, and a few additional updates."
+    },
+    "pjmmc1022-elements": {
+      "src": "pjmmc1022",
+      "speaker": "PJM staff",
+      "occasion": "Same deck, slide 3",
+      "evidence": "Key elements of upcoming 205 filing: Cost Allocation LSE Exit Responsibilities LSE Collateral Requirement"
+    },
+    "pjmmc1022-optout": {
+      "src": "pjmmc1022",
+      "speaker": "PJM staff",
+      "occasion": "Same deck, slide 13",
+      "evidence": "Remove the opt out for muni/co-ops. FERC noted that this opt out appeared to be unduly discriminatory because cooperatives and municipal utilities serve Large Loads that are similarly situated to Large Loads served by other Load Serving Entities."
+    },
+    "pjmmc1022-timeline": {
+      "src": "pjmmc1022",
+      "speaker": "PJM staff",
+      "occasion": "Same deck, slide 16 (2027 Proposed RBP Timeline)",
+      "evidence": "Open RBP March 1 Closes March 22 RBP Results Posted May 3 Final Target/Supply Determined April 21"
+    },
+    "pjmto1009-commit": {
+      "src": "pjmto1009",
+      "speaker": "PJM Transmission Owners Agreement Administrative Committee",
+      "occasion": "Notice of consultation with the Members Committee, Oct 9, 2026 (p. 1)",
+      "evidence": "The PJM Transmission Owners have committed to submit their proposed revisions to address the concerns identified by the June 18, 2026 order issued in Docket No. EL26-67-000 via a Federal Power Act (“FPA”) Section 205 filing on or before November 16, 2026."
+    },
+    "pjmto1009-scope": {
+      "src": "pjmto1009",
+      "speaker": "PJM Transmission Owners Agreement Administrative Committee",
+      "occasion": "Same notice, p. 1",
+      "evidence": "the proposed revisions to the Tariff may also include a cost allocation methodology associated with PJM’s proposed consolidated generation and transmission service process."
+    },
+    "isone1009-205": {
+      "src": "isone1009",
+      "speaker": "ISO New England",
+      "occasion": "Large Loads Integration Proposal Information summary, last update Oct 9, 2026",
+      "evidence": "The ISO and the Participating Transmission Owners Administrative Committee (PTO AC) were granted an abeyance and will develop a Section 205 filing to be submitted by November 16, 2026."
+    },
+    "shields-burdened": {
+      "src": "udive1012",
+      "speaker": "Jeffrey Shields, PJM spokesman",
+      "occasion": "Email to Utility Dive, Oct 12, 2026",
+      "evidence": "honoring the concept that existing electricity customers should not be unfairly burdened by new, energy intensive customers"
+    },
+    "jefferies-ipps": {
+      "src": "udive1012",
+      "speaker": "Jefferies analysts",
+      "occasion": "Client note reported by Utility Dive, Oct 12, 2026",
+      "evidence": "the latest development is positive for existing generation/IPPs"
+    },
+    "miso-lars": {
+      "src": "udive1005",
+      "speaker": "MISO (filing, as quoted by Utility Dive)",
+      "occasion": "Oct 2, 2026 §205 filing, accession 20261002-5074",
+      "evidence": "LARS provides MISO with a targeted tool to address the intersection of significant large load additions,"
+    },
+    "pjm-reviewing-0930": {
+      "src": "pjmil0930",
+      "speaker": "PJM Interconnection (statement)",
+      "occasion": "Inside Lines, Sept 30, 2026",
+      "evidence": "PJM is reviewing the order and intends to work quickly to address the Commission’s remaining concerns. We remain focused on advancing solutions that maintain reliability, appropriately allocate costs to the customers driving those costs, and protect consumers as the region navigates significant demand growth."
+    },
+    "souder-unsustainable": {
+      "src": "pjmil0910",
+      "speaker": "David Souder, Executive Director, PJM System Operations",
+      "occasion": "PJM Planning Committee, Sept 8, 2026, as reported by Inside Lines Sept 10",
+      "evidence": "This type of operation is unsustainable and needs to be addressed,"
+    },
+    "pjmil0910-november": {
+      "src": "pjmil0910",
+      "speaker": "PJM Inside Lines",
+      "occasion": "Sept 10, 2026",
+      "evidence": "PJM plans to file proposed solutions to FERC in November."
     }
   }
 }
