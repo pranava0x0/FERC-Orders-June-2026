@@ -55,6 +55,7 @@ cd docs && python3 -m http.server 8000
 ```bash
 node --test tests/*.test.mjs   # 118 tests across the suites
 node tools/verify-quotes.mjs   # whole-site quote audit (one command; --list for every quote)
+node tools/uat-playwright.mjs  # headless UAT at 375px and 1280px: console, overflow, reader depth (serve docs/ on 127.0.0.1:8131 first)
 node tools/check-staleness.mjs # advisory: passed deadlines, stale stamps, unobserved filings
 node tools/validate-summaries.mjs        # the 268 comment summaries: verbatim quotes, vocab, bin links
 node tools/survey-summaries.mjs          # DISCOVERY pass: distributions + smells nothing checks yet
