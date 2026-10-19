@@ -866,29 +866,40 @@ test("no filing claims eLibrary verification while eLibrary is unchecked", () =>
 test("every Discourse theme declares a wave, and wave 1 never shrinks", () => {
   const themes = D.voiceThemes || [];
   for (const t of themes) {
-    assert.ok(t.wave === 1 || t.wave === 2, `theme "${t.title}" declares wave 1 or 2`);
+    assert.ok([1, 2, 3].includes(t.wave), `theme "${t.title}" declares wave 1, 2 or 3`);
   }
-  // Count floor: wave 2 is additive. Wave 1 is the captured June reaction and is append-only; if it
-  // ever drops, a reaction was deleted rather than superseded.
-  const w1 = themes.filter((t) => t.wave === 1).length;
-  const w2 = themes.filter((t) => t.wave === 2).length;
-  assert.ok(w1 >= 6, `wave-1 theme floor (${w1} >= 6)`);
-  assert.ok(w2 >= 3, `wave 2 floor (${w2} >= 3)`);
+  // Count floors: each wave is append-only once captured. Wave 1 is the June reaction, wave 2 the
+  // summer record, wave 3 October's order and refilings; if any drops, a theme was deleted rather than
+  // superseded.
+  const count = (n) => themes.filter((t) => t.wave === n).length;
+  assert.ok(count(1) >= 6, `wave-1 theme floor (${count(1)} >= 6)`);
+  assert.ok(count(2) >= 3, `wave 2 floor (${count(2)} >= 3)`);
+  assert.ok(count(3) >= 4, `wave 3 floor (${count(3)} >= 4)`);
+  // The lanes render with their own capture stamps, so each stamp the renderer reads must exist.
+  for (const k of ["discourseCapture", "wave2Capture", "newsCapture"]) {
+    assert.match(D.meta[k] || "", /^\d{4}-\d{2}-\d{2}$/, `meta.${k} is a YYYY-MM-DD stamp`);
+  }
+  assert.ok(D.meta.discourseCapture <= D.meta.wave2Capture && D.meta.wave2Capture <= D.meta.newsCapture, "wave stamps are in order");
 });
 
-test("wave-2 themes carry a track and cite sources published after the orders issued", () => {
-  // A wave-2 item is by definition post-June-18 commentary. A June-17 source in that lane would mean
-  // the freshness split is decorative.
-  for (const t of (D.voiceThemes || []).filter((x) => x.wave === 2)) {
-    assert.ok(D.tracks[t.track], `wave-2 theme "${t.title}" declares a known track (got "${t.track}")`);
+test("post-June themes carry a track and cite sources published after the orders issued", () => {
+  // A wave-2 or wave-3 item is by definition post-June-18 commentary. A June-17 source in those lanes
+  // would mean the freshness split is decorative. Wave 3 is October: its sources post-date Sept 29.
+  const later = (D.voiceThemes || []).filter((x) => x.wave >= 2);
+  assert.ok(later.length >= 7, `post-June themes exist (${later.length} >= 7)`);
+  for (const t of later) {
+    // A wave-N item postdates the capture of wave N-1; otherwise it belonged in that lane.
+    const floor = t.wave === 3 ? D.meta.wave2Capture : "2026-06-18";
+    assert.ok(D.tracks[t.track], `wave-${t.wave} theme "${t.title}" declares a known track (got "${t.track}")`);
+    assert.ok((t.quotes || []).length >= 2, `wave-${t.wave} theme "${t.title}" carries at least two quotes`);
     for (const q of t.quotes || []) {
       const s = D.SOURCES[q.src];
-      assert.ok(s, `wave-2 theme "${t.title}" cites known source "${q.src}"`);
+      assert.ok(s, `wave-${t.wave} theme "${t.title}" cites known source "${q.src}"`);
       assert.ok(s.published || s.background === true || s.undated === true,
-        `wave-2 source "${q.src}" needs published (or an explicit background/undated flag)`);
+        `wave-${t.wave} source "${q.src}" needs published (or an explicit background/undated flag)`);
       if (s.published && !s.background) {
-        assert.ok(s.published >= "2026-06-18",
-          `wave-2 source "${q.src}" is dated ${s.published}, before the June 18 orders; mark it background: true if that is deliberate`);
+        assert.ok(s.published >= floor,
+          `wave-${t.wave} source "${q.src}" is dated ${s.published}, before ${floor}; mark it background: true if that is deliberate`);
       }
     }
   }

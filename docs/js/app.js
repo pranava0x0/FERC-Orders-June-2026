@@ -858,8 +858,9 @@
       return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
     }).join("");
 
-    // Two dated waves, freshest first (news-tracks-plan.md Feature D). Wave 1 is reaction to the June
-    // 18 orders; wave 2 is what the record did next. Each lane carries its own capture stamp, because
+    // Dated waves, freshest first (news-tracks-plan.md Feature D). Wave 1 is reaction to the June 18
+    // orders; wave 2 is what the record did over the summer; wave 3 is October's first FERC ruling on
+    // large-load tariff text and the refilings. Each lane carries its own capture stamp, because
     // "commentary gathered <one date>" stopped being true the moment the tab held two moments.
     var themeCard = function (t) {
       var qs = (t.quotes || []).map(function (q) {
@@ -882,7 +883,8 @@
         '<div class="quote-themes">' + items.map(themeCard).join("") + "</div></div>";
     };
     var quoteThemes =
-      waveLane(2, "The filings and the governance fight", D.meta.newsCapture || D.meta.discourseCapture) +
+      waveLane(3, "October: the retail line, and the refilings", D.meta.newsCapture || D.meta.discourseCapture) +
+      waveLane(2, "The filings and the governance fight", D.meta.wave2Capture || D.meta.newsCapture || D.meta.discourseCapture) +
       waveLane(1, "Reaction to the June 18 orders", D.meta.discourseCapture);
 
     // The RM26-4 comment period (stats, respondent types, themes/categories, and the full searchable
@@ -896,7 +898,7 @@
     return accSection("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.", rec + commentsBlock, true, recItems.length) +
       accSection("Commentary themes with quoted source lines",
-      "Themes from the discourse, in two dated waves: reaction to the orders themselves, then what the record did next. Each quote links to its captured source. The order record is as of " + D.meta.capture + ".", quoteThemes, false, (D.voiceThemes || []).length) +
+      "Themes from the discourse, in dated waves: reaction to the orders themselves, then what the record did next. Each quote links to its captured source. The order record is as of " + D.meta.capture + ".", quoteThemes, false, (D.voiceThemes || []).length) +
       accSection("Media & discourse: consensus and friction", "The dominant narratives in energy trade press and policy circles.", disc, false, consensusN + frictionN) +
       accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false, outletIds.length);
   }

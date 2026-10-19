@@ -220,9 +220,13 @@ for (const v of D.voices || []) {
 }
 // Wave-1 theme quotes were captured in voices-evidence; wave-2's come from the news captures. Check
 // against the union so a theme is verified by whichever file actually holds its snippet.
+// From wave 3 on, a theme may also quote a FERC order directly (the Oct 9 ER26-3515 order and Rosner's
+// concurrence are in sources/text/abeyance/), so those lanes check against the committed order corpus too.
 const themeEvidence = `${evidenceText} ¶ ${newsEvidenceText}`;
+const themeEvidenceWide = `${themeEvidence} ¶ ${wholeCorpus}`;
 for (const th of D.voiceThemes || []) {
-  for (const q of th.quotes || []) req(`voice theme "${th.title}"`, q.q, themeEvidence);
+  const corpus = (th.wave || 1) >= 3 ? themeEvidenceWide : themeEvidence;
+  for (const q of th.quotes || []) req(`voice theme "${th.title}"`, q.q, corpus);
 }
 
 // 3b) Timeline event bodies (REQUIRED). These were swept by nothing until the 2026-07-28 news refresh,
