@@ -12,16 +12,18 @@ Driven by real dates, not a calendar interval:
 
 | Date | What lands |
 |---|---|
-| 2026-09-01 | AD26-7 Alternative Dispute Resolution forum commences (Federal Register, confirmed). |
-| 2026-09-16 | Third PJM stakeholder engagement session on its §205 proposal (named in the PJM abeyance order). |
-| ~~2026-09-30 to 2026-10-21~~ | ~~PJM's backstop auction window~~. FERC suspended the procurement to Feb 28, 2027 on Sep 29 (196 FERC ¶ 61,245). |
-| **2026-10-29** | **PJM's window to refile the backstop under §205** and have the paper hearing held in abeyance (30 days from the Sep 29 order). DOE urged the same date. |
+| ~~2026-09-30 to 2026-10-21~~ | ~~PJM's backstop auction window~~. FERC suspended the procurement to Feb 28, 2027 on Sep 29 (196 FERC ¶ 61,245). PJM now proposes a Mar 1 to Mar 22, 2027 window. |
+| 2026-10-22 | PJM special Members Committee: §9.2(b) consultation on the backstop §205 refiling (agenda and deck posted Oct 15). |
+| 2026-10-28 | PJM Members Committee (advisory vote on PJM's §205 show-cause proposal, named in the Aug 14 abeyance order; the TOs' consultation notice is on the agenda; agenda posts Oct 21). CAISO Board of Governors on the Large Loads draft final proposal (CAISO notice of Sep 24). |
+| **2026-10-29** | **PJM's stated date for the new backstop §205 filing** and the end of FERC's 30-day window for holding the paper hearing in abeyance. PJM told FERC on Oct 12 it will file this day (per its Oct 22 deck). Check ER26-3380 for the filing and FERC's ruling on the Oct 12 abeyance motion. |
+| 2026-11-09 | PJM's compliance filing on the Large Load definition and registry (30 days from the Oct 9 order in ER26-3515; Nov 8 is a Sunday). |
 | 2026-11-13 | Backstop paper-hearing initial briefs (45 days from Sep 29) unless held in abeyance; responses 20 days later. |
-| ~~end of Sept 2026~~ | PJM's Members approved their own governance term sheet Sept 30; the states oppose it. What PJM files at FERC is not yet known. |
-| 2026-10-28 | PJM advisory stakeholder vote at the Members Committee; CAISO Board of Governors and WEM Governing Body approval target. Both named in the Aug 14 abeyance orders. |
+| open | PJM governance: the Board has not said what it will file after the Members' Sept 30 vote. Redlines were posted Oct 13 and walked through Oct 16. Watch AD26-7 and PJM's Members Committee postings. |
 | **2026-11-16** | **The reset deadline.** Show-cause responses in five of the six §206 dockets, AND PJM's and the PJM TOs' full co-location compliance filing in EL25-49. PJM, CAISO and others have said they will instead make FPA §205 filings by this date, which suspends the obligation to respond. |
 | 2026-11-20 | SPP's show-cause response (EL26-68 got 95 days rather than 90). |
 | 2026-12-16 | Answers to the show-cause responses (SPP: 2026-12-21). |
+
+**Resolved 2026-10-19:** Oct 16 (governance page-turn held; redlines posted Oct 13). Oct 9 brought the one FERC order of the window, in ER26-3515, which was never on this table because PJM's Aug 13 IRAS filing was never tracked: the lesson is below under gotchas.
 
 **Resolved 2026-10-08:** Sep 1 (AD26-7 mediation began, per PJM's filing), Sep 16 (PJM stakeholder session, not separately confirmed), the Sep 30 to Oct 21 backstop window (suspended), end-of-September governance package (Members' sheet voted Sept 30).
 
@@ -63,7 +65,8 @@ That is how AD26-7-000 and the July 23 conference date were confirmed.
 
 **Open verification queue** (updated 2026-10-08; resolved items removed rather than left to rot):
 
-0. **New 2026-10-08.** (a) No general eLibrary keyword search for §205 large-load filings by *other* applicants was completed (the form would not submit); "none observed" means the six docket sheets only. (b) Constellation's Sep 8 limited protest of PJM's Aug 17 co-location compliance filing (20260908-5326) was not read; its download did not land. (c) The Sep 21 dismissal orders in NYISO, MISO and CAISO (20260921-3021, -3047, -3019) are known from docket-sheet descriptions only. (d) Press on the governance vote and the postponed backstop window (Utility Dive, Maryland Matters, MyChesCo, Energy Central) is snippet-only and not shipped. (e) Rep. Pallone's Sep 28 and Voltus's Sep 29 comments in ER26-3380 are unread.
+00. **New 2026-10-19.** This sweep ran from a cloud container with no authenticated browser, so **no eLibrary docket sheet was read**; everything shipped came from documents hosted elsewhere (pjm.com, iso-ne.com, caiso.com, federalregister.gov, trade press). The next sweep with a browser should: (a) read EL26-67 to -72 (-000 and -001), EL25-49-000/-002, ER26-1479-002, AD26-7-000, ER26-3380-000, EL26-108-000 and **ER26-3515-000** from Oct 8 forward; (b) pull PJM's Oct 12 motion for abeyance in ER26-3380 (known only from PJM's Oct 22 deck) and FERC's ruling on it, if any; (c) find the docket number of MISO's Oct 2 LARS filing (accession 20261002-5074) and MISO's ZGIA docket ER26-3552, and check whether FERC issued a deficiency letter on the ZGIA (RTO Insider reported one around Oct 13; paywalled, not read); (d) read CAISO's draft final proposal PDF (posted Sep 24; the notice was read, the proposal was not); (e) confirm the four Sep 21 non-PJM dismissal texts against their eLibrary copies (harvested from branch da4e14a, see the manifest `provenance` field); (f) ER26-3515: PJM's compliance filing due Nov 9, and any rehearing requests by Nov 9. The eLibrary WebAPI is NOT a route around the browser: see gotchas.
+0. **Carried from 2026-10-08.** (a) No general eLibrary keyword search for §205 large-load filings by *other* applicants has been completed; "none observed" means the six docket sheets only. (b) Constellation's Sep 8 limited protest of PJM's Aug 17 co-location compliance filing (20260908-5326) is unread. (c) RESOLVED 2026-10-19: all five Sep 21 dismissal orders are now in the corpus (there were five, not four; ISO-NE's 20260921-3056 was the one the Oct 8 sweep missed). (d) Press on the governance vote and the postponed backstop window is snippet-only and not shipped. (e) Rep. Pallone's Sep 28 and Voltus's Sep 29 comments in ER26-3380 are unread.
 
 1. CAISO's Aug 12 Large Loads straw proposal: CAISO's own notice (first-party, in `SOURCES.caisostraw`)
    confirms the posting date, the Aug 19 stakeholder meeting and the topic list. Secondary coverage
@@ -121,6 +124,12 @@ node tools/verify-quotes.mjs
 python3 tools/extract-abeyance-docs.py --check   # committed order text still matches its source
 node tools/survey-summaries.mjs --brief          # comment corpus: the should-be-zero set
 ```
+
+**The browser check, scripted.** `node tools/uat-playwright.mjs` (serve `docs/` on 127.0.0.1:8131 first)
+runs the console check below at 375x812 and 1280x800, fails on `undefined`/`NaN`, horizontal overflow,
+console errors or failed requests, and prints the reader-depth table (taps + swipes + screens of scroll
+to nine things a reader comes for). It needs Playwright and a Chromium, which the cloud container has
+and a laptop may not; where it cannot run, do the manual version:
 
 **The one check that is not a script.** The repo has no dependencies and no package.json, so there is no
 jsdom and the renderers cannot be exercised headlessly. After a refresh, open the preview and run this
@@ -180,6 +189,10 @@ After a refresh that adds URLs, optionally inspect one new URL in Search Console
 indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
 
 ## Gotchas learned the hard way
+
+- **Track every PJM §205 filing the Board directs, not only the ones in the dockets you watch.** PJM's July 27 Board letter directed two filings, the backstop (ER26-3380) and the Interim Resource Adequacy Service package (ER26-3515, filed Aug 13). The site tracked the first and never the second, so FERC's Oct 9 order on it, the only FERC ruling on large-load tariff text since June 18, arrived with no filing event behind it. When a Board decisional letter or a press report names more than one filing, add each to the context lane the day it is filed. PJM's own FERC-filings page is JavaScript-rendered and useless to curl; the orders surface at `pjm.com/pjmfiles/directory/etariff/FercOrders/<n>/<yyyymmdd>-<docket>.pdf` (find `<n>` by web search for the filename) and the filings at `pjm.com/-/media/DotCom/documents/ferc/filings/<yyyy>/<yyyymmdd>-<docket>.pdf`, though not every filing is posted there (the Oct 12 abeyance motion was not, as of Oct 19).
+- **The eLibrary WebAPI is not a back door.** The Angular shell loads from this container, and its config (`/eLibrary/assets/config/app-settings.json`) names a backend at `/eLibraryWebAPI/api/`, but `File/Login` returns 401 without a browser session and every data endpoint is behind it. Probed 2026-10-19; do not spend another sweep on it. The docket sheets still need the authenticated Chrome bridge and `tools/elibrary-sweep.js`.
+- **A sweep without eLibrary must say so on every surface it touches.** The Oct 19 refresh shipped `signaled` rows in the filing matrix from the respondents' own documents and a window-check event that states the sheets were not read. "Nothing observed" from a sweep that could not observe is a different fact from "nothing filed", and the reader cannot tell them apart unless the copy does.
 
 - **Sweep the `-001` sub-dockets, and the companion docket, not just `-000`.** Rehearing and clarification
   requests (and the orders that dispose of them) are docketed under `EL26-67-001`, not the `-000` sheet.

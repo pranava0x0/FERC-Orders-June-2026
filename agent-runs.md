@@ -510,3 +510,19 @@ documents before shipping, and all of them landed; the press items stayed out. T
 (about 35 inline browser calls) found less than the search agent this time, because the real action was in
 sub-dockets and companion dockets the `-000` sweep does not cover. Main-loop token totals are not
 self-observable.
+
+**2026-10-19 refresh (inline sweep + two coding agents).** Run 16: Agent `general-purpose` (`a860d46`),
+opus, 69 tool uses, 276,618 subagent tokens, 922 s: silent-success audit of fifteen CLI tools and a
+review of every test file. 13 tools fixed, 7 test files tightened, one new test file whose seven cases
+fail on the old tools; zero false positives on review, and it ran the writer tools against a scratch
+copy rather than the repo. Worth it: this was the backlog item nobody had picked up in two months, and
+the class of bug it hunts is the one this repo keeps finding by accident. Run 17: Agent
+`general-purpose` (`acd3c65`), opus, 38 tool uses, 169,892 subagent tokens, 746 s: built
+`tools/uat-playwright.mjs` and measured reader depth at two viewports. Found the one real defect of the
+session (a chip overflow at 375px that the refresh itself introduced) and ranked eight changes with
+measured before/after numbers; five were shipped and re-measured. The news sweep ran inline: about
+25 web searches and fetches, no search agent, because the window was eleven days and the action was in
+documents on pjm.com, iso-ne.com, caiso.com and the Federal Register, none of which needs an agent to
+read. eLibrary was unreachable from the container (no browser session; the WebAPI 401s), which is
+recorded in REFRESH.md and on the site. Main-loop token totals are not self-observable.
+

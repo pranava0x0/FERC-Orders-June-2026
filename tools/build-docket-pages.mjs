@@ -11,7 +11,7 @@
 //
 // Every word is generated from data.js, so the quotes here are the same ones tools/verify-quotes.mjs
 // already sweeps; nothing on these pages is authored outside the audited data layer.
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import vm from "node:vm";
@@ -315,6 +315,7 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
   const pages = pagesFor(D);
   const check = process.argv.includes("--check");
   const stale = [];
+  if (!pages.size) { console.error("build-docket-pages: data.js yields no dockets; nothing was generated."); process.exit(1); }
   for (const [rel, html] of pages) {
     const abs = join(ROOT, "docs", rel);
     const current = existsSync(abs) ? readFileSync(abs, "utf8") : null;
@@ -326,14 +327,21 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
       writeFileSync(abs, html);
     }
   }
+  // Regenerate-and-diff only compares the pages it generates, so a page whose docket left data.js stayed
+  // served (and crawlable) while --check reported "in sync". Neither mode deletes it; both name it.
+  const generatedDirs = new Set([...pages.keys()].map((rel) => rel.split("/")[1]));
+  const orphans = readdirSync(join(ROOT, "docs", "dockets")).filter((n) => !generatedDirs.has(n)).map((n) => `dockets/${n}/`);
+  if (orphans.length) console.error(`Not generated from data.js (delete or restore the docket): ${orphans.join(", ")}`);
   if (check) {
     if (stale.length) {
       console.error(`Docket pages are stale (${stale.join(", ")}). Regenerate: node tools/build-docket-pages.mjs`);
       process.exit(1);
     }
+    if (orphans.length) process.exit(1);
     console.log(`Docket pages are in sync (${pages.size}).`);
   } else {
     console.log(`Wrote ${pages.size} docket pages under docs/dockets/.`);
     for (const rel of pages.keys()) console.log(`  ${rel}`);
+    if (orphans.length) process.exit(1);
   }
 }

@@ -27,7 +27,10 @@ const dry = process.argv.includes("--dry-run");
 
 let changedFiles = 0, addedToBins = 0, addedToQuotes = 0, reordered = 0;
 
-for (const f of readdirSync(DIR).filter((x) => x.endsWith(".json"))) {
+const files = readdirSync(DIR).filter((x) => x.endsWith(".json"));
+// "reconciled 0 file(s)" is the normal idempotent result, so it cannot also be what an empty dir prints.
+if (!files.length) { console.error(`reconcile-summary-bins: no summaries in ${DIR}; nothing was reconciled.`); process.exit(1); }
+for (const f of files) {
   const path = join(DIR, f);
   const raw = readFileSync(path, "utf8");
   const s = JSON.parse(raw);
@@ -70,7 +73,7 @@ for (const f of readdirSync(DIR).filter((x) => x.endsWith(".json"))) {
 }
 
 console.log(
-  `${dry ? "[dry-run] " : ""}reconciled ${changedFiles} file(s): ` +
+  `${dry ? "[dry-run] " : ""}scanned ${files.length}, reconciled ${changedFiles} file(s): ` +
   `+${addedToBins} quote_ids on bins (evidence the page was dropping), ` +
   `+${addedToQuotes} bin keys on quotes, ${reordered} bin(s) reordered into document order.`
 );

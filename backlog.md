@@ -1,5 +1,21 @@
 # backlog.md
 
+- **Comment summaries: six of 273 carry LLM-register words.** (low) `comprehensive` in 20251121-5484 and
+  20251205-5289, `unlock` in 20251205-5262, 20251205-5244, 20251210-5191 and 20260611-5015 (found 2026-10-19 by
+  the same register lint that runs over `data.js`). Some may be the commenter's own word; check each against its
+  source quotes before rewording, then regenerate `comments-data.js`. Add the register list to
+  `validate-summaries.mjs` so new summaries fail on it.
+
+- **Automate the `-001` and companion-docket sweep.** (medium) `tools/elibrary-sweep.js` takes one docket per
+  paste. The Sep 21 undercount (five orders, not four; issues.md 2026-10-19) happened on a sweep that had the
+  `-001` rule but applied it by hand. Give the extractor a list (`EL26-67-000`, `EL26-67-001`, …, `ER26-3380`,
+  `EL26-108`, `ER26-3515`) and have it navigate and accumulate across all of them in one run.
+
+- **Track the ER26-3515 compliance filing and any rehearing requests (both due Nov 9, 2026).** (high) The Oct 9
+  order directed a compliance filing within 30 days; rehearing of a §205 order runs 30 days too. Neither is on
+  the filing matrix, which is built around the six §206 dockets; decide whether PJM's own §205 dockets get a
+  row or stay timeline-only.
+
 - **Audit the other CLI tools for silent-success paths.** (medium) One PR review found four in the two
   newest tools. The older ones (`build-comment-worklist`, `grind-comment-downloads`, `analyze-comments`,
   `fix-lenses`, `flag-summary`) have never been checked for the same class: a `--check`/filter that

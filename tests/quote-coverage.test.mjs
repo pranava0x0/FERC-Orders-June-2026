@@ -15,7 +15,7 @@ test("every required (structured) quote is verbatim in its committed source", ()
     `unverified quotes:\n${miss.map((m) => `  ${m.label}: ${m.quote.slice(0, 80)}`).join("\n")}`,
   );
   // coverage floor — the sweep must actually be reaching the data, not silently checking nothing
-  assert.ok(required.length >= 195, `quote coverage floor: ${required.length} >= 195`);
+  assert.ok(required.length >= 235, `quote coverage floor: ${required.length} >= 235`);
 });
 
 // news-tracks-plan.md Part 5 #5. Timeline event bodies were swept by nothing before the 2026-07-28
@@ -24,7 +24,7 @@ test("every required (structured) quote is verbatim in its committed source", ()
 // surface and the specific spans: these are the ones a reader would most reasonably take as verbatim.
 test("named-speaker news quotes on the timeline are backed by captured evidence", () => {
   const fromTimeline = required.filter((r) => r.label.startsWith('timeline "'));
-  assert.ok(fromTimeline.length >= 3, `timeline sweep is reaching event bodies (${fromTimeline.length} >= 3)`);
+  assert.ok(fromTimeline.length >= 27, `timeline sweep is reaching event bodies (${fromTimeline.length} >= 27)`);
   for (const needle of ["grave legitimacy crisis", "openly discussing leaving the RTO", "cultural quagmire"]) {
     const hit = fromTimeline.find((r) => r.quote.includes(needle));
     assert.ok(hit, `a timeline body quotes "${needle}"`);
@@ -33,6 +33,8 @@ test("named-speaker news quotes on the timeline are backed by captured evidence"
 });
 
 test("every embedded prose quote resolves somewhere in the corpus", () => {
+  // A reach check, not an append-only floor: the fix for a miss here is often to de-quote the prose.
+  assert.ok(prose.length >= 10, `prose sweep is reaching embedded quotes (${prose.length} >= 10)`);
   const miss = prose.filter((r) => !r.ok);
   assert.equal(
     miss.length,

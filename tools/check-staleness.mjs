@@ -23,20 +23,32 @@ function loadData() {
 }
 
 const D = loadData();
+// An empty section reads as "Nothing flagged" (the 2026-07-28 `tracks` export bug rendered zero cards
+// with a clean console). The flags are advisory; a missing section is a broken input, so it always fails.
+for (const [label, v] of [["timeline", D?.timeline], ["tracks", D?.tracks], ["dockets", D?.dockets], ["procedural.filings.steps", D?.procedural?.filings?.steps]]) {
+  if (!v || !Object.keys(v).length) { console.error(`check-staleness: data.js has no ${label}; nothing to check.`); process.exit(1); }
+}
 const today = new Date();
 today.setHours(0, 0, 0, 0);
-const isPast = (iso) => /^\d{4}-\d{2}-\d{2}$/.test(iso || "") && new Date(iso + "T00:00:00") < today;
+const ISO = /^\d{4}-\d{2}-\d{2}$/;
+const isPast = (iso) => ISO.test(iso || "") && new Date(iso + "T00:00:00") < today;
 const daysOld = (iso) => Math.floor((today - new Date(iso + "T00:00:00")) / 86400000);
 
 const flags = [];
 const flag = (area, msg) => flags.push({ area, msg });
+// isPast() is false for anything that is not YYYY-MM-DD, so a "Nov 2026" date would never be checked.
+const unchecked = (area, label, v) => { if (v && !ISO.test(v)) flag(area, `${label} "${v}" is not YYYY-MM-DD, so it was not checked.`); };
+const checked = { deadlines: 0, tracks: 0, steps: 0 };
 
 // 1) The deadline-conversion rule. A dated deadline event that has passed may not sit there in the
 //    future tense: the refresh either replaces it with what was observed, or appends an explicit
 //    "window closed, nothing observed" event. We can't detect intent, so look for the marker language
 //    the converted entries use and flag the rest for a human read.
 for (const e of D.timeline || []) {
-  if (e.kind !== "deadline" || !isPast(e.iso)) continue;
+  if (e.kind !== "deadline") continue;
+  checked.deadlines++;
+  unchecked("timeline", `deadline "${e.title}" iso`, e.iso || "(missing)");
+  if (!isPast(e.iso)) continue;
   const converted = /has closed|window closed|closed:|see the filing matrix|our checks/i.test(e.body || "");
   if (!converted) {
     flag("timeline", `passed deadline still reads as pending: "${e.title}" (${e.iso}). Convert it or append a window-closed event.`);
@@ -46,6 +58,9 @@ for (const e of D.timeline || []) {
 // 2) Track clocks that have run out. A track card advertising a next date in the past is the most
 //    visible way this site can look abandoned.
 for (const [id, t] of Object.entries(D.tracks || {})) {
+  checked.tracks++;
+  unchecked("tracks", `track "${id}" next.date`, t.next?.date);
+  unchecked("tracks", `track "${id}" status.asOf`, t.status?.asOf);
   if (t.next && isPast(t.next.date)) {
     flag("tracks", `track "${id}" next.date ${t.next.date} is in the past ("${t.next.label}"). Advance it or replace it.`);
   }
@@ -60,6 +75,7 @@ for (const [label, iso] of [
   ["procedural.filings.asOf", D.procedural?.filings?.asOf],
 ]) {
   if (!iso) flag("stamps", `${label} is missing.`);
+  else if (!ISO.test(iso)) unchecked("stamps", label, iso);
   else if (daysOld(iso) > STALE_DAYS) flag("stamps", `${label} is ${daysOld(iso)} days old (${iso}).`);
 }
 
@@ -73,7 +89,8 @@ if (F) {
   const stepById = Object.fromEntries((D.procedural.steps || []).map((s) => [s.id, s]));
   for (const stepId of F.steps || []) {
     const step = stepById[stepId];
-    if (!step) continue;
+    if (!step) { flag("filings", `filings.steps lists "${stepId}", which is not a procedural step id; it was not checked.`); continue; }
+    checked.steps++;
     const operative = step.revised?.date || step.date;
     const observed = new Set((F.rows || []).filter((r) => r.step === stepId).map((r) => r.docket));
     // A docket can carry its own reset date for this step (SPP got 95 days rather than 90), so measure
@@ -97,13 +114,15 @@ if (F) {
 const byArea = flags.reduce((m, f) => ((m[f.area] = m[f.area] || []).push(f.msg), m), {});
 console.log("Staleness check — docs/js/data.js against today’s date");
 console.log("=".repeat(64));
+const scope = `Checked ${checked.deadlines} deadline event(s), ${checked.tracks} track(s), 2 stamp(s), ` +
+  `${checked.steps} filing step(s) across ${D.dockets.length} docket(s).`;
 if (!flags.length) {
-  console.log("Nothing flagged.");
+  console.log(`Nothing flagged. ${scope}`);
 } else {
   for (const [area, msgs] of Object.entries(byArea)) {
     console.log(`\n${area}`);
     for (const m of msgs) console.log(`  • ${m}`);
   }
-  console.log(`\n${flags.length} item(s) flagged. These are prompts for a refresh, not test failures.`);
+  console.log(`\n${flags.length} item(s) flagged. These are prompts for a refresh, not test failures. ${scope}`);
 }
 if (STRICT && flags.length) process.exit(1);

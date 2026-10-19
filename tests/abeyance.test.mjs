@@ -30,9 +30,9 @@ const manifest = JSON.parse(readFileSync(join(ROOT, "sources", "abeyance-manifes
 test("the abeyance corpus is committed and non-empty", () => {
   assert.ok(existsSync(DIR), "sources/text/abeyance/ exists");
   const files = readdirSync(DIR).filter((f) => f.endsWith(".txt"));
-  // Count floor, append-only: six abeyance orders, two errata, the extension notice, two compliance
-  // transmittals, one show-cause answer. A drop here means an extraction silently stopped writing.
-  assert.ok(files.length >= 12, `abeyance corpus count floor (${files.length} >= 12)`);
+  // Count floor, append-only, at the committed corpus (the six abeyance orders plus errata, notices,
+  // transmittals and answers). A drop here means an extraction silently stopped writing.
+  assert.ok(files.length >= 21, `abeyance corpus count floor (${files.length} >= 21)`);
   for (const f of files) {
     const t = readFileSync(join(DIR, f), "utf8");
     assert.ok(t.length > 1000, `${f} has real body text (${t.length} chars)`);
@@ -41,7 +41,7 @@ test("the abeyance corpus is committed and non-empty", () => {
 });
 
 test("every manifest document points at committed text that exists", () => {
-  assert.ok(manifest.documents.length >= 12, "manifest lists every document");
+  assert.ok(manifest.documents.length >= 21, `manifest lists every document (${manifest.documents.length} >= 21)`);
   for (const d of manifest.documents) {
     assert.ok(existsSync(join(ROOT, d.text)), `${d.accession} text exists at ${d.text}`);
     assert.match(d.accession, /^\d{8}-\d{4}$/, `${d.accession} is a well-formed accession`);
@@ -141,7 +141,9 @@ test("the abeyance orders carry no separate commissioner statements", () => {
   // Worth asserting rather than assuming: all five commissioners wrote separately on every June 18
   // order, and none wrote on the orders that stopped those same proceedings. If a later reissuance adds
   // a concurrence, this fails and the site's "no statements" framing needs revisiting.
-  for (const f of readdirSync(DIR).filter((x) => x.startsWith("abeyance-"))) {
+  const orders = readdirSync(DIR).filter((x) => x.startsWith("abeyance-"));
+  assert.equal(orders.length, 6, "one abeyance- file per §206 docket");
+  for (const f of orders) {
     const t = readFileSync(join(DIR, f), "utf8");
     assert.doesNotMatch(t, /\b(concurring|dissenting)\b/i, `${f} has no separate statement`);
   }

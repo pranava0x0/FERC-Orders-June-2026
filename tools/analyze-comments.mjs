@@ -12,6 +12,10 @@ const here = dirname(fileURLToPath(import.meta.url));
 const RAW = join(here, "..", "sources", "comments", "rm26-4-manifest.raw.json");
 const OUT = join(here, "..", "sources", "comments", "rm26-4-comments.json");
 const rows = JSON.parse(readFileSync(RAW, "utf8"));
+// This overwrites the committed rm26-4-comments.json, so an empty or reshaped manifest must stop here
+// rather than write zeroed stats over the real ones.
+const fail = (msg) => { console.error(`analyze-comments: ${msg}`); process.exit(1); };
+if (!Array.isArray(rows) || !rows.length) fail("rm26-4-manifest.raw.json is empty or not an array.");
 
 // The docket sheet labels these two filings as unaffiliated individuals, but the downloaded filings
 // identify their organizations. Keep the scraped value as org_raw while making the evidence-backed
@@ -103,6 +107,9 @@ const toISO = (s) => { const [mm, dd, yy] = (s || "").split("/"); return yy && m
 const byDay = tally(enriched, "filed");
 const peakDay = Object.entries(byDay).sort((a, b) => b[1] - a[1])[0];
 const isoDates = enriched.map((r) => toISO(r.filed)).filter(Boolean).sort();
+if (!comments.length) fail(`none of ${enriched.length} manifest rows classified as a comment.`);
+// toISO() only reads MM/DD/YYYY; a changed scrape format would otherwise drop date_range silently.
+if (isoDates.length !== enriched.length) fail(`${enriched.length - isoDates.length} of ${enriched.length} rows have a "filed" date that is not MM/DD/YYYY.`);
 
 const stats = {
   total_filings: enriched.length,
@@ -138,6 +145,6 @@ const out = {
   })),
 };
 writeFileSync(OUT, JSON.stringify(out, null, 2));
-console.log("=== RM26-4-000 comment manifest ===");
+console.log(`=== RM26-4-000 comment manifest: ${enriched.length} filings, ${comments.length} comments ===`);
 console.log(JSON.stringify(stats, null, 2));
 console.log("\nuncategorized comment orgs:", comments.filter((r) => r.bucket === "other").map((r) => r.org).slice(0, 40));
