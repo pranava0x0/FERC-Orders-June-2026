@@ -88,6 +88,31 @@ DOCS = [
     dict(slug="statement-er26-3380-doe", accession="20261007-5181", docket="ER26-3380-000", rto="PJM",
          cite=None, issued="2026-10-07", kind="notice of intervention and statement of position", captured_at="2026-10-08",
          title="U.S. Department of Energy notice of intervention and statement of position supporting the September 29, 2026 backstop order"),
+    # --- Oct 2026 refresh: the PJM large-load (IRAS) order, and the four non-PJM Sep 21 dismissals ------
+    dict(slug="order-er26-3515-pjm-large-load", accession="20261009-3055", docket="ER26-3515-000", rto="PJM",
+         cite="197 FERC ¶ 61,019", issued="2026-10-09", kind="order", captured_at="2026-10-19",
+         title="Order accepting PJM's Large Load definition and Large Load Registry and rejecting the Interim Resource Adequacy Service, BYONC and VRR-curve revisions"),
+    # The four orders below were extracted in an authenticated eLibrary browser session on 2026-09-24
+    # (branch vibe/refresh-ux-september, commit da4e14a, never merged) and are re-homed here as .txt
+    # sources. The method was checked: that branch's text of the PJM order (20260921-3020) carries all
+    # 73 of its sentences against PJM's own hosted copy of the PDF. These four have no second copy
+    # to check against from this environment, which the `provenance` field says plainly.
+    dict(slug="order-el26-71-001-caiso-rehearing", accession="20260921-3019", docket="EL26-71-001", rto="CAISO",
+         cite="196 FERC ¶ 61,216", issued="2026-09-21", kind="order", captured_at="2026-09-24",
+         provenance="extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+         title="Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 CAISO show-cause order"),
+    dict(slug="order-el26-69-001-nyiso-rehearing", accession="20260921-3021", docket="EL26-69-001", rto="NYISO",
+         cite="196 FERC ¶ 61,218", issued="2026-09-21", kind="order", captured_at="2026-09-24",
+         provenance="extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+         title="Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 NYISO show-cause order"),
+    dict(slug="order-el26-70-001-miso-rehearing", accession="20260921-3047", docket="EL26-70-001", rto="MISO",
+         cite="196 FERC ¶ 61,217", issued="2026-09-21", kind="order", captured_at="2026-09-24",
+         provenance="extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+         title="Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 MISO show-cause order"),
+    dict(slug="order-el26-72-001-isone-rehearing", accession="20260921-3056", docket="EL26-72-001", rto="ISO-NE",
+         cite="196 FERC ¶ 61,215", issued="2026-09-21", kind="order", captured_at="2026-09-24",
+         provenance="extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+         title="Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 ISO-NE show-cause order"),
     # --- the only substantive show-cause answer ----------------------------------------------------
     dict(slug="answer-el26-71-morongo", accession="20260812-5158", docket="EL26-71-000", rto="CAISO",
          cite=None, issued="2026-08-12", kind="answer to order to show cause",
@@ -107,19 +132,39 @@ def extract_docx(path: Path) -> str:
     return out.stdout
 
 
-def extract_pdf(path: Path) -> str:
-    """fitz, page by page, with the same `--- PAGE N ---` markers sources/text/orders/ uses so the
-    existing quote-page tooling (tools/stamp-comment-pages.mjs) can locate a quote's page."""
+def extract_pdf(path: Path) -> tuple[str, int, str]:
+    """Page by page, with the same `--- PAGE N ---` markers sources/text/orders/ uses so the existing
+    quote-page tooling (tools/stamp-comment-pages.mjs) can locate a quote's page. PyMuPDF when it is
+    installed; otherwise poppler's pdftotext (-layout), whose form feeds mark the page breaks. The two
+    lay out whitespace differently, so a re-extraction with the other tool reads as DRIFT: the tool used
+    is recorded in the header and the manifest for that reason."""
     try:
         import fitz  # PyMuPDF
     except ImportError:
-        sys.exit("PyMuPDF (fitz) is required for the PDF documents: pip install pymupdf")
-    doc = fitz.open(path)
+        fitz = None
+    if fitz is not None:
+        doc = fitz.open(path)
+        parts = []
+        for i in range(doc.page_count):
+            parts.append(f"--- PAGE {i + 1} ---")
+            parts.append(doc[i].get_text())
+        return "\n".join(parts), doc.page_count, "PyMuPDF (fitz)"
+    out = subprocess.run(["pdftotext", "-layout", str(path), "-"], capture_output=True, text=True, check=True)
+    pages = [pg for pg in out.stdout.split("\f") if pg.strip()]
+    if not pages:
+        raise RuntimeError(f"pdftotext produced no text for {path.name}")
     parts = []
-    for i in range(doc.page_count):
+    for i, pg in enumerate(pages):
         parts.append(f"--- PAGE {i + 1} ---")
-        parts.append(doc[i].get_text())
-    return "\n".join(parts), doc.page_count
+        parts.append(pg)
+    return "\n".join(parts), len(pages), "pdftotext (poppler)"
+
+
+def extract_prepared(path: Path) -> str:
+    """A .txt source is text already extracted elsewhere (another session's authenticated browser run,
+    checked in on a branch), re-homed here so the quote sweep can see it. The record's `provenance`
+    field must say where it came from; this function only reads it."""
+    return path.read_text(encoding="utf-8")
 
 
 def normalize(text: str) -> str:
@@ -133,9 +178,14 @@ def normalize(text: str) -> str:
 
 def build(rec: dict, src: Path) -> tuple[str, dict]:
     pages = None
-    if src.suffix.lower() == ".pdf":
-        body, pages = extract_pdf(src)
-        tool = "PyMuPDF (fitz)"
+    suffix = src.suffix.lower()
+    if suffix == ".pdf":
+        body, pages, tool = extract_pdf(src)
+    elif suffix == ".txt":
+        if not rec.get("provenance"):
+            raise ValueError(f"{rec['slug']}: a .txt source needs a `provenance` field saying where the text came from")
+        body = extract_prepared(src)
+        tool = f"no local extraction: {rec['provenance']}"
     else:
         body = extract_docx(src)
         tool = "textutil"
@@ -146,10 +196,11 @@ def build(rec: dict, src: Path) -> tuple[str, dict]:
     header = (
         f"FERC {rec['kind']} — {rec['rto']} — Docket {rec['docket']} — accession {rec['accession']}"
         f"{cite} — {rec['title']} — Issued {rec['issued']}{pg}\n"
-        f"Extracted locally with {tool} from the document downloaded from its eLibrary accession. "
-        f"Verbatim; source text layer preserved.\n\n\n"
+        + (f"Extracted locally with {tool} from the document downloaded from its eLibrary accession. "
+           if not tool.startswith("no local extraction") else f"Text {tool}. ")
+        + "Verbatim; source text layer preserved.\n\n\n"
     )
-    meta = dict(rec, source_file=src.name, pages=pages, chars=len(body),
+    meta = dict(rec, source_file=src.name, pages=pages, chars=len(body), tool=tool,
                 text=str((OUT_DIR / f"{rec['slug']}.txt").relative_to(ROOT)))
     return header + body, meta
 
@@ -193,14 +244,24 @@ def main() -> int:
             wrote.append(rec["accession"])
 
     if not args.check and metas:
+        # Merge, never regenerate. The download directory is transient, so a run after it was cleaned
+        # used to rewrite every earlier record with source_file=None and a recomputed `chars`,
+        # destroying the provenance of documents it had not touched (issues.md 2026-10-08). A record
+        # is replaced only when its source was present and re-extracted this run; otherwise the
+        # committed record stands. New accessions are appended in DOCS order.
+        existing = json.loads(MANIFEST.read_text(encoding="utf-8")) if MANIFEST.exists() else {}
+        by_acc = {d["accession"]: d for d in existing.get("documents", [])}
+        for m in metas:
+            if m.get("source_file") is None and m["accession"] in by_acc:
+                continue  # nothing re-extracted: keep the record that knows its source
+            by_acc[m["accession"]] = m
+        order = [rec["accession"] for rec in DOCS]
+        documents = [by_acc[a] for a in order if a in by_acc] + [d for a, d in by_acc.items() if a not in order]
         MANIFEST.write_text(json.dumps({
-            "captured_at": "2026-08-23",
-            "note": ("The August 2026 abeyance orders, errata, co-location compliance filings and the one "
-                     "substantive show-cause answer. Documents are pulled by hand from eLibrary in an "
-                     "authenticated browser (Cloudflare-gated); the PDFs/DOCX are not committed, the "
-                     "extracted text under sources/text/abeyance/ is. Titles and citations come from each "
-                     "document's own first page, not from its docket-sheet description."),
-            "documents": metas,
+            "captured_at": existing.get("captured_at", "2026-08-23"),
+            "note": existing.get("note", "FERC documents quoted on the site, extracted to sources/text/abeyance/. "
+                                          "Titles and citations come from each document's own first page."),
+            "documents": documents,
         }, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     log.info("%s: %d written, %d unchanged, %d drifted, %d missing source and no committed text",
