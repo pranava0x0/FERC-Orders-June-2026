@@ -618,3 +618,33 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   `sources/abeyance-manifest.json` from whatever source files are on disk, so a run after the
   Downloads folder was cleaned blanks `source_file` for every earlier record and changes their `chars`.
   Worked around by appending the new records. Root cause: **code**. Status: **Open** (backlog).
+
+- **2026-10-19 · data · The Oct 8 sweep counted four Sep 21 rehearing-dismissal orders; there were five.** The site's
+  track status, the Sep 21 timeline entry, the Oct 8 window-check event and the Overview summary all said FERC
+  dismissed Eolian's request in "NYISO, MISO and CAISO" and that "the SPP and ISO-NE dockets have no rehearing
+  sub-docket with an order." ISO-NE's EL26-72-001 carries 20260921-3056 (196 FERC ¶ 61,215), found by the
+  unmerged Sept 24 branch (`vibe/refresh-ux-september`) and confirmed from its text, which names ISO New England
+  in the caption and dismisses Eolian's request in the same words as the other four. Root cause: **data**
+  (the `-001` sweep on Oct 8 either skipped EL26-72-001 or read it from a page that did not show the order; the
+  sweep notes do not say which). Fix: all five orders are in `sources/text/abeyance/` and the manifest, the four
+  non-PJM ones with a `provenance` field saying they were harvested rather than re-extracted; the Sep 21 entry
+  now names all five and says it was corrected. Status: **Fixed**.
+- **2026-10-19 · data · PJM's Aug 13 §205 large-load package (ER26-3515, the IRAS filing) was never tracked, so
+  FERC's Oct 9 order on it arrived with no filing event behind it.** The July 27 Board letter directed two
+  filings; the site followed the backstop (ER26-3380) and missed the other. Root cause: **data/process** (the
+  context lane only tracked dockets already named on the site). Fix: Oct 9 order added to the corpus and the
+  timeline with the Aug 13 filing described inside it; REFRESH.md gotcha added. Status: **Fixed** (the Aug 13
+  transmittal itself is still unread; PJM's media path for it 404s).
+- **2026-10-19 · code · `extract-abeyance-docs.py` rewrote the manifest from whatever was on disk.** Known since
+  2026-10-08 (above, "The extractor clobbers the manifest"). Fix: the manifest is merged by accession; a record
+  is replaced only when its source was present and re-extracted this run, otherwise the committed record stands,
+  and new accessions append in `DOCS` order. Also: pdftotext fallback when PyMuPDF is absent (recorded in the
+  header and manifest as the tool, since the two lay out whitespace differently and `--check` would read a
+  re-extraction with the other tool as drift), and `.txt` sources with a required `provenance` field. Verified
+  by running it against a directory holding only the five new sources: `5 written, 16 unchanged`, and a diff of
+  the manifest showed zero earlier records changed. Status: **Fixed**.
+- **2026-10-19 · process · This sweep had no eLibrary access.** The cloud container has no authenticated browser;
+  the eLibrary WebAPI (`/eLibraryWebAPI/api/`) returns 401 on `File/Login`. Every docket-sheet observation on
+  the site is therefore as of Oct 8, and the Oct 19 copy says so wherever it matters (track lines, the window
+  check, the filing matrix note, REFRESH.md queue item 00). Root cause: **environment**. Status: **Open** until
+  a browser sweep reads the sheets from Oct 8 forward.
