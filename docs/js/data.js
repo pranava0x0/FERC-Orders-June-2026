@@ -430,6 +430,7 @@ window.FERC_DATA = (function () {
     pjmto1009: {
       label: "Notice of PJM Transmission Owners Consultation with the Members Committee Regarding Proposed Revisions to the PJM Tariff",
       org: "PJM Transmission Owners Agreement Administrative Committee",
+      short: "PJM TOs",
       tier: "secondary",
       url: "https://www.pjm.com/-/media/DotCom/committees-groups/committees/mc/2026/20261028/20261028-notice-of-pjm-transmission-owners-consultation-with-the-members-committee---informational-posting-only.pdf",
       published: "2026-10-09",
