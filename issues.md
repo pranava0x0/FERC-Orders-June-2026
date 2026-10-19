@@ -648,3 +648,14 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   the site is therefore as of Oct 8, and the Oct 19 copy says so wherever it matters (track lines, the window
   check, the filing matrix note, REFRESH.md queue item 00). Root cause: **environment**. Status: **Open** until
   a browser sweep reads the sheets from Oct 8 forward.
+- **2026-10-19 · code · Codex round 1 on PR #23 found three real defects in this session's own work.** (1) Wave-3
+  Discourse quotes tagged with a FERC order were verified against the union of every committed order, so a
+  sentence lifted from the backstop order and attributed to the large-load order would have passed. Root
+  cause: **code** (the sweep widened the corpus instead of resolving the declared source). Fix: a `text` field
+  on the source record names its committed file; the sweep and the source-accuracy test check only that file,
+  and a negative case asserts a backstop sentence does not verify as the large-load order. (2) The tool audit
+  made `build-comment-worklist` fail on an empty page build but still handed an omitted accession an empty
+  keyword prior. Root cause: **code**. Fix: any summarizable comment with no prior is a stale-build error, in
+  `--next` mode too, with a test. (3) The new pdftotext fallback dropped blank pages, renumbering every later
+  page marker. Root cause: **code**. Fix: only the empty chunk after the final form feed is dropped. Status:
+  **Fixed** (commit "Address Codex round 1").
