@@ -1,5 +1,8 @@
 # backlog.md
 
+- **`var(--text-secondary)` is used six times in styles.css but never defined.** (low) Found while adding
+  the voices roster (2026-10-20). Those rules fall back to the inherited color. Define the token in `:root` or
+  switch the six uses to `--text-muted`, then eyeball the affected elements.
 - **Comment summaries: six of 273 carry LLM-register words.** (low) `comprehensive` in 20251121-5484 and
   20251205-5289, `unlock` in 20251205-5262, 20251205-5244, 20251210-5191 and 20260611-5015 (found 2026-10-19 by
   the same register lint that runs over `data.js`). Some may be the commenter's own word; check each against its

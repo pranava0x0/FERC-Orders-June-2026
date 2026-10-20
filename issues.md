@@ -9,8 +9,12 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   `voices` array kept growing: it now holds 45 records that only `tools/news-sweep-plan.mjs` (as search
   terms) and the quote sweep read. Adding a voice card has no visible effect, so the 2026-10-20 sweep
   placed every new voice's argument in a theme, a media line or the timeline as well. Root cause:
-  **data/ui drift**. Status: **Open**. Decide whether to render a roster again or to say in data.js that
-  `voices` is a search-and-audit roster, not a display surface.
+  **data/ui drift**. Status: **Fixed 2026-10-20.** The Discourse tab renders a collapsible "Who's quoted"
+  roster (`renderVoiceRoster` in app.js, same `accSection` disclosure as the other Discourse sections): all
+  45 voices grouped by lean (right, center, left, nonpartisan, then a "lean not stated" catch-all so an
+  unknown value never drops a voice), sorted by name, each with affiliation, lean pill, take and source
+  chips; missing fields render italic placeholders. `tests/voices-roster.test.mjs` runs the real renderer
+  sliced out of app.js over the real data and asserts one row per voice, every chip, and no `undefined`.
 - **2026-10-20 · sourcing/process · search-agent quotes are leads until a second model re-reads the page.**
   A Haiku search agent in an earlier session fabricated a quote outright. Both Haiku batches in this sweep
   came through model-extracted fetches (the fetch tool summarizes pages, so a "quote" can be the
