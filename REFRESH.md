@@ -182,6 +182,34 @@ one thing the docket sheet cannot give you.
 Append to `issues.md` anything found broken, and to `agent-runs.md` a row for any sweep agent, with its
 token usage. Update the progress log at the top of `news-tracks-plan.md`.
 
+## Scheduled sweeps
+
+Six one-time local scheduled tasks run this loop after each dated event (they live in
+`~/.claude/scheduled-tasks/ferc-sweep-<date>/` on the maintainer's Mac and need the app open and the logged-in
+Chrome for eLibrary and X): **Oct 22** (Oct 21 answers, PJM special MC), **Oct 30** (Oct 28 MC and CAISO board,
+Oct 29 backstop refiling), **Nov 10** (ER26-3515 compliance and rehearing deadline), **Nov 17** (the Nov 16
+responses and co-location compliance), **Nov 21** (SPP), **Dec 17** (answers). Each run opens a PR and never
+merges. The runbook every task follows:
+
+
+SETUP: `git fetch && git checkout main && git pull --ff-only`, then `git checkout -b sweep-<YYYY-MM-DD>`. Run `node tools/check-staleness.mjs` first. If another sweep branch or PR is open and unmerged, stop and report instead of duplicating it.
+
+COVER ALL SIX SOURCE TYPES, since `meta.newsCapture` in docs/js/data.js:
+1. FERC documents (primary): read every docket sheet in the user's logged-in Chrome (Claude in Chrome tools) with tools/elibrary-sweep.js, CUTOFF = the last newsCapture: EL26-67-000..EL26-72-000 and their -001 sub-dockets, EL25-49-000/-002, ER26-1479-002, AD26-7-000, ER26-3380-000, EL26-108-000, ER26-3515-000, ER27-25-000 (MISO LARS), ER26-3552 (MISO ZGIA), plus any new docket a filing names. Also run the general eLibrary search by applicant (PJM, MISO, SPP, CAISO, ISO New England, NYISO and their TOs) for new §205 large-load filings. Download every order, notice and substantive filing you quote (click the `a.filedownloadlink` for the named file only), copy the originals into sources/originals/ (COMMITTED: the user wants docs and data in the GitHub repo), add a DOCS record in tools/extract-abeyance-docs.py, extract, and confirm `python3 tools/extract-abeyance-docs.py --check` compares every document.
+2. Government press releases and statements: ferc.gov news releases and commissioner statements (Cloudflare-gated: use Chrome), the FERC open-meeting agenda/summary, energy.gov (DOE), PJM Inside Lines and newsroom PDFs, MISO/SPP/CAISO/ISO-NE/NYISO newsrooms, state PUCs and governors in the affected states, NARUC/OPSI/OMS, and members of Congress.
+3. Web search for news and analysis: build the matrix with `node tools/news-sweep-plan.mjs --json` and give it to ONE Haiku search agent (model haiku) for trade press, law-firm alerts, think tanks and op-eds.
+4. Social media: run X searches yourself in Chrome (queries pairing FERC/PJM/large load/data center/co-location/backstop/the docket numbers with the event of the day; plus timelines of known voices in data.js `voices`). Strip `? & = ; %` from collected text and write results into the page body, then read them with get_page_text (the javascript tool's output is capped and filtered).
+5. Commentary from named people (experts, advocates, market monitors, former commissioners): a second Haiku agent focused on statements by named people not already in `voices`.
+6. Interviews, videos and spoken statements: YouTube, podcasts (Catalyst, Volts, Energy Gang, Shift Key, Power Lines), conference panels, the FERC open meeting video, and hearings. Quote video only from a published transcript; auto-captions go in as SPOKEN and are labelled unverifiable.
+
+VALIDATE: give every agent and X finding to ONE Sonnet agent (model sonnet) that reopens each page, checks the quote verbatim (X through https://publish.twitter.com/oembed?url=...), confirms speaker, role, headline and date, dedupes against data.js SOURCES/voices, and rejects paraphrases. Run `node tools/news-sweep-plan.mjs --check <file>`. Nothing snippet-only ships as fact.
+
+INTEGRATE: give the validated set to ONE Opus agent (model opus) to place it (timeline with `track`, procedural.filings rows as observations only, tracks status lines, Discourse themes/media/voices roster) and to convert passed deadlines per the deadline-conversion rule. Bump `meta.newsCapture` only when the dockets were actually swept, `meta.commentaryCapture` when commentary was added. Every displayed quote needs its evidence entry.
+
+GATES (all must pass): node tools/check-staleness.mjs; node tools/build-llms.mjs; node tools/build-seo.mjs; node tools/build-docket-pages.mjs; node tools/stamp-assets.mjs; node --test tests/*.test.mjs; node tools/verify-quotes.mjs; python3 tools/extract-abeyance-docs.py --check; then serve docs/ on 127.0.0.1:8131 and run the REFRESH.md console check (or tools/uat-playwright.mjs).
+
+FINISH: update REFRESH.md (queue, When-to-run table, Learned), issues.md and agent-runs.md (agents and token use). Commit in small focused commits with plain messages, and never add Co-Authored-By or "Generated with" lines. Push the branch and open a PR. Do NOT merge; the user reviews. End with a short summary of what changed, what is still open, and the PR link.
+
 ## Search Console
 
 The site is a verified URL-prefix property at
