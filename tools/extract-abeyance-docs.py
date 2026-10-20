@@ -1,19 +1,20 @@
 #!/usr/bin/env python3
 """Extract the August 2026 abeyance / errata / compliance documents to committed text.
 
-Same contract as sources/text/orders/: the PDF or DOCX itself is not committed (gitignored, and
-re-derivable from its eLibrary accession), the verbatim extracted text is. Each output carries a
-two-line provenance header, then the body, with `--- PAGE N ---` markers when the source has pages.
+Both the originals and the verbatim extracted text are committed: the PDF or DOCX in
+sources/originals/ (since 2026-10-20, so `--check` can prove the text from a clean clone), the text in
+sources/text/abeyance/. Each output carries a two-line provenance header, then the body, with
+`--- PAGE N ---` markers when the source has pages.
 
 The documents are pulled from eLibrary by hand, in an authenticated browser (see REFRESH.md and
 tools/elibrary-sweep.js), because eLibrary is Cloudflare-gated. They land in ~/Downloads named
-"<accession>_<filename>". This script only does the extraction, so it is safe to re-run: it reads
-whatever is present and reports what is missing rather than failing.
+"<accession>_<filename>"; copy them into sources/originals/ and commit them. This script only does
+the extraction, so it is safe to re-run: it reads whatever is present and reports what is missing.
 
 Usage:
     python3 tools/extract-abeyance-docs.py                # extract everything found
     python3 tools/extract-abeyance-docs.py --check        # verify committed text matches the source
-    python3 tools/extract-abeyance-docs.py --in <dir>     # look somewhere other than ~/Downloads
+    python3 tools/extract-abeyance-docs.py --in <dir>     # look somewhere other than sources/originals/
 
 DOCX goes through `textutil` (macOS, no page concept in a notational order). PDF goes through fitz,
 which preserves the embedded text layer and gives real page numbers.
@@ -92,26 +93,25 @@ DOCS = [
     dict(slug="order-er26-3515-pjm-large-load", accession="20261009-3055", docket="ER26-3515-000", rto="PJM",
          cite="197 FERC ¶ 61,019", issued="2026-10-09", kind="order", captured_at="2026-10-19",
          title="Order accepting PJM's Large Load definition and Large Load Registry and rejecting the Interim Resource Adequacy Service, BYONC and VRR-curve revisions"),
-    # The four orders below were extracted in an authenticated eLibrary browser session on 2026-09-24
-    # (branch vibe/refresh-ux-september, commit da4e14a, never merged) and are re-homed here as .txt
-    # sources. The method was checked: that branch's text of the PJM order (20260921-3020) carries all
-    # 73 of its sentences against PJM's own hosted copy of the PDF. These four have no second copy
-    # to check against from this environment, which the `provenance` field says plainly.
+    # The four orders below were first extracted in an authenticated eLibrary browser session on
+    # 2026-09-24 (branch vibe/refresh-ux-september, commit da4e14a, never merged). On 2026-10-20 their
+    # eLibrary DOCX originals were downloaded into sources/originals/ and re-extracted with textutil;
+    # the word sequence matched the browser text exactly (0 differences in ~1,250 words each).
     dict(slug="order-el26-71-001-caiso-rehearing", accession="20260921-3019", docket="EL26-71-001", rto="CAISO",
          cite="196 FERC ¶ 61,216", issued="2026-09-21", kind="order", captured_at="2026-09-24",
-         provenance="extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+         provenance="first extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); re-extracted 2026-10-20 from the eLibrary DOCX committed in sources/originals/, word for word identical",
          title="Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 CAISO show-cause order"),
     dict(slug="order-el26-69-001-nyiso-rehearing", accession="20260921-3021", docket="EL26-69-001", rto="NYISO",
          cite="196 FERC ¶ 61,218", issued="2026-09-21", kind="order", captured_at="2026-09-24",
-         provenance="extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+         provenance="first extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); re-extracted 2026-10-20 from the eLibrary DOCX committed in sources/originals/, word for word identical",
          title="Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 NYISO show-cause order"),
     dict(slug="order-el26-70-001-miso-rehearing", accession="20260921-3047", docket="EL26-70-001", rto="MISO",
          cite="196 FERC ¶ 61,217", issued="2026-09-21", kind="order", captured_at="2026-09-24",
-         provenance="extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+         provenance="first extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); re-extracted 2026-10-20 from the eLibrary DOCX committed in sources/originals/, word for word identical",
          title="Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 MISO show-cause order"),
     dict(slug="order-el26-72-001-isone-rehearing", accession="20260921-3056", docket="EL26-72-001", rto="ISO-NE",
          cite="196 FERC ¶ 61,215", issued="2026-09-21", kind="order", captured_at="2026-09-24",
-         provenance="extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+         provenance="first extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); re-extracted 2026-10-20 from the eLibrary DOCX committed in sources/originals/, word for word identical",
          title="Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 ISO-NE show-cause order"),
     # --- the only substantive show-cause answer ----------------------------------------------------
     dict(slug="answer-el26-71-morongo", accession="20260812-5158", docket="EL26-71-000", rto="CAISO",
@@ -212,7 +212,7 @@ def build(rec: dict, src: Path) -> tuple[str, dict]:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--in", dest="in_dir", default=str(Path.home() / "Downloads"))
+    ap.add_argument("--in", dest="in_dir", default=str(ROOT / "sources" / "originals"))
     ap.add_argument("--check", action="store_true",
                     help="verify committed text matches what the sources produce; write nothing")
     ap.add_argument("-v", "--verbose", action="store_true", help="debug-level logging")

@@ -24,8 +24,12 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   Root cause: **source**. Status: **Open**.
 - **2026-10-20 · tooling/env · `extract-abeyance-docs.py --check` could not run on this laptop.** It
   shells out to `pdftotext`, which is not installed here. No FERC document was added this sweep, so
-  nothing depended on it. Root cause: **environment**. Status: **Open** (install poppler or note the
-  dependency in REFRESH.md).
+  nothing depended on it. Root cause: **environment**. Status: **Fixed 2026-10-20.** Installed
+  `pymupdf==1.26.4` (advisory check in security.md), downloaded all 21 originals from eLibrary / pjm.com into
+  the now-committed `sources/originals/`, and made it the tool's default `--in`. `--check` compares 21 of 21.
+  The four Sep 21 rehearing orders first extracted in a browser session (da4e14a) matched their DOCX word for
+  word; the Oct 9 ER26-3515 order, first extracted with pdftotext, was re-extracted with PyMuPDF (same words,
+  only layout differs: one footnote number moved and "SEAL" spaced out).
 
 - **2026-06-30 · ui/data · consensus heatmap shows a "net oppose" legend swatch with zero matching cells.**
   Of 60 visible stakeholder×reform cells, 41 are strong-support, 13 support, 6 contested, **0 net-oppose** —

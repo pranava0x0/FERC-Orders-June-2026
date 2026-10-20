@@ -14,6 +14,7 @@
       "source_file": "20260814-3059_EL26-67-000.docx",
       "pages": null,
       "chars": 11040,
+      "tool": "textutil",
       "text": "sources/text/abeyance/abeyance-el26-67-pjm.txt"
     },
     {
@@ -28,6 +29,7 @@
       "source_file": "20260814-3060_EL26-68-000.docx",
       "pages": null,
       "chars": 11404,
+      "tool": "textutil",
       "text": "sources/text/abeyance/abeyance-el26-68-spp.txt"
     },
     {
@@ -42,6 +44,7 @@
       "source_file": "20260814-3068_EL26-69-000.docx",
       "pages": null,
       "chars": 10085,
+      "tool": "textutil",
       "text": "sources/text/abeyance/abeyance-el26-69-nyiso.txt"
     },
     {
@@ -56,6 +59,7 @@
       "source_file": "20260814-3058_EL26-70-000.docx",
       "pages": null,
       "chars": 11031,
+      "tool": "textutil",
       "text": "sources/text/abeyance/abeyance-el26-70-miso.txt"
     },
     {
@@ -70,6 +74,7 @@
       "source_file": "20260814-3061_EL26-71-000.docx",
       "pages": null,
       "chars": 12916,
+      "tool": "textutil",
       "text": "sources/text/abeyance/abeyance-el26-71-caiso.txt"
     },
     {
@@ -84,6 +89,7 @@
       "source_file": "20260814-3056_EL26-72-000.docx",
       "pages": null,
       "chars": 8463,
+      "tool": "textutil",
       "text": "sources/text/abeyance/abeyance-el26-72-isone.txt"
     },
     {
@@ -98,6 +104,7 @@
       "source_file": "20260813-3025_EL26-67-000 Errata Notice.docx",
       "pages": null,
       "chars": 3530,
+      "tool": "textutil",
       "text": "sources/text/abeyance/errata-el26-67-pjm.txt"
     },
     {
@@ -112,6 +119,7 @@
       "source_file": "20260813-3026_EL26-70-000 Errata.docx",
       "pages": null,
       "chars": 3903,
+      "tool": "textutil",
       "text": "sources/text/abeyance/errata-el26-70-miso.txt"
     },
     {
@@ -126,6 +134,7 @@
       "source_file": "20260814-3005_EL25-49-002 EOT.docx",
       "pages": null,
       "chars": 4824,
+      "tool": "textutil",
       "text": "sources/text/abeyance/eot-el25-49-pjm.txt"
     },
     {
@@ -140,6 +149,7 @@
       "source_file": "20260817-5195_Transmittal for August Compliance Filing.pdf",
       "pages": 27,
       "chars": 51285,
+      "tool": "PyMuPDF (fitz)",
       "text": "sources/text/abeyance/compliance-er26-1479-pjm.txt"
     },
     {
@@ -154,6 +164,7 @@
       "source_file": "20260817-5175_Transmittal Letter.pdf",
       "pages": 4,
       "chars": 7704,
+      "tool": "PyMuPDF (fitz)",
       "text": "sources/text/abeyance/compliance-er26-3537-pjm-tos.txt"
     },
     {
@@ -169,6 +180,7 @@
       "source_file": "20260921-3020_order.pdf",
       "pages": 11,
       "chars": 24918,
+      "tool": "PyMuPDF (fitz)",
       "text": "sources/text/abeyance/order-el26-67-001-pjm-rehearing.txt"
     },
     {
@@ -184,6 +196,7 @@
       "source_file": "20260929-3099_order.pdf",
       "pages": 97,
       "chars": 240398,
+      "tool": "PyMuPDF (fitz)",
       "text": "sources/text/abeyance/order-er26-3380-pjm-backstop.txt"
     },
     {
@@ -196,9 +209,10 @@
       "kind": "informational filing",
       "captured_at": "2026-10-08",
       "title": "PJM informational filing on the September 30, 2026 Members Committee vote on governance term sheets",
-      "source_file": "20261001-5164_filing.pdf",
+      "source_file": "20261001-5164_20260930-ad26-7-000.pdf",
       "pages": 2,
       "chars": 2224,
+      "tool": "PyMuPDF (fitz)",
       "text": "sources/text/abeyance/filing-ad26-7-pjm-governance-vote.txt"
     },
     {
@@ -214,6 +228,7 @@
       "source_file": "20261007-5181_ER26-3380-000 DOE Intervention re PJM Backstop Filing_10072026_.pdf",
       "pages": 9,
       "chars": 16939,
+      "tool": "PyMuPDF (fitz)",
       "text": "sources/text/abeyance/statement-er26-3380-doe.txt"
     },
     {
@@ -228,8 +243,8 @@
       "title": "Order accepting PJM's Large Load definition and Large Load Registry and rejecting the Interim Resource Adequacy Service, BYONC and VRR-curve revisions",
       "source_file": "20261009-3055_ER26-3515-000.pdf",
       "pages": 57,
-      "chars": 143531,
-      "tool": "pdftotext (poppler)",
+      "chars": 136331,
+      "tool": "PyMuPDF (fitz)",
       "text": "sources/text/abeyance/order-er26-3515-pjm-large-load.txt"
     },
     {
@@ -241,12 +256,12 @@
       "issued": "2026-09-21",
       "kind": "order",
       "captured_at": "2026-09-24",
-      "provenance": "extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+      "provenance": "first extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); re-extracted 2026-10-20 from the eLibrary DOCX committed in sources/originals/, word for word identical",
       "title": "Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 CAISO show-cause order",
-      "source_file": "20260921-3019_EL26-71-001.txt",
+      "source_file": "20260921-3019_EL26-71-001.docx",
       "pages": null,
       "chars": 8458,
-      "tool": "no local extraction: extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+      "tool": "textutil",
       "text": "sources/text/abeyance/order-el26-71-001-caiso-rehearing.txt"
     },
     {
@@ -258,12 +273,12 @@
       "issued": "2026-09-21",
       "kind": "order",
       "captured_at": "2026-09-24",
-      "provenance": "extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+      "provenance": "first extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); re-extracted 2026-10-20 from the eLibrary DOCX committed in sources/originals/, word for word identical",
       "title": "Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 NYISO show-cause order",
-      "source_file": "20260921-3021_EL26-69-001.txt",
+      "source_file": "20260921-3021_EL26-69-001.docx",
       "pages": null,
       "chars": 8049,
-      "tool": "no local extraction: extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+      "tool": "textutil",
       "text": "sources/text/abeyance/order-el26-69-001-nyiso-rehearing.txt"
     },
     {
@@ -275,12 +290,12 @@
       "issued": "2026-09-21",
       "kind": "order",
       "captured_at": "2026-09-24",
-      "provenance": "extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+      "provenance": "first extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); re-extracted 2026-10-20 from the eLibrary DOCX committed in sources/originals/, word for word identical",
       "title": "Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 MISO show-cause order",
-      "source_file": "20260921-3047_EL26-70-001.txt",
+      "source_file": "20260921-3047_EL26-70-001.docx",
       "pages": null,
       "chars": 8637,
-      "tool": "no local extraction: extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+      "tool": "textutil",
       "text": "sources/text/abeyance/order-el26-70-001-miso-rehearing.txt"
     },
     {
@@ -292,12 +307,12 @@
       "issued": "2026-09-21",
       "kind": "order",
       "captured_at": "2026-09-24",
-      "provenance": "extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+      "provenance": "first extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); re-extracted 2026-10-20 from the eLibrary DOCX committed in sources/originals/, word for word identical",
       "title": "Order dismissing Eolian's request for rehearing and clarification of the June 18, 2026 ISO-NE show-cause order",
-      "source_file": "20260921-3056_EL26-72-001.txt",
+      "source_file": "20260921-3056_EL26-72-001.docx",
       "pages": null,
       "chars": 8255,
-      "tool": "no local extraction: extracted in an authenticated eLibrary browser session on 2026-09-24 (git da4e14a); no second copy available to check",
+      "tool": "textutil",
       "text": "sources/text/abeyance/order-el26-72-001-isone-rehearing.txt"
     },
     {
@@ -312,6 +327,7 @@
       "source_file": "20260812-5158_Morongo Transmission - PTO OSC Answer.pdf",
       "pages": 6,
       "chars": 9289,
+      "tool": "PyMuPDF (fitz)",
       "text": "sources/text/abeyance/answer-el26-71-morongo.txt"
     }
   ]

@@ -1,509 +1,469 @@
 FERC order — PJM — Docket ER26-3515-000 — accession 20261009-3055 — 197 FERC ¶ 61,019 — Order accepting PJM's Large Load definition and Large Load Registry and rejecting the Interim Resource Adequacy Service, BYONC and VRR-curve revisions — Issued 2026-10-09 — 57 pp
-Extracted locally with pdftotext (poppler) from the document downloaded from its eLibrary accession. Verbatim; source text layer preserved.
+Extracted locally with PyMuPDF (fitz) from the document downloaded from its eLibrary accession. Verbatim; source text layer preserved.
 
 
 --- PAGE 1 ---
-                             197 FERC ¶ 61,019
-                        UNITED STATES OF AMERICA
-                 FEDERAL ENERGY REGULATORY COMMISSION
 
-Before Commissioners: Laura V. Swett, Chairman;
-                      David Rosner, Lindsay S. See,
-                      Judy W. Chang, and David LaCerte.
+197 FERC ¶ 61,019
+UNITED STATES OF AMERICA
+FEDERAL ENERGY REGULATORY COMMISSION
 
-PJM Interconnection, L.L.C.                                  Docket No. ER26-3515-000
+Before Commissioners:  Laura V. Swett, Chairman;
+                                        David Rosner, Lindsay S. See,
+                                        Judy W. Chang, and David LaCerte.
 
-                 ORDER ACCEPTING TARIFF REVISIONS IN PART
-                  AND REJECTING TARIFF REVISIONS IN PART
+PJM Interconnection, L.L.C.
+Docket No. ER26-3515-000
 
-                                 (Issued October 9, 2026)
+ORDER ACCEPTING TARIFF REVISIONS IN PART
+AND REJECTING TARIFF REVISIONS IN PART
 
-1.      On August 13, 2026, pursuant to section 205 of the Federal Power Act (FPA),1
+(Issued October 9, 2026)
+
+1.
+On August 13, 2026, pursuant to section 205 of the Federal Power Act (FPA),1
 PJM Interconnection, L.L.C. (PJM) submitted proposed revisions to its Open Access
 Transmission Tariff (OATT) and Reliability Assurance Agreement (RAA) (collectively,
-Tariff) to establish: (1) a definition of Large Load; (2) a Large Load Registry; (3) a new
+Tariff) to establish:  (1) a definition of Large Load; (2) a Large Load Registry; (3) a new
 Interim Resource Adequacy Service (IRAS); (4) a requirement for Load Serving Entities
 (LSE) serving New Large Load to designate new capacity resources in an amount at least
 equal to the New Large Load’s peak load to avoid the New Large Load being subject to
 IRAS; (5) rules for Bring Your Own New Capacity (BYONC) arrangements; and (6)
 rules to exclude Eligible New Large Load from the Variable Resource Requirement
 (VRR) curve beginning with Delivery Year 2029/2030.
-
-2.     In this order, we accept PJM’s proposed Tariff revisions to establish a definition of
+2.
+In this order, we accept PJM’s proposed Tariff revisions to establish a definition of
 Large Load and a Large Load Registry, effective October 12, 2026, as requested, and
 require PJM to submit a compliance filing within 30 days of the date of issuance of this
-order. We reject PJM’s remaining proposed Tariff revisions, as discussed below.
-
-I.     Filing Overview
-
-3.     PJM states that, beginning in the 2027/2028 Delivery Year, it will be short of
+order.  We reject PJM’s remaining proposed Tariff revisions, as discussed below.
+I.
+Filing Overview
+3.
+PJM states that, beginning in the 2027/2028 Delivery Year, it will be short of
 sufficient capacity to meet the PJM Region Reliability Requirement, particularly due to
-data center load growth and the pace of data center interconnection.2 PJM’s proposal to
-address this challenge includes several elements: (1) a definition of Large Load; (2) a
+data center load growth and the pace of data center interconnection.2  PJM’s proposal to
+address this challenge includes several elements:  (1) a definition of Large Load; (2) a
 Large Load Registry, which is a database of information pertaining to Large Loads that
 
-       1 16 U.S.C. § 824d.
-
-       2 Transmittal at 21.
+1 16 U.S.C. § 824d.
+2 Transmittal at 21.
 
 --- PAGE 2 ---
-Docket No. ER26-3515-000                                                                 -2-
-
+Docket No. ER26-3515-000
+- 2 -
 PJM proposes to establish and maintain; (3) IRAS, which PJM states will involve
 curtailments during periods when there are insufficient resources to reliably meet demand
 in real-time operations; (4) a requirement for LSEs serving New Large Load to designate
 new capacity resources in an amount at least equal to the New Large Load’s peak load;
 (5) rules for BYONC arrangements; and (6) rules to exclude Eligible New Large Load
-from the VRR curve beginning with Delivery Year 2029/2030. PJM’s proposed Tariff
+from the VRR curve beginning with Delivery Year 2029/2030.  PJM’s proposed Tariff
 revisions, as described further below, would implicate and assign responsibilities to
 several entities in PJM, including the Electric Distributor,3 the LSE,4 and the
 Transmission Owner.5
-
-4.     PJM states that each element of the filing is severable, although some elements
-build upon each other.6 PJM explains that, to facilitate Commission approval and
+4.
+PJM states that each element of the filing is severable, although some elements
+build upon each other.6  PJM explains that, to facilitate Commission approval and
 smoothly implement its IRAS framework on June 1, 2027, PJM consents to the
 Commission’s exercise of authority to modify and/or sever the proposed Tariff language,
 as needed and permitted under the FPA and NRG Power Marketing, LLC v. FERC,7
-“where such modification is consistent with PJM’s overarching objectives.”8 PJM
+“where such modification is consistent with PJM’s overarching objectives.”8  PJM
 
-       3 The Operating Agreement (OA) defines Electric Distributor as a PJM Member
-
+3 The Operating Agreement (OA) defines Electric Distributor as a PJM Member
 that (1) owns or leases with rights equivalent to ownership of electric distribution
 facilities that are used to provide electric distribution service to electric load within the
 PJM Region; or (2) is a generation and transmission cooperative or a joint municipal
 agency that has a member that owns electric distribution facilities used to provide electric
-distribution service to electric load within the PJM Region. See PJM, Intra-PJM Tariffs,
+distribution service to electric load within the PJM Region.  See PJM, Intra-PJM Tariffs,
 Operating Agreement, § 1 Definitions E – F (25.1.0).
-       4 The RAA defines LSE as any entity (or the duly designated agent of such an
-
+4 The RAA defines LSE as any entity (or the duly designated agent of such an
 entity), including a load aggregator or power marketer, (i) serving end-users within
 the PJM Region, and (ii) that has been granted the authority or has an obligation pursuant
 to state or local law, regulation or franchise to sell electric energy to end-users located
-within the PJM Region. LSEs include any end-use customer that qualifies under state
+within the PJM Region.  LSEs include any end-use customer that qualifies under state
 rules or a utility retail tariff to manage directly its own supply of electric power and
-energy and use of transmission and ancillary services. PJM, Intra-PJM Tariffs, RAA,
+energy and use of transmission and ancillary services.  PJM, Intra-PJM Tariffs, RAA,
 art. 1 (Definitions) (55.0.0).
-       5 The RAA defines Transmission Owner as a Member that owns or leases with
-
+5 The RAA defines Transmission Owner as a Member that owns or leases with
 rights equivalent to ownership Transmission Facilities and is a signatory to
-the PJM Transmission Owners Agreement. Id.
-       6 Transmittal at 9-10.
-
-       7 862 F.3d 108 (D.C. Cir. 2017) (NRG).
-
-       8 Transmittal at 122.
-                         PJM states that it “is not, for example, suggesting that the
+the PJM Transmission Owners Agreement.  Id.
+6 Transmittal at 9-10.
+7 862 F.3d 108 (D.C. Cir. 2017) (NRG).
+8 Transmittal at 122.  PJM states that it “is not, for example, suggesting that the
 Commission may modify or sever provisions of its proposal to result in an ‘entirely
 
 --- PAGE 3 ---
-Docket No. ER26-3515-000                                                                  -3-
-
+Docket No. ER26-3515-000
+- 3 -
 requests that, if the Commission elects to modify or sever any portion of the proposal, it
-should expressly prescribe the revised rate or rule.9 The majority of PJM’s proposed
+should expressly prescribe the revised rate or rule.9  The majority of PJM’s proposed
 Tariff revisions are not intended to take effect until June 1, 2027, consistent with the start
-of the 2027/2028 Delivery Year. However, PJM requests an effective date for its entire
+of the 2027/2028 Delivery Year.  However, PJM requests an effective date for its entire
 filing of October 12, 2026, which PJM argues is necessary so that it may modify the
 planning parameters for the VRR curve underlying the 2029/2030 Base Residual Auction
 (BRA) in time for the 2029/2030 BRA set to run in December 2026.10
-
-II.    Notice of Filing and Responsive Pleadings
-
-5.      Notice of PJM’s filing was published in the Federal Register, 91 Fed. Reg. 53407
+II.
+Notice of Filing and Responsive Pleadings
+5.
+Notice of PJM’s filing was published in the Federal Register, 91 Fed. Reg. 53407
 (Aug. 18, 2026), with interventions and protests due on or before September 3, 2026.
 Notices of intervention and timely-filed motions to intervene were submitted by the
 entities listed in the Appendix of this order, which also lists the abbreviated names for
 each entity and identifies those entities that submitted comments and protests.
-
-6.    On August 28, 2026, OPSI filed a motion requesting an extension of time to
-submit comments in response to PJM’s filing. On August 31, 2026, Google submitted an
-answer in support of OPSI’s motion. On September 1, 2026, EKPC and Pennsylvania
-Commission submitted answers in support of OPSI’s motion. On September 2, 2026, the
+6.
+On August 28, 2026, OPSI filed a motion requesting an extension of time to
+submit comments in response to PJM’s filing.  On August 31, 2026, Google submitted an
+answer in support of OPSI’s motion.  On September 1, 2026, EKPC and Pennsylvania
+Commission submitted answers in support of OPSI’s motion.  On September 2, 2026, the
 Commission issued a notice denying OPSI’s motion.
-
-7.     On September 3, after the 5:00 p.m. deadline, OPSI and Voltus each filed
-out-of-time comments, and Equinix filed an out-of-time protest. On September 4,
-CyrusOne filed a motion to intervene out-of-time. On September 8, 2026, the Virginia
-Commission filed out-of-time comments. On September 11, 2026, CyrusOne filed
-out-of-time comments. On September 11, 2026, Governor Shapiro filed a motion to
-intervene out-of-time. On September 15, 2026, IECA filed out-of-time comments.
-
-8.      On September 16, 2026, Governor Shapiro filed a motion for leave to answer and
-an answer to certain comments and protests. On September 18, 2026, Buckeye and
+7.
+On September 3, after the 5:00 p.m. deadline, OPSI and Voltus each filed
+out-of-time comments, and Equinix filed an out-of-time protest.  On September 4,
+CyrusOne filed a motion to intervene out-of-time.  On September 8, 2026, the Virginia
+Commission filed out-of-time comments.  On September 11, 2026, CyrusOne filed
+out-of-time comments.  On September 11, 2026, Governor Shapiro filed a motion to
+intervene out-of-time.  On September 15, 2026, IECA filed out-of-time comments.
+8.
+On September 16, 2026, Governor Shapiro filed a motion for leave to answer and
+an answer to certain comments and protests.  On September 18, 2026, Buckeye and
 NJBPU each filed motions for leave to answer and an answer to certain comments and
-protests. On September 23, 2026, PJM filed a motion for leave to answer and an answer
-to certain comments and protests. On September 25, 2026, AEP filed a motion for leave
-to answer and an answer to certain comments and PJM’s answer. On September 28,
+protests.  On September 23, 2026, PJM filed a motion for leave to answer and an answer
+to certain comments and protests.  On September 25, 2026, AEP filed a motion for leave
+to answer and an answer to certain comments and PJM’s answer.  On September 28,
 2026, Representative Pallone filed out-of-time comments; and CEBA and Vistra each
-filed motions for leave to answer and an answer to certain comments and answers. On
+filed motions for leave to answer and an answer to certain comments and answers.  On
 
-different rate design.’” Id. at 122 n.314 (quoting NRG, 862 F.3d at 115).
-       9 Id. at 123.
-
-       10 Id. at 7-8, 121-22.
+different rate design.’”  Id. at 122 n.314 (quoting NRG, 862 F.3d at 115).
+9 Id. at 123.
+10 Id. at 7-8, 121-22.
 
 --- PAGE 4 ---
-Docket No. ER26-3515-000                                                               -4-
-
+Docket No. ER26-3515-000
+- 4 -
 September 29, 2026, AEU, Constellation, and Voltus each filed motions for leave to
-answer and answer to certain answers. On September 30, 2026, Google filed a motion
-for leave to answer and answer to certain comments, protests, and answers. On
+answer and answer to certain answers.  On September 30, 2026, Google filed a motion
+for leave to answer and answer to certain comments, protests, and answers.  On
 October 1, 2026, Data Center Coalition filed a motion for leave to answer and answer to
-certain comments, protests, and answers. On October 2, 2026, FirstEnergy filed a motion
-for leave to answer and answer to certain comments, protests, and answers. On
+certain comments, protests, and answers.  On October 2, 2026, FirstEnergy filed a motion
+for leave to answer and answer to certain comments, protests, and answers.  On
 October 6, 2026, PPL filed a motion for leave to answer and answer to certain answers.
 On October 7, 2026, EPKC and SMECO each filed a motion for leave to answer and
-answer to certain answers. On October 8, 2026, PAG filed out-of-time comments. On
+answer to certain answers.  On October 8, 2026, PAG filed out-of-time comments.  On
 October 9, 2026, IMM filed a motion for leave to answer and answer to certain answers.
-
-III.   Discussion
-
-       A.     Procedural Matters
-
-9.     Pursuant to Rule 214 of the Commission’s Rules of Practice and Procedure,
+III.
+Discussion
+A.
+Procedural Matters
+9.
+Pursuant to Rule 214 of the Commission’s Rules of Practice and Procedure,
 18 C.F.R. § 385.214 (2025), the notices of intervention and timely, unopposed motions to
 intervene serve to make the entities that filed them parties to this proceeding.
-
-10.    Pursuant to Rule 214(d) of the Commission’s Rules of Practice and Procedure,
+10.
+Pursuant to Rule 214(d) of the Commission’s Rules of Practice and Procedure,
 18 C.F.R. § 385.214(d), we grant CyrusOne and Governor Shapiro’s late-filed motions to
 intervene given their interest in the proceeding, the early stage of the proceeding, and the
-absence of undue prejudice or delay. We also accept the out-of-time comments and
+absence of undue prejudice or delay.  We also accept the out-of-time comments and
 protests submitted by CyrusOne, Equinix, IECA, OPSI, PAG, Representative Pallone, the
 Virginia Commission, and Voltus.
-
-11.    Rule 213(a)(2) of the Commission’s Rules of Practice and Procedure, 18 C.F.R.
+11.
+Rule 213(a)(2) of the Commission’s Rules of Practice and Procedure, 18 C.F.R.
 § 385.213(a)(2) (2025), prohibits an answer to a protest or answer unless otherwise
-ordered by the decisional authority. We accept the answers filed by AEP, AEU,
+ordered by the decisional authority.  We accept the answers filed by AEP, AEU,
 Buckeye, CEBA, Constellation, Data Center Coalition, EKPC, FirstEnergy, Google,
 Governor Shapiro, IMM, NJBPU, PJM, PPL, SMECO, Vistra, and Voltus because they
 have provided information that assisted us in our decision-making process.
-
-       B.     Substantive Matters
-
-12.    PJM’s proposal consists of several elements that, when combined, are intended to
+B.
+Substantive Matters
+12.
+PJM’s proposal consists of several elements that, when combined, are intended to
 address the capacity shortfall that, absent the entrance of new capacity resources, will
 prevent PJM from satisfying the PJM Region Reliability Requirement starting in the
-2027/2028 Delivery Year. The first element of PJM’s proposal is to establish definitions
-of Large Load and New Large Load. The latter is designed to capture the Delivery Year
+2027/2028 Delivery Year.  The first element of PJM’s proposal is to establish definitions
+of Large Load and New Large Load.  The latter is designed to capture the Delivery Year
 when PJM’s capacity shortfall, which PJM contends is the result of data center load
 
 --- PAGE 5 ---
-Docket No. ER26-3515-000                                                                -5-
-
-growth,11 first emerges. Next, PJM proposes to develop a Large Load Registry to foster
-transparency regarding Large Load additions. With that foundation, PJM proposes to
+Docket No. ER26-3515-000
+- 5 -
+growth,11 first emerges.  Next, PJM proposes to develop a Large Load Registry to foster
+transparency regarding Large Load additions.  With that foundation, PJM proposes to
 adopt the IRAS framework, under which LSEs that seek to use Network Integration
 Transmission Service (NITS)12 to serve New Large Loads must designate sufficient new
-capacity resources, referred to as BYONC, to serve the New Large Load. If an LSE
+capacity resources, referred to as BYONC, to serve the New Large Load.  If an LSE
 using NITS to serve New Large Load fails to designate sufficient capacity resources,
 such New Large Load will be “subject to load reduction requests” when there are
-insufficient resources to reliably meet demand in real-time operations.13 In essence, the
+insufficient resources to reliably meet demand in real-time operations.13  In essence, the
 requirement that these New Large Loads must curtail under certain emergency conditions
 is designed to allow PJM to address its capacity shortfall.14
-
-13.    As outlined in greater detail below, we accept PJM’s proposal in part, effective
+13.
+As outlined in greater detail below, we accept PJM’s proposal in part, effective
 October 12, 2026, as requested, reject PJM’s proposal in part, and direct PJM to submit a
-compliance filing within 30 days of the date of this order.15 Specifically, we accept
-PJM’s proposal to establish a definition for Large Load and a Large Load Registry.16 We
+compliance filing within 30 days of the date of this order.15  Specifically, we accept
+PJM’s proposal to establish a definition for Large Load and a Large Load Registry.16  We
 find that those two elements of PJM’s proposal are just and reasonable and not unduly
-discriminatory or preferential. Given PJM’s consent to sever or modify its proposal, we
-do so here. We find that the elements of PJM’s proposal to establish a new definition of
+discriminatory or preferential.  Given PJM’s consent to sever or modify its proposal, we
+do so here.  We find that the elements of PJM’s proposal to establish a new definition of
 Large Load and a Large Load Registry are severable from the remainder of the filing and
 therefore may be accepted even though we reject the remainder of the proposal.
 
-       11 Id. at 21.
-
-       12 Under NITS, Transmission Providers provide firm transmission service to the
-
+11 Id. at 21.
+12 Under NITS, Transmission Providers provide firm transmission service to the
 Network Customer for the delivery of capacity and energy from its designated Network
 Resources to service its Network Loads on a basis that is comparable to each
 Transmission Owner’s use of the Transmission System to reliably service its Native Load
-Customers. PJM, Intra-PJM Tariffs, OATT, pt. III, § 28.3 (Network Integration
+Customers.  PJM, Intra-PJM Tariffs, OATT, pt. III, § 28.3 (Network Integration
 Transmission Service) (0.0.0).
-       13 Transmittal at 4, 21, 55; Proposed RAA, § 7.8.
-
-       14 See Transmittal at 39 (“IRAS, as proposed, is a service that specifically allows
-
+13 Transmittal at 4, 21, 55; Proposed RAA, § 7.8.
+14 See Transmittal at 39 (“IRAS, as proposed, is a service that specifically allows
 for Large Loads to interconnect without bringing their own capacity, on the condition that
 they must reduce their load or switch to on-site backup resources under specific, limited
 emergency conditions.”).
-       15 See NRG, 862 F.3d at 114-15 (discussing the Commission’s authority to propose
-
+15 See NRG, 862 F.3d at 114-15 (discussing the Commission’s authority to propose
 modifications to a utility’s FPA section 205 rate proposal).
-       16 As discussed below, although we accept PJM’s proposal to establish a definition
-
+16 As discussed below, although we accept PJM’s proposal to establish a definition
 of Large Load and a Large Load Registry, we reject the proposed Tariff sheets due to
 inclusion of language pertaining to IRAS or BYONC.
 
 --- PAGE 6 ---
-Docket No. ER26-3515-000                                                              -6-
-
-14.     While we recognize the imminent capacity shortfall in PJM, we find that two key
+Docket No. ER26-3515-000
+- 6 -
+14.
+While we recognize the imminent capacity shortfall in PJM, we find that two key
 aspects of PJM’s proposal—IRAS and BYONC—are either outside of the Commission’s
 authority or have not been sufficiently demonstrated to be just and reasonable and not
-unduly discriminatory or preferential. We do not take this decision lightly. But given the
+unduly discriminatory or preferential.  We do not take this decision lightly.  But given the
 significant discrepancies between PJM’s transmittal letter description of its proposed
 IRAS framework and its proposed Tariff revisions, as well as the lack of justification for
 many aspects of IRAS and BYONC, we cannot find that these elements of PJM’s
-proposal are just and reasonable. We therefore reject these elements of the proposal.
+proposal are just and reasonable.  We therefore reject these elements of the proposal.
 However, we provide guidance on how PJM could modify its proposal should PJM seek
 to refile it.
-
-15.     Moreover, because the elements of PJM’s proposal other than the Large Load
+15.
+Moreover, because the elements of PJM’s proposal other than the Large Load
 definition and Large Load Registry represent an integrated package that must be viewed
-as a whole, we reject the remainder of PJM’s proposal. PJM, while consenting to
+as a whole, we reject the remainder of PJM’s proposal.  PJM, while consenting to
 severance and modification of the proposal, acknowledges that the RAA and OATT
-revisions are “designed to work in lockstep and provide complementary pieces.”17 We
+revisions are “designed to work in lockstep and provide complementary pieces.”17  We
 find that the remaining elements of PJM’s proposal, such as the proposed rules for
 BYONC arrangements and the exclusion of Eligible New Large Loads from the VRR
-curve, are not simply complementary, but instead are inextricably linked. For example,
+curve, are not simply complementary, but instead are inextricably linked.  For example,
 the new obligation for LSEs seeking to use NITS to serve New Large Load to bring new
 capacity to avoid curtailment under IRAS is foundational to both the IRAS and BYONC
-frameworks. It also establishes the need for the rules for BYONC arrangements and
-facilitates excluding Eligible New Large Loads from the VRR curve. As such, we
+frameworks.  It also establishes the need for the rules for BYONC arrangements and
+facilitates excluding Eligible New Large Loads from the VRR curve.  As such, we
 conclude that, contrary to PJM’s statements in its transmittal, the only elements of its
 proposal that are severable are the proposed definition of Large Load and the proposed
 Large Load Registry, which can be implemented independent of the IRAS and BYONC
 frameworks.
+1.
+Large Load Definition and Registry
+a.
+Definition of Large Load
+i.
+PJM’s Proposal
+16.
+PJM proposes to define Large Load as:
+end-use customer(s) load that has a cumulative peak load of
+50 [MW] or greater at a single electrical site behind one or
+more points of interconnection, where for configurations
+involving multiple affiliated load facilities or multiple points
+of interconnection with affiliated load facilities behind them,
 
-             1.     Large Load Definition and Registry
-
-                    a.     Definition of Large Load
-
-                           i.     PJM’s Proposal
-
-16.   PJM proposes to define Large Load as:
-
-             end-use customer(s) load that has a cumulative peak load of
-             50 [MW] or greater at a single electrical site behind one or
-             more points of interconnection, where for configurations
-             involving multiple affiliated load facilities or multiple points
-             of interconnection with affiliated load facilities behind them,
-
-      17 Transmittal at 124.
+17 Transmittal at 124.
 
 --- PAGE 7 ---
-Docket No. ER26-3515-000                                                             -7-
-
-              all affiliated load facilities within a one-mile radius will be
-              considered a single electrical site as further described in the
-              PJM Manuals.18
-
-17.    Acknowledging that the Commission recently stated that PJM may establish its
+Docket No. ER26-3515-000
+- 7 -
+all affiliated load facilities within a one-mile radius will be
+considered a single electrical site as further described in the
+PJM Manuals.18
+17.
+Acknowledging that the Commission recently stated that PJM may establish its
 own definition of large load,19 PJM states that its definition differs from the
 Commission’s preliminary definition in several ways, and that these differences reflect
-the characteristics and realities of Large Loads in the PJM Region.20 The differences
-include: (1) setting a 50 MW cumulative peak threshold; (2) establishing a one-mile
+the characteristics and realities of Large Loads in the PJM Region.20  The differences
+include:  (1) setting a 50 MW cumulative peak threshold; (2) establishing a one-mile
 radius at a single electrical site for Large Loads interconnected at multiple points; (3)
 using the term “end-use customer(s) load” instead of “new, commercial or industrial
 customer;” (4) including co-located loads and loads with behind-the-meter generation;
-and (5) excluding a voltage threshold.21 PJM states that it proposes to define a Large
+and (5) excluding a voltage threshold.21  PJM states that it proposes to define a Large
 Load as located at a single electrical site behind one or more points of interconnection
 within a one-mile radius to avoid a scenario where, for example, a data center owner is
 not categorized as Large Load simply because the owner has elected to site a number of
-smaller data centers, each with peak loads below 50 MW, close together. PJM states that
+smaller data centers, each with peak loads below 50 MW, close together.  PJM states that
 the Commission has explicitly adopted a one-mile test in other situations to determine
 whether facilities are “at the same site” to be a Qualifying Facility.
-
-18.    PJM states that Large Load is not limited to “new” load, and instead proposes a
+18.
+PJM states that Large Load is not limited to “new” load, and instead proposes a
 separate definition, “New Large Load,” to capture the temporal aspect of such load with
-greater specificity.22 PJM proposes that New Large Load shall mean:
+greater specificity.22  PJM proposes that New Large Load shall mean:
+end-use customer load that is either (a) a Large Load that
+goes into service after June 1, 2027, or (b) incremental load
+in-service after June 1, 2027, that increases the existing end-
+use customer load at a single electrical site that, prior to such
+incremental load, did not previously meet the definition of
+Large Load.  However, to the extent three consecutive
+Delivery Years meet the requirements of Tariff, Attachment
+DD-4, section IV(b)(iii),[23] then New Large Load shall mean
 
-              end-use customer load that is either (a) a Large Load that
-              goes into service after June 1, 2027, or (b) incremental load
-              in-service after June 1, 2027, that increases the existing end-
-              use customer load at a single electrical site that, prior to such
-              incremental load, did not previously meet the definition of
-              Large Load. However, to the extent three consecutive
-              Delivery Years meet the requirements of Tariff, Attachment
-              DD-4, section IV(b)(iii),[23] then New Large Load shall mean
-
-      18 Proposed RAA, Definitions (Large Load).
-
-      19 Transmittal at 32 (citing PJM Interconnection, L.L.C., 195 FERC ¶ 61,211
-
+18 Proposed RAA, Definitions (Large Load).
+19 Transmittal at 32 (citing PJM Interconnection, L.L.C., 195 FERC ¶ 61,211
 (2026) (PJM Large Load Show Cause Order)).
-      20 Id. at 32-33.
-
-      21 Id. at 33-35.
-
-      22 Id. at 36.
+20 Id. at 32-33.
+21 Id. at 33-35.
+22 Id. at 36.
 
 --- PAGE 8 ---
-Docket No. ER26-3515-000                                                               -8-
-
-              end-use customer load that is either (a) a Large Load that
-              goes into service after June 1 of the first Delivery Year for
-              which the requirements of Tariff, Attachment DD-4, section
-              IV(b)(iii) are not met or (b) incremental load in-service after
-              June 1 of the first Delivery Year for which the requirements
-              of Tariff, Attachment DD-4, section IV(b)(iii) are not met that
-              increases the existing end-use customer load at a single
-              electrical site that, prior to such incremental load, did not
-              previously meet the definition of Large Load.24
-
-                            ii.    Pleadings
-
-19.    Protesters argue that PJM has not properly justified the 50 MW threshold for
-Large Loads.25 EPSA, for example, asserts that PJM has articulated no valid reason why
-a new 49.9 MW load will not be subject to IRAS.26 The IMM argues that the 50 MW
-cutoff will exclude a significant number of data centers.27 On the other hand, some
+Docket No. ER26-3515-000
+- 8 -
+end-use customer load that is either (a) a Large Load that
+goes into service after June 1 of the first Delivery Year for
+which the requirements of Tariff, Attachment DD-4, section
+IV(b)(iii) are not met or (b) incremental load in-service after
+June 1 of the first Delivery Year for which the requirements
+of Tariff, Attachment DD-4, section IV(b)(iii) are not met that
+increases the existing end-use customer load at a single
+electrical site that, prior to such incremental load, did not
+previously meet the definition of Large Load.24
+ii.
+Pleadings
+19.
+Protesters argue that PJM has not properly justified the 50 MW threshold for
+Large Loads.25  EPSA, for example, asserts that PJM has articulated no valid reason why
+a new 49.9 MW load will not be subject to IRAS.26  The IMM argues that the 50 MW
+cutoff will exclude a significant number of data centers.27  On the other hand, some
 parties argue that the threshold should be higher28 or that PJM has not justified including
-types of load other than data centers in the definition of Large Load.29 FirstEnergy
+types of load other than data centers in the definition of Large Load.29  FirstEnergy
 argues that the definition of Large Load should be adjusted, either to raise the minimum
 MW threshold to 200 MW, or to limit the definition to new data centers, to avoid
-capturing small and medium-sized manufacturing facilities.30 FirstEnergy acknowledges
+capturing small and medium-sized manufacturing facilities.30  FirstEnergy acknowledges
 that similar energy infrastructure must be built regardless of the type of load, but that
 
-       23 PJM explains that it proposes new Attachment DD-4 to house the rules for
-
-IRAS. Id. at 24. Attachment DD-4, section IV(b)(iii) states that, if a committed Capacity
+23 PJM explains that it proposes new Attachment DD-4 to house the rules for
+IRAS.  Id. at 24.  Attachment DD-4, section IV(b)(iii) states that, if a committed Capacity
 Resources equals or exceeds the PJM Region Reliability in a given Delivery Year, then
 PJM does not need Eligible New Large Loads to provide IRAS for that Delivery Year.
 Proposed OATT, attach. DD-4, § IV(b)(iii).
-       24 Proposed OATT, Definitions – New Large Load.
-
-       25 Buckeye Answer at 3; EKPC Protest at 11-12, 26; EPSA Protest at 4;
-
+24 Proposed OATT, Definitions – New Large Load.
+25 Buckeye Answer at 3; EKPC Protest at 11-12, 26; EPSA Protest at 4;
 FirstEnergy Protest at 10; IECA Protest at 2; Ohio ELC Comments at 1, 3-8.
-       26 EPSA Protest at 4.
-
-       27 IMM Protest at 29, 31.
-
-       28 FirstEnergy Protest at 10.
-
-       29 Id.; Buckeye Answer at 3; EKPC Protest at 11-12, 26.
-
-       30 FirstEnergy Protest at 10.
+26 EPSA Protest at 4.
+27 IMM Protest at 29, 31.
+28 FirstEnergy Protest at 10.
+29 Id.; Buckeye Answer at 3; EKPC Protest at 11-12, 26.
+30 FirstEnergy Protest at 10.
 
 --- PAGE 9 ---
-Docket No. ER26-3515-000                                                               -9-
-
+Docket No. ER26-3515-000
+- 9 -
 manufacturing should not be subject to IRAS because it generates investment and jobs,
-whereas data centers do not. EKPC similarly argues that PJM’s justification for IRAS is
+whereas data centers do not.  EKPC similarly argues that PJM’s justification for IRAS is
 based on data center load, and PJM has not justified the inclusion of industrial and
 manufacturing load, which does not present the same timing, concentration, or
 operational risks as data centers.31
-
-20.    Some protesters also assert that PJM’s distinction between new and existing Large
-Loads turns solely on an arbitrary date and has not been justified.32 They argue that PJM
+20.
+Some protesters also assert that PJM’s distinction between new and existing Large
+Loads turns solely on an arbitrary date and has not been justified.32  They argue that PJM
 has not explained why load that goes into service on May 31, 2027, should be treated
-differently from load that goes into service just one day later, on June 1, 2027. Industrial
+differently from load that goes into service just one day later, on June 1, 2027.  Industrial
 Customers and IECA assert that only incremental expansions of load that are greater than
 50 MW should be subject to IRAS and that PJM’s definitions of new and existing Large
 Load establish a baseline load value for existing Large Load customers based on
 historical usage and allow customers to demonstrate that growth is a normal fluctuation.33
-
-21.     Protesters argue that the definition of New Large Load fails to protect existing
+21.
+Protesters argue that the definition of New Large Load fails to protect existing
 commercial arrangements34 or argue for grandfathering rules for pre-expansion load.35
 Protesters also seek clarity on how the proposed definition will apply to multi-year
 projects developed in phases, some of which are built prior to June 1, 2027 and some
-after.36 Equinix and CyrusOne contend that PJM’s one-mile aggregation rule for Large
+after.36  Equinix and CyrusOne contend that PJM’s one-mile aggregation rule for Large
 Loads is unjust and unreasonable as applied to independently developed legacy data
-center facilities.37 In addition, ODEC argues that PJM should clarify how affiliation will
+center facilities.37  In addition, ODEC argues that PJM should clarify how affiliation will
 be determined for the purposes of the one-mile radius measurement.38
 
-       31 EKPC Protest at 11-12, 26.
-
-       32 America’s Power Protest at 7-8; Microsoft Protest at 6; FirstEnergy Protest at 9.
-
-       33 PJM ICC Comments at 8-10; IECA Protest at 1-2; Buckeye Answer at 4.
-
-       34 Equinix Protest at 2, 8-14; FirstEnergy Protest at 9.
-
-       35 CyrusOne Comments at 6-8; Equinix Protest at 17; IECA Protest at 2.
-
-       36 CyrusOne Comments at 6-8; Microsoft Comments at 6.
-
-       37 CyrusOne Comments at 4-6; Equinix Protest at 2, 12.
-
-       38 ODEC Comments at 8.
+31 EKPC Protest at 11-12, 26.
+32 America’s Power Protest at 7-8; Microsoft Protest at 6; FirstEnergy Protest at 9.
+33 PJM ICC Comments at 8-10; IECA Protest at 1-2; Buckeye Answer at 4.
+34 Equinix Protest at 2, 8-14; FirstEnergy Protest at 9.
+35 CyrusOne Comments at 6-8; Equinix Protest at 17; IECA Protest at 2.
+36 CyrusOne Comments at 6-8; Microsoft Comments at 6.
+37 CyrusOne Comments at 4-6; Equinix Protest at 2, 12.
+38 ODEC Comments at 8.
 
 --- PAGE 10 ---
-Docket No. ER26-3515-000                                                             - 10 -
-
-22.     In its answer, PJM highlights the importance of timely Commission approval of
-the definition of Large Load.39 In response to arguments that the 50 MW threshold is
+Docket No. ER26-3515-000
+- 10 -
+22.
+In its answer, PJM highlights the importance of timely Commission approval of
+the definition of Large Load.39  In response to arguments that the 50 MW threshold is
 unsupported and should be changed, PJM asserts that the 50 MW threshold is in keeping
 with what was contemplated by the Commission and that no information presented
-renders PJM’s proposed threshold unjust and unreasonable.40 Further, PJM contends
+renders PJM’s proposed threshold unjust and unreasonable.40  Further, PJM contends
 that, since PJM has proposed that 50 MW is the appropriate threshold necessary for
 purposes of tracking Large Loads and ensuring PJM has visibility into them to ensure
 reliability, it would be contradictory to ignore any MW that may have existed as a Large
 Load before an additional 50 MW were added.
-
-23.    In response to parties’ arguments that PJM should differentiate between data
+23.
+In response to parties’ arguments that PJM should differentiate between data
 center Large Loads and other types of Large Loads (e.g., manufacturing or industrial
 loads), PJM asserts that it is implementing the approach the Commission set forth in the
 PJM Large Load Show Cause Order—i.e., treating data center and computational,
-manufacturing, industrial, or other types of large loads the same. PJM argues that the
+manufacturing, industrial, or other types of large loads the same.  PJM argues that the
 parties have shown no basis for deviating from the Commission’s approach.41
-
-24.    In its answer, Data Center Coalition argues the PJM’s one-mile rule is not just and
-reasonable.42 Data Center Coalition argues that the proposed one-mile rule would
+24.
+In its answer, Data Center Coalition argues the PJM’s one-mile rule is not just and
+reasonable.42  Data Center Coalition argues that the proposed one-mile rule would
 unfairly subject long-operating legacy facilities to IRAS and potential curtailment merely
 because an unrelated facility is later developed nearby, despite those legacy loads having
-already been accounted for through regional planning.43 Data Center Coalition also
+already been accounted for through regional planning.43  Data Center Coalition also
 argues that PJM’s undefined use of “affiliated” to aggregate facilities within a one-mile
 radius could improperly treat independent facilities as a single Large Load; therefore,
 Data Center Coalition asserts, the term’s criteria and application should be clearly
-specified in the Tariff rather than deferred to the PJM Manuals.44 The IMM similarly
+specified in the Tariff rather than deferred to the PJM Manuals.44  The IMM similarly
 argues that PJM has not provided clear, uniform criteria for applying the one-mile radius
 
-         39 PJM Answer at 6-7.
-
-         40 Id. at 15 (citing PJM Large Load Show Cause Order, 195 FERC ¶ 61,211 at
-
+39 PJM Answer at 6-7.
+40 Id. at 15 (citing PJM Large Load Show Cause Order, 195 FERC ¶ 61,211 at
 P 58).
-         41 Id. at 16.
-
-         42 Data Center Coalition Answer at 23.
-
-         43 Id. at 23-24.
-
-         44 Id. at 24.
+41 Id. at 16.
+42 Data Center Coalition Answer at 23.
+43 Id. at 23-24.
+44 Id. at 24.
 
 --- PAGE 11 ---
-Docket No. ER26-3515-000                                                                - 11 -
-
+Docket No. ER26-3515-000
+- 11 -
 rule or defined “affiliated load facilities,” creating uncertainty about how co-located or
 connected data centers should be grouped.45
-
-25.    FirstEnergy argues that PJM has not justified applying the Large Load definition
+25.
+FirstEnergy argues that PJM has not justified applying the Large Load definition
 to manufacturing or other industrial facilities because, unlike data centers, short-notice
 curtailment of manufacturing facilities may disrupt product and supply chains, strand
 inventory, damage equipment, and require costly cleaning and restart procedures.46
-
-26.     EKPC argues that PJM does not justify the 50 MW threshold and requests that the
+26.
+EKPC argues that PJM does not justify the 50 MW threshold and requests that the
 Commission should either require PJM to narrow the definitions or to establish objective
 criteria demonstrating that non-computational load presents the same IRAS-relevant
-risks.47 The IMM argues that the 50 MW threshold would exclude a significant and
+risks.47  The IMM argues that the 50 MW threshold would exclude a significant and
 growing share of data center load and that lowering the threshold would more effectively
 prevent gaming and reflect advances in prefabricated, scalable data center technology.48
-
-                            iii.     Determination
-
-27.     We find that PJM’s proposed definition of Large Load is just and reasonable and
-not unduly discriminatory or preferential.49 First, we find that establishing the threshold
+iii.
+Determination
+27.
+We find that PJM’s proposed definition of Large Load is just and reasonable and
+not unduly discriminatory or preferential.49  First, we find that establishing the threshold
 to qualify as a Large Load at a cumulative peak of 50 MW strikes a just and reasonable
 balance between capturing the larger loads into which PJM needs visibility to ensure the
 reliability of its system and excluding smaller loads that do not raise the same reliability
-concerns in PJM.50 We acknowledge protesters’ arguments that PJM has not explained
+concerns in PJM.50  We acknowledge protesters’ arguments that PJM has not explained
 
-       45 IMM Answer at 15-16.
-
-       46 FirstEnergy Answer at 5.
-
-       47 EKPC Answer at 6-7.
-
-       48 IMM Answer at 14-15.
-
-       49 Although we find PJM’s proposed definition of Large Load just and reasonable,
-
+45 IMM Answer at 15-16.
+46 FirstEnergy Answer at 5.
+47 EKPC Answer at 6-7.
+48 IMM Answer at 14-15.
+49 Although we find PJM’s proposed definition of Large Load just and reasonable,
 we reject the proposed Tariff records due to inclusion of language pertaining to the IRAS
 and BYONC frameworks, which we reject, as explained below (proposed OATT,
 Definitions – Large Load; proposed RAA, Definitions – Large Load).
-       50 PJM Answer at 15; see also Sw. Power Pool, Inc., 194 FERC ¶ 61,031, at
-
+50 PJM Answer at 15; see also Sw. Power Pool, Inc., 194 FERC ¶ 61,031, at
 PP 10, 61 (2026) (accepting a proposed definition of a high impact large load that
 included a 50 MW threshold for new or increased load at a single site connected to the
 transmission system at a voltage level greater than 69 kV); Tri-State Generation &
@@ -511,39 +471,38 @@ Transmission Ass’n, Inc., 196 FERC ¶ 61,127, at P 76 (2026) (Tri-State) (acce
 proposal to define a high impact load as load exceeding or forecasted to exceed 45 MW
 
 --- PAGE 12 ---
-Docket No. ER26-3515-000                                                              - 12 -
-
+Docket No. ER26-3515-000
+- 12 -
 why a new 49.9 MW load should not be subject to the same requirements as a new
-50 MW load. But any cutoff criterion would inevitably exclude loads sized just below
+50 MW load.  But any cutoff criterion would inevitably exclude loads sized just below
 the threshold, and that alone does not render the definition unjust or unreasonable.51
-
-28.    In addition, we disagree with protesters’ arguments that the definition of Large
+28.
+In addition, we disagree with protesters’ arguments that the definition of Large
 Load should be modified to exclude manufacturing facilities and include only data
-centers. Protesters do not appear to argue that other types of large loads do not use
+centers.  Protesters do not appear to argue that other types of large loads do not use
 energy at the same magnitude as data centers or do not have the same potential impacts
-on the transmission system. Nor do protesters appear to argue that other types of large
+on the transmission system.  Nor do protesters appear to argue that other types of large
 loads otherwise have different effects on resource adequacy that would justify excluding
-them from the definition of Large Load. As such, we find reasonable PJM’s proposal to
+them from the definition of Large Load.  As such, we find reasonable PJM’s proposal to
 include all types of large loads in the Large Load definition.
-
-29.     We acknowledge that commenters put forth alternate definitions of Large Load in
-the record. However, having found PJM’s proposed definition of Large Load just and
-reasonable, as discussed above, we need not opine on these alternate definitions. For
+29.
+We acknowledge that commenters put forth alternate definitions of Large Load in
+the record.  However, having found PJM’s proposed definition of Large Load just and
+reasonable, as discussed above, we need not opine on these alternate definitions.  For
 filings made under FPA section 205, the Commission evaluates whether the proposal in
 the filing is just and reasonable, and not whether alternative proposals are more or less
 reasonable than the filing party’s proposal.52
-
-30.     We also disagree with protesters’ arguments that defining a Large Load as a single
+30.
+We also disagree with protesters’ arguments that defining a Large Load as a single
 electrical site behind one or more points of interconnection within a one-mile radius is
-unjust and unreasonable. As PJM explains, the one-mile radius paired with the single
+unjust and unreasonable.  As PJM explains, the one-mile radius paired with the single
 electrical site requirement is necessary to ensure that loads that are physically located
 together and affiliated are considered as a single facility for the purposes of the Large
-Load definition. We agree with PJM that this requirement will preclude a scenario
+Load definition.  We agree with PJM that this requirement will preclude a scenario
 where, for example, a data center load is not categorized as Large Load simply because
 
 within four years and served from a single delivery point).
-       51 See, e.g., PJM Interconnection, L.L.C., 181 FERC ¶ 61,162, at P 66 (2022)
-
+51 See, e.g., PJM Interconnection, L.L.C., 181 FERC ¶ 61,162, at P 66 (2022)
 (stating with respect to PJM’s proposed threshold, “while specific cutoff criteria ‘will
 exclude certain interconnection customers’ from participation in a transition cluster, ‘any
 cutoff date inevitably will have that effect’”), order on reh’g, 184 FERC ¶ 61,006, at
@@ -551,201 +510,183 @@ P 30 (2023) (finding “any cutoff amount will inevitably exclude certain interc
 customers from access to the expedited process”); see also Tri-State Generation &
 Transmission Ass’n, Inc., 175 FERC ¶ 61,128, at P 14 (2021) (citing PacifiCorp,
 173 FERC ¶ 61,016, at P 25 (2020)).
-       52 See Cities of Bethany v. FERC, 727 F.2d 1131, 1136 (D.C. Cir. 2007) (finding
-
+52 See Cities of Bethany v. FERC, 727 F.2d 1131, 1136 (D.C. Cir. 2007) (finding
 that, when determining whether a rate was just and reasonable, the Commission properly
 did not consider “whether a proposed rate schedule is more or less reasonable than
 alternative rate designs”).
 
 --- PAGE 13 ---
-Docket No. ER26-3515-000                                                                - 13 -
-
+Docket No. ER26-3515-000
+- 13 -
 the owner has elected to site a number of smaller data centers, each with peak loads
-below 50 MW, close together.53 Regarding ODEC’s request for clarification for how
+below 50 MW, close together.53  Regarding ODEC’s request for clarification for how
 affiliation will be determined for the purposes of measuring the one-mile radius, we note
 that “affiliate” is a defined term in the Tariff,54 and PJM explains that it intends to detail
 in the PJM Manuals the method of calculating the one-mile distance and for examining
 different configurations to determine whether they may constitute a single electrical site.
 We agree with PJM that these are implementation details that are not necessary to include
 in the Tariff.
-
-31.     We find that PJM’s proposal to add a definition of New Large Load is
-fundamentally a part of PJM’s IRAS package, discussed below. PJM explains that the
+31.
+We find that PJM’s proposal to add a definition of New Large Load is
+fundamentally a part of PJM’s IRAS package, discussed below.  PJM explains that the
 term New Large Load is needed to describe the subset of Large Loads that PJM proposes
 may be subject to curtailment where the LSE does not designate capacity to offset the
-load.55 Given that we are rejecting these aspects of PJM’s proposal, as discussed below,
-we also sever and reject the definition of New Large Load without prejudice. While we
+load.55  Given that we are rejecting these aspects of PJM’s proposal, as discussed below,
+we also sever and reject the definition of New Large Load without prejudice.  While we
 do not reach the merits of the definition of New Large Load, we note that protesters argue
 that the definition of New Large Load does not protect existing commercial arrangements
 for incremental large load additions to existing Large Loads, and because we do not reach
 the merits of the definition of New Large Load, we do not address protesters’ remaining
-comments related to the definition of New Large Load.56 Should PJM choose to refile a
+comments related to the definition of New Large Load.56  Should PJM choose to refile a
 modified version of its proposed IRAS framework, we encourage PJM to address how its
 definition of New Large Load would be tailored to protect existing commercial
 arrangements.
 
-       53 Transmittal at 33-34.
-
-       54 The PJM OATT defines “Affiliate” as any two or more entities, one of which
-
-Controls the other or that are under common Control. “Control,” as that term is used in
+53 Transmittal at 33-34.
+54 The PJM OATT defines “Affiliate” as any two or more entities, one of which
+Controls the other or that are under common Control.  “Control,” as that term is used in
 this definition, is defined as the possession, directly or indirectly, of the power to direct
-the management or policies of an entity. Ownership of publicly-traded equity securities
+the management or policies of an entity.  Ownership of publicly-traded equity securities
 of another entity shall not result in Control or affiliation for purposes of the Tariff or
 Operating Agreement if the securities are held as an investment, the holder owns (in its
 name or via intermediaries) less than 10 percent (10%) of the outstanding securities of the
 entity, the holder does not have representation on the entity’s board of directors (or
 equivalent managing entity) or vice versa, and the holder does not in fact exercise
-influence over day-to-day management decisions. PJM, Intra-PJM Tariffs, OATT,
+influence over day-to-day management decisions.  PJM, Intra-PJM Tariffs, OATT,
 Definitions A – B (19.1.1).
-       55 Transmittal at 38-40.
-
-       56 E.g., Equinix Protest at 2, 8-14; FirstEnergy Protest at 9.
+55 Transmittal at 38-40.
+56 E.g., Equinix Protest at 2, 8-14; FirstEnergy Protest at 9.
 
 --- PAGE 14 ---
-Docket No. ER26-3515-000                                                                - 14 -
-
-32.     Because we reject PJM’s proposed definition of New Large Load, we direct PJM
+Docket No. ER26-3515-000
+- 14 -
+32.
+Because we reject PJM’s proposed definition of New Large Load, we direct PJM
 to submit a compliance filing, within 30 days of the date of this order, with OATT and
 RAA revisions that include only the definition of Large Load and do not include the
 definition of or references to New Large Load.
-
-                       b.     Large Load Registry
-
-                              i.    PJM’s Proposal
-
-33.    PJM proposes to require LSEs to submit information to PJM about the Large
-Loads they serve, which PJM will maintain in a Large Load Registry.57 Specifically,
+b.
+Large Load Registry
+i.
+PJM’s Proposal
+33.
+PJM proposes to require LSEs to submit information to PJM about the Large
+Loads they serve, which PJM will maintain in a Large Load Registry.57  Specifically,
 PJM proposes revisions to Schedule 11 of the RAA to establish a registry of Large Loads
 in the PJM Region capturing existing Large Loads and New Large Loads that will
-interconnect in the future.58 PJM explains the Large Load Registry will include
+interconnect in the future.58  PJM explains the Large Load Registry will include
 information such as the Eligible Customer for the Large Load; a description of the Large
 Load; its location; the in-service date for each increment of load; any peak shaving
 adjustment value; the delivery point/point of interconnection; peak load quantity and
 ramp schedule; telemetry specifications; backup generation including fuel type and
 permitting limitations; contracts or service agreements between the Large Load and the
 LSE; points of contact at the applicable transmission owner, Electric Distributor, and
-LSE; and other details as necessary in accordance with the PJM Manuals.59 PJM
+LSE; and other details as necessary in accordance with the PJM Manuals.59  PJM
 proposes to maintain the confidentiality of the information in the Large Load Registry
 consistent with PJM’s existing confidentiality obligations under Operating Agreement,
 section 18.17.60
-
-34.    PJM states that the purpose of this registry is to: (1) enable PJM to better forecast
+34.
+PJM states that the purpose of this registry is to:  (1) enable PJM to better forecast
 load growth, plan and manage the transmission system, and study and provide the
 anticipated new transmission services for co-located loads and Large Loads; and (2)
 make information available to Authorized Commissions,61 Transmission Owners, Electric
 
-       57 Transmittal at 36-37.
-
-       58 Id. at 22, 28-48.
-
-       59 Id. at 37.
-
-       60 Id. at 42.
-
-       61 “Authorized Commission” means (i) a State public utility commission that
-
+57 Transmittal at 36-37.
+58 Id. at 22, 28-48.
+59 Id. at 37.
+60 Id. at 42.
+61 “Authorized Commission” means (i) a State public utility commission that
 regulates the distribution or supply of electricity to retail customers and is legally charged
 with monitoring the operation of wholesale or retail markets serving retail suppliers or
 customers within its State or (ii) an association or organization comprised exclusively of
-State public utility commissions described in the immediately preceding clause (i). PJM,
+State public utility commissions described in the immediately preceding clause (i).  PJM,
 
 --- PAGE 15 ---
-Docket No. ER26-3515-000                                                              - 15 -
-
+Docket No. ER26-3515-000
+- 15 -
 Distributors, LSEs, the IMM, the Commission, and other entities pursuant to the
 Operating Agreement, subject to appropriate confidentiality and data protection
-safeguards. PJM likewise notes that this information will be useful for states in
+safeguards.  PJM likewise notes that this information will be useful for states in
 monitoring adherence to Large Loads’ commitments to bringing capacity to offset
 demand and protect against higher prices for other customers, as well as implementing
-their own retail constructs.62 PJM also proposes to aggregate data from the Large Load
-Registry and post it on the PJM website.63 Additionally, PJM states that it will use the
+their own retail constructs.62  PJM also proposes to aggregate data from the Large Load
+Registry and post it on the PJM website.63  Additionally, PJM states that it will use the
 Large Load Registry to implement its proposed IRAS framework.
-
-35.     PJM proposes to require that the information used to develop and maintain the
-Large Load Registry be “submit[ted] or cause to be submitted” to PJM by LSEs. In
+35.
+PJM proposes to require that the information used to develop and maintain the
+Large Load Registry be “submit[ted] or cause to be submitted” to PJM by LSEs.  In
 addition, PJM proposes to obtain information from Electric Distributors to coordinate
 with applicable Transmission Owners and Electric Distributors, as needed, to validate the
 information provided in the Large Load Registry or to consult with relevant Large
-Loads.64 PJM states that the Commission has previously accepted proposals by PJM to
+Loads.64  PJM states that the Commission has previously accepted proposals by PJM to
 require and obtain information from jurisdictional entities such as Electric Distributors
-and LSEs.65 PJM argues that its authority to obtain “data and details concerning large
+and LSEs.65  PJM argues that its authority to obtain “data and details concerning large
 load additions” finds support in the PJM Large Load Show Cause Order, which expressly
 required PJM and the PJM Transmission Owners to post and regularly update data and
 details concerning large load additions.66
 
 Intra-PJM Tariff, Operating Agreement, Definitions A-B (9.2.2).
-       62 Id. at 28-29.
-
-       63 Id. at 28.
-
-       64 Id. at 45-46 (citing proposed RAA, Schedule 11, § B.1).
-
-       65 Id. at 46 (citing PJM Interconnection, L.L.C., 188 FERC ¶ 61,200, at P 40
-
+62 Id. at 28-29.
+63 Id. at 28.
+64 Id. at 45-46 (citing proposed RAA, Schedule 11, § B.1).
+65 Id. at 46 (citing PJM Interconnection, L.L.C., 188 FERC ¶ 61,200, at P 40
 & n.65 (2024) (finding that an “Electric Distributor is the party with the distribution and
 metering facilities defining a zone/area and responsible for reporting load information to
 PJM[,]” and also noting that, “under the current framework, each LSE already reports
 their peak load contribution to the Electric Distributor, which is the entity ultimately
-responsible for reporting that information to PJM.” (citation modified)). PJM states that
-its information-gathering authority is wide. Id. (citing FERC v. Elec. Power Supply
-Ass’n, 577 U.S. 260, 278-79 (2016) (EPSA); 16 U.S.C. § 824(b)). PJM also notes
+responsible for reporting that information to PJM.” (citation modified)).  PJM states that
+its information-gathering authority is wide.  Id. (citing FERC v. Elec. Power Supply
+Ass’n, 577 U.S. 260, 278-79 (2016) (EPSA); 16 U.S.C. § 824(b)).  PJM also notes
 similarities to longstanding requirements applicable to Demand Resources, as set forth in
-Order No. 719-A. Id. at 46-47 (citing Wholesale Competition in Regions with Organized
+Order No. 719-A.  Id. at 46-47 (citing Wholesale Competition in Regions with Organized
 Elec. Mrkts., Order No. 719-A, 128 FERC ¶ 61,059, order on clarification, Order No.
 719-B, 129 FERC ¶ 61,252 (2009)).
-       66 Id. at 47-48 (quoting PJM Large Load Show Cause Order, 195 FERC ¶ 61,211
+66 Id. at 47-48 (quoting PJM Large Load Show Cause Order, 195 FERC ¶ 61,211
 
 --- PAGE 16 ---
-Docket No. ER26-3515-000                                                             - 16 -
-
-                              ii.    Pleadings
-
-36.     Several parties support the creation of a Large Load Registry.67 Google asserts
+Docket No. ER26-3515-000
+- 16 -
+ii.
+Pleadings
+36.
+Several parties support the creation of a Large Load Registry.67  Google asserts
 that the Commission has the authority to accept only the Large Load Registry and should
-sever the remainder of the proposal. According to Google, this approach would be
+sever the remainder of the proposal.  According to Google, this approach would be
 consistent with PJM’s goals of improving resource adequacy in the region while ensuring
-that service to existing residential customers remains reliable.68 Public Interest
+that service to existing residential customers remains reliable.68  Public Interest
 Organizations (PIO)69 argue that PJM’s proposal addresses some of the concerns related
 to large load interconnection, cost transparency, and reliability impacts laid out in the
 PJM Large Load Show Cause Order by proposing to establish a Large Load Registry.70
 Many state consumer advocates assert that they support the Large Load Registry, but
 argue that excluding state consumer advocates from the category of entities eligible to
-access confidential Large Load Registry information is not just and reasonable.71 Some
+access confidential Large Load Registry information is not just and reasonable.71  Some
 commenters suggest additional improvements to the database.72
-
-37.     Protesters object to the responsibility for accuracy and any costs for compliance
+37.
+Protesters object to the responsibility for accuracy and any costs for compliance
 for the Large Load Registry falling on Transmission Owners and Electric Distributors.
 Joint Consumer Advocates73 assert that, because the Large Load Registry is critical to the
 success of IRAS, it is unreasonable that, under PJM’s proposed Large Load Registry,
 New Large Loads apparently bear no affirmative, Tariff-expressed obligation either to
-submit data or to substantiate it.74 SMECO similarly asserts that the proposed Large
+submit data or to substantiate it.74  SMECO similarly asserts that the proposed Large
 
 at P 74).
-         67 Google Protest at 3; NJBPU Protest at 13-14; Ohio Consumers’ Counsel Protest
-
+67 Google Protest at 3; NJBPU Protest at 13-14; Ohio Consumers’ Counsel Protest
 at 20.
-         68 Google Protest at 18.
-
-         69 PIOs include Sierra Club, Natural Resources Defense Council, Environmental
-
+68 Google Protest at 18.
+69 PIOs include Sierra Club, Natural Resources Defense Council, Environmental
 Law and Policy Center, Appalachian Voices, and the Center for Progressive Reform.
-         70 PIOs Protest at 16-18.
-
-         71 Ohio Consumers’ Counsel Protest at 20; OPSI Comments at 7; Pennsylvania
-
+70 PIOs Protest at 16-18.
+71 Ohio Consumers’ Counsel Protest at 20; OPSI Comments at 7; Pennsylvania
 Commission Comments at 6.
-         72 PAG Comments at 1-2; PAG Supplemental Comments at 2-3.
-
-         73 Joint Consumer Advocates include the Delaware Division of the Public
-
+72 PAG Comments at 1-2; PAG Supplemental Comments at 2-3.
+73 Joint Consumer Advocates include the Delaware Division of the Public
 Advocate, District of Columbia Office of People’s Counsel, Illinois Citizens Utility
 Board, Office of the Illinois Attorney General, Maryland Office of the People’s Counsel,
 and New Jersey Division of Rate Counsel.
 
 --- PAGE 17 ---
-Docket No. ER26-3515-000                                                             - 17 -
-
+Docket No. ER26-3515-000
+- 17 -
 Load Registry’s data reporting mandate is deferred to future PJM Manual revisions, with
 no mechanism identified for Electric Distributors to recover the costs of compliance.75
 SMECO requests that the Commission require PJM to file Manual provisions for review
@@ -753,285 +694,258 @@ before the Large Load Registry becomes effective, clarify the scope of Electric
 Distributor liability for information sourced from LSEs or Large Loads, and identify a
 mechanism for recovering costs of complying with its obligations related to the Large
 Load Registry.
-
-38.    Equinix argues that PJM’s proposed Large Load Registry lacks essential due
+38.
+Equinix argues that PJM’s proposed Large Load Registry lacks essential due
 process protections and that PJM may rely on registry data without requiring notice to
 affected customers, verification by those customers, or a meaningful correction
-mechanism.76 Equinix states that this prevents customers from determining their IRAS
+mechanism.76  Equinix states that this prevents customers from determining their IRAS
 obligations, undermines long-term procurement planning, and may force loads to commit
 to BYONC arrangements without assurance that the Large Load Registry’s treatment
-aligns with retail curtailment rules.77 Industrial Customers request additional substantive
+aligns with retail curtailment rules.77  Industrial Customers request additional substantive
 and due process protections if existing Large Loads are included in the registry, including
 customer notice, correction, and appeal procedures and robust confidentiality safeguards
 for sensitive operational and commercial information.78
-
-39.     Industrial Customers and IECA assert that existing large loads should be excluded
+39.
+Industrial Customers and IECA assert that existing large loads should be excluded
 from the proposed Large Load Registry to the extent it is used to implement IRAS; in
 their view, the Large Load Registry’s purpose is to track New Large Loads driving new
 system costs, not existing customers already integrated into the grid and reflected in
-historical forecasts.79 Other parties, such as Joint Consumer Advocates and ODEC, raise
-confidentiality concerns with the registry. ODEC seeks clarification from PJM as to
+historical forecasts.79  Other parties, such as Joint Consumer Advocates and ODEC, raise
+confidentiality concerns with the registry.  ODEC seeks clarification from PJM as to
 whether LSEs will be required to provide Large Load Registry information, and is
 concerned that PJM’s proposal will require LSEs to provide information that they may
-not be able to obtain.80 Joint Consumer Advocates claim that PJM’s proposal
+not be able to obtain.80  Joint Consumer Advocates claim that PJM’s proposal
 unreasonably restricts state consumer advocates’ access to the Large Load Registry,
 
-       74 Joint Consumer Advocates Protest at 32-33.
-
-       75 SMECO Protest at 11-13.
-
-       76 Equinix Protest at 2.
-
-       77 Id. at 12-14.
-
-       78 Industrial Customers Comments at 7-8.
-
-       79 Id. at 4; IECA Protest at 1.
-
-       80 ODEC Comments at 3-6.
+74 Joint Consumer Advocates Protest at 32-33.
+75 SMECO Protest at 11-13.
+76 Equinix Protest at 2.
+77 Id. at 12-14.
+78 Industrial Customers Comments at 7-8.
+79 Id. at 4; IECA Protest at 1.
+80 ODEC Comments at 3-6.
 
 --- PAGE 18 ---
-Docket No. ER26-3515-000                                                            - 18 -
-
+Docket No. ER26-3515-000
+- 18 -
 arguing entities with access are subject to onerous and insurmountable confidentiality
-restrictions.81 Joint Consumer Advocates and Ohio Consumers’ Counsel argue that PJM
+restrictions.81  Joint Consumer Advocates and Ohio Consumers’ Counsel argue that PJM
 should allow state consumer advocates access to the Large Load Registry because the
-information will play a central role in their advocacy efforts.82 Pennsylvania
+information will play a central role in their advocacy efforts.82  Pennsylvania
 Commission similarly states that it supports PJM’s proposed Large Load Registry, but
 requests that state utility commissions have access, and that the Large Load Registry
-should contain curtailment data.83 OPSI and Ohio Consumers’ Counsel assert that states
+should contain curtailment data.83  OPSI and Ohio Consumers’ Counsel assert that states
 must have meaningful access to the registry so they can determine how curtailment
 should be implemented at the retail level and how resulting costs or responsibilities
-should be allocated consistent with state law and policy.84 Similarly, Representative
+should be allocated consistent with state law and policy.84  Similarly, Representative
 Pallone argues that the Large Load Registry, or as much of it as possible, must be public
 because it would be invaluable for improving forecasts of electricity demand.85
-
-40.    The IMM argues that the proposed Large Load Registry, by itself, does not
+40.
+The IMM argues that the proposed Large Load Registry, by itself, does not
 establish that PJM will receive real-time telemetry sufficient to monitor the load during
 an IRAS event, or to determine whether the required reduction action actually occurred.86
 The IMM contends that telemetry and performance measurement requirements are
 particularly important if IRAS reductions are to be treated as an operational reliability
 resource rather than merely as a forecasted or administrative load adjustment.
-
-41.    In its answer, PJM highlights the importance of timely Commission approval of
-the Large Load Registry.87 PJM states that the Commission has recognized that PJM
+41.
+In its answer, PJM highlights the importance of timely Commission approval of
+the Large Load Registry.87  PJM states that the Commission has recognized that PJM
 must have visibility into where Large Loads will be located to be prepared for operational
-issues distinctive to Large Loads.88 PJM states that there have been severe incidents of
+issues distinctive to Large Loads.88  PJM states that there have been severe incidents of
 large loads tripping offline in PJM, which could have led to significant outages had PJM
 
-      81 Joint Consumer Advocates Protest at 33.
-
-      82 Id. at 34; Ohio Consumers’ Counsel Protest at 22.
-
-      83 Pennsylvania Commission Comments at 6.
-
-      84 Ohio Consumers’ Counsel Protest at 9; OPSI Comments at 7.
-
-      85 Representative Pallone Comments at 3.
-
-      86 IMM Protest at 27.
-
-      87 PJM Answer at 6-7.
-
-      88 Id. at 9 (citing PJM Interconnection, L.L.C., 193 FERC ¶ 61,217, at P 212 n.444
-
+81 Joint Consumer Advocates Protest at 33.
+82 Id. at 34; Ohio Consumers’ Counsel Protest at 22.
+83 Pennsylvania Commission Comments at 6.
+84 Ohio Consumers’ Counsel Protest at 9; OPSI Comments at 7.
+85 Representative Pallone Comments at 3.
+86 IMM Protest at 27.
+87 PJM Answer at 6-7.
+88 Id. at 9 (citing PJM Interconnection, L.L.C., 193 FERC ¶ 61,217, at P 212 n.444
 (2025) (PJM Co-Location Order)).
 
 --- PAGE 19 ---
-Docket No. ER26-3515-000                                                                - 19 -
-
-not been able to respond in time.89 PJM asserts that such information will also be
+Docket No. ER26-3515-000
+- 19 -
+not been able to respond in time.89  PJM asserts that such information will also be
 invaluable for states and other planning entities.
-
-42.    In response to states and state consumer advocates asserting that they should have
+42.
+In response to states and state consumer advocates asserting that they should have
 broader, less-restricted access to the Large Load Registry, PJM asserts that the
 information contained in the Large Load Registry will be available to Authorized
-Commissions, among others, subject to confidentiality requirements.90 PJM states that
+Commissions, among others, subject to confidentiality requirements.90  PJM states that
 “Authorized Commission” is currently defined to include state public utility
-commissions, as well as organizations thereof.91 PJM clarifies that the proposal does not
+commissions, as well as organizations thereof.91  PJM clarifies that the proposal does not
 recommend any new restrictions and that PJM plans to adhere to its existing rules for
 disseminating confidential information, as set forth in the Operating Agreement, and
-which the Commission approved many years ago.92 PJM explains that the Large Load
+which the Commission approved many years ago.92  PJM explains that the Large Load
 Registry is expected to collect information that may be confidential or commercially
-sensitive, or that may implicate infrastructure security concerns. Therefore, PJM asserts,
+sensitive, or that may implicate infrastructure security concerns.  Therefore, PJM asserts,
 it must only permit access to this registry to “as small a universe of entities as possible,”
 while still making sure it is available to those who require access to implement their
 responsibilities, as well as operational and planning needs.93
-
-43.    In response to ODEC, PJM clarifies that it is the LSE serving a Large Load that is
+43.
+In response to ODEC, PJM clarifies that it is the LSE serving a Large Load that is
 obligated to provide PJM with the information for the Large Load Registry, but
 acknowledges that there may be instances where an LSE may not have all the information
 
-       89 Id. (citing James Downing, Data Centers’ Reliability Impacts Examined at
-
+89 Id. (citing James Downing, Data Centers’ Reliability Impacts Examined at
 FERC Meeting, RTO Insider (Apr. 17, 2025), https://www.rtoinsider.com/103130-ferc-
 gets-update-data-center-reliability/ (discussing 1,500 MW drop from Louden County data
 center tripping offline)).
-       90 Id. at 10.
-
-       91 Id. (citing PJM, Intra-PJM Tariffs, Operating Agreement, Definitions (A – B)
-
+90 Id. at 10.
+91 Id. (citing PJM, Intra-PJM Tariffs, Operating Agreement, Definitions (A – B)
 (9.2.2) (“‘Authorized Commission’ shall mean (i) a State public utility commission that
 regulates the distribution or supply of electricity to retail customers and is legally charged
 with monitoring the operation of wholesale or retail markets serving retail suppliers or
 customers within its State or (ii) an association or organization comprised exclusively of
 State public utility commissions described in the immediately preceding clause (i).”)).
-       92 Id. at 12 (citing PJM Interconnection, L.L.C., 107 FERC ¶ 61,322 (2004)).
-
-       93 Id. at 11.
+92 Id. at 12 (citing PJM Interconnection, L.L.C., 107 FERC ¶ 61,322 (2004)).
+93 Id. at 11.
 
 --- PAGE 20 ---
-Docket No. ER26-3515-000                                                                - 20 -
-
+Docket No. ER26-3515-000
+- 20 -
 required readily available, which is why the RAA language contemplates that the Electric
 Distributor may provide such information.94
-
-44.    In response to Industrial Customers and IECA’s arguments that the Large Load
+44.
+In response to Industrial Customers and IECA’s arguments that the Large Load
 Registry should not include existing Large Loads, PJM states that, regardless of IRAS,
 PJM must have visibility into the full spectrum of all Large Loads in its footprint to
 properly manage its system and ensure reliability.95
-
-45.     In their answers, Constellation and Google argue that the Commission should
+45.
+In their answers, Constellation and Google argue that the Commission should
 reject PJM’s proposal, other than the proposal to create the Large Load Registry.96
-
-46.    FirstEnergy argues that PJM’s assertion that it does not presently perceive a
+46.
+FirstEnergy argues that PJM’s assertion that it does not presently perceive a
 connection between the Large Load Registry and the forthcoming pro forma transmission
 service agreement does not demonstrate that finalizing the Large Load Registry now will
 avoid overlapping, inconsistent, or duplicative requirements.97
-
-47.    SMECO requests that the Commission direct PJM to conform proposed Tariff,
+47.
+SMECO requests that the Commission direct PJM to conform proposed Tariff,
 Attachment DD-4, section III(b) to PJM’s stated position that the LSE bears the Large
 Load Registry reporting obligation, and to clarify that an Electric Distributor that relays,
 in good faith, information originating with an LSE or Large Load is not responsible for
 the accuracy of that information.98
-
-                            iii.     Determination
-
-48.    We find that PJM’s proposed Large Load Registry is just and reasonable and not
+iii.
+Determination
+48.
+We find that PJM’s proposed Large Load Registry is just and reasonable and not
 unduly discriminatory or preferential because it will require LSEs to provide information
 about the Large Loads that they serve to PJM, which in turn will provide PJM with the
 information necessary to address the operational impacts of Large Loads on the PJM
-transmission system. We agree with PJM that its proposed Large Load Registry will
+transmission system.  We agree with PJM that its proposed Large Load Registry will
 enable PJM to better forecast load growth and to plan and manage its transmission
-system.99 We further find that the Large Load Registry will provide valuable information
+system.99  We further find that the Large Load Registry will provide valuable information
 
-       94 Id. at 13.
-
-       95 Id. at 13-14.
-
-       96 Constellation Answer at 21; Google Answer at 6.
-
-       97 FirstEnergy Answer at 5.
-
-       98 SMECO Answer at 7.
-
-       99 Transmittal at 28-29.
+94 Id. at 13.
+95 Id. at 13-14.
+96 Constellation Answer at 21; Google Answer at 6.
+97 FirstEnergy Answer at 5.
+98 SMECO Answer at 7.
+99 Transmittal at 28-29.
 
 --- PAGE 21 ---
-Docket No. ER26-3515-000                                                               - 21 -
-
+Docket No. ER26-3515-000
+- 21 -
 concerning—and visibility into—all Large Loads connecting to the PJM transmission
 system, separate and apart from implementation of PJM’s proposed IRAS framework.100
 Therefore, we sever PJM’s proposed Large Load Registry from the remainder of PJM’s
-proposal and accept it.101 We direct PJM to submit a compliance filing, within 30 days of
+proposal and accept it.101  We direct PJM to submit a compliance filing, within 30 days of
 the date of this order, with the OATT and RAA provisions for the Large Load Registry,
 removing the language regarding the proposed IRAS and BYONC frameworks.
-
-49.     We also find just and reasonable PJM’s proposal to make information in the Large
+49.
+We also find just and reasonable PJM’s proposal to make information in the Large
 Load Registry available to Authorized Commissions, Transmission Owners, Electric
 Distributors, LSEs, the IMM, the Commission, and other entities, subject to appropriate
-confidentiality and data protection safeguards. Some protesters express concern
+confidentiality and data protection safeguards.  Some protesters express concern
 regarding the Large Load Registry information being subject to confidentiality
-restrictions. We disagree with these parties and find that PJM’s proposal includes
-reasonable safeguards for confidential information. PJM explains that the Large Load
+restrictions.  We disagree with these parties and find that PJM’s proposal includes
+reasonable safeguards for confidential information.  PJM explains that the Large Load
 Registry will be available only to entities that already have access to this sort of
 information and consistent with existing confidentiality rules, i.e., PJM proposes to
 follow its existing, Commission-approved rules, rules that currently do not allow state
-consumer advocates or similar entities to have access to this type of information. PJM
+consumer advocates or similar entities to have access to this type of information.  PJM
 further states that it will post only aggregated data on the PJM website, consistent with its
-existing confidentiality protections. We find that PJM’s existing confidentiality rules and
+existing confidentiality protections.  We find that PJM’s existing confidentiality rules and
 commitment to make only aggregate data publicly available will adequately safeguard
 confidential information submitted and maintained as part of the Large Load Registry,
 while balancing the need for broader transparency concerning Large Loads in the
 aggregate in PJM.
-
-50.    We disagree with protesters’ arguments that it is not reasonable for Electric
+50.
+We disagree with protesters’ arguments that it is not reasonable for Electric
 Distributors to be responsible for the accuracy of the information in the Large Load
-Registry. As PJM clarifies in its answer, the LSE serving a Large Load is obligated to
+Registry.  As PJM clarifies in its answer, the LSE serving a Large Load is obligated to
 provide PJM with the information for the Large Load Registry, and the Electric
 Distributor may provide information when the LSE does not have all the information
-required readily available.102 With respect to SMECO’s concern that there is no
+required readily available.102  With respect to SMECO’s concern that there is no
 
-       100 We note that the proposed Large Load definition accepted above includes all
-
+100 We note that the proposed Large Load definition accepted above includes all
 Large Loads regardless of the in-service date.
-       101 Specifically, we find that PJM’s proposed Large Load Registry as described in
-
+101 Specifically, we find that PJM’s proposed Large Load Registry as described in
 proposed OATT, Attachment DD-4, § II(a), III(b), and proposed RAA Schedule 11
 revisions in sections (B)(1), B(2)(a), and B(2)(b), is just and reasonable and not unduly
-discriminatory or preferential. However, consistent with our findings regarding PJM’s
+discriminatory or preferential.  However, consistent with our findings regarding PJM’s
 proposed IRAS framework below, we reject proposed OATT, attach. DD-4, § II and
 § III, as well as proposed RAA, Schedule 11.
-       102 Transmittal at 13.   The proposed RAA states that, “each [entity bound by the
+102 Transmittal at 13.  The proposed RAA states that, “each [entity bound by the
 
 --- PAGE 22 ---
-Docket No. ER26-3515-000                                                             - 22 -
-
+Docket No. ER26-3515-000
+- 22 -
 mechanism for Electric Distributors to recover the costs of compliance, SMECO has not
 explained what costs it will incur, whether these are costs related to a wholesale service,
 or what information included in the Large Load Registry it would not otherwise already
-possess. Also, given our findings elsewhere in this order, we expect that PJM will update
+possess.  Also, given our findings elsewhere in this order, we expect that PJM will update
 the information that must be provided for inclusion in the registry to remove the
 previously identified items that are part of the IRAS package (such as the amount of
-BYONC brought by a particular Large Load). Additionally, because we are rejecting
+BYONC brought by a particular Large Load).  Additionally, because we are rejecting
 PJM’s IRAS proposal, industrial customers will only be included in the Large Load
-Registry for informational purposes. Similar to our finding concerning PJM’s proposed
+Registry for informational purposes.  Similar to our finding concerning PJM’s proposed
 definition of Large Load in section III.B.1.a.iii above, we agree with PJM that it must
 have visibility into all Large Loads in the PJM Region to manage its system and ensure
-reliability.103 Finally, as to commenters suggesting improvements to the Large Load
+reliability.103  Finally, as to commenters suggesting improvements to the Large Load
 Registry, we note that the Commission evaluates whether the proposal in the filing is just
 and reasonable, and not whether alternative proposals are more or less reasonable than
 the filing party’s proposal.104
-
-51.    Given that, as discussed below, we are rejecting PJM’s proposed IRAS
+51.
+Given that, as discussed below, we are rejecting PJM’s proposed IRAS
 framework, we find that it is unnecessary to address protests arguing that the Large Load
 Registry is unjust and unreasonable because of how it is proposed to interact with IRAS.
 For the same reason, we decline to address protests regarding telemetry or how the
 accuracy of the information in the Large Load Registry affects Eligible New Large
-Loads’ IRAS obligations. We similarly find that it is unnecessary to address protests that
+Loads’ IRAS obligations.  We similarly find that it is unnecessary to address protests that
 states must have access to the Large Load Registry to determine curtailment and cost
 allocation given that, as discussed below, we are rejecting PJM’s proposed IRAS
 framework.
-
-              2.     Interim Resource Adequacy Service Package
-
-52.    Although PJM asserts that its proposal can be viewed as containing discrete
+2.
+Interim Resource Adequacy Service Package
+52.
+Although PJM asserts that its proposal can be viewed as containing discrete
 elements, we decline to sever the remaining aspects of the proposal because they appear
-to be an integrated package. Below, we find that elements of the package are outside of
+to be an integrated package.  Below, we find that elements of the package are outside of
 
 Operating Agreement] shall submit, or cause to be submitted, to [PJM] the following
 information, as may be further described in the PJM Manuals, related to each Large Load
-served by [the entity bound by the Operating Agreement].” Proposed RAA, Schedule 11,
+served by [the entity bound by the Operating Agreement].”  Proposed RAA, Schedule 11,
 § B(1)(a).
-       103 Transmittal at 13-14.
-
-       104 See Cities of Bethany v. FERC, 727 F.2d 1131, 1136 (D.C. Cir. 2007) (finding
-
+103 Transmittal at 13-14.
+104 See Cities of Bethany v. FERC, 727 F.2d 1131, 1136 (D.C. Cir. 2007) (finding
 that, when determining whether a rate was just and reasonable, the Commission properly
 did not consider “whether a proposed rate schedule is more or less reasonable than
 alternative rate designs”).
 
 --- PAGE 23 ---
-Docket No. ER26-3515-000                                                                 - 23 -
-
+Docket No. ER26-3515-000
+- 23 -
 the Commission’s jurisdiction or that PJM has not demonstrated that certain elements of
 the package are just and reasonable, and not unduly discriminatory or preferential,
-including the proposed IRAS and BYONC frameworks. As discussed below, we reject
+including the proposed IRAS and BYONC frameworks.  As discussed below, we reject
 the entirety of the package.
-
-                       a.   PJM’s Proposal
-
-53.    PJM proposes that, during years when the PJM Region experiences a resource
+a.
+PJM’s Proposal
+53.
+PJM proposes that, during years when the PJM Region experiences a resource
 adequacy shortfall, it may issue an IRAS Action105 directing Electric Distributors to
 reduce load attributable to Eligible New Large Loads106 in the Electric Distributor’s
 zone/area, unless the New Large Load is offset by new capacity through Reliability
@@ -1040,48 +954,44 @@ PJM states that it may issue an IRAS Action when reserves or Interconnection Rel
 Operating Limits cannot be maintained, and it “generally” would do so before Pre-
 Emergency Load Management Reductions but after the deployment of available
 generation and economic demand resources, and curtailment of non-firm interchange and
-applicable non-firm transmission service.108 Specifically, in the affidavit, Mr. Pilong
+applicable non-firm transmission service.108  Specifically, in the affidavit, Mr. Pilong
 explains that IRAS Actions would occur after PJM dispatchers have issued a NERC
-Energy Emergency Alert Level 1 (EEA1).109 PJM states that IRAS would be suspended
+Energy Emergency Alert Level 1 (EEA1).109  PJM states that IRAS would be suspended
 
-      105 PJM explains that an IRAS Action is an “Operating Instruction, as defined by
-
-NERC.” Transmittal at 75 (citing Proposed OATT, Definitions – Interim Resource
+105 PJM explains that an IRAS Action is an “Operating Instruction, as defined by
+NERC.”  Transmittal at 75 (citing Proposed OATT, Definitions – Interim Resource
 Adequacy Service Action).
-      106 PJM proposes to define Eligible New Large Loads as “a New Large Load
-
+106 PJM proposes to define Eligible New Large Loads as “a New Large Load
 eligible to provide Interim Resource Adequacy Service in accordance with Tariff,
-Attachment DD-4, section V.” Proposed OATT, Definitions – Eligible New Large
+Attachment DD-4, section V.”  Proposed OATT, Definitions – Eligible New Large
 Loads.
-      107 Transmittal at 82-83, 97-98.
-
-      108 Id. at 82. PJM explains that details as to how and when PJM may call an IRAS
+107 Transmittal at 82-83, 97-98.
+108 Id. at 82.  PJM explains that details as to how and when PJM may call an IRAS
 Action will be set forth by PJM Manual 13, along with its other Emergency Procedures.
 Id. at 75-76.
-      109 Id., attach. C (Affidavit of Mr. Christopher Pilong) ¶¶ 38-40 (Pilong Aff.).
-
+109 Id., attach. C (Affidavit of Mr. Christopher Pilong) ¶¶ 38-40 (Pilong Aff.).
 Mr. Pilong explains that there are three levels of NERC Energy Emergency Alert Levels
-(EEA1 through EEA3), with an EEA3 being the highest alert level. EEA1 signals that
+(EEA1 through EEA3), with an EEA3 being the highest alert level.  EEA1 signals that
 PJM foresees or is experiencing conditions where all available resources are scheduled to
 meet firm load, firm transactions, and reserve commitments, and is concerned about
-sustaining its required Contingency Reserves. An EEA3 is issued when PJM is unable to
-meet minimum Contingency Reserve Requirements. Pilong Aff. ¶ 11 (citing PJM
+sustaining its required Contingency Reserves.  An EEA3 is issued when PJM is unable to
+meet minimum Contingency Reserve Requirements.  Pilong Aff. ¶ 11 (citing PJM
 Manual 13, §§ 2.3.1, 2.3.2).
 
 --- PAGE 24 ---
-Docket No. ER26-3515-000                                                             - 24 -
-
+Docket No. ER26-3515-000
+- 24 -
 after three consecutive Delivery Years of PJM meeting its Reliability Requirements.110
 PJM proposes to set a maximum wholesale compensation rate for IRAS that is equal to
 50% of the capacity performance Non-Performance Charge Rate, but the proposed Tariff
 states that the rate could be reduced if the Eligible New Large Load accepts in its retail
 rate a sum less than 50% of the Non-Performance Charge Rate or waives receipt of any
 compensation in its retail rate.111
-
-54.    Underpinning IRAS, PJM proposes a new obligation on LSEs that seek to procure
+54.
+Underpinning IRAS, PJM proposes a new obligation on LSEs that seek to procure
 NITS to support New Large Loads by designating new capacity resources in an amount at
 least equal to the load’s peak demand or such New Large Loads may be subject to
-curtailment under IRAS.112 PJM also proposes to establish a new category of capacity
+curtailment under IRAS.112  PJM also proposes to establish a new category of capacity
 resources, BYONC, that may be designated to address the needs of New Large Loads.113
 PJM states that BYONC would include new UCAP and eligible generation, storage, and
 eligible demand-side resources that satisfy gating criteria demonstrating their newness to
@@ -1091,807 +1001,718 @@ obligations, including deficiency charges, performance penalties, plus a 10-year
 must-offer requirement and $0/MW-day price-taker requirement, annual performance
 demonstrations for demand response and distributed energy resources, and a prohibition
 on external sales.115
-
-55.    Finally, beginning with the 2029/2030 Delivery Year, PJM proposes to exclude
+55.
+Finally, beginning with the 2029/2030 Delivery Year, PJM proposes to exclude
 from the VRR curve New Large Load MW that has neither entered into BYONC
 arrangements nor received allocated Reliability Backstop Procurement UCAP MW,
 regardless of whether an IRAS-triggering shortfall exists.116
 
-      110 Transmittal at 72.
-
-      111 Id. at 102; proposed OATT, attach. DD-4, § X(a).
-
-      112 Transmittal at 21.
-
-      113 Id. at 23.
-
-      114 Id. at 49-57, 64-65.
-
-      115 Id. at 55-58.
-
-      116 Id. at 109-10.
+110 Transmittal at 72.
+111 Id. at 102; proposed OATT, attach. DD-4, § X(a).
+112 Transmittal at 21.
+113 Id. at 23.
+114 Id. at 49-57, 64-65.
+115 Id. at 55-58.
+116 Id. at 109-10.
 
 --- PAGE 25 ---
-Docket No. ER26-3515-000                                                               - 25 -
-
-                         b.   Jurisdiction
-
-                              i.    PJM’s Filing
-
-56.     PJM argues that the proposed IRAS framework falls within the Commission’s
-established transmission jurisdiction and wholesale electricity jurisdiction.117 PJM
+Docket No. ER26-3515-000
+- 25 -
+b.
+Jurisdiction
+i.
+PJM’s Filing
+56.
+PJM argues that the proposed IRAS framework falls within the Commission’s
+established transmission jurisdiction and wholesale electricity jurisdiction.117  PJM
 maintains that IRAS respects existing bright-line divisions between retail and wholesale
-jurisdiction over transmission and distribution. According to PJM, IRAS represents a
+jurisdiction over transmission and distribution.  According to PJM, IRAS represents a
 federal regime encouraging, but not mandating, states to re-evaluate load reduction plans,
 providing PJM the necessary tools to address situations where regional resource
-adequacy shortfalls would jeopardize reliability.118 Moreover, PJM argues that it is
+adequacy shortfalls would jeopardize reliability.118  Moreover, PJM argues that it is
 preserving state authority by leaving retail load reduction and retail cost allocation to
 state-level entities, while offering non-mandatory options under the federal tariff to aid
 collection and settlement of compensation for IRAS.
-
-57.     PJM asserts that its proposal to direct the Electric Distributor, rather than a
+57.
+PJM asserts that its proposal to direct the Electric Distributor, rather than a
 specific end-use customer, to reduce a quantity of load is in keeping with PJM’s
 longstanding practice and reflects the allocation of jurisdiction between the federal and
-state levels.119 PJM states that it will not direct specific LSEs and/or specific customers
+state levels.119  PJM states that it will not direct specific LSEs and/or specific customers
 of LSEs, including specific Large Loads, to reduce their load and/or switch to on-site
 back up resources; rather, those decisions would be worked out through state retail
-tariffs.120 PJM asserts that this division of responsibility between PJM and the states
+tariffs.120  PJM asserts that this division of responsibility between PJM and the states
 and/or the Relevant Electric Retail Regulatory Authority (RERRA) is supported by
-precedent.121 PJM asserts that states have exclusive jurisdiction to ensure the appropriate
-retail customers are reduced when IRAS Actions are called.122 PJM argues that it may
+precedent.121  PJM asserts that states have exclusive jurisdiction to ensure the appropriate
+retail customers are reduced when IRAS Actions are called.122  PJM argues that it may
 issue directives to Electric Distributors to reduce load by a certain MW quantity during
-certain, limited emergency conditions.123 PJM states that while the amount attributable to
+certain, limited emergency conditions.123  PJM states that while the amount attributable to
 
-       117 Id. at 2-3.
-
-       118 Id. at 3.
-
-       119 Id. at 86 (citing New PJM Cos., 107 FERC ¶ 61,272, at P 21 (2004)).
-
-       120 Id. at 86-87.
-
-       121 Id. at 89-90. The Operating Agreement defines a RERRA as “an entity that has
+117 Id. at 2-3.
+118 Id. at 3.
+119 Id. at 86 (citing New PJM Cos., 107 FERC ¶ 61,272, at P 21 (2004)).
+120 Id. at 86-87.
+121 Id. at 89-90.  The Operating Agreement defines a RERRA as “an entity that has
 jurisdiction over and establishes prices and policies for competition for providers of retail
 electric service to end-customers, such as the city council for a municipal utility, the
 governing board of a cooperative utility, the state public utility commission or any other
-such entity.” PJM, Intra-PJM Tariffs, Operating Agreement, Definitions, Q - R (13.1.0).
-       122 Transmittal at 90-91.
+such entity.”  PJM, Intra-PJM Tariffs, Operating Agreement, Definitions, Q - R (13.1.0).
+122 Transmittal at 90-91.
 
 --- PAGE 26 ---
-Docket No. ER26-3515-000                                                               - 26 -
-
+Docket No. ER26-3515-000
+- 26 -
 each Electric Distributor zone/area will be guided by the Large Load Registry, PJM will
 leave it to Electric Distributors (in coordination with the states, LSEs, and LSE
-customers) to determine which loads should ultimately reduce subject to IRAS. PJM
+customers) to determine which loads should ultimately reduce subject to IRAS.  PJM
 argues the IRAS framework divides authority between PJM and the states in a manner
 consistent with the FPA’s basic division of authority.
-
-58.     PJM also argues that this is not an improper delegation of federal authority to the
+58.
+PJM also argues that this is not an improper delegation of federal authority to the
 states because the division of responsibility reflected in the Tariff would be on file and
-remain subject to the Commission’s authority.124 PJM asserts that its resource adequacy
+remain subject to the Commission’s authority.124  PJM asserts that its resource adequacy
 framework recognizes the traditional role of state and local entities, and that the
 Commission has found that the appropriate course of action has been to defer to state and
 local entities’ decisions when possible while not shirking its responsibility under the
 FPA.125
-
-59.     PJM likewise argues that its compensation framework respects and reflects the
-federal and state division of authority.126 PJM asserts that the IRAS rate is compensation
-for a wholesale load reduction service.127 However, PJM also asserts that the rate is
+59.
+PJM likewise argues that its compensation framework respects and reflects the
+federal and state division of authority.126  PJM asserts that the IRAS rate is compensation
+for a wholesale load reduction service.127  However, PJM also asserts that the rate is
 intended to be conjoined with retail rates and that the entities to be paid the rate and the
 loads to be charged to support such compensation must be determined at the state level.128
 PJM argues that the net result is a reduced capacity charge for the Eligible New Large
 Load, and thus is a practice that directly affects wholesale capacity rates assessed.129
 PJM states that, while it enlists or invites state action through their jurisdictional retail
 process, it does not mandate any state-specific action, nor does it require any specific
-terms and conditions on retail service.130 Rather, PJM asserts that its proposed filed rate
+terms and conditions on retail service.130  Rather, PJM asserts that its proposed filed rate
 facilitates and respects the handoff of responsibilities between federal wholesale rate
-development and state retail rate development. PJM states that, like demand response
+development and state retail rate development.  PJM states that, like demand response
 
-       123 Id. at 92.
-
-       124 Id. at 92-93.
-
-       125 Id. at 93-94 (citing PJM Interconnection L.L.C., 119 FERC ¶ 61,318, at P 40
-
+123 Id. at 92.
+124 Id. at 92-93.
+125 Id. at 93-94 (citing PJM Interconnection L.L.C., 119 FERC ¶ 61,318, at P 40
 (2007)).
-       126 Id. at 101.
-
-       127 Id. at 105.
-
-       128 Id. at 104.
-
-       129 Id. (citing EPSA, 577 U.S., 261, 265).
-
-       130 Id. at 107.
+126 Id. at 101.
+127 Id. at 105.
+128 Id. at 104.
+129 Id. (citing EPSA, 577 U.S., 261, 265).
+130 Id. at 107.
 
 --- PAGE 27 ---
-Docket No. ER26-3515-000                                                               - 27 -
-
+Docket No. ER26-3515-000
+- 27 -
 rules, this framework respects state law choices about whether and how to facilitate
 implementation of a wholesale paradigm.131
-
-                            ii.    Pleadings
-
-60.     Many protesters argue that PJM’s proposal impermissibly intrudes on state
+ii.
+Pleadings
+60.
+Many protesters argue that PJM’s proposal impermissibly intrudes on state
 authority by directly regulating retail customers, contrary to section 201(b) of the FPA.
 They argue that decisions regarding retail service, rates, and curtailment priorities are
-reserved for states and local regulators.132 Protesters assert that the customers proposed
+reserved for states and local regulators.132  Protesters assert that the customers proposed
 to be curtailed are retail customers and the compensation will be collected from and paid
-to retail customers.133 Protesters assert that PJM’s proposal contains several triggers that
+to retail customers.133  Protesters assert that PJM’s proposal contains several triggers that
 “target” specific retail customers by conditioning curtailment on retail characteristics,
 such as size, vintage, and whether the retail customer brings offsetting new capacity.134
 Protesters also assert that the proposal does not directly affect wholesale rates.135
-
-61.     Protesters contend that PJM’s assertion that it is only imposing curtailment
+61.
+Protesters contend that PJM’s assertion that it is only imposing curtailment
 obligations on Electric Distributors does not alleviate the jurisdictional intrusion.
 Further, some protesters argue that the operative Tariff language places obligations
-directly on New Large Loads.136 Protesters assert that assigning curtailment to Electric
+directly on New Large Loads.136  Protesters assert that assigning curtailment to Electric
 Distributors merely makes them conduits for PJM’s retail-focused directives, leaving
 states powerless. Protesters assert that PJM’s use of Electric Distributors demonstrates
 
-       131 Id. at 108 (citing Wholesale Competition in Regions with Organized Elec.
-
+131 Id. at 108 (citing Wholesale Competition in Regions with Organized Elec.
 Mrkts., Order No. 719, 125 FERC ¶ 61,071, at P 154 (2008); Order No. 719-B,
 129 FERC ¶ 61,252 at P 5).
-       132 CEBA Protest at 6-7; Constellation Protest at 13-18; Data Center Coalition
-
+132 CEBA Protest at 6-7; Constellation Protest at 13-18; Data Center Coalition
 Protest at 8; EPSA Protest at 3 n.7; Equinix Protest at 6-10; Google Protest at 8-11 (citing
 EPSA, 577 U.S. at 279); P3 Protest at 41-44; PPL Protest at 17 (citing EPSA, 577 U.S. at
 288); Virginia Commission Comments at 3-4; West Virginia Commission Comments at
 1-4.
-       133 Constellation Protest at 13; Virginia Commission Comments at 3; Vistra
-
+133 Constellation Protest at 13; Virginia Commission Comments at 3; Vistra
 Protest at 5-10.
-       134 CEBA Protest at 5-7; Constellation Protest at 13; Data Center Coalition Protest
-
+134 CEBA Protest at 5-7; Constellation Protest at 13; Data Center Coalition Protest
 at 10-13 (citing Oneok, Inc. v. Learjet, Inc., 575 U.S. 373, 385 (2015) (Oneok)); Google
 Protest at 8; Vistra Protest at 2-3, 6.
-       135 CEBA Protest at 7; Constellation Protest at 26-27 (citing EPSA, 577 U.S. at
-
+135 CEBA Protest at 7; Constellation Protest at 26-27 (citing EPSA, 577 U.S. at
 277-79).
-       136 Pennsylvania Commission Comments at 2-4; PPL Protest at 10-11.
+136 Pennsylvania Commission Comments at 2-4; PPL Protest at 10-11.
 
 --- PAGE 28 ---
-Docket No. ER26-3515-000                                                              - 28 -
-
-that PJM is doing indirectly what it cannot do directly.137 Protesters also assert that
+Docket No. ER26-3515-000
+- 28 -
+that PJM is doing indirectly what it cannot do directly.137  Protesters also assert that
 demand response participation rules and Midcontinent Independent System Operator,
 Inc.’s Expedited Resource Addition Study are not analogous to IRAS because those
 programs addressed only wholesale market compensation for voluntary participation,
 where states permit such participation.138
-
-62.    Protesters also assert that PJM’s proposal impermissibly compels states to
-implement a federal program. Specifically, they argue that PJM is pressuring states to
+62.
+Protesters also assert that PJM’s proposal impermissibly compels states to
+implement a federal program.  Specifically, they argue that PJM is pressuring states to
 conform by deferring key curtailment and compensation decisions to state and local
 authorities, requiring the creation of new programs or retail tariff changes, and imposing
 obligations on Electric Distributors without clear state oversight.139
-
-63.      Protesters also argue that the IRAS compensation framework establishes a retail
-rate. For example, Constellation asserts that PJM sets compensation and requires
-     140
-
+63.
+Protesters also argue that the IRAS compensation framework establishes a retail
+rate.140  For example, Constellation asserts that PJM sets compensation and requires
 Electric Distributors to pay that amount by assessing charges against retail customers in
-their zone/area to pay other retail customers.141 West Virginia Commission warns that
+their zone/area to pay other retail customers.141  West Virginia Commission warns that
 West Virginia’s tools for setting retail rates for uncovered New Large Load could be
 challenged if the Commission approved PJM’s wholesale compensation for those New
 Large Loads that do not voluntarily turn down compensation.142
-
-64.     Several protesters also argue that the proposal impermissibly delegates authority to
-set the Commission-jurisdictional wholesale rate to states. They contend that PJM’s
+64.
+Several protesters also argue that the proposal impermissibly delegates authority to
+set the Commission-jurisdictional wholesale rate to states.  They contend that PJM’s
 proposal leaves compensation and curtailment decisions to state-regulated entities,
 
-       137 Data Center Coalition Protest at 11; P3 Protest at 43.
-
-       138 EKPC Protest at 29-30; FirstEnergy Protest at 3-4; P3 Protest at 25; PPL
-
+137 Data Center Coalition Protest at 11; P3 Protest at 43.
+138 EKPC Protest at 29-30; FirstEnergy Protest at 3-4; P3 Protest at 25; PPL
 Protest at 14-15.
-       139 AEU Comments at 10; Constellation Protest at 19-21; Data Center Coalition
-
+139 AEU Comments at 10; Constellation Protest at 19-21; Data Center Coalition
 Protest at 12-13; FirstEnergy Protest at 3-5; Google Protest at 11; IMM Protest at 6; Ohio
 Consumers’ Counsel Protest at 26-27; P3 Protest at 33-35; PPL Protest at 3; Talen Protest
 at 13-15; Vistra Protest at 8-9.
-       140 AEU Comments at 2-3, 10; FirstEnergy Protest at 3-5; Pennsylvania
-
+140 AEU Comments at 2-3, 10; FirstEnergy Protest at 3-5; Pennsylvania
 Commission Comments at 2-3.
-       141 Constellation Protest at 14.
-
-       142 West Virginia Commission Comments at 4.
+141 Constellation Protest at 14.
+142 West Virginia Commission Comments at 4.
 
 --- PAGE 29 ---
-Docket No. ER26-3515-000                                                                   - 29 -
-
+Docket No. ER26-3515-000
+- 29 -
 making the wholesale rate unclear and effectively set by the states rather than the
 Commission.143
-
-65.     On the other hand, certain commenters assert that the proposal generally respects
-the division of state and federal authority under the FPA.144 They argue that the proposal
+65.
+On the other hand, certain commenters assert that the proposal generally respects
+the division of state and federal authority under the FPA.144  They argue that the proposal
 falls squarely within PJM’s authority to maintain resource adequacy at the wholesale
-level. PIOs note that the FPA does not prohibit rules that indirectly affect retail customer
-behavior.145 PIOs explain that PJM has a specific and limited role with no direct control
+level.  PIOs note that the FPA does not prohibit rules that indirectly affect retail customer
+behavior.145  PIOs explain that PJM has a specific and limited role with no direct control
 over retail end-use customers and that IRAS Actions will be implemented through
-Electric Distributors at the wholesale level. PIOs assert that PJM will rely on aggregate
+Electric Distributors at the wholesale level.  PIOs assert that PJM will rely on aggregate
 MW quantities of load and supply to implement IRAS and that, while it will track retail
-customers, it will act at the macro level using aggregate quantities by zone. Appalachian
+customers, it will act at the macro level using aggregate quantities by zone.  Appalachian
 Voices likewise asserts that PJM’s proposal operates within the Commission’s
 jurisdiction over transmission service and bulk power system reliability, and that tying
 the MW quantity to be shed to New Large Loads is a matter of reliability and cost
-causation.146 The IMM argues that PJM’s proposal does not go far enough; it asserts that
+causation.146  The IMM argues that PJM’s proposal does not go far enough; it asserts that
 PJM has authority to curtail individual Large Loads and should not abdicate the
 responsibility to set and implement the terms and conditions of curtailment to the Electric
 Distributor and/or states.147
-
-66.    Governor Shapiro argues that IRAS is a supplemental wholesale capacity product
+66.
+Governor Shapiro argues that IRAS is a supplemental wholesale capacity product
 designed to ensure the reliability of the bulk power system, which is within PJM’s
-jurisdiction.148 Governor Shapiro states that the Operating Agreement already grants
+jurisdiction.148  Governor Shapiro states that the Operating Agreement already grants
 PJM the ability to coordinate curtailment of load where PJM determines the aggregate
 amount of MW load reduction required to be curtailed and the Transmission Owner or
-Electric Distributor determines which end-use entities are curtailed.149 Governor Shapiro
+Electric Distributor determines which end-use entities are curtailed.149  Governor Shapiro
 
-         143 CEBA Protest at 6-7; Constellation Protest at 20-23; Data Center Coalition
-
+143 CEBA Protest at 6-7; Constellation Protest at 20-23; Data Center Coalition
 Protest at 9-14; OPSI Comments at 7-8; P3 Protest at 42-45; Pennsylvania Commission
 Comments at 5-6.
-         144 Appalachian Voices Comments at 7-9; NJBPU Comments at 3; PIOs Protest at
-
+144 Appalachian Voices Comments at 7-9; NJBPU Comments at 3; PIOs Protest at
 18-19.
-         145 PIOs Protest at 18.
-
-         146 Appalachian Voices Comments at 8.
-
-         147 IMM Protest at 8.
-
-         148 Governor Shapiro Answer at 7.
-
-         149 Id. at 7-8 (citing PJM, Intra-PJM Tariffs, Operating Agreement, Schedule 1,
-
+145 PIOs Protest at 18.
+146 Appalachian Voices Comments at 8.
+147 IMM Protest at 8.
+148 Governor Shapiro Answer at 7.
+149 Id. at 7-8 (citing PJM, Intra-PJM Tariffs, Operating Agreement, Schedule 1,
 § 1.6 (Office of the Interconnection) (3.1.0), § 1.6.2 (v) and (vii) (“The Office of the
 
 --- PAGE 30 ---
-Docket No. ER26-3515-000                                                                - 30 -
-
+Docket No. ER26-3515-000
+- 30 -
 argues that IRAS differs from this pre-existing authority in two ways, neither of which
-impact jurisdiction: (1) curtailment direction takes place prior to EEA1; and (2) the
+impact jurisdiction:  (1) curtailment direction takes place prior to EEA1; and (2) the
 means by which PJM determines the aggregate MW of load to be curtailed in a zone or
-area.150 Governor Shapiro states that implementing IRAS Actions prior to EEA1 will
+area.150  Governor Shapiro states that implementing IRAS Actions prior to EEA1 will
 avoid escalating emergency procedures that would impose financial and reliability costs
-caused by Large Loads on all customers. Governor Shapiro states that, while PJM
+caused by Large Loads on all customers.  Governor Shapiro states that, while PJM
 determines aggregate MW reductions within a zone based on that zone’s share of New
 Large Loads, PJM does not direct the curtailment of loads, and that it remains up to the
-retail authority to implement the retail end-user priority. Governor Shapiro argues that it
+retail authority to implement the retail end-user priority.  Governor Shapiro argues that it
 is appropriate for PJM to focus on non-capacity backed New Large Loads when
 determining aggregate MW reduction targets, as it is those entities that are causing the
 reliability emergency, and is consistent with requirements in the Operating Agreement
 that PJM not order a load shed in one zone to address deficiencies in another zone.151
 Governor Shapiro argues that protesters acknowledge that PJM’s proposal does not target
 specific retail customers.152
-
-67.     Governor Shapiro argues that there is no merit to the position that PJM is legally
+67.
+Governor Shapiro argues that there is no merit to the position that PJM is legally
 barred from acting on information about characteristics of load growth in a zone when
 that information is directly relevant to the operation of the bulk power system.153
 Governor Shapiro states that case law has never imposed such strict boundaries, that the
 characteristics of retail loads and generation are highly relevant to informing a wholesale
 rate, and that taking this information into account when setting wholesale rates does not
-constitute regulation of those matters.154 Governor Shapiro states that, if this position
+constitute regulation of those matters.154  Governor Shapiro states that, if this position
 were to be adopted, both the Commission and PJM would be barred from considering
 information about generating facilities when setting wholesale rates, because neither the
-Commission nor PJM may directly regulate generation. Governor Shapiro argues that
+Commission nor PJM may directly regulate generation.  Governor Shapiro argues that
 this jurisdictional position would be unworkable if applied to generation and is equally so
 if applied to retail loads.
 
 Interconnection shall . . . Determine and declare that an Emergency is expected to exist . .
 . Coordinate the curtailment of shedding of load . . . .”)).
-       150 Id. at 8-9.
-
-       151 Id. at 9 (citing PJM, Intra-PJM Tariffs, Operating Agreement, Schedule 1 § 1.7
-
+150 Id. at 8-9.
+151 Id. at 9 (citing PJM, Intra-PJM Tariffs, Operating Agreement, Schedule 1 § 1.7
 (General) (21.1.0), § 1.7.11).
-       152 Id. (citing Data Center Coalition Protest at 11; Constellation Protest at 20).
-
-       153 Id. at 10.
-
-       154 Id. at 11 (citing EPSA, 577 U.S. at 281-82; Oneok, 575 U.S. at 387-88).
+152 Id. (citing Data Center Coalition Protest at 11; Constellation Protest at 20).
+153 Id. at 10.
+154 Id. at 11 (citing EPSA, 577 U.S. at 281-82; Oneok, 575 U.S. at 387-88).
 
 --- PAGE 31 ---
-Docket No. ER26-3515-000                                                             - 31 -
-
-68.      As to the compensation framework, Governor Shapiro asserts that, although PJM
+Docket No. ER26-3515-000
+- 31 -
+68.
+As to the compensation framework, Governor Shapiro asserts that, although PJM
 “confusingly” appears to speak about compensation that would be provided to individual
 retail customers, because PJM will only direct a MW quantity to be curtailed, wholesale
 compensation will therefore accrue as a credit on a wholesale bill to the wholesale
-customers based on that total MW quantity of load curtailment.155 Governor Shapiro
+customers based on that total MW quantity of load curtailment.155  Governor Shapiro
 acknowledges that PJM could clean up the proposed Tariff provisions related to IRAS
 compensation to (1) remove all references to “Eligible New Large Loads” to clarify that
 it is setting a wholesale rate; and (2) clarify that the particular level of compensation
 depends on certain conditions, which inform the implementation of and are an input into
 the wholesale rate.
-
-69.     In its answer, PJM asserts that IRAS is targeted at improving the wholesale market
+69.
+In its answer, PJM asserts that IRAS is targeted at improving the wholesale market
 by supporting resource adequacy and reliability, which directly affects Commission
-jurisdictional rates.156 PJM argues that IRAS operates within PJM’s authority to require
+jurisdictional rates.156  PJM argues that IRAS operates within PJM’s authority to require
 load reduction under real-time conditions that may give rise to system instability or
-capacity shortfalls.157 PJM argues that IRAS may ultimately affect retail customers but
+capacity shortfalls.157  PJM argues that IRAS may ultimately affect retail customers but
 does not present an impermissible intrusion on retail rate regulation because the proposal
-places the terms and conditions on LSEs, not end-use retail customers.158 PJM reiterates
+places the terms and conditions on LSEs, not end-use retail customers.158  PJM reiterates
 that it will only determine the quantity of load to be curtailed by Electric Distributors,
 that it will leave to the states to determine which resources will be called upon to reduce
 load, and that it will not determine whether any specific retail customer is called upon to
-reduce load or whether any load may say no to such a directive.159 PJM contends that
+reduce load or whether any load may say no to such a directive.159  PJM contends that
 protesters make contradictory claims that IRAS imposes mandatory rules on end-use
 retail customers, but also that IRAS leaves too much discretion to states to determine
 which entities are curtailed.
-
-70.    PJM likewise argues that its compensation mechanism targets wholesale rates for
+70.
+PJM likewise argues that its compensation mechanism targets wholesale rates for
 wholesale customers and is not an attempt to create a retail compensation scheme for
 curtailed large loads or an impermissible delegation to states of its wholesale ratemaking
-authority.160 PJM explains that IRAS compensation neither mandates state-specific
-action nor imposes specific terms and conditions on retail rates.161 Instead, PJM asserts
+authority.160  PJM explains that IRAS compensation neither mandates state-specific
+action nor imposes specific terms and conditions on retail rates.161  Instead, PJM asserts
 
-       155 Id. at 14-15.
-
-       156 PJM Answer at 19-21.
-
-       157 Id. at 23
-
-       158 Id. at 26 (citing Tri-State, 196 FERC ¶ 61,127 at P 68).
-
-       159 Id. at 28-29.
-
-       160 Id. at 54.
+155 Id. at 14-15.
+156 PJM Answer at 19-21.
+157 Id. at 23
+158 Id. at 26 (citing Tri-State, 196 FERC ¶ 61,127 at P 68).
+159 Id. at 28-29.
+160 Id. at 54.
 
 --- PAGE 32 ---
-Docket No. ER26-3515-000                                                               - 32 -
-
+Docket No. ER26-3515-000
+- 32 -
 that it is using its authority to set rates for operational actions to reduce energy
 consumption as part of the Commission’s wholesale jurisdiction, with all other aspects of
 ratemaking, including application of that rate to different retail customer classes, left to
-the states. PJM states that, just like wholesale demand response participation depends on
+the states.  PJM states that, just like wholesale demand response participation depends on
 state permission, wholesale compensation for IRAS at a reduced level depends on
 RERRA action specifying an alternative compensation below the maximum rate.
 Furthermore, PJM states that the Tariff contemplates that entities to be paid the rate and
 the loads to be charged to support such compensation are determined at the state level.
-
-71.     In its answer, Google asserts that when it comes to determining whether a rate is
+71.
+In its answer, Google asserts that when it comes to determining whether a rate is
 jurisdictionally permissible under the FPA, the dispositive question is how it works in
-practice, not the relevant public utility’s transmittal letter.162 Constellation and Data
+practice, not the relevant public utility’s transmittal letter.162  Constellation and Data
 Center Coalition argue that the express language of the proposed Tariff unlawfully targets
 and requires curtailment of a specific category of retail customers, i.e., Eligible New
 Large Loads, thereby regulating the terms of retail service and intruding on state
-jurisdiction.163 Specifically, Constellation and Data Center Coalition cite the proposed
+jurisdiction.163  Specifically, Constellation and Data Center Coalition cite the proposed
 Tariff, which states that “Electric Distributors” shall “execute the [PJM] Office of the
 Interconnection’s directives to implement Interim Resource Adequacy Service Actions
 among the Eligible New Large Loads in the Electric Distributor’s zone/area.”164
 Constellation asserts that the proposed Tariff language leaves no doubt that Electric
 Distributors would actually violate the PJM Tariff if they bypassed curtailment of
 Eligible New Large Loads and chose to curtail other retail customers instead.
-
-72.    Constellation, Data Center Coalition, FirstEnergy, Google, and Vistra further
+72.
+Constellation, Data Center Coalition, FirstEnergy, Google, and Vistra further
 argue that the Tri-State order does not support PJM’s proposal because, unlike the
 accepted Tri-State tariff, PJM’s proposed Tariff leaves Electric Distributors no discretion
 to determine whether and how retail customers will be affected.165
 
-       161 Id. at 56-57.
-
-       162 Google Answer at 13.
-
-       163 Constellation Answer at 4; Data Center Coalition Answer at 10.
-
-       164 Constellation Answer at 4-5 (citing proposed OATT, attach. DD-4, §§ II(e),
-
+161 Id. at 56-57.
+162 Google Answer at 13.
+163 Constellation Answer at 4; Data Center Coalition Answer at 10.
+164 Constellation Answer at 4-5 (citing proposed OATT, attach. DD-4, §§ II(e),
 III(a) (emphasis added); id. (stating that the PJM “shall . . . request Electric Distributors
 to direct that a quantity of Eligible New Large Load Amounts . . . be reduced in
 accordance with an [IRAS] Action”); id. § IV(a) (“All Eligible New Large Loads shall be
 available to be requested to provide [IRAS] by the [PJM] Office of the
 Interconnection.”)); Data Center Coalition Answer at 10 (citing proposed OATT, attach.
 DD-4 § III(a)).
-       165 Constellation Answer at 7-8; Data Center Coalition Answer at 7-8; FirstEnergy
+165 Constellation Answer at 7-8; Data Center Coalition Answer at 7-8; FirstEnergy
 
 --- PAGE 33 ---
-Docket No. ER26-3515-000                                                               - 33 -
-
-73.   Constellation also argues that the answers fail to explain how the proposal’s
+Docket No. ER26-3515-000
+- 33 -
+73.
+Constellation also argues that the answers fail to explain how the proposal’s
 compensation provisions target wholesale rates when they effectively set retail
 compensation for interrupted service, making them jurisdictionally improper.166
 Constellation contends that, even if the compensation is wholesale, the proposal
 impermissibly gives states direct authority to set or vary wholesale compensation, unlike
 Order No. 719’s permissible deference to state preferences.167
-
-74.    Constellation argues, in response to answers’ claims that IRAS is no different
+74.
+Constellation argues, in response to answers’ claims that IRAS is no different
 from PJM’s existing curtailment authority and falls within the Commission’s and states’
 resource adequacy powers, that the proposal instead creates a novel curtailment regime
 based on retail customer characteristics and rates that requires jurisdictionally proper
 action.168
-
-75.    PPL argues that it is not clear in PJM’s proposal and Tariff language that state
+75.
+PPL argues that it is not clear in PJM’s proposal and Tariff language that state
 regulatory authorities have the power to opt-out individual Eligible New Large Loads
-from the requirement to provide IRAS.169 Specifically, PPL argues that it is unclear
+from the requirement to provide IRAS.169  Specifically, PPL argues that it is unclear
 under what legal authority state regulatory authorities in the PJM Region would be able
 to compel end-use retail customers (Eligible New Large Loads) to provide a
-Commission-jurisdictional wholesale service to PJM.170 PPL asserts that states lack
+Commission-jurisdictional wholesale service to PJM.170  PPL asserts that states lack
 authority to compel end-use retail customers to provide Commission-jurisdictional
 wholesale services to PJM, and that doing so would be an unprecedented and
 constitutionally problematic intrusion into the Commission’s plenary jurisdiction under
-the FPA. PPL suggests that PJM either (1) have the Tariff language stop at the issuance
+the FPA.  PPL suggests that PJM either (1) have the Tariff language stop at the issuance
 of the Operating Instruction to Electric Distributors to curtail load, and leave the rates,
 terms, and conditions of that load curtailment service to state and local regulatory
 
 Answer at 5; Google Answer at 19; Vistra Answer at 10-11.
-       166 Constellation Answer at 8.
-
-       167 Id. at 9-10.
-
-       168 Id. at 11-12.
-
-       169 PPL Answer at 1-2 (citing PJM Answer at 29 (“Third, the IRAS framework
-
-does not determine whether any specific retail customers can say no. Just as the identity
+166 Constellation Answer at 8.
+167 Id. at 9-10.
+168 Id. at 11-12.
+169 PPL Answer at 1-2 (citing PJM Answer at 29 (“Third, the IRAS framework
+does not determine whether any specific retail customers can say no.  Just as the identity
 of the retail customers who are ultimately implicated by PJM’s directives to reduce a
 MW quantity of load is not decided by PJM, under the IRAS framework, it is also not up
-to PJM to determine whether, as PPL puts it, retail customers can say no. That—and the
+to PJM to determine whether, as PPL puts it, retail customers can say no.  That—and the
 regulation of the terms and conditions of retail rates, and the regulation of retail
 customers—remains within the exclusive jurisdiction of the states.”)).
-       170 Id. at 6.
+170 Id. at 6.
 
 --- PAGE 34 ---
-Docket No. ER26-3515-000                                                             - 34 -
-
+Docket No. ER26-3515-000
+- 34 -
 authorities; or (2) make IRAS a voluntary Commission-jurisdictional service, whereby
 Electric Distributors and/or Large Load customers themselves can choose whether to
 participate like any other wholesale market service provider in PJM.171
-
-76.     The IMM argues that, although the IRAS proposal is within the Commission’s
+76.
+The IMM argues that, although the IRAS proposal is within the Commission’s
 jurisdiction, PJM’s proposal fails to establish consistent regional curtailment rules and
-relies on states to complete the proposal.172 The IMM argues that Data Center Coalition’s
+relies on states to complete the proposal.172  The IMM argues that Data Center Coalition’s
 assertion that data centers’ status as retail customers prevents PJM from imposing
 wholesale-market capacity and curtailment requirements is inconsistent with the
 Commission’s recognized jurisdiction over retail customers’ participation in wholesale
 markets and with the RAA’s existing requirements for LSEs to procure qualifying
 capacity.173
-
-                            iii.   Determination
-
-77.     We find that certain aspects of PJM’s proposal appear to present an impermissible
+iii.
+Determination
+77.
+We find that certain aspects of PJM’s proposal appear to present an impermissible
 intrusion on retail rate regulation and are not subject to the Commission’s authority
-pursuant to section 205 of the FPA.174 We find that several provisions of the proposed
+pursuant to section 205 of the FPA.174  We find that several provisions of the proposed
 Tariff appear to place obligations directly on Eligible New Large Loads, which are, for
 the most part,175 retail customers; that certain other provisions appear to dictate which
 retail customers taking retail service will be curtailed; and that the proposed
-compensation framework appears to establish a retail rate.176 Therefore, we reject PJM’s
+compensation framework appears to establish a retail rate.176  Therefore, we reject PJM’s
 proposed IRAS framework.
 
-       171 Id. at 7-8.
-
-       172 IMM Answer at 6-7.
-
-       173 Id. at 7-9.
-
-       174 16 U.S.C. §§ 824(b), 824e(a).
-
-       175 For example, an Eligible New Large Load could take unbundled retail
-
+171 Id. at 7-8.
+172 IMM Answer at 6-7.
+173 Id. at 7-9.
+174 16 U.S.C. §§ 824(b), 824e(a).
+175 For example, an Eligible New Large Load could take unbundled retail
 transmission service from PJM if authorized to do so under state law and therefore
-become an Eligible Customer that falls within the Commission’s jurisdiction. However,
+become an Eligible Customer that falls within the Commission’s jurisdiction.  However,
 the rates for energy sales to such a customer would still be subject to state regulation.
 16 U.S.C. §§ 824(b), 824e(d).
-       176 The proposed OATT states that any Eligible New Large Load can elect to “(i)
-
+176 The proposed OATT states that any Eligible New Large Load can elect to “(i)
 accept in its retail rates a sum less than 50% of the Non-Performance Charge Rates as
 compensation for the provision of wholesale [IRAS], or (ii) waive receipt in its retail
-rates any compensation for provision of wholesale [IRAS].” Proposed OATT, attach.
+rates any compensation for provision of wholesale [IRAS].”  Proposed OATT, attach.
 DD-4, § X(a).
 
 --- PAGE 35 ---
-Docket No. ER26-3515-000                                                                 - 35 -
-
-78.     The FPA authorizes the Commission to regulate “rates, terms, and conditions” and
+Docket No. ER26-3515-000
+- 35 -
+78.
+The FPA authorizes the Commission to regulate “rates, terms, and conditions” and
 any “rule, regulation, practice, or contract” directly “affecting” such transmission or
-wholesale rates.177 But the law places beyond the Commission’s jurisdiction, and leaves
+wholesale rates.177  But the law places beyond the Commission’s jurisdiction, and leaves
 to the states alone, the regulation of “any other sale”—most notably, any retail sale—of
-electricity.178 Section 201 of the FPA further limits the Commission’s jurisdiction to
+electricity.178  Section 201 of the FPA further limits the Commission’s jurisdiction to
 “those matters which are not subject to regulation by the states.”179
-
-79.     In EPSA, the U.S. Supreme Court stated that although “the wholesale and retail
+79.
+In EPSA, the U.S. Supreme Court stated that although “the wholesale and retail
 markets in electricity are inextricably linked,”180 the Commission “may not regulate . . .
-retail sales of electricity.”181 The Court further stated that “no matter how direct, or
+retail sales of electricity.”181  The Court further stated that “no matter how direct, or
 dramatic” a proposal’s impact on wholesale rates, the Commission may not regulate retail
-electricity sales.182 The Court also clarified that the FPA limits the Commission’s
+electricity sales.182  The Court also clarified that the FPA limits the Commission’s
 jurisdiction to wholesale sales, reserving regulatory authority over retail sales to the states
 alone, and that any regulation that “specifies terms of sale at retail” exceeds the
 Commission’s authority under the FPA.183
-
-80.     In the instant proceeding, protesters argue that PJM is proposing, via a
+80.
+In the instant proceeding, protesters argue that PJM is proposing, via a
 Commission-jurisdictional tariff, terms of retail service for Eligible New Large Loads.
 These protesters contend that PJM is doing so by placing obligations on Eligible New
 Large Loads, which are, for the most part, retail customers taking retail service; by
 dictating which retail customers an Electric Distributor must curtail; and by establishing
-the compensation for Eligible New Large Loads.184 PJM’s proposed construct appears to
+the compensation for Eligible New Large Loads.184  PJM’s proposed construct appears to
 regulate the terms and conditions of a retail customer’s service in ways that are beyond
 the Commission’s authority.
 
-       177 EPSA, 577 U.S. at 264-65 (citing 16 U.S.C. §§ 824(b), 824e(a)).
-
-       178 Id. (citing 16 U.S.C. § 824(b)).
-
-       179 16 U.S.C. § 824(a).
-
-       180 EPSA, 577 U.S. at 265.
-
-       181 Id. at 264-65 (citing 16 U.S.C. §§ 824(b), 824e(a)).
-
-       182 Id. at 279-80. This statement presents a limit on the Court’s finding that the
+177 EPSA, 577 U.S. at 264-65 (citing 16 U.S.C. §§ 824(b), 824e(a)).
+178 Id. (citing 16 U.S.C. § 824(b)).
+179 16 U.S.C. § 824(a).
+180 EPSA, 577 U.S. at 265.
+181 Id. at 264-65 (citing 16 U.S.C. §§ 824(b), 824e(a)).
+182 Id. at 279-80.  This statement presents a limit on the Court’s finding that the
 Commission has authority under the FPA to ensure that practices directly affecting
-wholesale rates are just and reasonable. Id. at 277-78.
-       183 Id. at 279-80.
-
-       184 See Constellation Protest at 9-23; FirstEnergy Protest at 3-5; Google Protest at
-
+wholesale rates are just and reasonable.  Id. at 277-78.
+183 Id. at 279-80.
+184 See Constellation Protest at 9-23; FirstEnergy Protest at 3-5; Google Protest at
 8-11; PPL Protest at 5-16; Virginia Commission Comments at 3-5; Vistra Protest at 5-11.
 
 --- PAGE 36 ---
-Docket No. ER26-3515-000                                                                - 36 -
-
-81.     First, the proposed Tariff appears to direct specific retail customers to provide
-IRAS for wholesale service and, therefore, to curtail. For example, IRAS is defined as “a
+Docket No. ER26-3515-000
+- 36 -
+81.
+First, the proposed Tariff appears to direct specific retail customers to provide
+IRAS for wholesale service and, therefore, to curtail.  For example, IRAS is defined as “a
 load reduction service through which New Large Loads reduce load as directed by the
 applicable Electric Distributor in response to an [IRAS] Action requested by [PJM].”185
 The IRAS Tariff provisions also state that the Electric Distributor “shall” implement the
 curtailment among “Eligible New Large Loads” and therefore specifies the class of retail
-customers that should be curtailed.186 Further, the proposed Tariff states that when IRAS
+customers that should be curtailed.186  Further, the proposed Tariff states that when IRAS
 is suspended, “[PJM] does not need any Eligible New Large Loads to be available to
-provide [IRAS] for that Delivery Year.”187 Eligible New Large Loads are, for the most
-part, retail customers taking retail service. PJM’s transmittal seems to recognize this,
+provide [IRAS] for that Delivery Year.”187  Eligible New Large Loads are, for the most
+part, retail customers taking retail service.  PJM’s transmittal seems to recognize this,
 proposing that IRAS MWs be assigned to Electric Distributors, with the state/RERRAs
-responsible for identifying which loads will be obligated to curtail under IRAS. As such,
+responsible for identifying which loads will be obligated to curtail under IRAS.  As such,
 PJM’s transmittal states that its proposed Tariff imposes obligations only on the Electric
 Distributor by assigning curtailment obligations to Electric Distributors, who can then, at
-the direction of retail regulators, determine which retail customers are curtailed.188 While
+the direction of retail regulators, determine which retail customers are curtailed.188  While
 the proposal described in PJM’s transmittal may be within the Commission’s jurisdiction,
 we find that the plain language of the Tariff, as proposed, appears to place obligations
 directly on the Eligible New Large Loads and requires Electric Distributors to curtail the
-Eligible New Large Loads. We note that PJM’s answer fails to engage with the concern
+Eligible New Large Loads.  We note that PJM’s answer fails to engage with the concern
 that its proposal, as described in its transmittal, is inconsistent with the proposed Tariff’s
 plain language that imposes obligations directly on Eligible New Large Loads and
 requires Electric Distributors to curtail Eligible New Large Loads.
-
-82.    Second, the proposed Tariff appears to be setting a retail rate because it establishes
-a compensation rate for IRAS payable to the Eligible New Large Load.189 The proposed
+82.
+Second, the proposed Tariff appears to be setting a retail rate because it establishes
+a compensation rate for IRAS payable to the Eligible New Large Load.189  The proposed
 Tariff directs compensation at Eligible New Large Loads, which are, for the most part,
 
-       185 Proposed OATT, Definitions – Interim Resource Adequacy Service (emphasis
-
-added). Similarly, the proposed OATT Introduction to IRAS states that “[IRAS] is a load
+185 Proposed OATT, Definitions – Interim Resource Adequacy Service (emphasis
+added).  Similarly, the proposed OATT Introduction to IRAS states that “[IRAS] is a load
 reduction service, effective starting with the 2027/2028 Delivery Year, through which
 Eligible New Large Loads may be compensated for providing load reductions requested
-by [PJM].” Id. attach. DD-4, § I(a) (emphasis added).
-       186 Id. attach. DD-4, § II(e).
-                                    The proposed Tariff further requires that the Electric
+by [PJM].”  Id. attach. DD-4, § I(a) (emphasis added).
+186 Id. attach. DD-4, § II(e).  The proposed Tariff further requires that the Electric
 Distributor must implement the instructions “among the Eligible New Large Loads in the
 Electric Distributor’s zone/area” and that “[a]ll Eligible New Large Loads shall be
-available to be requested to provide [IRAS] by [PJM].” Id. attach DD-4, §§ III(a), IV(a).
-       187 Id. attach. DD-4, § IV(b)(iii).
-
-       188 Transmittal at 99.
-
-       189 Proposed OATT, attach. DD-4, § X.
+available to be requested to provide [IRAS] by [PJM].”  Id. attach DD-4, §§ III(a), IV(a).
+187 Id. attach. DD-4, § IV(b)(iii).
+188 Transmittal at 99.
+189 Proposed OATT, attach. DD-4, § X.
 
 --- PAGE 37 ---
-Docket No. ER26-3515-000                                                               - 37 -
-
-retail customers taking retail service. The proposed Tariff also appears to specify that
-retail customers will be charged to fund such compensation.190 The proposed Tariff
+Docket No. ER26-3515-000
+- 37 -
+retail customers taking retail service.  The proposed Tariff also appears to specify that
+retail customers will be charged to fund such compensation.190  The proposed Tariff
 language thus appears to establish a framework whereby retail customers will be paid by
-other retail customers for what PJM describes as a wholesale capacity service. Although
+other retail customers for what PJM describes as a wholesale capacity service.  Although
 Governor Shapiro asserts that the wholesale customer would receive a credit,191 and PJM
 asserts in its answer that the LSE would be compensated for load reduction,192 this is not
-specified anywhere in the proposed Tariff language. The proposed Tariff does not
+specified anywhere in the proposed Tariff language.  The proposed Tariff does not
 specify what wholesale customer would be paid for IRAS or how; it only mentions
-payment to the Electric Distributor’s customers, who are retail customers.193 Nor is
+payment to the Electric Distributor’s customers, who are retail customers.193  Nor is
 payment guaranteed under PJM’s proposal, as PJM only proposes a default rate that
-appears subject to further change and beyond the reach of the Tariff. Furthermore, while
+appears subject to further change and beyond the reach of the Tariff.  Furthermore, while
 PJM’s transmittal recognizes that the retail entities to be paid the rate and the loads
 charged for the rate must be set by state regulators, protesters like the Virginia
 Commission highlight that the proposed Tariff does not include any language stating that
-retail regulators may establish the rate.194 Instead, the proposed Tariff indicates that the
+retail regulators may establish the rate.194  Instead, the proposed Tariff indicates that the
 New Large Load may elect to reduce or waive its compensation for IRAS.195
 Accordingly, we find that the proposed Tariff appears to impermissibly set a retail rate.
-
-83.    Finally, the proposed Tariff also appears to allow the Electric Distributor, which
+83.
+Finally, the proposed Tariff also appears to allow the Electric Distributor, which
 PJM’s transmittal explains would occur in consultation with the RERRA, to determine
 which customers will pay the compensation to the entities providing IRAS pursuant to
 the PJM Tariff and the level of compensation, which we interpret as allowing a retail
 regulator to set a wholesale rate.196
 
-       190 Id. § X(b)(i).
-                      We note that other provisions of the Tariff appear to suggest that
+190 Id. § X(b)(i).  We note that other provisions of the Tariff appear to suggest that
 wholesale customers could be charged or paid; however, the proposed Tariff does not
-explain how such charges or payments will be allocated. See id. § X(b)(ii).
-       191 Governor Shapiro Answer at 14.
-
-       192 PJM Answer at 56.
-
-       193 See proposed OATT, attach. DD-4, §§ X, X(b)(i).
-
-       194 Virginia Commission Comments at 4-5.
-
-       195 Proposed OATT, attach. DD-4, § X(a).
-
-       196 Proposed OATT, attach. DD-4, § X(b); Transmittal at 110-13.
+explain how such charges or payments will be allocated.  See id. § X(b)(ii).
+191 Governor Shapiro Answer at 14.
+192 PJM Answer at 56.
+193 See proposed OATT, attach. DD-4, §§ X, X(b)(i).
+194 Virginia Commission Comments at 4-5.
+195 Proposed OATT, attach. DD-4, § X(a).
+196 Proposed OATT, attach. DD-4, § X(b); Transmittal at 110-13.
 
 --- PAGE 38 ---
-Docket No. ER26-3515-000                                                               - 38 -
-
-                          c.   Undue Discrimination – IRAS Curtailment
-
-                               i.   PJM’s Filing
-
-84.     PJM asserts that its proposal is not unduly discriminatory or preferential because
+Docket No. ER26-3515-000
+- 38 -
+c.
+Undue Discrimination – IRAS Curtailment
+i.
+PJM’s Filing
+84.
+PJM asserts that its proposal is not unduly discriminatory or preferential because
 the IRAS framework recognizes that New Large Loads are not similarly situated to other
-loads.197 To support this conclusion, PJM states that members of Congress have
+loads.197  To support this conclusion, PJM states that members of Congress have
 expressed to PJM that “[i]t is not unduly discriminatory to identify and manage demand
 from new data centers given their incomparably large energy demands, how quickly data
 centers can come online, and their unique potential to impact the reliability of the electric
-grid as a collective class and to increase rates for all customers.”198 Further, PJM states
+grid as a collective class and to increase rates for all customers.”198  Further, PJM states
 that New Large Loads constitute a separate, new class of load, and are therefore
-appropriately subject to different treatment.199 PJM asserts that New Large Loads are not
+appropriately subject to different treatment.199  PJM asserts that New Large Loads are not
 similarly situated to other loads in the PJM Region because, according to the
-Commission, large loads constitute “a separate category of load.”200 Additionally, PJM
+Commission, large loads constitute “a separate category of load.”200  Additionally, PJM
 states that the Commission has highlighted the uniqueness of large loads, noting
 specifically that their integration “poses specific challenges to transmission system
 operation given their size, operational behavior, and unique potential to impact the
 transmission system.”201
-
-85.    Similarly, PJM points to the Southwest Power Pool, Inc. (SPP) Conditional High
+85.
+Similarly, PJM points to the Southwest Power Pool, Inc. (SPP) Conditional High
 Impact Large Load Service (CHILLS) order, where the Commission found that the
 proposal for new large loads was just and reasonable and not unduly discriminatory or
-preferential. PJM states that the Commission observed that “SPP has shown that
+preferential.  PJM states that the Commission observed that “SPP has shown that
 unprecedented growth in large loads in the SPP region presents significant and unique
 
-         197 Transmittal at 94.
-
-         198 Id. at 94-95 (quoting Letter from the Members of Congress to David E. Mills,
-
+197 Transmittal at 94.
+198 Id. at 94-95 (quoting Letter from the Members of Congress to David E. Mills,
 PJM Board Chair, PJM Interconnection, L.L.C., 4 (Nov. 5, 2025), https://www.pjm.com/-
 /media/DotCom/about-pjm/who-we-are/public-disclosures/2025/20251106-
 congressional-letter-re-cifp-lla.pdf.
-         199 Id. at 95.
-
-         200 Id. at 96 (quoting PJM Large Load Show Cause Order, 195 FERC ¶ 61,211 at
-
+199 Id. at 95.
+200 Id. at 96 (quoting PJM Large Load Show Cause Order, 195 FERC ¶ 61,211 at
 P 50).
-         201 Id. (citing PJM Large Load Show Cause Order, 195 FERC ¶ 61,211 at P 58;
-
+201 Id. (citing PJM Large Load Show Cause Order, 195 FERC ¶ 61,211 at P 58;
 Midcontinent Indep. Sys. Operator, Inc., 195 FERC ¶ 61,212, at P 58 (2026); Sw. Power
 Pool, 195 FERC ¶ 61,213 at P 15 & n.54 (2026); Cal. Indep. Sys. Operator Corp.,
 195 FERC ¶ 61,214, at P 57 (2026); ISO New Eng. Inc., 195 FERC ¶ 61,215, at P 56
 (2026); N.Y. Indep. Sys. Operator, Inc., 195 FERC ¶ 61,216, at P 64 (2026)).
 
 --- PAGE 39 ---
-Docket No. ER26-3515-000                                                                - 39 -
-
-operational and planning challenges.”202 PJM states that in the last two Delivery Years,
+Docket No. ER26-3515-000
+- 39 -
+operational and planning challenges.”202  PJM states that in the last two Delivery Years,
 since the influx of new large loads consisting primarily of data centers, PJM has cleared
 short of its PJM Region Reliability Requirement in the face of exponential load growth.
-
-                            ii.     Pleadings
-
-86.     Protesters generally argue that IRAS is unduly discriminatory because it treats
+ii.
+Pleadings
+86.
+Protesters generally argue that IRAS is unduly discriminatory because it treats
 Large Loads, and/or the LSE or Electric Distributor serving them, differently on the basis
-of the retail customer’s size, vintage, or capacity procurement.203 This disparate
+of the retail customer’s size, vintage, or capacity procurement.203  This disparate
 treatment, they contend, is not justified by the actual impact these customers have on
 system reliability, nor does PJM demonstrate material differences relevant to reliability or
-resource adequacy. Specifically, protesters assert that PJM has not demonstrated that the
+resource adequacy.  Specifically, protesters assert that PJM has not demonstrated that the
 size or in-service date is relevant to the load’s impact on reliability or capacity because
 the capacity of the system is burdened in the same way by a new or existing large load,
-and by a single new large load or many new smaller loads.204 Some protesters also assert
+and by a single new large load or many new smaller loads.204  Some protesters also assert
 that these characteristics are not material because existing or smaller new loads can also
 procure capacity and provide the same curtailment.205
-
-87.    Some protesters argue that PJM’s proposal unduly discriminates against LSEs
+87.
+Some protesters argue that PJM’s proposal unduly discriminates against LSEs
 taking NITS on behalf of New Large Loads, as compared to LSEs taking NITS on behalf
-of other new loads. Constellation and the Data Center Coalition argue that PJM’s
+of other new loads.  Constellation and the Data Center Coalition argue that PJM’s
 proposal unfairly creates a subclass of NITS customers—those serving Eligible New
 Large Loads—who pay the same transmission and capacity rates as other NITS
 customers but receive inferior service and are subject to involuntary curtailment ahead of
-other firm customers.206 The Data Center Coalition further argues that PJM’s proposal
+other firm customers.206  The Data Center Coalition further argues that PJM’s proposal
 undermines traditional curtailment priority of NITS customers, effectively turning them
 into second-class customers by depriving them of equal protection from service
-interruptions and equal curtailment treatment.207 Protesters contend that PJM’s rationale
+interruptions and equal curtailment treatment.207  Protesters contend that PJM’s rationale
 
-       202 Id. at 97 (quoting Sw. Power Pool, Inc., 195 FERC ¶ 61,196 at P 84).
-
-       203 Constellation Protest at 31-37; Data Center Coalition Protest at 27-30; Google
-
+202 Id. at 97 (quoting Sw. Power Pool, Inc., 195 FERC ¶ 61,196 at P 84).
+203 Constellation Protest at 31-37; Data Center Coalition Protest at 27-30; Google
 Protest at 11-13; Microsoft Comments at 4; P3 Protest at 28; Vistra Protest at 11-12,
 13-14.
-       204 Constellation Protest at 31-35; Data Center Coalition Protest at 28-29; EPSA
-
+204 Constellation Protest at 31-35; Data Center Coalition Protest at 28-29; EPSA
 Protest at 4; Google Protest at 12-13; P3 Protest at 28; Vistra Protest at 13-14.
-       205 Talen Protest at 6-10.
-
-       206 Constellation Protest at 36; Data Center Coalition Protest at 5.
-
-       207 Data Center Coalition Protest at 26.
+205 Talen Protest at 6-10.
+206 Constellation Protest at 36; Data Center Coalition Protest at 5.
+207 Data Center Coalition Protest at 26.
 
 --- PAGE 40 ---
-Docket No. ER26-3515-000                                                              - 40 -
-
+Docket No. ER26-3515-000
+- 40 -
 for disparate treatment based on Large Loads is arbitrary and unsupported, and that
 similarly situated NITS customers should receive comparable service and rates, rather
 than being subject to unduly discriminatory and preferential treatment.208
-
-88.    Some protesters also argue that PJM’s proposal unduly discriminates against
+88.
+Some protesters also argue that PJM’s proposal unduly discriminates against
 Electric Distributors with LSEs serving Eligible New Large Loads in their zone/area as
 compared to Electric Distributors that do not have LSEs serving Eligible New Large
-Loads in their zone/area. They further contend that retail customer characteristics are not
-a relevant distinction for resource adequacy challenges. Vistra argues that the
+Loads in their zone/area.  They further contend that retail customer characteristics are not
+a relevant distinction for resource adequacy challenges.  Vistra argues that the
 consideration relevant to resource adequacy is instead whether an Electric Distributor is
-generation deficient.209 Google likewise asserts that the relevant factor that causes the
+generation deficient.209  Google likewise asserts that the relevant factor that causes the
 resource adequacy challenge is aggregate load growth in a zone/area, not the load growth
 of only a subset of customers.210
-
-89.    Other commenters assert that differential treatment is not undue because the size
+89.
+Other commenters assert that differential treatment is not undue because the size
 and operational characteristics of New Large Loads create unique concerns for resource
 adequacy, reliability, and affordability, and so New Large Loads, and the entities that
-serve them, are not similarly situated.211 PIOs assert that New Large Loads are different
+serve them, are not similarly situated.211  PIOs assert that New Large Loads are different
 from traditional residential and commercial load because they grow rapidly and
 unpredictably with concentrated impacts on the electricity system, and develop
-significantly faster than construction of new supply.212 PIOs argue that as such, New
-Large Loads pose distinct challenges for reliability and affordability. PIOs argue that
+significantly faster than construction of new supply.212  PIOs argue that as such, New
+Large Loads pose distinct challenges for reliability and affordability.  PIOs argue that
 New Large Loads are having an outsized impact on future resource adequacy and on
 real-time reliability, which warrants placing unique requirements on them through LSEs
-and Electric Distributors. Appalachian Voices likewise argues that the distinction is
+and Electric Distributors.  Appalachian Voices likewise argues that the distinction is
 based on legitimate operational constraints caused by the sudden and unexpected influx
 of New Large Load demand, which has significantly higher demand requirements and
 higher load factors.213
-
-90.   In its answer, PJM reiterates that IRAS is not unduly discriminatory because of the
+90.
+In its answer, PJM reiterates that IRAS is not unduly discriminatory because of the
 unique characteristics of Large Loads that are relevant to ensuring just and reasonable
 
-       208 Constellation Protest at 36; Data Center Coalition Protest at 30.
-
-       209 Vistra Protest at 12.
-
-       210 Google Protest at 12.
-
-       211 Appalachian Voices Comments at 1, 10-12; PIOs Protest at 13-18.
-
-       212 PIOs Protest at 13-18.
-
-       213 Appalachian Voices Comments at 10-12.
+208 Constellation Protest at 36; Data Center Coalition Protest at 30.
+209 Vistra Protest at 12.
+210 Google Protest at 12.
+211 Appalachian Voices Comments at 1, 10-12; PIOs Protest at 13-18.
+212 PIOs Protest at 13-18.
+213 Appalachian Voices Comments at 10-12.
 
 --- PAGE 41 ---
-Docket No. ER26-3515-000                                                              - 41 -
-
-rates and the reliable operation of the bulk power system.214 PJM further asserts that
+Docket No. ER26-3515-000
+- 41 -
+rates and the reliable operation of the bulk power system.214  PJM further asserts that
 IRAS is narrowly tailored to address capacity shortfalls caused by New Large Loads that
 lack sufficient capacity and applies only during specifically defined emergency
-situations.215 PJM also argues that distinguishing between existing Large Loads and New
+situations.215  PJM also argues that distinguishing between existing Large Loads and New
 Large Loads based on vintage is justified because new, rather than existing, load causes
 the capacity shortfall that necessitates IRAS.
-
-91.     In their answers, Constellation, Data Center Coalition, and Vistra argue that
+91.
+In their answers, Constellation, Data Center Coalition, and Vistra argue that
 parties do not explain why New Large Loads are solely or disproportionately responsible
-for the region’s resource adequacy shortfall.216 They assert that both new and existing
+for the region’s resource adequacy shortfall.216  They assert that both new and existing
 Large Loads contribute to the resource adequacy shortfall because every transmission
-system user is economically marginal.217 Data Center Coalition and Vistra also argue
+system user is economically marginal.217  Data Center Coalition and Vistra also argue
 that PJM misread the SPP CHILLS precedent, which they argue supports offering
 different services to differently situated loads but not reducing NITS for Electric
 Distributors serving materially identical loads.218
-
-92.    Constellation further argues that Governor Shapiro’s justification for
+92.
+Constellation further argues that Governor Shapiro’s justification for
 discriminating against new large computational loads highlights, rather than resolves, the
 proposal’s unlawfulness because it fails to explain why those loads differ in their capacity
 needs or resource adequacy burdens, and conflicts with PJM’s rejection of distinctions
 between computational and other large loads.219
 
-       214 PJM Answer at 59-60.
-
-       215 Id. at 60-61.
-
-       216 Constellation Answer at 12-13; Data Center Coalition Answer at 16-18; Google
-
+214 PJM Answer at 59-60.
+215 Id. at 60-61.
+216 Constellation Answer at 12-13; Data Center Coalition Answer at 16-18; Google
 Answer at 20; Vistra Answer at 16.
-       217 Constellation Answer at 13 (citing BNP Paribas Energy Trading v. FERC, 743
-
+217 Constellation Answer at 13 (citing BNP Paribas Energy Trading v. FERC, 743
 F.3d 264, 269 (D.C. Cir. 2014) (holding that “imputing an exclusive or even primary
 causal role to the . . . demand” of the newest market entrants is not equitable)); Se. Mich.
 Gas v. FERC, 133 F.3d 34, 41 (D.C. Cir. 1998) (“every shipper is economically marginal,
@@ -1899,59 +1720,58 @@ the costs of increased demand may equitably be attributed to every user.”)); G
 Answer at 22 (citing BNP Paribas Energy Trading GP v. FERC, 743 F.3d at 268-69);
 Vistra Answer at 16 (citing BNP Paribas Energy Trading GP v. FERC, 743 F.3d at
 268-69).
-       218 Data Center Coalition Answer at 18-19; Vistra Answer at 17.
-
-       219 Constellation Answer at 14.
+218 Data Center Coalition Answer at 18-19; Vistra Answer at 17.
+219 Constellation Answer at 14.
 
 --- PAGE 42 ---
-Docket No. ER26-3515-000                                                                   - 42 -
-
-93.    The IMM disagrees with Data Center Coalition that IRAS is unduly
+Docket No. ER26-3515-000
+- 42 -
+93.
+The IMM disagrees with Data Center Coalition that IRAS is unduly
 discriminatory because the IMM argues that data centers uniquely drive PJM’s reliability
 challenges through their rapid, large-scale interconnection requests and reliance on
 curtailments before the necessary infrastructure is available, making data center specific
 rules consistent with cost-causation principles.220
-
-                             iii.   Determination
-
-94.     We find that PJM has not currently offered sufficiently detailed evidence
+iii.
+Determination
+94.
+We find that PJM has not currently offered sufficiently detailed evidence
 concerning how its treatment of Electric Distributors and LSEs taking NITS differently in
 the resource adequacy context based on the characteristics of their retail customers is not
-unduly discriminatory.221 PJM’s proposal imposes capacity procurement and curtailment
+unduly discriminatory.221  PJM’s proposal imposes capacity procurement and curtailment
 obligations on Electric Distributors and LSEs taking NITS to serve certain loads based on
 retail customer characteristics, yet PJM has not at this time produced evidence sufficient
 to demonstrate how such characteristics are material to the resource adequacy challenges
-its proposal seeks to address. Historically, PJM’s capacity market has treated all load
+its proposal seeks to address.  Historically, PJM’s capacity market has treated all load
 taking NITS comparably, procuring capacity on its behalf regardless of retail customer
-class or whether the load is new or existing. While PJM now proposes to distinguish
+class or whether the load is new or existing.  While PJM now proposes to distinguish
 between different loads taking NITS on these bases for purposes of both procuring
 capacity through its Reliability Pricing Model (RPM) and curtailing NITS, it fails to
 provide sufficiently detailed evidence to support why Electric Distributors and LSEs
 using NITS to serve New Large Loads should not be treated comparably to Electric
-Distributors and LSEs using NITS to serve equivalent quantities of load growth. We note
+Distributors and LSEs using NITS to serve equivalent quantities of load growth.  We note
 PJM’s explanation that New Large Loads have unique characteristics compared to
 traditional load growth and are the primary cause for the resource adequacy shortfall,
 assertions with which some commenters agree,222 but we find that PJM’s generic
 references to these retail customer characteristics without more detail are insufficient
 evidence to counter the current resource adequacy construct in PJM, i.e., that PJM will
-procure sufficient capacity to serve all NITS load in the PJM Region. Therefore, we find
+procure sufficient capacity to serve all NITS load in the PJM Region.  Therefore, we find
 that, in its current filing, PJM did not adequately support its proposal to treat Electric
 Distributors and LSEs differently based on the characteristics of their retail customers.
 
-       220 IMM Answer at 5-6.
-
-       221 It is a well-established principle that all similarly situated entities should be
-
-charged consistent and congruent rates. Tenaska Clear Creek Wind, LLC v. FERC,
+220 IMM Answer at 5-6.
+221 It is a well-established principle that all similarly situated entities should be
+charged consistent and congruent rates.  Tenaska Clear Creek Wind, LLC v. FERC,
 108 F.4th 858, 868 (D.C. Cir. 2024) (“And undue discrimination occurs when similarly
 situated entities are charged different rates for no good reason.” (quoting Consol. Edison
 Co. of N.Y., Inc. v. FERC, 45 F.4th 265, 282 (D.C. Cir. 2022)).
-       222 See supra P 84.
+222 See supra P 84.
 
 --- PAGE 43 ---
-Docket No. ER26-3515-000                                                              - 43 -
-
-95.    Should PJM choose to refile a modified version of its proposed IRAS framework,
+Docket No. ER26-3515-000
+- 43 -
+95.
+Should PJM choose to refile a modified version of its proposed IRAS framework,
 we encourage PJM to either provide further justification regarding its proposed treatment
 of Electric Distributors or LSEs using NITS to serve New Large Loads or revise its
 proposal to not expressly single out LSEs using NITS to serve New Large Loads, or
@@ -1961,374 +1781,334 @@ presents a shared regulatory challenge that implicates both federal and state au
 States have a crucial role to play in this challenge by designating which retail customers
 must be curtailed when the system is stressed, and we strongly encourage states to
 continue their important work on this issue.
-
-                      d.     BYONC Accreditation
-
-                             i.    PJM’s Filing
-
-96.     PJM proposes that New Large Loads can avoid curtailment under IRAS by
-bringing new capacity to offset their capacity needs.224 PJM states that BYONC
+d.
+BYONC Accreditation
+i.
+PJM’s Filing
+96.
+PJM proposes that New Large Loads can avoid curtailment under IRAS by
+bringing new capacity to offset their capacity needs.224  PJM states that BYONC
 resources will be subject to all of the requirements for capacity resources associated with
 their resource type, including deficiency charges and capacity performance penalties.225
-PJM proposes that: (1) a BYONC resource’s UCAP level be determined in the first
+PJM proposes that:  (1) a BYONC resource’s UCAP level be determined in the first
 auction it clears; and (2) BYONC resources are subject to a 10-year must-offer and
 $0/MW-Day offer requirement in PJM’s capacity market, including resource types
 usually exempt from the must-offer requirement, such as demand response resources.226
 Demand response and distributed energy resources will be required to demonstrate their
 performance each year of the 10-year period consistent with those resource classes’
 treatment in the capacity market.227
-
-97.   PJM explains that the timing of the BYONC arrangement is central to the
+97.
+PJM explains that the timing of the BYONC arrangement is central to the
 determination of the BYONC’s Accredited UCAP value because the ICAP equivalent of
 
-       223 PJM Interconnection, L.L.C., 196 FERC ¶ 61,245, at P 161 (2026).
-
-       224 Transmittal at 49.
-
-       225 Id. at 55 (citing Proposed OATT, attach. DD-4, § VIII(c)).
-
-       226 Id. at 55-56, 65-66.   Only BYONC supported by a demand resource or
+223 PJM Interconnection, L.L.C., 196 FERC ¶ 61,245, at P 161 (2026).
+224 Transmittal at 49.
+225 Id. at 55 (citing Proposed OATT, attach. DD-4, § VIII(c)).
+226 Id. at 55-56, 65-66.  Only BYONC supported by a demand resource or
 distributed energy resource Capacity Aggregation Resource may be replaced during the
 10-year commitment period, and it must be replaced by another eligible resource willing
-to fulfill the rest of the 10-year requirement. Id. at 56-57.
-       227 Id. at 64-65.
+to fulfill the rest of the 10-year requirement.  Id. at 56-57.
+227 Id. at 64-65.
 
 --- PAGE 44 ---
-Docket No. ER26-3515-000                                                           - 44 -
-
+Docket No. ER26-3515-000
+- 44 -
 the Accredited UCAP value is used to reduce a New Large Load’s potential IRAS
 availability.228
-
-                            ii.    Pleadings
-
-98.     AMP requests that the Commission direct PJM to modify its proposal to set the
+ii.
+Pleadings
+98.
+AMP requests that the Commission direct PJM to modify its proposal to set the
 level of BYONC for a generation or storage resource at the resource’s accredited capacity
-in the first year it is in arrangement with a New Large Load.229 AMP argues PJM expects
+in the first year it is in arrangement with a New Large Load.229  AMP argues PJM expects
 the Effective Load Carrying Capability (ELCC) of some resource classes, especially
 storage, to decline over the BYONC commitment term, and using a fixed ELCC value for
-BYONC would therefore over-credit New Large Loads for BYONC.230 AMP argues that
+BYONC would therefore over-credit New Large Loads for BYONC.230  AMP argues that
 the portion of the New Large Load that exceeds the ELCC-measured UCAP of the
 supporting BYONC resource is effectively the same as Eligible New Large Load but
 without the IRAS obligation.
-
-99.     Further, AMP argues that PJM has not explained how BYONC will be accredited
-for the purposes of the RPM. AMP states that, if the fixed Accredited UCAP is used, and
+99.
+Further, AMP argues that PJM has not explained how BYONC will be accredited
+for the purposes of the RPM.  AMP states that, if the fixed Accredited UCAP is used, and
 exceeds the UCAP that would have resulted from applying updated ELCC values to the
 underlying resources, PJM would be counting and clearing MW of Accredited UCAP
-that may not exist.231 However, AMP continues, if the Accredited UCAP of BYONC
+that may not exist.231  However, AMP continues, if the Accredited UCAP of BYONC
 resources is updated for the RPM, the BYONC MW in the RPM could be less than the
 MW of New Large Loads, potentially shifting costs to other customers.232
-
 100. EPSA and FirstEnergy assert that the proposal to lock in the BYONC resource’s
 accreditation grants BYONC resources unduly preferential treatment under ELCC
-accreditation.233 EPSA similarly argues that the lock-in mechanism may result in a
+accreditation.233  EPSA similarly argues that the lock-in mechanism may result in a
 BYONC’s capacity contribution being overstated in RPM Auctions, which will further
-erode the fidelity of the RPM BRA or incremental auction price signal.234 The IMM
+erode the fidelity of the RPM BRA or incremental auction price signal.234  The IMM
 argues that it is unjust and unreasonable to protect new generation from ELCC risk.235
 
-      228 Id. at 65-66.
-
-      229 AMP Protest at 4.
-
-      230 Id. at 4-6.
-
-      231 Id. at 7.
-
-      232 Id. at 8.
-
-      233 EPSA Protest at 10-11.
-
-      234 Id. at 11; FirstEnergy Protest at 5.
+228 Id. at 65-66.
+229 AMP Protest at 4.
+230 Id. at 4-6.
+231 Id. at 7.
+232 Id. at 8.
+233 EPSA Protest at 10-11.
+234 Id. at 11; FirstEnergy Protest at 5.
 
 --- PAGE 45 ---
-Docket No. ER26-3515-000                                                                - 45 -
-
+Docket No. ER26-3515-000
+- 45 -
 The IMM explains that, regardless of the technology, fixing the accredited UCAP at a
-single value over the period will misrepresent the actual UCAP.236 AEU supports the
+single value over the period will misrepresent the actual UCAP.236  AEU supports the
 lock-in mechanism, asserting that this prevents resources from being exposed to
 unhedgeable ELCC risk.237
-
 101. In its answer, PJM argues that IRAS is intended to incent New Large Loads to
 bring new capacity to meet their resource adequacy needs, and asserts that the lock-in
 mechanism avoids introducing uncertainty to the BYONC arrangement and undermining
-the BYONC incentive.238 PJM asserts that “the risk of changes to ELCC values (both
+the BYONC incentive.238  PJM asserts that “the risk of changes to ELCC values (both
 increases and decreases) remains just as it is today—on individual generators in the first
 instance and all customers in the event that PJM has to purchase more capacity due to an
 aggregate ELCC decline.”239
-
 102. The IMM argues that disregarding changes in actual ELCC values does not
 eliminate uncertainty; it shifts the risks of any capacity shortfall, and the cost of
 procuring additional capacity, to other PJM customers.240
-
-                            iii.   Determination
-
+iii.
+Determination
 103. We find that PJM has not sufficiently justified its proposal to lock in the
 accreditation of BYONC resources over the lifetime of the BYONC arrangement to be
-just and reasonable and not unduly discriminatory or preferential. Generation resources
+just and reasonable and not unduly discriminatory or preferential.  Generation resources
 vary considerably in their operating characteristics, including various fuel types,
-dispatchability, and maximum run times. UCAP accreditation, as implemented through
+dispatchability, and maximum run times.  UCAP accreditation, as implemented through
 PJM’s ELCC, is designed to create a single tradeable capacity product from a field of
-diverse and distinct generation resources.241 We find that PJM has failed to provide
+diverse and distinct generation resources.241  We find that PJM has failed to provide
 
-       235 IMM Protest at 20.
-
-       236 Id. at 22.
-
-       237 AEU Comments at 9.
-
-       238 PJM Answer at 45.
-
-       239 Id.
-
-       240 IMM Answer at 13-14.
-
-       241 See PJM Interconnection, L.L.C., 186 FERC ¶ 61,080, at P 42 & n.85 (2024)
-
+235 IMM Protest at 20.
+236 Id. at 22.
+237 AEU Comments at 9.
+238 PJM Answer at 45.
+239 Id.
+240 IMM Answer at 13-14.
+241 See PJM Interconnection, L.L.C., 186 FERC ¶ 61,080, at P 42 & n.85 (2024)
 (finding that PJM’s marginal ELCC framework provides a reliability-neutral basis for
 comparison between different resource types for PJM’s capacity market because marginal
 accreditation establishes a framework where capacity resources are interchangeable or
 substitutable as they offer equivalent reliability contributions per accredited unit of
 
 --- PAGE 46 ---
-Docket No. ER26-3515-000                                                              - 46 -
-
+Docket No. ER26-3515-000
+- 46 -
 sufficient record evidence to substantiate its rationale for allowing BYONC resources to
 provide capacity when that capacity is not equivalent to the single tradable capacity
 product that PJM procures through its RPM because its accreditation value is fixed over
-the term of the BYONC arrangement. This lack of substantiation is heightened by the
+the term of the BYONC arrangement.  This lack of substantiation is heightened by the
 fact that PJM’s proposed Tariff language and its description of the lock-in arrangement
 are inconsistent.
-
 104. Specifically, PJM states that the lock-in period acts as a “shield” to BYONC
 resources from changes in their capacity accreditation (as determined through PJM’s
 ELCC capacity accreditation method) by locking in their accreditation for the period of
-the BYONC arrangement. While, in its answer, PJM contends that locking in a BYONC
+the BYONC arrangement.  While, in its answer, PJM contends that locking in a BYONC
 resource’s capacity accreditation will provide certainty to a New Large Load contracting
 with a BYONC resource and incentivize parties to enter into BYONC arrangements,242
 PJM also asserts that “the risk of changes to ELCC values (both increases and decreases)
 remains just as it is today—on individual generators in the first instance and all customers
 in the event that PJM has to purchase more capacity due to an aggregate ELCC
-decline.”243 Yet, despite PJM’s assertion in its answer, PJM’s proposed Tariff provides
+decline.”243  Yet, despite PJM’s assertion in its answer, PJM’s proposed Tariff provides
 that the “Accredited UCAP of any BYONC shall be the Accredited UCAP for the RPM
-Auction in which the BYONC cleared for the initial Delivery Year . . . .”244 We find that
+Auction in which the BYONC cleared for the initial Delivery Year . . . .”244  We find that
 PJM has not sufficiently demonstrated that the potential benefits of locking in BYONC
 resources’ capacity accreditation outweigh PJM’s obligation to ensure that the PJM
 Region’s resource adequacy needs are met.
-
 105. With respect to the arguments PJM has offered, we are concerned with whether
 PJM’s lock-in Tariff language proposal may worsen the problems it is attempting to
-solve. Specifically, PJM’s proposal to lock in the accreditation value of BYONC
+solve.  Specifically, PJM’s proposal to lock in the accreditation value of BYONC
 resources may also risk the capacity market procuring too little or too much capacity
-should the BYONC resource’s actual ELCC accreditation fall or rise over time.245 While
+should the BYONC resource’s actual ELCC accreditation fall or rise over time.245  While
 PJM contends that the risk of the ELCC accreditation decreasing will still lie with
 individual capacity resources in the first instance, that statement does not appear to hold
 with respect to BYONC resources, whose accreditation value will be locked in for the
 
 capacity).
-       242 PJM Answer at 45.
-
-       243 Id.
-
-       244 Proposed OATT, attach. DD-4, § VIII(i).
-
-       245 We note that PJM’s long-term ELCC forecast projects lower ELCC ratings for
-
-all resource types over time. See PJM, Preliminary ELCC Class Ratings for 2028/29 to
+242 PJM Answer at 45.
+243 Id.
+244 Proposed OATT, attach. DD-4, § VIII(i).
+245 We note that PJM’s long-term ELCC forecast projects lower ELCC ratings for
+all resource types over time.  See PJM, Preliminary ELCC Class Ratings for 2028/29 to
 2042/43, preliminary-elcc-class-ratings-for-period-dy28-dy42-elcc.pdf.
 
 --- PAGE 47 ---
-Docket No. ER26-3515-000                                                               - 47 -
-
-term of the BYONC arrangement per the proposed Tariff language.246 We agree with
+Docket No. ER26-3515-000
+- 47 -
+term of the BYONC arrangement per the proposed Tariff language.246  We agree with
 PJM that whenever ELCC accreditation declines, it will affect all load because PJM will
-have to procure additional capacity. However, the risk that a BYONC resource’s
+have to procure additional capacity.  However, the risk that a BYONC resource’s
 locked-in accreditation value be higher than the capacity that it can actually provide has
 the potential to create a new resource adequacy risk for the entire PJM Region,
 particularly given the potential magnitude of BYONC MW that will be offered into and
-clear the capacity market. We note PJM’s explanation that the lock-in mechanism would
+clear the capacity market.  We note PJM’s explanation that the lock-in mechanism would
 avoid introducing uncertainty to the BYONC arrangement that would undermine the
-incentive for Large Loads to contract with new capacity. However, PJM has not
+incentive for Large Loads to contract with new capacity.  However, PJM has not
 sufficiently substantiated in the current record—especially with the conflicting Tariff
 language and explanation—that those considerations outweigh the potential downsides of
 introducing new resource adequacy risks and therefore merit a different approach to
-ELCC accreditation for BYONC resources. For these reasons, we find that PJM has not
+ELCC accreditation for BYONC resources.  For these reasons, we find that PJM has not
 sufficiently substantiated that its proposal to lock in the value of BYONC UCAP
 accreditation is just and reasonable and not unduly discriminatory or preferential.
-
-                            e.     Other Issues
-
+e.
+Other Issues
 106. Because we are rejecting PJM’s proposed IRAS framework, which as noted above
 appears to be an integrated package, we need not address other issues raised in this
-proceeding regarding the merits of other aspects of IRAS. However, we note that several
+proceeding regarding the merits of other aspects of IRAS.  However, we note that several
 elements of PJM’s proposed IRAS framework (including but not limited to those
 discussed below) may require additional justification to demonstrate that they are just and
-reasonable and not unduly discriminatory or preferential. Should PJM choose to refile a
+reasonable and not unduly discriminatory or preferential.  Should PJM choose to refile a
 modified version of its proposed IRAS framework that does not infringe on retail rate
 regulation, we encourage PJM to address the concerns discussed below.
-
 107. First, we are concerned that, as designed, PJM’s proposal may not be consistent
-with mandatory Reliability Standards. Reliability Standard EOP-011-4 only permits firm
+with mandatory Reliability Standards.  Reliability Standard EOP-011-4 only permits firm
 loads to be curtailed following initiation by the reliability coordinator of an EEA3, which
 is when “[t]he energy deficient Balancing Authority is unable to meet minimum
-Contingency Reserve requirements.”247 In contrast, PJM’s proposal would direct Electric
+Contingency Reserve requirements.”247  In contrast, PJM’s proposal would direct Electric
 
-       246 PJM has not sufficiently explained in this record how factors specific to the
-
+246 PJM has not sufficiently explained in this record how factors specific to the
 instant proposal could mitigate the concerns the Commission expressed when it
 previously rejected a proposal from PJM to establish a 13-year ELCC accreditation floor
 for new capacity resources, finding that PJM failed to justify why the benefits of reducing
 ELCC volatility for certain resources outweigh the risks of establishing potentially
-inaccurate ELCC accreditation values. PJM Interconnection, L.L.C., 175 FERC
+inaccurate ELCC accreditation values.  PJM Interconnection, L.L.C., 175 FERC
 ¶ 61,084, at P 105 (2021).
-       247 N. Am. Elec. Reliability Corp., Reliability Standard EOP-011-4 — Emergency
+247 N. Am. Elec. Reliability Corp., Reliability Standard EOP-011-4 — Emergency
 
 --- PAGE 48 ---
-Docket No. ER26-3515-000                                                               - 48 -
-
+Docket No. ER26-3515-000
+- 48 -
 Distributors to curtail certain load, which comprise a portion of a Transmission
 Customer’s firm NITS load under PJM’s proposal, earlier in the emergency process, at
 EEA1, when all generation is committed and non-firm wholesale energy sales have been
-curtailed. Although firm loads willing to receive a lower curtailment priority, such as
+curtailed.  Although firm loads willing to receive a lower curtailment priority, such as
 demand response resources, may be voluntarily curtailed before EEA3 under the
 mandatory Reliability Standards, PJM’s proposal would shed firm load on an involuntary
-basis. Several parties argue that it is not just and reasonable to curtail IRAS MW before
-demand response resources.248 Others argue that curtailing New Large Loads prior to
-calling on Pre-Emergency Load Management is just and reasonable.249 Nevertheless,
+basis.  Several parties argue that it is not just and reasonable to curtail IRAS MW before
+demand response resources.248  Others argue that curtailing New Large Loads prior to
+calling on Pre-Emergency Load Management is just and reasonable.249  Nevertheless,
 PJM has crafted curtailment rules that do not appear internally consistent with its Tariff
-(i.e., curtailing certain transmission customers on a pro rata basis). It appears that PJM’s
+(i.e., curtailing certain transmission customers on a pro rata basis).  It appears that PJM’s
 proposal ignores the plain language of mandatory Reliability Standard EOP-011-4
 regarding the curtailment priority of loads for whom an Eligible Customer is taking and
 paying for firm transmission service, which would result in PJM dispatch actions that
 conflict with the mandatory Reliability Standards.
-
 108. Second, the current record suggests that the LSE using NITS to serve an Eligible
 New Large Load would be required to pay the same capacity charges and transmission
 charges as LSEs using NITS to serve other types of load that are not subject to
-curtailment under IRAS and on whose behalf PJM procures capacity.250 Protesters argue
+curtailment under IRAS and on whose behalf PJM procures capacity.250  Protesters argue
 that LSEs should not be allocated capacity charges based on the MW of Eligible New
 Large Loads when PJM has excluded such loads from the VRR curve, and is therefore
 not procuring capacity for said loads, or when these loads will be curtailed before
-capacity resources that are demand response resources are deployed.251 It appears that
+capacity resources that are demand response resources are deployed.251  It appears that
 PJM has not sufficiently justified why it is just and reasonable and not unduly
 discriminatory or preferential for LSEs using NITS to serve Eligible New Large Loads to
 be charged for capacity based on the quantity of Eligible New Large Load MW when
-PJM does not procure capacity on behalf of that load. The Commission has previously
+PJM does not procure capacity on behalf of that load.  The Commission has previously
 found that Eligible Customers taking non-firm transmission service on behalf of co-
 located load should not be charged for capacity because PJM does not procure capacity
-on their behalf.252 We are concerned that PJM has not adequately explained why it is just
+on their behalf.252  We are concerned that PJM has not adequately explained why it is just
 
 Operations, Requirement, attach. 1, § B(3) (approved Feb. 15, 2024).
-       248 Constellation Protest at 42; IMM Protest at 17.
-
-       249 See, e.g., Governor Shapiro Answer at 24-25.
-
-       250 See, e.g., Data Center Coalition Protest at 5, 23-24.
-
-       251 Data Center Coalition Protest at 19-22; Google Protest at 15; Microsoft
-
+248 Constellation Protest at 42; IMM Protest at 17.
+249 See, e.g., Governor Shapiro Answer at 24-25.
+250 See, e.g., Data Center Coalition Protest at 5, 23-24.
+251 Data Center Coalition Protest at 19-22; Google Protest at 15; Microsoft
 Comments at 4; Vistra Protest at 16-17.
 
 --- PAGE 49 ---
-Docket No. ER26-3515-000                                                            - 49 -
-
+Docket No. ER26-3515-000
+- 49 -
 and reasonable and not unduly discriminatory or preferential to diverge from this
 principle.
-
 109. Third, we are concerned that PJM’s proposal does not take into account locational
-or deliverability considerations for BYONC resources. We note that under PJM’s
+or deliverability considerations for BYONC resources.  We note that under PJM’s
 existing Tariff, PJM identifies LDA Reliability Requirements, which require sufficient
-capacity to be inside or deliverable to the LDA based on transmission constraints. Under
+capacity to be inside or deliverable to the LDA based on transmission constraints.  Under
 PJM’s proposal, the New Large Load would not be subject to IRAS, and its load would
 not be counted towards the Eligible New Large Load amount for its EDC zone/area,
 regardless of transmission constraints between the New Large Load and the BYONC
 resource, which could exacerbate the resource adequacy shortfall in the New Large
-Load’s zone. If PJM chooses to file a new proposal, PJM may consider if it is
+Load’s zone.  If PJM chooses to file a new proposal, PJM may consider if it is
 appropriate to condition IRAS consideration of BYONC arrangements on PJM finding
 that the BYONC resources are deliverable to the LDAs where the New Large Loads with
 which they are in agreements are located.
-
 110. Fourth, the record suggests that PJM’s designation of New Large Loads to provide
 IRAS obligations may disrupt existing commercial arrangements, including binding
 agreements between large loads that will ramp up after June 1, 2027 and existing
-generation.253 Should PJM choose to refile, PJM should consider how to account for or
+generation.253  Should PJM choose to refile, PJM should consider how to account for or
 acknowledge these concerns, to the extent they persist given our other findings and
-guidance in this order. It also appears that PJM has not adequately explained why a
+guidance in this order.  It also appears that PJM has not adequately explained why a
 threshold only on the overall size of the Large Load, and not on the incremental increase
-of an existing Large Load, is just and reasonable. The proposed Tariff appears to treat
+of an existing Large Load, is just and reasonable.  The proposed Tariff appears to treat
 existing NITS customers differently even on the basis of small MW increases, such that a
 49 MW existing load that increased its consumption by 1 MW would become a 50 MW
 New Large Load and impose new requirements on the existing NITS customer for the
-entire 50 MW. Should PJM choose to file a new proposal, we encourage PJM to clarify
+entire 50 MW.  Should PJM choose to file a new proposal, we encourage PJM to clarify
 exactly how the definition of New Large Load and any IRAS or IRAS-like framework
-would apply to such existing commercial arrangements. The proposed Tariff also does
+would apply to such existing commercial arrangements.  The proposed Tariff also does
 not appear to account for existing Behind the Meter Generation rules, although the
 Commission has found that NITS customers may net up to 50 MW of load at a particular
 electrical location using Behind the Meter Generation.254
-
 111. We also note that the new non-firm transmission services proposed in the order to
 show cause proceeding on co-located load—specifically Non-Firm Contract Demand
 
-      252 PJM Co-Location Order, 193 FERC ¶ 61,217 at PP 200-201, 214-215.
-
-      253 CyrusOne Comments at 6-8; Equinix Protest at 2, 8-14; FirstEnergy Protest at
-
+252 PJM Co-Location Order, 193 FERC ¶ 61,217 at PP 200-201, 214-215.
+253 CyrusOne Comments at 6-8; Equinix Protest at 2, 8-14; FirstEnergy Protest at
 9; Microsoft Comments at 6; Talen Protest at 12.
-      254 PJM Interconnection, L.L.C., 195 FERC ¶ 61,209, at P 207 (2026).
+254 PJM Interconnection, L.L.C., 195 FERC ¶ 61,209, at P 207 (2026).
 
 --- PAGE 50 ---
-Docket No. ER26-3515-000                                                              - 50 -
-
+Docket No. ER26-3515-000
+- 50 -
 transmission service—demonstrate a concept that PJM could consider as another possible
-avenue to achieve some of the aims of PJM’s proposed IRAS framework. In the PJM
+avenue to achieve some of the aims of PJM’s proposed IRAS framework.  In the PJM
 Large Load Show Cause Order, the Commission preliminarily found that PJM’s Tariff
 appears to be unjust and unreasonable because it does not include transmission services
 that reflect Eligible Customers taking transmission service on behalf of flexible large
 loads that are willing and able to limit their use of the transmission system under certain
-conditions.255 The Commission directed PJM to explain whether its Tariff remains just
-and reasonable without Non-Firm Contract Demand Service for flexible large loads.256 It
+conditions.255  The Commission directed PJM to explain whether its Tariff remains just
+and reasonable without Non-Firm Contract Demand Service for flexible large loads.256  It
 appears that a non-firm transmission service similar to Non-Firm Contract Demand
 transmission service, with appropriate adjustments, might be considered as a potential
-avenue to achieve some of the aims of PJM’s proposed IRAS framework. However, we
+avenue to achieve some of the aims of PJM’s proposed IRAS framework.  However, we
 note that Non-Firm Contract Demand transmission service is affirmatively a voluntary
-option, while the product or service here is not. Should PJM choose to refile its IRAS
+option, while the product or service here is not.  Should PJM choose to refile its IRAS
 proposal, we encourage PJM to clearly identify the product or service IRAS is intended
 to provide and ensure its proposed Tariff revisions consistently reflect that
-characterization. We also encourage PJM to consider providing a description of how it
+characterization.  We also encourage PJM to consider providing a description of how it
 will transition from any proposed types of service back to its traditional market structures
-and how it will avoid a long-term bifurcation of loads in the PJM market. Although we
+and how it will avoid a long-term bifurcation of loads in the PJM market.  Although we
 are rejecting PJM’s proposal, PJM may consider refiling an alternative proposal under
 FPA section 205 that considers the guidance provided herein.
 
 The Commission orders:
 
-       (A) PJM’s proposal is hereby accepted in part, effective October 12, 2026, as
+(A)
+PJM’s proposal is hereby accepted in part, effective October 12, 2026, as
 requested, and rejected in part, as discussed in the body of the order.
-
-       (B) PJM is hereby directed to submit a compliance filing within 30 days of the
+(B)
+PJM is hereby directed to submit a compliance filing within 30 days of the
 date of this order, as discussed in the body of this order.
+By the Commission.  Commissioner Rosner is concurring with a separate statement
 
-By the Commission. Commissioner Rosner is concurring with a separate statement
-                   attached.
+  attached.
 
-       255 PJM Large Load Show Cause Order, 195 FERC ¶ 61,211 at P 86.
-
-       256 Id. at P 87.
+255 PJM Large Load Show Cause Order, 195 FERC ¶ 61,211 at P 86.
+256 Id. at P 87.
 
 --- PAGE 51 ---
-Docket No. ER26-3515-000                           - 51 -
+Docket No. ER26-3515-000
+- 51 -
 
-(SEAL)
+( S E A L )
 
-                           Debbie-Anne A. Reese,
-                                 Secretary.
+Debbie-Anne A. Reese,
+Secretary.
 
 --- PAGE 52 ---
-Docket No. ER26-3515-000                                                           - 52 -
-
-                                       Appendix
-
-                           List of Intervenors and Commenters
-
+Docket No. ER26-3515-000
+- 52 -
+Appendix
+List of Intervenors and Commenters
 * Filed comments or protests
 + Filed comments or protests without a motion for intervention
 # Motions to intervene out-of-time
@@ -2359,19 +2139,16 @@ District of Columbia Office of People’s Counsel +
 Dominion Energy Services, Inc.258*
 Duke Energy Corporation259
 
-       257 Avangrid Networks, Inc. and Avangrid Power, LLC on behalf of their
-
+257 Avangrid Networks, Inc. and Avangrid Power, LLC on behalf of their
 respective subsidiaries.
-       258 Dominion Energy Service on behalf of Virginia Electric Power Company.
-
-       259 Duke Energy Corporation on behalf of Duke Energy Ohio, Inc.; Duke Energy
-
+258 Dominion Energy Service on behalf of Virginia Electric Power Company.
+259 Duke Energy Corporation on behalf of Duke Energy Ohio, Inc.; Duke Energy
 Kentucky, Inc.; Duke Energy Indiana, LLC; Duke Energy Carolinas, LLC; and Duke
 Energy Progress, LLC.
 
 --- PAGE 53 ---
-Docket No. ER26-3515-000                                                          - 53 -
-
+Docket No. ER26-3515-000
+- 53 -
 Duquesne Light Company
 East Kentucky Power Cooperative, Inc. (EKPC)*
 EDF Power Solutions, Inc.
@@ -2401,23 +2178,21 @@ Michigan Public Service Commission
 Microsoft Corporation (Microsoft)*
 MN8 Energy LLC
 Monitoring Analytics, LLC, acting in its capacity as the Independent Market Monitor for
-        PJM (IMM)*
+PJM (IMM)*
 National Association of Regulatory Utility Commissioners
 National Grid Plc262
 
-      260 FirstEnergy on behalf of Ohio Edison Company, The Cleveland Electric
-
+260 FirstEnergy on behalf of Ohio Edison Company, The Cleveland Electric
 Illuminating Company, The Toledo Edison Company, FirstEnergy Pennsylvania Electric
 Company, Jersey Central Power & Light Company, Monongahela Power Company, and
 The Potomac Edison.
-      261 Invenergy includes Invenergy Wind Development North America LLC,
-
+261 Invenergy includes Invenergy Wind Development North America LLC,
 Invenergy Solar Development North America LLC, and Invenergy Thermal Development
 Holdings LLC.
 
 --- PAGE 54 ---
-Docket No. ER26-3515-000                                                     - 54 -
-
+Docket No. ER26-3515-000
+- 54 -
 Natural Resources Defense Council*
 New Jersey Board of Public Utilities (NJBPU)*
 New Jersey Division of Rate Counsel*
@@ -2432,6 +2207,7 @@ Ohio Energy Leadership Council (Ohio ELC)*
 Old Dominion Electric Cooperative (ODEC)*
 Organization of PJM States, Inc. (OPSI)^
 Pennsylvania Office of Consumer Advocate
+
 Pennsylvania Public Utility Commission (Pennsylvania Commission)*
 Persistence Analytics Group LLC (PAG)*
 PJM Industrial Customer Coalition (Industrial Customers)*
@@ -2448,28 +2224,25 @@ Solar Energy Industries Association*
 Southern Maryland Electric Cooperative, Inc. (SMECO)*
 Sunrun Inc.*
 
-      262 National Grid Plc on behalf of National Grid Ventures.
-
-      263 NRG on behalf of Aspen Gen Funding, LLC; Direct Energy Business, LLC;
-
+262 National Grid Plc on behalf of National Grid Ventures.
+263 NRG on behalf of Aspen Gen Funding, LLC; Direct Energy Business, LLC;
 Doswell, LLC; Energy Plus Holding LLC; Green Mountain Energy Company; Helix
 Ironwood, LLC; Enerwise Global Technologies, LLC; Independent Energy Group LLC;
 LSP University Park, LLC; Midwest Generation LLC; Reliant Energy Northeast LLC;
 Riverside Generating Company, LLC; Stream Energy Pennsylvania, LLC; University
 Park Energy, LLC; XOOM Energy, LLC; NRG Energy, Inc.; and NRG Curtailment
 Solutions, Inc.
-      264 PSEG Companies include PSEG Energy Resources & Trade LLC, PSEG
-
+264 PSEG Companies include PSEG Energy Resources & Trade LLC, PSEG
 Service Electric and Gas Company, and PSEG Power LLC.
 
 --- PAGE 55 ---
-Docket No. ER26-3515-000                                                  - 55 -
-
+Docket No. ER26-3515-000
+- 55 -
 Talen Energy Corporation (Talen)*
 Tesla, Inc.+
 The Center for Progressive Reform*
 U.S. House of Representatives Committee on Energy and Commerce Ranking Member
-       Frank Pallone, Jr. (Representative Pallone) ^
+Frank Pallone, Jr. (Representative Pallone) ^
 Verrus LLC
 VC Renewables LLC and Vitol Inc.
 Virginia State Corporation Commission (Virginia Commission) ^
@@ -2477,57 +2250,60 @@ Vistra Corp. (Vistra)*
 Voltus, Inc. (Voltus) ^
 
 --- PAGE 56 ---
-                        UNITED STATES OF AMERICA
-                 FEDERAL ENERGY REGULATORY COMMISSION
 
-PJM Interconnection, L.L.C.                                   Docket No. ER26-3515-000
+UNITED STATES OF AMERICA
+FEDERAL ENERGY REGULATORY COMMISSION
 
-                                 (Issued October 9, 2026)
+PJM Interconnection, L.L.C.
+Docket No. ER26-3515-000
+
+(Issued October 9, 2026)
 
 ROSNER, Commissioner, concurring:
 
-1.     I agree with the decision to reject the bulk of PJM’s filing for the reasons
-articulated in today’s order. I write separately to emphasize that, if PJM chooses to refile
+1.
+I agree with the decision to reject the bulk of PJM’s filing for the reasons
+articulated in today’s order.  I write separately to emphasize that, if PJM chooses to refile
 its proposal, it must justify its proposal to curtail IRAS load on a mandatory basis before
-load that has voluntarily enrolled in a demand response program. I also urge PJM to
+load that has voluntarily enrolled in a demand response program.  I also urge PJM to
 carefully consider the consequences any refiled proposal might have on its capacity
 market.
-
-2.     Customers in a demand response program allow a utility to reduce their demand
+2.
+Customers in a demand response program allow a utility to reduce their demand
 without resorting to the extreme measure of manually pulling breakers on the utility’s
-distribution network. Demand response customers also receive payments in exchange for
-volunteering to reduce their usage when the grid is stressed. This structure is designed to
+distribution network.  Demand response customers also receive payments in exchange for
+volunteering to reduce their usage when the grid is stressed.  This structure is designed to
 protect consumers and their equipment from the draconian measure of being involuntarily
 forced off the system, as well as to send efficient market signals based on actual system
 conditions.
-
-3.     PJM’s filing flips this paradigm, proposing to force IRAS load off the system in
+3.
+PJM’s filing flips this paradigm, proposing to force IRAS load off the system in
 the earliest stages of emergency conditions,1 before PJM deploys demand response.2
-
-4.      Moreover, PJM’s proposal would force IRAS load off the system in lieu of
-sending capacity price signals that are needed to get new infrastructure built. Because
+4.
+Moreover, PJM’s proposal would force IRAS load off the system in lieu of
+sending capacity price signals that are needed to get new infrastructure built.  Because
 PJM would forcibly curtail IRAS load before other firm load, PJM excludes IRAS load
-from its capacity market demand curve. The result could be a capacity market signaling
+from its capacity market demand curve.  The result could be a capacity market signaling
 that PJM has more than enough capacity while the region sheds thousands of megawatts
-of demand on an involuntary basis. That’s not only economically inefficient, but also
+of demand on an involuntary basis.  That’s not only economically inefficient, but also
 likely to prevent supply and demand from coming back into balance.
 
-       1 That is, during a NERC EEA 1 event.
-
-       2 PJM cleared 7,017 MW of demand response in its most recent capacity auction.
-
+1 That is, during a NERC EEA 1 event.
+2 PJM cleared 7,017 MW of demand response in its most recent capacity auction.
 See PJM, 2028/2029 Base Residual Auction Report, at 15 (Jul. 14, 2026),
 https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2028-
 2029/2028-2029-bra-results-report.pdf.
 
 --- PAGE 57 ---
-Docket No. ER26-3515-000                                                               -2-
+Docket No. ER26-3515-000
+- 2 -
 
-5.     To be clear, in an emergency, data centers not serving critical functions should be
+5.
+To be clear, in an emergency, data centers not serving critical functions should be
 shut off before ordinary customers (Hint: homes, hospitals, and schools should never be
-curtailed before data centers). We need state regulators to establish clear rules for which
-customers should be curtailed first when circumstances require it. And we need PJM to
-be ready to adjust their operations to this evolving paradigm. But such measures should
+curtailed before data centers).  We need state regulators to establish clear rules for which
+customers should be curtailed first when circumstances require it.  And we need PJM to
+be ready to adjust their operations to this evolving paradigm.  But such measures should
 only be taken when necessary to keep the system reliable, after voluntary demand
 response resources have been exhausted.
 
