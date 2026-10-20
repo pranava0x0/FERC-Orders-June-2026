@@ -1184,3 +1184,13 @@ test("every timeline iso is a date, optionally with a same-day ordering suffix",
     assert.match(e.iso, /^\d{4}-\d{2}-\d{2}[a-z]?$/, `timeline iso "${e.iso}" (${e.title})`);
   }
 });
+
+test("the lead summary's 'Where it stands' date is the filings cutoff", () => {
+  // newsCapture moved to Oct 20 while meta.summary still said "Where it stands on October 19" (Codex, PR 24).
+  const para = (D.meta.summary || []).find((p) => /^Where it stands on /.test(p));
+  assert.ok(para, "meta.summary has a 'Where it stands on <date>' paragraph");
+  const m = para.match(/^Where it stands on ([A-Z][a-z]+ \d{1,2}, \d{4})/);
+  assert.ok(m, "the paragraph opens with a full date");
+  const iso = new Date(m[1] + " 12:00 UTC").toISOString().slice(0, 10);
+  assert.equal(iso, D.meta.newsCapture, `summary says ${m[1]}, newsCapture is ${D.meta.newsCapture}`);
+});
