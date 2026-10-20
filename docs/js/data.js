@@ -718,7 +718,7 @@ window.FERC_DATA = (function () {
     capture: "2026-06-22",
     discourseCapture: "2026-06-29",
     wave2Capture: "2026-07-28",
-    newsCapture: "2026-10-20",
+    newsCapture: "2026-10-19",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
@@ -2041,6 +2041,7 @@ window.FERC_DATA = (function () {
     {
       wave: 3,
       track: "context",
+      captured: "2026-10-20", // found by the Oct 20 commentary sweep; meta.newsCapture stays at the filings cutoff
       title: "The backstop bill: who pays for capacity bought for new load",
       body: "PJM's backstop buys capacity for a shortfall that large loads are driving, so the argument is over who carries the cost. Before FERC ruled, NRDC's Claire Lang-Ree read the proposal as PJM refusing to keep buying power for data centers, and Maryland People's Counsel David Lapp warned that households would pay if the forecast load never arrived. Two concurrences on the Sept 29 order answered: Chairman Swett faulted a filing made on the last possible day, and Commissioner See wrote that existing customers should not carry costs new demand causes. Ari Peskoe called FERC's cost-allocation objection surprising; DOE backed the order on Oct 9.",
       quotes: [
@@ -2055,6 +2056,7 @@ window.FERC_DATA = (function () {
     {
       wave: 3,
       track: "context",
+      captured: "2026-10-20", // found by the Oct 20 commentary sweep; meta.newsCapture stays at the filings cutoff
       title: "After Oct 9, the states hold the pen on curtailment",
       body: "FERC rejected PJM's curtail-first service as a reach into retail jurisdiction, and the reactions agree on the consequence: the next move belongs to the states. Jeff Dennis read the order as more pressure on them. Mary Yang, a former PJM regulatory counsel now at 804 Advisory, said it slows bring-your-own-capacity deals. NRDC wants PJM to refile with a bring-your-own-supply rule. And in a Duke Energy Carolinas order the same day, outside the RTOs, Commissioner Rosner wrote that FERC may have to widen the show cause orders' cost-recovery framework if state action falls short; that line is quoted as Utility Dive printed it.",
       quotes: [
