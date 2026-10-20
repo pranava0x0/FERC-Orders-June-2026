@@ -93,7 +93,7 @@ export function buildSeoBlock(D) {
 
   out.push(
     `<p>This is an independent analysis microsite and is not affiliated with FERC or DOE. ` +
-      `Order record as of ${esc(m.capture)}; commentary ${esc(m.discourseCapture)}` +
+      `Order record as of ${esc(m.capture)}; commentary ${esc(m.commentaryCapture || m.discourseCapture)}` +
       (m.newsCapture ? `; news and filings swept ${esc(m.newsCapture)}` : "") +
       `. A machine-readable index for agents is at <a href="llms.txt">llms.txt</a>.</p>`,
   );
@@ -114,9 +114,16 @@ function replaceBetween(html, block) {
   return html.slice(0, i) + block + html.slice(j + END.length);
 }
 
+// The page's freshness: the newer of the filings sweep and the commentary sweep. Docket pages carry no
+// commentary, so they keep newsCapture.
+export function freshest(D) {
+  const m = D.meta;
+  return [m.newsCapture, m.commentaryCapture].filter(Boolean).sort().pop() || m.discourseCapture || m.capture;
+}
+
 export function buildIndexHtml(html, D) {
   let out = replaceBetween(html, buildSeoBlock(D));
-  const fresh = D.meta.newsCapture || D.meta.discourseCapture || D.meta.capture;
+  const fresh = freshest(D);
 
   // Freshness signals. These were hand-typed and had drifted a month behind the data.
   // A replace() whose pattern no longer matches is a silent no-op, and the sync test cannot see it
@@ -193,7 +200,7 @@ export function buildIndexHtml(html, D) {
 // The root and the docket pages track the news sweep; the order PDFs keep their issuance date.
 export function buildSitemap(D) {
   const fresh = D.meta.newsCapture || D.meta.capture;
-  const rows = [`  <url>\n    <loc>${SITE}</loc>\n    <lastmod>${fresh}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`];
+  const rows = [`  <url>\n    <loc>${SITE}</loc>\n    <lastmod>${freshest(D)}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`];
   for (const d of allDockets(D)) {
     rows.push(
       `  <url><loc>${SITE}dockets/${slugFor(d)}/</loc><lastmod>${fresh}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`,
@@ -227,6 +234,6 @@ if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
     writeFileSync(htmlPath, nextHtml);
     writeFileSync(mapPath, nextXml);
     const words = buildSeoBlock(D).replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
-    console.log(`Baked ~${words} crawlable words into docs/index.html; sitemap lastmod set to ${D.meta.newsCapture}.`);
+    console.log(`Baked ~${words} crawlable words into docs/index.html; sitemap lastmod set to ${freshest(D)} (docket pages ${D.meta.newsCapture}).`);
   }
 }

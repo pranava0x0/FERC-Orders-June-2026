@@ -719,6 +719,9 @@ window.FERC_DATA = (function () {
     discourseCapture: "2026-06-29",
     wave2Capture: "2026-07-28",
     newsCapture: "2026-10-19",
+    // Newest Discourse sweep (themes, media lines, reception, voices). Distinct from newsCapture, the
+    // filings and proceedings cutoff, so a commentary-only sweep never overstates when dockets were checked.
+    commentaryCapture: "2026-10-20",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",

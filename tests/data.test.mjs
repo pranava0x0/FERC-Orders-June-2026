@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
 import { stampAssets } from "../tools/stamp-assets.mjs";
-import { buildIndexHtml, buildSitemap } from "../tools/build-seo.mjs";
+import { buildIndexHtml, buildSitemap, freshest } from "../tools/build-seo.mjs";
 import { pagesFor, allDockets, slugFor, buildDocketPage } from "../tools/build-docket-pages.mjs";
 import { verifyCommishTailoring, verifyLacerteSubstitution, verifyNoiseAllowlist } from "../tools/verify-commish-tailoring.mjs";
 
@@ -1022,9 +1022,22 @@ test("freshness signals track the data rather than drifting", () => {
   // value proposition is currency.
   const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
   const xml = readFileSync(join(here, "..", "docs", "sitemap.xml"), "utf8");
-  const fresh = D.meta.newsCapture;
+  const fresh = freshest(D);
   assert.match(html, new RegExp(`"dateModified":\\s*"${fresh}"`), "JSON-LD dateModified matches the newest sweep");
   assert.ok(xml.includes(`<lastmod>${fresh}</lastmod>`), "sitemap lastmod matches the newest sweep");
+});
+
+test("a commentary-only sweep dates the Discourse tab without moving the filings cutoff", () => {
+  const m = D.meta;
+  assert.match(m.commentaryCapture || "", /^\d{4}-\d{2}-\d{2}$/, "meta.commentaryCapture is a YYYY-MM-DD stamp");
+  assert.ok(m.commentaryCapture >= m.discourseCapture, "the newest commentary sweep is not older than the first");
+  // A theme can only have been captured by a commentary sweep that already happened.
+  for (const t of D.voiceThemes) {
+    if (t.captured) assert.ok(t.captured <= m.commentaryCapture, `"${t.title}" captured ${t.captured} is after commentaryCapture ${m.commentaryCapture}`);
+  }
+  assert.equal(freshest(D), [m.newsCapture, m.commentaryCapture].sort().pop(), "page freshness is the newer of the two sweeps");
+  const app = readFileSync(join(here, "..", "docs", "js", "app.js"), "utf8");
+  assert.ok(app.includes("Discourse updated \" + esc(D.meta.commentaryCapture"), "the provenance line reads the commentary stamp");
 });
 
 test("the social card exists and is declared at the size the card type promises", () => {
@@ -1139,7 +1152,7 @@ test("the comment corpus is declared as a Dataset for rich results", () => {
   const ds = blocks.find((b) => b["@type"] === "Dataset");
   assert.ok(ds, "a Dataset entity is declared");
   assert.ok(ds.description.includes(String(D.comments.total)), "Dataset counts come from the data, not retyped");
-  assert.equal(ds.dateModified, D.meta.newsCapture, "Dataset tracks the newest sweep");
+  assert.equal(ds.dateModified, freshest(D), "Dataset tracks the newest sweep");
 });
 
 test("the timeline rail reads in chronological order", () => {

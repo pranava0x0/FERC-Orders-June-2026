@@ -42,7 +42,7 @@ export function buildLlmsTxt(D) {
   out.push(`- Items and dockets: ${m.items}`);
   out.push(`- Reporter cites: ${m.citeRange}`);
   out.push(`- Commission: ${m.commissioners}`);
-  out.push(`- Order record as of ${m.capture}; Discourse commentary gathered ${m.discourseCapture}`);
+  out.push(`- Order record as of ${m.capture}; Discourse commentary gathered through ${m.commentaryCapture || m.discourseCapture}`);
   for (const k of D.kpis) out.push(`- ${k.label}: ${k.value}, ${k.sub}`);
   out.push("");
 
