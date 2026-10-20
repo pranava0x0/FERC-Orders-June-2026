@@ -1,10 +1,15 @@
 {
   "captured_at": "2026-08-23",
-  "note": "Verified source snippets backing the directly-quoted phrases in D.voices (Discourse 'Commentary across the spectrum'). A test in tests/source-accuracy.test.mjs asserts every single-quoted phrase in a voice's take appears in its evidence here, so a future edit to a quote fails loudly until the evidence is re-verified against the cited source.",
+  "note": "Verified source snippets backing the directly-quoted phrases in D.voices (Discourse 'Commentary across the spectrum'). A test in tests/source-accuracy.test.mjs asserts every single-quoted phrase in a voice's take appears in its evidence here, so a future edit to a quote fails loudly until the evidence is re-verified against the cited source. Updated 2026-10-20: the Ari Peskoe and Tyler Norris entries now hold the post their take quotes; the earlier evidence each held is kept under `prior`.",
   "voices": {
     "Tyler Norris": {
-      "src": "norris",
-      "evidence": "By curtailing just 0.25% to 1% of a data center's annual load, primarily during the most stressed hours, the existing U.S. grid can accommodate roughly 76 to 98 gigawatts of new large flexible load; in ERCOT about 15 gigawatts of new data center load without adding new capacity. The vast majority of loads in existing demand response were planned as firm loads."
+      "src": "norrisx0622",
+      "captured_at": "2026-10-20",
+      "evidence": "Grateful to @FERC for its bipartisan leadership here, especially on establishing new flexible service options for large loads. Regulatory reform on this scale takes a village to build a strong evidentiary record, with thanks due to many stakeholders who filed comments.",
+      "prior": {
+        "src": "norris",
+        "evidence": "By curtailing just 0.25% to 1% of a data center's annual load, primarily during the most stressed hours, the existing U.S. grid can accommodate roughly 76 to 98 gigawatts of new large flexible load; in ERCOT about 15 gigawatts of new data center load without adding new capacity. The vast majority of loads in existing demand response were planned as firm loads."
+      }
     },
     "Travis Kavulla": {
       "src": "kavulla",
@@ -43,8 +48,13 @@
       "evidence": "Matthew Christiansen, an attorney at Wilson Sonsini Goodrich & Rosati, said of the show cause orders: I don't think anything that FERC proposed to do impedes on states' authority."
     },
     "Ari Peskoe": {
-      "src": "peskoe",
-      "evidence": "By Ari Peskoe: Utilities, however, are thwarting that commitment by rolling billions of dollars in data-center-driven transmission upgrades into rates that everyone pays. FERC should revisit its transmission pricing policy so that it requires utilities to assign the full costs of transmission service to power-hungry data centers. To protect ratepayers, FERC could require utilities to disclose disaggregated pricing structures."
+      "src": "peskoe0720",
+      "captured_at": "2026-10-20",
+      "evidence": "Advocates from 4 states (DE, IL, MD, OH) argue that FERC's June order merely punts consumer protection to states. That move violates the law. PJM's Tariff guarantees cost shifts due to transmission for data centers. Only FERC can fix that. And it must.",
+      "prior": {
+        "src": "peskoe",
+        "evidence": "By Ari Peskoe: Utilities, however, are thwarting that commitment by rolling billions of dollars in data-center-driven transmission upgrades into rates that everyone pays. FERC should revisit its transmission pricing policy so that it requires utilities to assign the full costs of transmission service to power-hungry data centers. To protect ratepayers, FERC could require utilities to disclose disaggregated pricing structures."
+      }
     },
     "Jigar Shah": {
       "src": "jigarferc",
@@ -177,6 +187,26 @@
     "Juan Arteaga": {
       "src": "enverus",
       "evidence": "SPP is the only region with FERC-approved large-load tariffs and currently offers the most flexible pathway to faster grid access. Large-load development is concentrating in markets where key interconnection and cost-allocation rules are still evolving."
+    },
+    "David S. Lapp": {
+      "src": "mdopc0717",
+      "captured_at": "2026-10-20",
+      "evidence": "“FERC’s order will help expose data center cost shifts by making them more transparent to state regulators and consumers, but the Federal Power Act requires PJM to also fix its rules that allocate data center costs to other customers,” Lapp said. “The order erroneously assumes State regulators have authority that they do not clearly have.” ... OPC’s filing was joined by the Office of the Ohio Consumers’ Counsel, the Delaware Division of the Public Advocate, and the Office of the Illinois Attorney General."
+    },
+    "National Association of Regulatory Utility Commissioners": {
+      "src": "naruc0618",
+      "captured_at": "2026-10-20",
+      "evidence": "“We appreciate the Commissioners’ comments at today’s meeting recognizing the critical role of states and state regulators given the jurisdictional division of duties under the Federal Power Act. We also appreciate the Commissioners’ focus on reliability and affordability, noting the need for transparency in setting wholesale transmission rates, which has been a key issue raised by our members, as these costs are passed directly through to end-use customers. “The record in these proceedings has demonstrated much good work already taking place at the state level regarding large load interconnection. States remain committed to ensuring the appropriate allocation of costs across all customer classes and working constructively with our federal colleagues to that end.”"
+    },
+    "RMI": {
+      "src": "rmi0706",
+      "captured_at": "2026-10-20",
+      "evidence": "For instance, FERC accepted SPP’s definition of a high impact large load (HILL) as a new facility that is greater than 10 MW if interconnecting at 69 kV or below, or greater than 50 MW if interconnecting above 69 kV. FERC’s suggested definition for other RTOs does not address facilities interconnecting at or below 69 kV."
+    },
+    "Claire Lang-Ree": {
+      "src": "bisnow1014",
+      "captured_at": "2026-10-20",
+      "evidence": "\"At a minimum, PJM's rules must require data centers to bring their own supply, and not allow them to raise electricity costs or cause blackouts,\" Lang-Ree said in an emailed statement."
     }
   }
 }

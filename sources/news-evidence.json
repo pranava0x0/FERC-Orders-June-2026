@@ -1,6 +1,6 @@
 {
   "captured_at": "2026-08-23",
-  "note": "Verified source snippets backing the directly-quoted phrases added by the 2026-07-28 news refresh (news-tracks-plan.md): the AD26-7-000 governance track and the sc6 filing observations. Mirrors sources/voices-evidence.json, and is swept by tools/verify-quotes.mjs the same way, so no displayed quote on a track surface is unbacked. A test in tests/source-accuracy.test.mjs asserts every quoted span in a timeline event body resolves here or in the committed order corpus. Extended by the 2026-08-23 sweep with the WIRES remarks, the Maryland congressional letter (read directly from the signed PDF, not a summary) and two analyst readiness assessments. Extended 2026-10-19 with PJM committee postings, ISO-NE's proposal summary and Utility Dive's October reporting; each item names the document and page or slide it was read from.",
+  "note": "Verified source snippets backing the directly-quoted phrases added by the 2026-07-28 news refresh (news-tracks-plan.md): the AD26-7-000 governance track and the sc6 filing observations. Mirrors sources/voices-evidence.json, and is swept by tools/verify-quotes.mjs the same way, so no displayed quote on a track surface is unbacked. A test in tests/source-accuracy.test.mjs asserts every quoted span in a timeline event body resolves here or in the committed order corpus. Extended by the 2026-08-23 sweep with the WIRES remarks, the Maryland congressional letter (read directly from the signed PDF, not a summary) and two analyst readiness assessments. Extended 2026-10-19 with PJM committee postings, ISO-NE's proposal summary and Utility Dive's October reporting; each item names the document and page or slide it was read from. Extended 2026-10-20 with outside commentary (X posts confirmed through oEmbed, trade press, law-firm alerts, NARUC, the Maryland People's Counsel and DOE); FERC commissioner lines that come only through a press report are labeled as such in their speaker field.",
   "capture_method": "federalregister.gov items were read from their full_text .txt endpoints (the FR HTML pages bot-block automated fetches; the JSON API and full_text endpoints are open). Trade-press items were fetched and their quotations transcribed as printed. ferc.gov and eLibrary stayed Cloudflare-gated throughout, so nothing here is an eLibrary confirmation.",
   "items": {
     "swett-legitimacy": {
@@ -177,6 +177,118 @@
       "occasion": "Sept 10, 2026",
       "evidence": "PJM plans to file proposed solutions to FERC in November.",
       "captured_at": "2026-10-19"
+    },
+    "naruc0618-states": {
+      "src": "naruc0618",
+      "speaker": "Ann Rendahl, NARUC President (Washington Utilities and Transportation Commission)",
+      "occasion": "NARUC statement, June 18, 2026 (one-page PDF)",
+      "evidence": "“We appreciate the Commissioners’ comments at today’s meeting recognizing the critical role of states and state regulators given the jurisdictional division of duties under the Federal Power Act. We also appreciate the Commissioners’ focus on reliability and affordability, noting the need for transparency in setting wholesale transmission rates, which has been a key issue raised by our members, as these costs are passed directly through to end-use customers. “The record in these proceedings has demonstrated much good work already taking place at the state level regarding large load interconnection. States remain committed to ensuring the appropriate allocation of costs across all customer classes and working constructively with our federal colleagues to that end.”",
+      "captured_at": "2026-10-20"
+    },
+    "hklaw0623-jurisdiction": {
+      "src": "hklaw0623",
+      "speaker": "Holland & Knight (Gulstone, Forshay, Kalpin, Phillips, Coates, Connors, Martell)",
+      "occasion": "Client alert, June 23, 2026",
+      "evidence": "Importantly, FERC did not assert any new or expanded jurisdiction over retail load or co-located load in a broad or preemptive sense. Instead, the Commission reaffirmed and carefully cabined its existing jurisdiction while explicitly leaving core retail-level questions to the states.",
+      "captured_at": "2026-10-20"
+    },
+    "mdopc0717-assumes": {
+      "src": "mdopc0717",
+      "speaker": "David S. Lapp, Maryland People’s Counsel",
+      "occasion": "OPC release on its July 17, 2026 filing in EL26-67",
+      "evidence": "“FERC’s order will help expose data center cost shifts by making them more transparent to state regulators and consumers, but the Federal Power Act requires PJM to also fix its rules that allocate data center costs to other customers,” Lapp said. “The order erroneously assumes State regulators have authority that they do not clearly have.” ... OPC’s filing was joined by the Office of the Ohio Consumers’ Counsel, the Delaware Division of the Public Advocate, and the Office of the Illinois Attorney General.",
+      "captured_at": "2026-10-20"
+    },
+    "udadvocates0721-joint": {
+      "src": "udadvocates0721",
+      "speaker": "Ratepayer advocates from Delaware, Illinois, Maryland and Ohio (joint filing, as quoted by Utility Dive)",
+      "occasion": "July 17, 2026 filings, reported July 21",
+      "evidence": "Ratepayer advocates from Delaware, Illinois, Maryland and Ohio asked FERC to respond as quickly as possible. “Each network upgrade added to a transmission owner’s revenue requirement while these questions remain open embeds another cost shift, and every cost-recovery agreement negotiated against an unsettled standard invites the disputes the Commission could resolve today,” they said.",
+      "captured_at": "2026-10-20"
+    },
+    "udadvocates0721-paoca": {
+      "src": "udadvocates0721",
+      "speaker": "Pennsylvania Office of Consumer Advocate (separate filing, as quoted by Utility Dive)",
+      "occasion": "July 17, 2026 filings, reported July 21",
+      "evidence": "Even with cost-recovery agreements, PJM’s regional cost allocation rules may cause cost shifts, according to Pennsylvania’s ratepayer advocate. “Unjust and unreasonable wholesale transmission cost shifts from large loads in PJM can manifest through unjust and unreasonable cost allocation of both [Regional Transmission Expansion Plan] projects and supplemental projects, not just by speculative large loads failing to pay their existing share under existing cost allocation methods,” the Pennsylvania ratepayer advocate said.",
+      "captured_at": "2026-10-20"
+    },
+    "peskoe0720-violates": {
+      "src": "peskoe0720",
+      "speaker": "Ari Peskoe, Harvard Law School Electricity Law Initiative",
+      "occasion": "X post, July 20, 2026 (oEmbed text)",
+      "evidence": "Advocates from 4 states (DE, IL, MD, OH) argue that FERC's June order merely punts consumer protection to states. That move violates the law. PJM's Tariff guarantees cost shifts due to transmission for data centers. Only FERC can fix that. And it must.",
+      "captured_at": "2026-10-20"
+    },
+    "peskoe0723-spread": {
+      "src": "peskoe0723",
+      "speaker": "Ari Peskoe, Harvard Law School Electricity Law Initiative",
+      "occasion": "X post, July 23, 2026 (oEmbed text)",
+      "evidence": "But FERC didn't order any changes to how utilities share the costs of those upgrades with everyone. It did not order the utilities to charge those upgrade costs to data centers. They are still spread to everyone.",
+      "captured_at": "2026-10-20"
+    },
+    "wypr0826-langree": {
+      "src": "wypr0826",
+      "speaker": "Claire Lang-Ree, NRDC Sustainable FERC Project",
+      "occasion": "WYPR, August 26, 2026, on PJM's backstop proposal as filed",
+      "evidence": "\"PJM is saying very clearly to the data centers, 'We will no longer buy power on your behalf,' and that's going to have a really good impact on prices in the long run, and make sure that the rest of us aren't basically subsidizing power for data centers,\" Lang-Ree said.",
+      "captured_at": "2026-10-20"
+    },
+    "wypr0826-lapp": {
+      "src": "wypr0826",
+      "speaker": "David Lapp, Maryland People’s Counsel",
+      "occasion": "WYPR, August 26, 2026, on PJM's backstop proposal as filed",
+      "evidence": "\"If the data centers don't show up in those zones, then it'll be the existing customers, ordinary households included, that will pay those costs. So for Maryland customers, and it really applies to customers of Potomac Edison and Baltimore Gas and Electric, there are more than half a billion dollars in costs that could potentially fall to ordinary customers,\" Lapp said.",
+      "captured_at": "2026-10-20"
+    },
+    "peskoe0930-surprising": {
+      "src": "peskoe0930",
+      "speaker": "Ari Peskoe, Harvard Law School Electricity Law Initiative",
+      "occasion": "X post, September 30, 2026 (oEmbed text)",
+      "evidence": "Surprising! FERC has issues with the cost allocation framework that determined who pays for this data center capacity auction.",
+      "captured_at": "2026-10-20"
+    },
+    "doe1008-wright": {
+      "src": "doe1008",
+      "speaker": "Chris Wright, U.S. Secretary of Energy",
+      "occasion": "DOE release, October 8, 2026",
+      "evidence": "“The Trump Administration remains committed to doing everything it can to lower electricity costs, grow the supply of American energy and strengthen grid reliability,” said U.S. Secretary of Energy Chris Wright. “That’s why President Trump created the Ratepayer Protection Pledge, and the Energy Department supports having large electricity users pay for reliable new power generation.”",
+      "captured_at": "2026-10-20"
+    },
+    "dennisx1012-states": {
+      "src": "dennisx1012",
+      "speaker": "Jeff Dennis",
+      "occasion": "X thread post 1/, October 12, 2026 (oEmbed text)",
+      "evidence": "I'm not sure what time the order came out, but late Friday @FERC delivered another blow to @pjminterconnect 's ongoing efforts to try to get a handle on large load growth and stabilize its markets. In doing so, it appears to be putting more pressure on states to find answers. 1/",
+      "captured_at": "2026-10-20"
+    },
+    "latitude1013-yang": {
+      "src": "latitude1013",
+      "speaker": "Mary Yang, former regulatory counsel for PJM and chief operating officer at 804 Advisory",
+      "occasion": "Latitude Media, October 13, 2026",
+      "evidence": "Now, Yang added, the uncertainty “is going to keep dragging,” in part because PJM is juggling a number of competing priorities, and re-writing IRAS rules isn’t likely to be the top one. “It does slow down the development of these more innovative bilateral mechanisms to solve some of these problems,” Yang added.",
+      "captured_at": "2026-10-20"
+    },
+    "bisnow1014-langree": {
+      "src": "bisnow1014",
+      "speaker": "Claire Lang-Ree, NRDC Sustainable FERC Project",
+      "occasion": "Emailed statement quoted by Bisnow, October 14, 2026",
+      "evidence": "\"At a minimum, PJM's rules must require data centers to bring their own supply, and not allow them to raise electricity costs or cause blackouts,\" Lang-Ree said in an emailed statement.",
+      "captured_at": "2026-10-20"
+    },
+    "udduke1013-rosner": {
+      "src": "udduke1013",
+      "speaker": "David Rosner, FERC Commissioner (concurring in the Oct 9 Duke Energy Carolinas order, as quoted by Utility Dive)",
+      "occasion": "Utility Dive, October 13, 2026; the concurrence itself was not read",
+      "evidence": "“Duke’s proposal offers meaningful, if imperfect, new protections, and for that reason the commission is right to accept it,” FERC Commissioner David Rosner said in a concurring statement ... “To the extent state regulatory actions are not sufficient to protect consumers, the commission has an obligation to seriously consider expanding the cost recovery framework it established in the Large Load Show Cause Orders,” Rosner said.",
+      "captured_at": "2026-10-20"
+    },
+    "udduke1013-chang": {
+      "src": "udduke1013",
+      "speaker": "Judy Chang, FERC Commissioner (separate statement in the Oct 9 Duke Energy Carolinas order, as quoted by Utility Dive)",
+      "occasion": "Utility Dive, October 13, 2026; the statement itself was not read",
+      "evidence": "“I do not believe [Duke Energy Carolinas] has demonstrated that its filing represents an acceptable level of customer protection, and the precedent the commission establishes here takes a step backwards from the strong arguments set forth in the Large Load Show Cause Orders,” Chang said.",
+      "captured_at": "2026-10-20"
     }
   }
 }

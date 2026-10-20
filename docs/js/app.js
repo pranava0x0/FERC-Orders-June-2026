@@ -905,7 +905,10 @@
       var tr = t.track && D.tracks && D.tracks[t.track]
         ? '<span class="trackpill is-static" title="' + esc(D.tracks[t.track].label) + '">' + esc(D.tracks[t.track].short) + "</span>"
         : "";
-      return '<section class="quote-theme"><h3>' + esc(t.title) + tr + '</h3><p>' + esc(t.body) +
+      // A theme found by a later sweep than its lane's stamp carries its own `captured`, so the lane
+      // header never dates October evidence to June.
+      var stamp = t.captured ? '<p class="wave-stamp theme-stamp mono">captured ' + esc(t.captured) + "</p>" : "";
+      return '<section class="quote-theme"><h3>' + esc(t.title) + tr + "</h3>" + stamp + "<p>" + esc(t.body) +
         '</p><ul class="quote-list">' + qs + "</ul></section>";
     };
     var themesInWave = function (n) {

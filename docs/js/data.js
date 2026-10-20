@@ -333,6 +333,8 @@ window.FERC_DATA = (function () {
       published: "2026-09-29",
       captured: "2026-10-08",
       note: "Accession 20260929-3099, 97 pages including four separate concurrences, read in full from PJM's copy and committed as sources/text/abeyance/order-er26-3380-pjm-backstop.txt. Every quotation from the order and the concurrences on this site is verified against that text.",
+
+      text: "sources/text/abeyance/order-er26-3380-pjm-backstop.txt", // Swett and See concurrence quotes in Discourse are checked against this file
     },
     pjmvote0930: {
       label: "PJM informational filing in AD26-7-000 on the Sept 30 Members Committee vote",
@@ -519,6 +521,194 @@ window.FERC_DATA = (function () {
       captured: "2026-10-19",
       note: "Read from the full_text endpoint. Sets the EL26-108 refund effective date at the date of publication, Oct 6, 2026, and the intervention window at 21 days from the Sept 29 order.",
     },
+    // --- 2026-10-20 commentary sweep ---------------------------------------------------------------
+    // Outside commentary on the June 18 orders and their aftermath. X posts were read in a logged-in
+    // browser and re-confirmed through X's public oEmbed endpoint; every other page was fetched and read.
+    // Each displayed quote is held, with its snippet, in sources/news-evidence.json or voices-evidence.json.
+    naruc0618: {
+      label: "“NARUC Issues Initial Response to FERC’s Orders on Large Loads”",
+      org: "National Association of Regulatory Utility Commissioners",
+      short: "NARUC",
+      tier: "secondary",
+      url: "https://pubs.naruc.org/pub/A037DD09-A293-2927-B215-CD0CBE9FC0A4",
+      published: "2026-06-18",
+      captured: "2026-10-20",
+      note: "One-page statement by NARUC President Ann Rendahl (Washington Utilities and Transportation Commission), dated June 18, 2026. Read in full from the PDF.",
+    },
+    hklaw0623: {
+      label: "“FERC Advances New Oversight Framework for Large Loads and Co-Located Generation”",
+      org: "Holland & Knight",
+      tier: "secondary",
+      url: "https://www.hklaw.com/en/insights/publications/2026/06/ferc-advances-new-oversight-framework-for-large-loads",
+      published: "2026-06-23",
+      captured: "2026-10-20",
+      note: "Law-firm alert by Ronan J. Gulstone, Paul F. Forshay, Mark C. Kalpin, Willie L. Phillips Jr., Graham T. Coates, Brendan H. Connors and Nic Martell (no titles given on the page). Read end to end.",
+    },
+    hunton0626: {
+      label: "“FERC ‘Show Cause Orders’ Seek to Accelerate Large Load Interconnections to the Grid”",
+      org: "Hunton Andrews Kurth (The Nickel Report)",
+      short: "Hunton Andrews Kurth",
+      tier: "secondary",
+      url: "https://www.hunton.com/the-nickel-report/ferc-show-cause-orders-seek-to-accelerate-large-load-interconnections-to-the-grid",
+      published: "2026-06-26",
+      captured: "2026-10-20",
+      note: "Law-firm alert by Ted J. Murphy, partner. Read end to end. Notes that FERC encouraged §205 filings and warned it would not grant abeyances reflexively.",
+    },
+    baker0630: {
+      label: "“Speed to Power: FERC Gives Grid Operators Flexibility to Respond to Hyperscale Load Concerns”",
+      org: "Baker Donelson",
+      tier: "secondary",
+      url: "https://www.bakerdonelson.com/speed-to-power-ferc-gives-grid-operators-flexibility-to-respond-to-hyperscale-load-concerns",
+      published: "2026-06-30",
+      captured: "2026-10-20",
+      note: "Law-firm alert by J. Ashley Cooper, Leopoldo J. Yanez and J. Boone Aiken IV. Read end to end. Expects the region-by-region route to yield faster and more tailored reform.",
+    },
+    norrisx0622: {
+      label: "Tyler Norris on the June 18 orders’ flexible service options (X post, Jun 22, 2026)",
+      org: "Tyler Norris on X",
+      tier: "secondary",
+      url: "https://x.com/tylerhnorris/status/2069198472990110072",
+      published: "2026-06-22",
+      captured: "2026-10-20",
+      note: "Text confirmed through X’s oEmbed endpoint; the post continues past the quoted sentence.",
+    },
+    rmi0706: {
+      label: "“Understanding FERC’s Large Load Orders”",
+      org: "RMI",
+      tier: "secondary",
+      url: "https://rmi.org/resources/understanding-fercs-large-load-orders/",
+      published: "2026-07-06",
+      captured: "2026-10-20",
+      note: "Explainer by Sarah Wang (Senior Associate) and Tyler Farrell (Manager). Read end to end. Its 69 kV observation matches the order text: the suggested definition reaches facilities taking service above 69 kV.",
+    },
+    mdopc0717: {
+      label: "“OPC asks federal regulators to expand and clarify ‘show cause’ order on PJM data centers”",
+      org: "Maryland Office of People’s Counsel",
+      short: "Maryland OPC",
+      tier: "secondary",
+      url: "https://content.govdelivery.com/accounts/MDOPC/bulletins/420fd48",
+      published: "2026-07-17",
+      captured: "2026-10-20",
+      note: "OPC’s own release on its July 17 filing in EL26-67, joined by the Office of the Ohio Consumers’ Counsel, the Delaware Division of the Public Advocate and the Office of the Illinois Attorney General. Quotes People’s Counsel David S. Lapp. The filing itself was not read; FERC’s Sept 21 order disposes of it as a rehearing request (rehearing0921).",
+    },
+    peskoe0720: {
+      label: "Ari Peskoe on the four-state consumer advocates’ filing (X post, Jul 20, 2026)",
+      org: "Ari Peskoe on X",
+      tier: "secondary",
+      url: "https://x.com/AriPeskoe/status/2079226485626249625",
+      published: "2026-07-20",
+      captured: "2026-10-20",
+      note: "Harvard Law School Electricity Law Initiative. Text confirmed through X’s oEmbed endpoint.",
+    },
+    udadvocates0721: {
+      label: "“FERC fails to shield PJM consumers from data center transmission costs: ratepayer advocates”",
+      org: "Utility Dive (Ethan Howland)",
+      tier: "secondary",
+      url: "https://www.utilitydive.com/news/ferc-data-center-pjm-transmission-costs/825760/",
+      published: "2026-07-21",
+      captured: "2026-10-20",
+      note: "Read end to end. Reports the July 17 filings: the Delaware, Illinois, Maryland and Ohio advocates jointly, and the Pennsylvania Office of Consumer Advocate separately. Quotes the filings as printed.",
+    },
+    peskoe0723: {
+      label: "Ari Peskoe on upgrade-cost sharing after the June orders (X post, Jul 23, 2026)",
+      org: "Ari Peskoe on X",
+      tier: "secondary",
+      url: "https://x.com/AriPeskoe/status/2080348438655295648",
+      published: "2026-07-23",
+      captured: "2026-10-20",
+      note: "Text confirmed through X’s oEmbed endpoint.",
+    },
+    wypr0826: {
+      label: "“PJM looks to implement key data center regulations, Maryland energy stakeholders have mixed feelings”",
+      org: "WYPR",
+      tier: "secondary",
+      url: "https://www.wypr.org/wypr-news/2026-08-26/pjm-looks-to-implement-key-data-center-regulations-maryland-energy-stakeholders-have-mixed-feelings",
+      published: "2026-08-26",
+      captured: "2026-10-20",
+      note: "Read end to end. Reactions to PJM’s backstop proposal as filed (ER26-3380), before FERC’s Sept 29 order: NRDC’s Claire Lang-Ree and Maryland People’s Counsel David Lapp.",
+    },
+    peskoe0930: {
+      label: "Ari Peskoe on FERC’s backstop cost-allocation concerns (X post, Sept 30, 2026)",
+      org: "Ari Peskoe on X",
+      tier: "secondary",
+      url: "https://x.com/AriPeskoe/status/2105250742596784234",
+      published: "2026-09-30",
+      captured: "2026-10-20",
+      note: "Text confirmed through X’s oEmbed endpoint. The post does not name the order; the day and subject match the Sept 29 backstop order.",
+    },
+    doe1008: {
+      label: "“Energy Department Supports FERC’s Call for PJM to Protect Ratepayers and Build More Reliable Power”",
+      org: "U.S. Department of Energy",
+      tier: "doe",
+      url: "https://www.energy.gov/articles/energy-department-supports-fercs-call-pjm-protect-ratepayers-and-build-more-reliable-power",
+      published: "2026-10-08",
+      captured: "2026-10-20",
+      note: "DOE’s release on its Oct 7 statement of position in ER26-3380 (doe1007). Quotes Secretary Chris Wright and Deputy Secretary James P. Danly. Read in full.",
+    },
+    dennisx1012: {
+      label: "Jeff Dennis thread on FERC’s Oct 9 order on PJM’s large-load package (X, Oct 12, 2026)",
+      org: "Jeff Dennis on X",
+      tier: "secondary",
+      url: "https://x.com/EnergyLawJeff/status/2109669734568304766",
+      published: "2026-10-12",
+      captured: "2026-10-20",
+      note: "Thread opener; text confirmed through X’s oEmbed endpoint. Post 6/ (https://x.com/EnergyLawJeff/status/2109673298606870992) notes FERC did not address PJM’s argument that its service matched SPP’s approved CHILLS construct; that is his reading, not checked against the order.",
+    },
+    konidena1012: {
+      label: "“FERC’s rejection of PJM’s IRAS proposal requires a second glance.”",
+      org: "Rao Konidena (Rao’s Newsletter)",
+      short: "Rao Konidena",
+      tier: "secondary",
+      url: "https://raokonidena.substack.com/p/fercs-rejection-of-pjms-iras-proposal",
+      published: "2026-10-12",
+      captured: "2026-10-20",
+      note: "Substack post walking through the Oct 9 order’s jurisdictional, curtailment and capacity-accreditation grounds. Read end to end.",
+    },
+    latitude1013: {
+      label: "“FERC rejected PJM’s data center curtailment plan. What’s next for BYOC?”",
+      org: "Latitude Media (Maeve Allsup)",
+      tier: "secondary",
+      url: "https://www.latitudemedia.com/news/ferc-rejected-pjms-data-center-curtailment-plan-whats-next-for-byoc/",
+      published: "2026-10-13",
+      captured: "2026-10-20",
+      note: "Read end to end. Quotes Mary Yang, former regulatory counsel for PJM and chief operating officer at 804 Advisory. Its quotation of Commissioner Rosner’s Oct 9 concurrence was checked against the order text instead.",
+    },
+    udduke1013: {
+      label: "“FERC approves Duke large load transmission rules despite cost-shift concerns”",
+      org: "Utility Dive (Ethan Howland)",
+      tier: "secondary",
+      url: "https://www.utilitydive.com/news/ferc-duke-energy-large-load-tariff-nitsa/832847/",
+      published: "2026-10-13",
+      captured: "2026-10-20",
+      note: "Read end to end. Secondary source for the Oct 9 Duke Energy Carolinas order and its separate statements: the order and the statements were not read, so the Rosner and Chang lines on this site are quoted as Utility Dive printed them. The Duke order is outside the RTOs and not one of the six show cause dockets.",
+    },
+    enb1013: {
+      label: "“FERC Rejects Most of PJM’s Data Center Plan, and the $29.4 Billion Question of Who Pays Is Still Open”",
+      org: "Energy News Beat (Stuart Turley)",
+      tier: "secondary",
+      url: "https://energynewsbeat.co/ai/ferc-rejects-most-of-pjms-data-center-plan-and-the-29-4-billion-question-of-who-pays-is-still-open/",
+      published: "2026-10-13",
+      captured: "2026-10-20",
+      note: "Opinion post by the host of the Energy News Beat podcast. Lower authority than the trade press cited here; used only as one side of a media line, never quoted.",
+    },
+    nyangon1013: {
+      label: "Joe Nyangon on FERC’s Oct 9 rejection of PJM’s large-load plan (X post, Oct 13, 2026)",
+      org: "Joe Nyangon on X",
+      tier: "secondary",
+      url: "https://x.com/DrJoeNyangon/status/2110038189855420870",
+      published: "2026-10-13",
+      captured: "2026-10-20",
+      note: "Text confirmed through X’s oEmbed endpoint. Role not stated on the post; used only in a media line.",
+    },
+    bisnow1014: {
+      label: "“Regulators Reject Proposed Rules For Data Centers On Nation’s Largest Grid”",
+      org: "Bisnow",
+      tier: "secondary",
+      url: "https://www.bisnow.com/news/national/data-center-power/federal-regulators-reject-power-cuts-to-data-centers-that-dont-bring-their-own",
+      published: "2026-10-14",
+      captured: "2026-10-20",
+      note: "Read end to end. Carries NRDC’s emailed statement from Claire Lang-Ree of the Sustainable FERC Project.",
+    },
   };
 
   const meta = {
@@ -528,7 +718,7 @@ window.FERC_DATA = (function () {
     capture: "2026-06-22",
     discourseCapture: "2026-06-29",
     wave2Capture: "2026-07-28",
-    newsCapture: "2026-10-19",
+    newsCapture: "2026-10-20",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
@@ -682,6 +872,12 @@ window.FERC_DATA = (function () {
       title: "PJM’s capacity auction clears at the cap, short of its reserve target",
       body: "PJM’s Base Residual Auction for 2028/2029 procures 138,318 MW and clears at the $325/MW-day cap across the entire footprint, the third consecutive capped auction, for a total cost of $16.4 billion. Procured supply plus FRR resources falls 6,831 MW short of PJM’s 20% installed reserve margin target, leaving a 14.7% reserve margin for the delivery year. PJM says it will seek FERC approval to hold a backstop procurement in September. This is market context rather than a docket filing: it sets the scarcity backdrop the August 17 filings are written into.",
       src: ["pjmbra"],
+    },
+    {
+      date: "Jul 17, 2026", iso: "2026-07-17", kind: "milestone", track: "sc6",
+      title: "State consumer advocates seek rehearing of the PJM order",
+      body: "Maryland's Office of People's Counsel files in EL26-67, joined by the Office of the Ohio Consumers' Counsel, the Delaware Division of the Public Advocate and the Office of the Illinois Attorney General; the Pennsylvania Office of Consumer Advocate files separately. OPC's case is that the order makes data-center transmission costs transparent to states without changing the PJM rules that allocate them, and that states cannot move costs between transmission customers. People's Counsel David S. Lapp: “The order erroneously assumes State regulators have authority that they do not clearly have.” FERC dismissed these requests with the others on Sept 21. Read from OPC's release and Utility Dive's report; the filings themselves were not read.",
+      src: ["mdopc0717", "udadvocates0721"],
     },
     {
       date: "≈ Jul 18, 2026", iso: "2026-07-18", kind: "deadline", track: "sc6",
@@ -892,6 +1088,12 @@ window.FERC_DATA = (function () {
       title: "Two respondents put their Nov 16 §205 commitments in writing",
       body: "The PJM Transmission Owners' Oct 9 notice of consultation with the Members Committee says they “have committed to submit their proposed revisions to address the concerns identified by the June 18, 2026 order issued in Docket No. EL26-67-000” through a “Section 205 filing on or before November 16, 2026,” folding in their EL25-49 co-location compliance obligation, and adds that the revisions “may also include a cost allocation methodology associated with PJM’s proposed consolidated generation and transmission service process.” The same day ISO-NE's proposal summary states that “The ISO and the Participating Transmission Owners Administrative Committee (PTO AC) were granted an abeyance and will develop a Section 205 filing to be submitted by November 16, 2026.” CAISO's schedule, from its Sept 24 notice, runs comments on the draft final proposal to Oct 15, a tariff-language meeting Oct 19 and the Board of Governors on Oct 28. MISO is filing piecemeal under §205 in separate ER dockets rather than waiting: a zero-injection generator agreement in August and, on Oct 2, a Large Load Addition Resource Study that it says “provides MISO with a targeted tool to address the intersection of significant large load additions,” asking for a decision by Dec 2. NYISO's own target, recorded in its show cause order, is to file “corresponding tariff revisions with the Commission by December 2026,” which is after the reset date; what it files on Nov 16, if anything, is the open question. SPP has said nothing new that this sweep could find.",
       src: ["pjmto1009", "isone1009", "caisodfp0924", "udive1005", "e12"],
+    },
+    {
+      date: "Oct 9, 2026", iso: "2026-10-09c", kind: "ferc", track: "context",
+      title: "FERC accepts Duke Energy Carolinas' large-load terms, outside the RTOs",
+      body: "On a 4-1 vote FERC approves large-load provisions Duke Energy Carolinas proposed for its pro forma network integration transmission service agreement, including financial security for large-load-driven network upgrades and shortfall payments for loads of 100 MW or more, and encourages Duke and other transmission providers to do more against cost shifts. The show cause orders do not reach Duke, but two commissioners measured the order against them. Commissioner Rosner, concurring, called the proposal “meaningful, if imperfect, new protections” and wrote that FERC may need to expand the orders' cost-recovery framework if state action is not enough; Commissioner Chang wrote that the precedent “takes a step backwards from the strong arguments set forth in the Large Load Show Cause Orders.” Known from Utility Dive's report; the order and statements were not read, and the docket number is not stated there.",
+      src: ["udduke1013"],
     },
     {
       date: "Oct 12, 2026", iso: "2026-10-12", kind: "milestone", track: "context",
@@ -1359,17 +1561,17 @@ window.FERC_DATA = (function () {
     {
       group: "State utility commissions", stance: "positive",
       body: "The bifurcation gives states wholesale-side transmission-cost visibility while preserving retail cost allocation and siting authority. That matters because the household-bill fight is already concrete: Maryland's ratepayer advocate and state lawmakers are challenging how PJM transmission costs tied to data-center load move across zones.",
-      src: ["fercFS", "thehill", "mdopc", "bloomberglaw"],
+      src: ["fercFS", "thehill", "mdopc", "bloomberglaw", "naruc0618"],
     },
     {
       group: "Consumer and environmental advocates", stance: "mixed",
-      body: "The guardrail camp sees progress but not closure. Sierra Club called the announcement responsive on consumer-protection fronts; SELC wanted stronger federal standardization and clearer quarantine of data-center costs; Public Citizen remains more skeptical, tying fast interconnection to unresolved NERC reliability and state-authority concerns.",
-      src: ["insideclimate", "publiccitizen", "benferc", "bennerc"],
+      body: "The guardrail camp sees progress but not closure. Sierra Club called the announcement responsive on consumer-protection fronts; SELC wanted stronger federal standardization and clearer quarantine of data-center costs; Public Citizen remains more skeptical, tying fast interconnection to unresolved NERC reliability and state-authority concerns. State consumer advocates went further in July, asking FERC on rehearing to fix PJM's cost allocation itself rather than lean on state authority that, they argue, states do not clearly have.",
+      src: ["insideclimate", "publiccitizen", "benferc", "bennerc", "mdopc0717", "udadvocates0721"],
     },
     {
       group: "Grid-flexibility and demand-response providers", stance: "positive",
       body: "This camp gets a clearer market opening. Flexible-load operators argue that telemetry, controls and dispatchable demand can turn some data centers into grid assets and shorten study timelines. Their caveat is operational proof: the promise only works if the tariff turns flexibility into enforceable performance.",
-      src: ["varunsivaram", "jeffbladen"],
+      src: ["varunsivaram", "jeffbladen", "norrisx0622"],
     },
     {
       group: "Public power, co-ops and large customers", stance: "mixed",
@@ -1393,9 +1595,10 @@ window.FERC_DATA = (function () {
       { t: "‘Historic’ / ‘landmark’: the framing is near-universal across trade press and the bar, with FERC asserting itself on load interconnection in an area it historically left alone.", src: ["akin", "rew", "powermag"] },
       { t: "Speed via procedure: § 206 show cause beats a multi-year NOPR; commentators read it as DOE’s April 30 deadline operationalized across all six markets at once.", src: ["aaf", "rtoinsider"] },
       { t: "Regional flexibility reads as a deliberate design choice: SPP and PJM are treated as proactive leaders, others told to catch up without a uniform template.", src: ["powermag", "latitude"] },
-      { t: "Flexibility is becoming the price of speed: practitioners read curtailable / flexible service as the most valuable near-term lever to connect faster, turning a load’s willingness to limit usage into bargaining power.", src: ["duanemorris", "briggswhite", "varunsivaram", "jeffbladen"] },
+      { t: "Flexibility is becoming the price of speed: practitioners read curtailable / flexible service as the most valuable near-term lever to connect faster, turning a load’s willingness to limit usage into bargaining power.", src: ["duanemorris", "briggswhite", "varunsivaram", "jeffbladen", "norrisx0622"] },
       { t: "Built to survive appeal: legal analysts read the six tailored § 206 orders as deliberately litigation-resistant. A detailed, region-specific administrative record offers fewer openings to challenge than a single national rule, and it skips the multi-year lag of a rulemaking.", src: ["bloomberglaw", "heatmap", "eenewsferc"] },
       { t: "The public headline has escaped the energy-law lane: TechCrunch, AP, Tom's Hardware and Reddit all translate the orders as a data-center fast lane, even when they disagree on whether the real bottleneck is interconnection paperwork, physical power supply, or household bills.", src: ["techcrunch", "apdata", "tomhardware", "jigarferc", "redditecon", "reddittech"] },
+      { t: "Law-firm alerts read the orders as staying inside FERC's existing lines: no new or expanded jurisdiction over retail or co-located load, and a push for each region to propose its own §205 fix before FERC imposes one, with a warning that abeyances would not be granted reflexively.", src: ["hklaw0623", "hunton0626", "baker0630"] },
       { t: "X is treating the 60-day response clock as the live market story: energy/security analysts and infrastructure accounts are watching whether the RTO filings answer the real scarcity question, not just whether they satisfy FERC's process.", src: ["xschifman", "xnearco", "xhalcyon"] },
     ],
     friction: [
@@ -1403,6 +1606,8 @@ window.FERC_DATA = (function () {
       { t: "Speed vs. rigor: the orders set a 45-day window to request abeyance of up to 90 days (NYISO P 42), which prevents indefinite stalling but compresses stakeholder process; the mandatory alternative-transmission-technology evaluation could itself add study time.", src: ["e12", "substack"] },
       { t: "Coverage-gap questions: commenters flag that some transmission owners (e.g., Nebraska Public Power District, Great River Energy) appear absent from the published respondent lists, a completeness question to watch.", src: ["substack"] },
       { t: "The cost-allocation fight is already concrete and pending: Maryland’s ratepayer advocate, backed by 80 state lawmakers (June 17, 2026), says PJM’s tariff lets data-center transmission costs ‘leak’ across zones, ‘an unjust subsidy for that data center load’, and pegs Maryland’s exposure near $1.6 billion over a decade (FERC comment window extended to July 27, 2026).", src: ["mdopc", "utilitydive"] },
+      { t: "The state-authority premise is contested: Maryland's People's Counsel and advocates from Delaware, Illinois, Ohio and Pennsylvania argue the order leans on states to protect retail customers from costs that PJM's federally approved allocation sends them; states, they say, have no authority to move costs between transmission customers. Ari Peskoe backs them.", src: ["mdopc0717", "udadvocates0721", "peskoe0720"] },
+      { t: "Definition gap: RMI notes that the large-load definition FERC suggests for the other RTOs (over 50 MW, taking service above 69 kV) does not reach facilities at or below 69 kV, which SPP's accepted definition does.", src: ["rmi0706"] },
       { t: "Fragmentation risk: six regional answers on six different timelines give multi-region developers clarity within a market but a patchwork across them, and fresh diligence for near-term deals.", src: ["utilitydive", "duanemorris"] },
       { t: "The affordability backstop is split: FERC guards against cost-shifting among transmission customers but says preventing cost-shifting among retail customers is the states’ job, so the household-bill fight moves to state regulators even as the orders’ federal reach over load interconnection invites a jurisdictional challenge.", src: ["thehill", "bloomberglaw"] },
       { t: "Fast lane vs. power supply: TechCrunch and Reddit frame the order as faster access to the grid, but AP and tech press stress the harder constraint: data-center construction is outrunning new generation, transmission upgrades and local consent.", src: ["techcrunch", "apdata", "tomhardware", "redditecon"] },
@@ -1417,9 +1622,10 @@ window.FERC_DATA = (function () {
       { t: "The public narrative is settling around guardrails, not a simple yes/no on data centers: Jamie Nolan's Energy Empire framing is that data centers can either become the Loudoun County cautionary tale or a local-bill ally, depending on the deal structure.", src: ["jamienolan"] },
       { t: "The Southeast remains the outside-the-RTO pressure point: Simon Mahan argues that data centers and manufacturers need regional transmission planning, not just local patches, or the region risks higher prices and power shortages.", src: ["simonmahan"] },
       { t: "Congress may not leave the issue to FERC orders alone: the POWER Up Act would write a 100 MW large-load category into federal law and push standardized transmission-level interconnection rules, while saying state and local siting, generation and retail-rate authority remain intact.", src: ["dcdpowerup"] },
+      { t: "After Oct 9, who pays is open again: one commentator says FERC got the law right and that new large loads should bring their own generation; another, that the largest grid still has no clear path for connecting data centers. A third reads FERC's jurisdictional reasoning as more nuanced than a flat rejection.", src: ["enb1013", "nyangon1013", "konidena1012"] },
     ],
     // outlet chips render from cited source records (each links to its SOURCES entry) — no uncited names.
-    outlets: ["utilitydive", "rtoinsider", "latitude", "tdworld", "powermag", "rew", "akin", "sheppard", "natlaw", "aaf", "substack", "heatmap", "duanemorris", "bloomberglaw", "thehill", "dcknowledge", "enr", "ieee", "techcrunch", "apdata", "tomhardware", "dcdpowerup", "eenewsferc", "xschifman", "xnearco", "xhalcyon", "jigarferc", "benferc", "bennerc", "arthurwm", "jeffdennis", "simonmahan", "briggswhite", "heathermcgeory", "varunsivaram", "timlatimer", "jeffbladen", "jamienolan", "luciatian", "saraaxelrod", "chaselochmiller", "cullycavness", "amandapc", "charleshua", "chrisgillett", "shanumathew", "joshlevi", "cymcgeady", "cymcneill", "davidyoung", "taggreason", "redditecon", "reddittech"],
+    outlets: ["utilitydive", "rtoinsider", "latitude", "tdworld", "powermag", "rew", "akin", "sheppard", "natlaw", "aaf", "substack", "heatmap", "duanemorris", "bloomberglaw", "thehill", "dcknowledge", "enr", "ieee", "techcrunch", "apdata", "tomhardware", "dcdpowerup", "eenewsferc", "xschifman", "xnearco", "xhalcyon", "jigarferc", "benferc", "bennerc", "arthurwm", "jeffdennis", "simonmahan", "briggswhite", "heathermcgeory", "varunsivaram", "timlatimer", "jeffbladen", "jamienolan", "luciatian", "saraaxelrod", "chaselochmiller", "cullycavness", "amandapc", "charleshua", "chrisgillett", "shanumathew", "joshlevi", "cymcgeady", "cymcneill", "davidyoung", "taggreason", "redditecon", "reddittech", "naruc0618", "hklaw0623", "hunton0626", "baker0630", "norrisx0622", "rmi0706", "mdopc0717", "peskoe0720", "udadvocates0721", "wypr0826", "dennisx1012", "konidena1012", "latitude1013", "udduke1013", "bisnow1014"],
   };
 
   // Named commentary spanning the political spectrum (Tab 3). Each is the source's own
@@ -1502,8 +1708,8 @@ window.FERC_DATA = (function () {
     },
     {
       name: "Jeff Dennis", affil: "Electricity Customer Alliance · Coefficient Policy Experts", lean: "nonpartisan",
-      take: "The customer-affordability voice: supports FERC's move because it accelerates pathways for new large loads while reinforcing that those loads should bear the costs incurred to serve them, with more transparency and state coordination. In IEEE's coverage, he says FERC is threading the needle between speed-to-power and public concern over broader bill impacts.",
-      src: ["jeffdennis", "ieee"],
+      take: "The customer-affordability voice: supports FERC's move because it accelerates pathways for new large loads while reinforcing that those loads should bear the costs incurred to serve them, with more transparency and state coordination. In IEEE's coverage, he says FERC is threading the needle between speed-to-power and public concern over broader bill impacts. In October he read FERC's rejection of PJM's curtail-first service as putting more pressure on the states to find answers, and noted the order did not take up PJM's argument that the service matched SPP's approved CHILLS construct.",
+      src: ["jeffdennis", "ieee", "dennisx1012"],
     },
     {
       name: "Ben Schifman", affil: "Institute for Progress", lean: "nonpartisan",
@@ -1616,9 +1822,39 @@ window.FERC_DATA = (function () {
       src: ["bloomberglaw"],
     },
     {
+      name: "Ari Peskoe", affil: "Harvard Law School Electricity Law Initiative", lean: "center",
+      take: "The legal critic from the consumer side. Backs the four-state advocates' rehearing argument against the PJM order: ‘That move violates the law. PJM’s Tariff guarantees cost shifts due to transmission for data centers. Only FERC can fix that.’ Days later he added that FERC ordered no change to how utilities share upgrade costs, so those costs are still spread to everyone, the case his April op-ed made against FERC's transmission-pricing policy. In September he called FERC's objection to the backstop's cost allocation surprising.",
+      src: ["peskoe0720", "peskoe0723", "peskoe0930", "peskoe"],
+    },
+    {
+      name: "David S. Lapp", affil: "Maryland People’s Counsel", lean: "nonpartisan",
+      take: "The state consumer advocate's case against the PJM order. His office's July 17 filing, joined by the Ohio, Delaware and Illinois advocates, argues the order exposes data-center cost shifts without fixing the PJM rules that cause them, and that it ‘erroneously assumes State regulators have authority that they do not clearly have.’ On PJM's backstop proposal he warned that if forecast data centers never arrive, existing customers, households included, pay the cost.",
+      src: ["mdopc0717", "udadvocates0721", "wypr0826"],
+    },
+    {
+      name: "National Association of Regulatory Utility Commissioners", affil: "Ann Rendahl, NARUC President (Washington UTC)", lean: "nonpartisan",
+      take: "The state regulators' first word, issued the day of the orders. Reserved judgment until the orders were posted, welcomed the commissioners' ‘recognizing the critical role of states and state regulators,’ and said states remain committed to allocating costs appropriately across customer classes.",
+      src: ["naruc0618"],
+    },
+    {
+      name: "RMI", affil: "Sarah Wang and Tyler Farrell", lean: "center",
+      take: "The definition-gap read. FERC accepted SPP's tiered definition (over 10 MW at 69 kV or below, over 50 MW above it), while ‘FERC’s suggested definition for other RTOs does not address facilities interconnecting at or below 69 kV,’ which leaves each operator to decide whether to write its own.",
+      src: ["rmi0706"],
+    },
+    {
+      name: "Claire Lang-Ree", affil: "NRDC Sustainable FERC Project", lean: "left",
+      take: "The environmental-advocate case for making data centers bring their own power. In August she welcomed PJM's backstop proposal as PJM declining to keep buying power on data centers' behalf. After FERC rejected PJM's curtail-first service on Oct 9, NRDC criticized the ruling and she urged PJM to refile: ‘At a minimum, PJM’s rules must require data centers to bring their own supply, and not allow them to raise electricity costs or cause blackouts.’",
+      src: ["bisnow1014", "wypr0826"],
+    },
+    {
+      name: "Tyler Norris", affil: "Duke University Nicholas Institute", lean: "center",
+      take: "The researcher behind the flexible-load headroom estimate the flexible-service reform leans on. Four days after the orders he thanked FERC for its bipartisan leadership, ‘especially on establishing new flexible service options for large loads.’",
+      src: ["norrisx0622", "norris"],
+    },
+    {
       name: "Chris Wright", affil: "U.S. Secretary of Energy", lean: "right",
-      take: "The directing agency, declaring victory: DOE applauds the orders as speed-to-power that still protects consumers. Secretary Wright frames them as the Administration working to ‘remove barriers, accelerate development’ and to deliver on ‘President Trump's Ratepayer Protection Pledge.’",
-      src: ["doeApplaud"],
+      take: "The directing agency, declaring victory: DOE applauds the orders as speed-to-power that still protects consumers. Secretary Wright frames them as the Administration working to ‘remove barriers, accelerate development’ and to deliver on ‘President Trump's Ratepayer Protection Pledge.’ In October DOE backed FERC's backstop order for PJM, with Wright saying large electricity users should pay for the new generation built to serve them.",
+      src: ["doeApplaud", "doe1008"],
     },
   ];
 
@@ -1688,6 +1924,18 @@ window.FERC_DATA = (function () {
       ],
     },
 
+    {
+      wave: 1,
+      captured: "2026-10-20", // found by the Oct 20 sweep, later than this lane's stamp
+      title: "The state line: FERC claims no new retail reach",
+      body: "On the day of the orders the state regulators' association reserved judgment on substance but welcomed the commissioners' nod to state authority. A law-firm read of the orders put the same point plainly: FERC stayed inside its existing jurisdiction and left retail questions with the states. By July, state consumer advocates were arguing that this was the problem; their case is in the summer lane.",
+      quotes: [
+        { q: "We appreciate the Commissioners’ comments at today’s meeting recognizing the critical role of states and state regulators given the jurisdictional division of duties under the Federal Power Act.", src: "naruc0618" },
+        { q: "States remain committed to ensuring the appropriate allocation of costs across all customer classes and working constructively with our federal colleagues to that end.", src: "naruc0618" },
+        { q: "Importantly, FERC did not assert any new or expanded jurisdiction over retail load or co-located load in a broad or preemptive sense.", src: "hklaw0623" },
+      ],
+    },
+
     // ---- Wave 2: the filings and the governance fight (news-tracks-plan.md Feature D) ----------
     // Wave 1 above is reaction to the June 18 orders, captured Jun 22 to 29. Wave 2 is what the record
     // did next. Keeping them in dated lanes is the freshness filter: a June reaction and a July
@@ -1727,6 +1975,20 @@ window.FERC_DATA = (function () {
         { q: "short of PJM’s 20% installed reserve margin target by 6,831 MW", src: "pjmbra" },
       ],
     },
+    {
+      wave: 2,
+      track: "sc6",
+      captured: "2026-10-20", // found by the Oct 20 sweep, later than this lane's stamp
+      title: "State advocates: transparency is not a remedy",
+      body: "On July 17 Maryland's People's Counsel, joined by the Ohio, Delaware and Illinois advocates, asked FERC to rehear the PJM order, and Pennsylvania's advocate filed separately. Their argument is that the order makes data-center transmission costs visible to states but leaves PJM's cost allocation in place, and states cannot move costs between transmission customers. Ari Peskoe of Harvard's Electricity Law Initiative sided with them. FERC dismissed every request on Sept 21 because the order had not decided anything yet.",
+      quotes: [
+        { q: "The order erroneously assumes State regulators have authority that they do not clearly have.", src: "mdopc0717" },
+        { q: "Each network upgrade added to a transmission owner’s revenue requirement while these questions remain open embeds another cost shift", src: "udadvocates0721" },
+        { q: "Unjust and unreasonable wholesale transmission cost shifts from large loads in PJM can manifest through unjust and unreasonable cost allocation of both [Regional Transmission Expansion Plan] projects and supplemental projects", src: "udadvocates0721" },
+        { q: "That move violates the law. PJM's Tariff guarantees cost shifts due to transmission for data centers. Only FERC can fix that. And it must.", src: "peskoe0720" },
+        { q: "It did not order the utilities to charge those upgrade costs to data centers. They are still spread to everyone.", src: "peskoe0723" },
+      ],
+    },
     // --- wave 3: October 2026, FERC's first ruling on large-load tariff text and the refilings ----------
     {
       wave: 3,
@@ -1750,6 +2012,7 @@ window.FERC_DATA = (function () {
         { q: "That’s not only economically inefficient, but also likely to prevent supply and demand from coming back into balance.", src: "llorder1009" },
         { q: "We need state regulators to establish clear rules for which customers should be curtailed first when circumstances require it.", src: "llorder1009" },
         { q: "such measures should only be taken when necessary to keep the system reliable, after voluntary demand response resources have been exhausted", src: "llorder1009" },
+        { q: "in an emergency, data centers not serving critical functions should be shut off before ordinary customers", src: "llorder1009" },
       ],
     },
     {
@@ -1773,6 +2036,32 @@ window.FERC_DATA = (function () {
         { q: "The ISO and the Participating Transmission Owners Administrative Committee (PTO AC) were granted an abeyance and will develop a Section 205 filing to be submitted by November 16, 2026.", src: "isone1009" },
         { q: "LARS provides MISO with a targeted tool to address the intersection of significant large load additions,", src: "udive1005" },
         { q: "This type of operation is unsustainable and needs to be addressed,", src: "pjmil0910" },
+      ],
+    },
+    {
+      wave: 3,
+      track: "context",
+      title: "The backstop bill: who pays for capacity bought for new load",
+      body: "PJM's backstop buys capacity for a shortfall that large loads are driving, so the argument is over who carries the cost. Before FERC ruled, NRDC's Claire Lang-Ree read the proposal as PJM refusing to keep buying power for data centers, and Maryland People's Counsel David Lapp warned that households would pay if the forecast load never arrived. Two concurrences on the Sept 29 order answered: Chairman Swett faulted a filing made on the last possible day, and Commissioner See wrote that existing customers should not carry costs new demand causes. Ari Peskoe called FERC's cost-allocation objection surprising; DOE backed the order on Oct 8.",
+      quotes: [
+        { q: "PJM is saying very clearly to the data centers, 'We will no longer buy power on your behalf,'", src: "wypr0826" },
+        { q: "If the data centers don't show up in those zones, then it'll be the existing customers, ordinary households included, that will pay those costs.", src: "wypr0826" },
+        { q: "This Commission will not be forced into accepting a deeply flawed, eleventh-hour procurement mechanism with billion-dollar implications for consumers.", src: "backstop0929" },
+        { q: "Existing customers should not be left paying costs attributable to new demand.", src: "backstop0929" },
+        { q: "Surprising! FERC has issues with the cost allocation framework that determined who pays for this data center capacity auction.", src: "peskoe0930" },
+        { q: "the Energy Department supports having large electricity users pay for reliable new power generation", src: "doe1008" },
+      ],
+    },
+    {
+      wave: 3,
+      track: "context",
+      title: "After Oct 9, the states hold the pen on curtailment",
+      body: "FERC rejected PJM's curtail-first service as a reach into retail jurisdiction, and the reactions agree on the consequence: the next move belongs to the states. Jeff Dennis read the order as more pressure on them. Mary Yang, a former PJM regulatory counsel now at 804 Advisory, said it slows bring-your-own-capacity deals. NRDC wants PJM to refile with a bring-your-own-supply rule. And in a Duke Energy Carolinas order the same day, outside the RTOs, Commissioner Rosner wrote that FERC may have to widen the show cause orders' cost-recovery framework if state action falls short; that line is quoted as Utility Dive printed it.",
+      quotes: [
+        { q: "In doing so, it appears to be putting more pressure on states to find answers.", src: "dennisx1012" },
+        { q: "It does slow down the development of these more innovative bilateral mechanisms to solve some of these problems", src: "latitude1013" },
+        { q: "At a minimum, PJM's rules must require data centers to bring their own supply, and not allow them to raise electricity costs or cause blackouts", src: "bisnow1014" },
+        { q: "To the extent state regulatory actions are not sufficient to protect consumers, the commission has an obligation to seriously consider expanding the cost recovery framework it established in the Large Load Show Cause Orders", src: "udduke1013" },
       ],
     },
   ];
