@@ -93,6 +93,20 @@ DOCS = [
     dict(slug="order-er26-3515-pjm-large-load", accession="20261009-3055", docket="ER26-3515-000", rto="PJM",
          cite="197 FERC ¶ 61,019", issued="2026-10-09", kind="order", captured_at="2026-10-19",
          title="Order accepting PJM's Large Load definition and Large Load Registry and rejecting the Interim Resource Adequacy Service, BYONC and VRR-curve revisions"),
+    # --- Oct 20 eLibrary sweep: the Duke NITSA order, the backstop abeyance motion and its answer
+    # period, PJM's answer to the limited protests of its Aug 17 co-location compliance filing ----------
+    dict(slug="order-er26-2691-duke-nitsa", accession="20261009-3054", docket="ER26-2691-000", rto="Duke Energy Carolinas",
+         cite="197 FERC ¶ 61,020", issued="2026-10-09", kind="order", captured_at="2026-10-20",
+         title="Order Accepting Proposed Tariff Revisions (Duke Energy Carolinas pro forma NITSA, ER26-2691-000 and -001)"),
+    dict(slug="motion-er26-3380-pjm-abeyance", accession="20261013-5141", docket="ER26-3380-000", rto="PJM",
+         cite=None, issued="2026-10-12", kind="motion for abeyance", captured_at="2026-10-20",
+         title="Motion for Abeyance of PJM Interconnection, L.L.C. (ER26-3380-000 and EL26-108-000), holding the backstop paper hearing pending a new section 205 filing"),
+    dict(slug="notice-er26-3380-answer-period", accession="20261016-3047", docket="ER26-3380-000", rto="PJM",
+         cite=None, issued="2026-10-16", kind="notice establishing answer period", captured_at="2026-10-20",
+         title="Notice Establishing Answer Period on PJM's motion for abeyance (answers due 5:00 pm Eastern Time, October 21, 2026)"),
+    dict(slug="answer-el25-49-pjm-limited-protests", accession="20261015-5003", docket="EL25-49-000", rto="PJM",
+         cite=None, issued="2026-10-14", kind="motion for leave to answer and answer", captured_at="2026-10-20",
+         title="Motion for Leave to Answer and Answer of PJM Interconnection, L.L.C. to the limited protests of its August 17, 2026 compliance filing (EL25-49 and ER26-1479)"),
     # The four orders below were first extracted in an authenticated eLibrary browser session on
     # 2026-09-24 (branch vibe/refresh-ux-september, commit da4e14a, never merged). On 2026-10-20 their
     # eLibrary DOCX originals were downloaded into sources/originals/ and re-extracted with textutil;
