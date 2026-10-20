@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
 import { stampAssets } from "../tools/stamp-assets.mjs";
+import { buildLlmsTxt } from "../tools/build-llms.mjs";
 import { buildIndexHtml, buildSitemap, freshest } from "../tools/build-seo.mjs";
 import { pagesFor, allDockets, slugFor, buildDocketPage } from "../tools/build-docket-pages.mjs";
 import { verifyCommishTailoring, verifyLacerteSubstitution, verifyNoiseAllowlist } from "../tools/verify-commish-tailoring.mjs";
@@ -909,7 +910,7 @@ test("no Discourse quote is dated earlier than the sweep that captured it", () =
   // Each wave lane renders one "captured" stamp. A quote found by a later sweep and dropped into an
   // earlier lane would be dated to that lane's stamp, so a reader sees October evidence labeled June.
   // Such a theme carries its own `captured`, which the theme card renders; this checks the pairing.
-  const lane = { 1: D.meta.discourseCapture, 2: D.meta.wave2Capture, 3: D.meta.newsCapture };
+  const lane = { 1: D.meta.discourseCapture, 2: D.meta.wave2Capture, 3: D.meta.commentaryCapture || D.meta.newsCapture };
   let checked = 0, ownStamp = 0;
   for (const t of D.voiceThemes || []) {
     const laneStamp = lane[t.wave || 1];
@@ -1193,4 +1194,14 @@ test("the lead summary's 'Where it stands' date is the filings cutoff", () => {
   assert.ok(m, "the paragraph opens with a full date");
   const iso = new Date(m[1] + " 12:00 UTC").toISOString().slice(0, 10);
   assert.equal(iso, D.meta.newsCapture, `summary says ${m[1]}, newsCapture is ${D.meta.newsCapture}`);
+});
+
+test("the October commentary lane is stamped by the commentary sweep, not the filings sweep", () => {
+  // Codex, PR 24: a commentary-only refresh would advance commentaryCapture while wave 3 kept newsCapture.
+  const app = readFileSync(join(here, "..", "docs", "js", "app.js"), "utf8");
+  assert.ok(app.includes('waveLane(3, "October: the retail line, and the refilings", D.meta.commentaryCapture ||'), "app.js wave-3 lane reads commentaryCapture first");
+  const llms = buildLlmsTxt(D);
+  for (const t of D.voiceThemes.filter((x) => x.wave === 3 && !x.captured)) {
+    assert.ok(llms.includes(`captured ${D.meta.commentaryCapture}] ${t.title}:`), `llms.txt stamps "${t.title}" with commentaryCapture`);
+  }
 });

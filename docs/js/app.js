@@ -938,7 +938,7 @@
         '<div class="quote-themes">' + items.map(themeCard).join("") + "</div></div>";
     };
     var quoteThemes =
-      waveLane(3, "October: the retail line, and the refilings", D.meta.newsCapture || D.meta.discourseCapture) +
+      waveLane(3, "October: the retail line, and the refilings", D.meta.commentaryCapture || D.meta.newsCapture || D.meta.discourseCapture) +
       waveLane(2, "The filings and the governance fight", D.meta.wave2Capture || D.meta.newsCapture || D.meta.discourseCapture) +
       waveLane(1, "Reaction to the June 18 orders", D.meta.discourseCapture);
 

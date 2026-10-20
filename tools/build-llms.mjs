@@ -124,7 +124,7 @@ export function buildLlmsTxt(D) {
   const WAVES = {
     1: ["reaction to the June 18 orders", m.discourseCapture],
     2: ["the filings and the governance fight", m.wave2Capture || m.newsCapture || m.discourseCapture],
-    3: ["October: the retail line, and the refilings", m.newsCapture || m.discourseCapture],
+    3: ["October: the retail line, and the refilings", m.commentaryCapture || m.newsCapture || m.discourseCapture],
   };
   out.push("## Commentary themes (secondary, in three dated waves)", "");
   for (const theme of D.voiceThemes || []) {
