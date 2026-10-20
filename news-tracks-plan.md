@@ -2,6 +2,15 @@
 
 ## Progress log (append per session)
 
+**Session 2026-10-20 — eLibrary sweep integrated.** Every docket sheet read from Oct 8 in an authenticated
+browser. The six §206 dockets are quiet. Four new primary documents extracted (`--check` 25 of 25): the Duke
+NITSA order (197 FERC ¶ 61,020; the Rosner and Chang lines now cite it), PJM's Oct 12 backstop abeyance
+motion, FERC's Oct 16 answer-period notice (answers due Oct 21), and PJM's Oct 14 answer to the EL25-49
+protests (defer ruling to November; Interim NITS service from Q1 2029). MISO LARS is ER27-25-000. Four
+timeline events added (Oct 15, Oct 16, Oct 20 window check, Oct 21 deadline); sc6, e2, gov and context
+`asOf` and `meta.newsCapture` moved to Oct 20. Not done: the -001 sub-dockets of EL26-69 to -72, MISO's ZGIA
+deficiency letter, NOVEC's answer.
+
 **Session 2026-10-08 — fourth refresh: the action moved to PJM's own dockets.** The six §206 dockets are
 quiet (abeyance holds; no respondent filing since Aug 22; Sep 21 orders dismissed the rehearing requests
 in four dockets). Sep 29: FERC accepted PJM's backstop but suspended it to Feb 28, 2027, set a paper

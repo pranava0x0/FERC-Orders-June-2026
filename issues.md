@@ -21,7 +21,12 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 - **2026-10-20 · verification · the Oct 9 Duke Energy Carolinas order is known only from Utility Dive.**
   Rosner's and Chang's statements on it are quoted as Utility Dive printed them (labeled on the site), and
   the docket number is not in the article. Pull the order from eLibrary and check both lines against it.
-  Root cause: **source**. Status: **Open**.
+  Root cause: **source**. Status: **Fixed 2026-10-20.** The order (ER26-2691-000/-001, 197 FERC ¶ 61,020,
+  accession 20261009-3054) was downloaded in the Oct 20 eLibrary sweep, committed to `sources/originals/`
+  and extracted to `sources/text/abeyance/order-er26-2691-duke-nitsa.txt` (`SOURCES.dukeorder1009`). Both
+  lines are verbatim in it; Utility Dive had lowercased "Commission" in Rosner's, now corrected. The
+  timeline event and the wave-3 theme cite the order, the "as Utility Dive printed it" labels are gone,
+  and the event now records See's concurrence (which also cites the show cause orders) and Chang's dissent.
 - **2026-10-20 · tooling/env · `extract-abeyance-docs.py --check` could not run on this laptop.** It
   shells out to `pdftotext`, which is not installed here. No FERC document was added this sweep, so
   nothing depended on it. Root cause: **environment**. Status: **Fixed 2026-10-20.** Installed
