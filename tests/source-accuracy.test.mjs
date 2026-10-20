@@ -417,6 +417,18 @@ test("docs/llms.txt is generated from data.js and in sync", () => {
   assert.equal(committed, generated, "docs/llms.txt is stale; regenerate with: node tools/build-llms.mjs");
 });
 
+test("llms.txt labels each Discourse theme with its own wave and capture date", () => {
+  const out = buildLlmsTxt(D);
+  const themes = D.voiceThemes || [];
+  assert.ok(themes.some((t) => t.wave === 3), "expected at least one wave-3 theme");
+  for (const t of themes) {
+    const line = out.split("\n").find((l) => l.startsWith("- [wave ") && l.includes(`] ${t.title}:`));
+    assert.ok(line, `no llms.txt line for theme "${t.title}"`);
+    assert.ok(line.startsWith(`- [wave ${t.wave || 1},`), `"${t.title}" is wave ${t.wave || 1} in data.js but: ${line.slice(0, 80)}`);
+    if (t.captured) assert.ok(line.includes(`captured ${t.captured}]`), `"${t.title}" should carry its own captured date ${t.captured}`);
+  }
+});
+
 test("Discourse commentary quotes are backed by captured evidence", () => {
   const evidence = jsonFile("sources", "voices-evidence.json");
   const byName = new Map(Object.entries(evidence.voices));
