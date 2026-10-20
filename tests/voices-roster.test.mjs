@@ -33,14 +33,13 @@ const code = [
   slice("  function esc(", "  }"),
   slice("  function shortName(", "  }"),
   slice("  function srcChips(", "  }"),
-  slice("  var LEAN_GROUPS = [", "  ];"),
   slice("  function renderVoiceRoster(", "  }"),
-  "out = { html: renderVoiceRoster(D.voices), LEAN_GROUPS: LEAN_GROUPS, render: renderVoiceRoster };",
+  "out = { html: renderVoiceRoster(D.voices), render: renderVoiceRoster };",
 ].join("\n");
 const ctx = { D, out: null };
 vm.createContext(ctx);
 vm.runInContext(code, ctx);
-const { html, LEAN_GROUPS, render } = ctx.out;
+const { html, render } = ctx.out;
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 
 test("the Discourse tab renders the roster from D.voices", () => {
@@ -50,12 +49,10 @@ test("the Discourse tab renders the roster from D.voices", () => {
 
 test("every voice carries the fields the roster reads, with resolvable sources", () => {
   assert.ok(D.voices.length >= 45, `voices count floor (${D.voices.length} >= 45)`);
-  const known = LEAN_GROUPS.map((g) => g.k);
   for (const v of D.voices) {
-    for (const k of ["name", "affil", "lean", "take"]) {
+    for (const k of ["name", "affil", "take"]) {
       assert.ok(typeof v[k] === "string" && v[k].trim(), `${v.name || "(unnamed)"}: ${k} is a non-empty string`);
     }
-    assert.ok(known.includes(v.lean), `${v.name}: lean "${v.lean}" is one of the roster's groups (${known.join(", ")})`);
     assert.ok(Array.isArray(v.src) && v.src.length, `${v.name}: has at least one source`);
     for (const id of v.src) assert.ok(D.SOURCES[id], `${v.name}: source "${id}" resolves in SOURCES`);
   }
@@ -73,16 +70,24 @@ test("the rendered roster contains every voice, once, with its source chips", ()
       assert.ok(html.includes('href="' + esc(s.archiveUrl || s.url) + '"'), `${v.name}: chip for "${id}" links to its source`);
     }
   }
-  // Group counts add up to the total, so no voice falls between groups.
-  const counts = [...html.matchAll(/<h3 class="voice-group-h">[^<]*<span class="acc-count mono">(\d+)<\/span>/g)].map((m) => +m[1]);
-  assert.equal(counts.reduce((a, b) => a + b, 0), D.voices.length, "group counts sum to the voice count");
+  // Alphabetical, so a reader can find a name.
+  const names = [...html.matchAll(/<span class="voice-name">([^<]*)<\/span>/g)].map((m) => m[1]);
+  assert.deepEqual(names, [...names].sort((a, b) => a.localeCompare(b)), "voices are listed alphabetically");
+});
+
+test("the roster publishes no political-lean label (curator-only until reviewed)", () => {
+  // Codex, PR 24 (P1): grouping 45 named people by an unreviewed left/center/right label.
+  assert.doesNotMatch(html, /lean-pill|voice-group|Right of center|Left of center/);
+  for (const v of D.voices.filter((x) => x.lean)) {
+    assert.ok(!html.includes(">" + esc(v.lean) + "<"), `${v.name}: lean "${v.lean}" is not rendered`);
+  }
 });
 
 test("missing fields render explicit placeholders, never blanks or undefined", () => {
   const bare = render([{}, { name: "X", lean: "libertarian", src: [] }]);
   assert.doesNotMatch(bare, /\bundefined\b|\bnull\b/);
-  for (const ph of ["Name not recorded", "Affiliation not stated", "No summary recorded", "No source recorded", "not stated", "Lean not stated"]) {
+  for (const ph of ["Name not recorded", "Affiliation not stated", "No summary recorded", "No source recorded"]) {
     assert.ok(bare.includes(ph), `placeholder "${ph}" renders`);
   }
-  assert.equal((bare.match(/<li class="voice-row">/g) || []).length, 2, "an unknown lean still renders, in the trailing group");
+  assert.equal((bare.match(/<li class="voice-row">/g) || []).length, 2, "every record renders, whatever fields it lacks");
 });

@@ -984,13 +984,11 @@ a.cm-hm-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1
 
 /* who's quoted: the voices roster */
 .voice-roster { display: grid; gap: 18px; }
-.voice-group-h { display: flex; align-items: baseline; gap: 8px; font-family: var(--font-serif); font-size: 17px; color: var(--masthead); margin: 0 0 8px; }
 .voice-list { list-style: none; display: grid; gap: 10px; padding: 0; margin: 0; }
 @media (min-width: 820px) { .voice-list { grid-template-columns: 1fr 1fr; } }
 .voice-row { min-width: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; overflow-wrap: anywhere; }
 .voice-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 .voice-name { font-weight: 700; font-size: 15px; color: var(--ink); min-width: 0; }
-.lean-pill { flex: none; font-family: var(--font-mono); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--rule-strong); color: var(--text-muted); }
 .voice-affil { font-size: 13px; color: var(--text-muted); margin: 2px 0 6px; }
 .voice-take { font-size: 14px; color: #2b3744; line-height: 1.45; margin: 0 0 8px; }
 .voice-row .na { color: var(--text-muted); font-style: italic; }

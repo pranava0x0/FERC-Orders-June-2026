@@ -22,6 +22,12 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   The Sonnet validators re-read every page and are the gate; the integrator re-checked X posts through
   oEmbed and every other displayed quote against cached page text. Root cause: **source (agent
   extraction)**. Status: **Open** as a standing rule: no agent-extracted quote ships without that re-read.
+- **2026-10-20 · data/curation · `voices[].lean` is an unreviewed political-orientation label on real people.**
+  The new roster grouped all 45 voices by left/center/right/nonpartisan and showed a lean pill (Codex, PR 24, P1).
+  AGENTS.md reserves subjective framing to a curator, and the six leans added Oct 20 were model judgment calls.
+  The roster now lists voices alphabetically and renders no lean; a test fails if a lean label appears. Root
+  cause: **code bug** (rendered an unreviewed field). Status: **Fixed** in the UI; **Open** for a curator to review
+  every `lean` value before anything groups or tags by it again.
 - **2026-10-20 · verification · the Oct 9 Duke Energy Carolinas order is known only from Utility Dive.**
   Rosner's and Chang's statements on it are quoted as Utility Dive printed them (labeled on the site), and
   the docket number is not in the article. Pull the order from eLibrary and check both lines against it.
