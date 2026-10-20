@@ -526,3 +526,23 @@ documents on pjm.com, iso-ne.com, caiso.com and the Federal Register, none of wh
 read. eLibrary was unreachable from the container (no browser session; the WebAPI 401s), which is
 recorded in REFRESH.md and on the site. Main-loop token totals are not self-observable.
 
+
+## Session 2026-10-20 — outside-commentary sweep (3 lanes, 2 validators, 1 integrator)
+
+| Lane / role | Who | Tokens (approx.) | Result |
+|---|---|---|---|
+| X posts | orchestrator, logged-in Chrome, texts confirmed by oEmbed | main loop, not self-observable | 10 posts kept (Peskoe x3, Dennis x2, Norris, Nyangon, Kutner, two leads resolved to primaries) |
+| Search lane A | Haiku search agent | ~120-150K | 17 findings: law-firm alerts, think tanks, NARUC, Maryland OPC, Utility Dive |
+| Search lane B | Haiku search agent | ~120-150K | 12 findings: October press on the Oct 9 order, WYPR, DOE |
+| Validation | two Sonnet validators, each finding re-read on its page | ~140-160K each | 32 accepted, most with fixes (wrong lanes, invented headline, unconfirmed roles, truncated quotes) |
+| Integration | this run, inline, ~75 tool calls | not self-observable | 19 theme quotes, 3 timeline quotes and 6 voice-take quotes placed; every X post re-checked through oEmbed and every other quote against cached page text before shipping. One quote not in the accepted set (Chang on the Duke order) was added from the same verified Utility Dive page, for balance against Rosner's |
+
+Placement: one theme per wave on the state-authority thread (June NARUC/Holland & Knight, July advocates and
+Peskoe, October "states hold the pen"), one wave-3 theme on who pays for the backstop, one quote added to
+the Rosner theme, four media lines, three reception edits, two timeline events (Jul 17 advocates' rehearing
+requests, Oct 9 Duke order), six new voice records and two updated. Dropped: Foley and Morgan Lewis
+(explain, no view), Kutner (unnamed ruling), the duplicate See quote, Turley and Nyangon as quotes (kept as
+one media line). The validators were the gate that mattered: the Haiku batches came through model-extracted
+fetches, and one finding (Konidena) arrived as an aggregator's paraphrase attributed to him. Integration
+found one thing the validators could not: `D.voices` has not rendered since June 29, so the new voice
+records only show through themes, media lines and the timeline (issues.md).

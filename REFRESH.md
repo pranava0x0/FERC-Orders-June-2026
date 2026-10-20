@@ -74,7 +74,7 @@ That is how AD26-7-000 and the July 23 conference date were confirmed.
    a 50 MW single-site large-load definition, and a decision to drop FERC's 69 kV and customer-type
    tests. None of that is confirmed against the proposal PDF, which was not located on caiso.com this
    sweep. Treat as a lead. Get the PDF from the Large Loads initiative page before quoting any of it.
-2. EL26-67: the reported Jul 17 ratepayer-advocate filing. Exact procedural type + filers. (Carried.)
+2. RESOLVED 2026-10-20: EL26-67's Jul 17 ratepayer-advocate filing. Filers from Maryland OPC's own release (`mdopc0717`): OPC joined by the Ohio Consumers' Counsel, the Delaware Division of the Public Advocate and the Illinois Attorney General, with the Pennsylvania OCA filing separately (`udadvocates0721`). Procedural type from FERC's Sept 21 order, which dismissed them as rehearing requests. The filings themselves are still unread.
 3. EL25-49: the Feb 2026 compliance filing's requested Jul 31 effective date. (Carried.)
 4. RESOLVED 2026-10-08: the rehearing requests live in the **-001 sub-docket** (EL26-67-001: 20260717-5246, -5258; 20260720-5198, -5218, -5172), disposed of Sep 21 (20260921-3020). See the gotcha below.
 5. Northern Virginia Electric Cooperative's Jul 29 motion for clarification of the June 18 E-2 order is
