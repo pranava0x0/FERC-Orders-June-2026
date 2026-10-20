@@ -26,3 +26,10 @@ Pulled `yt-dlp` ephemerally via `uvx yt-dlp` to fetch the FERC open-meeting auto
 - No machine-local absolute paths committed in data (provenance paths are repo-relative / URLs).
 - CSV/export formula-injection guard: N/A (no spreadsheet export).
 - GitHub Actions: none yet. If a Pages build action is added, pin it to a full commit SHA + minimal `permissions:`.
+
+## Sweep 2026-10-20 (dev-time install: PyMuPDF)
+
+Installed `pymupdf==1.26.4` with `pip3 install --user` so `tools/extract-abeyance-docs.py` can extract and
+`--check` the committed FERC document texts on a Mac with no poppler/Homebrew. Dev-time only; nothing ships.
+Checked the advisory index (generated 2026-10-20): no entry for pymupdf, MuPDF or fitz. The PyPI incidents it
+lists (Mini Shai-Hulud, MemoryOS 2.0.34, Graphify, SGLang, CrewAI) do not touch this package.
