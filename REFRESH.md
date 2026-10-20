@@ -121,7 +121,7 @@ node tools/check-staleness.mjs
 node tools/build-llms.mjs
 node --test tests/*.test.mjs
 node tools/verify-quotes.mjs
-python3 tools/extract-abeyance-docs.py --check   # committed order text still matches its source
+python3 tools/extract-abeyance-docs.py --check   # committed order text still matches its source (originals in sources/originals/; needs PyMuPDF)
 node tools/survey-summaries.mjs --brief          # comment corpus: the should-be-zero set
 ```
 
