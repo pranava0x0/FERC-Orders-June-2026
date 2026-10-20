@@ -873,37 +873,21 @@
   }
 
   /* ---- TAB 3 ---- */
-  // "Who's quoted": the named voices behind the Discourse tab. Grouped by the commentator's general
-  // orientation on energy policy (data.js `voices[].lean`), then by name. A lean outside this list still
-  // renders, in a trailing "not stated" group, so a new value can never silently drop a voice.
-  var LEAN_GROUPS = [
-    { k: "right", label: "Right of center" },
-    { k: "center", label: "Center" },
-    { k: "left", label: "Left of center" },
-    { k: "nonpartisan", label: "Nonpartisan: analysts, practitioners and industry" },
-  ];
+  // "Who's quoted": the named voices behind the Discourse tab, alphabetical. data.js `voices[].lean` is NOT
+  // shown: it is an unreviewed political-orientation label on real people, and subjective framing is
+  // curator-only (AGENTS.md). Group or tag by it only after a curator reviews every value.
   function renderVoiceRoster(voices) {
     var na = function (txt) { return '<span class="na">' + esc(txt) + "</span>"; };
-    var known = LEAN_GROUPS.map(function (g) { return g.k; });
-    var groups = LEAN_GROUPS.concat([{ k: null, label: "Lean not stated" }]).map(function (g) {
-      var list = voices.filter(function (v) { return g.k ? v.lean === g.k : known.indexOf(v.lean) < 0; });
-      list.sort(function (a, b) { return String(a.name || "").localeCompare(String(b.name || "")); });
-      return { label: g.label, list: list };
-    }).filter(function (g) { return g.list.length; });
+    var list = voices.slice().sort(function (a, b) { return String(a.name || "").localeCompare(String(b.name || "")); });
     var row = function (v) {
       var chips = srcChips(v.src);
       return '<li class="voice-row"><div class="voice-head"><span class="voice-name">' +
-        (v.name ? esc(v.name) : na("Name not recorded")) + "</span>" +
-        '<span class="lean-pill">' + (v.lean ? esc(v.lean) : "not stated") + "</span></div>" +
+        (v.name ? esc(v.name) : na("Name not recorded")) + "</span></div>" +
         '<p class="voice-affil">' + (v.affil ? esc(v.affil) : na("Affiliation not stated")) + "</p>" +
         '<p class="voice-take">' + (v.take ? esc(v.take) : na("No summary recorded")) + "</p>" +
         (chips || '<div class="srcs">' + na("No source recorded") + "</div>") + "</li>";
     };
-    return '<div class="voice-roster">' + groups.map(function (g) {
-      return '<section class="voice-group"><h3 class="voice-group-h">' + esc(g.label) +
-        '<span class="acc-count mono">' + g.list.length + "</span></h3>" +
-        '<ul class="voice-list">' + g.list.map(row).join("") + "</ul></section>";
-    }).join("") + "</div>";
+    return '<div class="voice-roster"><ul class="voice-list">' + list.map(row).join("") + "</ul></div>";
   }
   function renderNews() {
     var recItems = D.reception.filter(function (r) { return !/^FERC\b/.test(r.group); });
@@ -974,7 +958,7 @@
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.", rec + commentsBlock, false, recItems.length) +
       accSection("Media & discourse: consensus and friction", "The dominant narratives in energy trade press and policy circles.", disc, false, consensusN + frictionN) +
       accSection("Who’s quoted",
-      "The named commentators this tab draws on, grouped by their general orientation on energy policy, then by name. The lean describes the commentator, not this argument. Each take is the source's own position, attributed and linked.",
+      "The named commentators this tab draws on, in alphabetical order. Each take is the source's own position, attributed and linked.",
       renderVoiceRoster(D.voices || []), false, (D.voices || []).length) +
       accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false, outletIds.length);
   }
