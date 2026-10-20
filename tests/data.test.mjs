@@ -1205,3 +1205,14 @@ test("the October commentary lane is stamped by the commentary sweep, not the fi
     assert.ok(llms.includes(`captured ${D.meta.commentaryCapture}] ${t.title}:`), `llms.txt stamps "${t.title}" with commentaryCapture`);
   }
 });
+
+test("every record that names MISO's LARS docket cites the eLibrary record it came from", () => {
+  // ER27-25-000 was published citing only Utility Dive, whose note says it gives no docket number (Codex, PR 24).
+  const src = D.SOURCES.misolars1002;
+  assert.ok(src && /docinfo\?accession_number=20261002-5074/.test(src.url), "misolars1002 points at the accession's eLibrary record");
+  const rows = (D.procedural.filings.rows || []).filter((r) => /ER27-25/.test(r.gist || ""));
+  const events = D.timeline.filter((e) => /ER27-25/.test(e.body || ""));
+  const tracks = Object.values(D.tracks).filter((t) => /ER27-25/.test(t.status?.line || ""));
+  assert.ok(rows.length + events.length + tracks.length > 0, "something names ER27-25");
+  for (const r of [...rows, ...events, ...tracks]) assert.ok((r.src || []).includes("misolars1002"), "a record naming ER27-25 cites misolars1002");
+});
