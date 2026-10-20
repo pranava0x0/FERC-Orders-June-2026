@@ -466,7 +466,7 @@ window.FERC_DATA = (function () {
       url: "https://www.utilitydive.com/news/miso-large-load-generation-study-lars-ferc/832114/",
       published: "2026-10-05",
       captured: "2026-10-19",
-      note: "Reports MISO's Oct 2 §205 filing (eLibrary accession 20261002-5074) proposing a Large Load Addition Resource Study, and that MISO asked FERC to decide by Dec 2. The filing itself was not read; the article does not give its docket number, which the Oct 20 eLibrary sweep found on the accession's own information page: ER27-25-000, described there as the LARS tariff filing to be effective Dec 2, 2026. Snippet in sources/news-evidence.json.",
+      note: "Reports MISO's Oct 2 §205 filing (eLibrary accession 20261002-5074) proposing a Large Load Addition Resource Study, and that MISO asked FERC to decide by Dec 2. The filing itself was not read; the article does not give its docket number, which the Oct 20 eLibrary sweep found on the accession's own information page (misolars1002): ER27-25-000, described there as the LARS tariff filing to be effective Dec 2, 2026. Snippet in sources/news-evidence.json.",
     },
     udive1008: {
       label: "“DOE presses PJM on ratepayer protections from large load costs”",
@@ -711,8 +711,17 @@ window.FERC_DATA = (function () {
       note: "Read end to end. Carries NRDC’s emailed statement from Claire Lang-Ree of the Sustainable FERC Project.",
     },
     // --- 2026-10-20 eLibrary sweep ------------------------------------------------------------------
+    misolars1002: {
+      label: "FERC eLibrary document information, accession 20261002-5074 (MISO's Large Load Addition Resource Study filing)",
+      org: "FERC eLibrary",
+      tier: "ferc",
+      url: "https://elibrary.ferc.gov/eLibrary/docinfo?accession_number=20261002-5074",
+      published: "2026-10-02",
+      captured: "2026-10-20",
+      note: "Read in an authenticated browser on Oct 20 (eLibrary is Cloudflare-gated to scripts). The description reads: Midcontinent Independent System Operator, Inc. submits tariff filing per 35.13(a)(2)(iii: 2026-10-02_Large Load Addition Resource Study (LARS) to be effective 12/2/2026 under ER27-25; Docket ER27-25, sub-docket 000. The filing's files are a transmittal letter, redline and clean tariff sheets, and testimony of Christina Drake; none was read.",
+    },
     elibrary1020: {
-      label: "FERC eLibrary docket sheets: EL26-67 to EL26-72 (-000; EL26-67-001), EL25-49-000 and -002, ER26-1479-002, AD26-7-000, ER26-3380-000, EL26-108-000, ER26-3515-000",
+      label: "FERC eLibrary docket sheets: EL26-67 to EL26-72 (-000 and -001), EL25-49-000 and -002, ER26-1479-002, AD26-7-000, ER26-3380-000, EL26-108-000, ER26-3515-000",
       org: "FERC eLibrary",
       tier: "ferc",
       url: "https://elibrary.ferc.gov/eLibrary/search",
@@ -817,7 +826,7 @@ window.FERC_DATA = (function () {
         line: "All six proceedings remain in abeyance and the clock has not moved since Aug 14: responses are due Nov 16, 2026 and answers Dec 16, except SPP (Nov 20 and Dec 21). Four weeks out, the respondents' plans are now in writing. The PJM Transmission Owners committed on Oct 9 to a §205 filing on or before Nov 16 covering both the show cause order and their co-location compliance obligation; ISO-NE and its transmission owners said the same day they will file under §205 by Nov 16; CAISO's draft final proposal goes to its Board of Governors on Oct 28 for a Nov 16 filing; MISO has been filing its large-load pieces under §205 in separate ER dockets since August, most recently an Oct 2 fast-track study process (ER27-25); NYISO told FERC in June it aims to file by December, after the Nov 16 date. The Commission's only action in the six dockets since August is the Sept 21 set of orders dismissing, as premature, the rehearing and clarification requests in five of them (PJM, NYISO, MISO, CAISO and ISO-NE); all five orders have now been read, and the Oct 8 sweep's count of four was wrong because it missed the ISO-NE order. Outside the six dockets, FERC's Oct 9 order on PJM's own §205 filing accepted a 50 MW Large Load definition and a Large Load Registry while rejecting the curtailment service built around them. The six docket sheets, read row by row through Oct 20, show nothing substantive since Oct 8: a service-list update in all six and one out-of-time intervention in EL26-67. No respondent has filed in its show cause docket.",
       },
       next: { date: "2026-11-16", label: "Show-cause responses due after the 90-day abeyance (SPP: Nov 20)", dateNote: "moved from Aug 17 by the Aug 14 abeyance orders; SPP received 95 days rather than 90" },
-      src: ["fercPR", "fercFS", "elibrary0803", "elibrary0809", "elibrary0823", "abeyance0814", "rehearing0921", "rehearing0921x4", "elibrary1008", "pjmto1009", "isone1009", "caisodfp0924", "udive1005", "llorder1009", "elibrary1020"],
+      src: ["fercPR", "fercFS", "elibrary0803", "elibrary0809", "elibrary0823", "abeyance0814", "rehearing0921", "rehearing0921x4", "elibrary1008", "pjmto1009", "isone1009", "caisodfp0924", "udive1005", "misolars1002", "llorder1009", "elibrary1020"],
     },
     e2: {
       label: "PJM co-location: EL25-49",
@@ -1139,7 +1148,7 @@ window.FERC_DATA = (function () {
       date: "Oct 9, 2026", iso: "2026-10-09b", kind: "milestone", track: "sc6",
       title: "Two respondents put their Nov 16 §205 commitments in writing",
       body: "The PJM Transmission Owners' Oct 9 notice of consultation with the Members Committee says they “have committed to submit their proposed revisions to address the concerns identified by the June 18, 2026 order issued in Docket No. EL26-67-000” through a “Section 205 filing on or before November 16, 2026,” folding in their EL25-49 co-location compliance obligation, and adds that the revisions “may also include a cost allocation methodology associated with PJM’s proposed consolidated generation and transmission service process.” The same day ISO-NE's proposal summary states that “The ISO and the Participating Transmission Owners Administrative Committee (PTO AC) were granted an abeyance and will develop a Section 205 filing to be submitted by November 16, 2026.” CAISO's schedule, from its Sept 24 notice, runs comments on the draft final proposal to Oct 15, a tariff-language meeting Oct 19 and the Board of Governors on Oct 28. MISO is filing piecemeal under §205 in separate ER dockets rather than waiting: a zero-injection generator agreement in August and, on Oct 2, a Large Load Addition Resource Study (ER27-25-000) that it says “provides MISO with a targeted tool to address the intersection of significant large load additions,” asking for a decision by Dec 2. NYISO's own target, recorded in its show cause order, is to file “corresponding tariff revisions with the Commission by December 2026,” which is after the reset date; what it files on Nov 16, if anything, is the open question. SPP has said nothing new that this sweep could find.",
-      src: ["pjmto1009", "isone1009", "caisodfp0924", "udive1005", "e12"],
+      src: ["pjmto1009", "isone1009", "caisodfp0924", "udive1005", "misolars1002", "e12"],
     },
     {
       date: "Oct 9, 2026", iso: "2026-10-09c", kind: "ferc", track: "context",
@@ -2428,7 +2437,7 @@ window.FERC_DATA = (function () {
         {
           docket: "EL26-70-000", step: "showcause", status: "signaled", date: "2026-10-02",
           gist: "MISO is filing its large-load reforms under §205 in separate ER dockets rather than in EL26-70: a zero-injection generator interconnection agreement in August and, on Oct 2, a Large Load Addition Resource Study in Docket ER27-25-000 (accession 20261002-5074), with a requested effective date of Dec 2, 2026. Whether MISO also files or responds in EL26-70 by Nov 16 is unknown.",
-          src: ["udive1005"],
+          src: ["udive1005", "misolars1002"],
         },
         {
           docket: "EL26-69-000", step: "showcause", status: "signaled", date: "2026-06-18",
