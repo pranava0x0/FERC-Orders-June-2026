@@ -324,6 +324,7 @@ window.FERC_DATA = (function () {
       published: "2026-09-21",
       captured: "2026-10-08",
       note: "Accession 20260921-3020, read in full from PJM's copy of the order (PJM publishes FERC orders in its docket on pjm.com, open to automated fetch) and committed as sources/text/abeyance/order-el26-67-001-pjm-rehearing.txt.",
+      text: "sources/text/abeyance/order-el26-67-001-pjm-rehearing.txt", // the Discourse quote on the dismissal is checked against this file
     },
     backstop0929: {
       label: "Order Accepting Reliability Backstop Procurement and Establishing Further Procedures, ER26-3380 and EL26-108 (196 FERC \u00b6 61,245)",
@@ -880,7 +881,7 @@ window.FERC_DATA = (function () {
       date: "Jul 17, 2026", iso: "2026-07-17", kind: "milestone", track: "sc6",
       title: "State consumer advocates seek rehearing of the PJM order",
       body: "Maryland's Office of People's Counsel files in EL26-67, joined by the Office of the Ohio Consumers' Counsel, the Delaware Division of the Public Advocate and the Office of the Illinois Attorney General; the Pennsylvania Office of Consumer Advocate files separately. OPC's case is that the order makes data-center transmission costs transparent to states without changing the PJM rules that allocate them, and that states cannot move costs between transmission customers. People's Counsel David S. Lapp: “The order erroneously assumes State regulators have authority that they do not clearly have.” FERC dismissed these requests with the others on Sept 21. Read from OPC's release and Utility Dive's report; the filings themselves were not read.",
-      src: ["mdopc0717", "udadvocates0721"],
+      src: ["mdopc0717", "udadvocates0721", "rehearing0921"],
     },
     {
       date: "≈ Jul 18, 2026", iso: "2026-07-18", kind: "deadline", track: "sc6",
@@ -1990,6 +1991,7 @@ window.FERC_DATA = (function () {
         { q: "Unjust and unreasonable wholesale transmission cost shifts from large loads in PJM can manifest through unjust and unreasonable cost allocation of both [Regional Transmission Expansion Plan] projects and supplemental projects", src: "udadvocates0721" },
         { q: "That move violates the law. PJM's Tariff guarantees cost shifts due to transmission for data centers. Only FERC can fix that. And it must.", src: "peskoe0720" },
         { q: "It did not order the utilities to charge those upgrade costs to data centers. They are still spread to everyone.", src: "peskoe0723" },
+        { q: "We therefore dismiss the requests for rehearing, which concern a Commission action that is not final and that will be succeeded by further Commission action.", src: "rehearing0921" },
       ],
     },
     // --- wave 3: October 2026, FERC's first ruling on large-load tariff text and the refilings ----------
