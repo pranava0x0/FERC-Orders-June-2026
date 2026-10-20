@@ -4,6 +4,29 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
+- **2026-10-20 · discourse/ui · `D.voices` is not rendered anywhere.** The named-commentator cards were
+  replaced by quote themes on 2026-06-29 (commit 0d1a9da, "Render discourse as quoted themes"), but the
+  `voices` array kept growing: it now holds 45 records that only `tools/news-sweep-plan.mjs` (as search
+  terms) and the quote sweep read. Adding a voice card has no visible effect, so the 2026-10-20 sweep
+  placed every new voice's argument in a theme, a media line or the timeline as well. Root cause:
+  **data/ui drift**. Status: **Open**. Decide whether to render a roster again or to say in data.js that
+  `voices` is a search-and-audit roster, not a display surface.
+- **2026-10-20 · sourcing/process · search-agent quotes are leads until a second model re-reads the page.**
+  A Haiku search agent in an earlier session fabricated a quote outright. Both Haiku batches in this sweep
+  came through model-extracted fetches (the fetch tool summarizes pages, so a "quote" can be the
+  summarizer's paraphrase), and one finding attributed an aggregator's sentence (mgrid) to Rao Konidena.
+  The Sonnet validators re-read every page and are the gate; the integrator re-checked X posts through
+  oEmbed and every other displayed quote against cached page text. Root cause: **source (agent
+  extraction)**. Status: **Open** as a standing rule: no agent-extracted quote ships without that re-read.
+- **2026-10-20 · verification · the Oct 9 Duke Energy Carolinas order is known only from Utility Dive.**
+  Rosner's and Chang's statements on it are quoted as Utility Dive printed them (labeled on the site), and
+  the docket number is not in the article. Pull the order from eLibrary and check both lines against it.
+  Root cause: **source**. Status: **Open**.
+- **2026-10-20 · tooling/env · `extract-abeyance-docs.py --check` could not run on this laptop.** It
+  shells out to `pdftotext`, which is not installed here. No FERC document was added this sweep, so
+  nothing depended on it. Root cause: **environment**. Status: **Open** (install poppler or note the
+  dependency in REFRESH.md).
+
 - **2026-06-30 · ui/data · consensus heatmap shows a "net oppose" legend swatch with zero matching cells.**
   Of 60 visible stakeholder×reform cells, 41 are strong-support, 13 support, 6 contested, **0 net-oppose** —
   but the legend renders a net-oppose key, advertising opposition that isn't there. Two contributing causes:
@@ -13,6 +36,14 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   for stances that occur, or state the absence; revisit banding. See DESIGN.md § 7 (net-vs-plurality).
 
 ## Fixed
+
+- **2026-10-20 · test/env · two `cli-silent-success` tests failed on macOS only.** The test copies each
+  tool into `os.tmpdir()`, which on macOS is `/var/...`, a symlink to `/private/var/...`. Node resolves
+  the entry script's `import.meta.url` to the real path while `process.argv[1]` keeps the symlinked one,
+  so the tools' "am I the main module" check failed, the CLI block never ran, and the tool exited 0. The
+  tests passed in the Linux container, which is why it went unnoticed. Root cause: **test**. Fix: build
+  the temp tree under `realpathSync(tmpdir())`. The same check would misfire if a tool were ever run
+  through a symlinked path; latent, not fixed. Status: **Fixed**.
 
 - **2026-08-23 · tooling/test · `extract-abeyance-docs.py --check` passed while comparing zero
   documents.** The source PDFs and DOCX are not committed (they live in a transient download directory),
