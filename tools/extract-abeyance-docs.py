@@ -16,7 +16,8 @@ Usage:
     python3 tools/extract-abeyance-docs.py --check        # verify committed text matches the source
     python3 tools/extract-abeyance-docs.py --in <dir>     # look somewhere other than sources/originals/
 
-DOCX goes through `textutil` (macOS, no page concept in a notational order). PDF goes through fitz,
+DOCX goes through `textutil` (macOS, no page concept in a notational order); off macOS, `--check` compares
+DOCX sources word for word with a portable zipfile reader instead. PDF goes through fitz,
 which preserves the embedded text layer and gives real page numbers.
 """
 from __future__ import annotations
@@ -139,6 +140,30 @@ def find_source(in_dir: Path, accession: str) -> Path | None:
     return hits[0] if hits else None
 
 
+def docx_words(path: Path) -> list[str]:
+    """Portable DOCX reader (zipfile + the document XML, no macOS textutil), reduced to a word sequence.
+    textutil's exact line layout cannot be reproduced off macOS, so on Linux `--check` compares DOCX
+    sources word for word with this instead of byte for byte, and says so in its report."""
+    import zipfile
+    import xml.etree.ElementTree as ET
+    w = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+    with zipfile.ZipFile(path) as z:
+        root = ET.fromstring(z.read("word/document.xml"))
+    parts = []
+    for el in root.iter():
+        if el.tag == w + "t" and el.text:
+            parts.append(el.text)
+        elif el.tag in (w + "tab", w + "br", w + "p"):
+            parts.append(" ")
+    return words_of("".join(parts))
+
+
+def words_of(text: str) -> list[str]:
+    import unicodedata
+    text = unicodedata.normalize("NFKC", text).replace("\u2019", "'").replace("\u2018", "'")
+    return re.findall(r"[^\W_]+", text.lower())
+
+
 def extract_docx(path: Path) -> str:
     """macOS textutil; a notational order has no page structure to preserve."""
     out = subprocess.run(["textutil", "-convert", "txt", "-stdout", str(path)],
@@ -237,7 +262,10 @@ def main() -> int:
     in_dir = Path(args.in_dir).expanduser()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    import shutil
+    has_textutil = shutil.which("textutil") is not None
     wrote, same, missing, drifted = [], [], [], []
+    wordlevel = []  # DOCX compared word for word because textutil (macOS) is not available
     compared = []   # only documents with a source file present, i.e. actually verified
     metas = []
     for rec in DOCS:
@@ -250,6 +278,22 @@ def main() -> int:
                 metas.append(dict(rec, source_file=None, pages=None,
                                   chars=len(dest.read_text(encoding="utf-8")),
                                   text=str(dest.relative_to(ROOT))))
+            continue
+        if src.suffix.lower() == ".docx" and not has_textutil:
+            # Off macOS there is no textutil to reproduce the committed layout. --check compares the
+            # word sequence instead and reports it as such; extraction refuses to rewrite the file.
+            if not dest.exists():
+                missing.append(rec["accession"])
+                continue
+            committed = dest.read_text(encoding="utf-8").split("\n\n\n", 1)[-1]
+            compared.append(rec["accession"])
+            if words_of(committed) == docx_words(src):
+                wordlevel.append(rec["accession"])
+                same.append(rec["accession"])
+            else:
+                drifted.append(rec["accession"])
+            if not args.check:
+                log.warning("%s: DOCX extraction needs macOS textutil; kept the committed text", rec["accession"])
             continue
         text, meta = build(rec, src)
         metas.append(meta)
@@ -302,6 +346,9 @@ def main() -> int:
         return 2
     if args.check:
         log.info("--check compared %d of %d document(s) against their sources.", len(compared), len(DOCS))
+        if wordlevel:
+            log.info("%d DOCX source(s) compared word for word, not byte for byte: textutil (macOS) is not "
+                     "available on this platform.", len(wordlevel))
     return 1 if (drifted or missing) else 0
 
 
