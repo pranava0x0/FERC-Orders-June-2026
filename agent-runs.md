@@ -546,3 +546,17 @@ one media line). The validators were the gate that mattered: the Haiku batches c
 fetches, and one finding (Konidena) arrived as an aggregator's paraphrase attributed to him. Integration
 found one thing the validators could not: `D.voices` has not rendered since June 29, so the new voice
 records only show through themes, media lines and the timeline (issues.md).
+
+## Session 2026-10-20b — eLibrary sweep integration + voices roster (one subagent, inline, zero spawns)
+
+| Run | Agent | Tokens | Result |
+|---|---|---|---|
+| Integration + roster | engineer subagent, inline, ~70 tool calls, no further spawns | not self-observable | 4 FERC documents extracted (`--check` 25/25), 5 SOURCES records, 4 timeline events added and 3 rewritten, 4 track statuses + filings.asOf + newsCapture moved to Oct 20; "Who's quoted" roster (45 voices) + 4 tests; 4 commits |
+
+Efficiency: the sweep notes (from the orchestrator's authenticated-browser pass) were complete enough that no
+eLibrary access was needed here; every quote was taken from the extracted text and proven by
+`verify-quotes.mjs`. One correction surfaced by reading the motion rather than the deck: PJM's own filing and
+the Sept 29 order call the second hearing issue Transmission Owner exit, while the Oct 22 deck labels it LSE
+exit, so the site's status line and Oct 22 event now follow the filing. Browser check run in the in-app pane
+(no Playwright on this laptop): six tabs non-empty, no undefined/NaN, zero overflow at 375 and 1024, clean
+console.
