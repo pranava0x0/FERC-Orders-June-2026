@@ -905,6 +905,32 @@ test("post-June themes carry a track and cite sources published after the orders
   }
 });
 
+test("no Discourse quote is dated earlier than the sweep that captured it", () => {
+  // Each wave lane renders one "captured" stamp. A quote found by a later sweep and dropped into an
+  // earlier lane would be dated to that lane's stamp, so a reader sees October evidence labeled June.
+  // Such a theme carries its own `captured`, which the theme card renders; this checks the pairing.
+  const lane = { 1: D.meta.discourseCapture, 2: D.meta.wave2Capture, 3: D.meta.newsCapture };
+  let checked = 0, ownStamp = 0;
+  for (const t of D.voiceThemes || []) {
+    const laneStamp = lane[t.wave || 1];
+    if (t.captured !== undefined) {
+      ownStamp++;
+      assert.match(t.captured, /^\d{4}-\d{2}-\d{2}$/, `theme "${t.title}" captured is an ISO date`);
+      assert.ok(t.captured > laneStamp, `theme "${t.title}" carries its own captured only when it is later than its lane (${laneStamp})`);
+    }
+    const stamp = t.captured || laneStamp;
+    for (const q of t.quotes || []) {
+      checked++;
+      const day = String(D.SOURCES[q.src].captured).slice(0, 10);
+      assert.ok(day <= stamp, `theme "${t.title}" shows "${q.src}" (captured ${day}) under a stamp of ${stamp}; set the theme's captured`);
+    }
+  }
+  assert.ok(checked >= 40, `theme quotes checked against their stamp (${checked} >= 40)`);
+  assert.ok(ownStamp >= 2, `themes with their own capture stamp (${ownStamp} >= 2)`);
+  const app = readFileSync(join(here, "..", "docs", "js", "app.js"), "utf8");
+  assert.match(app, /t\.captured/, "the theme card renders a theme's own capture stamp");
+});
+
 test("every displayed news quote is captured in the news evidence file", () => {
   // The companion to the verify-quotes sweep: this checks the JOIN (does the evidence exist and is it
   // attributed to the source the theme cites), the sweep checks the TEXT.
