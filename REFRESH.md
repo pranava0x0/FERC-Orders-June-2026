@@ -13,10 +13,11 @@ Driven by real dates, not a calendar interval:
 | Date | What lands |
 |---|---|
 | ~~2026-09-30 to 2026-10-21~~ | ~~PJM's backstop auction window~~. FERC suspended the procurement to Feb 28, 2027 on Sep 29 (196 FERC ¶ 61,245). PJM now proposes a Mar 1 to Mar 22, 2027 window. |
+| 2026-10-21 | Answers due (5 pm ET) on PJM's Oct 12 motion to hold the ER26-3380 backstop paper hearing in abeyance (FERC notice of Oct 16, 20261016-3047). NOVEC answered in support Oct 14. After this FERC can rule on the motion; check ER26-3380 and EL26-108. |
 | 2026-10-22 | PJM special Members Committee: §9.2(b) consultation on the backstop §205 refiling (agenda and deck posted Oct 15). |
 | 2026-10-28 | PJM Members Committee (advisory vote on PJM's §205 show-cause proposal, named in the Aug 14 abeyance order; the TOs' consultation notice is on the agenda; agenda posts Oct 21). CAISO Board of Governors on the Large Loads draft final proposal (CAISO notice of Sep 24). |
-| **2026-10-29** | **PJM's stated date for the new backstop §205 filing** and the end of FERC's 30-day window for holding the paper hearing in abeyance. PJM told FERC on Oct 12 it will file this day (per its Oct 22 deck). Check ER26-3380 for the filing and FERC's ruling on the Oct 12 abeyance motion. |
-| 2026-11-09 | PJM's compliance filing on the Large Load definition and registry (30 days from the Oct 9 order in ER26-3515; Nov 8 is a Sunday). |
+| **2026-10-29** | **PJM's stated date for the new backstop §205 filing** and the end of FERC's 30-day window for holding the paper hearing in abeyance. PJM's Oct 12 abeyance motion (20261013-5141, read) commits to filing "by October 29, 2026". Check ER26-3380 for the filing and FERC's ruling on the motion. |
+| 2026-11-09 | PJM's compliance filing on the Large Load definition and registry (30 days from the Oct 9 order in ER26-3515; Nov 8 is a Sunday), and the last day for rehearing requests on that order (none filed as of Oct 20). |
 | 2026-11-13 | Backstop paper-hearing initial briefs (45 days from Sep 29) unless held in abeyance; responses 20 days later. |
 | open | PJM governance: the Board has not said what it will file after the Members' Sept 30 vote. Redlines were posted Oct 13 and walked through Oct 16. Watch AD26-7 and PJM's Members Committee postings. |
 | **2026-11-16** | **The reset deadline.** Show-cause responses in five of the six §206 dockets, AND PJM's and the PJM TOs' full co-location compliance filing in EL25-49. PJM, CAISO and others have said they will instead make FPA §205 filings by this date, which suspends the obligation to respond. |
@@ -63,9 +64,16 @@ That is how AD26-7-000 and the July 23 conference date were confirmed.
 - Trade press behind a paywall: if the only source for a claim is unfetchable, it ships as a labeled
   headline pointer or not at all. Never as a paraphrased fact.
 
-**Open verification queue** (updated 2026-10-08; resolved items removed rather than left to rot):
+**Open verification queue** (updated 2026-10-20; resolved items removed rather than left to rot):
 
-00. **New 2026-10-19.** This sweep ran from a cloud container with no authenticated browser, so **no eLibrary docket sheet was read**; everything shipped came from documents hosted elsewhere (pjm.com, iso-ne.com, caiso.com, federalregister.gov, trade press). The next sweep with a browser should: (a) read EL26-67 to -72 (-000 and -001), EL25-49-000/-002, ER26-1479-002, AD26-7-000, ER26-3380-000, EL26-108-000 and **ER26-3515-000** from Oct 8 forward; (b) pull PJM's Oct 12 motion for abeyance in ER26-3380 (known only from PJM's Oct 22 deck) and FERC's ruling on it, if any; (c) find the docket number of MISO's Oct 2 LARS filing (accession 20261002-5074) and MISO's ZGIA docket ER26-3552, and check whether FERC issued a deficiency letter on the ZGIA (RTO Insider reported one around Oct 13; paywalled, not read); (d) read CAISO's draft final proposal PDF (posted Sep 24; the notice was read, the proposal was not); (e) confirm the four Sep 21 non-PJM dismissal texts against their eLibrary copies (harvested from branch da4e14a, see the manifest `provenance` field); (f) ER26-3515: PJM's compliance filing due Nov 9, and any rehearing requests by Nov 9. The eLibrary WebAPI is NOT a route around the browser: see gotchas.
+00. **New 2026-10-19; mostly resolved by the 2026-10-20 eLibrary sweep** (authenticated Chrome, `tools/elibrary-sweep.js`, cutoff Oct 8, every row of every sheet read; `SOURCES.elibrary1020`). The Oct 19 sweep ran from a cloud container with no authenticated browser. Status of each follow-up:
+    (a) DONE Oct 20 for EL26-67-000 to EL26-72-000, all six -001 sub-dockets (EL26-68/-69/-70/-71/-72-001 read later the same day: 0, 3, 4, 3 and 4 rows, none since Oct 8), EL25-49-000/-002, ER26-1479-002, AD26-7-000, ER26-3380-000, EL26-108-000 and ER26-3515-000. The six §206 sheets are quiet (service-list updates, one out-of-time intervention in EL26-67).
+    (b) RESOLVED. PJM's motion for abeyance (served Oct 12, docketed Oct 13, accession 20261013-5141) is read and extracted; NOVEC answered in support Oct 14 (20261014-5184, description only, not read); FERC's Oct 16 notice (20261016-3047) set answers due 5 pm ET Oct 21. No ruling yet.
+    (c) LARS docket FOUND: MISO's Oct 2 filing (20261002-5074) is **ER27-25-000**, effective Dec 2, 2026 (docinfo page). STILL UNCHECKED: whether FERC issued a deficiency letter on MISO's ZGIA in ER26-3552 (RTO Insider reported one around Oct 13; paywalled, not read).
+    (d) Open: read CAISO's draft final proposal PDF (posted Sep 24; the notice was read, the proposal was not).
+    (e) RESOLVED. The four Sep 21 non-PJM dismissal orders were re-extracted on Oct 20 from their eLibrary DOCX originals (committed in `sources/originals/`) and matched the browser text word for word; see the manifest `provenance` field.
+    (f) ER26-3515: no rehearing requests as of Oct 20 (deadline Nov 9). PJM's compliance filing is still due Nov 9.
+    The eLibrary WebAPI is NOT a route around the browser: see gotchas.
 0. **Carried from 2026-10-08.** (a) No general eLibrary keyword search for §205 large-load filings by *other* applicants has been completed; "none observed" means the six docket sheets only. (b) Constellation's Sep 8 limited protest of PJM's Aug 17 co-location compliance filing (20260908-5326) is unread. (c) RESOLVED 2026-10-19: all five Sep 21 dismissal orders are now in the corpus (there were five, not four; ISO-NE's 20260921-3056 was the one the Oct 8 sweep missed). (d) Press on the governance vote and the postponed backstop window is snippet-only and not shipped. (e) Rep. Pallone's Sep 28 and Voltus's Sep 29 comments in ER26-3380 are unread.
 
 1. CAISO's Aug 12 Large Loads straw proposal: CAISO's own notice (first-party, in `SOURCES.caisostraw`)
@@ -74,7 +82,7 @@ That is how AD26-7-000 and the July 23 conference date were confirmed.
    a 50 MW single-site large-load definition, and a decision to drop FERC's 69 kV and customer-type
    tests. None of that is confirmed against the proposal PDF, which was not located on caiso.com this
    sweep. Treat as a lead. Get the PDF from the Large Loads initiative page before quoting any of it.
-2. EL26-67: the reported Jul 17 ratepayer-advocate filing. Exact procedural type + filers. (Carried.)
+2. RESOLVED 2026-10-20: EL26-67's Jul 17 ratepayer-advocate filing. Filers from Maryland OPC's own release (`mdopc0717`): OPC joined by the Ohio Consumers' Counsel, the Delaware Division of the Public Advocate and the Illinois Attorney General, with the Pennsylvania OCA filing separately (`udadvocates0721`). Procedural type from FERC's Sept 21 order, which dismissed them as rehearing requests. The filings themselves are still unread.
 3. EL25-49: the Feb 2026 compliance filing's requested Jul 31 effective date. (Carried.)
 4. RESOLVED 2026-10-08: the rehearing requests live in the **-001 sub-docket** (EL26-67-001: 20260717-5246, -5258; 20260720-5198, -5218, -5172), disposed of Sep 21 (20260921-3020). See the gotcha below.
 5. Northern Virginia Electric Cooperative's Jul 29 motion for clarification of the June 18 E-2 order is
@@ -121,7 +129,7 @@ node tools/check-staleness.mjs
 node tools/build-llms.mjs
 node --test tests/*.test.mjs
 node tools/verify-quotes.mjs
-python3 tools/extract-abeyance-docs.py --check   # committed order text still matches its source
+python3 tools/extract-abeyance-docs.py --check   # committed order text still matches its source (originals in sources/originals/; needs PyMuPDF)
 node tools/survey-summaries.mjs --brief          # comment corpus: the should-be-zero set
 ```
 
@@ -173,6 +181,34 @@ one thing the docket sheet cannot give you.
 
 Append to `issues.md` anything found broken, and to `agent-runs.md` a row for any sweep agent, with its
 token usage. Update the progress log at the top of `news-tracks-plan.md`.
+
+## Scheduled sweeps
+
+Six one-time local scheduled tasks run this loop after each dated event (they live in
+`~/.claude/scheduled-tasks/ferc-sweep-<date>/` on the maintainer's Mac and need the app open and the logged-in
+Chrome for eLibrary and X): **Oct 22** (Oct 21 answers, PJM special MC), **Oct 30** (Oct 28 MC and CAISO board,
+Oct 29 backstop refiling), **Nov 10** (ER26-3515 compliance and rehearing deadline), **Nov 17** (the Nov 16
+responses and co-location compliance), **Nov 21** (SPP), **Dec 17** (answers). Each run opens a PR and never
+merges. The runbook every task follows:
+
+
+SETUP: `git fetch && git checkout main && git pull --ff-only`, then `git checkout -b sweep-<YYYY-MM-DD>`. Run `node tools/check-staleness.mjs` first. If another sweep branch or PR is open and unmerged, stop and report instead of duplicating it.
+
+COVER ALL SIX SOURCE TYPES, since `meta.newsCapture` in docs/js/data.js:
+1. FERC documents (primary): read every docket sheet in the user's logged-in Chrome (Claude in Chrome tools) with tools/elibrary-sweep.js, CUTOFF = the last newsCapture: EL26-67-000..EL26-72-000 and their -001 sub-dockets, EL25-49-000/-002, ER26-1479-002, AD26-7-000, ER26-3380-000, EL26-108-000, ER26-3515-000, ER27-25-000 (MISO LARS), ER26-3552 (MISO ZGIA), plus any new docket a filing names. Also run the general eLibrary search by applicant (PJM, MISO, SPP, CAISO, ISO New England, NYISO and their TOs) for new §205 large-load filings. Download every order, notice and substantive filing you quote (click the `a.filedownloadlink` for the named file only), copy the originals into sources/originals/ (COMMITTED: the user wants docs and data in the GitHub repo), add a DOCS record in tools/extract-abeyance-docs.py, extract, and confirm `python3 tools/extract-abeyance-docs.py --check` compares every document.
+2. Government press releases and statements: ferc.gov news releases and commissioner statements (Cloudflare-gated: use Chrome), the FERC open-meeting agenda/summary, energy.gov (DOE), PJM Inside Lines and newsroom PDFs, MISO/SPP/CAISO/ISO-NE/NYISO newsrooms, state PUCs and governors in the affected states, NARUC/OPSI/OMS, and members of Congress.
+3. Web search for news and analysis: build the matrix with `node tools/news-sweep-plan.mjs --json` and give it to ONE Haiku search agent (model haiku) for trade press, law-firm alerts, think tanks and op-eds.
+4. Social media: run X searches yourself in Chrome (queries pairing FERC/PJM/large load/data center/co-location/backstop/the docket numbers with the event of the day; plus timelines of known voices in data.js `voices`). Strip `? & = ; %` from collected text and write results into the page body, then read them with get_page_text (the javascript tool's output is capped and filtered).
+5. Commentary from named people (experts, advocates, market monitors, former commissioners): a second Haiku agent focused on statements by named people not already in `voices`.
+6. Interviews, videos and spoken statements: YouTube, podcasts (Catalyst, Volts, Energy Gang, Shift Key, Power Lines), conference panels, the FERC open meeting video, and hearings. Quote video only from a published transcript; auto-captions go in as SPOKEN and are labelled unverifiable.
+
+VALIDATE: give every agent and X finding to ONE Sonnet agent (model sonnet) that reopens each page, checks the quote verbatim (X through https://publish.twitter.com/oembed?url=...), confirms speaker, role, headline and date, dedupes against data.js SOURCES/voices, and rejects paraphrases. Run `node tools/news-sweep-plan.mjs --check <file>`. Nothing snippet-only ships as fact.
+
+INTEGRATE: give the validated set to ONE Opus agent (model opus) to place it (timeline with `track`, procedural.filings rows as observations only, tracks status lines, Discourse themes/media/voices roster) and to convert passed deadlines per the deadline-conversion rule. Bump `meta.newsCapture` only when the dockets were actually swept, `meta.commentaryCapture` when commentary was added. Every displayed quote needs its evidence entry.
+
+GATES (all must pass): node tools/check-staleness.mjs; node tools/build-llms.mjs; node tools/build-seo.mjs; node tools/build-docket-pages.mjs; node tools/stamp-assets.mjs; node --test tests/*.test.mjs; node tools/verify-quotes.mjs; python3 tools/extract-abeyance-docs.py --check; then serve docs/ on 127.0.0.1:8131 and run the REFRESH.md console check (or tools/uat-playwright.mjs).
+
+FINISH: update REFRESH.md (queue, When-to-run table, Learned), issues.md and agent-runs.md (agents and token use). Commit in small focused commits with plain messages, and never add Co-Authored-By or "Generated with" lines. Push the branch and open a PR. Do NOT merge; the user reviews. End with a short summary of what changed, what is still open, and the PR link.
 
 ## Search Console
 

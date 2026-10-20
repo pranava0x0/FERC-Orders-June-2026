@@ -4,6 +4,48 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
+- **2026-10-20 · discourse/ui · `D.voices` is not rendered anywhere.** The named-commentator cards were
+  replaced by quote themes on 2026-06-29 (commit 0d1a9da, "Render discourse as quoted themes"), but the
+  `voices` array kept growing: it now holds 45 records that only `tools/news-sweep-plan.mjs` (as search
+  terms) and the quote sweep read. Adding a voice card has no visible effect, so the 2026-10-20 sweep
+  placed every new voice's argument in a theme, a media line or the timeline as well. Root cause:
+  **data/ui drift**. Status: **Fixed 2026-10-20.** The Discourse tab renders a collapsible "Who's quoted"
+  roster (`renderVoiceRoster` in app.js, same `accSection` disclosure as the other Discourse sections): all
+  45 voices grouped by lean (right, center, left, nonpartisan, then a "lean not stated" catch-all so an
+  unknown value never drops a voice), sorted by name, each with affiliation, lean pill, take and source
+  chips; missing fields render italic placeholders. `tests/voices-roster.test.mjs` runs the real renderer
+  sliced out of app.js over the real data and asserts one row per voice, every chip, and no `undefined`.
+- **2026-10-20 · sourcing/process · search-agent quotes are leads until a second model re-reads the page.**
+  A Haiku search agent in an earlier session fabricated a quote outright. Both Haiku batches in this sweep
+  came through model-extracted fetches (the fetch tool summarizes pages, so a "quote" can be the
+  summarizer's paraphrase), and one finding attributed an aggregator's sentence (mgrid) to Rao Konidena.
+  The Sonnet validators re-read every page and are the gate; the integrator re-checked X posts through
+  oEmbed and every other displayed quote against cached page text. Root cause: **source (agent
+  extraction)**. Status: **Open** as a standing rule: no agent-extracted quote ships without that re-read.
+- **2026-10-20 · data/curation · `voices[].lean` is an unreviewed political-orientation label on real people.**
+  The new roster grouped all 45 voices by left/center/right/nonpartisan and showed a lean pill (Codex, PR 24, P1).
+  AGENTS.md reserves subjective framing to a curator, and the six leans added Oct 20 were model judgment calls.
+  The roster now lists voices alphabetically and renders no lean; a test fails if a lean label appears. Root
+  cause: **code bug** (rendered an unreviewed field). Status: **Fixed** in the UI; **Open** for a curator to review
+  every `lean` value before anything groups or tags by it again.
+- **2026-10-20 · verification · the Oct 9 Duke Energy Carolinas order is known only from Utility Dive.**
+  Rosner's and Chang's statements on it are quoted as Utility Dive printed them (labeled on the site), and
+  the docket number is not in the article. Pull the order from eLibrary and check both lines against it.
+  Root cause: **source**. Status: **Fixed 2026-10-20.** The order (ER26-2691-000/-001, 197 FERC ¶ 61,020,
+  accession 20261009-3054) was downloaded in the Oct 20 eLibrary sweep, committed to `sources/originals/`
+  and extracted to `sources/text/abeyance/order-er26-2691-duke-nitsa.txt` (`SOURCES.dukeorder1009`). Both
+  lines are verbatim in it; Utility Dive had lowercased "Commission" in Rosner's, now corrected. The
+  timeline event and the wave-3 theme cite the order, the "as Utility Dive printed it" labels are gone,
+  and the event now records See's concurrence (which also cites the show cause orders) and Chang's dissent.
+- **2026-10-20 · tooling/env · `extract-abeyance-docs.py --check` could not run on this laptop.** It
+  shells out to `pdftotext`, which is not installed here. No FERC document was added this sweep, so
+  nothing depended on it. Root cause: **environment**. Status: **Fixed 2026-10-20.** Installed
+  `pymupdf==1.26.4` (advisory check in security.md), downloaded all 21 originals from eLibrary / pjm.com into
+  the now-committed `sources/originals/`, and made it the tool's default `--in`. `--check` compares 21 of 21.
+  The four Sep 21 rehearing orders first extracted in a browser session (da4e14a) matched their DOCX word for
+  word; the Oct 9 ER26-3515 order, first extracted with pdftotext, was re-extracted with PyMuPDF (same words,
+  only layout differs: one footnote number moved and "SEAL" spaced out).
+
 - **2026-06-30 · ui/data · consensus heatmap shows a "net oppose" legend swatch with zero matching cells.**
   Of 60 visible stakeholder×reform cells, 41 are strong-support, 13 support, 6 contested, **0 net-oppose** —
   but the legend renders a net-oppose key, advertising opposition that isn't there. Two contributing causes:
@@ -13,6 +55,14 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   for stances that occur, or state the absence; revisit banding. See DESIGN.md § 7 (net-vs-plurality).
 
 ## Fixed
+
+- **2026-10-20 · test/env · two `cli-silent-success` tests failed on macOS only.** The test copies each
+  tool into `os.tmpdir()`, which on macOS is `/var/...`, a symlink to `/private/var/...`. Node resolves
+  the entry script's `import.meta.url` to the real path while `process.argv[1]` keeps the symlinked one,
+  so the tools' "am I the main module" check failed, the CLI block never ran, and the tool exited 0. The
+  tests passed in the Linux container, which is why it went unnoticed. Root cause: **test**. Fix: build
+  the temp tree under `realpathSync(tmpdir())`. The same check would misfire if a tool were ever run
+  through a symlinked path; latent, not fixed. Status: **Fixed**.
 
 - **2026-08-23 · tooling/test · `extract-abeyance-docs.py --check` passed while comparing zero
   documents.** The source PDFs and DOCX are not committed (they live in a transient download directory),

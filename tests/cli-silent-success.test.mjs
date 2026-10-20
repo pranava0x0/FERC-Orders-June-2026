@@ -6,7 +6,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
-import { mkdtempSync, mkdirSync, copyFileSync, writeFileSync, existsSync, rmSync } from "node:fs";
+import { mkdtempSync, mkdirSync, copyFileSync, writeFileSync, existsSync, rmSync, realpathSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -15,7 +15,10 @@ const TOOLS = join(dirname(fileURLToPath(import.meta.url)), "..", "tools");
 
 // A temp tree with the named tools copied in and `files` ({relPath: contents}) written.
 function tree(tools, files = {}) {
-  const root = mkdtempSync(join(tmpdir(), "ferc-cli-"));
+  // realpath: on macOS tmpdir() is /var/..., a symlink to /private/var/.... Node resolves the entry
+  // script's import.meta.url to the real path while argv[1] keeps the symlinked one, so a tool's
+  // "am I the main module" check fails, its CLI block never runs, and it exits 0 having done nothing.
+  const root = mkdtempSync(join(realpathSync(tmpdir()), "ferc-cli-"));
   mkdirSync(join(root, "tools"));
   for (const t of tools) copyFileSync(join(TOOLS, t), join(root, "tools", t));
   for (const [rel, body] of Object.entries(files)) {

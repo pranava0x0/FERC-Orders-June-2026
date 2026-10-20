@@ -7,7 +7,8 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import vm from "node:vm";
 import { stampAssets } from "../tools/stamp-assets.mjs";
-import { buildIndexHtml, buildSitemap } from "../tools/build-seo.mjs";
+import { buildLlmsTxt } from "../tools/build-llms.mjs";
+import { buildIndexHtml, buildSitemap, freshest } from "../tools/build-seo.mjs";
 import { pagesFor, allDockets, slugFor, buildDocketPage } from "../tools/build-docket-pages.mjs";
 import { verifyCommishTailoring, verifyLacerteSubstitution, verifyNoiseAllowlist } from "../tools/verify-commish-tailoring.mjs";
 
@@ -905,6 +906,32 @@ test("post-June themes carry a track and cite sources published after the orders
   }
 });
 
+test("no Discourse quote is dated earlier than the sweep that captured it", () => {
+  // Each wave lane renders one "captured" stamp. A quote found by a later sweep and dropped into an
+  // earlier lane would be dated to that lane's stamp, so a reader sees October evidence labeled June.
+  // Such a theme carries its own `captured`, which the theme card renders; this checks the pairing.
+  const lane = { 1: D.meta.discourseCapture, 2: D.meta.wave2Capture, 3: D.meta.commentaryCapture || D.meta.newsCapture };
+  let checked = 0, ownStamp = 0;
+  for (const t of D.voiceThemes || []) {
+    const laneStamp = lane[t.wave || 1];
+    if (t.captured !== undefined) {
+      ownStamp++;
+      assert.match(t.captured, /^\d{4}-\d{2}-\d{2}$/, `theme "${t.title}" captured is an ISO date`);
+      assert.ok(t.captured > laneStamp, `theme "${t.title}" carries its own captured only when it is later than its lane (${laneStamp})`);
+    }
+    const stamp = t.captured || laneStamp;
+    for (const q of t.quotes || []) {
+      checked++;
+      const day = String(D.SOURCES[q.src].captured).slice(0, 10);
+      assert.ok(day <= stamp, `theme "${t.title}" shows "${q.src}" (captured ${day}) under a stamp of ${stamp}; set the theme's captured`);
+    }
+  }
+  assert.ok(checked >= 40, `theme quotes checked against their stamp (${checked} >= 40)`);
+  assert.ok(ownStamp >= 2, `themes with their own capture stamp (${ownStamp} >= 2)`);
+  const app = readFileSync(join(here, "..", "docs", "js", "app.js"), "utf8");
+  assert.match(app, /t\.captured/, "the theme card renders a theme's own capture stamp");
+});
+
 test("every displayed news quote is captured in the news evidence file", () => {
   // The companion to the verify-quotes sweep: this checks the JOIN (does the evidence exist and is it
   // attributed to the source the theme cites), the sweep checks the TEXT.
@@ -996,9 +1023,22 @@ test("freshness signals track the data rather than drifting", () => {
   // value proposition is currency.
   const html = readFileSync(join(here, "..", "docs", "index.html"), "utf8");
   const xml = readFileSync(join(here, "..", "docs", "sitemap.xml"), "utf8");
-  const fresh = D.meta.newsCapture;
+  const fresh = freshest(D);
   assert.match(html, new RegExp(`"dateModified":\\s*"${fresh}"`), "JSON-LD dateModified matches the newest sweep");
   assert.ok(xml.includes(`<lastmod>${fresh}</lastmod>`), "sitemap lastmod matches the newest sweep");
+});
+
+test("a commentary-only sweep dates the Discourse tab without moving the filings cutoff", () => {
+  const m = D.meta;
+  assert.match(m.commentaryCapture || "", /^\d{4}-\d{2}-\d{2}$/, "meta.commentaryCapture is a YYYY-MM-DD stamp");
+  assert.ok(m.commentaryCapture >= m.discourseCapture, "the newest commentary sweep is not older than the first");
+  // A theme can only have been captured by a commentary sweep that already happened.
+  for (const t of D.voiceThemes) {
+    if (t.captured) assert.ok(t.captured <= m.commentaryCapture, `"${t.title}" captured ${t.captured} is after commentaryCapture ${m.commentaryCapture}`);
+  }
+  assert.equal(freshest(D), [m.newsCapture, m.commentaryCapture].sort().pop(), "page freshness is the newer of the two sweeps");
+  const app = readFileSync(join(here, "..", "docs", "js", "app.js"), "utf8");
+  assert.ok(app.includes("Discourse updated \" + esc(D.meta.commentaryCapture"), "the provenance line reads the commentary stamp");
 });
 
 test("the social card exists and is declared at the size the card type promises", () => {
@@ -1113,7 +1153,7 @@ test("the comment corpus is declared as a Dataset for rich results", () => {
   const ds = blocks.find((b) => b["@type"] === "Dataset");
   assert.ok(ds, "a Dataset entity is declared");
   assert.ok(ds.description.includes(String(D.comments.total)), "Dataset counts come from the data, not retyped");
-  assert.equal(ds.dateModified, D.meta.newsCapture, "Dataset tracks the newest sweep");
+  assert.equal(ds.dateModified, freshest(D), "Dataset tracks the newest sweep");
 });
 
 test("the timeline rail reads in chronological order", () => {
@@ -1144,4 +1184,35 @@ test("every timeline iso is a date, optionally with a same-day ordering suffix",
   for (const e of D.timeline) {
     assert.match(e.iso, /^\d{4}-\d{2}-\d{2}[a-z]?$/, `timeline iso "${e.iso}" (${e.title})`);
   }
+});
+
+test("the lead summary's 'Where it stands' date is the filings cutoff", () => {
+  // newsCapture moved to Oct 20 while meta.summary still said "Where it stands on October 19" (Codex, PR 24).
+  const para = (D.meta.summary || []).find((p) => /^Where it stands on /.test(p));
+  assert.ok(para, "meta.summary has a 'Where it stands on <date>' paragraph");
+  const m = para.match(/^Where it stands on ([A-Z][a-z]+ \d{1,2}, \d{4})/);
+  assert.ok(m, "the paragraph opens with a full date");
+  const iso = new Date(m[1] + " 12:00 UTC").toISOString().slice(0, 10);
+  assert.equal(iso, D.meta.newsCapture, `summary says ${m[1]}, newsCapture is ${D.meta.newsCapture}`);
+});
+
+test("the October commentary lane is stamped by the commentary sweep, not the filings sweep", () => {
+  // Codex, PR 24: a commentary-only refresh would advance commentaryCapture while wave 3 kept newsCapture.
+  const app = readFileSync(join(here, "..", "docs", "js", "app.js"), "utf8");
+  assert.ok(app.includes('waveLane(3, "October: the retail line, and the refilings", D.meta.commentaryCapture ||'), "app.js wave-3 lane reads commentaryCapture first");
+  const llms = buildLlmsTxt(D);
+  for (const t of D.voiceThemes.filter((x) => x.wave === 3 && !x.captured)) {
+    assert.ok(llms.includes(`captured ${D.meta.commentaryCapture}] ${t.title}:`), `llms.txt stamps "${t.title}" with commentaryCapture`);
+  }
+});
+
+test("every record that names MISO's LARS docket cites the eLibrary record it came from", () => {
+  // ER27-25-000 was published citing only Utility Dive, whose note says it gives no docket number (Codex, PR 24).
+  const src = D.SOURCES.misolars1002;
+  assert.ok(src && /docinfo\?accession_number=20261002-5074/.test(src.url), "misolars1002 points at the accession's eLibrary record");
+  const rows = (D.procedural.filings.rows || []).filter((r) => /ER27-25/.test(r.gist || ""));
+  const events = D.timeline.filter((e) => /ER27-25/.test(e.body || ""));
+  const tracks = Object.values(D.tracks).filter((t) => /ER27-25/.test(t.status?.line || ""));
+  assert.ok(rows.length + events.length + tracks.length > 0, "something names ER27-25");
+  for (const r of [...rows, ...events, ...tracks]) assert.ok((r.src || []).includes("misolars1002"), "a record naming ER27-25 cites misolars1002");
 });

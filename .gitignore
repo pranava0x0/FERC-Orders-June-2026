@@ -23,6 +23,9 @@ sources/archived/
 # in the repo but NOT published by GitHub Pages. See sources/comments/README.md.
 !sources/comments/files/**/*.pdf
 !sources/comments/files/**/*.docx
+# FERC originals behind sources/text/abeyance/: committed so --check runs from a clean clone
+!sources/originals/*.pdf
+!sources/originals/*.docx
 
 # OS / editor cruft
 .DS_Store

@@ -873,6 +873,22 @@
   }
 
   /* ---- TAB 3 ---- */
+  // "Who's quoted": the named voices behind the Discourse tab, alphabetical. data.js `voices[].lean` is NOT
+  // shown: it is an unreviewed political-orientation label on real people, and subjective framing is
+  // curator-only (AGENTS.md). Group or tag by it only after a curator reviews every value.
+  function renderVoiceRoster(voices) {
+    var na = function (txt) { return '<span class="na">' + esc(txt) + "</span>"; };
+    var list = voices.slice().sort(function (a, b) { return String(a.name || "").localeCompare(String(b.name || "")); });
+    var row = function (v) {
+      var chips = srcChips(v.src);
+      return '<li class="voice-row"><div class="voice-head"><span class="voice-name">' +
+        (v.name ? esc(v.name) : na("Name not recorded")) + "</span></div>" +
+        '<p class="voice-affil">' + (v.affil ? esc(v.affil) : na("Affiliation not stated")) + "</p>" +
+        '<p class="voice-take">' + (v.take ? esc(v.take) : na("No summary recorded")) + "</p>" +
+        (chips || '<div class="srcs">' + na("No source recorded") + "</div>") + "</li>";
+    };
+    return '<div class="voice-roster"><ul class="voice-list">' + list.map(row).join("") + "</ul></div>";
+  }
   function renderNews() {
     var recItems = D.reception.filter(function (r) { return !/^FERC\b/.test(r.group); });
     var rec = '<div class="reception">' + recItems.map(function (r) {
@@ -905,7 +921,10 @@
       var tr = t.track && D.tracks && D.tracks[t.track]
         ? '<span class="trackpill is-static" title="' + esc(D.tracks[t.track].label) + '">' + esc(D.tracks[t.track].short) + "</span>"
         : "";
-      return '<section class="quote-theme"><h3>' + esc(t.title) + tr + '</h3><p>' + esc(t.body) +
+      // A theme found by a later sweep than its lane's stamp carries its own `captured`, so the lane
+      // header never dates October evidence to June.
+      var stamp = t.captured ? '<p class="wave-stamp theme-stamp mono">captured ' + esc(t.captured) + "</p>" : "";
+      return '<section class="quote-theme"><h3>' + esc(t.title) + tr + "</h3>" + stamp + "<p>" + esc(t.body) +
         '</p><ul class="quote-list">' + qs + "</ul></section>";
     };
     var themesInWave = function (n) {
@@ -919,7 +938,7 @@
         '<div class="quote-themes">' + items.map(themeCard).join("") + "</div></div>";
     };
     var quoteThemes =
-      waveLane(3, "October: the retail line, and the refilings", D.meta.newsCapture || D.meta.discourseCapture) +
+      waveLane(3, "October: the retail line, and the refilings", D.meta.commentaryCapture || D.meta.newsCapture || D.meta.discourseCapture) +
       waveLane(2, "The filings and the governance fight", D.meta.wave2Capture || D.meta.newsCapture || D.meta.discourseCapture) +
       waveLane(1, "Reaction to the June 18 orders", D.meta.discourseCapture);
 
@@ -938,6 +957,9 @@
       accSection("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.", rec + commentsBlock, false, recItems.length) +
       accSection("Media & discourse: consensus and friction", "The dominant narratives in energy trade press and policy circles.", disc, false, consensusN + frictionN) +
+      accSection("Who’s quoted",
+      "The named commentators this tab draws on, in alphabetical order. Each take is the source's own position, attributed and linked.",
+      renderVoiceRoster(D.voices || []), false, (D.voices || []).length) +
       accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false, outletIds.length);
   }
 
@@ -1597,7 +1619,7 @@
       "<h4>Derived dates</h4>" +
       "<p>The 30-day and 60-day periods are stated by FERC. The specific calendar due-dates are derived from the June 18, 2026 issuance (business-day-adjusted figures attributed to the National Law Review analysis).</p>" +
       "<h4>All sources</h4>" + srcList +
-      "<p style='margin-top:10px'><em>Last updated: order record as of " + esc(D.meta.capture) + "; Discourse updated " + esc(D.meta.discourseCapture) +
+      "<p style='margin-top:10px'><em>Last updated: order record as of " + esc(D.meta.capture) + "; Discourse updated " + esc(D.meta.commentaryCapture || D.meta.discourseCapture) +
       (D.meta.newsCapture ? "; news and filings swept " + esc(D.meta.newsCapture) : "") +
       ". Independent analysis; not affiliated with FERC or DOE.</em></p>";
   }
