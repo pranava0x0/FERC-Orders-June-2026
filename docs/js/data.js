@@ -636,14 +636,14 @@ window.FERC_DATA = (function () {
       captured: "2026-10-20",
       note: "Text confirmed through X’s oEmbed endpoint. The post does not name the order; the day and subject match the Sept 29 backstop order.",
     },
-    doe1008: {
+    doe1009: {
       label: "“Energy Department Supports FERC’s Call for PJM to Protect Ratepayers and Build More Reliable Power”",
       org: "U.S. Department of Energy",
       tier: "doe",
       url: "https://www.energy.gov/articles/energy-department-supports-fercs-call-pjm-protect-ratepayers-and-build-more-reliable-power",
-      published: "2026-10-08",
+      published: "2026-10-09",
       captured: "2026-10-20",
-      note: "DOE’s release on its Oct 7 statement of position in ER26-3380 (doe1007). Quotes Secretary Chris Wright and Deputy Secretary James P. Danly. Read in full.",
+      note: "DOE’s release on its Oct 7 statement of position in ER26-3380 (doe1007). Quotes Secretary Chris Wright and Deputy Secretary James P. Danly. Read in full. The page displays October 9, 2026; its datePublished metadata says Oct 8, and the displayed date is used.",
     },
     dennisx1012: {
       label: "Jeff Dennis thread on FERC’s Oct 9 order on PJM’s large-load package (X, Oct 12, 2026)",
@@ -1854,7 +1854,7 @@ window.FERC_DATA = (function () {
     {
       name: "Chris Wright", affil: "U.S. Secretary of Energy", lean: "right",
       take: "The directing agency, declaring victory: DOE applauds the orders as speed-to-power that still protects consumers. Secretary Wright frames them as the Administration working to ‘remove barriers, accelerate development’ and to deliver on ‘President Trump's Ratepayer Protection Pledge.’ In October DOE backed FERC's backstop order for PJM, with Wright saying large electricity users should pay for the new generation built to serve them.",
-      src: ["doeApplaud", "doe1008"],
+      src: ["doeApplaud", "doe1009"],
     },
   ];
 
@@ -2042,14 +2042,14 @@ window.FERC_DATA = (function () {
       wave: 3,
       track: "context",
       title: "The backstop bill: who pays for capacity bought for new load",
-      body: "PJM's backstop buys capacity for a shortfall that large loads are driving, so the argument is over who carries the cost. Before FERC ruled, NRDC's Claire Lang-Ree read the proposal as PJM refusing to keep buying power for data centers, and Maryland People's Counsel David Lapp warned that households would pay if the forecast load never arrived. Two concurrences on the Sept 29 order answered: Chairman Swett faulted a filing made on the last possible day, and Commissioner See wrote that existing customers should not carry costs new demand causes. Ari Peskoe called FERC's cost-allocation objection surprising; DOE backed the order on Oct 8.",
+      body: "PJM's backstop buys capacity for a shortfall that large loads are driving, so the argument is over who carries the cost. Before FERC ruled, NRDC's Claire Lang-Ree read the proposal as PJM refusing to keep buying power for data centers, and Maryland People's Counsel David Lapp warned that households would pay if the forecast load never arrived. Two concurrences on the Sept 29 order answered: Chairman Swett faulted a filing made on the last possible day, and Commissioner See wrote that existing customers should not carry costs new demand causes. Ari Peskoe called FERC's cost-allocation objection surprising; DOE backed the order on Oct 9.",
       quotes: [
         { q: "PJM is saying very clearly to the data centers, 'We will no longer buy power on your behalf,'", src: "wypr0826" },
         { q: "If the data centers don't show up in those zones, then it'll be the existing customers, ordinary households included, that will pay those costs.", src: "wypr0826" },
         { q: "This Commission will not be forced into accepting a deeply flawed, eleventh-hour procurement mechanism with billion-dollar implications for consumers.", src: "backstop0929" },
         { q: "Existing customers should not be left paying costs attributable to new demand.", src: "backstop0929" },
         { q: "Surprising! FERC has issues with the cost allocation framework that determined who pays for this data center capacity auction.", src: "peskoe0930" },
-        { q: "the Energy Department supports having large electricity users pay for reliable new power generation", src: "doe1008" },
+        { q: "the Energy Department supports having large electricity users pay for reliable new power generation", src: "doe1009" },
       ],
     },
     {

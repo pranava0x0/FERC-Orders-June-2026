@@ -119,11 +119,19 @@ export function buildLlmsTxt(D) {
     out.push("");
   }
 
-  out.push("## Commentary themes (secondary, in two dated waves)", "");
+  // Same lanes, titles and capture dates as the Discourse tab (app.js waveLane); a theme added to an
+  // older lane later carries its own `captured` date, which wins over the lane's.
+  const WAVES = {
+    1: ["reaction to the June 18 orders", m.discourseCapture],
+    2: ["the filings and the governance fight", m.wave2Capture || m.newsCapture || m.discourseCapture],
+    3: ["October: the retail line, and the refilings", m.newsCapture || m.discourseCapture],
+  };
+  out.push("## Commentary themes (secondary, in three dated waves)", "");
   for (const theme of D.voiceThemes || []) {
-    const wave = (theme.wave || 1) === 2
-      ? `wave 2, the filings and the governance fight, captured ${m.newsCapture}`
-      : `wave 1, reaction to the June 18 orders, captured ${m.discourseCapture}`;
+    const n = theme.wave || 1;
+    if (!WAVES[n]) throw new Error(`build-llms: voiceTheme "${theme.title}" has unknown wave ${n}`);
+    const [label, laneDate] = WAVES[n];
+    const wave = `wave ${n}, ${label}, captured ${theme.captured || laneDate}`;
     out.push(`- [${wave}] ${theme.title}: ${theme.body}`);
     for (const q of theme.quotes || []) {
       const s = D.SOURCES[q.src];
