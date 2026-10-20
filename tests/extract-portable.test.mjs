@@ -25,3 +25,19 @@ test("--check compares every document without macOS textutil, DOCX word for word
   assert.ok(m && m[1] === m[2] && +m[1] > 0, out);
   assert.match(out, /DOCX source\(s\) compared word for word/);
 });
+
+test("the portable DOCX comparison keeps case and punctuation, so quote-affecting drift is caught", { skip: !ready && "python3 with PyMuPDF not available" }, () => {
+  // Codex, PR 24: lowercasing and stripping punctuation let "Commission" -> "commission" or "20.5" -> "20,5" pass.
+  const r = py([
+    "import importlib.util",
+    "spec = importlib.util.spec_from_file_location('x', 'tools/extract-abeyance-docs.py')",
+    "m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)",
+    "w = m.words_of",
+    "assert w('the Commission found 20.5 MW.') != w('the commission found 20.5 MW.'), 'case'",
+    "assert w('the Commission found 20.5 MW.') != w('the Commission found 20,5 MW.'), 'decimal'",
+    "assert w('it ends.') != w('it ends?'), 'terminal punctuation'",
+    "assert w('a  b\\n c') == w('a b c'), 'layout whitespace folds'",
+    "print('ok')",
+  ].join("\n"));
+  assert.equal(r.status, 0, r.stdout + r.stderr);
+});

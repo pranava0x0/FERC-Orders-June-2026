@@ -159,9 +159,12 @@ def docx_words(path: Path) -> list[str]:
 
 
 def words_of(text: str) -> list[str]:
+    """Whitespace-separated tokens with case and punctuation kept, so "Commission" vs "commission" or
+    "20.5" vs "20,5" still reads as drift; only layout whitespace and Unicode compatibility forms fold."""
     import unicodedata
-    text = unicodedata.normalize("NFKC", text).replace("\u2019", "'").replace("\u2018", "'")
-    return re.findall(r"[^\W_]+", text.lower())
+    # A standalone "•" is a list bullet textutil renders from Word's numbering properties; it is
+    # formatting, not text in the document XML, so it is dropped from both sides.
+    return [t for t in unicodedata.normalize("NFKC", text).split() if t != "\u2022"]
 
 
 def extract_docx(path: Path) -> str:
