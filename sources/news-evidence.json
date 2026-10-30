@@ -1,6 +1,6 @@
 {
   "captured_at": "2026-08-23",
-  "note": "Verified source snippets backing the directly-quoted phrases added by the 2026-07-28 news refresh (news-tracks-plan.md): the AD26-7-000 governance track and the sc6 filing observations. Mirrors sources/voices-evidence.json, and is swept by tools/verify-quotes.mjs the same way, so no displayed quote on a track surface is unbacked. A test in tests/source-accuracy.test.mjs asserts every quoted span in a timeline event body resolves here or in the committed order corpus. Extended by the 2026-08-23 sweep with the WIRES remarks, the Maryland congressional letter (read directly from the signed PDF, not a summary) and two analyst readiness assessments. Extended 2026-10-19 with PJM committee postings, ISO-NE's proposal summary and Utility Dive's October reporting; each item names the document and page or slide it was read from. Extended 2026-10-20 with outside commentary (X posts confirmed through oEmbed, trade press, law-firm alerts, NARUC, the Maryland People's Counsel and DOE); FERC commissioner lines that come only through a press report are labeled as such in their speaker field.",
+  "note": "Verified source snippets backing the directly-quoted phrases added by the 2026-07-28 news refresh (news-tracks-plan.md): the AD26-7-000 governance track and the sc6 filing observations. Mirrors sources/voices-evidence.json, and is swept by tools/verify-quotes.mjs the same way, so no displayed quote on a track surface is unbacked. A test in tests/source-accuracy.test.mjs asserts every quoted span in a timeline event body resolves here or in the committed order corpus. Extended by the 2026-08-23 sweep with the WIRES remarks, the Maryland congressional letter (read directly from the signed PDF, not a summary) and two analyst readiness assessments. Extended 2026-10-19 with PJM committee postings, ISO-NE's proposal summary and Utility Dive's October reporting; each item names the document and page or slide it was read from. Extended 2026-10-20 with outside commentary (X posts confirmed through oEmbed, trade press, law-firm alerts, NARUC, the Maryland People's Counsel and DOE); FERC commissioner lines that come only through a press report are labeled as such in their speaker field. Extended 2026-10-30 with CAISO's statement on its Board's action, PJM's Inside Lines post and Nov 5 special Members Committee agenda, the ER27-330 transmittal letter and two rehearing requests read from the committed corpus, and three ER27-25 filings as Utility Dive quoted them.",
   "capture_method": "federalregister.gov items were read from their full_text .txt endpoints (the FR HTML pages bot-block automated fetches; the JSON API and full_text endpoints are open). Trade-press items were fetched and their quotations transcribed as printed. ferc.gov and eLibrary stayed Cloudflare-gated throughout, so nothing here is an eLibrary confirmation.",
   "items": {
     "swett-legitimacy": {
@@ -297,6 +297,78 @@
       "evidence": "We therefore dismiss the requests for rehearing, which concern a Commission action that is not final and that will be succeeded by further Commission action.",
       "note": "Verbatim from the committed order text, sources/text/abeyance/order-el26-67-001-pjm-rehearing.txt (p. 11). Backs the Oct 20 sweep's statement that FERC dismissed the Jul 17 advocates' requests as premature.",
       "captured_at": "2026-10-08"
+    },
+    "appa1028-mainzer": {
+      "src": "appa1028",
+      "speaker": "Elliot Mainzer, President and CEO, California ISO",
+      "occasion": "Public Power Daily (APPA), October 28, 2026, quoting CAISO's statement on its Board of Governors' action",
+      "evidence": "“Our response to the FERC order to show cause will improve planning and operational awareness of new large loads on the system, prevent cost-shifting, encourage flexibility and expedite large load energization,” ... “We look forward to our ongoing collaboration with our participating transmission owners, state energy agencies and industry stakeholders to make sure we stay ahead of the curve on interconnecting large loads without compromising reliability or placing an undue burden on consumers,”",
+      "note": "Both sentences re-fetched and checked verbatim by the validation pass on 2026-10-30.",
+      "captured_at": "2026-10-30"
+    },
+    "pjmil1029-backstop": {
+      "src": "pjmil1029",
+      "speaker": "PJM Inside Lines (unsigned)",
+      "occasion": "PJM Inside Lines, October 29, 2026",
+      "evidence": "PJM filed an amended proposal to FERC with the goal of commencing a Reliability Backstop Procurement on March 1, 2027.",
+      "note": "The page 403s to curl; verbatim confirmed through a browser fetch and against the identical opening of PJM's own X post (@pjminterconnect, checked through X's oEmbed endpoint).",
+      "captured_at": "2026-10-30"
+    },
+    "udive1026-oms": {
+      "src": "udive1026",
+      "speaker": "Organization of MISO States (comments in ER27-25, as quoted by Utility Dive)",
+      "occasion": "Utility Dive, October 26, 2026; the filing itself was not read",
+      "evidence": "“LARS cannot become a general alternative to the existing [generation interconnection queue] or provide preferential access to transmission capacity without adequate safeguards for existing queue participants and transmission customers,”",
+      "note": "Bracketed insertion is Utility Dive's. Verified exact against the article's raw HTML.",
+      "captured_at": "2026-10-30"
+    },
+    "udive1026-google": {
+      "src": "udive1026",
+      "speaker": "Google (limited protest in ER27-25, accession 20261023-5177, as quoted by Utility Dive)",
+      "occasion": "Utility Dive, October 26, 2026; the filing itself was not read",
+      "evidence": "“The lack of cost shifting protections is especially concerning because, despite the benefits — especially speed to power — that LARS would promote, it is structured in a way that threatens Google’s ability to meet its foundational commitment to ensuring that other retail customers do not bear the costs of serving its data centers, including through the Ratepayer Protection Pledge,”",
+      "note": "Verified exact against the article's raw HTML.",
+      "captured_at": "2026-10-30"
+    },
+    "udive1026-dcc": {
+      "src": "udive1026",
+      "speaker": "Data Center Coalition (comments in ER27-25, accession 20261023-5183, as quoted by Utility Dive)",
+      "occasion": "Utility Dive, October 26, 2026; the filing itself was not read",
+      "evidence": "“In MISO’s primarily vertically integrated footprint, establishing the LSE as the sole LARS application facilitator narrows the pool of supply that can gain access to expedited Large Load Generation Interconnection Agreements ... to only those projects that are effectively approved by the LSE,”",
+      "note": "The ellipsis is Utility Dive's. Verified exact against the article's raw HTML.",
+      "captured_at": "2026-10-30"
+    },
+    "pjmmc1105-agenda": {
+      "src": "pjmmc1105",
+      "speaker": "PJM, Special Members Committee agenda for November 5, 2026 (as of October 29)",
+      "occasion": "Agenda item 1, page 1",
+      "evidence": "PJM staff will consult with stakeholders on plans to submit a suite of section 205 filings to address Tariff revisions to address opportunities identified in the Large Load Show Cause Order and related reforms.",
+      "note": "Read from the committed original, sources/originals/pjm-20261105-special-mc-agenda.pdf.",
+      "captured_at": "2026-10-30"
+    },
+    "pjmrbp1029-addressed": {
+      "src": "pjmrbp1029",
+      "speaker": "PJM, transmittal letter in ER27-330-000",
+      "occasion": "October 29, 2026, p. 4",
+      "evidence": "Through this section 205 filing, PJM has addressed the issues set for paper hearing in the September 29 Order.",
+      "note": "Verbatim from the committed text, sources/text/abeyance/filing-er27-330-pjm-rbp-amendments.txt.",
+      "captured_at": "2026-10-30"
+    },
+    "jcareh1029-marketpower": {
+      "src": "jcareh1029",
+      "speaker": "Joint Consumer Advocates, request for rehearing in ER26-3380-001",
+      "occasion": "October 29, 2026, p. 1",
+      "evidence": "The proposal, however, is fundamentally flawed because it permits the unmitigated exercise of seller-side market power and its design seems guaranteed to ensure that PJM procures more resources than are necessary, at costs higher than are warranted.",
+      "note": "Verbatim from the committed text, sources/text/abeyance/rehearing-er26-3380-joint-consumer-advocates.txt (footnote marker dropped).",
+      "captured_at": "2026-10-30"
+    },
+    "toreh1029-moot": {
+      "src": "toreh1029",
+      "speaker": "Indicated PJM Transmission Owners, request for rehearing in ER26-3380-001",
+      "occasion": "October 29, 2026, p. 2",
+      "evidence": "The Indicated PJM Transmission Owners are hopeful that PJM will submit a revised section 205 filing that supersedes its earlier section 205 filing and may moot the need for rehearing of the Order. The Indicated PJM Transmission Owners submit this rehearing request out of an abundance of caution to preserve their rights in this fast-moving and dynamic proceeding.",
+      "note": "Verbatim from the committed text, sources/text/abeyance/rehearing-er26-3380-indicated-pjm-tos.txt (footnote marker after PJM dropped).",
+      "captured_at": "2026-10-30"
     }
   }
 }
