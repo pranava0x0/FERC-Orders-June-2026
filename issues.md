@@ -4,6 +4,16 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
+- **2026-10-30 · data/source · the site carried an Oct 28 PJM advisory vote that never happened.** The vote came
+  from PJM's stakeholder calendar as recited in FERC's Aug 14 abeyance order; the Oct 28 MC agenda had no
+  large-load item, and PJM's show-cause consultation moved to a Nov 5 special MC. Root cause: **source**
+  (a filing's forward calendar treated as a schedule). Status: **Fixed 2026-10-30**, the Oct 28 event now
+  says no vote was held and cites both agendas (`pjmmc1028`, `pjmmc1105`).
+- **2026-10-30 · process · the Oct 29 backstop refiling was not on the docket the site watched.** It is
+  ER27-330-000; ER26-3380-000 showed only FERC's notice. Found by the applicant search. Root cause:
+  **source** (new docket per filing). Status: **Fixed** in the sweep runbook (REFRESH.md gotcha). ER27-330
+  and ER26-3380-001 join the docket list for the Nov 10 sweep.
+
 - **2026-10-20 · discourse/ui · `D.voices` is not rendered anywhere.** The named-commentator cards were
   replaced by quote themes on 2026-06-29 (commit 0d1a9da, "Render discourse as quoted themes"), but the
   `voices` array kept growing: it now holds 45 records that only `tools/news-sweep-plan.mjs` (as search
