@@ -132,6 +132,19 @@ DOCS = [
     dict(slug="answer-el26-71-morongo", accession="20260812-5158", docket="EL26-71-000", rto="CAISO",
          cite=None, issued="2026-08-12", kind="answer to order to show cause",
          title="Answer of Morongo Transmission LLC: no tariff amendment required, a non-load-serving participating transmission owner"),
+    # --- the backstop after the Sep 29 order (sweep 2026-10-30) -------------------------------------
+    dict(slug="notice-er26-3380-abeyance", accession="20261023-3114", docket="ER26-3380-000", rto="PJM",
+         cite=None, issued="2026-10-23", kind="notice addressing motion for abeyance", captured_at="2026-10-30",
+         title="Notice Addressing Motion to Hold Proceeding in Abeyance: EL26-108 initial briefs moved to January 11, 2027 and reply briefs to January 26, 2027"),
+    dict(slug="filing-er27-330-pjm-rbp-amendments", accession="20261029-5227", docket="ER27-330-000", rto="PJM",
+         cite=None, issued="2026-10-29", kind="section 205 filing (transmittal letter)", captured_at="2026-10-30",
+         title="PJM Interconnection, L.L.C., Proposed Amendments to the Reliability Backstop Procurement (transmittal letter; comments requested by November 30, 2026)"),
+    dict(slug="rehearing-er26-3380-joint-consumer-advocates", accession="20261029-5262", docket="ER26-3380-001", rto="PJM",
+         cite=None, issued="2026-10-29", kind="request for rehearing", captured_at="2026-10-30",
+         title="Request for Rehearing of the Joint Consumer Advocates (DE, DC, IL CUB, IL AG, MD, NJ) of the September 29, 2026 backstop order"),
+    dict(slug="rehearing-er26-3380-indicated-pjm-tos", accession="20261029-5265", docket="ER26-3380-001", rto="PJM",
+         cite=None, issued="2026-10-29", kind="request for rehearing", captured_at="2026-10-30",
+         title="Request for Rehearing of the Indicated PJM Transmission Owners of the September 29, 2026 backstop order (TO exit amendment)"),
 ]
 
 
