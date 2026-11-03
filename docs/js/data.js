@@ -1355,7 +1355,7 @@ window.FERC_DATA = (function () {
     },
     {
       date: "Oct 12, 2026", iso: "2026-10-12b", kind: "milestone", track: "context",
-      title: "DOE's second emergency order lets PJM call on data-center backup generators",
+      title: "Another DOE emergency order lets PJM call on data-center backup generators",
       body: "PJM's Oct 28 legal report to its Members Committee records two Federal Power Act §202(c) emergency orders from the Department of Energy, each finding an imminent reliability emergency and “authorizing PJM to direct backup generation resources at large loads to operate as a last resort” before or during an Energy Emergency Alert 3: Order No. 202-26-45, issued Sep 17 and expiring the next day, and Order No. 202-26-50, issued Oct 12 for Oct 13 to Oct 16 on PJM's Oct 11 request. They are short and operational, and sit outside the dockets this site tracks, but they put on-site data-center generation into PJM's emergency toolkit.",
       src: ["pjmreg1028"],
     },
@@ -1398,12 +1398,12 @@ window.FERC_DATA = (function () {
     {
       date: "Oct 21, 2026", iso: "2026-10-21b", kind: "milestone", track: "context",
       title: "The President says large data centers are “mandated” to make their own electricity",
-      body: "In a Truth Social post quoted by Bisnow: “New and large, in some cases gigantic, Data Centers are mandated by me to make their own electricity, and give or sell any excess back to the local community, or grid.” The post also urges developers to pay communities a “dividend.” It names no order, docket or RTO; it is the political frame around the same question the backstop and show cause filings answer in tariff text. Sen. Chris Van Hollen of Maryland posted the same morning: “When push comes to shove, Trump would rather you lose power than the data center companies lose a cent of profit. Clearly, this admin & FERC are not protecting consumers.”",
+      body: "In a Truth Social post quoted by Bisnow: “New and large, in some cases gigantic, Data Centers are mandated by me to make their own electricity, and give or sell any excess back to the local community, or grid…” The post also urges developers to pay communities a “dividend.” It names no order, docket or RTO; it is the political frame around the same question the backstop and show cause filings answer in tariff text. Sen. Chris Van Hollen of Maryland, in a separate post the same day that does not cite it: “When push comes to shove, Trump would rather you lose power than the data center companies lose a cent of profit. Clearly, this admin & FERC are not protecting consumers.”",
       src: ["bisnow1021", "vanhollenx1021"],
     },
     {
       date: "Oct 21, 2026", iso: "2026-10-21c", kind: "milestone", track: "context",
-      title: "FERC's reliability conference opens on large loads, and PJM ties them to its emergency orders",
+      title: "FERC's reliability conference opens on large loads, and PJM ties them to its emergency requests",
       body: "The annual Commissioner-led Reliability Technical Conference (AD26-8) gave its first panel to the operational challenges of integrating large loads, with NERC, Dominion, AEP for EEI, Salt River Project, Emerald AI and PJM. FERC's notice listed all six show cause dockets among the pending matters whose merits would be curtailed. PJM's written statement: “Large Loads are seeking interconnection in PJM faster than the generation and transmission needed to serve them can be placed in service.” It argues large loads “must provide sufficient operational flexibility or be subject to load reductions until the generation and transmission needed to serve them have been studied and placed in service,” and points to the Oct 12 to 14 emergency, when PJM sought DOE authority to run backup generation at data centers: “PJM historically has not needed to seek such relief under comparable temperatures and seasonal conditions.” The transcript was not reviewed, so no commissioner remark from the day is reported here.",
       src: ["ad268notice1015", "pjmpilong1021", "pjmreg1028"],
     },
@@ -1458,7 +1458,7 @@ window.FERC_DATA = (function () {
     {
       date: "Nov 2, 2026", iso: "2026-11-02", kind: "milestone", track: "sc6",
       title: "Window check: two weeks out, the show cause dockets are still empty",
-      body: "Every row filed from Oct 29 forward on the sheets in the source note, read in an authenticated browser. The six §206 dockets and their -001 sub-dockets carry nothing new, and neither do EL25-49, AD26-7, the backstop and paper-hearing dockets, ER26-3515, or MISO's LARS and zero-injection dockets. The only new paper is on PJM's backstop refiling: six interventions on Oct 30, among them the Independent Market Monitor and the New Jersey Board of Public Utilities, and FERC's Nov 2 combined notice setting the comment date. Web, X and first-party searches back to Oct 19 turned up four things earlier sweeps had not placed: the CEBA and Data Center Coalition letter of Oct 2, DOE's §202(c) orders on large-load backup generation, PJM's Oct 21 testimony at FERC's reliability conference, and the President's Oct 21 post. No commissioner statement on any of these dockets was found.",
+      body: "Every row filed from Oct 29 forward on the sheets in the source note, read in an authenticated browser. The six §206 dockets and their -001 sub-dockets carry nothing new, and neither do EL25-49, AD26-7, the backstop and paper-hearing dockets, ER26-3515, or MISO's LARS and zero-injection dockets. The only new paper is on PJM's backstop refiling: six interventions on Oct 30, among them the Independent Market Monitor and the New Jersey Board of Public Utilities, and FERC's Nov 2 combined notice setting the comment date. Web, X and first-party searches back to Oct 19 turned up four things earlier sweeps had not placed: the CEBA and Data Center Coalition letter of Oct 2, DOE's §202(c) orders on large-load backup generation, PJM's Oct 21 written statement for FERC's reliability conference, and the President's Oct 21 post. No commissioner statement on any of these dockets was found.",
       src: ["elibrary1102", "cnf1102", "cebadcc1002", "pjmreg1028", "pjmpilong1021", "bisnow1021"],
     },
     {
@@ -2479,7 +2479,7 @@ window.FERC_DATA = (function () {
       wave: 3,
       track: "sc6",
       title: "The customers ask PJM not to answer with a queue overhaul",
-      body: "The show cause order exists to get large loads connected faster, and the large loads are now arguing PJM's answer would slow them down. PJM told FERC in October that it will file a unified study of large loads and generation by Nov 16. The energy buyers and data-center operators who would use it wrote to PJM's Board on Oct 2 that a combined cluster with an annual cutoff could add most of two years after transmission owner approval, and that MISO and SPP run load and generation planning in parallel instead.",
+      body: "The show cause order exists to get large loads connected faster, and the large loads are now arguing PJM's answer would slow them down. PJM told FERC in October that it will file a unified study of large loads and generation by Nov 16. The energy buyers and data-center operators who would use it wrote to PJM's Board on Oct 2 that a combined cluster with an annual cutoff could mean nearly two years between transmission owner approval and the end of PJM's study, and that MISO and SPP generally run load and generation planning in parallel instead.",
       quotes: [
         { q: "While the Order calls for improvements to large load integration, it does not require PJM to overhaul its entire generation interconnection queue.", src: "cebadcc1002" },
         { q: "PJM has not demonstrated that this proposal will deliver the speed, certainty, or transparency envisioned by the Show Cause Order.", src: "cebadcc1002" },
@@ -2489,7 +2489,7 @@ window.FERC_DATA = (function () {
       wave: 3,
       track: "context",
       title: "Bring your own power, as a presidential line",
-      body: "The idea that large loads should supply their own electricity has run through this record since June, from consumer advocates to PJM's backstop. On Oct 21 the President stated it as a mandate, with no docket or instrument attached, and a Maryland senator answered by putting FERC alongside the White House as the problem.",
+      body: "The idea that large loads should supply their own electricity has run through this record since June, from consumer advocates to PJM's backstop. On Oct 21 the President stated it as a mandate, with no docket or instrument attached, and the same day a Maryland senator, in a post of his own, put FERC alongside the White House as the problem.",
       quotes: [
         { q: "New and large, in some cases gigantic, Data Centers are mandated by me to make their own electricity, and give or sell any excess back to the local community, or grid", src: "bisnow1021" },
         { q: "When push comes to shove, Trump would rather you lose power than the data center companies lose a cent of profit.", src: "vanhollenx1021" },

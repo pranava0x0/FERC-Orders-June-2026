@@ -930,10 +930,11 @@
     // Newest first inside a lane too: a theme is as new as its newest quoted source. Without this the
     // freshest quote sat wherever the theme happened to be appended, mid-lane and screens down.
     var themeDate = function (t) {
+      // Quote dates only: a theme's own `captured` records when it was revisited, not when anyone spoke.
       return (t.quotes || []).reduce(function (best, q) {
         var s = D.SOURCES[q.src] || {}, d = s.published || s.captured || "";
         return d > best ? d : best;
-      }, t.captured || "");
+      }, "");
     };
     var themesInWave = function (n) {
       return (D.voiceThemes || []).filter(function (t) { return (t.wave || 1) === n; })
@@ -1733,11 +1734,18 @@
     commentsLoading = true;
     var s = document.createElement("script");
     s.src = link.getAttribute("href");
-    s.onload = s.onerror = function () {
+    s.onload = function () {
       commentsLoading = false;
       if (rendered.comments || panel.hidden) return;
-      panel.innerHTML = renderers.comments(); rendered.comments = true;
-      if (window.FERC_COMMENTS) wireComments();
+      panel.innerHTML = renderers.comments(); rendered.comments = true; wireComments();
+    };
+    // A dropped fetch must not leave the tab dead for the rest of the session: offer a retry and leave
+    // `rendered.comments` false so the next activation tries again too.
+    s.onerror = function () {
+      commentsLoading = false;
+      s.remove();
+      panel.innerHTML = '<p class="cm-loading" role="status">The comment record did not load. <button type="button" class="cm-retry">Try again</button></p>';
+      panel.querySelector(".cm-retry").addEventListener("click", function () { loadComments(panel); });
     };
     document.head.appendChild(s);
   }
@@ -1749,6 +1757,9 @@
       tab.setAttribute("aria-selected", sel ? "true" : "false");
       tab.tabIndex = sel ? 0 : -1;
       panel.hidden = !sel;
+      // Leaving Comments before its data arrived: drop the deep link it was opened with, so a later plain
+      // click on the tab does not replay a stale route.
+      if (!sel && t === "comments" && !rendered.comments) pendingCommentsRoute = null;
       if (sel) {
         if (!rendered[t] && t === "comments" && !window.FERC_COMMENTS) loadComments(panel);
         else if (!rendered[t]) { panel.innerHTML = renderers[t](); rendered[t] = true; if (afterRender[t]) afterRender[t](); }
