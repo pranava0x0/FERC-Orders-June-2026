@@ -132,6 +132,29 @@ DOCS = [
     dict(slug="answer-el26-71-morongo", accession="20260812-5158", docket="EL26-71-000", rto="CAISO",
          cite=None, issued="2026-08-12", kind="answer to order to show cause",
          title="Answer of Morongo Transmission LLC: no tariff amendment required, a non-load-serving participating transmission owner"),
+    # --- the backstop after the Sep 29 order (sweep 2026-10-30) -------------------------------------
+    dict(slug="notice-er26-3380-abeyance", accession="20261023-3114", docket="ER26-3380-000", rto="PJM",
+         cite=None, issued="2026-10-23", kind="notice addressing motion for abeyance", captured_at="2026-10-30",
+         title="Notice Addressing Motion to Hold Proceeding in Abeyance: EL26-108 initial briefs moved to January 11, 2027 and reply briefs to January 26, 2027"),
+    dict(slug="filing-er27-330-pjm-rbp-amendments", accession="20261029-5227", docket="ER27-330-000", rto="PJM",
+         cite=None, issued="2026-10-29", kind="section 205 filing (transmittal letter)", captured_at="2026-10-30",
+         title="PJM Interconnection, L.L.C., Proposed Amendments to the Reliability Backstop Procurement (transmittal letter; comments requested by November 30, 2026)"),
+    dict(slug="rehearing-er26-3380-joint-consumer-advocates", accession="20261029-5262", docket="ER26-3380-001", rto="PJM",
+         cite=None, issued="2026-10-29", kind="request for rehearing", captured_at="2026-10-30",
+         title="Request for Rehearing of the Joint Consumer Advocates (DE, DC, IL CUB, IL AG, MD, NJ) of the September 29, 2026 backstop order"),
+    dict(slug="rehearing-er26-3380-indicated-pjm-tos", accession="20261029-5265", docket="ER26-3380-001", rto="PJM",
+         cite=None, issued="2026-10-29", kind="request for rehearing", captured_at="2026-10-30",
+         title="Request for Rehearing of the Indicated PJM Transmission Owners of the September 29, 2026 backstop order (TO exit amendment)"),
+    # --- sweep 2026-11-02 ------------------------------------------------------------------------
+    dict(slug="notice-cnf-20261102", accession="20261102-3050", docket="ER27-330-000", rto="PJM",
+         cite=None, issued="2026-11-02", kind="combined notice of filings", captured_at="2026-11-02",
+         title="Combined Notice of Filings #1, November 2, 2026: ER27-330-000 and -001 comment date 5 pm ET November 30, 2026"),
+    dict(slug="notice-ad26-8-third-supplemental", accession="20261015-3040", docket="AD26-8-000", rto="FERC",
+         cite=None, issued="2026-10-15", kind="notice of technical conference", captured_at="2026-11-02",
+         title="Third Supplemental Notice of Commissioner-Led Technical Conference: 2026 Reliability Technical Conference, October 21, 2026 (agenda; Panel 1 on integrating large loads)"),
+    dict(slug="statement-ad26-8-pjm-pilong", accession="20261021-4003", docket="AD26-8-000", rto="PJM",
+         cite=None, issued="2026-10-21", kind="pre-conference statement", captured_at="2026-11-02",
+         title="Reliability Technical Conference Comments from PJM Interconnection, L.L.C. (Christopher Pilong, Panel 1)"),
 ]
 
 

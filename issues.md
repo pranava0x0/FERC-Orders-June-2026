@@ -4,6 +4,31 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
+- **2026-11-02 · discourse/ui · the newest Discourse quote was seven screens down on a phone.** Wave 3 had grown
+  to nine themes rendered in append order, so the newest quote sat mid-lane (reader cost 7.56 mobile, 4.1
+  desktop, up from 3.1 and 1.8 on Oct 19). Root cause: **code** (lanes were ordered by date, themes inside a lane
+  were not). Status: **Fixed 2026-11-02**, themes sort newest-first by their newest quoted source; cost now 1.2
+  and 1. Guarded by the harness's goal i.
+- **2026-11-02 · perf · `comments-data.js` blocked every first load for one tab.** 114 KB gzip of 278 KB wire on
+  the live site; load event 1.8 s on fast 4G, 6.5 s on slow 4G while LCP was under 1 s and 2 s. Root cause:
+  **code** (a blocking `<script>` for data only the Comments tab reads). Status: **Fixed 2026-11-02**, a stamped
+  `<link rel=prefetch id=cm-data>` executed on first open; regression test and a 220 KB gzip budget in
+  `tests/page-weight.test.mjs`.
+- **2026-11-02 · process · an Oct 2 letter from CEBA and the Data Center Coalition sat unfound through three
+  sweeps.** It is in PJM's public disclosures, not eLibrary, and the search agent that surfaced it on Nov 2 marked
+  it unreadable. Root cause: **source** (PJM disclosures are not in the sweep's source list; agent PDF parsing).
+  Status: **Fixed** in REFRESH.md gotchas (fetch flagged PDFs yourself; read PJM's MC regulatory report).
+
+- **2026-10-30 · data/source · the site carried an Oct 28 PJM advisory vote that never happened.** The vote came
+  from PJM's stakeholder calendar as recited in FERC's Aug 14 abeyance order; the Oct 28 MC agenda had no
+  large-load item, and PJM's show-cause consultation moved to a Nov 5 special MC. Root cause: **source**
+  (a filing's forward calendar treated as a schedule). Status: **Fixed 2026-10-30**, the Oct 28 event now
+  says no vote was held and cites both agendas (`pjmmc1028`, `pjmmc1105`).
+- **2026-10-30 · process · the Oct 29 backstop refiling was not on the docket the site watched.** It is
+  ER27-330-000; ER26-3380-000 showed only FERC's notice. Found by the applicant search. Root cause:
+  **source** (new docket per filing). Status: **Fixed** in the sweep runbook (REFRESH.md gotcha). ER27-330
+  and ER26-3380-001 join the docket list for the Nov 10 sweep.
+
 - **2026-10-20 · discourse/ui · `D.voices` is not rendered anywhere.** The named-commentator cards were
   replaced by quote themes on 2026-06-29 (commit 0d1a9da, "Render discourse as quoted themes"), but the
   `voices` array kept growing: it now holds 45 records that only `tools/news-sweep-plan.mjs` (as search

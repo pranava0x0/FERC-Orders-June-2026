@@ -530,6 +530,9 @@ test("comments-data.js (Comments tab) is consistent with the scraped manifest", 
     assert.ok(t.count <= CM.analyzed, `theme ${t.key} count never exceeds the analyzed corpus`);
   }
   assert.ok(CM.downloaded >= 272, `downloaded-body floor (${CM.downloaded} >= 272)`);
+  // The Discourse tab renders before comments-data.js loads (it is lazy since 2026-11-02) and falls back
+  // to data.js's copy of this count, so the two copies must agree.
+  assert.equal(D.comments.downloaded, CM.downloaded, "data.js comments.downloaded matches comments-data.js");
 
   // per-comment metadata lenses: ANOPR comment-period questions (8), reform principles (5), regions (6)
   assert.equal(CM.anoprQuestions.length, 8, "eight ANOPR comment-period questions");

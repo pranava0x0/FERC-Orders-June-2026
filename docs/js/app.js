@@ -927,8 +927,20 @@
       return '<section class="quote-theme"><h3>' + esc(t.title) + tr + "</h3>" + stamp + "<p>" + esc(t.body) +
         '</p><ul class="quote-list">' + qs + "</ul></section>";
     };
+    // Newest first inside a lane too: a theme is as new as its newest quoted source. Without this the
+    // freshest quote sat wherever the theme happened to be appended, mid-lane and screens down.
+    var themeDate = function (t) {
+      // Quote dates only: a theme's own `captured` records when it was revisited, not when anyone spoke.
+      return (t.quotes || []).reduce(function (best, q) {
+        var s = D.SOURCES[q.src] || {}, d = s.published || s.captured || "";
+        return d > best ? d : best;
+      }, "");
+    };
     var themesInWave = function (n) {
-      return (D.voiceThemes || []).filter(function (t) { return (t.wave || 1) === n; });
+      return (D.voiceThemes || []).filter(function (t) { return (t.wave || 1) === n; })
+        .map(function (t, i) { return { t: t, i: i, d: themeDate(t) }; })
+        .sort(function (x, y) { return x.d < y.d ? 1 : x.d > y.d ? -1 : x.i - y.i; })
+        .map(function (x) { return x.t; });
     };
     var waveLane = function (n, title, stamp) {
       var items = themesInWave(n);
@@ -945,7 +957,7 @@
     // The RM26-4 comment period (stats, respondent types, themes/categories, and the full searchable
     // filing list) lives in its own Comments tab now; Discourse keeps a short pointer.
     var commentsBlock = D.comments ? (head("Public comments: the RM26-4 ANOPR docket",
-      "All " + D.comments.filings + " filings were scraped from FERC eLibrary; " + (window.FERC_COMMENTS ? window.FERC_COMMENTS.downloaded : "270+") +
+      "All " + D.comments.filings + " filings were scraped from FERC eLibrary; " + (window.FERC_COMMENTS ? window.FERC_COMMENTS.downloaded : D.comments.downloaded) +
       " comment bodies were downloaded and text-analyzed. The full searchable filing list, the top themes and categories, and the respondent-type breakdown are in the Comments tab.") +
       '<p class="cm-jump-wrap"><a class="cm-jump" href="#comments">Open the Comments tab →</a></p>') : "";
 
@@ -1709,6 +1721,35 @@
     if (main && window.pageYOffset > main.offsetTop) window.scrollTo(0, main.offsetTop);
   }
 
+  // comments-data.js is ~40% of the page's bytes and only the Comments tab reads it, so index.html
+  // prefetches it at idle (<link id="cm-data">, stamped like any asset) and it is executed here on first
+  // open. The render waits for it; if the tab was left before it arrived, the next activation renders
+  // synchronously instead, so wireComments never writes a Comments hash over another tab's.
+  var commentsLoading = false;
+  function loadComments(panel) {
+    panel.innerHTML = '<p class="cm-loading" role="status">Loading the comment record…</p>';
+    if (commentsLoading) return;
+    var link = document.getElementById("cm-data");
+    if (!link) { panel.innerHTML = renderers.comments(); rendered.comments = true; return; }
+    commentsLoading = true;
+    var s = document.createElement("script");
+    s.src = link.getAttribute("href");
+    s.onload = function () {
+      commentsLoading = false;
+      if (rendered.comments || panel.hidden) return;
+      panel.innerHTML = renderers.comments(); rendered.comments = true; wireComments();
+    };
+    // A dropped fetch must not leave the tab dead for the rest of the session: offer a retry and leave
+    // `rendered.comments` false so the next activation tries again too.
+    s.onerror = function () {
+      commentsLoading = false;
+      s.remove();
+      panel.innerHTML = '<p class="cm-loading" role="status">The comment record did not load. <button type="button" class="cm-retry">Try again</button></p>';
+      panel.querySelector(".cm-retry").addEventListener("click", function () { loadComments(panel); });
+    };
+    document.head.appendChild(s);
+  }
+
   function activate(name, focus) {
     TABS.forEach(function (t) {
       var sel = t === name;
@@ -1716,8 +1757,12 @@
       tab.setAttribute("aria-selected", sel ? "true" : "false");
       tab.tabIndex = sel ? 0 : -1;
       panel.hidden = !sel;
+      // Leaving Comments before its data arrived: drop the deep link it was opened with, so a later plain
+      // click on the tab does not replay a stale route.
+      if (!sel && t === "comments" && !rendered.comments) pendingCommentsRoute = null;
       if (sel) {
-        if (!rendered[t]) { panel.innerHTML = renderers[t](); rendered[t] = true; if (afterRender[t]) afterRender[t](); }
+        if (!rendered[t] && t === "comments" && !window.FERC_COMMENTS) loadComments(panel);
+        else if (!rendered[t]) { panel.innerHTML = renderers[t](); rendered[t] = true; if (afterRender[t]) afterRender[t](); }
         if (focus) tab.focus();
       }
     });

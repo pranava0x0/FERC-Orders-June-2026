@@ -560,3 +560,35 @@ the Sept 29 order call the second hearing issue Transmission Owner exit, while t
 exit, so the site's status line and Oct 22 event now follow the filing. Browser check run in the in-app pane
 (no Playwright on this laptop): six tabs non-empty, no undefined/NaN, zero overflow at 375 and 1024, clean
 console.
+
+
+## Session 2026-10-30 — scheduled sweep (2 Haiku search, 1 Sonnet validator, 1 Opus integrator)
+
+| Lane / role | Who | Tokens | Result |
+|---|---|---|---|
+| eLibrary + first-party PDFs + X | orchestrator (Opus), logged-in Chrome, ~40 browser/tool calls | main loop, not self-observable | 17 docket sheets read in full plus 2 general searches; found ER27-330 (new docket), ER26-3380-001 rehearings, the Oct 23 notice, Third Circuit petitions; 4 FERC documents extracted (`--check` 29/29); PJM Oct 28 and Nov 5 MC agendas by curl |
+| News search | Haiku agent | 142K, 32 tool calls | 6 findings, 3 with quotes; none promoted (reporter paraphrase or snippet-only). Did surface the Oct 23 notice and the TO notice URLs |
+| Named commentary | Haiku agent | 124K, 28 tool calls | 1 snippet-only finding (Mainzer), duplicated by the orchestrator's own read of APPA |
+| Validation | Sonnet agent | 92K, 10 tool calls | 8 of 8 accepted; verified by curl against raw pages (WebFetch truncates quotes at ~125 chars); 1 duplicate flagged |
+| Integration | Opus agent | 262K, 65 tool calls | 10 SOURCES, ~10 timeline events, 4 deadline conversions, 3 themes, 2 voices; 142/142 tests, 332/332 quotes; its 3 commits squashed into one so generated output lands with its source |
+
+Efficiency: the two Haiku lanes cost ~266K tokens for one usable lead; the eleven-day window's news was
+almost all first-party (eLibrary, pjm.com, APPA, Inside Lines), which the orchestrator read directly. For a
+window this short, one search agent (or none, as on Oct 19) would have done. The validator was cheap
+because the finding set was small and pre-checked.
+
+
+## Session 2026-11-02 — refresh, UAT and perf pass (2 Haiku search agents, inline otherwise)
+
+| Lane / role | Who | Tokens | Result |
+|---|---|---|---|
+| eLibrary (23 sheets incl. -001s and AD26-8), X, first-party PDFs | orchestrator (Opus 5.5), logged-in Chrome | main loop, not self-observable | Nothing new on the §206 sheets since Oct 29; FERC's Nov 2 notice (ER27-330 comments Nov 30); AD26-8 notice and PJM's testimony; Van Hollen on X |
+| News search, Oct 19 to Nov 2 | Haiku agent | 175K, 47 tool calls | 7 findings, 2 snippet-only. Its two "unreadable" PJM PDFs were the sweep's best finds once fetched with curl |
+| Named commentary | Haiku agent | 186K, 74 tool calls | 4 findings; Trump's Oct 21 post shipped (via Bisnow), AEP's line not (sec.gov blocks automated fetch) |
+| UAT + perf | orchestrator, `tools/uat-playwright.mjs` + a throttled scratch script | main loop | 0 failures; two fixes (Discourse theme order, lazy comments data); 2 new tests |
+
+Efficiency: as on Oct 30, the search agents cost ~360K tokens for a handful of leads in a window where the
+substance was first-party. Their value this time was pointing at two PDFs, not reading them. No validator or
+integrator agent was spawned: with nine items, inline integration plus `verify-quotes.mjs` was cheaper. Code review
+ran as described in the PR.
+
