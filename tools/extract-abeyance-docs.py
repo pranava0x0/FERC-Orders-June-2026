@@ -145,6 +145,16 @@ DOCS = [
     dict(slug="rehearing-er26-3380-indicated-pjm-tos", accession="20261029-5265", docket="ER26-3380-001", rto="PJM",
          cite=None, issued="2026-10-29", kind="request for rehearing", captured_at="2026-10-30",
          title="Request for Rehearing of the Indicated PJM Transmission Owners of the September 29, 2026 backstop order (TO exit amendment)"),
+    # --- sweep 2026-11-02 ------------------------------------------------------------------------
+    dict(slug="notice-cnf-20261102", accession="20261102-3050", docket="ER27-330-000", rto="PJM",
+         cite=None, issued="2026-11-02", kind="combined notice of filings", captured_at="2026-11-02",
+         title="Combined Notice of Filings #1, November 2, 2026: ER27-330-000 and -001 comment date 5 pm ET November 30, 2026"),
+    dict(slug="notice-ad26-8-third-supplemental", accession="20261015-3040", docket="AD26-8-000", rto="FERC",
+         cite=None, issued="2026-10-15", kind="notice of technical conference", captured_at="2026-11-02",
+         title="Third Supplemental Notice of Commissioner-Led Technical Conference: 2026 Reliability Technical Conference, October 21, 2026 (agenda; Panel 1 on integrating large loads)"),
+    dict(slug="statement-ad26-8-pjm-pilong", accession="20261021-4003", docket="AD26-8-000", rto="PJM",
+         cite=None, issued="2026-10-21", kind="pre-conference statement", captured_at="2026-11-02",
+         title="Reliability Technical Conference Comments from PJM Interconnection, L.L.C. (Christopher Pilong, Panel 1)"),
 ]
 
 

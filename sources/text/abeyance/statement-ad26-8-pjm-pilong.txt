@@ -1,0 +1,212 @@
+FERC pre-conference statement — PJM — Docket AD26-8-000 — accession 20261021-4003 — Reliability Technical Conference Comments from PJM Interconnection, L.L.C. (Christopher Pilong, Panel 1) — Issued 2026-10-21 — 7 pp
+Extracted locally with PyMuPDF (fitz) from the document downloaded from its eLibrary accession. Verbatim; source text layer preserved.
+
+
+--- PAGE 1 ---
+
+For Public Use
+
+Reliability Technical Conference
+Comments from PJM Interconnection,
+L.L.C.
+FERC Reliability Technical Conference, Docket No. AD26-8-000
+
+--- PAGE 2 ---
+
+Reliability Technical Conference Comments from PJM Interconnection, L.L.C.
+PJM © 2026
+www.pjm.com | For Public Use
+i | P a g e
+Contents
+Summary ....................................................................................................................................................................... 1
+RTOs Need Detailed Site Information About Large Loads Seeking to Interconnect ............................................. 2
+How PJM Is Responding to the Rapid Interconnection of Large Loads and Technologies like Inverter Based
+Resources ..................................................................................................................................................................... 3
+Physical And Cybersecurity Risks Posed by Large Load Integration .................................................................... 3
+How PJM Is Addressing Fuel Issues and Issues Posed by Behind-the-Meter and Front-of-the-Meter Gas-Fired
+Generation Resources on the Same Natural Gas Pipelines ..................................................................................... 4
+
+--- PAGE 3 ---
+
+ Reliability Technical Conference Comments from PJM Interconnection, L.L.C.
+PJM © 2026
+www.pjm.com | For Public Use
+1 | P a g e
+Summary
+On behalf of PJM Interconnection, L.L.C. (“PJM”), I, Christopher Pilong, Senior Director of Operations Planning,
+appreciate the opportunity to provide this written statement for the Commission’s October 21, 2026 reliability technical
+conference.
+PJM welcomes the opportunity to participate in a public discussion about the state of reliability in our changing energy
+landscape and, in particular, the operational challenges involved with integrating large loads and addressing evolving
+system dynamics.
+The pace of load growth and emergence and adoption of technologies such as inverter-based resources are presenting
+novel challenges. PJM is working with stakeholders to respond to those reliability challenges. Both state and federal
+action will be critical to continuing to ensure system reliability.
+My statement addresses four reliability priorities: the detailed and continuously updated information PJM needs from
+Large Load operators; PJM’s response to the rapid interconnection of Large Loads and the growing penetration of
+inverter-based resources; the physical and cybersecurity risks associated with concentrated Large Loads; and the fuel-
+security and infrastructure implications of behind-the-meter and front-of-the-meter gas-fired generation that relies on
+shared natural gas pipelines.
+Going forward, PJM supports a reliability framework that: requires timely, accurate, and continuously updated technical
+information from Large Load operators; establishes enforceable voltage and frequency ride-through requirements for
+both new and existing Large Loads; ensures that interconnection and energization decisions reflect the time required to
+develop sufficient generation and transmission; and advances coordinated electric-gas planning, cybersecurity
+protections, and accountability for facility performance.
+Large Loads are seeking interconnection in PJM faster than the generation and transmission needed to serve them can
+be placed in service. A data center may seek interconnection within two years, while new generation can take three
+years or more to come online and major transmission facilities can take seven years or more. This timing mismatch
+creates a reliability risk.
+Large Loads also exhibit very high and relatively constant power utilization, unlike traditional residential, industrial, and
+commercial load, which generally declines overnight, on weekends, and during the spring and fall shoulder seasons.
+Large Loads therefore raise the system’s base demand across nearly all hours, producing not only higher summer and
+winter peaks but also higher demand during spring, fall, and other historically off-peak periods. This change makes it
+more difficult to maintain reliability during planned transmission and generation outages needed for construction,
+equipment overhauls, and major maintenance. Given their potential effect on system reliability, Large Loads must
+provide sufficient operational flexibility or be subject to load reductions until the generation and transmission needed to
+serve them have been studied and placed in service. Without those safeguards, reliability for existing customers may
+be placed at risk. The urgency is illustrated by PJM’s increasing need to seek Department of Energy authorization
+under section 202(c) of the Federal Power Act to operate generation beyond otherwise applicable limits and potentially
+use backup generation at data centers and other sites during anticipated emergencies, including over the October 12–
+14, 2026 period. PJM historically has not needed to seek such relief under comparable temperatures and seasonal
+conditions.
+
+--- PAGE 4 ---
+
+ Reliability Technical Conference Comments from PJM Interconnection, L.L.C.
+PJM © 2026
+www.pjm.com | For Public Use
+2 | P a g e
+RTOs Need Detailed Site Information About Large Loads Seeking to
+Interconnect
+Because Large Loads present with various configurations that can affect reliable electric service, it is essential that
+RTOs receive detailed site information about Large Loads seeking to interconnect, including the specific system
+conditions that may trigger a load to switch ‘off grid power’ and move to its UPS or backup generator. Such information
+is necessary for PJM to understand and validate how the Large Load facilities will respond to system events before
+Large Loads interconnect with the grid, as opposed to having an unexpected response to system conditions in real time
+operations.
+Ongoing participation of the Large Loads in furnishing detailed information to appropriate entities and either directly or
+ultimately to the RTOs is critical. They must provide—and be held accountable for providing—accurate information on
+an ongoing basis and must ensure any changes they make are appropriately coordinated with the entities they affect
+(e.g., Transmission Owners, Transmission Operators, Balancing Authorities, etc.).
+Given wholesale and transmission system impacts, PJM is exploring pathways to ensure Large Loads are required to
+participate in commissioning tests, periodic validation of models and settings, prompt notice of material facility changes,
+event-data retention, and post-event performance reporting. Where a facility’s actual performance differs from its
+submitted models or approved settings, the applicable framework should provide for corrective action, operating
+restrictions, or other consequences proportionate to the reliability risk.
+Large Load operators should be subject to consistent performance requirements and standards. PJM has already
+experienced multiple instances in which Large Loads unexpectedly disconnected from the grid. In July 2024,
+approximately 1,500 MW of load transferred off grid in response to a system fault in Northern Virginia. Two additional
+major events have since occurred, including the sudden transfer of approximately 3,900 MW of load off grid on July 22,
+2026. PJM has also observed multiple events outside its footprint. These events demonstrate the need to implement
+voltage ride-through requirements without delay.
+As part of its response to the June 18, 2026 Large Load show-cause order, PJM is developing voltage and frequency
+ride-through requirements informed by the July 22, 2026 event. Those requirements could have mitigated the event if
+they had applied to the affected facilities. To reduce the risk of recurrence, the requirements should apply, as legally
+and technically appropriate, to both new and existing Large Loads. The expected magnitude and reliability
+consequences of future events will increase as concentrated Large Loads continue to grow, making timely action
+essential.
+The modeling and adherence to voltage/frequency ride through requirements also allows RTOs to direct reinforcements
+to the system that will support the new Large Loads while maintaining the current high level of reliability for existing
+customers.
+PJM has actively participated in the NERC efforts to draft standards pertaining to Large Computational Loads, which
+will also assist in these efforts and are critical to have in place as soon as possible.
+
+--- PAGE 5 ---
+
+ Reliability Technical Conference Comments from PJM Interconnection, L.L.C.
+PJM © 2026
+www.pjm.com | For Public Use
+3 | P a g e
+How PJM Is Responding to the Rapid Interconnection of Large Loads and
+Technologies like Inverter Based Resources
+There are essential reliability attributes that all generators produce at varying levels that are critical to maintaining grid
+reliability. PJM is considering system reliability needs via markets products, and the development of enhanced
+Essential Reliability Services,1 which are the building blocks of grid reliability.
+ PJM and other regions will need to continue to track and value Essential Reliability Services, potentially implementing
+market solutions. One example is PJM’s Primary Frequency Response review, as the September 10, 2026 PJM
+Operating Committee presentation shows.2
+In addition, PJM must obtain sufficient reserves via markets to address Essential Reliability Services. In this regard,
+PJM’s Reserve Certainty Senior Task Force (“RCSTF”) effort will help achieve sufficient reserves to address
+uncertainty and ramping. The RCSTF proposal was presented at PJM’s September 24, 2026 Markets and Reliability
+Committee meeting.3 Stakeholders will vote on the proposal at the November Members Committee meeting, and,
+assuming a passing vote, PJM expects to file the proposal at the Commission in December.
+Physical And Cybersecurity Risks Posed by Large Load Integration
+The physical and cybersecurity risks presented by Large Load vary.
+The principal physical and cybersecurity risks associated with Large Loads arise from the amount of demand
+concentrated at individual facilities and within geographic areas. Erratic operation, simultaneous disconnection, or
+malicious manipulation of multiple facilities could produce sudden load changes that affect grid frequency, voltage, and
+system stability.
+The disruptive Large Load events observed to date appear to have been inadvertent, including the July 22 event
+involving the sudden disconnection of nearly 3.9 GW in Virginia. A malicious actor, however, could seek access to a
+data center’s workload-management systems, manipulate computing activity, and create abrupt load increases or
+losses. Coordinated manipulation across multiple facilities could activate protection systems and compound the system
+effects observed during an inadvertent event. These scenarios support development of security controls, incident-
+reporting obligations, operational coordination protocols, and recovery requirements proportionate to the grid
+consequences of concentrated computational load.
+
+1 As described by NERC, Essential Reliability Services include frequency support, voltage support, and ramping capability on the
+Bulk Electric System. See NERC Essential Reliability Services Abstract Report, available at
+https://www.nerc.com/globalassets/programs/rapa/ra/ers-abstract-report-final.pdf.
+2 The September 10, 2026 Operating Committee presentation addressing the Primary Frequency Response Review is available at
+https://www.pjm.com/-/media/DotCom/committees-groups/committees/oc/2026/20260910/20260910-item-06---primary-frequency-
+response-update---presentation.pdf.
+3 Reserve Certainty Senior Task Force Overview and Proposal, available at https://www.pjm.com/-/media/DotCom/committees-
+groups/committees/mrc/2026/20260924/20260924-item-02a---1-pjm-rcstf-proposal-summary---presentation.pdf.
+
+--- PAGE 6 ---
+
+ Reliability Technical Conference Comments from PJM Interconnection, L.L.C.
+PJM © 2026
+www.pjm.com | For Public Use
+4 | P a g e
+Because large computational loads can materially affect real-time grid operations, NERC reliability standards should
+address the operational and cybersecurity obligations appropriate to those facilities. The standards should clarify
+applicability, performance expectations, coordination with Reliability Coordinators and Balancing Authorities, event
+reporting, model validation, and cybersecurity protections commensurate with the facilities’ potential effect on the Bulk-
+Power System.
+How PJM Is Addressing Fuel Issues and Issues Posed by Behind-the-Meter
+and Front-of-the-Meter Gas-Fired Generation Resources on the Same
+Natural Gas Pipelines
+PJM actively considers the implications of fuel availability for gas-fired generation to meet the additional demands of
+interconnecting Large Loads.
+Gas-fired generation is an important component of PJM’s resource mix. PJM currently has approximately 90 GW of
+installed gas-fired generation, of which 80% is served directly by interstate pipelines and 20% is served by local
+distribution companies. Approximately 29% of gas-fired resources have dual-fuel capability, and 51% have firm gas-
+delivery arrangements.
+To minimize reliability threats posed by unavailability of fuel, PJM’s Gas Electric Coordination Team works closely with
+generation owners and pipelines. PJM’s team coordinates with generation owners and conducts surveys to ensure
+adequate fuel is available and secured going into peak periods. In addition, when PJM declares a maximum generation
+emergency, there is a focus on fuel inventory for different generation resources, including instructions to generation
+resources to conserve available fuel for critical periods if there is a shortage.
+Recent reports indicate that as much as 30 GW of gas-fired generation may be developed to serve data-center load
+over the next four to five years. Whether that generation is co-located behind the meter or interconnected in front of the
+meter, substantial new pipeline capacity and increased gas production may be needed in some areas to support the
+generation while maintaining reliable service for existing customers. The need is particularly significant if the generation
+is expected to operate throughout the year to serve data centers with high capacity factors. Meeting rapid energization
+targets will require early coordination with the natural gas industry and realistic assumptions about siting, permitting,
+construction schedules, materials, labor, and fuel-delivery capability. These considerations reinforce the need for close
+gas-electric coordination.
+Consideration should also be given to account for common-mode fuel risks. Multiple behind-the-meter and front-of-the-
+meter generators serving Large Loads may depend on the same pipeline, compressor station, local distribution system,
+or upstream supply path. PJM and the gas industry therefore need sufficient information to identify correlated
+contingencies, evaluate deliverability during peak electric and gas conditions, and determine whether firm
+transportation, dual-fuel capability, on-site fuel, demand flexibility, or other mitigation is needed.
+Data centers with capacity factors of 80–90% increase the system’s base demand and therefore the need for resources
+capable of serving sustained load. PJM also must retain a portfolio able to meet seasonal and weather-driven demand
+that varies by hour and time of year. PJM’s Commission-accepted Effective Load Carrying Capability analysis (“ELCC”)
+supports that objective by assessing each resource type’s contribution to resource adequacy during the hours when the
+system is most constrained.
+
+--- PAGE 7 ---
+
+ Reliability Technical Conference Comments from PJM Interconnection, L.L.C.
+PJM © 2026
+www.pjm.com | For Public Use
+5 | P a g e
+*
+*
+*
+PJM respectfully requests that the Commission use this technical conference to advance a coordinated reliability
+framework for Large Loads—one that aligns energization with available infrastructure, requires accurate models and
+dependable facility performance, addresses correlated cyber and fuel risks, and preserves reliable service for existing
+customers as the system evolves.

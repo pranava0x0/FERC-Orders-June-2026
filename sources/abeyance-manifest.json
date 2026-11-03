@@ -457,6 +457,54 @@
       "chars": 15691,
       "tool": "PyMuPDF (fitz)",
       "text": "sources/text/abeyance/rehearing-er26-3380-indicated-pjm-tos.txt"
+    },
+    {
+      "slug": "notice-cnf-20261102",
+      "accession": "20261102-3050",
+      "docket": "ER27-330-000",
+      "rto": "PJM",
+      "cite": null,
+      "issued": "2026-11-02",
+      "kind": "combined notice of filings",
+      "captured_at": "2026-11-02",
+      "title": "Combined Notice of Filings #1, November 2, 2026: ER27-330-000 and -001 comment date 5 pm ET November 30, 2026",
+      "source_file": "20261102-3050_CNF110226.docx",
+      "pages": null,
+      "chars": 7688,
+      "tool": "textutil",
+      "text": "sources/text/abeyance/notice-cnf-20261102.txt"
+    },
+    {
+      "slug": "notice-ad26-8-third-supplemental",
+      "accession": "20261015-3040",
+      "docket": "AD26-8-000",
+      "rto": "FERC",
+      "cite": null,
+      "issued": "2026-10-15",
+      "kind": "notice of technical conference",
+      "captured_at": "2026-11-02",
+      "title": "Third Supplemental Notice of Commissioner-Led Technical Conference: 2026 Reliability Technical Conference, October 21, 2026 (agenda; Panel 1 on integrating large loads)",
+      "source_file": "20261015-3040_AD26-8-000 Technical Conference.docx",
+      "pages": null,
+      "chars": 13614,
+      "tool": "textutil",
+      "text": "sources/text/abeyance/notice-ad26-8-third-supplemental.txt"
+    },
+    {
+      "slug": "statement-ad26-8-pjm-pilong",
+      "accession": "20261021-4003",
+      "docket": "AD26-8-000",
+      "rto": "PJM",
+      "cite": null,
+      "issued": "2026-10-21",
+      "kind": "pre-conference statement",
+      "captured_at": "2026-11-02",
+      "title": "Reliability Technical Conference Comments from PJM Interconnection, L.L.C. (Christopher Pilong, Panel 1)",
+      "source_file": "20261021-4003_Panel 1-PJM -Chris Pilong Testimony.pdf",
+      "pages": 7,
+      "chars": 16214,
+      "tool": "PyMuPDF (fitz)",
+      "text": "sources/text/abeyance/statement-ad26-8-pjm-pilong.txt"
     }
   ]
 }

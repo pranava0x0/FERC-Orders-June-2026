@@ -369,6 +369,46 @@
       "evidence": "The Indicated PJM Transmission Owners are hopeful that PJM will submit a revised section 205 filing that supersedes its earlier section 205 filing and may moot the need for rehearing of the Order. The Indicated PJM Transmission Owners submit this rehearing request out of an abundance of caution to preserve their rights in this fast-moving and dynamic proceeding.",
       "note": "Verbatim from the committed text, sources/text/abeyance/rehearing-er26-3380-indicated-pjm-tos.txt (footnote marker after PJM dropped).",
       "captured_at": "2026-10-30"
+    },
+    "cebadcc1002-queue": {
+      "src": "cebadcc1002",
+      "speaker": "Corporate Energy Buyers Association and Data Center Coalition, letter to the PJM Board",
+      "occasion": "October 2, 2026, pp. 1-2",
+      "evidence": "While the Order calls for improvements to large load integration, it does not require PJM to overhaul its entire generation interconnection queue. ... Even if PJM meets its proposed annual schedule, that could mean nearly two years between Transmission Owner approval and completion of the PJM process. ... Most importantly, PJM has not demonstrated that this proposal will deliver the speed, certainty, or transparency envisioned by the Show Cause Order.",
+      "note": "Verbatim from the committed PDF, sources/originals/pjm-20261005-ceba-dcc-letter-to-pjm-board.pdf (line breaks joined).",
+      "captured_at": "2026-11-02"
+    },
+    "pjmreg1028-202c": {
+      "src": "pjmreg1028",
+      "speaker": "PJM, MC Legal Report",
+      "occasion": "Members Committee, October 28, 2026, p. 1",
+      "evidence": "On October 12, 2026, the Department of Energy issued Order No. 202-26-50 pursuant to Federal Power Act section 202(c), finding that an imminent electric reliability emergency exists, directing PJM to dispatch Specified Resources as needed to maintain reliability, and authorizing PJM to direct backup generation resources at large loads to operate as a last resort before declaring an Energy Emergency Alert (“EEA”) 3 or during an EEA 3.",
+      "note": "Verbatim from the committed PDF, sources/originals/pjm-20261028-mc-regulatory-report.pdf.",
+      "captured_at": "2026-11-02"
+    },
+    "bisnow1021-trump": {
+      "src": "bisnow1021",
+      "speaker": "President Donald Trump, Truth Social post as quoted by Bisnow",
+      "occasion": "October 21, 2026",
+      "evidence": "“New and large, in some cases gigantic, Data Centers are mandated by me to make their own electricity, and give or sell any excess back to the local community, or grid, and therefore there is electric price increase (sic). In fact, there could be a substantial decrease.” ... “If companies want to make their Data Centers popular, pay the community, and/or individuals within the community, a “dividend,” Trump wrote.",
+      "note": "Verbatim from the Bisnow article as fetched 2026-11-02; the (sic) is Bisnow's.",
+      "captured_at": "2026-11-02"
+    },
+    "vanhollenx1021": {
+      "src": "vanhollenx1021",
+      "speaker": "Sen. Chris Van Hollen (D-Md.), on X",
+      "occasion": "October 21, 2026, 13:21 UTC",
+      "evidence": "When push comes to shove, Trump would rather you lose power than the data center companies lose a cent of profit. Clearly, this admin & FERC are not protecting consumers. Congress must pass my Power for the People Act, to ensure that your power needs are put before Big Tech's.",
+      "note": "Read from the post in a logged-in browser.",
+      "captured_at": "2026-11-02"
+    },
+    "pjmrbp1029-commentperiod-cnf": {
+      "src": "cnf1102",
+      "speaker": "FERC, Combined Notice of Filings #1",
+      "occasion": "November 2, 2026",
+      "evidence": "Comment Date: 5 pm ET 11/30/26",
+      "note": "From the committed text sources/text/abeyance/notice-cnf-20261102.txt (ER27-330-000 and ER27-330-001 entries).",
+      "captured_at": "2026-11-02"
     }
   }
 }
