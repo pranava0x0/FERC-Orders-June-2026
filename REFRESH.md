@@ -19,7 +19,7 @@ Driven by real dates, not a calendar interval:
 | ~~2026-10-29~~ | ~~PJM's backstop refiling~~. Filed as a NEW docket, **ER27-330-000** (20261029-5227, read; errata ER27-330-001 Oct 30). Seven rehearing/clarification requests of the Sep 29 order sit in **ER26-3380-001**. |
 | 2026-11-05 | PJM special MC: §9.2(b) consultation on "a suite of section 205 filings" for the show-cause order (agenda committed in sources/originals/). The backstop spacing (consult, then file seven days later) would put PJM's show-cause filings on or after Nov 12. |
 | 2026-11-09 | PJM's compliance filing on the Large Load definition and registry (30 days from the Oct 9 order in ER26-3515; Nov 8 is a Sunday), and the last day for rehearing requests on that order (none filed as of Oct 30). |
-| 2026-11-30 | Comment date PJM requested on ER27-330 (32 days). Check the FERC combined notice for the date actually set. Also watch for answers to the ER26-3380-001 rehearing requests and a FERC rehearing notice. |
+| 2026-11-30 | ER27-330 comments and interventions due 5 pm ET (FERC's Nov 2 combined notice, 20261102-3050, read; also covers the -001 errata). Also watch for answers to the ER26-3380-001 rehearing requests and a FERC rehearing notice. |
 | 2027-01-11 | EL26-108 backstop paper-hearing initial briefs (reply briefs Jan 26), per FERC's Oct 23 notice. |
 | open | PJM governance: the Board has not said what it will file after the Members' Sept 30 vote. Redlines were posted Oct 13 and walked through Oct 16. Watch AD26-7 and PJM's Members Committee postings. |
 | **2026-11-16** | **The reset deadline.** Show-cause responses in five of the six §206 dockets, AND PJM's and the PJM TOs' full co-location compliance filing in EL25-49. PJM, CAISO and others have said they will instead make FPA §205 filings by this date, which suspends the obligation to respond. |
@@ -66,9 +66,11 @@ That is how AD26-7-000 and the July 23 conference date were confirmed.
 - Trade press behind a paywall: if the only source for a claim is unfetchable, it ships as a labeled
   headline pointer or not at all. Never as a paraphrased fact.
 
-**Open verification queue** (updated 2026-10-30; resolved items removed rather than left to rot):
+**Open verification queue** (updated 2026-11-02; resolved items removed rather than left to rot):
 
-000. **New 2026-10-30** (eLibrary sweep, cutoff Oct 20, `SOURCES.elibrary1030`). (a) Unread, description only: Tesla/Sunrun/Renew Home protest in EL26-108 (20261020-5159); five of seven ER26-3380-001 rehearing requests (AMP Oct 13 20261013-5514, FirstEnergy, Ohio OCC, Constellation, NOVEC); ER27-330 errata (20261030-5172); NCAI's moratorium comments in all six §206 dockets (20261026-4001); the Vistra and Exelon Third Circuit petitions on the co-location orders (20261022-5214, 20261027-0003); MISO's ZGIA deficiency letter (20261009-3000). (b) AD26-8-000, a FERC technical conference on operational challenges of integrating large loads (pre-conference statements Oct 21; PJM Inside Lines covered it): not read, not on the site. (c) CAISO's Board resolution and vote count not read; only APPA's account of CAISO's statement. (d) No commissioner or IMM statement on the refiling or the Oct 23 notice was found. (e) The first page of the "large load" keyword search (Oct 16-30, 593 hits) was read, not every page.
+0000. **New 2026-11-02** (eLibrary cutoff Oct 29, `SOURCES.elibrary1102`; web, X and first-party back to Oct 19). (a) Not run this sweep: EL25-49-002 and the general eLibrary search by applicant; run both on Nov 10. (b) AD26-8: only PJM's Panel 1 statement was read. NERC's joint comments (20261021-4000), EEI/AEP (-4002) and Dominion (-4001) are unread, and the conference transcript and webcast were not reviewed, so no commissioner remark from Oct 21 is on the site. (c) Leads not shipped: AEP CEO Bill Fehrman's Q3 line on large loads bearing incremental costs (SEC 8-K exhibit; sec.gov refuses automated fetch, open it in Chrome); a White House spokesperson's statement that PJM has not implemented the Statement of Principles (Northeast Times, Oct 23, 403); Dominion's Q3 call (summary site only). (d) The President's Oct 21 post is quoted via Bisnow; the Truth Social post itself was not opened.
+
+000. **New 2026-10-30** (eLibrary sweep, cutoff Oct 20, `SOURCES.elibrary1030`). (b) is RESOLVED 2026-11-02: AD26-8 is FERC's annual reliability conference (Oct 21), Panel 1 on large loads; see 0000(b). (a) Unread, description only: Tesla/Sunrun/Renew Home protest in EL26-108 (20261020-5159); five of seven ER26-3380-001 rehearing requests (AMP Oct 13 20261013-5514, FirstEnergy, Ohio OCC, Constellation, NOVEC); ER27-330 errata (20261030-5172); NCAI's moratorium comments in all six §206 dockets (20261026-4001); the Vistra and Exelon Third Circuit petitions on the co-location orders (20261022-5214, 20261027-0003); MISO's ZGIA deficiency letter (20261009-3000). (b) AD26-8-000, a FERC technical conference on operational challenges of integrating large loads (pre-conference statements Oct 21; PJM Inside Lines covered it): not read, not on the site. (c) CAISO's Board resolution and vote count not read; only APPA's account of CAISO's statement. (d) No commissioner or IMM statement on the refiling or the Oct 23 notice was found. (e) The first page of the "large load" keyword search (Oct 16-30, 593 hits) was read, not every page.
 
 00. **New 2026-10-19; mostly resolved by the 2026-10-20 eLibrary sweep** (authenticated Chrome, `tools/elibrary-sweep.js`, cutoff Oct 8, every row of every sheet read; `SOURCES.elibrary1020`). The Oct 19 sweep ran from a cloud container with no authenticated browser. Status of each follow-up:
     (a) DONE Oct 20 for EL26-67-000 to EL26-72-000, all six -001 sub-dockets (EL26-68/-69/-70/-71/-72-001 read later the same day: 0, 3, 4, 3 and 4 rows, none since Oct 8), EL25-49-000/-002, ER26-1479-002, AD26-7-000, ER26-3380-000, EL26-108-000 and ER26-3515-000. The six §206 sheets are quiet (service-list updates, one out-of-time intervention in EL26-67).
@@ -229,6 +231,25 @@ After a refresh that adds URLs, optionally inspect one new URL in Search Console
 indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
 
 ## Gotchas learned the hard way
+
+- **When a search agent reports a PDF as "unreadable", fetch it yourself before dropping it.** On 2026-11-02 the
+  news agent flagged two pjm.com PDFs as snippet-only because WebFetch could not parse them; `curl` plus PyMuPDF
+  read both in seconds, and they were the sweep's two best finds (the CEBA and Data Center Coalition letter of
+  Oct 2, missed by three sweeps, and PJM's Members Committee legal report recording DOE's §202(c) orders). PJM's
+  committee "regulatory report" PDF (`mc/<yyyy>/<yyyymmdd>/<yyyymmdd>-item-05c---pjm-regulatory-report.pdf`) is a
+  monthly digest of every FERC and DOE action touching PJM; read it every sweep.
+- **The eLibrary docket sheet is backed by an in-page API.** The Angular app POSTs to
+  `/eLibraryWebAPI/api/Docket/GetSingleDocketSheet`, which succeeds inside the authenticated tab (it 401s from
+  curl). The request body was not captured (XHR hooks installed after load see nothing until a new search runs),
+  so the DOM extractor is still the route; capturing that body would let one in-page `fetch` read every docket.
+- **X is a thin source for this docket.** The official FERC, PJM, MISO, SPP, CAISO, NYISO and ISO-NE accounts
+  posted nothing substantive Oct 19 to Nov 2 beyond PJM's link to its own backstop release. The one elected
+  official's statement came from a Top-tab search with `min_faves:100`, not from Latest. The bridge's output
+  filter strips `& ? = ; %`, so re-read any quoted post on its own page before shipping (Van Hollen's `&` was
+  lost in the search-list extraction).
+- **Playwright without an install.** The repo has no dependencies; `NODE_PATH=<another project's
+  node_modules/.pnpm/playwright@x/node_modules> node tools/uat-playwright.mjs` uses an existing copy and the
+  cached Chromium, so no `npm install` (and no advisory sweep) is needed to run the harness on the laptop.
 
 - **A promised refiling can land in a NEW docket, not the one it amends.** PJM's Oct 29 backstop refiling is ER27-330-000, not ER26-3380; the ER26-3380 sheet showed only FERC's notice, and rehearing requests went to ER26-3380-001. Only the general search by applicant (dates bracketing the promised day) found it. When a party promises "a section 205 filing", run the applicant search, and read the `-001` sheet of the order being challenged on its 30th day.
 - **A "notice addressing" a motion is not a ruling on it.** FERC's Oct 23 notice on PJM's abeyance motion moved the brief dates (to Jan 11 and Jan 26, 2027) and granted nothing. Read the notice before writing "granted".

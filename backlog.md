@@ -1,5 +1,16 @@
 # backlog.md
 
+- **`data.js` is now the largest blocking asset (112 KB gzip of 178 KB).** (medium) With `comments-data.js` lazy
+  since 2026-11-02, the timeline and Discourse bodies dominate first load. Splitting them out the same way would
+  roughly halve blocking weight again, but every tab reads `D.SOURCES`, so it needs a design (a core file plus
+  per-tab files), not a move. Measure with the throttled pass in uat.md before and after.
+- **Mobile: the Comments by-issue map is 2 screens below the sub-tab bar.** (low) Reader cost 3.96 on mobile vs 2
+  on desktop (uat.md, 2026-11-02). A jump or a shorter lead-in above the map would bring it to ~2.
+- **Read every docket in one in-page call.** (low) eLibrary's sheet comes from a POST to
+  `/eLibraryWebAPI/api/Docket/GetSingleDocketSheet` that works inside the logged-in tab. Capture the request body
+  once (hook XHR, then run a new docket search in the SPA) and `tools/elibrary-sweep.js` could fetch all ~20
+  sheets in one call instead of ~20 navigations.
+
 - **`var(--text-secondary)` is used six times in styles.css but never defined.** (low) Found while adding
   the voices roster (2026-10-20). Those rules fall back to the inherited color. Define the token in `:root` or
   switch the six uses to `--text-muted`, then eyeball the affected elements.

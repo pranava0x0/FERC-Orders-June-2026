@@ -3,11 +3,38 @@
 Learned-pathways log for the `ferc-uat` skill (`~/.claude/skills/ferc-uat/SKILL.md`). Do not
 delete the "Learned pathways log" section below — it's the skill's memory across runs.
 
-_Last run: 2026-10-19_
+_Last run: 2026-11-02_
 
 ---
 
 ## Learned pathways log
+
+### Run 2026-11-02 (headless harness on the laptop, plus a throttled load-time pass; same session as the Nov 2 refresh)
+
+**Context:** First laptop run of `tools/uat-playwright.mjs` (Playwright borrowed via `NODE_PATH`, see REFRESH.md).
+Added a throttled load-time measurement (scratch script: mobile viewport, cache disabled, CDP network
+emulation, 4x CPU slowdown, median of 3) against the live site and the branch.
+
+**What was tested:** 20 panel checks and 18 goal measurements, before and after each change; cold deep links
+to `#comments/c=<accession>` and `#comments/issue`; opening Comments then leaving before its data arrived.
+
+**What was discovered:**
+- Reader depth, mobile (taps + typed + swipes + screens of scroll): status 0, next deadline 0, filing matrix 1,
+  commissioners 1, newest timeline event 2, EL26-67 PDF 1.28, by-issue map 3.96, a comment by org 4.03, newest
+  Discourse quote **7.56 → 1.2** (desktop 4.1 → 1). The October lane had grown to 9 themes in append order, so the
+  newest quote sat mid-lane; themes now sort newest-first inside each wave by their newest quoted source.
+- Load, live site (main) on a mobile profile: LCP 0.30 s unthrottled, 0.88 s fast 4G, 1.88 s slow 4G, but the load
+  event at 1.8 s and 6.5 s, held back by `comments-data.js` (114 KB gzip of 278 KB wire, loaded on every visit
+  for one tab). It is now a `<link rel="prefetch">` that app.js executes on first open of Comments. Branch,
+  uncompressed local server, before → after: load 5.9 → 3.4 s fast 4G, 22.9 → 13.0 s slow 4G; blocking first-load
+  weight 287 → 178 KB gzip. `tests/page-weight.test.mjs` guards both the prefetch and a 220 KB gzip budget.
+- 6 requests on first load (5 before the idle prefetch), 1,719 DOM nodes on the Overview, 15,279 once Comments
+  renders (14,109 in the All-comments list). Zero console errors, zero failed requests, no `undefined`/`NaN`,
+  no horizontal overflow at 375 or 1280.
+
+**Paths NOT yet tested (carry over):** keyboard-only tablist navigation; 768px; the day-of-deadline boundary;
+Comments opened on a connection slow enough that the prefetch has not finished (the loading line shows, then the
+render; exercised only on a fast local server).
 
 ### Run 2026-10-19 (headless, `tools/uat-playwright.mjs`; same session as the Oct 8 to Oct 19 refresh)
 
