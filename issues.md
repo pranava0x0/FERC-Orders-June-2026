@@ -4,6 +4,21 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
+- **2026-11-09 · source · YouTube rate-limits caption fetches.** After eight transcripts every caption request
+  returned HTTP 429, and two videos (the Senate ENR hearing, LaCerte's WIRES keynote) need a PO token the
+  android/ios clients do not carry. Six videos have no transcript. Root cause: **source**. Status: **Open**;
+  `tools/fetch-video-transcripts.py` paces 10 s and backs off, rerun it on a later day. The transcript panel in
+  Chrome did not load signed out.
+- **2026-11-09 · ui · eight tabs overflowed the bar at 1,024 px and the 4-column phone grid ran 66 px wide.**
+  The tab bar needed ~1,160 px with numbers and asides; on phones `repeat(4, 1fr)` let min-content widen the
+  grid, and the media-query `.tab` padding lost to the later base `.tab` rule of equal specificity. Root cause:
+  **code**. Status: **Fixed 2026-11-09**: `minmax(0, 1fr)`, `.tabs .tab` overrides, grid up to 1,060 px, asides
+  hidden below 1,240 px, "Commission" as the phone label. Guarded by the harness's overflow check at 375, 768
+  and 1280.
+- **2026-11-09 · ui · the Filings tab was about 100 screens tall on a phone.** 363 quotes in 10 proceedings,
+  all open. Root cause: **code** (first render). Status: **Fixed 2026-11-09**: proceedings are collapsible
+  (newest open), with a per-filer filter; 6.5 screens on a phone, a named protest's position in 3 taps.
+
 - **2026-11-02 · discourse/ui · the newest Discourse quote was seven screens down on a phone.** Wave 3 had grown
   to nine themes rendered in append order, so the newest quote sat mid-lane (reader cost 7.56 mobile, 4.1
   desktop, up from 3.1 and 1.8 on Oct 19). Root cause: **code** (lanes were ordered by date, themes inside a lane

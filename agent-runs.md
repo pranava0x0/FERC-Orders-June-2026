@@ -26,6 +26,10 @@ token figure.
 | 11 | 2026-08-09 | Agent `code-reviewer` **adversarial refresh review** | Independent re-check of the uncommitted 2026-08-09 refresh diff (`data.js` + `REFRESH.md`) against the actual downloaded PDFs and FR text, not the author's own summary of them | 1 | 28 | 151,484 | 409.7 s | sonnet | ✅ 6 confirmed findings (see issues.md 2026-08-09), 0 false positives; also cleared several claims as accurate rather than padding the report — the review's method (re-derive from the primary PDFs) differed from the author's (write from notes taken while reading them), which is what caught claims that had drifted from the source during writing |
 | 13 | 2026-08-23 | Agent `general-purpose` (`aaee30de8`) | July/August news sweep: commissioner + elected-official statements on the show cause orders, driven by `tools/news-sweep-plan.mjs`'s 119-query matrix | 1 | 86 | 203,328 | 550.9 s | sonnet | ⚠️ 10 findings, **2 already on the site**; 6 verified and shipped, 2 snippet-only leads |
 | 14 | 2026-08-23 | Agent `general-purpose` (`a036584d6`) | Adversarial code review of the `revised` / `abeyance` diff (app.js, css, 4 tools, 2 new tools) | 1 | 55 | 198,918 | 750.3 s | opus-5 (inherited) | ✅ **12 findings, 12 real** — incl. 2 HIGH live bugs the 119-test suite and self-review both missed |
+| 15 | 2026-11-09 | Agent `general-purpose` news sweep | Nov 2 to Nov 9 trade press and named statements from `news-sweep-plan.mjs --json` | 1 | 63 | 166,647 | 292 s | sonnet | ⚠️ 18 findings, none shipped yet (validation pending); no show-cause filings found anywhere, which the eLibrary sweep confirmed |
+| 16 | 2026-11-09 | Agent `general-purpose` video discovery | YouTube and event pages where a commissioner speaks on large loads, Jun 18 to Nov 9 | 1 | 17 | 130,417 | 271 s | sonnet | ✅ 19 candidates, 15 kept (one duplicate upload, one clip, one off-topic) |
+| 17 | 2026-11-09 | 5 × Agent `general-purpose` tenet extraction | One proceeding group each (MISO LARS; PJM backstop; backstop rehearing; PJM orders + Exelon + AD26; show-cause + co-location), brief in the scratchpad, closed loop on `tools/verify-record.mjs` | 5 | 131 | 956,212 | ~18 min | sonnet | ✅ 363 quotes, 189 tenets, 51 docs, every quote verified on its page first try or after self-fix |
+| 18 | 2026-11-09 | 3 × Agent `general-purpose` video contents | Oct 21 conference + Oct 15 meeting; three keynotes; the 7-hour PJM governance conference | 3 | 64 | 516,485 | ~11 min | sonnet | ✅ 141 quotes, 85 chapters; one uncertain LaCerte attribution dropped by the orchestrator |
 
 _Totals (Runs 1–11 shown): 83 agent-runs · 1,246 tool uses · **4,048,526** subagent tokens · ~3,338 s of agent wall-clock. Of which Run 3 (974K) produced nothing, Run 5's audit half (~242K) was largely replaceable by deterministic checks, and **Run 8 (1.0M) overshot the user's session budget and hit the rate limit** — see below._
 _**The comment run is complete: 268/268 summaries written and valid.** The table above shows the representative runs; the 29 per-chunk runs (these plus ~20 more) are logged in `sources/comments/workflow-runs.jsonl` — **~13.2M subagent tokens** across the full corpus, with `extract_model`/`audit_model` per run for analysis._
@@ -592,3 +596,14 @@ substance was first-party. Their value this time was pointing at two PDFs, not r
 integrator agent was spawned: with nine items, inline integration plus `verify-quotes.mjs` was cheaper. Code review
 ran as described in the PR.
 
+
+
+### Session 2026-11-09 (refresh + Filings and Commissioners tabs)
+
+Main loop: eLibrary sweep of 16 docket sheets and a general search in the authenticated Chrome bridge (two
+`browser_batch` calls covered all sheets), 18 downloads, the verifier, builder, transcript fetcher, UI, data
+and harness; two short videos extracted inline. Subagents: runs 15 to 18 above plus two Opus reviewers
+(accuracy, UX). The project's 2-concurrent-agent cap serialized the extraction into four waves; the cost was
+wall-clock, not tokens. What made the fan-out cheap to trust: a strict verifier written *before* the agents
+launched, so every agent closed its own loop and the orchestrator re-ran one command per part instead of
+re-reading quotes. What it did not cover: attribution and overstatement, which is what the accuracy reviewer is for.
