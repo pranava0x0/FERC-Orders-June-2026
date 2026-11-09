@@ -1976,11 +1976,15 @@
     // A dropped fetch must not leave the tab dead for the rest of the session: offer a retry and leave
     // `rendered[name]` false so the next activation tries again too.
     s.onerror = function () {
-      lazyLoading[spec.link] = null;
+      var waiting = lazyLoading[spec.link] || [name]; lazyLoading[spec.link] = null;
       s.remove();
-      panel.innerHTML = '<p class="cm-loading" role="status">' + spec.what.charAt(0).toUpperCase() + spec.what.slice(1) +
-        ' did not load. <button type="button" class="cm-retry">Try again</button></p>';
-      panel.querySelector(".cm-retry").addEventListener("click", function () { loadLazy(name, panel); });
+      // Every tab that queued on this script hears about the failure, not just the one that started it.
+      waiting.forEach(function (n) {
+        var p = panelFor(n), what = LAZY[n].what;
+        p.innerHTML = '<p class="cm-loading" role="status">' + what.charAt(0).toUpperCase() + what.slice(1) +
+          ' did not load. <button type="button" class="cm-retry">Try again</button></p>';
+        p.querySelector(".cm-retry").addEventListener("click", function () { loadLazy(n, p); });
+      });
     };
     document.head.appendChild(s);
   }

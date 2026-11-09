@@ -71,3 +71,16 @@ test("index.html has a tab and a panel for every route app.js knows", () => {
     assert.match(html, new RegExp(`id="panel-${t}"`), `no panel for ${t}`);
   }
 });
+
+test("a tab whose phone label is aria-hidden still has an accessible name", () => {
+  const html = read("docs", "index.html");
+  const tabs = [...html.matchAll(/<button class="tab"[^>]*>[\s\S]*?<\/button>/g)].map((m) => m[0]);
+  assert.equal(tabs.length, 8);
+  for (const t of tabs) if (/tab-short" aria-hidden="true"/.test(t)) assert.match(t, /aria-label="[^"]+"/, `no accessible name: ${t.slice(0, 80)}`);
+});
+
+test("a failed shared data load reaches every tab waiting on it", () => {
+  const app = read("docs", "js", "app.js");
+  const onerror = app.slice(app.indexOf("s.onerror = function () {"), app.indexOf("document.head.appendChild(s);"));
+  assert.match(onerror, /waiting\.forEach/, "onerror must update every queued panel, as onload does");
+});
