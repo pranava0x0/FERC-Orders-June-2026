@@ -1920,6 +1920,8 @@
       scrollToTabsTop();
     } else if (tab === "filings" && rest) {
       if (!rendered.filings) pendingFiling = rest;               // wireFilings consumes and clears it
+      // Already rendered: settle the route before activate() writes the hash, or the URL keeps the old one.
+      else if (document.getElementById("fg-" + String(rest).split("/")[0])) filingHash = rest;
       activate("filings", focus);
       if (rendered.filings) routeFiling(rest);
     } else if (tab === "commissioners") {

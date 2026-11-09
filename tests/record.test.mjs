@@ -84,3 +84,10 @@ test("a failed shared data load reaches every tab waiting on it", () => {
   const onerror = app.slice(app.indexOf("s.onerror = function () {"), app.indexOf("document.head.appendChild(s);"));
   assert.match(onerror, /waiting\.forEach/, "onerror must update every queued panel, as onload does");
 });
+
+test("a Filings deep link is settled before activate() rewrites the hash", () => {
+  const app = read("docs", "js", "app.js");
+  const branch = app.slice(app.indexOf('} else if (tab === "filings" && rest) {'), app.indexOf('} else if (tab === "commissioners") {'));
+  assert.ok(branch.indexOf("filingHash = rest") >= 0 && branch.indexOf("filingHash = rest") < branch.indexOf('activate("filings"'),
+    "filingHash must take the incoming route before activate() writes the URL");
+});
