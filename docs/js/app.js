@@ -1651,70 +1651,110 @@
     var p = String(at || "").split(":").map(Number);
     return p.length === 3 ? p[0] * 3600 + p[1] * 60 + p[2] : p.length === 2 ? p[0] * 60 + p[1] : 0;
   }
+  function slugify(x) { return String(x).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
   function renderFilings() {
     var R = window.FERC_RECORD;
     if (!R || !R.groups) return head("Filings and orders", "The filings record did not load (js/record-data.js).");
-    var nDocs = 0, nTen = 0;
-    R.groups.forEach(function (g) { nDocs += g.docs.length; nTen += g.tenets.length; });
-    var nav = '<nav class="jump-row" aria-label="Proceedings">' + R.groups.map(function (g) {
+    var nav = '<nav class="jump-row fg-nav" aria-label="Proceedings">' + R.groups.map(function (g) {
       return '<button type="button" class="jump-btn" data-jump="#fg-' + esc(g.id) + '">' + esc(g.short || g.title) + "</button>";
     }).join("") + "</nav>";
-    var groups = R.groups.map(function (g, gi) {
-      var byDoc = {}, sides = {};
-      g.docs.forEach(function (d) { byDoc[d.slug] = d; if (d.side) sides[d.side] = 1; });
+    var groups = R.groups.map(function (g) {
+      var byDoc = {}, sides = {}, dockets = {}, filers = [];
+      g.docs.forEach(function (d) {
+        byDoc[d.slug] = d; if (d.side) sides[d.side] = 1; if (d.docket) dockets[d.docket] = 1;
+        if (filers.indexOf(d.filer) < 0) filers.push(d.filer);
+      });
       // A side tag only means something where filers disagree; on a lone complaint it reads "Supports" itself.
       var showSides = Object.keys(sides).length > 1;
+      var multiDocket = Object.keys(dockets).length > 1;
+      var cite = function (d, pg) {
+        return esc(d.filer + " " + d.kind + ", " + fmtISO(d.date)) +
+          (multiDocket && d.docket ? ' · <span class="mono">' + esc(d.docket) + "</span>" + (d.rto && d.rto !== d.filer ? " (" + esc(d.rto) + ")" : "") : "") +
+          (pg ? ' · <span class="mono">p. ' + pg + "</span>" : "") +
+          ' · <a href="' + esc(eli(d.accession)) + '" target="_blank" rel="noopener noreferrer" aria-label="' +
+          esc(d.filer + " " + d.kind + (pg ? ", page " + pg : "") + ", filing on FERC eLibrary") + '">eLibrary filing <span class="ext" aria-hidden="true">↗</span></a>';
+      };
       var tenets = g.tenets.map(function (t) {
         var side = showSides && t.side ? '<span class="side-tag side-' + esc(t.side) + '">' + esc(SIDE_LABEL[t.side] || t.side) + "</span>" : "";
-        var by = {};
-        var qs = t.quotes.map(function (q) {
-          var d = byDoc[q.d] || {};
-          by[q.d] = 1;
-          return '<li data-d="' + esc(q.d) + '"><blockquote>“' + esc(q.q) + '”</blockquote><span class="tq-cite">' + esc(d.filer || q.d) +
-            (q.pg ? ' · <span class="mono">p. ' + q.pg + "</span>" : "") +
-            ' · <a href="' + esc(eli(d.accession)) + '" target="_blank" rel="noopener noreferrer" aria-label="' +
-            esc((d.filer || "") + ", " + (d.kind || "") + ", on FERC eLibrary") + '">eLibrary <span class="ext" aria-hidden="true">↗</span></a></span></li>';
+        // The same sentence in six orders is one quote with six citations, not six identical blocks.
+        var seen = {}, order = [];
+        t.quotes.forEach(function (q) {
+          var k = q.q.replace(/\s+/g, " ").trim().toLowerCase();
+          if (!seen[k]) { seen[k] = { q: q.q, refs: [] }; order.push(k); }
+          seen[k].refs.push(q);
+        });
+        var fs = {};
+        var qs = order.map(function (k) {
+          var e = seen[k];
+          var who = e.refs.map(function (q) { var d = byDoc[q.d] || {}; fs[d.filer] = 1; return d.filer; });
+          return '<li data-filers="' + esc(who.join("|")) + '"><blockquote>“' + esc(e.q) + '”</blockquote>' + e.refs.map(function (q) {
+            return '<span class="tq-cite">' + cite(byDoc[q.d] || {}, q.pg) + "</span>";
+          }).join("") + "</li>";
         }).join("");
-        return '<li class="tenet" data-docs="' + esc(Object.keys(by).join(" ")) + '"><p class="tenet-t">' + side + esc(t.tenet) + '</p><ul class="tq">' + qs + "</ul></li>";
+        return '<li class="tenet" data-filers="' + esc(Object.keys(fs).join("|")) + '"><p class="tenet-t">' + side + esc(t.tenet) + '</p><ul class="tq">' + qs + "</ul></li>";
       }).join("");
-      // Who-said-what filter, where there is more than one filer to tell apart.
-      var filers = g.docs.length > 2 ? '<div class="who-chips fg-filers" role="group" aria-label="Show one filer">' +
-        '<button type="button" class="who-chip" data-doc="" aria-pressed="true">All</button>' +
-        g.docs.map(function (d) {
-          return '<button type="button" class="who-chip" data-doc="' + esc(d.slug) + '" aria-pressed="false">' + esc(d.filer) + "</button>";
-        }).join("") + "</div>" : "";
+      var chips = filers.length > 2 ? '<div class="who-chips fg-filers" role="group" aria-label="Show one filer">' +
+        '<button type="button" class="who-chip" data-filer="" aria-pressed="true">All</button>' +
+        filers.map(function (f) {
+          return '<button type="button" class="who-chip" data-filer="' + esc(f) + '" aria-pressed="false">' + esc(f) + "</button>";
+        }).join("") + '</div><p class="fg-live" role="status" aria-live="polite"></p>' : "";
       var rows = g.docs.map(function (d) {
         return "<tr><td class=\"mono\">" + esc(fmtISO(d.date)) + "</td><td>" + esc(d.filer) + "</td><td>" + esc(d.kind) +
           (showSides && d.side ? ' <span class="side-tag side-' + esc(d.side) + '">' + esc(SIDE_LABEL[d.side] || d.side) + "</span>" : "") +
-          '</td><td class="mono">' + (d.pages ? d.pages + " pp" : "") + '</td><td><a href="' + esc(eli(d.accession)) +
+          '</td><td class="mono">' + esc(d.docket || g.docket) + '</td><td class="mono">' + (d.pages ? d.pages + " pp" : "n/a") + '</td><td><a href="' + esc(eli(d.accession)) +
           '" target="_blank" rel="noopener noreferrer"><span class="mono">' + esc(d.accession) + '</span> <span class="ext" aria-hidden="true">↗</span></a></td></tr>';
       }).join("");
       var roster = '<details class="fg-docs"><summary>Documents read <span class="mono">' + g.docs.length + "</span></summary>" +
-        '<div class="table-wrap"><table class="fg-table"><thead><tr><th>Date</th><th>Filer</th><th>Type</th><th>Length</th><th>Accession</th></tr></thead><tbody>' +
+        '<div class="table-wrap"><table class="fg-table"><thead><tr><th>Date</th><th>Filer</th><th>Type</th><th>Docket</th><th>Length</th><th>Accession</th></tr></thead><tbody>' +
         rows + "</tbody></table></div></details>";
-      return '<details class="fgroup" id="fg-' + esc(g.id) + '"' + (gi === 0 ? " open" : "") + '><summary class="fg-sum">' +
+      return '<details class="fgroup" id="fg-' + esc(g.id) + '"><summary class="fg-sum">' +
         '<span class="fg-h" role="heading" aria-level="3">' + esc(g.title) + ' <span class="fg-docket mono">' + esc(g.docket) + "</span></span>" +
-        '<span class="fg-n mono">' + g.tenets.length + "</span></summary>" +
-        (g.status ? '<p class="fg-status">' + esc(g.status) + "</p>" : "") + filers +
+        '<span class="fg-n mono">' + g.tenets.length + " points · latest " + esc(fmtISO(g.newest)) + "</span></summary>" +
+        (g.about ? '<p class="fg-about">' + esc(g.about) + "</p>" : "") +
+        (g.status ? '<p class="fg-status">' + esc(g.status) + "</p>" : "") +
+        (showSides && g.sideOf ? '<p class="fg-sideof">Supports and Opposes refer to ' + esc(g.sideOf) + ".</p>" : "") + chips +
         '<ol class="tenets">' + tenets + "</ol>" + roster + "</details>";
     }).join("");
     return head("Filings and orders since June",
-      nDocs + " documents in " + R.groups.length + " proceedings, newest first. Each line is one position, quoted from the page it appears on.") +
+      "What FERC decided and what the parties argued in " + R.groups.length + " proceedings since the June 18 orders, newest first. Bold lines are this site's one-line reading; quoted text is verbatim from the document.") +
       nav + groups;
   }
+  function applyFiler(grp, filer) {
+    grp.querySelectorAll(".fg-filers .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-filer") === filer)); });
+    var n = 0;
+    grp.querySelectorAll(".tenet").forEach(function (t) {
+      var on = !filer || t.getAttribute("data-filers").split("|").indexOf(filer) >= 0;
+      t.hidden = !on; if (on) n++;
+      // Inside a shown tenet, keep only the chosen filer's quotes.
+      t.querySelectorAll(".tq > li").forEach(function (li) { li.hidden = !!filer && li.getAttribute("data-filers").split("|").indexOf(filer) < 0; });
+    });
+    var live = grp.querySelector(".fg-live");
+    if (live) live.textContent = filer ? n + " points from " + filer : "";
+  }
+  var pendingFiling = null, filingHash = "";
+  function routeFiling(rest) {
+    var m = String(rest || "").match(/^([a-z0-9-]+)(?:\/(.+))?$/);
+    var grp = m && document.getElementById("fg-" + m[1]);
+    if (!grp) return;
+    filingHash = rest;
+    grp.open = true;
+    if (m[2]) {
+      var chip = [].slice.call(grp.querySelectorAll(".fg-filers .who-chip")).filter(function (c) { return slugify(c.getAttribute("data-filer")) === m[2]; })[0];
+      if (chip) applyFiler(grp, chip.getAttribute("data-filer"));
+    }
+    grp.scrollIntoView({ block: "start" });
+  }
   function wireFilings() {
-    panelFor("filings").addEventListener("click", function (ev) {
+    var panel = panelFor("filings");
+    panel.addEventListener("click", function (ev) {
       var b = ev.target.closest && ev.target.closest(".fg-filers .who-chip");
       if (!b) return;
-      var grp = b.closest(".fgroup"), doc = b.getAttribute("data-doc");
-      grp.querySelectorAll(".fg-filers .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c === b)); });
-      grp.querySelectorAll(".tenet").forEach(function (t) {
-        var on = !doc || (" " + t.getAttribute("data-docs") + " ").indexOf(" " + doc + " ") >= 0;
-        t.hidden = !on;
-        // Inside a shown tenet, keep only the chosen filer's quotes.
-        t.querySelectorAll(".tq > li").forEach(function (li) { li.hidden = !!doc && li.getAttribute("data-d") !== doc; });
-      });
+      var grp = b.closest(".fgroup"), filer = b.getAttribute("data-filer");
+      applyFiler(grp, filer);
+      filingHash = grp.id.slice(3) + (filer ? "/" + slugify(filer) : "");
+      if (history.replaceState) history.replaceState(null, "", "#filings/" + filingHash);
     });
+    if (pendingFiling) { routeFiling(pendingFiling); pendingFiling = null; }
   }
 
   /* ---- TAB: Commissioners (spoken record since June, then the June 18 concurrences) ---- */
@@ -1722,6 +1762,10 @@
     var c = (D.commissioners || []).filter(function (x) { return x.key === key; })[0];
     return c ? c.name : key;
   }
+  // Machine captions mangle the proper nouns that matter most here. Fixed for display only, in brackets so the
+  // reader sees the edit; the verified text in chapters.json keeps the caption's own words.
+  var CAPTION_FIX = [[/\bPGM\b/g, "[PJM]"], [/\bFK\b/g, "[FERC]"], [/\bFurk\b/g, "[FERC]"], [/\bNERK\b|\bNerk\b/g, "[NERC]"]];
+  function captionText(t) { CAPTION_FIX.forEach(function (f) { t = t.replace(f[0], f[1]); }); return t; }
   var commishWho = "all";
   var SQ_CAP = 3; // quotes shown per video before "All N quotes"; a commissioner filter shows all of theirs
   function renderCommissioners() {
@@ -1737,9 +1781,9 @@
       var qs = v.quotes.slice().sort(function (a, b) { return atSecs(a.at) - atSecs(b.at); }).map(function (q) {
         var s = atSecs(q.at);
         return '<li class="sq" data-who="' + esc(q.who) + '">' + (q.tenet ? '<p class="sq-t">' + esc(q.tenet) + "</p>" : "") +
-          "<blockquote>“" + esc(q.q) + '”</blockquote><span class="sq-cite">' + esc(q.whoName || commishName(q.who)) +
-          ' · <a href="' + esc(url + "&t=" + s + "s") + '" target="_blank" rel="noopener noreferrer" aria-label="Play at ' + fmtSecs(s) + '">▶ <span class="mono">' + fmtSecs(s) +
-          "</span></a> · auto-caption</span></li>";
+          "<blockquote>“" + esc(captionText(q.q)) + '”</blockquote><span class="sq-cite">' + esc(q.whoName || commishName(q.who)) +
+          ' · <a href="' + esc(url + "&t=" + s + "s") + '" target="_blank" rel="noopener noreferrer" aria-label="Play ' + esc(v.event || v.title) + " at " + fmtSecs(s) + '">▶ <span class="mono">' + fmtSecs(s) +
+          "</span></a></span></li>";
       }).join("");
       var toc = v.chapters.length ? '<details class="vtoc"><summary>Contents <span class="mono">' + v.chapters.length + "</span></summary><ol>" +
         v.chapters.map(function (c) {
@@ -1750,16 +1794,16 @@
       var dur = v.duration_s ? ' · <span class="mono">' + fmtSecs(v.duration_s) + "</span>" : "";
       return '<article class="appear" data-speakers="' + esc((v.speakers || []).join(" ")) + '"><h3><span class="mono appear-d">' + esc(fmtISO(v.date)) + "</span> " +
         '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(v.event || v.title) + ' <span class="ext" aria-hidden="true">↗</span></a></h3>' +
-        '<p class="appear-meta">' + esc(v.channel) + dur + "</p>" +
+        '<p class="appear-meta">' + esc(v.channel) + dur + " · machine captions</p>" +
         (qs ? '<ul class="sqs">' + qs + "</ul>" : "") +
         (v.quotes.length > SQ_CAP ? '<button type="button" class="sq-more" aria-expanded="false">All ' + v.quotes.length + " quotes</button>" : "") +
         toc + "</article>";
     }).join("");
     var spoken = vids.length ? '<section class="appears" id="appears">' + appear + '<p class="appears-none" hidden>Nothing from this commissioner in the videos read so far.</p></section>'
       : '<p class="cm-loading">The video record did not load (js/record-data.js).</p>';
-    return head("Commissioners", "What the five have said in public since the June 18 orders, newest first, then their June 18 concurring statements. Spoken quotes come from YouTube auto-captions; each links to the second it was said.") +
-      '<nav class="jump-row" aria-label="On this page"><button type="button" class="jump-btn" data-jump="#commish-h">June 18 concurring statements</button></nav>' +
-      chips + spoken + renderJuneStatements();
+    return head("Commissioners", "FERC has five commissioners; Laura Swett is Chairman. What they have said in public since the June 18 orders, newest first, then the written statements each attached to those orders. Spoken quotes are machine captions and can contain transcription errors.") +
+      chips + '<p class="sq-jump"><button type="button" class="jump-btn-plain" data-jump="#commish-h">Jump to the June 18 written statements ↓</button></p>' +
+      spoken + renderJuneStatements();
   }
   function wireCommissioners() {
     var panel = panelFor("commissioners");
@@ -1808,7 +1852,7 @@
   // Overview jump row: delegated once, so it works whichever render pass drew the buttons. Buttons, not
   // hash links, because the router owns location.hash and would read "#fm-h" as a tab name.
   document.addEventListener("click", function (ev) {
-    var b = ev.target && ev.target.closest ? ev.target.closest(".jump-btn") : null;
+    var b = ev.target && ev.target.closest ? ev.target.closest(".jump-btn, .jump-btn-plain") : null;
     if (!b) return;
     var t = document.querySelector(b.getAttribute("data-jump"));
     if (!t) return;
@@ -1874,6 +1918,10 @@
       else if (applyTimelineTrack) applyTimelineTrack(track); // already wired: set live state now
       activate("timeline", focus);
       scrollToTabsTop();
+    } else if (tab === "filings" && rest) {
+      if (!rendered.filings) pendingFiling = rest;               // wireFilings consumes and clears it
+      activate("filings", focus);
+      if (rendered.filings) routeFiling(rest);
     } else if (tab === "commissioners") {
       var who = /^(swett|rosner|see|chang|lacerte)$/.test(rest) ? rest : "all";
       if (!rendered.commissioners) pendingWho = who;            // wireCommissioners consumes and clears it
@@ -1959,6 +2007,10 @@
     // so it is the only thing to read. Preferring the pending handoff instead let a consumed-but-uncleared
     // value outvote the live filter, and the URL then disagreed with the rail.
     if (name === "timeline") writeTimelineHash(timelineTrack);
+    else if (name === "filings") {
+      var fb = "#filings" + ((pendingFiling || filingHash) ? "/" + (pendingFiling || filingHash) : "");
+      if (history.replaceState) history.replaceState(null, "", fb); else location.hash = fb.slice(1);
+    }
     else if (name === "commissioners") {
       var body = "#commissioners" + ((pendingWho || commishWho) === "all" ? "" : "/" + (pendingWho || commishWho));
       if (history.replaceState) history.replaceState(null, "", body); else location.hash = body.slice(1);

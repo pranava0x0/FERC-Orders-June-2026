@@ -177,10 +177,10 @@ a:hover { color: var(--accent-ink); }
 .tabs::-webkit-scrollbar { display: none; }
 /* Phones and tablets: all eight tabs visible at once as a 4x2 grid, so no tab needs a sideways swipe
    (UAT 2026-10-19: tabs past the third were off-screen at 375px; 2026-11-09: at 768px too, once there were
-   eight). The bar grows to two rows. "Commissioners" does not fit a phone cell, so it shortens there. */
+   eight). The bar grows to two rows. "Commissioners" does not fit a phone cell, so it reads "Statements" there. */
 .tab .tab-short { display: none; }
-/* Eight tabs with their numbers need about 1,000 px; the docket and RM26-4 asides only fit beyond that. */
-@media (max-width: 1240px) { .tab .tab-aside { display: none; } .tabs .tab { padding: 11px 12px; } }
+/* Eight tabs with their numbers need about 1,000 px at this padding. */
+@media (max-width: 1240px) { .tabs .tab { padding: 11px 12px; } }
 @media (max-width: 1060px) {
   .tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2px; overflow-x: visible; }
   .tabs .tab { padding: 8px 4px; justify-content: center; white-space: normal; text-align: center; font-size: 14px; }
@@ -1089,7 +1089,7 @@ a.cm-hm-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1
 }
 
 /* ---------------------------------------------------------------- Filings tab */
-.fg-docket { font-size: 12px; font-weight: 600; color: var(--text-muted); white-space: nowrap; }
+.fg-docket { font-size: 12px; font-weight: 600; color: var(--text-muted); overflow-wrap: anywhere; }
 .fg-status { color: var(--text); margin: 0 0 12px; max-width: 72ch; }
 .tenets { list-style: none; margin: 0; padding: 0; counter-reset: tenet; }
 .tenet { padding: 10px 0 12px; border-top: 1px solid var(--rule); }
@@ -1149,8 +1149,21 @@ a.cm-hm-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1
 .fg-sum:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .fg-filers { margin: 0 0 8px; }
 .fg-filers .who-chip { font-size: 12.5px; padding: 4px 10px; }
-.sq-more { appearance: none; font: 600 13px var(--font-sans); color: var(--accent-ink); background: none; border: 0; padding: 4px 0; cursor: pointer; text-decoration: underline; }
-@media (pointer: coarse) { .sq-more { min-height: 44px; } }
+.sq-more, .jump-btn-plain { appearance: none; font: 600 13px var(--font-sans); color: var(--accent-ink); background: none; border: 0; padding: 4px 0; cursor: pointer; text-decoration: underline; }
+@media (pointer: coarse) { .sq-more, .jump-btn-plain { min-height: 44px; } }
 .appear:not(.sq-all) .sq:nth-child(n+4) { display: none; }
 .who-one .appear .sq:nth-child(n+4):not([hidden]) { display: block; }
 .who-one .sq-more { display: none; }
+.fg-about { color: var(--ink); margin: 0 0 6px; max-width: 72ch; }
+.fg-status { color: var(--text-muted); font-size: 14px; }
+.fg-sideof { font-size: 13px; color: var(--text-muted); margin: 0 0 8px; }
+.fg-live { font-size: 13px; color: var(--text-muted); margin: 0 0 6px; min-height: 1em; }
+.tq-cite + .tq-cite { margin-top: 0; }
+/* The closed proceeding headers already list every proceeding; on a phone the jump row only pushed them down. */
+@media (max-width: 767px) { #panel-filings > .fg-nav { display: none; } }
+.sq-jump { margin: 0 0 10px; }
+@media (pointer: coarse) {
+  .tq-cite a, .sq-cite a { display: inline-flex; align-items: center; min-height: 44px; }
+  .vtoc li { padding: 0; }
+  .vtoc li a { display: inline-flex; align-items: center; min-height: 44px; }
+}

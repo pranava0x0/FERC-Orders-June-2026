@@ -80,13 +80,19 @@ def fetch(video: dict) -> Path:
     vid = video["id"]
     out = TEXT_DIR / f"{vid}.txt"
     with tempfile.TemporaryDirectory() as tmp:
-        cmd = [ytdlp(), "--skip-download", "--write-auto-subs", "--sub-langs", "en", "--sub-format", "json3",
+        cmd = [ytdlp(), "--skip-download", "--write-auto-subs", "--sub-langs", "en-orig,en", "--sub-format", "json3",
                "--ignore-no-formats-error", "--extractor-args", "youtube:player_client=android,ios", "-o", f"{tmp}/%(id)s",
                f"https://www.youtube.com/watch?v={vid}"]
         res = subprocess.run(cmd, capture_output=True, text=True)
-        subs = list(Path(tmp).glob(f"{vid}*.json3"))
+        # "en" alone can be YouTube's machine TRANSLATION of an auto-caption track (2026-11-09: the Oct 15 open
+        # meeting came back as translated text, "Novaya England" and all). "en-orig" is the English speech
+        # recognition; take it whenever it exists, and say in the header which track was used.
+        orig = list(Path(tmp).glob(f"{vid}*.en-orig.json3"))
+        plain = list(Path(tmp).glob(f"{vid}*.en.json3"))
+        subs = orig or plain
         if not subs:
             raise RuntimeError(f"{vid}: no captions ({res.stderr.strip().splitlines()[-1:] or 'no stderr'})")
+        track = "en-orig" if orig else "en"
         events = json.loads(subs[0].read_text())["events"]
     lines = json3_to_lines(events)
     if not lines:
@@ -94,7 +100,7 @@ def fetch(video: dict) -> Path:
     header = (f"{video['title']} ({video['channel']}, {video['date']}). Auto-generated YouTube captions; "
               f"imperfect, verify against the video.\n"
               f"Source: https://www.youtube.com/watch?v={vid}  Captured {video.get('captured_at', '')} via "
-              f"yt-dlp --write-auto-subs (android client).\n\n")
+              f"yt-dlp --write-auto-subs (android client), track {track}.\n\n")
     out.write_text(header + "\n".join(lines) + "\n")
     return out
 

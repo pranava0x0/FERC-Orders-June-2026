@@ -4,7 +4,7 @@
  "videos": [
   {
    "id": "V5HISlXLXfE",
-   "event": "Bloomberg interview (Swett), June 18",
+   "event": "Bloomberg interview (Swett)",
    "speakers": [
     "swett"
    ],
@@ -81,7 +81,7 @@
   },
   {
    "id": "OAGH1c-KENM",
-   "event": "FERC technical conference on PJM governance (AD26-7), July 23, 2026",
+   "event": "FERC technical conference on PJM governance (AD26-7)",
    "speakers": [
     "swett",
     "rosner",
@@ -238,7 +238,7 @@
      "who": "swett",
      "at": "00:10:50",
      "q": "And if we can't all agree, then FK will be in a position where we may have to do it for you.",
-     "tenet": "FERC will impose governance reforms if stakeholders cannot agree."
+     "tenet": "FERC may impose reforms if stakeholders cannot agree."
     },
     {
      "who": "swett",
@@ -473,72 +473,6 @@
      "at": "07:02:02",
      "q": "And if we don't get that action out of PJM, we will use every single legal authority within us and maybe some more to figure that out.",
      "tenet": "FERC will use every legal authority if PJM does not act."
-    }
-   ]
-  },
-  {
-   "id": "-acLHyIS-LQ",
-   "event": "FERC press conference, July 16, 2026 (Swett)",
-   "speakers": [
-    "swett"
-   ],
-   "chapters": [
-    {
-     "at": "00:00:00",
-     "title": "Opening: the PJM technical conference agenda",
-     "who": "swett"
-    },
-    {
-     "at": "00:01:31",
-     "title": "Q: deadlines for NERC's large-load standards"
-    },
-    {
-     "at": "00:03:06",
-     "title": "Q: Trump v. Slaughter and FERC independence"
-    },
-    {
-     "at": "00:05:40",
-     "title": "Q: next steps on agenda item E-16"
-    },
-    {
-     "at": "00:06:42",
-     "title": "Q: why PJM bought so little new generation"
-    },
-    {
-     "at": "00:08:48",
-     "title": "Online questions and close"
-    }
-   ],
-   "quotes": [
-    {
-     "who": "swett",
-     "at": "00:01:01",
-     "q": "stakeholder engagement process in PJM is slow where it should be fast, opaque where it should be transparent, and vulnerable to vetoes and agenda control",
-     "tenet": "PJM's stakeholder process is too slow, opaque and veto-prone for what the region needs."
-    },
-    {
-     "who": "swett",
-     "at": "00:01:31",
-     "q": "The stakes here are not abstract. They are measured by the reliability, availability and security of the network for 67 million people across the region.",
-     "tenet": "PJM governance matters because 67 million people depend on its reliability."
-    },
-    {
-     "who": "swett",
-     "at": "00:02:35",
-     "q": "today we set deadlines because I love deadlines. I think they are a great mechanism for achieving results.",
-     "tenet": "FERC set public deadlines for NERC's large-load standards to force timely results."
-    },
-    {
-     "who": "swett",
-     "at": "00:06:11",
-     "q": "especially an issue like this, which could have an impact of hundreds of billions of dollars, needs to be resolved in a law-based manner",
-     "tenet": "An issue worth hundreds of billions needs a careful, law-based answer soon."
-    },
-    {
-     "who": "swett",
-     "at": "00:07:13",
-     "q": "Am I surprised that PJM failed to meet the task? No, not surprised. That's why we're having a technical conference next week.",
-     "tenet": "PJM's thin new-generation procurement did not surprise her; it is why FERC convened the conference."
     }
    ]
   },
@@ -826,7 +760,7 @@
      "who": "lacerte",
      "at": "00:42:11",
      "q": "generally speaking, I am not a fan of extending FK jurisdiction and federal jurisdiction generally.",
-     "tenet": "He opposes expanding FERC jurisdiction."
+     "tenet": "LaCerte opposes expanding FERC jurisdiction."
     },
     {
      "who": "lacerte",
@@ -933,7 +867,7 @@
   },
   {
    "id": "e-LMMOKOhcc",
-   "event": "FERC reliability technical conference, October 21, 2026 (AD26-8)",
+   "event": "FERC reliability technical conference (AD26-8)",
    "speakers": [
     "swett",
     "rosner",
@@ -1256,211 +1190,7 @@
      "who": "lacerte",
      "at": "01:59:15",
      "q": "why should they be economically incentivized for throttling back the own they created in the first place at the expense of the rate payers",
-     "tenet": "Loads should not be paid to curtail demand at ratepayers' expense."
-    }
-   ]
-  },
-  {
-   "id": "Szwz4HyGcwk",
-   "event": "FERC open meeting, October 15, 2026",
-   "speakers": [
-    "swett",
-    "rosner",
-    "see",
-    "chang",
-    "lacerte"
-   ],
-   "chapters": [
-    {
-     "at": "00:00:00",
-     "title": "Call to order and meeting procedures"
-    },
-    {
-     "at": "00:02:34",
-     "title": "Swett on permitting and LNG items",
-     "who": "swett"
-    },
-    {
-     "at": "00:11:12",
-     "title": "Rosner on PJM, large loads and permitting",
-     "who": "rosner"
-    },
-    {
-     "at": "00:21:48",
-     "title": "See on Duke, PJM and permitting",
-     "who": "see"
-    },
-    {
-     "at": "00:34:30",
-     "title": "Chang on the West, PJM and Duke",
-     "who": "chang"
-    },
-    {
-     "at": "00:46:49",
-     "title": "LaCerte on NEPA, Duke and PJM orders",
-     "who": "lacerte"
-    },
-    {
-     "at": "01:01:05",
-     "title": "Consent agenda and votes"
-    },
-    {
-     "at": "01:02:37",
-     "title": "Item C1: LNG general authorization proposal"
-    },
-    {
-     "at": "01:13:18",
-     "title": "Commissioner questions on item C1"
-    },
-    {
-     "at": "01:22:30",
-     "title": "Staff announcements and farewells"
-    }
-   ],
-   "quotes": [
-    {
-     "who": "swett",
-     "at": "00:03:04",
-     "q": "Our the country is facing rapid growth energy demand. We must build more wires and pipes to meet demand and save energy reliable and available.",
-     "tenet": "Rising demand means the country must build more wires and pipes."
-    },
-    {
-     "who": "swett",
-     "at": "00:10:09",
-     "q": "When Americans will have better access to abundant energy supply, which we have, theirs costs will decrease, and their services will become more reliable",
-     "tenet": "More energy supply lowers costs and improves reliability for customers."
-    },
-    {
-     "who": "rosner",
-     "at": "00:11:42",
-     "q": "to guarantee that resource costs, purchased in reserve reserve, will be paid loads that provide for the need in reliability, not ordinary people.",
-     "tenet": "PJM backstop costs should fall on the loads that need it, not households."
-    },
-    {
-     "who": "rosner",
-     "at": "00:12:12",
-     "q": "So, it is obvious here that there is a wide range views on how we best to decide problems with reliability, which arise, but, in my opinion opinion, risk inaction significantly the risk prevails absence the ideal solution.",
-     "tenet": "The risk of doing nothing on PJM reliability outweighs the lack of a perfect fix."
-    },
-    {
-     "who": "rosner",
-     "at": "00:13:13",
-     "q": "I believe that data centers, who do not perform critically important functions, you should always turn off earlier, than ordinary people. Hint: houses, hospitals and schools should never be limited before, than a machining center data.",
-     "tenet": "Non-critical data centers should be curtailed before homes, hospitals and schools."
-    },
-    {
-     "who": "rosner",
-     "at": "00:13:43",
-     "q": "Exactly here we have instructed six RTOs to explain, how are they going to protect reliability, protect consumers, promote transparency, stimulate innovations in their areas of activity.",
-     "tenet": "The large load orders told six RTOs to explain how they protect reliability and consumers."
-    },
-    {
-     "who": "rosner",
-     "at": "00:14:13",
-     "q": "it is encouraging that we already received several proposals that meet the requirements",
-     "tenet": "Several RTO responses already meet what the large load orders asked for."
-    },
-    {
-     "who": "rosner",
-     "at": "00:14:13",
-     "q": "recently we instructed NERK to take for the consequences of large computational loads for reliability and security",
-     "tenet": "FERC directed NERC to address large computational loads."
-    },
-    {
-     "who": "rosner",
-     "at": "00:18:46",
-     "q": "Regardless of your goals, whether center connection data processing, development of clean energy or software reliable and available network, all they depend on transmission.",
-     "tenet": "Data center connection, clean energy and reliability all depend on transmission."
-    },
-    {
-     "who": "see",
-     "at": "00:23:19",
-     "q": "Last week we accepted the offer Duke Energy Carolina, which will help ensure payback of large loads, not leaving private and small businesses customers pay for blocked investments if load is not materialize or prematurely will stop.",
-     "tenet": "Large loads must repay grid investments so other customers do not carry stranded costs."
-    },
-    {
-     "who": "see",
-     "at": "00:23:50",
-     "q": "Duke and others service providers transmissions can and must do more in this field.",
-     "tenet": "Duke and other transmission providers must do more to protect existing customers."
-    },
-    {
-     "who": "see",
-     "at": "00:24:21",
-     "q": "To us solutions are needed that will provide new resources needed for reliable maintenance 67 million PJM customers",
-     "tenet": "PJM needs solutions that bring new resources to serve its customers reliably."
-    },
-    {
-     "who": "see",
-     "at": "00:24:21",
-     "q": "unfortunately, both the proposals had too many problems to we could responsibly accept them in full volume.",
-     "tenet": "Both PJM proposals had too many problems to approve in full."
-    },
-    {
-     "who": "see",
-     "at": "00:24:51",
-     "q": "I strongly urge PJM not to lose impulse and fast come back to us with reviewed documents 205, which can help launch a new one generation in online regime, respecting the limits state and federal government and laying out legally a sustainable path forward.",
-     "tenet": "PJM should refile quickly with a path that respects state and federal limits."
-    },
-    {
-     "who": "see",
-     "at": "00:25:52",
-     "q": "we must produce more energy, and also build infrastructure for its delivery there and then, where necessary, and eliminate unnecessary barriers to this way.",
-     "tenet": "The country must produce more energy and clear barriers to building delivery infrastructure."
-    },
-    {
-     "who": "chang",
-     "at": "00:37:01",
-     "q": "Again, we we return to resource sufficiency throughout the country, and on in the west it is not is different.",
-     "tenet": "Resource sufficiency is the common issue in every region, including the West."
-    },
-    {
-     "who": "chang",
-     "at": "00:41:39",
-     "q": "I I strongly urge PJM find an action plan on the future and, um, quick fix some we discovered disadvantages of proposals.",
-     "tenet": "PJM should fix the flaws in its proposals and return with a plan."
-    },
-    {
-     "who": "chang",
-     "at": "00:42:09",
-     "q": "My colleagues and I share a common goal, and I I hope you you'll hear it from the bench judges regarding the defense existing customers from the unjust cost transfer from infrastructure, built for service heavy loads.",
-     "tenet": "All commissioners want existing customers shielded from costs of infrastructure built for large loads."
-    },
-    {
-     "who": "chang",
-     "at": "00:42:44",
-     "q": "I think, that Duke did not substantiate properly its proposal regarding fair and reasonable tariffs.",
-     "tenet": "Duke did not adequately show its large load tariff was just and reasonable."
-    },
-    {
-     "who": "chang",
-     "at": "00:43:15",
-     "q": "we are trying to find a compromise between where they should be expenses, or where costs and risks should be distributed between different clients",
-     "tenet": "The open question is how to split large load costs and risks among customers."
-    },
-    {
-     "who": "lacerte",
-     "at": "00:57:31",
-     "q": "but rejection of this order, in my opinion opinion, would leave consumers defenseless.",
-     "tenet": "Rejecting the Duke order would leave consumers with no protection."
-    },
-    {
-     "who": "lacerte",
-     "at": "00:58:01",
-     "q": "I expect that service providers transmissions will be checked their respective tariffs and will consider additional means consumer protection beyond what we we affirm",
-     "tenet": "Transmission providers should add consumer protections beyond what FERC approved for Duke."
-    },
-    {
-     "who": "lacerte",
-     "at": "00:58:32",
-     "q": "she designed for so that the costs of large loads, about which This application is about, were properly distributed on load, not on other consumers.",
-     "tenet": "The PJM backstop is meant to put large load costs on load, not other consumers."
-    },
-    {
-     "who": "lacerte",
-     "at": "00:59:03",
-     "q": "the past Fridays on high level was adopted definition of big load and creating a registry big load",
-     "tenet": "The PJM resource sufficiency order adopted a large load definition and registry."
+     "tenet": "LaCerte asks why loads should be paid to curtail at ratepayers' expense."
     }
    ]
   }

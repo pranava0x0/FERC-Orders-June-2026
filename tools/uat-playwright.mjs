@@ -68,7 +68,7 @@ const GOALS = [
   ] },
   { id: "d", goal: "Commissioner June 18 statements", candidates: [
     { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }], target: Q(".commish-list .commish-rowcard") },
-    { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }, { label: "jump June 18 statements", click: Q('#panel-commissioners .jump-btn[data-jump="#commish-h"]') }], target: Q(".commish-list .commish-rowcard") },
+    { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }, { label: "jump June 18 statements", click: Q('#panel-commissioners .jump-btn-plain[data-jump="#commish-h"]') }], target: Q(".commish-list .commish-rowcard") },
     { steps: [{ label: "tab Dockets", click: Q("#tab-dockets") }, { label: "open E-7 commissioner block", open: Q("#panel-dockets details.docket details.dcom") }],
       target: Q("#panel-dockets details.docket details.dcom[open] .commish-row") },
   ] },
@@ -106,15 +106,15 @@ const GOALS = [
       target: "(__vtoc('e-LMMOKOhcc')||document).querySelector('ol li')" },
   ] },
   { id: "m", goal: "A protest's position in MISO LARS (Google), with its page", candidates: [
-    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "jump MISO LARS", click: Q('.jump-btn[data-jump="#fg-miso-lars"]') }],
-      target: "__tenetBy('miso-lars', 'Google')" },
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open MISO LARS", open: Q("#fg-miso-lars") },
+      { label: "filer chip Google", click: Q('#fg-miso-lars .who-chip[data-filer="Google"]') }], target: "__tenetBy('miso-lars', 'Google')" },
     { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "jump MISO LARS", click: Q('.jump-btn[data-jump="#fg-miso-lars"]') },
-      { label: "filer chip Google", click: Q('#fg-miso-lars .who-chip[data-doc="protest-er27-25-google"]') }], target: "__tenetBy('miso-lars', 'Google')" },
+      { label: "filer chip Google", click: Q('#fg-miso-lars .who-chip[data-filer="Google"]') }], target: "__tenetBy('miso-lars', 'Google')" },
   ] },
   { id: "n", goal: "What FERC held in the Oct 9 Large Load order (first holding)", candidates: [
     { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "jump to the order", click: Q('.jump-btn[data-jump="#fg-pjm-large-load-definition"]') }],
       target: Q("#fg-pjm-large-load-definition .tenet") },
-    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }], target: Q("#fg-pjm-large-load-definition .tenet") },
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open the order", open: Q("#fg-pjm-large-load-definition") }], target: Q("#fg-pjm-large-load-definition .tenet") },
   ] },
 ];
 

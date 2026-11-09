@@ -29,7 +29,9 @@ export function build() {
 
   // Newest proceeding first: a group is as new as its newest document.
   const groups = filings.groups.map((g) => {
-    const docs = g.docs.map((d) => ({ ...d, pages: d.pages ?? docMeta.get(d.slug)?.pages ?? null }))
+    // Docket and region per document, so a group spanning six dockets can say which order a quote is from.
+    const docs = g.docs.map((d) => ({ ...d, pages: d.pages ?? docMeta.get(d.slug)?.pages ?? null,
+      docket: docMeta.get(d.slug)?.docket || null, rto: docMeta.get(d.slug)?.rto || null }))
       .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : a.filer.localeCompare(b.filer)));
     return { ...g, docs, newest: docs[0]?.date || "" };
   }).sort((a, b) => (a.newest < b.newest ? 1 : a.newest > b.newest ? -1 : 0));
