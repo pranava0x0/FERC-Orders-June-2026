@@ -1716,7 +1716,7 @@
         '<ol class="tenets">' + tenets + "</ol>" + roster + "</details>";
     }).join("");
     return head("Filings and orders since June",
-      "What FERC decided and what the parties argued in " + R.groups.length + " proceedings since the June 18 orders, newest first. Bold lines are this site's one-line reading; quoted text is verbatim from the document.") +
+      "What FERC decided and what the parties argued in " + R.groups.length + " proceedings since the June 18 orders, newest first. Each point is this site's one-line reading; the quoted text is verbatim from the document.") +
       nav + groups;
   }
   function applyFiler(grp, filer) {
@@ -1729,7 +1729,7 @@
       t.querySelectorAll(".tq > li").forEach(function (li) { li.hidden = !!filer && li.getAttribute("data-filers").split("|").indexOf(filer) < 0; });
     });
     var live = grp.querySelector(".fg-live");
-    if (live) live.textContent = filer ? n + " points from " + filer : "";
+    if (live) live.textContent = filer ? n + (n === 1 ? " point" : " points") + " from " + filer : "";
   }
   var pendingFiling = null, filingHash = "";
   function routeFiling(rest) {
@@ -1764,7 +1764,8 @@
   }
   // Machine captions mangle the proper nouns that matter most here. Fixed for display only, in brackets so the
   // reader sees the edit; the verified text in chapters.json keeps the caption's own words.
-  var CAPTION_FIX = [[/\bPGM\b/g, "[PJM]"], [/\bFK\b/g, "[FERC]"], [/\bFurk\b/g, "[FERC]"], [/\bNERK\b|\bNerk\b/g, "[NERC]"]];
+  var CAPTION_FIX = [[/\bPGM\b/g, "[PJM]"], [/\bFK\b/g, "[FERC]"], [/\bFurk\b/g, "[FERC]"], [/\bNERK\b|\bNerk\b/g, "[NERC]"],
+    [/\btaker pay\b/g, "[take-or-pay]"], [/\bADTTs\b/g, "[ATTs]"], [/\bnew trench of\b/g, "new [tranche] of"]];
   function captionText(t) { CAPTION_FIX.forEach(function (f) { t = t.replace(f[0], f[1]); }); return t; }
   var commishWho = "all";
   var SQ_CAP = 3; // quotes shown per video before "All N quotes"; a commissioner filter shows all of theirs

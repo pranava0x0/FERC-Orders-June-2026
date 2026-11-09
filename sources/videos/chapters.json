@@ -1243,12 +1243,6 @@
    "quotes": [
     {
      "who": "swett",
-     "at": "00:00:33",
-     "q": "the current stakeholder process in PJM is slow where",
-     "tenet": "PJM's stakeholder process is too slow, opaque and open to vetoes."
-    },
-    {
-     "who": "swett",
      "at": "00:01:36",
      "q": "The stakes here are not abstract. They're measured in the reliability, affordability, and security of the grid for 67 million people across the region",
      "tenet": "PJM's problems put reliability and affordability for 67 million people at stake."
@@ -1401,7 +1395,7 @@
     {
      "who": "swett",
      "at": "00:03:39",
-     "q": "We have a very strong partnership with NARUC and the states have taken it upon themselves",
+     "q": "We have a very strong partnership with NARUC",
      "tenet": "FERC and the states are cooperating closely, including through NARUC."
     },
     {
@@ -1482,7 +1476,7 @@
      "who": "chang",
      "at": "00:04:21",
      "q": "This growth cycle is dominated by large computational loads and the electrification of heating and transportation along with increased manufacturing.",
-     "tenet": "Large computational loads dominate the current demand growth cycle."
+     "tenet": "Computational loads, electrification and manufacturing together drive the current growth cycle."
     },
     {
      "who": "chang",
@@ -1663,7 +1657,7 @@
     {
      "who": "swett",
      "at": "00:06:14",
-     "q": "certain large loads like data centers and crypto mining operations that NERC calls computational load have the potential to change their demand almost instantly. And this rapid fluctuation causes voltage stability issues that threaten",
+     "q": "certain large loads like data centers and crypto mining operations that NERC calls computational load have the potential to change their demand almost instantly. And this rapid fluctuation causes voltage stability issues",
      "tenet": "Data centers that swing demand instantly create voltage stability risks."
     },
     {
@@ -1743,18 +1737,6 @@
      "at": "00:36:46",
      "q": "The Commission has allowed significant creep in the value of this incentive over the years with little support as to why and has not really required applicants to support their assertions.",
      "tenet": "FERC let the capital structure incentive creep up without requiring applicants to support it."
-    },
-    {
-     "who": "lacerte",
-     "at": "00:36:16",
-     "q": "Which, as I have previously noted, has become a very low bar.",
-     "tenet": "The test for transmission incentives has become a very low bar."
-    },
-    {
-     "who": "lacerte",
-     "at": "00:41:58",
-     "q": "One unlocked the potential to call on backup generation at data centers. Uh that's an important fail-safe that we're going to continue to evaluate.",
-     "tenet": "Data center backup generation is an important fail-safe FERC will keep evaluating."
     },
     {
      "who": "lacerte",
@@ -1859,7 +1841,7 @@
      "who": "chang",
      "at": "00:31:17",
      "q": "our signals through 1920 2023 and the show cause order have really encouraged all all the transmission providers that you know definitely look at the tools in the toolbox just like uh topology optimization and switching.",
-     "tenet": "FERC's orders, including the show-cause orders, push providers toward topology optimization and switching."
+     "tenet": "Chang hopes FERC's orders, including the show-cause orders, push providers toward topology optimization and switching."
     },
     {
      "who": "chang",
@@ -1871,7 +1853,7 @@
      "who": "lacerte",
      "at": "00:38:40",
      "q": "Markets in the transmission are not static but rather ever evolving. And as the system topology changes, new transmission constraints can arise and create new submarkets.",
-     "tenet": "New transmission constraints create new PJM submarkets that market power analysis must track."
+     "tenet": "As topology changes, new constraints can create submarkets that market power analysis must track."
     },
     {
      "who": "lacerte",
@@ -1982,7 +1964,7 @@
     {
      "who": "swett",
      "at": "00:04:09",
-     "q": "of electricity generation we face if we don't build more. We cannot do that without more gas.",
+     "q": "We cannot do that without more gas.",
      "tenet": "Building the generation the country needs depends on more natural gas."
     },
     {
@@ -2049,12 +2031,12 @@
      "who": "rosner",
      "at": "00:19:41",
      "q": "Only about 13% of projects reach commercial operation. And the root cause, it's often simply that there's just not enough transmission capacity to go around.",
-     "tenet": "Too little transmission capacity is the root cause of failed interconnection projects."
+     "tenet": "Too little transmission capacity is often the root cause of failed interconnection projects."
     },
     {
      "who": "see",
      "at": "00:22:48",
-     "q": "somehow managing large load growth and keeping prices affordable came up in almost every conversation in TLI.",
+     "q": "somehow managing large load growth and keeping prices affordable came up in almost every conversation",
      "tenet": "Large load growth and affordability are on regulators' minds worldwide."
     },
     {
@@ -2095,12 +2077,6 @@
     },
     {
      "who": "chang",
-     "at": "00:41:02",
-     "q": "in the last two weeks, we voted to reject both PJM's proposed interim resource adequacy service and their reliably backs stop um, proposal.",
-     "tenet": "FERC rejected both PJM resource adequacy proposals as filed."
-    },
-    {
-     "who": "chang",
      "at": "00:41:34",
      "q": "I agree with our decision to reject them based on the flaws of the design and the filings. But this is not the end of the story.",
      "tenet": "The PJM proposals were flawed, and PJM should come back with fixes."
@@ -2120,7 +2096,7 @@
     {
      "who": "lacerte",
      "at": "00:57:08",
-     "q": "last Friday, October 10th, this order approved revisions to Duke's proforma that will ensure large loads pay their way while insulating customers should those large loads fail to materialize.",
+     "q": "this order approved revisions to Duke's proforma that will ensure large loads pay their way while insulating customers should those large loads fail to materialize.",
      "tenet": "Duke's revisions make large loads pay their way and shield customers from stranded costs."
     },
     {
