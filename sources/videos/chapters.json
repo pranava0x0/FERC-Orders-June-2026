@@ -1193,6 +1193,961 @@
      "tenet": "LaCerte asks why loads should be paid to curtail at ratepayers' expense."
     }
    ]
+  },
+  {
+   "id": "-acLHyIS-LQ",
+   "event": "FERC press conference (Swett)",
+   "speakers": [
+    "swett"
+   ],
+   "chapters": [
+    {
+     "at": "00:00:00",
+     "title": "Opening: PJM technical conference preview",
+     "who": "swett"
+    },
+    {
+     "at": "00:01:36",
+     "title": "Q: NERC deadlines on computational loads"
+    },
+    {
+     "at": "00:03:08",
+     "title": "Q: Trump v. Slaughter and FERC independence"
+    },
+    {
+     "at": "00:04:42",
+     "title": "Q: ex parte rules"
+    },
+    {
+     "at": "00:05:45",
+     "title": "Q: hypothetical cost structures (E16)"
+    },
+    {
+     "at": "00:06:50",
+     "title": "Q: PJM capacity auction shortfall"
+    },
+    {
+     "at": "00:07:52",
+     "title": "Swett on a PJM path forward",
+     "who": "swett"
+    },
+    {
+     "at": "00:08:24",
+     "title": "Online questions and close"
+    },
+    {
+     "at": "00:09:36",
+     "title": "Turn to staff briefing"
+    }
+   ],
+   "quotes": [
+    {
+     "who": "swett",
+     "at": "00:00:33",
+     "q": "the current stakeholder process in PJM is slow where",
+     "tenet": "PJM's stakeholder process is too slow, opaque and open to vetoes."
+    },
+    {
+     "who": "swett",
+     "at": "00:01:36",
+     "q": "The stakes here are not abstract. They're measured in the reliability, affordability, and security of the grid for 67 million people across the region",
+     "tenet": "PJM's problems put reliability and affordability for 67 million people at stake."
+    },
+    {
+     "who": "swett",
+     "at": "00:02:36",
+     "q": "And having a deadline out there in the public signals not only how important this is to FERC, but also to NERC stakeholders.",
+     "tenet": "Public deadlines signal how much FERC prioritizes NERC's large load standards."
+    },
+    {
+     "who": "swett",
+     "at": "00:07:21",
+     "q": "Am I surprised that PJM failed to deliver? No, I am not. That is why we're having a technical conference next week.",
+     "tenet": "The PJM shortfall did not surprise the chairman and prompted the technical conference."
+    },
+    {
+     "who": "swett",
+     "at": "00:07:52",
+     "q": "this is a problem that involves people at the federal level, at the market level, at the state level, the registered entities, the market participants in the market, all the utilities",
+     "tenet": "Fixing PJM requires federal, state, market and utility participants to coalesce."
+    },
+    {
+     "who": "swett",
+     "at": "00:08:24",
+     "q": "I am very optimistic that certain proposals will be front-runners that are grounded in the record that we collect next week so that there should be a more clear path forward for PJM after that.",
+     "tenet": "The technical conference record should produce front-running proposals for PJM."
+    }
+   ]
+  },
+  {
+   "id": "e7jfcZxrqvI",
+   "event": "FERC press conference (Swett)",
+   "speakers": [
+    "swett"
+   ],
+   "chapters": [
+    {
+     "at": "00:00:01",
+     "title": "Q: Green Chili pipeline and ex parte contacts"
+    },
+    {
+     "at": "00:01:03",
+     "title": "Swett on ex parte restrictions",
+     "who": "swett"
+    },
+    {
+     "at": "00:01:34",
+     "title": "Q: winter storm report and forecasting errors"
+    },
+    {
+     "at": "00:02:05",
+     "title": "Swett on load forecasting",
+     "who": "swett"
+    },
+    {
+     "at": "00:02:37",
+     "title": "Q: grid enhancing technologies task force"
+    },
+    {
+     "at": "00:03:40",
+     "title": "Swett on GETs information gathering",
+     "who": "swett"
+    },
+    {
+     "at": "00:04:11",
+     "title": "Timing: next year, October teaser",
+     "who": "swett"
+    }
+   ],
+   "quotes": [
+    {
+     "who": "swett",
+     "at": "00:02:05",
+     "q": "it's very clear that a lot of work can be done on load forecasting to make it more accurate, and that is related to some ongoing proceedings that we have before us",
+     "tenet": "Load forecasting needs to be more accurate, and pending proceedings bear on it."
+    },
+    {
+     "who": "swett",
+     "at": "00:03:09",
+     "q": "clearly you've seen that we maintain GETs and ADTTs in the back of our minds when approaching all of the issues before us, and that's why it's woven inextricably into our approaches in the orders to show cause that went out in June.",
+     "tenet": "Grid enhancing technologies are built into the June show-cause orders."
+    },
+    {
+     "who": "swett",
+     "at": "00:03:40",
+     "q": "I have assembled team across offices to look into what we can do as a commission to both encourage deployment of these technologies and to ensure that they are economical",
+     "tenet": "FERC staff are studying how to encourage economical grid enhancing technologies."
+    },
+    {
+     "who": "swett",
+     "at": "00:04:11",
+     "q": "but it is a priority for me and we are going to act on it.",
+     "tenet": "Grid enhancing technologies are a priority and FERC will act on them."
+    }
+   ]
+  },
+  {
+   "id": "uewD035h3_Q",
+   "event": "FERC press conference (Swett)",
+   "speakers": [
+    "swett"
+   ],
+   "chapters": [
+    {
+     "at": "00:00:00",
+     "title": "Opening: items C1 and C2"
+    },
+    {
+     "at": "00:00:31",
+     "title": "Q: LNG blanket certificate acreage"
+    },
+    {
+     "at": "00:01:35",
+     "title": "Q: Clean Air Act proposals and communities"
+    },
+    {
+     "at": "00:03:07",
+     "title": "Q: PJM large load reliability order"
+    },
+    {
+     "at": "00:04:10",
+     "title": "Swett on state partnership and affordability",
+     "who": "swett"
+    },
+    {
+     "at": "00:04:41",
+     "title": "Q: reforming ex parte rules"
+    },
+    {
+     "at": "00:06:13",
+     "title": "Q: Commissioner Chang's dissents"
+    },
+    {
+     "at": "00:07:48",
+     "title": "Q: reliability technical conference and security"
+    },
+    {
+     "at": "00:09:24",
+     "title": "Online questions and close"
+    }
+   ],
+   "quotes": [
+    {
+     "who": "swett",
+     "at": "00:03:07",
+     "q": "I certainly am hopeful that PJM returns with better proposals, and all the indications that I'm hearing are that they will.",
+     "tenet": "PJM is expected to return with better large load proposals."
+    },
+    {
+     "who": "swett",
+     "at": "00:03:39",
+     "q": "We have a very strong partnership with NARUC and the states have taken it upon themselves",
+     "tenet": "FERC and the states are cooperating closely, including through NARUC."
+    },
+    {
+     "who": "swett",
+     "at": "00:04:10",
+     "q": "where we are ordering increased transparency in our jurisdictional matters to ensure that our state counterparts have the tools to protect consumers within their retail responsibility.",
+     "tenet": "The June orders add transparency so states can protect retail consumers."
+    },
+    {
+     "who": "swett",
+     "at": "00:04:10",
+     "q": "I am fully confident from my conversations with every state that I have spoken to that they are like-minded. We all share the goal of ensuring affordability",
+     "tenet": "States and FERC share the goal of keeping power affordable."
+    }
+   ]
+  },
+  {
+   "id": "MeycoJAuohY",
+   "event": "CAISO Stakeholder Symposium keynote (Chang)",
+   "speakers": [
+    "chang"
+   ],
+   "chapters": [
+    {
+     "at": "00:00:05",
+     "title": "Host introduces Commissioner Chang"
+    },
+    {
+     "at": "00:01:13",
+     "title": "Chang: rising demand and the moment",
+     "who": "chang"
+    },
+    {
+     "at": "00:02:15",
+     "title": "Chang on EDAM and Western markets",
+     "who": "chang"
+    },
+    {
+     "at": "00:04:21",
+     "title": "Chang: four large load mismatches",
+     "who": "chang"
+    },
+    {
+     "at": "00:08:31",
+     "title": "Chang on the show-cause dockets",
+     "who": "chang"
+    },
+    {
+     "at": "00:10:37",
+     "title": "Chang on resource adequacy",
+     "who": "chang"
+    },
+    {
+     "at": "00:11:39",
+     "title": "Chang on transmission planning and cost allocation",
+     "who": "chang"
+    },
+    {
+     "at": "00:13:45",
+     "title": "Chang on hydro, wildfire and drought",
+     "who": "chang"
+    },
+    {
+     "at": "00:16:56",
+     "title": "Q&A: seams between Western markets"
+    },
+    {
+     "at": "00:19:30",
+     "title": "Q&A: planning, interconnection and Order 1920"
+    },
+    {
+     "at": "00:22:12",
+     "title": "Q&A: AI, grid technologies and reliability"
+    }
+   ],
+   "quotes": [
+    {
+     "who": "chang",
+     "at": "00:04:21",
+     "q": "This growth cycle is dominated by large computational loads and the electrification of heating and transportation along with increased manufacturing.",
+     "tenet": "Large computational loads dominate the current demand growth cycle."
+    },
+    {
+     "who": "chang",
+     "at": "00:05:56",
+     "q": "The actual amount of materialized large loads can be only a portion of how much are being forecasted today and in the past few months.",
+     "tenet": "Forecast large loads may materialize at only a fraction of projected levels."
+    },
+    {
+     "who": "chang",
+     "at": "00:06:27",
+     "q": "It takes data centers 18 to 24 months to build to build whereas generation transmission take three to 10 years and sometimes beyond.",
+     "tenet": "Data centers build far faster than generation and transmission."
+    },
+    {
+     "who": "chang",
+     "at": "00:06:57",
+     "q": "3,800 megawatts of load dropped off instantaneously. The sheer size and their effects on the system create great risk for the bulk system.",
+     "tenet": "Sudden data center load drops create serious risk for the bulk system."
+    },
+    {
+     "who": "chang",
+     "at": "00:07:30",
+     "q": "we do not want to see this again and we're setting new rules and new reliability criteria for large loads.",
+     "tenet": "FERC is setting new reliability rules for large loads."
+    },
+    {
+     "who": "chang",
+     "at": "00:08:01",
+     "q": "the traditional ways of allocating these new generation and transmission costs through averaging all the costs to all loads may no longer work.",
+     "tenet": "Averaging new costs across all loads may no longer work."
+    },
+    {
+     "who": "chang",
+     "at": "00:08:01",
+     "q": "We have to quickly examine whether this new trench of new large loads need to pay incremental costs as opposed to average costs to minimize the impact on other consumers.",
+     "tenet": "FERC must examine whether new large loads should pay incremental rather than average costs."
+    },
+    {
+     "who": "chang",
+     "at": "00:09:03",
+     "q": "The commission needs to pursue meaningful customer protection. This means as new infrastructure is developed, costs must be fairly assigned to new and existing customers commensurate with the benefits they receive.",
+     "tenet": "Costs must be assigned to customers in line with the benefits they receive."
+    },
+    {
+     "who": "chang",
+     "at": "00:09:34",
+     "q": "This we have to work with the states because the allocation of costs happens both at the wholesale at the federal level as well as the states level.",
+     "tenet": "Cost allocation for new load requires FERC to work with the states."
+    },
+    {
+     "who": "chang",
+     "at": "00:09:34",
+     "q": "Second, we should seek to fully understand the potential implications of offering new transmission services.",
+     "tenet": "FERC should fully understand the implications of new transmission services before offering them."
+    },
+    {
+     "who": "chang",
+     "at": "00:10:05",
+     "q": "While there's potential that in facilitating more efficient use and buildout of the transmission system, we also run the system tighter than what we're used to.",
+     "tenet": "New transmission services may improve efficiency but mean running the system tighter."
+    },
+    {
+     "who": "chang",
+     "at": "00:10:37",
+     "q": "As I said, large loads highlight the urgency for resource adequacy.",
+     "tenet": "Large loads raise the urgency of resource adequacy."
+    },
+    {
+     "who": "chang",
+     "at": "00:11:09",
+     "q": "As demand outpaces supply, how do we secure enough supply or demand resources and at what costs?",
+     "tenet": "Chang asks how to secure enough supply as demand outpaces it, and at what cost."
+    },
+    {
+     "who": "chang",
+     "at": "00:13:13",
+     "q": "the use of advanced transmission technologies must be part of the solution to ensure that we get the most out of our existing and new transmission systems. This is a must-have, not an option, not a, you know, a pilot.",
+     "tenet": "Advanced transmission technologies must be part of the solution, beyond the pilot phase."
+    },
+    {
+     "who": "chang",
+     "at": "00:23:46",
+     "q": "there is a need to accelerate interconnection studies so the use of AI and there are several companies that's using different technologies but ultimately it's about faster power flow analyses",
+     "tenet": "Interconnection studies need to be faster, including through AI-assisted power flow analysis."
+    },
+    {
+     "who": "chang",
+     "at": "00:25:19",
+     "q": "Again, it's always the balance between reliability and affordability. And just like FK when we proposed new transmission services, we thought a lot about that.",
+     "tenet": "Reliability and affordability must be balanced, including when proposing new transmission services."
+    },
+    {
+     "who": "chang",
+     "at": "00:25:19",
+     "q": "What would it mean when we integrate more load before they are absolutely resource adequate or the reserve margin is dropping?",
+     "tenet": "Chang asks what reliability risk comes from adding load before resources are adequate."
+    }
+   ]
+  },
+  {
+   "id": "RTsgPoF7BBE",
+   "event": "FERC open meeting",
+   "speakers": [
+    "swett",
+    "rosner",
+    "see",
+    "chang",
+    "lacerte"
+   ],
+   "chapters": [
+    {
+     "at": "00:00:02",
+     "title": "Welcome, meeting rules and pledge"
+    },
+    {
+     "at": "00:02:38",
+     "title": "Swett: grid operators and PJM auction results",
+     "who": "swett"
+    },
+    {
+     "at": "00:05:43",
+     "title": "Swett on NERC large load standards (E1)",
+     "who": "swett"
+    },
+    {
+     "at": "00:07:47",
+     "title": "Swett on Western seams report (E2)",
+     "who": "swett"
+    },
+    {
+     "at": "00:09:50",
+     "title": "Swett on transmission incentives (E16)",
+     "who": "swett"
+    },
+    {
+     "at": "00:12:27",
+     "title": "Swett on hydro categorical exclusions",
+     "who": "swett"
+    },
+    {
+     "at": "00:14:00",
+     "title": "Rosner on large loads, NERC and concurrences",
+     "who": "rosner"
+    },
+    {
+     "at": "00:21:15",
+     "title": "See on PJM auction and governance",
+     "who": "see"
+    },
+    {
+     "at": "00:27:58",
+     "title": "Chang on transmission needs and NERC",
+     "who": "chang"
+    },
+    {
+     "at": "00:34:12",
+     "title": "LaCerte on incentives, Section 401, PJM visit",
+     "who": "lacerte"
+    },
+    {
+     "at": "00:43:31",
+     "title": "Consent agenda and vote"
+    }
+   ],
+   "quotes": [
+    {
+     "who": "swett",
+     "at": "00:04:11",
+     "q": "this week, PJM released results of their 2028-2029 base residual auction, which cleared nearly 7 GW short of its reliability requirement. This is the second consecutive year with a significant capacity shortfall.",
+     "tenet": "PJM's latest capacity auction fell nearly 7 GW short of its reliability requirement."
+    },
+    {
+     "who": "swett",
+     "at": "00:05:12",
+     "q": "The pace of new resource development is simply unacceptable. Since day one, I've been very clear that we need to accelerate the buildout of new generation",
+     "tenet": "New generation must be built much faster."
+    },
+    {
+     "who": "swett",
+     "at": "00:06:14",
+     "q": "certain large loads like data centers and crypto mining operations that NERC calls computational load have the potential to change their demand almost instantly. And this rapid fluctuation causes voltage stability issues that threaten",
+     "tenet": "Data centers that swing demand instantly create voltage stability risks."
+    },
+    {
+     "who": "swett",
+     "at": "00:06:45",
+     "q": "today we recognize that this schedule NERC has proposed is not optional and we must ensure that the critical work of winning the AI race does not threaten reliability in our country.",
+     "tenet": "NERC's large load standards schedule is mandatory, so AI growth does not threaten reliability."
+    },
+    {
+     "who": "swett",
+     "at": "00:11:24",
+     "q": "every dollar of incentives that we approve ultimately shows up on someone's bill and we're very aware of that.",
+     "tenet": "Every dollar of transmission incentives ends up on customers' bills."
+    },
+    {
+     "who": "rosner",
+     "at": "00:14:31",
+     "q": "we're continuing the work that started with our orders to show cause last month. And that's we we're trying to get large loads online quickly, reliably, and with safeguards that protect regular consumers.",
+     "tenet": "Large loads should connect quickly and reliably, with safeguards for regular consumers."
+    },
+    {
+     "who": "rosner",
+     "at": "00:15:02",
+     "q": "we're putting some deadlines on on registration criteria for large loads, which are in this case data centers predominantly, by the end of this year.",
+     "tenet": "NERC must set registration criteria for large loads by year end."
+    },
+    {
+     "who": "rosner",
+     "at": "00:18:08",
+     "q": "I also think it's really important for applicants when they come to the commission uh, to show how what you're requesting on rates is going to help provide reliable power and how how your request is also going to save regular people money.",
+     "tenet": "Rate requests must show how they improve reliability and save customers money."
+    },
+    {
+     "who": "see",
+     "at": "00:22:18",
+     "q": "Strong electricity demand and too limited supply continue to place upward pressure on prices and make reforms that can let the region keep pace with growing demand all the more important.",
+     "tenet": "Strong demand and limited supply push PJM prices up, so reforms are urgent."
+    },
+    {
+     "who": "see",
+     "at": "00:22:49",
+     "q": "This region needs an RTO that can deliver real and time-sensitive results in market reform and otherwise on the time frame that consumers need.",
+     "tenet": "PJM must deliver market reforms on the timeline consumers need."
+    },
+    {
+     "who": "see",
+     "at": "00:22:49",
+     "q": "part of that also includes the need for a governance structure that can not only deliver concrete results, but that can give parties the type of confidence in those reforms that's necessary to drive investment where and when it's needed.",
+     "tenet": "PJM needs governance that delivers results and gives investors confidence."
+    },
+    {
+     "who": "see",
+     "at": "00:24:52",
+     "q": "to help ensure that rapid data center growth can ultimately aid and not undermine the grid that we all rely on.",
+     "tenet": "NERC standards should make data center growth help the grid, not hurt it."
+    },
+    {
+     "who": "chang",
+     "at": "00:30:02",
+     "q": "let's not forget that transmission as DOE's report pointed out very strongly that the transmission is still the backbone and the interregional transmission system has great benefits for the country",
+     "tenet": "Transmission remains the grid's backbone, and interregional lines carry large benefits."
+    },
+    {
+     "who": "chang",
+     "at": "00:30:35",
+     "q": "A well-planned grid with strong backbone can make it much easier to integrate the new generation to power the new large loads.",
+     "tenet": "A well-planned grid makes it easier to serve new large loads."
+    },
+    {
+     "who": "chang",
+     "at": "00:31:38",
+     "q": "has been leading industry participants in developing these reliability standards and registry criteria that will be applied to a computational load, and these are again an essential component of keeping a reliable system.",
+     "tenet": "NERC's computational load standards and registry criteria are essential to reliability."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:36:46",
+     "q": "The Commission has allowed significant creep in the value of this incentive over the years with little support as to why and has not really required applicants to support their assertions.",
+     "tenet": "FERC let the capital structure incentive creep up without requiring applicants to support it."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:36:16",
+     "q": "Which, as I have previously noted, has become a very low bar.",
+     "tenet": "The test for transmission incentives has become a very low bar."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:41:58",
+     "q": "One unlocked the potential to call on backup generation at data centers. Uh that's an important fail-safe that we're going to continue to evaluate.",
+     "tenet": "Data center backup generation is an important fail-safe FERC will keep evaluating."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:42:28",
+     "q": "I will reiterate my favorite refrain that we need more dispatchable generation and infrastructure to serve the American people.",
+     "tenet": "The country needs more dispatchable generation and infrastructure."
+    }
+   ]
+  },
+  {
+   "id": "VAiGGH5O48U",
+   "event": "FERC open meeting",
+   "speakers": [
+    "swett",
+    "rosner",
+    "see",
+    "chang",
+    "lacerte"
+   ],
+   "chapters": [
+    {
+     "at": "00:00:01",
+     "title": "Welcome, meeting rules and pledge"
+    },
+    {
+     "at": "00:02:37",
+     "title": "Swett: 9/11 remembrance, transmission switching order",
+     "who": "swett"
+    },
+    {
+     "at": "00:07:23",
+     "title": "Swett on physical security and ISO-NE billing (E1, E2)",
+     "who": "swett"
+    },
+    {
+     "at": "00:09:58",
+     "title": "Swett on gas pipeline items (C1, C2)",
+     "who": "swett"
+    },
+    {
+     "at": "00:12:33",
+     "title": "Rosner on grid technologies, E1 and E2",
+     "who": "rosner"
+    },
+    {
+     "at": "00:17:50",
+     "title": "Rosner on a departing staff member",
+     "who": "rosner"
+    },
+    {
+     "at": "00:22:29",
+     "title": "See on Alaska trip, E2 and pipelines",
+     "who": "see"
+    },
+    {
+     "at": "00:30:13",
+     "title": "Chang on topology optimization, E4 and hydro",
+     "who": "chang"
+    },
+    {
+     "at": "00:36:35",
+     "title": "LaCerte on E1, E4 submarkets, C2, staffing",
+     "who": "lacerte"
+    },
+    {
+     "at": "00:43:48",
+     "title": "Consent agenda and vote"
+    },
+    {
+     "at": "00:44:53",
+     "title": "E3 presentation: winter 2026 Arctic cold review"
+    },
+    {
+     "at": "00:57:32",
+     "title": "Commissioner questions on the winter review"
+    },
+    {
+     "at": "01:13:08",
+     "title": "Farewells to departing FERC staff"
+    }
+   ],
+   "quotes": [
+    {
+     "who": "rosner",
+     "at": "00:13:04",
+     "q": "our orders to show cause uh in in this environment um have real teeth on on pushing the industry further uh on not just topology optimization but all of the the different grid enhancing technologies that can deliver real value.",
+     "tenet": "The show-cause orders push the industry hard on grid enhancing technologies."
+    },
+    {
+     "who": "rosner",
+     "at": "00:17:18",
+     "q": "we got to get more out of the grid and and that that we have today and and look for that efficiency to unlock consumer savings but also the only way uh we can meet this demand moment is also through adding some new supply",
+     "tenet": "Meeting demand takes grid efficiency and also new supply."
+    },
+    {
+     "who": "rosner",
+     "at": "00:19:54",
+     "q": "the complicated issue of collocation just about right in terms of what works in our jurisdiction, what works for people who want to do that.",
+     "tenet": "The co-location work aimed to fit FERC's jurisdiction and what developers need."
+    },
+    {
+     "who": "chang",
+     "at": "00:31:17",
+     "q": "our signals through 1920 2023 and the show cause order have really encouraged all all the transmission providers that you know definitely look at the tools in the toolbox just like uh topology optimization and switching.",
+     "tenet": "FERC's orders, including the show-cause orders, push providers toward topology optimization and switching."
+    },
+    {
+     "who": "chang",
+     "at": "00:33:54",
+     "q": "certainly loads are changing, load patterns are changing and generation um groups are changing.",
+     "tenet": "Load and generation patterns are changing, so merger market analysis must adapt."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:38:40",
+     "q": "Markets in the transmission are not static but rather ever evolving. And as the system topology changes, new transmission constraints can arise and create new submarkets.",
+     "tenet": "New transmission constraints create new PJM submarkets that market power analysis must track."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:41:15",
+     "q": "It's also incumbent upon our nation's utilities to maintain the public trust and charge households and businesses accurately and fairly.",
+     "tenet": "Utilities must charge households and businesses accurately and fairly."
+    }
+   ]
+  },
+  {
+   "id": "Szwz4HyGcwk",
+   "event": "FERC open meeting",
+   "speakers": [
+    "swett",
+    "rosner",
+    "see",
+    "chang",
+    "lacerte"
+   ],
+   "chapters": [
+    {
+     "at": "00:00:00",
+     "title": "Welcome, meeting rules and pledge"
+    },
+    {
+     "at": "00:02:37",
+     "title": "Swett: permitting reform and the gas buildout",
+     "who": "swett"
+    },
+    {
+     "at": "00:05:12",
+     "title": "Swett on the LNG blanket proposal (C1)",
+     "who": "swett"
+    },
+    {
+     "at": "00:08:20",
+     "title": "Swett on the NEPA air policy statement (C2)",
+     "who": "swett"
+    },
+    {
+     "at": "00:10:55",
+     "title": "Rosner on PJM backstop and large loads",
+     "who": "rosner"
+    },
+    {
+     "at": "00:15:33",
+     "title": "Rosner on the Senate permitting bill",
+     "who": "rosner"
+    },
+    {
+     "at": "00:21:47",
+     "title": "See on Duke large load order and PJM",
+     "who": "see"
+    },
+    {
+     "at": "00:25:23",
+     "title": "See on permitting, LNG blanket, air policy",
+     "who": "see"
+    },
+    {
+     "at": "00:31:05",
+     "title": "See on staff changes",
+     "who": "see"
+    },
+    {
+     "at": "00:34:10",
+     "title": "Chang on Western trip and Idaho lab",
+     "who": "chang"
+    },
+    {
+     "at": "00:41:02",
+     "title": "Chang on PJM rejections and Duke dissent",
+     "who": "chang"
+    },
+    {
+     "at": "00:43:37",
+     "title": "Chang on LNG blanket and air dissent",
+     "who": "chang"
+    },
+    {
+     "at": "00:46:48",
+     "title": "LaCerte on LNG blanket and NEPA history",
+     "who": "lacerte"
+    },
+    {
+     "at": "00:56:06",
+     "title": "LaCerte on permitting bill, Duke, PJM orders",
+     "who": "lacerte"
+    },
+    {
+     "at": "01:01:19",
+     "title": "Consent agenda and vote"
+    },
+    {
+     "at": "01:02:56",
+     "title": "C1 presentation: LNG blanket authorizations"
+    },
+    {
+     "at": "01:13:21",
+     "title": "Commissioner questions on the LNG rule"
+    },
+    {
+     "at": "01:22:14",
+     "title": "Farewells to departing FERC staff"
+    }
+   ],
+   "quotes": [
+    {
+     "who": "swett",
+     "at": "00:04:09",
+     "q": "of electricity generation we face if we don't build more. We cannot do that without more gas.",
+     "tenet": "Building the generation the country needs depends on more natural gas."
+    },
+    {
+     "who": "swett",
+     "at": "00:10:24",
+     "q": "When Americans are better able to access the abundant energy supply that we have, their costs go down and their service becomes more reliable",
+     "tenet": "More infrastructure to deliver energy lowers costs and improves reliability."
+    },
+    {
+     "who": "rosner",
+     "at": "00:11:57",
+     "q": "we found that PGM must revise its proposal to ensure that the costs of resources procured in the back stop are paid for by the loads that are driving the reliability need and not by regular people.",
+     "tenet": "PJM's backstop costs must be paid by the loads driving the need, not regular people."
+    },
+    {
+     "who": "rosner",
+     "at": "00:11:57",
+     "q": "we have a responsibility to to the 67 million people in PJM to keep the lights on. And with the best forecast we have today, it shows we're over 6,000 megawatts short of what we need to do that.",
+     "tenet": "PJM's forecast shows it is over 6,000 megawatts short of what reliability requires."
+    },
+    {
+     "who": "rosner",
+     "at": "00:12:27",
+     "q": "the downside risk of inaction far outweighs the risk of not having the perfect solution.",
+     "tenet": "Inaction in PJM is riskier than acting on an imperfect solution."
+    },
+    {
+     "who": "rosner",
+     "at": "00:12:59",
+     "q": "data centers that aren't serving critical functions should always be shut off be before regular people. Hint, homes, hospitals, and schools should never be be curtailed before a data center.",
+     "tenet": "Non-critical data centers should be curtailed before homes, hospitals and schools."
+    },
+    {
+     "who": "rosner",
+     "at": "00:12:59",
+     "q": "PJM's proposal flipped the typical paradigm of using market signals to incent responsive demand. And it also risked never sending a market signal to get infrastructure built",
+     "tenet": "PJM's curtailment proposal replaced market signals and risked never getting new supply built."
+    },
+    {
+     "who": "rosner",
+     "at": "00:13:29",
+     "q": "In mid November, responses are due to our large load show cause orders. This is where we directed six RTO's to explain how they're going to safeguard reliability, protect consumers, promote transparency, foster innovation in their footprints.",
+     "tenet": "Six RTOs must answer the large load show-cause orders by mid November."
+    },
+    {
+     "who": "rosner",
+     "at": "00:14:01",
+     "q": "we'd love to see section 205 filings that we can process faster. And I'm encouraged that we've already received a handful of proposals that are responsive",
+     "tenet": "FERC wants section 205 filings it can process faster, and some have arrived."
+    },
+    {
+     "who": "rosner",
+     "at": "00:14:01",
+     "q": "we recently directed NERK to take on the reliability and security implications of large computational loads",
+     "tenet": "FERC directed NERC to address reliability and security risks of computational loads."
+    },
+    {
+     "who": "rosner",
+     "at": "00:18:38",
+     "q": "No matter what your goal is, whether it's connecting a data center, developing clean energy, or making sure we have a reliable and affordable grid, they all rely on transmission.",
+     "tenet": "Connecting data centers and keeping the grid affordable both depend on transmission."
+    },
+    {
+     "who": "rosner",
+     "at": "00:19:41",
+     "q": "Only about 13% of projects reach commercial operation. And the root cause, it's often simply that there's just not enough transmission capacity to go around.",
+     "tenet": "Too little transmission capacity is the root cause of failed interconnection projects."
+    },
+    {
+     "who": "see",
+     "at": "00:22:48",
+     "q": "somehow managing large load growth and keeping prices affordable came up in almost every conversation in TLI.",
+     "tenet": "Large load growth and affordability are on regulators' minds worldwide."
+    },
+    {
+     "who": "see",
+     "at": "00:23:20",
+     "q": "we accepted Duke Energy Carolina's proposal to help ensure that large loads pay their way without leaving residential and small business customers paying for stranded investments if the loads fail to materialize or exit prematurely.",
+     "tenet": "Large loads must pay their way so other customers avoid stranded costs."
+    },
+    {
+     "who": "see",
+     "at": "00:23:20",
+     "q": "it's becoming imperative for utilities to put fair and forwardthinking cost allocation measures in place.",
+     "tenet": "Utilities need fair, forward-looking cost allocation for large loads."
+    },
+    {
+     "who": "see",
+     "at": "00:23:51",
+     "q": "Some of those important measures include strong taker pay provisions and strong financial security requirements, using incremental transmission rates when they would best protect existing customers",
+     "tenet": "Utilities should add take-or-pay terms, financial security and incremental rates to protect customers."
+    },
+    {
+     "who": "see",
+     "at": "00:24:21",
+     "q": "We need solutions that deliver new resources necessary to serve PJM's 67 million customers reliably.",
+     "tenet": "PJM needs solutions that deliver new resources to serve its customers reliably."
+    },
+    {
+     "who": "see",
+     "at": "00:24:52",
+     "q": "I strongly urge PJM not to lose momentum and to swiftly come back to us with revised 205 filings that can help bring new generation online while respecting the boundaries of state and federal authority",
+     "tenet": "PJM should refile quickly, adding new generation while respecting state and federal boundaries."
+    },
+    {
+     "who": "chang",
+     "at": "00:36:51",
+     "q": "Again, we come back to resource adequacy uh across the country and it's not uh different for the west.",
+     "tenet": "Resource adequacy is a concern across the country, including the West."
+    },
+    {
+     "who": "chang",
+     "at": "00:41:02",
+     "q": "in the last two weeks, we voted to reject both PJM's proposed interim resource adequacy service and their reliably backs stop um, proposal.",
+     "tenet": "FERC rejected both PJM resource adequacy proposals as filed."
+    },
+    {
+     "who": "chang",
+     "at": "00:41:34",
+     "q": "I agree with our decision to reject them based on the flaws of the design and the filings. But this is not the end of the story.",
+     "tenet": "The PJM proposals were flawed, and PJM should come back with fixes."
+    },
+    {
+     "who": "chang",
+     "at": "00:42:04",
+     "q": "My colleagues and I share a common goal and I hope you hear that from the bench here of protecting existing customers against unjust cost shifts from infrastructure built to serve large loads.",
+     "tenet": "Existing customers must be protected from unjust cost shifts for large load infrastructure."
+    },
+    {
+     "who": "chang",
+     "at": "00:42:36",
+     "q": "I believe that Duke did not adequately justify its proposal to to have just and reasonable rates.",
+     "tenet": "Duke did not adequately justify its large load proposal as just and reasonable."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:57:08",
+     "q": "last Friday, October 10th, this order approved revisions to Duke's proforma that will ensure large loads pay their way while insulating customers should those large loads fail to materialize.",
+     "tenet": "Duke's revisions make large loads pay their way and shield customers from stranded costs."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:57:39",
+     "q": "I nevertheless expect transmission providers to examine their respective tariffs and consider the additional customer protections above and beyond what we're approving in this individual order.",
+     "tenet": "Transmission providers should add customer protections beyond what the Duke order approved."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:58:10",
+     "q": "Both orders related to large load growth, particularly with respect to capacity needs, cost, and cost allocation in PGM.",
+     "tenet": "The two PJM orders both address large load growth, capacity needs and cost allocation."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:58:41",
+     "q": "it's designed to make sure the costs of large loads at issue in that filing are appropriately allocated to the load and not to other consumers.",
+     "tenet": "The backstop auction should allocate large load costs to the load, not other consumers."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:59:11",
+     "q": "last Friday's order at a high level accepted the large load definition and establishment of a large load registry similar to the compliance filing.",
+     "tenet": "FERC accepted PJM's large load definition and large load registry."
+    }
+   ]
   }
  ]
 }
