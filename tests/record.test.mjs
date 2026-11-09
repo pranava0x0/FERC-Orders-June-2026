@@ -91,3 +91,9 @@ test("a Filings deep link is settled before activate() rewrites the hash", () =>
   assert.ok(branch.indexOf("filingHash = rest") >= 0 && branch.indexOf("filingHash = rest") < branch.indexOf('activate("filings"'),
     "filingHash must take the incoming route before activate() writes the URL");
 });
+
+test("routing to a whole proceeding clears a filer filter left by an earlier route", () => {
+  const app = read("docs", "js", "app.js");
+  const fn = app.slice(app.indexOf("function routeFiling(rest) {"), app.indexOf("function wireFilings() {"));
+  assert.match(fn, /applyFiler\(grp, chip \? chip\.getAttribute\("data-filer"\) : ""\)/, "a route without a filer must apply the unfiltered state");
+});

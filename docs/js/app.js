@@ -1738,10 +1738,9 @@
     if (!grp) return;
     filingHash = rest;
     grp.open = true;
-    if (m[2]) {
-      var chip = [].slice.call(grp.querySelectorAll(".fg-filers .who-chip")).filter(function (c) { return slugify(c.getAttribute("data-filer")) === m[2]; })[0];
-      if (chip) applyFiler(grp, chip.getAttribute("data-filer"));
-    }
+    // A route with no filer means the whole proceeding: clear any filter a previous route left behind.
+    var chip = m[2] && [].slice.call(grp.querySelectorAll(".fg-filers .who-chip")).filter(function (c) { return slugify(c.getAttribute("data-filer")) === m[2]; })[0];
+    if (grp.querySelector(".fg-filers")) applyFiler(grp, chip ? chip.getAttribute("data-filer") : "");
     grp.scrollIntoView({ block: "start" });
   }
   function wireFilings() {
