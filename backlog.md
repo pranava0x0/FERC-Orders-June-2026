@@ -650,9 +650,8 @@ Recommended next steps, in order:
 
 ## From the 2026-11-09 refresh (Filings and Commissioners tabs)
 
-- **High:** fetch the six missing commissioner videos (July and Sept open meetings, Sept press conference,
-  Senate ENR hearing Jul 22, Chang at the CAISO symposium Oct 14, LaCerte at WIRES Jul 15) and extract their
-  contents; the PBS upload of the Senate hearing (OlSI8MGoark) is a second route.
+- **High:** two commissioner videos still need a transcript: the Jul 22 Senate ENR hearing (HzOp-H7VpCQ) and
+  LaCerte's WIRES keynote (dEisTPju8E0) both need a PO token; try the PBS upload of the hearing (OlSI8MGoark).
 - **High:** validate and ship the Nov 2 to Nov 9 news findings (Rosner at DERVOS Nov 5, NERC's computational-load
   standards Oct 26, ICF on the backstop refiling, the Nov 3 midterms) through the Sonnet validation pass.
 - **Medium:** read SPP's Nov 6 filing (ER27-432, Schedule 15 and Attachment T for SPP West) and decide whether

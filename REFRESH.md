@@ -258,6 +258,15 @@ indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
 
 ## Gotchas learned the hard way
 
+- **YouTube's "en" auto-caption track can be a machine TRANSLATION.** When a video lists many `*-orig` tracks, plain
+  `en` is translated text ("Novaya England", "the slaughterhouse case" for Trump v. Slaughter), and every quote from
+  it is something nobody said. The strict verifier passed all 29 such quotes, because they were verbatim to the
+  wrong text; an independent accuracy reviewer caught it. `fetch-video-transcripts.py` now takes `en-orig` and writes
+  the track into each header; check the header before extracting from any transcript.
+- **A verifier proves the quote is there, not that the tenet is true.** Round 1 found 11 tenets that overstated
+  their quotes ("would expect to grant" as "promises", PJM citing reports as PJM's forecast, a supporter's quote
+  under an against-tenet). Keep a reader who re-reads each quote in context in every refresh that adds tenets.
+
 - **When a search agent reports a PDF as "unreadable", fetch it yourself before dropping it.** On 2026-11-02 the
   news agent flagged two pjm.com PDFs as snippet-only because WebFetch could not parse them; `curl` plus PyMuPDF
   read both in seconds, and they were the sweep's two best finds (the CEBA and Data Center Coalition letter of
