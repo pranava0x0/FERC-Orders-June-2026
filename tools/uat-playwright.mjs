@@ -41,9 +41,10 @@ const JSON_OUT = argv.includes("--json");
 const WAIT = 700;
 const FALLBACK_CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome";
 
-const EXPECTED_TABS = ["overview", "timeline", "reforms", "dockets", "comments", "news"];
+const EXPECTED_TABS = ["overview", "timeline", "reforms", "dockets", "filings", "commissioners", "comments", "news"];
 const VIEWPORTS = [
   { name: "mobile", width: 375, height: 812, isMobile: true, hasTouch: true, deviceScaleFactor: 2 },
+  { name: "tablet", width: 768, height: 1024, isMobile: true, hasTouch: true, deviceScaleFactor: 2 },
   { name: "desktop", width: 1280, height: 800, isMobile: false, hasTouch: false, deviceScaleFactor: 1 },
 ];
 
@@ -65,9 +66,9 @@ const GOALS = [
     { steps: [], target: Q("#fm-h") },
     { steps: [{ label: "Overview jump: Filing matrix", click: Q('.jump-btn[data-jump="#fm-h"]') }], target: Q("#fm-h") },
   ] },
-  { id: "d", goal: "Commissioner statements", candidates: [
-    { steps: [], target: Q(".commish-list .commish-rowcard") },
-    { steps: [{ label: "Overview jump: Commissioners", click: Q('.jump-btn[data-jump="#commish-h"]') }], target: Q(".commish-list .commish-rowcard") },
+  { id: "d", goal: "Commissioner June 18 statements", candidates: [
+    { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }], target: Q(".commish-list .commish-rowcard") },
+    { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }, { label: "jump June 18 statements", click: Q('#panel-commissioners .jump-btn[data-jump="#commish-h"]') }], target: Q(".commish-list .commish-rowcard") },
     { steps: [{ label: "tab Dockets", click: Q("#tab-dockets") }, { label: "open E-7 commissioner block", open: Q("#panel-dockets details.docket details.dcom") }],
       target: Q("#panel-dockets details.docket details.dcom[open] .commish-row") },
   ] },
@@ -93,11 +94,35 @@ const GOALS = [
   { id: "i", goal: "Latest news / Discourse quote", candidates: [
     { steps: [{ label: "tab Discourse", click: Q("#tab-news") }, { label: "open 'Commentary themes'", open: "__accWith('.wave')" }], target: "__latestQuote()" },
   ] },
+  { id: "j", goal: "Newest spoken commissioner quote (video, timestamped)", candidates: [
+    { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }], target: Q("#panel-commissioners .appear .sq") },
+  ] },
+  { id: "k", goal: "Everything one commissioner (Rosner) said on video", candidates: [
+    { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }, { label: "chip Rosner", click: Q('.who-chip[data-who="rosner"]') }],
+      target: Q('#panel-commissioners .appear:not([hidden]) .sq[data-who="rosner"]:not([hidden])') },
+  ] },
+  { id: "l", goal: "Contents (chapter list) of the Oct 21 reliability conference video", candidates: [
+    { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }, { label: "open its Contents", open: "__vtoc('e-LMMOKOhcc')" }],
+      target: "(__vtoc('e-LMMOKOhcc')||document).querySelector('ol li')" },
+  ] },
+  { id: "m", goal: "A protest's position in MISO LARS (Google), with its page", candidates: [
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "jump MISO LARS", click: Q('.jump-btn[data-jump="#fg-miso-lars"]') }],
+      target: "__tenetBy('miso-lars', 'Google')" },
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "jump MISO LARS", click: Q('.jump-btn[data-jump="#fg-miso-lars"]') },
+      { label: "filer chip Google", click: Q('#fg-miso-lars .who-chip[data-doc="protest-er27-25-google"]') }], target: "__tenetBy('miso-lars', 'Google')" },
+  ] },
+  { id: "n", goal: "What FERC held in the Oct 9 Large Load order (first holding)", candidates: [
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "jump to the order", click: Q('.jump-btn[data-jump="#fg-pjm-large-load-definition"]') }],
+      target: Q("#fg-pjm-large-load-definition .tenet") },
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }], target: Q("#fg-pjm-large-load-definition .tenet") },
+  ] },
 ];
 
 // Page-side helpers the resolvers above call. Installed on every page before any script runs.
 const HELPERS = `
 window.__docket = (id) => [...document.querySelectorAll('#panel-dockets details.docket')].find(d => d.querySelector('summary')?.textContent.includes(id) || d.textContent.includes(id + '-000')) || null;
+window.__vtoc = (id) => [...document.querySelectorAll('#panel-commissioners .appear')].find(a => a.querySelector('a[href*="' + id + '"]'))?.querySelector('details.vtoc') || null;
+window.__tenetBy = (g, filer) => [...document.querySelectorAll('#fg-' + g + ' .tenet:not([hidden])')].find(t => [...t.querySelectorAll('.tq-cite')].some(c => c.textContent.startsWith(filer))) || null;
 window.__accWith = (sel) => [...document.querySelectorAll('details.acc')].find(d => d.querySelector(sel) && d.offsetParent !== null) || null;
 window.__newestIdx = () => { const D = window.FERC_DATA, today = new Date().toISOString().slice(0, 10); let best = -1;
   (D.timeline || []).forEach((e, i) => { const iso = String(e.iso || '').slice(0, 10); if (iso && iso <= today && (best < 0 || iso >= String(D.timeline[best].iso).slice(0, 10))) best = i; }); return best; };
@@ -116,6 +141,8 @@ const fail = (vp, area, msg) => failures.push({ viewport: vp, area, msg });
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function launch() {
+  // PW_CHROME: any cached Chromium, for a borrowed Playwright whose pinned browser build is not downloaded.
+  if (process.env.PW_CHROME) return chromium.launch({ executablePath: process.env.PW_CHROME });
   try { return await chromium.launch(); }
   catch (e) {
     if (!existsSync(FALLBACK_CHROME)) throw e;

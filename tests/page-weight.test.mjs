@@ -20,7 +20,15 @@ test("comments-data.js is prefetched, never a blocking script", () => {
   assert.doesNotMatch(html, /<script[^>]+src="js\/comments-data\.js/, "comments-data.js is back as a blocking <script>");
   const link = html.match(/<link rel="prefetch" id="cm-data" as="script" href="(js\/comments-data\.js\?v=[0-9a-f]{10})">/);
   assert.ok(link, "index.html must carry <link rel=prefetch id=cm-data> with a stamped token");
-  assert.match(app, /getElementById\("cm-data"\)/, "app.js must load the Comments data from the cm-data link");
+  assert.match(app, /link: "cm-data"/, "app.js must load the Comments data from the cm-data link");
+});
+
+test("record-data.js (Filings, Commissioners) is prefetched, never a blocking script", () => {
+  assert.doesNotMatch(html, /<script[^>]+src="js\/record-data\.js/, "record-data.js is a blocking <script>");
+  const link = html.match(/<link rel="prefetch" id="rec-data" as="script" href="(js\/record-data\.js\?v=[0-9a-f]{10})">/);
+  assert.ok(link, "index.html must carry <link rel=prefetch id=rec-data> with a stamped token");
+  assert.match(app, /filings: \{ link: "rec-data"/, "the Filings tab must load from the rec-data link");
+  assert.match(app, /commissioners: \{ link: "rec-data"/, "the Commissioners tab must load from the rec-data link");
 });
 
 test("blocking first-load assets stay under the gzip budget", () => {
