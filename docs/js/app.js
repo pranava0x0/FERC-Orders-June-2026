@@ -483,7 +483,15 @@
     var jumpRow = '<nav class="jump-row" aria-label="On this page">' + jumps.map(function (j) {
       return '<button type="button" class="jump-btn" data-jump="' + j[0] + '">' + esc(j[1]) + "</button>";
     }).join("") + "</nav>";
-    return head("Overview", m.subtitle) + jumpRow +
+    var f = m.spotlight;
+    var links = f.links.map(function (link) {
+      return '<a href="#filings/' + esc(link.group) + '/' + esc(link.filer) + '">' + esc(link.label) + '</a>' +
+        (link.page ? '<a href="' + esc(D.SOURCES[link.source].url) + '#page=' + link.page +
+          '" target="_blank" rel="noopener noreferrer">' + esc(link.label) + ' PDF, p. ' + link.page + '</a>' : "");
+    }).join("");
+    var latest = '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' +
+      esc(f.title) + '</h2><p>' + esc(f.answer) + '</p><div>' + links + '</div></section>';
+    return latest + jumpRow +
       renderStandStrip() +
       '<div class="overview-bg">' + paras(m.summary) + "</div>" +
       stats + renderProcedural() + glance;
@@ -1671,6 +1679,8 @@
         return esc(d.filer + " " + d.kind + ", " + fmtISO(d.date)) +
           (multiDocket && d.docket ? ' · <span class="mono">' + esc(d.docket) + "</span>" + (d.rto && d.rto !== d.filer ? " (" + esc(d.rto) + ")" : "") : "") +
           (pg ? ' · <span class="mono">p. ' + pg + "</span>" : "") +
+          (d.pdfUrl && pg ? ' · <a href="' + esc(d.pdfUrl) + '#page=' + pg +
+            '" target="_blank" rel="noopener noreferrer">PDF p. ' + pg + '</a>' : '') +
           ' · <a href="' + esc(eli(d.accession)) + '" target="_blank" rel="noopener noreferrer" aria-label="' +
           esc(d.filer + " " + d.kind + (pg ? ", page " + pg : "") + ", filing on FERC eLibrary") + '">eLibrary filing <span class="ext" aria-hidden="true">↗</span></a>';
       };
@@ -1945,7 +1955,7 @@
   }
 
   // comments-data.js is ~40% of the page's bytes and only the Comments tab reads it, so index.html
-  // prefetches it at idle (<link id="cm-data">, stamped like any asset) and it is executed here on first
+  // holds its stamped URL without downloading it. The script is fetched and executed here on first
   // open. record-data.js (Filings and Commissioners) works the same way. The render waits for the script;
   // if the tab was left before it arrived, the next activation renders synchronously instead, so
   // wireComments never writes a Comments hash over another tab's.
@@ -1967,7 +1977,7 @@
     if (lazyLoading[spec.link]) { lazyLoading[spec.link].push(name); return; }
     lazyLoading[spec.link] = [name];
     var s = document.createElement("script");
-    s.src = link.getAttribute("href");
+    s.src = link.getAttribute("data-src");
     s.onload = function () {
       var waiting = lazyLoading[spec.link]; lazyLoading[spec.link] = null;
       waiting.forEach(function (n) {

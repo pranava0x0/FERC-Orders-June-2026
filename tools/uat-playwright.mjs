@@ -113,8 +113,19 @@ const GOALS = [
   ] },
   { id: "n", goal: "What FERC held in the Oct 9 Large Load order (first holding)", candidates: [
     { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "jump to the order", click: Q('.jump-btn[data-jump="#fg-pjm-large-load-definition"]') }],
-      target: Q("#fg-pjm-large-load-definition .tenet") },
-    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open the order", open: Q("#fg-pjm-large-load-definition") }], target: Q("#fg-pjm-large-load-definition .tenet") },
+      target: "__tenetBy('pjm-large-load-definition', 'FERC order')" },
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open the order", open: Q("#fg-pjm-large-load-definition") }], target: "__tenetBy('pjm-large-load-definition', 'FERC order')" },
+  ] },
+  { id: "o", goal: "What PJM filed Nov 9", candidates: [
+    { steps: [], target: Q(".filing-brief p") },
+  ] },
+  { id: "p", goal: "PJM’s compliance filing with a page citation", candidates: [
+    { steps: [{ label: "PJM filing by page", click: Q('.filing-brief a[href^="#filings/"]') }],
+      target: "__tenetBy('pjm-large-load-definition', 'PJM')" },
+  ] },
+  { id: "q", goal: "Why PJM refiled the backstop", candidates: [
+    { steps: [{ label: "Backstop refiling", click: Q('.filing-brief a[href^="#filings/pjm-backstop/"]') }],
+      target: "__tenetBy('pjm-backstop', 'PJM')" },
   ] },
 ];
 

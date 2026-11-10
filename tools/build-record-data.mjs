@@ -5,8 +5,7 @@
 //   sources/videos/manifest.json    every commissioner video we hold a transcript for
 //   sources/videos/chapters.json    the Commissioners tab: per-video table of contents and timestamped quotes
 //
-// The output is loaded only when the Filings or Commissioners tab opens (index.html prefetches it at
-// idle, like comments-data.js), so the first paint does not pay for it. Run tools/verify-record.mjs
+// The output is loaded only when the Filings or Commissioners tab opens, so the first paint does not pay for it. Run tools/verify-record.mjs
 // first: this script bakes, it does not check quotes.
 //
 //   node tools/build-record-data.mjs          # write docs/js/record-data.js
@@ -31,6 +30,7 @@ export function build() {
   const groups = filings.groups.map((g) => {
     // Docket and region per document, so a group spanning six dockets can say which order a quote is from.
     const docs = g.docs.map((d) => ({ ...d, pages: d.pages ?? docMeta.get(d.slug)?.pages ?? null,
+      ...(docMeta.get(d.slug)?.source_url ? { pdfUrl: docMeta.get(d.slug).source_url } : {}),
       docket: docMeta.get(d.slug)?.docket || null, rto: docMeta.get(d.slug)?.rto || null }))
       .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : a.filer.localeCompare(b.filer)));
     return { ...g, docs, newest: docs[0]?.date || "" };

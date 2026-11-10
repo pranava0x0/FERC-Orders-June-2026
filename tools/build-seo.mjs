@@ -43,6 +43,9 @@ export function buildSeoBlock(D) {
   out.push(START);
   out.push('<div class="seo-static" id="seo-static">');
   out.push(`<h2>${esc(m.title)}: what this is</h2>`);
+  const f = m.spotlight;
+  out.push(`<h3>${esc(f.title)}</h3><p>${esc(f.answer)}</p>`);
+  out.push(f.links.map(l => `<a href="${esc(D.SOURCES[l.source].url)}${l.page ? "#page=" + l.page : ""}">${esc(l.label)}</a>`).join(" · "));
   for (const p of m.summary) out.push(`<p>${esc(p)}</p>`);
 
   if (D.tracks) {

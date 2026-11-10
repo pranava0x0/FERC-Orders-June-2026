@@ -28,6 +28,10 @@ export function buildLlmsTxt(D) {
   const out = [];
   out.push(`# ${m.title}`, "");
   out.push(`> ${m.subtitle}`, "");
+  const f = m.spotlight;
+  out.push(`## ${f.title}`, "", f.answer, "");
+  for (const l of f.links) out.push(`- [${l.label}](${D.SOURCES[l.source].url}${l.page ? "#page=" + l.page : ""}) · [Page-cited positions](${SITE}#filings/${l.group}/${l.filer})`);
+  out.push("");
   for (const p of m.summary) out.push(p);
   out.push("");
   out.push(
@@ -146,7 +150,9 @@ export function buildLlmsTxt(D) {
   out.push("");
 
   out.push("## Read the site", "");
-  out.push(`- [${m.title}](${SITE}): six tabs (Overview, Timeline, Reforms, Dockets, Comments, Discourse).`);
+  out.push(`- [${m.title}](${SITE}): Overview, Timeline, Reforms and Dockets.`);
+  out.push(`- [Filings](${SITE}#filings): page-cited arguments and orders. [Commissioners](${SITE}#commissioners): timestamped remarks and June concurrences.`);
+  out.push(`- [Comments](${SITE}#comments): the RM26-4 public record. [Discourse](${SITE}#news): outside commentary.`);
 
   return out.join("\n") + "\n";
 }

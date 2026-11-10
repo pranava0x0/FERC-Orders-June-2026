@@ -1,5 +1,5 @@
 {
- "asOf": "2026-11-09",
+ "asOf": "2026-11-10",
  "note": "Key tenets per proceeding. Every quote is verified on its page by tools/verify-record.mjs.",
  "groups": [
   {
@@ -554,7 +554,7 @@
    "docket": "ER27-25-000",
    "about": "MISO, the grid operator for 15 states in the Midwest and South, wants to study a new load of 200 MW or more together with the power plant built to serve it, in about 120 days and outside its multi-year generator queue.",
    "sideOf": "MISO's LARS filing",
-   "status": "Comments and protests were due Oct 23, 2026. MISO asked for a Dec 2, 2026 effective date; FERC had not acted as of Nov 9.",
+   "status": "MISO answered protests on Nov 9 and asked FERC to accept LARS. The requested effective date is Dec 2.",
    "docs": [
     {
      "slug": "filing-er27-25-miso-lars",
@@ -663,9 +663,26 @@
      "kind": "protest",
      "side": "against",
      "pages": 14
+    },
+    {
+     "slug": "answer-er27-25-miso",
+     "accession": "20261109-5205",
+     "filer": "MISO",
+     "date": "2026-11-09",
+     "kind": "answer"
     }
    ],
    "tenets": [
+    {
+     "tenet": "MISO defends studying loads and nearby generation together.",
+     "quotes": [
+      {
+       "d": "answer-er27-25-miso",
+       "pg": 3,
+       "q": "study both the large load and the generation that will serve it at the same time"
+      }
+     ]
+    },
     {
      "tenet": "LARS studies a 200 MW-plus load and its paired generation together in about 120 days.",
      "side": "neutral",
@@ -1299,7 +1316,7 @@
    "short": "PJM backstop auction",
    "docket": "ER26-3380-000",
    "about": "PJM, the grid operator for 13 states and D.C., proposed a backstop purchase of new power plants to cover a projected supply shortfall as large loads grow. FERC accepted it in September and sent three cost questions to a written hearing.",
-   "status": "Accepted and suspended Sep 29, 2026, with cost allocation, transmission owner exit rules and LSE collateral set for paper hearing. PJM refiled amendments Oct 29 in ER27-330-000; comments are due Nov 30.",
+   "status": "FERC suspended the procurement on Sep 29. PJM filed amendments Oct 29 and refiled the same proposal Nov 9 under the §205 code in ER27-454-000. Comments are due Nov 30 at 5 p.m. Eastern.",
    "docs": [
     {
      "slug": "order-er26-3380-pjm-backstop",
@@ -1359,9 +1376,26 @@
      "filer": "FERC",
      "kind": "notice",
      "pages": null
+    },
+    {
+     "slug": "refiling-er27-454-pjm-backstop",
+     "accession": "20261109-5216",
+     "date": "2026-11-09",
+     "filer": "PJM",
+     "kind": "§205 refiling"
     }
    ],
    "tenets": [
+    {
+     "tenet": "PJM refiled its backstop rules to correct the electronic filing code.",
+     "quotes": [
+      {
+       "d": "refiling-er27-454-pjm-backstop",
+       "q": "updates the eTariff metadata code to reflect this filing as a FPA section 205 filing rather than a compliance filing.",
+       "pg": 2
+      }
+     ]
+    },
     {
      "tenet": "FERC accepts the backstop, suspends it to February 28, 2027, and sets a paper hearing.",
      "quotes": [
@@ -1831,10 +1865,10 @@
   {
    "id": "pjm-large-load-definition",
    "title": "PJM Large Load definition, Registry and Interim Resource Adequacy Service",
-   "short": "PJM Large Load order",
-   "docket": "ER26-3515-000",
+   "short": "PJM Large Load registry",
+   "docket": "ER26-3515",
    "about": "PJM asked FERC to define a Large Load, keep a registry of them, and create a service that would curtail such loads first in a supply emergency. FERC kept the definition and the registry and rejected the rest.",
-   "status": "Issued Oct 9, 2026. PJM's compliance filing and any rehearing requests were due Nov 9; neither was on eLibrary that morning.",
+   "status": "PJM filed compliance and Ohio requested rehearing on Nov 9. FERC set comments on compliance for Nov 30 at 5 p.m. Eastern.",
    "docs": [
     {
      "slug": "order-er26-3515-pjm-large-load",
@@ -1843,9 +1877,79 @@
      "filer": "FERC",
      "kind": "order",
      "pages": 57
+    },
+    {
+     "slug": "compliance-er26-3515-pjm",
+     "accession": "20261109-5217",
+     "date": "2026-11-09",
+     "filer": "PJM",
+     "kind": "compliance filing"
+    },
+    {
+     "slug": "rehearing-er26-3515-ohio",
+     "accession": "20261109-5209",
+     "date": "2026-11-09",
+     "filer": "Ohio Consumers’ Counsel",
+     "kind": "rehearing request"
+    },
+    {
+     "slug": "notice-er26-3515-1110",
+     "accession": "20261110-3030",
+     "date": "2026-11-10",
+     "filer": "FERC",
+     "kind": "notice"
     }
    ],
    "tenets": [
+    {
+     "tenet": "PJM drops the two registry fields tied to its rejected capacity proposal.",
+     "quotes": [
+      {
+       "d": "compliance-er26-3515-pjm",
+       "q": "the amount of BYONC brought by a particular Large Load and the allocated RBP UCAP MW quantity",
+       "pg": 2
+      }
+     ]
+    },
+    {
+     "tenet": "Loads in service before June 1, 2027 have a March 1 registry deadline.",
+     "quotes": [
+      {
+       "d": "compliance-er26-3515-pjm",
+       "q": "prior to June 1, 2027, shall provide the information required by RAA, Schedule 11.B.1 to the Office of the Interconnection by March 1, 2027.",
+       "pg": 124
+      }
+     ]
+    },
+    {
+     "tenet": "For later loads, the entity serving them must report before they enter service.",
+     "quotes": [
+      {
+       "d": "compliance-er26-3515-pjm",
+       "q": "before the in-service date of the Large Load.",
+       "pg": 125
+      }
+     ]
+    },
+    {
+     "tenet": "Ohio asks FERC to give state consumer advocates confidential registry access.",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3515-ohio",
+       "q": "extend access to the Large Load Registry confidential information to state consumer advocate offices, subject to confidentiality obligations.",
+       "pg": 19
+      }
+     ]
+    },
+    {
+     "tenet": "FERC sets Nov 30 as the comment deadline for the compliance filing.",
+     "quotes": [
+      {
+       "d": "notice-er26-3515-1110",
+       "q": "20261109-5217 Comment Date: 5 pm ET 11/30/26"
+      }
+     ]
+    },
     {
      "tenet": "FERC accepts a 50 MW cumulative-peak threshold as the Large Load definition.",
      "quotes": [

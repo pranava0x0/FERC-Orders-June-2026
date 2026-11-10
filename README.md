@@ -5,13 +5,10 @@ A static, dependency-free microsite that traces the regulatory arc from the Depa
 **June 18, 2026 tailored Section 206 show cause orders** (Items **E-7 through E-12**,
 Docket Nos. **EL26-67-000 to EL26-72-000**) directed at all six RTOs/ISOs.
 
-Built for an energy-regulatory audience. Six tabs:
+Built for an energy-regulatory audience. Eight tabs:
 
-1. **Overview**: the six headline figures, an at-a-glance block (authority, dockets, reporter cite,
-   commissioners), a short background on the regulatory arc, and a "what each commissioner emphasized"
-   block drawn from the five concurring statements.
-2. **Timeline**: the chronology (Oct 2025 → Jun 2026) and why FERC chose tailored §206 show cause
-   orders over a generic NOPR.
+1. **Overview**: the latest filings and primary sources, the next deadline, status by proceeding and the filing matrix.
+2. **Timeline**: a dated, source-linked record with a filter for each proceeding.
 3. **Reforms**: the five reform categories, the transmission-vs-retail jurisdictional boundary, and the
    per-RTO regional distinctions, grounded in the orders' published framing.
 4. **Dockets (E-7 to E-12, plus E-2)**: six collapsible per-RTO accordions (the common §206 spine the orders
@@ -23,7 +20,9 @@ Built for an energy-regulatory audience. Six tabs:
    (EL25-49-002, 195 FERC ¶ 61,209): the PJM co-location *Order on Rehearing, Clarification, Compliance, and
    Paper Hearing*, decided the same June 18 meeting, that fixes the three new transmission services the six
    orders extend. Plus how to file or follow each docket.
-5. **Comments (RM26-4)**: the comment-period summary, split into three sub-tabs to cut the scroll:
+5. **Filings**: arguments and orders by proceeding, with page citations and links to the documents.
+6. **Commissioners**: recorded remarks by speaker and the June concurring statements.
+7. **Comments (RM26-4)**: the comment-period summary, split into three sub-tabs to cut the scroll:
    *Themes & categories* (stats, rounds, top themes, the stance-by-reform map, and the three-lens aggregate),
    *Respondent types* (19 stakeholder categories), and *All comments* (all 273 comments in filing order,
    filterable by org, type, question, principle, position, or region: a collapsible "filter by tag" bar
@@ -37,7 +36,7 @@ Built for an energy-regulatory audience. Six tabs:
    row's "Read the audited analysis" is opened, to show each position's description and the verbatim
    quotes behind it (the audit trail). The quotes are too heavy (~1.8 MB across 268 letters) to embed
    in the up-front payload, so they are fetched on demand.
-6. **Discourse**: stakeholder reception, named commentary across the political spectrum, and trade-press
+8. **Discourse**: stakeholder reception, named commentary across the political spectrum, and trade-press
    narratives (with a pointer to the Comments tab for the full filing breakdown).
 
 ## Run locally

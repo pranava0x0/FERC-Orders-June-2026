@@ -193,6 +193,13 @@ a:hover { color: var(--accent-ink); }
   .tab .tab-short { display: inline; }
 }
 
+.filing-brief { border-left: 3px solid var(--accent); padding: 0 12px; }
+.filing-brief h2, .filing-brief p { margin: 4px 0; }
+.filing-brief p { max-width: 80ch; }
+.filing-brief div { display: flex; flex-wrap: wrap; gap: 0 16px; }
+.filing-brief a { display: inline-flex; align-items: center; }
+@media (pointer: coarse) { .filing-brief a { min-height: 44px; } }
+
 /* In-page jumps on the Overview (buttons, not hash links: the router owns the hash) and the Timeline. */
 .jump-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
 .jump-btn, .tl-jump {

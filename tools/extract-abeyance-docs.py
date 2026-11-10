@@ -210,6 +210,22 @@ DOCS = [
     dict(slug="complaint-el27-11-exelon", accession="20261103-5191", docket="EL27-11-000", rto="PJM",
          cite=None, issued="2026-11-03", kind="complaint (fast track)", captured_at="2026-11-09",
          title="Complaint Requesting Fast Track Processing of Exelon Corporation (prompt capacity auction from the 2030/31 Delivery Year)"),
+    dict(slug="answer-er27-25-miso", accession="20261109-5205", docket="ER27-25-000", rto="MISO",
+         cite=None, issued="2026-11-09", kind="motion for leave to answer and answer", captured_at="2026-11-10",
+         title="MISO Answer to Comments and Protests on the Large Load Addition Resource Study"),
+    dict(slug="refiling-er27-454-pjm-backstop", accession="20261109-5216", docket="ER27-454-000", rto="PJM",
+         cite=None, issued="2026-11-09", kind="section 205 refiling", captured_at="2026-11-10",
+         title="Proposed Amendments to the Reliability Backstop Procurement; Request for Waiver"),
+    dict(slug="compliance-er26-3515-pjm", accession="20261109-5217", docket="ER26-3515-002", rto="PJM",
+         cite=None, issued="2026-11-09", kind="compliance filing", captured_at="2026-11-10",
+         source_url="https://www.pjm.com/pjmfiles/directory/etariff/FercDockets/9976/20261109-er26-3515-002.pdf",
+         title="Thirty-Day Compliance Filing on PJM’s Large Load Definition and Large Load Registry"),
+    dict(slug="rehearing-er26-3515-ohio", accession="20261109-5209", docket="ER26-3515-001", rto="PJM",
+         cite=None, issued="2026-11-09", kind="request for rehearing", captured_at="2026-11-10",
+         title="Request for Rehearing to Promote Transparency for Ohio Consumers"),
+    dict(slug="notice-er26-3515-1110", accession="20261110-3030", docket="ER26-3515-002", rto="PJM",
+         cite=None, issued="2026-11-10", kind="combined notice", captured_at="2026-11-10",
+         title="Combined Notice of Filings #1"),
 ]
 
 
@@ -321,7 +337,7 @@ def build(rec: dict, src: Path) -> tuple[str, dict]:
     header = (
         f"FERC {rec['kind']} — {rec['rto']} — Docket {rec['docket']} — accession {rec['accession']}"
         f"{cite} — {rec['title']} — Issued {rec['issued']}{pg}\n"
-        + (f"Extracted locally with {tool} from the document downloaded from its eLibrary accession. "
+        + (f"Extracted locally with {tool} from the document downloaded from {rec.get('source_url', 'its eLibrary accession')}. "
            if not tool.startswith("no local extraction") else f"Text {tool}. ")
         + "Verbatim; source text layer preserved.\n\n\n"
     )
