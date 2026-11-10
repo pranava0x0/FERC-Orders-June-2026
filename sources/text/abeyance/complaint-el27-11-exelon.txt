@@ -1,0 +1,2332 @@
+FERC complaint (fast track) — PJM — Docket EL27-11-000 — accession 20261103-5191 — Complaint Requesting Fast Track Processing of Exelon Corporation (prompt capacity auction from the 2030/31 Delivery Year) — Issued 2026-11-03 — 61 pp
+Extracted locally with PyMuPDF (fitz) from the document downloaded from its eLibrary accession. Verbatim; source text layer preserved.
+
+
+--- PAGE 1 ---
+
+UNITED STATES OF AMERICA
+BEFORE THE
+FEDERAL ENERGY REGULATORY COMMISSION
+Exelon Corporation,
+)
+
+)
+
+Complainant
+)
+
+)
+
+v.
+)
+Docket No. EL27-___-000
+
+)
+
+PJM Interconnection, L.L.C.,
+)
+
+)
+
+Respondent
+)
+
+)
+
+COMPLAINT REQUESTING FAST TRACK PROCESSING OF
+EXELON CORPORATION
+/s/ Jordan Kwok
+/s/ Thomas S. DeVita
+Jordan Kwok
+Thomas S. DeVita
+Director, Federal Regulatory Affairs
+Kimberly B. Frank
+Exelon Corporation
+Stuart B. Robbins
+701 Ninth Street, N.W.
+K&L Gates LLP
+Washington, D.C. 20068
+1601 K Street, NW
+(667) 313-0421
+Washington, DC  20006
+jordan.kwok@exeloncorp.com
+(202) 778-9000
+
+thomas.devita@klgates.com
+/s/ Alejandro Bautista
+kimberly.frank@klgates.com
+Alejandro Bautista
+stuart.robbins@klgates.com
+Assistant General Counsel
+
+Exelon Corporation
+Counsel for Exelon Corporation
+2301 Market Street
+
+Philadelphia, PA 19101
+
+(267) 533-0120
+
+alejandro.bautista@exeloncorp.com
+
+Dated: November 3, 2026
+
+--- PAGE 2 ---
+Table of Contents
+
+-i-
+
+I.
+INTRODUCTION .................................................................................................... 3
+II.
+PARTIES AND COMMUNICATIONS................................................................. 10
+A.
+Complainant Exelon.................................................................................... 10
+B.
+Respondent PJM ......................................................................................... 11
+C.
+Communications ......................................................................................... 11
+III.
+BACKGROUND .................................................................................................... 12
+IV.
+LEGAL ARGUMENT ............................................................................................ 14
+A.
+The Current Three-Year Forward Period of RPM is No Longer Just and
+Reasonable. ................................................................................................. 14
+i.
+The risk balancing analysis the Commission relied on in 2006 to
+accept the load forecast inaccuracies inherent in RPM’s multi-year
+forward period has fundamentally collapsed in 2026. .................... 14
+a.
+Evidence that PJM Load Forecast Inaccuracies Have
+Increased Since 2006. ......................................................... 16
+b.
+Evidence that Capacity Resources cannot be constructed in
+the PJM Region within the current three-year cycle. .......... 21
+ii.
+The prospective assumptions in 2006 regarding the ability of RPM’s
+multi-year forward period to incentivize LSE bilateral contracting
+and risk hedging have been disproven over the course of 20 years.
+......................................................................................................... 25
+iii.
+The current three-year forward period inhibits efficient resource exit
+and Deactivation, as it requires generation owners to invest in the
+absence of reasonable predictability in future operational capability
+and environmental policy. ............................................................... 30
+a.
+Operational Uncertainties ................................................... 32
+b.
+Environmental Policy Uncertainties ................................... 33
+iv.
+PJM’s current capacity accreditation methodology (ELCC) bears no
+resemblance to the eFORd model considered by the Commission in
+2006, and the three-year forward period forces PJM to integrate
+speculative assumptions into its ELCC modeling. ......................... 40
+v.
+The current three-year forward period undermines the accuracy of
+other BRA planning parameters, including the assumed resource mix
+in each Locational Deliverability Area used to calculate
+CETO/CETL values, leading to unjust and unreasonable results. .. 44
+B.
+The Commission Should Adopt a Prompt Auction Schedule as the Just and
+Reasonable Replacement Rate. ................................................................... 46
+i.
+A prompt auction will significantly improve the accuracy of key
+BRA auction parameters, resulting in capacity prices that better
+
+--- PAGE 3 ---
+
+-ii-
+
+reflect actual supply and demand fundamentals and system
+conditions in the Delivery Year. ..................................................... 47
+ii.
+A prompt auction will significantly enhance the quality of
+information and the accuracy of the price signal used in generator
+Deactivation decisions. ................................................................... 49
+iii.
+A prompt auction schedule will significantly enhance the quality of
+data used in PJM’s ELCC capacity accreditation, thereby better
+aligning both price and payments with resource contributions to
+resource adequacy. .......................................................................... 51
+iv.
+A prompt auction will significantly reduce the risks to new resources
+seeking to enter the market by creating more certainty regarding their
+expected availability for the Delivery Year. ................................... 53
+V.
+REFUND EFFECTIVE DATE ............................................................................... 54
+VI.
+RULE 206 REQUIREMENTS ............................................................................... 54
+A.
+Good faith estimate of financial impact or harm (Rule 206(b)(4)) ............. 54
+B.
+Practical, operational, or nonfinancial impacts (Rule 206(b)(5)) ............... 54
+C.
+Whether the matters are pending in any other FERC proceeding or other
+forum (Rule 206(b)(6)) ............................................................................... 54
+D.
+Specific relief or remedy requested (Rule 206(b)(7)) ................................. 55
+E.
+Documents supporting the complaint (Rule 206(b)(8)) .............................. 55
+F.
+Use of alternative dispute resolution (Rule 206(b)(9)) ............................... 55
+G.
+Notice (Rule 206(b)(10)) ............................................................................ 55
+H.
+Request for Fast Track Processing (Rule 206(b)(11)) ................................ 55
+VII.
+SERVICE AND NOTICE....................................................................................... 56
+VIII.
+CONCLUSION ....................................................................................................... 56
+
+--- PAGE 4 ---
+
+UNITED STATES OF AMERICA
+BEFORE THE
+FEDERAL ENERGY REGULATORY COMMISSION
+Exelon Corporation,
+)
+
+)
+
+Complainant
+)
+
+)
+
+v.
+)
+Docket No. EL27-___-000
+
+)
+
+PJM Interconnection, L.L.C.,
+)
+
+)
+
+Respondent
+)
+
+)
+
+COMPLAINT REQUESTING FAST TRACK PROCESSING OF
+EXELON CORPORATION
+Pursuant to sections 206, 306, and 309 of the Federal Power Act (“FPA”),1 and Rule
+206 of the Federal Energy Regulatory Commission’s (“FERC” or the “Commission”) Rules of
+Practice and Procedure,2 Exelon Corporation (“Exelon”) hereby submits this complaint against
+PJM Interconnection, L.L.C. (“PJM”).  For the reasons stated herein and in the attached
+Affidavits of Dr. Emma Nicholson and Deborah Sears,3 Exelon respectfully requests that the
+Commission: (i) find under FPA section 206 that the current three-year forward period of
+PJM’s Reliability Pricing Model4 (“RPM”) is no longer just and reasonable; and (ii) adopt as
+
+1 16 U.S.C. §§ 824e, 825e, 825h.
+2 18 C.F.R. § 385.206.
+3 The Nicholson Affidavit is included as Attachment A to this complaint, and the Sears Affidavit is included as
+Attachment B.
+4 Terms not otherwise defined herein shall have the same meaning as in the PJM Open Access Transmission
+Tariff (“Tariff”), the Amended and Restated Operating Agreement of PJM Interconnection, L.L.C. (“Operating
+Agreement”), and the Reliability Assurance Agreement Among Load Serving Entities in the PJM Region
+(“RAA”).  The Tariff, Operating Agreement, and RAA are currently located under PJM’s “Intra-PJM Tariffs”
+eTariff Title, available here: https://etariff.ferc.gov/TariffBrowser.aspx?tid=1731.
+
+--- PAGE 5 ---
+
+2
+the just and reasonable replacement rate a “prompt” auction schedule, to run two months5
+before a given Delivery Year, starting with the 2030/2031 Delivery Year and continuing
+beyond.6
+Exelon respectfully requests that the Commission establish a refund effective date of
+January 1, 2027, and permit Fast Track processing under Rule 206(h) to facilitate a
+Commission order by no later than January 31, 2027—currently the last day before the
+scheduled posting date of the planning parameters for the 2030/31 Delivery Year Base
+Residual Auction (“BRA”).  To be clear, nothing in this complaint is intended to apply to, or
+otherwise disrupt the implementation of, the 2029/2030 Delivery Year BRA, which is
+scheduled to run in December 2026, nor any Reliability Backstop Procurement (“RBP”)7
+auction.8
+Granting the relief requested herein will have three important outcomes.  First, it will
+remedy an unjust and unreasonable aspect of RPM (the three-year forward period) by better
+aligning the parameters used in each BRA with actual system conditions, resulting in an
+auction that relies on more accurate load forecasts, resource availability data, and capacity
+accreditation, and that facilitates more efficient resource entry and exit through improved
+
+5 As discussed herein, Exelon acknowledges that the Commission has wide legal discretion under FPA section
+206 in establishing the just and reasonable replacement rate, but recommends two months as a reasonable period
+between when PJM publishes its load forecast information in late January and the start of the Delivery Year on
+June 1.  Two months also provides time for pre-auction activities to take place following the publication of the
+load forecast in January, gives Market Participants and PJM sufficient notice of the applicable auction parameters,
+and provides supply resources more than one month to make final operating arrangements if they clear the auction.
+6 Exelon acknowledges that conforming changes to other PJM Governing Agreements may be needed, should the
+Commission grant the relief requested herein.
+7 See generally Docket Nos. ER26-3380-000, EL26-108-000.
+8 Out of an abundance of caution, Exelon is not proposing to apply the “prompt” auction remedy sought herein to
+the 2029/2030 Delivery Year BRA, in light of the fact that the applicable planning parameters for the 2029/2030
+Delivery Year BRA have already been posted.  See PJM Power Providers Group v. FERC, 96 F.4th 390 (3d Cir.
+2024).
+
+--- PAGE 6 ---
+
+3
+market signals.9  Second, it will functionally push out the date of the BRA for the 2030/31
+Delivery Year, currently scheduled for May 2027, to approximately March 2030, thereby
+preventing Exelon’s customers, and PJM customers at large, from being exposed to the
+uncapped surge in capacity prices expected this coming spring under the current three-year
+forward RPM period while there is significant uncertainty about supply and demand
+fundamentals and PJM’s resource adequacy structure over this time horizon.  Third, it will
+provide PJM and its stakeholder community, operating under the Commission’s oversight,
+critical time to develop—and timely transition to—the comprehensive resource adequacy
+reforms that the Trump Administration, PJM Governors, and PJM itself recognize are critical
+to ensuring a long-term, enduring, and just and reasonable capacity construct in the PJM
+Region.10
+I.
+INTRODUCTION
+Customers are, and always have been, at the center of Exelon’s core mission and values.
+Exelon is committed to addressing the mounting affordability pressures experienced every day
+by its more than 10.7 million customers in the PJM Region.11  In furtherance of this
+
+9 See Nicholson Affidavit, at ¶¶ 54-59.
+10 See, e.g., Statement of Principles Regarding PJM (Jan. 16, 2026) (hereafter, the “Statement of Principles”)
+(“PJM should immediately embark on a stakeholder process to reform the capacity market to ensure long-term
+viability and prevent consumers from bearing excessive ongoing costs, with the expectation that these reforms be
+implemented in time for the BRA currently scheduled for May 2027.”); Powering Reliability Through Market
+Design at 4 (May 6, 2026) (hereafter, the “PJM White Paper”) (“On Jan. 16, 2026, the PJM Board of Managers
+directed PJM staff to undertake a holistic review of the capacity market design and investment incentives. The
+Board recognized that the market’s current price volatility—while economically rational—is placing
+unsustainable stress on the governmental compact that allows the market to function, and that the foundational
+assumptions of the Reliability Pricing Model design must be reexamined in a resource-constrained world.  This
+white paper is PJM’s response to that directive.”).  The Statement of Principles is available here:
+https://www.energy.gov/documents/statement-principles-regarding-pjm.  The PJM White Paper is available here:
+https://www.pjm.com/-/media/DotCom/library/reports-notices/special-reports/2026/20260506-powering-
+reliability-through-market-design.pdf.
+11 More information about the Exelon Promise is available here: https://www.exeloncorp.com/company/exelon-
+promise.
+
+--- PAGE 7 ---
+
+4
+commitment, Exelon submits this complaint against the RPM three-year forward period, to
+ensure the people and businesses it serves, and the customers of the PJM Region more broadly,
+receive what they are entitled to—market outcomes predicated on accurate information.
+The auction schedule of RPM that has successfully driven efficient outcomes for
+Exelon customers in the past has proven incapable of meeting the needs of the PJM Region
+today and into the future.  Customers in all six Exelon service territories are directly impacted
+by the extraordinary prices produced by RPM in recent years, beginning with the 2025/2026
+Delivery Year BRA that cleared at several multiples of the historical average capacity price in
+PJM, and at roughly ten times the prior year’s clearing price.12  The crisis has only deepened
+since then, with the 2027/2028 and 2028/2029 Delivery Year BRAs clearing at the temporary
+Commission-approved price cap and simultaneously falling thousands of MWs short of PJM’s
+target Installed Reserve Margin.13  While PJM’s staff, management, and Board of Managers
+(“Board”) have diligently and competently administered RPM Auctions over the last two
+decades, it is self-evident that RPM in its current structure is fundamentally broken.  Not only
+are PJM customers at large being forced to pay unprecedented prices for capacity, they are not
+getting sufficient capacity in return, and are paying for a widening gap between supply and
+demand as a reliability deficit looms.
+As the Commission correctly observed on September 30, 2026, “[w]e think it clear that
+PJM’s ordinary instrument for procuring sufficient capacity to meet PJM’s reliability
+requirement, the RPM, has failed to keep pace with the unprecedented influx of large load into
+
+12 See, e.g., PJM Capacity Prices Spike 10-Fold in 2025/2026 Auction, RTO Insider, Devin Leith-Yessian (Jul.
+30, 2024),  https://www.rtoinsider.com/84356-pjm-capacity-prices-spike-2025-26-auction/.
+13 PJM’s 2027/2028 BRA report is available here: https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-
+auction-info/2027-2028/2027-2028-bra-report.pdf.  PJM’s 2028/2029 BRA report is available here:
+https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2028-2029/2028-2029-bra-results-
+report.pdf.
+
+--- PAGE 8 ---
+
+5
+the PJM Region in recent years.”14  Exelon agrees with the Commission’s assessment and is
+taking action.  In this complaint, Exelon demonstrates that an integral component of RPM—
+the three-year forward period—is no longer just and reasonable, because it produces market
+outcomes that charge customers on the basis of parameters estimated four years in advance of
+delivery completion, thereby structuralizing uncertainty and inaccuracy with no proportional
+benefit.  While Exelon, like other PJM Transmission Owners and PJM itself, has taken steps
+to proactively enhance the accuracy of its own load forecast and to eliminate speculative
+demand (including through its pioneering use of Transmission Security Agreements
+(“TSAs”)),15 it is still fundamentally bound by RPM’s mandate to predict reality years in
+advance—a challenge exacerbated by the distinct nature, characteristics, and volatile
+development schedules of today’s large loads, as well as the changing nature of market
+dynamics and federal, state, and local environmental, permitting, and tax policies.
+The market outcomes produced under this paradigm create an unjustifiable chasm
+between the costs customers pay and the capacity they receive, while simultaneously failing to
+accurately portray the underlying supply and demand dynamics of the PJM Region in a manner
+that inhibits efficient resource exit, and fails to incentivize efficient resource entry.
+Accordingly, Exelon respectfully requests the Commission exercise its authority under FPA
+section 206 to find the existing three-year forward period of RPM unjust and unreasonable,
+and direct PJM to establish a just and reasonable “prompt” auction schedule, to run two months
+before a given Delivery Year, starting with the 2030/2031 Delivery Year and continuing
+
+14 PJM Interconnection, L.L.C., 196 FERC ¶ 61,245, at P 29 (2026).
+15 A TSA is a customer protection mechanism that requires large new power users like data centers to make firm
+financial commitments for the transmission service that the grid must be ready to provide.  More information
+about TSAs is available here: https://www.exeloncorp.com/grid/exelons-transmission-security-agreements-a-
+pioneering-model-for-customer-protection1
+
+--- PAGE 9 ---
+
+6
+beyond.  Exelon acknowledges that the Commission has wide legal discretion under FPA
+section 206 in establishing the just and reasonable replacement rate,16 but recommends two
+months as a reasonable period between when PJM publishes its load forecast information in
+late January and the start of the Delivery Year on June 1.  Two months also provides time for
+pre-auction activities to take place following the publication of the load forecast in January,
+gives Market Participants and PJM sufficient notice of the applicable auction parameters, and
+provides Capacity Resource owners more than one month to make final operating
+arrangements if they clear the auction.
+While this particular complaint is narrowly focused on the three-year forward period
+of RPM, and the prompt auction remedy proposed herein is just and reasonable on its own,
+Exelon acknowledges the targeted surgery requested in this complaint will not heal all that ails
+RPM.  Developments in recent years have exposed broad structural shortcomings inherent in
+the PJM resource adequacy paradigm and capacity market framework that have led to the crisis
+the PJM Region faces today.  These include (i) the explosive growth of data center load, (ii) a
+historic procurement crisis for components essential to the development of new capacity, (iii)
+challenges in the permitting and financing of new generation, (iv) frequent market rule
+changes, and (v) reactive interventions aimed at promoting just, reasonable, and affordable
+rates for customers.  There is accordingly a considerable amount of work still to be completed
+by PJM and its stakeholder community to identify a more durable resource adequacy construct
+that can reliably support the efficient entry and exit of Capacity Resources from the PJM
+
+16 See, e.g., Niagara Mohawk Power Corp. v. FPC, 379 F.2d 153, 159 (D.C. Cir. 1967) (“[T]he breadth of agency
+discretion is, if anything, at zenith when the action assailed relates primarily . . . to the fashioning of policies,
+remedies and sanctions . . . in order to arrive at maximum effectuation of Congressional objectives.”).
+
+--- PAGE 10 ---
+
+7
+Region, while simultaneously protecting consumers from the extreme price and reliability
+outcomes that have become the unjust and unreasonable norm.
+In the interim, through this complaint, Exelon is providing the Commission with a legal
+pathway and evidentiary record to immediately address one significant defect of RPM (the
+three-year forward period), and in doing so ensure both customers and suppliers in the PJM
+Region benefit from an auction schedule that better reflects actual supply and demand
+fundamentals, and sends more accurate investment signals.  Such action directly aligns with
+the Commission’s core responsibilities under the FPA, as the Commission’s “first and foremost
+duty” under the statute is “to protect consumers from unjust and unreasonable rates,”17 and the
+Commission has long viewed efficient, accurate, and competitive markets as a vehicle to
+achieve that end.18  As an ancillary but not insignificant benefit, granting the instant complaint
+would provide much-needed time for PJM, States, and the PJM stakeholder community to
+thoughtfully develop comprehensive and durable reforms to the capacity construct in the PJM
+Region and submit a proposal to the Commission, without the unnecessary specter of extreme
+
+17 Morgan Stanley Cap. Grp. Inc. v. Pub. Util. Dist. No. 1 of Snohomish Cnty., 554 U.S. 527, 551 (2008)
+(quotations and citations omitted). See also Atl. Refin. Co. v. Pub. Serv. Comm’n of N.Y., 360 U.S. 378, 388 (1959)
+(The FPA’s sister, the Natural Gas Act, was “framed as to afford consumers a complete, permanent and effective
+bond of protection from excessive rates and charges.”); NAACP v. FPC, 520 F.2d 432, 438 (D.C. Cir. 1975) (“The
+Commission’s primary task . . . is to guard the consumer from exploitation . . . .”), aff’d, 425 U.S. 662 (1976).
+18 See Fed. Energy Regulatory Comm’n v. Elec. Power Supply Ass’n, 577 U.S. 260, 267-68 (2016) [hereinafter
+FERC v. EPSA] (“The Commission instead undertakes to ensure ‘just and reasonable’ wholesale rates by
+enhancing competition—attempting, as we recently explained, ‘to break down regulatory and economic barriers
+that hinder a free market in wholesale electricity.’”) (citing Morgan Stanley Capital Group Inc. v. Public Util.
+Dist. No. 1 of Snohomish Cty., 554 U.S. 527, 536 (2008)); Public Citizen, Inc. v. FERC, 7 F.4th 1177, 1194 (D.C.
+Cir. 2021) (explaining that “the whole premise of the Commission’s market-based system is that a properly
+competitive market will necessarily produce just and reasonable prices,” and that the Commission satisfies its
+statutory obligations by ensuring that markets are fair, competitive, and unmanipulated); Calpine Corp. et. al.,
+171 FERC ¶ 61035, at P 139 (2020) (upholding determination on rehearing that the relevant replacement rate will
+enable PJM’s capacity market to send price signals on which both investors and consumers can rely to guide the
+entry and exit of economically-efficient capacity resources, will support the capacity market’s ability to attract
+investments, and “supports the capacity market’s core objective of maintaining resource adequacy at just and
+reasonable rates, particularly during periods when entry is needed.”); Wholesale Competition in Regions with
+Organized Electric Markets , Order No. 719, 125 FERC ¶ 61,071, at P 13 (tying reforms to wholesale competition
+to its responsibilities under FPA §§ 205 and 206).
+
+--- PAGE 11 ---
+
+8
+pricing outcomes with each passing BRA.  Additionally, remedying this defect by moving to
+a prompt auction schedule now, while this broader market redesign takes place, will have
+several immediate benefits for the PJM Region:
+• It will allow the PJM Region to transition more quickly to the new resource
+adequacy structure once such a construct is ultimately established.  Maintaining the
+three-year forward period would push the completion of any transition ahead to, at
+best, four years (the current forward period plus the Delivery Year) after those
+reforms are accepted.  In the current fast-moving energy environment, that is simply
+too long, and customers should not be expected to keep taking on long-term
+commitments to this current broken model.
+• Similarly, it will allow future market reforms to “sink in” more quickly should
+future adjustments be needed.  If history is any guide, there will likely be a need,
+even after this round of reforms, to adjust rules to address lingering shortcomings.
+A prompt structure allows PJM customers to benefit from future market
+improvements more quickly than the existing three-year forward period.
+• It will relieve the challenges and administrative burden on PJM and stakeholders
+associated with constantly running and participating in Incremental Auctions
+(“IAs”).
+• It will improve alignment of participation timing for non-conventional resources
+like demand response, which are challenged by long forward commitments in the
+context of capacity obligations, and eliminate concerns regarding speculative price
+arbitrage.
+Critically, the discrete remedy sought by Exelon through this complaint is not new.
+The Commission already found prompt auction schedules to be just and reasonable in ISO-NE
+Inc. (“ISO-NE”),19 the New York Independent System Operator, Inc. (“NYISO”),20 and the
+Midcontinent Independent System Operator, Inc. (“MISO”),21 even though these three regions
+have diverse approaches to resource adequacy, ranging from utility-owned generation under
+
+19 See ISO New England Inc., 194 FERC ¶ 61,249 (2026) (“ISO-NE Order”).
+20 See New York Independent System Operator, Inc., Market Administration and Control Area Services Tariff,
+§§ 5.13, 5.14.1.1.
+21 See Midcontinent Indep. Sys. Operator, Inc., 162 FERC ¶ 61,176, at PP 70, 74 (2018) (“MISO Order”), reh’g
+denied, 170 FERC ¶ 61,215, at PP 125-26 (2020) (“MISO Rehearing Order”).
+
+--- PAGE 12 ---
+
+9
+state commission Integrated Resource Plans (“IRP”) to fully restructured, market-based
+frameworks.  Action by the Commission in this proceeding will align PJM’s capacity auction
+schedule with all other Regional Transmission Organizations and Independent System
+Operators (“RTOs/ISOs”) that have centralized capacity market constructs.
+Exelon presents its legal case under FPA section 206 in Part IV of this complaint, which
+is divided into two subparts.  In Part IV.A, Exelon demonstrates that the three-year forward
+period of RPM has become unjust, unreasonable, unduly discriminatory or preferential under
+FPA section 206, for the following five reasons:
+1. The risk balancing analysis the Commission relied on in 2006 to accept the load
+forecast inaccuracies inherent in RPM’s multi-year forward period has
+fundamentally collapsed in 2026.
+2. The prospective assumptions in 2006 regarding the ability of RPM’s multi-year
+forward period to incentivize Load-Serving Entity (“LSE”) bilateral contracting
+and risk hedging have been disproven over the course of 20 years.
+3. The current three-year forward period inhibits efficient resource exit and
+Deactivation, as it requires generator owners to invest in the absence of reasonable
+predictability in future operational capability and environmental policy.
+4. PJM’s current capacity accreditation methodology, Effective Load Carrying
+Capability (“ELCC”) bears no resemblance to the Equivalent Forced Outage Rate
+- demand (“eFORd”) model considered by the Commission in 2006, and the three-
+year forward period forces PJM to integrate speculative assumptions into its ELCC
+modeling.
+5. The current three-year forward period undermines the accuracy of other BRA
+planning parameters, including the assumed resource mix in each Locational
+Deliverability Area (“LDA”) used to calculate Capacity Emergency Transfer
+Objective (“CETO”) and Capacity Emergency Transfer Limit (“CETL”) values,
+leading to unjust and unreasonable results.
+In Part IV.B, Exelon requests that the Commission replace the three-year forward
+period of RPM with a prompt auction, starting with the 2030/2031 Delivery Year and
+continuing beyond.  Exelon explains that a prompt auction is just and reasonable for the
+following four reasons:
+
+--- PAGE 13 ---
+
+10
+1. A prompt auction will significantly improve the accuracy of key BRA auction
+parameters, resulting in capacity prices that better reflect actual supply and demand
+fundamentals and system conditions in the Delivery Year.
+2. A prompt auction will significantly enhance the quality of information and the
+accuracy of the price signal used in generator Deactivation decisions.
+3. A prompt auction will significantly enhance the quality of data used in PJM’s
+ELCC capacity accreditation, thereby better aligning both price and payments with
+resource contributions to resource adequacy.
+4. A prompt auction will significantly reduce the risks to new resources seeking to
+enter the market by creating more certainty regarding their expected availability for
+the Delivery Year.
+II.
+PARTIES AND COMMUNICATIONS
+A.
+Complainant Exelon
+Exelon is one of the nation’s largest utility holding companies, providing transmission
+and distribution service to nearly 11 million customers in the PJM Region through its regulated
+subsidiaries Atlantic City Electric Company (“ACE”), Baltimore Gas and Electric Company
+(“BGE”), Commonwealth Edison Company (“ComEd”), Delmarva Power & Light Company
+(“DPL”), PECO Energy Company (“PECO”), and Potomac Electric Power Company
+(“Pepco”) (together, the “Exelon Companies”).  Exelon’s more than 20,000 employees
+dedicate their time and expertise to supporting the communities they live in and serve through
+reliable, affordable, and efficient energy delivery, workforce development, economic
+development, and volunteerism.
+The Exelon Companies are public utilities under the FPA, and signatories to both the
+PJM Consolidated Transmission Owners Agreement (“CTOA”) in their capacity as PJM
+Transmission Owners, and the RAA in their capacity as PJM LSEs.
+
+--- PAGE 14 ---
+
+11
+B.
+Respondent PJM
+PJM is the nation’s largest RTO, coordinating the movement of wholesale electricity
+in all or parts of 13 states and the District of Columbia.22  As an RTO, PJM is responsible for
+the reliability of the high-voltage transmission system serving 68 million people in all or parts
+of Delaware, Illinois, Indiana, Kentucky, Maryland, Michigan, New Jersey, North Carolina,
+Ohio, Pennsylvania, Tennessee, Virginia, West Virginia and the District of Columbia.  PJM
+also administers the PJM wholesale electricity markets, including the Day-ahead Energy
+Market, the Real-time Energy Market, ancillary services markets, and, as relevant here, the
+RPM.
+C.
+Communications
+All correspondence and communications to Exelon in this docket should be addressed
+to the following individuals, whose names should be entered on the official service list
+maintained by the Secretary in connection with these proceedings:23
+Jordan Kwok
+Thomas S. DeVita
+Director, Federal Regulatory Affairs
+Kimberly B. Frank
+Exelon Corporation
+Stuart B. Robbins
+701 Ninth Street, N.W.
+K&L Gates LLP
+Washington, D.C. 20068
+1601 K Street, NW
+(667) 313-0421
+Washington, DC  20006
+jordan.kwok@exeloncorp.com
+(202) 778-9000
+
+thomas.devita@klgates.com
+Alejandro Bautista
+kimberly.frank@klgates.com
+Assistant General Counsel
+stuart.robbins@klgates.com
+Exelon Corporation
+
+2301 Market Street
+Counsel for Exelon Corporation
+Philadelphia, PA 19101
+
+(267) 533-0120
+
+alejandro.bautista@exeloncorp.com
+
+22 See PJM Interconnection, About PJM (last visited Sept. 27, 2026), https://www.pjm.com/about-pjm.
+23 Exelon respectfully requests a waiver of Rule 203(b)(3), 18 C.F.R. § 385.203(b)(3), to allow the inclusion of
+more than two persons on the official service list.
+
+--- PAGE 15 ---
+
+12
+III.
+BACKGROUND
+The concept of a multi-year forward period for RPM first emerged in PJM’s August
+2005 Initial RPM Proposal,24 and was designed to address one of several core deficiencies with
+PJM’s then-existing capacity construct—namely that, as PJM explained, the construct did “not
+look far enough into the future to secure capacity in time to meet reliability needs.”25  In 2005,
+this defect was glaring.  At the time, PJM’s capacity construct only required that Capacity
+Resources be committed for one day, and there was little incentive to commit for longer
+periods.  Moreover, Capacity Resources were permitted to “opt out” of their Capacity Resource
+status with as little as 36 hours’ notice.  PJM administered capacity credit markets only twelve
+months at a time, which were designed to accommodate short-term competitive load-switching
+under retail choice, and were incapable of sustaining long-term generation investment.  As
+PJM described it, “[s]imply put, the short-term nature of the current PJM capacity construct is
+fundamentally inconsistent with the need to preserve system reliability in the longer term.”26
+To remedy these shortcomings, PJM proposed a four-year forward period for RPM.
+On April 20, 2006, the Commission issued its Initial RPM Order, finding that PJM’s
+existing capacity construct was unjust and unreasonable and establishing additional procedures
+to resolve several remaining issues regarding the just and reasonable replacement rate.27  As
+relevant here, the Commission accepted the four-year forward period of RPM, finding that
+
+24 PJM Interconnection, L.L.C., PJM Section 205 and 206 Filing of PJM Interconnection, L.L.C., Docket Nos.
+ER05-1410-000 and EL05-148-000 (Aug. 31, 2005) (“August 2005 Initial RPM Proposal”).
+25 Id., at 5.
+26 Id., at 9.
+27 PJM Interconnection, L.L.C., 115 FERC ¶ 61,079, at P 1 (2006) (“April 2006 Initial RPM Order”).
+
+--- PAGE 16 ---
+
+13
+“four years is a reasonable period in which solutions can be placed in operation in response to
+the RPM’s base residual auction.”28
+On September 29, 2006, PJM submitted the RPM Settlement, which proposed to
+resolve all outstanding issues in the proceeding regarding RPM.29  Among other things, the
+RPM Settlement retained a multi-year forward period accepted by the Commission in the April
+2006 Initial RPM Order, but shortened the period between the BRA and the start of the
+Delivery Year from four to three years.  As explained in the RPM Settlement, the parties
+determined three years was sufficient to meet the essential purpose of a forward commitment,
+namely to provide a credible prospect for new entry via the construction of new resources.30
+To this point, the settlement noted that PJM previously presented witness testimony indicating
+a typical 33-month period between signing of an Incremental Facilities Study Agreement for a
+new plant and the plant’s commercial operation date.31
+On December 22, 2006,32 the Commission approved the RPM Settlement, subject to
+certain conditions, including the proposed three-year-forward period of RPM.  Over the last
+twenty years, many of the RPM market design components from the original RPM Settlement
+have evolved and been improved upon, including capacity accreditation, performance
+obligations, and interface with PJM’s planning and operations regime.  Notably, however, with
+
+28 Id., at P 72.
+29 PJM Interconnection, L.L.C., Settlement Agreement and Explanatory Statement of the Settling Parties
+Resolving All Issues, Docket Nos. ER05-1410-000 and -001, EL05-148-000 and -001 (Sept. 29, 2006) (“RPM
+Settlement”).
+30 See RPM Settlement, at 11-12.
+31 Id.
+32 See PJM Interconnection, L.L.C., 117 FERC ¶ 61,331, at P 28 (2006) (“December Order Approving
+Settlement”).
+
+--- PAGE 17 ---
+
+14
+the exception of the BRA delays starting in 2019, the three-year forward period auction
+schedule has remained unchanged since 2006.
+IV.
+LEGAL ARGUMENT
+A.
+The Current Three-Year Forward Period of RPM is No Longer Just and
+Reasonable.
+i.
+The risk balancing analysis the Commission relied on in 2006 to accept
+the load forecast inaccuracies inherent in RPM’s multi-year forward
+period has fundamentally collapsed in 2026.
+As described above, the concept of a multi-year forward period was integral to PJM’s
+original RPM filing in 2005.  In the August 2005 Initial RPM Proposal, PJM predicated RPM
+on a four-year forward period (later revised down to three years via the RPM Settlement),
+which aligned with what was at the time the expected development schedule for a new
+combustion turbine (an estimated 33 months, as discussed above), according to PJM’s affiant
+Mr. Pasteris.33  From the outset, PJM acknowledged that RPM’s proposed multi-year forward
+period, by definition, contained an inherent risk of load forecast inaccuracies.  PJM explained
+that “the choice of the forward period represents a balance among many factors, including the
+risk of estimation error . . . and the ease of participation by resources with relatively long lead
+times.”34  In applying this “balancing” of factors, PJM reasoned that “what is crucial is a market
+that is sufficiently forward to provide the opportunity for additional competition and a greater
+degree of forward price certainty, while not being so long that the estimation errors create a
+substantial risk of too much construction should the expected load fail[] to materialize.”35
+
+33 See August 2005 Initial RPM Proposal, at 75-76.
+34 Id., at 77-78.
+35 Id., at 78.
+
+--- PAGE 18 ---
+
+15
+In its April 2006 Initial RPM Order approving RPM’s multi-year forward period, the
+Commission recognized what several protesters argued in the record—namely that “RPM may
+expose customers to greater risks than they now face,” including “the inherent risk that a four-
+year-forward estimate of how much capacity will be needed five years later will prove to be
+unreliable.”36  The Commission acknowledged these concerns were valid, but engaged in a
+risk balancing analysis to justify acceptance of the risk of inaccuracy inherent in RPM’s multi-
+year forward period.
+We agree, in part, with Morgan Stanley that RPM may cause
+customers to bear risks such as the risk that a four-year forward
+estimate of needed capacity may turn out to be inaccurate.
+However, we think that the risk is reasonable when it is
+compared to the risks of the current construct, namely that
+sufficient capacity resources may not be constructed to ensure
+the preservation of reliability.37
+Twenty years later, this risk-balancing analysis the Commission relied on in 2006 has
+fundamentally collapsed, and the resulting RPM framework that was explicitly predicated on
+it has become unjust and unreasonable.  As demonstrated below, not only have the load forecast
+inaccuracies inherent in RPM’s three-year forward period increased since 2006, but Capacity
+Resources—and in particular the RPM Reference Resource38—are now functionally incapable
+of being constructed in the PJM Region within the current three-year cycle, leaving only the
+downside pricing risk of those load forecast inaccuracies to be borne by customers.  Put another
+way, the very outcome the Commission sought to avoid in accepting the load forecast
+
+36 April 2006 Initial RPM Order, at P 66.  It is worth noting that the three-year forward period of RPM is
+functionally a “three year + one year” estimate and commitment by customers.
+37 Id., at P 71 (emphasis added).
+38 See Tariff, Definitions R-S (“Reference Resource” shall mean a combustion turbine generating station,
+configured with a single General Electric Frame 7HA turbine with evaporative cooling, Selective Catalytic
+Reduction technology all CONE Areas, dual fuel capability, and a heat rate of 9.134 Mmbtu/ MWh.”).
+
+--- PAGE 19 ---
+
+16
+inaccuracies inherent in RPM’s multi-year forward period—“that sufficient capacity resources
+may not be constructed to ensure the preservation of reliability”—is today the lived reality of
+the PJM Region.  This conclusion is supported by several key pieces of evidence, which are
+described below in subsections IV.A.i.a and IV.A.i.b.
+a.
+Evidence that PJM Load Forecast Inaccuracies Have Increased
+Since 2006.
+As noted above, Exelon has taken concrete steps to improve the accuracy of its load
+forecast and eliminate speculative demand, including through its pioneering use of TSAs,
+which require firm financial commitments from large load customers.39  Notwithstanding these
+efforts, Exelon, the other Transmission Owners of the PJM Region, and PJM itself are
+nonetheless bound by RPM’s requirement to predict reality years into the future—a task made
+more difficult by the nature, characteristics, and volatile development schedules of today’s
+large loads.  Beyond this, a forward period of this magnitude will, by definition, fail to capture
+changes in business economics, federal and state environmental and regulatory policy, and
+local siting and permitting regulations, all of which play a vital role in the market outcomes of
+RPM.
+Irrespective of the efforts of Exelon, the PJM Transmission Owners, and PJM to
+enhance the accuracy of their load forecasts, RPM’s mandate to predict reality so far into the
+future creates uncertainty in PJM’s near-term load forecast that is persistent, consistent in
+direction, and has increased in magnitude since 2006 when the Commission initially accepted
+RPM’s three-year forward period.  There are multiple data sets that support this conclusion.
+First, Figure 2 of the Nicholson Affidavit illustrates the change in the peak load forecast
+
+39 More information about TSAs is available here: https://www.exeloncorp.com/grid/exelons-transmission-
+security-agreements-a-pioneering-model-for-customer-protection1.
+
+--- PAGE 20 ---
+
+17
+between the BRA, which has historically been held thirty-eight (38) months prior to the start
+of the Delivery Year, and the third IA, which is held approximately four months before the
+start of the Delivery Year.  The magnitude of the load forecast inaccuracies (blue bars) between
+the 2016/2017 BRA and the 2022/2023 BRA is significant, reveals a clear trend toward
+overestimation of load, and notably the need for forecast adjustments decreased in instances
+where the BRA forward period was shortened as a result of auction delays.  As Dr. Nicholson
+explains, the increase in BRA load forecast precision shown in  Figure 2 of the Nicholson
+Affidavit is positively correlated with the shorter forecast horizon, as the 2023/24 through
+2026/27 BRAs had a shorter forward period due to auction delays.40
+Nicholson Affidavit - Figure 2
+BRA Forward Period (Green, Right Axis) and Load Forecast
+Change between BRA and Third IA (Blue, Left Axis)
+
+Second, the increase in magnitude in recent years of PJM load forecast inaccuracies
+can also be observed in the growing size (in MW) of the Load Adjustments PJM makes to its
+
+40 Nicholson Affidavit, at ¶¶ 15-16.
+38
+38
+38
+35
+38
+38
+38
+13 12
+18
+11
+0
+5
+10
+15
+20
+25
+30
+35
+40
+-9%
+-7%
+-5%
+-3%
+-1%
+1%
+3%
+2016/17
+2017/18
+2018/19
+2019/20
+2020/21
+2021/22
+2022/23
+2023/24
+2024/25
+2025/26
+2026/27
+BRA  forward period, in months
+%  change, BRA   v. 3rd  IA
+
+--- PAGE 21 ---
+
+18
+load forecast model, which Dr. Nicholson describes in Table 2 of her Affidavit.  Where such
+adjustments historically represented no more than 2% of the projected summer peak load four
+to five years out as recently as the 2017 through 2021 forecasts, PJM’s 2026 forecast reflects
+adjustments of 18.4% and 21.7% of the summer peak for those same time horizons.41  Indeed,
+projected year-over-year growth in summer peak tells the same story, rising from well under
+1% annually as recently as 2022 to a range of 3.1% to 4.4% in PJM’s 2025 load forecast and
+2.6% to 6.7% in the 2026 forecast.42  This trend in year-over-year growth is illustrated in Table
+3 of the Nicholson Affidavit.
+Nicholson Affidavit - Table 2
+Load Adjustments as a Percent of the Summer Peak Load Forecasts, 2017 - 2026
+Historical PJM Load Forecasts by Year
+
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026
+Y0
+0.6%
+0.8%
+1.1%
+0.0%
+-0.2%
+0.6%
+1.9%
+1.8%
+2.3%
+4.1%
+Y0 +1
+0.7%
+1.0%
+1.3%
+0.1%
+-0.1%
+1.1%
+2.2%
+3.0%
+5.3%
+6.7%
+Y0 +2
+0.8%
+1.2%
+1.5%
+0.3%
+-0.1%
+1.6%
+2.4%
+4.8%
+8.3%
+9.8%
+Y0 +3
+1.0%
+1.4%
+1.6%
+0.4%
+0.0%
+2.0%
+2.5%
+6.3%
+11.4%
+13.0%
+Y0 +4
+1.2%
+1.6%
+1.8%
+0.5%
+0.1%
+2.6%
+2.6%
+7.8%
+14.4%
+18.4%
+Y0 +5
+1.4%
+1.7%
+1.9%
+0.4%
+0.0%
+2.7%
+2.7%
+8.9%
+17.8%
+21.7%
+
+Nicholson Affidavit - Table 3
+Year-Over-Year Growth in Summer Peak Load Forecasts, 2017 - 2026
+Historical PJM Load Forecasts by Year
+
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+2026
+Y0+1
+0.6%
+0.2%
+-0.3%
+1.0%
+0.5%
+0.3%
+0.5%
+1.5%
+3.1%
+2.6%
+Y0+2
+0.2%
+-0.3%
+0.4%
+1.0%
+0.6%
+0.6%
+0.8%
+2.2%
+3.3%
+3.2%
+Y0+3
+-0.4%
+0.3%
+0.5%
+0.6%
+0.4%
+0.6%
+1.2%
+1.9%
+3.5%
+3.6%
+Y0+4
+-0.2%
+0.3%
+0.4%
+0.4%
+0.3%
+0.7%
+1.0%
+1.9%
+3.6%
+6.7%
+Y0+5
+0.0%
+0.5%
+0.4%
+0.6%
+0.2%
+0.0%
+0.9%
+1.7%
+4.4%
+4.4%
+
+As Dr. Nicholson notes, this is not a modeling failure; it reflects a structural shift in
+forecast uncertainty driven almost entirely by the nature and size of data center load growth in
+
+41 Id., at ¶¶ 20-21.
+42 Id., at ¶ 22.
+
+--- PAGE 22 ---
+
+19
+the PJM Region.  Not only is such uncertainty larger in magnitude given the size of the
+underlying customers, but the forecasting challenges are also amplified by recent and ongoing
+siting, permitting, and supply chain challenges nationwide, as well as the fast-changing
+business environment and evolving regulatory constructs with which data center developers
+need to contend with.43  These load forecast inaccuracies have real impacts on market
+outcomes.  As Dr. Nicholson explains, the three-year RPM forward period and assumptions
+about large load growth, principally from data centers, are likely to overstate the peak load
+forecast that PJM uses to determine the Reliability Requirement and the amount of capacity
+that PJM must procure in the BRA.44  This can lead to unjust and unreasonable outcomes.
+Procuring too much capacity in the BRA unnecessarily increases costs for PJM Market
+Participants, because if a portion of the large loads included in the load forecast used in the
+BRA do not materialize, capacity costs will increase for all customers.  This outcome is also
+economically inefficient, because when it occurs the PJM Region purchases more capacity
+than is necessary to ensure target levels of resource adequacy.
+Dr. Nicholson provides an illustrative example to demonstrate just how much load
+forecast inaccuracies can impact market prices, even in small percentages.  Figure 3 of the
+Nicholson Affidavit is based on a VRR Curve constructed using PJM’s 2029/30 BRA
+parameters, the VRR Curve formulation the Commission accepted in Docket No. ER26-455,
+and no price collar.  As Dr. Nicholson explains, the blue plot shows an estimate of what the
+VRR Curve would be with the Reliability Requirement for the 2029/30 BRA, and the orange
+
+43 Id., at ¶¶ 14, 21-23, 27.
+44 Id., at ¶ 14.  Note that the PJM Region Reliability Requirement is defined as the Forecast Pool Requirement
+multiplied by the Preliminary PJM Region Peak Load Forecast, less the sum of all Preliminary Unforced Capacity
+Obligations of FRR Entities in the PJM Region; and, for purposes of the Incremental Auctions, the Forecast Pool
+Requirement multiplied by the updated PJM Region Peak Load Forecast, less the sum of all updated Unforced
+Capacity Obligations of FRR Entities in the PJM Region.”
+
+--- PAGE 23 ---
+
+20
+and green plots show what the VRR Curve would have been if the Reliability Requirement
+were 1% or 2% lower, respectively.45  Both 1% and 2% are reasonable load forecast
+sensitivities to explore because they are consistent with historically observed forecast errors
+within a three-year forecast horizon in the 2016/17 through 2022/23 BRAs (see Figure 3 of the
+Nicholson Affidavit), which occurred before the uncertainty inherent in large load growth seen
+today.  Additionally, when comparing the PJM load forecasts published in January 2025 and
+January 2026, the Summer Peak forecasts for 2027 through 2029 fell by between 2.3% and
+2.6%.46
+Nicholson Affidavit - Figure 3
+Illustrative Example of Cost Implications of the Reliability Requirement on the BRA
+Clearing Price
+
+45 Id., at ¶ 29.
+46 Id.
+$0
+$50
+$100
+$150
+$200
+$250
+$300
+$350
+$400
+$450
+$500
+$550
+$600
+$650
+140,000
+142,500
+145,000
+147,500
+150,000
+152,500
+155,000
+157,500
+160,000
+$ / UCAP MW-day
+UCAP MW
+29/30 RR
+1% lower RR
+2% lower RR
+Price cap = $594.48
+1/2 of price cap
+101.5% of RR
+106% of RR
+Lower RR shifts VRR curve to the left
+
+--- PAGE 24 ---
+
+21
+If one were to assume that, as may happen in a tight market, the BRA were to clear on
+the sloped portion of the VRR Curve, Figure 3 of the Nicholson Affidavit shows that a 1%
+shift in the Reliability Requirement could reduce the capacity price by approximately
+$120/UCAP-MW-day, and a 2% reduction could lead to a price reduction of approximately
+$120-220/UCAP MW-day, depending on the capacity the auction clears.  This translates to
+approximately $6 to $12 billion in change in total capacity costs to customers resulting from a
+historically “normal” level of load forecast error associated with a three-year forward period.47
+b.
+Evidence that Capacity Resources cannot be constructed in the
+PJM Region within the current three-year cycle.
+There are multiple pieces of evidence supporting the conclusion that, in 2026, Capacity
+Resources cannot be constructed in the PJM Region within the current three-year forward
+period, thereby undermining the key ‘counterweight’ the Commission used in its balancing
+analysis in 2006 to justify being willing to accept the load forecast inaccuracies inherent in a
+multi-year forward period of RPM.
+First, as a threshold matter, it is worth noting that PJM itself has reached this
+conclusion.  In the PJM White Paper, PJM explained that while “[t]he three-year forward
+timeline was originally established because it aligned with the construction schedule of many
+of the resources that could be built to meet the system’s resource adequacy needs, including
+both combustion turbine and combined cycle gas turbine resources,” this “foundational
+assumption of the RPM design has been physically broken.”48  PJM concluded that “[t]oday,
+due to compounding frictions in siting, permitting, supply chains and interconnection, it can
+
+47 Id. at Table 5, ¶¶30-31.
+48 PJM White Paper, at 18.
+
+--- PAGE 25 ---
+
+22
+take two or three times as long to build a gas resource as it does to build a hyperscale data
+center.”49
+Second, despite notable reforms to PJM’s interconnection queue that are designed to
+make the standard Cycle study one to two years in duration, data indicates that Capacity
+Resources are still experiencing significant difficulty entering service at all, let alone within
+the three-year forward period of RPM.  For example, since 2020, approximately 24 GW of
+planned generation with fully executed interconnection agreements have terminated their
+agreements before reaching commercial operation, including 13.5 GW of natural gas
+capacity.50  These terminations have largely been caused by matters external to PJM, and
+continue to inhibit the deployment of new capacity to the PJM Region.  Indeed, in May 2026
+PJM reported that “~53 GW of interconnection projects – enough to power 40 million homes
+at full output – currently have signed agreements to connect to the grid, but many are being
+stymied by issues beyond PJM’s control, like federal, state and local permitting, siting, and
+supply chain challenges.”51  Additionally, as Dr. Nicholson explains, a recent analysis of
+PJM’s interconnection queue between 2015 and 2024 found that new large natural gas-fired
+generation projects that completed the interconnection process had an average timeline of 10.8
+years between initial submission into the queue and commercial operation.52  This study also
+
+49 Id.
+50 Nicholson Affidavit, at ¶ 34.
+51 See PJM, New, Faster Generation Interconnection Process Fact Sheet (Updated May 21, 2026),
+https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/fact-sheets/interconnection-reform-progress-fact-
+sheet.pdf.
+52 Nicholson Affidavit, at ¶ 34 (citing Ralph O’Connor Sustainable Energy Inst., Johns Hopkins Univ., Natural
+Gas Generator and Energy Storage Timelines in PJM, at 2-3 (May 18, 2026)).
+
+--- PAGE 26 ---
+
+23
+found that, since 2015, of 102 gas-fired generators over 100 MW that entered into the PJM
+queue, only thirteen were online by early 2026 (eleven years later).53
+Third, recent evidence indicates that the global shortage of gas turbines—the
+technology underlying RPM’s reference resource (and combined cycle gas turbine resources
+as well)—has made three-year entry functionally impossible.  As Dr. Nicholson explains,
+major manufacturers have reported backlogs stretching years into the future.  For example,
+Siemens Energy disclosed an approximately 69 GW order backlog as of August 2026, with
+new orders now quoting lead times of three years or more.  GE Vernova similarly reported a
+116 GW backlog it expected to exceed 125 GW by year-end 2026, and Mitsubishi’s gas turbine
+lead times have grown from roughly two years just after the pandemic to five years or more
+today, with the company now booking deliveries as far out as 2031 to 2034.54
+Fourth, recent markets data and rule changes indicate the current market environment
+is no longer conducive to new resource entry within the three-year forward period of RPM.
+This is perhaps most clearly illustrated by the recent BRA results, which conclusively
+demonstrate the current construct is failing to procure adequate capacity, even as prices have
+reached their regulatory ceiling.55  In particular, the 2027/2028 and 2028/2029 BRAs each
+cleared at the Commission-approved price cap (most recently $325.00/MW-day in the Rest of
+RTO zone for the 2028/2029 BRA) while simultaneously failing to procure the full Reliability
+Requirement, falling short by 6,517 MW UCAP and 6,831 MW UCAP, respectively.56
+Notably, the 2029/2030 BRA, scheduled for December 2026, will again be subject to a price
+
+53 Id.
+54 Id., at ¶ 35.
+55 Id., at ¶ 7.
+56 Id.
+
+--- PAGE 27 ---
+
+24
+cap, set at $337.83/UCAP MW-day.57  It is also worth noting that future auctions, beyond the
+2029/2030 Delivery Year, are slated to be run on an uncapped basis, a factor that will allow
+prices to further rise to the regulatory maximum price and that generation developers would
+naturally incorporate into their commercial outlooks for new generation revenue.
+At the same time, PJM recently pursued alternative procurement mechanisms that offer
+long-term investment certainty superior to the three-year forward period of RPM.58
+Specifically, the RBP, which the Commission accepted and suspended for further briefing on
+September 30, 2026, would procure capacity from new resources on a pay-as-bid basis for
+terms of up to fifteen years, subject to a weighted-average price cap of $555/MW-day, for
+resources expected to be in service by June 1, 2032.59   Because a Capacity Resource that clears
+an RPM Auction is ineligible for an RBP auction, these long-term procurement mechanisms
+compete directly with (and, given their superior revenue certainty, are likely to draw
+developers away from) the three-year forward BRA, which offers only a single-year
+commitment.60  The scale of that pull is already evident, with PJM reporting that roughly 136
+GW of potential new capacity, spanning 397 projects and 87 entities, have expressed interest
+in RBP auctions or in facilitated bilateral matching in response to its request for interest.61  As
+Dr. Nicholson explains, it is highly unlikely that a  rational investor would forgo a long-term
+commitment of up to fifteen years under an RBP auction or potentially similar certainty under
+a contract directly with a large load, in favor of a single Delivery Year’s worth of revenue
+
+57 Id., at ¶ 9.
+58 Id., at ¶ 67.
+59 Id.
+60 See id.
+61 Id.
+
+--- PAGE 28 ---
+
+25
+certainty under the BRA, particularly now that lenders financing new merchant generation
+generally insist on exactly the kind of long-term offtake commitment that only those alternative
+multi-year mechanisms can offer.62
+In summary, there is ample evidence that the risk balancing analysis the Commission
+relied on in 2006 has collapsed in 2026.  Not only have the load forecast inaccuracies inherent
+in RPM’s three-year forward period increased considerably since 2006, but Capacity
+Resources are now functionally incapable of being constructed in the PJM Region within the
+current three-year cycle, leaving only the downside pricing risk of those load forecast
+inaccuracies to be borne by customers.
+ii.
+The prospective assumptions in 2006 regarding the ability of RPM’s
+multi-year forward period to incentivize LSE bilateral contracting and
+risk hedging have been disproven over the course of 20 years.
+One of the key ideas put forward in the August 2005 Initial RPM Filing was that RPM’s
+multi-year forward period would help facilitate LSE bilateral contracting and risk hedging.
+PJM explained that “[l]onger term price signals [] should incent longer term bilateral contracts,
+as an effective means of hedging the reliability charges assessed under RPM.”63  In support of
+this proposition, PJM included testimony from Andrew Ott, then PJM’s Vice President of
+Market Services.  Mr. Ott explained that this anticipated enhanced incentive for LSE bilateral
+contracting and risk hedging would “help orient market participant objectives with the
+system’s reliability needs, and help ensure the long-term viability of the competitive market
+model in the electric industry.”64
+
+62 See id.
+63 August 2005 Initial RPM Proposal, at 77.
+64 Id. at Ott Affidavit ¶ 15.
+
+--- PAGE 29 ---
+
+26
+Several protesters raised concerns with PJM’s prognostications regarding RPM’s
+positive impact on LSE bilateral contracting and risk hedging, arguing that, contrary to PJM’s
+predictions, “RPM will impair parties’ willingness and ability to manage risk: since all parties
+will be fully hedged prior to each Delivery Year, there will be no incentive for parties to
+manage their own risk by entering into additional bilateral contracts.”65  Protesters further
+argued that “if the market becomes less volatile, parties will be less motivated to enter into
+bilateral agreements even before entering the capacity markets.”66
+In response, PJM acknowledged that “RPM will affect bilateral contracting in the PJM
+region, just as LMP affected bilateral contracting,” but argued that “the impact will be
+beneficial from the standpoint of system reliability, as it will encourage contracts of four years
+or more.”67 PJM argued that, under the current structure, “LSEs that have an orientation
+towards short time horizons are not entering into long-term contracts” and that “[t]o the extent
+RPM begins to induce a change in contracting towards agreements that come closer to
+reflecting those costs and supporting those investments [necessary to maintain a reliable
+system], then it is a change worth making, and one the Commission should support as a matter
+of policy.”68
+In its April 2006 Initial Order approving RPM’s multi-year commitment period, the
+Commission accepted PJM’s assumptions and predictions regarding the incentivization of LSE
+bilateral contracting and risk hedging, stating:
+
+65  April 2006 Initial Order, at P 65.
+66 Id.
+67 PJM Interconnection, L.L.C., Motion for Leave to Answer and Answer of PJM Interconnection, L.L.C, at 35
+(Sept. 16, 2005).
+68 Id., at 35-36.
+
+--- PAGE 30 ---
+
+27
+The Commission does not consider it likely that RPM will
+lessen parties’ motivation to purchase more of their forward-
+looking capacity needs through bilateral contracts, or to
+manage their risk in other ways, such as releasing or
+purchasing additional capacity in the auctions following the
+Residual Base Auction during the four years prior to each
+Delivery Year.  First, those states or LSEs who wish to maintain
+maximum flexibility to manage their own risk will be able to
+fulfill their own capacity needs by providing their own fixed
+resource requirement.  Second, as PJM has alleged, parties are
+not engaging in significant amounts of forward contracting
+now: RPM will provide more information to all market
+participants, and all parties will be able to use this information
+to manage their risk more effectively, whether through
+bilateral contracting or otherwise.  Moreover, the series of
+follow-on auctions for each Delivery Year will enable LSEs to
+adjust the amounts of capacity they hold, or to seek to obtain
+capacity at a better price, until four months before the Delivery
+Year.69
+These prospective predictions and assumptions made in 2006 regarding the impact of
+RPM’s multi-year forward period on LSE bilateral contracting and risk hedging have been
+comprehensively disproven over the course of 20 years.  The anticipations of PJM and the
+Commission, that RPM would lead to a broad propagation of bilateral contracting and hedging,
+and the associated reasoning used in support of accepting the three-year forward period, have
+not come to pass.  This conclusion is supported by several pieces of evidence.
+First, PJM itself identified that a significant portion of PJM load is presently served by
+entities that rely on short-term procurement rather than long-term bilateral contracts to meet
+their capacity needs, leaving those entities (and the retail customers they serve) directly
+exposed to RPM price volatility, rather than hedged against it. And, as a corollary,
+opportunities for long-term contracting between those entities and Capacity Resources have
+been equally limited.  In the PJM White Paper, PJM explained that:
+
+69 April 2006 Initial Order, at P 70 (emphasis added).
+
+--- PAGE 31 ---
+
+28
+A significant portion of PJM load is served by default service
+providers – state-regulated entities that are often constrained by
+statute or regulatory practice from entering long-term bilateral
+contracts. These entities procure capacity primarily through
+short-term default service auctions calibrated to the annual
+Base Residual Auction cycle. During PJM’s prolonged surplus
+era, this approach was rational: short-term procurement
+captured low market prices without paying a long-term hedge
+premium. But it also left these entities – and their retail
+customers – exposed to capacity price volatility when the market
+transitioned into scarcity. This effect was exacerbated by the
+persistent capacity auction delays experienced in PJM.70
+Similarly, in PJM’s February 2025 filing to establish a revised price cap and price floor
+for the 2026/2027 and 2027/2028 Delivery Years, PJM’s Executive Vice President for Market
+Services and Strategy Stu Bresler explained that although the RPM was initially expected to
+be a residual market, with the majority of capacity contracted bilaterally, that contracting has
+not occurred.  Instead, Mr. Bresler explained that “[r]ather, it appears that substantial load in
+the states that have expressed concern are directly exposed to Base Residual Auction prices for
+the entirety of their capacity obligations.”71  It was precisely because of this absence of long-
+term contracting that PJM presented “Path A” in the PJM White Paper, which envisions
+enhanced requirements for LSEs to sign long-term capacity contracts to support investment in
+new capacity resources and to act as a hedge against volatility in capacity market prices.72
+
+70 PJM Whitepaper, at 29-36.
+71 PJM Interconnection, L.L.C., Affidavit of Mr. Frederick S. Bresler III on Behalf of PJM Interconnection,
+L.L.C., at 6, Docket No. ER25-1357-000 (Feb. 20, 2025), emphasis added (“The original vision of the RPM was
+for it to function primarily as a residual market, with the majority of capacity procured through bilateral contracts
+and only a small portion needed to cover remaining needs from the market. Participation in this way as originally
+intended would serve to substantially hedge market participants on both the supply and demand sides from
+uncertain and potentially volatile Base Residual Auction clearing prices. The historic and existing capacity market
+design and results do not appear to have sufficiently stimulated this type of activity. Rather, it appears that
+substantial load in the states that have expressed concern are directly exposed to Base Residual Auction prices
+for the entirety of their capacity obligations.”).
+72 PJM Whitepaper, at 32-34.
+
+--- PAGE 32 ---
+
+29
+Second, in many PJM jurisdictions, LSEs are restricted by state law from engaging in
+the kinds of long-term bilateral contracting and hedging that the Commission envisioned in
+2006 when approving the three-year forward period of RPM.  Exelon Affiant Deborah Sears
+submits direct testimony on this point into the record, describing in detail the range of
+restrictions on long-term bilateral contracting and hedging in the District of Columbia,
+Maryland, New Jersey, and Delaware.  As Ms. Sears notes, “[t]he SOS/BGS auction structures
+are highly prescriptive and any changes to the annual auction process are reviewed through a
+stakeholder meeting called the Procurement Improvement Process, and the final changes to the
+Request for Proposal and Full Requirements Service Agreement require approval by the
+applicable state utility regulatory commission.”73  As Ms. Sears puts plainly, “Pepco, DPL,
+and ACE are not permitted to enter into any bilateral transactions including hedging
+agreements without approval from the applicable state utility regulatory commission.”74
+Third, beyond restrictions in state law, restrictions in federal law have also been
+identified by certain states as an obstacle to long-term bilateral contracting and hedging.  To
+this point, and as further referenced by Dr. Nicholson, a New Jersey Board of Public Utilities
+(“NJBPU”) examination of the PJM capacity market explained that federal legal restrictions
+limit the types of bilateral contracting the state of New Jersey can engage in to procure capacity
+bilaterally on a long-term basis outside of the RPM.75  The NJBPU assessment found that
+“[t]he only way an LSE can use capacity procured wholly outside the RPM to meet its capacity
+needs is by electing to use the Fixed Resource Requirement (“FRR”) Alternative under which
+
+73 Sears Affidavit, at ¶ 9.
+74 Id.
+75 Nicholson Affidavit, at ¶ 38 (citing New Jersey Board of Public Utilities, An Investigation of PJM’s Capacity
+Market, at 6 (Aug. 2026)).
+
+--- PAGE 33 ---
+
+30
+it must meet all of its capacity needs outside of the RPM for the relevant service area.
+However, the Reliability Assurance Agreement effectively bars LSEs in states like New Jersey
+that allow full retail choice from electing the FRR Alternative.”76  The Assessment went on to
+explain that the state of New Jersey attempted to make long-term bilateral capacity
+procurements through the Long-Term Capacity Pilot Program, but courts found the program
+was preempted by the Federal Power Act in PPL v. Hannah77 and PPL v. Solomon.78  The
+NJBPU further explained that Hughes v. Talen79 put further limits on the types of long-term
+bilateral capacity contracting PJM states can engage in.  As a result of these federal legal
+constraints, NJBPU concluded that “to date New Jersey LSEs have opted to procure the
+capacity they needed exclusively or nearly exclusively through RPM auctions.”80
+In summary, the prospective assumptions and predictions of PJM and the Commission
+in 2006 regarding the ability of RPM’s multi-year forward period to incentivize LSE bilateral
+contracting and risk hedging have not come to pass over the last 20 years.
+iii.
+The current three-year forward period inhibits efficient resource exit
+and Deactivation, as it requires generation owners to invest in the
+absence of reasonable predictability in future operational capability
+and environmental policy.
+Under PJM’s Capacity Performance construct, cleared Capacity Resources with RPM
+commitments are required to be available to operate throughout the Delivery Year, pursuant to
+RPM’s must-offer requirements.  Capacity Resources have particular performance obligations
+when scheduled and/or dispatched by PJM during a Performance Assessment Interval
+
+76 Id.
+77 PPL Energyplus, LLC v. Hanna, 977 F.Supp. 2d 372, 389-390 (D.N.J. 2013).
+78 PPL EnergyPlus, LLC v. Solomon, 766 F.3d 241, 246 (3rd Cir. 2014).
+79 Hughes v. Talen Energy Mktg., LLC, 578 U.S. 150 (2016).
+80 Nicholson Affidavit, at ¶ 38.
+
+--- PAGE 34 ---
+
+31
+(“PAI”).81  Capacity Resources that fail to perform when called upon face severe financial
+penalties, or as PJM has described it, “[g]enerators assume virtually all financial risks if they
+do not meet their power supply obligations.”82
+In deciding how to bid their Capacity Resources into RPM and at what price, all
+resource owners must engage in a business risk balancing analysis that weighs the potential
+revenues that might be earned in a given RPM Auction against the cost of continuing to operate
+a given Capacity Resource, including the Capacity Performance risk associated with failing to
+perform when called upon during a PAI.  Indeed, PJM’s rules explicitly acknowledge these
+considerations in the construction of a resource’s Avoidable Cost Rate (“ACR”), which
+represents the ongoing fixed operation and maintenance costs a Capacity Resource can avoid
+if it does not operate for a given Delivery Year, and in a resource’s Capacity Performance
+Quantifiable Risk (“CPQR”), which measures and values the expected financial risks and
+potential performance penalties that a Capacity Resource may face during emergency
+operations.
+For the owners of older Capacity Resources that may be trying to ascertain whether it
+is economic to remain in the market or exit through Deactivation, the three-year forward period
+of RPM profoundly clouds this balancing analysis.  The reason for this is simple—these
+resource owners cannot see three years (and in practice, four years) into the future.  As a result,
+they are unable to make two important determinations: (i) whether they will be able to
+physically operate their resource dependably during the future Delivery Year; and (ii) whether
+
+81 See Tariff, Attachment DD, Section 5.5A(a).
+82 See PJM Interconnection, Capacity Performance at a Glance (last visited Sept. 27, 2026),
+https://www.pjm.com/-/media/DotCom/library/reports-notices/capacity-performance/20150720-capacity-
+performance-at-a-glance.ashx?la=en.
+
+--- PAGE 35 ---
+
+32
+applicable environmental policy will legally allow them to operate their resource during the
+future Delivery Year.  Furthermore, given the various uncertainties in play, Capacity Resource
+owners may also struggle to predict future system conditions and therefore estimate the volume
+of Capacity Performance exposure.  Accordingly, even if it would be efficient for the market,
+economic for the resource owner, and beneficial to reliability as a whole for the Capacity
+Resource to remain in the market, these resource owners are incapable of conducting an
+accurate risk assessment and are thus inadvertently incentivized to exit the market earlier than
+may be appropriate.  These operational and environmental policy uncertainties are described
+below, in the following subsections IV.A.iii.a and IV.A.iii.b.
+a.
+Operational Uncertainties
+A key consideration for the owner of a Capacity Resource contemplating Deactivation
+is whether they will be physically able to dependably operate their resource during the future
+Delivery Year.  By definition, many of the resources contemplating Deactivation are old and
+nearing the end of their operational life.  This reality tends to exacerbate several factors critical
+to the predictability of future operations.  The first is the availability and long-term
+procurement of fuel.  Global instability, supply chain disruptions, transportation and storage
+bottlenecks, and contractual rigidity in price/volume take, duration, and collateral credit
+requirements can make accurately forecasting the price and future availability of both the fuel
+commodity itself and delivery challenging, particularly for resources that may be operating
+under shorter time horizons due to their vintage.
+The second factor that can exacerbate uncertainty around the future ability of an older
+Capacity Resource to operate is project investment.  These facilities tend to need significant
+investment in their physical plant to continue reliable operations when compared to newer
+facilities.  In PJM, this fact can be seen in the scale of identified project investment for units
+
+--- PAGE 36 ---
+
+33
+that are required to continue operations via Reliability Must-Run (“RMR”) arrangements with
+the RTO.  For example, in its April 18, 2024, application for cost recovery for the Brandon
+Shores facility in Maryland, Talen Energy identified nearly $30,000,000 in anticipated project
+investment to ensure the availability of the facility for PJM scheduling and dispatch.83
+Finally, employee retention has remained an ongoing challenge for resource owners,
+as an aging workforce and the geographic isolation of many power plants limits the availability
+of skilled personnel needed to operate these facilities, particularly as they near the end of their
+useful life.  Additionally, competition for the labor skill sets required to operate power plants
+is also increasing from other sectors of the economy.  To this point, the Department of Energy
+in its 2026 United States Energy and Employment Report, (“USEER”) found that “energy
+employers are increasingly competing for workers not only with other energy companies, but
+also with fast-growing data centers, infrastructure projects, advanced manufacturing facilities,
+and critical minerals industries” as “[t]hese sectors rely on many of the same skilled
+occupations, including electricians, electrical engineers and technicians, industrial
+maintenance workers, construction trades workers, and production workers.”84  These
+challenges can add to uncertainty regarding the staffing needed to ensure the operational
+availability of Capacity Resources in the future.
+b.
+Environmental Policy Uncertainties
+In addition to the operational uncertainties described above, a key consideration for the
+owner of a Capacity Resource contemplating Deactivation is whether they will be able to
+
+83 Brandon Shores LLC, Continuing Operations Rate Schedule of Brandon Shores LLC, Docket No. ER24-1790-
+000, at 18 (Apr. 18, 2024).
+84 U.S. Dep’t of Energy, 2026 United States Energy and Employment Report, at 24 (2026),
+https://www.energy.gov/documents/2026-useer-national-report.
+
+--- PAGE 37 ---
+
+34
+legally operate their resource, and under what environmental regulations, during the future
+Delivery Year.  Environmental regulations at both the federal and state level directly impact
+the operation of Capacity Resources, and can change significantly from year to year.
+For example, federal environmental policy has been particularly volatile in recent
+years, as reflected in Figure Exelon-1, which illustrates the major changes to federal carbon
+dioxide regulation policy that have occurred just over the last decade.
+
+--- PAGE 38 ---
+
+35
+Figure Exelon-1
+Major Changes in Federal Regulation of Carbon Dioxide
+2015-2026
+Date
+Federal Carbon Dioxide Regulation Event
+August 3, 2015
+The EPA finalizes the Clean Power Plan, which aims to reduce
+carbon dioxide emissions from the power sector by 32% below 2005
+levels by 2030.85
+February 9, 2016
+The United States Supreme Court stays the implementation of the
+Clean Power Plan, pending further proceedings before the United
+States Court of Appeals for the District of Columbia Circuit (“D.C.
+Circuit”).86
+June 19, 2019
+The EPA finalizes the Affordable Clean Energy Rule, which repeals
+the Clean Power Plan.87
+January 19, 2021
+The D.C. Circuit vacates the Affordable Clean Energy Rule.88
+June 30, 2022
+The United States Supreme Court rejects EPA’s attempt to revive
+the Clean Power Plan, and limits EPA’s ability to regulate carbon
+dioxide emissions from power plants under the Clean Air Act.89
+April 25, 2024
+The EPA announces final Carbon Pollution Standards requiring that
+all long-term coal-fired plants and base load new gas-fired plants
+control 90% of their carbon emissions.90
+September 17, 2026
+The EPA repeals most of the Carbon Pollution Standards and
+solicits comment on additional reasons to rescind all greenhouse gas
+emission requirements for fossil fuel-fired generators.91
+
+85 See U.S. Env’t Prot. Agency, Fact Sheet: Overview of the Clean Power Plan (last updated May 9, 2017),
+https://archive.epa.gov/epa/cleanpowerplan/fact-sheet-overview-clean-power-plan.html
+86
+See
+Chamber
+of
+Commerce
+v.
+EPA,
+136
+S.
+Ct.
+999
+(2016)
+(order
+granting
+stay),
+https://www.supremecourt.gov/orders/courtorders/020916zr3_hf5m.pdf.
+87 See U.S. Env’t Prot. Agency, Affordable Clean Energy (last updated Mar. 12, 2026),
+https://www.epa.gov/stationary-sources-air-pollution/affordable-clean-energy-rule.
+88 Am. Lung Assoc. v. EPA, 985 F.3d 914 (D.C. Cir. 2021).
+89 W. Va. vs. EPA, 597 U.S. 697 (2022).
+90 See U.S. Env’t Prot. Agency, Supporting Information – Final Greenhouse Gas Standards and Guidelines for
+Fossil Fuel-Fired Power Plants (last updated May 20, 2026), https://www.epa.gov/stationary-sources-air-
+pollution/supporting-information-final-greenhouse-gas-standards-and.
+91 See Partial Repeal of the Carbon Pollution Standards for Fossil Fuel-Fired Electric Generating Units, 91 Fed
+Reg. 58,954 (Sept. 17, 2026), https://www.federalregister.gov/documents/2026/09/17/2026-19071/partial-repeal-
+of-the-carbon-pollution-standards-for-fossil-fuel-fired-electric-generating-units.
+
+--- PAGE 39 ---
+
+36
+The impact of federal environmental policy can also be seen in the words of PJM
+resource owners themselves, through their Deactivation notices to PJM.  For example, in its
+July 22, 2025, Deactivation notice to PJM for the Kincaid facility, Vistra Corp. explained that
+“[t]he Kincaid Units will cease operations by this date in order to comply with the U.S.
+Environmental Protection Agency’s (EPA) Coal Combustion Residual (CCR) Rule, 40 C.F.R.
+Part 257, Subpart D.”92
+Beyond federal environmental policy, uncertainty and future assumptions regarding
+state environmental policy can also impact Deactivation decisions.  Indeed, a review of
+generator Deactivation notices in PJM from the last three years makes clear that prospective
+assumptions regarding the future applicability of state environmental regulations are a key
+driver for Deactivation decisions in the PJM Region, as illustrated in Figure Exelon-2.
+Figure Exelon-2
+References to State Environmental Regulations in PJM Deactivation Notices
+2023-2026
+Deactivation
+Letter
+Date
+Reason Given in Deactivation Letter
+Cumberland
+CT
+August
+26, 2024
+“Calpine’s Cumberland CT 1 generating facility in its current
+state will be physically unable to perform in the Delivery Year
+2027/2028 as a result of finalized regulations in connection
+with New Jersey’s efforts to limit carbon emissions from
+power plants.”
+Sherman
+Avenue
+August
+26, 2024
+“Calpine’s Sherman Avenue generating facility in its current
+state will be physically unable to perform in the Delivery Year
+2027/2028 as a result of finalized regulations in connection
+with New Jersey’s efforts to limit carbon emissions from
+power plants.”
+
+92 Vistra’s July 22, 2025, Deactivation Letter is available on the PJM Website.  See Deactivation Notice Letter
+for Kincaid Generation, L.L.C, from Jessica H. Miller, Vice President & Assoc. Gen. Counsel, Vistra Corp., to
+PJM
+Generation
+Manager
+(July
+22,
+2025),
+https://www.pjm.com/-/media/DotCom/planning/gen-
+retire/deactivation-notices/kincaid-deactivation-letter.pdf.
+
+--- PAGE 40 ---
+
+37
+Elwood
+May 28,
+2024
+“Given current and expected market conditions and ongoing
+Illinois regulatory uncertainty, operation of Elwood is
+expected to continue to be uneconomic.”
+Fisk
+June 30,
+2026
+“Pursuant to the Illinois Climate and Equitable Jobs Act
+(“CEJA”), the Units are required to “permanently reduce all
+CO2e and copollutant emissions to zero, including through
+unit retirement” by January 1, 2030. As such, MWG intends to
+retire the Units on January 1, 2030.”
+Elgin
+May 10,
+2024
+“MRP Elgin is planning to retire the Units as of June 1, 2025
+in light of PJM market conditions and operating restrictions
+imposed by the stringent emissions limits under the Illinois
+Climate and Equitable Jobs Act. Given these circumstances,
+continued operation of the Units is expected to be uneconomic
+relative to other opportunities.”
+Zion
+June 22,
+2026
+“Constellation intends to retire these units in compliance with
+the Illinois Climate and Equitable Jobs Act (CEJA), which
+requires certain electric generation resources to reduce all
+CO2 and co-pollutant emissions to zero, including through
+unit retirement, on or before January 1, 2030.”
+Sayreville
+December
+29, 2023
+“The New Jersey Department of Environmental Protection
+(NJDEP) issued a final regulation on January 3, 2023
+establishing CO2 emissions rates limits for in-state electric
+generating units (EGUS) sized 25 MW and larger. The
+Sayreville units are unable to operate within the limitation that
+go into effect on June 1st, 2024, 1,700 lbs CO2/MWh. These
+new regulations will require New Jersey-located EGUs to
+retire if they are unable to meet the established CO2 emissions
+rates limits unless granted a reliability extension by the
+NJDEP.”
+Brandon
+Shores
+April 6,
+2023
+“The Brandon Facilities’ National Pollution Discharge
+Elimination System (“NPDES”) permit precludes operation
+using coal on or after January 1, 2026. Brandon had
+previously been evaluating a conversion of the Brandon
+Facilities to fuel oil combustion but has determined that,
+under current capacity market rules, such a conversion is
+uneconomic and does not justify operating after June 1, 2025.
+The Brandon Facilities have capacity market obligations
+through May 31, 2025.”
+H.A. Wagner  October
+16, 2023
+“The Wagner Facilities’ Title V air permit limits operation to
+capacity factors under 15% when operating on oil. The limited
+run hours on the Wagner Facilities are not sustainable to
+continue operations, especially in light of the amount of time
+the Wagner Facilities have recently been running in the
+market. The combination of low margin energy market
+
+--- PAGE 41 ---
+
+38
+economics, low-capacity prices and significant Capacity
+Performance penalty risk due to run hour limitations results in
+the economics being outweighed by the risk associated with
+continued operation. The Wagner Facilities have capacity
+market obligations through May 31, 2025.”
+Cardinal
+July 22,
+2026
+“[U]nless and until such conditions are satisfied, or waived by
+Buckeye in its discretion, continued operations past December
+31, 2028, will not be possible based on the requirements of the
+EPA NOPP and the Sierra Club Agreement. Should these
+conditions be satisfied, or waived by Buckeye in its discretion,
+Buckeye reserves the right to withdraw its deactivation notice
+and participate in future PJM capacity auctions for the
+2029/2030 Delivery Year and thereafter.”
+University
+Park North
+Station
+June 30,
+2026
+“LSPUP is deactivating these units due to uneconomic
+compliance requirements of the Illinois Climate and Equitable
+Jobs Act.”
+Rocky Road
+February
+6, 2026
+“Dairyland intends to retire the Unit due to its inability to
+meet operational restrictions imposed on the Unit by the Clean
+Air Act Permit Program (“CAAPP”) permit issued by the
+Illinois Environmental Protection Agency (“EPA”).”
+Forked River
+1
+February
+24, 2025
+“Forked River’s Unit-1 generating facility in its current state
+will be physically unable to perform in the Delivery Year
+2027/2028 as a result of finalized regulations in connection
+with New Jersey’s efforts to limit carbon emissions from
+power plants. Thus, as affirmed by this submission, Forked
+River plans to retire the Unit-1 generating facility before the
+commencement of the 2027/2028 delivery year and provides
+this Notice of Deactivation.”
+Forked River
+2
+February
+24, 2025
+“Forked River’s Unit-2 generating facility in its current state
+will be physically unable to perform in the Delivery Year
+2026/2027 because of its inability to meet NJ air permit
+requirements. Thus, as affirmed by this submission, Forked
+River plans to retire the Unit-2 generating facility before the
+commencement of the 2026/2027 delivery year and provides
+this Notice of Deactivation.”
+
+Given the outsized role that prospective assumptions regarding the future applicability
+of operational and environmental policy play in Deactivation decisions in the PJM Region, the
+stability and veracity of those assumptions are, by extension, critical to the determination of
+whether or not a Deactivation decision is efficient for the market and economic for the resource
+
+--- PAGE 42 ---
+
+39
+owner in the context of RPM’s three-year forward period.  And therein lies the problem.  Given
+the protean nature of the operational uncertainties and environmental policy considerations
+described above, a three-year forward period is often too long for resource owners to develop
+confidence that they will be permitted to continue operation of their Capacity Resources in the
+future.  The decision these resource owners are left with in light of that ambiguity is simple—
+exit the market to avoid significant and hard-to-predict regulatory risks, even if it might
+otherwise be efficient for the market and economic for the resource owner to stay.
+Importantly, the uncertainty in operational availability and environmental policy
+described above also incentivizes the owners of Capacity Resources that remain in the market
+to include a “risk premium” in their RPM offers, especially when the auction is run three years
+forward.  As Dr. Nicholson explains, under PJM’s Capacity Performance construct, this
+uncertainty is reflected in a resource’s CPQR component of a capacity sell offer, meaning that
+the three-year forward period directly inflates the risk premium that owners of resources near
+the end of their economic life must build into their capacity supply offers, or exit the market
+rather than attempt to price that risk at all.93  This dynamic is not unique to PJM.  As ISO-NE
+explained in proposing a prompt capacity auction, “the uncertainty about whether a new or
+existing resource will be available to perform three years into the future can be reflected in
+suppliers’ capacity offers or bids through higher risk premiums, increasing Capacity Clearing
+Prices over what those prices would have been had the auction been held closer in time to the
+Capacity Commitment Period, where sellers would have more certainty about their
+performance and the costs associated with holding an obligation.”94
+
+93 Nicholson Affidavit, at ¶¶ 40-43.
+94 Id. at ¶ 41 & n. 63 (citing ISO-NE Transmittal, Docket No. ER26-925, at 24 (December 30, 2025)).
+
+--- PAGE 43 ---
+
+40
+In summary, the current three-year forward period inhibits efficient resource exit and
+Deactivation, as it requires generation owners to take on capacity commitments and make
+capital investments in the absence of reasonable predictability in future operational capability
+and environmental policy.  It also leads to higher capacity prices by causing the owners of
+Capacity Resources to include a “risk premium” in their RPM offers to account for these
+uncertainties.
+iv.
+PJM’s current capacity accreditation methodology (ELCC) bears no
+resemblance to the eFORd model considered by the Commission in
+2006, and the three-year forward period forces PJM to integrate
+speculative assumptions into its ELCC modeling.
+At the time of the Commission’s 2006 approval of RPM’s multi-year forward period,
+PJM used a capacity accreditation methodology known as Equivalent Forced Outage Rate -
+demand, or “eFORd.”  This methodology focused on historic, unit-specific metrics that
+measured the percentage of time that a specific unit was forced out of service or unable to run
+when called upon.  For various reasons, including the nature of the then-prevailing generation
+mix and the types of operational risks faced by the PJM Region, eFORd was supportable when
+RPM was accepted.  Additionally, because eFORd relied on a resource’s own historical
+performance rather than on system-wide, forward-looking modeling of the resource mix, it had
+a high level of predictability, stability, and replicability for resource owners.
+On July 30, 2021, the Commission accepted PJM’s proposal to transition from eFORd
+to a new capacity accreditation methodology, known as Effective Load Carrying Capability
+(“ELCC”).95  Unlike eFORd, ELCC considers the simultaneous reliability contribution of all
+resources, and recognizes the complementary and antagonistic interactions among the
+
+95 PJM Interconnection, L.L.C., 176 FERC ¶ 61,056 (2021).
+
+--- PAGE 44 ---
+
+41
+resources expected to be able to provide capacity in a given Delivery Year.  In general, a
+resource that contributes a significant level of capacity during high-risk hours (i.e., hours with
+very high electricity demand and low resource output) will have a higher capacity value under
+ELCC than a resource that delivers the same generating capability but only during low-risk
+hours.  These risk hours may vary as the resource mix changes (e.g., more wind and solar
+resources are installed) and hours of high demand evolve (e.g., wide-scale electric car charging
+at night).96
+As explained by Dr. Nicholson, the process by which PJM implements the ELCC
+model involves an extraordinary amount of data and analysis.97  Specifically, ELCC class
+accreditations are derived from sophisticated probabilistic modeling that estimates each
+resource class’s reliability contribution across a wide range of system conditions, placing the
+greatest weight on the hours of greatest reliability risk, and PJM must update and re-run this
+analysis as the assumed resource mix and load profile change from year to year.98
+Given the volume of data and analytical complexity involved in implementing the
+ELCC model, the accuracy and replicability of PJM’s ELCC model has remained an issue of
+paramount concern within the PJM Region since the model’s inception in 2021.  These
+concerns have been expressed directly to the PJM Board by the Organization of PJM States,
+Inc. (“OPSI”), with OPSI arguing that “[t]he accuracy of the ELCC methodology is essential
+and necessary to ensure that it reflects the true ability of supply to meet demand and secure the
+
+96 PJM’s current ELCC methodology is set forth in RAA, Schedule 9.2 and implemented through PJM Manuals
+21A and 21B.
+97 Nicholson Affidavit, at ¶¶ 44-50.
+98 Id., at ¶ 47.
+
+--- PAGE 45 ---
+
+42
+reliability needs of the region.”99  Indeed, in its August 4, 2025, letter approving the Forecast
+Pool Requirement (“FPR”) and the Installed Reserve Margin (“IRM”) for the 2027/2028
+Delivery Year BRA, the PJM Board acknowledged that at the Markets and Reliability
+Committee (“MRC”) and Members Committee (“MC”) “[a]dditional concerns were expressed
+about the methodology utilized to determine Effective Load Carrying Capability (ELCC)
+values that are derived from the same reliability analysis that produces the FPR and IRM.”100
+The Board accordingly directed PJM to engage a consultant to examine the ELCC
+methodology to identify improvements.  The consultant’s report was published in December
+2025,101 and included multiple recommendations regarding how to enhance transparency and
+accuracy.
+Yet the current three-year forward period of RPM works against model accuracy and
+replicability by forcing PJM to integrate assumptions that are almost certain to change over the
+course of three years.  As explained by Dr. Nicholson, under ELCC PJM must estimate the
+resource mix that will actually be available during the Delivery Year (including the mix of
+thermal, intermittent, and storage resources expected to be in service, and the retirements and
+new entry assumed to occur before that year) approximately three and a half years before the
+start of the Delivery Year, because capacity suppliers must know their accreditation values
+
+99 Letter from Emile Thompson, President, Org. of PJM States, Inc., to David Mills, Chair, PJM Bd. of Managers,
+& Manu Asthana, President & CEO, PJM Interconnection, L.L.C.,  at 2 (Aug. 28, 2025), https://www.pjm.com/-
+/media/DotCom/about-pjm/who-we-are/public-disclosures/2025/20250828-opsi-letter-re-consultant-review-of-
+elcc-methodology.pdf.
+100 Letter from David E. Mills, Chair, PJM Bd. of Managers, to PJM Stakeholders, at 1 (Aug. 4, 2025),
+https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-disclosures/2025/20250804-board-
+correspondence-re-irm-and-fpr.pdf.
+101 Energy+Environmental Economics, PJM ELCC/ RRS Model Evaluation: Prepared for PJM (Dec. 2025),
+https://www.pjm.com/-/media/DotCom/committees-groups/task-forces/elccstf/2025/20251209/20251209-item-
+02---pjm-elcc-rrs-model-evaluation---e3-report.pdf.
+
+--- PAGE 46 ---
+
+43
+before the BRA.102  These assumptions are far from static: PJM’s own preliminary ELCC
+estimates show that accreditation values for a given resource class can shift materially from
+one year’s estimate to the next, with storage resource ELCC values in particular projected to
+decline significantly across upcoming Delivery Years as PJM’s assumptions about extended
+cold-weather charging constraints evolve, and with the gas combustion turbine reference class
+also experiencing meaningful changes.  This dynamic can be seen in Figure 4 of the Nicholson
+Affidavit, which shows the final ELCC values for Delivery Years 2028/2029 and 2029/2030
+along with PJM’s preliminary estimate for Delivery Years 2030/2031 and 2031/2032.
+Nicholson Affidavit - Figure 4
+Actual and Preliminary ELCC Values, Delivery Years 2028/29 Through 2032/33
+
+Figure 4 of the Nicholson Affidavit illustrates just how much projected and actual
+ELCC values can change over the three-year forward period of RPM depending on the
+
+102 Nicholson Affidavit, at ¶ 46.
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+100%
+2028/29
+2029/30
+2030/31
+2031/32
+2032/33
+Preliminary ELCC calculation
+Delivery Year
+4-hr Storage
+6-hr Storage
+8-hr Storage
+10-hr Storage
+Gas CC
+Gas CT
+
+--- PAGE 47 ---
+
+44
+assumptions used, such as the assumed resource mix and system loads.  Because even modest
+shifts in ELCC accreditation can translate into substantial swings in a resource’s qualifying
+capacity, and, in the aggregate, in the auction’s supply curve and clearing price, basing those
+accreditation values on three-and-a-half-year-old assumptions introduces significant
+inaccuracy into the BRA that a shorter forward period would not.103  Owing to the resulting
+inaccuracies, BRA prices can diverge from what underlying supply and demand fundamentals
+would otherwise produce, rendering the current three-year forward period unjust and
+unreasonable.
+v.
+The current three-year forward period undermines the accuracy of
+other BRA planning parameters, including the assumed resource mix in
+each Locational Deliverability Area used to calculate CETO/CETL
+values, leading to unjust and unreasonable results.
+The planning parameters used in a given BRA play a critical role in the auction’s
+outcome.  For example, RPM utilizes an administratively set demand curve—the Variable
+Resource Requirement Curve (“VRR Curve”)—which represents the prices that consumers
+should be willing to pay for varying quantities of capacity.   In developing the demand curve
+for a given BRA, PJM forecasts the expected peak load for a particular Delivery Year and then
+sets a target level of capacity needed to reliably serve the load—also known as the Reliability
+Requirement—given the expected resource portfolio.  The auction’s supply curve is based on
+Sell Offers for capacity that Capacity Market Sellers submit at a specific price and, together,
+the offers comprise the auction’s supply curve.  RPM is a locational market, meaning there are
+defined areas within the PJM Region that have limits on the amount of capacity they can
+import.  Those areas are LDAs, which recognize and quantify the locational value of capacity
+
+103 Id., at ¶¶ 46, 49-50.
+
+--- PAGE 48 ---
+
+45
+within the PJM Region.  As relevant here, the modeled LDAs are determined by comparing
+the import limit of an LDA (CETL) with the amount of capacity that needs to be imported into
+a LDA to meet the reliability criterion (CETO).  Sell Offers are located in specific LDAs based
+on where those resources are located.
+The accuracy of the planning parameters used in a given auction are only as good as
+the data upon which they are based.  As Dr. Nicholson explains, the three-year forward period
+undermines the accuracy of certain planning parameters, including CETO and CETL, because
+these values depend on assumptions about the resource mix and transmission topology that
+will actually exist in each LDA during the Delivery Year.104  As with the ELCC and load
+forecast inputs discussed above, these assumptions are far less reliable when projected three
+and a half years in advance than when set closer to the Delivery Year.  These inaccuracies and
+uncertainties introduced into the CETO and CETL parameters can, in turn, lead to capacity
+prices that do not reflect market fundamentals in the Delivery Year by misrepresenting the
+transmission system’s ability to transfer capacity.105  This can lead to unjust and unreasonable
+outcomes.  Indeed, the idea that inaccurate planning parameters can warp the outcome of a
+given BRA and disassociate it from basic market fundamentals is unfortunately not an
+academic one.  In December 2022, PJM discovered that certain Planned Generation Capacity
+Resources and planned Intermittent Resources in the DPL South LDA did not offer into the
+2024/2025 Delivery Year BRA, notwithstanding the fact that such resources were included by
+PJM years earlier in the modeling assumptions (CETO) that formed the DPL South LDA
+Reliability Requirement.  The absence of these resources from the 2024/2025 BRA resulted in
+
+104 Id., at ¶ 52.
+105 Id.
+
+--- PAGE 49 ---
+
+46
+an overstated LDA Reliability Requirement, and led to a dramatically higher clearing price
+that was wholly unrepresentative of the actual capacity needs of the LDA.106  As the
+Independent Market Monitor (“IMM”) described it, the clearing prices for DPL South “do not
+reflect the actual market supply and demand fundamentals, overstate the local reliability
+requirement, serve no useful purpose, and are therefore unjust and unreasonable.”107
+Accordingly, the three-year forward period of RPM is unjust and unreasonable, because
+it undermines the accuracy of important BRA planning parameters, including the assumed
+resource mix in each LDA used to calculate CETO/CETL values, leading to market outcomes
+divorced from underlying supply and demand conditions.
+B.
+The Commission Should Adopt a Prompt Auction Schedule as the Just and
+Reasonable Replacement Rate.
+In the event that the Commission finds the three-year forward period of RPM to be
+unjust, unreasonable, unduly discriminatory or preferential under FPA section 206, Exelon
+proposes the Commission direct PJM to adopt as a replacement rate a “prompt” BRA schedule,
+to run two months before a given Delivery Year, starting with the 2030/2031 Delivery Year
+BRA, currently scheduled for May 2027, and beyond.  The Commission need not treat this
+proposal as novel or untested.  To the contrary, the Commission has already found, on at least
+three occasions—for all of the other centralized capacity market structures in its jurisdiction—
+that a prompt capacity auction schedule is just and reasonable.  Most recently, on March 30,
+2026, the Commission accepted ISO-NE’s proposal, filed jointly with the New England Power
+Participants Committee, to replace its three-year forward capacity market with a prompt
+
+106 See generally Docket No. ER23-729-000.
+107 PJM Interconnection, L.L.C., Comments of the Independent Market Monitor of PJM, Docket No. ER23-729-
+000 (Jan. 20, 2023).
+
+--- PAGE 50 ---
+
+47
+capacity market in which an Annual Capacity Auction is held approximately one month before
+the relevant Capacity Commitment Period, effective March 31, 2026.108  In accepting ISO-
+NE’s proposal, the Commission expressly relied on its prior orders finding that MISO’s prompt
+capacity auction schedule, under which MISO holds its auction two months before the delivery
+year, is just and reasonable.109  The Commission has likewise accepted prompt auctions relying
+on near-term procurement in NYISO.110  For the reasons discussed below, moving to a prompt
+schedule in PJM will provide the same substantial benefits, and particularly so in the dynamic
+and uncertain environment currently facing the PJM Region.
+i.
+A prompt auction will significantly improve the accuracy of key BRA
+auction parameters, resulting in capacity prices that better reflect
+actual supply and demand fundamentals and system conditions in the
+Delivery Year.
+A prompt auction schedule will significantly enhance the accuracy of key BRA auction
+parameters, thereby resulting in capacity prices that better reflect actual market fundamentals
+and system conditions in the Delivery Year.  As Dr. Nicholson explains, a shorter forward
+period would reduce forecast uncertainty across each of the BRA’s key inputs.  Specifically, it
+would allow PJM to forecast peak demand closer to the Delivery Year, reducing the risk of
+over-forecasting load and procuring more capacity than is actually needed, while also allowing
+PJM to base ELCC accreditation values on a resource mix and system conditions that are far
+more likely to reflect what will actually exist during the Delivery Year rather than a three-and-
+
+108 See ISO-NE Order, at P 1.
+109 Id., at P 32 (MISO Order, at PP 70-74 (finding that MISO’s prompt capacity auction market design may be
+beneficial because “[load-serving entities] can accurately forecast their loads by taking into consideration changes
+such as those resulting from shifting economic conditions and MISO can accurately account for transmission
+constraints, forced outage rates, and expected performance of Load Modifying Resources”); MISO Rehearing
+Order, at PP 125-26).
+110 See N.Y. Indep. Sys. Operator, Inc., 179 FERC ¶ 61,102, at PP 2-3 (2022).
+
+--- PAGE 51 ---
+
+48
+a-half-year-old projection.111  It would also improve the accuracy of CETO/CETL values and
+the resulting Local Deliverability Area Reliability Requirements, which likewise depend on
+assumptions about the future resource mix and transmission topology.112
+The net effect of this enhanced accuracy in BRA auction parameters is self-evident—
+capacity prices that better reflect actual market fundamentals and system conditions.  The
+Commission has previously found this policy outcome to be just and reasonable.  Specifically,
+in accepting ISO-NE’s prompt auction schedule, the Commission found that the shorter
+forward period would “reduce demand uncertainty because the Installed Capacity Requirement
+will be calculated using data that is closer in time to the Capacity Commitment Period” and
+would “result in more accurate Qualified Capacity values for resource accreditation.”113
+Similarly, in the Commission’s order accepting MISO’s prompt auction schedule as just and
+reasonable, the Commission found that “MISO’s prompt Auction design allows load
+forecasting to occur within the year leading up to the Planning Year.”114  The Commission
+acknowledged the inherent benefits of this change, finding that “LSEs can accurately forecast
+their loads by taking into consideration changes such as those resulting from shifting economic
+conditions and MISO can accurately account for transmission constraints, forced outage rates,
+and expected performance of Load Modifying Resources.”115
+
+111 Nicholson Affidavit, at ¶¶ 54-55.
+112 Id., at ¶ 56.
+113 ISO-NE Order, at P 32 (citing to ISO-NE Transmittal, at 23-30).
+114 MISO Order, at PP 70-74 (finding that MISO’s prompt capacity auction market design may be beneficial
+because “[load-serving entities] can accurately forecast their loads by taking into consideration changes such as
+those resulting from shifting economic conditions and MISO can accurately account for transmission constraints,
+forced outage rates, and expected performance of Load Modifying Resources”); MISO Rehearing Order, at PP
+125-26.
+115 MISO Order, at PP 70-74.
+
+--- PAGE 52 ---
+
+49
+The same legal and policy rationale the Commission used in the ISO-NE Order and the
+MISO Order apply with equal if not greater force here.  The closer in time that PJM establishes
+its Installed Reserve Margin, ELCC accreditation values, CETO/CETL, and other key BRA
+auction parameters to the actual Delivery Year, the more those parameters will reflect the
+resource mix, load conditions, and system topology that actually exist, rather than a years-old
+projection of what they might be.  These rationales are only strengthened by the rapidly
+changing conditions currently facing the PJM Region; that is, the demands of large loads and
+associated forecasting challenges, as well as the evolving resource mix and a shifting policy
+environment.
+ii.
+A prompt auction will significantly enhance the quality of information
+and the accuracy of the price signal used in generator Deactivation
+decisions.
+By definition, a prompt auction schedule narrows the window across which resource
+owners must attempt to forecast future operational, environmental, regulatory, and market
+conditions when deciding whether and how to bid into a BRA and commit their Capacity
+Resources for a Delivery Year.  As explained by Dr. Nicholson, this in turn enhances the
+quality and accuracy of the price signal that RPM sends to those resource owners in two distinct
+ways.116
+First, it increases the economic efficiency of resource exit from the market.  This
+enhanced efficiency in market exit will become increasingly important in the PJM Region in
+the coming years, as a substantial volume of existing capacity in the PJM Region is expected
+to reach the end of its useful life and retire.117  Some aging capacity has been kept operational
+
+116 See Nicholson Affidavit, at ¶ 57.
+117 Id.; See also PJM White Paper, at 16.
+
+--- PAGE 53 ---
+
+50
+in response to high prices.  Additional capacity has been kept operational by out-of-market
+mechanisms, such as RMR arrangements and FPA section 202c orders from the Department
+of Energy, but these interventions are, by definition, temporary and not designed as primary
+tools to achieve long-term resource adequacy.  Furthermore, as generating assets continue to
+age, keeping them operational will become prohibitively expensive, their operations will
+become even more challenging, and the resulting policy goal should be to manage their exit,
+not keep them online indefinitely.  To this point, the Commission has previously found
+proposals that increase the efficiency of economic market entry and exit to be just and
+reasonable.118
+Second, a prompt auction allows resource owners that choose to remain in the market
+to “de-risk” their capacity supply offers by removing the need to price in the multi-year
+“operational and policy-uncertainty” premium described above in Section IV.A.iii.119  This
+should apply downward pressure to capacity prices.
+In short, the shift to a prompt structure will significantly enhance the quality of
+information and the accuracy of the investment signal used in resource owner market exit and
+Deactivation decisions.  Specifically, a prompt structure will allow commitment decisions to
+be based on more current information, which will allow resource owners to better assess a
+Capacity Resource’s remaining economic life, operating condition, needed capital
+
+118  See e.g. Midcontinent Independent System Operator, Inc., 187 FERC ¶ 61,102, at P 80 (2024) (finding MISO’s
+RBDC proposal to adopt a sloped demand curve in the Auction to be just in reasonable in part because it will
+result in capacity price signals that will “provide better incentives for efficient resource entry and exit,” among
+other reasons), modified on denial of reh’g by Midcontinent Independent System Operator, Inc., 189 FERC P
+61159 (2024); ISO New England, Inc., 173 FERC ¶ 61,161, at PP 48–50 (2020) (agreeing on rehearing that a
+capacity market design “appropriately allows the [Forward Capacity Market] to provide the proper price signal
+to trigger entry and exit of capacity supply resources,” and finding that the Commission had properly “considered
+... whether the [Forward Capacity Market] provides the proper price signals to trigger appropriate entry and exit
+of capacity resources”).
+119 Nicholson Affidavit, at ¶ 57.
+
+--- PAGE 54 ---
+
+51
+improvements, and market risks (e.g., Capacity Performance risk), producing in aggregate
+outcomes that better reflect the actual state of the PJM fleet as it ages, and capacity prices that
+more accurately reflect the avoidable going forward costs of resources.
+iii.
+A prompt auction schedule will significantly enhance the quality of data
+used in PJM’s ELCC capacity accreditation, thereby better aligning
+both price and payments with resource contributions to resource
+adequacy.
+Another important benefit to a prompt auction schedule is the enhanced quality of the
+data inputs used in PJM’s ELCC capacity accreditation process.  PJM’s capacity accreditation
+methodology has grown substantially more complex and data-intensive since the Commission
+first approved the current multi-year forward period in 2006.  As noted above, in 2021 the
+Commission approved PJM’s transition from its longstanding eFORd methodology to an
+ELCC approach.  In 2024 the Commission accepted PJM’s proposal to make further
+enhancements by transitioning to a “marginal” ELCC framework and extending ELCC
+accreditation to all Generation Capacity Resources.  In doing so, the Commission
+acknowledged a key underlying concern with ELCC in relation to the RPM’s three-year
+forward period—namely that “PJM’s RPM aims to ensure resource adequacy for a future
+delivery year, and as such, there will inevitably be differences between the resource mix
+forecasted at the time of the auction and the actual, cleared resource mix.”120  Nonetheless, the
+Commission found that PJM had demonstrated that any differences between the forecasted and
+cleared resource mix are unlikely to introduce significant capacity accreditation errors.121
+Specifically, the Commission found that, based on PJM’s sensitivity analysis at the time, the
+forecast error was likely to be a “negligible amount” (an estimated 115 MW out of a 170,000
+
+120PJM Interconnection, L.L.C., 186 FERC ¶ 61,080, at P 75 (2024).
+121 Id., at P 76.
+
+--- PAGE 55 ---
+
+52
+MW system).122  As discussed above in Section IV.A.iv, data over the last two years has
+disproven this assumption.123
+Adopting a prompt auction will significantly improve the quality of data used in PJM’s
+ELCC modeling, thereby better addressing the Commission’s original concern in 2024
+regarding the “differences between the resource mix forecasted at the time of the auction and
+the actual, cleared resource mix.”124  As Dr. Nicholson explains, because a prompt auction
+would base ELCC accreditation on a resource mix and system conditions far closer to the actual
+Delivery Year, this will lead to superior economic outcomes by reducing both over- and under-
+accreditation of resources and the resulting mispricing of capacity.125  Indeed, the Commission
+has already found that a prompt auction schedule produces more accurate capacity
+accreditation values, including in the ISO-NE Order where the Commission found as just and
+reasonable a prompt auction schedule that would “result in more accurate Qualified Capacity
+values for resource accreditation.”126
+Finally, a prompt auction schedule will allow Capacity Resources that have previously
+received a capacity commitment to have their accreditation values recalculated annually, using
+more up-to-date data.  This provides several benefits, including ensuring that a resource’s
+accredited capacity value reflects the resource mix and system conditions that actually prevail
+closer to the Delivery Year, rather than a three-and-a-half-year-old projection, giving resource
+
+122 Id.
+123 See Nicholson Affidavit, at ¶¶ 44-50.
+124 See PJM Interconnection, L.L.C., 186 FERC ¶ 61,080 (2024) (approving PJM’s transition to a marginal ELCC
+framework and acknowledging that the resource mix forecasted at the time of the auction will inevitably differ
+from the actual, cleared resource mix).
+125 Nicholson Affidavit, at ¶ 58.
+126 ISO-NE Order, at P 32.
+
+--- PAGE 56 ---
+
+53
+owners better information with which to construct their capacity supply offers and plan
+maintenance and retirement decisions, and reducing the risk that a resource is over- or under-
+credited relative to its true reliability contribution.
+iv.
+A prompt auction will significantly reduce the risks to new resources
+seeking to enter the market by creating more certainty regarding their
+expected availability for the Delivery Year.
+A prompt auction will significantly reduce the risks, for customers and suppliers,
+associated with the timing of new resources entering the market, as resources will have more
+certainty about their expected availability for each Delivery Year, and particularly their first
+Delivery Year in service.  This will directly address the problem that the Commission has
+previously described as “phantom entry,” where resources that receive a capacity commitment
+years in advance are not actually operational in time for the delivery period.127  As the Filing
+Parties explained in the ISO-NE proceeding, this phantom entry problem can raise capacity
+prices when the risk of non-commercial operation is priced into capacity offers.128
+As explained by Dr. Nicholson, to the extent that it exists in PJM, a prompt auction
+would directly address the problem of “phantom entry” by allowing only those resources that
+have actually achieved, or are on the imminent path to achieving, commercial operation to
+participate, rather than requiring new entrants to make a binding capacity commitment years
+before they can demonstrate they will actually be available.129  This will provide both PJM and
+Market Participants with far greater certainty regarding actual resource availability for the
+applicable Delivery Year.
+
+127 See ISO-NE Order, at PP 13, 32.
+128 Id., at P 13.
+129 Nicholson Affidavit, at ¶ 59.
+
+--- PAGE 57 ---
+
+54
+V.
+REFUND EFFECTIVE DATE
+As discussed above, Exelon respectfully requests that the Commission establish a
+refund effective date of January 1, 2027, and permit Fast Track processing under Rule 206(h)
+to facilitate a Commission order by no later than January 31, 2027—currently the last day
+before the posting of the planning parameters for the 2030/31 Delivery Year BRA.
+VI.
+RULE 206 REQUIREMENTS
+To the extent not already provided above, Exelon provides the following additional
+information required by Rule 206 of the Commission’s Rules of Practice and Procedure.130
+Exelon respectfully requests waiver of any part of the Commission’s regulations necessary to
+process this filing.
+A.
+Good faith estimate of financial impact or harm (Rule 206(b)(4))
+The complaint sets forth in detail above the financial impact and harm to PJM Market
+Participants caused by the three-year forward period of RPM.
+B.
+Practical, operational, or nonfinancial impacts (Rule 206(b)(5))
+The practical, operational, and nonfinancial impacts of the RPM’s three-year forward
+period are described at length in the sections above.
+C.
+Whether the matters are pending in any other FERC proceeding or other
+forum (Rule 206(b)(6))
+The issue of whether the three-year forward period of RPM has become unjust and
+unreasonable under FPA section 206, as presented in this complaint, is not to Exelon’s
+knowledge pending in any other existing Commission proceeding or forum in which Exelon is
+a party.
+
+130 18 C.F.R. § 385.206.
+
+--- PAGE 58 ---
+
+55
+D.
+Specific relief or remedy requested (Rule 206(b)(7))
+The complaint sets forth in detail the specific relief requested.
+E.
+Documents supporting the complaint (Rule 206(b)(8))
+This filing consists of the following:
+• This Transmittal Letter;
+• Affidavit of Dr. Emma Nicholson, included as Attachment A;
+• Affidavit of Deborah M. Sears, included as Attachment B; and
+• A Form of Notice, included as Attachment C.
+F.
+Use of alternative dispute resolution (Rule 206(b)(9))
+Exelon has not used the Enforcement Hotline, Dispute Resolution Service, tariff-based
+dispute resolution mechanisms, or other informal dispute resolution procedures, because the
+complaint argues that the three-year forward period of RPM is no longer just and reasonable,
+and is therefore unlawful under FPA section 206.  Only the Commission has the legal authority
+to provide the statutory remedy that the complaint requests.  For this reason, Exelon does not
+believe that alternative dispute resolution (“ADR”) under the Commission’s supervision could
+successfully resolve the complaint, nor could any specific ADR procedures.  Exelon has not
+agreed to any process for resolving the complaint outside of the instant proceeding.
+G.
+Notice (Rule 206(b)(10))
+Exelon has appended a form of notice of this filing for publication in the Federal
+Register, in accordance with the specifications in section 385.203(d) of the Commission’s
+rules.
+H.
+Request for Fast Track Processing (Rule 206(b)(11))
+As described above, Exelon respectfully requests that the Commission permit Fast
+Track processing under Rule 206(h) to facilitate a Commission order by no later than January
+
+--- PAGE 59 ---
+
+56
+31, 2027—currently the last day before the posting of the planning parameters for the 2030/31
+Delivery Year BRA.
+VII.
+SERVICE AND NOTICE
+In accordance with Rule 206(c), Exelon has served a copy of this complaint upon PJM,
+as Respondent, simultaneously with the filing of the complaint.
+VIII. CONCLUSION
+Wherefore, for the foregoing reasons, Exelon respectfully requests that the
+Commission: (i) find under FPA section 206 that the current three-year forward period of
+PJM’s RPM is no longer just and reasonable; (ii) adopt as a replacement rate a “prompt”
+auction schedule, to run two months before a given Delivery Year, starting with the 2030/2031
+Delivery Year and continuing beyond; (iii) establish a refund effective date of January 1, 2027;
+and (iv) permit Fast Track processing under Rule 206(h) to facilitate a Commission order by
+no later than January 31, 2027—currently the last day before the posting of the planning
+parameters for the 2030/31 Delivery Year BRA.
+
+--- PAGE 60 ---
+
+57
+Respectfully submitted,
+/s/ Jordan Kwok
+/s/ Thomas S. DeVita
+Jordan Kwok
+Thomas S. DeVita
+Director, Federal Regulatory Affairs
+Kimberly B. Frank
+Exelon Corporation
+Stuart B. Robbins
+701 Ninth Street, N.W.
+K&L Gates LLP
+Washington, D.C. 20068
+1601 K Street, NW
+(667) 313-0421
+Washington, DC  20006
+jordan.kwok@exeloncorp.com
+(202) 778-9000
+
+thomas.devita@klgates.com
+/s/ Alejandro Bautista
+kimberly.frank@klgates.com
+Alejandro Bautista
+stuart.robbins@klgates.com
+Assistant General Counsel
+
+Exelon Corporation
+Counsel for Exelon Corporation
+2301 Market Street
+
+Philadelphia, PA 19101
+
+(267) 533-0120
+
+alejandro.bautista@exeloncorp.com
+
+Dated: November 3, 2026
+
+--- PAGE 61 ---
+
+58
+CERTIFICATE OF SERVICE
+I hereby certify that I have on this date caused a copy of the foregoing document to be
+served upon PJM Interconnection, L.L.C., at the following addresses obtained from the
+Commission’s list of corporate officials designated to receive services pursuant to 18 C.F.R. §
+385.2010(k):
+Jessica M. Lynch
+Associate General Counsel
+PJM Interconnection, L.L.C.
+2750 Monroe Blvd.
+Audubon, PA 19403
+(267) 563-3688
+FERCeService@pjm.com
+Mark J. Stanisz
+Associate General Counsel
+PJM Interconnection, L.L.C.
+2750 Monroe Blvd.
+Audubon, PA 19403
+(610) 666-4707
+FERCeService@pjm.com
+
+Dated: November 3, 2026
+
+/s/ Stuart B. Robbins
+Stuart B. Robbins
+K&L Gates LLP
+1601 K Street, NW
+Washington, DC  20006
+(202) 778-9148
+stuart.robbins@klgates.com
+
+Counsel for Exelon Corporation

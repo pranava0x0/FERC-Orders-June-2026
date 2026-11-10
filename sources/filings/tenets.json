@@ -1,0 +1,3409 @@
+{
+ "asOf": "2026-11-09",
+ "note": "Key tenets per proceeding. Every quote is verified on its page by tools/verify-record.mjs.",
+ "groups": [
+  {
+   "id": "pjm-backstop-rehearing",
+   "title": "Rehearing of FERC's PJM Reliability Backstop Procurement order",
+   "short": "PJM auction: rehearing",
+   "docket": "ER26-3380-001",
+   "about": "Seven parties ask FERC to reconsider its September order accepting PJM's backstop procurement. Asking for rehearing is the required step before a party can take an order to court.",
+   "sideOf": "FERC's Sep 29 order",
+   "status": "Seven requests, filed Oct 13 to Oct 29, 2026. FERC had not ruled on any as of Nov 9.",
+   "docs": [
+    {
+     "slug": "clarification-er26-3380-amp",
+     "accession": "20261013-5514",
+     "date": "2026-10-13",
+     "filer": "American Municipal Power",
+     "kind": "request for clarification",
+     "side": "mixed",
+     "pages": 17
+    },
+    {
+     "slug": "rehearing-er26-3380-joint-consumer-advocates",
+     "accession": "20261029-5262",
+     "date": "2026-10-29",
+     "filer": "Joint Consumer Advocates (DE, DC, IL CUB, IL AG, MD, NJ)",
+     "kind": "request for rehearing",
+     "side": "against",
+     "pages": 35
+    },
+    {
+     "slug": "rehearing-er26-3380-indicated-pjm-tos",
+     "accession": "20261029-5265",
+     "date": "2026-10-29",
+     "filer": "Indicated PJM Transmission Owners",
+     "kind": "request for rehearing",
+     "side": "against",
+     "pages": 10
+    },
+    {
+     "slug": "rehearing-er26-3380-constellation",
+     "accession": "20261029-5261",
+     "date": "2026-10-29",
+     "filer": "Constellation Energy Generation",
+     "kind": "request for rehearing",
+     "side": "against",
+     "pages": 21
+    },
+    {
+     "slug": "rehearing-er26-3380-ohio-occ",
+     "accession": "20261029-5263",
+     "date": "2026-10-29",
+     "filer": "Ohio Consumers' Counsel",
+     "kind": "request for rehearing",
+     "side": "against",
+     "pages": 26
+    },
+    {
+     "slug": "rehearing-er26-3380-novec",
+     "accession": "20261029-5264",
+     "date": "2026-10-29",
+     "filer": "Northern Virginia Electric Cooperative",
+     "kind": "request for rehearing",
+     "side": "against",
+     "pages": 19
+    },
+    {
+     "slug": "rehearing-er26-3380-firstenergy",
+     "accession": "20261029-5270",
+     "date": "2026-10-29",
+     "filer": "FirstEnergy Service Company",
+     "kind": "request for rehearing",
+     "side": "against",
+     "pages": 18
+    }
+   ],
+   "tenets": [
+    {
+     "tenet": "FirstEnergy and NOVEC ask FERC to reject the procurement and replace it.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-firstenergy",
+       "q": "the Commission should reject PJM's RBP filing, proceed under the Section 206 proceeding it has instituted in Docket No. EL26-108-000, and establish settlement procedures.",
+       "pg": 17
+      },
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "requests that the Commission grant its request for rehearing and require PJM to adopt the voluntary stakeholder framework.",
+       "pg": 17
+      },
+      {
+       "d": "rehearing-er26-3380-ohio-occ",
+       "q": "FERC should have rejected the RBP auction proposal and directed PJM to meet again with stakeholders to consider a model that would provide appropriate allocations of costs",
+       "pg": 22
+      }
+     ]
+    },
+    {
+     "tenet": "Pay-as-bid without market power screens lets sellers bid the cap, not cost.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-joint-consumer-advocates",
+       "q": "The Order accepts RBP without requiring reasonable market power screens or mitigation",
+       "pg": 2
+      },
+      {
+       "d": "rehearing-er26-3380-joint-consumer-advocates",
+       "q": "unlike a uniform clearing price construct where sellers are expected to offer a marginal cost, sellers are more likely to offer the expected clearing price.",
+       "pg": 8
+      },
+      {
+       "d": "rehearing-er26-3380-joint-consumer-advocates",
+       "q": "The RBP includes none of the BRA’s approved mitigation measures.",
+       "pg": 11
+      },
+      {
+       "d": "rehearing-er26-3380-ohio-occ",
+       "q": "There is nothing in that structure that will prevent sellers from just bidding at the $555/MW-day offer cap regardless of the sellers’ actual marginal costs.",
+       "pg": 15
+      }
+     ]
+    },
+    {
+     "tenet": "FERC abandoned its single-clearing-price precedent for capacity auctions without a reasoned explanation.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-ohio-occ",
+       "q": "FERC also failed to provide a reasoned explanation for its departure from its long-held policy of requiring a single clearing price auction design for capacity markets.",
+       "pg": 15
+      },
+      {
+       "d": "rehearing-er26-3380-joint-consumer-advocates",
+       "q": "A central premise of the design is that capacity sellers are expected to bid their own marginal costs.",
+       "pg": 10
+      }
+     ]
+    },
+    {
+     "tenet": "The $555/MW-day cap is borrowed from the BRA with no evidence it fits.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-joint-consumer-advocates",
+       "q": "The RBP Order fails to provide a reasoned explanation based on the record evidence for accepting an average-weighted $555/MW-day price cap.",
+       "pg": 6
+      },
+      {
+       "d": "rehearing-er26-3380-ohio-occ",
+       "q": "The fact that the accepted auction design will pay each seller whose offer clears the auction its offer bid price for a period of up to 15 years only encourages rather than discourages offers above competitive levels.",
+       "pg": 13
+      }
+     ]
+    },
+    {
+     "tenet": "15-year terms could add $13 billion when five years would cure the shortfall.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-joint-consumer-advocates",
+       "q": "The Order’s acceptance of RBP’s 15-year procurement terms could unjustly and unreasonably saddle captive ratepayers with some $13 billion in excessive and unnecessary RBP costs.",
+       "pg": 4
+      },
+      {
+       "d": "rehearing-er26-3380-joint-consumer-advocates",
+       "q": "RBP’s acquisition of 15-year capacity commitments is unjust and unreasonable because it may increase",
+       "pg": 6
+      }
+     ]
+    },
+    {
+     "tenet": "The levelized average-price framework lets sellers front-load payments into early delivery years.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-firstenergy",
+       "q": "FirstEnergy explained that the predictable consequence of this flexibility is that sellers will front-load their costs into the initial years of their contracts.",
+       "pg": 8
+      },
+      {
+       "d": "rehearing-er26-3380-firstenergy",
+       "q": "The Commission should grant rehearing and reject the levelized framework or, in the alternative, require that RBP offers be priced on a straight-line, fixed-value basis or subject to an annual price cap.",
+       "pg": 9
+      }
+     ]
+    },
+    {
+     "tenet": "No locational requirement means RBP capacity may land where the load growth is not.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-joint-consumer-advocates",
+       "q": "the RBP Order is arbitrary and capricious because it fails to engage arguments that RBP’s lack of locational constraints renders it unjust and unreasonable.",
+       "pg": 4
+      },
+      {
+       "d": "rehearing-er26-3380-joint-consumer-advocates",
+       "q": "is likely to result in excessive capacity costs due to the non-deliverability of the resources to areas of need",
+       "pg": 7
+      }
+     ]
+    },
+    {
+     "tenet": "Selection should favor firm, dispatchable resources, not just least cost.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-firstenergy",
+       "q": "The Commission should grant rehearing and require PJM to demonstrate that the RBP framework appropriately prioritizes firm and dependable capacity resources.",
+       "pg": 11
+      },
+      {
+       "d": "rehearing-er26-3380-firstenergy",
+       "q": "FirstEnergy further showed that PJM's selection process is designed to select the",
+       "pg": 10
+      }
+     ]
+    },
+    {
+     "tenet": "Shortfall charges end at commercial operation, leaving customers unprotected for the rest of 15 years.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-firstenergy",
+       "q": "offers no explanation of what protects customers after commercial operation, when shortfall charges no longer apply.",
+       "pg": 13
+      },
+      {
+       "d": "rehearing-er26-3380-ohio-occ",
+       "q": "FERC never addressed the IMM’s concerns that there is nothing to protect consumers from shortfall in capacity that could occur in years four through fifteen.",
+       "pg": 19
+      },
+      {
+       "d": "rehearing-er26-3380-ohio-occ",
+       "q": "FERC did not explain why the shortage penalty, set at 20% of the price bid by the seller times the cleared capacity, was appropriate.",
+       "pg": 18
+      }
+     ]
+    },
+    {
+     "tenet": "OCC: PJM's wording suggests consumers, not sellers, may end up paying the shortfall charges.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-ohio-occ",
+       "q": "FERC also ignores that under PJM’s proposal, it is consumers who may pay the shortage penalties.",
+       "pg": 19
+      }
+     ]
+    },
+    {
+     "tenet": "LSE collateral of $1.5 million per RBP MW is far above seller collateral.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-firstenergy",
+       "q": "Customers are asked to post collateral of $1.5 million per committed RBP MW to protect suppliers for up to fifteen years",
+       "pg": 14
+      },
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "the RBP Proposal is not just and reasonable because it imposes an unreasonable and excessive collateral obligation on RBP buyers",
+       "pg": 5
+      }
+     ]
+    },
+    {
+     "tenet": "Demand response should need binding commitments, not just a plan for enabling equipment.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-firstenergy",
+       "q": "FirstEnergy therefore asked the Commission to require PJM to clarify that eligible demand response resources must be supported by binding contractual commitments.",
+       "pg": 15
+      },
+      {
+       "d": "rehearing-er26-3380-firstenergy",
+       "q": "A criterion that can be satisfied by a mere plan for the infrastructure necessary to deliver the offered load reduction does not serve that purpose",
+       "pg": 16
+      }
+     ]
+    },
+    {
+     "tenet": "FERC should have finally rejected the TO Exit Amendment on cost-causation grounds.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-indicated-pjm-tos",
+       "q": "The Order’s preliminary conclusion that the Exit Amendment may violate cost-causation principles should have been stated finally and definitively, instead of being left open for decision after a paper hearing.",
+       "pg": 5
+      },
+      {
+       "d": "rehearing-er26-3380-indicated-pjm-tos",
+       "q": "the Commission has found it just and reasonable to impose generation capacity costs on LSEs located within an exiting TO’s zone, not on the TO as such.",
+       "pg": 6
+      }
+     ]
+    },
+    {
+     "tenet": "PJM lacked section 205 authority to file the Exit Amendment over the TOs' CTOA rights.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-indicated-pjm-tos",
+       "q": "PJM cannot avoid the CTOA’s amendment procedures by casting a change to the core terms of the CTOA as an amendment to the OATT, rather than to the CTOA.",
+       "pg": 7
+      },
+      {
+       "d": "rehearing-er26-3380-indicated-pjm-tos",
+       "q": "Because PJM failed to fulfill any of these procedural prerequisites, PJM exceeded its authority in unilaterally submitting the Exit Amendment as a section 205 filing.",
+       "pg": 8
+      }
+     ]
+    },
+    {
+     "tenet": "Clarification: an exiting TO should bear exit costs, and FERC has not presumed LSEs must pay.",
+     "side": "mixed",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-constellation",
+       "q": "Constellation seeks clarification that the Order neither established a presumption that LSEs in an exiting Transmission Owner’s zone must bear RBP exit charges nor predetermined the allocation of such charges.",
+       "pg": 17
+      },
+      {
+       "d": "rehearing-er26-3380-constellation",
+       "q": "An exiting Transmission Owner should bear its appropriate cost burden of generation and load investments made under the assumption that the Transmission Owner would remain in PJM.",
+       "pg": 17
+      }
+     ]
+    },
+    {
+     "tenet": "The RBP should be the stakeholders' voluntary subscription model, with interruptible service as the alternative.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "The PJM stakeholders proposed a voluntary framework for the RBP that recognized the contribution of load growth to the capacity shortfall without the issues attendant to PJM’s proposed RBP.",
+       "pg": 3
+      },
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "The Commission neglected to address NOVEC’s arguments that PJM should be required to adopt the voluntary, subscription-based model in lieu of the RBP Proposal.",
+       "pg": 5
+      }
+     ]
+    },
+    {
+     "tenet": "Charging only LSEs serving large loads is undue discrimination, contrary to the IRAS order.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "The RBP constitutes undue discrimination against LSEs that serve large loads.",
+       "pg": 11
+      },
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "The Commission cannot simultaneously maintain two opposing, contrary points of view and yet meet its obligation to engage in reasoned decision-making.",
+       "pg": 12
+      }
+     ]
+    },
+    {
+     "tenet": "Price-taker RBP supply suppresses RPM prices and weakens entry signals for 15 years.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-constellation",
+       "q": "The resulting signal can reduce retention and entry incentives, accelerate resource exit, and defer new investment in the region.",
+       "pg": 14
+      },
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "The RBP suppresses the capacity price, which is the result whenever some generation must bid into the market as price-takers.",
+       "pg": 8
+      },
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "the Commission’s RMR precedent actually warrants rejection of the RBP due to the disproportionate, lasting impacts on the RPM’s ability to send accurate price signals.",
+       "pg": 10
+      }
+     ]
+    },
+    {
+     "tenet": "RMR precedent cannot justify price-taker treatment of 6,831 MW for 15 years.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-constellation",
+       "q": "Characterizing the arrangements at that level of generality does not explain why their material differences are irrelevant, or why, in this instance, the price-taker requirement is just and reasonable.",
+       "pg": 12
+      },
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "The RBP is distinct as a matter of duration, exigency, and scale.",
+       "pg": 9
+      }
+     ]
+    },
+    {
+     "tenet": "FERC ignored Constellation's isolation mechanism, which avoids double procurement without zero-price offers.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-constellation",
+       "q": "The mechanism therefore prevents duplicate procurement for the matched quantity by adjusting both supply and demand, while avoiding the one-sided price-forming effect of mandatory zero offers.",
+       "pg": 14
+      }
+     ]
+    },
+    {
+     "tenet": "Energy-only plants like Eddystone should qualify as RBP Resources after obtaining new CIRs.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-constellation",
+       "q": "paragraph 51 rejected—without reasoned analysis—Constellation’s request to permit energy-only resources obtaining new capacity rights",
+       "pg": 2
+      },
+      {
+       "d": "rehearing-er26-3380-constellation",
+       "q": "The Order expressly recited Constellation’s request that Energy Resources obtaining new CIRs be eligible to provide Qualifying RBP Offset UCAP MW, but never decided it.",
+       "pg": 10
+      }
+     ]
+    },
+    {
+     "tenet": "OCC: RBP costs should fall on the data centers that caused the shortfall, not other consumers.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-ohio-occ",
+       "q": "FERC never addressed OCC’s main concern that the RBP auction model is inappropriate, unjust and unreasonable because it does not target procurement and allocation",
+       "pg": 21
+      },
+      {
+       "d": "rehearing-er26-3380-ohio-occ",
+       "q": "OCC demonstrated that data center demand increased capacity costs to other PJM customers by approximately $23.1 billion across the 2025/2026, 2026/2027, 2027/2028 Base Residual Auctions.",
+       "pg": 23
+      },
+      {
+       "d": "rehearing-er26-3380-ohio-occ",
+       "q": "direct PJM to work with stakeholders to develop an RBP auction design that will properly allocate related costs to the cost causers",
+       "pg": 25
+      }
+     ]
+    },
+    {
+     "tenet": "NOVEC: the shortfall has other causes, so charging only large-load LSEs breaks cost causation.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "Despite that fact, the RBP allocates all costs to LSEs serving large loads, a result inconsistent with the cost-causation principle.",
+       "pg": 16
+      },
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "NOVEC and other RBP Buyers would be subsidizing the rest of the capacity market, a result that is not consistent with the cost-causation principle.",
+       "pg": 16
+      }
+     ]
+    },
+    {
+     "tenet": "AMP: PJM's allocation holds, because Table B9b counts the large loads FERC feared missed.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "clarification-er26-3380-amp",
+       "q": "Because the Load Adjustments in Table B9b are intended to count new large load quantities, including those that might have otherwise been embedded in the initial PJM load forecast data, use of Table B9b addresses the Commission’s principal concern",
+       "pg": 15
+      },
+      {
+       "d": "clarification-er26-3380-amp",
+       "q": "The Commission should clarify that it has not made a final decision regarding the justness and reasonableness of PJM’s as-filed RBP cost allocation approach",
+       "pg": 9
+      }
+     ]
+    },
+    {
+     "tenet": "AMP: FERC's suggested load-difference method must not charge zones without large-load growth.",
+     "side": "mixed",
+     "quotes": [
+      {
+       "d": "clarification-er26-3380-amp",
+       "q": "implementing its potential modification to RBP cost allocation would likely violate cost causation principles, as it could result in the allocation of RBP costs to zone/areas that have not experienced load growth attributable to data centers or other large loads.",
+       "pg": 7
+      }
+     ]
+    },
+    {
+     "tenet": "Constellation agrees Load Adjustments may miss large loads and wants current, validated forecasts used.",
+     "side": "mixed",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-constellation",
+       "q": "The Order correctly found that reliance on PJM’s Load Adjustment process may fail to capture actual or forecast large-load growth",
+       "pg": 18
+      },
+      {
+       "d": "rehearing-er26-3380-constellation",
+       "q": "Any replacement methodology must use current, project-specific, PJM-validated and auditable information; identify and eliminate double counting associated with duplicate or alternative-site requests",
+       "pg": 19
+      }
+     ]
+    },
+    {
+     "tenet": "Clarification: the cost-allocation paper hearing stays open to all methods, including NOVEC's causation arguments.",
+     "side": "mixed",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-novec",
+       "q": "NOVEC respectfully requests that the Commission dispel any ambiguity as to the scope of the paper hearing and clarify that the Commission has set all issues concerning cost allocation for further procedures",
+       "pg": 13
+      }
+     ]
+    },
+    {
+     "tenet": "Clarification: the collateral paper hearing should cover credit rate size, overlapping collateral and release standards.",
+     "side": "mixed",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-constellation",
+       "q": "Constellation requests clarification that the paper-hearing inquiry into “appropriate collateral requirements for RBP buyers” encompasses: (1) the size and methodology of the RBP Credit Rate;",
+       "pg": 16
+      }
+     ]
+    },
+    {
+     "tenet": "TOs and FirstEnergy seek rehearing mainly to preserve issues while PJM prepares a replacement filing.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "rehearing-er26-3380-indicated-pjm-tos",
+       "q": "The Indicated PJM Transmission Owners submit this rehearing request out of an abundance of caution to preserve their rights in this fast-moving and dynamic proceeding.",
+       "pg": 2
+      },
+      {
+       "d": "rehearing-er26-3380-firstenergy",
+       "q": "rehearing is still warranted to ensure these issues are preserved and appropriately decided in the context of any new filing made by PJM.",
+       "pg": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "miso-lars",
+   "title": "MISO Large Load Addition Resource Study (LARS)",
+   "short": "MISO LARS",
+   "docket": "ER27-25-000",
+   "about": "MISO, the grid operator for 15 states in the Midwest and South, wants to study a new load of 200 MW or more together with the power plant built to serve it, in about 120 days and outside its multi-year generator queue.",
+   "sideOf": "MISO's LARS filing",
+   "status": "Comments and protests were due Oct 23, 2026. MISO asked for a Dec 2, 2026 effective date; FERC had not acted as of Nov 9.",
+   "docs": [
+    {
+     "slug": "filing-er27-25-miso-lars",
+     "accession": "20261002-5074",
+     "date": "2026-10-02",
+     "filer": "MISO",
+     "kind": "filing",
+     "side": "for",
+     "pages": 54
+    },
+    {
+     "slug": "comments-er27-25-entergy-cleco",
+     "accession": "20261023-5035",
+     "date": "2026-10-23",
+     "filer": "Entergy and Cleco",
+     "kind": "comments",
+     "side": "for",
+     "pages": 6
+    },
+    {
+     "slug": "comments-er27-25-southern-regulators",
+     "accession": "20261023-5073",
+     "date": "2026-10-23",
+     "filer": "Mississippi and Louisiana PSCs",
+     "kind": "comments",
+     "side": "for",
+     "pages": 5
+    },
+    {
+     "slug": "comments-er27-25-alliant-consumers",
+     "accession": "20261023-5096",
+     "date": "2026-10-23",
+     "filer": "Alliant and Consumers Energy",
+     "kind": "comments",
+     "side": "for",
+     "pages": 5
+    },
+    {
+     "slug": "comments-er27-25-dte",
+     "accession": "20261023-5161",
+     "date": "2026-10-23",
+     "filer": "DTE Electric",
+     "kind": "comments",
+     "side": "for",
+     "pages": 5
+    },
+    {
+     "slug": "comments-er27-25-arkansas-psc",
+     "accession": "20261023-5180",
+     "date": "2026-10-23",
+     "filer": "Arkansas PSC",
+     "kind": "comments",
+     "side": "for",
+     "pages": null
+    },
+    {
+     "slug": "protest-er27-25-clean-energy-advocates",
+     "accession": "20261023-5163",
+     "date": "2026-10-23",
+     "filer": "Sierra Club, NRDC and other clean energy and community groups",
+     "kind": "protest",
+     "side": "against",
+     "pages": 49
+    },
+    {
+     "slug": "protest-er27-25-acp-srea",
+     "accession": "20261023-5176",
+     "date": "2026-10-23",
+     "filer": "ACP and SREA",
+     "kind": "protest",
+     "side": "against",
+     "pages": 32
+    },
+    {
+     "slug": "protest-er27-25-google",
+     "accession": "20261023-5177",
+     "date": "2026-10-23",
+     "filer": "Google",
+     "kind": "limited protest",
+     "side": "mixed",
+     "pages": 11
+    },
+    {
+     "slug": "protest-er27-25-seia-united",
+     "accession": "20261023-5181",
+     "date": "2026-10-23",
+     "filer": "SEIA and Advanced Energy United",
+     "kind": "protest",
+     "side": "against",
+     "pages": 16
+    },
+    {
+     "slug": "protest-er27-25-bloom",
+     "accession": "20261023-5195",
+     "date": "2026-10-23",
+     "filer": "Bloom Energy",
+     "kind": "limited protest",
+     "side": "mixed",
+     "pages": 5
+    },
+    {
+     "slug": "protest-er27-25-consumer-advocates",
+     "accession": "20261023-5197",
+     "date": "2026-10-23",
+     "filer": "Iowa OCA and 8 consumer advocates",
+     "kind": "protest",
+     "side": "against",
+     "pages": 14
+    }
+   ],
+   "tenets": [
+    {
+     "tenet": "LARS studies a 200 MW-plus load and its paired generation together in about 120 days.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "LARS will provide a path for the interconnection of both large loads and supporting generation pairs in a parallel 120-day study process.",
+       "pg": 2
+      },
+      {
+       "d": "comments-er27-25-entergy-cleco",
+       "q": "LARS offers a coordinated, 120-day parallel study of eligible large loads and their paired generation resources.",
+       "pg": 2
+      },
+      {
+       "d": "comments-er27-25-southern-regulators",
+       "q": "LARS provides for a 120-day parallel study of eligible large loads and their paired generation resources.",
+       "pg": 2
+      }
+     ]
+    },
+    {
+     "tenet": "Supporters say studying load and generation together removes duplicative upgrades and lowers costs.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "The goal of LARS is not necessarily to find the lowest cost solution for either the load or generation but to identify the solution that best fits both",
+       "pg": 15
+      },
+      {
+       "d": "comments-er27-25-alliant-consumers",
+       "q": "This integrated approach will enable MISO to identify optimized transmission solutions, eliminate duplicative or unnecessarily expensive upgrades, and help deliver lower-cost outcomes for customers.",
+       "pg": 2
+      },
+      {
+       "d": "comments-er27-25-southern-regulators",
+       "q": "By studying load and its paired generation together, MISO can identify combined transmission solutions, avoid duplicative and costly upgrades, and produce an outcome in approximately 120 days.",
+       "pg": 2
+      },
+      {
+       "d": "comments-er27-25-dte",
+       "q": "By allowing large loads and associated generation resources to be studied together, the proposal recognizes that jointly planned and electrically proximate resources may produce materially different system impacts",
+       "pg": 2
+      }
+     ]
+    },
+    {
+     "tenet": "Utilities say MISO's generator queue takes years, so paired generation needs a faster lane.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "comments-er27-25-entergy-cleco",
+       "q": "MISO's DPP cycles have taken four years or longer to reach completion, leaving load-serving entities without a timely path to interconnect associated generation",
+       "pg": 3
+      },
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "LARS meets the urgent need for an accelerated evaluation process that accounts for both load and generation",
+       "pg": 18
+      }
+     ]
+    },
+    {
+     "tenet": "MISO says LARS answers the Show Cause Order and leaves the generator queue untouched.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "LARS provides a mechanism for MISO to study a large load and the generation that will serve it at the same time",
+       "pg": 3
+      },
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "As a result of the way MISO's study models are structured, LARS projects will not impact existing projects in the DPP process.",
+       "pg": 13
+      },
+      {
+       "d": "comments-er27-25-dte",
+       "q": "The LARS filing also preserves an open and non-discriminatory framework by permitting the interconnection customer responsible for the generation component to be any eligible entity.",
+       "pg": 3
+      }
+     ]
+    },
+    {
+     "tenet": "Entry limits cap LARS at ten pairs per study period and three periods a year.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "There will be three LARS study periods each year and each study period will be completed in approximately 120 days",
+       "pg": 9
+      },
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "MISO will accept ten LARS Applications per study period and the LARS Applications will be assigned to study periods in order of submission.",
+       "pg": 9
+      },
+      {
+       "d": "comments-er27-25-entergy-cleco",
+       "q": "can administratively support the new process, as only ten generation/load pairs per study period will be evaluated, with three periods per year.",
+       "pg": 5
+      }
+     ]
+    },
+    {
+     "tenet": "Applicants must post $250,000, show site control, and sign a five-year pairing contract.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "A non-refundable fee of $250,000 must accompany the LARS Application and be paid by the LARS Associated Transmission Customer.",
+       "pg": 8
+      },
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "The agreement must be legally binding and must state a minimum term of five years",
+       "pg": 9
+      },
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "limiting the amount of requested Interconnection Service to no more than 150% of the peak demand of the LARS Associated Load, and demonstration of 100% site control",
+       "pg": 10
+      }
+     ]
+    },
+    {
+     "tenet": "The load must be 200 MW or more at one point of withdrawal, unaggregated.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "must be a large load of at least 200 MW",
+       "pg": 7
+      },
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "While MISO is allowing aggregation for LARS Generating Facilities, MISO is not allowing aggregated load to participate in LARS.",
+       "pg": 11
+      }
+     ]
+    },
+    {
+     "tenet": "Generation must connect in the load's Local Resource Zone, which can span several states.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "Another important condition of the LARS process is the requirement that the load and generation pair be located in the same Local Resource Zone",
+       "pg": 10
+      },
+      {
+       "d": "protest-er27-25-consumer-advocates",
+       "q": "Neither MISO Witness Drake nor the Transmittal Letter explain how the LARS proposal mitigates the electrical impact of LARS Associated Load and generation facilities being spaced potentially hundreds of miles apart",
+       "pg": 9
+      }
+     ]
+    },
+    {
+     "tenet": "The pair must stay together 15 years; if the load leaves, the generator gets a year.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "MISO will provide the Generating Facility up to one year after the LARS Associated Load withdraws to continue to operate under the LLGIA",
+       "pg": 17
+      },
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "this requirement ensures that the LARS study process accurately reflects the expected impacts of the Generating Facility and LARS Associated Load on the Transmission System for a significant period of time.",
+       "pg": 16
+      }
+     ]
+    },
+    {
+     "tenet": "Upgrades for violations seen in the load study, or in both studies, go to zonal load.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "Then any common violations that show up in the generation and load studies are assigned to BRP and Other project types. Only the violations but for the generator are assigned GIP project types.",
+       "pg": 12
+      },
+      {
+       "d": "protest-er27-25-consumer-advocates",
+       "q": "Unlike the violations observed only in the generation study, the LARS Process assigns the cost of network upgrades to address violations observed in the transmission studies and observed in both the transmission study and the generation study to Baseline Reliability",
+       "pg": 6
+      }
+     ]
+    },
+    {
+     "tenet": "MISO says double-allocated headroom gets fixed later through MTEP projects, paid by zonal load.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "In the event that overallocation does occur, any constraints that are identified as needing mitigation in the MTEP process will be formalized in a future MTEP project.",
+       "pg": 13
+      },
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "The cost of the MTEP project will be allocated based on existing Tariff rules, which is likely to be the load within the transmission pricing zone where the transmission upgrade is required.",
+       "pg": 13
+      }
+     ]
+    },
+    {
+     "tenet": "MISO will file its cost-shifting agreement by November 16, 2026; LARS need not wait.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "all of which will be submitted to the Commission in a FPA section 205 filing by November 16, 2026.",
+       "pg": 14
+      },
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "LARS can be implemented based on the Tariff revisions filed herein and need not await these future filings.",
+       "pg": 14
+      }
+     ]
+    },
+    {
+     "tenet": "LARS puts upgrade costs of load-caused violations on zonal ratepayers instead of the pair.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-google",
+       "q": "Under current rules, the costs of those project types are recovered from all network customers in a Transmission Pricing Zone.",
+       "pg": 2
+      },
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "LARS, therefore, takes a category of costs usually assigned to generators and assigns them to existing load.",
+       "pg": 14
+      },
+      {
+       "d": "protest-er27-25-consumer-advocates",
+       "q": "The LARS proposal does not adequately assign costs to the cost causers, and MISO has not yet fully developed a cost allocation proposal for LARS load and",
+       "pg": 6
+      }
+     ]
+    },
+    {
+     "tenet": "FERC cannot find LARS just and reasonable without MISO's unfiled cost-shifting agreement.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-google",
+       "q": "the Commission cannot determine that LARS is just and reasonable because the record lacks such a key piece of the puzzle.",
+       "pg": 8
+      },
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "A process that assigns upgrade costs to zonal load now, on the strength of an agreement whose terms are not before the Commission, has not been shown to be just and reasonable.",
+       "pg": 18
+      },
+      {
+       "d": "protest-er27-25-consumer-advocates",
+       "q": "The Commission should require MISO to address cost-shifting in all of its Section 205 filings and in all of its direct responses to the Section 206 Show Cause Order.",
+       "pg": 4
+      }
+     ]
+    },
+    {
+     "tenet": "Google: reject LARS with guidance, or accept and suspend it until the cost agreement arrives.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-google",
+       "q": "the Commission should either reject LARS with guidance indicating that it needs to be filed concurrently with procedures to prevent cross-subsidization or, in the alternative, accept and suspend the proposal",
+       "pg": 3
+      },
+      {
+       "d": "protest-er27-25-google",
+       "q": "Google supports the intent and conceptual direction of LARS.",
+       "pg": 2
+      }
+     ]
+    },
+    {
+     "tenet": "LARS and the queue use different assumptions, so both can claim the same headroom.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-google",
+       "q": "each process is based on an incomplete snapshot of the transmission system and how it will operate in practice, which increases the likelihood that the LARS and DPP processes will produce incompatible results.",
+       "pg": 6
+      },
+      {
+       "d": "protest-er27-25-acp-srea",
+       "q": "LARS projects will therefore be studied as if the only other generation on the system is generation that already holds a GIA.",
+       "pg": 21
+      },
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "These differing approaches risk MISO allocating transmission headroom twice.",
+       "pg": 18
+      },
+      {
+       "d": "protest-er27-25-seia-united",
+       "q": "Under the proposal, LARS and DPP requests will be studied separately and using different assumptions.",
+       "pg": 10
+      }
+     ]
+    },
+    {
+     "tenet": "Queued generators say overallocation raises their upgrade costs and curtails their output.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-acp-srea",
+       "q": "resulting in more constraints and higher Network Upgrade costs for DPP projects when they are finally studied against a system that LARS projects have already used.",
+       "pg": 21
+      },
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "Failing to coordinate DPP and LARS shifts costs onto DPP customers.",
+       "pg": 18
+      },
+      {
+       "d": "protest-er27-25-seia-united",
+       "q": "The filing does not adequately explain how MISO will coordinate transmission-capability assumptions across parallel interconnection processes.",
+       "pg": 11
+      }
+     ]
+    },
+    {
+     "tenet": "Google would model advanced-stage queue projects in LARS so large loads absorb study error.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-google",
+       "q": "LARS could be modified to use more conservative assumptions",
+       "pg": 7
+      }
+     ]
+    },
+    {
+     "tenet": "Utility gatekeeping of LARS applications is undue discrimination against independent generators.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-seia-united",
+       "q": "MISO proposes to effectively grant the Transmission Customer, which has an incentive to discriminate against competitive generation, the ability to discriminate against competitive generation.",
+       "pg": 1
+      },
+      {
+       "d": "protest-er27-25-acp-srea",
+       "q": "LARS is unduly discriminatory because it makes the LSE the gatekeeper of a Commission-jurisdictional generator interconnection process",
+       "pg": 6
+      },
+      {
+       "d": "protest-er27-25-google",
+       "q": "making load-serving entities (\"LSEs\") the gatekeepers of the LARS process",
+       "pg": 9
+      },
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "In other words, the LSE is the gatekeeper for participation in LARS, because without it",
+       "pg": 30
+      }
+     ]
+    },
+    {
+     "tenet": "MISO says only the transmission customer can buy transmission service, so it must file.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "Because only the Transmission Customer can procure Transmission Service under established Tariff processes, LARS requires the LARS Associated Transmission Customer to be the party that initiates the LARS Application",
+       "pg": 6
+      },
+      {
+       "d": "filing-er27-25-miso-lars",
+       "q": "This does not supersede the role of the LARS Associated Transmission Customer to determine whether to submit a LARS Application",
+       "pg": 9
+      }
+     ]
+    },
+    {
+     "tenet": "SEIA and United: reject LARS and let any qualified party file; or require nondiscriminatory handling.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-seia-united",
+       "q": "reject the LARS proposal, on the grounds that the proposal is unduly discriminatory, and provide guidance to MISO to refile the proposal with a mechanism that would allow any qualified market participant",
+       "pg": 2
+      },
+      {
+       "d": "protest-er27-25-seia-united",
+       "q": "the Commission should clarify that once an applicant meets all applicable LARS eligibility, readiness, financial security, and application requirements, the Commission expects the LARS Associated Transmission Customer to apply the same submission standards",
+       "pg": 13
+      }
+     ]
+    },
+    {
+     "tenet": "Google wants independent generators to have direct access, with FERC resolving disputes with the utility.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-google",
+       "q": "protections providing that all forms of generation, including independent generation, have nondiscriminatory, direct access to the expedited generation interconnection study process under LARS.",
+       "pg": 9
+      }
+     ]
+    },
+    {
+     "tenet": "LARS is a permanent, uncapped fast lane untethered to any identified resource adequacy need.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-acp-srea",
+       "q": "It is permanent and uncapped. It is untethered to any identified resource adequacy need.",
+       "pg": 2
+      },
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "LARS is not time-limited, as MISO's most recent queue-jumping proposal ERAS was.",
+       "pg": 32
+      },
+      {
+       "d": "protest-er27-25-consumer-advocates",
+       "q": "The Joint Protestors are concerned that LARS, similar to ERAS, will enable queue jumping.",
+       "pg": 10
+      }
+     ]
+    },
+    {
+     "tenet": "Unlike ERAS, LARS has no cap, sunset, independent-producer carve-out, or regulator check.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-acp-srea",
+       "q": "LARS contains no scoring criteria, no carve-outs, no regulatory verification, no cap, and no sunset.",
+       "pg": 27
+      }
+     ]
+    },
+    {
+     "tenet": "Same-LRZ pairing is not the two-substation test the Show Cause Order described.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "Instead, LARS generators and load are merely required to be in the same general Local Resource Zone.",
+       "pg": 33
+      },
+      {
+       "d": "protest-er27-25-consumer-advocates",
+       "q": "The Joint Protestors respectfully urge the Commission to require MISO to establish a reasonable distance of \"electrically proximate\"",
+       "pg": 9
+      },
+      {
+       "d": "protest-er27-25-acp-srea",
+       "q": "LARS does the opposite: it grants permanent NRIS through a parallel process",
+       "pg": 14
+      }
+     ]
+    },
+    {
+     "tenet": "LARS generators get full capacity-market access years before other queue generators.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "MISO's proposal is unduly discriminatory because it grants generators associated with qualifying large loads an accelerated pathway to obtain access to MISO's Planning Resource Auction market",
+       "pg": 24
+      }
+     ]
+    },
+    {
+     "tenet": "If the paired load leaves, the generator faces a one-year bridge into a backlogged queue.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-seia-united",
+       "q": "The proposed transition mechanism is woefully inadequate to address this stranded asset risk.",
+       "pg": 8
+      }
+     ]
+    },
+    {
+     "tenet": "After 15 years the generator keeps full NRIS even if its load is gone.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "After fifteen years, the generator keeps full NRIS of up to 150 percent of the departed load's peak demand with no further study and no cost at all.",
+       "pg": 21
+      }
+     ]
+    },
+    {
+     "tenet": "Bloom: the 200 MW floor has no impact data behind it; lower it to 50 MW.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-bloom",
+       "q": "LARS should therefore apply to loads of 50 MW or more that connect to the Transmission System.",
+       "pg": 4
+      },
+      {
+       "d": "protest-er27-25-bloom",
+       "q": "MISO presents no EPR results or other grid impact study for 200 MW, and none for loads below it.",
+       "pg": 2
+      }
+     ]
+    },
+    {
+     "tenet": "Bloom: accept LARS by December 2, then order a 60-day compliance filing on the threshold.",
+     "side": "mixed",
+     "quotes": [
+      {
+       "d": "protest-er27-25-bloom",
+       "q": "Bloom does not ask the Commission to delay LARS.",
+       "pg": 5
+      },
+      {
+       "d": "protest-er27-25-bloom",
+       "q": "Bloom supports LARS and urges the Commission to accept it by MISO's requested December 2, 2026 effective date.",
+       "pg": 1
+      }
+     ]
+    },
+    {
+     "tenet": "Consumer advocates object to exempting about 30 GW of existing large load from reliability rules.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-consumer-advocates",
+       "q": "In total, MISO is proposing to fully or partially exempt approximately 30 gigawatts of existing load from the Large Load Interconnection Reliability Requirements.",
+       "pg": 3
+      }
+     ]
+    },
+    {
+     "tenet": "Clean energy groups say LARS adds a fifth path onto the grid and breaks planning.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "LARS would be at least the fifth separate path onto the MISO transmission system",
+       "pg": 39
+      },
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "By excluding the DPP, LARS does the opposite of NERC's procedures.",
+       "pg": 40
+      },
+      {
+       "d": "protest-er27-25-acp-srea",
+       "q": "MISO has now twice prioritized separate, one-off expedited processes that not all market participants can feasibly access on a comparable, not unduly discriminatory basis",
+       "pg": 24
+      }
+     ]
+    },
+    {
+     "tenet": "ACP and SREA: MISO has not met the independent entity variation standard.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-acp-srea",
+       "q": "MISO cannot satisfy the independent entity variation standard, and LARS does not accomplish the purposes of Order No. 2003",
+       "pg": 29
+      }
+     ]
+    },
+    {
+     "tenet": "Protesters ask FERC to reject LARS outright; Clean Energy Advocates offer a deficiency letter instead.",
+     "side": "against",
+     "quotes": [
+      {
+       "d": "protest-er27-25-clean-energy-advocates",
+       "q": "the Commission should reject all portions of MISO's LARS proposal and direct MISO to engage with stakeholders to advance a different proposal.",
+       "pg": 45
+      },
+      {
+       "d": "protest-er27-25-acp-srea",
+       "q": "the Clean Energy Trades respectfully request that the Commission reject MISO's LARS proposal.",
+       "pg": 30
+      }
+     ]
+    },
+    {
+     "tenet": "If FERC accepts LARS, ACP wants the same-LRZ test applied at the point of interconnection.",
+     "side": "mixed",
+     "quotes": [
+      {
+       "d": "protest-er27-25-acp-srea",
+       "q": "the relevant location is the applicable POI to the MISO Transmission System rather than the physical location of the Generating Facility",
+       "pg": 30
+      }
+     ]
+    },
+    {
+     "tenet": "Supporters want FERC to accept LARS as filed, citing its entry limits and fuel neutrality.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "comments-er27-25-entergy-cleco",
+       "q": "stringent eligibility requirements to deter speculative interconnection requests and minimize disruption to the DPP",
+       "pg": 5
+      },
+      {
+       "d": "comments-er27-25-dte",
+       "q": "These requirements provide reasonable assurance that participating projects represent durable load-generation relationships and help mitigate potential impacts to the transmission system and other customers.",
+       "pg": 3
+      },
+      {
+       "d": "comments-er27-25-southern-regulators",
+       "q": "MISO's proposal is transparent, competitive, fuel agnostic, and it does not adversely affect DPP participants.",
+       "pg": 3
+      },
+      {
+       "d": "comments-er27-25-alliant-consumers",
+       "q": "Strong readiness requirements are therefore an appropriate safeguard against speculative projects consuming scarce study resources",
+       "pg": 3
+      },
+      {
+       "d": "comments-er27-25-arkansas-psc",
+       "q": "agrees with the comments made by the Mississippi Public Service Commission and the Louisiana Public Service Commission."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pjm-backstop",
+   "title": "PJM Reliability Backstop Procurement",
+   "short": "PJM backstop auction",
+   "docket": "ER26-3380-000",
+   "about": "PJM, the grid operator for 13 states and D.C., proposed a backstop purchase of new power plants to cover a projected supply shortfall as large loads grow. FERC accepted it in September and sent three cost questions to a written hearing.",
+   "status": "Accepted and suspended Sep 29, 2026, with cost allocation, transmission owner exit rules and LSE collateral set for paper hearing. PJM refiled amendments Oct 29 in ER27-330-000; comments are due Nov 30.",
+   "docs": [
+    {
+     "slug": "order-er26-3380-pjm-backstop",
+     "accession": "20260929-3099",
+     "date": "2026-09-29",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": 97
+    },
+    {
+     "slug": "statement-er26-3380-doe",
+     "accession": "20261007-5181",
+     "date": "2026-10-07",
+     "filer": "U.S. Department of Energy",
+     "kind": "statement",
+     "side": "for",
+     "pages": 9
+    },
+    {
+     "slug": "motion-er26-3380-pjm-abeyance",
+     "accession": "20261013-5141",
+     "date": "2026-10-12",
+     "filer": "PJM",
+     "kind": "motion",
+     "side": "for",
+     "pages": 4
+    },
+    {
+     "slug": "notice-er26-3380-answer-period",
+     "accession": "20261016-3047",
+     "date": "2026-10-16",
+     "filer": "FERC",
+     "kind": "notice",
+     "pages": null
+    },
+    {
+     "slug": "notice-er26-3380-abeyance",
+     "accession": "20261023-3114",
+     "date": "2026-10-23",
+     "filer": "FERC",
+     "kind": "notice",
+     "pages": null
+    },
+    {
+     "slug": "filing-er27-330-pjm-rbp-amendments",
+     "accession": "20261029-5227",
+     "date": "2026-10-29",
+     "filer": "PJM",
+     "kind": "filing",
+     "side": "for",
+     "pages": 66
+    },
+    {
+     "slug": "notice-cnf-20261102",
+     "accession": "20261102-3050",
+     "date": "2026-11-02",
+     "filer": "FERC",
+     "kind": "notice",
+     "pages": null
+    }
+   ],
+   "tenets": [
+    {
+     "tenet": "FERC accepts the backstop, suspends it to February 28, 2027, and sets a paper hearing.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "we accept the proposed RBP for filing, suspend it for five months, effective February 28, 2027, subject to refund, and establish a paper hearing",
+       "pg": 1
+      }
+     ]
+    },
+    {
+     "tenet": "Only cost allocation, TO exit rules and LSE collateral go to hearing; the rest stands.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "Aside from the three issues discussed directly below, we find that the other aspects of PJM’s RBP proposal are just and reasonable",
+       "pg": 9
+      }
+     ]
+    },
+    {
+     "tenet": "The backstop buys 6,831 MW, the 2028/29 auction shortfall, less offsets and opt-outs.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "the RBP aims to procure capacity equal to the 6,831 MW shortfall in the 2028/2029 BRA (Initial RBP Target)",
+       "pg": 7
+      }
+     ]
+    },
+    {
+     "tenet": "Winning resources get fixed terms of up to 15 years, from 2028/29 through 2042/43.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "for a fixed term of up to 15 years, starting with the 2028/2029 delivery year at the earliest and ending no later than the 2042/2043 delivery year",
+       "pg": 7
+      },
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "we disagree with JCA that PJM unreasonably requires commitment terms ending no earlier than 2042/2043",
+       "pg": 31
+      }
+     ]
+    },
+    {
+     "tenet": "FERC approves the $555/MW-day price cap and the pay-as-bid selection process.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "we find that PJM has shown that its proposed $555/MW-day maximum willingness to pay and process for selecting RBP Resources in the RBP auction are just and reasonable",
+       "pg": 29
+      },
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "We agree with PJM that the proposed pay-as-bid structure for the RBP auction is reasonable.",
+       "pg": 30
+      }
+     ]
+    },
+    {
+     "tenet": "FERC accepts a 120% UCAP quantity cap, 20% shortfall charge, for up to three years.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "We agree with PJM that the proposed cap represents a reasonable balance between providing sellers with flexibility and managing UCAP risk for load.",
+       "pg": 20
+      },
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "RBP shortfall charges are equal to the product of the RBP Resource’s committed RBP UCAP MW shortfall and 20% of the RBP price.",
+       "pg": 33
+      }
+     ]
+    },
+    {
+     "tenet": "A zonal growth snapshot may be fine; measuring growth with Load Adjustments may not be.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "we agree with concerns in the record that relying on Load Adjustments to measure load growth may be inconsistent or not reasonably capture forecasted load growth or actual large load growth",
+       "pg": 63
+      },
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "it appears some large loads may never have been accounted for as Load Adjustments because PJM accounted for them when calculating the initial load forecast",
+       "pg": 63
+      }
+     ]
+    },
+    {
+     "tenet": "FERC floats 2026/27 actual load against the latest 2028/29 forecast as the allocation basis.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "PJM could base the RBP allocation on the difference between the actual load for 2026/2027 delivery year in each Electric Distributor zone/area with the most recent 2028/2029 delivery year load forecast",
+       "pg": 64
+      }
+     ]
+    },
+    {
+     "tenet": "The co-op and municipal opt-out may discriminate, since their large loads are similarly situated.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "We find that PJM’s proposed opt-out for qualifying cooperatives and municipal utilities may be unjust, unreasonable, and unduly discriminatory.",
+       "pg": 62
+      },
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "Because cooperatives and municipal utilities serve large loads that are similarly situated to large loads served by other LSEs",
+       "pg": 62
+      }
+     ]
+    },
+    {
+     "tenet": "FERC keeps FRR entities out of the backstop because they never contributed to the gap.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "we find that FRR Entities have not contributed towards the resource adequacy gap that the RBP will address",
+       "pg": 62
+      }
+     ]
+    },
+    {
+     "tenet": "FERC leaves charging data centers at retail to the states and the Ratepayer Protection Pledge.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "states determine how Commission-approved rates are collected among the relevant retail consumers along with the rates for state-jurisdictional matters",
+       "pg": 65
+      },
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "Our partners in the states are more than capable of ensuring that these promises reach fruition.",
+       "pg": 65
+      }
+     ]
+    },
+    {
+     "tenet": "Exit fees on departing Transmission Owners may be unjust; LSEs are the buyers and beneficiaries.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "we find that PJM’s proposed exit provisions may be unjust and unreasonable because they would assess RBP Charges to exiting Transmission Owners, rather than the LSEs in the relevant Transmission Owner’s zone",
+       "pg": 73
+      }
+     ]
+    },
+    {
+     "tenet": "The $1.5 million per MW buyer collateral rate lacks quantitative support and may be unjust.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "PJM does not support its 50% estimate with any quantitative measures, including an expected probability of default",
+       "pg": 82
+      },
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "we find PJM’s proposed collateral requirements for RBP Sellers just and reasonable",
+       "pg": 81
+      }
+     ]
+    },
+    {
+     "tenet": "The existing reliability backstop auction tariff may itself be unjust, so FERC opens EL26-108.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "We therefore conclude on a preliminary basis that the existing Reliability Backstop Auction Tariff provisions may be unjust and unreasonable.",
+       "pg": 12
+      }
+     ]
+    },
+    {
+     "tenet": "FERC invites a 205 refiling within 30 days and says it would expect to grant abeyance.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "we anticipate that the Commission would grant a motion to hold that briefing in this proceeding in abeyance if PJM submitted a new section 205 filing within 30 days from the date of this order",
+       "pg": 9
+      },
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "We anticipate that, following the paper hearing, the Commission may need to direct significant modifications to certain aspects of PJM’s proposal",
+       "pg": 10
+      }
+     ]
+    },
+    {
+     "tenet": "The 2027/28 auction cleared at the $333.44 cap, a third straight historically high result.",
+     "quotes": [
+      {
+       "d": "order-er26-3380-pjm-backstop",
+       "q": "The 2027/2028 BRA, which cleared at the temporary price cap of $333.44/MW-day, was the third BRA in a row to clear at historically high prices.",
+       "pg": 3
+      }
+     ]
+    },
+    {
+     "tenet": "DOE backs the order and wants PJM to refile by October 29 to protect ratepayers.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "statement-er26-3380-doe",
+       "q": "DOE urges PJM to accept the accelerated option proposed by the Commission and to swiftly submit a revised tariff pursuant to FPA section 205 on or before October 29, 2026.",
+       "pg": 8
+      },
+      {
+       "d": "statement-er26-3380-doe",
+       "q": "PJM should implement the cost allocation and other reforms identified by the Commission to ensure that the costs of serving new data centers or other large electric energy loads are not unfairly shifted to PJM’s existing ratepayers.",
+       "pg": 2
+      }
+     ]
+    },
+    {
+     "tenet": "DOE says PJM's two-year lookback lets large loads ride free on the shortfall.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "statement-er26-3380-doe",
+       "q": "PJM’s cost allocation methodology (looking back only two years) does not appear to sufficiently allocate the costs of new capacity to serve all large loads that have caused the current resource adequacy shortfall",
+       "pg": 6
+      },
+      {
+       "d": "statement-er26-3380-doe",
+       "q": "PJM should ensure that any cost allocation methodology properly allocates costs and does not result in free ridership.",
+       "pg": 7
+      }
+     ]
+    },
+    {
+     "tenet": "DOE wants mandatory project-level large load identification and a clear build, bring or buy path.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "statement-er26-3380-doe",
+       "q": "DOE agrees with the Commission’s call for improved large load identification and transparency to support a just and reasonable cost allocation.",
+       "pg": 7
+      },
+      {
+       "d": "statement-er26-3380-doe",
+       "q": "The Commission accepted PJM’s framework for crediting qualifying new capacity brought forward to serve new large load against the RBP target.  DOE supports this framework.",
+       "pg": 7
+      },
+      {
+       "d": "statement-er26-3380-doe",
+       "q": "PJM’s current RBP process does not establish a clear path for such optionality and should be revised to do so.",
+       "pg": 8
+      }
+     ]
+    },
+    {
+     "tenet": "PJM asks FERC to hold the paper hearing while it files a new section 205 proposal.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "motion-er26-3380-pjm-abeyance",
+       "q": "respectfully requests that the Commission hold the paper hearing proceedings, including any additional briefings, in this docket in abeyance pending resolution of PJM’s forthcoming filing",
+       "pg": 1
+      },
+      {
+       "d": "motion-er26-3380-pjm-abeyance",
+       "q": "PJM plans to submit a new FPA section 205 filing that addresses, inter alia, cost allocation issues, Transmission Owner exit responsibilities, and LSE collateral requirements as they relate to RBP by October 29, 2026.",
+       "pg": 2
+      }
+     ]
+    },
+    {
+     "tenet": "FERC set answers to the abeyance motion due October 21, 2026.",
+     "quotes": [
+      {
+       "d": "notice-er26-3380-answer-period",
+       "q": "notice is hereby given that answers to PJM’s motion are due by 5:00 pm Eastern Time on October 21, 2026."
+      }
+     ]
+    },
+    {
+     "tenet": "FERC moves EL26-108 initial briefs to January 11, 2027 and reply briefs to January 26.",
+     "quotes": [
+      {
+       "d": "notice-er26-3380-abeyance",
+       "q": "the deadline for submission of initial briefs in Docket No. EL26-108-000 is extended from November 13, 2026 to 5pm on January 11, 2027"
+      },
+      {
+       "d": "notice-er26-3380-abeyance",
+       "q": "the deadline for reply briefs is extended from December 3, 2026 to 5pm on January 26, 2027"
+      }
+     ]
+    },
+    {
+     "tenet": "Northern Virginia Electric Cooperative supported PJM's abeyance motion.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "notice-er26-3380-abeyance",
+       "q": "On October 14, 2026, Northern Virginia Electric Cooperative, Inc., filed an answer supporting PJM’s motion."
+      }
+     ]
+    },
+    {
+     "tenet": "PJM's refiling targets the three hearing issues: LSE cost responsibility, LSE credit, and exit notice.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "(i) allocate responsibility for RBP Charges to certain Load Serving Entities (“LSE”); (ii) require LSEs responsible for RBP Charges to post an appropriate level of credit",
+       "pg": 1
+      },
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "PJM respectfully submits that each aspect of the filing is just and reasonable.",
+       "pg": 4
+      }
+     ]
+    },
+    {
+     "tenet": "PJM swaps Load Adjustments for distributor-reported growth in 50 MW-plus loads through 2028/29.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "rather than relying on Load Adjustment data as a proxy for Large Load growth, PJM is proposing to require Electric Distributors outside of a Fixed Resource Requirement",
+       "pg": 7
+      },
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "end-use customer load that has a cumulative peak load of 50 MW or greater at a single electrical site",
+       "pg": 7
+      }
+     ]
+    },
+    {
+     "tenet": "PJM keeps the snapshot fixed for 15 years and leaves retail cost direction to states.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "That allocation to the zone/area will remain fixed throughout the 15-year RBP commitment period.",
+       "pg": 12
+      },
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "PJM does not propose, and lacks authority, to dictate how any LSE subsequently allocates or recovers those costs from retail customers.",
+       "pg": 15
+      }
+     ]
+    },
+    {
+     "tenet": "PJM cuts the buyer credit rate to about $686,000 per MW, 40% of present value.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "PJM proposes to set the RBP Credit Rate at 40% of the net present value of the total RBP payment obligation.",
+       "pg": 22
+      },
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "the proposed methodology produces an illustrative RBP Credit Rate of approximately $686,000 per MW.",
+       "pg": 22
+      }
+     ]
+    },
+    {
+     "tenet": "PJM adds surety bonds and gives LSEs at least 75 days' notice of their collateral obligation.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "PJM is proposing to revise the definition of RBP Collateral to include surety bonds",
+       "pg": 27
+      },
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "PJM is proposing that LSEs be provided at least 75 days’ notice of their collateral obligation",
+       "pg": 26
+      },
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "Electric Distributors electing to provide RBO allocations must submit the initial allocation no later than 120 days before the start of the 2028/2029 Delivery Year.",
+       "pg": 14
+      }
+     ]
+    },
+    {
+     "tenet": "PJM drops exit charges on Transmission Owners; exiting LSEs keep paying their allocated RBP Charges.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "PJM is revising its proposed Tariff, Attachment DD, section 18.7 to require that LSEs, rather than exiting Transmission Owners, continue to cover the costs of RBP Charges allocated to them.",
+       "pg": 33
+      }
+     ]
+    },
+    {
+     "tenet": "PJM deletes the co-op and municipal opt-out; peak shaving opt-out needs five years.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "PJM proposes to revise Tariff, Attachment DD, section 18.1(d) to eliminate the provision that permits an Electric Distributor that is not regulated by a RERRA to specify a quantity of load that will be opted out of the Initial RBP Target.",
+       "pg": 40
+      },
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "any MW quantity used to reduce the Initial RBP Target through the Peak Shaving Adjustment opt-out be committed to participate in the applicable Peak Shaving Adjustment program for a minimum term of five years",
+       "pg": 41
+      }
+     ]
+    },
+    {
+     "tenet": "PJM wants an order by January 29, 2027 and a comment deadline of November 30.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "PJM is also requesting that the Commission issue an order on all aspects of this filing no later than January 29, 2027",
+       "pg": 2
+      },
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "PJM moves for the Commission to establish an extended, 32-day comment period, such that comments and interventions would be due November 30, 2026.",
+       "pg": 2
+      }
+     ]
+    },
+    {
+     "tenet": "PJM seeks a one-time waiver of the tariff's shortage investigation and backstop filing duties.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "should the 2029/2030 Delivery Year Base Residual Auction clear short, resulting in three consecutive Delivery Years with insufficient capacity procurement, PJM conditionally requests waiver",
+       "pg": 3
+      }
+     ]
+    },
+    {
+     "tenet": "PJM lets sellers cure offer deficiencies for five days after notice, even past the window close.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "filing-er27-330-pjm-rbp-amendments",
+       "q": "an RBP Seller will have five calendar days from receipt of a deficiency notice to cure any deficiencies identified by PJM, even if the cure period extends beyond the close of the RBP offer submission window",
+       "pg": 44
+      }
+     ]
+    },
+    {
+     "tenet": "FERC notices PJM's refiling in ER27-330, comments due 5 pm ET November 30, 2026.",
+     "quotes": [
+      {
+       "d": "notice-cnf-20261102",
+       "q": "Compliance filing: Proposed Amendments to the Reliability Backstop Procurement in ER26-3380 to be effective 1/15/2027."
+      },
+      {
+       "d": "notice-cnf-20261102",
+       "q": "Comment Date: 5 pm ET 11/30/26"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pjm-large-load-definition",
+   "title": "PJM Large Load definition, Registry and Interim Resource Adequacy Service",
+   "short": "PJM Large Load order",
+   "docket": "ER26-3515-000",
+   "about": "PJM asked FERC to define a Large Load, keep a registry of them, and create a service that would curtail such loads first in a supply emergency. FERC kept the definition and the registry and rejected the rest.",
+   "status": "Issued Oct 9, 2026. PJM's compliance filing and any rehearing requests were due Nov 9; neither was on eLibrary that morning.",
+   "docs": [
+    {
+     "slug": "order-er26-3515-pjm-large-load",
+     "accession": "20261009-3055",
+     "date": "2026-10-09",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": 57
+    }
+   ],
+   "tenets": [
+    {
+     "tenet": "FERC accepts a 50 MW cumulative-peak threshold as the Large Load definition.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "establishing the threshold to qualify as a Large Load at a cumulative peak of 50 MW strikes a just and reasonable balance between capturing the larger loads into which PJM needs visibility to ensure the reliability of its system",
+       "pg": 11
+      }
+     ]
+    },
+    {
+     "tenet": "FERC accepts the Large Load Registry and severs it from the rest of the filing.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "We find that PJM’s proposed Large Load Registry is just and reasonable and not unduly discriminatory or preferential because it will require LSEs to provide information about the Large Loads that they serve to PJM",
+       "pg": 20
+      },
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "the only elements of its proposal that are severable are the proposed definition of Large Load and the proposed Large Load Registry, which can be implemented independent of the IRAS and BYONC frameworks.",
+       "pg": 6
+      }
+     ]
+    },
+    {
+     "tenet": "FERC rejects IRAS because it appears to intrude on retail rate regulation.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "certain aspects of PJM’s proposal appear to present an impermissible intrusion on retail rate regulation and are not subject to the Commission’s authority pursuant to section 205",
+       "pg": 34
+      }
+     ]
+    },
+    {
+     "tenet": "The tariff text, unlike PJM's transmittal, puts curtailment duties directly on retail large loads.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "the plain language of the Tariff, as proposed, appears to place obligations directly on the Eligible New Large Loads and requires Electric Distributors to curtail the Eligible New Large Loads.",
+       "pg": 36
+      }
+     ]
+    },
+    {
+     "tenet": "FERC finds IRAS compensation sets a retail rate, which only states may do.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "the proposed Tariff appears to be setting a retail rate because it establishes a compensation rate for IRAS payable to the Eligible New Large Load.",
+       "pg": 36
+      }
+     ]
+    },
+    {
+     "tenet": "FERC says PJM did not justify treating utilities differently based on retail customer traits.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "PJM’s proposal imposes capacity procurement and curtailment obligations on Electric Distributors and LSEs taking NITS to serve certain loads based on retail customer characteristics",
+       "pg": 42
+      },
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "PJM’s generic references to these retail customer characteristics without more detail are insufficient evidence",
+       "pg": 42
+      }
+     ]
+    },
+    {
+     "tenet": "FERC rejects the BYONC accreditation lock-in for lack of record support.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "PJM has not sufficiently justified its proposal to lock in the accreditation of BYONC resources over the lifetime of the BYONC arrangement",
+       "pg": 45
+      },
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "the risk that a BYONC resource’s locked-in accreditation value be higher than the capacity that it can actually provide has the potential to create a new resource adequacy risk for the entire PJM Region",
+       "pg": 47
+      }
+     ]
+    },
+    {
+     "tenet": "FERC rejects excluding new large loads from the VRR curve as inseparable from IRAS.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "the proposed rules for BYONC arrangements and the exclusion of Eligible New Large Loads from the VRR curve, are not simply complementary, but instead are inextricably linked.",
+       "pg": 6
+      }
+     ]
+    },
+    {
+     "tenet": "FERC grants that PJM faces a capacity shortfall but says the proposal falls short.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "we recognize the imminent capacity shortfall in PJM, we find that two key aspects of PJM’s proposal—IRAS and BYONC—are either outside of the Commission’s authority or have not been sufficiently demonstrated",
+       "pg": 6
+      },
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "beginning in the 2027/2028 Delivery Year, it will be short of sufficient capacity to meet the PJM Region Reliability Requirement, particularly due to data center load growth",
+       "pg": 1
+      }
+     ]
+    },
+    {
+     "tenet": "FERC warns IRAS would shed firm load at EEA1, earlier than the reliability standard allows.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "PJM’s proposal would shed firm load on an involuntary basis.",
+       "pg": 48
+      },
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "It appears that PJM’s proposal ignores the plain language of mandatory Reliability Standard EOP-011-4",
+       "pg": 48
+      }
+     ]
+    },
+    {
+     "tenet": "FERC doubts load excluded from the VRR curve should pay capacity charges.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "Eligible Customers taking non-firm transmission service on behalf of co-located load should not be charged for capacity because PJM does not procure capacity on their behalf.",
+       "pg": 48
+      }
+     ]
+    },
+    {
+     "tenet": "FERC keeps manufacturers in the Large Load definition, not just data centers.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "we find reasonable PJM’s proposal to include all types of large loads in the Large Load definition.",
+       "pg": 12
+      }
+     ]
+    },
+    {
+     "tenet": "FERC says one-mile single-site grouping stops data centers splitting into sub-50 MW pieces.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "the one-mile radius paired with the single electrical site requirement is necessary to ensure that loads that are physically located together and affiliated are considered as a single facility",
+       "pg": 12
+      }
+     ]
+    },
+    {
+     "tenet": "FERC says a cutoff just below 50 MW is not unjust merely because it excludes loads.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "any cutoff criterion would inevitably exclude loads sized just below the threshold, and that alone does not render the definition unjust or unreasonable.",
+       "pg": 12
+      }
+     ]
+    },
+    {
+     "tenet": "The Registry stays closed to state consumer advocates under existing confidentiality rules.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "PJM proposes to follow its existing, Commission-approved rules, rules that currently do not allow state consumer advocates or similar entities to have access to this type of information.",
+       "pg": 21
+      }
+     ]
+    },
+    {
+     "tenet": "LSEs must supply Registry data, and Electric Distributors may fill gaps.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "the LSE serving a Large Load is obligated to provide PJM with the information for the Large Load Registry, and the Electric Distributor may provide information when the LSE does not have all the information required readily available.",
+       "pg": 21
+      }
+     ]
+    },
+    {
+     "tenet": "FERC severs and rejects the New Large Load definition without prejudice.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "we also sever and reject the definition of New Large Load without prejudice.",
+       "pg": 13
+      },
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "a 49 MW existing load that increased its consumption by 1 MW would become a 50 MW New Large Load and impose new requirements on the existing NITS customer for the entire 50 MW.",
+       "pg": 49
+      }
+     ]
+    },
+    {
+     "tenet": "FERC points PJM toward a non-firm transmission service as a refiling route.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "a non-firm transmission service similar to Non-Firm Contract Demand transmission service, with appropriate adjustments, might be considered as a potential avenue to achieve some of the aims of PJM’s proposed IRAS framework.",
+       "pg": 50
+      }
+     ]
+    },
+    {
+     "tenet": "FERC leaves it to states to pick which retail customers are curtailed first.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "States have a crucial role to play in this challenge by designating which retail customers must be curtailed when the system is stressed",
+       "pg": 43
+      }
+     ]
+    },
+    {
+     "tenet": "Rosner: any refiled IRAS must justify curtailing load before voluntary demand response.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "if PJM chooses to refile its proposal, it must justify its proposal to curtail IRAS load on a mandatory basis before load that has voluntarily enrolled in a demand response program.",
+       "pg": 56
+      }
+     ]
+    },
+    {
+     "tenet": "Rosner: excluding IRAS load from the demand curve could hide a capacity shortage.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "The result could be a capacity market signaling that PJM has more than enough capacity while the region sheds thousands of megawatts of demand on an involuntary basis.",
+       "pg": 56
+      }
+     ]
+    },
+    {
+     "tenet": "Rosner: in an emergency, cut non-critical data centers before ordinary customers, after demand response.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "data centers not serving critical functions should be shut off before ordinary customers",
+       "pg": 57
+      }
+     ]
+    },
+    {
+     "tenet": "Both accepted elements take effect October 12, 2026, with a compliance filing due in 30 days.",
+     "quotes": [
+      {
+       "d": "order-er26-3515-pjm-large-load",
+       "q": "we accept PJM’s proposed Tariff revisions to establish a definition of Large Load and a Large Load Registry, effective October 12, 2026, as requested, and require PJM to submit a compliance filing within 30 days",
+       "pg": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "duke-nitsa",
+   "title": "Duke Energy Carolinas network service agreement and large-load shortfall payments",
+   "short": "Duke large-load charges",
+   "docket": "ER26-2691-000",
+   "about": "Duke Energy Carolinas' network service agreement adds a payment from customers of 100 MW or more who use less transmission than they committed to.",
+   "status": "Accepted Oct 9, 2026, effective Aug 1, 2026.",
+   "docs": [
+    {
+     "slug": "order-er26-2691-duke-nitsa",
+     "accession": "20261009-3054",
+     "date": "2026-10-09",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": null
+    }
+   ],
+   "tenets": [
+    {
+     "tenet": "FERC accepts a shortfall payment for network loads of 100 MW or more.",
+     "quotes": [
+      {
+       "d": "order-er26-2691-duke-nitsa",
+       "q": "The purpose of the Shortfall Payment mechanism is to reduce the potential cost impacts of large load service requests on other DEC transmission customers if the Network Load does not materialize or otherwise takes less service than anticipated."
+      }
+     ]
+    },
+    {
+     "tenet": "The 100 MW large-load threshold is just and reasonable.",
+     "quotes": [
+      {
+       "d": "order-er26-2691-duke-nitsa",
+       "q": "Based on the record before us, we also find that the 100 MW threshold is just and reasonable."
+      }
+     ]
+    },
+    {
+     "tenet": "Shortfall payments reduce, not add to, Duke's transmission revenue requirement.",
+     "quotes": [
+      {
+       "d": "order-er26-2691-duke-nitsa",
+       "q": "Shortfall Payments serve to reduce, rather than add to, DEC’s revenue collection through its transmission revenue requirement."
+      }
+     ]
+    },
+    {
+     "tenet": "Network Upgrade costs roll into transmission rates by default, large-load upgrades included.",
+     "quotes": [
+      {
+       "d": "order-er26-2691-duke-nitsa",
+       "q": "Network Upgrades that are part of an integrated system benefit all system users."
+      },
+      {
+       "d": "order-er26-2691-duke-nitsa",
+       "q": "That policy does not change based on the size or scope of Network Upgrades constructed to fulfill a transmission customer’s request for network service."
+      }
+     ]
+    },
+    {
+     "tenet": "Duke may still file a non-conforming agreement with incremental rates.",
+     "quotes": [
+      {
+       "d": "order-er26-2691-duke-nitsa",
+       "q": "the Commission will consider non-conforming NITSAs that include an alternative cost-recovery mechanism such as an incremental rate."
+      }
+     ]
+    },
+    {
+     "tenet": "FERC rejects ElectriCities' comparability objection to the 100 MW terms as outside its retail jurisdiction.",
+     "quotes": [
+      {
+       "d": "order-er26-2691-duke-nitsa",
+       "q": "The Commission lacks jurisdiction over retail customers, and we therefore dismiss ElectriCities’ argument."
+      }
+     ]
+    },
+    {
+     "tenet": "Retail cost-shift worries from load additions are beyond FERC's jurisdiction.",
+     "quotes": [
+      {
+       "d": "order-er26-2691-duke-nitsa",
+       "q": "we note that SACE’s concerns regarding retail cost allocation and rates pertaining to load additions are beyond the Commission’s jurisdiction."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "exelon-prompt-auction",
+   "title": "Exelon complaint seeking a prompt PJM capacity auction",
+   "short": "Exelon complaint",
+   "docket": "EL27-11-000",
+   "about": "Exelon, whose utilities serve more than 10.7 million customers in PJM, asks FERC to run PJM's capacity auction two months before each delivery year instead of three years ahead.",
+   "status": "Filed Nov 3, 2026. Exelon asks for an order by Jan 31, 2027; FERC had not acted as of Nov 9.",
+   "docs": [
+    {
+     "slug": "complaint-el27-11-exelon",
+     "accession": "20261103-5191",
+     "date": "2026-11-03",
+     "filer": "Exelon",
+     "kind": "complaint",
+     "side": "for",
+     "pages": 61
+    }
+   ],
+   "tenets": [
+    {
+     "tenet": "Exelon asks FERC to replace the three-year forward auction with a prompt auction.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "direct PJM to establish a just and reasonable “prompt” auction schedule, to run two months before a given Delivery Year, starting with the 2030/2031 Delivery Year and continuing",
+       "pg": 8
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon wants an order by January 31, 2027 and a January 1, 2027 refund date.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "Exelon respectfully requests that the Commission establish a refund effective date of January 1, 2027, and permit Fast Track processing under Rule 206(h) to facilitate a Commission order by no later than January 31, 2027",
+       "pg": 5
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon says its remedy would not touch the December 2026 auction or any backstop procurement.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "nothing in this complaint is intended to apply to, or otherwise disrupt the implementation of, the 2029/2030 Delivery Year BRA, which is scheduled to run in December 2026, nor any Reliability Backstop Procurement",
+       "pg": 5
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon says data center growth makes the three-year load forecast structurally uncertain.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "this is not a modeling failure; it reflects a structural shift in forecast uncertainty driven almost entirely by the nature and size of data center load growth in",
+       "pg": 21
+      },
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "are nonetheless bound by RPM’s requirement to predict reality years into the future",
+       "pg": 19
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon says over-forecast large load raises capacity costs for all customers.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "the three-year RPM forward period and assumptions about large load growth, principally from data centers, are likely to overstate the peak load forecast that PJM uses to determine the Reliability Requirement",
+       "pg": 22
+      },
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "if a portion of the large loads included in the load forecast used in the BRA do not materialize, capacity costs will increase for all customers.",
+       "pg": 22
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon puts a normal 1% to 2% forecast error at $6 to $12 billion.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "This translates to approximately $6 to $12 billion in change in total capacity costs to customers resulting from a historically “normal” level of load forecast error",
+       "pg": 24
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon says this moves the 2030/31 auction from May 2027 to about March 2030.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "it will functionally push out the date of the BRA for the 2030/31 Delivery Year, currently scheduled for May 2027, to approximately March 2030",
+       "pg": 6
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon notes recent auctions cleared at the price cap yet fell short of the reserve target.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "the 2027/2028 and 2028/2029 Delivery Year BRAs clearing at the temporary Commission-approved price cap and simultaneously falling thousands of MWs short of PJM’s target Installed Reserve Margin.",
+       "pg": 7
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon says new capacity cannot be built within three years, undercutting the 2006 rationale.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "The risk balancing analysis the Commission relied on in 2006 to accept the load forecast inaccuracies inherent in RPM’s multi-year forward period has fundamentally collapsed in 2026.",
+       "pg": 12
+      },
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "approximately 24 GW of planned generation with fully executed interconnection agreements have terminated their agreements before reaching commercial operation, including 13.5 GW of natural gas capacity.",
+       "pg": 25
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon says ISO-NE, NYISO and MISO already run prompt auctions, so PJM would align.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "Action by the Commission in this proceeding will align PJM’s capacity auction schedule with all other Regional Transmission Organizations and Independent System Operators",
+       "pg": 12
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon says a prompt auction improves ELCC data and the price signal for retirements.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "A prompt auction will significantly enhance the quality of data used in PJM’s ELCC capacity accreditation",
+       "pg": 13
+      },
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "it increases the economic efficiency of resource exit from the market.",
+       "pg": 52
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon concedes the complaint fixes one defect, not the whole capacity market.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "the targeted surgery requested in this complaint will not heal all that ails RPM.",
+       "pg": 9
+      }
+     ]
+    },
+    {
+     "tenet": "Exelon cites FERC's September 30 finding that RPM has not kept pace with large load.",
+     "side": "for",
+     "quotes": [
+      {
+       "d": "complaint-el27-11-exelon",
+       "q": "“[w]e think it clear that PJM’s ordinary instrument for procuring sufficient capacity to meet PJM’s reliability requirement, the RPM, has failed to keep pace with the unprecedented influx of large load into",
+       "pg": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pjm-governance",
+   "title": "PJM governance and stakeholder reform vote",
+   "short": "PJM governance vote",
+   "docket": "AD26-7-000",
+   "about": "After FERC's July conference on how PJM makes decisions, PJM's members voted on a reform package. PJM told FERC the states do not find the result satisfactory.",
+   "status": "PJM reported the Members' Sept 30, 2026 vote to FERC on Oct 1. The Board has not said what it will file.",
+   "docs": [
+    {
+     "slug": "filing-ad26-7-pjm-governance-vote",
+     "accession": "20261001-5164",
+     "date": "2026-09-30",
+     "filer": "PJM",
+     "kind": "filing",
+     "side": "neutral",
+     "pages": 2
+    }
+   ],
+   "tenets": [
+    {
+     "tenet": "The Members term sheet won the two-thirds sector-weighted Members Committee vote.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-ad26-7-pjm-governance-vote",
+       "q": "The Members term sheet, sponsored by a group of PJM Members, received the requisite sector-weighted two-thirds majority vote of the PJM Members Committee",
+       "pg": 1
+      }
+     ]
+    },
+    {
+     "tenet": "Neither PJM's own term sheet nor the Consumer Advocates' reached even a majority.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-ad26-7-pjm-governance-vote",
+       "q": "Neither PJM’s nor the Consumer Advocates’ term sheet received the requisite two-thirds or even a majority vote.",
+       "pg": 1
+      }
+     ]
+    },
+    {
+     "tenet": "PJM says the states and governors do not find the approved term sheet satisfactory.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "filing-ad26-7-pjm-governance-vote",
+       "q": "the Organization of PJM States, Inc., the PJM Governors’ Collaborative and other state representatives do not view the approved term sheet as satisfactory.",
+       "pg": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "reliability-conference",
+   "title": "2026 FERC reliability technical conference: integrating large loads",
+   "short": "Reliability conference",
+   "docket": "AD26-8-000",
+   "about": "FERC's annual reliability conference, run by the commissioners. Its first panel covered running the grid with fast-growing large loads such as data centers.",
+   "status": "Held Oct 21, 2026, with Panel 1 on integrating large loads.",
+   "docs": [
+    {
+     "slug": "notice-ad26-8-third-supplemental",
+     "accession": "20261015-3040",
+     "date": "2026-10-15",
+     "filer": "FERC",
+     "kind": "notice",
+     "pages": null
+    },
+    {
+     "slug": "statement-ad26-8-pjm-pilong",
+     "accession": "20261021-4003",
+     "date": "2026-10-21",
+     "filer": "PJM",
+     "kind": "statement",
+     "side": "neutral",
+     "pages": 7
+    }
+   ],
+   "tenets": [
+    {
+     "tenet": "Panel 1 asks how to model and plan for data centers and AI campuses.",
+     "quotes": [
+      {
+       "d": "notice-ad26-8-third-supplemental",
+       "q": "How should entities model and plan for the rapid emergence of large, energy-intensive loads, such as data centers and AI compute campuses"
+      }
+     ]
+    },
+    {
+     "tenet": "Panel 1 asks how data centers' flat load shape affects fuel security for capacity resources.",
+     "quotes": [
+      {
+       "d": "notice-ad26-8-third-supplemental",
+       "q": "Given the high load factor of data centers, what are utilities and RTOs/ISOs doing to ensure that resources used to meet capacity requirements have secure fuel sources"
+      }
+     ]
+    },
+    {
+     "tenet": "The conference runs October 21, 2026, 10:00 am to 2:40 pm, at FERC headquarters.",
+     "quotes": [
+      {
+       "d": "notice-ad26-8-third-supplemental",
+       "q": "on Wednesday, October 21, 2026, from 10:00 am to 2:40 pm Eastern Daylight Time"
+      }
+     ]
+    },
+    {
+     "tenet": "Merits discussion of pending dockets, including PJM's large load filings, will be curtailed.",
+     "quotes": [
+      {
+       "d": "notice-ad26-8-third-supplemental",
+       "q": "Any discussion on the merits of such proceedings will be curtailed."
+      }
+     ]
+    },
+    {
+     "tenet": "PJM says large loads arrive in two years while generation takes three and transmission seven.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "A data center may seek interconnection within two years, while new generation can take three years or more to come online and major transmission facilities can take seven years or more.",
+       "pg": 3
+      }
+     ]
+    },
+    {
+     "tenet": "PJM says large loads must be flexible or curtailable until supply is built.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "Large Loads must provide sufficient operational flexibility or be subject to load reductions until the generation and transmission needed to serve them have been studied and placed in service.",
+       "pg": 3
+      }
+     ]
+    },
+    {
+     "tenet": "PJM wants voltage and frequency ride-through rules for new and existing large loads.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "the requirements should apply, as legally and technically appropriate, to both new and existing Large Loads.",
+       "pg": 4
+      }
+     ]
+    },
+    {
+     "tenet": "PJM cites a 3,900 MW load drop on July 22, 2026 as proof.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "including the sudden transfer of approximately 3,900 MW of load off grid on July 22, 2026.",
+       "pg": 4
+      },
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "In July 2024, approximately 1,500 MW of load transferred off grid in response to a system fault in Northern Virginia.",
+       "pg": 4
+      }
+     ]
+    },
+    {
+     "tenet": "PJM wants corrective action when a large load performs differently from its submitted models.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "Where a facility’s actual performance differs from its submitted models or approved settings, the applicable framework should provide for corrective action, operating restrictions, or other consequences",
+       "pg": 4
+      }
+     ]
+    },
+    {
+     "tenet": "PJM says it has needed DOE 202(c) emergency relief it historically did not.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "PJM historically has not needed to seek such relief under comparable temperatures and seasonal conditions.",
+       "pg": 3
+      }
+     ]
+    },
+    {
+     "tenet": "PJM warns a malicious actor could swing data center load through workload-management systems.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "A malicious actor, however, could seek access to a data center’s workload-management systems, manipulate computing activity, and create abrupt load increases or losses.",
+       "pg": 5
+      }
+     ]
+    },
+    {
+     "tenet": "PJM wants NERC standards to cover large computational loads.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "NERC reliability standards should address the operational and cybersecurity obligations appropriate to those facilities.",
+       "pg": 6
+      }
+     ]
+    },
+    {
+     "tenet": "PJM cites reports of 30 GW of gas plants for data centers within five years.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "Recent reports indicate that as much as 30 GW of gas-fired generation may be developed to serve data-center load over the next four to five years.",
+       "pg": 6
+      }
+     ]
+    },
+    {
+     "tenet": "PJM says data centers at 80-90% capacity factors raise base demand all year.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "Data centers with capacity factors of 80–90% increase the system’s base demand and therefore the need for resources capable of serving sustained load.",
+       "pg": 6
+      }
+     ]
+    },
+    {
+     "tenet": "PJM asks FERC to align energization with available infrastructure.",
+     "side": "neutral",
+     "quotes": [
+      {
+       "d": "statement-ad26-8-pjm-pilong",
+       "q": "PJM respectfully requests that the Commission use this technical conference to advance a coordinated reliability framework for Large Loads",
+       "pg": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "show-cause-since-june",
+   "title": "Six large-load show-cause orders, one per RTO/ISO",
+   "short": "June 18 orders",
+   "docket": "EL26-67-000 to EL26-72-000",
+   "about": "On June 18 FERC told each of the six regional grid operators to defend its rules for connecting large loads such as data centers, or to propose new ones. All six cases are paused until mid-November while the operators file their own proposals.",
+   "sideOf": "FERC's June 18 orders",
+   "status": "All six proceedings are in abeyance: responses are due Nov 16, 2026 (SPP: Nov 20). The six docket sheets show nothing new as of Nov 9.",
+   "docs": [
+    {
+     "slug": "abeyance-el26-67-pjm",
+     "accession": "20260814-3059",
+     "date": "2026-08-14",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": null
+    },
+    {
+     "slug": "abeyance-el26-68-spp",
+     "accession": "20260814-3060",
+     "date": "2026-08-14",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": null
+    },
+    {
+     "slug": "abeyance-el26-69-nyiso",
+     "accession": "20260814-3068",
+     "date": "2026-08-14",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": null
+    },
+    {
+     "slug": "abeyance-el26-70-miso",
+     "accession": "20260814-3058",
+     "date": "2026-08-14",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": null
+    },
+    {
+     "slug": "abeyance-el26-71-caiso",
+     "accession": "20260814-3061",
+     "date": "2026-08-14",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": null
+    },
+    {
+     "slug": "abeyance-el26-72-isone",
+     "accession": "20260814-3056",
+     "date": "2026-08-14",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": null
+    },
+    {
+     "slug": "errata-el26-67-pjm",
+     "accession": "20260813-3025",
+     "date": "2026-08-13",
+     "filer": "FERC",
+     "kind": "notice",
+     "pages": null
+    },
+    {
+     "slug": "errata-el26-70-miso",
+     "accession": "20260813-3026",
+     "date": "2026-08-13",
+     "filer": "FERC",
+     "kind": "notice",
+     "pages": null
+    },
+    {
+     "slug": "order-el26-67-001-pjm-rehearing",
+     "accession": "20260921-3020",
+     "date": "2026-09-21",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": 11
+    },
+    {
+     "slug": "order-el26-69-001-nyiso-rehearing",
+     "accession": "20260921-3021",
+     "date": "2026-09-21",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": null
+    },
+    {
+     "slug": "order-el26-70-001-miso-rehearing",
+     "accession": "20260921-3047",
+     "date": "2026-09-21",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": null
+    },
+    {
+     "slug": "order-el26-71-001-caiso-rehearing",
+     "accession": "20260921-3019",
+     "date": "2026-09-21",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": null
+    },
+    {
+     "slug": "order-el26-72-001-isone-rehearing",
+     "accession": "20260921-3056",
+     "date": "2026-09-21",
+     "filer": "FERC",
+     "kind": "order",
+     "pages": null
+    },
+    {
+     "slug": "answer-el26-71-morongo",
+     "accession": "20260812-5158",
+     "date": "2026-08-12",
+     "filer": "Morongo Transmission",
+     "kind": "answer",
+     "pages": 6,
+     "side": "against"
+    }
+   ],
+   "tenets": [
+    {
+     "tenet": "Five of six cases go into 90-day abeyance; responses are due November 16.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-67-pjm",
+       "q": "Therefore, responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026."
+      },
+      {
+       "d": "abeyance-el26-69-nyiso",
+       "q": "Therefore, responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026."
+      },
+      {
+       "d": "abeyance-el26-70-miso",
+       "q": "Therefore, responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026."
+      },
+      {
+       "d": "abeyance-el26-71-caiso",
+       "q": "Therefore, responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026."
+      },
+      {
+       "d": "abeyance-el26-72-isone",
+       "q": "Therefore, responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026."
+      }
+     ]
+    },
+    {
+     "tenet": "SPP gets 95 days instead of 90, so its response is due November 20.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-68-spp",
+       "q": "we grant the Abeyance Motion filed by Joint Movants and hold this proceeding in abeyance for 95 days, until November 20, 2026"
+      },
+      {
+       "d": "abeyance-el26-68-spp",
+       "q": "Therefore, responses to the Show Cause Order will be due on November 20, 2026, and answers to responses will be due on December 21, 2026."
+      }
+     ]
+    },
+    {
+     "tenet": "SPP's extra five days exist because its Board vote moved to November 17 around elections.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-68-spp",
+       "q": "the date of the SPP Board meeting was originally scheduled on November 3, 2026 but was changed to accommodate upcoming elections and a National Association of Regulatory Utility Commissioners conference"
+      }
+     ]
+    },
+    {
+     "tenet": "A timely section 205 filing suspends that respondent's duty to answer the show-cause order.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-67-pjm",
+       "q": "then the obligation of the respondent(s) who have made such an FPA section 205 filing to file a response to the Show Cause Order will be suspended"
+      },
+      {
+       "d": "abeyance-el26-68-spp",
+       "q": "then the obligation of the respondent(s) who have made such an FPA section 205 filing to file a response to the Show Cause Order will be suspended"
+      },
+      {
+       "d": "abeyance-el26-69-nyiso",
+       "q": "then the obligation of the respondent(s) who have made such an FPA section 205 filing to file a response to the Show Cause Order will be suspended"
+      },
+      {
+       "d": "abeyance-el26-70-miso",
+       "q": "then the obligation of the respondent(s) who have made such an FPA section 205 filing to file a response to the Show Cause Order will be suspended"
+      },
+      {
+       "d": "abeyance-el26-71-caiso",
+       "q": "then the obligation of the respondent(s) who have made such an FPA section 205 filing to file a response to the Show Cause Order will be suspended"
+      },
+      {
+       "d": "abeyance-el26-72-isone",
+       "q": "then the obligation of the respondent(s) who have made such an FPA section 205 filing to file a response to the Show Cause Order will be suspended"
+      }
+     ]
+    },
+    {
+     "tenet": "FERC granted abeyance because each movant described its coming filing and named a filing date.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-67-pjm",
+       "q": "PJM, Indicated PJM TOs, and Silver Run have provided robust descriptions of the filings they anticipate making, provided a date by which they intend to make such filings"
+      },
+      {
+       "d": "abeyance-el26-69-nyiso",
+       "q": "NYISO, NYTOs, and Non-Incumbent TOs have provided a robust description of the filings they anticipate making, provided a date by which they intend to make such filings"
+      },
+      {
+       "d": "abeyance-el26-72-isone",
+       "q": "Joint Movants have provided a robust description of the filing that the entities anticipate making, provided a date by which they intend to make such filing"
+      },
+      {
+       "d": "abeyance-el26-71-caiso",
+       "q": "CAISO, DCRT, and the Joint PTOs have provided robust descriptions of the FPA section 205 filings they anticipate making by November 16, 2026"
+      }
+     ]
+    },
+    {
+     "tenet": "FERC warns MISO that findings its 205 filings miss return to the show-cause case.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-70-miso",
+       "q": "should their FPA section 205 filings not address all of the Commission’s preliminary findings in the Show Cause Order, the Commission will address those issues through the show cause proceeding"
+      }
+     ]
+    },
+    {
+     "tenet": "MISO plans a series of 205 filings, the first due by end of August.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-70-miso",
+       "q": "MISO states that it intends to submit a series of FPA section 205 filings during the abeyance period, with the first filing by the end of August."
+      }
+     ]
+    },
+    {
+     "tenet": "AMP opposed MISO's abeyance and wanted it conditioned on a compliance filing.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-70-miso",
+       "q": "AMP asserts that, in the interest of expediting resolution of this matter, the Commission should condition abeyance on a future compliance filing by MISO."
+      }
+     ],
+     "side": "against"
+    },
+    {
+     "tenet": "FERC invites each respondent to say which tariff revisions justify ending the show-cause case.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-68-spp",
+       "q": "we encourage SPP and/or Transmission Owners to explain, with specificity, which of their proposed Tariff revisions they believe resolve all or some of the Commission’s preliminary findings in the Show Cause Order"
+      },
+      {
+       "d": "abeyance-el26-69-nyiso",
+       "q": "we encourage NYISO and/or Transmission Owners to explain, with specificity, which of their proposed Tariff revisions they believe resolve all or some of the Commission’s preliminary findings in the Show Cause Order"
+      },
+      {
+       "d": "abeyance-el26-70-miso",
+       "q": "we encourage MISO and/or Transmission Owners to explain, with specificity, which of their proposed Tariff revisions they believe resolve all or some of the Commission’s preliminary findings in the Show Cause Order"
+      },
+      {
+       "d": "abeyance-el26-71-caiso",
+       "q": "we encourage CAISO and/or Participating Transmission Owners to explain, with specificity, which of their proposed Tariff revisions they believe resolve all or some of the Commission’s preliminary findings in the Show Cause Order"
+      },
+      {
+       "d": "abeyance-el26-72-isone",
+       "q": "we encourage ISO-NE and/or Participating Transmission Owners to explain, with specificity, which of their proposed Tariff revisions they believe resolve all or some of the Commission’s preliminary findings in the Show Cause Order"
+      }
+     ]
+    },
+    {
+     "tenet": "FERC wants the tariff changes in fast, with an effective date that respects existing deals.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-67-pjm",
+       "q": "we encourage PJM and/or Transmission Owners to propose an effective date that takes into account the necessary time to implement the proposed Tariff revisions and accommodate existing commercial arrangements"
+      },
+      {
+       "d": "abeyance-el26-68-spp",
+       "q": "we encourage SPP and/or Transmission Owners to propose an effective date that takes into account the necessary time to implement the proposed Tariff revisions and accommodate existing commercial arrangements"
+      },
+      {
+       "d": "abeyance-el26-70-miso",
+       "q": "we encourage MISO and/or Transmission Owners to propose an effective date that takes into account the necessary time to implement the proposed Tariff revisions and accommodate existing commercial arrangements"
+      }
+     ]
+    },
+    {
+     "tenet": "FERC rescinds the CAISO show-cause order for the Six Cities and WAPA.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-71-caiso",
+       "q": "the Show Cause Order is rescinded as against each of the Six Cities and WAPA and the caption of the proceeding has been amended to reflect their removal from the proceeding"
+      },
+      {
+       "d": "abeyance-el26-71-caiso",
+       "q": "Six Cities and WAPA, as utilities exempt from Commission jurisdiction under FPA section 201(f), have requested to be removed from this proceeding"
+      }
+     ]
+    },
+    {
+     "tenet": "Rescission rests on their promise to coordinate with CAISO and file any TO tariff changes needed.",
+     "quotes": [
+      {
+       "d": "abeyance-el26-71-caiso",
+       "q": "Both Six Cities and WAPA have confirmed that they will continue to coordinate and cooperate with CAISO in responding to the Show Cause Order and will file with the Commission any proposed revisions to their respective TO Tariffs"
+      }
+     ]
+    },
+    {
+     "tenet": "FERC dismisses the rehearing requests because a show-cause order is not a final order.",
+     "quotes": [
+      {
+       "d": "order-el26-67-001-pjm-rehearing",
+       "q": "We therefore dismiss the requests for rehearing, which concern a Commission action that is not final and that will be succeeded by further Commission action.",
+       "pg": 11
+      },
+      {
+       "d": "order-el26-69-001-nyiso-rehearing",
+       "q": "The Commission determined only that the Tariff appears to be unjust, unreasonable, and unduly discriminatory or preferential and instituted an FPA section 206 show cause proceeding to reach a final determination on this issue."
+      },
+      {
+       "d": "order-el26-70-001-miso-rehearing",
+       "q": "We therefore dismiss the request for rehearing, which concerns a Commission action that is not final and that will be succeeded by further Commission action."
+      },
+      {
+       "d": "order-el26-71-001-caiso-rehearing",
+       "q": "The Commission determined only that the tariffs appear to be unjust, unreasonable, and unduly discriminatory or preferential and instituted an FPA section 206 show cause proceeding to reach a final determination on this issue."
+      },
+      {
+       "d": "order-el26-72-001-isone-rehearing",
+       "q": "We therefore dismiss the request for rehearing, which concerns a Commission action that is not final and that will be succeeded by further Commission action."
+      }
+     ]
+    },
+    {
+     "tenet": "FERC will not clarify the show-cause orders while the cases sit in abeyance.",
+     "quotes": [
+      {
+       "d": "order-el26-67-001-pjm-rehearing",
+       "q": "We do not intend to provide clarification or guidance with respect to the Show Cause Order while the show cause proceeding is held in abeyance",
+       "pg": 11
+      },
+      {
+       "d": "order-el26-69-001-nyiso-rehearing",
+       "q": "We do not intend to provide clarification or guidance with respect to the Show Cause Order while the show cause proceeding is held in abeyance."
+      },
+      {
+       "d": "order-el26-70-001-miso-rehearing",
+       "q": "We do not intend to provide clarification or guidance with respect to the Show Cause Order while the show cause proceeding is held in abeyance."
+      },
+      {
+       "d": "order-el26-71-001-caiso-rehearing",
+       "q": "We do not intend to provide clarification or guidance with respect to the Show Cause Order while the show cause proceeding is held in abeyance."
+      },
+      {
+       "d": "order-el26-72-001-isone-rehearing",
+       "q": "We do not intend to provide clarification or guidance with respect to the Show Cause Order while the show cause proceeding is held in abeyance."
+      }
+     ]
+    },
+    {
+     "tenet": "Eolian sought permanent load-limited interconnection for front-of-meter generation in five of six proceedings.",
+     "quotes": [
+      {
+       "d": "order-el26-67-001-pjm-rehearing",
+       "q": "Eolian requests clarification or, in the alternative, rehearing to provide that electrically proximate generation may access permanent load-limited generator interconnection service",
+       "pg": 5
+      },
+      {
+       "d": "order-el26-69-001-nyiso-rehearing",
+       "q": "Eolian requests clarification or, in the alternative, rehearing to provide that electrically proximate generation may access permanent load-limited generator interconnection service"
+      },
+      {
+       "d": "order-el26-70-001-miso-rehearing",
+       "q": "Eolian requests clarification or, in the alternative, rehearing to provide that electrically proximate generation may access permanent load-limited generator interconnection service"
+      },
+      {
+       "d": "order-el26-71-001-caiso-rehearing",
+       "q": "Eolian requests clarification or, in the alternative, rehearing to provide that electrically proximate generation may access permanent load-limited generator interconnection service"
+      },
+      {
+       "d": "order-el26-72-001-isone-rehearing",
+       "q": "Eolian requests clarification or, in the alternative, rehearing to provide that electrically proximate generation may access permanent load-limited generator interconnection service"
+      }
+     ],
+     "side": "mixed"
+    },
+    {
+     "tenet": "Exelon and FirstEnergy argued FERC never showed PJM's existing network service rate is unjust.",
+     "quotes": [
+      {
+       "d": "order-el26-67-001-pjm-rehearing",
+       "q": "Exelon/FirstEnergy argue that the Commission failed to meet its FPA section 206 burden to show that PJM’s existing rate is unjust and unreasonable",
+       "pg": 8
+      }
+     ],
+     "side": "against"
+    },
+    {
+     "tenet": "PJM's owners want service-specific criteria for large loads beyond the 50 MW definition.",
+     "quotes": [
+      {
+       "d": "order-el26-67-001-pjm-rehearing",
+       "q": "Indicated PJM Transmission Owners contend that it may not be appropriate to offer identical services to all large load customers.",
+       "pg": 6
+      }
+     ],
+     "side": "against"
+    },
+    {
+     "tenet": "Constellation told FERC to reject any PJM owner definition that disqualifies large loads or slows interconnection.",
+     "quotes": [
+      {
+       "d": "order-el26-67-001-pjm-rehearing",
+       "q": "Constellation further argues that the Commission should clarify that: (1) any eligibility requirements PJM and the Transmission Owners propose in their initial filings must not be so prescriptive as to improperly disqualify large loads",
+       "pg": 10
+      }
+     ],
+     "side": "against"
+    },
+    {
+     "tenet": "Consumer advocates asked FERC to make owners credit cost-recovery payments to other customers immediately.",
+     "quotes": [
+      {
+       "d": "order-el26-67-001-pjm-rehearing",
+       "q": "Joint Consumer Advocates also request that the Commission clarify that transmission owners must immediately credit revenue received under cost recovery agreements to the other transmission customers in the relevant zone.",
+       "pg": 7
+      }
+     ],
+     "side": "mixed"
+    },
+    {
+     "tenet": "Errata moves Allegheny Electric and Wabash Valley from the PJM caption to footnote 13.",
+     "quotes": [
+      {
+       "d": "errata-el26-67-pjm",
+       "q": "The caption in the order inadvertently included “Allegheny Electric Cooperative, Inc.” and “Wabash Valley Power Association, Inc.” and footnote 13 inadvertently omitted"
+      },
+      {
+       "d": "errata-el26-70-miso",
+       "q": "The caption in the order inadvertently included “Wabash Valley Power Association, Inc.” and footnote 11 inadvertently omitted “Wabash Valley Power Association, Inc.”"
+      }
+     ]
+    },
+    {
+     "tenet": "Non-public-utility owners need not respond, but FERC can still review their formula rates.",
+     "quotes": [
+      {
+       "d": "errata-el26-67-pjm",
+       "q": "the Commission retains the authority to review each entity’s formula rates as a component of PJM’s Tariff in an order to show cause directed towards PJM"
+      },
+      {
+       "d": "errata-el26-70-miso",
+       "q": "We recognize that MISO’s transmission owners include entities that are not subject to the Commission’s jurisdiction because they are not public utilities pursuant to section 201(f) of the FPA."
+      }
+     ]
+    },
+    {
+     "tenet": "Morongo says its tariff needs no change: it is a non-load-serving owner.",
+     "quotes": [
+      {
+       "d": "answer-el26-71-morongo",
+       "q": "Morongo Transmission respectfully submits that the Morongo Tariff is just and reasonable and that no amendment is required in response to the issues identified in the Commission’s Order",
+       "pg": 2
+      },
+      {
+       "d": "answer-el26-71-morongo",
+       "q": "SCE could implement those reforms to its own tariff without Morongo Transmission needing to take further action to amend the Morongo Tariff.",
+       "pg": 4
+      }
+     ],
+     "side": "against"
+    },
+    {
+     "tenet": "Morongo will file compliance changes if FERC finds residual amendments to its tariff are required.",
+     "quotes": [
+      {
+       "d": "answer-el26-71-morongo",
+       "q": "to the extent that the Commission determines any residual or conforming amendments are required to the Morongo Tariff, Morongo Transmission will make compliance filings as directed.",
+       "pg": 4
+      }
+     ],
+     "side": "mixed"
+    }
+   ]
+  },
+  {
+   "id": "pjm-colocation",
+   "title": "PJM co-location compliance",
+   "short": "PJM co-location",
+   "docket": "EL25-49",
+   "about": "Co-location means a large load, usually a data center, built at a power plant and served partly by it. FERC set rules for it in PJM; these filings carry them out.",
+   "status": "PJM filed partial compliance Aug 17, 2026 and answered three limited protests Oct 14. The rest of its compliance is due Nov 16.",
+   "docs": [
+    {
+     "slug": "eot-el25-49-pjm",
+     "accession": "20260814-3005",
+     "date": "2026-08-14",
+     "filer": "FERC",
+     "kind": "notice",
+     "pages": null
+    },
+    {
+     "slug": "compliance-er26-1479-pjm",
+     "accession": "20260817-5195",
+     "date": "2026-08-17",
+     "filer": "PJM",
+     "kind": "filing",
+     "pages": 27
+    },
+    {
+     "slug": "compliance-er26-3537-pjm-tos",
+     "accession": "20260817-5175",
+     "date": "2026-08-17",
+     "filer": "PJM Transmission Owners",
+     "kind": "filing",
+     "pages": 4
+    },
+    {
+     "slug": "answer-el25-49-pjm-limited-protests",
+     "accession": "20261015-5003",
+     "date": "2026-10-14",
+     "filer": "PJM",
+     "kind": "answer",
+     "pages": 21
+    }
+   ],
+   "tenets": [
+    {
+     "tenet": "FERC gives PJM and its owners 90 more days, to November 16, on co-location.",
+     "quotes": [
+      {
+       "d": "eot-el25-49-pjm",
+       "q": "The deadline for PJM to comply with certain directives of the Co-Located Load Order, and the deadline for the PJM transmission owners to comply with the directives of the Co-Located Load Order, is extended to and including November 16, 2026."
+      }
+     ]
+    },
+    {
+     "tenet": "The extension lines co-location compliance up with PJM's large-load section 205 filing.",
+     "quotes": [
+      {
+       "d": "eot-el25-49-pjm",
+       "q": "to allow PJM to develop the remaining aspects of its compliance filing to comply with the Co-Located Load Order in conjunction with a Federal Power Act section 205 filing being developed in response to the Large Load Show Cause Order"
+      }
+     ]
+    },
+    {
+     "tenet": "PJM still owed an August 17 partial filing; Constellation wanted full Interim NITS terms.",
+     "quotes": [
+      {
+       "d": "eot-el25-49-pjm",
+       "q": "if its requested relief is granted, it will still make a compliance filing on August 17, 2026 that addresses certain defined terms"
+      },
+      {
+       "d": "eot-el25-49-pjm",
+       "q": "with the clarification that PJM remains obligated to file, on August 17, 2026, a complete set of provisions to facilitate Interim NITS"
+      }
+     ]
+    },
+    {
+     "tenet": "PJM's August 17 filing proposes Interim NITS in new Part XI, effective July 1, 2028.",
+     "quotes": [
+      {
+       "d": "compliance-er26-1479-pjm",
+       "q": "PJM proposes an effective date of July 1, 2028, to provide time for operational changes and implementation of additional operational tools that will be needed to curtail non-firm Interim NITS",
+       "pg": 2
+      },
+      {
+       "d": "compliance-er26-1479-pjm",
+       "q": "PJM Operations personnel will need to implement additional tools and processes before they will be able to monitor and curtail, as needed, the new non-firm Interim NITS product proposed in Tariff, Part XI",
+       "pg": 23
+      }
+     ]
+    },
+    {
+     "tenet": "PJM wants October 17, 2026 as the effective date for the rest of the compliance changes.",
+     "quotes": [
+      {
+       "d": "compliance-er26-1479-pjm",
+       "q": "PJM requests an effective date for the compliance changes in Parts I, III, VI, VII, VIII, and IX of the Tariff of October 17, 2026, which is 61 days after the date of this filing.",
+       "pg": 23
+      }
+     ]
+    },
+    {
+     "tenet": "PJM defers contract demand services and some netting terms to the November 16 filing.",
+     "quotes": [
+      {
+       "d": "compliance-er26-1479-pjm",
+       "q": "PJM proposed to defer implementation of the new contract demand transmission services and some aspects of the BTMG netting.",
+       "pg": 10
+      },
+      {
+       "d": "compliance-er26-1479-pjm",
+       "q": "PJM also omitted language referencing Firm Contract Demand Service and Non-Firm Contract Demand Service, as those services will be implemented in a later compliance filing",
+       "pg": 19
+      }
+     ]
+    },
+    {
+     "tenet": "PJM is still working with stakeholders on the 50 MW retail behind-the-meter netting language.",
+     "quotes": [
+      {
+       "d": "compliance-er26-1479-pjm",
+       "q": "PJM is continuing to work with stakeholders to develop Tariff language to implement the 50 MW netting provisions for Retail BTMG.",
+       "pg": 12
+      },
+      {
+       "d": "compliance-er26-1479-pjm",
+       "q": "to eliminate the 50 megawatts (“MW”) nameplate limit for netting",
+       "pg": 2
+      }
+     ]
+    },
+    {
+     "tenet": "New 'Eligible Load' extends Interim NITS to load with behind-the-meter generation.",
+     "quotes": [
+      {
+       "d": "compliance-er26-1479-pjm",
+       "q": "PJM is proposing to add the term Eligible Load to the Tariff to encompass both Co-Located Load and Load with BTMG.",
+       "pg": 13
+      }
+     ]
+    },
+    {
+     "tenet": "Existing generators serving co-located load must give notice and finish Necessary Studies first.",
+     "quotes": [
+      {
+       "d": "compliance-er26-1479-pjm",
+       "q": "the Tariff would now require that all Interconnection Customers and Generation Project Developers seeking to serve Co-Located Load, whether with existing or new Generating Facilities",
+       "pg": 11
+      }
+     ]
+    },
+    {
+     "tenet": "Interim NITS operators who ignore dispatch lose service for up to 120 days, then are terminated.",
+     "quotes": [
+      {
+       "d": "compliance-er26-1479-pjm",
+       "q": "PJM revised the operational penalties for failure to follow dispatch instructions or misoperation of control technologies to suspend service for up to 120 days after the first instance and terminate service after the second",
+       "pg": 18
+      }
+     ]
+    },
+    {
+     "tenet": "The PJM TOs file the Interim NITS rate, effective July 1, 2028 to match PJM.",
+     "quotes": [
+      {
+       "d": "compliance-er26-3537-pjm-tos",
+       "q": "attached to this filing are new and revised tariff records for the PJM Tariff necessary to implement the rate for Interim NITS",
+       "pg": 2
+      },
+      {
+       "d": "compliance-er26-3537-pjm-tos",
+       "q": "The PJM Transmission Owners request that the revisions submitted with this partial compliance filing become effective on July 1, 2028.",
+       "pg": 2
+      }
+     ]
+    },
+    {
+     "tenet": "The TOs flag the Interim NITS rate may be terminated because FERC's directives are challenged.",
+     "quotes": [
+      {
+       "d": "compliance-er26-3537-pjm-tos",
+       "q": "the Commission’s directives being complied with herein are under challenge before the Commission and through petitions for review, such that the tendered tariff sheet revisions herein may be subject to a subsequent termination filing",
+       "pg": 1
+      }
+     ]
+    },
+    {
+     "tenet": "Constellation called July 2028 unsupported; PJM answers that Interim NITS needs new automation.",
+     "quotes": [
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "in the August Filing is unsupported and neglects to give “serious consideration” to more expedited implementation.",
+       "pg": 2
+      },
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "IRAS was proposed to be implemented on an aggregate, zonal basis using largely existing tools, whereas Interim NITS curtailment will occur on an individual transmission service request basis and requires entirely new tools and automation.",
+       "pg": 3
+      }
+     ]
+    },
+    {
+     "tenet": "PJM now expects to accept Interim NITS requests from September 2027.",
+     "quotes": [
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "Currently, PJM anticipates modifying the systems needed to begin accepting requests for the new transmission services in September of 2027.",
+       "pg": 3
+      },
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "PJM is developing a proposal for a new a study process that would evaluate large loads and generation interconnection requests together in a unified cluster study that would take roughly a year to complete",
+       "pg": 3
+      }
+     ]
+    },
+    {
+     "tenet": "PJM rejects Constellation's other asks: studies repeat only on scope change; service stays interruptible.",
+     "quotes": [
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "While PJM will not repeat studies already performed, project scope or other technical changes may trigger the need for additional study.",
+       "pg": 4
+      },
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "Interim NITS is such a service, as customers must be able to limit their withdrawals from the system consistent with the existing system limits",
+       "pg": 5
+      },
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "the August Filing specified that Interim NITS will be interruptible and curtailed before firm services like Firm Contract Demand Service or NITS that are capacity-backed services",
+       "pg": 5
+      },
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "PJM clarifies that this is existing NITS under Part III of the Tariff.",
+       "pg": 6
+      }
+     ]
+    },
+    {
+     "tenet": "PJM says Amtrak and industrial customers fear losing netting, but PJM proposed no such restriction.",
+     "quotes": [
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "National Railroad Passenger Corporation (“Amtrak”) and various industrial customers express concern that the definitions PJM proposed may somehow disqualify industrial customers that sell surplus energy to the grid from netting their load",
+       "pg": 6
+      },
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "PJM has proposed no such restriction nor does it intend to include such a restriction in its upcoming compliance filing.",
+       "pg": 6
+      },
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "PJM intends to propose clarifications to the definition of BTMG in the November compliance filing to specify that load with BTMG is excluded from the definition of Co-Located Load.",
+       "pg": 7
+      }
+     ]
+    },
+    {
+     "tenet": "PJM accepts AMP's fix so non-retail behind-the-meter generation can use the services.",
+     "quotes": [
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "American Municipal Power, Inc.’s (“AMP”) limited protest avers that the proposed definition of an “Eligible Generating Facility” may disqualify Non-Retail BTMG from qualifying for use of the new transmission services.",
+       "pg": 7
+      },
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "Accordingly, PJM, does not object to AMP’s proposed revision to Eligible Generating Facility definition set forth in its pleading",
+       "pg": 7
+      }
+     ]
+    },
+    {
+     "tenet": "PJM asks FERC to accept the answer and consider deferring October 17 changes.",
+     "quotes": [
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "it may be appropriate for the Commission to defer consideration of these issues until it has the benefit of a complete record following next month’s compliance filing.",
+       "pg": 2
+      },
+      {
+       "d": "answer-el25-49-pjm-limited-protests",
+       "q": "PJM requests that the Commission grant PJM’s motion for leave to answer and accept the foregoing answer and affidavit.",
+       "pg": 8
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -17,8 +17,9 @@ Driven by real dates, not a calendar interval:
 | ~~2026-10-22~~ | ~~PJM special MC consultation on the backstop refiling~~. Held; ER27-330 cites it. |
 | ~~2026-10-28~~ | ~~PJM MC; CAISO Board~~. The MC agenda had **no** large-load item or vote (the Aug 14 order expected an advisory vote). CAISO's Board advanced its Large Loads proposal; CAISO says it files by Nov 16. |
 | ~~2026-10-29~~ | ~~PJM's backstop refiling~~. Filed as a NEW docket, **ER27-330-000** (20261029-5227, read; errata ER27-330-001 Oct 30). Seven rehearing/clarification requests of the Sep 29 order sit in **ER26-3380-001**. |
-| 2026-11-05 | PJM special MC: §9.2(b) consultation on "a suite of section 205 filings" for the show-cause order (agenda committed in sources/originals/). The backstop spacing (consult, then file seven days later) would put PJM's show-cause filings on or after Nov 12. |
-| 2026-11-09 | PJM's compliance filing on the Large Load definition and registry (30 days from the Oct 9 order in ER26-3515; Nov 8 is a Sunday), and the last day for rehearing requests on that order (none filed as of Oct 30). |
+| ~~2026-11-05~~ | ~~PJM special MC~~ on "a suite of section 205 filings". No minutes or materials found as of Nov 9; the backstop spacing would put PJM's filings on or after Nov 12. |
+| 2026-11-09 | PJM's ER26-3515 compliance filing and the rehearing deadline on the Oct 9 order. Neither was indexed on the morning of Nov 9; re-read ER26-3515-000 and the general search on Nov 10. |
+| 2026-11-12 | NEPOOL vote on ISO-NE's large-load filing (search snippet only, not confirmed). |
 | 2026-11-30 | ER27-330 comments and interventions due 5 pm ET (FERC's Nov 2 combined notice, 20261102-3050, read; also covers the -001 errata). Also watch for answers to the ER26-3380-001 rehearing requests and a FERC rehearing notice. |
 | 2027-01-11 | EL26-108 backstop paper-hearing initial briefs (reply briefs Jan 26), per FERC's Oct 23 notice. |
 | open | PJM governance: the Board has not said what it will file after the Members' Sept 30 vote. Redlines were posted Oct 13 and walked through Oct 16. Watch AD26-7 and PJM's Members Committee postings. |
@@ -183,6 +184,31 @@ Two sweeps running now have found that press lags this docket by more than a wee
 garnish: go to eLibrary first, and spend the search budget on statements by named people, which is the
 one thing the docket sheet cannot give you.
 
+### 4b. The record tabs: Filings and Commissioners
+
+Both read `docs/js/record-data.js`, baked from three committed sources and loaded on first open of either tab:
+
+- `sources/filings/tenets.json`: proceedings → documents (slugs of `sources/text/abeyance/*.txt`) → tenets, each a
+  plain sentence of at most 16 words with verbatim quotes and the PDF page they sit on.
+- `sources/videos/manifest.json` + `sources/videos/text/<id>.txt`: commissioner videos and their auto-caption transcripts.
+- `sources/videos/chapters.json`: per video, a contents list and timestamped commissioner quotes.
+
+```bash
+# new FERC documents: download in Chrome, add DOCS records, extract (step 4 above), then add tenets for them
+# new videos: find, add to the manifest, fetch (yt-dlp in a scratch venv; see the script's docstring)
+YTDLP=<venv>/bin/yt-dlp python3 tools/fetch-video-transcripts.py --discover "FERC Rosner data center"
+YTDLP=<venv>/bin/yt-dlp python3 tools/fetch-video-transcripts.py          # fetches what is missing, 10 s apart, backs off on 429
+python3 tools/fetch-video-transcripts.py --check
+node tools/verify-record.mjs          # every quote on its cited page / at its cited second; strict, no fuzzy match
+node tools/build-record-data.mjs      # bake docs/js/record-data.js (then stamp-assets)
+```
+
+Tenets and video contents are written by extraction agents working from a brief (one proceeding or two or three
+videos each) and a closed loop: the agent runs `tools/verify-record.mjs` on its own draft until it prints ✓. The
+briefs used on 2026-11-09 are in `agent-runs.md`. YouTube rate-limits caption requests (HTTP 429 after about
+eight in a row) and some videos need a PO token the android/ios clients do not have; for those, read the
+transcript panel in Chrome or try the same event's other upload.
+
 ### 5. Log
 
 Append to `issues.md` anything found broken, and to `agent-runs.md` a row for any sweep agent, with its
@@ -212,7 +238,7 @@ VALIDATE: give every agent and X finding to ONE Sonnet agent (model sonnet) that
 
 INTEGRATE: give the validated set to ONE Opus agent (model opus) to place it (timeline with `track`, procedural.filings rows as observations only, tracks status lines, Discourse themes/media/voices roster) and to convert passed deadlines per the deadline-conversion rule. Bump `meta.newsCapture` only when the dockets were actually swept, `meta.commentaryCapture` when commentary was added. Every displayed quote needs its evidence entry.
 
-GATES (all must pass): node tools/check-staleness.mjs; node tools/build-llms.mjs; node tools/build-seo.mjs; node tools/build-docket-pages.mjs; node tools/stamp-assets.mjs; node --test tests/*.test.mjs; node tools/verify-quotes.mjs; python3 tools/extract-abeyance-docs.py --check; then serve docs/ on 127.0.0.1:8131 and run the REFRESH.md console check (or tools/uat-playwright.mjs).
+GATES (all must pass): node tools/check-staleness.mjs; node tools/build-llms.mjs; node tools/build-seo.mjs; node tools/build-docket-pages.mjs; node tools/verify-record.mjs; node tools/build-record-data.mjs; node tools/stamp-assets.mjs; node --test tests/*.test.mjs; node tools/verify-quotes.mjs; python3 tools/extract-abeyance-docs.py --check; then serve docs/ on 127.0.0.1:8131 and run the REFRESH.md console check (or tools/uat-playwright.mjs).
 
 FINISH: update REFRESH.md (queue, When-to-run table, Learned), issues.md and agent-runs.md (agents and token use). Commit in small focused commits with plain messages, and never add Co-Authored-By or "Generated with" lines. Push the branch and open a PR. Do NOT merge; the user reviews. End with a short summary of what changed, what is still open, and the PR link.
 
@@ -231,6 +257,15 @@ After a refresh that adds URLs, optionally inspect one new URL in Search Console
 indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
 
 ## Gotchas learned the hard way
+
+- **YouTube's "en" auto-caption track can be a machine TRANSLATION.** When a video lists many `*-orig` tracks, plain
+  `en` is translated text ("Novaya England", "the slaughterhouse case" for Trump v. Slaughter), and every quote from
+  it is something nobody said. The strict verifier passed all 29 such quotes, because they were verbatim to the
+  wrong text; an independent accuracy reviewer caught it. `fetch-video-transcripts.py` now takes `en-orig` and writes
+  the track into each header; check the header before extracting from any transcript.
+- **A verifier proves the quote is there, not that the tenet is true.** Round 1 found 11 tenets that overstated
+  their quotes ("would expect to grant" as "promises", PJM citing reports as PJM's forecast, a supporter's quote
+  under an against-tenet). Keep a reader who re-reads each quote in context in every refresh that adds tenets.
 
 - **When a search agent reports a PDF as "unreadable", fetch it yourself before dropping it.** On 2026-11-02 the
   news agent flagged two pjm.com PDFs as snippet-only because WebFetch could not parse them; `curl` plus PyMuPDF

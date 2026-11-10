@@ -647,3 +647,15 @@ Recommended next steps, in order:
   as an actual test rather than a manual habit.
 
 - **Medium** · Make `tools/extract-abeyance-docs.py` merge into the existing manifest instead of regenerating it, and add the `-001` sub-dockets to `tools/elibrary-sweep.js` (2026-10-08).
+
+## From the 2026-11-09 refresh (Filings and Commissioners tabs)
+
+- **High:** two commissioner videos still need a transcript: the Jul 22 Senate ENR hearing (HzOp-H7VpCQ) and
+  LaCerte's WIRES keynote (dEisTPju8E0) both need a PO token; try the PBS upload of the hearing (OlSI8MGoark).
+- **High:** validate and ship the Nov 2 to Nov 9 news findings (Rosner at DERVOS Nov 5, NERC's computational-load
+  standards Oct 26, ICF on the backstop refiling, the Nov 3 midterms) through the Sonnet validation pass.
+- **Medium:** read SPP's Nov 6 filing (ER27-432, Schedule 15 and Attachment T for SPP West) and decide whether
+  it belongs on the show-cause track.
+- **Medium:** add tenets for documents already in the corpus but not on the Filings tab (the DOE §403 letter,
+  the CEBA/DCC letter, PJM's Nov 5 MC materials once posted).
+- **Low:** deep links to a single proceeding or filer on the Filings tab (`#filings/miso-lars?doc=...`).

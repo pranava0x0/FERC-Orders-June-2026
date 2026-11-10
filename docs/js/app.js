@@ -414,30 +414,8 @@
   }
 
   /* ---- TAB: Overview (stats + at-a-glance + background) ---- */
-  function renderOverview() {
-    // The two deadline cards read as forever-pending until they say where the clock actually is. State
-    // comes from the same today-comparison the procedural board uses, so the three never disagree.
-    var stats = '<div class="kpis">' + D.kpis.map(function (k) {
-      var state = "";
-      if (k.step) {
-        var w = pmStepWhen(k.step);
-        if (w) state = '<div class="kpi-state ' + (w.flag === "Passed" ? "past" : "upcoming") + '">' +
-          esc(w.flag) + ' <span class="mono">' + esc(w.when) + "</span></div>";
-      }
-      return '<div class="kpi' + (k.deadline ? " deadline" : "") + '"><div class="v">' + esc(k.value) +
-        '</div><div class="l">' + esc(k.label) + '</div><div class="s">' + esc(k.sub) + "</div>" + state + "</div>";
-    }).join("") + "</div>";
-
-    var m = D.meta;
-    var glance = '<dl class="glance">' +
-      "<div><dt>Authority</dt><dd>" + esc(m.authority) + "</dd></div>" +
-      '<div><dt>Items &amp; dockets</dt><dd class="mono">' + esc(m.items) + "</dd></div>" +
-      '<div><dt>Reporter cite</dt><dd class="mono">' + esc(m.citeRange) + "</dd></div>" +
-      "<div><dt>Commission</dt><dd>" + esc(m.commissioners) + "</dd></div>" +
-      '<div><dt>As of</dt><dd class="mono">' + esc(m.capture) + "</dd></div>" +
-      "</dl>";
-
-    var commish = "";
+  // The June 18 concurring statements: lived on the Overview until the Commissioners tab (2026-11-09).
+  function renderJuneStatements() {
     if (D.commissioners && D.commissioners.length) {
       // expandable themed read of each statement (themes + verbatim quotes), shown when authored.
       // Written quotes are verbatim from the order text; spoken quotes are from the open-meeting
@@ -462,28 +440,53 @@
           (c.summary ? '<p class="commish-sum">' + esc(c.summary) + "</p>" : "") + blocks + srcs + "</details>";
       };
       var cards = D.commissioners.map(function (c) {
-        return '<article class="commish-rowcard"><div class="commish"><div class="commish-head"><span class="commish-name">' + esc(c.name) +
+        return '<article class="commish-rowcard" data-key="' + esc(c.key) + '"><div class="commish"><div class="commish-head"><span class="commish-name">' + esc(c.name) +
           '</span><span class="commish-role">' + esc(c.role) + '</span><span class="commish-tag">' + esc(c.short) + "</span></div>" +
           '<p class="commish-gist">' + esc(c.gist) + "</p>" +
           '<div class="commish-quote">“…' + esc(c.quote) + '…”' + commissionerQuoteCite(c, c.quotePg) + "</div></div>" + themed(c) + "</article>";
       }).join("");
-      commish = '<span id="commish-h" class="jump-anchor"></span>' + head("What each commissioner emphasized",
-        "All five joined every order unanimously; their concurring statements diverge in emphasis. Each row opens into that commissioner’s themes and page-cited quotes, without changing the layout of the other commissioners.") +
+      return '<span id="commish-h" class="jump-anchor"></span>' + head("June 18: what each commissioner emphasized",
+        "All five joined every order. Their concurring statements diverge in emphasis.") +
         '<div class="commish-list">' + cards + "</div>";
     }
+    return "";
+  }
+
+  function renderOverview() {
+    // The two deadline cards read as forever-pending until they say where the clock actually is. State
+    // comes from the same today-comparison the procedural board uses, so the three never disagree.
+    var stats = '<div class="kpis">' + D.kpis.map(function (k) {
+      var state = "";
+      if (k.step) {
+        var w = pmStepWhen(k.step);
+        if (w) state = '<div class="kpi-state ' + (w.flag === "Passed" ? "past" : "upcoming") + '">' +
+          esc(w.flag) + ' <span class="mono">' + esc(w.when) + "</span></div>";
+      }
+      return '<div class="kpi' + (k.deadline ? " deadline" : "") + '"><div class="v">' + esc(k.value) +
+        '</div><div class="l">' + esc(k.label) + '</div><div class="s">' + esc(k.sub) + "</div>" + state + "</div>";
+    }).join("") + "</div>";
+
+    var m = D.meta;
+    var glance = '<dl class="glance">' +
+      "<div><dt>Authority</dt><dd>" + esc(m.authority) + "</dd></div>" +
+      '<div><dt>Items &amp; dockets</dt><dd class="mono">' + esc(m.items) + "</dd></div>" +
+      '<div><dt>Reporter cite</dt><dd class="mono">' + esc(m.citeRange) + "</dd></div>" +
+      "<div><dt>Commission</dt><dd>" + esc(m.commissioners) + "</dd></div>" +
+      '<div><dt>As of</dt><dd class="mono">' + esc(m.capture) + "</dd></div>" +
+      "</dl>";
 
     // Measured 2026-10-19 (tools/uat-playwright.mjs): the filing matrix sat 7.9 screens down a phone and
     // the commissioner statements 15, with nothing above the fold pointing at either. The jump row is
     // four in-page buttons (not hash links, which the tab router would read as a tab), and the status
     // strip moves above the summary because it is the one part of this tab that changes every sweep.
-    var jumps = [["#stand-h", "Where things stand"], ["#proc-h", "The clock"], ["#fm-h", "Filing matrix"], ["#commish-h", "Commissioners"]];
+    var jumps = [["#stand-h", "Where things stand"], ["#proc-h", "The clock"], ["#fm-h", "Filing matrix"]];
     var jumpRow = '<nav class="jump-row" aria-label="On this page">' + jumps.map(function (j) {
       return '<button type="button" class="jump-btn" data-jump="' + j[0] + '">' + esc(j[1]) + "</button>";
     }).join("") + "</nav>";
     return head("Overview", m.subtitle) + jumpRow +
       renderStandStrip() +
       '<div class="overview-bg">' + paras(m.summary) + "</div>" +
-      stats + renderProcedural() + glance + commish;
+      stats + renderProcedural() + glance;
   }
 
   // "Where things stand": one line per track, generated from the registry so there is no second copy of
@@ -1636,17 +1639,224 @@
       ". Independent analysis; not affiliated with FERC or DOE.</em></p>";
   }
 
+  /* ---- TAB: Filings (orders and filings since June, one line per position, quoted with its page) ---- */
+  // Data: window.FERC_RECORD.groups, baked by tools/build-record-data.mjs from sources/filings/tenets.json,
+  // every quote proven on its page by tools/verify-record.mjs. Loaded on first open (loadLazy).
+  var SIDE_LABEL = { "for": "Supports", against: "Opposes", mixed: "Conditions", neutral: "Neutral" };
+  function fmtSecs(s) {
+    var h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60;
+    return (h ? h + ":" + (m < 10 ? "0" : "") : "") + m + ":" + (x < 10 ? "0" : "") + x;
+  }
+  function atSecs(at) {
+    var p = String(at || "").split(":").map(Number);
+    return p.length === 3 ? p[0] * 3600 + p[1] * 60 + p[2] : p.length === 2 ? p[0] * 60 + p[1] : 0;
+  }
+  function slugify(x) { return String(x).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
+  function renderFilings() {
+    var R = window.FERC_RECORD;
+    if (!R || !R.groups) return head("Filings and orders", "The filings record did not load (js/record-data.js).");
+    var nav = '<nav class="jump-row fg-nav" aria-label="Proceedings">' + R.groups.map(function (g) {
+      return '<button type="button" class="jump-btn" data-jump="#fg-' + esc(g.id) + '">' + esc(g.short || g.title) + "</button>";
+    }).join("") + "</nav>";
+    var groups = R.groups.map(function (g) {
+      var byDoc = {}, sides = {}, dockets = {}, filers = [];
+      g.docs.forEach(function (d) {
+        byDoc[d.slug] = d; if (d.side) sides[d.side] = 1; if (d.docket) dockets[d.docket] = 1;
+        if (filers.indexOf(d.filer) < 0) filers.push(d.filer);
+      });
+      // A side tag only means something where filers disagree; on a lone complaint it reads "Supports" itself.
+      var showSides = Object.keys(sides).length > 1;
+      var multiDocket = Object.keys(dockets).length > 1;
+      var cite = function (d, pg) {
+        return esc(d.filer + " " + d.kind + ", " + fmtISO(d.date)) +
+          (multiDocket && d.docket ? ' · <span class="mono">' + esc(d.docket) + "</span>" + (d.rto && d.rto !== d.filer ? " (" + esc(d.rto) + ")" : "") : "") +
+          (pg ? ' · <span class="mono">p. ' + pg + "</span>" : "") +
+          ' · <a href="' + esc(eli(d.accession)) + '" target="_blank" rel="noopener noreferrer" aria-label="' +
+          esc(d.filer + " " + d.kind + (pg ? ", page " + pg : "") + ", filing on FERC eLibrary") + '">eLibrary filing <span class="ext" aria-hidden="true">↗</span></a>';
+      };
+      var tenets = g.tenets.map(function (t) {
+        var side = showSides && t.side ? '<span class="side-tag side-' + esc(t.side) + '">' + esc(SIDE_LABEL[t.side] || t.side) + "</span>" : "";
+        // The same sentence in six orders is one quote with six citations, not six identical blocks.
+        var seen = {}, order = [];
+        t.quotes.forEach(function (q) {
+          var k = q.q.replace(/\s+/g, " ").trim().toLowerCase();
+          if (!seen[k]) { seen[k] = { q: q.q, refs: [] }; order.push(k); }
+          seen[k].refs.push(q);
+        });
+        var fs = {};
+        var qs = order.map(function (k) {
+          var e = seen[k];
+          var who = e.refs.map(function (q) { var d = byDoc[q.d] || {}; fs[d.filer] = 1; return d.filer; });
+          return '<li data-filers="' + esc(who.join("|")) + '"><blockquote>“' + esc(e.q) + '”</blockquote>' + e.refs.map(function (q) {
+            return '<span class="tq-cite">' + cite(byDoc[q.d] || {}, q.pg) + "</span>";
+          }).join("") + "</li>";
+        }).join("");
+        return '<li class="tenet" data-filers="' + esc(Object.keys(fs).join("|")) + '"><p class="tenet-t">' + side + esc(t.tenet) + '</p><ul class="tq">' + qs + "</ul></li>";
+      }).join("");
+      var chips = filers.length > 2 ? '<div class="who-chips fg-filers" role="group" aria-label="Show one filer">' +
+        '<button type="button" class="who-chip" data-filer="" aria-pressed="true">All</button>' +
+        filers.map(function (f) {
+          return '<button type="button" class="who-chip" data-filer="' + esc(f) + '" aria-pressed="false">' + esc(f) + "</button>";
+        }).join("") + '</div><p class="fg-live" role="status" aria-live="polite"></p>' : "";
+      var rows = g.docs.map(function (d) {
+        return "<tr><td class=\"mono\">" + esc(fmtISO(d.date)) + "</td><td>" + esc(d.filer) + "</td><td>" + esc(d.kind) +
+          (showSides && d.side ? ' <span class="side-tag side-' + esc(d.side) + '">' + esc(SIDE_LABEL[d.side] || d.side) + "</span>" : "") +
+          '</td><td class="mono">' + esc(d.docket || g.docket) + '</td><td class="mono">' + (d.pages ? d.pages + " pp" : "n/a") + '</td><td><a href="' + esc(eli(d.accession)) +
+          '" target="_blank" rel="noopener noreferrer"><span class="mono">' + esc(d.accession) + '</span> <span class="ext" aria-hidden="true">↗</span></a></td></tr>';
+      }).join("");
+      var roster = '<details class="fg-docs"><summary>Documents read <span class="mono">' + g.docs.length + "</span></summary>" +
+        '<div class="table-wrap"><table class="fg-table"><thead><tr><th>Date</th><th>Filer</th><th>Type</th><th>Docket</th><th>Length</th><th>Accession</th></tr></thead><tbody>' +
+        rows + "</tbody></table></div></details>";
+      return '<details class="fgroup" id="fg-' + esc(g.id) + '"><summary class="fg-sum">' +
+        '<span class="fg-h" role="heading" aria-level="3">' + esc(g.title) + ' <span class="fg-docket mono">' + esc(g.docket) + "</span></span>" +
+        '<span class="fg-n mono">' + g.tenets.length + " points · latest " + esc(fmtISO(g.newest)) + "</span></summary>" +
+        (g.about ? '<p class="fg-about">' + esc(g.about) + "</p>" : "") +
+        (g.status ? '<p class="fg-status">' + esc(g.status) + "</p>" : "") +
+        (showSides && g.sideOf ? '<p class="fg-sideof">Supports and Opposes refer to ' + esc(g.sideOf) + ".</p>" : "") + chips +
+        '<ol class="tenets">' + tenets + "</ol>" + roster + "</details>";
+    }).join("");
+    return head("Filings and orders since June",
+      "What FERC decided and what the parties argued in " + R.groups.length + " proceedings since the June 18 orders, newest first. Each point is this site's one-line reading; the quoted text is verbatim from the document.") +
+      nav + groups;
+  }
+  function applyFiler(grp, filer) {
+    grp.querySelectorAll(".fg-filers .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-filer") === filer)); });
+    var n = 0;
+    grp.querySelectorAll(".tenet").forEach(function (t) {
+      var on = !filer || t.getAttribute("data-filers").split("|").indexOf(filer) >= 0;
+      t.hidden = !on; if (on) n++;
+      // Inside a shown tenet, keep only the chosen filer's quotes.
+      t.querySelectorAll(".tq > li").forEach(function (li) { li.hidden = !!filer && li.getAttribute("data-filers").split("|").indexOf(filer) < 0; });
+    });
+    var live = grp.querySelector(".fg-live");
+    if (live) live.textContent = filer ? n + (n === 1 ? " point" : " points") + " from " + filer : "";
+  }
+  var pendingFiling = null, filingHash = "";
+  function routeFiling(rest) {
+    var m = String(rest || "").match(/^([a-z0-9-]+)(?:\/(.+))?$/);
+    var grp = m && document.getElementById("fg-" + m[1]);
+    if (!grp) return;
+    filingHash = rest;
+    grp.open = true;
+    // A route with no filer means the whole proceeding: clear any filter a previous route left behind.
+    var chip = m[2] && [].slice.call(grp.querySelectorAll(".fg-filers .who-chip")).filter(function (c) { return slugify(c.getAttribute("data-filer")) === m[2]; })[0];
+    if (grp.querySelector(".fg-filers")) applyFiler(grp, chip ? chip.getAttribute("data-filer") : "");
+    grp.scrollIntoView({ block: "start" });
+  }
+  function wireFilings() {
+    var panel = panelFor("filings");
+    panel.addEventListener("click", function (ev) {
+      var b = ev.target.closest && ev.target.closest(".fg-filers .who-chip");
+      if (!b) return;
+      var grp = b.closest(".fgroup"), filer = b.getAttribute("data-filer");
+      applyFiler(grp, filer);
+      filingHash = grp.id.slice(3) + (filer ? "/" + slugify(filer) : "");
+      if (history.replaceState) history.replaceState(null, "", "#filings/" + filingHash);
+    });
+    if (pendingFiling) { routeFiling(pendingFiling); pendingFiling = null; }
+  }
+
+  /* ---- TAB: Commissioners (spoken record since June, then the June 18 concurrences) ---- */
+  function commishName(key) {
+    var c = (D.commissioners || []).filter(function (x) { return x.key === key; })[0];
+    return c ? c.name : key;
+  }
+  // Machine captions mangle the proper nouns that matter most here. Fixed for display only, in brackets so the
+  // reader sees the edit; the verified text in chapters.json keeps the caption's own words.
+  var CAPTION_FIX = [[/\bPGM\b/g, "[PJM]"], [/\bFK\b/g, "[FERC]"], [/\bFurk\b/g, "[FERC]"], [/\bNERK\b|\bNerk\b/g, "[NERC]"],
+    [/\btaker pay\b/g, "[take-or-pay]"], [/\bADTTs\b/g, "[ATTs]"], [/\bnew trench of\b/g, "new [tranche] of"]];
+  function captionText(t) { CAPTION_FIX.forEach(function (f) { t = t.replace(f[0], f[1]); }); return t; }
+  var commishWho = "all";
+  var SQ_CAP = 3; // quotes shown per video before "All N quotes"; a commissioner filter shows all of theirs
+  function renderCommissioners() {
+    var R = window.FERC_RECORD;
+    var keys = (D.commissioners || []).map(function (c) { return c.key; });
+    var chips = '<div class="who-chips" role="group" aria-label="Show one commissioner">' +
+      [["all", "All five"]].concat(keys.map(function (k) { return [k, commishName(k).split(" ").pop()]; })).map(function (p) {
+        return '<button type="button" class="who-chip" data-who="' + p[0] + '" aria-pressed="' + (p[0] === commishWho) + '">' + esc(p[1]) + "</button>";
+      }).join("") + "</div>";
+    var vids = (R && R.videos) || [];
+    var appear = vids.map(function (v) {
+      var url = "https://www.youtube.com/watch?v=" + v.id;
+      var qs = v.quotes.slice().sort(function (a, b) { return atSecs(a.at) - atSecs(b.at); }).map(function (q) {
+        var s = atSecs(q.at);
+        return '<li class="sq" data-who="' + esc(q.who) + '">' + (q.tenet ? '<p class="sq-t">' + esc(q.tenet) + "</p>" : "") +
+          "<blockquote>“" + esc(captionText(q.q)) + '”</blockquote><span class="sq-cite">' + esc(q.whoName || commishName(q.who)) +
+          ' · <a href="' + esc(url + "&t=" + s + "s") + '" target="_blank" rel="noopener noreferrer" aria-label="Play ' + esc(v.event || v.title) + " at " + fmtSecs(s) + '">▶ <span class="mono">' + fmtSecs(s) +
+          "</span></a></span></li>";
+      }).join("");
+      var toc = v.chapters.length ? '<details class="vtoc"><summary>Contents <span class="mono">' + v.chapters.length + "</span></summary><ol>" +
+        v.chapters.map(function (c) {
+          var s = atSecs(c.at);
+          return '<li><a class="mono" href="' + esc(url + "&t=" + s + "s") + '" target="_blank" rel="noopener noreferrer">' + fmtSecs(s) + "</a> " + esc(c.title) +
+            (c.who ? ' <span class="vtoc-who">' + esc(commishName(c.who).split(" ").pop()) + "</span>" : "") + "</li>";
+        }).join("") + "</ol></details>" : "";
+      var dur = v.duration_s ? ' · <span class="mono">' + fmtSecs(v.duration_s) + "</span>" : "";
+      return '<article class="appear" data-speakers="' + esc((v.speakers || []).join(" ")) + '"><h3><span class="mono appear-d">' + esc(fmtISO(v.date)) + "</span> " +
+        '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(v.event || v.title) + ' <span class="ext" aria-hidden="true">↗</span></a></h3>' +
+        '<p class="appear-meta">' + esc(v.channel) + dur + " · machine captions</p>" +
+        (qs ? '<ul class="sqs">' + qs + "</ul>" : "") +
+        (v.quotes.length > SQ_CAP ? '<button type="button" class="sq-more" aria-expanded="false">All ' + v.quotes.length + " quotes</button>" : "") +
+        toc + "</article>";
+    }).join("");
+    var spoken = vids.length ? '<section class="appears" id="appears">' + appear + '<p class="appears-none" hidden>Nothing from this commissioner in the videos read so far.</p></section>'
+      : '<p class="cm-loading">The video record did not load (js/record-data.js).</p>';
+    return head("Commissioners", "FERC has five commissioners; Laura Swett is Chairman. What they have said in public since the June 18 orders, newest first, then the written statements each attached to those orders. Spoken quotes are machine captions and can contain transcription errors.") +
+      chips + '<p class="sq-jump"><button type="button" class="jump-btn-plain" data-jump="#commish-h">Jump to the June 18 written statements ↓</button></p>' +
+      spoken + renderJuneStatements();
+  }
+  function wireCommissioners() {
+    var panel = panelFor("commissioners");
+    var apply = applyWho = function (who) {
+      commishWho = who;
+      panel.querySelectorAll(".who-chip").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-who") === who)); });
+      var shown = 0;
+      panel.querySelectorAll(".appear").forEach(function (a) {
+        var any = 0;
+        a.querySelectorAll(".sq").forEach(function (li) {
+          var on = who === "all" || li.getAttribute("data-who") === who;
+          li.hidden = !on; if (on) any++;
+        });
+        var on = who === "all" || any > 0;
+        a.hidden = !on; if (on) shown++;
+      });
+      panel.classList.toggle("who-one", who !== "all");
+      var none = panel.querySelector(".appears-none");
+      if (none) none.hidden = shown > 0;
+      panel.querySelectorAll(".commish-rowcard").forEach(function (c) {
+        c.hidden = who !== "all" && c.getAttribute("data-key") !== who;
+      });
+      var body = "#commissioners" + (who === "all" ? "" : "/" + who);
+      if (history.replaceState) history.replaceState(null, "", body);
+    };
+    panel.addEventListener("click", function (ev) {
+      var b = ev.target.closest && ev.target.closest(".who-chip");
+      if (b) apply(b.getAttribute("data-who"));
+      var m = ev.target.closest && ev.target.closest(".sq-more");
+      if (m) {
+        var open = m.getAttribute("aria-expanded") !== "true";
+        m.setAttribute("aria-expanded", String(open));
+        m.closest(".appear").classList.toggle("sq-all", open);
+        m.textContent = open ? "Fewer quotes" : "All " + m.closest(".appear").querySelectorAll(".sq").length + " quotes";
+      }
+    });
+    apply(pendingWho || commishWho);
+    pendingWho = null;
+  }
+  var pendingWho = null, applyWho = null;
+
   /* ---- tablist ---- */
-  var TABS = ["overview", "timeline", "reforms", "dockets", "comments", "news"];
-  var renderers = { overview: renderOverview, timeline: renderTimeline, reforms: renderReforms, dockets: renderDockets, comments: renderComments, news: renderNews };
-  var afterRender = { comments: wireComments, timeline: wireTimeline };
+  var TABS = ["overview", "timeline", "reforms", "dockets", "filings", "commissioners", "comments", "news"];
+  var renderers = { overview: renderOverview, timeline: renderTimeline, reforms: renderReforms, dockets: renderDockets, filings: renderFilings, commissioners: renderCommissioners, comments: renderComments, news: renderNews };
+  var afterRender = { comments: wireComments, timeline: wireTimeline, filings: wireFilings, commissioners: wireCommissioners };
   // Overview jump row: delegated once, so it works whichever render pass drew the buttons. Buttons, not
   // hash links, because the router owns location.hash and would read "#fm-h" as a tab name.
   document.addEventListener("click", function (ev) {
-    var b = ev.target && ev.target.closest ? ev.target.closest(".jump-btn") : null;
+    var b = ev.target && ev.target.closest ? ev.target.closest(".jump-btn, .jump-btn-plain") : null;
     if (!b) return;
     var t = document.querySelector(b.getAttribute("data-jump"));
     if (!t) return;
+    if (t.tagName === "DETAILS") t.open = true;
     t.scrollIntoView({ block: "start" });
     if (!t.hasAttribute("tabindex")) t.setAttribute("tabindex", "-1");
     t.focus({ preventScroll: true });
@@ -1708,6 +1918,19 @@
       else if (applyTimelineTrack) applyTimelineTrack(track); // already wired: set live state now
       activate("timeline", focus);
       scrollToTabsTop();
+    } else if (tab === "filings" && rest) {
+      if (!rendered.filings) pendingFiling = rest;               // wireFilings consumes and clears it
+      // Already rendered: settle the route before activate() writes the hash, or the URL keeps the old one.
+      else if (document.getElementById("fg-" + String(rest).split("/")[0])) filingHash = rest;
+      activate("filings", focus);
+      if (rendered.filings) routeFiling(rest);
+    } else if (tab === "commissioners") {
+      var who = /^(swett|rosner|see|chang|lacerte)$/.test(rest) ? rest : "all";
+      if (!rendered.commissioners) pendingWho = who;            // wireCommissioners consumes and clears it
+      else if (applyWho) applyWho(who);
+      else commishWho = who;
+      activate("commissioners", focus);
+      scrollToTabsTop();
     } else {
       activate(tab, focus);
       scrollToTabsTop();
@@ -1723,29 +1946,47 @@
 
   // comments-data.js is ~40% of the page's bytes and only the Comments tab reads it, so index.html
   // prefetches it at idle (<link id="cm-data">, stamped like any asset) and it is executed here on first
-  // open. The render waits for it; if the tab was left before it arrived, the next activation renders
-  // synchronously instead, so wireComments never writes a Comments hash over another tab's.
-  var commentsLoading = false;
-  function loadComments(panel) {
-    panel.innerHTML = '<p class="cm-loading" role="status">Loading the comment record…</p>';
-    if (commentsLoading) return;
-    var link = document.getElementById("cm-data");
-    if (!link) { panel.innerHTML = renderers.comments(); rendered.comments = true; return; }
-    commentsLoading = true;
+  // open. record-data.js (Filings and Commissioners) works the same way. The render waits for the script;
+  // if the tab was left before it arrived, the next activation renders synchronously instead, so
+  // wireComments never writes a Comments hash over another tab's.
+  var LAZY = {
+    comments: { link: "cm-data", ready: function () { return !!window.FERC_COMMENTS; }, what: "the comment record" },
+    filings: { link: "rec-data", ready: function () { return !!window.FERC_RECORD; }, what: "the filings record" },
+    commissioners: { link: "rec-data", ready: function () { return !!window.FERC_RECORD; }, what: "the commissioners' record" },
+  };
+  var lazyLoading = {};
+  function renderInto(name, panel) {
+    panel.innerHTML = renderers[name](); rendered[name] = true;
+    if (afterRender[name]) afterRender[name]();
+  }
+  function loadLazy(name, panel) {
+    var spec = LAZY[name];
+    panel.innerHTML = '<p class="cm-loading" role="status">Loading ' + spec.what + "…</p>";
+    var link = document.getElementById(spec.link);
+    if (!link) { renderInto(name, panel); return; }
+    if (lazyLoading[spec.link]) { lazyLoading[spec.link].push(name); return; }
+    lazyLoading[spec.link] = [name];
     var s = document.createElement("script");
     s.src = link.getAttribute("href");
     s.onload = function () {
-      commentsLoading = false;
-      if (rendered.comments || panel.hidden) return;
-      panel.innerHTML = renderers.comments(); rendered.comments = true; wireComments();
+      var waiting = lazyLoading[spec.link]; lazyLoading[spec.link] = null;
+      waiting.forEach(function (n) {
+        var p = panelFor(n);
+        if (!rendered[n] && !p.hidden) renderInto(n, p);
+      });
     };
     // A dropped fetch must not leave the tab dead for the rest of the session: offer a retry and leave
-    // `rendered.comments` false so the next activation tries again too.
+    // `rendered[name]` false so the next activation tries again too.
     s.onerror = function () {
-      commentsLoading = false;
+      var waiting = lazyLoading[spec.link] || [name]; lazyLoading[spec.link] = null;
       s.remove();
-      panel.innerHTML = '<p class="cm-loading" role="status">The comment record did not load. <button type="button" class="cm-retry">Try again</button></p>';
-      panel.querySelector(".cm-retry").addEventListener("click", function () { loadComments(panel); });
+      // Every tab that queued on this script hears about the failure, not just the one that started it.
+      waiting.forEach(function (n) {
+        var p = panelFor(n), what = LAZY[n].what;
+        p.innerHTML = '<p class="cm-loading" role="status">' + what.charAt(0).toUpperCase() + what.slice(1) +
+          ' did not load. <button type="button" class="cm-retry">Try again</button></p>';
+        p.querySelector(".cm-retry").addEventListener("click", function () { loadLazy(n, p); });
+      });
     };
     document.head.appendChild(s);
   }
@@ -1761,8 +2002,8 @@
       // click on the tab does not replay a stale route.
       if (!sel && t === "comments" && !rendered.comments) pendingCommentsRoute = null;
       if (sel) {
-        if (!rendered[t] && t === "comments" && !window.FERC_COMMENTS) loadComments(panel);
-        else if (!rendered[t]) { panel.innerHTML = renderers[t](); rendered[t] = true; if (afterRender[t]) afterRender[t](); }
+        if (!rendered[t] && LAZY[t] && !LAZY[t].ready()) loadLazy(t, panel);
+        else if (!rendered[t]) renderInto(t, panel);
         if (focus) tab.focus();
       }
     });
@@ -1772,6 +2013,14 @@
     // so it is the only thing to read. Preferring the pending handoff instead let a consumed-but-uncleared
     // value outvote the live filter, and the URL then disagreed with the rail.
     if (name === "timeline") writeTimelineHash(timelineTrack);
+    else if (name === "filings") {
+      var fb = "#filings" + ((pendingFiling || filingHash) ? "/" + (pendingFiling || filingHash) : "");
+      if (history.replaceState) history.replaceState(null, "", fb); else location.hash = fb.slice(1);
+    }
+    else if (name === "commissioners") {
+      var body = "#commissioners" + ((pendingWho || commishWho) === "all" ? "" : "/" + (pendingWho || commishWho));
+      if (history.replaceState) history.replaceState(null, "", body); else location.hash = body.slice(1);
+    }
     else if (name !== "comments") {
       if (history.replaceState) history.replaceState(null, "", "#" + name);
       else location.hash = name;

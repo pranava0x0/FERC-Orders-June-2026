@@ -3,11 +3,32 @@
 Learned-pathways log for the `ferc-uat` skill (`~/.claude/skills/ferc-uat/SKILL.md`). Do not
 delete the "Learned pathways log" section below — it's the skill's memory across runs.
 
-_Last run: 2026-11-02_
+_Last run: 2026-11-09_
 
 ---
 
 ## Learned pathways log
+
+### Run 2026-11-09 (headless harness at 375, 768 and 1280; same session as the Filings and Commissioners tabs)
+
+**Context:** First run with a tablet viewport and eight tabs. Playwright borrowed from another project with a
+cached headless shell via the new `PW_CHROME` (the borrowed 1.58/1.64 builds wanted browser builds not on disk).
+
+**What was tested:** 36 panel checks and 42 goal measurements (14 goals × 3 viewports), before and after
+collapsing the Filings tab and adding the filters.
+
+**What was discovered:**
+- Tab bar: 8 tabs needed ~1,160 px; at 1,024 Discourse was off-screen, and the phone grid overflowed 66 px.
+  Fixed (issues.md 2026-11-09).
+- Filings on a phone: ~100 screens with all proceedings open → 6.5 collapsed. Google's LARS position: 7.2 → 3
+  taps with the filer chip. FERC's first Oct 9 holding: 2. Newest spoken quote: 1. One commissioner's quotes: 2.
+  A video's contents: 3.6 phone, 2.7 tablet, 2.5 desktop.
+- The June 18 statements moved off the Overview: goal d went 1 → 4.6 on a phone until a jump button was added
+  on the Commissioners tab.
+- 0 console errors, 0 failed requests, no overflow, no `undefined`/`NaN` at any width.
+
+**Paths NOT yet tested (carry over):** keyboard-only through the new filter chips; a deep link to
+`#commissioners/<key>` from a cold load on a slow connection (the lazy load path); the day-of-deadline boundary.
 
 ### Run 2026-11-02 (headless harness on the laptop, plus a throttled load-time pass; same session as the Nov 2 refresh)
 
