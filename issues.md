@@ -96,6 +96,8 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Fixed
 
+- **2026-11-10 · UAT · #27.** The browser runner now enables Chromium’s sandbox on both the installed stable Chrome channel and an explicit executable. Removed the stale hardcoded fallback.
+
 - **2026-10-20 · test/env · two `cli-silent-success` tests failed on macOS only.** The test copies each
   tool into `os.tmpdir()`, which on macOS is `/var/...`, a symlink to `/private/var/...`. Node resolves
   the entry script's `import.meta.url` to the real path while `process.argv[1]` keeps the symlinked one,

@@ -947,6 +947,11 @@ window.FERC_DATA = (function () {
       note: "Opened in a logged-in browser; timestamp 2026-10-21 13:21 UTC. The post quotes no other post and names no docket. Text in sources/news-evidence.json.",
     },
     // --- 2026-11-09 sweep -------------------------------------------------------------------------
+    elibrary1110: {
+      label: "FERC eLibrary docket sheets checked Nov 10", short: "FERC docket sheets", org: "FERC eLibrary",
+      tier: "secondary", url: "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-67&sub_docket=000",
+      undated: true, captured: "2026-11-10", note: "Nov 9 to Nov 10 inclusive: all rows checked on the six main show cause sheets (176, 152, 105, 174, 116 and 111 records in docket order). None filed in this window. This check covers these sheets only.",
+    },
     elibrary1109: {
       label: "eLibrary docket sheets and general search, read Nov 9, 2026",
       org: "FERC eLibrary (read in an authenticated browser)",
@@ -956,6 +961,35 @@ window.FERC_DATA = (function () {
       published: "2026-11-09",
       captured: "2026-11-09",
       note: "Every row filed from Oct 29 forward on EL26-67-000 to EL26-72-000, EL25-49-000 and -002, AD26-7-000, AD26-8-000, ER26-3380-001, EL26-108-000, ER27-330-000, ER26-3515-000 and -001 and ER27-25-000, plus a general full-text search for \"large load\" filed Nov 1 to Nov 9. The six §206 sheets carry only service-list updates. Filings dated Nov 9 may not be indexed yet.",
+    },
+    misolars1109: {
+      label: "MISO answer on LARS, ER27-25-000", short: "MISO answer", org: "MISO", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261109-5205", published: "2026-11-09", captured: "2026-11-10",
+      text: "sources/text/abeyance/answer-er27-25-miso.txt", note: "MISO's 30-page motion for leave to answer and answer, p. 3 and p. 29.",
+    },
+    pjmrbp1109: {
+      label: "PJM backstop §205 refiling, ER27-454-000", short: "PJM backstop refiling", org: "PJM", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261109-5216", published: "2026-11-09", captured: "2026-11-10",
+      text: "sources/text/abeyance/refiling-er27-454-pjm-backstop.txt",
+      note: "Transmittal letter, p. 2: corrects the eTariff filing code; PJM calls the proposal substantively identical to its Oct 29 filing.",
+    },
+    pjmll1109: {
+      label: "PJM compliance filing, 20261109-5217", short: "PJM compliance filing", org: "PJM", tier: "secondary",
+      url: "https://www.pjm.com/pjmfiles/directory/etariff/FercDockets/9976/20261109-er26-3515-002.pdf", published: "2026-11-09", captured: "2026-11-10",
+      text: "sources/text/abeyance/compliance-er26-3515-pjm.txt",
+      note: "Read against the original; FERC eLibrary accession 20261109-5217.",
+    },
+    ohll1109: {
+      label: "Ohio request for rehearing, 20261109-5209", short: "Ohio request for rehearing", org: "Office of the Ohio Consumers’ Counsel", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261109-5209", published: "2026-11-09", captured: "2026-11-10",
+      text: "sources/text/abeyance/rehearing-er26-3515-ohio.txt",
+      note: "Read against the original; FERC eLibrary accession 20261109-5209.",
+    },
+    cnf1110: {
+      label: "FERC combined notice, 20261110-3030", short: "FERC combined notice", org: "FERC", tier: "ferc",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261110-3030", published: "2026-11-10", captured: "2026-11-10",
+      text: "sources/text/abeyance/notice-er26-3515-1110.txt",
+      note: "Read against the original; FERC eLibrary accession 20261110-3030.",
     },
     exelon1103: {
       label: "Complaint Requesting Fast Track Processing of Exelon Corporation, EL27-11-000",
@@ -977,7 +1011,15 @@ window.FERC_DATA = (function () {
     capture: "2026-06-22",
     discourseCapture: "2026-06-29",
     wave2Capture: "2026-07-28",
-    newsCapture: "2026-11-09",
+    spotlight: {
+      title: "What did PJM file on Nov 9?",
+      answer: "PJM filed its 50 MW Large Load registry rules (ER26-3515-002) without the rejected curtailment service. It also refiled its backstop proposal under the correct §205 code (ER27-454-000). Comments on both are due Nov 30 at 5 p.m. ET. The separate show cause deadline is Nov 16.",
+      links: [
+        { label: "Registry filing", group: "pjm-large-load-definition", filer: "pjm", source: "pjmll1109", page: 2 },
+        { label: "Backstop refiling", group: "pjm-backstop", filer: "pjm", source: "pjmrbp1109" },
+      ],
+    },
+    newsCapture: "2026-11-10",
     // Newest Discourse sweep (themes, media lines, reception, voices). Distinct from newsCapture, the
     // filings and proceedings cutoff, so a commentary-only sweep never overstates when dockets were checked.
     commentaryCapture: "2026-11-02",
@@ -988,7 +1030,7 @@ window.FERC_DATA = (function () {
       "On October 23, 2025, the Department of Energy invoked its rarely used § 403 authority to direct FERC to open a rulemaking on connecting large loads (data centers, AI, advanced manufacturing) to the interstate grid (Docket RM26-4-000), and asked for final action by April 30, 2026.",
       "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.",
       "The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC issued Item E-2 (EL25-49-002), the order on rehearing that finalizes the rates and terms for the three new transmission services its PJM co-location proceeding created, the same services the six orders extend to every other region.",
-      "Where it stands on November 9, 2026, when the docket sheets for the six §206 proceedings (and their -001 sub-dockets), PJM co-location, governance, the backstop and its new refiling docket, the Oct 9 order and MISO's LARS were read again: all six §206 proceedings are still in abeyance to November 16 (SPP: November 20), and no respondent has yet filed in its show cause docket. The respondents' plans are in writing: the PJM Transmission Owners and ISO New England have each committed to a §205 filing by November 16; CAISO's Board advanced its large-load proposal on October 28 for a filing by the same date; PJM scheduled a November 5 special Members Committee to consult on a suite of §205 filings answering the show cause order and had posted no outcome by November 9; MISO is filing its reforms under §205 in separate dockets; and NYISO's stated target is December. FERC's one ruling on large-load tariff text since June came on October 9, in PJM's own §205 docket: it accepted a 50 MW Large Load definition and a Large Load Registry and rejected the curtail-first Interim Resource Adequacy Service built around them as an intrusion on state retail jurisdiction. PJM refiled its suspended backstop procurement on October 29 in a new docket, ER27-330, after FERC on October 23 moved the paper-hearing briefs to January rather than ruling on PJM's abeyance motion; seven parties have asked for rehearing or clarification of the September 29 backstop order, and FERC's November 2 notice set comments on the refiling for November 30. Vistra, and Exelon with others, have petitioned the Third Circuit for review of four orders in the PJM co-location proceeding (EL25-49). PJM governance is at the redline stage after the Members' September 30 vote, with the states opposed and the Board's filing decision unannounced. On November 3 Exelon filed a fast-track complaint (EL27-11) asking FERC to replace PJM's three-year-forward capacity auction with a prompt auction from 2030/31. The Filings tab quotes the key positions in each of these proceedings, page by page. Each of these threads has its own line under Where things stand, and the Timeline carries every earlier sweep's findings by date.",
+      "Where it stands on November 10, 2026: the six main show cause docket sheets still carry no response. The Nov 16 deadline (Nov 20 for SPP) remains separate from PJM’s Nov 9 registry filing in ER26-3515-002. The respondents' plans are in writing: the PJM Transmission Owners and ISO New England have each committed to a §205 filing by November 16; CAISO's Board advanced its large-load proposal on October 28 for a filing by the same date; PJM scheduled a November 5 special Members Committee to consult on a suite of §205 filings answering the show cause order and had posted no outcome by November 9; MISO is filing its reforms under §205 in separate dockets; and NYISO's stated target is December. FERC's one ruling on large-load tariff text since June came on October 9, in PJM's own §205 docket: it accepted a 50 MW Large Load definition and a Large Load Registry and rejected the curtail-first Interim Resource Adequacy Service built around them as an intrusion on state retail jurisdiction. PJM refiled its suspended backstop procurement on October 29 in a new docket, ER27-330, after FERC on October 23 moved the paper-hearing briefs to January rather than ruling on PJM's abeyance motion; seven parties have asked for rehearing or clarification of the September 29 backstop order, and FERC's November 2 notice set comments on the refiling for November 30. Vistra, and Exelon with others, have petitioned the Third Circuit for review of four orders in the PJM co-location proceeding (EL25-49). PJM governance is at the redline stage after the Members' September 30 vote, with the states opposed and the Board's filing decision unannounced. On November 3 Exelon filed a fast-track complaint (EL27-11) asking FERC to replace PJM's three-year-forward capacity auction with a prompt auction from 2030/31. The Filings tab quotes the key positions in each of these proceedings, page by page. Each of these threads has its own line under Where things stand, and the Timeline carries every earlier sweep's findings by date.",
       "The Timeline tab holds the dated record: the August 3 and August 9 answer periods, the August 14 abeyance orders, the August 17 partial co-location compliance, the August 21 governance comments and backstop protests, and everything since. Each entry cites the document it was read from.",
     ],
   };
@@ -1023,11 +1065,11 @@ window.FERC_DATA = (function () {
       what: "Six show cause orders on one 60-day clock. Each RTO or ISO must defend its tariff or file a fix.",
       whySeparate: "This is the main proceeding the site tracks. The other lanes run beside it, each on its own clock.",
       status: {
-        asOf: "2026-11-09",
-        line: "All six proceedings remain in abeyance and the clock has not moved since Aug 14: responses are due Nov 16, 2026 and answers Dec 16, except SPP (Nov 20 and Dec 21). One week out, no respondent has filed in its show cause docket, but four have now said or done something concrete about Nov 16. The PJM Transmission Owners (Oct 9) and ISO-NE with its transmission owners (Oct 9) committed in writing to §205 filings by that date. CAISO's Board of Governors advanced the Large Loads proposal on Oct 28, and CAISO says it will file at FERC by Nov 16. PJM did not hold the advisory Members Committee vote on its own proposal that the Aug 14 abeyance order recorded for Oct 28: the Oct 28 agenda carried no large-load item. Instead PJM posted a Nov 5 special Members Committee to consult, under Tariff section 9.2(b), on “a suite of section 205 filings” answering the show cause order. For the backstop PJM consulted on Oct 22 and filed Oct 29, “seven days prior to submitting this filing”; the same spacing would put its show cause filings no earlier than Nov 12. MISO keeps filing pieces under §205 in separate ER dockets: FERC found its August zero-injection agreement filing deficient on Oct 9, and its Oct 2 LARS proposal (ER27-25) drew support from the Arkansas and Mississippi commissions and from utilities, and protests from clean-energy groups, consumer advocates and Google on Oct 23. NYISO told FERC in June it aims to file by December, after the Nov 16 date. The six docket sheets, read row by row through Nov 9, show only the National Congress of American Indians' comments urging a moratorium on hyperscale data centers, filed in all six on Oct 26 and not read, and a service-list update. The large customers PJM's filing would govern are on record against its shape: an Oct 2 letter from the Corporate Energy Buyers Association and the Data Center Coalition, first found this sweep, asks PJM's Board either to explain why it is not directly complying with the order's 60-to-90-day study directive or to pursue a narrower response.",
+        asOf: "2026-11-10",
+        line: "All six proceedings remain in abeyance and the clock has not moved since Aug 14: responses are due Nov 16, 2026 and answers Dec 16, except SPP (Nov 20 and Dec 21). The six main docket sheets show no response through Nov 10, but four have now said or done something concrete about Nov 16. The PJM Transmission Owners (Oct 9) and ISO-NE with its transmission owners (Oct 9) committed in writing to §205 filings by that date. CAISO's Board of Governors advanced the Large Loads proposal on Oct 28, and CAISO says it will file at FERC by Nov 16. PJM did not hold the advisory Members Committee vote on its own proposal that the Aug 14 abeyance order recorded for Oct 28: the Oct 28 agenda carried no large-load item. Instead PJM posted a Nov 5 special Members Committee to consult, under Tariff section 9.2(b), on “a suite of section 205 filings” answering the show cause order. For the backstop PJM consulted on Oct 22 and filed Oct 29, “seven days prior to submitting this filing”; the same spacing would put its show cause filings no earlier than Nov 12. MISO keeps filing pieces under §205 in separate ER dockets: FERC found its August zero-injection agreement filing deficient on Oct 9, and its Oct 2 LARS proposal (ER27-25) drew support from the Arkansas and Mississippi commissions and from utilities, and protests from clean-energy groups, consumer advocates and Google on Oct 23. NYISO told FERC in June it aims to file by December, after the Nov 16 date. The six docket sheets, read row by row through Nov 9, show only the National Congress of American Indians' comments urging a moratorium on hyperscale data centers, filed in all six on Oct 26 and not read, and a service-list update. The large customers PJM's filing would govern are on record against its shape: an Oct 2 letter from the Corporate Energy Buyers Association and the Data Center Coalition, first found this sweep, asks PJM's Board either to explain why it is not directly complying with the order's 60-to-90-day study directive or to pursue a narrower response.",
       },
       next: { date: "2026-11-16", label: "Show-cause responses due after the 90-day abeyance (SPP: Nov 20)", dateNote: "moved from Aug 17 by the Aug 14 abeyance orders; SPP received 95 days rather than 90" },
-      src: ["fercPR", "fercFS", "elibrary0803", "elibrary0809", "elibrary0823", "abeyance0814", "rehearing0921", "rehearing0921x4", "elibrary1008", "pjmto1009", "isone1009", "caisodfp0924", "udive1005", "misolars1002", "llorder1009", "elibrary1020", "appa1028", "pjmmc1028", "pjmmc1105", "pjmrbp1029", "udive1026", "elibrary1030", "elibrary1102"],
+      src: ["fercPR", "fercFS", "elibrary0803", "elibrary0809", "elibrary0823", "abeyance0814", "rehearing0921", "rehearing0921x4", "elibrary1008", "pjmto1009", "isone1009", "caisodfp0924", "udive1005", "misolars1002", "llorder1009", "elibrary1020", "appa1028", "pjmmc1028", "pjmmc1105", "pjmrbp1029", "udive1026", "elibrary1030", "elibrary1102", "elibrary1110"],
     },
     e2: {
       label: "PJM co-location: EL25-49",
@@ -1073,9 +1115,9 @@ window.FERC_DATA = (function () {
       noDocket: true,
       what: "Auction results and market events that set the stakes for the filings, from outside any of the dockets.",
       whySeparate: "Mostly auction results and market events, kept in their own lane so the rail never reads an auction result as a docket event. PJM's backstop procurement (ER26-3380 and EL26-108) sits here too: it is a PJM market mechanism, not part of the large-load show cause clock, and its events name their docket.",
-      status: { asOf: "2026-11-09", line: "PJM refiled the backstop on Oct 29, on the last day of FERC's 30-day window, as a new §205 filing in a new docket, ER27-330. It says “Through this section 205 filing, PJM has addressed the issues set for paper hearing in the September 29 Order”: costs follow a fixed snapshot of large-load growth from the 2026 summer peak to the 2028/2029 forecast, the illustrative credit rate falls to about $686,000 per MW from $1.5 million, the municipal and cooperative opt-out FERC said may be unduly discriminatory is gone, and the procurement would commence March 1, 2027. PJM asks FERC to rule by Jan 29, 2027 and moved for comments to be due Nov 30, the date FERC's Nov 2 combined notice then set. FERC has not ruled on PJM's Oct 12 abeyance motion; its Oct 23 notice instead moved the EL26-108 paper-hearing briefs to Jan 11 and Jan 26, 2027. Seven parties have asked for rehearing or clarification of the Sep 29 order in ER26-3380-001, among them consumer advocates from Delaware, D.C., Illinois, Maryland and New Jersey, who say the procurement “permits the unmitigated exercise of seller-side market power,” and the Indicated PJM Transmission Owners, who hope the refiling moots their request. On ER26-3515, the Oct 9 order that kept PJM's 50 MW Large Load definition and registry and rejected the curtail-first service, neither a rehearing request nor PJM's compliance filing was indexed as of the morning of Nov 9, the due date for both. On Nov 3 Exelon filed a fast-track complaint (EL27-11) asking FERC to replace PJM's three-year-forward capacity auction with a prompt auction from 2030/31. In MISO, the Oct 23 comment date on LARS (ER27-25) split the footprint: the Arkansas and Mississippi commissions, utilities and MISO's transmission owners in support, clean-energy groups, consumer advocates and Google protesting, the Organization of MISO States asking for safeguards.", },
-      next: { date: "2026-11-09", label: "PJM's ER26-3515 compliance filing on the Large Load definition and registry, and the last day for rehearing of the Oct 9 order", dateNote: "30 days from Oct 9 (Nov 8 is a Sunday). Then Nov 30, the ER27-330 comment date FERC's Nov 2 combined notice set, and Jan 11, 2027 for EL26-108 initial briefs" },
-      src: ["pjmbra", "udbackstop", "elibrary0809", "elibrary0823", "backstop0929", "doe1007", "elibrary1008", "llorder1009", "udive1012", "appa1013", "pjmmc1022", "udive1008", "frEL26108", "pjmil0930", "pjmabey1012", "fercnotice1016", "elibrary1020", "fercnotice1023", "pjmrbp1029", "pjmil1029", "jcareh1029", "toreh1029", "udive1026", "misolars1002", "elibrary1030", "cnf1102", "pjmreg1028", "ad268notice1015", "pjmpilong1021", "elibrary1102"],
+      status: { asOf: "2026-11-10", line: "PJM filed the Large Load definition and registry on Nov 9 (ER26-3515-002), removing the capacity fields tied to its rejected curtailment proposal. Ohio’s Consumers’ Counsel separately sought rehearing on access to confidential registry data (ER26-3515-001). PJM also refiled its Oct 29 backstop proposal in ER27-454-000 to correct the filing code. Comments on the registry and backstop filings are both due Nov 30. The backstop paper-hearing briefs are due Jan 11 and Jan 26, 2027." },
+      next: { date: "2026-11-30", label: "Comments on PJM’s registry compliance filing and separate backstop refiling", dateNote: "5 p.m. Eastern for ER26-3515-002 and ER27-454-000 under the Nov 10 combined notice." },
+      src: ["pjmbra", "udbackstop", "elibrary0809", "elibrary0823", "backstop0929", "doe1007", "elibrary1008", "llorder1009", "udive1012", "appa1013", "pjmmc1022", "udive1008", "frEL26108", "pjmil0930", "pjmabey1012", "fercnotice1016", "elibrary1020", "fercnotice1023", "pjmrbp1029", "pjmil1029", "jcareh1029", "toreh1029", "udive1026", "misolars1002", "elibrary1030", "cnf1102", "pjmreg1028", "ad268notice1015", "pjmpilong1021", "elibrary1102", "pjmll1109", "ohll1109", "cnf1110", "pjmrbp1109"],
     },
   };
 
@@ -1496,16 +1538,34 @@ window.FERC_DATA = (function () {
       src: ["pjmmc1105", "pjmrbp1029", "elibrary1109"],
     },
     {
-      date: "Nov 9, 2026", iso: "2026-11-09", kind: "deadline", track: "context",
-      title: "PJM's ER26-3515 compliance filing, and the last day to seek rehearing of the Oct 9 order",
-      body: "Thirty days from the Oct 9 order that accepted PJM's 50 MW Large Load definition and Large Load Registry and rejected the rest of the package; Nov 8 is a Sunday. PJM owes a compliance filing on the accepted pieces, and any request for rehearing of the order is due the same day. None had been filed as of Oct 30.",
-      src: ["llorder1009", "elibrary1030"],
+      date: "Nov 9, 2026", iso: "2026-11-09", kind: "milestone", track: "context",
+      title: "PJM files the Large Load registry; Ohio seeks access for consumer advocates",
+      body: "In ER26-3515-002, PJM filed tariff and reliability agreement text for the definition and registry, with an Oct 12 effective date requested. The registry keeps peak demand, ramp schedules and backup generation but drops the customer’s new capacity and allocated backstop capacity fields. PJM did not refile its rejected Interim Resource Adequacy Service. Ohio’s Consumers’ Counsel separately requested rehearing in ER26-3515-001 so state consumer advocates can see confidential registry data under safeguards.",
+      src: ["pjmll1109", "ohll1109", "llorder1009"],
     },
     {
       date: "Nov 9, 2026", iso: "2026-11-09b", kind: "milestone", track: "sc6",
       title: "Window check: one week out, still no show cause filings",
       body: "The six §206 docket sheets and their -001 sub-dockets, read Nov 9, carry only service-list updates since Oct 29. Nothing new in EL25-49, AD26-7, EL26-108 or ER26-3515 either: no PJM compliance filing on the Large Load definition and no rehearing request of the Oct 9 order were indexed as of the morning of the deadline. The record that did grow: all seven backstop rehearing requests and the twelve-document LARS record are now read in full, and Exelon filed a capacity-market complaint (EL27-11).",
       src: ["elibrary1109"],
+    },
+    {
+      date: "Nov 9, 2026", iso: "2026-11-09c", kind: "milestone", track: "context",
+      title: "PJM refiles its backstop proposal to correct the §205 filing code",
+      body: "PJM says the proposal in ER27-454-000 is substantively identical to its Oct 29 filing in ER27-330-000. It corrects the eTariff code from compliance to a §205 rate filing. PJM asks for a Jan 29 ruling and a Feb 28 effective date for most provisions.",
+      src: ["pjmrbp1109"],
+    },
+    {
+      date: "Nov 9, 2026", iso: "2026-11-09d", kind: "milestone", track: "sc6",
+      title: "MISO answers protests over studying large loads and generation together",
+      body: "In the separate ER27-25 proceeding, MISO asks FERC to accept its answer and its LARS proposal. MISO argues that studying a load of at least 200 MW alongside nearby new generation could reduce the cost of connecting it. The proposal is part of MISO’s response to the show cause order; this answer was filed in ER27-25.",
+      src: ["misolars1109", "misolars1002"],
+    },
+    {
+      date: "Nov 10, 2026", iso: "2026-11-10", kind: "milestone", track: "context",
+      title: "FERC sets Nov 30 comment date for PJM’s registry and backstop filings",
+      body: "FERC’s combined notice lists ER26-3515-002 and ER27-454-000 with comments due at 5 p.m. Eastern on Nov 30. The notice sets a comment deadline; it does not approve the filing.",
+      src: ["cnf1110"],
     },
     {
       date: "Nov 16, 2026", iso: "2026-11-16", kind: "deadline", track: "sc6",
@@ -1515,9 +1575,9 @@ window.FERC_DATA = (function () {
     },
     {
       date: "Nov 30, 2026", iso: "2026-11-30", kind: "deadline", track: "context",
-      title: "Comments due on PJM's backstop refiling",
-      body: "PJM moved for “an extended, 32-day comment period, such that comments and interventions would be due November 30, 2026,” on its ER27-330 refiling, and FERC's combined notice of Nov 2 set exactly that: 5 p.m. Eastern on Nov 30 for both the Oct 29 filing and PJM's Oct 30 errata in ER27-330-001. Six parties had intervened by Oct 30.",
-      src: ["pjmrbp1029", "cnf1102", "elibrary1102"],
+      title: "Comments due on PJM’s backstop refiling and registry compliance filing",
+      body: "PJM moved for “an extended, 32-day comment period, such that comments and interventions would be due November 30, 2026,” on its ER27-330 refiling, and FERC's combined notice of Nov 2 set exactly that: 5 p.m. Eastern on Nov 30 for both the Oct 29 filing and PJM's Oct 30 errata in ER27-330-001. Six parties had intervened by Oct 30. FERC’s separate Nov 10 notice sets the same deadline for the recoded backstop filing in ER27-454-000 and the registry filing in ER26-3515-002.",
+      src: ["pjmrbp1029", "cnf1102", "elibrary1102", "cnf1110"],
     },
     {
       date: "Dec 16, 2026", iso: "2026-12-16", kind: "deadline", track: "sc6",
@@ -2798,9 +2858,9 @@ window.FERC_DATA = (function () {
     // accession below was read directly off its own docket sheet. `showcause` stays empty — that
     // deadline (Aug 17) hasn't arrived yet, so it renders `upcoming`, derived.
     filings: {
-      asOf: "2026-11-09",
+      asOf: "2026-11-10",
       steps: ["report", "abeyance", "showcause"],
-      note: "Observed filings only. An empty cell means our checks found nothing, which is not proof nothing was filed. Every report and abeyance cell below is confirmed against its own eLibrary accession. Every abeyance motion was GRANTED on Aug 14, 2026, so the show-cause column is upcoming again, now against Nov 16 (Nov 20 for SPP) rather than Aug 17; each cell's gist carries the granting order's accession and reporter citation. A show-cause cell marked Signaled rests on the respondent's own written statement of what it will file (its source is cited in the cell), not on anything observed on the docket. The six sheets were read through Oct 30 and no respondent had filed a show cause response or a §205 proposal in its docket.",
+      note: "Observed filings only. An empty cell means our checks found nothing, which is not proof nothing was filed. Every report and abeyance cell below is confirmed against its own eLibrary accession. Every abeyance motion was GRANTED on Aug 14, 2026, so the show-cause column is upcoming again, now against Nov 16 (Nov 20 for SPP) rather than Aug 17; each cell's gist carries the granting order's accession and reporter citation. A show-cause cell marked Signaled rests on the respondent's own written statement of what it will file (its source is cited in the cell), not on anything observed on the docket. The six main docket sheets were read through Nov 10 and no respondent had filed a show cause response or a §205 proposal in its docket.",
       rows: [
         // --- show-cause column: what respondents have put in writing about Nov 16 (2026-10-19) ---------
         {

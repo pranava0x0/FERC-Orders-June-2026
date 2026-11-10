@@ -25,10 +25,8 @@
   `-001` rule but applied it by hand. Give the extractor a list (`EL26-67-000`, `EL26-67-001`, …, `ER26-3380`,
   `EL26-108`, `ER26-3515`) and have it navigate and accumulate across all of them in one run.
 
-- **Track the ER26-3515 compliance filing and any rehearing requests (both due Nov 9, 2026).** (high) The Oct 9
-  order directed a compliance filing within 30 days; rehearing of a §205 order runs 30 days too. Neither is on
-  the filing matrix, which is built around the six §206 dockets; decide whether PJM's own §205 dockets get a
-  row or stay timeline-only.
+- **Watch the Nov 30 comment filings in ER26-3515-002 and ER27-454-000**, any ER26-3515-001 rehearing action and any actual withdrawal in ER27-330. PJM’s registry compliance and Ohio’s Nov 9 rehearing request are now on Filings. These are separate from the Nov 16 show cause deadline.
+
 
 - **Audit the other CLI tools for silent-success paths.** (medium) One PR review found four in the two
   newest tools. The older ones (`build-comment-worklist`, `grind-comment-downloads`, `analyze-comments`,
@@ -658,4 +656,4 @@ Recommended next steps, in order:
   it belongs on the show-cause track.
 - **Medium:** add tenets for documents already in the corpus but not on the Filings tab (the DOE §403 letter,
   the CEBA/DCC letter, PJM's Nov 5 MC materials once posted).
-- **Low:** deep links to a single proceeding or filer on the Filings tab (`#filings/miso-lars?doc=...`).
+- **Done:** PR #28 added direct links to proceedings and filers (e.g. `#filings/miso-lars/google`).

@@ -3,11 +3,17 @@
 Learned-pathways log for the `ferc-uat` skill (`~/.claude/skills/ferc-uat/SKILL.md`). Do not
 delete the "Learned pathways log" section below — it's the skill's memory across runs.
 
-_Last run: 2026-11-09_
+_Last run: 2026-11-10_
 
 ---
 
 ## Learned pathways log
+
+### Run 2026-11-10 (PJM registry and backstop)
+
+At 375×812, 768×1024 and 1280×800 the answer to what PJM filed was visible without scrolling or tapping. Each link opened the relevant proceeding with PJM already selected: one tap, no scroll to the first page citation. The Nov 16 deadline remained visible on load. On the phone the first §206 status line required 0.12 screens of scroll. All 36 panel checks and 51 goal measurements passed; no page errors, failed requests or horizontal overflow.
+
+Compared cold Overview visits against PR #28 in the same local Chrome session: 7 requests → 5; about 1.33 MB → 0.66 MB uncompressed (344 kB → 187 kB with gzip level 9, calculated per requested file). The savings are from removing both idle prefetches. Opening a record tab still downloads its data on first use. Keyboard activation, reload at a specific filer, clearing that filter, recovery after a failed shared record request, and the no-JavaScript answer were checked separately. Stable Chrome 157.0.8103.39 had no `--no-sandbox` on either launch path.
 
 ### Run 2026-11-09 (headless harness at 375, 768 and 1280; same session as the Filings and Commissioners tabs)
 

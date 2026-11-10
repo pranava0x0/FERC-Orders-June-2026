@@ -26,7 +26,7 @@
 // same as one tap). Clicks are dispatched with el.click() AFTER the measured scroll, so Playwright's own
 // auto-scroll never hides a scroll the reader would have had to do.
 import { createRequire } from "node:module";
-import { mkdirSync, writeFileSync, existsSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { tmpdir } from "node:os";
 
@@ -39,7 +39,7 @@ const BASE = arg("--base", "http://127.0.0.1:8131/");
 const OUT = resolve(arg("--out", join(tmpdir(), "ferc-uat")));
 const JSON_OUT = argv.includes("--json");
 const WAIT = 700;
-const FALLBACK_CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome";
+
 
 const EXPECTED_TABS = ["overview", "timeline", "reforms", "dockets", "filings", "commissioners", "comments", "news"];
 const VIEWPORTS = [
@@ -113,8 +113,19 @@ const GOALS = [
   ] },
   { id: "n", goal: "What FERC held in the Oct 9 Large Load order (first holding)", candidates: [
     { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "jump to the order", click: Q('.jump-btn[data-jump="#fg-pjm-large-load-definition"]') }],
-      target: Q("#fg-pjm-large-load-definition .tenet") },
-    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open the order", open: Q("#fg-pjm-large-load-definition") }], target: Q("#fg-pjm-large-load-definition .tenet") },
+      target: "__tenetBy('pjm-large-load-definition', 'FERC order')" },
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open the order", open: Q("#fg-pjm-large-load-definition") }], target: "__tenetBy('pjm-large-load-definition', 'FERC order')" },
+  ] },
+  { id: "o", goal: "What PJM filed Nov 9", candidates: [
+    { steps: [], target: Q(".filing-brief p") },
+  ] },
+  { id: "p", goal: "PJM’s compliance filing with a page citation", candidates: [
+    { steps: [{ label: "PJM filing by page", click: Q('.filing-brief a[href^="#filings/"]') }],
+      target: "__tenetBy('pjm-large-load-definition', 'PJM')" },
+  ] },
+  { id: "q", goal: "Why PJM refiled the backstop", candidates: [
+    { steps: [{ label: "Backstop refiling", click: Q('.filing-brief a[href^="#filings/pjm-backstop/"]') }],
+      target: "__tenetBy('pjm-backstop', 'PJM')" },
   ] },
 ];
 
@@ -141,13 +152,9 @@ const fail = (vp, area, msg) => failures.push({ viewport: vp, area, msg });
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function launch() {
-  // PW_CHROME: any cached Chromium, for a borrowed Playwright whose pinned browser build is not downloaded.
-  if (process.env.PW_CHROME) return chromium.launch({ executablePath: process.env.PW_CHROME });
-  try { return await chromium.launch(); }
-  catch (e) {
-    if (!existsSync(FALLBACK_CHROME)) throw e;
-    return chromium.launch({ executablePath: FALLBACK_CHROME });
-  }
+  // Prefer the installed stable channel; a supplied Chrome path uses the same sandbox settings.
+  const executable = process.env.PW_CHROME ? { executablePath: process.env.PW_CHROME } : { channel: "chrome" };
+  return chromium.launch({ ...executable, chromiumSandbox: true });
 }
 
 function watch(page, sink) {
@@ -343,7 +350,7 @@ async function main() {
   try { const r = await fetch(BASE); if (!r.ok) throw new Error("HTTP " + r.status); }
   catch (e) { console.error(`uat-playwright: ${BASE} is not reachable (${e.message}). Serve docs/ first: python3 -m http.server 8131 --directory docs`); process.exit(2); }
   const browser = await launch();
-  const result = { base: BASE, ranAt: new Date().toISOString(), viewports: {} };
+  const result = { browser: browser.version(), base: BASE, ranAt: new Date().toISOString(), viewports: {} };
   try {
     for (const vp of VIEWPORTS) {
       const sink = { console: [], failedRequests: [], responses: 0 };
