@@ -7,6 +7,22 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
+- **2026-11-11 · tooling/process · the documented gate chain omitted the delivery build, so a `data.js` edit
+  would have shipped stale.** `docs/js/data.js` is a source file the browser never loads; `core-data.js` and
+  `news-data.js` are built from it by `tools/build-delivery-data.mjs`. That command appeared nowhere in
+  REFRESH.md, including the scheduled-sweep GATES line. Following the documented chain after editing `data.js`
+  left the new content out of the served files and the asset stamp unmoved, which is the cache-skew failure
+  LEARNINGS.md already records. Caught here only because `tests/page-weight.test.mjs` runs the `--check` form.
+  Root cause: **doc** (the tool existed and its guard worked; the runbook never named it). Status:
+  **Fixed 2026-11-11**, added to both gate chains in REFRESH.md with a note on why the build is required.
+
+- **2026-11-11 · source · pjm.com returns HTTP 200 with a 26,183-byte soft 404 for any wrong path.** Three
+  guessed URLs (a Nov 18 agenda, Nov 5 minutes, an invented ACP letter name) each "succeeded" and wrote a
+  real file to disk. A status-only or file-exists check would have recorded all three as live sources. Root
+  cause: **source**. Status: **Fixed 2026-11-11** in the REFRESH.md gotchas, with the byte count and the
+  `file`-reports-page-count test to distinguish a real PDF.
+
+
 - **2026-11-09 · ui · eight tabs overflowed the bar at 1,024 px and the 4-column phone grid ran 66 px wide.**
   The tab bar needed ~1,160 px with numbers and asides; on phones `repeat(4, 1fr)` let min-content widen the
   grid, and the media-query `.tab` padding lost to the later base `.tab` rule of equal specificity. Root cause:
