@@ -1,6 +1,6 @@
 {
- "asOf": "2026-11-09",
- "note": "Per-video contents and timestamped commissioner quotes from YouTube auto-captions. Verified by tools/verify-record.mjs.",
+ "asOf": "2026-11-10",
+ "note": "Per-video contents and timestamped commissioner quotes from original English YouTube captions. The video manifest identifies publisher tracks. Checked by tools/verify-record.mjs.",
  "videos": [
   {
    "id": "V5HISlXLXfE",
@@ -2122,6 +2122,73 @@
      "at": "00:59:11",
      "q": "last Friday's order at a high level accepted the large load definition and establishment of a large load registry similar to the compliance filing.",
      "tenet": "FERC accepted PJM's large load definition and large load registry."
+    }
+   ]
+  },
+  {
+   "id": "dEisTPju8E0",
+   "event": "WIRES summer meeting, Philadelphia",
+   "speakers": [
+    "lacerte"
+   ],
+   "chapters": [
+    {
+     "at": "00:00:08",
+     "title": "Welcome to WIRES in Philadelphia"
+    },
+    {
+     "at": "00:02:35",
+     "title": "Joining FERC",
+     "who": "lacerte"
+    },
+    {
+     "at": "00:14:01",
+     "title": "Transmission investment and state planning",
+     "who": "lacerte"
+    },
+    {
+     "at": "00:22:48",
+     "title": "Grid technology and transmission incentives",
+     "who": "lacerte"
+    },
+    {
+     "at": "00:31:52",
+     "title": "State and federal authority",
+     "who": "lacerte"
+    },
+    {
+     "at": "00:37:18",
+     "title": "New England reliability and permitting",
+     "who": "lacerte"
+    },
+    {
+     "at": "00:40:00",
+     "title": "PJM stakeholder deadlock",
+     "who": "lacerte"
+    },
+    {
+     "at": "00:45:49",
+     "title": "Choosing between an upgrade and a new line",
+     "who": "lacerte"
+    },
+    {
+     "at": "00:49:41",
+     "title": "Equipment supply and lead times",
+     "who": "lacerte"
+    }
+   ],
+   "quotes": [
+    {
+     "who": "lacerte",
+     "at": "00:40:00",
+     "q": "The status quo is really untenable in PJM.",
+     "tenet": "PJM members need to break their governance deadlock."
+    },
+    {
+     "who": "lacerte",
+     "at": "00:22:48",
+     "q": "I believe that GETS and new transmission go hand in hand.",
+     "tenet": "Grid technology can complement new transmission lines."
     }
    ]
   }

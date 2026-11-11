@@ -1,0 +1,3613 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 8520,
+    "dDurationMs": 7560,
+    "segs": [ {
+      "utf8": "So I want to welcome everyone to the WIRES 2026 summer meeting here in Philadelphia."
+    } ]
+  }, {
+    "tStartMs": 16760,
+    "dDurationMs": 9340,
+    "segs": [ {
+      "utf8": "I thought it was a great location, particularly right in the aftermath of celebrating the 250th anniversary of the Declaration of Independence."
+    } ]
+  }, {
+    "tStartMs": 27000,
+    "dDurationMs": 4900,
+    "segs": [ {
+      "utf8": "This is a year of anniversaries, because it's also going to be the 20th anniversary for WIRES."
+    } ]
+  }, {
+    "tStartMs": 31900,
+    "dDurationMs": 3820,
+    "segs": [ {
+      "utf8": "So we're looking forward to celebrating that later this year."
+    } ]
+  }, {
+    "tStartMs": 36840,
+    "dDurationMs": 10420,
+    "segs": [ {
+      "utf8": "And in keeping with the spirit of being in Philadelphia, city of Benjamin Franklin, we had to do the WIRES swag of a WIRES-themed kite."
+    } ]
+  }, {
+    "tStartMs": 49940,
+    "dDurationMs": 6580,
+    "segs": [ {
+      "utf8": "Now Ben was known to conduct some kind of risky experiments on occasion with kites, with electricity."
+    } ]
+  }, {
+    "tStartMs": 57600,
+    "dDurationMs": 4460,
+    "segs": [ {
+      "utf8": "We're not recommending you try that with these kites, by the way, so I'm going to put that disclaimer in."
+    } ]
+  }, {
+    "tStartMs": 62180,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "If you go ahead and do it, you're doing it at your own risk."
+    } ]
+  }, {
+    "tStartMs": 65340,
+    "dDurationMs": 1560,
+    "segs": [ {
+      "utf8": "So just want to make sure everyone's aware."
+    } ]
+  }, {
+    "tStartMs": 66980,
+    "dDurationMs": 860,
+    "segs": [ {
+      "utf8": "So please pick one up."
+    } ]
+  }, {
+    "tStartMs": 68260,
+    "dDurationMs": 3100,
+    "segs": [ {
+      "utf8": "You can actually collapse them, and they're easier to take home that way."
+    } ]
+  }, {
+    "tStartMs": 72360,
+    "dDurationMs": 5020,
+    "segs": [ {
+      "utf8": "But we've got a great program here today, and I want to go ahead and get us started."
+    } ]
+  }, {
+    "tStartMs": 77740,
+    "dDurationMs": 5200,
+    "segs": [ {
+      "utf8": "We've got a fantastic opening speaker, FERC Commissioner David LaCerte."
+    } ]
+  }, {
+    "tStartMs": 83600,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "Commissioner LaCerte has been at FERC since 2025."
+    } ]
+  }, {
+    "tStartMs": 88220,
+    "dDurationMs": 5980,
+    "segs": [ {
+      "utf8": "He brings a lot of experience to the role, both in the private and in the public sector."
+    } ]
+  }, {
+    "tStartMs": 94940,
+    "dDurationMs": 10640,
+    "segs": [ {
+      "utf8": "Prior to his appointment at FERC, he was at senior roles at the U.S. Office of Personnel Management, U.S. Chemical Safety and Hazard Investigation Board."
+    } ]
+  }, {
+    "tStartMs": 105640,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": "I had to read that because it was a lot of stuff to get in there."
+    } ]
+  }, {
+    "tStartMs": 109100,
+    "dDurationMs": 2620,
+    "segs": [ {
+      "utf8": "And served as the State Cabinet Secretary in Louisiana."
+    } ]
+  }, {
+    "tStartMs": 112620,
+    "dDurationMs": 6180,
+    "segs": [ {
+      "utf8": "He has a J.D. from LSU and a Bachelor's of Arts from Nichols State University."
+    } ]
+  }, {
+    "tStartMs": 121040,
+    "dDurationMs": 5120,
+    "segs": [ {
+      "utf8": "So with that, I'm going to go ahead and ask the commissioner if he wants to come up here."
+    } ]
+  }, {
+    "tStartMs": 126240,
+    "dDurationMs": 1540,
+    "segs": [ {
+      "utf8": "We're going to have a little bit of a fireside chat."
+    } ]
+  }, {
+    "tStartMs": 127780,
+    "dDurationMs": 1740,
+    "segs": [ {
+      "utf8": "He's open to some."
+    } ]
+  }, {
+    "tStartMs": 148120,
+    "dDurationMs": 7380,
+    "segs": [ {
+      "utf8": "So I saw what you did on social media, and I couldn't resist getting walk-up music for Rocky."
+    } ]
+  }, {
+    "tStartMs": 155500,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "Good place for it."
+    } ]
+  }, {
+    "tStartMs": 158480,
+    "dDurationMs": 3380,
+    "segs": [ {
+      "utf8": "Sometimes I feel like Rocky, not when he's doing the fighting, but when he's beat up on the ground."
+    } ]
+  }, {
+    "tStartMs": 163240,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "Well, thank you for being here, Commissioner."
+    } ]
+  }, {
+    "tStartMs": 166380,
+    "dDurationMs": 2760,
+    "segs": [ {
+      "utf8": "I've got to get my list of questions to go over."
+    } ]
+  }, {
+    "tStartMs": 169940,
+    "dDurationMs": 7200,
+    "segs": [ {
+      "utf8": "As I mentioned in the opening and the introduction, you've got quite a varied experience, both in public and in private service."
+    } ]
+  }, {
+    "tStartMs": 177580,
+    "dDurationMs": 8560,
+    "segs": [ {
+      "utf8": "I guess if you could just talk a little bit more about your own background and what your path was from that to getting on to the commission."
+    } ]
+  }, {
+    "tStartMs": 187620,
+    "dDurationMs": 3120,
+    "segs": [ {
+      "utf8": "It's no secret I've never really been a FERC practitioner."
+    } ]
+  }, {
+    "tStartMs": 191000,
+    "dDurationMs": 3820,
+    "segs": [ {
+      "utf8": "I've had precisely one FERC proceeding in my entire legal career."
+    } ]
+  }, {
+    "tStartMs": 195020,
+    "dDurationMs": 1240,
+    "segs": [ {
+      "utf8": "It was my first year out of law school."
+    } ]
+  }, {
+    "tStartMs": 197360,
+    "dDurationMs": 8400,
+    "segs": [ {
+      "utf8": "I was just a green attorney, and we litigated some property acquisitions within the FERC exclusion zone on the Toledo Bend Reservoir, which separates Texas and Louisiana."
+    } ]
+  }, {
+    "tStartMs": 206920,
+    "dDurationMs": 7000,
+    "segs": [ {
+      "utf8": "When the president asked me to serve on FERC, I'm like, Mr. President, it's an honor, but I'm not a regulator."
+    } ]
+  }, {
+    "tStartMs": 215800,
+    "dDurationMs": 2640,
+    "segs": [ {
+      "utf8": "You could probably find someone with a better background for this."
+    } ]
+  }, {
+    "tStartMs": 218560,
+    "dDurationMs": 1300,
+    "segs": [ {
+      "utf8": "My background is in energy more broadly."
+    } ]
+  }, {
+    "tStartMs": 220440,
+    "dDurationMs": 1220,
+    "segs": [ {
+      "utf8": "He said, that's why I want you there."
+    } ]
+  }, {
+    "tStartMs": 223740,
+    "dDurationMs": 5060,
+    "segs": [ {
+      "utf8": "My experience in the energy stream has gone all the way up and all the way down."
+    } ]
+  }, {
+    "tStartMs": 229340,
+    "dDurationMs": 3240,
+    "segs": [ {
+      "utf8": "I've represented extraction and production of oil and gas."
+    } ]
+  }, {
+    "tStartMs": 234380,
+    "dDurationMs": 5440,
+    "segs": [ {
+      "utf8": "I've led an agency which investigates accidents at static facilities."
+    } ]
+  }, {
+    "tStartMs": 240300,
+    "dDurationMs": 2420,
+    "segs": [ {
+      "utf8": "People ask what the Chemical Safety Board actually is."
+    } ]
+  }, {
+    "tStartMs": 242800,
+    "dDurationMs": 3140,
+    "segs": [ {
+      "utf8": "I always like to tell people it's the sister agency of the NTSB."
+    } ]
+  }, {
+    "tStartMs": 246380,
+    "dDurationMs": 2920,
+    "segs": [ {
+      "utf8": "There's a movie about an accident the NTSB investigates."
+    } ]
+  }, {
+    "tStartMs": 249620,
+    "dDurationMs": 1280,
+    "segs": [ {
+      "utf8": "Denzel Washington's playing me."
+    } ]
+  }, {
+    "tStartMs": 252100,
+    "dDurationMs": 3260,
+    "segs": [ {
+      "utf8": "At the Chemical Safety Board, I have to explain what the Chemical Safety Board is."
+    } ]
+  }, {
+    "tStartMs": 256260,
+    "dDurationMs": 4079,
+    "segs": [ {
+      "utf8": "That's a different degree of prestige, but nonetheless very important."
+    } ]
+  }, {
+    "tStartMs": 260339,
+    "dDurationMs": 9221,
+    "segs": [ {
+      "utf8": "In private practice, when there was a major accident or incident involving the energy industry, I would go and camp out at the refinery or the pipeline terminal."
+    } ]
+  }, {
+    "tStartMs": 270500,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "I was there until the government investigators went home."
+    } ]
+  }, {
+    "tStartMs": 273520,
+    "dDurationMs": 8860,
+    "segs": [ {
+      "utf8": "In doing that, I always got to understand a real interesting cross-section of energy in many different areas, whether it be in refining, whether it be in chemical production."
+    } ]
+  }, {
+    "tStartMs": 283060,
+    "dDurationMs": 6600,
+    "segs": [ {
+      "utf8": "I know for a while, I was parked at Dulles investigating Starbucks egg bites factory explosion and ammonia release."
+    } ]
+  }, {
+    "tStartMs": 289660,
+    "dDurationMs": 2660,
+    "segs": [ {
+      "utf8": "You just never know what you're going to get."
+    } ]
+  }, {
+    "tStartMs": 292800,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "For about three months straight, I ate Starbucks egg bites for like two meals a day."
+    } ]
+  }, {
+    "tStartMs": 296980,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "My cholesterol level did not go unnoticed."
+    } ]
+  }, {
+    "tStartMs": 300700,
+    "dDurationMs": 2940,
+    "segs": [ {
+      "utf8": "I've gotten to do a bunch of interesting things in my career."
+    } ]
+  }, {
+    "tStartMs": 304460,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "I was practicing law at Baker Pots in Houston for transition."
+    } ]
+  }, {
+    "tStartMs": 307400,
+    "dDurationMs": 980,
+    "segs": [ {
+      "utf8": "I was helping on transition."
+    } ]
+  }, {
+    "tStartMs": 309120,
+    "dDurationMs": 5320,
+    "segs": [ {
+      "utf8": "I identified a number of deficiencies where we needed to ramp up as Inauguration Day was looming."
+    } ]
+  }, {
+    "tStartMs": 315540,
+    "dDurationMs": 2140,
+    "segs": [ {
+      "utf8": "The administration said, we want you to fix those problems."
+    } ]
+  }, {
+    "tStartMs": 317680,
+    "dDurationMs": 1800,
+    "segs": [ {
+      "utf8": "I said, that's not what I had in mind on this."
+    } ]
+  }, {
+    "tStartMs": 320220,
+    "dDurationMs": 16060,
+    "segs": [ {
+      "utf8": "But I come in and lead personnel for transition, which is a very important job because where we place our individuals to lead agencies, where we place our teams to solve these problems, who we select, what backgrounds they select, and their appropriate acumen is really going to drive the ability for us to implement change."
+    } ]
+  }, {
+    "tStartMs": 337240,
+    "dDurationMs": 4660,
+    "segs": [ {
+      "utf8": "The opportunity was one I couldn't pass up, to which I described to Baker Pots."
+    } ]
+  }, {
+    "tStartMs": 342000,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "To their credit, they were immediately same day."
+    } ]
+  }, {
+    "tStartMs": 344400,
+    "dDurationMs": 4000,
+    "segs": [ {
+      "utf8": "Anytime you get a big law firm to make a decision on the same day, it's always a good indicator."
+    } ]
+  }, {
+    "tStartMs": 350940,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "The president asked me to serve at FERC, and quite honestly, I turned it down at first."
+    } ]
+  }, {
+    "tStartMs": 354920,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "I said, look, you can find someone that's a better fit."
+    } ]
+  }, {
+    "tStartMs": 357440,
+    "dDurationMs": 1340,
+    "segs": [ {
+      "utf8": "He's like, no, I want you to think about it."
+    } ]
+  }, {
+    "tStartMs": 358840,
+    "dDurationMs": 940,
+    "segs": [ {
+      "utf8": "I want you to talk to your family."
+    } ]
+  }, {
+    "tStartMs": 360280,
+    "dDurationMs": 4180,
+    "segs": [ {
+      "utf8": "I want you to talk to your firm, and I want you to come back and give me another decision."
+    } ]
+  }, {
+    "tStartMs": 365280,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "I said, roger that, Mr. President."
+    } ]
+  }, {
+    "tStartMs": 366700,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "So I went back home, told the family, made this offer to continue in the government."
+    } ]
+  }, {
+    "tStartMs": 370100,
+    "dDurationMs": 1140,
+    "segs": [ {
+      "utf8": "They're like, you turned it down, right?"
+    } ]
+  }, {
+    "tStartMs": 371640,
+    "dDurationMs": 1340,
+    "segs": [ {
+      "utf8": "I'm like, well, I said maybe."
+    } ]
+  }, {
+    "tStartMs": 374560,
+    "dDurationMs": 1420,
+    "segs": [ {
+      "utf8": "He's a very persuasive man."
+    } ]
+  }, {
+    "tStartMs": 377280,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "So I had to come back in and accept the position formally with him."
+    } ]
+  }, {
+    "tStartMs": 381100,
+    "dDurationMs": 6000,
+    "segs": [ {
+      "utf8": "I always tell the story that it was 8 p.m., thunder and lightning outside, pouring rain."
+    } ]
+  }, {
+    "tStartMs": 387420,
+    "dDurationMs": 4500,
+    "segs": [ {
+      "utf8": "Of course, I don't get the trappings that I do as a commissioner, so I don't get to go have a vehicle behind the Iron Gate."
+    } ]
+  }, {
+    "tStartMs": 392240,
+    "dDurationMs": 2100,
+    "segs": [ {
+      "utf8": "So I'm walking home in the pouring rain after my meeting."
+    } ]
+  }, {
+    "tStartMs": 395220,
+    "dDurationMs": 1280,
+    "segs": [ {
+      "utf8": "They're like, wait, come back."
+    } ]
+  }, {
+    "tStartMs": 396520,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "We've got one more question to ask you."
+    } ]
+  }, {
+    "tStartMs": 397680,
+    "dDurationMs": 10340,
+    "segs": [ {
+      "utf8": "So I'm sopping wet, like literally have to pour water out of my shoes, and I have to come back in the Oval Office looking like a wet rat, and the question was, are we still on for this meeting tomorrow?"
+    } ]
+  }, {
+    "tStartMs": 408060,
+    "dDurationMs": 500,
+    "segs": [ {
+      "utf8": "I'm like, yes."
+    } ]
+  }, {
+    "tStartMs": 409000,
+    "dDurationMs": 920,
+    "segs": [ {
+      "utf8": "I'm like, okay, good."
+    } ]
+  }, {
+    "tStartMs": 410040,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "So I just went and left again."
+    } ]
+  }, {
+    "tStartMs": 411780,
+    "dDurationMs": 6280,
+    "segs": [ {
+      "utf8": "So that's kind of the nature of working for the White House is sometimes you just show up sopping wet with no explanation, and no one even says anything about it."
+    } ]
+  }, {
+    "tStartMs": 419080,
+    "dDurationMs": 2060,
+    "segs": [ {
+      "utf8": "So it's been an interesting experience."
+    } ]
+  }, {
+    "tStartMs": 421260,
+    "dDurationMs": 4780,
+    "segs": [ {
+      "utf8": "I've really enjoyed my time on the commission, and I wouldn't have accepted the job if I didn't think I could make a difference."
+    } ]
+  }, {
+    "tStartMs": 426040,
+    "dDurationMs": 6300,
+    "segs": [ {
+      "utf8": "So I think adding a perspective that is sometimes outside of 888 is sometimes sorely needed."
+    } ]
+  }, {
+    "tStartMs": 433100,
+    "dDurationMs": 4380,
+    "segs": [ {
+      "utf8": "Sometimes I'll ask for analysis that staff has said we've never considered, and I was like, well, consider it now."
+    } ]
+  }, {
+    "tStartMs": 438840,
+    "dDurationMs": 7200,
+    "segs": [ {
+      "utf8": "It's an interesting perspective because we're living in very dynamic times, probably the most consequential times for our industry in the history of the world."
+    } ]
+  }, {
+    "tStartMs": 446460,
+    "dDurationMs": 1620,
+    "segs": [ {
+      "utf8": "So it's an important time to be there."
+    } ]
+  }, {
+    "tStartMs": 449140,
+    "dDurationMs": 7620,
+    "segs": [ {
+      "utf8": "My first week on the job, I got plopped on my first brief book, which is about that thick, and I'm like, okay, I'm going to start reading this."
+    } ]
+  }, {
+    "tStartMs": 457380,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "And I started reading all my materials."
+    } ]
+  }, {
+    "tStartMs": 459260,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "I'm going to pour through this."
+    } ]
+  }, {
+    "tStartMs": 460540,
+    "dDurationMs": 3640,
+    "segs": [ {
+      "utf8": "I'm going to really kind of understand it to where if it pops back up again, I'll understand it."
+    } ]
+  }, {
+    "tStartMs": 464200,
+    "dDurationMs": 11960,
+    "segs": [ {
+      "utf8": "So my first order that I read was a MISO accounting snafu that was related to pension rates, and every third word was an acronym I've never seen before."
+    } ]
+  }, {
+    "tStartMs": 477560,
+    "dDurationMs": 3180,
+    "segs": [ {
+      "utf8": "And it probably took me 15 hours to understand this order."
+    } ]
+  }, {
+    "tStartMs": 481120,
+    "dDurationMs": 1180,
+    "segs": [ {
+      "utf8": "I'm like, all right, great."
+    } ]
+  }, {
+    "tStartMs": 482300,
+    "dDurationMs": 2840,
+    "segs": [ {
+      "utf8": "Next time I see something like this, I'll have a foundation."
+    } ]
+  }, {
+    "tStartMs": 485260,
+    "dDurationMs": 580,
+    "segs": [ {
+      "utf8": "I'll understand it."
+    } ]
+  }, {
+    "tStartMs": 486060,
+    "dDurationMs": 2900,
+    "segs": [ {
+      "utf8": "And staff was like, oh, we've never seen that in 35 years."
+    } ]
+  }, {
+    "tStartMs": 489860,
+    "dDurationMs": 5820,
+    "segs": [ {
+      "utf8": "So I'm like, okay, I've got to get better at discerning which time to invest my time in as a commissioner."
+    } ]
+  }, {
+    "tStartMs": 495940,
+    "dDurationMs": 1820,
+    "segs": [ {
+      "utf8": "But I've gotten better as we go."
+    } ]
+  }, {
+    "tStartMs": 498640,
+    "dDurationMs": 8180,
+    "segs": [ {
+      "utf8": "Of course, also the first week on the job, we had Chris Wright send us the anal bird saying fix all the world's problems, which he immediately jumped in and started tackling."
+    } ]
+  }, {
+    "tStartMs": 507380,
+    "dDurationMs": 1820,
+    "segs": [ {
+      "utf8": "So it's been a really dynamic environment."
+    } ]
+  }, {
+    "tStartMs": 510200,
+    "dDurationMs": 1300,
+    "segs": [ {
+      "utf8": "But I'm glad to be there."
+    } ]
+  }, {
+    "tStartMs": 511580,
+    "dDurationMs": 920,
+    "segs": [ {
+      "utf8": "I'm glad to do the good work."
+    } ]
+  }, {
+    "tStartMs": 513620,
+    "dDurationMs": 3260,
+    "segs": [ {
+      "utf8": "And I'm glad to get out and understand Amber's perspectives because I think that's key."
+    } ]
+  }, {
+    "tStartMs": 517600,
+    "dDurationMs": 640,
+    "segs": [ {
+      "utf8": "So here I am."
+    } ]
+  }, {
+    "tStartMs": 519080,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "Well, so you've been there since 2025."
+    } ]
+  }, {
+    "tStartMs": 521200,
+    "dDurationMs": 1859,
+    "segs": [ {
+      "utf8": "You've kind of got your footing now, right?"
+    } ]
+  }, {
+    "tStartMs": 523300,
+    "dDurationMs": 2540,
+    "segs": [ {
+      "utf8": "Sometimes it feels like it's 1925 since I've been there."
+    } ]
+  }, {
+    "tStartMs": 526880,
+    "dDurationMs": 700,
+    "segs": [ {
+      "utf8": "I'm curious."
+    } ]
+  }, {
+    "tStartMs": 528080,
+    "dDurationMs": 8040,
+    "segs": [ {
+      "utf8": "So based where your perception was before you got there to where you are now, what's been like the biggest surprise?"
+    } ]
+  }, {
+    "tStartMs": 536120,
+    "dDurationMs": 3500,
+    "segs": [ {
+      "utf8": "What has struck you the most during the time period that you've been there?"
+    } ]
+  }, {
+    "tStartMs": 540540,
+    "dDurationMs": 10820,
+    "segs": [ {
+      "utf8": "So I think one of the biggest things that struck me sitting down in my period where I was considering the job, I sat down with a bunch of former commissioners, some of which I've known previously, some of which I haven't."
+    } ]
+  }, {
+    "tStartMs": 551720,
+    "dDurationMs": 1980,
+    "segs": [ {
+      "utf8": "And I sat down with both Republicans and Democrats."
+    } ]
+  }, {
+    "tStartMs": 554480,
+    "dDurationMs": 5840,
+    "segs": [ {
+      "utf8": "And one of the biggest things that struck me is the lack of collaboration on some of our opinions."
+    } ]
+  }, {
+    "tStartMs": 561060,
+    "dDurationMs": 3500,
+    "segs": [ {
+      "utf8": "There's some real entrenched opinions that some people don't want to give an inch on."
+    } ]
+  }, {
+    "tStartMs": 565000,
+    "dDurationMs": 4000,
+    "segs": [ {
+      "utf8": "I don't think that makes for more durable opinions out of FERC."
+    } ]
+  }, {
+    "tStartMs": 570080,
+    "dDurationMs": 3540,
+    "segs": [ {
+      "utf8": "And incorporating a broad cross-section of opinions, I think, is good for business."
+    } ]
+  }, {
+    "tStartMs": 574120,
+    "dDurationMs": 1560,
+    "segs": [ {
+      "utf8": "I think we've done that so far at FERC."
+    } ]
+  }, {
+    "tStartMs": 575740,
+    "dDurationMs": 4060,
+    "segs": [ {
+      "utf8": "I think we've got about a 96 percent 5-0 vote ratio."
+    } ]
+  }, {
+    "tStartMs": 580560,
+    "dDurationMs": 940,
+    "segs": [ {
+      "utf8": "So I'm proud of that."
+    } ]
+  }, {
+    "tStartMs": 582020,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "And I'm always someone that can have an open mind."
+    } ]
+  }, {
+    "tStartMs": 585100,
+    "dDurationMs": 5420,
+    "segs": [ {
+      "utf8": "And I will listen if there's a varying degree of opinion that we need to change in order to modify it."
+    } ]
+  }, {
+    "tStartMs": 590640,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "If we can tweak it one way or another that gets everybody on board, I think we should do that."
+    } ]
+  }, {
+    "tStartMs": 594600,
+    "dDurationMs": 3980,
+    "segs": [ {
+      "utf8": "So my philosophy is more collaboration, especially in the current environment."
+    } ]
+  }, {
+    "tStartMs": 599000,
+    "dDurationMs": 6400,
+    "segs": [ {
+      "utf8": "And I think we could be a leader in that in all of Washington, because I think all of Washington probably needs more of that these days."
+    } ]
+  }, {
+    "tStartMs": 606060,
+    "dDurationMs": 4980,
+    "segs": [ {
+      "utf8": "So setting our differences in the margins and working on the things between the margins, I think, is important."
+    } ]
+  }, {
+    "tStartMs": 612120,
+    "dDurationMs": 2940,
+    "segs": [ {
+      "utf8": "So that's kind of been a hallmark of ours so far at FERC."
+    } ]
+  }, {
+    "tStartMs": 615100,
+    "dDurationMs": 1100,
+    "segs": [ {
+      "utf8": "I think you're going to see that continue."
+    } ]
+  }, {
+    "tStartMs": 617060,
+    "dDurationMs": 11900,
+    "segs": [ {
+      "utf8": "Well, that's perfect, because you're sort of foreshadowing the next question I had, which is now you're part of a five-member, fully staffed, bipartisan agency."
+    } ]
+  }, {
+    "tStartMs": 629320,
+    "dDurationMs": 7800,
+    "segs": [ {
+      "utf8": "And it seems like the word bipartisan is used more rarely these days or almost viewed as a dirty word at times, right?"
+    } ]
+  }, {
+    "tStartMs": 637980,
+    "dDurationMs": 8980,
+    "segs": [ {
+      "utf8": "I guess what I'm curious about is how's everyone getting along there in this kind of more partisan environment?"
+    } ]
+  }, {
+    "tStartMs": 648480,
+    "dDurationMs": 1140,
+    "segs": [ {
+      "utf8": "What's the decision-making?"
+    } ]
+  }, {
+    "tStartMs": 649700,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "You talked about this a little bit, but maybe you can talk a little bit more."
+    } ]
+  }, {
+    "tStartMs": 652240,
+    "dDurationMs": 10520,
+    "segs": [ {
+      "utf8": "What's the decision-making atmosphere with a bipartisan commission and trying to arrive at collaboration and consensus on different and sometimes pretty tricky issues?"
+    } ]
+  }, {
+    "tStartMs": 662760,
+    "dDurationMs": 6460,
+    "segs": [ {
+      "utf8": "Yeah, some things you're going to not just have consensus on, and that's okay, because we still need to take action."
+    } ]
+  }, {
+    "tStartMs": 670140,
+    "dDurationMs": 3240,
+    "segs": [ {
+      "utf8": "But working up to that point where you put your pencils down is important."
+    } ]
+  }, {
+    "tStartMs": 674280,
+    "dDurationMs": 7020,
+    "segs": [ {
+      "utf8": "I think that the body of FERC, be it commissioner or staff, is really quality."
+    } ]
+  }, {
+    "tStartMs": 681680,
+    "dDurationMs": 7100,
+    "segs": [ {
+      "utf8": "I think we've got a lot of really outstanding staff members that drive some of our analysis and can drive these discussions amongst themselves to help their principals."
+    } ]
+  }, {
+    "tStartMs": 689200,
+    "dDurationMs": 760,
+    "segs": [ {
+      "utf8": "I think that's important."
+    } ]
+  }, {
+    "tStartMs": 690120,
+    "dDurationMs": 680,
+    "segs": [ {
+      "utf8": "That's paramount."
+    } ]
+  }, {
+    "tStartMs": 691400,
+    "dDurationMs": 10200,
+    "segs": [ {
+      "utf8": "And to say that I've been – reaffirmed my confirmation in the validation of the federal workforce would be a misnomer, because I don't think I had it before I came to FERC."
+    } ]
+  }, {
+    "tStartMs": 702460,
+    "dDurationMs": 6940,
+    "segs": [ {
+      "utf8": "But the quality of work that has come out of FERC, the quality of people that work at FERC, it really is inspiring."
+    } ]
+  }, {
+    "tStartMs": 709860,
+    "dDurationMs": 7620,
+    "segs": [ {
+      "utf8": "So I think it's important that the staff can work together, and it's important that the principals and the commissioners can work together and show them how that's done."
+    } ]
+  }, {
+    "tStartMs": 717480,
+    "dDurationMs": 1500,
+    "segs": [ {
+      "utf8": "And I think we've done that."
+    } ]
+  }, {
+    "tStartMs": 720400,
+    "dDurationMs": 13600,
+    "segs": [ {
+      "utf8": "And I think all the commissioners will get together at least once a month, supervised by general counsel, of course, to make sure there's no sunshine violations, in which we roast them pretty good, and we push the envelope, and we make them feel real uncomfortable before he has to tell us to stop talking."
+    } ]
+  }, {
+    "tStartMs": 735060,
+    "dDurationMs": 12620,
+    "segs": [ {
+      "utf8": "But we also get together outside of the office pretty regularly too, whether that be at an event, whether that be in the office in D.C., just to kind of build that familiarity, that comfortability, so that going back and forth is more natural."
+    } ]
+  }, {
+    "tStartMs": 748120,
+    "dDurationMs": 640,
+    "segs": [ {
+      "utf8": "I think that's important."
+    } ]
+  }, {
+    "tStartMs": 749020,
+    "dDurationMs": 1700,
+    "segs": [ {
+      "utf8": "And yesteryear, you didn't really have that."
+    } ]
+  }, {
+    "tStartMs": 750940,
+    "dDurationMs": 6240,
+    "segs": [ {
+      "utf8": "I think my good friend Chris Stanley might tell you that he's going to give his opinion, and he doesn't give a damn what the other commissioners think."
+    } ]
+  }, {
+    "tStartMs": 758440,
+    "dDurationMs": 3900,
+    "segs": [ {
+      "utf8": "And I appreciate being principled when you need to, but it doesn't always have to be that way."
+    } ]
+  }, {
+    "tStartMs": 762900,
+    "dDurationMs": 1740,
+    "segs": [ {
+      "utf8": "So I think we've got a great group of commissioners."
+    } ]
+  }, {
+    "tStartMs": 764720,
+    "dDurationMs": 4640,
+    "segs": [ {
+      "utf8": "I know Humphrey's executive was decided last week, and a lot of people are uncomfortable about that."
+    } ]
+  }, {
+    "tStartMs": 769880,
+    "dDurationMs": 4280,
+    "segs": [ {
+      "utf8": "But for me, I think this is a natural progression of what the executive should be."
+    } ]
+  }, {
+    "tStartMs": 774480,
+    "dDurationMs": 3480,
+    "segs": [ {
+      "utf8": "There needs to be accountability of FERC to the elected leader of the executive branch."
+    } ]
+  }, {
+    "tStartMs": 778260,
+    "dDurationMs": 4040,
+    "segs": [ {
+      "utf8": "And trust me, that's come from me, who's been a leader of an agency under the Biden administration."
+    } ]
+  }, {
+    "tStartMs": 782460,
+    "dDurationMs": 7760,
+    "segs": [ {
+      "utf8": "I was an independent appointee leading a group of Biden and Trump appointees under a Trump chair, where we didn't always get along."
+    } ]
+  }, {
+    "tStartMs": 790420,
+    "dDurationMs": 920,
+    "segs": [ {
+      "utf8": "And it wears a lot of dysfunction."
+    } ]
+  }, {
+    "tStartMs": 791680,
+    "dDurationMs": 9840,
+    "segs": [ {
+      "utf8": "So it's good to see that we're functional, that we can prove that we're going to add stability to the markets, that you're going to understand and expect to see a lot of rulings that we make."
+    } ]
+  }, {
+    "tStartMs": 802680,
+    "dDurationMs": 5080,
+    "segs": [ {
+      "utf8": "And I think that builds stability, and it builds comfortability for investment, which is more important at FERC than anywhere else."
+    } ]
+  }, {
+    "tStartMs": 809700,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "So I want to pivot a little bit."
+    } ]
+  }, {
+    "tStartMs": 811240,
+    "dDurationMs": 2440,
+    "segs": [ {
+      "utf8": "WIRES, of course, is a transmission-focused group."
+    } ]
+  }, {
+    "tStartMs": 813780,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "I'd like to talk a little bit about that."
+    } ]
+  }, {
+    "tStartMs": 815420,
+    "dDurationMs": 4060,
+    "segs": [ {
+      "utf8": "And I know we won't get into any contested proceedings or anything like that."
+    } ]
+  }, {
+    "tStartMs": 819580,
+    "dDurationMs": 3420,
+    "segs": [ {
+      "utf8": "I know we've got five advisors out there who will clear their throats if we do."
+    } ]
+  }, {
+    "tStartMs": 823000,
+    "dDurationMs": 3120,
+    "segs": [ {
+      "utf8": "So I'm going to throw a paper airplane at me if I start talking about something ex-parte."
+    } ]
+  }, {
+    "tStartMs": 826120,
+    "dDurationMs": 2020,
+    "segs": [ {
+      "utf8": "I do, so I'll keep it more general."
+    } ]
+  }, {
+    "tStartMs": 828660,
+    "dDurationMs": 12160,
+    "segs": [ {
+      "utf8": "But starting at a really high level, what do you see as the role and the importance and the place of transmission in the broader energy picture for the country?"
+    } ]
+  }, {
+    "tStartMs": 841380,
+    "dDurationMs": 4460,
+    "segs": [ {
+      "utf8": "Look, transmission is absolutely essential if we're going to be successful."
+    } ]
+  }, {
+    "tStartMs": 846500,
+    "dDurationMs": 2540,
+    "segs": [ {
+      "utf8": "We need to modernize a lot of our transmission structures."
+    } ]
+  }, {
+    "tStartMs": 849260,
+    "dDurationMs": 1020,
+    "segs": [ {
+      "utf8": "We need to add new transmission."
+    } ]
+  }, {
+    "tStartMs": 850640,
+    "dDurationMs": 940,
+    "segs": [ {
+      "utf8": "That's without question."
+    } ]
+  }, {
+    "tStartMs": 851580,
+    "dDurationMs": 8260,
+    "segs": [ {
+      "utf8": "I think that any time we're experiencing a period of load growth we're seeing now, you can't do it without new transmission."
+    } ]
+  }, {
+    "tStartMs": 860080,
+    "dDurationMs": 440,
+    "segs": [ {
+      "utf8": "It's impossible."
+    } ]
+  }, {
+    "tStartMs": 861060,
+    "dDurationMs": 1360,
+    "segs": [ {
+      "utf8": "So it's an integral part."
+    } ]
+  }, {
+    "tStartMs": 862780,
+    "dDurationMs": 2380,
+    "segs": [ {
+      "utf8": "If you extract new transmission from the equation, we lose."
+    } ]
+  }, {
+    "tStartMs": 865580,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "So that's known to us."
+    } ]
+  }, {
+    "tStartMs": 867560,
+    "dDurationMs": 820,
+    "segs": [ {
+      "utf8": "We understand that."
+    } ]
+  }, {
+    "tStartMs": 868780,
+    "dDurationMs": 2340,
+    "segs": [ {
+      "utf8": "And it's something that's top of mind as we continue to move forward."
+    } ]
+  }, {
+    "tStartMs": 871200,
+    "dDurationMs": 11260,
+    "segs": [ {
+      "utf8": "That being said, we need to become more efficient across the board, whether that's on the gen side, whether that's on interconnection side, whether that's on the new wire side, whether that's on improving the existing wires that we have."
+    } ]
+  }, {
+    "tStartMs": 882560,
+    "dDurationMs": 2960,
+    "segs": [ {
+      "utf8": "I think all of the above have to be accomplished if we're going to win."
+    } ]
+  }, {
+    "tStartMs": 887320,
+    "dDurationMs": 7480,
+    "segs": [ {
+      "utf8": "So one of the real areas of focus increasingly is trying to get things done faster."
+    } ]
+  }, {
+    "tStartMs": 895980,
+    "dDurationMs": 7240,
+    "segs": [ {
+      "utf8": "And it feels like we're actually in an environment where although everybody wants it to be done faster, it's actually taking longer."
+    } ]
+  }, {
+    "tStartMs": 904140,
+    "dDurationMs": 14680,
+    "segs": [ {
+      "utf8": "And I guess I'm curious as to what thoughts you have on how transmission owners and developers can try to speed up that process and try to meet the demands of getting more infrastructure built on a shorter timetable than we're doing today."
+    } ]
+  }, {
+    "tStartMs": 919580,
+    "dDurationMs": 2460,
+    "segs": [ {
+      "utf8": "Yeah, that's a trillion-dollar question."
+    } ]
+  }, {
+    "tStartMs": 923160,
+    "dDurationMs": 2980,
+    "segs": [ {
+      "utf8": "And I'd be lying if I told you I knew the exact answer."
+    } ]
+  }, {
+    "tStartMs": 926140,
+    "dDurationMs": 7800,
+    "segs": [ {
+      "utf8": "But it starts with better communication, better collaboration, both with the states, both with FERC, both with colleagues, competitors, all of the above."
+    } ]
+  }, {
+    "tStartMs": 934400,
+    "dDurationMs": 10620,
+    "segs": [ {
+      "utf8": "I think that any time we can get a fully-baked, consensus-driven proposal before us at FERC, it's going to go astronomically faster than if we're doing a lot of infighting."
+    } ]
+  }, {
+    "tStartMs": 946080,
+    "dDurationMs": 11880,
+    "segs": [ {
+      "utf8": "So getting us proposals that are fully-baked and fleshed out in advance that we've met with individuals on a pre-file meeting and we've had an opportunity to ask questions and collaborate and go back and forth is important."
+    } ]
+  }, {
+    "tStartMs": 958360,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": "So I encourage everyone to take advantage of your pre-file period."
+    } ]
+  }, {
+    "tStartMs": 961700,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "But that being said, also, we do a better job of educating the states on what's important."
+    } ]
+  }, {
+    "tStartMs": 965840,
+    "dDurationMs": 4320,
+    "segs": [ {
+      "utf8": "And we've driven a lot of our decisions based on politics, based on carbon goals."
+    } ]
+  }, {
+    "tStartMs": 970160,
+    "dDurationMs": 8340,
+    "segs": [ {
+      "utf8": "And I think the days of having that be an impediment to success, we have to try to put that to the side as much as we can."
+    } ]
+  }, {
+    "tStartMs": 981930,
+    "dDurationMs": 18880,
+    "segs": [ {
+      "utf8": "How do you think transmission owners can help balance the need to support some of these emerging economic drivers like AI and data centers while, at the same time, continuing to provide the support and meet the traditional mission they've had with respect to existing ratepayers?"
+    } ]
+  }, {
+    "tStartMs": 1000810,
+    "dDurationMs": 16000,
+    "segs": [ {
+      "utf8": "Yeah, I think there's a big opportunity right now with a lot of our software development and all the advancements on how we can quantify, on a qualitative basis as well, just show how a new line improves reliability and affordability."
+    } ]
+  }, {
+    "tStartMs": 1017390,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "So those are going to be the two major fulcrums of what we're interested in at FERC."
+    } ]
+  }, {
+    "tStartMs": 1021250,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "So how do we do that?"
+    } ]
+  }, {
+    "tStartMs": 1022930,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "I think that I'm always going to ask a question on a pre-file meeting, show me the economics."
+    } ]
+  }, {
+    "tStartMs": 1027170,
+    "dDurationMs": 4000,
+    "segs": [ {
+      "utf8": "Show me how this line makes sense on an economic basis."
+    } ]
+  }, {
+    "tStartMs": 1031569,
+    "dDurationMs": 2621,
+    "segs": [ {
+      "utf8": "And we can do that much more efficiently now than we could in the past."
+    } ]
+  }, {
+    "tStartMs": 1035630,
+    "dDurationMs": 4260,
+    "segs": [ {
+      "utf8": "So that's something that I'll always ask, and I always encourage my fellow commissioners to ask as well."
+    } ]
+  }, {
+    "tStartMs": 1040710,
+    "dDurationMs": 14760,
+    "segs": [ {
+      "utf8": "And in the past, perhaps, some applicants haven't done such a good a job of proving this and showing how the ratepayer is not going to be unduly burdened for a new line, for a new resource, for a variance to one degree or another."
+    } ]
+  }, {
+    "tStartMs": 1055470,
+    "dDurationMs": 6220,
+    "segs": [ {
+      "utf8": "So I think flushing these issues out and removing the unknowns, I think, is paramount to moving faster."
+    } ]
+  }, {
+    "tStartMs": 1062250,
+    "dDurationMs": 1600,
+    "segs": [ {
+      "utf8": "And it starts with you all."
+    } ]
+  }, {
+    "tStartMs": 1063930,
+    "dDurationMs": 1420,
+    "segs": [ {
+      "utf8": "It starts with the transmission organizations."
+    } ]
+  }, {
+    "tStartMs": 1065870,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "It starts with the applicants before us."
+    } ]
+  }, {
+    "tStartMs": 1068210,
+    "dDurationMs": 7620,
+    "segs": [ {
+      "utf8": "So there's always a degree of unknown when you're litigating anything, and FERC's to be included in that."
+    } ]
+  }, {
+    "tStartMs": 1076150,
+    "dDurationMs": 4920,
+    "segs": [ {
+      "utf8": "So removing the variables, I think, is going to impact the process to make things more fast."
+    } ]
+  }, {
+    "tStartMs": 1082910,
+    "dDurationMs": 7820,
+    "segs": [ {
+      "utf8": "So from a transmission perspective, we kind of view it as like three different buckets in terms of types of transmission."
+    } ]
+  }, {
+    "tStartMs": 1090990,
+    "dDurationMs": 2840,
+    "segs": [ {
+      "utf8": "You've got inter-regional transmission."
+    } ]
+  }, {
+    "tStartMs": 1094410,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "You've got regional."
+    } ]
+  }, {
+    "tStartMs": 1096270,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "And then you've got local as well."
+    } ]
+  }, {
+    "tStartMs": 1099250,
+    "dDurationMs": 3320,
+    "segs": [ {
+      "utf8": "And all three have different needs associated with them."
+    } ]
+  }, {
+    "tStartMs": 1102570,
+    "dDurationMs": 10080,
+    "segs": [ {
+      "utf8": "I guess from your perspective, do you see between those three, one area emerging as having a greater need as opposed to the others?"
+    } ]
+  }, {
+    "tStartMs": 1114790,
+    "dDurationMs": 4540,
+    "segs": [ {
+      "utf8": "And is one of those more impactful than the others, perhaps?"
+    } ]
+  }, {
+    "tStartMs": 1119750,
+    "dDurationMs": 2580,
+    "segs": [ {
+      "utf8": "Yeah, I think, first of all, you need all three."
+    } ]
+  }, {
+    "tStartMs": 1122610,
+    "dDurationMs": 3680,
+    "segs": [ {
+      "utf8": "So I don't think there's one leg on that stool that's more important than the others."
+    } ]
+  }, {
+    "tStartMs": 1126290,
+    "dDurationMs": 13700,
+    "segs": [ {
+      "utf8": "But I do think the local transmission has probably exceeded the other two categories to a non-small amount over the past number of years."
+    } ]
+  }, {
+    "tStartMs": 1140170,
+    "dDurationMs": 3900,
+    "segs": [ {
+      "utf8": "That's to a nature of different things, Federal Power Act being the number one driver."
+    } ]
+  }, {
+    "tStartMs": 1145310,
+    "dDurationMs": 1800,
+    "segs": [ {
+      "utf8": "So I think that you need all three."
+    } ]
+  }, {
+    "tStartMs": 1147470,
+    "dDurationMs": 2420,
+    "segs": [ {
+      "utf8": "I'd be hesitant to say one's more important than the others."
+    } ]
+  }, {
+    "tStartMs": 1150750,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "And they're all important."
+    } ]
+  }, {
+    "tStartMs": 1154390,
+    "dDurationMs": 12680,
+    "segs": [ {
+      "utf8": "So in addition to meeting just the new needs associated with transmission, we're also facing the situation where we've got some pretty aging infrastructure out there."
+    } ]
+  }, {
+    "tStartMs": 1167370,
+    "dDurationMs": 6340,
+    "segs": [ {
+      "utf8": "As you know, a lot of the system was built back in the 1950s and 1960s."
+    } ]
+  }, {
+    "tStartMs": 1173750,
+    "dDurationMs": 5620,
+    "segs": [ {
+      "utf8": "I like to joke that if it was a person, it'd be on Social Security or Medicare at this point."
+    } ]
+  }, {
+    "tStartMs": 1179930,
+    "dDurationMs": 4880,
+    "segs": [ {
+      "utf8": "And some of it even is pushing the century mark or even a little bit greater."
+    } ]
+  }, {
+    "tStartMs": 1184950,
+    "dDurationMs": 8060,
+    "segs": [ {
+      "utf8": "So there's a lot of need not just to build more and broaden the system but to replace some of the existing system."
+    } ]
+  }, {
+    "tStartMs": 1194050,
+    "dDurationMs": 9140,
+    "segs": [ {
+      "utf8": "And I guess this ties into a bigger issue that we've been seeing developing over the years as well, which recent years in particular around messaging on affordability."
+    } ]
+  }, {
+    "tStartMs": 1203190,
+    "dDurationMs": 9940,
+    "segs": [ {
+      "utf8": "So trying to meet all of these needs, put all that investment in the infrastructure while trying to be sensitive to affordability and reliability as well."
+    } ]
+  }, {
+    "tStartMs": 1213250,
+    "dDurationMs": 2700,
+    "segs": [ {
+      "utf8": "How do we go about trying to strike that right balance?"
+    } ]
+  }, {
+    "tStartMs": 1216470,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "Yeah, I think that's important."
+    } ]
+  }, {
+    "tStartMs": 1218270,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "Striking the right balance is really the trick."
+    } ]
+  }, {
+    "tStartMs": 1220830,
+    "dDurationMs": 3240,
+    "segs": [ {
+      "utf8": "And I know I spent yesterday afternoon at Valley Forge."
+    } ]
+  }, {
+    "tStartMs": 1224250,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": "I don't know if Craig's here today or Chris is here today."
+    } ]
+  }, {
+    "tStartMs": 1227530,
+    "dDurationMs": 9460,
+    "segs": [ {
+      "utf8": "But looking at some of their lines, the high voltage lines that they have within their regions, you can really tell which regions have been more aggressive with it over the past number of years."
+    } ]
+  }, {
+    "tStartMs": 1237110,
+    "dDurationMs": 3620,
+    "segs": [ {
+      "utf8": "I know coal was a big driver of that when these lines were created back in the 60s."
+    } ]
+  }, {
+    "tStartMs": 1241330,
+    "dDurationMs": 3640,
+    "segs": [ {
+      "utf8": "But I'm someone who has an 85-year-old local transmission line behind my house."
+    } ]
+  }, {
+    "tStartMs": 1245450,
+    "dDurationMs": 1260,
+    "segs": [ {
+      "utf8": "So I certainly understand."
+    } ]
+  }, {
+    "tStartMs": 1247550,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "So it's not just the high voltage stuff."
+    } ]
+  }, {
+    "tStartMs": 1249110,
+    "dDurationMs": 1540,
+    "segs": [ {
+      "utf8": "It's the local transmission as well."
+    } ]
+  }, {
+    "tStartMs": 1251190,
+    "dDurationMs": 5820,
+    "segs": [ {
+      "utf8": "So I know we referenced this in our recent batch of 206s about advanced transmission technologies."
+    } ]
+  }, {
+    "tStartMs": 1257330,
+    "dDurationMs": 3420,
+    "segs": [ {
+      "utf8": "I think you're going to continue to see us focus on these areas as we move forward."
+    } ]
+  }, {
+    "tStartMs": 1261230,
+    "dDurationMs": 9260,
+    "segs": [ {
+      "utf8": "I spent last week out at the National Labs talking about some of their metrics for advanced transmission and economics as involved because sometimes they're just focused on the science."
+    } ]
+  }, {
+    "tStartMs": 1270730,
+    "dDurationMs": 3840,
+    "segs": [ {
+      "utf8": "But, of course, we're more focused on the economy of things as an economic regulator."
+    } ]
+  }, {
+    "tStartMs": 1274570,
+    "dDurationMs": 6360,
+    "segs": [ {
+      "utf8": "So hitting that right mark on balance between investment and bang for your buck is going to be the real focal point here."
+    } ]
+  }, {
+    "tStartMs": 1281930,
+    "dDurationMs": 6820,
+    "segs": [ {
+      "utf8": "So I want to give everybody a little bit of advanced warning that the commissioners agreed to take questions from the audience."
+    } ]
+  }, {
+    "tStartMs": 1289930,
+    "dDurationMs": 8900,
+    "segs": [ {
+      "utf8": "So start thinking about what questions – this is your chance, right, to throw the tough ones at them and see what the answers are."
+    } ]
+  }, {
+    "tStartMs": 1298970,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "So I'd like you to all start thinking about it."
+    } ]
+  }, {
+    "tStartMs": 1300430,
+    "dDurationMs": 1700,
+    "segs": [ {
+      "utf8": "I've got a couple more questions I want to go through."
+    } ]
+  }, {
+    "tStartMs": 1302130,
+    "dDurationMs": 3760,
+    "segs": [ {
+      "utf8": "But in the meantime, start thinking about what you'd like to ask the commissioner."
+    } ]
+  }, {
+    "tStartMs": 1307050,
+    "dDurationMs": 7720,
+    "segs": [ {
+      "utf8": "And, you know, once again, you've kind of alluded to what I'm thinking about in terms of the next question, which is focused on GETS, advanced technologies."
+    } ]
+  }, {
+    "tStartMs": 1315810,
+    "dDurationMs": 5180,
+    "segs": [ {
+      "utf8": "It's really been mixed in in the context of the affordability question."
+    } ]
+  }, {
+    "tStartMs": 1322330,
+    "dDurationMs": 5260,
+    "segs": [ {
+      "utf8": "But we know that these technologies are important, but they're not going to get us everywhere, right?"
+    } ]
+  }, {
+    "tStartMs": 1327590,
+    "dDurationMs": 9140,
+    "segs": [ {
+      "utf8": "And in some instances, the upfront costs are going to be higher, and that's a consideration as to how you fit it into the system."
+    } ]
+  }, {
+    "tStartMs": 1338030,
+    "dDurationMs": 16280,
+    "segs": [ {
+      "utf8": "Do you have any thoughts, or do you think the commission is open to or starting to think about, are there incentives or other things that they could do to try to spur greater use or investment in these technologies into the grid for the long-term savings that you might be able to get out of it?"
+    } ]
+  }, {
+    "tStartMs": 1354310,
+    "dDurationMs": 10680,
+    "segs": [ {
+      "utf8": "Yeah, I know, at least with the advisor portion of the crowd today, they're probably collectively groaning at the discussion of incentives, because I know we've been talking about this very intimately on the 11th floor."
+    } ]
+  }, {
+    "tStartMs": 1366070,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "I think that everything should be on the table."
+    } ]
+  }, {
+    "tStartMs": 1368230,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "I think that, first of all, I believe that GETS and new transmission go hand in hand."
+    } ]
+  }, {
+    "tStartMs": 1372050,
+    "dDurationMs": 5720,
+    "segs": [ {
+      "utf8": "And I truly think that we should look at things more collaboratively across the new transmission and GETS sectors."
+    } ]
+  }, {
+    "tStartMs": 1378450,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "And I think that's only going to result in better outcomes for the average Americans."
+    } ]
+  }, {
+    "tStartMs": 1382330,
+    "dDurationMs": 9660,
+    "segs": [ {
+      "utf8": "So how we incentivize new projects or enhancements to projects, I think it's pretty stale at the commission."
+    } ]
+  }, {
+    "tStartMs": 1392390,
+    "dDurationMs": 9400,
+    "segs": [ {
+      "utf8": "I think that we have a history of adopting an incentive structure and then putting it on a shelf and not revisiting it for 20 years sometimes."
+    } ]
+  }, {
+    "tStartMs": 1402430,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "And I think those days have got to be over."
+    } ]
+  }, {
+    "tStartMs": 1404990,
+    "dDurationMs": 4780,
+    "segs": [ {
+      "utf8": "And I think that we need to make sure that we're tailoring our incentive structures to outcomes."
+    } ]
+  }, {
+    "tStartMs": 1409770,
+    "dDurationMs": 2540,
+    "segs": [ {
+      "utf8": "And I don't think we do the best job of doing that at FERC."
+    } ]
+  }, {
+    "tStartMs": 1412710,
+    "dDurationMs": 6260,
+    "segs": [ {
+      "utf8": "So these are things that we're actively discussing on the 11th floor, and we're continuing to orbit on."
+    } ]
+  }, {
+    "tStartMs": 1419010,
+    "dDurationMs": 6280,
+    "segs": [ {
+      "utf8": "But we need to make sure we do it in a way that is laser-focused on outcome and laser-focused on durability as well."
+    } ]
+  }, {
+    "tStartMs": 1425470,
+    "dDurationMs": 2900,
+    "segs": [ {
+      "utf8": "We also can't litigate these things forever and ever like we used to."
+    } ]
+  }, {
+    "tStartMs": 1428850,
+    "dDurationMs": 4660,
+    "segs": [ {
+      "utf8": "So these are all really challenging points that we need to kind of hit a mark here."
+    } ]
+  }, {
+    "tStartMs": 1434290,
+    "dDurationMs": 5600,
+    "segs": [ {
+      "utf8": "And it's kind of like we're flying a helicopter here and trying to land it on a really small landing pad in the middle of the ocean."
+    } ]
+  }, {
+    "tStartMs": 1441610,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "So it's a difficult thing to get right, but we absolutely have to."
+    } ]
+  }, {
+    "tStartMs": 1445870,
+    "dDurationMs": 4620,
+    "segs": [ {
+      "utf8": "So we're trying to look at things differently than we used to, and I think that probably is one of the reasons why I'm at FERC."
+    } ]
+  }, {
+    "tStartMs": 1451570,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": "So it's challenging, but I think it's collaborative."
+    } ]
+  }, {
+    "tStartMs": 1454350,
+    "dDurationMs": 4120,
+    "segs": [ {
+      "utf8": "I think that all of these things tie in together, and we can do a better job of tying them together."
+    } ]
+  }, {
+    "tStartMs": 1459970,
+    "dDurationMs": 8320,
+    "segs": [ {
+      "utf8": "So now I want to kind of look ahead to actually the next panel that's coming up, because I've got a question that kind of ties into the focus that they're going to be looking at."
+    } ]
+  }, {
+    "tStartMs": 1469250,
+    "dDurationMs": 10120,
+    "segs": [ {
+      "utf8": "And in particular, I want to ask you about within the last month, Fitch Ratings came out with an update to their outlook on the industry."
+    } ]
+  }, {
+    "tStartMs": 1480270,
+    "dDurationMs": 9260,
+    "segs": [ {
+      "utf8": "And they actually downgraded the outlook for energy utilities and the power sector to what they described as deteriorating."
+    } ]
+  }, {
+    "tStartMs": 1491390,
+    "dDurationMs": 13760,
+    "segs": [ {
+      "utf8": "And I guess I'm, in particular, they determined that based on or tied it to risks associated with this whole affordability question and what's been happening with the developments on that."
+    } ]
+  }, {
+    "tStartMs": 1505150,
+    "dDurationMs": 11420,
+    "segs": [ {
+      "utf8": "So my question to you is, are you concerned about a characterization of a deteriorating investment climate for the utilities?"
+    } ]
+  }, {
+    "tStartMs": 1518550,
+    "dDurationMs": 7980,
+    "segs": [ {
+      "utf8": "And is there any thinking in terms of FERC as to whether any actions or things they could do could help address that development?"
+    } ]
+  }, {
+    "tStartMs": 1527590,
+    "dDurationMs": 4560,
+    "segs": [ {
+      "utf8": "Yeah, I'm going to call back to my six hours of college economics."
+    } ]
+  }, {
+    "tStartMs": 1532150,
+    "dDurationMs": 6340,
+    "segs": [ {
+      "utf8": "So I'm a lawyer, not an economist, but I can tell you that we're operating in a period of explosive growth."
+    } ]
+  }, {
+    "tStartMs": 1539090,
+    "dDurationMs": 6060,
+    "segs": [ {
+      "utf8": "And when you're operating in a period of explosive growth, that is a massive opportunity that we'll never see again."
+    } ]
+  }, {
+    "tStartMs": 1545810,
+    "dDurationMs": 10800,
+    "segs": [ {
+      "utf8": "So the credit agencies need to properly handicap that in their ratings, because there's going to be a lot of money that is invested into our grid over the next 20 years."
+    } ]
+  }, {
+    "tStartMs": 1557890,
+    "dDurationMs": 1380,
+    "segs": [ {
+      "utf8": "There's no doubt about that."
+    } ]
+  }, {
+    "tStartMs": 1559270,
+    "dDurationMs": 7400,
+    "segs": [ {
+      "utf8": "So when you're talking about the financial outlook of utilities, you can look at their stock price, and I can tell you that they're not exactly hurting."
+    } ]
+  }, {
+    "tStartMs": 1567790,
+    "dDurationMs": 5360,
+    "segs": [ {
+      "utf8": "So I don't agree with their credit ratings, but also we need to be mindful of that signal and what it means to the industry."
+    } ]
+  }, {
+    "tStartMs": 1574630,
+    "dDurationMs": 6820,
+    "segs": [ {
+      "utf8": "Also, utilities right now are an easy punching bag for the average Americans, because when they get these bills in, no one understands them, including myself."
+    } ]
+  }, {
+    "tStartMs": 1582190,
+    "dDurationMs": 4140,
+    "segs": [ {
+      "utf8": "I was with Entergy at a meeting a couple weeks ago, and I was like, why am I getting a streetlight fee?"
+    } ]
+  }, {
+    "tStartMs": 1587530,
+    "dDurationMs": 1360,
+    "segs": [ {
+      "utf8": "It's one of these things."
+    } ]
+  }, {
+    "tStartMs": 1589510,
+    "dDurationMs": 3540,
+    "segs": [ {
+      "utf8": "If the FERC commissioner is asking these questions, God help the average American."
+    } ]
+  }, {
+    "tStartMs": 1594150,
+    "dDurationMs": 4760,
+    "segs": [ {
+      "utf8": "So I think the utilities have to do a better job of being out front with their public-facing education efforts."
+    } ]
+  }, {
+    "tStartMs": 1599590,
+    "dDurationMs": 8300,
+    "segs": [ {
+      "utf8": "Also, the hyperscalers, and I've said this before, the hyperscalers have done a terrible job of educating the average Americans as to what data centers mean for their quality of life."
+    } ]
+  }, {
+    "tStartMs": 1608930,
+    "dDurationMs": 6060,
+    "segs": [ {
+      "utf8": "I know I was with the Alphabet CEO at Edison last month, and she really articulated it well."
+    } ]
+  }, {
+    "tStartMs": 1614990,
+    "dDurationMs": 12300,
+    "segs": [ {
+      "utf8": "If we're talking about a nursing staff which spends 45% of their time doing paperwork, and that can be reduced to 5% of their time so they can treat patients the rest of the time, that's going to lead to better outcomes for the average American."
+    } ]
+  }, {
+    "tStartMs": 1627650,
+    "dDurationMs": 1720,
+    "segs": [ {
+      "utf8": "That's going to lead to healthier populations."
+    } ]
+  }, {
+    "tStartMs": 1629950,
+    "dDurationMs": 9660,
+    "segs": [ {
+      "utf8": "If we're talking about policing and the efforts that AI can assist in law enforcement in cutting down their administrative burden, that's going to lead to safer communities."
+    } ]
+  }, {
+    "tStartMs": 1640710,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": "In the national defense applications, the list goes on and on and on and on."
+    } ]
+  }, {
+    "tStartMs": 1644070,
+    "dDurationMs": 6740,
+    "segs": [ {
+      "utf8": "The average American just thinks of data centers as their grandma's Christmas card when she's holding a cartoon lollipop and sending it out to her grandkids."
+    } ]
+  }, {
+    "tStartMs": 1651410,
+    "dDurationMs": 1300,
+    "segs": [ {
+      "utf8": "That's not what AI is."
+    } ]
+  }, {
+    "tStartMs": 1653250,
+    "dDurationMs": 4720,
+    "segs": [ {
+      "utf8": "It is what AI is, but videos of chimpanzees riding eagles is not all AI."
+    } ]
+  }, {
+    "tStartMs": 1660810,
+    "dDurationMs": 5860,
+    "segs": [ {
+      "utf8": "So it's a collaboration across the board to be better at educating what a data center is, what a large load is."
+    } ]
+  }, {
+    "tStartMs": 1667310,
+    "dDurationMs": 6560,
+    "segs": [ {
+      "utf8": "But the average Americans, all they care about is the lights come on when they hit the switch, and they're not shocked by the bill at the end of the month."
+    } ]
+  }, {
+    "tStartMs": 1674030,
+    "dDurationMs": 1200,
+    "segs": [ {
+      "utf8": "That's all the average Americans care about."
+    } ]
+  }, {
+    "tStartMs": 1675670,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "So educating these things needs to be an ongoing effort."
+    } ]
+  }, {
+    "tStartMs": 1678430,
+    "dDurationMs": 7900,
+    "segs": [ {
+      "utf8": "The credit agencies, it is concerning, the discussion of affordability, but we have to be laser focused on protecting those average Americans who live paycheck to paycheck."
+    } ]
+  }, {
+    "tStartMs": 1686530,
+    "dDurationMs": 840,
+    "segs": [ {
+      "utf8": "That's just a fact of the matter."
+    } ]
+  }, {
+    "tStartMs": 1687710,
+    "dDurationMs": 2380,
+    "segs": [ {
+      "utf8": "So it comes down to which one are we going to choose between the two."
+    } ]
+  }, {
+    "tStartMs": 1690190,
+    "dDurationMs": 860,
+    "segs": [ {
+      "utf8": "I think you know my answer."
+    } ]
+  }, {
+    "tStartMs": 1691690,
+    "dDurationMs": 7580,
+    "segs": [ {
+      "utf8": "But at the same time, we need to be mindful of the larger climate environment on affordability because that opportunity for growth can't be ignored."
+    } ]
+  }, {
+    "tStartMs": 1699270,
+    "dDurationMs": 2020,
+    "segs": [ {
+      "utf8": "I think if you're a credit agency, you can see."
+    } ]
+  }, {
+    "tStartMs": 1701670,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "Everybody in this sector is going to make a lot of money over the next 20 years."
+    } ]
+  }, {
+    "tStartMs": 1705490,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "Some people are going to do better than others, sure."
+    } ]
+  }, {
+    "tStartMs": 1708630,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "But I just don't agree with a credit downgrade."
+    } ]
+  }, {
+    "tStartMs": 1710770,
+    "dDurationMs": 4300,
+    "segs": [ {
+      "utf8": "Now, there are some things that we can help with with incentives at FERC, and we are continuing to help with that."
+    } ]
+  }, {
+    "tStartMs": 1715410,
+    "dDurationMs": 3620,
+    "segs": [ {
+      "utf8": "But when money is tight, you've got to tighten the bolts a little bit, and we're going to see that happen too."
+    } ]
+  }, {
+    "tStartMs": 1719530,
+    "dDurationMs": 6340,
+    "segs": [ {
+      "utf8": "We need to make sure that the incentives that we give are properly tailored to actually meet the goals, and we're not just throwing money out the window."
+    } ]
+  }, {
+    "tStartMs": 1728460,
+    "dDurationMs": 9640,
+    "segs": [ {
+      "utf8": "Well, I want to pause for a moment on my questions and open it up to the folks here to see if they want to ask any questions of you."
+    } ]
+  }, {
+    "tStartMs": 1738540,
+    "dDurationMs": 9300,
+    "segs": [ {
+      "utf8": "I'm going to ask you to speak loudly when you do ask your question so that it can be picked up on the live stream."
+    } ]
+  }, {
+    "tStartMs": 1749200,
+    "dDurationMs": 2040,
+    "segs": [ {
+      "utf8": "But with that, I'm going to turn."
+    } ]
+  }, {
+    "tStartMs": 1751360,
+    "dDurationMs": 6940,
+    "segs": [ {
+      "utf8": "This is not normally a shy group, so I'm hoping that they're going to come out with some good, thought-provoking questions."
+    } ]
+  }, {
+    "tStartMs": 1758380,
+    "dDurationMs": 4020,
+    "segs": [ {
+      "utf8": "I see how many times I've been stopped in the hallway, so now is your chance to ask me in front of everyone else."
+    } ]
+  }, {
+    "tStartMs": 1762640,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "So who has a question for the commissioner?"
+    } ]
+  }, {
+    "tStartMs": 1766120,
+    "dDurationMs": 940,
+    "segs": [ {
+      "utf8": "Ben, you go ahead."
+    } ]
+  }, {
+    "tStartMs": 1767160,
+    "dDurationMs": 180,
+    "segs": [ {
+      "utf8": "Start."
+    } ]
+  }, {
+    "tStartMs": 1767700,
+    "dDurationMs": 1780,
+    "segs": [ {
+      "utf8": "Yeah, Ben Lanz with Osmos."
+    } ]
+  }, {
+    "tStartMs": 1769820,
+    "dDurationMs": 15640,
+    "segs": [ {
+      "utf8": "A question on your last couple points about the utilities and states, state organizations needing to communicate the advantages or the benefits of power to consumers more frequently, better."
+    } ]
+  }, {
+    "tStartMs": 1785780,
+    "dDurationMs": 7960,
+    "segs": [ {
+      "utf8": "Is there anything that FERC is doing to help communicate the positive aspects of all this investment in data centers and electricity?"
+    } ]
+  }, {
+    "tStartMs": 1794300,
+    "dDurationMs": 8900,
+    "segs": [ {
+      "utf8": "Yeah, our Office of Public Participation is coming out with an informational series, a bill explainer, which is going to promote the average bill to the average Americans."
+    } ]
+  }, {
+    "tStartMs": 1803420,
+    "dDurationMs": 1640,
+    "segs": [ {
+      "utf8": "But we've got a small shop, right?"
+    } ]
+  }, {
+    "tStartMs": 1805060,
+    "dDurationMs": 2060,
+    "segs": [ {
+      "utf8": "We've got 1,800 employees at FERC."
+    } ]
+  }, {
+    "tStartMs": 1807520,
+    "dDurationMs": 2420,
+    "segs": [ {
+      "utf8": "We've got a really small public participation office."
+    } ]
+  }, {
+    "tStartMs": 1810940,
+    "dDurationMs": 4220,
+    "segs": [ {
+      "utf8": "And the real outreach here needs to be done at the local level."
+    } ]
+  }, {
+    "tStartMs": 1815580,
+    "dDurationMs": 1560,
+    "segs": [ {
+      "utf8": "That's where everything gets done in America."
+    } ]
+  }, {
+    "tStartMs": 1817940,
+    "dDurationMs": 2700,
+    "segs": [ {
+      "utf8": "We also are fighting a lot of Chinese intervention, a lot of misinformation."
+    } ]
+  }, {
+    "tStartMs": 1821120,
+    "dDurationMs": 10700,
+    "segs": [ {
+      "utf8": "A lot of these TikToks which talk about data centers and how harmful they are, they come from China, and that's for a reason, because China is trying to weaken the American perception of what a data center is, and that's just a fact of the matter."
+    } ]
+  }, {
+    "tStartMs": 1831820,
+    "dDurationMs": 3740,
+    "segs": [ {
+      "utf8": "So we're fighting all of these fronts simultaneously."
+    } ]
+  }, {
+    "tStartMs": 1836200,
+    "dDurationMs": 1800,
+    "segs": [ {
+      "utf8": "FERC is not going to win that for the average American."
+    } ]
+  }, {
+    "tStartMs": 1838260,
+    "dDurationMs": 700,
+    "segs": [ {
+      "utf8": "That's just not going to happen."
+    } ]
+  }, {
+    "tStartMs": 1839060,
+    "dDurationMs": 3100,
+    "segs": [ {
+      "utf8": "We can help a little bit, but the average American doesn't even know what FERC is."
+    } ]
+  }, {
+    "tStartMs": 1842660,
+    "dDurationMs": 1780,
+    "segs": [ {
+      "utf8": "I don't even know if my parents know what FERC is."
+    } ]
+  }, {
+    "tStartMs": 1847100,
+    "dDurationMs": 2060,
+    "segs": [ {
+      "utf8": "So it's a challenge, and it has to be won locally."
+    } ]
+  }, {
+    "tStartMs": 1851350,
+    "dDurationMs": 3120,
+    "segs": [ {
+      "utf8": "So I'll just jump in for my own plug here."
+    } ]
+  }, {
+    "tStartMs": 1854630,
+    "dDurationMs": 10340,
+    "segs": [ {
+      "utf8": "WIRES is trying to get a little bit of information out there too about what the impacts are on customer bills for different components in the electricity sphere."
+    } ]
+  }, {
+    "tStartMs": 1865190,
+    "dDurationMs": 11100,
+    "segs": [ {
+      "utf8": "We just put out a one-pager probably within the last month, I know, within the last couple of weeks that tries to do that kind of a breakdown too, particularly focused on where does transmission fit within that."
+    } ]
+  }, {
+    "tStartMs": 1876470,
+    "dDurationMs": 8260,
+    "segs": [ {
+      "utf8": "So we're all trying to do that education effort as well and certainly support and appreciate whatever FERC can do to help with that education."
+    } ]
+  }, {
+    "tStartMs": 1885370,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "So enough of that plug for today."
+    } ]
+  }, {
+    "tStartMs": 1888190,
+    "dDurationMs": 540,
+    "segs": [ {
+      "utf8": "Anybody?"
+    } ]
+  }, {
+    "tStartMs": 1889130,
+    "dDurationMs": 1660,
+    "segs": [ {
+      "utf8": "Who's got another question for the commissioner?"
+    } ]
+  }, {
+    "tStartMs": 1891410,
+    "dDurationMs": 280,
+    "segs": [ {
+      "utf8": "David."
+    } ]
+  }, {
+    "tStartMs": 1894730,
+    "dDurationMs": 16680,
+    "segs": [ {
+      "utf8": "I like your theme, a little issue with it, when I look at the perception of some of the state commissioners that FERC is going to be a major power grab, particularly when you look at the issue of transmission."
+    } ]
+  }, {
+    "tStartMs": 1912090,
+    "dDurationMs": 4460,
+    "segs": [ {
+      "utf8": "But what are your views on bringing better alignment between the states?"
+    } ]
+  }, {
+    "tStartMs": 1917370,
+    "dDurationMs": 1660,
+    "segs": [ {
+      "utf8": "Yeah, that's a great question."
+    } ]
+  }, {
+    "tStartMs": 1919030,
+    "dDurationMs": 6440,
+    "segs": [ {
+      "utf8": "I know the states and FERC have always had a somewhat contentious relationship."
+    } ]
+  }, {
+    "tStartMs": 1926350,
+    "dDurationMs": 6880,
+    "segs": [ {
+      "utf8": "And when you drive these issues forward in the way in which they have been driven, that dynamic has accelerated for sure."
+    } ]
+  }, {
+    "tStartMs": 1934710,
+    "dDurationMs": 7100,
+    "segs": [ {
+      "utf8": "And I would hope that after last month's ANOPA proceedings, I think we quashed a lot of those concerns."
+    } ]
+  }, {
+    "tStartMs": 1942430,
+    "dDurationMs": 5540,
+    "segs": [ {
+      "utf8": "They won't always go away, and there's always going to be a power dynamic there, which is going to persist."
+    } ]
+  }, {
+    "tStartMs": 1948930,
+    "dDurationMs": 5260,
+    "segs": [ {
+      "utf8": "But we do offer a ton of outreach to the state commissioners."
+    } ]
+  }, {
+    "tStartMs": 1954370,
+    "dDurationMs": 3480,
+    "segs": [ {
+      "utf8": "It would be more helpful if they didn't have their conference in the other side of the country."
+    } ]
+  }, {
+    "tStartMs": 1958010,
+    "dDurationMs": 880,
+    "segs": [ {
+      "utf8": "That would be easier to get to."
+    } ]
+  }, {
+    "tStartMs": 1960470,
+    "dDurationMs": 3060,
+    "segs": [ {
+      "utf8": "But we always offer an open channel of communication."
+    } ]
+  }, {
+    "tStartMs": 1964330,
+    "dDurationMs": 2860,
+    "segs": [ {
+      "utf8": "And I think that these issues aren't going to go away."
+    } ]
+  }, {
+    "tStartMs": 1967290,
+    "dDurationMs": 1340,
+    "segs": [ {
+      "utf8": "They didn't just end at the ANOPA."
+    } ]
+  }, {
+    "tStartMs": 1970030,
+    "dDurationMs": 11880,
+    "segs": [ {
+      "utf8": "But understanding and delineating retail rates versus wholesale rates, what's a retail charge versus not, I think that we've given them the opportunity to have a lot of power in this equation."
+    } ]
+  }, {
+    "tStartMs": 1982890,
+    "dDurationMs": 1860,
+    "segs": [ {
+      "utf8": "Now, they have to actually take the power."
+    } ]
+  }, {
+    "tStartMs": 1984930,
+    "dDurationMs": 820,
+    "segs": [ {
+      "utf8": "They have to actually do right."
+    } ]
+  }, {
+    "tStartMs": 1985830,
+    "dDurationMs": 2380,
+    "segs": [ {
+      "utf8": "Because if they don't do right, we're going to have to step in."
+    } ]
+  }, {
+    "tStartMs": 1988350,
+    "dDurationMs": 880,
+    "segs": [ {
+      "utf8": "This is a fact of the matter."
+    } ]
+  }, {
+    "tStartMs": 1989310,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "The countries are lying on us."
+    } ]
+  }, {
+    "tStartMs": 1991290,
+    "dDurationMs": 5620,
+    "segs": [ {
+      "utf8": "There are a number of outlying states, probably close to half, that are doing a really good job with some of these."
+    } ]
+  }, {
+    "tStartMs": 1997150,
+    "dDurationMs": 6760,
+    "segs": [ {
+      "utf8": "But when you're talking about 27 states that still don't have a large load retail tariff, I have to say, come on, guys, you've got to get your act together."
+    } ]
+  }, {
+    "tStartMs": 2004170,
+    "dDurationMs": 840,
+    "segs": [ {
+      "utf8": "You have to take action."
+    } ]
+  }, {
+    "tStartMs": 2005010,
+    "dDurationMs": 2220,
+    "segs": [ {
+      "utf8": "You can look to who your peers are."
+    } ]
+  }, {
+    "tStartMs": 2007430,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "We can build working groups."
+    } ]
+  }, {
+    "tStartMs": 2008730,
+    "dDurationMs": 2060,
+    "segs": [ {
+      "utf8": "We can bring the horse to the water, right?"
+    } ]
+  }, {
+    "tStartMs": 2011530,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "But we really need these states to kind of modernize their own structures."
+    } ]
+  }, {
+    "tStartMs": 2015210,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "And some states just do a better job than others."
+    } ]
+  }, {
+    "tStartMs": 2017170,
+    "dDurationMs": 1940,
+    "segs": [ {
+      "utf8": "I don't think federalizing all of that is the way to go."
+    } ]
+  }, {
+    "tStartMs": 2019230,
+    "dDurationMs": 1060,
+    "segs": [ {
+      "utf8": "I come from a state background."
+    } ]
+  }, {
+    "tStartMs": 2020730,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "I worked for a Republican governor during the Obama administration."
+    } ]
+  }, {
+    "tStartMs": 2023190,
+    "dDurationMs": 2240,
+    "segs": [ {
+      "utf8": "I was very frustrated by some of the things that were coming down the pipe."
+    } ]
+  }, {
+    "tStartMs": 2025950,
+    "dDurationMs": 5800,
+    "segs": [ {
+      "utf8": "So I do know that these are things that we're going to have to navigate and we're going to have to do it collaboratively."
+    } ]
+  }, {
+    "tStartMs": 2031750,
+    "dDurationMs": 6180,
+    "segs": [ {
+      "utf8": "But what we can do is show some leadership in that regard, and I think that's what we've done over the past several months."
+    } ]
+  }, {
+    "tStartMs": 2038030,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "I think that's what we're going to continue to do."
+    } ]
+  }, {
+    "tStartMs": 2040210,
+    "dDurationMs": 3300,
+    "segs": [ {
+      "utf8": "But if we don't get to where we need to be, we're going to have to take action."
+    } ]
+  }, {
+    "tStartMs": 2043610,
+    "dDurationMs": 1660,
+    "segs": [ {
+      "utf8": "We've been clear with them and honest with the states."
+    } ]
+  }, {
+    "tStartMs": 2045810,
+    "dDurationMs": 7579,
+    "segs": [ {
+      "utf8": "We've given them every opportunity to take these issues up in their own regard, and I'm happy to do that because I think that's the proper way to manage this politically."
+    } ]
+  }, {
+    "tStartMs": 2053590,
+    "dDurationMs": 2859,
+    "segs": [ {
+      "utf8": "I think it's the proper way to manage this from a governance perspective."
+    } ]
+  }, {
+    "tStartMs": 2057290,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "But we've got to get to the end result, right?"
+    } ]
+  }, {
+    "tStartMs": 2059330,
+    "dDurationMs": 980,
+    "segs": [ {
+      "utf8": "That's the challenging part."
+    } ]
+  }, {
+    "tStartMs": 2060310,
+    "dDurationMs": 2840,
+    "segs": [ {
+      "utf8": "Let's get to the end result, and we're going to help them get there."
+    } ]
+  }, {
+    "tStartMs": 2066460,
+    "dDurationMs": 1199,
+    "segs": [ {
+      "utf8": "Another question for the commissioner."
+    } ]
+  }, {
+    "tStartMs": 2070480,
+    "dDurationMs": 1800,
+    "segs": [ {
+      "utf8": "Where's Craig Glaser when I need him?"
+    } ]
+  }, {
+    "tStartMs": 2072540,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "He's always open."
+    } ]
+  }, {
+    "tStartMs": 2074679,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "Craig doesn't want to hear from me anymore."
+    } ]
+  }, {
+    "tStartMs": 2079219,
+    "dDurationMs": 480,
+    "segs": [ {
+      "utf8": "Phil."
+    } ]
+  }, {
+    "tStartMs": 2080540,
+    "dDurationMs": 1619,
+    "segs": [ {
+      "utf8": "Commissioner, great to have you here."
+    } ]
+  }, {
+    "tStartMs": 2082260,
+    "dDurationMs": 1200,
+    "segs": [ {
+      "utf8": "Thank you, as I said earlier."
+    } ]
+  }, {
+    "tStartMs": 2083679,
+    "dDurationMs": 1540,
+    "segs": [ {
+      "utf8": "It's been great to be getting out."
+    } ]
+  }, {
+    "tStartMs": 2087219,
+    "dDurationMs": 2241,
+    "segs": [ {
+      "utf8": "A little softer side question."
+    } ]
+  }, {
+    "tStartMs": 2089460,
+    "dDurationMs": 11980,
+    "segs": [ {
+      "utf8": "When I was on the commission, I want to know anything really wacky that you dealt with because once we had a case where we actually had a ping-pong lottery as to who would get a hydro license."
+    } ]
+  }, {
+    "tStartMs": 2103420,
+    "dDurationMs": 3540,
+    "segs": [ {
+      "utf8": "I haven't had any ping-pong lotteries yet, I'll tell you that."
+    } ]
+  }, {
+    "tStartMs": 2107120,
+    "dDurationMs": 15820,
+    "segs": [ {
+      "utf8": "I think we've got a lot of matters at FERC that I wish just weren't there, and I don't think this needs to be a level where a $2,500 or $3,000 an hour lawyer needs to advocate for a bigger golf cart path on a hydro facility for me."
+    } ]
+  }, {
+    "tStartMs": 2124180,
+    "dDurationMs": 9280,
+    "segs": [ {
+      "utf8": "What you're going to see out of us is I think blanket proposals is going to be a good starter for that, and categorical exclusions is going to be a natural extension of that."
+    } ]
+  }, {
+    "tStartMs": 2134260,
+    "dDurationMs": 6060,
+    "segs": [ {
+      "utf8": "I think that the categorical extensions is a band-aid on the problem, but I think a blanket is a better way to do business."
+    } ]
+  }, {
+    "tStartMs": 2141940,
+    "dDurationMs": 3840,
+    "segs": [ {
+      "utf8": "Inevitably, I'd like a statement of jurisdiction to say, I don't care about how wide your golf cart path is."
+    } ]
+  }, {
+    "tStartMs": 2146140,
+    "dDurationMs": 1860,
+    "segs": [ {
+      "utf8": "I don't care whether you have a volleyball court or not."
+    } ]
+  }, {
+    "tStartMs": 2148340,
+    "dDurationMs": 2280,
+    "segs": [ {
+      "utf8": "These are not things you need to welcome to Washington, D.C. to litigate."
+    } ]
+  }, {
+    "tStartMs": 2151740,
+    "dDurationMs": 8640,
+    "segs": [ {
+      "utf8": "There are some absurdities, but I think to date, we've done a good job of separating the wheat from the chaff here and working on things that matter."
+    } ]
+  }, {
+    "tStartMs": 2161280,
+    "dDurationMs": 3780,
+    "segs": [ {
+      "utf8": "I will tell you that the first week on the job, I had a meeting there to talk about the Christmas party."
+    } ]
+  }, {
+    "tStartMs": 2165220,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "I'm like, wait, the Christmas party?"
+    } ]
+  }, {
+    "tStartMs": 2167180,
+    "dDurationMs": 2740,
+    "segs": [ {
+      "utf8": "They're like, oh no, trust us, you're going to need to have a meeting on the Christmas party."
+    } ]
+  }, {
+    "tStartMs": 2169920,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "I'm like, okay, sounds good."
+    } ]
+  }, {
+    "tStartMs": 2171700,
+    "dDurationMs": 14820,
+    "segs": [ {
+      "utf8": "Then the Christmas party comes, and I think right after the public meeting that day when we dealt with the PGM co-location order, immediately after the meeting, I start going out to the staff Christmas parties throughout the building, and I had a microphone shoved in my face and said, you've got to do karaoke."
+    } ]
+  }, {
+    "tStartMs": 2188060,
+    "dDurationMs": 6080,
+    "segs": [ {
+      "utf8": "Of course, as soon as I get a microphone shoved in my face, there's 100 people with cell phone cameras out recording me doing karaoke."
+    } ]
+  }, {
+    "tStartMs": 2194680,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "I'm like, okay, the pressure is on, I haven't thought about this."
+    } ]
+  }, {
+    "tStartMs": 2196760,
+    "dDurationMs": 4300,
+    "segs": [ {
+      "utf8": "I picked Blue Christmas by Elvis as my karaoke song."
+    } ]
+  }, {
+    "tStartMs": 2201740,
+    "dDurationMs": 5180,
+    "segs": [ {
+      "utf8": "I don't have a very wide vocal range, so I at least got to do an Elvis impression, so there you go."
+    } ]
+  }, {
+    "tStartMs": 2209280,
+    "dDurationMs": 1620,
+    "segs": [ {
+      "utf8": "Anyone have another question?"
+    } ]
+  }, {
+    "tStartMs": 2211640,
+    "dDurationMs": 460,
+    "segs": [ {
+      "utf8": "Yeah, go ahead."
+    } ]
+  }, {
+    "tStartMs": 2212980,
+    "dDurationMs": 9800,
+    "segs": [ {
+      "utf8": "In the Northeast, one of our biggest issues now is resource adequacy, and it's kind of multi-tiered, particularly during winter peaking periods."
+    } ]
+  }, {
+    "tStartMs": 2224140,
+    "dDurationMs": 14300,
+    "segs": [ {
+      "utf8": "It's related not just to transmission, but pipelines and everything, so what level of concern, both in the Northeast, and is there anything that FERC can do to kind of ameliorate some of the issues out there?"
+    } ]
+  }, {
+    "tStartMs": 2238640,
+    "dDurationMs": 1740,
+    "segs": [ {
+      "utf8": "Yeah, that's a great question."
+    } ]
+  }, {
+    "tStartMs": 2240640,
+    "dDurationMs": 6500,
+    "segs": [ {
+      "utf8": "I know the resource adequacy issues in New England is something that I've met on the Hill a half dozen times already."
+    } ]
+  }, {
+    "tStartMs": 2247520,
+    "dDurationMs": 8220,
+    "segs": [ {
+      "utf8": "We're going to have an oversight committee hearing week after next to talk about some of these problems, particularly as it relates to 403 reforms, the Clean Water Act."
+    } ]
+  }, {
+    "tStartMs": 2256180,
+    "dDurationMs": 3560,
+    "segs": [ {
+      "utf8": "I think the fact of the matter is the Northeast has got to get more gas supply."
+    } ]
+  }, {
+    "tStartMs": 2259900,
+    "dDurationMs": 6600,
+    "segs": [ {
+      "utf8": "We've got to get more gas supply to the Northeast, but there's a pricing component here that's a problem as well, not just the permitting problem."
+    } ]
+  }, {
+    "tStartMs": 2266940,
+    "dDurationMs": 3060,
+    "segs": [ {
+      "utf8": "So how we undertake that, I think Congress has to act."
+    } ]
+  }, {
+    "tStartMs": 2270280,
+    "dDurationMs": 3500,
+    "segs": [ {
+      "utf8": "I think that Congress has to take some action here to push these issues forward."
+    } ]
+  }, {
+    "tStartMs": 2274120,
+    "dDurationMs": 8420,
+    "segs": [ {
+      "utf8": "We've orbited around a permitting bill for a number of Congresses now, but there are some things here in permitting that we all actually agree on, and this is one of them."
+    } ]
+  }, {
+    "tStartMs": 2282700,
+    "dDurationMs": 12280,
+    "segs": [ {
+      "utf8": "I think that we certainly respect states' rights, but on a federally permitted project through New York to supply abundance of natural gas to an entire region of the country, I don't think it's fair for one state to hold that project up."
+    } ]
+  }, {
+    "tStartMs": 2296480,
+    "dDurationMs": 7200,
+    "segs": [ {
+      "utf8": "But I understand the economic components and the pricing that go into it as well, but it takes New England to act as well."
+    } ]
+  }, {
+    "tStartMs": 2303680,
+    "dDurationMs": 4780,
+    "segs": [ {
+      "utf8": "If the New England delegation would get behind it, I think that it would get done."
+    } ]
+  }, {
+    "tStartMs": 2309260,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "And look, I care about emissions."
+    } ]
+  }, {
+    "tStartMs": 2310860,
+    "dDurationMs": 920,
+    "segs": [ {
+      "utf8": "I care about the environment."
+    } ]
+  }, {
+    "tStartMs": 2312660,
+    "dDurationMs": 6700,
+    "segs": [ {
+      "utf8": "But the fact of the matter is if you spend your winters burning heating oil, get you some clean natural gas to substitute it."
+    } ]
+  }, {
+    "tStartMs": 2319960,
+    "dDurationMs": 960,
+    "segs": [ {
+      "utf8": "It just makes common sense."
+    } ]
+  }, {
+    "tStartMs": 2321100,
+    "dDurationMs": 740,
+    "segs": [ {
+      "utf8": "It's going to help industry."
+    } ]
+  }, {
+    "tStartMs": 2321960,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "It's going to promote job growth."
+    } ]
+  }, {
+    "tStartMs": 2323920,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "It's going to help to keep the lights on during the winter, and it's going to do it in a cheap fashion."
+    } ]
+  }, {
+    "tStartMs": 2327420,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": "So these are all things that should be common sense."
+    } ]
+  }, {
+    "tStartMs": 2329780,
+    "dDurationMs": 1560,
+    "segs": [ {
+      "utf8": "These are all things we all should agree upon."
+    } ]
+  }, {
+    "tStartMs": 2331340,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "We should have passed a bill on this years ago."
+    } ]
+  }, {
+    "tStartMs": 2333680,
+    "dDurationMs": 2300,
+    "segs": [ {
+      "utf8": "And if we don't pass a bill in this Congress, then shame on us."
+    } ]
+  }, {
+    "tStartMs": 2337160,
+    "dDurationMs": 7640,
+    "segs": [ {
+      "utf8": "So these are all our problems that are top of mind, even though they touch on the gentle balance of state jurisdictions."
+    } ]
+  }, {
+    "tStartMs": 2346660,
+    "dDurationMs": 4260,
+    "segs": [ {
+      "utf8": "I'm personally in favor of doing everything I can with the platform that I have to kind of drive some of this change."
+    } ]
+  }, {
+    "tStartMs": 2351380,
+    "dDurationMs": 1620,
+    "segs": [ {
+      "utf8": "And I've talked about it repeatedly on the Hill."
+    } ]
+  }, {
+    "tStartMs": 2353360,
+    "dDurationMs": 1600,
+    "segs": [ {
+      "utf8": "I'll talk about it again in two weeks."
+    } ]
+  }, {
+    "tStartMs": 2356160,
+    "dDurationMs": 5300,
+    "segs": [ {
+      "utf8": "And I knew Senator Lee, chairman of Environmental Natural Resources, it's a big component of his platform."
+    } ]
+  }, {
+    "tStartMs": 2362100,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "We just got to get the votes to get it done."
+    } ]
+  }, {
+    "tStartMs": 2363640,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "We got to stop bolting on projects and conditions."
+    } ]
+  }, {
+    "tStartMs": 2367760,
+    "dDurationMs": 6740,
+    "segs": [ {
+      "utf8": "And that's going to kill a project and kill a bill when we know everyone is pretty much in favor of it uniformly."
+    } ]
+  }, {
+    "tStartMs": 2377720,
+    "dDurationMs": 1220,
+    "segs": [ {
+      "utf8": "Anyone with another question?"
+    } ]
+  }, {
+    "tStartMs": 2379900,
+    "dDurationMs": 100,
+    "segs": [ {
+      "utf8": "Yeah."
+    } ]
+  }, {
+    "tStartMs": 2380880,
+    "dDurationMs": 1180,
+    "segs": [ {
+      "utf8": "Good morning, Commissioner."
+    } ]
+  }, {
+    "tStartMs": 2382580,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "I have a question for you."
+    } ]
+  }, {
+    "tStartMs": 2384380,
+    "dDurationMs": 7460,
+    "segs": [ {
+      "utf8": "In the last, I think the last months, you guys have been sort of a co-draper."
+    } ]
+  }, {
+    "tStartMs": 2394140,
+    "dDurationMs": 1340,
+    "segs": [ {
+      "utf8": "I don't know if you've been doing more."
+    } ]
+  }, {
+    "tStartMs": 2396000,
+    "dDurationMs": 1320,
+    "segs": [ {
+      "utf8": "I'm certainly not asking you for feedback."
+    } ]
+  }, {
+    "tStartMs": 2397640,
+    "dDurationMs": 1200,
+    "segs": [ {
+      "utf8": "Do you have any further thoughts?"
+    } ]
+  }, {
+    "tStartMs": 2400640,
+    "dDurationMs": 440,
+    "segs": [ {
+      "utf8": "Yeah."
+    } ]
+  }, {
+    "tStartMs": 2401220,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "I think it's important to find consensus."
+    } ]
+  }, {
+    "tStartMs": 2404280,
+    "dDurationMs": 100,
+    "segs": [ {
+      "utf8": "Right?"
+    } ]
+  }, {
+    "tStartMs": 2404420,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "The status quo is really untenable in PJM."
+    } ]
+  }, {
+    "tStartMs": 2406740,
+    "dDurationMs": 8120,
+    "segs": [ {
+      "utf8": "I think we have a stakeholder process that has continued to just grind into gridlock and at the detriment to all the people that live in PJM."
+    } ]
+  }, {
+    "tStartMs": 2414860,
+    "dDurationMs": 5740,
+    "segs": [ {
+      "utf8": "So I think that finding a consensus as to what a path forward is, is paramount."
+    } ]
+  }, {
+    "tStartMs": 2421060,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "And that's kind of what we're trying to drive the discussion on."
+    } ]
+  }, {
+    "tStartMs": 2423880,
+    "dDurationMs": 1760,
+    "segs": [ {
+      "utf8": "And, you know, Craig's tired of hearing from me."
+    } ]
+  }, {
+    "tStartMs": 2426480,
+    "dDurationMs": 2420,
+    "segs": [ {
+      "utf8": "And I'll continue to talk to the stakeholder groups."
+    } ]
+  }, {
+    "tStartMs": 2429440,
+    "dDurationMs": 8020,
+    "segs": [ {
+      "utf8": "You know, but what we can't do is we can't continue to moat around our own business model and protect it because, quite frankly, the current structure of PJM hasn't protected anything."
+    } ]
+  }, {
+    "tStartMs": 2438040,
+    "dDurationMs": 10300,
+    "segs": [ {
+      "utf8": "If you're a generator and you hate the price collar and you think that continuing the status quo with stakeholder engagement, blocking measures by PJM is going to be successful, like, how'd you get the price collar in the first place?"
+    } ]
+  }, {
+    "tStartMs": 2448760,
+    "dDurationMs": 2020,
+    "segs": [ {
+      "utf8": "Like this current system is not helping you."
+    } ]
+  }, {
+    "tStartMs": 2451720,
+    "dDurationMs": 6320,
+    "segs": [ {
+      "utf8": "So looking at things differently is hard, especially in entrenched utilities that have been doing this for a long time."
+    } ]
+  }, {
+    "tStartMs": 2458620,
+    "dDurationMs": 3920,
+    "segs": [ {
+      "utf8": "But we're at an inflection point here with PJM that we just have to do something different."
+    } ]
+  }, {
+    "tStartMs": 2462880,
+    "dDurationMs": 3940,
+    "segs": [ {
+      "utf8": "We have a lot of other models that other RTOs and ISOs across the country that are much more functional."
+    } ]
+  }, {
+    "tStartMs": 2467040,
+    "dDurationMs": 2820,
+    "segs": [ {
+      "utf8": "So we can pick and choose which work, which don't."
+    } ]
+  }, {
+    "tStartMs": 2470460,
+    "dDurationMs": 3860,
+    "segs": [ {
+      "utf8": "We can pick which might alleviate concerns to get people on board."
+    } ]
+  }, {
+    "tStartMs": 2474760,
+    "dDurationMs": 7880,
+    "segs": [ {
+      "utf8": "But what we can't have is a group of stakeholders that are incentivized to vote one way economically that are driving us into the ground for an entire region of the country."
+    } ]
+  }, {
+    "tStartMs": 2482960,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "So we've got to do things different."
+    } ]
+  }, {
+    "tStartMs": 2484600,
+    "dDurationMs": 3780,
+    "segs": [ {
+      "utf8": "Now, what that looks like, we're going to hope to flesh out in two weeks at the technical conference."
+    } ]
+  }, {
+    "tStartMs": 2489920,
+    "dDurationMs": 5900,
+    "segs": [ {
+      "utf8": "So actually, you got me thinking when you used the phrase looking at things differently and thinking a little bit differently about things."
+    } ]
+  }, {
+    "tStartMs": 2495940,
+    "dDurationMs": 3020,
+    "segs": [ {
+      "utf8": "And I kind of want to pick up on that and ask you a question."
+    } ]
+  }, {
+    "tStartMs": 2498960,
+    "dDurationMs": 9200,
+    "segs": [ {
+      "utf8": "It's so natural for a regulatory agency to be thinking about what actions can we take, what steps can we take to deal with whatever issue is before them."
+    } ]
+  }, {
+    "tStartMs": 2509460,
+    "dDurationMs": 17880,
+    "segs": [ {
+      "utf8": "But I thought one of the most interesting things that came out of this administration early on was an executive order that was requiring agencies to look back at existing regulations and see what's become obsolete, what's not working, and kind of do that type of a reexamination."
+    } ]
+  }, {
+    "tStartMs": 2528620,
+    "dDurationMs": 5600,
+    "segs": [ {
+      "utf8": "And I just am curious as to what your thinking is on that."
+    } ]
+  }, {
+    "tStartMs": 2535480,
+    "dDurationMs": 8940,
+    "segs": [ {
+      "utf8": "Is FERC doing anything along the lines of kind of looking at maybe taking some stuff off the books that could reduce costs?"
+    } ]
+  }, {
+    "tStartMs": 2544560,
+    "dDurationMs": 1900,
+    "segs": [ {
+      "utf8": "It helps deal with the affordability issue."
+    } ]
+  }, {
+    "tStartMs": 2547520,
+    "dDurationMs": 9440,
+    "segs": [ {
+      "utf8": "In some instances, I think agencies put things into place, let them go, cross their fingers, hope everything works out, and then kind of keep moving forward."
+    } ]
+  }, {
+    "tStartMs": 2557960,
+    "dDurationMs": 4120,
+    "segs": [ {
+      "utf8": "But sometimes it's not actually achieving the objectives and looking back on it."
+    } ]
+  }, {
+    "tStartMs": 2562260,
+    "dDurationMs": 5720,
+    "segs": [ {
+      "utf8": "So I'm just curious as to what your thinking is on that kind of different way of looking at what a regulator should be thinking about."
+    } ]
+  }, {
+    "tStartMs": 2568880,
+    "dDurationMs": 12720,
+    "segs": [ {
+      "utf8": "Yeah, we've got the executive order which stated that basically from a deregulatory platform under the premise that all these undue regulations are kind of stifling investment and growth in our economy."
+    } ]
+  }, {
+    "tStartMs": 2582000,
+    "dDurationMs": 1560,
+    "segs": [ {
+      "utf8": "And I think that's the right way to look at it."
+    } ]
+  }, {
+    "tStartMs": 2583560,
+    "dDurationMs": 6020,
+    "segs": [ {
+      "utf8": "I think the executive order spells out that for every new regulation you want to propose as your regulator, you've got to strike 10."
+    } ]
+  }, {
+    "tStartMs": 2590520,
+    "dDurationMs": 14200,
+    "segs": [ {
+      "utf8": "Pretty tough at FERC, but luckily we've got a lot of pet projects from commissioners over the past number of years, and I don't know if any of them were yours, but kind of reducing the number of stale dockets that we have on the rulemaking side."
+    } ]
+  }, {
+    "tStartMs": 2605620,
+    "dDurationMs": 1300,
+    "segs": [ {
+      "utf8": "You've seen us do that to date."
+    } ]
+  }, {
+    "tStartMs": 2607020,
+    "dDurationMs": 1820,
+    "segs": [ {
+      "utf8": "You're going to continue to see us do that at FERC."
+    } ]
+  }, {
+    "tStartMs": 2609420,
+    "dDurationMs": 9660,
+    "segs": [ {
+      "utf8": "And just streamlining the regulatory environment is going to help average businesses, especially small businesses, understand what the rules are so they can invest and plan accordingly."
+    } ]
+  }, {
+    "tStartMs": 2619500,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "I think that's paramount to us growing."
+    } ]
+  }, {
+    "tStartMs": 2622160,
+    "dDurationMs": 5600,
+    "segs": [ {
+      "utf8": "The jumble of regulations we have across the federal government is actually just mind-blowing."
+    } ]
+  }, {
+    "tStartMs": 2628380,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "And like you said, a lot of them were well-intended."
+    } ]
+  }, {
+    "tStartMs": 2632100,
+    "dDurationMs": 1640,
+    "segs": [ {
+      "utf8": "A lot of them were ill-intended."
+    } ]
+  }, {
+    "tStartMs": 2634520,
+    "dDurationMs": 4320,
+    "segs": [ {
+      "utf8": "But most of them don't really serve the purpose in which they were promulgated."
+    } ]
+  }, {
+    "tStartMs": 2639360,
+    "dDurationMs": 1900,
+    "segs": [ {
+      "utf8": "So pulling that back is important."
+    } ]
+  }, {
+    "tStartMs": 2642020,
+    "dDurationMs": 5400,
+    "segs": [ {
+      "utf8": "But you also have to do it without dedicating a ton of time because we have a lot of issues on our plate right now."
+    } ]
+  }, {
+    "tStartMs": 2647800,
+    "dDurationMs": 3040,
+    "segs": [ {
+      "utf8": "So it's a challenge because it's a bandwidth suck as well."
+    } ]
+  }, {
+    "tStartMs": 2651220,
+    "dDurationMs": 2460,
+    "segs": [ {
+      "utf8": "Like I said, we've got 1,800, 1,900 employees at FERC."
+    } ]
+  }, {
+    "tStartMs": 2654900,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "How many do we want to dedicate to DREG?"
+    } ]
+  }, {
+    "tStartMs": 2657400,
+    "dDurationMs": 3620,
+    "segs": [ {
+      "utf8": "Some of these have just been the bane of existence for a number of staff all the time."
+    } ]
+  }, {
+    "tStartMs": 2661020,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "I always encourage staff to bring us ideas on DREG."
+    } ]
+  }, {
+    "tStartMs": 2664720,
+    "dDurationMs": 5700,
+    "segs": [ {
+      "utf8": "So it is a good policy to streamline our regulations and pull back a little bit."
+    } ]
+  }, {
+    "tStartMs": 2670680,
+    "dDurationMs": 2940,
+    "segs": [ {
+      "utf8": "How much we get to within the shot clock we have is TBD."
+    } ]
+  }, {
+    "tStartMs": 2674460,
+    "dDurationMs": 2820,
+    "segs": [ {
+      "utf8": "But you're going to see us continue to do that like we have so far."
+    } ]
+  }, {
+    "tStartMs": 2679320,
+    "dDurationMs": 2500,
+    "segs": [ {
+      "utf8": "Anybody else have a question they want to raise for the commissioner?"
+    } ]
+  }, {
+    "tStartMs": 2682740,
+    "dDurationMs": 420,
+    "segs": [ {
+      "utf8": "Oh, come on."
+    } ]
+  }, {
+    "tStartMs": 2683460,
+    "dDurationMs": 3080,
+    "segs": [ {
+      "utf8": "This group is really kind of shy."
+    } ]
+  }, {
+    "tStartMs": 2686740,
+    "dDurationMs": 540,
+    "segs": [ {
+      "utf8": "Yeah, go ahead, Bill."
+    } ]
+  }, {
+    "tStartMs": 2688960,
+    "dDurationMs": 1060,
+    "segs": [ {
+      "utf8": "Great comments, Commissioner."
+    } ]
+  }, {
+    "tStartMs": 2690120,
+    "dDurationMs": 1380,
+    "segs": [ {
+      "utf8": "I really appreciate all of it."
+    } ]
+  }, {
+    "tStartMs": 2691820,
+    "dDurationMs": 6280,
+    "segs": [ {
+      "utf8": "And my question is really if you could talk a little bit about get-to-mass transmission technologies."
+    } ]
+  }, {
+    "tStartMs": 2698520,
+    "dDurationMs": 4300,
+    "segs": [ {
+      "utf8": "And, you know, you've spoken really clearly about the need to be creative."
+    } ]
+  }, {
+    "tStartMs": 2703480,
+    "dDurationMs": 10520,
+    "segs": [ {
+      "utf8": "And, you know, we have a lot of great tools, a lot of companies that are around the room offering great technologies that can really help us do a better job with the infrastructure we have and the infrastructure that we're building."
+    } ]
+  }, {
+    "tStartMs": 2714960,
+    "dDurationMs": 4080,
+    "segs": [ {
+      "utf8": "So I think bringing that spirit and that kind of, okay, let's think differently."
+    } ]
+  }, {
+    "tStartMs": 2719840,
+    "dDurationMs": 1040,
+    "segs": [ {
+      "utf8": "Let's be creative."
+    } ]
+  }, {
+    "tStartMs": 2721020,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "Let's use all the resources that we have."
+    } ]
+  }, {
+    "tStartMs": 2722720,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "How are you thinking about that?"
+    } ]
+  }, {
+    "tStartMs": 2724020,
+    "dDurationMs": 1660,
+    "segs": [ {
+      "utf8": "I think, you know, 19-20 is pretty clear."
+    } ]
+  }, {
+    "tStartMs": 2725760,
+    "dDurationMs": 1020,
+    "segs": [ {
+      "utf8": "You've got to consider stuff."
+    } ]
+  }, {
+    "tStartMs": 2727300,
+    "dDurationMs": 940,
+    "segs": [ {
+      "utf8": "You've got to show your work."
+    } ]
+  }, {
+    "tStartMs": 2728360,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "And you've got to prepare to defend what you've designed."
+    } ]
+  }, {
+    "tStartMs": 2731060,
+    "dDurationMs": 2040,
+    "segs": [ {
+      "utf8": "You know, sorry for all the acronyms in there."
+    } ]
+  }, {
+    "tStartMs": 2733260,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "But, yeah, so just keep it simple."
+    } ]
+  }, {
+    "tStartMs": 2736300,
+    "dDurationMs": 7640,
+    "segs": [ {
+      "utf8": "Yeah, and I think we went even a step further than that in our last batch of 206s, which say not only do you have to consider it, you have to show us why you're not using it."
+    } ]
+  }, {
+    "tStartMs": 2744540,
+    "dDurationMs": 3340,
+    "segs": [ {
+      "utf8": "So I think it's a step in furtherance of 19-20."
+    } ]
+  }, {
+    "tStartMs": 2749400,
+    "dDurationMs": 16320,
+    "segs": [ {
+      "utf8": "But I look at GETS as if it's a cost benefit and it's ready for prime time, whether that be, you know, an advanced transmission line, whether that be dynamic line ratings, which I think we can do much better on, I think we need to consider it."
+    } ]
+  }, {
+    "tStartMs": 2766060,
+    "dDurationMs": 11240,
+    "segs": [ {
+      "utf8": "And I think it really needs to dovetail with the transmission lobby and new wires altogether because I think there's a real partnership and a collaboration, which could be a force multiplier for everyone."
+    } ]
+  }, {
+    "tStartMs": 2778180,
+    "dDurationMs": 1740,
+    "segs": [ {
+      "utf8": "And we need to do things more collaboratively."
+    } ]
+  }, {
+    "tStartMs": 2780260,
+    "dDurationMs": 14520,
+    "segs": [ {
+      "utf8": "So I think showing where a new line makes sense financially and has a longer-term benefit and has a reliability adder as it relates to, you know, how we can rely on, you know, some of these older wires and modernizing them, I think that that's a common-sense approach."
+    } ]
+  }, {
+    "tStartMs": 2795680,
+    "dDurationMs": 9260,
+    "segs": [ {
+      "utf8": "I think to date, I think we have got the GETS lobby that has emerged over the past number of years, and I think they've done a good job of educating folks on the Hill."
+    } ]
+  }, {
+    "tStartMs": 2806060,
+    "dDurationMs": 1780,
+    "segs": [ {
+      "utf8": "But it's not an either-or issue."
+    } ]
+  }, {
+    "tStartMs": 2808020,
+    "dDurationMs": 700,
+    "segs": [ {
+      "utf8": "I think it's both."
+    } ]
+  }, {
+    "tStartMs": 2809620,
+    "dDurationMs": 5340,
+    "segs": [ {
+      "utf8": "And I think it's both because there's room in this environment of explosive growth for everyone to participate."
+    } ]
+  }, {
+    "tStartMs": 2816180,
+    "dDurationMs": 8220,
+    "segs": [ {
+      "utf8": "So keeping a seat at the table and showing that, well, while one resource or one solution might be good in this instance, it's not going to be good in all of them."
+    } ]
+  }, {
+    "tStartMs": 2825160,
+    "dDurationMs": 4400,
+    "segs": [ {
+      "utf8": "And then how we incentivize and encourage those is really going to be where the rubber hits the road."
+    } ]
+  }, {
+    "tStartMs": 2830860,
+    "dDurationMs": 2220,
+    "segs": [ {
+      "utf8": "And you'll hear more from us on that in the future."
+    } ]
+  }, {
+    "tStartMs": 2834780,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "Does anybody else have an additional question?"
+    } ]
+  }, {
+    "tStartMs": 2838280,
+    "dDurationMs": 6680,
+    "segs": [ {
+      "utf8": "We're going to hear a little bit more about this from the second panel when the advisors get up later today."
+    } ]
+  }, {
+    "tStartMs": 2845460,
+    "dDurationMs": 3140,
+    "segs": [ {
+      "utf8": "We'll probably get five different opinions on this, but I want to get your view too."
+    } ]
+  }, {
+    "tStartMs": 2849840,
+    "dDurationMs": 1640,
+    "segs": [ {
+      "utf8": "You've been at the commission for a while."
+    } ]
+  }, {
+    "tStartMs": 2851480,
+    "dDurationMs": 3120,
+    "segs": [ {
+      "utf8": "You've had tons of meetings with people coming in on all kinds of issues."
+    } ]
+  }, {
+    "tStartMs": 2856460,
+    "dDurationMs": 1820,
+    "segs": [ {
+      "utf8": "What works with those meetings?"
+    } ]
+  }, {
+    "tStartMs": 2858420,
+    "dDurationMs": 820,
+    "segs": [ {
+      "utf8": "What's most effective?"
+    } ]
+  }, {
+    "tStartMs": 2860240,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "And what just really goes over like a dud?"
+    } ]
+  }, {
+    "tStartMs": 2864100,
+    "dDurationMs": 8420,
+    "segs": [ {
+      "utf8": "I think predominantly I could probably have a meeting every hour of every day until the day I die probably, and I probably wouldn't hit the bottom of the barrel."
+    } ]
+  }, {
+    "tStartMs": 2875060,
+    "dDurationMs": 7480,
+    "segs": [ {
+      "utf8": "So an introductory meeting is great, especially for a new commissioner, to give you a foundation of your portfolio, your project, your organization."
+    } ]
+  }, {
+    "tStartMs": 2882800,
+    "dDurationMs": 700,
+    "segs": [ {
+      "utf8": "I think those are good."
+    } ]
+  }, {
+    "tStartMs": 2883840,
+    "dDurationMs": 11900,
+    "segs": [ {
+      "utf8": "When you come back and see me, let's have a pointed ask or let's have a pointed conversation as to what you need is important for reliability and affordability because that's what we're going to be focused on."
+    } ]
+  }, {
+    "tStartMs": 2896120,
+    "dDurationMs": 7380,
+    "segs": [ {
+      "utf8": "I think we need to get back to leaning on reliability and affordability as kind of the cornerstones of what we do at FERC."
+    } ]
+  }, {
+    "tStartMs": 2903780,
+    "dDurationMs": 4620,
+    "segs": [ {
+      "utf8": "I think for a while there we went a little bit astray in there into some environmental concerns."
+    } ]
+  }, {
+    "tStartMs": 2908980,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "We went to some climate issues."
+    } ]
+  }, {
+    "tStartMs": 2911640,
+    "dDurationMs": 1700,
+    "segs": [ {
+      "utf8": "I know there were issues with CEQ."
+    } ]
+  }, {
+    "tStartMs": 2914140,
+    "dDurationMs": 6900,
+    "segs": [ {
+      "utf8": "But when it comes down to it, the Federal Power Act speaks to FERC commissioners with the two duties, reliability and affordability."
+    } ]
+  }, {
+    "tStartMs": 2921680,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "So let's get back to the core of what we're doing."
+    } ]
+  }, {
+    "tStartMs": 2924400,
+    "dDurationMs": 8740,
+    "segs": [ {
+      "utf8": "So focus on what matters, and I encourage everyone to have open conversations, and my door is always open as a commissioner, and I know everyone else's as well."
+    } ]
+  }, {
+    "tStartMs": 2933140,
+    "dDurationMs": 4900,
+    "segs": [ {
+      "utf8": "I might be a little bit more overscheduled than some of the other commissioners, which is to their credit."
+    } ]
+  }, {
+    "tStartMs": 2938360,
+    "dDurationMs": 9820,
+    "segs": [ {
+      "utf8": "I think I'm at a point, well, nine months or whatever into my tenure as a commissioner with another five-year term graciously confirmed by the Senate."
+    } ]
+  }, {
+    "tStartMs": 2948780,
+    "dDurationMs": 4740,
+    "segs": [ {
+      "utf8": "I think I've got a pretty good picture of the landscape, and I think that we need to go deeper in the weeds."
+    } ]
+  }, {
+    "tStartMs": 2955300,
+    "dDurationMs": 440,
+    "segs": [ {
+      "utf8": "Great."
+    } ]
+  }, {
+    "tStartMs": 2956300,
+    "dDurationMs": 280,
+    "segs": [ {
+      "utf8": "Stu?"
+    } ]
+  }, {
+    "tStartMs": 2958880,
+    "dDurationMs": 3580,
+    "segs": [ {
+      "utf8": "Just a question, really more broad than for federal government."
+    } ]
+  }, {
+    "tStartMs": 2962460,
+    "dDurationMs": 10640,
+    "segs": [ {
+      "utf8": "There's a lot of, even if we had our wish list, and we were able to build out more generation supply and transmission and the permitting was done, we have supply chain constraints."
+    } ]
+  }, {
+    "tStartMs": 2974980,
+    "dDurationMs": 6160,
+    "segs": [ {
+      "utf8": "And a few OEMs, global demand, and long wait times for equipment."
+    } ]
+  }, {
+    "tStartMs": 2981840,
+    "dDurationMs": 6940,
+    "segs": [ {
+      "utf8": "Any thoughts on what the federal government, how folks are thinking about supply chain constraints like that?"
+    } ]
+  }, {
+    "tStartMs": 2988780,
+    "dDurationMs": 9960,
+    "segs": [ {
+      "utf8": "Yeah, I probably speak with DOE about once a month on supply chain constraints, and they've got a bucket of money that they can apply to deal with some of these issues."
+    } ]
+  }, {
+    "tStartMs": 2998840,
+    "dDurationMs": 5240,
+    "segs": [ {
+      "utf8": "It's not magic wand, but it is an ability to kind of move the needle in one area or another."
+    } ]
+  }, {
+    "tStartMs": 3004960,
+    "dDurationMs": 8960,
+    "segs": [ {
+      "utf8": "I think we need to be more forward-thinking with a lot of our supply chain issues, because I think if we were more forward-thinking, I think we wouldn't be as in a dire position as we are."
+    } ]
+  }, {
+    "tStartMs": 3015860,
+    "dDurationMs": 3120,
+    "segs": [ {
+      "utf8": "Reshoring industrial work for some of these components is absolutely paramount."
+    } ]
+  }, {
+    "tStartMs": 3019560,
+    "dDurationMs": 8760,
+    "segs": [ {
+      "utf8": "We need to figure out a way to bring these companies back home, figure out a way to reshoring the bottlenecks on some of the core materials needed to move forward on some of our projects."
+    } ]
+  }, {
+    "tStartMs": 3029260,
+    "dDurationMs": 4160,
+    "segs": [ {
+      "utf8": "And that's really a DOE task, but it's also involved the national labs."
+    } ]
+  }, {
+    "tStartMs": 3033580,
+    "dDurationMs": 3300,
+    "segs": [ {
+      "utf8": "The national labs have a big say-so in some of these issues as well."
+    } ]
+  }, {
+    "tStartMs": 3037280,
+    "dDurationMs": 2140,
+    "segs": [ {
+      "utf8": "They're studying a lot of the supply chain problems themselves."
+    } ]
+  }, {
+    "tStartMs": 3040220,
+    "dDurationMs": 4680,
+    "segs": [ {
+      "utf8": "So it needs to be a whole-of-government approach to how we address some of these supply chain problems."
+    } ]
+  }, {
+    "tStartMs": 3045360,
+    "dDurationMs": 1700,
+    "segs": [ {
+      "utf8": "Some of them are worse than others."
+    } ]
+  }, {
+    "tStartMs": 3048380,
+    "dDurationMs": 18320,
+    "segs": [ {
+      "utf8": "And I know how big of a bottleneck it is that even if we had that magic wand to get the states in gear to permit new gen, even if we solved their connection queue problems, even if we properly handicapped every single economic component at FERC known to mankind, there would still be this looming supply chain problem out there in the ether that needs to be solved as well."
+    } ]
+  }, {
+    "tStartMs": 3067280,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "But I do know DOE is handling it very well."
+    } ]
+  }, {
+    "tStartMs": 3069660,
+    "dDurationMs": 3960,
+    "segs": [ {
+      "utf8": "I know James over there, he still can't keep FERC off the top of his mind."
+    } ]
+  }, {
+    "tStartMs": 3074480,
+    "dDurationMs": 2740,
+    "segs": [ {
+      "utf8": "So I know that they're taking it very seriously."
+    } ]
+  }, {
+    "tStartMs": 3078020,
+    "dDurationMs": 8940,
+    "segs": [ {
+      "utf8": "And I'm very lucky to have a Department of Energy that understands a lot of these concepts, understands the supply chain problems, and are laser-focused on addressing some of them."
+    } ]
+  }, {
+    "tStartMs": 3089300,
+    "dDurationMs": 2640,
+    "segs": [ {
+      "utf8": "Once you've been at FERC, it's hard to get that out of your bloodstream."
+    } ]
+  }, {
+    "tStartMs": 3092100,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "It just gets ingrained."
+    } ]
+  }, {
+    "tStartMs": 3094460,
+    "dDurationMs": 5440,
+    "segs": [ {
+      "utf8": "Well, we're getting close to the top of the hour, and I want to be respectful and mindful of your schedule."
+    } ]
+  }, {
+    "tStartMs": 3100440,
+    "dDurationMs": 5200,
+    "segs": [ {
+      "utf8": "Commissioner, I really appreciate you being so generous with your time here last evening and being here today."
+    } ]
+  }, {
+    "tStartMs": 3106180,
+    "dDurationMs": 4700,
+    "segs": [ {
+      "utf8": "I enjoyed hearing your perspective on some of these issues, and thank you again for joining us today."
+    } ]
+  }, {
+    "tStartMs": 3111300,
+    "dDurationMs": 380,
+    "segs": [ {
+      "utf8": "Thank you, guys."
+    } ]
+  }, {
+    "tStartMs": 3111960,
+    "dDurationMs": 780,
+    "segs": [ {
+      "utf8": "I'll get with you."
+    } ]
+  }, {
+    "tStartMs": 3117830,
+    "dDurationMs": 1600,
+    "segs": [ {
+      "utf8": "Just keep getting stuff built."
+    } ]
+  }, {
+    "tStartMs": 3120110,
+    "dDurationMs": 320,
+    "segs": [ {
+      "utf8": "All right."
+    } ]
+  }, {
+    "tStartMs": 3120770,
+    "dDurationMs": 9060,
+    "segs": [ {
+      "utf8": "I'm going to ask the folks for the next panel to go to the back so they can get mic'd up, and we'll get going pretty quickly into the next panel, so don't wander off too far, everybody."
+    } ]
+  }, {
+    "tStartMs": 3129990,
+    "dDurationMs": 320,
+    "segs": [ {
+      "utf8": "All right?"
+    } ]
+  } ]
+}

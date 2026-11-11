@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SPECIFICATION.pdf · full text | Large Load Interconnection</title><meta name="description" content="SPECIFICATION.pdf"><link rel="canonical" href="https://pranava0x0.github.io/FERC-Orders-June-2026/reading/filing-20260715-5011-attachment-3/text.html"><meta property="og:title" content="SPECIFICATION.pdf · full text"><meta property="og:description" content="SPECIFICATION.pdf"><link rel="stylesheet" href="../../css/reading.css?v=5cf5cc711d"></head><body><a class="skip" href="#main">Skip to content</a><header><nav aria-label="Site"><a href="../../">Large Load Interconnection</a><a href="../../#filings">Filings</a><a href="../">Reading room</a></nav></header><main id="main"><p class="meta">EL26-67-000 · 2026-07-15 · Relentless Energy Systems LLC</p><h1>SPECIFICATION.pdf</h1><a href="./">Back to sections and commentary</a><section id="p-1"><h2>PDF page 1</h2><pre><span id="section-1"></span>1 
+ 
+UNITED STATES PATENT AND TRADEMARK OFFICE 
+ 
+TITLE OF INVENTION: 
+PHASE-ISOLATED LCFVR ENERGY MANIFOLD WITH GEOMETRIC PHASE 
+ISOLATION (GPI) 
+ 
+INVENTOR(S): 
+Benjamin Donovan Blackketter, Zanesville, Ohio 
+ 
+CROSS-REFERENCE TO RELATED APPLICATIONS 
+This application claims the benefit of priority to U.S. Provisional Patent Application No. 
+63/976624, filed on 02/05/2026, the entire contents of which are hereby incorporated by 
+reference in their entirety. 
+ 
+STATEMENT 
+REGARDING 
+FEDERALLY 
+SPONSORED 
+RESEARCH 
+OR 
+DEVELOPMENT 
+None. 
+ 
+REFERENCE TO SEQUENCE LISTING, TABLE, OR COMPUTER PROGRAM LISTING 
+Included in the Specification body (see &quot;Computer Program Listing&quot;) and the results in 
+APPENDIX A - MASTER SIMULATION DATASET. And Table 1, Universal Load 
+Equivalence Table, under DETAILED DESCRIPTION OF THE INVENTION. And finally, 
+Table 2 - MASTER SIMULATION DATASET: LCFVR GPI PARAMETER SWEEP, within 
+Appendix B. 
+ 
+NOTICE REGARDING COLOR FIGURES 
+[0001] Color figures are included in this application because they are required to 
+accurately convey the operation of the manifold in Figures 2 and 3. The LTspice output 
+(Figure2-CONVERGENCE1) 
+and 
+the 
+Siemens 
+AMESIM 
+output 
+(Figure3-
+CONVERGENCE2) contain contextual interface elements, multi-channel overlays, and 
+solver-specific visual cues that are essential to authenticate the data, demonstrate the</pre></section><section id="p-2"><h2>PDF page 2</h2><pre>2 
+ 
+relationships between source and inductive currents, and preserve the integrity of the 
+time-domain evidence. These figures cannot be reduced to black-and-white line art 
+without loss of meaning, and their contextual elements are necessary to establish 
+provenance and prevent misinterpretation as generic or artificially constructed data. 
+ 
+BACKGROUND OF THE INVENTION 
+ 
+Field of the Invention 
+[0002] The invention relates to resonant electrical systems, power-conditioning 
+structures, and electromagnetic energy-transfer mechanisms. More particularly, it 
+concerns a passive parallel resonant manifold configured according to a defined 
+inductance-capacitance-frequency-voltage-resistance (LCFVR) regime that maintains 
+high internal reactive power while supplying real power to a variable mechanical, 
+electrical, magnetic, radiative, or environmental load through a geometry-dependent 
+phase-isolation effect. Simulation data from both Siemens AMESIM and LTspice 
+demonstrates that, when operating within GPI manifold parameters, this topology 
+sustains an internal electromagnetic flux magnitude that is strictly larger than the source&#39;s 
+apparent-power contribution would classically predict. 
+ 
+Description of Related Art 
+[0003] Conventional inductive load drivers and resonant circuits exhibit behavior in which 
+internal reactive power collapses when real power is extracted by a load. Voltage-source 
+systems experience reduced current magnitude under load, diminishing torque or force 
+production. Standard LC tanks lose circulating energy when subjected to variable loading 
+conditions, as the quality factor decreases and the resonant exchange becomes damped. 
+Existing approaches rely on active regulation or switched-mode control. No passive 
+topology in the prior art maintains high internal reactive power while supplying real power 
+to a variable load without collapse of circulating current or increased boundary demand. 
+ 
+SUMMARY OF THE INVENTION</pre></section><section id="p-3"><h2>PDF page 3</h2><pre>3 
+ 
+Motivation and Problem Statement: 
+[0004] Classical resonant systems collapse internal reactive power when real work is 
+extracted, limiting electromechanical force production and increasing boundary demand. 
+No passive topology in the prior art maintains high internal circulation while 
+simultaneously delivering real power across variable loads. The disclosed manifold 
+resolves this limitation by geometrically isolating the internal reactive exchange from 
+boundary impedance, filling a critical gap in high-efficiency energy transfer and power-
+conditioning applications. 
+[0005] The invention provides a passive resonant manifold configured according to a five-
+parameter LCFVR tuning regime. When tuned within a defined operating region, the 
+manifold exhibits a geometry-dependent phase-isolation effect in which internal reactive 
+power remains high while boundary real-power demand remains comparatively low. This 
+operating region is referred to as the GPI Support Region. Any mechanism that extracts 
+real power from either/both the inductive branch and/or capacitive branch(es) is 
+electrically equivalent to a series resistance and is therefore covered by the invention. 
+[0006] Within this region, variations in resistive, mechanical, magnetic, radiative, thermal, 
+or environmental loading do not collapse the circulating current responsible for magnetic-
+flux generation. Instead, the manifold preserves a high flux amplitude in the inductive 
+branch even as the inductor phase angle decreases. Because magnetic flux directly 
+governs electromechanical force production and coupling strength, the maintained 
+internal circulation enables practical work extraction without the flux collapse normally 
+associated with increased load. 
+ 
+Physical Intuition: 
+[0007] Physically, the LCFVR manifold functions by allowing the capacitor and inductor to 
+form a self-contained reactive reservoir. The geometry of the circuit isolates this reservoir 
+from the boundary, meaning the source does not &quot;see&quot; the massive internal circulating 
+current. Instead, the source acts merely to &quot;top off&quot; the real losses consumed by the load. 
+This allows the internal reactive &quot;flywheel&quot; to maintain stable magnetic flux generation 
+entirely independent of the source&#39;s apparent power contribution.</pre></section><section id="p-4"><h2>PDF page 4</h2><pre>4 
+ 
+[0008] The manifold comprises a capacitive branch and an inductive branch connected 
+in parallel to a source. When tuned to the GPI state, the circulating current magnitude in 
+the inductive branch remains substantially constant across a wide range of load 
+resistances. The inductor phase angle decreases monotonically with increasing load 
+resistance, while the current magnitude decreases only minimally. 
+[0009] Magnetic flux amplitude is proportional to circulating current magnitude and 
+independent of electrical phase angle. As a result, the system maintains flux generation 
+capability yielding a Geometry Ratio G ≥ 1 within the support region. In one verified 
+embodiment, the LCFVR manifold is implemented with a 60 Hz, 123.74 Vrms source, a 
+0.1 µF capacitive reservoir branch with 10 Ω series resistance, and a 70 H inductive 
+branch with 500 Ω coil resistance and a Flux Hindrance workload varied from 0 to 25 kΩ 
+(total inductive-branch resistance 500-25,500 Ω). The manifold is agnostic to the physical 
+form of the load; any process or device that extracts real power from the inductive branch 
+is encompassed within the Flux Hindrance and Variable Resistive Load definitions. 
+ 
+DEFINITIONS 
+[0010] 
+• 
+Terminology Consistency Note: The terms &quot;Flux Hindrance&quot;, &quot;Variable Resistive 
+Load&quot;, and &quot;Universal Load Equivalence&quot; are used interchangeably within the 
+context of this invention. All refer to the effective series resistance (Rload) 
+representing real-power extraction from either/both the inductive branch and/or 
+capacitive branch. 
+• 
+LCFVR Manifold: A resonant electrical structure defined by inductance (L), 
+capacitance (C), operating frequency (F), applied voltage (V), and internal 
+resistance (R). 
+• 
+Geometry Ratio (G): A dimensionless ratio defined as the quotient of internal 
+apparent power and boundary apparent power: G = Sinternal/Ssource. 
+• 
+GPI Support Region: A region in which the Geometry Ratio satisfies G &gt; 1 and 
+circulating current remains substantially independent of load. 
+• 
+Flux Phase: The phase angle between inductor voltage and inductor current.</pre></section><section id="p-5"><h2>PDF page 5</h2><pre><span id="section-2"></span>5 
+ 
+• 
+Flux Hindrance: A generalized load-coupling mechanism representing any 
+process, device, structure, or environment that extracts real power from either/both 
+the inductive branch and/or capacitive branch. Flux Hindrance includes, but is not 
+limited to, mechanical loads, electrical loads, magnetic loads, thermal loads, 
+radiative loads, mobile devices, stationary equipment, building-integrated systems, 
+and location-dependent or environmental interactions. All such extractions appear 
+electrically as an effective series resistance. 
+• 
+Variable Resistive Load (Rload): A representation of any real-power extraction 
+pathway, including mechanical work, electrical work, magnetic coupling, radiative 
+emission, thermal conversion, environmental damping, or any mobile, stationary, 
+or building-integrated technology that imposes real-power demand on either/both 
+the inductive branch and/or capacitive branch. Regardless of physical form, all 
+such extractions manifest electrically as an effective series resistance. 
+• 
+Universal Load Equivalence: Any mechanism that extracts real power from 
+either/both the inductive branch and/or capacitive branch is electrically equivalent 
+to a series resistance and is therefore governed by the same GPI regime defined 
+herein. 
+ 
+BRIEF DESCRIPTION OF THE DRAWINGS 
+[0011] The accompanying drawings illustrate the invention. In such drawings: 
+• 
+Figure 1: Schematic diagram of the Parallel LCFVR Manifold topology, showing 
+the capacitive reservoir branch and the inductive branch coupled to the AC source. 
+• 
+Figure 2: CONVERGENCE1- LTspice simulation output demonstrating internal 
+current magnification within the GPI state. The inductive-branch circulating current 
+remains substantially larger than the source current, confirming the presence of an 
+internal reactive reservoir and validating the GPI Support Region. 
+• 
+Figure 3: CONVERGENCE2- Siemens AMESIM simulation output demonstrating 
+internal current magnification within the GPI state. 
+• 
+Figure 4: Performance map of the Geometry Ratio (G), demonstrating the 
+operating region where Internal Apparent Power exceeds Source Apparent Power 
+(Sinternal &gt; Ssource).</pre></section><section id="p-6"><h2>PDF page 6</h2><pre>6 
+ 
+DETAILED DESCRIPTION OF THE INVENTION 
+[0012] General Structure The manifold comprises an AC source connected in parallel to 
+a capacitive branch and an inductive branch (as shown in FIG. 1). The inductive branch 
+includes an inductor and a variable resistive load representing mechanical, electrical, 
+magnetic, radiative, or environmental work. The capacitive and inductive reactances are 
+selected such that the manifold operates within the GPI Support Region (as 
+conceptualized in FIG. 4). 
+[0013] Universal Load Equivalence Table 1 
+To expressly outline the breadth of the Flux Hindrance mechanism, the following table 
+demonstrates how disparate physical load types are electrically represented within the 
+manifold, making them legally and physically governed by the GPI regime. 
+Physical Load Type 
+Electrical 
+Representation 
+Notes 
+Mechanical torque 
+Series resistance 
+Work 
+extraction 
+increases 
+real 
+component. 
+Magnetic coupling 
+Series resistance 
+Includes 
+transformers, 
+inductive 
+pickups. 
+Radiative emission 
+Series resistance 
+Antennas, RF loads. 
+Thermal heating 
+Series resistance 
+Pure resistive loads. 
+Environmental 
+damping 
+Series resistance 
+Fluid drag, acoustic loads. 
+[0014] Operating Regime When driven at or near resonance, the manifold exhibits high 
+internal reactive power exchange between the inductive and capacitive branches. The 
+boundary phasor remains predominantly real, while the internal phasor remains 
+predominantly reactive. The circulating current magnitude in the inductive branch remains 
+substantially constant across a wide range of load resistances (as shown in FIG. 3 and 
+FIG. 4). 
+[0015] Phase Behavior The inductor phase angle decreases monotonically with 
+increasing load resistance. This phase collapse reflects a redistribution of reactive and</pre></section><section id="p-7"><h2>PDF page 7</h2><pre>7 
+ 
+real components within the manifold and does not correspond to a collapse of circulating 
+current. 
+[0016] Flux Generation Capability Magnetic flux amplitude is determined by the 
+circulating current magnitude according to the relationship Φ = L ⋅ Icirc. Because the 
+circulating current magnitude remains substantially constant within the GPI Support 
+Region, the system maintains flux generation capability across a wide range of load 
+resistances. An electromechanical actuator driven by the inductive branch therefore 
+produces output force or torque proportional to the elevated internal circulating current 
+(Iinternal), rather than the lower current drawn from the source (Isource). 
+[0017] Experimental Load Response (Regimes A-D) The manifold&#39;s behavior across a 
+range of load resistances has been evaluated using circuit simulation. The results 
+demonstrate the defining characteristics of the GPI Support Region. 
+• 
+Regime A - Low Load: Internal apparent power significantly exceeds boundary 
+apparent power. Circulating current magnitude remains high, and the inductor 
+phase angle is near quadrature. The Geometry Ratio is substantially greater than 
+unity (see FIG. 3). 
+• 
+Regime B - Intermediate Load: Internal apparent power remains significantly 
+greater than boundary apparent power. Circulating current magnitude decreases 
+only minimally, while the inductor phase angle decreases monotonically. The 
+Geometry Ratio remains greater than unity. 
+• 
+Regime C - High Load: Internal apparent power approaches boundary apparent 
+power. Circulating current magnitude remains stable relative to the load increase, 
+and the inductor phase angle continues to decrease. The Geometry Ratio 
+approaches unity. 
+• 
+Regime D - Unity-Gain Boundary: At a load resistance approximately equal to 
+the inductive reactance at the operating frequency, internal apparent power equals 
+boundary apparent power. Circulating current magnitude remains non-zero, and 
+the inductor phase angle is significantly reduced. This marks the transition from 
+the GPI Support Region to classical resonant behavior. A complete dataset 
+analysis of operating points is provided in Appendix B.</pre></section><section id="p-8"><h2>PDF page 8</h2><pre>8 
+ 
+[0018] Mechanical Embodiments The manifold may be coupled to mechanical loads 
+including linear actuators, rotary machines, and multi-piston assemblies. In one 
+embodiment, a quadrature piston arrangement provides continuous impedance 
+presentation to the inductive branch. 
+[0019] Resistive Loads and Thermal Conversion in the GPI Regime 
+Pure resistive heating is a valid real-power extraction mode within this invention. 
+Mechanical loads, magnetic loads, radiative loads, thermal loads, resistive heaters, 
+environmental damping, and any dissipative or work-producing process are all treated as 
+effective series resistance and therefore fall under the same GPI regime. The GPI effect 
+persists even when the load is purely resistive and produces only heat. While phase 
+collapse still occurs under thermal loading, the circulating current remains stable. 
+Simulation demonstrates that the internal apparent power (Sinternal) remains strictly 
+greater than the source apparent power (Ssource) even when the load is a standard 
+resistor, confirming that thermal loads are comprehensively included within the definition 
+of Flux Hindrance. 
+[0020] Power-Conditioning Embodiment The manifold may be used to isolate a source 
+from a variable load. The capacitive branch and inductive branch form a resonant 
+structure that supplies real power to the load while maintaining reduced boundary 
+demand. 
+[0021] Component Variations, Scaling Law, and Design-Around Prevention It is to 
+be understood that the terms &quot;capacitive branch&quot; and &quot;inductive branch&quot; refer to the net 
+reactance presented to the manifold. These branches may comprise single components 
+or multiple components arranged in series, parallel, or array configurations (e.g., a 
+capacitor bank, a multi-coil geometry, or a switched-reluctance array) without departing 
+from the scope of the invention. 
+• 
+Design-Around Prevention: Any topology that maintains a high internal reactive 
+reservoir while supplying real power to a load through a phase-isolated inductive 
+branch falls within the scope of this invention, regardless of specific component 
+arrangement. This strictly includes multi-coil variants, switched-reluctance 
+variants, capacitor arrays, multi-branch LC networks, and distributed resonant 
+manifolds acting as loopholes.</pre></section><section id="p-9"><h2>PDF page 9</h2><pre><span id="section-3"></span>9 
+ 
+• 
+Scaling Law: The invention is scale-invariant under proportional adjustment of 
+inductance (L), capacitance (C), frequency (F), voltage (V), and resistance (R). 
+Furthermore, while specific values (e.g., 70 H, 0.1 µF) are described for the 
+preferred embodiment, the invention is not limited to these absolute values. The 
+invention resides in the proportional tuning of the LCFVR parameters to achieve 
+the Geometry Ratio (G ≥ 1) defined herein, which may be scaled to higher or lower 
+power levels by adjusting the component values proportionally. The manifold may 
+also be implemented in distributed or multi-branch configurations, including 
+architectures in which multiple inductive or capacitive sub-branches operate 
+cooperatively or asynchronously to maintain the GPI Support Region across 
+varying load conditions. 
+[0022] Source Connectivity and Application Versatility The LCFVR manifold is 
+agnostic to the origin of the input energy. The term &quot;Source&quot; as used herein 
+encompasses: 
+• 
+Grid-Tied Systems: Where the manifold is connected directly to a utility grid to 
+provide real work while simultaneously acting as a Power Factor Correction (PFC) 
+device due to its intrinsic resonant nature. 
+• 
+Inverted DC Systems: Where the source comprises a DC storage element (e.g., 
+battery, capacitor bank, or fuel cell) coupled to a DC/AC inverter. In this 
+configuration, the manifold&#39;s internal reactive support (GPI) isolates the inverter 
+from the high magnetization current of the inductive branch, thereby significantly 
+reducing the peak-current demand on the inverter switches. 
+• 
+Autonomous Generators: Where the source is a variable-frequency alternator 
+(e.g., wind turbine or hydro-electric generator). 
+• 
+Mobile Platforms &amp; Environmental Loads: Including EV drives, marine 
+propulsion, HVAC systems, or building-integrated energy recovery systems where 
+the load is variable and location-dependent. 
+[0023] Interpretive Framework for Understanding the Operating Regime 
+Conventional analysis of resonant electrical systems treats current magnitude, phase 
+angle, and reactive exchange as interdependent quantities. Under this framework, a 
+reduction in phase angle is typically interpreted as a reduction in reactive energy or</pre></section><section id="p-10"><h2>PDF page 10</h2><pre>10 
+ 
+circulating current. This interpretation is valid for classical resonant circuits in which the 
+reactive exchange is constrained by boundary impedance. 
+[0024] The operating regime disclosed herein differs from classical behavior. Within the 
+LCFVR manifold, the internal reactive exchange is determined by the geometric 
+relationship between the inductive and capacitive branches rather than by the boundary 
+impedance alone. As a result, the circulating current magnitude remains substantially 
+constant across a wide range of load resistances, even as the inductor phase angle 
+decreases monotonically. 
+[0025] Interpretive Warnings for the GPI Regime 
+Classical phasor assumptions fail in this regime. To correctly interpret the behavior of the 
+manifold, the following principles and warnings apply: 
+• 
+Boundary current cannot be used to infer internal circulating current. 
+• 
+Phase angle cannot be used to infer flux amplitude. 
+• 
+Apparent power cannot be assumed to be conserved across the boundary. 
+• 
+Flux Amplitude Relation: Magnetic flux is determined by the product of 
+inductance and circulating current (Φ = L ⋅ Icirc). In the disclosed manifold, a 
+reduction in phase angle does not imply a proportional reduction in flux amplitude. 
+• 
+Phase Collapse Inference: In classical analysis, a reduction in phase angle is 
+often interpreted as a reduction in current magnitude. In the disclosed manifold, 
+this inference does not hold; phase reduction does not imply a proportional 
+reduction in circulating current. 
+• 
+Geometry Ratio: The ratio of internal apparent power to boundary apparent power 
+(G = Sinternal/Ssource) determines whether the manifold is operating within the 
+GPI Support Region. 
+Independent simulation platforms confirm that these interpretive principles accurately 
+describe the behavior of the manifold. 
+[0026] Analytical Framework and Applicable Equations 9.1 Equations Applicable in 
+the GPI Regime The GPI state is maintained structurally when the Inductive Reactance 
+exceeds the Effective Load Resistance: 
+• 
+Flux Amplitude: Φ = L ⋅ Icirc 
+• 
+XL &gt; (Rbase + Rload)</pre></section><section id="p-11"><h2>PDF page 11</h2><pre>11 
+ 
+• 
+Internal Apparent Power: Sinternal = Vrms × Icirc 
+• 
+Geometry Ratio: G = Sinternal/Ssource 
+• 
+Inductive Reactance Boundary: Rload = 2πfL 
+• 
+Flux Stability Condition: Δ|Icirc| / ΔRload ≈ 0 
+GPI Invariance Condition: The circulating current magnitude remains invariant with 
+respect to load as long as XL &gt; Rbase + Rload. 
+[0027] Equations That Do Not Apply in the GPI Regime 
+• 
+Boundary-current equation (misapplied internally): Iinternal ≠ Isource 
+• 
+Classical reactive-power inference: Low Phase ≠ Low Flux 
+[0028] Reason Classical Equations Fail 
+Classical phasor analysis assumes: 
+• 
+A single boundary phasor 
+• 
+Reactive exchange constrained by the source 
+• 
+No internal reservoir of reactive power 
+The LCFVR manifold differs because: 
+• 
+The capacitor and inductor form an internal reactive reservoir 
+• 
+The boundary phasor reflects only the real-power component 
+• 
+The internal phasor is geometrically isolated 
+• 
+Circulating current is governed by LCFVR tuning, not by load 
+[0029] Simulation Confirmation Independent simulation platforms demonstrate: 
+• 
+Flux amplitude tracks current magnitude 
+• 
+Phase collapse does not reduce circulating current 
+• 
+Internal apparent power remains large across load 
+• 
+The unity-gain boundary occurs when the load resistance equals the inductive 
+reactance (Rload ≈ XL) 
+[0030] Boundary Apparent Power vs. Internal Real Power Delivery 
+At idealized GPI points, the system can deliver more real heat or real work to a resistive 
+load than the boundary apparent power would classically predict. Internal apparent power 
+governs the available work, not boundary apparent power. The source sees only the real 
+component of the boundary phasor, not the internal reactive reservoir. For example, in a 
+verified embodiment, the system delivers approximately 5 W of real heat to the Flux</pre></section><section id="p-12"><h2>PDF page 12</h2><pre>12 
+ 
+Hindrance workload while the source boundary apparent power is measured at 
+approximately 4 VA. This phenomenon strictly does not violate the First Law of 
+Thermodynamics because real power is always conserved (Psrc = Pload). 
+[0031] Conservation of Energy and Non-Overunity 
+No energy is created in the LCFVR manifold. The internal apparent power is not real 
+power. The source only supplies the true real power necessary to sustain the steady-state 
+operation of the circuit and the work extracted. The internal reservoir is purely reactive 
+and circulates longitudinally between the inductor and the capacitor. The core advantage 
+of this manifold is exceptional geometric flux stability, not energy creation. 
+[0032] Applications Beyond Inductive Loads 
+While electromechanical actuation and rotary machines represent primary embodiments, 
+the universal load equivalence of the LCFVR manifold ensures its applicability across 
+numerous industries. The invention applies directly to: 
+• 
+Resistive heaters 
+• 
+Radiative emitters and RF loads 
+• 
+Transformers and solid-state coupling devices 
+• 
+Environmental damping systems 
+• 
+Thermal conversion systems 
+• 
+Chemical loads (e.g., electrolysis) 
+• 
+Building-integrated energy recovery systems 
+ 
+[0033] COMPUTER PROGRAM LISTING Measurement Methodology: To ensure 
+rigorous validation of the GPI regime, the following simulation dataset utilizes a time-
+domain solver to capture accurate steady-state dynamics. Measurements are extracted 
+over a precise RMS window (3.983s to 4.0s) occurring at Cycle 207, which ensures that 
+all initial transient responses have fully settled and the circuit is operating in pure steady 
+state. Phase angles are calculated using a strict zero-crossing method (measuring the 
+time delta between voltage and current zero-crossings), guaranteeing that the phase shift 
+accurately reflects the physical state of the load without phasor approximation errors 
+inherent to frequency-domain analysis. 
+[0034] CODE LISTING 1:</pre></section><section id="p-13"><h2>PDF page 13</h2><pre><span id="section-4"></span>13 
+ 
+SPICE NETLIST FOR GPI TOPOLOGY (Verified Master Build) 
+The following SPICE netlist and resulting data log confirm the GPI Operating State 
+(Regime B) at a load of 20,500 Ohms. 
+----- 
+* LCFVR GPI Circuit - MASTER NPPA BUILD 
+* 
+* SIMULATION PROTOCOL: 
+* This netlist describes the LCFVR topology. To replicate the distinct 
+* operating regimes described in the Specification, modify the &#39;Rser&#39; 
+* parameter (Line 25) as follows: 
+* REGIME A (GPI base): Set Rser = 500 
+* REGIME B-C (GPI): Set Rser = 20500 (Default below) 
+* REGIME D (Limit): Set Rser = 25500 
+* 
+* NOTE: Simulation uses Peak Voltage (VPK) for generation. 
+* All Output Measurements (.meas) are converted to RMS for standard analysis. 
+* 175 Vpk = 123.74 Vrms 
+.param FREQ=60 
+.param VPK=175 
+* AC Source: 175 Vpk, 60 Hz 
+V1 n1 0 SIN(0 {VPK} {FREQ}) 
+* Capacitive Reservoir Branch: 0.1uF with 10 ohm series resistance 
+CRES n1 nC .1u 
+R_C nC 0 10 
+* Inductor Branch: 70H with Variable Load 
+* Rser represents Coil Resistance (500R) + Flux Hindrance Load (0-25000R) 
+* DEFAULT CONFIGURATION: REGIME B (GPI WORK STATE) 
+LLOAD n1 0 70H Rser=20500 
+* 
+* --- Probes --- 
+BVLIND vLind 0 V=V(n1)-V(0)</pre></section><section id="p-14"><h2>PDF page 14</h2><pre>14 
+ 
+* Note: Negative sign corrects for SPICE source current convention 
+BPSRC ps 0 V=-V(n1)*I(V1) 
+BPIND pi 0 V=V(vLind)*I(LLOAD) 
+* 
+* --- Measurements (Time Window: 3.98s to 4.0s) --- 
+* Window selected to capture steady-state behavior at Cycle 207 
+.meas TRAN Vrms_src RMS V(n1) FROM=3.983333 TO=4 
+.meas TRAN Irms_src RMS I(V1) FROM=3.983333 TO=4 
+.meas TRAN Vrms_ind RMS V(vLind) FROM=3.983333 TO=4 
+.meas TRAN Irms_ind RMS I(LLOAD) FROM=3.983333 TO=4 
+* 
+* --- POWER DATA --- 
+* CORRECTED SYNTAX: Added &#39;*&#39; for multiplication 
+.meas TRAN S_source PARAM Vrms_src*Irms_src 
+.meas TRAN S_internal PARAM Vrms_ind*Irms_ind 
+.meas TRAN P_src AVG V(ps) FROM=3.983333 TO=4 
+.meas TRAN P_ind AVG V(pi) FROM=3.983333 TO=4 
+* --- ENERGY CONSERVATION CONFIRMATION --- 
+* The data above confirms Real Power is conserved (P_src ~= P_ind). 
+* The inventive step is the Apparent Power (S_internal) leverage. 
+* While P_src is low (Input Real Power), S_internal remains high (Circulating Energy). 
+* This demonstrates Geometry Ratio G &gt; 1 without violating conservation. 
+* --- PHASE MEASUREMENT: TIME DOMAIN (Zero Crossings) --- 
+.meas TRAN tVind WHEN V(vLind)=0 RISE=207 
+.meas TRAN tiind WHEN I(LLOAD)=0 RISE=207 
+.meas TRAN phi_time PARAM 360*(tiind-tVind)*FREQ 
+* --- GEOMETRY RATIO (G) --- 
+* Note: G = S_internal / S_source 
+.meas TRAN G_ratio PARAM S_internal/S_source 
+.tran 0 4 0 10u 
+.options plotwinsize=0</pre></section><section id="p-15"><h2>PDF page 15</h2><pre>15 
+ 
+.end 
+ 
+The results generated by this Program Listing are provided in Appendix A. 
+ 
+[0035] APPENDIX A - VERIFIED OUTPUT LOG OF &#39;PROGRAM LISTING&#39; LTSPICE 
+DATASET 
+The following output data confirms: 
+1. Conservation of Energy (P_src approx P_ind) 
+2. Flux Stability (~3.7mA) 
+3. Geometry Ratio &gt; 1.29 
+• 
+vrms_src: RMS(V(n1))=123.742314383 FROM 3.983333 TO 4 
+• 
+irms_src: RMS(I(V1))=0.00286331794939 FROM 3.983333 TO 4 
+• 
+vrms_ind: RMS(V(vLind))=123.742314383 FROM 3.983333 TO 4 
+• 
+irms_ind: RMS(I(LLOAD))=0.00370309594446 FROM 3.983333 TO 4 
+• 
+s_source: Vrms_src*Irms_src=0.354313589872 
+• 
+s_internal: Vrms_ind*Irms_ind=0.45822966255 
+• 
+p_src: AVG(V(ps))=0.28132422163 FROM 3.983333 TO 4 
+• 
+p_ind: AVG(V(pi))=0.281106609509 FROM 3.983333 TO 4 
+• 
+tvind: V(vLind)=0 AT 3.43333333334 
+• 
+tiind: I(LLOAD)=0 AT 3.43574810089 
+• 
+phi_time: 360*(tiind-tVind)*FREQ=52.1589792653 
+• 
+g_ratio: S_internal/S_source=1.29328841921 
+ 
+[0036] APPENDIX B - MASTER SIMULATION DATASET: LCFVR GPI PARAMETER 
+SWEEP 
+(Verifying Operation Across Load Regimes 500 Ω – 25,500 Ω) 
+• 
+RMS voltages and currents 
+• 
+internal and boundary apparent power 
+• 
+real-power conservation checks 
+• 
+phase-angle measurements 
+• 
+zero-crossing timestamps</pre></section><section id="p-16"><h2>PDF page 16</h2><pre>16 
+ 
+• 
+Geometry Ratio calculations 
+ 
+[0037] Definitions 
+• 
+vrms_src: RMS(V(n1)). Definition: The Root Mean Square voltage measured at 
+the AC Source node. Significance: Confirms the input potential is steady (e.g., 
+123.74 V) and acts as the reference baseline for all power calculations. 
+• 
+irms_src: RMS(I(V1)). Definition: The Root Mean Square current flowing out of 
+the AC Source. Significance: Represents the &quot;Cost.&quot; A low value here proves the 
+manifold is effectively isolating the source from the heavy inductive demand 
+downstream. 
+• 
+vrms_ind: RMS(V(vLind)). Definition: The Root Mean Square voltage measured 
+directly across the Inductive Branch. Significance: Confirms that the full source 
+voltage is successfully applied to the load, despite the reduced input current. 
+• 
+irms_ind: RMS(I(LLOAD)). Definition: The Root Mean Square current circulating 
+through the Inductor and Load. Significance: Represents the &quot;Work Potential.&quot; 
+• 
+s_source: Vrms_src * Irms_src. Definition: The Boundary Apparent Power 
+(Voltage * Current) supplied by the source. Significance: Quantifies the total 
+electrical burden placed on the grid or generator. In the GPI state, this number is 
+artificially suppressed. 
+• 
+s_internal: Vrms_ind * Irms_ind. Definition: The Internal Apparent Power 
+circulating within the inductive branch. Significance: Quantifies the actual energy 
+available for electromechanical conversion. Proves the existence of an &quot;energy 
+reservoir&quot; that is larger than the input. 
+• 
+p_src: AVG(V(ps)). Definition: The Average Real Power (Watts) actually 
+consumed by the circuit from the source. Significance: Represents the true energy 
+cost. This must match p_ind to satisfy the Conservation of Energy (proving no laws 
+of physics are broken). 
+• 
+p_ind: AVG(V(pi)). Definition: The Average Real Power (Watts) dissipated or 
+utilized by the resistive load. Significance: Represents the &quot;Real Work&quot; done. 
+When compared to p_src, it confirms that 100% of the paid-for energy is reaching 
+the load.</pre></section><section id="p-17"><h2>PDF page 17</h2><pre><span id="section-5"></span>17 
+ 
+• 
+tvind: V(vLind)=0. Definition: The exact timestamp when the voltage waveform 
+crosses zero. Significance: Used as the reference point to measure the time delay 
+of the current. 
+• 
+tiind: I(LLOAD)=0. Definition: The exact timestamp when the current waveform 
+crosses zero. Significance: Used to calculate the lag between voltage and current. 
+• 
+phi_time: 360 * (tiind - tVind) * FREQ. Definition: The calculated Phase Angle (in 
+degrees) of the inductive branch. Significance: Reveals the physical state of the 
+load. A decreasing angle confirms the system is performing real work (Monotonic 
+Phase Retardation). 
+• 
+g_ratio: S_internal / S_source. Definition: The Geometry Ratio (dimensionless). 
+Significance: The defining metric of the invention. A value &gt; 1.0 proves that the 
+Internal Reactive Power exceeds the Source Apparent Power, confirming the 
+&quot;Geometric Phase Isolation&quot; state. 
+ 
+[0038] Table 2 - MASTER SIMULATION DATASET: LCFVR GPI PARAMETER SWEEP 
+Master Configuration: 
+LCFVR in GPI 
+L=70H w 500R, C=0.1uF w 10R, F=60Hz, V=123.74Vrms, R=Base+FluxHindrance = 
+500 to 25500 
+ 
+Para
+meter 500 Ω 
+1500 Ω 
+3000 Ω 
+5500 Ω 
+10500 Ω 
+20500 Ω 
+25500 Ω 
+vrms_
+src 
+123.7423
+144 
+123.74231
+44 
+123.74231
+44 
+123.74231
+44 
+123.7423
+144 
+123.7423
+144 
+123.7423
+144 
+irms_
+src 
+9.33E-05 
+0.0002675
+845583 
+0.0005292
+291278 
+0.0009538
+318117 
+0.001726
+423745 
+0.002863
+317949 
+0.003242
+971315 
+vrms_
+ind 
+123.7423
+144 
+123.74231
+44 
+123.74231
+44 
+123.74231
+44 
+123.7423
+144 
+123.7423
+144 
+123.7423
+144 
+irms_i
+nd 
+0.004688
+34272 
+0.0046816
+27079 
+0.0046591
+7304 
+0.0045905
+39044 
+0.004356
+953785 
+0.003703
+095944 
+0.003372
+059524</pre></section><section id="p-18"><h2>PDF page 18</h2><pre>18 
+ 
+s_sou
+rce 
+0.011545
+9815 
+0.0331115
+3254 
+0.0654880
+3712 
+0.1180293
+559 
+0.213631
+6698 
+0.354313
+5899 
+0.401292
+776 
+s_inte
+rnal 
+0.580146
+3789 
+0.5793153
+699 
+0.5765368
+551 
+0.5680439
+256 
+0.539139
+545 
+0.458229
+6626 
+0.417266
+4498 
+p_src 
+0.011207
+40694 
+0.0330926
+0227 
+0.0653384
+5208 
+0.1161145
+036 
+0.199531
+8438 
+0.281324
+2216 
+0.290165
+3783 
+p_ind 
+0.010989
+79477 
+0.0328749
+9695 
+0.0651208
+3837 
+0.1158968
+58 
+0.199314
+2331 
+0.281106
+6095 
+0.289947
+76 
+tvind 
+AT 
+3.433333
+33334 
+AT 
+3.4333333
+3334 
+AT 
+3.4333333
+3334 
+AT 
+3.4333333
+3334 
+AT 
+3.433333
+33334 
+AT 
+3.433333
+33334 
+AT 
+3.433333
+33334 
+tiind 
+AT 
+3.437449
+74754 
+AT 
+3.4373493
+8665 
+AT 
+3.4371997
+3823 
+AT 
+3.4369549
+592 
+AT 
+3.436495
+51098 
+AT 
+3.435748
+10089 
+AT 
+3.435462
+12861 
+phi_ti
+me 
+88.91454
+676 
+86.746751
+56 
+83.514345
+73 
+78.227118
+64 
+68.30303
+703 
+52.15897
+927 
+45.98197
+8 
+g_rati
+o 
+50.24660
+56 
+17.495879
+09 
+8.8036972
+93 
+4.8127342
+65 
+2.523687
+361 
+1.293288
+419 
+1.039805
+535</pre></section><section id="p-19"><h2>PDF page 19</h2><pre>19 
+ 
+[0039] CLAIMS 
+1. A resonant electrical manifold comprising an AC source, a capacitive reservoir 
+branch, and an inductive branch operably coupled in an effective parallel relationship 
+such that they are subject to a substantially common boundary voltage, wherein the 
+branches are configured according to a multi-parameter LCFVR tuning regime 
+establishing a Geometric Phase Isolation (GPI) state, the LCFVR tuning regime defining 
+the proportional relationship among inductance, capacitance, frequency, voltage, and 
+resistance necessary to maintain the GPI state, such that the inductive reactance strictly 
+exceeds the effective load resistance of the manifold, and an internal apparent power 
+reservoir exceeds a boundary apparent power demand. 
+2. The manifold of claim 1, wherein the circulating current magnitude in the inductive 
+branch remains substantially constant across a range of load resistances. 
+3. The manifold of claim 1, wherein the inductor phase angle decreases monotonically 
+with increasing load resistance while flux amplitude remains proportional to the 
+circulating current. 
+4. The manifold of claim 1, wherein the effective load resistance comprises any real-
+power extraction mechanism, including mechanical, magnetic, radiative, thermal, or 
+environmental loads presenting electrically as a series resistance. 
+5. The manifold of claim 1, wherein the manifold is scale-invariant, maintaining the GPI 
+state under proportional scaling of inductance, capacitance, frequency, voltage, and 
+resistance. 
+6. The manifold of claim 1, wherein the inductive and capacitive branches comprise 
+multi-coil geometries, capacitor arrays, or distributed asynchronous LC networks 
+operating cooperatively. 
+7. The manifold of claim 1, wherein the manifold transitions to classical resonant 
+behavior only when the effective load resistance approaches the inductive reactance. 
+8. A method of operating a resonant electrical manifold comprising: operably coupling a 
+capacitive branch and an inductive branch in an effective parallel relationship configured 
+to present a substantially common boundary voltage across both branches to a source, 
+establishing an internal reactive power reservoir geometrically isolated from a boundary 
+phasor, coupling a variable real-power load to the manifold, and maintaining a</pre></section><section id="p-20"><h2>PDF page 20</h2><pre>20 
+ 
+circulating current magnitude substantially independent of the variable load while 
+allowing the inductor phase angle to decrease monotonically with increasing load. 
+9. The method of claim 8, further comprising maintaining a Geometry Ratio greater than 
+unity, defined as the ratio of internal apparent power to boundary apparent power. 
+10. The method of claim 8, wherein magnetic flux amplitude is maintained 
+independently of electrical phase angle under load variation. 
+11. The method of claim 8, wherein the step of coupling a variable load includes 
+extracting real power via mechanical work, thermal conversion, or radiative emission, 
+demonstrating universal load equivalence. 
+12. An electromechanical energy conversion system comprising a phase-isolated 
+parallel resonant manifold coupled to a physical load, wherein the manifold operates in 
+a Geometric Phase Isolation (GPI) regime defined by a proportional tuning of 
+inductance, capacitance, frequency, voltage, and resistance such that internal 
+circulating reactive power drives the physical load while presenting a reduced boundary 
+apparent power demand to an energy source. 
+13. The system of claim 12, configured as a grid-tied industrial drive providing leading or 
+unity power factor to a utility grid, loaded or unloaded. 
+14. The system of claim 12, configured as an inverter-coupled platform wherein the 
+manifold isolates a DC/AC inverter from high internal magnetization currents. 
+15. The system of claim 12, wherein the physical load comprises an electromechanical 
+actuator, a rotary machine, or a multi-piston array. 
+16. The system of claim 12, wherein the energy source comprises an autonomous 
+generator. 
+17. The system of claim 12, configured for deployment in mobile platforms or 
+environmental energy recovery systems.</pre></section><section id="p-21"><h2>PDF page 21</h2><pre><span id="section-6"></span>21 
+ 
+[0040] ABSTRACT OF THE DISCLOSURE 
+A Phase-Isolated LCFVR Energy Manifold is disclosed. The system utilizes a passive 
+parallel resonant topology tuned to a &quot;Geometric Phase Isolation&quot; (GPI) state. When 
+tuned within this support region, the manifold maintains high internal reactive power 
+(Sinternal) while boundary real-power demand (Ssource) remains low, yielding a 
+Geometry Ratio G &gt; 1. The system acts as a Flux-Stable Resonant Source, allowing a 
+variable mechanical load to extract real power via Monotonic Phase Retardation without 
+collapsing the circulating magnetic flux. Data confirms the effect is maintained until the 
+resistance exceeds the inductive reactance of the system.</pre></section></main><footer>Independent analysis of public records. <a href="https://pranavaraparla.com" target="_blank" rel="noopener noreferrer">Pranava Raparla</a> · <a href="https://github.com/pranava0x0/FERC-Orders-June-2026" target="_blank" rel="noopener noreferrer">Source repository</a></footer></body></html>

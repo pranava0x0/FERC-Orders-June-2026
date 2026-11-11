@@ -1,0 +1,2253 @@
+FERC filing — MISO — Docket ER26-3552-000 — accession 20260818-5152 — MISO proposes a zero-injection generator interconnection agreement — Issued 2026-08-18 — 48 pp
+Extracted locally with PyMuPDF (fitz) from the document downloaded from https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260818-5152. Verbatim; source text layer preserved.
+
+
+--- PAGE 1 ---
+
+Midcontinent Independent
+System Operator, Inc.
+317.249-5400
+www.misoenergy.org
+720 City Center Drive
+Carmel, Indiana 46032
+2985 Ames Crossing Road
+Eagan, Minnesota 55121
+1700 Centerview Drive
+Little Rock, AR 72211
+
+Christopher Supino
+Managing Senior Corporate Counsel
+Direct Dial:  317-517-2963
+Email:  csupino@misoenergy.org
+
+August 18, 2026
+VIA ELECTRONIC FILING
+The Honorable Debbie-Anne Reese
+Secretary
+Federal Energy Regulatory Commission
+888 First Street, NE
+Washington, DC  20426
+Re:
+Midcontinent Independent System Operator, Inc.’s
+Zero Injection Generator Interconnection Agreement
+Docket No. ER26-___-000
+
+Dear Secretary Reese:
+The Midcontinent Independent System Operator, Inc. (“MISO”), through this filing,1
+submits proposed revisions to its Open Access Transmission, Energy and Operating Reserve
+Markets Tariff (“Tariff”),2 to establish a Zero Injection Generator Interconnection Agreement
+(“ZGIA”),3 associated study process and operational requirements, and market and resource
+adequacy rules to accommodate Zero-Injection Generation Resources (“ZG Resource”) that intend
+to serve load interconnecting at the same substation as the Generating Facility.  The ZGIA proposal
+will help streamline the MISO generator interconnection process by providing expedited review
+of the addition of ZG Resources that have little or no impact on the Transmission System because
+they are limited to serving load at the same substation and voltage level.
+The ZGIA proposal is responsive to certain of the concerns raised by the Commission in
+the Order Instituting Proceeding Under FPA Section 206 4 in Docket No. EL26-70-000 (“Show
+Cause Order” or “SCO”) by proposing a permanent solution for generation resources that provides:
+(i) an interconnection service framework for generation supporting load at the same substation,
+
+1
+This filing is made pursuant to section 205 of the Federal Power Act (“FPA”), 16 U.S.C. § 824d, and Part 35 of
+the regulations of the Federal Energy Regulatory Commission (“FERC” or “Commission”), 18 C.F.R. § 35.1, et
+seq.
+2
+Unless otherwise indicated by the text or context of this transmittal letter, all terms used herein have the definitions
+set forth in Module A of the Tariff.
+3
+For the purposes of this filing, references to “ZGIA” may refer to the specific Zero Injection Generator
+Interconnection Agreement or may be used as a general reference to the processes and operational requirements
+that are part of the proposal submitted herein.
+4
+Midcontinent Independent System Operator, Inc., Order Instituting Proceeding Under Section 206 of the Federal
+Power Act, 195 FERC ¶ 61,212 (2026) (“Show Cause Order” or “SCO”).
+
+--- PAGE 2 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 2
+
+including co-located load; (ii) a defined interconnection study processes tailored to zero-injection
+configurations, including co-location arrangements; (iii) potential reductions in Network Upgrade
+requirements where a more limited form of Interconnection Service is all that is needed, and (iv)
+clear allocation of operational and planning responsibilities.  Specifically, this filing responds to
+the Commission’s concerns by presenting a set of just and reasonable Tariff revisions setting forth
+the generator interconnection study process and generator interconnection service applicable to
+generation serving co-located load.  However, MISO notes that this filing is not intended to address
+all issues raised in the Show Cause Order.
+As acknowledged in the Show Cause Order, MISO began development of ZG
+Interconnection Service and the ZGIA through its stakeholder process months prior to the issuance
+of the Show Cause Order.   While MISO has adapted elements of its proposed process to better
+comply with the requirements of the Show Cause Order, this filing addresses a specific need within
+the MISO region, adapting existing and proven processes to provide a valuable tool to address co-
+location concerns, including many of those raised in the Show Cause Order.  MISO therefore
+submits that the proposed ZG Interconnection Service construct is just, reasonable, and useful in
+the MISO region independent of its responsiveness to the Show Cause Order.  Other issues raised
+in the Show Cause Order, including the appropriate transmission service for large and co-located
+loads and the treatment of generation serving electrically proximate large loads, will be addressed
+through MISO’s forthcoming large load proposals.
+MISO requests that the Tariff revisions submitted herewith be made effective October 18,
+2026, which is more than sixty (60) days—and less than one hundred twenty (120) days—from
+the date of this submission.  As discussed below and in the supporting testimony of Mr. Keyser,5
+action is needed in the near term to address the reliability impacts and resource adequacy needs
+associated with the impending interconnection of Load, including the anticipated interconnection
+of significant large loads.
+I.
+EXECUTIVE SUMMARY
+A.
+Background
+
+The United States is in the midst of an unprecedented energy transition.  Large load
+customers, including artificial intelligence (“AI”) data centers and next-generation manufacturing
+technologies, are driving a surge in interconnection requests.  This growth is driven primarily by
+data center investment.6  As observed by the North American Electric Reliability Corporation
+(“NERC”), the largest contributor to this accelerated demand growth is data center additions with
+
+5
+Prepared Direct Testimony of Marc Keyser, Director—Central Region, External Affairs, attached hereto as Tab
+C (“Keyser”) at 3-4.
+6
+Long-Term Reliability Assessment, NERC, at 15, 25 (Jan. 2026), available at
+https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf.
+
+--- PAGE 3 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 3
+
+18 GW of data center loads projected by 2035.7  The MISO region is no exception to this energy
+transition.  Energy-intensive loads such as data centers, manufacturing expansion, and
+electrification are adding sustained, concentrated load at levels not seen in decades.8  While
+electricity demand growth has been relatively flat with an annual average of just 0.5% between
+2009 and 2024, MISO is projecting a substantial increase of 1% to 2% per year through 2044, with
+even higher growth rates in the near term.9
+
+This growth has understandably drawn the focus of Relevant Electric Retail Rate
+Authorities (“RERRA”), stakeholders and federal policymakers.  On January 23, 2025, President
+Trump issued an Executive Order stating, “[i]t is the policy of the United States to sustain and
+enhance America’s global AI dominance in order to promote human flourishing, economic
+competitiveness, and national security.”10  On July 23, 2025, an Executive Order titled
+“Accelerating Federal Permitting of Data Center Infrastructure,” the Trump Administration
+announced its intention to pursue bold, large-scale industrial plans to incentivize critical
+manufacturing and data center development:
+
+We will pursue bold, large-scale industrial plans to vault the United
+States further into the lead on critical manufacturing processes and
+technologies that are essential to national security, economic
+prosperity, and scientific leadership.  These plans include artificial
+intelligence (AI) data centers and infrastructure that powers them,
+including high-voltage transmission lines and other equipment.  It
+will be a priority of my Administration to facilitate the rapid and
+efficient buildout of this infrastructure by easing Federal regulatory
+burdens.11
+
+On October 23, 2025, the Secretary of Energy directed the Commission to consider an
+Advance Notice of Proposed Rulemaking (“ANOPR”) focused on the timely and orderly
+interconnection of large loads to the interstate transmission system.12  The Secretary’s
+
+7
+Long-Term Reliability Assessment, NERC, at 15 (Jan. 2026), available at
+https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf.
+8
+2026 Reliability Imperative Report, MISO, at. 4 (Feb. 2026), available at
+https://cdn.misoenergy.org/2026%20Reliability%20Imperative%20Report744320.pdf.
+9
+2026 Reliability Imperative Report, MISO, at 4 (Feb. 2026), available at
+https://cdn.misoenergy.org/2026%20Reliability%20Imperative%20Report744320.pdf.
+10  Executive Order 14179 of January 23, 2025, “Removing Barriers to American Leadership in Artificial
+Intelligence,” Federal Register 90 (20) 8741, www.govinfo.gov/content/pkg/FR-2025-01-31/pdf/2025-
+02172.pdf.
+11  Accelerating Federal Permitting of Data Center Infrastructure, Executive Order 14318, 90 FR 35385 (July 23,
+2025), https://www.whitehouse.gov/presidentialactions/2025/07/accelerating-federal-permitting-of-data-center-
+infrastructure/.
+12  Letter from C. Wright, Secretary of Energy, to the Federal Energy Regulatory Commission, Docket No. RM26-
+4-000 (Oct. 23, 2025).
+
+--- PAGE 4 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 4
+
+correspondence to the Commission in support of the ANOPR emphasized the importance of the
+timely, orderly, and non-discriminatory integration of large loads:
+
+To usher in a new era of American prosperity, we must ensure all
+Americans and domestic industries have access to affordable,
+reliable, and secure electricity.  To do this, large loads, including AI
+data centers, served by public utilities must be able to connect to the
+transmission system in a timely, orderly, and non-discriminatory
+manner.  This is an urgent issue that requires prompt attention.13
+
+On June 18, 2026, the Commission issued the Show Cause Order.14  The Show Cause Order
+recognizes the unprecedented increase in requests for transmission service to serve large loads
+along with the growing interest in co-location arrangements to serve those large loads.15  The Show
+Cause Order cites a lack of clarity and consistency in Regional Transmission Organizations’ or
+Independent System Operators’ tariffs regarding the rates, terms, and conditions of service that
+apply to flexible large loads, co-location arrangements, load with behind the meter generation, and
+generating facilities with electrically proximate large load or co-located load.16  Ultimately, the
+Show Cause Order requires MISO to show cause as to why the Tariff remains just and reasonable
+without provisions addressing certain large load and co-location issues or, in the alternative,
+explain what changes to the Tariff would remedy the Commission’s concerns.17
+
+B.
+Addressing the Influx of Large Loads in the MISO Region
+
+The MISO region is experiencing a significant influx of large load additions—primarily
+from data centers, cryptocurrency miners, and other processes that require larger load
+interconnections.  Large load growth presents a unique challenge because MISO must balance
+multiple objectives simultaneously.  MISO seeks to facilitate economic development and timely,
+cost-effective access to the Transmission System while maintaining reliability and operational
+integrity.
+
+MISO, its member states, and stakeholders are developing multiple initiatives to address
+evolving system conditions and to support efficient interconnection prior to and after the issuance
+of the Show Cause Order.  In recognition of urgent needs to address large load and co-located load
+growth, MISO established a temporary, targeted Expedited Resource Addition Study (“ERAS”)
+process to accelerate the generator interconnection process limited to generators necessary to serve
+certain critical, near-term load additions.
+
+13  Letter from C. Wright, Secretary of Energy, to the Federal Energy Regulatory Commission, Docket No. RM26-
+4-000 (Oct. 23, 2025).
+14  See generally SCO.
+15  Id. at P 1.
+16  Id.
+17  Id. at P 3.
+
+--- PAGE 5 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 5
+
+In addition, MISO improved the MISO Transmission Expansion Plan’s (“MTEP”)
+Expedited Project Review (“EPR”) process to quickly study Network Upgrades needed to support
+large loads.  MISO also initiated the MISO-SPP Joint Targeted Interconnection Queue Study
+(“JTIQ”) which aims at building transmission network upgrades along the MISO-SPP seams to
+enable large amounts of new generation.  While these initiatives provide important benefits, they
+neither fully address the reliability and operational challenges associated with accelerating large
+load growth, nor do they address all concerns raised in the Show Cause Order.  Accordingly, MISO
+recognizes that additional Tariff-based solutions are necessary to establish clear reliability
+expectations, improve operational visibility, and facilitate timely integration of large loads in a
+manner that is both reliable and non-discriminatory.  These solutions must also consider and
+address the unique planning and operational characteristics of large load interconnection customers
+and hyperscale data centers, in particular.  The ZGIA is one of these forthcoming solutions.
+
+MISO’s ZGIA proposal is well aligned with the Commission’s goals and objectives of
+transparency, affordability and reliability.  This proposal is one element in MISO’s response to the
+Commission’s desire for prompt action to address the rapid growth of large loads, related
+interconnection requests, and a surge in interest in co-located generation.  The Show Cause Order
+addresses the unprecedented increase in requests for transmission service to serve large load, as
+well as the growing interest in the co-location of loads with generation facilities (i.e., co-location
+arrangements), while acknowledging the challenges associated with providing the transmission
+service necessary to reliably serve the ongoing influx of large loads.18  The Show Cause Order
+states that MISO has not yet proposed Tariff revisions to address the challenges associated with
+the integration of large and co-located loads.19  The Show Cause Order requires MISO to show
+cause as to how its Tariff remains just and reasonable, or to explain what changes would remedy
+the Commission’s concerns.20
+
+MISO is moving quickly on proposals that had been previously incorporated into the Large
+Load Working Group (“LLWG”) workplan and is also engaging with stakeholders, including the
+Organization of MISO States, Inc. (“OMS”), in an expedited manner to develop the broader set of
+solutions outlined in the August 3, 2026, motion filed by MISO and the MISO Transmission
+Owners to hold all proceedings related to the Show Cause Order in abeyance for 90 days.21  The
+Abeyance Motion explained that MISO and the MISO Transmission Owners required additional
+time to continue the stakeholder process and submit FPA section 20522 filings that address the
+
+18  SCO at P 1.
+19  Id. at P 2.
+20  Id. at P 3.
+21  Motion of the Midcontinent Independent System Operator, Inc. and the MISO Transmission Owners to Hold
+Proceeding in Abeyance and Request for Shortened Comment Period and Expedited Treatment, Docket No.
+EL26-70-000 (Aug. 3, 2026) (“Abeyance Motion”).
+22  16 U.S.C. § 824d.
+
+--- PAGE 6 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 6
+
+concerns raised in the Show Cause Order.23  The Commission granted the 90-day abeyance
+requested in the Abeyance Motion on August 14, 2026.24
+
+The Abeyance Motion emphasized that MISO, in collaboration with stakeholders and the
+OMS, has been working to identify and implement solutions to facilitate speed to reliable power.25
+These efforts include two already-implemented initiatives: (1) the one-time, targeted ERAS
+process to accelerate generator interconnection for near-term resource adequacy needs; and (2)
+improving the MTEP EPR process to enable the rapid study and approval of transmission upgrades
+necessary for the addition of large loads.26  MISO explained that it also created the LLWG to
+provide a dedicated and consolidated stakeholder forum for prioritizing and focusing efforts to
+both identify critical issues and develop corresponding solutions to integrate large loads reliably
+and cost effectively.27
+
+MISO has developed a prioritized work plan to accelerate consideration of the challenges
+presented by large load growth in the MISO region through its stakeholder process.28  This process
+has resulted in the development of groups of potential solutions and improvements to various
+MISO processes, which MISO intends to submit for Commission review in a series of filings.29
+The present filing represents the first of this series.
+
+C.
+The ZGIA Proposal Supports Co-Location and Provides Speed to Power
+
+Co-location has been widely recognized as one of the most valuable tools in achieving
+“speed to power” in a reliable and efficient manner and MISO’s ZGIA co-location solution has
+been prioritized within the LLWG’s efforts.  The ZGIA and related study process proposed in this
+filing is the first of the proposed solutions to come from the LLWG.  The ZGIA construct is the
+product of significant effort by MISO, the OMS, and stakeholders that began prior to the Show
+Cause Order and was refined in response to the Show Cause Order.  The ZGIA framework will
+address not only large load interconnections and co-located generation but it also will help
+streamline the interconnection process for Interconnection Customers serving co-located load.30
+
+23  Abeyance Motion at 2.
+24  Midcontinent Independent System Operator, Inc., et. al., 196 FERC ¶ 61,133 (August 14, 2026) (“Abeyance
+Order”).
+25  Abeyance Motion 3.
+26  Id.
+27  Id.
+28  Id. at 4.
+29  Id.
+30  MISO uses the term “co-location” in this filing to refer to arrangements where the Load’s Point of Withdrawal
+and the Generating Facility’s proposed Point of Interconnection are located at the same substation and at the same
+voltage level.  These may be at the same Point of Interconnection or involve lead lines in adjacent bays.  MISO
+recognizes that this is a slightly broader definition than that used by the Commission in the Show Cause Order.
+As explained below, after extensive discussions, MISO determined that its proposed scope is a better fit for the
+
+--- PAGE 7 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 7
+
+Hence, the ZGIA proposal serves two important purposes.  First, the ZGIA framework addresses
+several of the Commission’s concerns raised in the Show Cause Order.  Second, the ZGIA
+framework addresses improvements to the interconnection process in addition to the Commission's
+stated concerns, such that it will have independent benefits for all interconnection customers.
+
+MISO explored several potential scopes for its ZG Interconnection Service product through
+the stakeholder process including limiting it to load and generation connecting to the Transmission
+System behind the same Point of Interconnection and expanding it to encompass load located
+“proximate” to generation.  After extensive consideration, MISO determined that limiting ZG
+Interconnection Service to load and generation behind the same Point of Interconnection is too
+strict an approach for the MISO Transmission System as it would exclude configuration options
+that MISO is aware that developers are considering for adjacent load and generation where
+injections to the broader Transmission System can be effectively limited and monitored.
+Following further discussion and evaluation with stakeholders, MISO also determined that
+expanding the ZGIA and ZG Interconnection Service construct to accommodate “electrically
+proximate” load and generation would have raised novel reliability and transmission service
+challenges that would not be easily resolved in a timely manner for the unique processes that
+underpin MISO’s transmission and interconnection services.  In addition, stakeholders raised
+concerns that extending the proposal to serving proximate load beyond the same substation could
+result in the potential for retail wheeling and conflict with retail regulatory constructs.  Rather than
+delay a significant and important tool to support co-location, MISO chose not to incorporate a
+“proximate” load solution in this initial filing.31  Accordingly, this filing is limited to addressing
+generation and load at the same substation and does not attempt to resolve the separate issues
+presented by generation serving electrically proximate large load.  MISO’s forthcoming Load
+Addition Resource Study (“LARS”) process is intended to address those issues by providing a
+coordinated study framework for load additions and associated new generation that are electrically
+proximate but do not satisfy the ZGIA’s narrower requirements.
+
+This filing proposes Tariff revisions to establish the ZGIA construct as a Tariff-defined
+process to take advantage of the benefits of co-location of generation and load.  The ZGIA
+framework creates a path for a planned generator that will connect at the same substation and
+voltage level as existing or proposed load (including large loads) to interconnect quickly, with
+strict limitations on injections further onto the Transmission System, which and correspondingly
+reduce potential for Transmission System Impacts and expensive Network Upgrade.  Load
+customers, including large load customers, will benefit from ZGIA interconnection studies that
+recognize on-site generation, potentially reducing network upgrade requirements to interconnect.
+As discussed in more detail below, the proposed ZGIA framework includes a new load at the same
+substation and voltage level as a generation resource.  The figure below depicts load taking firm-
+
+types of interconnection arrangements that MISO has seen and expects it will continue to see in accommodating
+the integration of larger loads in its region.
+31  Keyser at 11-14, 19-20.
+
+--- PAGE 8 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 8
+
+service Network Integration Transmission Service (“NITS”).32  The load is permitted to withdraw
+and take energy delivery from other system resources, but the new generator with ZGIA
+Interconnection Service cannot inject past the interconnecting substation, and netting of the load
+and generation for transmission service or market settlement purposes is not allowed:33
+
+With these proposed Tariff changes, the ZGIA proposal will partially address several of the
+issues raised by the Commission related to co-location of generation and large loads by proposing
+a permanent solution for generation resources seeking to interconnect to the Transmission System
+at the same substation as an associated load.  In particular, the ZGIA partially addresses the
+Commission’s concerns regarding the absence of a generator interconnection service and study
+process tailored to the operational characteristics of generation serving co-located load, including
+a study process that recognizes the potentially reduced Transmission System impacts where
+generation is limited to serving its associated load.34  As visualized below, because the ZGIA
+process can take place quickly, with the ZG Impact Assessment completed within 90 Calendar
+Days, the subsequent MTEP load study can result in a more optimal and potentially reduced set of
+network upgrades needed to reliably serve the load.  The subsequent proposal to address the case
+of electrically proximate load and generation, LARS, will further address the Commission’s
+
+32  This filing does not establish new rules regarding transmission service.  However, existing Tariff rules require
+Load to obtain transmission service in order to be served using the Transmission System.  For Load served by a
+Load Serving Entity in the MISO region, the transmission service utilized is almost always NITS.
+33  Consideration of Zero-Injection GIA, MISO Planning Advisory Committee (Jan 21, 2026), available at
+https://cdn.misoenergy.org/20260121%20PAC%20Item%2009%20Market%20Participation%20and%20Registr
+ation%20of%20Co-Located%20Load%20and%20Generation%20(PAC-2024-4)736238.pdf. MISO notes that
+this description explains how ZGIA will serve large loads and fit within existing Tariff constructs.  This filing
+does not prejudice MISO’s ability to revise transmission service rules through other 205 filings responding to the
+Show Cause Order.
+34  See SCO at PP 58, 94, 113, 115, 117 and 118.
+
+--- PAGE 9 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 9
+
+concerns through a process that can potentially reduce the set of Network Upgrades needed to
+serve both the load and the resource.
+
+The ZGIA proposal represents another critical tool to help support the timely, reliable, cost-
+effective integration of new large loads into the MISO system.  It efficiently leverages existing
+MISO processes and practices to serve as a robust incremental solution.  MISO notes that this is
+one of several upcoming Tariff solutions that will be filed with the Commission to collectively
+address the issues raised in the Show Cause Order.  MISO appreciates the guidance and direction
+provided in the Show Cause Order and is committed to continuing its collaborative efforts with
+the states and stakeholders to deliver additional tools to meet the unique challenges associated with
+integrating large loads.
+
+D.
+Anticipated Complementary Solutions
+
+MISO has been advancing a coordinated set of solutions designed to balance speed to
+power, fairness, and, most importantly, reliability.  In particular, MISO has developed two solutions
+that are responsive to the Commission’s concerns noted in the Show Cause Order surrounding the
+interconnection and study processes for co-location arrangements and service of proximate large
+loads.
+
+The ZGIA proposal identified in this filing is the product of a stakeholder process that
+began prior to the Show Cause Order to address not only large load interconnection and co-location
+issues, but also improvements to the interconnection process in general.  By formalizing the ZGIA
+construct in the Tariff,35 MISO can provide a limited, structured option to support large load
+integration, co-location, and refinements to the interconnection process through:
+
+35  MISO notes that it has accommodated zero-injection generator interconnection arrangements in limited
+circumstances in the past using existing Tariff mechanisms, including filing non-conforming generator
+interconnection agreements with the Commission.
+
+--- PAGE 10 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 10
+
+• An interconnection service framework for generation that is supporting co-located
+load;
+• Defined interconnection study processes tailored to zero-injection configurations;
+• Potentially reduced network upgrade requirements where appropriate; and
+• Clear allocation of operational and planning responsibilities.
+This construct enables a pathway for certain large load configurations to achieve speed to
+reliable power while maintaining system reliability.
+
+The ZGIA framework represents an initial step in a broader set of solutions to address the
+concerns expressed in the Show Cause Order and to meet the evolving needs of the MISO region.
+These ongoing efforts reflect the iterative nature of MISO’s response to rapidly changing load
+conditions and the need for continued stakeholder collaboration.  To that end, as noted above,
+MISO will be submitting additional proposals to further address large load integration as discussed
+in the Abeyance Motion.
+
+In addition to the ZGIA proposal submitted herein, MISO is also developing through the
+stakeholder process at the LLWG its Load Addition and Resource Study process.  LARS will assess
+the transmission infrastructure needed to meet new large loads and new generation in an efficient
+process that can be executed on a shorter timeline, further supplementing the opportunities
+available for members to facilitate new large spot loads effectively.  This process is expected to
+position MISO and its members to ensure resource adequacy and protect customers from
+unnecessary investments relating to spot large load siting.
+
+More specifically, LARS will analyze generation and transmission using the same study
+assumptions applied in the standard generator interconnection process and MISO’s MTEP.  The
+studies will be run in parallel, and will finish at approximately the same time—within 120 days—
+with the load/transmission model incorporating both the planned generation and planned load.36
+LARS, as currently conceived, will address similar issues to those the Show Cause Order identified
+related to interconnection customers serving electrically proximate large load or co-located load.37
+Thus, while the instant ZGIA filing addresses the generator interconnection service and study
+framework for generation serving ZG Associated Load, LARS will address the distinct study issues
+presented by new generation and large load that are electrically proximate but are not eligible for
+ZG Interconnection Service.  It is important to note that neither the ZGIA construct nor LARS
+proposal include new transmission service products specific to serving co-located or proximate
+load or address flexible large loads willing to limit transmission service.  Transmission service
+
+36  MISO included a description of this Joint Study Process in its Informational Report submitted in this docket on
+July 20, 2026.
+37  SCO at P 113 (preliminarily finding that MISO’s Tariff may be unjust and unreasonable because it does not contain
+provisions that will allow an interconnection customer to seek the generator interconnection service(s) that reflects
+the operational dynamics of serving either: (1) an electrically proximate large load; or (2) a co-located load, that
+has a high peak load (i.e., large co-located loads that are 50 MW or greater)).
+
+--- PAGE 11 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 11
+
+products to address related concerns raised in the Show Cause Order will be evaluated through the
+LLWG and ultimately presented to the Commission in a separate FPA section 205 filing.  MISO
+will continue to develop the LARS process through the LLWG and expects to submit the LARS
+filing by November 16, 2026, or earlier, if feasible.
+
+II.
+OVERVIEW OF ZGIA PROPOSAL AND HOW IT ADDRESSES THE SHOW CAUSE ORDER
+The ZGIA construct allows for generation to connect to the Transmission System without
+injection rights, making it suitable to serve loads, including large loads, at the same substation.
+This proposed construct not only formalizes the existing practice, but it also addresses a discrete
+subset of the concerns identified by the Commission in the Show Cause Order, specifically those
+concerning generator interconnection service and the study of generation serving co-located load.
+More specifically, the ZGIA construct provides a limited, structured option to support large
+load integration through: (i) an interconnection service framework for generation that is supporting
+co-located load; (ii) defined interconnection study processes tailored to zero-injection
+configurations; (iii) potentially reduced network upgrade requirements where appropriate; and (iv)
+clear allocation of operational and planning responsibilities.  The ZGIA construct enables one
+pathway for certain large load configurations to achieve speed to reliable power while maintaining
+system reliability.  The ZGIA framework is not, however, limited to large loads.  While the ZGIA
+is particularly responsive to the needs of a large load, a ZG Associated Load38 does not have to be
+a large load.
+MISO notes that this filing does not include a proposed definition of “Large Load.”  MISO
+is continuing to refine the definition of “Large Load” through the ongoing stakeholder process at
+the LLWG and expects to file the proposed definition of “Large Load” with the Commission in a
+subsequent FPA section 205 filing that is responsive to certain additional concerns raised in the
+Show Cause Order that are not specifically addressed herein.  The ZGIA proposal remains just and
+reasonable without inclusion of a definition of “Large Load” because the ZGIA proposal and the
+identification of ZG Associated Load is open to application for all loads in the MISO region and
+is not limited to only large loads.  In addition, the Show Cause Order explains that it appears that
+it would be reasonable to define a large load as: (1) a new commercial or industrial customer, (2)
+located at a single site behind one or more points of interconnection, (3) that has a peak load of 50
+MW or greater, (4) interconnects to the transmission system at a voltage level of greater than 69
+kV, and (5) is not part of a co-location arrangement.39
+A.
+The Rates, Terms, and Conditions of Service that Apply to Interconnection
+Customers Serving Co-Located Load
+
+38  Zero Injection Generation (ZG) Associated Load shall mean a source of electrical load that has a Point of
+Withdrawal that is at the same substation as the Point of Interconnection to the Transmission System (i.e. same
+voltage level at the interconnecting substation) as the Generating Facility with ZG Interconnection Service that
+will serve it.
+39  See SCO at fn 2 (emphasis added), see also SCO at P 58.
+
+--- PAGE 12 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 12
+
+The Show Cause Order posits that MISO’s Tariff appears to be unjust and unreasonable
+because it lacks provisions addressing with sufficient clarity and consistency the rates, terms, and
+conditions of service that apply to interconnection customers serving co-located load.40  This filing
+proposes to address the Show Cause Order’s concerns relating to the rates, terms, and conditions
+of service that apply to interconnection customers serving co-located load as explained below:
+MISO proposes to implement a new type of service, called ZG Interconnection Service.
+ZG Interconnection Service is service limited to serving specifically designated load that is either
+at the same Point(s) of Interconnection (“POI”) or has a Point(s) of Withdrawal (“POW”) on the
+same voltage side of the same substation as the ZGIA.  ZG Interconnection Service is not
+Transmission Service and does not exempt a Transmission Customer from procuring Transmission
+Service.  Accordingly, the ZGIA addresses the generator interconnection component of a co-
+location arrangement; it does not establish or modify the Transmission Service that must be
+obtained to serve the ZG Associated Load.  MISO intends to address the separate transmission
+service issues identified in the Show Cause Order through subsequent filings developed through
+the LLWG.
+ZG Interconnection Service is fundamentally a limited product.  ZG Interconnection
+Service will be limited to a POI and POW that are at the same substation, with the same voltage
+level.  The ZGIA process will ultimately offer a ZGIA for limited operations, with operation limited
+to ensure system reliability based upon the results of the impact assessment and facilities studies.
+ZG Interconnection Service does not allow the Interconnection Customer to serve other load or
+inject energy onto the Transmission System for purposes other than serving the ZG Associated
+Load identified in the Interconnection Request and memorialized in the ZGIA.  After engaging in
+the stakeholder process, MISO determined that the same substation and voltage level limitation on
+ZG Interconnection Service to only serve load or inject onto the Transmission System for purposes
+of serving ZG Associated Load strikes the appropriate balance between offering a constrained
+product that can be studied to ensure minimal impact on other projects and enabling an expedited
+study process without hindering MISO’s ability to process the Definitive Planning Phase (“DPP”).
+The rates, terms, and conditions for service under the ZGIA construct differ from ordinary
+interconnection requests in several key areas listed below.
+First, the resource seeking ZG Interconnection Service must demonstrate a relationship
+with load connected at the same voltage side of the same substation, defined as ZG Associated
+Load, under which the ZG Associated Load signifies its intention to be served by the ZG Resource.
+Mr. Keyser explains that, because ZG Interconnection Service allows the ZG Resource to serve
+only its designated ZG Associated Load, documenting the relationship between ZG Associated
+Load and the ZG Resource is necessary to prevent speculative Interconnection Requests from
+using the process.41
+
+40  SCO at PP 94 and 97.
+41  Keyser at 9.
+
+--- PAGE 13 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 13
+
+Second, while an Interconnection Customer seeking ZG Interconnection Service is not
+limited in the quantity of nameplate capacity of generation they choose to build, the
+Interconnection Customer seeking ZG Interconnection Service is limited to requesting and being
+awarded Interconnection Service at a level that does not exceed the peak demand of the ZG
+Associated Load.  As explained by Mr. Keyser, this is an important design feature of the ZGIA
+process because it serves to ensure that the maximum expected energy production of the ZG
+Resource is no greater than the maximum demand of the ZG Associated Load.42
+Third, the ZG Interconnection Service Study must model the ZG Associated Load when
+studying the Interconnection Request and confirm that the proposed equipment to limit injections
+is sufficient to accomplish this task.  This requirement is consistent with the Commission’s
+discussion regarding the need for a new generator interconnection service tailored to co-location
+arrangements using control technologies and/or protection systems to ensure there is no injection
+on the Transmission System.43
+In this manner, the ZGIA study evaluates the generation and associated load together, rather
+than studying the generating facility without regard to the load it is intended to serve.  This directly
+responds to the Commission’s concern that MISO’s existing generator interconnection process
+may fail to recognize the reduced Transmission System impacts of generation that is operationally
+limited to serving co-located load.
+Fourth, the ZG Resource must interconnect at the same substation and voltage level as one
+of the POWs of the ZG Associated Load it serves; and, the ZG Interconnection Study must
+determine that the ZG Resource will not require Network Upgrades beyond the substation except
+for system protection facilities at adjacent substations.
+If all of these criteria are met, the ZG Interconnection study process affords a 90-day
+accelerated study process leading to a ZGIA that memorializes the proposed configuration and
+limited injection.
+B.
+Generator Interconnection Study Process
+The Show Cause Order preliminarily found that MISO’s Tariff appears to be unjust and
+unreasonable because it lacks provisions allowing an interconnection customer to seek the
+generator interconnection service(s) that reflects the operational dynamics of serving either: (1) an
+electrically proximate large load; or (2) a co-located load that has a high peak load (i.e., large co-
+located loads that are 50 MW or greater).44  In particular, the Commission noted that the Tariff
+appears to be unjust and unreasonable because it lacks a generator interconnection study process
+and/or generator interconnection service to reflect an interconnection customer’s commitment in
+an interconnection agreement to limit the generating facility’s output to minimize the impact on
+
+42  Keyser at 10-11.
+43  See SCO at P 118.
+44  SCO at P 113.
+
+--- PAGE 14 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 14
+
+the transmission system while serving an electrically proximate large load or large co-located
+load.45  The Show Cause Order also observed that where a generating facility’s output is matched
+to the demand of the electrically proximate large load or large co-located load or if the generating
+facility’s output is limited to ensure no new injection, the impacts to the transmission system of
+interconnecting the generating facility to serve that electrically proximate large load or large co-
+located load may be limited, thereby potentially reducing the need for Network Upgrades, which
+can accelerate the generator interconnection process.46
+The ZGIA addresses this concern with respect to co-located load that satisfies the ZG
+Associated Load requirements.  As discussed above, the separate application of this concept to
+generation service for electrically proximate large load will be addressed through MISO’s
+forthcoming LARS proposal.  As explained by Mr. Keyser, the ZGIA proposal will complement
+the Definitive Planning Phase (“DPP”), which is MISO’s current Interconnection Queue process
+for addressing the needs of large loads.47  The DPP process is quite broad and enables system
+reliability by studying new generation sources for technical and operational impacts and
+identifying and assigning the costs for the necessary upgrades required to connect the new
+resources safely and reliably.  Under the DPP, Interconnection Requests are evaluated through a
+three-phase, grouped study process.  Because projects all impact the Transmission System and are
+studied in groups, each Interconnection Request is affected by higher-queued and same-group
+projects, introducing complexity and uncertainty, particularly when withdrawals occur.  This
+process is not always necessary for all customers because some Interconnection Customers—
+particularly those serving large loads—seek to install generation to meet the needs of adjacent
+large loads, and do not require access to the transmission system and, in fact, may never intend to
+inject onto the MISO Transmission System or, if they do plan on injecting, it is only to move
+energy to an adjacent bay of the same substation.  In such circumstances, a separate, expedited
+study process and corresponding form of Interconnection Service is both feasible and responsive
+to the Commission’s directive to address the needs of certain loads, including large loads
+associated with data centers.
+
+The ZGIA proposal implements that proposed, expedited process.  The study requirements
+necessary for a ZGIA to provide ZG Interconnection Service are still extensive, including
+obligations to implement equipment and/or operational procedures to prevent injections and to
+limit any inadvertent injections to a defined Transient Tolerance Window in the event of an
+unexpected load reduction or trip.48
+Interconnection Requests submitted through the ZGIA process will be studied in a serial
+“first-come, first served” fashion based on the order the projects were submitted.  It will follow a
+quarterly cadence established by proposed MISO timelines, ultimately culminating in the project
+
+45  SCO at P 113.
+46  SCO at P 113.
+47  Keyser at 7-9.
+48  Keyser at 20–22.
+
+--- PAGE 15 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 15
+
+receiving a ZGIA in approximately 90 days.  The ZGIA model build will include all Existing
+Generating Facilities, including those from completed DPP cycles, the ERAS Interconnection
+Request, and the latest MTEP base case with all approved MTEP projects, and any recently
+approved EPR projects.  This is the same process utilized for DPP studies except the DPP models
+include all higher queued Interconnection Requests from earlier cycles and all Interconnection
+Requests within that DPP cycle.  ZGIA studies will not include Interconnection Requests currently
+in the generator interconnection queue that do not have a GIA.
+
+Before every ZGIA cycle, all Interconnection Requests with a GIA approved since the last
+base case was created will be added to the base case for the ZGIA cycle but will not be added in
+any ongoing DPP studies.  The base case for each DPP cycle is never updated once the study
+process is kicked off except for generation changes due to Interconnection Request withdraws or
+generator retirements.  This ensures that the transmission capacity made available for DPP projects
+is not being taken away by ZGIA Interconnection Requests approved outside of the DPP cycle.
+
+Once the DPP cycle has concluded, the output from that process, and any completed ZGIA
+and EPR projects, will be used to populate a new MTEP base case.  Any transmission issues
+identified by reconciling the cases will thus be addressed through the existing MTEP process.  The
+next DPP cycle will then use the latest approved MTEP base case that has reconciled the models.
+This insulates existing DPP projects from negative impacts or cost shifts due to the existence of
+the ZGIA process.  The contingent facilities listed in the ZGIA would only be those facilities in
+the model used for the ZGIA study and those Network Upgrades that come up as part of the ERAS
+study.
+
+Subsequently, the standing MISO DPP three phase and ERAS processes will not be
+impacted by ZGIA, as ZGIA will not be utilizing any available transmission capacity in those
+studies.
+
+It should be noted that the ZGIA study process includes the load and a simulation of the
+scenario in which the load trips offline.  As Mr. Keyser explains, this analysis will help validate
+the specific protection schemes needed for the specific ZGIA project.49
+
+As previously discussed, ZG Associated Load that is studied and eligible for
+interconnection is a firm network load, obligated under existing Tariff rules to pay for transmission
+service on a gross basis, and eligible for all the benefits of being a network load, including being
+served by all MISO resources on any and all transmission paths.
+
+Taken together, these provisions establish the tailored generator interconnection study
+process contemplated by the Show Cause Order for generation serving co-located load, while
+preserving for subsequent filings the distinct issues associated with Transmission Service and
+electrically proximate load.
+
+49  Keyser at 28.
+
+--- PAGE 16 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 16
+
+III.
+DESCRIPTION OF PROPOSED TARIFF REVISIONS
+To implement the ZGIA construction proposed herein, MISO is requesting approval of
+new Tariff provisions, as well as revisions to several existing provisions.50
+A.
+Module A (Common Tariff Provisions).  MISO is proposing both to add several
+new terms and definitions to Module A, as well as to revise the definition of several existing terms,
+as follows:
+1.
+Proposed New Module A Tariff Provisions.  MISO is requesting approval
+to add five (5) newly defined terms to Module A of its Tariff.  The new terms and proposed
+definitions include:
+a. Point(s) of Withdrawal:  The point(s) where a non-transmission facility that is
+used to withdraw Energy from the Transmission System to serve Load connects
+to the Transmission System.
+
+b. Zero Injection Generation (ZG) Associated Load:  A source of electrical load
+that has a Point of Withdrawal that is at the same substation as the Point of
+Interconnection to the Transmission System (i.e. same voltage level at the
+interconnecting substation) as the Generating Facility with ZG Interconnection
+Service that will serve it.
+
+c. Zero Injection Generation (ZG) Interconnection Service:  A limited form of
+Interconnection Service that allows an Interconnection Customer to connect its
+Generating Facility to the Transmission System or Distribution System, as
+applicable, for the limited purpose of delivering energy to ZG Associated Load.
+ZG Interconnection Service does not grant any right to inject energy onto the
+Transmission System except as may be authorized by Section 3.11 of the
+Generator Interconnection Procedures.  ZG Interconnection Service does not
+convey Transmission Service.  ZG Interconnection Service also does not
+provide a right to serve, or a right to Transmission Service to serve, a ZG
+Associated Load or retail customer except as allowed by applicable state law.
+
+d. Zero Injection Generation (ZG) Resource:  A generating resource with an
+Attachment X defined ZG Interconnection Agreement.  A ZG Resource may
+participate as a Generation Resource, Dispatchable Intermittent Resource,
+Electric Storage Resource, or Behind the Meter Generation resource.
+
+2.
+Proposed Revised Module A Tariff Provisions.  MISO is proposing to revise
+the definition of several terms currently included in Module A.  The struck-through language
+
+50  This transmittal letter frequently quotes proposed Tariff revisions to facilitate its explanation.  In the event of a
+conflict between the Tariff language as discussed in this letter and that reflected in the attached Tariff sheets,
+MISO intends that the language in the attached Tariff sheets control.
+
+--- PAGE 17 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 17
+
+shown below will be deleted from the definition and the words or phrases shown in italics will be
+added.  MISO’s proposed revisions are as follows:
+a. Forecast Maximum Limit:  For a Dispatchable Intermittent Resource, The the
+maximum MW level at which a Dispatchable Intermittent the Resource is
+forecasted to operate.  In addition, for a ZG Resource participating as a DIR,
+the maximum MW level at which a Resource may operate shall be less than the
+Demand of the Resource’s ZG Associated Loads.
+
+b. Hourly Economic Maximum Limit:  The maximum MW level at which a
+Generation Resource, Demand Response Resource Type II, or External
+Asynchronous Resource may operate under normal system conditions that may
+be submitted to override the default value submitted during the asset registration
+process.  In addition, for a ZG Resource participating as a Generation
+Resource, the maximum MW level at which the Resource may operate under
+normal system conditions shall be less than the Demand of the Resource’s ZG
+Associated Loads.
+
+c. Hourly Economic Maximum Discharge Limit:  The maximum injection MW
+level at which an Electric Storage Resource may operate under normal system
+conditions that may be submitted to override the default value submitted during
+the asset registration process.  In addition, for a ZG Resource participating as
+an Electric Storage Resource, the maximum MW level at which the Resource
+may operate under normal system conditions shall be less than the Demand of
+the Resource’s ZG Associated Loads.
+
+d. Hourly Emergency Maximum Limit:  The maximum MW level at which a
+Generation Resource, an External Asynchronous Resource, or Demand
+Response Resource Type II may operate under Emergency conditions that may
+be submitted to override the default value submitted during the asset registration
+process.  In addition, for a ZG Resource participating as a Generation
+Resource, the maximum MW level at which a Resource may operate under
+Emergency conditions shall be less than the Demand of the Resource’s ZG
+Associated Loads.
+
+e. Hourly Emergency Maximum Discharge Limit:  The maximum injection MW
+level at which an Electric Storage Resource may operate under Emergency
+system conditions that may be submitted to override the default value submitted
+during the asset registration process.  In addition, for a ZG Resource
+participating as an Electric Storage Resource, the maximum MW level at which
+the Resource may operate under Emergency system conditions shall be less than
+the Demand of the Resource’s ZG Associated Loads.
+
+--- PAGE 18 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 18
+
+f. Hourly Regulation Maximum Discharge Limit:  The maximum injection MW
+level at which an Electric Storage Resource can respond to automatic control
+signals, that may be submitted to override the default value submitted during
+the asset registration process.  In addition, for a ZG Resource participating as
+an Electric Storage Resource, the maximum MW level at which the Resource
+can respond to automatic control signals shall be less than the Demand of the
+Resource’s ZG Associated Loads.
+
+g. Hourly Regulation Maximum Limit:  The maximum MW output at which a
+Generation Resource, Demand Response Resource – Type II, or External
+Asynchronous Resource can respond to automatic control signals that may be
+submitted to override the default value submitted during the asset registration
+process.  In addition, for a ZG Resource participating as a Generation
+Resource, the maximum MW level at which a Resource can respond to
+automatic control signals shall be less than the Demand of the Resource’s ZG
+Associated Loads.
+
+B.
+Module C (Energy and Operating Reserve Markets).  MISO is proposing to
+implement a registration requirement for a ZG Resources greater than 5 MW in size.  This
+requirement provides visibility of the ZG Resource to MISO and is necessary for MISO to account
+for the gross amount of ZG Associated Load, which will facilitate the requirement that the ZG
+Associated Load is required to pay for transmission service, ancillary services, and other services
+they receive on a gross basis, as contemplated by the Show Cause Order.51
+
+C.
+Module E-1 (Resource Adequacy). MISO is proposing to both add new provisions
+to Module E-1 and to revise several existing provisions, as follows:
+
+1.
+Proposed New Module E-1 Tariff Provisions.  MISO is requesting approval
+to add one (1) new subsection to Module E-1.  The subsection is limited to:
+a. Section 69A.4.1 (Seasonal Accredited Capacity of Capacity Resources): MISO
+is proposing to add a new subsection providing that the Seasonal Accredited
+Capacity for a ZG Resource shall be based on its participation type and subject
+to certain enumerated requirements, including that the Seasonal Accredited
+Capacity is capped at the specified portion of the Coincident Peak Demand
+forecast attributable to the ZG Associated Load less any Seasonal Accredited
+Capacity (“SAC”) assigned to the ZG Associated Load and that the SAC shall
+be grossed-up by the amount of avoided Transmission Losses.
+
+2.
+Proposed Revised Module E-1 Tariff Provisions. MISO is proposing to
+revise several provisions of Module E-1 to establish the basis on which a ZG Resource and ZG
+Associated Load may participate in MISO’s Resource Adequacy construct and associated rules
+
+51  SCO at P 96.
+
+--- PAGE 19 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 19
+
+related to the accreditation of ZG Resources.  The nature of the proposed revisions to Module E-1
+reflect the fact that a ZG Resource cannot serve load in the MISO region beyond the substation
+and voltage level of its co-located ZG Associated Load.  As such, these revisions limit the
+participation of a ZG Resource in MISO’s Planning Resource Auction (“PRA”) to inclusion in a
+Fixed Resource Adequacy Plan (“FRAP”) or Reliability Based Demand Curve (“RBDC”) Opt-
+Out, and do not allow the use of uncleared Zonal Resource Credits (“ZRC”) for replacement.
+Participation by ZG Resources in the PRA are further limited – a ZG Resource can qualify for
+ZRCs up to the lesser of its otherwise applicable accreditation, or the seasonal coincident peak
+demand of the ZG Associated Load, plus an accounting for losses not experienced due to the co-
+location of the two.  The proposed revisions to Module E-1 are just and reasonable because they
+reflect the limited nature of ZG Interconnection Service, while accommodating the participation
+of ZG Resources and ZG Associated Loads in the PRA.  The proposed revisions to Module E-1
+are as follows:
+a. Section 68A.8 (Calculation of Transmission Losses):  MISO is proposing minor
+changes to this section to state that ZG Resources will be treated the same as
+BTMGs that are not interconnected to the Transmission System and Demand
+Resources by grossing up the MW quantity of such resources by (1.0 + the
+appropriate LBA transmission loss percentage).
+
+b. Section 69A.1.1 (Forecasted Demand Identification):  MISO is proposing
+revisions to this section to require the supplied Coincident Peak Demand
+forecast to identify, in MW, the expected contribution of each ZG Associated
+Load and identify its associated ZG Resource, and to provide that a ZG
+Resource is ineligible for SAC unless its ZG Associated Load is explicitly
+identified in the Coincident Peak Demand forecast.
+
+c. Section 69A.3.1.g (Determination of Deliverability):  MISO is proposing
+revisions to this section to provide that the deliverable amount of certain
+resources may include the amount of ZG Interconnection Service under
+Attachment X only for a ZG Resource.
+
+d. Section 69A.3.1.h (Replacement of Planning Resources):  MISO is proposing
+revisions to clarify that the Planning Resources subject to ZRC replacement
+obligations may include a ZG Resource of any type.
+
+e. Section 69A.3.3 (Load Modifying Resources):  MISO is proposing revisions to
+clarify that a ZG Resource may qualify as a BTMG if not registered as a
+Generation Resource or DIR.
+
+f. Section 69A.3.6 (Behind the Meter Generation Eligibility):  MISO is proposing
+revisions to clarify that a Market Participant registering as a BTMG or ZG
+Resource participating as a BTMG must meet certain requirements.
+
+--- PAGE 20 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 20
+
+g. Section 69A.3.9 (Penalty Provisions for LMRs): MISO is proposing revisions
+to clarify that ZG Resources participating as BTMG will be subject to
+enumerated penalties applicable to LMRs.
+
+h. Section 69A.4.1 (Seasonal Accredited Capacity of Capacity Resources): MISO
+is proposing revisions to clarify that the SAC for a Capacity Resource that is a
+Generation Resource, but not a ZG Resource, is based on certain enumerated
+criteria.
+
+i. Section 69A.4.5 (Attributes of ZRCs): MISO is proposing revisions to provide
+that all ZRCs associated with a ZG Resource must be used as part of an LSE’s
+FRAP or RBDC Opt Out.  MISO is proposing additional revisions to provide
+that, if the Capacity Resource has ZG Interconnection Service, the Seasonal
+Accredited Capacity will be allocated as one-hundred percent (100%) of SAC.
+
+j. Section 69A.7.3 (Uncleared ZRCs): MISO is proposing revisions to provide
+that ZRCs associated with a ZG Resource that are not used in a FRAP may not
+be used as Uncleared ZRCs.
+
+k. Section 69A.7.8 (Self-Scheduling Option): MISO is proposing revisions to
+provide that ZRCs obtained from a ZG Resource may not be used in a Self-
+Schedule.
+
+l. Section 69A.9 (Use of FRAP in the Planning Resource Auction): MISO is
+proposing revisions to provide that all ZRCs associated with a ZG Resource
+must be used as part of an LSE’s FRAP or RBDC Opt Out, and that all ZRCs
+associated with a ZG Resource that are not used in a FRAP shall have no
+capacity value as set forth in Section 69A.7.3.
+
+m. Section 69A.9.1 (Use of RBDC Opt Out in the Planning Resource Auction):
+MISO is proposing revisions to provide that all ZRCs associated with a ZG
+Resource must be used as part of an LSE’s FRAP or RBDC Opt Out.  MISO is
+proposing additional revisions to provide that, if an LSE owns or controls ZRCs
+that are not included in the LSE’s RBDC Opt Out, then such LSE may submit
+ZRC Offers into the PRA for all such excess ZRCs, subject to Module D, and
+that such ZRC Offers may not include ZRCs associated with a ZG Resource.
+
+D.
+Attachment X (Generator Interconnection Procedures).
+The proposed Tariff revisions implement the ZGIA process and are necessary to distinguish
+the key differences in how the ZG Interconnection Service study process and the resulting ZGIA
+will operate in comparison to MISO’s standard three-phase generator interconnection queue.  For
+convenience, MISO discusses the revisions to the GIP by section, below.
+
+--- PAGE 21 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 21
+
+1. Section 1: Definitions
+
+MISO proposes the following new definitions for addition to the GIP (and ZGIA):
+Point(s) of Withdrawal (POW) shall mean the point(s) where a non-transmission
+facility that is used to withdraw Energy from the Transmission System to serve Load
+connects to the Transmission System.
+MISO proposes this definition in order create a load equivalent to the existing defined term,
+Point of Interconnection, which is used to describe the point at which the Interconnection Facilities
+connect to the Transmission System.  Because the relative location and configuration of Load with
+respect to the Generating Facility and to the Transmission System is a critical component of ZG
+Interconnection Service, vocabulary is needed to discuss the point where Load connects to the
+Transmission System in reference to the Point of Interconnection.  The term “Point(s) of
+Withdrawal” provides a delineation between the two points that facilitates clearer Tariff rules.
+MISO notes that this term can be plural as certain large loads may have more than one point where
+they connect to the Transmission System.
+Transient Tolerance Window shall mean the period of time after a reduction or loss of
+load by the ZG Associated Load by the end of which window the Generating Facility
+with ZG Interconnection Service must have reduced its injections to an amount not
+greater than the Load of the ZG Associated Load.  The Transient Tolerance Window shall
+be no greater than 20 seconds, and is further described by the Business Practices Manual
+for Large Load.  The Transient Tolerance Window will be subject to Transmission Owner
+local planning criteria.
+
+Defining a “Transient Tolerance Window” is necessary to establish rules regarding how
+quickly a Generating Facility must match ZG Associated Load reductions in Demand.  As
+explained further below and in the attached testimony of Mr. Keyser, even with tight coordination
+between a Generating Facility and ZG Associated Load, a Generating Facility generally will not
+be able to ramp down instantaneously in the event of a sudden decrease in Load.52  However, rules
+are needed to require rapid disconnection or reduction in order to prevent impacts to the
+Transmission System from unintended injections.  The concept of a Transient Tolerance Window
+therefore provides a reasonable vehicle for establishing realistic and enforceable rules about how
+quickly a Generating Facility must reduce output.
+After careful consideration, MISO determined that a 20-second limit provides the best
+system-wide balance between what is technically feasible and commercially practical on the one
+hand, and minimizing even transient injections on the other hand.  MISO notes that there may be
+circumstances where a narrower window is necessary and practical given electrical topography on
+certain parts of the MISO System, or Applicable Local Planning Criteria.  It would be impractical
+to identify all such circumstances in the Tariff.  Therefore, the definition allows for the creation of
+Business Practices Manual rules that narrow the window based on specific circumstances existing
+
+52  Keyser at 25-26.
+
+--- PAGE 22 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 22
+
+on parts of the Transmission System.  By creating an outer window in the Tariff and allowing more
+situation-specific rules to be developed through the Business Practices Manual, this definition
+strikes a needed balance between clear Tariff rules and flexibility to adjust timing based on detailed
+technical considerations.53
+Zero Injection Generation (ZG) Associated Load shall mean a source of electrical load
+that has a Point of Withdrawal that is at the same substation as the Point of Interconnection
+to the Transmission System (i.e. same voltage level at the interconnecting substation) as
+the Generating Facility with ZG Interconnection Service that will serve it.
+
+Adding this defined term to the Tariff provides the vocabulary needed for discussing the specific
+load that a Generating Facility with ZG Interconnection Service is limited to serving.
+Zero Injection Generation (ZG) Interconnection Service shall mean a limited form of
+Interconnection Service that allows an Interconnection Customer to connect its Generating
+Facility to the Transmission System or Distribution System, as applicable, for the limited
+purpose of delivering energy to ZG Associated Load.  ZG Interconnection Service does not
+grant any right to inject energy onto the Transmission System except as may be authorized
+by Section 3.11 of the Generator Interconnection Procedures.  ZG Interconnection Service
+does not convey Transmission Service.  ZG Interconnection Service also does not provide
+a right to serve, or a right to Transmission Service to serve, a ZG Associated Load or retail
+customer except as allowed by applicable state law.
+MISO’s proposed definition of Zero Injection Generation Interconnection Service
+describes a limited form of Interconnection Services that enables a Generating Facility to serve
+Load at the same substation and voltage level as the Generating Facility without authorizing use
+of the broader Transmission System.  The terms of this definition reflect its development through
+the stakeholder process as a limited tool to enable functional co-location arrangements that can be
+rapidly studied and implemented without broader impacts to the Transmission System.  The term
+“zero injection” refers to the lack of injection onto the Transmission System beyond the immediate
+interconnecting substation.  The third sentence of this definition reflects the standard disclaimer
+that Interconnection Service does not convey Transmission Service, which language is also present
+in the existing definitions of ER Interconnection Service and NR Interconnection Service.  The
+fourth sentence of this definition was added to allay concerns that an Interconnection Customer
+could use ZG Interconnection Service to circumvent state law restrictions on serving load or
+inadvertently authorize retail wheeling.  This sentence does not add any new restriction on service
+but merely respects those that may exist at the state level.
+Zero Injection Generation (ZG) Resource shall mean a generating resource with an
+Attachment X defined ZG Interconnection Agreement.  A ZG Resource may participate as
+
+53  This flexibility is limited given that MISO would still be required to define the situations under which the
+Transient Tolerance Window would be reduced in a stakeholder-reviewed Business Practices Manual before
+applying them to a given interconnection.
+
+--- PAGE 23 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 23
+
+a Generation Resource, Dispatchable Intermittent Resource, Electric Storage Resource, or
+Behind the Meter Generation resource.
+
+The definition of ZG Resource reflects how these Generating Facilities integrate into
+MISO’s market structures and provides a shorter form of identification than “Generating Facilities
+with ZG Interconnection Service” improving Tariff readability where these are discussed.
+Generally, ZG Resources may participate in MISO markets and resource adequacy constructs in
+the same way as generators with other types of Interconnection Service, subject to the limitation
+that their participation is limited to serving, and being credited for serving, the ZG Associated
+Load.
+
+MISO proposes the following definitions for ZG Facility Study and ZG Impact
+Assessment:
+
+ZG Facilities Study shall mean the study described in Section 3.2.5.2.2 of these GIP that
+is used to identify any Network Upgrades or Interconnection Facilities that may be needed
+to for an Interconnection Request seeking ZG Interconnection Service.
+
+and
+
+ZG Impact Assessment shall mean the study described in Section 3.2.5.2.1 of these GIP
+that is used to evaluate the impact of an Interconnection Request seeking ZG
+Interconnection Services.
+
+These definitions describe the studies that MISO will conduct for an Interconnection
+Request seeking ZG Interconnection Service.  MISO notes that because only limited injection is
+allowed and Network Upgrades required on the Transmission System beyond the interconnecting
+and neighboring substations generally would preclude the granting of ZG Interconnection Service,
+the scope of these studies is more focused and can be accelerated from the timeframe of System
+Impact Studies and Facilities Studies under the DPP.
+
+MISO proposes the following definition for the pro forma agreement that would be
+tendered to an Interconnection Customer at the conclusion of ZG Interconnection Services:
+
+ZG Interconnection Agreement (ZGIA) shall mean the form of interconnection
+agreement governing the terms and conditions of ZG Interconnection Service, set forth in
+Appendix 19 to these Generator Interconnection Procedures. This agreement shall follow
+the form of the Transmission Provider’s pro forma Generator Interconnection Agreement
+with modifications to reflect ZG Interconnection Service and the ZG Interconnection
+Service study process.  Unless otherwise provided in the GIP, all requirements applicable
+to the pro forma Generator Interconnection Agreement shall apply to the ZGIA.  A ZGIA
+is a form of GIA and, where used in the Tariff, references to Generator Interconnection
+Agreements or GIAs encompasses ZGIAs.
+
+--- PAGE 24 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 24
+
+MISO notes that the ZGIA is closely based on the MISO’s pro forma GIA in Tariff
+Attachment X, Appendix 6 with modifications as described below to provide for ZG
+Interconnection Service.  MISO ultimately expects to merge the ZGIA and GIA, as described
+below.  However, as noted below, MISO has replicated the provisions of the GIA in Appendix 6 to
+Attachment X of the Tariff and added the revisions necessary to implement ZG Interconnection
+Service into Appendix 19 rather than Appendix 6 for administrative reasons.  However, a ZGIA is
+intended to be a form of GIA and MISO intends that references in the Tariff to GIAs refer to ZGIAs
+as well unless otherwise expressly stated.  MISO includes the last sentence of this definition to
+avoid any confusion and clarify that the numerous references in other sections of the Tariff to GIAs
+include ZGIAs by default.
+
+Finally, MISO proposes the following defined term to refer to the quarterly study that
+MISO will perform for Interconnection Requests seeking ZG Interconnection Service:
+
+ZG Interconnection Process Quarterly Study Period shall mean the period of time in
+which Interconnection Requests seeking ZG Interconnection Service are submitted to the
+Transmission Provider and compiled for study.  There are four study periods in a year
+with the following start and end dates:
+
+Quarter 1: The first Business Day of March through the last Business Day of
+May;
+Quarter 2: The first Business Day of June through the last Business Day of
+August;
+Quarter 3: The first Business Day of September through the last Business Day of
+November;
+Quarter 4: The first Business Day of December through the last Business Day of
+February.
+
+This definition is based on the definition for the ERAS Quarterly Study schedule and MISO
+proposes a similar quarterly cadence for ZG Interconnection Studies.
+2. Section 3.2.5—ZG Interconnection Service
+MISO proposes to add new section 3.2.5 to the GIP establishing ZG Interconnection
+Service as a new type of interconnection service available under the GIP.  The first proposed new
+paragraph of Section 3.2.5.1 explains that ZG Interconnection Service is,
+restricted Interconnection Service that allows an Interconnection Customer to
+connect its Generating Facility to the Transmission System or Distribution System,
+as applicable, for the limited purpose of delivering energy to a source of electrical
+load that is at the same substation as the Point of Interconnection to the
+
+--- PAGE 25 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 25
+
+Transmission System (i.e. same voltage level at the interconnecting substation) as
+the Generating Facility with ZG Interconnection Service that will serve it.54
+
+This service would provide a vehicle for a Generating Facility to serve a large load (or
+other load) that is either located behind the same Point of Interconnection as the Generating
+Facility as well as situations where the Point of Withdrawal of the load source is at the same
+substation and voltage level as the Generating Facility.  As Mr. Keyser explains in his testimony,
+generators that are serving co-located load may not require the same degree of access to the
+Transmission System as those seeking ERIS to serve Load farther afield.  And the limited distance
+over which energy would need to be—and is permitted to—flow allows for a more targeted study.55
+MISO worked closely with its stakeholders over many months, and prior to the issuance of
+the Show Cause Order, to determine the appropriate permissible electrical distance between the
+Generating Facility and load source that should be allowed for ZG Interconnection Service.  As
+part of this process, MISO initially considered allowing ZG Interconnection Service for a
+Generating Facility to serve Load located several buses or substations away.  However,
+stakeholders across differing MISO sectors did not support such a broad reach, citing concerns
+about the practicality of limiting injections to the rest of the Transmission System once the
+generation and load were allowed to be at separate substations, the likelihood of unconstrained
+power flows56 changing over time in unanticipated ways from what was studied, and the potential
+for retail wheeling.
+MISO also considered limiting ZG Interconnection Service to load and generation located
+behind the same Point of Interconnection.  However, after discussions with stakeholders and
+review of proposed configurations, MISO determined that such a restriction would be too narrow
+for the MISO region.  Several potential Interconnection Customers planned to utilize adjacent bays
+in the same substation to run the lead lines for the Generating Facility and Load as a more
+pragmatic and cost-effective approach than expanding one substation bay to house both lead lines
+in order to maintain the same Point of Interconnection.  These stakeholders argued that using an
+adjacent bay would be electrically indistinguishable from housing both the Generating Facility and
+Load behind the same bay given the requirement to install equipment limiting injections to the rest
+of the Transmission System.  Ultimately, MISO recognized that requiring the Generating Facility’s
+Point of Interconnection and the Load’s Point of Withdrawal to be at the same voltage level of the
+same substation provided the right balance of flexibility to enable expected large load co-location
+arrangements while ensuring a minimal use of the Transmission System consistent with a
+permanent zero injection based product.  In reaching this decision, MISO noted that ‘same voltage
+level at the same substation’ is the test applied for whether Points of Interconnection are electrically
+identical under MISO’s Generating Facility Replacement Process.57  Limiting the electrical
+
+54  Attachment X at Section 3.2.5.1.
+55  Keyser at 7-8.
+56  I.e., power flows that it is not practical to contain within a defined area through control equipment.
+57  See Attachment X at Section 3.7.1.
+
+--- PAGE 26 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 26
+
+distance between the Point of Interconnection and Point of Withdrawal in this way allows MISO
+to offer ZG Interconnection Service on a permanent basis (subject to 15 year automatically
+renewing term provisions) similar to other Interconnection Service products.  This duration is an
+important feature of the ZG Interconnection Service.  MISO understands the Show Cause’s Order’s
+proposed distinction between a potentially permanent co-location service and a temporary
+“proximate location service.”58  ZG Interconnection Service is more of a co-location construct than
+it is a proximate load construct, with the only departure from using a strict ‘same POI’ requirement
+being some very limited flexibility within a single substation to recognize the often complex ways
+that large loads connect—including long-standing large industrial loads connected to the MISO
+Transmission System.
+The second paragraph of proposed Section 3.5.2 outlines several key requirements for ZG
+Interconnection Service.  The first is that the studies must determine that granting ZG
+Interconnection Service will not result in any injections of Energy onto the Transmission System
+beyond the interconnecting substation except for transient injections.  This requirement is
+necessary because limiting injection onto the broader Transmission System is the foundational
+feature of ZG Interconnection Service, and what allows for vastly accelerated study process
+outside of the DPP.  As Mr. Keyer explains, however, there may be limited instances where a
+Generating Facility configured to serve only co-located load may nonetheless make transient
+injections.  This can occur where the ZG Associated Load’s demand abruptly decreases.59  Even
+with communications and other equipment linking the Generating Facility and the ZG Associated
+Load, it often can take a Generating Facility a small period time to lower its own production in
+response.  The Transient Tolerance Window recognizes this fact and allows MISO to properly
+account for it in studies for ZG Interconnection Service, thus avoiding negative impacts to the
+Transmission System.
+The second proposed requirement—that granting ZG Interconnection Service will not
+require Network Upgrades beyond the same substation except for System Protection Facilities—
+is important to ensuring that the grant of ZG Interconnection Service is not negatively impacting
+the rest of the Transmission System.  It is not necessary to include this limited product in DPP
+studies because its lack of injection prevents it from having impacts on the broader Transmission
+System and, without impacts to mitigate, it is not necessary for these Interconnection Customers
+to be included in a regional study group.  However, this lack of interaction with other
+Interconnection Requests assumes that the Generating Facility does not drive the need for Network
+Upgrades elsewhere on the Transmission System.  If such upgrades were needed, that would both
+call into question the lack of injection and raise cost-shifting risk for other Interconnection
+Customers.  Therefore, the requirement that no Network Upgrades be required beyond the
+interconnecting substation acts as a key guardrail.  The limited exception to this rule for system
+protection facilities acknowledges that short circuit and other transient study results could require
+facilities to be upgraded beyond the substation, even though injections will be limited to be less
+
+58  Show Cause Order at PP 89, 94-98, 112-115.
+59  Keyser at 25-26.
+
+--- PAGE 27 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 27
+
+than the Transient Tolerance Window.60  Such equipment is limited to that required to limit
+injection consistent with ZG Interconnection Service.  The costs of such equipment would be borne
+entirely by the ZG Interconnection Customer, obviating the risk of cost shifts to other
+Interconnection Customers or to Load.
+
+The third paragraph of proposed Section 3.2.5.1 provides that ZG Interconnection Service
+is restricted to serving the specific Load identified in the Interconnections Request and included
+in the ZGIA.  This requirement allows MISO to model the load in ZG Interconnection Service
+studies and validate that the proposed configuration is consistent with this service type. Restricting
+ZG Interconnection Service to a specific load is consistent with a co-location concept and ensures
+that the Generating Facility will operate as initially contemplated for its service life, because it has
+no authorization to serve any other load.61  The statement in the fourth sentence that ZG
+Interconnection Service does not convey Transmission Service is consistent with the currently-
+effective language in the GIP explaining that Interconnection Service does not convey
+Transmission Service.62  The instant filing does not alter the obligations of the Load/Transmission
+Customer to obtain appropriate Transmission Service.63
+
+The final sentence of the third paragraph and the fourth paragraph are included to allay
+concerns expressed during the stakeholder process that ZG Interconnection Service could be read
+as conflicting with state and local laws by allowing the owner of a generator that is not a Load
+Serving Entity to serve load when not authorized to do so by state law.  The inclusion of this
+language neither imposes, nor is intended to impose, any independent restrictions on an
+Interconnection Customer.
+3. Section 3.2.5.2—ZG Interconnection Service Study
+Proposed Section 3.2.5.2 establishes the studies that MISO will perform for
+Interconnection Requests.  The first paragraph explains that the ZG Resource will be studied and
+granted service at a level not to exceed the Demand of the ZG Associated Load.  This language is
+appropriate and important because ZG Interconnection Service allows the Generating Facility to
+serve only the ZG Associated Load.  Limiting the level of service to the peak Demand of the ZG
+Associated Load effectuates this relationship and provides the necessary study inputs to allow
+
+60  Keyser at 31-32.
+61  As discussed below, this does not prevent an Interconnection Customer that wants to use its ZG Resource to serve
+a different load from obtaining ERIS or NRIS by submitting a new Interconnection Request and proceeding
+through the DPP and obtaining a new GIA without the injection limitations.
+62  Tariff Attachment X at Section 2.4 (No Applicability to Transmission Service). See also, Id. at Section 1:
+Definitions—“Energy Resource Interconnection Service (“Energy Resource Interconnection Service does not
+convey transmission service”) and  Network Resource Interconnection Service (“Network Resource
+Interconnection Service does not convey transmission service.”).
+63  MISO is aware of the show Cause Order’s directives requiring MISO to address the Transmission Service
+implications of various Large Load arrangements and will address them in a forthcoming 205 filing.  The current
+filing addresses only Interconnection Service and is both independently needed as well as a building block for
+further Tariff constructs.
+
+--- PAGE 28 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 28
+
+MISO to verify that the ZG Resource can serve only the ZG Associated Load.  MISO notes that
+studying a ZG Resource at the level of service not to exceed the ZG Load does not place a limit
+on the installed capacity of the ZG Resource.  Under generally applicable Tariff rules,
+Interconnection Customers may propose Generating Facilities with a higher installed capacity than
+the granted Interconnection Service.
+4. Sections 3.2.5.2.1 and 3.2.5.2.2—ZG Impact Assessment and ZG Facilities
+Study
+Section 3.2.5.2.1 establishes the system impact study that will be used to Study ZG
+Interconnection Service Requests.  As explained by Mr. Keyser, this study is similar to that used
+for ERIS evaluation, with changes necessary to accurately reflect the scope of ZG Interconnection
+Service and determine its impacts.  In this respect, an examination of the electrical connection
+between the Generating Facility, ZG Associated Load, and the Transmission system, and the
+proposed control equipment becomes a critical aspect of the study because it is necessary to verify
+that the limiting injections are viable under the proposed configuration.  Therefore, the ZG Impact
+Assessment will start with a close review of the diagrams and equipment lists included in the
+Interconnection Requests.  Unlike other system impact studies, the ZG Impact Assessment must
+determine that no Network Upgrades are needed to maintain reliability, with the stability and
+steady state analyses testing the impact of injections if the ZG Associated Load trips offline for the
+duration of the Transient Tolerance window.
+Section 3.2.5.2.2 performs the same analysis of the specific facilities needed to
+accommodate the interconnection and is similar to the facilities studies performed for ERIS and
+NRIS Interconnection Requests  during Phases 2 and 3 of the Definitive Planning Phase,64 but with
+a more limited scope reflecting that requirement that no Network Upgrades can be needed other
+than Network Upgrades at the interconnecting substation and system protection facilities to control
+injection onto the rest of the Transmission System.  In order to accommodate an accelerated ZG
+Interconnection Service process timeline, MISO proposes to sequence the ZG Facilities Study
+differently than facilities studies performed in the DPP.  Specifically, MISO proposes to begin the
+portion of the ZG Facilities Study that examines required interconnection facilities at the same
+time MISO begins the ZG Impact Assessment.  This differs from the DPP process, where
+Interconnection Facilities studies are not started until Phase 3, after both a preliminary System
+Impact Study and a Revised System Impact Study have been performed. This approach is
+reasonable for ZG Interconnection Service because Interconnection Facilities are not dependent
+on the results of the ZG Impact Assessment and thus can be studied separately or in parallel.
+Running these studies in parallel allows MISO to have results available within 90 days from study
+commencement, in time for the Interconnection Customer to receive a draft ZGIA.65  For the
+
+64  See Attachment X at Section 7.3.2 et seq.
+65  Due to the enhanced readiness requirements of the ZG Interconnection Service process, including higher deposits
+and an agreement with the load it will serve, MISO has reduced concern that dedicating resources to study
+interconnection facilities at the beginning of the ZG Interconnection Service would be premature. as opposed to
+the DPP.
+
+--- PAGE 29 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 29
+
+portion of the ZG Facilities Study that focuses on Network Upgrades, MISO proposes to begin
+this portion of the ZG Facilities Study upon the identification of the need for such Network
+Upgrade during the ZG Impact Assessment and no later than one business day after the end of the
+ZG Impact Assessment.  This approach recognizes that a facility study to address a need cannot
+begin before the underlying need is identified.  To expedite the study process, the proposed
+language in the last paragraph of Section 3.2.5.2.2 contemplates MISO commencing portions of
+the study responsive to Network Upgrade as early as possible during the process. This approach is
+made practical by the limited scope of the ZG Impact Assessment and more limited Network
+Upgrades to be studied.
+5. Section 3.3.1—Valid Interconnection Request
+MISO proposes to add a reference to ZG Interconnection Service under the fourth
+paragraph clarifying when changes to the D1 study deposit take effect for Interconnection Requests
+seeking ZG Interconnection Service.  This revision is necessary because the current language of
+this paragraph establishes the effectiveness of periodic increases in the D1 with respect to the
+application deadline of study groups.  Because ZG Interconnection Requests are not studied in a
+group study format, it is necessary to specify the timing of D1 increases with respect to such
+Interconnection Requests.  MISO’s proposal to make such increases effective to Interconnection
+Requests seeking ZG Interconnection Service received after the date of posting such increase
+facilitates orderly processing and ensures such increases are applied only prospectively.
+In the fifth paragraph, MISO proposes to add Interconnection Requests seeking ZG
+Interconnection Service to the list of Interconnection Requests subject to the $150,000 D1 payment
+in order to provide funding for these studies.  Interconnection Requests seeking ZG
+Interconnection Service and Surplus Interconnection Service currently are subject to the $150,000
+D1 payment and the study for ZG Interconnection Service is not less complex or resource intensive
+than these other studies to conduct. MISO submits that this requirement therefore is just and
+reasonable.
+6. Section 3.5.3—Affected System Coordination
+MISO proposes new Section 3.5.3 governing coordination with affected systems in the
+evaluation of ZG Interconnection Requests.  At the outset, MISO notes that the limited injection
+nature of ZG Interconnection Service significantly reduces the likelihood that these Generating
+Facilities will have impacts on neighboring transmission systems requiring network upgrades.
+However, MISO cannot entirely eliminate the possibility that a ZG Resource could have impacts
+
+--- PAGE 30 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 30
+
+on a neighboring Transmission System depending on their location and configuration.66  It
+therefore is necessary to make provision for affected system coordination.67
+Proposed Section 3.5.3 closely follows the affected systems coordination procedure
+accepted for ERAS Interconnection Requests.  Specifically, proposed Section 3.5.3 provides that
+MISO will apply the same coordination procedures and screening criteria as that used for
+Interconnection Requests in the DPP with several exceptions necessary to recognize the differing
+timing and study processes applicable to serially studied ZG Interconnection Requests.  These
+exceptions include: (1) providing ZG Interconnection Re quest to the affected system not later than
+ten days prior to the start of the ZG Impact Assessment; (2) providing results to ZG Interconnection
+Customers at such time as they are received; (3) proceeding to issue a ZGIA with an obligation to
+execute study any affected systems study agreements within fifteen days after such agreement is
+tendered for execution to the Interconnection Customer; (4) submitting ZG interconnection
+Requests serially to affected systems; and (5) seeking a relative queue priority date based on the
+date that the ZG Impact study begins.
+MISO submits that these rules are appropriate because they provide a structure for
+processing Interconnection Requests for ZG Interconnection Service rapidly and in a manner that
+recognizes the serial nature of such studies.  Requiring ZG Interconnection Customers to execute
+ZGIAs where affected systems information has not yet been provided is necessary to maintain the
+accelerated speed of the ZG Interconnection Study process and to provide certainty to ZG
+Interconnection Requests in subsequent ZQ Quarterly study groups whose models will be built
+from the prior completed quarterly study.  In arriving at this balance between certainty and speed,
+MISO notes that any need for mitigating impacts to an affected system is likely to be minimal and
+largely a function of the location, configuration, and control equipment selected by the
+Interconnection Customer.
+7. Section 3.11—Additional Requirements for Interconnection Requests
+Seeking ZG Interconnection Service
+MISO proposes several additional requirements for Interconnection Requests for ZG
+Interconnection Service, which requirements are needed to ensure the limited nature of ZG
+Interconnection Service and facilitate studies consistent with this concept.
+First, MISO proposes in Section 3.11(i) and (ii) to require that the Interconnection Request
+for ZG Interconnection service include a one line diagram showing the Generating Facility and
+associated electrical equipment and all the ZG Associated Loads including all Point(s) of
+
+66  For example, such flows could be possible if the Interconnection Customer seeking ZG Interconnection Service
+proposes a Point of Interconnection at a seam between the MISO Transmission System and a neighboring
+Transmission System.  In such circumstances, the system protection facilities that may need to be installed on
+adjacent substations may be located on a neighboring transmission system.
+67  MISO cannot control the study processes of neighboring Transmission Providers but will work with its seems
+partners to develop any additional coordination rules necessary to appropriately model and process ZG
+Interconnection Requests.
+
+--- PAGE 31 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 31
+
+Withdrawal and the Point of Interconnection of the Generating Facility as well as a power flow
+model including this data and any proposed system protection facilities. Because ZG
+Interconnection Service is restricted to serving a specified load, the ZG Associated Load,
+submission of detailed and accurate one line diagrams and power flow models showing both the
+Generating Facility, the ZG Associated Load, protection facilities, and their configuration with
+respect to the Transmission System is critical to accurately studying how a proposed ZG Resource
+will interact with the Transmission System and ensuring limited impacts.  In addition, it is essential
+to document this configuration in the resulting ZGIA because the results of the ZG Impact Study
+will depend on the proposed configuration remaining as proposed.  Subsection (ii) contains the
+crucial limitation that Point of Interconnection of the Generating Facility and a Point of
+Withdrawal for the ZG Associated Load be at the same voltage level of a common substation.  This
+restriction is necessary to ensure the limited interaction with the rest of the Transmission System
+that underpins ZG Interconnection Service.
+Second, proposed subsection (iii) requires that the grant of ZG Interconnection Service not
+require the construction of Network Upgrades beyond the substation where the Point of
+Interconnection is located other than System Protection Facilities.  As explained by Mr. Keyser,
+this requirement complements and enforces the expectation that ZG Interconnection Service can
+be granted without adversely impacting the broader transmission system.  A proposed
+interconnection that triggers a need for Network Upgrades elsewhere on the system would not be
+consistent with the intended scope of the service as it assumes an impactful injection.
+Interconnection Requests with such impacts are better processed through the DPP where they can
+study in a cluster with other Interconnection Requests with potential impacts on the broader
+Transmission System and mitigation costs than under the ZG Interconnection Service process
+proposed herein.
+Third, MISO proposes to require that an Interconnection Request for ZG Interconnection
+service be submitted 180 Calendar Days before the earlier of the Commercial Operation Date of
+the Generating Facility or the need-by date for the ZG Associated Load.  The reason for this
+requirement is to allow MISO sufficient time to study the proposed interconnection, including the
+information on both the Generating Facility and the ZG Associated Load included in the
+Interconnection Request, and to provide time for other processes that must be completed prior to
+commercial operation and the need by date.68  Further, this requirement allows sufficient time for
+the subsequent MTEP study of the ZG Associated Load to take place. The limited exception to the
+requirement to submit 180 days in advance of the need-by date is necessary to allow the ZGIA
+Process to be used by loads that already are online who, in the absence of such an exception, would
+not be able to utilize this process.
+Fourth, MISO proposes to limit the amount of ZG Interconnection Service to the total
+Demand69 of the ZG Associated Load.  Because ZG Interconnection Services may be used only to
+
+68  Attachment X at proposed Section 3.11.iv.
+69  As defined in MISO’s Tariff, “Demand” refers to the peak demand.  Module A—Definitions: Demand: (“The
+maximum integrated hourly sum of Load occurring over a specified period, such as Day, Month, Season, or
+
+--- PAGE 32 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 32
+
+serve ZG Associated Load, authorizing a service level that is higher than what the ZG Associated
+Load has been studied to require would be inconsistent with the limited nature of this product.
+MISO again notes that the limitation on service does not limit the installed capacity of the
+Generating Facility.  As Mr. Keyser explains in his testimony, this approach recognizes the
+differing dispatch levels of various fuel types and allows the Interconnection Customer flexibility
+to build the installed capacity that they require to serve the ZG Associated Load.
+Fifth, the Interconnection Request must include modeling and other technical data as
+described in MISO’s Generator Interconnection Business Practices Manual for the ZG Associated
+Load in order to enable MISO to study the connections between the Generating Facility, ZG
+Associated Load, and the Transmission System in order to verify that ZG Interconnection Service
+can be granted and understand impacts to the Transmission System.  Including the specific
+technical data needed in the Business Practices Manual is consistent with requirements for other
+types of Interconnection Requests and provides needed flexibility to update specific technical
+details as MISO and its stakeholders gain experience with ZG Interconnection Service Requests.
+Sixth, MISO proposes to require the Interconnection Customer to submit an executed
+agreement between itself and the entity with the ZG Associated Load specifying that the full output
+of the Generating Facility is intended to be used by the ZG Associated Load, with an expected
+term of at least five years.70  This requirement is necessary both to prevent speculative
+Interconnection Requests,71 and verify that the load intends to use the output of the Generating
+Facility.  In the context of ZGIA, the agreement takes on added importance because the
+Interconnection Request must include detailed diagrams and technical information pertaining to
+the ZG Associated Load.  It therefore is imperative to verify that the ZG Associated Load has
+mature arrangements with the owner of the Generating Facility in order for MISO to rely on their
+technical information in conducting studies.
+The language of the agreement requirement is based on, and largely identical to, the
+requirements applicable to ERAS Interconnection Requests72 with several differences warranted
+by the design and purpose of ZG Interconnection Service.  First, ZG Interconnection Service
+imposes a requirement that the ZG Associated Load at least intend to use the output of the
+Generating Facility for at least 5 years.  As Mr. Keyser explains in his testimony, this requirement
+exists because when MISO studies transmission service for the ZG Associated Load as part of the
+transmission planning process, the ZG Resource may be relied upon as an alternative mitigation
+to Transmission System Upgrades.  To consider this as an alternative mitigation, MISO must have
+
+Year, expressed in MWs.”).  Under this definition, MISO tracks the highest level of load demand as the
+maximum.
+70  Attachment X at Proposed Section 3.11(vii).
+71  ZG Interconnection Service is only useful if the Interconnection Customer and entity with the ZG Associated
+Load (or the obligation to serve it) have already agreed to use the Generating Facility specifically for that load.
+If such an agreement does not exist then an Interconnection Request for ZG Interconnection Service is, at the very
+least, premature.
+72  Attachment X at currently effective Section 3.9.1(2).
+
+--- PAGE 33 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 33
+
+some confidence that it will be available for at least the five-year planning horizon.  This said,
+MISO acknowledges that it may be difficult for Interconnection Customers and ZG Associated
+Loads to agree to a firm minimum term of at least five years.  To accommodate these commercial
+considerations, MISO therefore only requires that the agreement specify an intent to use the full
+output of the Generating Facility for at least five years rather than a firm commitment.  MISO
+views this as the minimum level of certainty needed to rely on the ZGIA in transmission service
+studies.73  Second, MISO has proposed an acknowledgement of self-supply as a permissible
+mechanism for satisfying the agreement requirement where the Interconnection Customer is the
+entity that owns the ZG Associated Load.  This is intended to recognize that, in many states within
+the MISO footprint, Load is permitted to service itself with its own onsite generation.  The
+acknowledgment requires the Interconnection Customer to verify that they both intend and are
+permitted by applicable law to do this.74
+The remaining four forms of agreement are identical to those accepted for the ERAS
+process and, given the flexibility included for an “other agreement” under proposed Section
+3.11(viii)(d), provide sufficient flexibility to account for a wide array of commercial arrangements
+while still acting as a process safeguard.
+Seventh, MISO proposes to include a requirement that a ZG Interconnection Request not
+include a request for any other type of Interconnection Service.75  This requirement is needed
+because the underlying non-injection assumptions behind ZG Interconnection Service would
+conflict with pairing this with other kinds of Interconnection Service, which authorize injections.76
+This requirement also facilitates MISO’S study of ZG Interconnection Service as a more limited
+product in an accelerated timeframe. This language does not prevent an Interconnection Customer
+from submitting a separate Interconnection Request for another type of Interconnection Service
+for the same Generating Facility using the process specified by these Generator Interconnection
+Procedures for such request type.  In the event that an Interconnection Customer obtains another
+form of Interconnection Service for the same Generating Facility, such service shall be deemed to
+supersede any previously-granted ZG Interconnection Service upon its effective date. MISO does
+not intend this requirement to preclude an Interconnection Customer from separately or later
+seeking another form of Interconnection Service and includes language in the second and third
+sentence of this subsection that expressly allows the Interconnection Customer to separately obtain
+such service and have it supplant the more limited ZG Interconnection Service upon its effective
+date.  This would allow, for example, an Interconnection Customer to obtain ZG Interconnection
+Service rapidly to address an urgent need-by date for its associated load while separately pursuing
+NRIS through the DPP.
+
+73  Should the Generating Facility ceased to be used by the ZG Associated Load, MISO likely would need to restudy
+the impacts of transmission service for that Load and either delay the service date or suspend service for that load
+while an alternative mitigation is found in order to prevent adverse reliability impacts to the Transmission System.
+74  Attachment X at Proposed Section 3.11(viii)(e).
+75  Attachment X at proposed Section 3.11(ix).
+76  Keyser at 15.
+
+--- PAGE 34 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 34
+
+8. Sections 3.11.1 and 4.4—Modification of Interconnection Requests for ZG
+Interconnection Service
+MISO proposes new Section 1.11.1 to prohibit modifications to ZG Interconnection
+Requests after submission.  This prohibition is necessary and reasonable given the 90-day
+timeframe for studies of Interconnection Requests for ZG Interconnection Service. To make this
+timeframe workable and avoid delays that would impact other Interconnection Customers, it is
+necessary to require that these Interconnection Services be well-considered and provide certainty
+with respect to the details to be studied at the time they are submitted.  This readiness requirement
+is mitigated by the fact that MISO will study ZG Interconnection Requests on a quarterly basis.
+Therefore, an Interconnection Customer that is not certain of the details to be included in its
+Interconnection Request would only need to wait until the following quarter for another
+opportunity to be studied.
+
+Section 3.11.1 includes one exception made necessary by process sequencing.  MISO
+proposes to require, and therefore allow, the ZG Interconnection Customer to move its Point of
+Interconnection to the Transmission System if the ZG Associated Load subsequently moves the
+Point of Withdrawal to not be at the same substation and voltage level as the Point of
+Interconnection.  In such circumstance, the Interconnection Customer would need to move its
+proposed Point of Interconnection to match the move made by the ZG Associated Load. MISO
+proposes to permit this move for several reasons.  First, because the premise of ZG Interconnection
+Service is based on the relative location of the ZG Associated Load and the ZG Resource, it is
+more important from a system impact study perspective to prevent the Point of Interconnection
+and Point of withdrawal from separating than it is to prevent the Point of Interconnection from
+moving if the load’s location moves.77  Second, MISO expects that Interconnection Requests for
+ZG Interconnection Service often will be submitted to MISO before transmission service is
+requested by or on behalf of the ZG Associated Loads.  This sequencing allows MISO to consider
+the executed ZGIA in the transmission service study. Because the Interconnection Request for ZG
+Interconnection Service likely will precede the transmission service study process, it is not
+practical to hold the load to a proposed Point of Withdrawal before it has even submitted its own
+application; doing so would undermine the scoping discussions between the load, its Load Serving
+Entity, and the applicable Transmission Owner that occur during the load study process. This is
+true under MISO’s current Tariff and business practices surrounding load integration studies and
+MISO expects this sequencing to continue under other study processes currently being developed
+to address the concerns raised in the Show Cause Order.  MISO therefore submits that both the
+general prohibition on modifications and the Point of Withdrawal move exception are reasonable.
+
+Consistent with proposed Section 3.11.1, MISO proposed to add a new paragraph at the
+end of Section 4.4 (Modifications) to implement the move of a POI to correspond to a POW move.
+The proposed new language reiterates the requirement to move the POI when the POW moves and
+requires that this be done prior to the change taking effect, which is necessary to allow MISO to
+study the impact of the move.  When such a change is submitted, MISO would revalidate the
+
+77  Keyser at 28-29.
+
+--- PAGE 35 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 35
+
+Interconnection Request and determine whether it has material adverse impacts. If such impacts
+are identified, the Interconnection Request will be assigned a new queue position.  This is
+consistent with existing tariff rules on material impacts applicable to Interconnection Requests.
+The final proposed sentence addresses the situation in which such a modification occurs after the
+ZGIA has become effective, requiring a restudy and an amendment to document such restudy and
+any associated costs, or terminate the ZGIA within 60 Calendar Days after the restudy is
+completed.  This language recognizes that an Interconnection Customer may not have any ability
+to control the timing of the Load’s transmission service study process and that such changes may
+need to be made even after the ZGIA is completed.  The proposed language prevents negative
+impacts to other Interconnection Customers from post-ZGIA changes and facilitates timely
+coordination between the ZG Interconnection Service Customer and its ZG Associated Load.
+
+9. Section 3.11.2 Evaluation Process and Study Limits
+
+MISO proposes a quarterly study cadence for ZG Interconnection Service Interconnection
+Requests as well as a limit of ten such Interconnection Requests per quarter.  The quarterly cadence
+aligns with the expected duration of the ZG Impact Assessment in order to avoid overlapping
+studies.  MISO determined that 10 such Interconnection Requests is an appropriate quarterly limit
+because it balances opportunities for prompt study with avoiding the reduction of personnel and
+resources needed to process the DPP, which will remain the primary focus of MISO’s
+interconnection process.  ZG Interconnection Service, while valuable, is a niche tool.  MISO does
+not expect to receive more than ten such Interconnection Requests a quarter as the process matures.
+The proposed limit thus is a safeguard in case ZGIAs prove more popular than expected.
+
+In order to avoid undue disruption to the DPP, MISO proposes to allow Interconnection
+Requests in the DPP to withdraw and commence the ZG Interconnection Service study process
+only if they have not yet reached Decision Point II of their DPP cycle. This avoids the risk of
+unscheduled restudy to other DPP Interconnection Requests because Interconnection Customers
+currently can withdraw from the DPP at Decision Point II with such withdrawals being accounted
+for in Phase 3 of the DPP.  For the same reason, MISO does not propose to excuse withdrawing
+Interconnection Requests from the currently-applicable penalty provisions of Section 7.6.2.1.1 and
+7.8 of the DPP.  The prohibition withdrawals after Decision Point II will be enforced through a one
+year waiting period before an Interconnection Request for the same project can be processed for
+ZG Interconnection Service.  MISO believes that this is a sufficient deterrent against late stage
+transfers.
+
+10. Section 3.11.3—ZG Interconnection Service-Notice to Proceed
+
+Proposed Section 3.11.3 provides that the Interconnection Customer shall inform MISO
+whether it intends to proceed to a ZGIA within 5 Business Days after having received the results
+of the ZG Impact Analysis.  As noted above, MISO has designed the process to allow for the
+simultaneous commenced of the portion of the ZG Facilities Study focusing on Interconnection
+Facilities at the same time as the ZG Impact assessment commences.  Given the same 90 Calendar
+
+--- PAGE 36 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 36
+
+Day timeline, the Interconnection Customer therefore should have results from both of those
+studies at the time it elects to proceed to ZGIA.
+
+MISO’s proposed process also allows for the commencement of ZG Facilities Studies as
+the needs driving them become identified.  While this admittedly does not guarantee that the
+portion of the ZG Facilities Study focused on Network Upgrades will be completed at the time an
+election to proceed must be made, MISO believes that this tradeoff is reasonable to allow for a
+quarterly study process and facilitate the rapid interconnection of co-location arrangements with
+short need-by dates.  In reaching this conclusion, MISO considered the fact that the planning-level
+costs for addressing system impacts will be provided in the ZG Impact Assessment, with the ZG
+Facilities Study focusing more on the specific design details of the Network Upgrade.  Thus, an
+Interconnection Customer will have this cost information at the time it must elect to proceed.
+Second, given the limited scope of potential Network Upgrades that can be required in a process
+that does not allow for Network Upgrades other than system protection facilities beyond the
+interconnecting substation, both the risk and uncertainty of potential Network Upgrade costs is far
+more limited in the ZG Interconnection Service process than under other processes where
+significant Network Upgrades on other parts of the Transmission System may be required.  For
+similar reasons, and as noted above, MISO also will not delay the election to proceed until the
+receipt of any affected systems analysis.
+
+11. Section 3.11.4—ZGIA for ZG Generating Facility
+
+Proposed section 3.11.4 provides that MISO will tender a draft pro forma ZGIA or
+amendments within 5 Business Days after receiving the Interconnection Customer’s Notice to
+Proceed.  This accelerated timeframe reflects a shortening of the DPP’s deadline to tender a ZGIA
+from 30 Calendar Days to 5 Business Days and is consistent with the equivalent shortening of the
+Interconnection Customer’s time to elect whether to proceed from 30 Calendar Days to 5 Business
+Days in Section 3.11.3.  This section further reinforces MISO’s obligation to complete all portions
+of the ZG Facilities study by the specified deadline.78
+
+12.  Section 11.1-11.3—Tender, Negotiation, Execution, and Filing Processes
+MISO proposed revisions to Sections 11.1 (Tender), 11.2 (Negotiation), and 11.3
+(Execution and Filing) to list ZGIAs along with the currently referenced GIAs and EGIAs as forms
+of agreements subject to the tender, negotiation, and execution processes.79  In designing the ZG
+Interconnection Service process, MISO determined to align the tender, negotiation, and execution
+
+78  As a practical matter, this will refer only to the portion of the ZG Facilities Study examining Network Upgrades
+because the portion focusing on Interconnection Facilities must be completed on the same timeframe as the ZG
+Impact Analysis whereas the portion of the ZG Facilities Study addressing Network Upgrades cannot begin until
+the impact requiring such Network Upgrade to address is identified through the ZG Impact Assessment.  However,
+as previously noted, this need not delay the tender of a draft ZGIA because the costs of needed Network Upgrades
+would be identified in the ZG Impact Analysis.
+79  Attachment X at Sections 11.1—11.3.
+
+--- PAGE 37 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 37
+
+and filing periods with the timeframes applicable to EGIAs rather than standard GIAs in order to
+expedite the agreement process.  Building on MISO’s previous experience with ERAS, these
+accelerated timeframes represent the amount of time MISO believes is practical to reduce
+timeframes while maintaining a robust, detail-oriented process.  Like EGIAs, ZGIAs are intended
+for ready projects where the load and generator already have an agreement.  Under the ZG
+Interconnection Service process, specific configuration details as between generation and load
+must be planned in advance in order to be included in the Interconnection Request for ZG
+Interconnection Service, and the potential Network Upgrades as more limited than either under
+ERAS or the DPP.  Thus, MISO submits that it is reasonable to accelerate the tender, negotiation,
+execution, and filing processes for ZGIAs to match other expedited process timeframes.
+13. Miscellaneous Revisions to Attachment X
+In addition to the foregoing, MISO also proposes conforming revisions to other portions
+of Attachment X to list the ZGIA or ZG Interconnection Service in Tariff Sections listing other
+types of service or agreements.  Specifically, MISO proposes the following revisions:
+• Section 2.1 (Application of Generator Interconnection Procedures: MISO proposes new
+subsection (j) providing that a Request for ZG Interconnection Service is within the scope
+of the GIP.
+• Section 3.2 (Identification of Types of Services): MISO proposes to add ZG
+Interconnection Service to the list of service types.
+• Section 11.4 (Commencement of Interconnection Activities): MISO proposes to add
+“ZGIAs” where GIAs are listed to clarify that these provisions also apply to ZGIAs.
+• Sections 13 (Confidentiality) including subsections 13.1, 13.4, 13.5.1, 13.5.2, 13.6: MISO
+proposes to add “ZGIAs” where GIAs are listed to clarify that these provisions also apply
+to ZGIAs.
+• List of Appendices to GIP:  MISO proposes to add the JTIQ Commitment Agreement an
+ZG Interconnection Agreement to the list of Appendices.  This is a ministerial change.  The
+JTIQ Commitment Agreement is accepted by the Commission and not in any way changed
+by this filing.  MISO here is simply adding it to the list.
+
+E.
+Attachment X – Appendix 1 (Interconnection Request for a Generating
+Facility).
+
+MISO is proposing to revise this Appendix to integrate the ZGIA framework into the
+interconnection request form.  These revisions include adding new options for interconnection
+requests and interconnection service to accommodate the new ZG Interconnection Service,
+confirm that the amount of ZG Interconnection Service cannot exceed the total amount of its ZG
+Associated Load, requirements to describe the ZG Associated Load and facilities to connect to the
+Transmission System, along with System Protection Facilities or operating procedures to prevent
+injections onto the Transmission System beyond the substation and voltage level where the
+Resource is located, and requirements for the disclosure of additional information for MISO to
+evaluate the request.  The specific changes are:
+
+--- PAGE 38 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 38
+
+• Section 2: MISO has added a new checklist item for a Generating Facility to indicate the
+request is for processing through the ZG Interconnection Service study process.
+
+• Section 3: MISO has added a new checklist item to select ZG Interconnection Service as
+the requested service type.
+
+• Section 4: MISO has added a new row for ZG Interconnection Service to the table of
+required information by type of service requested. This row requires the Interconnection
+Customer to indicate the MW/MVAR of the request and states that the amount of ZG
+Interconnection Service cannot exceed the total Demand of the ZG Associated Load.
+
+• Section 9:  MISO has added new Section 9 requiring the Interconnection Customer to
+provide a description of the ZG Associated Load, including its need by date, and
+connecting facilities, system protection facilities, and any proposed operating
+requirements necessary to prevent injections beyond the interconnecting substation.  This
+information is critically important in evaluating the potential impacts of the Generating
+Facility.
+
+• Attachment A-5: MISO has added a new paragraph below the dynamic modelling
+information required for other types of Interconnection Requests to require
+Interconnection Customers seeking ZG Interconnection Service to provide a detailed
+power flow model that includes all ZG Associated Loads, their Point(s) of Withdrawal and
+the POI for the Interconnection Request, as well as system protection facilities.  This
+provides necessary information for MISO to study the Interconnection Request.
+
+• Attachment A-6: MISO has added a paragraph requiring the one line diagram submitted
+with a ZG Interconnection Request to include all ZG Associated Loads and their Point(s)
+of Withdrawal in order to facilitate accurate study of the Generating Facility and ZG
+Associated Load.
+MISO submits that these requirements are just, reasonable, and necessary to the performance of
+ZG Interconnection Service given the centrality of the configuration of the Generating Facility and
+ZG Associated Load to this new type of service.
+F.
+Attachment X – Appendix 19 (ZG Interconnection Agreement (“ZGIA”)).
+MISO is proposing to add a new Appendix 19 to Attachment X, titled “ZG Interconnection
+Agreement” (“ZGIA”).  This new appendix contains the ZGIA to be executed between the
+Interconnection Customer, the Transmission Owner, and MISO, and contains the material
+provisions relating to ZG Interconnection Service.  At the outset, MISO notes that it developed the
+revisions to its pro forma Generator Interconnection Agreement needed to accommodate ZG
+Interconnection Service to fit as an option within the same pro forma agreement currently used for
+
+--- PAGE 39 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 39
+
+all other types of Interconnection Service—Attachment X, Appendix 6.80  MISO proposes the
+ZGIA a new Appendix 19 to the GIP in this filing as a pragmatic means of avoiding potential
+administrative impacts to the rest of the queue.  MISO currently anticipates that DPP cycles
+scheduled to proceed to GIA in the next 6 months to result in hundreds of GIAs being negotiated,
+executed, and submitted to the Commission for existing service types.  Introducing new revisions
+to the pro forma GIA at this time would complicate this process considerably and risk processing
+delays81  Incorporating these revisions temporarily into a new Appendix 19 avoids these
+complications.  MISO intends to make a subsequent 205 filing, following the acceptance of the
+revisions proposed in this docket to incorporate the provisions of Appendix 19 into Appendix 6
+and remove Appendix 19 from the Tariff82 with a proposed effective date timed to avoid agreement
+execution processing disruptions.
+MISO includes the foregoing discussion because it is necessary to explain the structure of
+the revisions proposed herein.  MISO views the proposed ZGIA as part of its GIA construct rather
+than as a separate agreement. MISO therefore has not proposed to eliminate accepted language
+contained in Appendix 6 or develop a customized agreement tailored only to ZG interconnection
+Service.  MISO therefore discusses the Tariff language herein as revisions to the existing pro forma
+GIA (Attachment X Appendix 6) that ultimately will be housed therein and requests the
+Commission review them in that light.83  To facilitate discussion, revisions to the pro forma GIA
+are grouped by article and appendix below:
+1. Revisions to Recitals
+MISO proposes a new third recital for use in the ZGIA that explains that the output of the
+Generating Facility will be used to serve the ZG Associated Load. Including this recital provides
+clarity about what the ZGIA does at the front of the document.84  MISO also proposes to revise the
+final recital to remove the reference to a Provisional Generator Agreement because MISO has not
+proposed to develop a provisional ZGIA.85
+
+80  Attachment X—Appendix 6 is used for ERIS, NRIS, Generating Facility Replacement, Surplus Interconnection
+Service, etc.
+81  The group nature of DPP studies means that studies complete and GIA processing deadlines become due in waves.
+Putting this version of the pro forma GIA in a new appendix avoids versioning issues that could otherwise impact
+interconnection Customers, especially if compliance is required.
+82  Because Appendix 19 is built on the current version of the pro forma GIA, the subsequent filing would largely be
+ministerial.  MISO would select an effective date that avoids disruption to Interconnection Customers.
+83  Consistent with this approach, MISO has included as Tab D to this filing a redline comparing Attachment X—
+Appendix 19 to Attachment X—Appendix 6.
+84  When merged with Appendix 6, MISO would include this recital in brackets indicating it is to be used only for
+ZGIAs.
+85  MISO has not proposed a provisional ZGIA in part because the ZG Interconnection Process is rapid and in part
+because the ZG Impact assessment is necessary to verify non-injection.  MISO will address how this recital would
+
+--- PAGE 40 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 40
+
+2. Revisions to Article 1—Definitions
+MISO proposes to include the same new and revised definitions in the ZGIA that are
+proposed for inclusion in the GIP.   The proposed  terms and definition language is identical to that
+described above for GIP revisions except for non-substantive edits needed to reflect the location
+of the definition in the ZGIA rather than the GIP.86  MISO refers to its discussion above and asks
+that the Commission accept the definition changes as just and reasonable for the reasons explained
+in the discussion of these changes.
+3. Revisions to Article 2—Effective Date, Term, and Termination
+MISO proposes to include a sentence after the second sentence of Article 2.3.1 clarifying
+that for the purposes of the ZGIA, Commercial Operation refers to supplying Energy to the ZG
+Associated Load and excludes commercial arrangements with other parties.  This provision
+ensures consistency with the limited nature of ZG Interconnection Service and avoids potential
+confusion about what constitutes “Commercial Operation” for a ZG Resource.
+In addition, MISO also proposes to revise Article 2.4.1 regarding cancellation of Network
+Upgrades and Interconnection Facilities in the event of termination to provide that the financial
+impact analysis performed under Section 7.8 of the GIP and the Automatic Withdrawal Penalty
+under Section 7.8.1 are not applicable to ZGIAs.  These revisions are appropriate because ZG
+Interconnection Service does not proceed through the Definitive Planning Phase and thus do not
+pay DPP milestones, DPP Decision Points, or have other Interconnection Requests in their study
+group.  Thus, these GIP provisions would not apply to ZG Interconnection Requests. The revisions
+to Article 2.4.1 thus avoid potential confusion about the applicability of DPP provisions to ZG
+Interconnection Service Requests being terminated after a ZGIA has been issued.  The non-
+applicability of GIP Sections 7.8 and 7.8.1 is reasonable for the additional reason that ZG
+Interconnection Service Requests cannot trigger the need for Network Upgrades beyond the
+interconnecting substation except for system protection facilities at the adjacent substation and
+their Interconnection Requests are not expected to have material impacts on Interconnection
+Customers in the DPP.
+4. Article 4—Revisions to Scope of Service
+MISO also proposes to include new sections 4.1.4 through 4.1.4.2 into the ZGIA and add
+a sentence to the end of Article 4.3 describing ZG Interconnection Service and its Transmission
+Service implications.  The language of these sections is functionally identical to its counterpart in
+GIP Section 3.2.5.1 and is just and reasonable for the same reasons discussed with respect to that
+section.  MISO again notes that the ZGIA does not alter existing requirements, obligations, or
+processes with respect to obtaining Transmission Service.  MISO intends to address Transmission
+
+be made applicable only to ZGIAs once Appendix 19 and Appendix 6 are merged in the subsequent 205 filing
+that merges them.
+86  These changes consists of revising “these GIP” to “the GIP” in Appendix 19 in order to avoid confusion.  The
+change is not intended to be substantive.
+
+--- PAGE 41 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 41
+
+Service, including the provision of Transmission Service to co-located loads, in a separate 205
+filing.
+5. Article 7—Revisions to Metering and Market Registration Requirement
+
+MISO proposes to add a sentence to the end of Article 7.1 of the ZGIA a requirement that
+Interconnection Customers granted ZG Interconnection Service must install and meter separately
+from any metering used for the ZG Associated Load.  In addition, MISO proposes new Article
+7.1.1 establishing a market registration requirement for ZGIAs, as follows:
+
+7.1.1: Market Registration:  An Interconnection customer with a Generating
+Facility granted ZG Interconnection Service greater than 5 MW shall submit a
+completed Market Participant Application pursuant to Section 38.2 et seq. of the
+Tariff (Module C) not later than thirty (30) Calendar Days after the executing or
+requesting the unexecuted filing of this Agreement  Interconnection Customer with
+ZG Interconnection Service shall take all steps required by the MISO Tariff and
+applicable Business Practices Manual to complete registration as a Generation
+Resource, Energy Storage Resource, or Dispatchable Intermittent Resource based
+on its applicable operating characteristics prior to its Commercial Operation Date
+and shall maintain such registration for the duration of its ZG Interconnection
+Service.87
+
+The reason for these requirements is to provide a mechanism for accurately measuring
+flows between the ZG Generator and ZG Associated Load, which facilities charges and credits,
+and serves as a mechanism for verifying compliance with the Interconnection Service limits under
+the ZGIA.  With respect to market registration, Mr. Keyser explains that ZG Resources and their
+ZG Associated Loads are allocated a share of market-distributed costs and that some market
+charges, such as ancillary services for load, and administrative charges, are billed based on gross
+MW volumes in the Day-Ahead and Real-Time markets.88  Requiring ZGIA Resources to register
+as market resources is needed to allow the MW volumes for both load and generation to be captured
+separately, resulting in appropriate billing of these charges.89  Including this requirement also
+allows the ZGIA construct to respond to the concerns the Commission raised in the Show Cause
+Order relating to ensuring that loads participating in co-location arrangements are properly subject
+to transmission service and ancillary service rates.90
+
+6. Revisions to Article 9.7—Outages and Interruptions
+
+87  Attachment X, Appendix 19 at proposed Article 7.1.1.
+88  Keyser at 38.
+89  Id.
+90  Show Cause Order at PP 95-96.
+
+--- PAGE 42 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 42
+
+MISO proposes to add new article 9.7.4.7 establishing the obligation of a Generating
+Facility with ZG Interconnection Service to reduce production of energy under certain conditions.
+The new requirement provides, in relevant part:
+
+…a Generating Facility with ZG Interconnection Service shall:
+a.  Install communications and monitoring equipment to enable it to monitor the
+demand of the ZG Associated Load.
+b. Install equipment to enable the Generating Facility with ZG Interconnection service
+to reduce its injections to a level that does not exceed the Demand of the ZG
+Associated Load within the Transient Tolerance Window.
+c. Cease all injection of Energy onto the Transmission System within the time permitted
+by the Transient Tolerance Window in the event that any Transmission Facility over
+which Energy must flow in order to reach the point of interconnection or Point of
+Withdrawal of the ZG Associated Load trips offline.
+
+The equipment to be used by the Generating Facility with ZG Interconnection Service to
+comply with the requirements of this 9.7.4.7 shall be identified in Appendix A of this
+ZGIA.  Appendix A of this ZGIA shall include a one line diagram showing the Generating
+Facility and associated electrical equipment with appropriate rating and impedance
+information and all the ZG Associated loads including all Point(s) of Withdrawal and the
+Point of Interconnection of the Generating Facility to the Transmission System for the
+Interconnection Request.91
+
+These requirements to install monitoring and communication equipment to monitor the
+demand of the ZG Associated Load, install equipment that enables the Generating Facility to
+reduce injections to a level that does not exceed Deman and to actually reduce its output within
+the Transient Tolerance Window are key features of the ZGIA and necessary to enabling the ZG
+Interconnection Service construct to function as intended.  The premise of ZG Interconnection
+Service is that injections beyond the interconnecting substation can be limited and that energy will
+flow to the ZG Associated Load.  Therefore, if there is a decrease in the ZG Associated Load’s
+demand, it is important to correspondingly reduce the output of the ZG Resource to prevent power
+from flowing out onto the Transmission System.  The requirements of subsection 9.7.4.7(a) ensure
+communications between the ZG Resource and ZG Associated Load.  This works with the
+requirements of 9.7.4.7(b) to install equipment capable of enabling the Generating Facility to
+reduce its Load within the Transient Tolerance Window and the requirements of 9.7.4.7(c) to
+actually cease injections if an element of any Transmission Facility over which energy flows trips
+offline.
+
+MISO has built flexibility into framework for the Interconnection Customer to select the
+equipment that it believes is most appropriate for its configuration by listing this in its
+Interconnection Request.  MISO will verify that the ZG Resource can limit injections as proposed
+
+91  Attachment X Appendix 19 at proposed Article 9.7.4.7.
+
+--- PAGE 43 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 43
+
+and will document the required equipment and configuration in Appendix A of the GIA.  Article
+9.7.4.7 makes this an enforceable term of the ZG Interconnection Service granted.
+
+In addition, MISO proposes to add a sentence at the end of Article 9.7.5 (Requirements for
+Protection) clarifying that for ZG Resources, transient injections do not violate the requirements
+of that article as long as they remain within the Transient Tolerance Window.  This language is
+reasonable because it recognizes that the Generating Facility may not be able to switch of
+instantaneously and instead sets its obligation to be consistent with the Transient Tolerance
+Window, which is incorporated into the ZG Impact Analysis.  This sentence references the
+Business Practices Manual for Large Load given the technical nature of the requirement.  This
+appropriately balances the certainty providing the parameters of the Transient Tolerance Window
+established through its definition in the Tariff with needed flexibility to define how the Transient
+Tolerance Window is applied under specific conditions as MISO develops its Business Practices
+Manual revisions through the stakeholder process.
+
+7. Revisions to Article 11.3—Network Upgrades, System Protections
+Facilities, and Distribution Upgrades
+MISO proposes to include two new sentences at the end of section 11.3 stating that the
+Generating Facility with ZG Interconnection Service must connect at the same voltage level and
+substation as the Point(s) of Withdrawal for the ZG Associated Load it serves and not require the
+construction of Network Upgrades beyond the substation where the Point of Interconnection is
+located other than System Protection Facilities.  This language restates the requirements of GIP
+Section 3.11(ii) and (iii) for a proposed Generating Faciltiy, ensuring that these requirements are
+reflected in the resulting ZGIA.
+8. ZGIA Appendices
+MISO proposes several revisions to Appendix A in order to implement ZG Interconnection
+Service.  First, MISO proposes to include a new Section 2 that identifies the MW, Point(s) of
+Withdrawal and need by date of the ZG Associated Load.  This section requires a single line
+diagram illustrating the connections between the Generating Facility, ZG Associated Load, and the
+Transmission System and the identification of the equipment and configurations that prevent
+injections outside of the Transient Tolerance Window.  This section reflects the technical
+requirements applicable to ZG Interconnection Service and makes the studied equipment and
+configuration a part of the ZGIA that can be enforced.  This requirement works with MISO’s
+material modification rules in the same way that section 1 operates to ensure that changes to the
+configuration of the AG Associated Load that could affect the impacts of the ZG Interconnection
+Service as studied are subject to the same modification rules applicable to the Generating Facility
+under Section 1 of Appendix A.  This is necessary and appropriate given the importance of these
+configuration details to the provision of ZG Interconnection Service.
+In appendix B, MISO proposes new milestone 1h requiring the Interconnection Customer
+to submit a completed Marekt Participant Application within 30 Calendar days after execution or
+the request for an unexecuted filing of the ZGIA.  MISO also proposes a milestone 18 requiring
+
+--- PAGE 44 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 44
+
+the Interconnection Customer to complete the market registration process before its commercial
+operation date.  These milestones implement the requirements proposed for inclusion in ZGIA
+Article 7.1.1.  MISO proposes an obligation to begin the market registration process as well as a
+required completion date because, in MISO’s experience, market registration can take several
+months from the time a completed application is submitted.  As explained above, market
+registration is needed in order to inform transmissions service and ancillary services rates
+applicable to the ZG Associated Load. Therefore the process must be completed prior to
+Commercial Operation.  Requiring that the application be started early in the process avoids
+surprises to the Interconnection Customer near the end of the development process that could delay
+Commercial Operation because it allows MISO and the Interconnection Customer to work together
+to resolve any deficiencies or other problems with the market registration process early to avoid
+potential delays.  This is consistent with the approach accepted as part of MISO’s Joint Targeted
+Interconnection Queue framework, which imposes similar market application submission and
+completion requirements.92
+9. Miscellaneous  Revisions
+MISO has revised references to the “GIA” to instead refer to the “ZGIA” or “GIA or ZGIA”
+as appropriate in order to correctly identify this agreement is a ZGIA.  These revisions do not have
+a substantive impact but do provide clarity about the agreement being referred to.
+H.
+Attachment FF (Transmission Expansion Planning Protocol).
+MISO is proposing to revise this Attachment to require contractual commitments
+associated with ZG Associated Load to include demonstration that both (1) an executed agreement
+between the entity with the ZG Associated Load and the Generating Facility with the associated
+ZG Interconnection Service is in place and spans at least the five year planning horizon; and (2)
+the Generating Facility associated with the ZG Associated Load has achieved Commercial
+Operation by the time that the transmission solution would otherwise need to be in service.  The
+proposed revisions state that, in the event that the Generating Facility associated with the ZG
+Associated Load fails to achieve Commercial Operation by the date that the transmission solution
+would otherwise need to be in service or the contract between the ZG Associated Load and the
+associated Generating Facility terminates, then the Transmission Provider may require the
+applicable Load Serving Entity to delay the in-service date of ZG Associated Load.
+I.
+Schedule 53 (Seasonal Accredited Capacity Calculation).
+MISO is proposing to revise this Schedule to provide that certain ZG Resources, either (i)
+those that do not have at least 60 days of Real-Time offered availability when designed for RAR
+over the last three (3) years for each Season or (ii) Resources on Catastrophic Generator outage
+during a season they are designated for RAR, will not have a SAC value that exceeds the identified
+Coincident Peak Demand forecast of the ZG Associated Load, if any.
+
+92  See, Tariff Attachment X—Appendix 18 (JTIQ Commitment Agreement) at Article 4.1.
+
+--- PAGE 45 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 45
+
+IV.
+STAKEHOLDER ENGAGEMENT
+MISO has engaged in detailed discussions with stakeholders on Large Load issues since
+2024 through various stakeholder entities and workshops.  MISO first discussed Large Loads with
+stakeholders in the context of Expedited Project Review process improvements at the Planning
+Advisory Committee (“PAC”) and Planning Subcommittee (“PSC”) in 2024 and 2025.  Moreover,
+since 2024, MISO has discussed coordinating the MISO Transmission Expansion Plan (“MTEP”)
+and Definitive Planning Phases processes to accommodate Large Loads at the PSC.  MISO
+additionally discussed Large Load citing methodology at the November 18, 2025 Futures Redesign
+Workshop.
+MISO first introduced ZGIA to stakeholders at the PSC on December 3, 2025.93  At the
+meeting, MISO provided a high-level overview of the ZGIA concept and solicited feedback from
+stakeholders.  MISO subsequently discussed the proposal at the PAC and the Large Load Working
+Group.  At the January 21, 2026 PAC, MISO described how ZGIA resource configurations may
+lead to reduced transmission network upgrade needs and detailed the stakeholder feedback
+submitted in response to the December 3, 2025 PSC presentation.  At the February 25, 2026 PAC,
+MISO began laying out a proposal for formalizing ZGIA by providing the interconnection and
+planning elements of the proposal, the first two elements of the proposal. MISO requested
+stakeholder feedback on the proposal.  At the first LLWG meeting on April 20, 2026, MISO
+described the elements of the ZGIA proposal relating to resource adequacy and markets and
+reliable operations, the last two elements of the proposal, and requested stakeholder feedback.
+MISO also provided materials outlining MISO’s response to previously submitted stakeholder
+feedback.
+At the April 22, 2026 PAC, MISO shared draft Tariff language with stakeholders reflecting
+the interconnection and planning elements of the ZGIA proposal.  The draft Tariff language
+included specifics that originated from stakeholder feedback, including language ensuring that a
+ZGIA disconnects if the facilities connecting it to its associated load.  MISO also provided
+materials outlining MISO’s response to previously submitted stakeholder feedback.  MISO
+requested stakeholder feedback on the proposed draft Tariff language.
+At the May 14, 2026 LLWG, MISO shared draft Tariff language reflecting the elements
+ZGIA proposal relating to resource adequacy and markets and reliable operations.  The draft Tariff
+language incorporated stakeholder feedback regarding planning studies and multiple Points of
+Injection.  Specifically, in response to stakeholder feedback regarding MISO’s initial proposal
+allowing multiple POIs, MISO proposed only allowing multiple POIs if the ZGIA is located at one
+of the stations, i.e. Points of Withdrawal, of a Large Load Campus.  MISO requested stakeholder
+feedback on the draft Tariff language.
+At the May 27, 2026 PAC, MISO shared updated draft Tariff language with stakeholders
+on the interconnection and planning elements of the ZGIA proposal.  The draft Tariff language
+
+93  See Keyser, Attachment A – Table of Stakeholder Meetings.
+
+--- PAGE 46 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 46
+
+incorporated stakeholder feedback, including language specifying further detail of the ZGIA
+interconnection studies, language clarifying that ZGIAs do not supersede state jurisdiction, and
+revising the POI rules.  MISO additionally decided not to pursue the campus approach in response
+to stakeholder feedback.  MISO requested stakeholder feedback on the proposed draft Tariff
+language.  At the June 10, 2026 LLWG, MISO reviewed the final ZGIA proposal with stakeholders
+and provided draft Tariff language that incorporated stakeholder feedback.  At the June 29, 2026
+LLWG, MISO continued the dialogue regarding the ZGIA proposal to provide stakeholders an
+opportunity to provide feedback on any remaining concerns and in response to the Show Cause
+Order.
+At the July 15, 2026 PAC, MISO stated in its Liaison Report that the MISO Steering
+Committee approved reassigning the ZIGA issue to the LLWG.  The Liaison Report noted that it
+received feedback in June on ZIGA Tariff redlines and that it posted a feedback response.  For the
+July 16, 2026 LLWG meeting, MISO posted ZGIA redlines for stakeholders to review.  At the July
+27, 2026 LLWG, MISO focused on other large load issues, but it provided a preliminary filing
+timeframe that include the ZGIA filing.  MISO discussed ZGIA at the August 12, 2026 LLWG and
+provided updated Tariff redlines for stakeholders to review.
+V.
+DOCUMENTS SUBMITTED IN THIS FILING
+In addition to this Transmittal Letter, this submission includes:
+Tab A – Redline Tariff;94,95
+Tab B – Clean Tariff;
+Tab C – Prepared Direct Testimony of Marc Keyser; and
+Tab D – Redline ZGIA to pro forma GIA (for informational purposes.
+
+94  Language currently pending before the Commission in the following, unrelated dockets is highlighted in yellow:
+Docket Nos.  ER24-2046-003, ER26-2974-000, and ER26-3267-000.  MISO requests that the Commission treat
+such highlighted language as subject to the outcomes of those pending proceedings.  MISO commits to file any
+revisions to this highlighted language as necessary to comply with any Commission orders in those proceedings.
+In addition, MISO has not included language that has future effective dates of:  6/1/2027 in Docket No. ER26-
+1882-001, 6/12/2028 in Docket No. ER26-2825-000, 6/1/2029 in Docket No. ER22-1640-003, 9/1/2027 in
+Docket No. ER26-2974-000, 9/1/2027 in Docket No. ER25-1886-002 and 12/31/9998 in Docket No. ER26-1915-
+001.  If needed, MISO commits to file any revisions to comply with any Commission orders in these proceedings
+and MISO commits to make subsequent filings with the Commission to reflect the most up-to-date version of the
+then-current Tariff provisions prior to the effective dates of the language.
+95  In this filing, MISO reconciled both the GIP (GIP Version 187) and ZGIA (GIA Version 111) to reflect the most
+current tariff language, which now incorporates provisions filed in compliance with FERC Order Nos. 2023 and
+2023-A.  MISO requests that the Commission treat such pending language in Docket No. ER24-2406-003 as
+subject to the outcome of the pending proceeding.  Additionally, MISO commits to submit any necessary revisions
+to the pending language to comply with any Commission orders in the proceeding.
+
+--- PAGE 47 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 47
+
+VI.
+EFFECTIVE DATE
+MISO requests an effective date of October 18, 2026 for the Tariff revisions submitted
+herein, which is not less than 60 days nor more than 120 days, after the filing date.  This effective
+date will allow the revisions proposed herein to be effective expeditiously for stakeholders
+currently seeking a process to facilitate the types of co-location arrangements that this filing
+enables.
+VII.
+COMMUNICATIONS
+MISO respectfully requests waiver of Rule 203(b)(3) of the Commission’s Rules of
+Practice and Procedure, 18 C.F.R. § 385.203(b)(3) (2026), to the extent necessary to permit the
+designation of more than two persons for service on behalf of MISO in this proceeding and requests
+all communications related to this filing be directed to:
+Christopher D. Supino
+Managing Senior Corporate Counsel
+Michael Kessler
+Managing Assistant General Counsel
+Midcontinent Independent System
+Operator, Inc.
+720 City Center Drive
+Carmel, Indiana 46032
+Telephone: (317) 249-5400
+csupino@misoenergy.org
+mkessler@misoenergy.org
+
+James C. Holsclaw
+Calfee, Halter & Griswold LLP
+3900 Salesforce Tower
+111 Monument Circle
+Indianapolis, Indiana 46204
+Telephone: (317) 308-4266
+jholsclaw@calfee.com
+
+VIII.
+NOTICE AND SERVICE
+MISO has served a copy of this filing electronically upon all parties listed on the
+Commission’s eService list, and upon all Tariff customers, MISO Members, Member
+representatives of Transmission Owners and non-Transmission Owners, as well as all state
+commissions within the MISO Region and the Organization of MISO States.  The filing has been
+posted electronically on MISO’s website at https://www.misoenergy.org/legal/ferc-filings/ for
+other interested parties in this matter.
+
+--- PAGE 48 ---
+The Honorable Debbie-Anne Reese
+August 18, 2026
+Page 48
+
+IX.
+CONCLUSION
+For all of the foregoing reasons, MISO respectfully requests that the Commission accept
+this filing and grant waiver of any Commission regulations the Commission deems applicable, but
+not specifically addressed above in order for the Commission to accept it as proposed.
+Respectfully submitted,
+
+/s/ Christopher D. Supino
+Christopher D. Supino
+Managing Senior Corporate Counsel
+Michael Kessler
+Managing Assistant General Counsel
+Midcontinent Independent System
+Operator, Inc.
+720 City Center Drive
+Carmel, Indiana 46032
+Telephone: (317) 249-5400
+mkessler@misoenergy.org
+csupino@misoenergy.org
+
+James C. Holsclaw
+Calfee, Halter & Griswold LLP
+3900 Salesforce Tower
+111 Monument Circle
+Indianapolis, Indiana 46204
+Telephone: (317) 308-4266
+jholsclaw@calfee.com
+
+Attorneys for the Midcontinent Independent
+System Operator, Inc.

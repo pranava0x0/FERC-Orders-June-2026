@@ -43,7 +43,7 @@ const norm = (x) => x.replace(/[​‌‍﻿⁠]/g, "").replace(/---\s*PAGE\s*\d
 const BANNED = /\b(delve|leverage|robust|seamless|intricate|multifaceted|underscore|pivotal|realm|tapestry)\b/i;
 const PHRASE = /it'?s worth noting|in today'?s|plays? a (crucial|key|vital|pivotal) role/i;
 const EMDASH = /—|–/; // em/en dash in prose — write ranges and asides as "to" / commas
-function lintProse(label, text) {
+export function lintProse(label, text) {
   if (!text) return [];
   const out = [];
   const m = text.match(BANNED); if (m) out.push(`${label}: AI-register word "${m[0]}"`);

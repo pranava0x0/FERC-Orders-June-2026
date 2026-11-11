@@ -1,0 +1,509 @@
+{
+  "compliance-er26-3515-pjm": [
+    {
+      "title": "Transmittal: what survived the October order",
+      "start": 1,
+      "end": 2,
+      "theme": "Registry scope",
+      "take": "PJM asks for an October 12 effective date for the definition and registry. It strips out the two fields that would have recorded a customer's new capacity and allocated backstop megawatts. The filing does not revive the rejected curtailment service.",
+      "quote": "the amount of BYONC brought by a particular Large Load and the allocated RBP UCAP MW quantity",
+      "pg": 2
+    },
+    {
+      "title": "I–III. What PJM submitted and served",
+      "start": 2,
+      "end": 5,
+      "theme": "Filing record",
+      "take": "PJM submits the same tariff and reliability agreement changes in marked and clean copies. The service section says PJM notified its members and state utility commissions. The conclusion asks for acceptance; it does not establish that FERC accepted this filing.",
+      "quote": "PJM respectfully requests that the Commission accept this compliance filing",
+      "pg": 4
+    },
+    {
+      "title": "Attachment A: how to read the marked text",
+      "start": 6,
+      "end": 65,
+      "theme": "Registry scope",
+      "take": "The redlines show where PJM placed the surviving definition and reporting rules. Use the clean copy starting on PDF page 66 to read the resulting language; the reproduced definitions surrounding the edits are not all new rules.",
+      "quote": "all affiliated load facilities within a one-mile radius will be considered a single electrical site",
+      "pg": 49
+    },
+    {
+      "title": "Attachment B: tariff definition",
+      "start": 66,
+      "end": 86,
+      "theme": "Registry scope",
+      "take": "The clean Open Access Transmission Tariff points to the Reliability Assurance Agreement for the definition. Page 109 gives the threshold and the test for grouping affiliated facilities.",
+      "quote": "“Large Load” shall have the meaning provided in the Reliability Assurance Agreement.",
+      "pg": 68
+    },
+    {
+      "title": "Attachment DD-4: who keeps the registry",
+      "start": 87,
+      "end": 90,
+      "theme": "Registry reporting",
+      "take": "PJM maintains the registry under Schedule 11. Electric distributors coordinate with PJM and supply information they consider appropriate, including applicable retail tariffs and contracts. Section I is reserved.",
+      "quote": "any information or data the Electric Distributor believes appropriate to facilitate an accurate Large Load Registry",
+      "pg": 89
+    },
+    {
+      "title": "RAA Article 1: what counts as one site",
+      "start": 91,
+      "end": 122,
+      "theme": "Registry scope",
+      "take": "The threshold is 50 MW of cumulative peak demand at one electrical site, even behind several interconnection points. Affiliated load facilities within a one-mile radius count as one site under the stated configurations.",
+      "quote": "a cumulative peak load of 50 megawatts or greater at a single electrical site behind one or more points of interconnection",
+      "pg": 109
+    },
+    {
+      "title": "Schedule 11.B.1(a): what must be reported",
+      "start": 123,
+      "end": 124,
+      "theme": "Registry reporting",
+      "take": "Entities bound by the Operating Agreement must submit, or arrange submission of, data about each large load they serve. Fields include location, dates for each load increment, peak MW and ramp schedule, telemetry, and backup generation with fuel and permit limits.",
+      "quote": "Backup generation (MW), including fuel type and relevant permitting limitations",
+      "pg": 124
+    },
+    {
+      "title": "Schedule 11.B.1(b)–(d): validation and access",
+      "start": 124,
+      "end": 124,
+      "theme": "Registry access",
+      "take": "PJM may check the data with the distributor, transmission owner or customer. The text names regulators, system participants and the market monitor as possible recipients under safeguards. It does not explicitly list state consumer advocate offices.",
+      "quote": "Information maintained in the Large Load registry may be available to Authorized Commissions",
+      "pg": 124
+    },
+    {
+      "title": "Schedule 11.B.1(e): what the public can see",
+      "start": 124,
+      "end": 124,
+      "theme": "Registry access",
+      "take": "PJM would post aggregate data by distributor zone or area where possible. Confidentiality protections still apply; this is not a public list of individual sites and contracts.",
+      "quote": "aggregated by Electric Distributor zone/area, where possible",
+      "pg": 124
+    },
+    {
+      "title": "Schedule 11.B.2: deadlines and changes of supplier",
+      "start": 124,
+      "end": 125,
+      "theme": "Registry reporting",
+      "take": "For loads in service before June 1, 2027, the serving or contracted entity must report by March 1, 2027. For loads entering service on or after June 1, it must report before startup. It must promptly report later changes, including transfer of the right to serve the load.",
+      "quote": "before the in-service date of the Large Load",
+      "pg": 125
+    }
+  ],
+  "refiling-er27-454-pjm-backstop": [
+    {
+      "title": "Transmittal: why the backstop has a new docket",
+      "start": 1,
+      "end": 3,
+      "theme": "Filing record",
+      "take": "PJM says the November 9 filing repeats the substance of its October 29 proposal. It changed the electronic filing code to identify a new section 205 rate filing, rather than compliance with an earlier order.",
+      "quote": "updates the eTariff metadata code to reflect this filing as a FPA section 205 filing rather than a compliance filing",
+      "pg": 2
+    },
+    {
+      "title": "I. What FERC left unresolved",
+      "start": 3,
+      "end": 5,
+      "theme": "Filing record",
+      "take": "The September order set three questions for paper hearing: who pays, what collateral protects against default and who pays after exit. PJM offers revisions under section 205 and consents to FERC severing individual provisions if necessary.",
+      "quote": "modify, reject, or sever discrete elements of the proposed Tariff revisions while accepting the remainder of the filing",
+      "pg": 5
+    },
+    {
+      "title": "II.A.1. Which growth counts",
+      "start": 5,
+      "end": 11,
+      "theme": "Cost allocation",
+      "take": "PJM replaces its load-adjustment proxy with distributors' reports of incremental peak demand between summer 2026 and the expected 2028/29 peak. A qualifying agreement backs each identified load. This one-time measurement for backstop costs is initially separate from the ongoing registry.",
+      "quote": "the information required under this proposal will initially be reported separately from the Large Load Registry",
+      "pg": 11
+    },
+    {
+      "title": "II.A.2. From regional need to a zone's share",
+      "start": 11,
+      "end": 13,
+      "theme": "Cost allocation",
+      "take": "PJM proposes to assign the initial target to zones or areas in proportion to incremental large-load growth. Qualifying bilateral capacity and peak shaving can reduce procurement and a zone's allocation. Croop's affidavit works through the arithmetic.",
+      "quote": "in proportion to each zone/area’s share of the total incremental Large Load growth",
+      "pg": 11
+    },
+    {
+      "title": "II.A.3. From a zone to a supplier and retail customer",
+      "start": 13,
+      "end": 16,
+      "theme": "Retail jurisdiction",
+      "take": "A state or retail regulator can direct the allocation among load-serving entities. With no reported allocation, PJM would use each supplier's share of daily unforced capacity obligation. The state retains authority over recovery from retail customers.",
+      "quote": "PJM does not propose, and lacks authority, to dictate how any LSE subsequently allocates or recovers those costs from retail customers",
+      "pg": 16
+    },
+    {
+      "title": "II.B.1. How PJM prices default protection",
+      "start": 16,
+      "end": 24,
+      "theme": "Credit and default",
+      "take": "PJM proposes collateral equal to 40% of discounted total payment obligations. Kelly compares posting costs with expected losses borne by other members. At an assumed $555/MW-day clearing price, the illustration produces about $686,000/MW; it is neither a clearing price nor a bill.",
+      "quote": "40% of the net present value of the total RBP payment obligation",
+      "pg": 23
+    },
+    {
+      "title": "II.B.1. Which resources require security",
+      "start": 24,
+      "end": 27,
+      "theme": "Credit and default",
+      "take": "The uniform rate would apply only to committed capacity in commercial operation by the start of the relevant delivery year, excluding rescinded MW. PJM describes how it could release excess collateral as the payment obligation declines.",
+      "quote": "no collateral would be required for RBP Resources not in service for that Delivery Year",
+      "pg": 24
+    },
+    {
+      "title": "II.B.2–3. When and how to post collateral",
+      "start": 27,
+      "end": 29,
+      "theme": "Credit and default",
+      "take": "The initial allocation would be reported 120 days before 2028/29; suppliers still post collateral 45 days before delivery. PJM adds surety bonds to cash and letters of credit, giving suppliers another way to secure the obligation.",
+      "quote": "LSEs must post RBP Collateral at least 45 days before the start of a Delivery Year",
+      "pg": 27
+    },
+    {
+      "title": "II.B.4–5. Review and double counting",
+      "start": 29,
+      "end": 31,
+      "theme": "Credit and default",
+      "take": "PJM proposes to review collateral after all committed resources enter commercial operation and take any recommendations to members. It would exclude payments for those resources from the separate Peak Market Activity calculation.",
+      "quote": "shall not be included in Peak Market Activity",
+      "pg": 31
+    },
+    {
+      "title": "II.C. Who pays if an entity leaves PJM",
+      "start": 31,
+      "end": 40,
+      "theme": "Exit liability",
+      "take": "PJM puts the continuing obligation on the withdrawing load-serving entity, including when a transmission owner's exit forces it to leave. A later rate filing would set the terms and amounts. The supplier could seek recovery from another entity responsible for the exit.",
+      "quote": "subject to a rate filing with the Federal Energy Regulatory Commission that details the specific terms and amounts owed",
+      "pg": 36
+    },
+    {
+      "title": "III.A. Municipal and cooperative opt-out",
+      "start": 40,
+      "end": 41,
+      "theme": "Cost allocation",
+      "take": "PJM proposes to remove the opt-out available solely because a distributor is not state-regulated. FERC had questioned whether similarly situated large loads would escape costs because of the type of distributor serving them.",
+      "quote": "eliminate the provision that permits an Electric Distributor",
+      "pg": 41
+    },
+    {
+      "title": "III.B. Peak shaving as an offset",
+      "start": 41,
+      "end": 43,
+      "theme": "Demand flexibility",
+      "take": "PJM would let qualifying peak shaving reduce the procurement target only with a commitment of at least five years. This matches the minimum duration of a bilateral supply offset.",
+      "quote": "committed to participate in the applicable Peak Shaving Adjustment program for a minimum term of five years",
+      "pg": 42
+    },
+    {
+      "title": "III.C. Correcting an incomplete offer",
+      "start": 43,
+      "end": 45,
+      "theme": "Seller eligibility",
+      "take": "A seller would have five calendar days from notification to cure a deficiency, even if the submission window closes before those five days are up.",
+      "quote": "five calendar days from receipt of a deficiency notice to cure any deficiencies identified by PJM",
+      "pg": 44
+    },
+    {
+      "title": "III.D. When bilateral capacity reduces the target",
+      "start": 45,
+      "end": 50,
+      "theme": "Demand flexibility",
+      "take": "PJM limits the offset to the load's capacity obligation. A planned demand resource or distributed aggregation must identify its supporting customers and show incremental capability rather than count the same existing capacity twice.",
+      "quote": "the Qualifying RBP Offset UCAP MW must be the subject of a bilateral agreement with a Large Load",
+      "pg": 47
+    },
+    {
+      "title": "III.E. Which sellers must prove site control",
+      "start": 50,
+      "end": 53,
+      "theme": "Seller eligibility",
+      "take": "PJM would reserve the separate three-year, 100% site-control showing for projects outside current or completed PJM interconnection studies. A project already showing site control in that process would avoid duplicating the proof.",
+      "quote": "only projects that are not currently undergoing, and have not previously completed, an interconnection study",
+      "pg": 52
+    },
+    {
+      "title": "III.F. How much capacity to buy",
+      "start": 53,
+      "end": 56,
+      "theme": "Procurement target",
+      "take": "PJM keeps 2028/29 as its reference year but uses updated load forecasts and capacity ratings. The initial target would be the smaller of the recalculated shortfall and the region's aggregate large-load quantity, in unforced capacity MW.",
+      "quote": "the lesser of the calculated value of the 2028/2029 Delivery Year shortage and the region-wide total of Large Load MW",
+      "pg": 54
+    },
+    {
+      "title": "III.G. When a committed resource must offer",
+      "start": 56,
+      "end": 58,
+      "theme": "Seller obligations",
+      "take": "PJM proposes a must-offer obligation beginning with the first delivery year for which a resource is committed and expected in service. The text makes a timing exception for certain 2030/31 resources without a prior auction notice of intent.",
+      "quote": "That must offer obligation, regardless of resource type, will continue through the end of the term of the RBP commitment",
+      "pg": 57
+    },
+    {
+      "title": "IV. The conditional waiver",
+      "start": 58,
+      "end": 61,
+      "theme": "Reliability and timing",
+      "take": "If the December auction produces a third qualifying shortfall, PJM asks to waive the existing investigation and backstop-auction filing requirements. It argues the planned procurement addresses the shortage. This is a request for a one-time waiver.",
+      "quote": "This one-time prospective waiver satisfies all four of the Commission’s waiver criteria",
+      "pg": 60
+    },
+    {
+      "title": "V. Stakeholder consultation",
+      "start": 61,
+      "end": 61,
+      "theme": "Consultation",
+      "take": "PJM reports consulting its Members Committee and transmission owners on October 22. Its account of consultation is not a stakeholder endorsement of the filing.",
+      "quote": "PJM consulted the Members Committee and the Transmission Owners on October 22, 2026",
+      "pg": 61
+    },
+    {
+      "title": "VI. A March start and a longer offer window",
+      "start": 61,
+      "end": 63,
+      "theme": "Reliability and timing",
+      "take": "PJM requests a January 29 ruling and early effectiveness for the distributor reporting rule; most provisions would take effect February 28. PJM proposes starting March 1 with a four-week offer window. These are proposed dates.",
+      "quote": "extend the RBP Sell Offer window by one week so that it will be open for a total of four weeks",
+      "pg": 62
+    },
+    {
+      "title": "VII–X. Filed evidence and relief requested",
+      "start": 64,
+      "end": 66,
+      "theme": "Filing record",
+      "take": "A marked tariff, a clean tariff and two affidavits accompany the letter. Kelly supports the credit calculations; Croop explains the procurement target and allocation. PJM asks FERC to accept the revisions.",
+      "quote": "PJM respectfully requests that the Commission accept the proposed Tariff revisions",
+      "pg": 66
+    }
+  ],
+  "attachment-er27-454-a": [
+    {
+      "title": "Marked definitions and auction rules",
+      "start": 1,
+      "end": 43,
+      "theme": "Seller obligations",
+      "take": "Attachment A shows edits against the earlier tariff. It reproduces the definitions and auction sections containing the changes, including eligibility and offer obligations. For the proposed wording without deleted text, use Attachment B.",
+      "quote": "Eligibility for Participation in RPM Auctions",
+      "pg": 33
+    },
+    {
+      "title": "Marked §18.1–18.3A: costs and the snapshot",
+      "start": 44,
+      "end": 51,
+      "theme": "Cost allocation",
+      "take": "The redline locates the new distributor reporting requirement alongside the target calculation, qualifying offsets and allocation rules. Parallel clean language begins at page 45 of Attachment B.",
+      "quote": "the quantity and identity of incremental Large Load that is supported by an electric service obligation",
+      "pg": 51
+    },
+    {
+      "title": "Marked §18.4–18.6: the procurement",
+      "start": 52,
+      "end": 61,
+      "theme": "Seller obligations",
+      "take": "The marked seller rules cover procurement scope, offers, selection and committed resources' obligations. The clean text distinguishes new conditions from text PJM proposes to delete.",
+      "quote": "The Reliability Backstop Procurement Process",
+      "pg": 53
+    },
+    {
+      "title": "Marked §18.7–18.8: exit and credit",
+      "start": 62,
+      "end": 68,
+      "theme": "Exit liability",
+      "take": "The redline replaces the exiting transmission owner with the withdrawing load-serving entity as the party responsible for the remaining charges. Section 18.8 then marks the changes to collateral.",
+      "quote": "such Load Serving Entity shall be responsible for the remainder of the RBP Charges allocated to it",
+      "pg": 62
+    }
+  ],
+  "attachment-er27-454-b": [
+    {
+      "title": "Definitions: charges, collateral and obligations",
+      "start": 1,
+      "end": 32,
+      "theme": "Cost allocation",
+      "take": "The clean definitions distinguish daily RBP Charges from RBP Obligation, the retail regulator's allocation of unforced capacity MW among suppliers. Both settlement credits and charges may change sign.",
+      "quote": "the $/day value of the total RBP Settlement Credits, positive or negative",
+      "pg": 17
+    },
+    {
+      "title": "§5.5, §6.6, §6.6A: auction participation",
+      "start": 33,
+      "end": 43,
+      "theme": "Seller obligations",
+      "take": "The auction provisions place committed backstop capacity into PJM's existing auction system. The offer obligation runs through the term of the commitment and is subject to the stated exceptions.",
+      "quote": "all of the RBP UCAP MW that is committed in the Reliability Backstop Procurement through the term of the commitment",
+      "pg": 34
+    },
+    {
+      "title": "§18, §18.1: procurement size",
+      "start": 44,
+      "end": 45,
+      "theme": "Procurement target",
+      "take": "The proposed one-time procurement begins in 2027. Its initial target cannot exceed either the updated 2028/29 auction shortfall or the reported large-load quantity expressed in unforced capacity.",
+      "quote": "the UCAP equivalent of the aggregate region-wide Large Load MW quantity reported by the Electric Distributor",
+      "pg": 45
+    },
+    {
+      "title": "§18.2: qualifying bilateral offsets",
+      "start": 46,
+      "end": 47,
+      "theme": "Demand flexibility",
+      "take": "A qualifying new capacity resource must meet the tariff's eligibility requirements. The tariff allows several kinds of supporting evidence: a bilateral contract for at least five delivery years, qualifying self-supply, or a signed commitment for demand response or distributed generation.",
+      "quote": "signed bilateral contracts for Qualifying RBP Offset UCAP MW",
+      "pg": 47
+    },
+    {
+      "title": "§18.3: cost allocation and credits",
+      "start": 48,
+      "end": 49,
+      "theme": "Retail jurisdiction",
+      "take": "Zonal shares reflect load growth and eligible offsets. If a distributor reports an allocation from its retail regulator, PJM uses those MW to bill suppliers. If it does not, capacity obligations supply the default shares.",
+      "quote": "Electric Distributors may report updated RBO MW to the Office of the Interconnection after the initial allocation is reported",
+      "pg": 49
+    },
+    {
+      "title": "§18.3A: the distributor's report",
+      "start": 50,
+      "end": 50,
+      "theme": "Registry reporting",
+      "take": "At least seven days before the procurement, each distributor outside a Fixed Resource Requirement service area must report the identity and quantity of incremental large load supported by an agreement. This report establishes backstop exposure, not registry membership.",
+      "quote": "the quantity and identity of incremental Large Load that is supported by an electric service obligation, construction commitment, or similar agreement",
+      "pg": 50
+    },
+    {
+      "title": "§18.4: offer and selection windows",
+      "start": 51,
+      "end": 51,
+      "theme": "Reliability and timing",
+      "take": "The proposed tariff gives sellers four weeks to submit offers and allows six weeks after that for clearing and selection. These intervals run from the actual procurement, not the filing date.",
+      "quote": "The Reliability Backstop Procurement offer submission window for RBP Sell Offers shall open for four weeks",
+      "pg": 51
+    },
+    {
+      "title": "§18.5: eligibility, selection and settlement",
+      "start": 52,
+      "end": 58,
+      "theme": "Seller eligibility",
+      "take": "PJM sets eligibility and evidence requirements by resource type, then ranks offers by levelized cost. The $555/MW-day ceiling applies to the MW-weighted average levelized cost of the selected offers, not a guaranteed price for each resource.",
+      "quote": "The MW-weighted average of the levelized procurement cost of all selected RBP Sell Offers shall not exceed $555/MW-day UCAP",
+      "pg": 57
+    },
+    {
+      "title": "§18.6: delivery and shortfall charges",
+      "start": 59,
+      "end": 60,
+      "theme": "Seller obligations",
+      "take": "Committed capacity has an auction offer obligation. Undelivered MW lose daily backstop settlement credits and can incur shortfall charges during the fixed 15-year period.",
+      "quote": "will not be compensated for the undelivered megawatts via RBP Settlement Credits",
+      "pg": 60
+    },
+    {
+      "title": "§18.7: exiting suppliers",
+      "start": 61,
+      "end": 61,
+      "theme": "Exit liability",
+      "take": "A supplier leaving PJM would still owe its allocated charges, even if another entity's departure caused the exit. A FERC rate filing must specify the terms and the amount.",
+      "quote": "subject to a rate filing with the Federal Energy Regulatory Commission that details the specific terms and amounts owed",
+      "pg": 61
+    },
+    {
+      "title": "§18.8: collateral on both sides of the auction",
+      "start": 62,
+      "end": 66,
+      "theme": "Credit and default",
+      "take": "Sellers post security before offering; losing sellers get it back within five business days after clearing. Suppliers assigned charges secure their share under a separate formula. A transfer does not release the original supplier's collateral until the successor posts and unpaid invoices are settled.",
+      "quote": "Any RBP Collateral posted by transferor shall be returned once Transferee has posted the RBP Collateral",
+      "pg": 66
+    }
+  ],
+  "attachment-er27-454-c": [
+    {
+      "title": "I–II. Why secure a long-term payment stream?",
+      "start": 1,
+      "end": 4,
+      "theme": "Credit and default",
+      "take": "PJM credit director Gwen Kelly distinguishes periodic settlements from the longer underlying payment obligation. She favors a known auction clearing price as the calculation base rather than a forecast of future capacity prices.",
+      "quote": "the underlying procurement commitments extend over a substantially longer period",
+      "pg": 3
+    },
+    {
+      "title": "III.A–D. The assumptions behind the model",
+      "start": 4,
+      "end": 6,
+      "theme": "Credit and default",
+      "take": "Kelly uses a 9.5% discount rate, a BBB portfolio, a 4.05% default probability, 100% loss on unsecured exposure after default, and a 4.93% collateral funding cost. These are modeling inputs, not predictions for each supplier.",
+      "quote": "This does not mean that every LSE has a BBB credit rating or the same probability of default",
+      "pg": 6
+    },
+    {
+      "title": "III.E–F. Why the model chooses 40%",
+      "start": 7,
+      "end": 10,
+      "theme": "Credit and default",
+      "take": "Kelly compares the cost of posting security with losses other suppliers might absorb after a default. In Table 2 the combined cost is lowest at 40% among the collateral levels tested. That does not mean suppliers will pay 40% in settlements.",
+      "quote": "The 40% factor does not represent the percentage of gross RBP payments that PJM expects LSEs to pay",
+      "pg": 10
+    },
+    {
+      "title": "IV. How $686,000 per MW was calculated",
+      "start": 10,
+      "end": 11,
+      "theme": "Credit and default",
+      "take": "At an assumed clearing price of $555 per MW-day, the formula yields roughly $686,000 per MW of collateral, about 3.4 years of undiscounted payments. The final rate would depend on actual auction results; the total posted also depends on each supplier's allocated MW.",
+      "quote": "This amount is equivalent to approximately 3.4 years of undiscounted RBP payments per MW at the assumed clearing price",
+      "pg": 11
+    },
+    {
+      "title": "V–VI. Posting, avoiding duplication and review",
+      "start": 11,
+      "end": 12,
+      "theme": "Credit and default",
+      "take": "Kelly says qualifying cash, letters of credit or surety bonds could satisfy the obligation. She distinguishes this security from other PJM credit tools and describes reassessment of the rate after committed resources enter operation.",
+      "quote": "cash, letters of credit, or surety bonds, subject to PJM’s acceptance of the provider, form, and amount",
+      "pg": 12
+    },
+    {
+      "title": "VII–VIII. Kelly's conclusion and verification",
+      "start": 13,
+      "end": 14,
+      "theme": "Credit and default",
+      "take": "Kelly supports the model as a balance between the supplier posting collateral and other suppliers exposed to a default. Her affidavit is evidence offered for PJM's filing, not an independent finding that the model is optimal.",
+      "quote": "the methodology balances the interests of LSEs required to post collateral against those of LSEs that may bear losses",
+      "pg": 13
+    }
+  ],
+  "attachment-er27-454-d": [
+    {
+      "title": "Updating the procurement target",
+      "start": 1,
+      "end": 4,
+      "theme": "Procurement target",
+      "take": "Market design manager Danielle Croop explains why PJM wants a fresh forecast for the 2028/29 delivery year before setting the target. Her formula uses the smaller of updated need and eligible reported load growth.",
+      "quote": "utilizing the latest information allows PJM to identify the most accurate estimate of the reliability need",
+      "pg": 3
+    },
+    {
+      "title": "How distributors' shares are fixed",
+      "start": 5,
+      "end": 6,
+      "theme": "Cost allocation",
+      "take": "Croop starts with each area's incremental growth, applies qualifying offsets and peak shaving, then recalculates each area's share. The final proportion stays fixed through the procurement term.",
+      "quote": "The final pro rata share determination will be fixed for the term of the RBP",
+      "pg": 6
+    },
+    {
+      "title": "Worked example and limits of offsets",
+      "start": 6,
+      "end": 8,
+      "theme": "Cost allocation",
+      "take": "In Croop's example, offsets of 470 and 94 MW lower a hypothetical 4,000 MW target to 3,436 MW. The corresponding large loads come out of the allocation base. These are example quantities, not procurement results.",
+      "quote": "This value is purely illustrative for this example and not indicative of the Initial RBP Target for the RBP",
+      "pg": 6
+    }
+  ]
+}

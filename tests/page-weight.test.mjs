@@ -6,6 +6,7 @@
 // a deferred script fetched on first open of that tab. These tests keep it there and
 // fail loud if the blocking bytes creep back up.
 import { test } from "node:test";
+import {execFileSync} from "node:child_process";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
@@ -17,7 +18,7 @@ const html = readFileSync(join(docs, "index.html"), "utf8");
 const app = readFileSync(join(docs, "js", "app.js"), "utf8");
 
 test("secondary records have stamped URLs but are not fetched on Overview", () => {
-  for (const [id, file] of [["cm-data", "comments-data.js"], ["rec-data", "record-data.js"]]) {
+  for (const [id, file] of [["news-data", "news-data.js"], ["cm-data", "comments-data.js"], ["rec-data", "record-data.js"]]) {
     const refs = html.split("\n").filter(line => line.includes("js/" + file + "?"));
     assert.equal(refs.length, 1, file + " must have just one reference");
     assert.ok(refs[0].includes('<template id="' + id + '" data-src="js/' + file + '?v='));
@@ -34,4 +35,8 @@ test("blocking first-load assets stay under the gzip budget", () => {
   // 178 KB on 2026-11-02 (index 11, styles 16, data 112, route 1, app 39). Raise deliberately, not by drift.
   const BUDGET = 220 * 1024;
   assert.ok(gz <= BUDGET, `blocking first-load weight is ${Math.round(gz / 1024)} KB gzip across ${files.join(", ")}; budget ${BUDGET / 1024} KB`);
+});
+
+test("the browser receives the current editorial data across the initial and News scripts", () => {
+  execFileSync(process.execPath, [fileURLToPath(new URL("../tools/build-delivery-data.mjs", import.meta.url)), "--check"]);
 });

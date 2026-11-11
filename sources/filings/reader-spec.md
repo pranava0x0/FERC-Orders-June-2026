@@ -1,0 +1,12 @@
+# Filing reader: source and section contract
+
+Build one static reader per indexed post-order original, published attachment and June order. The record is a dated archive, not a census of every FERC docket. Ingest the public file list by accession; keep file bytes, actual accession, retrieval metadata and extraction separate. Do not infer a missing PDF, a regulator’s vote or a statewide position.
+
+Use physical PDF pages and unpaginated DOCX text. Every source page belongs to the token index, even when empty. A token is a Unicode word or number with internal apostrophes or hyphens, not a model-specific billing unit. Store source SHA-256, per-page token offsets (zero-based, end-exclusive), heading, source locator, and text. Expose the exact token stream on request. Embedded bookmarks or identifiable numbered headings are source headings; unlabeled ranges are explicitly page ranges. Keep signed, checked readings distinct from machine keyword matches. A section reading must quote text on its cited page; contextual remarks must identify speaker, source and relation. Missing evidence means no supported attribution.
+
+A reader should reach an individual PJM clause from the first screen in one action. Search engines, keyboard users and readers without JavaScript should reach the same record. The Overview must not download the full archive. A repeat build from unchanged sources must be byte-identical; a missing source, invalid quote, unresolved route or obsolete generated record must fail the check.
+
+
+For other public comments in the same docket family, publish a separate index keyed to the topic and physical page. To qualify, a passage must contain a topic term and an argument or request in the same sentence. Label those as text matches rather than attributing them to a particular speaker or assuming that another subdocket answered the selected section. Unavailable originals appear on the coverage page. The homepage must make no request for the archive or News-only tables; opening News loads those tables once. Verify that the two delivered tables together reproduce the editorial source, including its docket-link function.
+
+Word originals retain footnotes and endnotes from their own XML parts. Each in-body marker links to its note by the durable Word ID, not by an assumed printed number. Include the notes and header/footer templates in the same unpaginated lexical index. The page-quote check may ignore the generated superscript marker when comparing previously transcribed prose; it does not ignore any words in the original.

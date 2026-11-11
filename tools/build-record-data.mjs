@@ -40,6 +40,7 @@ export function build() {
     const m = meta.get(v.id) || {};
     return {
       id: v.id, title: m.title || v.title, channel: m.channel || v.channel, date: m.date || v.date,
+      captionSource: m.captionSource || "auto", transcriptSlug: m.transcriptSlug || null,
       event: v.event || m.event, duration_s: m.duration_s ?? null,
       speakers: v.speakers || m.speakers || [], chapters: v.chapters || [], quotes: v.quotes || [],
     };

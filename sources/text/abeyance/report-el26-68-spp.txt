@@ -1,0 +1,957 @@
+FERC informational report — SPP — Docket EL26-68-000 — accession 20260720-5205 — SPP reports on resource adequacy and large-load proposals — Issued 2026-07-20 — 29 pp
+Extracted locally with PyMuPDF (fitz) from the document downloaded from https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260720-5205. Verbatim; source text layer preserved.
+
+
+--- PAGE 1 ---
+
+UNITED STATES OF AMERICA
+BEFORE THE
+FEDERAL ENERGY REGULATORY COMMISSION
+Southwest Power Pool, Inc.
+
+ )
+
+Docket No. EL26-68-000
+
+INFORMATIONAL REPORT OF
+SOUTHWEST POWER POOL, INC.
+
+Southwest Power Pool, Inc. (“SPP”) respectfully submits this Informational Report
+in response to the directive issued by the Federal Energy Regulatory Commission
+(“Commission”) in its June 18, 2026, Order Instituting Proceeding Under Section 206 of
+the Federal Power Act in Docket No. EL26-68-0001 (“Show Cause Order”). In the Show
+Cause Order, the Commission directed SPP to provide, within thirty days, a detailed
+informational report describing: (1) any proposals under consideration in SPP's stakeholder
+process to address resource adequacy associated with new large loads, or, to the extent no
+such proposals are under consideration, information regarding how SPP's existing
+processes are operating to ensure resource adequacy; and (2) for any new proposals under
+development, a detailed schedule identifying key stakeholder milestones, including
+anticipated stakeholder and Board actions and the expected date for any future filing with
+the Commission.2
+I.
+EXECUTIVE SUMMARY
+SPP appreciates the Commission's recognition that unprecedented growth in
+electric demand from data centers, advanced manufacturing, industrial electrification, and
+other large load customers presents both opportunities and challenges for the electric
+
+1
+Sw. Power Pool, Inc., 195 FERC ¶ 61,213 (2026) (“Show Cause Order”).
+
+2
+Show Cause Order at P 91.
+
+--- PAGE 2 ---
+
+2
+industry. SPP likewise recognizes the importance of integrating these new loads in a
+manner that preserves reliability, maintains resource adequacy, and protects existing
+customers from unreasonable costs.
+As large load requests have increased in both number and size, SPP has worked
+with stakeholders to develop processes that not only evaluate the transmission impacts
+associated with these customers but also facilitate the timely addition of new generating
+resources capable of serving that demand. Rather than relying on a single solution, SPP has
+developed complementary initiatives that improve planning certainty, accelerate the
+addition of new resources, enhance operational flexibility, strengthen resource adequacy
+accountability, and better align transmission and interconnection processes with the unique
+characteristics of emerging large loads.
+As discussed in greater detail below, these efforts include:
+•
+the Expedited Resource Adequacy Study ("ERAS"), which accelerates evaluation
+of new generating resources intended to support resource adequacy;3
+•
+the Provisional Load Process, which allows SPP to study proposed delivery point
+additions using both existing Designated Resources and identified planned
+generation that is expected to serve the new load;4
+
+3
+Submission of Tariff Revisions to Implement the Expedited Resource Adequacy Study of
+Southwest Power Pool, Inc., Docket No. ER25-2296-000 (May 22, 2025) (“ERAS Filing”).
+Tariff, Attachment AW.
+
+4
+Submission of Tariff Revisions to Implement a Provisional Load Process of Southwest
+Power Pool, Inc., Docket No. ER26-2430-000 (June 4, 2025) (“Provisional Load Process
+Filing”). Tariff, Attachment AX.
+
+--- PAGE 3 ---
+
+3
+•
+enhanced study procedures for High Impact Large Loads (“HILLs”) to enable SPP
+to assess the load’s reliability impacts on the Transmission System;5
+•
+the High Impact Large Load Generation Assessment ("HILLGA") process, which
+consists of a new generator interconnection service and related interconnection
+process to allow the limited connection of supporting generation for HILLs on an
+expedited basis;6
+•
+the Conditional High Impact Large Load Service ("CHILLS"), which allows a
+HILL (or a portion of a HILL) to receive the transfer of energy on a long-term, non-
+firm basis in instances where transmission service is unavailable due to the lack of
+existing Designated Resources or completion of Network Upgrades necessary to
+provide firm transmission service;7
+•
+the Peak Demand Assessment (“PDA”) and Demand Response reforms, which
+strengthen resource adequacy through enhanced load forecasting accountability and
+expanded integration of Demand Response Resources, including the Reliability-
+Registered Demand Response Program (“RRDRP”);8
+
+5
+Submission of Tariff Revisions to Add the High Impact Large Load Processes and High
+Impact Large Load Generation Assessment of Southwest Power Pool, Inc., Docket No.
+ER26-247-000, at 11 (Oct. 24, 2025) (“HILL Filing”). Tariff, Attachment BA, Section 2.
+
+6
+HILL Filing at 11. Tariff, Attachment BB.
+
+7
+Submission of Tariff Revisions to Add Conditional High Impact Large Load Service of
+Southwest Power Pool, Inc., Docket No. ER26-1323-000, at 10 (Feb. 10, 2026) (“CHILLS
+Filing”). Tariff, Part VII and Attachment BC.
+
+8
+Submission of Tariff Revisions Regarding the Peak Demand Assessment and Demand
+Response of Southwest Power Pool, Inc., Docket No. ER26-2249-000 (April 17, 2026)
+(“PDA Filing”). This proceeding is pending before the Commission with a requested
+effective date of January 1, 2027.
+
+--- PAGE 4 ---
+
+4
+•
+the Consolidated Planning Process (“CPP”), which modernizes SPP's regional
+transmission planning framework by evaluating transmission needs using
+coordinated assumptions and integrated studies that better account for significant
+load growth, including emerging large loads;9 and
+•
+continued stakeholder development of the Price Adaptive Load (“PAL”) product
+and Price Adaptive Load Service ("PALS"), intended to address the evolving needs
+and desire for flexibility of large load customers while preserving system
+reliability.10
+Although several of these initiatives have only recently become effective, they
+represent significant changes to SPP's transmission service, markets, operations, resource
+adequacy and interconnection frameworks and provide important tools for ensuring that
+integration of large loads into the SPP Region is done in a way that facilitates the continued
+safe and reliable operation of the Transmission System. The Commission has repeatedly
+recognized SPP's proactive approach to addressing large load growth, emphasizing the
+innovative and forward-looking nature of these reforms.
+This report provides details regarding the evolution of these existing processes,
+explains how they collectively contribute to resource adequacy, and describes ongoing
+stakeholder efforts to implement additional enhancements. As with prior large load
+initiatives, any future Tariff revisions will be developed and approved through SPP's
+
+9
+Submission of Revisions to the SPP Open Access Transmission Tariff to Implement the
+Consolidated Planning Process of Southwest Power Pool, Inc., Docket No. ER26-414-
+000 (Nov. 3, 2025) (“CPP Filing”). Tariff, Attachment AY.
+
+10
+See Price Adaptive Load Service Revision Request posted at: https://www.spp.org/spp-
+documents-filings/?id=21069 (see zip file “RR791 SIR796 Price Adaptive Load”) (“RR
+791”).
+
+--- PAGE 5 ---
+
+5
+established stakeholder process before being submitted to the Commission for review.
+Consistent with the Commission's directive, this report also provides the anticipated
+schedule for stakeholder consideration of the PAL/PALS proposal currently under
+development.
+II.
+BACKGROUND
+
+A.
+SPP
+
+SPP is a Commission-approved Regional Transmission Organization (“RTO”).11 It
+is an Arkansas non-profit corporation with its principal place of business in Little Rock,
+Arkansas. SPP currently has 154 members, including 16 investor-owned utilities, 16
+municipal systems, 26 generation and transmission cooperatives, 6 state agencies, 28
+independent power producers, 11 power marketers, 18 independent transmission
+companies, 3 federal agencies, 18 large retail customers, 4 alternative power entities, and
+8 public interest entities. As an RTO, SPP: (1) administers, across the facilities of SPP’s
+Transmission Owners, open access transmission service over approximately 85,000 miles
+of transmission lines in the Eastern and Western Interconnections covering portions of
+Arizona, Arkansas, Colorado, Iowa, Kansas, Louisiana, Minnesota, Missouri, Montana,
+Nebraska, New Mexico, North Dakota, Oklahoma, South Dakota, Texas, Utah, and
+Wyoming; and (2) administers the Integrated Marketplace, a centralized day-ahead and
+real-time Energy and Operating Reserve market with locational marginal pricing and
+market-based congestion management.12 SPP also implements a resource adequacy
+
+11
+Sw. Power Pool, Inc., 109 FERC ¶ 61,009 (2004), order on reh’g, 110 FERC ¶ 61,137
+(2005).
+12
+Sw. Power Pool, Inc., 146 FERC ¶ 61,130 (2014) (approving the start-up and operation of
+the Integrated Marketplace).
+
+--- PAGE 6 ---
+
+6
+program under Attachment AA of the Tariff, under which Load Responsible Entities
+(“LRE”) must demonstrate sufficient accredited resource capacity to satisfy their load and
+an SPP-established Planning Reserve Margin (“PRM”) for the Summer Season and Winter
+Season, or else face significant charges for failure to meet their Resource Adequacy
+Requirement (“RAR”).
+B.
+Role of Stakeholders and States in SPP
+SPP operates under a stakeholder-driven governance model in which proposed
+revisions to the Tariff, Bylaws, Membership Agreement, and business practices are
+developed through an open, collaborative process involving market participants,
+transmission owners, state regulators, and other stakeholders before being considered by
+the SPP Board of Directors (the "Board") and, where applicable, filed with the
+Commission. This Commission-approved governance framework, established in SPP's
+Bylaws, Membership Agreement, and organizational governance documents, provides
+multiple opportunities for stakeholder discussion, refinement, and voting as proposals
+progress through technical working groups, policy committees, and ultimately to the
+Board.
+This collaborative governance structure has been central to SPP's response to
+unprecedented large load growth. The stakeholder initiatives discussed throughout this
+report were each developed through this established process with significant stakeholder
+participation. Of particular importance are the SPP Regional State Committee ("RSC") and
+the Resource and Energy Adequacy Leadership Team ("REAL Team"), both of which have
+played key roles in shaping SPP's evolving resource adequacy framework. Under the SPP
+Bylaws, the RSC possesses defined authority over regional cost allocation methodology
+
+--- PAGE 7 ---
+
+7
+and resource adequacy matters.13 Complementing that role, the REAL Team was
+established in January 2023 to evaluate SPP’s long-term resource adequacy construct and
+to develop recommendations addressing emerging reliability challenges associated with
+changes in the resource mix, extreme weather events, and rapidly increasing electric
+demand.14
+III.
+CURRENT STATE OF RESOURCE ADEQUACY
+
+Since adopting Attachment AA of the Tariff in 2018, SPP has continued to
+strengthen its Resource Adequacy framework to address fundamental changes in the
+resource mix and unprecedented demand growth across the SPP Region. Historically, the
+Resource Adequacy program focused primarily on ensuring that each LRE procured
+sufficient generating capacity to meet its forecasted seasonal peak demand plus an
+established PRM.15 In recent years, however, accelerating growth in large commercial and
+industrial loads together with generator retirements and an evolving resource mix have
+
+13
+Southwest Power Pool, Inc., Bylaws, First Revised Volume No. 4, Section 7.2. The RSC
+has primary responsibility for determining regional proposals and the transition process in
+the following areas: (1) whether and to what extent participant funding will be used for
+transmission enhancements; (2) whether license plate or postage-stamp rates will be used
+for the regional access charge; (3) determination of financial transmission rights (“FTRs”)
+allocations where a locational price methodology is used; and (4) determination of the
+transition mechanism to be used to assure that existing firm customers receive FTRs
+equivalent to the customers’ existing firm rights; and (5) determination of the approach for
+resource adequacy across the entire region.
+14
+Resource and Energy Adequacy Leadership Team, Organizational Group Scope Statement,
+Southwest
+Power
+Pool,
+Inc.
+(Jan.
+2023)
+https://spp.org/documents/68934/real_scope_statement%20final.pdf. The REAL Team is
+composed of members from the RSC, the Board, the Members Committee, the Strategic
+Planning Committee, the Cost Allocation Working Group (“CAWG”), and the Supply
+Adequacy Working Group (“SAWG”).
+15
+See Summer Resource Adequacy Report posted at:
+https://spp.org/documents/76932/2026%20spp%20summer%20resource%20adequacy%2
+0report.pdf (“Summer 2026 Resource Adequacy Report”).
+
+--- PAGE 8 ---
+
+8
+required SPP to modernize both its resource accreditation methodology and its load
+forecasting processes.16
+The most significant recent enhancement is SPP's transition to a planning margin
+based on accredited capacity (Accredited Capacity Planning Reserve Margin, “Accredited
+Capacity PRM”) framework beginning with the Summer 2026 Resource Adequacy
+season.17 Under this framework, resource capability is no longer measured solely by
+installed or nameplate capability. Instead, SPP utilizes Performance-Based Accreditation
+(“PBA”) for conventional generation and Effective Load Carrying Capability (“ELCC”)
+methodologies for wind, solar, and battery Resources to more accurately reflect each
+resource's expected reliability contribution during periods of system stress.18 For Summer
+2026, LREs were required to satisfy their RAR using accredited capacity and a system-
+wide Accredited Capacity PRM of 7.06 percent.19
+The transition to accredited capacity represents a significant advancement in SPP's
+resource adequacy framework by aligning resource accreditation with actual performance
+rather than simply relying on installed capability with limited testing to ensure capacity
+adequacy in SPP. This provides a more accurate assessment of regional reliability while
+
+16
+Keeping the Lights On: Examining the State of Regional Grid Reliability (Testimony of
+Lanny Nickell, Executive Vice President, Chief Operating Officer, Southwest Power Pool,
+Inc. Before the House Energy & Commerce Subcommittee on Energy), 119th Cong., 3-4
+(Mar. 25, 2025), available at:
+
+https://www.congress.gov/119/meeting/house/118040/witnesses/HHRG-119-IF03-
+Wstate-NickellL-20250325.pdf.
+
+17
+See Summer 2026 Resource Adequacy Report.
+
+18
+Id.
+
+19
+Id.; see also Conventional Resources Class Averages – Summer 2026 posted at:
+https://spp.org/documents/74895/conventional%20unit%20class%20averages%20-
+%20summer%202026.pdf.
+
+--- PAGE 9 ---
+
+9
+creating technology-neutral incentives for resource performance during critical system
+conditions.
+A.
+Current Resource Adequacy Outlook
+SPP's most recent Summer 2026 Resource Adequacy Report concludes that the SPP
+Region is adequately positioned to meet expected Summer 2026 demand while also
+providing an outlook through the Summer 2031 planning horizon.20 The report evaluates
+existing accredited Resources, anticipated retirements, planned generation additions, and
+projected demand growth across the SPP East Balancing Authority Area. For the 2026
+Summer Season, all sixty-five LREs satisfied their RAR.21 Based on data submitted in the
+2026 Summer Season Workbook, the East BAA maintains a reserve margin of 17.1%,
+representing approximately 5,752 MW of excess accredited capacity above the total RAR.
+This is an increase of approximately 2,500 MW of excess capacity compared to the 2025
+Summer Season. More than half of all LREs maintain reserve margins exceeding 16%,
+representing capacity in excess of approximately one-third of LRE forecasted Net Peak
+Demand.22 The 2026 Summer Season Workbook does not address the West BAA because
+the West BAA is not required to meet SPP’s resource adequacy processes and procedures
+until summer 2027.
+B.
+Integration With Recent Large Load Initiatives
+While current resource adequacy projections indicate that the East BAA is well
+positioned to meet near-term demand, SPP recognizes that rapidly increasing load forecasts
+
+20
+See Summer 2026 Resource Adequacy Report.
+
+21
+Id.
+
+22
+See Summer 2026 Resource Adequacy Report.
+
+--- PAGE 10 ---
+
+10
+represent one of the greatest sources of uncertainty in future resource adequacy planning.
+Much of this uncertainty stems from unprecedented load interconnection requests
+associated with data centers and other large commercial and industrial customers, many of
+which have historically been incorporated into utility load forecasts before development
+plans were sufficiently mature. Traditional planning processes were designed to
+accommodate incremental load growth rather than the addition of individual customers
+with demand measured in hundreds of megawatts. Recognizing that accurate demand
+forecasts are fundamental to effective resource adequacy planning, SPP also filed Tariff
+revisions in April 2026 to implement the Peak Demand Assessment,23 establishing a more
+structured process for validating forecasted peak demand and strengthening accountability
+by ensuring that all loads (including projected large loads) for the upcoming season are
+supported by sufficient amounts of Accredited Capacity.
+IV.
+SPP’S EXISTING FRAMEWORK FOR EVALUATING AND SERVING
+NEW LARGE LOADS24
+
+SPP has developed a coordinated framework of planning, interconnection,
+transmission service, and resource adequacy processes to address growing demand and
+support the reliable integration of new large loads. Rather than addressing large load
+
+23
+The PDA Filing is pending before the Commission.
+
+24
+While this Informational Report primarily focuses on the evolution of SPP policies directly
+ targeted at large load interconnections, SPP has implemented several complementary
+ initiatives that strengthen resource adequacy. These include annual updates to the Cost of
+ New Entry (“CONE”), which preserve appropriate incentives for LREs to procure
+ sufficient Accredited Capacity; implementation of the Consolidated Planning Process
+ (“CPP”), which integrates long-term transmission planning and generator interconnection
+ into a single, cohesive framework to better accommodate evolving resource and load needs
+ and speed up interconnection processing; and development of the Surplus Plus
+ interconnection reforms, which facilitate more timely additions of incremental generation
+ using existing transmission capability.
+
+--- PAGE 11 ---
+
+11
+requests as isolated transmission issues, SPP evaluates them through an integrated
+framework designed to accommodate significant load growth while preserving the reliable
+operation of the Transmission System.
+A.
+ERAS
+On May 22, 2025, SPP submitted Tariff revisions to add the ERAS process
+establishing a one-time, accelerated pathway for new generating resources to help address
+urgent reliability needs through 2030.25 The Commission accepted the ERAS Filing on July
+21, 2025, with an effective date of July 22, 2025.26 SPP developed ERAS in collaboration
+with the RSC, REAL, and other stakeholders in response to the growing need to bring new
+generation resources online on an accelerated timeline. ERAS enables LREs to identify
+and secure the generating resources needed to maintain reliability across the SPP footprint,
+comply with the resource adequacy requirements set forth in Attachment AA of the Tariff,
+and satisfy their obligation to serve under applicable state or other governing law. To
+qualify for ERAS, a project was required to address an LRE's projected resource adequacy
+deficit, commit to achieving commercial operation within five years, and satisfy additional
+criteria demonstrating that the project was sufficiently developed and reasonably likely to
+achieve commercial operation in time to address identified resource adequacy needs.27
+ERAS operates separately from, but in parallel with, SPP's standard Generator
+Interconnection Procedures under Attachment V of the Tariff.
+
+25
+ERAS Filing at 25. Tariff, Attachment AW. At the time of the ERAS Filing, SPP predicted
+that the SPP Region could face a 2-3 GW accredited capacity shortfall by 2030.
+26
+Sw. Power Pool, Inc., 192 FERC ¶ 61,062 (2025) (“ERAS Order”).
+27
+Tariff, Attachment AW, Section 8.2.
+
+--- PAGE 12 ---
+
+12
+As a one-time study, ERAS accepted requests during a limited application
+window28 and is no longer accepting new requests as a one-time process. Participation by
+LREs during the application window was strong. As of the date of this Informational
+Report, there are 36 active ERAS requests representing approximately 13.3 GW of
+generating capacity and no requests have withdrawn.29 These requests remain on schedule
+in the study process.  ERAS Generator Interconnection Agreements (GIA) are currently in
+the negotiation phase and SPP expects to advance to the execution phase in September
+2026. The process is on track to achieve its primary objective of accelerating the
+interconnection of generating resources needed to address near-term resource adequacy
+concerns. Although ERAS was designed as a one-time initiative, it demonstrated SPP's
+ability to accelerate the development of reliability-critical generation through a targeted
+stakeholder-driven process and established an important foundation for subsequent large
+load and resource adequacy reforms.
+B.
+Provisional Load Process
+On June 4, 2025, SPP submitted Tariff revisions to add a Provisional Load Process,
+documented in Attachment AX of the Tariff.30 The Commission accepted the Provisional
+Load Process Filing on October 10, 2025, with an effective date of August 4, 2025.31 While
+
+28
+Following Commission approval of the ERAS process on July 21, 2025, SPP opened the
+one-time ERAS application window on September 2, 2025, and closed the window on
+October 2, 2025.
+29
+See SPP Operations Portal of GI Active Requests posted at:
+https://opsportal.spp.org/Studies/GIActive and
+https://app.powerbigov.us/view?r=eyJrIjoiNTFhODQ5MjEtMTQ1My00ZjI5LWFjNWIt
+ZmQ3NGQxNzM1ZDZiIiwidCI6IjMyMzA5MjZhLTcxYjctNDM3MC1hMTM3LTE5N2
+JhZGMwNjZhMiJ9.
+30
+Provision Load Process Filing. Tariff, Attachment AX.
+31
+Sw. Power Pool, Inc., 193 FERC ¶ 61,018 (2025) (“Provision Load Process Order”).
+
+--- PAGE 13 ---
+
+13
+the HILL process described below is designed for large, high-impact loads, the Provisional
+Load Process addresses a different challenge: the ability for SPP to study new proposed
+load additions prior to the Transmission Customers having existing resources online to
+support the new load. Under Attachment AQ, SPP may only study requests for new or
+modified delivery points when the Transmission Customer demonstrates that its existing
+Designated Resources are sufficient to serve both its existing forecasted load and the
+proposed new load over a ten-year horizon.32 As requests associated with large loads
+increased significantly, many Transmission Customers were unable to satisfy this
+prerequisite because the generation intended to serve the load had not yet completed the
+interconnection process or otherwise become an existing Designated Resource. As a result,
+SPP was unable to evaluate numerous otherwise viable load requests under its then-existing
+Tariff provisions.
+The Provisional Load Process was developed to address this gap. Using the same
+study methodologies used for other load connection studies, the Provisional Load Process
+allows SPP to study proposed delivery point additions using both existing Designated
+Resources and identified planned generation that is expected to serve the new load.33
+Importantly, the Provisional Load Process, alone, does not provide transmission service
+but instead serves as a planning mechanism that enables Transmission Customers to
+identify the transmission upgrades necessary to accommodate future load while their
+planned generation progresses through the applicable interconnection and transmission
+
+32
+Tariff, Part II, Section 17.9; Part III, Section 31.2; and Attachment AQ.
+33
+Tariff, Attachment AX.
+
+--- PAGE 14 ---
+
+14
+service processes.34 Because the generation relied upon in the study has not yet completed
+the interconnection process and may ultimately change or fail to materialize, the revenue
+requirements for Network Upgrades identified through the Provisional Load Process are
+treated as Directly Assigned Upgrade Costs and are allocated 100% to the Transmission
+Customer until the Transmission Customer acquires firm transmission service for the
+planned generation.35 Once the planned generation obtains Long-Term Service and
+becomes a Designated Resource, the remaining costs of those Network Upgrades transition
+to Base Plan funding consistent with Attachment J of the Tariff36 and the Transmission
+Customer’s Network Integration Transmission Service Agreement or Point-to-Point
+Transmission Service Agreement is updated to reflect the requested changes.37 This
+approach protects other loads within SPP from bearing the costs of upgrades associated
+with speculative or uncertain generation while still allowing transmission planning to move
+forward in support of anticipated load growth.
+As described in more detail in the following sections, SPP modified Attachment
+AX in the HILL and CHILLS Filings to integrate those frameworks into the existing
+Attachment AX process by requiring additional studies and information for qualifying
+
+34
+The Transmission Customer must  complete either the Aggregate Transmission Service
+Study assessing the planned Designated Resource or the expedited process for resource
+designation as described in Section 30.2.2 of the Tariff before the Transmission Customer’s
+Network Integration Transmission Service Agreement or Point-to-Point Transmission
+Service Agreement will be updated to reflect the requested changes. Tariff, Attachment AX,
+Addenda 2 and 3.
+35
+Tariff at Attachment J, Section V; Tariff at Attachment AX, Addendum 2 at Sections 6.0
+and 7.0; Tariff, Attachment AX, Addendum 3 at Sections 6.0 and 7.0
+36
+Tariff, Attachment J, Section III.A.
+37
+Tariff, Attachment AX, Addenda 2 and 3.
+
+--- PAGE 15 ---
+
+15
+HILLs and to provide Transmission Customers with additional flexibility when requesting
+studies for new load additions.
+C.
+HILLs and the HILLGA
+
+On October 24, 2025, SPP submitted Tariff revisions to add a HILL study process
+and the HILLGA.38 The Commission accepted the HILL Filing on January 14, 2026, with
+an effective date of January 15, 2026.39 The HILL Filing proposed two new mechanisms:
+(1) the HILL study process set forth in Attachment BA; and (2) the HILLGA process set
+forth in Attachment BB. The HILL Filing revisions (1) defined and created a new category
+of load, termed a “HILL”; (2) established enhanced study requirements for HILLs to enable
+SPP to assess the load’s reliability impacts on the Transmission System; and (3) established
+additional, ongoing operational requirements for HILLs to ensure continued reliability of
+the Transmission System.40 The HILLGA process consists of a new generator
+interconnection service and related interconnection process to allow the limited connection
+of supporting generation for HILLs on an expedited basis.41
+The HILL Filing revisions built upon the original Attachment AX framework by
+preserving Attachment AX as a vehicle through which HILLs may receive provisional
+transmission service while layering on the HILL-specific study and operational
+requirements established in Attachment BA. The revisions clarified that requests for new
+or modified delivery points associated with a HILL remain eligible for study under
+
+38
+HILL Filing.
+
+39
+Sw. Power Pool, Inc., 194 FERC ¶ 61,031 (2026) (“HILL/HILLGA Order”).
+40
+HILL Filing at 11-38.
+41
+Tariff, Attachment BB.
+
+--- PAGE 16 ---
+
+16
+Attachment AX but must also satisfy the additional study and operational requirements
+established in Attachment BA.
+The Tariff defines a HILL as:
+A new commercial or industrial load, or increase in commercial or industrial
+load, at a single site connected through one or more shared Points of
+Interconnection (POIs) or delivery points, where such load is either (1) 10
+MW or more if connected to the Transmission System at a voltage level less
+than or equal to 69 kV; or (2) 50 MW or more if connected to the
+Transmission System at a voltage level greater than 69 kV. An Electric
+Storage Resource is not considered a HILL. A load may be categorized as a
+HILL after the initial effective date of Attachment BA of the Tariff.  High
+Impact Large Loads must register as such in accordance with Attachment
+AE of the Tariff and follow the processes specified in Attachment BA of the
+Tariff.42
+
+SPP processes all load additions and modifications, including HILLs, using its
+existing Attachment AQ, Attachment AX, and/or Attachment Z1 study processes.43
+However, for HILLs, SPP and the applicable Transmission Owner(s) simultaneously
+conduct additional studies under Attachment BA to ensure that the unique operational
+characteristics of HILLs are considered when evaluating the addition of a HILL to the
+Transmission System, and that SPP has mechanisms in place to maintain reliable operation
+of the Transmission System.44 Attachment BA also imposes ongoing operational
+requirements, including the addition of certain equipment, to ensure that SPP can continue
+
+42
+Tariff, Part I, Section 1, Definition of High Impact Large Load.
+43
+Through Attachment AQ, any existing customers may obtain firm transmission service for
+the modification of an existing delivery point or for the creation of a new delivery point.
+Under Attachment AX, existing customers may receive provisional study of a new or
+modified delivery point using planned generation, instead of existing Designated
+Resources. Lastly, new customers may receive transmission service for their load and
+Resources through Attachment Z1.
+44
+Tariff, Attachment BA, Sections 2.1.3.4 and 2.1.3.5.
+
+--- PAGE 17 ---
+
+17
+to manage the Transmission System while accommodating the unique operational demands
+and characteristics of HILLs.45
+The HILLGA process, outlined in Attachment BB, facilitates the prompt
+interconnection of generating resources that are specifically identified for and limited to
+serving a HILL, at the request of the HILLGA Customer.46 SPP studies HILLGA Requests
+outside of its existing generator interconnection process on a serial basis, but solely for the
+impact of the Generating Facility47 to serve the identified HILL.48 Unlike traditional
+interconnection service, HILLGA provides a limited form of interconnection service
+specifically designed to evaluate generation intended to serve an identified HILL.49
+D.
+CHILLS
+On February 10, 2026, SPP submitted Tariff revisions to add a CHILLS, that allows
+HILLs to be served with non-firm conditional transmission service.50 The Commission
+
+45
+Tariff, Attachment BA, Section 2.2.
+46
+Tariff, Attachment BB, Section 2.
+47
+Tariff, Attachment BB, Section 1, Definition of Generating Facility (“will mean a HILLGA
+Customer's device(s) for the production and/or storage for later injection of electricity
+identified in the HILLGA Request, but will not include HILLGA Customer's
+Interconnection Facilities and will not include a Storage as Transmission Only Asset as
+defined in Section 1 of the Tariff. A Generating Facility consists of one or more generating
+unit(s) and/or storage device(s) which usually can operate independently and be brought
+online or taken offline individually.”).
+48
+Tariff, Attachment BB, Section 3.1.2.
+49
+Tariff, Attachment BB, Section 3.2. The HILLGA does not grant the Generating Facility
+traditional generator interconnection service, such as Network Resource Interconnection
+Service (“NRIS”) or Energy Resource Interconnection Service (“ERIS”); instead,
+Generating Facilities studied under the HILLGA process receive much more limited “Load
+Limited Resource Interconnection Service” or “LLRIS,” which only studies the impact of
+the Generating Facility serving the identified HILL.
+50
+CHILLS Filing.
+
+--- PAGE 18 ---
+
+18
+accepted the CHILLS Filing on June 5, 2026, with an effective date of July 1, 2026.51
+CHILLS builds on the HILL and HILLGA processes to help further unlock the
+interconnection of large loads by facilitating service for HILLs by allowing a HILL (or a
+portion of a HILL) to receive the transfer of energy on a long-term, non-firm basis.
+The Attachment AQ and AX processes may delay service to otherwise ready HILLs
+and postpone the economic benefits associated with those projects. Delays could be related
+to construction of Network Upgrades or an inability to comply with the need to have
+sufficient Designated Resources to support the HILL. CHILLS mitigates this challenge by
+providing Transmission Customers with the ability to receive non-firm transmission
+service to HILL delivery points before (1) completion of any applicable Network Upgrades
+and/or (2) meeting the requirements for establishment of Designated Resources.52
+
+The CHILLS Filing further built upon the Attachment AX framework by clarifying
+which customers may be eligible for the Provisional Load Process. Specifically, a
+Transmission Customer may request the study of a new load addition pursuant to
+Attachment AX regardless of whether the Eligible Customer has sufficient Designated
+Resources to support the study, provided that the Eligible Customer elects not to use its
+existing Designated Resources for the proposed load addition.53 This framework provides
+
+51
+Sw. Power Pool, Inc., 195 FERC ¶ 61,196 (2026) (“CHILLS Order”).
+52
+Tariff, Part I, Section 1, Definition of Network Resource (“Any designated generating
+resource owned, purchased or leased by a Network Customer under the Network
+Integration Transmission Service Tariff.  Network Resources do not include any resource,
+or any portion thereof, that is committed for sale to third parties or otherwise cannot be
+called upon to meet the Network Customer's Network Load on a non-interruptible
+basis, except for purposes of fulfilling obligations under a reserve sharing program.”).
+53
+Tariff, Attachment AX, Section 1.
+
+--- PAGE 19 ---
+
+19
+flexibility to Transmission Customers in determining which Designated Resources will be
+associated with new load additions when studied for firm transmission service under the
+Tariff.
+CHILLS includes numerous reliability protections, including supporting generation
+requirements, enhanced engineering and operational studies, dedicated operating
+agreements, separate metering requirements, and SPP's authority to curtail or interrupt
+service during transmission constraints or Emergency Conditions. CHILLS are limited to
+a maximum seven-year term and requires customers to pursue permanent firm transmission
+service through existing Tariff processes, reinforcing that the service is intended as a
+temporary bridge rather than a substitute for long-term transmission solutions.
+Although CHILLS only recently became effective, SPP and its stakeholders
+continue to evaluate potential enhancements to improve its implementation and operation.
+SPP anticipates filing Tariff changes to clarify the sequencing of Resource commitments
+and Reliability-Resource Demand Response Program (RRDRP) deployments relative to
+CHILLs and establish a minimum Curtailment ramp rate for CHILLS.54 SPP also intends
+to propose Tariff revisions permitting limited outages for Resources supporting certain
+CHILLs.55 As a first-of-its-kind transmission service, CHILLS will continue to evolve. SPP
+and its stakeholders will continue refining the service where appropriate to improve its
+effectiveness while maintaining system reliability.
+E.
+PDA and Enhancements to the Participation of Demand Response
+Resources
+
+54
+See CHILL Clarification Revision Request posted at: https://www.spp.org/spp-
+documents-filings/?id=21069 (see zip file “RR767(SIR833) CHILL Clarification).
+55
+See CHILL Outage Criteria Revision Request posted at: https://www.spp.org/spp-
+documents-filings/?id=21069 (see zip file “RR768(SIR823) CHILL Outage Criteria).
+
+--- PAGE 20 ---
+
+20
+
+On April 17, 2026, SPP submitted Tariff revisions to strengthen its Resource
+Adequacy framework through implementation of a PDA and enhancements to the
+participation of Demand Response Resources.56 The PDA Filing is pending before the
+Commission with a requested effective date of January 1, 2027. The filing was developed
+in response to accelerating load growth, including the emergence of large data center
+demand, increasing uncertainty in load forecasting, and the continued evolution of the
+resource mix across the SPP Region, including the anticipated increased reliance on
+Demand Response Programs by LREs to meet the RAR while dealing with the
+aforementioned load growth.
+Just as SPP recently modernized how resource capability is measured through the
+Accredited Capacity PRM framework, the PDA modernizes how demand is forecasted and
+measured for resource adequacy purposes. Together, these reforms strengthen both sides
+of SPP's resource adequacy framework by improving the accuracy of the capacity available
+to serve load and the forecasted demand against which that capacity is evaluated. The PDA
+shifts resource adequacy accountability from a solely forecast-based, pre-season
+evaluation57 to a financially binding post-season assessment based on actual, weather-
+normalized peak demand.
+Under the revised framework, SPP would continue to validate each LRE’s qualified
+capacity before each season through a new Pre-Season Requirement, while determining
+compliance with the RAR after the season using verified demand data.58 This approach
+
+56
+PDA Filing.
+57
+Tariff, Attachment AA, Section 12 entitled, “Post-Season Analysis.”
+58
+PDA Filing at 6.
+
+--- PAGE 21 ---
+
+21
+addresses a key limitation of the existing framework by establishing accountability for
+material under-forecasting of load while preserving the operational benefits of pre-season
+resource qualification. By relying on actual metered data and weather-normalized peak
+demand, the PDA better aligns resource adequacy obligations with actual system
+conditions, particularly as large loads introduce greater variability and uncertainty into
+forecasting.59
+The PDA Filing also modernizes SPP's treatment of Demand Response Resources
+by integrating qualifying Demand Response Resources more fully into the Resource
+Adequacy framework.60 The revisions permit market-registered Demand Response
+Resources to serve as capacity Resources, establish a new RRDRP that may receive
+accredited capacity, implement performance-based accreditation using historical
+performance, and enhance operational and deployment requirements to ensure dependable
+performance during system stress and emergency conditions.61 These revisions provide
+greater operational visibility into available Resources while creating incentives for both
+accurate load forecasting and reliable Demand Response performance.  Additionally, the
+PDA filing permits LREs to implement non-registered load-modifying Demand Response
+programs that are not registered in the Integrated Marketplace and do not qualify as
+RRDRP. This flexibility allows LREs to actively manage their peak demand in real time,
+supporting compliance with their load forecasts while ensuring their demand remains
+consistent with the capacity they qualified for under the Pre-Season Requirement.
+
+59
+Id.
+60
+Id.
+61
+Id.
+
+--- PAGE 22 ---
+
+22
+Together, the PDA and Demand Response reforms complete a broader set of
+coordinated transmission planning, interconnection, and resource adequacy reforms. When
+considered alongside the previously approved Provisional Load Process, the HILL and
+HILLGA frameworks, the ERAS reforms, and related stakeholder initiatives, these
+measures illustrate SPP's integrated approach to accommodating significant load growth
+while preserving reliability and ensuring resource adequacy.
+F.
+CPP
+In addition to initiatives specifically focused on large loads and resource adequacy,
+SPP has undertaken broader reforms to its regional transmission planning processes that
+will improve the region's ability to identify and address transmission needs associated with
+evolving load growth, changing resource portfolios, and increasing system complexity.
+One such initiative is CPP, which streamlines multiple existing transmission planning
+assessments into a single, coordinated planning framework.
+Historically, SPP conducted several planning studies independently, each with
+distinct objectives, assumptions, and study horizons. While these planning processes
+provided valuable information, the separate study cycles could result in duplicative
+analyses, differing assumptions, and limited opportunities to evaluate transmission needs
+holistically. As the region experiences accelerating load growth—including requests to
+serve large new loads—along with significant generation interconnection activity and
+evolving resource adequacy needs, SPP recognized the value of integrating these planning
+efforts into a unified process.
+The CPP establishes a coordinated planning cycle that evaluates reliability,
+economic, operational, and public policy-driven transmission needs using a common set of
+
+--- PAGE 23 ---
+
+23
+assumptions and coordinated stakeholder input. By consolidating these planning activities,
+SPP is better positioned to evaluate transmission solutions across multiple planning
+objectives, improve consistency in forecasting future system conditions, and identify
+projects that provide broad regional benefits. The process also enhances transparency by
+providing stakeholders with a single planning framework through which assumptions,
+study methodologies, and recommended transmission solutions can be reviewed and
+refined.
+Although the CPP is not directed solely at accommodating large loads, it
+strengthens the planning foundation needed to address significant changes in demand
+across the SPP footprint. As large industrial facilities, data centers, electrification, and
+other emerging loads increasingly influence long term transmission needs, the CPP
+provides a more integrated process for evaluating how those loads interact with generation
+development, resource adequacy requirements, and regional transmission expansion. This
+integrated planning approach enables SPP to assess transmission needs using consistent
+planning assumptions while considering the cumulative impacts of multiple drivers
+affecting the Transmission System.
+The CPP complements SPP's other initiatives discussed in this report, including
+enhancements to the HILL framework, the HILLGA process, resource adequacy reforms,
+and other transmission planning improvements. Together, these efforts are intended to
+improve SPP's ability to plan for and reliably serve substantial new load growth while
+maintaining an efficient, transparent, and stakeholder-driven regional planning process.
+V.
+PRICE ADAPTIVE LOADS (PALs) AND PRICE ADAPTIVE LOAD
+SERVICE (PALS)
+
+A.
+Overview
+
+--- PAGE 24 ---
+
+24
+
+The Price Adaptive Load (PAL) and Price Adaptive Load Service (PALS)
+framework establishes a new market participation model and transmission service option
+specifically designed for large, price-responsive loads.62 Unlike the initiatives discussed in
+Section IV, PAL/PALS remains under active stakeholder development and has not yet been
+submitted to the Commission. Accordingly, the discussion below summarizes the current
+proposal and anticipated stakeholder schedule.
+The PAL/PALS framework is intended to accommodate a new class of commercial
+and industrial customers—such as certain data centers and advanced manufacturing
+facilities—that are capable of adjusting or interrupting electricity consumption in response
+to real-time market conditions while reducing reliance on traditional firm transmission
+service. Participating PALs would be economically dispatched through SPP's Integrated
+Marketplace based on submitted price-sensitive bids and would be required to respond to
+dispatch instructions in both the Day-Ahead Market and Real-Time Balancing Market. To
+support this market participation model, the proposal also creates Price Adaptive Load
+Service (PALS), a new non-firm transmission service designed specifically for
+dispatchable, flexible loads. Unlike traditional transmission service, PALS would utilize a
+usage-based billing structure and require participating loads to be fully dispatchable,
+capable of rapidly reducing consumption, and subject to Curtailment during transmission
+constraints, Emergency Conditions, or local reliability events.
+The PAL/PALS framework represents the next evolution of SPP's large load
+strategy by providing a market-based option for flexible loads that complements SPP's
+
+62
+RR 791.
+
+--- PAGE 25 ---
+
+25
+existing planning, transmission service, interconnection, and resource adequacy reforms.
+Where SPP's previously approved reforms focused primarily on ensuring that sufficient
+generation, transmission capability, and planning processes exist to support unprecedented
+load growth, the PAL/PALS proposal recognizes that some emerging large loads possess
+operational flexibility that can itself become a valuable reliability and market resource. By
+creating a market participation model and transmission service tailored to those
+characteristics, PAL/PALS would complement SPP's existing framework while expanding
+the range of tools available to integrate large flexible loads reliably and efficiently.
+B.
+Stakeholder Schedule and Expected Milestones
+
+The PAL/PALS initiative is the product of extensive stakeholder development that
+has included technical design, stakeholder education, Tariff drafting, and publication of the
+associated Revision Request (RR). Development began with an internal team of SPP staff
+meetings during the first quarter of 2026 to establish the framework and refine the
+modeling approach. Beginning in April 2026, SPP initiated a broad stakeholder education
+effort, presenting the concepts to the Cost Allocation Working Group (“CAWG”),
+Operating Reliability Working Group (“ORWG”), Markets Working Group (“MWG”),
+Regional Tariff Working Group (“RTWG”), and other stakeholder groups to introduce the
+proposal and solicit early feedback.
+During May and June, the stakeholder process advanced from conceptual
+development to preparation of Tariff revisions necessary to implement the PAL/PALS
+design framework. SPP also hosted question-and-answer sessions and multiple stakeholder
+forums to discuss the proposal, gather additional feedback, and refine the draft revisions.
+The PAL/PALS RR was posted for stakeholder review on July 9, 2026.
+
+--- PAGE 26 ---
+
+26
+SPP intends to continue its extensive outreach efforts through additional
+stakeholder forums and educational presentations across numerous working groups,
+including the MWG, RTWG, Supply Adequacy Working Group (“SAWG”), Transmission
+Working Group (“TWG”), Economic Studies Working Group (“ESWG”), ORWG,
+CAWG, RSC, and the Markets and Operations Policy Committee (“MOPC”). The proposal
+is expected to advance through the formal stakeholder approval process from August
+through November 2026, with individual working groups considering the revisions before
+final votes by MOPC on October 13, 2026, and the RSC on November 16, 2026. Assuming
+stakeholder approval, SPP intends to file the PAL/PALS proposal with the Commission on
+or before November 16, 2026. This timeline reflects SPP's collaborative stakeholder
+process, which is designed to provide multiple opportunities for education, technical
+discussion, stakeholder input, and formal approval before being filed with the Commission.
+VI.
+ONGOING WORK OF THE REAL TEAM
+
+In 2023, as mentioned above, the SPP Board established the REAL Team to assess
+SPP’s current resource adequacy construct and anticipated challenges resulting from
+resource mix changes, extreme weather impacts, increased demand, and evolving
+consumer behaviors. REAL provides guidance, prioritization, and policy recommendations
+needed to increase assurance that sufficient energy to meet load requirements can be
+continuously and cost-effectively provided within the SPP Balancing Authority Areas
+(“BAA”). The REAL Team consists of a diverse membership from various SPP
+stakeholder groups, including the SPP Board, transmission owning members, transmission
+using members, and state commission representatives.
+
+--- PAGE 27 ---
+
+27
+As seen on the REAL Teams work plan,63 the REAL Team will address a number of
+Resource Adequacy issues in 2027, including Seasonal Resource Adequacy Construct, use
+of non-firm imports in the development of the planning reserve margin, non-weather
+related load uncertainty, and the use of coincident peak instead of non-coincident peak in
+SPP’s resource adequacy requirements. Through this work, SPP is continuing its steadfast
+commitment to ensuring that SPP continues to have sufficient resource capacity to meet
+current and projected load growth in both SPP BAAs.
+VII.
+CONCLUSION
+SPP continues to work with stakeholders to refine its planning, transmission,
+market, operations, and resource adequacy frameworks as large load development
+continues to evolve across the region. The initiatives described in this report reflect SPP's
+coordinated approach to integrating large loads while preserving reliability, maintaining
+resource adequacy, and protecting existing customers. SPP respectfully requests the
+Commission accept this report as responsive to the Commission’s directive to submit an
+informational report in the Show Cause Order.
+
+Respectfully submitted,
+/s/ Meredith Powell
+
+Meredith Powell
+Attorney
+
+Southwest Power Pool, Inc.
+201 Worthen Drive
+
+Little Rock, AR 72223
+
+mpowell@spp.org
+
+63
+REAL Team meeting materials on the June 17, 2026, item number 5:
+             https://www.spp.org/Documents/76913/REAL%20Meeting%2020260617.zip
+
+--- PAGE 28 ---
+
+28
+Attorney for
+Southwest Power Pool, Inc.
+
+July 20, 2026
+
+--- PAGE 29 ---
+
+CERTIFICATE OF SERVICE
+
+I hereby certify that I have this day served the foregoing document upon each person
+designated on the official service list compiled by the Secretary in this proceeding.
+
+Dated at Little Rock, Arkansas, this 20th day of July, 2026.
+
+ /s/ Cassie Butler
+Cassie Butler
+Southwest Power Pool, Inc.
+201 Worthen Drive
+Little Rock, AR 72223-4936
+(501)

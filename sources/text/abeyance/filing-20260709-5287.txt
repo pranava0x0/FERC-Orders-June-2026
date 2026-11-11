@@ -1,0 +1,229 @@
+FERC comments — PJM — Docket EL26-67-000 — accession 20260709-5287 — Motion to Intervene and Comments of Evan Pierce re the large-load interconnection tariff provisions — Issued 2026-07-09 — 6 pp
+Extracted locally with PyMuPDF (fitz) from the document downloaded from https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260709-5287. Verbatim; source text layer preserved.
+
+
+--- PAGE 1 ---
+UNITED STATES OF AMERICA
+BEFORE THE
+FEDERAL ENERGY REGULATORY COMMISSION
+PJM Interconnection, L.L.C., et al.
+
+)
+
+Docket No. EL26-67-000
+
+I. MOTION TO INTERVENE
+New Era Energy & Digital Inc. is a data center developer pursuing data center and energy
+development in the PJM service area. New Era Energy & Digital Inc. is concerned with
+maintaining transmission reliability and affordability while advancing economic development
+associated with data centers.
+II. COMPLIANCE WITH RULE 203
+The exact name of the movant is New Era Energy & Digital Inc. New Era Energy & Digital’s
+principal place of business is located at 200 N. Loraine Street, Suite 1324, Midland, TX 79701.
+Service of pleadings, documents, and communications in this proceeding should be made on the
+following: Evan A. Pierce, Chief Development Officer – evan@newerainfra.ai
+III. INTRODUCTION AND RELEVANT BACKGROUND
+A. The Commission Opened This Section 206 Proceeding in Response to Rapid
+Large-Load Growth and the Need for Tariff-Specific Reforms in PJM.
+This proceeding arises from the Commission’s ongoing consideration of the transmission,
+reliability, affordability, and cost-allocation issues associated with the rapid growth of large
+loads, namely data centers. On October 23, 2025, the Secretary of Energy issued an advance
+notice of proposed rulemaking requesting that the Commission consider additional action to
+address the addition of large and co-located loads to the interstate transmission system.1 The
+Commission subsequently agreed that large-load growth created an urgent need for reforms to
+ensure timely, orderly, and non-discriminatory interconnection, concluded that further action was
+warranted, and announced its intent to act by the end of June 2026.2
+On June 18, 2026, the Commission instituted this proceeding under section 206 of the Federal
+Power Act—a process for examining and potentially fixing unjust or unreasonable tariff rules.3
+The Commission preliminarily found that PJM’s Open Access Transmission Tariff—the
+
+1 Ensuring the Timely and Orderly Interconnection of Large Loads, Advance Notice of Proposed Rulemaking,
+Docket No. RM26-4-000 (October 2025).
+2 Interconnection of Large Loads to the Interstate Transmission Sys., 195 FERC ¶ 61,045, at PP 2–4 (April 2026).
+3 PJM Interconnection, L.L.C., 195 FERC ¶ 61,211 (June 2026) (“Order Instituting Proceeding Under Section 206
+of the Federal Power Act”).
+
+--- PAGE 2 ---
+rulebook governing access to PJM’s transmission system—appears to be unjust, unreasonable, or
+unduly discriminatory or preferential (the Federal Power Act standard for unlawful tariff terms)
+because it lacks sufficiently clear and consistent provisions addressing the integration of large
+loads onto the PJM transmission system.4 The Commission therefore directed PJM and the PJM
+Transmission Owners to “show cause” why the Tariff remains just and reasonable without such
+provisions, or to explain what Tariff changes would remedy the Commission’s concerns if the
+Commission proceeds to establish a replacement Tariff.5
+The Commission’s order identifies four categories of tariff issues relevant here: (1) the
+application process, study procedures, and ongoing operational requirements for Eligible
+Customers (entities that may request transmission service under PJM’s tariff) seeking
+transmission service on behalf of large loads; (2) transparency and cost-recovery measures for
+Network Upgrade costs (the costs of transmission-system improvements needed to accommodate
+the service) associated with such service; (3) transmission services for flexible large loads that
+are willing and able to limit their use of the transmission system under certain conditions; and (4)
+the rates, terms, and conditions applicable to interconnection customers serving co-located load
+or electrically proximate load (meaning large demand located at or near a generation facility).6
+The Commission also directed PJM to file a report explaining how PJM will ensure that adequate
+generation will be available to serve existing and new large loads.7
+B. The Commission Identified PJM-Specific Concerns Regarding Large Loads, Co-
+Located Generation, Flexible Demand, and Resource Adequacy.
+The Commission’s concerns are substantial in PJM. The order notes that PJM’s load forecast
+predicts peak load growth of 32 GW from 2024 to 2030, with 30 GW of that growth projected to
+come from data centers.8 The order also identifies comments raising concerns that large-load
+additions in PJM are contributing to resource-adequacy, reliability, affordability, and
+interconnection-delay challenges.9 In addition, the Commission summarized concerns that
+infrastructure costs driven by data center load could be shifted to other transmission customers,
+including through Network Upgrade costs and transmission costs borne in corresponding PJM
+zones or, where applicable, the broader PJM region.10
+The Commission also emphasized the need for clearer tariff rules governing flexible large loads.
+The order recognizes that certain large loads may be willing and able to limit their withdrawals
+from the transmission system under specified conditions, and preliminarily finds that PJM’s
+
+4 Id.  PP 3, 35.
+5 Id. PP 3, 35, Ordering Para. (B).
+6 Id. PP 3, 35.
+7 Id. PP 3, 102–104, Ordering Para. (C).
+8 Id. P 8.
+9 Id. P 9.
+10 Id. PP 9–10.
+
+--- PAGE 3 ---
+Tariff appears unjust and unreasonable because it lacks transmission services reflecting those
+operational characteristics.11 Similarly, the Commission preliminarily found that PJM’s Tariff
+appears to lack generator interconnection study procedures and services that allow
+interconnection customers serving electrically proximate large load or large co-located load to
+obtain interconnection service reflecting the operational dynamics of serving such load. 12
+Finally, the Commission identified a related supply-side concern. PJM has undertaken several
+initiatives to address resource adequacy and large-load growth (whether enough generation will
+be available to meet demand reliably), including the Reliability Resource Initiative, Expedited
+Interconnection Track, voluntary “Bring Your Own New Generation” approach, and the connect-
+and-manage framework.13 The Commission nevertheless expressed concern that these efforts
+may be insufficient, particularly in light of generator retirements and tightening supply
+conditions, and directed PJM to file a detailed informational report addressing how adequate
+generation will be available to serve existing and new large loads.14
+The below comments address two issues that fall within the scope of the Commission’s order
+and should be addressed in PJM’s forthcoming filings: first, the use of “Maximum Net
+Withdrawal” as a tariff-based mechanism for evaluating large loads paired with dependable
+nearby generation; and second, fast-track treatment for safe supply additions, including uprates
+(output increases at existing power plants) and reactivation or reconnection of retired or
+mothballed capacity (existing power plants or units that are shut down or inactive), as part of
+PJM’s response to the Commission’s resource-adequacy directive.
+IV. LIMITED COMMENTS
+New Era Energy & Digital submits these limited comments to identify two issues that PJM
+should address in its forthcoming filings in this proceeding. These comments are directed to the
+specific issues raised in the Commission’s June 18, 2026 order: the treatment of generation
+serving electrically proximate or large co-located load, and PJM’s required report on the
+availability of adequate generation to serve existing and new large loads.15
+A. PJM Should Address Maximum Net Withdrawal as Part of Any Framework for
+Generation Serving Electrically Proximate or Large Co-Located Load.
+The Commission preliminarily found that PJM’s Tariff appears to be unjust and unreasonable
+because it lacks generator interconnection study procedures and services allowing an
+
+11 Id. PP 85–87.
+12 Id. PP 88–101; id. P 95.
+13 Id. PP 31–34; id. P 103.
+14 Id. PP 102–104.
+15 PJM Interconnection, L.L.C., 195 FERC ¶ 61,211, at PP 3, 35, 88–104 (2026) (“Order Instituting Proceeding
+Under Section 206 of the Federal Power Act”).
+
+--- PAGE 4 ---
+interconnection customer to seek generator interconnection service that reflects the operational
+dynamics of serving electrically proximate large load or large co-located load.16 The
+Commission also identified potential generator-side approaches under which a generating
+facility’s output could be limited to match the associated load, existing Energy Resource
+Interconnection Service or Network Resource Interconnection Service (ERIS and NRIS; two
+types of generator interconnection service under PJM’s rules) could be used with controls to
+prevent net injection (power exported onto the transmission system) above the existing
+interconnection agreement, or a new generator interconnection service could ensure no injection
+to the transmission system. 17
+PJM’s response should address the corresponding load-side issue as well. Where a large load is
+paired with dependable nearby generation and accepts binding operational limits on its reliance
+on the transmission system, PJM should evaluate the project based on the facility’s enforceable
+maximum net withdrawal from the transmission system, rather than assuming the facility will
+impose its full gross demand (the facility’s total electricity need before accounting for nearby
+generation) on the grid at all times.
+For purposes of these comments, “Maximum Net Withdrawal” means the enforceable upper
+limit, measured in megawatts at the applicable point of interconnection or delivery point, that the
+combined load/generation configuration may withdraw from the transmission system. A
+Maximum Net Withdrawal framework would not replace reliability analysis. Rather, it would
+provide the correct study assumption where the project’s physical configuration, controls, and
+service obligations make the net-withdrawal limit operationally enforceable.
+Such an approach fits the Commission’s reasoning in this order. The Commission explained that
+where a generating facility’s output is matched to the demand of electrically proximate large load
+or large co-located load, or where the generating facility’s output is limited to ensure no new
+injection, the transmission-system impacts may be limited and may reduce the need for Network
+Upgrades.18 That same principle supports studying the associated load based on an enforceable
+cap on net withdrawals where the load and generation are operated as a controlled configuration.
+PJM should therefore address whether any tariff provisions proposed in response to this order
+should include: (1) a binding net-withdrawal cap in the relevant service agreement or other tariff-
+governed arrangement; (2) real-time metering and telemetry (measurement and communications
+data visible to grid operators) for load, generation, and net withdrawals; (3) operational controls
+or protection systems sufficient to maintain withdrawals within the approved limit; (4) operator
+visibility (PJM’s ability to see and manage the facility’s grid impacts in real time) sufficient to
+
+16 Id. P 95.
+17 Id. PP 95, 98, 100.
+18 Id. PP 95–96.
+
+--- PAGE 5 ---
+preserve reliability; and (5) tariff consequences if the facility exceeds its approved Maximum
+Net Withdrawal.
+PJM should also explain what transmission service the Eligible Customer must take for a large
+load operated subject to an enforceable Maximum Net Withdrawal. The Commission expressly
+encouraged PJM to consider what type of transmission service an Eligible Customer will need to
+take on behalf of electrically proximate large load or large co-located load, noting that generator
+interconnection service does not itself convey transmission service.19 A Maximum Net
+Withdrawal framework would help answer that question by tying the associated transmission
+service to the project’s enforceable use of the transmission system, rather than to an assumption
+that the full gross load must always be served from the grid.
+B. PJM’s Resource-Adequacy Report Should Address Fast-Track Treatment for Safe
+Supply Additions.
+The Commission separately directed PJM to file an informational report explaining how PJM
+intends to ensure that adequate generation will be available to serve existing and new large
+loads.20 The Commission recognized PJM’s existing efforts, including the Reliability Resource
+Initiative, Expedited Interconnection Track, voluntary “Bring Your Own New Generation”
+approach, connect-and-manage framework, and reliability backstop procurement, but stated that
+those efforts may still fall short in light of generator retirements and tightening supply
+conditions.21
+PJM’s report should address not only how large loads can be served more quickly, but also how
+additional supply can be brought online more quickly where the system impacts are bounded and
+can be studied safely. Large-load growth presents a supply problem as well as a load-service
+problem. A complete response should therefore address whether PJM’s existing tariff and study
+processes allow expedited treatment for limited, low-risk generation additions that can increase
+available supply without requiring a full multi-year queue process.
+In particular, PJM should address whether its Tariff provides an adequate pathway for expedited
+treatment of uprates at existing generating facilities. Such treatment should be limited to
+modifications that rely on existing interconnection facilities, do not involve a change in
+generation technology or fuel type, can be evaluated independently through existing system
+models or a limited-scope study (a narrower review focused on the incremental grid impacts),
+and do not materially affect the cost or timing of lower-queued projects (those that entered the
+interconnection queue later) or already-interconnected projects. Where those conditions are met,
+
+19 Id. P 101.
+20 Order, 195 FERC ¶ 61,211 at PP 102–104, Ordering Para. (c).
+21 Id. P 103.
+
+--- PAGE 6 ---
+the incremental nature of the uprate may warrant a narrower and faster study process while
+preserving all applicable reliability requirements.
+PJM should also address whether its Tariff provides an adequate pathway for expedited
+reconnection or reactivation of retired or mothballed capacity. Such treatment should be
+available only where the relevant interconnection facilities remain available or can be safely
+restored, required permits and operating authorizations remain available or can be obtained, and
+any reliability impacts can be evaluated through a limited-scope review. The purpose would not
+be to bypass reliability review, but to avoid subjecting bounded reactivations of existing capacity
+to procedures designed for wholly new speculative projects.
+The Commission has already recognized, in this order and related precedent, that certain forms
+of generator interconnection service may allow resources to interconnect more quickly where
+their impacts are limited or where they use existing interconnection capability. PJM’s required
+resource-adequacy report should therefore identify whether existing PJM processes are adequate
+to accelerate safe uprates and reconnections, and if not, what tariff changes or stakeholder
+processes would be needed to create such a pathway.
+C. Reservation of Rights
+Because the Commission has directed PJM to file a 30-day informational report and a 60-day
+show-cause response, and has allowed interested entities to respond after those filings, New Era
+Energy & Digital submits these comments on a limited basis and reserves the right to submit
+further comments after PJM and the Transmission Owners make their directed filings.22
+V. CONCLUSION
+For the foregoing reasons, New Era Energy & Digital respectfully requests that the Commission
+grant its motion to intervene and consider these limited comments in evaluating PJM’s
+forthcoming filings in this proceeding.
+
+22 Order, 195 FERC ¶ 61,211, Ordering Paras. (B), (C), (E).

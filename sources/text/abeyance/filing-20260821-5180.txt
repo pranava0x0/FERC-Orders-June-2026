@@ -1,0 +1,1333 @@
+FERC filing — PJM — Docket ER26-3380-000 — accession 20260821-5180 — Limited Protest of Sierra Club et al. to one aspect of PJM Interconnection, LLC’s proposed Reliability Backstop Procurement — Issued 2026-08-21 — 43 pp
+Extracted locally with PyMuPDF (fitz) from the document downloaded from https://sustainableferc.org/wp-content/uploads/2026/08/20260821-5180_Limited-Protest-of-Public-Interest-Organizations.pdf. Verbatim; source text layer preserved.
+
+
+--- PAGE 1 ---
+1
+
+UNITED STATES OF AMERICA
+BEFORE THE
+FEDERAL ENERGY REGULATORY COMMISSION
+
+PJM Interconnection, LLC
+)
+)
+)
+Docket No. ER 26-3380
+
+LIMITED PROTEST OF PUBLIC INTEREST ORGANIZATIONS
+
+Pursuant to Rule 211 of the Rules of Practice and Procedure of the Federal Energy
+Regulatory Commission (“FERC” or the “Commission”),1 Sierra Club and Natural Resources
+Defense Council (“NRDC”) (collectively, “Public Interest Organizations” or “PIOs”) submit this
+limited protest of one aspect of PJM Interconnection, LLC’s (“PJM”) proposed Reliability
+Backstop Procurement (“RBP”).2 For the reasons described below, PIOs urge the Commission to
+approve PJM’s RBP Filing with a modification to either require RBP supply to be located near to
+large loads, or to require RBP supply to be fully responsible for funding necessary network
+upgrades, which will enable the RBP to better achieve its intended objectives.
+Introduction
+
+The unprecedented number of new large load additions, mostly data centers, in the PJM
+footprint has outstripped new supply, and PJM’s capacity auctions have cleared short of the
+region’s reliability requirement for consecutive auctions despite hitting auction price caps in both
+auctions.3 These shortfalls increase the risk of loss-of-load events and sustained high-capacity
+
+1 18 C.F.R. § 385.211.
+2 PJM Interconnection, L.L.C., Reliability Backstop Procurement to Address Resource Adequacy
+Concerns Stemming from Large Loads, Docket No. ER26-3380-000 (July 31, 2026), Accession
+No. 20260731-5214 (“RBP Filing”).
+3 The auction fell short by 6,623 MW and 6,831 MW of unforced capacity in the 2027/2028 and
+2028/2029 auctions, respectively. Id. at 7–8.
+
+--- PAGE 2 ---
+2
+
+prices for existing ratepayers who are not responsible for these new shortfalls. The RBP is an
+attempt by PJM to remedy these shortfalls without shifting costs to residential and other existing
+ratepayers. PJM proposes a one-time procurement of new capacity sized to the 2028/2029
+shortfall, with costs that will be allocated to the zones and load-serving entities (“LSEs”) serving
+the new large loads that are driving the unprecedented new demand.4 PIOs generally support
+PJM’s proposal to procure new capacity and allocate costs to the large loads that require it.
+
+PIOs support many aspects of the RBP Filing. For example, PJM is admirably candid
+about the fact that the capacity shortfalls are “primarily driven by the unprecedented addition of
+large loads, most notably data centers.”5 PJM also takes seriously and attempts to realize the
+Ratepayer Protection Pledge, in which the nation’s largest data center developers and utilities
+committed to “build, bring, or buy” the new generation their new demand requires and to pay
+“the full cost of those resources.”6 In an effort to ensure that costs of the RBP are borne by the
+large loads, PJM structured the RBP charges, which are reduced by Qualifying RBP Offsets
+where load has already procured its own new capacity,7 to flow to the zones where the new large
+loads are being built under a load-adjustment methodology that the Commission has already
+approved.8 PJM’s proposal achieves this cost allocation while respecting state jurisdiction by
+
+4 See id. at 7, 31, 100–04.
+5 Id. at 1.
+6 Ratepayer Protection Pledge, The White House (Mar. 4, 2026),
+https://www.whitehouse.gov/ratepayer-protection-pledge/#signatories (“White House Ratepayer
+Protection Pledge” or “Ratepayer Protection Pledge”); see RBP Filing, supra note 2, at 16–18
+(describing the Pledge and its July 23, 2026 expansion to more than 200 utilities, developers,
+cooperatives, and governors).
+7 RBP Filing, supra note 2, at 35–44.
+8 Id. at 100–02.
+
+--- PAGE 3 ---
+3
+
+assigning costs with sufficient information on which loads are the cost causers such that states
+and retail regulatory authorities are able to assign costs appropriately.9
+
+PJM’s consent to modification is a further signal that it is committed to the most effective
+RBP possible. Rather than a present a take-it-or-leave-it package, PJM “consents to the
+Commission’s exercise of authority to modify and/or sever any element of the proposed Tariff
+and RAA language,” so long as any modification “is consistent with PJM’s overarching
+objectives in this filing.”10 PJM invites stakeholders to “comment as they feel necessary and
+appropriate.”11 PIOs accept this invitation by proposing a narrow but important modification that
+the Commission can prescribe in an order approving the RBP.
+
+PJM’s consent is bounded by its “overarching objectives in this filing,” yet the RBP
+Filing never defines these objectives explicitly.12 Fairly read, however, the RBP pursues four
+objectives:
+1. Identify and procure the correct amount of capacity;
+2. Procure new capacity that is additive to the PJM system, not a mere reshuffling of
+existing resources;
+3. Procure new capacity on time; and
+4. Ensure that the large loads that require new capacity bear their full costs without shifting
+costs to other ratepayers and while preserving state authority over retail cost allocation.
+
+This limited protest identifies a narrow but important modification that will help the RBP
+advance these objectives. PJM’s proposal currently lacks any requirement regarding the location
+
+9 Id. at 99–100.
+10 Id. at 3.
+11 Id. at 132.
+12 Id. at 131.
+
+--- PAGE 4 ---
+4
+
+of RBP supply. Instead, PJM argues that RBP resources may be located anywhere in the region
+because the interconnection process will ensure that supply is initially deliverable to load, and
+the regional transmission planning process will ensure that supply remains deliverable over the
+long term. However, as discussed below, PJM’s proposal to allow RBP supply to be located
+anywhere in the footprint will make the RBP’s success reliant on large-scale network upgrades
+that will likely cause significant delays and incur significant costs. Further, the interconnection
+process and regional transmission process risk inappropriately spreading the costs of network
+upgrades to other interconnection customers and ratepayers, rather than achieving the goal of the
+RBP—and the goals of federal and state policies—to require large loads to bear their own costs.
+To remedy this defect, this protest respectfully recommends that the Commission modify the
+RBP filing by either requiring RBP supply to be located near to demand, or by requiring RBP
+supply resources to be fully responsible for the cost of network upgrades. Such a modification
+will reduce reliance on large, slow, costly network upgrades and better achieve the RBP’s
+objectives of bringing new supply online quickly and facilitating appropriate allocation of costs
+to LSEs serving new large loads.
+
+Importantly, this modification will disturb neither the RBP’s architecture nor its schedule,
+and falls squarely within PJM’s consent. This modification will help the RBP procure the new
+capacity the region needs, where it needs it, with costs borne by the large loads that require it.
+Background
+I.
+PJM’s capacity market is facing reliability and affordability concerns as PJM
+struggles to meet data center load growth.
+
+PJM’s capacity market, the Reliability Pricing Model (“RPM”), worked relatively well
+for the two decades since it was first established in 2006. Its market was built for predictable,
+gradual load growth where new generation resources could be built within the market’s three-
+
+--- PAGE 5 ---
+5
+
+year forward timeline.13 However, as load growth, generation retirement, and supply chain
+development time have all increased in the past few years, PJM has recognized that the current
+state of its market is untenable.14 PJM’s markets are facing two major pain points: (1) data center
+load is growing too fast for PJM’s supply, leading to reliability concerns; and (2) PJM’s supply
+and demand imbalance is causing high capacity prices, leading to higher bills for all ratepayers.
+A.
+PJM’s capacity market faces increased reliability risks as data center load
+grows too quickly for PJM’s supply.
+
+First, PJM’s market is facing unprecedented load growth from rising data center demand,
+causing major supply and demand imbalances and increased reliability risks. Markets across the
+U.S. have not experienced this level of demand growth in decades. Electricity demand in the
+U.S. was relatively flat from the early 2000s until the early 2020s.15 That trend has quickly
+changed. Over the next five years, the U.S. is expecting electricity usage to grow 5.7% per
+year.16 Data centers are expected to make up 25% to 55% of the total demand growth in the U.S.
+
+13 PJM, Powering Reliability Through Market Design, 4 (May 6, 2026), https://www.pjm.com/-
+/media/DotCom/library/reports-notices/special-reports/2026/20260506-powering-reliability-
+through-market-design.pdf.
+14 Id. at 3.
+15 Mark Schipper & Tyler Hodge, After More Than a Decade of Little Change, U.S. Electricity
+Consumption is Rising Again, U.S. Energy Info. Admin. (May 13, 2025),
+https://www.eia.gov/todayinenergy/detail.php?id=65264.
+16 John Wilson et. al., Grid Strategies, Power Demand Forecasts Revised Up for Third Year
+Running, Led by Data Centers, 6 (Nov. 2025), https://gridstrategiesllc.com/wp-
+content/uploads/Grid-Strategies-National-Load-Growth-Report-2025.pdf (“Grid Strategies 2025
+Load Growth Report”).
+
+--- PAGE 6 ---
+6
+
+through 2030.17 PJM predicts that 30 GW of large load demand will come online by 2030 and 70
+GW of large load demand will come online by 2038.18
+
+Most data center load growth through 2030 will be concentrated in the Electric
+Reliability Council of Texas (“ERCOT”) and PJM.19 Three states—Virginia, Texas, and
+California—host the highest concentration of data centers, and Virginia hosts the largest number
+of data centers in the country.20 PJM’s Dominion Zone, which covers Virginia, is expected to
+have the largest absolute increase in summer peak demand through 2030.21 RTO-wide, PJM
+expects its peak load growth to increase 65,733 MW by 2036 for its summer peak and 66,980
+MW for its winter peak.22
+
+PJM’s expected data center load growth is incompatible with current generation
+development timelines. While developers can typically build hyperscale data centers within 18 to
+
+17 Id. at 3; Jonathan Koomey et. al, Bipartisan Pol’y Ctr. & Koomey Analytics, Electricity
+Demand Growth and Data Centers: A Guide for the Perplexed, 10 (Feb. 2025), 
+https://bipartisanpolicy.org/wp-content/uploads/2025/02/BPC-Report-Electricity-Demand-
+Growth-and-Data-Centers-A-Guide-for-the-Perplexed.pdf. 
+18 Letter from Paula Conboy, Chair, PJM Board of Managers, to PJM Stakeholders on Critical
+Issue Fast Path – Reliability Backstop Procurement and Connect and Manage, 1 (Jul. 27, 2026),
+https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-
+disclosures/2026/20260727-board-decisional-letter-on-cifp-reliability-backstop-procurement-
+and-connect-and-manage.pdf 1 (“PJM Board July 2026 Decisional Letter”); PJM Proposes
+Framework to Connect Data Centers Without Compromising Reliability, Affordability, PJM
+Inside Lines (Aug. 13, 2026), https://insidelines.pjm.com/pjm-proposes-framework-to-connect-
+data-centers-without-compromising-reliability-affordability/.
+19 Grid Strategies 2025 Load Growth Report, supra note 15 at 5.
+20 Rebecca Leppert, What We Know About Energy Use at U.S. Data Centers Amid the AI Boom,
+Pew Research Center, Pew Research (Oct. 24, 2025), https://www.pewresearch.org/short-
+reads/2025/10/24/what-we-know-about-energy-use-at-us-data-centers-amid-the-ai-boom/.
+21 Mark Schipper & Jonathan Church, Commercial Electricity Sales Have Soared in Virginia,
+Driven by Data Centers, U.S. Energy Info. Admin. (May 5, 2026),
+https://www.eia.gov/todayinenergy/detail.php?id=67664.
+22  PJM, 2026 PJM Load Forecast Report, 6 (Jan. 14, 2026), https://www.pjm.com/-
+/media/DotCom/library/reports-notices/load-forecast/2026-load-report.pdf.
+
+--- PAGE 7 ---
+7
+
+24 months, new generation resources can spend 4 to 5 years in interconnection queues before
+coming online.23 Transmission upgrades can take even longer, with average timelines for
+transmission upgrades ranging from 7 to 10 years to plan, approve, and build.24 In short, it takes
+far longer to build new power plants than data centers.
+As a result of its supply and demand imbalance, PJM has fallen short of its reliability
+requirement for the past two base residual auctions (BRAs). PJM’s 2028/2029 BRA cleared 6.8
+GW short of PJM’s reliability requirement, while the 2027/2028 BRA cleared 6.5 GW short.25
+PJM expects that, without the Reliability Backstop Procurement, the 2029/2030 BRA in
+December would clear short as well.26 Falling below the reserve margin means that PJM has to
+operate with slimmer reserves and endure more reliability risks.27 NERC has classified PJM as
+an elevated risk area from 2026 to 2028 and a high risk area from 2029 onward.28 NERC predicts
+that as data center load growth continues to increase in the coming years, the risk of reliability
+shortfalls will increase as well.29
+
+23 Rachel Mural et. al, Data Centers and Large-Scale Electric Growth: The Virginia and Texas
+Experiences, Belfer Ctr. for Science and Int’l Aff. (Apr. 20, 2026),
+https://www.belfercenter.org/research-analysis/data-centers-texas-virginia-comparison.
+24 Id.
+25 PJM Capacity Auction Procures 138,318 MW of Generation Resources as Work Continues to
+Address Growing Electricity Demand, PJM Inside Lines (Jul. 14, 2026),
+https://insidelines.pjm.com/pjm-capacity-auction-procures-138318-mw-of-generation-resources-
+as-work-continues-to-address-growing-electricity-demand/.
+26 RBP Filing, supra note 2, at 27.
+27 PJM Capacity Auction Procures 138,318 MW of Generation Resources as Work Continues to
+Address Growing Electricity Demand, PJM Inside Lines (Jul. 14, 2026),
+https://insidelines.pjm.com/pjm-capacity-auction-procures-138318-mw-of-generation-resources-
+as-work-continues-to-address-growing-electricity-demand/
+28 N. Am. Elec. Reliability Corp. (“NERC”), 2025 Long Term Reliability Assessment (Jan.
+2026), https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf.
+29 Id. at 17.
+
+--- PAGE 8 ---
+8
+
+B.
+PJM’s capacity market faces high capacity prices, causing increases in
+ratepayers’ bills.
+
+Second, in addition to facing increased reliability risks, PJM’s market is also facing
+unsustainably high prices. The past three BRAs cleared at the price cap, clearing at $325/MW-
+day in the 2028/2029 BRA, $333.44/MW-day in the 2027/2028 BRA, and $329.17/MW-day in
+the 2026/2027 BRA. For reference, PJM’s 2024/2025 BRA cleared at $28.92/MW-day and at
+$269.92/MW-day in the 2025/2026 BRA.30 PJM’s independent market monitor (IMM) estimated
+that data centers caused 63% of the increase in prices in the 2025/2026 BRA, resulting in an
+increase of $9.3 billion in higher costs for PJM customers.31 As of January 2026, the IMM
+estimated that the costs to other customers increased by $23 billion as a result of data center
+demand in the 2025/2026, 2026/2027, and 2027/2028 BRAs.32
+
+PJM’s increased capacity costs are raising ratepayers’ bills. In June 2025, Pepco
+customers in Washington, D.C. saw their bills increase by $21 per month, and D.C.’s Office of
+Consumers’ Counsel attributed about half of that increase to the spike in capacity market
+prices.33 Similar trends are expected across PJM. In June 2026, PJM customers collectively
+began paying an additional $1.4 billion in capacity market costs driven by data center demand.34
+
+30 PJM, 2026/2027 Base Residual Auction Report, 5 (Jul. 22, 2025), https://www.pjm.com/-
+/media/DotCom/markets-ops/rpm/rpm-auction-info/2026-2027/2026-2027-bra-report.ashx.
+31 Cathy Kunkel, Projected Data Center Growth Spurs PJM Capacity Prices by Factor of 10,
+Inst. for Energy Econ. and Fin. Analysis (Jul. 30, 2025),  https://ieefa.org/resources/projected-
+data-center-growth-spurs-pjm-capacity-prices-factor-10 (“Kunkel, Projected Data Center
+Growth”).
+32 Monitoring Analytics, Analysis of the 2027/2028 RPM Base Residual Auction Part A, 3 (Jan.
+5, 2026),
+https://www.monitoringanalytics.com/reports/Reports/2026/IMM_Analysis_of_the_20272028_R
+PM_Base_Residual_Auction_Part_A_20260105.pdf.
+33 Kunkel, Projected Data Center Growth.
+34 Id.
+
+--- PAGE 9 ---
+9
+
+The increase in PJM’s capacity market prices has sparked concern from the White House,
+the 13 PJM states, the PJM board, and from data center companies themselves. On January 15,
+2026, the White House’s National Energy Dominance Council and the governors of the PJM
+states signed a joint Statement of Principles Regarding PJM, urging PJM to hold a Reliability
+Backstop Auction to procure new capacity resources for data centers and allocate the costs of
+that new capacity to Load Serving Entities (“LSEs”) with new data centers that have not
+procured their own capacity.35 Similarly, on January 16, the PJM board released a board
+decisional letter that directed PJM staff to develop several proposals to address reliability and
+affordability challenges caused by large load additions in PJM.36 Like the White House and PJM
+Governors’ Statement of Principles, PJM’s board urged PJM staff to initiate a Reliability
+Backstop Procurement and address cost allocation for LSEs that are short as a result of load
+growth in their service areas.37
+
+Lastly, the largest AI data center companies and developers in the country signed the
+White House’s Ratepayer Protection Pledge—introduced on March 4, 2026, and expanded in
+July—a voluntary commitment from data center owners to build, bring, or buy the new
+generation resources needed to satisfy their new energy demands and pay the full cost of those
+resources.38
+
+35 Statement from the White House Nat’l Energy Dominance Council & PJM Governors of
+Principles Regarding PJM, 1 (Jan. 15, 2026), https://www.energy.gov/documents/statement-
+principles-regarding-pjm.
+36 Letter from David E. Mills, Chair, PJM Board of Managers, to PJM Stakeholders on Critical
+Issue Fast Path - Large Load Additions (Jan. 16, 2026), https://www.pjm.com/-
+/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20260116-pjm-board-letter-re-
+results-of-the-cifp-process-large-load-additions.pdf.
+37 Id. at 6.
+38 White House Ratepayer Protection Pledge.
+
+--- PAGE 10 ---
+10
+
+II.
+PJM’s Reliability Backstop Proposal should be accepted with modifications to better
+achieve the RBP’s objectives.
+
+PIOs generally support PJM’s Reliability Backstop Procurement proposal but urge the
+Commission to exercise its authority to modify the proposal to better accomplish PJM’s
+objectives to: (1) procure the correct amount of capacity to meet the RBP target; (2) procure new
+capacity; (3) procure that new capacity on time; and (4) ensure that large loads that require new
+capacity bear the costs of building and connecting that capacity. Specifically, the Commission
+should accept PJM’s proposal, but only on the conditions that PJM either require RBP supply to
+be located near to large loads, which will help ensure that new supply can come online timely,
+and that reliability risks or costs associated with delivering new RBP capacity to large loads are
+not shifted to other ratepayers, or require RBP resources to cover 100% of network upgrades.
+Additionally, the Commission should encourage states to mandate take-or-pay agreements
+between LSEs and large loads to mitigate the risks of cost-shifting if a data center fails to
+materialize as expected.
+Discussion
+
+I.
+The Commission Should Only Modify PJM’s RBP Filing to Better Accomplish
+PJM’s Objectives.
+
+PJM has consented to Commission modification of “any element” of its proposal, so long
+as the modification is “consistent with PJM’s overarching objectives in this filing.”39 That
+consent is bounded by the decision in NRG Power Marketing v. FERC to not permit
+modifications that would produce “an entirely different rate design.”40 PJM’s objectives set the
+limits of what modifications the Commission can require. However, the RBP Filing does not
+
+39 RBP Filing, supra note 2, at 130–31.
+40 NRG Power Mktg. LLC v. FERC, 862 F.3d 108, 115–16 (D.C. Cir. 2017).
+
+--- PAGE 11 ---
+11
+
+include any explicit statement of PJM’s objectives. To assist the Commission’s consideration of
+modifications to PJM’s filing, PIO’s explain that the text and context of PJM’s filing reveal the
+following four objectives.
+First, procure the correct amount of capacity. PJM explains that “the primary purpose of
+the RBP Target is to determine how much UCAP MW is needed to meet the reliability
+requirement shortfall without over-procuring,”41 and the PJM Board directed the target equal the
+2028/2029 shortfall, reduced for documented bilateral contracts and self-supply arrangements for
+new capacity serving new load.42
+Second, procure new capacity. The RBP “is designed to attract new supplies of capacity
+(i.e., new ICAP), not merely incremental resource efficiencies.”43
+Third, procure new capacity on time. While the contracts are for 15 years to incentivize
+new generation,44 the need for new capacity is urgent, and therefore, the timely procurement of
+capacity is an objective of PJM’s filing.45 PJM’s ranking of offers “from earliest to latest offered
+Delivery Year” even before considering cost shows PJM’s commitment to solving the immediate
+capacity need.46
+Fourth, ensure that the large loads that require the new capacity bear its costs. The RBP
+Filing invokes the Ratepayer Protection Pledge’s commitment that large loads will pay the “full
+
+41 RBP Filing, supra note 2, at 52.
+42 Id. at 22 n.69 (quoting PJM Board July 2026 Decisional Letter at 2).
+43 Id. at 51.
+44 Id. at 42.
+45 Id. at 51 (requiring new capacity to be online no later than June 1, 2032).
+46 Id. at 75.
+
+--- PAGE 12 ---
+12
+
+cost” of the new resources their demand requires and promises an allocation under which those
+costs are not socialized to residential and other existing customers.47
+PIOs respectfully recommend that the Commission adopt this articulation of the RBP’s
+objectives and use those objectives when requiring modifications to the RBP.
+A.
+Objective One: Procure the Correct Amount of Capacity
+
+The RBP’s quantity of procured megawatts is set by administrative decision, not by
+market clearing. In the RPM auctions, the amount of capacity procured emerges from an
+administratively established demand curve interacting with competitive offers. Because the RPM
+is annual, the amount of capacity procured is revised annually and therefore responds to changes
+in the market. The RBP has no comparable self-correction. PJM sets the target, reduces it for
+verified Qualifying RBP Offsets and opt-outs, and procures the final number under fifteen-year
+commitments.48 Any over- or under-procurement is therefore locked in for fifteen years. Under-
+procurement of new capacity leaves a reliability gap the RBP is designed to fix, which leaves
+customers exposed to increase loss-of-load risk. Over-procurement would mean that the
+participating zones and LSEs are stuck with fifteen years of charges for capacity they don’t need.
+PJM describes “the primary purpose of the RBP Target” as determining “how much UCAP MW
+is needed to meet the reliability requirement shortfall without over-procuring,” and it built the
+matching rules to “avoid[] over-procurement, under-procurement, and double-counting.”49
+In evaluating the RBP and any modifications proposed in this protest and by other parties, the
+Commission should ensure that the RBP procure the right amount of needed capacity. A
+
+47 Id. at 16–18.
+48 Id. at 31–34.
+49 Id. at 52, 37.
+
+--- PAGE 13 ---
+13
+
+modification that improves the correspondence between the quantity procured and the shortfall
+that actually exists advances this objective and falls squarely within PJM’s consent.
+B.
+Objective Two: Procure New Capacity
+
+The second objective recognizes that the shortfall was due to a lack of steel in the ground
+supply rather than a mispricing of existing megawatts of supply. The need for genuinely new
+supply is recognized by the PJM Board, the Governors’ Principles, and the Ratepayer Protection
+Pledge. The RBP, therefore, “is designed to attract new supplies of capacity (i.e., new ICAP), not
+merely incremental resource efficiencies, to address the current capacity shortfall and a provide
+stable, long-term source of capacity.”50 If, for example, the RBP merely allowed existing
+resources to move from the RPM to the RBP, the entire process would be an exercise in wealth
+transfers with no reliability benefits. Genuinely additive procurement, by contrast, protects
+existing customers from paying for reliability problems they did not cause while also providing
+new load with long-term sources of generation.
+The Commission should therefore make additionality a core touchstone as it evaluates the
+RBP Proposal and any proposed modification. The Commission should ask: does the resource
+add installed capacity that the system did not have before? A modification that admits
+demonstrably additive resources enlarges the pool of new supply and advances the objective
+while increasing competition, improving speed to power, and lowering costs. A modification that
+would relax the screen against reshuffled or paper capacity is contrary to the objective and
+therefore should be dismissed by the Commission.
+
+50 Id. at 51.
+
+--- PAGE 14 ---
+14
+
+C.
+Objective Three: Procure New Capacity on Time
+
+The third objective recognizes that the need for new capacity is based on an existing
+shortfall, not a mere trend or forecast. The 2027/2028 and 2028/2029 auctions have already
+cleared short, and capacity is valuable for reliability only when it is installed. Supply arriving in
+2035 does nothing for loss-of-load risk in 2029. The RBP Proposal recognizes this urgency in its
+selection criteria. The RBP only allows projects that can demonstrate a feasible commercial
+operation date of June 1, 2032, or earlier.51 Once it collects all eligible projects, PJM then selects
+offers “in rank order from earliest to latest offered Delivery Year,” and only then by levelized
+cost. This means that PJM is willing to pay a higher price for capacity that arrives sooner.52
+Timeliness of projects is also important because PJM proposes to reset the trigger for the
+Tariff’s pre-existing Reliability Backstop Auction so that no such auction can occur unless BRAs
+clear short for three consecutive Delivery Years beginning with 2032/2033. PJM justifies this by
+assuming that “all RBP Resources should have reached their respective commercial operational
+dates” by that delivery year.53 The Commission should, therefore, recognize that significant
+reliability risks hang on the ability of the RBP to actually procure new supply in the next few
+years.
+The Commission should therefore treat speed to power as a key objective when
+evaluating the RBP Proposal and any proposed modifications. Where the Commission finds that
+the RBP will not actually bring new supply online quickly, it should require changes. Where a
+modification would improve speed to power, the Commission should consider adopting such
+
+51 Id. at 72.
+52 Id. at 75.
+53 Id. at 123–25.
+
+--- PAGE 15 ---
+15
+
+modification and vice versa. Similarly, the Commission should reject proposals that exclude
+resources that can be rapidly deployed or that tolerate slippages in commercial operation date.
+D.
+Objective Four: Ensure That the Large Loads That Require New Capacity
+Bear Its Costs.
+
+PJM and its stakeholders recognize that new large loads, especially data centers, are
+uniquely responsible for the failure of recent auctions to clear at desired reserve margins. This
+failure to meet reliability standards puts everyone in the PJM footprint in danger of increased
+loss-of-load events. The RBP is designed to shore up that shortfall through new supply. Because
+these new costs are so clearly and uniquely caused by the massive expansion of data centers and
+similar new large loads, cost causation principles require that the RBP allocate costs to those new
+large loads. This is not a controversial position. The nation’s largest data center developers
+pledged to pay the “full cost” of the new resources their demand requires.54 The thirteen PJM
+governors pledged to direct these costs to “new data center loads that have not otherwise
+procured capacity or agreed to be curtailable.”55 PJM promises that RBP costs “will not become
+stranded costs, which would ultimately be socialized.”56 It is therefore crucial that the RBP fulfill
+its objective of ensuring that new large loads actually pay for the new supply they need.
+The Commission should apply this objective when evaluating the RBP and any proposed
+modifications. Commission and PJM jurisdiction over ratemaking, however, extends only so far.
+States set retail rates, which are actually charged to individual ratepayers—be they residential
+customers or data centers—for capacity charges assigned to LSEs by PJM. It is therefore
+
+54 Id. at 17 (quoting White House Ratepayer Pledge).
+55 Id. at 12 (quoting Statement from the White House Nat’l Energy Dominance Council & PJM
+Governors of Principles Regarding PJM, 2 (Jan. 15, 2026),
+https://www.energy.gov/documents/statement-principles-regarding-pjm).
+56 Id. at 109.
+
+--- PAGE 16 ---
+16
+
+imperative that states and LSEs have the information necessary to assign costs to the new large
+loads that are responsible for the need for this new supply procured through the RBP. The
+Commission should reject any component of the RBP that fails to sufficiently meet this cost
+allocation objective and should adopt the modifications that best realize this objective.
+Taken together, the four objectives listed above state what PJM designed the RBP to do:
+procure the correct amount of new capacity, on time, at the cost of the large loads that require it.
+The Commission should evaluate any proposed modifications to PJM’s RBP filing against these
+objectives and should adopt PIOs’ narrow modification described below, which will help ensure
+that the RBP meets PJM’s objectives.
+II.
+The Commission should modify the RBP by requiring RBP supply to be located new
+large loads in order to minimize delays and the risk of cost-shifting.
+
+To ensure that PJM accomplishes its objectives to procure the (1) correct amount of (2)
+new capacity (3) on time to meet the 2028/2029 shortfall and (4) allocate the costs of that
+capacity to new data center load, PJM must include a locational deliverability requirement for
+RBP Sell Offers. Prioritizing RBP resources that are closer to zones with large load growth will
+ensure that RBP resources are not bogged down with large network upgrades that can cause
+delays or high costs that could be passed onto other customers through the interconnection queue
+or RTEP. Failing to include a locational requirement in the RBP imperils the RBP’s ability to
+achieve its objectives in several ways. First, the absence of a locational requirement increases the
+likelihood that high network upgrade costs may prevent RBP resources from showing up at all,
+failing the objectives to procure (1) the correct amount of (2) new capacity. Similarly, because
+the absence of a locational requirement makes it more likely that RBP resources may require
+significant network upgrades, it also increases the risk of network upgrade delays, failing the
+objective to bring resources online quickly to meet the 2028/2029 shortfall. Furthermore, the
+
+--- PAGE 17 ---
+17
+
+high costs of network upgrades could also be spread to other interconnection customers or to
+residential customers through the RTEP process, failing the objective to allocate RBP costs to
+data centers. The Commission should modify PJM’s proposed tariff to correct this problem by
+including a requirement that RBP resources be located in the same zone as the large loads they
+serve. This locational deliverability requirement would address each of the problems described
+above and help better accomplish each of the RBP’s objectives.
+Additionally, the Commission could modify PJM’s RBP filing by requiring RBP
+resources to pay 100% of network upgrade identified through the interconnection process. This
+modification would prevent initial network upgrade costs from being shifted to other
+interconnection customers or flowing through to ratepayers. However, this modification would
+not prevent cost-shifting that could occur if future RTEP processes identify the need for upgrades
+to maintain deliverability. Similarly, this modification would not prevent large, costly, slow
+network upgrades from delaying or deterring the successful completion of RBP supply projects.
+For these reasons, a modification to require RBP supply to pay 100% of the network upgrade
+costs identified in the interconnection process is only a partial solution that will not accomplish
+all of the RBP’s objectives. Accordingly, PIOs respectfully suggest that the Commission view
+this modification as additional to a requirement that RBP supply be located near large loads, not
+as a completely sufficient alternative modification.
+Currently, PJM’s RBP proposal plans to procure capacity RTO-wide, with its
+procurement target based on the region-wide shortfall.57 PJM does not intend to match specific
+supply to specific demand or consider locational constraints in the RBP.58 PJM’s proposal
+
+57 Id. at 33.
+58 Id.
+
+--- PAGE 18 ---
+18
+
+acknowledges that there are locational considerations for resource adequacy but states that it
+does not need to consider locational constraints in the RBP because PJM does not have the
+information necessary to determine the locational parameters for the RBP’s 15-year commitment
+term.59 PJM worries that including locational considerations in the RBP would result in over- or
+under-procurement.60 PJM asserts that its interconnection process and its RTEP process will
+ensure the deliverability of RBP resources.
+Though PJM’s concern about the risk of over- and under-procurement with respect to
+locational deliverability appears reasonable, PJM fails to properly consider the reliability and
+affordability risks associated with having resources located farther away from the load they
+intend to serve. PJM’s failure to consider locational deliverability in supply bids in the RBP will
+risk: (1) deliverability issues due to transmission constraints if RBP resources are located far
+away from the zones with large loads; (2) higher costs from the new transmission infrastructure
+needed to get new capacity to new large load in different zones, which will be socialized to other
+interconnection customers or ratepayers; and (3) substantial delays to the deliverability of RBP
+supply due to the slow pace of network upgrade construction. These outcomes are not consistent
+with PJM’s objectives to procure 6.8 GW of new capacity by 2032 (at the latest) and to allocate
+the costs of that capacity to data centers procuring capacity through the RBP. To better align the
+RBP with PJM’s objectives, the Commission should modify PJM’s proposal to prioritize RBP
+resources that are in the same zones as large loads, or at least to include requirements that new
+RBP supply will be responsible for 100% of the costs of network upgrade needed to ensure their
+deliverability.
+
+59 Id. at 34.
+60 Id.
+
+--- PAGE 19 ---
+19
+
+A.
+PJM’s proposal to exclude a locational requirement for RBP generation bids
+could lead to reliability risks.
+
+PJM’s decision to exclude a locational requirement in the RBP will increase risks of non-
+delivery or delayed delivery if generation resources procured through the RBP are outside of
+zones with growing large load demand. As proposed, the RBP relies on the assumption that PJM
+will be able to build network upgrades quickly enough to get RBP resources online in the next
+three to six years.61 This assumption is overly ambitious at best and unrealistic at worst. Recent
+analysis shows that most new power plants faced network upgrade timelines of at least three
+years after those projects had already cleared the queue.62 As of April 2026, about half of the
+projects in TC2 were delayed by baseline upgrades, with average construction timelines of about
+5 years.63 Projects just entering the queue or without a signed interconnection agreement will
+take much longer. Resources that require larger network upgrades, like resources that are farther
+away from load, will likely take longer to interconnect due to network upgrade construction
+delays.
+The risks associated with large network upgrades are not speculative. Recently, the high
+network upgrade costs and long construction timelines affected several projects in PJM’s
+Reliability Resource Initiative (“RRI”)—an interconnection fast-track that aimed to procure
+purportedly “shovel-ready” projects that could come online quickly to meet PJM’s near-term
+capacity needs. However, the RRI procured large projects that resulted in the need for large,
+
+61 PJM aims to get resources online by the 2028/2029 delivery year at the earliest and by the
+2032/2033 delivery year at the latest. RBP Filing, supra note 2, at 38–40.
+62 Yamit Lavi et. al, Unlocking the Grid, NRDC (Apr. 7, 2026),
+https://www.nrdc.org/resources/unlocking-grid.
+63 Devin Leith-Yessian, PJM Receives 811 Interconnection Requests in Queue Cycle 1, RTO
+Insider (Apr. 29, 2026), https://www.rtoinsider.com/131291-pjm-receives-811-interconnection-
+requests-queue-cycle-1/.
+
+--- PAGE 20 ---
+20
+
+lengthy network upgrades, causing a significant proportion of RRI projects to withdraw after
+being assigned network upgrade costs. 10 out of 51 RRI projects withdrew from the
+interconnection process, with two projects dropping out before being studied, and eight projects
+dropping at the first decision point in TC2.64 2 of the 3 largest RRI projects withdrew in
+November 2024, shortly after PJM determined their network upgrade costs.65 The two projects
+represented a quarter of the RRI’s total capacity.66 The RRI’s 28% drop-out rate67should have
+been a lesson for PJM: procuring resources that need large, time-consuming network upgrades
+increase the likelihood that those resources will not be able to deliver the capacity that resources
+need by PJM’s desired commercial operation date. To avoid making the same mistake as it did in
+the RRI, PJM should focus on procuring resources that will require smaller, less costly network
+upgrades.
+If PJM’s objectives are to (1) procure enough (2) new capacity (3) to meet the 2028/2029
+shortfall by 2032 at the latest, then PJM should prioritize resources that can be built the fastest.
+Resources that are farther away from zones with RBP allocations will most likely require large
+
+64 Claire Lang-Ree & Tom Rutigliano, Unlocking Storage is the Solution to Data Center Strain,
+NRDC (Jan. 29, 2026), https://www.nrdc.org/bio/claire-lang-ree/unlocking-storage-solution-
+data-center-strain.
+65 PJM maintains an interconnection queue tracker. See PJM, Cycle Service Request
+Status, https://www.pjm.com/planning/m/cycle-service-request-status (last accessed August 20,
+2026). RRI withdrawals were identified by cross-referencing the withdrawals in the tracker by
+Project ID number. See also PJM, RRI Additional Summaries, slides 6–8 (May 6,
+2025), https://www.pjm.com/-/media/DotCom/committees-
+groups/committees/pc/2025/20250506/20250506-rri-addendum---post-meeting.pdf. The
+withdrawn RRI projects are AH1-676, AH1-690, AH1-697, AH1-705, AH1-707, AH1-717, AH1-
+720, AH1-726, and AH1-729, and AH1-735 totaling over 3.76 gigawatts of capacity.
+66 Id. The two largest withdrawals are AH1-690 and AH1-676.
+67 Claire Lang-Ree & Tom Rutigliano, Unlocking Storage is the Solution to Data Center Strain,
+NRDC (Jan. 29, 2026), https://www.nrdc.org/bio/claire-lang-ree/unlocking-storage-solution-
+data-center-strain.
+
+--- PAGE 21 ---
+21
+
+network upgrades that will take longer to build. To ensure that the RBP selects the fastest, most
+efficient resources to meet PJM’s objectives, the Commission should modify PJM’s proposal to
+require that PJM consider locational deliverability in RBP sell offers. The Commission can
+either: (1) require RBP resources to be located within zones with RBP allocations or (2) add
+locational proximity into the RBP’s scoring criteria, so that projects sited near load growth areas
+are scored higher.
+Commission precedent supports the inclusion of a locational deliverability requirement in
+the RBP. The Commission previously found that PJM must include locational requirements in its
+capacity market structure to ensure that supply is deliverable to the LSEs it is serving. The lack
+of a locational element in PJM’s capacity market was one of the primary reasons that the
+Commission found PJM’s capacity market unjust and unreasonable before establishing the
+RPM.68 The Commission found that “the lack of a locational element [in the RPM] is a
+contributing factor to reliability problems within PJM”69 and that the lack of a locational element
+created a market structure that did not ensure that supply was available to all areas.70 In that
+proceeding, PJM itself acknowledged that its capacity market structure was flawed because it
+allowed LSEs to contract with resources located anywhere within PJM regardless of whether
+transmission constraints would prevent delivery.71 Yet, in its RBP proposal, PJM will procure
+capacity from anywhere within PJM without regard to whether it can be delivered in a timely and
+reliable manner to the zones with RBP allocations. The Commission’s and PJM’s reasoning in
+
+68 Order Denying Rehearing and Approving Settlement Subject to Conditions, 117 FERC ¶
+61,331 at P 20 (2006).
+69 Initial Order on Reliability Pricing Model, 115 FERC ¶ 61,079 at P 49 (2006).
+70 Order Denying Rehearing and Approving Settlement Subject to Conditions, 117 FERC ¶
+61,331 at P 2 (2006).
+71 Id. at P 14.
+
+--- PAGE 22 ---
+22
+
+the 2006 order makes clear that PJM’s current RBP will not accomplish PJM’s objectives to
+procure enough capacity to meet the RBP target on time because the RBP does not ensure that
+RBP supply can actually be delivered to RBP buyers by the time it is needed. Even if the
+interconnection process and RTEP can ensure eventual deliverability after the RBP closes, those
+processes cannot ensure that RBP supply will come online on time without lengthy network
+upgrade delays.
+PJM’s proposal does not explain why the lack of a locational element in its proposal will
+not lead to deliverability concerns. PJM argues that it will not calculate locational parameters 15
+years out because PJM does not have the information needed to determine those parameters 15
+years ahead. PJM states that if it were to include locational parameters in the RBP based off of
+today’s conditions, then the results would be inevitably skewed based on “nothing more than
+speculation as to the state of the system ten and fifteen years from now,” leading to over-
+procurement or under-procurement.72 PJM adds that the inclusion of a locational parameter
+“would ignore the fact that ‘PJM’s interconnection process ensures the initial deliverability of
+new capacity to the RTO.’”73 PJM also notes that the RTEP process “studies and addresses any
+transmission upgrades needed to ensure ongoing deliverability of capacity resources.”74 Each of
+these rationales for excluding a locational deliverability requirement is flawed.
+To PJM’s first point, that it does not have the information needed to project locational
+parameters 15-years ahead, PJM does have some locational information that it can use to project
+load demand in certain areas, similar to the three-year forward forecast it uses in the RPM or
+
+72 RBP Filing, supra note 2, at 34.
+73 Id. at 34.
+74 Id. at 34.
+
+--- PAGE 23 ---
+23
+
+long-term load forecasts for resource adequacy planning.75 PJM can choose its comfort level
+with projecting locational parameters, whether it wants to use projections for three years, five
+years, ten years, or fifteen years, but any locational considerations will be better than none. For
+example, the Capacity Emergency Transfer Objective and Capacity Emergency Transfer Limit
+(“CETO/CETL”) figures that PJM used for the 2028/2029 auction could be a helpful parameter.
+While those CETO/CETL limits might not necessarily persist for the full 15-year term of the
+RBP contracts, they are a reasonable input for a locational deliverability requirement, especially
+because they correspond to the same auction that led to the shortfall the RBP attempts to resolve.
+PJM knows the load growth hotspots right now, like Northern Virginia, Ohio, and Pennsylvania,
+and can reasonably expect that load will continue to grow in those areas, considering that there
+are no indications that load growth is slowing down.76 PJM should prioritize generation closer to
+those areas that matches the load growth in those areas, where PJM knows load is growing the
+fastest.
+  PJM’s second point, that the results of the RBP will be inevitably skewed based on
+“nothing more than speculation as to the state of the system ten and fifteen years from now,” is
+inconsistent with the rest of PJM’s proposal. The RBP target is the reliability shortfall from the
+2028/2029 BRA, which is based on load forecasts from EDCs. The RBP will procure 15-year
+contracts to meet that forecasted load. The RBP itself is speculating that that projected load will
+show up and that 15 years of capacity needs to be procured for that load. The RBP is betting on
+
+75 See PJM, 2026 PJM Load Forecast Report (Jan. 14, 2026), https://www.pjm.com/-
+/media/DotCom/library/reports-notices/load-forecast/2026-load-report.pdf.
+76 Zachary Skidmore, Dominion Sees No Slow Down in Northern Virginia Data Center Demand,
+Proposes New Electricity Rates for Large Load, Data Ctr. Dynamics (May 2, 2025),
+https://www.datacenterdynamics.com/en/news/dominion-reports-high-data-center-demand-in-
+northern-virginia-proposes-new-electricty-rates-for-large-load-customers/.
+
+--- PAGE 24 ---
+24
+
+the state of the system fifteen years out from the 2028/2029 delivery year using load growth
+estimates for 2029. It is unclear why PJM would find that speculation acceptable enough to
+assign 15-year obligations to LSEs but not enough to develop locational parameters based on
+those same projections. PJM already knows where the load growth concerns are today and is
+procuring capacity for that load. Consequently, PJM should at least optimize planning to ensure
+that the capacity can meet the load its planning for.
+To PJM’s third point, the idea that the interconnection process and RTEP will catch all
+deliverability concerns, ignores the fact that one of PJM’s objectives is to get capacity online
+quickly, and ignores the goal of making sure large loads pay their fair share of costs, because
+RTEP is socialized to all load, as detailed in the next section. The interconnection process and
+RTEP can ensure that supply will eventually be deliverable but cannot ensure that supply will be
+deliverable to load on time. The risks of network upgrade delays are known, especially for large
+projects. Resources located outside of zones with RBP allocations will require larger network
+upgrades to ensure deliverability than resources that are located within the zones. This may
+require lengthier interconnection studies and will likely require longer network upgrade
+development time. With the average network upgrade timeline taking at least 3 years77 after a
+resource makes it through the queue, which now takes 1 to 2 years,78 the RBP is increasing the
+likelihood that resources will be delayed in coming online on time to meet the RBP’s objectives.
+In short, a locational deliverability requirement will help PJM achieve the RBP’s objective of
+promptly bringing online much-needed new supply.
+
+77 Yamit Lavi et. al, Unlocking the Grid, NRDC (Apr. 7, 2026),
+https://www.nrdc.org/resources/unlocking-grid.
+78 PJM, Fact Sheet: New, Faster Generation Interconnection Process (May 21, 2026),
+https://www.pjm.com/-/media/DotCom/about-pjm/newsroom/fact-sheets/interconnection-reform-
+progress-fact-sheet.pdf.
+
+--- PAGE 25 ---
+25
+
+It’s important to note that, as PJM mentions in its proposal, if load patterns do change,
+PJM can use RTEP’s annual studies to identify any transmission upgrades needed to ensure
+ongoing deliverability of RBP resources. However, even in this scenario, a locational reliability
+requirement will likely minimize the network upgrades needed. The zones experiencing
+significant large load growth are more likely to continue to do so than other zones. Locating RBP
+supply near to those zones will be more likely to ensure smaller network upgrades and faster
+deliverability timelines in the immediate term and will minimize the need for future network
+upgrades in comparison to PJM’s proposal to permit RBP supply to be developed anywhere in
+the region.
+The Commission could modify PJM’s proposal to address locational deliverability in a
+few ways. PJM could require RBP resources to be located within a certain zone or require that
+RBP resources be located within a reasonable electrical radius to large loads to minimize the risk
+of lengthy network upgrades. In the alternative, PJM could add a locational component to its
+selection criteria, where proximity to the top 5 load growth zones can be weighed alongside
+commercial operation date, but before considering price. This would ensure that projects outside
+of a particular zone can participate, but those closer to the zone would be prioritized. By
+choosing resources based off of commercial operation date and location first, PJM could ensure
+that the RBP procures the resources that can come online the fastest. PJM is concerned that
+modifications to the filing could jeopardize the commencement of the RBP in September and
+encourages the Commission to ensure that proposed modifications allow for quick and efficient
+implementation.79 The modifications suggested above will not jeopardize PJM’s timeline. The
+modifications recommended in this section do not require that PJM get their locational
+
+79 Id.
+
+--- PAGE 26 ---
+26
+
+parameters perfect; they only require that PJM do its best with the information it already has. The
+various modifications proposed in this section are flexible and allow the Commission and PJM to
+consider which modifications can be done within PJM’s desired timeline. The modifications
+suggested will both ensure that PJM can begin the RBP in September and that resources can be
+delivered on time without unnecessary upgrade delays.
+B.
+PJM’s proposal will unjustly and unreasonably shift costs to other
+interconnection customers or ratepayers.
+
+Looking beyond the deliverability risks associated with omitting a locational requirement
+in the RBP, PJM’s proposal also fails to consider the cost-shifting risks that the proposal will
+create. PJM argues that inclusion of a locational parameter in the RBP would “ignore the fact
+that ‘PJM’s interconnection process ensures the initial deliverability of new capacity to the
+RTO,’”80 but PJM fails to consider that its reliance on the interconnection process to guarantee
+initial deliverability ignores the risks of shifting costs to other interconnection customers or
+ratepayers. Although PJM’s interconnection process can ensure that RBP resources will initially
+be deliverable to LSEs with RBP allocations (once network upgrades are complete), the RBP’s
+lack of a location requirement increases the likelihood that network upgrade costs and
+interconnection study costs will be higher if supply resources are located farther away from the
+zones they will serve. Other resources in interconnection clusters may share the initial costs of
+connecting RBP resources. Those costs will then be passed onto other ratepayers in higher
+energy costs. This kind of cost-shifting is inconsistent with PJM’s objective to allocate all costs
+of procuring capacity for new large loads to those large loads. Additionally, this cost-shifting is
+
+80 RBP Filing, supra note 2, at 34.
+
+--- PAGE 27 ---
+27
+
+inconsistent with the Ratepayer Protection Pledge and the Commission’s June 18 Large Load
+Order.81
+1.
+The RBP will likely shift costs of network upgrades to other
+interconnection customers and to all PJM load.
+The RBP raises cost-shifting concerns for network upgrades in the interconnection
+process. Order No. 2023 requires transmission providers to initially allocate network upgrade
+costs among interconnection customers, based on a proportional impact method.82 The Order
+also requires costs of network upgrades at substations to be allocated equally among each
+generation facility interconnection to the same substation.83 The lack of a locational element in
+the RBP raises the likelihood that RBP resources could be located farther away from LSEs with
+RBP allocations, increasing the risk of needing larger network upgrades to ensure that the RBP
+resources will be deliverable. These network upgrades are inefficient and unnecessary, as a
+locational requirement in the RBP would mitigate the need for these upgrades and likely yield
+deliverable capacity more quickly and cheaply. Interconnection customers in the same cluster as
+one of these RBP resources will need to share in those network upgrade costs if the customers
+interconnect to the same substation or in any way benefit from or contribute to the need for the
+upgrade. In this scenario, higher network upgrade costs from a network upgrade that ensures load
+deliverability from an RBP resource to a zone with an RBP allocation means higher shared costs
+for every resource in that cluster.
+
+81 See White House Ratepayer Protection Pledge; see also Order Instituting Proceeding Under
+Section 206 of the Federal Power Act, 195 FERC ¶ 61,211 (Jun. 18, 2026) (“Large Load
+Order”).
+82 Improvements to Generator Interconnection Procedures and Agreements, 184 FERC ¶ 61,054
+at P 453 (2023) (“Order No. 2023”).
+83 Id. at P 454.
+
+--- PAGE 28 ---
+28
+
+Generators will pass these higher costs onto ratepayers. PJM acknowledges this
+possibility for customers of RBP resources, stating in its proposal that “[s]ellers will have the
+opportunity to reflect on the anticipated cost of any network upgrades, estimated or final,
+associated with the RBP Resource’s provision of capacity in the RBP Sell Offer.”84 Non-RBP
+resources in the same cluster will similarly have to consider how to price their generation to
+recover costs of high shared network upgrades. Thus, inefficient planning in the RBP will result
+in unnecessarily high network upgrades and subsequently result in higher prices from generators
+and higher costs for ratepayers.
+2.
+The RBP will likely shift the costs to study RBP resources to other
+interconnection customers.
+Additionally, the RBP raises cost-shifting concerns for interconnection study costs caused
+by RBP resources. Under Order No. 2023, costs of cluster studies are shared between
+interconnection customers on a per capita and pro rata MW basis.85 Order No. 2023’s study cost
+allocation requirements acknowledge that cluster study costs are affected by the number of
+interconnection requests and the size of the proposed generators in each cluster.86 Order No.
+2023 recognizes that the megawatt size of projects in an interconnection cluster contributes
+significantly to the total cost of a cluster study.87 The Order also recognizes that complex studies
+can lead to correspondingly higher study costs.88 Without a locational component in the RBP,
+RBP resources may need more complex studies to ensure load deliverability if they are located
+
+84 RBP Filing, supra note 2, at 56.
+85 Order No. 2023, supra note 81 at P 416.
+86 Id. at P 418.
+87 Order No. 2023, supra note 81 at P 418.
+88 Id. at P 418.
+
+--- PAGE 29 ---
+29
+
+farther away from LSEs with RBP allocations. The costs of these complex studies could increase
+costs for other customers in the cluster. PJM could decrease the risk of this cost-shifting by
+considering locational deliverability in the RBP prior to the interconnection process. Instead,
+PJM chooses to unnecessarily burden other interconnection customers with an increased risk of
+complex cluster studies and higher study costs.
+3.
+PJM’s proposal will unjustly and unreasonably shift costs to all PJM
+customers through RTEP.
+PJM’s proposal also risks shifting significant transmission costs to all PJM customers
+through the RTEP process. PJM’s RBP filing reasons that a locational element in the RBP is
+unnecessary because PJM’s RTEP will study and address any transmission upgrades needed to
+ensure the deliverability of capacity resources to load.89 Unlike in the standard interconnection
+process, where generation pays for costs of upgrades, reliability-driven upgrades identified
+through RTEP are paid for by load. As a result, the costs of any reliability-driven upgrades that
+are caused by any transmission constraints associated with RBP resources and identified through
+RTEP will be unjustly and unreasonably socialized to all load in PJM, which fails to achieve
+PJM’s objective to allocate RBP costs to LSEs with large loads and is inconsistent with the
+Ratepayer Protection Pledge.
+In 2024, utilities in 7 PJM states passed $4.3 billion in data center-driven transmission
+costs onto customers in their service area.90 In early 2026, PJM’s board approved $11.8 billion in
+
+89 RBP Filing, supra note 2, at 34.
+90 Mike Jacobs, Union of Concerned Scientists, Connection Costs: Loophole Costs Customers
+Over $4 Billion to Connect Data Centers to Power Grid, Union of Concerned Scientists, 3 (Sep.
+2025), https://www.ucs.org/sites/default/files/2025-
+09/PJM%20Data%20Center%20Issue%20Brief%20-%20Sep%202025.pdf.
+
+--- PAGE 30 ---
+30
+
+transmission projects identified as a part of PJM’s RTEP window 1.91 PJM’s baseline project
+spending almost doubled from its spending in 2024 and 2023, with baseline projects costing $5.9
+billion in the 2024 RTEP and $6.6 billion in 2023.92 The increase in upgrades are driven, in large
+part, by increases in data center load in Virginia and throughout the PJM region overall.93 For
+instance, $4.8 billion of the 2025 RTEP upgrades will go to the Dominion area alone.94
+As baseline project spending increases, PJM needs to be more efficient in its transmission
+planning. There is growing frustration surrounding RTEP spending on data center-driven projects
+and how those costs are being allocated to PJM customers.95 Ignoring deliverability constraints
+in the RBP will increase the likelihood that inefficient, costly upgrades will be identified in
+PJM’s RTEP and will be unjustly and unreasonably allocated to load.
+4.
+The RBP risks cost shifts that are inconsistent with the Ratepayer
+Protection Pledge and the Commission’s Large Load Orders.
+
+a.
+Cost-shifts in the RBP violate the Ratepayer Protection Pledge
+and the Commission’s June 18th Large Load Orders.
+
+The lack of a locational element in the RBP will likely cause cost-shifts that violate the
+Ratepayer Protection Pledge and the Commission’s June 18th Large Load Orders. The
+
+91 Ethan Howland, PJM Board Approves $11.8B Transmission Expansion Plan, Util. Dive (Feb.
+17, 2026), https://www.utilitydive.com/news/pjm-rtep-transmission-expansion-plan-dominion-
+nextera-exelon/812311/.
+92 Id.
+93 PJM Reviews Preliminary Recommended Projects for 2025 RTEP Window 1, PJM Inside
+Lines (Dec. 10, 2025), https://insidelines.pjm.com/pjm-reviews-preliminary-recommended-
+projects-for-2025-rtep-window-1/.
+94 Ethan Howland, PJM Board Approves $11.8B Transmission Expansion Plan, Util. Dive (Feb.
+17, 2026), https://www.utilitydive.com/news/pjm-rtep-transmission-expansion-plan-dominion-
+nextera-exelon/812311/.
+95 Complaint Requesting Fast Track Processing of the Maryland Office of People’s Counsel, at
+17–19, Docket No. EL26-63 (May 7, 2026), Accession No. 20260507-5026.
+
+--- PAGE 31 ---
+31
+
+Commission should modify PJM’s proposal to ensure that other PJM customers do not pay for
+costly upgrades for RBP resources. The Commission can easily fix this issue by either: (1)
+requiring RBP supply to be in the same LDA as large loads; or (2) requiring RBP supply to be
+100% responsible for network upgrade costs, which will be reasonably allocated to LSEs with
+RBP allocations through RBP supply offers.
+First, the Commission should modify PJM’s proposal because it violates the Ratepayer
+Protection Pledge. The Ratepayer Protection Pledge was signed by 7 of the largest U.S
+hyperscalers, more than 250 utilities and cooperatives, and 38 data center developers. In this
+pledge, companies that signed on promised to cover all new delivery upgrades required to
+service network upgrade costs to ensure that those costs are not shifted to ordinary households.96
+In the RBP context, this pledge would cover the network upgrade costs identified in the
+interconnection process and through RTEP. The signees also promised to procure the generation
+resources needed for their energy demand and pay the full cost of procuring that energy.97 This
+promise should include covering both the costs of building network upgrades and the study costs
+of connecting needed supply.
+The RBP does not currently allow data centers to fulfill their promise to its full extent.
+Without a locational requirement for RBP resources, RBP resources may be located far from the
+load they are meant to serve—increasing the likelihood for expensive network upgrades needed
+to get the capacity to the loads it intends to serve. Data center companies that have promised to
+pay for all of the network upgrades needed to serve their load cannot do so if the costs of their
+network upgrades are shared by other new generators through the interconnection process or
+
+96 White House Ratepayer Protection Pledge.
+97 Id.
+
+--- PAGE 32 ---
+32
+
+allocated to all load through the RTEP. The Data Center Coalition acknowledged some of this
+tension in its RBP proposal, stating that an RBP with no locational commitment constraint could
+increase RTEP costs over time as PJM identifies transmission reliability constraints.98 As the
+DCC recognizes, data centers cannot fulfill their promise to pay for all network upgrades if the
+costs of network upgrades are shifted to other customers through PJM’s current planning
+processes. To prevent this adverse outcome, the Commission should modify PJM’s proposal to
+either require the RBP to procure resources in the same LDA as, or near to, large loads, in order
+to ensure that transmission constraints are mitigated.
+Similarly, the current RBP structure will increase study costs from the need for larger
+upgrades and complex modeling to determine deliverability, which, under current rules, will be
+spread between generators in the same cluster as RBP resources. Though RBP resources serving
+data centers will be allocated some of those costs, the higher cost of connecting these resources
+will be spread to generators other than RBP resources, and data centers will not pay for those
+costs. This structure does not allow for data centers to cover the full costs of their generation as
+they promised to in the Ratepayer Protection Pledge. To allow data centers to carry out this
+promise, PJM’s RBP must include a locational element to mitigate the study costs assigned to
+other generators, or PJM must assign the increased study costs caused by RBP resources to those
+resources.
+
+98 PJM, Joint EDCs and Data Center Coalition Reliability Backstop Procurement Package
+Executive Summary, 5 (June 30, 2026), https://www.pjm.com/-/media/DotCom/committees-
+groups/cifp-rbp/2026/20260630/20260630-item-02f---joint-edcs-and-data-center-coalition---rbp-
+--executive-summary.pdf.
+
+--- PAGE 33 ---
+33
+
+b.
+Cost-Shifts in the RBP violate the Commission’s June 18 Large
+Load Order.
+
+Second, the RBP is unjust and unreasonable because the proposal is inconsistent with the
+Commission’s Large Load Order. As described in the Commission’s June 18 Large Load Order,
+the Commission has a duty to address the risk of cost shifting among transmission customers that
+may result in unjust and unreasonable rates.99 PJM’s current RBP proposal will likely result in
+unjust and unreasonable rates by shifting RBP costs to other transmission customers through
+PJM’s interconnection process and through RTEP.
+The Commission’s June 18 Large Load Order preliminarily found PJM’s tariff to be
+unjust and unreasonable because it lacks adequate mechanisms to mitigate the risk of cost
+shifting among transmission customers.100 The Commission is concerned that PJM’s tariff does
+not ensure that large load customers would be ultimately response for costs incurred to provide
+transmission service, including the cost of network upgrades.101 Additionally, the Commission is
+concerned about inefficient and unnecessary infrastructure development that leads to unjust and
+unreasonable rates through unnecessarily high network upgrade costs.102
+The RBP proposal confirms all the Order’s worries about PJM’s inadequate cost-shifting
+protections. To the Commission’s first concern, the RBP relies on the interconnection process
+and RTEP to ensure deliverability but includes no adequate mechanism to mitigate the cost-shifts
+associated with those processes. Stakeholders alerted PJM to these cost-shifting concerns in the
+proposal in stakeholder discussions, but PJM’s proposal does not address these issues. To the
+
+99 Large Load Order, supra note 80, at P 68.
+100 Id. at P 66.
+101 Id.
+102 Id.
+
+--- PAGE 34 ---
+34
+
+second concern, the current RBP structure will not ensure that large load customers will be
+ultimately responsible for costs incurred to provide their transmission service. The RBP will
+likely spread higher costs to generators due to complex load deliverability studies and higher
+network upgrade costs for the cluster. Load will likely experience higher costs through RTEP as
+the RTEP will likely identify costly transmission upgrades to deliver capacity from RBP
+resources. In either case, end ratepayers are ultimately responsible for costs incurred to provide
+transmission service to data centers, not the data centers themselves.
+ Lastly, the lack of a locational requirement in the RBP will likely lead to inefficient and
+unnecessary infrastructure buildout. If the RBP procures RBP resources that are farther away
+from the LDA it will serve, PJM may need to build transmission infrastructure to get the capacity
+from the RBP resource to the LDA. This result is inefficient and unnecessary when there may be
+resources closer to the LDA that could serve the load. This procurement structure could lead to
+unnecessary build-out and unnecessary network upgrade costs, which as the Commission points
+out in its June 18 Order, would be unjust and unreasonable.
+III.
+The Commission should encourage PJM states to do their part in allocating costs to
+data centers.
+
+It is important to note, as PJM does in its filing, that states have a large part to play in
+ensuring that cost allocation at the retail level adequately allocates RBP costs to data centers
+receiving capacity from RBP resources. The Commission has acknowledged states’ role in cost
+allocation as well, stating in its June 18 Large Load Order that “states determine how
+Commission-approved rates are collected among the relevant retail consumers along with the
+rates for state-jurisdictional matters.”103 The PJM Governors affirmed this role in their Statement
+
+103 Id. at P 69.
+
+--- PAGE 35 ---
+35
+
+of Principles Regarding PJM, in which the 13 PJM governors agreed to use all available
+authorities to ensure that LSEs allocate the cost to procure new capacity through the RBP to new
+data center loads.104 States must take this responsibility seriously. If not, the states risk spreading
+RBP costs to all load.
+PJM’s filing states that the PJM states will have a central role in protecting their
+ratepayers from cost shifts from the RBP.105 The RBP relies on each of the states to refine cost
+allocation to determine which retail loads should be allocated the cost of the procurement.106 If
+states do not adopt adequate tariffs, costs from the RBP may be allocated to residential customers
+or small industrial or commercial customers.
+Under the current RBP proposal, LSEs that forecast data center load and procure capacity
+for that load in the RBP may be left with enormous costs if that forecasted load does not show
+up. Because PJM proposes that LSE defaults will result in the allocation of the defaulted costs to
+other LSEs hosting large loads, if one LSE cannot cover the stranded costs resulting from data
+centers failing to materialize, then the rest of the LSEs with RBP obligations may be left holding
+the bill. There is a real risk of this outcome occurring. The CEOs of Constellation Energy and
+Vistra Energy have both warned their investors about the risks of overbuilding.107 In a 2025
+earnings call, Vistra CEO James Burke stated that load “interconnect queues . . . may be
+overstated from three to five times what might actually materialize in regulated markets or
+
+104 Statement from the White House Nat’l Energy Dominance Council & PJM Governors of
+Principles Regarding PJM, 2 (Jan. 15, 2026), https://www.energy.gov/documents/statement-
+principles-regarding-pjm.
+105 RBP Filing, supra note 2, at 10.
+106 Id. at 11.
+107 Cathy Kunkel & Dennis Wamsted, Risk of AI-Driven, Overbuilt Infrastructure is Real, Inst.
+for Energy Econ. and Fin. Analysis (Jun. 3, 2025), https://ieefa.org/resources/risk-ai-driven-
+overbuilt-infrastructure-real.
+
+--- PAGE 36 ---
+36
+
+competitive markets.”108 Expert estimates in 2024 stated that, nationally, utilities are planning for
+50% more demand than the tech industry is projecting.109 Similarly, in November 2025, experts
+estimated that utility forecasts were overstating data center load growth by almost 25 GW.110
+If LSEs submit inflated load forecasts for the RBP, there is a risk that PJM will over-
+procure capacity for load that will never show up. Nevertheless, PJM will still allocate those
+MWs, and the cost responsibility, to those LSEs. For LSEs with data centers that fail to
+materialize, this cost responsibility could be burdensome. PJM is expected to pay up to $20
+billion for the RBP.111 LSEs can be expected to pay millions of dollars each year depending on
+their respective RBP allocations. If data centers fail to show up, LSEs will be left with
+millions—or even billions—of dollars in stranded costs. If an LSE has more data centers in its
+service area, it can allocate these costs among remaining data centers. However, if all the data
+center load in an LSE fails to materialize, ratepayers will foot the bill, or the LSE will have to
+default and spread their costs to other LSEs.
+The Maryland Office of People’s Counsel (“MD OPC”) has sounded the alarm on this
+issue, warning its state Public Service Commission (“PSC”) about the risks of failing to pass
+adequate cost allocation tariffs. In comments to the PSC on August 10, 2026, the MD OPC
+explains that customers in zones with RBP obligations will be responsible for RBP costs
+regardless of whether the large loads included in the utilities’ forecast materialize or are
+
+108 Id.
+109 Id.
+110 John Wilson et. al, Power Demand Forecasts Revised Up for Third Year Running, Led by
+Data Centers, Grid Strategies at 3 (Nov. 2025), https://gridstrategiesllc.com/wp-
+content/uploads/Grid-Strategies-National-Load-Growth-Report-2025.pdf.
+111 Ethan Howland, PJM Files Backstop Auction Plan at FERC to Meet Capacity Shortfall, Util.
+Dive (Aug. 3, 2026), https://www.utilitydive.com/news/pjm-backstop-capacity-auction-ferc-
+data-centers/826792/.
+
+--- PAGE 37 ---
+37
+
+delayed.112 MD OPC estimates that, if the RBP costs are assigned to residential customers in
+these zones, Maryland customers may be exposed to $562.8 million in additional costs over 15
+years.113 MD OPC warns that residential customers could pay as much as $483.2 million and
+$79.6 million in the Potomac Edison and Baltimore Gas and Electric zones, respectively, if
+Maryland does not have an established allocation framework for the RBP.114 The RBP could
+have similar effects on ratepayers across PJM if states do not step up to do their part.
+To prevent this cost-shifting, the Commission should encourage states to require take-or-
+pay agreements between LSEs and large load customers for any LSEs participating in the RBP
+and require PJM to provide states with enough information to properly allocate costs through
+those agreements. These recommendations are consistent with PJM’s objective to allocate RBP
+costs to data centers, the Ratepayer Protection Pledge, and with the Commission’s June 18th
+Large Load Orders because they will ensure that large loads pay the costs of the capacity
+procured to serve them, rather than shifting those costs to other customers, or residential
+ratepayers.
+Some utilities have already begun to think about how these take-or-pay arrangements
+could be implemented. In comments to the MD PSC on August 10, 2026, the Joint Maryland
+Exelon Utilities115 urged the PSC to consider requiring an agreement to hold large loads
+accountable for capacity costs, similar to a Transmission Security Agreement (TSA), to protect
+
+112 Id.
+113 Id.
+114 Maryland Office of People’s Counsel Response to the Commission’s Request for Comments,
+at 3, Docket No. PC 72 (MD Pub. Serv. Comm’n Aug. 10, 2026),
+https://opc.maryland.gov/Portals/0/Files/Publications/Others/20260810%20-
+%20OPC%20Comments%20-%20PC72.pdf?ver=-ifE-FBxdPKFNQjWfyueEw%3d%3d.
+115 The Joint Maryland Exelon Utilities include Baltimore Gas and Electric Company, Delmarva
+Power & Light Company, and Potomac Electric Power Company.
+
+--- PAGE 38 ---
+38
+
+non-large load customers from RBP capacity costs if the large load fails to materialize.116 The
+Commission should uplift these recommendations and encourage other states to develop similar
+agreements for RBP costs.
+Security agreements like the ones mentioned by the Joint Maryland Exelon Utilities are
+consistent with PJM’s objective to allocate the costs of the capacity required to serve data centers
+to those data centers and the Ratepayer Protection Pledge. PJM acknowledges that the RBP is “a
+product of cooperative federalism” and that state participation will be needed to ensure the
+success of the RBP and to protect residential customers from cost-shifts.117 PJM emphasizes that
+the states have the jurisdiction to ensure that new large loads, and not residential or small
+industrial or commercial customers, are allocated the retail costs associated with the costs of
+RBP resources procured at the wholesale level. State-mandated take-or-pay contracts between
+LSEs and large load customers align exactly with this structure that PJM outlines in its filing.
+Take-or-pay contracts will ensure that costs at the wholesale level are sub-allocated directly to
+large-load customers, regardless of whether they materialize or not, thereby protecting residential
+and small industrial customers from cost-shifts.
+Additionally, take-or-pay agreements are in line with the Ratepayer Protection Pledge
+because data centers have pledged to pay the costs of their power, whether they use it or not. The
+companies that signed the Ratepayer Protection Pledge have agreed to not only “procure the
+generation needed for their energy demand . . . and pay the full cost,” but to also “voluntarily
+negotiate new, separate rate structures with their utilities and state governments” and “pay those
+
+116 Joint Comments of the Maryland Exelon Utilities on PJM Reliability Backstop Procurement
+Proposal, at 5, Docket No. PC 72 (MD Pub. Serv. Comm’n Aug. 10, 2026),
+https://webpscxb.pscmaryland.com/DMS/pc/pc72.
+117 RBP Filing, supra note 2, at 10.
+
+--- PAGE 39 ---
+39
+
+rates for the power and infrastructure brought online for them—whether or not they actually use
+the electricity.”118 Take-or-pay agreements are consistent with this pledge because they will
+ensure that large loads will pay the cost of the capacity brought online for them whether or not
+the large load actually shows up. These agreements will ensure that data centers follow through
+on their pledge, instead of leaving residential ratepayers with the bill if data centers fail to
+materialize.
+Lastly, the take-or-pay agreements are consistent with the spirit of the Commission’s June
+18th Large Load Order, which addresses the risk of cost-shifting among transmission customers
+due to speculative requests.119 The Commission’s Order was concerned that speculative
+transmission service requests on behalf of large loads could result in cost-shifting among
+transmission customers.120 The Commission was concerned that other transmission customers
+may have to pay increased rates if an Eligible Customer takes less transmission service than
+anticipated because a large load is operating at a lower demand than anticipated or fails to
+materialize.121
+The Commission’s Order found that, to prevent these cost shifts, PJM’s tariff should
+require that PJM, the relevant transmission owner, and the Eligible Customer enter into a cost
+recovery agreement that requires the Eligible Customer to make a minimum contribution towards
+the transmission owner’s revenue requirement if the Eligible Customer takes less transmission
+service than anticipated because the large load did not materialize as planned.122 The
+
+118 White House Ratepayer Protection Pledge.
+119 Large Load Order, supra note 80, at P 68.
+120 Id. at P 79.
+121 Id.
+122 Id. at P 81.
+
+--- PAGE 40 ---
+40
+
+Commission preliminarily found that these cost-recovery agreements were necessary to ensure
+that Eligible Customers were responsible for paying the costs of large-load driven transmission,
+“rather than having those costs paid by other transmission customers that neither caused the need
+for nor benefit commensurately from” those transmission upgrades.123
+Take-or-pay contracts with respect to the RBP would work similarly to the cost-recovery
+agreements outlined in the Commission’s Order and would serve a similar purpose. Like
+speculative transmission service requests, speculative data center demand that fails to materialize
+could likely result in cost-shifts among PJM’s customers. If a data center fails to materialize as
+expected or fails to show up at all, other customers in that LSE, either other large load customers
+or non-large load ratepayers, will have to make up the costs, resulting in higher prices for those
+customers. An RBP cost-recovery agreement between LSEs and large loads would, like in the
+transmission context, protect residential customers from cost-shifts by mandating that large loads
+pay a minimum contribution towards an LSE’s RBP obligation if those large loads fail to
+materialize as expected. Like the cost-recovery agreements proposed in the Commission’s Order,
+take-or-pay agreements would ensure that the costs of capacity procured to service large loads
+would be paid by the large load that caused the need for the RBP, rather than the LSE’s other
+customers.
+To mandate these take-or-pay agreements, PJM states must have the information needed
+to allocate the RBP costs to the appropriate customers. In addition to preliminarily finding that
+PJM must develop cost-recovery agreements, the Commission’s Large Load Order also found
+that PJM must provide clear, timely, and detailed information on their website regarding
+Network Upgrades for Eligible Customers and information about the costs of those upgrades.
+
+123 Id.
+
+--- PAGE 41 ---
+41
+
+The Commission was concerned that PJM lacked adequate cost transparency measures to
+provide stakeholders with the information and visibility needed to allocate costs driven by large
+loads.124 The Commission found that the cost transparency measures it proposed in its Order will
+allow state public utility commissions and other state regulators to understand which costs are
+caused by which customers, so that they can allocate those costs to the appropriate retail
+customers.125
+
+Similarly detailed information will be necessary in the RBP context. States will need to
+have enough information about which large loads are associated with certain RBP costs to sub-
+allocate those costs to large loads at the retail level. Like the Commission stated in its Large
+Load Order, PJM should be required to provide clear, timely, and detailed information about
+RBP costs to states to ensure that states have enough information to mandate take-or-pay
+agreements between LSEs and large loads that adequately ensure that large loads pay for the
+costs of RBP capacity procured on their behalf, whether or not they materialize as expected.
+Conclusion
+PJM’s RBP filing generally presents a just and reasonable mechanism to procure capacity
+for large loads that are currently causing a shortfall in PJM’s capacity market and to facilitate the
+allocation of costs to large loads while respecting state jurisdiction over retail rates. However,
+PJM’s failure to include any requirement as to the location of RBP supply resources will increase
+the RBP’s reliance on large, costly network upgrades that threaten to delay when supply can
+become deliverable to the large loads that need it. The modification described above to require
+RBP supply to either be located near to demand, or to be fully responsible for the cost of network
+
+124 Id. at P 74.
+125 Id. at P 70.
+
+--- PAGE 42 ---
+42
+
+upgrades, will help the RBP better achieve its objectives of bringing needed new supply online
+promptly and to allocate costs to large loads rather than shifting costs to others. Accordingly,
+PIOs respectfully request that the Commission approve the RBP filing with the modification
+described above.
+
+DATED: August 21, 2026
+Respectfully submitted,
+SIERRA CLUB
+/s/ Aaliyah Adkins
+Aaliyah Adkins
+Earthjustice
+1400 L St NW
+Lobby 2, Unit 34117
+Washington DC 20005
+(202) 797-5253
+aadkins@earthjustice.org
+
+/s/ Nick Lawton
+Nick Lawton
+Earthjustice
+1400 L St NW
+Lobby 2, Unit 34117
+Washington DC 20005
+(202) 780-4835
+nlawton@earthjustice.org
+
+/s/ Justin Vickers
+Justin Vickers
+Senior Attorney
+Sierra Club
+2101 Webster St., 13th Floor 
+Oakland, CA 94612
+(224) 420-0614
+justin.vickers@sierraclub.org
+Counsel for Sierra Club
+NATURAL RESOURCES DEFENSE
+COUNCIL
+/s/ Claire Lang-Ree
+Claire Lang-Ree
+Advocate, Sustainable FERC Project
+NRDC
+40 W 20th St
+New York, NY, 11238
+clangree@nrdc.org
+
+--- PAGE 43 ---
+43
+
+CERTIFICATE OF SERVICE
+I hereby certify that the foregoing has been served in accordance with 18 C.F.R. §
+385.2010 upon each party designated in the official service list compiled by the Secretary in this
+proceeding, by email.
+
+/s/ Aaliyah Adkins
+Aaliyah Adkins
+Earthjustice
+1400 L St NW
+Lobby 2, Unit 34117
+Washington DC 20005
+(202) 797-5253
+aadkins@earthjustice.org

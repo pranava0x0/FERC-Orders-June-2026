@@ -1,14 +1,12 @@
 # issues.md — audit trail
 
+- **November 10 · FERC eLibrary availability.** All 12 show-cause and rehearing sheets were reconciled. ER26-3515-000 returned 100 of 162 rows before the portal degraded. Of 100 selected companion records attempted in the final pass, nine originals were recovered from their publishers; 91 remained inaccessible. A separate exhibit is marked CEII. The [coverage ledger](sources/filings/refresh-coverage.json) records each disposition. Retry the public rows and missing sheet page when service recovers. Never represent a filing description as a verified reading.
+
+
 Format: date · area · description · root cause (code/test/data/source) · status.
 
 ## Open
 
-- **2026-11-09 · source · YouTube rate-limits caption fetches.** After eight transcripts every caption request
-  returned HTTP 429, and two videos (the Senate ENR hearing, LaCerte's WIRES keynote) need a PO token the
-  android/ios clients do not carry. Six videos have no transcript. Root cause: **source**. Status: **Open**;
-  `tools/fetch-video-transcripts.py` paces 10 s and backs off, rerun it on a later day. The transcript panel in
-  Chrome did not load signed out.
 - **2026-11-09 · ui · eight tabs overflowed the bar at 1,024 px and the 4-column phone grid ran 66 px wide.**
   The tab bar needed ~1,160 px with numbers and asides; on phones `repeat(4, 1fr)` let min-content widen the
   grid, and the media-query `.tab` padding lost to the later base `.tab` rule of equal specificity. Root cause:
@@ -95,6 +93,9 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   for stances that occur, or state the absence; revisit banding. See DESIGN.md § 7 (net-vs-plurality).
 
 ## Fixed
+
+- **2026-11-10 · Sources and navigation.** News hid the official source chip on two filing stories, and page numbers in Filings did not open the original text. The citation now stays on each story; filing page numbers open the exact archive page. The Comments issue directory pushed the policy map down on phones; the compact picker now stays in sync when an earlier issue response arrives late. The E-7 docket link now appears beside the order. See the [all-tab browser results](uat.md#every-tab-clicks-and-scroll-november-10).
+- **2026-11-10 · Recording text.** The November 9 caption gap is closed for all 15 indexed videos: 14 have English caption files; the Senate hearing has an official transcript. Public caption requests can still be rate-limited on a future run.
 
 - **2026-11-10 · UAT · #27.** The browser runner now enables Chromium’s sandbox on both the installed stable Chrome channel and an explicit executable. Removed the stale hardcoded fallback.
 
@@ -501,14 +502,15 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   (Energy Trading Institute) is the lone holdout across five attempts (main-frame click ×2, iframe retry, dedicated
   60s iframe, URL-intercept). Root cause: **source-side** — the filelist link renders and the click
   fires, but it triggers no `window.open`, no navigation, and no download (the other 269 behave
-  identically), so eLibrary appears to serve this one file inline rather than as an attachment. Status:
-  **Open (known gap)** — the file is inventoried in `rm26-4-files.json` and re-downloadable; the site
-  reads "272 of 273." Not worth further automation for a single document.
+  identically). **Rechecked Nov 10:** the official filelist says “Erroneously filed”, Availability_Mode N,
+  with download disabled. ETI’s public submission at 20251121-5350 is archived separately; the two
+  records cannot be assumed identical.
 
-- **2026-06-24 · data · four comment PDFs are image-only scans (no text layer).** `20251121-5224`,
-  `20251121-5521` (Data Center Coalition), `20251121-5140` (Yurok Nation letter), `20251205-5005` —
-  downloaded, but `fitz` extracts ~0 text. Root cause: **source-side** (scanned filings). Status: **Open
-  (OCR-pending)** — no OCR tool installed locally; `tools/validate-comments.py` flags them every run.
+- **2026-06-24 · data · four comment PDFs lacked a usable text layer.** November 10: recovered
+  page-labeled OCR for 32 pages across 20251121-5224, 20251121-5521, 20251121-5140 (Yakama
+  Nation), and 20251205-5005. The [OCR sidecars](sources/comments/ocr/) preserve the original
+  PDFs. Check them with `python3 tools/revalidate-archive.py --check-ocr`. OCR is a transcription,
+  not verified testimony; page images take precedence.
 
 - **2026-06-24 · data/code · validation recovered 3 bodies + hardened the pipeline. Fixed.** A
   `validate-comments.py` pass found and fixed: (1) Eolian `20260519-5158` and Sierra Club `20260520-5102`

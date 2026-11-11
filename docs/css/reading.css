@@ -1,0 +1,41 @@
+:root{color-scheme:light;--paper:#f4f1ea;--ink:#15212e;--navy:#0b2545;--blue:#1a4480;--rule:#bdb8a8;--muted:#51606e}
+*{box-sizing:border-box}
+html{scroll-padding-top:1rem}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.57 system-ui,sans-serif;overflow-wrap:anywhere}
+a{color:var(--blue);text-underline-offset:.17em}
+a:hover{text-decoration-thickness:.14em}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+header{background:var(--navy);border-bottom:4px solid var(--blue)}
+header nav,main,footer{max-width:63rem;margin:auto;padding:1rem clamp(1.15rem,4vw,3.5rem)}
+header nav{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+header a{color:white;font-size:.87rem}
+header a:first-child{font:700 clamp(1.12rem,3vw,1.65rem) Georgia,serif;margin-right:auto;text-decoration:none}
+main{padding-top:2.3rem;padding-bottom:3rem}
+h1,h2,h3,h4{line-height:1.16;margin:.5em 0;font-family:Georgia,serif}
+h1{font-size:clamp(1.9rem,5vw,3.2rem);max-width:30ch}
+h2{font-size:1.65rem;border-top:2px solid var(--ink);padding-top:.65rem;margin-top:1.8rem}
+h3{font-size:1.34rem}
+h4{font-size:1.07rem}
+p{margin:.5em 0;max-width:82ch}
+.intro{font:1.22rem/1.45 Georgia,serif}
+.meta,.folio,.by,.muted,.terms,.directory span{color:var(--muted);font-size:.88rem}
+.tools,.contents{display:flex;flex-wrap:wrap;gap:.35rem 1.1rem;margin:1rem 0}
+.tools a,.contents a{display:inline-flex;align-items:center;min-height:44px}
+.contents{border-block:1px solid var(--rule);padding:.35rem 0}
+.finding,.outline section{padding:1.2rem 0;border-bottom:1px solid var(--rule)}
+blockquote{margin:.8rem 0 .4rem;padding:.25rem 1rem;border-left:3px solid var(--blue);font:1.05rem/1.55 Georgia,serif;max-width:80ch}
+cite{font:normal .87rem system-ui;white-space:nowrap}
+.position{border-left:3px solid var(--muted);padding:.2rem 1rem;margin:1rem 0}
+.directory{list-style:none;padding:0}
+.directory li{padding:.45rem 0;border-top:1px solid var(--rule)}
+.directory a,.position a,.outline a,cite a{display:inline-flex;align-items:center;min-height:44px}
+.directory span{display:block}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font:1rem/1.55 Georgia,serif;margin:0;max-width:85ch}
+footer{border-top:1px solid var(--rule);font-size:.9rem}
+.skip{position:absolute;transform:translateY(-150%);background:white;padding:10px}
+.skip:focus{transform:none}
+@media(pointer:coarse){header a,footer a{display:inline-flex;align-items:center;min-height:44px}
+}
+
+main summary,.xref{display:inline-flex;align-items:center;min-height:44px}
+main summary{cursor:pointer;text-decoration:underline;color:var(--blue)}

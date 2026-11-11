@@ -46,6 +46,7 @@ export function buildSeoBlock(D) {
   const f = m.spotlight;
   out.push(`<h3>${esc(f.title)}</h3><p>${esc(f.answer)}</p>`);
   out.push(f.links.map(l => `<a href="${esc(D.SOURCES[l.source].url)}${l.page ? "#page=" + l.page : ""}">${esc(l.label)}</a>`).join(" · "));
+  out.push('<h3>Questions in the filings</h3><ul>' + m.readingLeads.map(s => '<li><a href="' + esc(s.href) + '">' + esc(s.title) + '</a> ' + esc(s.text) + '</li>').join('') + '</ul><a href="reading/">Browse all indexed documents</a>');
   for (const p of m.summary) out.push(`<p>${esc(p)}</p>`);
 
   if (D.tracks) {
@@ -204,6 +205,10 @@ export function buildIndexHtml(html, D) {
 export function buildSitemap(D) {
   const fresh = D.meta.newsCapture || D.meta.capture;
   const rows = [`  <url>\n    <loc>${SITE}</loc>\n    <lastmod>${freshest(D)}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>`];
+  rows.push('  <url><loc>' + SITE + 'reading/</loc></url>', '  <url><loc>' + SITE + 'reading/positions.html</loc></url>', '  <url><loc>' + SITE + 'reading/coverage.html</loc></url>');
+  for (const r of JSON.parse(readFileSync(join(ROOT, "docs/reading/catalog.json"), "utf8"))) {
+    rows.push('  <url><loc>' + SITE + 'reading/' + r.slug + '/</loc></url>');
+  }
   for (const d of allDockets(D)) {
     rows.push(
       `  <url><loc>${SITE}dockets/${slugFor(d)}/</loc><lastmod>${fresh}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`,

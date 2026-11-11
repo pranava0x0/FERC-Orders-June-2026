@@ -1,0 +1,153 @@
+FERC filing — PJM, SPP, NYISO, MISO, CAISO, ISO-NE — Docket EL26-67-000 — accession 20260709-5023 — Second Supplemental Technical Comment of L.M. Marlowe on the Frequency-Response Absorption Standard and Coupling-Discrimination Protocol — Issued 2026-07-09 — 4 pp
+Extracted locally with PyMuPDF (fitz) from the document downloaded from https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260709-5023. Verbatim; source text layer preserved.
+
+
+--- PAGE 1 ---
+UNITED STATES OF AMERICA
+BEFORE THE
+FEDERAL ENERGY REGULATORY COMMISSION
+
+Integration of Large Loads and Associated Reliability and Cost-
+Allocation Methodologies;
+Show-Cause Proceedings and Related Dockets
+) Docket No. EL26-67-000
+) Docket No. EL26-68-000
+) Docket No. EL26-69-000
+) Docket No. EL26-70-000
+) Docket No. EL26-71-000
+) Docket No. EL26-72-000
+
+SECOND SUPPLEMENTAL TECHNICAL COMMENT OF L.M. MARLOWE
+(Frequency-Response Absorption Standard and Coupling-Discrimination Protocol)
+Date: July 8, 2026
+This submission is made in good faith by a private citizen and independent researcher, supported by extensive
+operational documentation and prior art. It is offered for the public benefit — to improve grid reliability,
+transparency in large-load cost allocation, and the protection of ratepayers from systemic waste and undue cost-
+shifting. It provides additional technical detail responsive to the reliability and observability questions raised in
+these proceedings, and asks that all submissions be evaluated against the full requirements of the Commission’s
+Show Cause Orders.
+Lisa Melton, filing as L.M. Marlowe (“Commenter”), a party whose Motion to Intervene in Docket No.
+EL26-67-000, et al. was accepted for filing (Accession No. 202607025022, July 2, 2026), respectfully
+submits this Second Supplemental Technical Comment. It supplements Commenter’s prior Supplemental
+Technical Comment with additional technical specification responsive to the reliability, observability, and
+cost-causation questions presented, and respectfully addresses the standard by which the Commission
+may wish to evaluate the responses before it.
+I. The Standard of Evaluation Respectfully Urged
+Commenter respectfully urges the Commission, in evaluating the responses to its Show Cause Orders, to
+hold each proposed framework, methodology, and tariff to the full rigor of what those Orders require. The
+Commission’s directives ask not merely whether a proposal addresses large-load integration in some
+respect, but whether it satisfies the just-and-reasonable standard across the complete set of concerns the
+record has raised:
+(1) physical reliability and dynamic stability; (2) observability at the temporal resolution the underlying
+phenomena demand; (3) cost-causation that assigns costs to those who cause them rather than socializing
+them onto ratepayers; and (4) durability under credible worst-case operating conditions, not representative
+ones.
+A submission that resolves the commercial or market-access dimension of large-load integration without
+demonstrably addressing the physical stability and observability questions that gave rise to these
+proceedings has not, in Commenter’s respectful submission, fulfilled the full requirement of the Show
+Cause Orders. Commenter asks that each submission — including Commenter’s own — be measured
+
+--- PAGE 2 ---
+against that complete standard, so that the resolution the Commission adopts rests on frameworks that
+fulfill the whole of what reliability and consumer protection require, not a part.
+II. The Binding Contingency Has Shifted
+Reserve adequacy and frequency-response planning have historically been sized against an enumerated
+largest credible contingency — typically the loss of the single largest generating unit — treated as
+physical and independent. Large computational load introduces a contingency of a different character: a
+set of geographically dispersed loads that, through a shared orchestration or control plane, can reduce
+demand in near-simultaneity, behaving as a single correlated block.
+This block is invisible to topology-based N-1 analysis, which scores dispersed loads as independent low-
+probability events. Measured at the interconnection boundary, the same loads exhibit correlated ramp
+events at machine speed. Where the coordinated-drop magnitude of the block exceeds the loss-of-largest-
+unit value, the largest credible contingency is no longer a generator — it is the load block. A reserve
+adequacy computed against the former, at representative system conditions, is measuring the wrong event
+at the wrong condition.
+III. The Frequency-Response Absorption Standard (Minimum-Inertia Condition)
+A load drop pushes system frequency upward. The immediate rate of change of frequency (RoCoF),
+before primary frequency response (PFR) engages, is governed by the swing equation:
+df/dt  =  − ΔP / (2 H · S_base)
+where ΔP is the net imbalance from the coupled-block drop, H is the system inertia constant, and S_base
+is the system base. Stability requires two conditions simultaneously: the initial RoCoF must remain below
+the protection threshold at which relays trip generation, and the frequency excursion before PFR arrests it
+must remain within the trip band. Both depend on H.
+System inertia is not constant. As synchronous generation retires and is displaced by inverter-based
+resources, H declines, reaching its lowest values under high non-synchronous output and low
+synchronous commitment — conditions that recur on a dispatch-driven schedule. The consequence is a
+compounding exposure: available inertia (H) shrinks while the coordinated-drop magnitude (ΔP) grows,
+both driving RoCoF upward at once. Evaluation at average or representative inertia systematically
+understates the risk, because the binding failure occurs at the minimum, not the mean.
+Commenter therefore respectfully submits that the absorption of any behaviorally-coupled load block
+must be evaluated at a credible minimum-inertia condition — the lowest inertia state expected to recur
+within the planning horizon at a stated low exceedance probability, adjusted for scheduled synchronous
+retirements and forecast resource mix, and crediting only firmly committed grid-forming or synchronous-
+condenser contribution. Expressed as a checkable interconnection requirement, a coupled block is
+absorbable only if, at that minimum-inertia condition, its resulting RoCoF remains below the protection
+threshold and deliverable primary frequency response within the arrest window is at least equal to the
+block magnitude. Where neither holds, there exists a coupled-load penetration beyond which further
+interconnection is not physically feasible without defined, committed grid-strengthening measures. This is
+a limit set by physics, not by policy; the standard’s function is to locate it before it is discovered by a
+coordinated-drop event.
+
+--- PAGE 3 ---
+IV. The Coupling-Discrimination Protocol
+A rigorous standard must distinguish the true common-mode risk from legitimate distributed flexibility,
+because both produce correlated load movement. Two loads may move together because a shared control
+plane commanded them (orchestration-coupling — the contingency), or because each independently
+responded to the same public signal, such as price or system frequency (environmental correlation — the
+demand-response behavior the system relies upon). A metric based on aggregate correlation alone cannot
+separate them and would erroneously penalize legitimate response.
+The protocol discriminates on signatures observable at the boundary, without knowledge of internal
+cause: the dispersion of ramp-event onset times (a shared command arrives within a narrow machine-
+speed window; independent responses disperse over each participant’s own reaction time); the
+congruence of ramp waveform shape (a command replicates one instruction; independent responses vary
+in shape); and, decisively, the correlation that survives conditioning on common environmental signals.
+Only co-movement that remains after removing the price-, frequency-, dispatch-, and weather-explained
+components counts toward the coupling coefficient:
+ρ_coupling  =  corr( residualᵢ , residualⱼ )  after conditioning on common environmental signals
+A set of loads all responding to a price signal shows high raw correlation but near-zero residual
+correlation — correctly cleared as environmental. A set sharing a scheduler shows correlation that
+survives conditioning — correctly identified as orchestrated. Only genuinely orchestration-coupled load
+enters the block magnitude tested under Section III. This resolves each participant into a measured
+position — coupled and subject to the absorption test, environmentally correlated and cleared, or
+independent — so that no party is swept into a contingency obligation by mere correlation, and none
+escapes one by disputing intent. The classification is reproducible from boundary data.
+V. Remediation Is Intrinsic to the Measurement, Not Appended to It
+This section states an engineering property of the architecture, not a policy position. In the settlement
+measure, the quantity that identifies unaccounted-for load and the quantity that reassigns its cost are the
+same quantity. The measure computes the difference between declared and delivered load; that difference
+is, simultaneously and by the same arithmetic, the measured extraction and the cost-causation basis that
+reassigns it to the load that caused it. There is no intermediate discretionary step — no point at which an
+operator elects whether to reallocate — because the reallocation is not a subsequent decision applied to
+the measurement; it is the measurement, read as a ledger entry. Detecting the extraction and correcting it
+are one operation. Value recovered is thereby directed, by the arithmetic itself, to those who bore its cost,
+to the grid infrastructure its presence stressed, and to the structural correction of the conditions that
+permitted the misallocation, so that it does not recur.
+Because the two are one operation, accountability is not a discretionary layer that any institution is asked
+to honor by declaration; it is a property of the invariants, such that the measurement and the reassignment
+cannot be performed independently of one another. This removes the discretion through which
+unaccounted-for costs are ordinarily socialized: a system that performs the measurement has, in the same
+step, performed the reallocation. Stated in the Commission’s terms, the protection of the ratepaying public
+here is not an aim asserted alongside the technical work — it is a defined output of the equations, present
+or absent as a measurable quantity rather than as a declared posture. The specific mechanism for
+
+--- PAGE 4 ---
+administering the resulting allocation is a matter Commenter is prepared to address in the appropriate
+forum and is not placed at issue here.
+VI. Relationship to the Record and Reservation
+This Comment supplements and does not supersede Commenter’s prior filings. The complete
+specifications of the frequency-response absorption standard and the coupling-discrimination protocol are
+held by Commenter and are described here at the functional level; Commenter is prepared to describe
+them in full in response to the Commission’s inquiries. Commenter reserves all rights previously stated,
+including under 18 U.S.C. § 1833(b) and the referenced USPTO filings, and asserts no legal conclusion
+herein.
+VII. Conclusion
+Commenter respectfully requests that the Commission consider these technical considerations, and that it
+hold each framework, methodology, and tariff before it — including Commenter’s own — to the full
+rigor of what the Show Cause Orders require. Commenter offers these considerations in good faith and in
+the shared interest of a reliable Bulk Power System and of just and reasonable rates for the public the
+Commission was established to protect.
+Respectfully submitted,
+_______________________________
+Lisa Melton aka L.M. Marlowe
+lm.marlowe@pm.me
+Intervenor, pro se
