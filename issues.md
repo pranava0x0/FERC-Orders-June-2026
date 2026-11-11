@@ -7,11 +7,6 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
-- **2026-11-09 · source · YouTube rate-limits caption fetches.** After eight transcripts every caption request
-  returned HTTP 429, and two videos (the Senate ENR hearing, LaCerte's WIRES keynote) need a PO token the
-  android/ios clients do not carry. Six videos have no transcript. Root cause: **source**. Status: **Open**;
-  `tools/fetch-video-transcripts.py` paces 10 s and backs off, rerun it on a later day. The transcript panel in
-  Chrome did not load signed out.
 - **2026-11-09 · ui · eight tabs overflowed the bar at 1,024 px and the 4-column phone grid ran 66 px wide.**
   The tab bar needed ~1,160 px with numbers and asides; on phones `repeat(4, 1fr)` let min-content widen the
   grid, and the media-query `.tab` padding lost to the later base `.tab` rule of equal specificity. Root cause:
@@ -98,6 +93,9 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   for stances that occur, or state the absence; revisit banding. See DESIGN.md § 7 (net-vs-plurality).
 
 ## Fixed
+
+- **2026-11-10 · Sources and navigation.** News hid the official source chip on two filing stories, and page numbers in Filings did not open the original text. The citation now stays on each story; filing page numbers open the exact archive page. The Comments issue directory pushed the policy map down on phones; the compact picker now stays in sync when an earlier issue response arrives late. The E-7 docket link now appears beside the order. See the [all-tab browser results](uat.md#every-tab-clicks-and-scroll-november-10).
+- **2026-11-10 · Recording text.** The November 9 caption gap is closed for all 15 indexed videos: 14 have English caption files; the Senate hearing has an official transcript. Public caption requests can still be rate-limited on a future run.
 
 - **2026-11-10 · UAT · #27.** The browser runner now enables Chromium’s sandbox on both the installed stable Chrome channel and an explicit executable. Removed the stale hardcoded fallback.
 

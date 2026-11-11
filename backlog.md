@@ -6,8 +6,7 @@
   since 2026-11-02, the timeline and Discourse bodies dominate first load. Splitting them out the same way would
   roughly halve blocking weight again, but every tab reads `D.SOURCES`, so it needs a design (a core file plus
   per-tab files), not a move. Measure with the throttled pass in uat.md before and after.
-- **Mobile: the Comments by-issue map is 2 screens below the sub-tab bar.** (low) Reader cost 3.96 on mobile vs 2
-  on desktop (uat.md, 2026-11-02). A jump or a shorter lead-in above the map would bring it to ~2.
+- **Comments policy map (fixed Nov 10):** Reached in two taps and zero scroll on phone, tablet and desktop. See [the interaction measurements](uat.md#every-tab-clicks-and-scroll-november-10).
 - **Read every docket in one in-page call.** (low) eLibrary's sheet comes from a POST to
   `/eLibraryWebAPI/api/Docket/GetSingleDocketSheet` that works inside the logged-in tab. Capture the request body
   once (hook XHR, then run a new docket search in the SPA) and `tools/elibrary-sweep.js` could fetch all ~20

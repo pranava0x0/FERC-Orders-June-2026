@@ -457,7 +457,7 @@
   function readingLeads(compact) {
     var rows = D.meta.readingLeads.map(function (s) {
       return '<article><h3><a href="' + esc(s.href) + '">' + esc(s.title) + '</a></h3>' +
-        (compact ? '' : '<p>' + esc(s.text) + '</p>' + publicSrcChips([s.cite])) + '</article>';
+        (compact ? '' : '<p>' + esc(s.text) + '</p>' + srcChips([s.cite])) + '</article>';
     }).join('');
     return '<section class="reader-leads' + (compact ? ' compact' : '') + '" aria-label="Questions in the filings">' + rows + '</section>';
   }
@@ -859,7 +859,7 @@
         '<span class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</span></span>" +
         '<span class="docket-status">' + esc(d.status) + '</span><span class="region mono">' + esc(d.region) + "</span>" +
         '<span class="chev" aria-hidden="true">›</span></summary>' +
-        '<div class="docket-body">' + orderLink + kindLine + abeyance + unique + directives + asks + briefing + commish + region + roster + pageLink + "</div></details>";
+        '<div class="docket-body"><div class="docket-sources">' + orderLink + pageLink + '</div>' + kindLine + abeyance + unique + directives + asks + briefing + commish + region + roster + "</div></details>";
     }
     // The six §206 show cause orders, then the E-2 co-location order they build on (collapsed, labeled).
     var six = D.dockets.map(renderDocketCard).join("");
@@ -1271,10 +1271,17 @@
         '<p class="cm-pm-landing-lede">Each comment-period issue, what the June 18 orders did with it, and where it goes next on the §206 clock. Pick a row to read the record behind it. <span class="cm-pm-lane">Curator’s read, cite-checked; issues the curator has not yet mapped are absent.</span></p>' +
         '<div class="cm-pm-grid">' + pmGridRows + "</div></div>"
       : '<p class="cm-issue-hint">Pick an issue on the left to read the whole record on it: every filer’s position, grouped by stance, with the quotes behind each.</p>';
+    var issuePicker = '<label class="cm-issue-picker">Browse issues<select id="cm-issue-picker"><option value="">Policy map</option>' +
+      LENS_ORDER.map(function (ns) {
+        var items = (CM.issues || []).filter(function (i) { return i.ns === ns; });
+        return items.length ? '<optgroup label="' + esc(ISSUE_GROUP[ns]) + '">' + items.map(function (i) {
+          return '<option value="' + esc(i.key) + '">' + esc(i.name) + ' (' + i.count + ')</option>';
+        }).join("") + '</optgroup>' : "";
+      }).join("") + '</select></label>';
     var secIssue = '<section class="cm-sec" id="cmsec-issue" role="tabpanel" aria-labelledby="cmsub-issue" hidden>' +
       head("Read the record by issue",
         "Pick a question, principle, region, or recurring topic and read every letter’s position on it, grouped by where the filer stands, with the verbatim quotes behind each. Positions are AI-audited and provisional, traceable to the quotes; organizations only.") +
-      '<div class="cm-issues"><nav class="cm-issue-outline" aria-label="Issue outline">' + issueOutlineHtml + "</nav>" +
+      '<div class="cm-issues">' + issuePicker + '<nav class="cm-issue-outline" aria-label="Issue outline">' + issueOutlineHtml + "</nav>" +
       '<div class="cm-issue-reader" id="cm-issue-reader" aria-live="polite">' + policyMapLanding + "</div></div></section>";
 
     var secOverview = '<section class="cm-sec" id="cmsec-overview" role="tabpanel" aria-labelledby="cmsub-overview">' +
@@ -1319,6 +1326,7 @@
         sec.hidden = !on;
       });
       if (updateHash === false) return;
+      if (name === "issue") showIssueLanding();
       // All-comments reflects its active filter in the hash (so switching to it keeps the list shareable);
       // other sub-tabs write a bare #comments/<sub>.
       if (name === "summaries" && typeof syncFilterHash === "function") syncFilterHash();
@@ -1507,7 +1515,7 @@
     });
 
     // ---- By-issue reader: pick an issue in the outline, lazy-load its record, render stance groups ----
-    var issueCache = {};
+    var issueCache = {}, issueSelection = 0;
     var issueByKey = {};
     (CM.issues || []).forEach(function (i) { issueByKey[i.key] = i; });
     // The reader's initial content is the policy-map landing; cache the node so a route back to a bare
@@ -1560,7 +1568,10 @@
       box.innerHTML = html;
       box.setAttribute("aria-busy", "false");
     };
+    var picker = document.getElementById("cm-issue-picker");
     var markActiveIssue = function (key) {
+      issueSelection++;
+      if (picker) picker.value = key || "";
       [].slice.call(document.querySelectorAll("#cmsec-issue .cm-issue-link")).forEach(function (b) {
         var on = b.dataset.issue === key;
         b.classList.toggle("active", on);
@@ -1570,8 +1581,9 @@
     var selectIssue = function (key, slug, updateHash) {
       var meta = issueByKey[key];
       if (!slug) slug = meta && meta.slug;
-      if (!slug) return; // unknown issue id — leave the outline as-is
+      if (!slug) { showIssueLanding(); writeCommentsHash({ sub: "issue" }); return; }
       markActiveIssue(key);
+      var selection = issueSelection;
       if (updateHash !== false) writeCommentsHash({ sub: "issue", params: { id: key } });
       var box = document.getElementById("cm-issue-reader");
       if (!box) return;
@@ -1580,12 +1592,17 @@
       box.innerHTML = '<p class="cm-bin-loading mono" role="status">Loading the record on this issue…</p>';
       fetch("data/comments/issues/" + slug + ".json?v=" + ASSET_VER)
         .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-        .then(function (d) { issueCache[slug] = d; renderIssueReader(box, d); })
+        .then(function (d) { issueCache[slug] = d; if (selection === issueSelection) renderIssueReader(box, d); })
         .catch(function () {
+          if (selection !== issueSelection) return;
           box.setAttribute("aria-busy", "false");
           box.innerHTML = '<p class="cm-bin-error" role="status">Couldn’t load this issue here. The positions are committed under <span class="mono">sources/comments/summaries-v2/</span>.</p>';
         });
     };
+    if (picker) picker.addEventListener("change", function () {
+      if (picker.value) selectIssue(picker.value, null, true);
+      else { showIssueLanding(); writeCommentsHash({ sub: "issue" }); }
+    });
     var issueSec = document.getElementById("cmsec-issue");
     if (issueSec) issueSec.addEventListener("click", function (e) {
       var b = e.target.closest(".cm-issue-link");
@@ -1688,7 +1705,7 @@
       var cite = function (d, pg) {
         return esc(d.filer + " " + d.kind + ", " + fmtISO(d.date)) +
           (multiDocket && d.docket ? ' · <span class="mono">' + esc(d.docket) + "</span>" + (d.rto && d.rto !== d.filer ? " (" + esc(d.rto) + ")" : "") : "") +
-          (pg ? ' · <span class="mono">p. ' + pg + "</span>" : "") +
+          (pg ? ' · <a class="mono" href="reading/' + esc(d.slug) + '/text.html#p-' + pg + '" aria-label="Read ' + esc(d.filer + ' ' + d.kind) + ', page ' + pg + '">p. ' + pg + '</a>' : '') +
           (d.pdfUrl && pg ? ' · <a href="' + esc(d.pdfUrl) + '#page=' + pg +
             '" target="_blank" rel="noopener noreferrer">PDF p. ' + pg + '</a>' : '') +
           ' · <a href="' + esc(eli(d.accession)) + '" target="_blank" rel="noopener noreferrer" aria-label="' +

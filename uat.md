@@ -9,6 +9,28 @@ _Last run: 2026-11-10_
 
 ## Learned pathways log
 
+### Every tab: clicks and scroll, November 10
+
+Fresh Overview for each journey. The phone (375×812) and tablet (768×1024) used touch; desktop (1280×800) used a mouse. Scroll is the total vertical distance, in screens, needed to bring controls and the final destination into view. App-driven jumps are excluded. No route required a sideways scroll. These are measured paths, not theoretical minimums.
+
+| Tab | Verified destination | Taps or clicks | Phone scroll | Tablet scroll | Desktop scroll |
+|---|---|---:|---:|---:|---:|
+| Overview | Registry access: original page | 2 | 0.00 | 0.00 | 0.00 |
+| Timeline | Latest event in the show-cause track | 3 | 0.00 | 0.00 | 0.00 |
+| Reforms | Cost-shifting mandate | 2 | 1.38 | 0.00 | 0.58 |
+| Dockets | PJM E-7 order page | 2 | 0.77 | 0.00 | 0.00 |
+| Filings | Google’s MISO protest: original cited page | 4 | 1.85 | 0.00 | 0.00 |
+| Commissioners | Rosner’s timestamped statement | 2 | 0.77 | 0.00 | 0.00 |
+| Comments · Themes | PJM regional comment record | 2 | 1.31 | 0.00 | 0.62 |
+| Comments · By issue | An issue and its first verbatim quote | 4 | 1.49 | 0.57 | 0.68 |
+| Comments · Types | Expand a respondent roster | 3 | 0.00 | 0.00 | 0.00 |
+| Comments · All | Find Constellation and read a quoted position | 4 + 1 text entry | 2.35 | 0.79 | 0.84 |
+| Discourse | OPSI’s commission roll calls | 2 | 0.00 | 0.00 | 0.00 |
+
+The E-7 link moved beside the order: phone scroll fell from 3.17 screens to 0.77; tablet and desktop fell from 1.40 and 1.60 to zero. Reaching the Comments policy map alone now takes two taps and zero scroll on every device (previous phone scroll: 1.92 screens). The quote row above goes further, opening a specific position. Search and reading a result remain the longest phone path.
+
+The Filings check matches Google’s quoted words to the cited original page. The Commissioners check finds Rosner’s timestamp link; it does not test YouTube playback. Rapid issue changes were tested with both a late success and a late failure. Cold Overview used five requests and 171,686 bytes with per-response gzip, down from 187,570 bytes on #29 (8.5%). The 36 panel checks and 51 goal measurements are separate from these 33 click-throughs. Reproduce the HTML, JSON and Markdown views with the tab-interaction command in [REFRESH.md](REFRESH.md).
+
 ### Run 2026-11-10 (filing reading room, against PR #29)
 
 At 375×812, 768×1024 and 1280×800, the three Overview questions opened the registry access rule (p. 124), exit liability (p. 36) and the one-site definition (p. 109) in one click each. Their citations opened the original page text on the second click. From Overview, News → state-commission tally took two clicks. The same source route worked with JavaScript disabled and a keyboard. The NYISO rehearing order’s Word reference also opened its qualification about defining large load, with JavaScript disabled at all three widths. All 425 Word-note reference links across 18 originals have a unique target. The existing 36 panel checks and 51 goal measurements passed on all three viewports.
