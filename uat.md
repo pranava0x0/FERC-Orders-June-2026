@@ -3,11 +3,39 @@
 Learned-pathways log for the `ferc-uat` skill (`~/.claude/skills/ferc-uat/SKILL.md`). Do not
 delete the "Learned pathways log" section below — it's the skill's memory across runs.
 
-_Last run: 2026-11-10_
+_Last run: 2026-11-11_
 
 ---
 
 ## Learned pathways log
+
+### Run 2026-11-11 (Nov 5 PJM letters; measured three UX candidates and changed none)
+
+36 panel checks and 51 goal measurements at 375x812, 768x1024 and 1280x800: zero failures, zero console
+errors, zero failed requests, no horizontal overflow, no `undefined`/`NaN`. The three new Nov 5 timeline
+entries render with their source chips at all three widths, and both new quotes display.
+
+Blocking first-load weight is **168 KB gzip** against the 220 KB budget (index 11, styles 17, core-data 95,
+route 1, app 44), 52 KB of headroom. The backlog's "112 KB gzip data.js" is now 95 KB as `core-data.js`.
+Deferred and unchanged: comments-data 106 KB, record-data 49 KB, news-data 19 KB.
+
+**Three mobile costs were investigated and all three were left alone, which is the finding.** Prior sessions
+already took the cheap wins here, so the remaining costs are deliberate or inherent:
+
+| Candidate | Measured | Verdict |
+|---|---|---|
+| Filings `.jump-row` is `display:none` below 768px, so phones scroll instead of jumping (goals m, n cost 4.18 and 3.81 on mobile against 3 and 2.1 on tablet) | Showing it costs **294 px, 0.36 screens, across six wrapped button rows**, and pushes MISO LARS from 1.02 to 1.41 screens | Hiding is correct. Ten chips cost more than the scroll they save. |
+| Commissioners goal l, 2.02 screens of scroll, the worst on mobile | The lead-in is only 381 px; `.appears` is a 11,709 px chronological list and the Oct 21 video sits several dated items below Nov 5 | Inherent to a dated list, not a defect |
+| Discourse goal i, 1.49 screens on mobile against 0.17 on tablet | `.reader-leads` stacks to one column below 600 px: 688 px, 0.85 screens, for three cards | Editorial placement, not a bug. Demoting the lead is a curator's call, not a UAT fix. |
+
+The lesson for the next run: measure the replacement before removing a deliberate `display:none`. Two of the
+three candidates above looked like defects from the goal table alone and were not.
+
+**Review round after the UAT:** the harness re-ran clean after the review fixes (36 panel checks, 51 goal
+measurements, 0 failures). The sc6 track card gained one sentence on the Nov 5 letters; at 375 px it adds no
+horizontal overflow and the two new quoted spans render. The card's status prose is escaped text in both
+renderers, so it carries no source chips by design; the chips live on the Timeline entries beside it.
+
 
 ### Every tab: clicks and scroll, November 10
 

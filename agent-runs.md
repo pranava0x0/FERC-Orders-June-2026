@@ -33,6 +33,7 @@ token figure.
 | 19 | 2026-11-09 | 2 × Agent `general-purpose` review round 1 | Accuracy (tenets vs source context, speaker attribution, data.js) and UX (newcomer and expert lenses, slop, a11y) | 2 | 84 | 419,222 | ~6 min | opus | ✅ Accuracy: 14 confirmed, incl. two machine-translated transcripts the verifier could not catch; UX: 18, incl. Discourse clipped at 1280 px |
 | 20 | 2026-11-09 | 2 × Agent `general-purpose` video contents, second wave | Three open meetings (Oct redone from en-orig); three press conferences and Chang's CAISO keynote | 2 | 22 | 281,016 | ~4 min | sonnet | ✅ 88 quotes verified; Sept meeting had almost no large-load talk |
 | 21 | 2026-11-09 | Agent `general-purpose` review round 2 | Speaker attribution and tenet fidelity for the seven new videos; round-1 UX regressions | 1 | 26 | 167,705 | ~5 min | opus | ✅ 55/55 meeting attributions correct; 9 tenet or quote fixes (overstated hopes, a dropped "often", a wrong date in a caption, Chang's backstop line that misstated FERC's action), 2 copy nits; no UX regressions |
+| 22 | 2026-11-11 | Agent `general-purpose` **news sweep** | Burn down the `news-sweep-plan.mjs` matrix for anything published 2026-11-05 to 11-11 the site does not already cite | 1 | 30 | 147,767 | 98.3 s | haiku | ⚠️ Correct on the hard part, wrong on the details. Found the two Nov 5 PJM letters nothing else had (real finds, and the only new coverage this session), and its negative results on all five priorities held up. But it reported both as `snippetOnly` without opening either PDF, dated both Nov 6 from the filename when page 1 says Nov 5, attributed the CEO's letter to "the PJM Board" when Mills signed it and the Board was only cc'd, and flagged a stale 2025 Word sensitivity label as a confidentiality restriction. `curl` plus PyMuPDF read both in seconds. The REFRESH.md rule (fetch a flagged PDF yourself) is what turned a lead into a citation.
 
 _Totals (Runs 1–11 shown): 83 agent-runs · 1,246 tool uses · **4,048,526** subagent tokens · ~3,338 s of agent wall-clock. Of which Run 3 (974K) produced nothing, Run 5's audit half (~242K) was largely replaceable by deterministic checks, and **Run 8 (1.0M) overshot the user's session budget and hit the rate limit** — see below._
 _**The comment run is complete: 268/268 summaries written and valid.** The table above shows the representative runs; the 29 per-chunk runs (these plus ~20 more) are logged in `sources/comments/workflow-runs.jsonl` — **~13.2M subagent tokens** across the full corpus, with `extract_model`/`audit_model` per run for analysis._
@@ -616,3 +617,24 @@ re-reading quotes. What it did not cover: attribution and overstatement, which i
 Three bounded assignments covered acquisition, the PJM section reading plus historical audit, and named responses plus hearing sources. Each left source files and a machine-checkable inventory, rather than a list of claims in chat. The independent build checks every curated quote against its physical page. The docket ledger exposed a service outage instead of letting an empty response stand as evidence. Rechecking legacy citations against Word and PDF originals corrected four cards. The next refresh can reuse the acquisition and audit scripts; it does not need a new agent per accession. Per-agent token usage was unavailable.
 
 The all-tab follow-up was a solo review: the browser drove each task on three devices. No subagents ran.
+
+### 2026-11-11: web-search burn-down, UAT/perf, three review rounds (one Haiku agent, rest inline)
+
+One subagent all session (run 22 above, 147K tokens) for the news-sweep matrix; everything else inline. The
+agent's negative results held and it found the only two new documents, but every detail it reported about
+them was wrong, and `curl` plus PyMuPDF corrected all four in under a minute. The review was three rounds,
+each with a different method, and each found what the previous one structurally could not:
+
+- **Round 1, read the diff.** Four findings, all characterizations written past what the PDFs carry: ACP
+  called a "load" group on three surfaces, an invented count of "four separate letters", and ITI's "useful
+  example" promoted to "a model". The contradicting evidence was already in `data.js` — this file calls ACP
+  "the clean-energy and storage trade group" 1,100 lines away.
+- **Round 2, walk the data instead of the diff.** A recursive sweep of every string in `FERC_DATA` for the
+  Nov 5 thread showed four surfaces carry it and one, the sc6 track card, had been left at Oct 2. The diff
+  could not show this: the stale surface is a file region the commits never touched.
+- **Round 3, check the checker.** Grepping `verify-quotes --list` for a phrase I had just added returned
+  nothing, so the sweep had never covered track cards. A green "all 349 verified" was passing five unchecked
+  quotes. This is the session's one real tooling bug and no amount of diff-reading would have surfaced it.
+
+The cheap lesson: after adding a quote, grep the verifier's output for it. The run's exit code tells you
+nothing about whether your surface is enumerated.

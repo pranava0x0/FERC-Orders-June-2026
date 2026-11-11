@@ -141,8 +141,14 @@ PJM's E-2 extension request (granted Aug 14, and the promised partial filing lan
 
 ### 4. Check, test, regenerate
 
+`docs/js/data.js` is the source the browser never loads. `core-data.js` and `news-data.js` are built
+from it, so **any edit to `data.js` needs `node tools/build-delivery-data.mjs` before the stamper**, or the
+site keeps serving the old copy. The `--check` form fails loudly when the two have drifted, and
+`tests/page-weight.test.mjs` runs it, so a skipped build fails the suite rather than shipping quietly.
+
 ```bash
 node tools/check-staleness.mjs
+node tools/build-delivery-data.mjs              # data.js -> core-data.js + news-data.js (then stamp)
 node tools/build-llms.mjs
 node --test tests/*.test.mjs
 node tools/verify-quotes.mjs
@@ -248,7 +254,7 @@ VALIDATE: give every agent and X finding to ONE Sonnet agent (model sonnet) that
 
 INTEGRATE: give the validated set to ONE Opus agent (model opus) to place it (timeline with `track`, procedural.filings rows as observations only, tracks status lines, Discourse themes/media/voices roster) and to convert passed deadlines per the deadline-conversion rule. Bump `meta.newsCapture` only when the dockets were actually swept, `meta.commentaryCapture` when commentary was added. Every displayed quote needs its evidence entry.
 
-GATES (all must pass): node tools/check-staleness.mjs; node tools/build-llms.mjs; node tools/build-seo.mjs; node tools/build-docket-pages.mjs; node tools/verify-record.mjs; node tools/build-record-data.mjs; node tools/stamp-assets.mjs; node --test tests/*.test.mjs; node tools/verify-quotes.mjs; python3 tools/extract-abeyance-docs.py --check; then serve docs/ on 127.0.0.1:8131 and run the REFRESH.md console check (or tools/uat-playwright.mjs).
+GATES (all must pass): node tools/check-staleness.mjs; node tools/build-delivery-data.mjs; node tools/build-llms.mjs; node tools/build-seo.mjs; node tools/build-docket-pages.mjs; node tools/verify-record.mjs; node tools/build-record-data.mjs; node tools/stamp-assets.mjs; node --test tests/*.test.mjs; node tools/verify-quotes.mjs; python3 tools/extract-abeyance-docs.py --check; then serve docs/ on 127.0.0.1:8131 and run the REFRESH.md console check (or tools/uat-playwright.mjs).
 
 FINISH: update REFRESH.md (queue, When-to-run table, Learned), issues.md and agent-runs.md (agents and token use). Commit in small focused commits with plain messages, and never add Co-Authored-By or "Generated with" lines. Push the branch and open a PR. Do NOT merge; the user reviews. End with a short summary of what changed, what is still open, and the PR link.
 
@@ -267,6 +273,32 @@ After a refresh that adds URLs, optionally inspect one new URL in Search Console
 indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
 
 ## Gotchas learned the hard way
+
+- **A green `verify-quotes` run does not mean YOUR quote was checked.** The sweep enumerates named
+  surfaces; anything it does not enumerate passes by not being looked at. Track `status.line` quotes shipped
+  unswept for weeks under an "OK — all 349 verified" line. After adding a quote to any surface, confirm it is
+  in the sweep's output (`node tools/verify-quotes.mjs --list | grep "<your phrase>"`), not just that the run
+  exited 0. When a surface turns out to be unswept, extend `tools/verify-quotes.mjs` and add a test that
+  names the surface, rather than de-quoting the one sentence.
+
+- **pjm.com answers a wrong URL with HTTP 200 and a 26,183-byte page.** Every bad guess at a committee or
+  disclosure path returns that same soft 404, so `curl -o file.pdf` leaves a real file on disk and a
+  status-only check records a source that does not exist. Three guessed paths passed a 200 check on
+  2026-11-11 (`20261118/agenda.pdf`, `20261105/minutes.pdf`, an invented ACP letter name). Check the byte
+  count, or `file` the result: a real PDF reports its page count, the soft 404 does not. This is the site's
+  own "a 200 and a real file is not proof" rule, with a specific number attached.
+- **Read PJM's Board Communications page every sweep, not just eLibrary and the committee pages.**
+  `pjm.com/about-pjm/who-we-are/pjm-board/public-disclosures.aspx` carries the ex parte letters stakeholders
+  send the Board and the Board's replies, and it has held large-load material all year. Three sweeps missed
+  the Oct 2 CEBA and Data Center Coalition letter; the Nov 5 letters from ITI and from PJM's own chief
+  executive sat there unread until 2026-11-11. The files are posted under the date they were POSTED, not the
+  date on the letter (the Nov 5 letters both have Nov 6 file names), so take the date from page 1, not the
+  filename. The listing page is JavaScript-rendered, so find entries by web search and curl the PDF directly.
+- **A Microsoft sensitivity label in a PDF's metadata is not a confidentiality marking on the document.**
+  PJM's Nov 5 CEO letter carries `MSIP_Label ... Name(Confidential - PJM Personnel Only)` whose `SetDate` is
+  Nov 13 2025, a year before the letter: it is a stale Word template artifact, and PJM published the file on
+  its own public disclosures page. A search agent flagged it as possibly non-public. Check the label's set
+  date and where the file is published before treating it as a restriction.
 
 - **YouTube's "en" auto-caption track can be a machine TRANSLATION.** When a video lists many `*-orig` tracks, plain
   `en` is translated text ("Novaya England", "the slaughterhouse case" for Trump v. Slaughter), and every quote from
