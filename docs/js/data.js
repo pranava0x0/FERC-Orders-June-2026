@@ -897,6 +897,26 @@ window.FERC_DATA = (function () {
       captured: "2026-11-02",
       note: "Dated Oct 2, 2026 and posted in PJM's public disclosures under an Oct 5 file name. Signed by John Miller (CEBA) and Morgan A. Sipple (DCC), addressed to Board Chair Paula Conboy and CEO David Mills. Read end to end; committed as sources/originals/pjm-20261005-ceba-dcc-letter-to-pjm-board.pdf. Missed by the Oct 8 to Oct 30 sweeps; first seen this sweep. Snippet in sources/news-evidence.json.",
     },
+    pjmceo1105: {
+      label: "Letter from PJM's President and CEO to CEBA, DCC, ACP and ITI on the large-load show cause response",
+      org: "PJM Interconnection (posted by PJM)",
+      short: "PJM CEO letter",
+      tier: "secondary",
+      url: "https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20261106-pjm-board-response-to-ceba-acpa-dcc-and-iti-concerning-large-load-show-cause-issues.pdf",
+      published: "2026-11-05",
+      captured: "2026-11-11",
+      note: "Dated Nov 5, 2026 and posted in PJM's public disclosures under a Nov 6 file name. One page, signed by David E. Mills, President and CEO, and copied to the PJM Board of Managers; it answers four separate letters from CEBA, the Data Center Coalition, the American Clean Power Association and ITI. The file's Word metadata carries a stale Microsoft sensitivity label reading \u201cConfidential - PJM Personnel Only\u201d whose set date is Nov 13, 2025, a year before this letter; PJM published the file itself on its public Board Communications page. Read end to end; committed as sources/originals/pjm-20261106-pjm-ceo-response-to-ceba-dcc-acp-iti.pdf. Snippet in sources/news-evidence.json.",
+    },
+    itipjm1105: {
+      label: "Letter to the PJM Board of Managers on large-load integration reforms",
+      org: "Information Technology Industry Council (posted by PJM)",
+      short: "ITI",
+      tier: "secondary",
+      url: "https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20261106-information-technology-industry-council-letter-to-the-pjm-board-regarding-large-load.pdf",
+      published: "2026-11-05",
+      captured: "2026-11-11",
+      note: "Seven pages dated Nov 5, 2026, posted under a Nov 6 file name. Signed by Jason Oxman, President and CEO of ITI, addressed to Board Chair Paula Conboy, CEO David Mills and the Board of Managers. Two pages of principles and a five-page attachment of recommendations. Read end to end; committed as sources/originals/pjm-20261106-iti-letter-to-pjm-board.pdf. Snippet in sources/news-evidence.json.",
+    },
     pjmreg1028: {
       label: "MC Legal Report: Summary of Significant Filings, Legal Activity and Commission and Court Orders (Sep 14 to Oct 16, 2026)",
       org: "PJM Interconnection (Members Committee, Oct 28, 2026)",
@@ -1060,7 +1080,7 @@ window.FERC_DATA = (function () {
       "On October 23, 2025, the Department of Energy invoked its rarely used § 403 authority to direct FERC to open a rulemaking on connecting large loads (data centers, AI, advanced manufacturing) to the interstate grid (Docket RM26-4-000), and asked for final action by April 30, 2026.",
       "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.",
       "The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC issued Item E-2 (EL25-49-002), the order on rehearing that finalizes the rates and terms for the three new transmission services its PJM co-location proceeding created, the same services the six orders extend to every other region.",
-      "Where it stands on November 10, 2026: the Nov 9–10 sweep found no new respondent answer on the six main sheets. Morongo Transmission, a CAISO transmission owner, had already answered on Aug 12. The Nov 16 deadline (Nov 20 for SPP) remains separate from PJM’s Nov 9 registry filing in ER26-3515-002. The respondents' plans are in writing: the PJM Transmission Owners and ISO New England have each committed to a §205 filing by November 16; CAISO's Board advanced its large-load proposal on October 28 for a filing by the same date; PJM scheduled a November 5 special Members Committee to consult on a suite of §205 filings answering the show cause order and had posted no outcome by November 9; MISO is filing its reforms under §205 in separate dockets; and NYISO's stated target is December. FERC's one ruling on large-load tariff text since June came on October 9, in PJM's own §205 docket: it accepted a 50 MW Large Load definition and a Large Load Registry and rejected the curtail-first Interim Resource Adequacy Service built around them as an intrusion on state retail jurisdiction. PJM refiled its suspended backstop procurement on October 29 in a new docket, ER27-330, after FERC on October 23 moved the paper-hearing briefs to January rather than ruling on PJM's abeyance motion; seven parties have asked for rehearing or clarification of the September 29 backstop order, and FERC's November 2 notice set comments on the refiling for November 30. Vistra, and Exelon with others, have petitioned the Third Circuit for review of four orders in the PJM co-location proceeding (EL25-49). PJM governance is at the redline stage after the Members' September 30 vote, with the states opposed and the Board's filing decision unannounced. On November 3 Exelon filed a fast-track complaint (EL27-11) asking FERC to replace PJM's three-year-forward capacity auction with a prompt auction from 2030/31. The Filings tab quotes the key positions in each of these proceedings, page by page. Each of these threads has its own line under Where things stand, and the Timeline carries every earlier sweep's findings by date.",
+      "Where it stands on November 10, 2026: the Nov 9–10 sweep found no new respondent answer on the six main sheets. Morongo Transmission, a CAISO transmission owner, had already answered on Aug 12. The Nov 16 deadline (Nov 20 for SPP) remains separate from PJM’s Nov 9 registry filing in ER26-3515-002. The respondents' plans are in writing: the PJM Transmission Owners and ISO New England have each committed to a §205 filing by November 16; CAISO's Board advanced its large-load proposal on October 28 for a filing by the same date; PJM scheduled a November 5 special Members Committee to consult on a suite of §205 filings answering the show cause order, posted no outcome from it, and its chief executive wrote to four load trade groups that day that PJM's proposal was still under development; MISO is filing its reforms under §205 in separate dockets; and NYISO's stated target is December. FERC's one ruling on large-load tariff text since June came on October 9, in PJM's own §205 docket: it accepted a 50 MW Large Load definition and a Large Load Registry and rejected the curtail-first Interim Resource Adequacy Service built around them as an intrusion on state retail jurisdiction. PJM refiled its suspended backstop procurement on October 29 in a new docket, ER27-330, after FERC on October 23 moved the paper-hearing briefs to January rather than ruling on PJM's abeyance motion; seven parties have asked for rehearing or clarification of the September 29 backstop order, and FERC's November 2 notice set comments on the refiling for November 30. Vistra, and Exelon with others, have petitioned the Third Circuit for review of four orders in the PJM co-location proceeding (EL25-49). PJM governance is at the redline stage after the Members' September 30 vote, with the states opposed and the Board's filing decision unannounced. On November 3 Exelon filed a fast-track complaint (EL27-11) asking FERC to replace PJM's three-year-forward capacity auction with a prompt auction from 2030/31. The Filings tab quotes the key positions in each of these proceedings, page by page. Each of these threads has its own line under Where things stand, and the Timeline carries every earlier sweep's findings by date.",
       "The Timeline tab holds the dated record: the August 3 and August 9 answer periods, the August 14 abeyance orders, the August 17 partial co-location compliance, the August 21 governance comments and backstop protests, and everything since. Each entry cites the document it was read from.",
     ],
   };
@@ -1564,8 +1584,20 @@ window.FERC_DATA = (function () {
     {
       date: "Nov 5, 2026", iso: "2026-11-05", kind: "milestone", track: "sc6",
       title: "PJM's special Members Committee on the show cause filings: window closed, outcome not posted",
-      body: "PJM scheduled a special Members Committee for Nov 5 with one item: its consultation under Tariff section 9.2(b), and with the transmission owners under the owners' agreement, on a suite of §205 filings answering the large-load show cause order. As of Nov 9 no minutes or materials from the meeting were found, and no PJM filing appears in EL26-67 or in a new docket on the Nov 9 general search. The backstop precedent (consult Oct 22, file Oct 29) puts a filing on or after Nov 12.",
-      src: ["pjmmc1105", "pjmrbp1029", "elibrary1109"],
+      body: "PJM scheduled a special Members Committee for Nov 5 with one item: its consultation under Tariff section 9.2(b), and with the transmission owners under the owners' agreement, on a suite of §205 filings answering the large-load show cause order. As of Nov 9 no minutes or materials from the meeting were found, and no PJM filing appears in EL26-67 or in a new docket on the Nov 9 general search. The backstop precedent (consult Oct 22, file Oct 29) puts a filing on or after Nov 12. PJM’s chief executive wrote the same day that the proposal was still under development.",
+      src: ["pjmmc1105", "pjmrbp1029", "elibrary1109", "pjmceo1105"],
+    },
+    {
+      date: "Nov 5, 2026", iso: "2026-11-05b", kind: "milestone", track: "sc6",
+      title: "PJM’s chief executive tells four load groups the proposal is still being written",
+      body: "David E. Mills answers separate letters from CEBA, the Data Center Coalition, the American Clean Power Association and ITI in one reply, copied to the Board. He writes that PJM staff are discussing its approach “both in the public stakeholder process and through bilateral discussions with several parties” and asks them to keep working with the PJM team “as our proposal is still under development.” The letter is dated the day of PJM’s special Members Committee consultation and eleven days before the Nov 16 deadline. It describes the state of the work; it does not say what PJM will file.",
+      src: ["pjmceo1105", "pjmmc1105"],
+    },
+    {
+      date: "Nov 5, 2026", iso: "2026-11-05c", kind: "milestone", track: "sc6",
+      title: "The technology industry asks PJM not to write one set of interconnection rules for every customer",
+      body: "ITI’s seven-page letter to the Board sets out four principles and six reform frameworks. It argues that interconnection requirements “should not be one size fits all” but should reflect the service requested, the facility’s operating characteristics and its economic development impacts, with grandfathering for approved projects. It asks PJM to define non-firm service eligibility by performance capability rather than by technology, and points to SPP’s CHILLS framework as a model for separating transmission-constrained from capacity-constrained curtailment. This is one trade association’s position, not a filing.",
+      src: ["itipjm1105"],
     },
     {
       date: "Nov 9, 2026", iso: "2026-11-09", kind: "milestone", track: "context",
@@ -2907,8 +2939,8 @@ window.FERC_DATA = (function () {
         // --- show-cause column: what respondents have put in writing about Nov 16 (2026-10-19) ---------
         {
           docket: "EL26-67-000", step: "showcause", status: "signaled", date: "2026-10-29",
-          gist: "The PJM Transmission Owners' Oct 9 consultation notice commits them to a §205 filing on or before Nov 16 covering the show cause order and their EL25-49 compliance obligation. PJM itself told FERC in its abeyance motion to expect its §205 filing in early-to-mid November, with an advisory Members Committee vote Oct 28; that vote was not on the Oct 28 agenda, and PJM's Oct 29 agenda for a Nov 5 special Members Committee instead sets a §9.2(b) consultation on a suite of §205 filings answering the show cause order. Neither filing has been observed.",
-          src: ["pjmto1009", "abeyance0814", "pjmmc1028", "pjmmc1105"],
+          gist: "The PJM Transmission Owners' Oct 9 consultation notice commits them to a §205 filing on or before Nov 16 covering the show cause order and their EL25-49 compliance obligation. PJM itself told FERC in its abeyance motion to expect its §205 filing in early-to-mid November, with an advisory Members Committee vote Oct 28; that vote was not on the Oct 28 agenda, and PJM's Oct 29 agenda for a Nov 5 special Members Committee instead sets a §9.2(b) consultation on a suite of §205 filings answering the show cause order. On Nov 5 PJM's chief executive wrote to four load trade groups that the proposal was still under development. Neither filing has been observed.",
+          src: ["pjmto1009", "abeyance0814", "pjmmc1028", "pjmmc1105", "pjmceo1105"],
         },
         {
           docket: "EL26-72-000", step: "showcause", status: "signaled", date: "2026-10-09",
