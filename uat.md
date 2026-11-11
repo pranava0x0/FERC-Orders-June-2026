@@ -31,6 +31,11 @@ already took the cheap wins here, so the remaining costs are deliberate or inher
 The lesson for the next run: measure the replacement before removing a deliberate `display:none`. Two of the
 three candidates above looked like defects from the goal table alone and were not.
 
+**Review round after the UAT:** the harness re-ran clean after the review fixes (36 panel checks, 51 goal
+measurements, 0 failures). The sc6 track card gained one sentence on the Nov 5 letters; at 375 px it adds no
+horizontal overflow and the two new quoted spans render. The card's status prose is escaped text in both
+renderers, so it carries no source chips by design; the chips live on the Timeline entries beside it.
+
 
 ### Every tab: clicks and scroll, November 10
 
