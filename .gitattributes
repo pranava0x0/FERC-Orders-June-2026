@@ -1,0 +1,17 @@
+# Exact source text and OCR layout are part of the evidence, including end-of-line spaces.
+docs/reading/**/text.html -whitespace
+sources/archived/*.html -whitespace
+sources/text/abeyance/*.txt -whitespace
+sources/originals/*.txt -whitespace
+sources/videos/hearings/*.txt -whitespace
+sources/videos/text/*.txt -whitespace
+sources/comments/ocr/*.txt -whitespace
+# Collapse reproducible output in the GitHub diff; the generators and editorial seeds remain visible.
+docs/reading/** linguist-generated=true
+docs/js/core-data.js linguist-generated=true
+docs/js/news-data.js linguist-generated=true
+sources/filings/archive-validation.json linguist-generated=true
+*.pdf binary
+*.PDF binary
+*.docx binary
+sources/videos/cues/*.json3 -whitespace

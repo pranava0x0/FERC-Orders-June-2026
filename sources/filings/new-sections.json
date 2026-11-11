@@ -1,0 +1,460 @@
+{
+  "report-el26-67-pjm": [
+    {
+      "title": "Backstop procurement and shortage service",
+      "start": 2,
+      "end": 4,
+      "theme": "Cost and curtailment",
+      "take": "PJM put the procurement rules and curtailment rules into the same stakeholder process. A large customer without enough new supply could have to cut demand before existing customers.",
+      "quote": "these large loads may be required to reduce their withdrawals from the transmission system",
+      "pg": 3
+    },
+    {
+      "title": "Connecting before transmission upgrades",
+      "start": 5,
+      "end": 6,
+      "theme": "Load flexibility",
+      "take": "PJM was considering contractual load reductions as a way to connect some customers sooner. The planning question was who could order a reduction and how that obligation would be divided.",
+      "quote": "would allow certain large load customers to connect to the grid prior to completion of necessary transmission upgrades",
+      "pg": 5
+    },
+    {
+      "title": "Three choices for the capacity market",
+      "start": 6,
+      "end": 8,
+      "theme": "Resource adequacy",
+      "take": "PJM put three paths on the table: long-term procurement, different reliability targets within the region, or greater reliance on energy and reserve revenue. They were alternatives for discussion.",
+      "quote": "either through mandatory LSE hedging or through centralized long-term procurement",
+      "pg": 7
+    },
+    {
+      "title": "Reserve pricing",
+      "start": 8,
+      "end": 9,
+      "theme": "Market incentives",
+      "take": "PJM wanted reserve prices to reflect the cost of ramping generators when demand or supply turns out differently than forecast.",
+      "quote": "recalibrate reserve products and update reserve demand curves to better account for ramping and uncertainty",
+      "pg": 8
+    },
+    {
+      "title": "Connecting generation sooner",
+      "start": 9,
+      "end": 11,
+      "theme": "Interconnection",
+      "take": "PJM was studying whether generators in the third phase of its queue could operate before every study finished, subject to safety and reliability.",
+      "quote": "permitted to safely and reliably begin generating prior to their completion of certain Cycle studies",
+      "pg": 10
+    }
+  ],
+  "report-el26-71-caiso": [
+    {
+      "title": "How California sets its plans",
+      "start": 2,
+      "end": 7,
+      "theme": "State authority",
+      "take": "The California Energy Commission forecasts demand, the utilities commission sets the resource portfolio, and CAISO tests whether transmission can deliver it.",
+      "quote": "planning process incorporates the CEC's demand forecast and the CPUC's resource portfolios",
+      "pg": 6
+    },
+    {
+      "title": "Can the planned generation reach customers?",
+      "start": 8,
+      "end": 13,
+      "theme": "Transmission capacity",
+      "take": "CAISO reports that its 2025 to 2026 planning studies examined portfolios with another 40 GW over ten years. Building generation only helps if developers can connect it and deliver the power.",
+      "quote": "Generation that cannot reach load is generation in name only.",
+      "pg": 12
+    },
+    {
+      "title": "The planned response to FERC",
+      "start": 14,
+      "end": 15,
+      "theme": "Stakeholder timetable",
+      "take": "In July, CAISO outlined two rounds of proposals and workshops ahead of its targeted November filing. This was its schedule, not evidence that each milestone was met.",
+      "quote": "a straw proposal in August and draft final proposal in September",
+      "pg": 15
+    },
+    {
+      "title": "Generator queue and other reforms",
+      "start": 15,
+      "end": 18,
+      "theme": "Interconnection",
+      "take": "CAISO describes how scoring requests by readiness narrowed the projects in its cluster study. It placed those queue changes alongside its large-load proceeding.",
+      "quote": "focus its cluster 15 interconnection study on first-ready projects",
+      "pg": 17
+    }
+  ],
+  "report-el26-70-miso": [
+    {
+      "title": "Who plans for the next five years?",
+      "start": 2,
+      "end": 7,
+      "theme": "State authority",
+      "take": "MISO combines forecasts from load-serving entities with an annual survey of resource owners; state and retail regulators retain responsibility for determining required adequacy.",
+      "quote": "LSEs are the entities responsible for providing demand forecasts",
+      "pg": 4
+    },
+    {
+      "title": "Studying projects across grid boundaries",
+      "start": 7,
+      "end": 9,
+      "theme": "Interconnection",
+      "take": "MISO reports that a delayed neighboring-system study need not stop a generator’s application from advancing.",
+      "quote": "allowing Interconnection Customers to move forward even where an affected system study is delayed",
+      "pg": 9
+    },
+    {
+      "title": "Generation that serves only the adjacent load",
+      "start": 9,
+      "end": 14,
+      "theme": "Co-location",
+      "take": "The proposed zero-injection agreement would give paired generation and load a study path without granting delivery rights on the wider system. MISO later filed the agreement in ER26-3552.",
+      "quote": "will be co-located with load and will not inject energy further onto the Transmission System",
+      "pg": 10
+    }
+  ],
+  "report-el26-68-spp": [
+    {
+      "title": "Accelerated supply and provisional load studies",
+      "start": 9,
+      "end": 14,
+      "theme": "Interconnection",
+      "take": "SPP traces its expedited resource process to urgent needs through 2030. A separate provisional process studies load before all supply is named.",
+      "quote": "a one-time, accelerated pathway for new generating resources to help address urgent reliability needs through 2030",
+      "pg": 11
+    },
+    {
+      "title": "Identifying high-impact loads",
+      "start": 15,
+      "end": 17,
+      "theme": "Reliability studies",
+      "take": "SPP separates the study of a high-impact load from the agreement for generation assigned to serve it. Operational requirements continue after the initial study.",
+      "quote": "established enhanced study requirements for HILLs to enable SPP to assess the load’s reliability impacts",
+      "pg": 15
+    },
+    {
+      "title": "Conditional service has an end date",
+      "start": 17,
+      "end": 19,
+      "theme": "Curtailment",
+      "take": "CHILLS allows temporary conditional service with supporting generation and separate metering. Customers must pursue permanent firm transmission service; SPP can curtail in an emergency.",
+      "quote": "CHILLS are limited to a maximum seven-year term",
+      "pg": 19
+    },
+    {
+      "title": "A different offer for price-sensitive demand",
+      "start": 23,
+      "end": 26,
+      "theme": "Flexible demand",
+      "take": "SPP describes proposed usage-based service for customers willing to follow dispatch instructions and cut demand during constraints. In this July report, the proposal had not been filed.",
+      "quote": "PAL/PALS remains under active stakeholder development and has not yet been submitted to the Commission",
+      "pg": 24
+    }
+  ],
+  "report-el26-72-isone": [
+    {
+      "title": "Who pays generators to stay available?",
+      "start": 2,
+      "end": 4,
+      "theme": "Resource adequacy",
+      "take": "ISO-NE says energy-market revenue and the capacity market both matter to investment; it distinguishes steady electrification growth from a sudden jump in large loads.",
+      "quote": "the region’s energy market – through which the vast majority of generators’ revenue flows",
+      "pg": 3
+    },
+    {
+      "title": "A capacity auction closer to the delivery season",
+      "start": 4,
+      "end": 6,
+      "theme": "Market design",
+      "take": "ISO-NE describes shorter procurement lead times and seasonal auctions, using fresher information on supply and demand when it buys capacity.",
+      "quote": "moving from a three-year forward to a prompt seasonal capacity market",
+      "pg": 5
+    },
+    {
+      "title": "New generation and conditional service",
+      "start": 6,
+      "end": 8,
+      "theme": "Curtailment",
+      "take": "ISO-NE was considering requiring large loads to bring new supply, with conditional power before upgrades are complete. It expected detailed implementing rules in 2027.",
+      "quote": "until sufficient designated resources and network upgrades are in place, subject to flexibility requirements and/or curtailment and interruption",
+      "pg": 7
+    }
+  ],
+  "report-el26-69-nyiso": [
+    {
+      "title": "Why the New York City need changed",
+      "start": 2,
+      "end": 4,
+      "theme": "Load forecasting",
+      "take": "An updated demand forecast removed a previously identified actionable New York City need. NYISO still saw longer-term risk from retirements, load growth and dependence on imports.",
+      "quote": "the baseline actionable reliability need was no longer observed",
+      "pg": 3
+    },
+    {
+      "title": "A queue position does not guarantee a power plant",
+      "start": 4,
+      "end": 9,
+      "theme": "Interconnection",
+      "take": "NYISO says faster queue studies cannot resolve the siting, financing and supply-chain obstacles that decide whether a project is actually built.",
+      "quote": "factors outside the NYISO’s interconnection process significantly impact whether a project is constructed",
+      "pg": 6
+    },
+    {
+      "title": "A faster study for an identified reliability need",
+      "start": 9,
+      "end": 12,
+      "theme": "Reliability studies",
+      "take": "NYISO proposed limiting a faster study path to generators needed for an identified reliability problem so the regular cluster queue could continue.",
+      "quote": "a separate accelerated interconnection study path for generators needed to address reliability needs",
+      "pg": 11
+    },
+    {
+      "title": "Reserves for forecast errors",
+      "start": 12,
+      "end": 14,
+      "theme": "Market incentives",
+      "take": "NYISO was considering buying reserves explicitly for uncertainty in net load and intermittent generation in both day-ahead and real-time markets.",
+      "quote": "to procure reserves for forecast uncertainty in net load and intermittent generation",
+      "pg": 13
+    }
+  ],
+  "amendment-er27-432-spp-chills": [
+    {
+      "title": "What the November 6 filing covered",
+      "start": 1,
+      "end": 2,
+      "theme": "Regional rates",
+      "take": "The original proposal added CHILLS provisions to SPP’s western pricing zones. The November 10 amendment changes the Upper Missouri rate sheet.",
+      "quote": "to add provisions for Conditional High Impact Large Load Service (“CHILLS”) for pricing Zones in the SPP West Region",
+      "pg": 2
+    },
+    {
+      "title": "Which revenue credits were missing?",
+      "start": 2,
+      "end": 3,
+      "theme": "Cost allocation",
+      "take": "The proposed correction restores two references: Schedule 14 DC tie revenues and Incremental Market Efficiency Use revenues. The latter compensates western tie owners for increased use.",
+      "quote": "omitted revisions to the rate sheet for the Upper Missouri Zone",
+      "pg": 2
+    },
+    {
+      "title": "Effective date requested",
+      "start": 4,
+      "end": 5,
+      "theme": "Procedural status",
+      "take": "SPP asked FERC to accept February 1, 2027 as the effective date. Its letter requests no other changes to the November 6 proposal.",
+      "quote": "with an effective date of February 1, 2027",
+      "pg": 4
+    }
+  ],
+  "comments-el26-67-spartz": [
+    {
+      "title": "A pause on discretionary approvals",
+      "start": 1,
+      "end": 2,
+      "theme": "Federal jurisdiction",
+      "take": "Rep. Victoria Spartz asks FERC and DOE to identify authority to condition or suspend approvals until safeguards exist, and recommend legislation where authority falls short. She expressly preserves vested rights and essential reliability work.",
+      "quote": "Respect vested rights, enforceable agreements, and essential reliability or safety improvements.",
+      "pg": 2
+    },
+    {
+      "title": "Who pays and who carries the risk?",
+      "start": 3,
+      "end": 4,
+      "theme": "Cost allocation",
+      "take": "Spartz wants major developers to bear incremental costs attributed to their projects, with deposits, minimum payments and termination fees to protect other customers.",
+      "quote": "Review deposits, financial guarantees, minimum-payment obligations, termination fees, and protections against stranded costs.",
+      "pg": 4
+    },
+    {
+      "title": "What counts as one project?",
+      "start": 5,
+      "end": 6,
+      "theme": "Transparency",
+      "take": "Spartz asks agencies to look across phased permits and affiliates to see the total cost and identify who benefits. She also calls for scrutiny of PJM and MISO governance.",
+      "quote": "Require consolidated assessment of related developments and disclosure of material financial commitments, beneficiaries, and regulatory decisions.",
+      "pg": 5
+    },
+    {
+      "title": "Congressional oversight",
+      "start": 7,
+      "end": 9,
+      "theme": "Oversight",
+      "take": "Spartz says she intends to seek a GAO investigation. This is a request from one member of Congress; it does not establish a federal moratorium or an Indiana commission position.",
+      "quote": "I intend to seek an independent Government Accountability Office investigation",
+      "pg": 7
+    }
+  ],
+  "filing-er26-3380-pjm-original": [
+    {
+      "title": "Why PJM separated procurement from curtailment",
+      "start": 8,
+      "end": 26,
+      "theme": "Procurement",
+      "take": "PJM described the backstop and its forthcoming curtailment proposal as independent. It asked FERC to consider procurement even if the other tariff needed more review.",
+      "quote": "the two filings are independent of each other",
+      "pg": 12
+    },
+    {
+      "title": "How a customer could reduce the target",
+      "start": 27,
+      "end": 52,
+      "theme": "New capacity",
+      "take": "The July proposal allowed newly contracted or self-supplied capacity to reduce the quantity PJM would buy. The customer had to report the capacity during the procurement window and provide evidence.",
+      "quote": "if reported to PJM within the RBP procurement window and supported by sufficient evidence",
+      "pg": 38
+    },
+    {
+      "title": "What happens when promised capacity does not arrive",
+      "start": 53,
+      "end": 80,
+      "theme": "Delivery risk",
+      "take": "A project could retain its commitment through delays, but failing to supply any backstop capacity for three consecutive delivery years would cancel the balance of its 15-year commitment.",
+      "quote": "If the RBP Resource fails to provide any RBP UCAP MW after three consecutive Delivery Years",
+      "pg": 68
+    },
+    {
+      "title": "How the supplier would be paid",
+      "start": 81,
+      "end": 100,
+      "theme": "Revenue settlement",
+      "take": "PJM proposed paying suppliers the shortfall after capacity-market revenue, subject to actual availability and clearing. Customers would fund the measured shortfall rather than a forecast.",
+      "quote": "Loads will fund the actual revenue shortfall, measured ex post",
+      "pg": 88
+    },
+    {
+      "title": "Where state authority enters the bill",
+      "start": 101,
+      "end": 120,
+      "theme": "Cost allocation",
+      "take": "PJM distinguished the wholesale allocation it proposed from the decision retail regulators make about passing those charges on to individual customers.",
+      "quote": "allocation to retail customers, including data centers, is within the states’ and/or RERRAs’ purview",
+      "pg": 111
+    }
+  ],
+  "filing-er26-3515-pjm-iras": [
+    {
+      "title": "Support for a registry",
+      "start": 30,
+      "end": 48,
+      "theme": "Load forecasting",
+      "take": "PJM reported that 82% of 66 poll respondents supported a registration requirement. That was a poll about the registry, not support for every proposed curtailment rule.",
+      "quote": "82% of the 66 stakeholder respondents agreed that a Large Load registration requirement is necessary",
+      "pg": 36
+    },
+    {
+      "title": "Bring capacity or accept reductions",
+      "start": 49,
+      "end": 79,
+      "theme": "Resource adequacy",
+      "take": "PJM asked to require a load-serving entity to bring new capacity for an eligible new large customer or face reductions. FERC rejected this part of the proposal in October.",
+      "quote": "Requirement for New Large Loads to bring capacity or be subject to load reductions",
+      "pg": 55
+    },
+    {
+      "title": "When the operators would call an event",
+      "start": 80,
+      "end": 103,
+      "theme": "Curtailment",
+      "take": "PJM proposed adding reductions of eligible large loads to its emergency sequence. It emphasized that dispatchers still need discretion over the order of actions as conditions change.",
+      "quote": "the rapidness of system events influences the timing and order of actions necessary to maintain system reliability",
+      "pg": 87
+    },
+    {
+      "title": "Payment when a large load cuts demand",
+      "start": 104,
+      "end": 120,
+      "theme": "Customer compensation",
+      "take": "The August proposal permitted a retail rate from zero to half the non-performance charge rate. This was part of the proposed service; the registry that survived in October does not create that payment.",
+      "quote": "a retail rate between 50% of the Non-Performance Charge Rate and zero dollars",
+      "pg": 112
+    }
+  ],
+  "filing-er26-3650-miso-irr": [
+    {
+      "title": "Performance standards ahead of NERC",
+      "start": 1,
+      "end": 9,
+      "theme": "Reliability",
+      "take": "MISO argues that rapidly changing power demand makes it too risky to wait for a national standard before setting regional expectations.",
+      "quote": "the MISO region cannot wait to put in place needed interconnection reliability requirements",
+      "pg": 3
+    },
+    {
+      "title": "What happens during a grid disturbance",
+      "start": 3,
+      "end": 4,
+      "theme": "Ride-through",
+      "take": "MISO would require computational loads to withstand certain frequency and voltage disturbances. The concern is that a sudden load drop can itself upset grid operation.",
+      "quote": "reduce the risk of unnecessary disconnection or customer-initiated rapid reductions in Demands",
+      "pg": 4
+    },
+    {
+      "title": "Who is responsible for compliance?",
+      "start": 10,
+      "end": 21,
+      "theme": "Customer obligations",
+      "take": "MISO would hold the transmission customer responsible because the owner of a large load need not have a direct contract with the grid operator.",
+      "quote": "The Transmission Customer taking Transmission Service on behalf of a Large Load will be responsible for ensuring compliance",
+      "pg": 12
+    },
+    {
+      "title": "When MISO can delay or limit service",
+      "start": 22,
+      "end": 27,
+      "theme": "Enforcement",
+      "take": "Under proposed section 37A, failure to meet a requirement could delay the start of service or lead to corrective work or operating restrictions.",
+      "quote": "failure to comply with applicable requirements may result in a delayed Service Commencement Date",
+      "pg": 23
+    }
+  ],
+  "filing-er26-3552-miso-zgia": [
+    {
+      "title": "Which generator and load can use the agreement?",
+      "start": 10,
+      "end": 16,
+      "theme": "Co-location",
+      "take": "The generation and load must use the same connection point or a withdrawal point at the same substation and voltage. The agreement does not buy transmission service for the load.",
+      "quote": "ZG Interconnection Service is not Transmission Service and does not exempt a Transmission Customer from procuring Transmission Service.",
+      "pg": 12
+    },
+    {
+      "title": "How the proposal treats capacity credits",
+      "start": 16,
+      "end": 22,
+      "theme": "Capacity accreditation",
+      "take": "MISO specified where a load-serving entity could use capacity credits associated with a zero-injection resource. It separately proposed penalties if those resources participate as behind-the-meter generation.",
+      "quote": "all ZRCs associated with a ZG Resource must be used as part of an LSE’s FRAP or RBDC Opt Out",
+      "pg": 20
+    },
+    {
+      "title": "Why the request must be ready on day one",
+      "start": 27,
+      "end": 39,
+      "theme": "Queue eligibility",
+      "take": "MISO proposed a 90-day study and would bar changes to the request after submission. It argued that changes would disrupt the study timetable for other customers.",
+      "quote": "prohibit modifications to ZG Interconnection Requests after submission",
+      "pg": 34
+    }
+  ],
+  "filing-er27-432-spp-chills": [
+    {
+      "title": "Five western pricing zones",
+      "start": 1,
+      "end": 3,
+      "theme": "Regional rates",
+      "take": "SPP’s proposal identifies Colorado Springs, Platte River, Tri-State West, Colorado River Storage and Loveland as zones where new conditional-service charges would apply.",
+      "quote": "SPP proposes to add pricing Zones 100, 101, 102, 103, and 104",
+      "pg": 3
+    },
+    {
+      "title": "How charges flow back into transmission rates",
+      "start": 3,
+      "end": 5,
+      "theme": "Cost allocation",
+      "take": "SPP would credit receipts from conditional service against point-to-point transmission rates. For Colorado Springs and Platte River it also proposed removing a reference to revenues allocated only in the East.",
+      "quote": "Attachment AU revenues are allocated only to Transmission Owners in the SPP East Region",
+      "pg": 4
+    }
+  ]
+}

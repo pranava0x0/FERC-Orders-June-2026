@@ -610,3 +610,7 @@ and harness; two short videos extracted inline. Subagents: runs 15 to 18 above p
 wall-clock, not tokens. What made the fan-out cheap to trust: a strict verifier written *before* the agents
 launched, so every agent closed its own loop and the orchestrator re-ran one command per part instead of
 re-reading quotes. What it did not cover: attribution and overstatement, which is what the accuracy reviewer is for.
+
+### 2026-11-10: Post-order source audit and reading room
+
+Three bounded assignments covered acquisition, the PJM section reading plus historical audit, and named responses plus hearing sources. Each left source files and a machine-checkable inventory, rather than a list of claims in chat. The independent build checks every curated quote against its physical page. The docket ledger exposed a service outage instead of letting an empty response stand as evidence. Rechecking legacy citations against Word and PDF originals corrected four cards. The next refresh can reuse the acquisition and audit scripts; it does not need a new agent per accession. Per-agent token usage was unavailable.

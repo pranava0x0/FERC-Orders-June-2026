@@ -13,10 +13,15 @@ __pycache__/
 # Source PDFs and raw HTML snapshots are large / re-derivable — keep extracted text only.
 # Exceptions (committed): the six order PDFs under docs/orders/ — the ONLY PDFs GitHub Pages serves,
 # needed for the inline #page= citations — and the DOE §403 letter the accuracy tests pin.
-sources/archived/
+sources/archived/*
+!sources/archived/fact-sheet.html
+!sources/archived/press-release.html
+!sources/archived/rm26-4.html
+!sources/archived/summaries.html
 *.pdf
 *.docx
 !docs/orders/*.pdf
+!sources/videos/hearings/*.pdf
 !sources/pdf/doe-403-large-loads-letter.pdf
 # RM26-4 comment bodies (PDF/DOCX) are committed alongside their extracted text, metadata, and
 # summaries so the audit trail is self-contained. They sit under sources/ (not docs/), so they are

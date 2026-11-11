@@ -9,6 +9,12 @@ _Last run: 2026-11-10_
 
 ## Learned pathways log
 
+### Run 2026-11-10 (filing reading room, against PR #29)
+
+At 375×812, 768×1024 and 1280×800, the three Overview questions opened the registry access rule (p. 124), exit liability (p. 36) and the one-site definition (p. 109) in one click each. Their citations opened the original page text on the second click. From Overview, News → state-commission tally took two clicks. The same source route worked with JavaScript disabled and a keyboard. The existing 36 panel checks and 51 goal measurements passed on all three viewports.
+
+Cold local Chrome, five requests on both versions: 187,570 bytes gzip for PR #29; 171,344 for this refresh (same per-response gzip method). The archive is fetched only through navigation. The News tables load on first opening News. Compact source headings reduced the registry reader from about 165 kB to 62 kB uncompressed while keeping all physical page anchors. Timings on this machine are not estimates of public mobile latency. Reproduce with the two browser commands in REFRESH.md.
+
 ### Run 2026-11-10 (PJM registry and backstop)
 
 At 375×812, 768×1024 and 1280×800 the answer to what PJM filed was visible without scrolling or tapping. Each link opened the relevant proceeding with PJM already selected: one tap, no scroll to the first page citation. The Nov 16 deadline remained visible on load. On the phone the first §206 status line required 0.12 screens of scroll. All 36 panel checks and 51 goal measurements passed; no page errors, failed requests or horizontal overflow.

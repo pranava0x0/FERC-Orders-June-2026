@@ -227,6 +227,7 @@ DOCS = [
          cite=None, issued="2026-11-10", kind="combined notice", captured_at="2026-11-10",
          title="Combined Notice of Filings #1"),
 ]
+DOCS.extend(json.loads((ROOT / "sources/filings/refresh-documents.json").read_text(encoding="utf-8")))
 
 
 def find_source(in_dir: Path, accession: str) -> Path | None:
@@ -367,7 +368,9 @@ def main() -> int:
     metas = []
     for rec in DOCS:
         dest = OUT_DIR / f"{rec['slug']}.txt"
-        src = find_source(in_dir, rec["accession"])
+        src = in_dir / rec["filename"] if "filename" in rec else find_source(in_dir, rec["accession"])
+        if src is not None and not src.is_file():
+            src = None
         if src is None:
             # Not an error: the download directory is transient, the committed text is the artifact.
             (missing if not dest.exists() else same).append(rec["accession"])
@@ -410,13 +413,13 @@ def main() -> int:
         # is replaced only when its source was present and re-extracted this run; otherwise the
         # committed record stands. New accessions are appended in DOCS order.
         existing = json.loads(MANIFEST.read_text(encoding="utf-8")) if MANIFEST.exists() else {}
-        by_acc = {d["accession"]: d for d in existing.get("documents", [])}
+        by_slug = {d["slug"]: d for d in existing.get("documents", [])}
         for m in metas:
-            if m.get("source_file") is None and m["accession"] in by_acc:
+            if m.get("source_file") is None and m["slug"] in by_slug:
                 continue  # nothing re-extracted: keep the record that knows its source
-            by_acc[m["accession"]] = m
-        order = [rec["accession"] for rec in DOCS]
-        documents = [by_acc[a] for a in order if a in by_acc] + [d for a, d in by_acc.items() if a not in order]
+            by_slug[m["slug"]] = m
+        order = [rec["slug"] for rec in DOCS]
+        documents = [by_slug[a] for a in order if a in by_slug] + [d for a, d in by_slug.items() if a not in order]
         MANIFEST.write_text(json.dumps({
             "captured_at": existing.get("captured_at", "2026-08-23"),
             "note": existing.get("note", "FERC documents quoted on the site, extracted to sources/text/abeyance/. "
@@ -443,6 +446,9 @@ def main() -> int:
         return 2
     if args.check:
         log.info("--check compared %d of %d document(s) against their sources.", len(compared), len(DOCS))
+        if len(compared) != len(DOCS):
+            log.error("--check incomplete: original document(s) missing")
+            return 2
         if wordlevel:
             log.info("%d DOCX source(s) compared word for word, not byte for byte: textutil (macOS) is not "
                      "available on this platform.", len(wordlevel))

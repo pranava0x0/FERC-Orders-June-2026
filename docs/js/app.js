@@ -258,8 +258,10 @@
         var c = filingCell(d.docket, id, ps);
         var m = FILING_STATUS[c.status] || { lbl: c.status, sentence: c.status };
         var when = c.obs && c.obs.date ? '<span class="fm-when mono">' + esc(fmtISO(c.obs.date)) + "</span>" : "";
-        return '<td><span class="fm-chip fm-' + esc(c.status) + '" role="img" aria-label="' +
-          esc(d.rto + ", " + stepById[id].label + ": " + m.sentence) + '">' + esc(m.lbl) + "</span>" + when + "</td>";
+        var label=d.rto + ", " + stepById[id].label + ": " + m.sentence;
+        var chip=c.obs && c.obs.reader ? '<a class="fm-chip fm-' + esc(c.status) + '" href="reading/' + esc(c.obs.reader) + '/" aria-label="' + esc(label+' Read the filing.') + '">' + esc(m.lbl) + '</a>' :
+          '<span class="fm-chip fm-' + esc(c.status) + '" role="img" aria-label="' + esc(label) + '">' + esc(m.lbl) + '</span>';
+        return '<td>'+chip+when+'</td>';
       }).join("");
       return '<tr><th scope="row"><span class="fm-rto">' + esc(d.rto) +
         '</span><span class="fm-docket mono">' + esc(d.docket) + "</span></th>" + cells + "</tr>";
@@ -452,6 +454,13 @@
     return "";
   }
 
+  function readingLeads(compact) {
+    var rows = D.meta.readingLeads.map(function (s) {
+      return '<article><h3><a href="' + esc(s.href) + '">' + esc(s.title) + '</a></h3>' +
+        (compact ? '' : '<p>' + esc(s.text) + '</p>' + publicSrcChips([s.cite])) + '</article>';
+    }).join('');
+    return '<section class="reader-leads' + (compact ? ' compact' : '') + '" aria-label="Questions in the filings">' + rows + '</section>';
+  }
   function renderOverview() {
     // The two deadline cards read as forever-pending until they say where the clock actually is. State
     // comes from the same today-comparison the procedural board uses, so the three never disagree.
@@ -491,7 +500,7 @@
     }).join("");
     var latest = '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' +
       esc(f.title) + '</h2><p>' + esc(f.answer) + '</p><div>' + links + '</div></section>';
-    return latest + jumpRow +
+    return latest + readingLeads(true) + jumpRow +
       renderStandStrip() +
       '<div class="overview-bg">' + paras(m.summary) + "</div>" +
       stats + renderProcedural() + glance;
@@ -975,7 +984,8 @@
     var consensusN = (D.media.consensus || []).length, frictionN = (D.media.friction || []).length;
     // The dated commentary comes first and open: it is the part of this tab that changes with each
     // sweep, and in a collapsed second position its newest quote was seven screens down on a phone.
-    return accSection("Commentary themes with quoted source lines",
+    return '<article class="state-lead"><h2><a href="reading/positions.html#state-commissions">' + esc(D.meta.stateLead.title) + '</a></h2><p>' + esc(D.meta.stateLead.text) + '</p>' + publicSrcChips(D.meta.stateLead.sources) + '</article>' +
+      readingLeads(false) + '<p class="cm-jump-wrap"><a class="cm-jump" href="reading/positions.html">Who said what: state offices, commissioners and reporting by issue →</a></p>' + accSection("Commentary themes with quoted source lines",
       "Themes from the discourse, in dated waves: reaction to the orders themselves, then what the record did next. Each quote links to its captured source. The order record is as of " + D.meta.capture + ".", quoteThemes, true, (D.voiceThemes || []).length) +
       accSection("Industry reception",
       "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.", rec + commentsBlock, false, recItems.length) +
@@ -1709,7 +1719,7 @@
           return '<button type="button" class="who-chip" data-filer="' + esc(f) + '" aria-pressed="false">' + esc(f) + "</button>";
         }).join("") + '</div><p class="fg-live" role="status" aria-live="polite"></p>' : "";
       var rows = g.docs.map(function (d) {
-        return "<tr><td class=\"mono\">" + esc(fmtISO(d.date)) + "</td><td>" + esc(d.filer) + "</td><td>" + esc(d.kind) +
+        return "<tr><td class=\"mono\">" + esc(fmtISO(d.date)) + "</td><td>" + esc(d.filer) + '</td><td><a href="reading/' + esc(d.slug) + '/">' + esc(d.kind) + '</a>'  +
           (showSides && d.side ? ' <span class="side-tag side-' + esc(d.side) + '">' + esc(SIDE_LABEL[d.side] || d.side) + "</span>" : "") +
           '</td><td class="mono">' + esc(d.docket || g.docket) + '</td><td class="mono">' + (d.pages ? d.pages + " pp" : "n/a") + '</td><td><a href="' + esc(eli(d.accession)) +
           '" target="_blank" rel="noopener noreferrer"><span class="mono">' + esc(d.accession) + '</span> <span class="ext" aria-hidden="true">↗</span></a></td></tr>';
@@ -1727,7 +1737,7 @@
     }).join("");
     return head("Filings and orders since June",
       "What FERC decided and what the parties argued in " + R.groups.length + " proceedings since the June 18 orders, newest first. Each point is this site's one-line reading; the quoted text is verbatim from the document.") +
-      nav + groups;
+      '<p class="reader-entry"><a href="reading/">Browse the original documents by section</a></p>' + nav + groups;
   }
   function applyFiler(grp, filer) {
     grp.querySelectorAll(".fg-filers .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-filer") === filer)); });
@@ -1804,15 +1814,16 @@
       var dur = v.duration_s ? ' · <span class="mono">' + fmtSecs(v.duration_s) + "</span>" : "";
       return '<article class="appear" data-speakers="' + esc((v.speakers || []).join(" ")) + '"><h3><span class="mono appear-d">' + esc(fmtISO(v.date)) + "</span> " +
         '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(v.event || v.title) + ' <span class="ext" aria-hidden="true">↗</span></a></h3>' +
-        '<p class="appear-meta">' + esc(v.channel) + dur + " · machine captions</p>" +
+        '<p class="appear-meta">' + esc(v.channel) + dur + (v.captionSource === "publisher" ? " · publisher captions" : " · automatic captions") + "</p>" +
+        (v.transcriptSlug ? '<a href="reading/' + esc(v.transcriptSlug) + '/">Read the official transcript</a>' : '<a href="https://github.com/pranava0x0/FERC-Orders-June-2026/blob/main/sources/videos/text/' + encodeURIComponent(v.id) + '.txt">Read the timestamped captions</a>') +
         (qs ? '<ul class="sqs">' + qs + "</ul>" : "") +
         (v.quotes.length > SQ_CAP ? '<button type="button" class="sq-more" aria-expanded="false">All ' + v.quotes.length + " quotes</button>" : "") +
         toc + "</article>";
     }).join("");
     var spoken = vids.length ? '<section class="appears" id="appears">' + appear + '<p class="appears-none" hidden>Nothing from this commissioner in the videos read so far.</p></section>'
       : '<p class="cm-loading">The video record did not load (js/record-data.js).</p>';
-    return head("Commissioners", "FERC has five commissioners; Laura Swett is Chairman. What they have said in public since the June 18 orders, newest first, then the written statements each attached to those orders. Spoken quotes are machine captions and can contain transcription errors.") +
-      chips + '<p class="sq-jump"><button type="button" class="jump-btn-plain" data-jump="#commish-h">Jump to the June 18 written statements ↓</button></p>' +
+    return head("Commissioners", "FERC has five commissioners; Laura Swett is Chairman. What they have said in public since the June 18 orders, newest first, then the written statements each attached to those orders. Video quotations use the linked captions; automatic captions can contain transcription errors.") +
+      chips + '<p><a href="reading/senate-ferc-oversight-20260722/">July 22 Senate hearing: all five commissioners’ testimony and written answers</a></p>' + '<p class="sq-jump"><button type="button" class="jump-btn-plain" data-jump="#commish-h">Jump to the June 18 written statements ↓</button></p>' +
       spoken + renderJuneStatements();
   }
   function wireCommissioners() {
@@ -1960,6 +1971,7 @@
   // if the tab was left before it arrived, the next activation renders synchronously instead, so
   // wireComments never writes a Comments hash over another tab's.
   var LAZY = {
+    news: { link: "news-data", ready: function () { return !!D.media; }, what: "the news record" },
     comments: { link: "cm-data", ready: function () { return !!window.FERC_COMMENTS; }, what: "the comment record" },
     filings: { link: "rec-data", ready: function () { return !!window.FERC_RECORD; }, what: "the filings record" },
     commissioners: { link: "rec-data", ready: function () { return !!window.FERC_RECORD; }, what: "the commissioners' record" },

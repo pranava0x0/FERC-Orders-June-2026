@@ -1174,3 +1174,20 @@ a.cm-hm-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1
   .vtoc li { padding: 0; }
   .vtoc li a { display: inline-flex; align-items: center; min-height: 44px; }
 }
+
+.reader-leads { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem;margin:1rem 0 1.5rem;border-block:1px solid var(--rule-strong);padding:.8rem 0; }
+.reader-leads article + article { border-left:1px solid var(--rule);padding-left:1rem; }
+.reader-leads h3 { margin:0;font:700 clamp(1.03rem,2vw,1.32rem)/1.2 Georgia,serif; }
+.reader-leads p { margin:.4rem 0; }
+.reader-leads a,.reader-entry a { color:var(--accent-ink);text-underline-offset:3px; }
+.reader-leads.compact { gap:.75rem;margin:.5rem 0; padding:.25rem 0; }
+.reader-leads.compact h3 { font-size:.97rem; }
+@media(pointer:coarse){.reader-leads a,.reader-entry a{display:inline-flex;align-items:center;min-height:44px}}
+@media(max-width:600px){.reader-leads:not(.compact){grid-template-columns:1fr;gap:.5rem}.reader-leads:not(.compact) article + article{border-left:0;border-top:1px solid var(--rule);padding:.55rem 0 0}.reader-leads.compact article + article{padding-left:.5rem}}
+
+.state-lead { border-top:3px solid var(--masthead);padding:.9rem 0 .5rem;max-width:78ch }
+.state-lead h2 { font:700 clamp(1.45rem,3vw,2.2rem)/1.15 var(--font-serif);margin-bottom:.45rem }
+.state-lead h2 a { color:var(--ink);text-underline-offset:.12em }
+.state-lead p { line-height:1.55;margin-bottom:.5rem }
+
+.fm-table a.fm-chip {min-height:44px;align-items:center;display:inline-flex;text-underline-offset:.16em}

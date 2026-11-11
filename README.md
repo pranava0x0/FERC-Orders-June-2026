@@ -39,6 +39,13 @@ Built for an energy-regulatory audience. Eight tabs:
 8. **Discourse**: stakeholder reception, named commentary across the political spectrum, and trade-press
    narratives (with a pointer to the Comments tab for the full filing breakdown).
 
+Read the [November 10 brief, with physical page citations](sources/filings/nov-10-brief.md).
+The [filing reading room](docs/reading/index.html) links the June orders, operator reports,
+motions, tariffs, testimony and responses to their original text by physical page. Start with
+[what the state commissions said](docs/reading/positions.html#state-commissions), or inspect
+[which records have no readable copy](docs/reading/coverage.html). The [source index](docs/reading/catalog.json)
+contains stable document IDs, dates, page and token counts, and SHA-256 hashes.
+
 ## Run locally
 
 No build step, no dependencies.
@@ -52,9 +59,10 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
-node --test tests/*.test.mjs   # 118 tests across the suites
+node --test tests/*.test.mjs   # all suites
+sh tools/refresh-reading-room.sh --check  # offline source, extraction, reader, asset and citation checks
 node tools/verify-quotes.mjs   # whole-site quote audit (one command; --list for every quote)
-node tools/uat-playwright.mjs  # headless UAT at 375px and 1280px: console, overflow, reader depth (serve docs/ on 127.0.0.1:8131 first)
+node tools/uat-playwright.mjs  # headless UAT at 375px, 768px and 1280px: console, overflow, reader depth (serve docs/ on 127.0.0.1:8131 first)
 node tools/check-staleness.mjs # advisory: passed deadlines, stale stamps, unobserved filings
 node tools/validate-summaries.mjs        # the 268 comment summaries: verbatim quotes, vocab, bin links
 node tools/survey-summaries.mjs          # DISCOVERY pass: distributions + smells nothing checks yet

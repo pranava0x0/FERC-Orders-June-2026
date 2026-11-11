@@ -1,0 +1,1002 @@
+FERC filing — MISO — Docket ER26-3552-000 — accession 20260908-5341 — Protest of Community Collaboration on Climate Change, et al. re the Midcontinent Independent System Operator, Inc.’s filing proposing revisions to establish the Zero Injection Generator Interconnection Agreement — Issued 2026-09-08 — 32 pp
+Extracted locally with PyMuPDF (fitz) from the document downloaded from https://sustainableferc.org/wp-content/uploads/2026/09/ER26-3552-Community-Orgs-and-Clean-Energy-Advocates-Protest.pdf. Verbatim; source text layer preserved.
+
+
+--- PAGE 1 ---
+
+1
+UNITED STATES OF AMERICA
+BEFORE THE
+FEDERAL ENERGY REGULATORY COMMISSION
+
+Midcontinent Independent System Operator, Inc.
+Docket No. ER26-3552-000
+
+PROTEST OF COMMUNITY ORGANIZATIONS AND
+CLEAN ENERGY ADVOCATES
+
+I.
+INTRODUCTION
+Community Organizations1 and Clean Energy Advocates2 and their respective members reside
+throughout the Midcontinent Independent System Operator Inc.’s (“MISO”) footprint.  They rely
+on MISO to provide affordable and reliable wholesale service to power many aspects of their lives,
+including their residences, businesses, hospitals, places of worship, and schools.  Their members
+also rely on MISO’s adherence to non-discriminatory practices that enable a diverse set of energy
+generation technologies, namely distributed energy resources, to provide low-cost energy options
+that will help lower their energy bills without increasing pollution in their communities.
+Additionally, one of Clean Energy Advocates is an organization including energy project
+developers that regularly use MISO’s interconnection services.
+
+1 Community Organizations are Community Collaboration on Climate Change and Michigan Environmental Justice
+Coalition, which are nonprofit organizations chartered under the laws of Michigan; and Midwest Tribal Energy
+Resources Association, a nonstock corporation chartered under the laws of Wisconsin.
+2 Clean Energy Advocates consist of Sierra Club and Natural Resources Defense Council, which are nonprofit
+environmental organizations with members throughout MISO territory; and Clean Grid Alliance, a nonprofit
+corporation chartered under the laws of Minnesota.
+
+--- PAGE 2 ---
+
+2
+On June 18, 2026, the Commission issued an order to show cause (“OSC” or “Show Cause
+Order”) to MISO and its transmission owners (“TOs”) directing them to either provide more
+options to fast track the grid interconnection of large load customers, which at the moment are
+primarily data centers, or explain why MISO’s tariff is sufficient.  MISO submitted its Zero
+Injection Generator Interconnection Agreement (“ZGIA”) proposal (the “Proposal”) to respond to
+the co-location requirements in the Commission’s OSC.3   Our organizations do not oppose the
+intended design of MISO’s ZGIA Proposal—a co-location arrangement that results in no injections
+or withdrawals of electrons to MISO’s transmission system and, therefore, does not require
+network upgrades nor cause negative impacts to the Definitive Planning Phase (“DPP”) process.
+Rather, we oppose the lack of processes and tariff provisions to make those design elements a
+reality.
+Without proper tariff provisions, this process could have the opposite of MISO’s intended
+effect by instead operationalizing ongoing cost shifts that will be difficult, if not impossible, for
+states to untangle, triggering otherwise preventable reliability shortalls, and allowing generators
+with ZGIA service (“ZG Resource”) to perpetually gain an unfair advantage over projects in DPP,
+frustrating the implementation of Order 2023’s queue reforms to the detriment of market
+participants and consumers, like our members.  As discussed below, we urge the Commission to
+direct MISO to address these tariff and procedural defects through either a deficiency letter or
+direct further compliance via the show cause proceeding.
+
+3 Midcontinent Indep. Sys. Op., Inc.’s Transmittal Letter for Zero Injection Generator Interconnection Agreement
+Filing, Docket No. ER26-3552-000 (Aug. 18, 2026), Accession No. 20260818-5152 (“MISO Transmittal” or
+“Transmittal Letter”).
+
+--- PAGE 3 ---
+
+3
+TABLE OF CONTENTS
+I.
+INTRODUCTION .................................................................................................................. 1
+II.
+ARGUMENT .......................................................................................................................... 3
+A. The Proposal Fails to Actually Ensure Zero Injection by ZG Generators. .......................... 3
+1. ZG Generating Facilities that Make Unauthorized Injections Should Be Penalized. ...... 3
+2. ZGIA’s Requirement for System Protection Facilities is Poorly Defined. ...................... 9
+3. Length of the Transient Tolerance Window Should be Set According to Clear
+Standards. ....................................................................................................................... 12
+B. The Proposal Lacks Required Transparency...................................................................... 14
+C. The ZGIA Program’s Scope Should Have a Defined Limitation. ..................................... 16
+D. The Proposal Fails to Adequately Mitigate the Risk that Network Upgrades Will Be Paid
+by Other than the Cost Causers. ........................................................................................ 18
+1. Overview of MISO’s Cost-Shifting Safeguards ............................................................ 19
+2. MISO’s Safeguards are Inadequate to Prevent Cost-Shifting of Network Upgrades to
+Interconnection Customers and Load. ........................................................................... 21
+E. The Proposal Requires Greater Clarity on the Treatment of Hybrid Resources. .............. 26
+F.
+Drafting Errors ................................................................................................................... 27
+1. Limitation on Injections ................................................................................................. 27
+2. Reference to Interconnection Study ............................................................................... 29
+III.
+CONCLUSION ................................................................................................................. 29
+
+II.
+ARGUMENT
+A. The Proposal Fails to Actually Ensure Zero Injection by ZG Generators.
+1.
+ZG Generating Facilities that Make Unauthorized Injections Should Be
+Penalized.
+Zero injection is an extremely clear program design element in this Proposal,4 but MISO fails
+to ensure that zero means zero.  The Transmittal Letter, testimony, and proposed tariff language
+are silent about what happens when a ZG Generator exports power to the grid outside the Point of
+
+4 Transmittal Letter at 8 (MISO stating that the “new generator with ZGIA Interconnection Service cannot inject past
+the interconnecting substation…”); id at 13 (MISO stating that the “ZG Interconnection Service is limited to
+requesting and being awarded Interconnection Service at a level that does not exceed the peak demand of the ZG
+Associated Load.”
+
+--- PAGE 4 ---
+
+4
+Interconnection (“POI”) and the Transient Tolerance Window.  Yet the Commission clearly stated
+in the Show Cause Order that it is concerned with the lack of tariff provisions that “specify
+requirements for necessary control technologies and protections systems” needed to limit
+withdrawals consistent with study arrangements and related agreements.5  The Commission should
+require MISO to modify its ZGIA proposal to include robust operational penalties for ZGIA
+Generating Facilities that make unauthorized injections into the MISO transmission system
+notwithstanding the use of control technologies and/or protection systems.6  MISO cannot be silent
+on its enforcement procedures in light of the serious reliability risks to the grid that may arise if a
+ZGIA Generating Facility fails to limit its injections as promised. The Commission should require
+MISO to impose strict operational penalties to give ZG Generating Facilities adequate incentives
+to limit their injections as expected or risk termination of their transmission service if they fail to
+perform.
+i. Unauthorized injections are likely to increase reliability risks in MISO.
+Unauthorized injections on the transmission system can lead to increased reliability risks,
+making it imperative that generators are properly incentivized to follow zero-injection
+requirements.  MISO has acknowledged the reliability risks associated with large loads, including
+the risk associated with frequency and voltage instability, system balancing, and Area Control
+Error volatility.7 MISO’s Board previously made a commitment to address the operational risks
+associated with large loads, particularly with respect to ramping, adequacy, and stability.8  Yet, in
+
+5 Midcontinent Independent System Operator, Inc., Order Instituting Proceeding Under Section 206 of the Federal
+Power Act, 195 FERC ¶ 61,212, P 64 (2026).
+6 See generally, PJM Interconnection LLC, 193 FERC ¶ 61,217 at P 212 (2025) (“PJM Co-location Order”).
+7 Interconnection of Large Loads to the Interstate Transmission System, Comments of the Midcontinent Independent
+System Operator, Inc., Docket No. RM26-4-000, Accession No. 20251121-5472 at 30 (Nov. 21, 2025).
+8 Id. at 29, n.29.
+
+--- PAGE 5 ---
+
+5
+this filing, MISO fails to adequately address the severity of potential reliability issues that could
+be caused by unauthorized injections on the system.
+Recent grid fluctuation events illustrate the serious reliability risks that could result from
+unplanned injections on the system.  In July 2026, over three GW of data centers on the PJM grid
+suddenly disconnected, causing voltage and frequency fluctuations that could be detected from
+Virginia to Illinois.9  While operators can typically correct grid disturbances within milliseconds,
+this event took almost 10 minutes to stabilize.10  A similar event occurred two years prior, also in
+PJM, where 1.5 GW of data center load suddenly dropped in Northern Virginia, forcing operators
+to make emergency adjustments to prevent cascading outages.11  There is growing concern from
+the North American Electric Reliability Corporation (“NERC”) about the increased amount of
+customer initiated load reduction events as large, extended fluctuations can lead to cascading
+fluctuations and system blackouts.12
+The Commission should require MISO to impose strict operational penalties to prevent similar
+grid fluctuation events from occurring in MISO’s territory.  MISO anticipates that ZG Associated
+Loads may, at some point, suddenly decrease their load.13  The ZGIA proposal establishes a
+Transient Tolerance Window during which the ZGIA Generating Facility will ramp down to match
+
+9 Lee Shaver, Data Centers are Already Stressing the Grid. Regulators are Playing Catch-up, Union of Concerned
+Scientists (Aug. 6, 2026), https://blog.ucs.org/lee-shaver/data-centers-are-already-stressing-the-grid-regulators-are-
+playing-catch-up.
+10 Tim McLaughlin, Massive Disconnect of Power Roils Largest US Electric Grid, Reuters (Jul. 22, 2026),
+https://www.reuters.com/business/energy/massive-disconnect-power-roiled-largest-us-electric-grid-2026-07-22.
+11 Rachel Mural, et. al, AI, Data Centers, and the U.S. Electric Grid: A Watershed Moment, Belfer Center for
+Science and International Affairs (Feb. 10, 2026), https://www.belfercenter.org/research-analysis/ai-data-centers-us-
+electric-grid.
+12 NERC, Characteristics and Risks of Emerging Large Loads: Large Loads Task Force White Paper (July 2025),
+https://www.nerc.com/globalassets/who-we-are/standing-committees/rstc/whitepaper-characteristics-and-risks-of-
+emerging-large-loads.pdf, at 21-36; NERC, Level 3 Alert: Computational Load Modeling, Studies, Instrumentation,
+Commissioning, Operations, Protection, and Control (May 4, 2026),
+https://www.nerc.com/globalassets/programs/bpsa/alerts/level-3-computational-load-alert.pdf, at 8.
+13 Transmittal Letter at 21.
+
+--- PAGE 6 ---
+
+6
+the reduced load level.14  MISO’s filing acknowledges that ZG Generating Facilities cannot
+instantaneously ramp down to meet the associated load loss, which presents increased risks of grid
+fluctuations as ZGIA arrangements attempt to stabilize.  If multiple ZG Generating Facilities fail
+to ramp down as expected, either by choice or by misoperation of control technology, the MISO
+grid could experience cascading fluctuations across its system. As demonstrated in PJM, as more
+GWs of load drop from the system, fluctuations are harder to manage.  If MISO anticipates that
+large loads will use the ZGIA service to connect to the grid, it must ensure that ZG Generating
+Facilities will limit their injections when necessary.  The control equipment and management
+measures contemplated in the Proposal, even if optimally chosen,15 are not sufficient.
+ii. Strong Operational Penalties Are Needed to Ensure That ZG Resources
+Will Not Make Unauthorized Injections That Could Lead to Greater
+Reliability Risks.
+The Commission must require MISO to implement strong penalties to prevent ZG Resources
+from making unauthorized injections into MISO’s transmission system above their authorized
+level of service (namely, zero), consistent with the Commission’s prior finding that transmission
+customers should be subject to penalties for unreserved use of the transmission system.16  Absent
+such penalties, the Proposal cannot be found just and reasonable.
+MISO’s ZGIA proposal fails to discuss any penalties to be levied on ZGIA Generating
+Facilities that violate the rule against unauthorized injections outside the Transient Tolerance
+Window.17  Similarly, MISO’s proposal states that the ZG Interconnection Service Study must
+
+14 Id.
+15 As discussed infra in section II.A.2, MISO has not optimally or adequately structured its requirements for control
+equipment and measures.
+16  PJM Co-location Order at P 212 (2025) (directing PJM to brief appropriate penalty charges for transmission
+customers’ unreserved use of the PJM transmission system).
+17 Transmittal Letter at 43.
+
+--- PAGE 7 ---
+
+7
+confirm that a generator’s proposed equipment can sufficiently limit injections, but is silent as to
+any consequences if the equipment malfunctions and allows the generator to inject into the
+transmission system outside the Transient Tolerance Window.18
+The Proposal contains no specific penalty schedule or mandatory reporting of injection events
+and control failures.  There seems to be no consequence for an unauthorized injection—no charge,
+curtailment, suspension, mandatory retesting, or graduated penalty.  This lackadaisical approach
+to enforcement is inconsistent with the serious reliability risks that would occur if ZG Generating
+Facilities made unauthorized injections into the system.  When faced with potential consequences
+as serious as widespread outages, MISO must implement operational penalties that are just as
+serious.
+The Commission has already found that operational and financial penalties are just and
+reasonable to ensure that customers follow curtailment directives, especially where there are
+significant reliability risks if customers fail to curtail.19  In its recent proceeding on co-location
+arrangements in PJM, the Commission directed PJM to establish an appropriate penalty charge
+and “any other remedial action” that PJM should take to address a customer’s unreserved use of
+the transmission system or excess energy withdrawals.20   PJM established three separate penalties
+that escalated in severity based on the potential harm to the transmission system—a pause in
+service, disqualification, and financial penalties—where customers rely on control technologies
+that fail more than once, fail to follow Load Shedding and Curtailment directives, or make
+
+18 Transmittal Letter at 13, 14.
+19 PJM Interconnection, L.L.C., Order on Rehearing, Clarification, Compliance Filing, and Paper Hearing, 195
+FERC ¶ 61,209, at P 515 (2026) (“PJM Co-Location Rehearing Order”).
+20 PJM Co-location Order at P 212.
+
+--- PAGE 8 ---
+
+8
+unreserved use of the transmission system.21  The Commission found that it was just and
+reasonable to establish these operational penalties because (1) PJM’s new services for co-location
+arrangements were designed for Eligible Customers that are willing and able to limit their
+withdrawals from the transmission system; and (2) there are significant reliability risks if Eligible
+Customers fail to curtail.22
+Similarly, MISO’s ZGIA proposal is designed on the assumption that ZGIA Generation
+Facilities can and will limit their injections on the system and that (like in PJM), there are serious
+reliability risks if ZGIA Generating Facilities fail to limit their injections when directed to. MISO’s
+proposal states that “[t]he premise of ZG Interconnection Service is that injections beyond the
+interconnecting substation can be limited.”23  ZG Generating Facilities, and their ZG Associated
+Loads, would be allowed to interconnect quickly on the assumption that they will adhere to strict
+limitations on injections.24  Under the proposed ZG Interconnection Agreement, a Generating
+Facility taking ZG Interconnection Service agrees to the requirements to install equipment to
+reduce its injections at times when the ZG Associated Load reduces its demand and to cease all
+injections onto the transmission system when necessary.25  Allowing ZGIA Generating Facilities
+to connect quickly through ZGIA on the basis that they will limit their injections, but not enforcing
+any penalties against them when they fail to limit those injections would, as PJM said with respect
+to its co-location penalties filing, “implicitly bless such dangerous behavior.”26
+
+21 Initial Brief of PJM Interconnection, L.L.C., Docket No. EL25-49-000, at 50 (Feb. 23, 2026), Accession No.
+20260223-5189 (“PJM Initial Brief”).
+22 PJM Co-Location Rehearing Order at P 515.
+23 Transmittal Letter at 42.
+24 Transmittal Letter at 7.
+25 Proposed Att. X, App’x 19, § 9.7.4.7.
+26 PJM Initial Brief at 42.
+
+--- PAGE 9 ---
+
+9
+MISO should terminate or pause a ZG Generating Facility’s ability to use the transmission
+system if the generator fails to stay true to its promise to limit its injections.  Otherwise, ZGIA
+Generating Facilities would receive the benefits of connecting to the grid quickly without
+providing a commensurate benefit to the grid, and at worst, would risk endangering the stability
+of the transmission system.  The failure of a ZG Generating Facility to limit its injections could
+cause reliability risks similar to those contemplated in PJM’s Co-Location docket, including a
+higher risk of widespread outages across the bulk power system.27  In order to ensure that the
+severe risks of failing to limit injections are weighed equally to the benefits that ZGIA Generation
+Facilities receive from the ZG Interconnection Service, the Commission should require MISO to
+impose operational penalties on Generating Facilities that fail to limit their injections as directed.
+2.
+ZGIA’s Requirement for System Protection Facilities is Poorly Defined.
+Next, MISO falls short in its unnecessarily weak standard for System Protection Facilities that
+will ensure zero injection.  The applicant ZG Generating Facility is required to identify “any
+proposed system protection facilities”28 in its Interconnection Request.  Although not capitalized
+in that passage, System Protection Facilities is an existing defined term meaning, as relevant,
+“equipment [] required to protect [] the Transmission System or other delivery systems or other
+generating systems from faults or other electrical disturbances occurring at the Generating
+Facility.”29  It is apparent from the filing that “System Protection Facilities” (or system protection
+facilities) in this context is intended to “control injection onto the rest of the Transmission
+
+27 NERC, Characteristics and Risks of Emerging Large Loads: Large Loads Task Force White Paper, supra note 12,
+at 20.
+28 Proposed Att. X § 3.11(ii); Att. X, App’x 1 § 10 and Att. A-5.
+29 Att. X § 1 (definition of System Protection Facilities).
+
+--- PAGE 10 ---
+
+10
+System,”30 although that is not codified in the proposed tariff.  Following the Interconnection
+Request, the proposed ZG Facilities Study is to identify “any required system protection facilities
+and equipment,”31 with such facilities memorialized in the ZG Interconnection Agreement.32
+MISO’s proposal falls short of what is needed to ensure that zero means zero by missing any
+minimum configuration of System Protection Facilities necessary to block unauthorized power
+injections to the grid beyond the POI.  Outside the proposed tariff, MISO narrates its intentions:
+“MISO anticipates reviewing a variety of configurations, physical equipment, and
+operational requirements that may independently, or in sum, prevent injections on
+the Transmission System beyond the substation where the Point of Interconnection
+is located. For example, the injection limitation may be implemented through
+equipment controls such as export-limiting controls, directional relays, interlocks,
+and fail-safe trip logic. Operational requirements may include generation limits,
+curtailment obligations, outage coordination, and restrictions on operation. These
+operational requirements are in addition to any monitoring, testing, or maintenance
+requirements.”33
+
+The lack of clarity with this choose-your-own-adventure configuration approach is precisely
+why the Commission directed transmission providers to submit tariff proposals or explain why
+they are not needed.34  No export-limiting control device (nor control over such device) is
+required anywhere in the proposed tariff. MISO proposes to give itself discretion to judge
+whether the “proposed control equipment and/or operating procedures […] are sufficient to
+prevent injections”35 (emphasis added), suggesting that a protocol for manual intervention alone
+
+30 Transmittal Letter at 28; see also proposed Att. X, App’x 19 § 9.7.4.7 (requiring the ZG Generating Facility to
+“install equipment” required to comply with the zero-injection requirement outside the Transient Tolerance Window.
+31 Proposed Att. X. § 3.2.5.2.2.
+32 Proposed Att. X, App’x 19, App’x A §§ 2, 5.
+33 Keyser Test. at 33; see also proposed Att. X § 3.2.5.2.1
+34 See generally, Show Cause Order at P 21 (cautioning against stand-alone study agreements); id at P 49 (requiring
+a degree of clarity and specificity in the tariff regarding studies for customers to avoid a variety of issues including
+disputes regarding how studies are conducted).
+35 Proposed Att. X § 3.2.5.2.1.
+
+--- PAGE 11 ---
+
+11
+by the ZG Generating Facility’s operator might be acceptable to MISO.  The Commission in the
+Show Cause Order called for MISO to develop generator interconnection service that reflects “a
+generating facility with necessary control technologies and/or protection systems, which may
+include a special protection scheme, that ensure that the injection does not exceed the limit in the
+[…] interconnection agreement.”36  “Special protection scheme” was defined there as in the PJM
+Co-Location Rehearing Order,37 which in turn referenced the PJM Co-Location Order: “a plan
+designed to detect abnormal system conditions and to automatically take appropriate corrective
+action, to maintain system stability, acceptable system voltages, and acceptable facility
+loading”38 (emphasis added). But, defying the Commission’s directives, MISO here proposes no
+requirement for automatic corrective action.
+Additionally, the Proposal fails to be just and reasonable in missing any specific requirements
+for testing the protective measures.  The ZG Interconnection Agreement gives MISO a “right to
+inspect” the ZG Generating Facility’s “System Protection Facilities and other protective
+equipment,” including looking at tests, inspections, settings, and maintenance records, but sets
+no requirement for MISO to do so at any particular interval.39  Similarly, the agreement requires
+the ZG Generating Facility to test its System Protection Facilities “[a]t intervals suggested by
+Good Utility Practice” but does not set any interval or require MISO to verify the testing.40  This
+stands in contrast to, for example, the clear requirement for a ZG Generating Facility’s metering
+equipment to be testified at least biennially.41
+
+36 Show Cause Order at P 113.
+37 PJM Co-Location Rehearing Order at P 480.
+38 PJM Co-Location Order at P 204.
+39 Proposed Att. X, App’x 19 § 6.4.
+40 Id. §§ 9.7.4.5, 9.7.4.6.
+41 Proposed Att. X, App’x 19 § 7.4.
+
+--- PAGE 12 ---
+
+12
+3.
+Length of the Transient Tolerance Window Should be Set According to
+Clear Standards.
+A third infirmity in ensuring that zero means zero is how MISO proposes to set the “Transient
+Tolerance Window,” which is “the period of time after a reduction or loss of load by the ZG
+Associated Load by the end of which window the [ZG] Generating Facility must have” ceased
+injections to the grid.42  In other words, this time span, defined as no more than 20 seconds,43 is
+the time for a ZG Generating Facility to ramp down production as needed when its co-located load
+drops.  This time window is a fundamental engineering parameter of ZGIA service, but MISO has
+not justified why a maximum period of 20 seconds is either operationally attainable by a generator
+(or if a greater or lesser time window would be more appropriate), or operationally acceptable for
+the transmission grid to remain stably within reliability criteria while receiving unexpected
+injections over that time interval.
+MISO states that it “determined that a 20-second limit provides the best system-wide balance
+between what is technically feasible and commercially practical on the one hand, and minimizing
+even transient injections on the other hand”;44 and MISO’s witness Keyser opines that 20 seconds
+was chosen “in order to align with the MTEP modeling interval of 20 seconds for transient stability
+analysis.”45  The physical or even customary basis of 20 seconds remains obscure, as this figure is
+mentioned neither in the existing Attachment FF (Transmission Expansion Planning Protocol) nor
+in Business Practices Manual 20 (Transmission Planning).  MISO should better justify the specific
+time interval chosen with reference to NERC standards, local planning criteria, or some other
+grounding in electrical engineering realities.
+
+42 Proposed Att. X § 1; proposed Att. X, App’x 19, Art. 1 (proposed definition of Transient Tolerance Window).
+43 Id.
+44 Transmittal Letter at 21-22.
+45 Keyser Test. at 25:20-22
+
+--- PAGE 13 ---
+
+13
+An additional deficiency with MISO’s definition of Transient Tolerance Window is its
+allowance that 20 seconds would be the maximum period allowed, while the time period could be
+“further described by the Business Practices Manual for Large Load.”46  MISO gives more color
+its intentions in its filing letter, offering that “there may be circumstances where a narrower
+window is necessary and practical given electrical topography on certain parts of the MISO
+System, or Applicable Local Planning Criteria.  It would be impractical to identify all such
+circumstances in the Tariff.  Therefore, the definition allows for the creation of Business Practices
+Manual (“BPM”) rules that narrow the window based on specific circumstances[.]”47  A tariff that
+remained silent about all the standards and intentions in the prior quotation while reserving
+authority for MISO to make discretionary changes outside the Commission’s oversight would
+violate the Rule of Reason, which requires that provisions that (1) significantly affect rates, terms,
+and conditions of service, (2) are realistically susceptible of specification, and are (3) not generally
+understood in a contractual agreement must be included in the tariff.48  While the D.C. Circuit has
+recently recognized that “even specifiable practices that significantly affect rates need not be
+included if they are clearly implied by the tariff’s express terms,”49 the proposed tariff’s passing
+reference to the BPM hardly implies anything as to how MISO will consider varying the 20-second
+rule.
+As a policy matter, users of ZGIA service, not to mention regulators and stakeholders, will
+want to develop reasonable expectations about how the 20-second interval for unauthorized
+injections might evolve; but the placement of untariffed policies in the Business Practices Manual
+
+46 Proposed Att. X § 1.
+47 Transmittal Letter at 21.
+48 City of Cleveland v. FERC, 773 F.2d 1368, 1376 (D.C. Cir. 1985).
+49 Hecate Energy Greene Cnty. 3 LLC v. FERC, 72 F.4th 1307, 1314 (D.C. Cir. 2023)
+
+--- PAGE 14 ---
+
+14
+will complicate that.  A Transient Tolerance Window that MISO can adjust by standardless fiat
+hardly supports orderly market development.
+B. The Proposal Lacks Required Transparency.
+The Commission found in the Show Cause Order that MISO must provide “cost transparency
+measures […] to provide stakeholders with sufficient information and visibility regarding the
+Network Upgrades, and their associated costs, needed to provide transmission service to Eligible
+Customers on behalf of large loads.”50  The Commission further found that MISO’s tariff is not
+just and reasonable to the extent “it does not require the provision of data on MISO’s website in a
+single location, and in an easily accessible format that is searchable and allows users to filter the
+data, that identifies the Network Upgrades that are needed to accommodate requests for
+transmission service by Eligible Customers on behalf of large loads, and the costs of those Network
+Upgrades.”51  Despite this clear command from the Commission for transparency of large load52-
+induced costs, and MISO’s stated attempt to respond to the Show Cause Order, MISO has fallen
+well short of the Order’s clear requirements on transparency.  It is simply not correct that the
+“ZGIA proposal is well aligned with the Commission’s goals and objectives of transparency,” as
+MISO avers.53
+
+50 Show Cause Order at P 71.
+51 Id. P 77.
+52 Although the ZGIA proposal is not restricted to serving only large loads, it is reasonable to expect that large loads
+will be a significant share of the end-use customers benefiting from the program. “MISO notes that this description
+[generally outlining ZGIA] explains how ZGIA will serve large loads”; “The ZGIA proposal represents another
+critical tool to help support the timely, reliable, cost-effective integration of new large loads into the MISO system”;
+“the ZGIA is particularly responsive to the needs of a large load[.]” Transmittal Letter at 8 n.33, 9, 11.
+53 Transmittal Letter at 5.
+
+--- PAGE 15 ---
+
+15
+MISO is  aware of how to design an interconnection program with deliberate transparency, as
+the Commission found last year.54  Yet, no provision within the ZGIA proposal requires MISO to
+post ZGIA study reports, required Network Upgrades identified or deferred, or affected-system
+results.  No provision requires the publication of costs of such upgrades, once known. Without the
+underlying studies and upgrade information, stakeholders and regulators may be unable to quantify
+incremental costs attributable to an expedited project or evaluate whether later MTEP upgrades
+result from assumptions made in the ZGIA process.  The existing generator interconnection tariff
+includes various precedents55 for required publication of data, and there is no reason why MISO
+could not post vital information on Network Upgrades.
+MISO may rest on its requirement that a ZG Generating Facility can qualify for ZG
+Interconnection Service only if the ZG Impact Assessment and ZG Facilities Study find that the
+proposed interconnection “[w]ill not require the construction or modification of any Network
+Upgrades to address impacts to the Transmission System with the exception of Network Upgrades
+located at the same substation as the POI, except for System Protection Facilities at adjacent
+substations.”56  However, to the extent the ZG Generating Facility is owned by a vertically
+integrated, state-regulated utility, the costs of Network Upgrades, even if borne by the generator’s
+utility owner, may be allocated in indeterminate ways at the retail level.  The ZG studies may also
+identify foregone Network Upgrades that would have been required to interconnect the generator
+absent the ZG Associated Load, or Network Upgrades that would have been required to
+accommodate the new load absent the ZG Generating Facility.  It will be important to track these
+
+54 Midcontinent Independent System Operator, Inc., 192 FERC ¶ 61,064, at P 197 (noting “MISO’s commitment to
+publicly post detailed information about each ERAS interconnection request and its corresponding type of load
+served”).
+55 Att. X §§ 3.3.4, 3.4.2.1 – 3.4.2.6.
+56 Proposed Att. X § 3.2.5.1(2); also see §§ 3.2.5.2.1, 3.2.5.2.2, 3.11(iii).
+
+--- PAGE 16 ---
+
+16
+foregone upgrades should either the ZG Associated Load or ZG Generating Facility depart the co-
+located arrangement in the future, putting upgrade costs back on the table.  Overall, the Proposal
+falls well short of the necessary transparency urged by the Commission.
+C. The ZGIA Program’s Scope Should Have a Defined Limitation.
+The Commission’s two orders last year on the ERAS fast-track interconnection program
+emphasized the Commission’s longstanding policy on open access to the transmission system and
+requirement to limit the scope of departures therefrom.  The first ERAS order denied MISO’s
+initial proposal as not just and reasonable, in part because it lacked a program size cap (in either
+project counts or project megawatts).57  The Commission also found that the proposed program
+end date of December 2028, allowing for three and a half years’ worth of project selections, would
+“exacerbate[] the potential for a volume of ERAS interconnection requests untethered to reliability
+or resource adequacy needs” and would “make[] it difficult to determine […] whether the solution
+is narrowly tailored to fix the problem.”58  MISO altered the time limit on its ERAS proposal when
+it re-filed, setting August 2027 (two years after program commencement) as the sunset date, and
+capping the size of the program at 68 total projects.  The Commission credited these limitations in
+ultimately approving the second ERAS proposal, finding that “the limited, one-time design of the
+[proposed ERAS] process weighed significantly on our decision here.”59
+Despite this precedent, MISO now comes to the Commission with a new fast-track
+interconnection pathway that is similar to the one it rejected.  The program has a structure of 10
+applications processed per quarter,60 but otherwise no limit on the long-term availability of the
+
+57 Midcontinent Independent System Operator, Inc., 191 FERC ¶ 61,131, at PP 199-201.
+58 Id. at P 199.
+59 Midcontinent Independent System Operator, Inc., 192 FERC ¶ 61,064, at PP 84, 195, 203, 265.
+60 Proposed Att. X § 3.11.2.
+
+--- PAGE 17 ---
+
+17
+program for new applicants, the total project number,61 or the total megawatts of capacity.  MISO
+calls it “fundamentally a limited product”62 but offers no limitations on the scope of the program.
+Witness Keyser explains in testimony why ZGIA service is proposed as a “permanent product” for
+a given participating generating plant but ignores why MISO is not capping the number or size of
+participating projects, or the overall lifespan of the program.  This mirrors MISO’s approach to
+stakeholder feedback earlier this year.  While acknowledging stakeholders’ “[r]equests to ensure
+ZGIA is a transitional construct and does not replace the standard GIA process,” MISO wholly
+ignored the point in its response to related comments:
+63
+To achieve the narrow tailoring required by the Commission’s open access precedents, a
+program that bypasses the traditional interconnection queue must have some limitation on how
+large it could get.  Such limitation would be consistent with, for example, the Commission’s
+approval earlier this year of Southwest Power Pool’s HILLGA (“High-Impact Large Load
+Generation Assessment”) interconnection program, which limits the HILLGA service for any
+
+61 MISO expressly acknowledged this point at a stakeholder meeting earlier this year: “there is no limitation on the
+number of ZGIA requests[.]” Minutes of April 22, 2026 Planning Advisory Committee meeting,
+https://cdn.misoenergy.org/20260527%20PAC%20Item%2001c%20Minutes%2020260422754915.pdf, at 6.
+62 Transmittal Letter at 12.
+63 MISO, Consideration of Zero-Injection GIA (Interconnection and Planning Draft Tariff Updates), Presentation to
+Planning Advisory Committee (April 22, 2026),
+https://cdn.misoenergy.org/20260422%20PAC%20Item%2006%20Consideration%20of%20Zero-
+Injection%20GIA%20%20(PAC-2024-4)752672.pdf, at 23.
+
+--- PAGE 18 ---
+
+18
+given generator to five years.64  For MISO ZGIA, a pilot program, for example, with a defined
+time limit of availability for new applicants or a defined time limit for each given interconnection
+agreement, followed by Commission review for renewal, could allow the Commission to consider
+whether continued derogation from open access should continue.  Absent those guardrails, ZGIA
+is not just and reasonable.
+D. The Proposal Fails to Adequately Mitigate the Risk that Network Upgrades Will
+Be Paid by Other than the Cost Causers.
+MISO’s ZGIA proposal includes two primary mechanisms that together are designed to prevent
+cost-shifting from ZGIA projects to other interconnection customers or load. These mechanisms
+involve: 1) a requirement that, in order to qualify for ZG Interconnection Service to begin with,
+the ZG Generating Facility will not require additional large-scale network upgrades, and 2) that
+MISO can credit the ZG Generating Facility as a “Non-Transmission Alternative” as a result of
+signing five-year commitments with ZGIA load.  However, as further described below, those
+protective measures do not sufficiently insulate Network Upgrade costs from instances when some
+or all the ZG Associated Load is not placed in service.
+Specifically, as discussed in section II.D.2 below, there are at least three principal flaws with
+the Proposal that can result in cost-shifting: 1) the five-year commitment is insufficiently concrete
+to provide the requisite certainty that the load integration study and its assumptions regarding
+needed upgrades are accurate; 2) the structure of the Proposal creates a fast-track ZGIA to GIA
+process whereby ZG Generating Facility could later convert to ERIS or NRIS service and thereby
+
+64 The HILLGA program requires an applicant generator to be within two substations of the large load it serves, such
+that the generator will be “injecting within the local area of the [large load]” similar to the MISO ZGIA Proposal.
+Southwest Power Pool, Inc., 194 FERC ¶ 61,031 (Jan. 14, 2026) at PP 25, 28, 33.
+
+--- PAGE 19 ---
+
+19
+skip ahead of the normal interconnection queue while also potentially avoiding network upgrades;
+and 3) the mismatch in the timing of the various study cycles can result in further cost-shifts.
+1.
+Overview of MISO’s Cost-Shifting Safeguards
+The first mechanism in the Proposal is a condition of obtaining ZG Interconnection Service
+which states that a ZG Generating Facility is eligible for the service only if it does not require
+construction or modification of large-scale Network Upgrades, except for same-substation
+upgrades and certain System Protection Facilities.65  The analysis for this determination is
+performed through the ZG Impact Assessment, which is a screening process used to examine
+whether the project is eligible for ZG Interconnection Service.66  Pursuant to this assessment, the
+proposed tariff states that a project must “not require the construction or modification of any
+Network Upgrades to address impacts to the Transmission System with the exception of Network
+Upgrades located at the same substation as the POI, except for System Protection Facilities at
+adjacent substations.”67
+In other words, the ZG Impact Assessment must find that no broader transmission upgrades
+are needed, reliability can be maintained without Network Upgrades beyond the interconnection
+substation, and only same-substation upgrades or protection facility upgrades may be required.68
+If broader transmission upgrades are needed for the proposed project, it will not qualify for the ZG
+
+65 See Transmittal Letter at 13.
+66 Id. at 28.
+67 See Proposed Att. X, Generator Interconnection Procedures, Section 3.2.5.1(2); see also id. at 3.2.5.2.1 (“For ZG
+Interconnection Service to be granted, these analyses must determine that no Network Upgrades are needed to
+maintain system reliability other than Network Upgrades at the same substation as the Point of Interconnection or
+System Protection Facilities.”
+68 See Transmittal Letter at 28.
+
+--- PAGE 20 ---
+
+20
+Interconnection Service.69  If it does qualify, the interconnection customer then generally bears
+those costs of those limited upgrades, if any.
+The second mechanism involves the way in which MISO can credit a ZG Generating Facility
+as a “Non-Transmission Alternative” under the proposal and defer upgrades that would otherwise
+be needed to serve the ZG Associated Load.70  Attachment FF describes the “process of studying
+the Network Upgrades needs to integrate new loads onto the Transmission System,” which
+includes an the “capability of [ZG Resources] to offset the need for Network Upgrades.71 The
+proposal also requires “(1) an executed [five-year] agreement72 between the entity with the ZG
+Associated Load and the [ZGIA] Generating Facility […] and (2) that the Generating Facility
+associated with the ZG Associated Load has achieved Commercial Operation by the time that the
+transmission solution would otherwise need to be in service.”73 “In the event that the Generating
+Facility associated with the ZG Associated Load fails to achieve Commercial Operation by the
+date that the transmission solution would otherwise need to be in service or the contract between
+the ZG Associated Load and the associated Generating Facility terminates, then the Transmission
+
+69 Id.
+70 See Keyser Test. at 19.
+71 Id.
+72 Transmittal Letter at 32-33 (“MISO proposes to require the Interconnection Customer to submit an executed
+agreement between itself and the entity with the ZG Associated Load specifying that the full output of the
+Generating Facility is intended to be used by the ZG Associated Load, with an expected term of at least five years.
+[…] The language of the agreement requirement is based on, and largely identical to, the requirements applicable to
+ERAS Interconnection Requests with several differences[:] […] First, ZG Interconnection Service imposes a
+requirement that the ZG Associated Load at least intend to use the output of the Generating Facility for at least 5
+years […] [but] MISO [] only requires that the agreement specify an intent [emphasis in original] to use the full
+output of the Generating Facility for at least five years rather than a firm commitment”); see also proposed Att. X §
+3.11(vii).
+73 Att. FF § I.D.1.b (as proposed for amendment).
+
+--- PAGE 21 ---
+
+21
+Provider may require the applicable Load Serving Entity to delay the in-service date of ZG
+Associated Load until such time as an alternative solution can be placed in service.”74
+2.
+MISO’s Safeguards are Inadequate to Prevent Cost-Shifting of Network
+Upgrades to Interconnection Customers and Load.
+The safeguards described above were, in several different ways, inadequately designed to
+prevent cost shifts of Network Upgrades being socialized to non-ZGIA load.  MISO’s proposal is
+unjust and unreasonable until such time that it closes the gaping holes in its proposal that are
+particularly vulnerable to gaming and undue cost shifting.
+i.
+The proposed five-year commitment requirement does not provide
+certainty that the load integration study and its assumptions regarding
+needed upgrades are accurate
+
+First, for new ZG Associated Load, the Proposal does not require adequate financial security,
+cost-recovery agreements, or true-ups for the cost of deferred transmission upgrades if the ZG
+Generating Facility fails to materialize, retires early, or becomes permanently unavailable.  For
+example, if the ZG Generating Facility or its contractual arrangement terminates, and a deferred
+upgrade is identified and becomes necessary through a later MTEP cycle, MISO’s proposal would
+not specifically have those costs assigned to either the ZG Generating Facility or to the associated
+LSE.  Therefore, the upgrade[s] would likely be allocated under ordinary MTEP rules and spread
+to other transmission customers.  MISO itself acknowledges that such reconciliation occurs after-
+the-fact: “Any transmission issues identified by reconciling the cases will thus be addressed
+through the existing MTEP process.”75 The ZGIA’s contingent facilities are fixed at execution, and
+
+74 Id.
+75 Transmittal Letter at 15.
+
+--- PAGE 22 ---
+
+22
+the filed ZGIA provides no apparent mechanism for adding cost responsibility later to the
+appropriate ZGIA project.76
+Relatedly, the five-year commitment requirement is insufficient to protect against this cost-
+shift pathway.  Here, MISO made a deliberate choice. as described in its submission, to
+accommodate “commercial considerations” at the expense of ensuring just and reasonable rates,
+by “only requir[ing] that the agreement specify an intent to use the full output of the Generating
+Facility for at least five years rather than a firm commitment.”77  Specifically, MISO justifies this
+choice by speculating about the “difficult[y]” of “Interconnection Customers and ZG Associated
+Loads to agree to a firm minimum term of at least five years.”78  Beyond this bald statement, MISO
+provides no evidentiary basis for choosing this inadequate formulation and therefore is arbitrary.
+Where MISO allows MTEP to rely on a ZG Generating Facility as a Non-Transmission
+Alternative, but later identifies a needed reliability upgrade under a ZG Resource outage
+contingency, the Proposal does not clearly specify whether that upgrade is treated as a load-driven
+cost of the ZG arrangement or as a generally socialized reliability project.  MISO has stated that
+“Generator outages are accounted for in the MTEP process as P11 or P31 planning events used in
+the MTEP Reliability Analysis. ZGIA generator outages will be accounted for in this manner.”79
+Therefore, to the extent a later MTEP review identifies that a ZGIA generator outage necessitates
+Network Upgrades, there is nothing in the proposal to expressly prevent those upgrades being
+assigned through the normal MTEP process.
+
+76 See proposed Att. X, App’x 19 at passim.
+77 Transmittal Letter at 33 (emphasis original).
+78 Id.
+79 See MISO Response to Feedback, ZGIA Proposal Framework (PAC-2024-4) (April 15, 2026): available at
+https://cdn.misoenergy.org/PAC%20ZGIA%20Proposal%20Framework%20(PAC-2024-
+4)%20Feedback%20Response%20(20260225)751481.pdf, slide 3.
+
+--- PAGE 23 ---
+
+23
+Moreover, MISO’s compromised position belies an irreconcilable tension in its filing.  MISO
+states that “[i]n order to ensure that the load integration study is an accurate representation of future
+conditions, there must be certainty that the Non-Transmission Alternative becomes operational
+and remains operational.”80  However, here there is no such certainty, as the contracts merely
+require a statement regarding contractual expectations and intent.  This weak construct has the
+effect of undermining the accuracy and reliability of the assumptions and outputs of the ZG load
+integration study.  MISO should instead study each arrangement both with and without the ZG
+Generating Facility, identify every upgrade deferred in reliance on that resource, and require
+financial security or a cost-responsibility agreement covering nonperformance.  The proposed five-
+year “intended” commercial arrangement is not a reasonable basis for deferring transmission
+facilities with much longer planning lives.
+ii.
+The structure of the proposal distorts the normal interconnection
+queue process by providing a fast-track to ZGIA Generating Facilities
+that later convert to ERIS or NRIS service
+
+Next, the structure of the proposal also provides a fast-track pathway for ZGIA resources to
+connect to the gird while also allowing them to avoid needed network upgrades if they later convert
+to ERIS or NRIS service.  In other words, not only can the ZGIA resource energize faster as
+compared to resources in the traditional DPP queue, the ZGIA resource can also avoid the network
+upgrades they would otherwise be responsible for.  This structure presents serious gaming
+opportunities for ZG Resources seeking to energize quickly.
+As described in the filing: “[a]n Interconnection Customer with ZG Interconnection Service is
+free to submit an Interconnection Request into MISO’s queue for ERIS and/or NRIS.  Once the
+Interconnection Customer completes studies and obtains ERIS or NRIS for its ZG Resource, this
+
+80 Keyser Test. at 19 (emphasis added).
+
+--- PAGE 24 ---
+
+24
+automatically would supersede any ZG Interconnection Service that such ZG Resource has and
+the parties would replace or amend the ZGIA with a GIA reflecting the new service levels.”81
+Witness Keyser further states, “[i]f [a] project meets the eligibility requirements to enter the ZGIA
+interconnection process, DPP projects in active DPP cycles at or before Decision Point 2 may
+transfer to the ZGIA process.”82  Therefore, if the ZG Associated Load disappears, which is a
+material possibility based on the weak contractual requirements,83 the ZG Generating Facility will
+have skipped interconnection queue line as it can then apply for NRIS/ERIS, while also possibly
+avoiding the Network Upgrades that it may have otherwise been assigned had it completed the
+DPP interconnection process in the first instance.  This structure creates a fast-track ZGIA to GIA
+process where ZG Resources could use the ZG Interconnection Service to get ahead of DPP
+resources.  MISO’s proposal includes no safeguards applicable to the ZG Generating Facilities in
+the form of weighted escrow, securities, or other mechanism to protect against this opportunity for
+gaming and cost-shifting.
+iii.
+MISO’s proposal will result in further cost shifts as a result of
+mismatched study cycle timing
+
+Lastly, a study timing mismatch yields yet another opportunity for undue cost-shifting, as
+some deferred upgrades, like missed cumulative fault-duty and other reliability effects,84 that show
+up in MTEP but not the ZGIA study cycle may be charged to load more generally.  An energized
+generator contributes fault current even when it is not exporting real power, which is why the Tariff
+permits, among other things, System Protection Facilities at adjacent substations as the sole extra-
+
+81 Id. at 15-16.
+82 Id. at 29.
+83 As describe above, the ZG Associated Load is required to have only an agreement evincing an “intent” to take the
+ZG Generating Facility’s power for five years.
+84 Such as protection coordination, voltage performance, and dynamic stability.
+
+--- PAGE 25 ---
+
+25
+substation upgrade.  However, the system impacts of these effects may be lost because of the timing
+of ZGIA and DPP studies.
+MISO plans to include all interconnection requests with an approved GIA in the base case for
+each ZGIA cycle, but not to the base case for DPP cycles if the DPP studies are ongoing.85  Once
+the DPP cycle is finished, the output from the cycle and the completed ZGIA and the MTEP’s
+Expedited Review Projects will be included in the new MTEP base case.86  MISO plans to
+reconcile any differences caused by the different study assumptions in the ZGIA and the DPP
+through the MTEP process.  The next DPP cycle will then use the latest MTEP base case.87
+However, waiting until the MTEP process to reconcile differences between the ZGIA and DPP
+study assumptions means that the Network Upgrades potentially caused by ZG Resources, but not
+identified until the MTEP process, will be spread to load in MISO through either its regional or
+subregional cost allocation processes.  Unlike in the generator interconnection process, where
+generators pay for Network Upgrades, in the MTEP, Network Upgrade costs are generally
+allocated across load.88  As a result, any transmission upgrades that are not identified in the ZGIA
+and DPP process will be identified in the MTEP process and will be paid for by load.
+In other words, successive ZGIAs do “see” one another because MISO adds each GIA
+approved since the last base case to the following ZGIA cycle.  The gap therefore runs between
+ZG Resources and pending DPP requests in both directions: the DPP base case is likewise frozen
+at kickoff and not updated for ZGIAs approved mid-cycle.  Projects in each track may therefore
+be studied against models that omit the other.  MISO has not adequately explained how their
+
+85 Transmittal Letter at 15.
+86 Id.
+87 Id.
+88 Att. FF § III.A.2.
+
+--- PAGE 26 ---
+
+26
+cumulative short-circuit, protection, voltage, and stability effects will be reconciled before
+approvals become final.  That gap could cause upgrades to be identified later through MTEP,
+without a corresponding ZGIA cost true-up.  The Tariff should identify the required base case;
+require cumulative modeling of prior ZGIAs and relevant pending projects such as projects in DPP
+Phase 2; establish minimum short-circuit, protection, steady-state, and stability analyses; and
+provide clear restudy and cost-allocation rules.  The current provision making thermal and voltage
+analysis discretionary “if necessary” is too open-ended.  Ultimately, this means that residential
+ratepayers and small industrial customers may end up paying for upgrades caused by these
+resources and their associated loads.
+E. The Proposal Requires Greater Clarity on the Treatment of Hybrid Resources.
+The Proposal allows for Hybrid Resources to apply for ZG Interconnection Service.89
+However, there are two distinct problems in the Proposal that may hinder Hybrid Resources from
+fully participating on a level playing field with other types of resources.  First, the Proposal sets
+the capacity accreditation of a ZG Generating Facility that is a Hybrid Resource based in part on
+a cap at “the level of firm interconnection service.”90  As ZG Interconnection Service may be
+interpreted as not “firm,” Hybrid Resources in the ZGIA program could receive capacity
+accreditation of zero without clarification.
+Second, the Proposal is silent as to important dimensions of how the battery storage component
+of a Hybrid Resource will be treated within the ZGIA construct.  MISO has stated elsewhere that
+
+89 Under the Proposal, “[a] ZG Resource may participate as a Generation Resource, Dispatchable Intermittent
+Resource, Electric Storage Resource, or Behind the Meter Generation resource”; while Hybrid Resources are
+already defined as a type of Generation Resource.  Proposed Module A § 1 (proposed definition of Zero Injection
+Generation (ZG) Resource); Module A § 1 (definition of Hybrid Resource).
+90 Proposed Module E-1 § 69A.4.1(i); Module E-1 § 69A.4.1(f).
+
+--- PAGE 27 ---
+
+27
+a storage unit’s charging activity will be considered in the DPP interconnection study,91 but MISO’s
+Proposal leaves unclear how, for a Hybrid Resource within ZGIA, the constituent storage unit’s
+charging behavior would be considered in the study.  Relatedly, in the required ZG Impact
+Assessment, “the stability and steady state analyses [will] test[] the impact of injections if the ZG
+Associated Load trips offline for the duration of the Transient Tolerance window,”92 but the
+Proposal leaves unclear whether any such tripping potential by the constituent storage unit would
+be considered in the study.  Additionally, a ZG Generating Facility shall be metered “separate from
+any metering used for the ZG Associated Load,”93 but the Proposal should clarify whether a
+constituent storage unit within a ZGIA Hybrid Resource must be separately metered from the
+constituent generator and whether its charging behavior should be netted from the ZG Generating
+Facility’s “injections” to the extent they must not exceed94 the Load or Demand of the ZG
+Associated Load.
+F. Drafting Errors
+While Community Organizations and Clean Energy Advocates continue to believe the
+Proposal is not just and reasonable as filed, we write here to highlight what may be unintended
+errors in the Proposal as submitted.
+1.
+Limitation on Injections
+
+91 MISO, Removing Storage Charging Limitations in GIAs (PAC-2024-3) (Jun. 10, 2026),
+https://cdn.misoenergy.org/20260610%20PSC%20Item%2005%20Removing%20Storage%20Limitations%20in%20
+GIAs%20(PAC-2024-3)762998.pdf, at passim; MISO, Removing Storage Charging Limitations in GIAs (PAC-2024-
+3) (Aug. 26, 2026),
+https://cdn.misoenergy.org/20260826%20PAC%20Item%2007a%20Removing%20Storage%20Limitations%20in%
+20GIAs%20 (PAC-2024-3)776961.pdf, at passim.
+92 Transmittal Letter at 15, 28 (discussing proposed Att. X § 3.2.5.2.1); Keyser Test. at 11:2-4, 31:6-7.
+93 Proposed Att. X, App’x 19 § 7.1.
+94 See, e.g., proposed Att. X § 1 (definition of Transient Tolerance Window); proposed Att. X § 3.11(v) (limiting the
+ZG Interconnection Service amount to the ZG Associated Load’s Demand); proposed Att. X, App’x 19 § 9.7.4.7
+(requiring a ZG Generating Facility to reduce injections to match the ZG Associated Load’s Demand).
+
+--- PAGE 28 ---
+
+28
+To support a ZG Generating Facility’s requirement to avoid grid injections and produce only
+the power its ZG Associated Load demands, MISO proposes to require that, after a reduction or
+loss of load by the ZG Associated Load, the ZG generator shall “reduce its injections to a level
+that does not exceed the Demand of the ZG Associated Load within the Transient Tolerance
+Window [after a load reduction]”95 or “reduce[] its injections to an amount not greater than the
+Load of the ZG Associated Load.”96
+A probable error is in the phrase “reduce its injections” (emphasis added). As the name of the
+interconnection program suggests, grid injections are supposed to be zero, after the Transient
+Tolerance Window elapses. The intent of the referenced phrase may be better captured by MISO’s
+statement: “it is important to correspondingly reduce the output of the ZG Resource to prevent
+power from flowing out onto the Transmission System”97 or statements in the Show Cause Order
+contemplating that under this type of arrangement, “a generating facility’s output is matched to the
+demand of the electrically proximate large load or large co-located load.”98 The Commission
+should, at minimum, clarify whether MISO intended to write “output” rather than “injections” in
+the referenced quotations. If MISO intended the phrasing as written, further clarification may be
+needed to avoid creating a data center-sized loophole: “injections” in the quoted tariff language in
+Attachment X, Section 1 and in Attachment X, Appendix 19, Section 9.7.4.7 can mean only
+injections within the circuit up to the POI, with zero injections beyond that.
+It is also unclear whether the reference to Demand in Section 9.7.4.7 of the ZGIA
+Interconnection Agreement was intended to say Load, as Demand is defined in Module A as a
+
+95 Proposed Att. X, App’x 19 § 9.7.4.7(b).
+96 Proposed Att. X § 1 (definition of “Transient Tolerance Window”).
+97 Transmittal Letter at 42.
+98 Show Cause Order at P 113.
+
+--- PAGE 29 ---
+
+29
+maximum amount of Load over a specified period. If “Demand” was intended, then (i) the
+inconsistency with the use of “Load” in the definition of Transient Tolerance Window is
+unexplained; (ii) it is not clear how the Demand of the ZG Associated Load is to be calculated for
+this purpose; and (iii) it is unclear why the ZG Generating Facility would be allowed to indefinitely
+inject power at the level of some maximum level of Load.
+2.
+Reference to Interconnection Study
+In proposed new Attachment X, Section 3.2.5.1, the tariff language provides that “This [ZGIA]
+service is available only if the study required by Section 3.2.3.2 of these GIP determines that the
+proposed interconnection…” (emphasis added).  This appears to be an error; the reference should
+have been to (proposed new) Section 3.2.5.2 on the next page of Attachment X.  The same
+reference error is also found at proposed new Attachment X, Appendix 19, Section 4.1.4.1.
+
+III.
+CONCLUSION
+To effectuate MISO’s zero injection concept without raising the risk of adverse reliability
+events and cost shifts, Community Organizations and Clean Energy Advocates respectfully ask the
+Commission to use its authority to help MISO course correct.  Given the demonstrated reliability
+concerns interconnecting and serving large load customers, no countervailing reasons justify
+failing to establish operational penalties and transparent baseline requirements for system
+protection mechanisms.   Similarly, as the Commission noted in the OSC, cost transparency is
+paramount given the scale and pace of forecasted load growth.  Without publishing study
+information and reducing instances for mismatching cost responsibility between the multiple
+generator interconnection queue processes, MISO’s ZGIA process could unduly shift cost burdens
+to other ratepayers without giving states and other advocates visibility to identify or resolve the
+issues.
+
+--- PAGE 30 ---
+30
+ Since MISO has the structure for a reasonable co-location program, we urge the Commission
+to direct MISO to cure the deficiencies with filing before accepting it.
+DATED: September 8, 2026
+Respectfully submitted,
+/s/ Sameer H. Doshi
+Sameer H. Doshi
+Christine Powell
+Aaron Stemplewicz
+Aaliyah Adkins
+Earthjustice
+311 S. Wacker Dr., 14th Floor
+Chicago, IL 60606
+sdoshi@earthjustice.org
+cpowell@earthjustice.org
+astemplewicz@earthjustice.org
+aadkins@earthjustice.org
+Attorneys for Michigan Environmental Justice
+Coalition and Community Collaboration on
+Climate Change
+Kareem Scales
+Co-Chair
+Community Collaboration on Climate Change
+Grand Rapids, MI
+kareem@c4gr.org
+Wesley Watson
+Policy Associate
+Michigan Environmental Justice Coalition
+1401 W. Fort St., P.O. Box 44080
+Detroit, MI 48233
+wesley@michiganej.org
+/s/ Jonah Baskin
+Jonah Baskin
+Associate Attorney
+Sierra Club Environmental Law Program
+50 F Street NW, Eighth Floor
+Washington, DC 20001
+jonah.baskin@sierraclub.org
+
+--- PAGE 31 ---
+
+31
+
+/s/ Daniel Wiggins Jr.
+
+Daniel Wiggins Jr.
+
+Executive Director
+
+Midwest Tribal Energy Resources Association
+
+3136 W. Kilbourn Ave., Suite 200
+
+Milwaukee, WI 53208
+
+daniel.wiggins@mtera.org
+
+/s/ Natalie McIntire
+
+Natalie McIntire
+
+Senior Advocate
+
+Natural Resources Defense Council
+
+20 North Wacker Drive, Suite 1600
+
+Chicago, IL 60606
+
+(312) 995-5907
+
+nmcintire@nrdc.org
+
+/s/ Beth Soholt
+
+Beth Soholt
+
+Executive Director
+
+Clean Grid Alliance
+
+3433 Broadway St. NE, Suite 240
+
+Minneapolis, MN 55413
+
+bsoholt@cleangridalliance.org
+
+--- PAGE 32 ---
+
+32
+CERTIFICATE OF SERVICE
+I hereby certify that the foregoing has been served in accordance with 18 C.F.R. §
+385.2010 upon each party designated on the official service list in this proceeding by email.
+DATED: September 8, 2026
+
+/s/ Sameer H. Doshi
+
+Sameer H. Doshi
+
+Earthjustice
+
+311 S. Wacker Dr., 14th Floor
+
+Chicago, IL 60606
+
+sdoshi@earthjustice.org

@@ -1,0 +1,4225 @@
+{
+  "asOf": "2026-11-10",
+  "since": "2026-06-18",
+  "scope": "All rows in the six show-cause dockets and their -001 subdockets; selected related tariff dockets. One accession can appear on several sheets. Administrative notices, service changes, withdrawals and intervention-only rows are not counted as policy submissions. Related-docket comments without a local body are identified for follow-up. A captured document is not an endorsement of its contents.",
+  "dockets": [
+    {
+      "docket": "EL26-67-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-67&sub_docket=000",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 177,
+      "rowsRead": 177,
+      "classificationCounts": {
+        "launch day": 2,
+        "documentless": 133,
+        "separate technical conference": 1,
+        "intervention only": 10,
+        "service or representation": 6,
+        "for review": 23,
+        "procedural notice": 2
+      },
+      "recordAccessions": [
+        "20260708-5011",
+        "20260708-5012",
+        "20260708-5018",
+        "20260708-5103",
+        "20260708-5207",
+        "20260709-5023",
+        "20260709-5287",
+        "20260715-5011",
+        "20260720-5203",
+        "20260722-5175",
+        "20260728-5071",
+        "20260728-5074",
+        "20260728-5084",
+        "20260803-5106",
+        "20260803-5234",
+        "20260803-5261",
+        "20260804-5159",
+        "20260807-5219",
+        "20260810-5108",
+        "20260813-3025",
+        "20260814-3059",
+        "20261026-4001",
+        "20261110-4002"
+      ]
+    },
+    {
+      "docket": "EL26-68-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-68&sub_docket=000",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 152,
+      "rowsRead": 152,
+      "classificationCounts": {
+        "launch day": 2,
+        "documentless": 117,
+        "service or representation": 7,
+        "for review": 17,
+        "separate technical conference": 1,
+        "intervention only": 7,
+        "procedural notice": 1
+      },
+      "recordAccessions": [
+        "20260629-5029",
+        "20260708-5018",
+        "20260708-5103",
+        "20260708-5207",
+        "20260709-5023",
+        "20260715-5011",
+        "20260715-5116",
+        "20260720-5205",
+        "20260722-5143",
+        "20260803-5209",
+        "20260803-5265",
+        "20260807-5123",
+        "20260807-5150",
+        "20260807-5220",
+        "20260810-5108",
+        "20260814-3060",
+        "20261026-4001"
+      ]
+    },
+    {
+      "docket": "EL26-69-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-69&sub_docket=000",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 105,
+      "rowsRead": 105,
+      "classificationCounts": {
+        "launch day": 2,
+        "documentless": 77,
+        "separate technical conference": 1,
+        "intervention only": 9,
+        "service or representation": 3,
+        "for review": 12,
+        "procedural notice": 1
+      },
+      "recordAccessions": [
+        "20260708-5018",
+        "20260708-5103",
+        "20260708-5207",
+        "20260709-5023",
+        "20260715-5011",
+        "20260720-5217",
+        "20260803-5210",
+        "20260803-5229",
+        "20260803-5241",
+        "20260810-5108",
+        "20260814-3068",
+        "20261026-4001"
+      ]
+    },
+    {
+      "docket": "EL26-70-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-70&sub_docket=000",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 174,
+      "rowsRead": 174,
+      "classificationCounts": {
+        "launch day": 3,
+        "documentless": 135,
+        "for review": 21,
+        "separate technical conference": 1,
+        "intervention only": 7,
+        "service or representation": 6,
+        "procedural notice": 1
+      },
+      "recordAccessions": [
+        "20260624-5016",
+        "20260624-5017",
+        "20260708-5018",
+        "20260708-5103",
+        "20260708-5207",
+        "20260709-5023",
+        "20260715-5011",
+        "20260720-5204",
+        "20260728-5083",
+        "20260803-5249",
+        "20260807-5186",
+        "20260807-5199",
+        "20260807-5216",
+        "20260810-5108",
+        "20260812-5036",
+        "20260813-3026",
+        "20260814-3058",
+        "20260814-5198",
+        "20260910-4000",
+        "20261001-5390",
+        "20261026-4001"
+      ]
+    },
+    {
+      "docket": "EL26-71-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-71&sub_docket=000",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 116,
+      "rowsRead": 116,
+      "classificationCounts": {
+        "launch day": 2,
+        "documentless": 81,
+        "for review": 18,
+        "separate technical conference": 1,
+        "intervention only": 8,
+        "service or representation": 4,
+        "procedural notice": 2
+      },
+      "recordAccessions": [
+        "20260629-5029",
+        "20260708-5018",
+        "20260708-5103",
+        "20260708-5207",
+        "20260709-5023",
+        "20260715-5011",
+        "20260720-5202",
+        "20260731-5157",
+        "20260803-5166",
+        "20260803-5170",
+        "20260803-5202",
+        "20260803-5206",
+        "20260803-5227",
+        "20260807-5215",
+        "20260810-5108",
+        "20260812-5158",
+        "20260814-3061",
+        "20261026-4001"
+      ]
+    },
+    {
+      "docket": "EL26-72-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-72&sub_docket=000",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 111,
+      "rowsRead": 111,
+      "classificationCounts": {
+        "launch day": 2,
+        "for review": 13,
+        "documentless": 80,
+        "separate technical conference": 1,
+        "intervention only": 9,
+        "service or representation": 5,
+        "procedural notice": 1
+      },
+      "recordAccessions": [
+        "20260622-5134",
+        "20260708-5018",
+        "20260708-5103",
+        "20260708-5207",
+        "20260709-3012",
+        "20260709-5023",
+        "20260715-5011",
+        "20260720-5216",
+        "20260803-5083",
+        "20260807-5196",
+        "20260810-5108",
+        "20260814-3056",
+        "20261026-4001"
+      ]
+    },
+    {
+      "docket": "EL26-67-001",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-67&sub_docket=001",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 10,
+      "rowsRead": 10,
+      "classificationCounts": {
+        "for review": 6,
+        "service or representation": 1,
+        "documentless": 2,
+        "procedural notice": 1
+      },
+      "recordAccessions": [
+        "20260717-5246",
+        "20260717-5258",
+        "20260720-5172",
+        "20260720-5198",
+        "20260720-5218",
+        "20260921-3020"
+      ]
+    },
+    {
+      "docket": "EL26-68-001",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-68&sub_docket=001",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 0,
+      "rowsRead": 0,
+      "classificationCounts": {},
+      "recordAccessions": []
+    },
+    {
+      "docket": "EL26-69-001",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-69&sub_docket=001",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 3,
+      "rowsRead": 3,
+      "classificationCounts": {
+        "for review": 2,
+        "procedural notice": 1
+      },
+      "recordAccessions": [
+        "20260720-5218",
+        "20260921-3021"
+      ]
+    },
+    {
+      "docket": "EL26-70-001",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-70&sub_docket=001",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 4,
+      "rowsRead": 4,
+      "classificationCounts": {
+        "for review": 2,
+        "documentless": 1,
+        "procedural notice": 1
+      },
+      "recordAccessions": [
+        "20260720-5218",
+        "20260921-3047"
+      ]
+    },
+    {
+      "docket": "EL26-71-001",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-71&sub_docket=001",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 3,
+      "rowsRead": 3,
+      "classificationCounts": {
+        "for review": 2,
+        "procedural notice": 1
+      },
+      "recordAccessions": [
+        "20260720-5218",
+        "20260921-3019"
+      ]
+    },
+    {
+      "docket": "EL26-72-001",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-72&sub_docket=001",
+      "scope": "show cause",
+      "status": "all rows reconciled",
+      "totalRows": 4,
+      "rowsRead": 4,
+      "classificationCounts": {
+        "for review": 2,
+        "service or representation": 1,
+        "procedural notice": 1
+      },
+      "recordAccessions": [
+        "20260720-5218",
+        "20260921-3056"
+      ]
+    },
+    {
+      "docket": "ER26-3380-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER26-3380&sub_docket=000",
+      "scope": "related tariff",
+      "status": "all rows reconciled",
+      "totalRows": 156,
+      "rowsRead": 156,
+      "classificationCounts": {
+        "for review": 71,
+        "procedural notice": 3,
+        "documentless": 78,
+        "intervention only": 1,
+        "service or representation": 3
+      },
+      "recordAccessions": [
+        "20260731-5214",
+        "20260811-4003",
+        "20260814-5244",
+        "20260817-5042",
+        "20260819-5134",
+        "20260820-5015",
+        "20260821-5090",
+        "20260821-5096",
+        "20260821-5105",
+        "20260821-5120",
+        "20260821-5125",
+        "20260821-5145",
+        "20260821-5155",
+        "20260821-5175",
+        "20260821-5176",
+        "20260821-5180",
+        "20260821-5183",
+        "20260821-5192",
+        "20260821-5197",
+        "20260821-5206",
+        "20260821-5211",
+        "20260821-5215",
+        "20260821-5217",
+        "20260821-5220",
+        "20260821-5229",
+        "20260821-5243",
+        "20260821-5263",
+        "20260821-5266",
+        "20260821-5273",
+        "20260821-5274",
+        "20260821-5276",
+        "20260821-5281",
+        "20260821-5283",
+        "20260821-5289",
+        "20260821-5290",
+        "20260821-5293",
+        "20260821-5296",
+        "20260821-5297",
+        "20260821-5299",
+        "20260821-5300",
+        "20260821-5304",
+        "20260821-5306",
+        "20260821-5307",
+        "20260821-5313",
+        "20260821-5314",
+        "20260821-5317",
+        "20260821-5318",
+        "20260821-5322",
+        "20260824-5017",
+        "20260902-5075",
+        "20260902-5087",
+        "20260904-5056",
+        "20260908-5260",
+        "20260910-5296",
+        "20260915-5145",
+        "20260917-5316",
+        "20260918-5364",
+        "20260918-5413",
+        "20260921-5148",
+        "20260922-5110",
+        "20260923-5060",
+        "20260923-5149",
+        "20260924-5183",
+        "20260925-5208",
+        "20260928-4001",
+        "20260929-3099",
+        "20260929-5071",
+        "20261007-5181",
+        "20261013-5141",
+        "20261014-5184",
+        "20261016-3047",
+        "20261020-5159",
+        "20261023-3114"
+      ]
+    },
+    {
+      "docket": "ER26-3552-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER26-3552&sub_docket=000",
+      "scope": "related tariff",
+      "status": "all rows reconciled",
+      "totalRows": 53,
+      "rowsRead": 53,
+      "classificationCounts": {
+        "for review": 15,
+        "procedural notice": 1,
+        "documentless": 36,
+        "service or representation": 1
+      },
+      "recordAccessions": [
+        "20260818-5152",
+        "20260828-5285",
+        "20260902-5107",
+        "20260903-3033",
+        "20260903-5021",
+        "20260908-5257",
+        "20260908-5266",
+        "20260908-5321",
+        "20260908-5329",
+        "20260908-5332",
+        "20260908-5341",
+        "20260911-5203",
+        "20260923-5148",
+        "20261008-5175",
+        "20261009-3000"
+      ]
+    },
+    {
+      "docket": "ER27-432-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-432&sub_docket=000",
+      "scope": "related tariff",
+      "status": "all rows reconciled",
+      "totalRows": 2,
+      "rowsRead": 2,
+      "classificationCounts": {
+        "procedural notice": 1,
+        "for review": 1
+      },
+      "recordAccessions": [
+        "20261106-5091"
+      ]
+    },
+    {
+      "docket": "ER27-432-001",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-432&sub_docket=001",
+      "scope": "related tariff",
+      "status": "all rows reconciled",
+      "totalRows": 2,
+      "rowsRead": 2,
+      "classificationCounts": {
+        "procedural notice": 1,
+        "for review": 1
+      },
+      "recordAccessions": [
+        "20261110-5175"
+      ]
+    },
+    {
+      "docket": "ER26-3515-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER26-3515&sub_docket=000",
+      "scope": "related tariff",
+      "status": "incomplete",
+      "totalRows": 162,
+      "rowsRead": 100,
+      "classificationCounts": {
+        "procedural notice": 2,
+        "for review": 29,
+        "intervention only": 2,
+        "documentless": 67
+      },
+      "recordAccessions": [
+        "20260813-5118",
+        "20260814-5009",
+        "20260820-3043",
+        "20260828-5287",
+        "20260831-3082",
+        "20260831-5121",
+        "20260901-5028",
+        "20260901-5250",
+        "20260902-3019",
+        "20260902-5055",
+        "20260903-5020",
+        "20260903-5023",
+        "20260903-5167",
+        "20260903-5170",
+        "20260903-5183",
+        "20260903-5185",
+        "20260903-5193",
+        "20260903-5195",
+        "20260903-5197",
+        "20260903-5199",
+        "20260903-5200",
+        "20260903-5201",
+        "20260903-5206",
+        "20260903-5207",
+        "20260903-5209",
+        "20260903-5212",
+        "20260903-5218",
+        "20260903-5221",
+        "20260903-5224"
+      ]
+    },
+    {
+      "docket": "ER26-3650-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER26-3650&sub_docket=000",
+      "scope": "related tariff",
+      "status": "all rows reconciled",
+      "totalRows": 72,
+      "rowsRead": 72,
+      "classificationCounts": {
+        "for review": 18,
+        "procedural notice": 2,
+        "documentless": 52
+      },
+      "recordAccessions": [
+        "20260828-5278",
+        "20260918-5119",
+        "20260918-5224",
+        "20260918-5272",
+        "20260918-5286",
+        "20260918-5323",
+        "20260918-5333",
+        "20260918-5346",
+        "20260918-5386",
+        "20260918-5391",
+        "20260918-5397",
+        "20260918-5412",
+        "20260921-5084",
+        "20260924-5153",
+        "20261002-5120",
+        "20261013-5440",
+        "20261028-5128",
+        "20261103-5190"
+      ]
+    }
+  ],
+  "records": {
+    "20260708-5011": {
+      "description": "Comments of Maven Solutions on the Commission's Show Cause Order regarding large-load interconnection tariff provisions under EL26-67.",
+      "filed": "2026-07-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260708-5011",
+      "status": "primary text captured",
+      "slug": "filing-20260708-5011",
+      "original": "20260708-5011_01.pdf",
+      "text": "sources/text/abeyance/filing-20260708-5011.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "CBRS_FERC_PJM_EL26-67_Comments_DRAFT_v3 (1).pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260708-5012": {
+      "description": "Comments of Maven Solutions on the Show Cause Order regarding Civic Bankability Rating Standard to FERC's Five Reform Categories under EL26-67.",
+      "filed": "2026-07-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260708-5012",
+      "status": "primary text captured",
+      "slug": "filing-20260708-5012",
+      "original": "20260708-5012_01.pdf",
+      "text": "sources/text/abeyance/filing-20260708-5012.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "CBRS_FERC_PJM_EL26-67_Comments_DRAFT_v3 (1).pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260708-5018": {
+      "description": "Supplemental Technical Comment of L.M. Marlowe on the integration of large, high-density electric loads and the associated reliability, observability, and cost-allocation methodologies under consideration by the Commission under EL26-67 et al.",
+      "filed": "2026-07-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260708-5018",
+      "status": "primary text captured",
+      "slug": "filing-20260708-5018",
+      "original": "20260708-5018_01.pdf",
+      "text": "sources/text/abeyance/filing-20260708-5018.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "MARLOWE_FERC-Supplemental-Technical-Comment_2026-07-07.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260708-5103": {
+      "description": "Motion to Intervene and Initial Comments of Global Capacity Alliance in response to FERC's 06/18/2026 Show Cause Order under RM26-4 et al.",
+      "filed": "2026-07-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260708-5103",
+      "status": "primary text captured",
+      "slug": "filing-20260708-5103",
+      "original": "20260708-5103_01.pdf",
+      "text": "sources/text/abeyance/filing-20260708-5103.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "GCA_Motion_To_Intervene_RM26-4.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260708-5207": {
+      "description": "Motion of L.M. Marlowe for the Establishment of Settlement Procedures and Convening of a Settlement Conference, or, in the Alternative, for the Appointment of a Settlement Judge under EL26-67, et al.",
+      "filed": "2026-07-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260708-5207",
+      "status": "primary text captured",
+      "slug": "filing-20260708-5207",
+      "original": "20260708-5207_01.pdf",
+      "text": "sources/text/abeyance/filing-20260708-5207.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "MARLOWE_FERC-Motion-for-Settlement-Procedures_2026-07-08 (3).pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260709-5023": {
+      "description": "Second Supplemental Technical Comment of L.M. Marlowe on the Frequency-Response Absorption Standard and Coupling-Discrimination Protocol under EL26-67 et al.",
+      "filed": "2026-07-09",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260709-5023",
+      "status": "primary text captured",
+      "slug": "filing-20260709-5023",
+      "original": "20260709-5023_01.pdf",
+      "text": "sources/text/abeyance/filing-20260709-5023.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "MARLOWE_FERC-Second-Supplemental-Comment_2026-07-08 (1).pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260709-5287": {
+      "description": "Motion to Intervene and Comments of Evan Pierce re the large-load interconnection tariff provisions under EL26-67.",
+      "filed": "2026-07-09",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260709-5287",
+      "status": "primary text captured",
+      "slug": "filing-20260709-5287",
+      "original": "20260709-5287_01.pdf",
+      "text": "sources/text/abeyance/filing-20260709-5287.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "New Era Energy & Digital Draft Motion to Intervene.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260715-5011": {
+      "description": "Comments of Relentless Energy Systems LLC providing technical evidence and Xyce netlists demonstrating Geometric Phase Isolation, a Grid Enhancing Technology, for passive hardware-level VAR-offloading at Point-of-Load under EL26-67 et al.",
+      "filed": "2026-07-15",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260715-5011",
+      "status": "primary text captured",
+      "slug": "filing-20260715-5011",
+      "original": "20260715-5011_01.pdf",
+      "text": "sources/text/abeyance/filing-20260715-5011.txt",
+      "additionalFiles": [
+        "20260715-5011_02.pdf",
+        "20260715-5011_03.pdf",
+        "20260715-5011_04.pdf",
+        "20260715-5011_05.pdf"
+      ],
+      "notIncludedFromFileList": [
+        "GPI_Master_Netlist.txt",
+        "GPI_Master-20%_Netlist.txt",
+        "GPI_Master-10%_Netlist.txt",
+        "GPI_Master+10%_Netlist.txt",
+        "GPI_Master+20%_Netlist.txt",
+        "RR-GPI_5D-LCFVR_Resilient-Resonance_Netlist.txt"
+      ],
+      "fileList": [
+        {
+          "name": "Cover_Letter.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "GPI_Master_Netlist.txt",
+          "status": "non-PDF/DOCX format; not extracted"
+        },
+        {
+          "name": "GPI_Master-20%_Netlist.txt",
+          "status": "non-PDF/DOCX format; not extracted"
+        },
+        {
+          "name": "GPI_Master-10%_Netlist.txt",
+          "status": "non-PDF/DOCX format; not extracted"
+        },
+        {
+          "name": "GPI_Master+10%_Netlist.txt",
+          "status": "non-PDF/DOCX format; not extracted"
+        },
+        {
+          "name": "GPI_Master+20%_Netlist.txt",
+          "status": "non-PDF/DOCX format; not extracted"
+        },
+        {
+          "name": "GPI_Composite_Dashboard.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "RR-GPI_5D-LCFVR_Resilient-Resonance_Netlist.txt",
+          "status": "non-PDF/DOCX format; not extracted"
+        },
+        {
+          "name": "RR-5D-LCFVR-GPI-ResilientResonance-Graph-Table.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "SPECIFICATION.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "DRAWINGS.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260720-5203": {
+      "description": "PJM Interconnection, L.L.C. submits Informational Report in compliance with the Commission’s 06/18/2026 Show Cause Order under EL26-67.",
+      "filed": "2026-07-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260720-5203",
+      "status": "primary text captured",
+      "slug": "report-el26-67-pjm",
+      "original": "20260720-5203_01.pdf",
+      "text": "sources/text/abeyance/report-el26-67-pjm.txt",
+      "additionalFiles": []
+    },
+    "20260722-5175": {
+      "description": "Motion to Rescind Show Cause Order of Allegheny Electric Cooperative, Inc. under EL26-67.",
+      "filed": "2026-07-22",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260722-5175",
+      "status": "primary text captured",
+      "slug": "filing-20260722-5175",
+      "original": "20260722-5175_01.pdf",
+      "text": "sources/text/abeyance/filing-20260722-5175.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "20260722 Allegheny Request for Rescission of Show Cause Order EL26-67.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260728-5071": {
+      "description": "Motion for Abeyance of the Indicated PJM Transmission Owners and Request for Expedited Action and Shortened Comment Period under EL26-67.",
+      "filed": "2026-07-28",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260728-5071",
+      "status": "primary text captured",
+      "slug": "filing-20260728-5071",
+      "original": "20260728-5071_01.pdf",
+      "text": "sources/text/abeyance/filing-20260728-5071.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-67 - Motion for Abeyance of the Indicated PJM TOs (Final 7.28.2026).pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260728-5074": {
+      "description": "Wabash Valley Power Association, Inc. submits Request for Issuance of an Errata to the 06/18/2026 Order Instituting Proceedings Under Section 206 of the Federal Power Act under EL26-67.",
+      "filed": "2026-07-28",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260728-5074",
+      "status": "primary text captured",
+      "slug": "filing-20260728-5074",
+      "original": "20260728-5074_01.pdf",
+      "text": "sources/text/abeyance/filing-20260728-5074.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-67-000_WVPA Errata Request_7.28.26.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260728-5084": {
+      "description": "Motion of PJM Interconnection, L.L.C. to Hold Proceeding in Abeyance and Request for Shortened Answer Period and Expedited Treatment under EL26-67.",
+      "filed": "2026-07-28",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260728-5084",
+      "status": "primary text captured",
+      "slug": "motion-el26-67-pjm-abeyance",
+      "original": "20260728-5084_01.pdf",
+      "text": "sources/text/abeyance/motion-el26-67-pjm-abeyance.txt",
+      "additionalFiles": []
+    },
+    "20260803-5106": {
+      "description": "Answer in Support of the PJM Industrial Customer Coalition to the Motions for Extension and Abeyance by PJM Interconnection, L.L.C. under EL25-49 et al.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5106",
+      "status": "primary text captured",
+      "slug": "filing-20260803-5106",
+      "original": "20260803-5106_01.pdf",
+      "text": "sources/text/abeyance/filing-20260803-5106.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Answer in Support - EL25-49, et al..pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260803-5234": {
+      "description": "Answer of Constellation Energy Generation, LLC in support of PJM Interconnection, L.L.C.'s Motion for Abeyance under EL26-67.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5234",
+      "status": "primary text captured",
+      "slug": "filing-20260803-5234",
+      "original": "20260803-5234_01.pdf",
+      "text": "sources/text/abeyance/filing-20260803-5234.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Constellation Answer to PJM Motion for Abeyance.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260803-5261": {
+      "description": "Motion for Abeyance and Request for Shortened Answer Period and Expedited Treatment of Silver Run Electric, LLC under EL26-67.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5261",
+      "status": "primary text captured",
+      "slug": "filing-20260803-5261",
+      "original": "20260803-5261_01.pdf",
+      "text": "sources/text/abeyance/filing-20260803-5261.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Silver Run Electric, LLC, EL26-67-000 Motion for Abeyance (final).pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260804-5159": {
+      "description": "Answer of Constellation Energy Generation, LLC in response to Transmission Owner's 07/20/2026 Request for Clarification under EL26-67.",
+      "filed": "2026-08-04",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260804-5159",
+      "status": "primary text captured",
+      "slug": "filing-20260804-5159",
+      "original": "20260804-5159_01.pdf",
+      "text": "sources/text/abeyance/filing-20260804-5159.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Constellation Answer to TO Clarification Request in EL26-67-000.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260807-5219": {
+      "description": "Answer of Corporate Energy Buyers Association in support of PJM Interconnection, L.L.C.'s et al. 07/28/2026 Motion for Abeyance under EL26-67.",
+      "filed": "2026-08-07",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260807-5219",
+      "status": "primary text captured",
+      "slug": "filing-20260807-5219",
+      "original": "20260807-5219_01.pdf",
+      "text": "sources/text/abeyance/filing-20260807-5219.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "CEBA Answer in Support of Abeyance Requests (PJM) EL26-67.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260810-5108": {
+      "description": "Comments of the Natural Gas Supply Association on the Informational Reports re Resource Adequacy Measures and Proposals, PJM Interconnection L.L.C., et al. under EL26-67, et. al.",
+      "filed": "2026-08-10",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260810-5108",
+      "status": "primary text captured",
+      "slug": "filing-20260810-5108",
+      "original": "20260810-5108_01.pdf",
+      "text": "sources/text/abeyance/filing-20260810-5108.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "NGSA letter 8.10.26.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260813-3025": {
+      "description": "Errata to the 06/18/2026 Commission issued Order Instituting Proceeding Under Section 206 of the Federal Power Act; correcting footnote 13 re PJM Interconnection, L.L.C. et al. under EL26-67. For order see accession number 20260618-3105.",
+      "filed": "2026-08-13",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260813-3025",
+      "status": "primary text captured",
+      "slug": "errata-el26-67-pjm",
+      "original": "20260813-3025_EL26-67-000 Errata Notice.docx",
+      "text": "sources/text/abeyance/errata-el26-67-pjm.txt",
+      "additionalFiles": []
+    },
+    "20260814-3059": {
+      "description": "Letter order granting PJM Interconnection, L.L.C.s et al. 07/28/2026 filing of an Abeyance Motion to hold this proceeding in abeyance for 90 days under EL26-67.",
+      "filed": "2026-08-14",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260814-3059",
+      "status": "primary text captured",
+      "slug": "abeyance-el26-67-pjm",
+      "original": "20260814-3059_EL26-67-000.docx",
+      "text": "sources/text/abeyance/abeyance-el26-67-pjm.txt",
+      "additionalFiles": []
+    },
+    "20261026-4001": {
+      "description": "Comments of the National Congress of American Indians urging FERC for a Moratorium on Hyperscale Data Center Approvals Pending Comprehensive Grid Reliability and Ratepayer Impact Assessments under EL26-67 et al.",
+      "filed": "2026-10-26",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261026-4001",
+      "status": "primary text captured",
+      "slug": "filing-20261026-4001",
+      "original": "20261026-4001_01.pdf",
+      "text": "sources/text/abeyance/filing-20261026-4001.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Federal Energy Regulatory Commission - Transmittal of NCAI Resolution #MEM-26-016.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20261110-4002": {
+      "description": "Comments of U.S House of Representatives Victoria Spartz urging FERC to address issues on Large-Load Projects, Grid Reliability, Transmission Competition, etc. under EL26-67.",
+      "filed": "2026-11-10",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261110-4002",
+      "status": "primary text captured",
+      "slug": "comments-el26-67-spartz",
+      "original": "20261110-4002_01.pdf",
+      "text": "sources/text/abeyance/comments-el26-67-spartz.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-67-000 Incoming 2027-0004 Rep. Spartz.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260629-5029": {
+      "description": "Comments of Lisa Melton concerning the integration of large, high-density electric loads and the associated deterministic stability and cost-allocation methodologies under EL26-68 et al.",
+      "filed": "2026-06-29",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260629-5029",
+      "status": "primary text captured",
+      "slug": "filing-20260629-5029",
+      "original": "20260629-5029_01.pdf",
+      "text": "sources/text/abeyance/filing-20260629-5029.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Lisa-Ferc-Melton.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260715-5116": {
+      "description": "Answer of Southwest Power Pool Transmission Owner Group to L.M. Marlowe's 07/08/2026 Motion for Settlement Procedures under EL26-68 et al.",
+      "filed": "2026-07-15",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260715-5116",
+      "status": "primary text captured",
+      "slug": "filing-20260715-5116",
+      "original": "20260715-5116_01.pdf",
+      "text": "sources/text/abeyance/filing-20260715-5116.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-68 20260715 Answer to Motion for Settlement Procedures.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260720-5205": {
+      "description": "Southwest Power Pool, Inc. submits Informational Report in compliance with the Commission’s 06/18/2026 Show Cause Order under EL26-68.",
+      "filed": "2026-07-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260720-5205",
+      "status": "primary text captured",
+      "slug": "report-el26-68-spp",
+      "original": "20260720-5205_01.pdf",
+      "text": "sources/text/abeyance/report-el26-68-spp.txt",
+      "additionalFiles": []
+    },
+    "20260722-5143": {
+      "description": "Answer of Southwest Power Pool, Inc. in opposition to Motion for the Establishment of Settlement Procedures and Convening of a Settlement Conference, or, in the Alternative, for the Appointment of a Settlement Judge of L.M. Marlowe under EL26-68.",
+      "filed": "2026-07-22",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260722-5143",
+      "status": "primary text captured",
+      "slug": "filing-20260722-5143",
+      "original": "20260722-5143_01.pdf",
+      "text": "sources/text/abeyance/filing-20260722-5143.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "20260722_SPP Answer_ Order on Show Cause Large Load and Co-Located Load_EL26-68.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260803-5209": {
+      "description": "Joint Motion of Southwest Power Pool, Inc. et al. to Hold Section 206 Proceeding in Abeyance under EL26-68.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5209",
+      "status": "primary text captured",
+      "slug": "motion-el26-68-spp-abeyance",
+      "original": "20260803-5209_01.pdf",
+      "text": "sources/text/abeyance/motion-el26-68-spp-abeyance.txt",
+      "additionalFiles": []
+    },
+    "20260803-5265": {
+      "description": "Amended Joint Motion of Southwest Power Pool, Inc. et al. to Hold Section 206 Proceeding in Abeyance under EL26-68.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5265",
+      "status": "primary text captured",
+      "slug": "filing-20260803-5265",
+      "original": "20260803-5265_01.pdf",
+      "text": "sources/text/abeyance/filing-20260803-5265.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "20260803_Amended Motion for Abeyance_Order on Show Cause Large Load and Co-Located Load_EL26-68.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260807-5123": {
+      "description": "Comments of the Southwest Power Pool Regional State Committee in support of Southwest Power Pool, Inc.’s request for an extension of time until 11/20/2026 to respond to the FERC's 06/18/2026 Order to Show Cause under EL26-68.",
+      "filed": "2026-08-07",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260807-5123",
+      "status": "primary text captured",
+      "slug": "filing-20260807-5123",
+      "original": "20260807-5123_01.pdf",
+      "text": "sources/text/abeyance/filing-20260807-5123.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "RSC Letter of Support of Abeyance Request in EL26-68.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260807-5150": {
+      "description": "Comments of the Public Service Commission of the State of Missouri in support of Southwest Power Pool, Inc.'s et al. request for abeyance filed 08/03/2026 under EL26-68.",
+      "filed": "2026-08-07",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260807-5150",
+      "status": "primary text captured",
+      "slug": "filing-20260807-5150",
+      "original": "20260807-5150_01.pdf",
+      "text": "sources/text/abeyance/filing-20260807-5150.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-68 MoPSC comments.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260807-5220": {
+      "description": "Answer of Corporate Energy Buyers Association in Support of the Amended Motion for Abeyance filed on 08/03/2026 by Southwest Power Pool, Inc. et al. under EL26-68.",
+      "filed": "2026-08-07",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260807-5220",
+      "status": "primary text captured",
+      "slug": "filing-20260807-5220",
+      "original": "20260807-5220_01.pdf",
+      "text": "sources/text/abeyance/filing-20260807-5220.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "CEBA Answer in Support of Abeyance Request (SPP) EL26-68.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260814-3060": {
+      "description": "Letter order granting Southwest Power Pool, Inc.'s 08/03/2026 filing of an Abeyance Motion to hold this proceeding in abeyance until 11/20/2026 under EL26-68.",
+      "filed": "2026-08-14",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260814-3060",
+      "status": "primary text captured",
+      "slug": "abeyance-el26-68-spp",
+      "original": "20260814-3060_EL26-68-000.docx",
+      "text": "sources/text/abeyance/abeyance-el26-68-spp.txt",
+      "additionalFiles": []
+    },
+    "20260720-5217": {
+      "description": "New York Independent System Operator, Inc. submits Informational Report in compliance with the Commission’s 06/18/2026 Order under EL26-69.",
+      "filed": "2026-07-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260720-5217",
+      "status": "primary text captured",
+      "slug": "report-el26-69-nyiso",
+      "original": "20260720-5217_01.pdf",
+      "text": "sources/text/abeyance/report-el26-69-nyiso.txt",
+      "additionalFiles": []
+    },
+    "20260803-5210": {
+      "description": "Request for Abeyance of the New York Transmission Owners and Request for Expedited Commission Action and Shortened Comment Period under EL26-69.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5210",
+      "status": "primary text captured",
+      "slug": "filing-20260803-5210",
+      "original": "20260803-5210_01.pdf",
+      "text": "sources/text/abeyance/filing-20260803-5210.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "NYTOs_Request for Abeyance _FINAL_8.3.26.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260803-5229": {
+      "description": "Motion of New York Independent System Operator, Inc. for Abeyance, Request for Shortened Comment Period and Request for Expedited Action under EL26-69.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5229",
+      "status": "primary text captured",
+      "slug": "motion-el26-69-nyiso-abeyance",
+      "original": "20260803-5229_01.pdf",
+      "text": "sources/text/abeyance/motion-el26-69-nyiso-abeyance.txt",
+      "additionalFiles": []
+    },
+    "20260803-5241": {
+      "description": "Motion for Abeyance and Request for Shortened Answer Period and Expedited Treatment of LS Power Grid New York Corporation I and New York Transco LLC under EL26-69.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5241",
+      "status": "primary text captured",
+      "slug": "filing-20260803-5241",
+      "original": "20260803-5241_01.pdf",
+      "text": "sources/text/abeyance/filing-20260803-5241.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Motion for Abeyance_NYISO final.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260814-3068": {
+      "description": "Letter order granting New York Independent System Operator, Inc.'s et al. 08/03/2026 filing of an abeyance motions to hold this proceeding in abeyance for 90 days under EL26-69.",
+      "filed": "2026-08-14",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260814-3068",
+      "status": "primary text captured",
+      "slug": "abeyance-el26-69-nyiso",
+      "original": "20260814-3068_EL26-69-000.docx",
+      "text": "sources/text/abeyance/abeyance-el26-69-nyiso.txt",
+      "additionalFiles": []
+    },
+    "20260624-5016": {
+      "description": "Comments of Debra Ann Ostroski providing documented correspondence with American Transmission Company re the alternative transmission evaluation for the Large Load Show Cause Proceeding under EL26-70.",
+      "filed": "2026-06-24",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260624-5016",
+      "status": "primary text captured",
+      "slug": "filing-20260624-5016",
+      "original": "20260624-5016_01.pdf",
+      "text": "sources/text/abeyance/filing-20260624-5016.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "ferc comment.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260624-5017": {
+      "description": "Comments of Debra Ann Ostroski providing documented correspondence with American Transmission Company re the alternative transmission evaluation for the Large Load Show Cause Proceeding under EL26-70.",
+      "filed": "2026-06-24",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260624-5017",
+      "status": "restricted",
+      "reason": "FERC labels the only PDF CEII; no public body. The separate public comment is accession 20260624-5016.",
+      "notIncludedFromFileList": [
+        "Inquiry Regarding Local Grid Capacity and Underutilized 138 kV Infrastructure As 2.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Inquiry Regarding Local Grid Capacity and Underutilized 138 kV Infrastructure As 2.pdf",
+          "status": "restricted (CEII)"
+        }
+      ]
+    },
+    "20260720-5204": {
+      "description": "Midcontinent Independent System Operator, Inc. submits Informational Report in compliance with the Commission’s 06/18/2026 Show Cause Order under EL26-70.",
+      "filed": "2026-07-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260720-5204",
+      "status": "primary text captured",
+      "slug": "report-el26-70-miso",
+      "original": "20260720-5204_01.pdf",
+      "text": "sources/text/abeyance/report-el26-70-miso.txt",
+      "additionalFiles": []
+    },
+    "20260728-5083": {
+      "description": "Motion of Wabash Valley Power Association, Inc. for Request for Issuance of an Errata of the 06/18/2026 Order Instituting Proceedings Under Section 206 of the Federal Power Act under EL26-70.",
+      "filed": "2026-07-28",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260728-5083",
+      "status": "primary text captured",
+      "slug": "filing-20260728-5083",
+      "original": "20260728-5083_01.pdf",
+      "text": "sources/text/abeyance/filing-20260728-5083.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-70-000_WVPA Errata Request_7.28.26.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260803-5249": {
+      "description": "Motion of Midcontinent Independent System Operator Inc. and the MISO Transmission Owners to Hold Proceeding in Abeyance and Request for Shortened Comment Period and Expedited Treatment under EL26-70.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5249",
+      "status": "primary text captured",
+      "slug": "motion-el26-70-miso-abeyance",
+      "original": "20260803-5249_01.pdf",
+      "text": "sources/text/abeyance/motion-el26-70-miso-abeyance.txt",
+      "additionalFiles": []
+    },
+    "20260807-5186": {
+      "description": "Answer of the Organization of MISO States, Inc. in Support of Midcontinent Independent System Operator, Inc.'s et al. 08/03/2026 Motion to Hold Proceeding in Abeyance under EL26-70.",
+      "filed": "2026-08-07",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260807-5186",
+      "status": "primary text captured",
+      "slug": "filing-20260807-5186",
+      "original": "20260807-5186_01.pdf",
+      "text": "sources/text/abeyance/filing-20260807-5186.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-70 OMS Answer to MISO Abeyance Request.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260807-5199": {
+      "description": "Answer of American Municipal Power, Inc. in Response to the Motion to Hold Abeyance filed by Midcontinent Independent System Operator, Inc. et al. under EL26-70.",
+      "filed": "2026-08-07",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260807-5199",
+      "status": "primary text captured",
+      "slug": "filing-20260807-5199",
+      "original": "20260807-5199_01.pdf",
+      "text": "sources/text/abeyance/filing-20260807-5199.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "AMP Answer EL26-70.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260807-5216": {
+      "description": "Answer of Corporate Energy Buyers Association in Support of Midcontinent Independent System Operator, Inc.'s et al. 08/03/2026 Motion for Abeyance under EL26-70.",
+      "filed": "2026-08-07",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260807-5216",
+      "status": "primary text captured",
+      "slug": "filing-20260807-5216",
+      "original": "20260807-5216_01.pdf",
+      "text": "sources/text/abeyance/filing-20260807-5216.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "CEBA Answer in Support of Abeyance Request (MISO) EL26-70.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260812-5036": {
+      "description": "Comments of Sparkfund on Midcontinent Independent System Operator Inc.’s Informational Report filed on 07/20/2026 under EL26-70.",
+      "filed": "2026-08-12",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260812-5036",
+      "status": "primary text captured",
+      "slug": "filing-20260812-5036",
+      "original": "20260812-5036_01.pdf",
+      "text": "sources/text/abeyance/filing-20260812-5036.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Sparkfund Comments to FERC in MISO Large Load Docket.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260813-3026": {
+      "description": "Errata to the Commission issued Order Instituting Proceeding Under Section 206 of the Federal Power Act; correcting the caption etc. re Midcontinent Independent System Operator, Inc. et al. under EL26-72. For order see accession number 20260618-3047.",
+      "filed": "2026-08-13",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260813-3026",
+      "status": "primary text captured",
+      "slug": "errata-el26-70-miso",
+      "original": "20260813-3026_EL26-70-000 Errata.docx",
+      "text": "sources/text/abeyance/errata-el26-70-miso.txt",
+      "additionalFiles": []
+    },
+    "20260814-3058": {
+      "description": "Letter order granting Midcontinent Independent System Operator, Inc.'s et al. 08/03/2026 filing of Abeyance Motion to hold this proceeding in abeyance for 90 days under EL26-70.",
+      "filed": "2026-08-14",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260814-3058",
+      "status": "primary text captured",
+      "slug": "abeyance-el26-70-miso",
+      "original": "20260814-3058_EL26-70-000.docx",
+      "text": "sources/text/abeyance/abeyance-el26-70-miso.txt",
+      "additionalFiles": []
+    },
+    "20260814-5198": {
+      "description": "Comments of the Organization of MISO States, Inc. on the Informational Report of the Midcontinent Independent System Operator, Inc. filed on 07/20/2026 under EL26-70.",
+      "filed": "2026-08-14",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260814-5198",
+      "status": "primary text captured",
+      "slug": "filing-20260814-5198",
+      "original": "20260814-5198_01.pdf",
+      "text": "sources/text/abeyance/filing-20260814-5198.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-70 OMS Comments on MISO Informational Report.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260910-4000": {
+      "description": "Comments of U.S. House of Representatives Victoria Spartz requesting independent federal review of the energy generation, grid resiliency, transmission, water-resource, and consumer-cost implications etc. under EL26-70.",
+      "filed": "2026-09-10",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260910-4000",
+      "status": "primary text captured",
+      "slug": "filing-20260910-4000",
+      "original": "20260910-4000_01.pdf",
+      "text": "sources/text/abeyance/filing-20260910-4000.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "RepSpartz_Letter_to_DOE_DOI.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20261001-5390": {
+      "description": "Comments of Jessica Kivell asking the Commission to keep transparency, cost responsibility, reliable planning, and protection of existing customers at the center of the proceeding under EL26-70.",
+      "filed": "2026-10-01",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261001-5390",
+      "status": "primary text captured",
+      "slug": "filing-20261001-5390",
+      "original": "20261001-5390_01.pdf",
+      "text": "sources/text/abeyance/filing-20261001-5390.txt",
+      "additionalFiles": [
+        "20261001-5390_02.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "FERC_Cover_Letter.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "FERC_Public_Comment.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260720-5202": {
+      "description": "The California Independent System Operator Corporation submits Informational Report in compliance with the Commission’s 06/18/2026 Order to Show Cause under EL26-71.",
+      "filed": "2026-07-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260720-5202",
+      "status": "primary text captured",
+      "slug": "report-el26-71-caiso",
+      "original": "20260720-5202_01.pdf",
+      "text": "sources/text/abeyance/report-el26-71-caiso.txt",
+      "additionalFiles": []
+    },
+    "20260731-5157": {
+      "description": "Motion to Rescind Show Cause Order on behalf of the Cities of Anaheim, Azusa, Banning, Colton, Pasadena, and Riverside, California under EL26-71.",
+      "filed": "2026-07-31",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260731-5157",
+      "status": "primary text captured",
+      "slug": "filing-20260731-5157",
+      "original": "20260731-5157_01.pdf",
+      "text": "sources/text/abeyance/filing-20260731-5157.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Six Cities Motion to Rescind Show Cause Order.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260803-5166": {
+      "description": "Request for Abeyance of Southern California Edison Company, et al. in response to the Order issued on 06/18/2026 under EL26-71.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5166",
+      "status": "primary text captured",
+      "slug": "filing-20260803-5166",
+      "original": "20260803-5166_01.pdf",
+      "text": "sources/text/abeyance/filing-20260803-5166.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-71-000 Joint Request for Abeyance.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260803-5170": {
+      "description": "Motion to Hold Filing Obligation in Abeyance of DCR Transmission, L.L.C. under EL26-71.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5170",
+      "status": "primary text captured",
+      "slug": "filing-20260803-5170",
+      "original": "20260803-5170_01.pdf",
+      "text": "sources/text/abeyance/filing-20260803-5170.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "DCRT - Motion for Abeyance (final 2026-08-03).pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260803-5202": {
+      "description": "Motion to Rescind Show Cause Order as applied to Western Area Power Administration under EL26-71.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5202",
+      "status": "primary text captured",
+      "slug": "filing-20260803-5202",
+      "original": "20260803-5202_01.pdf",
+      "text": "sources/text/abeyance/filing-20260803-5202.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-71 WAPA Motion to Rescind.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260803-5206": {
+      "description": "Motion for Abeyance of the California Independent System Operator Corporation under EL26-71.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5206",
+      "status": "primary text captured",
+      "slug": "motion-el26-71-caiso-abeyance",
+      "original": "20260803-5206_01.pdf",
+      "text": "sources/text/abeyance/motion-el26-71-caiso-abeyance.txt",
+      "additionalFiles": []
+    },
+    "20260803-5227": {
+      "description": "Conditional Motion for Abeyance on Behalf of the Cities of Anaheim, Azusa, Banning, Colton, Pasadena, and Riverside, California, under EL26-71.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5227",
+      "status": "primary text captured",
+      "slug": "filing-20260803-5227",
+      "original": "20260803-5227_01.pdf",
+      "text": "sources/text/abeyance/filing-20260803-5227.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Six Cities Conditional Motion for Abeyance.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260807-5215": {
+      "description": "Answer of Corporate Energy Buyers Association in Support of California Independent System Operator Corporation's et al. 08/03/2026 et al. Motion for Abeyance under EL26-71.",
+      "filed": "2026-08-07",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260807-5215",
+      "status": "primary text captured",
+      "slug": "filing-20260807-5215",
+      "original": "20260807-5215_01.pdf",
+      "text": "sources/text/abeyance/filing-20260807-5215.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "CEBA Answer in Support of Abeyance Requests (CAISO) EL26-71.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260812-5158": {
+      "description": "Answer of Morongo Transmission LLC in response to the Order to Show Cause issued on 06/18/2026 under EL26-71.",
+      "filed": "2026-08-12",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260812-5158",
+      "status": "primary text captured",
+      "slug": "answer-el26-71-morongo",
+      "original": "20260812-5158_Morongo Transmission - PTO OSC Answer.pdf",
+      "text": "sources/text/abeyance/answer-el26-71-morongo.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Morongo Transmission - PTO OSC Answer.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260814-3061": {
+      "description": "Order Granting Rescission and Abeyance Requests re California Independent System Operator Corporation et al. under EL26-71.",
+      "filed": "2026-08-14",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260814-3061",
+      "status": "primary text captured",
+      "slug": "abeyance-el26-71-caiso",
+      "original": "20260814-3061_EL26-71-000.docx",
+      "text": "sources/text/abeyance/abeyance-el26-71-caiso.txt",
+      "additionalFiles": []
+    },
+    "20260622-5134": {
+      "description": "Vermont Electric Cooperative, Inc. submits Request for Issuance of an Errata re the Notice of Institution of Section 206 Proceeding and Refund Effective Date re ISO New England Inc. et al. under EL26-72.",
+      "filed": "2026-06-22",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260622-5134",
+      "status": "primary text captured",
+      "slug": "filing-20260622-5134",
+      "original": "20260622-5134_01.pdf",
+      "text": "sources/text/abeyance/filing-20260622-5134.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "VEC Errata Request.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260709-3012": {
+      "description": "Errata to the Commission issued Order Instituting Proceeding Under Section 206 of the Federal Power Act; correcting the caption re ISO New England Inc. et al. under EL26-72. For order see accession number 20260618-3076.",
+      "filed": "2026-07-09",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260709-3012",
+      "status": "primary text captured",
+      "slug": "filing-20260709-3012",
+      "original": "20260709-3012_01.docx",
+      "text": "sources/text/abeyance/filing-20260709-3012.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-72-000 Errata Notice.docx",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260720-5216": {
+      "description": "ISO New England Inc. submits Informational Report in compliance with the Commission’s 06/18/2026 Order under EL26-72.",
+      "filed": "2026-07-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260720-5216",
+      "status": "primary text captured",
+      "slug": "report-el26-72-isone",
+      "original": "20260720-5216_01.pdf",
+      "text": "sources/text/abeyance/report-el26-72-isone.txt",
+      "additionalFiles": []
+    },
+    "20260803-5083": {
+      "description": "Joint Motion of ISO New England Inc. and the Participating Transmission Owners Administrative Committee o/b/o of the Participating Transmission Owners to Hold Proceeding in Abeyance and Request for Shortened Comment Period et al. under EL26-72.",
+      "filed": "2026-08-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260803-5083",
+      "status": "primary text captured",
+      "slug": "motion-el26-72-isone-abeyance",
+      "original": "20260803-5083_01.pdf",
+      "text": "sources/text/abeyance/motion-el26-72-isone-abeyance.txt",
+      "additionalFiles": []
+    },
+    "20260807-5196": {
+      "description": "Answer of the New England States Committee on Electricity in Response to Joint Motion for Abeyance filed by ISO New England, Inc. et al. under EL26-72.",
+      "filed": "2026-08-07",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260807-5196",
+      "status": "primary text captured",
+      "slug": "filing-20260807-5196",
+      "original": "20260807-5196_01.pdf",
+      "text": "sources/text/abeyance/filing-20260807-5196.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "NESCOE Answer in Response to Motion for Abeyance EL26-72.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260814-3056": {
+      "description": "Letter order granting ISO New England Inc.'s et al. 08/03/2026 filing of the Abeyance Motion to hold this proceeding in abeyance for 90 days under EL26-72.",
+      "filed": "2026-08-14",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260814-3056",
+      "status": "primary text captured",
+      "slug": "abeyance-el26-72-isone",
+      "original": "20260814-3056_EL26-72-000.docx",
+      "text": "sources/text/abeyance/abeyance-el26-72-isone.txt",
+      "additionalFiles": []
+    },
+    "20260717-5246": {
+      "description": "The Pennsylvania Office of Consumer Advocate submits Request for Clarification or, in the alternative, Rehearing of the 06/18/2026 Order under EL26-67.",
+      "filed": "2026-07-17",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260717-5246",
+      "status": "primary text captured",
+      "slug": "filing-20260717-5246",
+      "original": "20260717-5246_01.pdf",
+      "text": "sources/text/abeyance/filing-20260717-5246.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "PA OCA EL26-67 Request for Clarification or Rehearing.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260717-5258": {
+      "description": "The Maryland Office of People's Counsel, et al. submit Request for Rehearing of the 06/18/2026 Order under EL26-67.",
+      "filed": "2026-07-17",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260717-5258",
+      "status": "primary text captured",
+      "slug": "filing-20260717-5258",
+      "original": "20260717-5258_01.pdf",
+      "text": "sources/text/abeyance/filing-20260717-5258.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-67 - Request for Rehearing and Clarification - Final.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260720-5172": {
+      "description": "Exelon Corporation and FirstEnergy Service Company submit Request for Rehearing of the 06/18/2026 Order under EL26-67.",
+      "filed": "2026-07-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260720-5172",
+      "status": "primary text captured",
+      "slug": "filing-20260720-5172",
+      "original": "20260720-5172_01.pdf",
+      "text": "sources/text/abeyance/filing-20260720-5172.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "FE and Exelon Rehearing of Show Cause Order .pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260720-5198": {
+      "description": "The Indicated PJM Transmission Owners submit Request for Clarification, or in the Alternative, Rehearing of the 06/18/2026 Order under EL26-67.",
+      "filed": "2026-07-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260720-5198",
+      "status": "primary text captured",
+      "slug": "filing-20260720-5198",
+      "original": "20260720-5198_01.pdf",
+      "text": "sources/text/abeyance/filing-20260720-5198.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Indicated PJM TOs' Request for Rehearing of PJM Show Cause Order (Final).pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260720-5218": {
+      "description": "Eolian, L.P. submits Limited Request for Clarification or, In the Alternative, Rehearing of the 06/18/2026 Order Instituting Proceedings Under Section 206 of the Federal Power Act under EL26-67, et al.",
+      "filed": "2026-07-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260720-5218",
+      "status": "primary text captured",
+      "slug": "filing-20260720-5218",
+      "original": "20260720-5218_01.pdf",
+      "text": "sources/text/abeyance/filing-20260720-5218.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "EL26-67 et al_Eolian Request for Clarification or Rehearing.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260921-3020": {
+      "description": "Order Dismissing Request for Rehearing and Clarification re PJM Interconnection, L.L.C. et al. under EL26-67.",
+      "filed": "2026-09-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-3020",
+      "status": "primary text captured",
+      "slug": "order-el26-67-001-pjm-rehearing",
+      "original": "20260921-3020_order.pdf",
+      "text": "sources/text/abeyance/order-el26-67-001-pjm-rehearing.txt",
+      "additionalFiles": []
+    },
+    "20260921-3021": {
+      "description": "Order Dismissing Request for Rehearing and Clarification re New York Independent System Operator, Inc. et al. under EL26-69.",
+      "filed": "2026-09-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-3021",
+      "status": "primary text captured",
+      "slug": "order-el26-69-001-nyiso-rehearing",
+      "original": "20260921-3021_EL26-69-001.docx",
+      "text": "sources/text/abeyance/order-el26-69-001-nyiso-rehearing.txt",
+      "additionalFiles": []
+    },
+    "20260921-3047": {
+      "description": "Order Dismissing Request for Rehearing and Clarification re Midcontinent Independent System Operator, Inc. et al. under EL26-70.",
+      "filed": "2026-09-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-3047",
+      "status": "primary text captured",
+      "slug": "order-el26-70-001-miso-rehearing",
+      "original": "20260921-3047_EL26-70-001.docx",
+      "text": "sources/text/abeyance/order-el26-70-001-miso-rehearing.txt",
+      "additionalFiles": []
+    },
+    "20260921-3019": {
+      "description": "Order Dismissing Request for Rehearing and Clarification re California Independent System Operator Corporation et al. under EL26-71.",
+      "filed": "2026-09-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-3019",
+      "status": "primary text captured",
+      "slug": "order-el26-71-001-caiso-rehearing",
+      "original": "20260921-3019_EL26-71-001.docx",
+      "text": "sources/text/abeyance/order-el26-71-001-caiso-rehearing.txt",
+      "additionalFiles": []
+    },
+    "20260921-3056": {
+      "description": "Order Dismissing Request for Rehearing and Clarification re ISO New England Inc. et al. under EL26-72.",
+      "filed": "2026-09-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-3056",
+      "status": "primary text captured",
+      "slug": "order-el26-72-001-isone-rehearing",
+      "original": "20260921-3056_EL26-72-001.docx",
+      "text": "sources/text/abeyance/order-el26-72-001-isone-rehearing.txt",
+      "additionalFiles": []
+    },
+    "20260731-5214": {
+      "description": "PJM Interconnection, L.L.C. submits tariff filing per 35.13(a)(2)(iii: Reliability Backstop Procurement to Address Resource Adequacy and Large Loads to be effective 9/29/2026 under ER26-3380 Filing Type : 10",
+      "filed": "2026-07-31",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260731-5214",
+      "status": "primary text captured",
+      "slug": "filing-er26-3380-pjm-original",
+      "original": "20260731-5214_01.pdf",
+      "text": "sources/text/abeyance/filing-er26-3380-pjm-original.txt",
+      "additionalFiles": [
+        "20260731-5214_02.pdf",
+        "20260731-5214_03.pdf",
+        "20260731-5214_04.pdf",
+        "20260731-5214_05.pdf"
+      ],
+      "notIncludedFromFileList": [
+        "FERC GENERATED TARIFF FILING.PDF"
+      ],
+      "fileList": [
+        {
+          "name": "RBP Transmittal Letter.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Attachment A - Marked Tariff Records.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Attachment B - Clean Tariff Records.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Attachment C - Croop Affidavit.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Attachment D - Kelly Affidavit.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "FERC GENERATED TARIFF FILING.PDF",
+          "status": "FERC-generated electronic tariff rendition not separately captured"
+        }
+      ]
+    },
+    "20260811-4003": {
+      "description": "Comments of East Kentucky Power Cooperative re PJM Interconnection’s recent proposals to FERC for addressing capacity needs in the short and long terms under ER26-3380.",
+      "filed": "2026-08-11",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260811-4003",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260811-4003",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260814-5244": {
+      "description": "PJM Interconnection, L.L.C. submits tariff filing per : Supplemental Filing of Croop Affidavit in ER26-3380 to be effective N/A under ER26-3380 Filing Type : 150",
+      "filed": "2026-08-14",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260814-5244",
+      "status": "primary text captured",
+      "slug": "filing-20260814-5244",
+      "original": "20260814-5244_01.pdf",
+      "text": "sources/text/abeyance/filing-20260814-5244.txt",
+      "additionalFiles": [],
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260814-5244",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser.",
+      "authorCopyUrl": "https://www.pjm.com/pjmfiles/directory/etariff/FercDockets/9829/20260814-er26-3380-000.pdf"
+    },
+    "20260817-5042": {
+      "description": "Motion to Intervene and Comments of Neil P. Osnato o/b/o Persistence Analytics Group LLC in response to PJM Interconnection, L.L.C.'s 07/31/2026 filing proposing a Reliability Backstop Procurement under ER26-3380.",
+      "filed": "2026-08-17",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260817-5042",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260817-5042",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260819-5134": {
+      "description": "Comments of the Illinois Commerce Commission in support of PJM Interconnection, L.L.C.’s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-19",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260819-5134",
+      "status": "primary text captured",
+      "slug": "filing-20260819-5134",
+      "original": "20260819-5134_01.pdf",
+      "text": "sources/text/abeyance/filing-20260819-5134.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "FINALALLER26-3380ICCRBPCommentsFINAL.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260820-5015": {
+      "description": "Motion to Intervene and Protest of Nicholas Max Neal and David Neal, Delaware Standard Offer Service Ratepayers re PJM Interconnection, L.L.C.’s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260820-5015",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260820-5015",
+        "httpStatus": 200,
+        "listed": 3
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "02_FERC_Protest_Intervention.pdf",
+        "Attachment_A_E3_ELCC_RRS_Model_Evaluation_Dec2025.pdf",
+        "Attachment_B_PJM_ELCC_Sensitivity_Analyses_May2025.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "02_FERC_Protest_Intervention.pdf",
+          "status": "public download failed"
+        },
+        {
+          "name": "Attachment_A_E3_ELCC_RRS_Model_Evaluation_Dec2025.pdf",
+          "status": "public download failed"
+        },
+        {
+          "name": "Attachment_B_PJM_ELCC_Sensitivity_Analyses_May2025.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5090": {
+      "description": "Motion to Intervene, Limited Protest, and Request for Clarification of PPL Electric Utilities Corporation under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5090",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5090",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5096": {
+      "description": "Comments of the Organization of PJM States, Inc. in support of PJM Interconnection, L.L.C.’s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5096",
+      "status": "primary text captured",
+      "slug": "filing-20260821-5096",
+      "original": "20260821-5096_01.pdf",
+      "text": "sources/text/abeyance/filing-20260821-5096.txt",
+      "additionalFiles": [],
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5096",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser.",
+      "authorCopyUrl": "https://opsi.us/wp-content/uploads/2026/08/OPSI-ER26-3380-000-RBP-Comments.pdf"
+    },
+    "20260821-5105": {
+      "description": "Comments of the Solar Energy Industries Association in response to PJM Interconnection, L.L.C.’s Reliability Backstop Procurement proposal under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5105",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5105",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5120": {
+      "description": "Partial Protest and Comments of Dominion Energy Services, Inc. re PJM Interconnection, L.L.C.’s Reliability Backstop Procurement proposal under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5120",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5120",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5125": {
+      "description": "Comments of Institute for Policy Integrity at New York University School of Law on PJM Interconnection, L.L.C.’s Section 205 filing to implement Reliability Backstop Procurement under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5125",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5125",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5145": {
+      "description": "Comments of Public Service Commission of West Virginia in response to PJM Interconnection, L.L.C.’s Reliability Backstop Procurement proposal under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5145",
+      "status": "primary text captured",
+      "slug": "filing-20260821-5145",
+      "original": "20260821-5145_01.pdf",
+      "text": "sources/text/abeyance/filing-20260821-5145.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "PSC Comments.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260821-5155": {
+      "description": "Comments of Institute for Policy Integrity at New York University School of Law on PJM Interconnection, L.L.C.’s Section 205 filing to implement Reliability Backstop Procurement under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5155",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5155",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5175": {
+      "description": "Motion to Intervene and Comments of Base Power Inc. re PJM Interconnection, L.L.C.’s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5175",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5175",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5176": {
+      "description": "Comments of PJM Industrial Customer Coalition on PJM Interconnection, L.L.C.’s Reliability Backstop Procurement Proposal under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5176",
+      "status": "primary text captured",
+      "slug": "filing-20260821-5176",
+      "original": "20260821-5176_01.pdf",
+      "text": "sources/text/abeyance/filing-20260821-5176.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "PJMICC Comments on PJM RPB Proposal.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260821-5180": {
+      "description": "Limited Protest of Sierra Club et al. to one aspect of PJM Interconnection, LLC’s proposed Reliability Backstop Procurement under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5180",
+      "status": "primary text captured",
+      "slug": "filing-20260821-5180",
+      "original": "20260821-5180_01.pdf",
+      "text": "sources/text/abeyance/filing-20260821-5180.txt",
+      "additionalFiles": [],
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5180",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser.",
+      "authorCopyUrl": "https://sustainableferc.org/wp-content/uploads/2026/08/20260821-5180_Limited-Protest-of-Public-Interest-Organizations.pdf"
+    },
+    "20260821-5183": {
+      "description": "Protest, Motion to Reject, and Alternative Request for the Imposition of Conditions of Delaware Division of the Public Advocate et al. under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5183",
+      "status": "primary text captured",
+      "slug": "filing-20260821-5183",
+      "original": "20260821-5183_01.pdf",
+      "text": "sources/text/abeyance/filing-20260821-5183.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "ER26-3380 Protest of RBP Filing.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260821-5192": {
+      "description": "Comments of New Jersey Board of Public Utilities in response to PJM Interconnection, L.L.C.’s Reliability Backstop Procurement proposal under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5192",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5192",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5197": {
+      "description": "Comments of the Public Utilities Commission of Ohio's Office of the Federal Energy Advocate re PJM Interconnection, L.L.C.'s 07/31/2026 revisions to the Open Access Transmission Tariff and the Reliability Assurance Agreement under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5197",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5197",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5206": {
+      "description": "Comments of Google LLC re PJM Interconnection, L.L.C.’s Reliability Backstop Procurement Proposal under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5206",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5206",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Google LLC Comments.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Google LLC Comments.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5211": {
+      "description": "Motion to Intervene and Comments of CPV Power Holdings, LP re PJM Interconnection, L.L.C.’s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5211",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5211",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5215": {
+      "description": "Comments of American Municipal Power, Inc. re PJM Interconnection, L.L.C.’s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5215",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5215",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5217": {
+      "description": "Protest of the Pennsylvania Office of Consumer Advocate to PJM Interconnection, L.L.C.’s Reliability Backstop Procurement proposal under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5217",
+      "status": "primary text captured",
+      "slug": "filing-20260821-5217",
+      "original": "20260821-5217_01.pdf",
+      "text": "sources/text/abeyance/filing-20260821-5217.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "OCA Protest - ER26-3380-000.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260821-5220": {
+      "description": "Comments of Advanced Energy United in response to PJM Interconnection, L.L.C.’s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5220",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5220",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5229": {
+      "description": "Motion to Intervene and Request for Clarification of Talen Energy Corporation re the Reliability Backstop Procurement filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5229",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5229",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5243": {
+      "description": "Comments of Equinix Inc. on the PJM Interconnection, LLC filing re Reliability Backstop Procurement to Address Resource Adequacy Concerns Stemming from Large Loads under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5243",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5243",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5263": {
+      "description": "Comments of Southern Maryland Electric Cooperative, Inc. re PJM Interconnection, L.L.C.’s Reliability Backstop Procurement filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5263",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5263",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "SMECO RBP Comments ER26-3380 Final1.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "SMECO RBP Comments ER26-3380 Final1.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5266": {
+      "description": "Limited Protest of Constellation Energy Generation, LLC re PJM Interconnection, L.L.C.’s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5266",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5266",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Limited Protest of Constellation (Final).pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Limited Protest of Constellation (Final).pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5273": {
+      "description": "Limited Protest of the NRG Companies re PJM Interconnection, L.L.C.’s 07/31/2026 filing proposing a Reliability Backstop Procurement under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5273",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5273",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "FINAL NRG RBP protest.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "FINAL NRG RBP protest.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5274": {
+      "description": "Protest of the Indicated PJM Transmission Owners re PJM Interconnection, L.L.C.’s proposed tariff amendment under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5274",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5274",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Protest of the Indicated PJM Transmission Owners.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Protest of the Indicated PJM Transmission Owners.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5276": {
+      "description": "Comments and Protest of FirstEnergy Service Company re PJM Interconnection, L.L.C.'s 07/31/2026 filing proposing to establish a Reliability Backstop Procurement mechanism under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5276",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5276",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Protest of PJM RBP Filing - FINAL.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Protest of PJM RBP Filing - FINAL.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5281": {
+      "description": "The Ohio Consumers' Counsel submits Protest and Request for Rejection of Filing or in the Alternative for Evidentiary Hearings and/or Settlement Proceedings re PJM Interconnection, L.L.C.’s Reliability Backstop Procurement filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5281",
+      "status": "primary text captured",
+      "slug": "filing-20260821-5281",
+      "original": "20260821-5281_01.pdf",
+      "text": "sources/text/abeyance/filing-20260821-5281.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "FIN OCC Protest RBP Docket ER26-3380.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260821-5283": {
+      "description": "Limited Protest of American Electric Power Service Corporation to PJM Interconnection, LLC’s proposed revisions to the Open Access Transmission Tariff and Reliability Assurance Agreement Among Load Serving Entities under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5283",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5283",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Final_AEP Protest_Docket No. ER26-3380.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Final_AEP Protest_Docket No. ER26-3380.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5289": {
+      "description": "Motion to Intervene and Protest of the Retail Energy Supply Association re PJM Interconnection, LLC's proposed revisions to the Open Access Transmission Tariff under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5289",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5289",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5290": {
+      "description": "Protest of East Kentucky Power Cooperative, Inc. on the 07/31/2026 filing of PJM Interconnection, L.L.C. proposing revisions to the Open Access Transmission Tariff and Reliability Assurance Agreement under ER26-3380. Erroneously filed.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5290",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5290",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "EKPC - ER26-3380 Protest PJM RBP Filing (final 2026-08-21).pdf"
+      ],
+      "fileList": [
+        {
+          "name": "EKPC - ER26-3380 Protest PJM RBP Filing (final 2026-08-21).pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5293": {
+      "description": "Motion to Intervene and Initial Comments of Amazon Energy LLC re PJM Interconnection, L.L.C.'s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5293",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5293",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Amazon Energy_FERC Comments PJM ER26-3380-FINAL.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Amazon Energy_FERC Comments PJM ER26-3380-FINAL.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5296": {
+      "description": "Comments of Ohio Energy Leadership Council on the Reliability Backstop Procurement proposed by PJM Interconnection, L.L.C. under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5296",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5296",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5297": {
+      "description": "Comments of North Carolina Electric Membership Corporation re PJM Interconnection, L.L.C.'s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5297",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5297",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5299": {
+      "description": "Limited Protest of Vistra Corp. re PJM Interconnection, L.L.C.’s proposed Reliability Backstop Procurement mechanism under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5299",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5299",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5300": {
+      "description": "Comments of Calibrant Energy requesting clarification re the PJM Interconnection, LLC’s proposed revisions to the Open Access Transmission Tariff and the Reliability Assurance Agreement Among Load Serving Entities under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5300",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5300",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5304": {
+      "description": "Comments of Blue Ridge Power Agency re PJM Interconnection, L.L.C.'s Reliability Backstop Procurement proposal under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5304",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5304",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3380-000 BRPA Comments 2026-08-21.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3380-000 BRPA Comments 2026-08-21.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5306": {
+      "description": "Comments of the Data Center Coalition in response to PJM Interconnection, L.L.C.’s 07/31/2026 proposed tariff filing to establish the Reliability Backstop Procurement under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5306",
+      "status": "primary text captured",
+      "slug": "filing-20260821-5306",
+      "original": "20260821-5306_01.pdf",
+      "text": "sources/text/abeyance/filing-20260821-5306.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "DCC_RBP Comments_ER26-3380.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260821-5307": {
+      "description": "Protest of Northern Virginia Electric Cooperative, Inc. to the PJM Reliability Backstop Procurement Proposal under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5307",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5307",
+        "httpStatus": 200,
+        "listed": 3
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3380 Protest of NOVEC to RBP Filing.pdf",
+        "Affidavit of Cosica_NOVEC Protest ER26-3380.pdf",
+        "Affidavit of Rollins_NOVEC Protest ER26-3380.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3380 Protest of NOVEC to RBP Filing.pdf",
+          "status": "public download failed"
+        },
+        {
+          "name": "Affidavit of Cosica_NOVEC Protest ER26-3380.pdf",
+          "status": "public download failed"
+        },
+        {
+          "name": "Affidavit of Rollins_NOVEC Protest ER26-3380.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5313": {
+      "description": "Motion to Intervene and Request for Clarification, or in the Alternative, Limited Protest of Tract Holding Company I, LLC re PJM Interconnection, L.L.C.’s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5313",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5313",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5314": {
+      "description": "Comments of Old Dominion Electric Cooperative re PJM Interconnection, L.L.C.’s Reliability Backstop Procurement filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5314",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5314",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3380 ODEC Comments.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3380 ODEC Comments.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260821-5317": {
+      "description": "Protest of the Independent Market Monitor for PJM re PJM Interconnection, LLC's 07/31/2026 proposed Reliability Backstop Procurement filing under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5317",
+      "status": "primary text captured",
+      "slug": "filing-20260821-5317",
+      "original": "20260821-5317_01.pdf",
+      "text": "sources/text/abeyance/filing-20260821-5317.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "2026-08-21 IMM Protest (ER26-3380).pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260821-5318": {
+      "description": "Comments of Voltus, Inc. on the PJM Interconnection LLC’s Federal Power Act Section 205 filing requesting the approval of tariff amendments to establish a Reliability Backstop Procurement under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5318",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5318",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260821-5322": {
+      "description": "Protest of East Kentucky Power Cooperative, Inc. to PJM Interconnection, L.L.C.’s Reliability Backstop Procurement proposal under ER26-3380.",
+      "filed": "2026-08-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260821-5322",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260821-5322",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "EKPC - ER26-3380 Protest PJM RBP Filing (final 2026-08-21).pdf"
+      ],
+      "fileList": [
+        {
+          "name": "EKPC - ER26-3380 Protest PJM RBP Filing (final 2026-08-21).pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260824-5017": {
+      "description": "Comment, Protest, and Motion for Leave to File One Day Out of Time of E-Cubed Policy Associates, LLC in response to PJM Interconnection, L.L.C.’s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-08-24",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260824-5017",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260824-5017",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260902-5075": {
+      "description": "Motion for Leave to Answer and Answer of the Attorney General of the Commonwealth of Kentucky to the comments and protests of PJM Interconnections, L.L.C.’s 07/31/2026 filing under ER26-3380.",
+      "filed": "2026-09-02",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260902-5075",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260902-5075",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260902-5087": {
+      "description": "Supplemental Comments of Persistence Analytics Group LLC re Cost-Causation Revalidation related to PJM Interconnection, L.L.C.’s proposed Reliability Backstop Procurement under ER26-3380.",
+      "filed": "2026-09-02",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260902-5087",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260902-5087",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260904-5056": {
+      "description": "Motion for Leave to File Limited Answer, and Limited Answer, of East Kentucky Power Cooperative, Inc. in support of Protest filed by American Electric Power Service Corporation et al. under ER26-3380.",
+      "filed": "2026-09-04",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260904-5056",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260904-5056",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260908-5260": {
+      "description": "Motion for Leave to Answer and Answer of Constellation Energy Generation, LLC to certain comments and protests re the PJM Reliability Backstop Procurement Proposal et al. under ER26-3380.",
+      "filed": "2026-09-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260908-5260",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260908-5260",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3380 Constellation Answer (9.8.2026).pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3380 Constellation Answer (9.8.2026).pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260910-5296": {
+      "description": "Motion for Leave to Answer and Answer of PJM Interconnection, L.L.C. to Comments and Protests re the 07/31/2026 revised Open Access Transmission Tariff filing et al. under ER26-3380.",
+      "filed": "2026-09-10",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260910-5296",
+      "status": "primary text captured",
+      "slug": "filing-20260910-5296",
+      "original": "20260910-5296_01.pdf",
+      "text": "sources/text/abeyance/filing-20260910-5296.txt",
+      "additionalFiles": [],
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260910-5296",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser.",
+      "authorCopyUrl": "https://www.pjm.com/-/media/DotCom/documents/ferc/filings/2026/20260910-er26-3380-000.pdf"
+    },
+    "20260915-5145": {
+      "description": "Motion for Leave to Answer and Answer of PPL Electric Utilities Corporation to the 09/10/2026 Motion for Leave to Answer and Answer of PJM Interconnection, L.L.C. under ER26-3380.",
+      "filed": "2026-09-15",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260915-5145",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260915-5145",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260917-5316": {
+      "description": "Answer of PJM Power Providers Group in response to PJM Interconnection, L.L.C.'s 09/10/2026 Motion for Leave to Answer and Answer under ER26-3380.",
+      "filed": "2026-09-17",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260917-5316",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260917-5316",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260918-5364": {
+      "description": "Motion For Leave to File Second Limited Answer and Second Limited Answer of East Kentucky Power Cooperative, Inc. under ER26-3380.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5364",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260918-5364",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260918-5413": {
+      "description": "Motion for Leave to Answer and Answer of American Electric Power Service Corporation to PJM Interconnection, L.L.C.'s 09/10/2026 Answer under ER26-3380.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5413",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260918-5413",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260921-5148": {
+      "description": "Motion for Leave to Answer and Answer of Constellation Energy Generation, LLC to the Motion for Leave to Answer and Answer of PJM Interconnection, L.L.C. filed on 09/10/2026 under ER26-3380.",
+      "filed": "2026-09-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-5148",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260921-5148",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260922-5110": {
+      "description": "Motion for Leave to Answer and Answer of Indicated PJM Transmission Owners to the Motion for Leave to Answer and Answer of PJM Interconnection, L.L.C. filed on 09/10/2026 under ER26-3380.",
+      "filed": "2026-09-22",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260922-5110",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260922-5110",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Motion for Leave to Answer and Answer.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Motion for Leave to Answer and Answer.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260923-5060": {
+      "description": "Motion for Leave to Answer and Limited Answer of FirstEnergy Service Company to the Motion for Leave to Answer and Answer of PJM Interconnection, L.L.C. filed on 09/10/2026 under ER26-3380.",
+      "filed": "2026-09-23",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260923-5060",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260923-5060",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "RBP FE Answer 9.23.26.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "RBP FE Answer 9.23.26.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260923-5149": {
+      "description": "Motion for Leave to Answer and Answer of Northern Virginia Electric Cooperative, Inc. to the Answer et al. of PJM Interconnection, L.L.C. filed on 09/10/2026 under ER26-3380.",
+      "filed": "2026-09-23",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260923-5149",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260923-5149",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260924-5183": {
+      "description": "Motion for Leave to Answer and Answer of the New Jersey Board of Public Utilities to the Answer et al. of PJM Interconnection, L.L.C. filed on 09/10/2026 under ER26-3380.",
+      "filed": "2026-09-24",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260924-5183",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260924-5183",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260925-5208": {
+      "description": "Answer and Motion for Leave to Answer of the Independent Market Monitor for PJM Interconnection, L.L.C. to the Answer of PJM Interconnection, L.L.C. filed on 09/10/2026 under ER26-3380.",
+      "filed": "2026-09-25",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260925-5208",
+      "status": "primary text captured",
+      "slug": "filing-20260925-5208",
+      "original": "20260925-5208_01.pdf",
+      "text": "sources/text/abeyance/filing-20260925-5208.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "2026-09-25 IMM Answer to PJM Answer-AS FILED.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260928-4001": {
+      "description": "Comments of U.S. House of Representatives Committee on Energy and Commerce Ranking Member Frank Pallone, Jr. urging FERC to make important improvements, approve amended proposals, etc. re energy costs from data centers, under ER26-3380 et al.",
+      "filed": "2026-09-28",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260928-4001",
+      "status": "primary text captured",
+      "slug": "filing-20260928-4001",
+      "original": "20260928-4001_01.pdf",
+      "text": "sources/text/abeyance/filing-20260928-4001.txt",
+      "additionalFiles": [],
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260928-4001",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser.",
+      "authorCopyUrl": "https://democrats-energycommerce.house.gov/sites/evo-subsites/democrats-energycommerce.house.gov/files/evo-media-document/ferc.2026.09.28-letter.pdf"
+    },
+    "20260929-3099": {
+      "description": "Order Accepting Reliability Backstop Procurement and Establishing Further Procedures re PJM Interconnection, L.L.C. under ER26-3380 et al. Chairman Swett and Commissioners Rosner, See, and LaCerte are concurring with a separate statement attached.",
+      "filed": "2026-09-29",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260929-3099",
+      "status": "primary text captured",
+      "slug": "order-er26-3380-pjm-backstop",
+      "original": "20260929-3099_order.pdf",
+      "text": "sources/text/abeyance/order-er26-3380-pjm-backstop.txt",
+      "additionalFiles": []
+    },
+    "20260929-5071": {
+      "description": "Supplemental Comments of Voltus, Inc. in response to PJM Interconnection, L.L.C.'s 09/23/2026 et al. Answers re the Proposal to Establish Interim Resource Adequacy, et al. under ER26-3380 et al.",
+      "filed": "2026-09-29",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260929-5071",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260929-5071",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Motion to Answer and Supplemental Comments of Voltus.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Motion to Answer and Supplemental Comments of Voltus.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20261007-5181": {
+      "description": "Notice of Intervention and Statement of Position of the United States Department of Energy in support of FERC's 09/29/2026 Order under ER26-3380 et al.",
+      "filed": "2026-10-07",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261007-5181",
+      "status": "primary text captured",
+      "slug": "statement-er26-3380-doe",
+      "original": "20261007-5181_ER26-3380-000 DOE Intervention re PJM Backstop Filing_10072026_.pdf",
+      "text": "sources/text/abeyance/statement-er26-3380-doe.txt",
+      "additionalFiles": []
+    },
+    "20261013-5141": {
+      "description": "Motion for Abeyance of PJM Interconnection, L.L.C. under EL26-108, et al.",
+      "filed": "2026-10-13",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261013-5141",
+      "status": "primary text captured",
+      "slug": "motion-er26-3380-pjm-abeyance",
+      "original": "20261013-5141_20261012-el26-108-000.pdf",
+      "text": "sources/text/abeyance/motion-er26-3380-pjm-abeyance.txt",
+      "additionalFiles": []
+    },
+    "20261014-5184": {
+      "description": "Answer of Northern Virginia Electric Cooperative, Inc. in Support of PJM Interconnection, L.L.C.’s Motion for Abeyance filed on 10/13/2026 under ER26-3380, et al.",
+      "filed": "2026-10-14",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261014-5184",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20261014-5184",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20261016-3047": {
+      "description": "Notice Establishing Answer Period re PJM Interconnection, L.L.C. under ER26-3380 et al.",
+      "filed": "2026-10-16",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261016-3047",
+      "status": "primary text captured",
+      "slug": "notice-er26-3380-answer-period",
+      "original": "20261016-3047_ER26-3380-000 Notice Establishing Answer Period.docx",
+      "text": "sources/text/abeyance/notice-er26-3380-answer-period.txt",
+      "additionalFiles": []
+    },
+    "20261020-5159": {
+      "description": "Motion to Intervene and Protest of Tesla, Inc. et al. re the Section 206 investigation re PJM Interconnection’s Reliability Backstop Procurement framework under EL26-108.",
+      "filed": "2026-10-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261020-5159",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20261020-5159",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20261023-3114": {
+      "description": "Notice Addressing Motion to Hold Proceeding in Abeyance re PJM Interconnection, L.L.C. under ER26-3380 et al.",
+      "filed": "2026-10-23",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261023-3114",
+      "status": "primary text captured",
+      "slug": "notice-er26-3380-abeyance",
+      "original": "20261023-3114_ER26-3380-000 and EL26-108-000 Notice in Abeyance.docx",
+      "text": "sources/text/abeyance/notice-er26-3380-abeyance.txt",
+      "additionalFiles": []
+    },
+    "20260818-5152": {
+      "description": "Midcontinent Independent System Operator, Inc. submits tariff filing per 35.13(a)(2)(iii: 2026-08-18_Zero Injection Generator Interconnection Agreement to be effective 10/18/2026 under ER26-3552 Filing Type : 10",
+      "filed": "2026-08-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260818-5152",
+      "status": "primary text captured",
+      "slug": "filing-er26-3552-miso-zgia",
+      "original": "20260818-5152_01.pdf",
+      "text": "sources/text/abeyance/filing-er26-3552-miso-zgia.txt",
+      "additionalFiles": [
+        "20260818-5152_02.pdf",
+        "20260818-5152_03.pdf",
+        "20260818-5152_04.pdf",
+        "20260818-5152_05.pdf"
+      ],
+      "notIncludedFromFileList": [
+        "FERC GENERATED TARIFF FILING.PDF"
+      ],
+      "fileList": [
+        {
+          "name": "FINAL_ZGIA Transmittal Letter .pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Tab A - Marked Tariff Sheets.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Tab B - Clean Tariff Sheets.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Tab C - Testimony of Marc Keyser.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Tab D - Redline ZGIA to pro forma GIA.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "FERC GENERATED TARIFF FILING.PDF",
+          "status": "FERC-generated electronic tariff rendition not separately captured"
+        }
+      ]
+    },
+    "20260828-5285": {
+      "description": "Motion of Michigan Environmental Justice Coalition, et al. for Extension of Time to Submit Comments on the 08/18/2026 filing by the Midcontinent Independent System Operator, Inc. under ER26-3552.",
+      "filed": "2026-08-28",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260828-5285",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260828-5285",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3552 PIOs Motion for Extension of Time.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3552 PIOs Motion for Extension of Time.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260902-5107": {
+      "description": "Answer of Southern Regulators in Support of Motion for Extension of Time filed by the Public Interest Organizations filed on 08/28/2026 under ER26-3552.",
+      "filed": "2026-09-02",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260902-5107",
+      "status": "primary text captured",
+      "slug": "filing-20260902-5107",
+      "original": "20260902-5107_01.pdf",
+      "text": "sources/text/abeyance/filing-20260902-5107.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Answer in Support of POIs' Motion for Extension of Time.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260903-3033": {
+      "description": "Notice Denying Extension of Time re Midcontinent Independent System Operator, Inc. under ER26-3552.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-3033",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-3033",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260903-5021": {
+      "description": "Answer of Mississippi Public Service Commission et al. in Support of Motion for Extension of Time filed by the Public Interest Organizations filed on 08/28/2026 under ER26-3552.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5021",
+      "status": "primary text captured",
+      "slug": "filing-20260903-5021",
+      "original": "20260903-5021_01.pdf",
+      "text": "sources/text/abeyance/filing-20260903-5021.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Southern Regulators - Answer in Support of POIs' Motion for Extension of Time (ER26-3552).pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260908-5257": {
+      "description": "Comments of the Solar Energy Industries Association in Support of Midcontinent Independent System Operator, Inc.’s filing proposing revisions to establish the Zero Injection Generator Interconnection Agreement under ER26-3552.",
+      "filed": "2026-09-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260908-5257",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260908-5257",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "FINAL - Comments of SEIA on MISO ZGIA Proposal (9.8.26).pdf"
+      ],
+      "fileList": [
+        {
+          "name": "FINAL - Comments of SEIA on MISO ZGIA Proposal (9.8.26).pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260908-5266": {
+      "description": "Comments of Google LLC on Midcontinent Independent System Operator Inc.’s Zero Injection Generator Interconnection Agreement proposal under ER26-3552.",
+      "filed": "2026-09-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260908-5266",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260908-5266",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260908-5321": {
+      "description": "Motion to Intervene and Comments of MISO Transmission Owners in support of the 08/18/2026 filing by Midcontinent Independent System Operator, Inc. under ER26-3552.",
+      "filed": "2026-09-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260908-5321",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260908-5321",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260908-5329": {
+      "description": "Motion to Intervene and Comments of Consumers Energy Company re the 08/18/2026 filing by Midcontinent Independent System Operator, Inc. under ER26-3552.",
+      "filed": "2026-09-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260908-5329",
+      "status": "primary text captured",
+      "slug": "filing-20260908-5329",
+      "original": "20260908-5329_01.pdf",
+      "text": "sources/text/abeyance/filing-20260908-5329.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "2026-09-08 CE Intervention and Comments re ZGIA.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260908-5332": {
+      "description": "Comments of Advanced Energy United in response to the Midcontinent Independent System Operator’s proposal to establish a Zero Injection Generator Interconnection Agreement framework under ER26-3552.",
+      "filed": "2026-09-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260908-5332",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260908-5332",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3552 Comments of Advanced Energy United.docx"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3552 Comments of Advanced Energy United.docx",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260908-5341": {
+      "description": "Protest of Community Collaboration on Climate Change, et al. re the Midcontinent Independent System Operator, Inc.’s filing proposing revisions to establish the Zero Injection Generator Interconnection Agreement under ER26-3552.",
+      "filed": "2026-09-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260908-5341",
+      "status": "primary text captured",
+      "slug": "filing-20260908-5341",
+      "original": "20260908-5341_01.pdf",
+      "text": "sources/text/abeyance/filing-20260908-5341.txt",
+      "additionalFiles": [],
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260908-5341",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "authorCopyUrl": "https://sustainableferc.org/wp-content/uploads/2026/09/ER26-3552-Community-Orgs-and-Clean-Energy-Advocates-Protest.pdf",
+      "notIncludedFromFileList": [
+        "ER26-3552 Community Orgs and Clean Energy Advocates Protest.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3552 Community Orgs and Clean Energy Advocates Protest.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260911-5203": {
+      "description": "Motion for Acceptance of Late-Filed Comments and Comments in Conditional Support of the Organization of MISO States, Inc. re Midcontinent Independent System Operator, Inc.’s proposed tariff revisions under ER26-3552.",
+      "filed": "2026-09-11",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260911-5203",
+      "status": "primary text captured",
+      "slug": "filing-20260911-5203",
+      "original": "20260911-5203_01.pdf",
+      "text": "sources/text/abeyance/filing-20260911-5203.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "ER26-3552 OMS Late-Filed Comments (ZGIA).pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260923-5148": {
+      "description": "Motion for Leave to Answer and Answer of Midcontinent Independent System Operator Inc. to the comments and protests in response to the 08/18/2026 proposed tariff revisions under ER26-3552.",
+      "filed": "2026-09-23",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260923-5148",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260923-5148",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20261008-5175": {
+      "description": "Motion for Leave to Answer and Answer of Community Organizations and Clean Energy Advocates to Midcontinent Independent System Operator, Inc.’s 09/23/2026 Answer under ER26-3552.",
+      "filed": "2026-10-08",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261008-5175",
+      "status": "primary text captured",
+      "slug": "filing-20261008-5175",
+      "original": "20261008-5175_01.pdf",
+      "text": "sources/text/abeyance/filing-20261008-5175.txt",
+      "additionalFiles": [],
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20261008-5175",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "authorCopyUrl": "https://sustainableferc.org/wp-content/uploads/2026/10/ZGIA_Answer.pdf",
+      "notIncludedFromFileList": [
+        "ER26-3552 Answer and Testimony.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3552 Answer and Testimony.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20261009-3000": {
+      "description": "Letter informing Midcontinent Independent System Operator, Inc. that the 08/18/2026 filing is deficient and requesting additional information to be filed within 45 days under ER26-3552.",
+      "filed": "2026-10-09",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261009-3000",
+      "status": "primary text captured",
+      "slug": "letter-er26-3552-miso-deficiency",
+      "original": "20261009-3000_01.docx",
+      "text": "sources/text/abeyance/letter-er26-3552-miso-deficiency.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "ER26-3552-000 Deficiency Letter.docx",
+          "status": "captured"
+        }
+      ]
+    },
+    "20261106-5091": {
+      "description": "Southwest Power Pool, Inc. submits tariff filing per 35.13(a)(2)(iii: Revisions to Schedule 15 and Attachment T for SPP West Region to be effective 2/1/2027 under ER27-432 Filing Type : 10",
+      "filed": "2026-11-06",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261106-5091",
+      "status": "primary text captured",
+      "slug": "filing-er27-432-spp-chills",
+      "original": "20261106-5091_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-432-spp-chills.txt",
+      "additionalFiles": [
+        "20261106-5091_02.pdf",
+        "20261106-5091_03.pdf"
+      ],
+      "notIncludedFromFileList": [
+        "FERC GENERATED TARIFF FILING.PDF"
+      ],
+      "fileList": [
+        {
+          "name": "Sch 15 and Att T Revisions for West_Transmittal Letter.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Marked8536-632c41b6-f9bd-419c-a455-959e8e8e7314.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Clean8536-7e21cab7-1b8e-4b1a-925e-3a1d8da6d4fc.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "FERC GENERATED TARIFF FILING.PDF",
+          "status": "FERC-generated electronic tariff rendition not separately captured"
+        }
+      ]
+    },
+    "20261110-5175": {
+      "description": "Southwest Power Pool, Inc. submits tariff filing per 35.17(b): Amended Filing - Revisions to Schedule 15 and Attachment T for SPP West Region to be effective 2/1/2027 under ER27-432 Filing Type : 130",
+      "filed": "2026-11-10",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261110-5175",
+      "status": "primary text captured",
+      "slug": "amendment-er27-432-spp-chills",
+      "original": "20261110-5175_01.pdf",
+      "text": "sources/text/abeyance/amendment-er27-432-spp-chills.txt",
+      "additionalFiles": [
+        "20261110-5175_02.pdf",
+        "20261110-5175_03.pdf"
+      ],
+      "notIncludedFromFileList": [
+        "FERC GENERATED TARIFF FILING.PDF"
+      ],
+      "fileList": [
+        {
+          "name": "ER27-432 Amended Filing Transmittal Letter.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Clean8543-8e690f19-d23f-4f93-8bbe-f1d8db8928e2.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Marked8543-c98d2db8-21b1-4bff-8977-95b41bb9803c.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "FERC GENERATED TARIFF FILING.PDF",
+          "status": "FERC-generated electronic tariff rendition not separately captured"
+        }
+      ]
+    },
+    "20260813-5118": {
+      "description": "PJM Interconnection, L.L.C. submits tariff filing per 35.13(a)(2)(iii: Proposal to Establish Interim Resource Adequacy Service & a Large Load Registry to be effective 10/12/2026 under ER26-3515 Filing Type : 10",
+      "filed": "2026-08-13",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260813-5118",
+      "status": "primary text captured",
+      "slug": "filing-er26-3515-pjm-iras",
+      "original": "20260813-5118_01.pdf",
+      "text": "sources/text/abeyance/filing-er26-3515-pjm-iras.txt",
+      "additionalFiles": [
+        "20260813-5118_02.pdf",
+        "20260813-5118_03.pdf",
+        "20260813-5118_04.pdf"
+      ],
+      "notIncludedFromFileList": [
+        "FERC GENERATED TARIFF FILING.PDF"
+      ],
+      "fileList": [
+        {
+          "name": "IRAS Transmittal Letter 4929-0395-4887 v.3.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Attachment A- Marked Tariff 4919-3670-8807 v.1.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Attachment B- Clean Tariff 4930-8837-2935 v.2.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Attachment C IRAS - Pilong Affifdavit .pdf",
+          "status": "captured"
+        },
+        {
+          "name": "FERC GENERATED TARIFF FILING.PDF",
+          "status": "FERC-generated electronic tariff rendition not separately captured"
+        }
+      ]
+    },
+    "20260814-5009": {
+      "description": "Comments of Neil P. Osnato d/b/a Persistence Analytics Group LLC concerning PJM Interconnection, L.L.C.'s 08/13/2026 proposal to establish Interim Resource Adequacy Service and a Large Load Registry under ER26-3515.",
+      "filed": "2026-08-14",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260814-5009",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260814-5009",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260820-3043": {
+      "description": "Notice Rescinding Prior Notice re PJM Interconnection, L.L.C. under ER26-3515.",
+      "filed": "2026-08-20",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260820-3043",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260820-3043",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3515-000 Rescind Notice.docx"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3515-000 Rescind Notice.docx",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260828-5287": {
+      "description": "Motion for Extension of Time of the Organization of PJM States, Inc. to submit comments in response to PJM Interconnection, L.L.C.'s 08/13/2026 proposal under ER26-3515.",
+      "filed": "2026-08-28",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260828-5287",
+      "status": "primary text captured",
+      "slug": "filing-20260828-5287",
+      "original": "20260828-5287_01.pdf",
+      "text": "sources/text/abeyance/filing-20260828-5287.txt",
+      "additionalFiles": [],
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260828-5287",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "authorCopyUrl": "https://opsi.us/wp-content/uploads/2026/09/ER26-3515-000-IRAS-Extension-Request.pdf",
+      "notIncludedFromFileList": [
+        "ER26-3515-000 - IRAS - Extension Request.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3515-000 - IRAS - Extension Request.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260831-3082": {
+      "description": "Notice Shortening Answer Period re PJM Interconnection, L.L.C. under ER26-3515.",
+      "filed": "2026-08-31",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260831-3082",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260831-3082",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3515-000 Shortening Answer Period.docx"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3515-000 Shortening Answer Period.docx",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260831-5121": {
+      "description": "Answer of Google LLC in Support of the Organization of PJM States, Inc.’s 08/28/2026 Motion for Extension of Time under ER26-3515.",
+      "filed": "2026-08-31",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260831-5121",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260831-5121",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260901-5028": {
+      "description": "Answer of the Pennsylvania Public Utility Commission in support of the Organization of PJM States, Inc.’s motion for extension of time to submit comments in response to PJM Interconnection, L.L.C.’s filing under ER26-3515.",
+      "filed": "2026-09-01",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260901-5028",
+      "status": "primary text captured",
+      "slug": "filing-20260901-5028",
+      "original": "20260901-5028_01.pdf",
+      "text": "sources/text/abeyance/filing-20260901-5028.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "ER26-3515-000 Answer of PA PUC to OPSI Motion.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260901-5250": {
+      "description": "Answer of East Kentucky Power Cooperative, Inc. in support of the Organization of PJM States, Inc.’s motion for extension of time to submit comments in response to PJM Interconnection, L.L.C.’s filing under ER26-3515.",
+      "filed": "2026-09-01",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260901-5250",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260901-5250",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260902-3019": {
+      "description": "Notice Denying Extension of Time re PJM Interconnection, L.L.C. under ER26-3515.",
+      "filed": "2026-09-02",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260902-3019",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260902-3019",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260902-5055": {
+      "description": "Supplemental Comments of Persistence Analytics Group LLC re the Interim Resource Adequacy Service proposed by PJM Interconnection, L.L.C. under ER26-3515.",
+      "filed": "2026-09-02",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260902-5055",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260902-5055",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260903-5020": {
+      "description": "Comments of Hans Royal re the Interim Resource Adequacy Service proposed by PJM Interconnection, L.L.C. under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5020",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5020",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260903-5023": {
+      "description": "Motion to Intervene and Protest of Nicholas Max Neal and David Neal, Delaware Standard Offer Service Ratepayers to PJM Interconnection, L.L.C.'s 08/13/2026 Filing under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5023",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5023",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260903-5167": {
+      "description": "Comments of Tesla, Inc. re PJM Interconnection, L.L.C.’s filing to establish Interim Resource Adequacy Service under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5167",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5167",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260903-5170": {
+      "description": "Supportive Comments and Limited Protest of the New Jersey Board of Public Utilities re PJM Interconnection, L.L.C.’s filing to establish Interim Resource Adequacy Service under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5170",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5170",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260903-5183": {
+      "description": "Motion to Intervene, Protest, and Request for Clarification of PPL Electric Utilities Corporation regarding PJM Interconnection L.L.C.’s Interim Resource Adequacy Service Filing under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5183",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5183",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260903-5185": {
+      "description": "Motion to Intervene and Comments of The Retail Energy Supply Association re PJM Interconnection, L.L.C.’s filing to establish Interim Resource Adequacy Service under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5185",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5185",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260903-5193": {
+      "description": "Motion to Intervene and Comments of Sunrun Inc. in response to PJM Interconnection, L.L.C.’s 08/13/2026 filing to establish Interim Resource Adequacy Service and Large Load Registry under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5193",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5193",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Motion_to_Intervene_and_Comments_of_Sunrun_Inc__in.docx.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Motion_to_Intervene_and_Comments_of_Sunrun_Inc__in.docx.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260903-5195": {
+      "description": "Comments of the Chief Energy Officer Josephus M. Allmond et al. of the Commonwealth of Virginia re the PJM Interconnection, L.L.C.'s proposed Interim Resource Adequacy Service Filing under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5195",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5195",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260903-5197": {
+      "description": "Comments of ACORE on PJM Interconnection, L.L.C.'s 08/13/2026 proposal to establish Interim Resource Adequacy Service and a large load registry under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5197",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5197",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ACORE PJM IRAS Comments 9 3 26.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ACORE PJM IRAS Comments 9 3 26.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260903-5199": {
+      "description": "Motion to Intervene and Protest of the Data Center Coalition to PJM Interconnection, L.L.C.’s proposal to establish Interim Resource Adequacy Service and a Large Load Registry under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5199",
+      "status": "primary text captured",
+      "slug": "filing-20260903-5199",
+      "original": "20260903-5199_01.pdf",
+      "text": "sources/text/abeyance/filing-20260903-5199.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "DCC MTI and Protest - PJM IRAS.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260903-5200": {
+      "description": "Motion to Intervene and Protest of Talen Energy Corporation re PJM Interconnection, L.L.C.’s filing to establish Interim Resource Adequacy Service under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5200",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5200",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Talen_Motion to Intervene and Protest.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Talen_Motion to Intervene and Protest.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260903-5201": {
+      "description": "Protest and Comments of Constellation Energy Generation, LLC addressing PJM Interconnection, L.L.C.’s filing to establish Interim Resource Adequacy Service and Large Load Registry to address System Reliability under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5201",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5201",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3515 - Protest and Comments of Constellation Energy.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3515 - Protest and Comments of Constellation Energy.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260903-5206": {
+      "description": "Comments of the Pennsylvania Public Utility Commission to the Proposal of PJM Interconnection, L.L.C. to establish Interim Resource Adequacy Service and Large Load Registry to address System Reliability under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5206",
+      "status": "primary text captured",
+      "slug": "filing-20260903-5206",
+      "original": "20260903-5206_01.pdf",
+      "text": "sources/text/abeyance/filing-20260903-5206.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "ER26-3515 - PA PUC Comments to IRAS 9-3-2026.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260903-5207": {
+      "description": "Limited Protest and Comments of FirstEnergy Service Company et al. in response to PJM Interconnection, L.L.C.’s 08/13/2026 filing to establish Interim Resource Adequacy Service mechanism under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5207",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5207",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "FirstEnergy IRAS Protest and Comments_9_3_2026.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "FirstEnergy IRAS Protest and Comments_9_3_2026.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260903-5209": {
+      "description": "Comments of Calibrant Energy requesting clarifications of PJM Interconnection, L.L.C.’s proposal filed on 08/13/2026 under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5209",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5209",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260903-5212": {
+      "description": "Protest and Comments of Joint Consumer Advocates on the 08/13/2026 filing by PJM Interconnection, L.L.C. under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5212",
+      "status": "primary text captured",
+      "slug": "filing-20260903-5212",
+      "original": "20260903-5212_01.pdf",
+      "text": "sources/text/abeyance/filing-20260903-5212.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "ER26-3515 Protest and Comments of Joint Consumer Advocates.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260903-5218": {
+      "description": "Limited Comments of North Carolina Electric Membership Corporation on PJM Interconnection, L.L.C.’s filing proposing revisions to the Open Access Transmission Tariff et al. under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5218",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5218",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3515-000 NCEMC Comments 20260903.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3515-000 NCEMC Comments 20260903.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260903-5221": {
+      "description": "Protest of Vistra Corp. regarding PJM Interconnection, L.L.C.’s proposed Interim Resource Adequacy Service filing under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5221",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5221",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Protest of Vistra Corp. - ER26-3515-000.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Protest of Vistra Corp. - ER26-3515-000.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260903-5224": {
+      "description": "Comments and Limited Protests of Ohio Energy Leadership Council in response to the Interim Resource Adequacy Service and Large Load Registry proposed by PJM Interconnection, L.L.C. under ER26-3515.",
+      "filed": "2026-09-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260903-5224",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260903-5224",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3515-000 Comments of OELC.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3515-000 Comments of OELC.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260828-5278": {
+      "description": "Midcontinent Independent System Operator, Inc. submits tariff filing per 35.13(a)(2)(iii: 2026-08-28_Interconnection Reliability Requirements for Large Loads to be effective 12/4/2026 under ER26-3650 Filing Type : 10",
+      "filed": "2026-08-28",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260828-5278",
+      "status": "primary text captured",
+      "slug": "filing-er26-3650-miso-irr",
+      "original": "20260828-5278_01.pdf",
+      "text": "sources/text/abeyance/filing-er26-3650-miso-irr.txt",
+      "additionalFiles": [
+        "20260828-5278_02.pdf",
+        "20260828-5278_03.pdf",
+        "20260828-5278_04.pdf"
+      ],
+      "notIncludedFromFileList": [
+        "FERC GENERATED TARIFF FILING.PDF"
+      ],
+      "fileList": [
+        {
+          "name": "IRR Transmittal Letter.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Tab A - IRR Tariff Redline.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Tab B - IRR Tariff Clean.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "Tab C - Testimony of BeiBei Li.pdf",
+          "status": "captured"
+        },
+        {
+          "name": "FERC GENERATED TARIFF FILING.PDF",
+          "status": "FERC-generated electronic tariff rendition not separately captured"
+        }
+      ]
+    },
+    "20260918-5119": {
+      "description": "Motion to Intervene and Comments of North American Electric Reliability Corporation et al. re Midcontinent Independent System Operator, Inc.'s 08/28/2026 filing under ER26-3650.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5119",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260918-5119",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260918-5224": {
+      "description": "Motion to Intervene and Comments of the MISO Transmission Owners re Midcontinent Independent System Operator, Inc.'s 08/28/2026 filing under ER26-3650.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5224",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260918-5224",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260918-5272": {
+      "description": "Motion to Intervene and Comments of Central Municipal Power Agency/Services et al. re Midcontinent Independent System Operator, Inc.'s 08/28/2026 filing under ER26-3650.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5272",
+      "status": "primary text captured",
+      "slug": "filing-20260918-5272",
+      "original": "20260918-5272_01.pdf",
+      "text": "sources/text/abeyance/filing-20260918-5272.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Midwest TDUs MTI and Comments ER26-3650.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260918-5286": {
+      "description": "Limited Protest of Entergy Services, LLC re Midcontinent Independent System Operator, Inc.'s 08/28/2026 filing under ER26-3650.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5286",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260918-5286",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260918-5323": {
+      "description": "Protest of Mississippi Public Service Commission et al. re Midcontinent Independent System Operator, Inc.'s 08/28/2026 filing under ER26-3650.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5323",
+      "status": "primary text captured",
+      "slug": "filing-20260918-5323",
+      "original": "20260918-5323_01.pdf",
+      "text": "sources/text/abeyance/filing-20260918-5323.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "ER26-3650 MISO South Protest of MISO Large Load Reliability Requirements.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260918-5333": {
+      "description": "Protest of Iowa Office of Consumer Advocate et al. re Midcontinent Independent System Operator, Inc.'s 08/28/2026 filing under ER26-3650.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5333",
+      "status": "primary text captured",
+      "slug": "filing-20260918-5333",
+      "original": "20260918-5333_01.docx",
+      "text": "sources/text/abeyance/filing-20260918-5333.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Joint Protest IRRLL.docx",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260918-5346": {
+      "description": "Joint Comments, Request for Clarification and Limited Protest of Coalition of MISO Transmission Customers et al. to Midcontinent Independent System Operator, Inc.'s 08/28/2026 filing under ER26-3650.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5346",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260918-5346",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20260918-5386": {
+      "description": "Comments of Google LLC on Midcontinent Independent System Operator Inc.’s Interconnection Reliability Requirements for Large Loads Proposal under ER26-3650.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5386",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260918-5386",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Comments of Google LLC - ER26-3650-000.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Comments of Google LLC - ER26-3650-000.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260918-5391": {
+      "description": "Comments of Verrus LLC in Support of Midcontinent Independent System Operator, Inc.'s proposed Interconnection Reliability Requirements for Large Loads under ER26-3650.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5391",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260918-5391",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "ER26-3650_Verrus_Reliability_Comments_FINAL - StabiliGrid.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "ER26-3650_Verrus_Reliability_Comments_FINAL - StabiliGrid.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260918-5397": {
+      "description": "Protest of Sierra Club et al. re Midcontinent Independent System Operator, Inc.'s 08/28/2026 filing under ER26-3650.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5397",
+      "status": "primary text captured",
+      "slug": "filing-20260918-5397",
+      "original": "20260918-5397_01.pdf",
+      "text": "sources/text/abeyance/filing-20260918-5397.txt",
+      "additionalFiles": [],
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260918-5397",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser.",
+      "authorCopyUrl": "https://sustainableferc.org/wp-content/uploads/2026/10/ER26-3650-Protest-of-Public-Interest-Organizations-MISO-Interconnection-Requirements-for-Large-Loads.pdf"
+    },
+    "20260918-5412": {
+      "description": "Motion to Intervene and Comments of the Data Center Coalition re Midcontinent Independent System Operator, Inc.'s 08/28/2026 filing under ER26-3650.",
+      "filed": "2026-09-18",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260918-5412",
+      "status": "primary text captured",
+      "slug": "filing-20260918-5412",
+      "original": "20260918-5412_01.pdf",
+      "text": "sources/text/abeyance/filing-20260918-5412.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "DCC Comments - MISO IRR Filing.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20260921-5084": {
+      "description": "Comments of Rowan Digital Infrastructure, LLC re the 08/28/2026 filing by Midcontinent Independent System Operator, Inc. proposing Interconnection Reliability Requirements for Large Loads under ER26-3650.",
+      "filed": "2026-09-21",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260921-5084",
+      "status": "listed only",
+      "reason": "The public file list returned metadata, but the normal public download failed.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260921-5084",
+        "httpStatus": 200,
+        "listed": 1
+      },
+      "documentCheck": "File list rendered; public download did not return the requested original.",
+      "notIncludedFromFileList": [
+        "Rowan_MISO_IRR_Comments_ER26-3650-000.pdf"
+      ],
+      "fileList": [
+        {
+          "name": "Rowan_MISO_IRR_Comments_ER26-3650-000.pdf",
+          "status": "public download failed"
+        }
+      ]
+    },
+    "20260924-5153": {
+      "description": "Motion for Leave to Answer and Limited Answer of ON Energy Storage, Inc. in response to comments and protests re Midcontinent Independent System Operator, Inc. proposal to establish Interconnection Reliability Requirements for Large Loads under ER26-3650.",
+      "filed": "2026-09-24",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20260924-5153",
+      "status": "listed only",
+      "reason": "The public file-list endpoint returned HTTP 500.",
+      "fileListCheck": {
+        "url": "https://elibrary.ferc.gov/eLibraryWebAPI/api/File/GetFileListFromP8/20260924-5153",
+        "httpStatus": 500,
+        "listed": 0
+      },
+      "documentCheck": "File list did not render in the public browser."
+    },
+    "20261002-5120": {
+      "description": "Motion for Leave to Answer and Answer of Coalition of MISO Transmission Customers et al. to the Joint Protest of the Sierra Club et al. under ER26-3650.",
+      "filed": "2026-10-02",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261002-5120",
+      "status": "primary text captured",
+      "slug": "filing-20261002-5120",
+      "original": "20261002-5120_01.pdf",
+      "text": "sources/text/abeyance/filing-20261002-5120.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "Motion for Leave to Answer and Answer of Large Energy Users Groups.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20261013-5440": {
+      "description": "Motion for Leave to Answer and Answer of Midcontinent Independent System Operator Inc. to the Comments and Protests re the proposal to establish Interconnection Reliability Requirements for Large Loads under ER26-3650.",
+      "filed": "2026-10-13",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261013-5440",
+      "status": "primary text captured",
+      "slug": "filing-20261013-5440",
+      "original": "20261013-5440_01.pdf",
+      "text": "sources/text/abeyance/filing-20261013-5440.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "2026.10.13 MISO IRR Answer.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20261028-5128": {
+      "description": "Motion for Leave to Answer and Answer of Central Municipal Power Agency Services, et al. to Midcontinent Independent System Operator, Inc.’s 10/13/2026 Motion for Leave to Answer and Answer under ER26-3650.",
+      "filed": "2026-10-28",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261028-5128",
+      "status": "primary text captured",
+      "slug": "filing-20261028-5128",
+      "original": "20261028-5128_01.pdf",
+      "text": "sources/text/abeyance/filing-20261028-5128.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "ER26-3650 Midwest TDUs Answer.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20261103-5190": {
+      "description": "Motion for Leave to Answer and Answer of the Data Center Coalition re the 10/13/2026 Answer of Midcontinent Independent System Operator, Inc. et al. under ER26-3650.",
+      "filed": "2026-11-03",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261103-5190",
+      "status": "primary text captured",
+      "slug": "filing-20261103-5190",
+      "original": "20261103-5190_01.pdf",
+      "text": "sources/text/abeyance/filing-20261103-5190.txt",
+      "additionalFiles": [],
+      "fileList": [
+        {
+          "name": "DCC Answer - MISO IRR Filing.pdf",
+          "status": "captured"
+        }
+      ]
+    },
+    "20261030-5172": {
+      "description": "PJM corrects its October backstop transmittal letter",
+      "filed": "2026-10-30",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261030-5172",
+      "status": "primary text captured",
+      "slug": "errata-er27-330-pjm-backstop",
+      "original": "20261030-5172_01.pdf",
+      "text": "sources/text/abeyance/errata-er27-330-pjm-backstop.txt",
+      "additionalFiles": [
+        "20261030-5172_02.pdf",
+        "20261030-5172_03.pdf"
+      ],
+      "scope": "individual original retrieved; full docket not re-swept"
+    }
+  },
+  "applicantSearch": [
+    {
+      "applicant": "PJM Interconnection",
+      "since": "2026-11-09",
+      "through": "2026-11-10",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/search",
+      "status": "count confirmed",
+      "rowsRead": 9,
+      "accessions": [
+        "20261110-5071",
+        "20261110-5053",
+        "20261110-5038",
+        "20261110-3047",
+        "20261110-3026",
+        "20261109-5217",
+        "20261109-5216",
+        "20261109-5170",
+        "20261109-3041"
+      ]
+    },
+    {
+      "applicant": "Midcontinent Independent System Operator",
+      "since": "2026-11-09",
+      "through": "2026-11-10",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/search",
+      "status": "count confirmed",
+      "rowsRead": 12,
+      "accessions": [
+        "20261110-5062",
+        "20261110-5061",
+        "20261110-5060",
+        "20261110-3041",
+        "20261110-3037",
+        "20261110-3028",
+        "20261109-5205",
+        "20261109-5169",
+        "20261109-3040",
+        "20261109-3028",
+        "20261109-3013",
+        "20261109-3003"
+      ]
+    },
+    {
+      "applicant": "Southwest Power Pool",
+      "since": "2026-11-09",
+      "through": "2026-11-10",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/search",
+      "status": "count confirmed",
+      "rowsRead": 9,
+      "accessions": [
+        "20261110-5175",
+        "20261110-5100",
+        "20261110-3021",
+        "20261110-3016",
+        "20261110-3000",
+        "20261109-5152",
+        "20261109-5149",
+        "20261109-5128",
+        "20261109-5119"
+      ]
+    },
+    {
+      "applicant": "California Independent System Operator",
+      "since": "2026-11-09",
+      "through": "2026-11-10",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/search",
+      "status": "no rows returned; total not independently confirmed",
+      "rowsRead": 0,
+      "accessions": []
+    },
+    {
+      "applicant": "ISO New England",
+      "since": "2026-11-09",
+      "through": "2026-11-10",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/search",
+      "status": "no rows returned; total not independently confirmed",
+      "rowsRead": 0,
+      "accessions": []
+    },
+    {
+      "applicant": "New York Independent System Operator",
+      "since": "2026-11-09",
+      "through": "2026-11-10",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/search",
+      "status": "no rows returned; total not independently confirmed",
+      "rowsRead": 0,
+      "accessions": []
+    }
+  ],
+  "additionalAuthorOriginals": [
+    {
+      "slug": "pjm-september-iras-answer",
+      "sourceUrl": "https://www.pjm.com/-/media/DotCom/documents/ferc/filings/2026/20260923-er26-3515-000.pdf",
+      "docket": "ER26-3515-000",
+      "issued": "2026-09-23",
+      "accessionStatus": "unverified",
+      "original": "pjm-september-iras-answer.pdf"
+    },
+    {
+      "slug": "opsi-september-iras-comments",
+      "sourceUrl": "https://opsi.us/wp-content/uploads/2026/09/ER26-3515-000-IRAS-Comments.pdf",
+      "docket": "ER26-3515-000",
+      "issued": "2026-09-03",
+      "accessionStatus": "unverified",
+      "original": "opsi-september-iras-comments.pdf"
+    }
+  ],
+  "captureNotes": [
+    "FERC generated tariff PDF renditions are not assumed to be byte duplicates. Two distinct November 9 renditions for ER27-454 and ER26-3515 were captured, alongside the submitter’s source files. Other generated renditions and unsupported files are identified separately on the relevant file lists.",
+    "From about 22:00 ET on November 10, the public eLibrary returned HTTP 500 for 62 of 100 related-docket file-list requests. For the other 38 the metadata was available, but the normal public download did not yield a file. Nine signer-hosted copies were retrieved independently. The 12 show-cause and rehearing sheets had already been reconciled before these errors."
+  ]
+}

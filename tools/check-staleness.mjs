@@ -106,7 +106,7 @@ if (F) {
   }
   const unverified = (F.rows || []).filter((r) => r.status === "filed-reported" || r.status === "signaled");
   if (unverified.length) {
-    flag("filings", `${unverified.length} row(s) still press-sourced, awaiting an eLibrary accession: ` +
+    flag("filings", `${unverified.length} reported or planned submission(s) without a verified filing in the corresponding docket: ` +
       unverified.map((r) => `${r.docket}/${r.step}`).join(", "));
   }
 }

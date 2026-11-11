@@ -1,5 +1,8 @@
 # issues.md — audit trail
 
+- **November 10 · FERC eLibrary availability.** All 12 show-cause and rehearing sheets were reconciled. ER26-3515-000 returned 100 of 162 rows before the portal degraded. Of 100 selected companion records attempted in the final pass, nine originals were recovered from their publishers; 91 remained inaccessible. A separate exhibit is marked CEII. The [coverage ledger](sources/filings/refresh-coverage.json) records each disposition. Retry the public rows and missing sheet page when service recovers. Never represent a filing description as a verified reading.
+
+
 Format: date · area · description · root cause (code/test/data/source) · status.
 
 ## Open
@@ -501,14 +504,15 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   (Energy Trading Institute) is the lone holdout across five attempts (main-frame click ×2, iframe retry, dedicated
   60s iframe, URL-intercept). Root cause: **source-side** — the filelist link renders and the click
   fires, but it triggers no `window.open`, no navigation, and no download (the other 269 behave
-  identically), so eLibrary appears to serve this one file inline rather than as an attachment. Status:
-  **Open (known gap)** — the file is inventoried in `rm26-4-files.json` and re-downloadable; the site
-  reads "272 of 273." Not worth further automation for a single document.
+  identically). **Rechecked Nov 10:** the official filelist says “Erroneously filed”, Availability_Mode N,
+  with download disabled. ETI’s public submission at 20251121-5350 is archived separately; the two
+  records cannot be assumed identical.
 
-- **2026-06-24 · data · four comment PDFs are image-only scans (no text layer).** `20251121-5224`,
-  `20251121-5521` (Data Center Coalition), `20251121-5140` (Yurok Nation letter), `20251205-5005` —
-  downloaded, but `fitz` extracts ~0 text. Root cause: **source-side** (scanned filings). Status: **Open
-  (OCR-pending)** — no OCR tool installed locally; `tools/validate-comments.py` flags them every run.
+- **2026-06-24 · data · four comment PDFs lacked a usable text layer.** November 10: recovered
+  page-labeled OCR for 32 pages across 20251121-5224, 20251121-5521, 20251121-5140 (Yakama
+  Nation), and 20251205-5005. The [OCR sidecars](sources/comments/ocr/) preserve the original
+  PDFs. Check them with `python3 tools/revalidate-archive.py --check-ocr`. OCR is a transcription,
+  not verified testimony; page images take precedence.
 
 - **2026-06-24 · data/code · validation recovered 3 bodies + hardened the pipeline. Fixed.** A
   `validate-comments.py` pass found and fixed: (1) Eolian `20260519-5158` and Sierra Club `20260520-5102`

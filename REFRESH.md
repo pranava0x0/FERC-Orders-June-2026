@@ -12,7 +12,7 @@ Driven by real dates, not a calendar interval:
 
 | Date | What lands |
 |---|---|
-| ~~2026-09-30 to 2026-10-21~~ | ~~PJM's backstop auction window~~. FERC suspended the procurement to Feb 28, 2027 on Sep 29 (196 FERC ¶ 61,245). PJM now proposes a Mar 1 to Mar 22, 2027 window. |
+| ~~2026-09-30 to 2026-10-21~~ | ~~PJM's backstop auction window~~. FERC suspended the procurement to Feb 28, 2027 on Sep 29 (196 FERC ¶ 61,245). In its Nov 9 refiling (ER27-454, pp. 61–63), PJM proposed a March 1, 2027 start and a four-week offer window. |
 | ~~2026-10-21~~ | ~~Answers on PJM's abeyance motion~~. Only NOVEC answered. FERC's Oct 23 notice (20261023-3114, read) did not grant abeyance; it moved the EL26-108 briefs to Jan 11 and Jan 26, 2027. |
 | ~~2026-10-22~~ | ~~PJM special MC consultation on the backstop refiling~~. Held; ER27-330 cites it. |
 | ~~2026-10-28~~ | ~~PJM MC; CAISO Board~~. The MC agenda had **no** large-load item or vote (the Aug 14 order expected an advisory vote). CAISO's Board advanced its Large Loads proposal; CAISO says it files by Nov 16. |
@@ -131,6 +131,14 @@ PJM's E-2 extension request (granted Aug 14, and the promised partial filing lan
 - Any new displayed quote goes into `sources/news-evidence.json` with its captured snippet.
 - Bump `meta.newsCapture` and `procedural.filings.asOf`.
 
+### Refresh the filing reading room
+
+1. Run `node tools/sweep-show-cause.mjs /tmp/ferc-sheets 2026-06-18 YYYY-MM-DD` for the six roots and their -001 subdockets. Append explicit docket numbers to check companion cases. This uses the installed Playwright and stable Chrome; set `NODE_PATH` to the installed modules if necessary. Each dated result records how many rows the portal reported and how many the browser read. A zero that contradicts an earlier count is a failure. Run `python3 tools/reconcile-show-cause.py /tmp/ferc-sheets --output /tmp/new-rows.json --baseline-output /tmp/candidate-baseline.json` and review all accession differences, including late-indexed filings dated before the last capture. Update the baseline and classification ledger only after that review.
+2. Download each new *public* accession and its attachments: `node tools/fetch-filing-originals.mjs --out /tmp/ferc-originals 20261109-5216` (one or more accessions). Review the staged inventory, file signatures and SHA-256 hashes. Record the disposition of every public attachment, including duplicates; never substitute a related accession for an inaccessible original. Update `sources/filings/refresh-documents.json`, the attachment manifests and `refresh-coverage.json`. Preserve restricted and unavailable statuses.
+3. Add cited section readings and any attributable responses to `sources/filings/`. Store the document, physical page, a verbatim quote and the speaker’s actual action. A vote on a coalition filing does not establish a vote on a later refiling. For video, use `python3 tools/fetch-video-transcripts.py --help`; keep caption source, original posting date, recording date and official hearing text separate.
+4. Run `sh tools/refresh-reading-room.sh --build`, inspect the change in the catalog and archive report, then run `sh tools/refresh-reading-room.sh --check`. The latter re-extracts the sources and compares the generated output without changing it. Use `python3 tools/index-filing-text.py --only SLUG --check` for one original, `--tokens SLUG` for token/page/character offsets, or `python3 tools/revalidate-archive.py --comment ACCESSION` for a historical RM26-4 submission. `--check-ocr` also replays the image pages on macOS.
+5. Run the test suite and the browser checks below. `node tools/uat-filing-readers.mjs SITE_URL BASELINE_URL /tmp/ferc-reading-uat` tests all three screen sizes, source anchors, the JavaScript-free keyboard path, and compressed bytes for a cold Overview. Serve the previous release separately as BASELINE_URL. With the shared writing tools available, run `node tools/check-filing-prose.mjs --print | python3 ../coding-best-practices/tools/slop_writing.py --stdin --profile public-copy --no-review` and `python3 ../coding-best-practices/tools/slop_design.py --no-review docs/css/reading.css docs/reading/compliance-er26-3515-pjm/index.html`. Source quotes and official titles are not editorial copy.
+
 ### 4. Check, test, regenerate
 
 ```bash
@@ -143,9 +151,9 @@ node tools/survey-summaries.mjs --brief          # comment corpus: the should-be
 ```
 
 **The browser check, scripted.** `node tools/uat-playwright.mjs` (serve `docs/` on 127.0.0.1:8131 first)
-runs the console check below at 375x812 and 1280x800, fails on `undefined`/`NaN`, horizontal overflow,
+runs the console check below at 375x812, 768x1024 and 1280x800, fails on `undefined`/`NaN`, horizontal overflow,
 console errors or failed requests, and prints the reader-depth table (taps + swipes + screens of scroll
-to nine things a reader comes for). It needs Playwright and a Chromium, which the cloud container has
+to the filing, comment, deadline and video goals). It needs Playwright and a Chromium, which the cloud container has
 and a laptop may not; where it cannot run, do the manual version:
 
 **The one check that is not a script.** The repo has no dependencies and no package.json, so there is no

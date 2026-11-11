@@ -1,5 +1,7 @@
 # backlog.md
 
+- **Post-order filing reader (implemented Nov 10):** Section-level analysis, source text, attributed commentary, transcripts and repeatable validation. See [reader contract](sources/filings/reader-spec.md).
+
 - **`data.js` is now the largest blocking asset (112 KB gzip of 178 KB).** (medium) With `comments-data.js` lazy
   since 2026-11-02, the timeline and Discourse bodies dominate first load. Splitting them out the same way would
   roughly halve blocking weight again, but every tab reads `D.SOURCES`, so it needs a design (a core file plus
@@ -648,12 +650,10 @@ Recommended next steps, in order:
 
 ## From the 2026-11-09 refresh (Filings and Commissioners tabs)
 
-- **High:** two commissioner videos still need a transcript: the Jul 22 Senate ENR hearing (HzOp-H7VpCQ) and
-  LaCerte's WIRES keynote (dEisTPju8E0) both need a PO token; try the PBS upload of the hearing (OlSI8MGoark).
+- **Resolved Nov 10:** archived the July 22 official Senate transcript and the publisher-listed English captions for LaCerte’s July 9 WIRES keynote.
 - **High:** validate and ship the Nov 2 to Nov 9 news findings (Rosner at DERVOS Nov 5, NERC's computational-load
   standards Oct 26, ICF on the backstop refiling, the Nov 3 midterms) through the Sonnet validation pass.
-- **Medium:** read SPP's Nov 6 filing (ER27-432, Schedule 15 and Attachment T for SPP West) and decide whether
-  it belongs on the show-cause track.
+- **Resolved Nov 10:** archived SPP’s Nov 6 filing and its Nov 10 Upper Missouri correction. The amendment is a separate tariff filing, not an order granting it.
 - **Medium:** add tenets for documents already in the corpus but not on the Filings tab (the DOE §403 letter,
   the CEBA/DCC letter, PJM's Nov 5 MC materials once posted).
 - **Done:** PR #28 added direct links to proceedings and filers (e.g. `#filings/miso-lars/google`).
