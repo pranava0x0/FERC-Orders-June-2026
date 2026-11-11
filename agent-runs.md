@@ -617,3 +617,24 @@ re-reading quotes. What it did not cover: attribution and overstatement, which i
 Three bounded assignments covered acquisition, the PJM section reading plus historical audit, and named responses plus hearing sources. Each left source files and a machine-checkable inventory, rather than a list of claims in chat. The independent build checks every curated quote against its physical page. The docket ledger exposed a service outage instead of letting an empty response stand as evidence. Rechecking legacy citations against Word and PDF originals corrected four cards. The next refresh can reuse the acquisition and audit scripts; it does not need a new agent per accession. Per-agent token usage was unavailable.
 
 The all-tab follow-up was a solo review: the browser drove each task on three devices. No subagents ran.
+
+### 2026-11-11: web-search burn-down, UAT/perf, three review rounds (one Haiku agent, rest inline)
+
+One subagent all session (run 22 above, 147K tokens) for the news-sweep matrix; everything else inline. The
+agent's negative results held and it found the only two new documents, but every detail it reported about
+them was wrong, and `curl` plus PyMuPDF corrected all four in under a minute. The review was three rounds,
+each with a different method, and each found what the previous one structurally could not:
+
+- **Round 1, read the diff.** Four findings, all characterizations written past what the PDFs carry: ACP
+  called a "load" group on three surfaces, an invented count of "four separate letters", and ITI's "useful
+  example" promoted to "a model". The contradicting evidence was already in `data.js` — this file calls ACP
+  "the clean-energy and storage trade group" 1,100 lines away.
+- **Round 2, walk the data instead of the diff.** A recursive sweep of every string in `FERC_DATA` for the
+  Nov 5 thread showed four surfaces carry it and one, the sc6 track card, had been left at Oct 2. The diff
+  could not show this: the stale surface is a file region the commits never touched.
+- **Round 3, check the checker.** Grepping `verify-quotes --list` for a phrase I had just added returned
+  nothing, so the sweep had never covered track cards. A green "all 349 verified" was passing five unchecked
+  quotes. This is the session's one real tooling bug and no amount of diff-reading would have surfaced it.
+
+The cheap lesson: after adding a quote, grep the verifier's output for it. The run's exit code tells you
+nothing about whether your surface is enumerated.
