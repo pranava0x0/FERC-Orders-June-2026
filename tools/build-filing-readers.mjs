@@ -94,7 +94,9 @@ for(const r of catalog){
  for(const c of curated){
    const pg=c.pg||1; const source=pages[pg-1];
    // Older verified tenets can span a page break; their printed citation marks its start.
-   const q=norm(c.quote),a=norm(source?.text||'');
+   // Source quotations may omit a superscript note marker. Only ignore our explicitly
+   // generated Word markers for matching; keep all source words, notes and displayed markers.
+   const text=source?.text||'',q=norm(c.quote),a=norm(paginated?text:text.replace(/\[(?:fn|en):-?\d+\]/g,''));
    if(local.length&&ids.has(pin(c.title)))throw Error(r.slug+' duplicate section title '+c.title);
    if(!q||!source||c.start<1||c.end>pages.length||pg<c.start||pg>c.end||!(a.includes(q)||(!local.length&&(a+norm(pages[pg]?.text||'')).includes(q))))throw Error(r.slug+' citation does not match page '+pg+': '+c.quote.slice(0,95));
    let id=pin(c.title);if(ids.has(id))id+='-'+pg;if(ids.has(id))id+='-'+ids.size;ids.add(id);
@@ -126,11 +128,15 @@ for(const r of catalog){
  const ld=JSON.stringify({'@context':'https://schema.org','@type':'Article',headline:r.title,description,mainEntityOfPage:SITE+r.slug+'/',citation:r.url,about:r.docket}).replaceAll('<','\\u003c');
  emit(r.slug+'/index.html',frame(r.title,description,article,r.slug+'/','<script type="application/ld+json">'+ld+'</script>'));
  let count=0;
+ const noteLinks=t=>t.replace(/\[(fn|en):(-?\d+)\]/g,(m,kind,n,off,html)=>{
+   if(off>0 && html[off-1]==='\n' && html.lastIndexOf(kind==='fn'?'Footnotes\n':'Endnotes\n',off)>=0)return '<span id="note-'+kind+'-'+n+'">'+m+'</span>';
+   return '<a href="#note-'+kind+'-'+n+'">'+m+'</a>';
+ });
  const full=pages.map(p=>{
    let body='',at=0;while(count<sections.length && sections[count].p===p.page){let s=sections[count];body+=esc(span(p.text,at,s.at))+'<span id="section-'+(count+1)+'"></span>';at=s.at;count++;}
-   body+=esc(span(p.text,at));return '<section id="p-'+p.page+'"><h2>'+(paginated?'PDF page '+p.page:'Document text')+'</h2><pre>'+ (body||'[No extractable text on this page.]')+'</pre></section>';
+   body+=esc(span(p.text,at));return '<section id="p-'+p.page+'"><h2>'+(paginated?'PDF page '+p.page:'Document text')+'</h2><pre>'+ ((!paginated?noteLinks(body):body)||'[No extractable text on this page.]')+'</pre></section>';
  }).join('');
- emit(r.slug+'/text.html',frame(r.title+' · full text',description,summary+'<a href="./">Back to sections and commentary</a>'+full,r.slug+'/text.html'));
+ emit(r.slug+'/text.html',frame(r.title+' · full text',description,summary+'<a href="./">Back to sections and commentary</a>'+(!paginated?'<p>Word notes use stable document IDs, such as [fn:8], which can differ from printed footnote numbers.</p>':'')+full,r.slug+'/text.html'));
  guide.push({...r,topics:overviewTopics,count:curated.length,viewpoints:docVoices.length});
 }
 const linksFor=g=>g.sort((a,b)=>b.issued.localeCompare(a.issued)||a.title.localeCompare(b.title)).map(x=>'<li><a href="'+x.slug+'/">'+esc(x.title)+'</a><span>'+esc(x.docket)+' · '+esc(x.issued)+(x.count?' · '+x.count+' cited readings':' · source text')+'</span></li>').join('');

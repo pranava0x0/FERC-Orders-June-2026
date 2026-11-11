@@ -11,7 +11,7 @@ _Last run: 2026-11-10_
 
 ### Run 2026-11-10 (filing reading room, against PR #29)
 
-At 375×812, 768×1024 and 1280×800, the three Overview questions opened the registry access rule (p. 124), exit liability (p. 36) and the one-site definition (p. 109) in one click each. Their citations opened the original page text on the second click. From Overview, News → state-commission tally took two clicks. The same source route worked with JavaScript disabled and a keyboard. The existing 36 panel checks and 51 goal measurements passed on all three viewports.
+At 375×812, 768×1024 and 1280×800, the three Overview questions opened the registry access rule (p. 124), exit liability (p. 36) and the one-site definition (p. 109) in one click each. Their citations opened the original page text on the second click. From Overview, News → state-commission tally took two clicks. The same source route worked with JavaScript disabled and a keyboard. The NYISO rehearing order’s Word reference also opened its qualification about defining large load, with JavaScript disabled at all three widths. All 425 Word-note reference links across 18 originals have a unique target. The existing 36 panel checks and 51 goal measurements passed on all three viewports.
 
 Cold local Chrome, five requests on both versions: 187,570 bytes gzip for PR #29; 171,344 for this refresh (same per-response gzip method). The archive is fetched only through navigation. The News tables load on first opening News. Compact source headings reduced the registry reader from about 165 kB to 62 kB uncompressed while keeping all physical page anchors. Timings on this machine are not estimates of public mobile latency. Reproduce with the two browser commands in REFRESH.md.
 

@@ -63,10 +63,51 @@ def inventory() -> list[dict]:
         raise ValueError("Unsafe reader slug")
     return sorted(rows,key=lambda r:r["slug"])
 
+WORD = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+
+def word_paragraphs(node: ET.Element, refs: set[tuple[str,str]]) -> str:
+    paragraphs = []
+    for paragraph in node.iter(WORD+"p"):
+        parts = []
+        for el in paragraph.iter():
+            name = el.tag.removeprefix(WORD)
+            if name == "t":
+                parts.append(el.text or "")
+            elif name in ("footnoteReference","endnoteReference"):
+                kind = "fn" if name == "footnoteReference" else "en"
+                ident = el.attrib[WORD+"id"]
+                refs.add((kind,ident))
+                parts.append(f"[{kind}:{ident}]")
+            elif name in ("tab","br","cr"):
+                parts.append("\t" if name=="tab" else "\n")
+        paragraphs.append("".join(parts))
+    return "\n".join(paragraphs)
+
 def docx_text(path: Path) -> str:
+    # Word's relationship IDs survive section-level restarts of the printed note numbers.
+    refs: set[tuple[str,str]] = set()
+    notes: set[tuple[str,str]] = set()
     with ZipFile(path) as z:
-        doc=ET.fromstring(z.read("word/document.xml"))
-    return "\n".join("".join(e.text or "" for e in p.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t")) for p in doc.iter("{http://schemas.openxmlformats.org/wordprocessingml/2006/main}p"))
+        body = [word_paragraphs(ET.fromstring(z.read("word/document.xml")), refs)]
+        for key,kind,title in (("footnote","fn","Footnotes"),("endnote","en","Endnotes")):
+            member = f"word/{key}s.xml"
+            if member not in z.namelist(): continue
+            entries = []
+            for entry in ET.fromstring(z.read(member)).findall(WORD+key):
+                if entry.get(WORD+"type","normal") != "normal": continue
+                ident = entry.attrib[WORD+"id"]
+                if (kind,ident) in notes: raise ValueError(f"{path}: duplicate {kind} {ident}")
+                notes.add((kind,ident))
+                entries.append(f"[{kind}:{ident}] " + word_paragraphs(entry, refs).strip())
+            if entries: body.append(title+"\n"+"\n".join(entries))
+        # Headers and footers can contain qualifications as well as pagination fields.
+        # Preserve each template once; a Word document has no stable physical page numbers.
+        for member in sorted(z.namelist()):
+            if not re.fullmatch(r"word/(?:header|footer)\d+\.xml",member): continue
+            text = word_paragraphs(ET.fromstring(z.read(member)),refs).strip()
+            if text: body.append(Path(member).stem + " (Word template)\n" + text)
+        if refs - notes: raise ValueError(f"{path}: missing note(s) {sorted(refs-notes)}")
+    return "\n\n".join(body)
 
 def source_pages(rec: dict) -> tuple[list[str],list[tuple[int,str]]]:
     path=ROOT/rec["file"]
@@ -100,6 +141,8 @@ def sections(pages: list[str], bookmarks: list[tuple[int,str]], paginated: bool)
             if re.fullmatch(r"(?:[IVX]{1,6}|[A-H])\.",line):
                 rest=text[m.end():].lstrip().splitlines()
                 if rest: line+=" "+clean(rest[0])
+            if not paginated and line in ("Footnotes","Endnotes"):
+                starts[(pg,m.start())]=(line,"Word notes")
             if (HEADING.fullmatch(line) or LABEL.fullmatch(line)) and not re.search(r"\.{2,}|\s\d+$",line):
                 starts.setdefault((pg,m.start()),(line,source))
     if not starts:

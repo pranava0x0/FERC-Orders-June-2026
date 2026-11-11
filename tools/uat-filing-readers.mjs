@@ -44,7 +44,10 @@ try{for(const [width,height] of [[375,812],[768,1024],[1280,800]]){
  const staticCtx=await browser.newContext({viewport,javaScriptEnabled:false});const staticPage=await staticCtx.newPage();
  await staticPage.goto(base);await staticPage.getByRole('link',{name:names[0],exact:true}).first().focus();await staticPage.keyboard.press('Enter');await staticPage.locator('section:target cite a').focus();await staticPage.keyboard.press('Enter');await staticPage.waitForURL('**/text.html#p-*');
  assert.ok(await staticPage.locator('section:target pre').isVisible(),'No-JS route failed');
- record.noJs=true; if(record.baseline)assert.ok(stats.requests<=record.baseline.requests,'Extra initial request');
+ await staticPage.goto(new URL('reading/order-el26-69-001-nyiso-rehearing/text.html',base).href);
+ await staticPage.locator('a[href="#note-fn-8"]').first().focus();await staticPage.keyboard.press('Enter');await staticPage.waitForURL('**/text.html#note-fn-8');
+ assert.ok(await staticPage.locator('#note-fn-8').evaluate(e=>(e.nextSibling?.textContent||'').includes('NYISO could propose Tariff revisions establishing its own definition')));
+ record.noJs=true;record.wordNote=true; if(record.baseline)assert.ok(stats.requests<=record.baseline.requests,'Extra initial request');
  results.push(record);await staticCtx.close();await ctx.close();
 }}finally{await browser.close();}
 writeFileSync(join(out,'results.json'),JSON.stringify(results,null,2)+'\n');console.log(JSON.stringify(results,null,2));

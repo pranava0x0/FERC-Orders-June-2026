@@ -8,3 +8,5 @@ A reader should reach an individual PJM clause from the first screen in one acti
 
 
 For other public comments in the same docket family, publish a separate index keyed to the topic and physical page. To qualify, a passage must contain a topic term and an argument or request in the same sentence. Label those as text matches rather than attributing them to a particular speaker or assuming that another subdocket answered the selected section. Unavailable originals appear on the coverage page. The homepage must make no request for the archive or News-only tables; opening News loads those tables once. Verify that the two delivered tables together reproduce the editorial source, including its docket-link function.
+
+Word originals retain footnotes and endnotes from their own XML parts. Each in-body marker links to its note by the durable Word ID, not by an assumed printed number. Include the notes and header/footer templates in the same unpaginated lexical index. The page-quote check may ignore the generated superscript marker when comparing previously transcribed prose; it does not ignore any words in the original.
