@@ -274,6 +274,13 @@ indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
 
 ## Gotchas learned the hard way
 
+- **A green `verify-quotes` run does not mean YOUR quote was checked.** The sweep enumerates named
+  surfaces; anything it does not enumerate passes by not being looked at. Track `status.line` quotes shipped
+  unswept for weeks under an "OK — all 349 verified" line. After adding a quote to any surface, confirm it is
+  in the sweep's output (`node tools/verify-quotes.mjs --list | grep "<your phrase>"`), not just that the run
+  exited 0. When a surface turns out to be unswept, extend `tools/verify-quotes.mjs` and add a test that
+  names the surface, rather than de-quoting the one sentence.
+
 - **pjm.com answers a wrong URL with HTTP 200 and a 26,183-byte page.** Every bad guess at a committee or
   disclosure path returns that same soft 404, so `curl -o file.pdf` leaves a real file on disk and a
   status-only check records a source that does not exist. Three guessed paths passed a 200 check on

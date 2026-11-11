@@ -15,7 +15,7 @@ test("every required (structured) quote is verbatim in its committed source", ()
     `unverified quotes:\n${miss.map((m) => `  ${m.label}: ${m.quote.slice(0, 80)}`).join("\n")}`,
   );
   // coverage floor — the sweep must actually be reaching the data, not silently checking nothing
-  assert.ok(required.length >= 235, `quote coverage floor: ${required.length} >= 235`);
+  assert.ok(required.length >= 240, `quote coverage floor: ${required.length} >= 240`);
 });
 
 // news-tracks-plan.md Part 5 #5. Timeline event bodies were swept by nothing before the 2026-07-28
@@ -29,6 +29,19 @@ test("named-speaker news quotes on the timeline are backed by captured evidence"
     const hit = fromTimeline.find((r) => r.quote.includes(needle));
     assert.ok(hit, `a timeline body quotes "${needle}"`);
     assert.ok(hit.ok, `"${needle}" resolves in sources/news-evidence.json`);
+  }
+});
+
+// 2026-11-11. The "Where things stand" track cards restate the timeline's threads in their own
+// words, quoting the same documents, and nothing swept them: four quotes on the sc6 card and one on
+// gov shipped unchecked. Name the surface, not just the floor, so dropping the sweep fails here.
+test("track status lines are backed by captured evidence", () => {
+  const fromTracks = required.filter((r) => r.label.startsWith("track "));
+  assert.ok(fromTracks.length >= 5, `track sweep is reaching the cards (${fromTracks.length} >= 5)`);
+  for (const needle of ["a suite of section 205 filings", "still under development"]) {
+    const hit = fromTracks.find((r) => r.quote.includes(needle));
+    assert.ok(hit, `a track card quotes "${needle}"`);
+    assert.ok(hit.ok, `"${needle}" resolves in the committed corpus`);
   }
 });
 

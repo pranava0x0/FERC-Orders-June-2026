@@ -252,6 +252,15 @@ for (const e of D.timeline || []) {
   for (const q of proseQuotes(e.body || "")) req(`timeline "${e.title}"`, q, timelineCorpus);
 }
 
+// 3c) Track status lines (REQUIRED). The "Where things stand" card restates the same threads the
+//     timeline carries, and it quoted four documents while being swept by nothing: a quote could ship
+//     on the card that no committed source backs. Same corpus as the timeline, for the same reason.
+for (const [id, t] of Object.entries(D.tracks || {})) {
+  for (const [field, text] of [["status", t.status?.line], ["what", t.what], ["whySeparate", t.whySeparate], ["next", t.next?.note]]) {
+    for (const q of proseQuotes(text || "")) req(`track ${id} ${field}`, q, timelineCorpus);
+  }
+}
+
 // Section IV briefing quotes (REQUIRED) — templated across the six §206 orders, so check each against the
 // union of order texts. (These render on every §206 card; they must NOT silently attach to a card whose
 // order doesn't contain them, e.g. the E-2 final order.)

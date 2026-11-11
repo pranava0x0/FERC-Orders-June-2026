@@ -7,6 +7,26 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 
 ## Open
 
+- **2026-11-11 · test/data · the quote sweep never reached the "Where things stand" track cards, so five
+  quotes shipped checked by nothing.** `tools/verify-quotes.mjs` sweeps timeline bodies, briefing questions,
+  docket prose and the Overview summary, but not `tracks[].status.line` — the card that restates the same
+  threads in the curator's own words and quotes the same documents. Four quotes on the sc6 card and one on
+  gov had been rendering unverified. Found by checking whether a newly added quote was actually in the
+  sweep's output rather than trusting the run's "OK". Root cause: **test** (a surface the sweep was never
+  extended to). Status: **Fixed 2026-11-11**, the sweep now covers `status.line`, `what`, `whySeparate` and
+  `next.note` for every track as REQUIRED, with a named regression test in `tests/quote-coverage.test.mjs`
+  and the coverage floor raised to 240. All 354 required quotes verify.
+
+- **2026-11-11 · data · three displayed surfaces called the American Clean Power Association a "load" trade
+  group, and two overcounted the letters PJM answered.** The Nov 5 CEO-letter entries said PJM wrote to
+  "four load trade groups" (Timeline title, Overview summary, PJM filing-matrix gist) when ACP is a
+  generation and storage association — the same dataset calls it "the clean-energy and storage trade group"
+  elsewhere. The source note and the timeline body also said the reply answered "four separate letters" when
+  the site's own `cebadcc1002` record is one joint CEBA and Data Center Coalition letter and the PDF states
+  no count. A third entry rendered ITI's "useful example" of SPP's CHILLS framework as "a model". Root
+  cause: **data** (characterizations written past what the source carries). Status: **Fixed 2026-11-11** in
+  the review pass; the sc6 track card also now carries the Nov 5 letters it had been missing.
+
 - **2026-11-11 · tooling/process · the documented gate chain omitted the delivery build, so a `data.js` edit
   would have shipped stale.** `docs/js/data.js` is a source file the browser never loads; `core-data.js` and
   `news-data.js` are built from it by `tools/build-delivery-data.mjs`. That command appeared nowhere in
