@@ -1,0 +1,41 @@
+{
+ "slug": "filing-20260902-5107",
+ "summary": "The Southern Regulators (Mississippi, Arkansas and Louisiana commissions) answer in support of a motion by public interest organizations to move the comment deadline on MISO's Zero-Injection Generator Interconnection Agreement proposal from September 8 to September 15, 2026.",
+ "ask": "Grant the public interest organizations' request to extend the ER26-3552 comment deadline from September 8 to September 15, 2026.",
+ "points": [
+  {
+   "point": "The Southern Regulators back a seven-day extension of the comment deadline, from September 8 to September 15, 2026.",
+   "quote": "The PIOs request that the Federal Energy Regulatory Commission (Commission) extend the comment deadline in this proceeding by seven days from September 8, 2026, to September 15, 2026.",
+   "pg": 1
+  },
+  {
+   "point": "They describe the ZGIA as part of MISO's response to the June 18 show cause order, which offered a choice between explaining the tariff and filing amendments.",
+   "quote": "The ZGIA proposal is part of MISO’s response to a recent Show Cause Order,",
+   "pg": 1
+  },
+  {
+   "point": "The ZGIA is a novel framework for studying generators that are co-located with and exclusively serve large loads.",
+   "quote": "The ZGIA framework is MISO’s novel proposal to study the interconnection of generating facilities that are co-located with",
+   "pg": 1,
+   "pgEnd": 2
+  },
+  {
+   "point": "As retail regulators, they cite their interest in the ZGIA's reliability effect in MISO South and its fit with MISO's overall response.",
+   "quote": "the Southern Regulators have a substantial interest in understanding how the ZGIA proposal will impact reliability in MISO South and fit into MISO’s holistic Show Cause Order Response.",
+   "pg": 2
+  }
+ ],
+ "throughLine": {
+  "relation": "procedural",
+  "anchors": [
+   "e-8-show-cause",
+   "e-8-services-for-flexible-co-located"
+  ],
+  "text": "Seeks more time to comment on MISO's ZGIA proposal, which the filers describe as part of MISO's response to the E-8 show cause order covering co-located loads."
+ },
+ "themes": [
+  "procedure",
+  "colo",
+  "retail"
+ ]
+}

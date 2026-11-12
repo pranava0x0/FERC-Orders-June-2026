@@ -1,0 +1,19 @@
+{
+  "slug": "protest-er27-25-bloom",
+  "summary": "Bloom Energy files a limited protest of MISO's LARS filing. It supports LARS and a December 2, 2026 effective date but objects to the 200 MW minimum load size and asks FERC to align it with MISO's 50 MW Large Load definition.",
+  "ask": "Accept LARS effective December 2, 2026 and direct a 60-day compliance filing that either aligns eligibility with the 50 MW Large Load definition or supplies evidence for the 200 MW minimum.",
+  "points": [
+    {"point": "Bloom supports LARS and its December 2 effective date, and protests only the 200 MW minimum.", "quote": "Bloom protests one element only: the 200 MW minimum load size.", "pg": 1},
+    {"point": "Bloom says MISO lowered the threshold from 250 MW to 200 MW without new analysis.", "quote": "MISO presents no EPR results or other grid impact study for 200 MW, and none for loads below it.", "pg": 2},
+    {"point": "The 200 MW floor departs from the 50 MW definition in the show cause order and in MISO's pending IRR filing.", "quote": "The Show Cause Order identified a reasonable large load definition as a single-site commercial or industrial customer with peak load of 50 MW or greater.", "pg": 2},
+    {"point": "Bloom argues paired loads below 200 MW are similarly situated and that the ten-pair cap already focuses each study cycle.", "quote": "And the ten-pair cap, not a size threshold, already preserves the focus of each study cycle.", "pg": 3},
+    {"point": "Bloom says the right screen is connection to the Transmission System, so LARS should cover loads of 50 MW or more.", "quote": "LARS should therefore apply to loads of 50 MW or more that connect to the Transmission System.", "pg": 4},
+    {"point": "If the minimum falls, Bloom asks FERC to conform the 200 MW generation-side minimum in Section 3.12.2.", "quote": "it should direct a conforming change to Section 3.12.2, which separately requires at least 200 MW of Network Resource Interconnection Service at each Point of Interconnection.", "pg": 5}
+  ],
+  "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "Protests one eligibility element of MISO's LARS response to the E-8 show cause order, arguing the 200 MW floor departs from the order's 50 MW large load definition."},
+  "themes": ["proximate", "study"],
+  "figures": [
+    {"label": "LARS minimum load size proposed by MISO", "value": 200, "unit": "MW", "quote": "the 200 MW minimum load size", "pg": 1},
+    {"label": "Large Load definition threshold in the show cause order", "value": 50, "unit": "MW", "quote": "peak load of 50 MW or greater", "pg": 2}
+  ]
+}

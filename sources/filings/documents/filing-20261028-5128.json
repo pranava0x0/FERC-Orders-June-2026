@@ -1,0 +1,16 @@
+{
+ "slug": "filing-20261028-5128",
+ "summary": "The Midwest TDUs answer MISO's October 13 answer, saying it confirms the requirements do not reach distribution-connected loads but does not fix the Tariff language or explain how agreements with Large Loads will show compliance.",
+ "ask": "Issue a deficiency letter directing MISO to address both issues and revise the proposed Tariff language to reflect the clarifications.",
+ "points": [
+  {"point": "The TDUs say MISO's answer confirms intent to exclude distribution-connected loads but does not show the Tariff language does so.", "quote": "it fails to show that this critical threshold issue is unambiguously addressed in the proposed Tariff language.", "pg": 2},
+  {"point": "They say MISO gave no added clarity on how a Transmission Customer's agreement with a Large Load will assign compliance responsibilities.", "quote": "MISO’s Answer fails to provide additional clarity as to how it will effectuate a Transmission Customer’s agreement with a Large Load", "pg": 2},
+  {"point": "They want the Large Load definition to say it interconnects to the transmission system, as the E-8 order's suggested definition does.", "quote": "MISO’s Tariff language should explicitly define Large Loads as those that “interconnect[] to the transmission system,”", "pg": 4},
+  {"point": "They ask for a deficiency letter and Tariff revisions.", "quote": "The Commission should therefore issue a deficiency letter directing MISO to address these issues and require revisions to the proposed Tariff language", "pg": 2}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "Answer in the MISO reliability-requirements docket that relies on the E-8 order's suggested large-load definition (P 58), which refers to interconnection at the transmission system."},
+ "themes": ["registry"],
+ "figures": [
+  {"label": "Voltage level in NERC computational load registry criteria", "value": 100, "unit": "kV", "quote": "connected at a voltage level greater than or equal to 100 kV from one or more points of connection", "pg": 4}
+ ]
+}

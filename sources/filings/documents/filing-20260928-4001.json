@@ -1,0 +1,19 @@
+{
+ "slug": "filing-20260928-4001",
+ "summary": "House Energy and Commerce Ranking Member Frank Pallone writes FERC Chairman Swett on PJM's backstop procurement (ER26-3380) and registry filing (ER26-3515). He supports them in part and asks for changes that put more cost on data center load.",
+ "ask": "Approve PJM's proposals in part, with changes: zonal cost allocation, no three-year sunset on the bring-your-own-capacity requirement, no downtime compensation, a public registry, and state access to cost data.",
+ "points": [
+  {"point": "Pallone urges FERC to approve PJM's two proposals in part, with exceptions.", "quote": "I urge FERC to approve them in part, with a few important exceptions.", "pg": 1},
+  {"point": "He supports requiring data centers to bring new generation and excluding those that refuse from the capacity auction.", "quote": "it must retain a critical provision to exclude any future data center load that refuses to procure its own generation capacity from PJM's capacity auction.", "pg": 2},
+  {"point": "He says the backstop covers only the roughly 6.8 GW gap and wants all data center capacity costs allocated to the zones driving growth.", "quote": "The RBP only covers the approximately 6.8 gigawatt gap between PJM's reliability targets and recent generation capacity", "pg": 2, "pgEnd": 3},
+  {"point": "He asks FERC to reject the provision that ends the bring-your-own-capacity requirement after three years of meeting the reliability requirement.", "quote": "letting new data centers off the hook after three years without a crisis does not meet the moment.", "pg": 3},
+  {"point": "He wants PJM's large load registry to be public as far as possible.", "quote": "that registry – or as much of it as possible – must be public.", "pg": 3},
+  {"point": "He asks FERC to ensure state regulators get the information needed to allocate data center costs, and to act quickly on the show cause orders.", "quote": "to act expeditiously in its related show-cause orders for grid operators around the country.", "pg": 4}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-cost-transparency", "e-7-adequacy-report"], "text": "A congressional letter in the PJM backstop and registry dockets that also asks FERC to act quickly on the show cause orders and to give state regulators the data to allocate large-load costs."},
+ "themes": ["adequacy", "registry", "cost", "retail"],
+ "figures": [
+  {"label": "PJM capacity market cost increase attributed to data centers since summer 2024", "value": 30, "unit": "$ billion", "quote": "Data centers are responsible for an increase in PJM capacity market costs of nearly $30 billion since the summer of 2024", "pg": 1, "pgEnd": 2},
+  {"label": "Gap covered by PJM's Reliability Backstop Procurement", "value": 6.8, "unit": "GW", "quote": "approximately 6.8 gigawatt gap", "pg": 2}
+ ]
+}

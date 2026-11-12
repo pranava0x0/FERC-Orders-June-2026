@@ -1,0 +1,13 @@
+{
+ "slug": "filing-20260918-5323",
+ "summary": "The Mississippi and Arkansas public service commissions protest MISO's large-load reliability filing as too general to design equipment against, and object to placing the requirements in Business Practice Manuals.",
+ "ask": "Condition acceptance of MISO's filing on MISO filing the specific interconnection requirements in the Tariff, not in the Business Practice Manuals.",
+ "points": [
+  {"point": "The Southern Regulators say the filing gives only a general overview that developers cannot build to.", "quote": "It lacks the specific detail needed to actually interconnect to the grid.", "pg": 1},
+  {"point": "They warn that equipment may need costly replacement once MISO publishes the actual requirements.", "quote": "only to then replace that equipment at great expense after MISO later publishes the actual requirements.", "pg": 1},
+  {"point": "They object to putting the requirements in BPMs, which MISO can change with little market participant input.", "quote": "when it finally develops the requirements, MISO unreasonably proposes to place them in Business Practice Manuals (BPMs).", "pg": 1},
+  {"point": "They support Entergy's limited protest that the rule of reason puts such requirements in the Tariff.", "quote": "the Rule of Reason mandates that these requirements be placed in the Tariff where they are subject to FERC’s oversight to ensure they are just and reasonable.", "pg": 2}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "Protest of MISO's first large-load filing after the E-8 order, arguing that operational requirements for large loads belong in the FERC-jurisdictional Tariff."},
+ "themes": ["registry", "procedure"]
+}

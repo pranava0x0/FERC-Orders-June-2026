@@ -1,0 +1,102 @@
+{
+ "slug": "filing-er27-330-pjm-rbp-amendments",
+ "summary": "PJM files section 205 amendments to its Reliability Backstop Procurement to answer the September 29 order, changing how costs are allocated to zones, cutting the LSE credit rate, adding surety bonds and shifting exit charges to LSEs, and asks for an order by January 29, 2027.",
+ "ask": "Accept the RBP amendments effective February 28, 2027 (section 18.3A effective January 29, 2027), set a 32-day comment period, act by January 29, 2027, and grant a one-time waiver of Attachment DD sections 16.2 and 16.3.",
+ "points": [
+  {
+   "point": "The filing proposes new rules on who pays RBP Charges, LSE credit, and notice to exiting LSEs.",
+   "quote": "this filing proposes modifications to establish just and reasonable rules to (i) allocate responsibility for RBP Charges to certain Load Serving Entities (“LSE”); (ii) require LSEs responsible for RBP Charges to post an appropriate level of credit;",
+   "pg": 1
+  },
+  {
+   "point": "PJM asks for February 28, 2027 effectiveness for most revisions and an order by January 29, 2027.",
+   "quote": "PJM is also requesting that the Commission issue an order on all aspects of this filing no later than January 29, 2027",
+   "pg": 2
+  },
+  {
+   "point": "PJM requests a 32-day comment period ending November 30, 2026.",
+   "quote": "PJM moves for the Commission to establish an extended, 32-day comment period, such that comments and interventions would be due November 30, 2026.",
+   "pg": 2
+  },
+  {
+   "point": "Electric Distributors would report aggregate incremental Large Load peak growth in place of Load Adjustment data as the allocation basis.",
+   "quote": "rather than relying on Load Adjustment data as a proxy for Large Load growth, PJM is proposing to require Electric Distributors outside of a Fixed Resource Requirement (“FRR”) Service Area to report, by no later than seven days prior to the commencement of the RBP, the aggregate incremental peak Large Load growth between the 2026 actual summer peak and the 2028/2029 Delivery Year expected summer peak",
+   "pg": 7
+  },
+  {
+   "point": "PJM cuts the LSE credit rate to 40% of net present value, about $686,000 per MW at most, from $1.5 million per MW.",
+   "quote": "PJM proposes to set the RBP Credit Rate at 40% of the net present value of the total RBP payment obligation.",
+   "pg": 22
+  },
+  {
+   "point": "PJM lengthens the notice before LSE collateral is due, from 15 days to at least 75 days.",
+   "quote": "PJM is proposing that LSEs be provided at least 75 days’ notice of their collateral obligation prior to a given Delivery Year before the LSE must have the requisite RBP Collateral posted.",
+   "pg": 26
+  },
+  {
+   "point": "PJM adds surety bonds to the accepted forms of RBP collateral.",
+   "quote": "PJM is proposing to revise the definition of RBP Collateral to include surety bonds,",
+   "pg": 27
+  },
+  {
+   "point": "On Transmission Owner exit, PJM would charge the exiting LSEs for their allocated RBP Charges.",
+   "quote": "PJM proposes to require that LSEs, rather than exiting Transmission Owners, cover costs commensurate with the RBP Charges allocated to them.",
+   "pg": 32
+  },
+  {
+   "point": "PJM keeps the 2028/2029 auction shortfall as the Initial RBP Target basis and updates load and resource inputs.",
+   "quote": "PJM proposes to retain the 2028/2029 Delivery Year as the basis for the Initial RBP Target while updating the",
+   "pg": 55,
+   "pgEnd": 56
+  },
+  {
+   "point": "PJM seeks a one-time waiver of the shortage investigation requirement if the 2029/2030 auction clears short, and expects to start the RBP March 1, 2027.",
+   "quote": "PJM seeks a one-time waiver of Tariff, Attachment DD, section 16.2 upon completion of the 2029/2030 Base Residual Auction in the event such auction clears short.",
+   "pg": 60
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-7-adequacy-report",
+   "e-7-cost-recovery-agreement"
+  ],
+  "text": "Revises PJM's backstop capacity procurement for large-load growth in ER27-330, the capacity adequacy and cost allocation track that runs beside the E-7 report on ensuring adequate generation."
+ },
+ "themes": [
+  "adequacy",
+  "cost",
+  "credit",
+  "procedure"
+ ],
+ "figures": [
+  {
+   "label": "Revised RBP Credit Rate as share of NPV of RBP payments",
+   "value": 40,
+   "unit": "%",
+   "quote": "PJM proposes to set the RBP Credit Rate at 40% of the net present value of the total RBP payment obligation.",
+   "pg": 22
+  },
+  {
+   "label": "Illustrative revised RBP Credit Rate",
+   "value": 686000,
+   "unit": "$/MW",
+   "quote": "an illustrative RBP Credit Rate of approximately $686,000 per MW",
+   "pg": 22
+  },
+  {
+   "label": "Initial RBP Credit Rate originally proposed",
+   "value": 1.5,
+   "unit": "$ million/MW",
+   "quote": "the $1.5 million/MW RBP Credit Rate PJM initially proposed",
+   "pg": 22
+  },
+  {
+   "label": "Assumed weighted-average RBP clearing price",
+   "value": 555,
+   "unit": "$/MW-day",
+   "quote": "$555/MW-day",
+   "pg": 22
+  }
+ ]
+}

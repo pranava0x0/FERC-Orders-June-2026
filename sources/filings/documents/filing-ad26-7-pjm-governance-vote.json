@@ -1,0 +1,12 @@
+{
+ "slug": "filing-ad26-7-pjm-governance-vote",
+ "summary": "PJM informs FERC that its Members Committee approved a Members term sheet by a two-thirds sector-weighted vote on September 30, 2026, in the confidential governance talks under AD26-7, and that state representatives find it unsatisfactory.",
+ "ask": null,
+ "points": [
+  {"point": "Confidential talks facilitated by FERC's Dispute Resolution Service began September 1.", "quote": "on September 1st, representatives of PJM, the states in the region, Members, and stakeholders commenced confidential and privileged discussions facilitated by FERC's Dispute Resolution Service.", "pg": 1},
+  {"point": "The Members term sheet won the required two-thirds vote over the PJM and Consumer Advocates term sheets.", "quote": "The Members term sheet, sponsored by a group of PJM Members, received the requisite sector-weighted two-thirds majority vote of the PJM Members Committee", "pg": 1},
+  {"point": "PJM reports that the Organization of PJM States and the Governors' Collaborative do not view the approved term sheet as satisfactory.", "quote": "the Organization of PJM States, Inc., the PJM Governors' Collaborative and other state representatives do not view the approved term sheet as satisfactory.", "pg": 1}
+ ],
+ "throughLine": {"relation": "context", "anchors": [], "text": "A PJM governance update in AD26-7. It has no direct tie to a show cause directive, though it concerns the stakeholder process surrounding PJM's large-load filings."},
+ "themes": ["procedure"]
+}

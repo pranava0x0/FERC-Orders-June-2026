@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20260622-5134",
+ "summary": "Vermont Electric Cooperative asks FERC for an errata to the E-11 ISO-NE show cause order, removing it from the caption and listing it with the non-jurisdictional Participating Transmission Owners, because it left public utility status in 2005.",
+ "ask": "Issue an errata removing VEC from the caption and adding it to footnote 10, or alternatively rescind the show cause order as to VEC.",
+ "points": [
+  {"point": "VEC says it does not challenge the need to address large and co-located load service and calls its request procedural.", "quote": "VEC’s request is purely procedural.", "pg": 2},
+  {"point": "VEC says it ceased to be a public utility on August 8, 2005 under the Energy Policy Act of 2005.", "quote": "it ceased to be a public utility on August 8, 2005 because the changes to the Federal Power Act effective as of that date exempted electric cooperatives that sell less than four (4) million megawatt hours annually.", "pg": 3},
+  {"point": "VEC says it is similarly situated to the non-public-utility owners already listed in footnote 10.", "quote": "VEC is a PTO within ISO-NE but it is a PTO that is similarly situated to all of the other of the non-jurisdictional entities listed in footnote 10 of the Order.", "pg": 4},
+  {"point": "VEC points to the CAISO order, which offered to rescind the show cause order for a non-public utility that asks.", "quote": "we will rescind the show cause order against them at their request", "pg": 4},
+  {"point": "VEC requests the caption and footnote corrections, or rescission as an alternative.", "quote": "removes VEC from the caption of Docket No. EL26-72-000, which intended to identify only ISO-NE and jurisdictional PTOs; and (2) adds VEC in the list of non-jurisdictional PTO entities in footnote 10.", "pg": 5}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-11-show-cause"], "text": "Seeks correction of who is a named respondent to the E-11 show cause order; FERC granted it in a July 9, 2026 errata notice."},
+ "themes": ["procedure"]
+}

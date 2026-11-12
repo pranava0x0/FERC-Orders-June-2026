@@ -162,7 +162,7 @@
           "</span> by " + esc(s.revised.by) + ". " + esc(s.revised.note) + "</p>" : "") +
         (s.dateNote && x.date ? '<p class="proc-note mono">' + esc(s.dateNote) + "</p>" : "") + landChip + "</div></li>";
     }).join("");
-    return '<span id="proc-h" class="jump-anchor"></span>' + head("What happens next: the §206 procedural clock", P.basis) +
+    return '<span id="proc-h" class="jump-anchor"></span><p class="acc-lede">' + esc(P.basis) + "</p>" +
       '<ol class="proc-board">' + rows + "</ol>" +
       // Two clocks, one date: the §206 show-cause step and the separate EL25-49 co-location compliance
       // filing have repeatedly landed on the same day, which is exactly the confusion the tracks model
@@ -461,49 +461,111 @@
     }).join('');
     return '<section class="reader-leads' + (compact ? ' compact' : '') + '" aria-label="Questions in the filings">' + rows + '</section>';
   }
-  function renderOverview() {
-    // The two deadline cards read as forever-pending until they say where the clock actually is. State
-    // comes from the same today-comparison the procedural board uses, so the three never disagree.
-    var stats = '<div class="kpis">' + D.kpis.map(function (k) {
-      var state = "";
-      if (k.step) {
-        var w = pmStepWhen(k.step);
-        if (w) state = '<div class="kpi-state ' + (w.flag === "Passed" ? "past" : "upcoming") + '">' +
-          esc(w.flag) + ' <span class="mono">' + esc(w.when) + "</span></div>";
-      }
-      return '<div class="kpi' + (k.deadline ? " deadline" : "") + '"><div class="v">' + esc(k.value) +
-        '</div><div class="l">' + esc(k.label) + '</div><div class="s">' + esc(k.sub) + "</div>" + state + "</div>";
-    }).join("") + "</div>";
+  function todayISO() { var t = new Date(); t.setHours(0, 0, 0, 0); return t.getFullYear() + "-" + ("0" + (t.getMonth() + 1)).slice(-2) + "-" + ("0" + t.getDate()).slice(-2); }
+  function daysUntil(iso) {
+    if (!iso) return NaN;
+    var t = new Date(); t.setHours(0, 0, 0, 0);
+    return Math.round((new Date(String(iso).slice(0, 10) + "T00:00:00") - t) / 86400000);
+  }
+  function inDays(n) { return n === 0 ? "today" : n === 1 ? "tomorrow" : n > 1 ? "in " + n + " days" : n === -1 ? "yesterday" : (-n) + " days ago"; }
+  function firstSentence(t) { var m = String(t || "").match(/^.+?[.!?](?=\s+[A-Z“(]|$)/); return m ? m[0] : String(t || ""); }
+  function isoOf(e) { return String(e.iso || "").slice(0, 10); }
 
+  // Swimlane graphic: one lane per track, a mark per dated timeline entry, a line for today. The months
+  // before the June 18 orders are compressed to the first fifth of the width so the post-order record,
+  // where nearly every event sits, gets the room. Marks link into the Timeline filtered to their track.
+  function timelineGraphic() {
+    var ids = Object.keys(D.tracks || {});
+    var ev = (D.timeline || []).filter(function (e) { return /^\d{4}-\d{2}-\d{2}/.test(e.iso || "") && D.tracks[e.track]; });
+    if (!ids.length || !ev.length) return "";
+    var t0 = Date.parse("2025-10-01"), tJ = Date.parse("2026-06-01"), t1 = Date.parse("2027-02-01");
+    var W = 1000, L = 150, R = 16, lane = 30, top = 26, H = top + ids.length * lane + 8, usable = W - L - R;
+    var x = function (iso) {
+      var t = Date.parse(String(iso).slice(0, 10));
+      var f = t < tJ ? 0.2 * (t - t0) / (tJ - t0) : 0.2 + 0.8 * (t - tJ) / (t1 - tJ);
+      return L + Math.max(0, Math.min(1, f)) * usable;
+    };
+    var ticks = ["2025-10-01", "2026-01-01", "2026-06-01", "2026-07-01", "2026-08-01", "2026-09-01", "2026-10-01", "2026-11-01", "2026-12-01", "2027-01-01"];
+    var MONS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var axis = ticks.map(function (d) {
+      var X = x(d).toFixed(1), m = +d.slice(5, 7);
+      return '<line x1="' + X + '" x2="' + X + '" y1="' + (top - 6) + '" y2="' + (H - 6) + '" class="tg-grid"/>' +
+        '<text x="' + X + '" y="' + (top - 10) + '" class="tg-month">' + MONS[m - 1] + (m === 1 || d === ticks[0] ? " ’" + d.slice(2, 4) : "") + "</text>";
+    }).join("");
+    var lanes = ids.map(function (id, i) {
+      var y = top + i * lane + lane / 2;
+      return '<a href="#timeline/track/' + esc(id) + '"><text x="0" y="' + (y + 4) + '" class="tg-lane">' + esc(D.tracks[id].short || D.tracks[id].label) + "</text></a>" +
+        '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + y + '" y2="' + y + '" class="tg-rail"/>';
+    }).join("");
+    var marks = ev.map(function (e) {
+      var y = top + ids.indexOf(e.track) * lane + lane / 2, X = x(e.iso).toFixed(1);
+      var shape = e.kind === "deadline"
+        ? '<rect x="' + (X - 5) + '" y="' + (y - 5) + '" width="10" height="10" transform="rotate(45 ' + X + " " + y + ')" class="tg-m tg-' + esc(e.kind) + '"/>'
+        : '<circle cx="' + X + '" cy="' + y + '" r="4.5" class="tg-m tg-' + esc(e.kind) + '"/>';
+      return '<a href="#timeline/track/' + esc(e.track) + '" aria-label="' + esc(e.date + ": " + e.title) + '"><title>' + esc(e.date + ": " + e.title) + "</title>" + shape + "</a>";
+    }).join("");
+    var tx = x(todayISO()).toFixed(1);
+    var today = '<line x1="' + tx + '" x2="' + tx + '" y1="' + (top - 4) + '" y2="' + (H - 4) + '" class="tg-today"/><text x="' + tx + '" y="' + (H) + '" class="tg-today-l">today</text>';
+    return '<figure class="tg"><div class="tg-scroll"><svg viewBox="0 0 ' + W + " " + (H + 6) + '" role="img" aria-labelledby="tg-cap">' + axis + lanes + marks + today + "</svg></div>" +
+      '<figcaption id="tg-cap">' + ev.length + ' dated entries across ' + ids.length + ' proceedings. Circles are actions; diamonds are deadlines. Months before June 2026 are compressed. Select a lane or mark to open its timeline.</figcaption></figure>';
+  }
+
+  // One row per order: the operator, its reset deadline, what it has said it will file, and the two
+  // places to go next. The plan text is the filing matrix's own observation, so the two never disagree.
+  function operatorTable() {
+    var ps = procStatus();
+    var STATUS = { "signaled": "Said it will file", "filed-verified": "Filed", "filed-reported": "Reported filed", "upcoming": "Not yet due", "none-observed": "Nothing observed" };
+    var rows = (D.dockets || []).map(function (d) {
+      var c = filingCell(d.docket, "showcause", ps), due = d.abeyance && d.abeyance.due;
+      var gist = c.obs ? c.obs.gist : "";
+      var n = daysUntil(due);
+      return '<tr><th scope="row"><a href="#dockets">' + esc(d.rto) + '</a> <span class="ot-item">' + esc(d.item) + " · " + esc(d.docket.replace(/-000$/, "")) + "</span></th>" +
+        '<td class="ot-due">' + (due ? '<span class="mono">' + esc(fmtISO(due).replace(/, \d{4}$/, "")) + "</span>" + (n >= 0 ? ' <span class="ot-days">' + inDays(n) + "</span>" : "") : '<span class="na">Not dated</span>') + "</td>" +
+        '<td><span class="ot-status st-' + esc(c.status) + '">' + esc(STATUS[c.status] || c.status) + "</span> " + esc(firstSentence(gist)) + "</td>" +
+        '<td class="ot-go"><a href="#filings/sc-' + esc(d.rto.toLowerCase().replace(/[^a-z]/g, "")) + '">Filings</a></td></tr>';
+    }).join("");
+    return '<div class="table-wrap"><table class="ot"><thead><tr><th>Operator and order</th><th>Response due</th><th>What it has said or filed</th><th></th></tr></thead><tbody>' + rows + "</tbody></table></div>";
+  }
+
+  function renderOverview() {
+    var today = todayISO();
+    var dated = (D.timeline || []).filter(function (e) { return /^\d{4}-\d{2}-\d{2}/.test(e.iso || ""); });
+    var next = dated.filter(function (e) { return e.kind === "deadline" && isoOf(e) >= today; })
+      .sort(function (a, b) { return a.iso < b.iso ? -1 : 1; }).slice(0, 4);
+    var latest = dated.filter(function (e) { return isoOf(e) <= today && e.kind !== "deadline"; })
+      .sort(function (a, b) { return a.iso < b.iso ? 1 : -1; }).slice(0, 6);
+    var pill = function (e) { var t = D.tracks[e.track]; return t ? '<a class="trackpill" href="#timeline/track/' + esc(e.track) + '">' + esc(t.short) + "</a>" : ""; };
+    var nextList = '<ol class="now-next">' + next.map(function (e) {
+      var n = daysUntil(e.iso);
+      return '<li><span class="nn-date"><span class="mono">' + esc(fmtISO(isoOf(e)).replace(/, \d{4}$/, "")) + '</span><span class="nn-days">' + inDays(n) + "</span></span>" +
+        '<span class="nn-t">' + esc(e.title) + " " + pill(e) + "</span></li>";
+    }).join("") + "</ol>";
+    var latestList = '<ol class="now-latest">' + latest.map(function (e) {
+      return '<li><span class="mono nl-date">' + esc(fmtISO(isoOf(e)).replace(/, \d{4}$/, "")) + '</span><a href="#timeline/track/' + esc(e.track) + '">' + esc(e.title) + "</a> " + pill(e) + "</li>";
+    }).join("") + "</ol>";
+    var f = D.meta.spotlight;
+    var links = f.links.map(function (link) {
+      return '<a href="#filings/' + esc(link.group) + '">' + esc(link.label) + "</a>";
+    }).join("");
     var m = D.meta;
     var glance = '<dl class="glance">' +
       "<div><dt>Authority</dt><dd>" + esc(m.authority) + "</dd></div>" +
-      '<div><dt>Items &amp; dockets</dt><dd class="mono">' + esc(m.items) + "</dd></div>" +
+      '<div><dt>Items and dockets</dt><dd class="mono">' + esc(m.items) + "</dd></div>" +
       '<div><dt>Reporter cite</dt><dd class="mono">' + esc(m.citeRange) + "</dd></div>" +
       "<div><dt>Commission</dt><dd>" + esc(m.commissioners) + "</dd></div>" +
-      '<div><dt>As of</dt><dd class="mono">' + esc(m.capture) + "</dd></div>" +
+      '<div><dt>Order record as of</dt><dd class="mono">' + esc(m.capture) + "</dd></div>" +
       "</dl>";
-
-    // Measured 2026-10-19 (tools/uat-playwright.mjs): the filing matrix sat 7.9 screens down a phone and
-    // the commissioner statements 15, with nothing above the fold pointing at either. The jump row is
-    // four in-page buttons (not hash links, which the tab router would read as a tab), and the status
-    // strip moves above the summary because it is the one part of this tab that changes every sweep.
-    var jumps = [["#stand-h", "Where things stand"], ["#proc-h", "The clock"], ["#fm-h", "Filing matrix"]];
-    var jumpRow = '<nav class="jump-row" aria-label="On this page">' + jumps.map(function (j) {
-      return '<button type="button" class="jump-btn" data-jump="' + j[0] + '">' + esc(j[1]) + "</button>";
-    }).join("") + "</nav>";
-    var f = m.spotlight;
-    var links = f.links.map(function (link) {
-      return '<a href="#filings/' + esc(link.group) + '/' + esc(link.filer) + '">' + esc(link.label) + '</a>' +
-        (link.page ? '<a href="' + esc(D.SOURCES[link.source].url) + '#page=' + link.page +
-          '" target="_blank" rel="noopener noreferrer">' + esc(link.label) + ' PDF, p. ' + link.page + '</a>' : "");
-    }).join("");
-    var latest = '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' +
-      esc(f.title) + '</h2><p>' + esc(f.answer) + '</p><div>' + links + '</div></section>';
-    return latest + readingLeads(true) + jumpRow +
-      renderStandStrip() +
-      '<div class="overview-bg">' + paras(m.summary) + "</div>" +
-      stats + renderProcedural() + glance;
+    return '<div class="now-grid">' +
+      '<section class="now-card now-next-card" aria-labelledby="now-next-h"><h2 id="now-next-h">Coming up</h2>' + nextList + "</section>" +
+      '<section class="now-card" aria-labelledby="now-latest-h"><h2 id="now-latest-h">Latest in the record</h2>' + latestList +
+      '<p class="now-more"><a href="#filings">Every filing, by proceeding</a> · <a href="#timeline">Full timeline</a></p></section>' +
+      "</div>" +
+      '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' + esc(f.title) + "</h2><p>" + esc(f.answer) + "</p><div>" + links + "</div></section>" +
+      '<section aria-labelledby="ops-h"><span id="stand-h" class="jump-anchor"></span><h2 class="now-h" id="ops-h">Where each operator stands</h2>' + operatorTable() + "</section>" +
+      '<section aria-labelledby="tg-h"><h2 class="now-h" id="tg-h">The record so far</h2>' + timelineGraphic() + "</section>" +
+      accSection("Status by proceeding", "One line per proceeding, as of the last sweep.", renderStandStrip(), false, Object.keys(D.tracks || {}).length) +
+      accSection("The 60-day clock and who has filed", "The procedural steps every order set, and what each operator filed against them.", renderProcedural(), false, null) +
+      accSection("Background: from the DOE directive to the June orders", "", paras(m.summary) + glance, false, null);
   }
 
   // "Where things stand": one line per track, generated from the registry so there is no second copy of
@@ -679,6 +741,27 @@
   }
 
   /* ---- TAB: Reforms (the five categories + jurisdiction + regional) ---- */
+  // Reform rows × orders: every directive in data.js carries its reform key, so this grid is the
+  // through line the Filings tab cites (tools/build-order-anchors.mjs reads the same entries).
+  var REFORM_EXTRA = { registry: "Defining a large load", procedure: "Procedure", adequacy: "Resource adequacy" };
+  function orderMatrix() {
+    var orders = D.dockets.concat(D.colocation ? [D.colocation] : []);
+    var keys = D.categories.map(function (c) { return c.key; });
+    orders.forEach(function (o) { (o.dir || []).forEach(function (x) { if (keys.indexOf(x.reform) < 0) keys.push(x.reform); }); });
+    var title = function (k) { var c = D.categories.filter(function (x) { return x.key === k; })[0]; return c ? c.title : (REFORM_EXTRA[k] || k); };
+    var rows = keys.map(function (k) {
+      var chips = [];
+      orders.forEach(function (o) {
+        (o.dir || []).forEach(function (x) {
+          if (x.reform !== k) return;
+          chips.push('<li><a href="' + esc(o.pdf) + '#page=' + x.pg + '" target="_blank" rel="noopener noreferrer" title="' + esc("“" + x.q + "”") + '">' +
+            '<span class="om-rto">' + esc(o.rto + (o.item === "E-2" ? " co-location" : "")) + '</span> ' + esc(x.t) + ' <span class="om-pg mono">' + esc(x.p) + ', p. ' + x.pg + '</span></a></li>');
+        });
+      });
+      return '<div class="om-row"><h3 class="om-h">' + esc(title(k)) + '</h3><ul class="om-chips">' + chips.join("") + '</ul></div>';
+    }).join("");
+    return '<div class="om">' + rows + '</div>';
+  }
   function renderReforms() {
     var cats = D.categories.map(function (c, i) {
       return '<details class="cat"' + (i === 0 ? " open" : "") + '><summary>' +
@@ -702,8 +785,10 @@
       return '<div class="block"><h4>' + esc(b.h) + "</h4><p>" + esc(b.body) + "</p>" + srcChips(b.src) + "</div>";
     }).join("") + "</div>";
 
-    return head("The five reform categories",
-      "Each tailored order tees up the same five categories. FERC's mandate text is quoted; the underlying DOE ANOPR principles show the mechanics.") + cats +
+    return '<span id="reforms-h" class="jump-anchor"></span>' + head("What the June 18 orders require",
+      "Six orders, one per grid operator, ask the same question: does the tariff work for large loads without these five reforms? Each operator had 60 days to defend its tariff or propose changes. Here is what each order asks, by reform, with the page.") +
+      orderMatrix() +
+      accSection("The five reforms: FERC's text and DOE's principles", "FERC's mandate text, quoted, with the DOE ANOPR mechanics behind each.", cats, false, D.categories.length) +
       accSection("Jurisdictional & contractual protections",
         "Where FERC draws the federal/state line, and how it shields existing deals.", jur, false, (D.jurisdiction || []).length) +
       accSection("Regional distinctions at a glance", "The variations FERC says the orders were designed to reflect.", reg, false, (D.regional || []).length);
@@ -1687,109 +1772,127 @@
     return p.length === 3 ? p[0] * 3600 + p[1] * 60 + p[2] : p.length === 2 ? p[0] * 60 + p[1] : 0;
   }
   function slugify(x) { return String(x).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
+  var REL_LABEL = { responds: "Answers the order", implements: "Carries out the order", parallel: "Parallel proceeding", precursor: "Came before the order", procedural: "Changes the schedule", context: "Background" };
+  function anchorChip(R, id) {
+    var a = R.anchors[id];
+    if (!a) return "";
+    return '<a class="oa" href="' + esc(a.pdf) + "#page=" + a.pg + '" target="_blank" rel="noopener noreferrer" title="' + esc("“" + a.quote + "”") + '"><span class="oa-item">' + esc(a.item + " " + a.rto) + "</span> " + esc(a.label) +
+      ' <span class="oa-pg mono">' + (a.para ? esc(a.para) + ", " : "") + "p. " + a.pg + "</span></a>";
+  }
+  function linkLine(R, link, cls) {
+    if (!link) return "";
+    return '<div class="' + cls + '"><p><span class="rel rel-' + esc(link.relation) + '">' + esc(REL_LABEL[link.relation] || link.relation) + "</span> " + esc(link.text) + "</p>" +
+      (link.anchors && link.anchors.length ? '<div class="oa-list">' + link.anchors.map(function (id) { return anchorChip(R, id); }).join("") + "</div>" : "") + "</div>";
+  }
+  function themeLabel(R, k) { var t = (R.themes || []).filter(function (x) { return x.key === k; })[0]; return t ? t.label : k; }
+  function docCard(R, g, d) {
+    var pageLink = function (pg) {
+      return '<a class="pq-pg mono" href="reading/' + esc(d.slug) + "/text.html#p-" + pg + '">p. ' + pg + "</a>" +
+        (d.pdfUrl ? ' <a class="pq-pg" href="' + esc(d.pdfUrl) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer">PDF</a>' : "");
+    };
+    var pts = (d.points || []).map(function (p) {
+      return '<li><p class="pt">' + esc(p.point) + '</p><blockquote>“' + esc(p.quote) + "” " + pageLink(p.pg || 1) + "</blockquote></li>";
+    }).join("");
+    var body = d.summary
+      ? '<p class="fd-sum">' + esc(d.summary) + "</p>" +
+        (d.ask ? '<p class="fd-ask"><span>Asks FERC to</span> ' + esc(d.ask.replace(/^\w/, function (c) { return c.toLowerCase(); })) + "</p>" : "") +
+        linkLine(R, d.link, "fd-link") +
+        '<ol class="pts">' + pts + "</ol>"
+      : '<p class="fd-sum na">Not yet read for this site. ' + esc(d.title) + "</p>";
+    var tags = (d.themes || []).map(function (t) { return '<span class="tag">' + esc(themeLabel(R, t)) + "</span>"; }).join("");
+    return '<details class="fdoc" id="fd-' + esc(d.slug) + '" data-themes="' + esc((d.themes || []).join(" ")) + '"><summary>' +
+      '<span class="fd-date mono">' + esc(fmtISO(d.date)) + '</span><span class="fd-who">' + esc(d.filer) + '</span><span class="fd-kind">' + esc(d.kind) +
+      (d.side ? ' · <span class="side-tag side-' + esc(d.side) + '">' + esc(SIDE_LABEL[d.side] || d.side) + "</span>" : "") + "</span>" +
+      (d.summary ? "" : '<span class="fd-unread">not yet read</span>') + "</summary>" +
+      '<div class="fd-body">' + body + '<p class="fd-tools">' + tags +
+      '<a href="reading/' + esc(d.slug) + '/">Read the document</a>' +
+      (d.accession ? '<a href="' + esc(eli(d.accession)) + '" target="_blank" rel="noopener noreferrer">eLibrary ' + esc(d.accession) + "</a>" : d.url ? '<a href="' + esc(d.url) + '" target="_blank" rel="noopener noreferrer">Source</a>' : "") +
+      '<span class="mono">' + esc(d.docket || "") + (d.pages ? " · " + d.pages + " pp" : "") + "</span>" +
+      (d.filers ? '<span class="fd-all">Filed by ' + esc(d.filers.join(", ")) + "</span>" : "") + "</p></div></details>";
+  }
   function renderFilings() {
     var R = window.FERC_RECORD;
-    if (!R || !R.groups) return head("Filings and orders", "The filings record did not load (js/record-data.js).");
-    var nav = '<nav class="jump-row fg-nav" aria-label="Proceedings">' + R.groups.map(function (g) {
-      return '<button type="button" class="jump-btn" data-jump="#fg-' + esc(g.id) + '">' + esc(g.short || g.title) + "</button>";
-    }).join("") + "</nav>";
-    var groups = R.groups.map(function (g) {
-      var byDoc = {}, sides = {}, dockets = {}, filers = [];
-      g.docs.forEach(function (d) {
-        byDoc[d.slug] = d; if (d.side) sides[d.side] = 1; if (d.docket) dockets[d.docket] = 1;
-        if (filers.indexOf(d.filer) < 0) filers.push(d.filer);
-      });
-      // A side tag only means something where filers disagree; on a lone complaint it reads "Supports" itself.
-      var showSides = Object.keys(sides).length > 1;
-      var multiDocket = Object.keys(dockets).length > 1;
-      var cite = function (d, pg) {
-        return esc(d.filer + " " + d.kind + ", " + fmtISO(d.date)) +
-          (multiDocket && d.docket ? ' · <span class="mono">' + esc(d.docket) + "</span>" + (d.rto && d.rto !== d.filer ? " (" + esc(d.rto) + ")" : "") : "") +
-          (pg ? ' · <a class="mono" href="reading/' + esc(d.slug) + '/text.html#p-' + pg + '" aria-label="Read ' + esc(d.filer + ' ' + d.kind) + ', page ' + pg + '">p. ' + pg + '</a>' : '') +
-          (d.pdfUrl && pg ? ' · <a href="' + esc(d.pdfUrl) + '#page=' + pg +
-            '" target="_blank" rel="noopener noreferrer">PDF p. ' + pg + '</a>' : '') +
-          ' · <a href="' + esc(eli(d.accession)) + '" target="_blank" rel="noopener noreferrer" aria-label="' +
-          esc(d.filer + " " + d.kind + (pg ? ", page " + pg : "") + ", filing on FERC eLibrary") + '">eLibrary filing <span class="ext" aria-hidden="true">↗</span></a>';
-      };
-      var tenets = g.tenets.map(function (t) {
-        var side = showSides && t.side ? '<span class="side-tag side-' + esc(t.side) + '">' + esc(SIDE_LABEL[t.side] || t.side) + "</span>" : "";
-        // The same sentence in six orders is one quote with six citations, not six identical blocks.
-        var seen = {}, order = [];
-        t.quotes.forEach(function (q) {
-          var k = q.q.replace(/\s+/g, " ").trim().toLowerCase();
-          if (!seen[k]) { seen[k] = { q: q.q, refs: [] }; order.push(k); }
-          seen[k].refs.push(q);
-        });
-        var fs = {};
-        var qs = order.map(function (k) {
-          var e = seen[k];
-          var who = e.refs.map(function (q) { var d = byDoc[q.d] || {}; fs[d.filer] = 1; return d.filer; });
-          return '<li data-filers="' + esc(who.join("|")) + '"><blockquote>“' + esc(e.q) + '”</blockquote>' + e.refs.map(function (q) {
-            return '<span class="tq-cite">' + cite(byDoc[q.d] || {}, q.pg) + "</span>";
-          }).join("") + "</li>";
-        }).join("");
-        return '<li class="tenet" data-filers="' + esc(Object.keys(fs).join("|")) + '"><p class="tenet-t">' + side + esc(t.tenet) + '</p><ul class="tq">' + qs + "</ul></li>";
-      }).join("");
-      var chips = filers.length > 2 ? '<div class="who-chips fg-filers" role="group" aria-label="Show one filer">' +
-        '<button type="button" class="who-chip" data-filer="" aria-pressed="true">All</button>' +
-        filers.map(function (f) {
-          return '<button type="button" class="who-chip" data-filer="' + esc(f) + '" aria-pressed="false">' + esc(f) + "</button>";
-        }).join("") + '</div><p class="fg-live" role="status" aria-live="polite"></p>' : "";
-      var rows = g.docs.map(function (d) {
-        return "<tr><td class=\"mono\">" + esc(fmtISO(d.date)) + "</td><td>" + esc(d.filer) + '</td><td><a href="reading/' + esc(d.slug) + '/">' + esc(d.kind) + '</a>'  +
-          (showSides && d.side ? ' <span class="side-tag side-' + esc(d.side) + '">' + esc(SIDE_LABEL[d.side] || d.side) + "</span>" : "") +
-          '</td><td class="mono">' + esc(d.docket || g.docket) + '</td><td class="mono">' + (d.pages ? d.pages + " pp" : "n/a") + '</td><td><a href="' + esc(eli(d.accession)) +
-          '" target="_blank" rel="noopener noreferrer"><span class="mono">' + esc(d.accession) + '</span> <span class="ext" aria-hidden="true">↗</span></a></td></tr>';
-      }).join("");
-      var roster = '<details class="fg-docs"><summary>Documents read <span class="mono">' + g.docs.length + "</span></summary>" +
-        '<div class="table-wrap"><table class="fg-table"><thead><tr><th>Date</th><th>Filer</th><th>Type</th><th>Docket</th><th>Length</th><th>Accession</th></tr></thead><tbody>' +
-        rows + "</tbody></table></div></details>";
-      return '<details class="fgroup" id="fg-' + esc(g.id) + '"><summary class="fg-sum">' +
-        '<span class="fg-h" role="heading" aria-level="3">' + esc(g.title) + ' <span class="fg-docket mono">' + esc(g.docket) + "</span></span>" +
-        '<span class="fg-n mono">' + g.tenets.length + " points · latest " + esc(fmtISO(g.newest)) + "</span></summary>" +
-        (g.about ? '<p class="fg-about">' + esc(g.about) + "</p>" : "") +
-        (g.status ? '<p class="fg-status">' + esc(g.status) + "</p>" : "") +
-        (showSides && g.sideOf ? '<p class="fg-sideof">Supports and Opposes refer to ' + esc(g.sideOf) + ".</p>" : "") + chips +
-        '<ol class="tenets">' + tenets + "</ol>" + roster + "</details>";
-    }).join("");
-    return head("Filings and orders since June",
-      "What FERC decided and what the parties argued in " + R.groups.length + " proceedings since the June 18 orders, newest first. Each point is this site's one-line reading; the quoted text is verbatim from the document.") +
-      '<p class="reader-entry"><a href="reading/">Browse the original documents by section</a></p>' + nav + groups;
+    if (!R || !R.groups) return head("Filings", "The filings record did not load (js/record-data.js).");
+    var total = R.groups.reduce(function (n, g) { return n + g.docs.length; }, 0);
+    var read = R.groups.reduce(function (n, g) { return n + g.docs.filter(function (d) { return d.summary; }).length; }, 0);
+    var counts = {};
+    R.groups.forEach(function (g) { g.docs.forEach(function (d) { (d.themes || []).forEach(function (t) { counts[t] = (counts[t] || 0) + 1; }); }); });
+    var chips = '<div class="who-chips th-chips" role="group" aria-label="Show one theme"><button type="button" class="who-chip" data-theme="" aria-pressed="true">All <span class="mono">' + total + "</span></button>" +
+      R.themes.filter(function (t) { return counts[t.key]; }).map(function (t) {
+        return '<button type="button" class="who-chip" data-theme="' + esc(t.key) + '" aria-pressed="false" title="' + esc(t.gloss) + '">' + esc(t.label) + ' <span class="mono">' + counts[t.key] + "</span></button>";
+      }).join("") + '</div><p class="fg-live" role="status" aria-live="polite"></p>';
+    var group = function (g) {
+      return '<details class="fgroup" id="fg-' + esc(g.id) + '"><summary class="fg-sum"><span class="fg-h" role="heading" aria-level="3">' + esc(g.title) +
+        ' <span class="fg-docket mono">' + esc(g.docket) + '</span></span><span class="fg-n"><span class="mono">' + g.docs.length + "</span> " + (g.docs.length === 1 ? "document" : "documents") +
+        ' · latest <span class="mono">' + esc(fmtISO(g.newest).replace(/, \d{4}$/, "")) + "</span></span></summary>" +
+        '<div class="fg-body">' + linkLine(R, g.link, "fg-link") +
+        (g.about ? '<p class="fg-about">' + esc(g.about) + "</p>" : "") + (g.status ? '<p class="fg-status">' + esc(g.status) + "</p>" : "") +
+        '<div class="fdocs">' + g.docs.map(function (d) { return docCard(R, g, d); }).join("") + "</div></div></details>";
+    };
+    var sc = R.groups.filter(function (g) { return g.kind === "show-cause"; }), rel = R.groups.filter(function (g) { return g.kind !== "show-cause"; });
+    return head("Filings since the June 18 orders",
+      total + " documents in " + R.groups.length + " proceedings, newest first inside each. Every reading quotes only its own document, with the page, and names the order directive it bears on." + (read < total ? " " + (total - read) + " documents are listed but not yet read." : "")) +
+      chips +
+      '<h3 class="fg-sec">The six show cause dockets</h3>' + sc.map(group).join("") +
+      '<h3 class="fg-sec">Related proceedings</h3>' + rel.map(group).join("") +
+      '<p class="reader-entry"><a href="reading/">All documents in the reading room</a></p>';
   }
-  function applyFiler(grp, filer) {
-    grp.querySelectorAll(".fg-filers .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-filer") === filer)); });
-    var n = 0;
-    grp.querySelectorAll(".tenet").forEach(function (t) {
-      var on = !filer || t.getAttribute("data-filers").split("|").indexOf(filer) >= 0;
-      t.hidden = !on; if (on) n++;
-      // Inside a shown tenet, keep only the chosen filer's quotes.
-      t.querySelectorAll(".tq > li").forEach(function (li) { li.hidden = !!filer && li.getAttribute("data-filers").split("|").indexOf(filer) < 0; });
+  var filingTheme = "";
+  function applyTheme(panel, key) {
+    filingTheme = key || "";
+    panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-theme") === filingTheme)); });
+    var shown = 0;
+    panel.querySelectorAll(".fgroup").forEach(function (g) {
+      var n = 0;
+      g.querySelectorAll(".fdoc").forEach(function (d) {
+        var on = !filingTheme || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + filingTheme + " ") >= 0;
+        d.hidden = !on; if (on) n++;
+      });
+      g.hidden = n === 0; shown += n;
+      if (filingTheme && n) g.open = true;
     });
-    var live = grp.querySelector(".fg-live");
-    if (live) live.textContent = filer ? n + (n === 1 ? " point" : " points") + " from " + filer : "";
+    var live = panel.querySelector(".fg-live");
+    if (live) live.textContent = filingTheme ? shown + " documents on this theme" : "";
   }
   var pendingFiling = null, filingHash = "";
   function routeFiling(rest) {
-    var m = String(rest || "").match(/^([a-z0-9-]+)(?:\/(.+))?$/);
-    var grp = m && document.getElementById("fg-" + m[1]);
+    var panel = panelFor("filings");
+    var bits = String(rest || "").split("/");
+    if (bits[0] === "theme") { applyTheme(panel, bits[1] || ""); filingHash = rest; return; }
+    var grp = document.getElementById("fg-" + bits[0]);
+    // Retired group ids from earlier links: the June-orders group became one group per operator.
+    if (!grp && bits[0] === "show-cause-since-june") grp = document.getElementById("fg-sc-pjm");
     if (!grp) return;
+    if (filingTheme) applyTheme(panel, "");
     filingHash = rest;
     grp.open = true;
-    // A route with no filer means the whole proceeding: clear any filter a previous route left behind.
-    var chip = m[2] && [].slice.call(grp.querySelectorAll(".fg-filers .who-chip")).filter(function (c) { return slugify(c.getAttribute("data-filer")) === m[2]; })[0];
-    if (grp.querySelector(".fg-filers")) applyFiler(grp, chip ? chip.getAttribute("data-filer") : "");
-    grp.scrollIntoView({ block: "start" });
+    var doc = bits[1] && document.getElementById("fd-" + bits[1]);
+    // Older links named a filer, not a document: open that filer's newest document instead.
+    if (!doc && bits[1]) doc = [].slice.call(grp.querySelectorAll(".fdoc")).filter(function (d) { return slugify(d.querySelector(".fd-who").textContent) === bits[1]; })[0] || null;
+    if (doc) { doc.open = true; doc.scrollIntoView({ block: "start" }); }
+    else grp.scrollIntoView({ block: "start" });
+    setCrumbs("filings", filingHash);
   }
   function wireFilings() {
     var panel = panelFor("filings");
     panel.addEventListener("click", function (ev) {
-      var b = ev.target.closest && ev.target.closest(".fg-filers .who-chip");
+      var b = ev.target.closest && ev.target.closest(".th-chips .who-chip");
       if (!b) return;
-      var grp = b.closest(".fgroup"), filer = b.getAttribute("data-filer");
-      applyFiler(grp, filer);
-      filingHash = grp.id.slice(3) + (filer ? "/" + slugify(filer) : "");
-      if (history.replaceState) history.replaceState(null, "", "#filings/" + filingHash);
+      var k = b.getAttribute("data-theme");
+      applyTheme(panel, k);
+      filingHash = k ? "theme/" + k : "";
+      if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
     });
+    // Opening a proceeding or document writes its address, so the URL and the trail always match the page.
+    panel.addEventListener("toggle", function (ev) {
+      var el = ev.target;
+      if (!el.open || !el.classList) return;
+      var g = el.classList.contains("fgroup") ? el : el.classList.contains("fdoc") ? el.closest(".fgroup") : null;
+      if (!g) return;
+      filingHash = g.id.slice(3) + (el.classList.contains("fdoc") ? "/" + el.id.slice(3) : "");
+      if (history.replaceState) history.replaceState(null, "", "#filings/" + filingHash);
+      setCrumbs("filings", filingHash);
+    }, true);
     if (pendingFiling) { routeFiling(pendingFiling); pendingFiling = null; }
   }
 
@@ -1884,8 +1987,9 @@
   var pendingWho = null, applyWho = null;
 
   /* ---- tablist ---- */
-  var TABS = ["overview", "timeline", "reforms", "dockets", "filings", "commissioners", "comments", "news"];
-  var renderers = { overview: renderOverview, timeline: renderTimeline, reforms: renderReforms, dockets: renderDockets, filings: renderFilings, commissioners: renderCommissioners, comments: renderComments, news: renderNews };
+  // Reforms has no tab of its own: the five reform categories open the Orders (dockets) tab. "#reforms" still routes there.
+  var TABS = ["overview", "dockets", "filings", "news", "timeline", "commissioners", "comments"];
+  var renderers = { overview: renderOverview, timeline: renderTimeline, dockets: function () { return renderReforms() + renderDockets(); }, filings: renderFilings, commissioners: renderCommissioners, comments: renderComments, news: renderNews };
   var afterRender = { comments: wireComments, timeline: wireTimeline, filings: wireFilings, commissioners: wireCommissioners };
   // Overview jump row: delegated once, so it works whichever render pass drew the buttons. Buttons, not
   // hash links, because the router owns location.hash and would read "#fm-h" as a tab name.
@@ -1939,6 +2043,7 @@
   }
   // Switch tabs from the hash/router, routing the Comments sub-state through the comments module.
   function goTab(tab, rest, focus) {
+    if (tab === "reforms") { activate("dockets", focus); var rh = document.getElementById("reforms-h"); if (rh) rh.scrollIntoView({ block: "start" }); setCrumbs("dockets", ""); return; }
     if (TABS.indexOf(tab) < 0) tab = "overview";
     if (tab === "comments") {
       var state = window.CommentsRoute.parse(rest);
@@ -1959,7 +2064,7 @@
     } else if (tab === "filings" && rest) {
       if (!rendered.filings) pendingFiling = rest;               // wireFilings consumes and clears it
       // Already rendered: settle the route before activate() writes the hash, or the URL keeps the old one.
-      else if (document.getElementById("fg-" + String(rest).split("/")[0])) filingHash = rest;
+      else if (document.getElementById("fg-" + String(rest).split("/")[0]) || /^theme\//.test(rest)) filingHash = rest;
       activate("filings", focus);
       if (rendered.filings) routeFiling(rest);
     } else if (tab === "commissioners") {
@@ -2030,6 +2135,31 @@
     document.head.appendChild(s);
   }
 
+  // "You are here": tab › proceeding › document (Filings) or tab › track (Timeline). Each step links back
+  // up one level, so a reader deep in a filing is one tap from the proceeding and two from the list.
+  var TAB_LABEL = { overview: "Now", dockets: "Orders", filings: "Filings", news: "Discourse", timeline: "Timeline", commissioners: "Commissioners", comments: "Comments" };
+  function setCrumbs(name, rest) {
+    var el = document.getElementById("crumbs");
+    if (!el) return;
+    var parts = [['#' + name, TAB_LABEL[name] || name]];
+    var R = window.FERC_RECORD;
+    if (name === "filings" && rest && R && R.groups) {
+      var bits = String(rest).split("/"), g = R.groups.filter(function (x) { return x.id === bits[0]; })[0];
+      if (g) {
+        parts.push(["#filings/" + g.id, g.short || g.title]);
+        var doc = bits[1] && g.docs.filter(function (d) { return d.slug === bits[1]; })[0];
+        if (doc) parts.push(["#filings/" + g.id + "/" + doc.slug, doc.filer + ", " + fmtISO(doc.date).replace(/, \d{4}$/, "")]);
+      }
+    } else if (name === "timeline" && rest) {
+      var tk = parseTimelineRest(rest);
+      if (tk !== "all") parts.push(["#timeline/track/" + tk, D.tracks[tk].label]);
+    } else if (name === "commissioners" && rest && rest !== "all") parts.push(["#commissioners/" + rest, commishName(rest)]);
+    el.hidden = name === "overview";
+    el.innerHTML = '<ol><li><a href="#overview">Now</a></li>' + (name === "overview" ? "" : parts.map(function (p, i) {
+      return "<li>" + (i === parts.length - 1 ? '<span aria-current="page">' + esc(p[1]) + "</span>" : '<a href="' + esc(p[0]) + '">' + esc(p[1]) + "</a>") + "</li>";
+    }).join("")) + "</ol>";
+  }
+
   function activate(name, focus) {
     TABS.forEach(function (t) {
       var sel = t === name;
@@ -2064,6 +2194,7 @@
       if (history.replaceState) history.replaceState(null, "", "#" + name);
       else location.hash = name;
     }
+    setCrumbs(name, parseHash().rest);
   }
 
   function onKey(e) {
@@ -2093,8 +2224,11 @@
     // stepWhen, not n.date: procStatus PICKS `next` by the operative date, so reading the raw `date`
     // back off the step announces the superseded one. With Aug 17 reset to Nov 16 this chip was
     // rendering a date six days in the PAST as "Next deadline", above every tab.
-    el.innerHTML = 'Next deadline · <span class="mono">' + esc(fmtISO(stepWhen(n))) + "</span> · " + esc(n.label) +
-      ' <span class="mh-derived">(derived)</span>';
+    var days = daysUntil(stepWhen(n));
+    el.innerHTML = '<a class="mh-next" href="#overview"><span>Next</span> <span class="mono">' + esc(fmtISO(stepWhen(n)).replace(/, \d{4}$/, "")) + "</span> " + esc(n.label) +
+      (days >= 0 ? ' <span class="mh-days">' + (days === 0 ? "today" : days === 1 ? "tomorrow" : "in " + days + " days") + "</span>" : "") + "</a>";
+    el.hidden = false;
+    return;
     // Second clause: the most recent PASSED step the filing matrix covers, with its observed count.
     // Without it the chip announces a deadline and says nothing about whether the last one was met,
     // which is the honesty gap a visitor hits first. Counts derive from the matrix, never hand-written.

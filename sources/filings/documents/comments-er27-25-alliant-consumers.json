@@ -1,0 +1,17 @@
+{
+  "slug": "comments-er27-25-alliant-consumers",
+  "summary": "Alliant Energy Corporate Services and Consumers Energy, both load-serving entities in MISO, file comments supporting LARS as a way to study large loads and paired generation together, with continued stakeholder work on how projects keep interconnection rights.",
+  "ask": "Find MISO's LARS proposal just and reasonable and accept it.",
+  "points": [
+    {"point": "The utilities support a study process that handles generation paired with large load together.", "quote": "support the need for an interconnection process that facilitates the timely study of generation paired with an associated large load(s) to arrive at optimized transmission solutions.", "pg": 1},
+    {"point": "Joint planning can avoid duplicate or costly upgrades and lower customer costs.", "quote": "eliminate duplicative or unnecessarily expensive upgrades, and help deliver lower-cost outcomes for customers.", "pg": 2},
+    {"point": "They cite MISO's goal of finishing the parallel study in about 120 days.", "quote": "with the objective of completing the process within approximately 120 days.", "pg": 2},
+    {"point": "They back strong readiness requirements to keep speculative projects out.", "quote": "Strong readiness requirements are therefore an appropriate safeguard against speculative projects consuming scarce study resources", "pg": 3},
+    {"point": "They expect MISO to keep working with stakeholders on how projects retain interconnection rights over time.", "quote": "providing greater certainty regarding the conditions under which projects may retain interconnection rights over time.", "pg": 3}
+  ],
+  "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "Supports MISO's LARS filing, which MISO presents as its answer to the E-8 show cause order on operational dynamics of serving electrically proximate large loads."},
+  "themes": ["proximate", "study"],
+  "figures": [
+    {"label": "MISO LARS target study duration", "value": 120, "unit": "days", "quote": "completing the process within approximately 120 days", "pg": 2}
+  ]
+}

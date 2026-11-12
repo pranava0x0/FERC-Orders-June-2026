@@ -1,0 +1,15 @@
+{
+ "slug": "report-el26-72-isone",
+ "summary": "ISO-NE files the 30-day informational report the E-11 order required. It finds New England long on supply, relies on competitive markets, and proposes a bring-your-own-new-generation rule for large loads and their exclusion from the Installed Capacity Requirement.",
+ "ask": "Accept the informational report.",
+ "points": [
+  {"point": "ISO-NE says New England has been flat or declining in load and has not yet seen significant large load growth.", "quote": "New England has not yet encountered significant load growth attributable to the addition of large loads, such as data centers.", "pg": 2},
+  {"point": "ISO-NE's guiding view is that existing competitive markets can meet upcoming resource adequacy needs.", "quote": "ISO-NE believes that New England’s markets are sufficiently mature and flexible to meet upcoming challenges.", "pg": 2},
+  {"point": "Pending projects include a lower Pay for Performance rate, capacity auction reforms, uncertainty reserves and demand flexibility.", "quote": "the reduction in the Pay for Performance rate; the Capacity Auction Reforms project; improvements to Surplus Interconnection Service; probabilistic forecasting; uncertainty reserves", "pg": 4},
+  {"point": "ISO-NE says two actions will be needed: large loads bring their own generation and are excluded from the load-side capacity requirement.", "quote": "requiring new large loads to “bring their own” incremental new generation; and excluding new large loads from the load-side requirements of the capacity market", "pg": 6},
+  {"point": "ISO-NE intends rules similar to SPP's CHILLS, letting large loads take energy until designated resources and upgrades are in place, subject to curtailment.", "quote": "ISO-NE intends to pursue rules similar to the Southwest Power Pool’s conditional high impact large load service (“CHILLS”) rules", "pg": 7},
+  {"point": "ISO-NE expects to file the detailed bring-your-own-generation and capacity exclusion rules in 2027.", "quote": "ISO-NE anticipates filing the detailed supporting rules implementing this concept in 2027.", "pg": 7}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-11-adequacy-report", "e-11-proximate-generation-service"], "text": "ISO-NE's filing under the E-11 30-day informational report directive on ensuring adequate generation for existing and new large loads; its CHILLS-style conditional service parallels SPP's approach in E-9."},
+ "themes": ["adequacy", "flex"]
+}

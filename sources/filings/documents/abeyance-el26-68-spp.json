@@ -1,0 +1,18 @@
+{
+ "slug": "abeyance-el26-68-spp",
+ "summary": "FERC grants the Joint Movants' motion and holds the EL26-68 SPP show cause proceeding in abeyance for 95 days, to November 20, 2026, with answers due December 21, 2026. SPP plans a section 205 filing after its November 17 Board vote.",
+ "ask": null,
+ "points": [
+  {"point": "FERC grants the August 3 motion of SPP and a group of transmission owners for 95 days.", "quote": "we grant the Abeyance Motion filed by Joint Movants and hold this proceeding in abeyance for 95 days, until November 20, 2026.", "pg": 1},
+  {"point": "Joint Movants describe SPP's planned work on alternative technologies, cost shifting protections, co-location and flexible-load services.", "quote": "SPP anticipates developing revisions to its High Impact Large Load (HILL) process that will incorporate the evaluation of alternative transmission technologies into the study process.", "pg": 1},
+  {"point": "SPP expects stakeholder approval of its Price Adaptive Load proposal for non-firm service on November 17, 2026.", "quote": "SPP anticipates final stakeholder approval of the proposal on November 17, 2026.", "pg": 1},
+  {"point": "The five days beyond the usual 90 reflect a Board meeting moved from November 3 to November 17.", "quote": "the date of the SPP Board meeting was originally scheduled on November 3, 2026 but was changed to accommodate upcoming elections", "pg": 1},
+  {"point": "The Regional State Committee, Missouri Commission and CEBA filed answers supporting the motion.", "quote": "The RSC, Public Service Commission of the State of Missouri, and Corporate Energy Buyers Association filed timely answers in support of Joint Movants' Abeyance Motion.", "pg": 1},
+  {"point": "Responses are due November 20 and answers December 21, 2026; a timely section 205 filing suspends the response duty.", "quote": "responses to the Show Cause Order will be due on November 20, 2026, and answers to responses will be due on December 21, 2026.", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-9-show-cause", "e-9-adequacy-report"], "text": "Moves the E-9 SPP 60-day show cause response from August 17 to November 20, 2026, accepting SPP's stakeholder schedule for a section 205 filing."},
+ "themes": ["procedure", "flex", "cost"],
+ "figures": [
+  {"label": "Abeyance granted for SPP show cause proceeding", "value": 95, "unit": "days", "quote": "hold this proceeding in abeyance for 95 days, until November 20, 2026.", "pg": 1}
+ ]
+}

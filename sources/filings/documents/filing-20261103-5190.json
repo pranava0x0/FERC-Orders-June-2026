@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20261103-5190",
+ "summary": "The Data Center Coalition answers MISO's October 13 answer and repeats that substantive large-load reliability requirements belong in the Tariff, not unfiled Business Practice Manuals, and that FERC should reject the proposal without prejudice.",
+ "ask": "Reject the IRR proposal without prejudice to a revised MISO filing that puts the requirements in the tariff, uses objective classification criteria and ties transition protections to commercial commitments.",
+ "points": [
+  {"point": "DCC says MISO's tariff names new requirements without giving their substance, and the definition and revocable exemptions add uncertainty.", "quote": "MISO’s proposed tariff revisions in this proceeding tell transmission customers that they will be subject to new reliability requirements but without providing any detail on the substance of the requirements that will be applied.", "pg": 2},
+  {"point": "DCC says MISO keeps discretion to require compliance from customers it nominally exempts, using criteria not filed with FERC.", "quote": "MISO can unilaterally define, change, and apply reliability requirements as it deems fit and without meaningful Commission oversight.", "pg": 3},
+  {"point": "DCC invokes the Rule of Reason: practices that significantly affect terms of service must be filed.", "quote": "where, as here, requirements significantly affect the terms and conditions of jurisdictional service, they must be included in the tariff and remain subject to Commission oversight.", "pg": 4},
+  {"point": "DCC argues unfiled BPM requirements may be unenforceable against customers.", "quote": "raises serious questions as to whether these standards are enforceable against transmission customers at all.", "pg": 5},
+  {"point": "DCC lists three elements a revised filing should include.", "quote": "places the substantive requirements and standards required by Section 205 and the Rule of Reason in the tariff, (2) adopts objective and transparent Large Load classification and aggregation criteria", "pg": 5}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "Second-round answer on MISO's post-E-8 filing, arguing it falls short of the clear and consistent framework the E-8 order contemplates."},
+ "themes": ["registry", "procedure"]
+}

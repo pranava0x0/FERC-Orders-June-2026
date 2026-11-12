@@ -1,0 +1,15 @@
+{
+  "note": "Controlled theme vocabulary shared by per-document readings (sources/filings/documents/*.json), Discourse items and the Filings tab. The first five keys are the five reform categories named in the June 18, 2026 show cause orders; the rest are cross-cutting issues the post-order record keeps returning to. Validated by tools/validate-documents.mjs.",
+  "themes": [
+    {"key": "study", "label": "Study process and queue", "reform": true, "gloss": "How a large load applies for transmission service and is studied, including alternative transmission technologies."},
+    {"key": "cost", "label": "Who pays for upgrades", "reform": true, "gloss": "Cost-shifting protections, cost-recovery agreements, minimum charges and posted cost data."},
+    {"key": "colo", "label": "Co-location and on-site generation", "reform": true, "gloss": "Loads sited with generation, and netting of behind-the-meter generation."},
+    {"key": "flex", "label": "Flexible and curtailable service", "reform": true, "gloss": "New transmission services for loads willing to limit their use of the grid."},
+    {"key": "proximate", "label": "Generation serving nearby load", "reform": true, "gloss": "Studying generation that serves an electrically proximate or co-located load."},
+    {"key": "registry", "label": "Load visibility and forecasts", "reform": false, "gloss": "Defining a large load, registries, telemetry and demand forecasts."},
+    {"key": "adequacy", "label": "Capacity and resource adequacy", "reform": false, "gloss": "Capacity auctions, backstop procurement and bring-your-own-capacity rules."},
+    {"key": "retail", "label": "State and federal authority", "reform": false, "gloss": "Where FERC's transmission authority ends and state retail authority begins."},
+    {"key": "credit", "label": "Collateral and exit terms", "reform": false, "gloss": "Financial security, withdrawal liability and credit requirements for large loads."},
+    {"key": "procedure", "label": "Schedule and procedure", "reform": false, "gloss": "Abeyance, extensions, rehearing, interventions and filing deadlines."}
+  ]
+}

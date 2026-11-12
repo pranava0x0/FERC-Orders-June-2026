@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20260807-5199",
+ "summary": "American Municipal Power answers the MISO abeyance motion, saying it falls short of the Show Cause Order's standards, and asks FERC to condition any abeyance on a cost-transparency and cost-shifting proposal within 20 days and a compliance filing by November 16.",
+ "ask": "Direct MISO to present a cost-transparency and cost-shifting proposal within 20 days, vet it with states and customers, and file compliant Tariff revisions by November 16, 2026.",
+ "points": [
+  {"point": "AMP says the motion fails the Show Cause Order's abeyance standards, so FERC has grounds to deny it.", "quote": "The Motion fails to provide the information required by the Commission’s June 18 Show Cause Order in the event abeyance is sought", "pg": 1},
+  {"point": "AMP names the missing protections: disclosure of upgrades and costs, cost recovery agreements, financial security and stranded-cost protection.", "quote": "public disclosure of large-load-driven network upgrades and their costs, cost recovery agreements, financial security requirements, and protection of existing transmission customers from stranded costs", "pg": 2},
+  {"point": "AMP calls MISO's roadmap a few lines with a vague November filing.", "quote": "This falls well short of the detailed roadmap to compliance that the Commission required to justify abeyance.", "pg": 3},
+  {"point": "AMP says upgrade costs are likely in the billions and MISO has presented no cost proposals in the stakeholder process.", "quote": "Costs associated with transmission upgrades to serve large loads are likely to be in the billions of dollars.", "pg": 4},
+  {"point": "AMP says municipal and cooperative transmission-dependent utilities are not protected by state commissions because zonal cost allocation is wholesale.", "quote": "Transmission dependent utilities such as municipalities and cooperatives are not protected by state utility commissions and retail tariffs", "pg": 5},
+  {"point": "AMP proposes three directives to MISO.", "quote": "bring forward a specific proposal to meet its obligations under the Show Cause Order to address cost transparency and cost shifting within the next twenty days", "pg": 5}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause", "e-8-cost-recovery-agreement", "e-8-minimum-cost-recovery-security"], "text": "Opposes abeyance of the E-8 deadline unless MISO advances the order's cost-recovery agreement, financial security and cost-transparency directives; FERC granted abeyance but cited AMP's objection."},
+ "themes": ["cost", "procedure"]
+}

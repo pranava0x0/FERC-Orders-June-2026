@@ -1,0 +1,72 @@
+{
+ "slug": "filing-20261008-5175",
+ "summary": "Community Organizations and Clean Energy Advocates (Sierra Club, NRDC and others) answer MISO's September 23 response on the ZGIA, with testimony from Grid Strategies' Houtan Moaveni, and say operational, cost-shift and program-limit gaps remain.",
+ "ask": "Find MISO's ZGIA filing deficient and direct MISO to cure its operational, cost allocation, transparency, program limit and hybrid resource gaps before accepting it.",
+ "points": [
+  {
+   "point": "The filers say MISO's answer leaves the ZGIA's deficiencies in place.",
+   "quote": "MISO’s Answer does not redress the deficiencies of its proposal.",
+   "pg": 1
+  },
+  {
+   "point": "They say the 20-second Transient Tolerance Window is still unjustified.",
+   "quote": "MISO did not justify the tariff’s use of a twenty-second Transient Tolerance Window",
+   "pg": 5
+  },
+  {
+   "point": "They say key operating terms belong in the tariff, not the Business Practice Manual.",
+   "quote": "It is well-established precedent that key terms must be included in the tariff.",
+   "pg": 6
+  },
+  {
+   "point": "They say termination is MISO's only remedy for injection failures, with nothing at the scale of an injection event.",
+   "quote": "The contractual remedy that MISO has proposed functions only as a “last-resort backstop,” offering no consequence other than termination and nothing that operates on the timescale of an injection event.",
+   "pg": 9
+  },
+  {
+   "point": "They say cumulative ZGIA and DPP grid impacts would be resolved in MTEP, which spreads costs to load.",
+   "quote": "The Commission should reject the filing as deficient because both MISO’s filing and MISO’s Answer fail to either refute such cumulative impacts or justify their resolution in MTEP, which socializes costs to load more broadly.",
+   "pg": 15
+  },
+  {
+   "point": "They say upgrades needed if a ZG resource never materializes would be socialized through MTEP.",
+   "quote": "if a ZG resource does not materialize and thus causes the underlying transmission need to re-emerge, the resulting transmission upgrades that would still be needed to serve the associated load would be broadly socialized via MTEP.",
+   "pg": 16
+  },
+  {
+   "point": "They propose a list of ZGIA data for MISO to publish, starting with quarterly requests by size, technology, location and status.",
+   "quote": "Mr. Moaveni instead recommends that the Commission direct MISO to publish: the ZG requests received in each quarterly study period, with megawatt quantity, technology, location, and status;",
+   "pg": 18
+  },
+  {
+   "point": "They say the filing ignores resource adequacy effects of generation dedicated to specific loads, and seek program-wide limits.",
+   "quote": "the Filing does not examine how a growing share of generation dedicated to specific loads affects resource adequacy for the rest of the system.",
+   "pg": 19
+  },
+  {
+   "point": "They welcome MISO's hybrid resource clarifications and ask for a broader directive.",
+   "quote": "the Commission should issue a broader directive to confirm the other points under discussion in the tariff as well.",
+   "pg": 20
+  },
+  {
+   "point": "They conclude by asking FERC to direct MISO to cure the deficiencies before accepting the filing.",
+   "quote": "ask the Commission to use its authority to direct MISO to cure the deficiencies with filing before accepting it.",
+   "pg": 21
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-8-services-for-flexible-co-located",
+   "e-8-cost-recovery-agreement",
+   "e-8-show-cause"
+  ],
+  "text": "Reply in ER26-3552 contesting MISO's ZGIA, MISO's co-location response to the E-8 order, on operational enforcement, cost shifting and transparency grounds the filers tie to the E-8 order."
+ },
+ "themes": [
+  "colo",
+  "cost",
+  "study",
+  "adequacy"
+ ]
+}

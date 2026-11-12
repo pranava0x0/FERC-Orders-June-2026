@@ -1,0 +1,48 @@
+{
+ "slug": "eot-el25-49-pjm",
+ "summary": "FERC grants PJM and the Indicated PJM Transmission Owners a 90-day extension, to November 16, 2026, to comply with certain directives of the June 18 co-located load order, so the compliance can proceed with the large load show cause response.",
+ "ask": null,
+ "points": [
+  {
+   "point": "PJM and the Indicated TOs each moved on July 28, 2026 for 90 more days to comply with the co-location order.",
+   "quote": "On July 28, 2026, PJM filed a motion for a 90-day extension of time to comply with certain directives in the Commission’s June 18, 2026 order in this proceeding,",
+   "pg": 1
+  },
+  {
+   "point": "The Indicated TOs say the compliance issues overlap significantly with their show cause order work.",
+   "quote": "the issues that PJM and Indicated TOs must address on compliance significantly overlap with the issues PJM and Indicated TOs are addressing in response to the Large Load Show Cause Order.",
+   "pg": 1
+  },
+  {
+   "point": "Constellation supported the motion but said PJM must still file complete Interim NITS provisions on August 17, 2026.",
+   "quote": "filed an answer supporting PJM’s motion but with the clarification that PJM remains obligated to file, on August 17, 2026, a complete set of provisions to facilitate Interim NITS.",
+   "pg": 1
+  },
+  {
+   "point": "FERC grants the extension to November 16, 2026 for PJM and the PJM transmission owners.",
+   "quote": "Upon consideration, notice is hereby given that an extension of 90 days is granted.",
+   "pg": 1
+  }
+ ],
+ "throughLine": {
+  "relation": "procedural",
+  "anchors": [
+   "e-7-show-cause",
+   "e-2-interim-nits"
+  ],
+  "text": "Moves the E-2 co-location compliance deadline to November 16, 2026 to align with PJM's E-7 show cause response, while Interim NITS provisions stay due August 17."
+ },
+ "themes": [
+  "procedure",
+  "colo"
+ ],
+ "figures": [
+  {
+   "label": "Extension granted to PJM co-location compliance",
+   "value": 90,
+   "unit": "days",
+   "quote": "an extension of 90 days is granted.",
+   "pg": 1
+  }
+ ]
+}

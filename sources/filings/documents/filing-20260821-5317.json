@@ -1,0 +1,20 @@
+{
+ "slug": "filing-20260821-5317",
+ "summary": "The PJM Independent Market Monitor protests PJM's Reliability Backstop Procurement filing as unsupported and asks FERC to reject it and direct a data-center-funded alternative with 15-year bilateral contracts.",
+ "ask": "Reject the RBP filing, find existing PJM resource adequacy rules for data centers unjust and unreasonable, and direct PJM to file the Market Monitor's backstop auction design within two weeks.",
+ "points": [
+  {"point": "The Market Monitor says the RBP filing is unsupported and should be rejected.", "quote": "The RBP Filing has not been supported as just and reasonable, and it should be rejected.", "pg": 1},
+  {"point": "It asks FERC to find current PJM rules for serving data centers unjust and unreasonable under FPA section 206.", "quote": "an order should issue, finding that the existing rules relating to resource adequacy for serving data centers in the PJM Region are unjust and unreasonable under Section 206 of the Federal Power Act.", "pg": 3},
+  {"point": "Proposed remedy: new data center load has 15-year bilateral contracts with new generation, with no cost or risk shifted to other customers.", "quote": "new data center loads have 15 year bilateral contracts with new generation that do not permit any cost or risk shifting to other customers.", "pg": 4},
+  {"point": "It attributes $29.4 billion of added capacity cost to data center load.", "quote": "The addition of data center load has resulted in adding $29.4 billion to the cost of capacity, higher energy costs, higher transmission costs, and a significant degradation of system reliability.", "pg": 5},
+  {"point": "It argues the RBP assigns data center costs and risks to other customers, contrary to the Ratepayer Protection Pledge and Principles.", "quote": "PJM’s proposed RBP auction defines a shortfall that is based entirely on data center load yet assigns the costs and risks associated with meeting that shortfall to other PJM customers.", "pg": 6},
+  {"point": "It says the RBP turns the must buy/must sell capacity market into must buy/option to sell at the highest price.", "quote": "The PJM RBP Filing would replace the must buy/must sell design with a must buy/option to sell at the highest price design.", "pg": 8},
+  {"point": "Its attached design would include all data centers of 5.0 MW or more and sell only 15-year capacity from new generation.", "quote": "All data centers with expected demand greater than or equal to 5.0 MW would be included in the auction.", "pg": 37}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report", "e-7-cost-recovery-agreement"], "text": "Cites the E-7 order's finding on cost shifting among transmission customers and urges that data centers bear the cost of new capacity, the same cost-causation concern behind E-7's cost-recovery directive and adequacy report."},
+ "themes": ["adequacy", "cost"],
+ "figures": [
+  {"label": "Capacity cost attributed to data center load", "value": 29.4, "unit": "$ billion", "quote": "adding $29.4 billion to the cost of capacity", "pg": 5},
+  {"label": "Data center size threshold in Monitor auction design", "value": 5, "unit": "MW", "quote": "greater than or equal to 5.0 MW", "pg": 37}
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "slug": "errata-el26-70-miso",
+ "summary": "FERC's Secretary issues an errata notice correcting the caption and footnote 11 of the E-8 MISO show cause order, so Wabash Valley Power Association is listed among entities not required to respond as Transmission Owners.",
+ "ask": null,
+ "points": [
+  {"point": "The caption wrongly included Wabash Valley Power Association, and footnote 11 omitted it.", "quote": "The caption in the order inadvertently included “Wabash Valley Power Association, Inc.” and footnote 11 inadvertently omitted “Wabash Valley Power Association, Inc.”", "pg": 1},
+  {"point": "The notice deletes Wabash from the caption and adds it to footnote 11.", "quote": "This errata notice hereby corrects the caption as shown above, by deleting “Wabash Valley Power Association, Inc.”", "pg": 1},
+  {"point": "FERC keeps authority to review non-public-utility entities' formula rates as part of MISO's Tariff.", "quote": "the Commission retains the authority to review each entity’s formula rates as a component of MISO’s Tariff in an order to show cause directed towards MISO", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-8-show-cause"], "text": "Corrects who counts as a Transmission Owner that must respond to the E-8 show cause order; MISO itself must still respond about non-public utilities' Tariff provisions."},
+ "themes": ["procedure"]
+}

@@ -1,0 +1,50 @@
+{
+ "slug": "compliance-er26-3537-pjm-tos",
+ "summary": "The PJM Transmission Owners file a partial compliance filing under the June 18 co-location order, adding tariff records that set the Interim NITS rate, and request a July 1, 2028 effective date.",
+ "ask": "Accept the partial compliance filing without hearing, modification or condition, effective July 1, 2028.",
+ "points": [
+  {
+   "point": "The filing implements the rate for Interim Network Integration Transmission Service ordered on June 18.",
+   "quote": "the PJM Transmission Owners are submitting new and revised tariff records to the PJM Open Access Transmission Tariff",
+   "pg": 1
+  },
+  {
+   "point": "The three new services are Interim NITS, firm contract demand and non-firm contract demand transmission service.",
+   "quote": "The new transmission services are: Interim NITS, firm contract demand transmission service, and non-firm contract demand transmission service.",
+   "pg": 1
+  },
+  {
+   "point": "FERC granted a 90-day extension to November 16, 2026, but PJM committed to file Interim NITS provisions on August 17.",
+   "quote": "Notwithstanding its request for extension, PJM committed to submit a compliance filing on August 17, 2026, addressing several compliance directives, including those related to Interim NITS.",
+   "pg": 2
+  },
+  {
+   "point": "New Part XI sections 706 and 706.1 set the Interim NITS rate, with two new definitions.",
+   "quote": "New Sections 706 and 706.1 specify the Interim NITS rate.",
+   "pg": 2
+  },
+  {
+   "point": "The owners request a July 1, 2028 effective date.",
+   "quote": "The PJM Transmission Owners request that the revisions submitted with this partial compliance filing become effective on July 1, 2028.",
+   "pg": 2
+  },
+  {
+   "point": "They note the directives are under challenge and the tariff sheets may face a termination filing.",
+   "quote": "the tendered tariff sheet revisions herein may be subject to a subsequent termination filing.",
+   "pg": 1
+  }
+ ],
+ "throughLine": {
+  "relation": "implements",
+  "anchors": [
+   "e-2-interim-nits",
+   "e-2-one-of-three-new-co-location"
+  ],
+  "text": "Carries out the E-2 order's new co-location services by filing the Interim NITS rate, ahead of the November 16 date that aligns with PJM's E-7 show cause response."
+ },
+ "themes": [
+  "colo",
+  "cost",
+  "procedure"
+ ]
+}

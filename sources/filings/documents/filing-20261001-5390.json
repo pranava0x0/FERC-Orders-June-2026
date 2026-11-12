@@ -1,0 +1,10 @@
+{
+ "slug": "filing-20261001-5390",
+ "summary": "An Arkansas resident and electric customer files a short public comment in the MISO show cause docket urging FERC to keep transparency, cost responsibility and protection of existing customers central as large loads grow.",
+ "ask": "Keep transparency, cost responsibility, reliable planning and protection of existing customers at the center of FERC's consideration of large loads.",
+ "points": [
+  {"point": "The commenter names four priorities for FERC's work on large loads such as data centers.", "quote": "keep transparency, cost responsibility, reliable planning, and protection of existing customers at the center of its consideration of rapidly growing large loads such as data centers.", "pg": 1}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "Public comment in the E-8 docket on the transparency and cost-responsibility concerns the MISO show cause order raises."},
+ "themes": ["cost"]
+}

@@ -1,0 +1,19 @@
+{
+ "slug": "filing-20260910-4000",
+ "summary": "Rep. Victoria Spartz writes to the Energy and Interior secretaries, copying FERC, asking for an independent federal review of generation, transmission, water and cost allocation for the LEAP district in Lebanon, Indiana, citing FERC's MISO show cause order.",
+ "ask": "Have the Departments of Energy and Interior coordinate with FERC on an independent review of grid reliability, water, infrastructure, cost allocation and transparency for LEAP and other Indiana data center projects.",
+ "points": [
+  {"point": "Spartz says she cannot get clear numbers on energy, water and cost for large Indiana data center projects, partly because of nondisclosure agreements.", "quote": "Non-disclosure agreements and confidentiality arrangements have further limited transparency on matters affecting Indiana’s grid, water resources, taxpayers, and utility customers.", "pg": 1},
+  {"point": "Meta announced a data center campus of more than $10 billion and about 1 GW at LEAP.", "quote": "Meta announced plans for a more than $10 billion data-center campus at LEAP, with 10 planned data centers and approximately 1 GW of capacity.", "pg": 1},
+  {"point": "MISO planning documents put LEAP demand near 1,200 MW, with Wabash Valley Phase 2 transmission at about $345 million and Phase 1 at about $222 million.", "quote": "MISO planning documents estimate total LEAP demand at approximately 1,200 MW.", "pg": 2},
+  {"point": "She summarizes FERC's MISO findings on cost shifting, Network Upgrade transparency, Cost Recovery Agreements and protections against stranded costs.", "quote": "FERC directed MISO and its transmission owners to address cost shifting, Network Upgrade transparency, Cost Recovery Agreements, financial protections against stranded infrastructure costs, and alternatives to traditional Network Upgrades", "pg": 3},
+  {"point": "She requests project-level cost data and the enforceable protections that guard customers if projected loads do not materialize.", "quote": "Cost Recovery Agreements, minimum-demand commitments, financial guarantees, collateral, take-or-pay provisions, and other protections against stranded costs if projected loads are delayed, reduced, or never materialize.", "pg": 4}
+ ],
+ "throughLine": {"relation": "context", "anchors": ["e-8-cost-recovery-agreement", "e-8-minimum-cost-recovery-security"], "text": "A congressional letter, copied to FERC and filed in the MISO docket, that applies the E-8 order's cost-shifting findings and cost-recovery directives to a specific Indiana load cluster."},
+ "themes": ["cost"],
+ "figures": [
+  {"label": "LEAP total demand per MISO planning documents", "value": 1200, "unit": "MW", "quote": "approximately 1,200 MW", "pg": 2},
+  {"label": "Wabash Valley Phase 2 LEAP transmission", "value": 345, "unit": "$ million", "quote": "approximately $345 million in new transmission infrastructure", "pg": 2},
+  {"label": "LEAP Phase 1 transmission network", "value": 222, "unit": "$ million", "quote": "approximately $222 million LEAP Phase 1 transmission network", "pg": 2}
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "slug": "filing-20260807-5196",
+ "summary": "The New England States Committee on Electricity answers in support of the ISO-NE abeyance motion and lists four principles it will use to judge ISO-NE's coming section 205 filing: ratepayer cost, state authority, reliability and transparency.",
+ "ask": "Grant the joint ISO-NE and PTO-AC motion to hold the show cause proceeding in abeyance for 90 days.",
+ "points": [
+  {"point": "NESCOE supports abeyance so ISO-NE and the PTOs can build a section 205 filing through New England's stakeholder process.", "quote": "NESCOE supports ISO-NE and the PTOAC’s request for an abeyance to allow for them to develop a Section 205 filing through New England’s stakeholder process.", "pg": 3},
+  {"point": "The Joint Motion schedules a NEPOOL Participants Committee vote on November 12 and a filing on November 16, 2026.", "quote": "the NEPOOL Participants Committee would vote on the Section 205 proposal at its November 12, 2026 meeting and that the parties would make their Section 205 filing with the Commission on November 16, 2026.", "pg": 3},
+  {"point": "NESCOE expects the stakeholder process to strengthen the expected section 205 filing.", "quote": "ISO-NE and the PTOAC’s expected Section 205 filing would likely be made much stronger if developed through New England’s robust stakeholder process.", "pg": 4},
+  {"point": "NESCOE sets four principles for any new construct: mitigate ratepayer cost, preserve state authority, prioritize reliability, promote transparency.", "quote": "any new regulatory construct should seek to mitigate the ratepayer cost impacts of new large load projects, preserve traditional state authority to regulate large and co-located loads, prioritize reliability, and promote transparency.", "pg": 4}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-11-show-cause"], "text": "Supports the abeyance of the E-11 60-day show cause deadline, which FERC granted August 14, 2026, and previews the state criteria for ISO-NE's November 16 filing."},
+ "themes": ["procedure", "cost"]
+}

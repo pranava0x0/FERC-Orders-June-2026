@@ -1,0 +1,62 @@
+{
+ "slug": "answer-el25-49-pjm-limited-protests",
+ "summary": "PJM answers the September 8 limited protests of Constellation, AMP and industrial customers to its August 17 co-location compliance filing, defending the July 1, 2028 Interim NITS date and agreeing to two clarifications in its November filing.",
+ "ask": "Grant leave to answer and accept the answer and the Pilong affidavit, and consider deferring the contested tariff issues until PJM's November compliance filing builds a fuller record.",
+ "points": [
+  {
+   "point": "PJM suggests FERC may defer the contested issues until its November compliance filing.",
+   "quote": "it may be appropriate for the Commission to defer consideration of these issues until it has the benefit of a complete record following next month’s compliance filing.",
+   "pg": 2
+  },
+  {
+   "point": "PJM expects systems to accept requests for the new services in September 2027, after the changes needed for Interim NITS.",
+   "quote": "PJM anticipates modifying the systems needed to begin accepting requests for the new transmission services in September of 2027.",
+   "pg": 3
+  },
+  {
+   "point": "PJM is designing a unified cluster study of large loads and generation, to be filed on or before November 16, 2026 in response to E-7.",
+   "quote": "PJM is developing a proposal for a new a study process that would evaluate large loads and generation interconnection requests together in a unified cluster study that would take roughly a year to complete.",
+   "pg": 3
+  },
+  {
+   "point": "PJM gives a timeline running from a 2027 application window to service in the first quarter of 2029.",
+   "quote": "application process in September of 2027, conducting the study in 2028, and beginning to provide service in first quarter 2029.",
+   "pg": 4
+  },
+  {
+   "point": "PJM says it will not repeat Necessary Studies already done, though changed scope can trigger more study.",
+   "quote": "While PJM will not repeat studies already performed, project scope or other technical changes may trigger the need for additional study.",
+   "pg": 4
+  },
+  {
+   "point": "PJM answers Constellation that Interim NITS will be interruptible and curtailed before capacity-backed services.",
+   "quote": "Interim NITS will be interruptible and curtailed before firm services like Firm Contract Demand Service or NITS that are capacity-backed services.",
+   "pg": 5
+  },
+  {
+   "point": "PJM will clarify in November that load with behind-the-meter generation is excluded from the Co-Located Load definition.",
+   "quote": "PJM intends to propose clarifications to the definition of BTMG in the November compliance filing to specify that load with BTMG is excluded from the definition of Co-Located Load.",
+   "pg": 7
+  },
+  {
+   "point": "PJM does not object to AMP's proposed fix to the Eligible Generating Facility definition.",
+   "quote": "PJM, does not object to AMP’s proposed revision to Eligible Generating Facility definition set forth in its pleading.",
+   "pg": 7
+  }
+ ],
+ "throughLine": {
+  "relation": "implements",
+  "anchors": [
+   "e-2-interim-nits",
+   "e-7-service-for-flexible-loads",
+   "e-2-retail-btmg-netting-rewritten"
+  ],
+  "text": "Defends PJM's E-2 co-location compliance, including the Interim NITS timeline, and previews the unified large load study PJM will file by November 16 in response to the E-7 show cause order."
+ },
+ "themes": [
+  "colo",
+  "flex",
+  "study",
+  "procedure"
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "slug": "filing-er26-3650-miso-irr",
+ "summary": "MISO files Tariff revisions in ER26-3650 setting Interconnection Reliability Requirements for Large Loads of 50 MW or more: visibility, PMU, ramp-rate and ride-through rules, with grandfathering for loads in service by December 4, 2026.",
+ "ask": "Accept the Large Load Interconnection Reliability Requirements Tariff revisions effective December 4, 2026.",
+ "points": [
+  {"point": "MISO says the filing answers some E-8 concerns (visibility, ramp rate, ride-through) and leaves study, products, cost-shift and proximate generation issues for later filings.", "quote": "proposing visibility, ramp rate, and disturbance ride-through requirements applicable to Large Loads, along with transition provisions to minimize disruption to commercial arrangements.", "pg": 1},
+  {"point": "Large Load means 50 MW or more at a single substation behind one or more points of withdrawal.", "quote": "Load with Demand of 50 MW or more associated with any facility or aggregation of facilities located at a single substation", "pg": 1},
+  {"point": "MISO requests a December 4, 2026 effective date.", "quote": "MISO requests that the Tariff revisions submitted herewith be made effective December 4, 2026", "pg": 2},
+  {"point": "The proposal applies to transmission customers serving the load and covers four categories: visibility, PMU, ramp and ride-through.", "quote": "The proposed framework focuses on four categories of reliability requirements that will be applicable to Large Loads.", "pg": 3},
+  {"point": "MISO says its study-process enhancements will come in a future section 205 filing.", "quote": "MISO intends to address enhancements to stability assessment study processes in a future Federal Power Act section 205 filing.", "pg": 4},
+  {"point": "MISO lists further proposals due before the November 16, 2026 abeyance deadline, including LARS for proximate load and a Firm Service Step Up.", "quote": "MISO is refining its Load Addition and Resource Study (“LARS”) process to facilitate the parallel study of load and generation that will address service to proximate load", "pg": 4},
+  {"point": "Initial ramp limits for Computational Load are 30 MW per minute up and down.", "quote": "MISO is proposing initial up- and down-ramp limits of 30MW/minute.", "pg": 20},
+  {"point": "Loads with a Service Commencement Date on or before December 4, 2026 are exempt from the new Section 37A for service already procured.", "quote": "MISO proposes to fully exempt, or “grandfather,” any Large Load that has a Service Commencement Date on or prior to December 4, 2026", "pg": 14}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-8-show-cause", "e-8-adequacy-report"], "text": "MISO's first large-load tariff filing after the E-8 order, covering operational requirements and leaving cost-recovery, transmission products and proximate-generation study for filings due by the abeyance deadline of November 16, 2026."},
+ "themes": ["registry", "study", "procedure"],
+ "figures": [
+  {"label": "MISO Large Load threshold", "value": 50, "unit": "MW", "quote": "Load with Demand of 50 MW or more", "pg": 1},
+  {"label": "Initial ramp limit for Computational Load", "value": 30, "unit": "MW/minute", "quote": "initial up- and down-ramp limits of 30MW/minute", "pg": 20},
+  {"label": "Data center load projected by 2035 (NERC)", "value": 18, "unit": "GW", "quote": "with 18 GW of data center loads projected by 2035", "pg": 5}
+ ]
+}

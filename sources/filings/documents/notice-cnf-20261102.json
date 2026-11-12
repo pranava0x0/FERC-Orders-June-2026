@@ -1,0 +1,28 @@
+{
+ "slug": "notice-cnf-20261102",
+ "summary": "FERC's November 2, 2026 combined notice of filings lists PJM's ER27-330-000 reliability backstop amendments and its ER27-330-001 errata, with a comment date of November 30, 2026 for both.",
+ "ask": null,
+ "points": [
+  {
+   "point": "The notice lists ER27-330-000, PJM's proposed Reliability Backstop Procurement amendments in ER26-3380, filed October 29, 2026.",
+   "quote": "Proposed Amendments to the Reliability Backstop Procurement in ER26-3380 to be effective 1/15/2027.",
+   "pg": 1
+  },
+  {
+   "point": "The errata filing ER27-330-001 was filed October 30, 2026 and carries the same November 30 comment date.",
+   "quote": "Errata to Correct Metadata and Waiver Request in RBP Compliance Filing to be effective 1/29/2027.",
+   "pg": 1
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-7-adequacy-report"
+  ],
+  "text": "Sets the comment date for PJM's ER27-330 backstop amendments, the capacity adequacy filing that runs beside the E-7 show cause proceeding."
+ },
+ "themes": [
+  "adequacy",
+  "procedure"
+ ]
+}

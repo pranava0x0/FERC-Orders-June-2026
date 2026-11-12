@@ -1,0 +1,44 @@
+{
+ "slug": "filing-20260908-5329",
+ "summary": "Consumers Energy moves to intervene and files limited comments on MISO's ZGIA filing, taking no position on whether it is just and reasonable and asking FERC to state in any acceptance order that state retail jurisdiction is preserved.",
+ "ask": "Condition any approval of MISO's ZGIA filing on an express finding that it does not supersede, preempt or displace state jurisdiction over retail loads.",
+ "points": [
+  {
+   "point": "Consumers Energy takes no position on the merits of MISO's proposal.",
+   "quote": "Consumers Energy takes no position on whether MISO’s proposal is just and reasonable.",
+   "pg": 2
+  },
+  {
+   "point": "It lists four elements for any acceptance order, from limiting the tariff to jurisdictional services to coordination and transparency for state regulators.",
+   "quote": "(1) limit the tariff to Commission-jurisdictional services and practices; (2) preserve state authority over retail loads and retail cost recovery;",
+   "pg": 3
+  },
+  {
+   "point": "It cites the E-8 show cause order's statements that states keep authority over co-located load retail terms and rate design.",
+   "quote": "states retain exclusive authority over the specific terms of retail sales and retail rate design, retail cost allocation to co-located load",
+   "pg": 3
+  },
+  {
+   "point": "It asks FERC to carry those statements into the ordering paragraphs, and notes MISO confined the ZGIA to generation and load at the same substation and voltage level.",
+   "quote": "MISO’s decision to confine the ZGIA to generation and load at the same substation and voltage level",
+   "pg": 4
+  },
+  {
+   "point": "The conclusion asks FERC to condition approval on clear jurisdictional limits.",
+   "quote": "requests that the Commission condition any approval on clear jurisdictional limitations and expressly state that the approved proposal does not supersede, preempt, or displace state jurisdiction over retail loads.",
+   "pg": 5
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-8-show-cause",
+   "e-8-co-location-ancillary-charges"
+  ],
+  "text": "Comments on MISO's ZGIA filing in ER26-3552, part of MISO's E-8 response, relying on the E-8 order's passages that reserve retail service and co-located load retail terms to the states."
+ },
+ "themes": [
+  "retail",
+  "colo"
+ ]
+}

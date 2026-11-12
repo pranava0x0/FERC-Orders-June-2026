@@ -1,0 +1,13 @@
+{
+ "slug": "amendment-er27-432-spp-chills",
+ "summary": "SPP amends its November 6 CHILLS tariff filing to add the omitted Schedule 14 and Incremental Market Efficiency Use revenue references to the Upper Missouri Zone rate sheet, keeping the February 1, 2027 effective date.",
+ "ask": "Accept the November 6 filing as amended, with an effective date of February 1, 2027.",
+ "points": [
+  {"point": "SPP may amend because no FERC or delegated order has issued on the November 6 filing.", "quote": "Amendment of the November 6 Filing is permitted because no Commission or delegated order has been issued in the docket.", "pg": 1},
+  {"point": "SPP says it inadvertently omitted revisions to the Upper Missouri Zone rate sheet.", "quote": "SPP inadvertently omitted revisions to the rate sheet for the Upper Missouri Zone to add references to Schedule 14 and Incremental Market Efficiency Use revenues.", "pg": 2},
+  {"point": "SPP keeps Attachment AU references on this sheet because the zone includes SPP East Region utilities.", "quote": "because the Upper Missouri Zone includes utilities in the SPP East Region.", "pg": 3},
+  {"point": "SPP requests no other changes and the same effective date.", "quote": "SPP is not requesting any other amendments or modifications to the November 6 Filing.", "pg": 4}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-9-new-services-for-flexible-loads"], "text": "Technical amendment in SPP's ER27-432 docket extending CHILLS, its conditional large-load service, to the West Region; E-9 directs new services for flexible loads building on that framework."},
+ "themes": ["flex", "cost"]
+}

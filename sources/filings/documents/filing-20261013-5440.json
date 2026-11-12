@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20261013-5440",
+ "summary": "MISO answers the comments and protests on its large-load reliability proposal, defends its definitions, transition provisions and Tariff/BPM split, and asks FERC to accept the proposal unchanged.",
+ "ask": "Accept the answer and accept the IRR Proposal without modification or condition, effective December 4, 2026.",
+ "points": [
+  {"point": "MISO says the pleadings broadly support the proposal and only one protest asks for rejection with refiling by end of 2027.", "quote": "only one protest requests the revisions to be rejected and MISO directed to file revised requirements by the end of 2027.", "pg": 2},
+  {"point": "MISO says the comments offer alternatives but do not show the proposal fails section 205.", "quote": "but do not establish that the framework proposed by MISO fails to satisfy the requirements of Section 205 of the Federal Power Act.", "pg": 3},
+  {"point": "MISO asks that the proposal be accepted without modification and without expanding the proceeding to other large-load issues.", "quote": "MISO respectfully requests that the IRR Proposal be accepted without modification and grant the requested effective date of December 4, 2026.", "pg": 3},
+  {"point": "MISO ties the proposal to the E-8 findings on a large load definition and ongoing operational requirements.", "quote": "a definition of large load sufficient to capture loads that present the unique challenges described in the Show Cause Order", "pg": 4},
+  {"point": "On scope, MISO says the proposal does not create a regime for distribution-connected load not taking MISO Transmission Service.", "quote": "the IRR Proposal does not create a free-standing MISO reliability regime for distribution- connected load that is not taking MISO Transmission Service.", "pg": 27},
+  {"point": "MISO's conclusion requests acceptance without modification or condition.", "quote": "MISO respectfully requests that the Commission (i) accept this Answer and (ii) accept the IRR Proposal without modification or condition.", "pg": 34}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "MISO's reply to protests of its first filing after the E-8 order, defending it as a response to the order's findings on large load definition and ongoing operational requirements."},
+ "themes": ["registry", "procedure"]
+}

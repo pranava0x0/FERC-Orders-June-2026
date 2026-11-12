@@ -1,0 +1,19 @@
+{
+ "slug": "abeyance-el26-70-miso",
+ "summary": "FERC grants the MISO and MISO Transmission Owners motion and holds the E-8 show cause proceeding in abeyance for 90 days, moving responses to November 16, 2026 and answers to December 16, 2026.",
+ "ask": null,
+ "points": [
+  {"point": "FERC grants the abeyance request filed August 3, 2026, for 90 days and in full.", "quote": "we grant the Abeyance Motion filed by MISO and the MISO TOs and hold this proceeding in abeyance for 90 days.", "pg": 1},
+  {"point": "MISO listed six planned section 205 filings, starting with a Zero Injection Generator Interconnection Agreement by end of August.", "quote": "by the end of August, MISO expects to submit Tariff changes establishing a new Zero Injection Generator Interconnection Agreement", "pg": 1},
+  {"point": "MISO described a load addition and resource study process completable within 120 days.", "quote": "a load addition and resource study process that will assess the transmission infrastructure needed to meet new large loads and new generation in an efficient study process that can be completed within 120 days.", "pg": 1},
+  {"point": "AMP opposed abeyance and asked FERC to condition it on a cost-transparency and cost-shifting proposal and a compliance filing.", "quote": "AMP argues that the Abeyance Motion fails to meet the standards for abeyance established in the Show Cause Order and only superficially describes a potential future filing under FPA section 205.", "pg": 1},
+  {"point": "New due dates: responses on November 16, 2026 and answers on December 16, 2026.", "quote": "responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026.", "pg": 1},
+  {"point": "A section 205 filing addressing the preliminary findings by November 16 suspends that respondent's duty to respond.", "quote": "the obligation of the respondent(s) who have made such an FPA section 205 filing to file a response to the Show Cause Order will be suspended", "pg": 1},
+  {"point": "FERC warns that issues not covered by the section 205 filings will be addressed in the show cause proceeding.", "quote": "should their FPA section 205 filings not address all of the Commission’s preliminary findings in the Show Cause Order, the Commission will address those issues through the show cause proceeding.", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-8-show-cause"], "text": "Moves the E-8 order's 60-day show cause deadline from August 17 to November 16, 2026 and suspends a respondent's response duty if it files section 205 tariff changes that address the preliminary findings."},
+ "themes": ["procedure"],
+ "figures": [
+  {"label": "Abeyance period granted for MISO show cause", "value": 90, "unit": "days", "quote": "hold this proceeding in abeyance for 90 days", "pg": 1}
+ ]
+}

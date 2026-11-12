@@ -1,0 +1,18 @@
+{
+ "slug": "filing-20260819-5134",
+ "summary": "The Illinois Commerce Commission comments in support of PJM's July 31 Reliability Backstop Procurement filing, while raising concerns about forecast error, new state allocation duties for retail access states, and state access to registry data.",
+ "ask": "Accept PJM's backstop proposal with mitigation of cost shifts to existing ratepayers, no new obligations on states, PJM clarifications, and state access to RBP data.",
+ "points": [
+  {"point": "ICC generally supports PJM's one-time supplemental capacity procurement for large-load shortfalls.", "quote": "The ICC generally supports PJM's proposal to implement a one-time, supplemental procurement of new capacity to address the identified resource adequacy shortfall", "pg": 1},
+  {"point": "ICC praises the bilateral phase because it assigns costs to the new load that contributed to the shortfall.", "quote": "Bilateral contracts provide new load with an opportunity to purchase capacity and address the shortfall to which they directly contributed.", "pg": 2},
+  {"point": "ICC says the proposal has no mechanism to moderate load forecast error, and 15-year contracts could compound it.", "quote": "The PJM proposal does not include any mechanism to moderate any potential error, such as cost reconciliation.", "pg": 4},
+  {"point": "ICC questions how retail access states can assign wholesale capacity costs to retail load through the new RBP Obligation.", "quote": "it is unclear how states, particularly retail access states like Illinois, would be able to assign wholesale capacity costs to retail load in the manner PJM proposes", "pg": 5},
+  {"point": "ICC doubts that states are best placed to identify cost causers, which the E-7 order expects cost transparency to enable.", "quote": "expecting the states to make such determinations for PJM and the Commission may be unreasonable.", "pg": 6},
+  {"point": "ICC asks that registry data reach all states and that PJM's non-disclosure form be flexible.", "quote": "the ICC, for instance, would not be in a position to sign the pro forma non-disclosure agreements to access confidential data from PJM as it reads at this time.", "pg": 7}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-cost-transparency"], "text": "Comments in the separate PJM backstop docket ER26-3380. ICC cites the E-7 order's expectation that cost transparency will let states sub-allocate costs, and says it doubts that assumption for retail access states."},
+ "themes": ["adequacy", "retail", "registry"],
+ "figures": [
+  {"label": "PJM expected average annual load growth over 10 years", "value": 5.3, "unit": "%", "quote": "PJM expects load growth to average 5.3% over the next 10 years and 3.4% over 20 years.", "pg": 4}
+ ]
+}

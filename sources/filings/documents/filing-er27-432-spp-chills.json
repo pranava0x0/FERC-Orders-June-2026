@@ -1,0 +1,14 @@
+{
+ "slug": "filing-er27-432-spp-chills",
+ "summary": "SPP files Tariff revisions that extend its Conditional High Impact Large Load Service (CHILLS) to the five new pricing zones of the SPP West Region by adding them to Schedule 15 and crediting Schedule 15 revenues in Attachment T point-to-point rates.",
+ "ask": "Accept the Schedule 15 and Attachment T revisions as just and reasonable, effective February 1, 2027.",
+ "points": [
+  {"point": "SPP adds CHILLS provisions for West Region pricing zones and makes clarifying edits.", "quote": "to add provisions for Conditional High Impact Large Load Service (“CHILLS”) for pricing Zones in the SPP West Region, and to make other clarifying edits.", "pg": 1},
+  {"point": "CHILLS lets High Impact Large Loads take non-firm conditional transmission service; FERC accepted it in earlier orders.", "quote": "SPP submitted revisions to the Tariff to add CHILLS to allow High Impact Large Loads (“HILL”) to be served with non-firm conditional transmission service.", "pg": 2},
+  {"point": "The CHILLS filing predated the West Region pricing zones, which came with the April 1, 2026 RTO expansion.", "quote": "At the time of the CHILLS Filing, the new pricing Zones for the SPP West Region had not yet been established in the Tariff.", "pg": 2},
+  {"point": "SPP adds Zones 100 to 104 to Schedule 15.", "quote": "SPP proposes to add pricing Zones 100, 101, 102, 103, and 104 under Section 1 of Schedule 15", "pg": 3},
+  {"point": "Point-to-point rates will be adjusted for Schedule 15 revenues, and mistaken Attachment AU references are removed for CSU and Platte River.", "quote": "SPP adds a reference to Schedule 15 to appropriately adjust the Point-To-Point Transmission Service Rates for any revenues received for Schedule 15 charges.", "pg": 4}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-9-new-services-for-flexible-loads"], "text": "Separate SPP proceeding (ER27-432) extending CHILLS, SPP's conditional non-firm service for large loads, to its West Region; E-9 builds on the CHILLS and HILL framework and directs new services for flexible loads."},
+ "themes": ["flex", "cost"]
+}

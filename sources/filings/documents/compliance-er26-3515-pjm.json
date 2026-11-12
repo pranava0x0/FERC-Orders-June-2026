@@ -1,0 +1,13 @@
+{
+ "slug": "compliance-er26-3515-pjm",
+ "summary": "PJM files the tariff and Reliability Assurance Agreement text that keeps the 50 MW Large Load definition and the Large Load Registry FERC accepted on October 9, with the fields tied to its rejected capacity proposal removed.",
+ "ask": "Accept the compliance filing with an October 12, 2026 effective date.",
+ "points": [
+  {"point": "PJM drops the two registry fields tied to its rejected capacity proposal.", "quote": "the amount of BYONC brought by a particular Large Load and the allocated RBP UCAP MW quantity", "pg": 2},
+  {"point": "A Large Load is 50 MW of cumulative peak at one electrical site.", "quote": "a cumulative peak load of 50 megawatts or greater at a single electrical site behind one or more points of interconnection", "pg": 109},
+  {"point": "Loads in service before June 1, 2027 must be reported by March 1, 2027.", "quote": "prior to June 1, 2027, shall provide the information required by RAA, Schedule 11.B.1 to the Office of the Interconnection by March 1, 2027.", "pg": 124},
+  {"point": "Later loads must be reported before they enter service.", "quote": "before the in-service date of the Large Load.", "pg": 125}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-application-study-process", "e-12-define-large-load"], "text": "Defines which PJM loads count as large and how PJM learns about them, the threshold question the E-7 order leaves to PJM's show cause response."},
+ "themes": ["registry"]
+}

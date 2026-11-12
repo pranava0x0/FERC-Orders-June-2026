@@ -1,0 +1,65 @@
+{
+ "slug": "letter-er26-3552-miso-deficiency",
+ "summary": "FERC's Office of Energy Market Regulation issues a deficiency letter on October 9, 2026 asking MISO for more information on its ZGIA filing, including resource adequacy treatment, the Transient Tolerance Window and contingency studies, with a 45-day response period.",
+ "ask": null,
+ "points": [
+  {
+   "point": "Staff finds MISO's August 18 ZGIA submittal deficient and requests more information.",
+   "quote": "Please be advised that your submittal is deficient and that additional information is necessary to process the filing.",
+   "pg": 1
+  },
+  {
+   "point": "Staff asks why a Seasonal Accredited Capacity set by participation type is just and reasonable for a resource that cannot inject beyond its point of interconnection.",
+   "quote": "Please explain why it is just and reasonable to assign a SAC for a ZG Resource, which cannot inject beyond its point of interconnection, using the currently effective method based on participation type",
+   "pg": 1
+  },
+  {
+   "point": "Staff questions treating a 100 MW ZG Interconnection Service resource as equally deliverable as a 100 MW Network Resource Interconnection Service resource.",
+   "quote": "please explain why it is just and reasonable to consider these two resources as equally deliverable to load.",
+   "pg": 1
+  },
+  {
+   "point": "Staff asks how the Transient Tolerance Window will be set per resource, including when it would be shorter than 20 seconds.",
+   "quote": "Please explain how MISO and the applicable transmission owner will establish the Transient Tolerance Window applicable to each ZG Resource, including the circumstances in which it would require a window shorter than 20 seconds.",
+   "pg": 1
+  },
+  {
+   "point": "Staff asks how the ZG Impact Assessment will evaluate injections during the window and the contingencies it will study.",
+   "quote": "Please explain how MISO will evaluate, in the ZG Impact Assessment, the amount, in MW, of injections during the Transient Tolerance Window",
+   "pg": 1
+  },
+  {
+   "point": "MISO has 45 days to respond, and the response amends the filing and sets a new filing date.",
+   "quote": "A response to this letter must be filed with the Secretary of the Commission within 45 days of the date of this letter",
+   "pg": 1
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-8-services-for-flexible-co-located",
+   "e-8-adequacy-report"
+  ],
+  "text": "Staff questions the resource adequacy and reliability design of MISO's ZGIA, the first piece of MISO's E-8 response on co-located load, in the separate ER26-3552 proceeding."
+ },
+ "themes": [
+  "colo",
+  "adequacy"
+ ],
+ "figures": [
+  {
+   "label": "Response period to the deficiency letter",
+   "value": 45,
+   "unit": "days",
+   "quote": "within 45 days of the date of this letter",
+   "pg": 1
+  },
+  {
+   "label": "Study process proposed in MISO's ZGIA filing",
+   "value": 90,
+   "unit": "days",
+   "quote": "to establish a 90-day study process",
+   "pg": 1
+  }
+ ]
+}

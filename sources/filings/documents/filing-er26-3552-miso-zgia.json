@@ -1,0 +1,89 @@
+{
+ "slug": "filing-er26-3552-miso-zgia",
+ "summary": "MISO files a section 205 transmittal creating the Zero Injection Generator Interconnection Agreement, a 90-day study path for generation serving load at the same substation, as the first of several filings answering the E-8 show cause order.",
+ "ask": "Accept the ZGIA Tariff revisions, with an October 18, 2026 effective date.",
+ "points": [
+  {
+   "point": "MISO says the ZGIA gives expedited review to generation with little transmission impact because it serves load at the same substation.",
+   "quote": "The ZGIA proposal will help streamline the MISO generator interconnection process by providing expedited review of the addition of ZG Resources that have little or no impact on the Transmission System because they are limited to serving load at the same substation and voltage level.",
+   "pg": 1
+  },
+  {
+   "point": "MISO requests an October 18, 2026 effective date.",
+   "quote": "MISO requests that the Tariff revisions submitted herewith be made effective October 18, 2026",
+   "pg": 2
+  },
+  {
+   "point": "The filing is partial: it is the first in a series and does not cover all E-8 issues.",
+   "quote": "MISO notes that this filing is not intended to address all issues raised in the Show Cause Order.",
+   "pg": 2
+  },
+  {
+   "point": "MISO excludes electrically proximate load from the ZGIA and defers it to the LARS process.",
+   "quote": "Accordingly, this filing is limited to addressing generation and load at the same substation and does not attempt to resolve the separate issues presented by generation serving electrically proximate large load.",
+   "pg": 7
+  },
+  {
+   "point": "The generator cannot inject past the substation, and load and generation are not netted for transmission service or settlement.",
+   "quote": "the new generator with ZGIA Interconnection Service cannot inject past the interconnecting substation, and netting of the load and generation for transmission service or market settlement purposes is not allowed",
+   "pg": 8
+  },
+  {
+   "point": "Neither the ZGIA nor LARS creates new transmission services or addresses flexible large loads.",
+   "quote": "neither the ZGIA construct nor LARS proposal include new transmission service products specific to serving co-located or proximate load or address flexible large loads willing to limit transmission service.",
+   "pg": 10
+  },
+  {
+   "point": "MISO expects to file LARS by November 16, 2026, and has not proposed a Large Load definition here.",
+   "quote": "MISO will continue to develop the LARS process through the LLWG and expects to submit the LARS filing by November 16, 2026, or earlier, if feasible.",
+   "pg": 11
+  },
+  {
+   "point": "A request that meets the criteria gets a 90-day accelerated study.",
+   "quote": "If all of these criteria are met, the ZG Interconnection study process affords a 90-day accelerated study process leading to a ZGIA that memorializes the proposed configuration and limited injection.",
+   "pg": 13
+  },
+  {
+   "point": "MISO requires only an intent to use the full output for at least five years, not a firm commitment.",
+   "quote": "MISO therefore only requires that the agreement specify an intent to use the full output of the Generating Facility for at least five years rather than a firm commitment.",
+   "pg": 33
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-8-services-for-flexible-co-located",
+   "e-8-show-cause"
+  ],
+  "text": "MISO's first filing answering the E-8 order on co-location, covering the generator interconnection and study side only. Transmission service, flexible loads and proximate generation are deferred to LARS and later filings."
+ },
+ "themes": [
+  "colo",
+  "study",
+  "proximate",
+  "adequacy"
+ ],
+ "figures": [
+  {
+   "label": "Data center load projected by NERC for 2035",
+   "value": 18,
+   "unit": "GW",
+   "quote": "18 GW of data center loads projected by 2035",
+   "pg": 3
+  },
+  {
+   "label": "ZG Impact Assessment and accelerated study period",
+   "value": 90,
+   "unit": "days",
+   "quote": "a 90-day accelerated study process",
+   "pg": 13
+  },
+  {
+   "label": "Registration threshold for ZG Resources",
+   "value": 5,
+   "unit": "MW",
+   "quote": "ZG Resources greater than 5 MW in size",
+   "pg": 18
+  }
+ ]
+}

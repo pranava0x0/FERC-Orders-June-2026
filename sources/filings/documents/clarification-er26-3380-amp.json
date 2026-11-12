@@ -1,0 +1,82 @@
+{
+ "slug": "clarification-er26-3380-amp",
+ "summary": "American Municipal Power asks FERC to clarify its September 29, 2026 order on PJM's Reliability Backstop Procurement so that cost allocation reaches zones with large load growth and the order is read as non-final, and alternatively seeks rehearing.",
+ "ask": "Clarify that the suggested load-difference allocation is unjust if it charges zones without large load growth, and that PJM's as-filed allocation is open in the paper hearing; alternatively grant rehearing.",
+ "points": [
+  {
+   "point": "PJM's Initial RBP Target is 6,831.3 MW of UCAP, the amount the 2028/2029 auction cleared short.",
+   "quote": "PJM set the Initial RBP Target at 6,831.3 MW.",
+   "pg": 2
+  },
+  {
+   "point": "The September 29 order set paper hearing procedures on cost allocation, Transmission Owner exit rules and LSE collateral.",
+   "quote": "The Commission established paper hearing procedures to address three aspects of the PJM Filing – cost allocation, Transmission Owner exit rules, and collateral requirements for Load Serving Entities",
+   "pg": 3
+  },
+  {
+   "point": "AMP first asks FERC to clarify that its suggested allocation method fails cost causation if it charges zones without large load growth.",
+   "quote": "the Commission should clarify that it would not be just and reasonable to apply the Commission’s potential modification to PJM’s cost allocation method if it would result in RBP costs being allocated to Electric Distributor zone/areas that are not experiencing load growth attributable to data centers or other large loads",
+   "pg": 6
+  },
+  {
+   "point": "AMP second asks FERC to confirm that it made no final ruling on PJM's as-filed allocation method.",
+   "quote": "The Commission should clarify that it has not made a final decision regarding the justness and reasonableness of PJM’s as-filed RBP cost allocation approach",
+   "pg": 9
+  },
+  {
+   "point": "AMP asks that parties may defend PJM's as-filed allocation in the paper hearing.",
+   "quote": "The Commission should also clarify that parties may address PJM’s as-filed cost allocation proposal in the paper hearing procedures.",
+   "pg": 9
+  },
+  {
+   "point": "If clarification is denied, AMP seeks rehearing, calling the rejection arbitrary and capricious.",
+   "quote": "The Commission’s rejection of PJM’s proposal was arbitrary and capricious, as it was based on an apparent misunderstanding of PJM’s approach.",
+   "pg": 10
+  },
+  {
+   "point": "AMP says PJM used Load Adjustments from Table B9b, which count large loads that Table B9 would miss.",
+   "quote": "PJM, however, did not rely on the Load Adjustments shown in Table B9 to allocate RBP costs, it proposed to use the Load Adjustments in Table B9b of the Load Forecast.",
+   "pg": 12
+  },
+  {
+   "point": "AMP says the lack of a MW threshold for Load Adjustments is now fixed with a 50 MW threshold in PJM Manual 19.",
+   "quote": "PJM Manual 19 has been updated to specify a 50 MW threshold for future Load Adjustments",
+   "pg": 15
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-7-adequacy-report"
+  ],
+  "text": "Seeks clarification of the September 29 order on PJM's Reliability Backstop Procurement in ER26-3380, the separate capacity adequacy track beside the E-7 report on ensuring generation for large loads."
+ },
+ "themes": [
+  "adequacy",
+  "cost",
+  "procedure"
+ ],
+ "figures": [
+  {
+   "label": "PJM Initial Reliability Backstop Procurement target",
+   "value": 6831.3,
+   "unit": "MW",
+   "quote": "PJM set the Initial RBP Target at 6,831.3 MW.",
+   "pg": 2
+  },
+  {
+   "label": "Base Residual Auction price cap for 2028/2029",
+   "value": 325,
+   "unit": "$/MW-day",
+   "quote": "at the price cap of $325/MW-day",
+   "pg": 2
+  },
+  {
+   "label": "Load Adjustment threshold now in PJM Manual 19",
+   "value": 50,
+   "unit": "MW",
+   "quote": "a 50 MW threshold for future Load Adjustments",
+   "pg": 15
+  }
+ ]
+}
