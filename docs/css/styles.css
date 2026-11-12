@@ -205,15 +205,14 @@ a:hover { color: var(--accent-ink); }
 
 /* In-page jumps on the Overview (buttons, not hash links: the router owns the hash) and the Timeline. */
 .jump-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
-.jump-btn, .tl-jump {
+.jump-btn {
   appearance: none; font-family: var(--font-sans); font-size: 13px; font-weight: 600; cursor: pointer;
   color: var(--accent-ink); background: var(--surface-2); border: 1px solid var(--rule-strong);
   border-radius: 999px; padding: 6px 12px; line-height: 1.3;
 }
-.jump-btn:hover, .tl-jump:hover { background: var(--accent-wash); border-color: var(--accent); }
-.jump-btn:focus-visible, .tl-jump:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-@media (pointer: coarse) { .jump-btn, .tl-jump { min-height: 44px; } }
-.tl-jump-wrap { margin: 6px 0 12px; }
+.jump-btn:hover { background: var(--accent-wash); border-color: var(--accent); }
+.jump-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (pointer: coarse) { .jump-btn { min-height: 44px; } }
 .jump-anchor { display: block; height: 0; }
 /* jump targets land below the sticky tablist (46px, or two rows on phones) */
 #stand-h, #proc-h, #fm-h, #commish-h, .tl-item, .fgroup { scroll-margin-top: 60px; }
@@ -1405,3 +1404,5 @@ details.tl-item .srcs { padding: 0 0 10px 128px; }
 @media (max-width: 640px) { .fc a { grid-template-columns: minmax(0, 1fr) 76px; } .fc-l { grid-column: 1 / -1; } .fc-n { text-align: right; } }
 
 @media (max-width: 640px) { .masthead-sub { display: none; } .masthead-inner { padding-block: 8px; } }
+
+@media (pointer: coarse) { .ot a, .now-more a, .mh-next, .pq-pg, .now-latest a, .crumbs a { display: inline-flex; align-items: center; min-height: 44px; } }

@@ -26,6 +26,10 @@ if [ "$mode" = "--sweep" ]; then
   mode=--build
 fi
 sh tools/refresh-reading-room.sh "$mode"
-node tools/validate-documents.mjs --coverage | tail -1
-node tools/verify-quotes.mjs | tail -2
-node --test tests/*.test.mjs 2>&1 | grep -E "^ℹ (tests|pass|fail)"
+# A pipe would report tail's exit status, so each check writes to a file and fails on its own status.
+log="${TMPDIR:-/tmp}/ferc-refresh.$$"
+run() { if "$@" >"$log" 2>&1; then tail -2 "$log"; else cat "$log"; rm -f "$log"; echo "✗ failed: $*" >&2; exit 1; fi; }
+run node tools/validate-documents.mjs --strict
+run node tools/verify-quotes.mjs
+run node --test tests/
+rm -f "$log"

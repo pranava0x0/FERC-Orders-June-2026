@@ -50,9 +50,8 @@
   }
  ],
  "throughLine": {
-  "relation": "parallel",
+  "relation": "responds",
   "anchors": [
-   "e-8-services-for-flexible-co-located",
    "e-8-show-cause"
   ],
   "text": "MISO's first filing answering the E-8 order on co-location, covering the generator interconnection and study side only. Transmission service, flexible loads and proximate generation are deferred to LARS and later filings."

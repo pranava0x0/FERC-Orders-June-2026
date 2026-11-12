@@ -179,10 +179,9 @@
    "link": {
     "relation": "parallel",
     "anchors": [
-     "e-7-application-study-process",
-     "e-12-define-large-load"
+     "e-7-application-study-process"
     ],
-    "text": "Defines which PJM loads count as large and how PJM learns about them, the threshold question every order’s application-process directive depends on. Filed under section 205, outside EL26-67."
+    "text": "Defines which PJM loads count as large and how PJM learns about them, which every application and study rule in E-7 depends on. Filed under section 205, outside EL26-67."
    }
   },
   {
@@ -190,7 +189,7 @@
    "title": "PJM Reliability Backstop Procurement",
    "short": "PJM backstop auction",
    "docket": "ER26-3380-000",
-   "about": "PJM, the grid operator for 13 states and D.C., proposed a backstop purchase of new power plants to cover a projected supply shortfall as large loads grow. FERC accepted it in September and sent three cost questions to a written hearing.",
+   "about": "PJM, the grid operator for 13 states and D.C., proposed a backstop purchase of new power plants to cover a projected supply shortfall as large loads grow. On Sep 29 FERC accepted it for filing, suspended it to Feb 28, 2027 subject to refund, and set three cost issues for a paper hearing.",
    "status": "FERC suspended the procurement on Sep 29. PJM filed amendments Oct 29 and refiled the same proposal Nov 9 under the §205 code in ER27-454-000. Comments are due Nov 30 at 5 p.m. Eastern.",
    "kind": "related",
    "match": [
@@ -203,7 +202,7 @@
     "anchors": [
      "e-7-adequacy-report"
     ],
-    "text": "PJM’s answer to the resource-adequacy question the E-7 order’s 30-day report raised: a one-time backstop procurement for capacity to serve new large loads."
+    "text": "PJM’s July 20 E-7 adequacy report presents this procurement, begun before the order, as its main resource-adequacy effort."
    }
   },
   {
@@ -222,7 +221,7 @@
     "anchors": [
      "e-7-adequacy-report"
     ],
-    "text": "Challenges to FERC’s September order accepting the backstop procurement, the resource-adequacy piece the E-7 report described."
+    "text": "Challenges to FERC’s September order on the backstop procurement, which PJM’s E-7 adequacy report presents as its main resource-adequacy effort."
    }
   },
   {
@@ -241,7 +240,7 @@
     "anchors": [
      "e-7-adequacy-report"
     ],
-    "text": "A complaint asking FERC to order a prompt PJM capacity auction, a competing answer to the adequacy question E-7 raised."
+    "text": "A separate section 206 complaint on capacity-auction timing; it bears on the resource-adequacy topic of E-7’s 30-day report."
    }
   },
   {
@@ -259,9 +258,9 @@
     "relation": "responds",
     "anchors": [
      "e-8-show-cause",
-     "e-8-adequacy-report"
+     "e-8-proximate-generation-service"
     ],
-    "text": "MISO is answering E-8 in separate section 205 filings. LARS studies a large load and the generation to serve it together, MISO’s response on study process and adequacy."
+    "text": "MISO is answering E-8 in separate section 205 filings. LARS studies a large load and the generation built to serve it together, MISO’s answer to the order’s proximate-generation item."
    }
   },
   {
@@ -278,10 +277,9 @@
    "link": {
     "relation": "responds",
     "anchors": [
-     "e-8-services-for-flexible-co-located",
-     "e-8-co-location-ancillary-charges"
+     "e-8-show-cause"
     ],
-    "text": "One of MISO’s section 205 pieces answering E-8: a path to connect co-located generation that serves its own load without exporting."
+    "text": "A MISO section 205 filing for generation that serves on-site load and injects nothing into the grid. It creates no new transmission service; MISO lists it among its pieces answering E-8."
    }
   },
   {
@@ -298,9 +296,9 @@
    "link": {
     "relation": "responds",
     "anchors": [
-     "e-8-show-cause"
+     "e-8-application-study-operating"
     ],
-    "text": "A MISO section 205 piece tied to E-8’s study-process and operating-requirements directive: the rules a large load must meet once connected."
+    "text": "MISO says this filing is responsive to concerns raised in EL26-70: the ongoing operating requirements a large load must meet once connected, E-8’s first item."
    }
   },
   {
@@ -315,12 +313,12 @@
    "about": "SPP proposed revenue credits for conditional large-load service in its western zones, then corrected one rate sheet on Nov 10.",
    "status": "Filed Nov 6 and amended Nov 10, 2026.",
    "link": {
-    "relation": "responds",
+    "relation": "parallel",
     "anchors": [
      "e-9-new-services-for-flexible-loads",
      "e-9-cost-recovery-crediting"
     ],
-    "text": "SPP extending the conditional (flexible) service E-9 commended, with the crediting E-9’s cost-recovery directive asks about."
+    "text": "SPP extends CHILLS, the conditional large-load service E-9 builds on, to its West Region. The filing does not cite E-9 or EL26-68."
    }
   },
   {
@@ -390,11 +388,11 @@
    "about": "Documents from PJM’s own stakeholder process as it prepared its show cause response: Members Committee agendas, the legal report and a letter from large customers to the PJM Board.",
    "status": "PJM called a special Members Committee for Nov 5, 2026.",
    "link": {
-    "relation": "responds",
+    "relation": "context",
     "anchors": [
      "e-7-show-cause"
     ],
-    "text": "The process PJM is running to decide what it files in response to E-7 by Nov 16."
+    "text": "The stakeholder process PJM ran before deciding what to file in response to E-7 by Nov 16."
    }
   },
   {

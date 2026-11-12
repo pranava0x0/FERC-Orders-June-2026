@@ -86,3 +86,21 @@ test("every Discourse item has a kind, text and a way back to its source", () =>
     assert.ok((it.src && it.src.length) || it.url, it.id + " has no source");
   }
 });
+
+test("review round 1 regressions: filers that merged or split wrongly", () => {
+  assert.deepEqual(filerList("American Electric Power Service CorporationEvergy, Inc."), ["American Electric Power Service Corporation", "Evergy, Inc."]);
+  assert.deepEqual(filerList("SECRETARY OF THE COMMISSION,FERCCOMMISSIONERS AND IMMEDIATE STAFF (THE COMMISSION)"), ["Secretary of the Commission", "FERC", "Commissioners and Immediate Staff (the Commission)"]);
+  assert.deepEqual(filerList("Council of the City of New Orleans, Louisiana ,"), ["Council of the City of New Orleans, Louisiana"]);
+  assert.deepEqual(filerList("Eolian, L.P."), ["Eolian, L.P."]);
+});
+
+test("review round 1 regressions: tools/refresh.sh never pipes a check into tail or grep", () => {
+  const sh = read("tools", "refresh.sh");
+  assert.doesNotMatch(sh, /^(?!#).*(verify-quotes|validate-documents|--test)[^\n]*\|/m, "a piped check reports the pipe's exit status, not the check's");
+});
+
+test("review round 1 regressions: #reforms routes, and a theme filter keeps its own address", () => {
+  const app = read("docs", "js", "app.js");
+  assert.equal((app.match(/TABS\.indexOf\(p\.tab\) >= 0 \|\| p\.tab === "reforms"/g) || []).length, 2, "both hash entry points accept #reforms");
+  assert.match(app, /loadPoints\(g\);\n[^\n]*\n[^\n]*\n\s*if \(filingTheme\) return;/, "the toggle handler leaves the theme URL alone");
+});

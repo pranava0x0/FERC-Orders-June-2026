@@ -687,22 +687,6 @@
   function wireTimeline() {
     var panel = panelFor("timeline");
     if (!panel) return;
-    var jumpBtn = panel.querySelector("#tl-jump");
-    if (jumpBtn) jumpBtn.addEventListener("click", function () {
-      // Same today-comparison as procStatus(): a scheduled deadline is not "the latest event".
-      var today = new Date(); today.setHours(0, 0, 0, 0);
-      var items = Array.prototype.slice.call(panel.querySelectorAll(".tl-item:not([hidden])"));
-      var target = null;
-      items.forEach(function (el) {
-        var iso = (el.getAttribute("data-iso") || "").slice(0, 10);
-        if (/^\d{4}-\d{2}-\d{2}$/.test(iso) && new Date(iso + "T00:00:00") <= today) target = el;
-      });
-      if (!target) target = items[items.length - 1];
-      if (!target) return;
-      target.scrollIntoView({ block: "start" });
-      target.setAttribute("tabindex", "-1");
-      target.focus({ preventScroll: true });
-    });
     applyTimelineTrack = function (id) {
       timelineTrack = validTrack(id);
       panel.querySelectorAll(".tl-item").forEach(function (el) {
@@ -714,11 +698,6 @@
         b.classList.toggle("is-active", on);
       });
       var live = panel.querySelector("#tl-filterstatus");
-      var jump = null;
-      if (jump) {
-        var n0 = panel.querySelectorAll(".tl-item:not([hidden])").length;
-        jump.textContent = "Jump to the latest event" + (timelineTrack === "all" ? "" : " in " + D.tracks[timelineTrack].short) + " (" + n0 + " shown)";
-      }
       if (live) {
         var n = panel.querySelectorAll(".tl-item:not([hidden])").length;
         live.textContent = timelineTrack === "all"
@@ -1047,7 +1026,7 @@
       toggle + '<article class="state-lead"><h3><a href="reading/positions.html#state-commissions">' + esc(D.meta.stateLead.title) + "</a></h3><p>" + esc(D.meta.stateLead.text) + "</p>" + publicSrcChips(D.meta.stateLead.sources) + "</article>" +
       '<div class="dx-view" id="dx-view">' + renderDiscourseView(discourseView) + "</div>" +
       accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false, outletIds.length) +
-      '<p class="cm-jump-wrap"><a class="cm-jump" href="#comments">The 273 RM26-4 comment letters are in Comments</a></p>';
+      '<p class="cm-jump-wrap"><a class="cm-jump" href="#comments">The RM26-4 comment letters are in Comments</a></p>';
   }
   function wireNews() {
     var panel = panelFor("news");
@@ -1883,7 +1862,8 @@
   }
   var filingTheme = "";
   function applyTheme(panel, key) {
-    filingTheme = key || "";
+    var R0 = window.FERC_RECORD;
+    filingTheme = key && R0 && R0.themes.some(function (t) { return t.key === key; }) ? key : "";
     panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-theme") === filingTheme)); });
     var shown = 0;
     panel.querySelectorAll(".fgroup").forEach(function (g) {
@@ -1902,10 +1882,20 @@
   function routeFiling(rest) {
     var panel = panelFor("filings");
     var bits = String(rest || "").split("/");
-    if (bits[0] === "theme") { applyTheme(panel, bits[1] || ""); filingHash = rest; return; }
+    if (bits[0] === "theme") {
+      applyTheme(panel, bits[1] || "");
+      // An unknown theme shows everything, so the address says so too.
+      filingHash = filingTheme ? "theme/" + filingTheme : "";
+      if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
+      return;
+    }
     var grp = document.getElementById("fg-" + bits[0]);
     // Retired group ids from earlier links: the June-orders group became one group per operator.
-    if (!grp && bits[0] === "show-cause-since-june") grp = document.getElementById("fg-sc-pjm");
+    if (!grp && bits[0] === "show-cause-since-june") {
+      var legacy = bits[1] && [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return slugify(d.querySelector(".fd-who").textContent) === bits[1]; })[0];
+      grp = legacy ? legacy.closest(".fgroup") : document.getElementById("fg-sc-multi");
+      if (legacy) bits[1] = legacy.id.slice(3);
+    }
     if (!grp) return;
     if (filingTheme) applyTheme(panel, "");
     filingHash = rest;
@@ -1935,6 +1925,9 @@
       var g = el.classList.contains("fgroup") ? el : el.classList.contains("fdoc") ? el.closest(".fgroup") : null;
       if (!g) return;
       loadPoints(g);
+      // While a theme filter is on, the address is the theme. Toggle events arrive after applyTheme
+      // opens matching groups, so a flag set around those opens would already be cleared here.
+      if (filingTheme) return;
       filingHash = g.id.slice(3) + (el.classList.contains("fdoc") ? "/" + el.id.slice(3) : "");
       if (history.replaceState) history.replaceState(null, "", "#filings/" + filingHash);
       setCrumbs("filings", filingHash);
@@ -2015,6 +2008,7 @@
       });
       var body = "#commissioners" + (who === "all" ? "" : "/" + who);
       if (history.replaceState) history.replaceState(null, "", body);
+      setCrumbs("commissioners", who);
     };
     panel.addEventListener("click", function (ev) {
       var b = ev.target.closest && ev.target.closest(".who-chip");
@@ -2075,6 +2069,7 @@
     var body = "#timeline" + (track && track !== "all" ? "/track/" + track : "");
     if (history.replaceState) history.replaceState(null, "", body);
     else location.hash = body.slice(1);
+    setCrumbs("timeline", body.slice(10));
   }
   function parseTimelineRest(rest) {
     var m = String(rest || "").match(/^track\/([A-Za-z0-9_-]+)$/);
@@ -2274,27 +2269,6 @@
     el.innerHTML = '<a class="mh-next" href="#overview">Next: <span class="mono">' + esc(fmtISO(stepWhen(n)).replace(/, \d{4}$/, "")) + "</span> · " + esc(n.label) +
       (days >= 0 ? ", " + (days === 0 ? "today" : days === 1 ? "tomorrow" : "in " + days + " days") : "") + "</a>";
     el.hidden = false;
-    return;
-    // Second clause: the most recent PASSED step the filing matrix covers, with its observed count.
-    // Without it the chip announces a deadline and says nothing about whether the last one was met,
-    // which is the honesty gap a visitor hits first. Counts derive from the matrix, never hand-written.
-    // Appended as a text node rather than folded into the innerHTML above: no markup needed here.
-    var F = D.procedural && D.procedural.filings;
-    if (F && F.steps) {
-      var passed = ps.steps.filter(function (x) {
-        return x.status === "past" && F.steps.indexOf(x.s.id) >= 0;
-      });
-      var last = passed[passed.length - 1];
-      if (last) {
-        var t = filingTally(last.s.id);
-        var span = document.createElement("span");
-        span.className = "mh-observed";
-        span.textContent = last.s.label.toLowerCase() + ": " + t.seen + " of " + t.total + " observed";
-        el.appendChild(document.createTextNode(" · "));
-        el.appendChild(span);
-      }
-    }
-    el.hidden = false;
   }
 
   function init() {
@@ -2312,10 +2286,10 @@
     // in-page links and shared permalinks switch tabs (and Comments sub-state) via the hash
     window.addEventListener("hashchange", function () {
       var p = parseHash();
-      if (TABS.indexOf(p.tab) >= 0) goTab(p.tab, p.rest, false);
+      if (TABS.indexOf(p.tab) >= 0 || p.tab === "reforms") goTab(p.tab, p.rest, false);
     });
     var p = parseHash();
-    goTab(TABS.indexOf(p.tab) >= 0 ? p.tab : "overview", p.rest, false);
+    goTab(TABS.indexOf(p.tab) >= 0 || p.tab === "reforms" ? p.tab : "overview", p.rest, false);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

@@ -1117,7 +1117,7 @@ window.FERC_DATA = (function () {
     { value: "5", label: "Reform categories", sub: "teed up in each tailored order" },
     // `step` joins the card to the live procedural clock, so these two stop reading as forever-pending.
     { value: "30 days", label: "Informational report", sub: "resource-adequacy plan to serve large loads", deadline: true, step: "report" },
-    { value: "60 days", label: "Justify or file", sub: "defend tariffs or propose §206 revisions; all six now in abeyance to Nov 16", deadline: true, step: "showcause" },
+    { value: "60 days", label: "Justify or file", sub: "defend tariffs or propose §206 revisions; all six in abeyance to Nov 16 (SPP Nov 20)", deadline: true, step: "showcause" },
     { value: "> 20 MW", label: "“Large load”", sub: "DOE threshold (per Order No. 2003)" },
     { value: "3,500+", label: "Pages reviewed", sub: "public comments in the RM26-4 docket" },
   ];
@@ -1701,7 +1701,7 @@ window.FERC_DATA = (function () {
     {
       date: "Jan 11, 2027", iso: "2027-01-11", kind: "deadline", track: "context",
       title: "Backstop paper-hearing initial briefs, as extended",
-      body: "FERC's Oct 23 notice moved the EL26-108 initial briefs from Nov 13, 2026 to 5 p.m. on Jan 11, 2027, and reply briefs to Jan 26, 2027. PJM has asked FERC to act on its ER27-330 refiling by Jan 29, 2027.",
+      body: "FERC's Oct 23 notice moved the EL26-108 initial briefs from Nov 13, 2026 to 5 p.m. on Jan 11, 2027, and reply briefs to Jan 26, 2027. PJM has asked FERC to act on its ER27-454 refiling, substantively identical to the ER27-330 filing it recoded, by Jan 29, 2027.",
       src: ["fercnotice1023", "pjmrbp1029"],
     },
   ];
@@ -1846,6 +1846,8 @@ window.FERC_DATA = (function () {
         "An appropriate minimum level of cost recovery and financial security under any cost-recovery agreement (P 119).",
       ],
       dir: [
+        { t: "Application / study / operating requirements", reform: "study", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 6(a)", pg: 6 },
+        { t: "Proximate-generation service", reform: "proximate", q: "the rates, terms, and conditions of service applicable to interconnection customers serving electrically proximate large load or co-located load", p: "P 6(e)", pg: 7 },
         { t: "Alternative transmission technologies", reform: "study", q: "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system", p: "P 119", pg: 74 },
         { t: "Cost-recovery agreement", reform: "cost", q: "a pro forma cost recovery agreement between MISO, the relevant transmission owner, and Eligible Customer taking transmission service on behalf of the large load to mitigate the risk of cost shifting", p: "P 6(b)", pg: 6 },
         { t: "Minimum cost recovery / security", reform: "cost", q: "what an appropriate minimum level of cost recovery and financial security from an Eligible Customer would be under any such agreements", p: "P 119", pg: 74 },
@@ -2989,8 +2991,13 @@ window.FERC_DATA = (function () {
         },
         {
           docket: "EL26-70-000", step: "showcause", status: "signaled", date: "2026-10-02",
-          gist: "MISO is filing its large-load reforms under §205 in separate ER dockets rather than in EL26-70: a zero-injection generator interconnection agreement in August and, on Oct 2, a Large Load Addition Resource Study in Docket ER27-25-000 (accession 20261002-5074), with a requested effective date of Dec 2, 2026. Whether MISO also files or responds in EL26-70 by Nov 16 is unknown.",
-          src: ["udive1005", "misolars1002"],
+          gist: "MISO is filing its large-load reforms under §205 in separate ER dockets rather than in EL26-70: a zero-injection generator interconnection agreement in August and, on Oct 2, a Large Load Addition Resource Study in Docket ER27-25-000 (accession 20261002-5074), with a requested effective date of Dec 2, 2026. In its Nov 9 LARS answer MISO says it and its transmission owners “will include in their Large Load filing(s) due on November 16, 2026, the pro forma cost recovery agreements.”",
+          src: ["udive1005", "misolars1002", "misolars1109"],
+        },
+        {
+          docket: "EL26-68-000", step: "showcause", status: "signaled", date: "2026-08-14",
+          gist: "SPP's abeyance runs to Nov 20, 2026, 95 days, “pending completion of SPP’s stakeholder proceedings and submittal of an FPA section 205 filing,” as the Aug 14 letter order records.",
+          src: ["abeyance0814"],
         },
         {
           docket: "EL26-69-000", step: "showcause", status: "signaled", date: "2026-06-18",

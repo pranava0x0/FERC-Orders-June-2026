@@ -144,11 +144,13 @@ export function validateReading(doc, ctx, file = doc.slug + ".json") {
 export function validateAnchors(ctx) {
   const errs = [];
   for (const a of ctx.anchors.values()) {
-    const miss = quoteOnPage(a.slug, a.quote.replace(/\s*…\s*/g, " "), a.pg, a.pg + 1);
+    const last = Math.min(a.pg + 1, (pagesFor(a.slug) || []).length || a.pg);
+    const miss = quoteOnPage(a.slug, a.quote.replace(/\s*…\s*/g, " "), a.pg, last);
     // Directive quotes in data.js may elide with an ellipsis; check each fragment on the page.
     if (miss && a.quote.includes("…")) {
       // An elision can join a fragment mid-clause; a leading conjunction belongs to our splice, not the source.
       const parts = a.quote.split("…").map((s) => s.trim().replace(/^(and|or|but) /i, "")).filter((s) => words(s) >= 3);
+      if (!parts.length) errs.push(`anchor ${a.id}: no fragment long enough to check`);
       const bad = parts.filter((s) => quoteOnPage(a.slug, s, a.pg, Math.min(a.pg + 1, pagesFor(a.slug).length)));
       if (bad.length) errs.push(`anchor ${a.id}: fragment not on p. ${a.pg}: "${bad[0].slice(0, 60)}"`);
     } else if (miss) errs.push(`anchor ${a.id}: ${miss}`);

@@ -14,7 +14,7 @@
 //   node tools/build-record-data.mjs          # write docs/js/record-data.js
 //   node tools/build-record-data.mjs --check  # exit 1 if the committed file differs from a fresh build
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, unlinkSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -30,15 +30,17 @@ export function filerList(raw) {
   const fixed = String(raw || "").replace("FERCCOMMISSIONERS", "FERC, COMMISSIONERS");
   // Split only at a seam after a word that ends an organization's name, so camel-case names
   // (SunZia, DesertLink, FirstEnergy) survive. Commas inside parentheses are not separators.
-  const END = "Change|Consumers|Services|Company|Commission|Counsel|Club|Council|Association|Agency|Authority|Office|Coalition|Board|Advocate|Corporation|Center|Committee|Group|Alliance|General|Cooperative|Project|States|Customers|Owners|Inc\\.|COUNSEL|ADVOCATE|AGENCY|COMMISSION|GENERAL";
+  const END = "CORPORATION|COMMISSION(?!ERS)|Change|Consumers|Services|Company|Commission|Counsel|Club|Council|Association|Agency|Authority|Office|Coalition|Board|Advocate|Corporation|Center|Committee|Group|Alliance|General|Cooperative|Project|States|Customers|Owners|Inc\\.|COUNSEL|ADVOCATE|AGENCY|GENERAL";
   const seam = new RegExp(",(?![^()]*\\))|(?<=(?:" + END + "))(?=[A-Z])");
   const parts = fixed.replace(/\s+,/g, ",").split(seam).map((x) => prettyName(x.trim())).filter(Boolean);
   const out = [];
-  for (const p of parts) { if (SUFFIX.test(p) && out.length) out[out.length - 1] += ", " + p; else out.push(p); }
+  // A state after a comma names where the party sits ("Council of the City of New Orleans, Louisiana").
+  const STATE = /^(Alabama|Alaska|Arizona|Arkansas|California|Colorado|Connecticut|Delaware|Florida|Georgia|Hawaii|Idaho|Illinois|Indiana|Iowa|Kansas|Kentucky|Louisiana|Maine|Maryland|Massachusetts|Michigan|Minnesota|Mississippi|Missouri|Montana|Nebraska|Nevada|New Hampshire|New Jersey|New Mexico|New York|North Carolina|North Dakota|Ohio|Oklahoma|Oregon|Pennsylvania|Rhode Island|South Carolina|South Dakota|Tennessee|Texas|Utah|Vermont|Virginia|Washington|West Virginia|Wisconsin|Wyoming)$/;
+  for (const p of parts) { if ((SUFFIX.test(p) || STATE.test(p)) && out.length) out[out.length - 1] += ", " + p; else out.push(p); }
   return out;
 }
 // eLibrary records some filers in capitals. Title-case those, keeping known acronyms; raw stays in the catalog.
-const ACRONYMS = new Set(["FERC", "PJM", "MISO", "SPP", "NYISO", "CAISO", "ISO", "NE", "DC", "US", "U.S.", "LLC", "L.L.C.", "PTO", "AC", "OCA", "PSC", "CUB", "NRDC", "ACP", "SREA"]);
+const ACRONYMS = new Set(["FERC", "PJM", "MISO", "SPP", "NYISO", "CAISO", "ISO", "NE", "DC", "US", "U.S.", "LLC", "L.L.C.", "PTO", "AC", "OCA", "PSC", "CUB", "NRDC", "ACP", "SREA", "L.P.", "LP", "ITC", "AEP", "PUC", "IMM"]);
 const SMALL = new Set(["of", "and", "the", "for", "on", "in"]);
 export function prettyName(x) {
   if (!x || /[a-z]/.test(x)) return x;
@@ -142,13 +144,17 @@ function main() {
   const pfDir = join(ROOT, "docs", "data", "filings");
   const pf = Object.entries(built.pointFiles).map(([id, v]) => [join(pfDir, id + ".json"), JSON.stringify(v) + "\n"]);
   if (process.argv.includes("--check")) {
-    const same = existsSync(OUT) && readFileSync(OUT, "utf8") === out && pf.every(([f, t]) => existsSync(f) && readFileSync(f, "utf8") === t);
+    const want = new Set(pf.map(([f]) => f));
+    const orphans = existsSync(pfDir) ? readdirSync(pfDir).filter((f) => !want.has(join(pfDir, f))) : [];
+    const same = existsSync(OUT) && readFileSync(OUT, "utf8") === out && pf.every(([f, t]) => existsSync(f) && readFileSync(f, "utf8") === t) && !orphans.length;
+    if (orphans.length) console.error("✗ orphan point files: " + orphans.join(", "));
     console.log(same ? `✓ record-data.js is current (${data.groups.length} proceedings, ${data.videos.length} videos)` : "✗ record-data.js is stale: run node tools/build-record-data.mjs");
     process.exit(same ? 0 : 1);
   }
   writeFileSync(OUT, out);
   mkdirSync(pfDir, { recursive: true });
   for (const [f, t] of pf) writeFileSync(f, t);
+  for (const f of readdirSync(pfDir)) if (!pf.some(([p]) => p === join(pfDir, f))) unlinkSync(join(pfDir, f));
   const q = built.stats.points, docs = data.groups.reduce((n, g) => n + g.docs.length, 0);
   const vq = data.videos.reduce((n, v) => n + v.quotes.length, 0);
   console.log(`✓ wrote docs/js/record-data.js: ${data.groups.length} proceedings, ${docs} documents, ${built.stats.readings} with readings, ${q} filing quotes, ${data.videos.length} videos, ${vq} spoken quotes, ${(out.length / 1024).toFixed(0)} KB`);

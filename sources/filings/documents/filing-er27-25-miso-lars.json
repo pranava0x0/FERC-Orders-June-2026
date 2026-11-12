@@ -1,82 +1,82 @@
 {
-  "slug": "filing-er27-25-miso-lars",
-  "summary": "MISO files tariff revisions under FPA section 205 to create the Large Load Addition Resource Study, a parallel 120-day study of loads of 200 MW or more and their paired generation, and says the filing responds to the E-8 show cause order.",
-  "ask": "Accept the LARS tariff revisions effective December 2, 2026, with a Commission order by that date so the first LARS study period can start in the first quarter of 2027.",
-  "points": [
-    {
-      "point": "MISO asks for a December 2, 2026 effective date so it can start the first study period in Q1 2027.",
-      "quote": "MISO requests that the Tariff revisions submitted herewith be made effective December 2, 2026",
-      "pg": 2
-    },
-    {
-      "point": "MISO says LARS responds to the show cause order finding on study procedures for electrically proximate large loads.",
-      "quote": "MISO's existing Tariff may be unjust and unreasonable because it does not provide generator interconnection study procedures and services that account for the operational dynamics of serving electrically proximate large loads.",
-      "pg": 3
-    },
-    {
-      "point": "MISO moved the load threshold from 250 MW to 200 MW after stakeholder input.",
-      "quote": "Stakeholders proposed alternative thresholds, including 200 MW, which MISO proposes herein",
-      "pg": 3
-    },
-    {
-      "point": "Load and generation studies run together and finish in about 120 days.",
-      "quote": "The generation and load studies will be completed at the same time and will finish within approximately 120 days.",
-      "pg": 5
-    },
-    {
-      "point": "Only the Associated Transmission Customer, often a load-serving entity, can initiate an application, and a $250,000 non-refundable fee applies.",
-      "quote": "A non-refundable fee of $250,000 must accompany the LARS Application and be paid by the LARS Associated Transmission Customer.",
-      "pg": 8
-    },
-    {
-      "point": "MISO takes ten applications per study period and runs three periods a year.",
-      "quote": "There will be three LARS study periods each year and each study period will be completed in approximately 120 days",
-      "pg": 9
-    },
-    {
-      "point": "The generator is capped at 150 percent of the load's peak demand, and the pair must sit in one Local Resource Zone.",
-      "quote": "limiting the amount of requested Interconnection Service to no more than 150% of the peak demand of the LARS Associated Load",
-      "pg": 10
-    },
-    {
-      "point": "MISO says costs from load-side and common violations go to Baseline Reliability or Other projects, and the pro forma cost shifting agreement follows by November 16, 2026.",
-      "quote": "a pro forma cost shifting agreement will need to be executed and any new terms in transmission services agreements will need to be met.",
-      "pg": 14
-    },
-    {
-      "point": "Pairs must stay together for 15 years or the generator's LLGIA ends after a transition of up to one year.",
-      "quote": "MISO will terminate the LLGIA after a limited operations transition period",
-      "pg": 16
-    }
-  ],
-  "throughLine": {
-    "relation": "responds",
-    "anchors": [
-      "e-8-show-cause",
-      "e-8-cost-recovery-agreement",
-      "e-8-adequacy-report"
-    ],
-    "text": "MISO's section 205 answer to the E-8 show cause order on electrically proximate load, tying LARS to the order's resource adequacy request and deferring the cost recovery agreement to a November 16 filing."
+ "slug": "filing-er27-25-miso-lars",
+ "summary": "MISO files tariff revisions under FPA section 205 to create the Large Load Addition Resource Study, a parallel 120-day study of loads of 200 MW or more and their paired generation, and says the filing responds to the E-8 show cause order.",
+ "ask": "Accept the LARS tariff revisions effective December 2, 2026, with a Commission order by that date so the first LARS study period can start in the first quarter of 2027.",
+ "points": [
+  {
+   "point": "MISO asks for a December 2, 2026 effective date so it can start the first study period in Q1 2027.",
+   "quote": "MISO requests that the Tariff revisions submitted herewith be made effective December 2, 2026",
+   "pg": 2
   },
-  "themes": [
-    "proximate",
-    "study",
-    "cost"
+  {
+   "point": "MISO says LARS responds to the show cause order finding on study procedures for electrically proximate large loads.",
+   "quote": "MISO's existing Tariff may be unjust and unreasonable because it does not provide generator interconnection study procedures and services that account for the operational dynamics of serving electrically proximate large loads.",
+   "pg": 3
+  },
+  {
+   "point": "MISO moved the load threshold from 250 MW to 200 MW after stakeholder input.",
+   "quote": "Stakeholders proposed alternative thresholds, including 200 MW, which MISO proposes herein",
+   "pg": 3
+  },
+  {
+   "point": "Load and generation studies run together and finish in about 120 days.",
+   "quote": "The generation and load studies will be completed at the same time and will finish within approximately 120 days.",
+   "pg": 5
+  },
+  {
+   "point": "Only the Associated Transmission Customer, often a load-serving entity, can initiate an application, and a $250,000 non-refundable fee applies.",
+   "quote": "A non-refundable fee of $250,000 must accompany the LARS Application and be paid by the LARS Associated Transmission Customer.",
+   "pg": 8
+  },
+  {
+   "point": "MISO takes ten applications per study period and runs three periods a year.",
+   "quote": "There will be three LARS study periods each year and each study period will be completed in approximately 120 days",
+   "pg": 9
+  },
+  {
+   "point": "The generator is capped at 150 percent of the load's peak demand, and the pair must sit in one Local Resource Zone.",
+   "quote": "limiting the amount of requested Interconnection Service to no more than 150% of the peak demand of the LARS Associated Load",
+   "pg": 10
+  },
+  {
+   "point": "MISO says costs from load-side and common violations go to Baseline Reliability or Other projects, and the pro forma cost shifting agreement follows by November 16, 2026.",
+   "quote": "a pro forma cost shifting agreement will need to be executed and any new terms in transmission services agreements will need to be met.",
+   "pg": 14
+  },
+  {
+   "point": "Pairs must stay together for 15 years or the generator's LLGIA ends after a transition of up to one year.",
+   "quote": "MISO will terminate the LLGIA after a limited operations transition period",
+   "pg": 16
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-8-show-cause",
+   "e-8-cost-recovery-agreement",
+   "e-8-proximate-generation-service"
   ],
-  "figures": [
-    {
-      "label": "LARS minimum load size",
-      "value": 200,
-      "unit": "MW",
-      "quote": "expedited review of the addition of 200 MW or greater loads",
-      "pg": 1
-    },
-    {
-      "label": "LARS application fee",
-      "value": 250000,
-      "unit": "USD",
-      "quote": "A non-refundable fee of $250,000 must accompany the LARS Application",
-      "pg": 8
-    }
-  ]
+  "text": "MISO's section 205 answer to the E-8 show cause order on electrically proximate load, tying LARS to the order's resource adequacy request and deferring the cost recovery agreement to a November 16 filing."
+ },
+ "themes": [
+  "proximate",
+  "study",
+  "cost"
+ ],
+ "figures": [
+  {
+   "label": "LARS minimum load size",
+   "value": 200,
+   "unit": "MW",
+   "quote": "expedited review of the addition of 200 MW or greater loads",
+   "pg": 1
+  },
+  {
+   "label": "LARS application fee",
+   "value": 250000,
+   "unit": "USD",
+   "quote": "A non-refundable fee of $250,000 must accompany the LARS Application",
+   "pg": 8
+  }
+ ]
 }

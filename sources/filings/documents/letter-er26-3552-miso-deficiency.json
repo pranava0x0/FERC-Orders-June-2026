@@ -35,10 +35,9 @@
   }
  ],
  "throughLine": {
-  "relation": "parallel",
+  "relation": "responds",
   "anchors": [
-   "e-8-services-for-flexible-co-located",
-   "e-8-adequacy-report"
+   "e-8-show-cause"
   ],
   "text": "Staff questions the resource adequacy and reliability design of MISO's ZGIA, the first piece of MISO's E-8 response on co-located load, in the separate ER26-3552 proceeding."
  },
