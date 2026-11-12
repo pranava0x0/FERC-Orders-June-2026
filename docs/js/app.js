@@ -1903,7 +1903,8 @@
     var doc = bits[1] && document.getElementById("fd-" + bits[1]);
     // Older links named a filer, not a document: open that filer's newest document instead.
     if (!doc && bits[1]) doc = [].slice.call(grp.querySelectorAll(".fdoc")).filter(function (d) { return slugify(d.querySelector(".fd-who").textContent) === bits[1]; })[0] || null;
-    if (doc) doc.open = true;
+    // A document can move between proceedings (sc-miso to miso-irr): open the group that holds it.
+    if (doc) { grp = doc.closest(".fgroup") || grp; grp.open = true; doc.open = true; filingHash = grp.id.slice(3) + "/" + doc.id.slice(3); }
     (doc || grp).scrollIntoView({ block: "start" });
     loadPoints(grp, function () { if (doc) doc.scrollIntoView({ block: "start" }); });
     setCrumbs("filings", filingHash);

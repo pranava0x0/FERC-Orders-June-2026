@@ -33,5 +33,5 @@ log="${TMPDIR:-/tmp}/ferc-refresh.$$"
 run() { if "$@" >"$log" 2>&1; then tail -2 "$log"; else cat "$log"; rm -f "$log"; echo "✗ failed: $*" >&2; exit 1; fi; }
 run node tools/validate-documents.mjs --strict
 run node tools/verify-quotes.mjs
-run node --test tests/
+run node --test tests/*.test.mjs
 rm -f "$log"

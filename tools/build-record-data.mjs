@@ -40,11 +40,11 @@ export function filerList(raw) {
   return out;
 }
 // eLibrary records some filers in capitals. Title-case those, keeping known acronyms; raw stays in the catalog.
-const ACRONYMS = new Set(["FERC", "PJM", "MISO", "SPP", "NYISO", "CAISO", "ISO", "NE", "DC", "US", "U.S.", "LLC", "L.L.C.", "PTO", "AC", "OCA", "PSC", "CUB", "NRDC", "ACP", "SREA", "L.P.", "LP", "ITC", "AEP", "PUC", "IMM"]);
+const ACRONYMS = new Set(["FERC", "PJM", "MISO", "SPP", "NYISO", "CAISO", "ISO", "NE", "DC", "US", "U.S.", "LLC", "L.L.C.", "PTO", "AC", "OCA", "PSC", "CUB", "NRDC", "ACP", "SREA", "L.P.", "LP", "ITC", "GRIDLIANCE", "AEP", "PUC", "IMM"]);
 const SMALL = new Set(["of", "and", "the", "for", "on", "in"]);
 export function prettyName(x) {
   if (!x || /[a-z]/.test(x)) return x;
-  return x.split(/(\s+)/).map((w, i) => /^\s+$/.test(w) || ACRONYMS.has(w.replace(/[(),]/g, "")) ? w : (i && SMALL.has(w.toLowerCase())) ? w.toLowerCase() : w.charAt(0) + w.slice(1).toLowerCase().replace(/(['’-])(\w)/g, (m, a, b) => a + b)).join("");
+  return x.split(/(\s+)/).map((w, i) => w === "GRIDLIANCE" ? "GridLiance" : /^\s+$/.test(w) || ACRONYMS.has(w.replace(/[(),]/g, "")) ? w : (i && SMALL.has(w.toLowerCase())) ? w.toLowerCase() : w.charAt(0) + w.slice(1).toLowerCase().replace(/(['’-])(\w)/g, (m, a, b) => a + b)).join("");
 }
 export function filerLabel(list) {
   if (!list.length) return null;

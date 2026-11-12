@@ -799,3 +799,4 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   response to E-7 (content bugs, regulatory review), Fixed 29ea820.
 - `--sweep` listed dockets without a reconciliation baseline (code bug, Codex), Fixed.
 - Open: `refresh-reading-room.sh --check` fails in `index-filing-text.py` on PJM's Nov 6 ITI letter originals (pre-existing on main).
+- Open: `refresh.sh --sweep` covers only dockets with a reconciliation baseline; EL25-49-000, ER27-25-000, ER27-454-000 and EL27-11-000 need baselines in sources/filings/sheet-baseline.json before the sweep sees them (round-2 review).
