@@ -1793,7 +1793,8 @@
   // Capacity quantities the readings extracted (each verified on its page), normalized to MW. Filings
   // that cite the same quantity (within 1%, sharing a word in the label) merge into one bar, so the chart
   // shows how often a number recurs across the record: PJM's backstop target appears in a dozen filings.
-  var FIG_STOP = { the: 1, of: 1, and: 1, in: 1, by: 1, to: 1, for: 1, a: 1, mw: 1, gw: 1, ucap: 1, from: 1, as: 1, at: 1, its: 1, or: 1 };
+  // Region names and generic words do not make two figures the same quantity; the named thing must match.
+  var FIG_STOP = { the: 1, of: 1, and: 1, in: 1, by: 1, to: 1, for: 1, a: 1, mw: 1, gw: 1, ucap: 1, from: 1, as: 1, at: 1, its: 1, or: 1, pjm: 1, miso: 1, spp: 1, caiso: 1, nyiso: 1, iso: 1, load: 1, large: 1, data: 1, center: 1, centers: 1, generation: 1, initial: 1, total: 1, mws: 1 };
   function figWords(l) { return String(l).toLowerCase().split(/[^a-z0-9]+/).filter(function (w) { return w.length > 2 && !FIG_STOP[w]; }); }
   function figureChart(R) {
     var rows = [];
@@ -1804,15 +1805,17 @@
     var clusters = [];
     rows.forEach(function (r) {
       var w = figWords(r.f.label);
-      var hit = clusters.filter(function (c) { return Math.abs(c.mw - r.mw) / c.mw <= 0.01 && c.words.some(function (x) { return w.indexOf(x) >= 0; }); })[0];
-      if (hit) { hit.items.push(r); w.forEach(function (x) { if (hit.words.indexOf(x) < 0) hit.words.push(x); }); }
-      else clusters.push({ mw: r.mw, words: w, items: [r] });
+      var hit = clusters.filter(function (c) {
+        return Math.abs(c.mw - r.mw) / c.mw <= 0.01 && c.items.some(function (it) { return figWords(it.f.label).filter(function (x) { return w.indexOf(x) >= 0; }).length >= 2; });
+      })[0];
+      if (hit) hit.items.push(r); else clusters.push({ mw: r.mw, items: [r] });
     });
     if (!clusters.length) return "";
     clusters.sort(function (a, b) { return b.mw - a.mw; });
     var max = clusters[0].mw;
     var bars = clusters.map(function (c) {
-      var r = c.items[0], n = {}, docs = c.items.filter(function (x) { if (n[x.d.slug]) return false; n[x.d.slug] = 1; return true; });
+      var score = function (it) { var w = figWords(it.f.label); return c.items.reduce(function (n, o) { return n + figWords(o.f.label).filter(function (x) { return w.indexOf(x) >= 0; }).length; }, 0); };
+      var r = c.items.slice().sort(function (a, b) { return score(b) - score(a); })[0], n = {}, docs = c.items.filter(function (x) { if (n[x.d.slug]) return false; n[x.d.slug] = 1; return true; });
       var v = c.mw >= 10000 ? (Math.round(c.mw / 100) / 10).toLocaleString("en-US") + " GW" : Math.round(c.mw).toLocaleString("en-US") + " MW";
       return '<li><a href="#filings/' + esc(r.g.id) + "/" + esc(r.d.slug) + '" title="' + esc("“" + r.f.quote + "” " + r.d.filer + ", p. " + (r.f.pg || 1)) + '">' +
         '<span class="fc-l">' + esc(r.f.label) + '</span><span class="fc-bar"><span style="width:' + Math.max(1.5, 100 * c.mw / max).toFixed(1) + '%"></span></span>' +
