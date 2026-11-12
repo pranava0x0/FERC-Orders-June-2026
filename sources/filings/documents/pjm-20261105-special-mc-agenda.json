@@ -1,0 +1,17 @@
+{
+  "slug": "pjm-20261105-special-mc-agenda",
+  "kind": "meeting agenda",
+  "summary": "PJM posts the agenda for a Special Members Committee meeting on November 5, 2026. Its single item is consultation on a suite of section 205 filings responding to the Large Load Show Cause Order.",
+  "ask": null,
+  "points": [
+    {"point": "The Special MC meets November 5, 2026 from 2:15 to 5:00 p.m. EPT in Audubon, PA.", "quote": "Special Members Committee Two Hundred Ninety-first Meeting PJM Conference and Training Center, Audubon, PA November 5, 2026", "pg": 1},
+    {"point": "PJM gives notice of consultation with the Members Committee and Transmission Owners on tariff changes tied to the show cause order.", "quote": "PJM Notice of Consultation with the Members Committee pursuant to Tariff Section 9.2(b) and Transmission Owners pursuant to CTOA Section 7.5.1(ii)", "pg": 1},
+    {"point": "PJM staff will consult on a suite of section 205 filings addressing the Large Load Show Cause Order and related reforms.", "quote": "PJM staff will consult with stakeholders on plans to submit a suite of section 205 filings to address Tariff revisions to address opportunities identified in the Large Load Show Cause Order and related reforms.", "pg": 1}
+  ],
+  "throughLine": {
+    "relation": "responds",
+    "anchors": ["e-7-show-cause"],
+    "text": "Shows PJM taking the section 205 route offered by the E-7 show cause order: a suite of tariff filings, with consultation set for November 5, 2026, ahead of the abeyance deadline of November 16."
+  },
+  "themes": ["procedure"]
+}

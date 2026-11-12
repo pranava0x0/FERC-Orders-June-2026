@@ -1,0 +1,17 @@
+{
+  "slug": "protest-er27-25-google",
+  "summary": "Google files a limited protest of MISO's LARS filing. It supports studying large loads with paired generation but says LARS lacks cost-shifting protections and gives load-serving entities gatekeeper control, and asks FERC to reject it or accept and suspend it.",
+  "ask": "Reject LARS with guidance to refile alongside cost-shift protections, or accept and suspend it to review with MISO's pro forma cost shifting agreement; add direct access for independent generators.",
+  "points": [
+    {"point": "Google supports the LARS concept but protests that MISO filed it without protections against cost shifting.", "quote": "MISO has filed LARS without accompanying and necessary protections against cost shifting, which prevents the Commission from finding that LARS is just and reasonable.", "pg": 2},
+    {"point": "Upgrades for load-caused violations are classed as Baseline Reliability or Other projects, whose costs are recovered from all network customers in the pricing zone.", "quote": "the costs of those project types are recovered from all network customers in a Transmission Pricing Zone.", "pg": 2},
+    {"point": "Overallocated headroom would be fixed through a future MTEP project, and residential customers could bear that cost.", "quote": "residential and other commercial customers could be left holding the bag for transmission projects needed to interconnect LARS generators", "pg": 6},
+    {"point": "Google suggests more conservative study assumptions, such as counting DPP requests at Decision Point II, to avoid overallocation.", "quote": "LARS could be modified to use more conservative assumptions", "pg": 7},
+    {"point": "MISO plans to file the pro forma cost shifting agreement by November 16, 2026, so the record lacks it today.", "quote": "the cost shifting agreement will be submitted in a separate section 205 filing by November 16, 2026", "pg": 8},
+    {"point": "Google offers two options: reject with direction to refile with protections, or accept, suspend and consolidate with the MISO show cause proceeding.", "quote": "the Commission could accept and suspend the proposal and consolidate it with the MISO Large Load Show Cause proceeding", "pg": 8},
+    {"point": "Google says routing applications through load-serving entities risks undue discrimination against independent generators.", "quote": "LARS opens the door to undue discrimination and could undermine core open access principles by making load-serving entities (\"LSEs\") the gatekeepers of the LARS process.", "pg": 9}
+  ],
+  "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause", "e-8-cost-recovery-agreement"], "text": "Protests MISO's LARS response to E-8 because the cost shifting protections the order seeks, including a pro forma cost recovery agreement, were not filed with it."},
+  "themes": ["cost", "proximate", "study"],
+  "figures": []
+}

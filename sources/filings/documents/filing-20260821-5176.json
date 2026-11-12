@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20260821-5176",
+ "summary": "The PJM Industrial Customer Coalition comments on PJM's July 31 Reliability Backstop Procurement proposal. It identifies three gaps in how wholesale backstop costs reach state retail rates: cost allocation alignment, regulatory accountability and information sharing.",
+ "ask": "Consider the Coalition's comments, and require that retail allocation methodologies be on file and that PJM tag backstop costs by load for states.",
+ "points": [
+  {"point": "The Coalition says PJM's backstop filing lacks tools to align wholesale charges with state retail cost allocation.", "quote": "PJM’s filing lacks the tools needed to ensure that retail costs are, and will be, allocated in a just and reasonable manner at the state level.", "pg": 3},
+  {"point": "Gap 1: wholesale costs must be designed with retail allocation in mind, tied to cost causation.", "quote": "Wholesale costs must be designed with retail allocation in mind; otherwise, simply claiming that states can allocate costs to retail customers may prove inadequate.", "pg": 4},
+  {"point": "Gap 2: utilities' retail allocation methodologies should be on file with FERC or a state commission.", "quote": "While not mandating retail pricing, the FERC should require that methodologies be on file with the FERC or a relevant state commission.", "pg": 7},
+  {"point": "Gap 3: PJM should add a separate billing line item for backstop costs, broken out by the load growth that caused them.", "quote": "PJM should create a new billing line item (similar to how PJM separately reports Transmission Enhancement, Generation Deactivation, or other itemized costs) tagged specifically as “Reliability Backstop Procurement” costs", "pg": 8},
+  {"point": "PJM should add subaccounts identifying each large load by interconnection point and issue billing guidance.", "quote": "Under each billing line item related to RBP, PJM should add subaccounts identifying each individual large load customer by interconnection point.", "pg": 8}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-cost-transparency", "e-7-adequacy-report"], "text": "Comments in PJM's separate backstop procurement docket ER26-3380. Its call to trace backstop costs to individual large loads parallels the E-7 cost transparency directive and the E-7 adequacy report on generation for new load."},
+ "themes": ["adequacy", "cost", "retail"]
+}

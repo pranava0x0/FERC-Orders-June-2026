@@ -1,0 +1,18 @@
+{
+ "slug": "filing-20260821-5306",
+ "summary": "The Data Center Coalition comments on PJM's July 31 Reliability Backstop Procurement proposal. It supports acceptance as a limited, one-time backstop and asks FERC to protect bilateral procurement, assign costs to the large loads driving the need, and keep new capacity on schedule.",
+ "ask": "Accept PJM's Reliability Backstop Procurement filing as a limited, one-time measure, consistent with the Coalition's principles on bilateral offsets, cost causation and getting infrastructure built.",
+ "points": [
+  {"point": "The Coalition supports the backstop as a one-time measure and wants bilateral procurement kept as the preferred path.", "quote": "DCC supports moving forward with the RBP as a limited, one-time backstop.", "pg": 2},
+  {"point": "PJM should not procure duplicative capacity for a customer that has arranged qualifying new capacity.", "quote": "Where a customer has arranged for qualifying new capacity to serve its incremental demand, PJM should not procure duplicative capacity on that customer’s behalf.", "pg": 3},
+  {"point": "PJM proposes about 6.8 GW of new capacity under commitments of up to fifteen years.", "quote": "PJM proposes to procure approximately 6.8 GW of new capacity through commitments that may extend for as long as fifteen years.", "pg": 5},
+  {"point": "Costs of serving new large loads should fall on the new large loads, not existing customers.", "quote": "should be borne by new large loads contributing to resource inadequacy and should not be shifted to existing residential, commercial, or industrial customers", "pg": 4},
+  {"point": "DCC and the Virginia State Corporation Commission agreed to develop model retail tariff provisions for backstop costs.", "quote": "DCC and the Virginia State Corporation Commission have agreed to work together to develop model retail tariff provisions designed to appropriately assign RBP costs", "pg": 6},
+  {"point": "Success is measured by megawatts reaching commercial operation, which depends on interconnection and transmission upgrades.", "quote": "measure of success should not be how many MW PJM contracts for, but how many MW actually reach commercial operation in time to address the identified reliability need.", "pg": 7}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report", "e-7-cost-recovery-agreement"], "text": "Comments in PJM's backstop docket ER26-3380. Its bring-your-own-capacity offsets and cost-causation principle bear on the E-7 adequacy report and on who pays for new load."},
+ "themes": ["adequacy", "cost", "retail"],
+ "figures": [
+  {"label": "PJM backstop procurement target", "value": 6.8, "unit": "GW", "quote": "PJM proposes to procure approximately 6.8 GW of new capacity", "pg": 5}
+ ]
+}

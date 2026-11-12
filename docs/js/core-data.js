@@ -966,6 +966,33 @@ window.FERC_DATA = (function () {
       captured: "2026-11-02",
       note: "Opened in a logged-in browser; timestamp 2026-10-21 13:21 UTC. The post quotes no other post and names no docket. Text in sources/news-evidence.json.",
     },
+    udive1103: {
+      label: "\u201cPJM\u2019s revised data center backstop procurement plan reduces utility risks: ICF\u201d",
+      org: "Utility Dive (Ethan Howland)",
+      tier: "secondary",
+      url: "https://www.utilitydive.com/news/pjm-revised-data-center-backstop-procurement-ferc/873551/",
+      published: "2026-11-03",
+      captured: "2026-11-12",
+      note: "Read end to end; published Nov 3 and updated Nov 4. Reports PJM's Oct 29 backstop refiling (a March 1, 2027 start) and quotes Maria Scheller, vice president of energy and planning at ICF International, from an email to the outlet. The phrase \u201ccarefully tailored\u201d is the reporter\u2019s description of PJM\u2019s filing and is not used as a quote here. Snippets in sources/news-evidence.json.",
+    },
+    latitude1104: {
+      label: "\u201cVoters just proved how much they hate data centers\u201d",
+      org: "Latitude Media (Jeff Young)",
+      tier: "secondary",
+      url: "https://www.latitudemedia.com/news/voters-just-proved-how-much-they-hate-data-centers/",
+      published: "2026-11-04",
+      captured: "2026-11-12",
+      note: "Read end to end. Post-election piece on the Nov 3 midterm results; quotes Nick Zenkin, director of research at Latitude Intelligence. It names no FERC or PJM proceeding, so it is context for the cost-allocation argument and not a statement about any docket. Snippet in sources/news-evidence.json.",
+    },
+    latitude1111: {
+      label: "\u201cWhat the midterms mean for data center developers in PJM\u201d",
+      org: "Latitude Media (Maeve Allsup)",
+      tier: "secondary",
+      url: "https://www.latitudemedia.com/news/what-the-midterms-mean-for-data-center-developers-in-pjm/",
+      published: "2026-11-11",
+      captured: "2026-11-12",
+      note: "Read end to end. Quotes Brent Nelson and Robert LaFaso of Ascend Analytics on FERC's Oct 9 ruling in ER26-3515 and the state-led curtailment path that followed it. The sentences about the ruling and the state-led approach are the reporter\u2019s, not the analysts\u2019. Snippets in sources/news-evidence.json.",
+    },
     // --- 2026-11-09 sweep -------------------------------------------------------------------------
     elibrary1110: {
       label: "FERC eLibrary docket sheets checked Nov 10", short: "FERC docket sheets", org: "FERC eLibrary",
@@ -1072,7 +1099,7 @@ window.FERC_DATA = (function () {
     newsCapture: "2026-11-10",
     // Newest Discourse sweep (themes, media lines, reception, voices). Distinct from newsCapture, the
     // filings and proceedings cutoff, so a commentary-only sweep never overstates when dockets were checked.
-    commentaryCapture: "2026-11-02",
+    commentaryCapture: "2026-11-12",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
@@ -1090,7 +1117,7 @@ window.FERC_DATA = (function () {
     { value: "5", label: "Reform categories", sub: "teed up in each tailored order" },
     // `step` joins the card to the live procedural clock, so these two stop reading as forever-pending.
     { value: "30 days", label: "Informational report", sub: "resource-adequacy plan to serve large loads", deadline: true, step: "report" },
-    { value: "60 days", label: "Justify or file", sub: "defend tariffs or propose §206 revisions; all six now in abeyance to Nov 16", deadline: true, step: "showcause" },
+    { value: "60 days", label: "Justify or file", sub: "defend tariffs or propose §206 revisions; all six in abeyance to Nov 16 (SPP Nov 20)", deadline: true, step: "showcause" },
     { value: "> 20 MW", label: "“Large load”", sub: "DOE threshold (per Order No. 2003)" },
     { value: "3,500+", label: "Pages reviewed", sub: "public comments in the RM26-4 docket" },
   ];
@@ -1674,7 +1701,7 @@ window.FERC_DATA = (function () {
     {
       date: "Jan 11, 2027", iso: "2027-01-11", kind: "deadline", track: "context",
       title: "Backstop paper-hearing initial briefs, as extended",
-      body: "FERC's Oct 23 notice moved the EL26-108 initial briefs from Nov 13, 2026 to 5 p.m. on Jan 11, 2027, and reply briefs to Jan 26, 2027. PJM has asked FERC to act on its ER27-330 refiling by Jan 29, 2027.",
+      body: "FERC's Oct 23 notice moved the EL26-108 initial briefs from Nov 13, 2026 to 5 p.m. on Jan 11, 2027, and reply briefs to Jan 26, 2027. PJM has asked FERC to act on its ER27-454 refiling, substantively identical to the ER27-330 filing it recoded, by Jan 29, 2027.",
       src: ["fercnotice1023", "pjmrbp1029"],
     },
   ];
@@ -1780,11 +1807,11 @@ window.FERC_DATA = (function () {
         "Whether a generating facility serving an electrically proximate or co-located load could join PJM’s energy, ancillary-services, and capacity markets, and how it would be accredited (Section IV).",
       ],
       dir: [
-        { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 6(a)", pg: 7 },
-        { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies … to accurately account for advanced transmission technologies", p: "P 70", pg: 70 },
-        { t: "Cost-recovery agreement", q: "a pro forma cost recovery agreement between PJM, the relevant transmission owner, and Eligible Customer … to mitigate the risk of cost shifting among transmission customers", p: "P 77", pg: 28 },
-        { t: "Cost transparency", q: "publicly post and regularly update data that details … proposed large load additions … the planned Network Upgrades … and cost estimates for those Network Upgrades", p: "P 71", pg: 51 },
-        { t: "Service for flexible loads", q: "transmission services that reflect Eligible Customers taking transmission service on behalf of flexible large loads that are willing and able to limit their use of the transmission system", p: "P 85", pg: 56 },
+        { t: "Application / study process", reform: "study", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 6(a)", pg: 7 },
+        { t: "Alternative transmission technologies", reform: "study", q: "require the evaluation of alternative transmission technologies in transmission service request studies … to accurately account for advanced transmission technologies", p: "P 70", pg: 70 },
+        { t: "Cost-recovery agreement", reform: "cost", q: "a pro forma cost recovery agreement between PJM, the relevant transmission owner, and Eligible Customer … to mitigate the risk of cost shifting among transmission customers", p: "P 77", pg: 28 },
+        { t: "Cost transparency", reform: "cost", q: "publicly post and regularly update data that details … proposed large load additions … the planned Network Upgrades … and cost estimates for those Network Upgrades", p: "P 71", pg: 51 },
+        { t: "Service for flexible loads", reform: "flex", q: "transmission services that reflect Eligible Customers taking transmission service on behalf of flexible large loads that are willing and able to limit their use of the transmission system", p: "P 85", pg: 56 },
       ],
       reg: [
         { t: "Co-location and behind-the-meter generation were already settled in the separate PJM Co-Location Order (193 FERC ¶ 61,217, Dec. 18, 2025; reh’g 195 FERC ¶ 61,209); this §206 order builds on that record rather than re-litigating it." },
@@ -1819,11 +1846,13 @@ window.FERC_DATA = (function () {
         "An appropriate minimum level of cost recovery and financial security under any cost-recovery agreement (P 119).",
       ],
       dir: [
-        { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system", p: "P 119", pg: 74 },
-        { t: "Cost-recovery agreement", q: "a pro forma cost recovery agreement between MISO, the relevant transmission owner, and Eligible Customer taking transmission service on behalf of the large load to mitigate the risk of cost shifting", p: "P 6(b)", pg: 6 },
-        { t: "Minimum cost recovery / security", q: "what an appropriate minimum level of cost recovery and financial security from an Eligible Customer would be under any such agreements", p: "P 119", pg: 74 },
-        { t: "Co-location ancillary charges", q: "whether and how Eligible Customers taking one of the new transmission services on behalf of Eligible Loads will be charged for their use of regulation and black start services", p: "P 99", pg: 58 },
-        { t: "Services for flexible / co-located loads", q: "transmission services that reflect Eligible Customers taking transmission service on behalf of co-located loads, load with behind the meter generation, and flexible large loads", p: "P 6(d)", pg: 7 },
+        { t: "Application / study / operating requirements", reform: "study", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 6(a)", pg: 6 },
+        { t: "Proximate-generation service", reform: "proximate", q: "the rates, terms, and conditions of service applicable to interconnection customers serving electrically proximate large load or co-located load", p: "P 6(e)", pg: 7 },
+        { t: "Alternative transmission technologies", reform: "study", q: "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system", p: "P 119", pg: 74 },
+        { t: "Cost-recovery agreement", reform: "cost", q: "a pro forma cost recovery agreement between MISO, the relevant transmission owner, and Eligible Customer taking transmission service on behalf of the large load to mitigate the risk of cost shifting", p: "P 6(b)", pg: 6 },
+        { t: "Minimum cost recovery / security", reform: "cost", q: "what an appropriate minimum level of cost recovery and financial security from an Eligible Customer would be under any such agreements", p: "P 119", pg: 74 },
+        { t: "Co-location ancillary charges", reform: "colo", q: "whether and how Eligible Customers taking one of the new transmission services on behalf of Eligible Loads will be charged for their use of regulation and black start services", p: "P 99", pg: 58 },
+        { t: "Services for flexible / co-located loads", reform: "flex", q: "transmission services that reflect Eligible Customers taking transmission service on behalf of co-located loads, load with behind the meter generation, and flexible large loads", p: "P 6(d)", pg: 7 },
       ],
       reg: [
         { t: "MISO is developing a zero-injection generator-interconnection-agreement process for co-located generation, but its Tariff has no standard procedures for it and doesn’t specify how MISO studies the reliability impacts.", p: "PP 32, 57", pg: 57, a: "zero-injection" },
@@ -1857,11 +1886,11 @@ window.FERC_DATA = (function () {
         "Evaluating alternative transmission technologies in all instances without a customer request, and, if conventional upgrades are chosen instead, justifying why (P 46).",
       ],
       dir: [
-        { t: "Alternative tech + operational terms", q: "require the evaluation of alternative transmission technologies, and memorialize ongoing operational requirements in a transmission service agreement", p: "Ordering (B)(1)(a)", pg: 21 },
-        { t: "Evaluate alt tech by default", q: "in all instances, without the need for a request from the Eligible Customer seeking transmission service on behalf of large load", p: "P 46", pg: 52 },
-        { t: "Cost-recovery + crediting", q: "establish a mechanism to ensure such payments are appropriately credited toward transmission owners’ transmission revenue requirements", p: "Ordering (B)(1)(b)", pg: 21 },
-        { t: "Co-location service", q: "address the rates, terms, and conditions of service that apply to co-location arrangements", p: "Ordering (B)(1)(c)", pg: 21 },
-        { t: "New services for flexible loads", q: "transmission services that reflect Eligible Customers taking transmission service on behalf of co-located loads, load with behind the meter generation, and flexible large loads", p: "Ordering (B)(1)(d)", pg: 22 },
+        { t: "Alternative tech + operational terms", reform: "study", q: "require the evaluation of alternative transmission technologies, and memorialize ongoing operational requirements in a transmission service agreement", p: "Ordering (B)(1)(a)", pg: 21 },
+        { t: "Evaluate alt tech by default", reform: "study", q: "in all instances, without the need for a request from the Eligible Customer seeking transmission service on behalf of large load", p: "P 46", pg: 52 },
+        { t: "Cost-recovery + crediting", reform: "cost", q: "establish a mechanism to ensure such payments are appropriately credited toward transmission owners’ transmission revenue requirements", p: "Ordering (B)(1)(b)", pg: 21 },
+        { t: "Co-location service", reform: "colo", q: "address the rates, terms, and conditions of service that apply to co-location arrangements", p: "Ordering (B)(1)(c)", pg: 21 },
+        { t: "New services for flexible loads", reform: "flex", q: "transmission services that reflect Eligible Customers taking transmission service on behalf of co-located loads, load with behind the meter generation, and flexible large loads", p: "Ordering (B)(1)(d)", pg: 22 },
       ],
       reg: [
         { t: "The order adopts SPP’s own HILL (High Impact Large Load) definition as its definition of ‘large load,’ and treats ‘flexible’ loads as the HILL subset not co-located with generation and willing to limit withdrawals.", p: "PP 4, 6 n.16", pg: 6, a: "not co-located with generation" },
@@ -1903,11 +1932,11 @@ window.FERC_DATA = (function () {
         "How load-addition study procedures and operational requirements would work when its Participating TOs, not CAISO, lead load interconnection.",
       ],
       dir: [
-        { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 5", pg: 25 },
-        { t: "Alternative transmission technologies", q: "they lack clear and consistent provisions requiring the evaluation of alternative transmission technologies as potential solutions to accommodate an Eligible Customer’s request", p: "PP 152-153", pg: 39 },
-        { t: "Cost-recovery agreement", q: "a pro forma cost recovery agreement between CAISO, the relevant transmission owner, and Eligible Customer … to mitigate the risk of cost shifting among transmission customers", p: "§ III.B.3", pg: 25 },
-        { t: "BTMG netting", q: "it allows load with BTMG to net its BTMG against its load for purposes of calculating Regional Access Charges", p: "pp. 60-61", pg: 60 },
-        { t: "Service for flexible loads", q: "it does not include transmission services that reflect … flexible large loads that are willing and able to limit their use of the transmission system under certain conditions", p: "§ III.D", pg: 62 },
+        { t: "Application / study process", reform: "study", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 5", pg: 25 },
+        { t: "Alternative transmission technologies", reform: "study", q: "they lack clear and consistent provisions requiring the evaluation of alternative transmission technologies as potential solutions to accommodate an Eligible Customer’s request", p: "PP 152-153", pg: 39 },
+        { t: "Cost-recovery agreement", reform: "cost", q: "a pro forma cost recovery agreement between CAISO, the relevant transmission owner, and Eligible Customer … to mitigate the risk of cost shifting among transmission customers", p: "§ III.B.3", pg: 25 },
+        { t: "BTMG netting", reform: "colo", q: "it allows load with BTMG to net its BTMG against its load for purposes of calculating Regional Access Charges", p: "pp. 60-61", pg: 60 },
+        { t: "Service for flexible loads", reform: "flex", q: "it does not include transmission services that reflect … flexible large loads that are willing and able to limit their use of the transmission system under certain conditions", p: "§ III.D", pg: 62 },
       ],
       reg: [
         { t: "CAISO is the structural outlier: it ‘does not offer traditional Order No. 888 network and point-to-point transmission services, offers no firm, long-term transmission reservations of capacity, and does not provide a formal application process for transmission service.’", p: "P 19", pg: 17, a: "does not offer traditional Order No. 888" },
@@ -1941,11 +1970,11 @@ window.FERC_DATA = (function () {
         "Applying a PJM-style MW threshold to the ‘Monthly Regional Network Load’ behind-the-meter-netting definition (P 60).",
       ],
       dir: [
-        { t: "Application / study process", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 5", pg: 25 },
-        { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system", p: "P 75", pg: 75 },
-        { t: "Cost-recovery agreement", q: "a pro forma cost recovery agreement between ISO-NE, the relevant transmission owner, and Eligible Customer … to mitigate the risk of cost shifting", p: "P 6", pg: 6 },
-        { t: "BTMG netting", q: "it allows load with BTMG to net its BTMG against its load for purposes of calculating Regional Network Service charges", p: "P 60", pg: 60 },
-        { t: "Proximate-generation service", q: "the rates, terms, and conditions of service applicable to interconnection customers serving electrically proximate large load or co-located load", p: "P 7", pg: 7 },
+        { t: "Application / study process", reform: "study", q: "the application process, study procedures, and ongoing operational requirements that apply to Eligible Customers seeking transmission service on behalf of large loads", p: "P 5", pg: 25 },
+        { t: "Alternative transmission technologies", reform: "study", q: "require the evaluation of alternative transmission technologies in transmission service request studies, using models that are capable of evaluating the transmission system", p: "P 75", pg: 75 },
+        { t: "Cost-recovery agreement", reform: "cost", q: "a pro forma cost recovery agreement between ISO-NE, the relevant transmission owner, and Eligible Customer … to mitigate the risk of cost shifting", p: "P 6", pg: 6 },
+        { t: "BTMG netting", reform: "colo", q: "it allows load with BTMG to net its BTMG against its load for purposes of calculating Regional Network Service charges", p: "P 60", pg: 60 },
+        { t: "Proximate-generation service", reform: "proximate", q: "the rates, terms, and conditions of service applicable to interconnection customers serving electrically proximate large load or co-located load", p: "P 7", pg: 7 },
       ],
       reg: [
         { t: "FERC frames the risk as particularly acute in New England, citing significant transmission constraints and a system peak of only ~30,000 MW.", p: "P 11 n.31", pg: 11, a: "30,000 MW" },
@@ -1979,11 +2008,11 @@ window.FERC_DATA = (function () {
         "A definition of ‘large load’ as a new category, with readiness requirements to deter speculative requests (P 64).",
       ],
       dir: [
-        { t: "Timely study window", q: "how NYISO and/or the Transmission Owners will timely study (i.e., within 60-90 days of receiving the request) the provision of transmission service … on behalf of large loads", p: "P 44", pg: 31 },
-        { t: "Define ‘large load’", q: "it lacks a definition of large load, as a new category of load", p: "P 64", pg: 41 },
-        { t: "Alternative transmission technologies", q: "require the evaluation of alternative transmission technologies in transmission service request studies … in all instances", p: "P 68", pg: 79 },
-        { t: "Cost transparency", q: "robust, accurate, and systematic provision of data on NYISO’s website in a single location … searchable and allows users to filter the data, regarding the cost for Network Upgrades", p: "P 73", pg: 47 },
-        { t: "Proximate-generation service", q: "it lacks a generator interconnection study process and/or generator interconnection service to reflect an interconnection customer’s commitment … to limit the generating facility’s output", p: "P 121", pg: 72 },
+        { t: "Timely study window", reform: "study", q: "how NYISO and/or the Transmission Owners will timely study (i.e., within 60-90 days of receiving the request) the provision of transmission service … on behalf of large loads", p: "P 44", pg: 31 },
+        { t: "Define ‘large load’", reform: "registry", q: "it lacks a definition of large load, as a new category of load", p: "P 64", pg: 41 },
+        { t: "Alternative transmission technologies", reform: "study", q: "require the evaluation of alternative transmission technologies in transmission service request studies … in all instances", p: "P 68", pg: 79 },
+        { t: "Cost transparency", reform: "cost", q: "robust, accurate, and systematic provision of data on NYISO’s website in a single location … searchable and allows users to filter the data, regarding the cost for Network Upgrades", p: "P 73", pg: 47 },
+        { t: "Proximate-generation service", reform: "proximate", q: "it lacks a generator interconnection study process and/or generator interconnection service to reflect an interconnection customer’s commitment … to limit the generating facility’s output", p: "P 121", pg: 72 },
       ],
       reg: [
         { t: "NYISO has load-interconnection procedures for projects > 10 MW at 115 kV+ (or ≥ 80 MW below 115 kV), but the order finds them only partially in the Tariff: study details, deposits, and assumptions sit in non-Tariff documents.", p: "PP 32, 46, 64", pg: 41, a: "115 kV" },
@@ -2015,11 +2044,11 @@ window.FERC_DATA = (function () {
       "Paper hearing: the Commission sets the just-and-reasonable rates, terms, and conditions for Interim NITS, FCD, and NFCD service.",
     ],
     dir: [
-      { t: "One of three new co-location services", q: "the Eligible Customer taking transmission service on behalf of the Co-Located Load takes one of three transmission services", p: "P 2", pg: 3 },
-      { t: "Interim NITS", q: "a new interim, non-firm transmission service available until all Network Upgrades necessary to provide the requested NITS are complete (Interim NITS)", p: "P 2", pg: 3 },
-      { t: "Retail BTMG netting rewritten", q: "the Behind the Meter Generation (BTMG) rules in the Tariff to be no longer just and reasonable, and the Commission directed PJM to submit in its compliance filing revisions to its Tariff to revise the retail BTMG netting rules and to implement a transition process for existing BTMG participants", p: "P 4", pg: 3 },
-      { t: "Paper hearing sets the rates", q: "we establish as just and reasonable certain rates, terms, and conditions for the new transmission services directed in the December Order", p: "Disposition", pg: 5 },
-      { t: "December Order set aside in part", q: "we are modifying the discussion in the December Order and setting aside the order, in part", p: "FPA § 313(a)", pg: 5 },
+      { t: "One of three new co-location services", reform: "colo", q: "the Eligible Customer taking transmission service on behalf of the Co-Located Load takes one of three transmission services", p: "P 2", pg: 3 },
+      { t: "Interim NITS", reform: "colo", q: "a new interim, non-firm transmission service available until all Network Upgrades necessary to provide the requested NITS are complete (Interim NITS)", p: "P 2", pg: 3 },
+      { t: "Retail BTMG netting rewritten", reform: "colo", q: "the Behind the Meter Generation (BTMG) rules in the Tariff to be no longer just and reasonable, and the Commission directed PJM to submit in its compliance filing revisions to its Tariff to revise the retail BTMG netting rules and to implement a transition process for existing BTMG participants", p: "P 4", pg: 3 },
+      { t: "Paper hearing sets the rates", reform: "cost", q: "we establish as just and reasonable certain rates, terms, and conditions for the new transmission services directed in the December Order", p: "Disposition", pg: 5 },
+      { t: "December Order set aside in part", reform: "procedure", q: "we are modifying the discussion in the December Order and setting aside the order, in part", p: "FPA § 313(a)", pg: 5 },
     ],
     reg: [
       { t: "E-2 resolves rehearing of PJM’s December 18, 2025 §206 co-location order (193 FERC ¶ 61,217), the order that created the co-location framework whose new transmission services the other six orders extend.", p: "p. 2", pg: 2, a: "On December 18, 2025, the Commission issued an order in the show cause proceeding in Docket No. EL25-49-000" },
@@ -2344,8 +2373,13 @@ window.FERC_DATA = (function () {
         },
         {
           docket: "EL26-70-000", step: "showcause", status: "signaled", date: "2026-10-02",
-          gist: "MISO is filing its large-load reforms under §205 in separate ER dockets rather than in EL26-70: a zero-injection generator interconnection agreement in August and, on Oct 2, a Large Load Addition Resource Study in Docket ER27-25-000 (accession 20261002-5074), with a requested effective date of Dec 2, 2026. Whether MISO also files or responds in EL26-70 by Nov 16 is unknown.",
-          src: ["udive1005", "misolars1002"],
+          gist: "MISO is filing its large-load reforms under §205 in separate ER dockets rather than in EL26-70: a zero-injection generator interconnection agreement in August and, on Oct 2, a Large Load Addition Resource Study in Docket ER27-25-000 (accession 20261002-5074), with a requested effective date of Dec 2, 2026. In its Nov 9 LARS answer MISO says it and its transmission owners “will include in their Large Load filing(s) due on November 16, 2026, the pro forma cost recovery agreements.”",
+          src: ["udive1005", "misolars1002", "misolars1109"],
+        },
+        {
+          docket: "EL26-68-000", step: "showcause", status: "signaled", date: "2026-08-14",
+          gist: "SPP's abeyance runs to Nov 20, 2026, 95 days, “pending completion of SPP’s stakeholder proceedings and submittal of an FPA section 205 filing,” as the Aug 14 letter order records.",
+          src: ["abeyance0814"],
         },
         {
           docket: "EL26-69-000", step: "showcause", status: "signaled", date: "2026-06-18",

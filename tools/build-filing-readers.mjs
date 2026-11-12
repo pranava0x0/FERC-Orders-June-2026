@@ -84,6 +84,17 @@ function discussion(k,text){
  const topic=salient(text).map(x=>x[0]).find(t=>e.has(t));
  return topic?' <a class="xref" href="../'+threadHref(k,topic)+'">Filed comments: '+esc(topic)+'</a>':'';
 }
+const anchorsById=new Map(read(join(root,'sources/filings/order-anchors.json')).orders.flatMap(o=>o.anchors.map(a=>[a.id,{...a,item:o.item,rto:o.rto,pdf:'orders/'+o.slug+'.pdf'}])));
+const REL={responds:'Answers the order',implements:'Carries out the order',parallel:'Parallel proceeding',precursor:'Came before the order',procedural:'Changes the schedule',context:'Background'};
+// The per-document reading (sources/filings/documents/<slug>.json), validated by tools/validate-documents.mjs.
+function ownReading(r,paginated){
+ const f=join(root,'sources/filings/documents',r.slug+'.json');if(!existsSync(f))return '';
+ const d=read(f),tl=d.throughLine;
+ const chips=tl.anchors.map(id=>{const a=anchorsById.get(id);if(!a)throw Error(r.slug+': unknown anchor '+id);return '<a class="oa" href="../../'+a.pdf+'#page='+a.pg+'">'+esc(a.item+' '+a.rto+': '+a.label)+' ('+(a.para?esc(a.para)+', ':'')+'p. '+a.pg+')</a>';}).join(' ');
+ const pts=d.points.map(p=>'<li><strong>'+esc(p.point)+'</strong><blockquote>'+esc(p.quote)+' <cite>'+ref(p.pg||1,paginated)+'</cite></blockquote></li>').join('');
+ return '<section class="reading"><p class="intro">'+esc(d.summary)+'</p>'+(d.ask?'<p><strong>Asks FERC to:</strong> '+esc(d.ask)+'</p>':'')+
+  '<p><strong>'+esc(REL[tl.relation])+'.</strong> '+esc(tl.text)+'</p>'+(chips?'<p class="anchors">'+chips+'</p>':'')+'<h2>Key points</h2><ol class="points">'+pts+'</ol></section>';
+}
 const guide=[],voiceLinks=new Map();
 for(const r of catalog){
  const {pages,sections}=read(join(out,r.slug,'source.json')),paginated=r.pages!==null;
@@ -102,10 +113,10 @@ for(const r of catalog){
    let id=pin(c.title);if(ids.has(id))id+='-'+pg;if(ids.has(id))id+='-'+ids.size;ids.add(id);
    const selected=docVoices.filter(v=>{let terms=Array.isArray(v.match)?v.match:v.match?[v.match]:[];return terms.some(k=>(c.title+' '+c.theme).toLowerCase().includes(k.toLowerCase()));});
    selected.forEach(v=>{shown.add(v);if(!voiceLinks.has(v))voiceLinks.set(v,[]);voiceLinks.get(v).push([r.slug+'/#'+id,c.title]);});
-   claims+='<section class="finding" id="'+id+'"><p class="folio">'+esc(c.theme)+(c.theme?' · ':'')+(paginated?'PDF '+(c.start===c.end?'p. '+c.start:'pp. '+c.start+'–'+c.end):'Unpaginated filing')+'</p><h3>'+esc(c.title)+'</h3>'+(c.take?'<p>'+esc(c.take)+'</p>':'')+'<blockquote>'+esc(c.quote)+' <cite>'+ref(pg,paginated)+'</cite></blockquote>'+selected.map(perspective).join('')+discussion(docketKey(r),c.take+' '+c.quote)+'</section>';
+   claims+='<section class="finding" id="'+id+'"><p class="folio">'+esc(c.theme)+(c.theme?' · ':'')+(paginated?'PDF '+(c.start===c.end?'p. '+c.start:'pp. '+c.start+'–'+c.end):'Unpaginated filing')+'</p><h3>'+esc(c.title)+'</h3>'+(c.take?'<p>'+esc(c.take)+'</p>':'')+'<blockquote>'+esc(c.quote)+' <cite>'+ref(pg,paginated)+'</cite></blockquote>'+discussion(docketKey(r),c.take+' '+c.quote)+'</section>';
  }
  const overviewTopics=salient(pages.map(p=>p.text).join(' ')).slice(0,3).map(x=>x[0]);
- const related=docVoices.filter(v=>!shown.has(v));
+ const related=docVoices;
  const sourceBlocks=sections.map((s,i)=>{
    if(local.length)return '<li id="section-'+(i+1)+'"><a href="text.html#section-'+(i+1)+'">'+esc(s.title)+'</a> <span class="meta">'+(paginated?'p. '+s.p:'Source text')+'</span></li>';
    const text=sourceFragment(pages,s),snippet=extract(text),theme=salient(text)[0]?.[0];
@@ -119,12 +130,14 @@ for(const r of catalog){
  const summary='<p class="meta">'+esc(r.docket)+' · '+esc(r.issued)+(r.filer?' · '+esc(r.filer):'')+'</p><h1>'+esc(r.title)+'</h1>';
  const sourceNav='<nav class="tools" aria-label="Source material"><a href="'+esc(r.url)+'">Official source</a><a href="'+raw+'">Archived original</a><a href="text.html">Full text</a><a href="source.json">Page data (JSON)</a></nav>';
  const readings=curated.length?'<h2 id="findings">'+evidenceHeading+'</h2>'+ (local.length>3?'<nav class="contents" aria-label="Section readings">'+local.map(c=>'<a href="#'+pin(c.title)+'">'+esc(c.title)+'</a>').join('')+'</nav>':'')+claims:'';
- const notes=docVoices.length?related.map(perspective).join(''):'<p>No section-specific public response is linked for this document.</p>';
- const article=summary+sourceNav+(r.parent?'<p><a href="../'+r.parent+'/">Read the parent filing</a></p>':'')+
+ // Other parties' views stay off this page's text: a reader sees what THIS document says. They are listed
+ // as links, by speaker, so the trail to them survives without mixing their words into this reading.
+ const notes=related.length?'<ul class="elsewhere">'+related.map(v=>'<li><a href="'+esc(v.url)+'">'+esc(v.title)+'</a> <span class="by">'+esc(v.speaker)+'</span></li>').join('')+'</ul>':'';
+ const article=summary+ownReading(r,paginated)+sourceNav+(r.parent?'<p><a href="../'+r.parent+'/">Read the parent filing</a></p>':'')+
    (links.length?'<nav class="contents" aria-label="Attachments">'+links.map(x=>'<a href="../'+x.slug+'/">'+esc(x.title)+'</a>').join('')+'</nav>':'')+
    (filingThread.has(docketKey(r))?'<p><a href="../'+threadHref(docketKey(r))+'">Read topic-matched comments in '+esc(docketKey(r))+'</a></p>':'')+
    (overviewTopics.length?'<p class="terms">Topics in the text: '+esc(overviewTopics.join(' · '))+'</p>':'')+readings+
-   (notes?'<section><h2>Responses and related views</h2>'+notes+'</section>':'')+'<h2>Source sections</h2><p class="muted">Printed headings where available; page ranges otherwise. '+(local.length?'Open a heading to read the original passage. ':'Excerpts below are selected from the text by keyword. ')+''+(r.text_file?'This transcription includes OCR of scanned material; consult the original for exact wording. ':'')+(r.emptyPages.length?'Pages with no text layer: '+r.emptyPages.join(', ')+'. ':'')+'</p>'+(local.length?'<ul class="directory">'+sourceBlocks+'</ul>':'<div class="outline">'+sourceBlocks+'</div>');
+   (notes?'<section><h2>Elsewhere in the record</h2><p class="muted">Other parties on the same questions, in their own documents.</p>'+notes+'</section>':'')+'<h2>Source sections</h2><p class="muted">Printed headings where available; page ranges otherwise. '+(local.length?'Open a heading to read the original passage. ':'Excerpts below are selected from the text by keyword. ')+''+(r.text_file?'This transcription includes OCR of scanned material; consult the original for exact wording. ':'')+(r.emptyPages.length?'Pages with no text layer: '+r.emptyPages.join(', ')+'. ':'')+'</p>'+(local.length?'<ul class="directory">'+sourceBlocks+'</ul>':'<div class="outline">'+sourceBlocks+'</div>');
  const ld=JSON.stringify({'@context':'https://schema.org','@type':'Article',headline:r.title,description,mainEntityOfPage:SITE+r.slug+'/',citation:r.url,about:r.docket}).replaceAll('<','\\u003c');
  emit(r.slug+'/index.html',frame(r.title,description,article,r.slug+'/','<script type="application/ld+json">'+ld+'</script>'));
  let count=0;

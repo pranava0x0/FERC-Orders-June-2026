@@ -1,0 +1,18 @@
+{
+ "slug": "rehearing-er26-3380-indicated-pjm-tos",
+ "summary": "Indicated PJM Transmission Owners (the FirstEnergy Transmission Companies and Duquesne Light) request rehearing of FERC's September 29, 2026 order on PJM's Reliability Backstop Procurement. They challenge the order for leaving PJM's transmission owner Exit Amendment open instead of rejecting it.",
+ "ask": "Grant rehearing and definitively reject PJM's proposed Exit Amendment on cost-causation grounds and because PJM lacked unilateral Section 205 filing authority.",
+ "points": [
+  {"point": "The Owners seek rehearing out of caution and hope PJM files a revised Section 205 proposal that moots it.", "quote": "submit this rehearing request out of an abundance of caution to preserve their rights in this fast-moving and dynamic proceeding.", "pg": 2},
+  {"point": "FERC accepted the proposal, suspended it five months to February 28, 2027, and set a paper hearing on cost allocation, exit rules and collateral.", "quote": "suspended for five months, effective February 28, 2027, subject to refund and the outcome of the further procedures ordered in this proceeding.", "pg": 3},
+  {"point": "The Order found PJM did not explain why transmission owners should bear backstop charges, but did not reject the exit fee outright.", "quote": "fails to explain why Transmission Owners—who are not the buyers for which PJM procures capacity under the RBP—should be responsible for RBP Charges", "pg": 3},
+  {"point": "The Owners say the cost-causation finding should be final: transmission owners are not the beneficiaries of the backstop.", "quote": "should have been stated finally and definitively, instead of being left open for decision after a paper hearing.", "pg": 5},
+  {"point": "PJM lacked filing authority because the Exit Amendment changes the Consolidated Transmission Owners Agreement, which needs a transmission owner vote.", "quote": "PJM cannot avoid the CTOA’s amendment procedures by casting a change to the core terms of the CTOA as an amendment to the OATT, rather than to the CTOA.", "pg": 7},
+  {"point": "PJM also skipped the 45 days' notice owed to transmission owners and should have used Section 206.", "quote": "PJM therefore was required to provide the TOs with 45 days’ notice before filing the Exit Amendment.", "pg": 8}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report", "e-7-cost-recovery-agreement"], "text": "Rehearing in PJM's backstop docket ER26-3380. The exit-fee and cost-causation dispute over who pays for procured capacity runs alongside the E-7 adequacy and cost-recovery directives."},
+ "themes": ["adequacy", "credit", "procedure"],
+ "figures": [
+  {"label": "Notice owed to transmission owners", "value": 45, "unit": "days", "quote": "45 days’ notice before filing the Exit Amendment", "pg": 8}
+ ]
+}

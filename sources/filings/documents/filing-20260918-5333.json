@@ -1,0 +1,17 @@
+{
+ "slug": "filing-20260918-5333",
+ "summary": "A joint group of state consumer advocates, attorneys general and citizens utility boards protests MISO's grandfathering of large loads under new Section 37A, arguing it leaves about 30 GW outside the rules and shifts costs to captive customers.",
+ "ask": "Reject MISO's Section 37A grandfathering provisions so Large Load customers bear the cost and risk they cause.",
+ "points": [
+  {"point": "The protestors say grandfathering does not address the cost-shifting concern in the E-8 order.", "quote": "do not address the cost-shifting concerns expressed by the Commission in the Show Cause Order.", "pg": 1},
+  {"point": "They put the exempted capacity at about 30 GW, tied to an arbitrary date.", "quote": "The proposal fully or partially exempts approximately 30 gigawatts of existing and in-flight capacity based on an arbitrary date.", "pg": 1},
+  {"point": "They warn that grandfathered loads cause reliability upgrades whose cost lands on other customers.", "quote": "The cost of these system and network reliability upgrades will be passed onto other customers and will not be assigned to the Large Load, the cost-causer.", "pg": 1},
+  {"point": "Local reliability costs should follow the cost-causer, and Large Loads should bear the risk if load does not materialize.", "quote": "Local reliability costs caused or materially accelerated by a Large Load should follow the cost-causer, the Large Load customer.", "pg": 1},
+  {"point": "They want MISO's show cause proposals to apply to incremental large load coming online after December 4, 2026.", "quote": "MISO’s Show Cause proposals should apply to any incremental large new load, as defined in this filing, that comes online after December 4, 2026.", "pg": 1}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-cost-recovery-agreement", "e-8-minimum-cost-recovery-security"], "text": "Cites the E-8 order's cost-shifting finding at P 66 and warns that MISO's exemption date could carry into the cost-protection filings MISO owes under the E-8 directives."},
+ "themes": ["cost", "registry"],
+ "figures": [
+  {"label": "Capacity exempted or partly exempted by MISO grandfathering", "value": 30, "unit": "GW", "quote": "approximately 30 gigawatts of existing and in-flight capacity", "pg": 1}
+ ]
+}

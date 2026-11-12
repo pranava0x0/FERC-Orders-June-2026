@@ -1,0 +1,17 @@
+{
+ "slug": "motion-el26-72-isone-abeyance",
+ "summary": "ISO-NE and the Participating Transmission Owners Administrative Committee jointly ask FERC to hold the E-11 show cause proceeding in abeyance for 90 days from August 17, 2026 and commit to a single section 205 filing by November 16, 2026.",
+ "ask": "Hold the proceeding in abeyance for 90 days starting August 17, 2026, with a five-day comment period and a ruling by August 13, 2026.",
+ "points": [
+  {"point": "The movants commit to file by November 16, 2026.", "quote": "ISO-NE and the PTOs will submit the FPA Section 205 filing to the Commission on or before November 16, 2026.", "pg": 2},
+  {"point": "They ask for a shortened comment period and expedited ruling because the response is due August 17.", "quote": "respectfully request that the Commission shorten the comment period for this motion to five days and grant expedited treatment", "pg": 2},
+  {"point": "They say more time is needed to develop proposals and present them for stakeholder review.", "quote": "additional time is needed to develop those proposals and present them for stakeholder review.", "pg": 4},
+  {"point": "The filing will cover all five reform categories: study processes, cost transparency, co-location rules, flexible load service and generation studies.", "quote": "efficient study processes, cost transparency, co-location rules, flexible load service, and generation studies", "pg": 5},
+  {"point": "Study reform will include a large load definition with a size and interconnection voltage threshold, and evaluation of alternative transmission technologies.", "quote": "This definition will be based on the characteristics of ISO-NE’s transmission system and will include load size and an interconnection voltage threshold.", "pg": 5}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-11-show-cause", "e-11-application-study-process", "e-11-alternative-transmission", "e-11-cost-recovery-agreement"], "text": "Uses the abeyance option in the E-11 order to postpone the 60-day deadline and maps ISO-NE's planned section 205 filing onto the order's five reform categories."},
+ "themes": ["procedure", "study", "cost"],
+ "figures": [
+  {"label": "Requested abeyance period", "value": 90, "unit": "days", "quote": "hold the Section 206 proceeding initiated by the Show Cause Order in abeyance for 90 days", "pg": 2}
+ ]
+}

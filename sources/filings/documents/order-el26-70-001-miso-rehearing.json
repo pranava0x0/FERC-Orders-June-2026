@@ -1,0 +1,14 @@
+{
+ "slug": "order-el26-70-001-miso-rehearing",
+ "summary": "FERC dismisses Eolian's request for clarification or rehearing of the E-8 MISO show cause order because the order made only preliminary findings and is not final, and says it will not clarify the order while the proceeding is in abeyance.",
+ "ask": null,
+ "points": [
+  {"point": "Eolian asked that electrically proximate generation be able to get permanent load-limited generator interconnection service.", "quote": "electrically proximate generation may access permanent load-limited generator interconnection service where it is equally capable of enabling the large load to limit its withdrawals", "pg": 1},
+  {"point": "FERC says only final orders can be reheard, and the Show Cause Order was not final.", "quote": "The Commission did not make any final decision or determination in the Show Cause Order on whether the MISO Tariff is unjust, unreasonable, or unduly discriminatory or preferential.", "pg": 1},
+  {"point": "FERC dismisses the rehearing request and the clarification request.", "quote": "We therefore dismiss the request for rehearing, which concerns a Commission action that is not final and that will be succeeded by further Commission action.", "pg": 1},
+  {"point": "FERC will not give guidance on the Show Cause Order during abeyance and encourages continued section 205 work.", "quote": "We do not intend to provide clarification or guidance with respect to the Show Cause Order while the show cause proceeding is held in abeyance.", "pg": 1},
+  {"point": "The order restates the abeyance dates: responses November 16, 2026 and answers December 16, 2026.", "quote": "responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026.", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-8-show-cause"], "text": "Disposes of rehearing of the E-8 order by treating it as non-final and confirms the abeyance schedule; Eolian's request concerned the E-8 proximate-generation and flexible-load directives."},
+ "themes": ["procedure", "proximate"]
+}

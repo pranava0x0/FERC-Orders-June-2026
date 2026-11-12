@@ -1,0 +1,18 @@
+{
+  "slug": "filing-20260803-5227",
+  "kind": "conditional motion for abeyance",
+  "summary": "The Six Cities conditionally ask FERC to hold the 60-day show cause response deadline in abeyance for 90 days. The request becomes moot if FERC grants their pending motion to rescind the order.",
+  "ask": "Hold the 60-day deadline to respond to the show cause order in abeyance for 90 days, if the Six Cities' motion to rescind is not granted.",
+  "points": [
+    {"point": "The motion is conditional on the pending rescission request and is moot if that request is granted.", "quote": "if that Motion to Rescind is granted, the Cities’ abeyance request will be moot.", "pg": 2},
+    {"point": "The Six Cities rely on the show cause order's offer of an abeyance of up to 90 days.", "quote": "to hold, for up to 90 days, all or certain aspects of this FPA section 206 proceeding in abeyance, including the deadline to respond to this order.", "pg": 3},
+    {"point": "The cities need time to coordinate with CAISO's stakeholder proceeding and with co-owners and contract counterparties.", "quote": "the Six Cities will need an additional 90 days to prepare responses to the Show Cause Order, develop potential revisions to each of their TO Tariffs", "pg": 4},
+    {"point": "Any tariff revisions may need approval from a Public Utility Board or City Council.", "quote": "each City will need to evaluate whether proposed revisions to their TO Tariffs to address the Show Cause Order require review and approval by the City’s Public Utility Board or the City Council", "pg": 4}
+  ],
+  "throughLine": {
+    "relation": "procedural",
+    "anchors": ["e-10-show-cause"],
+    "text": "Invokes the E-10 CAISO show cause order's up-to-90-day abeyance option. FERC granted the Six Cities' rescission motion on August 14, 2026, which leaves this conditional request moot."
+  },
+  "themes": ["procedure"]
+}

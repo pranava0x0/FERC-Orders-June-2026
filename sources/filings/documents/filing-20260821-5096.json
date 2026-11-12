@@ -1,0 +1,18 @@
+{
+  "slug": "filing-20260821-5096",
+  "summary": "The Organization of PJM States, supported by 13 of its member commissions, files comments backing PJM's July 31 Reliability Backstop Procurement proposal and urging quick FERC action, while noting that retail cost allocation stays with state regulators.",
+  "ask": "Accept PJM's Tariff and RAA revisions and let PJM implement the Reliability Backstop Procurement without disrupting later capacity auctions.",
+  "points": [
+    {"point": "OPSI supports the filing and asks FERC to act fast so later capacity auctions keep their schedule.", "quote": "OPSI encourages the Commission to act expeditiously so that PJM can implement the RBP without disrupting the schedule for subsequent capacity auctions.", "pg": 1},
+    {"point": "OPSI backs a supplemental procurement equal to the 2028/2029 auction shortfall.", "quote": "OPSI supports PJM's proposal to implement a supplemental procurement of new capacity equal to the shortfall observed in the BRA for the 2028/2029 Delivery Year to serve large loads.", "pg": 2},
+    {"point": "OPSI says allocating backstop costs to retail customers remains with state regulators.", "quote": "Under the Federal Power Act, the allocation of RBP costs to retail customers remains within the jurisdiction of retail regulators.", "pg": 2},
+    {"point": "OPSI supports the new-capacity eligibility test so offsets add capacity.", "quote": "helps ensure that bilateral offsets and RBP procurements result in a genuine increase in regional capacity", "pg": 3},
+    {"point": "OPSI strongly supports the voluntary bilateral matching process that lets large loads procure capacity and lower the procurement target.", "quote": "OPSI strongly supports the ongoing voluntary, iterative bilateral matching process through which new large loads may procure new capacity directly", "pg": 3},
+    {"point": "OPSI recommends PJM revise the target and load forecast if load drops out before the procurement ends.", "quote": "should an electric distribution company (\"EDC\") / load serving entity (\"LSE\") confirm before completion of the RBP that a specific amount of load in the relevant load forecast is no longer expected to materialize, PJM would revise its RBP target and load forecast.", "pg": 3}
+  ],
+  "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report"], "text": "Comments in PJM's separate backstop procurement docket ER26-3380, the capacity-adequacy track that runs beside the E-7 order's 30-day report on how PJM will ensure generation for large loads."},
+  "themes": ["adequacy", "retail"],
+  "figures": [
+    {"label": "2028/2029 BRA shortfall against the PJM Region Reliability Requirement", "value": 6831, "unit": "MW", "quote": "cleared 6,831 MW short of the PJM Region Reliability Requirement", "pg": 1}
+  ]
+}

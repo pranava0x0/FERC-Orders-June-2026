@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20261026-4001",
+ "summary": "The National Congress of American Indians transmits Resolution MEM-26-016 to Chairman Swett, asking FERC to impose a moratorium on approvals supporting hyperscale data centers until independent grid and ratepayer assessments are done, with cost protections and Tribal consultation.",
+ "ask": "Impose an immediate moratorium on certificates, transmission approvals and authorizations for hyperscale data centers pending an independent assessment, with binding cost allocation conditions and mandatory Tribal consultation.",
+ "points": [
+  {"point": "NCAI asks for a moratorium on related approvals until an independent impact assessment is completed.", "quote": "impose an immediate moratorium on the issuance of any related certificates, transmission approvals, or regulatory authorizations supporting hyperscale data centers", "pg": 2},
+  {"point": "It wants binding conditions so data center upgrade costs fall on facility operators, not existing Tribal or residential ratepayers.", "quote": "all grid and infrastructure upgrade costs attributable to data center demand are borne entirely by the facility operators, not passed on to existing Tribal or residential ratepayers.", "pg": 2},
+  {"point": "It asks for independent, conflict-free assessments of resource adequacy and congestion effects.", "quote": "rigorous, independent, and conflict-free assessments of how these facilities impact regional resource adequacy and transmission congestion", "pg": 2},
+  {"point": "It asks for Tribal consultation at the outset of transmission planning or interconnection for these developments.", "quote": "engage Tribal Nations as sovereign partners at the outset of any transmission planning or interconnection process", "pg": 2}
+ ],
+ "throughLine": {"relation": "context", "anchors": ["e-7-cost-recovery-agreement"], "text": "Letter filed in EL26-67 after the show cause order; its call for data center operators to bear upgrade costs echoes the cost-shifting concern in the E-7 cost recovery directive but answers no directive."},
+ "themes": ["cost", "adequacy", "retail"],
+ "figures": []
+}

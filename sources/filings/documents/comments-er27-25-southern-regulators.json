@@ -1,0 +1,17 @@
+{
+  "slug": "comments-er27-25-southern-regulators",
+  "summary": "The Mississippi and Louisiana Public Service Commissions, as the Southern Regulators, file comments supporting MISO's LARS filing as a 120-day parallel study of loads above 200 MW and paired generation that responds to the show cause order.",
+  "ask": "Accept MISO's LARS filing.",
+  "points": [
+    {"point": "The regulators describe LARS as meant to address the show cause order finding on electrically proximate large loads.", "quote": "The LARS proposal also is intended to address the Commission's June 18, 2026 Show Cause Order finding that MISO's Tariff may be unjust and unreasonable", "pg": 1},
+    {"point": "LARS coordinates and speeds study of loads above 200 MW and the generation identified for them.", "quote": "coordinate and expedite the analyses needed to interconnect large loads above 200 MW and the new generation resources identified to support that new load.", "pg": 1},
+    {"point": "Joint study can cut upgrade needs and costs, and LARS studies pairs in 120 days.", "quote": "LARS provides for a 120-day parallel study of eligible large loads and their paired generation resources.", "pg": 2},
+    {"point": "They say permanence supplies the certainty needed to site and finance pairings.", "quote": "Making LARS a permanent process is reasonable because it provides certainty needed to site and finance large load-and-generation pairings.", "pg": 2},
+    {"point": "They list the caps and eligibility rules that deter speculative requests.", "quote": "including a 150% generation to load ceiling, a $250,000 deposit, a three-year commercial operation date, and a same-Local-Resource-Zone requirement.", "pg": 2}
+  ],
+  "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "Supports MISO's LARS filing as a response to the E-8 show cause order finding that MISO lacks study procedures for electrically proximate large loads."},
+  "themes": ["proximate", "study"],
+  "figures": [
+    {"label": "MISO LARS minimum load size", "value": 200, "unit": "MW", "quote": "large loads above 200 MW", "pg": 1}
+  ]
+}

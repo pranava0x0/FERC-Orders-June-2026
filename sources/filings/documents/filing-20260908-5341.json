@@ -1,0 +1,82 @@
+{
+ "slug": "filing-20260908-5341",
+ "summary": "Community Organizations and Clean Energy Advocates (Sierra Club, NRDC, Clean Grid Alliance and others) protest MISO's ZGIA filing, accepting the zero-injection design but objecting to missing penalties, transparency, scope limits and cost-shift safeguards.",
+ "ask": "Direct MISO to cure the listed deficiencies, through a deficiency letter or compliance in the show cause proceeding, before FERC accepts the ZGIA filing.",
+ "points": [
+  {
+   "point": "The protesters accept the ZGIA design and object to the missing tariff mechanics.",
+   "quote": "Our organizations do not oppose the intended design of MISO’s ZGIA Proposal",
+   "pg": 2
+  },
+  {
+   "point": "They ask FERC to send MISO a deficiency letter or order further compliance in the show cause docket.",
+   "quote": "we urge the Commission to direct MISO to address these tariff and procedural defects through either a deficiency letter or direct further compliance via the show cause proceeding.",
+   "pg": 2
+  },
+  {
+   "point": "They want operational penalties for unauthorized injections, citing the E-8 order's concern about control and protection requirements.",
+   "quote": "The Commission should require MISO to modify its ZGIA proposal to include robust operational penalties for ZGIA Generating Facilities that make unauthorized injections",
+   "pg": 4
+  },
+  {
+   "point": "They say MISO has not justified the 20-second Transient Tolerance Window.",
+   "quote": "MISO has not justified why a maximum period of 20 seconds is either operationally attainable by a generator",
+   "pg": 12
+  },
+  {
+   "point": "They say MISO falls short of the E-8 order's cost transparency requirements.",
+   "quote": "MISO has fallen well short of the Order’s clear requirements on transparency.",
+   "pg": 14
+  },
+  {
+   "point": "They ask for a cap on the ZGIA program's size or duration, citing the ERAS and SPP HILLGA precedents.",
+   "quote": "To achieve the narrow tailoring required by the Commission’s open access precedents, a program that bypasses the traditional interconnection queue must have some limitation on how large it could get.",
+   "pg": 17
+  },
+  {
+   "point": "They say deferred upgrade costs could reach other customers if supporting generation fails.",
+   "quote": "the Proposal does not require adequate financial security, cost-recovery agreements, or true-ups for the cost of deferred transmission upgrades if the ZG Generating Facility fails to materialize, retires early, or becomes permanently unavailable.",
+   "pg": 21
+  },
+  {
+   "point": "They call the five-year commitment an intent, not a firm term, and unsupported by evidence.",
+   "quote": "Beyond this bald statement, MISO provides no evidentiary basis for choosing this inadequate formulation and therefore is arbitrary.",
+   "pg": 22
+  },
+  {
+   "point": "They conclude that MISO has the structure for a reasonable co-location program and should cure defects before acceptance.",
+   "quote": "Since MISO has the structure for a reasonable co-location program, we urge the Commission to direct MISO to cure the deficiencies with filing before accepting it.",
+   "pg": 30
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-8-services-for-flexible-co-located",
+   "e-8-cost-recovery-agreement",
+   "e-8-show-cause"
+  ],
+  "text": "Protests MISO's ZGIA filing in ER26-3552, MISO's co-location response to the E-8 order, and argues it falls short of the order's cost transparency and cost-shift protections."
+ },
+ "themes": [
+  "colo",
+  "cost",
+  "study"
+ ],
+ "figures": [
+  {
+   "label": "Maximum Transient Tolerance Window in MISO's ZGIA proposal",
+   "value": 20,
+   "unit": "seconds",
+   "quote": "defined as no more than 20 seconds",
+   "pg": 12
+  },
+  {
+   "label": "Project cap on MISO's ERAS program as re-filed",
+   "value": 68,
+   "unit": "projects",
+   "quote": "capping the size of the program at 68 total projects",
+   "pg": 16
+  }
+ ]
+}

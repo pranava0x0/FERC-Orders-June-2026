@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20260918-5412",
+ "summary": "The Data Center Coalition accepts that large loads need distinct reliability rules but asks FERC to decline MISO's tariff revisions as filed, citing requirements left to a Business Practices Manual and a grandfathering test tied to transmission milestones.",
+ "ask": "Decline to accept MISO's proposed tariff revisions as filed, without prejudice to a later filing that is objective, transparent and consistent with the Show Cause Order.",
+ "points": [
+  {"point": "DCC says the E-8 order settled that large loads can face distinct operational rules; the open question is whether MISO's framework is just and reasonable.", "quote": "Instead, the issue is whether the framework that MISO has proposed in this proceeding represents a just and reasonable means of mitigating these reliability risks.", "pg": 2},
+  {"point": "DCC says the proposal leaves the covered customers and obligations unclear and moves the substance to a future BPM.", "quote": "the proposed tariff revisions do not clearly define the customers that will be subject to those requirements and the obligations that will apply.", "pg": 3},
+  {"point": "DCC says grandfathering turns on MTEP or EPR project milestones, not on binding agreements or investments by the customer.", "quote": "MISO ties grandfathered treatment primarily to whether an associated transmission project has reached specified milestones in the MISO Transmission Expansion Plan (“MTEP”) or Expedited Project Review (“EPR”)", "pg": 4},
+  {"point": "DCC objects to MISO's unbounded discretion to subject otherwise exempt customers to the standards.", "quote": "MISO has proposed to grant itself broad discretion to subject customers that otherwise qualify for an exemption to its reliability standards without including any objective standards or procedures in the tariff", "pg": 4},
+  {"point": "DCC argues that leaving requirements to BPMs conflicts with FPA section 205 and the filed rate doctrine.", "quote": "Section 205 of the FPA requires public utilities to file the rates, terms, and conditions of FERC-jurisdictional service with the Commission.", "pg": 6},
+  {"point": "DCC asks FERC to decline the filing as submitted.", "quote": "DCC respectfully requests that the Commission decline to accept MISO’s proposed tariff revisions as filed, without prejudice to a future filing", "pg": 5}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "Comments on MISO's first filing after the E-8 order. DCC cites the order's calls for clear and consistent rules and for minimizing disruption to existing commercial arrangements."},
+ "themes": ["registry", "procedure"]
+}

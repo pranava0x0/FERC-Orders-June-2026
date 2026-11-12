@@ -1,0 +1,13 @@
+{
+ "slug": "filing-20260715-5011",
+ "summary": "Relentless Energy Systems LLC submits technical evidence and circuit netlists for Geometric Phase Isolation, a passive resonant device it says offloads reactive power at the point of load, as a grid enhancing technology for large-load interconnection.",
+ "ask": "Have Commission engineering staff review the Geometric Phase Isolation evidence as a grid enhancing technology applicable to large-load interconnection constraints.",
+ "points": [
+  {"point": "Relentless submits solver-verified models of Geometric Phase Isolation as a grid enhancing technology tied to the show cause orders.", "quote": "technical evidence and Xyce netlists and results to assist regional transmission organizations and the Commission in mitigating the infrastructure impacts of large loads", "pg": 1},
+  {"point": "The company says the device offloads reactive power at the load and increases interconnection capacity without new rights-of-way.", "quote": "materially increases available interconnection capacity without requiring new transmission rights‑of‑way.", "pg": 2},
+  {"point": "The submission lists three document groups: netlist sweeps, a resilient-resonance netlist, and a non-provisional patent application.", "quote": "The following three (3) groups of documents are included in this public eFiling for technical review by Commission engineering staff", "pg": 2}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-7-alternative-transmission"], "text": "Filed across the show cause dockets as a grid enhancing technology; it bears on the E-7 directive to evaluate alternative transmission technologies in transmission service studies."},
+ "themes": ["study"],
+ "figures": []
+}

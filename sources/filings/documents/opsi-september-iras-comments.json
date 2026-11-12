@@ -1,0 +1,16 @@
+{
+ "slug": "opsi-september-iras-comments",
+ "summary": "The Organization of PJM States comments on PJM's Interim Resource Adequacy Service filing. Eleven member commissions support the registry, curtailment priority and demand curve exclusion, ask PJM to clarify the compensation rate, and alternatively ask FERC to sever it.",
+ "ask": "Require PJM to clarify the IRAS compensation rate and who sets it; if the issues persist, sever and reject Attachment DD-4 section X and accept the rest of the filing.",
+ "points": [
+  {"point": "OPSI supports the registry and a wholesale curtailment signal before pre-emergency procedures, but not the compensation mechanism without clarification.", "quote": "the Commission should not accept PJM’s proposed compensation mechanism, without further clarification.", "pg": 1},
+  {"point": "OPSI supports calling IRAS before pre-emergency load management so existing customers and demand response do not bear the first consequences of a shortfall.", "quote": "Calling on IRAS first appropriately places the initial operational consequences of a capacity shortfall on the amount of demand associated with NLLs that entered the system without sufficient new capacity", "pg": 4},
+  {"point": "OPSI says differential treatment of new large loads should include less firm service.", "quote": "This differential treatment should reasonably include less firm service.", "pg": 5},
+  {"point": "OPSI supports removing new large loads without their own capacity from the demand curve starting with the 2029/2030 auction.", "quote": "NLLs entering the system without sufficient new capacity should not be permitted to increase capacity-market demand and rely on PJM’s existing capacity supply to satisfy that incremental requirement.", "pg": 6},
+  {"point": "States need meaningful registry access to design retail curtailment and cost allocation.", "quote": "states must have meaningful access to the Registry so they can determine how curtailment should be implemented at the retail level", "pg": 7},
+  {"point": "OPSI asks PJM to clarify whether retail regulators can set the IRAS rate or only decide eligibility for compensation.", "quote": "PJM should clarify whether retail regulators can set the IRAS rate itself at retail or if they simply have the ability to determine whether specific retail loads are entitled to compensation", "pg": 8},
+  {"point": "OPSI says the 50% rate is unsupported because PJM calls a zero rate just and reasonable.", "quote": "The Commission should sever and reject proposed Attachment DD-4 § X and accept the remainder of PJM’s filing without the unsupported 50% compensation mechanism", "pg": 10}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-service-for-flexible-loads", "e-7-adequacy-report"], "text": "State regulators' comments in PJM's separate IRAS docket ER26-3515. Curtailing large loads without their own capacity before other customers parallels the E-7 flexible-load service directive, with the retail-wholesale boundary at issue."},
+ "themes": ["flex", "retail", "registry", "adequacy"]
+}

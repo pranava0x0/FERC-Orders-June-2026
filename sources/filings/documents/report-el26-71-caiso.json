@@ -1,0 +1,28 @@
+{
+  "slug": "report-el26-71-caiso",
+  "kind": "informational report",
+  "summary": "CAISO files the 30-day generation adequacy informational report required by the show cause order. It says California's integrated planning shows no systemic shortfall, and it lays out the stakeholder schedule for its large load reforms.",
+  "ask": null,
+  "points": [
+    {"point": "CAISO says California's planning, led by the CEC, CPUC and CAISO, differs from the capacity-short markets in other regions.", "quote": "California's integrated resource and transmission planning framework is fundamentally different from many other organized markets that are confronting capacity shortfalls", "pg": 2},
+    {"point": "The CEC forecasts data center load in the CAISO grid of 1.8 GW by 2030 and 4.9 GW by 2040.", "quote": "the CEC forecasts data center load in the CAISO grid to increase by 1.8 gigawatts (GW) by 2030 and 4.9 GW by 2040", "pg": 4},
+    {"point": "State projections in the 2025-2026 Transmission Plan have load growing 15 GW by 2035 and 20 GW by 2040.", "quote": "California load will grow by 15 GW by 2035 and 20 GW by 2040", "pg": 5},
+    {"point": "CAISO reports no systemic generation adequacy shortfall comparable to other regions.", "quote": "Current planning assessments do not indicate a systemic generation adequacy shortfall comparable to those in other regions.", "pg": 9},
+    {"point": "Nearly 36 GW of new generation and storage came online for CAISO load from January 2020 to March 2026, including more than 16 GW of storage.", "quote": "nearly 36 GW of new generation and storage capacity coming online to serve CAISO load between January 2020 and March 2026", "pg": 10},
+    {"point": "CAISO's 2026 summer assessment finds a surplus of over 2.5 GW against the 1-in-10 reliability standard.", "quote": "The CAISO’s 2026 analysis indicates that the current portfolio meets that target with a surplus of over 2.5 GW.", "pg": 11},
+    {"point": "Peak load in the WEIM region fell 3.8 percent in 2025 from 135.3 GW to 130.1 GW.", "quote": "Peak market load in the Western Energy Imbalance Market (WEIM) region was 130.1 GW in 2025, down 3.8 percent from the 2024 peak of 135.3 GW.", "pg": 13},
+    {"point": "The Large Load stakeholder initiative is the vehicle for the show cause response, with a FERC filing on November 16, 2026.", "quote": "The CAISO’s Large Load stakeholder initiative will become the primary vehicle for CAISO reforms to address the Order to Show Cause.", "pg": 14}
+  ],
+  "throughLine": {
+    "relation": "responds",
+    "anchors": ["e-10-adequacy-report"],
+    "text": "Answers the E-10 CAISO order's 30-day directive for an informational report on how CAISO will ensure adequate generation, and sets out the stakeholder timeline later used in its abeyance motion."
+  },
+  "themes": ["adequacy", "registry", "procedure"],
+  "figures": [
+    {"label": "CEC data center load growth forecast in CAISO by 2030", "value": 1.8, "unit": "GW", "quote": "the CEC forecasts data center load in the CAISO grid to increase by 1.8 gigawatts (GW) by 2030", "pg": 4},
+    {"label": "CEC data center load growth forecast in CAISO by 2040", "value": 4.9, "unit": "GW", "quote": "1.8 gigawatts (GW) by 2030 and 4.9 GW by 2040", "pg": 4},
+    {"label": "State-projected California load growth by 2035", "value": 15, "unit": "GW", "quote": "California load will grow by 15 GW by 2035 and 20 GW by 2040", "pg": 5},
+    {"label": "New generation and storage online for CAISO load, 2020 to March 2026", "value": 36, "unit": "GW", "quote": "nearly 36 GW of new generation and storage capacity coming online to serve CAISO load between January 2020 and March 2026", "pg": 10}
+  ]
+}

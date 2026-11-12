@@ -1,0 +1,16 @@
+{
+ "slug": "abeyance-el26-67-pjm",
+ "summary": "FERC grants the abeyance motions of PJM, the Indicated PJM Transmission Owners and Silver Run, holding the E-7 show cause proceeding for 90 days. Responses move to November 16, 2026 and answers to December 16, 2026.",
+ "ask": null,
+ "points": [
+  {"point": "FERC holds the whole EL26-67 proceeding in abeyance for 90 days, moving show cause responses to November 16 and answers to December 16, 2026.", "quote": "responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026.", "pg": 1},
+  {"point": "A section 205 filing by November 16 suspends the filer's obligation to respond to the show cause order.", "quote": "then the obligation of the respondent(s) who have made such an FPA section 205 filing to file a response to the Show Cause Order will be suspended", "pg": 1},
+  {"point": "PJM says its planned filing will cover study processes, cost shifting, services for flexible large loads, and generation serving proximate large loads.", "quote": "(1) achieve efficient transmission service application and study processes, including through the consideration of alternative transmission technologies; (2) prevent cost shifting and enhance transparency into transmission costs", "pg": 1},
+  {"point": "PJM plans an advisory stakeholder vote at the Members Committee on October 28, 2026.", "quote": "with the goal of taking an advisory stakeholder vote on the proposal at the Members Committee meeting on October 28, 2026.", "pg": 1},
+  {"point": "The Indicated Transmission Owners expect to file pro forma cost recovery agreements and penalties for exceeding contractual service limits.", "quote": "pro forma cost recovery agreements and rates for new transmission services for flexible large loads and electrically proximate large loads or co-located loads", "pg": 1},
+  {"point": "FERC encourages filers to explain which proposed revisions resolve the show cause findings and to set effective dates that respect existing commercial arrangements.", "quote": "we encourage PJM and/or Transmission Owners to explain, with specificity, which of their proposed Tariff revisions they believe resolve all or some of the Commission’s preliminary findings", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-show-cause", "e-7-service-for-flexible-loads", "e-7-cost-recovery-agreement"], "text": "Postpones the E-7 60-day show cause deadline for PJM and its Transmission Owners to November 16, 2026, in exchange for section 205 filings on study, cost and flexible service topics."},
+ "themes": ["procedure", "study", "cost", "flex"],
+ "figures": []
+}

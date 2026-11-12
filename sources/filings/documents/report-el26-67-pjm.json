@@ -1,0 +1,19 @@
+{
+ "slug": "report-el26-67-pjm",
+ "summary": "PJM files its 30-day informational report on resource adequacy for new large loads, describing the backstop procurement and insufficient-adequacy service stakeholder process, load flexibility work, market design reviews and interconnection reforms.",
+ "ask": "Accept the informational report as responsive to the show cause order's directive.",
+ "points": [
+  {"point": "PJM points to a Critical Issue Fast Path on backstop procurement as its most direct effort on adequacy for new large loads.", "quote": "this effort is most directly evidenced by the Critical Issue Fast Path (“CIFP”) for the development of a reliability backstop procurement (“RBP”) and a framework for service during periods of insufficient resource adequacy.", "pg": 1},
+  {"point": "Stakeholders considered 24 proposals, 11 on service during insufficient adequacy and 13 on the backstop, with a filing expected around July 31, 2026.", "quote": "In total, 24 proposals were submitted for consideration by PJM, the Independent Market Monitor for PJM, and various stakeholder groups.", "pg": 4},
+  {"point": "Large loads that bring too little supply may be required to reduce withdrawals before other load is curtailed.", "quote": "these large loads may be required to reduce their withdrawals from the transmission system before PJM needs to curtail other load.", "pg": 3},
+  {"point": "A large load flexibility initiative would let loads connect before transmission upgrades, using load-reduction allocations and temporary options.", "quote": "develop options for temporary flexibility to offer loads until transmission upgrades are constructed, such as fully, partially, or storage matched options.", "pg": 6},
+  {"point": "PJM's Powering Reliability Through Market Design report sets out three paths, with a filing expected in 2027.", "quote": "culminating in a filing with the Commission in 2027.", "pg": 8},
+  {"point": "PJM reports 829 Cycle 1 applications totaling about 212,000 MW under review.", "quote": "PJM has received a total of 829 applications under Cycle 1, totaling approximately 212,000 MWs of new capacity currently under review.", "pg": 11}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-7-adequacy-report"], "text": "PJM's response to the E-7 30-day directive for an informational report on how it will ensure adequate generation for existing and new large loads."},
+ "themes": ["adequacy", "flex", "study"],
+ "figures": [
+  {"label": "PJM Cycle 1 interconnection applications under review", "value": 212000, "unit": "MW", "quote": "PJM has received a total of 829 applications under Cycle 1, totaling approximately 212,000 MWs of new capacity currently under review.", "pg": 11},
+  {"label": "Stakeholder proposals considered in the backstop CIFP", "value": 24, "unit": "proposals", "quote": "In total, 24 proposals were submitted for consideration by PJM, the Independent Market Monitor for PJM, and various stakeholder groups.", "pg": 4}
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "motion-el26-71-caiso-abeyance",
+  "summary": "CAISO moves to hold the show cause proceeding in abeyance for 90 days. It lays out a stakeholder schedule leading to a November 16, 2026 FPA section 205 filing, made together with its Participating Transmission Owners.",
+  "ask": "Hold the EL26-71 section 206 proceeding in abeyance for 90 days, until November 16, 2026, while CAISO and the Participating Transmission Owners prepare section 205 filings.",
+  "points": [
+    {"point": "CAISO wants 90 days from the response deadline to November 16, 2026, aligned with the Participating Transmission Owners' requests.", "quote": "hold the instant proceeding in abeyance for 90 days from the deadline to respond", "pg": 1},
+    {"point": "The filing is meant to address all preliminary findings and five reform categories in the order, with simultaneous PTO filings.", "quote": "will address all the preliminary findings and five categories of reforms set forth in the Order to Show Cause, as appropriate for the CAISO region.", "pg": 5},
+    {"point": "CAISO's Large Load stakeholder initiative is the vehicle; an issue paper came in January 2026 and a technical-requirements straw proposal in June 2026.", "quote": "The CAISO’s ongoing Large Load stakeholder initiative will become the vehicle for CAISO reforms to address the Order to Show Cause.", "pg": 5},
+    {"point": "Most tariff changes should take effect on approval; software-dependent items such as new settlement charges may take longer.", "quote": "The CAISO expects that the vast majority of its tariff revisions will be able to become effective as soon as approved by the Commission.", "pg": 5},
+    {"point": "The schedule runs a straw proposal in August, a draft final in September, governing body votes October 20 and 28, and a November 16 FERC filing.", "quote": "two discrete proposals: a straw proposal in August and draft final proposal in September, before seeking Western Energy Market Governing Body and Board of Governors approval", "pg": 7},
+    {"point": "CAISO and the PTOs keep the existing split of responsibilities and coordinate weekly.", "quote": "including multiple weekly meetings among various teams of subject-matter experts for the categories of issues identified by the Commission.", "pg": 9}
+  ],
+  "throughLine": {
+    "relation": "procedural",
+    "anchors": ["e-10-show-cause", "e-10-application-study-process"],
+    "text": "Requests the up-to-90-day abeyance option in the E-10 CAISO show cause order, offering the description of a future section 205 filing and the timeline the order required. FERC granted it August 14, 2026."
+  },
+  "themes": ["procedure", "study"]
+}

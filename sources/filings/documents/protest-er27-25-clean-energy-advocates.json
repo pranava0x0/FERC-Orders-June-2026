@@ -1,0 +1,19 @@
+{
+  "slug": "protest-er27-25-clean-energy-advocates",
+  "summary": "Sierra Club, NRDC, Sustainable FERC Project, regional clean energy groups and two community organizations protest MISO's LARS filing as a permanent parallel process that shifts costs to other customers and DPP generators, discriminates, and departs from the show cause order's proximity test.",
+  "ask": "Reject all of LARS and direct MISO to work with stakeholders on a different proposal; alternatively issue a deficiency letter, or at least delay effectiveness until MISO files its promised cost provisions.",
+  "points": [
+    {"point": "The groups say LARS is a new permanent parallel process that shifts costs, creates reliability concerns and allows discrimination.", "quote": "MISO's LARS proposal is a new, permanent parallel interconnection study process that will shift costs from large loads to other existing and future transmission customers and resource owners", "pg": 3},
+    {"point": "They note MISO's own account that LARS adopts no cost allocation methodology and defers cost shifting to later filings.", "quote": "LARS adopts no cost allocation methodology", "pg": 13},
+    {"point": "Load-study and common violations go to Baseline Reliability or Other projects paid by all loads in the pricing zone, while DPP generators fund their own upgrades.", "quote": "LARS, therefore, takes a category of costs usually assigned to generators and assigns them to existing load.", "pg": 14},
+    {"point": "They argue the standing injection persists after the paired load leaves, and zonal customers bear the cost.", "quote": "LARS creates a standing injection that was studied only on the assumption of a matched withdrawal", "pg": 22},
+    {"point": "They say LARS would give a limited number of projects preferential access each year, with vertically integrated utilities deciding which.", "quote": "LARS sets up a generation and load study process that would offer a limited number of projects preferential access to the transmission system each year, year after year.", "pg": 22},
+    {"point": "They say MISO invented an expansive definition of proximate instead of following the order's substation test.", "quote": "MISO invents a new expansive definition of \"proximate\" in an attempt to demonstrate that its proposal is responsive to the Commission's Order.", "pg": 37},
+    {"point": "They argue siloed parallel processes raise upgrade costs and bias risk and favor integrated planning such as GALIP.", "quote": "meeting every new need with a new, siloed interconnection process (as MISO has done with ERAS, the ZGIA, now LARS, and soon the LLPR) significantly increases network upgrade costs", "pg": 45}
+  ],
+  "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause", "e-8-cost-recovery-agreement"], "text": "Protests MISO's LARS filing against the E-8 show cause order's cost-shifting concern and its definition of electrically proximate large load, and notes the cost recovery agreement is deferred."},
+  "themes": ["cost", "proximate", "study"],
+  "figures": [
+    {"label": "Transmission investment approved in MTEP26, per the protest", "value": 14.7, "unit": "billion USD", "quote": "approximately $14.7 billion of transmission investment approved in that cycle", "pg": 4}
+  ]
+}

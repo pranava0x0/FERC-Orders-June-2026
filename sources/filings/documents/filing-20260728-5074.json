@@ -1,0 +1,39 @@
+{
+ "slug": "filing-20260728-5074",
+ "summary": "Wabash Valley Power Association asks FERC to issue an errata to the E-7 show cause order removing it from the caption and listing it with the non-jurisdictional transmission owners, since it ceased to be a public utility on January 1, 2025.",
+ "ask": "Issue an errata removing Wabash Valley from the caption of EL26-67-000 and adding it to the list of non-jurisdictional PJM transmission owners in footnote 13.",
+ "points": [
+  {
+   "point": "Wabash says it ceased to be a public utility on January 1, 2025 because it is wholly owned by exempt cooperatives.",
+   "quote": "January 1, 2025 because it became exempt from the Federal Power Act as a result of being wholly owned by exempt entities.",
+   "pg": 4
+  },
+  {
+   "point": "Wabash says it is similarly situated to the non-jurisdictional owners FERC listed in footnote 13.",
+   "quote": "it is a PTO that is similarly situated to all of the other non-jurisdictional entities listed in footnote 13 of the Order.",
+   "pg": 4
+  },
+  {
+   "point": "Wabash does not dispute the need to address large-load and co-located load service in organized markets.",
+   "quote": "it does not dispute the need for the Commission to address issues surrounding service to large load and co-located load within organized markets and elsewhere.",
+   "pg": 3
+  },
+  {
+   "point": "The requested errata would remove Wabash from the caption and add it to footnote 13.",
+   "quote": "removes WVPA from the caption of Docket No. EL26-67-000, which intended to identify only PJM and jurisdictional PTOs",
+   "pg": 5
+  }
+ ],
+ "throughLine": {
+  "relation": "procedural",
+  "anchors": [
+   "e-7-show-cause"
+  ],
+  "text": "Seeks correction of the E-7 show cause order's list of respondents; FERC granted the change in its August 13, 2026 errata notice."
+ },
+ "themes": [
+  "procedure",
+  "retail"
+ ],
+ "figures": []
+}

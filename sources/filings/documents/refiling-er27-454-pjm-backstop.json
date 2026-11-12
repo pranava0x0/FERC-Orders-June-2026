@@ -1,0 +1,77 @@
+{
+  "slug": "refiling-er27-454-pjm-backstop",
+  "summary": "PJM refiles under FPA section 205 its October 29 amendments to the Reliability Backstop Procurement, responding to the September 29 order on cost allocation, load-serving entity credit and exit responsibility, and conditionally seeks waiver of two shortage rules in Attachment DD.",
+  "ask": "Accept the RBP amendments effective February 28, 2027 (one record January 29, 2027), issue an order by January 29, 2027, and grant a one-time waiver of Attachment DD sections 16.2 and 16.3.",
+  "points": [
+    {
+      "point": "The refiling matches the October 29 filing in ER27-330 and changes only its metadata code from compliance to section 205.",
+      "quote": "substantively identical to the October 29, 2026 filing submitted in Docket No. ER27-330-000",
+      "pg": 1,
+      "pgEnd": 2
+    },
+    {
+      "point": "PJM asks for a February 28, 2027 effective date, one record on January 29, 2027, and an order by January 29, 2027.",
+      "quote": "PJM is also requesting that the Commission issue an order on all aspects of this filing no later than January 29, 2027",
+      "pg": 2
+    },
+    {
+      "point": "PJM seeks conditional waiver of shortage investigation and backstop declaration rules if the 2029/2030 auction clears short.",
+      "quote": "conditionally requests waiver of the requirement in Tariff, Attachment DD, section 16.2",
+      "pg": 3
+    },
+    {
+      "point": "Electric Distributors will report incremental Large Load growth from the 2026 peak to the 2028/2029 expected peak, replacing the Load Adjustment proxy.",
+      "quote": "rather than relying on Load Adjustment data as a proxy for Large Load growth, PJM is proposing to require Electric Distributors",
+      "pg": 7
+    },
+    {
+      "point": "PJM allocates the Initial RBP Target by zone share of incremental Large Load growth, net of bilateral offsets, fixed for the 15-year commitment.",
+      "quote": "That allocation to the zone/area will remain fixed throughout the 15-year RBP commitment period.",
+      "pg": 12,
+      "pgEnd": 13
+    },
+    {
+      "point": "PJM cuts the RBP Credit Rate from $1.5 million per MW to 40 percent of net present value, about $686,000 per MW at the cap.",
+      "quote": "the proposed methodology produces an illustrative RBP Credit Rate of approximately $686,000 per MW.",
+      "pg": 23
+    },
+    {
+      "point": "PJM lengthens LSE collateral notice to at least 75 days and broadens acceptable collateral forms.",
+      "quote": "PJM is proposing that LSEs be provided at least 75 days",
+      "pg": 26
+    },
+    {
+      "point": "An LSE that withdraws from PJM stays responsible for its remaining RBP Charges, rather than the exiting Transmission Owner.",
+      "quote": "such Load Serving Entity shall be responsible for the remainder of the RBP Charges allocated to it",
+      "pg": 32
+    }
+  ],
+  "throughLine": {
+    "relation": "parallel",
+    "anchors": [
+      "e-7-adequacy-report"
+    ],
+    "text": "Revises the backstop procurement docket's cost allocation, credit and exit terms after FERC's September 29 order, the capacity-adequacy track running beside E-7's report on how PJM will ensure generation for large loads."
+  },
+  "themes": [
+    "adequacy",
+    "cost",
+    "credit"
+  ],
+  "figures": [
+    {
+      "label": "Illustrative revised RBP credit rate at the $555/MW-day cap",
+      "value": 686000,
+      "unit": "USD per MW",
+      "quote": "approximately $686,000 per MW",
+      "pg": 23
+    },
+    {
+      "label": "Large Load definition threshold",
+      "value": 50,
+      "unit": "MW",
+      "quote": "cumulative peak load of 50 MW or greater at a single electrical site",
+      "pg": 7
+    }
+  ]
+}

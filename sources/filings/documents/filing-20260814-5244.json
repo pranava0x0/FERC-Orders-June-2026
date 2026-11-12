@@ -1,0 +1,19 @@
+{
+ "slug": "filing-20260814-5244",
+ "summary": "PJM files a supplemental affidavit of Danielle Croop that replaces the examples of how its Reliability Backstop Procurement selects offers, and argues the supplement does not reset FERC's action clock.",
+ "ask": "Continue to act on the June 30, 2026 backstop filing by the requested action date of September 29, 2026.",
+ "points": [
+  {"point": "PJM says the June 30 example did not show least-cost selection by Delivery Year, so it submits corrected examples.", "quote": "the example provided in Exhibit 1 of Mrs. Croop’s June 30, 2026 affidavit did not accurately demonstrate the least cost selection by Delivery Year", "pg": 1},
+  {"point": "PJM argues the supplement changes no rate, term or condition and so is not an amendment.", "quote": "the supplemental affidavit merely updates the examples, also shown in redline, that were included in Mrs. Croop’s June 30, 2026 affidavit and does not revise or amend a proposed rate schedule, term, or condition.", "pg": 1},
+  {"point": "PJM asks FERC to keep the September 29, 2026 action date.", "quote": "the Commission should continue to issue an order by the requested action date of September 29, 2026.", "pg": 2},
+  {"point": "The affidavit corrects an inverted numerator and denominator in the MW-weighted average levelized cost explanation.", "quote": "incorrectly inverted the numerator and denominator", "pg": 5},
+  {"point": "Offers are levelized at a 9.5% after-tax WACC and selected under a maximum willingness to pay, illustrated at $100/MW-day against the proposed $555/MW-day.", "quote": "rather than a maximum willingness to pay of $555/MW-day as PJM is proposing to use for the RBP, we assume that the maximum willingness to pay is $100/MW-day", "pg": 8},
+  {"point": "In Example 3 the procurement clears 100 MW short of the 6,800 MW target to stay under the price cap.", "quote": "the procurement would clear 100 MW short the target, with the maximum UCAP MW procured equal to 6,700 MW for the 2031/32 Delivery Year.", "pg": 12}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report"], "text": "PJM's separate backstop procurement in ER26-3380 is a supply-side adequacy mechanism; the E-7 order asks PJM for a report on ensuring adequate generation for large loads."},
+ "themes": ["adequacy"],
+ "figures": [
+  {"label": "Illustrative backstop procurement target", "value": 6800, "unit": "MW", "quote": "the Final RBP Target for procurement is 6,800 MW", "pg": 8},
+  {"label": "PJM proposed maximum willingness to pay", "value": 555, "unit": "$/MW-day", "quote": "a maximum willingness to pay of $555/MW-day as PJM is proposing to use for the RBP", "pg": 8}
+ ]
+}

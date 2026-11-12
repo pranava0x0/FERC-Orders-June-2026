@@ -1,0 +1,22 @@
+{
+  "slug": "abeyance-el26-71-caiso",
+  "summary": "FERC grants the abeyance requests of CAISO, DCR Transmission and the Joint Participating Transmission Owners and rescinds the show cause order against Six Cities and WAPA. The proceeding is held 90 days, with responses now due November 16, 2026.",
+  "ask": null,
+  "points": [
+    {"point": "FERC grants the Six Cities and WAPA rescission motions because both are exempt from FERC jurisdiction under FPA section 201(f).", "quote": "the Show Cause Order is rescinded as against each of the Six Cities and WAPA and the caption of the proceeding has been amended", "pg": 1},
+    {"point": "CAISO commits to a November 16, 2026 FPA section 205 filing after Board and governing body approval by October 28.", "quote": "CAISO states it will expedite the process to obtain CAISO Board of Governors and Western Energy Market Governing Body approval as necessary by October 28, 2026", "pg": 1},
+    {"point": "The Joint PTOs plan coordinated TO Tariff filings covering study procedures, transparency, cost recovery and financial security.", "quote": "their filings will present revisions to their TO Tariffs to include study, application, and operational procedures for the interconnection of large loads", "pg": 1},
+    {"point": "FERC finds the abeyance descriptions meet the show cause order's requirement for a described future filing and a date.", "quote": "have provided robust descriptions of the FPA section 205 filings they anticipate making by November 16, 2026", "pg": 1},
+    {"point": "Responses move to November 16, 2026 and answers to December 16, 2026.", "quote": "responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026.", "pg": 1},
+    {"point": "A respondent that files its section 205 proposal by November 16 has its show cause response suspended.", "quote": "the obligation of the respondent(s) who have made such an FPA section 205 filing to file a response to the Show Cause Order will be suspended", "pg": 1}
+  ],
+  "throughLine": {
+    "relation": "procedural",
+    "anchors": ["e-10-show-cause"],
+    "text": "Applies the abeyance option in the E-10 CAISO show cause order, which allowed up to 90 days for stakeholder work, and moves the 60-day response date from August 17 to November 16, 2026."
+  },
+  "themes": ["procedure"],
+  "figures": [
+    {"label": "Abeyance period granted in EL26-71", "value": 90, "unit": "days", "quote": "we grant the Abeyance Motions and hold this proceeding in abeyance for 90 days", "pg": 1}
+  ]
+}

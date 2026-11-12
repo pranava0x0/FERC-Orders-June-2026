@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20260803-5261",
+ "summary": "Silver Run Electric, a PJM transmission owner, moves for a 90-day full abeyance of the E-7 show cause deadline to November 16, 2026, and describes the tariff revisions it expects to propose with PJM through the stakeholder process.",
+ "ask": "Hold the proceeding in abeyance for 90 days from August 17, 2026, extend Silver Run's response to November 16, 2026, shorten the answer period to five days, and rule by August 13, 2026.",
+ "points": [
+  {"point": "Silver Run asks for a 90-day full abeyance to coordinate with PJM and prepare a section 205 filing.", "quote": "Silver Run seeks a 90-day full abeyance of the current 60-day deadline to respond to all issues raised in the Show Cause Order", "pg": 1},
+  {"point": "It expects revisions on large load definition, readiness requirements, alternative transmission technology evaluation and a pro forma service agreement.", "quote": "the definition of a large load; readiness and information requirements; the evaluation of alternative transmission technologies; a pro forma service agreement memorializing operational terms", "pg": 5},
+  {"point": "It expects cost recovery, financial security and rate provisions to mitigate cost shifting, and a reasonable implementation period.", "quote": "cost recovery, associated financial security, and rate treatment provisions intended to mitigate cost shifting among transmission customers", "pg": 5},
+  {"point": "Silver Run says its filing depends on PJM's stakeholder process because it runs none of its own.", "quote": "Silver Run does not administer a stakeholder process of its own through which the issues raised in the Show Cause Order could be resolved independently.", "pg": 7}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-show-cause", "e-7-application-study-process", "e-7-cost-recovery-agreement"], "text": "Seeks to move the E-7 60-day show cause deadline to November 16, 2026, outlining study process and cost recovery revisions it expects to file; FERC granted it on August 14, 2026."},
+ "themes": ["procedure", "study", "cost", "credit"],
+ "figures": []
+}

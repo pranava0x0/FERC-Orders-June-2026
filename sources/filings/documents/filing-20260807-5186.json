@@ -1,0 +1,13 @@
+{
+ "slug": "filing-20260807-5186",
+ "summary": "The Organization of MISO States answers in support of the MISO abeyance motion, on the condition that the stakeholder process and later filings fully address the issues in the E-8 order.",
+ "ask": "Grant the abeyance, without narrowing the scope of FERC's inquiry or prejudging whether MISO's filings resolve each issue.",
+ "points": [
+  {"point": "OMS supports abeyance because the issues are interconnected and suited to a stakeholder process followed by section 205 filings.", "quote": "the issues identified by the Commission’s Show Cause Order are significant, highly interconnected, and best addressed through a coordinated stakeholder process", "pg": 1},
+  {"point": "OMS conditions its support on full treatment of the Commission's issues and no prejudgment of resolution.", "quote": "Granting abeyance should not narrow the scope of the Commission’s inquiry or prejudge whether any particular issue has been adequately resolved", "pg": 2},
+  {"point": "OMS lists the issues it wants addressed, including cost transparency, cost shifting if load does not materialize, flexible service and alternative transmission technologies.", "quote": "addressing the potential for inappropriate cost shifting when anticipated load does not ultimately materialize or materializes at a different scale or schedule than expected", "pg": 4},
+  {"point": "OMS says MISO's stakeholder workstreams so far have favored issues supported by parties interested in developing and serving large loads.", "quote": "workstreams prioritized by MISO and stakeholders to date have been limited to those issues supported by parties largely interested in developing and serving large loads.", "pg": 4}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause", "e-8-cost-recovery-agreement"], "text": "Supports the MISO abeyance request that postponed the E-8 show cause deadline, while asking that cost-shift and transparency directives get full treatment in MISO's coming filings."},
+ "themes": ["procedure", "cost"]
+}

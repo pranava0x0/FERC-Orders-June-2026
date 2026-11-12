@@ -1,0 +1,22 @@
+{
+ "slug": "report-el26-70-miso",
+ "summary": "MISO files the 30-day informational report the E-8 order required. It describes the state-led resource adequacy framework, near-term surpluses, ERAS and JTIQ results, and two new processes (ZGIA and a parallel load and generation study) for large-load speed to power.",
+ "ask": "Accept the report as compliance with the 30-day informational report requirement of the Show Cause Order, and grant any needed waiver.",
+ "points": [
+  {"point": "MISO says its current framework suits traditional load growth but new large loads bring challenges that need new tools.", "quote": "The unique nature of certain new large loads and the need to help ensure speed to power, however, brings new challenges that require MISO to continue to work with its states", "pg": 1},
+  {"point": "MISO says LSEs should not build local transmission or generation for speculative loads.", "quote": "It is not prudent for load serving entities to build local transmission, or generation, for speculative loads.", "pg": 2},
+  {"point": "MISO plans a Zero Injection Generator Interconnection Agreement for generation serving load at the same substation.", "quote": "facilitate faster interconnection of generation resources that serve only Load connected to the same substation and will not inject energy further onto the Transmission System.", "pg": 2},
+  {"point": "MISO will develop a Large Load Parallel Study Process and file it under section 205.", "quote": "intends to submit a Section 205 filing to the Commission codifying the Large Load Parallel Study Process in the Tariff", "pg": 3},
+  {"point": "MISO says states are primarily responsible for resource adequacy.", "quote": "States are primarily responsible for resource adequacy, which involves overseeing Load Serving Entities (“LSEs”) and ensuring LSEs plan for and secure enough power", "pg": 3},
+  {"point": "The 2026 OMS-MISO Survey projects sufficient capacity for five years while LSE load growth runs 3.1% to 5.1% a year.", "quote": "Compound Annual Growth Rate (“CAGR”) projected between 3.1% and 5.1% over five years.", "pg": 4},
+  {"point": "ERAS has moved 40 projects and 19 GW through accelerated interconnection.", "quote": "To date, 40 projects and 19 GWs of generation have completed the accelerated ERAS process", "pg": 7},
+  {"point": "MISO says JTIQ upgrades unlock more than 28 GW of interconnection capability on the MISO-SPP seam.", "quote": "unlock more than 28 GW of new interconnection capability along the MISO‑SPP seam", "pg": 9}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-adequacy-report"], "text": "MISO's filing under E-8 paragraph 122, the 30-day informational report on proposals to ensure resource adequacy for new large loads, with schedules of stakeholder initiatives that speed generation additions."},
+ "themes": ["adequacy", "proximate"],
+ "figures": [
+  {"label": "ERAS generation through accelerated interconnection", "value": 19, "unit": "GW", "quote": "40 projects and 19 GWs of generation have completed the accelerated ERAS process", "pg": 7},
+  {"label": "Projected MISO shortfall by 2028 cited for ERAS", "value": 4.7, "unit": "GW", "quote": "4.7 gigawatt (GW) shortfall by 2028", "pg": 6},
+  {"label": "JTIQ interconnection capability unlocked", "value": 28, "unit": "GW", "quote": "unlock more than 28 GW of new interconnection capability", "pg": 9}
+ ]
+}

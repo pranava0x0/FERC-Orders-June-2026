@@ -1,0 +1,83 @@
+{
+ "slug": "filing-20260910-5296",
+ "kind": "answer",
+ "summary": "PJM files a motion for leave to answer and answers the comments and protests on its July 31 Reliability Backstop Procurement, defending the 15-year term, $555/MW-day cap, cost allocation, LSE credit and exit rules and offering some clarifications.",
+ "ask": "Accept the answer and accept the RBP tariff revisions effective September 29, 2026, as requested.",
+ "points": [
+  {
+   "point": "PJM says no protest undermines its one-time backstop procurement as just and reasonable.",
+   "quote": "PJM’s RBP proposal is a just and reasonable and not unduly discriminatory or preferential means to procure capacity through a one-time backstop procurement.",
+   "pg": 2
+  },
+  {
+   "point": "PJM says it frames the RBP around the region's 67 million people in 13 states and the District of Columbia.",
+   "quote": "to keep the lights on for 67 million people across 13 states and the District of Columbia",
+   "pg": 3
+  },
+  {
+   "point": "PJM is open to specific adjustments in a compliance filing if FERC orders them.",
+   "quote": "adjustments to incorporate intervenors’ suggestions into the RBP proposal in a compliance filing if so ordered by the Commission.",
+   "pg": 9
+  },
+  {
+   "point": "PJM says Electric Distributors only report and administer, and do not bear RBP Charges unless they are also the LSE.",
+   "quote": "Electric Distributors perform a reporting or administrative role in the RBP",
+   "pg": 12
+  },
+  {
+   "point": "PJM ties the 15-Delivery Year maximum term to the NEDC and governors' principles.",
+   "quote": "the fixed, maximum 15-Delivery Year term is informed by the NEDC/PJM Governors’ Principles",
+   "pg": 31
+  },
+  {
+   "point": "PJM defends the $555/MW-day UCAP cap as a MW-weighted average on a pay-as-bid procurement.",
+   "quote": "PJM has proposed that the levelized procurement cost of all selected RBP Sell Offers not exceed a maximum willingness to pay of $555/MW-day UCAP, on a MW-weighted average basis over all Delivery Years of the RBP.",
+   "pg": 36
+  },
+  {
+   "point": "PJM defends sizing the cost allocation on a snapshot of the 2028/2029 shortfall.",
+   "quote": "The Commission has long held that relying on snapshots is an acceptable and appropriate method for establishing baselines or targets,",
+   "pg": 60
+  },
+  {
+   "point": "PJM defends the LSE collateral requirement as protecting other ratepayers.",
+   "quote": "the basic need for a collateral requirement should not be controversial.",
+   "pg": 74
+  },
+  {
+   "point": "PJM says its Transmission Owner exit terms give enough notice.",
+   "quote": "None of these arguments render PJM’s proposed Tariff revisions unjust and unreasonable.",
+   "pg": 95
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-7-adequacy-report",
+   "e-7-cost-recovery-agreement"
+  ],
+  "text": "Defends PJM's Reliability Backstop Procurement in ER26-3380, the capacity adequacy and cost allocation track that runs beside E-7's request for a report on ensuring adequate generation."
+ },
+ "themes": [
+  "adequacy",
+  "cost",
+  "credit",
+  "retail"
+ ],
+ "figures": [
+  {
+   "label": "RBP maximum willingness to pay",
+   "value": 555,
+   "unit": "$/MW-day",
+   "quote": "a maximum willingness to pay of $555/MW-day UCAP",
+   "pg": 36
+  },
+  {
+   "label": "Maximum RBP commitment term",
+   "value": 15,
+   "unit": "delivery years",
+   "quote": "the fixed, maximum 15-Delivery Year term",
+   "pg": 31
+  }
+ ]
+}

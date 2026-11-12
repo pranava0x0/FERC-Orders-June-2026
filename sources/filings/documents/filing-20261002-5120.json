@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20261002-5120",
+ "summary": "Six large industrial customer groups answer the protests of MISO's large-load reliability filing and defend its grandfathering provisions as protecting existing manufacturers, with cost-shift concerns left to MISO's later filing.",
+ "ask": "Accept MISO's grandfathering and transition provisions and treat cost-shifting objections as belonging to MISO's forthcoming cost-shift filing.",
+ "points": [
+  {"point": "The Large Energy Users say the grandfathering terms balance reliability against commercial certainty for existing manufacturers.", "quote": "strike a balance between managing reliability issues caused by new Large Loads, while protecting commercial certainty for existing manufacturers and industrial customers.", "pg": 2, "pgEnd": 3},
+  {"point": "They point to the E-8 order's statement that the proceeding aims at prospective reforms, not disruption of existing arrangements.", "quote": "This proceeding is not intended to disrupt existing commercial arrangements, but rather to establish prospective reforms.", "pg": 3},
+  {"point": "They describe MISO's two exempt categories: service commencement by December 4, 2026, and MTEP 2026 or EPR-linked projects.", "quote": "Large Loads with a Service Commencement Date on or prior to December 4, 2026", "pg": 4},
+  {"point": "They say the protestors have not shown that long-standing industrial loads cause the reliability concerns.", "quote": "The Show Cause Order is aimed at recent and exponential growth of Large Loads, not at large customers who have been reliably participating in MISO for decades.", "pg": 5},
+  {"point": "They say cost-shift concerns belong in MISO's separate cost-shift filing, due November 16, 2026.", "quote": "these concerns are more appropriately addressed in a future filing specifically focused on cost shifting risk among transmission customers.", "pg": 6},
+  {"point": "They argue the proposal reflects the stakeholder process and deserves deference.", "quote": "The Commission affords an appropriate amount of deference to consensus-based proposals developed during the stakeholder process.", "pg": 7}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause", "e-8-cost-recovery-agreement"], "text": "Answers protests of MISO's first post-E-8 filing, citing the order's instruction to protect existing commercial arrangements and placing cost-shift protections in MISO's separate filing due under the abeyance deadline."},
+ "themes": ["registry", "cost"]
+}

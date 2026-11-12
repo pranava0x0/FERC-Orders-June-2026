@@ -1,0 +1,11 @@
+{
+  "slug": "comments-er27-25-arkansas-psc",
+  "summary": "The Arkansas Public Service Commission files short comments supporting MISO's Large Load Addition Resource Study filing, adopting the Mississippi and Louisiana commissions' comments and calling LARS a reasonable response to the show cause order.",
+  "ask": "Accept MISO's LARS filing.",
+  "points": [
+    {"point": "The Arkansas PSC supports LARS and joins the Mississippi and Louisiana commissions' comments.", "quote": "The APSC supports MISO's filing to establish the LARS process, and agrees with the comments made by the Mississippi Public Service Commission and the Louisiana Public Service Commission.", "pg": 1},
+    {"point": "It says LARS aligns with the show cause order's requirements.", "quote": "AR agrees that LARS is a reasonable response to and aligns with the requirements of the Commission's Show Cause Order.", "pg": 1}
+  ],
+  "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "Supports MISO's LARS filing as an answer to the E-8 show cause order, citing the order's preliminary finding on generator interconnection study procedures for electrically proximate large loads."},
+  "themes": ["proximate", "study"]
+}

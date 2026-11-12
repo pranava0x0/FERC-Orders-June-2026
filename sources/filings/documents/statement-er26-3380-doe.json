@@ -1,0 +1,20 @@
+{
+ "slug": "statement-er26-3380-doe",
+ "summary": "The U.S. Department of Energy intervenes in PJM's backstop procurement docket and supports FERC's September 29 order. It urges PJM to file a revised Section 205 tariff by October 29, 2026 that allocates costs to the large loads that caused the shortfall.",
+ "ask": "Have PJM adopt FERC's recommended reforms in a revised Section 205 tariff on or before October 29, 2026, covering cost allocation without free ridership, large load identification, and a build, bring or buy path.",
+ "points": [
+  {"point": "DOE ties its position to the Ratepayer Protection Pledge, under which large loads fund the generation and infrastructure they require.", "quote": "large electric energy loads—not American households or other business ratepayers—must fund the electric energy generation and related infrastructure that such new large load projects require.", "pg": 1},
+  {"point": "PJM missed its reliability requirement by 6,623 MW in the 2027/28 auction and 6,831 MW in the 2028/29 auction.", "quote": "PJM then fell 6,831 MW short for its 2028/29 delivery year auction in July 2026.", "pg": 5},
+  {"point": "DOE commends FERC's separate proceeding requiring the six RTOs and ISOs to justify or reform large load interconnection rules.", "quote": "to require the six regional transmission organizations or independent system operators under its jurisdiction to justify or reform their rules governing how data centers, manufacturing facilities, and other large energy users connect to the electric grid.", "pg": 5},
+  {"point": "PJM's two-year lookback may not allocate capacity costs to all large loads that caused the shortfall.", "quote": "PJM’s cost allocation methodology (looking back only two years) does not appear to sufficiently allocate the costs of new capacity to serve all large loads that have caused the current resource adequacy shortfall.", "pg": 6},
+  {"point": "PJM needs project-level large load identification to track whether projects enter service, are delayed or cancelled.", "quote": "PJM should have sufficient data to accurately identify the material large load projects reflected in its forecasts and monitor their development.", "pg": 7},
+  {"point": "DOE supports crediting new capacity against the backstop target and asks PJM to create a clear path for build, bring or buy options.", "quote": "PJM’s current RBP process does not establish a clear path for such optionality and should be revised to do so.", "pg": 8}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-cost-transparency", "e-7-adequacy-report"], "text": "Statement in PJM's backstop docket ER26-3380. It praises the June show cause proceedings and presses large load identification and cost allocation themes that appear in the E-7 cost transparency directive."},
+ "themes": ["adequacy", "cost", "registry"],
+ "figures": [
+  {"label": "PJM 2027/28 auction shortfall", "value": 6623, "unit": "MW", "quote": "in December 2025, PJM fell 6,623", "pg": 4},
+  {"label": "PJM 2028/29 auction shortfall", "value": 6831, "unit": "MW", "quote": "PJM then fell 6,831 MW short", "pg": 5},
+  {"label": "PJM real-time energy use 2025", "value": 810.9, "unit": "TWh", "quote": "from approximately 743.0 TWh to 810.9 TWh", "pg": 4}
+ ]
+}

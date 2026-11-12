@@ -1,0 +1,12 @@
+{
+ "slug": "filing-20260709-3012",
+ "summary": "FERC's Secretary issues an errata notice correcting the caption and footnote 10 of the E-11 ISO-NE show cause order so Vermont Electric Cooperative is listed among the non-jurisdictional Participating Transmission Owners.",
+ "ask": null,
+ "points": [
+  {"point": "The caption wrongly included Vermont Electric Cooperative, and footnote 10 omitted it.", "quote": "The caption in the order inadvertently included “Vermont Electric Cooperative, Inc.” and footnote 10 inadvertently omitted “Vermont Electric Cooperative, Inc.”", "pg": 1},
+  {"point": "The notice deletes VEC from the caption and adds it to footnote 10.", "quote": "This errata notice hereby corrects the caption, as shown above, by deleting “Vermont Electric Cooperative, Inc.”", "pg": 1},
+  {"point": "FERC keeps authority to review non-public-utility formula rates as part of ISO-NE's Tariff.", "quote": "the Commission retains the authority to review each entity’s formula rates as a component of ISO-NE’s Tariff in an order to show cause directed towards ISO-NE", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-11-show-cause"], "text": "Corrects who counts as a Participating Transmission Owner that must respond to the E-11 show cause order; ISO-NE itself must still respond about non-public utilities' Tariff provisions."},
+ "themes": ["procedure"]
+}

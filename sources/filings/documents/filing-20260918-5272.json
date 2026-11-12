@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20260918-5272",
+ "summary": "Four Midwest municipal and cooperative power agencies intervene and comment on MISO's large-load reliability requirements, seeking two clarifications: the rules apply only to transmission-connected loads, and they do not unduly burden Transmission Customers.",
+ "ask": "Have MISO clarify scope and customer burden, or direct it by deficiency letter and Tariff revisions to do so.",
+ "points": [
+  {"point": "The Midwest TDUs support swift MISO action and ask for two clarifications.", "quote": "Midwest TDUs therefore seek clarification on two issues", "pg": 2},
+  {"point": "First, the requirements should reach only loads on the MISO Transmission System, not distribution-connected loads.", "quote": "apply to those Large Loads interconnected to the MISO Transmission System (and not to loads interconnected at to the distribution system).", "pg": 2},
+  {"point": "Second, Transmission Customers should be able to rely on agreements with Large Loads to show compliance without undue burden.", "quote": "But additional clarity is needed to ensure that Transmission Customers can rely on these agreements to avoid undue burdens.", "pg": 2},
+  {"point": "They ask FERC to order revisions through a deficiency letter if MISO does not clarify on its own.", "quote": "To the extent that MISO does not clarify these issues on its own, the Commission should direct it to do so in a deficiency letter.", "pg": 2},
+  {"point": "They say the word \"behind\" in MISO's Large Load definition could be read to reach loads behind a distribution transformer.", "quote": "the term “behind” could potentially be read broadly to encompass anything behind such Point(s) of Withdrawal", "pg": 7}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "Comments on MISO's first filing after the E-8 order. They invoke the order's suggested large-load definition, which refers to interconnection at the transmission system, to argue the scope should be stated explicitly."},
+ "themes": ["registry", "cost"]
+}

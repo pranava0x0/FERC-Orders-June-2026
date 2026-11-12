@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20260804-5159",
+ "summary": "Constellation answers the Indicated PJM Transmission Owners' request for clarification, opposing any use of the Point of Change in Ownership for co-located load and asking that eligibility terms for electrically proximate load not disqualify large loads.",
+ "ask": "Deny the Transmission Owners' clarification request; if granted, make clear PJM and the owners must propose terms that encourage new transmission services and speedy large load interconnection.",
+ "points": [
+  {"point": "Constellation says it responds only to the clarification request and calls the rehearing arguments premature.", "quote": "Exelon and FirstEnergy’s arguments are premature and barred by Rule 713 of the Commission’s Rules of Practice and Procedure.", "pg": 1},
+  {"point": "It calls the Point of Change in Ownership request a collateral attack on prior FERC rulings in the co-location dockets.", "quote": "This request for clarification is a thinly-veiled collateral attack on the Commission’s previous rulings in Docket Numbers ER26- 1088-000 and ER26-1479-000.", "pg": 2},
+  {"point": "It asks FERC to clarify that eligibility requirements must not be so prescriptive that they disqualify large loads.", "quote": "any eligibility requirements PJM and the Transmission Owners propose in their initial filings must not be so prescriptive as to improperly disqualify large loads", "pg": 2},
+  {"point": "It also asks that no reference point be used to define electrically proximate large load in a way that undermines speedy interconnection.", "quote": "may not use the Point of Change in Ownership, or any other point of reference, to define “electrically proximate large load” in a manner that likewise undermines speedy interconnection", "pg": 2}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-7-show-cause", "e-12-define-large-load"], "text": "Answer to the Transmission Owners' E-7 clarification request on how large load and electrically proximate load are defined relative to the point of interconnection."},
+ "themes": ["proximate", "registry", "procedure"],
+ "figures": []
+}

@@ -1,0 +1,21 @@
+{
+ "slug": "filing-20260918-5397",
+ "summary": "Seven public interest organizations protest MISO's large-load reliability filing, arguing its exemptions leave about 30 GW free of ramp and ride-through rules, that critical details sit in manuals, and that FERC should reject it.",
+ "ask": "Reject MISO's Interconnection Reliability Requirements filing as not just and reasonable.",
+ "points": [
+  {"point": "The organizations say the filing lets at least 30 GW of large load ramp fast and trip offline without limits.", "quote": "give at least 30 gigawatts (“GW”) of large load, though likely more, an unrestricted ability to ramp at eye-watering speeds and trip offline unexpectedly", "pg": 1},
+  {"point": "MISO would fully exempt loads in service by December 4, 2026 and partly exempt loads tied to MTEP 2026 or EPR projects.", "quote": "large loads with a Service Commencement Date on or prior to December 4, 2026 will be entirely exempt from any reliability requirements", "pg": 2},
+  {"point": "They say the exemptions go beyond the Show Cause Order and shift cost from large loads to other customers.", "quote": "MISO’s proposed exemptions go far beyond what the Commission’s Show Cause Order directed, represent a broad cost shift from large loads to other MISO customers", "pg": 2},
+  {"point": "They cite a PJM event in which 3.8 GW of load tripped, about a tenth of the load MISO would exempt.", "quote": "PJM recently narrowly averted blackouts when 3.8 GW of load–a mere tenth of the load MISO proposes to exempt–tripped offline instantaneously.", "pg": 4},
+  {"point": "They argue MISO has not shown any study of the reliability effect of the exemptions.", "quote": "if MISO has conducted any studies or analysis of the reliability impact of its proposed exemptions.", "pg": 3},
+  {"point": "They object that most critical restrictions sit in Business Practices Manuals, which limits enforcement.", "quote": "MISO proposes to put most of the critical restrictions of the IRR Filing in Business Practices Manuals (“BPMs”).", "pg": 2},
+  {"point": "An attached declaration puts the exempt load near a quarter of MISO's current summer peak.", "quote": "This makes 30,000 MW more than 24% of MISO’s current peak summer demand, and 20% of MISO’s peak summer demand with the new large loads in-service.", "pg": 29}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause", "e-8-minimum-cost-recovery-security"], "text": "Protests MISO's first filing after the E-8 order as exceeding what that order directed and shifting reliability costs to other customers, the cost-shifting concern at the core of E-8."},
+ "themes": ["registry", "cost"],
+ "figures": [
+  {"label": "Large load exempt from MISO reliability requirements", "value": 30000, "unit": "MW", "quote": "approximately 30,000 MW of large load", "pg": 29},
+  {"label": "Load that tripped offline in Northern Virginia, July 22, 2026", "value": 3800, "unit": "MW", "quote": "3,800 MW of data center demand disconnected itself from the grid", "pg": 29},
+  {"label": "MISO stated summer peak demand", "value": 123576, "unit": "MW", "quote": "is 123,576 MW", "pg": 29}
+ ]
+}

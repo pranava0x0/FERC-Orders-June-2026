@@ -1,0 +1,21 @@
+{
+  "slug": "filing-20260803-5170",
+  "kind": "motion for abeyance",
+  "summary": "DCR Transmission, owner of the 125-mile Ten West Link line between Arizona and California, asks FERC to hold the show cause proceeding in abeyance until November 16, 2026. It previews the section 205 tariff revisions it expects to propose.",
+  "ask": "Hold the proceeding, including the briefing question deadline, in abeyance for 90 days through November 16, 2026.",
+  "points": [
+    {"point": "DCRT owns the 125-mile, 500 kV Ten West Link, about 100 miles of it in Arizona but all inside the CAISO balancing authority area.", "quote": "DCRT owns and manages the 125-mile, 500 kilovolt Ten West Link Transmission Line", "pg": 2},
+    {"point": "As a transmission-only company with no load or network customers, DCRT says franchised-utility tariff provisions do not fit it.", "quote": "DCRT is not a Load Serving Entity (“LSE”), has no network customers, and every mile of its transmission facility is part of the CAISO controlled grid", "pg": 3},
+    {"point": "A large load withdrawing near the Arizona end would run against the line's prevailing westbound flows.", "quote": "a large load withdrawing energy at or near the Arizona portion of the line would run counter to those prevailing flows.", "pg": 4},
+    {"point": "DCRT questions whether the 50 MW large load threshold suits its system.", "quote": "it is not clear to DCRT that a 50 MW threshold is appropriate.", "pg": 8},
+    {"point": "DCRT plans a single-location cost data posting and a pro forma cost recovery agreement, and must resolve California and Arizona jurisdiction over construction.", "quote": "DCRT must resolve the state-level issue of which entity will have the right to construct assets interconnecting with DCRT’s line", "pg": 11},
+    {"point": "DCRT's filing would track the CAISO proposal, which the CAISO Board takes up October 28, 2026.", "quote": "DCRT’s proposed November 16, 2026 filing will address each of the OSC’s directives that implicates DCRT’s TO Tariff, based on the CAISO proposal then before the Commission.", "pg": 14},
+    {"point": "DCRT asks that the briefing question deadline also be tolled for 90 days.", "quote": "DCRT requests that the deadline to respond to the briefing questions also be tolled for 90 days.", "pg": 14}
+  ],
+  "throughLine": {
+    "relation": "procedural",
+    "anchors": ["e-10-show-cause", "e-10-application-study-process", "e-10-cost-recovery-agreement"],
+    "text": "Requests the up-to-90-day abeyance option in the E-10 CAISO show cause order and previews tariff changes on the study process, cost transparency and the cost recovery agreement. FERC granted it August 14, 2026."
+  },
+  "themes": ["procedure", "study", "retail"]
+}

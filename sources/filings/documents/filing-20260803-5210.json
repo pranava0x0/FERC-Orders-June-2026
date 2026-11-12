@@ -1,0 +1,18 @@
+{
+ "slug": "filing-20260803-5210",
+ "summary": "The six New York Transmission Owners request a full 90-day abeyance of the EL26-69 show cause proceeding. They rely on their reserved section 205 filing rights and describe planned tariff work on cost recovery, revenue crediting, rate design, the Facilities Study and operating terms.",
+ "ask": "Hold the proceeding in abeyance for 90 days from August 17, 2026, including the 60-day response deadline, with expedited action and a shortened comment period.",
+ "points": [
+  {"point": "The NYTOs file independently under section 3.10(a) of the NYISO-TO Agreement, which lets each TO file section 205 changes to recover costs and for retail access.", "quote": "section 3.10(a) confers upon each Transmission Owner the unilateral right to file with the Commission under FPA section 205", "pg": 7},
+  {"point": "They plan a cost recovery mechanism coordinated with the NYPSC, likely a pro forma agreement or tariff provisions.", "quote": "The NYTOs intend to incorporate the NYPSC's cost allocation determinations and to file with the Commission a proposed mechanism", "pg": 15},
+  {"point": "Possible terms include a minimum financial contribution plus security to protect other customers if the load does not take the expected service.", "quote": "Such arrangements may include a minimum financial contribution from the large load customer or Eligible Customer, as applicable, toward the Transmission Owner's transmission revenue requirement", "pg": 16},
+  {"point": "They will provide revenue credits where upgrade costs paid by a large load are also in rates paid by other customers.", "quote": "the NYTO will provide for a revenue credit to the extent the NYTO is recovering those Network Upgrade costs.", "pg": 17},
+  {"point": "NYISO's planned Firm and Non-Firm Withdrawal Service would need changes to billing determinants and cost allocation.", "quote": "The different forms of service may require changes in the billing determinants, billing units, demand allocators, and cost allocation mechanisms.", "pg": 20},
+  {"point": "The NYTOs will address Facilities Study process, timeline and evaluation of alternative transmission technologies in the section 205 filing.", "quote": "the NYTOs intend to address whether and how the Facilities Study process should require evaluation of alternative transmission technologies", "pg": 24}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-12-show-cause", "e-12-cost-transparency", "e-12-alternative-transmission"], "text": "Uses the E-12 order's abeyance option and previews the TO-side section 205 filing on cost recovery, revenue crediting, study procedures and alternative transmission technologies."},
+ "themes": ["procedure", "cost", "study", "retail"],
+ "figures": [
+  {"label": "Abeyance requested by New York Transmission Owners", "value": 90, "unit": "days", "quote": "request for a full 90-day abeyance", "pg": 8}
+ ]
+}

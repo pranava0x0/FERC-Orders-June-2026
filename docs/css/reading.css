@@ -39,3 +39,18 @@ footer{border-top:1px solid var(--rule);font-size:.9rem}
 
 main summary,.xref{display:inline-flex;align-items:center;min-height:44px}
 main summary{cursor:pointer;text-decoration:underline;color:var(--blue)}
+/* 2026-11: full-width text, sans throughout, the document's own reading first */
+:root{--paper:#f7f8f9;--ink:#111820;--navy:#0f1720;--blue:#0b6477;--rule:#dfe3e8;--muted:#56616d}
+header{background:#fff;border-bottom:1px solid var(--rule)}
+header a{color:var(--blue)}
+header a:first-child{font:700 clamp(1.05rem,2.4vw,1.4rem) system-ui,sans-serif;color:var(--ink)}
+header nav,main,footer{max-width:none}
+h1,h2,h3,h4,.intro,blockquote,pre{font-family:system-ui,sans-serif}
+h1,p,blockquote,pre{max-width:none}
+h2{border-top:1px solid var(--rule)}
+blockquote{font-style:italic;border-left:2px solid var(--rule)}
+.reading{margin:1rem 0 1.5rem}
+.points{padding-left:1.3rem}.points li{margin:.6rem 0}
+.anchors{display:flex;flex-wrap:wrap;gap:.4rem}
+.oa{display:inline-flex;align-items:center;min-height:36px;padding:.2rem .6rem;border:1px solid var(--rule);border-radius:6px;background:#fff;text-decoration:none;font-size:.9rem}
+.elsewhere{padding-left:1.1rem}.elsewhere .by{color:var(--muted);font-size:.88rem}

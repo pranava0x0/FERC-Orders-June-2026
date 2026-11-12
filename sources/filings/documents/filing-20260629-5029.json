@@ -1,0 +1,12 @@
+{
+ "slug": "filing-20260629-5029",
+ "summary": "An individual commenter files a short comment in EL26-68 and EL26-71 urging that any cost-allocation or stability method FERC adopts assign burdens to the large loads that cause them, and reserves rights over a proprietary framework she authored.",
+ "ask": "Consider the comment and take note of the commenter's reservation of rights over her proprietary stability and diagnostic framework.",
+ "points": [
+  {"point": "The commenter says the public record shows large-load burdens being socialized onto residential and small commercial ratepayers.", "quote": "the burdens created by these loads are being socialized onto residential and small-commercial ratepayers rather than assigned on a cost-causation basis.", "pg": 1},
+  {"point": "She urges any adopted method to assign burden to the loads that cause it.", "quote": "assigns burden to the loads that cause it and preserves reliability invariants at the point of interconnection.", "pg": 2},
+  {"point": "She reserves rights over a proprietary framework with pending patent applications and asserts no claim in these dockets.", "quote": "Commenter reserves all rights, including the right to seek appropriate relief in the proper forum.", "pg": 2}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-9-show-cause", "e-10-show-cause"], "text": "A pro se comment captioned in the SPP (EL26-68) and CAISO (EL26-71) show cause dockets that supports cost-causation assignment of large-load burdens and gives notice of a claimed proprietary interest."},
+ "themes": ["cost"]
+}

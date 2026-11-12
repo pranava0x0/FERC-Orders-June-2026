@@ -1,0 +1,17 @@
+{
+ "slug": "filing-20260720-5198",
+ "summary": "The Indicated PJM Transmission Owners request clarification, or rehearing, that the E-7 order's proposed 50 MW large load definition allows added service-specific criteria and need not be tied to the point of interconnection.",
+ "ask": "Clarify that the large load definition does not bar service-specific criteria and that PJM may define large and electrically proximate load by other reference points such as the Point of Change of Ownership, or grant rehearing.",
+ "points": [
+  {"point": "The Transmission Owners say the 50 MW definition should not prevent added criteria for the services the order contemplates.", "quote": "does not limit PJM or the PJM Transmission Owners from proposing additional criteria or reasonable distinctions between large load customers for purposes of designing and implementing the products addressed in the Order.", "pg": 5},
+  {"point": "They warn a one-size-fits-all approach would be over-inclusive and undermine speed-to-power, repeating the inflated generation queue problem.", "quote": "an overly inclusive definition of “large load” risks repeating the same flaws that occurred with inflated generation interconnection queues.", "pg": 6},
+  {"point": "They cite hyperscale computational load versus traditional customers as a distinction that may justify differently designed and priced products.", "quote": "functional distinctions between types of customers (e.g., hyperscale computational loads versus “traditional” manufacturing and commercial customers) may merit distinctions in how different products are designed, offered and priced.", "pg": 5},
+  {"point": "They ask to define large and electrically proximate load by reference points other than the point of interconnection, such as Point of Change of Ownership.", "quote": "they will have sufficient flexibility to propose other points of reference, such as the Point of Change of Ownership.", "pg": 7},
+  {"point": "They say they are not asking FERC to pick the criterion now, only to keep the point of interconnection from being required.", "quote": "the PJM Transmission Owners are not asking the Commission to decide at this time in this proceeding whether the point of interconnection or some other criteria should be used", "pg": 8}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-12-define-large-load", "e-7-application-study-process"], "text": "Rehearing and clarification request on how the E-7 order defines a large load (50 MW, above 69 kV) and an electrically proximate load, the definitional starting point for the study process directive."},
+ "themes": ["registry", "proximate", "study"],
+ "figures": [
+  {"label": "Large load threshold in the order's proposed definition", "value": 50, "unit": "MW", "quote": "with a peak load of 50 MW or greater, interconnected at a voltage above 69 kV", "pg": 5}
+ ]
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "protest-er27-25-seia-united",
+  "summary": "The Solar Energy Industries Association and Advanced Energy United protest MISO's LARS filing as unduly discriminatory because only the Associated Transmission Customer, often a vertically integrated utility, can submit an application. They also object to generator stranding risk and LARS and DPP coordination.",
+  "ask": "Reject LARS with guidance to let any qualified participant apply directly; alternatively accept it and clarify that the application role must be administered without discrimination.",
+  "points": [
+    {
+      "point": "Only the LARS Associated Transmission Customer, often a load-serving entity, can start an application.",
+      "quote": "The LARS Associated Transmission Customer is the only party that may initiate the LARS Application.",
+      "pg": 3
+    },
+    {
+      "point": "They say independent producers can join only if the utility competitor lets them, with no duty to submit.",
+      "quote": "Yes, independent power producers can participate in the LARS process",
+      "pg": 5
+    },
+    {
+      "point": "They ask FERC to reject LARS and direct a refiling that lets any qualified market participant apply directly to MISO.",
+      "quote": "reject the LARS proposal, on the grounds that the proposal is unduly discriminatory",
+      "pg": 2
+    },
+    {
+      "point": "A generator whose paired load leaves in the first fifteen years can lose its LLGIA and must re-enter the DPP.",
+      "quote": "the generator's LLGIA ultimately will be terminated and the generator must obtain new Interconnection Service through the Definitive Planning Process (DPP) to continue operating.",
+      "pg": 7
+    },
+    {
+      "point": "MISO offers only a transition period of up to one year, which they contrast with SPP's five-year HILLGA approach.",
+      "quote": "MISO proposes only a temporary transition period of up to one year",
+      "pg": 8
+    },
+    {
+      "point": "They say LARS studies leave out queued DPP projects without executed GIAs, so the two processes use different assumptions.",
+      "quote": "MISO specifically states that LARS studies will not include interconnection requests currently in the generator interconnection queue that have not executed GIAs.",
+      "pg": 10
+    },
+    {
+      "point": "In the alternative, they ask FERC to clarify that the Associated Transmission Customer must apply the same standards and timelines it uses for its own projects.",
+      "quote": "the Commission expects the LARS Associated Transmission Customer to apply the same submission standards and timelines it applies to its own similarly situated projects.",
+      "pg": 13
+    }
+  ],
+  "throughLine": {
+    "relation": "responds",
+    "anchors": [
+      "e-8-show-cause"
+    ],
+    "text": "Protests MISO's LARS filing, offered as its answer to the E-8 show cause order on electrically proximate load, as discriminatory in who may apply and uncertain for generators and queued projects."
+  },
+  "themes": [
+    "proximate",
+    "study"
+  ]
+}

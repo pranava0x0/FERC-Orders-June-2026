@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20260624-5016",
+ "summary": "A Wisconsin resident files emails with American Transmission Company as evidence that incumbents avoid evaluating reconductoring and other upgrades as cheaper alternatives to a $350 million greenfield line.",
+ "ask": "Add the attached correspondence to the record in the MISO show cause docket.",
+ "points": [
+  {"point": "The commenter ties the filing to the June 18 orders directing evaluation of alternative transmission technologies.", "quote": "the Commission's June 18, 2026 orders directing RTOs to evaluate alternative transmission technologies and upgrades to accommodate large loads", "pg": 1},
+  {"point": "The commenter asked ATC to evaluate reconductoring instead of the $350 million Viridon WISE line and says ATC did not answer.", "quote": "the incumbent utility refused to provide an answer and deflected the inquiry to the greenfield developer.", "pg": 1},
+  {"point": "The commenter presents the emails as evidence that cheaper grid-enhancing options go unevaluated.", "quote": "incumbent utilities and developers in the MISO footprint are actively avoiding the evaluation of cost-effective Grid-Enhancing Technologies and existing line upgrades", "pg": 1}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-alternative-transmission"], "text": "Public comment in the MISO docket tying a local project dispute to the E-8 directive to evaluate alternative transmission technologies in transmission service studies."},
+ "themes": ["study", "cost"],
+ "figures": [
+  {"label": "Viridon WISE greenfield line cost", "value": 350, "unit": "$ million", "quote": "Viridon's $350 million greenfield transmission line", "pg": 1}
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "slug": "rehearing-er26-3380-joint-consumer-advocates",
+ "summary": "Six consumer advocates ask FERC to rehear its order accepting PJM's Reliability Backstop Procurement. They challenge four elements: pay-as-bid market power, the $555/MW-day cap, the 15-year term and the lack of locational limits.",
+ "ask": "Grant rehearing, find the four identified RBP elements unjust and unreasonable, and direct PJM to change them in any later FPA section 205 filing.",
+ "points": [
+  {"point": "The advocates call the pay-as-bid design flawed because it permits seller-side market power and likely over-procures at high cost.", "quote": "it permits the unmitigated exercise of seller-side market power and its design seems guaranteed to ensure that PJM procures more resources than are necessary, at costs higher than are warranted.", "pg": 1},
+  {"point": "The $555/MW-day cap is borrowed from a 2028/2029 BRA reference point that was replaced by a $325/MW-day collar, and would apply for up to 15 years.", "quote": "price cap that is 70% higher and will be applied to commitment periods up to 15 times longer than was the case for the 2028/2029 BRA.", "pg": 4},
+  {"point": "They say the 15-year commitment could add about $13 billion of unneeded cost, since PJM says five years addresses the shortfall.", "quote": "could unjustly and unreasonably saddle captive ratepayers with some $13 billion in excessive and unnecessary RBP costs.", "pg": 4},
+  {"point": "They say the Order does not engage the objection that the RBP has no locational constraints, noting up to 6,831 MW against 149 GW of existing supply.", "quote": "the volume of capacity that PJM will procure through the RBP auction— up to 6,831 MW—is relatively small compared with total existing supply in PJM", "pg": 4},
+  {"point": "Resources chosen without regard to location could dilute BRA locational price signals for up to 15 years.", "quote": "those resources will participate in the BRA as price takers and will thereby diminish the effect of the BRA’s locational price signals for up to 15 years.", "pg": 5},
+  {"point": "Relief requested: rehearing, a finding that four RBP elements are unjust and unreasonable, and directed changes in a later filing.", "quote": "find unjust and unreasonable the four elements of the RBP framework identified herein by Joint Consumer Advocates; and (3) direct PJM to incorporate changes to those elements", "pg": 5}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report", "e-7-cost-recovery-agreement"], "text": "Challenges who pays for PJM's backstop capacity procurement in ER26-3380, a supply-side track running beside the E-7 show cause order, whose adequacy report and cost-recovery directive address large-load cost responsibility."},
+ "themes": ["adequacy", "cost"],
+ "figures": [
+  {"label": "RBP price cap (MW-weighted average)", "value": 555, "unit": "$/MW-day", "quote": "a $555/MW-day average price cap", "pg": 3},
+  {"label": "Price collar cap accepted for 2028/2029 BRA", "value": 325, "unit": "$/MW-day", "quote": "was just $325/MW-day", "pg": 3},
+  {"label": "Maximum RBP procurement", "value": 6831, "unit": "MW", "quote": "up to 6,831 MW", "pg": 4},
+  {"label": "Claimed excess cost of 15-year terms", "value": 13, "unit": "$ billion", "quote": "some $13 billion in excessive and unnecessary RBP costs", "pg": 4}
+ ]
+}

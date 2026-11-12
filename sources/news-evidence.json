@@ -1,6 +1,6 @@
 {
   "captured_at": "2026-08-23",
-  "note": "Verified source snippets backing the directly-quoted phrases added by the 2026-07-28 news refresh (news-tracks-plan.md): the AD26-7-000 governance track and the sc6 filing observations. Mirrors sources/voices-evidence.json, and is swept by tools/verify-quotes.mjs the same way, so no displayed quote on a track surface is unbacked. A test in tests/source-accuracy.test.mjs asserts every quoted span in a timeline event body resolves here or in the committed order corpus. Extended by the 2026-08-23 sweep with the WIRES remarks, the Maryland congressional letter (read directly from the signed PDF, not a summary) and two analyst readiness assessments. Extended 2026-10-19 with PJM committee postings, ISO-NE's proposal summary and Utility Dive's October reporting; each item names the document and page or slide it was read from. Extended 2026-10-20 with outside commentary (X posts confirmed through oEmbed, trade press, law-firm alerts, NARUC, the Maryland People's Counsel and DOE); FERC commissioner lines that come only through a press report are labeled as such in their speaker field. Extended 2026-10-30 with CAISO's statement on its Board's action, PJM's Inside Lines post and Nov 5 special Members Committee agenda, the ER27-330 transmittal letter and two rehearing requests read from the committed corpus, and three ER27-25 filings as Utility Dive quoted them.",
+  "note": "Verified source snippets backing the directly-quoted phrases added by the 2026-07-28 news refresh (news-tracks-plan.md): the AD26-7-000 governance track and the sc6 filing observations. Mirrors sources/voices-evidence.json, and is swept by tools/verify-quotes.mjs the same way, so no displayed quote on a track surface is unbacked. A test in tests/source-accuracy.test.mjs asserts every quoted span in a timeline event body resolves here or in the committed order corpus. Extended by the 2026-08-23 sweep with the WIRES remarks, the Maryland congressional letter (read directly from the signed PDF, not a summary) and two analyst readiness assessments. Extended 2026-10-19 with PJM committee postings, ISO-NE's proposal summary and Utility Dive's October reporting; each item names the document and page or slide it was read from. Extended 2026-10-20 with outside commentary (X posts confirmed through oEmbed, trade press, law-firm alerts, NARUC, the Maryland People's Counsel and DOE); FERC commissioner lines that come only through a press report are labeled as such in their speaker field. Extended 2026-10-30 with CAISO's statement on its Board's action, PJM's Inside Lines post and Nov 5 special Members Committee agenda, the ER27-330 transmittal letter and two rehearing requests read from the committed corpus, and three ER27-25 filings as Utility Dive quoted them. Extended 2026-11-12 with Utility Dive (ICF's Scheller on the backstop refiling) and two Latitude Media pieces on the post-midterm reading of the large-load record.",
   "capture_method": "federalregister.gov items were read from their full_text .txt endpoints (the FR HTML pages bot-block automated fetches; the JSON API and full_text endpoints are open). Trade-press items were fetched and their quotations transcribed as printed. ferc.gov and eLibrary stayed Cloudflare-gated throughout, so nothing here is an eLibrary confirmation.",
   "items": {
     "swett-legitimacy": {
@@ -425,6 +425,30 @@
       "evidence": "Requirements placed upon customers for interconnection should not be one size fits all but rather reflect, to the greatest degree feasible, the service requested, the facility’s operating characteristics, and its economic development impacts, with fair grandfathering principles for projects already approved for development.",
       "note": "Verbatim from the committed PDF, sources/originals/pjm-20261106-iti-letter-to-pjm-board.pdf (line breaks joined).",
       "captured_at": "2026-11-11"
+    },
+    "udive1103-scheller": {
+      "src": "udive1103",
+      "speaker": "Maria Scheller, vice president of energy and planning, ICF International (email to Utility Dive)",
+      "occasion": "Utility Dive, November 3, 2026 (updated November 4)",
+      "evidence": "PJM is using more current information on large-load growth to improve cost causation. The key credit question is whether state rules provide timely, certain recovery and adequate customer security.",
+      "note": "Both sentences are Scheller's as quoted by Utility Dive; each continues in the article beyond the span kept here. The page fetch returned the spans, not the raw HTML.",
+      "captured_at": "2026-11-12"
+    },
+    "latitude1104-zenkin": {
+      "src": "latitude1104",
+      "speaker": "Nick Zenkin, director of research, Latitude Intelligence",
+      "occasion": "Latitude Media, November 4, 2026",
+      "evidence": "I think overall this changes the story from 'how fast we can connect?' to 'who pays?'",
+      "note": "Inner single quotes are the article's. Said about the Nov 3 election results; no docket is named.",
+      "captured_at": "2026-11-12"
+    },
+    "latitude1111-ascend": {
+      "src": "latitude1111",
+      "speaker": "Brent Nelson and Robert LaFaso, Ascend Analytics (first two spans); Maeve Allsup, reporter (third span)",
+      "occasion": "Latitude Media, November 11, 2026",
+      "evidence": "There’s no world in which there’s political will or political tolerance for new entry prices to get paid to everybody. IRAS was a guardrail for PJM, and that guardrail is now off the table, The ruling shifted responsibility for determining which types of new loads should face curtailment instead to the states.",
+      "note": "Nelson (leads market intelligence) is the first speaker and LaFaso (director of market intelligence) the second. The third sentence is the reporter's own description of FERC's Oct 9 ruling, not a quote of either analyst.",
+      "captured_at": "2026-11-12"
     }
   }
 }

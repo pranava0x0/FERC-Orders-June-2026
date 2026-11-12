@@ -311,3 +311,22 @@ sets.
   a `provenance` field that says they were harvested, not re-extracted. The redesign was closed with
   the PR.
 
+
+## 2026-11-12: per-document readings, a rebuilt navigation, three review lenses
+
+- **A reading quotes one document, and the validator makes that structural.** Tenets that gathered quotes from several
+  filings read as one party's position when they were three. Keying readings by document (`sources/filings/documents/<slug>.json`)
+  and checking each quote on its cited page of that document's own text makes mixing impossible, not just discouraged.
+- **Give a through line ids, not prose.** "How does this relate to the June orders" became anchors derived from the orders'
+  own directives (each tagged with its reform in data.js), so a reading cites `e-8-proximate-generation-service` and the
+  page opens. The regulatory review found its errors in exactly this layer (wrong anchor, wrong relation), which is where
+  judgment lives; the verbatim layer had none.
+- **Write the validator before fanning out.** Seven extraction agents ran `validate-documents.mjs` on their own drafts;
+  1,074 quotes landed with zero errors at merge. The agents' useful extra output was catalog corrections (wrong document
+  kinds, wrong filers), now first-class optional fields.
+- **A `toggle` event arrives after the code that opened the `<details>`.** A flag set around programmatic opens is already
+  cleared when the handler runs. Decide from live state (is a theme filter on?) instead.
+- **`set -e` does not see through a pipe.** `check | tail -2` exits with tail's status. Write the output to a file and test
+  the command itself.
+- **Catalog filer strings concatenate parties with no separator.** Split only at a seam after a word that ends an
+  organization's name; camel-case names (SunZia, FirstEnergy) survive, and corporate suffixes and states rejoin the name.

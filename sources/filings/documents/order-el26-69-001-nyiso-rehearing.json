@@ -1,0 +1,13 @@
+{
+ "slug": "order-el26-69-001-nyiso-rehearing",
+ "summary": "FERC dismisses Eolian's request for rehearing or clarification of the June 18 NYISO show cause order, because that order made only preliminary findings and is not a final order, and declines to clarify while the proceeding is in abeyance.",
+ "ask": null,
+ "points": [
+  {"point": "Eolian sought a ruling that proximate generation can get permanent load-limited generator interconnection service.", "quote": "electrically proximate generation may access permanent load-limited generator interconnection service where it is equally capable of enabling the large load to limit its withdrawals from the transmission system", "pg": 1},
+  {"point": "FERC says the show cause order was not final, so rehearing is unavailable.", "quote": "The Commission determined only that the Tariff appears to be unjust, unreasonable, and unduly discriminatory or preferential and instituted an FPA section 206 show cause proceeding to reach a final determination on this issue.", "pg": 1},
+  {"point": "FERC dismisses the clarification request and will not issue guidance during abeyance.", "quote": "We do not intend to provide clarification or guidance with respect to the Show Cause Order while the show cause proceeding is held in abeyance.", "pg": 1},
+  {"point": "FERC encourages NYISO, the transmission owners and stakeholders to continue developing section 205 proposals.", "quote": "We encourage NYISO, the Transmission Owners, and stakeholders to continue with the development of one or more FPA section 205 proposals.", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-12-show-cause", "e-12-proximate-generation-service"], "text": "Treats the E-12 NYISO order as non-final and dismisses a rehearing request aimed at its proximate-generation directive, leaving clarification until after the abeyance ends November 16, 2026."},
+ "themes": ["procedure", "proximate"]
+}

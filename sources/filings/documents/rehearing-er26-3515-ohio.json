@@ -1,0 +1,19 @@
+{
+ "slug": "rehearing-er26-3515-ohio",
+ "summary": "The Office of the Ohio Consumers' Counsel requests rehearing of FERC's October 9, 2026 order accepting PJM's Large Load Registry. It objects that state consumer advocate offices are excluded from the registry's confidential data and says this conflicts with the show cause orders.",
+ "ask": "Reject the registry proposal with directions to refile it so that state consumer advocate offices can access the confidential registry information, subject to confidentiality obligations.",
+ "points": [
+  {"point": "The Counsel says the order lets PJM exclude state consumer advocate offices from the registry's confidential information.", "quote": "that order allows PJM to exclude state consumer advocate offices from the list of entities entitled to access confidential information to be collected and maintained in the Large Load Registry.", "pg": 3},
+  {"point": "It says advocates need data on large load magnitude, location and growth to test cost shifting to consumers.", "quote": "Responsibility for advocating for consumer interests cannot be meaningfully discharged without access to information concerning the magnitude, location, and anticipated growth of large load.", "pg": 4},
+  {"point": "It argues confidentiality can be handled by protective measures rather than categorical exclusion.", "quote": "Legitimate confidentiality and security concerns can be addressed through protective measures rather than categorical exclusion.", "pg": 4},
+  {"point": "The Counsel cites the Market Monitor's figure of $29 billion in added capacity costs over four auctions.", "quote": "data center growth has driven $29 billion in additional capacity costs over the last four Base Residual Auctions", "pg": 7},
+  {"point": "It lists three errors: no reasoned decision, undue discrimination versus state commissions, and inconsistency with the show cause rulings.", "quote": "Whether FERC’s ruling excluding state consumer advocate offices from the confidential information in the Large Load Registry is inconsistent with its rulings in the Show Cause proceedings", "pg": 10},
+  {"point": "The June PJM show cause order found cost information lacking for state regulators, which the Counsel says supports advocate access.", "quote": "makes it difficult for interested parties, including transmission customers and state regulators, to accurately assess which transmission costs are driven by requests for transmission service", "pg": 17},
+  {"point": "The Counsel asks FERC to direct PJM to extend registry access to consumer advocates.", "quote": "FERC should reverse its ruling on this issue, and direct PJM to extend access to the Large Load Registry confidential information to state consumer advocate offices, subject to confidentiality obligations.", "pg": 19}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-cost-transparency"], "text": "Rehearing in ER26-3515 that invokes the June 2026 PJM show cause order. It argues the order's cost data transparency findings for state regulators support giving consumer advocates access to the Large Load Registry, tied to the E-7 cost transparency directive."},
+ "themes": ["registry", "cost", "retail", "procedure"],
+ "figures": [
+  {"label": "Capacity costs from data center growth over four auctions (per Market Monitor)", "value": 29, "unit": "$ billion", "quote": "$29 billion in additional capacity costs", "pg": 7}
+ ]
+}

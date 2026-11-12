@@ -1,0 +1,20 @@
+{
+  "slug": "pjm-20261005-ceba-dcc-letter-to-pjm-board",
+  "kind": "stakeholder letter",
+  "summary": "The Corporate Energy Buyers Association and the Data Center Coalition write to the PJM Board on October 2, 2026. They object to PJM's plan to study large loads and generation in one queue as its response to the show cause order.",
+  "ask": "Direct PJM staff to explain why it is not directly complying with the 60 to 90 day study directive, or to pursue a more targeted response and allow time for an integrated planning framework.",
+  "points": [
+    {"point": "The coalition says the show cause order calls for large load improvements but does not require an overhaul of the generation interconnection queue.", "quote": "While the Order calls for improvements to large load integration, it does not require PJM to overhaul its entire generation interconnection queue.", "pg": 1},
+    {"point": "Under PJM's proposal a load approved just after the annual cutoff could wait nearly two years from transmission owner approval to completing the PJM process.", "quote": "that could mean nearly two years between Transmission Owner approval and completion of the PJM process.", "pg": 1},
+    {"point": "Paired generation could be held out of the queue during that wait.", "quote": "If paired generation must enter the process with the load, the generator could be held out of the queue during that wait, delaying new supply that PJM urgently needs.", "pg": 1},
+    {"point": "The letter says MISO and SPP run parallel but coordinated planning processes instead of one combined cluster.", "quote": "generally use parallel but coordinated planning processes before bringing them together into an integrated system plan", "pg": 2},
+    {"point": "The coalition asks the Board to direct staff either to explain non-compliance with the 60 to 90 day application and study directive or to narrow the response.", "quote": "Explain why it is not directly complying with the Show Cause Order directives to establish an application and study process for the provision of transmission service for large loads that is 60–90 days or less", "pg": 2},
+    {"point": "The coalition supports piloting study automation inside the existing Cycle process.", "quote": "We also support PJM beginning to pilot and validate study automation, which can be done today within the Cycle process.", "pg": 2}
+  ],
+  "throughLine": {
+    "relation": "context",
+    "anchors": ["e-7-application-study-process", "e-7-show-cause"],
+    "text": "Comments on PJM's planned response to the E-7 show cause order, which directs an application and study process of 60 to 90 days for large loads. The letter was sent to the PJM Board and was not filed in EL26-67."
+  },
+  "themes": ["study", "proximate", "procedure"]
+}

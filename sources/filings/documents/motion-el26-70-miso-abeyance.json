@@ -1,0 +1,20 @@
+{
+ "slug": "motion-el26-70-miso-abeyance",
+ "summary": "MISO and its Transmission Owners ask FERC to hold the E-8 show cause proceeding in abeyance for 90 days, through November 16, 2026, while they use the Large Load Working Group to prepare a series of section 205 filings.",
+ "ask": "Hold the proceeding in abeyance for 90 days starting August 17, 2026, with a shortened answer period and expedited treatment.",
+ "points": [
+  {"point": "The movants say the stakeholder process needs the 90 days to craft section 205 filings answering the order.", "quote": "The Motion is necessary to permit MISO and the MISO Transmission Owners to continue the MISO stakeholder process to develop and submit FPA section", "pg": 2},
+  {"point": "MISO says some issues in the order were not in its original workplan, and the 60-day deadline blocks stakeholder development.", "quote": "The current, imminent compliance deadline in the Show Cause Order effectively prohibits the full development and robust consideration of any potential stakeholder solutions to integrating large loads.", "pg": 5},
+  {"point": "Planned filings: a Zero Injection Generator Interconnection Agreement, a large load definition, interconnection reliability requirements, a firm step-up service and a parallel load and resource study (LARS).", "quote": "a parallel study process for large load and generation resources (i.e., Load Addition and Resource Study process or “LARS”)", "pg": 4},
+  {"point": "MISO expects to file the ZGIA by the end of August.", "quote": "MISO expects to submit the ZGIA filing by the end of August.", "pg": 10},
+  {"point": "LARS would study load and generation in parallel within 120 days and address the order's proximate generation concern.", "quote": "The studies will be run in parallel, and will finish at approximately the same time—within 120 days", "pg": 11},
+  {"point": "MISO expects to file the firm service step-up Tariff revisions by November 16, 2026, or earlier if feasible.", "quote": "MISO expects to make a section 205 filing proposing Tariff revisions incorporating the firm service step-up option by November 16, 2026, or earlier, if feasible.", "pg": 12},
+  {"point": "The Large Load Working Group has six scheduled meetings before the abeyance ends.", "quote": "the LLWG is scheduled to meet six times between the date of this filing and the end of the requested abeyance period", "pg": 13}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause", "e-8-adequacy-report"], "text": "Uses the abeyance option in the E-8 order (P 37) to postpone the 60-day show cause deadline and lays out the filings MISO plans, including LARS for proximate generation and a firm step-up service."},
+ "themes": ["procedure", "study", "flex"],
+ "figures": [
+  {"label": "Requested abeyance period", "value": 90, "unit": "days", "quote": "hold this proceeding in abeyance for a period of 90 days starting August 17, 2026", "pg": 14},
+  {"label": "LARS parallel study time", "value": 120, "unit": "days", "quote": "within 120 days", "pg": 11}
+ ]
+}

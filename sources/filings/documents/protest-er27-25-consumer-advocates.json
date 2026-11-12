@@ -1,0 +1,18 @@
+{
+  "slug": "protest-er27-25-consumer-advocates",
+  "summary": "The Iowa Office of the Consumer Advocate and eight other consumer advocates and state offices jointly protest MISO's LARS filing, objecting to grandfathering about 30 GW, zonal cost allocation, LRZ-wide proximity and queue jumping.",
+  "ask": "Reject the grandfathering exemptions, GIP Section 3.12.4 cost assignment, the LRZ definition of electrically proximate and queue-jumping provisions; require MISO to address cost shifting in its section 205 filings and in the section 206 docket.",
+  "points": [
+    {"point": "The protesters oppose exempting or partly exempting about 30 GW of existing load from MISO's large load reliability requirements.", "quote": "MISO is proposing to fully or partially exempt approximately 30 gigawatts of existing load from the Large Load Interconnection Reliability Requirements.", "pg": 3},
+    {"point": "They say LARS does not address the show cause order's cost-shifting concerns, which MISO defers to filings due by November 16.", "quote": "MISO's LARS Process does not address the Commission's concerns regarding cost-shifting expressed in the Show Cause Order.", "pg": 4},
+    {"point": "Violations seen in the load study or in both studies go to Baseline Reliability or Other projects, which are allocated zonally.", "quote": "The LARS Process does not assign the cost of all network upgrades to the cost-causer.", "pg": 6},
+    {"point": "They say a same-Local-Resource-Zone test departs from the order's two-substation example of electrically proximate.", "quote": "MISO's LRZ proposal does not meaningfully engage with the Show Cause Order.", "pg": 9},
+    {"point": "They argue LARS studies generators before DPP projects that have waited through multiple phases.", "quote": "In effect, any LARS project will be studied before the DPP projects that have waited through multiple phases of study.", "pg": 11},
+    {"point": "They ask FERC to let them address cost impacts across all MISO section 205 filings in the section 206 show cause docket.", "quote": "The Joint Protestors should be permitted to address the cost-shifting impacts, transparency issues, and other consumer protection issues raised in MISO's Section 205 filings as a whole", "pg": 4}
+  ],
+  "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause", "e-8-cost-recovery-agreement", "e-8-minimum-cost-recovery-security"], "text": "Protests MISO's LARS filing as an incomplete answer to the E-8 show cause order on cost shifting and electrically proximate loads, and asks that cost issues be heard in the EL26-70 docket."},
+  "themes": ["cost", "proximate", "study"],
+  "figures": [
+    {"label": "Existing load fully or partly exempted from MISO large load reliability requirements", "value": 30, "unit": "GW", "quote": "approximately 30 gigawatts of existing load", "pg": 3}
+  ]
+}

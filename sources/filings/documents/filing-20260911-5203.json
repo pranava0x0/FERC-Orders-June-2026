@@ -1,0 +1,76 @@
+{
+ "slug": "filing-20260911-5203",
+ "summary": "The Organization of MISO States moves for acceptance of late comments and conditionally supports MISO's Zero Injection Generator Interconnection Agreement, asking FERC to require reliability, cost-shifting, resource adequacy and transparency safeguards.",
+ "ask": "Accept the late comments, and approve MISO's ZGIA only if reliability, cost, resource adequacy and transparency protections are clear and enforceable, while treating it as one part of a broader large-load framework.",
+ "points": [
+  {
+   "point": "OMS offers conditional support for the ZGIA and does not oppose it.",
+   "quote": "OMS cautiously supports the ZGIA proposal",
+   "pg": 1
+  },
+  {
+   "point": "OMS treats the ban on injection beyond the substation as a reliability requirement and wants studies before execution.",
+   "quote": "That limitation must be treated as a reliability requirement, not merely a contractual condition.",
+   "pg": 4
+  },
+  {
+   "point": "OMS objects that MISO left the Transient Tolerance Window definition to its Business Practice Manual.",
+   "quote": "MISO has deferred establishing an explicit definition of the appropriate Transient Tolerance Window to the development of its Business Practice Manual.",
+   "pg": 5
+  },
+  {
+   "point": "OMS backs keeping the ZGIA limited to generation and load at one substation and voltage level.",
+   "quote": "recommends that the Commission accept the common-substation and voltage-level limitation as the appropriate scope of ZGIA.",
+   "pg": 7
+  },
+  {
+   "point": "OMS supports the requirement that the generator's full output serve the associated load for at least five years.",
+   "quote": "with an expected period of at least five years.",
+   "pg": 7
+  },
+  {
+   "point": "OMS says upgrades needed if supporting generation fails to materialize should not automatically fall on existing customers.",
+   "quote": "the costs of that incremental need should not automatically shift to existing transmission customers.",
+   "pg": 7
+  },
+  {
+   "point": "OMS asks MISO to explain ZGIA treatment across its resource adequacy models, including LOLE, UCAP, SAC and the Planning Resource Auction.",
+   "quote": "OMS requests that MISO explain in a compliance filing, subsequent BPM rules, or a workshop how ZGIA resources and associated loads will be represented in",
+   "pg": 9
+  },
+  {
+   "point": "OMS wants any later move to injection rights sequenced so it does not bypass the Definitive Planning Process queue.",
+   "quote": "must not allow a ZGIA resource to circumvent or obtain an advantage over interconnection customers already participating in the DPP queue.",
+   "pg": 10
+  },
+  {
+   "point": "OMS asks FERC to judge the ZGIA together with MISO's other large-load reforms on a complete record.",
+   "quote": "the Commission should evaluate the ZGIA Filing together with other reforms developed during that process only after a complete record is developed",
+   "pg": 13
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-8-services-for-flexible-co-located",
+   "e-8-adequacy-report",
+   "e-8-show-cause"
+  ],
+  "text": "State regulators comment on MISO's ZGIA filing in ER26-3552, MISO's first response to the E-8 order on co-located load, and ask FERC to weigh it with the rest of the E-8 response."
+ },
+ "themes": [
+  "colo",
+  "adequacy",
+  "cost",
+  "retail"
+ ],
+ "figures": [
+  {
+   "label": "Maximum Transient Tolerance Window under MISO's proposed tariff",
+   "value": 20,
+   "unit": "seconds",
+   "quote": "shall be no greater than 20 seconds",
+   "pg": 5
+  }
+ ]
+}

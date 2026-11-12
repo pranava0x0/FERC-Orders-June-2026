@@ -7,9 +7,11 @@ const dir=new URL('../docs/js/',import.meta.url),full=readFileSync(new URL('data
 const start=full.indexOf('  const reception = '),end=full.indexOf('  const comments = ',start),block=full.slice(start,end);
 assert.deepEqual([...block.matchAll(/^  const (\w+) = /gm)].map(m=>m[1]),names,'News-only declarations have moved');
 const core=full.slice(0,start)+full.slice(end).replace('regional, reception, media, voices, voiceThemes, comments','regional, comments');
-const extra='Object.assign(window.FERC_DATA,'+JSON.stringify(Object.fromEntries(names.map(n=>[n,d[n]])))+');\n';
+// The Discourse tab's linked index (tools/build-discourse-index.mjs) rides in the same lazy file.
+const {items:discourse,groupLabels,themeLabels}=JSON.parse(readFileSync(new URL('../sources/discourse/index.json',import.meta.url),'utf8'));
+const extra='Object.assign(window.FERC_DATA,'+JSON.stringify({...Object.fromEntries(names.map(n=>[n,d[n]])),discourse,discourseLabels:{groups:groupLabels,themes:themeLabels}})+');\n';
 const ctx=vm.createContext({window:{}});vm.runInContext(core,ctx);for(const n of names)assert.ok(!(n in ctx.window.FERC_DATA));
-vm.runInContext(extra,ctx);for(const [key,value] of Object.entries(d)){
+vm.runInContext(extra,ctx);assert.ok(ctx.window.FERC_DATA.discourse.length,'empty discourse index');for(const [key,value] of Object.entries(d)){
  const encode=v=>JSON.stringify(v,(k,x)=>typeof x==='function'?x.toString():x);
  assert.equal(encode(ctx.window.FERC_DATA[key]),encode(value),'Payload differs for '+key);
 }

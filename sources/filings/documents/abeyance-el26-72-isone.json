@@ -1,0 +1,18 @@
+{
+ "slug": "abeyance-el26-72-isone",
+ "summary": "FERC grants ISO-NE and the Participating Transmission Owners a 90-day abeyance of the E-11 show cause proceeding, moving responses to November 16, 2026 and answers to December 16, 2026, and records the five reform categories ISO-NE plans to file.",
+ "ask": null,
+ "points": [
+  {"point": "FERC grants the August 3 abeyance motion for 90 days.", "quote": "we grant the Abeyance Motion filed by Joint Movants and hold this proceeding in abeyance for 90 days.", "pg": 1},
+  {"point": "The stakeholder schedule runs through a PTO-AC vote in October and a NEPOOL Participants Committee vote in November.", "quote": "the PTO-AC plans to act on Tariff revisions in October, and the NEPOOL Participants Committee would vote on the FPA section 205 proposal at its November meeting.", "pg": 1},
+  {"point": "Planned filing covers study procedures, including alternative transmission technologies, and a large load definition fitted to ISO-NE's system.", "quote": "the FPA section 205 filing will address the need for a transmission service application process and study procedures, including the evaluation of alternative transmission technologies.", "pg": 1},
+  {"point": "It will bar netting behind-the-meter generation with load behind the same point of interconnection for Regional Network Service charges.", "quote": "behind-the meter generation (BTMG) cannot be netted with load behind the same point of interconnection for the purpose of determining Regional Network Service charges", "pg": 1},
+  {"point": "Planned flexible services: interim non-firm network service and permanent firm and non-firm contract demand service.", "quote": "(1) interim non-firm network transmission service; (2) permanent firm contract demand transmission service; and (3) permanent non-firm contract demand transmission service.", "pg": 1},
+  {"point": "Responses are due November 16, 2026 and answers December 16, 2026; a section 205 filing by November 16 suspends that respondent's duty to respond.", "quote": "responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026.", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-11-show-cause", "e-11-btmg-netting", "e-11-proximate-generation-service"], "text": "Moves the E-11 order's 60-day deadline to November 16, 2026 and records ISO-NE's plan to address application and study, cost-recovery, BTMG netting, flexible service and proximate-generation study in one section 205 filing."},
+ "themes": ["procedure", "study", "colo"],
+ "figures": [
+  {"label": "Abeyance period granted for ISO-NE show cause", "value": 90, "unit": "days", "quote": "hold this proceeding in abeyance for 90 days", "pg": 1}
+ ]
+}

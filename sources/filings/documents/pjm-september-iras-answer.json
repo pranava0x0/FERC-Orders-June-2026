@@ -1,0 +1,21 @@
+{
+ "slug": "pjm-september-iras-answer",
+ "summary": "PJM moves for leave to answer and answers the comments and protests on its Interim Resource Adequacy Service and Large Load Registry filing. It defends the 50 MW definition, the federal-state split and the demand curve exclusion, and offers corrections on compliance.",
+ "ask": "Accept the Tariff and RAA revisions effective October 12, 2026; if FERC rejects any element, direct prescriptive changes on compliance or give guidance.",
+ "points": [
+  {"point": "PJM says the 2027/2028 auction fell short of the reliability requirement and calls IRAS and the registry the needed tools.", "quote": "The Base Residual Auction for the 2027/2028 Delivery Year procured insufficient capacity to meet the PJM Region Reliability Requirement.", "pg": 1},
+  {"point": "Absent new capacity, PJM says new large loads must be flexible and reduce demand during emergencies.", "quote": "Absent such new capacity, New Large Loads must be flexible and, pursuant to PJM’s operational needs, reduce their energy demands when called upon during system emergencies.", "pg": 3},
+  {"point": "PJM says it offered severable elements and urges timely approval of the registry, definition and bring-new-capacity obligation.", "quote": "PJM highlights the importance of timely Commission approval of the following discrete elements: the Large Load Registry,", "pg": 6},
+  {"point": "PJM cites a July 22 event in which nearly 4,000 MW of data center load tripped offline in Virginia.", "quote": "a July 22 event saw nearly 4,000 MW of data center load trip offline unexpectedly in Virginia. It was the largest such event in PJM history.", "pg": 7},
+  {"point": "PJM defends the 50 MW threshold as consistent with the June 2026 show cause order and rejects a baseline for existing loads.", "quote": "No information presented by any of these parties renders PJM’s proposed threshold unjust and unreasonable.", "pg": 15},
+  {"point": "PJM argues IRAS directs only a MW quantity to distributors and leaves retail curtailment choices to states.", "quote": "it neither targets nor directs specific retail customers to be subject to curtailment, nor compels or restricts the authority of the retail authority to prioritize among the retail customers", "pg": 18, "pgEnd": 19},
+  {"point": "PJM asks FERC to prescribe changes or give guidance if it rejects any element.", "quote": "the Commission either direct prescriptive changes to be implemented on compliance or provide guidance to aid PJM and stakeholders to develop a just and reasonable approach.", "pg": 8},
+  {"point": "PJM agrees to clarifying edits on compliance to the bring-your-own-capacity language for demand resources.", "quote": "PJM agrees that the “not” included in this section should be removed", "pg": 64}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-service-for-flexible-loads", "e-7-application-study-process"], "text": "PJM's answer in its separate ER26-3515 docket. It ties its 50 MW definition to the June 2026 show cause order and presents IRAS curtailment as a flexible-load service, the topic of the E-7 directive."},
+ "themes": ["flex", "registry", "retail", "adequacy"],
+ "figures": [
+  {"label": "Data center load that tripped offline in Virginia on July 22", "value": 4000, "unit": "MW", "quote": "nearly 4,000 MW of data center load trip offline", "pg": 7},
+  {"label": "PJM Large Load threshold", "value": 50, "unit": "MW", "quote": "50 MW was entirely in keeping with what was contemplated by the Commission", "pg": 15}
+ ]
+}

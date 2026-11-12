@@ -1,0 +1,18 @@
+{
+ "slug": "filing-20260821-5145",
+ "summary": "The Public Service Commission of West Virginia comments on PJM's Reliability Backstop Procurement filing, opposing it in present form and asking for a new target computed with and without new large loads.",
+ "ask": "Require PJM to set a new backstop target from two capacity model runs, one excluding all new large load and one excluding load bringing its own generation, and delay commitment until states receive the results.",
+ "points": [
+  {"point": "West Virginia does not support the filing in its current form and timetable, citing weak support for the backstop target.", "quote": "The PSCWV does not support the filing in its present form and timetable because the proposal fails to provide adequate support that the target level of so-called backstop capacity is needed", "pg": 1},
+  {"point": "PJM sets the initial target at the 6,831 MW shortfall seen in the July 2026 auction rather than waiting on bilateral matching.", "quote": "PJM is proposing the RBP based on a perceived 6,831 MW shortfall from its capacity target set for its last capacity auction.", "pg": 2},
+  {"point": "At the $555 per MW-day cap the 15-year commitment could average $1.4 billion per year.", "quote": "could exceed an average of $1.4 billion per year.", "pg": 2},
+  {"point": "Bilateral contracts let new large loads bear the cost of the capacity they need, shrinking the backstop target.", "quote": "Bilateral contracts allow the costs of new capacity to be assumed directly by the contracting new large loads, creating the need for that capacity.", "pg": 3},
+  {"point": "West Virginia asks for two model runs, one with no new large load, to size any backstop need.", "quote": "FERC should require PJM to determine a new target for the RBP based on the model from its last capacity auction run under two different scenarios.", "pg": 4}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report"], "text": "Comments in PJM's separate backstop docket ER26-3380 on how PJM secures capacity for new large loads, the subject of the E-7 30-day adequacy report, with emphasis on keeping costs off other customers."},
+ "themes": ["adequacy", "cost", "retail"],
+ "figures": [
+  {"label": "PJM initial Reliability Backstop Procurement target", "value": 6831, "unit": "MW", "quote": "PJM is proposing the RBP based on a perceived 6,831 MW shortfall from its capacity target set for its last capacity auction.", "pg": 2},
+  {"label": "Possible annual cost of backstop capacity at the price cap", "value": 1.4, "unit": "$ billion per year", "quote": "could exceed an average of $1.4 billion per year.", "pg": 2}
+ ]
+}

@@ -1,0 +1,76 @@
+{
+  "slug": "rehearing-er26-3380-firstenergy",
+  "summary": "FirstEnergy Service Company asks for rehearing of FERC's September 29, 2026 order that accepted PJM's Reliability Backstop Procurement subject to a three-topic paper hearing. It challenges four findings on price structure, resource eligibility, supplier performance and demand response gating.",
+  "ask": "Grant rehearing and reject the levelized price framework (or require straight-line pricing or an annual cap), require priority for firm dispatchable capacity, strengthen supplier performance assurance, and require binding commitments for demand response.",
+  "points": [
+    {
+      "point": "FirstEnergy says the September 29 order accepts the RBP except three paper-hearing topics but does not answer its arguments on the rest.",
+      "quote": "the September 29 Order accepts the filing, declares that every aspect of the RBP other than three discrete topics set for paper hearing is just and reasonable",
+      "pg": 2
+    },
+    {
+      "point": "FirstEnergy says the order suspended the RBP five months to February 28, 2027 and set a paper hearing on cost allocation, TO exit rules and LSE collateral.",
+      "quote": "suspended them for five months to become effective February 28, 2027, subject to refund",
+      "pg": 5
+    },
+    {
+      "point": "FERC granted PJM's abeyance request, moving initial briefs to January 11, 2027 and reply briefs to January 26, 2027.",
+      "quote": "extending the deadline for initial briefs in the paper hearing Docket No. EL26-108-000 from November 13, 2026 to January 11, 2027",
+      "pg": 6
+    },
+    {
+      "point": "The $555/MW-day cap is a levelized average, which FirstEnergy says lets sellers front-load prices into early years.",
+      "quote": "sellers will front-load their costs into the initial years of their contracts.",
+      "pg": 8
+    },
+    {
+      "point": "It asks FERC to require firm, dispatchable resources to be prioritized, citing NERC reliability evidence.",
+      "quote": "The Commission should grant rehearing and require PJM to demonstrate that the RBP framework appropriately prioritizes firm and dependable capacity resources.",
+      "pg": 11
+    },
+    {
+      "point": "Shortfall charges apply only before commercial operation, so customers lack protection against underperformance over the 15-year term.",
+      "quote": "has not reached commercial operation",
+      "pg": 13
+    },
+    {
+      "point": "LSEs post $1.5 million per RBP MW in collateral while sellers post only three years of shortfall charges.",
+      "quote": "Customers are asked to post collateral of $1.5 million per committed RBP MW to protect suppliers for up to fifteen years",
+      "pg": 14
+    },
+    {
+      "point": "It asks FERC to clarify that demand response must be backed by binding contractual commitments, not just a plan.",
+      "quote": "clarify that Demand Resources and DER Capacity Aggregation Resources must be supported by binding contractual commitments to provide the",
+      "pg": 16,
+      "pgEnd": 17
+    }
+  ],
+  "throughLine": {
+    "relation": "parallel",
+    "anchors": [
+      "e-7-adequacy-report"
+    ],
+    "text": "Rehearing in PJM's backstop procurement docket ER26-3380 and the related EL26-108 paper hearing, the capacity-adequacy track beside E-7's report on how PJM will ensure generation for large loads."
+  },
+  "themes": [
+    "adequacy",
+    "credit",
+    "procedure"
+  ],
+  "figures": [
+    {
+      "label": "RBP maximum willingness to pay",
+      "value": 555,
+      "unit": "USD per MW-day",
+      "quote": "a maximum willingness to pay $555/MW-day",
+      "pg": 4
+    },
+    {
+      "label": "Initial RBP Target from the 2028/2029 BRA shortfall",
+      "value": 6831,
+      "unit": "MW",
+      "quote": "6,831 MW shortfall in the 2028/2029 BRA",
+      "pg": 4
+    }
+  ]
+}

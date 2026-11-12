@@ -1,0 +1,16 @@
+{
+ "slug": "filing-20260807-5150",
+ "summary": "The Missouri Public Service Commission comments in support of the SPP Joint Movants' 95-day abeyance request in EL26-68, arguing good cause exists because SPP's Board meets November 17, one day outside the 90-day window.",
+ "ask": "Grant the Joint Movants' request for a 95-day abeyance of the section 206 proceeding.",
+ "points": [
+  {"point": "Missouri PSC says the 95 days fits SPP's November 17 Board meeting and state input to the compliance filing.", "quote": "SPP's Board of Directors meeting is scheduled for November 17, 2026—one day outside the 90-day window.", "pg": 1},
+  {"point": "It cites the 12-month Order No. 1920 extension FERC gave SPP in April 2025 as precedent for good cause.", "quote": "the Commission granted SPP a 12-month extension of time to submit filings in compliance with the Commission's Order No. 1920", "pg": 3},
+  {"point": "State regulators care about transparency and cost-shift avoidance because they set retail rates that include transmission costs.", "quote": "Issues related to transparency and the avoidance of cost shifting are particularly important to the Missouri PSC and other state regulators who bear the responsibility of setting retail rates", "pg": 4},
+  {"point": "The abeyance gives the CARE Team time to finish cost mitigation recommendations for the Board.", "quote": "The requested abeyance will allow the CARE Team time to complete this important work and present its recommendations to the Board.", "pg": 4}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-9-show-cause", "e-9-cost-recovery-crediting"], "text": "Supports the E-9 SPP abeyance motion and ties the extra five days to state-regulator review of the cost-shift protections the order directs SPP to address."},
+ "themes": ["procedure", "cost", "retail"],
+ "figures": [
+  {"label": "Abeyance requested for SPP show cause proceeding", "value": 95, "unit": "days", "quote": "The Joint Movants asked to hold the proceedings in abeyance for 95 days, up to and including November 20, 2026.", "pg": 3}
+ ]
+}

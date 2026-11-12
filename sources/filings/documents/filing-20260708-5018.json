@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20260708-5018",
+ "summary": "An individual commenter filing as L.M. Marlowe submits a supplemental technical comment across the six show cause dockets, urging boundary telemetry, cost-causation allocation and a four-gate verification standard at the point of interconnection, and reserves rights in her framework.",
+ "ask": "Consider continuous boundary telemetry and a four-gate verification standard in the large-load interconnection and cost-allocation methods, and note the commenter's reservation of intellectual property rights.",
+ "points": [
+  {"point": "She argues reliability checks should move from periodic review to continuous validation at the interconnection boundary, since large computational loads change state in sub-cycle time.", "quote": "reliability verification should migrate from periodic review toward continuously operating validation performed at the interconnection boundary, sampled at sub-cycle resolution", "pg": 3},
+  {"point": "Reliability burdens from large computational loads should be assigned to the loads that cause them, not to residential and small-commercial ratepayers.", "quote": "should be assigned to the loads that cause them, on a cost-causation basis, rather than socialized onto residential and small-commercial ratepayers.", "pg": 4},
+  {"point": "She asks whether curtailment priority could place federally directed computational load ahead of ordinary large loads, citing DOE's 15-minute backup-generation curtailment of loads of 50 MW or more.", "quote": "directed curtailment of data centers and large loads of 50 MW or greater onto backup generation within fifteen minutes of an emergency signal", "pg": 4},
+  {"point": "She proposes four verification gates at the point of common coupling: timing and stability, dependency map, throughput settlement, and certification.", "quote": "Such a standard would operate as a sequence of verification gates applied at interconnection, each addressing a specific consideration raised in this comment", "pg": 7},
+  {"point": "The commenter reserves rights in a proprietary framework covered by pending patent applications.", "quote": "Commenter reserves all rights, including the right to seek appropriate relief in the proper forum.", "pg": 9}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-7-cost-recovery-agreement", "e-7-cost-transparency", "e-7-service-for-flexible-loads"], "text": "Comment filed in EL26-67 and the other show cause dockets; its cost-causation and observability proposals bear on the cost-shifting and transparency directives and curtailment questions raised by the June orders."},
+ "themes": ["cost", "registry", "flex"],
+ "figures": []
+}

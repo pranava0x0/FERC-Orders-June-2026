@@ -1,0 +1,51 @@
+{
+ "slug": "filing-20260803-5241",
+ "kind": "motion for abeyance",
+ "summary": "LS Power Grid New York Corporation I and New York Transco LLC, the Non-Incumbent TOs, move for a 90-day abeyance of the EL26-69 show cause response to November 16, 2026, with a five-day answer period and an order by August 13.",
+ "ask": "Hold the proceeding in abeyance for 90 days from August 17, extend the response deadline to November 16, 2026, shorten the answer period to five days, and rule by August 13.",
+ "points": [
+  {
+   "point": "The NTOs seek a 90-day full abeyance to prepare a section 205 filing alongside NYISO and stakeholders.",
+   "quote": "The NTOs seek a 90-day full abeyance of the current 60-day deadline to respond to all issues raised in the Show Cause Order",
+   "pg": 1
+  },
+  {
+   "point": "They expect the filing to cover large load definition, alternative transmission technologies, a pro forma service agreement, and cost recovery with financial security.",
+   "quote": "the definition of a large load; readiness and information requirements; the",
+   "pg": 5,
+   "pgEnd": 6
+  },
+  {
+   "point": "They say their section 205 filing depends on NYISO's stakeholder process because NTOs run no stakeholder process of their own.",
+   "quote": "NTOs do not administer a stakeholder process of their own through which the issues raised in the Show Cause Order could be resolved independently.",
+   "pg": 8
+  },
+  {
+   "point": "Without a shortened answer period, FERC could not rule before the August 17 response deadline.",
+   "quote": "If the ordinary fifteen-day answer period applies, the Commission will not be in a position to rule on this Motion until after NTOs' response is already due.",
+   "pg": 7
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-12-show-cause",
+   "e-12-timely-study-window"
+  ],
+  "text": "Uses the abeyance option in the E-12 NYISO order to defer the 60-day response on the study-window, cost, co-location, flexible-load and proximate-generation findings until November 16, 2026."
+ },
+ "themes": [
+  "procedure",
+  "study",
+  "cost"
+ ],
+ "figures": [
+  {
+   "label": "Abeyance requested by Non-Incumbent TOs",
+   "value": 90,
+   "unit": "days",
+   "quote": "The NTOs seek a 90-day full abeyance",
+   "pg": 1
+  }
+ ]
+}

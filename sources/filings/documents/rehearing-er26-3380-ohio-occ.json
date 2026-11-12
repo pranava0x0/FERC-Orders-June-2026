@@ -1,0 +1,22 @@
+{
+  "slug": "rehearing-er26-3380-ohio-occ",
+  "summary": "The Office of the Ohio Consumers' Counsel asks for rehearing of FERC's September 29, 2026 order accepting PJM's Reliability Backstop Procurement, challenging the $555/MW-day offer cap, pay-as-bid clearing, the 20% shortage penalty and cost allocation to consumers rather than data center loads.",
+  "ask": "Direct PJM to set a lower offer cap, adopt single-price clearing, replace the 20% shortage penalty, and design an RBP that allocates costs to the large loads causing the need.",
+  "points": [
+    {"point": "OCC says the accepted RBP design does not match concurrences by Commissioners LaCerte and See that new load, not existing customers, should bear its costs.", "quote": "Existing customers should not be left paying costs attributable to new demand.", "pg": 4},
+    {"point": "The order accepted a one-time procurement of 6,831 MW and postponed the auction five months to February 28, 2027.", "quote": "it postponed that auction for five months, until February 28, 2027.", "pg": 5},
+    {"point": "OCC lists the paper hearing topics FERC set: zonal cost allocation, muni and co-op opt-outs, TO exit fees and LSE collateral.", "quote": "set these issues for further paper hearings and additional comments", "pg": 6},
+    {"point": "OCC says the $555/MW-day cap and pay-as-bid clearing lack record support and do not mitigate seller market power.", "quote": "There is no evidence in the record to support this offer cap, and there is no evidence to support the pay-as-bid clearing mechanism design.", "pg": 6},
+    {"point": "It says the cap is more than $200/MW-day above the collared cap in the 2028/2029 base residual auction.", "quote": "more than $200/MW-day higher than the current collared price cap applied in the 2028/2029 RPM base residual auction.", "pg": 12},
+    {"point": "OCC says the 20% shortage penalty is far below RPM's non-performance penalty and shortfall charges are limited to three years against a 15-year commitment.", "quote": "FERC accepted a proposal to limit the proposed shortage penalty to only 1/5th of the capacity sell offer", "pg": 18},
+    {"point": "It says costs should fall on data centers and FERC ignored a claimed $23.1 billion cost shift from the past three auctions.", "quote": "data center demand increased capacity costs to other PJM customers by approximately $23.1 billion", "pg": 23},
+    {"point": "OCC's prayer asks FERC to lower the cap, adopt single clearing price, reject the 20% penalty and allocate RBP costs to cost causers.", "quote": "directing PJM to set a lower market seller offer cap for the RBP auction consistent with protests filed by OCC and others on this issue", "pg": 25}
+  ],
+  "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report"], "text": "Rehearing in PJM's backstop procurement docket ER26-3380, the capacity-adequacy track running beside E-7's request that PJM report how it will ensure generation for large loads."},
+  "themes": ["adequacy", "cost", "procedure"],
+  "figures": [
+    {"label": "RBP one-time procurement target", "value": 6831, "unit": "MW", "quote": "a one-time auction to procure 6,831 MW of new generating capacity", "pg": 5},
+    {"label": "RBP seller offer cap", "value": 555, "unit": "USD per MW-day", "quote": "$555/MW-day", "pg": 12},
+    {"label": "Capacity cost increase to other customers attributed to data center demand", "value": 23.1, "unit": "billion USD", "quote": "approximately $23.1 billion", "pg": 23}
+  ]
+}

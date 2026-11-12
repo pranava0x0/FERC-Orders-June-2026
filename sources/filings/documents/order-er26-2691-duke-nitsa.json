@@ -1,0 +1,22 @@
+{
+ "slug": "order-er26-2691-duke-nitsa",
+ "summary": "FERC accepts Duke Energy Carolinas' revised pro forma network service agreement, effective August 1, 2026. It approves a shortfall payment for loads of 100 MW or more, rolled-in upgrade pricing and security terms, while encouraging more cost-shift protection and saying the order does not prejudge the show cause orders.",
+ "ask": null,
+ "points": [
+  {"point": "DEC's revisions respond to load growth of about 800 MW since 2012, including nine large new Network Load requests from 102 MW to 945 MW.", "quote": "customer-served load has increased by approximately 800 MW since 2012, which includes nine customer requests to serve new large Network Load", "pg": 1},
+  {"point": "FERC accepts the change-in-service and restudy rules because they avoid overbuilt upgrades that shift costs.", "quote": "without resulting in DEC building more extensive Network Upgrades than necessary to provide that service, which could shift costs to DEC's other transmission customers.", "pg": 1},
+  {"point": "FERC upholds default rolled-in treatment of Network Upgrade costs over SACE's protest.", "quote": "we find that DEC's proposal to codify in the pro forma NITSA that the cost of Network Upgrades will be rolled into its transmission rates as the default comports with longstanding Commission policy.", "pg": 1},
+  {"point": "FERC says non-conforming agreements with incremental rates remain available.", "quote": "the Commission will consider non-conforming NITSAs that include an alternative cost-recovery mechanism such as an incremental rate.", "pg": 1},
+  {"point": "FERC approves a shortfall payment if actual service falls below 75 percent of scheduled MW for 15 years, for loads of 100 MW or more.", "quote": "to pay a Shortfall Payment if actual NITS falls below 75% of the MW value of service in the load schedule for each month and year during the 15-year period following the in-service date of its Network Upgrades", "pg": 1},
+  {"point": "FERC finds the shortfall payment does not double recover because it is credited to a revenue account.", "quote": "Shortfall Payments serve to reduce, rather than add to, DEC's revenue collection through its transmission revenue requirement.", "pg": 1},
+  {"point": "FERC encourages DEC and others to add further cost-shift protections, including alternative transmission technologies.", "quote": "Other measures may include greater deployment of alternative transmission technologies and grid enhancing technologies", "pg": 1},
+  {"point": "FERC says the order does not prejudge the June 2026 show cause orders or the RM26-4 ANOPR.", "quote": "our approval today in no way prejudges the outcomes of the June 2026 Large Load Show Cause Order proceedings under FPA section 206", "pg": 1}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-cost-recovery-agreement", "e-8-minimum-cost-recovery-security", "e-9-cost-recovery-crediting"], "text": "A section 205 acceptance in a separate docket that approves a minimum-payment and security mechanism of the kind the show cause orders ask RTOs to consider, while FERC states it does not prejudge those orders."},
+ "themes": ["cost", "credit", "study"],
+ "figures": [
+  {"label": "DEC customer-served load growth since 2012", "value": 800, "unit": "MW", "quote": "customer-served load has increased by approximately 800 MW since 2012", "pg": 1},
+  {"label": "DEC largest large Network Load request (multi-phase)", "value": 945, "unit": "MW", "quote": "ranging from 102 MW to a multi-phase project of 945 MW", "pg": 1},
+  {"label": "Shortfall payment trigger as share of scheduled service", "value": 75, "unit": "%", "quote": "if actual NITS falls below 75% of the MW value of service in the load schedule", "pg": 1}
+ ]
+}

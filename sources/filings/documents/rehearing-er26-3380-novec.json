@@ -1,0 +1,15 @@
+{
+ "slug": "rehearing-er26-3380-novec",
+ "summary": "Northern Virginia Electric Cooperative seeks rehearing of FERC's September 29, 2026 order finding PJM's Reliability Backstop Procurement just and reasonable, urging adoption of the stakeholder-endorsed voluntary subscription model and full cost allocation review.",
+ "ask": "Set aside the finding that the backstop is just and reasonable, require PJM to adopt the voluntary subscription model, and clarify that all cost allocation issues fall within the paper hearing.",
+ "points": [
+  {"point": "NOVEC says FERC never addressed its argument for the voluntary, stakeholder-endorsed subscription model.", "quote": "The Commission did not respond to or consider NOVEC’s argument, which advocated for the adoption of the voluntary framework as an alternative to the RBP filed by PJM.", "pg": 2},
+  {"point": "Under the voluntary framework, developers could subscribe to pay backstop costs or accept an interruptible form of transmission service.", "quote": "interested developers would have the option to subscribe to pay the RBP costs or accept an interruptible form of transmission service.", "pg": 4},
+  {"point": "NOVEC says the voluntary model was the only proposal endorsed in stakeholder discussions out of more than a dozen considered.", "quote": "The voluntary RBP framework achieved a clear consensus during stakeholder discussions as the only proposal endorsed out of more than a dozen considered.", "pg": 4},
+  {"point": "The backstop charges only some LSEs based on the retail load they serve, which NOVEC calls undue discrimination.", "quote": "PJM has no authority to base its tariff rates and charges on the character of retail service provided by LSEs.", "pg": 2},
+  {"point": "NOVEC says the capacity shortfall has causes beyond data centers, so cost allocation that ignores them breaks cost causation.", "quote": "the causes of the present shortfall pre-date and are not solely due to the buildout of data centers.", "pg": 3}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report", "e-7-service-for-flexible-loads"], "text": "Rehearing request in PJM's separate backstop docket ER26-3380 on capacity for new large loads; its interruptible-service option echoes the E-7 flexible load service directive."},
+ "themes": ["adequacy", "cost", "flex"],
+ "figures": []
+}

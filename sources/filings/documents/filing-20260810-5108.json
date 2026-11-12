@@ -1,0 +1,17 @@
+{
+ "slug": "filing-20260810-5108",
+ "summary": "The Natural Gas Supply Association writes Chairman Swett on the RTO informational reports, asking FERC to have RTOs and ISOs add an assessment of whether gas pipeline infrastructure and fuel supply can support projected demand growth.",
+ "ask": "Direct RTOs and ISOs to supplement their resource adequacy informational reports with a section on gas infrastructure sufficiency, regional shortfall initiatives and generator fuel adequacy efforts.",
+ "points": [
+  {"point": "NGSA says gas generation in PJM's queue grew 1,458 percent in two years, from about 6,800 MW to 106,000 MW.", "quote": "the amount of natural gas generation in PJM’s interconnection queue has increased by a staggering 1,458% (surging from approximately 6,800 MW to 106,000 MW", "pg": 2},
+  {"point": "It says gas requests dominate MISO's expedited queue at 75 percent.", "quote": "capturing 75% of the new expedited capacity requests.", "pg": 2},
+  {"point": "It says delivery infrastructure, not supply, limits regional energy security, so generation cannot be separated from fuel assurance.", "quote": "Simply put, generation cannot be separated from fuel assurance.", "pg": 2},
+  {"point": "NGSA asks for three supplemental report items on pipeline assessment, regional initiatives and fuel adequacy.", "quote": "How they assess whether regional natural gas infrastructure can support the expected growth in natural gas for power generation.", "pg": 3}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-7-adequacy-report", "e-8-adequacy-report", "e-9-adequacy-report", "e-10-adequacy-report", "e-11-adequacy-report", "e-12-adequacy-report"], "text": "Comment on the 30-day adequacy reports all six show cause orders required, asking that those reports and future updates address gas pipeline and fuel assurance."},
+ "themes": ["adequacy"],
+ "figures": [
+  {"label": "Gas generation in PJM interconnection queue, two years earlier", "value": 6800, "unit": "MW", "quote": "surging from approximately 6,800 MW to 106,000 MW", "pg": 2},
+  {"label": "Gas generation in PJM interconnection queue now", "value": 106000, "unit": "MW", "quote": "surging from approximately 6,800 MW to 106,000 MW", "pg": 2}
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "slug": "filing-20260821-5281",
+ "summary": "The Office of the Ohio Consumers' Counsel protests PJM's Reliability Backstop Procurement in ER26-3380, saying it shifts data center capacity risk and cost to existing consumers. OCC asks FERC to reject it or set it for hearing or settlement using the Market Monitor's proposal as a starting point.",
+ "ask": "Reject PJM's Reliability Backstop Procurement filing or, in the alternative, accept it subject to refund and set it for evidentiary hearing or settlement proceedings starting from the IMM proposal.",
+ "points": [
+  {"point": "OCC says the backstop shifts the cost and risk of capacity for data center load to existing Ohio consumers.", "quote": "It will unreasonably shift the risks and costs associated with acquiring that new capacity from the data center loads to existing consumers in Ohio and elsewhere in PJM.", "pg": 2},
+  {"point": "OCC objects that PJM relies on state allocation, and Ohio has no statute governing large-load capacity cost allocation.", "quote": "Ohio has no statutes governing allocation of large load-related generation capacity costs among retail customers.", "pg": 7},
+  {"point": "OCC says nothing constrains suppliers from bidding the $555/MW-day cap, set against a 6,800 MW scarcity.", "quote": "The $555/MW-day (unforced capacity) offer cap is based on scarcity conditions and is significantly higher than the clearing price in the 2028/2029 auction of $325/MW-day", "pg": 9},
+  {"point": "OCC notes the IMM calculated data center demand raised other customers' capacity costs by about $23.1 billion over three auctions.", "quote": "data center demand increased capacity costs to other PJM customers by approximately $23.1 billion across the 2025/2026, 2026/2027, 2027/2028 Base Residual Auctions.", "pg": 12},
+  {"point": "OCC calls the 20 percent supplier shortage penalty too low and objects to passing penalties to load.", "quote": "PJM's proposal to limit the shortage penalty to 20% of the offer price for the capacity is also unjust, unreasonable and unduly discriminatory and preferential in favor of suppliers.", "pg": 15},
+  {"point": "OCC backs the IMM approach of 15-year bilateral contracts for data center load with all risks on the counterparties.", "quote": "the IMM proposes that LSEs serving the new AI and large data center loads enter into 15-year bilateral contracts in which the risks and costs of the new generation to be acquired to serve those loads are allocated only to the parties to those contracts.", "pg": 17},
+  {"point": "Alternatively OCC wants acceptance subject to refund and settlement or hearing built on the IMM proposal.", "quote": "if FERC accepts the filing, it should do so subject to refund and set the filing for hearing and/or settlement proceedings with directives that the parties use the IMM RBP proposal as a starting point.", "pg": 20}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-cost-recovery-agreement", "e-7-adequacy-report"], "text": "A protest in PJM's separate backstop docket ER26-3380 on who bears capacity risk for large loads, the same cost-shift concern behind E-7's cost-recovery directive and its resource adequacy report."},
+ "themes": ["adequacy", "cost", "retail"],
+ "figures": [
+  {"label": "PJM RBP maximum willingness-to-pay cap", "value": 555, "unit": "$/MW-day", "quote": "The $555/MW-day (unforced capacity) offer cap is based on scarcity conditions", "pg": 9},
+  {"label": "Capacity cost increase to other customers attributed to data centers (IMM)", "value": 23.1, "unit": "$ billion", "quote": "approximately $23.1 billion across the 2025/2026, 2026/2027, 2027/2028 Base Residual Auctions", "pg": 12},
+  {"label": "PJM forecast load increase 2024 to 2030", "value": 32, "unit": "GW", "quote": "forecasted load is expected to increase by 32 gigawats (\"GW\") between 2024 and", "pg": 4}
+ ]
+}

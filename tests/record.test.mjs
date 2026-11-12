@@ -65,7 +65,7 @@ test("index.html has a tab and a panel for every route app.js knows", () => {
   const html = read("docs", "index.html");
   const app = read("docs", "js", "app.js");
   const tabs = JSON.parse(app.match(/var TABS = (\[[^\]]+\])/)[1]);
-  assert.equal(tabs.length, 8);
+  assert.equal(tabs.length, 7);
   for (const t of tabs) {
     assert.match(html, new RegExp(`id="tab-${t}"`), `no tab button for ${t}`);
     assert.match(html, new RegExp(`id="panel-${t}"`), `no panel for ${t}`);
@@ -75,7 +75,7 @@ test("index.html has a tab and a panel for every route app.js knows", () => {
 test("a tab whose phone label is aria-hidden still has an accessible name", () => {
   const html = read("docs", "index.html");
   const tabs = [...html.matchAll(/<button class="tab"[^>]*>[\s\S]*?<\/button>/g)].map((m) => m[0]);
-  assert.equal(tabs.length, 8);
+  assert.equal(tabs.length, 7);
   for (const t of tabs) if (/tab-short" aria-hidden="true"/.test(t)) assert.match(t, /aria-label="[^"]+"/, `no accessible name: ${t.slice(0, 80)}`);
 });
 
@@ -92,8 +92,8 @@ test("a Filings deep link is settled before activate() rewrites the hash", () =>
     "filingHash must take the incoming route before activate() writes the URL");
 });
 
-test("routing to a whole proceeding clears a filer filter left by an earlier route", () => {
+test("routing to a proceeding clears a theme filter left by an earlier route", () => {
   const app = read("docs", "js", "app.js");
   const fn = app.slice(app.indexOf("function routeFiling(rest) {"), app.indexOf("function wireFilings() {"));
-  assert.match(fn, /applyFiler\(grp, chip \? chip\.getAttribute\("data-filer"\) : ""\)/, "a route without a filer must apply the unfiltered state");
+  assert.match(fn, /if \(filingTheme\) applyTheme\(panel, ""\)/, "a proceeding route must apply the unfiltered state");
 });

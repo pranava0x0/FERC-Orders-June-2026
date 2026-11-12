@@ -1,0 +1,416 @@
+{
+ "note": "Proceedings for the Filings tab. A catalog document joins the first group whose match prefix starts its docket; docs listed in tenets.json keep their group. Built by tools/build-record-data.mjs.",
+ "groups": [
+  {
+   "id": "sc-pjm",
+   "kind": "show-cause",
+   "title": "PJM show cause proceeding (E-7)",
+   "short": "PJM (E-7)",
+   "docket": "EL26-67-000",
+   "match": [
+    "EL26-67"
+   ],
+   "about": "The E-7 order asks whether PJM’s tariff stays just and reasonable without large-load rules on the five reforms. Everything filed in EL26-67 since June 18: the 30-day report, abeyance requests and the order granting them, answers and comments.",
+   "status": null,
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-7-show-cause",
+     "e-7-adequacy-report"
+    ],
+    "text": "This is the E-7 docket itself. PJM and its transmission owners must defend the tariff or file changes; after abeyance, responses are due Nov 16, 2026."
+   }
+  },
+  {
+   "id": "sc-miso",
+   "kind": "show-cause",
+   "title": "MISO show cause proceeding (E-8)",
+   "short": "MISO (E-8)",
+   "docket": "EL26-70-000",
+   "match": [
+    "EL26-70"
+   ],
+   "about": "The E-8 order asks whether MISO’s tariff stays just and reasonable without large-load rules on the five reforms. Everything filed in EL26-70 since June 18: the 30-day report, abeyance requests and the order granting them, answers and comments.",
+   "status": null,
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-8-show-cause",
+     "e-8-adequacy-report"
+    ],
+    "text": "This is the E-8 docket itself. MISO and its transmission owners must defend the tariff or file changes; after abeyance, responses are due Nov 16, 2026."
+   }
+  },
+  {
+   "id": "sc-spp",
+   "kind": "show-cause",
+   "title": "SPP show cause proceeding (E-9)",
+   "short": "SPP (E-9)",
+   "docket": "EL26-68-000",
+   "match": [
+    "EL26-68"
+   ],
+   "about": "The E-9 order asks whether SPP’s tariff stays just and reasonable without large-load rules on the five reforms. Everything filed in EL26-68 since June 18: the 30-day report, abeyance requests and the order granting them, answers and comments.",
+   "status": null,
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-9-show-cause",
+     "e-9-adequacy-report"
+    ],
+    "text": "This is the E-9 docket itself. SPP and its transmission owners must defend the tariff or file changes; after abeyance, responses are due Nov 20, 2026."
+   }
+  },
+  {
+   "id": "sc-caiso",
+   "kind": "show-cause",
+   "title": "CAISO show cause proceeding (E-10)",
+   "short": "CAISO (E-10)",
+   "docket": "EL26-71-000",
+   "match": [
+    "EL26-71"
+   ],
+   "about": "The E-10 order asks whether CAISO’s tariff stays just and reasonable without large-load rules on the five reforms. Everything filed in EL26-71 since June 18: the 30-day report, abeyance requests and the order granting them, answers and comments.",
+   "status": null,
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-10-show-cause",
+     "e-10-adequacy-report"
+    ],
+    "text": "This is the E-10 docket itself. CAISO and its transmission owners must defend the tariff or file changes; after abeyance, responses are due Nov 16, 2026."
+   }
+  },
+  {
+   "id": "sc-isone",
+   "kind": "show-cause",
+   "title": "ISO-NE show cause proceeding (E-11)",
+   "short": "ISO-NE (E-11)",
+   "docket": "EL26-72-000",
+   "match": [
+    "EL26-72"
+   ],
+   "about": "The E-11 order asks whether ISO-NE’s tariff stays just and reasonable without large-load rules on the five reforms. Everything filed in EL26-72 since June 18: the 30-day report, abeyance requests and the order granting them, answers and comments.",
+   "status": null,
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-11-show-cause",
+     "e-11-adequacy-report"
+    ],
+    "text": "This is the E-11 docket itself. ISO-NE and its transmission owners must defend the tariff or file changes; after abeyance, responses are due Nov 16, 2026."
+   }
+  },
+  {
+   "id": "sc-nyiso",
+   "kind": "show-cause",
+   "title": "NYISO show cause proceeding (E-12)",
+   "short": "NYISO (E-12)",
+   "docket": "EL26-69-000",
+   "match": [
+    "EL26-69"
+   ],
+   "about": "The E-12 order asks whether NYISO’s tariff stays just and reasonable without large-load rules on the five reforms. Everything filed in EL26-69 since June 18: the 30-day report, abeyance requests and the order granting them, answers and comments.",
+   "status": null,
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-12-show-cause",
+     "e-12-adequacy-report"
+    ],
+    "text": "This is the E-12 docket itself. NYISO and its transmission owners must defend the tariff or file changes; after abeyance, responses are due Nov 16, 2026."
+   }
+  },
+  {
+   "id": "sc-multi",
+   "kind": "show-cause",
+   "title": "Filed in several show cause dockets",
+   "short": "Several dockets",
+   "docket": "EL26-67 to EL26-72",
+   "match": [],
+   "about": "Interventions, comments and motions that one party filed in more than one of the six show cause dockets.",
+   "status": null,
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-7-show-cause",
+     "e-8-show-cause",
+     "e-9-show-cause",
+     "e-10-show-cause",
+     "e-11-show-cause",
+     "e-12-show-cause"
+    ],
+    "text": "Each of these was filed in two or more of the six show cause dockets, so it answers several orders at once."
+   }
+  },
+  {
+   "id": "pjm-colocation",
+   "title": "PJM co-location compliance",
+   "short": "PJM co-location",
+   "docket": "EL25-49",
+   "about": "Co-location means a large load, usually a data center, built at a power plant and served partly by it. FERC set rules for it in PJM; these filings carry them out.",
+   "status": "PJM filed partial compliance Aug 17, 2026 and answered three limited protests Oct 14. The rest of its compliance is due Nov 16.",
+   "kind": "related",
+   "match": [
+    "EL25-49",
+    "ER26-1479",
+    "ER26-3537"
+   ],
+   "link": {
+    "relation": "implements",
+    "anchors": [
+     "e-2-one-of-three-new-co-location",
+     "e-2-interim-nits"
+    ],
+    "text": "E-2, decided the same day as the six orders, finalized PJM’s three co-location transmission services; the six orders point to them as the model. PJM’s compliance filing is due Nov 16, alongside E-7."
+   }
+  },
+  {
+   "id": "pjm-large-load-definition",
+   "title": "PJM Large Load definition, Registry and Interim Resource Adequacy Service",
+   "short": "PJM Large Load registry",
+   "docket": "ER26-3515",
+   "about": "PJM asked FERC to define a Large Load, keep a registry of them, and create a service that would curtail such loads first in a supply emergency. FERC kept the definition and the registry and rejected the rest.",
+   "status": "PJM filed compliance and Ohio requested rehearing on Nov 9. FERC set comments on compliance for Nov 30 at 5 p.m. Eastern.",
+   "kind": "related",
+   "match": [
+    "ER26-3515"
+   ],
+   "link": {
+    "relation": "parallel",
+    "anchors": [
+     "e-7-application-study-process"
+    ],
+    "text": "Defines which PJM loads count as large and how PJM learns about them, which every application and study rule in E-7 depends on. Filed under section 205, outside EL26-67."
+   }
+  },
+  {
+   "id": "pjm-backstop",
+   "title": "PJM Reliability Backstop Procurement",
+   "short": "PJM backstop auction",
+   "docket": "ER26-3380-000",
+   "about": "PJM, the grid operator for 13 states and D.C., proposed a backstop purchase of new power plants to cover a projected supply shortfall as large loads grow. On Sep 29 FERC accepted it for filing, suspended it to Feb 28, 2027 subject to refund, and set three cost issues for a paper hearing.",
+   "status": "FERC suspended the procurement on Sep 29. PJM filed amendments Oct 29 and refiled the same proposal Nov 9 under the §205 code in ER27-454-000. Comments are due Nov 30 at 5 p.m. Eastern.",
+   "kind": "related",
+   "match": [
+    "ER26-3380-000",
+    "ER27-330",
+    "ER27-454"
+   ],
+   "link": {
+    "relation": "parallel",
+    "anchors": [
+     "e-7-adequacy-report"
+    ],
+    "text": "PJM’s July 20 E-7 adequacy report presents this procurement, begun before the order, as its main resource-adequacy effort."
+   }
+  },
+  {
+   "id": "pjm-backstop-rehearing",
+   "title": "Rehearing of FERC's PJM Reliability Backstop Procurement order",
+   "short": "PJM auction: rehearing",
+   "docket": "ER26-3380-001",
+   "about": "Seven parties ask FERC to reconsider its September order accepting PJM's backstop procurement. Asking for rehearing is the required step before a party can take an order to court.",
+   "status": "Seven requests, filed Oct 13 to Oct 29, 2026. FERC had not ruled on any as of Nov 9.",
+   "kind": "related",
+   "match": [
+    "ER26-3380-001"
+   ],
+   "link": {
+    "relation": "parallel",
+    "anchors": [
+     "e-7-adequacy-report"
+    ],
+    "text": "Challenges to FERC’s September order on the backstop procurement, which PJM’s E-7 adequacy report presents as its main resource-adequacy effort."
+   }
+  },
+  {
+   "id": "exelon-prompt-auction",
+   "title": "Exelon complaint seeking a prompt PJM capacity auction",
+   "short": "Exelon complaint",
+   "docket": "EL27-11-000",
+   "about": "Exelon, whose utilities serve more than 10.7 million customers in PJM, asks FERC to run PJM's capacity auction two months before each delivery year instead of three years ahead.",
+   "status": "Filed Nov 3, 2026. Exelon asks for an order by Jan 31, 2027; FERC had not acted as of Nov 9.",
+   "kind": "related",
+   "match": [
+    "EL27-11"
+   ],
+   "link": {
+    "relation": "parallel",
+    "anchors": [
+     "e-7-adequacy-report"
+    ],
+    "text": "A separate section 206 complaint on capacity-auction timing; it bears on the resource-adequacy topic of E-7’s 30-day report."
+   }
+  },
+  {
+   "id": "miso-lars",
+   "title": "MISO Large Load Addition Resource Study (LARS)",
+   "short": "MISO LARS",
+   "docket": "ER27-25-000",
+   "about": "MISO, the grid operator for 15 states in the Midwest and South, wants to study a new load of 200 MW or more together with the power plant built to serve it, in about 120 days and outside its multi-year generator queue.",
+   "status": "MISO answered protests on Nov 9 and asked FERC to accept LARS. The requested effective date is Dec 2.",
+   "kind": "related",
+   "match": [
+    "ER27-25"
+   ],
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-8-show-cause",
+     "e-8-proximate-generation-service"
+    ],
+    "text": "MISO is answering E-8 in separate section 205 filings. LARS studies a large load and the generation built to serve it together, MISO’s answer to the order’s proximate-generation item."
+   }
+  },
+  {
+   "id": "miso-zgia",
+   "kind": "related",
+   "title": "MISO zero-injection generator interconnection agreement",
+   "short": "MISO zero-injection GIA",
+   "docket": "ER26-3552-000",
+   "match": [
+    "ER26-3552"
+   ],
+   "about": "MISO proposed a generator interconnection agreement for generation that serves on-site load and injects nothing into the grid. FERC staff found the filing deficient on Oct 9 and asked for more information.",
+   "status": "FERC staff issued a deficiency letter on Oct 9, 2026.",
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-8-show-cause"
+    ],
+    "text": "A MISO section 205 filing for generation that serves on-site load and injects nothing into the grid. It creates no new transmission service; MISO lists it among its pieces answering E-8."
+   }
+  },
+  {
+   "id": "miso-irr",
+   "kind": "related",
+   "title": "MISO interconnection reliability requirements for large loads",
+   "short": "MISO load reliability rules",
+   "docket": "ER26-3650-000",
+   "match": [
+    "ER26-3650"
+   ],
+   "about": "MISO proposed reliability requirements that large loads must meet to connect. State regulators, consumer advocates and clean-energy groups protested; data centers, industrial customers and municipal utilities answered.",
+   "status": "Answers through Nov 3, 2026; no FERC order as of Nov 12.",
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-8-application-study-operating"
+    ],
+    "text": "MISO says this filing is responsive to concerns raised in EL26-70: the ongoing operating requirements a large load must meet once connected, E-8’s first item."
+   }
+  },
+  {
+   "id": "spp-chills",
+   "kind": "related",
+   "title": "SPP conditional large-load service credits (CHILLS)",
+   "short": "SPP CHILLS",
+   "docket": "ER27-432",
+   "match": [
+    "ER27-432"
+   ],
+   "about": "SPP proposed revenue credits for conditional large-load service in its western zones, then corrected one rate sheet on Nov 10.",
+   "status": "Filed Nov 6 and amended Nov 10, 2026.",
+   "link": {
+    "relation": "parallel",
+    "anchors": [
+     "e-9-new-services-for-flexible-loads",
+     "e-9-cost-recovery-crediting"
+    ],
+    "text": "SPP extends CHILLS, the conditional large-load service E-9 builds on, to its West Region. The filing does not cite E-9 or EL26-68."
+   }
+  },
+  {
+   "id": "duke-nitsa",
+   "title": "Duke Energy Carolinas network service agreement and large-load shortfall payments",
+   "short": "Duke large-load charges",
+   "docket": "ER26-2691-000",
+   "about": "Duke Energy Carolinas' network service agreement adds a payment from customers of 100 MW or more who use less transmission than they committed to.",
+   "status": "Accepted Oct 9, 2026, effective Aug 1, 2026.",
+   "kind": "related",
+   "match": [
+    "ER26-2691"
+   ],
+   "link": {
+    "relation": "parallel",
+    "anchors": [
+     "e-8-minimum-cost-recovery-security"
+    ],
+    "text": "A non-RTO utility writing minimum-charge protections for large loads into a network service agreement, the same cost-shift protection the orders ask RTOs to consider."
+   }
+  },
+  {
+   "id": "reliability-conference",
+   "title": "2026 FERC reliability technical conference: integrating large loads",
+   "short": "Reliability conference",
+   "docket": "AD26-8-000",
+   "about": "FERC's annual reliability conference, run by the commissioners. Its first panel covered running the grid with fast-growing large loads such as data centers.",
+   "status": "Held Oct 21, 2026, with Panel 1 on integrating large loads.",
+   "kind": "related",
+   "match": [
+    "AD26-8"
+   ],
+   "link": {
+    "relation": "parallel",
+    "anchors": [
+     "e-7-service-for-flexible-loads"
+    ],
+    "text": "FERC’s technical conference on integrating large loads reliably, including the flexible operation the orders’ new services depend on."
+   }
+  },
+  {
+   "id": "pjm-governance",
+   "title": "PJM governance and stakeholder reform vote",
+   "short": "PJM governance vote",
+   "docket": "AD26-7-000",
+   "about": "After FERC's July conference on how PJM makes decisions, PJM's members voted on a reform package. PJM told FERC the states do not find the result satisfactory.",
+   "status": "PJM reported the Members' Sept 30, 2026 vote to FERC on Oct 1. The Board has not said what it will file.",
+   "kind": "related",
+   "match": [
+    "AD26-7"
+   ],
+   "link": {
+    "relation": "context",
+    "anchors": [],
+    "text": "PJM governance reform runs beside the orders: who decides PJM’s section 205 filings, including its E-7 response."
+   }
+  },
+  {
+   "id": "pjm-stakeholder",
+   "kind": "related",
+   "title": "PJM stakeholder record on its show cause response",
+   "short": "PJM stakeholder record",
+   "docket": "PJM Members Committee",
+   "match": [
+    "PJM stakeholder record"
+   ],
+   "about": "Documents from PJM’s own stakeholder process as it prepared its show cause response: Members Committee agendas, the legal report and a letter from large customers to the PJM Board.",
+   "status": "PJM called a special Members Committee for Nov 5, 2026.",
+   "link": {
+    "relation": "context",
+    "anchors": [
+     "e-7-show-cause"
+    ],
+    "text": "The stakeholder process PJM ran before deciding what to file in response to E-7 by Nov 16."
+   }
+  },
+  {
+   "id": "senate-oversight",
+   "kind": "related",
+   "title": "Senate oversight hearing on FERC, July 22, 2026",
+   "short": "Senate oversight hearing",
+   "docket": "S. Hrg. 119-494",
+   "match": [
+    "S. Hrg"
+   ],
+   "about": "Senate Energy and Natural Resources Committee oversight hearing with the FERC commissioners, including questions on the large-load orders.",
+   "status": null,
+   "link": {
+    "relation": "context",
+    "anchors": [],
+    "text": "Commissioners explained the June orders to Congress, under questioning about cost, timing and state authority."
+   }
+  }
+ ]
+}

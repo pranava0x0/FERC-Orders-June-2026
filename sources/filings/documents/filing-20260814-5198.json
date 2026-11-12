@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20260814-5198",
+ "summary": "The Organization of MISO States comments on MISO's informational report to stress that states hold primary responsibility for resource adequacy and affordability, and that state proceedings address large-load cost shifting outside FERC jurisdiction.",
+ "ask": null,
+ "points": [
+  {"point": "OMS says many resource adequacy and affordability measures sit in state proceedings that MISO's report does not reflect.", "quote": "many important resource adequacy and affordability policy and implementation issues are being addressed through state proceedings and utility-specific processes", "pg": 2},
+  {"point": "OMS says large load growth does not signal failure of the existing state and MISO resource adequacy framework.", "quote": "these challenges do not indicate a failure of the states and their collaboration with MISO’s underlying resource adequacy framework", "pg": 2},
+  {"point": "OMS calls for planning that evaluates load additions with rigor comparable to new generation.", "quote": "planning processes that evaluate load additions using a level of rigor comparable to that applied to new generation resources", "pg": 3},
+  {"point": "OMS cites state tariffs, special contracts and statutes that guard against cost shifting from new large loads.", "quote": "state commissions are implementing retail tariffs, approving special contracts, requiring resource adequacy demonstrations, establishing interruptible service requirements", "pg": 3},
+  {"point": "OMS says existing interconnection processes should stay primary, with expedited paths narrowly tailored.", "quote": "existing interconnection processes should remain the primary pathway for connecting new resources", "pg": 4}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-8-adequacy-report"], "text": "State regulators' comments on MISO's July 20 informational report, filed under the E-8 directive on ensuring adequate generation for existing and new large loads."},
+ "themes": ["adequacy", "cost"]
+}

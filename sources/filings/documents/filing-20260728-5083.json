@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20260728-5083",
+ "summary": "Wabash Valley Power Association asks FERC to correct the E-8 order by removing it from the caption and listing it with the non-jurisdictional transmission owners in footnote 11, because it ceased to be a public utility on January 1, 2025.",
+ "ask": "Issue an errata removing Wabash from the caption and adding it to footnote 11, or alternatively rescind the show cause order as to Wabash.",
+ "points": [
+  {"point": "Wabash says it does not dispute the need to address large and co-located load service.", "quote": "WVPA desires to clarify that it does not dispute the need for the Commission to address issues surrounding service to large load and co-located load", "pg": 2},
+  {"point": "Wabash says it left public utility status on January 1, 2025, as an entity owned by exempt cooperatives.", "quote": "it ceased to be a public utility on January 1, 2025 because it became exempt from the Federal Power Act", "pg": 4},
+  {"point": "Wabash says it is similarly situated to the non-jurisdictional owners listed in footnote 11.", "quote": "WVPA is a PTO within MISO, however, it is a PTO that is similarly situated to all of the other non-jurisdictional entities listed in footnote 11 of the Order.", "pg": 4},
+  {"point": "Wabash cites FERC's treatment of a similar ISO-NE request and its CAISO rescission precedent.", "quote": "an errata to the Order would be consistent with the Commission’s treatment of a request from a similarly situated non-jurisdictional entity in Docket No. EL26-72-000", "pg": 5},
+  {"point": "Wabash asks for the two corrections and, alternatively, rescission as to Wabash.", "quote": "removes WVPA from the caption of Docket No. EL26-70-000, which intended to identify only MISO and jurisdictional PTOs; and (2) adds WVPA in the list of non-jurisdictional PTO entities in footnote 11.", "pg": 6}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-8-show-cause"], "text": "Seeks correction of who is a named respondent to the E-8 show cause order; FERC granted it in the August 13, 2026 errata notice."},
+ "themes": ["procedure"]
+}

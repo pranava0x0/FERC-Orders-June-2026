@@ -1,0 +1,13 @@
+{
+  "slug": "comments-er27-25-dte",
+  "summary": "DTE Electric, which serves about two million Michigan customers, comments in support of MISO's October 2 LARS filing and asks FERC to accept it as proposed, citing its entry requirements and its role in answering the show cause order.",
+  "ask": "Accept MISO's LARS filing as proposed.",
+  "points": [
+    {"point": "DTE Electric supports LARS as a reasonable way to evaluate load additions and paired generation.", "quote": "DTE Electric supports MISO's proposal and believes the LARS framework represents a reasonable approach to evaluating the transmission, operational, and resource adequacy impacts", "pg": 1},
+    {"point": "Studying load and generation together can show different impacts than stand-alone studies.", "quote": "jointly planned and electrically proximate resources may produce materially different system impacts than traditional stand-alone studies.", "pg": 2},
+    {"point": "DTE points to deposit, size, site control and pairing requirements as safeguards against speculative requests.", "quote": "Participating projects must satisfy applicable deposit, minimum size, site control, and commercial operation requirements.", "pg": 3},
+    {"point": "DTE notes any eligible entity may be the interconnection customer for the generation.", "quote": "permitting the interconnection customer responsible for the generation component to be any eligible entity", "pg": 3}
+  ],
+  "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause"], "text": "Supports MISO's LARS filing as compliance with the E-8 show cause order, which DTE says directs a just and reasonable framework for integrating large and co-located loads."},
+  "themes": ["proximate", "study"]
+}

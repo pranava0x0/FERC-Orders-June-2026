@@ -41,7 +41,7 @@ const JSON_OUT = argv.includes("--json");
 const WAIT = 700;
 
 
-const EXPECTED_TABS = ["overview", "timeline", "reforms", "dockets", "filings", "commissioners", "comments", "news"];
+const EXPECTED_TABS = ["overview", "dockets", "filings", "news", "timeline", "commissioners", "comments"];
 const VIEWPORTS = [
   { name: "mobile", width: 375, height: 812, isMobile: true, hasTouch: true, deviceScaleFactor: 2 },
   { name: "tablet", width: 768, height: 1024, isMobile: true, hasTouch: true, deviceScaleFactor: 2 },
@@ -54,17 +54,15 @@ const VIEWPORTS = [
 // Element or null. `label` is what the report prints for the step.
 const Q = (sel) => `document.querySelector(${JSON.stringify(sel)})`;
 const GOALS = [
-  { id: "a", goal: "Current status line of the §206 track (Where things stand)", candidates: [
-    { steps: [], target: `(document.querySelector('.stand-row a[href$="/sc6"]')||{}).closest?.('.stand-row')?.querySelector('.stand-line')||null` },
-    { steps: [{ label: "tab Timeline", click: Q("#tab-timeline") }], target: Q('.trk-card[data-track="sc6"] .trk-status') },
+  { id: "a", goal: "Where each operator stands (status of every show cause proceeding)", candidates: [
+    { steps: [], target: Q(".ot tbody tr") },
   ] },
   { id: "b", goal: "Next deadline", candidates: [
     { steps: [], target: `(()=>{const e=document.getElementById('masthead-fresh');return e&&!e.hidden?e:null})()` , note: "masthead chip" },
     { steps: [], target: Q('.proc-step[aria-current="date"]'), note: "procedural board 'next' row" },
   ] },
   { id: "c", goal: "Filing matrix (procedural board, what has been filed)", candidates: [
-    { steps: [], target: Q("#fm-h") },
-    { steps: [{ label: "Overview jump: Filing matrix", click: Q('.jump-btn[data-jump="#fm-h"]') }], target: Q("#fm-h") },
+    { steps: [{ label: "open 'The 60-day clock'", open: "__accWith('#fm-h')" }], target: Q("#fm-h") },
   ] },
   { id: "d", goal: "Commissioner June 18 statements", candidates: [
     { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }], target: Q(".commish-list .commish-rowcard") },
@@ -73,9 +71,8 @@ const GOALS = [
       target: Q("#panel-dockets details.docket details.dcom[open] .commish-row") },
   ] },
   { id: "e", goal: "Newest timeline event (latest dated on or before today)", candidates: [
+    { steps: [], target: Q(".now-latest li") , note: "Now: Latest in the record" },
     { steps: [{ label: "tab Timeline", click: Q("#tab-timeline") }], target: "__newestEvent()" },
-    { steps: [{ label: "Where-things-stand link for that event's track", click: "__newestTrackLink()" }], target: "__newestEvent()" },
-    { steps: [{ label: "tab Timeline", click: Q("#tab-timeline") }, { label: "Jump to the latest event", click: Q("#tl-jump") }], target: "__newestEvent()" },
   ] },
   { id: "f", goal: "EL26-67 order PDF link (Dockets tab)", candidates: [
     { steps: [{ label: "tab Dockets", click: Q("#tab-dockets") }, { label: "open the EL26-67 card", open: "__docket('EL26-67')" }],
@@ -92,7 +89,7 @@ const GOALS = [
       target: `[...document.querySelectorAll('#cmsec-summaries .cm-row:not([hidden])')].find(r=>/Constellation/i.test(r.querySelector('.cm-row-org')?.textContent||''))||null` },
   ] },
   { id: "i", goal: "Latest news / Discourse quote", candidates: [
-    { steps: [{ label: "tab Discourse", click: Q("#tab-news") }, { label: "open 'Commentary themes'", open: "__accWith('.wave')" }], target: "__latestQuote()" },
+    { steps: [{ label: "tab Discourse", click: Q("#tab-news") }, { label: "By date", click: Q('.dx-views .who-chip[data-view="date"]') }], target: Q("#dx-view .dx") },
   ] },
   { id: "j", goal: "Newest spoken commissioner quote (video, timestamped)", candidates: [
     { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }], target: Q("#panel-commissioners .appear .sq") },
@@ -106,26 +103,33 @@ const GOALS = [
       target: "(__vtoc('e-LMMOKOhcc')||document).querySelector('ol li')" },
   ] },
   { id: "m", goal: "A protest's position in MISO LARS (Google), with its page", candidates: [
-    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open MISO LARS", open: Q("#fg-miso-lars") },
-      { label: "filer chip Google", click: Q('#fg-miso-lars .who-chip[data-filer="Google"]') }], target: "__tenetBy('miso-lars', 'Google')" },
-    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "jump MISO LARS", click: Q('.jump-btn[data-jump="#fg-miso-lars"]') },
-      { label: "filer chip Google", click: Q('#fg-miso-lars .who-chip[data-filer="Google"]') }], target: "__tenetBy('miso-lars', 'Google')" },
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open MISO LARS", open: Q("#fg-miso-lars") }, { label: "open Google's protest", open: Q("#fd-protest-er27-25-google") }],
+      target: Q("#fd-protest-er27-25-google .pts .pq-pg") },
   ] },
   { id: "n", goal: "What FERC held in the Oct 9 Large Load order (first holding)", candidates: [
-    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "jump to the order", click: Q('.jump-btn[data-jump="#fg-pjm-large-load-definition"]') }],
-      target: "__tenetBy('pjm-large-load-definition', 'FERC order')" },
-    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open the order", open: Q("#fg-pjm-large-load-definition") }], target: "__tenetBy('pjm-large-load-definition', 'FERC order')" },
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open PJM Large Load registry", open: Q("#fg-pjm-large-load-definition") }, { label: "open FERC's order", open: Q("#fd-order-er26-3515-pjm-large-load") }],
+      target: Q("#fd-order-er26-3515-pjm-large-load .pts li") },
   ] },
   { id: "o", goal: "What PJM filed Nov 9", candidates: [
     { steps: [], target: Q(".filing-brief p") },
   ] },
   { id: "p", goal: "PJM’s compliance filing with a page citation", candidates: [
-    { steps: [{ label: "PJM filing by page", click: Q('.filing-brief a[href^="#filings/"]') }],
-      target: "__tenetBy('pjm-large-load-definition', 'PJM')" },
+    { steps: [{ label: "PJM filing", click: Q('.filing-brief a[href^="#filings/"]') }, { label: "open the compliance filing", open: Q("#fd-compliance-er26-3515-pjm") }],
+      target: Q("#fd-compliance-er26-3515-pjm .pq-pg") },
+  ] },
+  { id: "r", goal: "How a filing connects to the June orders (the order directive it bears on)", candidates: [
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open MISO LARS", open: Q("#fg-miso-lars") }, { label: "open MISO's LARS filing", open: Q("#fd-filing-er27-25-miso-lars") }],
+      target: Q("#fd-filing-er27-25-miso-lars .fd-link .oa") },
+  ] },
+  { id: "s", goal: "Every filing on one theme (who pays for upgrades)", candidates: [
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "theme chip", click: Q('.th-chips .who-chip[data-theme="cost"]') }], target: Q(".fdoc:not([hidden])") },
+  ] },
+  { id: "t", goal: "What the orders require, by reform and operator", candidates: [
+    { steps: [{ label: "tab Orders", click: Q("#tab-dockets") }], target: Q(".om-chips a") },
   ] },
   { id: "q", goal: "Why PJM refiled the backstop", candidates: [
-    { steps: [{ label: "Backstop refiling", click: Q('.filing-brief a[href^="#filings/pjm-backstop/"]') }],
-      target: "__tenetBy('pjm-backstop', 'PJM')" },
+    { steps: [{ label: "Backstop refiling", click: Q('.filing-brief a[href^="#filings/pjm-backstop"]') }, { label: "open the refiling", open: Q("#fd-refiling-er27-454-pjm-backstop") }],
+      target: Q("#fd-refiling-er27-454-pjm-backstop .fd-sum") },
   ] },
 ];
 
@@ -137,7 +141,7 @@ window.__tenetBy = (g, filer) => [...document.querySelectorAll('#fg-' + g + ' .t
 window.__accWith = (sel) => [...document.querySelectorAll('details.acc')].find(d => d.querySelector(sel) && d.offsetParent !== null) || null;
 window.__newestIdx = () => { const D = window.FERC_DATA, today = new Date().toISOString().slice(0, 10); let best = -1;
   (D.timeline || []).forEach((e, i) => { const iso = String(e.iso || '').slice(0, 10); if (iso && iso <= today && (best < 0 || iso >= String(D.timeline[best].iso).slice(0, 10))) best = i; }); return best; };
-window.__newestEvent = () => { const i = __newestIdx(); return i < 0 ? null : (document.querySelectorAll('#panel-timeline .tl-item')[i] || null); };
+window.__newestEvent = () => { const i = __newestIdx(); if (i < 0) return null; const iso = String(window.FERC_DATA.timeline[i].iso); return document.getElementById('tl-' + iso); };
 window.__newestTrackLink = () => { const i = __newestIdx(); const t = i < 0 ? null : window.FERC_DATA.timeline[i].track; return t ? document.querySelector('.stand-link[href="#timeline/track/' + t + '"]') : null; };
 window.__latestQuoteText = () => { const D = window.FERC_DATA; let best = null;
   (D.voiceThemes || []).forEach(t => (t.quotes || []).forEach(q => { const s = D.SOURCES[q.src] || {}; const d = s.published || s.captured || '';

@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20260720-5172",
+ "summary": "Exelon and FirstEnergy request rehearing of the E-7 order's preliminary finding that PJM's tariff is unjust without new transmission services for flexible large loads, arguing the record lacks evidence, the services shift costs, and FERC exceeds its jurisdiction.",
+ "ask": "Grant rehearing and revoke the preliminary finding that the new co-location transmission services should be extended to flexible large loads or any other large loads.",
+ "points": [
+  {"point": "Exelon and FirstEnergy challenge the finding that PJM's tariff lacks services for flexible large loads, calling it arbitrary and not reasoned.", "quote": "The Commission’s findings that the PJM Tariff appears to be unjust and unreasonable without these new transmission service options is arbitrary and capricious and not based upon reasoned decision making.", "pg": 1},
+  {"point": "They say the new services would only cut transmission charges for large loads at other customers' expense.", "quote": "the creation of these new forms of transmission service will not hasten or improve service and instead merely reduce transmission charges for large loads at the expense of other customers.", "pg": 2},
+  {"point": "They say FERC's burden under section 206 is unmet because the record shows no inability to get service under existing Network Service.", "quote": "There is No Evidence In the Record That Flexible Large Loads or Any Other Large Loads Are Unable to Obtain Reliable, Timely, and Reasonably Priced Service Using the Existing Network Service Construct.", "pg": 3},
+  {"point": "They say large loads rely on the whole embedded system, so embedded costs should be charged for their full gross load.", "quote": "Flexible Large Loads and Other Large Loads Rely Upon the Entire Embedded Transmission System to Serve Their Full Gross Load.", "pg": 6},
+  {"point": "They argue the new services intrude on state retail authority.", "quote": "FERC’s CD Services similarly interfere with States’ regulation of the terms of sale at retail", "pg": 30}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-7-service-for-flexible-loads"], "text": "Rehearing request aimed directly at the E-7 flexible large load transmission service finding and its reliance on the December 2025 co-location services."},
+ "themes": ["flex", "retail", "cost"],
+ "figures": []
+}

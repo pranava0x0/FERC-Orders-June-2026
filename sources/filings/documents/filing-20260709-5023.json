@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20260709-5023",
+ "summary": "An individual intervenor filing as L.M. Marlowe submits a second supplemental technical comment urging FERC to judge show cause responses against physical stability, observability and cost causation, and describing a frequency-response absorption standard evaluated at minimum system inertia.",
+ "ask": "Hold every framework, tariff and methodology before the Commission to the full requirements of the show cause orders, including physical stability and observability, and consider the described absorption standard.",
+ "points": [
+  {"point": "Marlowe says a response fixing only commercial access without addressing physical stability and observability does not meet the show cause orders.", "quote": "A submission that resolves the commercial or market-access dimension of large-load integration without demonstrably addressing the physical stability and observability questions that gave rise to these proceedings", "pg": 1},
+  {"point": "She argues a correlated block of dispersed computational loads could become the largest credible contingency, replacing the largest generator.", "quote": "Where the coordinated-drop magnitude of the block exceeds the loss-of-largest- unit value, the largest credible contingency is no longer a generator", "pg": 2},
+  {"point": "She proposes testing any behaviorally coupled load block at a credible minimum-inertia condition.", "quote": "the absorption of any behaviorally-coupled load block must be evaluated at a credible minimum-inertia condition", "pg": 2},
+  {"point": "She says detecting unaccounted-for load and reassigning its cost happen in one settlement calculation.", "quote": "the quantity that identifies unaccounted-for load and the quantity that reassigns its cost are the same quantity.", "pg": 3}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-7-show-cause", "e-7-application-study-process"], "text": "Comment filed in the show cause dockets proposing a stability test for large-load interconnection studies, bearing on the operational requirements the June orders ask RTOs to address."},
+ "themes": ["study", "cost", "registry"],
+ "figures": []
+}

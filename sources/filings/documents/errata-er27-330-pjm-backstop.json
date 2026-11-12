@@ -1,0 +1,33 @@
+{
+ "slug": "errata-er27-330-pjm-backstop",
+ "summary": "PJM files errata in ER27-330 correcting the effective date entered in metadata for new Attachment DD section 18.3A and adding section 16.3 to the caption and heading of its October 29 reliability backstop transmittal letter.",
+ "ask": "Accept the corrected tariff record metadata (effective January 29, 2027) and the corrected transmittal letter showing the waiver covers Attachment DD sections 16.2 and 16.3.",
+ "points": [
+  {
+   "point": "PJM entered January 15, 2027 instead of January 29, 2027 as the effective date for section 18.3A in the metadata.",
+   "quote": "PJM incorrectly entered an effective date of January 15, 2027, instead of January 29, 2027.",
+   "pg": 1
+  },
+  {
+   "point": "The October 29 filing sought effective dates of January 29, 2027 for section 18.3A and February 28, 2027 for the rest.",
+   "quote": "proposed new Tariff, Attachment DD, section 18.3A become effective January 29, 2027, and the remainder of the proposed Tariff revisions become effective February 28, 2027.",
+   "pg": 1
+  },
+  {
+   "point": "PJM's one-time waiver request covers sections 16.2 and 16.3, and applies if the 2029/2030 Base Residual Auction clears short.",
+   "quote": "PJM seeks a one-time waiver of Tariff, Attachment DD, sections 16.2 and 16.3 upon completion of the 2029/2030 Base Residual Auction in the event such auction clears short.",
+   "pg": 2
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-7-adequacy-report"
+  ],
+  "text": "Corrects PJM's October 29 Reliability Backstop Procurement amendments in ER27-330, the capacity adequacy track that runs beside the E-7 report on ensuring adequate generation."
+ },
+ "themes": [
+  "adequacy",
+  "procedure"
+ ]
+}

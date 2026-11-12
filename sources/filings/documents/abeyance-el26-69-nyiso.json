@@ -1,0 +1,17 @@
+{
+ "slug": "abeyance-el26-69-nyiso",
+ "summary": "FERC grants the abeyance motions of NYISO, the New York Transmission Owners and the Non-Incumbent Transmission Owners and holds the EL26-69 show cause proceeding for 90 days, moving responses to November 16, 2026 and answers to December 16, 2026.",
+ "ask": null,
+ "points": [
+  {"point": "FERC grants all three abeyance motions filed August 3 and holds the proceeding for 90 days.", "quote": "we grant the Abeyance Motions filed by NYISO, NYTOs, and Non-Incumbent TOs and hold this proceeding in abeyance for", "pg": 1},
+  {"point": "NYISO plans a Management Committee vote on October 28 and a section 205 filing on November 16, 2026.", "quote": "with the final proposal presented to the Management Committee on October 28, 2026.", "pg": 1},
+  {"point": "FERC finds the movants met the order's test of describing the future filing and giving a date.", "quote": "have provided a robust description of the filings they anticipate making, provided a date by which they intend to make such filings, and described the on-going stakeholder process", "pg": 1},
+  {"point": "New due dates are November 16, 2026 for responses and December 16, 2026 for answers.", "quote": "responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026.", "pg": 1},
+  {"point": "A timely section 205 filing suspends the filer's duty to respond, and the proceeding stays in abeyance.", "quote": "the obligation of the respondent(s) who have made such an FPA section 205 filing to file a response to the Show Cause Order will be suspended", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-12-show-cause", "e-12-adequacy-report"], "text": "Moves the E-12 NYISO 60-day show cause response from August 17 to November 16, 2026, using the 90-day abeyance option the June 18 order offered for stakeholder-developed section 205 filings."},
+ "themes": ["procedure"],
+ "figures": [
+  {"label": "Abeyance granted for NYISO show cause proceeding", "value": 90, "unit": "days", "quote": "hold this proceeding in abeyance for 90 days.", "pg": 1}
+ ]
+}

@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20260728-5071",
+ "summary": "The Indicated PJM Transmission Owners move to hold their response deadline in the E-7 show cause proceeding in abeyance for 90 days, to November 16, 2026, so they can prepare section 205 filings on cost recovery agreements, new service rates and transparency.",
+ "ask": "Hold the deadline to respond in abeyance until November 16, 2026, shorten the comment period to five days, and rule by August 10, 2026.",
+ "points": [
+  {"point": "The Transmission Owners ask for a 90-day abeyance to November 16, 2026 to develop section 205 filings.", "quote": "respectfully move to hold the deadline to respond in the above- captioned proceeding in abeyance for 90 days, until November 16, 2026.", "pg": 1},
+  {"point": "They expect to file a pro forma cost recovery agreement and rates for flexible and electrically proximate large load services, with penalties for exceeding contractual limits.", "quote": "will contain a pro forma cost recovery agreement(s), as well as rates for new transmission services for “flexible large loads” and “electrically proximate large loads or co-located loads.”", "pg": 4},
+  {"point": "They say a cost recovery agreement raises open issues, including overlap with bilateral retail agreements and how to set each customer's minimum contribution.", "quote": "the specific mechanism for determining each Eligible Customer’s required minimum contribution.", "pg": 6},
+  {"point": "They may revise local planning procedures such as Attachment M-3 to meet the order's transparency findings on Network Upgrade costs.", "quote": "considering what, if any, PJM Tariff modifications they will need to include in their own FPA section 205 filing(s) relating to transparency enhancements.", "pg": 9},
+  {"point": "They ask FERC to rule by August 10 with a five-day comment period.", "quote": "request that the Commission establish a comment period of five (5) days.", "pg": 10}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-show-cause", "e-7-cost-recovery-agreement", "e-7-cost-transparency", "e-7-service-for-flexible-loads"], "text": "Seeks to move the E-7 60-day show cause deadline to November 16, 2026; FERC granted it on August 14. Describes the cost recovery, rate and transparency filings the Transmission Owners plan."},
+ "themes": ["procedure", "cost", "flex"],
+ "figures": []
+}
