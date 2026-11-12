@@ -18,9 +18,11 @@ esac
 if [ "$mode" = "--sweep" ]; then
   out="${TMPDIR:-/tmp}/ferc-sheets"
   since=$(node -e 'console.log(require("./sources/filings/refresh-coverage.json").asOf || "2026-06-18")')
-  node tools/sweep-show-cause.mjs "$out" "$since" "$(date +%Y-%m-%d)" \
-    EL26-67-000 EL26-68-000 EL26-69-000 EL26-70-000 EL26-71-000 EL26-72-000 \
-    EL25-49-000 ER26-3515-000 ER26-3380-000 ER27-25-000 ER26-3650-000 ER26-3552-000 ER27-432-000 ER27-454-000 EL27-11-000
+  # Sweep exactly the dockets that have a reconciliation baseline; a docket without one cannot be
+  # reconciled. Add a docket to sources/filings/sheet-baseline.json (REFRESH.md) before sweeping it.
+  dockets=$(node -e 'console.log(Object.keys(require("./sources/filings/sheet-baseline.json")).join(" "))')
+  # shellcheck disable=SC2086
+  node tools/sweep-show-cause.mjs "$out" "$since" "$(date +%Y-%m-%d)" $dockets
   python3 tools/reconcile-show-cause.py "$out" --output "$out/new-rows.json" --baseline-output "$out/candidate-baseline.json"
   echo "Review $out/new-rows.json before capturing anything."
   mode=--build
