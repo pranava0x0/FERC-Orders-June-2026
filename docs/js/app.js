@@ -2117,6 +2117,8 @@
       activate("commissioners", focus);
       scrollToTabsTop();
     } else {
+      // A bare "#filings" (the trail's root link) is the whole list: drop the last proceeding or theme.
+      if (tab === "filings") { filingHash = ""; pendingFiling = null; if (rendered.filings && filingTheme) applyTheme(panelFor("filings"), ""); }
       activate(tab, focus);
       scrollToTabsTop();
     }
