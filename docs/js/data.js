@@ -966,6 +966,33 @@ window.FERC_DATA = (function () {
       captured: "2026-11-02",
       note: "Opened in a logged-in browser; timestamp 2026-10-21 13:21 UTC. The post quotes no other post and names no docket. Text in sources/news-evidence.json.",
     },
+    udive1103: {
+      label: "\u201cPJM\u2019s revised data center backstop procurement plan reduces utility risks: ICF\u201d",
+      org: "Utility Dive (Ethan Howland)",
+      tier: "secondary",
+      url: "https://www.utilitydive.com/news/pjm-revised-data-center-backstop-procurement-ferc/873551/",
+      published: "2026-11-03",
+      captured: "2026-11-12",
+      note: "Read end to end; published Nov 3 and updated Nov 4. Reports PJM's Oct 29 backstop refiling (a March 1, 2027 start) and quotes Maria Scheller, vice president of energy and planning at ICF International, from an email to the outlet. The phrase \u201ccarefully tailored\u201d is the reporter\u2019s description of PJM\u2019s filing and is not used as a quote here. Snippets in sources/news-evidence.json.",
+    },
+    latitude1104: {
+      label: "\u201cVoters just proved how much they hate data centers\u201d",
+      org: "Latitude Media (Jeff Young)",
+      tier: "secondary",
+      url: "https://www.latitudemedia.com/news/voters-just-proved-how-much-they-hate-data-centers/",
+      published: "2026-11-04",
+      captured: "2026-11-12",
+      note: "Read end to end. Post-election piece on the Nov 3 midterm results; quotes Nick Zenkin, director of research at Latitude Intelligence. It names no FERC or PJM proceeding, so it is context for the cost-allocation argument and not a statement about any docket. Snippet in sources/news-evidence.json.",
+    },
+    latitude1111: {
+      label: "\u201cWhat the midterms mean for data center developers in PJM\u201d",
+      org: "Latitude Media (Maeve Allsup)",
+      tier: "secondary",
+      url: "https://www.latitudemedia.com/news/what-the-midterms-mean-for-data-center-developers-in-pjm/",
+      published: "2026-11-11",
+      captured: "2026-11-12",
+      note: "Read end to end. Quotes Brent Nelson and Robert LaFaso of Ascend Analytics on FERC's Oct 9 ruling in ER26-3515 and the state-led curtailment path that followed it. The sentences about the ruling and the state-led approach are the reporter\u2019s, not the analysts\u2019. Snippets in sources/news-evidence.json.",
+    },
     // --- 2026-11-09 sweep -------------------------------------------------------------------------
     elibrary1110: {
       label: "FERC eLibrary docket sheets checked Nov 10", short: "FERC docket sheets", org: "FERC eLibrary",
@@ -1072,7 +1099,7 @@ window.FERC_DATA = (function () {
     newsCapture: "2026-11-10",
     // Newest Discourse sweep (themes, media lines, reception, voices). Distinct from newsCapture, the
     // filings and proceedings cutoff, so a commentary-only sweep never overstates when dockets were checked.
-    commentaryCapture: "2026-11-02",
+    commentaryCapture: "2026-11-12",
     authority: "Federal Power Act § 206 · DOE Organization Act § 403",
     citeRange: "195 FERC ¶ 61,211 to 61,216",
     commissioners: "Laura V. Swett (Chairman) · David Rosner · Lindsay S. See · Judy W. Chang · David LaCerte",
@@ -2661,6 +2688,19 @@ window.FERC_DATA = (function () {
       quotes: [
         { q: "New and large, in some cases gigantic, Data Centers are mandated by me to make their own electricity, and give or sell any excess back to the local community, or grid", src: "bisnow1021" },
         { q: "When push comes to shove, Trump would rather you lose power than the data center companies lose a cent of profit.", src: "vanhollenx1021" },
+      ],
+    },
+    {
+      wave: 3,
+      track: "context",
+      title: "After the midterms: who pays, and a guardrail removed",
+      body: "Commentary in the week after the Nov 3 elections ties the large-load record to voters. Latitude Intelligence's Nick Zenkin said the election changes the question from speed of connection to who pays. Ascend Analytics analysts said FERC's rejection of PJM's interim service removed a protection for PJM and that no one will tolerate paying new-entry prices to everyone, and reporter Maeve Allsup wrote that the Oct 9 ruling moved curtailment decisions to the states. ICF's Maria Scheller read PJM's refiled backstop as lowering risk for default-service utilities but leaving the question of state recovery open. None of these voices is a party to the show cause dockets.",
+      quotes: [
+        { q: "I think overall this changes the story from 'how fast we can connect?' to 'who pays?'", src: "latitude1104" },
+        { q: "There\u2019s no world in which there\u2019s political will or political tolerance for new entry prices to get paid to everybody.", src: "latitude1111" },
+        { q: "IRAS was a guardrail for PJM, and that guardrail is now off the table,", src: "latitude1111" },
+        { q: "The ruling shifted responsibility for determining which types of new loads should face curtailment instead to the states.", src: "latitude1111" },
+        { q: "The key credit question is whether state rules provide timely, certain recovery and adequate customer security.", src: "udive1103" },
       ],
     },
   ];
