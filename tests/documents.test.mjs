@@ -14,7 +14,10 @@ const record = () => { const s = read("docs", "js", "record-data.js"); return JS
 
 test("every per-document reading validates: quotes on their pages, known anchors, house style", () => {
   const ctx = loadContext(), readings = loadReadings([]);
-  assert.ok(readings.length >= 50, "readings went missing: " + readings.length);
+  assert.ok(readings.length >= 167, "readings went missing: " + readings.length);
+  const have = new Set(readings.map((r) => r.doc.slug));
+  const missing = ctx.catalog.filter((c) => !c.parent && !/^e-\d+-/.test(c.slug) && !have.has(c.slug)).map((c) => c.slug);
+  assert.deepEqual(missing, [], "every reading-room document needs a reading");
   const errs = validateAnchors(ctx);
   for (const { file, doc } of readings) errs.push(...validateReading(doc, ctx, file));
   assert.deepEqual(errs, []);

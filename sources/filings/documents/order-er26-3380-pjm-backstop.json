@@ -1,0 +1,28 @@
+{
+  "slug": "order-er26-3380-pjm-backstop",
+  "summary": "FERC accepts PJM's Reliability Backstop Procurement for filing, suspends it five months to February 28, 2027 subject to refund, and sets a paper hearing on cost allocation, transmission owner exit rules and LSE collateral. It opens section 206 docket EL26-108.",
+  "ask": null,
+  "points": [
+    {"point": "FERC accepts PJM's one-time procurement, suspends it to February 28, 2027, and opens a paper hearing plus a section 206 proceeding.", "quote": "we accept the proposed RBP for filing, suspend it for five months, effective February 28, 2027, subject to refund, and establish a paper hearing.", "pg": 1},
+    {"point": "FERC encourages PJM to file a new section 205 proposal quickly, which could make the paper hearing unnecessary.", "quote": "we encourage PJM to swiftly submit a new FPA section 205 filing without delay.", "pg": 2},
+    {"point": "The 2027/2028 auction cleared 6,623 MW short of the reliability requirement, the first time a BRA cleared significantly below it.", "quote": "The 2027/2028 BRA cleared 6,623 MW", "pg": 2},
+    {"point": "PJM's target is the 6,831 MW 2028/2029 shortfall, procured under commitments of up to 15 years.", "quote": "PJM states that the RBP aims to procure capacity equal to the 6,831 MW shortfall in the 2028/2029 BRA (Initial RBP Target)", "pg": 7},
+    {"point": "Three issues go to paper hearing: cost allocation, transmission owner exit rules and LSE collateral. Other aspects are found just and reasonable.", "quote": "cost allocation, Transmission Owner exit rules, and LSE collateral requirements", "pg": 9},
+    {"point": "FERC declines to require locational constraints, citing the 6,831 MW size against 149 GW of existing PJM supply.", "quote": "the volume of capacity that PJM will procure through the RBP auction—up to 6,831 MW—is relatively small compared with total existing supply in PJM (149 GW)", "pg": 38},
+    {"point": "FERC says PJM's Load Adjustment method may miss new large loads that were already in the initial forecast.", "quote": "it appears some large loads may never have been accounted for as Load Adjustments because PJM accounted for them when calculating the initial load forecast.", "pg": 63},
+    {"point": "FERC finds the exit provisions may be unjust because they charge exiting transmission owners instead of the LSEs that benefit.", "quote": "we find that PJM’s proposed exit provisions may be unjust and unreasonable because they would assess RBP Charges to exiting Transmission Owners, rather than the LSEs in the relevant Transmission Owner’s zone.", "pg": 73},
+    {"point": "FERC finds the LSE collateral rule may be unjust and unreasonable and asks parties to address the $1.5 million per MW credit rate.", "quote": "PJM proposed an initial credit rate of $1.5 million per committed RBP MW because it would collateralize approximately 50% of the estimated contractual value associated with RBP commitments.", "pg": 82}
+  ],
+  "throughLine": {
+    "relation": "parallel",
+    "anchors": ["e-7-adequacy-report", "e-7-cost-recovery-agreement"],
+    "text": "Decides PJM's separate ER26-3380 backstop capacity filing. Its cost allocation and collateral findings apply the cost-causation reasoning behind the E-7 order, and the E-7 adequacy report addresses the same shortfall."
+  },
+  "themes": ["adequacy", "cost", "credit"],
+  "figures": [
+    {"label": "2027/2028 BRA shortfall against the reliability requirement", "value": 6623, "unit": "MW", "quote": "The 2027/2028 BRA cleared 6,623 MW", "pg": 2},
+    {"label": "Initial RBP Target, the 2028/2029 BRA shortfall", "value": 6831, "unit": "MW", "quote": "capacity equal to the 6,831 MW shortfall in the 2028/2029 BRA", "pg": 7},
+    {"label": "Existing supply in PJM, as compared with the RBP volume", "value": 149, "unit": "GW", "quote": "relatively small compared with total existing supply in PJM (149 GW)", "pg": 38},
+    {"label": "Initial LSE RBP credit rate proposed by PJM", "value": 1.5, "unit": "$ million per MW", "quote": "PJM proposed an initial credit rate of $1.5 million per committed RBP MW", "pg": 82}
+  ]
+}

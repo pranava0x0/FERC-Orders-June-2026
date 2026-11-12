@@ -1,0 +1,27 @@
+{
+  "slug": "senate-ferc-oversight-20260722",
+  "kind": "hearing transcript",
+  "summary": "Transcript of the July 22, 2026 Senate Energy and Natural Resources Committee oversight hearing with all five FERC commissioners. The June 18 show cause orders on large loads come up in the senators' statements, the commissioners' statements, questions and written answers.",
+  "ask": null,
+  "points": [
+    {"point": "Chairman Lee welcomes the show cause orders as a regional approach to large load interconnection delays, upgrade costs and consumer impact.", "quote": "the Commission directed six regional grid operators to reexamine how large data centers and other major new customers might connect to the grid", "pg": 6},
+    {"point": "Chairman Swett says the orders require the most detailed cost transparency FERC has demanded, to equip state regulators.", "quote": "we ordered the six jurisdictional electric markets to produce the most detailed cost transparency measures the Commission has ever", "pg": 9},
+    {"point": "Commissioner Rosner names four pillars for the orders: consumer protection, transparency, reliability and innovation.", "quote": "These orders are based upon four key pillars—protect consumers, enhance transparency, safeguard reliability, and foster innovation.", "pg": 14},
+    {"point": "Commissioner See ties the orders to speed to power and to coordination of large load interconnection.", "quote": "These actions are designed to improve transparency, coordination, and speed when it comes to large-load interconnection.", "pg": 18},
+    {"point": "Commissioner Chang says the orders must not shift large load costs to existing customers.", "quote": "The Commission must ensure that creating new pathways for large loads does not lead to a major cost shift to existing customers.", "pg": 22},
+    {"point": "Commissioner LaCerte describes the show cause choice given to each RTO and ISO.", "quote": "The orders direct these groups, where the majority of Americans reside, to either show cause why their current tariffs do not need to be reformed or to file reforms", "pg": 26},
+    {"point": "Commissioner See says the orders were expanded to make utilities consider alternative transmission technologies.", "quote": "include more language about that in the 206 orders we talked about to make sure that utilities take a hard look at these options when they are considering transmission upgrades.", "pg": 33},
+    {"point": "LaCerte answers Senator Cotton that beneficiary pays is the governing principle for upgrade costs.", "quote": "there is a longstanding tenet at FERC of beneficiary pays.", "pg": 79},
+    {"point": "In a written answer, the Chairman says the orders aim to keep network upgrade costs from falling on other wholesale customers.", "quote": "the orders focus on preventing cost shifting as large loads integrate onto the grid, such that the costs of network upgrades are appropriately credited and not borne by other wholesale customers.", "pg": 89},
+    {"point": "A written answer says the orders respect state authority over generation siting and retail rates.", "quote": "respect the authority of states to select, site, and permit generating resources and transmission facilities and to set the rates, terms, and conditions of retail sales of electricity.", "pg": 89}
+  ],
+  "throughLine": {
+    "relation": "context",
+    "anchors": ["e-7-cost-transparency", "e-7-alternative-transmission"],
+    "text": "Congressional oversight record a month after the June 18 orders. Commissioners describe the six show cause orders and their cost transparency, cost shifting and alternative transmission technology directives, and state their intent to respect state retail authority."
+  },
+  "themes": ["cost", "retail", "study"],
+  "figures": [
+    {"label": "States with special retail rate structures for large loads", "value": 30, "unit": "states", "quote": "In parallel, more than 30 states have adopted special retail rate structures for large loads", "pg": 16}
+  ]
+}
