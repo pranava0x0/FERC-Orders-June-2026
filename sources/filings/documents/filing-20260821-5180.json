@@ -1,0 +1,28 @@
+{
+  "slug": "filing-20260821-5180",
+  "kind": "limited protest",
+  "summary": "Sierra Club and NRDC file a limited protest in ER26-3380 of PJM's Reliability Backstop Procurement. They back the plan but ask FERC to require backstop supply to sit near large loads or to pay for its own network upgrades.",
+  "ask": "Approve PJM's RBP filing with a modification requiring RBP supply to be located near large loads or to fund 100% of network upgrades, and encourage states to mandate take-or-pay agreements.",
+  "points": [
+    {"point": "The protesters support PJM's one-time procurement sized to the 2028/2029 shortfall with costs allocated to zones and LSEs serving new large loads.", "quote": "PJM proposes a one-time procurement of new capacity sized to the 2028/2029 shortfall, with costs that will be allocated to the zones and load-serving entities (“LSEs”) serving the new large loads", "pg": 2},
+    {"point": "They read four objectives into the RBP: right amount, new capacity, on time, and large loads bear their costs.", "quote": "Procure new capacity that is additive to the PJM system, not a mere reshuffling of existing resources;", "pg": 3},
+    {"point": "PJM's RBP has no location requirement, which the protesters say makes success depend on large, slow and costly network upgrades.", "quote": "PJM’s proposal to allow RBP supply to be located anywhere in the footprint will make the RBP’s success reliant on large-scale network upgrades that will likely cause significant delays and incur significant costs.", "pg": 4},
+    {"point": "The protesters cite PJM's forecast of 30 GW of large load by 2030 and 70 GW by 2038, and auction shortfalls of 6.8 GW and 6.5 GW.", "quote": "PJM predicts that 30 GW of large load demand will come online by 2030 and 70 GW of large load demand will come online by 2038.", "pg": 6},
+    {"point": "The last three base residual auctions cleared at the price cap, up from $28.92/MW-day in 2024/2025.", "quote": "The past three BRAs cleared at the price cap, clearing at $325/MW-day in the 2028/2029 BRA, $333.44/MW-day in the 2027/2028 BRA, and $329.17/MW-day in the 2026/2027 BRA.", "pg": 8},
+    {"point": "The primary fix is a locational requirement; paying 100% of network upgrades is a partial alternative that should be additional.", "quote": "the Commission view this modification as additional to a requirement that RBP supply be located near large loads, not as a completely sufficient alternative modification.", "pg": 17},
+    {"point": "In PJM's Reliability Resource Initiative, 10 of 51 projects withdrew after upgrade costs were assigned, which the protesters offer as a warning.", "quote": "10 out of 51 RRI projects withdrew from the interconnection process, with two projects dropping out before being studied, and eight projects dropping at the first decision point in TC2.", "pg": 20},
+    {"point": "They liken state-mandated take-or-pay contracts between LSEs and large loads to the cost recovery agreement in the June 18 order.", "quote": "Take-or-pay contracts with respect to the RBP would work similarly to the cost-recovery agreements outlined in the Commission’s Order and would serve a similar purpose.", "pg": 40}
+  ],
+  "throughLine": {
+    "relation": "parallel",
+    "anchors": ["e-7-cost-recovery-agreement", "e-7-adequacy-report"],
+    "text": "Protest in PJM's separate ER26-3380 backstop procurement docket. It borrows the E-7 order's cost recovery agreement concept to argue large loads should bear backstop capacity costs, and it bears on the E-7 adequacy question."
+  },
+  "themes": ["adequacy", "cost", "proximate"],
+  "figures": [
+    {"label": "PJM large load demand forecast online by 2030", "value": 30, "unit": "GW", "quote": "PJM predicts that 30 GW of large load demand will come online by 2030", "pg": 6},
+    {"label": "PJM large load demand forecast online by 2038", "value": 70, "unit": "GW", "quote": "70 GW of large load demand will come online by 2038", "pg": 6},
+    {"label": "2028/2029 base residual auction shortfall against the reliability requirement", "value": 6.8, "unit": "GW", "quote": "PJM’s 2028/2029 BRA cleared 6.8 GW short of PJM’s reliability requirement", "pg": 7},
+    {"label": "2028/2029 BRA clearing price", "value": 325, "unit": "$/MW-day", "quote": "clearing at $325/MW-day in the 2028/2029 BRA", "pg": 8}
+  ]
+}

@@ -843,7 +843,9 @@
       var orderLink = '<span class="order-links"><a class="order-link" data-tier="order" target="_blank" rel="noopener noreferrer" href="' +
         esc(d.pdf) + '" title="Open the ' + esc(d.item) + " order PDF (committed copy of the ferc.gov original)\">Order PDF ↗</a>" +
         '<a class="order-src" target="_blank" rel="noopener noreferrer" href="' + esc(so.url) +
-        '" title="Official source on ferc.gov (Cloudflare-gated; the committed copy mirrors it)">ferc.gov ↗</a></span>';
+        '" title="Official source on ferc.gov (Cloudflare-gated; the committed copy mirrors it)">ferc.gov ↗</a>' +
+        // The through line, read backwards: from the order to everything filed in answer to it.
+        '<a class="order-src" href="#filings/' + (d.item === "E-2" ? "pjm-colocation" : "sc-" + d.rto.toLowerCase().replace(/[^a-z]/g, "")) + '">Filings since</a></span>';
       // E-2 is a final order on rehearing, not a §206 show cause order: its rows are holdings, not
       // directives an RTO must still answer. Label them accordingly so the card doesn't read as an open clock.
       var dirLabel = d.track ? "What this order holds" : "Directs the respondent to address";
@@ -1771,18 +1773,11 @@
   }
   function themeLabel(R, k) { var t = (R.themes || []).filter(function (x) { return x.key === k; })[0]; return t ? t.label : k; }
   function docCard(R, g, d) {
-    var pageLink = function (pg) {
-      return '<a class="pq-pg mono" href="reading/' + esc(d.slug) + "/text.html#p-" + pg + '">p. ' + pg + "</a>" +
-        (d.pdfUrl ? ' <a class="pq-pg" href="' + esc(d.pdfUrl) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer">PDF</a>' : "");
-    };
-    var pts = (d.points || []).map(function (p) {
-      return '<li><p class="pt">' + esc(p.point) + '</p><blockquote>“' + esc(p.quote) + "” " + pageLink(p.pg || 1) + "</blockquote></li>";
-    }).join("");
     var body = d.summary
       ? '<p class="fd-sum">' + esc(d.summary) + "</p>" +
         (d.ask ? '<p class="fd-ask"><span>Asks FERC to</span> ' + esc(d.ask.replace(/^\w/, function (c) { return c.toLowerCase(); })) + "</p>" : "") +
         linkLine(R, d.link, "fd-link") +
-        '<ol class="pts">' + pts + "</ol>"
+        '<ol class="pts" data-slug="' + esc(d.slug) + '"><li class="pts-wait">' + d.npoints + " key points, loading…</li></ol>"
       : '<p class="fd-sum na">Not yet read for this site. ' + esc(d.title) + "</p>";
     var tags = (d.themes || []).map(function (t) { return '<span class="tag">' + esc(themeLabel(R, t)) + "</span>"; }).join("");
     return '<details class="fdoc" id="fd-' + esc(d.slug) + '" data-themes="' + esc((d.themes || []).join(" ")) + '"><summary>' +
@@ -1794,6 +1789,67 @@
       (d.accession ? '<a href="' + esc(eli(d.accession)) + '" target="_blank" rel="noopener noreferrer">eLibrary ' + esc(d.accession) + "</a>" : d.url ? '<a href="' + esc(d.url) + '" target="_blank" rel="noopener noreferrer">Source</a>' : "") +
       '<span class="mono">' + esc(d.docket || "") + (d.pages ? " · " + d.pages + " pp" : "") + "</span>" +
       (d.filers ? '<span class="fd-all">Filed by ' + esc(d.filers.join(", ")) + "</span>" : "") + "</p></div></details>";
+  }
+  // Capacity quantities the readings extracted (each verified on its page), normalized to MW. Filings
+  // that cite the same quantity (within 1%, sharing a word in the label) merge into one bar, so the chart
+  // shows how often a number recurs across the record: PJM's backstop target appears in a dozen filings.
+  var FIG_STOP = { the: 1, of: 1, and: 1, in: 1, by: 1, to: 1, for: 1, a: 1, mw: 1, gw: 1, ucap: 1, from: 1, as: 1, at: 1, its: 1, or: 1 };
+  function figWords(l) { return String(l).toLowerCase().split(/[^a-z0-9]+/).filter(function (w) { return w.length > 2 && !FIG_STOP[w]; }); }
+  function figureChart(R) {
+    var rows = [];
+    R.groups.forEach(function (g) { g.docs.forEach(function (d) { (d.figures || []).forEach(function (f) {
+      var mw = /^GW/i.test(f.unit) ? f.value * 1000 : /^MW( UCAP)?$/i.test(f.unit) ? f.value : null;
+      if (mw && mw >= 1000) rows.push({ mw: mw, f: f, d: d, g: g });
+    }); }); });
+    var clusters = [];
+    rows.forEach(function (r) {
+      var w = figWords(r.f.label);
+      var hit = clusters.filter(function (c) { return Math.abs(c.mw - r.mw) / c.mw <= 0.01 && c.words.some(function (x) { return w.indexOf(x) >= 0; }); })[0];
+      if (hit) { hit.items.push(r); w.forEach(function (x) { if (hit.words.indexOf(x) < 0) hit.words.push(x); }); }
+      else clusters.push({ mw: r.mw, words: w, items: [r] });
+    });
+    if (!clusters.length) return "";
+    clusters.sort(function (a, b) { return b.mw - a.mw; });
+    var max = clusters[0].mw;
+    var bars = clusters.map(function (c) {
+      var r = c.items[0], n = {}, docs = c.items.filter(function (x) { if (n[x.d.slug]) return false; n[x.d.slug] = 1; return true; });
+      var v = c.mw >= 10000 ? (Math.round(c.mw / 100) / 10).toLocaleString("en-US") + " GW" : Math.round(c.mw).toLocaleString("en-US") + " MW";
+      return '<li><a href="#filings/' + esc(r.g.id) + "/" + esc(r.d.slug) + '" title="' + esc("“" + r.f.quote + "” " + r.d.filer + ", p. " + (r.f.pg || 1)) + '">' +
+        '<span class="fc-l">' + esc(r.f.label) + '</span><span class="fc-bar"><span style="width:' + Math.max(1.5, 100 * c.mw / max).toFixed(1) + '%"></span></span>' +
+        '<span class="fc-v mono">' + v + '</span><span class="fc-n">' + docs.length + (docs.length === 1 ? " filing" : " filings") + "</span></a></li>";
+    }).join("");
+    return accSection("The numbers the filings cite", "Capacity figures of 1,000 MW or more stated in the documents, each verified on its page. Hover or open a bar for the quote and the filing.",
+      '<ol class="fc">' + bars + "</ol>", false, clusters.length);
+  }
+  function pointItems(d, points) {
+    return points.map(function (p) {
+      var pg = p.pg || 1;
+      return '<li><p class="pt">' + esc(p.point) + '</p><blockquote>“' + esc(p.quote) + '” <a class="pq-pg mono" href="reading/' + esc(d.slug) + "/text.html#p-" + pg + '">p. ' + pg + "</a>" +
+        (d.pdfUrl ? ' <a class="pq-pg" href="' + esc(d.pdfUrl) + "#page=" + pg + '" target="_blank" rel="noopener noreferrer">PDF</a>' : "") + "</blockquote></li>";
+    }).join("");
+  }
+  // A proceeding's quoted points live in data/filings/<id>.json (tools/build-record-data.mjs) and arrive the
+  // first time it opens. A failed fetch says so in place and retries on the next open.
+  var pointsState = {};
+  function loadPoints(gEl, done) {
+    var id = gEl.id.slice(3), R = window.FERC_RECORD;
+    if (pointsState[id] === "ok") { if (done) done(); return; }
+    if (pointsState[id] === "loading") { (pointsState[id + ":q"] = pointsState[id + ":q"] || []).push(done); return; }
+    pointsState[id] = "loading";
+    var g = R.groups.filter(function (x) { return x.id === id; })[0];
+    fetch("data/filings/" + id + ".json?v=" + ASSET_VER).then(function (r) { if (!r.ok) throw Error(r.status); return r.json(); }).then(function (P) {
+      g.docs.forEach(function (d) {
+        var ol = gEl.querySelector('.pts[data-slug="' + d.slug + '"]');
+        if (ol && P[d.slug]) ol.innerHTML = pointItems(d, P[d.slug]);
+      });
+      pointsState[id] = "ok";
+    }).catch(function () {
+      pointsState[id] = null;
+      gEl.querySelectorAll(".pts-wait").forEach(function (li) { li.textContent = "The key points did not load. Close and reopen this proceeding to try again."; });
+    }).then(function () {
+      var q = (pointsState[id + ":q"] || []).concat(done ? [done] : []); pointsState[id + ":q"] = null;
+      q.forEach(function (f) { if (f) f(); });
+    });
   }
   function renderFilings() {
     var R = window.FERC_RECORD;
@@ -1817,7 +1873,7 @@
     var sc = R.groups.filter(function (g) { return g.kind === "show-cause"; }), rel = R.groups.filter(function (g) { return g.kind !== "show-cause"; });
     return head("Filings since the June 18 orders",
       total + " documents in " + R.groups.length + " proceedings, newest first inside each. Every reading quotes only its own document, with the page, and names the order directive it bears on." + (read < total ? " " + (total - read) + " documents are listed but not yet read." : "")) +
-      chips +
+      chips + figureChart(R) +
       '<h3 class="fg-sec">The six show cause dockets</h3>' + sc.map(group).join("") +
       '<h3 class="fg-sec">Related proceedings</h3>' + rel.map(group).join("") +
       '<p class="reader-entry"><a href="reading/">All documents in the reading room</a></p>';
@@ -1834,7 +1890,7 @@
         d.hidden = !on; if (on) n++;
       });
       g.hidden = n === 0; shown += n;
-      if (filingTheme && n) g.open = true;
+      if (filingTheme && n) { g.open = true; loadPoints(g); }
     });
     var live = panel.querySelector(".fg-live");
     if (live) live.textContent = filingTheme ? shown + " documents on this theme" : "";
@@ -1854,8 +1910,9 @@
     var doc = bits[1] && document.getElementById("fd-" + bits[1]);
     // Older links named a filer, not a document: open that filer's newest document instead.
     if (!doc && bits[1]) doc = [].slice.call(grp.querySelectorAll(".fdoc")).filter(function (d) { return slugify(d.querySelector(".fd-who").textContent) === bits[1]; })[0] || null;
-    if (doc) { doc.open = true; doc.scrollIntoView({ block: "start" }); }
-    else grp.scrollIntoView({ block: "start" });
+    if (doc) doc.open = true;
+    (doc || grp).scrollIntoView({ block: "start" });
+    loadPoints(grp, function () { if (doc) doc.scrollIntoView({ block: "start" }); });
     setCrumbs("filings", filingHash);
   }
   function wireFilings() {
@@ -1874,6 +1931,7 @@
       if (!el.open || !el.classList) return;
       var g = el.classList.contains("fgroup") ? el : el.classList.contains("fdoc") ? el.closest(".fgroup") : null;
       if (!g) return;
+      loadPoints(g);
       filingHash = g.id.slice(3) + (el.classList.contains("fdoc") ? "/" + el.id.slice(3) : "");
       if (history.replaceState) history.replaceState(null, "", "#filings/" + filingHash);
       setCrumbs("filings", filingHash);

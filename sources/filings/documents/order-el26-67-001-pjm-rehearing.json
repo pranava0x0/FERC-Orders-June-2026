@@ -1,0 +1,15 @@
+{
+ "slug": "order-el26-67-001-pjm-rehearing",
+ "summary": "FERC dismisses the July 2026 rehearing and clarification requests on the E-7 show cause order, finding the order made only preliminary findings and is not final, and declines to give guidance while the proceeding is in abeyance until November 16, 2026.",
+ "ask": null,
+ "points": [
+  {"point": "FERC says rehearing lies only from a final order, and the show cause order did not make a final decision on the tariff.", "quote": "The Commission did not make any final decision or determination in the Show Cause Order on", "pg": 10, "pgEnd": 11},
+  {"point": "The order determined only that the tariff appears unjust, and opened a section 206 proceeding to reach a final determination.", "quote": "The Commission determined only that the Tariff appears to be unjust, unreasonable, and unduly discriminatory or preferential and instituted an FPA section 206 show cause proceeding to reach a final determination on this issue.", "pg": 11},
+  {"point": "FERC dismisses the clarification requests too and will not give guidance while the proceeding is in abeyance.", "quote": "We do not intend to provide clarification or guidance with respect to the Show Cause Order while the show cause proceeding is held in abeyance.", "pg": 11},
+  {"point": "Show cause responses are due November 16, 2026 and answers December 16, 2026, as set in the August abeyance order.", "quote": "responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026.", "pg": 4},
+  {"point": "FERC encourages PJM, the Transmission Owners and stakeholders to keep developing section 205 proposals.", "quote": "We encourage PJM, the Transmission Owners, and stakeholders to continue with the development of one or more FPA section 205 proposals.", "pg": 11}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-show-cause", "e-7-service-for-flexible-loads", "e-7-cost-recovery-agreement"], "text": "Disposes of rehearing requests on the E-7 order's flexible load, cost recovery and definition findings by treating them as preliminary, leaving those issues to the November 2026 filings."},
+ "themes": ["procedure", "flex", "cost"],
+ "figures": []
+}

@@ -1,13 +1,41 @@
 {
  "slug": "filing-20260901-5028",
+ "kind": "answer supporting extension",
  "summary": "The Pennsylvania Public Utility Commission answers in support of the Organization of PJM States' motion to extend the comment deadline on PJM's Interim Resource Adequacy Service filing. It flags unclear retail compensation terms and possible jurisdictional conflicts.",
  "ask": "Grant OPSI's motion and extend the comment deadline in ER26-3515 to the close of business on Monday, September 14, 2026.",
  "points": [
-  {"point": "The PA PUC joins OPSI's request to move the deadline from September 3 to September 14, 2026.", "quote": "PA PUC supports and joins in OPSI’s request that the Commission extend the time for comments in this docket from September 3, 2026 to September 14, 2026.", "pg": 2},
-  {"point": "The PA PUC finds ambiguity between PJM's transmittal letter and tariff redlines on a 0-50% compensation range.", "quote": "We find some ambiguity due to discrepancies between PJM’s transmittal letter and the red-lined", "pg": 2, "pgEnd": 3},
-  {"point": "The curtailment protocol may intrude on state jurisdiction over retail rates.", "quote": "The curtailment protocol was not developed with PA PUC’s input, and it may impinge upon our jurisdiction over retail rates.", "pg": 3},
-  {"point": "The tariff does not recognize state authority to prohibit, approve or modify distributor compensation and recovery.", "quote": "The tariff does not expressly recognize state authority to prohibit, approve, or modify such compensation and jurisdictional recovery.", "pg": 3}
+  {
+   "point": "The PA PUC joins OPSI's request to move the deadline from September 3 to September 14, 2026.",
+   "quote": "PA PUC supports and joins in OPSI’s request that the Commission extend the time for comments in this docket from September 3, 2026 to September 14, 2026.",
+   "pg": 2
+  },
+  {
+   "point": "The PA PUC finds ambiguity between PJM's transmittal letter and tariff redlines on a 0-50% compensation range.",
+   "quote": "We find some ambiguity due to discrepancies between PJM’s transmittal letter and the red-lined",
+   "pg": 2,
+   "pgEnd": 3
+  },
+  {
+   "point": "The curtailment protocol may intrude on state jurisdiction over retail rates.",
+   "quote": "The curtailment protocol was not developed with PA PUC’s input, and it may impinge upon our jurisdiction over retail rates.",
+   "pg": 3
+  },
+  {
+   "point": "The tariff does not recognize state authority to prohibit, approve or modify distributor compensation and recovery.",
+   "quote": "The tariff does not expressly recognize state authority to prohibit, approve, or modify such compensation and jurisdictional recovery.",
+   "pg": 3
+  }
  ],
- "throughLine": {"relation": "procedural", "anchors": ["e-7-adequacy-report"], "text": "Supports a schedule change in PJM's separate interim resource adequacy docket ER26-3515, which addresses how PJM serves large load growth and bears on the E-7 adequacy report."},
- "themes": ["procedure", "retail", "adequacy"]
+ "throughLine": {
+  "relation": "procedural",
+  "anchors": [
+   "e-7-adequacy-report"
+  ],
+  "text": "Supports a schedule change in PJM's separate interim resource adequacy docket ER26-3515, which addresses how PJM serves large load growth and bears on the E-7 adequacy report."
+ },
+ "themes": [
+  "procedure",
+  "retail",
+  "adequacy"
+ ]
 }

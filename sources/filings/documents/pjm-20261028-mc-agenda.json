@@ -1,0 +1,18 @@
+{
+  "slug": "pjm-20261028-mc-agenda",
+  "kind": "meeting agenda",
+  "summary": "PJM posts the agenda for the 290th Members Committee meeting on October 28, 2026. It lists standing reports and a Board discussion with stakeholders, and has no separate item on the large load show cause order.",
+  "ask": null,
+  "points": [
+    {"point": "The meeting runs 11:50 a.m. to 5:00 p.m. EPT in Audubon, PA, with administration, a consent agenda and reports.", "quote": "Members Committee Two Hundred Ninetieth Meeting PJM Conference and Training Center, Audubon, PA October 28, 2026", "pg": 1},
+    {"point": "A regulatory activities report from Chris Holt is scheduled among the PJM reports.", "quote": "Chris Holt will review PJM’s regulatory activities report.", "pg": 2},
+    {"point": "A Board discussion with stakeholders covers short-term priorities for PJM and the stakeholder process.", "quote": "Jason Barker will facilitate stakeholder feedback and dialog with the PJM Board regarding short term priorities for PJM and the stakeholder process.", "pg": 2},
+    {"point": "A Special Members Committee meeting follows on November 5, 2026 at 2:15 p.m.", "quote": "November 5, 2026 (Special MC)", "pg": 3}
+  ],
+  "throughLine": {
+    "relation": "context",
+    "anchors": [],
+    "text": "Stakeholder calendar entry from the period when PJM prepares its E-7 show cause response, due November 16, 2026. It names no show cause item; the November 5 Special MC dates the consultation on PJM's planned filings."
+  },
+  "themes": ["procedure"]
+}

@@ -1,0 +1,18 @@
+{
+  "slug": "filing-20260803-5202",
+  "kind": "motion to rescind",
+  "summary": "The Western Area Power Administration moves to rescind the CAISO show cause order as to it. WAPA is a federal power marketing administration whose only CAISO-controlled asset is its share of the Path 15 Upgrade line.",
+  "ask": "Rescind the June 18, 2026 show cause order against WAPA as a Participating Transmission Owner and waive any notice and comment periods.",
+  "points": [
+    {"point": "WAPA placed only its Path 15 Upgrade Project interests under CAISO operational control, an 83-mile 500-kilovolt line.", "quote": "WAPA only placed under the operational control of the CAISO its rights and interests in the Path 15 Upgrade Project, a single, approximately 83-mile, 500-kilovolt transmission line", "pg": 3},
+    {"point": "WAPA keeps the right to use its own tariff for interconnections to the Path 15 Upgrade where CAISO provisions are inconsistent.", "quote": "including use of its own Tarif or OATT for interconnections to the Path 15 Upgrade to the extent the CAISO provisions are inconsistent.", "pg": 3},
+    {"point": "WAPA is exempt from FERC jurisdiction under FPA section 201(f) as a federal entity.", "quote": "WAPA is a non-public utility that is exempt from the Commission’s jurisdiction pursuant to Section 201(f) of the Federal Power Act.", "pg": 4},
+    {"point": "WAPA will keep coordinating with CAISO and file tariff revisions if it finds changes are needed.", "quote": "WAPA will file proposed revisions to its Tariff with the Commission in due course.", "pg": 4}
+  ],
+  "throughLine": {
+    "relation": "responds",
+    "anchors": ["e-10-show-cause"],
+    "text": "Uses the E-10 CAISO show cause order's offer to rescind the order against non-public utilities at their request. FERC granted this motion on August 14, 2026."
+  },
+  "themes": ["procedure", "retail"]
+}

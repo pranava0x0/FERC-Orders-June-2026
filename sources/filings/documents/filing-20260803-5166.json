@@ -1,0 +1,21 @@
+{
+  "slug": "filing-20260803-5166",
+  "kind": "motion for abeyance",
+  "summary": "Fifteen CAISO transmission owners (the Joint PTOs) ask FERC to hold the 60-day show cause response deadline in abeyance for 90 days, to November 16, 2026, so each can prepare section 205 TO Tariff filings coordinated with CAISO.",
+  "ask": "Hold the deadline to respond to the show cause order and briefing questions in abeyance until November 16, 2026.",
+  "points": [
+    {"point": "The Joint PTOs seek a 90-day full abeyance of the 60-day response deadline to prepare section 205 TO Tariff filings.", "quote": "The Joint PTOs seek a 90-day full abeyance of the current 60-day deadline to respond to all issues raised in the OSC", "pg": 2},
+    {"point": "Tariff changes will vary by PTO because some serve load and others do not.", "quote": "some PTOs serve load while others do not, for example", "pg": 3},
+    {"point": "Filing on August 17 would likely conflict with CAISO's design, so the Joint PTOs want a coordinated set of filings.", "quote": "Filing tariff revisions on August 17 would require the Joint PTOs to submit tariff provisions that would likely conflict with the CAISO’s design", "pg": 4},
+    {"point": "The Joint PTOs read the co-location, flexible service and proximate generation findings as aimed at the CAISO Tariff.", "quote": "the third, fourth, and fifth issues – co-located load, flexible services, and proximate load – are primarily directed at the CAISO Tariff", "pg": 5},
+    {"point": "CAISO's Board acts October 28, so CAISO Tariff revisions are unlikely to be final until near November 16.", "quote": "The CAISO does not currently plan to seek Board approval until October 28, just over two and a half weeks before a 90-day extended filing deadline", "pg": 6},
+    {"point": "The expected filings cover study, application and operational procedures plus transparency, cost recovery, financial security and rate treatment.", "quote": "present revisions to the TO Tariffs to include study, application, and operational procedures for the interconnection of large loads", "pg": 7},
+    {"point": "The Joint PTOs also ask that the briefing question deadline be tolled for 90 days.", "quote": "The Joint PTOs also request to toll the deadline to respond to the briefing questions for 90 days", "pg": 7}
+  ],
+  "throughLine": {
+    "relation": "procedural",
+    "anchors": ["e-10-show-cause", "e-10-application-study-process", "e-10-cost-recovery-agreement"],
+    "text": "Requests the up-to-90-day abeyance option in the E-10 CAISO show cause order and previews TO Tariff filings on the study process and the pro forma cost recovery agreement. FERC granted it August 14, 2026."
+  },
+  "themes": ["procedure", "study", "cost"]
+}

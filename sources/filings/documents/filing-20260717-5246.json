@@ -1,0 +1,54 @@
+{
+ "slug": "filing-20260717-5246",
+ "summary": "The Pennsylvania Office of Consumer Advocate asks FERC to clarify, or on rehearing to require, that parties in EL26-67 can build a record on regional cost allocation for Network Upgrades caused by large loads, beyond the order's pro forma cost recovery agreements.",
+ "ask": "Clarify that the cost recovery agreements are a partial fix and that parties may develop an actionable record on regional wholesale cost allocation for large-load Network Upgrades, or else grant rehearing.",
+ "points": [
+  {
+   "point": "OCA says the proposed cost recovery agreements secure revenue under existing allocation methods and do not fix cost shifts to customers not serving large loads.",
+   "quote": "Agreements guaranteeing the collection of a revenue contribution from Eligible Customers for Network Upgrades needed to serve large loads is untethered from review or consideration of the actual cost of providing transmission service induced by individual large loads.",
+   "pg": 2
+  },
+  {
+   "point": "OCA reads paragraph 81 as ambiguous on whether parties may build a record on existing regional cost allocation methods.",
+   "quote": "Order creates ambiguity whether parties can develop an actionable record on PJM\u2019s wholesale cost allocation methods for Network Upgrades caused by large loads.",
+   "pg": 6
+  },
+  {
+   "point": "Commissioner Chang's concurrence is quoted for the point that revenue contributions untethered from actual cost may not protect other customers.",
+   "quote": "bilateral agreements that simply provide transmission revenue contributions untethered from any assessment of the actual cost of providing transmission service induced by individual large loads may be insufficient to adequately protect other customers against unjustified cost shifts.",
+   "pg": 5
+  },
+  {
+   "point": "Seven multi-state PJM zones carry 52 percent of peak load, so state retail sub-allocation cannot undo cost shifts across them.",
+   "quote": "These seven multi-state Zones comprise 52 percent of PJM\u2019s peak load.",
+   "pg": 12
+  },
+  {
+   "point": "For regional facilities, PJM splits zonal cost responsibility 50/50 between load factor and distribution factor.",
+   "quote": "using a hybrid methodology involving a 50/50 split of each zone\u2019s load factor and distribution factor (DFAX).",
+   "pg": 13
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-7-cost-recovery-agreement",
+   "e-7-cost-transparency"
+  ],
+  "text": "Rehearing and clarification request on the E-7 order's cost-shifting findings, seeking to widen the record beyond the pro forma cost recovery agreement directive to regional cost allocation."
+ },
+ "themes": [
+  "cost",
+  "retail",
+  "procedure"
+ ],
+ "figures": [
+  {
+   "label": "Share of PJM peak load in seven multi-state zones",
+   "value": 52,
+   "unit": "percent",
+   "quote": "These seven multi-state Zones comprise 52 percent of PJM\u2019s peak load.",
+   "pg": 12
+  }
+ ]
+}

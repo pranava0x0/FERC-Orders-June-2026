@@ -42,9 +42,11 @@ vm.runInContext(code, ctx);
 const { html, render } = ctx.out;
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 
-test("the Discourse tab renders the roster from D.voices", () => {
-  assert.match(app, /accSection\("Who’s quoted",[\s\S]{0,400}renderVoiceRoster\(D\.voices \|\| \[\]\), false, \(D\.voices \|\| \[\]\)\.length\)/,
-    "renderNews mounts the roster as a collapsible section with the voice count");
+test("the Discourse tab's By speaker view holds every named voice", () => {
+  assert.match(app, /\["who", "By speaker"\]/, "renderNews offers the By speaker view");
+  const X = JSON.parse(readFileSync(new URL("../sources/discourse/index.json", import.meta.url), "utf8")).items;
+  const names = new Set(X.filter((i) => i.kind === "voice").map((i) => i.who));
+  for (const v of D.voices) assert.ok(names.has(v.name), `${v.name} is in the discourse index`);
 });
 
 test("every voice carries the fields the roster reads, with resolvable sources", () => {

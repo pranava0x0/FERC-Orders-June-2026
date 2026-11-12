@@ -1,0 +1,18 @@
+{
+ "slug": "filing-20260717-5258",
+ "summary": "The Maryland Office of People's Counsel, Ohio Consumers' Counsel, Delaware Division of the Public Advocate and Illinois Attorney General request rehearing and clarification of the E-7 order's cost shifting findings, arguing only FERC can fix tariff-imposed cost shifts between transmission customers.",
+ "ask": "Grant rehearing on FERC's duty to remedy actual cost shifts, and clarify that cost recovery agreements must require payment of the full Network Upgrade cost and that revenue be credited immediately to other transmission customers.",
+ "points": [
+  {"point": "The Joint Consumer Advocates say the cost shifts come from the PJM Tariff, which only FERC can reform, not from retail rates.", "quote": "the cost shifts identified by the Order do not originate at the retail level, and the responsibility to cure them cannot lie with state regulators.", "pg": 2},
+  {"point": "They challenge FERC's reliance on state sub-allocation, since a state cannot move costs between transmission customers under the tariff.", "quote": "The PJM Tariff fixes the charges each transmission customer pays, and a state cannot move costs from one transmission customer to another.", "pg": 3},
+  {"point": "They ask FERC to set the standard that a cost recovery agreement is just and reasonable only if the Eligible Customer pays the full Network Upgrade cost.", "quote": "An agreement is just and reasonable only if it requires the Eligible Customer to pay the full cost of the Network Upgrades needed to accommodate the large load.", "pg": 4},
+  {"point": "Their hypothetical shows a NITS-based agreement paying $21 million in year one against a $36 million revenue requirement increase, a $15 million shortfall.", "quote": "That falls $15 million short of the $36 million increase in the annual zonal revenue requirement caused by the Network Upgrades the transmission owner identified", "pg": 26, "pgEnd": 27},
+  {"point": "They ask that transmission owners immediately credit cost recovery agreement revenue to other customers in the zone.", "quote": "transmission owners must immediately credit all revenue received under cost-recovery agreements to transmission customers in the relevant zone.", "pg": 28}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-7-cost-recovery-agreement", "e-7-cost-transparency"], "text": "Rehearing and clarification request on the E-7 cost-shifting findings; it presses the standard for the pro forma cost recovery agreement and the crediting of its revenue."},
+ "themes": ["cost", "retail", "procedure"],
+ "figures": [
+  {"label": "Year-one shortfall in hypothetical NITS-based cost recovery agreement", "value": 15, "unit": "$ million", "quote": "That falls $15 million short of the $36 million increase in the annual zonal revenue requirement", "pg": 26},
+  {"label": "Hypothetical annual zonal revenue requirement increase from upgrades", "value": 36, "unit": "$ million", "quote": "That falls $15 million short of the $36 million increase in the annual zonal revenue requirement", "pg": 26}
+ ]
+}

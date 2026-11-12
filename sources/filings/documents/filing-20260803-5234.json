@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20260803-5234",
+ "summary": "Constellation answers in support of PJM's abeyance motion with one clarification: PJM must still file complete Interim NITS provisions on August 17, 2026 in the co-location docket, and may handle Contract Demand Services on a separate track.",
+ "ask": "Grant PJM's abeyance motion with a clarification that PJM's obligation to file full Interim NITS provisions by August 17, 2026 in the co-location proceeding is unchanged.",
+ "points": [
+  {"point": "Constellation supports abeyance on the condition that PJM still files a complete set of Interim NITS provisions on August 17, 2026.", "quote": "PJM remains obligated to file on August 17, 2026, a complete set of provisions to facilitate Interim Network Integration Transmission Service (“NITS”), that will allow for a prompt start of service.", "pg": 1},
+  {"point": "Constellation says Contract Demand Services may need up to 90 more days while Interim NITS is basically NITS.", "quote": "developing the terms and conditions for Contract Demand Services may require an additional 90 days.", "pg": 2},
+  {"point": "It asks FERC to require PJM to reconsider its proposed June 1, 2029 Interim NITS effective date.", "quote": "Reconsider its proposed June 1, 2029 effective date given that the interconnection of large loads is an “urgent” issue", "pg": 2},
+  {"point": "Constellation says the two proceedings have distinct compliance obligations that PJM must not conflate.", "quote": "they are separate proceedings with distinct compliance obligations that PJM must not conflate", "pg": 2}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-2-interim-nits", "e-7-show-cause", "e-7-service-for-flexible-loads"], "text": "Answer on PJM's E-7 abeyance motion that insists the E-2 Interim NITS compliance proceed on schedule while the E-7 flexible load service work is deferred."},
+ "themes": ["procedure", "colo", "flex"],
+ "figures": []
+}

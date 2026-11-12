@@ -1,0 +1,13 @@
+{
+ "slug": "filing-20260803-5106",
+ "summary": "The PJM Industrial Customer Coalition files an answer supporting PJM's July 28 motions for a 90-day extension in the co-located load docket and for abeyance of the E-7 show cause proceeding, citing the overlap between the two.",
+ "ask": "Grant PJM's Co-Located Load Extension Motion and Large Load Abeyance Motion in an expedited fashion.",
+ "points": [
+  {"point": "The Coalition agrees with PJM's coordinated approach to the two dockets, which would produce filings by mid-November.", "quote": "PJMICC agrees with PJM’s proposed approach, which facilitates administrative efficiencies and helps consolidate stakeholder and party resources and work efforts.", "pg": 2},
+  {"point": "It calls 90 days proportionate, though potentially still an aggressive timeline.", "quote": "Even a 90-day extension is still potentially an aggressive timeline, but it better strikes the balance between the FERC’s urgent call for reforms and the need for time to create a durable compliance filing.", "pg": 3},
+  {"point": "It also supports the Indicated Transmission Owners' parallel requests running to November 16, 2026.", "quote": "PJMICC also supports the requests of the Indicated Transmission Owners for extension and abeyance, respectively, until November 16, 2026.", "pg": 2}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-show-cause", "e-2-interim-nits"], "text": "Answer supporting the abeyance of the E-7 60-day show cause deadline and the parallel extension in the E-2 co-location docket; FERC cited it when granting the abeyance on August 14."},
+ "themes": ["procedure", "colo"],
+ "figures": []
+}

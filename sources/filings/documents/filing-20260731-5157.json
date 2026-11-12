@@ -1,0 +1,18 @@
+{
+  "slug": "filing-20260731-5157",
+  "kind": "motion to rescind",
+  "summary": "The Cities of Anaheim, Azusa, Banning, Colton, Pasadena and Riverside move to rescind the CAISO show cause order as to each of them. They say they are exempt from FERC jurisdiction under FPA section 201(f).",
+  "ask": "Rescind the June 18, 2026 show cause order against each of the Six Cities as Participating Transmission Owners and waive any notice and comment periods.",
+  "points": [
+    {"point": "Each city runs a municipal system inside CAISO's area and depends on CAISO and SCE to deliver most of its resources.", "quote": "the Cities are dependent upon the CAISO and SCE for the delivery of the majority of these resources.", "pg": 2},
+    {"point": "The cities are non-public utilities exempt under FPA section 201(f), the ground the show cause order named for rescission on request.", "quote": "Each of the Six Cities is a non-public utility that is exempt from the Commission’s jurisdiction pursuant to Section 201(f) of the Federal Power Act.", "pg": 3},
+    {"point": "The cities promise to coordinate with CAISO on the response and on their TO Tariff load interconnection provisions.", "quote": "the Six Cities will coordinate and cooperate with the CAISO in responding to the Show Cause Order, to the extent that the CAISO requests assistance from the Six Cities", "pg": 4},
+    {"point": "CAISO supports the motion, and each city will file its own TO Tariff changes if needed.", "quote": "The Six Cities have conferred with the CAISO and are authorized to state that the CAISO supports this motion.", "pg": 4}
+  ],
+  "throughLine": {
+    "relation": "responds",
+    "anchors": ["e-10-show-cause"],
+    "text": "Uses the E-10 CAISO show cause order's offer to rescind the order against non-public utilities at their request. FERC granted this motion on August 14, 2026."
+  },
+  "themes": ["procedure", "retail"]
+}

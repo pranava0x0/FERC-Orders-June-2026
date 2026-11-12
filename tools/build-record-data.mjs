@@ -14,7 +14,7 @@
 //   node tools/build-record-data.mjs          # write docs/js/record-data.js
 //   node tools/build-record-data.mjs --check  # exit 1 if the committed file differs from a fresh build
 
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -80,6 +80,7 @@ export function build() {
     return hit.id;
   };
   let readings = 0, points = 0;
+  const pointsBySlug = new Map();
   for (const c of catalog) {
     if (c.parent || /^e-\d+-/.test(c.slug)) continue;
     const cur = curated.get(c.slug) || {};
@@ -90,15 +91,16 @@ export function build() {
     if (r) { readings++; points += r.points.length; useAnchors(r.throughLine.anchors); }
     const doc = {
       slug: c.slug, accession: c.accession || cur.accession || null, date: cur.date || c.issued,
-      filer: cur.filer || filerLabel(list) || (c.slug.startsWith("pjm-") ? "PJM" : /^S\. Hrg/.test(c.docket) ? "Senate Energy and Natural Resources Committee" : c.docket),
+      filer: (r && r.filer) || cur.filer || filerLabel(list) || (c.slug.startsWith("pjm-") ? "PJM" : /^S\. Hrg/.test(c.docket) ? "Senate Energy and Natural Resources Committee" : c.docket),
       ...(list.length > 2 ? { filers: list } : {}),
-      kind: cur.kind || c.kind, title: c.title, docket: c.docket, pages: c.pages ?? cur.pages ?? null,
+      kind: (r && r.kind) || cur.kind || c.kind, title: c.title, docket: c.docket, pages: c.pages ?? cur.pages ?? null,
       ...(cur.side ? { side: cur.side } : {}),
       ...(cur.pdfUrl || dm.source_url ? { pdfUrl: cur.pdfUrl || dm.source_url } : {}),
       url: c.url || null,
-      ...(r ? { summary: r.summary, ask: r.ask ?? null, points: r.points, link: r.throughLine, themes: r.themes, ...(r.figures?.length ? { figures: r.figures } : {}) } : {}),
+      ...(r ? { summary: r.summary, ask: r.ask ?? null, npoints: r.points.length, link: r.throughLine, themes: r.themes, ...(r.figures?.length ? { figures: r.figures } : {}) } : {}),
     };
     byId.get(groupOf(c)).docs.push(doc);
+    if (r) pointsBySlug.set(c.slug, r.points);
   }
   const order = proceedings.map((g) => g.id);
   const groups = [...byId.values()].filter((g) => g.docs.length).map((g) => {
@@ -120,7 +122,9 @@ export function build() {
     };
   }).sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
 
-  return { asOf: filings.asOf, videosAsOf: chapters.asOf, themes, anchors, groups, videos, stats: { readings, points } };
+  // Each proceeding's quoted points ship in their own file, fetched when the reader opens it.
+  const pointFiles = Object.fromEntries(groups.map((g) => [g.id, Object.fromEntries(g.docs.filter((d) => pointsBySlug.has(d.slug)).map((d) => [d.slug, pointsBySlug.get(d.slug)]))]));
+  return { data: { asOf: filings.asOf, videosAsOf: chapters.asOf, themes, anchors, groups, videos }, pointFiles, stats: { readings, points } };
 }
 
 function render(data) {
@@ -132,18 +136,22 @@ function main() {
   for (const p of [["sources", "filings", "tenets.json"], ["sources", "videos", "chapters.json"], ["sources", "videos", "manifest.json"]]) {
     if (!existsSync(join(ROOT, ...p))) { console.error(`✗ missing ${p.join("/")}`); process.exit(1); }
   }
-  const data = build();
+  const built = build(), data = built.data;
   if (!data.groups.length || !data.videos.length) { console.error("✗ nothing to bake: no groups or no videos"); process.exit(1); }
   const out = render(data);
+  const pfDir = join(ROOT, "docs", "data", "filings");
+  const pf = Object.entries(built.pointFiles).map(([id, v]) => [join(pfDir, id + ".json"), JSON.stringify(v) + "\n"]);
   if (process.argv.includes("--check")) {
-    const same = existsSync(OUT) && readFileSync(OUT, "utf8") === out;
+    const same = existsSync(OUT) && readFileSync(OUT, "utf8") === out && pf.every(([f, t]) => existsSync(f) && readFileSync(f, "utf8") === t);
     console.log(same ? `✓ record-data.js is current (${data.groups.length} proceedings, ${data.videos.length} videos)` : "✗ record-data.js is stale: run node tools/build-record-data.mjs");
     process.exit(same ? 0 : 1);
   }
   writeFileSync(OUT, out);
-  const q = data.stats.points, docs = data.groups.reduce((n, g) => n + g.docs.length, 0);
+  mkdirSync(pfDir, { recursive: true });
+  for (const [f, t] of pf) writeFileSync(f, t);
+  const q = built.stats.points, docs = data.groups.reduce((n, g) => n + g.docs.length, 0);
   const vq = data.videos.reduce((n, v) => n + v.quotes.length, 0);
-  console.log(`✓ wrote docs/js/record-data.js: ${data.groups.length} proceedings, ${docs} documents, ${data.stats.readings} with readings, ${q} filing quotes, ${data.videos.length} videos, ${vq} spoken quotes, ${(out.length / 1024).toFixed(0)} KB`);
+  console.log(`✓ wrote docs/js/record-data.js: ${data.groups.length} proceedings, ${docs} documents, ${built.stats.readings} with readings, ${q} filing quotes, ${data.videos.length} videos, ${vq} spoken quotes, ${(out.length / 1024).toFixed(0)} KB`);
 }
 
 if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) main();

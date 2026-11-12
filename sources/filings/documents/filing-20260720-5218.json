@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20260720-5218",
+ "summary": "Eolian, L.P. supports the June 18 orders and asks FERC to clarify or rehear one limit: permanent load-limited generator interconnection service for electrically proximate front-of-the-meter generation, and the flexibility RTOs have to adopt minimal generator study reforms.",
+ "ask": "Clarify that electrically proximate generation may access permanent load-limited interconnection service, that RTOs are encouraged to offer it, and that minimal generator study reforms do not suffice; otherwise grant rehearing.",
+ "points": [
+  {"point": "Eolian says the orders allow permanent load-limited generator service only for co-located generation and make it temporary for electrically proximate generation.", "quote": "the Commission appears to categorically limit the availability of permanent generator interconnection services to co-located generation", "pg": 2},
+  {"point": "It says limited generator service will limit uptake of the new permanent contract demand and Interim NITS services.", "quote": "large loads’ ability to make use of the new transmission services will be severely limited if new front-of-the-meter generation projects", "pg": 2},
+  {"point": "Eolian asks FERC to confirm RTOs may offer permanent load-limited generator interconnection service and to encourage broad availability.", "quote": "the Commission strongly encourage RTO/ISOs to make such service broadly available.", "pg": 3},
+  {"point": "Eolian asks FERC to close language that could let RTOs adopt minimal generator interconnection reforms.", "quote": "The Commission must clarify this discussion, so that it does not inadvertently create a loophole that would undermine the critical benefits of its Orders", "pg": 3},
+  {"point": "Eolian says large loads cannot use the new services widely unless new generation can interconnect without queue cost and timing uncertainty.", "quote": "Large loads will not be able to transact with new front-of-the-meter resources if resource developers face significant commercial barriers to interconnection", "pg": 5}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-12-proximate-generation-service", "e-11-proximate-generation-service", "e-7-service-for-flexible-loads"], "text": "Rehearing and clarification request across the PJM, NYISO, MISO, CAISO and ISO-NE show cause orders on generator interconnection service for generation serving electrically proximate large loads."},
+ "themes": ["proximate", "flex", "study"],
+ "figures": []
+}

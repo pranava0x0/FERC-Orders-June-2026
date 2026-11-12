@@ -1,0 +1,18 @@
+{
+  "slug": "answer-el26-71-morongo",
+  "summary": "Morongo Transmission LLC, a non-load-serving CAISO Participating Transmission Owner, answers the show cause order. It says its tariff needs no amendment and that it will stay in the proceeding as a party.",
+  "ask": "Find that the Morongo Tariff is just and reasonable and needs no amendment; Morongo will make compliance filings if FERC directs residual changes.",
+  "points": [
+    {"point": "Morongo Transmission has no end-use customers, so the load interconnection reforms do not reach its tariff.", "quote": "Morongo Transmission LLC is a Non-Load-Serving Participating [Transmission Owner] and has no End-Use Customers.", "pg": 3},
+    {"point": "Morongo holds a 30-year lease of part of the transfer capability of SCE's West of Devers facilities.", "quote": "Morongo Transmission holds a 30-year lease of a portion of the transfer capability of Southern California Edison Company’s (“SCE”) upgraded West of Devers transmission facilities", "pg": 2},
+    {"point": "The Morongo Tariff defers its load interconnection sections (Sections 8 to 10) to SCE's TO Tariff, so SCE's reforms would cover them.", "quote": "SCE could implement those reforms to its own tariff without Morongo Transmission needing to take further action to amend the Morongo Tariff.", "pg": 4},
+    {"point": "Morongo offers compliance filings if FERC finds residual changes are needed.", "quote": "to the extent that the Commission determines any residual or conforming amendments are required to the Morongo Tariff, Morongo Transmission will make compliance filings as directed.", "pg": 4},
+    {"point": "Morongo stays a party because resource adequacy and large load interconnection matter to the Tribe.", "quote": "Morongo Transmission nevertheless intends to continue participating as a party in this proceeding", "pg": 2}
+  ],
+  "throughLine": {
+    "relation": "responds",
+    "anchors": ["e-10-show-cause"],
+    "text": "Answers the E-10 CAISO show cause order, which named every Participating Transmission Owner as respondent, by arguing that a non-load-serving owner with no end-use customers needs no tariff change."
+  },
+  "themes": ["procedure", "study"]
+}

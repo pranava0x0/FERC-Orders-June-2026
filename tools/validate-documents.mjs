@@ -27,7 +27,7 @@ export const RELATIONS = {
   procedural: "Changes the schedule or posture of a show cause proceeding",
   context: "Background with no direct tie to a directive",
 };
-const KEYS = new Set(["slug", "summary", "ask", "points", "throughLine", "themes", "figures", "reviewed"]);
+const KEYS = new Set(["slug", "kind", "filer", "summary", "ask", "points", "throughLine", "themes", "figures", "reviewed"]);
 // Prose rules for our own words (quotes are exempt): house style and the WRITING.md tells.
 const PROSE = [
   [/—/, "em dash"],
@@ -87,6 +87,7 @@ export function validateReading(doc, ctx, file = doc.slug + ".json") {
   if (!entry) { errs.push(`${at}: ${doc.slug} is not in docs/reading/catalog.json`); return errs; }
   if (/\border\b/.test(entry.kind) && /^e-\d+-/.test(doc.slug)) errs.push(`${at}: the June orders are summarized from data.js, not here`);
 
+  if (doc.kind != null && (typeof doc.kind !== "string" || words(doc.kind) > 6)) errs.push(`${at}: kind corrects the catalog's document type in 6 words or fewer`);
   const n = words(doc.summary);
   if (n < 8 || n > 70) errs.push(`${at}: summary should run 8-70 words (has ${n})`);
   errs.push(...proseErrors(doc.summary || "", `${at} summary`));

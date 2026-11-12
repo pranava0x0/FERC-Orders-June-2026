@@ -1,0 +1,15 @@
+{
+ "slug": "motion-el26-67-pjm-abeyance",
+ "summary": "PJM moves to hold the E-7 show cause proceeding in abeyance for 90 days from August 17, 2026 so it can develop a section 205 filing alongside its co-located load compliance work, with stakeholder sessions and an October 28 advisory vote.",
+ "ask": "Grant a 90-day abeyance starting August 17, 2026, shorten the answer period to five days, and rule by August 6, 2026.",
+ "points": [
+  {"point": "PJM seeks a 90-day abeyance because the show cause reforms build on co-located load compliance changes.", "quote": "Many of the changes contemplated in the Large Load Order will build upon compliance changes recently ordered for Co-Located Load in Docket Nos. EL25-49-000, et al.", "pg": 1},
+  {"point": "PJM expects its section 205 filing in early to mid-November.", "quote": "PJM anticipates submitting that filing by early to mid-November.", "pg": 2},
+  {"point": "The overlap covers expanded transmission services, study procedures and operational requirements.", "quote": "(1) expansion of new transmission services; (2) study procedures; and (3) operational requirements.", "pg": 4},
+  {"point": "PJM's planned filing covers study processes with alternative transmission technologies, cost shifting and transparency, flexible load services, and proximate generation study.", "quote": "achieve efficient transmission service application and study processes, including through the consideration of alternative transmission technologies", "pg": 6},
+  {"point": "PJM schedules stakeholder sessions on July 30, August 18 and September 16, with an advisory vote on October 28, 2026.", "quote": "with the goal of taking an advisory stakeholder vote on the proposal at the meeting of the Members Committee on October 28, 2026", "pg": 7}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-show-cause", "e-2-interim-nits", "e-7-adequacy-report"], "text": "Asks to defer the E-7 60-day show cause response, tying it to the E-2 co-location compliance order and its Interim NITS service. FERC granted the abeyance on August 14, 2026."},
+ "themes": ["procedure", "colo", "flex"],
+ "figures": []
+}

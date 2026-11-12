@@ -1,0 +1,18 @@
+{
+  "slug": "order-el26-71-001-caiso-rehearing",
+  "summary": "FERC dismisses Eolian's request for rehearing or clarification of the CAISO show cause order. It finds the show cause order is not a final order, and declines to give guidance while the proceeding is in abeyance until November 16, 2026.",
+  "ask": null,
+  "points": [
+    {"point": "Eolian asked that electrically proximate generation be allowed permanent load-limited generator interconnection service.", "quote": "electrically proximate generation may access permanent load-limited generator interconnection service where it is equally capable of enabling the large load to limit its withdrawals", "pg": 1},
+    {"point": "Eolian also asked that CAISO be required to show its reforms open a pathway for significant generating capacity to take load-limited interconnection.", "quote": "must be paired with an obligation for CAISO to show that the reforms will enable a pathway for significant generating capacity to provide load-limited interconnection.", "pg": 1},
+    {"point": "FERC says the show cause order made no final determination, only a preliminary finding that the tariffs appear unjust and unreasonable.", "quote": "The Commission determined only that the tariffs appear to be unjust, unreasonable, and unduly discriminatory or preferential and instituted an FPA section 206 show cause proceeding", "pg": 1},
+    {"point": "FERC dismisses the clarification request and gives no guidance during the abeyance.", "quote": "We do not intend to provide clarification or guidance with respect to the Show Cause Order while the show cause proceeding is held in abeyance.", "pg": 1},
+    {"point": "FERC restates that responses are due November 16 and answers December 16, 2026.", "quote": "responses to the Show Cause Order will be due on November 16, 2026, and answers to responses will be due on December 16, 2026.", "pg": 1}
+  ],
+  "throughLine": {
+    "relation": "procedural",
+    "anchors": ["e-10-show-cause"],
+    "text": "Disposes of a rehearing request against the E-10 CAISO show cause order and confirms the August 14 abeyance, leaving responses due November 16, 2026."
+  },
+  "themes": ["procedure", "proximate"]
+}

@@ -1,0 +1,22 @@
+{
+ "slug": "order-er26-3515-pjm-large-load",
+ "summary": "FERC accepts PJM's 50 MW Large Load definition and Large Load Registry, effective October 12, 2026, and rejects the Interim Resource Adequacy Service, bring-your-own-capacity rules and demand curve exclusion. It orders a compliance filing within 30 days and gives guidance for a refiling.",
+ "ask": null,
+ "points": [
+  {"point": "FERC accepts the Large Load definition and registry as severable, effective October 12, 2026, and orders compliance within 30 days.", "quote": "we accept PJM’s proposed Tariff revisions to establish a definition of Large Load and a Large Load Registry, effective October 12, 2026, as requested, and require PJM to submit a compliance filing within 30 days", "pg": 1},
+  {"point": "FERC finds the 50 MW threshold balances visibility into larger loads against excluding smaller ones.", "quote": "establishing the threshold to qualify as a Large Load at a cumulative peak of 50 MW strikes a just and reasonable balance", "pg": 11},
+  {"point": "FERC keeps manufacturing and other load types in the Large Load definition alongside data centers.", "quote": "we find reasonable PJM’s proposal to include all types of large loads in the Large Load definition.", "pg": 12},
+  {"point": "FERC treats the remaining elements as an integrated package and rejects them together.", "quote": "the only elements of its proposal that are severable are the proposed definition of Large Load and the proposed Large Load Registry", "pg": 6},
+  {"point": "IRAS appears to intrude on retail rate regulation beyond FERC's Section 205 authority.", "quote": "certain aspects of PJM’s proposal appear to present an impermissible intrusion on retail rate regulation and are not subject to the Commission’s authority pursuant to section 205 of the FPA.", "pg": 34},
+  {"point": "PJM did not support treating distributors differently based on retail customer characteristics.", "quote": "PJM did not adequately support its proposal to treat Electric Distributors and LSEs differently based on the characteristics of their retail customers.", "pg": 42},
+  {"point": "FERC flags that curtailing firm load at EEA1 may conflict with mandatory Reliability Standard EOP-011-4.", "quote": "It appears that PJM’s proposal ignores the plain language of mandatory Reliability Standard EOP-011-4", "pg": 48},
+  {"point": "FERC suggests non-firm service like Non-Firm Contract Demand as an avenue for a refiling, citing the E-7 flexible-load directive.", "quote": "a non-firm transmission service similar to Non-Firm Contract Demand transmission service, with appropriate adjustments, might be considered as a potential avenue to achieve some of the aims of PJM’s proposed IRAS framework.", "pg": 50},
+  {"point": "Commissioner Rosner concurs, saying a refiling must justify curtailing IRAS load before voluntary demand response.", "quote": "it must justify its proposal to curtail IRAS load on a mandatory basis before load that has voluntarily enrolled in a demand response program.", "pg": 56}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-service-for-flexible-loads", "e-7-application-study-process"], "text": "Decides PJM's separate ER26-3515 filing. It cites the June 18 PJM show cause order, accepts a Large Load definition, and points to the non-firm service E-7 asks PJM to explain as a path for a refiled IRAS."},
+ "themes": ["registry", "flex", "retail", "adequacy"],
+ "figures": [
+  {"label": "PJM Large Load threshold accepted", "value": 50, "unit": "MW", "quote": "cumulative peak of 50 MW", "pg": 11},
+  {"label": "Demand response cleared in 2028/2029 auction (Rosner concurrence)", "value": 7017, "unit": "MW", "quote": "PJM cleared 7,017 MW of demand response in its most recent capacity auction.", "pg": 56}
+ ]
+}

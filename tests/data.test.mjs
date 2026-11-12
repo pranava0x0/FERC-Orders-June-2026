@@ -931,8 +931,12 @@ test("no Discourse quote is dated earlier than the sweep that captured it", () =
   }
   assert.ok(checked >= 40, `theme quotes checked against their stamp (${checked} >= 40)`);
   assert.ok(ownStamp >= 2, `themes with their own capture stamp (${ownStamp} >= 2)`);
-  const app = readFileSync(join(here, "..", "docs", "js", "app.js"), "utf8");
-  assert.match(app, /t\.captured/, "the theme card renders a theme's own capture stamp");
+  // Discourse rows now carry their own date, the source's publication date (else its capture date).
+  const X = JSON.parse(readFileSync(join(here, "..", "sources", "discourse", "index.json"), "utf8")).items;
+  for (const it of X.filter((i) => i.kind === "quote")) {
+    const s = D.SOURCES[it.src[0]];
+    assert.equal(it.date, s.published || s.captured || null, `discourse quote ${it.id} is dated by its own source`);
+  }
 });
 
 test("every displayed news quote is captured in the news evidence file", () => {
@@ -1202,7 +1206,7 @@ test("the lead summary's 'Where it stands' date is the filings cutoff", () => {
 test("the October commentary lane is stamped by the commentary sweep, not the filings sweep", () => {
   // Codex, PR 24: a commentary-only refresh would advance commentaryCapture while wave 3 kept newsCapture.
   const app = readFileSync(join(here, "..", "docs", "js", "app.js"), "utf8");
-  assert.ok(app.includes('waveLane(3, "October: the retail line, and the refilings", D.meta.commentaryCapture ||'), "app.js wave-3 lane reads commentaryCapture first");
+  assert.ok(app.includes("Commentary as of \" + (D.meta.commentaryCapture || D.meta.newsCapture)"), "the Discourse header reads commentaryCapture first");
   const llms = buildLlmsTxt(D);
   for (const t of D.voiceThemes.filter((x) => x.wave === 3 && !x.captured)) {
     assert.ok(llms.includes(`captured ${D.meta.commentaryCapture}] ${t.title}:`), `llms.txt stamps "${t.title}" with commentaryCapture`);

@@ -1,0 +1,20 @@
+{
+  "slug": "pjm-20261028-mc-regulatory-report",
+  "kind": "legal report",
+  "summary": "PJM's MC Legal Report lists FERC orders and PJM filings from September 14 to October 16, 2026. It records the dismissal of rehearing of the EL26-67 show cause order, the ER26-3515 Large Load Registry order and the ER26-3380 backstop order.",
+  "ask": null,
+  "points": [
+    {"point": "PJM reports FERC dismissed rehearing and clarification requests on the show cause order as premature, with the proceeding in abeyance through November 16, 2026.", "quote": "FERC concluded that the Show Cause Order is not a final agency action, because it made only preliminary findings and initiated further proceedings", "pg": 2},
+    {"point": "The report notes FERC will give no clarification while the abeyance lets PJM's stakeholder process and section 205 filings proceed.", "quote": "FERC also declined to provide clarification while this proceeding remains in abeyance through November 16, 2026", "pg": 2},
+    {"point": "On October 9 FERC accepted part of PJM's Large Load definition and registry filing and set a November 8 compliance date for the rest.", "quote": "The Commission directed PJM to submit a compliance filing by November 8, 2026, of the tariff sections with the Large Load definition and the Large Load Registry", "pg": 1},
+    {"point": "On September 29 FERC accepted the Reliability Backstop Procurement revisions effective February 28, 2027, and opened EL26-108 on cost allocation, exit responsibility and collateral.", "quote": "the Commission accepted PJM’s proposed Reliability Backstop Procurement (RBP) Tariff revisions, subject to refund and further proceedings and effective February 28, 2027.", "pg": 2},
+    {"point": "PJM asked on October 12 to hold the EL26-108 paper hearing in abeyance pending its forthcoming section 205 filing.", "quote": "requesting to hold the paper hearing proceedings, and any additional briefings, in abeyance pending resolution of PJM’s forthcoming Section 205 filing", "pg": 3},
+    {"point": "DOE emergency orders under FPA section 202(c) let PJM direct backup generation at large loads to run before or during an EEA 3.", "quote": "authorizing PJM to direct backup generation resources at large loads to operate as a last resort before declaring an Energy Emergency Alert (“EEA”) 3 or during an EEA 3", "pg": 1}
+  ],
+  "throughLine": {
+    "relation": "context",
+    "anchors": ["e-7-show-cause", "e-7-adequacy-report"],
+    "text": "Summarizes PJM-side developments around the E-7 show cause order: the September 21 rehearing dismissal, the Large Load Registry order, the backstop order and DOE emergency orders touching large loads."
+  },
+  "themes": ["procedure", "registry", "adequacy"]
+}
