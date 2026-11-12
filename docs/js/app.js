@@ -507,7 +507,7 @@
     var tx = x(todayISO()).toFixed(1);
     var today = '<line x1="' + tx + '" x2="' + tx + '" y1="' + (top - 4) + '" y2="' + (H - 4) + '" class="tg-today"/><text x="' + tx + '" y="' + (H) + '" class="tg-today-l">today</text>';
     return '<figure class="tg"><div class="tg-scroll"><svg viewBox="0 0 ' + W + " " + (H + 6) + '" role="img" aria-labelledby="tg-cap">' + axis + lanes + marks + today + "</svg></div>" +
-      '<figcaption id="tg-cap">' + ev.length + ' dated entries across ' + ids.length + ' proceedings. Circles are actions; diamonds are deadlines. Months before June 2026 are compressed. Select a lane or mark to open its timeline.</figcaption></figure>';
+      '<figcaption id="tg-cap">' + ev.length + ' dated entries across ' + ids.length + ' proceedings. Circles are actions; diamonds are deadlines. Months before June 2026 are compressed.</figcaption></figure>';
   }
 
   // One row per order: the operator, its reset deadline, what it has said it will file, and the two
@@ -672,12 +672,12 @@
     var top = '<div class="cards cols-3">' + D.toplines.map(function (c) {
       return '<div class="card analysis"><h3>' + esc(c.h) + "</h3>" + paras(c.body) + srcChips(c.src) + "</div>";
     }).join("") + "</div>";
-    return head("Timeline", D.timeline.length + " dated entries from the DOE directive (Oct 2025) to today, newest first, across five proceedings. Filter by proceeding; open a row for the details and sources.") +
+    return head("Timeline", D.timeline.length + " dated entries from the DOE directive (Oct 2025) to today, newest first, across five proceedings.") +
       trackChips() +
       '<span class="sr-only" role="status" aria-live="polite" id="tl-filterstatus"></span>' +
       (ahead.length ? '<h3 class="tl-sec">Ahead</h3><div class="timeline">' + ahead.map(function (x) { return row(x, true); }).join("") + "</div>" : "") +
       '<h3 class="tl-sec" id="tl-latest">So far, newest first</h3><div class="timeline">' + past.map(function (x, i) { return row(x, i < 6); }).join("") + "</div>" +
-      accSection("The five proceedings", "Each runs on its own clock. Select one to filter the timeline.", trackCards(), false, TRACK_IDS.length) +
+      accSection("The five proceedings", "Each runs on its own clock.", trackCards(), false, TRACK_IDS.length) +
       accSection("Why six tailored orders instead of one rule", "Our reading of the strategic shift, with sources.", top, false, (D.toplines || []).length);
   }
 
@@ -1043,9 +1043,9 @@
     var toggle = '<div class="who-chips dx-views" role="group" aria-label="Arrange the discourse">' + [["theme", "By theme"], ["date", "By date"], ["who", "By speaker"]].map(function (v) {
       return '<button type="button" class="who-chip" data-view="' + v[0] + '" aria-pressed="' + (v[0] === discourseView) + '">' + v[1] + "</button>";
     }).join("") + "</div>";
-    return head("What people are saying", X.length + " items: commentary quotes, named views, press consensus and friction, and positions parties filed. Each links to its source and to the filings it discusses. Commentary as of " + (D.meta.commentaryCapture || D.meta.newsCapture) + ".") +
-      '<article class="state-lead"><h3><a href="reading/positions.html#state-commissions">' + esc(D.meta.stateLead.title) + "</a></h3><p>" + esc(D.meta.stateLead.text) + "</p>" + publicSrcChips(D.meta.stateLead.sources) + "</article>" +
-      toggle + '<div class="dx-view" id="dx-view">' + renderDiscourseView(discourseView) + "</div>" +
+    return head("What people are saying", X.length + " quotes, views and filed positions, each linked to its source and the filings it discusses. Commentary as of " + (D.meta.commentaryCapture || D.meta.newsCapture) + ".") +
+      toggle + '<article class="state-lead"><h3><a href="reading/positions.html#state-commissions">' + esc(D.meta.stateLead.title) + "</a></h3><p>" + esc(D.meta.stateLead.text) + "</p>" + publicSrcChips(D.meta.stateLead.sources) + "</article>" +
+      '<div class="dx-view" id="dx-view">' + renderDiscourseView(discourseView) + "</div>" +
       accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false, outletIds.length) +
       '<p class="cm-jump-wrap"><a class="cm-jump" href="#comments">The 273 RM26-4 comment letters are in Comments</a></p>';
   }
@@ -1821,7 +1821,7 @@
         '<span class="fc-l">' + esc(r.f.label) + '</span><span class="fc-bar"><span style="width:' + Math.max(1.5, 100 * c.mw / max).toFixed(1) + '%"></span></span>' +
         '<span class="fc-v mono">' + v + '</span><span class="fc-n">' + docs.length + (docs.length === 1 ? " filing" : " filings") + "</span></a></li>";
     }).join("");
-    return accSection("The numbers the filings cite", "Capacity figures of 1,000 MW or more stated in the documents, each verified on its page. Hover or open a bar for the quote and the filing.",
+    return accSection("The numbers the filings cite", "Capacity figures of 1,000 MW or more stated in the documents, each verified on its page.",
       '<ol class="fc">' + bars + "</ol>", false, clusters.length);
   }
   function pointItems(d, points) {
