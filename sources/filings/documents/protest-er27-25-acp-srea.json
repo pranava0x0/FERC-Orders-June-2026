@@ -1,0 +1,67 @@
+{
+  "slug": "protest-er27-25-acp-srea",
+  "summary": "The American Clean Power Association and Southern Renewable Energy Association protest MISO's LARS filing as unduly discriminatory against independent power producers, a permanent uncapped expedited queue, and unlike the service described in the show cause order. They ask FERC to reject it or clarify the same-LRZ test.",
+  "ask": "Reject LARS; if any part is accepted, direct MISO to clarify that the same-LRZ test turns on the point of interconnection, not the generator's physical location.",
+  "points": [
+    {
+      "point": "The trades say LARS goes further than ERAS: permanent, uncapped, untethered to a resource adequacy need, and run through the load-serving entity.",
+      "quote": "It is permanent and uncapped. It is untethered to any identified resource adequacy need.",
+      "pg": 2
+    },
+    {
+      "point": "They say making the LSE the applicant gives LSEs gatekeeper control over a jurisdictional interconnection process.",
+      "quote": "LARS is unduly discriminatory because it makes the LSE the gatekeeper of a Commission-jurisdictional generator interconnection process",
+      "pg": 6
+    },
+    {
+      "point": "They contend the show cause order did not call for a permanent expedited queue and described interim service until ERIS or NRIS.",
+      "quote": "The Show Cause Order did not direct MISO to create a separate, permanent, expedited generator interconnection queue.",
+      "pg": 14
+    },
+    {
+      "point": "They cite bounded precedents: PJM RRI at 50 projects and MISO ERAS at 68 requests ending by August 31, 2027.",
+      "quote": "The revised MISO ERAS process is capped at 68 requests and sunsets no later than August 31, 2027",
+      "pg": 15
+    },
+    {
+      "point": "They argue same-LRZ pairing grants broad injection rights to generators that need not be operationally tied to the load.",
+      "quote": "its same-LRZ pairing grants broad priority injection rights to generators that need not be operationally tied to the load.",
+      "pg": 18
+    },
+    {
+      "point": "They note LARS studies exclude DPP requests lacking executed GIAs, which they say shifts capacity and costs away from DPP customers.",
+      "quote": "exclude DPP Interconnection Requests that lack an executed Generator Interconnection",
+      "pg": 6
+    },
+    {
+      "point": "They say MISO has not shown LARS meets the independent entity variation standard.",
+      "quote": "MISO has not shown that LARS satisfies the independent entity variation standard.",
+      "pg": 6
+    },
+    {
+      "point": "As a fallback, they request clarification that the same-LRZ test uses the point of interconnection.",
+      "quote": "the relevant location is the applicable POI to the MISO Transmission System rather than the physical location of the Generating Facility",
+      "pg": 30
+    }
+  ],
+  "throughLine": {
+    "relation": "responds",
+    "anchors": [
+      "e-8-show-cause"
+    ],
+    "text": "Protests MISO's LARS filing as a departure from the interim, output-limited service for electrically proximate large loads that the E-8 show cause order described."
+  },
+  "themes": [
+    "proximate",
+    "study"
+  ],
+  "figures": [
+    {
+      "label": "MISO ERAS request cap cited as precedent",
+      "value": 68,
+      "unit": "requests",
+      "quote": "capped at 68 requests",
+      "pg": 15
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+ "slug": "rehearing-er26-3380-constellation",
+ "summary": "Constellation asks FERC for rehearing of two determinations in its September 29, 2026 order accepting PJM's Reliability Backstop Procurement: eligibility of energy-only resources like Eddystone, and mandatory price-taker treatment. It also seeks clarification on collateral, exit charges and load forecasts.",
+ "ask": "Grant rehearing of paragraphs 51 and 53 and clarify that the paper hearing leaves collateral, Transmission Owner exit-charge and cost-allocation issues open.",
+ "points": [
+  {"point": "Constellation seeks rehearing of two final determinations: rejection of Eddystone-type eligibility and acceptance of mandatory price-taker treatment.", "quote": "Constellation seeks rehearing of two final determinations in the Order.", "pg": 2},
+  {"point": "Energy-only resources that obtain new capacity interconnection rights should qualify as backstop resources, since they supply new deliverable capacity.", "quote": "adequacy increment is new deliverable capacity available to PJM", "pg": 9, "pgEnd": 10},
+  {"point": "The order cited reliability-must-run precedent without a balancing analysis, though the backstop could place 6,831.3 MW of price-taker supply in auctions for up to fifteen years.", "quote": "The RBP instead may place 6,831.3 MW of forecast-driven, separately compensated capacity into repeated RPM Auctions as price- taker supply for as long as fifteen years", "pg": 12},
+  {"point": "Constellation asks FERC to clarify that the collateral paper hearing covers the size and method of the RBP Credit Rate and related issues.", "quote": "the paper hearing concerning appropriate collateral requirements for RBP buyers encompasses Constellation’s arguments concerning the size and methodology of the RBP Credit Rate", "pg": 5},
+  {"point": "Any replacement cost allocation must rest on current, PJM-validated load forecast data consistent with the procurement target.", "quote": "The forecast used to establish the procurement target and the data used to allocate costs must be consistent or expressly reconciled.", "pg": 19}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report"], "text": "Rehearing request in PJM's separate backstop procurement docket ER26-3380, which concerns capacity for forecast large-load growth, the subject of the E-7 adequacy report."},
+ "themes": ["adequacy", "cost", "credit", "procedure"],
+ "figures": [
+  {"label": "PJM backstop procurement target placed as price-taker supply", "value": 6831.3, "unit": "MW", "quote": "The RBP instead may place 6,831.3 MW of forecast-driven, separately compensated capacity into repeated RPM Auctions", "pg": 12}
+ ]
+}

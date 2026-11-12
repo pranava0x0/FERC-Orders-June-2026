@@ -1,0 +1,39 @@
+{
+ "slug": "filing-20260828-5287",
+ "summary": "The Organization of PJM States moves for an 11-day extension of the comment deadline on PJM's Interim Resource Adequacy Service and Large Load Registry filing. PJM does not oppose the motion.",
+ "ask": "Extend the comment deadline in ER26-3515 from September 3 to September 14, 2026, with action by September 1.",
+ "points": [
+  {
+   "point": "OPSI asks to move comments from September 3 to September 14, 2026, and PJM does not oppose.",
+   "quote": "OPSI requests that the Commission extend the time for comments in this docket from September 3, 2026 to September 14, 2026.",
+   "pg": 1
+  },
+  {
+   "point": "PJM's August 13 filing proposes a load reduction service for new large loads and a large load registry.",
+   "quote": "a new supplemental capacity product through which New Large Loads [(“NLL”)] provide a load reduction service that is a tool available to PJM to manage resource adequacy shortfalls",
+   "pg": 1
+  },
+  {
+   "point": "PJM's compensation mechanism creates new obligations for Electric Distributors and touches retail ratemaking.",
+   "quote": "PJM proposes a compensation mechanism for loads that provide this new service, which creates new obligations for Electric Distributors.",
+   "pg": 2
+  },
+  {
+   "point": "State regulators need time to assess the interaction of PJM, distributors and retail regulators in implementing the service.",
+   "quote": "to allow the retail regulators in the PJM region additional time to consider the complex interaction between the rights and responsibilities of PJM, Electric Distributors, and retail regulators",
+   "pg": 2
+  }
+ ],
+ "throughLine": {
+  "relation": "procedural",
+  "anchors": [
+   "e-7-adequacy-report"
+  ],
+  "text": "Moves the comment schedule in PJM's separate interim resource adequacy docket ER26-3515, PJM's proposal on how to serve load that outpaces capacity, the subject of the E-7 adequacy report."
+ },
+ "themes": [
+  "procedure",
+  "adequacy",
+  "retail"
+ ]
+}

@@ -541,7 +541,7 @@
         '<span class="nn-t">' + esc(e.title) + " " + pill(e) + "</span></li>";
     }).join("") + "</ol>";
     var latestList = '<ol class="now-latest">' + latest.map(function (e) {
-      return '<li><span class="mono nl-date">' + esc(fmtISO(isoOf(e)).replace(/, \d{4}$/, "")) + '</span><a href="#timeline/track/' + esc(e.track) + '">' + esc(e.title) + "</a> " + pill(e) + "</li>";
+      return '<li><span class="mono nl-date">' + esc(fmtISO(isoOf(e)).replace(/, \d{4}$/, "")) + '</span><span><a href="#timeline/track/' + esc(e.track) + '">' + esc(e.title) + "</a> " + pill(e) + "</span></li>";
     }).join("") + "</ol>";
     var f = D.meta.spotlight;
     var links = f.links.map(function (link) {
@@ -655,33 +655,30 @@
       }).join("") + "</div>";
   }
 
+  // Newest first: what is ahead, then what happened, most recent at the top. A row is the date, the
+  // title and its lane; the body and sources open on demand, except for the six most recent and every
+  // future step, which stay open because they are what a returning reader came for.
   function renderTimeline() {
-    var tl = '<div class="timeline">' + D.timeline.map(function (e) {
-      return '<div class="tl-item ' + e.kind + '" id="tl-' + esc(e.iso || "") + '" data-iso="' + esc(e.iso || "") + '" data-track="' + esc(e.track || "") + '"><div class="tl-date">' + esc(e.date) +
-        '<span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span>" + trackPill(e.track) + "</div>" +
-        '<div class="tl-title">' + esc(e.title) + "</div>" +
-        '<div class="tl-body">' + esc(e.body) + "</div>" + srcChips(e.src) + "</div>";
-    }).join("") + "</div>";
-
+    var today = todayISO();
+    var dated = D.timeline.map(function (e, i) { return { e: e, i: i, iso: isoOf(e) }; });
+    var ahead = dated.filter(function (x) { return x.iso && x.iso > today; }).sort(function (a, b) { return a.iso < b.iso ? -1 : a.iso > b.iso ? 1 : a.i - b.i; });
+    var past = dated.filter(function (x) { return !x.iso || x.iso <= today; }).sort(function (a, b) { return a.iso > b.iso ? -1 : a.iso < b.iso ? 1 : b.i - a.i; });
+    var row = function (x, open) {
+      var e = x.e;
+      return '<details class="tl-item ' + e.kind + '" id="tl-' + esc(e.iso || "") + '" data-iso="' + esc(e.iso || "") + '" data-track="' + esc(e.track || "") + '"' + (open ? " open" : "") + '><summary><span class="tl-date mono">' + esc(e.date) +
+        '</span><span class="tl-title">' + esc(e.title) + '</span><span class="tl-pills"><span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span>" + trackPill(e.track) + "</span></summary>" +
+        '<div class="tl-body">' + esc(e.body) + "</div>" + srcChips(e.src) + "</details>";
+    };
     var top = '<div class="cards cols-3">' + D.toplines.map(function (c) {
-      return '<div class="card analysis"><div class="tier-flag t-analysis">Analysis: synthesis</div>' +
-        "<h3>" + esc(c.h) + "</h3>" + paras(c.body) + srcChips(c.src) + "</div>";
+      return '<div class="card analysis"><h3>' + esc(c.h) + "</h3>" + paras(c.body) + srcChips(c.src) + "</div>";
     }).join("") + "</div>";
-
-    return head("Timeline: DOE §403 directive to FERC §206 orders",
-      "One chronology, five lanes: the §206 clock, the EL25-49 co-location docket, the AD26-7 governance fight, the RM26-4 record, and the market context around them.") +
-      // The rail runs oldest first over fifty-odd events, so the newest one sat twenty screens down on a
-      // phone (measured 2026-10-19). One button, above the track cards so it is on the first screen,
-      // takes the reader to the most recent dated event that is not in the future, within whatever track
-      // filter is active.
-      '<p class="tl-jump-wrap"><button type="button" class="tl-jump" id="tl-jump">Jump to the latest event</button></p>' +
-      '<h3 class="trk-h">The parallel tracks</h3>' +
-      '<p class="trk-lede">Each lane is its own proceeding on its own clock. Pick one to filter the rail below it.</p>' +
-      trackCards() + trackChips() +
+    return head("Timeline", D.timeline.length + " dated entries from the DOE directive (Oct 2025) to today, newest first, across five proceedings. Filter by proceeding; open a row for the details and sources.") +
+      trackChips() +
       '<span class="sr-only" role="status" aria-live="polite" id="tl-filterstatus"></span>' +
-      tl +
-      accSection("Toplines: the strategic shift",
-        "Why tailored §206 show cause orders instead of a generic NOPR, and what it signals.", top, false, (D.toplines || []).length);
+      (ahead.length ? '<h3 class="tl-sec">Ahead</h3><div class="timeline">' + ahead.map(function (x) { return row(x, true); }).join("") + "</div>" : "") +
+      '<h3 class="tl-sec" id="tl-latest">So far, newest first</h3><div class="timeline">' + past.map(function (x, i) { return row(x, i < 6); }).join("") + "</div>" +
+      accSection("The five proceedings", "Each runs on its own clock. Select one to filter the timeline.", trackCards(), false, TRACK_IDS.length) +
+      accSection("Why six tailored orders instead of one rule", "Our reading of the strategic shift, with sources.", top, false, (D.toplines || []).length);
   }
 
   // Filter wiring. The cards and the chips drive one piece of state, so both carry aria-pressed and both
@@ -717,7 +714,7 @@
         b.classList.toggle("is-active", on);
       });
       var live = panel.querySelector("#tl-filterstatus");
-      var jump = panel.querySelector("#tl-jump");
+      var jump = null;
       if (jump) {
         var n0 = panel.querySelectorAll(".tl-item:not([hidden])").length;
         jump.textContent = "Jump to the latest event" + (timelineTrack === "all" ? "" : " in " + D.tracks[timelineTrack].short) + " (" + n0 + " shown)";
@@ -994,91 +991,79 @@
     };
     return '<div class="voice-roster"><ul class="voice-list">' + list.map(row).join("") + "</ul></div>";
   }
+  // Discourse: one flat, tagged list (tools/build-discourse-index.mjs) read three ways. Every item keeps its
+  // own source chip; proceeding chips jump to the filings it discusses, theme headers to filings on that theme.
+  var DX_KIND = { quote: "Quote", voice: "View", consensus: "Consensus", friction: "Friction", reception: "Reception", filed: "Filed position" };
+  var discourseView = "theme";
+  function dxItem(it) {
+    var L = D.discourseLabels || { groups: {}, themes: {} };
+    var who = it.who ? '<b>' + esc(it.who) + "</b>" + (it.affil ? ' <span class="dx-affil">' + esc(it.affil) + "</span>" : "") + (it.stance ? ' <span class="stance-pill ' + esc(it.stance) + '">' + esc(it.stance) + "</span>" : "") + " " : "";
+    var text = it.kind === "quote" ? "“" + esc(it.text) + "”" : (it.kind === "filed" && it.title ? '<span class="dx-title">' + esc(it.title) + ".</span> " : "") + esc(it.text);
+    var src = it.src ? publicSrcChips(it.src) || srcChips(it.src) : it.url ? '<a class="dx-src" href="' + esc(it.url) + '" target="_blank" rel="noopener noreferrer">' + esc(it.locator || "Source") + "</a>" : "";
+    var docLinks = (it.docs || []).filter(function (d) { return d.group; }).map(function (d) { return '<a class="dx-go" href="#filings/' + esc(d.group) + "/" + esc(d.slug) + '">Read the filing</a>'; }).slice(0, 2).join("");
+    var groups = (it.docs && it.docs.length ? [] : it.groups || []).slice(0, 3).map(function (g) { return '<a class="dx-go" href="#filings/' + esc(g) + '">' + esc(L.groups[g] || g) + "</a>"; }).join("");
+    return '<li class="dx dx-' + esc(it.kind) + '"><span class="dx-k">' + esc(DX_KIND[it.kind] || it.kind) + (it.date ? ' <span class="mono">' + esc(fmtISO(it.date).replace(/^(\w+) (\d+), (\d{4})$/, "$1 $3")) + "</span>" : "") + '</span><div class="dx-b">' + who + text +
+      '<span class="dx-links">' + src + docLinks + groups + "</span></div></li>";
+  }
+  function dxList(items, cap) {
+    var more = items.length > cap ? '<li class="dx-more-row"><button type="button" class="dx-more" aria-expanded="false">Show ' + (items.length - cap) + " more</button></li>" : "";
+    return '<ol class="dx-list' + (items.length > cap ? " dx-capped" : "") + '">' + items.map(function (it, i) { return dxItem(it).replace('<li class="dx ', '<li class="dx' + (i >= cap ? " dx-extra" : "") + " "); }).join("") + more + "</ol>";
+  }
+  function byDate(a, b) { return (b.date || "") < (a.date || "") ? -1 : (b.date || "") > (a.date || "") ? 1 : 0; }
+  function renderDiscourseView(view) {
+    var X = D.discourse || [], L = D.discourseLabels || { themes: {} };
+    if (view === "date") {
+      var dated = X.filter(function (i) { return i.date; }).sort(byDate), months = {}, order = [];
+      dated.forEach(function (i) { var m = i.date.slice(0, 7); if (!months[m]) { months[m] = []; order.push(m); } months[m].push(i); });
+      return order.map(function (m) {
+        return '<section class="dx-sec"><h3>' + esc(MON[+m.slice(5) - 1] + " " + m.slice(0, 4)) + ' <span class="dx-n mono">' + months[m].length + "</span></h3>" + dxList(months[m], 8) + "</section>";
+      }).join("") + '<p class="dx-note">' + (X.length - dated.length) + " filed positions carry no publication date; they appear by theme and on each filing.</p>";
+    }
+    if (view === "who") {
+      var named = X.filter(function (i) { return i.who; }).sort(function (a, b) { return a.who.localeCompare(b.who); });
+      return '<section class="dx-sec">' + dxList(named, 400) + "</section>";
+    }
+    var keys = Object.keys(L.themes || {});
+    var buckets = keys.map(function (k) { return { k: k, items: X.filter(function (i) { return i.themes.indexOf(k) >= 0; }).sort(byDate) }; })
+      .filter(function (b) { return b.items.length; }).sort(function (a, b) { return b.items.length - a.items.length; });
+    var other = X.filter(function (i) { return !i.themes.length; });
+    return buckets.map(function (b) {
+      return '<section class="dx-sec" id="dx-' + esc(b.k) + '"><h3>' + esc(L.themes[b.k]) + ' <span class="dx-n mono">' + b.items.length + '</span> <a class="dx-th-go" href="#filings/theme/' + esc(b.k) + '">Filings on this theme</a></h3>' + dxList(b.items, 6) + "</section>";
+    }).join("") + (other.length ? '<section class="dx-sec"><h3>Other commentary <span class="dx-n mono">' + other.length + "</span></h3>" + dxList(other.sort(byDate), 6) + "</section>" : "");
+  }
   function renderNews() {
-    var recItems = D.reception.filter(function (r) { return !/^FERC\b/.test(r.group); });
-    var rec = '<div class="reception">' + recItems.map(function (r) {
-      return '<div class="recep ' + r.stance + '"><div class="recep-head"><span class="recep-group">' + esc(r.group) +
-        '</span><span class="stance-pill ' + r.stance + '">' + esc(r.stance) + "</span></div>" +
-        "<p>" + esc(r.body) + "</p>" +
-        '<div class="source-line">' + publicSrcChips(r.src) + "</div></div>";
-    }).join("") + "</div>";
-
-    var disc = '<div class="discourse"><div class="disc-col consensus"><h3>Points of consensus</h3><div class="disc-list">' +
-      D.media.consensus.map(function (c) { return '<div class="disc-item">' + esc(c.t) + publicSrcChips(c.src) + "</div>"; }).join("") +
-      '</div></div><div class="disc-col friction"><h3>Points of friction</h3><div class="disc-list">' +
-      D.media.friction.map(function (c) { return '<div class="disc-item">' + esc(c.t) + publicSrcChips(c.src) + "</div>"; }).join("") +
-      "</div></div></div>";
-
+    var X = D.discourse || [];
     var outletIds = D.media.outlets.filter(function (id) { return !isFederalSource(id); });
     var outletChips = outletIds.map(function (id) {
       var s = D.SOURCES[id]; if (!s) return "";
       return '<a class="outlet" href="' + esc(s.url) + '" target="_blank" rel="noopener noreferrer" title="' + esc(s.label + ", " + s.org) + '">' + esc(shortName(id)) + "</a>";
     }).join("");
-
-    // Dated waves, freshest first (news-tracks-plan.md Feature D). Wave 1 is reaction to the June 18
-    // orders; wave 2 is what the record did over the summer; wave 3 is October's first FERC ruling on
-    // large-load tariff text and the refilings. Each lane carries its own capture stamp, because
-    // "commentary gathered <one date>" stopped being true the moment the tab held two moments.
-    var themeCard = function (t) {
-      var qs = (t.quotes || []).map(function (q) {
-        return '<li><blockquote>“' + esc(q.q) + '”</blockquote>' + srcChips([q.src]) + "</li>";
-      }).join("");
-      var tr = t.track && D.tracks && D.tracks[t.track]
-        ? '<span class="trackpill is-static" title="' + esc(D.tracks[t.track].label) + '">' + esc(D.tracks[t.track].short) + "</span>"
-        : "";
-      // A theme found by a later sweep than its lane's stamp carries its own `captured`, so the lane
-      // header never dates October evidence to June.
-      var stamp = t.captured ? '<p class="wave-stamp theme-stamp mono">captured ' + esc(t.captured) + "</p>" : "";
-      return '<section class="quote-theme"><h3>' + esc(t.title) + tr + "</h3>" + stamp + "<p>" + esc(t.body) +
-        '</p><ul class="quote-list">' + qs + "</ul></section>";
-    };
-    // Newest first inside a lane too: a theme is as new as its newest quoted source. Without this the
-    // freshest quote sat wherever the theme happened to be appended, mid-lane and screens down.
-    var themeDate = function (t) {
-      // Quote dates only: a theme's own `captured` records when it was revisited, not when anyone spoke.
-      return (t.quotes || []).reduce(function (best, q) {
-        var s = D.SOURCES[q.src] || {}, d = s.published || s.captured || "";
-        return d > best ? d : best;
-      }, "");
-    };
-    var themesInWave = function (n) {
-      return (D.voiceThemes || []).filter(function (t) { return (t.wave || 1) === n; })
-        .map(function (t, i) { return { t: t, i: i, d: themeDate(t) }; })
-        .sort(function (x, y) { return x.d < y.d ? 1 : x.d > y.d ? -1 : x.i - y.i; })
-        .map(function (x) { return x.t; });
-    };
-    var waveLane = function (n, title, stamp) {
-      var items = themesInWave(n);
-      if (!items.length) return "";
-      return '<div class="wave wave-' + n + '"><div class="wave-head"><h3 class="wave-title">' + esc(title) +
-        '</h3><span class="wave-stamp mono">captured ' + esc(stamp) + "</span></div>" +
-        '<div class="quote-themes">' + items.map(themeCard).join("") + "</div></div>";
-    };
-    var quoteThemes =
-      waveLane(3, "October: the retail line, and the refilings", D.meta.commentaryCapture || D.meta.newsCapture || D.meta.discourseCapture) +
-      waveLane(2, "The filings and the governance fight", D.meta.wave2Capture || D.meta.newsCapture || D.meta.discourseCapture) +
-      waveLane(1, "Reaction to the June 18 orders", D.meta.discourseCapture);
-
-    // The RM26-4 comment period (stats, respondent types, themes/categories, and the full searchable
-    // filing list) lives in its own Comments tab now; Discourse keeps a short pointer.
-    var commentsBlock = D.comments ? (head("Public comments: the RM26-4 ANOPR docket",
-      "All " + D.comments.filings + " filings were scraped from FERC eLibrary; " + (window.FERC_COMMENTS ? window.FERC_COMMENTS.downloaded : D.comments.downloaded) +
-      " comment bodies were downloaded and text-analyzed. The full searchable filing list, the top themes and categories, and the respondent-type breakdown are in the Comments tab.") +
-      '<p class="cm-jump-wrap"><a class="cm-jump" href="#comments">Open the Comments tab →</a></p>') : "";
-
-    var consensusN = (D.media.consensus || []).length, frictionN = (D.media.friction || []).length;
-    // The dated commentary comes first and open: it is the part of this tab that changes with each
-    // sweep, and in a collapsed second position its newest quote was seven screens down on a phone.
-    return '<article class="state-lead"><h2><a href="reading/positions.html#state-commissions">' + esc(D.meta.stateLead.title) + '</a></h2><p>' + esc(D.meta.stateLead.text) + '</p>' + publicSrcChips(D.meta.stateLead.sources) + '</article>' +
-      readingLeads(false) + '<p class="cm-jump-wrap"><a class="cm-jump" href="reading/positions.html">Who said what: state offices, commissioners and reporting by issue →</a></p>' + accSection("Commentary themes with quoted source lines",
-      "Themes from the discourse, in dated waves: reaction to the orders themselves, then what the record did next. Each quote links to its captured source. The order record is as of " + D.meta.capture + ".", quoteThemes, true, (D.voiceThemes || []).length) +
-      accSection("Industry reception",
-      "How the shift from the DOE ANOPR to FERC's show cause orders lands across stakeholder camps. Stance reflects the synthesized read of the cited sources, not a FERC determination.", rec + commentsBlock, false, recItems.length) +
-      accSection("Media & discourse: consensus and friction", "The dominant narratives in energy trade press and policy circles.", disc, false, consensusN + frictionN) +
-      accSection("Who’s quoted",
-      "The named commentators this tab draws on, in alphabetical order. Each take is the source's own position, attributed and linked.",
-      renderVoiceRoster(D.voices || []), false, (D.voices || []).length) +
-      accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false, outletIds.length);
+    var toggle = '<div class="who-chips dx-views" role="group" aria-label="Arrange the discourse">' + [["theme", "By theme"], ["date", "By date"], ["who", "By speaker"]].map(function (v) {
+      return '<button type="button" class="who-chip" data-view="' + v[0] + '" aria-pressed="' + (v[0] === discourseView) + '">' + v[1] + "</button>";
+    }).join("") + "</div>";
+    return head("What people are saying", X.length + " items: commentary quotes, named views, press consensus and friction, and positions parties filed. Each links to its source and to the filings it discusses. Commentary as of " + (D.meta.commentaryCapture || D.meta.newsCapture) + ".") +
+      '<article class="state-lead"><h3><a href="reading/positions.html#state-commissions">' + esc(D.meta.stateLead.title) + "</a></h3><p>" + esc(D.meta.stateLead.text) + "</p>" + publicSrcChips(D.meta.stateLead.sources) + "</article>" +
+      toggle + '<div class="dx-view" id="dx-view">' + renderDiscourseView(discourseView) + "</div>" +
+      accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false, outletIds.length) +
+      '<p class="cm-jump-wrap"><a class="cm-jump" href="#comments">The 273 RM26-4 comment letters are in Comments</a></p>';
+  }
+  function wireNews() {
+    var panel = panelFor("news");
+    panel.addEventListener("click", function (ev) {
+      var v = ev.target.closest && ev.target.closest(".dx-views .who-chip");
+      if (v) {
+        discourseView = v.getAttribute("data-view");
+        panel.querySelectorAll(".dx-views .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c === v)); });
+        document.getElementById("dx-view").innerHTML = renderDiscourseView(discourseView);
+        return;
+      }
+      var m = ev.target.closest && ev.target.closest(".dx-more");
+      if (m) {
+        var list = m.closest(".dx-list"), open = list.classList.toggle("dx-open");
+        m.setAttribute("aria-expanded", String(open));
+        m.textContent = open ? "Show fewer" : "Show " + list.querySelectorAll(".dx-extra").length + " more";
+      }
+    });
   }
 
   /* ---- TAB: Comments (RM26-4 comment period — list, themes, respondent types) ---- */
@@ -1990,7 +1975,7 @@
   // Reforms has no tab of its own: the five reform categories open the Orders (dockets) tab. "#reforms" still routes there.
   var TABS = ["overview", "dockets", "filings", "news", "timeline", "commissioners", "comments"];
   var renderers = { overview: renderOverview, timeline: renderTimeline, dockets: function () { return renderReforms() + renderDockets(); }, filings: renderFilings, commissioners: renderCommissioners, comments: renderComments, news: renderNews };
-  var afterRender = { comments: wireComments, timeline: wireTimeline, filings: wireFilings, commissioners: wireCommissioners };
+  var afterRender = { news: wireNews, comments: wireComments, timeline: wireTimeline, filings: wireFilings, commissioners: wireCommissioners };
   // Overview jump row: delegated once, so it works whichever render pass drew the buttons. Buttons, not
   // hash links, because the router owns location.hash and would read "#fm-h" as a tab name.
   document.addEventListener("click", function (ev) {
@@ -2225,8 +2210,8 @@
     // back off the step announces the superseded one. With Aug 17 reset to Nov 16 this chip was
     // rendering a date six days in the PAST as "Next deadline", above every tab.
     var days = daysUntil(stepWhen(n));
-    el.innerHTML = '<a class="mh-next" href="#overview"><span>Next</span> <span class="mono">' + esc(fmtISO(stepWhen(n)).replace(/, \d{4}$/, "")) + "</span> " + esc(n.label) +
-      (days >= 0 ? ' <span class="mh-days">' + (days === 0 ? "today" : days === 1 ? "tomorrow" : "in " + days + " days") + "</span>" : "") + "</a>";
+    el.innerHTML = '<a class="mh-next" href="#overview">Next: <span class="mono">' + esc(fmtISO(stepWhen(n)).replace(/, \d{4}$/, "")) + "</span> · " + esc(n.label) +
+      (days >= 0 ? ", " + (days === 0 ? "today" : days === 1 ? "tomorrow" : "in " + days + " days") : "") + "</a>";
     el.hidden = false;
     return;
     // Second clause: the most recent PASSED step the filing matrix covers, with its observed count.

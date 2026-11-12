@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20260722-5175",
+ "summary": "Allegheny Electric Cooperative, a non-profit G&T cooperative and PJM transmission owner, moves FERC to rescind the E-7 show cause order as to it because it is not a public utility under FPA section 201(f).",
+ "ask": "Rescind the PJM show cause order against Allegheny as a non-public utility and waive any notice and comment periods.",
+ "points": [
+  {"point": "Allegheny says it is owned by its members and is not a public utility subject to FERC jurisdiction.", "quote": "Allegheny is not a public utility subject to FERC jurisdiction, pursuant to Section 201(f) of the Federal Power Act.", "pg": 3},
+  {"point": "FERC exempted other non-public-utility owners from the order while keeping authority over their tariff provisions through PJM.", "quote": "it retains the authority to review each of these entities’ tariff provisions as a component of PJM’s Tariff in an order to show cause directed towards PJM", "pg": 4},
+  {"point": "Allegheny cites the CAISO order's offer to rescind at a non-public utility's request and notes its PJM tariff portions contain no interconnection processes.", "quote": "we will rescind the show cause order against them at their request", "pg": 4},
+  {"point": "Allegheny asks for rescission and a waiver of notice and comment periods.", "quote": "respectfully requests that the Commission rescind the PJM Show Cause Order against it, as a non-public utility", "pg": 5}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-show-cause"], "text": "Seeks removal of one non-jurisdictional transmission owner from the E-7 show cause order's list of respondents, the same issue FERC fixed in its August 13 errata."},
+ "themes": ["procedure", "retail"],
+ "figures": []
+}

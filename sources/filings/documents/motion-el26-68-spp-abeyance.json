@@ -1,0 +1,20 @@
+{
+ "slug": "motion-el26-68-spp-abeyance",
+ "summary": "SPP and a group of transmission owners (Joint Movants) move for a 95-day abeyance of the EL26-68 show cause proceeding, to November 20, 2026, and describe the section 205 revisions SPP plans on alternative technologies, cost shifting, co-location and flexible-load service.",
+ "ask": "Hold the proceeding, including the briefing questions deadline, in abeyance for 95 days through November 20, 2026, with a five-day answer period and prompt action.",
+ "points": [
+  {"point": "Joint Movants ask for 95 days, five more than the order contemplates, to fit SPP's Board meeting.", "quote": "The additional five (5) days is necessary to accommodate SPP's full stakeholder process, which culminates in a scheduled Board of Directors", "pg": 3},
+  {"point": "SPP will add alternative transmission technology evaluation to its HILL study process, which does not now require it.", "quote": "it does not currently require SPP to evaluate alternative transmission technologies when studying HILLs.", "pg": 9},
+  {"point": "SPP will revise pro forma NITS and point-to-point service agreements to carry HILL operational requirements.", "quote": "to develop revisions to the Tariff's pro forma transmission service agreements", "pg": 10},
+  {"point": "The CARE Team is weighing financial security, direct assignment of upgrade costs and minimum contributions from customers serving large loads.", "quote": "direct assignment, in whole or in part, of Network Upgrade costs associated with large load delivery point additions or modifications", "pg": 13},
+  {"point": "On co-location and behind-the-meter generation, stakeholders must settle terminology, the study process and overlap among transmission, interconnection and market registration.", "quote": "the overlap between transmission service, interconnection, and market registration requirements.", "pg": 15},
+  {"point": "Price Adaptive Load Service would create non-firm service with usage-based pricing and mandatory dispatchability.", "quote": "PALS would establish a new transmission service under which participating loads would receive transmission service subject to usage-based pricing, mandatory dispatchability requirements", "pg": 16},
+  {"point": "Working group votes run September and October, MOPC in October, RSC in November, and the Board on November 17, 2026.", "quote": "culminating in working group votes during September and October, MOPC in October, the RSC where applicable in November, and final Board consideration on November 17, 2026.", "pg": 17}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-9-show-cause", "e-9-evaluate-alt-tech-by-default", "e-9-cost-recovery-crediting", "e-9-new-services-for-flexible-loads"], "text": "Invokes the E-9 abeyance option and previews SPP's section 205 package on the order's alternative-technology, cost-recovery, co-location and flexible-load directives."},
+ "themes": ["procedure", "cost", "flex", "study"],
+ "figures": [
+  {"label": "Abeyance requested by SPP Joint Movants", "value": 95, "unit": "days", "quote": "abeyance for ninety-five (95) days, up to and including November 20, 2026", "pg": 1},
+  {"label": "SPP HILL threshold above 69 kV", "value": 50, "unit": "MW", "quote": "(2) 50 MW or more if connected to the Transmission System at a voltage level greater than 69 kV", "pg": 9}
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "slug": "filing-er26-3380-pjm-original",
+ "summary": "PJM files tariff and Reliability Assurance Agreement revisions for a one-time Reliability Backstop Procurement of new capacity, with 15-year commitments, pay-as-bid selection under a $555/MW-day cap, and costs allocated to zones and then to load serving entities, with state input.",
+ "ask": "Accept the RBP and make it effective by September 29, 2026, so the procurement window can open September 30; PJM consents to FERC modifying or severing parts of the proposal under section 205.",
+ "points": [
+  {"point": "PJM describes the RBP as a one-time procurement responding to capacity shortfalls driven by large loads, mainly data centers.", "quote": "a one-time procurement of new capacity to address resource adequacy challenges in the PJM Region", "pg": 8},
+  {"point": "PJM ties the RBP to the NEDC/PJM Governors' Principles: a backstop auction, 15-year price certainty, and cost allocation to LSEs with new data centers that have not self-procured.", "quote": "allocate the cost of any new capacity procured through the aforementioned [RBP] to [Load Serving Entities (\"LSE\")] with new data centers that have not self-procured new capacity or agreed to be curtailable.", "pg": 9},
+  {"point": "PJM cites a forecast of 32 GW of peak growth from 2024 to 2030, 30 GW from data centers.", "quote": "PJM's load forecast predicts peak load growth of 32 gigawatts [(\"GW\")] from 2024 to 2030, 30 GW of which is projected to be from data centers.", "pg": 13},
+  {"point": "The 2028/2029 auction cleared 6,831.3 MW short of the reliability requirement at the $325/MW-day price cap.", "quote": "cleared 6,831.3 MW (in Unforced Capacity (\"UCAP\")) short of PJM's Regional Transmission Organization (\"RTO\")-wide reliability requirement at the market price cap of $325/MW-day.", "pg": 14},
+  {"point": "RBP Resources get commitments of up to 15 years, from 2028/2029 through 2042/2043.", "quote": "for a fixed term of up to 15 years, starting with the 2028/2029 Delivery Year and ending with the 2042/2043 Delivery Year.", "pg": 15},
+  {"point": "PJM caps the MW-weighted levelized procurement cost at $555/MW-day.", "quote": "not exceed a maximum willingness to pay of $555/MW-day UCAP, on a MW-weighted average basis over all Delivery Years of the RBP.", "pg": 68},
+  {"point": "PJM selects resources pay-as-bid rather than at a single clearing price, because the RBP is one-time and procures non-uniform resources.", "quote": "PJM proposes to commit resources in the RBP using a pay-as-bid approach,", "pg": 72},
+  {"point": "Costs go to Electric Distributor zones, then to LSEs, using state or RERRA allocations when reported, with a PJM back-up method.", "quote": "the proposed cost allocation methodology empowers states and/or RERRAs to submit RBP RBOs, which PJM would then apply to the allocation of RBP Charges to LSEs.", "pg": 111},
+  {"point": "PJM asks for an order by September 29 and plans to open the window September 30, 2026, and consents to modification or severance.", "quote": "PJM requests that the Commission issue an order on this filing and make this proposal effective by no later than September 29, 2026, which is 60 days after the date of this filing.", "pg": 137}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report", "e-7-cost-recovery-agreement"], "text": "PJM's separate section 205 backstop filing for capacity to serve large loads, a companion to the E-7 order's resource adequacy report directive and its concern about cost shifting to existing customers."},
+ "themes": ["adequacy", "cost", "retail", "credit"],
+ "figures": [
+  {"label": "PJM peak load growth forecast 2024 to 2030", "value": 32, "unit": "GW", "quote": "peak load growth of 32 gigawatts [(\"GW\")] from 2024 to 2030, 30 GW of which is projected to be from data centers.", "pg": 13},
+  {"label": "PJM 2028/2029 BRA shortfall below reliability requirement", "value": 6831.3, "unit": "MW", "quote": "cleared 6,831.3 MW (in Unforced Capacity", "pg": 14},
+  {"label": "PJM 2027/2028 BRA shortfall below reliability requirement", "value": 6623, "unit": "MW", "quote": "likewise cleared 6,623 MW short of the PJM Region Reliability Requirement", "pg": 15},
+  {"label": "RBP maximum willingness to pay", "value": 555, "unit": "$/MW-day", "quote": "maximum willingness to pay of $555/MW-day UCAP", "pg": 68}
+ ]
+}

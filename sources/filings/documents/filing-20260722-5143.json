@@ -1,0 +1,13 @@
+{
+ "slug": "filing-20260722-5143",
+ "summary": "SPP answers L.M. Marlowe's motion for a settlement conference or settlement judge in EL26-68 and asks FERC to deny and dismiss it as inconsistent with the regional approach, premature, and tied to the movant's own commercial interests.",
+ "ask": "Accept this answer and deny and dismiss the Marlowe motion.",
+ "points": [
+  {"point": "SPP says the motion conflicts with the show cause orders' tailoring to each region.", "quote": "Because of the vast regional differences in such things as cost allocation, cost transparency, study processes, network upgrades, and market operations, it would be impossible to resolve all the issues presented by the Commission in the Show Cause Orders in a single settlement proceeding.", "pg": 5},
+  {"point": "SPP supports the SPP TO Group's answer that the motion is premature.", "quote": "SPP supports the SPP TO Group Answer in its request for the Commission to deny the Marlowe Motion as being premature", "pg": 4},
+  {"point": "SPP argues no controversy exists yet because no tariff revisions or record exist.", "quote": "Because no proposed tariff revisions have been filed and no administrative record has been developed, there is presently no concrete controversy suitable for settlement.", "pg": 6},
+  {"point": "SPP says the movant's own framework can be presented through ordinary comment and stakeholder processes.", "quote": "those matters may be presented through the ordinary comment and stakeholder processes available in these proceedings.", "pg": 7}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-9-show-cause", "e-9-adequacy-report"], "text": "Defends the E-9 SPP show cause design, in which SPP prepares its response and a 30-day informational report, against a request for nationwide settlement procedures."},
+ "themes": ["procedure"]
+}

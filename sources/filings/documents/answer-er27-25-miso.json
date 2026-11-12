@@ -1,0 +1,23 @@
+{
+  "slug": "answer-er27-25-miso",
+  "summary": "MISO answers the 21 comments and protests on its LARS filing, defending the Local Resource Zone proximity test, 200 MW threshold, 15-year pairing and application role of the Transmission Customer, and says it will fold in cost reforms due November 16.",
+  "ask": "Accept the answer and accept the LARS filing as proposed, so MISO can implement LARS in the first quarter of 2027.",
+  "points": [
+    {"point": "MISO says LARS responds to the show cause order and should not wait for the large load cost reforms due November 16.", "quote": "such a delay would frustrate the goals of the Show Cause Order and needlessly sacrifice the benefits of critical reforms for ratepayers and stakeholders without corresponding benefit.", "pg": 5},
+    {"point": "MISO says the Local Resource Zone fits its system and the order invited tailoring the proximity definition.", "quote": "MISO is expanding upon the Commission's definition to fit its needs and resource adequacy construct.", "pg": 9},
+    {"point": "MISO describes its zone test as electrically proximate plus because it rewards close siting and also serves pairs farther apart.", "quote": "MISO's LRZ approach thus can be considered an \"electrically proximate plus\" construct", "pg": 12},
+    {"point": "MISO says LARS creates no new cost shift, and the Transmission Customer stays liable for assigned projects even if the load never starts service.", "quote": "LARS does not create any new cost shift opportunities, but LARS does mitigate risks that already exist.", "pg": 14},
+    {"point": "MISO and the Transmission Owners will file pro forma cost recovery agreements by November 16, 2026, and MISO would accept a compliance directive to fold them into LARS.", "quote": "MISO is willing to accept a compliance directive requiring such a filing should the Commission deem this necessary.", "pg": 15},
+    {"point": "MISO says LARS will not take headroom from DPP queue projects because LARS models are built on the existing MTEP model.", "quote": "each LARS study cycle model will be built based on the existing MTEP model, which would not remove any available headroom from active DPP queue projects", "pg": 19},
+    {"point": "MISO rejects the gatekeeper charge: only Transmission Customers have been able to submit EPR requests, and an unpaired generator would make LARS speculative.", "quote": "LARS is a load-driven process, and an Interconnection Customer cannot require a Transmission Customer to scope their Transmission Service request around a generator they have not chosen to pair with.", "pg": 20},
+    {"point": "MISO opposes a sunset date but commits to post pair data each cycle and to review usage regularly.", "quote": "MISO commits to publicly post, at the beginning of each LARS cycle, information on each LARS generation/load pair's POI and POW", "pg": 23},
+    {"point": "MISO defends the 200 MW floor and the 15-year pairing as ways to keep LARS for the largest, committed pairs.", "quote": "The 15-year minimum pairing of the generation and load pairs in LARS is a necessary aspect of ensuring certainty for MISO", "pg": 24}
+  ],
+  "throughLine": {"relation": "responds", "anchors": ["e-8-show-cause", "e-8-cost-recovery-agreement", "e-8-minimum-cost-recovery-security"], "text": "MISO replies in its section 205 LARS docket to protests that LARS only partly answers the E-8 show cause order on proximity and cost shifting, and points to its November 16 cost recovery agreement filing."},
+  "themes": ["proximate", "cost", "study"],
+  "figures": [
+    {"label": "Large load additions MISO has processed through EPR", "value": 32734, "unit": "MW", "quote": "MISO has processed more than 32,734 MW of large load additions through its EPR process", "pg": 5},
+    {"label": "Average cost of large load requests above 200 MW approved in MTEP26", "value": 201000000, "unit": "USD", "quote": "For large loads greater than 200 MW, the average cost was $201,000,000.", "pg": 17},
+    {"label": "LARS minimum load size", "value": 200, "unit": "MW", "quote": "Limiting loads to a minimum of 200 MW", "pg": 6}
+  ]
+}

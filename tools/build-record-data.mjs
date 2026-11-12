@@ -25,7 +25,24 @@ const readJSON = (...p) => JSON.parse(readFileSync(join(ROOT, ...p), "utf8"));
 // Catalog filer strings concatenate parties with no separator ("Sierra ClubNatural Resources Defense
 // Council ,Clean Grid Alliance ,"). Split them back into names; the full list stays on the document.
 export function filerList(raw) {
-  return String(raw || "").replace(/\s+,/g, ",").split(/,|(?<=[a-z.)'’])(?=[A-Z][a-z])/).map((x) => x.trim()).filter(Boolean);
+  // Corporate suffixes after a comma belong to the name before them ("Organization of MISO States, Inc.").
+  const SUFFIX = /^(Inc\.?|L\.?L\.?C\.?|LLC|L\.?P\.?|Corp\.?|Co\.?|Ltd\.?)$/i;
+  const fixed = String(raw || "").replace("FERCCOMMISSIONERS", "FERC, COMMISSIONERS");
+  // Split only at a seam after a word that ends an organization's name, so camel-case names
+  // (SunZia, DesertLink, FirstEnergy) survive. Commas inside parentheses are not separators.
+  const END = "Change|Consumers|Services|Company|Commission|Counsel|Club|Council|Association|Agency|Authority|Office|Coalition|Board|Advocate|Corporation|Center|Committee|Group|Alliance|General|Cooperative|Project|States|Customers|Owners|Inc\\.|COUNSEL|ADVOCATE|AGENCY|COMMISSION|GENERAL";
+  const seam = new RegExp(",(?![^()]*\\))|(?<=(?:" + END + "))(?=[A-Z])");
+  const parts = fixed.replace(/\s+,/g, ",").split(seam).map((x) => prettyName(x.trim())).filter(Boolean);
+  const out = [];
+  for (const p of parts) { if (SUFFIX.test(p) && out.length) out[out.length - 1] += ", " + p; else out.push(p); }
+  return out;
+}
+// eLibrary records some filers in capitals. Title-case those, keeping known acronyms; raw stays in the catalog.
+const ACRONYMS = new Set(["FERC", "PJM", "MISO", "SPP", "NYISO", "CAISO", "ISO", "NE", "DC", "US", "U.S.", "LLC", "L.L.C.", "PTO", "AC", "OCA", "PSC", "CUB", "NRDC", "ACP", "SREA"]);
+const SMALL = new Set(["of", "and", "the", "for", "on", "in"]);
+export function prettyName(x) {
+  if (!x || /[a-z]/.test(x)) return x;
+  return x.split(/(\s+)/).map((w, i) => /^\s+$/.test(w) || ACRONYMS.has(w.replace(/[(),]/g, "")) ? w : (i && SMALL.has(w.toLowerCase())) ? w.toLowerCase() : w.charAt(0) + w.slice(1).toLowerCase().replace(/(['’-])(\w)/g, (m, a, b) => a + b)).join("");
 }
 export function filerLabel(list) {
   if (!list.length) return null;
@@ -73,7 +90,7 @@ export function build() {
     if (r) { readings++; points += r.points.length; useAnchors(r.throughLine.anchors); }
     const doc = {
       slug: c.slug, accession: c.accession || cur.accession || null, date: cur.date || c.issued,
-      filer: cur.filer || filerLabel(list) || (c.slug.startsWith("pjm-") ? "PJM" : c.docket),
+      filer: cur.filer || filerLabel(list) || (c.slug.startsWith("pjm-") ? "PJM" : /^S\. Hrg/.test(c.docket) ? "Senate Energy and Natural Resources Committee" : c.docket),
       ...(list.length > 2 ? { filers: list } : {}),
       kind: cur.kind || c.kind, title: c.title, docket: c.docket, pages: c.pages ?? cur.pages ?? null,
       ...(cur.side ? { side: cur.side } : {}),

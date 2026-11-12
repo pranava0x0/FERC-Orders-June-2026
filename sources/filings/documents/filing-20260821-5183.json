@@ -1,0 +1,78 @@
+{
+  "slug": "filing-20260821-5183",
+  "summary": "Six state consumer advocates jointly protest PJM's Reliability Backstop Procurement in ER26-3380, ask FERC to reject it as unjust and unreasonable, offer two alternatives, and list conditions if FERC accepts it.",
+  "ask": "Reject the RBP; direct PJM to refile a subscription-based procurement or advance the effective date of its IRAS proposal; if RBP is accepted, impose conditions such as a five-year procurement period.",
+  "points": [
+    {
+      "point": "The advocates say RBP cost allocation to large loads depends on state action, and where states do not act, zonal charges fall on the general ratepayer body.",
+      "quote": "where a state does not act—or acts late—zonal RBP charges are allocated onto the general ratepayer body within the",
+      "pg": 4
+    },
+    {
+      "point": "They say RBP's design contradicts its stated 6.8 GW reliability need through opt-outs, 15-year terms and no market mitigation.",
+      "quote": "PJM says that reliability demands that nearly 7 gigawatts of new supply be procured in the near-term, yet permits an untold number of megawatts (or possibly gigawatts) to opt-out of the auction",
+      "pg": 9
+    },
+    {
+      "point": "They say the $555/MW-day price ceiling comes from a one-year capacity design and does not fit a commitment of up to 15 years.",
+      "quote": "A cap set on that basis is irrelevant to the determination of what should be paid",
+      "pg": 6
+    },
+    {
+      "point": "They put 15 years of RBP charges on a 6,831 MW total at about $20.8 billion.",
+      "quote": "$555/MW-day x 365 days x 15 years would be $20,756,847,375.",
+      "pg": 30
+    },
+    {
+      "point": "Option One: refile as a subscription model in which load-serving entities set the procurement quantity and bear credit obligations.",
+      "quote": "PJM should be directed to refile the RBP as a \"subscription\" model",
+      "pg": 30,
+      "pgEnd": 31
+    },
+    {
+      "point": "Option Two: advance IRAS so large loads from 2028/2029 either bring their own resources or are treated as first-off in emergencies.",
+      "quote": "the Commission should, in lieu of approving the RBP, advance the effective date of IRAS",
+      "pg": 33
+    },
+    {
+      "point": "As a fallback, they ask that any approval limit the procurement period to five years.",
+      "quote": "The Commission should limit the RBP procurement period to five years",
+      "pg": 34
+    }
+  ],
+  "throughLine": {
+    "relation": "parallel",
+    "anchors": [
+      "e-7-adequacy-report"
+    ],
+    "text": "Protest in PJM's separate backstop procurement docket ER26-3380, which the advocates link to the EL26-67 show cause order they say already found PJM's tariff appears unjust and unreasonable."
+  },
+  "themes": [
+    "adequacy",
+    "cost",
+    "retail"
+  ],
+  "figures": [
+    {
+      "label": "2028/2029 BRA shortfall and initial RBP target",
+      "value": 6831.3,
+      "unit": "MW",
+      "quote": "the Initial RBP Target of 6,831.3 MW",
+      "pg": 7
+    },
+    {
+      "label": "Price ceiling basis for RBP",
+      "value": 555,
+      "unit": "USD per MW-day",
+      "quote": "($555/MW-day)",
+      "pg": 6
+    },
+    {
+      "label": "Fifteen-year RBP charges on 6,831 MW at the cap price",
+      "value": 20756847375,
+      "unit": "USD",
+      "quote": "$20,756,847,375",
+      "pg": 30
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+ "slug": "report-el26-68-spp",
+ "summary": "SPP files its 30-day informational report on resource adequacy for new large loads. It reports a 2026 summer reserve margin of 17.1 percent, describes its ERAS, Provisional Load, HILL, CHILLS and planning reforms, and sets a schedule for the PAL/PALS flexible-load proposal.",
+ "ask": null,
+ "points": [
+  {"point": "SPP lists complementary initiatives it says have improved planning, resource addition and large load integration.", "quote": "SPP has developed complementary initiatives that improve planning certainty, accelerate the addition of new resources, enhance operational flexibility, strengthen resource adequacy accountability", "pg": 2},
+  {"point": "SPP's East balancing area shows a 17.1 percent summer 2026 reserve margin, about 5,752 MW above requirements.", "quote": "the East BAA maintains a reserve margin of 17.1%, representing approximately 5,752 MW of excess accredited capacity above the total RAR.", "pg": 9},
+  {"point": "At the ERAS filing SPP predicted a 2-3 GW accredited capacity shortfall by 2030.", "quote": "SPP predicted that the SPP Region could face a 2-3 GW accredited capacity shortfall by 2030.", "pg": 11},
+  {"point": "ERAS has 36 active requests representing about 13.3 GW, with none withdrawn.", "quote": "there are 36 active ERAS requests representing approximately 13.3 GW of generating capacity and no requests have withdrawn.", "pg": 12},
+  {"point": "SPP defines HILLs at 10 MW or more at 69 kV and below, or 50 MW or more above 69 kV.", "quote": "50 MW or more if connected to the Transmission System at a voltage level greater than 69 kV", "pg": 16},
+  {"point": "PALS would be a non-firm service with usage-based billing for fully dispatchable loads subject to curtailment.", "quote": "PALS would utilize a usage-based billing structure and require participating loads to be fully dispatchable", "pg": 24},
+  {"point": "PAL/PALS faces MOPC and RSC votes on October 13 and November 16, with a FERC filing by November 16, 2026.", "quote": "final votes by MOPC on October 13, 2026, and the RSC on November 16, 2026.", "pg": 26}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-9-adequacy-report", "e-9-new-services-for-flexible-loads"], "text": "Answers the E-9 30-day directive for an informational report on resource adequacy for large loads and gives the stakeholder schedule for the PAL/PALS service the order cites for flexible loads."},
+ "themes": ["adequacy", "flex", "study"],
+ "figures": [
+  {"label": "SPP East BAA excess accredited capacity, summer 2026", "value": 5752, "unit": "MW", "quote": "approximately 5,752 MW of excess accredited capacity above the total RAR", "pg": 9},
+  {"label": "SPP active ERAS generation requests", "value": 13.3, "unit": "GW", "quote": "approximately 13.3 GW of generating capacity", "pg": 12},
+  {"label": "SPP predicted accredited shortfall by 2030 (at ERAS filing)", "value": 3, "unit": "GW", "quote": "2-3 GW accredited capacity shortfall by 2030", "pg": 11}
+ ]
+}

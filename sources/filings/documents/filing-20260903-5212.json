@@ -1,0 +1,21 @@
+{
+ "slug": "filing-20260903-5212",
+ "summary": "Six state consumer advocates (the Joint Consumer Advocates) protest PJM's Interim Resource Adequacy Service and Large Load Registry filing. They support the concept but ask FERC to require non-firm transmission service, tighten bring-your-own-capacity eligibility, and reject the separate backstop procurement.",
+ "ask": "Find IRAS unjust and unreasonable as filed and direct an amended filing with non-firm service for non-capacity-backed loads, new-only self-supply, a validated registry, and rejection of the backstop procurement.",
+ "points": [
+  {"point": "The advocates cite the June 2026 show cause order's finding on PJM's tariff and ask FERC to require non-firm service for new large loads that do not self-supply.", "quote": "new large loads that do not self-supply must take non-firm transmission service.", "pg": 2},
+  {"point": "They want only resources that have not cleared a prior Base Residual Auction to count as new capacity.", "quote": "only resources that have not previously cleared a prior Base Residual Auction (BRA) are eligible.", "pg": 2},
+  {"point": "PJM's design lets a load reduce curtailment risk with capacity that already cleared, adding load without adding supply.", "quote": "This would increase the amount of load on the system without either increasing system supply or making the new load an IRAS resource subject to curtailment.", "pg": 4},
+  {"point": "Compensating curtailed loads leaves states to decide who pays, so other customers may fund payments to data centers.", "quote": "which leaves open the possibility that non-large load customers may yet end up paying resource adequacy costs to the new large data center loads that are driving PJM’s reliability concerns.", "pg": 5},
+  {"point": "The Market Monitor figures show data center demand raised costs to other customers by $23.1 billion over three auctions.", "quote": "The total increase in costs to other PJM customers as a result of data center load in the last three BRAs was $23,100,955,341.", "pg": 8},
+  {"point": "FERC has called large loads a separate category and directed every RTO and ISO to define them.", "quote": "a separate category of load", "pg": 9},
+  {"point": "IRAS could meet the roughly 6.8 GW need the backstop targets, sooner and more durably, making the backstop unnecessary.", "quote": "IRAS can satisfy the capacity need at which the RBP is aimed sooner, more durably, and, if correctly modified as non-firm transmission service, at less cost.", "pg": 38}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-service-for-flexible-loads", "e-7-adequacy-report"], "text": "Invokes the June 2026 PJM show cause order and urges FERC to use Section 206 to require non-firm service for non-capacity-backed loads, the type of flexible-load service E-7 directs PJM to address."},
+ "themes": ["flex", "adequacy", "registry", "cost"],
+ "figures": [
+  {"label": "Increase in costs to other customers from data center load, last three auctions", "value": 23100955341, "unit": "$", "quote": "$23,100,955,341", "pg": 8},
+  {"label": "Initial backstop procurement target (2028/2029 shortfall)", "value": 6831.3, "unit": "MW", "quote": "6,831.3 MW UCAP shortfall", "pg": 38},
+  {"label": "Data center share of projected load growth 2024-2030", "value": 30, "unit": "GW", "quote": "“30 GW . . . is projected to be from data centers.”", "pg": 9}
+ ]
+}

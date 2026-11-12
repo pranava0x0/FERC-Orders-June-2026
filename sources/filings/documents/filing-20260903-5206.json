@@ -1,0 +1,16 @@
+{
+ "slug": "filing-20260903-5206",
+ "summary": "The Pennsylvania Public Utility Commission comments on PJM's Interim Resource Adequacy Service and Large Load Registry filing. It supports the registry but objects to the proposed curtailment compensation tariff section as an intrusion on state retail ratemaking.",
+ "ask": "Sever and deny the proposed compensation rate section or adopt the PA PUC's alternative language, modify the registry to give states curtailment data, and otherwise accept the filing.",
+ "points": [
+  {"point": "The PA PUC supports a New Large Load registry but objects to the compensation language in Appendix A.", "quote": "PA PUC supports the creation and maintenance of a New Large Load (NLL) Registry and suggests improvements to the Registry.", "pg": 2},
+  {"point": "The tariff lets a large load accept less than 50% of the Non-Performance Charge Rate in retail rates, which the PA PUC says abdicates retail authority.", "quote": "retail ratemaking authority would be inappropriately and unlawfully abdicated to NLLs.", "pg": 3},
+  {"point": "PJM's compensation ranges from 50% of the Non-Performance Charge Rate down to zero.", "quote": "PJM’s proposal also allows eligible NLLs to agree upon a retail rate between 50% of the Non- Performance Charge Rate and zero dollars", "pg": 4},
+  {"point": "The PA PUC says the large load would effectively set its own curtailment compensation, with no validation of actual curtailment.", "quote": "Under this scheme, the NLL functions as a retail rate regulator that sets its own curtailment compensation rates up to a maximum threshold of 50% of the Non-Performance Charge Rate.", "pg": 5},
+  {"point": "It cites Pennsylvania Executive Order 2026-05 limiting data center costs on other customers.", "quote": "Governor Josh Shapiro signed Executive Order 2026-05 on August 18, 2026.", "pg": 6},
+  {"point": "Alternative language sets compensation at 0% unless a state regulator permits up to 50%.", "quote": "The rate for the provision of Interim Resource Adequacy Service shall be 0% of the Non-Performance Charge Rate", "pg": 7},
+  {"point": "State commissions should have access to the registry and to curtailment data.", "quote": "state utility commissions should have access to the Registry and curtailment data should be provided in the Registry.", "pg": 8}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report", "e-7-cost-transparency"], "text": "Comments in PJM's interim resource adequacy docket ER26-3515. Its split between wholesale curtailment compensation and state retail authority, and its registry data request, relate to E-7 adequacy and cost transparency."},
+ "themes": ["retail", "registry", "adequacy", "flex"]
+}

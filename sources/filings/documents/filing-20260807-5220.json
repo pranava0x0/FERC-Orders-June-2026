@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20260807-5220",
+ "summary": "The Corporate Energy Buyers Association answers in support of the SPP Joint Movants' amended motion for a 95-day abeyance in EL26-68 and asks FERC to grant it on an expedited basis.",
+ "ask": "Grant the Joint Movants' amended motion for a 95-day abeyance in an expedited manner.",
+ "points": [
+  {"point": "CEBA says abeyance lets SPP and stakeholders work collaboratively instead of moving the debate to the FERC docket.", "quote": "as opposed to a rushed proposal that would unnecessarily shift stakeholder debate to the Commission docket.", "pg": 1},
+  {"point": "CEBA says the abeyance accommodates the Regional State Committee and SPP Board meetings.", "quote": "reasonable accommodations necessary to convene the Regional State Committee and the SPP Board of Directors", "pg": 1},
+  {"point": "CEBA says the 95 days would not materially slow reform and would improve commercial viability and legal durability.", "quote": "extension would not materially impede the Commission's objectives for advancing reforms quickly yet offers significant benefits", "pg": 2}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-9-show-cause"], "text": "A buyer-side answer supporting the E-9 SPP abeyance motion, which moved the 60-day show cause response to November 20, 2026."},
+ "themes": ["procedure"],
+ "figures": [
+  {"label": "Abeyance requested for SPP show cause proceeding", "value": 95, "unit": "days", "quote": "Joint Movants ask the Commission to hold this proceeding in abeyance by 95 days", "pg": 1}
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "slug": "motion-er26-3380-pjm-abeyance",
+ "summary": "PJM asks FERC to hold the paper hearing on its Reliability Backstop Procurement rules in abeyance while it prepares a new section 205 filing on cost allocation, Transmission Owner exit and LSE collateral.",
+ "ask": "Hold the paper hearing proceedings and any additional briefing in ER26-3380 and EL26-108 in abeyance pending PJM's new section 205 filing.",
+ "points": [
+  {"point": "PJM requests abeyance of the paper hearing pending a new section 205 filing responding to the September 29 Order.", "quote": "hold the paper hearing proceedings, including any additional briefings, in this docket in abeyance pending resolution of PJM’s forthcoming filing", "pg": 1},
+  {"point": "The September 29 Order accepted the backstop rules but suspended them five months to review cost allocation, Transmission Owner exit rules and LSE collateral.", "quote": "suspended those rules for five months to allow time for further briefing through a paper hearing process to further review three discrete areas of the RBP: cost allocation, Transmission Owner exit rules, and LSE collateral requirements.", "pg": 1},
+  {"point": "PJM plans to file the new section 205 proposal by October 29, 2026.", "quote": "a new FPA section 205 filing that addresses, inter alia, cost allocation issues, Transmission Owner exit responsibilities, and LSE collateral requirements as they relate to RBP by October 29, 2026.", "pg": 2}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-adequacy-report"], "text": "Schedule motion in PJM's backstop procurement dockets, which run beside E-7 and concern how PJM secures generation for new large loads, the subject of the E-7 adequacy report."},
+ "themes": ["procedure", "adequacy", "credit"],
+ "figures": []
+}

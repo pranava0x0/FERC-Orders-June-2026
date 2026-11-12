@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20260821-5217",
+ "summary": "The Pennsylvania Office of Consumer Advocate protests PJM's Reliability Backstop Procurement filing, arguing that states lack jurisdiction to set the method that allocates backstop obligations to load serving entities and that FERC must resolve the gap.",
+ "ask": "Reject PJM's state-determined allocation of backstop obligations, declare FERC jurisdiction over those methods, and require transmission owners to file Attachment M-2 amendments defining them.",
+ "points": [
+  {"point": "Pennsylvania OCA says PJM's filing creates a one-time procurement of new capacity driven mainly by data center load.", "quote": "a one-time procurement of new capacity to address resource adequacy challenges in the PJM Region arising from insufficient commitments of capacity in the 2027/2028 and 2028/2029 Reliability Pricing Model (RPM) Auctions", "pg": 3},
+  {"point": "FERC, not the states, has jurisdiction over the methods that set peak load contribution values used to allocate capacity costs.", "quote": "FERC possesses—and states lack—jurisdiction to determine or approve the methods that are used to develop peak load contribution (PLC) and network service", "pg": 3, "pgEnd": 4},
+  {"point": "PJM's plan to let states set backstop obligation values is called unjust and unreasonable because states would need jurisdiction they lack.", "quote": "PJM’s proposal is unjust and unreasonable because for states to determine the RBO values, they would have to determine and approve methods for RBO PLCs—and the states lack jurisdiction to do so.", "pg": 4},
+  {"point": "If no state method is reported, PJM's fallback is pro rata allocation, which OCA says would charge non-large-load customers.", "quote": "pro rata RBP cost allocation to LSEs using PLC values is unjust and unreasonable because it will likely result in non-large load customers being allocated RBP costs, despite these ratepayers not having caused the costs.", "pg": 6},
+  {"point": "OCA lays out three relief options and recommends the first: FERC exercises jurisdiction and orders mandatory Attachment M-2 filings.", "quote": "FERC should grant the first relief option by finding that PJM’s RBO cost allocation proposal is unjust and unreasonable, exercising jurisdiction over how RBO costs are allocated to LSEs, and directing all transmission owners to make mandatory Attachment M-2 filings", "pg": 5}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-cost-recovery-agreement", "e-7-adequacy-report"], "text": "Protest in PJM's separate backstop docket ER26-3380 on who pays for capacity added for large loads, a cost-shifting concern that mirrors the E-7 cost-recovery agreement directive and the adequacy report topic."},
+ "themes": ["cost", "adequacy", "retail"],
+ "figures": []
+}

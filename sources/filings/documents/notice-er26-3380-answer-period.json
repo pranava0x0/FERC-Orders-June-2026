@@ -1,0 +1,11 @@
+{
+ "slug": "notice-er26-3380-answer-period",
+ "summary": "FERC's Deputy Secretary sets October 21, 2026 as the deadline for answers to PJM's motion to hold the backstop procurement paper hearing in abeyance.",
+ "ask": null,
+ "points": [
+  {"point": "Answers to PJM's abeyance motion are due by 5:00 pm Eastern on October 21, 2026.", "quote": "answers to PJM’s motion are due by 5:00 pm Eastern Time on October 21, 2026.", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-adequacy-report"], "text": "Sets the answer period on a schedule motion in PJM's separate backstop procurement dockets, which address capacity for new large loads, the subject of the E-7 adequacy report."},
+ "themes": ["procedure"],
+ "figures": []
+}

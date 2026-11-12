@@ -1,0 +1,21 @@
+{
+ "slug": "filing-er26-3515-pjm-iras",
+ "summary": "PJM files tariff and Reliability Assurance Agreement revisions creating Interim Resource Adequacy Service, a Large Load Registry, definitions of Large Load and New Large Load, and a Variable Resource Requirement curve that excludes new large loads without their own capacity.",
+ "ask": "Accept the Tariff and RAA revisions by October 12, 2026, effective as requested, with PJM's consent to FERC modifying or severing elements under FPA Section 205.",
+ "points": [
+  {"point": "IRAS lets PJM prioritize load reduction in zones where new large loads brought no capacity of their own, and only in real-time shortage conditions.", "quote": "a service to be implemented by PJM solely during periods when there are insufficient resources to reliably meet demand in real time operations.", "pg": 7},
+  {"point": "New large loads avoid IRAS by bringing new capacity, and PJM ties the design to SPP's CHILLS and the June show cause orders.", "quote": "This principle lays the foundation for the IRAS paradigm in PJM that facilitates large load interconnections in a manner similar to the Southwest Power Pool’s (“SPP”) Conditional High Impact Large Load Service", "pg": 10},
+  {"point": "A Large Load is defined as 50 MW or more of cumulative peak load at a single electrical site, with affiliated facilities within one mile combined.", "quote": "cumulative peak load of 50 megawatts [(“MW”)] or greater at a single electrical site behind one or more points of interconnection", "pg": 11},
+  {"point": "PJM would direct each distributor zone to cut load up to the MW tied to eligible new large loads, and states choose which load to reduce.", "quote": "each Electric Distributor zone/area may be directed by PJM dispatchers to reduce load up to the MW quantity of capacity attributable to Eligible New Large Loads in that zone/area.", "pg": 12},
+  {"point": "Compensation for load reduction is capped at 50% of the Non-Performance Charge Rate.", "quote": "50% of the Non-Performance Charge Rate—as the maximum rate for IRAS performance.", "pg": 108},
+  {"point": "From 2029/2030 PJM would exclude new large loads without bring-your-own-capacity arrangements from the demand curve.", "quote": "exclude from the VRR Curve New Large Loads, to the extent they do not have arrangements with sufficient BYONC, beginning with the 2029/2030 Delivery Year.", "pg": 29},
+  {"point": "PJM proposes no end date for IRAS.", "quote": "not proposing an end date to the IRAS program.", "pg": 78},
+  {"point": "PJM requests an October 12, 2026 effective date for the revisions and registry, with IRAS available from June 1, 2027.", "quote": "make the enclosed proposed Tariff and RAA revisions effective by no later than October 12, 2026", "pg": 127}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-service-for-flexible-loads", "e-7-application-study-process", "e-7-adequacy-report"], "text": "PJM's separate Section 205 filing, ER26-3515, which cites the June 2026 show cause order. IRAS is a curtailable service for new large loads, and the registry defines Large Load, both themes of E-7."},
+ "themes": ["flex", "registry", "adequacy", "retail"],
+ "figures": [
+  {"label": "PJM Large Load threshold", "value": 50, "unit": "MW", "quote": "cumulative peak load of 50 megawatts", "pg": 11},
+  {"label": "Ratepayer Pledge signatories counted by PJM", "value": 282, "unit": "utilities, cooperatives, data centers", "quote": "282 utilities, cooperatives, data centers, and 23 governors", "pg": 10}
+ ]
+}

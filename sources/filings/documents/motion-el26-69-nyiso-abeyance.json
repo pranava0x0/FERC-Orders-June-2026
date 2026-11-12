@@ -1,0 +1,18 @@
+{
+ "slug": "motion-el26-69-nyiso-abeyance",
+ "summary": "NYISO moves for the maximum 90-day abeyance of the EL26-69 show cause response, to November 16, 2026, so it can build a section 205 filing through its stakeholder governance process and coordinate with the New York transmission owners.",
+ "ask": "Issue an order by August 13, 2026 holding the proceeding in abeyance for 90 days until November 16, 2026, with a five-day answer period.",
+ "points": [
+  {"point": "NYISO requests the full 90 days and action by August 13.", "quote": "hold this proceeding in abeyance for the maximum period permitted by the Show Cause Order, i.e., for 90 days, until November 16, 2026.", "pg": 1},
+  {"point": "NYISO plans a new large load study process replacing its existing load interconnection rules, with expedited joint studies.", "quote": "the NYISO plans to create a new large load study process that would replace and improve upon its existing load interconnection rules.", "pg": 7},
+  {"point": "NYISO would offer firm and non-firm variants of its financial reservation service, with non-firm withdrawal service for flexible large loads.", "quote": "make large loads eligible to take non-firm withdrawal service to the extent their ability to be flexible mitigates their impact on the system.", "pg": 7},
+  {"point": "For co-location, NYISO intends to sunset its BTM:NG program and treat load and generation as separate market entities.", "quote": "the NYISO intends to propose sunsetting its BTM:NG program and replacing it with a new co-located resource participation model", "pg": 7, "pgEnd": 8},
+  {"point": "NYISO ties the timing to New York's shared governance and the NYPSC's parallel large-load proceeding.", "quote": "a 90-day abeyance is reasonable in the NYISO's case because it will facilitate the NYISO's ability to obtain approval from its stakeholder Management Committee before making a section 205 filing.", "pg": 9},
+  {"point": "Schedule: committee votes October 14 and 15, Management Committee October 28, filing November 16, 2026.", "quote": "Provided that Management Committee and Board approvals are secured, the NYISO will submit a section 205 proposal on November 16, 2026", "pg": 11}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-12-show-cause", "e-12-timely-study-window", "e-12-proximate-generation-service"], "text": "Invokes the E-12 order's 90-day abeyance option and describes the section 205 package NYISO plans on study process, flexible service, co-location and proximate generation."},
+ "themes": ["procedure", "study", "colo", "flex"],
+ "figures": [
+  {"label": "Abeyance requested by NYISO", "value": 90, "unit": "days", "quote": "for 90 days, until November 16, 2026", "pg": 1}
+ ]
+}

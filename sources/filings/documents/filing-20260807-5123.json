@@ -1,0 +1,13 @@
+{
+ "slug": "filing-20260807-5123",
+ "summary": "The SPP Regional State Committee writes in support of SPP's request to extend the show cause response deadline to November 20, 2026, so its Cost Control and Allocation Review and Evaluation Team can finish a cost-shift recommendation.",
+ "ask": "Grant SPP's request for an extension of time, until November 20, 2026, to respond to the show cause order.",
+ "points": [
+  {"point": "The RSC says cost allocation for large loads falls within its regional governance role.", "quote": "These issues directly implicate the RSC's responsibility within the SPP regional governance structure for determining regional proposals concerning the allocation of transmission costs.", "pg": 1},
+  {"point": "The CARE Team is evaluating how to assign or secure costs when projected large load does not materialize or stay.", "quote": "particularly when projected load does not materialize as anticipated or does not remain on the system for the period used to justify transmission investment.", "pg": 1},
+  {"point": "The CARE Team expects to bring a recommendation to the RSC and SPP Board on November 16 and 17, 2026.", "quote": "quarterly business meetings on November 16 and 17, 2026.", "pg": 1},
+  {"point": "The RSC says the extra time is not unnecessary delay.", "quote": "The RSC recognizes the urgency of addressing the challenges presented by rapid large-load growth and does not seek unnecessary delay.", "pg": 2}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-9-show-cause", "e-9-cost-recovery-crediting"], "text": "Supports SPP's abeyance motion in the E-9 docket and ties the timing to state-regulator work on the cost-shift risk the order's cost-recovery directive addresses."},
+ "themes": ["procedure", "cost", "retail"]
+}

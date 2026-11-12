@@ -1,0 +1,15 @@
+{
+ "slug": "comments-el26-67-spartz",
+ "summary": "Representative Victoria Spartz writes to FERC's Chairman and the Energy Secretary on November 5, 2026, urging federal action on large-load projects, ratepayer protections, transparency and PJM and MISO governance, and requesting written responses.",
+ "ask": "Identify and use federal authority to condition large-load approvals, build a national large-load inventory, make developers pay full costs, review PJM and MISO governance, and answer in writing within 30 days.",
+ "points": [
+  {"point": "She asks for a moratorium on discretionary approvals for new and pending large-load projects until reliability, cost and transparency safeguards exist.", "quote": "suspend or condition discretionary approvals affecting new and pending major data centers, cryptocurrency mining operations, and associated infrastructure until essential reliability, cost-allocation, transparency, and financial safeguards are established.", "pg": 2},
+  {"point": "She seeks a national inventory of existing and proposed large loads, including beneficial owners and potential stranded costs.", "quote": "Establish a transparent national accounting of proposed and existing major electricity loads, identifying developers, beneficial owners, affiliates, verified demand, financial commitments", "pg": 2},
+  {"point": "Large-load developers should bear incremental generation and transmission costs, with review of deposits, guarantees, minimum payments and termination fees.", "quote": "Review deposits, financial guarantees, minimum-payment obligations, termination fees, and protections against stranded costs.", "pg": 4},
+  {"point": "She asks for an independent review of PJM and MISO governance that cites docket EL26-67-000.", "quote": "FERC Docket EL26-67-000: Preliminary findings concerning potentially unjust, unreasonable, or discriminatory large-load interconnection rules.", "pg": 5},
+  {"point": "She requests separate written responses from FERC and DOE within 30 days and a corrective-action report within 90 days.", "quote": "I request separate written responses from FERC and DOE within 30 days identifying:", "pg": 7}
+ ],
+ "throughLine": {"relation": "context", "anchors": ["e-7-cost-transparency", "e-7-cost-recovery-agreement"], "text": "Congressional letter filed in EL26-67 after the show cause order; its calls for large-load disclosure and developer-paid costs touch the E-7 cost transparency and cost-recovery directives but answer no directive."},
+ "themes": ["registry", "cost", "retail"],
+ "figures": []
+}

@@ -1,0 +1,69 @@
+{
+ "slug": "filing-20260708-5011",
+ "summary": "Maven Solutions comments on the E-7 show cause order, scoring PJM's large-load tariff posture Conditional under its own Civic Bankability Rating Standard and recommending tariff revisions for each of the five reform categories.",
+ "ask": "Require PJM to file tariff revisions or a detailed evidentiary showing on all five reform categories, including time-bounded study commitments, a large-load cost-causation method and a flexible large-load tariff class.",
+ "points": [
+  {
+   "point": "Maven rates PJM's posture Conditional with two keystone flags, Ratepayer Protection and Financial Surety, which it says warrant Commission intervention.",
+   "quote": "PJM's current tariff posture on large-load interconnection scores CONDITIONAL under the Civic Bankability Rating Standard with two active keystone flags",
+   "pg": 3
+  },
+  {
+   "point": "Maven cites the 2027/28 auction as the first to miss the reliability requirement, 6,516.6 MW UCAP short at a 14.4% reserve margin.",
+   "quote": "which PJM reported as 6,516.6 MW UCAP below the RTO Reliability Requirement.",
+   "pg": 4
+  },
+  {
+   "point": "Maven says large-load study processes lack a bounded time-to-service commitment or public reporting of completion times.",
+   "quote": "proceed without a bounded time-to-service commitment, without public reporting on median or 90th-percentile completion timelines, and without a customer-facing remedy mechanism for delayed studies.",
+   "pg": 8
+  },
+  {
+   "point": "Recommendation 2 asks that upgrade and capacity costs caused by large loads go to the responsible load class, with per-upgrade disclosure.",
+   "quote": "attributes transmission upgrade costs and capacity procurement costs caused by large-load interconnection to the responsible load class, not to Load Serving Entities or residential rate classes",
+   "pg": 12
+  },
+  {
+   "point": "Recommendation 4 asks for flexible large-load tariff classes with defined compensation, reliability crediting and financial surety.",
+   "quote": "provide for curtailable or interruptible service with defined compensation; (ii) include contribution-to-reliability crediting",
+   "pg": 12
+  },
+  {
+   "point": "Maven says this is one of six coordinated comments across dockets EL26-67 through EL26-72.",
+   "quote": "These Comments are one of six substantive Comments Maven files this cycle across the six Show Cause dockets initiated on June 18, 2026 (EL26-67 through EL26-72).",
+   "pg": 5
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-7-show-cause",
+   "e-7-cost-recovery-agreement",
+   "e-7-service-for-flexible-loads",
+   "e-7-application-study-process"
+  ],
+  "text": "Comments on the E-7 show cause order in EL26-67 that map Maven's recommendations to the order's five reform categories: study process, cost shifting, co-location, flexible load service and proximate generation."
+ },
+ "themes": [
+  "study",
+  "cost",
+  "flex",
+  "credit"
+ ],
+ "figures": [
+  {
+   "label": "PJM 2027/28 auction shortfall below reliability requirement",
+   "value": 6516.6,
+   "unit": "MW UCAP",
+   "quote": "which PJM reported as 6,516.6 MW UCAP below the RTO Reliability Requirement.",
+   "pg": 4
+  },
+  {
+   "label": "Data-center load counted in IMM analysis of 2027/28 RPM revenues",
+   "value": 17071,
+   "unit": "MW",
+   "quote": "the inclusion of 17,071 MW of existing and forecast data-center load increased 2027/28 RPM revenues by $6.498 billion",
+   "pg": 6
+  }
+ ]
+}

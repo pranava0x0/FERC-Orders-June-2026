@@ -7,10 +7,13 @@ case "${1:---check}" in
   --check) regen='--check'; archive='--check' ;;
   *) echo "Usage: sh tools/refresh-reading-room.sh [--build|--check]" >&2; exit 2 ;;
 esac
+node tools/build-order-anchors.mjs $regen
+node tools/validate-documents.mjs
 python3 tools/extract-abeyance-docs.py $regen
 python3 tools/index-filing-text.py $regen
 node tools/build-filing-readers.mjs $regen
 node tools/build-record-data.mjs $regen
+node tools/build-discourse-index.mjs $regen
 node tools/build-delivery-data.mjs $regen
 node tools/build-docket-pages.mjs $regen
 node tools/build-seo.mjs $regen

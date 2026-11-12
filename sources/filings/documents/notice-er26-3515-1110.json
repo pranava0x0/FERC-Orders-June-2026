@@ -1,0 +1,12 @@
+{
+ "slug": "notice-er26-3515-1110",
+ "summary": "FERC's November 10, 2026 Combined Notice of Filings lists many routine electric rate filings. Two PJM entries matter here: the ER26-3515-002 compliance filing on the Large Load definition and registry, and the ER27-454 revised Reliability Backstop Procurement rules.",
+ "ask": null,
+ "points": [
+  {"point": "FERC notices PJM's compliance filing on the Large Load definition and registry, filed November 9 with comments due November 30, 2026.", "quote": "Compliance filing: Compliance Filing re Large Load Definition and Large Load Registry to be effective 10/12/2026.", "pg": 1},
+  {"point": "FERC notices PJM's new Section 205 filing revising the backstop procurement rules from ER26-3380, effective January 29, 2027.", "quote": "§205(d) Rate Filing: Revised Reliability Backstop Procurement Rules in ER26-3380-000 to be effective 1/29/2027.", "pg": 1},
+  {"point": "Interventions and protests are due by 5:00 pm Eastern on each comment date.", "quote": "must file in accordance with Rules 211, 214, or 206 of the Commission’s Regulations (18 CFR 385.211, 385.214, or 385.206) on or before 5:00 pm Eastern time on the specified comment date.", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-application-study-process"], "text": "Sets the comment date of November 30, 2026 for PJM's compliance filing on the Large Load definition and registry in ER26-3515, which supplies the Large Load definition the E-7 study-process directive depends on."},
+ "themes": ["procedure", "registry", "adequacy"]
+}

@@ -1,0 +1,61 @@
+{
+ "slug": "filing-20260903-5199",
+ "summary": "The Data Center Coalition moves to intervene and protests PJM's Interim Resource Adequacy Service and Large Load Registry filing. It argues the retail curtailment program exceeds FERC's jurisdiction and is unduly discriminatory, and asks FERC to reject it.",
+ "ask": "Reject PJM's IRAS filing, or open a Section 206 proceeding on emergency procedures; failing that, add a transition mechanism, exempt existing retail contracts and delay IRAS until June 1, 2028.",
+ "points": [
+  {
+   "point": "DCC supports bring-your-own-generation and state interruptible tariffs but calls IRAS legally defective.",
+   "quote": "DCC believes that the IRAS proposal is legally defective and must be rejected.",
+   "pg": 3
+  },
+  {
+   "point": "IRAS would compel states to conform retail curtailment rules to a PJM tariff, which DCC says disregards the federal-state division of authority.",
+   "quote": "IRAS instead seeks to compel states within the PJM footprint to conform their retail curtailment frameworks to PJM tariff requirements.",
+   "pg": 3
+  },
+  {
+   "point": "DCC offers a state opt-in alternative in which states set interruptible classes and PJM signals curtailment under state tariffs.",
+   "quote": "states would be responsible for establishing interruptible customer classes for large load customers while PJM would continue to monitor system conditions",
+   "pg": 4
+  },
+  {
+   "point": "Network service customers serving new large loads pay full capacity charges but are curtailed ahead of demand resources.",
+   "quote": "PJM proposes to curtail these customers prior to deploying Demand Resources that have been committed to provide capacity to maintain reliability",
+   "pg": 5
+  },
+  {
+   "point": "Loads get under ten months to procure new capacity with no transition mechanism.",
+   "quote": "effectively provides New Large Loads a window of less than ten months to procure new capacity or face curtailment",
+   "pg": 5
+  },
+  {
+   "point": "Excluding eligible new large loads from the Variable Resource Requirement curve from 2029/2030 would distort capacity prices.",
+   "quote": "excluding Eligible New Large Loads from the calculation of the Variable Resource Requirement curve (“VRR Curve”) beginning with the 2029/2030 Delivery Year",
+   "pg": 6
+  },
+  {
+   "point": "Alternatively DCC asks for a Section 206 proceeding, a transition mechanism and an implementation delay to June 1, 2028.",
+   "quote": "the Commission should direct PJM to delay implementation of IRAS until June 1, 2028",
+   "pg": 7
+  },
+  {
+   "point": "On jurisdiction, FERC may not approve tariff terms that set retail service terms or curtailment priority.",
+   "quote": "FERC may not approve tariff provisions that directly regulate retail customers, dictate retail service terms, or prescribe the curtailment priority of retail customers.",
+   "pg": 8
+  }
+ ],
+ "throughLine": {
+  "relation": "parallel",
+  "anchors": [
+   "e-7-service-for-flexible-loads",
+   "e-7-adequacy-report"
+  ],
+  "text": "Protest in PJM's interim resource adequacy docket ER26-3515. IRAS curtails new large loads that do not bring capacity, a flexible-load service question the E-7 order also raises, and DCC contests FERC's authority over it."
+ },
+ "themes": [
+  "retail",
+  "flex",
+  "adequacy",
+  "procedure"
+ ]
+}

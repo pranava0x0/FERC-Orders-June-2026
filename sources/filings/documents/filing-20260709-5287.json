@@ -1,0 +1,17 @@
+{
+ "slug": "filing-20260709-5287",
+ "summary": "New Era Energy & Digital, a data center developer, moves to intervene in EL26-67 and files limited comments asking PJM to address a Maximum Net Withdrawal study framework and fast-track treatment of uprates and reactivated capacity in its adequacy report.",
+ "ask": "Grant intervention and have PJM address Maximum Net Withdrawal for paired load and generation, and expedited uprate and reactivation pathways, in its forthcoming filings.",
+ "points": [
+  {"point": "New Era says PJM should study a load paired with dependable nearby generation by its enforceable maximum net withdrawal rather than full gross demand.", "quote": "PJM should evaluate the project based on the facility’s enforceable maximum net withdrawal from the transmission system, rather than assuming the facility will impose its full gross demand", "pg": 4},
+  {"point": "A net-withdrawal cap would need metering, controls, operator visibility and tariff consequences for exceedance.", "quote": "a binding net-withdrawal cap in the relevant service agreement or other tariff- governed arrangement", "pg": 4},
+  {"point": "PJM should say what transmission service an Eligible Customer takes for a load operated under such a cap.", "quote": "PJM should also explain what transmission service the Eligible Customer must take for a large load operated subject to an enforceable Maximum Net Withdrawal.", "pg": 5},
+  {"point": "The 30-day adequacy report should cover expedited study of low-risk uprates at existing plants.", "quote": "PJM should address whether its Tariff provides an adequate pathway for expedited treatment of uprates at existing generating facilities.", "pg": 5},
+  {"point": "It also asks about expedited reconnection of retired or mothballed capacity without bypassing reliability review.", "quote": "The purpose would not be to bypass reliability review, but to avoid subjecting bounded reactivations of existing capacity to procedures designed for wholly new speculative projects.", "pg": 6}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-7-adequacy-report", "e-7-show-cause"], "text": "Limited comments on E-7 asking PJM to address proximate-generation study treatment in its show cause response and uprate fast-tracking in the 30-day adequacy report."},
+ "themes": ["proximate", "adequacy", "study"],
+ "figures": [
+  {"label": "PJM forecast peak load growth 2024 to 2030, as described by New Era", "value": 32, "unit": "GW", "quote": "PJM’s load forecast predicts peak load growth of 32 GW from 2024 to 2030, with 30 GW of that growth projected to come from data centers.", "pg": 2}
+ ]
+}

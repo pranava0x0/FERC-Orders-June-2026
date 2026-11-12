@@ -1,0 +1,12 @@
+{
+ "slug": "errata-el26-67-pjm",
+ "summary": "FERC's Secretary corrects the caption and footnote 13 of the E-7 show cause order so Allegheny Electric Cooperative and Wabash Valley Power Association are treated as non-public-utility owners that need not respond.",
+ "ask": null,
+ "points": [
+  {"point": "The errata removes Allegheny Electric Cooperative and Wabash Valley Power Association from the caption of the EL26-67 order.", "quote": "The caption in the order inadvertently included “Allegheny Electric Cooperative, Inc.” and “Wabash Valley Power Association, Inc.”", "pg": 1},
+  {"point": "FERC keeps authority to review non-public-utility formula rates through PJM, which must answer for their Tariff provisions.", "quote": "PJM must respond to this order regarding the non-public utilities’ PJM Tariff provisions on file with the Commission.", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-show-cause"], "text": "Corrects which Transmission Owners must respond to the E-7 show cause order in EL26-67, leaving the directive itself unchanged."},
+ "themes": ["procedure"],
+ "figures": []
+}

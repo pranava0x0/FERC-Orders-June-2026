@@ -1,0 +1,21 @@
+{
+ "slug": "report-el26-69-nyiso",
+ "summary": "NYISO files its 30-day informational report on resource adequacy for new large loads. It says its markets and planning processes remain adequate, reports a possible statewide shortfall above 1,800 MW from 2033, and lists reforms under stakeholder review.",
+ "ask": null,
+ "points": [
+  {"point": "NYISO says its existing markets and planning processes remain available even though large load growth presents challenges.", "quote": "the NYISO's markets and existing planning processes remain available to address resource adequacy.", "pg": 1},
+  {"point": "Preliminary 2026 RNA results could show a statewide resource adequacy violation from 2033, exceeding 1,800 MW by 2036 with large load growth.", "quote": "the NYISO could identify a statewide resource adequacy criterion violation that would first occur in 2033 and increase through 2036 with a deficiency greater than 1,800 MW", "pg": 4},
+  {"point": "The interconnection queue holds 89 completed projects over 11 GW awaiting operation and a 91-project, 15 GW transition cluster.", "quote": "the New York region has 89 projects, representing over 11 GW of generation, that have completed the interconnection study process but have yet to enter commercial operation.", "pg": 5},
+  {"point": "For regulated generation solutions, the NYPSC decides cost allocation, including for shortfalls caused by a large load.", "quote": "The allocation of the costs for the development of the regulated generation or demand response solution would be determined by the NYPSC", "pg": 8},
+  {"point": "NYISO is discussing an accelerated interconnection study path for resources needed to address an identified reliability need.", "quote": "a proposal to establish an accelerated interconnection study path for resources that are needed to address a reliability need", "pg": 10},
+  {"point": "NYISO is considering assigning responsibility for a resource deficiency to a large load that directly contributes to it.", "quote": "If the NYISO identifies a resource deficiency and the large load(s) directly contributes to such deficiency, then the NYISO is considering assigning the", "pg": 11},
+  {"point": "Planning reforms would go to committees in January to March 2027, with a section 205 filing around March 2027.", "quote": "with a filing submitted to the Commission under Section 205 of the FPA in or around March 2027, subject to necessary approvals.", "pg": 13}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-12-adequacy-report"], "text": "Answers the E-12 30-day directive for an informational report on how NYISO will ensure adequate generation for existing and new large loads, with proposals and a schedule."},
+ "themes": ["adequacy", "retail", "study"],
+ "figures": [
+  {"label": "NYISO projected statewide resource deficiency by 2036 with large load growth", "value": 1800, "unit": "MW", "quote": "a deficiency greater than 1,800 MW when accounting for forecasted large load growth", "pg": 4},
+  {"label": "NYISO completed-study generation projects not yet in operation", "value": 11, "unit": "GW", "quote": "89 projects, representing over 11 GW of generation", "pg": 5},
+  {"label": "NYISO Transition Cluster Study capacity", "value": 15, "unit": "GW", "quote": "91 projects, representing over 15 GW of generation", "pg": 5}
+ ]
+}

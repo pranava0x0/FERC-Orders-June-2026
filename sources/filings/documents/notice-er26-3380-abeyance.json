@@ -1,0 +1,11 @@
+{
+ "slug": "notice-er26-3380-abeyance",
+ "summary": "FERC's Secretary extends the paper hearing brief deadlines in the PJM backstop procurement dockets after PJM's abeyance motion, moving initial briefs to January 11, 2027 and reply briefs to January 26, 2027.",
+ "ask": null,
+ "points": [
+  {"point": "Initial briefs in EL26-108 move from November 13, 2026 to January 11, 2027 and reply briefs from December 3, 2026 to January 26, 2027.", "quote": "the deadline for submission of initial briefs in Docket No. EL26-108-000 is extended from November 13, 2026 to 5pm on January 11, 2027, and the deadline for reply briefs is extended from December 3, 2026 to 5pm on January 26, 2027.", "pg": 1}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-adequacy-report"], "text": "Moves the briefing schedule in PJM's separate backstop procurement paper hearing, which concerns capacity for new large loads, the subject of the E-7 adequacy report."},
+ "themes": ["procedure", "adequacy"],
+ "figures": []
+}

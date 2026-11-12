@@ -1,0 +1,15 @@
+{
+ "slug": "filing-20260708-5103",
+ "summary": "Global Capacity Alliance moves to intervene and comments on the June 18 show cause orders, proposing Front-of-the-Meter Netting and a Capacity Attribution Contract so flexible large loads can pair with co-located resources while upgrades are built.",
+ "ask": "Grant intervention and direct the RTOs and ISOs, in responding to the show cause orders, to evaluate Front-of-the-Meter Netting frameworks and independent standard-setting pathways.",
+ "points": [
+  {"point": "GCA says a separately metered load and battery at one substation can be curtailed and dispatched at once because dispatch has no link between them.", "quote": "A 100 MW data center and a 100 MW BESS sit at the same substation on separate meters.", "pg": 1},
+  {"point": "FTM-Netting rests on a telemetry shield, a post-operating-day compliance ledger and scarcity yielding in system-wide emergencies.", "quote": "Telemetry Shield: Each dispatch interval, the Market Participant (MP) dynamically adjusts the load's consumption floor via market telemetry to match the paired resource's availability", "pg": 2},
+  {"point": "A private Capacity Attribution Contract bridges non-firm energization and completed network upgrades, then sunsets when the load turns firm.", "quote": "its commercial engine is the private Capacity Attribution Contract (CAC), which bridges the gap between initial non-firm energization and completed network upgrades.", "pg": 2},
+  {"point": "Because the assets are separately metered they stay visible in planning models, unlike behind-the-meter setups.", "quote": "they are studied as standard, independent interconnections—fully visible to RTO planning models and subject to existing constraint analyses.", "pg": 2},
+  {"point": "GCA asks FERC to direct RTO and ISO responses to evaluate FTM-Netting.", "quote": "urges the Commission to direct the RTOs and ISOs, in responding to the June 18, 2026, Show Cause Orders, to actively evaluate and incorporate Front-of-the-Meter (FTM) Netting frameworks", "pg": 3}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-7-service-for-flexible-loads", "e-7-show-cause"], "text": "Comment filed across the show cause dockets; its netting and interim non-firm service concept speaks to the flexible-load service and co-location topics the June orders direct RTOs to address."},
+ "themes": ["flex", "colo", "proximate"],
+ "figures": []
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "compliance-er26-1479-pjm",
+  "summary": "PJM files a partial compliance filing under the June 18, 2026 co-location rehearing and paper hearing order, adding Eligible Load, Interim NITS in new Tariff Part XI and Necessary Study rules, while deferring contract demand services and BTMG netting to a later filing.",
+  "ask": "Accept the Tariff revisions effective October 17, 2026, except new Part XI for Interim NITS, which PJM asks to make effective July 1, 2028 with waiver of the 120-day filing limit.",
+  "points": [
+    {
+      "point": "PJM files under FPA section 206 to comply with the June 18 order and plans a full section 205 large load filing by mid-November.",
+      "quote": "PJM intends to submit that filing by mid-November 2026.",
+      "pg": 1
+    },
+    {
+      "point": "PJM sets October 17, 2026 for most revisions and July 1, 2028 for Interim NITS so it can build tools to curtail non-firm service.",
+      "quote": "PJM proposes an effective date of July 1, 2028, to provide time for operational changes and implementation of additional operational tools",
+      "pg": 2
+    },
+    {
+      "point": "PJM adds an Eligible Load definition covering co-located load and load behind BTMG, so both can take Interim NITS.",
+      "quote": "Eligible Load shall mean Co-Located Load or load connected to Behind the Meter Generation.",
+      "pg": 13
+    },
+    {
+      "point": "PJM removes the 50 MW nameplate limit from the Retail BTMG definition, as the June order directed, and works on the 50 MW netting materiality threshold separately.",
+      "quote": "eliminates the rejected 50 MW nameplate limit and other netting exemptions",
+      "pg": 12,
+      "pgEnd": 13
+    },
+    {
+      "point": "Customers must pass the Necessary Study process and finish upgrades before serving co-located load, from existing or new generators.",
+      "quote": "not begin serving Eligible Load until the entire scope of the work under their GIA as amended after the Necessary Study process is complete.",
+      "pg": 11
+    },
+    {
+      "point": "Customers with existing service agreements can modify them through the Necessary Study process rather than sign a new GIA.",
+      "quote": "PJM is proposing changes to allow customers that obtained service agreements pursuant to Parts VI and VII to modify those agreements",
+      "pg": 15
+    },
+    {
+      "point": "Interim NITS is energy-only and non-firm, converts to NITS once upgrades are done, and is suspended for up to 120 days after a first dispatch failure.",
+      "quote": "suspend service for up to 120 days after the first instance and terminate service after the second.",
+      "pg": 18
+    },
+    {
+      "point": "PJM defers Firm and Non-Firm Contract Demand services and some BTMG netting to a later compliance filing under a 90-day extension.",
+      "quote": "PJM sought a 90-day extension of certain directives in the June Order.",
+      "pg": 10
+    }
+  ],
+  "throughLine": {
+    "relation": "implements",
+    "anchors": [
+      "e-2-interim-nits",
+      "e-2-one-of-three-new-co-location",
+      "e-2-retail-btmg-netting-rewritten"
+    ],
+    "text": "Carries out the E-2 co-location order's directives on Interim NITS, Eligible Load and BTMG netting, and ties its timing to PJM's larger E-7 large load response due mid-November."
+  },
+  "themes": [
+    "colo",
+    "flex",
+    "procedure"
+  ],
+  "figures": [
+    {
+      "label": "Retail BTMG netting materiality threshold in the June order",
+      "value": 50,
+      "unit": "MW",
+      "quote": "permit Retail BTMG netting up to a 50 MW materiality threshold",
+      "pg": 12
+    }
+  ]
+}

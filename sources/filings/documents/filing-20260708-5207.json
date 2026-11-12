@@ -1,0 +1,13 @@
+{
+ "slug": "filing-20260708-5207",
+ "summary": "An individual intervenor filing as L.M. Marlowe moves FERC to open settlement procedures or appoint a settlement judge across the six show cause dockets, starting with shared technical questions on large-load observability and cost causation.",
+ "ask": "Establish settlement procedures and convene a settlement conference under Rule 601, or alternatively appoint a settlement judge under Rule 603.",
+ "points": [
+  {"point": "Marlowe asks for a settlement conference, or a settlement judge as an alternative, in the show cause dockets.", "quote": "establish settlement procedures and convene a settlement conference of the participants pursuant to Rule 601", "pg": 1},
+  {"point": "She would start with shared technical questions on observability, cost causation, curtailment priority and boundary verification.", "quote": "large-load observability, cost-allocation and cost- causation, curtailment priority, and boundary-verification methodology", "pg": 1},
+  {"point": "She says the rules allow settlement procedures at any time and that they can run alongside the directed responses.", "quote": "Settlement procedures may run in parallel with the responses the Commission has directed and need not await their conclusion", "pg": 2}
+ ],
+ "throughLine": {"relation": "procedural", "anchors": ["e-7-show-cause"], "text": "Motion in the EL26-67 to EL26-72 dockets proposing settlement talks in parallel with the 60-day show cause responses the June orders require."},
+ "themes": ["procedure", "cost", "registry"],
+ "figures": []
+}

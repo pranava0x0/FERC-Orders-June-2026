@@ -1,0 +1,14 @@
+{
+ "slug": "filing-20260715-5116",
+ "summary": "The SPP Transmission Owner Group answers L.M. Marlowe's July 8 motion for a nationwide settlement conference or settlement judge in EL26-68 and asks FERC to deny it as premature and disruptive to the regional show cause approach.",
+ "ask": "Deny the Marlowe motion for settlement procedures and a settlement conference or settlement judge.",
+ "points": [
+  {"point": "The TO Group calls the motion premature and disruptive to FERC's choice of regional show cause proceedings.", "quote": "The Commission should deny the Motion because it is premature and would profoundly disrupt the Commission's well-reasoned decision to address the challenge of large load additions on a regional basis", "pg": 1},
+  {"point": "A nationwide settlement would reject FERC's choice of regional solutions developed through stakeholder processes.", "quote": "it is a rejection of the Commission's pointed choice to address large load issues on a regional basis, rather than impose a rigid nationwide rule", "pg": 2},
+  {"point": "Hundreds of ANOPR commenters would face cost and logistics in a Commission-run settlement.", "quote": "Hundreds of parties have submitted comments in response to the ANOPR, the overwhelming majority of whom are located outside of Washington, D.C.", "pg": 3},
+  {"point": "The 90-day abeyance option in the show cause orders already provides for stakeholder cooperation.", "quote": "Orders already provide for the exact cooperation Movant claims to seek, without the extra administrative burden.", "pg": 3, "pgEnd": 4},
+  {"point": "The movant's interest rests on a claimed framework, and she alleges no concrete injury from the interlocutory orders.", "quote": "The Movant alleges no cognizable, concrete, or particularized injury from the Commission's interlocutory Show Cause Orders", "pg": 4}
+ ],
+ "throughLine": {"relation": "responds", "anchors": ["e-9-show-cause"], "text": "Defends the E-9 SPP show cause order's regional design and its abeyance option against a request to replace regional proceedings with a settlement conference."},
+ "themes": ["procedure"]
+}

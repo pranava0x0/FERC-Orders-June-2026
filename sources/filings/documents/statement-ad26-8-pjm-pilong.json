@@ -1,0 +1,20 @@
+{
+ "slug": "statement-ad26-8-pjm-pilong",
+ "summary": "PJM's Christopher Pilong submits a written statement for FERC's October 21 reliability conference. It asks for detailed site data from large loads, ride-through requirements for new and existing loads, and gas-electric and cybersecurity coordination, citing a 3,900 MW load drop on July 22, 2026.",
+ "ask": "Use the conference to advance a reliability framework for large loads that aligns energization with available infrastructure, requires accurate models and dependable performance, and addresses cyber and fuel risks.",
+ "points": [
+  {"point": "PJM says large loads want interconnection faster than supply can be built.", "quote": "A data center may seek interconnection within two years, while new generation can take three years or more to come online and major transmission facilities can take seven years or more.", "pg": 3},
+  {"point": "Large loads must offer flexibility or accept reductions until generation and transmission are in service.", "quote": "Large Loads must provide sufficient operational flexibility or be subject to load reductions until the generation and transmission needed to serve them have been studied and placed in service.", "pg": 3},
+  {"point": "PJM cites two load-loss events, 1,500 MW in July 2024 and about 3,900 MW on July 22, 2026.", "quote": "the sudden transfer of approximately 3,900 MW of load off grid on July 22, 2026.", "pg": 4},
+  {"point": "PJM is developing voltage and frequency ride-through requirements as part of its response to the June 18 show cause order.", "quote": "As part of its response to the June 18, 2026 Large Load show-cause order, PJM is developing voltage and frequency ride-through requirements informed by the July 22, 2026 event.", "pg": 4},
+  {"point": "PJM wants NERC standards covering the operational and cybersecurity duties of large computational loads.", "quote": "NERC reliability standards should address the operational and cybersecurity obligations appropriate to those facilities.", "pg": 6},
+  {"point": "PJM reports about 90 GW of gas generation and recent reports of up to 30 GW more for data centers over four to five years.", "quote": "as much as 30 GW of gas-fired generation may be developed to serve data-center load over the next four to five years.", "pg": 6}
+ ],
+ "throughLine": {"relation": "parallel", "anchors": ["e-7-service-for-flexible-loads", "e-7-application-study-process"], "text": "A PJM statement in the reliability conference docket that previews operational requirements, ride-through standards and flexibility for large loads, which PJM says it is developing for its E-7 show cause response."},
+ "themes": ["registry", "flex", "study"],
+ "figures": [
+  {"label": "Load that transferred off grid in Northern Virginia, July 22, 2026", "value": 3900, "unit": "MW", "quote": "approximately 3,900 MW of load off grid on July 22, 2026", "pg": 4},
+  {"label": "Load that transferred off grid in July 2024", "value": 1500, "unit": "MW", "quote": "approximately 1,500 MW of load transferred off grid in response to a system fault in Northern Virginia", "pg": 4},
+  {"label": "Gas generation possibly developed for data centers over four to five years", "value": 30, "unit": "GW", "quote": "as much as 30 GW of gas-fired generation", "pg": 6}
+ ]
+}

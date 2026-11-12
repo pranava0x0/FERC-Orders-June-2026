@@ -12,6 +12,6 @@
  "throughLine": {"relation": "procedural", "anchors": ["e-12-show-cause", "e-12-adequacy-report"], "text": "Moves the E-12 NYISO 60-day show cause response from August 17 to November 16, 2026, using the 90-day abeyance option the June 18 order offered for stakeholder-developed section 205 filings."},
  "themes": ["procedure"],
  "figures": [
-  {"label": "Abeyance granted for NYISO show cause proceeding", "value": 90, "unit": "days", "quote": "hold this proceeding in abeyance for", "pg": 1}
+  {"label": "Abeyance granted for NYISO show cause proceeding", "value": 90, "unit": "days", "quote": "hold this proceeding in abeyance for 90 days.", "pg": 1}
  ]
 }
