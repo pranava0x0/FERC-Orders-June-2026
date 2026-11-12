@@ -638,3 +638,17 @@ each with a different method, and each found what the previous one structurally 
 
 The cheap lesson: after adding a quote, grep the verifier's output for it. The run's exit code tells you
 nothing about whether your surface is enumerated.
+
+## 2026-11-12: per-document readings + navigation rebuild (PR 32)
+
+| Run | Agent | Tokens | Tool uses | Result |
+|---|---|---|---|---|
+| Readings batch 1-7 | regulatory-docket-audit ×7 | 204K, 244K, 237K, 229K, 263K, 175K, 208K | 54, 79, 55, 53, 54, 45, 53 | 167 readings, 1,074 quotes, 0 validator errors |
+| News refresh Nov 2-12 | general-purpose | 186K | 56 | 3 sources, 5 quotes (all re-verified in raw HTML) |
+| Code review round 1 | general-purpose | 191K | 39 | 5 confirmed bugs + minors, all fixed |
+| Regulatory review | regulatory-docket-audit | 121K | 32 | 8 must-fix, all in the link layer and Now tab |
+
+Inline main loop: design, IA, app.js/CSS rewrite, builders and validator, UX review via Playwright screenshots. The agent cap
+(2 concurrent) serialized the seven extraction batches into four waves; writing the validator first is what let them run
+unattended. Evaluation: the extraction fan-out was worth it (one document per agent context would not fit inline); the
+review agents found disjoint classes (router/tooling vs. regulatory framing), as on earlier PRs.

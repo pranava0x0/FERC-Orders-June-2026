@@ -789,3 +789,13 @@ Format: date · area · description · root cause (code/test/data/source) · sta
   `--next` mode too, with a test. (3) The new pdftotext fallback dropped blank pages, renumbering every later
   page marker. Root cause: **code**. Fix: only the empty chunk after the final form feed is dropped. Status:
   **Fixed** (commit "Address Codex round 1").
+
+## 2026-11-12 (PR 32 review rounds)
+- Filings theme route rewritten by programmatic toggles (code bug), Fixed 29ea820, regression test.
+- `#reforms` unreachable after the tab merge (code bug), Fixed 29ea820, regression test.
+- `tools/refresh.sh` piped checks exited 0 on failure (code bug), Fixed 29ea820, regression test.
+- Filer-name parsing merged and split parties (code bug), Fixed 29ea820, regression tests.
+- Proceeding links: SPP CHILLS mislabeled as answering E-9; MISO LARS tied to the 30-day report; backstop described as a
+  response to E-7 (content bugs, regulatory review), Fixed 29ea820.
+- `--sweep` listed dockets without a reconciliation baseline (code bug, Codex), Fixed.
+- Open: `refresh-reading-room.sh --check` fails in `index-filing-text.py` on PJM's Nov 6 ITI letter originals (pre-existing on main).

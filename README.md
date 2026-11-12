@@ -5,39 +5,22 @@ A static, dependency-free microsite that traces the regulatory arc from the Depa
 **June 18, 2026 tailored Section 206 show cause orders** (Items **E-7 through E-12**,
 Docket Nos. **EL26-67-000 to EL26-72-000**) directed at all six RTOs/ISOs.
 
-Built for an energy-regulatory audience. Eight tabs:
+Built for an energy-regulatory audience. Seven tabs:
 
-1. **Overview**: the latest filings and primary sources, the next deadline, status by proceeding and the filing matrix.
-2. **Timeline**: a dated, source-linked record with a filter for each proceeding.
-3. **Reforms**: the five reform categories, the transmission-vs-retail jurisdictional boundary, and the
-   per-RTO regional distinctions, grounded in the orders' published framing.
-4. **Dockets (E-7 to E-12, plus E-2)**: six collapsible per-RTO accordions (the common §206 spine the orders
-   share lives in the Reforms tab): open one for what's unique to that system, the quoted directives
-   (page-linked to the committed PDF and ferc.gov), the system-specific Section IV asks, what each
-   commissioner said about that order (their substantive read + headline quote + page cite, both links),
-   a variable-length distinct-findings list including each region's existing-tariff mechanics (each finding
-   page-cited to the PDF + ferc.gov), and the full named-respondent roster. A seventh card holds **Item E-2**
-   (EL25-49-002, 195 FERC ¶ 61,209): the PJM co-location *Order on Rehearing, Clarification, Compliance, and
-   Paper Hearing*, decided the same June 18 meeting, that fixes the three new transmission services the six
-   orders extend. Plus how to file or follow each docket.
-5. **Filings**: arguments and orders by proceeding, with page citations and links to the documents.
+1. **Now**: what is coming up, the latest entries, where each operator stands, and a swimlane graphic of the record.
+2. **Orders**: what the June 18 orders require, as a reform-by-operator grid of directives linked to their pages, then the
+   per-order cards (E-7 to E-12 and E-2). `#reforms` opens this tab at the grid.
+3. **Filings**: every reading-room document (167) by proceeding, the six show cause dockets split by operator. Each
+   document has its own reading in `sources/filings/documents/<slug>.json`: a summary, what the filer asks, page-cited key
+   points quoting only that document, and its link to the June orders (relation plus order-directive anchors from
+   `sources/filings/order-anchors.json`). Theme filters (`sources/filings/themes.json`) and a chart of the capacity figures
+   the filings cite. Quoted points load per proceeding from `docs/data/filings/<id>.json`.
+4. **Discourse**: commentary quotes, named views, press consensus and friction, and filed positions, as one tagged list
+   (`sources/discourse/index.json`, built by `tools/build-discourse-index.mjs`) read by theme, date or speaker, each linked
+   to its source and to the filings it discusses.
+5. **Timeline**: what is ahead, then the record newest first, with a filter per proceeding.
 6. **Commissioners**: recorded remarks by speaker and the June concurring statements.
-7. **Comments (RM26-4)**: the comment-period summary, split into three sub-tabs to cut the scroll:
-   *Themes & categories* (stats, rounds, top themes, the stance-by-reform map, and the three-lens aggregate),
-   *Respondent types* (19 stakeholder categories), and *All comments* (all 273 comments in filing order,
-   filterable by org, type, question, principle, position, or region: a collapsible "filter by tag" bar
-   surfaces the full lens vocabulary with per-tag match counts). Each comment is tagged across **three
-   lenses**, which of the DOE ANOPR's eight comment-period questions, the five June-order reform principles,
-   and the six show-cause-order RTO regions it engages (keyword-detected, shown per row and in aggregate). Comment bodies
-   are committed under `sources/comments/files/<accession>__<org-slug>/` (the path names the submitter) and
-   validated by `tools/validate-comments.py`; the tab's data is generated from the manifest + extracted
-   texts by `tools/build-comments-page-data.mjs` into `docs/js/comments-data.js`, plus one small
-   bin-detail file per audited letter into `docs/data/comments/<accession>.json`: lazy-loaded when a
-   row's "Read the audited analysis" is opened, to show each position's description and the verbatim
-   quotes behind it (the audit trail). The quotes are too heavy (~1.8 MB across 268 letters) to embed
-   in the up-front payload, so they are fetched on demand.
-8. **Discourse**: stakeholder reception, named commentary across the political spectrum, and trade-press
-   narratives (with a pointer to the Comments tab for the full filing breakdown).
+7. **Comments (RM26-4)**: the 273 ANOPR comments, by theme, respondent type and letter (unchanged).
 
 Read the [November 10 brief, with physical page citations](sources/filings/nov-10-brief.md).
 The [filing reading room](docs/reading/index.html) links the June orders, operator reports,
@@ -59,6 +42,11 @@ cd docs && python3 -m http.server 8000
 ## Test
 
 ```bash
+sh tools/refresh.sh            # rebuild every generated file, validate every quote, run the tests (--check: verify only;
+                               # --sweep: read the eLibrary docket sheets first, Playwright + stable Chrome)
+node tools/validate-documents.mjs --strict  # every per-document reading: quotes on their pages, anchors, coverage
+node tools/build-order-anchors.mjs          # order directives -> sources/filings/order-anchors.json (--check)
+node tools/build-discourse-index.mjs        # Discourse items tagged by theme and proceeding (--check)
 node --test tests/*.test.mjs   # all suites
 sh tools/refresh-reading-room.sh --check  # offline source, extraction, reader, asset and citation checks
 node tools/verify-quotes.mjs   # whole-site quote audit (one command; --list for every quote)
