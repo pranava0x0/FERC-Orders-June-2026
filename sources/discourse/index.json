@@ -20,6 +20,7 @@
   "reliability-conference": "Reliability conference",
   "pjm-governance": "PJM governance vote",
   "pjm-stakeholder": "PJM stakeholder record",
+  "isone-large-load": "ISO-NE large loads",
   "senate-oversight": "Senate oversight hearing"
  },
  "themeLabels": {
@@ -775,15 +776,13 @@
    "id": "quote-a75a7ac660",
    "kind": "quote",
    "text": "PJM is reviewing the order and intends to work quickly to address the Commission’s remaining concerns.",
-   "title": "PJM answers two setbacks with refilings, not rehearing",
+   "title": "PJM answers two setbacks by refiling",
    "src": [
     "pjmil0930"
    ],
    "date": "2026-09-30",
    "wave": 3,
-   "themes": [
-    "procedure"
-   ],
+   "themes": [],
    "groups": [
     "sc-pjm"
    ]
@@ -792,7 +791,7 @@
    "id": "quote-bc40db0854",
    "kind": "quote",
    "text": "PJM submitted a motion for abeyance of the paper hearing on October 12 and notified FERC that it plans to submit a new 205 filing to FERC on October 29th",
-   "title": "PJM answers two setbacks with refilings, not rehearing",
+   "title": "PJM answers two setbacks by refiling",
    "src": [
     "pjmmc1022"
    ],
@@ -809,15 +808,13 @@
    "id": "quote-2478c30987",
    "kind": "quote",
    "text": "Remove the opt out for muni/co-ops.",
-   "title": "PJM answers two setbacks with refilings, not rehearing",
+   "title": "PJM answers two setbacks by refiling",
    "src": [
     "pjmmc1022"
    ],
    "date": "2026-10-15",
    "wave": 3,
-   "themes": [
-    "procedure"
-   ],
+   "themes": [],
    "groups": [
     "sc-pjm"
    ]
@@ -3418,11 +3415,11 @@
    ]
   },
   {
-   "id": "filed-a04ade77f1",
+   "id": "filed-91b53b6a1c",
    "kind": "filed",
    "who": "FirstEnergy Service Company",
    "title": "FirstEnergy challenged the earlier security requirement",
-   "text": "FirstEnergy compared supplier security of $1.5 million per MW under the earlier design with the much smaller security required of sellers. That objection is a benchmark for the revised calculation, not an objection to the new $686,000 figure.",
+   "text": "FirstEnergy compared supplier security of $1.5 million per MW under the earlier design with the much smaller security required of sellers. That objection predates the new $686,000 figure and serves here as a benchmark for the revised calculation.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261029-5270",
    "locator": "PDF p. 14",
    "docs": [
@@ -3531,11 +3528,11 @@
    "themes": []
   },
   {
-   "id": "filed-72f333ddfa",
+   "id": "filed-167b00ff4d",
    "kind": "filed",
    "who": "Northern Virginia Electric Cooperative",
    "title": "NOVEC disputes attributing the whole shortage to large loads",
-   "text": "NOVEC identified causes of the capacity shortage besides growth in large loads. It preferred voluntary subscription, with interruptible service for a customer that declined. It is a cooperative, not the Virginia regulator.",
+   "text": "NOVEC identified causes of the capacity shortage besides growth in large loads. It preferred voluntary subscription, with interruptible service for a customer that declined. NOVEC is a member-owned cooperative and does not speak for the Virginia regulator.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261029-5264",
    "locator": "PDF pp. 3–5, 16",
    "docs": [
@@ -4013,11 +4010,11 @@
    ]
   },
   {
-   "id": "filed-b4948cbace",
+   "id": "filed-ccec1e29b5",
    "kind": "filed",
    "who": "Midcontinent Independent System Operator",
    "title": "MISO proposes parallel studies for paired load and generation",
-   "text": "MISO proposed LARS in a separate section 205 docket. It argued that modeling a matched pair could identify upgrades for the combination instead of each project separately. This was one proposed response to the June concerns, not a final decision on the full show cause case.",
+   "text": "MISO proposed LARS in a separate section 205 docket. It argued that modeling a matched pair could identify upgrades for the combination instead of each project separately. This was one proposed response to the June concerns. The full show cause case is still open.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261002-5074",
    "locator": "PDF pp. 2–3, 15",
    "docs": [
@@ -4317,11 +4314,11 @@
    ]
   },
   {
-   "id": "filed-a4bfeb3ffb",
+   "id": "filed-0aa4fbfe85",
    "kind": "filed",
    "who": "SPP Regional State Committee",
    "title": "SPP’s state committee wanted time to develop a cost proposal",
-   "text": "The committee endorsed a November 20 deadline while its cost-allocation team studied who should secure network costs if promised demand fails to arrive or leaves early. The filing endorsed the schedule, not a final cost-allocation formula.",
+   "text": "The committee endorsed a November 20 deadline while its cost-allocation team studied who should secure network costs if promised demand fails to arrive or leaves early. The filing endorsed the schedule only. The cost-allocation formula is still being studied.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260807-5123",
    "locator": "PDF pp. 1–2",
    "docs": [
@@ -4663,11 +4660,11 @@
    ]
   },
   {
-   "id": "filed-23d93dd1e3",
+   "id": "filed-e95ddab2a6",
    "kind": "filed",
    "who": "Commissioner Judy Chang",
    "title": "Chang explains why the June record needs upgrade costs",
-   "text": "Answering Senator Hirono, Chang linked the June section 206 proceedings to tracking which data center triggered a network upgrade and identifying who would otherwise pay. She described the information needed to limit cost shifting, not the outcome of a regional case.",
+   "text": "Answering Senator Hirono, Chang linked the June section 206 proceedings to tracking which data center triggered a network upgrade and identifying who would otherwise pay. She described the information needed to limit cost shifting and did not predict the outcome of any regional case.",
    "url": "https://www.govinfo.gov/content/pkg/CHRG-119shrg64322/pdf/CHRG-119shrg64322.pdf#page=75",
    "locator": "PDF p. 75, printed p. 71",
    "docs": [
@@ -4799,11 +4796,11 @@
    ]
   },
   {
-   "id": "filed-02ea1c7c87",
+   "id": "filed-f25ccbf79d",
    "kind": "filed",
    "who": "New York Independent System Operator",
    "title": "Who decides if a regulated generation solution will go forward?",
-   "text": "NYISO explained that if the market and transmission proposals cannot cover a reliability need, it may refer a non-transmission solution to the New York Public Service Commission. The state commission then considers the project and cost recovery. This is NYISO’s description of the process, not a state endorsement of a project.",
+   "text": "NYISO explained that if the market and transmission proposals cannot cover a reliability need, it may refer a non-transmission solution to the New York Public Service Commission. The state commission then considers the project and cost recovery. This is NYISO’s description of the process. No state endorsement of a project is involved.",
    "url": "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20260720-5217",
    "locator": "PDF pp. 7–8",
    "docs": [

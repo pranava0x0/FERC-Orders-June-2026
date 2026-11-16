@@ -1,0 +1,56 @@
+{
+  "slug": "motion-el26-71-valley-electric-rescind",
+  "summary": "Valley Electric Association (VEA), an electric cooperative in the CAISO area that says it is not a public utility under section 201(f), asks FERC to rescind the June 18, 2026 show cause order as to VEA. It also conditionally asks for more time to respond.",
+  "ask": "Rescind the show cause order as to VEA. If FERC has not acted by November 16, 2026, extend VEA's response time until thirty days after FERC rules on the motion.",
+  "points": [
+    {
+      "point": "VEA asks FERC to rescind the show cause order as to VEA, citing the Commission's statement that it would do so at a non-public utility's request.",
+      "quote": "asks the Commission to rescind its June 18, 2026 show cause order as to VEA, as the Commission has said it will do at a non-public utility’s request.",
+      "pg": 1
+    },
+    {
+      "point": "VEA says it is an electric cooperative and not a public utility under section 201(f) of the Federal Power Act.",
+      "quote": "VEA is an electric cooperative that is not a public utility under Section 201(f) of the Federal Power Act",
+      "pg": 2
+    },
+    {
+      "point": "VEA says any large load in its territory would connect to the 230 kV system of GridLiance West, a public utility that remains a respondent.",
+      "quote": "Any large load seeking service in VEA’s territory would, either directly or through VEA, interconnect to the 230 kV system of GridLiance West LLC (“GLW”), a public utility that remains a respondent in this proceeding, rather than to VEA’s 138 kV facilities.",
+      "pg": 3
+    },
+    {
+      "point": "If FERC has not acted by November 16, 2026, VEA conditionally asks for a brief extension of its time to respond until the Commission rules.",
+      "quote": "If the Commission has not acted on this motion by November 16, 2026, VEA conditionally requests, pursuant to Rule 2008, a brief extension of its time to respond to the Show Cause Order until the Commission rules.",
+      "pg": 3
+    },
+    {
+      "point": "VEA reports that it conferred with CAISO, which supports the motion.",
+      "quote": "VEA has conferred with the CAISO in advance of this filing and is authorized to state that the CAISO supports this motion.",
+      "pg": 7
+    },
+    {
+      "point": "VEA concludes a section 205 filing is not warranted for it.",
+      "quote": "VEA has therefore concluded that a Section 205 filing is not warranted",
+      "pg": 8
+    }
+  ],
+  "throughLine": {
+    "relation": "procedural",
+    "anchors": [
+      "e-10-show-cause"
+    ],
+    "text": "Asks FERC to remove VEA from the E-10 CAISO show cause proceeding rather than answer its directives. FERC's order said it would rescind at a non-public utility's request."
+  },
+  "themes": [
+    "procedure"
+  ],
+  "figures": [
+    {
+      "label": "VEA annual retail sales",
+      "value": 577130,
+      "unit": "MWh per year",
+      "quote": "sells approximately 577,130 MWh’s of electricity per year",
+      "pg": 6
+    }
+  ]
+}

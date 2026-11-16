@@ -1,0 +1,38 @@
+{
+  "slug": "motion-er27-330-pjm-withdraw",
+  "summary": "PJM Interconnection moves to withdraw its October 29, 2026 filing and October 30 amendment in ER27-330. It says it resubmitted the same tariff revisions in ER27-454 after using the wrong eTariff filing codes.",
+  "ask": "Withdraw the October 29 filing and its amendment in ER27-330, and treat ER27-454 as the proceeding for the same tariff revisions.",
+  "points": [
+    {
+      "point": "PJM moves to withdraw its October 29, 2026 filing in ER27-330.",
+      "quote": "withdraw its October 29, 2026 filing in this proceeding",
+      "pg": 1
+    },
+    {
+      "point": "PJM says it used eTariff codes for compliance filings instead of code 10 for a new section 205 proceeding.",
+      "quote": "PJM inadvertently used eTariff filing codes applicable to compliance filings and not eTariff filing code 10 applicable to the initiation of a new proceeding under section 205.",
+      "pg": 2
+    },
+    {
+      "point": "PJM says the refiling only corrects metadata and does not change the substance of the October 29 filing.",
+      "quote": "Such refiling to correct the metadata does not in any way affect the substance of the October 29 Filing.",
+      "pg": 2
+    },
+    {
+      "point": "PJM says the re-submittal was driven only by the need to revise the metadata.",
+      "quote": "To be clear, the re-submittal was driven by the sole purpose of making the ministerial revision to the metadata.",
+      "pg": 2
+    }
+  ],
+  "throughLine": {
+    "relation": "parallel",
+    "anchors": [
+      "e-7-adequacy-report"
+    ],
+    "text": "Concerns PJM's reliability backstop procurement tariff rules and a filing-code error. The motion never cites the E-7 show cause order."
+  },
+  "themes": [
+    "adequacy",
+    "procedure"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "answer-el27-11-exelon-extension",
+  "summary": "Exelon answers PJM's November 4, 2026 request for more time and opposition to fast-track processing in the EL27-11 complaint. Exelon says PJM's requested extension is too long for the narrow legal question, supports a shorter extension, and asks for an order well before the May 2027 auction.",
+  "ask": "Limit the extension to December 7, 2026, and issue an order sufficiently in advance of the May 2027 Base Residual Auction.",
+  "points": [
+    {
+      "point": "Exelon says PJM's proposed extension is excessive for the narrow scope of the allegations it must answer.",
+      "quote": "the scale of PJM’s proposed extension is excessive for the narrow scope of the allegations it must answer.",
+      "pg": 3
+    },
+    {
+      "point": "Exelon says it should not take PJM 48 days to state its view on the narrow legal question.",
+      "quote": "it should not take PJM 48 days to express its opinion on this narrow legal question.",
+      "pg": 3
+    },
+    {
+      "point": "Exelon supports extending the comment period to December 7, 2026, which gives PJM 34 days after the complaint.",
+      "quote": "Exelon supports an extension of the comment period until December 7, 2026, which will provide PJM with a total of 34 days after Exelon filed the complaint",
+      "pg": 4
+    },
+    {
+      "point": "Exelon says the relief it seeks is prospective and can be given only before the auction process moves forward.",
+      "quote": "the relief Exelon seeks is prospective, and it can be meaningfully provided only before the auction process moves forward.",
+      "pg": 5
+    }
+  ],
+  "throughLine": {
+    "relation": "parallel",
+    "anchors": [
+      "e-7-adequacy-report"
+    ],
+    "text": "A procedural answer in Exelon's section 206 complaint on PJM's capacity auction schedule. It does not cite the show cause orders; the link is the shared PJM resource adequacy question."
+  },
+  "themes": [
+    "adequacy",
+    "procedure"
+  ],
+  "figures": [
+    {
+      "label": "Total days PJM would have under Exelon's proposal",
+      "value": 34,
+      "unit": "days",
+      "quote": "a total of 34 days after Exelon filed the complaint",
+      "pg": 4
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "filing-er27-484-isone-large-loads",
+  "summary": "ISO New England (ISO-NE) files large load tariff revisions on November 13, 2026, joined by the New England Power Pool (NEPOOL) Participants Committee, the Participating Transmission Owners Administrative Committee and thirteen listed transmission owners. NEPOOL does not join on the cost recovery agreement. Services would start June 1, 2028.",
+  "ask": "Accept the tariff revisions without modification or condition effective November 14, 2026, waive the 60-day notice, allow a comment period to December 7, 2026, and terminate the show cause proceeding.",
+  "points": [
+    {
+      "point": "ISO-NE sets the Large Load threshold at 50 MW and says that size is reasonable for the New England transmission system.",
+      "quote": "The definition includes a 50 MW load size which is reasonable for the New England transmission system.",
+      "pg": 17
+    },
+    {
+      "point": "A load becomes a Large Load when its gross peak demand rises 50 MW or more above its exempt demand.",
+      "quote": "when its gross peak demand increases by 50 MW or more relative to its exempt demand",
+      "pg": 24
+    },
+    {
+      "point": "Interim Contract Demand Service would last up to seven years, or until the required network upgrades are in service if that takes longer.",
+      "quote": "Interim Contract Demand Service shall be available for a term of no more than seven years, or the length of time required to place the required Large Load Network Upgrades in-service, whichever is longer",
+      "pg": 27
+    },
+    {
+      "point": "Interim and non-firm service would be re-dispatched when the large load's price exceeds $250/MWh.",
+      "quote": "all or a portion of a Large Load’s Interim Contract Demand Service and Non-Firm Contract Demand Service will be re-dispatched when the Large Load’s applicable LMP exceeds a Large Load Re-Dispatch Price of $250/MWh.",
+      "pg": 31
+    },
+    {
+      "point": "Where combined impacts need detailed study, ISO-NE would use reasonable efforts to publish the final system impact study report within 120 days of the preliminary report.",
+      "quote": "If the Cluster Study and other coordination screening determines that there are combined impacts that need to be studied in detail, then the ISO shall use reasonable efforts consistent with Good Utility Practice to complete the additional coordination analysis (i.e., with the Cluster and other studies) and publish a final Large Load System Impact Study report within 120 days of publishing the preliminary Large Load System Impact Study report.",
+      "pg": 39
+    },
+    {
+      "point": "ISO-NE proposes a netting threshold of zero MW, which applies only to Large Loads.",
+      "quote": "the ISO proposes a netting threshold of zero MW (which applies only to Large Loads).",
+      "pg": 18
+    },
+    {
+      "point": "ISO-NE says injection from a generator one or more substations away from the load would likely not fully flow to that load, which is why it limits proximity.",
+      "quote": "an injection into the transmission system from a Large Load Electrically Proximate Generator that is one or more substations away from a corresponding Electrically Proximate Large Load would likely not fully flow to the Electrically Proximate Large Load",
+      "pg": 19
+    },
+    {
+      "point": "The transmission owners say a cost recovery agreement among ISO-NE, the utility and the eligible customer is insufficient to prevent the cost shifting the order raised.",
+      "quote": "the PTOs believe that a cost recovery agreement among ISO-NE, the relevant transmission owner, and the Eligible Customer taking transmission service on behalf of large loads is an insufficient guarantor of preventing the cost-shifting concerns raised by the Commission in the Show Cause Order.",
+      "pg": 54
+    },
+    {
+      "point": "The new tariff text requires a Large Load Eligible Customer to designate enough new capacity resources to cover the Firm Contract Demand Service it requests.",
+      "quote": "To receive the requested amount of Firm Contract Demand Service for a Large Load, the Large Load Eligible Customer shall designate, or cause to be designated, sufficient new capacity resources to meet the requested amount of Firm Contract Demand Service for the Large Load.",
+      "pg": 85
+    },
+    {
+      "point": "Co-located and proximate generators on the expedited path would not count toward regional capacity or take part in the capacity market.",
+      "quote": "will not be counted towards the region’s capacity for resource adequacy purposes, will not participate in the capacity market, and will not be accredited using the same method as other ISO-NE generating facilities.",
+      "pg": 92
+    }
+  ],
+  "throughLine": {
+    "relation": "responds",
+    "anchors": [
+      "e-11-show-cause",
+      "e-11-application-study-process",
+      "e-11-cost-recovery-agreement",
+      "e-11-btmg-netting",
+      "e-11-proximate-generation-service",
+      "e-11-adequacy-report",
+      "e-11-alternative-transmission"
+    ],
+    "text": "Filed under section 205 to answer the E-11 show cause order for ISO-NE. It cites the order throughout and says the revisions address all of its concerns in five reform categories."
+  },
+  "themes": [
+    "study",
+    "cost",
+    "proximate"
+  ],
+  "figures": [
+    {
+      "label": "Large Load Re-Dispatch Price",
+      "value": 250,
+      "unit": "$/MWh",
+      "quote": "a Large Load Re-Dispatch Price of $250/MWh",
+      "pg": 31
+    },
+    {
+      "label": "Initial non-refundable application fee",
+      "value": 50000,
+      "unit": "$",
+      "quote": "Initial, non-refundable application fee of $50,000",
+      "pg": 34
+    },
+    {
+      "label": "Study deposit",
+      "value": 150000,
+      "unit": "$",
+      "quote": "Study deposit of $150,000",
+      "pg": 34
+    }
+  ]
+}

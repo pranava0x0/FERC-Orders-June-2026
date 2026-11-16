@@ -102,5 +102,7 @@ test("review round 1 regressions: tools/refresh.sh never pipes a check into tail
 test("review round 1 regressions: #reforms routes, and a theme filter keeps its own address", () => {
   const app = read("docs", "js", "app.js");
   assert.equal((app.match(/TABS\.indexOf\(p\.tab\) >= 0 \|\| p\.tab === "reforms"/g) || []).length, 2, "both hash entry points accept #reforms");
-  assert.match(app, /loadPoints\(g\);\n[^\n]*\n[^\n]*\n\s*if \(filingTheme\) return;/, "the toggle handler leaves the theme URL alone");
+  assert.match(app, /loadPoints\(g\);\n(?:\s*\/\/[^\n]*\n)+\s*if \(filtering && isGroup\) return;/, "proceedings opened by a filter leave the filtered URL alone");
+  assert.match(app, /filtering = !!\(filingTheme \|\| filingQuery\.length >= FQ_MIN\)/, "a theme or a typed query both count as filtering");
+  assert.match(app, /num\.textContent = docs\.filter\(/, "each theme chip's count is recomputed against the typed query");
 });

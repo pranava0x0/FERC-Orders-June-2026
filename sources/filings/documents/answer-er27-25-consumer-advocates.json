@@ -1,0 +1,61 @@
+{
+  "slug": "answer-er27-25-consumer-advocates",
+  "summary": "Consumer advocates from Wisconsin, Minnesota, Michigan, Illinois and Iowa answer in MISO's ER27-25 docket. They agree coordinated study of mature, proximate loads may bring efficiencies. They ask FERC to condition acceptance of the large load study tariff on cost protections and a strict proximity test.",
+  "ask": "Condition acceptance of LARS on cost responsibility, an approved cost-recovery framework, an engineering-based proximity test, a materiality review after changes, tracking, and a five-year sunset.",
+  "points": [
+    {
+      "point": "The advocates agree with the Organization of MISO States that coordinated study of mature, proximate loads and generation may bring efficiencies if well designed.",
+      "quote": "the Consumer Advocates agree with OMS that coordinated study of sufficiently mature, electrically proximate Large Loads and associated generation may provide meaningful efficiencies if appropriately designed.",
+      "pg": 2
+    },
+    {
+      "point": "They say FERC opened the show cause proceeding on a preliminary finding that MISO's tariff may not protect transmission customers from large load cost shifts.",
+      "quote": "The Commission instituted the related show-cause proceeding because it preliminarily found that MISO’s existing Tariff may be unjust and unreasonable insofar as it does not adequately protect transmission customers against cost shifts resulting from Large Load integration.",
+      "pg": 3
+    },
+    {
+      "point": "They ask FERC to condition acceptance of LARS on cost causation, a prior cost-recovery framework, real proximity and review of material changes.",
+      "quote": "The Commission should condition acceptance of LARS on protections that preserve cost causation, prevent construction of a project before the associated cost-recovery framework is approved, require an actual electrically-proximate relationship between associated generation and load, and provide appropriate review when material changes undermine the assumptions supporting identified transmission investments.",
+      "pg": 3
+    },
+    {
+      "point": "They say cost responsibility should start from cost causation and not from the planning label given to a facility.",
+      "quote": "For ratepayer-protection purposes, the inquiry should begin with cost causation, not the planning label subsequently assigned to the facility.",
+      "pg": 4
+    },
+    {
+      "point": "They say FERC should not approve faster transmission investment decisions before it can evaluate the mechanism protecting customers from the resulting exposure.",
+      "quote": "The Commission should not approve the mechanism that accelerates transmission investment decisions before it can evaluate the mechanism intended to protect customers from the resulting financial exposure.",
+      "pg": 5
+    },
+    {
+      "point": "They say being in the same local resource zone should not count as proximity or alone establish eligibility.",
+      "quote": "Same-LRZ membership should not be considered “proximity” and should not alone establish eligibility.",
+      "pg": 8
+    },
+    {
+      "point": "They ask for a materiality review after a withdrawal, material downsizing or other significant change.",
+      "quote": "It should instead require a materiality review following a withdrawal, material downsizing, or other significant change.",
+      "pg": 8
+    },
+    {
+      "point": "They support the OMS recommendations on public reporting and a five-year sunset.",
+      "quote": "support OMS’s recommendations concerning public reporting and a five-year sunset.",
+      "pg": 9
+    }
+  ],
+  "throughLine": {
+    "relation": "responds",
+    "anchors": [
+      "e-8-show-cause",
+      "e-8-cost-recovery-agreement",
+      "e-8-proximate-generation-service"
+    ],
+    "text": "Filed in MISO's section 205 LARS docket, ER27-25, and cites the E-8 show cause order's preliminary finding on cost shifts. It argues LARS only partly answers that order."
+  },
+  "themes": [
+    "cost",
+    "proximate",
+    "study"
+  ]
+}

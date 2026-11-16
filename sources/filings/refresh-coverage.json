@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-11-10",
+  "asOf": "2026-11-15",
   "since": "2026-06-18",
-  "scope": "All rows in the six show-cause dockets and their -001 subdockets; selected related tariff dockets. One accession can appear on several sheets. Administrative notices, service changes, withdrawals and intervention-only rows are not counted as policy submissions. Related-docket comments without a local body are identified for follow-up. A captured document is not an endorsement of its contents.",
+  "scope": "All rows in the six show-cause dockets and their -001 subdockets; selected related tariff dockets, and from Nov 15 the related PJM, MISO and ISO-NE dockets listed below. One accession can appear on several sheets. Administrative notices, service changes, withdrawals and intervention-only rows are not counted as policy submissions. Related-docket comments without a local body are identified for follow-up. A captured document is not an endorsement of its contents.",
   "dockets": [
     {
       "docket": "EL26-67-000",
@@ -50,12 +50,12 @@
       "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-68&sub_docket=000",
       "scope": "show cause",
       "status": "all rows reconciled",
-      "totalRows": 152,
-      "rowsRead": 152,
+      "totalRows": 153,
+      "rowsRead": 153,
       "classificationCounts": {
         "launch day": 2,
         "documentless": 117,
-        "service or representation": 7,
+        "service or representation": 8,
         "for review": 17,
         "separate technical conference": 1,
         "intervention only": 7,
@@ -157,12 +157,12 @@
       "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-71&sub_docket=000",
       "scope": "show cause",
       "status": "all rows reconciled",
-      "totalRows": 116,
-      "rowsRead": 116,
+      "totalRows": 117,
+      "rowsRead": 117,
       "classificationCounts": {
         "launch day": 2,
         "documentless": 81,
-        "for review": 18,
+        "for review": 19,
         "separate technical conference": 1,
         "intervention only": 8,
         "service or representation": 4,
@@ -186,7 +186,8 @@
         "20260810-5108",
         "20260812-5158",
         "20260814-3061",
-        "20261026-4001"
+        "20261026-4001",
+        "20261113-5103"
       ]
     },
     {
@@ -474,9 +475,9 @@
       "docket": "ER26-3515-000",
       "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER26-3515&sub_docket=000",
       "scope": "related tariff",
-      "status": "incomplete",
+      "status": "sheet listed in full; 62 rows after Sept 3 not individually reviewed",
       "totalRows": 162,
-      "rowsRead": 100,
+      "rowsRead": 162,
       "classificationCounts": {
         "procedural notice": 2,
         "for review": 29,
@@ -512,7 +513,8 @@
         "20260903-5212",
         "20260903-5218",
         "20260903-5221",
-        "20260903-5224"
+        "20260903-5224",
+        "20260928-4001"
       ]
     },
     {
@@ -546,6 +548,200 @@
         "20261013-5440",
         "20261028-5128",
         "20261103-5190"
+      ]
+    },
+    {
+      "docket": "AD26-7-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=AD26-7&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 150,
+      "rowsRead": 150,
+      "classificationCounts": {
+        "procedural notice": 6,
+        "documentless": 33,
+        "for review": 111
+      },
+      "recordAccessions": []
+    },
+    {
+      "docket": "EL25-49-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL25-49&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 303,
+      "rowsRead": 303,
+      "classificationCounts": {
+        "for review": 175,
+        "procedural notice": 9,
+        "documentless": 119
+      },
+      "recordAccessions": [
+        "20260803-5106"
+      ]
+    },
+    {
+      "docket": "EL25-49-002",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL25-49&sub_docket=002",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 34,
+      "rowsRead": 34,
+      "classificationCounts": {
+        "for review": 31,
+        "procedural notice": 3
+      },
+      "recordAccessions": [
+        "20260715-5011",
+        "20260803-5106"
+      ]
+    },
+    {
+      "docket": "EL26-108-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL26-108&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 42,
+      "rowsRead": 42,
+      "classificationCounts": {
+        "procedural notice": 4,
+        "documentless": 33,
+        "for review": 5
+      },
+      "recordAccessions": []
+    },
+    {
+      "docket": "EL27-11-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=EL27-11&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 36,
+      "rowsRead": 36,
+      "classificationCounts": {
+        "for review": 3,
+        "documentless": 32,
+        "procedural notice": 1
+      },
+      "recordAccessions": [
+        "20261109-5139",
+        "20261113-3006"
+      ]
+    },
+    {
+      "docket": "ER26-3380-001",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER26-3380&sub_docket=001",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 8,
+      "rowsRead": 8,
+      "classificationCounts": {
+        "for review": 8
+      },
+      "recordAccessions": []
+    },
+    {
+      "docket": "ER26-3515-001",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER26-3515&sub_docket=001",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 2,
+      "rowsRead": 2,
+      "classificationCounts": {
+        "for review": 2
+      },
+      "recordAccessions": [
+        "20261109-5238"
+      ]
+    },
+    {
+      "docket": "ER26-3515-002",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER26-3515&sub_docket=002",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 2,
+      "rowsRead": 2,
+      "classificationCounts": {
+        "for review": 1,
+        "procedural notice": 1
+      },
+      "recordAccessions": []
+    },
+    {
+      "docket": "ER27-25-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-25&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 74,
+      "rowsRead": 74,
+      "classificationCounts": {
+        "procedural notice": 1,
+        "for review": 25,
+        "documentless": 48
+      },
+      "recordAccessions": [
+        "20261112-5134"
+      ]
+    },
+    {
+      "docket": "ER27-330-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-330&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 31,
+      "rowsRead": 31,
+      "classificationCounts": {
+        "for review": 1,
+        "documentless": 29,
+        "procedural notice": 1
+      },
+      "recordAccessions": []
+    },
+    {
+      "docket": "ER27-330-001",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-330&sub_docket=001",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 19,
+      "rowsRead": 19,
+      "classificationCounts": {
+        "for review": 2,
+        "documentless": 16,
+        "procedural notice": 1
+      },
+      "recordAccessions": [
+        "20261030-5172",
+        "20261112-5227"
+      ]
+    },
+    {
+      "docket": "ER27-454-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-454&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 14,
+      "rowsRead": 14,
+      "classificationCounts": {
+        "for review": 1,
+        "procedural notice": 1,
+        "documentless": 12
+      },
+      "recordAccessions": []
+    },
+    {
+      "docket": "ER27-484-000",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-484&sub_docket=000",
+      "scope": "related",
+      "status": "sheet listed in full; rows not individually reviewed",
+      "totalRows": 5,
+      "rowsRead": 5,
+      "classificationCounts": {
+        "procedural notice": 1,
+        "for review": 2,
+        "documentless": 2
+      },
+      "recordAccessions": [
+        "20261113-5007",
+        "20261113-5086"
       ]
     }
   ],
@@ -4109,6 +4305,87 @@
         "20261030-5172_03.pdf"
       ],
       "scope": "individual original retrieved; full docket not re-swept"
+    },
+    "20261113-5007": {
+      "description": "ISO-NE, NEPOOL and the transmission owners file large-load tariff revisions under section 205",
+      "filed": "2026-11-13",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261113-5007",
+      "status": "primary text captured",
+      "slug": "filing-er27-484-isone-large-loads",
+      "original": "20261113-5007_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-484-isone-large-loads.txt",
+      "scope": "individual original retrieved",
+      "additionalFiles": []
+    },
+    "20261113-5086": {
+      "description": "EPSA supports ISO-NE’s request for a 24-day comment period",
+      "filed": "2026-11-13",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261113-5086",
+      "status": "primary text captured",
+      "slug": "answer-er27-484-epsa-comment-period",
+      "original": "20261113-5086_01.pdf",
+      "text": "sources/text/abeyance/answer-er27-484-epsa-comment-period.txt",
+      "scope": "individual original retrieved"
+    },
+    "20261113-5103": {
+      "description": "Valley Electric asks FERC to rescind the CAISO show cause order as to it",
+      "filed": "2026-11-13",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261113-5103",
+      "status": "primary text captured",
+      "slug": "motion-el26-71-valley-electric-rescind",
+      "original": "20261113-5103_01.pdf",
+      "text": "sources/text/abeyance/motion-el26-71-valley-electric-rescind.txt",
+      "scope": "individual original retrieved"
+    },
+    "20261112-5227": {
+      "description": "PJM moves to withdraw its October backstop filing in favor of ER27-454",
+      "filed": "2026-11-12",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261112-5227",
+      "status": "primary text captured",
+      "slug": "motion-er27-330-pjm-withdraw",
+      "original": "20261112-5227_01.pdf",
+      "text": "sources/text/abeyance/motion-er27-330-pjm-withdraw.txt",
+      "scope": "individual original retrieved"
+    },
+    "20261113-3006": {
+      "description": "FERC gives PJM until December 21 to answer Exelon’s complaint",
+      "filed": "2026-11-13",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261113-3006",
+      "status": "primary text captured",
+      "slug": "notice-el27-11-comment-period",
+      "original": "20261113-3006_01.docx",
+      "text": "sources/text/abeyance/notice-el27-11-comment-period.txt",
+      "scope": "individual original retrieved"
+    },
+    "20261112-5134": {
+      "description": "Six MISO-state consumer advocates answer in support of the Organization of MISO States",
+      "filed": "2026-11-12",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261112-5134",
+      "status": "primary text captured",
+      "slug": "answer-er27-25-consumer-advocates",
+      "original": "20261112-5134_01.pdf",
+      "text": "sources/text/abeyance/answer-er27-25-consumer-advocates.txt",
+      "scope": "individual original retrieved"
+    },
+    "20261109-5238": {
+      "description": "Industrial customers ask FERC to clarify or rehear its Large Load registry order",
+      "filed": "2026-11-09",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261109-5238",
+      "status": "primary text captured",
+      "slug": "request-er26-3515-pjmicc-clarification",
+      "original": "20261109-5238_01.pdf",
+      "text": "sources/text/abeyance/request-er26-3515-pjmicc-clarification.txt",
+      "scope": "individual original retrieved"
+    },
+    "20261109-5139": {
+      "description": "Exelon answers PJM’s request for more time on its capacity-auction complaint",
+      "filed": "2026-11-09",
+      "sourceUrl": "https://elibrary.ferc.gov/eLibrary/filelist?accession_Number=20261109-5139",
+      "status": "primary text captured",
+      "slug": "answer-el27-11-exelon-extension",
+      "original": "20261109-5139_01.pdf",
+      "text": "sources/text/abeyance/answer-el27-11-exelon-extension.txt",
+      "scope": "individual original retrieved"
     }
   },
   "applicantSearch": [
@@ -4220,6 +4497,9 @@
   ],
   "captureNotes": [
     "FERC generated tariff PDF renditions are not assumed to be byte duplicates. Two distinct November 9 renditions for ER27-454 and ER26-3515 were captured, alongside the submitter’s source files. Other generated renditions and unsupported files are identified separately on the relevant file lists.",
-    "From about 22:00 ET on November 10, the public eLibrary returned HTTP 500 for 62 of 100 related-docket file-list requests. For the other 38 the metadata was available, but the normal public download did not yield a file. Nine signer-hosted copies were retrieved independently. The 12 show-cause and rehearing sheets had already been reconciled before these errors."
+    "From about 22:00 ET on November 10, the public eLibrary returned HTTP 500 for 62 of 100 related-docket file-list requests. For the other 38 the metadata was available, but the normal public download did not yield a file. Nine signer-hosted copies were retrieved independently. The 12 show-cause and rehearing sheets had already been reconciled before these errors.",
+    "Nov 15 read: 31 sheets from Nov 9 on, plus full sheets for 14 related dockets (EL25-49-000 and -002, EL27-11, ER27-25, ER27-454, ER27-330-000 and -001, ER27-484, ER26-3515-000 to -002, AD26-7, EL26-108, ER26-3380-001) so that later sweeps can compare them by accession. Rows on those related sheets are listed, not individually reviewed. FERC indexes weekend filings on Monday, so nothing filed after Friday Nov 13 can appear here.",
+    "ISO-NE’s Nov 13 filing (20261113-5007) has the transmittal letter committed. Its testimony, affidavit, marked and clean tariff sheets and list of governors are on the eLibrary file list and were not committed.",
+    "Nov 15 general search by filed date, Nov 10 to Nov 15: “large load” in full text (133 results), “tariff filing” in descriptions (69), “co-located load” in full text (111) and issuances mentioning large load (10). The only new section 205 large-load tariff filing by a show cause respondent in those results was ISO-NE’s ER27-484-000. No per-applicant search was run this time."
   ]
 }

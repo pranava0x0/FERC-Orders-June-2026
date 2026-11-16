@@ -2,7 +2,7 @@
   "counts": {
     "juneOrders": 7,
     "junePdfPages": 951,
-    "postOrderFilings": 160,
+    "postOrderFilings": 168,
     "archivedHTML": 4,
     "commentAccessions": 273,
     "commentAttachmentsListed": 281,
@@ -1687,6 +1687,86 @@
       "textSha256": "b98c02991950262856a3c9843ceed8fa0a6a9273c3f4e244ade0acef4d66abf8",
       "status": "matches",
       "pages": 5
+    },
+    {
+      "accession": "20261113-5007",
+      "slug": "filing-er27-484-isone-large-loads",
+      "file": "sources/originals/20261113-5007_01.pdf",
+      "text": "sources/text/abeyance/filing-er27-484-isone-large-loads.txt",
+      "sha256": "f56d92888c894551a2353c3192112961cd2943e4fe0cec6725ba4bb788c59e77",
+      "textSha256": "35be99f9ee6bee035ab0ac2e2b29c82b281509b31f26153c96cd0ad6d2ad3f14",
+      "status": "matches",
+      "pages": 99
+    },
+    {
+      "accession": "20261113-5086",
+      "slug": "answer-er27-484-epsa-comment-period",
+      "file": "sources/originals/20261113-5086_01.pdf",
+      "text": "sources/text/abeyance/answer-er27-484-epsa-comment-period.txt",
+      "sha256": "fa30051227de554981ec07322605f13d6c7ad96502b65a5480a6d9bb6def5661",
+      "textSha256": "9c7e3b3d56620569d0af2924d132a8926d8d5973279f41760cb62a7587f95459",
+      "status": "matches",
+      "pages": 4
+    },
+    {
+      "accession": "20261113-5103",
+      "slug": "motion-el26-71-valley-electric-rescind",
+      "file": "sources/originals/20261113-5103_01.pdf",
+      "text": "sources/text/abeyance/motion-el26-71-valley-electric-rescind.txt",
+      "sha256": "d1ca6d9459e78db0cc2e6914dc59b24cb8fe9fd8405db1eadd8271f8b103ee49",
+      "textSha256": "e18b30abd891433aad5777df6355edb6e467ddea72db154f31db476dffcee504",
+      "status": "matches",
+      "pages": 43
+    },
+    {
+      "accession": "20261112-5227",
+      "slug": "motion-er27-330-pjm-withdraw",
+      "file": "sources/originals/20261112-5227_01.pdf",
+      "text": "sources/text/abeyance/motion-er27-330-pjm-withdraw.txt",
+      "sha256": "bd4522edbcbeee3c7a688909c66acfc98b0329a6156d86c34e8b7382d9b5e298",
+      "textSha256": "e5e520507179deff19643a799b174aa9c97e80c407a412e37360816bbdffaa19",
+      "status": "matches",
+      "pages": 4
+    },
+    {
+      "accession": "20261113-3006",
+      "slug": "notice-el27-11-comment-period",
+      "file": "sources/originals/20261113-3006_01.docx",
+      "text": "sources/text/abeyance/notice-el27-11-comment-period.txt",
+      "sha256": "cba1bd6c903afc048fc58743b906860062d6d7b4b4fd0efb6133ae753a4f51d9",
+      "textSha256": "bbd0db16242ffe78af99b51f425f2b0fda2524d78f698da0a9bcbc89501196da",
+      "status": "matches",
+      "words": 244
+    },
+    {
+      "accession": "20261112-5134",
+      "slug": "answer-er27-25-consumer-advocates",
+      "file": "sources/originals/20261112-5134_01.pdf",
+      "text": "sources/text/abeyance/answer-er27-25-consumer-advocates.txt",
+      "sha256": "246fc8b777aa54c68c2634c866f1b9c93fb513287132fc31b44446c8c299794f",
+      "textSha256": "a7e4d5ef7821a93dad1b28178567a906c2fae284436235babd42261c857fad2d",
+      "status": "matches",
+      "pages": 12
+    },
+    {
+      "accession": "20261109-5238",
+      "slug": "request-er26-3515-pjmicc-clarification",
+      "file": "sources/originals/20261109-5238_01.pdf",
+      "text": "sources/text/abeyance/request-er26-3515-pjmicc-clarification.txt",
+      "sha256": "35fce070392d809071a42835587143c1f8de3db7c4aca2d1441bfa5d50587d29",
+      "textSha256": "9399d9acfb37c1eef1c0d13ca0485bd49831a8091c840c4fc452d86f36c842b2",
+      "status": "matches",
+      "pages": 17
+    },
+    {
+      "accession": "20261109-5139",
+      "slug": "answer-el27-11-exelon-extension",
+      "file": "sources/originals/20261109-5139_01.pdf",
+      "text": "sources/text/abeyance/answer-el27-11-exelon-extension.txt",
+      "sha256": "2032b6a61bc5c65507757cd713fd410f76b44dabe809d2d69f2e48f7c973be29",
+      "textSha256": "cc4b85966c8db2a43e372e85d37b93d5208fa9982493376d2a6e1597d401a234",
+      "status": "matches",
+      "pages": 6
     }
   ],
   "archivedHTML": [

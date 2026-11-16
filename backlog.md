@@ -656,3 +656,12 @@ Recommended next steps, in order:
 - **Medium:** add tenets for documents already in the corpus but not on the Filings tab (the DOE §403 letter,
   the CEBA/DCC letter, PJM's Nov 5 MC materials once posted).
 - **Done:** PR #28 added direct links to proceedings and filers (e.g. `#filings/miso-lars/google`).
+
+## From the 2026-11-15 refresh (interaction depth)
+
+- **High:** the first sweep after Nov 16 and Nov 20. Search eLibrary by respondent name for new ER27 dockets, then fill the four planned rows in the filings matrix.
+- **Medium:** a document inside a long proceeding still costs 3 clicks and about 2 screens of scroll on desktop (4 on a phone) when reached by browsing: MISO LARS has 14 rows. The find box gets there in 3 with no scroll. Options to measure: a per-proceeding filer index, or sorting the answering document first.
+- **Medium:** put the Filings find-box query in the URL (`#filings/q=<text>`) so a filtered list can be shared.
+- **Low:** All comments search stays at 4 interactions (tab, sub-tab, tap, type). A global search box in the masthead would make it 2.
+- **Low:** remove the duplicate legacy `.fgroup` rules in `docs/css/styles.css` (around lines 1148 to 1167).
+- **Low:** verify and ship the three queued items in REFRESH.md (Market Monitor Nov 12 statement, RTO Insider NEPOOL and NYISO pieces, Latitude on CHILLS).

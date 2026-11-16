@@ -318,7 +318,7 @@
       "start": 81,
       "end": 100,
       "theme": "Revenue settlement",
-      "take": "PJM proposed paying suppliers the shortfall after capacity-market revenue, subject to actual availability and clearing. Customers would fund the measured shortfall rather than a forecast.",
+      "take": "PJM proposed paying suppliers the shortfall after capacity-market revenue, subject to actual availability and clearing. Customers would fund the shortfall as measured after the fact.",
       "quote": "Loads will fund the actual revenue shortfall, measured ex post",
       "pg": 88
     },

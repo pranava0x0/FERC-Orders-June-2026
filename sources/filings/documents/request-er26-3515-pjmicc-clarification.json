@@ -1,0 +1,60 @@
+{
+  "slug": "request-er26-3515-pjmicc-clarification",
+  "summary": "The PJM Industrial Customer Coalition (PJMICC) and Steel Producers ask FERC to clarify, or alternatively rehear, parts of its October 9, 2026 order on PJM's Large Load Registry. They want limits on who sees registry data and on collecting existing customers' contracts and rates.",
+  "ask": "Clarify that registry data is limited to need-to-know users, that retail rates are excluded, and that load serving entities see only their own customers. Alternatively, exclude existing Large Loads or apply the same access limits.",
+  "points": [
+    {
+      "point": "PJMICC and Steel Producers ask for clarification or rehearing on the Registry's application to industrial and manufacturing loads and its confidentiality rules.",
+      "quote": "PJMICC and Steel Producers respectfully request clarification or, in the alternative, rehearing of portions of the Commission’s October 9, 2026, Order",
+      "pg": 1
+    },
+    {
+      "point": "They warn that without limits on who sees the data, the Registry could become a source of competitive intelligence.",
+      "quote": "Without certain clarifications regarding who may see that information and for what purpose, the Registry risks becoming a source of competitive intelligence rather than a reliability tool.",
+      "pg": 2
+    },
+    {
+      "point": "They note that, with IRAS rejected, existing PJMICC and Steel Producers members that meet the Large Load definition will be in the Registry.",
+      "quote": "Because the Commission rejected IRAS, all retail customers that satisfy the definition of Large Load, including some existing PJMICC and Steel Producers members, will be included in the Registry for “informational purposes” only.",
+      "pg": 3
+    },
+    {
+      "point": "They ask FERC to require PJM to limit Registry access on a need-to-know basis.",
+      "quote": "PJM must segment access to Registry data on a “need-to-know” basis",
+      "pg": 4
+    },
+    {
+      "point": "They ask that retail rate and pricing information be excluded from the Registry and redacted from added contracts.",
+      "quote": "Information on retail customer rates or pricing will be excluded from the Registry and redacted from contracts that are added to the Registry.",
+      "pg": 4
+    },
+    {
+      "point": "They say a large manufacturer's load profile and supply contracts are at least as sensitive as a generator's real-time output.",
+      "quote": "A large manufacturer’s load profile and supply contracts should be viewed as at least as sensitive as a generator’s real-time output.",
+      "pg": 10
+    },
+    {
+      "point": "They ask FERC to limit a load serving entity's access to its own customers and bar use of Registry data for marketing.",
+      "quote": "The Commission should clarify that an LSE’s access to Registry data is limited to its own customers and that Registry data may not be used as a marketing tool.",
+      "pg": 11
+    },
+    {
+      "point": "As a rehearing alternative, they ask FERC to exclude existing Large Loads absent record evidence, or to apply the access limits to Registry data.",
+      "quote": "(1) exclude existing Large Loads from the Registry absent substantial record evidence supporting their inclusion, or (2) direct PJM to apply to Registry data the access limitations and protections described above",
+      "pg": 15
+    }
+  ],
+  "throughLine": {
+    "relation": "parallel",
+    "anchors": [
+      "e-12-define-large-load",
+      "e-7-application-study-process"
+    ],
+    "text": "Seeks clarification of FERC's order on PJM's section 205 Large Load Registry in ER26-3515. It does not cite the E-7 show cause order; the Registry and its definition run alongside it."
+  },
+  "themes": [
+    "registry",
+    "retail",
+    "procedure"
+  ]
+}

@@ -449,6 +449,30 @@
       "evidence": "There’s no world in which there’s political will or political tolerance for new entry prices to get paid to everybody. IRAS was a guardrail for PJM, and that guardrail is now off the table, The ruling shifted responsibility for determining which types of new loads should face curtailment instead to the states.",
       "note": "Nelson (leads market intelligence) is the first speaker and LaFaso (director of market intelligence) the second. The third sentence is the reporter's own description of FERC's Oct 9 ruling, not a quote of either analyst.",
       "captured_at": "2026-11-12"
+    },
+    "pjmmatrix1029-filings": {
+      "src": "pjmmatrix1029",
+      "speaker": "PJM Interconnection, “PJM’s Response Matrix to the Large Load Show Cause Order Opportunities”",
+      "occasion": "Posted for the Nov 5, 2026 special Members Committee; dated October 29, 2026, p. 1",
+      "evidence": "On or about November 16, 2026, PJM will make several Federal Power Act, Section 205 filings that will address the opportunities noted here. One of those filings will address large load ride through requirements, and another filing will address the bulk of the reforms PJM is pursuing and that will address the show cause order’s identified opportunities. The precise number and structure of the filings remain subject to change.",
+      "note": "Verbatim from page 1 of the PDF on pjm.com, extracted with PyMuPDF (line breaks joined). The PDF is not committed.",
+      "captured_at": "2026-11-15"
+    },
+    "pjmmc1118-package": {
+      "src": "pjmmc1118",
+      "speaker": "PJM Interconnection, Members Committee agenda",
+      "occasion": "Agenda for November 18, 2026, as of November 11, 2026, pp. 1 to 2",
+      "evidence": "The committee will be asked to approve/endorse the proposed OA, Tariff and RAA revisions as a package at this meeting. Jason Barker will facilitate stakeholder feedback and dialog with the PJM Board regarding market design including the new large load initiatives and the Powering Reliability Through Market Design efforts.",
+      "note": "Two separate agenda items (item 2 and item 7), each verbatim from the PDF on pjm.com, extracted with PyMuPDF. The first follows a sentence tying the revisions to the term sheet package endorsed at the September 30 special Members Committee. The PDF is not committed.",
+      "captured_at": "2026-11-15"
+    },
+    "udive1111-lacerte": {
+      "src": "udive1111",
+      "speaker": "David LaCerte, FERC Commissioner (interview with Utility Dive)",
+      "occasion": "Utility Dive, published November 11, 2026; interview on Monday, November 9, at NARUC’s annual meeting in San Juan, Puerto Rico",
+      "evidence": "I think we need to get the states more in line with large load retail tariffs. I think PJM has shown more responsiveness as of late. But we still need faster action, and we have a stakeholder process there that has been proven to be detrimental to improvements in PJM. These states have opted into PJM, and a lot of their mandates now go through the region. So I do think it's important that the states have an appropriate-sized role in governance. We can't live under this price collar forever. But we also need to protect consumers.",
+      "note": "Four separate answers from the raw article HTML, each verbatim; spans from different answers are joined here and are not continuous in the article. The bracketed words in the article’s price-collar passage are the outlet’s and are left out.",
+      "captured_at": "2026-11-15"
     }
   }
 }

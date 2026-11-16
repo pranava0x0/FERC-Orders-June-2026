@@ -77,12 +77,12 @@
   // Collapsible section: same heading + lede as head(), but the body folds away to cut scrolling on the
   // long flat tabs. Pass open=true for the section that should be expanded by default. `count` shows a
   // tally on the summary so a collapsed section still advertises what's inside.
-  function accSection(h2, lede, body, open, count) {
+  function accSection(h2, lede, body, open, count, id) {
     // The title carries role="heading" aria-level="2" so screen-reader heading navigation and the
     // document landmarks keep these sections even when collapsed (a bare styled <span> drops them).
     // Kept as a <span> (an inline disclosure label inside <summary>), not a block <h2>, so the summary
     // stays a lightweight toggle row; the ARIA role gives it the same heading semantics either way.
-    return '<details class="acc"' + (open ? " open" : "") + '><summary class="acc-sum">' +
+    return '<details class="acc"' + (id ? ' id="' + esc(id) + '"' : "") + (open ? " open" : "") + '><summary class="acc-sum">' +
       '<span class="acc-h2" role="heading" aria-level="2">' + esc(h2) + "</span>" +
       (count != null ? '<span class="acc-count mono">' + count + "</span>" : "") +
       '<span class="acc-chev" aria-hidden="true">›</span></summary>' +
@@ -519,7 +519,7 @@
       var c = filingCell(d.docket, "showcause", ps), due = d.abeyance && d.abeyance.due;
       var gist = c.obs ? c.obs.gist : "";
       var n = daysUntil(due);
-      return '<tr><th scope="row"><a href="#dockets">' + esc(d.rto) + '</a> <span class="ot-item">' + esc(d.item) + " · " + esc(d.docket.replace(/-000$/, "")) + "</span></th>" +
+      return '<tr><th scope="row"><a href="#dockets/' + esc(docketKey(d.docket)) + '">' + esc(d.rto) + '</a> <span class="ot-item">' + esc(d.item) + " · " + esc(d.docket.replace(/-000$/, "")) + "</span></th>" +
         '<td class="ot-due">' + (due ? '<span class="mono">' + esc(fmtISO(due).replace(/, \d{4}$/, "")) + "</span>" + (n >= 0 ? ' <span class="ot-days">' + inDays(n) + "</span>" : "") : '<span class="na">Not dated</span>') + "</td>" +
         '<td><span class="ot-status st-' + esc(c.status) + '">' + esc(STATUS[c.status] || c.status) + "</span> " + esc(firstSentence(gist)) + "</td>" +
         '<td class="ot-go"><a href="#filings/sc-' + esc(d.rto.toLowerCase().replace(/[^a-z]/g, "")) + '">Filings</a></td></tr>';
@@ -540,12 +540,13 @@
       return '<li><span class="nn-date"><span class="mono">' + esc(fmtISO(isoOf(e)).replace(/, \d{4}$/, "")) + '</span><span class="nn-days">' + inDays(n) + "</span></span>" +
         '<span class="nn-t">' + esc(e.title) + " " + pill(e) + "</span></li>";
     }).join("") + "</ol>";
+    // A row opens the document the event is about when there is one, else the event's own timeline row.
     var latestList = '<ol class="now-latest">' + latest.map(function (e) {
-      return '<li><span class="mono nl-date">' + esc(fmtISO(isoOf(e)).replace(/, \d{4}$/, "")) + '</span><span><a href="#timeline/track/' + esc(e.track) + '">' + esc(e.title) + "</a> " + pill(e) + "</span></li>";
+      return '<li><span class="mono nl-date">' + esc(fmtISO(isoOf(e)).replace(/, \d{4}$/, "")) + '</span><span><a href="' + (e.doc ? "#filings/" + esc(e.doc) : "#timeline/at/" + esc(e.iso)) + '">' + esc(e.title) + "</a> " + pill(e) + "</span></li>";
     }).join("") + "</ol>";
     var f = D.meta.spotlight;
     var links = f.links.map(function (link) {
-      return '<a href="#filings/' + esc(link.group) + '">' + esc(link.label) + "</a>";
+      return '<a href="#filings/' + esc(link.group) + (link.doc ? "/" + esc(link.doc) : "") + '">' + esc(link.label) + "</a>";
     }).join("");
     var m = D.meta;
     var glance = '<dl class="glance">' +
@@ -564,7 +565,7 @@
       '<section aria-labelledby="ops-h"><span id="stand-h" class="jump-anchor"></span><h2 class="now-h" id="ops-h">Where each operator stands</h2>' + operatorTable() + "</section>" +
       '<section aria-labelledby="tg-h"><h2 class="now-h" id="tg-h">The record so far</h2>' + timelineGraphic() + "</section>" +
       accSection("Status by proceeding", "One line per proceeding, as of the last sweep.", renderStandStrip(), false, Object.keys(D.tracks || {}).length) +
-      accSection("The 60-day clock and who has filed", "The procedural steps every order set, and what each operator filed against them.", renderProcedural(), false, null) +
+      accSection("The 60-day clock and who has filed", "The procedural steps every order set, and what each operator filed against them.", renderProcedural(), false, null, "acc-clock") +
       accSection("Background: from the DOE directive to the June orders", "", paras(m.summary) + glance, false, null);
   }
 
@@ -667,7 +668,7 @@
       var e = x.e;
       return '<details class="tl-item ' + e.kind + '" id="tl-' + esc(e.iso || "") + '" data-iso="' + esc(e.iso || "") + '" data-track="' + esc(e.track || "") + '"' + (open ? " open" : "") + '><summary><span class="tl-date mono">' + esc(e.date) +
         '</span><span class="tl-title">' + esc(e.title) + '</span><span class="tl-pills"><span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span>" + trackPill(e.track) + "</span></summary>" +
-        '<div class="tl-body">' + esc(e.body) + "</div>" + srcChips(e.src) + "</details>";
+        '<div class="tl-body">' + esc(e.body) + "</div>" + (e.doc ? '<p class="tl-doc"><a href="#filings/' + esc(e.doc) + '">Read the filing</a></p>' : "") + srcChips(e.src) + "</details>";
     };
     var top = '<div class="cards cols-3">' + D.toplines.map(function (c) {
       return '<div class="card analysis"><h3>' + esc(c.h) + "</h3>" + paras(c.body) + srcChips(c.src) + "</div>";
@@ -916,7 +917,7 @@
         d.respondentList.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></details>" : "";
       // Accordion: collapsed by default (first open) so all cards fit on one screen; expand for detail.
       var track = d.track ? '<span class="docket-track">' + esc(d.track) + "</span>" : "";
-      return '<details class="docket' + (d.track ? " docket-colo" : "") + '"' + (idx === 0 ? " open" : "") + ">" +
+      return '<details class="docket' + (d.track ? " docket-colo" : "") + '" id="dk-' + esc(docketKey(d.docket)) + '"' + (idx === 0 ? " open" : "") + ">" +
         '<summary class="docket-sum"><span class="item">' + esc(d.item) + "</span>" +
         '<span class="docket-sum-id"><span class="rto">' + esc(d.rto) + "</span> " + track + '<span class="rto-full">' + esc(d.rtoFull) + "</span>" +
         '<span class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</span></span>" +
@@ -1759,10 +1760,11 @@
         '<ol class="pts" data-slug="' + esc(d.slug) + '"><li class="pts-wait">' + d.npoints + " key points, loading…</li></ol>"
       : '<p class="fd-sum na">Not yet read for this site. ' + esc(d.title) + "</p>";
     var tags = (d.themes || []).map(function (t) { return '<span class="tag">' + esc(themeLabel(R, t)) + "</span>"; }).join("");
-    return '<details class="fdoc" id="fd-' + esc(d.slug) + '" data-themes="' + esc((d.themes || []).join(" ")) + '"><summary>' +
+    var hay = [d.filer, (d.filers || []).join(" "), d.kind, d.title, d.docket, d.accession, g.title, g.short, d.summary].join(" ").toLowerCase();
+    return '<details class="fdoc" id="fd-' + esc(d.slug) + '" data-themes="' + esc((d.themes || []).join(" ")) + '" data-q="' + esc(hay) + '"><summary>' +
       '<span class="fd-date mono">' + esc(fmtISO(d.date)) + '</span><span class="fd-who">' + esc(d.filer) + '</span><span class="fd-kind">' + esc(d.kind) +
       (d.side ? ' · <span class="side-tag side-' + esc(d.side) + '">' + esc(SIDE_LABEL[d.side] || d.side) + "</span>" : "") + "</span>" +
-      (d.summary ? "" : '<span class="fd-unread">not yet read</span>') + "</summary>" +
+      (d.summary ? '<span class="fd-tease">' + esc(d.summary) + "</span>" : '<span class="fd-unread">not yet read</span>') + "</summary>" +
       '<div class="fd-body">' + body + '<p class="fd-tools">' + tags +
       '<a href="reading/' + esc(d.slug) + '/">Read the document</a>' +
       (d.accession ? '<a href="' + esc(eli(d.accession)) + '" target="_blank" rel="noopener noreferrer">eLibrary ' + esc(d.accession) + "</a>" : d.url ? '<a href="' + esc(d.url) + '" target="_blank" rel="noopener noreferrer">Source</a>' : "") +
@@ -1844,6 +1846,14 @@
       R.themes.filter(function (t) { return counts[t.key]; }).map(function (t) {
         return '<button type="button" class="who-chip" data-theme="' + esc(t.key) + '" aria-pressed="false" title="' + esc(t.gloss) + '">' + esc(t.label) + ' <span class="mono">' + counts[t.key] + "</span></button>";
       }).join("") + '</div><p class="fg-live" role="status" aria-live="polite"></p>';
+    var find = '<div class="fg-find"><label for="fg-q">Find a document</label><input type="search" id="fg-q" placeholder="Filer, docket or any word" autocomplete="off" /></div>';
+    var all = [];
+    R.groups.forEach(function (g) { g.docs.forEach(function (d) { if (d.summary) all.push({ g: g, d: d }); }); });
+    all.sort(function (a, b) { return a.d.date < b.d.date ? 1 : a.d.date > b.d.date ? -1 : 0; });
+    var newest = all.length ? '<section class="fl" aria-labelledby="fl-h"><h3 class="fg-sec" id="fl-h">Newest documents</h3><ol class="fl-list">' + all.slice(0, FL_MAX).map(function (x) {
+      return '<li><a href="#filings/' + esc(x.g.id) + "/" + esc(x.d.slug) + '"><span class="fl-date mono">' + esc(fmtISO(x.d.date).replace(/, \d{4}$/, "")) + '</span><span class="fl-who">' + esc(x.d.filer) +
+        '</span><span class="fl-what">' + esc(x.d.kind) + " · " + esc(x.g.short || x.g.title) + "</span></a></li>";
+    }).join("") + "</ol></section>" : "";
     var group = function (g) {
       return '<details class="fgroup" id="fg-' + esc(g.id) + '"><summary class="fg-sum"><span class="fg-h" role="heading" aria-level="3">' + esc(g.title) +
         ' <span class="fg-docket mono">' + esc(g.docket) + '</span></span><span class="fg-n"><span class="mono">' + g.docs.length + "</span> " + (g.docs.length === 1 ? "document" : "documents") +
@@ -1855,34 +1865,56 @@
     var sc = R.groups.filter(function (g) { return g.kind === "show-cause"; }), rel = R.groups.filter(function (g) { return g.kind !== "show-cause"; });
     return head("Filings since the June 18 orders",
       total + " documents in " + R.groups.length + " proceedings, newest first inside each. Every reading quotes only its own document, with the page, and names the order directive it bears on." + (read < total ? " " + (total - read) + " documents are listed but not yet read." : "")) +
-      chips + figureChart(R) +
+      find + chips + newest +
       '<h3 class="fg-sec">The six show cause dockets</h3>' + sc.map(group).join("") +
       '<h3 class="fg-sec">Related proceedings</h3>' + rel.map(group).join("") +
+      '<p class="fg-none" hidden>No document matches. Clear the filter to see every proceeding.</p>' +
+      figureChart(R) +
       '<p class="reader-entry"><a href="reading/">All documents in the reading room</a></p>';
   }
-  var filingTheme = "";
+  var FL_MAX = 6;          // "Newest documents" rows
+  var FQ_MIN = 2;          // a one-letter query matches nearly every document
+  var filingTheme = "", filingQuery = "";
+  // The theme chip and the typed query are one filter: a document shows when it passes both. Matching
+  // proceedings open so the documents are on the page; clearing the filter folds back the ones it opened
+  // (marked data-auto), except one the reader has a document open in. Quoted points load when a document opens, or for a theme, where
+  // the match set is small enough to fetch at once.
   function applyTheme(panel, key) {
     var R0 = window.FERC_RECORD;
     filingTheme = key && R0 && R0.themes.some(function (t) { return t.key === key; }) ? key : "";
     panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-theme") === filingTheme)); });
-    var shown = 0;
+    var q = filingQuery.length >= FQ_MIN ? filingQuery : "", active = !!(filingTheme || q), shown = 0;
+    var box = panel.querySelector("#fg-q");
+    if (box && box.value.trim().toLowerCase() !== filingQuery) box.value = filingQuery;
     panel.querySelectorAll(".fgroup").forEach(function (g) {
       var n = 0;
       g.querySelectorAll(".fdoc").forEach(function (d) {
-        var on = !filingTheme || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + filingTheme + " ") >= 0;
+        var on = (!filingTheme || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + filingTheme + " ") >= 0) &&
+          (!q || d.getAttribute("data-q").indexOf(q) >= 0);
         d.hidden = !on; if (on) n++;
       });
       g.hidden = n === 0; shown += n;
-      if (filingTheme && n) { g.open = true; loadPoints(g); }
+      if (active && n) { if (!g.open) { g.setAttribute("data-auto", ""); g.open = true; } if (filingTheme) loadPoints(g); }
+      else if (!active && g.hasAttribute("data-auto")) { g.removeAttribute("data-auto"); if (!g.querySelector(".fdoc[open]")) g.open = false; }
     });
+    panel.querySelectorAll(".fl, .fg-sec").forEach(function (el) { el.hidden = active; });
+    // A chip's number is what tapping it would show, so it counts against the typed query.
+    var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return !q || d.getAttribute("data-q").indexOf(q) >= 0; });
+    panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) {
+      var k = c.getAttribute("data-theme"), num = c.querySelector(".mono");
+      if (num) num.textContent = docs.filter(function (d) { return !k || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + k + " ") >= 0; }).length;
+    });
+    var none = panel.querySelector(".fg-none");
+    if (none) none.hidden = !(active && shown === 0);
     var live = panel.querySelector(".fg-live");
-    if (live) live.textContent = filingTheme ? shown + " documents on this theme" : "";
+    if (live) live.textContent = !active ? "" : shown + (shown === 1 ? " document" : " documents") + (filingTheme ? " on this theme" : "") + (q ? " matching “" + q + "”" : "");
   }
   var pendingFiling = null, filingHash = "";
   function routeFiling(rest) {
     var panel = panelFor("filings");
     var bits = String(rest || "").split("/");
     if (bits[0] === "theme") {
+      filingQuery = "";                      // a theme address shows that theme alone, whatever was typed before
       applyTheme(panel, bits[1] || "");
       // An unknown theme shows everything, so the address says so too.
       filingHash = filingTheme ? "theme/" + filingTheme : "";
@@ -1897,21 +1929,29 @@
       if (legacy) bits[1] = legacy.id.slice(3);
     }
     if (!grp) return;
-    if (filingTheme) applyTheme(panel, "");
+    if (filingTheme || filingQuery) { filingQuery = ""; applyTheme(panel, ""); }
     filingHash = rest;
     grp.open = true;
     var doc = bits[1] && document.getElementById("fd-" + bits[1]);
     // Older links named a filer, not a document: open that filer's newest document instead.
     if (!doc && bits[1]) doc = [].slice.call(grp.querySelectorAll(".fdoc")).filter(function (d) { return slugify(d.querySelector(".fd-who").textContent) === bits[1]; })[0] || null;
+    // A proceeding with one document: the link opens it, whether or not the proceeding was already open.
+    var solo = !doc && grp.querySelectorAll(".fdoc");
+    if (solo && solo.length === 1) doc = solo[0];
     // A document can move between proceedings (sc-miso to miso-irr): open the group that holds it.
     if (doc) { grp = doc.closest(".fgroup") || grp; grp.open = true; doc.open = true; filingHash = grp.id.slice(3) + "/" + doc.id.slice(3); }
     (doc || grp).scrollIntoView({ block: "start" });
+    focusSummary(doc || grp);
     loadPoints(grp, function () { if (doc) doc.scrollIntoView({ block: "start" }); });
     setCrumbs("filings", filingHash);
   }
   function wireFilings() {
     var panel = panelFor("filings");
     panel.addEventListener("click", function (ev) {
+      // "Newest documents": route directly, so a second tap on the same row still opens it (the address
+      // has not changed, and an unchanged hash fires no hashchange).
+      var a = ev.target.closest && ev.target.closest(".fl-list a");
+      if (a) { ev.preventDefault(); routeFiling(a.getAttribute("href").slice(9)); if (history.replaceState) history.replaceState(null, "", "#filings/" + filingHash); return; }
       var b = ev.target.closest && ev.target.closest(".th-chips .who-chip");
       if (!b) return;
       var k = b.getAttribute("data-theme");
@@ -1919,16 +1959,27 @@
       filingHash = k ? "theme/" + k : "";
       if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
     });
+    var box = panel.querySelector("#fg-q"), qTimer = null;
+    if (box) box.addEventListener("input", function () {
+      clearTimeout(qTimer);
+      qTimer = setTimeout(function () { filingQuery = box.value.trim().toLowerCase(); applyTheme(panel, filingTheme); }, 120);
+    });
     // Opening a proceeding or document writes its address, so the URL and the trail always match the page.
     panel.addEventListener("toggle", function (ev) {
       var el = ev.target;
       if (!el.open || !el.classList) return;
       var g = el.classList.contains("fgroup") ? el : el.classList.contains("fdoc") ? el.closest(".fgroup") : null;
       if (!g) return;
-      loadPoints(g);
-      // While a theme filter is on, the address is the theme. Toggle events arrive after applyTheme
-      // opens matching groups, so a flag set around those opens would already be cleared here.
-      if (filingTheme) return;
+      var isGroup = el === g, filtering = !!(filingTheme || filingQuery.length >= FQ_MIN);
+      // A typed query can open every proceeding at once; its points wait for a document to open.
+      if (!(isGroup && filtering && !filingTheme)) loadPoints(g);
+      // While a filter is on, proceedings are opened by applyTheme and the address stays the theme (or the
+      // bare tab). Toggle events arrive after applyTheme returns, so a flag set around those opens would
+      // already be cleared here. A document is only ever opened by the reader, so it always gets its address.
+      if (filtering && isGroup) return;
+      // A proceeding with one document has nothing to choose between: open the document too.
+      var only = isGroup ? g.querySelectorAll(".fdoc") : [];
+      if (only.length === 1 && !only[0].open) { only[0].open = true; return; }
       filingHash = g.id.slice(3) + (el.classList.contains("fdoc") ? "/" + el.id.slice(3) : "");
       if (history.replaceState) history.replaceState(null, "", "#filings/" + filingHash);
       setCrumbs("filings", filingHash);
@@ -2076,6 +2127,24 @@
     var m = String(rest || "").match(/^track\/([A-Za-z0-9_-]+)$/);
     return validTrack(m ? m[1] : "all");   // an unknown track id degrades to the unfiltered rail
   }
+  // Order cards are addressed by docket without the sub-docket: "#dockets/EL26-67".
+  // "EL26-67-000" -> "EL26-67". Only a sub-docket suffix is dropped: "EL26-108" keeps its number.
+  function docketKey(docket) { return String(docket || "").replace(/^([A-Za-z]+\d+-\d+)-\d{3}$/, "$1"); }
+  // Open one <details> and bring it under the tablist. Returns false when the id names nothing.
+  function openAt(id) {
+    var el = id && document.getElementById(id);
+    if (!el) return false;
+    if (el.tagName === "DETAILS") el.open = true;
+    el.scrollIntoView({ block: "start" });
+    focusSummary(el);
+    return true;
+  }
+  // A link that opens a card can sit in a panel the router has just hidden. Put focus on the opened card's
+  // summary so a keyboard or screen-reader user lands on what opened.
+  function focusSummary(el) {
+    var s = el && el.tagName === "DETAILS" && el.querySelector("summary");
+    if (s && s.focus) s.focus({ preventScroll: true });
+  }
 
   // "#comments/summaries?q=x" -> { tab: "comments", rest: "summaries?q=x" }; "#news" -> { tab:"news", rest:"" }
   function parseHash() {
@@ -2098,11 +2167,13 @@
       // `timelineTrack` is the single source of truth; `pendingTimelineTrack` is ONLY the handoff for a
       // deep link that arrives before the panel exists. Apply before activate() either way, so the hash
       // activate() writes reflects the track we just routed to.
+      // "#timeline/at/<iso>" opens one event on the unfiltered rail; the address then settles to "#timeline".
+      var at = /^at\/([A-Za-z0-9-]+)$/.exec(rest || "");
       var track = parseTimelineRest(rest);
       if (!rendered.timeline) pendingTimelineTrack = track;   // wireTimeline consumes and clears it
       else if (applyTimelineTrack) applyTimelineTrack(track); // already wired: set live state now
       activate("timeline", focus);
-      scrollToTabsTop();
+      if (!(at && openAt("tl-" + at[1]))) scrollToTabsTop();
     } else if (tab === "filings" && rest) {
       if (!rendered.filings) pendingFiling = rest;               // wireFilings consumes and clears it
       // Already rendered: settle the route before activate() writes the hash, or the URL keeps the old one.
@@ -2117,10 +2188,13 @@
       activate("commissioners", focus);
       scrollToTabsTop();
     } else {
-      // A bare "#filings" (the trail's root link) is the whole list: drop the last proceeding or theme.
-      if (tab === "filings") { filingHash = ""; pendingFiling = null; if (rendered.filings && filingTheme) applyTheme(panelFor("filings"), ""); }
+      // A bare "#filings" (the trail's root link) is the whole list: drop the last proceeding, theme or filter.
+      if (tab === "filings") { filingHash = ""; pendingFiling = null; if (rendered.filings && (filingTheme || filingQuery)) { filingQuery = ""; applyTheme(panelFor("filings"), ""); } }
       activate(tab, focus);
-      scrollToTabsTop();
+      // "#dockets/EL26-67" opens that order card; "#overview/clock" opens the procedural board.
+      var landed = tab === "dockets" && rest ? openAt("dk-" + docketKey(rest))
+        : tab === "overview" && rest === "clock" ? openAt("acc-clock") : false;
+      if (!landed) scrollToTabsTop();
     }
   }
 
@@ -2269,7 +2343,7 @@
     // back off the step announces the superseded one. With Aug 17 reset to Nov 16 this chip was
     // rendering a date six days in the PAST as "Next deadline", above every tab.
     var days = daysUntil(stepWhen(n));
-    el.innerHTML = '<a class="mh-next" href="#overview">Next: <span class="mono">' + esc(fmtISO(stepWhen(n)).replace(/, \d{4}$/, "")) + "</span> · " + esc(n.label) +
+    el.innerHTML = '<a class="mh-next" href="#overview/clock">Next: <span class="mono">' + esc(fmtISO(stepWhen(n)).replace(/, \d{4}$/, "")) + "</span> · " + esc(n.label) +
       (days >= 0 ? ", " + (days === 0 ? "today" : days === 1 ? "tomorrow" : "in " + days + " days") : "") + "</a>";
     el.hidden = false;
   }
