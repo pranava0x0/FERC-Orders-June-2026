@@ -819,3 +819,6 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 - **The Nov 16 and Nov 30 deadline entries predated the Nov 12 and Nov 13 filings** (data, found by walking every string). Fixed. Eight slogan-style lines on the overview rewritten.
 - **The `[hidden]` test passed on `.fgroup[hidden]` alone** (test). Tightened to the bare rule.
 
+## 2026-11-15 (PR 33 review round 2)
+- **Theme chip counts ignored a typed query** (code, found by Codex). With "google" typed, the cost chip read 74 and showed one document. Fixed: `applyTheme` recounts every chip against the query; checked in a browser that each chip's number equals what it shows.
+

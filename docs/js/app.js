@@ -1898,6 +1898,12 @@
       else if (!active && g.hasAttribute("data-auto")) { g.removeAttribute("data-auto"); if (!g.querySelector(".fdoc[open]")) g.open = false; }
     });
     panel.querySelectorAll(".fl, .fg-sec").forEach(function (el) { el.hidden = active; });
+    // A chip's number is what tapping it would show, so it counts against the typed query.
+    var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return !q || d.getAttribute("data-q").indexOf(q) >= 0; });
+    panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) {
+      var k = c.getAttribute("data-theme"), num = c.querySelector(".mono");
+      if (num) num.textContent = docs.filter(function (d) { return !k || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + k + " ") >= 0; }).length;
+    });
     var none = panel.querySelector(".fg-none");
     if (none) none.hidden = !(active && shown === 0);
     var live = panel.querySelector(".fg-live");
