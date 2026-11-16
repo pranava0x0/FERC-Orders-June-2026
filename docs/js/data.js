@@ -1176,7 +1176,7 @@ window.FERC_DATA = (function () {
       "On October 23, 2025, the Department of Energy invoked its rarely used § 403 authority to direct FERC to open a rulemaking on connecting large loads (data centers, AI, advanced manufacturing) to the interstate grid (Docket RM26-4-000), and asked for final action by April 30, 2026.",
       "Rather than run a multi-year rulemaking, FERC answered on June 18, 2026 with six tailored § 206 show cause orders, one to each RTO/ISO. Each makes a threshold finding that the region’s tariff may be unjust and unreasonable for lack of clear, consistent large-load rules, then puts the market on a 30/60-day clock to defend the status quo or file a fix across the same five reform categories.",
       "The through-line is cost causation made visible: the large load that triggers a network upgrade should bear its cost and spare ordinary ratepayers, with new transparency into how those costs are identified and allocated. The same morning, FERC issued Item E-2 (EL25-49-002), the order on rehearing that finalizes the rates and terms for the three new transmission services its PJM co-location proceeding created, the same services the six orders extend to every other region.",
-      "Where it stands on November 15, 2026: one respondent has filed. On Nov 13 ISO New England, NEPOOL and the region’s transmission owners filed large-load tariff revisions in ER27-484-000 and asked FERC to end their show cause case. Comments are due Dec 4. The other five proceedings are unchanged on the docket through Friday, Nov 13: responses are due Nov 16 (Nov 20 for SPP). PJM’s own planning matrix says it will make several §205 filings on or about Nov 16, and the PJM Transmission Owners and CAISO have said they will file by that date. MISO is filing in pieces in separate dockets and NYISO’s target is December. Morongo Transmission, a CAISO transmission owner, answered on Aug 12, and Valley Electric asked on Nov 13 to be dropped from CAISO’s order. FERC indexes weekend filings on Monday, so this page cannot yet show anything filed after Nov 13.",
+      "Where it stands on November 15, 2026: one respondent has filed a tariff it says answers its order. On Nov 13 ISO New England, NEPOOL and the region’s transmission owners filed large-load tariff revisions in ER27-484-000 and asked FERC to end their show cause case. Comments are due Dec 4. The other five proceedings are unchanged on the docket through Friday, Nov 13: responses are due Nov 16 (Nov 20 for SPP). PJM’s own planning matrix says it will make several §205 filings on or about Nov 16, and the PJM Transmission Owners and CAISO have said they will file by that date. MISO is filing in pieces in separate dockets and NYISO’s target is December. Morongo Transmission, a CAISO transmission owner, answered on Aug 12, and Valley Electric asked on Nov 13 to be dropped from CAISO’s order. FERC indexes weekend filings on Monday, so this page cannot yet show anything filed after Nov 13.",
       "The Timeline tab holds the dated record: the August 3 and August 9 answer periods, the August 14 abeyance orders, the August 17 partial co-location compliance, the August 21 governance comments and backstop protests, and everything since. Each entry cites the document it was read from.",
     ],
   };
@@ -1788,14 +1788,20 @@ window.FERC_DATA = (function () {
     {
       date: "Nov 16, 2026", iso: "2026-11-16", kind: "deadline", track: "sc6",
       title: "The rescheduled deadline, and the filing most respondents say they will make instead",
-      body: "The date the Aug 14 abeyance orders moved everything to. Each RTO or ISO and its transmission owners must now show cause why its tariff stays just and reasonable, or file the §206 changes that would fix it, except in SPP's docket, where the same obligation falls four days later on Nov 20. Almost nobody plans to file a response. The orders record what respondents told FERC they would do instead: PJM expects an FPA §205 filing in early-to-mid November, the Indicated PJM Transmission Owners no later than Nov 16, CAISO on Nov 16 after board and Western Energy Market governing-body approval targeted for Oct 28, and the CAISO participating transmission owners in a coordinated set the same day. Since then the PJM Transmission Owners (Oct 9) and ISO-NE with its transmission owners (Oct 9) have put Nov 16 §205 commitments in writing, CAISO's Board advanced its proposal on Oct 28, PJM set a Nov 5 member consultation on a suite of §205 filings, MISO has been filing pieces under §205 in separate dockets, and NYISO's stated target remains December. A §205 filing suspends that respondent's duty to respond and leaves the proceeding in abeyance pending further direction, so the likeliest outcome on this date is not six answers defending six tariffs but a wave of proposed tariff revisions, and a Commission deciding whether they resolve the findings enough to terminate the show cause orders. PJM's separate co-location compliance filing in EL25-49 is due the same day.",
-      src: ["abeyance0814", "e7", "elibrary0823", "appa1028", "pjmmc1105"],
+      body: "The date the Aug 14 abeyance orders moved everything to. Each RTO or ISO and its transmission owners must now show cause why its tariff stays just and reasonable, or file the §206 changes that would fix it, except in SPP's docket, where the same obligation falls four days later on Nov 20. Almost nobody plans to file a response. The orders record what respondents told FERC they would do instead: PJM expects an FPA §205 filing in early-to-mid November, the Indicated PJM Transmission Owners no later than Nov 16, CAISO on Nov 16 after board and Western Energy Market governing-body approval targeted for Oct 28, and the CAISO participating transmission owners in a coordinated set the same day. Since then the PJM Transmission Owners (Oct 9) and ISO-NE with its transmission owners (Oct 9) have put Nov 16 §205 commitments in writing, CAISO's Board advanced its proposal on Oct 28, PJM set a Nov 5 member consultation on a suite of §205 filings, MISO has been filing pieces under §205 in separate dockets, and NYISO's stated target remains December. ISO-NE went first: it filed on Nov 13 in a new docket, ER27-484, and asked FERC to end its case. A §205 filing suspends that respondent's duty to respond and leaves the proceeding in abeyance pending further direction. Expect proposed tariff revisions from most respondents on this date, with FERC then deciding whether they resolve the findings enough to terminate the show cause orders. PJM's separate co-location compliance filing in EL25-49 is due the same day.",
+      src: ["abeyance0814", "e7", "elibrary0823", "appa1028", "pjmmc1105", "isone1113"],
+    },
+    {
+      date: "Nov 18, 2026", iso: "2026-11-18", kind: "deadline", track: "gov",
+      title: "PJM’s Members Committee votes on the governance revisions",
+      body: "The agenda, posted Nov 11, says “The committee will be asked to approve/endorse the proposed OA, Tariff and RAA revisions as a package at this meeting.” Those revisions write the Members’ Sept 30 term sheet into PJM’s governing documents. A Members vote is advisory until the Board decides what to file at FERC. The same agenda lists a stakeholder discussion with the Board that covers “the new large load initiatives”.",
+      src: ["pjmmc1118"],
     },
     {
       date: "Nov 30, 2026", iso: "2026-11-30", kind: "deadline", track: "context",
       title: "Comments due on PJM’s backstop refiling and registry compliance filing",
-      body: "PJM moved for “an extended, 32-day comment period, such that comments and interventions would be due November 30, 2026,” on its ER27-330 refiling, and FERC's combined notice of Nov 2 set exactly that: 5 p.m. Eastern on Nov 30 for both the Oct 29 filing and PJM's Oct 30 errata in ER27-330-001. Six parties had intervened by Oct 30. FERC’s separate Nov 10 notice sets the same deadline for the recoded backstop filing in ER27-454-000 and the registry filing in ER26-3515-002.",
-      src: ["pjmrbp1029", "cnf1102", "elibrary1102", "cnf1110"],
+      body: "PJM moved for “an extended, 32-day comment period, such that comments and interventions would be due November 30, 2026,” on its ER27-330 refiling, and FERC's combined notice of Nov 2 set exactly that: 5 p.m. Eastern on Nov 30 for both the Oct 29 filing and PJM's Oct 30 errata in ER27-330-001. Six parties had intervened by Oct 30. FERC’s separate Nov 10 notice sets the same deadline for the recoded backstop filing in ER27-454-000 and the registry filing in ER26-3515-002. PJM moved on Nov 12 to withdraw the ER27-330 filing; the ER27-454 date is unaffected.",
+      src: ["pjmrbp1029", "cnf1102", "elibrary1102", "cnf1110", "pjmwd1112"],
     },
     {
       date: "Dec 4, 2026", iso: "2026-12-04", kind: "deadline", track: "sc6",
@@ -1839,16 +1845,16 @@ window.FERC_DATA = (function () {
 
   const toplines = [
     {
-      h: "Why § 206 show cause orders, not a generic NOPR",
+      h: "Why FERC chose § 206 show cause orders over a rulemaking",
       tier: "analysis",
       body: [
         "A notice-and-comment rulemaking on the ANOPR could run 2 to 5 years to a final rule and then compliance. FERC instead used the Federal Power Act’s § 206 “show cause” mechanism: it makes a threshold finding that the existing tariffs may be unjust and unreasonable for want of large-load provisions, and shifts the burden onto each RTO/ISO to defend the status quo or file a fix on a 60-day clock.",
-        "The move converts DOE’s April 30, 2026 “final action” deadline into concrete, near-term obligations across all six markets at once: speed-to-power by procedure, not just by policy. It also keeps FERC on firmer jurisdictional ground than a one-size rule, because § 206 lets the record build market-by-market.",
+        "The move converts DOE’s April 30, 2026 “final action” deadline into concrete, near-term obligations across all six markets at once. Speed-to-power is written into procedure. It also keeps FERC on firmer jurisdictional ground than a one-size rule, because § 206 lets the record build market-by-market.",
       ],
       src: ["fercPR", "aaf", "akin"],
     },
     {
-      h: "Tailored to each RTO rather than a uniform rule",
+      h: "Each order is tailored to its RTO",
       tier: "analysis",
       body: [
         "FERC expressly rejected a one-size-fits-all rule, citing differences in each operator’s market design, stakeholder composition, geography, and progress to date. Each order carries the same five-category template but lets each RTO define “large load” and set region-specific operational requirements.",
@@ -1861,7 +1867,7 @@ window.FERC_DATA = (function () {
       tier: "analysis",
       body: [
         "Running through all five categories is one worry: that the cost of connecting multi-hundred-MW loads lands on ordinary ratepayers. FERC’s answer is cost causation made visible: pro forma cost-recovery agreements so large loads bear network-upgrade risk, plus transparency into how upgrade costs are identified, allocated, and communicated.",
-        "Chairman Laura V. Swett framed it as doing both at once: investor certainty (protect existing deals) and consumer safeguards (guard against cost-shifting). The orders pair the speed mandate with that ratepayer guardrail rather than trading one for the other.",
+        "Chairman Laura V. Swett framed it as doing both at once: investor certainty (protect existing deals) and consumer safeguards (guard against cost-shifting). The orders pair the speed mandate with that ratepayer guardrail and ask for both.",
       ],
       src: ["fercPR", "utilitydive", "substack"],
     },
@@ -2011,7 +2017,7 @@ window.FERC_DATA = (function () {
       },
       commishPages: { swett: 68, rosner: 73, see: 78, chang: 83, lacerte: 92 },
       status: "Most mature: HILL / HILLGA",
-      unique: "SPP is the benchmark, not the laggard. E-9 adopts SPP’s own ‘High Impact Large Load’ (HILL) definition, commends its ‘High Impact Large Load Generation Assessment’ (HILLGA) and Conditional HILL Service, and leaves the Attachment Z1/AQ/AX study stack and Highway/Byway cost split intact. Even in this leading framework FERC finds only two real gaps: no requirement to evaluate alternative transmission technologies, and no pro forma terms to ‘memorialize ongoing operational requirements in a transmission service agreement.’ The remaining ask is a mechanism to credit large-load payments back through transmission owners’ revenue requirements.",
+      unique: "SPP is the benchmark for the other five. E-9 adopts SPP’s own ‘High Impact Large Load’ (HILL) definition, commends its ‘High Impact Large Load Generation Assessment’ (HILLGA) and Conditional HILL Service, and leaves the Attachment Z1/AQ/AX study stack and Highway/Byway cost split intact. Even in this leading framework FERC finds only two real gaps: no requirement to evaluate alternative transmission technologies, and no pro forma terms to ‘memorialize ongoing operational requirements in a transmission service agreement.’ The remaining ask is a mechanism to credit large-load payments back through transmission owners’ revenue requirements.",
       asks: [
         "A mechanism to credit large-load cost-recovery payments toward transmission owners’ revenue requirements (Ordering (B)(1)(b)).",
         "Evaluating alternative transmission technologies in all instances without a customer request, and, if conventional upgrades are chosen instead, justifying why (P 46).",
@@ -2134,7 +2140,7 @@ window.FERC_DATA = (function () {
       status: "Largely outside the tariff today",
       unique: "NYISO is the tariff-gap case. It runs load interconnection for projects over 10 MW at ‘115 kV’ and above largely off-tariff: the study details, deposits, and assumptions sit in non-tariff documents, and its tariff ‘lacks a definition of large load’ as a category. With co-location reforms not expected until ‘2027,’ E-12 converts that off-tariff practice into show-cause issues: a 60-to-90-day study expectation, a new large-load definition with readiness requirements to deter speculation, and the only order’s express path to request a 90-day abeyance.",
       asks: [
-        "How NYISO and its TOs will timely study transmission service: within 60–90 days of a request (P 44).",
+        "How NYISO and its TOs will timely study transmission service: within 60 to 90 days of a request (P 44).",
         "Why a pro forma cost-recovery agreement is not necessary to ensure just and reasonable rates, or else propose one (P 89).",
         "A definition of ‘large load’ as a new category, with readiness requirements to deter speculative requests (P 64).",
       ],
@@ -2722,7 +2728,7 @@ window.FERC_DATA = (function () {
     {
       wave: 3,
       track: "context",
-      title: "PJM answers two setbacks with refilings, not rehearing",
+      title: "PJM answers two setbacks by refiling",
       body: "After the Sept 29 backstop order and the Oct 9 large-load order, PJM's public posture is the same both times: review, then refile fast. Its Oct 22 consultation deck names Oct 29 for the new backstop filing and lists the fixes, including dropping the municipal and cooperative opt-out FERC said may be unduly discriminatory.",
       quotes: [
         { q: "PJM is reviewing the order and intends to work quickly to address the Commission’s remaining concerns.", src: "pjmil0930" },
@@ -3070,7 +3076,7 @@ window.FERC_DATA = (function () {
     issued: "2026-06-18",
     issuedLabel: "June 18, 2026",
     source: "natlaw",
-    basis: "All six §206 orders run one clock from the June 18, 2026 issuance. The periods are stated in each order’s ordering paragraphs; the calendar dates are derived and business-day-adjusted (National Law Review). Status is computed from today’s date, not from confirmed filings, so it tracks the schedule rather than who has filed.",
+    basis: "All six §206 orders run one clock from the June 18, 2026 issuance. The periods are stated in each order’s ordering paragraphs; the calendar dates are derived and business-day-adjusted (National Law Review). Status is computed from today’s date and the schedule. It does not show who has filed; the filings table below does.",
     steps: [
       { id: "intervene", label: "Motions to intervene", date: "2026-07-09", period: "21 days from issuance", cite: "Ordering ¶ (D) · Rule 214", desc: "Notices of intervention or motions to intervene in the six proceedings are due." },
       { id: "report", label: "Generation-adequacy report", date: "2026-07-20", dateNote: "30 days (Jul 18) rolled to the next business day", period: "30 days from issuance", cite: "Ordering ¶ (C)", desc: "Each RTO/ISO files an informational report on how it will ensure adequate generation to serve existing and new large loads." },

@@ -1868,7 +1868,7 @@
       find + chips + newest +
       '<h3 class="fg-sec">The six show cause dockets</h3>' + sc.map(group).join("") +
       '<h3 class="fg-sec">Related proceedings</h3>' + rel.map(group).join("") +
-      '<p class="fg-none" role="status" hidden>No document matches. Clear the filter to see every proceeding.</p>' +
+      '<p class="fg-none" hidden>No document matches. Clear the filter to see every proceeding.</p>' +
       figureChart(R) +
       '<p class="reader-entry"><a href="reading/">All documents in the reading room</a></p>';
   }
@@ -1876,8 +1876,8 @@
   var FQ_MIN = 2;          // a one-letter query matches nearly every document
   var filingTheme = "", filingQuery = "";
   // The theme chip and the typed query are one filter: a document shows when it passes both. Matching
-  // proceedings open so the documents are on the page; clearing the filter folds them back, except one
-  // the reader has a document open in. Quoted points load when a document opens, or for a theme, where
+  // proceedings open so the documents are on the page; clearing the filter folds back the ones it opened
+  // (marked data-auto), except one the reader has a document open in. Quoted points load when a document opens, or for a theme, where
   // the match set is small enough to fetch at once.
   function applyTheme(panel, key) {
     var R0 = window.FERC_RECORD;
@@ -1894,8 +1894,8 @@
         d.hidden = !on; if (on) n++;
       });
       g.hidden = n === 0; shown += n;
-      if (active && n) { g.open = true; if (filingTheme) loadPoints(g); }
-      else if (!active && g.open && !g.querySelector(".fdoc[open]")) g.open = false;
+      if (active && n) { if (!g.open) { g.setAttribute("data-auto", ""); g.open = true; } if (filingTheme) loadPoints(g); }
+      else if (!active && g.hasAttribute("data-auto")) { g.removeAttribute("data-auto"); if (!g.querySelector(".fdoc[open]")) g.open = false; }
     });
     panel.querySelectorAll(".fl, .fg-sec").forEach(function (el) { el.hidden = active; });
     var none = panel.querySelector(".fg-none");
@@ -1908,6 +1908,7 @@
     var panel = panelFor("filings");
     var bits = String(rest || "").split("/");
     if (bits[0] === "theme") {
+      filingQuery = "";                      // a theme address shows that theme alone, whatever was typed before
       applyTheme(panel, bits[1] || "");
       // An unknown theme shows everything, so the address says so too.
       filingHash = filingTheme ? "theme/" + filingTheme : "";
@@ -1928,9 +1929,13 @@
     var doc = bits[1] && document.getElementById("fd-" + bits[1]);
     // Older links named a filer, not a document: open that filer's newest document instead.
     if (!doc && bits[1]) doc = [].slice.call(grp.querySelectorAll(".fdoc")).filter(function (d) { return slugify(d.querySelector(".fd-who").textContent) === bits[1]; })[0] || null;
+    // A proceeding with one document: the link opens it, whether or not the proceeding was already open.
+    var solo = !doc && grp.querySelectorAll(".fdoc");
+    if (solo && solo.length === 1) doc = solo[0];
     // A document can move between proceedings (sc-miso to miso-irr): open the group that holds it.
     if (doc) { grp = doc.closest(".fgroup") || grp; grp.open = true; doc.open = true; filingHash = grp.id.slice(3) + "/" + doc.id.slice(3); }
     (doc || grp).scrollIntoView({ block: "start" });
+    focusSummary(doc || grp);
     loadPoints(grp, function () { if (doc) doc.scrollIntoView({ block: "start" }); });
     setCrumbs("filings", filingHash);
   }
@@ -1962,9 +1967,10 @@
       var isGroup = el === g, filtering = !!(filingTheme || filingQuery.length >= FQ_MIN);
       // A typed query can open every proceeding at once; its points wait for a document to open.
       if (!(isGroup && filtering && !filingTheme)) loadPoints(g);
-      // While a filter is on, the address is the theme (or the bare tab). Toggle events arrive after
-      // applyTheme opens matching groups, so a flag set around those opens would already be cleared here.
-      if (filtering) return;
+      // While a filter is on, proceedings are opened by applyTheme and the address stays the theme (or the
+      // bare tab). Toggle events arrive after applyTheme returns, so a flag set around those opens would
+      // already be cleared here. A document is only ever opened by the reader, so it always gets its address.
+      if (filtering && isGroup) return;
       // A proceeding with one document has nothing to choose between: open the document too.
       var only = isGroup ? g.querySelectorAll(".fdoc") : [];
       if (only.length === 1 && !only[0].open) { only[0].open = true; return; }
@@ -2116,14 +2122,22 @@
     return validTrack(m ? m[1] : "all");   // an unknown track id degrades to the unfiltered rail
   }
   // Order cards are addressed by docket without the sub-docket: "#dockets/EL26-67".
-  function docketKey(docket) { return String(docket || "").replace(/-\d{3}$/, ""); }
+  // "EL26-67-000" -> "EL26-67". Only a sub-docket suffix is dropped: "EL26-108" keeps its number.
+  function docketKey(docket) { return String(docket || "").replace(/^([A-Za-z]+\d+-\d+)-\d{3}$/, "$1"); }
   // Open one <details> and bring it under the tablist. Returns false when the id names nothing.
   function openAt(id) {
     var el = id && document.getElementById(id);
     if (!el) return false;
     if (el.tagName === "DETAILS") el.open = true;
     el.scrollIntoView({ block: "start" });
+    focusSummary(el);
     return true;
+  }
+  // A link that opens a card can sit in a panel the router has just hidden. Put focus on the opened card's
+  // summary so a keyboard or screen-reader user lands on what opened.
+  function focusSummary(el) {
+    var s = el && el.tagName === "DETAILS" && el.querySelector("summary");
+    if (s && s.focus) s.focus({ preventScroll: true });
   }
 
   // "#comments/summaries?q=x" -> { tab: "comments", rest: "summaries?q=x" }; "#news" -> { tab:"news", rest:"" }

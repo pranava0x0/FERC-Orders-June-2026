@@ -806,3 +806,16 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 - **Three tests failed after the Filings toggle refactor with no behavior change.** Root cause: **test** (regexes pinned to exact source lines; two quote-coverage needles named quotes that had left the track cards). Fix: tests match the current handler and the quotes now on the cards. Status: **Fixed**.
 - **Eight "X, not Y" sentences in older filing notes** (`perspectives.json`, `pjm-sections.json`, `new-sections.json`). Root cause: **content**. Rewritten as plain statements; the public-copy linter reports 0 warnings over 235 passages. Status: **Fixed**.
 - **Open (content):** four show cause rows (PJM, MISO, SPP, NYISO) say a filing is planned and none is verified. Expected until Nov 16 and Nov 20; `check-staleness` prompts for it.
+
+## 2026-11-15 (PR 33 review round 1)
+- **A typed filter left the address and trail on the previous document** (code). Opening a result did not write its URL, so a copied link named the wrong document. Fixed: a document the reader opens always gets its address; only proceedings opened by the filter are skipped. Checked in a browser.
+- **A theme link kept a typed query** (code). `#filings/theme/<k>` showed theme AND query under an address that named only the theme. Fixed: a theme address clears the query.
+- **Clearing a filter folded a proceeding the reader had opened by hand** (code). Fixed: only proceedings the filter opened (`data-auto`) fold back.
+- **A link to a one-document proceeding that was already open left its document closed** (code). Fixed in `routeFiling`.
+- **Deep links opened a card and left focus on `<body>`** (code, accessibility). Fixed: focus moves to the opened card's summary.
+- **`docketKey("EL26-108")` returned `EL26`** (code, latent). Fixed with a regression test.
+- **ITI's Nov 5 letter and the CEBA and Data Center Coalition letter were attributed to PJM** (data, found by Codex). The builder falls back to PJM for a `pjm-` slug with no `filer`. Fixed: every catalog entry names its author, with a test.
+- **The governance card pointed at Nov 18 and the timeline had no Nov 18 row** (data). Fixed, with a test that every track's next date is on the timeline.
+- **The Nov 16 and Nov 30 deadline entries predated the Nov 12 and Nov 13 filings** (data, found by walking every string). Fixed. Eight slogan-style lines on the overview rewritten.
+- **The `[hidden]` test passed on `.fgroup[hidden]` alone** (test). Tightened to the bare rule.
+

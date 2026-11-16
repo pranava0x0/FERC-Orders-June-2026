@@ -114,7 +114,7 @@ const GOALS = [
       target: Q("#fd-order-er26-3515-pjm-large-load .pts li") },
   ] },
   { id: "o", goal: "What ISO-NE filed Nov 13", candidates: [
-    { steps: [], target: Q(".filing-brief p") },
+    { steps: [], target: Q('.filing-brief a[href^="#filings/isone-large-load/"]') },
   ] },
   { id: "p", goal: "ISO-NE’s filing with a page citation", candidates: [
     { steps: [{ label: "ISO-NE filing", click: Q('.filing-brief a[href^="#filings/isone-large-load/"]') }],

@@ -133,9 +133,9 @@ test("the new entry points are wired: order cards, one timeline event, the clock
   assert.match(app, /openAt\("tl-" \+ at\[1\]\)/, "#timeline/at/<iso> opens that event");
   assert.match(app, /rest === "clock" \? openAt\("acc-clock"\)/, "#overview/clock opens the clock");
   assert.match(app, /id="fg-q"/, "the Filings tab has a document filter");
-  assert.match(app, /class="fg-none" role="status" hidden/, "an empty filter result says so");
+  assert.match(app, /class="fg-none" hidden>/, "an empty filter result says so, and leaves the count to the one live region");
   const css = read("docs", "css", "styles.css");
-  assert.match(css, /\[hidden\]\s*\{\s*display:\s*none/, "a hidden attribute still wins over display rules");
+  assert.match(css, /(^|\n)\[hidden\]\s*\{\s*display:\s*none\s*!important/, "the bare [hidden] rule wins over every display rule");
 });
 
 test("a filings row marked filed points at a reading that exists", () => {
@@ -143,4 +143,34 @@ test("a filings row marked filed points at a reading that exists", () => {
   const withReader = D.procedural.filings.rows.filter((r) => r.reader);
   assert.ok(withReader.length >= 13, `rows link to readings (${withReader.length})`);
   for (const r of withReader) assert.ok(existsSync(join(ROOT, "docs", "reading", r.reader, "index.html")), `${r.docket}/${r.step} links reading/${r.reader}/, which is missing`);
+});
+
+test("docketKey drops only a sub-docket suffix", () => {
+  const app = read("docs", "js", "app.js");
+  const src = app.match(/function docketKey\(docket\) \{[^\n]+\}/);
+  assert.ok(src, "docketKey is a one-line function in app.js");
+  const docketKey = new Function(src[0] + "; return docketKey;")();
+  assert.equal(docketKey("EL26-67-000"), "EL26-67");
+  assert.equal(docketKey("EL26-67"), "EL26-67");
+  assert.equal(docketKey("EL26-108"), "EL26-108", "a three-digit docket number is not a suffix");
+  assert.equal(docketKey("EL26-108-000"), "EL26-108");
+  assert.equal(docketKey("ER26-3515-002"), "ER26-3515");
+});
+
+test("a letter in the stakeholder record is attributed to whoever wrote it", () => {
+  const cat = JSON.parse(read("sources", "filings", "other-originals.json"));
+  const REC = loadWindow("record-data.js").FERC_RECORD;
+  assert.ok(cat.length >= 8, "the catalog is not empty");
+  cat.forEach((c) => assert.ok(c.filer, c.slug + " names its author; the builder's fallback would call it PJM"));
+  const docs = REC.groups.flatMap((g) => g.docs);
+  const by = (slug) => docs.find((d) => d.slug === slug);
+  assert.equal(by("pjm-20261106-iti-letter-to-pjm-board").filer, "Information Technology Industry Council");
+  assert.match(by("pjm-20261005-ceba-dcc-letter-to-pjm-board").filer, /Corporate Energy Buyers Association/);
+});
+
+test("every track's next date has a timeline entry", () => {
+  const D = loadWindow("data.js").FERC_DATA;
+  const tracks = Object.entries(D.tracks).filter(([, t]) => t.next && t.next.date);
+  assert.ok(tracks.length >= 3, "tracks carry next dates");
+  tracks.forEach(([id, t]) => assert.ok(D.timeline.some((e) => e.iso.slice(0, 10) === t.next.date), id + " points at " + t.next.date + ", which the timeline does not show"));
 });
