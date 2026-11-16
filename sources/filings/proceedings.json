@@ -71,7 +71,7 @@
     "EL26-71"
    ],
    "about": "The E-10 order asks whether CAISO’s tariff stays just and reasonable without large-load rules on the five reforms. Everything filed in EL26-71 since June 18: the 30-day report, abeyance requests and the order granting them, answers and comments.",
-   "status": null,
+   "status": "Valley Electric asked on Nov 13 to be dropped from the order. CAISO says it will file by Nov 16.",
    "link": {
     "relation": "responds",
     "anchors": [
@@ -91,7 +91,7 @@
     "EL26-72"
    ],
    "about": "The E-11 order asks whether ISO-NE’s tariff stays just and reasonable without large-load rules on the five reforms. Everything filed in EL26-72 since June 18: the 30-day report, abeyance requests and the order granting them, answers and comments.",
-   "status": null,
+   "status": "ISO-NE answered on Nov 13 with a section 205 filing in a separate docket, ER27-484. Nothing new is on this sheet through Nov 15.",
    "link": {
     "relation": "responds",
     "anchors": [
@@ -171,7 +171,7 @@
    "short": "PJM Large Load registry",
    "docket": "ER26-3515",
    "about": "PJM asked FERC to define a Large Load, keep a registry of them, and create a service that would curtail such loads first in a supply emergency. FERC kept the definition and the registry and rejected the rest.",
-   "status": "PJM filed compliance and Ohio requested rehearing on Nov 9. FERC set comments on compliance for Nov 30 at 5 p.m. Eastern.",
+   "status": "PJM filed compliance on Nov 9. Ohio’s consumer advocate and the PJM Industrial Customer Coalition each asked FERC that day to revisit the order. Comments on compliance are due Nov 30 at 5 p.m. Eastern.",
    "kind": "related",
    "match": [
     "ER26-3515"
@@ -190,7 +190,7 @@
    "short": "PJM backstop auction",
    "docket": "ER26-3380-000",
    "about": "PJM, the grid operator for 13 states and D.C., proposed a backstop purchase of new power plants to cover a projected supply shortfall as large loads grow. On Sep 29 FERC accepted it for filing, suspended it to Feb 28, 2027 subject to refund, and set three cost issues for a paper hearing.",
-   "status": "FERC suspended the procurement on Sep 29. PJM filed amendments Oct 29 and refiled the same proposal Nov 9 under the §205 code in ER27-454-000. Comments are due Nov 30 at 5 p.m. Eastern.",
+   "status": "FERC suspended the procurement on Sep 29. PJM filed amendments Oct 29, refiled them Nov 9 under the §205 code in ER27-454-000, and moved on Nov 12 to withdraw the Oct 29 filing. Comments are due Nov 30 at 5 p.m. Eastern.",
    "kind": "related",
    "match": [
     "ER26-3380-000",
@@ -230,7 +230,7 @@
    "short": "Exelon complaint",
    "docket": "EL27-11-000",
    "about": "Exelon, whose utilities serve more than 10.7 million customers in PJM, asks FERC to run PJM's capacity auction two months before each delivery year instead of three years ahead.",
-   "status": "Filed Nov 3, 2026. Exelon asks for an order by Jan 31, 2027; FERC had not acted as of Nov 9.",
+   "status": "Filed Nov 3, 2026. On Nov 13 FERC gave PJM until Dec 21 to answer; comments and interventions are due the same day. Exelon asks for an order by Jan 31, 2027.",
    "kind": "related",
    "match": [
     "EL27-11"
@@ -249,7 +249,7 @@
    "short": "MISO LARS",
    "docket": "ER27-25-000",
    "about": "MISO, the grid operator for 15 states in the Midwest and South, wants to study a new load of 200 MW or more together with the power plant built to serve it, in about 120 days and outside its multi-year generator queue.",
-   "status": "MISO answered protests on Nov 9 and asked FERC to accept LARS. The requested effective date is Dec 2.",
+   "status": "MISO answered protests on Nov 9 and asked FERC to accept LARS. Six consumer advocates asked on Nov 12 for conditions on acceptance. The requested effective date is Dec 2.",
    "kind": "related",
    "match": [
     "ER27-25"
@@ -386,13 +386,32 @@
     "PJM stakeholder record"
    ],
    "about": "Documents from PJM’s own stakeholder process as it prepared its show cause response: Members Committee agendas, the legal report and a letter from large customers to the PJM Board.",
-   "status": "PJM called a special Members Committee for Nov 5, 2026.",
+   "status": "PJM consulted members on Nov 5, 2026. Its matrix for that meeting says it will file under section 205 on or about Nov 16.",
    "link": {
     "relation": "context",
     "anchors": [
      "e-7-show-cause"
     ],
     "text": "The stakeholder process PJM ran before deciding what to file in response to E-7 by Nov 16."
+   }
+  },
+  {
+   "id": "isone-large-load",
+   "kind": "related",
+   "title": "ISO-NE large-load tariff revisions",
+   "short": "ISO-NE large loads",
+   "docket": "ER27-484-000",
+   "match": [
+    "ER27-484"
+   ],
+   "about": "ISO New England, the NEPOOL Participants Committee and the region’s transmission owners filed tariff rules for loads of 50 MW or more at one site: firm, interim and non-firm service, a study process, and a cost recovery agreement that NEPOOL did not support. They ask FERC to end the E-11 show cause case.",
+   "status": "Filed Nov 13, 2026. Comments are due Dec 4 at 5 p.m. Eastern; ISO-NE asked for Dec 7 and FERC has not ruled on that.",
+   "link": {
+    "relation": "responds",
+    "anchors": [
+     "e-11-show-cause"
+    ],
+    "text": "The section 205 filing ISO-NE and its transmission owners promised on Oct 9 in answer to E-11. It was made in a new docket, ER27-484, and asks FERC to terminate the show cause proceeding."
    }
   },
   {

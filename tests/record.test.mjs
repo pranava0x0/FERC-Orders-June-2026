@@ -95,5 +95,52 @@ test("a Filings deep link is settled before activate() rewrites the hash", () =>
 test("routing to a proceeding clears a theme filter left by an earlier route", () => {
   const app = read("docs", "js", "app.js");
   const fn = app.slice(app.indexOf("function routeFiling(rest) {"), app.indexOf("function wireFilings() {"));
-  assert.match(fn, /if \(filingTheme\) applyTheme\(panel, ""\)/, "a proceeding route must apply the unfiltered state");
+  assert.match(fn, /if \(filingTheme \|\| filingQuery\) \{ filingQuery = ""; applyTheme\(panel, ""\); \}/, "a proceeding route must apply the unfiltered state, typed query included");
+});
+
+/* ---- Direct routes to a document, an order card and a timeline event (2026-11-15) --------------- */
+
+import vm from "node:vm";
+const loadWindow = (file) => {
+  const ctx = { window: {} };
+  vm.createContext(ctx);
+  vm.runInContext(read("docs", "js", file), ctx, { filename: file });
+  return ctx.window;
+};
+
+test("every timeline and spotlight `doc` names a real proceeding and document", () => {
+  const R = loadWindow("record-data.js").FERC_RECORD;
+  const D = loadWindow("data.js").FERC_DATA;
+  const known = new Set();
+  for (const g of R.groups) for (const d of g.docs) known.add(g.id + "/" + d.slug);
+  assert.ok(known.size >= 170, `record-data lists documents (${known.size})`);
+  const linked = D.timeline.filter((e) => e.doc);
+  // Non-empty first: a loop over nothing would pass while the Now tab linked nowhere.
+  assert.ok(linked.length >= 8, `timeline events carry document links (${linked.length} >= 8)`);
+  for (const e of linked) assert.ok(known.has(e.doc), `timeline ${e.iso} links ${e.doc}, which is not a document in a proceeding`);
+  const spot = D.meta.spotlight.links.filter((l) => l.doc);
+  assert.ok(spot.length >= 1, "the spotlight links at least one document directly");
+  for (const l of spot) assert.ok(known.has(l.group + "/" + l.doc), `spotlight link ${l.group}/${l.doc} is not a document in that proceeding`);
+});
+
+test("the new entry points are wired: order cards, one timeline event, the clock, the document filter", () => {
+  const app = read("docs", "js", "app.js");
+  const D = loadWindow("data.js").FERC_DATA;
+  assert.ok(D.dockets.length === 6, "six order cards");
+  for (const d of D.dockets) assert.match(d.docket.replace(/-\d{3}$/, ""), /^EL26-\d{2}$/, `${d.docket} yields a card id`);
+  assert.match(app, /id="dk-' \+ esc\(docketKey\(/, "each order card carries an id made from its docket");
+  assert.match(app, /openAt\("dk-" \+ docketKey\(rest\)\)/, "#dockets/<docket> opens that card");
+  assert.match(app, /openAt\("tl-" \+ at\[1\]\)/, "#timeline/at/<iso> opens that event");
+  assert.match(app, /rest === "clock" \? openAt\("acc-clock"\)/, "#overview/clock opens the clock");
+  assert.match(app, /id="fg-q"/, "the Filings tab has a document filter");
+  assert.match(app, /class="fg-none" role="status" hidden/, "an empty filter result says so");
+  const css = read("docs", "css", "styles.css");
+  assert.match(css, /\[hidden\]\s*\{\s*display:\s*none/, "a hidden attribute still wins over display rules");
+});
+
+test("a filings row marked filed points at a reading that exists", () => {
+  const D = loadWindow("data.js").FERC_DATA;
+  const withReader = D.procedural.filings.rows.filter((r) => r.reader);
+  assert.ok(withReader.length >= 13, `rows link to readings (${withReader.length})`);
+  for (const r of withReader) assert.ok(existsSync(join(ROOT, "docs", "reading", r.reader, "index.html")), `${r.docket}/${r.step} links reading/${r.reader}/, which is missing`);
 });

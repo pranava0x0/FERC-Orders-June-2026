@@ -63,6 +63,7 @@ const GOALS = [
   ] },
   { id: "c", goal: "Filing matrix (procedural board, what has been filed)", candidates: [
     { steps: [{ label: "open 'The 60-day clock'", open: "__accWith('#fm-h')" }], target: Q("#fm-h") },
+    { steps: [{ label: "masthead deadline chip", click: Q("#masthead-fresh a") }], target: Q("#fm-h"), note: "chip opens the clock" },
   ] },
   { id: "d", goal: "Commissioner June 18 statements", candidates: [
     { steps: [{ label: "tab Commissioners", click: Q("#tab-commissioners") }], target: Q(".commish-list .commish-rowcard") },
@@ -77,6 +78,8 @@ const GOALS = [
   { id: "f", goal: "EL26-67 order PDF link (Dockets tab)", candidates: [
     { steps: [{ label: "tab Dockets", click: Q("#tab-dockets") }, { label: "open the EL26-67 card", open: "__docket('EL26-67')" }],
       target: `(__docket('EL26-67')||document).querySelector('.order-link')` },
+    { steps: [{ label: "PJM row in the operator table", click: Q('.ot a[href="#dockets/EL26-67"]') }],
+      target: `(__docket('EL26-67')||document).querySelector('.order-link')`, note: "operator link opens the card" },
   ] },
   { id: "g", goal: "Comments by-issue policy map", candidates: [
     { steps: [{ label: "tab Comments", click: Q("#tab-comments") }, { label: "sub-tab By issue", click: Q("#cmsub-issue") }], target: Q("#cmsec-issue .cm-pm-landing") },
@@ -110,12 +113,12 @@ const GOALS = [
     { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open PJM Large Load registry", open: Q("#fg-pjm-large-load-definition") }, { label: "open FERC's order", open: Q("#fd-order-er26-3515-pjm-large-load") }],
       target: Q("#fd-order-er26-3515-pjm-large-load .pts li") },
   ] },
-  { id: "o", goal: "What PJM filed Nov 9", candidates: [
+  { id: "o", goal: "What ISO-NE filed Nov 13", candidates: [
     { steps: [], target: Q(".filing-brief p") },
   ] },
-  { id: "p", goal: "PJM’s compliance filing with a page citation", candidates: [
-    { steps: [{ label: "PJM filing", click: Q('.filing-brief a[href^="#filings/"]') }, { label: "open the compliance filing", open: Q("#fd-compliance-er26-3515-pjm") }],
-      target: Q("#fd-compliance-er26-3515-pjm .pq-pg") },
+  { id: "p", goal: "ISO-NE’s filing with a page citation", candidates: [
+    { steps: [{ label: "ISO-NE filing", click: Q('.filing-brief a[href^="#filings/isone-large-load/"]') }],
+      target: Q("#fd-filing-er27-484-isone-large-loads .pq-pg"), note: "spotlight link opens the document" },
   ] },
   { id: "r", goal: "How a filing connects to the June orders (the order directive it bears on)", candidates: [
     { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open MISO LARS", open: Q("#fg-miso-lars") }, { label: "open MISO's LARS filing", open: Q("#fd-filing-er27-25-miso-lars") }],
@@ -127,9 +130,21 @@ const GOALS = [
   { id: "t", goal: "What the orders require, by reform and operator", candidates: [
     { steps: [{ label: "tab Orders", click: Q("#tab-dockets") }], target: Q(".om-chips a") },
   ] },
-  { id: "q", goal: "Why PJM refiled the backstop", candidates: [
-    { steps: [{ label: "Backstop refiling", click: Q('.filing-brief a[href^="#filings/pjm-backstop"]') }, { label: "open the refiling", open: Q("#fd-refiling-er27-454-pjm-backstop") }],
-      target: Q("#fd-refiling-er27-454-pjm-backstop .fd-sum") },
+  { id: "q", goal: "What Valley Electric asked FERC for", candidates: [
+    { steps: [{ label: "Valley Electric motion", click: Q('.filing-brief a[href^="#filings/sc-caiso/"]') }],
+      target: Q("#fd-motion-el26-71-valley-electric-rescind .fd-sum") },
+  ] },
+  { id: "u", goal: "What one filer said, found by name (Google)", candidates: [
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "tap the document filter", click: Q("#fg-q") }, { label: "type 'google'", type: Q("#fg-q"), text: "google" }],
+      target: Q(".fdoc:not([hidden]) .fd-tease"), note: "summary shows on the closed row" },
+  ] },
+  { id: "v", goal: "The newest document, with its first cited point", candidates: [
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "first row of Newest documents", click: Q(".fl-list a") }],
+      target: Q(".fdoc[open] .pts li") },
+  ] },
+  { id: "w", goal: "A proceeding with one document (Duke NITSA), read", candidates: [
+    { steps: [{ label: "tab Filings", click: Q("#tab-filings") }, { label: "open the proceeding", open: Q("#fg-duke-nitsa") }],
+      target: Q("#fg-duke-nitsa .fdoc[open] .fd-sum"), note: "its only document opens with it" },
   ] },
 ];
 

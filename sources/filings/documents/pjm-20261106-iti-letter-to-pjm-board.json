@@ -1,0 +1,58 @@
+{
+  "slug": "pjm-20261106-iti-letter-to-pjm-board",
+  "summary": "The Information Technology Industry Council (ITI) writes the PJM Board on November 5, 2026, commending PJM's work on the show cause order. It states four principles and supports FERC's directives on non-firm service, cost recovery agreements, coordinated study of proximate generation and load, and grid-enhancing technologies.",
+  "ask": "Continue the reforms, giving proximate generation equal consideration with other forms of load flexibility.",
+  "points": [
+    {
+      "point": "ITI commends PJM's work on the show cause order and urges it to continue ambitious reforms.",
+      "quote": "writes to commend PJM on its work to address the Federal Energy Regulatory Commission’s (FERC) Large Load Show Cause Order, and to encourage PJM to continue to implement ambitious reforms",
+      "pg": 1
+    },
+    {
+      "point": "ITI supports defining non-firm service eligibility by performance capability.",
+      "quote": "ITI supports FERC’s directives to define non-firm service eligibility with reference to performance capability",
+      "pg": 3
+    },
+    {
+      "point": "ITI calls SPP's CHILLS framework a useful example for non-firm service.",
+      "quote": "SPP’s CHILLS framework offers a useful example",
+      "pg": 4
+    },
+    {
+      "point": "ITI says cost recovery agreements should reflect the lesser system impacts of non-firm customers, to the extent avoided costs are shown.",
+      "quote": "Cost Recovery Agreements for large loads must account for non-firm service customers’ lesser system impacts, including through lower minimum contributions and financial security to the extent supported by demonstrated avoided costs and obligations.",
+      "pg": 4,
+      "pgEnd": 5
+    },
+    {
+      "point": "ITI supports FERC's directive for a coordinated study process for proximate generation, storage and load.",
+      "quote": "ITI therefore supports FERC’s directive to provide a coordinated study process for electrically proximate generation, storage, and load.",
+      "pg": 5
+    },
+    {
+      "point": "ITI supports requiring evaluation of grid-enhancing technologies in transmission service studies.",
+      "quote": "ITI therefore supports FERC’s directive to require evaluation of GETs in transmission service studies and demonstration of cost-efficacy when network upgrades are selected over GETs",
+      "pg": 6
+    },
+    {
+      "point": "ITI asks PJM to give proximate generation equal consideration with other forms of load flexibility.",
+      "quote": "PJM should give equal consideration to proximate generation as to other forms of load flexibility",
+      "pg": 7
+    }
+  ],
+  "throughLine": {
+    "relation": "context",
+    "anchors": [
+      "e-7-service-for-flexible-loads",
+      "e-7-application-study-process",
+      "e-7-alternative-transmission",
+      "e-7-cost-recovery-agreement"
+    ],
+    "text": "Sent to the PJM Board through the Members Committee Secretary, and not filed at FERC or in EL26-67. It reacts to PJM's stakeholder work on the E-7 show cause order."
+  },
+  "themes": [
+    "flex",
+    "study",
+    "cost"
+  ]
+}

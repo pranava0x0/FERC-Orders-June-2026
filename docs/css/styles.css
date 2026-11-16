@@ -215,8 +215,8 @@ a:hover { color: var(--accent-ink); }
 @media (pointer: coarse) { .jump-btn { min-height: 44px; } }
 .jump-anchor { display: block; height: 0; }
 /* jump targets land below the sticky tablist (46px, or two rows on phones) */
-#stand-h, #proc-h, #fm-h, #commish-h, .tl-item, .fgroup { scroll-margin-top: 60px; }
-@media (max-width: 1060px) { #stand-h, #proc-h, #fm-h, #commish-h, .tl-item, .fgroup { scroll-margin-top: 104px; } }
+#stand-h, #proc-h, #fm-h, #commish-h, .tl-item, .fgroup, .fdoc, .docket, #acc-clock { scroll-margin-top: 60px; }
+@media (max-width: 1060px) { #stand-h, #proc-h, #fm-h, #commish-h, .tl-item, .fgroup, .fdoc, .docket, #acc-clock { scroll-margin-top: 104px; } }
 .tl-item:focus { outline: 2px solid var(--accent); outline-offset: 4px; }
 .tab {
   appearance: none; border: 1px solid transparent; border-bottom: none; background: transparent;
@@ -1297,6 +1297,13 @@ a.trackpill:hover { border-color: var(--accent); color: var(--accent-ink); }
 
 /* Filings: proceedings → documents */
 .th-chips { margin: 4px 0 6px; }
+/* Ten theme chips wrap to a full screen at phone width and bury the documents. One swipeable row there;
+   the right edge fades so the row reads as continuing. */
+@media (max-width: 640px) {
+  .th-chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding: 2px 24px 2px 0; -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); }
+  .th-chips::-webkit-scrollbar { display: none; }
+  .th-chips .who-chip { flex: 0 0 auto; }
+}
 .fg-sec { font-size: 15px; font-weight: 700; color: var(--text-secondary); margin: 22px 0 6px; }
 .fgroup { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; margin: 6px 0; }
 .fgroup[hidden] { display: none; }
@@ -1406,3 +1413,27 @@ details.tl-item .srcs { padding: 0 0 10px 128px; }
 @media (max-width: 640px) { .masthead-sub { display: none; } .masthead-inner { padding-block: 8px; } }
 
 @media (pointer: coarse) { .ot a, .now-more a, .mh-next, .pq-pg, .now-latest a, .crumbs a { display: inline-flex; align-items: center; min-height: 44px; } }
+
+/* Filings: find box, newest documents, and the summary line on a closed document row */
+.fg-find { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 8px 0 6px; }
+.fg-find label { font-size: 13.5px; font-weight: 600; color: var(--text-secondary); }
+.fg-find input { flex: 1 1 220px; max-width: 420px; min-width: 0; font: inherit; font-size: 15px; padding: 7px 10px; border: 1px solid var(--rule-strong); border-radius: 6px; background: var(--surface); color: var(--ink); }
+.fg-find input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+@media (pointer: coarse) { .fg-find input { min-height: 44px; font-size: 16px; } }
+.fl .fg-sec { margin-top: 14px; }
+.fl-list { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 28px; margin: 0; }
+.fl-list a { display: grid; grid-template-columns: 52px minmax(0, 1fr); column-gap: 10px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--rule); text-decoration: none; color: var(--ink); font-size: 14.5px; }
+.fl-date { color: var(--text-muted); font-size: 13px; grid-row: span 2; }
+.fl-who { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fl-what { color: var(--text-muted); font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fl-list a:hover .fl-who, .fl-list a:focus-visible .fl-who { color: var(--accent-ink); text-decoration: underline; }
+.fl-list a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 767px) { .fl-list { grid-template-columns: minmax(0, 1fr); } .fl-list li:nth-child(n+5) { display: none; } }
+@media (pointer: coarse) { .fl-list a { min-height: 44px; } }
+.fd-tease { grid-column: 2; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-secondary); font-size: 13.5px; }
+.fdoc[open] > summary .fd-tease { display: none; }
+@media (max-width: 640px) { .fd-tease { grid-column: 1; white-space: normal; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; } }
+.fg-none { margin: 14px 0; color: var(--text-secondary); }
+.tl-doc { padding: 0 0 6px 128px; font-size: 14.5px; }
+@media (max-width: 640px) { .tl-doc { padding-left: 0; } }
+@media (pointer: coarse) { .tl-doc a { display: inline-flex; align-items: center; min-height: 44px; } }

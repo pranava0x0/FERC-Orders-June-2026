@@ -1,0 +1,31 @@
+{
+  "slug": "notice-el27-11-comment-period",
+  "summary": "FERC's Deputy Secretary grants PJM's request for more time to answer the Exelon complaint in EL27-11. The answer, comments and interventions are now due December 21, 2026. The notice does not mention the show cause orders.",
+  "ask": "No request. The notice sets December 21, 2026 as the deadline to answer the complaint and to file comments and interventions.",
+  "points": [
+    {
+      "point": "PJM asked for a four-week extension, to December 21, 2026, to answer the Exelon complaint, and opposed fast-track processing.",
+      "quote": "On November 4, 2026, PJM Interconnection, L.L.C. (PJM) filed a preliminary answer opposing fast-track processing and a motion requesting a four-week extension of time, until December 21, 2026, to answer the complaint filed by Exelon Corporation (Exelon)",
+      "pg": 1
+    },
+    {
+      "point": "PJM says it wants to include the outcome of its Board's November 17, 2026 deliberations in its response.",
+      "quote": "PJM argues that there is good cause to grant the extension because the additional time will permit PJM to incorporate into its response the outcome of the deliberations by the PJM Board, which will meet on November 17, 2026.",
+      "pg": 1
+    },
+    {
+      "point": "FERC grants the extension and sets December 21, 2026 as the deadline.",
+      "quote": "notice is hereby given that PJM’s motion for extension of time is granted and the deadline to file the answer to Exelon’s complaint, comments, and interventions is December 21, 2026.",
+      "pg": 1
+    }
+  ],
+  "throughLine": {
+    "relation": "context",
+    "anchors": [],
+    "text": "A procedural notice in the Exelon complaint docket on PJM's capacity auction schedule. It does not cite the show cause orders and sets only a deadline."
+  },
+  "themes": [
+    "adequacy",
+    "procedure"
+  ]
+}

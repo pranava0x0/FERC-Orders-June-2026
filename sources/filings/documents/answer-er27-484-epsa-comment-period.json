@@ -1,0 +1,41 @@
+{
+  "slug": "answer-er27-484-epsa-comment-period",
+  "summary": "The Electric Power Supply Association (EPSA) supports ISO-NE's request to extend the comment period on its November 13, 2026 large load tariff filing. EPSA says the extra time would let parties review the filing alongside other large load filings due November 16.",
+  "ask": "Extend the comment deadline in ER27-484 to December 7, 2026.",
+  "points": [
+    {
+      "point": "EPSA asks FERC to extend the comment deadline to December 7, 2026, as ISO-NE requested.",
+      "quote": "EPSA respectfully requests that the Commission extend the deadline for submitting comments to December 7, 2026, as requested by ISO-NE.",
+      "pg": 2
+    },
+    {
+      "point": "EPSA says the extension would line up this comment period with other large load filings expected November 16.",
+      "quote": "The short extension would have the added benefit of aligning the comment period with the other expected large loads filings that will be filed with the Commission on November 16",
+      "pg": 2
+    },
+    {
+      "point": "EPSA says a 24-day comment period would give parties ample time to review the filing and develop comments.",
+      "quote": "an extension of the comment period in the instant docket to 24 days, or until December 7, 2026, would help to ensure that interested parties have ample time to review and develop comments on the filing",
+      "pg": 2
+    }
+  ],
+  "throughLine": {
+    "relation": "procedural",
+    "anchors": [
+      "e-11-show-cause"
+    ],
+    "text": "A procedural answer about the comment period on the ISO-NE section 205 filing. It does not cite the E-11 show cause order; the link is that the filing was made in response to it."
+  },
+  "themes": [
+    "procedure"
+  ],
+  "figures": [
+    {
+      "label": "Comment period requested",
+      "value": 24,
+      "unit": "days",
+      "quote": "an extension of the comment period in the instant docket to 24 days",
+      "pg": 2
+    }
+  ]
+}
