@@ -798,5 +798,11 @@ Format: date · area · description · root cause (code/test/data/source) · sta
 - Proceeding links: SPP CHILLS mislabeled as answering E-9; MISO LARS tied to the 30-day report; backstop described as a
   response to E-7 (content bugs, regulatory review), Fixed 29ea820.
 - `--sweep` listed dockets without a reconciliation baseline (code bug, Codex), Fixed.
-- Open: `refresh-reading-room.sh --check` fails in `index-filing-text.py` on PJM's Nov 6 ITI letter originals (pre-existing on main).
-- Open: `refresh.sh --sweep` covers only dockets with a reconciliation baseline; EL25-49-000, ER27-25-000, ER27-454-000 and EL27-11-000 need baselines in sources/filings/sheet-baseline.json before the sweep sees them (round-2 review).
+- Fixed 2026-11-15: `refresh-reading-room.sh --check` failed in `index-filing-text.py` on PJM's Nov 6 ITI letter originals. Root cause: data (two originals on disk with no catalog row). Both are cataloged in `sources/filings/other-originals.json` with readings; the check exits 0.
+- Fixed 2026-11-15: `refresh.sh --sweep` covered only the 17 dockets with a reconciliation baseline. Fourteen related dockets (EL25-49-000/-002, EL27-11, ER27-25, ER27-454, ER27-330-000/-001, ER27-484, ER26-3515-000/-001/-002, AD26-7, EL26-108, ER26-3380-001) were listed in full and added; the reconciler matches 31.
+
+## 2026-11-15 (refresh + interaction-depth pass)
+- **Phone, Filings tab:** ten theme chips wrapped to a full 375px screen, so a typed filter's result and the Newest list sat below the fold. Root cause: **code** (`.th-chips` wrapped at every width). Fix: one swipeable row under 640px with a fade at the right edge. Status: **Fixed**, checked in screenshots at 375 and 768.
+- **Three tests failed after the Filings toggle refactor with no behavior change.** Root cause: **test** (regexes pinned to exact source lines; two quote-coverage needles named quotes that had left the track cards). Fix: tests match the current handler and the quotes now on the cards. Status: **Fixed**.
+- **Eight "X, not Y" sentences in older filing notes** (`perspectives.json`, `pjm-sections.json`, `new-sections.json`). Root cause: **content**. Rewritten as plain statements; the public-copy linter reports 0 warnings over 235 passages. Status: **Fixed**.
+- **Open (content):** four show cause rows (PJM, MISO, SPP, NYISO) say a filing is planned and none is verified. Expected until Nov 16 and Nov 20; `check-staleness` prompts for it.

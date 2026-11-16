@@ -19,13 +19,20 @@ Driven by real dates, not a calendar interval:
 | ~~2026-10-29~~ | ~~PJM's backstop refiling~~. Filed as a NEW docket, **ER27-330-000** (20261029-5227, read; errata ER27-330-001 Oct 30). Seven rehearing/clarification requests of the Sep 29 order sit in **ER26-3380-001**. |
 | ~~2026-11-05~~ | ~~PJM special MC~~ on "a suite of section 205 filings". No minutes or materials found as of Nov 9; the backstop spacing would put PJM's filings on or after Nov 12. |
 | ~~2026-11-09~~ | PJM filed registry compliance in ER26-3515-002 (20261109-5217); Ohio sought rehearing in -001 (20261109-5209). PJM separately recoded its Oct 29 backstop proposal as a §205 filing in ER27-454-000 (20261109-5216). |
-| 2026-11-12 | NEPOOL vote on ISO-NE's large-load filing (search snippet only, not confirmed). |
+| ~~2026-11-12~~ | ~~NEPOOL vote on ISO-NE's large-load filing~~. ISO-NE filed Nov 13 in a NEW docket, **ER27-484-000** (20261113-5007, read): NEPOOL supported everything except the Large Load Cost Recovery Agreement. Nothing was added to the EL26-72 sheet itself. |
+| 2026-11-18 | PJM Members Committee: vote on the governance OA, Tariff and RAA revisions "as a package" (agenda as of Nov 11, read). The PJM Board meets Nov 17 on the Exelon complaint. |
+| 2026-12-04 | ER27-484 comments due 5 pm ET (combined notice 20261113-3088, read). ISO-NE asked for Dec 7 and EPSA supports it; FERC has not ruled. |
+| 2026-12-21 | EL27-11 (Exelon complaint): PJM's answer, comments and interventions (notice 20261113-3006, read). |
 | 2026-11-30 | ER26-3515-002 and ER27-454-000 comments due 5 pm ET (Nov 10 notice, 20261110-3030). ER27-330 comments and interventions due 5 pm ET (FERC's Nov 2 combined notice, 20261102-3050, read; also covers the -001 errata). Also watch for answers to the ER26-3380-001 rehearing requests and a FERC rehearing notice. |
 | 2027-01-11 | EL26-108 backstop paper-hearing initial briefs (reply briefs Jan 26), per FERC's Oct 23 notice. |
 | open | PJM governance: the Board has not said what it will file after the Members' Sept 30 vote. Redlines were posted Oct 13 and walked through Oct 16. Watch AD26-7 and PJM's Members Committee postings. |
-| **2026-11-16** | **The reset deadline.** Show-cause responses in five of the six §206 dockets, AND PJM's and the PJM TOs' full co-location compliance filing in EL25-49. PJM, CAISO and others have said they will instead make FPA §205 filings by this date, which suspends the obligation to respond. |
+| **2026-11-16** | **The reset deadline (first check after it: look for NEW ER27 dockets, not only the EL26 sheets).** Show-cause responses in five of the six §206 dockets, AND PJM's and the PJM TOs' full co-location compliance filing in EL25-49. PJM, CAISO and others have said they will instead make FPA §205 filings by this date, which suspends the obligation to respond. |
 | 2026-11-20 | SPP's show-cause response (EL26-68 got 95 days rather than 90). |
 | 2026-12-16 | Answers to the show-cause responses (SPP: 2026-12-21). |
+
+**Resolved 2026-11-15:** ISO-NE's §205 filing (Nov 13), PJM's motion to withdraw ER27-330 (Nov 12), the EL27-11 extension (Nov 13). As of Friday Nov 13 no §205 large-load filing by PJM, the PJM TOs, CAISO, MISO, SPP or NYISO was indexed.
+
+**Verification queue (found Nov 15, not shipped; each needs its original):** the Market Monitor's Nov 12 statement with a "$29.4 billion" figure (eLibrary ZZ27-4, 20261112-5225, or Monitoring Analytics' own PDF); RTO Insider's NEPOOL and NYISO Management Committee pieces (paywalled); Latitude Media's analysis of SPP CHILLS.
 
 **Resolved 2026-10-19:** Oct 16 (governance page-turn held; redlines posted Oct 13). Oct 9 brought the one FERC order of the window, in ER26-3515, which was never on this table because PJM's Aug 13 IRAS filing was never tracked: the lesson is below under gotchas.
 
@@ -409,3 +416,12 @@ indexing** to put it in the priority crawl queue (quota is roughly 10 per day).
   positions: NESCOE's Aug 7 answer in EL26-72 supports ISO-NE's abeyance motion outright; American
   Municipal Power's Aug 7 answer in EL26-70 asks FERC to deny MISO's. The procedural title never says
   which; only the PDF body does. Download and read the actual filing before characterizing a stance.
+
+### 2026-11-15
+
+- **A respondent's answer to a show cause order can land in a docket that did not exist the day before.** ISO-NE's filing is in ER27-484-000, and the EL26-72 sheet shows nothing. The six-docket sweep alone would have reported "no filing". Run the eLibrary general search for the respondent's name over the window on every refresh near a deadline, then add the new docket to `sources/filings/sheet-baseline.json` and to `dockets` in `refresh-coverage.json` so `refresh.sh --sweep` picks it up. The baseline holds 31 dockets as of this date.
+- **A docket added to the baseline needs its whole sheet listed once.** The reconciler diffs accessions against the baseline, so a new docket's first sweep must start at the docket's first filing date, and its coverage entry says the rows were listed in full and not individually reviewed.
+- **FERC's combined notice sets the comment date, and it can differ from what the filer asked for.** ISO-NE asked for Dec 7; the notice says Dec 4. Ship the notice's date and say the request is pending.
+- **An interview date is the day the person spoke.** Utility Dive published LaCerte's Q&A on Nov 11 and the text says "on Monday", which is Nov 9. Read the dateline sentence before stamping an event.
+- **Three source-shape tests were pinned to exact lines of `app.js`.** A refactor of the Filings toggle broke them with no behavior change. They now match the behavior's distinguishing expression; expect to touch `tests/documents.test.mjs` and `tests/record.test.mjs` when that handler changes.
+- **A timeline event can point at the document it reports.** `doc: "<group>/<slug>"` on a timeline entry or a spotlight link makes the Now tab link straight to the reading. A test resolves every `doc` against `record-data.js`, so a renamed slug fails the build.

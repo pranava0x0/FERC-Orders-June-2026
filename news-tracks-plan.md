@@ -2,6 +2,16 @@
 
 ## Progress log (append per session)
 
+**Session 2026-11-15 — the first respondent filed, in a new docket.** 31 docket sheets read since Nov 9 plus a
+general search. ISO-NE and NEPOOL filed large-load tariff revisions on Nov 13 in ER27-484-000 (50 MW at one
+site above 60 kV; firm, interim and non-firm service; applications June 1, 2027, service June 1, 2028);
+comments are due Dec 4. Valley Electric asked to be dropped from E-10. PJM moved to withdraw ER27-330. FERC
+gave PJM until Dec 21 in EL27-11. Eight documents and two PJM letters cataloged with readings (177 documents,
+22 proceedings). Nine timeline events, seven with a `doc` link to the reading; all four track cards and
+`meta.newsCapture` at Nov 15. The filings matrix shows ISO-NE as filed and verified. Not done: nothing from
+PJM, the PJM TOs, CAISO, MISO, SPP or NYISO was indexed by Friday Nov 13; three press leads are queued in
+REFRESH.md.
+
 **Session 2026-10-20 — eLibrary sweep integrated.** Every docket sheet read from Oct 8 in an authenticated
 browser. The six §206 dockets are quiet. Four new primary documents extracted (`--check` 25 of 25): the Duke
 NITSA order (197 FERC ¶ 61,020; the Rosner and Chang lines now cite it), PJM's Oct 12 backstop abeyance

@@ -9,6 +9,31 @@ _Last run: 2026-11-11_
 
 ## Learned pathways log
 
+### Run 2026-11-15 (interaction depth: find box, Newest list, deep links; phone chip row)
+
+33 panel checks and 69 goal measurements at 375x812, 768x1024 and 1280x800: zero failures, zero console
+errors, zero failed requests, no horizontal overflow. Cost is clicks + typed fields + horizontal swipes +
+scroll in viewport heights.
+
+| Goal | Before (desktop) | Now: phone / tablet / desktop | Path |
+|---|---|---|---|
+| c · the procedural clock | 1 click + 2.1 screens | 2.31 / 1.23 / 1.23 | masthead deadline chip opens `#overview/clock` |
+| f · PJM's order card | 2 | 2.37 / 1.37 / 1 | operator table row links to `#dockets/EL26-67` |
+| p · newest respondent filing | n/a | 2.89 / 1.19 / 1 | spotlight link opens the reading |
+| q · Valley Electric's motion | n/a | 2.22 / 1.19 / 1 | spotlight link |
+| u · find a filer's document | 3 + about 2 screens | 3.51 / 3.12 / 3 | Filings, tap the find box, type |
+| v · the newest document | 3 or more | 2 / 2 / 2 | Filings, first row of Newest documents |
+| w · a one-document proceeding | 3 | 5 / 3.46 / 3.53 | opening the proceeding opens its document |
+| m, n, r · a document by browsing | 5.07, 4.77, 5.49 | 7.17, 6.49, 7.6 on a phone | unchanged; scroll inside a long proceeding (backlog) |
+| h · All comments search | 4 | 4 / 4 / 4 | unchanged |
+
+- **Found and fixed:** on a phone the ten Filings theme chips wrapped to a full screen. They are one swipeable
+  row under 640px now, so the filter result and the Newest list are on the first screen.
+- **Harness changes:** goal c takes the masthead chip, f the operator row, p and q the spotlight links; new
+  goals u, v and w. The chip target is `#masthead-fresh a` (the id is on the paragraph).
+- **Carry over:** keyboard-only pass through the find box and the Newest list; the find box with a theme chip
+  active; `#timeline/at/<iso>` while a track filter is on (it resets to the unfiltered rail by design).
+
 ### Run 2026-11-11 (Nov 5 PJM letters; measured three UX candidates and changed none)
 
 36 panel checks and 51 goal measurements at 375x812, 768x1024 and 1280x800: zero failures, zero console
