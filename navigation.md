@@ -74,6 +74,8 @@ now cost 1 where they cost a short scroll before; the next deadline is answered 
 
 **2026-11-18, comparison table as bullets:** each cell lists 2 to 4 page-cited points with figures (deposits, thresholds, timelines), and reform rows use the June orders' own Section III headings. The taller first row adds 0.75 of a screen on a phone to the two who-pays questions (1 to 1.75); accepted for the detail. Phone 37.7, tablet 30.4, desktop 29.1.
 
+**2026-11-18, Filings sections and filters:** each proceeding lists its documents in four sections: FERC orders and notices, proposals and reports, responses, and procedural filings. Procedural filings fold only when there are substantive responses above them. The MISO-responses route now ends on an actual response, not MISO's own filing (desktop 3 to 3.73). Theme chips count and show read documents only; keyword matches are opt-in. Phone 38.4, tablet 30.8, desktop 30.0.
+
 ## Gaps: questions the site cannot answer yet
 
 Each needs data before it needs a route. When one becomes answerable, it gets a question in

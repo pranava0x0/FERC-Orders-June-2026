@@ -125,7 +125,7 @@
     ]
    ],
    "leaf": [
-    "#fg-miso-large-load[open] details.fdoc:not([hidden]) > summary .fd-who",
+    "#fg-miso-large-load[open] .fd-secw:not([data-sec=\"proposal\"]):not([data-sec=\"ferc\"]) details.fdoc:not([hidden]) > summary .fd-who",
     "\\S"
    ]
   },
