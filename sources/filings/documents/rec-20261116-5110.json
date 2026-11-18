@@ -1,0 +1,60 @@
+{
+ "slug": "rec-20261116-5110",
+ "summary": "Citizens S-Line Transmission LLC files tariff revisions under section 205 on November 16, 2026, in ER27-501-000, answering the CAISO show cause order. It leases transfer capability on an Imperial Irrigation District line, so its revisions point large load requests to IID's tariff. It follows the other two Citizens filings but adds a new Section 16.12 and expands Sections 3, 8, 9 and 10.",
+ "ask": "Accept the revisions effective January 15, 2027, and find that Citizens S-Line has satisfied the concerns in the show cause order.",
+ "points": [
+  {
+   "point": "Citizens S-Line owns none of the line. IID keeps ownership, operation and maintenance.",
+   "quote": "Citizens S-Line does not own any of the actual facilities. IID retains ownership and operation and maintenance responsibilities.",
+   "pg": 2
+  },
+  {
+   "point": "The line sits inside IID's balancing area, and IID is not a CAISO transmission owner. This is the difference from the other two Citizens filings.",
+   "quote": "The S-Line transmission line is located within IID’s Balancing Authority Area and is therefore not within the footprint of the CAISO’s Balancing Authority Area, nor is IID a CAISO PTO",
+   "pg": 3
+  },
+  {
+   "point": "Study, planning, interconnection and expansion requests would be governed by IID's policies and open access tariff.",
+   "quote": "will be governed by the relevant provisions and policies of IID, including its Open Access Transmission Tariff",
+   "pg": 3,
+   "reform": "study"
+  },
+  {
+   "point": "Its original tariff was thinner than the other Citizens tariffs, so these revisions expand it to match them.",
+   "quote": "revisions that would expand these sections so that they mirror those of the other Citizens Energy Corporation PTOs",
+   "pg": 3,
+   "reform": "study"
+  },
+  {
+   "point": "A new Section 16.12 resolves any conflict between the tariff and the lease with IID.",
+   "quote": "Add in a new Section 16.12 to address any potential conflict between the TO Tariff and terms of the Incremental Capacity Lease",
+   "pg": 4
+  },
+  {
+   "point": "It says IID, as owner and operator, holds authority over operations and interconnection.",
+   "quote": "IID, as the owner and operator of the S-Line Project, has the authority and responsibility for all operational and interconnection related matters",
+   "pg": 5
+  },
+  {
+   "point": "It commits to a compliance filing if CAISO changes its tariff in a way that affects these revisions.",
+   "quote": "Citizens S-Line commits to making a compliance filing to ensure its TO Tariff remains consistent",
+   "pg": 5
+  },
+  {
+   "point": "It asks for an effective date 60 days after filing.",
+   "quote": "accept these TO Tariff revisions to become effective January 15, 2027, which is sixty (60) days from the date of this filing",
+   "pg": 1
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-10-show-cause",
+   "e-10-application-study-process"
+  ],
+  "text": "Filed under section 205 to answer the E-10 show cause order for CAISO and its transmission owners. It sends large load study and interconnection matters to IID, whose line is outside the CAISO balancing area, rather than to a CAISO transmission owner."
+ },
+ "themes": [
+  "study"
+ ]
+}

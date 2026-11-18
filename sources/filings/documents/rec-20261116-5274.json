@@ -1,0 +1,73 @@
+{
+ "slug": "rec-20261116-5274",
+ "summary": "SunZia Transmission, LLC files limited tariff revisions under section 205 on November 16, 2026, in ER27-515-000. SunZia serves no load, so it amends Section 8 of its transmission owner tariff to say the CAISO tariff controls interconnection of generation and co-located load, and it reserves the right to amend once it sees the other owners' filings.",
+ "ask": "Accept the revisions effective 60 days after FERC's order, and find them consistent with the show cause order.",
+ "points": [
+  {
+   "point": "The line is a 552-mile high voltage direct current line in New Mexico and Arizona.",
+   "quote": "an approximately 552-mile, bi-pole, high voltage direct current (“HVDC”) 500 kV transmission line",
+   "pg": 2
+  },
+  {
+   "point": "All of the line's capacity is committed to two wind subscribers.",
+   "quote": "the entire capacity of the Transmission System is committed to two Subscribers",
+   "pg": 2
+  },
+  {
+   "point": "Its tariff is silent on load interconnection because it does not serve load, so it says no large load provisions are needed.",
+   "quote": "SunZia Transmission does not directly serve load and, accordingly, there are no provisions in its TO Tariff that address the interconnection of the load to the SunZia Transmission System",
+   "pg": 5,
+   "reform": "study"
+  },
+  {
+   "point": "Interconnection requests already go to CAISO first.",
+   "quote": "Section 8 of the SunZia Transmission TO Tariff states that all requests for interconnection to the SunZia Transmission System must be directed in the first instance to CAISO",
+   "pg": 5
+  },
+  {
+   "point": "The only edit confirms the CAISO tariff controls generator and co-located interconnection.",
+   "quote": "Section 8 of the TO Tariff has been amended to clarify that the CAISO Tariff will continue to control with respect to the interconnection of Generating Units",
+   "pg": 5,
+   "reform": "colo"
+  },
+  {
+   "point": "SunZia keeps the option to amend after reviewing the other owners' filings.",
+   "quote": "reserves the right, following review of the proposed tariff changes filed by the other Participating Transmission Owners",
+   "pg": 5
+  },
+  {
+   "point": "SunZia wants CAISO to start its electrically proximate load work as soon as possible.",
+   "quote": "SunZia Transmission continues to support the need to apply these enhanced Large Load interconnection procedures to Electrically Proximate Loads",
+   "pg": 5,
+   "reform": "proximate"
+  },
+  {
+   "point": "The effective date is tied to FERC's order. The tariff records carry a placeholder date until then.",
+   "quote": "SunZia Transmission proposes an effective date of sixty days after the Commission issues an order on this compliance filing for the changes to its TO Tariff",
+   "pg": 6
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-10-show-cause",
+   "e-10-application-study-process",
+   "e-10-btmg-netting"
+  ],
+  "text": "Filed under section 205 to answer the E-10 show cause order. It adds no large load study process, cost recovery agreement or flexible service, and says the CAISO tariff is where those changes belong."
+ },
+ "themes": [
+  "study",
+  "colo",
+  "proximate"
+ ],
+ "figures": [
+  {
+   "label": "Line transmission capacity",
+   "value": 3021,
+   "unit": "MW",
+   "quote": "with a transmission capacity of 3,021 MW in New Mexico and Arizona",
+   "pg": 2
+  }
+ ]
+}

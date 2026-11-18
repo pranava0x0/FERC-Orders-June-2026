@@ -1,0 +1,71 @@
+{
+ "slug": "rec-20261116-5312",
+ "summary": "Viridon Path 15 LLC files tariff revisions under section 205 on November 16, 2026, in ER27-523-000, answering the CAISO show cause order. It owns only a transmission service rights interest in the Path 15 Upgrade, so interconnection requests route to WAPA, PG&E or CAISO. It files no cost recovery mechanism and no pro forma interconnection agreement.",
+ "ask": "Accept the revisions without hearing or suspension, effective February 16, 2027.",
+ "points": [
+  {
+   "point": "Viridon owns only a service rights interest in Path 15. WAPA owns the physical facilities.",
+   "quote": "The Western Area Power Administration (“WAPA”) owns the physical transmission infrastructure constituting the Path 15 Upgrade",
+   "pg": 3
+  },
+  {
+   "point": "It says it could not fully align with the other owners in the time available.",
+   "quote": "given the short timeframe, the complexity of issues involved, and the large number of PTOs, it was not possible to coordinate in perfect lockstep with all other PTOs",
+   "pg": 7,
+   "reform": "study"
+  },
+  {
+   "point": "It requires applicants to disclose other requests for the same large load or its affiliates.",
+   "quote": "disclosure of any other interconnection requests to the ISO Controlled Grid the applicant has filed on behalf of the same Large Load or any of its affiliate(s)",
+   "pg": 7,
+   "reform": "study"
+  },
+  {
+   "point": "It proposes a coordination process between owners and argues a process favoring load-serving owners' facilities would not be just and reasonable.",
+   "quote": "A large load interconnection process that favored connecting to load serving entity PTO facilities would not be just and reasonable",
+   "pg": 8,
+   "reform": "study"
+  },
+  {
+   "point": "It files no cost recovery mechanism of its own.",
+   "quote": "the TO Tariff Revisions do not include a separate pro forma Large Load Interconnection Agreement or cost recovery mechanisms",
+   "pg": 14,
+   "reform": "cost"
+  },
+  {
+   "point": "Co-located loads would be studied net of the co-located generation's output.",
+   "quote": "facilities will be studied based on their expected load on the transmission system, net of the co- located generation’s output that offsets the large load’s energy usage",
+   "pg": 15,
+   "reform": "colo"
+  },
+  {
+   "point": "It says curtailment duties for the interim service must be enforceable.",
+   "quote": "for the FILLI offering to function as intended, curtailment obligations must be enforceable and the chain of authority must be clear",
+   "pg": 16,
+   "reform": "flex"
+  },
+  {
+   "point": "It proposes no tariff changes on electrically proximate generation, following CAISO.",
+   "quote": "Viridon Path 15 does not propose making any changes to its Path 15 Tariff on this issue",
+   "pg": 19,
+   "reform": "proximate"
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-10-show-cause",
+   "e-10-application-study-process",
+   "e-10-cost-recovery-agreement",
+   "e-10-service-for-flexible-loads",
+   "e-10-btmg-netting"
+  ],
+  "text": "Filed under section 205 to answer the E-10 show cause order. It aligns with CAISO's draft tariff language on definition, study and interim service, and defers cost recovery and the interconnection agreement to the other owners' work."
+ },
+ "themes": [
+  "study",
+  "cost",
+  "flex",
+  "proximate"
+ ]
+}

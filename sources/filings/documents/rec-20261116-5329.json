@@ -1,0 +1,68 @@
+{
+ "slug": "rec-20261116-5329",
+ "summary": "LS Power Grid California files tariff revisions under section 205 on November 16, 2026, in ER27-528-000, answering the CAISO show cause order. It adds a large load interconnection process and a pro forma cost recovery agreement with a 20-year minimum revenue contribution. The letter matches the DesertLink filing in ER27-534; the differences are in the Formula Rate Template and the project descriptions.",
+ "ask": "Accept the revisions effective January 16, 2027, 61 days after filing, and grant any waivers needed.",
+ "points": [
+  {
+   "point": "It adds a process for utilities that buy transmission service on behalf of large loads.",
+   "quote": "adding a new Section 10A and a new Appendix VI (Large Load Interconnection Procedures (“LLIP”)) to establish an interconnection process for Eligible Customers for Large Load (“ECLLs”)",
+   "pg": 1,
+   "reform": "study"
+  },
+  {
+   "point": "The definition is 50 MW of peak load at a single site.",
+   "quote": "a Large Load is an End-User located at a single site behind one or more Points of Withdrawal from the CAISO Controlled Grid with a peak load of 50 MW or greater",
+   "pg": 4,
+   "reform": "study"
+  },
+  {
+   "point": "The cost recovery agreement sets a 20-year minimum revenue contribution for each upgrade.",
+   "quote": "establishes the Eligible Customer’s twenty-year Minimum Transmission Revenue Contribution (“MTRC”) and related payment and security obligations for each Covered Upgrade",
+   "pg": 2,
+   "reform": "cost"
+  },
+  {
+   "point": "Ending service early costs the customer all remaining revenue responsibility.",
+   "quote": "the Eligible Customer owes a lump-sum Termination Fee equal to the Remaining Cumulative Revenue Responsibility",
+   "pg": 7,
+   "reform": "cost"
+  },
+  {
+   "point": "Direct security can be reduced by security the large load posted under a retail agreement.",
+   "quote": "allowing an Eligible Customer to rely on credit support posted by a large load under a retail agreement, direct Operational Security is reduced dollar-for-dollar by Qualifying Retail Security Support",
+   "pg": 7,
+   "reform": "cost"
+  },
+  {
+   "point": "Interim curtailable service is curtailed ahead of firm service.",
+   "quote": "FILI Service is subject to curtailment, including during normal operating conditions, and is curtailed before Firm Interconnection Service",
+   "pg": 4,
+   "reform": "flex"
+  },
+  {
+   "point": "LS Power Grid has no retail customers and no retail relationship with a large load.",
+   "quote": "LS Power Grid is a non-load-serving PTO with no End-Use Customers; it neither serves retail load nor has a retail relationship with any customer seeking a Large Load interconnection",
+   "pg": 3
+  },
+  {
+   "point": "This is the difference from DesertLink: LS Power Grid says its formula rate template needs no changes.",
+   "quote": "requires no changes to LS Power Grid’s Formula Rate Template or Protocols",
+   "pg": 11
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-10-show-cause",
+   "e-10-application-study-process",
+   "e-10-cost-recovery-agreement",
+   "e-10-service-for-flexible-loads"
+  ],
+  "text": "Filed under section 205 to answer the E-10 show cause order. It adds a large load interconnection process and a pro forma cost recovery agreement to a transmission-only owner's tariff, and defers permanent flexible service to CAISO."
+ },
+ "themes": [
+  "study",
+  "cost",
+  "flex"
+ ]
+}

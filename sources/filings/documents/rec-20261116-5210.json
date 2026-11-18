@@ -1,0 +1,85 @@
+{
+ "slug": "rec-20261116-5210",
+ "summary": "Southern California Edison files tariff revisions under section 205 on November 16, 2026, in ER27-508-000, answering the CAISO show cause order. A new Appendix XV sets large load interconnection procedures, with a study deposit, a 15-year minimum revenue obligation backed by security, exit fees and a curtailable interim service. More than 250 pages of tariff sheets follow the letter.",
+ "ask": "Accept the revisions as filed, effective February 16, 2027, and rescind the show cause order as to SCE's tariff.",
+ "points": [
+  {
+   "point": "SCE takes CAISO's 50 MW definition into its tariff.",
+   "quote": "SCE proposes to incorporate the CAISO’s definition of “Large Load” into its TO Tariff",
+   "pg": 7,
+   "reform": "study"
+  },
+  {
+   "point": "A new appendix holds the large load interconnection procedures.",
+   "quote": "SCE proposes to create a new Appendix titled the Large Load Interconnection Procedures (“LLIP”) to augment existing TO Tariff interconnection and cost responsibility sections",
+   "pg": 5,
+   "reform": "study"
+  },
+  {
+   "point": "A request needs a $250,000 study deposit and a readiness deposit of twice that.",
+   "quote": "an Interconnection Study Deposit of $250,000, a Commercial Readiness Deposit equal to two times the study deposit",
+   "pg": 10,
+   "reform": "study"
+  },
+  {
+   "point": "The same transmission rules apply to SCE's own retail large load customers.",
+   "quote": "SCE’s LLIP thus applies the same transmission-related requirements to SCE’s own Large Load retail transmission customers as it does to Eligible Customers seeking to interconnect on behalf of Large Loads",
+   "pg": 9,
+   "reform": "study"
+  },
+  {
+   "point": "A 15-year minimum revenue obligation backed by five years of security protects against stranded network upgrade costs.",
+   "quote": "a 15-year minimum transmission revenue obligation backed by 5 years of security",
+   "pg": 22,
+   "reform": "cost"
+  },
+  {
+   "point": "Early termination after service starts costs the customer all remaining required security.",
+   "quote": "early termination triggers an Exit Fee equal to all remaining required security, including the MARO security, due within 30 Business Days",
+   "pg": 24,
+   "reform": "cost"
+  },
+  {
+   "point": "Curtailment terms for the interim service sit in an appendix to the security and reliability agreement.",
+   "quote": "the conditions and limitations applicable to FILI service, including curtailments, are specified in Appendix E to the TSRA",
+   "pg": 17,
+   "reform": "flex"
+  },
+  {
+   "point": "SCE says the California owners should not be expected to file uniform tariffs.",
+   "quote": "SCE believes uniformity in the PTOs’ tariffs should not be expected",
+   "pg": 3
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-10-show-cause",
+   "e-10-application-study-process",
+   "e-10-cost-recovery-agreement",
+   "e-10-service-for-flexible-loads"
+  ],
+  "text": "Filed under section 205 to answer the E-10 show cause order for SCE's own transmission owner tariff. SCE says it covers the application, cost shifting and flexible service items and expects other owners' tariffs to differ."
+ },
+ "themes": [
+  "study",
+  "cost",
+  "flex"
+ ],
+ "figures": [
+  {
+   "label": "Interconnection study deposit",
+   "value": 250000,
+   "unit": "USD",
+   "quote": "an Interconnection Study Deposit of $250,000",
+   "pg": 10
+  },
+  {
+   "label": "Security agreement term",
+   "value": 15,
+   "unit": "years",
+   "quote": "The TSRA has a term of 15 years from its effective date",
+   "pg": 15
+  }
+ ]
+}
