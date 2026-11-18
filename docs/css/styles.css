@@ -1539,3 +1539,9 @@ details.tl-item .srcs { padding: 0 0 10px 128px; }
 .xw-t-none { color: var(--text-muted); }
 .xw-t td a { display: inline-block; white-space: nowrap; }
 @media (pointer: coarse) { .xw-t td a { min-height: 44px; display: inline-flex; align-items: center; } }
+/* A collapsed section must read as something to open: the chevron leads the title, and the row reacts. */
+.acc-sum { align-items: center; padding: 14px 8px 10px; margin: 0 -8px; border-radius: 6px; }
+.acc-sum .acc-chev { order: -1; margin-left: 0; font-size: 22px; }
+.acc-sum:hover { background: var(--accent-wash); }
+.acc-sum:hover .acc-h2 { color: var(--accent-ink); }
+.fg-docs-h { font-size: 14px; font-weight: 700; color: var(--text-secondary); margin: 18px 0 4px; padding-top: 12px; border-top: 1px solid var(--rule); }

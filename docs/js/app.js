@@ -1846,7 +1846,16 @@
   var TITLE_ROLE = [[/petition for review/i, "Court appeal"], [/rehearing/i, "Asks FERC to reconsider"], [/clarification/i, "Asks FERC to clarify"],
     [/extension of time/i, "Asks for more time"], [/\babeyance\b/i, "Asks FERC to pause the case"], [/deficien/i, "FERC asks for more information"],
     [/\bprotest\b/i, "Opposes"], [/informational report/i, "Report to FERC"]];
+  var FERC_FILER = /^(?:secretary of the commission|ferc\b|federal energy regulatory commission|commissioners and immediate staff|office of energy market regulation)/i;
   function kindRole(k, d) {
+    // FERC's own notices are not requests to FERC, whatever eLibrary's type says.
+    if (d && FERC_FILER.test(d.filer || "") && k !== "order") {
+      var ft = d.title || "";
+      if (/denial of rehearing by operation of law/i.test(ft)) return "FERC: rehearing denied by operation of law";
+      if (/errata/i.test(ft)) return "FERC correction";
+      if (/deficien/i.test(ft)) return "FERC asks for more information";
+      return "FERC notice";
+    }
     // The title is the surer signal for what a document does: "filing" and "request" cover protests, appeals and letters.
     var tt = d && d.title || "";
     if (k !== "answer" && k !== "order") for (var r = 0; r < TITLE_ROLE.length; r++) if (TITLE_ROLE[r][0].test(tt)) return TITLE_ROLE[r][1];
@@ -1967,6 +1976,8 @@
         ' <span class="mono">' + esc(fmtISO(g.newest).replace(/, \d{4}$/, "")) + "</span></span></summary>" +
         '<div class="fg-body">' + linkLine(R, g.link, "fg-link") +
         (g.about ? '<p class="fg-about">' + esc(g.about) + "</p>" : "") + (g.status ? '<p class="fg-status">' + esc(g.status) + "</p>" : "") +
+        // A heading says what the rows are: the documents on this proceeding's docket sheet.
+        '<h4 class="fg-docs-h">Filings in ' + esc(g.docket) + "</h4>" +
         '<div class="fdocs">' + g.docs.map(function (d) { return docCard(R, g, d); }).join("") + "</div></div></details>";
     };
     var sc = R.groups.filter(function (g) { return g.kind === "show-cause"; }), rel = R.groups.filter(function (g) { return g.kind !== "show-cause"; });
