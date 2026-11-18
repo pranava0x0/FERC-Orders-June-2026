@@ -1749,11 +1749,11 @@
    "groups": []
   },
   {
-   "id": "voice-5fceea3089",
+   "id": "voice-eff9462202",
    "kind": "voice",
    "who": "Jamie Nolan",
    "affil": "Energy Empire · Nolan Strategic Communications",
-   "text": "The public-narrative voice: frames data centers as a guardrails problem, not a binary good-or-bad story. Done wrong, they are the Loudoun County cautionary tale; done right, she argues they can become a local-bill ally rather than the villain driving bills up.",
+   "text": "The public-narrative voice: frames data centers as a guardrails problem with no simple good-or-bad verdict. Done wrong, they are the Loudoun County cautionary tale; done right, she argues they can become a local-bill ally rather than the villain driving bills up.",
    "src": [
     "jamienolan"
    ],
@@ -1822,11 +1822,11 @@
    "groups": []
   },
   {
-   "id": "voice-74eff80a94",
+   "id": "voice-f4fe18108e",
    "kind": "voice",
    "who": "Amanda Peterson Corio",
    "affil": "Google",
-   "text": "The Google grid-utilization voice: says the sector has to find solutions that better utilize the system. Google works on data-center flexibility, but she also argues it can be faster and more cost effective to pay other customers to shift load because idle chips are expensive.",
+   "text": "The Google voice on using the grid more fully: says the sector has to find solutions that use the system better. Google works on data-center flexibility, but she also argues it can be faster and more cost effective to pay other customers to shift load because idle chips are expensive.",
    "src": [
     "amandapc"
    ],
@@ -1922,11 +1922,11 @@
    "groups": []
   },
   {
-   "id": "voice-e8191f7431",
+   "id": "voice-f946619be9",
    "kind": "voice",
    "who": "David Young",
    "affil": "Equinix · Data Center Coalition",
-   "text": "The data-center federal-policy voice: represents the Equinix/DCC lane in the coalition's Federal Policy Leadership Advisory Council, reinforcing that the industry is organizing around federal power, permitting and grid-access questions.",
+   "text": "The data-center federal-policy voice: represents the Equinix/DCC lane in the coalition's Federal Policy Leadership Advisory Council.",
    "src": [
     "davidyoung"
    ],
@@ -2244,9 +2244,9 @@
    "groups": []
   },
   {
-   "id": "consensus-330c9c175d",
+   "id": "consensus-461c219721",
    "kind": "consensus",
-   "text": "The public headline has escaped the energy-law lane: TechCrunch, AP, Tom's Hardware and Reddit all translate the orders as a data-center fast lane, even when they disagree on whether the real bottleneck is interconnection paperwork, physical power supply, or household bills.",
+   "text": "The story has left the energy-law press: TechCrunch, AP, Tom's Hardware and Reddit all translate the orders as a data-center fast lane, even when they disagree on whether the real bottleneck is interconnection paperwork, physical power supply, or household bills.",
    "src": [
     "techcrunch",
     "apdata",
@@ -2487,9 +2487,9 @@
    "groups": []
   },
   {
-   "id": "friction-684aa9e2a2",
+   "id": "friction-eb9f5b47ac",
    "kind": "friction",
-   "text": "The hyperscaler line is not monolithic but it is explicit on cost assignment: post-order coverage keeps pairing speed-to-power with large-customer cost responsibility, grid-utilization strategies, and organized federal advocacy from the data-center sector.",
+   "text": "The hyperscaler line varies by company and is explicit on cost assignment: post-order coverage keeps pairing speed-to-power with large-customer cost responsibility, strategies for using the grid more fully, and organized federal advocacy from the data-center sector.",
    "src": [
     "amandapc",
     "joshlevi",
@@ -2757,11 +2757,11 @@
    "groups": []
   },
   {
-   "id": "reception-00d2163f4e",
+   "id": "reception-a058c66696",
    "kind": "reception",
    "who": "Non-RTO Southeast and regional planners",
    "stance": "negative",
-   "text": "The six orders cover organized markets, not the whole country. Southeast voices warn that manufacturers and data centers still need regional transmission planning outside the RTO/ISO frame, and that the regions with weak interconnection practice may be precisely where FERC's show-cause orders do not directly reach.",
+   "text": "The six orders cover organized markets only. Southeast voices warn that manufacturers and data centers still need regional transmission planning outside the RTO/ISO frame, and that the regions with weak interconnection practice may be precisely where FERC's show-cause orders do not directly reach.",
    "src": [
     "utilitydive",
     "simonmahan"

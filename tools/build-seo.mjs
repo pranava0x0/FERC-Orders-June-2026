@@ -150,7 +150,7 @@ export function buildIndexHtml(html, D) {
       `${anchor}\n  <meta property="og:image" content="${SITE}og-card.png" />\n` +
         `  <meta property="og:image:width" content="1200" />\n` +
         `  <meta property="og:image:height" content="630" />\n` +
-        `  <meta property="og:image:alt" content="Large Load Interconnection: six tailored FERC section 206 show cause orders, Items E-7 to E-12" />\n` +
+        `  <meta property="og:image:alt" content="FERC Large Load Proceedings: six tailored FERC section 206 show cause orders, Items E-7 to E-12" />\n` +
         `  <meta name="twitter:image" content="${SITE}og-card.png" />`,
     );
   }

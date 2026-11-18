@@ -83,7 +83,7 @@ try{
    const ctx=await browser.newContext({viewport:{width,height},hasTouch:device!=='desktop',isMobile:device!=='desktop'}),p=await ctx.newPage();
    try{
     const errors=[];p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400)errors.push(r.url()+' '+r.status())});
-    await p.goto(base);await p.locator('#panel-overview .filing-brief').waitFor();
+    await p.goto(base);await p.locator('#panel-overview table.ot').waitFor();
     let scroll=0,horizontal=0,entries=0;const actions=[];
     async function reach(loc){const pos=await expose(loc);scroll+=pos.scroll;horizontal+=pos.horizontal;return pos;}
     for(const [name,selector,value] of steps){

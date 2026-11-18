@@ -217,7 +217,7 @@ export function buildDocketPage(d, D, root = ROOT) {
   <meta property="og:url" content="${url}" />
   <meta property="og:title" content="${esc(title)}" />
   <meta property="og:description" content="${esc(metaDescription(d))}" />
-  <meta property="og:site_name" content="FERC Large Load Orders" />
+  <meta property="og:site_name" content="FERC Large Load Proceedings" />
   <meta property="og:image" content="${SITE}og-card.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="${SITE}og-card.png" />
@@ -238,7 +238,7 @@ ${jsonLd(d, D)}
 
   <main id="main" role="main" class="wrap dk-page">
     <nav class="dk-nav" aria-label="Breadcrumb">
-      <a href="../../">Large Load Interconnection</a> <span aria-hidden="true">›</span>
+      <a href="../../">FERC Large Load Proceedings</a> <span aria-hidden="true">›</span>
       <a href="../../#dockets">Dockets</a> <span aria-hidden="true">›</span>
       <span aria-current="page">${esc(d.item)} ${esc(d.rto)}</span>
     </nav>

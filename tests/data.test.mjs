@@ -1206,7 +1206,7 @@ test("the lead summary's 'Where it stands' date is the filings cutoff", () => {
 test("the October commentary lane is stamped by the commentary sweep, not the filings sweep", () => {
   // Codex, PR 24: a commentary-only refresh would advance commentaryCapture while wave 3 kept newsCapture.
   const app = readFileSync(join(here, "..", "docs", "js", "app.js"), "utf8");
-  assert.ok(app.includes("Commentary as of \" + (D.meta.commentaryCapture || D.meta.newsCapture)"), "the Discourse header reads commentaryCapture first");
+  assert.ok(app.includes("\"As of \" + fmtISO(D.meta.commentaryCapture || D.meta.newsCapture)"), "the Discourse header reads commentaryCapture first");
   const llms = buildLlmsTxt(D);
   for (const t of D.voiceThemes.filter((x) => x.wave === 3 && !x.captured)) {
     assert.ok(llms.includes(`captured ${D.meta.commentaryCapture}] ${t.title}:`), `llms.txt stamps "${t.title}" with commentaryCapture`);

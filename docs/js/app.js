@@ -75,8 +75,8 @@
     return '<div class="section-head"><h2>' + esc(h2) + "</h2>" + (lede ? '<p class="lede">' + esc(lede) + "</p>" : "") + "</div>";
   }
   // Collapsible section: same heading + lede as head(), but the body folds away to cut scrolling on the
-  // long flat tabs. Pass open=true for the section that should be expanded by default. `count` shows a
-  // tally on the summary so a collapsed section still advertises what's inside.
+  // long flat tabs. Sections start closed; `open` is for a route that opens one on purpose. Item counts are
+  // not shown on the summary: the heading says what is inside.
   function accSection(h2, lede, body, open, count, id) {
     // The title carries role="heading" aria-level="2" so screen-reader heading navigation and the
     // document landmarks keep these sections even when collapsed (a bare styled <span> drops them).
@@ -84,7 +84,6 @@
     // stays a lightweight toggle row; the ARIA role gives it the same heading semantics either way.
     return '<details class="acc"' + (id ? ' id="' + esc(id) + '"' : "") + (open ? " open" : "") + '><summary class="acc-sum">' +
       '<span class="acc-h2" role="heading" aria-level="2">' + esc(h2) + "</span>" +
-      (count != null ? '<span class="acc-count mono">' + count + "</span>" : "") +
       '<span class="acc-chev" aria-hidden="true">›</span></summary>' +
       (lede ? '<p class="acc-lede">' + esc(lede) + "</p>" : "") + body + "</details>";
   }
@@ -126,10 +125,9 @@
     var which = !total ? "the six show-cause responses"
       : on === total ? "all " + total + " show-cause responses"
       : on + " of the " + total + " show-cause responses";
-    return '<p class="proc-collide"><span class="proc-collide-lbl">Two clocks, one date</span> ' +
+    return '<p class="proc-collide"><span class="proc-collide-lbl">Same deadline</span> ' +
       esc(fmtISO(when)) + " carries both " + esc(which) + " and PJM\u2019s co-location " +
-      "compliance filing in the separate " + esc(e2.short || "EL25-49") + " docket. Different " +
-      "proceedings, same deadline.</p>";
+      "compliance filing in the separate " + esc(e2.short || "EL25-49") + " docket.</p>";
   }
 
   function renderProcedural() {
@@ -284,7 +282,7 @@
 
     var tally = filingTally("report");
     return '<section class="fm" aria-labelledby="fm-h">' +
-      '<div class="fm-head"><h4 id="fm-h">What has actually been filed</h4>' +
+      '<div class="fm-head"><h4 id="fm-h">What has been filed</h4>' +
       '<span class="fm-asof mono">checked ' + esc(F.asOf) + "</span></div>" +
       '<p class="fm-lede">' + esc(F.note) + "</p>" +
       '<div class="fm-scroll"><table class="fm-table"><caption class="sr-only">Observed filings by grid operator and procedural step. ' +
@@ -448,7 +446,7 @@
           '<div class="commish-quote">“…' + esc(c.quote) + '…”' + commissionerQuoteCite(c, c.quotePg) + "</div></div>" + themed(c) + "</article>";
       }).join("");
       return '<span id="commish-h" class="jump-anchor"></span>' + head("June 18: what each commissioner emphasized",
-        "All five joined every order. Their concurring statements diverge in emphasis.") +
+        "All five joined every order.") +
         '<div class="commish-list">' + cards + "</div>";
     }
     return "";
@@ -507,7 +505,7 @@
     var tx = x(todayISO()).toFixed(1);
     var today = '<line x1="' + tx + '" x2="' + tx + '" y1="' + (top - 4) + '" y2="' + (H - 4) + '" class="tg-today"/><text x="' + tx + '" y="' + (H) + '" class="tg-today-l">today</text>';
     return '<figure class="tg"><div class="tg-scroll"><svg viewBox="0 0 ' + W + " " + (H + 6) + '" role="img" aria-labelledby="tg-cap">' + axis + lanes + marks + today + "</svg></div>" +
-      '<figcaption id="tg-cap">' + ev.length + ' dated entries across ' + ids.length + ' proceedings. Circles are actions; diamonds are deadlines. Months before June 2026 are compressed.</figcaption></figure>';
+      '<figcaption id="tg-cap">Circles are actions; diamonds are deadlines. Months before June 2026 are compressed.</figcaption></figure>';
   }
 
   // One row per order: the operator, its reset deadline, what it has said it will file, and the two
@@ -516,16 +514,16 @@
     var ps = procStatus();
     var STATUS = { "signaled": "Said it will file", "filed-verified": "Filed", "filed-reported": "Reported filed", "upcoming": "Not yet due", "none-observed": "Nothing observed" };
     var rows = (D.dockets || []).map(function (d) {
-      var c = filingCell(d.docket, "showcause", ps), due = d.abeyance && d.abeyance.due;
+      var c = filingCell(d.docket, "showcause", ps), nx = d.next;
       var gist = c.obs ? c.obs.gist : "";
-      var n = daysUntil(due);
+      var n = nx && nx.iso ? daysUntil(nx.iso) : -1;
       return '<tr><th scope="row"><a href="#dockets/' + esc(docketKey(d.docket)) + '">' + esc(d.rto) + '</a> <span class="ot-item">' + esc(d.item) + " · " + esc(d.docket.replace(/-000$/, "")) + "</span></th>" +
-        '<td class="ot-due">' + (due ? '<span class="mono">' + esc(fmtISO(due).replace(/, \d{4}$/, "")) + "</span>" + (n >= 0 ? ' <span class="ot-days">' + inDays(n) + "</span>" : "") : '<span class="na">Not dated</span>') + "</td>" +
         '<td><span class="ot-status st-' + esc(c.status) + '">' + esc(STATUS[c.status] || c.status) + '</span> <span class="ot-gist">' + esc(firstSentence(gist)) + "</span></td>" +
+        '<td class="ot-due">' + (nx ? (nx.iso ? '<span class="mono">' + esc(fmtISO(nx.iso).replace(/, \d{4}$/, "")) + "</span>" + (n >= 0 ? ' <span class="ot-days">' + inDays(n) + "</span>" : "") + "<br>" : "") + esc(nx.what) : '<span class="na">—</span>') + "</td>" +
         // A filed row opens the filing itself (routeFiling finds a document in whichever group holds it).
         '<td class="ot-go"><a href="#filings/sc-' + esc(d.rto.toLowerCase().replace(/[^a-z]/g, "")) + (c.obs && c.obs.reader ? "/" + esc(c.obs.reader) + '">Read the filing' : '">Filings') + "</a></td></tr>";
     }).join("");
-    return '<div class="table-wrap"><table class="ot"><thead><tr><th>Operator and order</th><th>Response due</th><th>What it has said or filed</th><th></th></tr></thead><tbody>' + rows + "</tbody></table></div>";
+    return '<div class="table-wrap"><table class="ot"><thead><tr><th>Operator and order</th><th>Status</th><th>Next</th><th></th></tr></thead><tbody>' + rows + "</tbody></table></div>";
   }
 
   /* ---- Asked and answered: DOE's ANOPR principle -> the June order's words -> what each operator filed ---- */
@@ -569,10 +567,25 @@
     }).join("");
     return doe + '<div class="xw-rows">' + rows + "</div>";
   }
+  // Five reforms down, six markets across: one line per cell saying what the operator proposed, linked to
+  // the page it comes from. An empty cell means the filing does not take the reform up (or, for SPP, has not filed).
+  var xwMatrix = null, XW_MARKETS = ["PJM", "MISO", "SPP", "CAISO", "ISO-NE", "NYISO"];
+  function xwTable() {
+    if (!xwMatrix) return "";
+    var rows = D.categories.map(function (c) {
+      return '<tr><th scope="row">' + esc(XW_LABEL[c.key] || c.title) + "</th>" + XW_MARKETS.map(function (m) {
+        var x = xwMatrix[m] && xwMatrix[m][c.key];
+        return x ? '<td>' + esc(x.gist) + ' <a class="mono" href="reading/' + esc(x.slug) + "/text.html#p-" + x.pg + '" title="' + esc("“" + x.quote + "”") + '">p.&nbsp;' + x.pg + "</a></td>"
+          : '<td class="xw-t-none">' + (m === "SPP" ? "Not filed yet" : "Not addressed") + "</td>";
+      }).join("") + "</tr>";
+    }).join("");
+    return '<div class="table-wrap xw-t-wrap"><table class="xw-t"><caption>Nov 16 filings, compared</caption><thead><tr><th scope="col">Reform</th>' +
+      XW_MARKETS.map(function (m) { return '<th scope="col">' + esc(m) + "</th>"; }).join("") + "</tr></thead><tbody>" + rows + "</tbody></table></div>";
+  }
   function renderCrosswalk() {
     var host = document.getElementById("xwalk");
     if (!host || !xwAnswers) return;
-    host.innerHTML = D.categories.map(function (c) {
+    host.innerHTML = xwTable() + D.categories.map(function (c) {
       return '<details class="xw-cat" id="xw-' + esc(c.key) + '"><summary><span class="xw-no">' + c.n + '</span><span class="xw-title">' + esc(XW_LABEL[c.key] || c.title) +
         '<span class="xw-sub">' + esc(c.ferc) + "</span></span>" + xwSummaryDots(c.key) + '<span class="acc-chev" aria-hidden="true">›</span></summary>' +
         '<div class="xw-body">' + xwBody(c) + "</div></details>";
@@ -582,7 +595,7 @@
   function loadCrosswalk() {
     if (xwAnswers) { renderCrosswalk(); return; }
     fetch("data/answers.json?v=" + ASSET_VER).then(function (r) { if (!r.ok) throw Error(r.status); return r.json(); }).then(function (j) {
-      xwAnswers = j.answers || []; renderCrosswalk();
+      xwAnswers = j.answers || []; xwMatrix = j.matrix || null; renderCrosswalk();
     }).catch(function (err) {
       console.error("answers.json failed to load", err);
       var host = document.getElementById("xwalk");
@@ -595,17 +608,11 @@
     var dated = (D.timeline || []).filter(function (e) { return /^\d{4}-\d{2}-\d{2}/.test(e.iso || ""); });
     var next = dated.filter(function (e) { return e.kind === "deadline" && isoOf(e) >= today; })
       .sort(function (a, b) { return a.iso < b.iso ? -1 : 1; }).slice(0, 4);
-    var latest = dated.filter(function (e) { return isoOf(e) <= today && e.kind !== "deadline"; })
-      .sort(function (a, b) { return a.iso < b.iso ? 1 : -1; }).slice(0, 6);
     var pill = function (e) { var t = D.tracks[e.track]; return t ? '<a class="trackpill" href="#timeline/track/' + esc(e.track) + '">' + esc(t.short) + "</a>" : ""; };
     var nextList = '<ol class="now-next">' + next.map(function (e) {
       var n = daysUntil(e.iso);
       return '<li><span class="nn-date"><span class="mono">' + esc(fmtISO(isoOf(e)).replace(/, \d{4}$/, "")) + '</span><span class="nn-days">' + inDays(n) + "</span></span>" +
         '<span class="nn-t">' + esc(e.title) + " " + pill(e) + "</span></li>";
-    }).join("") + "</ol>";
-    // A row opens the document the event is about when there is one, else the event's own timeline row.
-    var latestList = '<ol class="now-latest">' + latest.map(function (e) {
-      return '<li><span class="mono nl-date">' + esc(fmtISO(isoOf(e)).replace(/, \d{4}$/, "")) + '</span><span><a href="' + (e.doc ? "#filings/" + esc(e.doc) : "#timeline/at/" + esc(e.iso)) + '">' + esc(e.title) + "</a> " + pill(e) + "</span></li>";
     }).join("") + "</ol>";
     var f = D.meta.spotlight;
     var links = f.links.map(function (link) {
@@ -624,20 +631,15 @@
     var jumps = '<nav class="jump-row" aria-label="On this page">' + [["#ops-h", "Each operator"], ["#xw-h", "By reform"], ["#tg-h", "Record so far"], ["#acc-clock", "60-day clock"]].map(function (j) {
       return '<button type="button" class="jump-btn" data-jump="' + j[0] + '">' + j[1] + "</button>";
     }).join("") + "</nav>";
-    // The headline answer comes first: what changed, then the dates around it.
-    return jumps + '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' + esc(f.title) + "</h2><p>" + esc(f.answer) + "</p><div>" + links + "</div></section>" +
-      '<div class="now-grid">' +
-      '<section class="now-card now-next-card" aria-labelledby="now-next-h"><h2 id="now-next-h">Coming up</h2>' + nextList +
-      '<p class="now-more"><a href="#overview/clock">The 60-day clock and who has filed</a></p></section>' +
-      '<section class="now-card" aria-labelledby="now-latest-h"><h2 id="now-latest-h">Latest in the record</h2>' + latestList +
-      '<p class="now-more"><a href="#filings">Every filing, by proceeding</a> · <a href="#timeline">Full timeline</a></p></section>' +
-      "</div>" +
-      '<section aria-labelledby="ops-h"><span id="stand-h" class="jump-anchor"></span><h2 class="now-h" id="ops-h">Where each operator stands</h2>' + operatorTable() + "</section>" +
-      '<section class="xw" aria-labelledby="xw-h"><h2 class="now-h" id="xw-h">Asked and answered, by reform</h2>' +
-      '<p class="xw-lede">For each of the five reforms: what DOE proposed, what each June order says, and what each operator filed. A filled marker means a point read from that operator’s filing addresses the reform.</p>' +
+    // Status by operator comes first (the default subtab), then the Nov 16 brief and the dates.
+    return jumps + '<section aria-labelledby="ops-h"><span id="stand-h" class="jump-anchor"></span><h2 class="now-h" id="ops-h">Status by operator</h2>' + operatorTable() + "</section>" +
+      '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' + esc(f.title) + "</h2><p>" + esc(f.answer) + "</p><div>" + links + "</div></section>" +
+      '<section class="now-card now-next-card" aria-labelledby="now-next-h"><h2 id="now-next-h">Deadlines</h2>' + nextList + "</section>" +
+      '<section class="xw" aria-labelledby="xw-h"><h2 class="now-h" id="xw-h">Filings by reform</h2>' +
+      '<p class="xw-lede">Filled marker: the filing addresses the reform.</p>' +
       '<div id="xwalk"><p class="cm-loading" role="status">Loading the comparison…</p></div></section>' +
       '<section aria-labelledby="tg-h"><h2 class="now-h" id="tg-h">The record so far</h2>' + timelineGraphic() + "</section>" +
-      accSection("Status by proceeding", "One line per proceeding, as of the last sweep.", renderStandStrip(), false, Object.keys(D.tracks || {}).length) +
+      accSection("Status by proceeding", "", renderStandStrip(), false, Object.keys(D.tracks || {}).length) +
       accSection("The 60-day clock and who has filed", "The procedural steps every order set, and what each operator filed against them.", renderProcedural(), false, null, "acc-clock") +
       accSection("Background: from the DOE directive to the June orders", "", paras(m.summary) + glance, false, null);
   }
@@ -704,7 +706,7 @@
         : '<span class="trk-next none">' + esc((t.next && t.next.label) || "No dated step") + "</span>";
       return '<button type="button" class="trk-card" data-track="' + esc(id) + '" aria-pressed="false">' +
         '<span class="trk-head"><span class="trk-label">' + esc(t.label) +
-        '</span><span class="trk-n mono">' + n + (n === 1 ? " event" : " events") + "</span></span>" +
+        "</span></span>" +
         '<span class="trk-venue mono">' + esc(t.venue || "Not a docket") + "</span>" +
         '<span class="trk-what">' + esc(t.what) + "</span>" +
         '<span class="trk-why"><span class="trk-why-lbl">Why it is separate</span> ' + esc(t.whySeparate) + "</span>" +
@@ -725,13 +727,12 @@
       chips.map(function (c) {
         return '<button type="button" class="trk-chip" data-track="' + esc(c.id) +
           '" aria-pressed="' + (c.id === "all" ? "true" : "false") + '" title="' + esc(c.label) + '">' +
-          esc(c.short) + ' <span class="trk-chip-n mono">' + c.n + "</span></button>";
+          esc(c.short) + "</button>";
       }).join("") + "</div>";
   }
 
   // Newest first: what is ahead, then what happened, most recent at the top. A row is the date, the
-  // title and its lane; the body and sources open on demand, except for the six most recent and every
-  // future step, which stay open because they are what a returning reader came for.
+  // title and its lane; the body and sources open on demand. Nothing starts open.
   function renderTimeline() {
     var today = todayISO();
     var dated = D.timeline.map(function (e, i) { return { e: e, i: i, iso: isoOf(e) }; });
@@ -739,18 +740,18 @@
     var past = dated.filter(function (x) { return !x.iso || x.iso <= today; }).sort(function (a, b) { return a.iso > b.iso ? -1 : a.iso < b.iso ? 1 : b.i - a.i; });
     var row = function (x, open) {
       var e = x.e;
-      return '<details class="tl-item ' + e.kind + '" id="tl-' + esc(e.iso || "") + '" data-iso="' + esc(e.iso || "") + '" data-track="' + esc(e.track || "") + '"' + (open ? " open" : "") + '><summary><span class="tl-date mono">' + esc(e.date) +
+      return '<details class="tl-item ' + e.kind + '" id="tl-' + esc(e.iso || "") + '" data-iso="' + esc(e.iso || "") + '" data-track="' + esc(e.track || "") + '"><summary><span class="tl-date mono">' + esc(e.date) +
         '</span><span class="tl-title">' + esc(e.title) + '</span><span class="tl-pills"><span class="kindpill ' + e.kind + '">' + esc(e.kind) + "</span>" + trackPill(e.track) + "</span></summary>" +
         '<div class="tl-body">' + esc(e.body) + "</div>" + (e.doc ? '<p class="tl-doc"><a href="#filings/' + esc(e.doc) + '">Read the filing</a></p>' : "") + srcChips(e.src) + "</details>";
     };
     var top = '<div class="cards cols-3">' + D.toplines.map(function (c) {
       return '<div class="card analysis"><h3>' + esc(c.h) + "</h3>" + paras(c.body) + srcChips(c.src) + "</div>";
     }).join("") + "</div>";
-    return head("Timeline", D.timeline.length + " dated entries from the DOE directive (Oct 2025) to today, newest first, across five proceedings.") +
+    return head("Timeline", "") +
       trackChips() +
       '<span class="sr-only" role="status" aria-live="polite" id="tl-filterstatus"></span>' +
       (ahead.length ? '<h3 class="tl-sec">Ahead</h3><div class="timeline">' + ahead.map(function (x) { return row(x, true); }).join("") + "</div>" : "") +
-      '<h3 class="tl-sec" id="tl-latest">So far, newest first</h3><div class="timeline">' + past.map(function (x, i) { return row(x, i < 6); }).join("") + "</div>" +
+      '<h3 class="tl-sec" id="tl-latest">So far</h3><div class="timeline">' + past.map(function (x, i) { return row(x, i < 6); }).join("") + "</div>" +
       accSection("The five proceedings", "Each runs on its own clock.", trackCards(), false, TRACK_IDS.length) +
       accSection("Why six tailored orders instead of one rule", "Our reading of the strategic shift, with sources.", top, false, (D.toplines || []).length);
   }
@@ -814,7 +815,7 @@
   }
   function renderReforms() {
     var cats = D.categories.map(function (c, i) {
-      return '<details class="cat"' + (i === 0 ? " open" : "") + '><summary>' +
+      return '<details class="cat"><summary>' +
         '<span class="cat-no">' + c.n + "</span>" +
         '<span class="cat-title">' + esc(c.title) + "</span>" +
         '<span class="cat-chev">›</span></summary>' +
@@ -836,7 +837,7 @@
     }).join("") + "</div>";
 
     return '<span id="reforms-h" class="jump-anchor"></span>' + head("What the June 18 orders require",
-      "Six orders, one per grid operator, ask the same question: does the tariff work for large loads without these five reforms? Each operator had 60 days to defend its tariff or propose changes. Here is what each order asks, by reform, with the page.") +
+      "Each order asks whether the operator’s tariff works for large loads without five reforms.") +
       orderMatrix() +
       accSection("The five reforms: FERC's text and DOE's principles", "FERC's mandate text, quoted, with the DOE ANOPR mechanics behind each.", cats, false, D.categories.length) +
       accSection("Jurisdictional & contractual protections",
@@ -990,7 +991,7 @@
         d.respondentList.map(function (r) { return "<li>" + esc(r) + "</li>"; }).join("") + "</ul></details>" : "";
       // Accordion: collapsed by default (first open) so all cards fit on one screen; expand for detail.
       var track = d.track ? '<span class="docket-track">' + esc(d.track) + "</span>" : "";
-      return '<details class="docket' + (d.track ? " docket-colo" : "") + '" id="dk-' + esc(docketKey(d.docket)) + '"' + (idx === 0 ? " open" : "") + ">" +
+      return '<details class="docket' + (d.track ? " docket-colo" : "") + '" id="dk-' + esc(docketKey(d.docket)) + '"' + ">" +
         '<summary class="docket-sum"><span class="item">' + esc(d.item) + "</span>" +
         '<span class="docket-sum-id"><span class="rto">' + esc(d.rto) + "</span> " + track + '<span class="rto-full">' + esc(d.rtoFull) + "</span>" +
         '<span class="docket-cite mono">' + esc(d.cite) + " · " + esc(d.pages) + " pp · " + esc(d.respondents) + "</span></span>" +
@@ -998,10 +999,10 @@
         '<span class="chev" aria-hidden="true">›</span></summary>' +
         '<div class="docket-body"><div class="docket-sources">' + orderLink + pageLink + '</div>' + kindLine + abeyance + unique + directives + asks + briefing + commish + region + roster + "</div></details>";
     }
-    // The six §206 show cause orders, then the E-2 co-location order they build on (collapsed, labeled).
-    var six = D.dockets.map(renderDocketCard).join("");
+    // Two groups, each under a real heading at the same level: the six §206 orders, then E-2.
+    var six = '<h3 class="fg-sec">The six show cause orders</h3>' + D.dockets.map(renderDocketCard).join("");
     var colo = D.colocation
-      ? '<div class="docket-section-label">The order finalizing PJM’s co-location services</div>' + renderDocketCard(D.colocation, 1)
+      ? '<h3 class="fg-sec">PJM co-location order (E-2)</h3>' + renderDocketCard(D.colocation, 1)
       : "";
     var docs = '<div class="dockets">' + six + colo + "</div>";
 
@@ -1018,7 +1019,7 @@
     var participate = '<p class="lede" style="margin-bottom:14px">' + esc(p.intro) + "</p>" + partRows + partLinks;
 
     return head("The dockets: E-7 through E-12, plus the E-2 co-location order",
-      "Every §206 order runs the same spine: the five categories, the clock, and the jurisdictional line are in the Reforms tab; each card here is the region-specific variation. Open one for what’s unique to that system, the page-cited directives and distinct findings, the Section IV asks, what each commissioner said about that order, and every named respondent. After the six sits Item E-2 (EL25-49-002), the order on rehearing decided the same morning that finalizes the PJM co-location services the six extend.") +
+      "") +
       // AD26-7 gets a pointer, not a card. These accordions are backed by committed, page-cited order
       // PDFs; the governance conference has no primary document in the repo to quote. If FERC's
       // post-conference notice becomes one, that is the moment it earns a card here, and not before.
@@ -1026,7 +1027,7 @@
       'on its own clock, with no committed order to cite yet. ' +
       '<a class="cm-agg-link" href="#timeline/track/gov">See the governance track on the timeline <span aria-hidden="true">→</span></a></p>' +
       docs +
-      head("File or follow the dockets", "Every proceeding is open on the public record. Use the exact docket number on any submission.") + participate;
+      head("File or follow the dockets", "") + participate;
   }
 
   /* ---- TAB 3 ---- */
@@ -1083,7 +1084,7 @@
       .filter(function (b) { return b.items.length; }).sort(function (a, b) { return b.items.length - a.items.length; });
     var other = X.filter(function (i) { return !i.themes.length; });
     return buckets.map(function (b) {
-      return '<section class="dx-sec" id="dx-' + esc(b.k) + '"><h3>' + esc(L.themes[b.k]) + ' <span class="dx-n mono">' + b.items.length + '</span> <a class="dx-th-go" href="#filings/theme/' + esc(b.k) + '">Filings on this theme</a></h3>' + dxList(b.items, 6) + "</section>";
+      return '<section class="dx-sec" id="dx-' + esc(b.k) + '"><h3>' + esc(L.themes[b.k]) + ' <a class="dx-th-go" href="#filings/theme/' + esc(b.k) + '">Filings</a></h3>' + dxList(b.items, 6) + "</section>";
     }).join("") + (other.length ? '<section class="dx-sec"><h3>Other commentary <span class="dx-n mono">' + other.length + "</span></h3>" + dxList(other.sort(byDate), 6) + "</section>" : "");
   }
   function renderNews() {
@@ -1096,7 +1097,7 @@
     var toggle = '<div class="who-chips dx-views" role="group" aria-label="Arrange the discourse">' + [["theme", "By theme"], ["date", "By date"], ["who", "By speaker"]].map(function (v) {
       return '<button type="button" class="who-chip" data-view="' + v[0] + '" aria-pressed="' + (v[0] === discourseView) + '">' + v[1] + "</button>";
     }).join("") + "</div>";
-    return head("What people are saying", X.length + " quotes, views and filed positions, each linked to its source and the filings it discusses. Commentary as of " + (D.meta.commentaryCapture || D.meta.newsCapture) + ".") +
+    return head("What people are saying", "As of " + fmtISO(D.meta.commentaryCapture || D.meta.newsCapture) + ".") +
       toggle + '<article class="state-lead"><h3><a href="reading/positions.html#state-commissions">' + esc(D.meta.stateLead.title) + "</a></h3><p>" + esc(D.meta.stateLead.text) + "</p>" + publicSrcChips(D.meta.stateLead.sources) + "</article>" +
       '<div class="dx-view" id="dx-view">' + renderDiscourseView(discourseView) + "</div>" +
       accSection("Where it’s being covered", "Each links to the cited source.", '<div class="outlets">' + outletChips + "</div>", false, outletIds.length) +
@@ -1405,32 +1406,31 @@
       }).join("") + '</select></label>';
     var secIssue = '<section class="cm-sec" id="cmsec-issue" role="tabpanel" aria-labelledby="cmsub-issue" hidden>' +
       head("Read the record by issue",
-        "Pick a question, principle, region, or recurring topic and read every letter’s position on it, grouped by where the filer stands, with the verbatim quotes behind each. Positions are AI-audited and provisional, traceable to the quotes; organizations only.") +
+        "Positions are AI-audited and provisional. Each traces to its quotes.") +
       '<div class="cm-issues">' + issuePicker + '<nav class="cm-issue-outline" aria-label="Issue outline">' + issueOutlineHtml + "</nav>" +
       '<div class="cm-issue-reader" id="cm-issue-reader" aria-live="polite">' + policyMapLanding + "</div></div></section>";
 
     var secOverview = '<section class="cm-sec" id="cmsec-overview" role="tabpanel" aria-labelledby="cmsub-overview">' +
       head("The RM26-4 comment period",
-        CM.total + " comments were filed on DOE's large-load ANOPR (Docket RM26-4-000) between " + fmtD(CM.dateRange.first) + " and " + fmtD(CM.dateRange.last) +
-        ", scraped from FERC eLibrary on " + CM.captured + ". Where commenters land and which camps agree is below; the whole record, by issue or by filer, is on the By-issue and All-comments tabs.") +
+        CM.total + " comments on DOE’s ANOPR (RM26-4), " + fmtD(CM.dateRange.first) + " to " + fmtD(CM.dateRange.last) + ".") +
       (D.policyMap && D.policyMap.length
         ? '<a class="cm-pm-promo" href="#' + window.CommentsRoute.serialize({ sub: "issue" }) + '">' +
           '<span class="cm-pm-promo-k">The policy map</span>' +
           '<span class="cm-pm-promo-t">See what the June 18 orders did with each issue, and where it goes next on the §206 clock <span aria-hidden="true">→</span></span></a>'
         : "") +
       statRow + coverageLine + rounds +
-      (regions ? head("Which RTO/ISO each comment engages", "Comments that specifically name-check one of the six regions, drawn from the same audit as the reform-principle read below. A floor, not a full count: roughly 60% of the corpus carries no region tag at all, either because the letter argues at the policy level or because the audit pass didn't catch a region-specific mention. Open a region to read every comment engaging it.") + regions : "") +
-      head("Where commenters land on each reform", "For each of the five June-order reform principles, the share of audited summaries whose filer supports, opposes, is mixed, or takes no position; read from the filer's own words. Across " + CM.summarized2 + " audited filings. Follow a principle to read the record on it.") + stanceBars +
-      head("Where each stakeholder type stands", "The same audited stances, split by camp: each cell is a stakeholder type's net position on one reform (support minus oppose), the number its audited letters engaging it. Support is broad; the friction shows where cells turn amber (contested). Top twelve camps by engagement. Open a cell to read that reform by issue.") + consensusMap +
-      accSection("Top themes", "How often each issue surfaces across the " + CM.analyzed + " text-analyzed bodies: a measured keyword prevalence, not a coding of each filer's position.", themes, false, (CM.themes || []).length) +
+      (regions ? head("Which RTO/ISO each comment engages", "Only comments that name a region. About 60% name none.") + regions : "") +
+      head("Where commenters land on each reform", "Share of audited letters that support, oppose or are mixed.") + stanceBars +
+      head("Where each stakeholder type stands", "Net position, support minus oppose. Amber is contested.") + consensusMap +
+      accSection("Top themes", "How often each issue appears in the comment text, by keyword. It does not code each filer’s position.", themes, false, (CM.themes || []).length) +
       "</section>";
 
     var secTypes = '<section class="cm-sec" id="cmsec-types" role="tabpanel" aria-labelledby="cmsub-types" hidden>' +
-      head("Who commented", "Every organization that filed, grouped by stakeholder type. The number is filings; larger camps list the first three: open “Show all” for the full roster. Types are keyword-derived from the filer and the filing text.") + types +
+      head("Who commented", "Stakeholder types are assigned by keyword.") + types +
       "</section>";
 
     var secSummaries = '<section class="cm-sec" id="cmsec-summaries" role="tabpanel" aria-labelledby="cmsub-summaries" hidden>' +
-      head("All " + CM.total + " comments, in filing order", "Grouped by comment round, oldest first. " + CM.summarized2 + " carry an audited summary; open “Read the audited analysis” on any row for the plain read, then each position grouped by lens with its description and the verbatim quotes behind it. Open Tags to filter by question, principle, region, round, or stance; the tokens stack (AND), and free text narrows further.") +
+      head("All comments", "") +
       workbench + tagBar + '<div class="cm-listwrap">' + listHtml + '</div><p class="cm-empty" id="cm-empty" role="status" hidden>No comments match your filters. Remove a token or broaden the search.</p>' + src +
       '<span class="sr-only" role="status" aria-live="polite" id="cm-copystatus"></span></section>';
 
@@ -1734,7 +1734,7 @@
       if (!b) return;
       selectIssue(b.dataset.issue, b.dataset.slug, true);
       var reader = document.getElementById("cm-issue-reader");
-      if (reader) reader.scrollIntoView({ block: "nearest" }); // bring the reader into view on stacked/mobile
+      if (reader) show(reader, { block: "nearest" }); // bring the reader into view on stacked/mobile
     });
 
     // apply a route requested from the URL: select a sub-tab, deep-link an issue, or open a permalinked row.
@@ -1747,7 +1747,7 @@
         if (row) {
           var det = row.querySelector(".cm-analysis");
           if (det && !det.open) det.open = true; // fires 'toggle' -> lazy-loads the quotes
-          row.scrollIntoView({ block: "start" });
+          show(row, { block: "start" });
           row.classList.add("cm-row-flash");
           setTimeout(function () { row.classList.remove("cm-row-flash"); }, 1800);
         }
@@ -1812,7 +1812,6 @@
     return p.length === 3 ? p[0] * 3600 + p[1] * 60 + p[2] : p.length === 2 ? p[0] * 60 + p[1] : 0;
   }
   function slugify(x) { return String(x).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
-  var REL_LABEL = { responds: "Answers the order", implements: "Carries out the order", parallel: "Parallel proceeding", precursor: "Came before the order", procedural: "Changes the schedule", context: "Background" };
   function anchorChip(R, id) {
     var a = R.anchors[id];
     if (!a) return "";
@@ -1821,10 +1820,22 @@
   }
   function linkLine(R, link, cls) {
     if (!link) return "";
-    return '<div class="' + cls + '"><p><span class="rel rel-' + esc(link.relation) + '">' + esc(REL_LABEL[link.relation] || link.relation) + "</span> " + esc(link.text) + "</p>" +
+    return '<div class="' + cls + '"><p>' + esc(link.text) + "</p>" +
       (link.anchors && link.anchors.length ? '<div class="oa-list">' + link.anchors.map(function (id) { return anchorChip(R, id); }).join("") + "</div>" : "") + "</div>";
   }
   function themeLabel(R, k) { var t = (R.themes || []).filter(function (x) { return x.key === k; })[0]; return t ? t.label : k; }
+  // FERC's document type says what form a filing takes, not what it does. Readers see what it does.
+  var KIND_ROLE = {
+    "answer": "Replies to another filing", "answer supporting extension": "Supports a delay", "reply letter": "Replies to another filing",
+    "motion": "Procedural motion", "motion for abeyance": "Asks FERC to pause the case", "conditional motion for abeyance": "Asks FERC to pause the case, conditionally",
+    "motion to rescind": "Asks FERC to withdraw the order", "motion for extension of time": "Asks for more time",
+    "request": "Asks FERC for a fix", "rehearing request": "Asks FERC to reconsider", "request for rehearing": "Asks FERC to reconsider",
+    "request for clarification": "Asks FERC to clarify", "protest": "Opposes", "limited protest": "Opposes in part",
+    "filing": "Proposal", "tariff filing": "Proposed tariff change", "tariff amendment": "Amends a proposed tariff", "§205 refiling": "Refiled proposal",
+    "compliance filing": "Complies with an order", "order": "FERC order", "errata": "Correction", "informational report": "Report to FERC",
+    "congressional letter": "Letter from Congress"
+  };
+  function kindRole(k) { return KIND_ROLE[k] || (k ? k.charAt(0).toUpperCase() + k.slice(1) : ""); }
   function docCard(R, g, d) {
     var body = d.summary
       ? '<p class="fd-sum">' + esc(d.summary) + "</p>" +
@@ -1835,7 +1846,7 @@
     var tags = (d.themes || []).map(function (t) { return '<span class="tag">' + esc(themeLabel(R, t)) + "</span>"; }).join("");
     var hay = [d.filer, (d.filers || []).join(" "), d.kind, d.title, d.docket, d.accession, g.title, g.short, d.summary].join(" ").toLowerCase();
     return '<details class="fdoc" id="fd-' + esc(d.slug) + '" data-themes="' + esc((d.themes || []).join(" ")) + '" data-q="' + esc(hay) + '"><summary>' +
-      '<span class="fd-date mono">' + esc(fmtISO(d.date)) + '</span><span class="fd-who">' + esc(d.filer) + '</span><span class="fd-kind">' + esc(d.kind) +
+      '<span class="fd-date mono">' + esc(fmtISO(d.date)) + '</span><span class="fd-who">' + esc(d.filer) + '</span><span class="fd-kind">' + esc(kindRole(d.kind)) +
       (d.side ? ' · <span class="side-tag side-' + esc(d.side) + '">' + esc(SIDE_LABEL[d.side] || d.side) + "</span>" : "") + "</span>" +
       (d.summary ? '<span class="fd-tease">' + esc(d.summary) + "</span>" : '<span class="fd-unread">not yet read</span>') + "</summary>" +
       '<div class="fd-body">' + body + '<p class="fd-tools">' + tags +
@@ -1911,13 +1922,11 @@
   function renderFilings() {
     var R = window.FERC_RECORD;
     if (!R || !R.groups) return head("Filings", "The filings record did not load (js/record-data.js).");
-    var total = R.groups.reduce(function (n, g) { return n + g.docs.length; }, 0);
-    var read = R.groups.reduce(function (n, g) { return n + g.docs.filter(function (d) { return d.summary; }).length; }, 0);
     var counts = {};
     R.groups.forEach(function (g) { g.docs.forEach(function (d) { (d.themes || []).forEach(function (t) { counts[t] = (counts[t] || 0) + 1; }); }); });
-    var chips = '<div class="who-chips th-chips" role="group" aria-label="Show one theme"><button type="button" class="who-chip" data-theme="" aria-pressed="true">All <span class="mono">' + total + "</span></button>" +
+    var chips = '<div class="who-chips th-chips" role="group" aria-label="Show one theme"><button type="button" class="who-chip" data-theme="" aria-pressed="true">All</button>' +
       R.themes.filter(function (t) { return counts[t.key]; }).map(function (t) {
-        return '<button type="button" class="who-chip" data-theme="' + esc(t.key) + '" aria-pressed="false" title="' + esc(t.gloss) + '">' + esc(t.label) + ' <span class="mono">' + counts[t.key] + "</span></button>";
+        return '<button type="button" class="who-chip" data-theme="' + esc(t.key) + '" aria-pressed="false" title="' + esc(t.gloss) + '">' + esc(t.label) + "</button>";
       }).join("") + '</div><p class="fg-live" role="status" aria-live="polite"></p>';
     var find = '<div class="fg-find"><label for="fg-q">Find a document</label><input type="search" id="fg-q" placeholder="Filer, docket or any word" autocomplete="off" /></div>';
     var all = [];
@@ -1925,19 +1934,19 @@
     all.sort(function (a, b) { return a.d.date < b.d.date ? 1 : a.d.date > b.d.date ? -1 : 0; });
     var newest = all.length ? '<section class="fl" aria-labelledby="fl-h"><h3 class="fg-sec" id="fl-h">Newest documents</h3><ol class="fl-list">' + all.slice(0, FL_MAX).map(function (x) {
       return '<li><a href="#filings/' + esc(x.g.id) + "/" + esc(x.d.slug) + '"><span class="fl-date mono">' + esc(fmtISO(x.d.date).replace(/, \d{4}$/, "")) + '</span><span class="fl-who">' + esc(x.d.filer) +
-        '</span><span class="fl-what">' + esc(x.d.kind) + " · " + esc(x.g.short || x.g.title) + "</span></a></li>";
+        '</span><span class="fl-what">' + esc(kindRole(x.d.kind)) + " · " + esc(x.g.short || x.g.title) + "</span></a></li>";
     }).join("") + "</ol></section>" : "";
     var group = function (g) {
       return '<details class="fgroup" id="fg-' + esc(g.id) + '"><summary class="fg-sum"><span class="fg-h" role="heading" aria-level="3">' + esc(g.title) +
-        ' <span class="fg-docket mono">' + esc(g.docket) + '</span></span><span class="fg-n"><span class="mono">' + g.docs.length + "</span> " + (g.docs.length === 1 ? "document" : "documents") +
-        ' · latest <span class="mono">' + esc(fmtISO(g.newest).replace(/, \d{4}$/, "")) + "</span></span></summary>" +
+        ' <span class="fg-docket mono">' + esc(g.docket) + '</span></span><span class="fg-n">Latest' +
+        ' <span class="mono">' + esc(fmtISO(g.newest).replace(/, \d{4}$/, "")) + "</span></span></summary>" +
         '<div class="fg-body">' + linkLine(R, g.link, "fg-link") +
         (g.about ? '<p class="fg-about">' + esc(g.about) + "</p>" : "") + (g.status ? '<p class="fg-status">' + esc(g.status) + "</p>" : "") +
         '<div class="fdocs">' + g.docs.map(function (d) { return docCard(R, g, d); }).join("") + "</div></div></details>";
     };
     var sc = R.groups.filter(function (g) { return g.kind === "show-cause"; }), rel = R.groups.filter(function (g) { return g.kind !== "show-cause"; });
     return head("Filings since the June 18 orders",
-      total + " documents in " + R.groups.length + " proceedings, newest first inside each. Every reading quotes only its own document, with the page, and names the order directive it bears on." + (read < total ? " " + (total - read) + " documents are listed but not yet read." : "")) +
+      "") +
       find + chips + newest +
       '<h3 class="fg-sec">The six show cause dockets</h3>' + sc.map(group).join("") +
       '<h3 class="fg-sec">Related proceedings</h3>' + rel.map(group).join("") +
@@ -1971,6 +1980,14 @@
       else if (!active && g.hasAttribute("data-auto")) { g.removeAttribute("data-auto"); if (!g.querySelector(".fdoc[open]")) g.open = false; }
     });
     panel.querySelectorAll(".fl, .fg-sec").forEach(function (el) { el.hidden = active; });
+    // A search or theme filter looks across every pane, not only the open one.
+    // While filtering, every pane shows and the bar steps aside; clearing the filter restores the picked pane.
+    var bar = panel.querySelector(".st-bar");
+    if (bar) {
+      bar.hidden = !!active;
+      if (active) panel.querySelectorAll(".st-pane").forEach(function (x) { x.hidden = false; });
+      else pickSubtab("filings", subtabPick.filings || SUBTABS.filings[0][0]);
+    }
     // A chip's number is what tapping it would show, so it counts against the typed query.
     var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return !q || d.getAttribute("data-q").indexOf(q) >= 0; });
     panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) {
@@ -2013,9 +2030,9 @@
     if (solo && solo.length === 1) doc = solo[0];
     // A document can move between proceedings (sc-miso to miso-irr): open the group that holds it.
     if (doc) { grp = doc.closest(".fgroup") || grp; grp.open = true; doc.open = true; filingHash = grp.id.slice(3) + "/" + doc.id.slice(3); }
-    (doc || grp).scrollIntoView({ block: "start" });
+    show((doc || grp), { block: "start" });
     focusSummary(doc || grp);
-    loadPoints(grp, function () { if (doc) doc.scrollIntoView({ block: "start" }); });
+    loadPoints(grp, function () { if (doc) show(doc, { block: "start" }); });
     setCrumbs("filings", filingHash);
   }
   function wireFilings() {
@@ -2106,7 +2123,7 @@
     }).join("");
     var spoken = vids.length ? '<section class="appears" id="appears">' + appear + '<p class="appears-none" hidden>Nothing from this commissioner in the videos read so far.</p></section>'
       : '<p class="cm-loading">The video record did not load (js/record-data.js).</p>';
-    return head("Commissioners", "FERC has five commissioners; Laura Swett is Chairman. What they have said in public since the June 18 orders, newest first, then the written statements each attached to those orders. Video quotations use the linked captions; automatic captions can contain transcription errors.") +
+    return head("Commissioners", "Video quotes use the captions, which can contain errors.") +
       chips + '<p><a href="reading/senate-ferc-oversight-20260722/">July 22 Senate hearing: all five commissioners’ testimony and written answers</a></p>' + '<p class="sq-jump"><button type="button" class="jump-btn-plain" data-jump="#commish-h">Jump to the June 18 written statements ↓</button></p>' +
       spoken + renderJuneStatements();
   }
@@ -2153,7 +2170,7 @@
 
   /* ---- tablist ---- */
   // Reforms has no tab of its own: the five reform categories open the Orders (dockets) tab. "#reforms" still routes there.
-  var TABS = ["overview", "dockets", "filings", "timeline", "comments", "news", "commissioners"];
+  var TABS = ["overview", "comments", "dockets", "filings", "timeline", "news", "commissioners"];
   var renderers = { overview: renderOverview, timeline: renderTimeline, dockets: function () { return renderReforms() + renderDockets(); }, filings: renderFilings, commissioners: renderCommissioners, comments: renderComments, news: renderNews };
   var afterRender = { overview: loadCrosswalk, news: wireNews, comments: wireComments, timeline: wireTimeline, filings: wireFilings, commissioners: wireCommissioners };
   // Overview jump row: delegated once, so it works whichever render pass drew the buttons. Buttons, not
@@ -2164,7 +2181,7 @@
     var t = document.querySelector(b.getAttribute("data-jump"));
     if (!t) return;
     if (t.tagName === "DETAILS") t.open = true;
-    t.scrollIntoView({ block: "start" });
+    show(t, { block: "start" });
     if (!t.hasAttribute("tabindex")) t.setAttribute("tabindex", "-1");
     t.focus({ preventScroll: true });
   });
@@ -2208,7 +2225,7 @@
     var el = id && document.getElementById(id);
     if (!el) return false;
     if (el.tagName === "DETAILS") el.open = true;
-    el.scrollIntoView({ block: "start" });
+    show(el, { block: "start" });
     focusSummary(el);
     return true;
   }
@@ -2227,7 +2244,7 @@
   }
   // Switch tabs from the hash/router, routing the Comments sub-state through the comments module.
   function goTab(tab, rest, focus) {
-    if (tab === "reforms") { activate("dockets", focus); var rh = document.getElementById("reforms-h"); if (rh) rh.scrollIntoView({ block: "start" }); setCrumbs("dockets", ""); return; }
+    if (tab === "reforms") { activate("dockets", focus); var rh = document.getElementById("reforms-h"); if (rh) show(rh, { block: "start" }); setCrumbs("dockets", ""); return; }
     if (TABS.indexOf(tab) < 0) tab = "overview";
     if (tab === "comments") {
       var state = window.CommentsRoute.parse(rest);
@@ -2293,7 +2310,68 @@
   var lazyLoading = {};
   function renderInto(name, panel) {
     panel.innerHTML = renderers[name](); rendered[name] = true;
+    subtabify(name, panel);
     if (afterRender[name]) afterRender[name]();
+  }
+
+  // Subtabs: each tab's long page splits into panes, one shown at a time. A pane runs from its start
+  // element (a direct child of the panel, [selector, index among matches]) to the next pane's start;
+  // anything before the first pane stays visible above the bar. Comments has its own bar already.
+  var SUBTABS = {
+    overview: [["operators", "Status by operator", "section[aria-labelledby=ops-h]"], ["filed", "Nov 16 filings", ".filing-brief"], ["next", "Deadlines", ".now-next-card"],
+      ["reforms", "By reform", ".xw"], ["record", "Record so far", "section[aria-labelledby=tg-h]"], ["background", "Background", "details.acc"]],
+    dockets: [["june", "June 18 orders", "#reforms-h"], ["reforms", "Five reforms", "details.acc"], ["dockets", "Dockets", ".section-head", 1], ["follow", "File or follow", ".section-head", 2]],
+    filings: [["newest", "Newest", ".fl"], ["showcause", "Show cause dockets", ".fg-sec", 0], ["related", "Related proceedings", ".fg-sec", 1], ["numbers", "Numbers cited", "details.acc"]],
+    timeline: [["ahead", "Ahead", ".tl-sec", 0], ["sofar", "So far", "#tl-latest"], ["background", "Background", "details.acc"]],
+    commissioners: [["appearances", "Appearances", "section#appears"], ["june", "June 18 statements", "#commish-h"]]
+  };
+  var subtabPick = {};
+  function subtabify(name, panel) {
+    var defs = SUBTABS[name];
+    if (!defs) return;
+    var root = panel.children.length === 1 && !panel.firstElementChild.matches("section, details") ? panel.firstElementChild : panel;
+    var kids = [].slice.call(root.children);
+    var starts = defs.map(function (d) {
+      var hits = kids.filter(function (k) { return k.matches(d[2]); });
+      return hits[d[3] || 0];
+    });
+    if (starts.some(function (x) { return !x; })) { console.error("subtabs: a pane start is missing in " + name); return; }
+    if (starts.some(function (x, i) { return i && kids.indexOf(x) < kids.indexOf(starts[i - 1]); })) { console.error("subtabs: panes out of page order in " + name); return; }
+    // In-page jump links duplicate the bar.
+    kids.forEach(function (k) { if (k.matches(".jump-row, .sq-jump")) k.remove(); });
+    var wrap = document.createElement("div"); wrap.className = "st-wrap";
+    var bar = document.createElement("div"); bar.className = "cm-subtabs st-bar"; bar.setAttribute("role", "tablist"); bar.setAttribute("aria-label", "Sections");
+    starts[0].parentNode.insertBefore(bar, starts[0]);
+    bar.parentNode.insertBefore(wrap, bar.nextSibling);
+    var pick = subtabPick[name] || defs[0][0];
+    defs.forEach(function (d, i) {
+      var pane = document.createElement("div"); pane.className = "st-pane"; pane.id = "stp-" + name + "-" + d[0]; pane.setAttribute("role", "tabpanel"); pane.setAttribute("aria-labelledby", "st-" + name + "-" + d[0]);
+      // Collect from this pane's start up to the next pane's start (or the end of the panel).
+      for (var el = starts[i], stop = starts[i + 1] || null; el && el !== stop; ) { var nx = el.nextElementSibling; pane.appendChild(el); el = nx; }
+      pane.hidden = d[0] !== pick;
+      wrap.appendChild(pane);
+      var b = document.createElement("button"); b.type = "button"; b.className = "cm-subtab st-tab"; b.id = "st-" + name + "-" + d[0]; b.setAttribute("role", "tab"); b.setAttribute("aria-controls", pane.id);
+      b.setAttribute("aria-selected", d[0] === pick ? "true" : "false"); b.tabIndex = d[0] === pick ? 0 : -1; b.textContent = d[1];
+      b.addEventListener("click", function () { pickSubtab(name, d[0]); });
+      b.addEventListener("keydown", function (e) {
+        var j = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 : null;
+        if (j === null) return;
+        e.preventDefault(); j = (j + defs.length) % defs.length; pickSubtab(name, defs[j][0]); document.getElementById("st-" + name + "-" + defs[j][0]).focus();
+      });
+      bar.appendChild(b);
+    });
+  }
+  function pickSubtab(name, key) {
+    subtabPick[name] = key;
+    var panel = panelFor(name);
+    panel.querySelectorAll(".st-tab").forEach(function (b) { var on = b.id === "st-" + name + "-" + key; b.setAttribute("aria-selected", on ? "true" : "false"); b.tabIndex = on ? 0 : -1; });
+    panel.querySelectorAll(".st-pane").forEach(function (p) { p.hidden = p.id !== "stp-" + name + "-" + key; });
+  }
+  // Anything that scrolls to or opens an element first shows the pane holding it.
+  function show(el, opts) {
+    var pane = el && el.closest && el.closest(".st-pane");
+    if (pane && pane.hidden) { var m = pane.id.match(/^stp-([a-z]+)-(.+)$/); if (m) pickSubtab(m[1], m[2]); }
+    if (el) el.scrollIntoView(opts);
   }
   function loadLazy(name, panel) {
     var spec = LAZY[name];
@@ -2329,7 +2407,7 @@
 
   // "You are here": tab › proceeding › document (Filings) or tab › track (Timeline). Each step links back
   // up one level, so a reader deep in a filing is one tap from the proceeding and two from the list.
-  var TAB_LABEL = { overview: "Now", dockets: "Orders", filings: "Filings", news: "Discourse", timeline: "Timeline", commissioners: "Commissioners", comments: "ANOPR comments" };
+  var TAB_LABEL = { overview: "Now", dockets: "Show Cause Orders", filings: "Filings", news: "Discourse", timeline: "Timeline", commissioners: "Commissioners", comments: "ANOPR" };
   function setCrumbs(name, rest) {
     var el = document.getElementById("crumbs");
     if (!el) return;

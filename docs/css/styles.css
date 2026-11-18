@@ -618,7 +618,7 @@ details.dcom .commish-rows { display: grid; gap: 10px; margin-top: 8px; }
 .commish-aside .commish-quote { margin-top: 2px; }
 
 /* E-2 co-location order — distinguished from the six §206 cards */
-.docket-section-label { grid-column: 1 / -1; margin: 16px 2px 2px; font-size: 11px; font-weight: 700; text-transform: none; letter-spacing: 0; color: var(--text-muted); }
+.dockets > .fg-sec { grid-column: 1 / -1; }
 .docket-track { flex: none; font-size: 10px; font-weight: 700; text-transform: none; letter-spacing: 0; color: var(--accent); background: var(--accent-wash); border: 1px solid var(--rule-strong); border-radius: 999px; padding: 1px 8px; }
 .docket.docket-colo { border-left: 4px solid var(--accent); }
 .docket-kind { font-size: 11px; font-weight: 700; text-transform: none; letter-spacing: 0; color: var(--accent-ink); margin-bottom: 4px; }
@@ -1253,7 +1253,8 @@ a.trackpill:hover { border-color: var(--accent); color: var(--accent-ink); }
 .ot thead th { font-size: 13px; font-weight: 600; color: var(--text-muted); background: var(--surface-2); border-top: none; }
 .ot th[scope="row"] { font-weight: 700; white-space: nowrap; }
 .ot-item { display: block; font-weight: 400; font-size: 12.5px; color: var(--text-muted); }
-.ot-due { white-space: nowrap; font-weight: 600; }
+.ot-due { width: 30%; }
+.ot-due .mono { font-weight: 600; white-space: nowrap; }
 .ot-days { display: block; font-weight: 400; font-size: 12.5px; color: var(--deadline); }
 .ot-status { font-weight: 600; font-size: 12.5px; padding: 1px 7px; border-radius: 4px; background: var(--surface-2); margin-right: 4px; white-space: nowrap; }
 .ot-status.st-filed-verified, .ot-status.st-filed-reported { background: var(--ok-wash); color: var(--ok); }
@@ -1307,7 +1308,8 @@ a.trackpill:hover { border-color: var(--accent); color: var(--accent-ink); }
   .th-chips::-webkit-scrollbar { display: none; }
   .th-chips .who-chip { flex: 0 0 auto; }
 }
-.fg-sec { font-size: 15px; font-weight: 700; color: var(--text-secondary); margin: 22px 0 6px; }
+/* Group heading under a section h2: one style everywhere (Orders, Filings, Timeline). */
+.fg-sec, .tl-sec { font-family: var(--font-serif); font-size: 19px; font-weight: 700; color: var(--ink); margin: 24px 0 8px; }
 .fgroup { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; margin: 6px 0; }
 .fgroup[hidden] { display: none; }
 .fg-sum { cursor: pointer; list-style: none; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 14px; padding: 11px 14px; }
@@ -1318,8 +1320,6 @@ a.trackpill:hover { border-color: var(--accent); color: var(--accent-ink); }
 .fg-body { padding: 0 14px 12px; border-top: 1px solid var(--rule); }
 .fg-link, .fd-link { margin: 10px 0 8px; }
 .fg-link p, .fd-link p { margin-bottom: 6px; font-size: 14.5px; }
-.rel { display: inline-block; font-size: 12px; font-weight: 700; padding: 1px 7px; border-radius: 4px; background: var(--accent-wash); color: var(--accent-ink); margin-right: 4px; }
-.rel-context, .rel-procedural { background: var(--surface-2); color: var(--text-secondary); }
 .fg-about { font-size: 14.5px; color: var(--text-secondary); margin: 6px 0 2px; }
 .fg-status { font-size: 13.5px; color: var(--text-muted); margin-bottom: 6px; }
 .fdocs { border-top: 1px solid var(--rule); margin-top: 8px; }
@@ -1379,7 +1379,6 @@ a.trackpill:hover { border-color: var(--accent); color: var(--accent-ink); }
 @media (pointer: coarse) { .dx-more, .dx-go, .dx-th-go { min-height: 44px; display: inline-flex; align-items: center; } }
 
 /* Timeline: one row per entry, details on demand */
-.tl-sec { font-size: 15px; font-weight: 700; color: var(--text-secondary); margin: 18px 0 4px; }
 .timeline { border-top: 1px solid var(--rule); }
 details.tl-item { border-bottom: 1px solid var(--rule); padding: 0; margin: 0; background: none; }
 details.tl-item > summary { cursor: pointer; list-style: none; display: grid; grid-template-columns: 116px minmax(0, 1fr) auto; column-gap: 12px; align-items: baseline; padding: 8px 0; }
@@ -1528,3 +1527,13 @@ details.tl-item .srcs { padding: 0 0 10px 128px; }
   .masthead-fresh .mh-next { display: block; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
 .filing-brief { margin: 0 0 14px; }
+
+
+/* Nov 16 filings compared: reforms x markets (app.js xwTable). */
+.xw-t-wrap { margin: 0 0 20px; }
+.xw-t { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 13.5px; }
+.xw-t caption { text-align: left; font-weight: 700; padding: 0 0 8px; }
+.xw-t th, .xw-t td { border-top: 1px solid var(--rule); padding: 8px; text-align: left; vertical-align: top; }
+.xw-t thead th { border-top: 0; color: var(--text-muted); font-size: 12.5px; }
+.xw-t tbody th { width: 9rem; }
+.xw-t-none { color: var(--text-muted); }

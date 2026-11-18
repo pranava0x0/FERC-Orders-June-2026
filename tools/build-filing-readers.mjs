@@ -28,7 +28,7 @@ const css=readFileSync(join(root,'docs/css/reading.css'));
 const ver=createHash('sha256').update(css).digest('hex').slice(0,10);
 function frame(title,desc,content,sub='',extra=''){
   const url=SITE+sub,b=sub.includes('/')?'../../':'../';
-  return '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+esc(title)+' | Large Load Interconnection</title><meta name="description" content="'+esc(desc)+'"><link rel="canonical" href="'+esc(url)+'"><meta property="og:title" content="'+esc(title)+'"><meta property="og:description" content="'+esc(desc)+'"><link rel="stylesheet" href="'+b+'css/reading.css?v='+ver+'">'+extra+'</head><body><a class="skip" href="#main">Skip to content</a><header><nav aria-label="Site"><a href="'+b+'">Large Load Interconnection</a><a href="'+b+'#filings">Filings</a><a href="'+(sub.includes('/')?'../':'./')+'">Reading room</a></nav></header><main id="main">'+content+'</main><footer>Independent analysis of public records. <a href="https://pranavaraparla.com" target="_blank" rel="noopener noreferrer">Pranava Raparla</a> · <a href="https://github.com/pranava0x0/ferc-large-load-proceedings" target="_blank" rel="noopener noreferrer">Source repository</a></footer></body></html>\n';
+  return '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+esc(title)+' | FERC Large Load Proceedings</title><meta name="description" content="'+esc(desc)+'"><link rel="canonical" href="'+esc(url)+'"><meta property="og:title" content="'+esc(title)+'"><meta property="og:description" content="'+esc(desc)+'"><link rel="stylesheet" href="'+b+'css/reading.css?v='+ver+'">'+extra+'</head><body><a class="skip" href="#main">Skip to content</a><header><nav aria-label="Site"><a href="'+b+'">FERC Large Load Proceedings</a><a href="'+b+'#filings">Filings</a><a href="'+(sub.includes('/')?'../':'./')+'">Reading room</a></nav></header><main id="main">'+content+'</main><footer>Independent analysis of public records. <a href="https://pranavaraparla.com" target="_blank" rel="noopener noreferrer">Pranava Raparla</a> · <a href="https://github.com/pranava0x0/ferc-large-load-proceedings" target="_blank" rel="noopener noreferrer">Source repository</a></footer></body></html>\n';
 }
 const topics=[
  ['Cost allocation',/\bcost (?:allocation|causation|shift)|\bratepayers?|\bRBP Charges?\b|network upgrade costs?/gi],
@@ -86,7 +86,6 @@ function discussion(k,text){
  return topic?' <a class="xref" href="../'+threadHref(k,topic)+'">Filed comments: '+esc(topic)+'</a>':'';
 }
 const anchorsById=new Map(read(join(root,'sources/filings/order-anchors.json')).orders.flatMap(o=>o.anchors.map(a=>[a.id,{...a,item:o.item,rto:o.rto,pdf:'orders/'+o.slug+'.pdf'}])));
-const REL={responds:'Answers the order',implements:'Carries out the order',parallel:'Parallel proceeding',precursor:'Came before the order',procedural:'Changes the schedule',context:'Background'};
 // The per-document reading (sources/filings/documents/<slug>.json), validated by tools/validate-documents.mjs.
 function ownReading(r,paginated){
  const f=join(root,'sources/filings/documents',r.slug+'.json');if(!existsSync(f))return '';
@@ -94,7 +93,7 @@ function ownReading(r,paginated){
  const chips=tl.anchors.map(id=>{const a=anchorsById.get(id);if(!a)throw Error(r.slug+': unknown anchor '+id);return '<a class="oa" href="../../'+a.pdf+'#page='+a.pg+'">'+esc(a.item+' '+a.rto+': '+a.label)+' ('+(a.para?esc(a.para)+', ':'')+'p. '+a.pg+')</a>';}).join(' ');
  const pts=d.points.map(p=>'<li><strong>'+esc(p.point)+'</strong><blockquote>'+esc(p.quote)+' <cite>'+ref(p.pg||1,paginated)+'</cite></blockquote></li>').join('');
  return '<section class="reading"><p class="intro">'+esc(d.summary)+'</p>'+(d.ask?'<p><strong>Asks FERC to:</strong> '+esc(d.ask)+'</p>':'')+
-  '<p><strong>'+esc(REL[tl.relation])+'.</strong> '+esc(tl.text)+'</p>'+(chips?'<p class="anchors">'+chips+'</p>':'')+'<h2>Key points</h2><ol class="points">'+pts+'</ol></section>';
+  '<p>'+esc(tl.text)+'</p>'+(chips?'<p class="anchors">'+chips+'</p>':'')+'<h2>Key points</h2><ol class="points">'+pts+'</ol></section>';
 }
 const guide=[],voiceLinks=new Map();
 for(const r of catalog){

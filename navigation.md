@@ -63,14 +63,19 @@ Seven top-level tabs and about 13,000 words of rendered text. Costs on a phone, 
 
 Total: phone 61.6, tablet 41.1, desktop 37.3. The full table is produced by every run.
 
+**2026-11-18, after subtabs, the status table and the reform × market matrix:** phone 35.8, tablet 28.7,
+desktop 28.0. Comparing who pays across markets fell from 10.1 to 2.5 taps-plus-screens on a phone; the
+quote-to-original-page route from 7.5 to 2. Opening a subtab costs one tap, so a few home-page answers
+now cost 1 where they cost a short scroll before; the next deadline is answered by the masthead chip on every page.
+
 ## Gaps: questions the site cannot answer yet
 
 Each needs data before it needs a route. When one becomes answerable, it gets a question in
 `nav-questions.json` and a baseline.
 
-- **Who supports or opposes each operator's filing?** Documents carry FERC's filing type ("answer",
-  "motion", "request"), which says nothing about position. The fix is a stance per document,
-  read from its text, shown in place of the type.
+- **Who supports or opposes each operator's filing?** Rows now show a plain role ("Opposes", "Asks FERC to
+  pause the case", "Replies to another filing") instead of FERC's type. A reply's side still needs a stance
+  read from its text.
 - **What stage is each market at?** Status is prose today. It needs a per-market stage record that the
   market page and the home table both read.
 - **Comment deadlines for every Nov 16 filing in one place.** They are scattered across proceeding status lines.
