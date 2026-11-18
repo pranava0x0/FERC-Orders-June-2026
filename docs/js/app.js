@@ -1987,8 +1987,10 @@
       "") +
       // Filings land in batches, so a "newest" list says little; the full list is one link away.
       '<p class="reader-entry"><a href="reading/">Full document list</a></p>' + find + chips +
-      '<h3 class="fg-sec">The six show cause dockets</h3>' + sc.map(group).join("") +
-      '<h3 class="fg-sec">Related proceedings</h3>' + rel.map(group).join("") +
+      FG_MARKETS.map(function (m) {
+        var gs = sc.concat(rel).filter(function (g) { return marketOf(g) === m[0]; });
+        return gs.length ? '<h3 class="fg-sec fg-mkt" data-mkt="' + m[0] + '" hidden>' + esc(m[1]) + "</h3>" + gs.map(group).join("") : "";
+      }).join("") +
       '<p class="fg-none" hidden>No document matches. Clear the filter to see every proceeding.</p>' +
       figureChart(R);
   }
@@ -1998,6 +2000,15 @@
   // proceedings open so the documents are on the page; clearing the filter folds back the ones it opened
   // (marked data-auto), except one the reader has a document open in. Quoted points load when a document opens, or for a theme, where
   // the match set is small enough to fetch at once.
+  // Filings is browsed by market: one subtab per grid operator, show cause docket first, then the
+  // proceedings around it. ATC plans inside MISO; Exelon's complaint concerns PJM's auction.
+  var FG_MARKETS = [["pjm", "PJM"], ["miso", "MISO"], ["spp", "SPP"], ["caiso", "CAISO"], ["isone", "ISO-NE"], ["nyiso", "NYISO"], ["other", "Other"]];
+  function marketOf(g) {
+    var id = g.id.replace(/^sc-/, ""), m = id.split("-")[0];
+    if (m === "atc") return "miso";
+    if (m === "exelon") return "pjm";
+    return FG_MARKETS.some(function (x) { return x[0] === m; }) ? m : "other";
+  }
   function applyTheme(panel, key) {
     var R0 = window.FERC_RECORD;
     filingTheme = key && R0 && R0.themes.some(function (t) { return t.key === key; }) ? key : "";
@@ -2007,18 +2018,22 @@
     panel.classList.toggle("fg-filtering", active);
     var box = panel.querySelector("#fg-q");
     if (box && box.value.trim().toLowerCase() !== filingQuery) box.value = filingQuery;
+    // Every typed word must appear: "google lars" finds Google's filing in the LARS proceeding.
+    var words = q ? q.split(/\s+/).filter(Boolean) : [];
     panel.querySelectorAll(".fgroup").forEach(function (g) {
       var n = 0;
       g.querySelectorAll(".fdoc").forEach(function (d) {
         var on = (!filingTheme || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + filingTheme + " ") >= 0) &&
-          (!q || d.getAttribute("data-q").indexOf(q) >= 0);
+          (!q || words.every(function (w) { return d.getAttribute("data-q").indexOf(w) >= 0; }));
         d.hidden = !on; if (on) n++;
       });
       g.hidden = n === 0; shown += n;
       if (active && n) { if (!g.open) { g.setAttribute("data-auto", ""); g.open = true; } if (filingTheme) loadPoints(g); }
       else if (!active && g.hasAttribute("data-auto")) { g.removeAttribute("data-auto"); if (!g.querySelector(".fdoc[open]")) g.open = false; }
     });
-    panel.querySelectorAll(".fg-sec").forEach(function (el) { el.hidden = active; });
+    panel.querySelectorAll(".fg-mkt").forEach(function (el) { el.hidden = !active; });
+    // A search that leaves one document opens it: the answer, not a list of one.
+    if (q && shown === 1) { var only1 = panel.querySelector(".fdoc:not([hidden])"); if (only1 && !only1.open) only1.open = true; }
     // A search or theme filter looks across every pane, not only the open one.
     // While filtering, every pane shows and the bar steps aside; clearing the filter restores the picked pane.
     var bar = panel.querySelector(".st-bar");
@@ -2367,7 +2382,8 @@
     overview: [["filed", "Nov 16 filings", ".filing-brief"], ["operators", "Status by operator", "section[aria-labelledby=ops-h]"], ["next", "Deadlines", ".now-next-card"],
       ["reforms", "By reform", ".xw"], ["background", "Background", "details.acc"]],
     dockets: [["june", "June 18 orders", "#reforms-h"], ["reforms", "Five reforms", "details.acc"], ["dockets", "Dockets", ".section-head", 1], ["follow", "File or follow", ".section-head", 2]],
-    filings: [["showcause", "Show cause dockets", ".fg-sec", 0], ["related", "Related proceedings", ".fg-sec", 1], ["numbers", "Numbers cited", "details.acc"]],
+    filings: [["pjm", "PJM", ".fg-mkt[data-mkt=pjm]"], ["miso", "MISO", ".fg-mkt[data-mkt=miso]"], ["spp", "SPP", ".fg-mkt[data-mkt=spp]"], ["caiso", "CAISO", ".fg-mkt[data-mkt=caiso]"],
+      ["isone", "ISO-NE", ".fg-mkt[data-mkt=isone]"], ["nyiso", "NYISO", ".fg-mkt[data-mkt=nyiso]"], ["other", "Other", ".fg-mkt[data-mkt=other]"], ["numbers", "Numbers cited", "details.acc"]],
     timeline: [["ahead", "Ahead", ".tl-sec", 0], ["sofar", "So far", "#tl-latest"], ["background", "Background", "details.acc"]],
     commissioners: [["appearances", "Appearances", "section#appears"], ["june", "June 18 statements", "#commish-h"]]
   };

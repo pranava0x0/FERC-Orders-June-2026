@@ -63,6 +63,10 @@ Seven top-level tabs and about 13,000 words of rendered text. Costs on a phone, 
 
 Total: phone 61.6, tablet 41.1, desktop 37.3. The full table is produced by every run.
 
+**2026-11-18, Filings by market:** Filings is browsed by market subtab (PJM, MISO, SPP, CAISO, ISO-NE,
+NYISO, Other), with one-line document rows on wide screens. Search matches every typed word and opens a
+single match. 16 questions, none above 6; phone 37.3, tablet 30.1, desktop 28.9.
+
 **2026-11-18, after subtabs, the status table and the reform × market matrix:** phone 35.8, tablet 28.7,
 desktop 28.0. Comparing who pays across markets fell from 10.1 to 2.5 taps-plus-screens on a phone; the
 quote-to-original-page route from 7.5 to 2. Opening a subtab costs one tap, so a few home-page answers

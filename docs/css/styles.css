@@ -1562,3 +1562,10 @@ details.acc { margin-top: 6px; }
 .fg-docs-h { margin: 10px 0 2px; padding-top: 8px; }
 .fg-sec, .tl-sec { margin: 14px 0 6px; }
 @media (pointer: coarse) { .acc-sum { min-height: 44px; } }
+/* Filings rows on one line where there is room: date · filer · role · gist. */
+@media (min-width: 900px) {
+  .fdoc > summary { grid-template-columns: 92px minmax(0, 15rem) minmax(0, 13rem) minmax(0, 1fr); align-items: baseline; padding: 6px 0; }
+  .fd-date { grid-row: auto; }
+  .fd-who, .fd-kind { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .fd-tease, .fd-unread { grid-column: auto; }
+}

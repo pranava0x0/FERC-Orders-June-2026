@@ -99,16 +99,38 @@
     [
      "Find a document",
      "#fg-q",
-     "Google"
+     "Google LARS"
     ],
     [
-     "Google's protest",
-     "#fg-miso-lars details.fdoc:has(.fd-who:text-is(\"Google LLC\")) > summary, #fg-miso-lars details.fdoc:has(.fd-who:has-text(\"Google\")) > summary"
+     "Cited page",
+     "#fd-protest-er27-25-google[open] a[href*=\"protest-er27-25-google/text.html#\"]"
     ]
    ],
    "leaf": [
-    "#fg-miso-lars details.fdoc[open] a[href*=\"text.html#p-\"]",
-    "p\\."
+    "section:target pre",
+    "\\S"
+   ]
+  },
+  {
+   "id": "miso-responses",
+   "q": "Who has responded to MISO's Nov 16 filing?",
+   "steps": [
+    [
+     "Filings tab",
+     "#tab-filings"
+    ],
+    [
+     "MISO subtab",
+     "#st-filings-miso"
+    ],
+    [
+     "MISO large-load proceeding",
+     "#fg-miso-large-load > summary"
+    ]
+   ],
+   "leaf": [
+    "#fg-miso-large-load[open] details.fdoc:not([hidden]) > summary .fd-who",
+    "\\S"
    ]
   },
   {
