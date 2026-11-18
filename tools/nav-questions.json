@@ -7,7 +7,7 @@
    "steps": [],
    "leaf": [
     "#masthead-fresh .mh-next",
-    "\\S"
+    "\\d"
    ]
   },
   {
@@ -39,7 +39,7 @@
    "steps": [],
    "leaf": [
     "#panel-overview table.ot tbody tr:first-child td:nth-child(3)",
-    "Dec|comment"
+    "ER27-531"
    ]
   },
   {
@@ -53,7 +53,7 @@
    ],
    "leaf": [
     "#panel-overview .xw-t tbody tr:nth-child(2) td:nth-child(2)",
-    "\\S"
+    "contribution|security|shortfall"
    ]
   },
   {
@@ -66,8 +66,8 @@
     ]
    ],
    "leaf": [
-    "#panel-overview .xw-t tbody tr:nth-child(2) td:last-child",
-    "\\S"
+    "#panel-overview .xw-t tbody tr:nth-child(2)",
+    "Who pays[\\s\\S]*recover"
    ]
   },
   {
@@ -80,8 +80,8 @@
     ]
    ],
    "leaf": [
-    "#panel-dockets details[open] > summary.docket-sum",
-    "PJM"
+    "#panel-dockets details[open] .docket-body",
+    "60 days|show cause|tariff"
    ]
   },
   {

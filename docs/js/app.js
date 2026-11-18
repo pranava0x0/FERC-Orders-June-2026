@@ -572,14 +572,16 @@
   var xwMatrix = null, XW_MARKETS = ["PJM", "MISO", "SPP", "CAISO", "ISO-NE", "NYISO"];
   function xwTable() {
     if (!xwMatrix) return "";
+    // Name the docket in each cell: PJM's cost line comes from its transmission owners' filing, not PJM's own.
+    var docketOf = {}; (xwAnswers || []).forEach(function (a) { docketOf[a.slug] = a.docket; });
     var rows = D.categories.map(function (c) {
       return '<tr><th scope="row">' + esc(XW_LABEL[c.key] || c.title) + "</th>" + XW_MARKETS.map(function (m) {
         var x = xwMatrix[m] && xwMatrix[m][c.key];
-        return x ? '<td>' + esc(x.gist) + ' <a class="mono" href="reading/' + esc(x.slug) + "/text.html#p-" + x.pg + '" title="' + esc("“" + x.quote + "”") + '">p.&nbsp;' + x.pg + "</a></td>"
+        return x ? '<td>' + esc(x.gist) + ' <a class="mono" href="reading/' + esc(x.slug) + "/text.html#p-" + x.pg + '" title="' + esc("“" + x.quote + "”") + '">' + esc((docketOf[x.slug] || "").replace(/-000$/, "")) + "&nbsp;p.&nbsp;" + x.pg + "</a></td>"
           : '<td class="xw-t-none">' + (m === "SPP" ? "Not filed yet" : "Not addressed") + "</td>";
       }).join("") + "</tr>";
     }).join("");
-    return '<div class="table-wrap xw-t-wrap"><table class="xw-t"><caption>Nov 16 filings, compared</caption><thead><tr><th scope="col">Reform</th>' +
+    return '<div class="table-wrap xw-t-wrap"><table class="xw-t"><caption>Responses to the June orders, compared</caption><thead><tr><th scope="col">Reform</th>' +
       XW_MARKETS.map(function (m) { return '<th scope="col">' + esc(m) + "</th>"; }).join("") + "</tr></thead><tbody>" + rows + "</tbody></table></div>";
   }
   function renderCrosswalk() {
@@ -1833,15 +1835,21 @@
     "answer": "Answer", "answer supporting extension": "Supports a delay", "reply letter": "Replies to another filing",
     "motion": "Procedural motion", "motion for abeyance": "Asks FERC to pause the case", "conditional motion for abeyance": "Asks FERC to pause the case, conditionally",
     "motion to rescind": "Asks FERC to withdraw the order", "motion for extension of time": "Asks for more time",
-    "request": "Asks FERC for a fix", "rehearing request": "Asks FERC to reconsider", "request for rehearing": "Asks FERC to reconsider",
+"rehearing request": "Asks FERC to reconsider", "request for rehearing": "Asks FERC to reconsider",
     "request for clarification": "Asks FERC to clarify", "protest": "Opposes", "limited protest": "Opposes in part",
-    "filing": "Proposal", "tariff filing": "Proposed tariff change", "tariff amendment": "Amends a proposed tariff", "§205 refiling": "Refiled proposal",
+    "tariff filing": "Proposed tariff change", "tariff amendment": "Amends a proposed tariff", "§205 refiling": "Refiled proposal",
     "compliance filing": "Complies with an order", "order": "FERC order", "errata": "Correction", "informational report": "Report to FERC",
     "congressional letter": "Letter from Congress"
   };
   // An answer can respond to FERC's order or to another party; the type alone does not say which, so read
   // the document's own title and summary, and fall back to the neutral "Answer".
+  var TITLE_ROLE = [[/petition for review/i, "Court appeal"], [/rehearing/i, "Asks FERC to reconsider"], [/clarification/i, "Asks FERC to clarify"],
+    [/extension of time/i, "Asks for more time"], [/\babeyance\b/i, "Asks FERC to pause the case"], [/deficien/i, "FERC asks for more information"],
+    [/\bprotest\b/i, "Opposes"], [/informational report/i, "Report to FERC"]];
   function kindRole(k, d) {
+    // The title is the surer signal for what a document does: "filing" and "request" cover protests, appeals and letters.
+    var tt = d && d.title || "";
+    if (k !== "answer" && k !== "order") for (var r = 0; r < TITLE_ROLE.length; r++) if (TITLE_ROLE[r][0].test(tt)) return TITLE_ROLE[r][1];
     if (k === "answer" && d) {
       // Read the title first: it names what the answer responds to. "Motion for Leave to Answer and" is procedure.
       var title = (d.title || "").replace(/^motion for leave to answer and (?:second )?/i, "");
@@ -2002,8 +2010,8 @@
     var bar = panel.querySelector(".st-bar");
     if (bar) {
       bar.hidden = !!active;
-      if (active) panel.querySelectorAll(".st-pane").forEach(function (x) { x.hidden = false; });
-      else pickSubtab("filings", subtabPick.filings || SUBTABS.filings[0][0]);
+      panel.querySelectorAll(".st-pane").forEach(function (x) { if (active) { x.hidden = false; x.removeAttribute("role"); } else x.setAttribute("role", "tabpanel"); });
+      if (!active) pickSubtab("filings", subtabPick.filings || SUBTABS.filings[0][0]);
     }
     // A chip's number is what tapping it would show, so it counts against the typed query.
     var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return !q || d.getAttribute("data-q").indexOf(q) >= 0; });
@@ -2261,7 +2269,7 @@
   }
   // Switch tabs from the hash/router, routing the Comments sub-state through the comments module.
   function goTab(tab, rest, focus) {
-    if (tab === "reforms") { activate("dockets", focus); var rh = document.getElementById("reforms-h"); if (rh) show(rh, { block: "start" }); setCrumbs("dockets", ""); return; }
+    if (tab === "reforms") { activate("dockets", focus); pickSubtab("dockets", "reforms"); var rh = document.querySelector("#stp-dockets-reforms > *"); if (rh) show(rh, { block: "start" }); setCrumbs("dockets", ""); return; }
     if (TABS.indexOf(tab) < 0) tab = "overview";
     if (tab === "comments") {
       var state = window.CommentsRoute.parse(rest);
@@ -2362,7 +2370,7 @@
     bar.parentNode.insertBefore(wrap, bar.nextSibling);
     var pick = subtabPick[name] || defs[0][0];
     defs.forEach(function (d, i) {
-      var pane = document.createElement("div"); pane.className = "st-pane"; pane.id = "stp-" + name + "-" + d[0]; pane.setAttribute("role", "tabpanel"); pane.setAttribute("aria-labelledby", "st-" + name + "-" + d[0]);
+      var pane = document.createElement("div"); pane.className = "st-pane"; pane.id = "stp-" + name + "-" + d[0]; pane.setAttribute("role", "tabpanel"); pane.tabIndex = 0; pane.setAttribute("aria-labelledby", "st-" + name + "-" + d[0]);
       // Collect from this pane's start up to the next pane's start (or the end of the panel).
       for (var el = starts[i], stop = starts[i + 1] || null; el && el !== stop; ) { var nx = el.nextElementSibling; pane.appendChild(el); el = nx; }
       pane.hidden = d[0] !== pick;
@@ -2371,7 +2379,7 @@
       b.setAttribute("aria-selected", d[0] === pick ? "true" : "false"); b.tabIndex = d[0] === pick ? 0 : -1; b.textContent = d[1];
       b.addEventListener("click", function () { pickSubtab(name, d[0]); });
       b.addEventListener("keydown", function (e) {
-        var j = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 : null;
+        var j = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 : e.key === "Home" ? 0 : e.key === "End" ? defs.length - 1 : null;
         if (j === null) return;
         e.preventDefault(); j = (j + defs.length) % defs.length; pickSubtab(name, defs[j][0]); document.getElementById("st-" + name + "-" + defs[j][0]).focus();
       });

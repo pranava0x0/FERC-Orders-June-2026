@@ -48,7 +48,7 @@
     "quote": "including the costs of Large Load Upgrades (defined herein), are born by such customers and thereby avoid unfair cost shifts among Transmission Customers"
    },
    "colo": {
-    "gist": "Contract demand service open to loads without co-located generation",
+    "gist": "Contract demand service open to co-located and other large loads",
     "slug": "filing-er27-527-miso-grits",
     "pg": 4,
     "quote": "is not limited to Large Load being served by a co-located generator"
@@ -106,10 +106,10 @@
     "quote": "publish a final Large Load System Impact Study report within 120 days of publishing the preliminary Large Load System Impact Study report"
    },
    "cost": {
-    "gist": "Posts list of network upgrades for each large load on its website",
+    "gist": "Large load pays a cost recovery charge for its network upgrades",
     "slug": "filing-er27-484-isone-large-loads",
-    "pg": 13,
-    "quote": "a cumulative list reflecting the Large Load Network Upgrades identified for each Large Load, categorized by upgrade type"
+    "pg": 55,
+    "quote": "so that there is no increase in transmission rates for other transmission customers caused by the interconnection of the Large Load Facility to the transmission system, the Large Load Entity will pay a Cost Recovery Charge"
    },
    "colo": {
     "gist": "No netting of behind-the-meter generation against large loads",
@@ -138,10 +138,10 @@
     "quote": "between one year and six months and two years, including a 90-day period for the performance of the System Impact Study"
    },
    "cost": {
-    "gist": "Transmission owners file a two-party cost recovery agreement",
-    "slug": "filing-er27-517-nyiso-large-loads",
+    "gist": "Transmission owners recover 100% of allocated upgrade costs from the large load",
+    "slug": "rec-20261116-5335",
     "pg": 3,
-    "quote": "will submit a new two-party pro forma cost recovery agreement"
+    "quote": "recover 100% of the costs of Network Upgrades and Attachment Facilities allocated to a Large Load Customer"
    },
    "colo": {
     "gist": "Co-Located Arrangement lets a load take firm withdrawal service",
