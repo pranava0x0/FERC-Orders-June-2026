@@ -1922,7 +1922,9 @@
     // eLibrary's catch-all "filing": an operator's own is its proposal; anyone else's is a response.
     if (k === "filing" && d) {
       if (/^response (?:of|to)\b/i.test(tt)) return "Answers FERC’s order";
-      if (OPERATOR_FILER.test(d.filer || "") && !d.stance && !/remarks|comment|in support|answer/i.test(tt)) return "Operator’s filing";
+      // Judge the title by what it says the document is, not by parentheticals such as "(comments requested by Nov 30)".
+      var purpose = tt.replace(/\([^)]*\)/g, " ");
+      if (OPERATOR_FILER.test(d.filer || "") && !d.stance && !/\bremarks\b|\bcomments? (?:of|on|in)\b|\bin support\b|\banswer/i.test(purpose)) return "Operator’s filing";
       return "Comments";
     }
     return KIND_ROLE[k] || (k ? k.charAt(0).toUpperCase() + k.slice(1) : "");
