@@ -531,7 +531,7 @@
   // each point. A blank cell means none of the points read from that filing names the reform. It is
   // not a finding that the filing is silent on it, and the copy says so.
   var xwAnswers = null, xwPending = null;
-  var XW_LABEL = { study: "Study process", cost: "Who pays", colo: "Co-location", flex: "Flexible service", proximate: "Nearby generation" };
+  // Reform names are the June orders' own Section III headings (D.categories[].title), not paraphrases.
   function xwOrders() {
     return (D.dockets || []).slice().sort(function (a, b) { return +a.item.slice(2) - +b.item.slice(2); });
   }
@@ -567,21 +567,25 @@
     }).join("");
     return doe + '<div class="xw-rows">' + rows + "</div>";
   }
-  // Five reforms down, six markets across: one line per cell saying what the operator proposed, linked to
-  // the page it comes from. An empty cell means the filing does not take the reform up (or, for SPP, has not filed).
+  // Five reforms down, six markets across: each cell lists what the operator (or, where named, its
+  // transmission owners) proposed, one bullet per point, each linked to the page it quotes.
+  // An empty cell means the filings do not take the reform up (or, for SPP, have not been filed).
   var xwMatrix = null, XW_MARKETS = ["PJM", "MISO", "SPP", "CAISO", "ISO-NE", "NYISO"];
   function xwTable() {
     if (!xwMatrix) return "";
-    // Name the docket in each cell: PJM's cost line comes from its transmission owners' filing, not PJM's own.
     var docketOf = {}; (xwAnswers || []).forEach(function (a) { docketOf[a.slug] = a.docket; });
     var rows = D.categories.map(function (c) {
-      return '<tr><th scope="row">' + esc(XW_LABEL[c.key] || c.title) + "</th>" + XW_MARKETS.map(function (m) {
-        var x = xwMatrix[m] && xwMatrix[m][c.key];
-        return x ? '<td>' + esc(x.gist) + ' <a class="mono" href="reading/' + esc(x.slug) + "/text.html#p-" + x.pg + '" title="' + esc("“" + x.quote + "”") + '">' + esc((docketOf[x.slug] || "").replace(/-000$/, "")) + "&nbsp;p.&nbsp;" + x.pg + "</a></td>"
-          : '<td class="xw-t-none">' + (m === "SPP" ? "Not filed yet" : "Not addressed") + "</td>";
+      return '<tr><th scope="row">' + esc(c.title) + "</th>" + XW_MARKETS.map(function (m) {
+        var xs = xwMatrix[m] && xwMatrix[m][c.key];
+        return xs && xs.length ? '<td><ul class="xw-ul">' + xs.map(function (x) {
+          var dk = (docketOf[x.slug] || "").replace(/-000$/, "");
+          return "<li>" + (x.by ? '<span class="xw-by">' + esc(x.by) + ":</span> " : "") + esc(x.t) +
+            ' <a class="mono" href="reading/' + esc(x.slug) + "/text.html#p-" + x.pg + '" title="' + esc((dk ? dk + ": " : "") + "“" + x.quote + "”") + '">p.&nbsp;' + x.pg + "</a></li>";
+        }).join("") + "</ul></td>"
+          : '<td class="xw-t-none">' + (m === "SPP" ? "Not filed yet; due Nov 20" : "Not addressed") + "</td>";
       }).join("") + "</tr>";
     }).join("");
-    return '<div class="table-wrap xw-t-wrap"><table class="xw-t"><caption>Responses to the June orders, compared</caption><thead><tr><th scope="col">Reform</th>' +
+    return '<div class="table-wrap xw-t-wrap"><table class="xw-t"><caption class="sr-only">Responses to the June orders, by reform and market</caption><thead><tr><th scope="col">Reform</th>' +
       XW_MARKETS.map(function (m) { return '<th scope="col">' + esc(m) + "</th>"; }).join("") + "</tr></thead><tbody>" + rows + "</tbody></table></div>";
   }
   function renderCrosswalk() {
@@ -591,7 +595,7 @@
     document.querySelectorAll(".xw-compare").forEach(function (el) { el.innerHTML = xwTable(); });
     if (!host) return;
     host.innerHTML = D.categories.map(function (c) {
-      return '<details class="xw-cat" id="xw-' + esc(c.key) + '"><summary><span class="xw-no">' + c.n + '</span><span class="xw-title">' + esc(XW_LABEL[c.key] || c.title) +
+      return '<details class="xw-cat" id="xw-' + esc(c.key) + '"><summary><span class="xw-no">' + c.n + '</span><span class="xw-title">' + esc(c.title) +
         '<span class="xw-sub">' + esc(c.ferc) + "</span></span>" + xwSummaryDots(c.key) + '<span class="acc-chev" aria-hidden="true">›</span></summary>' +
         '<div class="xw-body">' + xwBody(c) + "</div></details>";
     }).join("");
@@ -1435,6 +1439,8 @@
           '<span class="cm-pm-promo-k">The policy map</span>' +
           '<span class="cm-pm-promo-t">See what the June 18 orders did with each issue, and where it goes next on the §206 clock <span aria-hidden="true">→</span></span></a>'
         : "") +
+      // Finding one commenter is the most common errand here; the box hands off to the full list.
+      '<div class="fg-find"><label for="cm-find">Find a commenter</label><input type="search" id="cm-find" placeholder="Organization or any word" autocomplete="off" /></div>' +
       statRow + coverageLine + rounds +
       (regions ? head("Which RTO/ISO each comment engages", "Only comments that name a region. About 60% name none.") + regions : "") +
       head("Where commenters land on each reform", "Share of audited letters that support, oppose or are mixed.") + stanceBars +
@@ -1500,6 +1506,14 @@
     // list filter (within the summaries sub-tab): free-text search ANDed with structured AND-tokens.
     var input = document.getElementById("cm-search"), count = document.getElementById("cm-count");
     if (!input) return;
+    // The overview's box: the first keystroke opens All comments and carries on typing in its filter.
+    var jump = document.getElementById("cm-find");
+    if (jump) jump.addEventListener("input", function () {
+      var v = jump.value; jump.value = "";
+      var tab = document.getElementById("cmsub-summaries"); if (tab) tab.click();
+      input.value = v; input.focus(); input.setSelectionRange(v.length, v.length);
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    });
     var rows = [].slice.call(document.querySelectorAll("#panel-comments .cm-row"));
     var groups = [].slice.call(document.querySelectorAll("#panel-comments .cm-listgroup"));
     var empty = document.getElementById("cm-empty");
@@ -1827,7 +1841,22 @@
   /* ---- TAB: Filings (orders and filings since June, one line per position, quoted with its page) ---- */
   // Data: window.FERC_RECORD.groups, baked by tools/build-record-data.mjs from sources/filings/tenets.json,
   // every quote proven on its page by tools/verify-record.mjs. Loaded on first open (loadLazy).
-  var SIDE_LABEL = { "for": "Supports", against: "Opposes", mixed: "Conditions", neutral: "Neutral" };
+  // A side is relative to the proposal the proceeding is about, so the words say that; a bare
+  // "Supports" pill left readers asking "supports what?". Neutral says nothing and is left off.
+  var SIDE_LABEL = { "for": "supports the proposal", against: "opposes the proposal", mixed: "supports it with conditions", neutral: "" };
+  // A side has a target. In a show cause docket, in a rehearing request or rehearing docket, or where the title
+  // names an order, the target is FERC's order, not a proposal. The proposal's own author, and a
+  // complainant, are not taking a side on someone else's filing, so they get none.
+  var SIDE_ORDER = { "for": "supports FERC’s order", against: "challenges FERC’s order", mixed: "challenges FERC’s order in part", neutral: "" };
+  var SIDE_SC = { "for": "agrees with the order", against: "disputes the order’s finding", mixed: "agrees in part", neutral: "" };
+  function sideText(d, role, g) {
+    if (d.stance) return d.stance;
+    if (!d.side || d.kind === "complaint" || OPERATOR_FILER.test(d.filer || "")) return "";
+    var aboutOrder = /reconsider|Court appeal/.test(role) || /rehearing/.test(g ? g.id : "") || /\b(?:supporting|opposing|challenging)\b[^.]*\border\b/i.test(d.title || "");
+    var t = (g && g.kind === "show-cause" ? SIDE_SC : aboutOrder ? SIDE_ORDER : SIDE_LABEL)[d.side];
+    if (!t || (d.side === "against" && /^Opposes/.test(role))) return "";   // "Opposes · opposes the proposal" says it twice
+    return t;
+  }
   function fmtSecs(s) {
     var h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), x = s % 60;
     return (h ? h + ":" + (m < 10 ? "0" : "") : "") + m + ":" + (x < 10 ? "0" : "") + x;
@@ -1846,7 +1875,7 @@
   function linkLine(R, link, cls) {
     if (!link) return "";
     return '<div class="' + cls + '"><p>' + esc(link.text) + "</p>" +
-      (link.anchors && link.anchors.length ? '<div class="oa-list">' + link.anchors.map(function (id) { return anchorChip(R, id); }).join("") + "</div>" : "") + "</div>";
+      (link.anchors && link.anchors.length ? '<div class="oa-list"><span class="oa-l">June order paragraphs it addresses:</span> ' + link.anchors.map(function (id) { return anchorChip(R, id); }).join("") + "</div>" : "") + "</div>";
   }
   function themeLabel(R, k) { var t = (R.themes || []).filter(function (x) { return x.key === k; })[0]; return t ? t.label : k; }
   // FERC's document type says what form a filing takes, not what it does. Readers see what it does.
@@ -1865,7 +1894,9 @@
   var TITLE_ROLE = [[/petition for review/i, "Court appeal"], [/rehearing/i, "Asks FERC to reconsider"], [/clarification/i, "Asks FERC to clarify"],
     [/extension of time/i, "Asks for more time"], [/\babeyance\b/i, "Asks FERC to pause the case"], [/deficien/i, "FERC asks for more information"],
     [/\bprotest\b/i, "Opposes"], [/informational report/i, "Report to FERC"]];
-  var FERC_FILER = /^(?:secretary of the commission|ferc\b|federal energy regulatory commission|commissioners and immediate staff|office of energy market regulation)/i;
+  var FERC_FILER = /^(?:secretary of the commission|ferc\b|federal energy regulatory commission|(?:commissioners|chair(?:man)?) and immediate staff|office of energy market regulation)/i;
+  // The grid operators and their transmission owners: a bare "filing" from one of them is its own proposal.
+  var OPERATOR_FILER = /^(?:PJM|MISO\b|Midcontinent Independent|Southwest Power Pool|SPP\b|California Independent|CAISO\b|ISO New England|New York Independent|NYISO\b|American Transmission Company)/i;
   function kindRole(k, d) {
     // FERC's own notices are not requests to FERC, whatever eLibrary's type says.
     if (d && FERC_FILER.test(d.filer || "") && k !== "order") {
@@ -1873,6 +1904,7 @@
       if (/denial of rehearing by operation of law/i.test(ft)) return "FERC: rehearing denied by operation of law";
       if (/errata/i.test(ft)) return "FERC correction";
       if (/deficien/i.test(ft)) return "FERC asks for more information";
+      if (/^chair/i.test(d.filer || "")) return "Letter from FERC’s chair";
       return "FERC notice";
     }
     // The title is the surer signal for what a document does: "filing" and "request" cover protests, appeals and letters.
@@ -1887,6 +1919,14 @@
       if (order.test(title)) return "Answers FERC’s order";
       if (order.test(d.summary || "")) return "Answers FERC’s order";
     }
+    // eLibrary's catch-all "filing": an operator's own is its proposal; anyone else's is a response.
+    if (k === "filing" && d) {
+      if (/^response (?:of|to)\b/i.test(tt)) return "Answers FERC’s order";
+      // Judge the title by what it says the document is, not by parentheticals such as "(comments requested by Nov 30)".
+      var purpose = tt.replace(/\([^)]*\)/g, " ");
+      if (OPERATOR_FILER.test(d.filer || "") && !d.stance && !/\bremarks\b|\bcomments? (?:of|on|in)\b|\bin support\b|\banswer/i.test(purpose)) return "Operator’s filing";
+      return "Comments";
+    }
     return KIND_ROLE[k] || (k ? k.charAt(0).toUpperCase() + k.slice(1) : "");
   }
   function docCard(R, g, d) {
@@ -1896,17 +1936,46 @@
         linkLine(R, d.link, "fd-link") +
         '<ol class="pts" data-slug="' + esc(d.slug) + '"><li class="pts-wait">' + d.npoints + " key points, loading…</li></ol>"
       : '<p class="fd-sum na">Not yet read for this site. ' + esc(d.title) + "</p>";
-    var tags = (d.themes || []).map(function (t) { return '<span class="tag">' + esc(themeLabel(R, t)) + "</span>"; }).join("");
+    // Topics link to the theme filter, so the label does something. Themes matched by keyword in an
+    // unread document say so, and their link includes the keyword matches.
+    var kw = d.themesFrom === "text", role = kindRole(d.kind, d), side = sideText(d, role, g);
+    var tags = (d.themes || []).length ? '<span class="fd-topics">' + (kw ? "Topics (keyword match): " : "Topics: ") + d.themes.map(function (t) {
+      return '<a href="#filings/theme/' + esc(t) + (kw ? "/all" : "") + '">' + esc(themeLabel(R, t)) + "</a>";
+    }).join(", ") + "</span>" : "";
     var hay = [d.filer, (d.filers || []).join(" "), d.kind, d.title, d.docket, d.accession, g.title, g.short, d.summary].join(" ").toLowerCase();
-    return '<details class="fdoc" id="fd-' + esc(d.slug) + '" data-themes="' + esc((d.themes || []).join(" ")) + '" data-q="' + esc(hay) + '"><summary>' +
-      '<span class="fd-date mono">' + esc(fmtISO(d.date)) + '</span><span class="fd-who">' + esc(d.filer) + '</span><span class="fd-kind">' + esc(kindRole(d.kind, d)) +
-      (d.side ? ' · <span class="side-tag side-' + esc(d.side) + '">' + esc(SIDE_LABEL[d.side] || d.side) + "</span>" : d.stance ? " · " + esc(d.stance) : "") + "</span>" +
+    return '<details class="fdoc" id="fd-' + esc(d.slug) + '" data-themes="' + esc((d.themes || []).join(" ")) + '"' + (kw ? " data-kw" : "") + ' data-q="' + esc(hay) + '"><summary>' +
+      '<span class="fd-date mono">' + esc(fmtISO(d.date)) + '</span><span class="fd-who">' + esc(d.filer) + '</span><span class="fd-kind">' + esc(role) +
+      (side ? ' · <span class="fd-side side-' + esc(d.side || "stance") + '">' + esc(side) + "</span>" : "") + "</span>" +
       (d.summary ? '<span class="fd-tease">' + esc(d.summary) + "</span>" : '<span class="fd-unread">' + (d.themesFrom === "text" ? "not yet read · themes matched by keyword" : "not yet read") + "</span>") + "</summary>" +
       '<div class="fd-body">' + body + '<p class="fd-tools">' + tags +
       '<a href="reading/' + esc(d.slug) + '/">Read the document</a>' +
       (d.accession ? '<a href="' + esc(eli(d.accession)) + '" target="_blank" rel="noopener noreferrer">eLibrary ' + esc(d.accession) + "</a>" : d.url ? '<a href="' + esc(d.url) + '" target="_blank" rel="noopener noreferrer">Source</a>' : "") +
       '<span class="mono">' + esc(d.docket || "") + (d.pages ? " · " + d.pages + " pp" : "") + "</span>" +
       (d.filers ? '<span class="fd-all">Filed by ' + esc(d.filers.join(", ")) + "</span>" : "") + "</p></div></details>";
+  }
+  // A proceeding's documents, split by what they are, in this order: what FERC did, what was proposed,
+  // how others responded, then procedure (folded, since it rarely holds the substance). Newest first within each.
+  var DOC_SECTIONS = [["ferc", "FERC orders and notices"], ["proposal", "Proposals and reports"], ["response", "Responses"], ["proc", "Procedural filings"]];
+  var PROPOSAL_ROLE = /^(?:Proposed tariff change|Amends a proposed tariff|Refiled proposal|Complies with an order|Report to FERC|Operator’s filing)$/;
+  var PROC_ROLE = /pause the case|more time|Procedural motion|Supports a delay|^Notice$|^Meeting agenda$|^Errata$|^Correction$/;
+  function docSection(d) {
+    var role = kindRole(d.kind, d);
+    if (d.kind === "order" || /^FERC/.test(role)) return "ferc";
+    if (PROPOSAL_ROLE.test(role)) return "proposal";
+    if (PROC_ROLE.test(role)) return "proc";
+    return "response";
+  }
+  function docSections(R, g) {
+    // Procedure folds only beneath substantive responses; when it is all the response there is, it shows.
+    var hasResponses = g.docs.some(function (d) { return docSection(d) === "response"; });
+    return DOC_SECTIONS.map(function (sec) {
+      var ds = g.docs.filter(function (d) { return docSection(d) === sec[0]; });
+      if (!ds.length) return "";
+      var cards = ds.map(function (d) { return docCard(R, g, d); }).join("");
+      return sec[0] === "proc" && hasResponses
+        ? '<details class="fd-secw fd-proc" data-sec="proc"><summary class="fd-sec">' + esc(sec[1]) + ' <span class="fd-sec-n">' + ds.length + "</span></summary>" + cards + "</details>"
+        : '<div class="fd-secw" data-sec="' + sec[0] + '"><h5 class="fd-sec">' + esc(sec[1]) + ' <span class="fd-sec-n">' + ds.length + "</span></h5>" + cards + "</div>";
+    }).join("");
   }
   // Capacity quantities the readings extracted (each verified on its page), normalized to MW. Filings
   // that cite the same quantity (within 1%, sharing a word in the label) merge into one bar, so the chart
@@ -1977,11 +2046,13 @@
     var R = window.FERC_RECORD;
     if (!R || !R.groups) return head("Filings", "The filings record did not load (js/record-data.js).");
     var counts = {};
-    R.groups.forEach(function (g) { g.docs.forEach(function (d) { (d.themes || []).forEach(function (t) { counts[t] = (counts[t] || 0) + 1; }); }); });
-    var chips = '<div class="who-chips th-chips" role="group" aria-label="Show one theme"><button type="button" class="who-chip" data-theme="" aria-pressed="true">All</button>' +
+    R.groups.forEach(function (g) { g.docs.forEach(function (d) { if (d.themesFrom !== "text") (d.themes || []).forEach(function (t) { counts[t] = (counts[t] || 0) + 1; }); }); });
+    // Each chip shows only documents read for this site whose readings take up the theme, across every
+    // market; the count is how many. Keyword matches in unread documents are one tap further, on request.
+    var chips = '<div class="fg-themes"><p class="fg-themes-l" id="fg-themes-l">Show documents about</p><div class="who-chips th-chips" role="group" aria-labelledby="fg-themes-l"><button type="button" class="who-chip" data-theme="" aria-pressed="true">Everything</button>' +
       R.themes.filter(function (t) { return counts[t.key]; }).map(function (t) {
-        return '<button type="button" class="who-chip" data-theme="' + esc(t.key) + '" aria-pressed="false" title="' + esc(t.gloss) + '">' + esc(t.label) + "</button>";
-      }).join("") + '</div><p class="fg-live" role="status" aria-live="polite"></p>';
+        return '<button type="button" class="who-chip" data-theme="' + esc(t.key) + '" aria-pressed="false" title="' + esc(t.gloss) + '">' + esc(t.label) + ' <span class="mono">' + counts[t.key] + "</span></button>";
+      }).join("") + '</div></div><div class="fg-live-row"><p class="fg-live" role="status" aria-live="polite"></p><button type="button" class="fg-kw" hidden></button><button type="button" class="fg-clear" hidden>Clear filter</button></div>';
     var find = '<div class="fg-find"><label for="fg-q">Find a document</label><input type="search" id="fg-q" placeholder="Filer, docket or any word" autocomplete="off" /></div>';
     var group = function (g) {
       return '<details class="fgroup" id="fg-' + esc(g.id) + '"><summary class="fg-sum"><span class="fg-h" role="heading" aria-level="3">' + esc(g.title) +
@@ -1991,7 +2062,7 @@
         (g.about ? '<p class="fg-about">' + esc(g.about) + "</p>" : "") + (g.status ? '<p class="fg-status">' + esc(g.status) + "</p>" : "") +
         // A heading says what the rows are: the documents on this proceeding's docket sheet.
         '<h4 class="fg-docs-h">Filings in ' + esc(g.docket) + "</h4>" +
-        '<div class="fdocs">' + g.docs.map(function (d) { return docCard(R, g, d); }).join("") + "</div></div></details>";
+        '<div class="fdocs">' + docSections(R, g) + "</div></div></details>";
     };
     var sc = R.groups.filter(function (g) { return g.kind === "show-cause"; }), rel = R.groups.filter(function (g) { return g.kind !== "show-cause"; });
     return head("Filings since the June 18 orders",
@@ -2007,7 +2078,7 @@
       figureChart(R);
   }
   var FQ_MIN = 2;          // a one-letter query matches nearly every document
-  var filingTheme = "", filingQuery = "";
+  var filingTheme = "", filingQuery = "", filingKw = false;
   // The theme chip and the typed query are one filter: a document shows when it passes both. Matching
   // proceedings open so the documents are on the page; clearing the filter folds back the ones it opened
   // (marked data-auto), except one the reader has a document open in. Quoted points load when a document opens, or for a theme, where
@@ -2025,7 +2096,8 @@
     var R0 = window.FERC_RECORD;
     filingTheme = key && R0 && R0.themes.some(function (t) { return t.key === key; }) ? key : "";
     panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-theme") === filingTheme)); });
-    var q = filingQuery.length >= FQ_MIN ? filingQuery : "", active = !!(filingTheme || q), shown = 0;
+    if (!filingTheme) filingKw = false;
+    var q = filingQuery.length >= FQ_MIN ? filingQuery : "", active = !!(filingTheme || q), shown = 0, groupsShown = 0;
     // Filtering shows the matches per proceeding, without each proceeding's intro text.
     panel.classList.toggle("fg-filtering", active);
     var box = panel.querySelector("#fg-q");
@@ -2035,11 +2107,19 @@
     panel.querySelectorAll(".fgroup").forEach(function (g) {
       var n = 0;
       g.querySelectorAll(".fdoc").forEach(function (d) {
-        var on = (!filingTheme || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + filingTheme + " ") >= 0) &&
+        var on = (!filingTheme || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + filingTheme + " ") >= 0 && (filingKw || !d.hasAttribute("data-kw"))) &&
           (!q || words.every(function (w) { return d.getAttribute("data-q").indexOf(w) >= 0; }));
         d.hidden = !on; if (on) n++;
       });
-      g.hidden = n === 0; shown += n;
+      g.hidden = n === 0; shown += n; if (n) groupsShown++;
+      // Sections with no match step aside; folded procedure opens while it holds a match.
+      g.querySelectorAll(".fd-secw").forEach(function (w) {
+        var any = !!w.querySelector(".fdoc:not([hidden])"); w.hidden = !any;
+        if (w.classList.contains("fd-proc")) {
+          if (active && any) { if (!w.open) { w.setAttribute("data-auto", ""); w.open = true; } }
+          else if (w.hasAttribute("data-auto")) { w.removeAttribute("data-auto"); if (!w.querySelector(".fdoc[open]")) w.open = false; }
+        }
+      });
       if (active && n) { if (!g.open) { g.setAttribute("data-auto", ""); g.open = true; } if (filingTheme) loadPoints(g); }
       else if (!active && g.hasAttribute("data-auto")) { g.removeAttribute("data-auto"); if (!g.querySelector(".fdoc[open]")) g.open = false; }
     });
@@ -2059,15 +2139,26 @@
       if (!active) pickSubtab("filings", subtabPick.filings || SUBTABS.filings[0][0]);
     }
     // A chip's number is what tapping it would show, so it counts against the typed query.
-    var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return !q || d.getAttribute("data-q").indexOf(q) >= 0; });
+    // Same word-by-word test as the filter above, so a count never disagrees with what the chip shows.
+    var docs = [].slice.call(panel.querySelectorAll(".fdoc")).filter(function (d) { return words.every(function (w) { return d.getAttribute("data-q").indexOf(w) >= 0; }); });
+    var hasTheme = function (d, k) { return (" " + d.getAttribute("data-themes") + " ").indexOf(" " + k + " ") >= 0; };
     panel.querySelectorAll(".th-chips .who-chip").forEach(function (c) {
       var k = c.getAttribute("data-theme"), num = c.querySelector(".mono");
-      if (num) num.textContent = docs.filter(function (d) { return !k || (" " + d.getAttribute("data-themes") + " ").indexOf(" " + k + " ") >= 0; }).length;
+      if (num) num.textContent = docs.filter(function (d) { return hasTheme(d, k) && !d.hasAttribute("data-kw"); }).length;
     });
+    var kwN = filingTheme ? docs.filter(function (d) { return hasTheme(d, filingTheme) && d.hasAttribute("data-kw"); }).length : 0;
+    var kwBtn = panel.querySelector(".fg-kw");
+    if (kwBtn) {
+      kwBtn.hidden = !kwN;
+      kwBtn.textContent = filingKw ? "Hide the " + kwN + " unread documents matched by keyword" : "Add " + kwN + " unread " + (kwN === 1 ? "document" : "documents") + " that mention it (keyword match)";
+    }
+    var clr = panel.querySelector(".fg-clear"); if (clr) clr.hidden = !active;
     var none = panel.querySelector(".fg-none");
     if (none) none.hidden = !(active && shown === 0);
     var live = panel.querySelector(".fg-live");
-    if (live) live.textContent = !active ? "" : shown + (shown === 1 ? " document" : " documents") + (filingTheme ? " on this theme" : "") + (q ? " matching “" + q + "”" : "");
+    var tl = filingTheme ? themeLabel(window.FERC_RECORD, filingTheme) : "";
+    if (live) live.textContent = !active ? "" : shown + (shown === 1 ? " document" : " documents") + (filingTheme ? " about " + tl : "") + (q ? " matching “" + q + "”" : "") +
+      " in " + groupsShown + (groupsShown === 1 ? " proceeding" : " proceedings");
   }
   var pendingFiling = null, filingHash = "";
   function routeFiling(rest) {
@@ -2075,9 +2166,11 @@
     var bits = String(rest || "").split("/");
     if (bits[0] === "theme") {
       filingQuery = "";                      // a theme address shows that theme alone, whatever was typed before
+      filingKw = bits[2] === "all";
       applyTheme(panel, bits[1] || "");
       // An unknown theme shows everything, so the address says so too.
-      filingHash = filingTheme ? "theme/" + filingTheme : "";
+      filingHash = filingTheme ? "theme/" + filingTheme + (filingKw ? "/all" : "") : "";
+      var top = panel.querySelector(".fg-themes"); if (top) show(top, { block: "start" });
       if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
       return;
     }
@@ -2099,7 +2192,7 @@
     var solo = !doc && grp.querySelectorAll(".fdoc");
     if (solo && solo.length === 1) doc = solo[0];
     // A document can move between proceedings (sc-miso to miso-irr): open the group that holds it.
-    if (doc) { grp = doc.closest(".fgroup") || grp; grp.open = true; doc.open = true; filingHash = grp.id.slice(3) + "/" + doc.id.slice(3); }
+    if (doc) { grp = doc.closest(".fgroup") || grp; grp.open = true; var pr = doc.closest(".fd-proc"); if (pr) pr.open = true; doc.open = true; filingHash = grp.id.slice(3) + "/" + doc.id.slice(3); }
     show((doc || grp), { block: "start" });
     focusSummary(doc || grp);
     loadPoints(grp, function () { if (doc) show(doc, { block: "start" }); });
@@ -2109,11 +2202,12 @@
     var panel = panelFor("filings");
     loadCrosswalk();
     panel.addEventListener("click", function (ev) {
-      var b = ev.target.closest && ev.target.closest(".th-chips .who-chip");
-      if (!b) return;
-      var k = b.getAttribute("data-theme");
+      var t = ev.target.closest && ev.target, k;
+      if (t && t.closest(".fg-kw")) { filingKw = !filingKw; k = filingTheme; }
+      else if (t && t.closest(".fg-clear")) { filingQuery = ""; k = ""; }
+      else { var b = t && t.closest(".th-chips .who-chip"); if (!b) return; filingKw = false; k = b.getAttribute("data-theme"); }
       applyTheme(panel, k);
-      filingHash = k ? "theme/" + k : "";
+      filingHash = filingTheme ? "theme/" + filingTheme + (filingKw ? "/all" : "") : "";
       if (history.replaceState) history.replaceState(null, "", "#filings" + (filingHash ? "/" + filingHash : ""));
     });
     var box = panel.querySelector("#fg-q"), qTimer = null;

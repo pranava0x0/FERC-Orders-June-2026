@@ -1113,6 +1113,7 @@ a.cm-hm-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1
   display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0; text-transform: none;
   border-radius: 4px; padding: 1px 6px; margin-right: 8px; vertical-align: 2px; border: 1px solid currentColor;
 }
+.fd-side { font-weight: 600; }
 .side-for { color: var(--support, var(--ok)); }
 .side-against { color: var(--oppose, var(--deadline)); }
 .side-mixed { color: var(--mixed, var(--warn)); }
@@ -1347,6 +1348,22 @@ a.trackpill:hover { border-color: var(--accent); color: var(--accent-ink); }
 .fd-tools .mono { color: var(--text-muted); }
 .fd-all { flex-basis: 100%; font-size: 12.5px; color: var(--text-muted); }
 .tag { font-size: 12px; color: var(--text-secondary); background: var(--surface-2); border-radius: 4px; padding: 1px 7px; }
+.fd-topics { flex-basis: 100%; color: var(--text-secondary); }
+.fg-themes-l { font-size: 14px; font-weight: 600; margin: 10px 0 4px; }
+.th-chips .who-chip .mono { font-weight: 400; color: var(--text-muted); margin-left: 2px; }
+.th-chips .who-chip[aria-pressed="true"] .mono { color: inherit; }
+.fg-live-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+.fg-live-row .fg-live { margin: 0; font-weight: 600; }
+.oa-l { font-size: 12.5px; color: var(--text-muted); align-self: center; }
+.fg-kw, .fg-clear { text-align: left; appearance: none; background: none; border: 0; padding: 0; font: inherit; font-size: 14px; color: var(--link, var(--accent-ink)); text-decoration: underline; cursor: pointer; }
+@media (pointer: coarse) { .fg-kw, .fg-clear { min-height: 44px; } }
+.fd-sec { font-size: 13px; font-weight: 700; color: var(--text-secondary); text-transform: none; margin: 14px 0 2px; padding: 4px 0; }
+.fd-sec-n { font-weight: 400; color: var(--text-muted); }
+.fd-secw:first-child .fd-sec { margin-top: 4px; }
+details.fd-proc > summary.fd-sec { cursor: pointer; list-style: none; }
+details.fd-proc > summary.fd-sec::before { content: "› "; display: inline-block; transition: transform .15s; }
+details.fd-proc[open] > summary.fd-sec::before { transform: rotate(90deg); }
+@media (pointer: coarse) { details.fd-proc > summary.fd-sec { min-height: 44px; display: flex; align-items: center; } }
 @media (pointer: coarse) { .fdoc > summary, .fg-sum { min-height: 44px; } .fd-tools a { min-height: 44px; display: inline-flex; align-items: center; } }
 
 /* Discourse: dense rows, one line of metadata, links at the end */
@@ -1536,11 +1553,14 @@ details.tl-item .srcs { padding: 0 0 10px 128px; }
 
 /* Nov 16 filings compared: reforms x markets (app.js xwTable). */
 .xw-t-wrap { margin: 0 0 20px; }
-.xw-t { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 13.5px; }
+.xw-t { border-collapse: collapse; width: 100%; min-width: 1080px; font-size: 13px; line-height: 1.4; }
 .xw-t caption { text-align: left; font-weight: 700; padding: 0 0 8px; }
 .xw-t th, .xw-t td { border-top: 1px solid var(--rule); padding: 8px; text-align: left; vertical-align: top; }
 .xw-t thead th { border-top: 0; color: var(--text-muted); font-size: 12.5px; }
-.xw-t tbody th { width: 9rem; }
+.xw-t tbody th { width: 11rem; font-size: 12.5px; }
+.xw-ul { margin: 0; padding-left: 1.1em; }
+.xw-ul li + li { margin-top: 4px; }
+.xw-by { font-weight: 600; }
 .xw-t-none { color: var(--text-muted); }
 .xw-t td a { display: inline-block; white-space: nowrap; }
 @media (pointer: coarse) { .xw-t td a { min-height: 44px; display: inline-flex; align-items: center; } }

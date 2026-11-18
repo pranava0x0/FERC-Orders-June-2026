@@ -72,6 +72,12 @@ desktop 28.0. Comparing who pays across markets fell from 10.1 to 2.5 taps-plus-
 quote-to-original-page route from 7.5 to 2. Opening a subtab costs one tap, so a few home-page answers
 now cost 1 where they cost a short scroll before; the next deadline is answered by the masthead chip on every page.
 
+**2026-11-18, comparison table as bullets:** each cell lists 2 to 4 page-cited points with figures (deposits, thresholds, timelines), and reform rows use the June orders' own Section III headings. The taller first row adds 0.75 of a screen on a phone to the two who-pays questions (1 to 1.75); accepted for the detail. Phone 37.7, tablet 30.4, desktop 29.1.
+
+**2026-11-18, Filings sections and filters:** each proceeding lists its documents in four sections: FERC orders and notices, proposals and reports, responses, and procedural filings. Procedural filings fold only when there are substantive responses above them. The MISO-responses route now ends on an actual response, not MISO's own filing (desktop 3 to 3.73). Theme chips count and show read documents only; keyword matches are opt-in. Phone 38.4, tablet 30.8, desktop 30.0.
+
+**2026-11-18, ANOPR commenter search on the overview:** a "Find a commenter" box on the ANOPR overview hands off to the All comments filter, saving the tap through that subtab (Constellation question 5.93 to 4.93 on a phone, 1.00 lower at every size). Tried and rejected: routing MISO responses through the Now page's filing link, which is cheaper on tablet and desktop but costs more on a phone. Phone 37.5, tablet 29.9, desktop 29.0.
+
 ## Gaps: questions the site cannot answer yet
 
 Each needs data before it needs a route. When one becomes answerable, it gets a question in
