@@ -1,19 +1,20 @@
-:root{color-scheme:light;--paper:#f4f1ea;--ink:#15212e;--navy:#0b2545;--blue:#1a4480;--rule:#bdb8a8;--muted:#51606e}
+/* FERC palette, matching styles.css (DESIGN.md 3.4): teal header with a gold rule, teal links. */
+:root{color-scheme:light;--paper:#f6f8f8;--ink:#1d242c;--navy:#08524c;--blue:#0a6b63;--gold:#f9d073;--rule:#b9c7c6;--muted:#555c66}
 *{box-sizing:border-box}
 html{scroll-padding-top:1rem}
 body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.57 system-ui,sans-serif;overflow-wrap:anywhere}
 a{color:var(--blue);text-underline-offset:.17em}
 a:hover{text-decoration-thickness:.14em}
 :focus-visible{outline:3px solid var(--blue);outline-offset:2px}
-header{background:var(--navy);border-bottom:4px solid var(--blue)}
+header{background:var(--navy);border-bottom:3px solid var(--gold)}
 header nav,main,footer{max-width:63rem;margin:auto;padding:1rem clamp(1.15rem,4vw,3.5rem)}
 header nav{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
 header a{color:white;font-size:.87rem}
 header a:first-child{font:700 clamp(1.12rem,3vw,1.65rem) Georgia,serif;margin-right:auto;text-decoration:none}
 main{padding-top:2.3rem;padding-bottom:3rem}
-h1,h2,h3,h4{line-height:1.16;margin:.5em 0;font-family:Georgia,serif}
+h1,h2,h3,h4{line-height:1.16;margin:.5em 0;font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
 h1{font-size:clamp(1.9rem,5vw,3.2rem);max-width:30ch}
-h2{font-size:1.65rem;border-top:2px solid var(--ink);padding-top:.65rem;margin-top:1.8rem}
+h2{font-size:1.65rem;border-top:2px solid var(--navy);color:var(--navy);padding-top:.65rem;margin-top:1.8rem}
 h3{font-size:1.34rem}
 h4{font-size:1.07rem}
 p{margin:.5em 0;max-width:82ch}
@@ -54,3 +55,12 @@ blockquote{font-style:italic;border-left:2px solid var(--rule)}
 .anchors{display:flex;flex-wrap:wrap;gap:.4rem}
 .oa{display:inline-flex;align-items:center;min-height:36px;padding:.2rem .6rem;border:1px solid var(--rule);border-radius:6px;background:#fff;text-decoration:none;font-size:.9rem}
 .elsewhere{padding-left:1.1rem}.elsewhere .by{color:var(--muted);font-size:.88rem}
+/* 2026-11-18: FERC palette, matching styles.css (DESIGN.md 3.4). Teal header, gold rule, serif titles. */
+:root{--paper:#f6f8f8;--ink:#1d242c;--navy:#08524c;--blue:#0a6b63;--rule:#d8e0e0;--muted:#555c66}
+header{background:var(--navy);border-bottom:3px solid #f9d073}
+header a{color:#fff}
+header a:first-child{font:700 clamp(1.1rem,2.6vw,1.5rem) "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:#fff}
+header :focus-visible{outline-color:#f9d073}
+h1,h2{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:var(--navy)}
+blockquote{border-left-color:var(--blue)}
+.oa:hover{border-color:var(--blue);background:#ebf1f1}
