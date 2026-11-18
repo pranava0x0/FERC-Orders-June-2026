@@ -14,6 +14,9 @@ test('every inventory row maps to its original bytes; sections and pages cover a
  for(const row of part){assert.equal(row.startToken,at,r.slug);assert.ok(row.endToken>=at,r.slug);at=row.endToken;}assert.equal(at,r.tokens,r.slug);}
  const html=read(r.slug+'/index.html'),full=read(r.slug+'/text.html');let anchors=new Set([...full.matchAll(/ id="([^"]+)"/g)].map(x=>x[1]));
  for(const [,a] of html.matchAll(/href="text\.html#([^"]+)"/g))assert.ok(anchors.has(a),r.slug+' '+a);
+ const own=new Set([...html.matchAll(/ id="([^"]+)"/g)].map(x=>x[1]));
+ for(const [,a] of html.matchAll(/href="#([^"]+)"/g))assert.ok(own.has(a),r.slug+' in-page #'+a);
+ if(html.includes('class="toc"'))assert.match(html,/<summary>Contents · \d+ sections<\/summary>/,r.slug);
  }});
 test('public leads reach cited source sections without any script',()=>{
  for(const row of loadData().meta.readingLeads){let [doc,id]=row.href.slice('reading/'.length).split('/#');assert.ok(read(doc+'/index.html').includes('id="'+id+'"'));assert.ok(read('../index.html').includes(row.href));assert.ok(read('../llms.txt').includes(row.href));}

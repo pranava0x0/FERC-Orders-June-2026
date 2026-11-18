@@ -1,0 +1,286 @@
+--- PAGE 1 ---
+Example of Rate Designs for Firm Contract Demand Transmission Service, Non-Firm Contract Demand Transmission Service, and Interim, Non-Firm Service
+(1)
+    
+Gross Revenue Requirement
+1,000,000,000
+$        
+(2)
+    
+Revenue Credits
+(50,000,000)
+$            
+(3)
+    
+True-Up Adjustment
+(50,000,000)
+$            
+(4)
+    
+Net Revenue Requirement
+900,000,000
+$           
+= (1) + (2) + (3)
+(5)
+    
+1 Coincident Peak (MW/Year) - NITS
+7,250
+                        
+(6)
+    
+1 Coincident Peak (MW/Year) - Interim, Non-Firm Service
+500
+                           
+(7)
+    
+Firm Contract Demand (MW/Year) - Firm Contract Demand Transmission Service
+2,000
+                        
+(8)
+    
+Total MW/Year - Transmission Service
+9,750
+                        
+= (5) + (6) + (7)
+(9)
+    
+Transmission Rate ($/MW/Year)
+92,308
+$                    
+= (4) ÷ (8)
+(10)
+  
+Average Grid Reliance Charge Percentage
+25.8%
+(11)
+  
+Grid Reliance Charge ($/MW/Year) (Unadjusted)
+23,815
+$                    
+= (9) x (10)
+(12)
+  
+Total MW/Year - Transmission Service
+9,750
+                        
+= (8)
+(13)
+  
+Contract Demand Gross Load in Excess of Firm Contract Demand (MW/Year)
+522
+                           
+(14)
+  
+10,272
+                      
+= (12) + (13)
+(15)
+  
+Ratio of Total MW/Year (Transmission Service) to Total MW/Year (Transmission Service Plus Contract Demand Gross Load in Excess of Firm Contract Demand)
+0.9492
+                      
+= (12) / (14)
+(16)
+  
+Grid Reliance Charge ($/MW/Year)
+22,605
+$                    
+= (11) x (15)
+(17)
+  
+Contract Demand  (Firm Contract Demand Transmission Service and Non-Firm Contract Demand Transmission Service) Gross Load (MW/Year)
+2,522
+                        
+= (7) + (13)
+(18)
+  
+Firm Contract Demand (MW/Year)
+2,000
+                        
+= (7)
+(19)
+  
+Contract Demand Gross Load in Excess of Firm Contract Demand (MW/Year)
+522
+                           
+= (17) - (18)
+(20)
+  
+Grid Reliance Charge Revenue
+11,799,810
+$             
+= (16) x (19)
+(21)
+  
+Total MW/Year - Transmission Service
+9,750
+                        
+= (8)
+(22)
+  
+Bill Credit ($/MW/Year) from Grid Reliance Charge to NITS, Interim, Non-Firm Service, and Firm Contract Demand transmission service Customers
+(1,210)
+$                    
+= -(20) ÷ (21)
+(23)
+  
+Transmission Rate ($/MW/Year)
+92,308
+$                    
+= (9)
+(24)
+  
+Grid Reliance Charge ($/MW/Year)
+22,605
+$                    
+= (16)
+(25)
+  
+Transmission  Maximum Rate ($/MW/Year) - Non-Firm Contract Demand Service
+69,703
+$                    
+= (23) - (24)
+(26)
+  
+Non-Firm Contract Demand (MW/Year)
+275
+(27)
+  
+Non-Firm Contract Demand Transmission Service Revenue
+19,168,325
+$             
+= (25) x (26)
+(28)
+  
+Total MW/Year - Transmission Service
+9,750
+                        
+= (8)
+(29)
+  
+Bill Credit ($/MW/Year) from Non-Firm Contract Demand Transmission Service to NITS, Interim, Non-Firm Service, and Firm Contract Demand Transmission Service Customers
+(1,966)
+$                    
+= -(27) ÷ (28)
+Total MW/Year (Transmission Service Plus Contract Demand Gross Load in Excess of Firm Contract Demand)
+Exhibit No. PTO-0004
+Page 1 of 2
+--- PAGE 2 ---
+Example of Rate Designs for Firm Contract Demand Transmission Service, Non-Firm Contract Demand Transmission Service, and Interim, Non-Firm Service
+(30)
+  
+NITS - Transmission Service Rate ($/MW/Year (1CP))
+92,308
+$                    
+=  (9)
+(31)
+  
+NITS - Grid Reliance Charge Bill Credit ($/MW/Year (1CP))
+(1,210)
+$                    
+= (22)
+(32)
+  
+NITS - Non-Firm Contract Demand Transmission Service Bill Credit ($/MW/Year (1CP))
+(1,966)
+$                    
+= (29)
+(33)
+  
+NITS - Net Effective Rate ($/MW/Year (1CP))
+89,132
+$                    
+= (30) + (31) +  (32)
+(34)
+  
+Interim, Non-Firm Service - Transmission Service Rate ($/MW/Year (1CP))
+92,308
+$                    
+=  (9)
+(35)
+  
+Interim, Non-Firm Service - Grid Reliance Charge Bill Credit ($/MW/Year (1CP))
+(1,210)
+$                    
+= (22)
+(36)
+  
+Interim, Non-Firm Service - Non-Firm Contract Demand Transmission Service Bill Credit ($/MW/Year (1CP))
+(1,966)
+$                    
+= (29)
+(37)
+  
+Interim, Non-Firm Service - Net Effective Rate ($/MW/Year (1CP))
+89,132
+$                    
+= (34) + (35) +  (36)
+(38)
+  
+Firm Contract Demand Transmission Service - Transmission Service Rate ($/MW/Year (Firm Contract Demand))
+92,308
+$                    
+=  (9)
+(39)
+  
+Firm Contract Demand Transmission Service - Grid Reliance Charge Bill Credit ($/MW/Year (Firm Contract Demand))
+(1,210)
+$                    
+= (22)
+(40)
+  
+Firm Contract Demand Transmission Service - Non-Firm Contract Demand Transmission Service Bill Credit ($/MW/Year (Firm Contract Demand))
+(1,966)
+$                    
+= (29)
+(41)
+  
+Firm Contract Demand Transmission Service - Net Effective Rate ($/MW/Year (Firm Contract Demand))
+89,132
+$                    
+= (38) + (39) +  (40)
+(42)
+  
+Firm Contract Demand Transmission Service - Grid Reliance Charge ($/MW/Year (Gross Load in Excess of Firm Contract Demand))
+22,605
+$                    
+= (16)
+(43)
+  
+Non-Firm Contract Demand Service - Transmission Maximum Rate ($/MW/Year (Non-Firm Contract Demand))
+69,703
+$                    
+= (25)
+(44)
+  
+Non-Firm Contract Demand Transmission Service - Grid Reliance Charge ($/MW/Year (Gross Load in Excess of Firm Contract Demand))
+22,605
+$                    
+= (16)
+Notes:
+(9)
+    
+Rounded to zero decimal places.
+(11)
+  
+Rounded to zero decimal places.
+(15)
+  
+Rounded to four decimal places.
+(16)
+  
+Rounded to zero decimal places.
+(20)
+  
+Rounded to zero decimal places.
+(22)
+  
+Rounded to zero decimal places.
+(27)
+  
+Rounded to zero decimal places.
+(29)
+  
+Rounded to zero decimal places.
+Exhibit No. PTO-0004
+Page 2 of 2

@@ -50,6 +50,23 @@ deadline passed with the proceedings paused; the Aug 21 AD26-7 comments arrived 
 
 `node tools/check-staleness.mjs` tells you if you are overdue. Run it first; it is the cheapest signal.
 
+### Record tier: every substantive filing as page text (added 2026-11-18)
+
+Docket rows marked "(doc-less)" are interventions with no document. Every other row's files are fetched, and the
+substantive ones enter the reading room as page text; the originals stay on eLibrary (a sha256 per file is recorded).
+
+```bash
+node tools/sweep-show-cause.mjs /tmp/sheets 2025-01-01 YYYY-MM-DD $(python3 -c "import json;print(' '.join(json.load(open('sources/filings/sheet-baseline.json'))))")
+# list the accessions not yet in docs/reading/catalog.json, then:
+node tools/fetch-filing-originals.mjs --out /tmp/capture ACC [ACC ...]
+python3 tools/ingest-record-tier.py /tmp/sheets /tmp/capture   # prints ✓ kept · − unrelated · ✗ failed
+python3 tools/index-filing-text.py && node tools/build-filing-readers.mjs   # then the usual GATES
+```
+
+A docket outside `sheet-baseline.json` is kept only when its filing's own text mentions large loads or the show cause
+order (a swept ER range also holds market-rate applications). A new docket needs a `match` entry in
+`sources/filings/proceedings.json` or `build-record-data.mjs` fails with "no proceeding for".
+
 ## The loop
 
 ### 1. Sweep

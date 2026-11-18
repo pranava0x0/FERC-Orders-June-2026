@@ -64,3 +64,9 @@ header :focus-visible{outline-color:#f9d073}
 h1,h2{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:var(--navy)}
 blockquote{border-left-color:var(--blue)}
 .oa:hover{border-color:var(--blue);background:#ebf1f1}
+.toc{margin:1rem 0;border-block:1px solid var(--rule);padding:.25rem 0}
+.toc ol{list-style:none;padding:0;margin:.25rem 0 .5rem;columns:2 22rem;column-gap:2rem}
+.toc li{break-inside:avoid;display:flex;gap:.5rem;align-items:baseline;justify-content:space-between}
+.toc li.sub{padding-left:1.1rem}
+.toc li a{display:inline-flex;align-items:center;min-height:44px}
+.toc li .meta{white-space:nowrap}

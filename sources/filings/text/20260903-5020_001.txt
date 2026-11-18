@@ -1,0 +1,200 @@
+--- PAGE 1 ---
+Comments of Hans Royal, Docket No. ER26-3515-000, page 1 
+UNITED STATES OF AMERICA 
+BEFORE THE FEDERAL ENERGY REGULATORY COMMISSION 
+PJM Interconnection, L.L.C.
+Docket No. ER26-3515-000
+COMMENTS OF HANS ROYAL 
+September 3, 2026 
+1. Introduction and Interest of the Commenter 
+I am an energy professional and researcher, and spent nearly two decades advising large electricity 
+buyers on electricity procurement before turning to this research full time. I developed the 
+Compute Heat Rate (CHR) framework to answer a practical question: how high can the price of 
+electricity rise before AI data center workloads are no longer profitable? CHR expresses that 
+threshold in dollars per megawatt-hour and reports it by workload type. I published the framework 
+on SSRN in February 2026 (Royal, 2026, doi 10.2139/ssrn.6322318), and I update the underlying 
+index quarterly at computeheatrate.com. PJM discussed CHR at pages 49 through 50 of its May 6, 
+2026 white paper, Powering Reliability Through Market Design, in connection with demand-side 
+price tolerance. 
+I am filing these comments on my own behalf as an independent researcher. I publish the index 
+and provide advisory work drawing on this research; I have no client with an interest in this 
+proceeding, and I represent no load, supplier, or other market participant, nor am I asking the 
+Commission to adopt CHR, or any other single metric, as a tariff standard. Instead, my point is 
+narrower: PJM is proposing a framework under which large loads are identified and, through 
+Transmission Owners and Electric Distributors, reduced and compensated during capacity 
+shortages. Two facilities can look the same on an interconnection diagram and have radically 
+different economic responses to interruption, so my recommendation is that the design leave room 
+for that fact. 
+2. Summary of Position 
+PJM needs an interim answer to a real resource adequacy problem, and this filing is a reasonable 
+one. I support approval of the Interim Resource Adequacy Service (IRAS), the Large Load 
+Registry, and the Bring Your Own New Capacity (BYONC) provisions. The July 27 Board 
+framework followed a substantial stakeholder process and places the reliability obligation where 
+it belongs: on new load that enters without bringing new supply, not on customers already served 
+by the system. 
+There is one issue the Commission should keep in view as it evaluates the filing and the work that 
+will follow it, which is that large loads are not economically interchangeable. This shows up in 
+three ways:
+--- PAGE 2 ---
+Comments of Hans Royal, Docket No. ER26-3515-000, page 2 
+First, the cost of interrupting one large load can differ from the cost of interrupting another by well 
+over an order of magnitude. The Q3 2026 CHR index puts the operating electricity threshold for 
+internal, self-hosted AI inference at about $1,200 per MWh and the threshold for frontier inference 
+at about $18,400 per MWh. The consumption-weighted figure is about $9,100 per MWh. A pro 
+rata zonal allocation and one compensation rate wouldn’t adequately reflect the real economics.  
+Second, the filing itself provides evidence of this economic spread. A load that arranges new 
+capacity under the BYONC rules or installs enough backup generation to take its load off the 
+system is paying for firmness. Another load may accept IRAS exposure and the accompanying 
+credit. Those are different choices about the value of uninterrupted service. BYONC and the 
+backup-generation provisions will begin sorting loads on that basis even though the tariff does not 
+describe the process in those terms. 
+Third, the Registry can capture what PJM learns from those choices. I am not proposing a new 
+mandate for the interim phase. I am asking the Commission to encourage PJM to keep the Registry 
+and IRAS flexible enough to support voluntary reduction preferences and, where states and 
+Electric Distributors choose to use them, economically informed reduction priorities later. 
+3. Background: What the Compute Heat Rate Measures 
+CHR starts with the revenue earned by an AI workload and the energy needed to deliver the 
+service. From published inputs and disclosed assumptions, it estimates the electricity price the 
+workload can absorb before continued operation ceases to make economic sense. 
+The index reports two related values. Long-run CHR asks whether it still makes sense to build and 
+operate new capacity for the workload. Dispatch CHR, or CHR-D, asks a different question: after 
+the facility has been built and its capital cost is sunk, at what hourly electricity price would a 
+rational operator stop running? CHR-D is the more relevant value here because curtailment is an 
+operating decision. 
+The Q3 2026 index was published September 1. It reports a blended long-run CHR of 
+approximately $5,630 per MWh and a blended CHR-D of approximately $9,070 per MWh. Those 
+figures are about 113 and 181 times a conventional gas-fired reference price of $50 per MWh. The 
+long-run CHR declined by nearly 30 percent from Q2, reflecting both market developments, 
+including falling token prices and the commoditization of inference, and methodology updates 
+disclosed with the release. That movement is important: the index tracks the market rather than 
+fixing a number. It did not, however, change the basic result. For the commercial workloads that 
+account for most deployed compute, the rational curtailment threshold remains far above any price 
+PJM's energy market is permitted to produce. 
+Those numbers require two qualifications. First, neither CHR nor CHR-D says whether a facility 
+can physically reduce load in ten minutes, or by how much. That depends on the operator, the 
+facility, and PJM's operating rules. Second, CHR is not a price forecast. It is an economic ceiling: 
+a measure of economic tolerance, not a prediction of what power will cost.
+--- PAGE 3 ---
+Comments of Hans Royal, Docket No. ER26-3515-000, page 3 
+4. Observations on the Proposal 
+References below to the 'Board framework' are to PJM's CIFP Framework for Service During 
+Periods of Insufficient Resource Adequacy (July 27, 2026), which the August 13, 2026 filing 
+implements. Where the filed tariff language differs from that framework, the filed language 
+controls. 
+4.1 Curtailment economics are heterogeneous, and the spread is large 
+The label "AI data center" hides a very wide range of economics. In the Q3 2026 index, CHR-D 
+runs from approximately $1,227 per MWh for internal and self-hosted inference to approximately 
+$18,378 per MWh for frontier inference, a spread of roughly fifteen times. At the low end, a 
+compensated interruption may be a sensible bargain. At the high end, the lost workload value 
+during the same hour can exceed the credit many times over. 
+Electric Distributors would compensate compliant IRAS reductions at a single flat hourly rate set 
+by PJM and tied to the rate already used for pre-emergency demand response (Board framework, 
+Credits, item 6). Measured against CHR-D, that credit is likely to cover much of what some 
+workloads lose and a small fraction of what others lose. 
+4.2 What uniform treatment leaves on the table 
+If PJM needs a given number of megawatts during an emergency, it can obtain those megawatts 
+from loads with very different interruption costs. The framework allocates reductions across 
+affected zones pro rata and leaves customer-specific implementation to Transmission Owners and 
+Electric Distributors in coordination with states and affected customers, with no economic 
+criterion. That order could cut a workload that would pay almost anything to continue operating 
+while leaving another workload online that would have reduced voluntarily at a much lower price. 
+Reliability sees the same megawatts either way; customers do not bear the same cost. Over time, 
+PJM could reduce that cost by allowing loads to volunteer for earlier reduction or by permitting 
+states and Electric Distributors to use economic exposure when setting reduction order. 
+The single credit rate creates the same mismatch. The credit is below the operating value of most 
+deployed compute as measured by CHR-D. I do not view that as a flaw in the proposed rate. Fully 
+compensating frontier inference would impose an unreasonable cost on other customers, and the 
+Board reasonably concluded that an IRAS reduction happens earlier and under less severe 
+conditions than a full emergency. But the credit should not be mistaken for the value of the 
+curtailed activity. A high-CHR-D load has little economic reason to rely on it and every reason to 
+seek firmness through BYONC or on-site generation. A lower-CHR-D load may find the credit 
+meaningful and may be willing to reduce first. 
+4.3 The proposal already sorts loads by willingness to pay for firmness 
+BYONC and the Registry's backup-generation field (Registration Content, item 10) will give PJM 
+a rough but useful signal about the value that individual loads place on firmness. A customer that 
+arranges BYONC backed by a resource subject to the proposal's maintenance and price-taker
+--- PAGE 4 ---
+Comments of Hans Royal, Docket No. ER26-3515-000, page 4 
+requirements, or installs backup generation sufficient to remove its load from the system, has made 
+an expensive choice not to be interrupted. 
+This is why the economic spread is not merely theoretical. Once implementation begins, the 
+Registry is expected to show some large loads arriving with BYONC or backup generation and 
+others arriving without either. The proposal will produce economic differentiation through those 
+customer choices. It simply does not yet use the resulting information when reductions are 
+assigned. 
+4.4 The Registry as a foundation 
+The Board describes the Registry as providing "the critical data transparency needed to establish 
+load reduction priorities for retail customers." It also commits PJM to publish aggregate 
+information where confidentiality permits. I agree with both decisions. The Registry can also hold, 
+on a voluntary basis, the information that states and Electric Distributors would need to set 
+reduction order more intelligently when they "coordinate with the individual customers that will 
+be subject to Interim Resource Adequacy Service" (Participation Details, item 9). 
+PJM does not need to collect detailed economic data in this proceeding. It should, however, avoid 
+designing a schema that forecloses the option. A voluntary field stating a customer's reduction 
+preference, or noting planned participation in Price Responsive Demand or a state economic-
+priority program, would be enough to preserve a path forward. Adding that capacity now is easier 
+than rebuilding the Registry after it is populated. 
+5. Recommendations 
+I ask the Commission to take four steps: 
+(a) Approve IRAS, the Large Load Registry, and BYONC as interim measures on PJM's 
+requested schedule. 
+(b) Recognize in its order that pro rata allocation and a uniform credit are interim 
+simplifications. The Commission should encourage PJM and its stakeholders to examine 
+economically differentiated participation and reduction order in the follow-on process. 
+That work could use Price Responsive Demand, state and Electric Distributor programs 
+informed by Registry data, voluntary self-designation, or a combination of those 
+approaches. 
+(c) Encourage PJM to include voluntary Registry fields that can support that work and to 
+publish enough aggregate detail for independent analysis of how large loads are actually 
+entering the system. 
+(d) Encourage the use of transparent, published, independently verifiable economic 
+references when states, Electric Distributors, or PJM develop economically differentiated 
+reduction priorities in the follow-on process. Published frameworks can be inspected,
+--- PAGE 5 ---
+Comments of Hans Royal, Docket No. ER26-3515-000, page 5 
+challenged, and updated, which is what makes them suitable as a common reference for 
+operators, regulators, and lenders. 
+6. Conclusion 
+PJM has proposed a workable interim response to an urgent problem, and I support approval. The 
+Commission should also be clear about what the interim design leaves unresolved. Large loads 
+that appear similar electrically can differ by an order of magnitude in the value they lose when 
+curtailed. BYONC and backup-generation choices should make part of that difference visible 
+almost immediately. PJM should preserve the ability to use what it learns, instead of hardening a 
+temporary pro rata approach into the long-term answer. 
+Respectfully submitted, 
+Hans Royal 
+Author, The Compute Heat Rate (Royal, 2026) 
+computeheatrate.com 
+September 3, 2026 
+References 
+Royal, Hans. The Compute Heat Rate: Quantifying AI-Driven Electricity Price Tolerance and Its 
+Implications 
+for 
+Wholesale 
+Market 
+Repricing 
+(February 
+28, 
+2026). 
+SSRN, 
+http://dx.doi.org/10.2139/ssrn.6322318. 
+Royal, 
+Hans. 
+CHR 
+Reference 
+Values, 
+Q3 
+2026 
+(September 
+1, 
+2026). 
+https://computeheatrate.com/chr-index. 
+Royal, Hans. The Price of Flexibility (August 2026). https://computeheatrate.substack.com/p/the-
+price-of-flexibility. 
+PJM Interconnection, L.L.C. Powering Reliability Through Market Design (May 6, 2026), at 49-
+50. 
+PJM Board of Managers. CIFP Framework for Service During Periods of Insufficient Resource 
+Adequacy, PJM Proposal, Executive Summary and Detailed Proposal (July 27, 2026). 
+PJM Interconnection, L.L.C. Proposal to Establish Interim Resource Adequacy Service and a 
+Large Load Registry, Docket No. ER26-3515-000 (filed August 13, 2026), Accession No. 
+20260813-5118.

@@ -1,0 +1,1205 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+PJM Interconnection, LLC  
+) 
+ 
+Docket No. ER26-3380-000  
+ 
+LIMITED PROTEST OF  
+AMERICAN ELECTRIC POWER SERVICE CORPORATION 
+ 
+ 
+ 
+Pursuant to Rule 211 of the Federal Energy Regulatory Commission (“Commission”) 
+Rules of Practice and Procedure,1 American Electric Power Service Corporation, on behalf of its 
+affiliates Appalachian Power Company, Indiana Michigan Power Company, Kentucky Power 
+Company, Kingsport Power Company, Ohio Power Company, Wheeling Power Company, AEP 
+Appalachian Transmission Company, Inc., AEP Indiana Michigan Transmission Company, Inc., 
+AEP Kentucky Transmission Company, Inc., AEP Ohio Transmission Company, Inc., and AEP 
+West Virginia Transmission Company, Inc. (collectively, “AEP”), hereby submits this protest to 
+PJM Interconnection, LLC’s (“PJM”) proposed revisions to its Open Access Transmission Tariff 
+(“Tariff”) and Reliability Assurance Agreement Among Load Serving Entities (“RAA”) to 
+establish a Reliability Backstop Procurement (“RBP”) to Address Resource Adequacy Concerns 
+Stemming from Large Loads.2 
+I. 
+EXECUTIVE SUMMARY 
+ 
+The resource adequacy crisis in PJM is undisputed.  PJM is confronting the most significant 
+generation need in its history.  Demand from national security needs, advanced manufacturing, 
+data centers, and electrification is accelerating faster than PJM’s current interconnection processes 
+ 
+1  
+18 C.F.R. §§ 385.211, 385.214 (2025).   
+2  
+Reliability Backstop Procurement to Address Resource Adequacy Concerns Stemming from New Load 
+Adjustments, Docket No. ER26-3380 (filed July 31, 2026) (“RBP Proposal”).  AEP filed a doc-less motion to 
+intervene in the captioned docket on August 5, 2026.
+--- PAGE 2 ---
+2 
+ 
+and market mechanisms allow the region to plan and build the infrastructure needed to reliably 
+support such unprecedented load growth.  Given the urgency of the problem, PJM rightfully 
+proposes to move with extraordinary speed to commit significant capital to new generating 
+capacity.  AEP has urged PJM to aggressively address both the current resource adequacy crisis 
+and the existing structures that gave rise to the shortfall, and supports measures to address the PJM 
+region’s capacity shortfall.  Notwithstanding AEP’s support for swift and decisive action, the 
+amount of capital required for this effort and the associated potential impact on wholesale and 
+retail rates render the details of implementation critically important.  With that in mind, several 
+important elements of the RBP Proposal must be reformed to ensure that the RBP produces just 
+and reasonable outcomes for customers.  Consequently, AEP urges the Commission to exercise 
+caution, subject the RBP Proposal’s details to meaningful scrutiny, and make use of the broad 
+discretion PJM has afforded the Commission through its willingness to make the components of 
+the RBP design “severable” for purposes of NRG.3 
+ 
+Despite AEP’s overall support for the RBP concept as a near-term measure to address the 
+region’s resource adequacy crisis, certain changes are needed.  Specifically, the Commission 
+should:  (1) either reject PJM’s proposed Transmission Owner4 exit provisions or direct PJM to 
+modify them to limit any continuing RBP financial obligation of a departing Transmission Owner 
+to the RBP Charges already allocated to that Transmission Owner’s zone under the Commission-
+accepted RBP Charge cost allocation methodology, and confirm that any new provisions do not 
+disturb the Commission’s established precedent governing Regional Transmission Operator 
+ 
+3  
+See RBP Proposal at 3.  NRG Power Mktg., LLC v. FERC, 862 F.3d 108 (D.C. Cir. 2017) (NRG). 
+4  
+Capitalized terms not otherwise defined herein shall have the meaning ascribed to them in the PJM Tariff 
+and the RBP Proposal, as applicable.
+--- PAGE 3 ---
+3 
+ 
+(“RTO”) exit obligations; (2) direct PJM to revise its proposed cost allocation methodology to 
+clarify that:  (a) Electric Distributors bear no financial liability for RBP Charges solely by virtue 
+of their administrative role to report Load Serving Entities’ (“LSEs’”) RBP Obligations; and (b) 
+collateral obligations attach to LSEs allocated RBP Charges; and (3) direct PJM to acknowledge 
+and correct on compliance the drafting error in RAA, Schedule 8.1.D, Section D.1.1 that would, 
+as written, fail to achieve PJM’s stated intent with respect to Fixed Resource Requirement (“FRR”) 
+Entities. 
+II. 
+CORRESPONDENCE AND COMMUNICATIONS 
+ 
+Correspondence regarding this filing should be sent to the following individuals, who 
+should be placed on the official service list in this proceeding:5 
+ 
+John C. Crespo 
+Senior Legal Counsel 
+American Electric Power Service Corporation 
+1 Riverside Plaza 
+Columbus, Ohio 43215 
+(614) 716-3727 
+jccrespo@aep.com 
+ 
+Christopher R. Jones 
+William R. Derasmo 
+Emily Beard  
+TROUTMAN PEPPER LOCKE LLP 
+401 9th Street, NW Suite 1000 
+Washington, DC 
+(202) 662-2181 
+chris.jones@troutman.com 
+william.derasmo@troutman.com 
+emily.beard@troutman.com  
+ 
+ 
+ 
+ 
+ 
+ 
+5  
+AEP respectfully requests waiver of 18 C.F.R. § 385.203(b)(3) to allow more than two individuals to be 
+designated for service on the official service list in this proceeding.
+--- PAGE 4 ---
+4 
+ 
+III. 
+BACKGROUND 
+To address the near-term reliability concerns exposed by PJM’s 2028/2029 Base Residual 
+Auction (“BRA”), which cleared short of PJM’s target reserve margin by 6,831.3 MW at the 
+Commission-approved price cap of $325/MW-day, PJM proposes to conduct a one-time RBP for 
+procuring new capacity from September 30, 2026 to October 21, 2026.6  The proposed rules 
+governing the RBP are set forth in PJM’s Tariff and PJM’s RAA and are designed to allow PJM 
+to procure the capacity needed to meet the shortfall from the 2028/2029 BRA.7  The January 16, 
+2026 National Energy Dominance Council/PJM Governors’ Principles urged PJM to procure new 
+capacity through a backstop auction commencing no later than September 2026, provide 15-year 
+price certainty for new capacity resources, and allocate the costs of that capacity to LSEs with new 
+data centers that have not self-procured new capacity or agreed to be curtailable.8  PJM explains 
+that the initial RBP procurement target (“Initial Target”) for the RBP will be set at 6,831.3 MW, 
+subject to reduction after PJM has accounted for certain self-supplied new capacity and opt-outs.9  
+Noting that PJM members have expressed a strong preference for bringing new capacity to 
+the PJM system voluntarily rather than contracting through PJM, PJM has facilitated a bilateral 
+matching process to connect new capacity with new load.  The process began with an RFP on June 
+ 
+6  
+ RBP Proposal at 25-27; see also PJM INSIDE LINES, PJM Capacity Auction Procures 138,318 MW of 
+Generation Resources as Work Continues to Address Growing Electricity Demand (July 14, 2026), 
+https://insidelines.pjm.com/pjm-capacity-auction-procures-138318-mw-of-generation-resources-as-work-continues-
+to-address-growing-electricity-demand/. 
+7  
+ RBP Proposal at 26; id. at 3–6 (describing the forthcoming IRAS filing and broader holistic review); see 
+also PJM, Powering Reliability Through Market Design: Addressing Rising Demand and Constrained Supply, and 
+Stimulating 
+Investment 
+to 
+Support 
+Durable 
+Reliability 
+(May 
+20, 
+2026), 
+https://www.pjm.com/-
+/media/DotCom/committees-groups/committees/mrc/2026/20260520/20260520-powering-reliability-through-
+market-design.  
+8  
+DEP’T OF ENERGY, Statement of Principles Regarding PJM (Jan. 15, 2026), 
+https://www.energy.gov/documents/statement-principles-regarding-pjm. 
+9  
+RBP Proposal at 26.  FRR Entities are excluded from the RBP.  Id. at 31.
+--- PAGE 5 ---
+5 
+ 
+9, 2026, and initial matches were expected in or around August 2026.10  Participation is voluntary 
+and non-binding, and PJM is not a party to the resulting arrangements.  In addition to accounting 
+for opt-outs, PJM will reduce the Initial Target by capacity obtained through this bilateral matching 
+process or other voluntary agreements for new capacity (“Qualifying RBP Offset MW”),11 if 
+reported to PJM within the RBP procurement window by October 21, 2026.12  This reduced 
+capacity procurement target (“Final Target”) will then form the basis for the RBP procurement.   
+PJM explains that offers in the RBP will be for a fixed 15-year Delivery Year term and are 
+expected to commence commercial operation in the 2028/2029 Delivery Year.13  RBP capacity 
+will be paid-as-bid and subject to a must-offer requirement for the term of its commitment.14  The 
+total cost of the RBP could amount to up to $20 billion over the 15-year term, and $1.63 billion 
+annually.15  Following the conclusion of the RBP, PJM states that it will post a report that provides 
+a transparent overview of the aggregate MWs that were procured as well as a weighted average of 
+the RBP Charges as soon as practicable.16  PJM concedes that there is a possibility that it may clear 
+a set of resources that does not match the Final Target.17 
+PJM explains that, because the Final Target will be based on a region-wide shortfall, it is 
+not proposing to match specific supply to specific demand or apply locational constraints in the 
+ 
+10  
+Id. at 30-31. 
+11  
+PJM explains that the Initial Target will only be decremented by a quantity of capacity that was not already 
+counted as supply for the 2027/2028 Delivery Year and that serves load that was counted in the forecasted demand 
+for the period from 2027 through the beginning of the 2028/2029 Delivery Year.  Id. at 37.   
+12  
+Id. at 31.  
+13  
+Id. at 48.   
+14  
+Id. at 42, 58-59.   
+15  
+This estimate is based on the following calculation: 6.8 GW (procurement target) × $555/MW-day 
+(maximum willingness to pay) × 15 years (commitment term). 
+16  
+Id. 
+17  
+Id. at 80.
+--- PAGE 6 ---
+6 
+ 
+RBP.18  PJM states that, unlike the Reliability Pricing Model (“RPM”), whose annual three-year 
+forward framework allowed PJM to model the necessary locational parameters, PJM does not have 
+the information needed to determine such parameters for 15-year term capacity commitments.19  
+According to PJM, “including locational parameters based on today’s conditions would . . . lead 
+to either over-procurement or under-procurement in given zones based on nothing more than 
+speculation . . . .” and “ignore the role of PJM[] . . . to ensure delivery of capacity resources to load 
+throughout PJM.”20  PJM does not propose direct market power screens or mitigation for the RBP, 
+contending that the pay-as-bid structure with a maximum willingness to pay $555/MW-day limits 
+the effectiveness of direct market screens or mitigation.21  RBP Sell Offers are considered binding, 
+and RBP capacity that is subject to a Sell Offer is not permitted to exit the RBP to enter bilateral 
+arrangements unless the project is not committed in the RBP following the conclusion of the 
+procurement process.22   
+Each committed RBP Resource will individually settle as a contract-for-differences 
+(“CfD”).23  This settlement structure turns on a committed RBP Resource’s individualized strike 
+price.  A committed RBP Resource must offer all committed RBP Unforced Capacity (“UCAP”) 
+MW as a price-taker in the RPM, unless a qualifying exception applies.  The market price for the 
+RBP Resource is specifically defined as the resource’s unit-specific weighted average resource 
+clearing price (“WARCP”) for all RPM Auctions in which the RBP Resource participated for the 
+ 
+18  
+Id. at 33.   
+19  
+Id. at 33-34. 
+20  
+Id. at 34.   
+21  
+Id. at 66-71. 
+22  
+Id. at 49. 
+23  
+Id. at 79-80.
+--- PAGE 7 ---
+7 
+ 
+relevant Delivery Year.24  If the strike price is higher than the market price, the RBP Buyer must 
+pay the difference between the strike price and the market price.25  If the strike price is lower than 
+the market price, the RBP Resource must pay back the difference between the two.  PJM contends 
+that this settlement structure protects RBP Buyers from paying RBP Resources a windfall, while 
+protecting RBP Resources from settling below market prices.  The total MW eligible to settle as a 
+CfD is the lesser of the RBP Resource’s daily committed RBP UCAP MWs, daily owned UCAP 
+MWs, and daily cleared RPM UCAP MWs.26  In other words, RBP Buyers do not pay if the RBP 
+Sellers’ capacity does not clear RPM also, an effort to further prevent over procurement.   
+PJM proposes a three-tiered cost allocation system for RBP Charges, first allocating costs 
+to Electric Distributor zones/areas, followed by LSEs, and then ultimately to retail customers.  For 
+the last two steps, PJM’s cost allocation methodology relies on coordination between Electric 
+Distributor zones/areas, state regulatory authorities, and state regulatory processes.  First, before 
+allocating RBP Charges, PJM allocates cost responsibility to the relevant Electric Distributor 
+zones/areas.  To do so, PJM proposes to determine each relevant Electric Distributor zone/area’s 
+pro rata responsibility for the Initial Target based on forecasted load growth from the 2026/2027 
+Delivery Year to the 2028/2029 Delivery Year, incorporating certain load adjustments from the 
+2026 PJM Load Forecast.27  PJM then proposes to adjust each Electric Distributor zone/area’s 
+allocation to reflect reductions based on its ability to procure Qualifying Offset MWs or 
+successfully support an opt-out.28  After calculating the Final Target, PJM will reallocate RBP 
+ 
+24  
+Id. at 80.   
+25  
+Id.  
+26  
+Id. at 81. 
+27  
+See RBP Proposal, Attachment C, Affidavit of Danielle Croop ¶¶ 42-43 (“Croop Affidavit”).    
+28  
+Id. ¶ 44.
+--- PAGE 8 ---
+8 
+ 
+Charges based on each Electric Distributor zone/area’s adjusted pro rata share of the Final Target.29  
+After receiving its allocation of RBP Charges, each Electric Distributor will coordinate with states 
+and/or the Relevant Electric Retail Regulatory Authority (“RERRA”) to determine the allocation 
+of RBP Charges attributable to an LSE in its zone/area (“RBP Obligation”) and report the RBP 
+Obligation to PJM.30  PJM will then use the RBP Obligation to assess RBP Charges to each LSE.  
+If no RBP Obligation is reported, PJM will assign RBP Charges to LSEs using PJM’s method for 
+allocating capacity costs pursuant to RAA, Schedule 8.31  Finally, states and RERRAs may decide 
+how to further allocate RBP Charges to the appropriate retail customers.32 
+RBP Buyers and Sellers must meet a variety of requirements to become eligible to 
+participate in the RBP, including collateral requirements that apply in addition to and separate 
+from existing collateral requirements.33  RBP Buyers are required to post collateral to mitigate the 
+risk of potential defaults from non-payment of RBP Charges.  This requirement begins at an 
+amount sufficient to mitigate the long-term risk of the RBP commitment.34  As with cost allocation, 
+PJM first determines the overall credit requirement needed to address the risk associated with RBP 
+commitments throughout the RBP 15-year term on a region-wide basis, assigning a $/MW rate 
+applicable to all RBP capacity.35  In determining the credit requirement, PJM will multiply the 
+total capacity committed in the RBP by the RBP Credit Rate, which is initially set at $1.5 million.36  
+ 
+29  
+Id.  
+30  
+Id. ¶¶ 51-52; RBP Proposal at 98.  
+31  
+Croop Affidavit ¶ 52; RBP Proposal at 98-99. 
+32  
+RBP Proposal at 100.   
+33  
+Id. at 109. 
+34  
+Id. at 111.  
+35  
+Id. at 115.   
+36  
+Id. at 116.
+--- PAGE 9 ---
+9 
+ 
+Each LSE is then required to post, at least 45 days before the start of the Delivery Year, collateral 
+equal to the product of $1.5 million and its allocated RBP Obligation.37  An RBP Buyer’s credit 
+requirement is designed to go down over time, as the LSE’s RBP Obligation decreases.38 
+PJM also proposes rules setting forth the responsibilities of “various parties” in the event 
+a Transmission Owner exits from PJM.39  PJM explains its goal to establish clear and enforceable 
+rules to ensure that RBP Resources would be made whole for the entire term of the 15-year 
+commitment.40  PJM thus proposes that a departing Transmission Owner with RBP commitments 
+in its zone will have two options prior to exit:  depart with net load or net generation. 
+• Departing with load: If a Transmission Owner exits PJM with the net load in its region, 
+before exiting, the Transmission Owner must either execute a binding agreement(s) that 
+would maintain appropriate rates, terms, and conditions, and preserve the RBP 
+commitments with the owners of the RBP Resources or pay (on an accelerated basis) all 
+future RBP Charges it would have owed.41 
+• Departing with generation: If a Transmission Owner exits with net generation (i.e., RBP 
+Resources) in its territory, the departing Transmission Owner must either ensure its RBP-
+contracted generation continues to serve PJM through a pseudo-tie (and agree to cover all 
+related costs) or, if that is not possible:   (1) pay its remaining RBP obligations in full (on 
+an accelerated basis) before exiting; or (2) execute a binding agreement(s) that would 
+ 
+37  
+Id. at 120. 
+38  
+Id. at 120-121. 
+39  
+Id. at 90. 
+40  
+Id. at 91. 
+41  
+Id. at 94-95.  The revenue collected will be credited to the remaining loads in PJM responsible for paying 
+RBP Charges.  Id. at 95.  PJM states that, while the exiting Transmission Owner would initially be responsible to pay 
+the costs necessary to ensure no RBP Resource becomes a stranded asset, nothing in the RBP Proposal would preclude 
+a Transmission Owner from seeking to recover the costs from the relevant large loads.  Id.
+--- PAGE 10 ---
+10 
+ 
+maintain appropriate rates, terms, and conditions of the RBP commitments, thus stepping 
+into PJM’s role in the RBP context.42 
+In the event the Commission deems necessary, PJM consents to the Commission’s exercise 
+of authority to modify and/or sever any element of the proposed Tariff or RAA language to the 
+extent necessary and permitted under section 205 of the Federal Power Act (“FPA”) and NRG,43 
+where such modification and/or severance is consistent with PJM’s overarching objectives in this 
+filing.44 
+IV. 
+PROTEST 
+A. 
+PJM’s Proposed Transmission Owner Exit Provisions are Unjust and 
+Unreasonable 
+The RBP Proposal, absent the modifications requested herein, could meaningfully and 
+unfairly expand the negotiated terms of exit embedded in the Consolidated Transmission Owner’s 
+Agreement (“TO Agreement”), Operating Agreement (“OA”) and RAA.  If and to the extent the 
+Commission approves the RBP, AEP does not object to the notion that departing loads continue 
+to pay for the RBP Charges assigned to them as a result of this one-time event, but objects to the 
+imposition of an exit fee that obligates departing load to pay for charges that are unrelated to its 
+fair allocation of RBP commitments. 
+AEP has publicly announced that it is evaluating whether continued membership in PJM 
+will be in the best interest of its customers in the long run.  It is common knowledge that PJM’s 
+ 
+42  
+Id. at 92-94.  PJM states that the exact amount that an exiting Transmission Owner would owe would be 
+determined through a separate filing with the Commission.  Id. at 94.  Thereafter, PJM states that it would pay the 
+collected revenues from the Transmission Owner to the impacted RBP Resources as payments become due.  Id. 
+43 
+NRG, 862 F.3d 108. 
+44  
+RBP Proposal at 3.  PJM cautions that if severance or modification gives rise to complications, it may delay 
+the opening of the RBP procurement window, causing downstream impacts such as the need to delay the BRA for the 
+2029/2030 Delivery Year.  Id.
+--- PAGE 11 ---
+11 
+ 
+governing documents do not contain an exit fee, and Commission precedent confirms that a 
+departing member’s obligation with regard to generating capacity charges extend only through the 
+last RPM auction in which that departing member’s load was included.  With that in mind, the 
+RBP Proposal’s exit provisions stand to broaden what the Commission has deemed necessary for 
+departing load to honor cost commitments.  Principles of cost causation require PJM to 
+demonstrate a reasonable nexus between the capacity procured in the RBP and the reliability need 
+for which customers are being charged.  As drafted, the RBP Proposal would impose a financial 
+obligation on a departing Transmission Owner based not on the RBP Charges allocated to an 
+Electric Distributor zone/area pursuant to PJM’s proposed RBP cost allocation methodology, but 
+on where PJM happens to procure or locate new RBP resources.  In this respect, the RBP Proposal 
+flouts cost causation principles by imposing an exit fee that could far exceed the RBP Charges 
+allocated to a departing Transmission Owner’s zone.45   
+For these reasons and as explained further below, the Commission should reject the 
+proposed Transmission Owner exit provisions or, at minimum, require PJM to revise them before 
+acceptance.  Any revised exit provisions should be consistent with these principles:  (1) a departing 
+Transmission Owner’s responsibility for RBP Charges is limited to the RBP Charges otherwise 
+assigned to its zone/area under the Commission-accepted RBP cost allocation; (2) PJM may not 
+require a departing Transmission Owner to assume or guarantee, payment of obligations associated 
+with RBP Resources beyond that limited responsibility, nor require acceleration of any payment 
+obligation; (3) any proposed RTO replacement arrangement or continuity agreement must be 
+calculated by reference to the withdrawing Transmission Owner’s allocated RBP Charges, not by 
+ 
+45  
+See K N Energy, Inc. v. FERC, 968 F.2d 1295, 1300 (D.C. Cir. 1992) (finding that cost causation requires 
+that all approved rates reflect to some degree the costs actually caused by the customer who pays them).
+--- PAGE 12 ---
+12 
+ 
+artificial reference to RBP Resources physically located in the relevant zone; (4) a Transmission 
+Owner’s responsibility for RBP Charges should remain eligible for the RBP Settlement Credits 
+and RPM Auction Credits that would apply as cost offsets if the same load remained in PJM; and 
+(5) the exit fee attributable to a departing Transmission Owner’s responsibility for RBP Charges 
+should be reasonably capable of being calculated with the information known based on the results 
+of the RBP. 
+1. 
+The Proposed Exit Terms Lack Sufficient Clarity and Detail 
+The RBP Proposal’s proposed allocation of RBP Charges to departing Transmission 
+Owners, first of all, lacks needed detail in light of the enormity of the financial burden it stands to 
+impose.  Moreover, even the language that is sufficiently clear creates an unjust and unreasonable 
+obligation on a withdrawing member. 
+Specifically, section 18.7 of the proposed Tariff language lacks administrable standards 
+and is underdeveloped for the following reasons:   
+• Section 18.7 (a) first mentions voluntary agreements that a departing Transmission Owner 
+“may” enter into with RBP Resources in the applicable zone under the standard that they 
+“preserve[] the RBP commitments . . . with the owners of RBP Resources . . . .”46  It is not 
+clear what this standard requires, including whether that agreement is intended to preserve 
+that unit’s obligations to PJM, or whether the RBP Resource could agree to serve as a 
+capacity resource to the departing Transmission Owner.   
+• PJM also has not explained or justified its request to have unfettered discretion to merely 
+elect not to “retain” an RBP Resource that can be pseudo-tied back to PJM, as provided in 
+ 
+46  
+RBP Proposal, Attachment B, Clean Tariff Records, Attachment DD, § 18.7(a) (“Proposed Tariff”).
+--- PAGE 13 ---
+13 
+ 
+section 18.7(a).47  Pursuant to the second paragraph of section 18.7(a), PJM wants the right 
+to “elect” not to retain such a resource that could be pseudo-tied and foist a financial 
+obligation on the departing member to take on 100 percent of the RBP Resource’s 
+remaining revenue requirement for the 15-year term.48   
+• Section 18.7(b) in turn is also fatally vague.  It provides that a departing Transmission 
+Owner exiting with net load that has been allocated RBP Charges for RBP Resources not 
+located in its zone should enter into bilateral contracts with RBP resource not located in 
+its Zone—i.e., with resources remaining in PJM—under the vague notion that such an 
+agreement would “preserve[] the RBP commitments.”49  Since a departing Transmission 
+Owner will have no relationship with any such unit, it is not clear what sort of contract may 
+satisfy this requirement.   
+2. 
+The Proposed Exit Terms are Unjust and Unreasonable Because the 
+RBP Charges of Departing Zones Are Not Reduced By 
+Corresponding RPM Revenues or Other Offsets 
+PJM’s proposed exit provisions are also unjust and unreasonable because they:  (1) appear 
+to require a departing Electric Distributor zone/area to assume liability for the gross cost of RBP 
+Resources without preserving the offsets and settlement protections that would apply if the same 
+load remained in PJM; and (2) do not protect departing Transmission Owners from assuming RBP 
+Charges in the event that RBP Resource capacity becomes surplus in PJM.  Under PJM’s proposed 
+CfD structure, RBP Buyers pay RBP Charges based not simply on the full quantity of RBP MW 
+acquired, but rather on an adjusted value that reflects a corresponding settlement value from PJM.  
+ 
+47  
+Id. 
+48  
+Id. 
+49  
+Id. § 18.7(b).
+--- PAGE 14 ---
+14 
+ 
+Under PJM’s proposed exit structure, however, departing load appears to be required to fund the 
+full RBP strike price without the adjustment afforded to remaining members.   
+The RBP Charge is intended to be netted against the resource’s RPM market value through 
+the offsetting the RBP Settlement Credit, which is based on the lesser of three MW values:  (1) 
+daily committed RBP UCAP MWs, (2) daily owned UCAP MWs, and (3) daily cleared RPM 
+UCAP MWs.50  That offset is central to PJM’s own explanation of the RBP as a supplement to, 
+not a replacement for, RPM.51  However, PJM’s proposed Transmission Owner withdrawal 
+provisions only provide that a Transmission Owner departing with net load that has been allocated 
+RBP Charges for RBP Resources—if it does not enter into agreements that maintain appropriate 
+rates, terms and conditions that preserve the RBP commitments with the owners of such RBP 
+Resources—must pay all forward obligations on an accelerated basis through the remaining term 
+of the RBP commitment.52  This proposed term does not make clear that a Transmission Owner 
+departing with net load and responsible for funding RBP commitments throughout their 15-year 
+commitment term would be afforded the offset price for an RBP Resource that it would receive if 
+it stayed in PJM.  
+In the example provided by PJM, the RBP Resource may clear substantially more MWs in 
+the RBP than in the RPM, but is still eligible to receive RBP Settlement Credits that reduce the 
+RBP Charge assessed.53  If a Transmission Owner’s post-exit obligation is calculated based only 
+on the gross RBP Charge, while disregarding the quantity of RBP MW that clears both the RBP 
+and RPM, the exit fee allocated to an exiting Transmission Owner would be calculated without 
+ 
+50  
+RBP Proposal at 81. 
+51  
+See id. at 7.  
+52  
+Proposed Tariff, Attachment DD § 18.7(b). 
+53  
+RBP Proposal at 85.
+--- PAGE 15 ---
+15 
+ 
+accounting for the offsets that would otherwise accrue had it stayed in PJM.  Consequently, 
+departing Transmission Owners and their load remain exposed to a substantial portion of the RBP 
+Charges with no corresponding opportunity to receive an offset to the RBP Charge, thus forcing 
+the departing Transmission Owner and its customers to pay more than similarly situated load that 
+stays in PJM.  This result is unjust, unreasonable, and unduly discriminatory, and is not tied to cost 
+causation. 
+This outcome is asymmetrical and inconsistent with PJM’s stated premise that RPM 
+remains the foundational capacity market and that the RBP merely addresses incremental resource 
+adequacy concerns.  If a Transmission Owner departing with load is required to fund the entire 
+RBP payment obligation for an RBP Resource, principles of cost causation require that departing 
+load should receive a corresponding RPM Auction Credit or RBP Settlement Credit tied to the full 
+amount of capacity for which it is paying.  Otherwise, the RBP would function less as a 
+supplemental reliability mechanism and more as an additional capacity procurement obligation 
+requiring load to pay a higher RBP Charge for the RBP Resources in its zone than it would have 
+otherwise been assessed had the load stayed in PJM.  The Commission should direct PJM to 
+explain why this outcome fairly represents a Transmission Owner’s responsibility for its RBP 
+Charges. 
+PJM should also be required to demonstrate why it proposes to limit the RBP Settlement 
+Credit to overlapping RPM-cleared MW only for load remaining in PJM, and how that limitation 
+produces a just and reasonable allocation of RBP Charges and benefits for departing Transmission 
+Owners or Electric Distributor zones/areas.  This design increases the risk that a departing 
+Transmission Owner will be allocated an unreasonable share of RBP Charges following its 
+withdrawal from PJM.  The examples put forth in the RBP Proposal illustrate that the economic
+--- PAGE 16 ---
+16 
+ 
+value of the CfD is limited to the quantity of MW that clears in both RPM and the RBP.54  This 
+limitation becomes particularly significant in the event that future load reductions, market changes, 
+or an Electric Distributor or Transmission Owner exit result in RBP Resources becoming surplus 
+to PJM’s capacity needs.  For example—and as a result of PJM’s decision not to implement 
+locational parameters in the RBP—if a Transmission Owner leaves PJM with the net load that 
+formed the basis for its allocation of RBP Charges, the RBP Resources procured on its behalf that 
+are located outside of the zone/area may no longer be needed in PJM.  Under such circumstances, 
+RPM clearing levels may decline, thereby reducing or eliminating the quantity of MW eligible for 
+CfD settlement and associated RBP Settlement Credits or RPM Auction Credits, while customers 
+in the exiting zones/areas remain responsible for the underlying RBP Charges.  The RBP Proposal 
+therefore creates the possibility that departing load will continue paying for RBP Resources long 
+after the market no longer recognizes equivalent capacity value through RPM. 
+This is especially concerning with respect to PJM’s proposed long-term cost responsibility 
+framework.  If an Electric Distributor or Transmission Owner remains responsible for RBP 
+Charges after an exit, PJM has not demonstrated that corresponding RPM revenues or CfD 
+settlement benefits, including RPM Auction Credits and RBP Settlement Credits, will remain 
+available throughout the 15-year commitment.  The RBP Proposal therefore risks creating an 
+unfairly fixed financial obligation under which customers remain responsible for unabated RBP 
+Charges, even as the quantity of RBP MW eligible to receive RPM Auction Credits declines over 
+time.  At a minimum, PJM should clarify how withdrawing Transmission Owners will be protected 
+from paying for RBP Resources whose capacity has become surplus to PJM’s needs and no longer 
+ 
+54  
+Id. at 84-86.
+--- PAGE 17 ---
+17 
+ 
+receives corresponding RPM value either because of the Transmission Owner’s withdrawal or 
+other changes in conditions impacting resource adequacy in PJM. 
+3. 
+Any Imposed Exit Terms Should Be Consistent with Cost Causation 
+And Should be Capable of Determination in Advance of Withdrawal 
+In addition to the issues addressed above, the RBP Proposal reflects a disconnect between 
+a departing load’s responsibility for RBP Charges upon withdrawal and PJM’s proposed exit 
+charges without explanation regarding how the proposed exit fee is tied to the departing load’s 
+initial allocation of RBP Charges.  The starting point for this analysis is PJM’s decision to propose 
+an RBP process with no locational deliverability requirement.55  The RBP Proposal expressly 
+assumes that new generation anywhere in PJM is deliverable to any load in PJM.  Under its 
+proposal, PJM could acquire all 6,831.3 MW of new supply in New Jersey, or North Carolina, or 
+even suburban Chicago.  More to the point for AEP, PJM could decide to acquire all—or at least 
+a disproportionate share of — the new capacity in Ohio.  This is a stark departure from the RPM’s 
+design, which does include locational elements, and relies on Capacity Emergency Transfer 
+Objectives (“CETO”) and Capacity Emergency Transfer Limits (“CETL”) modeling to ensure that 
+cleared capacity can address the reliability needs of constrained areas.56  As a result, customers 
+may be required to fund RBP Resources that are not deliverable to their zone, while resources that 
+are necessary to address local reliability needs may not be procured at all.  The RBP Proposal 
+ 
+55  
+Id. at 33.  
+56  
+PJM’s claim that it cannot predict future CETO or CETL values with precision does not eliminate the need 
+to establish a reasonable relationship between the resources procured and the reliability benefits for which customers 
+are charged.  At minimum, PJM should be required to explain how it will evaluate whether RBP Resources remain 
+reasonably connected to the reliability needs of a zone that continues to bear RBP Charges, including after an Electric 
+Distributor or Transmission Owner exits PJM.  Absent such a showing, the proposed cost responsibility framework 
+risks obligating customers to pay for capacity that is incapable of addressing their underlying reliability needs.
+--- PAGE 18 ---
+18 
+ 
+therefore raises a fundamental question regarding whether the RBP can reasonably achieve its 
+stated reliability objective without accounting for known transmission limitations. 
+Setting aside whether this approach will ensure reliability for the entire PJM region (which 
+shares the costs of the RBP), the lack of a locational element undermines PJM’s proposed exit 
+provisions.  If a transmission owning member of PJM exercises its contractual right to leave, its 
+obligations for RBP Charges cannot be more than if that member decided to stay.  As proposed, a 
+Transmission Owner remaining in PJM would pay RBP Charges according to PJM’s proposed 
+cost allocation methodology (if accepted), while a departing Transmission Owner could be 
+required to assume responsibility for RBP commitments tied to the RBP Resources in its zone/area, 
+regardless of whether those commitments correspond to the RBP Charges allocated to that 
+zone/area.  Indeed, under PJM’s proposal, a departing Transmission Owner would essentially have 
+to indemnify each RBP Resource in its zone for the remainder of its RBP capacity commitment, 
+even though—due to the lack of a locational element in the RBP—said RBP Resources may not 
+be at all tied to that Transmission Owner.   
+Based on the exclusion of locational parameters from the RBP’s design, the location of 
+selected RBP Resources may bear little relationship to the RBP Charges allocated to any particular 
+zone/area.  Thus, if PJM procures a substantial amount of RBP capacity in one zone/area, the 
+Transmission Owner for that zone/area could face exit-related obligations materially greater than 
+those imposed by the RBP Charges otherwise allocated to that zone/area.  PJM’s potentially 
+punitive proposal threatens to place an undue burden on departing Transmission Owners solely by 
+virtue of where RBP Resources are located.  This outcome would create an undue barrier to a 
+Transmission Owner’s ability to exercise its long-held contractual right to leave.
+--- PAGE 19 ---
+19 
+ 
+Such an outcome would not comport with the principles of cost causation, nor would it 
+provide meaningful notice to Transmission Owners of the financial consequences of RTO 
+withdrawal.  Furthermore, it would potentially impose a disproportionate financial burden and 
+expand the contractual requirements on Transmission Owners seeking to withdraw from PJM.  
+Stated differently, PJM’s proposed exit framework could transform each LSE’s allocated RBP 
+Charge into an unduly burdensome exit fee for a departing Transmission Owner.  The Commission 
+should reject the proposed exit provisions and require PJM to limit a departing Transmission 
+Owner’s liability to the RBP Charges allocated to its zone under PJM’s proposed cost allocation 
+methodology, as accepted by the Commission.  Modifying PJM’s proposal in this manner would 
+still insulate existing PJM members from RBP-related cost shifts upon a member’s departure while 
+avoiding the creation of obligations that are not tied to an Electric Distributor zone/area’s allocated 
+RBP Charges. 
+At a minimum, any RBP exit fee must be defined through an objective formula that can be 
+calculated using the information known once the RBP results are final.  The cost of exiting an RTO 
+must be clear and transparent so that a Transmission Owner can act in the best interests of its 
+customers.  As stated above, the formula should begin with the departing Transmission Owner’s 
+zone or area-level’s allocation of RBP Charges established under a Commission-accepted cost 
+allocation for RBP Charges, as adjusted for any Qualifying RBP Offset MW, opt-outs, or other 
+accepted reductions.  That amount should then be converted into a fixed, annual payment 
+obligation for each remaining Delivery Year of the RBP commitment term, based on the RBP 
+Charges that would otherwise have been assessed to the load remaining in PJM.  The RBP exit fee 
+should be reduced by any RBP Settlement Credits, RPM Auction Credits, refunds, offsets, or other 
+credits that would have applied had the load remained in PJM, and it should not include any
+--- PAGE 20 ---
+20 
+ 
+additional obligation tied to the identity or physical location of RBP Resources selected by PJM.  
+With respect to any amounts not reasonably capable of being estimated as of the date of 
+calculation, the Tariff should include an obligation for those credits or other amounts to be paid 
+over time as they are realized.  This approach would preserve PJM’s stated objective of preventing 
+cost shifts to remaining load while giving departing Transmission Owners, customers, and state 
+regulators a transparent and reasonably calculable measure of the financial consequences of 
+withdrawal. 
+4. 
+If An RBP Exit Fee is Accepted, the Commission Should Respect and 
+Confirm Existing Exit Standards For RTO Withdrawal 
+To the extent the Commission accepts any exit obligation for RBP Charges, it must make 
+clear that its ruling is limited to those charges and does not undermine existing precedent governing 
+existing PJM withdrawal obligations.  The Commission has already addressed the contractual 
+obligations that apply when a PJM member exits, and nothing in this proceeding should expand 
+those obligations beyond the specific Tariff language adopted for RBP Charges.  AEP’s concerns 
+with the RBP withdrawal obligations addressed above underscore a broader need for the 
+Commission to clarify how the proposed RBP framework will impact departing Transmission 
+Owner’s responsibilities upon withdrawal now, before PJM creates new long-term obligations that 
+could affect future RTO transition decisions.  Such clarification will allow Transmission Owners, 
+customers, and state regulators the ability to evaluate the consequences of any potential RTO 
+transition before long-term obligations are created.  The relationship between any new RBP exit 
+requirements and PJM’s existing exit framework must be clearly defined such that PJM’s members 
+and their customers and state regulators have adequate notice of how a member’s contractual 
+obligations for departure will change should the Commission approve the RBP.  This topic is thus
+--- PAGE 21 ---
+21 
+ 
+ripe for consideration in this proceeding because the terms of the RBP Proposal, if accepted, stand 
+to expand Transmission Owners’ contractual obligations upon departure from PJM. 
+a. 
+The Current Terms for Departing PJM 
+PJM is fundamentally a membership organization and membership, by law, is strictly 
+voluntary.57  The Commission can neither compel entry into an RTO nor enjoin a utility’s exit if 
+the standard for departure has been satisfied.58  Each transmission owning member of PJM has a 
+contractual right to leave.  The first part of the Commission’s section 205 role in a utility’s 
+departure from an RTO (excluding of course its review of RTO replacement arrangements) is 
+solely to ensure that the departing utility satisfies the “contractual obligations” applicable to it 
+under its RTO’s governing documents upon withdrawal.59  The Commission has squarely rejected 
+the notion that, absent specific contractual commitments, RTO exit is subject to a broader and 
+more amorphous “hold harmless” standard and, in the case of PJM, there is no “exit fee.”60   
+In PJM today, the “contractual obligations” that must be satisfied for departure are clear.  
+Section 3.4 of the TO Agreement provides that any party that withdraws from the TO Agreement 
+ 
+57  
+See, e.g., Reg’l Transmission Organizations, Order No. 2000, FERC Stats. & Regs. ¶ 31,089 at 30,994 (1999) 
+(cross-referenced at 89 FERC ¶ 61,285) (adopting “an open collaborative process that relies on voluntary regional 
+participation to design RTOs”), order on reh’g, Order No. 2000-A, FERC Stats. & Regs. ¶ 31,092 (2000) (cross-
+referenced at 90 FERC ¶ 61,201), petitions for review dismissed sub nom. Public Utility Dist. No. 1 of Snohomish 
+County, Wash. v. FERC, 272 F.3d 607 (D.C. Cir. 2001); Louisville Gas & Elec. Co., 114 FERC ¶ 61,282 at P 29 
+(2006) (“LG&E”) (“[P]articipation in an RTO is voluntary.”); see also Atl. City Elec. Co. v. FERC, 295 F.3d 1 (D.C. 
+Cir. 2002) (“Atlantic City”) (finding that the Commission has no authority to regulate RTO membership as a change-
+in-control transaction under section 203 of the Federal Power Act). 
+58  
+Duquesne Light Co., 122 FERC ¶ 61,039 at P 48 (2008) (“Duquesne I”) (“[M]ovement from one 
+Commission-approved RTO to another is not barred by Order No. 2000.  As we recognized in LG&E, companies that 
+voluntarily join RTOs should have the ability to withdraw from an RTO as long as the replacement rates that are 
+established are just and reasonable.”). 
+59  
+LG&E, 114 FERC ¶ 61,282 at P 27; Duquesne I, 122 FERC ¶ 61,039 at PP 28-29. 
+60  
+Mw. Indep. Transmission Sys. Operator, Inc., 124 FERC ¶ 61,219 at P 222 (2008) (“Duquesne II”). (“Under 
+the TO Agreement, in this regard, there is no exit fee requirement nor is there a hold harmless provision.  Considered 
+in this context, we find that any weight that Reliant may have assigned to an asserted hold harmless guarantee has no 
+reasonable basis in the TO Agreement itself and therefore, for all the reasons explained by the Commission in the 
+January 17 Order, cannot be a basis for obligating Duquesne.”).
+--- PAGE 22 ---
+22 
+ 
+“shall remain liable for any and all obligations under [the TO] Agreement that such Party incurred, 
+that were incurred on behalf of such Party, or that arose hereunder prior to the date upon which 
+such Party’s withdrawal, transfer, or assignment became effective.”61  One of the most significant 
+applications of this rule is the liability of a departing member for Transmission Expansion Costs 
+incurred by PJM under Schedule 12 of the PJM Tariff.  The Commission explored this issue in 
+detail in the Duquesne proceedings.  In Duquesne I, the Commission made a number of 
+determinations about Duquesne’s proposed exit demonstration, but found that Duquesne had not 
+sufficiently addressed the “. . . full extent of its remaining transmission function obligations, as 
+required by section 3.4 of the TO Agreement.”62  Specifically, the Commission found that “. . . 
+Duquesne had not adequately addressed its financial liability to PJM with respect to its allocated 
+share of [Regional Transmission Expansion Plan (“RTEP”)] project costs.”63  Accordingly, the 
+Commission required Duquesne to address these obligations in a compliance filing, and accepted 
+additional record development on this question. 
+After considerable briefing on the matter, the Commission concluded that section 3.4 of 
+the TO Agreement obligates a departing Transmission Owner to pay the costs of Regional 
+Facilities and Necessary Lower Voltage Facilities allocated to it under PJM Tariff Schedule 12 
+and its appendix through the end of the calendar year of its exit but does not subject the departing 
+Transmission Owner to future-period costs related to those facilities.64  The Commission 
+determined that the departing member would owe the entirety of the Lower Voltage Facility costs 
+ 
+61  
+TO Agreement § 3.4. 
+62  
+See Duquesne II, 124 FERC ¶ 61,219 at P 16. 
+63  
+Id. 
+64  
+Id.
+--- PAGE 23 ---
+23 
+ 
+directly assigned to it.65  The Commission justified these findings on the basis that PJM’s 
+assignment of Lower Voltage Facility costs “is fixed” at the time of the cost assignment, while 
+cost assignments for Regional Facilities and Necessary Lower Voltage Facilities “are not fixed 
+during the RTEP process” and are instead reallocated annually pursuant to Schedule 12.66   
+The Commission explained that the Schedule 12 appendix (today, Schedule 12 – Appendix 
+A) assigns RTEP costs “on an evolving, superseding basis”67 and that, pursuant to Schedule 12: 
+a new transmission owner joining PJM would become subject to these 
+charges . . .   regardless of when the projects were approved and regardless 
+of who these projects may have previously benefitted.  And a departing 
+transmission owner leaving PJM would, pursuant to this language, no 
+longer be subject to these charges; it would not have a zonal annual peak 
+load as it would no longer be a zone in PJM.68   
+ 
+The Commission also pointed to the lack of any mechanism under Schedule 12 for PJM 
+“to allocate future-period project costs to a former transmission owner based on the fictional 
+assumption that this former transmission owner’s zone can or should remain a part of PJM for 
+future-year schedule 12 purposes.”69  To that end, “[j]ust as PJM would not be permitted to 
+exclude, from its schedule 12 appendix, load data applicable to the entry of a new transmission 
+owner’s zone, it would not be allowed to continue to include a former transmission owner’s 
+zone.”70  
+In reaching that decision, the Commission expressly rejected several arguments that would 
+have imposed significant regional transmission costs on departing Transmission Owners.  First, 
+ 
+65  
+Id. P 168. 
+66  
+Id.  
+67  
+Id. P 165. 
+68  
+See id. P 164. 
+69  
+Id. P 167. 
+70  
+Id.
+--- PAGE 24 ---
+24 
+ 
+the Commission dismissed the notion that “an RTEP report, once filed with the Commission, 
+becomes binding on all zones then existing in PJM, presumably until all such project costs have 
+been submitted for filing and recovered by PJM.”71  As the Commission noted, “PJM has chosen 
+an allocation method for the higher voltage projects included in its RTEP that treats these costs as 
+system-wide costs that are imposed on any new transmission owners that may join PJM and, 
+similarly, may not be imposed on departing members.”72   
+Second, the Commission rejected the argument that its holding in a prior proceeding 
+concerning the Midcontinent Independent System Operator (“MISO”) Transmission Owners 
+Agreement had any relevance to the question of a departing PJM Transmission Owner’s RTEP 
+cost liability.73  The Commission noted that although it had previously held in the context of the 
+MISO Transmission Owners Agreement that “[i]n principle, a transmission owner should not be 
+able to avoid previously allocated costs by withdrawing from the [RTO],” the Commission’s 
+finding in that proceeding “was based on existing tariff provisions pertaining to financial 
+obligations of withdrawing transmission owners, as reflected in the [MISO] Transmission Owners 
+Agreement.”74  While the Commission “agree[d] that it might be just and reasonable for PJM to 
+adopt a similar requirement, in the future,” the Commission noted it was “required here to interpret 
+PJM’s tariff as currently drafted.”75  PJM never “adopt[ed] a similar requirement.” TO Agreement 
+section 3.4 has not changed since the Commission decided Duquesne II in 2008. 
+ 
+71  
+Id. P 171. 
+72  
+Id. 
+73  
+Id. P 173. 
+74  
+See id. (citing Mw. Indep. Transmission Sys. Operator, Inc., 118 FERC ¶ 61,209 at P 193 (2007)). 
+75  
+Id.
+--- PAGE 25 ---
+25 
+ 
+Third, the Commission was not swayed by an argument that it was required to hold a 
+departing Transmission Owner “liable for regional RTEP costs shown to have reliability benefits” 
+for that Transmission Owner’s zone.76  The Commission noted that Schedule 12 did not require 
+that any “determinations of benefits to individual zones . . . be made,” and high-voltage facilities 
+costs were “allocated during the year incurred to all transmission zones then-existing in PJM.”77 
+Finally, the Commission dismissed the notion that a departing Transmission Owner 
+“should be required to pay, as a condition of its withdrawal, an exit fee that reflects its share of 
+existing PJM financial expenditures and commitments.”78  The Commission reiterated its prior 
+finding that “[t]he TO Agreement . . .  does not require [a transmission owner] to pay an exit fee 
+as a condition to its withdrawal.”79 
+As it relates to generating capacity obligations, Section 5.1.1 of the RAA allows an LSE to 
+withdraw from the RAA effective, inter alia, “upon completion of its obligations hereunder” and 
+after giving prior written notice to the PJM Office of the Interconnection.80  As a general matter, 
+the withdrawing LSE’s obligations under the RAA “shall be completed as of the end of the last 
+month for which such Party’s obligations have been set at the time said notice is received.”81  The 
+RAA directs that a withdrawing LSE pay a Locational Reliability Charge for each PJM zone in 
+which it serves load during a Delivery Year.82  As the Commission explained in Duquesne I, this 
+means the departing LSE must pay for all capacity PJM acquired on the LSE’s behalf, up to and 
+ 
+76  
+Id. P 172. 
+77  
+Id. 
+78  
+Id. P 176. 
+79 
+Id. 
+80  
+RAA § 5.1.1. 
+81  
+Id. § 5.1.2. 
+82  
+Id. §§ 5.1.3(a), 7.2, 7.2A, 11.1-11.3.
+--- PAGE 26 ---
+26 
+ 
+including all RPM auctions (PJM’s capacity auctions) in which the LSE’s load forecasts are 
+included.83   
+Consequently, under Duquesne I and II, when an LSE exits PJM, it is only required to pay 
+for capacity PJM has acquired for it up through the last capacity auction in which the LSE’s load 
+forecasts were included.  In Duquesne I, the Commission concluded that these provisions required 
+Duquesne to pay (in the form of Locational Reliability Charges) for all capacity PJM acquired on 
+its behalf up through and including RPM auctions in which its load forecasts were included.84  The 
+Commission also directed PJM “to support reasonable arrangements to permit Duquesne to utilize 
+that capacity in satisfying its reliability obligations to the Midwest ISO or to any other reliability 
+organization.”85   
+Pursuant to the RAA, a withdrawing load-serving entity must also settle all “202(c) 
+charges” allocated to it.86  These charges pertain to the costs incurred by certain generation owners 
+in compliance with orders of the Secretary of Energy under FPA section 202(c) to keep otherwise 
+retiring generators operating under declared emergency conditions.  Section 7.2A of the RAA 
+directs each RAA Party to “pay, as to the loads it serves during a Delivery Year, a 202(c) charge” 
+ 
+83  
+Duquesne I, 122 FERC ¶ 61,039 at PP 83, 93. 
+84  
+Id. P 92. 
+85  
+Id. P 93. 
+86  
+RAA §§ 5.1.3(a), 7.2A.  Specifically, section 7.2A of the RAA provides: “Each Party shall pay, as to the 
+loads it serves during a Delivery Year, a 202(c) charge for each resource that is (1) directed to maintain operations for 
+resource adequacy purposes for the PJM Region and is not expressly limited to resolve resource adequacy issues in 
+specific Locational Deliverability Area(s) or Zone(s) by order of the Secretary of Energy pursuant to Federal Power 
+Act section 202(c) on or after May 30, 2025, and (2) subject to an agreement between the parties identified in such 
+202(c) order setting forth a rate for compensation using the formula rate methodology and processes based on the 
+Deactivation Avoidable Cost Credit set forth in Tariff, Part V, sections 114, 115, 116, 118, 118A with refinements to 
+ensure recovery of incurred costs, which may include, but are not limited to, maintenance and necessary repairs, and 
+where any refinements to such formula rate are acknowledged and reviewed by the Independent Market Monitor.  The 
+foregoing 202(c) charge to each Load Serving Entity shall be equal to the monthly aforementioned rate multiplied by 
+each Load Serving Entity’s pro rata share of the sum of the total Daily Unforced Capacity Obligations across all Zones 
+in the PJM Region for all days within the calendar month covered by the relevant Federal Power Act section 202(c) 
+order.”
+--- PAGE 27 ---
+27 
+ 
+for certain resources.87  This provision was recently added to the RAA and allocates the costs 
+incurred by generating units directed to remain operational pursuant to emergency orders issued 
+by the U.S. Secretary of Energy under FPA section 202(c).88   
+b. 
+The Commission Should Be Clear That Any Treatment of RBP 
+Charges Does Not Undermine The Commission’s Precedents 
+On Other PJM Contractual Exit Commitments  
+As explained above, PJM is a voluntary membership organization, and the ability of a 
+member to withdraw upon satisfying its contractual obligations is central to the continued viability 
+of the RTO model and to public utilities’ ability to make long-term decisions in the best interests 
+of their customers.  Those rights depend on clear, enforceable contractual commitments, not after-
+the-fact efforts to expand withdrawal obligations through generalized claims of cost shifting or 
+administrative convenience.  The RBP Proposal is PJM’s first attempt to add a new long-term 
+financial obligation that would have to be addressed in connection with a Transmission Owner’s 
+withdrawal.  If the Commission concludes that some limited RBP-related exit obligation is 
+necessary to prevent RBP Charges from being shifted to remaining load, it should make equally 
+clear that any such ruling is confined to the specific Tariff language governing RBP Charges and 
+does not disturb the Commission’s existing precedent regarding other PJM contractual exit 
+commitments.  The Commission should not allow this proceeding to become a vehicle for 
+revisiting or diluting the settled principles recognized in Duquesne I and II and related orders, 
+including the absence of any general PJM exit fee and the requirement that withdrawal obligations 
+be grounded in the governing agreements as actually written.  
+ 
+87  
+Id. § 7.2A (emphasis added). 
+88  
+PJM Interconnection, L.L.C., 193 FERC ¶ 61,192 at P 1 (2025) (citing 16 U.S.C. § 824a(c)), order on reh’g, 
+195 FERC ¶ 61,002 (2026)).
+--- PAGE 28 ---
+28 
+ 
+The Commission should furthermore expressly reaffirm that any expansion of a 
+Transmission Owner’s responsibility for charges upon withdrawal accepted in this proceeding is 
+limited to RBP Charges and does not otherwise expand a departing Transmission Owner’s 
+obligations under the TO Agreement, RAA, or PJM Tariff beyond their existing terms, and does 
+not authorize PJM to impose new withdrawal conditions unrelated to the specific RBP Charges 
+allocated pursuant to the cost allocation methodology approved by the Commission in this 
+proceeding.  The Commission should provide that clarity now, before the RBP Proposal imposes 
+new 15-year obligations that could materially affect future RTO transition decisions by 
+Transmission Owners and customers, by requiring that PJM modify its proposal to create a 
+defined, transparent RBP exit fee and by reconfirming the contractual obligations applicable to 
+Transmission Owners withdrawing from PJM, consistent with its past precedents. 
+B. 
+PJM’s Proposed Cost Allocation Methodology Is Not Just and Reasonable 
+And Requires Further Development 
+ 
+Given the amount of customer funding the RBP Proposal could require, ensuring a just and 
+reasonable and not unduly discriminatory cost allocation of RBP Charges is of paramount 
+importance.  As proposed, the cost allocation terms included in the RBP Proposal leave key 
+questions unanswered.  First, PJM’s proposed location-based cost allocation methodology is at 
+odds with its decision not to include locational parameters in the RBP.  Second, PJM’s use of a 
+single load forecast as the basis for 15-years of cost allocation is unreasonable absent some 
+allowance for adjustment to allocation over time.  Third, the proposed provisions require further 
+development to ensure that Electric Distributors are not left responsible for an unreasonable 
+allocation of RBP Charges.
+--- PAGE 29 ---
+29 
+ 
+1. 
+PJM’s Static Load-Forecast Cost Allocation Is Unjust and 
+Unreasonable Because It Disconnects Long-Term RBP Charges From 
+Actual Load Responsibility 
+ 
+PJM proposes to allocate RBP Charges by first imputing the current 6,831.3 MW shortfall 
+to each Electric Distributor zone/area based in part on that zone/area’s forecasted load growth from 
+the 2026/2027 Delivery Year to the 2028/2029 Delivery Year.89  PJM’s proposal to use the 
+forecasted load growth between those Delivery Years to allocate a financial obligation that will 
+run through the 2042/2043 Delivery Year creates a number of problems.  First, PJM’s proposal to 
+allocate costs based on zonal responsibility for its current reliability shortfall is at odds with its 
+concession that there will be no locational element to the RBP.  PJM’s theory that its load forecast 
+is a reliable proxy for where in the PJM region the resource adequacy shortfall exists, paired with 
+its decision not to include a locational element to capacity procurement, creates a fundamental 
+disconnect between the product procured and the allocation of RBP Charges for the product.  For 
+example, load in western PJM may end up paying for significant new generation investments in 
+eastern PJM that ultimately do not benefit that western load, or vice versa. 
+ 
+Second, the temporal mismatch created by the RBP Proposal is independently 
+unreasonable.  PJM proposes to allocate a 15-year stream of RBP Charges through the 2042/2043 
+Delivery Year using a single snapshot of relative load growth between the 2026/2027 and 
+2028/2029 Delivery Years, even though load growth patterns are highly likely to shift materially 
+over that period as large-load projects, interconnection timelines, retirements, and customer 
+commitments change.  PJM acknowledges that it cannot project CETO and CETL 15 years out 
+because it lacks the information needed to determine those locational parameters.  PJM cannot 
+ 
+89  
+ In her affidavit, Ms. Croop explains that the allocation of RBP MWs to each Electric Distributor zone/area 
+will be based on the forecasted load growth from the 2026/2027 Delivery Year to the 2028/2029 Delivery Year and 
+incorporate the Load Adjustments from the 2026 PJM Load Forecast.  See Croop Affidavit ¶ 43.
+--- PAGE 30 ---
+30 
+ 
+invoke that uncertainty to avoid locational procurement while simultaneously locking in cost 
+allocation for the full commitment term based on a near-term forecast that it cannot reasonably 
+expect to remain representative. 
+ 
+ 
+For these reasons, the cost allocation methodology contemplated by the RBP Proposal is 
+unjust, unreasonable and unduly discriminatory.  The Commission should reject the proposed 
+methodology or, at minimum, direct that PJM implement the necessary corrections and 
+clarifications described in this Protest to ensure that the RBP functions as designed.  This includes, 
+at minimum, a requirement that PJM revise the RBP Proposal to include a mechanism to revisit 
+cost allocation for RBP Charges as the actual load and reliability landscape evolves. 
+2. 
+PJM’s Cost Allocation Provisions Must be Further Clarified to Avoid 
+Placing Unreasonable Burdens on Electric Distributors 
+ 
+The proposed provisions governing cost allocation to LSEs—i.e., the parties taking 
+transmission service on behalf of the large load customer in question—require further development 
+to ensure that Electric Distributors are not left responsible for an undue allocation of RBP Charges.  
+Unlike PJM’s allocation of RBP Charges to Electric Distributor areas/zones, which will be set to 
+a fixed amount and assigned by PJM, the proposed allocation of RBP Charges to LSEs is much 
+less definitive, thereby exposing Electric Distributors to risk for assuming unwarranted RBP costs. 
+ 
+According to the RBP Proposal, after PJM allocates RBP Charges to each Electric 
+Distributor zone/area, those RBP Charges will be further allocated to each LSE based on the LSE’s 
+pro-rata share of the zone’s RBP Obligation.  This allocation depends entirely on actions by parties 
+that neither PJM nor the Electric Distributor can compel.  Although PJM’s proposal nominally 
+places payment obligations on LSEs rather than Electric Distributors, the practical reality is more 
+complex.  The Electric Distributor is the entity responsible for a host of administrative functions 
+that will impact on how costs are allocated among LSEs according to their pro-rata share of their
+--- PAGE 31 ---
+31 
+ 
+RBP Obligations.  Should this fail, PJM proposes that it will allocate costs among LSEs in the 
+zone using each LSE’s load ratio share of the Daily Unforced Capacity Obligation for the zone as 
+determined in Schedule 8 of the RAA.  Importantly, PJM’s proposal also does not mention which 
+party bears responsibility if LSEs decide not to pay their allocated share of RBP Charges or if their 
+load commitments shift over time, or if an LSE disputes their previously-allocated share of RBP 
+Charges.  Given that the Electric Distributors zones/areas are assigned a fixed amount of RBP 
+Charges that will be expressly defined by the Tariff, the ambiguities regarding LSEs’ 
+responsibilities for RBP Charges leave Electric Distributors at a significant disadvantage for 
+bearing costs that, by design, should be allocated fairly among responsible LSEs before ultimately 
+being allocated to load.  This outcome would be consistent with both the design of the RBP and 
+the Trump Administration’s Ratepayer Protection Pledge.90 
+ 
+To remedy these deficiencies, the Commission should direct PJM to clarify that the full 
+15-year RBP financial obligation follows the LSE serving the large-load or data center customer 
+whose load growth gives rise to the RBP responsibility, not the Electric Distributor for the 
+zone/area in which that customer happens to be located.  If the purpose of the RBP is to ensure 
+that new large loads and data centers bear the incremental capacity costs associated with their 
+service, then the legally enforceable obligation should be assigned at the outset to the LSE serving 
+that load and should remain with that service obligation for the full RBP commitment term.  The 
+Tariff should also provide that, if the large-load or data center customer later switches suppliers, 
+the corresponding RBP obligation transfers to the successor LSE serving that same load.  That 
+structure would prevent residual liability from falling on an Electric Distributor merely because 
+ 
+90  
+THE WHITE HOUSE, Ratepayer Protection Pledge Proclamation (Mar. 4, 2026) 
+https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge-proclamation/ (“Ratepayer 
+Protection Pledge”).
+--- PAGE 32 ---
+32 
+ 
+the load is located in its zone/area, while ensuring that the entities serving and receiving revenues 
+from the load remain responsible for the capacity costs caused by that load.   
+ 
+This approach is consistent with PJM’s asserted cost-causation rationale and with the 
+Ratepayer Protection Pledge’s premise that large loads and data centers—not other customers and 
+not the Electric Distributor as a default guarantor—should be responsible for the incremental 
+capacity costs required to serve them.  At a minimum, the Commission should direct PJM to:  (1) 
+expressly state in the Tariff that an Electric Distributor shall have no financial obligation for RBP 
+Charges solely by virtue of defining the zone/area or by reason of a failure to report RBP 
+Obligation MW, and that the obligation to report is ministerial in character—not a condition whose 
+non-fulfillment exposes the Electric Distributor to financial liability for the zone/area’s allocated 
+charges; and (2) provide that Electric Distributors are not held financially liable in a circumstance 
+where an LSE fails to pay its share of, or otherwise disputes its allocation of RBP Charges.   
+C. 
+PJM Must Clarify That RBP Collateral Obligations Apply to Load Serving 
+Entities, Not Electric Distributors, Because Credit Responsibility Should 
+Follow the Entity Responsible for RBP Charges 
+PJM proposes to require that those LSEs allocated responsibility for RBP Charges for a 
+given Delivery Year must post credit associated with that obligation.  PJM must clarify that 
+collateral obligations attach only to LSEs allocated responsibility for RBP Charges, not to Electric 
+Distributors acting solely in an administrative or delivery-service role.  PJM expressly states that 
+RBP Buyer collateral is intended to protect against the risk that an entity responsible for RBP 
+Charges fails to pay those charges.  This collateral obligation should therefore follow the entity 
+ultimately responsible for the RBP Charge.  Given that LSEs are the parties taking transmission 
+service on behalf of the large loads that have caused the need for the RBP, the burden to acquire 
+collateral should reside with the LSE.
+--- PAGE 33 ---
+33 
+ 
+The Commission should direct PJM to clarify that the obligation to post RBP Collateral 
+applies exclusively to LSEs allocated responsibility for RBP Charges and does not attach to an 
+Electric Distributor solely because the applicable load is located within its distribution service 
+territory.  PJM explains that RBP Buyer collateral is intended to mitigate the risk of non-payment 
+of RBP Charges and that only LSEs allocated responsibility for RBP Charges generally will have 
+a credit requirement.  The RBP Proposal therefore appears to recognize that collateral should 
+follow financial responsibility for RBP Charges.  Given the substantial magnitude and long 
+duration of the proposed collateral requirements, however, the Tariff should expressly state that 
+Electric Distributors have no obligation to post RBP Collateral unless they are serving the 
+underlying load in their capacity as an LSE.  Failure to provide such clarification creates 
+unnecessary uncertainty regarding which market participants ultimately bear the financial 
+obligations associated with the RBP framework. 
+This clarification is also necessary to ensure consistency with the cost-causation principles 
+that PJM invokes throughout the filing.  PJM’s proposed cost allocation methodology is premised 
+on assigning RBP Charges to the LSEs serving the load that gives rise to the resource adequacy 
+need underlying the RBP.  It would therefore be inconsistent and unreasonable to require an 
+Electric Distributor, whose role in the RBP framework is limited to delivery service and 
+administrative reporting of allocations, to provide collateral backing obligations incurred by 
+competitive suppliers serving that load.  This concern is particularly acute in the AEP Ohio Electric 
+Distributor zone/area, where essentially all large-load and data center customers driving forecasted 
+load growth are shopping customers served by competitive retail suppliers acting as LSEs.  
+Requiring AEP Ohio to post collateral for obligations attributable to those suppliers would 
+improperly shift credit risk from the entities serving and benefiting from the load to an Electric
+--- PAGE 34 ---
+34 
+ 
+Distributor that neither controls generation supply decisions nor receives the revenues associated 
+with serving that load.  Such a result would be inconsistent with cost-causation principles and 
+should be expressly foreclosed in the Tariff. 
+The Commission should therefore direct PJM to modify the RBP Tariff language to 
+expressly state that, “RBP Collateral shall be required only of those Load Serving Entities allocated 
+responsibility for RBP Charges pursuant to Attachment DD.  An Electric Distributor shall have no 
+obligation to post RBP Collateral solely by virtue of serving as the Electric Distributor for a zone 
+or area, except to the extent the Electric Distributor is also acting as the Load Serving Entity for 
+the applicable load.” 
+D. 
+PJM’s Proposal Contains an Error Regarding Fixed Resource Requirement 
+Entities That Must Be Addressed 
+ 
+The RBP Proposal contains an error that, if the Commission accepts the RBP Proposal, the 
+Commission should direct PJM to amend on compliance.  In RAA, Schedule 8, Article 1, Section 
+D 1.1, PJM proposes language stating that “An FRR Entity may not use an Existing Generation 
+Capacity Resource not owned by such FRR Entity as of June 1, 2027 or any resource committed 
+through the Reliability Backstop Procurement to satisfy its Capacity FRR Plan.”91  This mistake, 
+lacking the ability to use both owned or contracted resources, if accepted, would represent a critical 
+error in the filed rate as applied to FRR Entities.  In conversations with PJM since the RBP 
+Proposal was submitted, PJM has conceded to AEP that this mistake was a simple drafting error.  
+Consequently, PJM must acknowledge this error on the record of this proceeding and commit to 
+fixing it in a compliance filing. 
+ 
+91  
+RBP Proposal, Attachment B, Clean Tariff Records, RAA, Art. 1 § D 1.1 (emphasis added).
+--- PAGE 35 ---
+35 
+ 
+V. 
+CONCLUSION 
+AEP recognizes that PJM faces a genuine and pressing resource adequacy challenge and 
+does not oppose a carefully tailored one-time backstop procurement designed to address the 
+2028/2029 BRA shortfall.  That said, the extraordinary speed, cost, and duration of the RBP 
+Proposal require the Commission to scrutinize the proposed terms carefully before customers are 
+exposed to billions of dollars in long-term financial commitments.  As explained in this Protest, 
+the RBP Proposal contains provisions that are unjust, unreasonable, and unduly discriminatory.  
+AEP therefore respectfully requests that the Commission reject those provisions of the RBP 
+Proposal or, at minimum, condition any acceptance of the RBP Proposal on the modifications and 
+clarifications described above.  
+Specifically, the Commission should: 
+1. Reject or direct PJM to substantially revise the RBP Proposal’s Transmission Owner exit 
+provisions to:  (a) ensure that a departing Transmission Owner’s financial obligation for 
+RBP Charges is limited to the charges allocated to its zone under PJM’s Commission-
+accepted RBP cost allocation methodology, subject to reduction by any RBP Settlement 
+Credits, RPM Auction Credits, refunds, offsets, or other credits that would have applied 
+had the load remained in PJM; and (b) make the cost of exiting PJM transparent and readily 
+ascertainable through an objective, pre-determinable formula; 
+2. Reaffirm the Commission’s established precedent governing RTO exit obligations, and 
+expressly confirm that any RBP exit obligation accepted in this proceeding is confined to 
+RBP Charges and does not disturb, expand, or supersede the contractual exit framework 
+established in Duquesne I and II and related orders, including the absence of any general 
+PJM exit fee;
+--- PAGE 36 ---
+36 
+ 
+3. Reject or direct PJM to modify the proposed RBP cost allocation methodology by:  (a) 
+expressly stating that Electric Distributors bear no financial liability for RBP Charges 
+solely by virtue of their administrative role in reporting LSE RBP Obligations; (b) 
+providing that collateral obligations attach exclusively to LSEs allocated responsibility for 
+RBP Charges and not to Electric Distributors acting in a delivery-service or reporting 
+capacity; and (c) adopting a mechanism to revisit cost allocation over the 15-year RBP 
+commitment term as actual load and reliability conditions evolve; and  
+4. Direct PJM to correct the identified drafting error in RAA, Schedule 8.1.D, Section 
+D.1.1 affecting FRR Entities on compliance, and to acknowledge that error on the record 
+of this proceeding. 
+These conditions are necessary to ensure that any one-time backstop procurement approved 
+by the Commission addresses PJM’s asserted reliability need without imposing unjust, 
+unreasonable, unduly discriminatory, or insufficiently reviewed long-term costs on AEP, its 
+affiliates, and their customers. 
+ 
+ 
+ 
+ 
+ 
+        Respectfully submitted, 
+ 
+ 
+/s/ John C. Crespo 
+John C. Crespo 
+Senior Legal Counsel 
+American Electric Power Service Corporation 
+1 Riverside Plaza 
+Columbus, Ohio 43215 
+(614) 716-3727 
+jccrespo@aep.com
+--- PAGE 37 ---
+37 
+ 
+/s/ Christopher R. Jones 
+Christopher R. Jones 
+William R. Derasmo 
+Emily Beard  
+TROUTMAN PEPPER LOCKE LLP 
+401 9th Street, NW Suite 1000 
+Washington, DC 
+(202) 662-2181 
+chris.jones@troutman.com 
+william.derasmo@troutman.com 
+emily.beard@troutman.com  
+ 
+Counsel for American Electric Power Service 
+Corporation 
+ 
+ 
+ 
+ 
+Dated: August 21, 2026
+--- PAGE 38 ---
+CERTIFICATE OF SERVICE 
+ 
+ 
+I hereby certify that on this 21st day of August 2026, I have caused a copy of the 
+foregoing document to be served electronically on each person listed on the Secretary’s official 
+service list in the above-referenced proceeding. 
+ 
+/s/ Emily Beard 
+Emily Beard 
+TROUTMAN PEPPER LOCKE 
+401 9th Street, NW Suite 1000 
+Washington, DC 
+(202) 274-1949 
+emily.beard@troutman.com

@@ -58,8 +58,11 @@ def kind(desc: str) -> str:
 
 
 def title(desc: str) -> str:
-    t = re.sub(r"\s+submits tariff filing per [\d.()a-z]+:?\s*", ": ", desc)
-    t = re.sub(r"\s+(?:under|in Docket No\.?)\s+[A-Z]{2}\d{2}-\d+.*$", "", t).strip(" .")
+    # "<Filer> submits tariff filing per 35.13(a)(2)(iii: <its own title> to be effective <date> under <docket>":
+    # the filer is shown beside the title, so keep only the filing's own title.
+    t = re.sub(r"^.*?\s+submits tariff filing per [\d.()a-z]+:?\s*", "", desc)
+    t = re.sub(r"\s+(?:under|in Docket No\.?)\s+[A-Z]{2}\d{2}-\d+.*$", "", t)
+    t = re.sub(r"\s+to be effective\s+\S+$", "", t).strip(" .")
     return t if len(t) <= 160 else t[:157].rsplit(" ", 1)[0] + "…"
 
 
@@ -101,7 +104,7 @@ def main() -> int:
         texts = {}
         for f in captured:
             p = inv.parent / f["file"]
-            texts[f["file"]] = pdf_pages(p) if p.suffix.lower() == ".pdf" else [docx_text(p)]
+            texts[f["file"]] = pdf_pages(p) if p.suffix.lower() == ".pdf" else [p.read_text(errors="replace").strip()] if p.suffix.lower() == ".txt" else [docx_text(p)]
         main_files = [f for f in captured if not SKIP.search(f["label"])] or captured[:1]
         if not relevant(row, "\n".join(texts[main_files[0]["file"]]), base):
             logging.info("%s: not about large loads (%s)", acc, row["desc"][:80]); skipped += 1; continue

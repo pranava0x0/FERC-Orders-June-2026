@@ -1,0 +1,208 @@
+--- PAGE 1 ---
+1
+UNITED STATES OF AMERICA
+BEFORE THE
+FEDERAL ENERGY REGULATORY COMMISSION
+PJM Interconnection, L.L.C.
+Docket No. ER26-3515-000
+COMMENTS OF
+PERSISTENCE ANALYTICS GROUP LLC
+I. INTRODUCTION
+Persistence Analytics Group LLC ("PAG") respectfully submits these comments concerning PJM 
+Interconnection, L.L.C.'s August 13, 2026 proposal to establish Interim Resource Adequacy Service 
+("IRAS") and a Large Load Registry. PAG supports the core objectives of improving visibility into 
+large-load development, protecting system reliability, and creating a more disciplined basis for the 
+treatment of new large loads. PAG's comments are limited to an implementation-assurance question 
+that becomes increasingly important as PJM, Electric Distributors, state commissions, and other 
+authorized entities begin to rely on registry information for consequential planning and operational 
+decisions.
+PJM's proposal recognizes that the Large Load Registry cannot function merely as a collection of 
+reported megawatts. The filing would require information concerning in-service dates, peak load and 
+ramp schedules, telemetry, Bring Your Own New Capacity ("BYONC"), backup generation and 
+permitting limitations, contracts or service agreements, and points of interconnection. PJM also 
+proposes authority to review information, coordinate with Transmission Owners and Electric 
+Distributors regarding validity, request additional information, and update the registry periodically. 
+PJM Filing at 37-45; proposed RAA Schedule 11, section B.
+Most significantly, PJM states that reliance on the registry must reflect accurate and complete 
+information and that the registry is intended to become an accurate, complete, and reliable database 
+supporting decisions about the amount of New Large Load available to provide IRAS. PJM Filing at 
+43-45. PAG agrees. The Commission should recognize that the quality of the framework will depend 
+not only on whether information is submitted, but also on whether material assumptions remain 
+sufficiently supported when the information is relied upon.
+Accordingly, PAG recommends that the Commission, in accepting or otherwise acting on the 
+filing, recognize four implementation principles for PJM's development of the Large Load Registry and 
+related Manuals: (1) material load information should be accompanied by sufficient context to 
+distinguish projected or requested load from more mature load states; (2) execution-critical assumptions 
+should be subject to identifiable revalidation triggers; (3) information used to support IRAS load-
+reduction capability should be decision-useful for the actual operating conditions in which that 
+capability may be called; and (4) authorized users should have sufficient provenance to understand 
+what supports a material registry input and when it was last materially validated.
+II. THE LARGE LOAD REGISTRY SHOULD BE TREATED AS A DECISION-GRADE 
+EVIDENTIARY RECORD, NOT ONLY A REPORTING REPOSITORY
+PJM proposes a registry with considerably more information than a conventional interconnection 
+queue. Among other items, each Party would submit or cause to be submitted the Large Load's 
+description and location, in-service date for each increment of load, delivery points or points of 
+interconnection, peak-load quantity and ramp schedule, telemetry specifications, BYONC quantity and 
+ramp schedule, allocated RBP UCAP, backup generation including fuel type and relevant permitting
+--- PAGE 2 ---
+2
+limitations, and contracts or service agreements between the Large Load and the LSE. PJM Filing at 
+37-38; proposed RAA Schedule 11, section B.1(a).
+Those fields reflect an important reality: a headline megawatt value does not, by itself, describe 
+the maturity, timing, operational characteristics, or reliability implications of a large-load project. A 500 
+MW value may represent a development envelope, a requested service level, a studied quantity, a 
+contracted commitment, a phased construction plan, an energized load, or a persistent operating level. 
+Those states can have materially different implications for capacity planning, transmission planning, 
+cost allocation, IRAS eligibility, and state retail treatment.
+PAG therefore recommends that implementation of the registry preserve enough context for 
+authorized users to understand the status represented by a material MW figure. This need not require 
+PJM to adopt a new public scoring system or to disclose commercially sensitive information. It can be 
+accomplished through clear definitions, dated status fields, source attribution, and structured 
+information about the stage to which the reported quantity relates.
+The objective is straightforward: information should be decision-grade for the decision being 
+made. A quantity suitable for early planning visibility may not be sufficient for an irreversible capital 
+commitment or an operational baseline. Recognizing that distinction would improve the usefulness of 
+the registry without slowing the interconnection of projects that have demonstrated sufficient maturity.
+III. MATERIAL ASSUMPTIONS SHOULD HAVE IDENTIFIABLE REVALIDATION 
+TRIGGERS
+PJM expressly proposes that each Party promptly inform the Office of the Interconnection of any 
+change in required registry information concerning a Large Load. Proposed RAA Schedule 11, section 
+B.2; PJM Filing at 43-44. That is an important foundation. PAG recommends that PJM's 
+implementation guidance make the concept operational by identifying categories of material change 
+that should trigger revalidation of affected assumptions.
+Examples can include a material change in the expected in-service date or ramp schedule; a 
+change in the customer or contractual commitment underlying the load; a change in the quantity, 
+timing, or status of BYONC; a change in backup-generation capability, fuel availability, or relevant 
+permitting limitations; a material change in points of interconnection or service configuration; or a 
+change that affects the facility's claimed ability to reduce load under IRAS.
+The purpose of revalidation is not to require continuous resubmission of unchanged information. 
+It is to prevent an assumption that was reasonable at one point in project development from remaining 
+embedded in planning or operational treatment after the conditions supporting it have materially 
+changed.
+This distinction is particularly important for projects developed in phases. PJM recognizes the 
+importance of in-service dates for each increment of load and of ramp schedules. PJM Filing at 38-40. 
+A phased project can change customer mix, construction sequence, equipment strategy, generation 
+arrangements, or energization timing while retaining the same ultimate development capacity. The 
+registry should allow those changes to be reflected before other entities continue relying on an outdated 
+implementation assumption.
+IV. IRAS RELIES ON OPERATIONAL CAPABILITY, SO CLAIMED LOAD REDUCTION 
+SHOULD BE SUPPORTED BY OPERATIONALLY RELEVANT EVIDENCE
+IRAS is designed to allow certain New Large Loads to interconnect without sufficient new 
+capacity on the condition that they may be required to reduce load or switch to onsite backup resources 
+under specified emergency conditions. PJM Filing at 39-40, 74-100. The proposed registry accordingly
+--- PAGE 3 ---
+3
+includes telemetry specifications and backup generation, including fuel type and relevant permitting 
+limitations. PJM Filing at 37-38.
+That architecture makes operational capability a consequential assumption. A stated ability to 
+reduce 100 MW is not identical to a demonstrated ability to produce that reduction under the timing, 
+control, telemetry, fuel, permitting, and restoration conditions relevant to an IRAS event. The same 
+applies where onsite generation is part of the expected response.
+PAG does not suggest that every Large Load must be subjected to a single standardized physical 
+test. Facilities differ materially, and PJM and state authorities retain the appropriate operational and 
+regulatory roles. PAG instead recommends that the Commission recognize a principle of evidence 
+proportionality: where PJM or an Electric Distributor relies on a claimed operational capability to 
+protect reliability, the evidence supporting that capability should be commensurate with the 
+consequence of non-performance.
+At a minimum, the implementation framework should allow the relevant parties to understand the 
+quantity expected to be reduced, the mechanism by which reduction is expected to occur, telemetry or 
+visibility needed to confirm performance, material constraints on backup generation, and circumstances 
+that would require the capability to be revalidated. This would complement, rather than replace, 
+existing PJM emergency procedures and state-approved load-reduction plans.
+V. BYONC SHOWS WHY REPORTED ARRANGEMENTS AND DURABLE CAPACITY 
+SHOULD REMAIN DISTINCT
+PJM proposes BYONC as a pathway for New Large Loads to facilitate new capacity and reduce 
+the quantity of load subject to IRAS. The filing includes gating criteria intended to ensure that BYONC 
+represents genuinely new capacity rather than repackaged existing capacity, and it proposes 
+participation requirements designed to ensure that the capacity benefit is real and lasting. PJM Filing at 
+50-59.
+PAG supports the distinction embodied in those provisions. An announced generation project, a 
+bilateral arrangement, an interconnection milestone, an accredited Capacity Resource, and capacity that 
+remains available through the period on which the system relies are related but not interchangeable 
+facts. The registry and associated implementation processes should preserve that distinction.
+Where a New Large Load receives treatment based on a BYONC arrangement, authorized users 
+should be able to determine the relevant quantity, timing, status, and material changes affecting the 
+arrangement. PJM already proposes to collect BYONC quantity and ramp schedule and to associate 
+BYONC resources with Large Loads. PJM Filing at 37-43. PAG recommends that revalidation of 
+material changes be carried through to any registry or operational determination that depends on the 
+arrangement.
+VI. STATE COMMISSIONS AND ELECTRIC DISTRIBUTORS WILL NEED 
+INFORMATION THAT IS RELIABLE FOR THEIR DISTINCT DECISIONS
+PJM's proposal expressly recognizes a significant state role. Electric Distributors would 
+coordinate, as appropriate, with relevant states or Relevant Electric Retail Regulatory Authorities, 
+LSEs, and customers to support transparent, effective, and orderly deployment of IRAS. PJM Filing at 
+27-28. The filing further explains that Electric Distributors, consistent with state programs, identify 
+which loads to reduce in response to a PJM directive, and that state-approved contracts and load-
+reduction plans govern that implementation. PJM Filing at 85-100.
+--- PAGE 4 ---
+4
+The proposed registry may also be made available, subject to confidentiality protections, to 
+Authorized Commissions, Transmission Owners, Electric Distributors, LSEs, the Market Monitoring 
+Unit, and the Commission. PJM Filing at 42-44.
+These authorized users will not necessarily rely on the same field for the same purpose. A state 
+commission may be considering retail rate treatment or cost responsibility. An Electric Distributor may 
+be preparing an operational load-reduction plan. A Transmission Owner may be considering system 
+impacts. PJM may be establishing an IRAS baseline. The registry will be most valuable if a user can 
+understand both the reported value and the evidentiary context relevant to the decision at hand.
+PAG therefore recommends that PJM's implementation work preserve data provenance and 
+validation status for material fields where feasible. This can include the reporting entity, effective date, 
+last material update, and whether the field is based on a contract, utility study, operational 
+measurement, permit, accredited capacity status, customer representation, or another identified source 
+category. Such provenance can be protected under the same confidentiality framework that PJM 
+proposes for commercially sensitive information.
+VII. THESE PRINCIPLES CAN IMPROVE RELIABILITY WITHOUT CREATING A NEW 
+APPROVAL LAYER
+PAG's recommendations are intended to support PJM's proposed framework, not to create a 
+parallel interconnection process. The Commission need not require a new approval gate for every 
+registry field. Nor should an independent assurance concept displace the technical, legal, regulatory, or 
+operational responsibilities assigned to PJM, Transmission Owners, Electric Distributors, LSEs, Large 
+Loads, state commissions, or FERC.
+The narrower point is that institutional reliance should be matched to evidentiary maturity. As the 
+consequences of reliance increase, the importance of accurate status, provenance, and revalidation also 
+increases. PJM's filing already contains the core building blocks: structured information, validation 
+authority, periodic updating, prompt reporting of changes, confidentiality safeguards, and an explicit 
+requirement that the registry provide an accurate and reliable basis for IRAS.
+Implementation guidance can build on those elements without prescribing a proprietary 
+methodology. Clear status definitions, material-change triggers, source categories, and operationally 
+relevant evidence expectations would make the registry more useful to all authorized users and reduce 
+the risk that an outdated or insufficiently supported assumption becomes an operational baseline.
+VIII. CONCLUSION
+PAG supports PJM's effort to establish a Large Load Registry and an interim framework that 
+better aligns large-load integration with resource adequacy and ratepayer protection. The proposal 
+correctly recognizes that reliable implementation depends on more than collecting a headline MW 
+value.
+PAG respectfully recommends that the Commission recognize, in its consideration of the filing, 
+that: (1) material large-load information should carry sufficient context to distinguish planning-stage 
+projections from more mature implementation states; (2) execution-critical assumptions should be 
+subject to identifiable revalidation triggers; (3) claimed IRAS load-reduction or onsite-backup 
+capability should be supported by evidence appropriate to the operational consequence; and (4) 
+authorized users should have sufficient provenance to understand what supports a material registry 
+input and when that information was last materially validated.
+These principles would strengthen the reliability of the Large Load Registry while preserving 
+PJM's flexibility to develop detailed implementation provisions through its Manuals and stakeholder
+--- PAGE 5 ---
+5
+processes. They would also help state commissions and Electric Distributors use the registry for their 
+distinct responsibilities without treating all reported information as equally mature or equally reliable 
+for every decision.
+Respectfully submitted,
+Neil P. Osnato
+Founder
+Persistence Analytics Group LLC | United Grid™
+82 Spring Lake Blvd.
+Waretown, NJ 08758
+neil@persistenceanalyticsgroup.com
+609-464-9055
+Dated: August 13, 2026
+--- PAGE 6 ---
+6
+CERTIFICATE OF SERVICE
+I hereby certify that on August 13, 2026, I served the foregoing Comments of Persistence Analytics 
+Group LLC electronically on the applicant's representatives identified in PJM Interconnection, L.L.C.'s 
+August 13, 2026 filing in Docket No. ER26-3515-000. If Persistence Analytics Group LLC has been 
+added to the official service list before these comments are submitted, the undersigned will also serve 
+the filing on all persons then appearing on that service list in accordance with Rule 2010 of the 
+Commission's Rules of Practice and Procedure.
+Neil P. Osnato
+Persistence Analytics Group LLC
+Dated: August 13, 2026

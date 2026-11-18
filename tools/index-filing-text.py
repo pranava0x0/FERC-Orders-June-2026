@@ -156,11 +156,16 @@ def sections(pages: list[str], bookmarks: list[tuple[int,str]], paginated: bool)
             key=r"\s+".join(map(re.escape,title.split()))
             m=re.search(key,text,re.I)
             if m: starts[(pg,m.start())]=(title,"PDF bookmark")
+        absorbed=-1
         for m in re.finditer(r"[^\n]+",text):
             line=clean(m[0])
+            # A heading printed as "I." on one line and its title on the next is one heading. The title
+            # line was absorbed into it, so it must not open a second, duplicate section.
+            if m.start()<=absorbed<m.end(): continue
             if re.fullmatch(r"(?:[IVX]{1,6}|[A-H])\.",line):
-                rest=text[m.end():].lstrip().splitlines()
-                if rest: line+=" "+clean(rest[0])
+                nxt=re.search(r"\S[^\n]*",text[m.end():])
+                if nxt:
+                    line+=" "+clean(nxt[0]); absorbed=m.end()+nxt.start()
             if not paginated and line in ("Footnotes","Endnotes"):
                 starts[(pg,m.start())]=(line,"Word notes")
             if (HEADING.fullmatch(line) or LABEL.fullmatch(line)) and not re.search(r"\.{2,}|\s\d+$",line):

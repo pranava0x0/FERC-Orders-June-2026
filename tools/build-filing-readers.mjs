@@ -1,5 +1,6 @@
 // Rebuild the HTML reading room from the per-document source index and reviewed evidence.
 // node tools/build-filing-readers.mjs [--check]
+import {filerList} from './build-record-data.mjs';
 import {existsSync, readFileSync,writeFileSync} from 'node:fs';
 import {dirname,join} from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -127,14 +128,20 @@ for(const r of catalog){
  const evidenceHeading=curated.length?'What the document says':'Passages from the original';
  const raw='https://github.com/pranava0x0/ferc-large-load-proceedings/blob/main/'+r.file.split('/').map(encodeURIComponent).join('/');
  const description=short(curated[0]?.take||curated[0]?.title||r.title);
- const summary='<p class="meta">'+esc(r.docket)+' · '+esc(r.issued)+(r.filer?' · '+esc(r.filer):'')+'</p><h1>'+esc(r.title)+'</h1>';
+ // eLibrary runs joint filers together with no separator; filerList splits them at name boundaries.
+ const who=filerList(r.filer||''),byline=who.length>3?who.slice(0,2).join(', ')+' and '+(who.length-2)+' others':who.join(', ');
+ const summary='<p class="meta">'+esc(r.docket)+' · '+esc(r.issued)+(byline?' · '+esc(byline):'')+'</p><h1>'+esc(r.title)+'</h1>';
  // A record-tier document keeps its original on eLibrary only; the page names the hash the text came from.
  const sourceNav='<nav class="tools" aria-label="Source material"><a href="'+esc(r.url)+'">Official source</a>'+(r.tier==='record'?'':'<a href="'+raw+'">Archived original</a>')+'<a href="text.html">Full text</a><a href="source.json">Page data (JSON)</a></nav>'+(r.tier==='record'?'<p class="muted">Text extracted from the eLibrary original (SHA-256 <code>'+esc(r.sha256.slice(0,16))+'…</code>). Download the original from the official source.</p>':'');
  const readings=curated.length?'<h2 id="findings">'+evidenceHeading+'</h2>'+ (local.length>3?'<nav class="contents" aria-label="Section readings">'+local.map(c=>'<a href="#'+pin(c.title)+'">'+esc(c.title)+'</a>').join('')+'</nav>':'')+claims:'';
  // Other parties' views stay off this page's text: a reader sees what THIS document says. They are listed
  // as links, by speaker, so the trail to them survives without mixing their words into this reading.
  const notes=related.length?'<ul class="elsewhere">'+related.map(v=>'<li><a href="'+esc(v.url)+'">'+esc(v.title)+'</a> <span class="by">'+esc(v.speaker)+'</span></li>').join('')+'</ul>':'';
- const article=summary+ownReading(r,paginated)+sourceNav+(r.parent?'<p><a href="../'+r.parent+'/">Read the parent filing</a></p>':'')+
+ // Contents at the top: the document's own printed headings, so a reader sees its structure and can jump
+ // to a section before scrolling. Pages without headings (page ranges only) get no list; it would say nothing.
+ const heads=sections.map((s,i)=>({s,i})).filter(({s})=>/heading|bookmark/i.test(s.method)&&!/^(?:certificate of service|table of contents)$/i.test(s.title));
+ const toc=heads.length>=2?'<details class="toc"'+(heads.length<=12?' open':'')+'><summary>Contents · '+heads.length+' sections</summary><ol>'+heads.map(({s,i})=>'<li'+(/^[A-H]\.\s/.test(s.title)?' class="sub"':'')+'><a href="'+(local.length||!sourceFragment(pages,s).trim()?'text.html':'')+'#section-'+(i+1)+'">'+esc(s.title)+'</a>'+(paginated?' <span class="meta">p. '+s.p+'</span>':'')+'</li>').join('')+'</ol></details>':'';
+ const article=summary+ownReading(r,paginated)+sourceNav+toc+(r.parent?'<p><a href="../'+r.parent+'/">Read the parent filing</a></p>':'')+
    (links.length?'<nav class="contents" aria-label="Attachments">'+links.map(x=>'<a href="../'+x.slug+'/">'+esc(x.title)+'</a>').join('')+'</nav>':'')+
    (filingThread.has(docketKey(r))?'<p><a href="../'+threadHref(docketKey(r))+'">Read topic-matched comments in '+esc(docketKey(r))+'</a></p>':'')+
    (overviewTopics.length?'<p class="terms">Topics in the text: '+esc(overviewTopics.join(' · '))+'</p>':'')+readings+

@@ -1,0 +1,2273 @@
+--- PAGE 1 ---
+Exhibit No. PTO-0001 
+Page 1 of 39 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+PJM Interconnection, L.L.C., et al.   
+)  
+Docket No. EL25-49-000 
+)  
+Docket No. EL25-49-001 
+) 
+Large Loads Co-Located at Generating Facilities  
+) 
+Docket No. AD24-11-000 
+) 
+Constellation Energy Generation, LLC  
+)  
+Docket No. EL25-20-000 
+v.  
+ 
+) 
+PJM Interconnection, L.L.C.   
+)  
+(Consolidated) 
+DIRECT JOINT TESTIMONY 
+OF 
+PETER BLAZUNAS, LANCE SCHAFER 
+AND 
+HANHAN HAMMER 
+I. 
+INTRODUCTION  
+1 
+Q.  
+Please state your name, title, business address, and provide your professional 
+2 
+background and relevant experience. 
+3 
+A. 
+[Blazunas] My name is Peter Blazunas, and my business address is 293 Boston Post Road 
+4 
+West, Marlborough, MA 01752. I am a Vice President with Concentric Energy Advisors, 
+5 
+Inc. (“Concentric”). I joined Concentric in 2021, and I provide regulatory strategy and rate 
+6 
+case expertise to regulated electric and gas utilities, especially with respect to the topics of 
+7 
+cost of service and rate design. Prior to Concentric, I managed a team overseeing the cost 
+8 
+of service, rate design, and rate administration functions for Potomac Electric Power 
+9 
+Company’s (“Pepco”) Maryland and District of Columbia jurisdictions. Prior to Pepco, I 
+10 
+worked as an analyst in the FirstEnergy Rates and Regulatory Affairs department. I have 
+11
+--- PAGE 2 ---
+Exhibit No. PTO-0001 
+Page 2 of 39 
+testified before regulatory commissions in Delaware, the District of Columbia, Maryland, 
+1 
+Ohio, and Rhode Island. 
+2 
+[Schafer] My name is Lance Schafer, and my business address is 293 Boston Post 
+3 
+Road West, Marlborough, MA 01752. I am a Senior Project Manager with Concentric. I 
+4 
+specialize in regulatory strategy, rate design, and cost of service for regulated electric and 
+5 
+gas utilities. Prior to joining Concentric in 2024, I was the Manager of Rate Administration 
+6 
+at Pepco, where I was responsible for overseeing the cost of service, rate design, and rate 
+7 
+administration functions for Pepco’s Maryland and District of Columbia jurisdictions. I 
+8 
+have testified before regulatory commissions in Delaware, the District of Columbia, 
+9 
+Kentucky, Maryland, Missouri, and Rhode Island. 
+10 
+[Hammer] My name is Hanhan Hammer, and my business address is 293 Boston 
+11 
+Post Road West, Marlborough, MA 01752. I am a Senior Project Manager with Concentric. 
+12 
+In my current role, I advise regulators, utilities, grid operators, and developers on complex 
+13 
+regulatory and market issues, including wholesale market participation, compliance with 
+14 
+FERC directives, transmission planning and cost allocation, large load tariffs, and 
+15 
+integrated resource planning. Prior to joining Concentric in 2024, I spent approximately 15 
+16 
+years working at various Independent System Operators and Regional Transmission 
+17 
+Organizations. My experience includes designing wholesale market rules at ISO New 
+18 
+England (“ISO-NE”) and overseeing competitive market performance monitoring at the 
+19 
+Midcontinent Independent System Operator (“MISO”) and the Southwest Power Pool 
+20 
+(“SPP”). I have provided expert testimony before FERC.   
+21 
+[Blazunas, Schafer, and Hammer] Our professional background and relevant 
+22 
+experience are also shown in Exhibit No. PTO-0002. 
+23
+--- PAGE 3 ---
+Exhibit No. PTO-0001 
+Page 3 of 39 
+II. 
+BACKGROUND 
+1 
+Q. 
+What is the background for this proceeding? 
+2 
+A. 
+[Blazunas, Schafer, and Hammer] On December 18, 2025, the Commission issued its 
+3 
+order in PJM Interconnection. L.L.C., 193 FERC ¶ 61,217, at P 193 (2025) (“Order”). In 
+4 
+the Order, the Commission found that PJM’s Open Access Transmission Tariff (“Tariff”) 
+5 
+“is unjust and unreasonable because it does not contain provisions addressing with 
+6 
+sufficient clarity or consistency the rates, terms, and conditions of service that apply to 
+7 
+generators serving Co-Located Load and Eligible Customers taking transmission service 
+8 
+on behalf of Co-Located Load.”1 Specifically, the Commission found PJM’s Tariff “unjust 
+9 
+and unreasonable because it does not include types of transmission service that reflect 
+10 
+Eligible Customers taking service on behalf of Co-Located Loads that are willing and able 
+11 
+to limit their use of the transmission system under certain conditions.”2
+12 
+The Commission ordered PJM to offer three new forms of transmission service 
+13 
+under its Tariff, and identified these three new forms of transmission service as: (i) Firm 
+14 
+Contract Demand transmission service; (ii) Non-Firm Contract Demand transmission 
+15 
+service; and (iii) interim, non-firm transmission service. The Commission also established 
+16 
+a paper hearing to determine the just and reasonable rates, terms, and conditions for these 
+17 
+new transmission services. The paper hearing process provides for initial briefs, responses 
+18 
+to initial briefs, and replies to those responses. 
+19 
+20 
+21 
+1 Order at P 2. 
+2 Id.
+--- PAGE 4 ---
+Exhibit No. PTO-0001 
+Page 4 of 39 
+III.  
+PURPOSE OF TESTIMONY 
+1 
+Q. 
+What is the purpose of your testimony?  
+2 
+A.   
+[Blazunas, Schafer, and Hammer] The PJM Transmission Owners, acting through the 
+3 
+Section 205 Working Group,3 have developed rate design proposals in response to the 
+4 
+Order’s requirement that PJM implement new transmission services and for submission in 
+5 
+the paper hearing process.4 The purpose of this testimony is to describe and support the 
+6 
+PJM Transmission Owners’ rate design proposals for the three new transmission services 
+7 
+the Commission required in the Order. We also support the PJM Transmission Owners’ 
+8 
+rate design proposals for a new Grid Reliance Charge. We also address penalty provisions 
+9 
+and planning and operational issues relating to Eligible Customers5 that choose to take one 
+10 
+or more of these new services. In particular, we discuss appropriate practices and 
+11 
+requirements relating to protective systems and other components that will be necessary to 
+12 
+ensure ongoing system reliability. 
+13 
+3
+The Section 205 Working Group is established under the authority of the Transmission Owner Agreement 
+Administrative Committee (“TOAAC”) pursuant to the Consolidated Transmission Owners Agreement (“CTOA”).  
+See CTOA § 8.1. These proposals have not yet been submitted to the TOAAC for approval. 
+4
+For purposes of this testimony and the accompanying responses to the Commission’s paper hearing 
+questions, the PJM Transmission Owners are: American Electric Power Service Corporation on behalf of its affiliates, 
+Appalachian Power Company, Indiana Michigan Power Company, Kentucky Power Company, Kingsport Power 
+Company, Ohio Power Company, Wheeling Power Company, AEP Appalachian Transmission Company, AEP 
+Indiana Michigan Transmission Company, AEP Kentucky Transmission Company, AEP Ohio Transmission 
+Company, and AEP West Virginia Transmission Company; The Dayton Power and Light Company d/b/a AES Ohio; 
+Duquesne Light Company; Dominion Energy Services, Inc. on behalf of Virginia Electric and Power Company d/b/a 
+Dominion Energy Virginia; Duke Energy Business Services, LLC for Duke Energy Kentucky, Inc. and Duke Energy 
+Ohio, Inc.; East Kentucky Power Cooperative; Exelon Corporation on behalf of its affiliates Atlantic City Electric 
+Company, Baltimore Gas and Electric Company, Commonwealth Edison Company, Commonwealth Edison 
+Company of Indiana, Inc., Delmarva Power & Light Company, PECO Energy Company (“PECO”), and Potomac 
+Electric Power Company; FirstEnergy Service Company, on behalf of its affiliates American Transmission Systems, 
+Incorporated, Jersey Central Power & Light Company, Mid-Atlantic Interstate Transmission LLC, The Potomac 
+Edison Company, Monongahela Power Company, Keystone Appalachian Transmission Company, and Trans-
+Allegheny Interstate Line Company (collectively, the “FirstEnergy Companies”); PPL Electric Utilities Corporation; 
+Public Service Electric and Gas Company (“PSE&G”); Rockland Electric Company; and the Southern Maryland 
+Electric Cooperative (“SMECO”). 
+5
+All capitalized terms that are not otherwise defined herein shall have the meaning set forth in the PJM Tariff 
+or Amended and Restated Operating Agreement of PJM Interconnection, L.L.C.
+--- PAGE 5 ---
+Exhibit No. PTO-0001 
+Page 5 of 39 
+IV. 
+NEW TRANSMISSION SERVICE CATEGORIES AND RATE DESIGNS 
+1 
+A. 
+Firm Contract Demand Transmission Service 
+2 
+Q. 
+What is Firm Contract Demand transmission service?   
+3 
+A.  
+[Blazunas] Pursuant to the Order, under the new Firm Contract Demand transmission 
+4 
+service (“Firm Contract Demand Service”), Eligible Customers will have the right to 
+5 
+request transmission service on behalf of a Co-Located Load up to a specified megawatt 
+6 
+(“MW”) quantity (“Firm Contract Demand”). The Firm Contract Demand Service will 
+7 
+have the same reservation and curtailment priority as existing firm transmission services at 
+8 
+the level of the contract demand. However, unlike Network Integration Transmission 
+9 
+Service (“NITS”) customers, the Eligible Customer taking Firm Contract Demand Service 
+10 
+on behalf of the Co-Located Load is not permitted to withdraw energy from the PJM 
+11 
+transmission system beyond the firm contract demand level under this service.  
+12 
+Q. 
+What is the PJM Transmission Owners’ proposed rate design for the new Firm 
+13 
+Contract Demand Service? 
+14 
+A. 
+[Blazunas] The PJM Transmission Owners propose that the rate for Firm Contract 
+15 
+Demand Service be based on zonal NITS rates and the underlying NITS revenue 
+16 
+requirements. Under this approach, Eligible Customers taking Firm Contract Demand 
+17 
+Service will pay the same base charge per MW as NITS customers, except that, unlike 
+18 
+NITS customers, their applicable billing determinant will be their specified firm contract 
+19 
+demand. The transmission charge for a Firm Contract Demand Service customer will be 
+20 
+calculated by multiplying: (i) the customer’s firm contract demand amount (in MWs) by 
+21 
+(ii) the applicable zonal NITS rate.   
+22
+--- PAGE 6 ---
+Exhibit No. PTO-0001 
+Page 6 of 39 
+In zones with formula transmission rates, the single annual rate applicable to both 
+1 
+NITS and Firm Contract Demand Service customers will be established in the same manner 
+2 
+as NITS rates are today.6 This rate will be calculated based on each transmission owner’s 
+3 
+annual net revenue requirement, as determined pursuant to the formula rates contained in 
+4 
+Attachment H to the PJM Tariff, divided by the single zonal coincident peak load, which 
+5 
+will include NITS customer load, the total contract demand for all Firm Contract Demand 
+6 
+Service customers, and load associated with interim, non-firm transmission service.7 This 
+7 
+will result in a single $/MW-year rate that will apply to both NITS and Firm Contract 
+8 
+Demand Service customers.   
+9 
+Eligible Customers will also pay a Grid Reliance Charge for the portion of their 
+10 
+remaining on-site load not covered by Firm Contract Demand Service. The Grid Reliance 
+11 
+Charge is discussed in further detail below.   
+12 
+The procedures for establishing zonal NITS/Firm Contract Demand transmission 
+13 
+service rates and updating the underlying annual revenue requirements will remain 
+14 
+unchanged, and Firm Contract Demand Service customers will be treated the same as NITS 
+15 
+customers under each PJM Transmission Owner’s formula rate protocols.   
+16 
+A detailed example showing how the Firm Contract Demand Service rate and other 
+17 
+charges associated with the new services will be calculated is set forth below. 
+18 
+6
+A handful of PJM transmission owners continue to utilize stated rates, which in some cases are based on 
+black-box settlements, which may need to be accounted for in specific stated rates for the new firm and non-firm 
+contract demand services. 
+7
+Any changes to a transmission owner’s procedure for assigning a Network Service Peak Load (“NSPL”) tag 
+to a Load Serving Entity (“LSE”) may need to be addressed in a future filing.
+--- PAGE 7 ---
+Exhibit No. PTO-0001 
+Page 7 of 39 
+Q. 
+Why are the PJM Transmission Owners proposing to base the rate for Firm Contract 
+1 
+Demand Service on the NITS rate, as opposed to the firm Point-to-Point rate or some 
+2 
+other rate? 
+3 
+A. 
+[Blazunas] The PJM Transmission Owners are proposing to charge the same rate for Firm 
+4 
+Contract Demand Service and NITS because the level of service provided to both 
+5 
+customers is, for all relevant purposes, the same. Both NITS and Firm Contract Demand 
+6 
+Service are firm services for which Network Upgrades will be planned and constructed as 
+7 
+necessary, with the only difference being that upgrades for NITS customers are identified 
+8 
+based on anticipated load growth while upgrades for Firm Contract Demand Service 
+9 
+customers will be identified based on their contracted demand level. Firm Contract 
+10 
+Demand Service customers will be able to serve their contracted demand through capacity 
+11 
+procured by PJM just like NITS customers and will not be required to designate specific 
+12 
+points of receipt and delivery.   
+13 
+There is no need or benefit to utilizing existing Firm Point-to-Point Service 
+14 
+(“PTPS”) rates. Firm PTPS rates are generally based on the same revenue requirement as 
+15 
+the NITS rate, and the nature of Firm Contract Demand Service as contemplated in the 
+16 
+Order is essentially a variation of NITS service with a specified contract demand level. The 
+17 
+Firm Contract Demand Service customer will be serving its full contract demand from all 
+18 
+resources on the grid, not on a point-to-point basis. Consequently, PJM will treat Firm 
+19 
+Contract Demand Service load during system emergencies in the same manner as load 
+20 
+using NITS, thus providing service to the Firm Contract Demand Service load on a 
+21 
+comparable basis with NITS load. Furthermore, Firm Contract Demand transmission 
+22 
+Service will enjoy the same firmness as NITS load, as well as the same ability to make use 
+23
+--- PAGE 8 ---
+Exhibit No. PTO-0001 
+Page 8 of 39 
+of PJM resources to serve their full contract demand and ensure guaranteed grid energy 
+1 
+delivery. Given the similarities between NITS and Firm Contract Demand Service, it would 
+2 
+be inappropriate to charge Firm Contract Demand Service customers a rate lower than one 
+3 
+based on the NITS rate because doing so would result in subsidizing these customers at the 
+4 
+expense of other ratepayers.    
+5 
+Finally, in PJM, PTPS is generally only utilized for purposes of service at the PJM 
+6 
+border. That will not be the case for Co-Located Load customers taking Firm Contract 
+7 
+Demand Service to serve their on-site, contract demand within PJM. Basing the rate for 
+8 
+Firm Contract Demand Service on the zonal NITS rate also has the advantage of 
+9 
+minimizing changes to current PJM billing and settlements practices. As it does for NITS 
+10 
+now, for Firm Contract Demand Service, PJM will perform the billing function for 
+11 
+transmission, capacity, and energy charges, while electric distribution companies will 
+12 
+perform their current roles of submitting the metrics that PJM uses to calculate those 
+13 
+charges, such as customers’ peak load share information.  
+14 
+Q. 
+Do the PJM Transmission Owners have suggestions regarding interconnection 
+15 
+requirements or operational practices that are necessary for an Eligible Customer to 
+16 
+take Firm Contract Demand Service on behalf of Co-Located Load? 
+17 
+A. 
+[Hammer] Yes. The PJM Transmission Owners have identified several requirements and 
+18 
+operational considerations that are necessary to ensure the reliable operation of the Bulk 
+19 
+Electric System and consistency with established planning and operational practices. In 
+20 
+particular, the provision of Firm Contract Demand Service on behalf of Co‑Located Load 
+21 
+should be conditioned on demonstrating that such load is physically and operationally 
+22 
+capable of being managed in a manner consistent with its firm service designation.  
+23
+--- PAGE 9 ---
+Exhibit No. PTO-0001 
+Page 9 of 39 
+Accordingly, the PJM Transmission Owners recommend the Commission adopt 
+1 
+requirements that may include, among other things: (1) compliance with applicable 
+2 
+interconnection requirements, including the ability to control and measure load consistent 
+3 
+with PJM operating needs; (2) demonstrated capability to respond to curtailment or 
+4 
+operational instructions, including the ability to reduce or interrupt loads as necessary to 
+5 
+support system reliability; and (3) adherence to defined operating practices, including 
+6 
+telemetry, metering, and communications requirements necessary for real‑time monitoring 
+7 
+and control.  
+8 
+In addition, further consideration may also be warranted in a transmission 
+9 
+constrained area where a significant amount of Co-Located Load taking Firm Contract 
+10 
+Demand Service relies on operational controls, such as Special Protection Schemes 
+11 
+(“SPS”) and Remedial Action Schemes (“RAS”), to curtail load back to the level of 
+12 
+contract demand following the loss of on-site generation. In such circumstances, customers 
+13 
+may be required to either take a higher level of contract demand or to take NITS for their 
+14 
+gross load, because the risk of simultaneous SPS/RAS failure in the local area may be 
+15 
+elevated and could result in cascading grid failure.   
+16 
+Q. 
+What are appropriate mechanisms for an anti-toggling feature for Firm Contract 
+17 
+Demand Service? 
+18 
+A. 
+[Blazunas] Pursuant to the Order, Firm Contract Demand Service will have a minimum 
+19 
+term of one year. However, as the Commission recognized, there are concerns regarding a 
+20 
+customer’s ability to toggle between firm and non-firm service levels.8 There also is a 
+21 
+concern that Firm Contract Demand Service customers will cause the need for transmission 
+22 
+8
+Order at P 213.
+--- PAGE 10 ---
+Exhibit No. PTO-0001 
+Page 10 of 39 
+upgrades and capacity resource procurement to accommodate their Firm Contract Demand 
+1 
+Service and then exit the system, thereby shifting costs to other customers.9 To partially 
+2 
+address these concerns, the PJM Transmission Owners recommend a five-year minimum 
+3 
+commitment period for Firm Contract Demand Service, consistent with the five-year 
+4 
+minimum commitment noted by the Commission for loads seeking to procure their own 
+5 
+capacity.10
+6 
+Q. 
+Do the PJM Transmission Owners have a proposal with respect to notice obligations? 
+7 
+A. 
+[Blazunas] Yes. With respect to notice obligations, the PJM Transmission Owners suggest 
+8 
+that the Commission adopt the same requirements that currently apply to notices of 
+9 
+termination for NITS under Section 2.5 of the PJM Tariff.11
+10 
+B. 
+Non-Firm Contract Demand Transmission Service 
+11 
+Q. 
+What is Non-Firm Contract Demand transmission service?   
+12 
+A.   
+[Blazunas] Under the Order, the Commission established a new Non-Firm Contract 
+13 
+Demand transmission service (“Non-Firm Contract Demand Service”) to be offered to 
+14 
+Eligible Customers taking service on behalf of Co-Located Loads. This new service will 
+15 
+permit Eligible Customers taking service on behalf of such loads to seek to withdraw 
+16 
+9
+Id. at P 213.   
+10
+Id. 
+11
+PJM Tariff, Section 2.5 (“Although Regional Network Integration Service is presumed to continue without 
+expiration, it may be terminated where:  
+1)
+An incumbent Network Customer will be replaced by a successor Network Customer, in which case the 
+incumbent’s service shall only terminate if the successor agrees to commence the taking of service, the 
+appropriate service agreement is executed, and all other applicable terms and conditions of the PJM 
+Governing Agreements are satisfied; 
+2)
+An incumbent Network Customer seeks to terminate its service and no successor Network Customer 
+exists, in which case the incumbent must provide PJM with forty-two (42) months’ notice prior to the 
+commencement of a Delivery Year, subject to receiving all necessary regulatory approvals for such 
+termination, if any; or  
+3)
+On such other date mutually agreed upon by the parties.”).
+--- PAGE 11 ---
+Exhibit No. PTO-0001 
+Page 11 of 39 
+energy from the transmission system from time to time when transmission capacity is 
+1 
+available and not needed by firm customers.12
+2 
+Pursuant to the Order, the new Non-Firm Contract Demand Service will be 
+3 
+available during normal operations and curtailed during emergency operations (i.e., it will 
+4 
+be curtailed before existing firm transmission services and the new Firm Contract Demand 
+5 
+Service). Under this service, Eligible Customers may reserve transmission service on 
+6 
+behalf of a Co-Located Load as needed during normal, non-emergency system operating 
+7 
+conditions.   
+8 
+As specified in the Order, reservations for Non-Firm Contract Demand Service will 
+9 
+be permitted only when there is available transmission capacity, similar to existing non-
+10 
+firm transmission service options in the PJM Tariff. Moreover, reservations will be 
+11 
+available for terms ranging from one hour to one month, consistent with the terms available 
+12 
+for non-firm PTPS currently in the PJM Tariff. Finally, Eligible Customers may use Non-
+13 
+Firm Contract Demand Service to make use of the transmission system above their Firm 
+14 
+Contract Demand Service level, if transmission capacity is available.13
+15 
+Q. 
+What is the PJM Transmission Owners’ proposed rate design for the new Non-Firm 
+16 
+Contract Demand Service? 
+17 
+A. 
+[Blazunas] As with Firm Contract Demand Service, the PJM Transmission Owners 
+18 
+propose that the rate design for Non-Firm Contract Demand Service be based on zonal 
+19 
+NITS rates in PJM. Under this approach, the maximum rate for Non-Firm Contract 
+20 
+Demand Service on behalf of Co-Located Load will be calculated by multiplying (i) their 
+21 
+12
+Order at P 214. 
+13
+Id. at P 215.
+--- PAGE 12 ---
+Exhibit No. PTO-0001 
+Page 12 of 39 
+reserved, non-firm contract demand amount (in MWs) by (ii) the applicable zonal NITS 
+1 
+rate. In the same manner as non-firm PTPS today, PJM will have the ability to offer a 
+2 
+discount off of this maximum rate based on rules and criteria established by the PJM 
+3 
+Transmission Owners. 
+4 
+Finally, as with Firm Contract Demand transmission service, Eligible Customers 
+5 
+taking Non-Firm Contract Demand Service also will pay a Grid Reliance Charge 
+6 
+representing the remaining on-site load not covered by either Firm Contract Demand 
+7 
+Service or Non-Firm Contract Demand Service. The base rate for Non-Firm Contract 
+8 
+Demand Service is adjusted to reflect the impact of the Grid Reliance Charge in order to 
+9 
+prevent double-recovery. The Grid Reliance Charge is discussed in further detail below. 
+10 
+A detailed example of the calculation of the Non-Firm Contract Demand Service 
+11 
+rate and other new service charges is set forth below.  
+12 
+Q. 
+Why is it appropriate to use the same rate for Firm Contract Demand Service to 
+13 
+establish the maximum rate for the Non-Firm Contract Demand Service? 
+14 
+A. 
+[Blazunas] For the reasons outlined above with respect to Firm Contract Demand Service, 
+15 
+using the applicable zonal NITS rate to establish the base rate for Non-Firm Contract 
+16 
+Demand Service is appropriate. In addition, using the same maximum base rate for Firm 
+17 
+Contract Demand Service and Non-Firm Contract Demand Service is just and reasonable. 
+18 
+The Commission has traditionally permitted non-firm PTPS to be priced up to (but not 
+19 
+above) the rate used for firm PTPS,14 and many transmission owners have identical 
+20 
+14
+See Promoting Wholesale Competition Through Open Access Non-Discriminatory Transmission Servs. by 
+Pub. Utils.; Recovery of Stranded Costs by Pub. Utils. and Transmitting Utils., Order No. 888, FERC Stats. & Regs. 
+¶ 31,036, at 31,780 (1996) (cross-referenced at 75 FERC ¶ 61,080) (noting the importance of allowing pricing 
+flexibility and indicating that the non-firm rate is capped at the firm rate), on reh’g, Order No. 888-A, FERC Stats. & 
+Regs. ¶ 31,048 (cross-referenced at 78 FERC ¶ 61,220), on reh’g, Order No. 888-B, 81 FERC ¶ 61,248 (1997), on
+--- PAGE 13 ---
+Exhibit No. PTO-0001 
+Page 13 of 39 
+maximum base rates for firm and non-firm service, including in PJM. Also, Non-Firm 
+1 
+Contract Demand Service will represent a superior level of service compared to non-firm 
+2 
+PTPS because pursuant to PJM’s proposed operational procedures, Non-Firm Contract 
+3 
+Demand Service customers will have the benefit of PJM re-dispatching generation prior to 
+4 
+curtailing Non-Firm Contract Demand Service. Combined with the additional flexibility 
+5 
+that Non-Firm Contract Demand Service customers will have with respect to arranging and 
+6 
+scheduling Non-Firm Contract Demand Service, and the fact that Non-Firm Contract 
+7 
+Demand Service customers will not pay for generation capacity,15 it is just and reasonable 
+8 
+to set the maximum Non-Firm Contract Demand Service rate equal to the rate for Firm 
+9 
+Contract Demand Service customers on a $/MWh basis.16
+10 
+Q. 
+Under what circumstances would the PJM Transmission Owners offer a discount for 
+11 
+Non-Firm Contract Demand Service? 
+12 
+A. 
+[Blazunas] First, under the current PJM Tariff, maximum rates for non-firm PTPS are set 
+13 
+equal to rates for firm PTPS, although PJM has the ability to offer discounts for Non-Firm 
+14 
+PTPS subject to certain requirements, and based on rules and criteria established by the 
+15 
+PJM Transmission Owners.17 The PJM Transmission Owners propose a similar flexibility 
+16 
+reh’g, Order No. 888-C, 82 FERC ¶ 61,046 (1998), aff’d in relevant part sub nom., Transmission Access Pol’y Study 
+Grp., v. FERC, 225 F.3d 667 (D.C. Cir. 2000), aff’d sub nom., N.Y. v. FERC, 535 U.S. 1 (2002).
+15
+See Order at P 218 (“The new Non-Firm Contract Demand transmission service will not include a charge for 
+generation capacity.”). 
+16
+This would be comparable to the rules the Commission established in Order No. 888 with respect to the 
+relationship between firm and non-firm point-to-point transmission service rate. See Order No. 888 at 31,780. 
+17
+Schedules 7 and 8 of the PJM Tariff state: 
+[t]hree principal requirements apply to discounts for transmission service as follows: (1) any offer 
+of a discount made by the Transmission Provider must be announced to all Eligible Customers solely 
+by posting on the OASIS, (2) any customer-initiated requests for discounts (including requests for 
+use by one’s wholesale merchant or an Affiliate’s use) must occur solely by posting on OASIS, and 
+(3) once a discount is negotiated, details must be immediately posted on the OASIS. For any 
+discount agreed upon for service on a path, from point(s) of receipt to point(s) of delivery, the
+--- PAGE 14 ---
+Exhibit No. PTO-0001 
+Page 14 of 39 
+for Non-Firm Contract Demand Service. The Commission directed the implementation of 
+1 
+a Non-Firm Contract Demand Service to act as a limited supplemental service that may be 
+2 
+needed for the benefit of Firm Contract Demand Service customers to ensure that such 
+3 
+customers can serve on-site load, for instance, when its on-site generator is on outage, but 
+4 
+not as a substitute for Firm Contract Demand Service. Also relevant is the fact that the 
+5 
+historical purpose of a discount on non-firm transmission service is to encourage the 
+6 
+efficient use of the transmission system – i.e., to ensure that the system is being utilized 
+7 
+optimally. Before determining whether a discount is appropriate, and at what level it should 
+8 
+be set, it is necessary for the PJM Transmission Owners to gather data on how Non-Firm 
+9 
+Contract Demand Service customers are utilizing the service, taking into account the 
+10 
+intended purposes of the service, and the effect of that utilization on the system. 
+11 
+Accordingly, the PJM Transmission Owners will consider on a going-forward basis 
+12 
+whether a discount is appropriate for Non-Firm Contract Demand Service based on system 
+13 
+conditions and use patterns and, if so, the criteria and limits under which PJM will apply 
+14 
+the discount. 
+15 
+It is worth re-emphasizing that Non-Firm Contract Demand Service will represent 
+16 
+a superior level of service compared to non-firm PTPS because Non-Firm Contract 
+17 
+Demand Service customers will have the benefit of PJM re-dispatching generation prior to 
+18 
+their curtailment based on PJM’s proposed operational procedures. Non-Firm Contract 
+19 
+Demand Service customers will also have additional flexibility with respect to arranging 
+20 
+and scheduling their service and will not pay for generation capacity.   
+21 
+Transmission Provider must offer the same discounted transmission service rate for the same time 
+period to all Eligible Customers on all unconstrained transmission paths that go to the same point(s) 
+of delivery on the Transmission System.
+--- PAGE 15 ---
+Exhibit No. PTO-0001 
+Page 15 of 39 
+Any discount offered for Non-Firm Contract Demand Service would be offered by 
+1 
+PJM based on rules and  criteria established by the PJM Transmission Owners designed to 
+2 
+incentivize the efficient use of Non-Firm Contract Demand Service and the transmission 
+3 
+system.  
+4 
+Q. 
+How do the PJM Transmission Owners propose to treat the revenues received from 
+5 
+Non-Firm Contract Demand Service charges? 
+6 
+A. 
+[Blazunas] To ensure against double recovery, all revenues received from Non-Firm 
+7 
+Contract Demand Service charges will be credited to NITS and Firm Contract Demand 
+8 
+Service customers based on their share of the coincident peak load, inclusive of the contract 
+9 
+demand associated with Firm Contract Demand Service, of the zone where the Co-Located 
+10 
+Load is physically located. These credits will reduce the total transmission costs for these 
+11 
+customers, and ensure that these customers, who pay rates based on all of the costs of the 
+12 
+transmission system, receive the credits associated with Non-Firm Contract Demand 
+13 
+Service customers’ use of excess capacity on that system. The credits will be applied to 
+14 
+NITS and Firm Contract Demand Service customers through their PJM bills. This will 
+15 
+minimize or eliminate the need for the PJM Transmission Owners to modify their formula 
+16 
+rates. 
+17 
+C. 
+Interim, Non-Firm Transmission Service 
+18 
+Q. 
+What is interim, non-firm transmission service?  
+19 
+A.  
+[Blazunas] Under the Order, interim, non-firm transmission service, also sometimes 
+20 
+referred to as “Interim NITS,” allows an Eligible Customer that has requested NITS on 
+21 
+behalf of a Co-Located Load to take non-firm transmission service that can be interrupted 
+22 
+until the network upgrades necessary to provide NITS are complete and the Co-Located 
+23
+--- PAGE 16 ---
+Exhibit No. PTO-0001 
+Page 16 of 39 
+Load can be designated as network load. Interim, non-firm transmission service is 
+1 
+temporary. That is, it is only available to Eligible Customers that have requested NITS on 
+2 
+behalf of Co-Located Loads that cannot yet be reliably served with NITS, and it is available 
+3 
+only until the necessary network upgrades are completed and the Co-Located Load is 
+4 
+designated as network load. Moreover, this new service is optional for an Eligible 
+5 
+Customer seeking NITS on behalf of a Co-Located Load and is available only to the extent 
+6 
+PJM determines that it can provide some level of interim service reliably.18
+7 
+Q. 
+What is the PJM Transmission Owners’ proposed rate design for the new interim, 
+8 
+non-firm transmission service? 
+9 
+A. 
+[Blazunas] The PJM Transmission Owners propose that the rate design for interim, non-
+10 
+firm transmission service be based on the full, zonal NITS rates, as permitted under the 
+11 
+Order.19 Under this approach, Eligible Customers taking interim, non-firm transmission 
+12 
+service will pay a transmission service charge calculated by multiplying: (i) their measured 
+13 
+demand amount (in MWs) multiplied by (ii) the applicable zonal NITS rate. The measured 
+14 
+demand amount will be the MW level that PJM determines the transmission system can 
+15 
+reliably support under all pre-upgrade operating conditions. 
+16 
+Charging the full, zonal NITS rate is consistent with the Order, which stated that 
+17 
+interim, non-firm transmission service would be charged the NITS rate.20 Essentially, 
+18 
+interim, non-firm transmission service is a temporary, “speed-to-market” tool that allows 
+19 
+18
+Order at P 200. 
+19
+Id. at P 200. 
+20
+Id.
+--- PAGE 17 ---
+Exhibit No. PTO-0001 
+Page 17 of 39 
+a Co-Located Load project to energize on an as-available basis while permanent, necessary 
+1 
+transmission upgrades are in the PJM queue.   
+2 
+V. 
+GRID RELIANCE CHARGE 
+3 
+Q. 
+Above, you explained that Eligible Customers taking Firm Contract Demand Service 
+4 
+and Non-Firm Contract Demand Service also will pay a Grid Reliance Charge.  Please 
+5 
+explain that charge.   
+6 
+A. 
+[Schafer] As contemplated under the Order, the PJM Transmission Owners are proposing 
+7 
+to include a Grid Reliance Charge as part of the charges associated with the new Co-
+8 
+Located Load terms and conditions under the PJM Tariff. The intent of the Grid Reliance 
+9 
+Charge is to reflect the inherent benefits that Firm Contract Demand Service and Non-Firm 
+10 
+Contract Demand Service customers receive as a result of their reliance upon the grid. It is 
+11 
+designed to recover the costs of delivering ancillary services, including the delivery of 
+12 
+black start and regulation, and providing synchronization and grid reliance support, thereby 
+13 
+ensuring Co‑Located Loads pay their appropriate share of the transmission system that they 
+14 
+rely on regardless of whether they withdraw energy from the grid. The Grid Reliance 
+15 
+Charge also recognizes the benefits associated with monitoring and other activities that 
+16 
+transmission owners will need to perform associated with the increased number of 
+17 
+protective systems that will be required for Co-Located Load customers.   
+18 
+As the Commission recognized, Co-Located Loads are electrically connected to the 
+19 
+transmission system (not islanded) and therefore benefit from the system and should 
+20 
+contribute to the ongoing operation and maintenance of the transmission system, consistent 
+21 
+with foundational cost causation principles. Commissioner Chang’s concurrence to the 
+22 
+Order stressed the need for a minimum charge for the two new contract demand services.  
+23
+--- PAGE 18 ---
+Exhibit No. PTO-0001 
+Page 18 of 39 
+The Commissioner noted that a customer selecting a de minimis contract demand could 
+1 
+pay almost nothing despite its continuous reliance on the grid. 
+2 
+Even with a zero MW contract demand, a large Co‑Located Load still depends on 
+3 
+the grid for the delivery of various ancillary services and a suite of synchronization support 
+4 
+services, such as a stable frequency, inertia, stability services (damping, angle stability), 
+5 
+fault current capability, and ride-through and protection coordination. For example, adding 
+6 
+a 1,000 MW load to the transmission system inherently imposes electrical impacts at the 
+7 
+point of interconnection and beyond. In summary, zero net withdrawals are not indicative 
+8 
+of a load’s actual reliance on the grid. And, of course, a large Co-Located Load, such as a 
+9 
+data center, would not be interested in locating in PJM if the system did not also support 
+10 
+an extensive network of customers and communications infrastructure. 
+11 
+Q. 
+What is the PJM Transmission Owners’ proposed rate design for the new Grid 
+12 
+Reliance Charge? 
+13 
+A. 
+[Schafer] The PJM Transmission Owners propose to apply a new Grid Reliance Charge 
+14 
+rate to an Eligible Customer’s gross on-site load not covered by Firm Contract Demand 
+15 
+Service.21 Practically speaking, this means that Firm Contract Demand Service customers 
+16 
+will pay the full zonal NITS/Firm Contract Demand rate on their Firm Contract Demand 
+17 
+and the Grid Reliance Charge rate on the difference between their gross load and their Firm 
+18 
+Contract Demand. This approach is reasonable because it recognizes the fact that Firm 
+19 
+Contract Demand Service customers are already paying for the services recovered via the 
+20 
+Grid Reliance Charge through the full zonal NITS rate assessed on their Firm Contract 
+21 
+21
+A handful of PJM transmission owners continue to utilize stated rates, which in some cases are based on 
+black-box settlements and may need to be accounted for in specific stated rates for the new firm and non-firm contract 
+demand services.  This also applies to the Grid Reliance Charge.
+--- PAGE 19 ---
+Exhibit No. PTO-0001 
+Page 19 of 39 
+Demand. Consequently, the Grid Reliance Charge rate only needs to be assessed on any 
+1 
+incremental gross load in excess of their Firm Contract Demand. Eligible Customers taking 
+2 
+only Non-Firm Contract Demand Service would pay the Grid Reliance Charge on their 
+3 
+entire load, but as noted above, the Non-Firm Contract Demand Service rate is calculated 
+4 
+so as to remove the Grid Reliance Charge, so there will be no double-charging of Non-
+5 
+Firm Contract Demand Service customers. 
+6 
+Q. 
+How do the PJM Transmission Owners propose to calculate the new Grid Reliance 
+7 
+Charge rate? 
+8 
+A. 
+[Schafer] The PJM Transmission Owners propose to calculate the Grid Reliance Charge 
+9 
+rate using a standardized, percentage-based methodology that relies on publicly available 
+10 
+FERC Form No. 1 (“FERC Form 1”) data for PJM Transmission Owners22 to determine 
+11 
+the portion of transmission depreciation and operation and maintenance (“O&M”) expense 
+12 
+associated with grid reliance capability, and then applies that portion (expressed as a 
+13 
+percentage) to each transmission owner’s Attachment H annual transmission revenue 
+14 
+requirement (“TRR”).  
+15 
+The first step in the proposed methodology is to identify transmission plant 
+16 
+accounts and transmission O&M FERC accounts that provide grid reliance capability, 
+17 
+described above as related to: (1) supporting the delivery of ancillary services; and (2) 
+18 
+providing synchronization support required to accommodate the load’s electrical 
+19 
+characteristics. Tables 1 and 2 below summarize the FERC accounts identified as 
+20 
+supporting grid reliance capability: 
+21 
+22
+FERC Form 1 data is publicly available for PJM Transmission Owners, representing approximately 95 
+percent of the total transmission assets in PJM.
+--- PAGE 20 ---
+Exhibit No. PTO-0001 
+Page 20 of 39 
+1 
+Table 1: FERC Accounts Identified as Supporting Grid Reliance Capabilities - Depreciation 
+FERC 
+Account 
+Account Description 
+Basis for Retention 
+Supported Grid Reliance Charge 
+Functions 
+(A) 
+(B) 
+(C)  
+(D) 
+Depreciation Expense Related to the Following Accounts 
+350 
+Land and Land Rights 
+Physical footprint required for 
+substations and transmission 
+facilities.
+352 
+Structures and 
+Improvements 
+Houses essential transmission and 
+control equipment. 
+Control center housing, restoration facilities, 
+AS control rooms, black-start interfaces
+353 
+Station Equipment 
+Core equipment required to energize, 
+synchronize, and control the grid. 
+Synchronization, protection, voltage 
+stability, AS interfaces, regulation & 
+reactive delivery
+354 
+Towers and Fixtures 
+Physical support of energized 
+transmission facilities. 
+Baseline transmission support, AS signal 
+routing, restoration paths
+355 
+Poles and Fixtures 
+Physical support of energized 
+transmission facilities. 
+Baseline transmission support, AS signal 
+routing, restoration paths
+356 
+Overhead Conductors 
+and Devices 
+Primary electrical pathways required 
+for synchronization. 
+Baseline connectivity, control, telemetry, AS 
+signal paths
+357 
+Underground Conduit 
+Primary electrical pathways required 
+for synchronization. 
+Baseline connectivity, control, telemetry, AS 
+signal paths
+358 
+Underground 
+Conductors and 
+Devices
+Primary electrical pathways required 
+for synchronization. 
+Baseline connectivity, control, telemetry, AS 
+signal paths
+359 
+Roads and Trails 
+Allows access to the infrastructure in 
+the above accounts.
+Supports the above-listed functions
+2 
+3 
+4 
+5 
+6 
+7 
+8 
+9 
+10 
+11 
+12
+--- PAGE 21 ---
+Exhibit No. PTO-0001 
+Page 21 of 39 
+1 
+Table 2: FERC Accounts Identified as Supporting Grid Reliance Capabilities - O&M 
+FERC 
+Account 
+Account 
+Description 
+Basis for Retention 
+Supported Grid Reliance 
+Charge Functions 
+(A) 
+(B) 
+(C)  
+(D) 
+Operation and Maintenance Expense From the Following Accounts 
+561 
+Load Dispatch 
+The cost of labor, materials, and expenses incurred in 
+directing the operation of the electric transmission system 
+and dispatching loads.  
+[O&M accounts support the 
+functions identified for the plant 
+accounts]
+562 
+Station Expenses 
+Operation expense required to keep substations energized, 
+protected, and operational. 
+563 
+Overhead Line 
+Expenses 
+Operation necessary to maintain synchronized transmission 
+paths. 
+564 
+Underground Line 
+Expenses 
+Operation expense related to Primary electrical pathways 
+required for synchronization. 
+570 
+Maintenance of 
+Station Equipment 
+Maintenance of Core equipment required to energize, 
+synchronize, and control the grid. 
+571 
+Maintenance of 
+Overhead Lines 
+Maintenance of Primary electrical pathways required for 
+synchronization. 
+572 
+Maintenance of 
+Underground Lines 
+Maintenance of Primary electrical pathways required for 
+synchronization. 
+2 
+In the second step, for the identified transmission plant accounts and transmission 
+3 
+O&M accounts, FERC Form 1 data is used to calculate the percentage of Grid Reliance 
+4 
+Charge-related depreciation and O&M expenses by summing 100 percent of the expense 
+5 
+associated with each identified account and then dividing by the category total. FERC 
+6 
+accounts 561-564 and 570-572 are identified as Grid Reliance Charge-related O&M 
+7 
+accounts, and the amounts in those accounts will be summed and then divided by the total 
+8 
+Transmission O&M amount from the FERC Form 1 to derive the percentage of Grid 
+9 
+Reliance Charge-related O&M.23 FERC accounts 350-359 are identified as Grid Reliance 
+10 
+Charge-related plant accounts. These accounts constitute 100 percent of the transmission 
+11 
+23
+Note that the O&M percentage calculations will include the removal of Account 565 – Transmission of 
+Electricity by Others, consistent with the treatment of this account in Attachment H.
+--- PAGE 22 ---
+Exhibit No. PTO-0001 
+Page 22 of 39 
+depreciation category. Therefore, 100 percent is used as the appropriate percentage of 
+1 
+transmission depreciation to include in the calculation.  
+2 
+These percentages are developed exclusively from FERC Form 1 account-level 
+3 
+data. Account balances are either included in full or excluded in full. This ensures that the 
+4 
+percentage calculations are transparent, replicable, and based entirely on recorded 
+5 
+accounting data.   
+6 
+In the third step, the FERC Form 1-developed percentages are applied to the 
+7 
+transmission depreciation expense and transmission O&M expense reported in the 
+8 
+transmission owner’s annual TRR filing, Attachment H. The sum of the resulting Grid 
+9 
+Reliance Charge-related depreciation and O&M amounts constitutes the Grid Reliance 
+10 
+Charge revenue requirement. Note that only amounts directly related to the transmission 
+11 
+portions of depreciation and O&M are included in this calculation. Amortization and 
+12 
+general-plant depreciation are not included in the depreciation calculation. Likewise, 
+13 
+Administrative and General expenses are not included in the O&M calculation.  
+14 
+In the fourth step, the Grid Reliance Charge revenue requirement is divided by the 
+15 
+net revenue requirement from the transmission owner’s TRR, Attachment H to derive a 
+16 
+Grid Reliance Charge percentage of the net revenue requirement. This Grid Reliance 
+17 
+Charge percentage is calculated as described above for all PJM Transmission Owners.  
+18 
+Finally, the average of all the PJM Transmission Owners’ calculated Grid Reliance 
+19 
+Charge percentages is taken. This average Grid Reliance Charge percentage will be used 
+20 
+in the calculation of all the PJM Transmission Owners’ Grid Reliance Charge calculations 
+21 
+and employed in the following manner to derive the final Grid Reliance Charge rate. First, 
+22 
+the average Grid Reliance Charge percentage will be applied to a transmission owner’s 
+23
+--- PAGE 23 ---
+Exhibit No. PTO-0001 
+Page 23 of 39 
+NITS rate to determine the initial Grid Reliance Charge rate. Second, this initial Grid 
+1 
+Reliance Charge rate must be adjusted to account for the difference between the measure 
+2 
+of demand used to calculate the NITS rate (i.e., NITS customer load at zonal peak plus 
+3 
+contract demand for Firm Contract Demand Service) and the appropriate measure of 
+4 
+demand used to design the final Grid Reliance Charge rate.  
+5 
+The Grid Reliance Charge will apply to the difference between the customers’ gross 
+6 
+load and firm contract demand for Firm Contract Demand Service and Non-Firm Contract 
+7 
+Demand Service customers. Consequently, the appropriate measure of demand to use to 
+8 
+design the Grid Reliance Charge should include this additional load above Firm Contract 
+9 
+Demand. Therefore, the final step in the development of the Grid Reliance Charge rate is 
+10 
+to multiply the initial Grid Reliance Charge rate by a ratio equal to the demand used to 
+11 
+calculate NITS divided by the demand equal to that used to calculate NITS plus the 
+12 
+additional load above Firm Contract Demand. This will reduce the initial Grid Reliance 
+13 
+Charge rate and ensure that the Grid Reliance Charge does not over-recover from Firm 
+14 
+Contract Demand and Non-Firm Contract Demand Service customers.  
+15 
+In summary, the proposed methodology for the calculation of the Grid Reliance 
+16 
+Charge rate uses FERC Form 1 data to identify the relative share of depreciation and O&M 
+17 
+that supports grid reliance, translates that share to the Attachment H revenue-requirement 
+18 
+framework, and expresses it as a standardized percentage of the total transmission revenue 
+19 
+requirement. That percentage is then applied consistently across transmission owners to 
+20 
+develop the Grid Reliance Charge rate.   
+21 
+An exhibit that calculates the Grid Reliance Charge percentage for a single 
+22 
+transmission owner according to the methodology described above is provided as Exhibit 
+23
+--- PAGE 24 ---
+Exhibit No. PTO-0001 
+Page 24 of 39 
+No. PTO-0003. Furthermore, the exhibit provides the average Grid Reliance Charge 
+1 
+percentage for all PJM Transmission Owners, which will be applied to their respective 
+2 
+NITS rates in order to calculate their individual Grid Reliance Charges. The initial 
+3 
+percentage is 25.8 percent, subject to adjustment as discussed below. 
+4 
+Q. 
+Do the PJM Transmission Owners recommend that the Grid Reliance Charge be 
+5 
+updated and if so, how frequently? 
+6 
+A. 
+[Schafer] Yes. The PJM Transmission Owners propose that the resulting average Grid 
+7 
+Reliance Charge percentage be updated approximately every five years. A five-year term 
+8 
+is reasonable for several reasons. Transmission depreciation rates and O&M structures 
+9 
+change gradually over time; they do not generally fluctuate greatly from year to year. A 
+10 
+multi-year period therefore avoids unnecessary annual recalculations while maintaining 
+11 
+alignment with underlying cost structures. In addition, leaving the percentage in place for 
+12 
+five years promotes rate stability, reduces administrative burden for both utilities and 
+13 
+regulators, and provides customers with predictable charges.  
+14 
+Q. 
+Why is the PJM Transmission Owners proposed Grid Reliance Charge methodology 
+15 
+just and reasonable? 
+16 
+[Schafer] The proposed Grid Reliance Charge methodology is just and reasonable for a 
+17 
+number of reasons. First, the Grid Reliance Charge is intentionally limited to depreciation 
+18 
+and O&M. Depreciation reflects the annualized consumption of the transmission 
+19 
+infrastructure that enables customers to rely on the grid, while O&M reflects the ongoing 
+20 
+expense required to keep that infrastructure functional. By excluding return on rate base 
+21 
+and associated income taxes, the methodology produces a conservative result focused on 
+22 
+cost recovery rather than investment return. This provides transparency, administrative 
+23
+--- PAGE 25 ---
+Exhibit No. PTO-0001 
+Page 25 of 39 
+simplicity, and stability. Second, it relies on publicly reported and audited accounting data 
+1 
+from those PJM Transmission Owners with formula rates that have reported O&M and 
+2 
+depreciation balances associated with assets in service.  This covers the vast majority 
+3 
+(approximately 95 percent) of transmission facilities in PJM. Third, it avoids re-litigating 
+4 
+or recalculating each utility’s rate base, return, or tax components. Fourth, it eliminates the 
+5 
+need for company-specific engineering allocations. Fifth, by expressing the Grid Reliance 
+6 
+Charge as a percentage of the total transmission revenue requirement, it scales 
+7 
+proportionally with each utility’s size and cost structure. Finally, the Grid Reliance Charge-
+8 
+percentage averaging component further promotes administrative efficiency and rate 
+9 
+stability. Individual transmission owners may exhibit modest year-to-year variations in 
+10 
+account structure or expense classification. Averaging the calculated Grid Reliance Charge 
+11 
+percentages across all PJM Transmission Owners smooths those variations, reduces 
+12 
+volatility, and produces a reasonable proxy for the portion of transmission costs attributable 
+13 
+to grid reliance on a regional basis. 
+14 
+Q. 
+How do the PJM Transmission Owners propose to treat the revenues received from 
+15 
+the Grid Reliance Charge? 
+16 
+A. 
+[Schafer] Revenues from the Grid Reliance Charge will be applied as bill credits to 
+17 
+customers receiving service via NITS (including interim, non-firm transmission service) 
+18 
+and Firm Contract Demand Service, thereby reducing total transmission costs for these 
+19 
+customers. This will ensure that the Grid Reliance Charge does not result in a double 
+20 
+recovery for the PJM Transmission Owners or inappropriate cost shifts. The credit will be 
+21 
+applied to the bills of these customers in the zone where the Co-Located Load is physically 
+22 
+connected.   
+23
+--- PAGE 26 ---
+Exhibit No. PTO-0001 
+Page 26 of 39 
+VI. 
+EXAMPLE OF RATE DESIGNS FOR NEW SERVICES 
+1 
+Q. 
+Above you described the rate designs for Firm Contract Demand Service, Non-Firm 
+2 
+Contract Demand Service, and interim, non-firm transmission service. Please provide 
+3 
+an example of how each of these services will be calculated. 
+4 
+A. 
+[Blazunas] An example of the rate designs for each of these three services is provided as 
+5 
+Exhibit No. PTO-0004 and is described below.24
+6 
+First, the transmission rate for Firm Contract Demand Service will be the same rate 
+7 
+as the rate for NITS and interim, non-firm transmission service. Practically speaking, the 
+8 
+calculation of the transmission rate for NITS, interim, non-firm transmission service, and 
+9 
+Firm Contract Demand Service, will be the same as the calculation for NITS currently 
+10 
+except that the divisor in the calculation of the rate will necessarily need to include, in 
+11 
+addition to the measure of the single coincident peak (“CP”) for NITS and interim, non-
+12 
+firm transmission service customers, the firm contract demand associated with Firm 
+13 
+Contract Demand Service. Hence, the rate for NITS, Firm Contract Demand Service, and 
+14 
+interim, non-firm transmission service will be calculated using the net revenue requirement 
+15 
+from the PJM Transmission Owner’s Attachment H divided by the CP, taking into account 
+16 
+all NITS, interim, non-firm transmission service, and Firm Contract Demand Service 
+17 
+demand. Table 3 below shows an example calculation of the transmission rates for NITS, 
+18 
+interim, non-firm transmission service, and Firm Contract Demand Service: 
+19 
+20 
+21 
+24
+The example calculates a maximum rate for Non-Firm Contract Demand Service although, as discussed 
+above, this rate may be discounted, if appropriate.
+--- PAGE 27 ---
+Exhibit No. PTO-0001 
+Page 27 of 39 
+1 
+Table 3: Example Calculation of Transmission Rate for NITS, interim, non-firm transmission service, and Firm 
+Contract Demand Service 
+Component 
+Source/Calculation 
+Amount 
+(a) Gross Revenue Requirement
+$1,000,000,000
+(b) Revenue Credits
+($50,000,000)
+(c) True-Up Adjustment
+($50,000,000)
+(d) Net Revenue Requirement 
+= (a) + (b) + (c) 
+$900,000,000 
+(e) 1 CP – NITS (MW/Year)
+7,250
+(f) 1 CP – interim, non-firm transmission service 
+(MW/Year)
+500 
+(g) Firm Contract Demand – Firm Contract Demand 
+Service (MW/Year)
+2,000 
+(h) Total MW/Year 
+= (e) + (f) + (g) 
+9,750 
+(i) Transmission Rate ($/MW/Year)  
+= (d) ÷ (h) 
+$92,308 
+2 
+As discussed above, the PJM Transmission Owners propose to calculate the Grid 
+3 
+Reliance Charge rate using a standardized, percentage-based methodology that relies on 
+4 
+publicly available FERC Form 1 data to determine the portion of transmission depreciation 
+5 
+and O&M expense associated with grid reliance capability, and then applies that portion 
+6 
+(expressed as a percentage) to each transmission owner’s calculated transmission rate for 
+7 
+NITS, interim, non-firm transmission service, and Firm Contract Demand Service. The 
+8 
+Grid Reliance Charge rate is also adjusted to account for the difference between the 
+9 
+measure of demand used to calculate the transmission rates for NITS, interim, non-firm 
+10 
+transmission service, and Firm Contract Demand Service, and the appropriate measure of 
+11 
+demand used to design the final Grid Reliance Charge rate. Table 4 below shows an 
+12 
+example of the calculation of the Grid Reliance Charge rate: 
+13 
+14 
+15 
+16 
+17
+--- PAGE 28 ---
+Exhibit No. PTO-0001 
+Page 28 of 39 
+1 
+Table 4: Example Calculation of the Grid Reliance Charge 
+Component 
+Source/Calculation 
+Amount 
+(i) Transmission Rate ($/MW/Year) – NITS, 
+interim, non-firm transmission service, and Firm 
+Contract Demand Service
+Table 3, (i) 
+$92,308 
+(j) Grid Reliance Charge Percentage
+25.8%
+(k) Grid Reliance Charge ($/MW/Year) 
+(Unadjusted)
+= (i) x (j) 
+$23,815 
+(l) Total MW/Year (Transmission Service)
+Table 3, (h)
+9,750
+(m) Contract Demand Gross Load in Excess of 
+Firm Contract Demand (MW/Year)
+522 
+(n) Total MW/Year (Transmission Service Plus 
+Contract Demand Gross Load in Excess of Firm 
+Contract Demand)
+= (l) + (m) 
+10,272 
+(o) Ratio of Total MW/Year (Transmission 
+Service) to Total MW/Year (Transmission 
+Service Plus Contract Demand Gross Load in 
+Excess of Firm Contract Demand)
+= (l) ÷ (n) 
+0.9492 
+(p) Grid Reliance Charge ($/MW/Year) 
+= (k) x (o)
+$22,605
+2 
+The revenues received from Firm Contract Demand Service and Non-Firm Contract 
+3 
+Demand Service customers will consequently be returned to NITS, interim, non-firm 
+4 
+transmission service, and Firm Contract Demand Service customers as bill credits on the 
+5 
+basis of the same billing determinants used to design the transmission rate for NITS, 
+6 
+interim, non-firm transmission service, and Firm Contract Demand Service, as shown in 
+7 
+Table 5 below: 
+8 
+9 
+10 
+11 
+12 
+13 
+14
+--- PAGE 29 ---
+Exhibit No. PTO-0001 
+Page 29 of 39 
+1 
+Table 5: Example Calculation of Bill Credits (Grid Reliance Charge) 
+Component 
+Source/Calculation 
+Amount 
+(p) Grid Reliance Charge ($/MW/Year) 
+Table 4, (p)
+$22,605
+(q) Contract Demand (Firm Contract Demand 
+transmission service and Non-Firm Contract 
+Demand Service) Gross Load (MW/Year)
+Table 3, (g) + Table 4, (m) 
+2,522 
+(r) Firm Contract Demand (MW/Year)
+2,000
+(s) Contract Demand Gross Load in Excess of 
+Firm Contract Demand (MW/Year) 
+= (q) – (r) 
+522 
+(t) Grid Reliance Charge Revenue 
+= (p) x (s) 
+$11,799,810 
+(u) Total MW/Year
+Table 3, (h)
+9,750
+(v) Bill Credit ($/MW/Year) 
+= (t) ÷ (u) 
+($1,210) 
+2 
+The maximum rate for Non-Firm Contract Demand Service is calculated as the 
+3 
+same rate for NITS, interim, non-firm transmission service, and Firm Contract Demand 
+4 
+Service exclusive of the Grid Reliance Charge itself, as shown in Table 6 below. As 
+5 
+discussed above, the PJM Transmission Owners will consider whether a discount to the 
+6 
+Non-Firm Contract Demand Service is appropriate upon implementation: 
+7 
+8 
+Table 6: Example Calculation of Transmission Maximum Rate for Non-Firm Contract Demand Service 
+Component 
+Source/Calculation 
+Amount 
+(w) Transmission Rate ($/MW/Year) – NITS, 
+interim, non-firm transmission service, and Firm 
+Contract Demand Service
+Table 3, (i) 
+$92,308 
+(x) Grid Reliance Charge ($/MW/Year) 
+Table 4, (p)
+$22,605
+(y) Transmission Maximum Rate 
+($/MW/Year) – Non-Firm Contract Demand 
+Service 
+= (w) – (x) 
+$69,703 
+9 
+The revenues received from Non-Firm Contract Demand Service customers will 
+10 
+consequently be returned to NITS, interim, non-firm transmission service, and Firm 
+11 
+Contract Demand Service customers as bill credits on the basis of the same billing 
+12
+--- PAGE 30 ---
+Exhibit No. PTO-0001 
+Page 30 of 39 
+determinants used to design the transmission rate for NITS, interim, non-firm transmission 
+1 
+service, and Firm Contract Demand Service, as shown in Table 7 below: 
+2 
+3 
+Table 7: Example Calculation of Bill Credits (Non-Firm Contract Demand Service) 
+Component 
+Source/Calculation 
+Amount 
+(y) Transmission Maximum Rate ($/MW/Year) – 
+Non-Firm Contract Demand Service
+Table 6, (y) 
+$69,703 
+(z) Non-Firm Contract Demand (MW/Year)
+275
+(aa) Non-Firm Contract Demand Service 
+Revenue 
+= (y) x (z) 
+$19,168,325 
+(bb) Total MW/Year
+Table 3, (h)
+9,750
+(cc) Bill Credit ($/MW/Year) 
+= (aa) ÷ (bb) 
+($1,966) 
+4 
+Based on the above, NITS, interim, non-firm transmission service, Firm Contract 
+5 
+Demand Service, and Non-Firm Contract Demand Service customers would pay rates for 
+6 
+transmission service as shown in Table 8 below: 
+7 
+8 
+Table 8: Example Rates for NITS, interim, non-firm transmission service, Firm Contract Demand Service, and 
+Non-Firm Contract Demand Service 
+Component 
+Source/Calculation 
+Billing Determinant 
+Amount 
+(dd) NITS – Transmission Service 
+($/MW/Year)
+Table 3, (i) 
+Per MW/Year (1CP) 
+$92,308 
+(ee) Grid Reliance Charge Bill 
+Credit ($/MW/Year)
+Table 5, (v) 
+Per MW/Year (1CP) 
+($1,210) 
+(ff) Non-Firm Contract Demand 
+Service Bill Credit ($/MW/Year)
+Table 7, (cc) 
+Per MW/Year (1CP) 
+($1,966) 
+(gg) NITS - Transmission Service 
+($/MW/Year) (Effective Rate)  
+= (dd) + (ee) + (ff) 
+Per MW/Year (1CP)
+$89,132 
+(hh) interim, non-firm transmission 
+service – Transmission Service 
+($/MW/Year)
+Table 3, (i)
+Per MW/Year (1CP) 
+$92,308
+(ii) Grid Reliance Charge Bill 
+Credit ($/MW/Year)
+Table 5, (v) 
+Per MW/Year (1CP) 
+($1,210) 
+(jj) Non-Firm Contract Demand 
+Service Bill Credit ($/MW/Year)
+Table 7, (cc) 
+Per MW/Year (1CP) 
+($1,966) 
+(kk) interim, non-firm 
+transmission service – 
+Transmission Service 
+($/MW/Year) (Effective Rate) 
+= (hh) + (ii) + (jj)
+Per MW/Year (1CP)
+$89,132
+--- PAGE 31 ---
+Exhibit No. PTO-0001 
+Page 31 of 39 
+(ll) Firm Contract Demand Service 
+– Transmission Service 
+($/MW/Year)
+Table 3, (i)
+Per MW/Year (Firm 
+Contract Demand) 
+$92,308
+(mm) Grid Reliance Charge Bill 
+Credit ($/MW/Year)
+Table 5, (v)
+Per MW/Year (Firm 
+Contract Demand)
+($1,210)
+(nn) Non-Firm Contract Demand 
+Service Bill Credit ($/MW/Year)
+Table 7, (cc)
+Per MW/Year (Firm 
+Contract Demand)
+($1,966)
+(pp) Firm Contract Demand 
+transmission service – 
+Transmission Service 
+($/MW/Year) (Effective Rate) 
+= (ll) + (mm) + (nn) 
+Per MW/Year (Firm 
+Contract Demand)
+$89,132 
+(oo) Firm Contract Demand Service 
+– Grid Reliance Charge 
+($/MW/Year)
+Table 4, (p) 
+Per MW/Year (Gross Load 
+in Excess of Firm Contract 
+Demand)
+$22,605 
+(pp) Non-Firm Contract Demand 
+Service – Transmission Service 
+($/MW/Year)25
+Table 6, (y)
+MW/Year (Non-Firm 
+Contract Demand) 
+$69,703
+(qq) Non-Firm Contract Demand 
+Service – Grid Reliance Charge 
+($/MW/Year)
+Table 4, (p) 
+Per MW/Year (Gross Load 
+in Excess of Firm Contract 
+Demand)
+$22,605 
+1 
+As demonstrated above, based on the proposed rate designs, customers taking NITS, 
+2 
+interim, non-firm transmission service, and Firm Contract Demand Service pay the same effective 
+3 
+base rates for transmission service. Firm Contract Demand Service customers only pay the Grid 
+4 
+Reliance Charge on their gross load in excess of their firm contract demand.  
+5 
+VII. 
+PENALTY CHARGE 
+6 
+Q. 
+Are the PJM Transmission Owners proposing new penalty charges? 
+7 
+A. 
+[Hammer] No, not at this time. I understand that PJM intends to propose operational 
+8 
+penalties, and I agree the imposition of such penalties is appropriate. The PJM 
+9 
+Transmission Owners believe that any penalty regime should rely on both operational 
+10 
+consequences as well as complementary financial penalties. The PJM Transmission 
+11 
+Owners understand that, at a high level, PJM’s proposal would be to refer to FERC 
+12 
+enforcement or applicable reliability organizations any failure to comply with PJM 
+13 
+25
+Consistent with the Order, Non-Firm Contract Demand Service would be available for terms from one hour 
+to one month, and rates for these terms would be calculated based on the annual rate.  Id. at P 215.
+--- PAGE 32 ---
+Exhibit No. PTO-0001 
+Page 32 of 39 
+operating instructions. In addition, PJM is proposing a “Two Strike, You’re NITS” 
+1 
+approach pursuant to which if a customer’s protective systems fail to operate as required, 
+2 
+PJM would first determine whether to impose a 120-day “pause” in service and, with the 
+3 
+second failure, PJM would terminate the customer’s service under contract demand and the 
+4 
+customer would be required to become a NITS customer if it wished to resume service.  
+5 
+The PJM Transmission Owners believe this proposal is a good starting point conceptually 
+6 
+but recognize that additional details will need to be developed as to how these operational 
+7 
+consequences would be applied.   
+8 
+I believe that a financial penalty structure is appropriate to complement and 
+9 
+supplement operational penalties implemented by PJM. Although operational penalties 
+10 
+will likely serve as the primary deterrent against Co-Located Load customers exceeding 
+11 
+their reserved use, financial penalties could still play a valuable role in enhancing this 
+12 
+deterrent as well as ensuring the market and other ratepayers are made whole if a Co-
+13 
+Located Load customer exceeds its contract demand. In addition, it may also be appropriate 
+14 
+to impose financial penalties when a Co-Located Load customer exceeds its contract 
+15 
+demand even if such exceedances are mitigated by an SPS or RAS installed on the 
+16 
+Transmission Owner side of the point of interconnection. The PJM Transmission Owners 
+17 
+intend to work with PJM in continuing to explore penalty options and will, if appropriate, 
+18 
+offer a proposal at a subsequent stage of this paper hearing process. 
+19 
+20 
+21 
+22 
+23
+--- PAGE 33 ---
+Exhibit No. PTO-0001 
+Page 33 of 39 
+VIII. INTERCONNECTION REQUIREMENTS AND OPERATIONAL PRACTICES 
+1 
+Q. 
+What are NERC’s transmission planning standards and why is transmission owner 
+2 
+and transmission provider compliance with those standards important? 
+3 
+A. 
+[Hammer] The North American Electric Reliability Corporation’s (“NERC”) 
+4 
+Transmission Planning (“TPL”) standards establish mandatory planning requirements to 
+5 
+ensure the Bulk Electric System can reliably withstand credible contingencies over 
+6 
+planning horizons. TPL-001 Transmission System Planning Performance Requirements is 
+7 
+the foundational and currently enforceable transmission planning standard. Its purpose is 
+8 
+to ensure that the Bulk Electric System is planned so it will operate reliably across a broad 
+9 
+range of system conditions and contingencies, from normal conditions to extreme events.   
+10 
+Compliance with the NERC TPL-001 requirements is important because they 
+11 
+ensure the transmission system is planned to reliably withstand credible outages and system 
+12 
+stresses, reducing the risk of cascading failures and large-scale blackouts. For transmission 
+13 
+owners and providers, TPL-001 compliance also minimizes regulatory and financial risk, 
+14 
+supports coordinated regional planning, and provides a defensible technical basis for 
+15 
+transmission investments needed to maintain long-term grid reliability. 
+16 
+Q. 
+Does the Order’s proposal to rely on SPS/RAS to accommodate Co-Located Load 
+17 
+transmission service requests present any reliability or planning concerns? 
+18 
+A. 
+[Hammer] Yes. Under the principle of TPL-001, transmission planners must plan for load 
+19 
+that has the ability to draw power from the transmission system, not merely for load that is 
+20 
+expected or intended to do so under normal operating conditions. Reliance on SPS/RAS as 
+21 
+a substitute for timely network upgrades raises significant concerns under established good 
+22 
+utility practices and applicable NERC reliability standards. SPS/RAS are generally 
+23
+--- PAGE 34 ---
+Exhibit No. PTO-0001 
+Page 34 of 39 
+intended as supplemental or last-resort reliability measures, not a primary tool to 
+1 
+accommodate incremental transmission services on a routine or ongoing basis. In 
+2 
+particular, substituting SPS/RAS for network upgrade identification, design, coordination, 
+3 
+testing, and commissioning risks undermining the transparency and predictability of the 
+4 
+transmission planning process. Transmission Owners must ensure that all applicable 
+5 
+performance requirements under NERC Standard TPL‑001 remain satisfied, including 
+6 
+under stressed system conditions and under reasonable worst‑case assumptions such as 
+7 
+SPS/RAS failure, mis-operation, or unavailability. 
+8 
+Accordingly, any planning assumptions that rely on SPS/RAS must demonstrate 
+9 
+acceptable system performance both with and without successful SPS/RAS operation.  
+10 
+Absent such demonstrations, reliance on SPS/RAS to accommodate Co‑Located Load 
+11 
+transmission service requests could defer necessary upgrades, increase operational risk, 
+12 
+and impede prudent transmission planning and reliable operation of the Bulk Electric 
+13 
+System. 
+14 
+Q. 
+Are there any other grid challenges associated with utilizing SPS/RAS to ensure 
+15 
+reliability in connection with Co-Located Load taking contract demand transmission 
+16 
+service? 
+17 
+A.  
+[Hammer] Yes. SPS/RAS are operational tools rather than transmission facilities. While 
+18 
+they can be effective when properly designed and operated, they introduce dependencies 
+19 
+related to system protection performance, communications, and coordination during 
+20 
+stressed system conditions. Individual SPS/RAS-backed Firm Contract Demand Service 
+21 
+requests may appear manageable in isolation; however, the cumulative impact of multiple 
+22 
+large Firm Contract Demand Service loads relying on SPS/RAS – particularly within the 
+23
+--- PAGE 35 ---
+Exhibit No. PTO-0001 
+Page 35 of 39 
+same transmission constrained area – may present risks that are not fully reflected in 
+1 
+existing planning models. 
+2 
+There is also a broader planning precedent concern. If major reliability drivers 
+3 
+identified in planning are routinely mitigated through SPS/RAS in lieu of network 
+4 
+upgrades, clarification is needed regarding the boundaries of this approach. Specifically, 
+5 
+stakeholders should understand when infrastructure investment becomes necessary 
+6 
+regardless of a customer’s willingness to curtail, particularly as load magnitude, geographic 
+7 
+concentration, and/or system stress increases. 
+8 
+Q. 
+Given these grid challenges, what steps can PJM and the PJM Transmission Owners 
+9 
+take to ensure grid reliability while relying on SPS/RAS to provide contract demand 
+10 
+transmission service?  
+11 
+A. 
+[Hammer] To ensure that any reliance on SPS/RAS remains consistent with transmission 
+12 
+planning practices and applicable reliability standards, the Commission should permit PJM 
+13 
+and the PJM Transmission Owners to implement necessary guardrails in several areas, 
+14 
+including: 
+15 
+
+Clearly defined eligibility criteria for Firm Contract Demand Service supported by 
+16 
+SPS/RAS; 
+17 
+
+Full redundancy of SPS/RAS, which could include permitting PJM Transmission 
+18 
+Owners to require the implementation of SPS or RAS on the Transmission Owner’s 
+19 
+side of the point of interconnection; 
+20 
+
+Established reasonable limits on the size, aggregation, and geographic concentration of 
+21 
+the use of SPS/RAS; 
+22
+--- PAGE 36 ---
+Exhibit No. PTO-0001 
+Page 36 of 39 
+
+Defined thresholds under which network upgrades are required notwithstanding the 
+1 
+availability of operational curtailment; and 
+2 
+
+Appropriate rules as to how SPS/RAS supported contract demand service is evaluated 
+3 
+in PJM’s transmission planning study and PJM Transmission Owners’ interconnection 
+4 
+facilities studies. 
+5 
+Implementation of contract demand transmission services must preserve the integrity of 
+6 
+the transmission planning process and continued compliance with NERC reliability 
+7 
+standards. From the transmission owners’ perspective, the central implementation issue is 
+8 
+how reliance on SPS/RAS is appropriately bounded, monitored, and integrated into 
+9 
+planning and study analyses to ensure that firm transmission service obligations do not 
+10 
+increasingly depend on operational controls in lieu of durable network infrastructure 
+11 
+solutions. 
+12 
+Q. 
+Please explain the above-mentioned “full redundancy of SPS/RAS” in more detail. 
+13 
+A. 
+[Hammer] In this context, “full redundancy of SPS/RAS” refers to a layered protection 
+14 
+framework under which reliability risks associated with Co‑Located Load taking the new 
+15 
+contract demand transmission services are addressed through both primary, 
+16 
+customer‑owned protection and an optional, transmission‑owner‑owned backstop, rather 
+17 
+than reliance on a single protection scheme.  
+18 
+Under this framework, the primary responsibility for limiting withdrawals from the 
+19 
+transmission system remains with the interconnection customer or Co‑Located Load, 
+20 
+typically through customer-owned SPS/RAS that are designed, operated, and maintained 
+21 
+in accordance with applicable NERC standards and reviewed by PJM. To help accomplish 
+22 
+this, the Commission should direct NERC to establish requirements that Co-Located Load 
+23
+--- PAGE 37 ---
+Exhibit No. PTO-0001 
+Page 37 of 39 
+Customers register with NERC so that those customers may be responsible for meeting 
+1 
+NERC’s reliability standards. These customer‑owned schemes serve as the first line of 
+2 
+defense and are expected to operate under normal and reasonably foreseeable contingency 
+3 
+conditions. 
+4 
+“Full redundancy” does not mean duplicative or parallel protection for every 
+5 
+contingency, nor does it imply that transmission owners must install SPS/RAS in all cases. 
+6 
+Rather, it means that, where system studies identify elevated reliability risk, transmission 
+7 
+owners should have the option to implement a transmission-owner-owned SPS/RAS as a 
+8 
+secondary backstop to protect the Bulk Electric System in the event of customer‑owned 
+9 
+scheme failure, mis-operation, or unavailability. 
+10 
+Q. 
+How does this concept of redundancy align with NERC reliability standards, 
+11 
+including PRC-012? 
+12 
+A.  
+[Hammer] This approach is fully consistent with NERC Reliability Standard PRC‑012, 
+13 
+which expressly contemplates that SPS/RAS may be owned by Transmission Owners, 
+14 
+Generator Owners, or Distribution Providers, provided that ownership and accountability 
+15 
+are clearly defined. Importantly, PRC‑012 does not prohibit multiple SPS/RAS acting on 
+16 
+the same system condition, nor does it require exclusive reliance on a single owner’s 
+17 
+protection scheme. Allowing a Transmission Owner to own and operate a backstop 
+18 
+SPS/RAS therefore fits within the PRC‑012 framework. 
+19 
+Q. 
+Why is reliance on a single, customer‑owned SPS/RAS insufficient in some cases? 
+20 
+A.  
+[Hammer] Transmission planning and operating standards, including TPL‑001, require 
+21 
+planners to account for credible contingencies and protection system failures, including 
+22 
+single points of failure and mis-operations. In configurations where Co‑Located Load 
+23
+--- PAGE 38 ---
+Exhibit No. PTO-0001 
+Page 38 of 39 
+depends on SPS/RAS to limit transmission system withdrawals, exclusive reliance on a 
+1 
+single, customer‑controlled protection scheme can introduce reliability risk, particularly if 
+2 
+the equipment is unavailable due to outage or maintenance. In high‑impact scenarios, 
+3 
+failure of the primary SPS/RAS could result in unexpected load appearing on the 
+4 
+transmission system, potentially leading to overloads, stability concerns, or emergency 
+5 
+operating actions. A transmission-owner‑owned backstop SPS/RAS provides an additional 
+6 
+layer of assurance that these risks can be mitigated before they affect other transmission 
+7 
+customers or system reliability. 
+8 
+Q. 
+Does “full redundancy” shift responsibility or cost from customers to Transmission 
+9 
+Owners? 
+10 
+A.  
+[Hammer] No. The concept of full redundancy does not shift responsibility away from 
+11 
+customers. The presence of a transmission-owner‑owned backstop does not relieve 
+12 
+customers of compliance obligations, nor does it entitle customers to rely on transmission-
+13 
+owner‑owned protection in lieu of their own facilities. 
+14 
+Q. 
+Why is the ability to selectively curtail load essential to the contract demand 
+15 
+transmission service framework adopted by the Commission, and how is that 
+16 
+capability implemented in practice at the point of interconnection? 
+17 
+A. 
+[Hammer] The Commission directed PJM to create contract demand transmission service 
+18 
+to reflect loads that are willing and able to limit their withdrawals from the transmission 
+19 
+system. Load taking contract demand transmission service is granted access to the 
+20 
+transmission system without corresponding reliability reinforcements to support the full 
+21 
+gross load, therefore, the reliability condition is curtailment.  
+22
+--- PAGE 39 ---
+Exhibit No. PTO-0001 
+Page 39 of 39 
+Under certain system conditions, PJM and the PJM Transmission Owners have the 
+1 
+authority to shed the non‑firm portion of load, either preemptively or immediately 
+2 
+following a contingency. For example, PJM may arm a SPS/RAS to instantaneously drop 
+3 
+a large block of load upon the trip of the on-site generator, thereby preventing a thermal or 
+4 
+stability overload. 
+5 
+Where a point of interconnection serves both firm and non‑firm contract demand, 
+6 
+the interconnection must be designed to allow selective curtailment. Operationally, this 
+7 
+typically requires that firm and non‑firm load be served through separate breakers, feeders, 
+8 
+or other independently controllable facilities. The Transmission Owner may structure the 
+9 
+interconnection so that the non‑firm portion can be shed without interrupting firm service. 
+10 
+Examples could include: 
+11 
+
+Separate feeder lines or breakers dedicated to firm versus non‑firm load; 
+12 
+
+Partial load‑shedding schemes that trip only designated non‑firm MW; or 
+13 
+
+For large facilities such as data centers, multiple transformer banks, with some 
+14 
+designated as “firm service” and others as “non‑firm service,” allowing independent 
+15 
+tripping. 
+16 
+Critically, the ability to distinguish and shed the non‑firm portion of load 
+17 
+independently is a prerequisite for a contract demand service model. Curtailment cannot 
+18 
+be all‑or‑nothing; the firm portion of load is expected to remain in service except under 
+19 
+last‑resort system conditions. As a result, compliance may require the installation of special 
+20 
+protection or control equipment at the substation or within the customer’s facilities. 
+21 
+Q. 
+Does this complete your testimony at this time? 
+22 
+A. 
+[Blazunas, Schafer, and Hammer] Yes. 
+23
+--- PAGE 40 ---
+UNITED STATES OF AMERICA
+BETORE THE
+FEDERAL ENERGY REGULATORY COMMISSION
+PJM Interconnection, L.L.C., et al.
+Docket No. EL25-49-000
+Docket No. EL25-49-001
+Large Loads Co-Located at Generating Facilities
+Constellation Energy Generation, LLC
+v.
+PJM Interconnection. L.L.C.
+Docket No. AD24-11-000
+Docket No. EL25-20-000
+(Consolidated)
+DECLARATION OF PETER BLAZUNAS
+I depose and state under penalty of perjury that the foregoing exhibits were prepared or
+assembled by me or under my direction, and that I have read the foregoing questions and answers
+labeled as my testimony: that if asked the same questions my answ'ers in response would be as
+shown; and that the facts contained in my answers are true to the best of my knowledge,
+information, and belief.
+F
+)
+)
+)
+)
+)
+)
+)
+)
+--- PAGE 41 ---
+
+--- PAGE 42 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+PJM Interconnection, L.L.C., et al.   
+ 
+)  
+Docket No. EL25-49-000 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+)  
+Docket No. EL25-49-001 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+) 
+Large Loads Co-Located at Generating Facilities  
+) 
+Docket No. AD24-11-000 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+) 
+Constellation Energy Generation, LLC  
+ 
+)  
+Docket No. EL25-20-000 
+v.  
+ 
+ 
+ 
+ 
+ 
+) 
+PJM Interconnection, L.L.C.   
+ 
+ 
+)  
+(Consolidated) 
+ 
+ 
+DECLARATION OF HANHAN HAMMER 
+ 
+ 
+I depose and state under penalty of perjury that the foregoing exhibits were prepared or 
+assembled by me or under my direction, and that I have read the foregoing questions and answers 
+labeled as my testimony: that if asked the same questions my answers in response would be as 
+shown; and that the facts contained in my answers are true to the best of my knowledge, 
+information, and belief. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/s/__________________ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+February 23, 2026

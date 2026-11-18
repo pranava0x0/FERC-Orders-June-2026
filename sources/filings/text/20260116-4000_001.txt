@@ -1,0 +1,195 @@
+--- PAGE 1 ---
+Thank you for the time connecting with your office at the FERC holiday festivities last 
+month.  
+I am Emerald AI’s senior advisor on power and utilities strategy and was pleased to 
+have with me at FERC, Emerald AI’s CEO Dr. Varun Sivaram. As we discussed, 
+Emerald AI is a pioneering technology company, backed by NVIDIA, whose software 
+makes AI data centers flexible users of power—capable of receiving dispatch signals 
+from system operators and adjusting the power use of AI computations in tandem with 
+utilizing any potential onsite energy resources. 
+Below are some takeaways from my review of the FERC Co-Location Show Cause to 
+PJM (“Show Cause Framework and Emerald AI Validations”). The Show Cause order 
+addresses the immediate mechanics of co-location – the information below provides a 
+picture into the behind-the-scenes tech stack and strategy that will make this possible in 
+reality, largely backed by orchestration solutions Emerald AI is building and deploying in 
+the field today at AI factory GPU clusters which benefit from co-located assets, or, no 
+co-located generation assets.  
+Emerald AI’s goal is to ensure that there are live projects operating in the field on US 
+electric grids within the next two years to prove out a flexible fast track for loads with 
+software-defined flexibility that can help balance the grid with or without 1:1 co-located 
+generation. In 2025, Emerald AI conducted four demonstrations in partnership with 
+EPRI, NVIDIA, utilities, and leading AI companies across the United States and United 
+Kingdom to prove AI power flexibility across four commercial, production-grade data 
+centers. In 2026, Emerald AI will announce with NVIDIA and Digital Realty the world’s 
+first commercial-scale power-flexible “AI Factory”: the 96MW Aurora AI data center in 
+Manassas, Virginia (Dominion transmission and distribution service territory). 
+We’d be pleased to continue conversations with your office and with technical SMEs on 
+our work to practically achieve flexibility solutions.  Please do not hesitate to reach out 
+to us for a briefing at any time. 
+  
+Best Regards, 
+  
+Arushi Sharma Frank 
+Emerald AI Senior Advisor, Power & Utilities Strategy 
+Arushi.sharmafrank@emeraldai.co | alt: arushisharmafrank@live.com 
+Ph: 571.572.9037 
+  
+Attachments: 
+1. Emerald AI One-Year Review 
+2. Bios: Emerald AI CEO | Chief Scientist | Utilities Power Senior Advisor
+--- PAGE 2 ---
+PJM Show Cause Framework and Emerald AI Validations 
+Takeaways 
+•       Emerald AI’s validations in the field on live data center computation loads 
+(training and inference) provide the physical and operational evidence that PJM’s 
+proposed "Contract Demand" tariffs are safe. They prove that a co-located load can 
+serve as its own "shock absorber," creating a dispatchable reliability asset that sits 
+behind the meter but solves front-of-meter constraints with a combination of 
+bankable flexibility solutions that include computation orchestration (shifting, 
+slowing, pausing, calibrating while assuring required customer computational 
+performance) and co-management of dispatch from generation and batteries.
+--- PAGE 3 ---
+Emerald’s validations demonstrate that computation load can be a dynamic, dispatchable 
+resource that can actively manage dispatch risk, effectively serving as its own "locational 
+dispatch solution” baked into a larger schema for operating computation (data center) 
+facilities in the novel ways proposed in the Show Cause order (firm contract demand 
+transmission service; non-firm contract demand transmission service; interim network 
+integration transmission service). 
+1.      Operationalizing "Firm Contract Demand" (Figure 2): 
+Emerald’s technology allows for privatization of delivery risk to computation loads 
+greater than what a firm grid power ceiling could provide, as proposed in Figure 2. 
+The diagram only contemplates that if there is a 100 MW firm service limit above 
+which the grid offers no reliability, the customer must bring 900 MW of reliable 
+onsite generation to fill the gap. Emerald’s validations (specifically the Aurora AI 
+Factory and Nature Energy peer-reviewed data from the Salt River Project demo 
+with Oracle, NVIDIA, and EPRI) finesse this logic. By dynamically flexing compute 
+power—the firm cap is a dispatch signal around which the developer of the power 
+supply can choose to privatize the reliability risk through software controls rather 
+than exclusively through hardware redundancy.  From the grid’s perspective, the 
+appearance of generation to match the load does not change. From the site 
+operator’s perspective, the matching of load to generation is a shaping of 
+generation dispatch hours and computation flexibility hours, paired together for a 
+hyper efficient solution to meet reliability needs without compromising compute 
+service-level agreements. 
+  
+2.      Figure 3: Making "Non-Firm" (Figure 3) Bankable_ Validating the "As-Available" 
+Use Case 
+The Show Cause order positions Non-Firm Contract Demand as a backstop 
+solution where the grid has no obligation to serve, potentially implying that standard 
+data centers cannot function here without 100% redundant backup. Emerald’s 
+platform transforms "as-available" service into a commercially viable operational 
+mode: the AI factory can actively reshape its demand profile to match the "0 to 1000 
+MW" fluctuation shown in PJM’s Figure 3. An AI load can accept a Non-Firm tariff 
+without overbuilding diesel infrastructure, effectively privatizing the curtailment risk 
+through compute modulation that aligns with the "as-available" reality of the 
+transmission system.
+--- PAGE 4 ---
+3.      Anti-Toggling (Guarding against unreserved use): Emerald AI’s technology 
+platform is primed to provide an all-around virtual protection scheme to manage 
+around regulatory anxiety that a co-located load will accidentally drift into 
+"unreserved use" during a generator trip or system disturbance, leaning on system 
+inertia and causing a blackout. The Salt River Project (SRP) demonstration validated 
+that Emerald’s platform acts as a virtual "protection scheme" or governor. By 
+successfully cutting power draw by ~25% for three hours during a peak event while 
+meeting performance targets, the technology provides the mechanical assurance 
+that the facility will not drift. It ensures the load physically adheres to the 
+contracted service level, directly satisfying the FERC requirement for strict 
+compliance with the new tariff boundaries and mitigating the "free rider" reliability 
+concern. 
+  
+4.      Locational Dispatch: The AI Factory as a Nodal Asset Based on the Order on 
+Show Cause section establishing the new Firm Contract Demand and Non-Firm 
+Contract Demand services (Paragraphs 204–209), the Commission frames the load 
+modeling as a static constraint at a specific point of interconnection, rather than as 
+a dynamic, price-responsive node. This is largely the product of the capacity market 
+construct in which these tariff changes typically live, where PJM plans transmission 
+and procures reserve capacity for fixed blocks (sinks) of load at specific PJM 
+buses.  Emerald AI’s platform—particularly via the coming capabilities of the Aurora 
+demonstration site (Nvidia, Digital Realty – Dominion transmission and distribution 
+service territory, Manassas, VA)—introduces the missing variable: the ability for 
+site-specific load to actively respond to LMPs and local congestion. While the Order 
+discusses "curtailment" for Non-Firm service (Paragraph 209), it frames this strictly 
+as a reliability action ("curtailed during emergency operations"), not as an economic 
+response to Locational Marginal Pricing (LMP). The service is currently defined by 
+reservation priority, not by an economic dispatch curve. 
+  
+A core objective of the Aurora project will be to lean into the dynamic capabilities of 
+the load, factor that capability into Dominion’s planning, and support similar 
+outcomes for PJM review—specifically, allowing for a framework to model the site-
+specific load as a resource that resolves congestion or prevents it through 
+constraint management. The core differentiator between how load is planned and 
+“called on” for economic dispatch in PJM versus ERCOT is also the heart of the 
+disagreement regarding the reliability contribution of flexible load between PJM and 
+the PJM Market Monitor. This topic is explored here and arrives at where Emerald AI 
+believes the markets must land: future iterations of these tariff designs must
+--- PAGE 5 ---
+provide RTOs an option to utilize large electronic loads as dispatchable ISO 
+resources, placing them on the same footing as nodal dispatchable generators. 
+  
+5.      Grid-Flexible AI Technology Stack - Emerald AI as the Site Orchestrator in 
+Virginia: 
+  
+The Aurora project demonstrates a technology stack where Emerald AI acts as the 
+central orchestrator—the intelligence layer sitting between the site’s internal puzzle 
+pieces and the utility operator. 
+•       The Orchestration Layer: Emerald is not just providing software; it is acting as 
+the bridge between the Site Controller (managing the facility's physical plant) and 
+the Energy Manager (optimizing cost and dispatch). In this architecture, Emerald 
+translates grid signals into compute actions, effectively turning the data center’s 
+server racks into a dispatchable resource that the utility can "see" and trust. 
+•       Grid Signal Integration: For Aurora, this means ingesting real-time signals 
+ 
+ originating from a combination of PJM 
+and Dominion event calls (aggregating Dominion’s specific rider notices (often 
+capped at 120–150 hours/year) with PJM’s broader emergency load management 
+alerts). The site engineering team across Nvidia and Emerald are co-designing for an 
+insurance band of curtailment hours: 
+ 
+  
+  
+(While Dominion’s retail customer tariff allows for control events of "four to six 
+hours", the "1.6 hours" average reflects the active response required to shave the 
+specific coincident peak, rather than the full window of the alert.)  Emerald’s 
+platform automates the response to these signals, ensuring the facility sheds load 
+instantly without manual intervention. 
+  
+•       Going Beyond "Cap Flex": While Dominion’s Cap Flex program is designed for 
+existing customers to flex around known constraints, the Aurora demo factory is a 
+greenfield opportunity to go further, i.e., handle static curtailment, and actively
+--- PAGE 6 ---
+manage local transmission constraints and congestion signals dynamically. This 
+moves Cap Flex, creating the sandbox for precision tools that could expedite a new 
+project (rather than only cap/limit an existing one looking for more transmission 
+capacity). 
+  
+•       Validation via Power Quality Metering: To prove this works, the partners will 
+install a Power Quality Meter (PQM) at the point of interconnection (a standard 
+requirement for every new connection, including this site). This meter provides the 
+"truth data" that validates the site's response to grid events, ensuring that when 
+Emerald orchestrates a flex down, the grid sees the exact relief it requested. 
+  
+6.      Emerald Validation with National Grid UK: The National Grid live trial in London 
+in December 2025 with Emerald’s "Conductor" platform introduces true Locational 
+Dispatch. Because the AI factory can modulate its consumption in real-time 
+(seconds-based guaranteed curtailment response in furtherance of numerous 
+system strength/grid need experiments), it provides a counter-flow effect at its 
+specific node. In a co-location scenario (Figure 2 or 3 from FERC diagram above), 
+this means the AI factory can dispatch itself down to relieve local transmission 
+constraints without sole reliance on generation-switching, effectively serving as a 
+Non-Wire Alternative (NWA) solution that PJM’s static planning models fail to 
+capture. 
+  
+7.  The "Interim" Bridge (Figure 4): Accelerating Interconnection 
+The Aurora reference design is intended to turn the "waiting room" approach 
+described in Figure 4., into the final destination. If an AI factory is certified as 
+"Power-Flexible" (capable of relieving grid stress), it may never need to graduate to 
+the full "Firm Service" upgrades required in Figure 4 noted above. This challenges 
+the baseline assumption that "Interim" is just a temporary state; Emerald’s demo 
+projects will validate that for flexible AI loads, "Interim" (Non-Firm) coupled with 
+intelligent compute modulation is a permanent, stable, and reliable end-state. This 
+vision is shared by Emerald’s data center OEM partners and its core investors, 
+including Nvidia.  
+  
+   [End of Takeaways Primer: Emerald AI Validations]
+--- PAGE 7 ---
+

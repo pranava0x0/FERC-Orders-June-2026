@@ -1,0 +1,1184 @@
+--- PAGE 1 ---
+1 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+PJM Interconnection, L.L.C., et al., 
+ 
+Docket Nos. EL25-49-000 
+                      EL25-49-002 
+Large Loads Co-Located at 
+Generating Facilities 
+                      AD24-11-001 
+Constellation Energy Generation 
+L.L.C. 
+v. 
+PJM Interconnection, L.L.C. 
+                      EL25-20-001 
+                      (consolidated) 
+ 
+ 
+PJM Interconnection, L.L.C. 
+                      ER26-1479-000 
+ 
+REQUEST FOR CLARIFICATION OR, IN THE ALTERNATIVE, REHEARING 
+OF EOLIAN, L.P., CALIBRANT ENERGY HOLDINGS, LLC, AND VERRUS, LLC  
+Pursuant to section 313(a) of the Federal Power Act (“FPA”), 16 U.S.C. § 825l (2024), 
+and Rule 713 of the Rules of Practice and Procedure of the Federal Energy Regulatory 
+Commission (“Commission” or “FERC”),1 Eolian, L.P. (“Eolian”), Calibrant Energy Holdings, 
+LLC (“Calibrant”), and Verrus, LLC request clarification, and the in alterative rehearing of the 
+Commission’s June 18 Order in the above-captioned proceeding (Order). In brief, we seek 
+clarification of two aspects of the Order concerning the new Interim Network Integration 
+Transmission Service (“Interim NITS”). First, the Commission should clarify that PJM's tariff 
+must generally describe the reliability principles and circumstances under which these services 
+may be curtailed, and not merely their relative curtailment priority. Second, the Commission 
+ 
+1 18 C.F.R. § 385.713.
+--- PAGE 2 ---
+2 
+should clarify that a transmission customer taking Interim NITS may rely on any resource whose 
+capacity is not committed to be delivered to PJM or another entity during curtailment events.  
+LIST OF ERRORS/STATEMENT OF ISSUES 
+We seek clarification or rehearing on two issues:  
+1. 
+The Commission should clarify that, in providing details on the curtailment 
+priority of Interim NITS, non-firm and firm contract demand service vis-à-vis 
+existing transmission services, PJM must specify at least the general reliability 
+circumstances under which curtailment may occur.  
+a. 
+Failure to provide clarity on these service terms fails to adequately specify 
+tariff terms as required by the Federal Power Act. See 16 U.S.C. § 
+824d(c); City of Cleveland v. FERC, 773 F.2d 1368, 1376 (D.C. Cir. 
+1985); Hecate Energy Greene County 3 LLC v. FERC, 72 F.4th 1307, 1314 
+(D.C. Cir. 2023). 
+b. 
+Lack of specificity in curtailment terms is unjust and unreasonable 
+because it will make use of these services commercially unworkable and 
+therefore will not adequately enable the avoidance of costly and inefficient 
+transmission system buildout that may not be necessary. See 16 U.S.C. § 
+824d(a); PJM Interconnection, L.L.C., 193 FERC ¶ 61,217 (2025).  
+c. 
+Lack of specificity in curtailment terms risks undue discrimination as 
+between transmission customers in application. See 16 U.S.C § 824d(a); 
+E.ON Climate & Renewables N. Am., LLC, 137 FERC ¶ 61,076, at P 38 
+(2011); Standardization of Generator Interconnection Agreements and 
+Procedures, Order No. 2003, 104 FERC ¶ 61,103, at P 11 (2003).
+--- PAGE 3 ---
+3 
+2. 
+The Commission should clarify that any resource that has not committed its 
+capacity to PJM or another entity may be relied upon by a transmission customer 
+taking Interim NITS during curtailment events to the extent it is capable of 
+delivering capacity to the customer.  
+a. 
+Prohibiting such resources from offering their services to Interim NITS 
+customers during curtailment events would not be just and reasonable 
+because it would prevent efficient use of Interim NITS and unreasonably 
+deny resources the opportunity to sell their services. See 16 U.S.C. § 
+824d(a); PJM Interconnection, L.L.C., 193 FERC ¶ 61,217 (2025); 
+Electric Storage Participation in Markets Operated by Regional 
+Transmission Organizations and Independent System Operators, Order 
+No. 841, 162 FERC ¶ 61,127 (2018). 
+b. 
+Prohibiting such resources from offering their services to Interim NITS 
+customers during curtailment events would be unduly discriminatory 
+because all resources whose services are not committed to PJM or another 
+entity are similarly situated to the two specific classes of resources the 
+Commission requires PJM to allow Interim NITS customers to rely upon. 
+See 16 U.S.C. § 824d(b); Associated Gas Distributors v. FERC, 824 F.2d 
+981, 998 (D.C. Cir. 1987); Consol. Edison Co. of N.Y. v. FERC, 45 F.4th 
+265, 281 (D.C. Cir. 2022); El Paso Natural Gas Co. Aera Energy, L.L.C., 
+104 FERC ¶ 61,045, at P 115 (2003); N.Y. Indep. Sys. Operator, Inc., 162 
+FERC ¶ 61,124, at P 10 (2018). 
+To the extent that the requested clarifications are denied, we respectfully request 
+rehearing. 
+II. 
+The Commission Should Clarify that PJM Must Describe the General Reliability 
+Circumstances Pursuant to Which Interim NITS, Non-Firm and Firm Contract 
+Demand Services May Each Be Curtailed. 
+The June 18 Order “disagree[s] with commenters that PJM must provide specific details 
+in its Tariff, such as the trigger and procedures for curtailment of Interim NITS and FCD or 
+NFCD transmission services, or how PJM will enforce its curtailment procedures.”2 It finds that 
+“requiring PJM to specify the curtailment priority of [the] new transmission services in its Tariff, 
+while leaving specific implementation details in its manuals and individual service agreements, 
+provides transmission customers sufficient certainty as to their priority relative to other 
+ 
+2 Order at P 552.
+--- PAGE 4 ---
+4 
+transmission services and ensures that PJM has sufficient flexibility to preserve system reliability 
+in varying operating conditions.”3  
+As a general matter, Eolian believes that a unified, specific approach to reliability triggers 
+for non-firm service adopted across grid operators and based on existing reliability frameworks 
+would provide clear and consistent rules of the road to developers of load and generation 
+resources, thereby reducing transaction costs, and facilitating the scale-up of efficient, cost-
+effective business models for the development of load and supply designed to take advantage of 
+non-firm service. And by basing such triggers on transparent, actionable, and already-established 
+reliability criteria—such as limiting resource adequacy-based curtailment to NERC energy 
+emergency alert thresholds of EOP-011, and limiting transmission security-based curtailment 
+based on market-based dispatch of a dispatchable load bidding at the cap—a clear and consistent 
+trigger across regions would provide grid operators controls within the existing reliability 
+framework and procedures that ensure adequate system reliability.4 And by basing such triggers 
+on the existing reliability framework and procedures, regions can avoid needless disputes about 
+application of business practices. While we urge the Commission to consider providing all 
+regions with direction or other encouragement to adopt such criteria, we recognize that this 
+proceeding may not be the appropriate place for the Commission to establish such a specific, 
+nationwide rule.  
+ 
+3 Id. 
+4 See Attachment A, Affidavit of Andrew Levitt on Behalf of Eolian, L.P. (July 17, 2026) (“Levitt 
+Affidavit”) (explaining the benefits of a clear standard, and reasons to set the curtailment trigger 
+for resource adequacy events at EEA2 and for transmission security events based on market-
+based dispatch of a dispatchable load as a suitable trigger for transmission security, with a cap on 
+bid prices (e.g., $3,700/MWh, as for certain demand response in PJM today)).
+--- PAGE 5 ---
+5 
+Nonetheless, we request clarification, or in the alternative, rehearing, of the 
+Commission’s findings because while “specific details” regarding the curtailment trigger may be 
+appropriately included in the business practices manuals, Commission precedent and case law 
+interpreting the Federal Power Act make clear that the tariff must at least describe generally 
+when curtailment will occur. Moreover, including such general circumstances in the tariff will 
+help avoid commercial uncertainty that risks undermining the Commission’s objectives in 
+requiring PJM to establish these new transmission services in the first place. 
+PJM must at minimum provide tariff language that not only specifies curtailment priority 
+order but also explains the reliability circumstances when curtailment may occur. PJM’s proposal 
+has not cleared that low bar. The Commission should provide further guidance to PJM, which 
+would set the stage for PJM to follow up with manual language establishing workable specific 
+implementation details that enable commercial investments while ensuring reliable system 
+operations.5 Providing the general boundaries for curtailment would be consistent with PJM’s 
+tariff terms for other types of transmission service.6 Far from compromising system operations, 
+providing more guidance on curtailment triggers will ameliorate potential challenges to dispatch 
+coordination.7 PJM’s far more detailed tariff provisions on curtailment for products such as 
+demand response help support investments into such resources, which enhances system 
+reliability.8 More specificity regarding when transmission services may be curtailed would do the 
+same. 
+ 
+5 As Andrew Levitt describes in affidavit attached hereto as Attachment A, a reasonable 
+standard—though not necessarily the only reasonable standard—would establish that non-firm 
+NITS and non-firm contract demand service may be curtailed when specific resource adequacy 
+or transmission security triggers occur. Levitt Affidavit at 7-11. 
+6 Id. at 5-6. 
+7 Id. 
+8 Id.
+--- PAGE 6 ---
+6 
+As described in the attached affidavit of Andrew Levitt, PJM’s proposal does not set any 
+limit on the circumstances in which it may curtail customers taking the new transmission 
+services, because while it provides that such customers will be curtailed before pre-emergency 
+demand response, it provides no condition after which such curtailment will be called.9 As 
+explained in the Joint Co-Location Developers Reply Brief, “[t]his open-ended process . . . 
+theoretically allows PJM to curtail such services at any time.”10 Without any boundary limiting 
+the conditions under which curtailment may occur (e.g. limiting curtailment to certain defined 
+reliability circumstances), the tariff proposal fails to provide adequate notice of its service terms. 
+The Commission’s Order requires PJM to provide greater specificity insofar as PJM must amend 
+its proposal to provide for the relative curtailment priority of these new transmission services and 
+PJM’s existing services. Depending on how PJM responds, however, this may not necessarily 
+guarantee that PJM will book-end its proposal to provide a clear boundary beyond which 
+curtailment will not occur. For example, if PJM provides that curtailment of non-firm contract 
+demand service may occur prior to curtailment of other services, then the outer boundary of 
+when curtailment may occur would remain entirely undefined. In particular, to the extent that 
+PJM indicates that the new services may be curtailed prior to non-firm point-to-point service, or 
+in circumstances that differ from point-to-point service, then such a response to the 
+Commission’s directive would fail to provide market participants with any clear limits on or 
+ability to forecast when curtailment may be called. It is not clear that the Commission 
+ 
+9 Id. at 4. PJM’s proposed tariff provisions specified that PJM “may curtail Interim Network 
+Integration Transmission Service prior to dispatching the Pre-Emergency Load Response 
+Program as further set forth in the PJM Manuals, or in response to a transfer capability shortage 
+as a result of system reliability conditions.” PJM Initial Brief, Illustrative Tariff, Part XI, Subpart 
+B, § 705.2 & Subpart C, § 713.4. 
+10 Reply Brief of Joint Co-location Developers and Motion to Intervene Out-of-time of Calibrant, 
+Convergent, U.S. Energy Storage Coalition, and Verrus, at 17 (filed Mar. 25, 2026).
+--- PAGE 7 ---
+7 
+contemplated this circumstance and intended such open-ended levels of curtailment. As such, the 
+Commission should clarify its order by directing PJM to include general principles and 
+conditions where curtailment may occur when using Interim NITS. PJM could then provide 
+additional specificity in its manuals.  
+Under City of Cleveland v. FERC and the Commission’s “rule of reason” precedent, a 
+tariff must include “practices that affect rates and service significantly, that are realistically 
+susceptible of specification, and that are not so generally understood in any contractual 
+arrangement as to render recitation superfluous.”11 While it is true that tariffs “need not include 
+mere implementation details,”12 the general circumstances when curtailment may occur are core 
+to the definition of the new transmission services. As Levitt states, the “curtailment trigger is not 
+a minor feature of the new FERC-required transmission services, but one of the key attributes 
+that determines the value of the service and the associated impacts of the new large load on the 
+balance of transmission customers.”13 Decisions whether to take such services hinge on the 
+ability to estimate the depth and length of potential curtailments, and to plan for such 
+curtailments, such as assessing the extent to which investments in on-site resources or other 
+measures would allow the load to withstand such curtailments.14 As developers of generation, 
+ 
+11 773 F.2d 1368, 1376 (D.C. Cir. 1985) (emphasis in original).  
+12 Hecate Energy Greene County 3 LLC v. FERC, 72 F.4th 1307, 1312 (D.C. Cir. 2023) 
+13 Levitt Affidavit at 4. 
+14 See id. (“The difference between a service curtailed only during defined emergency conditions 
+and one curtailed based on broad operational discretion is not small, and will directly impact the 
+investment feasibility, characteristics, and impact of each of these services.”). For example, in 
+assessing the potential for energy storage resources located at the point of interconnection to 
+support a transmission customer’s ability to take one of the new transmission services, a 
+developer may assess whether a 6-hour storage resource sized to the nameplate load is likely to 
+be sufficient to guard against curtailment risk to the level required by the load customer. Is a 
+battery double or quadruple that size required? The answers to these questions cannot be known 
+or even estimated without at least general guidance on the circumstances under which 
+curtailment will be triggered.
+--- PAGE 8 ---
+8 
+storage, and load resources, our development choices depend heavily on the level of curtailment 
+risk predicted by the transmission services tariff terms. As Levitt explains, “a financial model 
+supporting a co-location investment would need assumptions regarding expected curtailment 
+hours, maximum event duration, seasonal concentration, event time, and whether curtailment is 
+tied to conditions affecting the specific delivery path or to broader PJM system conditions.”15 
+While developers do not need certainty with respect to each of these variables, they need 
+sufficient, general parameters of a service to make reasonable assumptions and assign informed 
+probabilities. The vague curtailment language set forth by PJM in its proposed Tariff is so open-
+ended that it does not provide a basis for any particular assumptions, and so is not adequate to 
+support investment in co-located generation, energy storage, demand response, and other 
+resources to support transmission customers. The Commission’s directive to PJM to indicate 
+relative curtailment order is helpful, but it does not ensure that PJM will bound curtailment in a 
+manner necessary to ameliorate the open-ended commercial risk that its original tariff proposal 
+would establish. While PJM asserts in its reply brief dated April 24, 2026, that  “...all generating 
+resource that are available ...will be utilized to serve the Interim NITS customer,” that 
+commitment does not appear in its Tariff language. 
+And while it is true that “even specifiable practices that significantly affect rates need not 
+be included if they are clearly implied by the tariff’s express terms,”16 in this case neither PJM 
+nor the Commission has pointed to any express tariff terms that imply when and how curtailment 
+may occur. The Commission’s Order appropriately requires PJM to spell out curtailment priority 
+of both new and existing transmission services. But if curtailment priority of the new services is 
+ 
+15 Id. at 4-5. 
+16 Hecate Energy Greene County 3 LLC v. FERC, 72 F.4th 1307, 1314 (D.C. Cir. 2023).
+--- PAGE 9 ---
+9 
+not equal to existing services or nested within them, the tariff may not even imply the 
+circumstances when curtailment may occur. The Commission’s should therefore clarify that, in 
+addition to providing curtailment order, PJM’s tariff must at minimum set forth general reliability 
+principles and circumstances when curtailment may occur so that it can implement these 
+principles and provide greater detail on the circumstances in its manuals. 
+As Levitt persuasively argues, the most efficient approach would be to provide a clear 
+and precise curtailment directive in the tariff.17 But even general tariff language providing 
+guidance to be implemented more precisely in a manual would be a significant improvement 
+upon the manifestly open-ended approach taken by PJM. Such a directive would be consistent 
+with the level of specificity set forth for non-firm point-to-point transmission service, where the 
+tariff provides the following general direction regarding when curtailments for reliability or 
+economic reasons may occur:  
+The Transmission Provider reserves the right to Curtail, in whole or in part, Non-
+Firm Point-To-Point Transmission Service provided under the Tariff for reliability 
+reasons when an emergency or other unforeseen condition threatens to impair or 
+degrade the reliability of the Transmission System or the systems directly and 
+indirectly interconnected with Transmission Provider's Transmission System. . . .  
+The Transmission Provider reserves the right to Interrupt, in whole or in part, 
+Non-Firm Point-To-Point Transmission Service provided under the Tariff for 
+economic reasons in order to accommodate (1) a request for Firm Transmission 
+Service, (2) a request for Non-Firm Point-To-Point Transmission Service of 
+greater duration, (3) a request for Non-Firm Point-To-Point Transmission Service 
+ 
+17 See Levitt Affidavit.
+--- PAGE 10 ---
+10 
+of equal duration with a higher price, or (4) transmission service for Network 
+Customers from non-designated resources.18 
+Notably, the point-to-point curtailment language in the tariff includes both a relative 
+priority order of curtailment and a description of the general reliability circumstances that trigger 
+when the service may be curtailed, thus providing a bound on how much curtailment could be 
+anticipated based on a range of potential system conditions. To satisfy the rule of reason, the 
+Commission must require PJM to provide at least this same level of specificity regarding the 
+circumstances pursuant to which the new transmission services may be curtailed.  
+PJM could satisfy such a requirement by, for example, describing in its tariff the potential 
+reliability trigger. For instance, the tariff could allow for reliability-based curtailment when (1) 
+an emergency or other unforeseen condition threatens to impair or degrade the reliability of the 
+Transmission System or the systems directly and indirectly interconnected with Transmission 
+Provider’s Transmission System, as evaluated consistent with NERC reliability standards, or (2) 
+when no generating resource is available (i.e., not on outage or otherwise unable to be brought 
+on-line in a timely manner) to serve the customer. Under the rubric of this broad framework, 
+PJM could then set forth the specific curtailment triggers in its manuals. For example, as Levitt 
+explains, PJM should set forth specific resource adequacy and transmission security curtailment 
+triggers (including both pre- and post-contingency actions), so as to support commercial 
+investments and reliable system operations.19  
+Providing this basic (or even a much more detailed) set of curtailment guidelines in the 
+tariff would not compromise PJM’s ability to preserve system reliability in varying operating 
+ 
+18 PJM, Intra-PJM Tariffs, OATT, § II.14.7 Curtailment or Interruption of Service.  
+19 Levitt Affidavit at 8-11.
+--- PAGE 11 ---
+11 
+conditions, and is in fact necessary to ensure the service terms are just and reasonable and not 
+unduly discriminatory. Rather, as set forth in Levitt’s affidavit, greater detail from PJM would 
+enhance orderly system operations. Providing at least a general description of curtailment 
+triggers in the tariff will enhance reliability by supporting greater use of non-firm NITS and 
+contract demand transmission services. In fact, based on our commercial experiences as long-
+standing developers of co-located load, generation, and storage resources, at least this level of 
+certainty is necessary for a material number of projects to use these services. By their nature, 
+these services each give PJM a greater set of curtailment options than were the customers to 
+instead take NITS. In contrast, failure to provide even the general circumstances when 
+curtailment may occur is not just and reasonable because it will not support investments that 
+avoid costly and inefficient transmission system buildout. This was the very basis of the 
+Commission’s co-location order.20 Additionally, leaving curtailment decisions unbounded and at 
+the complete discretion of PJM risks introducing the prospect of discriminatory treatment of 
+similarly situated transmission customers. Without even general curtailment conditions, PJM 
+need not work to call curtailment consistently across customers or time based on verifiable 
+reliability conditions. The prospect of differential treatment will further undermine customer 
+interest in these services and can introduce undue discrimination in the practical application of 
+ 
+20 See PJM Interconnection, L.L.C., 193 FERC ¶ 61,217 at P 160 (Dec. 2025) (“December Co-
+Location Order”) (highlighting the potential avoidance of transmission system costs as a 
+principal benefit of the new transmission services).
+--- PAGE 12 ---
+12 
+the tariff.21 These risks can be resolved by including “a standard set of procedures as part of the 
+OATT.”22 
+Clarification about the need for some general guidelines on curtailment trigger, beyond 
+just that which may but need not necessarily be implied by curtailment priority order, is 
+necessary to achieve the Commission’s objectives.   
+III. 
+The Commission Should Clarify that PJM Must Allow Load Taking Interim NITS to 
+Rely on Any Resource Not Obligated to Deliver to PJM or Another Entity 
+The Commission’s Order addresses the question whether an Interim NITS customer may 
+access a Co-Located Generator during curtailments (i.e., the transmission customer’s curtailment 
+obligation is reduced according to the output of its Co-Located Generator). It finds that “it is just 
+and reasonable to prohibit the Eligible Customer taking Interim NITS on behalf of Co-Located 
+Load from drawing energy from the Co-Located Generator when the Eligible Customer is 
+curtailed, if the Co-Located Generator is a capacity resource.”23 At the same time, however, the 
+Commission identifies two specific circumstances where “such a restriction would not be 
+applicable”24: (1) “if the associated Co-Located Generator does not yet have any interconnection 
+service or has only provisional interconnection service”; or (2) “if the associated Co-Located 
+Generator is seeking capacity resource status, but [has] not yet obtained such status.”25  
+ 
+21 E.ON Climate & Renewables N. Am., LLC, 137 FERC ¶ 61,076, at P38 (2011) (“The 
+Commission would find any policy that creates opportunities for such discriminatory behavior to 
+be unacceptable”). 
+22 Standardization of Generator Interconnection Agreements and Procedures, Order No. 2003, 
+104 FERC ¶ 61,103, at P 11 (2003), order on reh'g, Order No. 2003-A, 106 FERC ¶ 61,220, 
+order on reh'g, Order No. 2003-B, 109 FERC ¶ 61,287 (2004), order on reh'g, Order No. 2003-C, 
+111 FERC ¶ 61,401 (2005), aff'd sub nom. Nat'l Ass'n of Regulatory Util. Comm'rs v. FERC, 475 
+F.3d 1277 (D.C. Cir. 2007) (“A standard set of procedures as part of the OATT . . . will minimize 
+opportunities for undue discrimination”). 
+23 Order at P 576. 
+24 Id. 
+25 Id.
+--- PAGE 13 ---
+13 
+The reasonable implication of these findings is that a co-located resource may be relied 
+upon where it is not a Generation Capacity Resource under the PJM tariff or is not otherwise 
+obligated to deliver its services to PJM or another entity apart from the relevant transmission 
+customer taking Interim NITS. Eolian agrees that it is reasonable to bar resources from 
+delivering solely to the Interim NITS customer when they are obligated to serve Network Load.26 
+However, clarification is needed to confirm that all resources not obligated to deliver to PJM or 
+another entity are eligible to support Interim NITS customers, because the Commission 
+explicitly requires tariff modification only with regard to the specific circumstances it 
+discusses27—leaving out additional circumstances for which a co-located resource could provide 
+capacity to its co-located load without being a Generation Capacity Resource. To more 
+completely effectuate the principle that the Commission is reasonably aiming at, it should make 
+clear that PJM must allow a transmission customer taking Interim NITS to rely on any resource 
+whenever it is not obligated to deliver to PJM or another entity apart from the relevant load 
+taking Interim NITS.  
+The key challenge which the Commission’s ordering language does not necessarily 
+overcome is that for Interim NITS to be commercially workable, most loads must be able to rely 
+upon a co-located or electrically proximate resource until the load’s network upgrades are 
+completed. Where the load is developed in conjunction with a new generation resource, the 
+load’s network upgrades may not be completed on the same timeline as network upgrades 
+required to interconnect the storage or generation capacity resource. If the interconnection of 
+non-provisional CIRs proceeds faster than that of firm service to load, the Interim NITS 
+ 
+26 Id. (“capacity resources have an obligation to serve Network Load”). 
+27 Id.
+--- PAGE 14 ---
+14 
+customer will nonetheless still need to rely on the co-located generator. For many, if not most, 
+large load customers, the prospect of curtailment without access to a co-located generator or 
+storage resource to help avoid outage is not commercially tenable. Such large load customers are 
+unlikely to invest, directly or through offtake agreements, in co-located or electrically proximate 
+generation if they cannot rely on such generation before network upgrades are completed and 
+NITS is provided. As a result, the very services that the Commission has found are necessary are 
+likely to go underutilized, substantially undermining the policy objectives that the Commission is 
+seeking.28 Put simply, if transmission customers are not given tools to control their own 
+curtailment risk when relying on Interim NITS, the service will not facilitate more timely access 
+to the transmission system. 
+But this challenge is addressable through clarification of the Commission’s language and 
+through PJM’s development of new interconnection service options pursuant to the 
+Commission’s June 18 large load show cause order.29 While the Commission offers only two 
+specific examples of cases where the Interim NITS customer may rely on generation resources, 
+there is a broader range of circumstances where co-located or electrically proximate generation 
+should be able to be relied upon. For example, PJM offers Energy Resource Interconnection 
+Service, pursuant to which resources may obtain interconnection rights that do not grant them 
+Generation Capacity Resource status, or otherwise obligate them to deliver to PJM.30 PJM may 
+ 
+28 See, e.g., December Co-Location Order at P 201 (finding “that this new interim, non-firm 
+transmission service will facilitate the timely provision of transmission service to Eligible 
+Customers taking transmission service on behalf of Co-Located Loads”). 
+29 See PJM Interconnection, L.L.C., 195 FERC ¶ 61,211, at PP 95-101 (2026) (preliminarily 
+finding that PJM must provide new generator interconnection study procedures and services to 
+prevent “unnecessary interconnection delays” and “unnecessary delays and costs on transmission 
+customers”). 
+30 See, e.g., PJM Manual 14A, at section 5 (2026) (explaining how PJM offers Energy Resource 
+interconnection service in addition to Capacity Resource interconnection service).
+--- PAGE 15 ---
+15 
+develop future interconnection pathways, such as generator interconnection mechanisms in 
+response to the Commission’s June 18 show cause order,31 which either do not vest a resource 
+with Generation Capacity Resource status or else facilitate the delay in such status pending an 
+interim period where the resource is dedicated to the load with which it is paired. In addition, 
+transmission customers taking Interim NITS may seek to rely on behind-the-meter resources. 
+Where these resources are not used to enable the associated load to offer into the capacity market 
+as demand response, their capacity is not committed to PJM. The Commission’s Order expressly 
+extends eligibility for the new transmission services to “Eligible Customers taking transmission 
+service on behalf of load with BTMG” because such customers “are willing and able to limit 
+their energy withdrawals from the transmission system under certain conditions.”32 This 
+conclusion would make little sense were such customers unable to rely on their behind-the-meter 
+generation to support the load when Interim NITS is curtailed. 
+In the event that the Commission intended to limit load to relying on co-located 
+generators under only the explicitly named circumstances, it should reverse that position on 
+rehearing. It would be unjust and unreasonable to bar Interim NITS from relying on non-capacity 
+resources. This is true both because workable commercial arrangements necessary to support 
+Interim NITS rely on the ability of transmission customers to rely on non-capacity resources to 
+prevent curtailment, and because Commission precedent dictates that resources should be 
+permitted to offer the services that they are technically capable of providing.  
+ Further, it would not be just and reasonable and would be unduly discriminatory to 
+restrict the use of such resources to prevent curtailment when such use would be consistent with 
+ 
+31 See PJM Interconnection, L.L.C., 195 FERC ¶ 61,211, at PP 95-101 (2026).  
+32 Order at P 91.
+--- PAGE 16 ---
+16 
+their reliability obligations and reliable system operations. While the Commission reasonably 
+rests its prohibition of reliance on capacity resources upon the determination that “capacity 
+resources have an obligation to serve Network Load,”33 this logic does not extend to prohibiting 
+reliance on resources that are not obligated to offer into the capacity market, or that do not clear 
+the market to take on a capacity commitment where such resources have not otherwise 
+committed themselves to deliver to another entity. Commission precedent supports the 
+proposition that it is unjust and unreasonable for RTOs to foreclose the ability of resources to sell 
+services where they are technically capable of providing them.34 Just as barriers to wholesale 
+market participation of energy storage resources reduces market competition and thereby 
+contribute to unjust and unreasonable rates, barriers to the use of resources technically capable of 
+supporting Interim NITS customers will limit the use of that service below efficient levels and 
+thereby render rates unjust and unreasonable. Moreover, barring use of generation, storage, or 
+other resources to meet the demand of Interim NITS customers during a curtailment event when 
+such resources are—like the resources in the specific circumstances identified by the 
+Commission—technically capable of providing service to Interim NITS customers and free from 
+Network Load capacity service obligations, would constitute undue discrimination.35 
+ 
+33 Id. P 576. 
+34 See, e.g., Order No. 841, 162 FERC ¶ 61,127, at PP 19-20 (2018) (finding that tariffs are 
+unjust and unreasonable where they impose barriers to wholesale market participation by energy 
+storage resources technically capable of providing service).  
+35 16 U.S.C. § 824d(b); Associated Gas Distributors v. FERC, 824 F.2d 981, 998 (D.C. Cir. 1987) 
+(the Act's "concern about undue discrimination" extends to all similarly situated parties); Consol. 
+Edison Co. of N.Y. v. FERC, 45 F.4th 265, 281 (D.C. Cir. 2022) (The Commission must provide 
+an adequate explanation to justify treating similarly situated parties differently") (cleaned up); El 
+Paso Natural Gas Co. Aera Energy, L.L.C., 104 FERC ¶ 61,045, at P 115 (2003) 
+("Discrimination is undue when there is a difference in rates or services among similarly situated 
+customers that is not justified by some legitimate factor."); N.Y. Indep. Sys. Operator, Inc., 162 
+FERC ¶ 61,124, at P 10 (2018) (finding entities are similarly situated where they are “equally 
+capable of providing [a] service, notwithstanding other significant differences.”).
+--- PAGE 17 ---
+17 
+ For the foregoing reasons, the Commission should grant the requested clarifications or, 
+in the alternative, grant rehearing. 
+ 
+ 
+Respectfully submitted, 
+ 
+/s/ Eric Stoutenburg 
+Eric Stoutenburg 
+Eolian L.P. 
+988 Howard Ave. Suite 200,  
+Burlingame, CA 94010 
+eric.stoutenburg@eolianenergy.com 
+ 
+/s/ Gabe Tabak 
+Gabe Tabak 
+Head of Energy Policy 
+Verrus, LLC 
+918 N Rengstorff Ave. 
+Mountain View, CA 94043 
+gabe@verrusdata.com 
+ 
+/s/ Judith Judson 
+Judith Judson 
+Executive Vice President of Regulatory and Polcy 
+Calibrant Energy 
+4830 W. Kennedy Blvd, Suite 600 
+Tampa, Florida 33609 
+judith.judson@calibrantenergy.com
+--- PAGE 18 ---
+CERTIFICATE OF SERVICE 
+ 
+I hereby certify that I have this day served the foregoing document upon each person 
+designated on the official service list compiled by the Secretary of the Commission in this 
+proceeding. 
+ 
+Dated: July 20, 2026 
+/s/ Eric Stoutenburg 
+Eric Stoutenburg 
+Eolian L.P. 
+988 Howard Ave. Suite 200,  
+Burlingame, CA 94010 
+eric.stoutenburg@eolianenergy.com
+--- PAGE 19 ---
+Attachment A
+--- PAGE 20 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 1 of 13 
+ 
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+PJM Interconnection, L.L.C., et al., 
+ 
+Docket Nos. EL25-49-000 
+                      EL25-49-002 
+Large Loads Co-Located at Generating 
+Facilities 
+                      AD24-11-001 
+Constellation Energy Generation L.L.C. 
+v. 
+PJM Interconnection, L.L.C. 
+                      EL25-20-001 
+                      (consolidated) 
+ 
+ 
+PJM Interconnection, L.L.C. 
+                      ER26-1479-000 
+AFFIDAVIT OF 
+ANDREW LEVITT  
+ON BEHALF OF 
+EOLIAN, L.P. 
+July 20, 2026
+--- PAGE 21 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 2 of 13 
+I. 
+QUALIFICATIONS 
+1 
+My name is Andrew Levitt. I am a Senior Consultant at The Brattle Group (Brattle).  
+2 
+I am an expert on wholesale market design and reliability implications of changes in the power 
+3 
+system. I have consulted to Independent System Operators and Regional Transmission 
+4 
+Organizations (ISO/RTOs) such as the Midcontinent Independent System Operator (MISO), the 
+5 
+New York Independent System Operator (NYISO), the Alberta Electric System Operator 
+6 
+(AESO), and the Independent Electricity System Operator (IESO) of Ontario, and helped other 
+7 
+clients navigate ISO/RTO changes nationwide. Prior to joining Brattle in 2022, I was on staff at 
+8 
+PJM for seven years (most recently as Lead Market Designer), where I developed reforms to 
+9 
+reliably integrate new resource types. I hold an MMP from the University of Delaware and a BSc 
+10 
+in physics from the University of Toronto. 
+11 
+I have worked extensively on the benefits of co-located load and generation and how these 
+12 
+arrangements can be facilitated to reduce costs, achieve faster connection of new loads and 
+13 
+generation, and ensure reliability. This includes co-authored affidavits and reports in prior filings 
+14 
+before the Federal Energy Regulatory Commission (FERC or Commission) on co-location 
+15 
+including an affidavit on behalf of Eolian filed in FERC Docket No. RM26-4-000 
+16 
+on Interconnection of Large Loads to the Interstate Transmission System and a report on behalf 
+17 
+of Bloom Energy filed in Docket EL25-49-000 on Accelerating the Integration of New Co-
+18 
+located Generation and Loads.1 
+19 
+II. 
+ASSIGNMENT AND SUMMARY 
+20 
+I was asked by Eolian, L.P. to assess the recent Commission Order on Rehearing, Clarification, 
+21 
+and Compliance Filing (addressing co-located large loads),2 focused on enhancing PJM’s process 
+22 
+for interconnecting and serving large loads and paired generation. We were asked to assess 
+23 
+ 
+1  
+Affidavit of Andrew Levitt, Aniruddh Mohan, Ryan Quint, and Sirisha Tanneeru on Behalf of Eolian Energy, 
+Inc., before the Federal Energy Regulatory Commission in the matter of Interconnection of Large Loads to the 
+Interstate Transmission System, Docket No. RM26-4-000, November 21, 2025; A. Levitt, J. Pfeifenberger, and 
+A. Mohan, Accelerating the Integration of New Co-located Generation and Loads, prepared for Bloom Energy 
+as part of Docket No. EL25-49-000, April 23, 2025. 
+2  
+PJM Interconnection, L.L.C., 195 FERC ¶ 61,209 (2026) (PJM Co-location Rehearing Order).
+--- PAGE 22 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 3 of 13 
+certain provisions in the order, the impacts of any challenges, and recommend potential paths 
+1 
+forward. Specifically, this affidavit addresses the implications of omitting from the tariff details 
+2 
+of the conditions under which a paired generator and large load would be curtailed.  
+3 
+We explain that substantial uncertainties about expected curtailment volumes are associated with 
+4 
+the vague and operationally unbounded description of curtailment conditions that PJM is 
+5 
+expected to file, and that this can substantially impact commercial viability and efficiency. We 
+6 
+set forth potential principles that would more precisely define curtailment conditions and allow 
+7 
+for less uncertain projections of potential curtailment volumes. We discuss different options for 
+8 
+mandatory resource adequacy and transmission security curtailment triggers.  
+9 
+We identify a NERC-defined Energy Emergency Action level 2 (EEA 2) as a suitable mandatory 
+10 
+trigger for resource adequacy, and market-based dispatch of a dispatchable load as a suitable 
+11 
+trigger for transmission security, with a cap on bid prices (e.g., $3,700/MWh, as for certain 
+12 
+demand response in PJM today) serving to communicate a desire to continue purchasing energy 
+13 
+until conventional economic actions to maintain transmission security have been exhausted. 
+14 
+Finally, we point to tariff language related to other curtailable service products in PJM to support 
+15 
+the principles associated with triggering these load reductions, and the associated Commission 
+16 
+precedent.  
+17 
+III. 
+BACKGROUND 
+18 
+In February 2025, the Commission initiated a show cause proceeding investigating whether 
+19 
+sections of PJM’s tariff related to co-location of generation with loads are just and reasonable. 
+20 
+FERC’s subsequent Order on December 18, 2025 found that PJM’s Tariff did not address with 
+21 
+sufficient clarity and consistency the rates, terms, and conditions applicable to generators serving 
+22 
+co-located load, nor those applicable to eligible customers taking transmission service on behalf 
+23 
+of such load. It required PJM to submit a compliance filing, and initiated paper hearing 
+24 
+procedures.3 These submissions informed the Commission’s PJM co-location Rehearing Order 
+25 
+issued on June 18, 2026, setting aside some portions of the December co-location Order, 
+26 
+ 
+3  
+PJM Interconnection, LLC, 193 FERC ¶ 61,217 (2025) (December co-location Order).
+--- PAGE 23 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 4 of 13 
+accepting portions of PJM’s compliance filing, and requiring PJM to implement further 
+1 
+compliance directives.4  
+2 
+IV. 
+CURTAILMENT TRIGGERS 
+3 
+IV.A. Problem Statement: The Benefits of Non-Firm Service Are 
+4 
+Impacted by Unclear Curtailment Risk 
+5 
+PJM’s recently approved proposal features unbounded uncertainty in the curtailment risk for 
+6 
+large loads paired with generators seeking to use one of the Commission’s new transmission 
+7 
+services. PJM’s approved framework establishes that such large load curtailment will be called 
+8 
+before pre-emergency demand response, but is silent on the types of conditions after which such 
+9 
+large load curtailment will be called.5 The upper limit of potential curtailments is therefore 
+10 
+unbounded, creating unnecessary uncertainty. A principled approach can be developed that 
+11 
+meets the reliability exigencies and relative priority of the non-firm large load transmission 
+12 
+services without entailing such unnecessary curtailment.  That can be achieved by establishing 
+13 
+principles for curtailment conditions or triggers, and describing the specific reliability conditions 
+14 
+that would cause PJM to issue a curtailment directive to non-firm CDS or Interim NITS 
+15 
+customers. 
+16 
+This underlying curtailment trigger is not a minor feature of the new FERC-required 
+17 
+transmission services, but one of the key attributes that determines the value of the service and 
+18 
+the associated impacts of the new large load on the balance of transmission customers. From the 
+19 
+viewpoint of prospective large-load customers, understanding curtailment triggers and the range 
+20 
+of potential curtailment volumes and patterns is critically important. The difference between a 
+21 
+service curtailed only during defined emergency conditions and one curtailed based on broad 
+22 
+operational discretion is not small, and will directly impact the investment feasibility, 
+23 
+characteristics, and impact of each of these services. As an example, a financial model 
+24 
+supporting a co-location investment will need assumptions regarding expected curtailment hours, 
+25 
+ 
+4  
+PJM co-location Rehearing Order.  
+5  
+PJM co-location Rehearing Order at P 551.
+--- PAGE 24 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 5 of 13 
+maximum event duration, seasonal concentration, event time, and whether curtailment is tied to 
+1 
+conditions affecting the specific delivery path or to broader PJM system conditions. Specified 
+2 
+curtailment triggers allow for a more refined assessment of how these assumptions will evolve 
+3 
+over time in the presence of growing large loads and emerging system dynamics.  
+4 
+IV.B. 
+The Solution is to Specify Principles for Curtailment 
+5 
+Triggers in the Tariff 
+6 
+In the PJM co-location Rehearing Order, the Commission specified that PJM must “specify the 
+7 
+curtailment priority” of the new transmission services in its Tariff, while leaving specific 
+8 
+implementation details for inclusion in the relevant PJM manuals.6 The Commission found that 
+9 
+this structure “provides transmission customers sufficient certainty as to their priority relative to 
+10 
+other transmission services and ensures that PJM has sufficient flexibility to preserve system 
+11 
+reliability in varying operating conditions.”7 However, this structure entails substantial 
+12 
+drawbacks for commercial viability and efficiency as noted above. The solution is to require that 
+13 
+PJM file in its Tariff specific curtailment principles that would enable market participants to 
+14 
+develop a more precise assessment of curtailment risk. 
+15 
+Further, such Tariff-specified curtailment principles are consistent with prior Commission 
+16 
+decisions regarding other types of curtailable load products in PJM, including firm and non-firm 
+17 
+Point-to-Point (PTP) transmission service, and the suite of pre-emergency and emergency 
+18 
+Demand Response (DR) programs offered in PJM’s markets. In these cases, the Commission 
+19 
+required or accepted Tariff language describing the circumstances in which load reduction or 
+20 
+curtailments would be required. The Commission has previously held that descriptions of 
+21 
+curtailment triggers for various transmission and market services materially affected rates, 
+22 
+charges, terms of service and were appropriately included in the PJM Tariff. Given this 
+23 
+precedent, we suggest that similar Tariff-level principles could apply to non-firm CDS and 
+24 
+Interim NITS, with the benefit of improving efficiency of investment and commercial viability 
+25 
+ 
+6  
+PJM co-location Rehearing Order at P 552.  
+7  
+PJM co-location Rehearing Order at P 552.
+--- PAGE 25 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 6 of 13 
+for co-located arrangements. The implementation details of these principles would still be left for 
+1 
+specification in PJM’s business practice manuals. 
+2 
+PJM’s Tariff provisions on PTP transmission service were required by the Commission to 
+3 
+include a description of curtailment triggers and associated system conditions. These descriptions 
+4 
+extend beyond a sequence of relative curtailment priorities, as the Commission has required in 
+5 
+the PJM co-location Rehearing Order. PJM’s current Tariff provisions on PTP service trace back 
+6 
+to the service provisions required by the Commission in Order 888.8 Subsequently, in Order 890, 
+7 
+the Commission reaffirmed pro-forma tariff language detailing the circumstances under which 
+8 
+firm and non-firm P2P transmission could be curtailed, explaining that these pro-forma Tariff 
+9 
+provisions “establish the terms and conditions under which a transmission provider may curtail 
+10 
+service to maintain reliable operation of the system.”9 The Tariff provisions themselves do not 
+11 
+provide a detailed operational framework (as would exist in the PJM manuals), but do provide a 
+12 
+general description of the conditions in which curtailments would occur.10 
+13 
+Similarly, in the context of PJM’s DR programs, the PJM Tariff more directly specifies the 
+14 
+operational expectations of both the pre-emergency and emergency DR categories, as found in 
+15 
+Attachment K Appendix § 8.5 (pre-emergency) and 8.6 (emergency). The Tariff explains that a 
+16 
+“pre-emergency event is implemented when economic resources are not adequate to serve load 
+17 
+and maintain reserves or maintain system reliability, and prior to proceeding into emergency 
+18 
+procedures.”11 Similarly, the Tariff explains that emergency DR is triggered “coincident with the 
+19 
+declaration of a Maximum Generation emergency,” “whenever economic generating capacity is 
+20 
+not adequate to serve load and maintain reserves or maintain system reliability.”12 The Tariff 
+21 
+ 
+8  
+Promoting Wholesale Competition Through Open Access Non-Discriminatory Transmission Services by Public 
+Utilities, Order No. 888, 75 FERC ¶ 61,080 at 337-339 (1996). 
+9  
+Preventing Undue Discrimination and Preference in Transmission Service , Order No. 890, 72 FR 12,266 at P 
+1620 (2007) (describing the Commission maintaining existing pro-forma language regarding transmission 
+curtailments).  
+10  See, e.g., PJM OATT at § 14.7 (“The Transmission Provider reserves the right to Curtail, in whole or in 
+part, Non-Firm Point-To-Point Transmission Service provided under the Tariff for reliability reasons when an 
+emergency or other unforeseen condition threatens to impair or degrade the reliability of the Transmission 
+System or the systems directly and indirectly interconnected with Transmission Provider's Transmission 
+System.”) 
+11  PJM OATT Attachment K Appendix § 8.5.  
+12  PJM OATT Attachment K Appendix § 8.6.
+--- PAGE 26 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 7 of 13 
+language describing these pre-emergency and emergency conditions does not unreasonably 
+1 
+restrain PJM, instead providing PJM dispatchers express flexibility while simultaneously 
+2 
+providing market participants with a sense of the likely system conditions during which 
+3 
+curtailment responsibilities will be triggered.13  
+4 
+Notably, the genesis of PJM’s pre-emergency DR product stemmed from a challenge 
+5 
+experienced by PJM dispatchers related to the curtailment trigger for the previous generation of 
+6 
+PJM DR products.14 Previously, triggering DR would initiate emergency conditions. To resolve 
+7 
+these challenges, PJM filed a series of Tariff revisions defining its pre-emergency and 
+8 
+emergency DR frameworks, including the dispatch triggers and the implications for emergency 
+9 
+procedures.15 In light of the significant magnitude of forecasted large load additions, we observe 
+10 
+the potential for the lack of Tariff detail to create further challenges to dispatch coordination. At 
+11 
+the least, the degree of curtailment is likely to directly impact the efficiency, commercial 
+12 
+viability, and speed to power ultimately enabled by these innovative transmission services 
+13 
+conceived by the Commission.  
+14 
+ 
+13  PJM OATT Attachment K Appendix § 8.5 (pre-emergency)(“Understanding the primary responsibility of 
+the Office of the Interconnection to maintain system security, the Office of the Interconnection will strive to 
+exhaust, but it is not obligated to exhaust, all economic resources prior to initiating a pre-emergency event”); 
+PJM OATT Attachment K Appendix § 8.6 (emergency)(“PJM will dispatch the resources of all Emergency 
+Load Response Program participants (not already dispatched under the Economic Load Response Program) 
+based on the availability, location, minimum notification time, dispatch price and/or quantity of load reduction 
+needed, subject to transmission constraints in the PJM Region.  To give PJM dispatchers the flexibility to 
+address reliability concerns in the most effective and timely manner and invoke the resources that offer the most 
+assurance of effective relief of emergency conditions, the dispatch of Demand Resource Registrations may not 
+be based solely on the least-cost resources since such dispatch shall be based not only on price, but also on 
+availability, location, minimum notification time and/or quantity of megawatts of load or load reduction 
+needed”). 
+14  PJM Interconnection L.L.C., 147 FERC ¶ 61,103 (2014) At PP 6-7 (“PJM notes, for example, that on two 
+occasions (on July 18, 2013 and September 11, 2013) its dispatchers called on demand response when system 
+conditions gave rise to the expectation that PJM was facing emergency conditions. PJM states that on both 
+occasions these emergency conditions failed to materialize… PJM concludes that its existing rules have created 
+operational inefficiencies, due to PJM’s current inability to call on demand response without first initiating 
+emergency procedures, and PJM’s current inability to call on these demand response resources in a more 
+precise, targeted manner”). 
+15  PJM Interconnection L.L.C., 147 FERC ¶ 61,103 (2014) At P 6.
+--- PAGE 27 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 8 of 13 
+IV.C. 
+Principles for Curtailment Triggers: Preserving Reliability 
+1 
+While Avoiding Excess Mandatory Curtailment 
+2 
+We outline potential principles for curtailment triggers to maintain reliability and meet the 
+3 
+Commission’s other objectives, including maximizing the benefits of non-firm transmission 
+4 
+services. Triggers apply to two categories of reliability: (1) resource adequacy (ensuring 
+5 
+sufficient supply) and (2) transmission security (keeping power flows within line limits). The 
+6 
+impact these triggers are likely to have on the durability and adoption of the transmission service, 
+7 
+described below, strongly indicates that these provisions materially affect rates, charges, and 
+8 
+terms of these transmission services.  
+9 
+In the first instance, triggers need to be able to maintain reliability so that the co-location 
+10 
+arrangement has a net zero impact on resource adequacy and on transmission security. Second, 
+11 
+they should feature comparable treatment to similarly situated participants. Third, they should be 
+12 
+reasonably well specified so that participants can assess curtailment risk without unnecessary 
+13 
+uncertainty. Fourth, they should not require more curtailment than necessary for meeting the 
+14 
+other principles.  
+15 
+In general, these principles can be adhered to by mandating net withdrawal reductions only after 
+16 
+ordinary economic actions have been exhausted, with such mandates grouped together with other 
+17 
+comparable curtailments. Indeed, PJM themselves have stated this principle, stating that: “…all 
+18 
+generating resources that are available (i.e., not on outage or otherwise unable to be brought on-
+19 
+line in a timely manner) will be utilized to serve the Interim NITS customer. The Interim NITS 
+20 
+customer would only be curtailed after these actions are taken and if the system is in an 
+21 
+unreliable state due to transmission system violations or capacity/reserve shortages.”16 To avoid 
+22 
+unnecessary uncertainty in curtailment volumes that significantly impacts commercial viability 
+23 
+of the non-firm large load transmission services, PJM need only file this principle in its Tariff.  
+24 
+ 
+16  PJM Interconnection L.L.C., Reply Brief, filed in Docket No. EL25-49-000 April 24, 2026, page 20.
+--- PAGE 28 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 9 of 13 
+IV.C.1.a. Resource Adequacy Triggers 
+1 
+An RTO or other grid operator is “resource adequate” when it has sufficient generation to serve 
+2 
+load except under the most severe operating conditions. If a system does not satisfy resource 
+3 
+adequacy criteria, operators may need to rely on excessive curtailments of firm load (rotating 
+4 
+brownouts) to keep supply and demand in balance. For a paired generator and load arrangement, 
+5 
+the fundamental resource adequacy curtailment trigger is a systemwide shortage in maintaining 
+6 
+the supply-demand balance.  
+7 
+Such shortages are commonly identified through a NERC-defined energy emergency alert 
+8 
+(EEA).17 EEA Level 1 indicates that all available generation is in use; EEA Level 2 indicates that 
+9 
+load management procedures are in effect; and EEA Level 3 indicates that firm load interruption, 
+10 
+i.e., a rolling brownout, is imminent or already underway. Comparable emergency actions could 
+11 
+occur after the issuance of EEA Level 1 (prior to pre-emergency DR, with among the largest 
+12 
+curtailment exposure), during the dispatch of pre-emergency DR (prior to EEA Level 2), or 
+13 
+during PJM Emergency Procedures Step 2 (which includes issuance of EEA Level 2 and 
+14 
+simultaneous dispatch of emergency DR, the least frequent trigger that would meet definitional 
+15 
+reliability need and maximize commercial viability).18  
+16 
+This choice of trigger would have significant impacts on curtailment volumes: over the last 24 
+17 
+months, PJM has had zero EEA 3 events, two emergency demand response deployment events 
+18 
+(amounting to EEA 2 events) of 4 and 7.5 hours, and twenty-two pre-emergency demand 
+19 
+response deployment events lasting between 4.5 and 10 hours, with a median of 7.5 hours 
+20 
+duration.19 This directional trend in curtailment frequency and duration of the EEA levels is a 
+21 
+feature of their design, but the absolute value may change as supply conditions continue to 
+22 
+tighten, while weather may revert to the mean relative to the unusually high maximum 
+23 
+temperatures in PJM during the 2025 and 2026 summers.  
+24 
+Accordingly, to remain consistent with NERC definitions surrounding emergency procedures, 
+25 
+the resource adequacy triggers for serving non-firm load (or net grid withdrawals) would occur at 
+26 
+ 
+17  NERC, EOP-011-4 Emergency Operations.  
+18  See PJM Manual 13 at § 2.3.2. 
+19  PJM, Emergency Procedures – Postings, accessed July 12, 2026.
+--- PAGE 29 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 10 of 13 
+EEA 2, alongside other emergency load management curtailments and prior to initiating load 
+1 
+shed. Strictly speaking, using EEA 3 as the dispatch trigger for reducing net transmission 
+2 
+withdrawals would preserve resource adequacy (reducing the incidence of actual firm load shed) 
+3 
+while producing the least frequent curtailment. However, it does not score well for the 
+4 
+“comparable treatment” principle we outline above, since curtailment of net withdrawals from 
+5 
+co-location arrangements is effectively a form of load management, and EEA 2 corresponds to 
+6 
+“load management procedures in effect.” A trigger that is coincident with deployment of pre-
+7 
+emergency demand response in PJM would also score well for comparable treatment, although it 
+8 
+would exhibit substantially more curtailment volume. Given PJM’s unique sequencing of load 
+9 
+management dispatch prior to the defined NERC emergency action level commensurate with 
+10 
+load management procedures, and desire to maintain conservative operations, resource adequacy 
+11 
+triggers consistent with those of pre-emergency demand response might also be appropriate. 
+12 
+PJM’s current proposal to trigger curtailments before even pre-emergency DR is called upon 
+13 
+does not score well for comparable treatment, and results in more curtailment volume than 
+14 
+necessary and reasonable.  
+15 
+IV.C.1.b. Transmission Security Triggers 
+16 
+Transmission security is required to keep power flows within the operating limits of transmission 
+17 
+facilities and maintain other reliability parameters, such as voltage and stability, within 
+18 
+acceptable bounds. Because grid conditions can change instantly, transmission facilities must 
+19 
+remain within their limits even after a single contingency, such as the loss of a generating unit or 
+20 
+transmission line. For transmission security, we outline two possible categories of triggers: 1) 
+21 
+pre-contingency actions, such as operator-directed dispatch and curtailment, and 2) post-
+22 
+contingency actions, made available by automated remedial action schemes (RAS). To preserve 
+23 
+transmission security, a load with co-located generation (or paired generation in an electrically-
+24 
+equivalent location) must reduce net grid withdrawals to zero when the grid operator (or an 
+25 
+automated RAS) determines that doing so is necessary.20 
+26 
+ 
+20  Under certain unlikely extreme conditions, especially when there are no protection schemes protecting against 
+internal contingencies associated with loss of co-located generation units, gross load may need to be curtailed to 
+zero. However, adequate design of facilities can relegate these conditions to extremely low probability, 
+comparable to the probability of curtailing ordinary firm load due to transmission security conditions.
+--- PAGE 30 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 11 of 13 
+For transmission security events, PJM can determine the need for curtailment through Security 
+1 
+Constrained Economic Dispatch (SCED), Security Constrained Unit Commitment (SCUC), or 
+2 
+other operational planning tools. Because reducing net withdrawals generally requires curtailing 
+3 
+high-value load, the efficient approach is to treat that curtailment as a high-cost reliability action 
+4 
+and use it only after ordinary economic alternatives, including generator redispatch, have been 
+5 
+exhausted. This can be achieved by configuring the load as a dispatchable asset with a high 
+6 
+willingness to pay reflected in a bid price at some cap (such as $2,000/MWh, the offer cap for 
+7 
+setting price as a generator, or $3,700/MWh, the bid cap for price-sensitive demand in the PJM 
+8 
+day-ahead market).21  
+9 
+A SCED-based approach would likely set nodal market clearing prices for energy at the bid price 
+10 
+during curtailment. A SCUC-based approach may be less direct, especially because it can 
+11 
+include other values such as shut-down cost and no-load cost that would not be reflected in 
+12 
+prices even after being dispatched to reduce net withdrawals. Either way, the dispatch signal 
+13 
+coming from the PJM market engine can serve as the mandatory directive to reduce non-firm 
+14 
+load or net withdrawals at a co-location arrangement. The ability to bid at the price cap serves to 
+15 
+meet the principle of exhausting economic actions prior to relying on the withdrawal reduction to 
+16 
+maintain transmission security, thereby avoiding inefficient curtailment when not strictly needed.  
+17 
+This approach has the virtue of using the same mechanism by which co-location arrangements 
+18 
+can voluntarily reduce net withdrawals economically in response to market prices. This would be 
+19 
+expected when the marginal cost of the co-located generation is lower than market prices, or 
+20 
+when the site has been enabled with low-cost load flexibility.  
+21 
+For cases where SCED dispatch does not meet the instantaneous reliability needs, RASs are 
+22 
+useful to enable the automated reduction of net load (from the paired load and associated 
+23 
+generation) immediately upon appearance of certain reliability threshold conditions. These 
+24 
+conditions typically involve a contingency, such as the sudden loss of an internal generating unit 
+25 
+or a nearby transmission line. RAS is a well-established technology and can be relied upon for 
+26 
+ensuring transmission security if it conforms with reliability guidelines, such as those published 
+27 
+ 
+21  See PJM Manual 11 at § 2.3.2.1 (Fixed and Price Sensitive Demand Bid Business Rules), 2.3.3.2 (Generator 
+Schedules), 2.17 (Applying Transmission Constraint Penalty Factors in the Market Clearing Engine).
+--- PAGE 31 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 12 of 13 
+by reliability operators who are already utilizing RAS for similar applications (WECC, CAISO, 
+1 
+and the AEMO in Australia).22 
+2 
+In practice, a RAS initiates reductions in grid withdrawals from a co-location arrangement only 
+3 
+after a contingency has actually occurred, which may be a low-probability event. Operator-
+4 
+initiated dispatch, by contrast, tends to reduce net withdrawals from a co-location arrangement 
+5 
+for the full period during which such a reduction may be needed to prevent a hypothetical 
+6 
+contingency from causing an overload. For example, a conventional operator-initiated approach 
+7 
+may require curtailing a large load for the duration of a multi-week planned transmission outage 
+8 
+(so a second transmission outage would not cause a reliability violation), while a RAS approach 
+9 
+would require no curtailments during that entire period (unless there were an unexpected second 
+10 
+transmission contingency were to actually occur, which is very unlikely). The duration and 
+11 
+frequency of withdrawal reductions therefore are much greater for operator-initiated dispatch 
+12 
+than for RAS-based curtailments. RAS use thus supports commercial feasibility, where 
+13 
+appropriate to grid conditions and the capabilities of a co-location arrangement. RAS also allows 
+14 
+for the full utilization of transmission capability by offering automated curtailments in response 
+15 
+to a transmission contingency, whereas operator-initiated dispatch requires holding back 
+16 
+transmission headroom in case that contingency were to occur.23 
+17 
+ 
+22  WECC, Remedial Action Scheme Design Guide (July, 2022); California ISO Planning Standards (February 2, 
+2023), at § III; AESO, Remedial Action Scheme Guidelines (September 27, 2022).  
+23  See Levitt, Thomas, Pfeifenberger, Felmus, Remedial Action Schemes (RAS) to Quickly and Affordably 
+Connect New Generation and Large Loads, presented to FERC staff (June 22, 2026). Available at 
+https://www.brattle.com/wp-content/uploads/2026/06/Remedial-Action-Schemes-RAS-to-Quickly-and-
+Affordably-Connect-New-Generation-and-Large-Loads.pdf
+--- PAGE 32 ---
+Affidavit of Andrew Levitt 
+Docket No. EL25-49-000 et al. | Page 13 of 13 
+Affidavit of Andrew Levitt  
+ 
+I, Andrew Levitt, do hereby swear that I have authored the Affidavit of Andrew Levitt 
+and the statements contained therein are true and accurate to the best of my knowledge and 
+belief.  
+Andrew Levitt  
+ 
+ 
+Date: July 20, 2026

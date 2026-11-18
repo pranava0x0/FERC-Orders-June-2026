@@ -1,0 +1,1308 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA 
+BEFORE THE 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+ 
+ 
+Proposal Of Pjm Interconnection, L.L.C. To 
+Establish Interim Resource Adequacy Service 
+And A Large Load Registry To Address 
+System Reliability  
+ 
+ 
+ 
+Docket No. RM26-3515-000 
+ 
+COMMENTS OF VOLTUS 
+Pursuant to Rule 211 of the Federal Energy Regulatory Commission’s (“FERC’s” or 
+“Commission’s”) Rules of Practice and Procedure, and the August 13 “Combined Notice of 
+Filings #2” setting a comment date of September 3, Voltus respectfully submits comments on 
+PJM Interconnection LLC’s (“PJM’s”) Federal Power Act Section 205 filing requesting the 
+approval of tariff amendments to establish an Interim Resource Adequacy Service (“IRAS”) and 
+Large Load Registry.
+ 
+1
+--- PAGE 2 ---
+TABLE OF CONTENTS 
+I. INTRODUCTION......................................................................................................................3 
+II. CLARIFYING THE BYONC CRITERIA FOR DEMAND-SIDE RESOURCES IS 
+NECESSARY TO PREVENT UNDUE DISCRIMINATION, SUPPORT PRIVATE 
+MARKET CONTRACTING, AND PROVIDE A JUST AND REASONABLE RATE......... 5 
+A. For DR/DER Resources, New Assets and Reactivations May Be Ineligible to Support 
+BYONC in the New Tariff Language As Drafted......................................................................6 
+B. New BTM Assets and Site Reactivations Are a Genuine and Substantial Potential Source 
+of Additive System Capacity..................................................................................................... 9 
+1. New BTM assets at existing DR/DER sites increase system capacity much like new 
+assets at existing generators/storage projects.......................................................................9 
+2. GW of capacity capability lie dormant at sites that once participated in DR................10 
+C. Excluding New BTM Assets and Site Reactivations is Undue Discrimination..................11 
+1. Treatment of new BTM assets at existing sites versus new capability at existing 
+generators/storage projects.................................................................................................11 
+2. Treatment of DR/DER site reactivations versus generator repowering.........................12 
+D. In a Context in Which the Private Market Has Been Asked to Proceed Expeditiously with 
+Bilateral Negotiations Before Tariff Language Has Been Finalized, the Exclusion of New 
+BTM Assets and DR/DER Site Reactivations Raises “Notice” Concerns.............................. 13 
+1. The exclusion of demand-side reactivations contravenes the alignment reached during 
+the CIFP process................................................................................................................ 13 
+2. Meanwhile, contracting parties made commercial decisions on a reasonable 
+expectation that reactivations would be included..............................................................14 
+E. Voltus Suggests a Redline to Plainly and Consistently Include New Assets and 
+Reactivations as Eligible to Support BYONC DR/DER in Both the Upcoming and Any 
+Future IRAS Periods................................................................................................................15 
+1. This definition is designed to mirror the structure and specificity of the 
+generation/storage eligibility criteria in VI(b)(i)............................................................... 16 
+2. Line item (2) within this definition straightforwardly covers new asset capacity.........17 
+3. Line item (3) employs the language and logic of the reactivation definition for FTM 
+generation in VI(b)(i)(4).................................................................................................... 17 
+F. Voltus’s Test of Site “Deactivation” is Non-Arbitrary and Non-Gameable Resulting in a 
+Just and Reasonable Definition of BYONC-Eligible DR/DER Reactivations........................17 
+1. What makes an effective deactivation test?...................................................................17 
+2. Voltus’s test delivers against the standards just described.............................................18 
+3. Voltus’s test solves for other potential concerns............................................................20 
+4. The test’s timeline matches the deactivation timeline on the generator side.................21 
+G. The Proposed Test Provides a Concrete Delineation of Potential Reactivations and Is 
+Administratively Viable...............................................................................................................21 
+H. Voltus Welcomes Other Reasonable Proposals to Identify Deactivations Eligible to 
+2
+--- PAGE 3 ---
+Reactivate for BYONC..........................................................................................................22 
+III. PJM’S INCLUSION OF PEAK SHAVING ADJUSTMENTS IN THE LARGE LOAD 
+REGISTRY IS LAUDABLE, BUT TO ALIGN INCENTIVES, THE MECHANISM 
+SHOULD ALSO BE CREDITED IN THE CALCULATION OF IRAS-ELIGIBLE LOAD 
+AMOUNTS...................................................................................................................................23 
+IV. VOLTUS SUGGESTS MINOR REDLINES TO ALIGN BYONC REPORTING 
+TIMELINES AS TARIFFED WITH UNDERLYING INTENT.............................................24 
+A. Adjusting RPM Auctions that Capacity Can Have Cleared Prior to Becoming BYONC..24 
+B. Enabling PJM to Verify DER/DR BYONC........................................................................ 25 
+1. Extension of resource owner certification in VII(a)(ii) to apply to section VI, as well as 
+the existing VIII.................................................................................................................26 
+2. Enabling PJM review of DR/DER BYONC after registrations have been completed in 
+a Delivery Year.................................................................................................................. 26 
+3. Clarification that deficiency charges will apply under VIII(d), in the event that the 
+review finds the BYONC arrangement does not meet the requirements of VI(b).............26 
+V. CONCLUSION........................................................................................................................27 
+ 
+I.​
+INTRODUCTION 
+Voltus, Inc., (“Voltus”) is a distributed energy resource (“DER”) aggregator operating in 
+all nine North American wholesale electricity markets. Voltus is a registered curtailment service 
+provider (“CSP”) with PJM Interconnection, L.L.C., (“PJM”) aggregating the flexible attributes 
+of retail load across the footprint and offering capacity, energy, and ancillary services products 
+into PJM markets. Relevant to the provision of capacity, Voltus has participated in all Reliability 
+Pricing Model (“RPM”) since the Base Residual Auction (“BRA”) for 2022/2023 (held in early 
+2021) and has delivered its capacity commitments as Demand Resources in the associated 
+delivery years. Voltus also has experience transacting PJM-accredited capacity bilaterally, 
+including to support “Bring Your Own Capacity
+TM” arrangements1. Voltus’s commercial 
+experience developing demand-side capacity resources closely informs these comments. 
+1 See Voltus Blog, Voltus launches “Bring Your Own Capacity Product to Support Data Center Growth and Grid 
+Resiliency” (Sept. 30, 2025), https://www.voltus.co/press/bring-your-own-capacity-data-centers.  
+3
+--- PAGE 4 ---
+Voltus participated actively throughout the Critical Issue Fast Path (“CIFP”) RBP process 
+and the Connect-and-Manage (“CAM” or “C&M”, IRAS’s predecessor) Senior Task Force 
+(“CAMSTF”) as well as the merged “CIFP-RBP/CAM.”2 Voltus had earlier engaged in a limited 
+manner in the preceding CIFP on Large Load Additions (“CIFP-LLA”), which had introduced 
+several of the concepts carried into the January 17 CIFP-LLA Board Decisional Letter and 
+same-day White House Energy Dominance Council and PJM State Governors’ Statement of 
+Principles, which together set the goals and initial shape of the instant tariff filing and the sister 
+RBP filing now before FERC. Voltus’s comments herein reflect a careful attention to the 
+evolution of the IRAS (and RBP) frameworks; consideration of the intent of various design 
+elements and their interactions; and a respect for the challenge of rapidly designing a complex 
+solution that meaningfully meets an unprecedented moment, while under intense political 
+scrutiny, and on largely-untested jurisdictional grounds. Voltus’s consistent interest throughout 
+the stakeholder process has been to ensure a level playing-field for demand-side capacity, with 
+rules designed to accommodate the differences between various resource classes without 
+arbitrarily or unnecessarily limiting the ability of distributed resources to address the resource 
+adequacy shortfall. These comments pick up certain issues Voltus raised during the CIFP process 
+and seek clarification on new questions raised by the proposed tariff language.  
+Voltus contends that incentivizing Bring Your Own New Capacity (“BYONC”) and 
+related frameworks is generally more effective and efficient at developing new capacity than 
+central procurement, and better protects non-cost-causers. Voltus approves the IRAS proposal as 
+a whole and supports PJM’s reintroduction of the RTO-wide CAM/IRAS incentive framework. 
+2 See CIFP-RBP/CAM record at https://www.pjm.com/committees-and-groups/cifp-rbp, and CIFP-LLA record at 
+https://www.pjm.com/committees-and-groups/cifp-lla; and Executive Summary and proposals filed by Voltus in 
+CIFP-RBP/CAM Stage 4, including Voltus RBP/C&M Package Executive Summary (June 2026), available at 
+https://www.pjm.com/-/media/DotCom/committees-groups/cifp-rbp/2026/20260630/20260630-item-02l---voltus---c
+m-and-rbp---executive-summary.pdf.  
+4
+--- PAGE 5 ---
+Voltus 
+further 
+appreciates 
+that 
+the 
+framework 
+includes 
+demand-side 
+capacity 
+resources—Demand Resources (“DR”) and Distributed Energy Resource (“DER”) Capacity 
+Aggregation Resources—as eligible to support BYONC arrangements, and commends PJM for 
+responding to broad stakeholder support to include the demand side. Demand-side resource 
+additions minimize the risk of stranded assets in the face of an uncertain long-term load forecast, 
+bring revenues directly to retail consumers to offset the increase in energy costs associated with 
+large load growth, support grid resiliency, and promote the technological and operational 
+modernization of the grid for more efficient utilization of existing infrastructure, in turn driving 
+lower system costs and improving affordability. Demand-side resources by definition increase 
+demand-side flexibility, crucial for absorbing the increasing renewables penetration that is a 
+policy preference and legislative requirement for many states within the PJM footprint.  
+Voltus’s primary concern herein is that by excluding certain critical categories of new, 
+durable demand-side capacity, the IRAS tariff is unjust and unreasonable because it 
+unnecessarily limits the volumes of capacity available to ease system constraints and provide 
+ratepayer relief. This issue is addressed in Section II. Second, Voltus suggests an expansion of 
+the inclusion of the Peak Shaving Adjustment mechanism to incentivize large load funding of the 
+same (Section III). Third, Voltus offers minor redlines to clarify and align the required timelines 
+for reporting and verifying BYONC arrangements (Section IV). A complete set of suggested 
+redlines is provided in Attachment A.  
+II.​
+CLARIFYING 
+THE 
+BYONC 
+CRITERIA 
+FOR 
+DEMAND-SIDE 
+RESOURCES 
+IS 
+NECESSARY 
+TO 
+PREVENT 
+UNDUE 
+DISCRIMINATION, SUPPORT PRIVATE MARKET CONTRACTING, 
+AND PROVIDE A JUST AND REASONABLE RATE 
+The inclusion of new capacity from Demand Resources and DER Capacity Aggregation 
+Resources naturally raises a question as to requirements on the sites underlying the aggregations. 
+5
+--- PAGE 6 ---
+Stakeholders and PJM staff devoted significant energy to this question during the CIFP process 
+and discussed the inclusion of several categories: (1) the capacity of sites providing wholesale 
+capacity for the first time, (2) the added capacity associated with the installation of 
+behind-the-meter (“BTM”) assets (generation, storage) to support DR/DER participation, and (3) 
+the potential “reactivation” capacity of sites that supported a capacity resource at some point in 
+the past, under different conditions, but no longer participate. PJM’s last several proposals on 
+BYONC eligibility included all three categories, consistent with the analogous allowance of 
+new-build, incremental, and repowered front-of-the-meter (“FTM”) generation and storage 
+capacity.   
+However, the proposed Tariff language on DR/DER resource eligibility only 
+unambiguously includes the first category: sites providing wholesale capacity for the first time. 
+Voltus understands—and there is evidence in the Tariff’s drafting—that excluding both 
+categories was not the intent: PJM intended preserve the eligibility of new capacity associated 
+with the installation of BTM generation/storage (“new asset capacity”), but chose to exclude the 
+“reactivation” of any portion of a site’s capacity not associated with a new asset.3  
+Given this understanding of intent, several of the following subsections focus specifically 
+on site reactivations rather than new asset capacity. Voltus contends that both categories must be 
+added back to the final tariff and provides a redline to effectuate this change in Section II.E.  
+3 FERC precedent strongly supports the non-discriminatory treatment of demand-side resources. See FERC Order 
+No. 2222: Fact Sheet (Sept. 28, 2020) (“FERC Order No. 2222 will help usher in the electric grid of the future and 
+promote competition in electric markets by removing the barriers preventing distributed energy resources (DERs) 
+from competing on a level playing field in the organized capacity, energy and ancillary services markets run by 
+regional grid operators.”). 
+6
+--- PAGE 7 ---
+A.​ For DR/DER Resources, New Assets and Reactivations May Be Ineligible to 
+Support BYONC in the New Tariff Language As Drafted 
+DR/DER resource eligibility is delineated in proposed Tariff, Attachment DD-4, section 
+VI(b): 
+(ii) For Demand Resources or DER Capacity Aggregation Resources, the resource 
+must qualify as a Planned Demand Resource or DER Capacity Aggregation 
+Resource, as described in the RAA, Schedule 6 and Schedule 6.2 and: 
+(1) be composed of, or reliant on, any location not registered in or prior to 
+the 2026/2027 Delivery Year at which an incremental amount at that 
+location is the result of the registration of new generation or storage assets 
+at the location. However, to the extent three consecutive Delivery Years 
+meet the requirements of Tariff, Attachment DD-4, section IV(b)(iii), then 
+will be composed of, or reliant on, any location registered in the Delivery 
+Year prior to the first Delivery Year for which the requirements of Tariff, 
+Attachment DD-4, section IV(b)(iii) are not met; and/or 
+(2) be composed of, or reliant on, locations that were not previously 
+supported Capacity Resource, a Peak Shaving Adjustment, or Price 
+Responsive Demand for or prior to the 2026/2027 Delivery Year. 
+However, to the extent three consecutive Delivery Years meet the 
+requirements of Tariff, Attachment DD-4, section IV(b)(iii), then will be 
+composed of, or reliant on, locations that were not previously supported a 
+Capacity Resource, a Peak Shaving Adjustment, or Price Responsive 
+Demand for the Delivery Year prior to the first Delivery Year for which 
+the requirements of Tariff, Attachment DD-4, section IV(b)(iii) are not 
+met. 
+(The orange reflects text that was included in PJM’s redlined tariff in a different color 
+than the surrounding text, and may indicate late-stage edits.)  
+The second sentences in both VI(b)(ii)(1) and VI(b)(ii)(2) above address the composition 
+of eligible BYONC in a future state in which the system has left and then returned to the 
+BYONC posture. Putting these aside for now, DR/DER BYONC resources for the IRAS period 
+beginning June 1, 2027, must  
+7
+--- PAGE 8 ---
+be composed of, or reliant on, any location not registered in or prior to the 
+2026/2027 Delivery Year at which an incremental amount at that location is the 
+result of the registration of new generation or storage assets . . . and/or . . . 
+locations that were not previously supported [sic] a Capacity Resource, a Peak 
+Shaving Adjustment, or Price Responsive Demand for or prior to the 2026/2027 
+Delivery Year. 
+The first clause allows new asset capacity but seemingly only at sites with no past 
+DR/DER participation; the second allows new sites in general. Since sites supporting Capacity 
+Resources, Peak Shaving Adjustments, and Price Responsive Demand must all be registered in 
+PJM’s Demand Response Hub database tool (“DR Hub”), the qualification in the second clause 
+is likely coincident with “not registered” in the first. Additionally, since a new site’s capacity 
+nomination will count whether or not tied to a new asset, and since the capacity nomination will 
+include the new asset’s capability, the first clause is redundant to the second. Fundamentally, this 
+definition counts as new all of (but only the) capacity of never-before-registered sites. 
+As to the future IRAS periods, as covered by the second sentences of VI(b)(ii)(1) and 
+VI(b)(ii)(2), “to the extent three consecutive Delivery Years meet the requirements of Tariff, 
+Attachment DD-4, section IV(b)(iii),” DR/DER BYONC resources 
+will be composed of, or reliant on, any location registered in the Delivery Year 
+prior to the first Delivery Year for which the requirements of Tariff, Attachment 
+DD-4, section IV(b)(iii) are not met; and/or . . . locations that were not previously 
+supported a Capacity Resource, a Peak Shaving Adjustment, or Price Responsive 
+Demand for the Delivery Year prior to the first Delivery Year for which the 
+requirements of Tariff, Attachment DD-4, section IV(b)(iii) are not met. 
+On a plain reading, the first clause above actually requires that a site was registered in the 
+Delivery Year prior to the resumption of the IRAS posture (a requirement at odds with a plain 
+meaning of “new”), which seems to be the opposite of the intent. Conversely, the second clause 
+requires that the site was not supporting capacity (and therefore was not registered) in that same 
+Delivery Year—a more plausible test of “new.” Reading these clauses literally would leave no 
+path for any site to support BYONC in a future IRAS period. Voltus expects a simple drafting 
+8
+--- PAGE 9 ---
+error: the exclusion of “not” before “registered” in the first clause. On that assumption, the tariff 
+is intended to allow reactivations for BYONC in a future IRAS posture, since the test is on 
+registration and/or support of a capacity product in the year prior to the resumption of IRAS 
+only.  
+Thus the tariff drafting on plain reading allows only new sites today, and (assuming a 
+one-word addition to resolve the apparent contradiction) both new sites and reactivations toward 
+BYONC in future IRAS iterations.  
+B.​ New BTM Assets and Site Reactivations Are a Genuine and Substantial 
+Potential Source of Additive System Capacity 
+It is worth considering concretely the assets excluded by PJM’s current definition. First, 
+without Tariff clarification, new “steel-in-the-ground” physical BTM generation and storage 
+investments may not support BYONC unless sited at locations that have never before touched a 
+wholesale capacity product. In parallel, sites that have ever touched a wholesale capacity product 
+are ineligible. Both exclusions carve away very significant sources of new capacity, and 
+incentivizing investment in the excluded categories is manifestly good policy, as the following 
+examples illustrate.  
+1.​ New BTM assets at existing DR/DER sites increase system capacity much 
+like new assets at existing generators/storage projects  
+Consider a site that has participated in demand response by changing air conditioning 
+setpoints, where air conditioning is only 5% of site load at a 20 MW large industrial facility. 
+Installing a battery on site, sized to meet 95-100% of the full site’s load, will increase the volume 
+of potential site curtailment by 19 MW. The battery will also add the ability to participate in 
+ancillary services, the Energy market, and to avoid transmission and distribution system peaks. 
+Or consider a site already curtailing its full load when PJM’s Emergency Load Response 
+Program (“ELRP”) is dispatched but with the square footage and appetite to install a solar and 
+9
+--- PAGE 10 ---
+storage system, fuel cell, etc. that could be reflected as injection capacity under the DER Model. 
+In both cases, the system gains durable physical infrastructure that is genuinely additive. New 
+storage and generation installed alongside existing sources of capacity—whether behind the 
+meter or in front—provide exactly the kind of efficient capacity expansion necessary to 
+counteract the reliability impacts of unprecedented load growth. 
+The BTM placement of new assets provides additional community benefits. BTM assets 
+improve local grid resiliency, may avoid network upgrades as compared to the generator case for 
+the same volume of new capacity, and send revenues directly to retail customers. BTM 
+generation and storage also carry less stranded asset risk than FTM assets because the BTM 
+assets may have additional use cases, such as providing back-up in the case of a blackout.   
+2.​ GW of capacity capability lie dormant at sites that once participated in DR  
+Consider next a location that once did DR but has gone dormant. Perhaps curtailment 
+proved operationally more disruptive than anticipated, or the facility lost the on-site staff 
+required to execute a manual reduction when called. As such, the opportunity cost in terms of 
+production, throughput, or other foregone benefits (e.g. HVAC access) simply exceeded the 
+compensation the capacity market had to offer. In each case the underlying capability remains 
+physically present but is “locked out” in absence of a business case sufficient to bring the 
+capability to market. 
+The incentives related to BYONC allow aggregators to overcome these obstacles in 
+several ways. The aggregator may invest in new systems and equipment—building controls, 
+automatic load control—that address operational infeasibility. Higher revenues may be sufficient 
+in themselves to incent participation, and the extended term and revenue certainty associated 
+with BYONC arrangements may have independent value. In short, BYONC provides the 
+financial incentive to make the participation of dormant sites feasible and economic.  
+10
+--- PAGE 11 ---
+There are potentially GW of capacity at long-dormant sites. DR, which has been an 
+eligible RPM resource class since the first auction, in 2007, peaked at just shy of 11 GW 
+Installed Capacity (“ICAP”) registered Demand Resources in Delivery Year 2015/2016, but was 
+only 6.76 GW in 2024/20254 (with erosion due to increasing dispatch frequency and other 
+factors). The delta provides an indication of the volume of existing but “dormant” capability. 
+Allowing the market to discover these missing GW and their appropriate price is good policy. 
+Note also that site control upgrades and other investments that may be required to “unlock” the 
+capability of dormant sites may be accomplished much faster than utility-scale uprates, much 
+like BTM generation and storage development timelines are shorter than new generator or FTM 
+storage development timelines. “Modular” distributed investments offer a significant advantage 
+in terms of Commercial Operation Date (“COD”). 
+C.​ Excluding New BTM Assets and Site Reactivations is Undue Discrimination 
+Because an assessment of the differential treatment of DR/DER versus generation/storage 
+resources for BYONC eligibility may be informed by consideration of RBP and Qualifying RBP 
+Offset (“QRBPO”) criteria, this section notes the resource eligibility criteria for these other two 
+products as defined in PJM’s companion RBP filing in Docket No. ER26-3380. The same 
+underlying resources should be able to support both BYONC and QRBPO if tied to load growth 
+in the 2027/2028 and 2028/2029 Delivery Years; this alignment ensures that a zone may receive 
+QRBPO credit for the capacity investments that are decreasing the zone’s Eligible Large Load 
+Amount, thus avoiding double procurement.  
+4 See Monitoring Analytics, 2024 State of the Market Report for PJM, Table 5-12 (2025), available at 
+https://www.monitoringanalytics.com/reports/PJM_State_of_the_Market/2024/2024-som-pjm-sec5.pdf. 
+11
+--- PAGE 12 ---
+1.​ Treatment of new BTM assets at existing sites versus new capability at 
+existing generators/storage projects 
+​
+Unlike the increase of capacity within an existing generation or storage facility, achieved 
+in proposed Tariff, Attachment DD-4, section VI(a) through either an uprate, the utilization of 
+additional interconnection rights, or a change to fuel type, all of which are incremental capacity 
+for an existing physical asset, the addition of new BTM assets involves the addition of 
+completely new physical assets at an existing site. For this reason, and for those outlined in 
+section B.1 supra, Voltus’ suggested wording for proposed Tariff, Attachment DD-4, section 
+VI(b)(ii)(2) captures the capacity related to those new physical assets. 
+2.​ Treatment of DR/DER site reactivations versus generator repowering 
+While the "repowering of a deactivated generation resource that deactivated prior to April 
+10, 2026" is eligible to back BYONC, QRBPO, and even sell offers into RBP itself, a site that 
+has ever participated as DR in the past is ineligible to support aggregations toward any of the 
+three products. The proposed Tariff language just quoted applies both to BYONC5 and QRBPO6 
+resource eligibility. The language on RBP resource eligibility is even more inclusive, allowing 
+“repowering of a generation resource that had deactivated, or announced deactivation, on or 
+before April 10, 2026” (emphasis added).7 Given the availability of tests to effectively identify 
+what DR/DER should be considered eligible to reactivate as new, including the test suggested by 
+Voltus later in these comments, there is no justification for this discriminatory treatment. 
+The exclusion discriminates unduly between rate classes and results in a perverse policy 
+outcome: native load that constituted the vanguard of DR participation but was subsequently 
+unable or uninterested in sustaining that participation are blocked from accessing the new large 
+load incentives that would make market reentry feasible. This will disproportionately affect DR’s 
+7 Proposed Tariff, Attachment DD, section 18.5(b) (RBP filing). 
+6 Proposed Tariff, Attachment DD, section 18.2(b) (RBP filing). 
+5 Proposed Tariff, Attachment DD-4, section VI(b). 
+12
+--- PAGE 13 ---
+traditional early adopters, namely commercial and industrial (“C&I”) customers previously 
+considered “large loads.” Meanwhile, new load can meet its IRAS obligation using on-site load 
+flexibility backed by storage and generation. The distinction siphons expected BYONC revenues 
+from veteran to new large loads and promotes on-site asset build-out at data center complexes at 
+the expense of investment in the efficient utilization of dormant C&I capacity. Early DR adopters 
+should not be penalized for the long-ago capacity benefits they provided under different market 
+conditions and DR program designs.   
+D.​ In a Context in Which the Private Market Has Been Asked to Proceed 
+Expeditiously with Bilateral Negotiations Before Tariff Language Has Been 
+Finalized, the Exclusion of New BTM Assets and DR/DER Site Reactivations 
+Raises “Notice” Concerns 
+This section primarily traces the evolution of the CIFP conversation on DR/DER 
+reactivation eligibility rather than new BTM asset eligibility, because this is the category that 
+PJM excluded from both BYONC and QRBPO in its tariff filings. The apparent exclusion from 
+BYONC of new BTM asset capacity may be a misreading on Voltus’s part or the result of a 
+drafting error. However, to the extent the category has been excluded, very similar notice 
+concerns as delineated below apply. 
+1.​ The exclusion of demand-side reactivations contravenes the alignment 
+reached during the CIFP process 
+During the CIFP-RBP process and later CIFP-RBP/CAM,Voltus and other stakeholders 
+advocated that DR/DER site reactivations should be treated as new capacity equivalently with 
+the generation side. On the BYONC side, Staff included reactivations in its very first proposal 
+that specified what counted as new DR/DER, presented May 15, 2026.8 All versions of PJM’s 
+Stage 3 package included reactivations, and PJM staff verbally acknowledged the reasonableness 
+8 Tim Horger, PJM, Connect and Manage PJM Proposal, at slide 8 (May 15, 2026), available at 
+https://www.pjm.com/-/media/DotCom/committees-groups/task-forces/camstf/2026/20260515/20260515-item-03a--
+-connect--manage-pjm-package---presentation.pdf. 
+13
+--- PAGE 14 ---
+of providing a market for dormant sites to reactivate as new on the basis of large load price 
+incentives, given that existing incentives had proven insufficient for such sites. 
+Contemporaneously, BYONC was proposed as eligible to decrement the RBP procurement 
+target, implying reactivations’ eligibility for this function as well. The tight linkage between 
+BYONC and the RBP target was maintained until the day before the CIFP Stage 4 meeting.9 
+2.​ Meanwhile, contracting parties made commercial decisions on a 
+reasonable expectation that reactivations would be included 
+Thus, for the final six weeks of the stakeholder process, and up until the RBP and IRAS 
+tariff filings four to six weeks later, stakeholders expected that DR/DER reactivations would be 
+eligible both to reduce a large load’s IRAS exposure (the BYONC function) and to decrement the 
+RBP procurement target (the QRBPO function). Given the very short timeframe to finalize 
+bilaterals, especially for QRBPO purposes, the industry made investments based on the latest and 
+best understanding of resource eligibility. This meant reactivations on both the generation and 
+DR sides.  
+Pursuing, under conditions of regulatory uncertainty, both the large load bilaterals and the 
+contracts with the underlying sites that would serve those bilaterals aligned with the best interests 
+of the system and the provided incentives. Political actors had expressed urgency, and PJM was 
+actively matching potential buyers and sellers through RBP’s “matchmaking” service. 
+BYONC arrangements with potentially very large companies as buyers imply complex 
+contracting for a product (IRAS protection) never before sold. Parties required time to develop 
+shared understanding and design agreements addressing risk allocation for unknowns beyond 
+just present regulatory uncertainty. With IRAS beginning in less than a year and large loads 
+9 See PJM, CIFP - Reliability Backstop Procurement - Options and Packages Matrix - Updated (June 29, 2026), 
+https://www.pjm.com/-/media/DotCom/committees-groups/cifp-rbp/2026/20260630/20260630-cifp---reliability-bac
+kstop-procurement---options-and-packages-matrix---updated.xls. 
+14
+--- PAGE 15 ---
+seeking to lock in protection, bilateral discussions needed to begin prior to final tariff approval, 
+in October or later. PJM has requested effective dates for both 205 filings of just after tariff 
+approval, to meet political urgency and accommodate interdependencies with the December 
+BRA.  
+Parties were thus encouraged, if not required, to make commercial investments and 
+pursue commercial arrangements on the basis of evidence-backed assessments as to the range of 
+final tariff outcomes. As explained above, the DR/DER industry’s defensible expectation was 
+that site reactivations and new BTM assets would be eligible to supply BYONC.  
+PJM has publicly explained neither the reasoning behind the change from the CIFP 
+conclusion nor the justification for discriminatory treatment compared to generators. Neither the 
+Board CIFP decisional letter10 nor the Board Executive Summaries on RBP11 and IRAS12 
+mentioned the specific definitions of new DR/DER, and there was no reference to a change in 
+these definitions or to considerations that would have led to such a change. 
+ 
+12 PJM Board, CIFP Framework for Service During Periods of Insufficient Resource Adequacy Executive Summary 
+(July 27, 2026), available at 
+https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20260727-cifp-framework-f
+or-service-during-periods-of-insufficient-resource-adequacy-executive-summary.pdf  
+11 PJM Board, CIFP Reliability Backstop Procurement Executive Summary (July 27, 2026), available at 
+https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20260727-cifp-reliability-ba
+ckstop-procurement-pjm-board-decision.pdf  
+10 PJM Board, Board Decisional Letter on CIFP Reliability Backstop Procurement and Connect and Manage (July 
+27, 2026), available at 
+https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20260727-board-decisional-
+letter-on-cifp-reliability-backstop-procurement-and-connect-and-manage.pdf  
+15
+--- PAGE 16 ---
+E. Voltus Suggests a Redline to Plainly and Consistently Include New Assets and 
+Reactivations as Eligible to Support BYONC DR/DER in Both the Upcoming 
+and Any Future IRAS Periods 
+Voltus suggested language (in italics below) replaces proposed Tariff, Attachment DD-4, 
+sections VI(b)(ii)(1)-(2): 
+(ii) For Demand Resources or DER Capacity Aggregation Resources, the resource 
+must qualify as a Planned Demand Resource or DER Capacity Aggregation 
+Resource, as described in the RAA, Schedule 6 and Schedule 6.2, and must be 
+supported by any combination of the following: 
+(1)​sites never previously registered nor otherwise previously supporting a 
+Capacity Resource, a Peak Shaving Adjustment, or Price Responsive 
+Demand; 
+(2)​new-build behind-the-meter generation or storage assets;  
+(3)​reactivations of locations previously registered or otherwise supporting a 
+Capacity Resource, a Peak Shaving Adjustment, or Price Responsive 
+Demand that deactivated prior to, and were not registered in or since, the 
+2025/2026 Delivery Year. 
+1.​ This definition is designed to mirror the structure and specificity of the 
+generation/storage eligibility criteria in VI(b)(i) 
+This recommended definition parallels the structure PJM has used to define resource 
+eligibility on the FTM generation/storage side: first providing for resources that are fully new to 
+the system, then accommodating new capacity tied to specific investments, and finally providing 
+for the repowering of dormant resources. Like the generation and storage criteria, the suggested 
+definition handles the current and future IRAS periods together, collapsing the additional 
+clauses.13 And, wherever possible, the above definition borrows the wording of the 
+13 The urgent imperative is to define BYONC eligibility for the first IRAS period, beginning next June. This will 
+provide much-needed clarity for contracting. If the system moves out of and then back into an IRAS posture as 
+contemplated by proposed Tariff, Attachment DD-4, section IV(b) in combination with the proposed definition of 
+New Large Load tariff terms, at a possibly far-future date, it is likely that certain elements of Attachment DD-4 will 
+need to be revisited to account for changing conditions and lessons learned. PJM’s proposed BYONC-eligibility 
+language on the generation/storage side accomplishes the tariff’s goal of capturing the policy determinations hashed 
+out in the stakeholder process as to the kinds of capabilities that should be incentivized by large load investments. 
+Voltus’s amendments attempt to do the same on the DR/DER side. Further specifications needed to accommodate a 
+future IRAS period, if not requiring tariff revisions, may be appropriately determined in the manuals. 
+16
+--- PAGE 17 ---
+generation/storage eligibility criteria. This consistency supports interpretive ease and 
+unambiguously provides for non-discriminatory treatment of distributed demand-side capacity.  
+The suggested language supplies fundamentally the same level of specificity as PJM's 
+language on the underlying sites that may contribute to an aggregation. Voltus does not propose 
+that the tariff resolve every question of measurement and verification for each category. Many 
+such determinations are properly developed in the PJM manuals.  
+2.​ Line item (2) within this definition straightforwardly covers new asset 
+capacity 
+The capacity associated with a new investment and installation of a physical asset should 
+be included as new regardless of the history of the host site. There is no need to link the 
+allowance of this type of capacity to only those locations that do not otherwise “host” eligible 
+BYONC capacity. Doing so creates potential ambiguity as to whether new assets at new or 
+reactivated sites may support BYONC.  
+3.​ Line item (3) employs the language and logic of the reactivation definition 
+for FTM generation in VI(b)(i)(4) 
+On the generation/storage side, PJM proposes that the “repowering of a deactivated 
+generation resource that deactivated prior to April 10, 2026” may support a BYONC 
+arrangement.14 Voltus’s proposed allowance of DR/DER reactivations parallels this structure by 
+permitting the reactivation of sites deactivated by a certain date. The primary test is on whether 
+the site has been registered in the Delivery Years since that date. A site could be registered, 
+indicating availability, but never dispatched. Thus registration is a stricter and cleaner check than 
+a criteria based only on “support” of a capacity resource or "participation" in DR/DER.  
+14 Proposed Tariff, Attachment DD-4, section VI(b)(i)(4). 
+17
+--- PAGE 18 ---
+F. Voltus’s Test of Site “Deactivation” is Non-Arbitrary and Non-Gameable 
+Resulting in a Just and Reasonable Definition of BYONC-Eligible DR/DER 
+Reactivations 
+1.​ What makes an effective deactivation test? 
+The inclusion of new sites and new assets as providing new capacity is largely 
+self-justifying. These resources are providing capacity incremental to the system’s total capacity 
+today. On the other hand, reactivations—whether of generators and FTM storage or sites 
+underlying an aggregation—invite further consideration. It is not self-evident that a generator or 
+site that previously provided system capacity should be counted as new.  
+Rather, reactivations provide additive capacity against the counterfactual that the relevant 
+resource remains out of commission. If a large load incentivizes the resurrection of a resource 
+that would otherwise stay out of market, that large load may be legitimately credited for 
+offsetting the impact of its addition. Thus dormant capacity may be considered new again, if the 
+BYONC arrangement is the cause-in-fact of the repowering. This is the logic supporting 
+generator repowerings is section VI(b)(i)(4).   
+Thus the appropriate definition of DR/DER reactivations must assess whether a site now 
+out of market would stay out in the normal course of business; in other words, whether it should 
+be considered actually deactivated rather than temporarily unavailable. A deactivated site is one 
+that is not out of market for exogenous, short-term reasons such as maintenance, but for reasons 
+that will hold for the foreseeable future unless there is a material change in market conditions 
+(such as a sizable increase in available incentives to participate). An effective test will capture 
+true deactivations as so defined without sweeping in false positives; at the same time, the 
+line-drawing exercise should not arbitrarily exclude a subset of true deactivations in its efforts to 
+avoid false positives. Finally, the test should not be gameable. It should not allow for a site, by a 
+18
+--- PAGE 19 ---
+change in behavior, to intentionally preserve or create the ability to qualify for the BYONC 
+incentive.   
+2.​ Voltus’s test delivers against the standards just described 
+Voltus’s test meets the mark because it calibrates the start of the lookback period to the 
+specific market conditions of the pre-IRAS Delivery Years. BRAs for both 2025/2026 and 
+2026/2027 cleared at the administratively-imposed price cap, resulting in unprecedented capacity 
+value that aggregators could pass on to sites willing to register and perform in these Delivery 
+Years. BRA results were known well in advance of registration decisions; a retail energy 
+customer deciding not to participate for those Delivery Years did so with full knowledge of the 
+high compensation on offer—substantially diminishing the possibility that could have been 
+incentivized to reenter the market under the non-IRAS status quo. A retail customer with past 
+experience of DR but that registered in neither of these years has signalled that participation is 
+uneconomic or otherwise infeasible absent significant changes at the site or with respect to 
+market conditions. Simply put, if a site that once participated would have come back anyway 
+absent the BYONC incentive, it would have done so in 2025/2026 or 2026/2027.  
+If a site is temporarily unavailable due to maintenance or other ordinary, temporary 
+conditions, under high pricing conditions, customers and their aggregators are incentivized to 
+resolve the condition and become available as quickly as possible. Thus, while a single-year 
+lookback risks sweeping in locations that happened to be unavailable for an ordinary reason but 
+that would have returned the following year by default, checking for non-registration in 
+consecutive Delivery Years substantially avoids this risk: a location out for maintenance in 
+2025/2026 would be expected to return in 2026/2027, and a location out in 2026/2027 would 
+ordinarily have participated in 2025/2026. Nonparticipation in both years despite the highest 
+pricing PJM’s capacity market has thus far produced is not readily explained by transient, 
+19
+--- PAGE 20 ---
+addressable circumstances, but instead indicates a permanent choice or necessity to “deactivate” 
+the site.  
+The test is also immune to strategic behavior: when the registration decision for 
+2025/2026 was made (in May 2025), the IRAS and BYONC frameworks did not exist and were 
+not reasonably foreseeable in their current form. No location would have withheld itself from the 
+market in order to preserve or manufacture eligibility for a construct that had not yet been 
+socialized or developed. The suggested test identifies revealed preference under conditions that 
+could not have been influenced by the eligibility rule the Commission is now asked to approve. 
+Note that pushing back the start of the lookback period does not improve the test but 
+instead disqualifies true deactivations from 2025/2026. A site whose departure from the market 
+exactly coincided with a step-change in pricing—an order of magnitude—and which did not 
+return the following year despite the 2025/2026 price signal and the equally high pricing realized 
+and available for 2026/2027, should be considered intentionally dormant. Beginning the 
+lookback with Delivery Year 2025/2026 is a well-justified rather than arbitrary choice. 
+3.​ Voltus’s test solves for other potential concerns 
+In conversations with PJM, Voltus has heard another concern that may have informed the 
+exclusion of reactivations: that Curtailment Service Providers routinely nominate more locations, 
+and more UCAP, than is strictly necessary to fill a cleared RPM commitment, to build a 
+performance buffer into the portfolio. Individual locations may effectively cycle in and out of the 
+resource from year to year or from dispatch to dispatch, such that a location's apparent absence in 
+a given period does not reflect genuine unavailability. PJM’s concern, as Voltus understands, is 
+that this “cycling” invites or enables gaming of the “reactivation” category. 
+Voltus first observes that there is nothing undesirable about the performance buffer / 
+cycling dynamic. Aggregators should be encouraged to build redundancy into their portfolios so 
+20
+--- PAGE 21 ---
+they may perform fully against their commitments. Reliable performance across the range of 
+conditions during dispatch requires portfolio diversification as well as judgment about how to 
+sequence and manage the participation of individual locations during an event. These activities 
+are core to an aggregator’s function and comprise the layer converting distributed resources into 
+a product legible to and usable by the system operator: individually variable end-use customers 
+may function as a firm capacity resource. 
+However, Voltus understands and agrees with the premise of the concern with “cycling” 
+in the context of reactivation: a location that was available in a given year to contribute to any 
+test or dispatch, but for whatever reason did not end up doing so, has not deactivated and should 
+not be counted as new capacity. 
+Voltus's recommended test addresses the concern by disqualifying sites that were in any 
+way available to provide capacity: the test is on registrations, not just participation. Only a 
+location registered by the start of the Delivery Year may have its actions measured and settled 
+toward DR/DER performance. Whether the CSP in fact calls upon such location in response to a 
+PJM dispatch instruction is immaterial: the location was registered, and it therefore fails Voltus’s 
+reactivation test. The test avoids any “cycling” concerns (as does, incidentally, PJM’s own 
+proposed wording which defines DR/DER eligibility in terms of registration and/or support of a 
+capacity resource).  
+4.​ The test’s timeline matches the deactivation timeline on the generator side 
+Finally, the proposed test neatly aligns DR/DER reactivation with generator/storage 
+reactivation, defined as “repowering of a deactivated generation resource that deactivated prior 
+to April 10, 2026.”15 The process to complete deactivation following the decision or 
+announcement takes time, perhaps about a year per Voltus’s understanding. Deactivation by 
+15 Proposed Tariff, Attachment DD-4, section VI(b)(i)(4). 
+21
+--- PAGE 22 ---
+April 2026 implies a deactivation decision by sometime in 2025. Similarly, a site not registered 
+in DY25/26 has made the “deactivation” decision by May 2025 at latest. 
+G. The Proposed Test Provides a Concrete Delineation of Potential Reactivations 
+and Is Administratively Viable 
+Crucially, Voltus’s test is administratively workable. A time-limited lookback involves a 
+straightforward, well-defined, and efficient database search against the relevant years’ historical 
+registrations, with Electric Distribution Company (“EDC”) account number as the identifier. For 
+PJM verification, lengthier lookback periods introduce data fidelity challenges, the complexity of 
+changes to the data model over time, and uncertainty as to stability of EDC account numbers: a 
+given location’s account number may change for a variety of reasons, disrupting database history 
+for that site. On the customer/aggregator side, there may be insufficient information available to 
+check eligibility against a longer lookback: a site’s residents, owners, and/or operators may have 
+no recollection or knowledge of long-past DR participation, or may confuse participation in a 
+utility DR program carrying no resource adequacy benefits with support of a wholesale capacity 
+product. A discrete and limited lookback enables customers and aggregators to confidently 
+assess whether a given site satisfies criteria, providing clarity for bilateral contracting purposes 
+and greatly reducing the risk that a resource shows up to the Delivery Year partially 
+“unavailable” for BYONC purposes due to site ineligibility discovered during registrations. In 
+this situation, large load MW avoided curtailment risk and have been added back to RPM on the 
+basis of capacity that PJM does not consider to be new. For internal coherence of the 
+IRAS/BYONC framework, the reactivation test should provide high confidence to all parties as 
+to a site’s eligibility, so that large loads contracted with DR/DER resources may bring to the 
+system the expected volume of new capacity as defined.  
+22
+--- PAGE 23 ---
+H. Voltus Welcomes Other Reasonable Proposals to Identify Deactivations 
+Eligible to Reactivate for BYONC 
+Note that in comments in Docket No. ER26-3380, Voltus recommended a test of site 
+deactivation for purposes of Qualified Reliability Backstop Procurement Offset (“QRBPO”) 
+DR/DER resource eligibility that was  linked to the 2026/2027 Delivery Year only. That 
+recommendation had reflected Voltus's supposition that an allowance of reactivations under a 
+one-year lookback may have been what PJM originally planned to file for BYONC eligibility 
+(see section II.A supra, interpreting the tariff drafting). Voltus has no objection to a two-year test 
+which aligns with the formulation PJM had advanced in the stakeholder process. Voltus's interest 
+is in a defined and administrable lookback applied consistently across the QRBPO and BYONC 
+constructs and future IRAS iterations. 
+Voltus welcomes feedback on its proposed test and is not averse to discussing further 
+criteria PJM or the Commission may propose to appropriately identify the set of DR/DER sites 
+eligible for BYONC reactivation. 
+III.​
+PJM’S INCLUSION OF PEAK SHAVING ADJUSTMENTS IN THE 
+LARGE 
+LOAD 
+REGISTRY 
+IS 
+LAUDABLE, 
+BUT 
+TO 
+ALIGN 
+INCENTIVES, THE MECHANISM SHOULD ALSO BE CREDITED IN 
+THE CALCULATION OF IRAS-ELIGIBLE LOAD AMOUNTS 
+As currently drafted, Peak Shaving Adjustment values are to be separately tracked in the 
+Large Load Registry for each New Large Load16 yet play no role in the calculation of the Eligible 
+New Large Load Amount as written,17 with the potential effect that a Peak Shaving Adjustment 
+does not reduce a Large Load's exposure to IRAS curtailment. This could mean that a load that 
+invests in reducing demand could qualify its zone for an RBP opt-out and still be subject to 
+IRAS curtailment. We support the points made by Advanced Energy United on this issue, that 
+17 Proposed Tariff, Attachment DD-4, section VII(h). 
+16 Proposed Tariff, Schedule 11, section B.1(a). 
+23
+--- PAGE 24 ---
+clear, unambiguous rules regarding PSA’s treatment are essential, to give those that do use a Peak 
+Shaving Adjustment the confidence they will not face unexpected curtailment exposure once 
+IRAS is filed. We support United’s recommendation that the Commission direct PJM to amend 
+the Eligible New Large Load Amount formula to credit Peak Shaving Adjustment values on the 
+same basis as BYONC and Allocated RBP UCAP MW, or to explain on the record why a load 
+managing its footprint through a state-sponsored peak shaving program should be treated 
+identically to one that has not. 
+IV.​
+VOLTUS 
+SUGGESTS 
+MINOR 
+REDLINES 
+TO 
+ALIGN 
+BYONC 
+REPORTING TIMELINES AS TARIFFED WITH UNDERLYING INTENT 
+A.​ Adjusting RPM Auctions that Capacity Can Have Cleared Prior to 
+Becoming BYONC 
+Voltus notes a minor inconsistency with the reporting timelines that must be met for 
+BYONC to qualify and provide IRAS protection as recorded in the Large Load Registry. PJM’s 
+transmittal letter and tariff design describe three functions enabled by reporting the BYONC 
+arrangement to PJM, each with different timelines. At minimum, PJM needs to know about the 
+arrangement prior to the relevant Delivery Year (more precisely, prior to determining the 
+available IRAS amounts for each zone/area, as BYONC decreases these amounts). Additionally, 
+PJM should be told about the arrangement prior to the commencement of the supply’s RPM 
+participation, as insurance that the supply is coming online as a consequence of the BYONC 
+arrangement. Finally, given that Eligible Large Load Amounts will be removed from the load 
+forecast for RPM purposes beginning with Delivery Year 2029/2030, PJM needs to verify the 
+matched load and supply amount prior to finalizing auction parameters for the auction in which 
+the underlying supply first intends to clear (consistent with its ten-year RPM obligation).  
+24
+--- PAGE 25 ---
+Given the non-applicability of this last deadline for the first two IRAS years as well as 
+the interaction of tariff finalization with in-flight bilateral deals, the application of these 
+deadlines varies for different years. Hence the nuanced delineation of reporting timelines in 
+proposed Tariff, Attachment DD-4, sections VII(b)-(d) (setting reporting deadlines for RPM 
+parameter adjustments) and VI(a). Section VI(a)(iii) provides the general rule that clearing an 
+RPM auction before reporting the BYONC arrangement is disqualifying, with the exception that 
+clearing auctions listed in section VI(a)(i) is not. Logically, the exempted auctions should include 
+those that will have already cleared by the time the tariff is approved and which pertain to 
+near-term IRAS years such that supply may be assumed to have cleared in anticipation of a 
+BYONC arrangement; these are BRAs 27/28 and 28/29. It is consistent with this logic to 
+additionally exempt the one near-term auction whose parameters will not be impacted by 
+IRAS—the Third Incremental Auction (“3IA”) for 2027/2028—to allow parties additional time 
+to finalize contracts given how recently the IRAS framework will have been finalized.  
+Reflecting this logic but contradicting section VI(a)(i)’s current exemptions, section 
+VII(b) sets a just-prior-to-Delivery Year reporting deadline for 27/28 and 28/29 BYONC. Thus, 
+Voltus proposes replacing in section VI(a)(i) the reference to BRA 29/30 with a reference to 3IA 
+27/28, to clarify that 27/28 BYONC need not be reported until April 1, 2027, (well after the 3IA 
+27/28 auction), but that BYONC wishing to clear BRA 29/30 must obey the much earlier 
+deadline provided in VII(c), because PJM needs BYONC inputs in time to adjust auction 
+parameters. Expected 29/30 BYONC not able to meet this very near-term deadline may use a 
+29/30 Incremental Auction to satisfy the RPM obligation once the BYONC arrangement is 
+finalized and reported. The effectuating redline, at proposed Tariff, Attachment DD-4, section 
+VI(a), is as follows: 
+25
+--- PAGE 26 ---
+(i)  Capacity Resources that cleared an RPM Auction for the first time in the Base 
+Residual Auction for the 2027/2028, or 2028/2029, and 2029/2030 Delivery Years or 
+the Third Incremental Auction for the 2027/2028 Delivery Year may qualify as 
+BYONC to the extent the underlying resource meets the criteria in subsection (b) 
+below. 
+[. . .] 
+B.​ Enabling PJM to Verify DER/DR BYONC 
+As discussed above, sections VII(b)-(d) set out the timeframes for when BYONC 
+arrangements need to be provided to PJM for verification. Following the initial two years, 
+arrangements need to be provided prior to the commencement of the underlying supply’s RPM 
+participation and, from Delivery Year 2029/2030, prior to finalizing auction parameters for the 
+auction in which the underlying supply first intends to clear. Given that site-level registrations 
+for DR/DER occur immediately prior to the start of a Delivery Year, Voltus proposes three 
+amendments to ensure that this sequence enables DR/DER BYONC in practice. They are: 
+1.​ Extension of resource owner certification in VII(a)(ii) to apply to section 
+VI, as well as the existing VIII 
+The process for BYONC to be in an arrangement with a New Large Load anticipates two 
+key stages: (1) reporting of the arrangement; and (2) certification from the resource owner or 
+contractual authority to PJM attesting to the arrangement and that the capacity will follow the 
+requirements of section VIII. With this process occurring well ahead of the time at which 
+DR/DER sites will be registered, it will not be possible to provide the level of detail needed to 
+determine satisfaction of the section VI requirements. To address this, Voltus is suggesting to add 
+to section VII the supplier’s certification that the capacity will follow the requirements of section 
+VI.  
+26
+--- PAGE 27 ---
+2.​ Enabling PJM review of DR/DER BYONC after registrations have been 
+completed in a Delivery Year 
+As PJM verification of BYONC occurs prior to registration and the provision of site level 
+information, Voltus is suggesting including an ability for PJM to review DR/DER BYONC after 
+registrations have been completed. This enables a practical check of ensuring capacity brought 
+for the purposes of IRAS is ‘new’, while also allowing for the sequence of BYONC verification 
+prior to load forecast. 
+3.​ Clarification that deficiency charges will apply under VIII(d), in the event 
+that the review finds the BYONC arrangement does not meet the 
+requirements of VI(b)  
+Mirroring the existing consequence if a resource supporting a BYONC is unavailable, 
+Voltus is suggesting that, should PJM find through their review, or at any time after verification, 
+that BYONC does not meet the requirements of section VI, the deficiency charges process under 
+Tariff, Attachment DD will apply. This clarifies the outcome generally and links into the specific 
+process created by the amendments for certification and review suggested in Sections IV.B.1-2, 
+supra. Redlines for all three amendments discussed in this subsection IV.B are provided in 
+Attachment A.  
+V.​
+CONCLUSION 
+These comments have highlighted first and foremost the need for non-discriminatory 
+treatment of DR and DER resources: it is unjust and unreasonable to determine whole categories 
+of BTM resources, and gigawatts of potential capacity, ineligible to alleviate the growing 
+resource adequacy shortfall through the BYONC construct given that “new” DR/DER can be 
+defined just as effectively as “new” utility-scale generation and storage. The remedy is a 
+definition of BYONC resource eligibility that includes site reactivations and new BTM asset 
+capacity. These comments have also suggested minor modifications to rationalize BYONC 
+27
+--- PAGE 28 ---
+reporting and verification processes in order to ease administrative burden and provide 
+commercial clarity. Reflecting Voltus’s several suggested changes to the Tariff as proposed, a 
+redlined copy of Tariff, Attachment DD-4 is appended to these comments (Attachment A). 
+Voltus respectfully recommends that the Commission direct PJM to adopt the suggested or 
+similar amendments.  
+Voltus deeply appreciates PJM’s and PJM stakeholders’ significant and ongoing efforts to 
+design an effective and workable solution, and thanks FERC for this opportunity to comment.  
+ 
+ 
+ 
+Respectfully submitted, 
+ 
+/s/ Kimaya Abreu 
+Kimaya Abreu 
+Sr. Manager, Regulatory Affairs 
+Voltus, Inc. 
+2443 Fillmore St. 
+San Francisco, CA 94115 
+609.994.7686 
+kabreu@voltus.co 
+ 
+Dated: September 3, 2026 
+28
+--- PAGE 29 ---
+ATTACHMENT A 
+SUGGESTED REDLINES TO PROPOSED TARIFF, ATTACHMENT DD-4:  
+INTERIM RESOURCE ADEQUACY SERVICE
+--- PAGE 30 ---
+I.​
+INTRODUCTION 
+ 
+This Attachment DD-4 sets forth the terms and conditions governing the provision of Interim 
+Resource Adequacy Service. As more fully set forth in this Attachment and the PJM Manuals, 
+and in conjunction with the Reliability Assurance Agreement: 
+ 
+(a)​
+Interim Resource Adequacy Service is a load reduction service, effective starting 
+with the 2027/2028 Delivery Year, through which Eligible New Large Loads may be 
+compensated for providing load reductions requested by the Office of the Interconnection to 
+maintain system reliability for the purpose of supporting the integration of New Large Loads to 
+the PJM Region that are not in arrangements with new capacity additions to the PJM Region; 
+ 
+(b)​
+Starting with the 2027/2028 Delivery Year, the Office of the Interconnection may, 
+in accordance with the Manuals, instruct the implementation of an Interim Resource Adequacy 
+Service Action prior to calling on Pre-Emergency Load Management Reductions Actions after 
+determining that available economic real-time supply may not be sufficient to maintain reserves 
+to meet applicable Reserve Requirements and/or Interconnection Reliability Operating Limits 
+within prescribed limits and prevent cascading outages; 
+ 
+(c)​
+The Large Load Registry maintained by the Office of the Interconnection, 
+pursuant to the Reliability Assurance Agreement, shall inform which New Large Loads are 
+eligible to be called on to provide Interim Resource Adequacy Service; and 
+ 
+(d)​
+The Office of the Interconnection shall coordinate with Electric Distributors, and 
+other Members as appropriate, on the provision of Interim Resource Adequacy Service and the 
+compensation for providing Interim Resource Adequacy Service.
+--- PAGE 31 ---
+II.​
+RESPONSBILITIES OF THE OFFICE OF THE INTERCONNECTION 
+ 
+The Office of the Interconnection shall: 
+ 
+(a)​
+maintain the Large Load Registry, pursuant to Reliability Assurance Agreement, 
+Schedule 11; 
+ 
+(b)​
+identify Eligible New Large Loads; 
+ 
+(c)​
+determine the megawatt quantity of New Large Loads eligible to provide Interim 
+Resource Adequacy Service in each Electric Distributor zone/area for a given 
+Delivery Year; 
+ 
+(d)​
+starting with the 2027/2028 Delivery Year, issue an Interim Resource Adequacy 
+Service Action based on system conditions; and 
+ 
+(e)​
+request Electric Distributors to direct that a quantity of Eligible New Large Load 
+Amounts in their respective zone(s)/area(s) be reduced in accordance with an 
+Interim Resource Adequacy Service Action.
+--- PAGE 32 ---
+III.​
+RESPONSBILITIES OF ELECTRIC DISTRIBUTORS 
+ 
+Electric Distributors shall: 
+ 
+(a)​
+execute the Office of the Interconnection’s directives to implement Interim 
+Resource Adequacy Service Actions among the Eligible New Large Loads in the 
+Electric Distributor’s zone/area, which is an area within a Zone for which the 
+relevant Electric Distributor specifies a separate Obligation Peak Load MW value 
+and is a service area of an Electric Distributor that is a separately identifiable, 
+geographic area bounded by wholesale metering; 
+ 
+(b)​
+coordinate with the Office of the Interconnection in developing and maintaining 
+the Large Load Registry by providing the Office of the Interconnection any 
+information or data the Electric Distributor believes appropriate to facilitate an 
+accurate Large Load Registry, including applicable state or RERRA retail tariff or 
+contractual obligations; 
+ 
+(c)​
+coordinate, as appropriate, with the relevant state(s) or RERRA(s), individual 
+Load Serving Entities, and customers served by the Load Serving Entities in its 
+zone/area to support transparent, effective, and orderly deployment of Interim 
+Resource Adequacy Service; and 
+ 
+(d)​
+implement compensation program consistent with Tariff, Attachment DD-4, 
+section X.
+--- PAGE 33 ---
+IV.​
+DETERMINATION OF MAXIMUM INTERIM RESOURCE ADEQUACY 
+SERVICE EACH ELIGIBLE NEW LARGE LOAD MAY PROVIDE IN A 
+DELIVERY YEAR 
+ 
+(a)​
+All Eligible New Large Loads shall be available to be requested to provide Interim 
+Resource Adequacy Service by the Office of the Interconnection. 
+ 
+(b)​
+The amount of Interim Resource Adequacy Service available to the Office of the 
+Interconnection may change for each Delivery Year depending on the relationship of the amount 
+of Capacity Resources committed, through Tariff, Attachment DD, for a given Delivery Year, 
+and the Eligible New Large Load Amounts. 
+ 
+(i)​
+In the event ([the amount of Capacity Resources committed for a given Delivery 
+Year (as determined after the Third Incremental Auction) is less than the PJM 
+Region Reliability Requirement determined prior to the Third Incremental 
+Auction] divided by the Pool-wide Accredited UCAP Factor) by an amount 
+greater than the sum (in MW) of all Eligible New Large Load Amounts, then all 
+Eligible New Large Load Amounts is needed by the Office of the Interconnection 
+to be available to provide Interim Resource Adequacy Service for that Delivery 
+Year; 
+ 
+(ii)​
+In the event ([the amount of Capacity Resources committed for a given Delivery 
+Year (as determined after the Third Incremental Auction) is less than the PJM 
+Region Reliability Requirement determined prior to the Third Incremental 
+Auction] divided by the Pool-wide Accredited UCAP Factor) by an amount less 
+than the sum (in MW) of all Eligible New Large Load Amounts, then the 
+difference (in MW) shall be the cumulative amount (in MW) of Eligible New 
+Large Load Amounts that the Office of the Interconnection needs to be available 
+to provide Interim Resource Adequacy Service for that Delivery Year; and 
+ 
+(iii)​
+In the event ([the amount of Capacity Resources committed for a given Delivery 
+Year (as determined after the Third Incremental Auction) equals or exceeds the 
+PJM Region Reliability Requirement determined prior to the Third Incremental 
+Auction] divided by the Pool-wide Accredited UCAP Factor), then the Office of 
+the Interconnection does not need any Eligible New Large Loads to be available 
+to provide Interim Resource Adequacy Service for that Delivery Year. 
+ 
+(c)​
+For each Delivery Year that meets the requirements of Tariff, Attachment DD-4, sections 
+IV(b)(i) or IV(b)(ii), the Office of the Interconnection shall determine: 
+ 
+(i)​
+the total amount of Interim Resource Adequacy Service (in MW) needed to be 
+available on a daily basis across the PJM Region for the Delivery Year; and 
+ 
+(ii)​
+the total amount of Interim Resource Adequacy Service (in MW) needed to be 
+available on a daily basis in each Electric Distributor zone/area for the Delivery 
+Year, which shall be equal to the product of the sum of all Eligible New Large 
+Load Amounts needed in the PJM Region pursuant to Attachment DD-4, section 
+IV(b) multiplied by the quotient of [(the sum of all Eligible New Large Load 
+Amounts in the Electric Distributor’s zone/area) divided by (the sum of all 
+Eligible New Large Load Amounts in the PJM Region)].
+--- PAGE 34 ---
+V.​
+DETERMINATION OF NEW LARGE LOADS ELIGIBILITY TO PROVIDE 
+INTERIM RESOURCE ADEQUACY SERVICE 
+ 
+(a)​
+All New Large Loads shall be Eligible New Large Loads to the extent that the sum of a 
+New Large Load’s Eligible New Large Load Amount is lessgreater than the New Large Load’s 
+registered peak load (in MW)zero, as provided in the Large Load Registry. New Large Loads 
+with a cumulative installed capacity equivalent of their BYONC arrangements and assigned 
+Allocated RBP UCAP MW that equals or exceeds the New Large Load’s registered peak load, as 
+provided in the Large Load Registry, shall not be Eligible New Large Loads. New Large Loads 
+that are located within an FRR Service Area cannot be Eligible New Large Loads. 
+ 
+(b)​
+A New Large Load’s Eligible New Large Load Amount shall be determined as follows: 
+ 
+(New Large Load’s registered peak load (in MW), as provided in the Large Load 
+Registry) minus (the sum of all BYONC arrangements with the New Large Load 
+in accordance with Tariff, Attachment DD-4, section VII divided by the Forecast 
+Pool Requirement for the first Delivery Year in which the BYONC cleared an 
+RPM Auction, plus Allocated RBP UCAP MW assigned to the New Large Load, 
+in accordance with Tariff, Attachment DD-4, section IX divided by the Forecast 
+Pool Requirement for the first Delivery Year in which the Allocated RBP UCAP 
+MW cleared an RPM Auction, plus the value of any Peak Shaving Adjustment 
+attributed to the Large Load in the Large Load Registry). 
+ 
+(c)​
+For purposes of removing its eligibility to provide Interim Resource Adequacy Service, a 
+New Large Load may enter into arrangements with BYONC supported by one or more resources.
+--- PAGE 35 ---
+VI.​
+BRING YOUR OWN NEW CAPACITY CRITERIA 
+ 
+(a)​
+(i)  Capacity Resources that cleared an RPM Auction for the first time in the Base 
+Residual Auction for the 2027/2028, or 2028/2029, and 2029/2030 Delivery Years or the 
+Third Incremental Auction for the 2027/2028 Delivery Year may qualify as BYONC to 
+the extent the underlying resource meets the criteria in subsection (b) below. 
+ 
+(ii)​
+Megawatts of Unforced Capacity that have not cleared an RPM Auction, other 
+than those specified in subsection (a)(i) above, may qualify as BYONC to the extent the 
+underlying resource meets the criteria in subsection (b) below. To the extent three 
+consecutive Delivery Years meet the requirements of Tariff, Attachment DD-4, section 
+IV(b)(iii), then megawatts of Unforced Capacity may qualify as BYONC to the extent the 
+underlying resource meets the criteria in subsection (b) below and such megawatts (1) 
+have not cleared in an RPM Auction conducted for a Delivery Year prior to the first 
+Delivery Year for which the requirements of Tariff, Attachment DD-4, section IV(b)(iii) 
+are not met and (2) meet the eligibility criteria set forth in Tariff, Attachment DD-4, 
+section VI. 
+ 
+(iii)​
+With the exception of the RPM Auctions listed in subsection (a)(i) above, to the 
+extent megawatts of Unforced Capacity that have cleared an RPM Auction before any 
+arrangement with a New Large Load based on such megawatts was reported to the Office 
+of the Interconnection, then such megawatts of Unforced Capacity cannot qualify as 
+BYONC even if the underlying resource meets the criteria in subsection (b) below. 
+ 
+(b)​
+To qualify as Bring Your Own New Capacity, resources must meet the following 
+eligibility requirements: 
+ 
+(i)​
+For generation and storage resources, the resource must be supported by one of 
+the following: 
+ 
+(1)​
+a new-build generation resource including new resources that obtain 
+Capacity Interconnection Rights transferred from deactivated resources or 
+resources that have announced deactivation as of April 10, 2026; 
+ 
+(2)​
+the incremental capacity created by an uprate of Existing Generation 
+Capacity Resources, but only to the extent such incremental capacity is 
+created through an increase in such Generation Capacity Resource’s 
+installed capacity and increase in Capacity Interconnection Rights 
+associated with that Generation Capacity Resource; 
+ 
+(3)​
+the incremental capacity created by the utilization of Surplus 
+Interconnection Service; 
+ 
+(4)​
+repowering of a deactivated generation resource that deactivated prior to 
+April 10, 2026; or
+--- PAGE 36 ---
+(5)​
+incremental capacity, whether due to greater Unforced Capacity or a 
+higher level of Capacity Interconnection Rights, created by an Existing 
+Generation Capacity Resource’s changing fuel type to a more efficient fuel 
+type. 
+ 
+(ii)​
+For Demand Resources or DER Capacity Aggregation Resources, the resource 
+must qualify as a Planned Demand Resource or DER Capacity Aggregation Resource, as 
+described in the RAA, Schedule 6 and Schedule 6.2 and must be supported by any 
+combination of the following: 
+ 
+(1)​sites never previously registered nor otherwise previously supporting a 
+Capacity Resource, a Peak Shaving Adjustment, or Price Responsive 
+Demand; 
+(2)​new-build behind-the-meter generation or storage assets;  
+(3)​reactivations of locations previously registered or otherwise supporting a 
+Capacity Resource, a Peak Shaving Adjustment, or Price Responsive Demand 
+that deactivated prior to, and were not registered in or since, the 2025/2026 
+Delivery Year. 
+(1) be composed of, or reliant on, any location not registered in or prior to the 
+2026/2027 Delivery Year at which an incremental amount at that location is the 
+result of the registration of new generation or storage assets at the location. 
+However, to the extent three consecutive Delivery Years meet the requirements of 
+Tariff, Attachment DD-4, section IV(b)(iii), then will be composed of, or reliant 
+on, any location registered in the Delivery Year prior to the first Delivery Year for 
+which the requirements of Tariff, Attachment DD-4, section IV(b)(iii) are not met; 
+and/or 
+ 
+(2) be composed of, or reliant on, locations that were not previously supported a 
+Capacity Resource, a Peak Shaving Adjustment, or Price Responsive Demand for 
+or prior to the 2026/2027 Delivery Year. However, to the extent three consecutive 
+Delivery Years meet the requirements of Tariff, Attachment DD-4, section 
+IV(b)(iii), then will be composed of, or reliant on, locations that were not 
+previously supported a Capacity Resource, a Peak Shaving Adjustment, or Price 
+Responsive Demand for the Delivery Year prior to the first Delivery Year for 
+which the requirements of Tariff, Attachment DD-4, section IV(b)(iii) are not met.
+--- PAGE 37 ---
+VII.​
+BRING YOUR OWN NEW CAPACITY ARRANGEMENTS WITH NEW LARGE 
+LOADS 
+ 
+(a)​
+For any BYONC to be in an arrangement with a New Large Load, 
+ 
+(i)​
+the Load Serving Entity serving the New Large Load or the applicable Electric 
+Distributor shall report the BYONC in an arrangement with the New Large Load, in 
+accordance with the PJM Manuals. The Office of the Interconnection may also accept 
+information to the extent interconnection customers, Large Loads, Transmission Owners, 
+or other entities voluntarily report any BYONC that may be in an arrangement with a 
+New Large Load; and 
+ 
+(ii)​
+the resource owner or entity with contractual authority to enter into a BYONC 
+arrangement must certify to the Office of Interconnection, in accordance with the PJM 
+Manuals, attesting to the arrangement with the New Large Load and that the BYONC 
+will follow the requirements of Tariff, Attachment DD-4, sections VI and VIII. 
+ 
+(b)​
+For an arrangement between a New Large Load and BYONC to be effective for the 
+2027/2028 or 2028/2029 Delivery Years, for any BYONC arrangement to be considered, the 
+requirements of Tariff, Attachment DD-4, section VII(a) must be met by April 1 for the first 
+Delivery Year such arrangement is to result in a reduction in the New Large Load’s Eligible New 
+Large Load Amount. By April 15, the Office of the Interconnection shall update the Large Load 
+Registry to reflect any verified arrangements between New Large Loads and BYONC. 
+ 
+(c)​
+For an arrangement between a New Large Load and BYONC to be effective for the 
+2029/2030 Delivery Year, for any BYONC arrangement to be considered, the requirements of 
+Tariff, Attachment DD-4, section VII(a) must be reported to the Office of the Interconnection no 
+later than by 50 days prior to the commencement of the 2029/2030 Base Residual Auction or by 
+30 days prior to the posting of the planning parameters for the Incremental Auctions arrangement 
+for the 2029/2030 Delivery Year. The Office of the Interconnection shall update the Large Load 
+Registry to reflect any verified arrangements between New Large Loads and BYONC after the 
+relevant RPM Auction. 
+ 
+(d)​
+For an arrangement between a New Large Load and BYONC to be effective for the 
+2030/2031 Delivery Year and subsequent Delivery Years, the requirements of Tariff, Attachment 
+DD-4, section VII(a) must be reported to the Office of the Interconnection no later than by 30 
+days prior to the posting of the planning parameters for the relevant RPM Auction for the initial 
+Delivery Year the BYONC enters into an arrangement with the New Large Load. The Office of 
+the Interconnection shall update the Large Load Registry to reflect any verified arrangements 
+between New Large Loads and BYONC after the relevant RPM Auction. 
+ 
+(e)​
+BYONC that is in an arrangement with a New Large Load must remain in such 
+arrangement with that New Large Load unless and until the New Large Load is permanently 
+out-of-service. 
+ 
+(f)​
+A physical resource may support multiple BYONC, each of which may be in an
+--- PAGE 38 ---
+arrangement with different New Large Loads, as long as no BYONC is in an arrangement with 
+more than one New Large Load. 
+ 
+(g)​
+A New Large Load may enter into an arrangement with discrete BYONC supported by 
+different physical resources. 
+ 
+(h)​
+A New Large Load may enter into an arrangement with BYONC in excess of its current 
+Eligible Large Load Amount, e.g., to allow for expected growth in the New Large Load, and the 
+full megawatt quantity of such BYONC shall be offered in the first RPM Auction for which the 
+New Large Load is included in the Variable Resource Requirement Curve. 
+ 
+(i)​
+(i)   For any generation or storage resource, the Accredited UCAP of any BYONC shall 
+be the Accredited UCAP for the RPM Auction in which the BYONC cleared for the 
+initial Delivery Year the BYONC is in an arrangement with the New Large Load. 
+ 
+(ii)  For Demand Resources or DER Capacity Aggregation Resources, the Accredited 
+UCAP shall be the Accredited UCAP for the RPM Auction in which the BYONC cleared 
+for the initial Delivery Year the BYONC is in an arrangement with the New Large Load 
+and must be demonstrated each year for a 10-year period using the Demand Response or 
+DER Capacity Aggregation Resources installed capacity for the first Delivery Year after 
+the BYONC is in an arrangement with the New Large Load. For Demand Resources or 
+DER Capacity Aggregation Resources that are also the actual New Large Load, there is 
+no demonstration required for the initial Delivery Year only to not be an Eligible New 
+Large Load.
+--- PAGE 39 ---
+VIII.​ BRING YOUR OWN NEW CAPACITY PARTICIPATION IN THE 
+RELIABILITY PRICING MODEL 
+ 
+(a)​
+All BYONC in an arrangement with a New Large Load must meet the requirements in 
+Tariff, Attachment DD, section 5.5A and become Capacity Resources eligible to participate in 
+RPM Auctions. 
+ 
+(b)​
+All BYONC in an arrangement with a New Large Load must be offered into the RPM 
+Auctions as Capacity Resources consistent with and pursuant to the capacity must-offer 
+requirements and exceptions set forth in Tariff, Attachment DD, sections 6.6 and 6.6A. BYONC 
+may not seek an exception to the capacity must-offer requirement to provide an external sale, as 
+available under Tariff, Attachment DD, section 6.6(g) for a 10-year period starting with the first 
+Delivery Year which the BYONC is in an arrangement with the New Large Load. 
+ 
+(c)​
+All BYONC in an arrangement with a New Large Load and committed through RPM 
+Auctions will be subject to all capacity market rules, as set forth in Tariff, Attachments DD and 
+DD-1. 
+ 
+(d)​
+To the extent the resource supporting a BYONC arrangement:  
+ 
+​
+(i) is reviewed by PJM immediately prior to the start of a Delivery Year, or at any other 
+time, and does not meet the requirements of Tariff, Attachment DD-4, section VI(b); or  
+ 
+​
+(ii) is otherwise unavailable in a given Delivery Year,  
+ 
+the seller of such resource will be subject to all relevant deficiency charges under Tariff, 
+Attachment DD.   
+ 
+(e)​
+All BYONC in an arrangement with a New Large Load and not qualifying for an 
+exception pursuant to Tariff, Attachment DD, section 6.6(g), must be offered into the applicable 
+RPM Auctions as price takers, i.e., $0/MW-day UCAP for a 10-year period starting with the first 
+Delivery Year which the BYONC is in an arrangement with the New Large Load. To the extent 
+the resource is a Demand Resource or DER Capacity Aggregation Resource, the BYONC shall 
+participate in RPM Auctions for ten (10) consecutive Delivery Years as an Annual Demand 
+Resource or DER Capacity Aggregation Resource, as applicable; provided, however, the seller of 
+such Demand Resource or DER Capacity Aggregation Resource may, in accordance with Tariff, 
+Attachment DD-4, section VII(a)(i) report to the Office of the Interconnection BYONC that 
+replaces such BYONC, where such replacement shall be for the remainder of the replaced 
+BYONC’s ten-year RPM Auction participation commitment and the replaced BYONC (and its 
+supporting registrations) may no longer provide BYONC. In such event, the replacement 
+BYONC would need to be supported by the certification required by Tariff, Attachment DD-4, 
+section VII(a)(ii), and such replacement arrangement must be effective coincident with the initial 
+BYONC releasing its arrangement. 
+ 
+(f)​
+To the extent three consecutive Delivery Years meet the requirements of Tariff, 
+Attachment DD-4, section IV(b)(iii), then any existing BYONC are relieved of the obligations 
+under this Tariff, Attachment DD-4, section VIII.
+--- PAGE 40 ---
+IX.​
+ALLOCATION OF RBP UCAP MW 
+ 
+(a)​
+Each Electric Distributor zone/area allocated RBP Charges pursuant to Tariff, Attachment 
+DD, section 18.3(a) shall be allocated RBP UCAP MW on a pro-rata basis using the Electric 
+Distributor zone/area’s assigned share of the total Final RBP Target MW across all zone/areas. 
+ 
+(b)​
+Each New Large Load’s Allocated RBP UCAP MW shall be determined as follows: 
+ 
+(i)​
+Each Electric Distributor allocated RBP UCAP MW shall inform the Office of the 
+Interconnection how such RBP UCAP MW should be further allocated among the New 
+Large Loads located in the Electric Distributor’s zone/area; or 
+ 
+(ii)​
+In the event the Electric Distributor has not informed the Office of the 
+Interconnection how its RBP UCAP MW should be further allocated by April 1 before a 
+given Delivery Year, the Office of the Interconnection shall allocate such RBP UCAP 
+MW to the Electric Distributor’s zone/area pro-rata among all New Large Loads located 
+in the zone/area. 
+ 
+(c)​
+The Office of the Interconnection shall list in the Large Load Registry each New Large 
+Load’s Allocated RBP UCAP MW.
+--- PAGE 41 ---
+X.​
+COMPENSATION FOR PROVIDING INTERIM RESOURCE ADEQUACY 
+SERVICE 
+ 
+(a)​
+The rate for the provision of Interim Resource Adequacy Service shall be 50% of the 
+Non-Performance Charge Rate specified in Tariff, Attachment DD, section 10A(e), unless any 
+Eligible New Large Load elects to (i) accept in its retail rates a sum less than 50% of the 
+Non-Performance Charge Rate as compensation for the provision of wholesale Interim Resource 
+Adequacy Service, or (ii) waive receipt in its retail rates any compensation for the provision of 
+wholesale Interim Resource Adequacy Service as contemplated by Tariff, Attachment DD-4, 
+section X(c). If any Eligible New Large Load so elects to accept less than 50% of the 
+Non-Performance Charge Rate or waives in its entirety receipt of compensation for the provision 
+of wholesale Interim Resource Adequacy Service, the wholesale rate for the provision of Interim 
+Resource Adequacy Service shall reflect the accepted sum less than 50% of the 
+Non-Performance Charge Rate or if compensation is waived entirely, the rate shall be zero 
+dollars. 
+ 
+(b)​
+(i) Following an Interim Resource Adequacy Event, unless the Electric Distributor 
+informs the Office of the Interconnection otherwise in accordance with Tariff, 
+Attachment DD-4, section X(b)(ii), the Electric Distributor shall be responsible for 
+compensating all Eligible New Large Loads that provided Interim Resource Adequacy 
+Service for up to the amount of such service provided. The Electric Distributor shall be 
+responsible for charging customers in its zone/area to fund any such compensation. 
+ 
+(ii)​
+The Electric Distributor may request the Office of the Interconnection to 
+compensate certain Members for the provision of Interim Resource Adequacy Service 
+and to assess charges on certain Load Serving Entities within the Electric Distributor’s 
+zone/area to fund such compensation. In support of such request, as further set forth in 
+the PJM Manuals, the Electric Distributor shall (1) identify each Member to be 
+compensated and provide the level of compensation and (2) identify each Load Serving 
+Entity to be charged and the level of charge. 
+ 
+(iii)​
+The Office of the Interconnection, PJMSettlement, and the Members will not 
+assume financial responsibility for the failure of a party to pay any amounts owed to 
+another party under this section. In the event the Electric Distributor requests the Office 
+of the Interconnection facilitate the billing associated with an Interim Resource Adequacy 
+Event, such billing shall be considered a bilateral transaction between the Electric 
+Distributor and the identified Members and PJMSettlement shall not be a contracting 
+party to the settlement. 
+ 
+(c)​
+Nothing in this Tariff, Attachment DD-4, section X shall interfere with any Eligible New 
+Large Load’s election to (i) accept in its retail rates a sum less than 50% of the Non-Performance 
+Charge Rate as compensation for the provision of wholesale Interim Resource Adequacy 
+Service, or (ii) waive receipt in its retail rates any compensation for the provision of wholesale 
+Interim Resource Adequacy Service.

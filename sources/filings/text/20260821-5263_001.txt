@@ -1,0 +1,329 @@
+--- PAGE 1 ---
+1 
+ 
+UNITED STATES OF AMERICA 
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+PJM Interconnection, L.L.C.                               ) 
+Docket No. ER26-3380-000 
+ 
+COMMENTS OF SOUTHERN MARYLAND ELECTRIC COOPERATIVE, INC. 
+ 
+Pursuant to the Combined Notice of Filings #1 issued by the Federal Energy Regulatory 
+Commission (“Commission”) on August 3, 2026, Southern Maryland Electric Cooperative, Inc. 
+(“SMECO”)1 respectfully submits these comments regarding the filing that PJM Interconnection, 
+L.L.C. (“PJM”) submitted in the above-captioned docket on July 31, 2026 (the “RBP Filing”).2  
+PJM proposes revisions to the PJM Open Access Transmission Tariff (“Tariff”) and the 
+Reliability Assurance Agreement Among Load Serving Entities (“RAA”) to establish a one-time 
+“Reliability Backstop Procurement” (“RBP”) of new capacity, the costs of which PJM proposes 
+to recover through a new charge (the “RBP Charge”) assessed against a subset of Load Serving 
+Entities (“LSEs”) in the PJM Region.    
+SMECO acknowledges that additional capacity is needed to address the shortfall reflected 
+in the 2028/2029 Delivery Year (“DY”) Base Residual Auction (“BRA”) and PJM's decision to 
+pursue that capacity through a one-time backstop mechanism, the RBP.   SMECO’s comments 
+focus on the roles the RBP Filing assigns to Electric Distributors in making those determinations, 
+and certain aspects of the RBP credit and collateral requirements proposed in the RBP Filing.  
+ 
+1 On August 4, 2026,SMECO submitted, and the Commission accepted, a (Doc-less) Motion to Intervene in this 
+proceeding: https://elibrary.ferc.gov/eLibrary/filedownload?fileid=857BC7F7-7CD8-CD58-9E7A-9FCDA3B00000  
+2Reliability Backstop Procurement to Address Resource Adequacy Concerns Stemming from Large Loads, 
+Transmittal Letter of PJM Interconnection, L.L.C., Docket No. ER26-3380-000 (July 31, 2026) (“RBP Filing”):
+--- PAGE 2 ---
+2 
+ 
+I. INTRODUCTION AND SUMMARY  
+PJM's RBP proposal responds to an actual reliability concern – namely, that the 2028/2029 
+DY BRA cleared 6,831.3 MW short of the PJM Region Reliability Requirement.  This shortfall, 
+as PJM notes, was driven in part by the rapid interconnection of large loads, including data 
+centers.3  SMECO agrees that this shortfall must be addressed.   
+However, SMECO has comments in two areas.  First, PJM’s proposal assigns Electric 
+Distributors a series of functions that exceed the metering and data-reporting functions Electric 
+Distributors have historically performed for PJM under the PJM Operating Agreement (“OA”). 
+Second, as to RBP credit, PJM proposes vastly different RBP collateral requirements as  
+between RBP load versus RBP supply. SMECO serves a service territory that has attracted data 
+center interest, and as such, has an interest in seeing a rational PJM RBP credit policy established.  
+II. BACKGROUND 
+PJM filed the RBP Filing on July 31, 2026, requesting that the Commission act by 
+September 29, 2026 -- sixty days after filing -- so that PJM may commence the RBP on September 
+30, 2026.4  PJM proposes to set an “Initial RBP Target” equal to the 6,831.3 MW UCAP shortfall 
+reflected in the 2028/2029 DY BRA (excluding Fixed Resource Requirement load and supply), 
+and to decrement that Initial RBP Target by two categories of MWs to arrive at a “Final RBP 
+Target”: (1) “Qualifying RBP Offset UCAP MW,” meaning new capacity, matched with new load, 
+that PJM verifies was not previously counted as either an RPM commitment or an FRR resource; 
+and (2) “Opt-Out UCAP MW,” a narrow opt-out available in limited circumstances.5 PJM 
+proposes to procure that Final RBP Target quantity through the RBP. 
+ 
+3RBP Filing at 21 (“6,831.3 MW UCAP”); see also id. at 1 (describing the shortfall as “primarily driven by the 
+unprecedented addition of large loads, most notably data centers”). 
+4RBP Filing at 3, Footnote 5 and at 27. 
+5RBP Filing at 31, 35, 44 (proposed Tariff, Attachment DD, sections 18.1, 18.2).
+--- PAGE 3 ---
+3 
+ 
+PJM proposes to allocate the resulting daily RBP Charges first to Electric Distributor 
+zones/areas, pro rata, based on each zone/area's share of the region-wide Final RBP Target -- = 
+adjusted to reflect zone-specific Qualifying RBP Offset UCAP MW.6  Within each zone/area, PJM 
+proposes that cost allocation to individual LSEs “be based on ‘the state and/or RERRA-determined 
+allocation of cleared RBP UCAP MW to LSEs within each Electric Distributor's zone/area, as 
+reported [to PJM] by each Electric Distributor.’”7    
+This state/RERRA-determined allocation is referred to as the “RBP Obligation” or 
+“RBO.”8  LSEs allocated RBP cost responsibility -- an RBO -- must post collateral (“RBP 
+Collateral”) in an amount equal to a uniform “RBP Credit Rate” -- proposed by PJM to be at $1.5 
+million per MW -- multiplied by the LSE's allocated RBP UCAP MW.9  An LSE with an RBO 
+must post this RBP Collateral no later than forty-five days before the start of the relevant DY -- 
+just fifteen days after the underlying RBO allocation on which the collateral requirement depends 
+is reported (i.e., the RBO must be reported no later than sixty days before the DY).10 
+ 
+III. COMMENTS 
+A.  
+PJM’s RBP Filing Assigns Electric Distributors a Role Inconsistent with Their 
+Intended Function in PJM 
+The term “Electric Distributor” refers to a Member “sector” under the PJM OA, defined 
+principally by reference to a Member's ownership or lease of distribution facilities serving load in 
+the PJM Region, including cooperative and joint municipal systems.11  Historically, the functions 
+Electric Distributors perform for PJM under the OA and RAA have centered on metering and load-
+ 
+6RBP Filing at 96-97 (proposed Tariff, Attachment DD, section 18.3(a)). 
+7RBP Filing at 97-98 (quoting proposed Tariff, Attachment DD, section 18.3(b)(iii)). 
+8RBP Filing at 98 (quoting proposed Tariff, Definitions -- RBP Obligation). 
+9RBP Filing at 114-118 (proposed Tariff, Attachment DD, section 18.8(b)). 
+10RBP Filing at 120. 
+11See generally OA, Definitions -- Electric Distributor.
+--- PAGE 4 ---
+4 
+ 
+data reporting -- classic “meter reading” roles such as reporting hourly net energy flows for 
+settlement purposes.12  Even OA section 11.3.3 (h), which requires that an Electric Distributor 
+“[p]rovide to the Office of the Interconnection all System, accounting, customer tracking, load 
+forecasting (including all load to be served from its System) and other data necessary or 
+appropriate to implement or administer this Agreement, and the Reliability Assurance Agreement” 
+does not result in an Electric Distributor performing the following  expansive set of Tasks: 
+1. 
+Sponsor of reductions to the zone's RBP target (opt-outs)13: Electric 
+Distributors serve as the applicant and evidentiary sponsor -- the opt-out 
+request itself must come from the Electric Distributor, with supporting 
+documentation. 
+2. 
+Reporting capacity offsets: Electric Distributors, along with other entities, 
+provide evidentiary support for Qualifying RBP Offset UCAP MW claimed 
+within their zone/area, which is capped at that zone/area's Load Adjustment 
+amount of summer 2028 demand.14 That is, Electric Distributors must 
+provide reports and evidence of Qualifying RBP Offset UCAP MW in each 
+of their respective zones/areas.15  
+3. 
+Bridge between state decisions, LSEs, and PJM: Electric Distributors 
+must report the state/RERRA-determined allocation (i.e., the RBO)16; 
+absent a report, PJM falls back to a Peak Load Contribution share of Daily 
+Unforced Capacity Obligation. 
+4. 
+RBO Cost allocation: Electric Distributors' reports feed both the zone-
+level allocation of the Final RBP Target and the LSE-level daily formula17, 
+with PJMSettlement as the Counterparty responsible for collecting from 
+LSEs.18 
+5. 
+Supporting DER and Demand Resource participation: Electric 
+Distributors must develop and provide distribution-impact studies for RBP 
+ 
+12See, e.g., OA, Schedule 1, section 3.6 (Metering Reconciliation); PJM Manual 28: Operating Agreement Accounting 
+(describing the role of “fully metered” Electric Distribution Companies in reporting hourly net energy flows for 
+settlement purposes). 
+13 RBP Filing at 33, 44-46, Section III.B.3 "Opt-out".  
+14 RBP Filing at 42-43; Section III.B.2.e: "Electric Distributors and other entities provide evidentiary support for 
+Qualifying RBP Offset UCAP MW".  The RBP Filing at 32 indicates that the cap is set at the Load Adjustment for 
+each Electric Distributor zone/area amount of summer 2028 demand. 
+15 RBP Filing at 42-43, emphasis added, footnotes omitted. 
+16 RBP Filing at 97-99, 
+17 RBP Filing at 96-99.. 
+18 RBP Filing at footnote 236.
+--- PAGE 5 ---
+5 
+ 
+DER Aggregation Resources.19 An RBP DER Capacity Aggregation 
+Resource 
+must 
+address 
+“applicable 
+Electric 
+Distributor 
+interconnection/distribution impact study requirements,” and an RBP 
+Demand Resource must satisfy “Electric Distributor coordination 
+requirements for metering, telemetry, and baseline measurement 
+infrastructure.”20 
+6. 
+Supplying inputs that affect LSE collateral: under the Tariff provision 
+for "Determining an LSE's RBP credit requirement," the Electric 
+Distributor's RBO report -- as submitted, and scaled if it does not sum to the 
+zone/area's Final RBP Target -- sets an LSE's RBP UCAP MW; absent an 
+RBO, PJM instead uses each LSE's pro-rata share of the zone/area's Daily 
+Unforced Capacity Obligation.21 
+For example, with regards to RBO Cost allocation “Task #4”, the RBP Filing asks Electric 
+Distributors to report “the state and/or RERRA-determined allocation of RBP UCAP MW to 
+[LSEs] within each Electric Distributor’s zone/area” --  i.e., the RBO.22  But the RBO an Electric 
+Distributor reports is not a metered quantity; rather, it is a state or RERRA’s own determination 
+of which customers are “large loads”23, for which the Electric Distributor must “certify” to PJM, 
+fixing how much each LSE in the zone will be assessed the RBP Charge.   
+Neither PJM’s Filing nor the OA, so far as SMECO is aware, gives an Electric Distributor 
+this role: OA section 11.324 sets forth data-reporting and other operational obligations for Electric 
+ 
+19 RBP Filing at 75; footnote 199. 
+20RBP Filing at 75 (quoting proposed Tariff, Attachment DD, section 18.5(f)(i)(12)-(13)). 
+21RBP Filing at 118-119.  
+22RBP Filing at 97-98. 
+23RBP Filing at 98. 
+24 OA 11.3.3 Electric Distributors. In addition to any of the foregoing responsibilities that may be applicable, each 
+Member that is an Electric Distributor, whether or not that Member votes in the Members Committee in the Electric 
+Distributor sector or meets the eligibility requirements for any other sector of the Members Committee, shall:  
+(a) Accept, comply with or be compatible with all standards applicable within the PJM Region with respect to system 
+design, equipment ratings, operating practices and maintenance practices as set forth in the PJM Manuals, or be subject 
+to an interconnected Member’s requirements relating to the foregoing, so that sufficient electrical equipment, control 
+capability, information and communication are available to the Office of the Interconnection for planning and 
+operation of the PJM Region;  
+(b) Assure the continued compatibility of its local system energy management system monitoring and 
+telecommunications systems to satisfy the technical requirements of interacting automatically or manually with the 
+Office of the Interconnection as it directs the operation of the PJM Region;  
+(c) Maintain or arrange for a portion of its connected load to be subject to control by automatic underfrequency, under-
+voltage, or other load-shedding devices at least equal to the levels established pursuant to the Reliability Assurance 
+Agreement, or be subject to another Member’s control for these purposes;
+--- PAGE 6 ---
+6 
+ 
+Distributor Members, but it does not contemplate a Member determining or certifying to PJM an 
+allocation of a FERC-jurisdictional “RBP Charge” among other Members’ customers, including 
+helping assemble the “sufficient evidence” PJM requires to support any Qualifying RBP Offset 
+UCAP MW claimed within its zone/area.25  These tasks become harder still where it is the LSE, 
+not the Electric Distributor, that holds the underlying large-load data. 
+Regarding Electric Distributor “Task #5” from the list above, PJM’s RBP Filing requires 
+that the RBP DER Aggregation or Demand Resource seller demonstrate it has coordinated with 
+the Electric Distributor to meet requirements.26 The RBP Filing itself never defines these 
+requirements; the Electric Distributor is thus placed in a gatekeeper role over how these types of 
+capacity resources can submit an RBP Sell Offer; presumably this is as soon as September 30, 
+2026 – the earliest planned opening date of the RBP sell-offer window.  But this function also 
+ 
+(d) Provide or arrange for sufficient reactive capability and voltage control facilities to conform to Good Utility 
+Practice and (i) to meet the reactive requirements of its system and customers and (ii) to maintain adequate voltage 
+levels and the stability required by the bulk power supply facilities of the PJM Region;  
+(e) Shed connected load, share Generation Capacity Resources and take such other coordination actions as may be 
+necessary in accordance with the directions of the Office of the Interconnection in Emergencies;  
+(f) Maintain or arrange for a portion of its Generation Capacity Resources at least equal to the level established 
+pursuant to the Reliability Assurance Agreement to have the ability to go from a shutdown condition to an operating 
+condition and start delivering power without assistance from the power system;  
+(g) Provide or arrange through another Member for the services of a 24-hour local control center to coordinate with 
+the Office of the Interconnection, each such control center to be furnished with appropriate telemetry equipment as 
+specified in the PJM Manuals, and to be staffed by system operators trained and delegated sufficient authority to take 
+any action necessary to assure that the system for which the operator is responsible is operated in a stable and reliable 
+manner.  In addition to meeting any training standards and requirements specified in this Agreement, local control 
+center staff shall be required to meet applicable training standards and requirements in PJM Manual 40, Control Center 
+Requirements, including the PJM System Operator Training Requirements in Attachment C;  
+(h) Provide to the Office of the Interconnection all System, accounting, customer tracking, load forecasting (including 
+all load to be served from its System) and other data necessary or appropriate to implement or administer this 
+Agreement, and the Reliability Assurance Agreement; and (i) Comply with the underfrequency relay obligations and 
+charges specified in Operating Agreement, Schedule 7. 
+25RBP Filing at 97: “Cost responsibility allocated to a zone/area may be further adjusted where PJM receives sufficient 
+evidence demonstrating that new capacity has been brought by load to the relevant Electric Distributor’s zone/area in 
+the form of Qualifying RBP Offset UCAP MW. A zone/area of an Electric Distributor that qualifies for one of the 
+opt-outs set forth in proposed Tariff, Attachment DD, section 18.1(d), would also have RBP Charges reduced by the 
+MW quantity of the opt-out.” (citing proposed Tariff, Attachment DD, section 18.2(c)). 
+26RBP Filing at 75: “the seller must demonstrate that it has coordinated with the Electric Distributor to ensure the 
+resource will meet applicable requirements” (citing proposed Tariff, Attachment DD, section 18.5(f)(i)(11)-(12)).
+--- PAGE 7 ---
+7 
+ 
+conflicts with the “metering and reporting role” that OA section 11.3 assigns to Electric 
+Distributors.  
+B. RBP Credit and Collateral Issues.  
+PJM’s proposed Tariff, Attachment DD, section 18.8 imposes a credit requirement on 
+LSEs.  Per the Affidavit of PJM witness Danielle Croop27, PJM's proposed initial allocation of 
+RBP UCAP MW to each Electric Distributor zone/area is based on the Load Adjustments in PJM 
+Table B9b of the 2026 PJM Load Forecast, applied against the region-wide Initial RBP Target of 
+6,831.3 MW. 28    PJM proposes an RBP LSE Credit Rate "initially at $1.5 million" per MW.29 
+Applied to the 6,831.3 MW of RBP target capacity, approximately $10.25 billion (6,831.3 MW × 
+$1,500,000/MW = $10,246,950,000) would need to be posted by LSEs as collateral no later than 
+45 days ahead of the start of the 2028/2029 Delivery Year. PJM derived the $1.5 million buy-side 
+credit requirement as a full 15-year, $555 MW-day contract payment (discounted at 9.5%), 
+yielding an RBP LSE required posting  ~ 7.5 years equivalent buy-side collateral.    
+PJM proposes that the Electric Distributor’s RBO allocation be reported at no later than 
+sixty days before the start of the DY; PJM proposes to require the affected LSE to post the resulting 
+collateral just fifteen days later, at forty-five days before the DY begins.30  That leaves just a 
+fifteen-day window to arrange collateral for an obligation whose amount it could not have 
+predicted in advance, using a $1.5 million/MW RBP Credit Rate”31   Thus, once an LSE knows 
+the outcome of the state/RERRA reporting process administered by the Electric Distributor, but it 
+then only has two weeks to post significant RPM buy-side collateral. 
+ 
+27 Affidavit Danielle Croop, PJM at page 12 (paragraph 46) (“Croop Affidavit”).  
+28 Croop Affidavit at paragraph 4. 
+29 RBP Filing at 116-117; proposed Tariff, Attachment DD, § 18.8(b)(i)(A). 
+30RBP Filing at 120. 
+31RBP Filing at 116 (quoting proposed Tariff, Attachment DD, section 18.8(b)(i)(A)).
+--- PAGE 8 ---
+8 
+ 
+If the Electric Distributor uploads RBP Obligation MW for the LSEs in its zone/area that 
+do not sum to the zone’s fixed Final RBP Target MW, per the RBP Filing PJM simply scales up 
+each reported MW-value – and individual LSE collateral obligations – to fit the fixed Final RBP 
+Target MW.32 And if the Electric Distributor reports no RBO at all for its zone/area, PJM instead 
+calculates the LSE’s RBP Collateral using the LSE’s pro-rata share of the zone/area’s Daily 
+Unforced Capacity Obligation, a value tied to historical peak load rather than any state/RERRA 
+determination.33  At the same time, on the sell-side RBP resources have a three (3)-year, and only 
+20% * RBP price of $555 MW-day collateral, posting requirement equal to $101,647/MW 
+discounted at PJM’s 9.5% discount rate.  As such, RBP LSEs have a 14.5x collateral posting 
+requirement of RBP supply resources.   
+Moreover, if an RBP-procured generator fails to deliver or is delayed, the RBP load it 
+serves is exposed to higher risk of load curtailment.  An RBP load that wants to hedge that risk by 
+buying replacement capacity cannot do so,  practically speaking; a 20% shortfall penalty times 
+$555 MW-day is only $111 MW-day, which is insufficient compensation to purchase new 
+capacity.  Further, if an RBP resource misses its commercial operation date (“COD”) because of 
+network-upgrade delays are excused from shortfall penalty charges -- no RBP shortfall charge is 
+collected to compensate the load sitting exposed to “IRAS” or other elevated curtailment risk in 
+the meantime.34   
+ 
+ 
+32RBP Filing at 119. “For LSEs serving load in an Electric Distributor zone/area in which RBOs have been reported, 
+the LSE will be required to post RBP Collateral for its RBO MW (i.e., its allocated RBP UCAP MW amount). 
+Consistent with the proposed cost allocation rules, PJM proposes that “the RBP Obligation MW [will] equal[] the 
+RBP Obligation MW submitted for the Load Serving Entity by the Electric Distributor and scaled, as necessary, in 
+the event that the RBP Obligation MW values uploaded by the Electric Distributor do not sum to the fixed, Final RBP 
+Target MW for the zone/area” (footnotes omitted). 
+33Proposed Tariff, Attachment DD, section 18.8(b)(i)(B)(1) 
+34 See: https://www.pjm.com/-/media/DotCom/committees-groups/cifp-rbp/2026/20260610/20260610-item-03h---
+smeco-presentation.pdf
+--- PAGE 9 ---
+9 
+ 
+IV. CONCLUSION 
+SMECO respectfully requests that the Commission consider SMECO’s comments on 
+PJM’s RBP Filing. 
+Respectfully submitted, 
+Damon L. Krieger 
+Senior Vice President, Legal and Strategy, and  
+General Counsel 
+Southern Maryland Electric Cooperative, Inc.  
+15035 Burnt Store Road 
+P.O. Box 1937 
+Hughesville, MD  20637-1937 
+301.274.4323  
+Damon.Krieger@SMECO.coop  
+ 
+Dated: August 21, 2026.
+--- PAGE 10 ---
+10 
+ 
+ 
+CERTIFICATE OF SERVICE 
+ 
+I hereby certify that I have this day served a copy of the foregoing document upon each 
+party on the official service list compiled by the Secretary of the Federal Energy Regulatory 
+Commission in this proceeding. 
+ 
+ 
+ 
+ 
+Dated: August 21, 2026. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /s/ _____ 
+John S. Rohrbach

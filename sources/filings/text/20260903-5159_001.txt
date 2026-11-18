@@ -1,0 +1,1784 @@
+--- PAGE 1 ---
+UNITED STATES OF AMERICA  
+BEFORE THE  
+FEDERAL ENERGY REGULATORY COMMISSION 
+ 
+PJM Interconnection, L.L.C.  
+)  
+)  
+) 
+Docket No. ER 26-3515
+ 
+ 
+LIMITED PROTEST OF PUBLIC INTEREST ORGANIZATIONS 
+ 
+Pursuant to Rule 211 of the Rules of Practice and Procedure of the Federal Energy 
+Regulatory Commission (“FERC” or the “Commission”),1 Sierra Club, Natural Resources 
+Defense Council (“NRDC”), Environmental Law and Policy Center, Appalachian Voices, and the 
+Center for Progressive Reform (collectively, “Public Interest Organizations” or “PIOs”) submit 
+this limited protest of four aspects of PJM Interconnection, L.L.C.’s (“PJM”) proposed Interim 
+Resource Adequacy Service and Large Load Registry (“IRAS Filing”).2  
+With the limited modifications described below, the IRAS Filing is an essential 
+mechanism to protect customers in PJM from skyrocketing costs and degrading reliability caused 
+by the forecasted rapid influx of large loads. PIOs believe the IRAS Filing could, if modified as 
+described below, permanently resolve emerging resource adequacy shortfalls while respecting 
+jurisdictional boundaries. PIOS therefore urge the Commission to approve PJM’s IRAS Filing 
+with modifications to (1) ensure IRAS and Bring Your Own New Capacity (“BYONC”) 
+requirements are permanent for all new large loads, or else to clarify that the trigger for the IRAS 
+program going to sleep is the capacity market clearing for three consecutive years with sufficient 
+ 
+1 18 C.F.R. § 385.211. 
+2 PJM Interconnection, L.L.C., Proposal to Establish Interim Resource Adequacy Service & a 
+Large Load Registry, Docket No. ER26-3515-000 (Aug. 13, 2026), Accession No. 20260813-
+5118 (“IRAS Filing”).
+--- PAGE 2 ---
+ii 
+supply to satisfy all demand including new large loads; (2) require penalties for LSEs that fail to 
+comply with IRAS Actions; (3) either eliminate compensation for IRAS resource curtailment, or 
+require PJM to cap the compensation awarded to IRAS loads at no more than the amount the 
+new large load paid in capacity charges for the relevant delivery year; and (4) require BYONC 
+supply to be fully deliverable to new large loads by considering transmission limits between 
+zones.
+--- PAGE 3 ---
+iii 
+TABLE OF CONTENTS 
+INTRODUCTION .......................................................................................................................... 1 
+BACKGROUND ............................................................................................................................ 5 
+I. PJM is facing resource adequacy and affordability concerns as it struggles to meet data 
+center load growth............................................................................................................... 5 
+A. PJM’s capacity market faces increased reliability risks as data center load grows 
+faster than PJM can bring new supply online. .............................................................. 6 
+B. PJM’s supply and demand imbalance is causing high capacity prices, leading to 
+historically high bills for all ratepayers. ....................................................................... 9 
+II. The Commission should accept PJM’s Interim Resource Adequacy Service and Large 
+Load Registry with modifications to better achieve the IRAS’s objectives. .................... 11 
+DISCUSSION ............................................................................................................................... 12 
+I. The IRAS Framework is just and reasonable and not unduly discriminatory. ................. 12 
+A. Large load customers are differently situated from other customers. ......................... 13 
+B. IRAS is jurisdictionally sound and respects the roles of states and PJM. .................. 18 
+C. Removing New Large Loads from RPM is just, reasonable, and not unduly 
+discriminatory. ............................................................................................................ 20 
+II. The Commission Should Only Modify PJM’s IRAS Filing to Better Accomplish PJM’s 
+Objectives. ........................................................................................................................ 23 
+A. Objective One: Promote Reliability by Requiring New Large Loads to be Curtailable 
+Until They Bring New Capacity to Meet Their Needs. .............................................. 24 
+B. Objective Two: Promote Affordability by Requiring New Large Loads to Pay for 
+Their Own New Capacity and Avoid Shifting Costs to Residential and Other Existing 
+Ratepayers. .................................................................................................................. 26 
+C. Objective Three: Provide States and LSEs With Sufficient Information to Ensure the 
+Right Loads are Curtailed and Charged. ..................................................................... 28 
+III. Modification 1: The Commission must ensure that the IRAS filing effectively removes 
+new large loads from the capacity market until associated new capacity is online and 
+deliverable. ........................................................................................................................ 30 
+A. Suspending the IRAS Framework during periods of resource adequacy risks pinning 
+prices at the cap. .......................................................................................................... 31 
+i. Suspending the IRAS Framework will reduce the incentive for New Large Loads 
+to fully BYONC, raising costs for other customers. ............................................. 33 
+ii. Suspending the IRAS Framework based on the lower Reliability Requirement 
+which excludes New Large Loads that have not demonstrated BYONC is not an 
+appropriate trigger. ................................................................................................ 34 
+B. PJM’s proposal to toggle IRAS on and off creates regulatory uncertainty and 
+whiplash for market participants. ................................................................................ 34
+--- PAGE 4 ---
+iv 
+C. The Commission should modify PJM’s IRAS Filing to make the IRAS Framework 
+Permanent or correct the Reliability Requirement Trigger. ........................................ 36 
+IV.  Modification 2: The Commission Should Modify the IRAS Filing to Include Penalties 
+When Eligible New Large Loads Fails to Curtail ............................................................. 38 
+A. Commission Precedent Supports Operational and Financial Consequences When a 
+Lage Load Fails to Curtail. ......................................................................................... 39 
+B. The Commission Should Require Operational Penalties for Failure to Curtail. ......... 40 
+C. If the Commission declines to impose operational penalties, then the Commission 
+should modify PJM’s proposal to include financial penalties. ................................... 44 
+V. Modification 3: The Commission Should Reject IRAS Compensation or, in the 
+Alternative, Limit Any Payment to a Make-Whole Payment for Capacity Charges. ....... 46 
+A. Curtailability Is a Condition of Speed to Power, Not a Separately Compensable 
+Service......................................................................................................................... 47 
+B. Cost Causation Principles Support a Zero-Dollar Rate or a Capacity-Charge Credit. 49 
+C. PJM’s Reliance on the Commission’s Decision on Compensation for Pre-Emergency 
+Load Response Does Not Justify the Proposed Rate. ................................................. 50 
+D. The Commission Should Remove IRAS Performance Compensation or, in the 
+Alternative, Limit Any Compensation to a Make-Whole Payment. ........................... 51 
+VI. Modification 4: The Commission should require BYONC supply to be fully deliverable 
+to new large loads by considering transmission limits between zones. ............................ 52 
+CONCLUSION ............................................................................................................................. 56
+--- PAGE 5 ---
+1 
+INTRODUCTION 
+ 
+The unprecedented number of new and forecasted large load additions, mostly data 
+centers, in the PJM footprint has outstripped new supply, and PJM’s capacity auctions have 
+cleared short of the region’s reliability requirement for two consecutive auctions despite hitting 
+auction price caps in both auctions.3 These shortfalls increase the risk of loss-of-load events and 
+sustained high-capacity prices for existing ratepayers who are not responsible for these new 
+shortfalls. Moreover, PJM expects that capacity shortfalls may continue due to the rapid growth 
+of data centers and other large loads that PJM cannot currently serve reliably.  
+The IRAS Filing is an attempt by PJM to ensure that future shortfalls do not create 
+reliability risks and to avoid shifting costs to residential or other existing ratepayers. PJM 
+proposes four changes to its governing documents. First, PJM will require that a Load Serving 
+Entity (“LSE”) must bring new capacity to offset or exceed the amount of peak load from new 
+large loads.4 If an LSE fails to bring such new capacity, it will be subject to load reduction 
+requirements prior to Pre-Emergency Load Management Response.5 Second, PJM will establish 
+a Large Load Registry, which will allow PJM to identify how much new capacity an LSE is 
+required to bring to offset new large loads.6 Third, PJM will define Large Loads, New Large 
+Loads, and Eligible New Large Loads.7 Fourth, PJM will exclude New Large Loads that do not 
+Bring Your Own New Capacity (“BYONC”) from the Variable Resource Requirement (“VRR”) 
+ 
+3 The auction fell short by 6,623 MW and 6,831 MW of unforced capacity in the 2027/2028 and 
+2028/2029 auctions, respectively. IRAS Filing, supra note 2, at 14. 
+4 Id. at 3–4. 
+5 Id. 
+6 Id. at 5. 
+7 Id. at 5–6. Unless otherwise noted, capitalized terms in this limited protest have the same 
+definition as the referenced PJM filing and proposed Tariff.
+--- PAGE 6 ---
+2 
+Curve to ensure that existing customers do not purchase new capacity for New Large Loads.8 
+New BYONC supply must participate in the PJM Reliability Procurement Mechanism (“RPM”) 
+as price takers (i.e., $0/MW offer) for 10 consecutive delivery years.9 PIOs strongly support 
+PJM’s proposal to limit reliability service for LSEs serving New Large Loads that fail to 
+BYONC. 
+PIOs support many aspects of the IRAS Filing and find the overarching framework just, 
+reasonable, and not unduly discriminatory. It is admirable that PJM is proposing to limit the 
+reliability guarantee for zones in which New Large Loads fail to bring new capacity to the 
+system. By excluding those resources from the capacity market, PJM will ensure that residential 
+and other existing ratepayers do not purchase capacity for New Large Loads. PJM is proposing 
+changes that generally support the Statement of Principles Regarding PJM issued on January 16, 
+2026, by the National Energy Dominance Council and the 13 governors of the PJM States,10 the 
+Ratepayer Protection Pledge signed by more than 200 utilities, developers, cooperatives, and 
+governors,11 and the repeated recommendations that PIOs, consumer advocates, and other 
+stakeholders made during the PJM stakeholder process.12 
+ 
+8 Id. at 5–8. 
+9 Id. at 55. 
+10 Statement of Principles from the White House Nat’l Energy Dominance Council & PJM 
+Governors Regarding PJM (Jan. 15, 2026), https://www.energy.gov/documents/statement-
+principles-regarding-pjm. 
+11 Ratepayer Protection Pledge, The White House (Mar. 4, 2026), 
+https://www.whitehouse.gov/ratepayer-protection-pledge/#signatories (“Ratepayer Protection 
+Pledge”). 
+12 See, e.g., NRDC & the PJM Legislators Collaborative, Protecting Ratepayers Proposal: 
+Executive Summary (Nov. 17, 2025), https://www.pjm.com/-/media/DotCom/committees-
+groups/cifp-lla/2025/20251119/20251119-item-02e---pjm-legislators-and-nrdc-package---
+executive-summary.pdf
+--- PAGE 7 ---
+3 
+PJM’s consent to modification is a further signal that it is committed to the most effective 
+IRAS Filing possible. Rather than present a take-it-or-leave-it package, PJM “consents to the 
+Commission’s exercise of authority to modify and/or sever any element of the proposed Tariff 
+and RAA language” so long as any modification “is consistent with PJM’s overarching 
+objectives in this filing.”13 PJM invites stakeholders to “comment as they feel necessary and 
+appropriate.”14 PIOs accept this invitation by proposing several narrow but important 
+modifications that the Commission can prescribe in an order approving the IRAS Filing. 
+PJM’s consent is bounded by its “overarching objectives in this filing,” yet the IRAS 
+Filing never explicitly defines the objectives.15 Fairly read, however, the IRAS Filing pursues 
+three objectives: 
+1. Promote reliability by requiring new large loads to be curtailable until they bring new 
+capacity to meet their needs. 
+2. Promote affordability by requiring new large loads to pay for their own new capacity 
+and avoid shifting costs to residential and other existing ratepayers. 
+3. Provide states and LSEs with sufficient information to ensure that new large loads, 
+and not existing customers, are curtailed when new large loads fail to BYONC and 
+that new large loads pay for their own new capacity. 
+The IRAS Filing fails to fully satisfy the first two objectives. This limited protest 
+identifies four narrow but important modifications that will help PJM advance these objectives 
+with the IRAS Filing. 
+ 
+13 IRAS Filing, supra note 2, at 9, 122. 
+14 Id. at 124. 
+15 Id. at 9, 122.
+--- PAGE 8 ---
+4 
+First, the IRAS Filing allows resources that do not BYONC to exit IRAS without first 
+bringing new generation. The IRAS program “effectively goes to sleep” after three consecutive 
+delivery years of meeting PJM’s Reliability Requirement, even though the Reliability 
+Requirement excludes load subject to IRAS.16 PIOs propose that the Commission either require 
+PJM to never put the IRAS program to sleep, or else to clarify that the trigger for the IRAS 
+program being put to sleep is the capacity market clearing for three consecutive years with 
+sufficient supply to meet all demand including new large loads subject to IRAS . 
+Second, the IRAS Filing does not have any penalty provisions for non-compliance with 
+IRAS curtailment requirements. The Commission should require PJM to create a penalty applied 
+to LSEs that fail to reduce load when PJM makes an IRAS Action and require PJM to provide 
+LSEs and states with sufficient information to enable retail regulators to ensure that any such 
+penalties are borne by loads that fail to curtail as instructed, rather than by other consumers.  
+Third, the IRAS Filing provides compensation to unmatched large loads that curtail under 
+the IRAS program. And the IRAS filing lacks a cap on the total amount of compensation IRAS 
+resources may receive in the aggregate.17 The Commission should remove this compensation 
+because the ability to pursue speedy interconnection prior to bringing their own capacity 
+resources already provides IRAS resources with sufficient consideration for their commitment to 
+curtail when required. Moreover, because the purpose of the proposed compensation for IRAS 
+Actions is to make up for any capacity bills that large loads may still be required to pay, the 
+Commission should require PJM to cap the compensation at no more than the amount the 
+ 
+16 Id. at 72. 
+17 Id. at 10 n.22.
+--- PAGE 9 ---
+5 
+Eligible New Large Load paid in capacity charges for the relevant delivery year if it allows any 
+compensation for IRAS curtailments. To the extent compensation is provided for IRAS 
+curtailment, PIOs strongly support PJM’s position that states and retail regulators retain authority 
+to waive such compensation entirely.18  
+Fourth, the IRAS Filing does not include a locational requirement for the new BYONC 
+supply. Without a locational requirement, PJM risks relying on new capacity that will not 
+actually be able to serve the zone in which the sponsoring new large load resides, thus failing to 
+achieve the reliability objective described above. Similarly, allowing distant load and supply 
+arrangements could result in significant regional transmission needs, which shift costs to other 
+ratepayers, failing objective 2. The Commission should direct PJM to require BYONC to be 
+located only in zones that are not constrained with regard to the zone in which the new large load 
+resides. 
+These modifications will disturb neither the IRAS Filing’s architecture nor its schedule, 
+and they fall squarely within PJM’s consent. These modifications will help the IRAS Filing 
+ensure that PJM maintains reliability without imposing undue costs on residential and other 
+existing ratepayers. 
+BACKGROUND 
+ 
+I. 
+PJM is facing resource adequacy and affordability concerns as it struggles to meet 
+data center load growth. 
+ 
+PJM’s capacity market, the RPM, worked relatively well at assuring resource adequacy at 
+reasonable rates for nearly twenty years, under conditions of predictable, gradual load growth 
+ 
+18 Id. at 102.
+--- PAGE 10 ---
+6 
+spread relatively evenly across the PJM footprint. New generation resources could be built and 
+interconnected closer to the market’s three-year forward timeline.19 However, as load growth, 
+generation retirement, interconnection timelines, and supply chain delays have all increased in 
+recent years, PJM has recognized that the current state of its markets is untenable.20 Due in part 
+to PJM’s slow progress on interconnection reform and lack of multi-value transmission planning, 
+PJM’s markets are facing two major pain points: (1) data center load is growing faster than new 
+supply can come online, leading to reliability concerns; and (2) PJM’s supply and demand 
+imbalance is causing sustained high capacity prices, leading to historically high bills for all 
+ratepayers. 
+A. 
+PJM’s capacity market faces increased reliability risks as data center load 
+grows faster than PJM can bring new supply online. 
+PJM’s market is facing unprecedented load growth from rising data center demand that is 
+outstripping supply and threatening reliability. These threats will accelerate if data center 
+demand materializes as projected. Markets across the U.S. have not experienced this level of 
+demand growth in recent memory. Electricity demand in the U.S. was relatively flat from the 
+early 2000s until the early 2020s.21 That trend has quickly changed. Over the next five years, the 
+U.S. expects electricity usage to grow 5.7% per year.22 Data centers are expected to make up 
+ 
+19 PJM, Powering Reliability Through Market Design, 4 (May 6, 2026), https://www.pjm.com/-
+/media/DotCom/library/reports-notices/special-reports/2026/20260506-powering-reliability-
+through-market-design.pdf (“Powering Reliability Through Market Design”). 
+20 Id. at 3, 27. 
+21 Mark Schipper & Tyler Hodge, After More Than a Decade of Little Change, U.S. Electricity 
+Consumption is Rising Again, U.S. Energy Info. Admin (May 13, 2025), 
+https://www.eia.gov/todayinenergy/detail.php?id=65264. 
+22 John Wilson et. al., Grid Strategies, Power Demand Forecasts Revised Up for Third Year 
+Running, Led by Data Centers, 6 (Nov. 2025), https://gridstrategiesllc.com/wp-
+content/uploads/Grid-Strategies-National-Load-Growth-Report-2025.pdf (“Grid Strategies 2025 
+Load Growth Report”).
+--- PAGE 11 ---
+7 
+25% to 55% of the total demand growth in the U.S. through 2030.23 PJM predicts that 30 GW of 
+large load demand will come online by 2030 and 70 GW of large load demand will come online 
+by 2038.24 
+Most data center load growth through 2030 will be concentrated in the Electric 
+Reliability Council of Texas (“ERCOT”) and PJM.25 Three states—Virginia, Texas, and 
+California—host the highest concentration of data centers, and Virginia, located in the PJM 
+footprint, hosts the largest number of data centers in the country.26 PJM’s Dominion Zone, which 
+covers Virginia, is expected to have the largest absolute increase in summer peak demand 
+through 2030.27 RTO-wide, PJM expects its peak load growth to increase 65,773 MW by 2026 
+from its summer peak and 66,980 MW for its winter peak.28 
+ 
+23 Grid Strategies 2025 Load Growth Report at 3; Jonathan Koomey et. al., Bipartisan Pol’y Ctr. 
+& Koomey Analytics, Electricity Demand Growth and Data Centers: A Guide for the Perplexed, 
+10 (Feb. 2025), https://bipartisanpolicy.org/wp-content/uploads/2025/02/BPC-Report-Electricity-
+Demand-Growth-and-Data-Centers-A-Guide-for-the-Perplexed.pdf. 
+24 Letter from Paula Conboy, Chair, PJM Board of Managers, to PJM Stakeholders on Critical 
+Issue Fast Path – Reliability Backstop Procurement and Connect and Manage, 1 (Jul. 27, 2026), 
+https://www.pjm.com/-/media/DotCom/about-pjm/who-we-are/public-
+disclosures/2026/20260727-board-decisional-letter-on-cifp-reliability-backstop-procurement-
+and-connect-and-manage.pdf (“PJM Board July 2026 Decisional Letter”); PJM Proposes 
+Framework to Connect Data Centers Without Compromising Reliability, Affordability, PJM 
+Inside Lines (Aug. 13, 2026), https://insidelines.pjm.com/pjm-proposes-framework-to-connect-
+data-centers-without-compromising-reliability-affordability/. 
+25 Grid Strategies 2025 Load Growth Report, supra note 23, at 5. 
+26 Rebecca Leppert, What We Know About Energy Use at U.S. Data Centers Amid the AI Boom, 
+Pew Research center, Pew Research (Oct. 24, 2025), https://www.pewresearch.org/short-
+reads/2025/10/24/what-we-know-about-energy-use-at-us-data-centers-amid-the-ai-boom/. 
+27 Mark Schipper & Jonathan Church, Commercial Electricity Sales Have Soard in Virginia, 
+Driven by Data Centers, U.S. Energy Info. Admin. (May 5, 2026), 
+https://www.eia.gov/todayinenergy/detail.php?id=67664. 
+28 PJM, 2026 PJM Load Forecast Report, 6 (Jan. 14, 2026), https://www.pjm.com/-
+/media/DotCom/library/reports-notices/load-forecast/2026-load-report.pdf.
+--- PAGE 12 ---
+8 
+PJM’s expected data center load growth is incompatible with current generation 
+development timelines that have increased due to a slow interconnection process, supply chain 
+issues, a lack of proactive, multi-value regional transmission planning, and the slow pace of 
+network upgrade construction. While developers can typically build hyperscale data centers 
+within 18 to 24 months, new generation resources can spend 4 to 5 years in interconnection 
+queues and endure lengthy siting, permitting, and construction processes before coming online.29 
+Transmission upgrades can take even longer, with average timelines ranging from 7 to 10 years 
+to plan, approve, and build.30 In short, it takes far longer to build new power plants than data 
+centers. 
+As a result of its supply and demand imbalance, PJM has fallen short of its Reliability 
+Requirement for the past two RPM Base Residual Auctions (“BRAs”) for delivery years 
+2027/2028 and 2028/2029. PJM’s 2028/2029 BRA cleared 6,831.3 MW short of PJM’s 
+reliability requirement, while the 2027/2028 BRA cleared 6,6623 MW short.31 While PJM has 
+suggested that these gaps may narrow as the delivery year approaches,32 the trend is concerning. 
+PJM expects that without its Reliability Backstop Procurement, the 2029/2030 BRA in 
+December of this year will also clear short.33 Falling below the reserve margin means that PJM 
+ 
+29 Rachel Mural et. al, Data Centers and Large-Scale Electric Growth: The Virginia and Texas 
+Experiences, Belfer Ctr. For Science and Int’l Aff. (Apr. 20, 2026), 
+https://www.belfercenter.org/research-analysis/data-centers-texas-virginia-comparison. 
+30 Id.  
+31 IRAS Filing, supra note 2, at 14. 
+32 PJM Auction Procures 134,479 MW of Generation Resources, PJM Inside Lines (Dec. 1, 
+2025) https://insidelines.pjm.com/pjm-auction-procures-134479-mw-of-generation-resources/  
+33 PJM Interconnection, L.L.C., Reliability Backstop Procurement to Address Resource 
+Adequacy Concerns Stemming from Large Loads, Docket No. ER26-3380-000 (Jul. 31, 2026), 
+Accession No. 20260731-5214 (“RBP Filing”). PJM’s filing is pending at FERC. PIOs filed a
+--- PAGE 13 ---
+9 
+has to operate with slimmer reserves and endure more reliability risks.34 The North American 
+Electric Reliability Corporation (“NERC”) has classified PJM as an elevated risk area from 2026 
+to 2028 and a high risk area from 2029 onward.35 NERC predicts that as data center load growth 
+continues to increase in the coming years, the risk of reliability shortfalls will increase as well.36 
+B. 
+PJM’s supply and demand imbalance is causing high capacity prices, leading 
+to historically high bills for all ratepayers. 
+PJM’s market is also facing unsustainably high prices. The past three BRAs cleared at the 
+price cap, clearing at $325/MW-day in the 2028/2029 BRA,37 $333.44/MW-day in the 
+2027/2028 BRA,38 and $329.17/MW-day in the 2026/2027 BRA.39 For reference, PJM’s 
+2024/2025 BRA cleared at only $28.92/MW-day and at $269.92/MW-day in the 2025/2026 
+BRA.40 PJM’s independent market monitor (“IMM”) estimated that data centers caused 63% of 
+the increase in prices in the 2025/2026 BRA, resulting in an increase of $9.3 billion in higher 
+costs for PJM customers.41 As of January 2026, the IMM estimated that the costs to the other 
+ 
+Limited Protest in response to PJM’s RBP proposal, largely supporting PJM’s proposal. See 
+Sierra Club & NRDC, Limited Protest of Public Interest Organizations, Docket No. ER26-3380-
+000 (Aug. 21, 2026), Accession No. 20260821-5180. 
+34 PJM Capacity Auction Procures 138,318 MW of Generation Resources as Work Continues to 
+Address Growing Electricity Demand, PJM Inside Lines (Jul. 14, 2026), 
+https://insidelines.pjm.com/pjm-capacity-auction-procures-138318-mw-of-generation-resources-
+as-work-continues-to-address-growing-electricity-demand. 
+35 N. Am. Elec. Reliability Corp. (“NERC”), 2025 Long Term Reliability Assessment (Jan. 
+2026), https://www.nerc.com/globalassets/our-work/assessments/nerc_ltra_2025.pdf. 
+36 NERC, 2025 Long Term Reliability Assessment, supra note 35. 
+37 IRAS Filing, supra note 2, at 14. 
+38 Id. at 14. 
+39 PJM, 2026/2027 Base Residual Auction Report, 3, 5 (Jul. 22, 2025), https://www.pjm.com/-
+/media/DotCom/markets-ops/rpm/rpm-auction-info/2026-2027/2026-2027-bra-report.ashx. 
+40 Id. at 5. 
+41 Cathy Kunkel, Projected Data Center Growth Spurs PJM Capacity Prices by Factor of 10, 
+Inst. for Energy Econ. And Fin. Analysis (Jul. 30, 2025), https://ieefa.org/resources/projected-
+data-center-growth-spurs-pjm-capacity-prices-factor-10 (“Kunkel, Projected Data Center 
+Growth”).
+--- PAGE 14 ---
+10 
+customers increased by $23 billion as a result of data center demand in the 2025/2026, 
+2026/2027, and 2027/2028 BRAs.42 
+PJM’s increased capacity costs are raising ratepayers’ bills. In June 2025, Pepco 
+customers in Washington, D.C. saw their bills increase by $21 per month, and D.C.’s Office of 
+Consumers’ Counsel attributed about half of that increase to the spike in capacity market 
+prices.43 Similar trends are expected across PJM. In June 2026, PJM customers collectively 
+began paying an additional $1.4 billion in capacity market costs driven by data center demand.44 
+The increase in PJM’s capacity market prices has sparked concern from the White House, 
+the 13 PJM states, the PJM board, residential ratepayers,45 and from data center companies 
+themselves. On January 15, 2026, the White House’s National Energy Dominance Council and 
+the governors of the PJM states signed a joint Statement of Principles Regarding PJM, urging 
+PJM to hold a Reliability Backstop Auction to procure new capacity resources for data centers 
+and allocate the costs of that new capacity to LSEs with new data centers that have not procured 
+their own new capacity.46 Similarly, on January 16, 2026, the PJM board released a board 
+decisional letter that directed PJM staff to develop several proposals to address reliability and 
+ 
+42 Monitoring Analytics, Analysis of the 2027/2028 RPM Base Residual Auction Part A, 3 (Jan. 
+5, 2026), 
+https://www.monitoringanalytics.com/reports/Reports/2026/IMM_Analysis_of_the_20272028_R
+PM_Base_Residual_Auction_Part_A_20260105.pdf. 
+43 Kunkel, Projected Data Center Growth, supra note 41. 
+44 Id. 
+45 Including members of the PIOs. 
+46 Statement from the White House Nat’l Energy Dominance Council & PJM Governors of 
+Principles Regarding PJM (Jan. 15, 2026), https://www.energy.gov/documents/statement-
+principles-regarding-pjm.
+--- PAGE 15 ---
+11 
+affordability challenges caused by large load additions in PJM.47 Like the White House and PJM 
+Governors’ Statement of Principles, PJM’s board urged PJM staff to initiate a process to enable 
+curtailment of large loads that do not bring their own new capacity or participate in a reliability 
+backstop auction.48 
+The largest AI data center companies and developers in the country signed the White 
+House’s Ratepayer Protection Pledge—introduced on March 4, 2026, and expanded in July—a 
+voluntary commitment from data center owners to build, bring, or buy the new generation 
+resources needed to satisfy their new energy demands and pay the full cost of those resources.49 
+From April through June 2026, PJM held meetings through the Critical Issue Fast Path – 
+Reliability Backstop Procurement / Connect & Manage process. The work products associated 
+with that process include both the IRAS Filing and the RBP Filing.50 These filings constitute 
+major components of PJM’s effort to comply with the Board’s directive in the January 16 letter. 
+II. 
+The Commission should accept PJM’s Interim Resource Adequacy Service and 
+Large Load Registry with modifications to better achieve the IRAS’s objectives. 
+For the reasons detailed below, PIOs generally support PJM’s Interim Resource 
+Adequacy Service and Large Load Registry proposal. But PIOs urge the Commission to exercise 
+its authority to modify the proposal to better accomplish PJM’s objectives to: (1) promote 
+reliability by requiring new large loads to be curtailable until they bring new capacity to meet 
+ 
+47 Letter from David E. Mills, Chair, PJM Board of Managers, to PJM Stakeholders on Critical 
+Issue Fast Path – Large Load additions (Jan. 16, 2026), https://www.pjm.com/-
+/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20260116-pjm-board-letter-re-
+results-of-the-cifp-process-large-load-additions.pdf. 
+48 Id. 
+49 White House Ratepayer Protection Pledge, supra note 11. 
+50 See IRAS Filing, supra note 2; RBP Filing, supra note 33.
+--- PAGE 16 ---
+12 
+their needs; (2) promote affordability by requiring new large loads to pay for their own new 
+capacity and avoid shifting costs to residential and other existing ratepayers; and (3) provide 
+states and LSEs with sufficient information to ensure that it is new large loads and not existing 
+customers are who curtailed when new large loads fail to BYONC and/or charged for capacity 
+used to serve new large loads.  
+Specifically, the Commission should accept PJM’s proposal, but only on the conditions 
+that PJM make the following modifications: (1) ensure IRAS and BYONC requirements are 
+permanent for all new large loads regardless of PJM’s resource adequacy status or else require 
+that PJM always include New Large Loads in the Reliability Requirement when determining 
+whether the IRAS program may go to sleep; (2) require PJM to create a penalty applied to LSEs 
+that fail to curtail when PJM makes an IRAS curtailment request; (3) either eliminate the 
+compensation for IRAS resource curtailment or require PJM to cap the compensation awarded to 
+IRAS loads at no more than the amount the new large load paid in capacity charges for the 
+relevant delivery year; and (4) require PJM to only allow new large loads to BYONC with 
+supply resources located in a zone that is not constrained with regard to the zone in which the 
+new large load resides. 
+DISCUSSION 
+ 
+I. 
+The IRAS Framework is just and reasonable and not unduly discriminatory. 
+Overall, the IRAS proposal presents a just and reasonable approach to protect reliability 
+and fairly allocate costs among PJM customers and zones. Without the IRAS proposal, PJM 
+customers will be doomed to bear ever-rising costs and degrading reliability as large loads 
+consistently outpace new supply. This reality warrants new rules. The IRAS framework is an 
+essential course-correction that will help rectify years of public subsidization of large load
+--- PAGE 17 ---
+13 
+capacity costs, protect customers from emerging reliability risks, and respect jurisdictional 
+boundaries. While we propose narrow but important modifications to make IRAS more effective, 
+PIOs strongly support the overarching IRAS framework.  
+As described above, the IRAS Filing has distinct components which all must operate 
+together to form a comprehensive solution. PJM proposed to establish a Large Load Registry, 
+require LSEs to ensure that New Large Loads BYONC, implement IRAS load reduction requests 
+prior to Pre-Emergency Load Management Response, and remove New Large Loads that do not 
+BYONC from the VRR Curve in the capacity auction. These comments will refer to New Large 
+Loads that do not BYONC as “unmatched large load.” The interplay between these components 
+is essential to the function of the IRAS proposal. Together, these components can be referred to 
+as the “IRAS Framework.” 
+The IRAS Framework is not unduly discriminatory because it recognizes that large load 
+customers are differently situated from other customers due to their outsized impacts on other 
+customers’ costs, resource adequacy, and reliability risks. Similarly, the IRAS Framework is 
+jurisdictionally sound because it respects the roles of PJM, states, end-use customers, and 
+Electric Distributors (“EDs”) outlined in the Federal Power Act. Finally, the IRAS Framework 
+ensures just and reasonable rates by removing unmatched large loads from the capacity auction, 
+ensuring that new large loads are responsible for their own capacity costs. 
+A. 
+Large load customers are differently situated from other customers. 
+Large load customers are differently situated than traditional residential and commercial 
+customers and warrant new rules and obligations. The IRAS Filing correctly recognizes this 
+distinction and applies new responsibilities to large loads, through their EDs, that will protect 
+other customers from unjust costs and reliability risks.
+--- PAGE 18 ---
+14 
+Large loads are unlike other customers. Traditional residential and commercial loads 
+grow slowly and predictably over decades, but large loads grow rapidly and unpredictably, with 
+massive, hyper-concentrated impacts on the electricity system. Large loads are also distinct from 
+organic load growth because the pace of large load development is significantly faster than the 
+construction timeline of new supply. Slower and more diffuse organic load growth is easier to 
+satisfy under current generation development timelines, whereas large loads that can come online 
+much more quickly than new power plants cause distinct challenges for reliability and 
+affordability throughout the PJM region. Indeed, this distinct load growth pattern has already led 
+to significant documented impacts on costs and reliability. First, large loads have driven capacity 
+and energy market price spikes and shifted costs to other customers. As the PJM Independent 
+Market Monitor (“IMM”) recently remarked, “[l]arge data center load additions have already had 
+a significant and irreversible impact on PJM customers that will be paid through May 31, 2029, 
+and will have additional significant impacts on other customers as a result of higher transmission 
+costs, higher energy market prices and higher capacity market prices.”51 Two years ago, PJM’s 
+2025/2026 Base Residual Auction cleared at a (then) record high of $269.92/MW-day, raising the 
+total regional capacity bill from $2.2 billion to $14.7 billion. Since then, three additional auctions 
+have cleared at the administrative cap, resulting in roughly $63.6 billion total in bills paid by all 
+customers in PJM through 2029.52 Similarly, energy prices have jumped 40.2% since 2025, from 
+ 
+51 Monitoring Analytics, L.L.C., Quarterly State of the Market Report for PJM: January through 
+June (Q2), 2 (Aug. 13, 2026), 
+https://www.monitoringanalytics.com/reports/PJM_State_of_the_Market/2026/2026q2-som-
+pjm.pdf (“Monitoring Analytics Q2 Report”). 
+52 Ethan Howland, Data Centers Drove $6.3B in PJM Capacity Auction Costs: Market Monitor, 
+Utility Dive (July 20, 2026). https://www.utilitydive.com/news/pjm-data-centers-capacity-
+auction-imm-bowring/825626/
+--- PAGE 19 ---
+15 
+$51.8/MWh to $72.5/MWh. Total wholesale power costs have increased 54% since 2024.53 
+These higher costs are caused almost exclusively by forecast large loads outpacing new supply.54 
+When a single segment of commercial demand leads to multi-billion-dollar regional wholesale 
+price increases, it ceases to be standard incremental load growth and warrants urgent structural 
+changes to PJM’s markets and reliability obligations.  
+Second, large loads have demonstrated outsized impacts on future resource adequacy and 
+on real-time reliability which warrant different approaches to electric service as proposed in the 
+IRAS Filing. As described in the Background section, PJM has cleared without sufficient 
+capacity to meet the Reliability Requirement in both the 2027/2028 BRA and the 2028/2029 
+BRA due to the pace of large load growth. PJM cleared 6,623 MW and 6,831 MW short, 
+respectively.55 Large loads have degraded reliability from the 1-in-10 year reliability standard to 
+closer to 1-in-3 years. PJM customers face an increased risk of blackouts starting in 2027 due to 
+unmitigated large load growth.  
+Beyond these long-term capacity shortfalls, large computational loads introduce real-time 
+operational risks to the bulk power system. The North American Electric Reliability Corporation 
+(“NERC”) documented that data center facilities pose an unprecedented reliability threat: they 
+can instantly trip over 1,000 MW of power offline simultaneously, without time for RTOs or 
+ 
+53 Monitoring Analytics Q2 Report, supra note 51, at 17, tbl. 1-9.  
+54 Ethan Howland, Data Centers Drove $6.3B in PJM Capacity Auction Costs: Market Monitor, 
+Utility Dive (July 20, 2026). https://www.utilitydive.com/news/pjm-data-centers-capacity-
+auction-imm-bowring/825626/ 
+55 IRAS Filing, supra note 2, at 14.
+--- PAGE 20 ---
+16 
+utilities to respond, leading to the risk of cascading failures and blackouts.56 This occurred in 
+PJM on July 22, when nearly 4,000 MW of data center load tripped offline unexpectedly in 
+Virginia and led to cascading actions to restore reliability.57 The IRAS Framework recognizes the 
+unique risks that data centers pose to resource adequacy and reliability, and appropriately 
+proposes common-sense solutions to maintain reliability and affordability. 
+Longstanding precedent supports the distinct treatment of large loads. Under Sections 
+205 and 206 of the Federal Power Act, FERC is mandated to ensure that all rules, regulations, 
+and practices “affecting” wholesale rates or interstate transmission service are just, reasonable, 
+and not unduly discriminatory.58 Large loads are clearly “affecting” wholesale rates, as described 
+above. Moreover, FERC has also already ruled that a tariff’s failure to differentiate large loads 
+from traditional native loads is a structural deficiency.59 In the IRAS Filing, PJM resolves this 
+deficiency by defining Large Loads, New Large Loads, and Eligible New Large Loads and 
+placing unique requirements on these customers through their EDs and LSEs. Likewise, FERC 
+accepted the emergency “price collar” designed to insulate regular ratepayers from the price 
+distortions caused by large loads.60 The IRAS Filing follows on these precedents by removing 
+ 
+56 NERC, Level 3 Essential Action Alert: Computational Load Modeling, Studies, 
+Instrumentation, Commissioning, Operations, Protection, and Control (May 4, 2026). 
+https://www.nerc.com/globalassets/programs/bpsa/alerts/level-3-computational-load-alert.pdf 
+57 PJM, Dominion Review Large Load Transfer Event, PJM Inside Lines (Aug. 11, 2026). 
+https://insidelines.pjm.com/pjm-dominion-review-large-load-transfer-event/ 
+58 16 U.S.C. §§ 824d–e. 
+59 PJM Interconnection, L.L.C., 195 FERC ¶ 61,211, at P 58 (June 2026) (finding that “PJM's 
+Tariff appears to be unjust and unreasonable because it lacks a definition of large load, as a new 
+category of load”). 
+60 PJM Interconnection, L.L.C., 195 FERC ¶ 61,076 (Apr. 2026).
+--- PAGE 21 ---
+17 
+unmatched large load from future RPM auctions and ensuring that large loads are responsible for 
+bringing their own supply. 
+More recent Commission precedent reinforces that the IRAS Filing is not unduly 
+discriminatory but instead appropriately recognizes how large loads are differently situated from 
+native load. The Commission recently acknowledged the unique effects that large loads are 
+having on the transmission system and instituted a show cause proceeding directing PJM to 
+develop specific provisions in its tariff relating to large load interconnection.61 The 
+Commission’s Order recognizes that large loads can be more energy intensive and exhibit 
+different load profiles, which may make providing transmission service to Eligible Customers on 
+behalf of large loads more complex and raise more reliability concerns for the transmission 
+system.62 The Commission directed PJM to address several issues regarding the distinct impacts 
+of large loads on the transmission system including: (1) the application process, study procedures 
+and ongoing operational requirements that apply to large loads; (2) additional transparency 
+concerning transmission costs caused by large loads; (3) new transmission services reflecting the 
+ability of flexible large loads to limit their use of the transmission system; (4) and rates, terms, 
+and conditions of service for electrically proximate of co-located loads.63 The IRAS proposal 
+addresses some of the Commission’s concerns around large load interconnection, cost-
+transparency, and large loads’ unique reliability impacts on the system by proposing a large load 
+ 
+61 Order Instituting Proceeding Under Section 206 of the Federal Power Act, 195 FERC ¶ 
+61,211 (Jun. 18, 2026) 
+62 Id. at P 53.  
+63 Id. at P 35.
+--- PAGE 22 ---
+18 
+definition, establishing a large load registry, and creating a new capacity product that seeks to 
+allow large loads to connect, while maintaining system reliability. 
+B. 
+IRAS is jurisdictionally sound and respects the roles of states and PJM. 
+PJM took care to compose a solution that respects the roles and responsibilities outlined 
+in the Federal Power Act.64 Far from encroaching on retail domains, the IRAS Framework is a 
+model of cooperative federalism that relies on a clear division of labor between PJM, Electric 
+Distributors, LSEs, state authorities, and end-use customers. PJM proposes new rules that 
+directly affect wholesale market prices and grid reliability. Even if those federal rules affect retail 
+customer behavior, they are legally sound.65 
+Throughout every element of the proposed IRAS Framework, PJM has a specific and 
+limited role with no direct control over retail end-use customers. This is because (a) PJM relies 
+on aggregate megawatt quantities of load and supply to implement the IRAS Framework, and (b) 
+PJM implements IRAS Actions through Electric Distributors, who are in turn regulated by state 
+authorities.  
+First, while PJM will track individual end-use customer data and supply arrangements in 
+the Large Load Registry, it will only act based on aggregate megawatt quantities. Electric 
+distributors will be required to track and report data about individual large load customers, but 
+PJM will only implement IRAS Actions and add load into RPM using aggregate megawatt 
+quantities by zone/area. This balance of tracking at the customer level but acting at the macro 
+ 
+64 See 16 U.S.C. § 824(b)(1) (outlining federal jurisdiction over interstate wholesale transmission 
+and sales while explicitly reserving regulation of local distribution facilities, retail sales, and end-
+use consumption to state commissions). 
+65 See FERC v. Elec. Power Supply Ass’n, 577 U.S. 260, 281 (2016) (“EPSA”).
+--- PAGE 23 ---
+19 
+level using aggregate quantities by zone is a key feature that makes PJM’s proposal just and 
+reasonable and aligned with FERC precedent.66 By tracking individual large loads and BYONC 
+arrangements, the Registry helps ensure that EDs allocate interruptions to the correct customers 
+during IRAS Actions. Similarly, the Registry informs PJM as to the proper quantity of load to 
+remove from RPM until New Large Loads bring their own new supply. This careful design 
+respects jurisdictional boundaries while also protecting other customers and overall system 
+reliability. 
+Second, PJM will respect jurisdictional boundaries by directing IRAS Actions at the 
+wholesale level. PJM will never curtail individual retail customers—instead, it uses the Registry 
+and results from the most recent BRA to designate megawatt quantities of IRAS curtailment by 
+zone.67 It will be up to the Electric Distributor, overseen by state regulators, to allocate IRAS 
+curtailments among end-use customers. This clear delineation between PJM and state-regulated 
+entities complies with the findings of the Supreme Court, which affirmed that wholesale grid 
+management rules are fully lawful when they target aggregate wholesale metrics and leave 
+individual retail consumer implementation and retail cost allocation to the states.68 Here, the 
+Large Load Registry again protects against unintended consequences: by using actual data from 
+large loads and BYONC to inform IRAS quantities, but then directing aggregate curtailment 
+quantities by zone, PJM provides EDs with all the information necessary to ensure that 
+curtailments go to the correct customers without encroaching on state authorities. 
+ 
+66 IRAS Filing, supra note 2, at 45–48. 
+67 Id. at 40. 
+68 EPSA, 577 U.S. at 279–81.
+--- PAGE 24 ---
+20 
+These design elements ensure that the IRAS Framework respects jurisdictional roles and 
+is a just and reasonable approach to maintaining resource adequacy and protecting other 
+customers. 
+C. 
+Removing New Large Loads from RPM is just, reasonable, and not unduly 
+discriminatory. 
+ 
+Removing New Large Loads that do not BYONC from the VRR Curve in RPM is the 
+lynchpin of the IRAS filing and is essential to comply with cost-causation principles.69 This 
+provision is an urgent course-correction after three consecutive auctions that resulted in 
+degrading reliability margins and massive public subsidies for power needed to serve large loads. 
+The IRAS Framework does not undermine market fundamentals; rather, it correctly recognizes 
+that one single customer class is driving unjust and unreasonable outcomes, and suggests fair 
+changes to preserve competitive results for all ratepayers in PJM. Similarly, the provision does 
+not block market access for large load customers—it simply clarifies commercial conditions. It is 
+clear beyond reasonable doubt that, without this solution, the trend of high clearing prices, cross-
+subsidization, and degrading reliability would continue for the foreseeable future.  
+Removing new large loads that do not BYONC from the VRR Curve observes principles 
+of cost causation because it prevents the RPM from forcing other ratepayers to subsidize  
+capacity on behalf of new large loads. As described in the previous section, large loads have 
+increased the clearing price for the last three consecutive capacity auctions as they outpace new 
+supply. These clearing prices are spread across all customers and resulted in significantly higher 
+utility bills for residential and commercial customers.70 Leaving unmatched large loads in the 
+ 
+69 See e.g., Midwest ISO Transmission Owners v. FERC, 373 F.3d 1361, 1368 (D.C. Cir. 2004). 
+70 See Kunkel, Projected Data Center Growth, supra note 41.
+--- PAGE 25 ---
+21 
+VRR Curve allows them to act as “free riders”—gambling on the broader system’s existing 
+capacity safety cushion while forcing traditional public ratepayers to fund ever-higher clearing 
+prices. This treatment flies in the face of legal precedent for cost-causation. The D.C. Circuit has 
+acknowledged FERC’s statutory mandate to ensure that costs are reasonably allocated to 
+customers in light of the benefits they receive from the PJM system.71 Similarly, the Seventh 
+Circuit established that regional grid operators cannot approve market designs that force one 
+segment of ratepayers to subsidize infrastructure expansions for another without a clear, 
+empirical showing of proportionate benefit, which, in this case, other customers are not 
+receiving.72 
+Similarly, PJM’s proposed VRR Curve adjustment does not undermine market 
+fundamentals. Instead, it counteracts a deep market distortion. Including massive blocks of 
+demand that connect faster than supply can be built creates a price spike that hands windfall 
+revenues to existing generators without actually stimulating new supply. Prices will not be 
+artificially suppressed, nor will development be stymied, by this adjustment. On the contrary: 
+there has never been a more lucrative investment environment for new capacity developers than 
+the rapid influx of power-hungry large loads. PJM’s accompanying BYONC framework and 
+RBP will open new doors for rapid commercial arrangements all while ensuring power costs are 
+paid by large loads, not other customers. The removal of unmatched new large loads from RPM 
+does not limit their opportunities to secure supply—it simply ensures that the rest of PJM is no 
+longer paying for that supply.  
+ 
+71 Midwest ISO Transmission Owners v. FERC, 373 F.3d at 1371. 
+72 Ill. Comm. Comm’n v. FERC, 576 F.3d 470, 476 (7th Cir. 2009).
+--- PAGE 26 ---
+22 
+Likewise, the VRR Curve modification does not permanently bar large loads from joining 
+PJM or from participating in the capacity market. It simply allows New Large Loads to join 
+RPM once they BYONC. If a New Large Load fulfills its public commitments under the 
+Ratepayer Protection Pledge through BYONC or securing supply from the RBP, its megawatt 
+demand is added back to the VRR Curve. Requiring proof that a New Large Load has BYONC 
+before adding the load back into the capacity market is not undue discrimination. The D.C. 
+Circuit found that when customers are not similarly situated, it is not unduly discriminatory to 
+establish different conditions based on a customer’s unique impact on the system.73 Here, large 
+loads and other customers are not similarly situated for all the reasons described above, including 
+large loads’ distinct load growth pattern and extreme impacts on prices and reliability. The clear 
+distinctions between large loads and other customers provide an ample basis for the Commission 
+to find that they are not similarly situated and that the IRAS Framework is not unduly 
+discriminatory. PJM maintains that it will still provide electric service for all customers, with the 
+understanding that New Large Loads that do not BYONC may be subject to interruptions during 
+grid emergencies if PJM does not have sufficient capacity. In other words, while unmatched large 
+loads are excluded from PJM’s capacity procurement, they are otherwise allowed to join PJM 
+and become operational without requiring any new capacity, so long as they accept occasional 
+interruptions.  
+ 
+ 
+ 
+ 
+73 Transmission Agency of N. Cal. v. FERC, 628 F.3d 538, 549–50 (D.C. Cir. 2010).
+--- PAGE 27 ---
+23 
+II. 
+The Commission Should Only Modify PJM’s IRAS Filing to Better Accomplish 
+PJM’s Objectives. 
+ 
+PJM has consented to Commission modification of “any element” of its proposal, so long 
+as the modification “is consistent with PJM’s overarching objectives” in the IRAS Filing.74 That 
+consent is bounded by the decision in NRG Power Marketing L.L.C. v. FERC to not permit 
+modifications that would produce “an entirely different rate design.”75 PJM’s objectives set the 
+limits of what modifications the Commission can require. PJM summarizes the filing as a “multi-
+prong approach to incent New large Loads to bring their own capacity to meet their resource 
+adequacy needs and avoid imposing costs on ratepayers.”76 However, the IRAS Filing does not 
+include any explicit statement of PJM’s objectives. To assist the Commission’s consideration of 
+modifications to PJM’s filing, PIO’s explain that the text and context of PJM’s filing reveal the 
+following three objectives. 
+First, require new large loads to be curtailable until they bring new capacity to meet their 
+needs. PJM describes the “foundation” of IRAS as the rule that large loads (through their LSEs) 
+must bring new capacity in an amount equal to or greater than their contribution to peak demand, 
+or else the load may be reduced during emergency conditions.77 
+ 
+Second, promote affordability by requiring large loads to pay for their own new capacity, 
+avoiding cost shifts to residential and other existing ratepayers. PJM quotes the Ratepayer 
+Protection Pledge’s commitment that large loads will “build, bring, or buy” the resources their 
+ 
+74 IRAS Filing, supra note 2, at 9, 122. 
+75 NRG Power Mtkg. L.L.C. v. FERC, 862 F.3d 108, 115–16 (D.C. Cir. 2017). 
+76 IRAS Filing, supra note 2, at 124. 
+77 Id. at 3–4.
+--- PAGE 28 ---
+24 
+demand requires, and repeatedly explains that the rest of PJM’s load should not bear the resulting 
+capacity-price effects.78 
+ 
+Third, provide states and LSEs sufficient information to ensure that large loads are 
+curtailed when those loads have not brought sufficient new capacity and are charged for capacity 
+used to serve them. The proposal assigns specific retail curtailment and retail cost allocation to 
+state-regulated actors, and it uses the Large Load Registry as the repository of information 
+sufficient for those making those decisions.79 
+PIOs respectfully recommend that the Commission adopt this articulation of the IRAS’s 
+objectives and use those objectives when requiring modification to the IRAS. 
+ 
+A. 
+Objective One: Promote Reliability by Requiring New Large Loads to be 
+Curtailable Until They Bring New Capacity to Meet Their Needs. 
+ 
+The first objective responds to a specific reliability problem caused by data centers. 
+PJM’s recent capacity auctions have cleared thousands of megawatts short of the regional 
+reliability requirement because new large loads—principally data centers—are arriving faster 
+than new generation and transmission can be built. PJM’s operations witness explains that this 
+mismatch threatens PJM’s ability to both serve existing customers and to maintain required 
+reserves during periods of peak demand or significant outages.80 
+ 
+IRAS addresses that mismatch by offering a deal to new large loads: receive electric 
+service now but accept that the service is not firm. A new large load may interconnect before 
+sufficient new capacity is in place, but the unmatched load must remain available for reduction 
+ 
+78 Id. at 4–5. 
+79 Id. at 5–7. 
+80 Id. at 13–15, 21; see also id. at Attach. C, Affidavit of Christopher Pilong on Behalf of PJM 
+Interconnection, L.L.C. at ¶ 19 (“Pilong Aff.”).
+--- PAGE 29 ---
+25 
+during defined reliability conditions. PJM expressly analogizes the proposal to service that 
+remains “subject to curtailment and interruption” until sufficient capacity resources are in place. 
+PJM characterizes IRAS as permitting interconnection without new capacity on the condition 
+that the load “must reduce” or switch to on-site backup resources during some emergencies.81 
+Curtailability is therefore not simply an implementation decision of the IRAS proposal. It is the 
+consideration the new large load provides for receiving the benefit of receiving electric service 
+before it has supplied the capacity needed to receive firm service without disrupting existing 
+customers. 
+ 
+That deal for service in exchange for curtailability protects residential and other existing 
+customers. PJM calls IRAS a tool for managing resource-adequacy shortfalls “that would 
+otherwise drive shedding of native loads,” and places an IRAS Action before Pre-Emergency 
+Load Management Reductions.82 A design that did not include curtailability would wholly fail to 
+solve the reliability problem that is the foundation of the IRAS Filing. 
+ 
+The IRAS Filing ties the amount of a new large load’s curtailment exposure to the 
+amount of new capacity it brings to the system. The amount that PJM can call for the curtailment 
+of a new large load is reduced by the new capacity it brings to the system, and a load ceases to be 
+eligible for curtailment only once enough capacity exists to meet its peak demand needs.83 PJM 
+insists that qualifying BYONC be genuinely new, obtain capacity commitments, and remain 
+“real and last,” rather than merely relying on repackaging capacity already on the system.84 Each 
+ 
+81 Id. at 4, 39, 49–50. 
+82 Id. at 22.  
+83 Id. at 69. 
+84 Id. at 52–58.
+--- PAGE 30 ---
+26 
+increment of unmatched demand remains curtailable unless and until a corresponding increment 
+of qualifying new capacity is available to meet it. 
+ 
+In evaluating the IRAS and any modifications proposed in this protest and by other 
+parties, the Commission should ensure that the IRAS require that new large loads that do not 
+bring their own new capacity be curtailed until they have brought enough capacity to cover their 
+needs. A modification that improves the correspondence between curtailability and BYONC, like 
+the modifications described below, advances this objective and falls squarely within PJM’s 
+consent. 
+B. 
+Objective Two: Promote Affordability by Requiring New Large Loads to Pay 
+for Their Own New Capacity and Avoid Shifting Costs to Residential and 
+Other Existing Ratepayers. 
+ 
+The second objective comes out of the same issues that create the need for the first 
+objective. New large loads create incremental capacity needs that would otherwise not exist. 
+Cost-causation principles require a rate to compare the costs imposed on a customer with the 
+burdens that customer creates or the benefits it receives.85 Here, the new capacity is needed 
+precisely because of the new large load’s demand, so the new large load should bear the cost of 
+adding that capacity to the PJM system. 
+The IRAS Filing quotes the commitment that new large loads will pay the “full cost” of 
+the new resources their demand requires because doing so “protects Americans from higher 
+prices.”86 PJM explains that unmatched New Large Loads would be excluded from the capacity-
+market demand curve because “[t]he rest of PJM’s load should not be exposed to the price 
+ 
+85 See e.g., Midwest ISO Transmission Owners v. FERC, 373 F.3d at 1368. 
+86 IRAS Filing, supra note 2, at 5 (quoting White House Ratepayer Protection Pledge).
+--- PAGE 31 ---
+27 
+impacts” of procuring new capacity for them.87 PJM also states that the IRAS Filing’s 
+interlocking components are designed to induce new large loads to meet their capacity needs 
+while “avoid[ing] imposing costs on [other] ratepayers.”88 
+ 
+The BYONC and demand-curve provisions are specifically designed to ensure new large 
+loads bear their costs. When a New Large Load brings qualifying new capacity, PJM adds the 
+load to the demand curve in the same auction in which the associated BYONC enters the supply 
+stack as a $0/MW-day price taker.89 PJM describes this as a “symmetrical, one-for-one addition” 
+that is “effectively price-neutral” for the rest of the market.90 PJM explains that if BYONC could 
+withdraw while the associated load remained in the demand curve, responsibility for that load’s 
+capacity would be transferred to PJM and “shared with other PJM loads, contrary to the purpose 
+of the IRAS scheme.”91 Conversely, when a new large load has not BYONC, excluding it from 
+the demand curve prevents the RPM from buying capacity for that load and spreading the price 
+effects across existing customers. 
+In evaluating the IRAS and any modifications proposed in this protest and by other 
+parties, the Commission should ensure that the IRAS does not impose the costs created by new 
+large loads on residential and other existing customers. A modification that prevents costs created 
+by new large loads from being imposed on existing ratepayers advances this objective and falls 
+squarely within PJM’s consent. 
+ 
+ 
+ 
+87 Id. at 23. 
+88 Id. at 124. 
+89 Id. at 55–56. 
+90 Id. at 58. 
+91 Id. at 56.
+--- PAGE 32 ---
+28 
+C. 
+Objective Three: Provide States and LSEs With Sufficient Information to 
+Ensure the Right Loads are Curtailed and Charged. 
+ 
+The third objective is necessary because PJM recognizes its lack of authority to regulate 
+at the retail level.92 PJM determines the aggregate MW quantity of IRAS needed in an electric 
+distributer’s (“ED”) zone or area.93 PJM then leaves “retail load reduction plans and retail cost 
+allocation to state-level entities,” and assigns EDs, acting in coordination with states, LSEs, and 
+customers, the task of choosing which retail loads will be curtailed.94 PJM’s operations witness 
+explains that PJM “will not direct specific New Large Loads to reduce load even though Electric 
+Distributors . . . may issue more specific directives to specific retail customers.”95 
+That division of authority makes it imperative that PJM provide a mechanism that 
+ensures the right customers are curtailed and charged. A state, ED, or LSE cannot implement the 
+first objectives of the IRAS Filing without unless it can identify each new large load, determine 
+the portion of its demand that remains uncovered by new capacity, and match a reduction 
+directive by PJM to that load rather than to residential, small-business, or other existing 
+customers. Nor can a state implement the second objective of the IRAS Filing unless it can 
+determine which new large load received or was credited with capacity and assign the 
+corresponding retail cost to that customer. 
+PJM itself recognizes the need to provide such information. It says the Large Load 
+Registry will facilitate “transparent implementation of IRAS” and help states monitor whether 
+data centers and other large loads are honoring their commitment to provide for their own 
+ 
+92 Id. at 3. 
+93 Id. at 6. 
+94 Id. at 3. 
+95 Id. at Pilong Aff. ¶ 52; see also id. at 82 nn. 220–21.
+--- PAGE 33 ---
+29 
+needs.96 PJM also relies on stakeholder comments explaining that a registry is needed “to ensure 
+costs and curtailments are assigned appropriately,” because without one it is unclear how 
+existing consumers could be protected from either capacity costs or curtailment.97 
+The required information must therefore be sufficiently detailed. PJM proposes that the 
+registry identify, among other things, each load’s customer and location, in-service date, peak 
+load quantity, BYONC quantity, Allocated RBP UCAP MW, backup generation quantity, and 
+relevant utility contracts.98 PJM also emphasizes that the registry must be “accurate, complete, 
+and reliable,” because it will determine the MW quantity of new large loads subject to IRAS.99 
+ 
+In evaluating the IRAS and any modifications proposed in this protest and by other 
+parties, the Commission should ensure that PJM provide states, EDs, LSEs, and any other 
+relevant state actor with sufficient information to identify which large loads must curtail and how 
+retail costs should be allocated. A modification that is necessary for the collection and 
+dissemination of sufficient information needed to complete the other objectives of the IRAS 
+Filing advances this objective and falls squarely within PJM’s consent. 
+Taken together, these three objectives state what PJM designed IRAS to do: preserve 
+reliability by allowing the curtailment of new large loads without BYONC, ensure that new data 
+centers and other large loads pay their own way, and provide enough information to ensure that 
+the right loads are curtailed and pay their share. The Commission should evaluate each proposed 
+ 
+96 Id. at 28. 
+97 Id. at 30 n.85. 
+98 Id. at 37. 
+99 Id. at 43–44.
+--- PAGE 34 ---
+30 
+modification to the IRAS Filing against these objectives and should adopt PIOs’ modifications 
+described below, which will help ensure that the IRAS Filing achieves these objectives.  
+III. 
+Modification 1: The Commission must ensure that the IRAS filing effectively 
+removes new large loads from the capacity market until associated new capacity is 
+online and deliverable. 
+ 
+PJM proposes to suspend the entire IRAS Framework if the PJM capacity auction meets 
+the Reliability Requirement—not including large loads subject to IRAS—for three consecutive 
+delivery years, but this proposal risks creating a volatile market that traps prices at the cap and 
+invites gaming by large load customers. If this risk occurs, PJM will treat all customers the same: 
+there will be no differentiation between large loads and other customers; no customers will have 
+an obligation to demonstrate BYONC; there will be no IRAS load; and all load will be included 
+in the demand curve for the capacity auction.100 In fact, even the definition of New Large Load 
+and BYONC—the foundation of the IRAS Framework—will be ineffective as long as the IRAS 
+Framework is suspended.101 PJM also proposed to turn the IRAS Framework back “on” in the 
+event that a delivery year once again fails to meet the Reliability Requirement. 
+While this may seem like an innocent provision which accounts for the fact that IRAS 
+curtailments are not needed during periods of resource adequacy, suspending the entire IRAS 
+ 
+100 Id. at 52.  
+101 Id. at 39–40. The proposed definition of New Large Load includes the following 
+specification:  
+[T]o the extent three consecutive Delivery Years meet the requirements of Tariff, 
+Attachment DD-4, section IV(b)(iii), then New Large Load shall mean end-use customer 
+load that is either (a) a Large Load that goes into service after June 1 of the first Delivery 
+Year for which the requirements of Tariff, Attachment DD-4, section IV(b)(iii) are not 
+met or (b) incremental load in-service after June 1 of the first Delivery Year for which the 
+requirements of Tariff, Attachment DD-4, section IV(b)(iii) are not met that increases the 
+existing end-use customer load at a single electrical site that, prior to such incremental 
+load, did not previously meet the definition of Large Load.
+--- PAGE 35 ---
+31 
+Framework is logically flawed and raises the risk that the capacity market will be permanently 
+pinned at the price cap. To resolve this, the Commission should direct PJM to either (1) ensure 
+the IRAS Framework, including BYONC requirements, is permanent for all New Large Loads, 
+or else (2) ensure that the trigger for the IRAS program becoming inactive is the capacity market 
+clearing for three consecutive years with sufficient supply to meet all demand including all large 
+loads subject to IRAS.  
+A. 
+Suspending the IRAS Framework during periods of resource adequacy risks 
+pinning prices at the cap. 
+ 
+PJM will take the following steps when putting the IRAS Framework to “sleep” which, 
+together, create economic hazards and incentivize gaming: 
+1. PJM’s definition for New Large Load and associated obligations will not apply to any 
+customer;102 
+2. PJM’s definition for BYONC and associated obligations will not apply to any 
+capacity;103  
+ 
+102 Id. at Attach. B, Revisions to the PJM Open Access Transmission Tariff and Resource 
+Adequacy Agreement (Clean Format), at pdf 323 (“Proposed Tariff”) (see Definition of New 
+Large Load). Specifically: 
+However, to the extent three consecutive Delivery Years meet the requirements of Tariff, 
+Attachment DD-4, section IV(b)(iii), then New Large Load shall mean end-use customer 
+load that is either (a) a Large Load that goes into service after June 1 of the first Delivery 
+Year for which the requirements of Tariff, Attachment DD-4, section IV(b)(iii) are not 
+met or (b) incremental load in-service after June 1 of the first Delivery Year for which the 
+requirements of Tariff, Attachment DD-4, section IV(b)(iii) are not met that increases the 
+existing end-use customer load at a single electrical site that, prior to such incremental 
+load, did not previously meet the definition of Large Load. 
+103 Id. at Proposed Tariff, pdf 287 (see Definition of “Bring Your Own New Capacity”). 
+Specifically:  
+However, to the extent three consecutive Delivery Years meet the requirements of Tariff, 
+Attachment DD-4, section IV(b)(iii), then BYONC that has been included previously in
+--- PAGE 36 ---
+32 
+3. All load is added back into the VRR Curve and Reliability Requirement;104 and 
+4. No IRAS Actions will be called.105 
+There are two problems that emerge from these steps. First, they create a perverse 
+incentive for large loads not to fully BYONC. Second, the IRAS Framework could be suspended 
+when PJM is not truly resource adequate, given the fact that New Large Loads that have not fully 
+BYONC-ed will be excluded from the Reliability Requirement used to determine if PJM clears 
+with adequate supply for three consecutive delivery years. Put another way, PJM will suspend 
+the IRAS Framework without ensuring that all large loads BYONC—or even that there is 
+adequate capacity on the system to satisfy the needs of all IRAS resources. When this unmatched 
+large load is added back into the VRR Curve, PJM may clear at or below the Reliability 
+Requirement. Together, these two risks effectively guarantee that prices will clear at or near the 
+cap for the foreseeable future. PJM’s market will become volatile and binary, with obligations on 
+New Large Loads, LSEs, and new capacity resources changing every year as PJM flips the IRAS 
+Framework “on” and “off.” That outcome—a volatile market that creates unpredictable 
+ 
+an FRR Capacity Plan prior to the first Delivery Year for which the requirements of 
+Tariff, Attachment DD-4, section IV(b)(iii) are not met and (2) meet the eligibility criteria 
+set forth in Tariff, Attachment DD-4, section VI do not qualify as BYONC. 
+104 Id. at Proposed Tariff, pdf 293 (see Definitions E–F, Definition of “Excluded LDA New Large 
+Load Amounts” and “Excluded RTO New Large Load Amounts”). The quantity of load that PJM 
+will remove from the VRR Curve and the Reliability Requirement—rely on the definition of 
+New Large Load, which will not apply to any customer in the event that PJM clears with 
+sufficient capacity for three consecutive delivery years. In other words, PJM will not exclude any 
+load from the Reliability Requirement or VRR Curve during periods of resource adequacy, 
+regardless of if a New Large Load has actually offset load with qualified BYONC. 
+105 Id. at Proposed Tariff, pdf 306 (see Definitions I-K, Definition of “Interim Resource 
+Adequacy Service Action”).
+--- PAGE 37 ---
+33 
+performance obligations for large loads and risks shifting costs from large loads back to 
+consumers—would be unjust and unreasonable.106 
+PJM is currently operating under a negotiated price cap of $325/MW-day, but this cap 
+will expire after the 2029/2030 delivery year, and the subsequent cap will be around $550/MW-
+day. This means residential utility bills could increase significantly under PJM’s proposal. 
+i. 
+Suspending the IRAS Framework will reduce the incentive for New Large 
+Loads to fully BYONC, raising costs for other customers. 
+ 
+If PJM suspends the IRAS Framework, New Large Loads that fail to BYONC are 
+“forgiven” and re-integrated into the VRR Curve. This allows them to bypass both the BYONC 
+requirement and IRAS curtailments simply by waiting. Rather than fully offsetting their footprint 
+with new supply, these large loads can gamble on using broader system capacity without paying 
+for it. This creates a perverse incentive for large loads to not BYONC. 
+If the auction clears short again, PJM will reactivate the IRAS framework. However, the 
+definition of a New Large Load will reset. Consequently, no penalties or retroactive requirements 
+will apply to the large loads that successfully entered the prior auction empty-handed. This 
+loophole creates a permanent, perverse incentive to avoid BYONC, keeping the market on the 
+razor’s edge of resource adequacy. As the IRAS framework repeatedly triggers “on” and “off” 
+year after year, capacity prices will persistently clear at the cap, harming regular ratepayers. 
+Additionally, by incorporating large loads that failed to BYONC back into the capacity market, 
+ 
+106 See, e.g., PJM Interconnection, L.L.C., 117 FERC 61,331, at P 48 (2006) (approving the 
+settlement establishing the basic structure of the current capacity market based on ”a substantial 
+record showing that the [previously] existing capacity market leads to volatile prices”).
+--- PAGE 38 ---
+34 
+PJM risks forcing other ratepayers to fund the price signals to procure capacity for those new 
+large loads—counter to the IRAS Filing’s stated goals.  
+ii. 
+Suspending the IRAS Framework based on the lower Reliability 
+Requirement which excludes New Large Loads that have not 
+demonstrated BYONC is not an appropriate trigger. 
+ 
+PJM’s proposal to remove New Large Loads from the VRR Curve and the Reliability 
+Requirement is an appropriate way to shield other consumers from bearing the costs of capacity 
+to serve New Large Loads. PIOs support this essential step. However, because PJM proposes to 
+remove New Large Loads from the VRR Curve and the Reliability Requirement, the capacity 
+market merely satisfying that lowered Reliability Requirement is not an appropriate trigger for 
+suspending the IRAS Framework. This approach risks suspending IRAS and BYONC 
+requirements when they are still needed, shifting costs to other customers, and pegging prices at 
+the cap.  
+The moment the IRAS framework is put to sleep, those very same New Large Loads that 
+did not BYONC, which were excluded to lower the target, will be dumped back into the market. 
+Adding this unmatched demand back into the auction without corresponding supply pushes 
+capacity prices ever upward toward the cap, forcing existing customers to fund the necessary 
+new generation through inflated clearing prices—effectively subsidizing private growth at public 
+expense. This flood of unmatched New Large Loads risks re-triggering the IRAS Framework 
+back “on” if PJM clears short, and the cycle starts again. 
+B. 
+PJM’s proposal to toggle IRAS on and off creates regulatory uncertainty and 
+whiplash for market participants.  
+ 
+Large loads have a demonstrated, outsized impact on reliability and costs. These impacts 
+hold true regardless of PJM’s resource adequacy situation. The entire premise of the IRAS 
+Framework is hinged upon the fact that large loads are differently situated from other customers,
+--- PAGE 39 ---
+35 
+and PJM needs new rules and procedures—while respecting jurisdictional boundaries—to 
+maintain reliability and uphold just and reasonable rates. Halting the entire IRAS Framework, 
+including BYONC obligations for New Large Loads, and adding all New Large Loads back into 
+the VRR Curve during periods of resource adequacy is logically inconsistent with the intent of 
+this Filing and goes against FERC’s finding in its Show Cause Order that the impacts of large 
+loads require permanent changes to PJM’s rules.  
+Changing the obligations for EDs during periods of scarcity and surplus is also illogical 
+and confusing. When the IRAS Framework is active, EDs have many obligations and 
+responsibilities: tracking and reporting New Large Loads and associated BYONC for the Large 
+Load Registry and for the RPM Planning Parameters, verifying IRAS quantities, and of course 
+actually implementing IRAS curtailments, to name a few. EDs may have additional obligations 
+placed on them by state regulators to, for example, allocate IRAS curtailments to specific end-
+use customers. When the IRAS Framework is suspended, all of these responsibilities go away. 
+But, as soon as the Framework is re-instated, EDs are once again required to fully implement 
+IRAS. EDs are the fascia of the IRAS Framework: without their cooperation, the proposal falls 
+apart. This proposal promises persistent whiplash for EDs, eroding trust and leading to confusion 
+that could materially harm other customers or even large load customers themselves.  
+Additionally, changing the obligations for new capacity resources creates cost risks. PJM 
+requires BYONC to meet certain criteria107 and to offer into RPM at a bid of $0 for at least 10 
+delivery years. But, when PJM suspends the IRAS Framework, all of these obligations are 
+ 
+107 IRAS Filing, supra note 2, at Proposed Tariff, pdf 376, Section VI: Bring Your Own New 
+Capacity Criteria.
+--- PAGE 40 ---
+36 
+removed for existing and new BYONC. That means that existing BYONC paid for by large loads 
+can begin bidding higher costs into the capacity auction, potentially driving prices up for all 
+customers.  
+C. 
+The Commission should modify PJM’s IRAS Filing to make the IRAS 
+Framework Permanent or correct the Reliability Requirement Trigger. 
+ 
+To resolve the issues identified above, the Commission should direct PJM to either (1) 
+ensure the IRAS Framework, including BYONC requirements, is permanent for all New Large 
+Loads regardless of PJM’s resource adequacy status, or else (2) ensure that the trigger for IRAS 
+being turned off is the capacity market clearing for three consecutive years with sufficient supply 
+to meet all demand including large loads subject to IRAS.  
+The simplest fix would be to ensure the IRAS Framework is permanent. This would 
+entail removing the provision to suspend the IRAS Framework after three consecutive delivery 
+years of sufficient supply. It would also entail changing the definitions of New Large Load and 
+BYONC to ensure there is no “carve out” for periods when PJM is resource adequate.108 New 
+Large Loads will maintain the same definition regardless of PJM’s capacity status, and will be 
+required to BYONC or be interruptible under IRAS. PJM is correct that during period of 
+resource adequacy, no IRAS Actions need to be called. But PJM’s existing IRAS Framework 
+already allows this; there is no need to toggle IRAS off merely because resources will not be 
+curtailed during times of ample resource adequacy. IRAS Actions will only be called when PJM 
+ 
+108 Supra note 103. Specifically, PJM should remove the section of the definition for New Large 
+Load and BYONC that changes the definitions “to the extent three consecutive Delivery Years 
+meet the requirements of Tariff, Attachment DD-4, section IV(b)(iii).”
+--- PAGE 41 ---
+37 
+experiences a capacity shortfall, and the quantity of IRAS will match the shortfall. During 
+periods of resource adequacy or surplus, no IRAS Actions will be taken.  
+Alternatively, the Commission could require PJM to clarify the trigger for the IRAS 
+program becoming inactive. Under PJM’s proposal, the trigger for the IRAS program becoming 
+inactive is when the capacity market clears for three consecutive years in excess of the 
+Reliability Requirement, which does not include large loads subject to IRAS. As described 
+above, this proposed trigger is unjust and unreasonable because it could lead PJM to suspend the 
+IRAS program before the region actually has sufficient supply to meet all demand including new 
+large loads. In other words, the proposed trigger risks PJM suspending the IRAS program while 
+it is still needed. To prevent that outcome, the Commission could require PJM to clarify that the 
+trigger for suspending the IRAS program is when the capacity market clears for three 
+consecutive years with sufficient supply to meet all demand including large loads subject to 
+IRAS.109That clarification would ensure that PJM does not suspend the IRAS program while it is 
+still needed. However, that modification would not necessarily ensure that large loads are 
+responsible for paying for and bringing their own new capacity online. For that reason, PIOs’ 
+first recommendation is that the IRAS program simply be permanent. However, modifying the 
+ 
+109 This clarification should be simple to implement by modifying PJM’s proposed language in 
+Tariff Attachment DD-4, section IV(b)(3). While PIOs defer to PJM and the Commission 
+regarding the specific Tariff language for this clarification, PIOs believe it could be effectuated 
+through the following modification:  
+In the event ([the amount of Capacity Resources committed for a given Delivery 
+Year (as determined after the Third Incremental Auction) equals or exceeds the PJM 
+Region Reliability Requirement including all large loads subject to IRAS 
+determined prior to the Third Incremental Auction] divided by the Pool-wide 
+Accredited UCAP Factor), then the Office of the Interconnection does not need any 
+Eligible New Large Loads to be available to provide Interim Resource Adequacy 
+Service for that Delivery Year.
+--- PAGE 42 ---
+38 
+trigger for IRAS suspension as described here would be an acceptable alternative because it 
+would avoid the IRAS program being suspended while the region lacks supply to meet the 
+demand of large loads subject to IRAS.    
+Either way, PJM must close this loophole that could pin prices at the cap, harm other 
+customers, and produce a volatile market with constantly changing expectations. 
+IV. 
+Modification 2: The Commission Should Modify the IRAS Filing to Include 
+Penalties When Eligible New Large Loads Fails to Curtail 
+ 
+With the IRAS Framework, PJM permits new large loads to obtain “speed to power” 
+before bringing sufficient capacity online.110 In exchange, the unmatched portion of that load 
+remains available for curtailment during defined reliability conditions.111 That bargain works 
+only if the reduction obligation is real. A load that continues drawing electricity when directed to 
+reduce receives the benefit of accelerated service without providing the promised reliability 
+protection. 
+PJM’s proposal does not have any penalty if a new large load subject to IRAS fails to 
+curtail. Attachment DD-4 authorizes PJM to issue an Interim Resource Adequacy Service Action, 
+directs an ED to implement a specified aggregate reduction among new large loads in its zone or 
+area, and requires all eligible loads to be available to curtail,112 but it does not establish a 
+consequence if a large load fails to reduce. The IRAS Filing would pay a load that performs, but 
+nothing holds the load accountable if it does not. 
+ 
+110 IRAS Filing, supra note 2, at 94. 
+111 Id. 
+112 Id. at Proposed Tariff, Attach. DD-4 (Interim Resource Adequacy Service), pdf 540–42.
+--- PAGE 43 ---
+39 
+PJM’s operations witness explains that IRAS will be deployed before Pre-Emergency 
+Load Management Reduction Actions.113 This creates a new step “prior to impacting existing 
+customers.”114 If reduction from IRAS are not curtailed, PJM may discover the shortfall only 
+during the emergency, when the system has the least time and flexibility to respond. The 
+Commission should not approve a purported reliability service that relies only on carrots and has 
+no sticks. 
+A. 
+Commission Precedent Supports Operational and Financial Consequences 
+When a Lage Load Fails to Curtail. 
+ 
+The Commission addressed the same lack of performance penalties when establishing 
+PJM’s new transmission services for flexible and co-located loads. Those services were designed 
+for customers “willing and able to limit their withdrawals from the transmission system under 
+certain conditions.”115 The Commission found that both operational and financial penalties for 
+nonperformance were just and reasonable.116 
+IRAS embodies a similar bargain as the flexible and co-located loads proceedings. PJM 
+permits a new large load that does BYONC to interconnect before it supplies necessary capacity 
+to support firm service. In exchange, the load must remain available for curtailment. Indeed, PJM 
+invokes the new transmission services as a precedent for the straightforward bargain reflected in 
+the IRAS Filing.117 Curtailability is no less foundational here, and an unexcused failure has the 
+same basic risk that the system would continue to experience withdrawals that PJM’s emergency 
+ 
+113 Id. at Pilong Aff. ¶ 20. 
+114 Id. at Pilong Aff. ¶ 26. 
+115 PJM Interconnection, L.L.C., 193 FERC ¶ 61,217, at P 15 (2025) (“Co-location Order”). 
+116 Id. at P 515. 
+117 IRAS Filing, supra note 2, at 20–21.
+--- PAGE 44 ---
+40 
+procedures assumed would stop. The Commission should, therefore, require operational penalties 
+for non-performance under the IRAS. If the Commission declines to require operational penalties 
+for IRAS loads that fail to curtail, then the Commission should, at the very least, require 
+financial penalties.  
+B. 
+The Commission Should Require Operational Penalties for Failure to 
+Curtail. 
+ 
+The Commission should condition acceptance of the IRAS Filing on the implementation 
+of nonperformance penalties, consistent with its previous finding that loads that fail to curtail as 
+required under non-firm transmission service agreements “should be subject to unreserved use 
+penalties.”118 At a minimum, the IRAS proposal should require each ED after an IRAS action to 
+report the MW quantity directed, the aggregate MW reduction achieved, and any shortfall. 
+Where the ED can, it should include the called or curtailed load’s Large Load Registry identifier, 
+directed MW reduction, actual reduction, and the reason for any shortfall. Failure by an ED to 
+reduce the load during an IRAS action should result in an operational penalty of either a 
+termination of service or a pause in service, consistent with the Commission’s June 18th Order in 
+PJM’s Co-location docket.  
+ 
+The Commission’s December Show Cause Order directed PJM to establish an 
+appropriate penalty charge and “any other remedial action” that PJM should take to address a 
+customer’s unreserved use of the transmission system or excess energy withdrawals. PJM 
+established three different penalties—pause in service, disqualification, and financial penalties—
+where data centers fail to follow Load Shedding and Curtailment directives, face misoperation of 
+ 
+118 Co-location Order, 193 FERC ¶ 61,217, at P 212.
+--- PAGE 45 ---
+41 
+necessary control technology, or make unreserved use of the transmission system. PJM explicitly 
+acknowledged that these operational penalties were necessary because financial penalties would 
+not be sufficient to incentivize data centers to follow curtailment procedures.119 
+ 
+The Commission found that it was just and reasonable for PJM to impose operational 
+penalties because PJM’s new transmission services were designed based on the assumption that 
+Eligible Customers would be willing and able to limit their withdrawals from the transmission 
+system, and because of the significant reliability risks that would occur if Eligible Customers 
+failed to limit their withdrawals from the system.120 PJM and the Commission agreed that the 
+consequences of Remedial Action Scheme (“RAS”) failure or failures to follow curtailment 
+directives are severe. A data center’s RAS misoperation or failure to comply with curtailment 
+directives could have serious consequences, including the loss of all interim or non-firm load in 
+one area—or even cascading outages across the Eastern Interconnection.121 PJM found that strict 
+penalties were needed to mitigate these significant reliability risks posed by customers who 
+disregard or fail to follow Load Shed and Curtailment procedures.122 PJM reasoned that its 
+penalties were just and reasonable and consistent with the assumptions underlying its new 
+ 
+119 Initial Brief of PJM Interconnection, L.L.C., Docket No. EL25-49-000, at 50 (Feb. 23, 2026), 
+Accession No. 20260223-5189 (“PJM Initial Brief”). 
+120 Order on Rehearing, Clarification, Compliance Filing, and Paper Hearing, 195 FERC ¶ 
+61,209, at P 515 (2026) (“Order on Rehearing”). The Commission declined to adopt PJM’s 
+proposed replacement rate because the Commission found that PJM’s proposal to completely 
+disqualify an Eligible Customer from taking any of the new transmission services after the first 
+instance of failing to curtail was excessive. Instead, the Commission found that it would be just 
+and reasonable for PJM to establish an operational penalty where PJM would terminate the 
+transmission service agreement with the Eligible Customer after the second instance of failing to 
+follow a curtailment or load shedding directive.  
+121 PJM Initial Brief, supra note 119, at Attach C., Affidavit of Matthew Wharton on behalf of 
+PJM Interconnection, L.L.C., ¶ 21, 22 (“Wharton Affidavit”). 
+122 PJM Initial Brief, supra note 119 at 6, 41–42.
+--- PAGE 46 ---
+42 
+transmission services, which were that (1) Eligible Customers taking PJM’s new services were 
+“willing and able to control their withdrawals from the transmission system;” and (2) the new 
+transmission services were designed to allow PJM to maintain system reliability.123 PJM stated 
+that allowing customers to connect to the transmission system on the condition that they would 
+control their energy withdrawals as necessary, but then not penalizing the customers for failing to 
+perform would run counter to the Show Cause Order and would “implicitly bless such dangerous 
+behavior.”124  
+ 
+The Commission should apply similar penalties to the IRAS framework because, like 
+PJM’s new transmission services, IRAS was designed on the assumptions that (1) IRAS 
+resources will reduce their load or switch to on-site backup resources when called; and (2) IRAS 
+will maintain system reliability. First, PJM describes IRAS as “a service that specifically allows 
+for Large Loads to interconnect without bringing their own capacity, on the condition that ‘they 
+must reduce their load or switch to on-site backup resources under specific, limited’ emergency 
+conditions.”125 Like in the case of PJM’s new transmission services, the “straightforward 
+bargain” here is that IRAS resources agree to reduce their MW load in exchange for getting to 
+interconnect quickly to PJM’s transmission system.126 Like PJM previously stated, allowing 
+customers to connect to the system on the condition that they will curtail when called, but not 
+penalizing them when they fail to curtail, would fail to ensure that customers will actually uphold 
+ 
+123 Id. at 42. 
+124 Id. 
+125 IRAS Filing, supra note 2, at 39 (citing PJM, CIFP Framework for Service During Periods of 
+Insufficient Resource Adequacy—PJM Proposal, at 1 (Jul. 27, 2026), https://www.pjm.com/-
+/media/DotCom/about-pjm/who-we-are/public-disclosures/2026/20260727-cifp-framework-for-
+service-during-periods-of-insufficient-resource-adequacy-executive-summary.pdf).  
+126 Id. at 95.
+--- PAGE 47 ---
+43 
+their end of the bargain. Here, a broken promise wouldn’t just be a sweet deal for data centers, it 
+would mean potential loss of load events or cascading outages across the Eastern 
+Interconnection.  
+ Second, like PJM’s new transmission services, IRAS was specifically designed to 
+“maintain system reliability” as PJM integrates New Large Loads to the PJM Region.127 
+However, the reliability risks if IRAS loads fail to curtail will be even greater than in the case of 
+the Eligible Customers taking PJM’s new transmission services. IRAS will become available 
+under an EEA1, prior to deploying Pre-Emergency Load Management Reductions, but after 
+PJM’s new non-firm transmission services (which are subject to PJM’s operational penalties).128 
+This means that IRAS curtailments will be deployed closer to an emergency than PJM’s non-firm 
+services, and IRAS loads are therefore more essential to curtail to protect system reliability. 
+IRAS is essentially the last stop before pre-emergency procedures. To mitigate the risks of 
+system emergencies, the Commission should modify PJM’s IRAS framework to include strong 
+operational penalties to ensure that IRAS loads curtail when called, or have their service 
+terminated if they fail to curtail. Because IRAS will be called even closer to an emergency than 
+non-firm transmission services, and their curtailment is therefore even more important, PJM’s 
+penalties for IRAS nonperformance should be at least as strong as the penalties the Commission 
+accepted for PJM’s new non-firm transmission services, which were to terminate an Eligible 
+Customer’s transmission service after the second instance of failing to follow a curtailment or 
+ 
+127 Id. at 75.  
+128 Id. at 77–78.
+--- PAGE 48 ---
+44 
+load shedding directive and establish a suspension in service for a period of up to 120 days after 
+the first misoperation of necessary control technologies.129 
+Similar to how PJM will issue MW load reduction directives to EDs to implement IRAS 
+reductions,130 PJM can issue directives to EDs to terminate service for the amount of MWs that 
+did not show up during an IRAS action. As with the IRAS reductions, PJM does not need to 
+direct EDs to terminate service for specific New Large Loads, but may direct EDs to terminate 
+service for an aggregate MW load amount. The EDs, subject to state regulation, will ultimately 
+be responsible for determining which individual retail customers face suspension or termination 
+of service.   
+C. 
+If the Commission declines to impose operational penalties, then the 
+Commission should modify PJM’s proposal to include financial penalties. 
+ 
+Financial penalties are insufficient to ensure that IRAS loads will curtail as directed, but 
+if the Commission declines to require operational penalties for the IRAS framework, then the 
+Commission should implement financial penalties for IRAS loads that fail to curtail so that there 
+is some disincentive for failures to curtail. As it stands, absolutely no penalty for an IRAS load’s 
+failure to curtail is inadequate and inconsistent with PJM’s and the Commission’s prior approach 
+to curtailment enforcement.  
+In its initial brief in the Co-Location docket, PJM found that financial penalties alone are 
+insufficient to incentivize data centers to comply with load shed and curtailment directives.131 
+Large load customers have virtually unlimited capital and high contractual uptime requirements, 
+ 
+129 Order on Rehearing, 195 FERC ¶ 61,209 at PP 515, 516.  
+130 IRAS Filing, supra note 2, at 26.   
+131 PJM Initial Brief, supra note 119, at 50.
+--- PAGE 49 ---
+45 
+giving them little to no incentive to curtail. An effective financial penalty must be more than 
+merely the cost of doing business for wealthy large loads. But research suggests that there is no 
+price level currently observed in wholesale markets where certain data center loads will 
+curtail.132 
+ 
+If the Commission declines to impose operational penalties as part of the IRAS 
+Framework, then it should consider the financial realities of the large loads likely to take service 
+under the IRAS Framework—mostly data centers—when devising any financial penalties. In 
+light of the fact that recent evidence suggests that financial penalties are unlikely to alter data 
+centers’ behavior—and PJM’s own representation that financial penalties would not be effective 
+in the non-firm transmission services context—financial penalties for IRAS resources that fail to 
+curtail may need to be severe in order to be effective. If the Commission imposes a system of 
+severe financial penalties for IRAS resources that fail to curtail, then those penalties should fund 
+refunds to other consumers. A refund to load funded by IRAS penalties would be appropriate in 
+light of the reliability risks that other consumers would experience when IRAS resources fail to 
+curtail.   
+ 
+ 
+ 
+132 In February 2026, Hans Royal, Senior Director of Renewable Energy and Carbon Advisory at 
+Schneider Electric, introduced the Compute Heat Rate, which is the first measurement to 
+quantify the maximum electricity price at which AI computation remains economically viable, 
+i.e. the demand-side price tolerance for data centers relative to curtailment thresholds. Royal’s 
+preliminary analysis found that for four data center workload tiers, AI demand will not curtail at 
+any price level currently observed in U.S. wholesale markets. Hans Royal, The Compute Heat 
+Rate: Quantifying AI-Driven Electricity Price Tolerance and its Implications for Wholesale 
+Market Repricing, 8 (June 2026), https://ssrn.com/abstract=6322318.
+--- PAGE 50 ---
+46 
+V. 
+Modification 3: The Commission Should Reject IRAS Compensation or, in the 
+Alternative, Limit Any Payment to a Make-Whole Payment for Capacity Charges. 
+ 
+PJM accurately describes the IRAS framework as a “straightforward bargain.”133 
+Unmatched large loads are allowed to receive service on the condition that they curtail when 
+needed. This allows data centers to achieve “speed to power” without jeopardizing the reliability 
+of residential and other customers.134 This is a fair trade that PIOs endorse. PJM, however, goes 
+further by adding a second benefit for large loads that do not BYONC: a payment equal to 50 
+percent of the Capacity Performance Non-Performance Charge Rate, funded by other customers. 
+The Commission should reject that added payment. Required IRAS curtailment is the condition 
+on which unmatched large loads receive accelerated service, not an independently procured 
+product for which other customers should pay.  
+PJM describes the IRAS compensation as a “discount on capacity costs” whose “net 
+result is a reduced capacity charge” for a new large load that does not BYONC.135 That 
+description does not justify an incentive payment. The new large load already receives the 
+benefit of “speed to power” in exchange for being curtailable. The Commission should instead 
+establish a zero-dollar wholesale rate for curtailment. Alternatively, if the Commission concludes 
+that a curtailed large load should receive an adjustment for capacity charges, the aggregate 
+compensation paid to that load for a delivery year should not exceed the lesser of (1) the 
+aggregate compensation calculated under PJM’s filed rate or (2) the capacity charges actually 
+assessed to and paid by that load for the delivery year, prorated to reflect the verified amount and 
+ 
+133 IRAS Filing, supra note 2, at 94. 
+134 Id. 
+135 Id. at 104.
+--- PAGE 51 ---
+47 
+duration of curtailment. That alternative would be a make-whole adjustment, rather than an 
+incentive or a windfall. 
+A. 
+Curtailability Is a Condition of Speed to Power, Not a Separately 
+Compensable Service. 
+ 
+An Eligible New Large Load does not provide IRAS curtailment as an independently 
+procured capacity or demand-response resource. It becomes subject to IRAS because it seeks to 
+interconnect and consume electricity before arranging sufficient new capacity to meet its needs. 
+PJM calls this a “straightforward bargain”: the new large load receives speed to power but 
+accepts curtailment during emergencies if it does not BYONC.136 
+Curtailability is the consideration the unmatched large load gives in return for speed to 
+power. PJM has not shown that a second, consumer-funded payment is needed to induce 
+compliance with the condition that makes speed to power possible. Paying for ordinary 
+compliance would upend that bargain by forcing consumers to pay for a service for which large 
+loads are already compensated through speedy interconnection. This flies in the face of the 
+Ratepayer Protection Pledge and White House Statement of Principles. 
+The Commission’s recent treatment of PJM’s conditional transmission services confirms 
+the distinction. There, the Commission explained that the “fundamental principle” supporting the 
+new services was participating loads’ willingness and ability to limit their withdrawals under 
+specified conditions.137 The Commission required an operational and financial consequences for 
+failure to limit withdrawals, but it did not establish a payment to a conditional load merely for 
+complying with a curtailment order. 
+ 
+136 Id. at 94. 
+137Order on Rehearing, 195 FERC ¶ 61,209, at P 519.
+--- PAGE 52 ---
+48 
+PJM justifies its IRAS payment by noting that it uses the same 50 percent of the Non-
+Performance Charge Rate used in the Pre-Emergency Load Response proceeding.138 In that case, 
+however, the payment is funded by resources that underperformed during a curtailment event and 
+only paid to resources that overperformed.139 Here, the curtailing large loads are not being paid 
+for overperforming through penalties imposed on underperforming large loads, but rather is 
+being paid for anticipated performance—for which they have already been compensated through 
+speed to power. Moreover, the payment to curtailing large loads does not come from 
+underperforming resources that earned a penalty, but is instead borne by other customers who 
+should not be forced to subsidize large loads performing as directed. 
+In justifying the IRAS process, PJM invokes Tenaska Clear Creek Wind, where the 
+Commission found that a generator whose early operation caused the need for network upgrades 
+could be curtailed until those upgrades were complete so that the cost-causing customer bore 
+“the system-reliability burdens that flow from its decision to operate prior completion of the 
+required network upgrades.”140 The same principle supports a zero-dollar rate for curtailment. 
+The party electing accelerated service should bear the reliability condition that accompanies that 
+election, not transfer the burden of its early operation to existing customers. If the Commission 
+nevertheless accepts PJM’s separate capacity-charge premise, that premise supports only the 
+alternative, limited refund described below. 
+ 
+ 
+138 IRAS Filing, supra note 2, at 102 n.271 (citing PJM Interconnection, L.L.C., 195 FERC ¶ 
+61,253 (2026)). 
+139 PJM Interconnection, L.L.C., 195 FERC ¶ 61,253, at P 4 (2026). 
+140 See IRAS Filing, supra note 2, at 99 n.264 (citing Tenaska Clear Creek Wind, L.L.C. v Sw. 
+Power Pool, Inc., 183 FERC ¶ 61,043, at P 24 (2023)).
+--- PAGE 53 ---
+49 
+B. 
+Cost Causation Principles Support a Zero-Dollar Rate or a Capacity-Charge 
+Credit. 
+ 
+The Federal Power Act’s just-and-reasonable standard incorporates cost causation. Rates 
+must be roughly commensurate with the costs imposed or the benefits received by any given 
+ratepayer.141 PJM’s proposed default rate does not satisfy that standard. 
+The customers—including residential customers—who would be charged to pay large 
+loads under the IRAS process did not cause the capacity need associated with an unmatched 
+large load’s decision to interconnect before bringing online the capacity it requires. Nor does the 
+curtailment transform the load into a new capacity resource that those customers procured. 
+Existing customers already pay for reliable service through the RPM. IRAS curtailment does not 
+provide existing customers with a service, it simply restores the reliability that would exist 
+absent the demand from unmatched large loads. 
+Nor can it be said that customers who must pay the Eligible New Large Loads for 
+curtailing receive a benefit for not being curtailed themselves. Forcing them to pay for this 
+putative benefit is more akin to the extortion of a mob protection racket than receiving security 
+from an outside threat. Even if the Commission characterizes emergency avoidance through a 
+pre-emergency calling of Eligible New Large Loads as a regional benefit, PJM must show that 
+the resulting charges are roughly commensurate with that benefit, which it has not. PJM has 
+neither substantiated the need for the charge nor explained how it should be calculated and 
+assessed that it is roughly commensurate with the alleged benefits received. PJM’s failure to 
+make that showing supports a zero-dollar IRAS rate. PJM has not established that a capacity 
+ 
+141 Midwest ISO Transmission Owners v. FERC, 373 F.3d at 1368.
+--- PAGE 54 ---
+50 
+charge guarantees uninterrupted service or that curtailment creates an independent right to a 
+refund. When, for example, existing customers are curtailed during a load-shed event, they are 
+not refunded their prior capacity payments. 
+The only justification PJM provides is that the rate is a “discount on capacity.”142 If the 
+Commission accepts that justification, it should allow compensation only up to a load-specific 
+cap at the portion of a capacity charge assessed to the same load and attributable to the verified 
+curtailed amount and duration. Otherwise, the Commission should allow no compensation for 
+IRAS curtailment. 
+C. 
+PJM’s Reliance on the Commission’s Decision on Compensation for Pre-
+Emergency Load Response Does Not Justify the Proposed Rate. 
+ 
+To justify its proposed rate in this proceeding, PJM relies on the Commission’s 
+acceptance of a nonperformance rate and corresponding bonus-payment rate equal to 50 percent 
+of the Non-Performance Charge Rate in a prior proceeding.143 That decision, however, does not 
+establish that the same rate is just and reasonable in this proceeding. The distinct funding 
+structure and purpose of the Pre-Emergency Load Response program make in inapposite as a 
+precedent for the current filing.  
+The Pre-Emergency Load Response nonperformance rate reflects that a customer “paid 
+for capacity but did not get the benefit” of the called resource.144 Under that regime, charges 
+collected from resources that underperformed fund bonus payments to resources that 
+ 
+142 IRAS Filing, supra note 2, at 104. 
+143 Id. at 102 n.271 (citing PJM Interconnection, L.L.C., 195 FERC ¶ 61,253 (2026)). 
+144 Id. at 103.
+--- PAGE 55 ---
+51 
+overperformed.145 The nonperformer funds the overperformer. Other customers are not charged 
+simply because a resource honored its obligation to curtail. 
+The Commission applied the same principle when approving penalties for failing to meet 
+the requirements of PJM’s new conditional transmission service.146 It required revenues from 
+those penalties to be distributed to “all non-offending transmission customers consistent with 
+Order No. 890.”147 A penalty-and-bonus design thus links the payment of one party to another 
+party’s misconduct. 
+ 
+Here, the IRAS contains no comparable funding pool. The IRAS Filing does not include 
+a nonperformance charge for failure to curtail whose proceeds would fund IRAS payments. 
+Instead, it requires the ED to charge its customers or permits it to ask PJM to charge “certain 
+Load Serving Entities,” to fund the payment.148 The Non-Performance Charge Rate was used to 
+determine a penalty in an unrelated PJM program, not to measure the capacity charge borne by 
+an Eligible New Large Load. The same number may supply a reasonable penalty metric for 
+failure to curtail without establishing a reasonable compensation rate for performance.  
+D. 
+The Commission Should Remove IRAS Performance Compensation or, in 
+the Alternative, Limit Any Compensation to a Make-Whole Payment. 
+ 
+As explained above, the compensation scheme for IRAS actions is unjust and 
+unreasonable. It provides unnecessary payments to Eligible New Large Loads that are already 
+compensated by their speed to power and funds those payments through charges to existing 
+ratepayers who derive no benefit. 
+ 
+145 Co-Location Order, 193 FERC ¶ 61,217, at P 5. 
+146 Id. 
+147 Id. at PP 5, 529. 
+148 IRAS Filing, supra note 2, at Proposed Tariff, Attach. DD-4 § X(b)(i).
+--- PAGE 56 ---
+52 
+The Commission should replace the proposed IRAS compensation mechanism with a 
+zero-dollar rate and prohibit any charge under the PJM Tariff to fund IRAS compensation. 
+Nothing in that remedy would prevent a state or RERRA from establishing a separate 
+compensation program under state law. In the alternative, the Commission can prescribe a make-
+whole payment up to the amount of capacity charges assessed to the ED for curtailed loads.  
+VI. 
+Modification 4: The Commission should require BYONC supply to be fully 
+deliverable to new large loads by considering transmission limits between zones.  
+ 
+PJM’s proposed BYONC requirements do not consider the location of the New Large 
+Load nor the associated supply. This jeopardizes reliability and risks socializing costs to other 
+customers in violation of the objectives of the IRAS Framework. Without a locational 
+requirement, PJM risks relying on new capacity that will not actually be able to serve the zone in 
+which the sponsoring new large load resides, thus failing to achieve reliability objectives.149 
+Similarly, allowing distant load and supply arrangements could result in significant regional 
+transmission needs, which shift costs to other ratepayers, failing objective 2. Because PJM’s 
+capacity and energy markets recognize locational constraints, new supply that is transmission 
+constrained will not deliver cost relief. The Commission should direct PJM to require BYONC to 
+be located only in zones that are not constrained with respect to the zone in which the new large 
+load resides. 
+ 
+149 See, e.g., PJM Interconnection, L.L.C., 117 FERC 61,331, at P 48 (2006) (approving the 
+settlement establishing the basic structure of the capacity market in part because the prior market 
+“d[id] not provide incentives for generators to locate in the geographical areas where they are 
+most needed”).
+--- PAGE 57 ---
+53 
+PJM proposes to define BYONC as any Network Resource(s) that satisfy the BYONC 
+requirements outlined in the proposed tariff.150 While PJM requires BYONC resources to be 
+new, it does not impose any locational limitations. This means that BYONC could be located 
+physically far away from new large loads. PJM does not justify the lack of locational limitations 
+for BYONC, despite there being documented transmission limitations between PJM zones. Some 
+zones, like BGE, PSEG, and PEPCO—and notably the COMED (Illinois) and DOM (Virginia) 
+zones, which contain much of the region’s planned data center expansion—frequently “separate” 
+from the rest of the RTO in capacity auctions, clearing with higher prices than the rest of the 
+RTO due to transmission constraints.151  
+Network upgrades alone are not designed to fix transmission constraints between zones. 
+Although PJM requires BYONC resources to be “network resources,” which are theoretically 
+fully deliverable to the entire PJM system once their network upgrades are constructed, the 
+existence of regular price separation undermines this characterization. Standard network 
+upgrades focus on mitigating the immediate interconnection impacts at a specific point of 
+injection, and are not systemic upgrades to resolve region-wide reliability violations. Those 
+upgrades proceed through PJM’s Regional Transmission Expansion Planning process (“RTEP”).  
+Excluding any locational requirement for BYONC could result in higher RTEP costs, 
+which are paid for by other customers. These costs could be significantly more than the capital 
+costs of new power plants, eclipsing any benefits that ratepayers would receive through the 
+ 
+150 IRAS Filing, supra note 2, at 49–54. 
+151 See, e.g., PJM Interconnection, L.L.C., 2023/2024 RPM Base Residual Auction Results, 
+https://www.pjm.com/-/media/DotCom/markets-ops/rpm/rpm-auction-info/2023-2024/2023-
+2024-base-residual-auction-report.pdf.
+--- PAGE 58 ---
+54 
+BYONC scheme. Distant supply could trigger new long-distance transmission projects through 
+the RTEP. Under PJM rules, all utilities across PJM pay for RTEP projects based on cost 
+allocation methodology that includes load-ratio share.152 In other words, even if a new large load 
+customer pays for its own BYONC including any associated network upgrades, there is still a 
+significant risk that costs will still be shifted to other customers through RTEP. The most recent 
+RTEP will cost $11.8 billion, driven largely by increases in large loads.153 The IRAS proposal 
+includes no changes to how transmission or new generation or load is studied. There is every 
+reason to expect that if transmission constraints do not inform BYONC decisions, future RTEP 
+cycles may cost even more. Given that one major objective of BYONC is to reduce the cost 
+burden of data center load growth on other consumers, it would be illogical to allow remote 
+BYONC to result in higher costs. In short, because total system costs matter, it is unreasonable to 
+encourage new generation without considering the transmission investments needed to support it.  
+Similarly, allowing large loads to rely on distant capacity risks increasing locational 
+marginal prices (“LMPs”) in constrained zones, which are passed on to ratepayers in the form of 
+higher electricity bills. While new remote capacity might help the overall system’s capacity 
+balance, it does not fix the physical delivery problem. Adding massive new loads could force 
+constrained zones to dispatch more expensive generators when the transmission paths between 
+distant load and supply are congested. This appears to already be occurring: real time LMPs in 
+ 
+152 PJM Manual 14B, Att. A, Section A. 3.1 RTEP Baseline Reliability Upgrade Cost Allocation, 
+available at https://www.pjm.com/-/media/DotCom/documents/manuals/m14b.pdf.  
+153 See, e.g., PJM, RTEP 2025: Regional Transmission Expansion Plan, at 16 (Apr. 16, 2026), 
+https://www.pjm.com/-/media/DotCom/library/reports-notices/2025-rtep/2025-rtep-report.pdf 
+(showing that addressing load growth and deliverability comprised 95% of the drivers of that 
+year’s RTEP projects); see also id. at 1 (“Load growth continues to increase, driven primarily by 
+the proliferation of data centers”).
+--- PAGE 59 ---
+55 
+the DOM zone, home to the largest concentration of data centers, have increased 67.9% from 
+2024 to 2025, compared with 50.4% for PJM overall.154 Congestion costs PJM-wide increased 
+80.9%, or $1.75 billion, between 2024 and 2025.155 These energy costs are paid by all customers, 
+violating the objectives of the IRAS Filing. 
+On top of raising costs for other customers, the lack of a locational requirement could 
+lead to delays that worsen or extend resource adequacy shortfalls. Remote resources could take 
+significantly longer to become fully deliverable to large load customers in constrained zones 
+because of network upgrade delays and reliance on long lead-time RTEP upgrades. NRDC 
+analysis found that Network Upgrades already contribute to significant project withdrawals from 
+the interconnection queue and multi-year delays before new supply can deliver power.156 The 
+lack of a locational requirement risks extending these timelines and exacerbating resource 
+adequacy shortfalls as new supply built to serve large loads is forced to wait behind network 
+upgrade bottlenecks, undermining the BYONC scheme. 
+To resolve these risks, the Commission should direct PJM to consider available transfer 
+capacity from the most recent PJM base residual capacity auction delivery year to determine if a 
+new BYONC resource is “deliverable” to new large loads. This approach would exclude 
+BYONC supply from any zones in PJM that show limited transfer capacity, recognizing the fact 
+ 
+154 Monitoring Analytics, 2025 State of the Market Report for PJM: Volume 2 Detailed Analysis, 
+at 200, tbls. 3-53, 3-54, (March 12, 2026), 
+https://www.monitoringanalytics.com/reports/PJM_State_of_the_Market/2025/2025-som-pjm-
+vol2.pdf.  
+155 Id at. 665.  
+156 Yamit Lavi, Unlocking the Grid, NRDC (Apr. 7, 2026). 
+https://www.nrdc.org/resources/unlocking-grid
+--- PAGE 60 ---
+56 
+that this capacity will likely trigger significant network upgrades or new regional transmission 
+before becoming deliverable to the new large load customers. It should be straightforward for 
+PJM to evaluate these constrained zones using the RPM planning parameters or even the auction 
+clearing results. For example, if the large load is located in a load deliverability area (“LDA”) 
+that cleared with an RPM “adder” to its clearing price, indicating a transmission constraint, it 
+must seek BYONC located within that LDA. This way, costs are truly allocated to the large load 
+causers.   
+CONCLUSION 
+ 
+PJM’s IRAS Filing generally presents a just and reasonable mechanism to ensure large 
+loads are responsible for their own new capacity and protect other customers from unintended 
+reliability consequences while respecting state jurisdiction over retail rates. However, to ensure 
+that the IRAS Filing achieves its objectives, the Commission must make the modifications 
+described above to: (1) ensure IRAS and BYONC requirements are permanent for all new large 
+loads or else clarify that the trigger for turning IRAS off requires the capacity market to clear for 
+three consecutive years with sufficient supply to meet all demand including all large loads 
+subject to IRAS; (2) require penalties for LSEs that fail to comply with IRAS Actions; (3) either 
+eliminate compensation for IRAS resource curtailment or require PJM to cap the compensation 
+awarded to IRAS loads at no more than the amount the new large load paid in capacity charges 
+for the relevant delivery year; and (4) require BYONC supply to be fully deliverable to new large 
+loads by considering transmission limits between zones. Accordingly, PIOs 
+respectfully request that the Commission approve the IRAS Filing with the 
+modifications described above. 
+Dated: September 3, 2026
+--- PAGE 61 ---
+57 
+ 
+Respectfully submitted,  
+ 
+SIERRA CLUB 
+ 
+/s/ Nick Lawton  
+Nick Lawton  
+Earthjustice  
+1400 L St NW   
+Lobby 2, Unit 34117   
+Washington DC 20005  
+(202) 780-4835  
+nlawton@earthjustice.org  
+ 
+/s/ Aaliyah Adkins  
+Aaliyah Adkins  
+Earthjustice  
+1400 L St NW   
+Lobby 2, Unit 34117   
+Washington DC 20005  
+(202) 797-5253  
+aadkins@earthjustice.org  
+ 
+/s/ Justin Vickers  
+Justin Vickers  
+Senior Attorney  
+Sierra Club  
+2101 Webster St., 13th Floor   
+Oakland, CA 94612  
+(224) 420-0614  
+justin.vickers@sierraclub.org  
+ 
+Counsel for Sierra Club 
+ 
+NATURAL RESOURCES DEFENSE COUNCIL 
+ 
+/s/ Claire Lang-Ree 
+Claire Lang-Ree 
+Advocate, Sustainable FERC Project,  
+Natural Resources Defense Council 
+40 W 20th St 
+New York, NY, 10011 
+clangree@nrdc.org
+--- PAGE 62 ---
+58 
+ENVIRONMENTAL LAW AND POLICY CENTER 
+ 
+/s/Nicholas Wallace 
+Nicholas Wallace 
+Senior Associate Attorney 
+Environmental Law & Policy Center  
+35 East Wacker Drive, Suite 1600 
+Chicago, IL 60601 
+(312) 673-6500 
+nwallace@elpc.org 
+ 
+APPALACHIAN VOICES 
+ 
+/s/ Nicholas J. Guidi 
+Nicholas J. Guidi 
+Senior Attorney 
+nguidi@selc.org 
+  
+/s/ Katherine L. Rogers  
+Katherine L. Rogers  
+Associate Attorney 
+krogers@selc.org 
+Southern Environmental Law Center 
+500 New Jersey Ave. NW, Suite 600 
+Washington, DC 20001 
+  
+Counsel for Appalachian Voices  
+ 
+ 
+CENTER FOR PROGRESSIVE REFORM 
+ 
+Bryan Dunning 
+Senior Policy Analyst 
+Center for Progressive Reform 
+1250 Connecticut Ave. NW 
+Washington, D.C. 20036 
+bdunning@progressivereform.org 
+(202) 747 0698 ext. 7
+--- PAGE 63 ---
+59 
+CERTIFICATE OF SERVICE 
+ 
+I hereby certify that the foregoing has been served in accordance with 18 C.F.R. § 
+385.2010 upon each party designated in the official service list compiled by the Secretary in this 
+proceeding, by email.   
+/s/ Nick Lawton  
+Nick Lawton  
+Earthjustice  
+1400 L St NW   
+Lobby 2, Unit 34117   
+Washington DC 20005  
+(202) 780-4835  
+nlawton@earthjustice.org
