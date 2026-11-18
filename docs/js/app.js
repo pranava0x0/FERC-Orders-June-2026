@@ -585,7 +585,7 @@
           : '<td class="xw-t-none">' + (m === "SPP" ? "Not filed yet; due Nov 20" : "Not addressed") + "</td>";
       }).join("") + "</tr>";
     }).join("");
-    return '<div class="table-wrap xw-t-wrap"><table class="xw-t"><caption>Responses to the June orders, compared</caption><thead><tr><th scope="col">Reform (order heading)</th>' +
+    return '<div class="table-wrap xw-t-wrap"><table class="xw-t"><caption class="sr-only">Responses to the June orders, by reform and market</caption><thead><tr><th scope="col">Reform</th>' +
       XW_MARKETS.map(function (m) { return '<th scope="col">' + esc(m) + "</th>"; }).join("") + "</tr></thead><tbody>" + rows + "</tbody></table></div>";
   }
   function renderCrosswalk() {
@@ -1439,6 +1439,8 @@
           '<span class="cm-pm-promo-k">The policy map</span>' +
           '<span class="cm-pm-promo-t">See what the June 18 orders did with each issue, and where it goes next on the §206 clock <span aria-hidden="true">→</span></span></a>'
         : "") +
+      // Finding one commenter is the most common errand here; the box hands off to the full list.
+      '<div class="fg-find"><label for="cm-find">Find a commenter</label><input type="search" id="cm-find" placeholder="Organization or any word" autocomplete="off" /></div>' +
       statRow + coverageLine + rounds +
       (regions ? head("Which RTO/ISO each comment engages", "Only comments that name a region. About 60% name none.") + regions : "") +
       head("Where commenters land on each reform", "Share of audited letters that support, oppose or are mixed.") + stanceBars +
@@ -1504,6 +1506,14 @@
     // list filter (within the summaries sub-tab): free-text search ANDed with structured AND-tokens.
     var input = document.getElementById("cm-search"), count = document.getElementById("cm-count");
     if (!input) return;
+    // The overview's box: the first keystroke opens All comments and carries on typing in its filter.
+    var jump = document.getElementById("cm-find");
+    if (jump) jump.addEventListener("input", function () {
+      var v = jump.value; jump.value = "";
+      var tab = document.getElementById("cmsub-summaries"); if (tab) tab.click();
+      input.value = v; input.focus(); input.setSelectionRange(v.length, v.length);
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    });
     var rows = [].slice.call(document.querySelectorAll("#panel-comments .cm-row"));
     var groups = [].slice.call(document.querySelectorAll("#panel-comments .cm-listgroup"));
     var empty = document.getElementById("cm-empty");
@@ -1938,7 +1948,7 @@
   }
   // A proceeding's documents, split by what they are, in this order: what FERC did, what was proposed,
   // how others responded, then procedure (folded, since it rarely holds the substance). Newest first within each.
-  var DOC_SECTIONS = [["ferc", "FERC orders and notices"], ["proposal", "Proposals and reports"], ["response", "Responses: comments, protests, answers, rehearing requests"], ["proc", "Procedural filings"]];
+  var DOC_SECTIONS = [["ferc", "FERC orders and notices"], ["proposal", "Proposals and reports"], ["response", "Responses"], ["proc", "Procedural filings"]];
   var PROPOSAL_ROLE = /^(?:Proposed tariff change|Amends a proposed tariff|Refiled proposal|Complies with an order|Report to FERC|Operator’s filing)$/;
   var PROC_ROLE = /pause the case|more time|Procedural motion|Supports a delay|^Notice$|^Meeting agenda$|^Errata$|^Correction$/;
   function docSection(d) {
@@ -2141,7 +2151,7 @@
     var live = panel.querySelector(".fg-live");
     var tl = filingTheme ? themeLabel(window.FERC_RECORD, filingTheme) : "";
     if (live) live.textContent = !active ? "" : shown + (shown === 1 ? " document" : " documents") + (filingTheme ? " about " + tl : "") + (q ? " matching “" + q + "”" : "") +
-      " in " + groupsShown + (groupsShown === 1 ? " proceeding" : " proceedings") + ", grouped by market below.";
+      " in " + groupsShown + (groupsShown === 1 ? " proceeding" : " proceedings");
   }
   var pendingFiling = null, filingHash = "";
   function routeFiling(rest) {
