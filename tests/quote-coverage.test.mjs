@@ -39,7 +39,7 @@ test("track status lines are backed by captured evidence", () => {
   const fromTracks = required.filter((r) => r.label.startsWith("track "));
   assert.ok(fromTracks.length >= 5, `track sweep is reaching the cards (${fromTracks.length} >= 5)`);
   // Needles are quotes the cards carry today (sc6 and gov); change them when the cards change.
-  for (const needle of ["will make several Federal Power Act, Section 205 filings", "proven to be detrimental to improvements in PJM"]) {
+  for (const needle of ["has responded fully to the Large Load Show Cause Order", "proven to be detrimental to improvements in PJM"]) {
     const hit = fromTracks.find((r) => r.quote.includes(needle));
     assert.ok(hit, `a track card quotes "${needle}"`);
     assert.ok(hit.ok, `"${needle}" resolves in the committed corpus`);

@@ -1,0 +1,89 @@
+{
+ "slug": "filing-er27-526-miso-large-loads",
+ "summary": "MISO and its transmission owners file tariff revisions under section 205 on November 16, 2026, in a new docket, ER27-526-000. The filing adds a Large Load Project Review with a $250,000 application fee, two pro forma cost recovery agreements, a public dashboard, and two new services, Firm Service Step Up and Interim NITS.",
+ "ask": "Accept the revisions effective February 14, 2027, 90 days after filing, with a 30-day comment period.",
+ "points": [
+  {
+   "point": "MISO says this filing, the companion GRITS filing and its pending large-load filings together answer FERC's concerns.",
+   "quote": "MISO’s other pending Large Load filings fully addresses the concerns identified by the Commission",
+   "pg": 5
+  },
+  {
+   "point": "It builds on earlier filings already pending: zero-injection agreements, reliability requirements and the resource study.",
+   "quote": "MISO has already filed several proposals responsive to the Show Cause Order that are currently pending before the Commission",
+   "pg": 4
+  },
+  {
+   "point": "A new Large Load Project Review would study every large-load service request, with deposits and milestones to deter speculative ones.",
+   "quote": "The LLPR also includes deposits, project milestones, and other safeguards designed to discourage speculative Large Load requests.",
+   "pg": 5
+  },
+  {
+   "point": "Applicants pay a $250,000 non-refundable fee.",
+   "quote": "a non-refundable application fee of $250,000",
+   "pg": 14
+  },
+  {
+   "point": "Large-load customers would bear the cost of the upgrades built for them through cost recovery agreements.",
+   "quote": "designed to ensure that the costs incurred to provide Transmission Service to Large Load Transmission Customers, including the costs of Large Load Upgrades (defined herein), are born by such customers",
+   "pg": 5
+  },
+  {
+   "point": "MISO would publish the location and estimated costs of large loads on a dashboard.",
+   "quote": "The results of the LLPR periodically will be published to provide transparency into the location and estimated costs associated with Large Load facilities in the MISO region",
+   "pg": 5
+  },
+  {
+   "point": "Two new services, Firm Service Step Up and Interim NITS, would let customers take service in stages as they build out.",
+   "quote": "The new Transmission Services available to Large Loads include Firm Service Step Up and Interim Non-Firm NITS service.",
+   "pg": 5
+  },
+  {
+   "point": "Loads of 200 MW or more partnered with a generator for at least 15 years go through the resource study instead.",
+   "quote": "If the Large Load is greater than or equal to 200 MW and has formally partnered with a generator for a minimum of fifteen years, then the applicants will go through the LARS study process.",
+   "pg": 15
+  },
+  {
+   "point": "MISO says states and stakeholders did not agree on everything.",
+   "quote": "While full alignment was not achieved on every aspect of the proposals",
+   "pg": 4
+  },
+  {
+   "point": "MISO asks for a February 14, 2027 effective date and a 30-day comment period.",
+   "quote": "MISO requests that the Commission accept the proposed revisions effective 90 days from the date of this filing (i.e., February 14, 2027).",
+   "pg": 3
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-8-show-cause",
+   "e-8-application-study-operating",
+   "e-8-cost-recovery-agreement",
+   "e-8-minimum-cost-recovery-security",
+   "e-8-alternative-transmission"
+  ],
+  "text": "Filed under section 205 by MISO and its transmission owners to answer the E-8 show cause order for MISO, alongside the companion GRITS filing and MISO's earlier large-load filings."
+ },
+ "themes": [
+  "study",
+  "cost",
+  "flex"
+ ],
+ "figures": [
+  {
+   "label": "Application fee",
+   "value": 250000,
+   "unit": "$",
+   "quote": "application fee of $250,000",
+   "pg": 14
+  },
+  {
+   "label": "Requested comment period",
+   "value": 30,
+   "unit": "days",
+   "quote": "MISO proposes a 30-day comment period",
+   "pg": 3
+  }
+ ]
+}

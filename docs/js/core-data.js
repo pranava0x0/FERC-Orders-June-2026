@@ -1069,10 +1069,30 @@ window.FERC_DATA = (function () {
       url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261113-5007", published: "2026-11-13", captured: "2026-11-15",
       text: "sources/text/abeyance/filing-er27-484-isone-large-loads.txt", note: "Transmittal letter read in full; FERC eLibrary accession 20261113-5007. The testimony, affidavit and tariff sheets filed with it are on the eLibrary file list and are not committed here.",
     },
+    pjmtos1116: {
+      label: "PJM Transmission Owners, tariff revisions for service to co-located and large loads in ER27-520-000", short: "PJM TOs filing", org: "PJM Transmission Owners", tier: "secondary",
+      url: "https://www.pjm.com/-/media/DotCom/documents/ferc/filings/2026/20261116-er27-520-000.pdf", published: "2026-11-16", captured: "2026-11-17",
+      text: "sources/text/abeyance/filing-er27-520-pjm-tos-large-loads.txt", note: "PJM’s posted copy of the full submission (336 pages); FERC eLibrary accession 20261116-5300, filed in the name of PECO Energy Company. Transmittal letter read in full, with the cited pro forma agreement pages.",
+    },
+    elibrary1117: {
+      label: "FERC eLibrary docket sheet, ER27-520-000", short: "ER27-520 docket sheet", org: "FERC", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=ER27-520&sub_docket=000", undated: true, captured: "2026-11-17",
+      note: "Four rows on Nov 17: FERC’s combined notice of Nov 16 (20261116-3055, comments due Dec 7), the filing (20261116-5300), and interventions by the Maryland Office of People’s Counsel and the PJM Power Providers Group on Nov 17.",
+    },
+    esearch1117: {
+      label: "FERC eLibrary general search, filed Nov 16 to Nov 17, 2026", short: "eLibrary search Nov 17", org: "FERC", tier: "secondary",
+      url: "https://elibrary.ferc.gov/eLibrary/search", undated: true, captured: "2026-11-17",
+      note: "Full-text search for “large load” (32 results) and for “show cause” or the show cause docket numbers (45 results). It found the Nov 16 section 205 filings of PJM (ER27-531, ER27-522), MISO (ER27-526, ER27-527), CAISO (ER27-506, refiled as ER27-532), NYISO (ER27-517), the New York Transmission Owners (ER27-529), LS Power Grid New York (ER27-518) and fifteen California transmission owners. The transmittal letters of PJM, MISO, CAISO and NYISO were downloaded and read; the rest are known from their eLibrary descriptions. Comment dates were not read.",
+    },
     epsa1113: {
       label: "EPSA answer supporting ISO-NE’s comment period, ER27-484-000", short: "EPSA answer", org: "Electric Power Supply Association", tier: "secondary",
       url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261113-5086", published: "2026-11-13", captured: "2026-11-15",
       text: "sources/text/abeyance/answer-er27-484-epsa-comment-period.txt", note: "Read against the original; FERC eLibrary accession 20261113-5086.",
+    },
+    cnf1116: {
+      label: "FERC combined notice #1, 20261116-3055", short: "FERC combined notice", org: "FERC", tier: "ferc",
+      url: "https://elibrary.ferc.gov/eLibrary/filelist?accession_number=20261116-3055", published: "2026-11-16", captured: "2026-11-17",
+      note: "Read against the original. It lists ER27-506 (CAISO), ER27-517 (NYISO), ER27-518 (LS Power Grid New York), ER27-520 (PJM Transmission Owners) and the California transmission owners’ filings through ER27-515, each with a comment date of 5 p.m. Eastern on Dec 7, 2026. PJM’s ER27-531 and ER27-522 and MISO’s ER27-526 and ER27-527 are not in it. The notice is not committed here.",
     },
     cnf1113: {
       label: "FERC combined notice #2, 20261113-3088", short: "FERC combined notice", org: "FERC", tier: "ferc",
@@ -1211,10 +1231,10 @@ window.FERC_DATA = (function () {
       what: "Six show cause orders on one 60-day clock. Each RTO or ISO must defend its tariff or file a fix.",
       whySeparate: "This is the main proceeding the site tracks. The other lanes run beside it, each on its own clock.",
       status: {
-        asOf: "2026-11-15",
-        line: "Responses are due Nov 16 and answers Dec 16, except SPP (Nov 20 and Dec 21). ISO-NE filed on Nov 13: with NEPOOL and its transmission owners it submitted large-load tariff revisions in a new docket, ER27-484-000, and asked FERC to end its show cause case. Comments on that filing are due Dec 4. Valley Electric asked the same day to be dropped from CAISO’s order as a non-public utility. No §205 large-load filing from PJM, the PJM Transmission Owners, CAISO, MISO or NYISO was indexed through Friday, Nov 13, and FERC indexes weekend filings on Monday. PJM’s matrix for its Nov 5 member consultation says it “will make several Federal Power Act, Section 205 filings” on or about Nov 16, one on ride-through and one with most of its reforms. The PJM Transmission Owners committed on Oct 9 to file by Nov 16. CAISO’s Board advanced its proposal on Oct 28, and CAISO says it will file by Nov 16. MISO has filed pieces under §205 in separate dockets and told FERC on Nov 9 that its Nov 16 filing will carry the cost recovery agreements. SPP filed an extension of its conditional large-load service on Nov 6 in ER27-432. NYISO’s stated target is December. Large customers have written PJM’s Board twice about its plan: the Corporate Energy Buyers Association and the Data Center Coalition on Oct 2, and ITI on Nov 5.",
+        asOf: "2026-11-17",
+        line: "Five of the six respondents have filed. ISO-NE filed Nov 13 in ER27-484 (comments due Dec 4). On Nov 16 PJM filed in ER27-531 and ER27-522, the PJM Transmission Owners in ER27-520, MISO and its transmission owners in ER27-526 and ER27-527, CAISO in ER27-506 (refiled as ER27-532) with fifteen California transmission owners in their own dockets, and NYISO in ER27-517 with the New York Transmission Owners and LS Power Grid New York. Every filing went to a new ER docket. PJM says it “has responded fully to the Large Load Show Cause Order” and asks FERC to close the section 206 side; the others ask much the same. FERC’s first Nov 16 notice sets Dec 7 for comments on the CAISO, NYISO and PJM Transmission Owners’ filings, though NYISO asked for 28 days and CAISO for 30. The notice covering PJM’s and MISO’s filings was not read; PJM asked for 60 days and MISO for 30. SPP’s response is due Nov 20. Valley Electric asked Nov 13 to be dropped from CAISO’s order. NERC petitioned Nov 16 for large-load reliability standards (RD27-3).",
       },
-      next: { date: "2026-11-16", label: "Show-cause responses due after the 90-day abeyance (SPP: Nov 20)", dateNote: "moved from Aug 17 by the Aug 14 abeyance orders; SPP received 95 days rather than 90" },
+      next: { date: "2026-11-20", label: "SPP’s show cause response, the last one due", dateNote: "SPP received 95 days of abeyance rather than 90; the other five were due Nov 16" },
       src: ["fercPR", "fercFS", "elibrary0803", "elibrary0809", "elibrary0823", "abeyance0814", "rehearing0921", "rehearing0921x4", "elibrary1008", "pjmto1009", "isone1009", "caisodfp0924", "udive1005", "misolars1002", "llorder1009", "elibrary1020", "appa1028", "pjmmc1028", "pjmmc1105", "pjmrbp1029", "udive1026", "elibrary1030", "elibrary1102", "elibrary1110", "cebadcc1002", "itipjm1105", "pjmceo1105", "isone1113", "cnf1113", "vea1113", "pjmmatrix1029", "misolars1109", "elibrary1115"],
     },
     e2: {
@@ -1224,10 +1244,10 @@ window.FERC_DATA = (function () {
       what: "The PJM co-location proceeding that created the three new transmission services the six orders extend to every other region.",
       whySeparate: "A different docket with its own compliance clock, which has tracked the §206 clock closely: both were reset to Nov 16, 2026 on the same day, by separate FERC actions.",
       status: {
-        asOf: "2026-11-15",
-        line: "Unchanged on the clock: PJM's and the PJM Transmission Owners' full co-location compliance filing is due Nov 16, 2026, the same date as the §206 clock, and the transmission owners' Oct 9 consultation notice folds it into the single §205 filing they have committed to make on or before Nov 16. PJM's Oct 15 answer to the protests of its Aug 17 partial compliance filing asked FERC to defer ruling until the November filing completes the record. The fight has also moved to court: Vistra Corp. (Oct 22, Case No. 26-3635) and Exelon Corp. and others (Oct 27) petitioned the U.S. Court of Appeals for the Third Circuit for review of four orders in this proceeding, issued Dec 18, 2025, Feb 20, 2026, June 18, 2026 and Aug 20, 2026. That is known from the docket-sheet descriptions; the petitions were not read. No Commission order since the Aug 14 extension. Both EL25-49 sheets were read in full on Nov 15, and the newest row is an Oct 27 service-list update.",
+        asOf: "2026-11-17",
+        line: "Unchanged on the clock: PJM's and the PJM Transmission Owners' full co-location compliance filing is due Nov 16, 2026, the same date as the §206 clock, and the transmission owners' Oct 9 consultation notice folds it into the single §205 filing they have committed to make on or before Nov 16. PJM's Oct 15 answer to the protests of its Aug 17 partial compliance filing asked FERC to defer ruling until the November filing completes the record. The fight has also moved to court: Vistra Corp. (Oct 22, Case No. 26-3635) and Exelon Corp. and others (Oct 27) petitioned the U.S. Court of Appeals for the Third Circuit for review of four orders in this proceeding, issued Dec 18, 2025, Feb 20, 2026, June 18, 2026 and Aug 20, 2026. That is known from the docket-sheet descriptions; the petitions were not read. No Commission order since the Aug 14 extension. Both EL25-49 sheets were read in full on Nov 15, and the newest row is an Oct 27 service-list update. The PJM Transmission Owners say their Nov 16 filing in ER27-520-000 also meets their compliance obligation here; PJM’s own Nov 16 filings have not been checked yet.",
       },
-      next: { date: "2026-11-16", label: "PJM and PJM TOs full co-location compliance filing", dateNote: "extended from Aug 17 by the Aug 14 notice of extension of time" },
+      next: { date: "2026-12-07", label: "Comments due on the PJM Transmission Owners’ filing (ER27-520)", dateNote: "from FERC’s Nov 16 combined notice; the comment date on PJM’s own filing (ER27-531) was not read" },
       src: ["e2", "elibrary0803", "elibrary0809", "elibrary0823", "elibrary1008", "pjmto1009", "pjmans1014", "elibrary1020", "elibrary1030", "elibrary1102", "elibrary1115"],
     },
     gov: {
@@ -1788,14 +1808,41 @@ window.FERC_DATA = (function () {
     {
       date: "Nov 16, 2026", iso: "2026-11-16", kind: "deadline", track: "sc6",
       title: "The rescheduled deadline, and the filing most respondents say they will make instead",
-      body: "The date the Aug 14 abeyance orders moved everything to. Each RTO or ISO and its transmission owners must now show cause why its tariff stays just and reasonable, or file the §206 changes that would fix it, except in SPP's docket, where the same obligation falls four days later on Nov 20. Almost nobody plans to file a response. The orders record what respondents told FERC they would do instead: PJM expects an FPA §205 filing in early-to-mid November, the Indicated PJM Transmission Owners no later than Nov 16, CAISO on Nov 16 after board and Western Energy Market governing-body approval targeted for Oct 28, and the CAISO participating transmission owners in a coordinated set the same day. Since then the PJM Transmission Owners (Oct 9) and ISO-NE with its transmission owners (Oct 9) have put Nov 16 §205 commitments in writing, CAISO's Board advanced its proposal on Oct 28, PJM set a Nov 5 member consultation on a suite of §205 filings, MISO has been filing pieces under §205 in separate dockets, and NYISO's stated target remains December. ISO-NE went first: it filed on Nov 13 in a new docket, ER27-484, and asked FERC to end its case. A §205 filing suspends that respondent's duty to respond and leaves the proceeding in abeyance pending further direction. Expect proposed tariff revisions from most respondents on this date, with FERC then deciding whether they resolve the findings enough to terminate the show cause orders. PJM's separate co-location compliance filing in EL25-49 is due the same day.",
+      body: "The date the Aug 14 abeyance orders moved everything to. Each RTO or ISO and its transmission owners must now show cause why its tariff stays just and reasonable, or file the §206 changes that would fix it, except in SPP's docket, where the same obligation falls four days later on Nov 20. Almost nobody plans to file a response. The orders record what respondents told FERC they would do instead: PJM expects an FPA §205 filing in early-to-mid November, the Indicated PJM Transmission Owners no later than Nov 16, CAISO on Nov 16 after board and Western Energy Market governing-body approval targeted for Oct 28, and the CAISO participating transmission owners in a coordinated set the same day. Since then the PJM Transmission Owners (Oct 9) and ISO-NE with its transmission owners (Oct 9) have put Nov 16 §205 commitments in writing, CAISO's Board advanced its proposal on Oct 28, PJM set a Nov 5 member consultation on a suite of §205 filings, MISO has been filing pieces under §205 in separate dockets, and NYISO's stated target remains December. ISO-NE went first: it filed on Nov 13 in a new docket, ER27-484, and asked FERC to end its case. A §205 filing suspends that respondent's duty to respond and leaves the proceeding in abeyance pending further direction. Expect proposed tariff revisions from most respondents on this date, with FERC then deciding whether they resolve the findings enough to terminate the show cause orders. PJM's separate co-location compliance filing in EL25-49 is due the same day. The window has closed: five of the six respondents filed by Nov 16, each in a new ER docket, and SPP’s response is due Nov 20; see the filing matrix.",
       src: ["abeyance0814", "e7", "elibrary0823", "appa1028", "pjmmc1105", "isone1113"],
+    },
+    {
+      date: "Nov 16, 2026", iso: "2026-11-16b", kind: "milestone", track: "sc6",
+      title: "The PJM Transmission Owners file their large-load tariff revisions",
+      body: "The PJM Transmission Owners file under §205 in a new docket, ER27-520-000, in answer to the PJM show cause order. They say the same filing meets their compliance obligation under the June 18 co-location order in EL25-49. It sets rates for the three new transmission services, largely as FERC approved them in that order. A pro forma cost recovery agreement would require a minimum contribution of 80% to 100% of a firm-service benchmark, with shortfall payments and credit support, for at least ten years after service starts. Upgrade costs from PJM’s proposed Fast Energization Process would go to the zones with large loads for 15 years, then to regional allocation. The owners ask for March 16, 2027 for the service rates and an indeterminate date for the agreement and cost allocation, tied to PJM’s companion filing. FERC has not acted.",
+      doc: "pjm-tos-large-load/filing-er27-520-pjm-tos-large-loads",
+      src: ["pjmtos1116", "elibrary1117"],
+    },
+    {
+      date: "Nov 16, 2026", iso: "2026-11-16c", kind: "milestone", track: "sc6",
+      title: "PJM files its large-load reforms and ride-through rules",
+      body: "PJM files under §205 in two new dockets. ER27-531-000 proposes a 12-month Fast Energization Process that studies generators and large loads together, three new transmission services, a 50 MW cap on netting behind-the-meter generation, and revised co-location compliance changes that replace its Aug 17 filing, which it moves to withdraw the same day. ER27-522-000 sets ride-through and operating requirements for large computational loads, citing a 3.9 GW load-loss event on July 22. PJM asks FERC to close the section 206 side of the show cause order and to allow 60 days for comments. None of this has been approved.",
+      doc: "pjm-large-load/filing-er27-531-pjm-large-loads",
+      src: ["esearch1117"],
+    },
+    {
+      date: "Nov 16, 2026", iso: "2026-11-16d", kind: "milestone", track: "sc6",
+      title: "MISO, CAISO and NYISO file their large-load tariff revisions",
+      body: "MISO and its transmission owners file a Large Load Project Review, cost recovery agreements and two new services (ER27-526-000), and MISO files GRITS, a permanent firm and non-firm contract demand service it cannot start before 2029 (ER27-527-000). CAISO files a 50 MW large-load definition and a Flexible Interim Load Interconnection service (ER27-506-000), and fifteen California transmission owners file their own tariffs. NYISO files Large Load Integration Procedures and two withdrawal services in place of PJM’s three (ER27-517-000), with the New York transmission owners filing separately. Each asks FERC to close its show cause case.",
+      doc: "miso-large-load/filing-er27-526-miso-large-loads",
+      src: ["esearch1117"],
     },
     {
       date: "Nov 18, 2026", iso: "2026-11-18", kind: "deadline", track: "gov",
       title: "PJM’s Members Committee votes on the governance revisions",
       body: "The agenda, posted Nov 11, says “The committee will be asked to approve/endorse the proposed OA, Tariff and RAA revisions as a package at this meeting.” Those revisions write the Members’ Sept 30 term sheet into PJM’s governing documents. A Members vote is advisory until the Board decides what to file at FERC. The same agenda lists a stakeholder discussion with the Board that covers “the new large load initiatives”.",
       src: ["pjmmc1118"],
+    },
+    {
+      date: "Nov 20, 2026", iso: "2026-11-20", kind: "deadline", track: "sc6",
+      title: "SPP’s show cause response is due",
+      body: "The last of the six. SPP’s abeyance ran 95 days rather than 90, to Nov 20, pending its stakeholder process and a §205 filing. Answers are due Dec 21.",
+      src: ["abeyance0814"],
     },
     {
       date: "Nov 30, 2026", iso: "2026-11-30", kind: "deadline", track: "context",
@@ -1809,6 +1856,12 @@ window.FERC_DATA = (function () {
       body: "FERC’s Nov 13 combined notice sets 5 p.m. Eastern on Dec 4 for comments on ER27-484-000. ISO-NE asked for a 24-day period ending Dec 7, and FERC has not ruled on that request.",
       doc: "isone-large-load/filing-er27-484-isone-large-loads",
       src: ["cnf1113", "isone1113"],
+    },
+    {
+      date: "Dec 7, 2026", iso: "2026-12-07", kind: "deadline", track: "e2",
+      title: "Comments due on the Nov 16 filings in FERC’s first notice",
+      body: "FERC’s Nov 16 combined notice sets 5 p.m. Eastern on Dec 7 for comments on the PJM Transmission Owners’ filing (ER27-520), CAISO’s (ER27-506), NYISO’s (ER27-517), LS Power Grid New York’s (ER27-518) and the California transmission owners’ filings through ER27-515. NYISO had asked for 28 days and CAISO for 30. The comment date on PJM’s and MISO’s own filings was not read.",
+      src: ["cnf1116"],
     },
     {
       date: "Dec 16, 2026", iso: "2026-12-16", kind: "deadline", track: "sc6",
@@ -2493,15 +2546,15 @@ window.FERC_DATA = (function () {
     // accession below was read directly off its own docket sheet. Keep a respondent's filed answer
     // separate from another respondent’s intention to file under section 205.
     filings: {
-      asOf: "2026-11-15",
+      asOf: "2026-11-17",
       steps: ["report", "abeyance", "showcause"],
-      note: "Observed filings only. An empty cell means our checks found nothing, which is not proof nothing was filed. Every report and abeyance cell below is confirmed against its own eLibrary accession. Every abeyance motion was GRANTED on Aug 14, 2026, so the show-cause column is upcoming again, now against Nov 16 (Nov 20 for SPP) rather than Aug 17; each cell's gist carries the granting order's accession and reporter citation. A show-cause cell marked Signaled rests on the respondent's own written statement of what it will file (its source is cited in the cell), not on anything observed on the docket. ISO-NE’s Nov 13 filing sits in a new docket, ER27-484-000, and is marked Filed here because it asks FERC to end the EL26-72 case. The six main sheets, read through Nov 15, show no other respondent filing since Nov 10. Morongo’s Aug 12 answer in CAISO’s docket remains on file.",
+      note: "Observed filings only. An empty cell means our checks found nothing, which is not proof nothing was filed. Every report and abeyance cell below is confirmed against its own eLibrary accession. Every abeyance motion was GRANTED on Aug 14, 2026, so the show-cause column is upcoming again, now against Nov 16 (Nov 20 for SPP) rather than Aug 17; each cell's gist carries the granting order's accession and reporter citation. A show-cause cell marked Signaled rests on the respondent's own written statement of what it will file (its source is cited in the cell), not on anything observed on the docket. ISO-NE’s Nov 13 filing sits in a new docket, ER27-484-000, and is marked Filed here because it asks FERC to end the EL26-72 case. The six main sheets, read through Nov 15, show no other respondent filing since Nov 10. The PJM Transmission Owners’ Nov 16 filing in ER27-520-000 was added on Nov 17; the other Nov 16 filings have not been checked yet. Morongo’s Aug 12 answer in CAISO’s docket remains on file.",
       rows: [
         // --- show-cause column: what respondents have put in writing about Nov 16 (2026-10-19) ---------
         {
-          docket: "EL26-67-000", step: "showcause", status: "signaled", date: "2026-10-29",
-          gist: "The PJM Transmission Owners' Oct 9 consultation notice commits them to a §205 filing on or before Nov 16 covering the show cause order and their EL25-49 compliance obligation. PJM itself told FERC in its abeyance motion to expect its §205 filing in early-to-mid November, with an advisory Members Committee vote Oct 28; that vote was not on the Oct 28 agenda, and PJM's Oct 29 agenda for a Nov 5 special Members Committee instead sets a §9.2(b) consultation on a suite of §205 filings answering the show cause order. On Nov 5 PJM's chief executive wrote to four buyer and clean-energy trade groups that the proposal was still under development. PJM’s matrix for that consultation says it will make several §205 filings on or about Nov 16. Neither filing was indexed through Nov 13.",
-          src: ["pjmto1009", "abeyance0814", "pjmmc1028", "pjmmc1105", "pjmceo1105", "pjmmatrix1029", "elibrary1115"],
+          docket: "EL26-67-000", step: "showcause", status: "filed-verified", date: "2026-11-16",
+          gist: "PJM filed under §205 in two new dockets: ER27-531-000, a 12-month Fast Energization Process studying generators and large loads together, three new transmission services, a 50 MW cap on netting behind-the-meter generation and refiled co-location compliance changes; and ER27-522-000, ride-through and operating requirements for large computational loads. PJM asks FERC to close the section 206 side of the order. The PJM Transmission Owners filed separately in ER27-520-000: rates for the new services, a cost recovery agreement with a minimum commitment of 80% to 100% of a firm-service benchmark, and a 15-year zonal allocation of Fast Energization upgrade costs.",
+          src: ["esearch1117", "pjmtos1116", "elibrary1117"], accession: "20261116-5340", reader: "filing-er27-531-pjm-large-loads", verified_at: "2026-11-17",
         },
         {
           docket: "EL26-72-000", step: "showcause", status: "filed-verified", date: "2026-11-13",
@@ -2509,9 +2562,14 @@ window.FERC_DATA = (function () {
           src: ["isone1113", "cnf1113", "elibrary1115"], accession: "20261113-5007", reader: "filing-er27-484-isone-large-loads", verified_at: "2026-11-15",
         },
         {
-          docket: "EL26-70-000", step: "showcause", status: "signaled", date: "2026-10-02",
-          gist: "MISO is filing its large-load reforms under §205 in separate ER dockets rather than in EL26-70: a zero-injection generator interconnection agreement in August and, on Oct 2, a Large Load Addition Resource Study in Docket ER27-25-000 (accession 20261002-5074), with a requested effective date of Dec 2, 2026. In its Nov 9 LARS answer MISO says it and its transmission owners “will include in their Large Load filing(s) due on November 16, 2026, the pro forma cost recovery agreements.”",
-          src: ["udive1005", "misolars1002", "misolars1109"],
+          docket: "EL26-70-000", step: "showcause", status: "filed-verified", date: "2026-11-16",
+          gist: "MISO and its transmission owners filed under §205 in a new docket, ER27-526-000: a Large Load Project Review study process, two cost recovery agreements, a large-load dashboard and two new services, asking for a Feb 14, 2027 effective date and a 30-day comment period. A separate MISO filing, ER27-527-000, creates GRITS, a permanent firm and non-firm contract demand service that MISO says cannot start before Jan 1, 2029. MISO says these and its earlier LARS, zero-injection and reliability-requirements filings answer the show cause order.",
+          src: ["esearch1117"], accession: "20261116-5323", reader: "filing-er27-526-miso-large-loads", verified_at: "2026-11-17",
+        },
+        {
+          docket: "EL26-71-000", step: "showcause", status: "filed-verified", date: "2026-11-16",
+          gist: "CAISO filed under §205 in a new docket, ER27-506-000 (refiled the same day under a different filing code as ER27-532-000): a 50 MW large-load definition, disclosure of co-located load by generators and a Flexible Interim Load Interconnection service, effective Feb 16, 2027; comments are due Dec 7. Fifteen California transmission owners, among them SCE, PG&E and SDG&E, filed their own tariff revisions in separate dockets, where deposits, security and cost recovery sit; only CAISO’s letter was read. Earlier, on Aug 12, Morongo Transmission answered that its own tariff needs no change because it has no end-use customers (20260812-5158).",
+          src: ["esearch1117", "cnf1116"], accession: "20261116-5179", reader: "filing-er27-506-caiso-large-loads", verified_at: "2026-11-17",
         },
         {
           docket: "EL26-68-000", step: "showcause", status: "signaled", date: "2026-08-14",
@@ -2519,9 +2577,9 @@ window.FERC_DATA = (function () {
           src: ["abeyance0814"],
         },
         {
-          docket: "EL26-69-000", step: "showcause", status: "signaled", date: "2026-06-18",
-          gist: "NYISO's own target, as recorded in its show cause order, is to file corresponding tariff revisions by December 2026, after the Nov 16 reset date. Nothing later from NYISO was found this sweep.",
-          src: ["e12"],
+          docket: "EL26-69-000", step: "showcause", status: "filed-verified", date: "2026-11-16",
+          gist: "NYISO filed under §205 in a new docket, ER27-517-000: Large Load Integration Procedures, Firm and Non-Firm Withdrawal Service instead of the three PJM-style services, and curtailment of non-firm service at a $200/MWh local price. It asks FERC to keep the show cause case in abeyance and end it for NYISO on acceptance. Comments are due Dec 7 under FERC’s notice; NYISO had asked for 28 days. The New York Transmission Owners (ER27-529-000) and LS Power Grid New York (ER27-518-000) filed cost recovery terms separately; those two were not read.",
+          src: ["esearch1117", "cnf1116"], accession: "20261116-5282", reader: "filing-er27-517-nyiso-large-loads", verified_at: "2026-11-17",
         },
         {
           docket: "EL26-67-000", step: "report", status: "filed-verified", date: "2026-07-20",
@@ -2582,11 +2640,6 @@ window.FERC_DATA = (function () {
           docket: "EL26-72-000", step: "abeyance", status: "filed-verified", date: "2026-08-03",
           gist: "Joint motion of ISO New England and the Participating Transmission Owners Administrative Committee to hold the proceeding in abeyance, following through on the intent signaled Jun 29. Granted Aug 14 (letter order 20260814-3056, 196 FERC ¶ 61,132); responses reset to Nov 16, 2026.",
           src: ["isonews0629", "elibrary0803"], accession: "20260803-5083", reader: "motion-el26-72-isone-abeyance", verified_at: "2026-08-03",
-        },
-        {
-          docket: "EL26-71-000", step: "showcause", status: "filed-verified", date: "2026-08-12",
-          gist: "Morongo Transmission LLC, a CAISO participating transmission owner owned by the Morongo Band of Mission Indians, answers that no amendment to its tariff is required because it is a non-load-serving transmission owner with no end-use customers, while stating it will keep participating in the proceeding. Filed two days before the abeyance and the only substantive answer to any of the six show cause orders observed to date.",
-          src: ["elibrary0823"], accession: "20260812-5158", reader: "answer-el26-71-morongo", verified_at: "2026-08-23",
         },
       ],
     },

@@ -1,0 +1,23 @@
+{
+ "slug": "filing-er27-527-miso-grits",
+ "summary": "MISO files tariff revisions under section 205 on November 16, 2026, in a new docket, ER27-527-000, creating the Grid Responsive Integration Transmission Service (GRITS). It is a permanent mix of firm and non-firm contract demand service for large loads willing to limit their withdrawals. MISO says it cannot run before January 1, 2029.",
+ "ask": "Accept the revisions effective March 16, 2027, 120 days after filing, with implementation in early 2029.",
+ "points": [
+  {"point": "GRITS is a permanent firm and non-firm contract demand service for large loads that can cut their withdrawals.", "quote": "GRITS provides a permanent firm and non-firm contract demand-based, Transmission Service option for Large Loads willing and able to limit their withdrawals under specified price and reliability conditions.", "pg": 1},
+  {"point": "MISO says it answers FERC's concern that no permanent contract demand service exists in MISO.", "quote": "the need for a permanent contract demand transmission service in the MISO region", "pg": 2},
+  {"point": "The earliest start is January 1, 2029, because of software changes.", "quote": "the earliest MISO will be able to implement GRITS is January 1, 2029", "pg": 2},
+  {"point": "Example: a 500 MW load could take 200 MW firm and 300 MW non-firm.", "quote": "a Large Load Transmission Customer representing a Large Load of 500 MW may desire to only take 200 MW of firm transmission service", "pg": 4},
+  {"point": "Customers need not move toward firm service.", "quote": "does not require the Large Load Transmission Customer to progress toward firm service for any or all of its GRITS Load Limit", "pg": 3},
+  {"point": "GRITS is not limited to loads served by a co-located generator.", "quote": "is not limited to Large Load being served by a co-located generator", "pg": 4},
+  {"point": "Rates are still being developed with the transmission owners.", "quote": "to continue the development of rates applicable to GRITS in concert with the MISO Transmission Owners", "pg": 2}
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": ["e-8-show-cause", "e-8-services-for-flexible-co-located", "e-8-alternative-transmission"],
+  "text": "Filed under section 205 to answer the E-8 show cause order's call for a permanent contract demand service for flexible loads in MISO."
+ },
+ "themes": ["flex", "proximate"],
+ "figures": [
+  {"label": "Earliest start of GRITS", "value": 2029, "unit": "year", "quote": "January 1, 2029", "pg": 2}
+ ]
+}

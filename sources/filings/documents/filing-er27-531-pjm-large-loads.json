@@ -1,0 +1,98 @@
+{
+ "slug": "filing-er27-531-pjm-large-loads",
+ "summary": "PJM files tariff revisions under section 205 on November 16, 2026, in a new docket, ER27-531-000. It proposes a 12-month Fast Energization Process that studies generators and large loads together, three new transmission services for large and co-located loads, a 50 MW limit on netting behind-the-meter generation, and a refiled version of its August 17 co-location compliance changes.",
+ "ask": "Accept the revisions, mostly effective March 16, 2027 with Fast Energization on an indefinite date; allow 60 days for comments, rule within 120 days, and close the section 206 case.",
+ "points": [
+  {
+   "point": "PJM says this filing and its same-day companions answer the show cause order in full, and asks FERC to close the section 206 proceeding.",
+   "quote": "PJM has responded fully to the Large Load Show Cause Order and requests that the FPA section 206 aspect of the order be closed",
+   "pg": 6
+  },
+  {
+   "point": "Generator interconnection requests and large-load service requests would be studied together in one 12-month process.",
+   "quote": "which will study together New Service Requests, including Generation Interconnection Requests, and requests from Eligible Customers seeking transmission service on behalf of Eligible Load",
+   "pg": 6
+  },
+  {
+   "point": "PJM says the new process should take half the time of today's cycle process.",
+   "quote": "The process will take half the time of the Cycle process.",
+   "pg": 66
+  },
+  {
+   "point": "The first Fast Energization submission window would not open until late November 2027.",
+   "quote": "the Submission Window for the first Cycle under the Fast Energization Process would open in late November 2027",
+   "pg": 9
+  },
+  {
+   "point": "PJM says full acceptance within ten months is likely needed to use the process for Cycle 02.",
+   "quote": "The Commission’s full acceptance of this filing within 10 months of the date it is filed would likely be necessary to facilitate implementation in time for Cycle 02.",
+   "pg": 9
+  },
+  {
+   "point": "New services, NITS changes and Eligible Load changes would take effect March 16, 2027; the Fast Energization provisions on an indefinite date.",
+   "quote": "PJM therefore seeks an effective date of March 16, 2027, for certain Tariff revisions in Part VIII relating to Eligible Loads and for the revisions in Part III and the new Part XI",
+   "pg": 9
+  },
+  {
+   "point": "PJM withdrew its August 17 co-location compliance filing the same day and refiles revised versions here.",
+   "quote": "Earlier today, PJM filed a motion to withdraw the August 17 Filing in Docket No. ER26-1479-002 so that it could file replacement revisions in this filing.",
+   "pg": 7
+  },
+  {
+   "point": "Customers with retail behind-the-meter generation could net no more than 50 MW of it from their load, as the co-location order directed.",
+   "quote": "PJM is proposing revisions to Part III, section 34.2 and Schedule 8 of the RAA to implement the 50 MW netting limit.",
+   "pg": 28
+  },
+  {
+   "point": "Interim NITS would let large and co-located loads use spare capacity on an interruptible basis.",
+   "quote": "Interim NITS is a transmission service that allows Eligible Customers serving Eligible Load or Large Load to utilize head room on the system as-available on an interruptible basis",
+   "pg": 38
+  },
+  {
+   "point": "PJM's transmission owners file cost allocation, the cost recovery framework and rates for the new services separately.",
+   "quote": "The PJM Transmission Owners (“Transmission Owners”) are separately filing revisions to Tariff, Parts VIII, IX, and XI",
+   "pg": 5
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-7-show-cause",
+   "e-7-application-study-process",
+   "e-7-service-for-flexible-loads",
+   "e-7-alternative-transmission",
+   "e-2-interim-nits",
+   "e-2-retail-btmg-netting-rewritten",
+   "e-2-one-of-three-new-co-location"
+  ],
+  "text": "Filed under section 205 to answer the E-7 show cause order for PJM. It also refiles PJM's E-2 co-location compliance changes, replacing the August 17 filing PJM withdrew the same day."
+ },
+ "themes": [
+  "study",
+  "flex",
+  "proximate"
+ ],
+ "figures": [
+  {
+   "label": "Fast Energization study length",
+   "value": 12,
+   "unit": "months",
+   "quote": "single, 12-month process",
+   "pg": 6
+  },
+  {
+   "label": "Cap on netting retail behind-the-meter generation",
+   "value": 50,
+   "unit": "MW",
+   "quote": "the 50 MW netting limit",
+   "pg": 28
+  },
+  {
+   "label": "Requested comment period",
+   "value": 60,
+   "unit": "days",
+   "quote": "a 60-day comment period",
+   "pg": 8
+  }
+ ]
+}
