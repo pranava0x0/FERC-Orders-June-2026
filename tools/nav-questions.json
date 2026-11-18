@@ -1,0 +1,248 @@
+{
+ "note": "The questions this site exists to answer, and the shortest current route from the home page to each answer. tools/nav-budget.mjs walks every route at phone, tablet and desktop size and counts taps, typed entries and screens scrolled. navigation.md explains the hierarchy; questions the site cannot answer yet are listed there as gaps. Each step is [label, selector] or [label, selector, text to type]. The leaf is [selector, pattern its text must match].",
+ "questions": [
+  {
+   "id": "next-deadline",
+   "q": "What happens next, and when?",
+   "steps": [],
+   "leaf": [
+    "#panel-overview .now-next li:first-child .nn-t",
+    "\\S"
+   ]
+  },
+  {
+   "id": "operator-status",
+   "q": "Where does each grid operator stand on its order?",
+   "steps": [],
+   "leaf": [
+    "#panel-overview table.ot tbody tr:last-child td:nth-child(3)",
+    "\\S"
+   ]
+  },
+  {
+   "id": "pjm-proposal",
+   "q": "What did PJM propose on Nov 16?",
+   "steps": [
+    [
+     "PJM's filing",
+     "#panel-overview .filing-brief a[href*=\"er27-531\"]"
+    ]
+   ],
+   "leaf": [
+    "#fd-filing-er27-531-pjm-large-loads[open] .fd-body p, #fd-filing-er27-531-pjm-large-loads[open] > :not(summary)",
+    "Fast Energization"
+   ]
+  },
+  {
+   "id": "pjm-comment-deadline",
+   "q": "When are comments due on PJM's Nov 16 filing?",
+   "steps": [
+    [
+     "PJM's filing",
+     "#panel-overview .filing-brief a[href*=\"er27-531\"]"
+    ]
+   ],
+   "leaf": [
+    "#fg-pjm-large-load .fg-status",
+    "comment"
+   ]
+  },
+  {
+   "id": "pjm-cost-answer",
+   "q": "How does PJM answer the order on who pays for upgrades?",
+   "steps": [
+    [
+     "Who pays reform",
+     "#xw-cost > summary"
+    ]
+   ],
+   "leaf": [
+    "#xw-cost[open] .xw-row:first-child .xw-a .xw-pt",
+    "\\S"
+   ]
+  },
+  {
+   "id": "cost-across-markets",
+   "q": "How does each market handle who pays for upgrades?",
+   "steps": [
+    [
+     "Who pays reform",
+     "#xw-cost > summary"
+    ]
+   ],
+   "leaf": [
+    "#xw-cost[open] .xw-row:last-child .xw-rto",
+    "\\S"
+   ]
+  },
+  {
+   "id": "pjm-june-order",
+   "q": "What did the June order require of PJM?",
+   "steps": [
+    [
+     "PJM in the status table",
+     "#panel-overview table.ot tbody tr:first-child th a"
+    ]
+   ],
+   "leaf": [
+    "#panel-dockets details[open] > summary.docket-sum",
+    "PJM"
+   ]
+  },
+  {
+   "id": "find-document",
+   "q": "Find Google's protest of MISO's LARS filing and the page it cites",
+   "steps": [
+    [
+     "Filings tab",
+     "#tab-filings"
+    ],
+    [
+     "Find a document",
+     "#fg-q",
+     "Google"
+    ],
+    [
+     "Google's protest",
+     "#fg-miso-lars details.fdoc:has(.fd-who:text-is(\"Google LLC\")) > summary, #fg-miso-lars details.fdoc:has(.fd-who:has-text(\"Google\")) > summary"
+    ]
+   ],
+   "leaf": [
+    "#fg-miso-lars details.fdoc[open] a[href*=\"text.html#p-\"]",
+    "p\\."
+   ]
+  },
+  {
+   "id": "search-filer",
+   "q": "Has FERC acted on ATC's large-load filing?",
+   "steps": [
+    [
+     "Filings tab",
+     "#tab-filings"
+    ],
+    [
+     "Find a document",
+     "#fg-search, #panel-filings input[type=search]",
+     "ATC"
+    ]
+   ],
+   "leaf": [
+    "#fg-atc-large-load .fg-status",
+    "deficiency"
+   ]
+  },
+  {
+   "id": "original-page",
+   "q": "Show me the original page behind a quote",
+   "steps": [
+    [
+     "Who pays reform",
+     "#xw-cost > summary"
+    ],
+    [
+     "Cited page",
+     "#xw-cost[open] .xw-row:first-child .xw-a blockquote a"
+    ]
+   ],
+   "leaf": [
+    "section:target pre",
+    "\\S"
+   ]
+  },
+  {
+   "id": "case-history",
+   "q": "What has happened in the show cause cases so far?",
+   "steps": [
+    [
+     "Timeline tab",
+     "#tab-timeline"
+    ],
+    [
+     "Show cause track",
+     "#panel-timeline .trk-chip[data-track=\"sc6\"]"
+    ]
+   ],
+   "leaf": [
+    "#panel-timeline .tl-item[data-track=\"sc6\"]:visible .tl-title:visible",
+    "\\S"
+   ]
+  },
+  {
+   "id": "commissioner-view",
+   "q": "What did Commissioner Rosner say?",
+   "steps": [
+    [
+     "Commissioners tab",
+     "#tab-commissioners"
+    ],
+    [
+     "Rosner",
+     ".who-chip[data-who=\"rosner\"]"
+    ]
+   ],
+   "leaf": [
+    ".appear:visible .sq[data-who=\"rosner\"]:visible .sq-cite a[href*=\"&t=\"]",
+    "\\d+:\\d{2}"
+   ]
+  },
+  {
+   "id": "anopr-region",
+   "q": "What did ANOPR commenters say about PJM?",
+   "steps": [
+    [
+     "ANOPR comments tab",
+     "#tab-comments"
+    ],
+    [
+     "PJM region",
+     "#cmsec-overview .cm-region[href*=\"pjm\" i]"
+    ]
+   ],
+   "leaf": [
+    "#cm-issue-reader .cm-issue-readtitle",
+    "PJM"
+   ]
+  },
+  {
+   "id": "anopr-commenter",
+   "q": "What did Constellation say in the ANOPR comments?",
+   "steps": [
+    [
+     "ANOPR comments tab",
+     "#tab-comments"
+    ],
+    [
+     "All comments",
+     "#cmsub-summaries"
+    ],
+    [
+     "Search",
+     "#cm-search",
+     "Constellation"
+    ],
+    [
+     "Read analysis",
+     ".cm-row:visible:has(.cm-row-org:text(\"Constellation\")) details.cm-analysis > summary"
+    ]
+   ],
+   "leaf": [
+    "details.cm-analysis[open] .cm-bq",
+    "\\S{3}"
+   ]
+  },
+  {
+   "id": "state-positions",
+   "q": "How did PJM's state commissions vote?",
+   "steps": [
+    [
+     "Discourse tab",
+     "#tab-news"
+    ]
+   ],
+   "leaf": [
+    "#panel-news .state-lead p",
+    "abstained"
+   ]
+  }
+ ]
+}

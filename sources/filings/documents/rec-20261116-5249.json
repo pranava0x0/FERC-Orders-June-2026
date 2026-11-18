@@ -1,0 +1,79 @@
+{
+ "slug": "rec-20261116-5249",
+ "summary": "DCR Transmission, L.L.C. files tariff revisions under section 205 on November 16, 2026, in ER27-512-000, answering the CAISO show cause order. It owns the Ten West Link, a 125-mile 500 kV line, and adds a new Appendix IV with large load interconnection procedures, a pro forma agreement modeled on CAISO's generator agreement, and an interim service. It adds no new transmission service.",
+ "ask": "Accept the revisions effective February 15, 2027.",
+ "points": [
+  {
+   "point": "DCR is a single-asset owner whose line crosses the California-Arizona border.",
+   "quote": "DCRT owns and operates the 125-mile, 500 kilovolt Ten West Link Transmission Line",
+   "pg": 2
+  },
+  {
+   "point": "It notes the other parties held other views but tailors its filing to its position as a single-asset owner.",
+   "quote": "tailored its proposed tariff revisions to its unique situation as a single-asset PTO whose transmission line traverses the California-Arizona border",
+   "pg": 6
+  },
+  {
+   "point": "It proposes no new transmission service, deferring to CAISO.",
+   "quote": "DCRT has not proposed additional or revised transmission services in this filing",
+   "pg": 6,
+   "reform": "flex"
+  },
+  {
+   "point": "Its study steps average about 85 days, within the 60 to 90 day range FERC set.",
+   "quote": "these steps will average roughly 85 calendar days from start to finish, meeting the OSC Order’s target of 60–90 days",
+   "pg": 11,
+   "reform": "study"
+  },
+  {
+   "point": "Its pro forma large load interconnection agreement is modeled on CAISO's generator agreement.",
+   "quote": "generally modeled on the CAISO’s pro forma Large Generator Interconnection Agreement (“LGIA”)",
+   "pg": 11,
+   "reform": "study"
+  },
+  {
+   "point": "Co-located generation that exports must still go through CAISO's generator process.",
+   "quote": "Any generating facility that will export energy to the CAISO Controlled Grid, however, must interconnect through the CAISO’s GIDAP and execute a Commission-accepted LGIA",
+   "pg": 16,
+   "reform": "colo"
+  },
+  {
+   "point": "The interim service lasts until the identified upgrades reach commercial operation.",
+   "quote": "a Large Load Interconnection Customer may elect to take FILI Service until the Network Upgrades identified in Appendix A have achieved Commercial Operation",
+   "pg": 19,
+   "reform": "flex"
+  },
+  {
+   "point": "Large load facilities are reimbursed for upgrades over $10 million once they reach commercial operation.",
+   "quote": "Large Load Facilities will be reimbursed for Reimbursable Network Upgrades costing more than $10 million if the Large Load Facility reaches commercial operation",
+   "pg": 20,
+   "reform": "cost"
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-10-show-cause",
+   "e-10-application-study-process",
+   "e-10-cost-recovery-agreement",
+   "e-10-service-for-flexible-loads",
+   "e-10-btmg-netting"
+  ],
+  "text": "Filed under section 205 to answer the E-10 show cause order. It adds a study process, an interconnection agreement and an interim service, handles cost responsibility through reimbursement terms, and leaves new transmission services to CAISO."
+ },
+ "themes": [
+  "study",
+  "cost",
+  "flex",
+  "colo"
+ ],
+ "figures": [
+  {
+   "label": "Reimbursement threshold for network upgrades",
+   "value": 10,
+   "unit": "million USD",
+   "quote": "costing more than $10 million",
+   "pg": 20
+  }
+ ]
+}

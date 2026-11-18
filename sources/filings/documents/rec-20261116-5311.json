@@ -1,0 +1,69 @@
+{
+ "slug": "rec-20261116-5311",
+ "summary": "San Diego Gas & Electric files tariff revisions under section 205 on November 16, 2026, in ER27-521-000, answering the CAISO show cause order. It sets terms for utilities that buy transmission service for large loads, with security equal to the present value of the upgrades' lifecycle revenue requirement and a pro forma interconnection agreement.",
+ "ask": "Accept the revisions effective February 16, 2027, as just and reasonable, and terminate the show cause proceeding as to SDG&E.",
+ "points": [
+  {
+   "point": "SDG&E says its approach is substantively aligned with SCE's and DesertLink's, which it also calls LS Power.",
+   "quote": "SDG&E believes its approach is substantively aligned with that of Southern California Edison Company (“SCE”) and DesertLink, LLC (“LS Power”)",
+   "pg": 2
+  },
+  {
+   "point": "Its definition differs from CAISO's wording. It covers a new customer, not an end user.",
+   "quote": "a new customer, located at a single site behind one or more points of interconnection to the CAISO Controlled Grid, and that has a peak load of 50 MW or greater",
+   "pg": 5,
+   "reform": "study"
+  },
+  {
+   "point": "SDG&E keeps its serial study process, ranked by the date it receives each application.",
+   "quote": "SDG&E proposes to maintain its current serial study process that accepts and studies each application at any time on a rolling basis, with priority based on the date SDG&E, as the PTO, receives the application",
+   "pg": 6,
+   "reform": "study"
+  },
+  {
+   "point": "It proposes full protection for network upgrade costs.",
+   "quote": "SDG&E’s proposed 100 percent cost-shift protection for network upgrades",
+   "pg": 8,
+   "reform": "cost"
+  },
+  {
+   "point": "Security equals the present value of the upgrades' lifecycle revenue requirement.",
+   "quote": "security equal to the present value of the forecast lifecycle revenue requirement associated with the network upgrades",
+   "pg": 13,
+   "reform": "cost"
+  },
+  {
+   "point": "Security is held until ten years after the upgrades enter service.",
+   "quote": "maintain security for a period of time beginning with the ECLL’s authorization for SDG&E to begin construction of the network upgrades and ending ten years following the COD of the required network upgrades",
+   "pg": 13,
+   "reform": "cost"
+  },
+  {
+   "point": "If the load fails or stops, SDG&E draws all remaining security.",
+   "quote": "SDG&E will draw all remaining security (effectively, an “exit fee”)",
+   "pg": 14,
+   "reform": "cost"
+  },
+  {
+   "point": "Limits on the interim service are set in the study, not from real-time conditions.",
+   "quote": "SDG&E will establish limits on ECLL grid withdrawals based on studies conducted during the interconnection process, not on near-real-time or real-time operating conditions",
+   "pg": 18,
+   "reform": "flex"
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-10-show-cause",
+   "e-10-application-study-process",
+   "e-10-cost-recovery-agreement",
+   "e-10-service-for-flexible-loads"
+  ],
+  "text": "Filed under section 205 to answer the E-10 show cause order for SDG&E's own transmission owner tariff. SDG&E covers the application, cost shifting and interim service items and leaves permanent flexible service to CAISO."
+ },
+ "themes": [
+  "study",
+  "cost",
+  "flex"
+ ]
+}

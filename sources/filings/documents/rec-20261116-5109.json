@@ -1,0 +1,60 @@
+{
+ "slug": "rec-20261116-5109",
+ "summary": "Citizens Sycamore-Penasquitos Transmission LLC files tariff revisions under section 205 on November 16, 2026, in ER27-500-000, answering the CAISO show cause order. It leases part of an SDG&E line, so its revisions say SDG&E's tariff governs study, interconnection and expansion requests. The operative text matches the Citizens Sunrise filing; only the project facts differ.",
+ "ask": "Accept the revisions effective January 15, 2027, and find that Citizens Sycamore has satisfied the concerns in the show cause order.",
+ "points": [
+  {
+   "point": "Citizens Sycamore owns none of the line. SDG&E keeps ownership, operation and maintenance.",
+   "quote": "Citizens Sycamore does not own any of the actual facilities. SDG&E retains ownership and operation and maintenance responsibilities.",
+   "pg": 2
+  },
+  {
+   "point": "Its interest is a lease of under 13 percent of one segment of the project.",
+   "quote": "Citizens Sycamore has a limited, less than 13% leasehold interest in a single segment of the overall Sycamore Project transmission line",
+   "pg": 3
+  },
+  {
+   "point": "It is a non-load-serving transmission owner with no end-use customers.",
+   "quote": "Non-Load- Serving Participating TO and has no End-Use Customers",
+   "pg": 2
+  },
+  {
+   "point": "Study, planning, interconnection and expansion requests would be governed by SDG&E's tariff.",
+   "quote": "any study, planning, interconnection or expansion requests related to Citizens Sycamore’s interest in the Sycamore Project will be governed by the relevant provisions of the SDG&E TO Tariff",
+   "pg": 3,
+   "reform": "study"
+  },
+  {
+   "point": "New language in Sections 8, 9 and 10 repeats the point, one section at a time.",
+   "quote": "Added new language to Section 10, Interconnection Process, to confirm that all conduct that falls under Section 10 will be governed by SDG&E’s TO Tariff",
+   "pg": 4,
+   "reform": "study"
+  },
+  {
+   "point": "Definitions are revised to say SDG&E's tariff provisions govern.",
+   "quote": "each to clarify that SDG&E’s TO Tariff provisions will govern",
+   "pg": 4
+  },
+  {
+   "point": "It commits to a compliance filing if CAISO or SDG&E changes its tariff in a way that affects these revisions.",
+   "quote": "Citizens Sycamore commits to making a compliance filing to ensure its TO Tariff remains consistent",
+   "pg": 5
+  },
+  {
+   "point": "It asks for an effective date 60 days after filing.",
+   "quote": "accept these TO Tariff revisions to become effective January 15, 2027, which is sixty (60) days from the date of this filing",
+   "pg": 1
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-10-show-cause",
+   "e-10-application-study-process"
+  ],
+  "text": "Filed under section 205 to answer the E-10 show cause order for CAISO and its transmission owners. It sends large load study and interconnection matters to SDG&E's tariff rather than setting up a process of its own."
+ },
+ "themes": [
+  "study"
+ ]
+}

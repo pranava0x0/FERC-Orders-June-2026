@@ -1,0 +1,76 @@
+{
+ "slug": "rec-20261116-5286",
+ "summary": "LS Power Grid New York Corporation I files revisions to Rate Schedule 10 of the NYISO tariff under section 205 on November 16, 2026, in ER27-518-000, answering the New York show cause order. It adds a pro forma cost recovery agreement with a 20-year minimum revenue contribution, security and NYISO billing. No upgrade is yet listed, so current rates do not change.",
+ "ask": "Accept the revisions effective January 16, 2027, 61 days after filing, and grant the requested waivers.",
+ "points": [
+  {
+   "point": "LS Power Grid proposes a company-specific way to recover the cost of upgrades driven by large loads.",
+   "quote": "a transparent, company-specific mechanism for LS Power Grid to recover the costs of transmission upgrades that are identified as necessary",
+   "pg": 2,
+   "reform": "cost"
+  },
+  {
+   "point": "No upgrade is listed yet, so the filing does not change current rates.",
+   "quote": "No Large Load-Driven Upgrade is listed in proposed Table 1 as of the requested effective date",
+   "pg": 2,
+   "reform": "cost"
+  },
+  {
+   "point": "An upgrade enters the rate only after a separate section 205 filing adds it to the table.",
+   "quote": "a Large Load-Driven Upgrade becomes an Eligible Project only after Commission acceptance of a section 205 filing adding it to Table 1",
+   "pg": 4,
+   "reform": "cost"
+  },
+  {
+   "point": "The agreement sets a fixed annual minimum revenue contribution for each covered upgrade.",
+   "quote": "the CRA establishes a fixed Annual Minimum Transmission Revenue Contribution (“Annual MTRC”)",
+   "pg": 4,
+   "reform": "cost"
+  },
+  {
+   "point": "The contribution runs 20 years from the upgrade's in-service date.",
+   "quote": "MTRC Term begins on the actual Upgrade In-Service Date and ends on the day immediately preceding its twentieth anniversary",
+   "pg": 5,
+   "reform": "cost"
+  },
+  {
+   "point": "Operational security equals all remaining revenue responsibility.",
+   "quote": "The CRA requires Operational Security equal to one hundred percent (100%) of the nominal Remaining Cumulative Revenue Responsibility",
+   "pg": 6,
+   "reform": "cost"
+  },
+  {
+   "point": "Retail security can offset it dollar for dollar if the customer certifies it is available and enforceable.",
+   "quote": "the direct Operational Security requirement may be reduced dollar-for-dollar by qualifying retail security support only where the Eligible Customer delivers a current Retail Security Certification",
+   "pg": 6,
+   "reform": "cost"
+  },
+  {
+   "point": "It calls the termination fee an accelerated contractual charge, not a penalty.",
+   "quote": "The Termination Fee is an accelerated contractual termination charge, not a penalty",
+   "pg": 5,
+   "reform": "cost"
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-12-show-cause",
+   "e-12-cost-transparency"
+  ],
+  "text": "Filed under section 205 to answer the E-12 show cause order for NYISO. It covers cost recovery for one non-incumbent owner with no retail customers, separate from NYISO's and the other owners' filings."
+ },
+ "themes": [
+  "cost",
+  "credit"
+ ],
+ "figures": [
+  {
+   "label": "Operational security as a share of remaining revenue responsibility",
+   "value": 100,
+   "unit": "percent",
+   "quote": "one hundred percent (100%) of the nominal Remaining Cumulative Revenue Responsibility",
+   "pg": 6
+  }
+ ]
+}

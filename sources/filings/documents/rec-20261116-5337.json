@@ -1,0 +1,68 @@
+{
+ "slug": "rec-20261116-5337",
+ "summary": "Horizon West Transmission, LLC files tariff revisions under section 205 on November 16, 2026, in ER27-530-000, answering the CAISO show cause order. It adds large load procedures, a pro forma cost recovery agreement and an interim service, and asks to be dropped from the proceeding. The letter closely mirrors the GridLiance West and Trans Bay Cable filings, apart from company facts and minor wording.",
+ "ask": "Accept the revisions effective February 16, 2027, allow 30 days for comments, and terminate the show cause proceeding as to Horizon West.",
+ "points": [
+  {
+   "point": "Horizon West owns a reactive power project and has others under development.",
+   "quote": "Horizon West currently owns and operates the 230 kV +300/100 MVAr Suncrest Reactive Power Project",
+   "pg": 2
+  },
+  {
+   "point": "It says parts of the show cause order do not apply to a non-load-serving owner.",
+   "quote": "Horizon West also explains how certain aspects of the Show Cause Order are not applicable to Horizon West due to its role as a Non-Load-Serving Entity PTO",
+   "pg": 2
+  },
+  {
+   "point": "It copies CAISO's 50 MW definition of large load.",
+   "quote": "This definition is identical to the definition CAISO proposes to add to Appendix A of the CAISO Tariff, and adopts the 50 MW threshold the Commission identified as reasonable",
+   "pg": 5,
+   "reform": "study"
+  },
+  {
+   "point": "Because it serves no retail load, it offers unbundled retail transmission service so large loads can be studied under its tariff.",
+   "quote": "a voluntary offer of unbundled retail transmission service, where consistent with state law, so that Large Loads can request Interconnection and be studied under the Horizon West Tariff",
+   "pg": 6,
+   "reform": "study"
+  },
+  {
+   "point": "Study deposits start at $35,000 plus $1,000 per MW, matching CAISO's generator process.",
+   "quote": "must provide a refundable study deposit of: (a) $35,000 plus $1,000 per MW",
+   "pg": 7,
+   "reform": "study"
+  },
+  {
+   "point": "The interim service depends on the load's ability to reduce at a point of interconnection, under a three-party agreement.",
+   "quote": "FILI Service is available if the Large Load can reduce its load at a specified Point of Interconnection according to protocols in a FILI Service Agreement among the Large Load, Horizon West, and CAISO",
+   "pg": 13,
+   "reform": "flex"
+  },
+  {
+   "point": "The customer pays all actual network upgrade costs through a revenue commitment.",
+   "quote": "The Cost Recovery Agreement requires the Eligible Customer to pay 100% of the actual costs of the Large Load Network Upgrades through the Total Required Revenue Commitment",
+   "pg": 14,
+   "reform": "cost"
+  },
+  {
+   "point": "Horizon West reports no pending load requests that the new rules would affect.",
+   "quote": "Horizon West has not received any Load interconnection requests on its facilities that would be affected by the proposed revisions",
+   "pg": 20
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-10-show-cause",
+   "e-10-application-study-process",
+   "e-10-cost-recovery-agreement",
+   "e-10-service-for-flexible-loads",
+   "e-10-btmg-netting"
+  ],
+  "text": "Filed under section 205 to answer the E-10 show cause order. It follows CAISO's draft tariff language and sets an application process, a cost recovery agreement and an interim service for a non-load-serving owner."
+ },
+ "themes": [
+  "study",
+  "cost",
+  "flex"
+ ]
+}

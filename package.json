@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "description": "Dev-only: Playwright drives tools/nav-budget.mjs and the UAT scripts. Nothing here ships to the site.",
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
+}

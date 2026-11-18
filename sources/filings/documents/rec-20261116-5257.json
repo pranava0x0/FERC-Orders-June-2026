@@ -1,0 +1,87 @@
+{
+ "slug": "rec-20261116-5257",
+ "summary": "Pacific Gas and Electric files tariff amendments under section 205 on November 16, 2026, in ER27-513-000, answering the CAISO show cause order. A new Section 10A sets an application and study process for utilities that serve large loads, with four pro forma agreements covering facilities, cost assurance and optional curtailable interim service.",
+ "ask": "Accept the amendments effective February 16, 2027, find them just and reasonable, and terminate the show cause proceeding as to PG&E.",
+ "points": [
+  {
+   "point": "PG&E builds the response around a new tariff section for the utilities that buy transmission service for large loads.",
+   "quote": "primarily through a new Section 10A of its TO Tariff that governs the interconnection of TCLLs to the transmission system on behalf of their Large Load End Users",
+   "pg": 3,
+   "reform": "study"
+  },
+  {
+   "point": "PG&E adopts CAISO's definition of large load.",
+   "quote": "PG&E proposes to amend its TO Tariff to adopt the CAISO’s proposed definition of Large Load",
+   "pg": 10,
+   "reform": "study"
+  },
+  {
+   "point": "Each application needs a cash study deposit plus per-megawatt security.",
+   "quote": "The study deposit requirement includes a $500,000 cash deposit and financial security in the amount of $1,000 per MW of requested maximum load",
+   "pg": 13,
+   "reform": "study"
+  },
+  {
+   "point": "Independent loads are studied one at a time. Dependent loads are studied in an annual cluster.",
+   "quote": "PG&E proposes a Serial Study Process for Electrically Independent Large Loads and a Cluster Study Process for Electrically Dependent Large Loads",
+   "pg": 16,
+   "reform": "study"
+  },
+  {
+   "point": "A cost assurance agreement sets a minimum annual revenue obligation backed by five years of security.",
+   "quote": "the Cost Assurance Agreement establishes a Minimum Annual Revenue Obligation payable by the TCLL/Large Load End User and a Financial Security requirement equal to five (5) times the Minimum Annual Revenue Obligation",
+   "pg": 31,
+   "reform": "cost"
+  },
+  {
+   "point": "Leaving early triggers an exit fee equal to the required security.",
+   "quote": "the Cost Assurance Agreement provides for an Exit Fee equal to the value of the required Financial Security on the date of termination",
+   "pg": 34,
+   "reform": "cost"
+  },
+  {
+   "point": "The interim service is curtailable at all times and only available within limits.",
+   "quote": "FILLI Interconnection Service is subject to curtailment at all times, and is available only where the Participating TO determines service may be provided within limitations in certain periods under normal operating conditions",
+   "pg": 39,
+   "reform": "flex"
+  },
+  {
+   "point": "PG&E says it and SCE agreed on how cost responsibility and flexible service should work.",
+   "quote": "PG&E and Southern California Edison Company (“SCE”) reached broad consensus on the cost responsibility and flexible service frameworks adopted in their respective proposals",
+   "pg": 4
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-10-show-cause",
+   "e-10-application-study-process",
+   "e-10-cost-recovery-agreement",
+   "e-10-service-for-flexible-loads",
+   "e-10-btmg-netting"
+  ],
+  "text": "Filed under section 205 to answer the E-10 show cause order for PG&E's own transmission owner tariff. PG&E says it covers the application, cost recovery and flexible service items, and leaves electrically proximate generation to CAISO."
+ },
+ "themes": [
+  "study",
+  "cost",
+  "flex",
+  "colo"
+ ],
+ "figures": [
+  {
+   "label": "Study deposit, cash",
+   "value": 500000,
+   "unit": "USD",
+   "quote": "a $500,000 cash deposit",
+   "pg": 13
+  },
+  {
+   "label": "Assumed capacity factor for the revenue obligation",
+   "value": 80,
+   "unit": "percent",
+   "quote": "assuming an 80% annual capacity factor",
+   "pg": 32
+  }
+ ]
+}

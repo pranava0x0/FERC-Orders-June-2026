@@ -1,0 +1,82 @@
+{
+ "slug": "rec-20261116-5335",
+ "summary": "Six New York transmission owners file under section 205 on November 16, 2026, in ER27-529-000, with NYISO submitting it as tariff administrator. They add four pro forma agreements: cost recovery, security, facilities study and interconnection. The cost recovery agreement recovers 100 percent of allocated upgrade costs over 15 years from the large load customer.",
+ "ask": "Accept the tariff amendments and pro forma agreements as just and reasonable, mostly effective February 1, 2027, with waiver of the 120-day filing limit.",
+ "points": [
+  {
+   "point": "NYISO's filing sets the study process and services. The owners' filing covers cost recovery and operations.",
+   "quote": "While the NYISO’s filing establishes the study process, readiness requirements, and new Firm and Non-Firm Withdrawal Services for Large Loads, the NYTOs’ filing addresses the complementary elements necessary to recover the costs of facilities built to serve Large Loads",
+   "pg": 2,
+   "reform": "cost"
+  },
+  {
+   "point": "Each owner recovers all allocated upgrade and facility costs from the large load customer.",
+   "quote": "recover 100% of the costs of Network Upgrades and Attachment Facilities allocated to a Large Load Customer",
+   "pg": 3,
+   "reform": "cost"
+  },
+  {
+   "point": "Recovery runs over 15 years, without accelerated depreciation.",
+   "quote": "that compresses cost recovery into a 15-year term without accelerated depreciation",
+   "pg": 3,
+   "reform": "cost"
+  },
+  {
+   "point": "The customer posts security that the owner can draw on if the project is abandoned or the customer defaults.",
+   "quote": "requires the Large Load Customer to post security for those allocated costs, which the Transmission Owner may draw upon in the event of abandonment of a Large Load project, default, or other specified events",
+   "pg": 3,
+   "reform": "cost"
+  },
+  {
+   "point": "Non-firm withdrawal service would be limited to thermal and resource adequacy constraints.",
+   "quote": "limit Non-Firm Withdrawal Service to thermal and resource adequacy constraints",
+   "pg": 3,
+   "reform": "flex"
+  },
+  {
+   "point": "The owners propose no new delivery rates. Section 5 keeps pointing to state-approved rates.",
+   "quote": "Section 5 will continue to reference the voltage-differentiated delivery rates and service classifications approved by the New York Public Service Commission",
+   "pg": 3
+  },
+  {
+   "point": "The owners will contract with the large load customer directly, not with energy service companies or other intermediaries.",
+   "quote": "They do not volunteer to enter into Facilities Study, Security, Cost Recovery, and Interconnection Agreements with ESCOs or other intermediaries of Large Load Customers",
+   "pg": 13
+  },
+  {
+   "point": "Most revisions would take effect February 1, 2027, matching NYISO's filing.",
+   "quote": "request an effective date for the revisions to Attachment LL and Attachment B of Section 8 of the NYISO OATT of February 1, 2027",
+   "pg": 34
+  }
+ ],
+ "throughLine": {
+  "relation": "responds",
+  "anchors": [
+   "e-12-show-cause",
+   "e-12-cost-transparency"
+  ],
+  "text": "Filed under section 205 to answer the E-12 show cause order for NYISO, as the owners' companion to NYISO's own filing in ER27-517. It covers cost recovery, security and operating terms, which NYISO's filing leaves to the owners."
+ },
+ "themes": [
+  "cost",
+  "credit",
+  "flex",
+  "retail"
+ ],
+ "figures": [
+  {
+   "label": "Share of allocated upgrade costs recovered from the large load customer",
+   "value": 100,
+   "unit": "percent",
+   "quote": "recover 100% of the costs of Network Upgrades and Attachment Facilities",
+   "pg": 3
+  },
+  {
+   "label": "Cost recovery term",
+   "value": 15,
+   "unit": "years",
+   "quote": "compresses cost recovery into a 15-year term",
+   "pg": 3
+  }
+ ]
+}

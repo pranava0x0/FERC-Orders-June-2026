@@ -1,0 +1,27 @@
+{
+ "slug": "rec-20261116-5372",
+ "summary": "Pacific Gas and Electric files a two-page notice in the show cause docket, EL26-71-000, on November 16, 2026. It says its section 205 filing was assigned ER27-513-000. The notice has no proposals of its own; the substance is in the earlier filing.",
+ "ask": null,
+ "points": [
+  {
+   "point": "PG&E reports its section 205 filing and the docket it received.",
+   "quote": "submitted a Section 205 filing responsive to the Order to Show Cause in Docket No. EL26-71-000, which was assigned a new docket number ER27-513-000",
+   "pg": 1
+  },
+  {
+   "point": "The notice gives the earlier filing's eLibrary accession number.",
+   "quote": "which was assigned a new docket number ER27-513-000, with eLibrary accession number 20261116-5257",
+   "pg": 1
+  }
+ ],
+ "throughLine": {
+  "relation": "procedural",
+  "anchors": [
+   "e-10-show-cause"
+  ],
+  "text": "Records that PG&E used the section 205 route the E-10 show cause order allowed, and points the EL26-71 record to the new docket where the proposal sits."
+ },
+ "themes": [
+  "procedure"
+ ]
+}
