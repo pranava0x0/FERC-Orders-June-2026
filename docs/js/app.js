@@ -640,7 +640,6 @@
       '<section class="xw" aria-labelledby="xw-h"><h2 class="now-h" id="xw-h">Filings by reform</h2>' +
       '<p class="xw-lede">Filled marker: the filing addresses the reform.</p>' +
       '<div id="xwalk"><p class="cm-loading" role="status">Loading the comparison…</p></div></section>' +
-      '<section aria-labelledby="tg-h"><h2 class="now-h" id="tg-h">The record so far</h2>' + timelineGraphic() + "</section>" +
       accSection("Status by proceeding", "", renderStandStrip(), false, Object.keys(D.tracks || {}).length) +
       accSection("The 60-day clock and who has filed", "The procedural steps every order set, and what each operator filed against them.", renderProcedural(), false, null, "acc-clock") +
       accSection("Background: from the DOE directive to the June orders", "", paras(m.summary) + glance, false, null);
@@ -749,7 +748,7 @@
     var top = '<div class="cards cols-3">' + D.toplines.map(function (c) {
       return '<div class="card analysis"><h3>' + esc(c.h) + "</h3>" + paras(c.body) + srcChips(c.src) + "</div>";
     }).join("") + "</div>";
-    return head("Timeline", "") +
+    return head("Timeline", "") + timelineGraphic() +
       trackChips() +
       '<span class="sr-only" role="status" aria-live="polite" id="tl-filterstatus"></span>' +
       (ahead.length ? '<h3 class="tl-sec">Ahead</h3><div class="timeline">' + ahead.map(function (x) { return row(x, true); }).join("") + "</div>" : "") +
@@ -1965,13 +1964,6 @@
         return '<button type="button" class="who-chip" data-theme="' + esc(t.key) + '" aria-pressed="false" title="' + esc(t.gloss) + '">' + esc(t.label) + "</button>";
       }).join("") + '</div><p class="fg-live" role="status" aria-live="polite"></p>';
     var find = '<div class="fg-find"><label for="fg-q">Find a document</label><input type="search" id="fg-q" placeholder="Filer, docket or any word" autocomplete="off" /></div>';
-    var all = [];
-    R.groups.forEach(function (g) { g.docs.forEach(function (d) { if (d.summary) all.push({ g: g, d: d }); }); });
-    all.sort(function (a, b) { return a.d.date < b.d.date ? 1 : a.d.date > b.d.date ? -1 : 0; });
-    var newest = all.length ? '<section class="fl" aria-labelledby="fl-h"><h3 class="fg-sec" id="fl-h">Newest documents</h3><ol class="fl-list">' + all.slice(0, FL_MAX).map(function (x) {
-      return '<li><a href="#filings/' + esc(x.g.id) + "/" + esc(x.d.slug) + '"><span class="fl-date mono">' + esc(fmtISO(x.d.date).replace(/, \d{4}$/, "")) + '</span><span class="fl-who">' + esc(x.d.filer) +
-        '</span><span class="fl-what">' + esc(kindRole(x.d.kind, x.d)) + " · " + esc(x.g.short || x.g.title) + "</span></a></li>";
-    }).join("") + "</ol></section>" : "";
     var group = function (g) {
       return '<details class="fgroup" id="fg-' + esc(g.id) + '"><summary class="fg-sum"><span class="fg-h" role="heading" aria-level="3">' + esc(g.title) +
         ' <span class="fg-docket mono">' + esc(g.docket) + '</span></span><span class="fg-n">Latest' +
@@ -1985,14 +1977,13 @@
     var sc = R.groups.filter(function (g) { return g.kind === "show-cause"; }), rel = R.groups.filter(function (g) { return g.kind !== "show-cause"; });
     return head("Filings since the June 18 orders",
       "") +
-      find + chips + newest +
+      // Filings land in batches, so a "newest" list says little; the full list is one link away.
+      '<p class="reader-entry"><a href="reading/">Full document list</a></p>' + find + chips +
       '<h3 class="fg-sec">The six show cause dockets</h3>' + sc.map(group).join("") +
       '<h3 class="fg-sec">Related proceedings</h3>' + rel.map(group).join("") +
       '<p class="fg-none" hidden>No document matches. Clear the filter to see every proceeding.</p>' +
-      figureChart(R) +
-      '<p class="reader-entry"><a href="reading/">Full document list</a></p>';
+      figureChart(R);
   }
-  var FL_MAX = 6;          // "Newest documents" rows
   var FQ_MIN = 2;          // a one-letter query matches nearly every document
   var filingTheme = "", filingQuery = "";
   // The theme chip and the typed query are one filter: a document shows when it passes both. Matching
@@ -2017,7 +2008,7 @@
       if (active && n) { if (!g.open) { g.setAttribute("data-auto", ""); g.open = true; } if (filingTheme) loadPoints(g); }
       else if (!active && g.hasAttribute("data-auto")) { g.removeAttribute("data-auto"); if (!g.querySelector(".fdoc[open]")) g.open = false; }
     });
-    panel.querySelectorAll(".fl, .fg-sec").forEach(function (el) { el.hidden = active; });
+    panel.querySelectorAll(".fg-sec").forEach(function (el) { el.hidden = active; });
     // A search or theme filter looks across every pane, not only the open one.
     // While filtering, every pane shows and the bar steps aside; clearing the filter restores the picked pane.
     var bar = panel.querySelector(".st-bar");
@@ -2076,10 +2067,6 @@
   function wireFilings() {
     var panel = panelFor("filings");
     panel.addEventListener("click", function (ev) {
-      // "Newest documents": route directly, so a second tap on the same row still opens it (the address
-      // has not changed, and an unchanged hash fires no hashchange).
-      var a = ev.target.closest && ev.target.closest(".fl-list a");
-      if (a) { ev.preventDefault(); routeFiling(a.getAttribute("href").slice(9)); if (history.replaceState) history.replaceState(null, "", "#filings/" + filingHash); return; }
       var b = ev.target.closest && ev.target.closest(".th-chips .who-chip");
       if (!b) return;
       var k = b.getAttribute("data-theme");
@@ -2357,9 +2344,9 @@
   // anything before the first pane stays visible above the bar. Comments has its own bar already.
   var SUBTABS = {
     overview: [["operators", "Status by operator", "section[aria-labelledby=ops-h]"], ["next", "Deadlines", ".now-next-card"],
-      ["reforms", "By reform", ".xw"], ["record", "Record so far", "section[aria-labelledby=tg-h]"], ["background", "Background", "details.acc"]],
+      ["reforms", "By reform", ".xw"], ["background", "Background", "details.acc"]],
     dockets: [["june", "June 18 orders", "#reforms-h"], ["reforms", "Five reforms", "details.acc"], ["dockets", "Dockets", ".section-head", 1], ["follow", "File or follow", ".section-head", 2]],
-    filings: [["newest", "Newest", ".fl"], ["showcause", "Show cause dockets", ".fg-sec", 0], ["related", "Related proceedings", ".fg-sec", 1], ["numbers", "Numbers cited", "details.acc"]],
+    filings: [["showcause", "Show cause dockets", ".fg-sec", 0], ["related", "Related proceedings", ".fg-sec", 1], ["numbers", "Numbers cited", "details.acc"]],
     timeline: [["ahead", "Ahead", ".tl-sec", 0], ["sofar", "So far", "#tl-latest"], ["background", "Background", "details.acc"]],
     commissioners: [["appearances", "Appearances", "section#appears"], ["june", "June 18 statements", "#commish-h"]]
   };
