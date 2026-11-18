@@ -1844,11 +1844,16 @@
   // A side is relative to the proposal the proceeding is about, so the words say that; a bare
   // "Supports" pill left readers asking "supports what?". Neutral says nothing and is left off.
   var SIDE_LABEL = { "for": "supports the proposal", against: "opposes the proposal", mixed: "supports it with conditions", neutral: "" };
-  // In a show cause docket there is no proposal: a side is toward FERC's preliminary finding.
-  var SIDE_ORDER = { "for": "agrees with the order", against: "disputes the order’s finding", mixed: "agrees in part", neutral: "" };
+  // A side has a target. In a show cause docket, in a rehearing request or rehearing docket, or where the title
+  // names an order, the target is FERC's order, not a proposal. The proposal's own author, and a
+  // complainant, are not taking a side on someone else's filing, so they get none.
+  var SIDE_ORDER = { "for": "supports FERC’s order", against: "challenges FERC’s order", mixed: "challenges FERC’s order in part", neutral: "" };
+  var SIDE_SC = { "for": "agrees with the order", against: "disputes the order’s finding", mixed: "agrees in part", neutral: "" };
   function sideText(d, role, g) {
     if (d.stance) return d.stance;
-    var t = d.side && (g && g.kind === "show-cause" ? SIDE_ORDER : SIDE_LABEL)[d.side];
+    if (!d.side || d.kind === "complaint" || OPERATOR_FILER.test(d.filer || "")) return "";
+    var aboutOrder = /reconsider|Court appeal/.test(role) || /rehearing/.test(g ? g.id : "") || /\b(?:supporting|opposing|challenging)\b[^.]*\border\b/i.test(d.title || "");
+    var t = (g && g.kind === "show-cause" ? SIDE_SC : aboutOrder ? SIDE_ORDER : SIDE_LABEL)[d.side];
     if (!t || (d.side === "against" && /^Opposes/.test(role))) return "";   // "Opposes · opposes the proposal" says it twice
     return t;
   }
