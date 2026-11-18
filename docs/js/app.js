@@ -586,9 +586,10 @@
   }
   function renderCrosswalk() {
     var host = document.getElementById("xwalk");
-    if (!host || !xwAnswers) return;
-    // The comparison table sits under the Nov 16 brief; the reform-by-reform detail stays in By reform.
-    var cmp = document.getElementById("xw-compare"); if (cmp) cmp.innerHTML = xwTable();
+    if (!xwAnswers) return;
+    // The comparison table appears in Now > By reform and in Filings > Compare.
+    document.querySelectorAll(".xw-compare").forEach(function (el) { el.innerHTML = xwTable(); });
+    if (!host) return;
     host.innerHTML = D.categories.map(function (c) {
       return '<details class="xw-cat" id="xw-' + esc(c.key) + '"><summary><span class="xw-no">' + c.n + '</span><span class="xw-title">' + esc(XW_LABEL[c.key] || c.title) +
         '<span class="xw-sub">' + esc(c.ferc) + "</span></span>" + xwSummaryDots(c.key) + '<span class="acc-chev" aria-hidden="true">›</span></summary>' +
@@ -636,11 +637,11 @@
       return '<button type="button" class="jump-btn" data-jump="' + j[0] + '">' + j[1] + "</button>";
     }).join("") + "</nav>";
     // Subtab order follows page order: the Nov 16 brief (the default), then Status by operator.
-    return jumps + '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' + esc(f.title) + "</h2><p>" + esc(f.answer) + "</p><div>" + links + '</div><div id="xw-compare"></div></section>' +
+    return jumps + '<section class="filing-brief" aria-labelledby="latest-filing"><h2 id="latest-filing">' + esc(f.title) + "</h2><p>" + esc(f.answer) + "</p><div>" + links + "</div></section>" +
       '<section aria-labelledby="ops-h"><span id="stand-h" class="jump-anchor"></span><h2 class="now-h" id="ops-h">Status by operator</h2>' + operatorTable() + "</section>" +
       '<section class="now-card now-next-card" aria-labelledby="now-next-h"><h2 id="now-next-h">Deadlines</h2>' + nextList + "</section>" +
       '<section class="xw" aria-labelledby="xw-h"><h2 class="now-h" id="xw-h">Filings by reform</h2>' +
-      '<p class="xw-lede">Filled marker: the filing addresses the reform.</p>' +
+      '<div class="xw-compare"></div><p class="xw-lede">Filled marker: the filing addresses the reform.</p>' +
       '<div id="xwalk"><p class="cm-loading" role="status">Loading the comparison…</p></div></section>' +
       accSection("Status by proceeding", "", renderStandStrip(), false, Object.keys(D.tracks || {}).length) +
       accSection("The 60-day clock and who has filed", "The procedural steps every order set, and what each operator filed against them.", renderProcedural(), false, null, "acc-clock") +
@@ -1988,6 +1989,7 @@
       "") +
       // Filings land in batches, so a "newest" list says little; the full list is one link away.
       '<p class="reader-entry"><a href="reading/">Full document list</a></p>' + find + chips +
+      '<section class="cmp-sec" aria-labelledby="cmp-h"><h2 class="now-h" id="cmp-h">Responses to the June orders, by reform</h2><div class="xw-compare"><p class="cm-loading" role="status">Loading the comparison…</p></div></section>' +
       FG_MARKETS.map(function (m) {
         var gs = sc.concat(rel).filter(function (g) { return marketOf(g) === m[0]; });
         return gs.length ? '<h3 class="fg-sec fg-mkt" data-mkt="' + m[0] + '" hidden>' + esc(m[1]) + "</h3>" + gs.map(group).join("") : "";
@@ -2040,7 +2042,11 @@
     var bar = panel.querySelector(".st-bar");
     if (bar) {
       bar.hidden = !!active;
-      panel.querySelectorAll(".st-pane").forEach(function (x) { if (active) { x.hidden = false; x.removeAttribute("role"); } else x.setAttribute("role", "tabpanel"); });
+      // Search results are documents: the Compare and Megawatts panes are not, so they stay out of the way.
+      panel.querySelectorAll(".st-pane").forEach(function (x) {
+        var docs = x.id !== "stp-filings-compare" && x.id !== "stp-filings-mw";
+        if (active) { x.hidden = !docs; x.removeAttribute("role"); } else x.setAttribute("role", "tabpanel");
+      });
       if (!active) pickSubtab("filings", subtabPick.filings || SUBTABS.filings[0][0]);
     }
     // A chip's number is what tapping it would show, so it counts against the typed query.
@@ -2092,6 +2098,7 @@
   }
   function wireFilings() {
     var panel = panelFor("filings");
+    loadCrosswalk();
     panel.addEventListener("click", function (ev) {
       var b = ev.target.closest && ev.target.closest(".th-chips .who-chip");
       if (!b) return;
@@ -2380,10 +2387,11 @@
   // element (a direct child of the panel, [selector, index among matches]) to the next pane's start;
   // anything before the first pane stays visible above the bar. Comments has its own bar already.
   var SUBTABS = {
-    overview: [["filed", "Nov 16 filings", ".filing-brief"], ["operators", "Status by operator", "section[aria-labelledby=ops-h]"], ["next", "Deadlines", ".now-next-card"],
+    // Overview runs from the Nov 16 highlights through each operator's status to the deadlines.
+    overview: [["overview", "Overview", ".filing-brief"],
       ["reforms", "By reform", ".xw"], ["background", "Background", "details.acc"]],
     dockets: [["june", "June 18 orders", "#reforms-h"], ["reforms", "Five reforms", "details.acc"], ["dockets", "Dockets", ".section-head", 1], ["follow", "File or follow", ".section-head", 2]],
-    filings: [["pjm", "PJM", ".fg-mkt[data-mkt=pjm]"], ["miso", "MISO", ".fg-mkt[data-mkt=miso]"], ["spp", "SPP", ".fg-mkt[data-mkt=spp]"], ["caiso", "CAISO", ".fg-mkt[data-mkt=caiso]"],
+    filings: [["compare", "Compare", ".cmp-sec"], ["pjm", "PJM", ".fg-mkt[data-mkt=pjm]"], ["miso", "MISO", ".fg-mkt[data-mkt=miso]"], ["spp", "SPP", ".fg-mkt[data-mkt=spp]"], ["caiso", "CAISO", ".fg-mkt[data-mkt=caiso]"],
       ["isone", "ISO-NE", ".fg-mkt[data-mkt=isone]"], ["nyiso", "NYISO", ".fg-mkt[data-mkt=nyiso]"], ["other", "Other", ".fg-mkt[data-mkt=other]"], ["mw", "Megawatts", ".fc-sec"]],
     timeline: [["ahead", "Ahead", ".tl-sec", 0], ["sofar", "So far", "#tl-latest"], ["background", "Background", "details.acc"]],
     commissioners: [["appearances", "Appearances", "section#appears"], ["june", "June 18 statements", "#commish-h"]]
