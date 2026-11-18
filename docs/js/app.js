@@ -2099,7 +2099,7 @@
       return '<article class="appear" data-speakers="' + esc((v.speakers || []).join(" ")) + '"><h3><span class="mono appear-d">' + esc(fmtISO(v.date)) + "</span> " +
         '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' + esc(v.event || v.title) + ' <span class="ext" aria-hidden="true">↗</span></a></h3>' +
         '<p class="appear-meta">' + esc(v.channel) + dur + (v.captionSource === "publisher" ? " · publisher captions" : " · automatic captions") + "</p>" +
-        (v.transcriptSlug ? '<a href="reading/' + esc(v.transcriptSlug) + '/">Read the official transcript</a>' : '<a href="https://github.com/pranava0x0/FERC-Orders-June-2026/blob/main/sources/videos/text/' + encodeURIComponent(v.id) + '.txt">Read the timestamped captions</a>') +
+        (v.transcriptSlug ? '<a href="reading/' + esc(v.transcriptSlug) + '/">Read the official transcript</a>' : '<a href="https://github.com/pranava0x0/ferc-large-load-proceedings/blob/main/sources/videos/text/' + encodeURIComponent(v.id) + '.txt">Read the timestamped captions</a>') +
         (qs ? '<ul class="sqs">' + qs + "</ul>" : "") +
         (v.quotes.length > SQ_CAP ? '<button type="button" class="sq-more" aria-expanded="false">All ' + v.quotes.length + " quotes</button>" : "") +
         toc + "</article>";
