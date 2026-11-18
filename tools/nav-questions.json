@@ -67,7 +67,7 @@
    ],
    "leaf": [
     "#panel-overview .xw-t tbody tr:nth-child(2)",
-    "Who pays[\\s\\S]*recover"
+    "Cost Shifting[\\s\\S]*recover"
    ]
   },
   {

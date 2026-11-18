@@ -1536,11 +1536,14 @@ details.tl-item .srcs { padding: 0 0 10px 128px; }
 
 /* Nov 16 filings compared: reforms x markets (app.js xwTable). */
 .xw-t-wrap { margin: 0 0 20px; }
-.xw-t { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 13.5px; }
+.xw-t { border-collapse: collapse; width: 100%; min-width: 1080px; font-size: 13px; line-height: 1.4; }
 .xw-t caption { text-align: left; font-weight: 700; padding: 0 0 8px; }
 .xw-t th, .xw-t td { border-top: 1px solid var(--rule); padding: 8px; text-align: left; vertical-align: top; }
 .xw-t thead th { border-top: 0; color: var(--text-muted); font-size: 12.5px; }
-.xw-t tbody th { width: 9rem; }
+.xw-t tbody th { width: 11rem; font-size: 12.5px; }
+.xw-ul { margin: 0; padding-left: 1.1em; }
+.xw-ul li + li { margin-top: 4px; }
+.xw-by { font-weight: 600; }
 .xw-t-none { color: var(--text-muted); }
 .xw-t td a { display: inline-block; white-space: nowrap; }
 @media (pointer: coarse) { .xw-t td a { min-height: 44px; display: inline-flex; align-items: center; } }

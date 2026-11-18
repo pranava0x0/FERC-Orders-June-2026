@@ -72,6 +72,8 @@ desktop 28.0. Comparing who pays across markets fell from 10.1 to 2.5 taps-plus-
 quote-to-original-page route from 7.5 to 2. Opening a subtab costs one tap, so a few home-page answers
 now cost 1 where they cost a short scroll before; the next deadline is answered by the masthead chip on every page.
 
+**2026-11-18, comparison table as bullets:** each cell lists 2 to 4 page-cited points with figures (deposits, thresholds, timelines), and reform rows use the June orders' own Section III headings. The taller first row adds 0.75 of a screen on a phone to the two who-pays questions (1 to 1.75); accepted for the detail. Phone 37.7, tablet 30.4, desktop 29.1.
+
 ## Gaps: questions the site cannot answer yet
 
 Each needs data before it needs a route. When one becomes answerable, it gets a question in

@@ -51,17 +51,20 @@ test('record-tier filings keep a hash for every original and a reason for every 
  }
 });
 
-test('every reform-matrix cell quotes its reading’s page verbatim, and SPP is empty until it files',()=>{
+test('every reform-matrix bullet quotes its reading’s page verbatim, and SPP is empty until it files',()=>{
  const m=JSON.parse(readFileSync(new URL('../../sources/filings/reform-matrix.json',base),'utf8')).cells,norm=s=>s.replace(/\s+/g,' ').trim();
  const cells=Object.entries(m).flatMap(([rto,row])=>Object.entries(row).map(([k,c])=>[rto,k,c])).filter(([, ,c])=>c);
- assert.ok(cells.length>=20,'matrix is nearly empty');
+ assert.ok(cells.length>=25,'matrix is nearly empty');
  for(const [rto,k,c] of cells){
-  assert.ok(c.gist.split(/\s+/).length<=14,rto+' '+k+' gist too long');
-  // The reader's text.html holds each PDF page in <section id="p-N"><pre>…</pre>.
-  const m2=read(c.slug+'/text.html').match(new RegExp('<section id="p-'+c.pg+'">[\\s\\S]*?<pre>([\\s\\S]*?)</pre>'));
-  assert.ok(m2,rto+' '+k+': no page '+c.pg);
-  const page=m2[1].replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&amp;/g,'&');
-  assert.ok(norm(page).includes(norm(c.quote)),rto+' '+k+': quote not on p. '+c.pg);
+  assert.ok(Array.isArray(c)&&c.length>=2,rto+' '+k+': a cell lists at least two bullets');
+  for(const x of c){
+   assert.ok(x.t.split(/\s+/).length<=18,rto+' '+k+' bullet too long: '+x.t);
+   // The reader's text.html holds each PDF page in <section id="p-N"><pre>…</pre>.
+   const m2=read(x.slug+'/text.html').match(new RegExp('<section id="p-'+x.pg+'">[\\s\\S]*?<pre>([\\s\\S]*?)</pre>'));
+   assert.ok(m2,rto+' '+k+': no page '+x.pg+' in '+x.slug);
+   const page=m2[1].replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/&amp;/g,'&');
+   assert.ok(norm(page).includes(norm(x.quote)),rto+' '+k+': quote not on p. '+x.pg+': '+x.quote.slice(0,50));
+  }
  }
  assert.ok(Object.values(m.SPP).every(c=>c===null));
 });

@@ -1977,7 +1977,7 @@ window.FERC_DATA = (function () {
   const categories = [
     {
       n: 1, key: "study",
-      title: "Application & study processes (incl. alternative transmission technologies)",
+      title: "Transmission Service to Eligible Customers on Behalf of Large Loads",
       ferc: "Developing efficient transmission-service application and study processes, including consideration of alternative transmission technologies.",
       detail: "Each RTO must show an efficient, non-discriminatory path for a large load to request transmission service and be studied, and must consider grid-enhancing / alternative transmission technologies (e.g., reconductoring, dynamic line ratings, advanced power-flow control) before defaulting to conventional network upgrades. The DOE ANOPR roots this in the Order No. 2003 / 2023 generator-interconnection toolkit: standardized study deposits, readiness requirements, and withdrawal penalties to deter speculative ‘phantom’ load requests and sharpen demand forecasting.",
       doe: ["Limit reforms to interconnections directly to transmission (seven-factor test).", "Standardized study deposits, readiness requirements, withdrawal penalties.", "Same option-to-build afforded to generator interconnection customers."],
@@ -1985,7 +1985,7 @@ window.FERC_DATA = (function () {
     },
     {
       n: 2, key: "cost",
-      title: "Cost-shifting prevention & transmission-cost transparency",
+      title: "Cost Shifting Risk Among Transmission Customers",
       ferc: "Preventing cost shifting and requiring transparency into transmission costs.",
       detail: "FERC flags a lack of transparency in how RTOs assign and recover network-upgrade costs, and an absence of pro forma cost-recovery agreements that put the risk and cost of upgrades on the large-load customer. The remedy is cost causation made auditable: identify, allocate, and communicate the cost of serving large loads so they don’t migrate onto other transmission customers’ bills. The DOE principles supply the mechanics: 100% network-upgrade responsibility (with an open question on crediting over a term), transmission service billed on withdrawal rights, and ancillary services on peak demand without netting co-located generation.",
       doe: ["Load/hybrid facilities responsible for 100% of assigned network upgrades; crediting an open question.", "Transmission service charged on withdrawal rights.", "Ancillary services on peak demand; co-located generation ignored."],
@@ -1993,7 +1993,7 @@ window.FERC_DATA = (function () {
     },
     {
       n: 3, key: "colo",
-      title: "Co-location arrangements & behind-the-meter (BTM) generation",
+      title: "Co-Location Arrangements and Load with Behind the Meter Generation",
       ferc: "Accommodating co-location agreements and behind-the-meter generation.",
       detail: "The orders direct each RTO to set clear terms for loads that sit at or near their own generation, the data-center-plus-power-plant configuration. FERC handles PJM’s co-located loads in a separate proceeding (Item E-2, EL25-49), but the show cause orders push the other five to address it. The DOE ANOPR frames co-location as ‘hybrid facilities’: study load and generation together to minimize upgrades, allocate injection/withdrawal rights, and require system-protection equipment to enforce them. One commentator reads the orders as reopening BTM configurations that a December PJM ruling had narrowed.",
       doe: ["Study load + generation together to cut network upgrades.", "Hybrid facilities studied by requested injection/withdrawal rights (e.g., 500 MW load + 600 MW gen, 100 MW injection, 0 withdrawal).", "System-protection facilities to prevent unauthorized injections/withdrawals."],
@@ -2001,7 +2001,7 @@ window.FERC_DATA = (function () {
     },
     {
       n: 4, key: "flex",
-      title: "New transmission services for flexible large loads",
+      title: "Extending New Transmission Services to Eligible Customers Taking Service on Behalf of Flexible Large Loads",
       ferc: "Providing new transmission services for flexible large loads.",
       detail: "Loads willing to curtail are worth more to the system than firm loads of the same size, because the operator can lean on them in tight conditions. FERC wants new service products that reward flexibility, and DOE asks whether a curtailable load’s interconnection study could be expedited (potentially to 60 days), provided the operator’s ability to curtail/dispatch is firm enough to fold the facility into operations and planning. This is the lever that most directly delivers ‘speed to power.’",
       doe: ["Expedite the study of loads that agree to be curtailable (and dispatchable hybrids).", "Operator curtailment/dispatch control must suffice for operations + planning.", "Open question: can such expedited studies finish in 60 days?"],
@@ -2009,7 +2009,7 @@ window.FERC_DATA = (function () {
     },
     {
       n: 5, key: "proximate",
-      title: "Studying generation serving electrically proximate / co-located loads",
+      title: "Interconnection Customers Serving Electrically Proximate Large Load and Co-Located Load",
       ferc: "Developing a process to study generating facilities that serve electrically proximate large loads and co-located loads.",
       detail: "When an existing power plant proposes to partially shut down (or carve out output) to serve a new neighboring load, that can strip capacity the grid was counting on. FERC wants a defined study process for generation serving electrically proximate loads. DOE’s principle 10 is precise: such a partial suspension must clear an SSR/RMR-type reliability study that looks ≥ 3 years ahead at forecast load growth, can proceed only after any needed upgrades are in service, and puts those upgrade costs on the generator. SPP’s High Impact Large Load Generation Assessment (HILLGA) is the working model.",
       doe: ["SSR/RMR-type study for an existing plant’s partial suspension to serve a new co-located load.", "Study must consider system conditions ≥ 3 years out, including forecast load growth.", "Suspension only after reliability upgrades are in service; upgrade cost on the generator."],

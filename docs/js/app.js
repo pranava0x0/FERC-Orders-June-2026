@@ -531,7 +531,7 @@
   // each point. A blank cell means none of the points read from that filing names the reform. It is
   // not a finding that the filing is silent on it, and the copy says so.
   var xwAnswers = null, xwPending = null;
-  var XW_LABEL = { study: "Study process", cost: "Who pays", colo: "Co-location", flex: "Flexible service", proximate: "Nearby generation" };
+  // Reform names are the June orders' own Section III headings (D.categories[].title), not paraphrases.
   function xwOrders() {
     return (D.dockets || []).slice().sort(function (a, b) { return +a.item.slice(2) - +b.item.slice(2); });
   }
@@ -567,21 +567,25 @@
     }).join("");
     return doe + '<div class="xw-rows">' + rows + "</div>";
   }
-  // Five reforms down, six markets across: one line per cell saying what the operator proposed, linked to
-  // the page it comes from. An empty cell means the filing does not take the reform up (or, for SPP, has not filed).
+  // Five reforms down, six markets across: each cell lists what the operator (or, where named, its
+  // transmission owners) proposed, one bullet per point, each linked to the page it quotes.
+  // An empty cell means the filings do not take the reform up (or, for SPP, have not been filed).
   var xwMatrix = null, XW_MARKETS = ["PJM", "MISO", "SPP", "CAISO", "ISO-NE", "NYISO"];
   function xwTable() {
     if (!xwMatrix) return "";
-    // Name the docket in each cell: PJM's cost line comes from its transmission owners' filing, not PJM's own.
     var docketOf = {}; (xwAnswers || []).forEach(function (a) { docketOf[a.slug] = a.docket; });
     var rows = D.categories.map(function (c) {
-      return '<tr><th scope="row">' + esc(XW_LABEL[c.key] || c.title) + "</th>" + XW_MARKETS.map(function (m) {
-        var x = xwMatrix[m] && xwMatrix[m][c.key];
-        return x ? '<td>' + esc(x.gist) + ' <a class="mono" href="reading/' + esc(x.slug) + "/text.html#p-" + x.pg + '" title="' + esc("“" + x.quote + "”") + '">' + esc((docketOf[x.slug] || "").replace(/-000$/, "")) + "&nbsp;p.&nbsp;" + x.pg + "</a></td>"
-          : '<td class="xw-t-none">' + (m === "SPP" ? "Not filed yet" : "Not addressed") + "</td>";
+      return '<tr><th scope="row">' + esc(c.title) + "</th>" + XW_MARKETS.map(function (m) {
+        var xs = xwMatrix[m] && xwMatrix[m][c.key];
+        return xs && xs.length ? '<td><ul class="xw-ul">' + xs.map(function (x) {
+          var dk = (docketOf[x.slug] || "").replace(/-000$/, "");
+          return "<li>" + (x.by ? '<span class="xw-by">' + esc(x.by) + ":</span> " : "") + esc(x.t) +
+            ' <a class="mono" href="reading/' + esc(x.slug) + "/text.html#p-" + x.pg + '" title="' + esc((dk ? dk + ": " : "") + "“" + x.quote + "”") + '">p.&nbsp;' + x.pg + "</a></li>";
+        }).join("") + "</ul></td>"
+          : '<td class="xw-t-none">' + (m === "SPP" ? "Not filed yet; due Nov 20" : "Not addressed") + "</td>";
       }).join("") + "</tr>";
     }).join("");
-    return '<div class="table-wrap xw-t-wrap"><table class="xw-t"><caption>Responses to the June orders, compared</caption><thead><tr><th scope="col">Reform</th>' +
+    return '<div class="table-wrap xw-t-wrap"><table class="xw-t"><caption>Responses to the June orders, compared</caption><thead><tr><th scope="col">Reform (order heading)</th>' +
       XW_MARKETS.map(function (m) { return '<th scope="col">' + esc(m) + "</th>"; }).join("") + "</tr></thead><tbody>" + rows + "</tbody></table></div>";
   }
   function renderCrosswalk() {
@@ -591,7 +595,7 @@
     document.querySelectorAll(".xw-compare").forEach(function (el) { el.innerHTML = xwTable(); });
     if (!host) return;
     host.innerHTML = D.categories.map(function (c) {
-      return '<details class="xw-cat" id="xw-' + esc(c.key) + '"><summary><span class="xw-no">' + c.n + '</span><span class="xw-title">' + esc(XW_LABEL[c.key] || c.title) +
+      return '<details class="xw-cat" id="xw-' + esc(c.key) + '"><summary><span class="xw-no">' + c.n + '</span><span class="xw-title">' + esc(c.title) +
         '<span class="xw-sub">' + esc(c.ferc) + "</span></span>" + xwSummaryDots(c.key) + '<span class="acc-chev" aria-hidden="true">›</span></summary>' +
         '<div class="xw-body">' + xwBody(c) + "</div></details>";
     }).join("");
